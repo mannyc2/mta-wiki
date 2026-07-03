@@ -154,6 +154,7 @@ function parseCommand(argv: string[]): ParsedArgs {
     "writer-packet-dispatch-handoff-prompt-coverage",
     "writer-packet-dispatch-claim",
     "writer-packet-dispatch-readiness",
+    "write-writer-packet",
     "verify-writer-edits",
     "verify-writer-citations",
     "verify-writer-packets",

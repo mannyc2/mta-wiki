@@ -69,6 +69,7 @@ Usage:
   bun run harness writer-packet-dispatch-handoff-prompt-coverage <dispatch-json> <prompts-json...> Write an aggregate prompt coverage launch board
   bun run harness writer-packet-dispatch-claim <dispatch-json> [--limit <n>] [--owner <name>] Claim paused dispatch shards without editing pages or launching writers
   bun run harness writer-packet-dispatch-readiness <dispatch-json> [--packet-set <json>] Write a combined paused-dispatch readiness report
+  bun run harness write-writer-packet <packet-json>  Run the safe writer agent for one one-page writer packet
   bun run harness verify-writer-packets <packet-json>  Check writer packet records/pages/source-block snippets are still valid
   bun run harness verify-writer-packet-set <packet-json...> Check packet files plus cross-file duplicate page coverage
   bun run harness verify-writer-packet-set-manifest <packet-set-json> Check exact packet-set file/page coverage

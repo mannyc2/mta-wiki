@@ -2,6 +2,7 @@ import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
 import { isAbsolute, join, relative, resolve } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
+import { parseInlinePrimitives } from "@mta-wiki/pipeline/materialize/primitives";
 import { sourceBlockById } from "@mta-wiki/pipeline/sources/source-prep";
 
 export type WriterEditIssue = {
@@ -63,7 +64,16 @@ export function extractWriterCitations(value: string): WriterCitationRef[] {
   const region = writerRegion(value);
   if (!region) return [];
   const refs: WriterCitationRef[] = [];
-  for (const match of region.matchAll(WRITER_CITATION_RE)) {
+
+  let legacyRegion = region;
+  for (const primitive of parseInlinePrimitives(region).sort((a, b) => b.offset - a.offset)) {
+    legacyRegion = `${legacyRegion.slice(0, primitive.offset)}${" ".repeat(primitive.raw.length)}${legacyRegion.slice(primitive.offset + primitive.raw.length)}`;
+    if (primitive.kind === "cite" && primitive.blockId) {
+      refs.push({ source_id: primitive.id, block_id: primitive.blockId });
+    }
+  }
+
+  for (const match of legacyRegion.matchAll(WRITER_CITATION_RE)) {
     refs.push({ source_id: match[1]!, block_id: match[2]! });
   }
   return refs;

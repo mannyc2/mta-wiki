@@ -50,7 +50,7 @@ describe("writerRegionPresent", () => {
 
 describe("extractWriterCitations", () => {
   it("extracts source block handles from the writer region only", () => {
-    const page = `${base.replace("old text", "M86 context. [m86_sbs_progress_report_2017#p002_c0004]\\nRange context. [source_a#p001_c0001..p001_c0003]")}
+    const page = `${base.replace("old text", "M86 context. [[cite:m86_sbs_progress_report_2017#p002_c0004|progress report]]\\nRange context. [source_a#p001_c0001..p001_c0003]\\nSource-level primitive only: [[cite:source_a|source]].")}
 
 Outside region [ignored_source#p999_c9999]
 `;

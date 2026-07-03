@@ -32,12 +32,14 @@ export type PostIngestPlanOptions = {
 export type WriterBacklogQueueOptions = {
   limit?: number | undefined;
   recordKinds?: string[] | undefined;
+  pagePaths?: string[] | undefined;
 };
 
 export type WriterBacklogPacketOptions = {
   limit?: number | undefined;
   offset?: number | undefined;
   recordKinds?: string[] | undefined;
+  pagePaths?: string[] | undefined;
 };
 
 export type WriterBacklogDispatchPlanOptions = {
@@ -190,6 +192,7 @@ export type WriterBacklogQueue = {
     empty_writer_regions: number;
     limit: number;
     record_kinds?: string[] | undefined;
+    page_paths?: string[] | undefined;
   };
   items: WriterBacklogQueueItem[];
   path: string;
@@ -229,6 +232,7 @@ export type WriterBacklogPacketRun = {
     limit: number;
     offset: number;
     record_kinds?: string[] | undefined;
+    page_paths?: string[] | undefined;
     queue_fingerprint?: string | undefined;
   };
   packets: WriterBacklogPacket[];
@@ -1688,8 +1692,9 @@ export function generateWriterBacklogQueue(options: WriterBacklogQueueOptions = 
   const limit = options.limit ?? 50;
   if (!Number.isInteger(limit) || limit < 1) throw new Error(`writer backlog queue limit must be a positive integer: ${limit}`);
   const recordKinds = normalizeWriterRecordKinds(options.recordKinds);
+  const pagePaths = normalizeWriterPagePaths(options.pagePaths);
 
-  const candidates = collectWriterBacklogItems(undefined, { recordKinds });
+  const candidates = collectWriterBacklogItems(undefined, { recordKinds, pagePaths });
   const queuePath = writerBacklogQueuePath();
   const queue: WriterBacklogQueue = {
     generated_at: new Date().toISOString(),
@@ -1697,6 +1702,7 @@ export function generateWriterBacklogQueue(options: WriterBacklogQueueOptions = 
       empty_writer_regions: candidates.length,
       limit,
       ...(recordKinds.length > 0 ? { record_kinds: recordKinds } : {}),
+      ...(pagePaths.length > 0 ? { page_paths: pagePaths } : {}),
     },
     items: candidates.slice(0, limit),
     path: relative(repoRoot, queuePath),
@@ -1715,9 +1721,27 @@ function normalizeWriterRecordKinds(recordKinds: string[] | undefined) {
   return normalized;
 }
 
-export function collectWriterBacklogItems(records = readCanonicalRecords(), options: { recordKinds?: string[] | undefined } = {}) {
+function normalizeWriterPagePaths(pagePaths: string[] | undefined) {
+  const normalized: string[] = [];
+  const seen = new Set<string>();
+  for (const rawPath of pagePaths ?? []) {
+    const path = rawPath.trim();
+    if (!path || seen.has(path)) continue;
+    if (!path.startsWith("wiki/") || !path.endsWith(".md") || path.startsWith("wiki/sources/")) {
+      throw new Error(`writer backlog page path must be a non-source wiki markdown path: ${path}`);
+    }
+    seen.add(path);
+    normalized.push(path);
+  }
+  return normalized;
+}
+
+export function collectWriterBacklogItems(records = readCanonicalRecords(), options: { recordKinds?: string[] | undefined; pagePaths?: string[] | undefined } = {}) {
   const recordKinds = normalizeWriterRecordKinds(options.recordKinds);
   const kindFilter = recordKinds.length > 0 ? new Set(recordKinds) : undefined;
+  const pagePaths = normalizeWriterPagePaths(options.pagePaths);
+  const pageFilter = pagePaths.length > 0 ? new Set(pagePaths) : undefined;
+  const pageOrder = pagePaths.length > 0 ? new Map(pagePaths.map((path, index) => [path, index])) : undefined;
   const dataOnly = records.filter((record) => DATA_ONLY_WRITER_KINDS.has(record.record_kind));
   const sourceIdsByRecord = new Map(records.map((record) => [record.record_id, sourceIdsForRecord(record)]));
   const supportingRecordIdsBySource = new Map<string, Set<string>>();
@@ -1728,11 +1752,12 @@ export function collectWriterBacklogItems(records = readCanonicalRecords(), opti
       supportingRecordIdsBySource.set(sourceId, bucket);
     }
   }
-  return records
+  const items = records
     .filter((record) => WRITER_QUEUE_KINDS.has(record.record_kind))
     .filter((record) => !kindFilter || kindFilter.has(record.record_kind))
     .flatMap((record): WriterBacklogQueueItem[] => {
       const pagePath = pageRelativePathForCanonicalRecord(record);
+      if (pagePath && pageFilter && !pageFilter.has(pagePath)) return [];
       if (!pagePath || !emptyWriterRegion(pagePath)) return [];
 
       const sourceIds = sourceIdsByRecord.get(record.record_id) ?? [];
@@ -1755,8 +1780,12 @@ export function collectWriterBacklogItems(records = readCanonicalRecords(), opti
           suggested_subagent_task: `Produce a source-backed writer-region draft for ${pagePath}; do not edit files; cite with [[cite:source_id#block_id|label]] primitives.`,
         },
       ];
-    })
-    .sort((a, b) => b.score - a.score || b.evidence_count - a.evidence_count || a.page_path.localeCompare(b.page_path));
+    });
+
+  if (pageOrder) {
+    return items.sort((a, b) => (pageOrder.get(a.page_path) ?? Number.MAX_SAFE_INTEGER) - (pageOrder.get(b.page_path) ?? Number.MAX_SAFE_INTEGER));
+  }
+  return items.sort((a, b) => b.score - a.score || b.evidence_count - a.evidence_count || a.page_path.localeCompare(b.page_path));
 }
 
 function writerBacklogQueueItemHash(item: WriterBacklogQueueItem) {
@@ -1788,11 +1817,12 @@ export function generateWriterBacklogPackets(options: WriterBacklogPacketOptions
   const offset = options.offset ?? 0;
   if (!Number.isInteger(offset) || offset < 0) throw new Error(`writer backlog packet offset must be a non-negative integer: ${offset}`);
   const recordKinds = normalizeWriterRecordKinds(options.recordKinds);
+  const pagePaths = normalizeWriterPagePaths(options.pagePaths);
 
   const records = readCanonicalRecords();
   const recordsById = new Map(records.map((record) => [record.record_id, record]));
   const dataOnly = records.filter((record) => DATA_ONLY_WRITER_KINDS.has(record.record_kind));
-  const queueItems = collectWriterBacklogItems(records, { recordKinds });
+  const queueItems = collectWriterBacklogItems(records, { recordKinds, pagePaths });
   const packets = queueItems.slice(offset, offset + limit).flatMap((item, index): WriterBacklogPacket[] => {
     const target = recordsById.get(item.record_id);
     if (!target) return [];
@@ -1835,6 +1865,7 @@ export function generateWriterBacklogPackets(options: WriterBacklogPacketOptions
       limit,
       offset,
       ...(recordKinds.length > 0 ? { record_kinds: recordKinds } : {}),
+      ...(pagePaths.length > 0 ? { page_paths: pagePaths } : {}),
       queue_fingerprint: writerBacklogQueueFingerprint(queueItems),
     },
     packets,
@@ -3289,8 +3320,12 @@ export function verifyWriterBacklogPackets(path: string, options: WriterBacklogP
     };
   }
 
-  const recordsById = new Map(readCanonicalRecords().map((record) => [record.record_id, record]));
-  const currentQueueItems = collectWriterBacklogItems();
+  const records = readCanonicalRecords();
+  const recordsById = new Map(records.map((record) => [record.record_id, record]));
+  const currentQueueItems = collectWriterBacklogItems(records, {
+    recordKinds: Array.isArray(run.scope?.record_kinds) ? run.scope.record_kinds : undefined,
+    pagePaths: Array.isArray(run.scope?.page_paths) ? run.scope.page_paths : undefined,
+  });
   const packets = Array.isArray(run.packets) ? run.packets : [];
   if (!Array.isArray(run.packets)) {
     issues.push({ packet_index: -1, page_path: relativePath, code: "missing_packets", message: "packet file does not contain a packets array" });

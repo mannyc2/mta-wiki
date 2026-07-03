@@ -259,6 +259,21 @@ describe("writer backlog packets", () => {
     }
   }, ARTIFACT_TEST_TIMEOUT_MS);
 
+  it("builds writer packets for an explicit page list in caller order", () => {
+    const queueItems = collectWriterBacklogItems(undefined, { recordKinds: ["route", "corridor"] });
+    const pagePaths = [queueItems[2]!.page_path, queueItems[0]!.page_path, queueItems[1]!.page_path];
+    const run = generateWriterBacklogPackets({ limit: 3, offset: 0, recordKinds: ["route", "corridor"], pagePaths });
+    try {
+      expect(run.scope.page_paths).toEqual(pagePaths);
+      expect(run.scope.empty_writer_regions).toBe(pagePaths.length);
+      expect(run.packets.map((packet) => packet.page_path)).toEqual(pagePaths);
+      expect(run.packets.map((packet) => packet.queue_position)).toEqual([0, 1, 2]);
+      expect(verifyWriterBacklogPackets(run.json_path).ok).toBe(true);
+    } finally {
+      cleanupPacketRun(run);
+    }
+  }, ARTIFACT_TEST_TIMEOUT_MS);
+
   it("builds bounded dispatch shards from packet artifacts without editing pages", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
     const runB = generateWriterBacklogPackets({ limit: 2, offset: 2 });

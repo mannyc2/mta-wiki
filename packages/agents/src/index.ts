@@ -3,6 +3,7 @@ export { readConfig } from "@mta-wiki/core/config";
 export { listModels, listProfiles, listProviders } from "@mta-wiki/core/models";
 export { listTranscripts, renderTranscript, summarizeTranscriptUsage, writeTranscriptUsageArtifacts } from "@mta-wiki/core/transcript";
 export { resumeHarnessRun, runHarnessCommand } from "@mta-wiki/agents/run";
+export { runWritePacket, writerPacketPrompt } from "@mta-wiki/agents/write";
 export { validateRepo } from "@mta-wiki/pipeline/validate";
 
 export { exportCanonicalJsonl, verifyCanonicalJsonlParity } from "@mta-wiki/pipeline/materialize/export-jsonl";

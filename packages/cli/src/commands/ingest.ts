@@ -4,6 +4,7 @@ import {
   repoRoot,
   resumeHarnessRun,
   runHarnessCommand,
+  runWritePacket,
   seedPilotSubmissions,
   writeIngestAuditReport,
   type MtaIngestAuditReport,
@@ -83,6 +84,22 @@ export const ingestCommands = {
   ingest: runSourceCommand,
 
   write: runSourceCommand,
+
+  "write-writer-packet": async (args) => {
+    const result = await runWritePacket(requireSubject(args.command, args.subject, "writer packet JSON path"), {
+      dryRun: args.dryRun,
+      profileName: args.profileName,
+      provider: args.provider,
+      model: args.model,
+      safeWriter: true,
+    });
+
+    console.log(result.responseText ?? `Prepared writer packet for ${result.sourceId}.`);
+    console.log(`Profile: ${result.profileName}`);
+    console.log(`Model: ${result.provider}/${result.model}`);
+    console.log(`Transcript: ${relative(repoRoot, result.transcriptDir)}`);
+    console.log(`Session: ${relative(repoRoot, result.sessionPath)}`);
+  },
 } satisfies Record<string, CommandHandler>;
 
 async function runSourceCommand(args: ParsedArgs) {

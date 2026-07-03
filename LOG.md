@@ -36,6 +36,19 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   empty route/corridor slice (`506` pages) extrapolates to about `$7.062343` before retries.
 - No live Plan 012 provider call has run yet; current work is prompt, packet, and runner prep.
 
+### Bounded Writer Runner Prep
+
+- Added explicit-page writer packet generation for the recorded Plan 012 sample and a safe
+  `write-writer-packet` runner that accepts one one-page packet, uses only curated writer tools
+  plus repository-local read tools, and verifies writer-region/citation gates after the model run.
+- Updated writer citation verification to accept `[[cite:source_id#block_id|label]]` primitives
+  while preserving legacy `[source_id#block_id]` support. Dry-run proof completed for
+  `wiki/corridors/corridor_avenue-a-d-manhattan-bus-lanes.md` with Pioneer DeepSeek V4 Flash;
+  no live Plan 012 provider call has run yet.
+- Runner prep gates passed: `bun run typecheck`; `bun run test` (`956 pass`, `1 skip`,
+  `0 fail`); `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts` with
+  combined hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ### V2 Extract Pilot Spend Gate
 
 - Owner approval for Plan 014 provider spend, recorded verbatim: "I give you permission for the
