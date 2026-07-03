@@ -174,11 +174,30 @@ function validateStrictWriterCitations(path: string, writerText: string): MtaVal
   return issues;
 }
 
+function validateWriterInlinePrimitiveSyntax(path: string, writerText: string): MtaValidationIssue[] {
+  const issues: MtaValidationIssue[] = [];
+  const parsedRanges = new Set(parseInlinePrimitives(writerText).map((primitive) => `${primitive.offset}:${primitive.raw.length}`));
+
+  for (const match of writerText.matchAll(/\[\[[\s\S]*?\]\]/gu)) {
+    const raw = match[0]!;
+    const offset = match.index ?? 0;
+    if (parsedRanges.has(`${offset}:${raw.length}`)) continue;
+    issues.push({
+      code: "invalid_writer_primitive_syntax",
+      path,
+      message: `unsupported writer primitive syntax: ${raw.replace(/\s+/gu, " ").slice(0, 240)}`,
+    });
+  }
+
+  return issues;
+}
+
 export function validateWriterPrimitivesInPage(path: string, markdown: string, context: WriterPrimitiveValidationContext): MtaValidationIssue[] {
   const writerText = extractWriterRegion(markdown);
   if (writerText === null || !writerText.trim()) return [];
 
   const issues: MtaValidationIssue[] = [];
+  issues.push(...validateWriterInlinePrimitiveSyntax(path, writerText));
   for (const primitive of parseInlinePrimitives(writerText)) {
     const issue = primitive.kind === "cite" ? validateCitationPrimitive(path, primitive, context) : validateRecordPrimitive(path, primitive, context);
     if (issue) issues.push(issue);
@@ -442,7 +461,7 @@ function sourcePageHasBlock(sourceId: string, blockId: string): boolean {
   return hasExact(blockId);
 }
 
-function buildWriterPrimitiveValidationContext(records: MtaCanonicalRecord[]): WriterPrimitiveValidationContext {
+export function buildWriterPrimitiveValidationContext(records: MtaCanonicalRecord[]): WriterPrimitiveValidationContext {
   const publicEvidenceIndex = readEvidenceBlockIndex();
   const recordKindsById = new Map(records.map((record) => [record.record_id, record.record_kind]));
   const sourceIds = new Set(records.filter((record) => record.record_kind === "source").map((record) => record.source_id));

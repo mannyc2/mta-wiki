@@ -49,6 +49,30 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `0 fail`); `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts` with
   combined hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
+### Bounded Writer Sample
+
+- Plan 012 live sample ran the recorded 20 route/corridor pages with Pioneer DeepSeek V4 Flash.
+  Including rejected/retried attempts and the Q26 repair rerun, transcript usage totals were
+  `31` runs, `182` provider requests, `6433917` input tokens, `89055` output tokens,
+  `12773601` cache-read tokens, `19296573` total tokens, and estimated cost `$0.661203`.
+- The sample exposed a validator gap: legacy/bare writer wikilinks such as
+  `[[treatment_bus-lanes-2012|Offset Bus Lanes]]` were not parsed as primitives, so they could
+  slip past dangling-link validation. Added `invalid_writer_primitive_syntax` validation for
+  unsupported `[[...]]` links and narrowed the one-page writer prompt to allow-list-only record
+  primitives; Q26 was cleared and rerun through the hardened runner.
+- Final sample self-review found `0` unsupported writer links, `0` uncited paragraphs, and `0`
+  heading/bullet lines across the 20 writer regions. `bun run materialize` rebuilt the local DB
+  after ignored artifact cleanup; `bun run validate` passed with `Issues: 0`.
+- Full-gate testing also exposed timestamp collisions in writer/post-ingest artifacts created
+  back-to-back; timestamped writer backlog, packet, dispatch, claim, handoff, and coverage paths
+  now allocate a suffix instead of overwriting same-timestamp JSON/Markdown/directory pairs.
+- Disk caveat: `/mnt/models` reached 100% while `.git-archive` remains preserved per the Plan
+  009 owner decision. Only ignored deterministic/runner artifacts were removed
+  (`data/canonical.db` rebuilt by materialize; stale `data/post-ingest` files deleted).
+- Checkpoint gates passed: `bun run typecheck`; `bun run test` (`959 pass`, `1 skip`,
+  `0 fail`); `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts`
+  with combined hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ### V2 Extract Pilot Spend Gate
 
 - Owner approval for Plan 014 provider spend, recorded verbatim: "I give you permission for the

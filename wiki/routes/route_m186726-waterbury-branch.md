@@ -35,5 +35,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The [[route:route_m186726-waterbury-branch|Waterbury Branch]] is a Metro-North commuter rail branch that is mentioned in the October 2025 Schedule Change and Fall/Winter Programs document solely in the Christmas Day 2025 holiday service plan, where it is scheduled to operate with service every three hours — the same frequency as the Danbury Branch, while the New Canaan Branch receives hourly service and the Wassaic Branch receives service every two hours [[cite:meeting_doc_186726#p004_c0008|Waterbury Branch Christmas Day service frequency]]. No other schedule changes, service adjustments, ridership metrics, or infrastructure projects specific to the Waterbury Branch appear in this source.
 <!-- mta-wiki:writer:end -->

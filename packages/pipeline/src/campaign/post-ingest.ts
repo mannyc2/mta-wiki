@@ -663,6 +663,43 @@ function timestamp() {
   return new Date().toISOString().replace(/[:.]/gu, "-");
 }
 
+function uniqueJsonMarkdownPaths(base: string) {
+  let candidate = base;
+  let suffix = 1;
+  while (existsSync(`${candidate}.json`) || existsSync(`${candidate}.md`)) {
+    candidate = `${base}-${suffix}`;
+    suffix += 1;
+  }
+  return {
+    jsonPath: `${candidate}.json`,
+    markdownPath: `${candidate}.md`,
+  };
+}
+
+function uniqueJsonPath(base: string) {
+  let candidate = base;
+  let suffix = 1;
+  while (existsSync(`${candidate}.json`)) {
+    candidate = `${base}-${suffix}`;
+    suffix += 1;
+  }
+  return `${candidate}.json`;
+}
+
+function uniqueJsonMarkdownDirPaths(base: string) {
+  let candidate = base;
+  let suffix = 1;
+  while (existsSync(`${candidate}.json`) || existsSync(`${candidate}.md`) || existsSync(`${candidate}-files`)) {
+    candidate = `${base}-${suffix}`;
+    suffix += 1;
+  }
+  return {
+    jsonPath: `${candidate}.json`,
+    markdownPath: `${candidate}.md`,
+    dirPath: `${candidate}-files`,
+  };
+}
+
 function readJson(path: string): JsonObject | undefined {
   if (!existsSync(path)) return undefined;
   try {
@@ -989,90 +1026,59 @@ function emptyWriterRegion(pagePath: string) {
 }
 
 function writerBacklogQueuePath() {
-  return join(repoRoot, "data", "post-ingest", `${timestamp()}_writer-backlog-queue.json`);
+  return uniqueJsonPath(join(repoRoot, "data", "post-ingest", `${timestamp()}_writer-backlog-queue`));
 }
 
 function writerBacklogPacketPaths(offset: number) {
   const stamp = timestamp();
   const base = join(repoRoot, "data", "post-ingest", `${stamp}_writer-backlog-packets-offset-${offset}`);
-  return {
-    jsonPath: `${base}.json`,
-    markdownPath: `${base}.md`,
-  };
+  return uniqueJsonMarkdownPaths(base);
 }
 
 function writerBacklogPacketSetManifestPaths(label: string) {
   const safeLabel = label.replace(/[^a-z0-9_-]+/giu, "-").replace(/^-+|-+$/gu, "") || "packet-set";
   const base = join(repoRoot, "data", "post-ingest", `${timestamp()}_writer-backlog-packet-set-${safeLabel}`);
-  return {
-    jsonPath: `${base}.json`,
-    markdownPath: `${base}.md`,
-  };
+  return uniqueJsonMarkdownPaths(base);
 }
 
 function writerBacklogDispatchPlanPaths() {
   const base = join(repoRoot, "data", "post-ingest", `${timestamp()}_writer-packet-dispatch-plan`);
-  return {
-    jsonPath: `${base}.json`,
-    markdownPath: `${base}.md`,
-  };
+  return uniqueJsonMarkdownPaths(base);
 }
 
 function writerBacklogDispatchStatusPaths() {
   const base = join(repoRoot, "data", "post-ingest", `${timestamp()}_writer-packet-dispatch-status`);
-  return {
-    jsonPath: `${base}.json`,
-    markdownPath: `${base}.md`,
-  };
+  return uniqueJsonMarkdownPaths(base);
 }
 
 function writerBacklogDispatchClaimPaths() {
   const base = join(repoRoot, "data", "post-ingest", `${timestamp()}_writer-packet-dispatch-claim`);
-  return {
-    jsonPath: `${base}.json`,
-    markdownPath: `${base}.md`,
-  };
+  return uniqueJsonMarkdownPaths(base);
 }
 
 function writerBacklogDispatchReadinessPaths() {
   const base = join(repoRoot, "data", "post-ingest", `${timestamp()}_writer-packet-dispatch-readiness`);
-  return {
-    jsonPath: `${base}.json`,
-    markdownPath: `${base}.md`,
-  };
+  return uniqueJsonMarkdownPaths(base);
 }
 
 function writerBacklogDispatchNextShardPaths() {
   const base = join(repoRoot, "data", "post-ingest", `${timestamp()}_writer-packet-dispatch-next-shard`);
-  return {
-    jsonPath: `${base}.json`,
-    markdownPath: `${base}.md`,
-  };
+  return uniqueJsonMarkdownPaths(base);
 }
 
 function writerBacklogDispatchHandoffBatchPaths() {
   const base = join(repoRoot, "data", "post-ingest", `${timestamp()}_writer-packet-dispatch-handoff-batch`);
-  return {
-    jsonPath: `${base}.json`,
-    markdownPath: `${base}.md`,
-  };
+  return uniqueJsonMarkdownPaths(base);
 }
 
 function writerBacklogDispatchHandoffPromptsPaths() {
   const base = join(repoRoot, "data", "post-ingest", `${timestamp()}_writer-packet-dispatch-handoff-prompts`);
-  return {
-    jsonPath: `${base}.json`,
-    markdownPath: `${base}.md`,
-    dirPath: `${base}-files`,
-  };
+  return uniqueJsonMarkdownDirPaths(base);
 }
 
 function writerBacklogDispatchHandoffPromptCoveragePaths() {
   const base = join(repoRoot, "data", "post-ingest", `${timestamp()}_writer-packet-dispatch-handoff-prompt-coverage`);
-  return {
-    jsonPath: `${base}.json`,
-    markdownPath: `${base}.md`,
-  };
+  return uniqueJsonMarkdownPaths(base);
 }
 
 function codexPostIngestGoalAuditPaths() {

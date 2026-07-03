@@ -32,5 +32,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+[[corridor:corridor_bay-pkwy|Bay Pkwy]] was identified as one of 17 top-ranked corridors in Brooklyn for potential bus priority street improvements as part of the MTA Brooklyn Bus Network Redesign and NYC DOT's bus priority corridor program [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p020_c0002|This process identified 49 corridors to be studied for potential bus priority street improvements, including 17 top ranked corridors]] [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p020_c0004|Bay Pkwy listed among 17 top-ranked corridors]].
+The draft plan, published in December 2022, studied 49 corridors across Brooklyn using criteria including demand for bus service, bus performance, feasibility of street treatments, corridor role in the transit network, and neighborhood demographics [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p019_c0008|criteria for identifying corridors]] [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p020_c0002|49 corridors studied]].
+The current page evidence is sourced only from the Brooklyn Bus Network Redesign Draft Plan. No route-level details, ridership figures, or specific planned treatments for Bay Pkwy are yet available from this single source. Corridors with similar priority status in southern Brooklyn include Avenue Z and Church Ave [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p020_c0004|list of top-ranked corridors]].
 <!-- mta-wiki:writer:end -->

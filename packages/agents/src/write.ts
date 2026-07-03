@@ -6,7 +6,10 @@ import { createWikiReactorReadTools, createWikiReactorSandboxTools, sandboxSyste
 import { createTranscript, type TranscriptWriter } from "@mta-wiki/core/transcript";
 import type { HarnessConfig, HarnessRunOptions, HarnessRunResult } from "@mta-wiki/core/types";
 import { normalizeRepoPath } from "@mta-wiki/core/paths";
+import type { MtaCanonicalRecord, MtaValidationIssue } from "@mta-wiki/db/types";
 import { pageRelativePathForCanonicalRecord, readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { extractWriterRegion, parseInlinePrimitives } from "@mta-wiki/pipeline/materialize/primitives";
+import { buildWriterPrimitiveValidationContext, validateWriterPrimitivesInPage } from "@mta-wiki/pipeline/validate";
 import {
   verifyWriterBacklogPacketEdits,
   verifyWriterBacklogPackets,
@@ -19,6 +22,24 @@ import { writerPrompt, writerSystemPrompt } from "@mta-wiki/agents/prompts";
 import { runScopedSourceAgent } from "@mta-wiki/agents/shared";
 
 const DATA_ONLY_WRITER_KINDS = new Set(["claim", "metric_claim", "event", "treatment_component", "relation"]);
+const PRIMITIVE_LABEL_STOPWORDS = new Set([
+  "a",
+  "an",
+  "and",
+  "bus",
+  "corridor",
+  "entity",
+  "for",
+  "in",
+  "metric",
+  "of",
+  "on",
+  "project",
+  "route",
+  "the",
+  "this",
+  "to",
+]);
 
 export function writerSystemPromptFull(config: HarnessConfig, safeWriter = false): string {
   if (!safeWriter) return [writerSystemPrompt(), sandboxSystemPrompt("write", config)].join("\n\n");
@@ -84,20 +105,40 @@ function readWriterPacketRun(packetPath: string) {
   return { run, relativePath };
 }
 
+function primitiveKindForRecordKind(recordKind: string) {
+  if (recordKind === "metric_claim") return "metric";
+  if (recordKind === "route" || recordKind === "corridor" || recordKind === "project" || recordKind === "entity") return recordKind;
+  return undefined;
+}
+
+function allowedPrimitiveIds(packet: WriterBacklogPacket) {
+  const entries = [packet.target_record, ...packet.supporting_records]
+    .flatMap((record) => {
+      const primitiveKind = primitiveKindForRecordKind(record.record_kind);
+      return primitiveKind ? [{ primitiveKind, record }] : [];
+    })
+    .sort((a, b) => a.primitiveKind.localeCompare(b.primitiveKind) || a.record.record_id.localeCompare(b.record.record_id));
+  return entries.map(({ primitiveKind, record }) => `- [[${primitiveKind}:${record.record_id}|${record.display_name}]]`).join("\n") || "- (none)";
+}
+
 export function writerPacketPrompt(packetPath: string, packet: WriterBacklogPacket) {
   return `Write the writer region for exactly one materialized wiki page from this packet.
 
 Target page: \`${packet.page_path}\`
 Packet file: \`${packetPath}\`
+Allowed record primitives for this packet:
+${allowedPrimitiveIds(packet)}
 
 Workflow:
 1. Read \`${packet.page_path}\` with \`mta_read_wiki_page\`.
 2. Inspect the packet records below. Use \`mta_read_record\` for full canonical JSON when a packet card is not enough.
 3. Write only the writer region for \`${packet.page_path}\` with \`mta_write_writer_context\`.
-4. Keep the page concise: target 150-400 words. If evidence is thin, write less or leave the region empty rather than padding.
-5. Every factual sentence needs a direct \`[[cite:source_id#block_id|label]]\` primitive whose block supports that sentence.
-6. Use record primitives for known records: \`[[route:id|label]]\`, \`[[corridor:id|label]]\`, \`[[project:id|label]]\`, \`[[entity:id|label]]\`, and \`[[metric:id|label]]\`.
-7. Do not use bare \`source_id#block_id\` citations in final prose, do not edit frontmatter, and do not write to any page other than the target page.
+4. Keep the page concise: target 150-400 words. Use only short paragraphs; do not use headings, bullet lists, or numbered lists in the writer region. If evidence is thin, write less or leave the region empty rather than padding.
+5. Every factual sentence needs a direct \`[[cite:source_id#block_id|label]]\` primitive whose block supports that sentence. Before calling \`mta_write_writer_context\`, check that every blank-line-separated prose paragraph contains the literal string \`[[cite:\`; do not write any prose paragraph without it.
+6. Use record primitives only from the allow-list above. Records returned by tools may inform prose, but if their exact primitive is not rendered in the allow-list above, write them as plain text. Do not link claim, event, relation, or treatment_component records in writer prose.
+7. Never invent shorthand primitive ids such as \`nyc-dot\`, \`queens\`, \`bus-forward-2\`, \`q46?\`, or ids copied from page filenames without the exact \`record_id\`.
+8. Do not use bare \`[[record_id|label]]\` wikilinks or bare \`source_id#block_id\` citations in final prose. Every writer link must be one of the explicit \`kind:id\` primitives above or a \`cite:\` primitive.
+9. Do not edit frontmatter, and do not write to any page other than the target page.
 
 Writer packet:
 
@@ -106,6 +147,62 @@ ${JSON.stringify(packet, null, 2)}
 \`\`\`
 
 Return a short summary of the writer-region edit and any evidence caveats you noticed.`;
+}
+
+function primitiveLabelTokens(value: string) {
+  return new Set(
+    value
+      .toLowerCase()
+      .replace(/[_-]/gu, " ")
+      .split(/[^a-z0-9]+/u)
+      .map((token) => token.trim())
+      .filter((token) => token.length > 1 && !PRIMITIVE_LABEL_STOPWORDS.has(token)),
+  );
+}
+
+export function writerPrimitiveLabelIssues(pagePath: string, markdown: string, records: MtaCanonicalRecord[]): MtaValidationIssue[] {
+  const writerText = extractWriterRegion(markdown);
+  if (!writerText) return [];
+
+  const recordsById = new Map(records.map((record) => [record.record_id, record]));
+  const issues: MtaValidationIssue[] = [];
+  for (const primitive of parseInlinePrimitives(writerText)) {
+    if (primitive.kind === "cite") continue;
+    const record = recordsById.get(primitive.id);
+    if (!record) continue;
+    const labelTokens = primitiveLabelTokens(primitive.label);
+    const recordTokens = primitiveLabelTokens(`${record.display_name} ${record.record_id}`);
+    if (labelTokens.size === 0 || [...labelTokens].some((token) => recordTokens.has(token))) continue;
+    issues.push({
+      code: "writer_primitive_label_mismatch",
+      path: pagePath,
+      message: `primitive label does not appear to name ${record.record_id}: ${primitive.raw}`,
+    });
+  }
+  return issues;
+}
+
+export function writerUncitedProseIssues(pagePath: string, markdown: string): MtaValidationIssue[] {
+  const writerText = extractWriterRegion(markdown);
+  if (!writerText) return [];
+
+  const issues: MtaValidationIssue[] = [];
+  for (const [index, block] of writerText.split(/\n\s*\n/u).entries()) {
+    const prose = block
+      .split(/\n/u)
+      .map((line) => line.trim())
+      .filter((line) => line && !line.startsWith("#"))
+      .join("\n")
+      .trim();
+    if (!prose) continue;
+    if (parseInlinePrimitives(prose).some((primitive) => primitive.kind === "cite")) continue;
+    issues.push({
+      code: "uncited_writer_prose",
+      path: pagePath,
+      message: `writer prose block ${index + 1} has no cite primitive`,
+    });
+  }
+  return issues;
 }
 
 export async function runWritePacket(packetPath: string, options: HarnessRunOptions): Promise<HarnessRunResult> {
@@ -136,17 +233,31 @@ export async function runWritePacket(packetPath: string, options: HarnessRunOpti
     prompt: writerPacketPrompt(relativePath, packet),
     finalize: () => {
       const verification = verifyWriterBacklogPacketEdits([relativePath]);
+      const { absolutePath } = normalizeRepoPath(packet.page_path);
+      const records = readCanonicalRecords();
+      const markdown = readFileSync(absolutePath, "utf8");
+      const primitiveIssues = validateWriterPrimitivesInPage(
+        packet.page_path,
+        markdown,
+        buildWriterPrimitiveValidationContext(records),
+      ).concat(writerPrimitiveLabelIssues(packet.page_path, markdown, records), writerUncitedProseIssues(packet.page_path, markdown));
       transcript.write("mta_writer_packet_edit_verification", {
-        ok: verification.ok,
+        ok: verification.ok && primitiveIssues.length === 0,
         packetFileCount: verification.packet_file_count,
         pageCount: verification.page_count,
         pages: verification.pages,
         packetIssues: verification.packet_issues,
         editIssues: verification.edit_verification.issues,
         citationIssues: verification.citation_verification.issues,
+        primitiveIssues,
       });
-      if (!verification.ok) {
-        throw new Error(`Writer packet post-edit verification failed for ${relativePath}: ${verification.packet_issues.concat(verification.edit_verification.issues, verification.citation_verification.issues).map((issue) => `${issue.path} ${issue.code}`).join("; ")}`);
+      if (!verification.ok || primitiveIssues.length > 0) {
+        const editIssues = verification.packet_issues.concat(verification.edit_verification.issues, verification.citation_verification.issues);
+        const issueText = [
+          ...editIssues.map((issue) => `${issue.path} ${issue.code}`),
+          ...primitiveIssues.map((issue) => `${issue.path} ${issue.code}: ${issue.message}`),
+        ].join("; ");
+        throw new Error(`Writer packet post-edit verification failed for ${relativePath}: ${issueText}`);
       }
       return undefined;
     },

@@ -34,5 +34,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+This corridor, identified as candidate "N" in the Bus Forward 2017 plan, runs between Flushing and Springfield Boulevard in Queens [[cite:bus_forward_2#p005_c0001|Flushing to Springfield Boulevard listed as SBS candidate N]]. It was one of 21 candidate corridors identified by NYC DOT and the MTA for the next phase of Select Bus Service expansion, selected through data analysis, workshops, on-street surveying, and online feedback [[cite:bus_forward_2#p004_c0002|21 candidate corridors identified for SBS expansion]]. The corridor is part of a broader effort guided by 2015 and May 2017 City Council legislation directing NYC DOT to develop an updated SBS plan and include complementary transit improvements for neighborhoods with poor subway access [[cite:bus_forward_2#p002_c0001|2015 legislation for SBS update]][[cite:bus_forward_2#p002_c0002|May 2017 legislation for transit improvements]]. No further details about the specific alignment, route mileage, or implementing timeline for this corridor are available in the Bus Forward 2017 document.
 <!-- mta-wiki:writer:end -->

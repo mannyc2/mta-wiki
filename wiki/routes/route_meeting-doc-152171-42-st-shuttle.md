@@ -38,5 +38,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The [[route:route_meeting-doc-152171-42-st-shuttle|42 St Shuttle]] is a Manhattan-based shuttle service (route ID S) that was highlighted at the September 25, 2024 MTA Board Meeting [[cite:meeting_doc_152171#p001_c0002|MTA Board Meeting date]]. The meeting presentation reported that 5G cell service had been implemented on the shuttle, shown with a checkmark alongside the caption "42 St Shuttle 5G Cell Service ✓" [[cite:meeting_doc_152171#p007_c0003|42 St Shuttle 5G Cell Service]]. The [[project:project_meeting-doc-152171-42-st-shuttle-5g|42 St Shuttle 5G Cell Service]] project is a technology-system installation that delivers cellular connectivity to riders on the shuttle, recorded as delivered as of the September 2024 board meeting [[cite:meeting_doc_152171#p007_c0003|42 St Shuttle 5G deployment status]]. The same board meeting presentation also covered several other initiatives sharing the route's 42nd Street corridor, including [[project:project_meeting-doc-152171-14-st-fml-upgrades|14 St F/M/L Upgrades]] at the adjacent 14th Street station complex [[cite:meeting_doc_152171#p005_c0006|14 St F/M/L Upgrades]].
 <!-- mta-wiki:writer:end -->

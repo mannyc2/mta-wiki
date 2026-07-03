@@ -96,6 +96,16 @@ describe("writer primitive validation", () => {
     expect(issues.every((issue) => issue.code === "dangling_writer_primitive")).toBe(true);
   });
 
+  it("rejects legacy wikilinks and bare record-id links in writer regions", () => {
+    const issues = validateWriterPrimitivesInPage(
+      "wiki/projects/project_busway.md",
+      page("[[wiki/routes/route_m1|legacy route]] and [[treatment_bus-lanes|bus lanes]] cite [[cite:source_a#p001_c0001|source]]."),
+      context,
+    );
+
+    expect(issues.map((issue) => issue.code)).toEqual(["invalid_writer_primitive_syntax", "invalid_writer_primitive_syntax"]);
+  });
+
   it("treats an empty writer region as a no-op", () => {
     expect(validateWriterPrimitivesInPage("wiki/projects/project_busway.md", page(""), context)).toEqual([]);
   });

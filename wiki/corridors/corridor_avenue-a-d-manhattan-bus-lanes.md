@@ -37,5 +37,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+This corridor was established through a partnership between MTA New York City Transit and the NYC Department of Transportation as one of three bus lane corridors added by September 2022, part of over five miles of new bus lanes citywide [[cite:meeting_doc_95176#p006_c0012|NYCT Key Performance Metrics September 2022]]. Avenue A and Avenue D in Manhattan were identified alongside University Avenue in the Bronx and 21st Street in Queens as completed bus lane corridors [[cite:meeting_doc_95176#p006_c0012|NYCT Key Performance Metrics September 2022]]. The source document, a September 2022 NYCT performance metrics report, notes that several more bus lane corridors were planned for completion by the end of that year, benefiting over 300,000 riders [[cite:meeting_doc_95176#p006_c0012|NYCT Key Performance Metrics September 2022]]. This corridor appears only once in the supporting evidence, drawn from a president's message section; no additional route-level detail, street segments, implementation dates, or specific operational metrics for Avenue A and Avenue D are available in the source record.
 <!-- mta-wiki:writer:end -->

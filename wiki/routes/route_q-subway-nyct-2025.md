@@ -132,5 +132,13 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_q-subway-nyct-2025|Q Subway Line]] is described in the source set as operating between Second Avenue/96th Street in Manhattan and the Broadway Line via 63rd Street [[cite:meeting_doc_112036#p064_c0007|Q train route description]]. The Q appears in source evidence for the 57th Street Station (alongside the N, R, and W lines) and the Church Avenue (B/Q) station in Brooklyn [[cite:meeting_doc_42866#p004_c0002|57 Street Station entrance sign]] [[cite:nyct_key_performance_metrics_doc194001#p024_c0004|Church Avenue B/Q station]].
 
+The Second Avenue Subway Phase 2 project will extend Q service north of 96th Street to a new terminal at 125th Street and Lexington Avenue [[cite:meeting_doc_206071#p020_c0003|SAS Phase 2 Q extension north to 125th Street]]. The 106th Street cut-and-cover contract (Contract 3), which includes the new station box at 106th Street and connections to the existing Phase 1 tunnel, was awarded to Skanska Walsh Traylor SAS2-C3 Joint Venture in April 2026 [[cite:meeting_doc_206071#p022_c0009|106 St contract awarded to SWT JV]].
+
+At Kings Highway in Brooklyn, a proposed curbside-changes map identifies the Q station along with a planned relocation of the B/Q taxi stand from Kings Highway to East 16th Street [[cite:brt_kings_highway_aug2018#p001_c0006|taxi stand relocation yellow line]] [[cite:brt_kings_highway_aug2018#p001_c0007|B/Q taxi stand move to E 16 St]].
+
+In 2025, the MTA completed 34 elevator replacements systemwide, including two new elevators and a new station entrance at Church Avenue (B/Q), providing an accessible transfer between uptown and downtown platforms [[cite:nyct_key_performance_metrics_doc194001#p026_c0006|Church Avenue new entrance and elevators]] [[cite:nyct_key_performance_metrics_doc194001#p026_c0007|34 elevator replacements completed in 2025]].
+
+A May 2023 board-meeting discussion also describes 96th Street on Second Avenue as the Q line's northern terminal before the Phase 2 extension [[cite:meeting_doc_72546#p102_c0007|Q train northern terminal 96th Street]].
 <!-- mta-wiki:writer:end -->

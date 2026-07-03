@@ -38,5 +38,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+This was the first Select Bus Service route implemented in New York City, launching in June 2008 along Fordham Road and Pelham Parkway in the Bronx [[cite:brt_route_index#p001_b0001|Fordham Road-Pelham Parkway SBS launched June 2008]]. The route has since increased speeds by 20% [[cite:brt_route_index#p001_b0001|speed increase of 20%]], and achieved a rider satisfaction rate of [[metric:metric_fordham-rider-satisfaction-98pct|98% of riders stating that they were satisfied or very satisfied with the new service]] [[cite:brt_route_index#p001_b0001|98% rider satisfaction]]. As New York City's first SBS corridor, it established a model for the 15 subsequent SBS routes that followed across the boroughs [[cite:brt_route_index#p001_b0001|16 SBS routes implemented citywide]].
 <!-- mta-wiki:writer:end -->
