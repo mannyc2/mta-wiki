@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automated Camera Enforcement (ACE) - MTA Wiki</title>
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../index.html">MTA Wiki</a>
+  <nav><a href="../routes.html">Routes</a><a href="../corridors.html">Corridors</a><a href="../projects.html">Projects</a></nav>
+</header>
+<main>
+<article class="record-page project">
+<p class="eyebrow">project</p>
+<h1>Automated Camera Enforcement (ACE)</h1>
+<p class="record-id">project_ace-automated-camera-enforcement</p>
+
+<h2>Program Scope</h2>
+<p>Automated Camera Enforcement, or ACE, is the MTA&#39;s bus-mounted camera enforcement program for keeping bus routes clear. The staged MTA ACE page says the 2023 NYS Legislature passed a budget provision to expand ACE, and describes the program as issuing violations to vehicles occupying bus lanes, double parked vehicles along bus routes, and vehicles blocking bus stops. The same source says ACE is administered through the MTA, the New York City Department of Finance, and the New York City Department of Transportation. [mta_automated_camera_enforcement#p001_b0001]</p>
+<p>ACE is organized around bus routes rather than a single corridor. The MTA page says ACE is currently active on 60 bus routes and lists &quot;major streets that these routes run on&quot; by borough, including examples such as Bx12-SBS on Pelham Pkwy / Fordham Rd, B46-SBS on Utica Av / Malcolm X Blvd, M15-SBS on 1 Av / 2 Av, Q53-SBS on Broadway / Queens Blvd / Woodhaven Blvd / Cross Bay Blvd, and S79-SBS on Hylan Blvd / Richmond Av. [mta_automated_camera_enforcement#p001_b0001]</p>
+<h2>Enforcement Mechanics</h2>
+<p>ACE uses warning periods before fine-bearing enforcement. The MTA page says that on each ACE bus route, the MTA and City issue warning notices for 60 days before fine-bearing violations begin. It also says vehicles are issued violations only after being observed by two buses, with bus-lane standing violations after longer than 5 minutes and bus-stop or double-parking violations after longer than 2.5 minutes. Fines start at $50, increase by $50 for each additional violation, and rise to a maximum of $250 per violation; the page also says violations are civil penalties, each violation is reviewed for accuracy by a City employee, and ACE revenue supports MTA operations. [mta_automated_camera_enforcement#p001_b0001]</p>
+<h2>Chronology</h2>
+<p>The November 2023 minutes describe ACE as an expansion of ABLE planned for May 2024, with wider enforcement &quot;not only on bus lanes, but along the entire bus routes&quot; during a four-year demonstration. That same discussion anticipated activation on fourteen routes in May 2024, expansion to another 400 buses and fourteen additional routes, and then ten additional routes each year from 2025 through 2027. [meeting_doc_128931#p004_c0011] [meeting_doc_128931#p005_c0001]</p>
+<p>Early 2024 sources describe the scope change more specifically: ACE would expand automated enforcement beyond bus lanes to vehicles blocking bus stops and double-parked vehicles, with cameras added to up to 1,000 buses and enforcement on 28 bus routes later in the year. Procurement material says the Department of Buses updated the scope of work, changed the project name to Automated Camera Enforcement (&quot;ACE&quot;), and requested negotiations with both vendors to add bus-stop and double-parking enforcement to the contracts. [meeting_doc_131541#p015_c0010] [meeting_doc_138336#p002_c0006]</p>
+<p>A later 2024 performance report says the newly rebranded ACE program began on 14 existing ABLE routes during a four-year demonstration period. In September 2024, the MTA announced a 60-day warning period for 10 new bus routes on September 16 and another 10 routes on September 30, bringing the total to 34 routes and over 1,000 ACE-equipped buses across Queens, Brooklyn, Manhattan, Staten Island, and the Bronx by the end of September. [meeting_doc_143306#p015_c0010] [meeting_doc_151656#p005_c0004] [meeting_doc_151656#p011_c0009]</p>
+<p>By the November 29 snapshot in <code>meeting_doc_160446</code>, all 34 routes had moved from the warning period to issuing violations. That source reports average bus lane speed increases of 5%, a 20% reduction in collisions, and a 5-10% estimated reduction in emissions on routes with ACE. [meeting_doc_160446#p011_c0009]</p>
+<p>The December 2025 KPM source records another expansion snapshot: on December 8, the B68 and B60 in Brooklyn and the M57 in Manhattan entered a 60-day warning phase, joining 51 routes already covered by ACE. It also says that since launch in June 2024, ACE had extended across all five boroughs, equipped more than 1,400 buses, covered 560 miles of service, and benefited over 915,000 daily customers. [nyct_key_performance_metrics_doc194001#p010_c0011] [nyct_key_performance_metrics_doc194001#p011_c0009]</p>
+<h2>Caveats And Open Questions</h2>
+<p>The current MTA ACE page says ACE is &quot;currently active on 60 bus routes,&quot; but the canonical route extraction contains 63 <code>serves_route</code> relations from the same route list. Combined route entries and routes marked &quot;in 60-day warning period&quot; appear to be part of that mismatch. [mta_automated_camera_enforcement#p001_b0001]</p>
+<p>Route counts are snapshot-specific: 14 routes in early launch evidence, 34 routes by September/November 2024, 51 plus three warning-phase routes in December 2025, and 60 active routes on the MTA page updated May 15, 2026. These should not be collapsed into one timeless count. The staged performance claims are source-stated averages or summaries. The checked blocks do not provide segment-level methodology for the 5% speed increase, 20% collision reduction, or 5-10% estimated emissions reduction.</p>
+
+
+<section class="facts"><h2>Structured Data</h2><table><tr><th>agency</th><td>NYC Transit Department of Buses</td></tr>
+<tr><th>boroughs</th><td>[Manhattan, Bronx, Brooklyn, Queens, Staten Island]</td></tr>
+<tr><th>boroughs_normalized</th><td>[manhattan, bronx, brooklyn, queens, staten_island]</td></tr>
+<tr><th>buses_equipped</th><td>1400</td></tr>
+<tr><th>coverage_miles</th><td>560</td></tr>
+<tr><th>daily_customers_benefitted</th><td>915000</td></tr>
+<tr><th>date_normalized</th><td>2024-06</td></tr>
+<tr><th>date_precision</th><td>unknown</td></tr>
+<tr><th>date_source_field</th><td>start_date</td></tr>
+<tr><th>description</th><td>A bus-mounted camera system that issues violations to vehicles occupying bus lanes, to double parked vehicles along bus routes, and to vehicles blocking bus stops. Administered in partnership between the MTA, NYC Department of Finance (DOF), and NYC Department of Transportation (DOT). The 2023 NYS Legislature passed a provision in the budget to expand ACE. Currently active on 60 bus routes.</td></tr>
+<tr><th>document_time_status</th><td>active</td></tr>
+<tr><th>extra_fields</th><td>{acronym: ACE}</td></tr>
+<tr><th>partner_agency</th><td>NYC Department of Transportation</td></tr>
+<tr><th>project_family</th><td>enforcement_program</td></tr>
+<tr><th>project_name</th><td>Automated Camera Enforcement (ACE)</td></tr>
+<tr><th>project_type</th><td>camera enforcement program</td></tr>
+<tr><th>routes_covered</th><td>54</td></tr>
+<tr><th>start_date</th><td>June 2024</td></tr>
+<tr><th>start_date_normalized</th><td>{confidence: parsed_text, normalized_date: 2024-06, precision: month, raw_text: June 2024}</td></tr>
+<tr><th>status</th><td>active</td></tr></table></section>
+<section class="evidence" data-pagefind-ignore>
+<h2>Citations</h2>
+
+<table><thead><tr><th>Source</th><th>Block</th><th>Publisher</th><th>Date</th><th>Quote</th></tr></thead><tbody>
+<tr><td><a href="../sources/mta_automated_camera_enforcement.html#p001_b0001">mta_automated_camera_enforcement</a></td><td>p001_b0001</td><td></td><td></td><td>The 2023 NYS Legislature passed a provision in the budget to expand Automated Camera Enforcement, or ACE.</td></tr>
+<tr><td><a href="../sources/mta_automated_camera_enforcement.html#p001_b0001">mta_automated_camera_enforcement</a></td><td>p001_b0001</td><td></td><td></td><td>The ACE program is a bus-mounted camera system that issues violations to vehicles occupying bus lanes, to double parked vehicles along bus routes, and to vehicles blocking bus stops.</td></tr>
+<tr><td><a href="../sources/mta_automated_camera_enforcement.html#p001_b0001">mta_automated_camera_enforcement</a></td><td>p001_b0001</td><td></td><td></td><td>The program is administered in partnership between the MTA, the New York City Department of Finance (DOF) and the New York City Department of Transportation (DOT).</td></tr>
+<tr><td><a href="../sources/mta_automated_camera_enforcement.html#p001_b0001">mta_automated_camera_enforcement</a></td><td>p001_b0001</td><td></td><td></td><td>It is currently active on 60 bus routes</td></tr>
+<tr><td><a href="../sources/nyct_key_performance_metrics_doc194001.html#p011_c0009">NYCT Key Performance Metrics - December 2025</a></td><td>p011_c0009</td><td>New York City Transit</td><td>2025-12</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_128931.html#p004_c0011">Minutes of Regular Meeting Committee on Operations November 29, 2023</a></td><td>p004_c0011</td><td>MTA</td><td>2023-11-29</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_128931.html#p005_c0001">Minutes of Regular Meeting Committee on Operations November 29, 2023</a></td><td>p005_c0001</td><td>MTA</td><td>2023-11-29</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_131541.html#p015_c0010">New York City Transit Key Performance Metrics - January 2024</a></td><td>p015_c0010</td><td>Metropolitan Transportation Authority (MTA)</td><td>2024-01</td><td>Beginning in May, we will expand the Automated Camera Enforcement (ACE) program beyond bus lanes</td></tr>
+<tr><td><a href="../sources/meeting_doc_138336.html#p002_c0006">NYCT procurements</a></td><td>p002_c0006</td><td></td><td></td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_138441.html#p008_c0006">New York City Transit Procurements - April 2024</a></td><td>p008_c0006</td><td>MTA New York City Transit</td><td>2024-04</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_143306.html#p005_c0006">New York City Transit Key Performance Metrics - June 2024</a></td><td>p005_c0006</td><td>MTA New York City Transit</td><td>2024-06</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_143306.html#p015_c0009">New York City Transit Key Performance Metrics - June 2024</a></td><td>p015_c0009</td><td>MTA New York City Transit</td><td>2024-06</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_143306.html#p015_c0010">New York City Transit Key Performance Metrics - June 2024</a></td><td>p015_c0010</td><td>MTA New York City Transit</td><td>2024-06</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_143306.html#p014_c0011">New York City Transit Key Performance Metrics - June 2024</a></td><td>p014_c0011</td><td>MTA New York City Transit</td><td>2024-06</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_160446.html#p011_c0009">NEW YORK CITY TRANSIT KEY PERFORMANCE METRICS; December 2024; prepared for December 2024 meeting of New York City Transit &amp; Bus Committee</a></td><td>p011_c0009</td><td>Metropolitan Transportation Authority</td><td>2024-12</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_151656.html#p005_c0004">New York City Transit Key Performance Metrics - September 2024</a></td><td>p005_c0004</td><td>MTA</td><td>2024-09</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_151656.html#p011_c0009">New York City Transit Key Performance Metrics - September 2024</a></td><td>p011_c0009</td><td>MTA</td><td>2024-09</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_167241.html#p028_c0007">Key Performance Metrics - March 2025</a></td><td>p028_c0007</td><td>New York City Transit</td><td>2025-03-24</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_167241.html#p028_c0008">Key Performance Metrics - March 2025</a></td><td>p028_c0008</td><td>New York City Transit</td><td>2025-03-24</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_170921.html#p006_c0002">New York City Transit Key Performance Metrics - April 2025</a></td><td>p006_c0002</td><td>MTA</td><td>2025-04</td><td>In 2025, we plan to expand ACE to 30 additional routes and 1,000 more buses, beginning with the M2 and M4 at the end of April</td></tr>
+<tr><td><a href="../sources/meeting_doc_179606.html#p011_c0010">New York City Transit Key Performance Metrics - July 2025</a></td><td>p011_c0010</td><td>MTA</td><td>2025-07</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_186836.html#p007_c0004">New York City Transit Procurements</a></td><td>p007_c0004</td><td>MTA</td><td>2025-09</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_186836.html#p008_c0014">New York City Transit Procurements</a></td><td>p008_c0014</td><td>MTA</td><td>2025-09</td><td></td></tr>
+<tr><td><a href="../sources/meeting_doc_201621.html#p028_c0004">New York City Transit Key Performance Metrics - March 2026</a></td><td>p028_c0004</td><td>MTA</td><td>2026-03</td><td>To tackle this problem, the MTA established the Automated Bus Lane Enforcement (ABLE) program in 2019.</td></tr>
+<tr><td><a href="../sources/meeting_doc_201621.html#p028_c0004">New York City Transit Key Performance Metrics - March 2026</a></td><td>p028_c0004</td><td>MTA</td><td>2026-03</td><td>What began as a focus on bus lane enforcement has evolved into a broader initiative known as Automated Camera Enforcement (ACE).</td></tr>
+<tr><td><a href="../sources/meeting_doc_201621.html#p029_c0006">New York City Transit Key Performance Metrics - March 2026</a></td><td>p029_c0006</td><td>MTA</td><td>2026-03</td><td>Today, automated camera enforcement is active on 58 routes, covering about 560 miles of streets and across all five boroughs.</td></tr>
+<tr><td><a href="../sources/meeting_doc_187096.html#p037_c0006">MTA Board Action Items - September 2025</a></td><td>p037_c0006</td><td>Metropolitan Transportation Authority (MTA)</td><td>2025-09</td><td>Improving the enforcement of traffic restrictions is a critical element to ensuring the success of MTA&#39;s strategic goal of providing twenty-first century bus service</td></tr>
+</tbody></table>
+</section>
+</article>
+</main>
+</body>
+</html>
