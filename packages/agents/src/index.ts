@@ -193,6 +193,17 @@ export { runCanonicalizeReview } from "@mta-wiki/agents/canonicalize-review";
 export type { CanonicalizeReviewManifest, CanonicalizeReviewOptions, CanonicalizeVerdict } from "@mta-wiki/agents/canonicalize-review";
 export { applyCanonicalizeDecisions } from "@mta-wiki/pipeline/records/canonicalize-apply";
 export type { CanonicalizeApplyOptions, CanonicalizeApplyReport } from "@mta-wiki/pipeline/records/canonicalize-apply";
+export {
+  buildExtractContract,
+  DEFAULT_EXTRACT_RELEASE_ID,
+  DEFAULT_EXTRACT_RUN_ID,
+  extractEnumVocabulary,
+  extractPrompt,
+  extractRunActualDir,
+  extractSystemPrompt,
+  runExtractSource,
+} from "@mta-wiki/agents/extract";
+export type { ExtractRunOptions, ExtractRunResult } from "@mta-wiki/agents/extract";
 export { buildCanonicalizePackets } from "@mta-wiki/pipeline/records/canonicalize-packets";
 export type { CanonicalizeDecision, CanonicalizePacket } from "@mta-wiki/pipeline/records/canonicalize-packets";
 export { generateCrossSourceRelationCandidates, writeCrossSourceRelationCandidates } from "@mta-wiki/pipeline/identity/cross-source-candidates";

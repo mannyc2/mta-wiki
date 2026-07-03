@@ -1,7 +1,15 @@
 import type { Usage } from "@earendil-works/pi-ai";
 
 export type HarnessRunCommand = "ingest" | "write" | "ask";
-export type HarnessTranscriptCommand = HarnessRunCommand | "resume" | "identity-review-run" | "schema-proposal-run" | "ontology-normalize-run" | "canonicalize" | "canonicalize-review";
+export type HarnessTranscriptCommand =
+  | HarnessRunCommand
+  | "resume"
+  | "extract"
+  | "identity-review-run"
+  | "schema-proposal-run"
+  | "ontology-normalize-run"
+  | "canonicalize"
+  | "canonicalize-review";
 
 export type ProviderProfile = {
   provider: string;

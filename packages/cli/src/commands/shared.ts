@@ -19,6 +19,7 @@ export type Command =
   | "export-site"
   | "quality-report"
   | "replay-eval"
+  | "extract"
   | "identity-review"
   | "identity-review-run"
   | "identity-review-apply"

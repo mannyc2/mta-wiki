@@ -11,6 +11,30 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 - Owner approved LLM spend for the remaining post-v1 plans in this conversation: "I give you
   permission for the llm spend."
 
+### V2 Extract Pilot Spend Gate
+
+- Owner approval for Plan 014 provider spend, recorded verbatim: "I give you permission for the
+  llm spend."
+- Plan 014 10-source pilot estimate used Pioneer DeepSeek V4 Flash (`$0.10/M input`,
+  `$0.20/M output`) and the vendored DeepSeek tokenizer on the first 10 replay-manifest prompts:
+  `223452` input tokens total, `22345` average input tokens/source, estimated input cost
+  `$0.022345`. With output allowances of `2000`, `5000`, or `10000` tokens/source, estimated
+  10-source pilot cost is `$0.026345`, `$0.032345`, or `$0.042345` respectively before retries.
+
+### V2 Extract Stage Local Implementation
+
+- Plan 014 Steps 1-3 landed locally: a deterministic prompt-embedded final-schema extraction
+  contract, a replay-only `extract` CLI path that writes under `data/replay/runs/<run_id>/`,
+  boundary validation with enum-miss review handling, and deterministic anchor matching against
+  existing canonical ids/aliases/do-not-merge pairs.
+- Mocked CLI verification passed for `14th_street_busway_brochure`: `accepted=1`, `review=0`,
+  `enum_misses=0`, with no live provider call and no writes to `data/submissions/` or
+  `data/canonical/`.
+- Plan 014 code gates passed before pilot: `bun run typecheck`; `bun run test` (`945 pass`,
+  `1 skip`, `0 fail`); `bun run validate` with `Issues: 0`; and
+  `bun scripts/determinism-anchor.ts` with combined hash
+  `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ### Static Site Exporter Ready
 
 - Added the static HTML exporter for route, corridor, project, and source citation-target pages.

@@ -118,6 +118,7 @@ function parseCommand(argv: string[]): ParsedArgs {
     "export-site",
     "quality-report",
     "replay-eval",
+    "extract",
     "identity-review",
     "identity-review-run",
     "identity-review-apply",
