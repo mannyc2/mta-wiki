@@ -111,8 +111,14 @@ export function buildExtractContract(releaseId = DEFAULT_EXTRACT_RELEASE_ID, roo
     },
     evidence_contract: [
       "Every record must cite source_id, block_id, and source_quote.",
+      "source_quote must be an exact substring copied from the cited source block, preserving OCR spacing and punctuation.",
       "The cited block must support the full assertion, including endpoints, dates, values, and relation direction.",
       "Use the smallest complete block or same-page range; do not cite a block that only proves an endpoint label.",
+    ],
+    relation_contract: [
+      "Relation payloads must use subject_id and object_id for endpoints.",
+      "Endpoint values may be local_observation_id values from records in the same output or existing canonical record ids.",
+      "Do not emit subject_local_observation_id or object_local_observation_id; the boundary accepts them only as a compatibility fallback.",
     ],
     enum_vocabulary: enumVocabulary,
     relation_taxonomy: taxonomy,
@@ -138,7 +144,8 @@ export function extractSystemPrompt() {
     "Extract final-schema records directly from the supplied source packet.",
     "Preserve source literals in raw fields, but include final-schema companions when the contract vocabulary provides them.",
     "If a closed enum value does not fit, use other and put the source literal in extra_fields.<field>_other_text.",
-    "Every record must include evidence_refs with source_id, block_id, and source_quote copied from the cited block.",
+    "Every record must include display_name and evidence_refs with source_id, block_id, and an exact source_quote copied from the cited block.",
+    "Relation payloads must use subject_id and object_id endpoint fields.",
   ].join("\n");
 }
 

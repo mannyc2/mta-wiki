@@ -55,6 +55,21 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   with `Issues: 0`; and `bun scripts/determinism-anchor.ts` with combined hash
   `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
+### V2 Extract Deterministic Boundary Iteration
+
+- Without provider spend, replayed the saved 10 pilot responses through a local boundary fix.
+  The fix derives display names from payload anchors when the model omits `display_name`,
+  accepts OCR-equivalent citation quotes after conservative normalization, and maps relation
+  `subject_local_observation_id`/`object_local_observation_id` aliases into final
+  `subject_id`/`object_id` before anchor remapping.
+- The no-spend replay improved boundary yield but did not clear the Plan 014 STOP:
+  accepted records `321 -> 374`, review entries `198 -> 147`, `missing_display_name`
+  `53 -> 0`, but scoped replay agreement remained `0.00%` (`0/722`). The generated
+  throwaway replay run was removed; the durable conclusion is this LOG entry plus tests.
+- Post-iteration gates passed: `bun run typecheck`; `bun run test` (`949 pass`, `1 skip`,
+  `0 fail`); `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts`
+  with combined hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ### Static Site Exporter Ready
 
 - Added the static HTML exporter for route, corridor, project, and source citation-target pages.

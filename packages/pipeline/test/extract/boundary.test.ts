@@ -65,4 +65,70 @@ describe("v2 extract boundary", () => {
     expect(result.accepted_record_count).toBe(0);
     expect(result.review.map((entry) => entry.code)).toContain("missing_evidence_refs");
   });
+
+  it("derives display names from payload anchors when the model omits display_name", () => {
+    const result = validateExtractEnvelope(
+      {
+        source_id: "source_a",
+        records: [
+          {
+            record_kind: "route",
+            payload: { route_id: "M15", route_name: "M15 Local" },
+            evidence_refs: [{ source_id: "source_a", block_id: "p001_c0001", source_quote: "M15 service" }],
+          },
+        ],
+      },
+      { sourceBlocks: [block()] },
+    );
+    expect(result.accepted_record_count).toBe(1);
+    expect(result.records[0]?.display_name).toBe("M15");
+    expect(result.review.map((entry) => entry.code)).not.toContain("missing_display_name");
+  });
+
+  it("accepts OCR-equivalent evidence quotes with normalized whitespace and ordinals", () => {
+    const result = validateExtractEnvelope(
+      {
+        source_id: "source_a",
+        records: [
+          {
+            record_kind: "corridor",
+            display_name: "116th Street",
+            payload: { corridor_name: "116th Street" },
+            evidence_refs: [{ source_id: "source_a", block_id: "p001_c0001", source_quote: "116th Street - Morningside and Pleasant" }],
+          },
+        ],
+      },
+      { sourceBlocks: [block("p001_c0001", "116 th Street – Morningside & Pleasant")] },
+    );
+    expect(result.accepted_record_count).toBe(1);
+    expect(result.review.map((entry) => entry.code)).not.toContain("evidence_quote_not_in_block");
+  });
+
+  it("normalizes relation local endpoint aliases into final endpoint fields", () => {
+    const result = validateExtractEnvelope(
+      {
+        source_id: "source_a",
+        records: [
+          {
+            record_kind: "relation",
+            display_name: "project route scope",
+            local_observation_id: "rel_local",
+            payload: {
+              relation_kind: "serves_route",
+              relation_family: "route_scope",
+              subject_local_observation_id: "project_local",
+              object_local_observation_id: "route_local",
+            },
+            evidence_refs: [{ source_id: "source_a", block_id: "p001_c0001", source_quote: "M15 service" }],
+          },
+        ],
+      },
+      { sourceBlocks: [block()] },
+    );
+    expect(result.accepted_record_count).toBe(1);
+    expect(result.records[0]?.payload.subject_id).toBe("project_local");
+    expect(result.records[0]?.payload.object_id).toBe("route_local");
+    expect(result.records[0]?.relation?.subject_id).toBe("project_local");
+    expect(result.records[0]?.relation?.object_id).toBe("route_local");
+  });
 });

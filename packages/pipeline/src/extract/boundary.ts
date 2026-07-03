@@ -10,7 +10,7 @@ import type { ReplayBaselineFile, ReplayEvidenceIdentity, ReplayProjectedRecord 
 
 export type ExtractedRecordDraft = {
   record_kind: MtaObservationKind;
-  display_name: string;
+  display_name?: string | undefined;
   local_observation_id?: string | undefined;
   target_record_id?: string | undefined;
   raw_text?: string | undefined;
@@ -170,6 +170,7 @@ function coerceEnumMisses(
 
 function normalizePayload(sourceId: string, draft: ExtractedRecordDraft, result: ExtractBoundaryResult, enumVocabulary: ExtractEnumVocabulary) {
   const payload: JsonObject = isJsonObject(draft.payload) ? { ...draft.payload } : {};
+  normalizeRelationEndpointAliases(payload, draft.record_kind);
   const specs = fieldSpecsByName(draft.record_kind);
   const extra = isJsonObject(payload.extra_fields) ? { ...payload.extra_fields } : {};
 
@@ -208,6 +209,14 @@ function normalizePayload(sourceId: string, draft: ExtractedRecordDraft, result:
   result.enum_miss_count += coerceEnumMisses(sourceId, draft, payload, enumVocabulary, result);
   validateNormalizedPayload(sourceId, draft, payload, result);
   return payload;
+}
+
+function normalizeRelationEndpointAliases(payload: JsonObject, kind: MtaObservationKind) {
+  if (kind !== "relation") return;
+  const subjectLocal = payload.subject_local_observation_id;
+  const objectLocal = payload.object_local_observation_id;
+  if (typeof payload.subject_id !== "string" && typeof subjectLocal === "string" && subjectLocal.trim()) payload.subject_id = subjectLocal;
+  if (typeof payload.object_id !== "string" && typeof objectLocal === "string" && objectLocal.trim()) payload.object_id = objectLocal;
 }
 
 function schemaPayload(payload: JsonObject) {
@@ -306,7 +315,7 @@ function validateEvidence(
       });
       continue;
     }
-    if (block && !block.raw_text.includes(ref.source_quote) && !block.normalized_text.includes(ref.source_quote)) {
+    if (block && !quoteMatchesBlock(ref.source_quote, block)) {
       issue(result, {
         source_id: sourceId,
         severity: "error",
@@ -330,6 +339,24 @@ function validateEvidence(
   );
 }
 
+function evidenceComparable(text: string) {
+  return text
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[‐‑‒–—―]/gu, "-")
+    .replace(/[•▪■●]/gu, " ")
+    .replace(/\b(\d+)\s+(st|nd|rd|th)\b/gu, "$1$2")
+    .replace(/&/gu, " and ")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function quoteMatchesBlock(quote: string, block: StagedSourceBlock) {
+  if (block.raw_text.includes(quote) || block.normalized_text.includes(quote)) return true;
+  const normalizedQuote = evidenceComparable(quote);
+  return normalizedQuote.length > 0 && (evidenceComparable(block.raw_text).includes(normalizedQuote) || evidenceComparable(block.normalized_text).includes(normalizedQuote));
+}
+
 function relationProjection(kind: MtaObservationKind, payload: JsonObject): ReplayProjectedRecord["relation"] {
   if (kind !== "relation") return undefined;
   return {
@@ -345,8 +372,47 @@ function fallbackRecordId(sourceId: string, draft: ExtractedRecordDraft, payload
   return (
     draft.target_record_id ??
     draft.local_observation_id ??
-    `${draft.record_kind}_${stableHash({ source_id: sourceId, display_name: draft.display_name, payload } as unknown as JsonValue).slice(0, 12)}`
+    `${draft.record_kind}_${stableHash({ source_id: sourceId, display_name: displayNameForDraft(draft, payload), payload } as unknown as JsonValue).slice(0, 12)}`
   );
+}
+
+function payloadString(payload: JsonObject, fields: string[]) {
+  for (const field of fields) {
+    const value = payload[field];
+    if (typeof value === "string" && value.trim()) return value.trim();
+    if (typeof value === "number" || typeof value === "boolean") return String(value);
+  }
+  return undefined;
+}
+
+function displayNameForDraft(draft: ExtractedRecordDraft, payload: JsonObject) {
+  if (typeof draft.display_name === "string" && draft.display_name.trim()) return draft.display_name.trim();
+  const specAnchors = kindSpec(draft.record_kind)?.anchors ?? [];
+  const common =
+    draft.record_kind === "relation"
+      ? [
+          typeof payload.relation_kind === "string" ? payload.relation_kind : undefined,
+          typeof payload.subject_id === "string" || typeof payload.object_id === "string" ? `${payload.subject_id ?? "?"} -> ${payload.object_id ?? "?"}` : undefined,
+        ]
+      : [
+          payloadString(payload, [
+            "title",
+            "label",
+            "name",
+            "project_name",
+            "corridor_name",
+            "route_id",
+            "route_name",
+            "entity_name",
+            "event_name",
+            "claim_text",
+            "metric_name",
+            "treatment_name",
+            "description",
+            ...specAnchors,
+          ]),
+        ];
+  return common.filter((value): value is string => typeof value === "string" && value.trim().length > 0).join(" ").trim();
 }
 
 function projectedOrder(a: ReplayProjectedRecord, b: ReplayProjectedRecord) {
@@ -394,7 +460,10 @@ export function validateExtractEnvelope(
       continue;
     }
     const draft = rawDraft;
-    if (typeof draft.display_name !== "string" || !draft.display_name.trim()) {
+    const beforeErrors = result.review.filter((entry) => entry.severity === "error").length;
+    const payload = normalizePayload(sourceId, draft, result, enumVocabulary);
+    const displayName = displayNameForDraft(draft, payload);
+    if (!displayName) {
       issue(result, {
         source_id: sourceId,
         severity: "error",
@@ -407,8 +476,6 @@ export function validateExtractEnvelope(
       continue;
     }
 
-    const beforeErrors = result.review.filter((entry) => entry.severity === "error").length;
-    const payload = normalizePayload(sourceId, draft, result, enumVocabulary);
     const evidence = validateEvidence(sourceId, draft, blocksById, result);
     const afterErrors = result.review.filter((entry) => entry.severity === "error").length;
     if (afterErrors > beforeErrors || evidence.length === 0) continue;
@@ -416,7 +483,7 @@ export function validateExtractEnvelope(
     result.records.push({
       v1_record_id: fallbackRecordId(sourceId, draft, payload),
       record_kind: draft.record_kind,
-      display_name: draft.display_name.trim(),
+      display_name: displayName,
       raw_text: draft.raw_text,
       truth_status: draft.truth_status ?? "source_stated",
       review_state: draft.review_state ?? "unreviewed",
