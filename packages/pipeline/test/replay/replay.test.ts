@@ -166,4 +166,30 @@ describe("replay report", () => {
     expect(result.report.by_kind.metric_claim?.agreement_rate).toBe(0);
     expect(result.report.by_kind.relation?.agreement_rate).toBe(1);
   });
+
+  it("can scope a pilot report to sources present in the actual dir", () => {
+    const root = join(work, "actual-only");
+    const sourceA = record("source_a", "source", { publisher: "NYC DOT", content_type: "application/pdf" }, "source_a");
+    sourceA.evidence_refs = [{ source_id: "source_a", block_id: "p001_c0000" }];
+    const metricA = record("metric_speed", "metric_claim", { metric_name: "bus_speed", value: 10, unit: "mph" }, "source_a");
+    metricA.evidence_refs = [{ source_id: "source_a", block_id: "p001_c0001" }];
+    const sourceB = record("source_b", "source", { publisher: "NYC DOT", content_type: "application/pdf" }, "source_b");
+    sourceB.evidence_refs = [{ source_id: "source_b", block_id: "p001_c0000" }];
+    const metricB = record("metric_other", "metric_claim", { metric_name: "bus_speed", value: 20, unit: "mph" }, "source_b");
+    metricB.evidence_refs = [{ source_id: "source_b", block_id: "p001_c0001" }];
+    writeFixtureRelease(root, "test", [sourceA, metricA, sourceB, metricB]);
+
+    const actualDir = join(root, "actual");
+    mkdirSync(actualDir, { recursive: true });
+    const actual = baselineForSource([sourceA, metricA], "test", "source_a");
+    writeFileSync(join(actualDir, "source_a.json"), `${stableJson(actual as unknown as JsonValue)}\n`, "utf8");
+
+    const full = writeReplayEval({ releaseId: "test", runId: "fixture-full", actualDir, rootDir: root });
+    const scoped = writeReplayEval({ releaseId: "test", runId: "fixture-scoped", actualDir, actualOnly: true, rootDir: root });
+    expect(full.report.source_count).toBe(2);
+    expect(full.report.totals.missing).toBeGreaterThan(0);
+    expect(scoped.report.source_count).toBe(1);
+    expect(scoped.report.totals.missing).toBe(0);
+    expect(scoped.report.totals.match).toBe(2);
+  });
 });

@@ -747,6 +747,7 @@ export function writeReplayEval(options: {
   releaseId?: string | undefined;
   runId?: string | undefined;
   actualDir?: string | undefined;
+  actualOnly?: boolean | undefined;
   seed?: string | undefined;
   rootDir?: string | undefined;
 } = {}): ReplayEvalResult {
@@ -760,9 +761,10 @@ export function writeReplayEval(options: {
   const actualDir = options.actualDir ?? baselineDir;
   const expectedBySource = readBaselineDir(baselineDir);
   const actualBySource = options.actualDir ? readBaselineDir(actualDir) : expectedBySource;
+  const selectedSources = options.actualOnly && options.actualDir ? manifest.sources.filter((source) => actualBySource.has(source.source_id)) : manifest.sources;
   const diffs: ReplayDiffResult[] = [];
   const replayRecords: ReplayProjectedRecord[] = [];
-  for (const source of manifest.sources) {
+  for (const source of selectedSources) {
     const expected = expectedBySource.get(source.source_id)?.records ?? [];
     const actual = actualBySource.get(source.source_id)?.records ?? [];
     replayRecords.push(...expected);
@@ -776,7 +778,7 @@ export function writeReplayEval(options: {
     manifestPath: relative(rootDir, manifestPath),
     baselineDir: relative(rootDir, baselineDir),
     actualDir: relative(rootDir, actualDir),
-    sourceCount: manifest.source_count,
+    sourceCount: selectedSources.length,
     selfDiff: actualDir === baselineDir,
     diffs,
     replayRecords,

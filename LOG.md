@@ -35,6 +35,26 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `bun scripts/determinism-anchor.ts` with combined hash
   `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
+### V2 Extract Pilot Stop
+
+- Plan 014 Step 4 ran the owner-approved 10-source pilot as `v2-extract-pilot-20260703`
+  with Pioneer DeepSeek V4 Flash. Actual usage: `10` requests, `224642` input tokens,
+  `183696` output tokens, `408338` total tokens, estimated cost `$0.059203`.
+- Corrected the replay evaluator with an `--actual-only` scope so pilot reports compare only
+  sources that have actual output files. The scoped pilot report covers `10` sources and scored
+  `0.00%` agreement (`0/722`), with `321` actual records, `189` field mismatches, `533`
+  missing records, and `132` extras.
+- Plan 014 STOP condition fired: pilot agreement is far below the bar, so the full replay was
+  not run. Diagnostics are in `data/replay/reports/v2-extract-pilot-20260703-diagnostics.*`.
+  Top review causes were `evidence_quote_not_in_block=86`, `missing_display_name=53`,
+  `payload_schema_warning=46`, `anchor_ambiguous=10`, `anchor_new=2`, and
+  `unknown_evidence_block=1`. Top mismatch fields were `evidence_refs=189`,
+  `display_name=177`, `payload.description=160`, and `raw_text=109`.
+- Post-STOP gates passed after the `--actual-only` replay-eval fix and pilot artifacts:
+  `bun run typecheck`; `bun run test` (`946 pass`, `1 skip`, `0 fail`); `bun run validate`
+  with `Issues: 0`; and `bun scripts/determinism-anchor.ts` with combined hash
+  `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ### Static Site Exporter Ready
 
 - Added the static HTML exporter for route, corridor, project, and source citation-target pages.

@@ -56,7 +56,8 @@ export const replayCommands = {
     const releaseId = optionValue(process.argv, "--release-id") ?? DEFAULT_REPLAY_RELEASE_ID;
     const runId = optionValue(process.argv, "--run-id") ?? DEFAULT_REPLAY_RUN_ID;
     const actualDir = optionValue(process.argv, "--actual-dir");
-    const result = writeReplayEval({ releaseId, runId, actualDir });
+    const actualOnly = process.argv.includes("--actual-only");
+    const result = writeReplayEval({ releaseId, runId, actualDir, actualOnly });
     console.log(
       `Replay eval ${runId}: ${result.report.totals.match}/${result.report.totals.expected} ` +
         `matches (${result.report.self_diff ? "self-diff" : "actual diff"}).`,

@@ -26,7 +26,7 @@ Usage:
   bun run harness export-release [--id <release-id>] [--force] [--quality-report <path>]   Versioned release snapshot under data/exports/releases/
   bun run harness export-site                                      Build static HTML under dist/site and run Pagefind
   bun run harness quality-report [release-id]                    Write deterministic release quality checks under data/quality/
-  bun run harness replay-eval [--release-id <id>] [--run-id <id>] [--actual-dir <dir>]   Build replay manifest/baseline and diff actual outputs against v1
+  bun run harness replay-eval [--release-id <id>] [--run-id <id>] [--actual-dir <dir>] [--actual-only]   Build replay manifest/baseline and diff actual outputs against v1
   bun run harness extract [--source <source-id>] [--run-id <id>] [--limit <n>] [--mock-response <path>]   Run v2 extraction into data/replay/runs/
   bun run harness identity-review [--limit <n>] [--include <regex>] [--exclude <regex>]
   bun run harness identity-review-run [packet-or-cluster] [--limit <n>] [--include <regex>] [--exclude <regex>] [--concurrency <n>] [--force] [--dry-run]
