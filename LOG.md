@@ -29,6 +29,30 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 - Follow-up decision needed before Plan 013 resumes: revise the replay matching key and/or
   rebalance the mandatory sample scope instead of silently choosing one colliding v1 record.
 
+### Replay Harness Resume Decision
+
+- Owner decision for Plan 013: "proceed with all 257 audit-cited sources. Revise replay matching
+  so the primary bucket remains source_id#block_id + record_kind + relation endpoints, but
+  ambiguous buckets are resolved by deterministic comparable-projection matching rather than
+  stopping. Preserve truly identical projected duplicates as multiset entries. Record this in
+  LOG.md and resume Plan 013. Within-bucket resolution must be deterministic
+  (order-independent), and per-kind collision counts must appear in the replay report, not only
+  LOG.md."
+
+### Replay Eval Harness Landed
+
+- Added deterministic replay evaluation scaffolding for the v2 track: `replay-eval` writes
+  `data/replay/sample-manifest.json`, per-source v1 baseline projections under
+  `data/replay/baseline/`, and JSON/Markdown reports under `data/replay/reports/`.
+- Manifest seed: `v2-replay-v1`; sources: `257`; selected strata: `197` board-book,
+  `17` DOT-project-PDF, and `43` other. All `300` quality-audit rows have their cited sources
+  included.
+- Self-diff sanity for `v1-rc5`: `15770 / 15770` matches, `0` field mismatches, `0` missing,
+  `0` extra. The report records per-kind collision counts for replay-scope and full-release
+  buckets.
+- Plan 013 gates passed: `bun run typecheck`, `bun run test`, `bun run validate` with
+  `Issues: 0`, and `bun scripts/determinism-anchor.ts`.
+
 ### Public History, Docs, And Log Cleanup
 
 - Rewrote the public repository to a compact single-root history for normal GitHub use. `main`

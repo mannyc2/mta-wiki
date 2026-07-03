@@ -17,6 +17,7 @@ export type Command =
   | "export-jsonl"
   | "export-release"
   | "quality-report"
+  | "replay-eval"
   | "identity-review"
   | "identity-review-run"
   | "identity-review-apply"

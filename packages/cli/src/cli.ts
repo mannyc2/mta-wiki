@@ -6,6 +6,7 @@ import { ingestCommands } from "./commands/ingest.js";
 import { materializeCommands } from "./commands/materialize.js";
 import { messageValue, optionValue, type Command, type CommandHandler, type ParsedArgs } from "./commands/shared.js";
 import { ontologyCommands } from "./commands/ontology.js";
+import { replayCommands } from "./commands/replay.js";
 import { sourcesCommands } from "./commands/sources.js";
 import { utilityCommands } from "./commands/utility.js";
 import { validateCommands } from "./commands/validate.js";
@@ -115,6 +116,7 @@ function parseCommand(argv: string[]): ParsedArgs {
     "export-jsonl",
     "export-release",
     "quality-report",
+    "replay-eval",
     "identity-review",
     "identity-review-run",
     "identity-review-apply",
@@ -210,6 +212,7 @@ const commandHandlers: Record<Command, CommandHandler> = {
   ...ontologyCommands,
   ...campaignCommands,
   ...validateCommands,
+  ...replayCommands,
   ...utilityCommands,
 };
 
