@@ -31,11 +31,13 @@ export type PostIngestPlanOptions = {
 
 export type WriterBacklogQueueOptions = {
   limit?: number | undefined;
+  recordKinds?: string[] | undefined;
 };
 
 export type WriterBacklogPacketOptions = {
   limit?: number | undefined;
   offset?: number | undefined;
+  recordKinds?: string[] | undefined;
 };
 
 export type WriterBacklogDispatchPlanOptions = {
@@ -187,6 +189,7 @@ export type WriterBacklogQueue = {
   scope: {
     empty_writer_regions: number;
     limit: number;
+    record_kinds?: string[] | undefined;
   };
   items: WriterBacklogQueueItem[];
   path: string;
@@ -225,6 +228,7 @@ export type WriterBacklogPacketRun = {
     selected_packets: number;
     limit: number;
     offset: number;
+    record_kinds?: string[] | undefined;
     queue_fingerprint?: string | undefined;
   };
   packets: WriterBacklogPacket[];
@@ -1683,14 +1687,16 @@ export function generatePostIngestPlan(options: PostIngestPlanOptions): PostInge
 export function generateWriterBacklogQueue(options: WriterBacklogQueueOptions = {}): WriterBacklogQueue {
   const limit = options.limit ?? 50;
   if (!Number.isInteger(limit) || limit < 1) throw new Error(`writer backlog queue limit must be a positive integer: ${limit}`);
+  const recordKinds = normalizeWriterRecordKinds(options.recordKinds);
 
-  const candidates = collectWriterBacklogItems();
+  const candidates = collectWriterBacklogItems(undefined, { recordKinds });
   const queuePath = writerBacklogQueuePath();
   const queue: WriterBacklogQueue = {
     generated_at: new Date().toISOString(),
     scope: {
       empty_writer_regions: candidates.length,
       limit,
+      ...(recordKinds.length > 0 ? { record_kinds: recordKinds } : {}),
     },
     items: candidates.slice(0, limit),
     path: relative(repoRoot, queuePath),
@@ -1701,7 +1707,17 @@ export function generateWriterBacklogQueue(options: WriterBacklogQueueOptions = 
   return queue;
 }
 
-export function collectWriterBacklogItems(records = readCanonicalRecords()) {
+function normalizeWriterRecordKinds(recordKinds: string[] | undefined) {
+  const normalized = [...new Set((recordKinds ?? []).map((kind) => kind.trim()).filter(Boolean))].sort();
+  for (const kind of normalized) {
+    if (!WRITER_QUEUE_KINDS.has(kind)) throw new Error(`writer backlog record kind is not page-writer eligible: ${kind}`);
+  }
+  return normalized;
+}
+
+export function collectWriterBacklogItems(records = readCanonicalRecords(), options: { recordKinds?: string[] | undefined } = {}) {
+  const recordKinds = normalizeWriterRecordKinds(options.recordKinds);
+  const kindFilter = recordKinds.length > 0 ? new Set(recordKinds) : undefined;
   const dataOnly = records.filter((record) => DATA_ONLY_WRITER_KINDS.has(record.record_kind));
   const sourceIdsByRecord = new Map(records.map((record) => [record.record_id, sourceIdsForRecord(record)]));
   const supportingRecordIdsBySource = new Map<string, Set<string>>();
@@ -1714,6 +1730,7 @@ export function collectWriterBacklogItems(records = readCanonicalRecords()) {
   }
   return records
     .filter((record) => WRITER_QUEUE_KINDS.has(record.record_kind))
+    .filter((record) => !kindFilter || kindFilter.has(record.record_kind))
     .flatMap((record): WriterBacklogQueueItem[] => {
       const pagePath = pageRelativePathForCanonicalRecord(record);
       if (!pagePath || !emptyWriterRegion(pagePath)) return [];
@@ -1735,7 +1752,7 @@ export function collectWriterBacklogItems(records = readCanonicalRecords()) {
           evidence_count: record.evidence_refs.length,
           data_only_supporting_records: supporting,
           score,
-          suggested_subagent_task: `Produce a source-backed writer-region draft for ${pagePath}; do not edit files; cite inline source_id#block_id handles.`,
+          suggested_subagent_task: `Produce a source-backed writer-region draft for ${pagePath}; do not edit files; cite with [[cite:source_id#block_id|label]] primitives.`,
         },
       ];
     })
@@ -1770,11 +1787,12 @@ export function generateWriterBacklogPackets(options: WriterBacklogPacketOptions
   if (!Number.isInteger(limit) || limit < 1) throw new Error(`writer backlog packet limit must be a positive integer: ${limit}`);
   const offset = options.offset ?? 0;
   if (!Number.isInteger(offset) || offset < 0) throw new Error(`writer backlog packet offset must be a non-negative integer: ${offset}`);
+  const recordKinds = normalizeWriterRecordKinds(options.recordKinds);
 
   const records = readCanonicalRecords();
   const recordsById = new Map(records.map((record) => [record.record_id, record]));
   const dataOnly = records.filter((record) => DATA_ONLY_WRITER_KINDS.has(record.record_kind));
-  const queueItems = collectWriterBacklogItems(records);
+  const queueItems = collectWriterBacklogItems(records, { recordKinds });
   const packets = queueItems.slice(offset, offset + limit).flatMap((item, index): WriterBacklogPacket[] => {
     const target = recordsById.get(item.record_id);
     if (!target) return [];
@@ -1799,7 +1817,9 @@ export function generateWriterBacklogPackets(options: WriterBacklogPacketOptions
         instructions: [
           "Draft only inside the existing writer region for page_path.",
           "Do not edit wiki/sources pages, generated frontmatter, canonical JSONL, or submission journals.",
-          "Use source_id#block_id citations from evidence_refs for every substantive claim; evidence_snippets are capped text previews.",
+          "Use inline writer primitives for every record mention where an id is known: [[route:id|label]], [[corridor:id|label]], [[project:id|label]], [[entity:id|label]], or [[metric:id|label]].",
+          "Use [[cite:source_id#block_id|label]] citations from evidence_refs for every factual sentence; evidence_snippets are capped text previews, not independent evidence.",
+          "Do not write bare source_id#block_id citations in final prose; wrap them in cite primitives so validation and the static site can resolve them.",
           "After any future writer-region edit, run strict explicit-path checks: verify-writer-edits <page_path> and verify-writer-citations <page_path>.",
         ],
       },
@@ -1814,6 +1834,7 @@ export function generateWriterBacklogPackets(options: WriterBacklogPacketOptions
       selected_packets: packets.length,
       limit,
       offset,
+      ...(recordKinds.length > 0 ? { record_kinds: recordKinds } : {}),
       queue_fingerprint: writerBacklogQueueFingerprint(queueItems),
     },
     packets,

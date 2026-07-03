@@ -135,6 +135,11 @@ function writerVerificationPathArgs(argv: string[]) {
   return argv.slice(3).filter((arg) => arg !== "--scoped" && !arg.startsWith("--"));
 }
 
+function writerRecordKinds(argv: string[]) {
+  const raw = optionValue(argv, "--record-kind") ?? optionValue(argv, "--kind");
+  return raw?.split(",").map((value) => value.trim()).filter(Boolean);
+}
+
 function printPostIngestGoalAuditHelp() {
   console.log(`Usage: bun packages/cli/src/cli.ts post-ingest-goal-audit [--id <campaign-id>] [--writer-readiness <json>] [--writer-prompt-coverage <dispatch-json>,<prompts-json...>]
 
@@ -370,14 +375,16 @@ export const materializeCommands = {
 
   "writer-backlog-queue": () => {
     const rawLimit = optionValue(process.argv, "--limit");
+    const recordKinds = writerRecordKinds(process.argv);
     let limit: number | undefined;
     if (rawLimit !== undefined) {
       const parsedLimit = Number(rawLimit);
       if (!Number.isInteger(parsedLimit) || parsedLimit < 1) throw new Error(`--limit must be a positive integer: ${rawLimit}`);
       limit = parsedLimit;
     }
-    const queue = generateWriterBacklogQueue({ limit });
+    const queue = generateWriterBacklogQueue({ limit, recordKinds });
     console.log(`Writer backlog queue: ${queue.items.length}/${queue.scope.empty_writer_regions} empty writer page(s) selected.`);
+    if (queue.scope.record_kinds) console.log(`Record kinds: ${queue.scope.record_kinds.join(", ")}`);
     for (const item of queue.items.slice(0, 12)) {
       console.log(`- score=${item.score} evidence=${item.evidence_count} support=${item.data_only_supporting_records} ${item.page_path}`);
     }
@@ -388,6 +395,7 @@ export const materializeCommands = {
     const rawLimit = optionValue(process.argv, "--limit");
     const rawOffset = optionValue(process.argv, "--offset");
     const rawBatches = optionValue(process.argv, "--batches");
+    const recordKinds = writerRecordKinds(process.argv);
     let limit: number | undefined;
     let offset: number | undefined;
     let batches = 1;
@@ -412,7 +420,7 @@ export const materializeCommands = {
     const runs = [];
     for (let batchIndex = 0; batchIndex < batches; batchIndex += 1) {
       const batchOffset = firstOffset + batchIndex * packetLimit;
-      const run = generateWriterBacklogPackets({ limit: packetLimit, offset: batchOffset });
+      const run = generateWriterBacklogPackets({ limit: packetLimit, offset: batchOffset, recordKinds });
       runs.push(run);
       if (run.scope.selected_packets === 0) break;
     }
@@ -422,6 +430,7 @@ export const materializeCommands = {
     console.log(
       `Writer backlog packets: ${selected}/${emptyWriterRegions} empty writer page(s) packetized across ${runs.length} batch artifact(s), starting at offset ${firstOffset}.`,
     );
+    if (recordKinds?.length) console.log(`Record kinds: ${recordKinds.join(", ")}`);
     for (const run of runs) {
       console.log(`Batch offset ${run.scope.offset}: ${run.scope.selected_packets} packet(s)`);
       for (const packet of run.packets.slice(0, 12)) {

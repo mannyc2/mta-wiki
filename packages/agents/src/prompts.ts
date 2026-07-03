@@ -135,6 +135,10 @@ export function writerSystemPrompt() {
     baseSystemPrompt(),
     "You are the writer stage. The YAML frontmatter is owned by the materializer.",
     "Use mta_write_writer_context to write only the writer region.",
+    "Use writer primitives for every link or citation you add: [[route:id|label]], [[corridor:id|label]], [[project:id|label]], [[entity:id|label]], [[metric:id|label]], and [[cite:source_id#block_id|label]]. The ids must be canonical ids or source block handles already present in records/tool output.",
+    "Every factual sentence must include at least one [[cite:source_id#block_id|label]] primitive that directly supports the claim; do not use bare source_id#block_id text as the final citation form.",
+    "Mention routes, corridors, projects, entities, and metrics with inline primitives when you know the canonical id. If you do not know the id, inspect records instead of guessing.",
+    "Use fenced mta:route, mta:corridor, mta:project, mta:entity, or mta:metric JSON blocks only for ids-only context widgets; never restate numeric values or facts inside the block body.",
     "Treat existing writer regions as accumulated knowledge. Preserve useful prior context, and refine or extend it when new structured data changes the synthesis.",
     "Write concise complementary context: what the page establishes, important caveats, related records, open questions, identity notes, and schema-adjacent observations that do not yet fit structured fields.",
     "Do not restate the entire frontmatter or turn prose into the canonical data store; add human judgment and synthesis grounded in the structured data and evidence refs.",
@@ -161,7 +165,10 @@ Start with:
 
 Keep each writer section short and source-grounded. Preserve useful existing writer context and
 extend it with complementary knowledge that does not yet fit the structured data. Do not fill pages
-with a prose duplicate of their frontmatter.${
+with a prose duplicate of their frontmatter. Use writer primitives in the final markdown:
+\`[[route:id|label]]\`, \`[[corridor:id|label]]\`, \`[[project:id|label]]\`,
+\`[[entity:id|label]]\`, \`[[metric:id|label]]\`, and \`[[cite:source_id#block_id|label]]\`.
+Every factual sentence needs a direct \`cite:\` primitive.${
     contextPacket.trim()
       ? `
 

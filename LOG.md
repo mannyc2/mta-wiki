@@ -10,6 +10,31 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 - Owner approved LLM spend for the remaining post-v1 plans in this conversation: "I give you
   permission for the llm spend."
+- Owner also approved proceeding through owner gates in this conversation: "its not owner gated i
+  give you permission"
+
+### Bounded Writer Pass Spend Gate
+
+- Plan 012 Step 1 sample spend is approved under the two owner approvals above. The writer design
+  requires inline primitives for known records (`route`, `corridor`, `project`, `entity`,
+  `metric`) and `cite` primitives for source blocks; every factual sentence needs a direct
+  `[[cite:source_id#block_id|label]]`, pages should stay around `150-400` words, and structured
+  facts/numeric values remain ids-only rather than prose-owned.
+- Deterministic 20-page sample, seed `v1-writer-sample`: `corridor_avenue-a-d-manhattan-bus-lanes`,
+  `corridor_bay-pkwy`, `corridor_bus-fwd-2-brooklyn-access-jfk-sbs`,
+  `corridor_bus-fwd-2-flushing-springfield-sbs`, `corridor_hillside-ave-brt-phase2`,
+  `corridor_meeting-doc-109341-montauk-branch-amityville-babylon`,
+  `corridor_meeting-doc-151786-harlem-line`, `corridor_mnr-zone2-ct-135311`,
+  `corridor_university-ave`, `corridor_verrazzano-narrows-bridge`, `route_bx18a-b`,
+  `route_fordham-pelham-pkwy-sbs`, `route_hylan-blvd-sbs`, `route_m186726-waterbury-branch`,
+  `route_m23-local-cb4-apr2016`, `route_meeting-doc-152171-42-st-shuttle`,
+  `route_meeting-doc-42866-n-subway`, `route_q-subway-nyct-2025`, `route_q26-lga-2012`,
+  `route_q51-queens`.
+- Dry token estimate used a 2-page packet count on Pioneer DeepSeek V4 Flash (`$0.10/M input`,
+  `$0.20/M output`): average `137172` input tokens/page. The 20-page sample estimate is
+  `2743440` input tokens plus a `24000` output-token allowance, about `$0.279144`. The currently
+  empty route/corridor slice (`506` pages) extrapolates to about `$7.062343` before retries.
+- No live Plan 012 provider call has run yet; current work is prompt, packet, and runner prep.
 
 ### V2 Extract Pilot Spend Gate
 

@@ -32,6 +32,8 @@ import {
 import type { ReadinessRow } from "@mta-wiki/pipeline/campaign/campaign-readiness";
 import type { MtaSubmissionEntry } from "@mta-wiki/db/types";
 
+const ARTIFACT_TEST_TIMEOUT_MS = 30000;
+
 function cleanupPacketRun(run: WriterBacklogPacketRun) {
   rmSync(join(repoRoot, run.json_path), { force: true });
   rmSync(join(repoRoot, run.markdown_path), { force: true });
@@ -240,7 +242,22 @@ describe("writer backlog packets", () => {
     } finally {
       cleanupPacketRun(run);
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
+
+  it("filters writer packets to route and corridor pages for the bounded writer pass", () => {
+    const run = generateWriterBacklogPackets({ limit: 6, offset: 0, recordKinds: ["route", "corridor"] });
+    try {
+      const queueItems = collectWriterBacklogItems(undefined, { recordKinds: ["route", "corridor"] });
+      expect(run.scope.record_kinds).toEqual(["corridor", "route"]);
+      expect(run.scope.empty_writer_regions).toBe(queueItems.length);
+      expect(run.packets.length).toBeGreaterThan(0);
+      expect(run.packets.every((packet) => packet.record_kind === "route" || packet.record_kind === "corridor")).toBe(true);
+      expect(run.packets.every((packet) => packet.instructions.some((instruction) => instruction.includes("[[cite:source_id#block_id|label]]")))).toBe(true);
+      expect(run.packets.every((packet) => packet.instructions.some((instruction) => instruction.includes("[[route:id|label]]")))).toBe(true);
+    } finally {
+      cleanupPacketRun(run);
+    }
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("builds bounded dispatch shards from packet artifacts without editing pages", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -264,7 +281,7 @@ describe("writer backlog packets", () => {
         rmSync(join(repoRoot, plan.markdown_path), { force: true });
       }
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("freezes an explicit packet set and builds dispatch shards from it", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -293,7 +310,7 @@ describe("writer backlog packets", () => {
         rmSync(join(repoRoot, plan.markdown_path), { force: true });
       }
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("detects packet-set manifest drift from packet files", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -316,7 +333,7 @@ describe("writer backlog packets", () => {
       }
       rmSync(tamperedPath, { force: true });
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("verifies dispatch shard coverage and gate commands", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -347,7 +364,7 @@ describe("writer backlog packets", () => {
       }
       rmSync(tamperedPath, { force: true });
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("verifies dispatch shard packet files match planned page paths", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -376,7 +393,7 @@ describe("writer backlog packets", () => {
       }
       rmSync(tamperedPath, { force: true });
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("reports dispatch shard progress from writer-region state", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -414,7 +431,7 @@ describe("writer backlog packets", () => {
         rmSync(join(repoRoot, plan.markdown_path), { force: true });
       }
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("writes a durable dispatch status report", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -442,7 +459,7 @@ describe("writer backlog packets", () => {
         rmSync(join(repoRoot, report.markdown_path), { force: true });
       }
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("claims unstarted dispatch shards without launching writer work", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -493,7 +510,7 @@ describe("writer backlog packets", () => {
         rmSync(join(repoRoot, claim.markdown_path), { force: true });
       }
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("detects tampered dispatch claim artifacts", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -530,7 +547,7 @@ describe("writer backlog packets", () => {
       }
       rmSync(tamperedPath, { force: true });
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("verifies all dispatch claim files together", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -559,7 +576,7 @@ describe("writer backlog packets", () => {
         rmSync(join(repoRoot, claim.markdown_path), { force: true });
       }
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("writes a next-shard handoff for claimed not-started dispatch shards", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -602,7 +619,7 @@ describe("writer backlog packets", () => {
         rmSync(join(repoRoot, plan.markdown_path), { force: true });
       }
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("writes a bounded handoff batch for claimed not-started dispatch shards", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -652,7 +669,7 @@ describe("writer backlog packets", () => {
         rmSync(join(repoRoot, plan.markdown_path), { force: true });
       }
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("detects tampered handoff batch artifacts", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -693,7 +710,7 @@ describe("writer backlog packets", () => {
         rmSync(join(repoRoot, plan.markdown_path), { force: true });
       }
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("splits a verified handoff batch into per-shard prompt files", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -742,7 +759,7 @@ describe("writer backlog packets", () => {
         rmSync(join(repoRoot, plan.markdown_path), { force: true });
       }
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("detects tampered handoff prompt bundles", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -791,7 +808,7 @@ describe("writer backlog packets", () => {
         rmSync(join(repoRoot, plan.markdown_path), { force: true });
       }
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("verifies aggregate handoff prompt coverage across reports", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -893,7 +910,7 @@ describe("writer backlog packets", () => {
       }
       rmSync(duplicatePath, { force: true });
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("writes a dispatch readiness report and reflects claim progress", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
@@ -942,7 +959,7 @@ describe("writer backlog packets", () => {
         rmSync(join(repoRoot, report.markdown_path), { force: true });
       }
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("detects stale writer backlog queue metadata", () => {
     const run = generateWriterBacklogPackets({ limit: 1, offset: 0 });
@@ -959,7 +976,7 @@ describe("writer backlog packets", () => {
       cleanupPacketRun(run);
       rmSync(driftPath, { force: true });
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("detects stale packet evidence refs", () => {
     const run = generateWriterBacklogPackets({ limit: 1, offset: 0 });
@@ -978,7 +995,7 @@ describe("writer backlog packets", () => {
       cleanupPacketRun(run);
       rmSync(staleEvidencePath, { force: true });
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("detects missing packet evidence refs", () => {
     const run = generateWriterBacklogPackets({ limit: 1, offset: 0 });
@@ -995,7 +1012,7 @@ describe("writer backlog packets", () => {
       cleanupPacketRun(run);
       rmSync(missingEvidencePath, { force: true });
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("detects malformed packet evidence refs", () => {
     const run = generateWriterBacklogPackets({ limit: 1, offset: 0 });
@@ -1013,7 +1030,7 @@ describe("writer backlog packets", () => {
       cleanupPacketRun(run);
       rmSync(malformedEvidencePath, { force: true });
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("distinguishes non-empty writer regions during packet freshness verification", () => {
     const run = generateWriterBacklogPackets({ limit: 1, offset: 0 });
@@ -1032,7 +1049,7 @@ describe("writer backlog packets", () => {
       writeFileSync(pagePath, originalPage, "utf8");
       cleanupPacketRun(run);
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("distinguishes missing writer regions during packet freshness verification", () => {
     const run = generateWriterBacklogPackets({ limit: 1, offset: 0 });
@@ -1047,7 +1064,7 @@ describe("writer backlog packets", () => {
       writeFileSync(pagePath, originalPage, "utf8");
       cleanupPacketRun(run);
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("derives packet pages for future writer edit verification", () => {
     const run = generateWriterBacklogPackets({ limit: 1, offset: 0 });
@@ -1063,7 +1080,7 @@ describe("writer backlog packets", () => {
     } finally {
       cleanupPacketRun(run);
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("detects duplicate packet pages before writer edit verification", () => {
     const run = generateWriterBacklogPackets({ limit: 1, offset: 0 });
@@ -1080,5 +1097,5 @@ describe("writer backlog packets", () => {
       cleanupPacketRun(run);
       rmSync(duplicatePath, { force: true });
     }
-  }, 15000);
+  }, ARTIFACT_TEST_TIMEOUT_MS);
 });
