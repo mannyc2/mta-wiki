@@ -1,0 +1,112 @@
+{
+  "run_id": "2026-06-10T17-48-04-719Z_1496766-14ac6020_ingest_2010-03-11-brt-1st2nd-cb8",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T19:36:53.408Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "mta-nyct-2010-cb8-new",
+        "local_observation_id": "entity_mta_nyct_2010_03_11",
+        "decision": "new",
+        "rationale": "Observation entity_mta_nyct_2010_03_11 has base_record_id entity_mta-nyct, which is the exact existing registry record for MTA New York City Transit (agency, acronym NYCT). The observation's payload — entity_name 'MTA New York City Transit', entity_type 'agency', acronym 'NYCT' — matches the registry card precisely. No different registry record is a closer match. Per the identity link rule, when the closest match IS the observation's own base_record_id, the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_03_11_brt_1st2nd_cb8",
+            "block_id": "p001_c0001",
+            "source_quote": "New York City Transit"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "presented_to",
+            "subject_id": "entity_mta-nyct",
+            "object_id": "entity_manhattan-community-board-8",
+            "description": "MTA NYCT presented the First Avenue/Second Avenue SBS project to Manhattan Community Board 8 Transportation Committee on March 11, 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_03_11_brt_1st2nd_cb8",
+                "block_id": "p001_c0001",
+                "source_quote": "New York City Transit"
+              },
+              {
+                "source_id": "2010_03_11_brt_1st2nd_cb8",
+                "block_id": "p001_c0004",
+                "source_quote": "Manhattan Community Board 8 Transportation Committee"
+              }
+            ]
+          },
+          {
+            "relation_kind": "co_presented_with",
+            "subject_id": "entity_mta-nyct",
+            "object_id": "entity_nyc-dot",
+            "description": "MTA NYCT and NYC DOT jointly presented the First Avenue/Second Avenue SBS project as co-presenters",
+            "evidence_refs": [
+              {
+                "source_id": "2010_03_11_brt_1st2nd_cb8",
+                "block_id": "p003_c0005",
+                "source_quote": "_MTA New York City Transit_"
+              },
+              {
+                "source_id": "2010_03_11_brt_1st2nd_cb8",
+                "block_id": "p003_c0006",
+                "source_quote": "_NEW YORK CITY DOT_"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "nyc-dot-2010-cb8-new",
+        "local_observation_id": "entity_nyc_dot_2010_03_11",
+        "decision": "new",
+        "rationale": "Observation entity_nyc_dot_2010_03_11 has base_record_id entity_nyc-dot, which is the exact existing registry record for New York City Department of Transportation (agency, acronym DOT/NYC DOT). The observation's payload — entity_name 'New York City Department of Transportation', entity_type 'agency', acronym 'NYC DOT' — matches the registry card precisely. No different registry record is a closer match. Per the identity link rule, when the closest match IS the observation's own base_record_id, the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_03_11_brt_1st2nd_cb8",
+            "block_id": "p003_c0006",
+            "source_quote": "_NEW YORK CITY DOT_"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "presented_to",
+            "subject_id": "entity_nyc-dot",
+            "object_id": "entity_manhattan-community-board-8",
+            "description": "NYC DOT co-presented the First Avenue/Second Avenue SBS project to Manhattan Community Board 8 Transportation Committee on March 11, 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_03_11_brt_1st2nd_cb8",
+                "block_id": "p003_c0006",
+                "source_quote": "_NEW YORK CITY DOT_"
+              },
+              {
+                "source_id": "2010_03_11_brt_1st2nd_cb8",
+                "block_id": "p001_c0004",
+                "source_quote": "Manhattan Community Board 8 Transportation Committee"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "manhattan-cb8-2010-new",
+        "local_observation_id": "entity_manhattan_cb8_2010_03_11",
+        "decision": "new",
+        "rationale": "Observation entity_manhattan_cb8_2010_03_11 has base_record_id entity_manhattan-community-board-8, which is the exact existing registry record for Manhattan Community Board 8 (community_board). The observation's payload — entity_name 'Manhattan Community Board 8', entity_type 'community board' — matches the registry card precisely. No different registry record is a closer match. Per the identity link rule, when the closest match IS the observation's own base_record_id, the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_03_11_brt_1st2nd_cb8",
+            "block_id": "p001_c0004",
+            "source_quote": "Manhattan Community Board 8 Transportation Committee"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-35-58-157Z_1642176-2e881c39_canonicalize_2026-06-10t17-48-04-719z-1496766-14ac6020-ingest-2010-03-11-brt-1st2nd-cb8-entity-identity"
+}

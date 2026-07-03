@@ -1,0 +1,31 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:35:28.097Z",
+  "packet_path": "data/identity-review/packets/project_cluster_10b02d73f4.md",
+  "cluster_id": "project_cluster_10b02d73f4",
+  "kind": "project",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "project_cluster_10b02d73f4",
+    "kind": "project",
+    "merge_groups": [
+      [
+        "project_207th-st-sewer-replacement-33751",
+        "project_207th-st-sewer-replacement-apr2022"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "Both records refer to the same canonical project: 207th Street Sewer Replacement at 207th Street Yard. The project name (with minor abbreviation difference) and geographic scope are identical. Differences in project_type, status, and date suffixes are source-local variations or lifecycle markers, not identity contradictions. This is a same-object merge per test 2: strong identity fields (project_name, scope) agree."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-35-13-243Z_1282984-f2ae2100_identity-review-run_project-cluster-10b02d73f4",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-35-13-243Z_2026-06-23T14-35-13-243Z_1282984-f2ae2100_identity-review-run_project-cluster-10b02d73f4.jsonl"
+}

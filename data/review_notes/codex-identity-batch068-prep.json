@@ -1,0 +1,332 @@
+{
+  "note_id": "codex-identity-batch068-prep",
+  "batch": "identity-batch068",
+  "lane": "IDENTITY PREP ONLY",
+  "status": "prepared",
+  "created_at": "2026-06-22T22:37:09Z",
+  "scope": {
+    "write_scope": [
+      "data/review_notes/codex-identity-batch068-prep.json"
+    ],
+    "excluded_outputs": [
+      "data/identity-overrides/merges.json",
+      "data/submission-overrides/retired.json",
+      "LOG.md",
+      "manifest",
+      "data/canonical",
+      "data/materialized",
+      "wiki",
+      "data/canonical.db"
+    ],
+    "prior_prep_disjoint_through_batch": "identity-batch067"
+  },
+  "context": {
+    "source_issue": "unresolved duplicate_global_identity backlog",
+    "selection_policy": "high-confidence person entity aliases with exact shared normalized person identity key, canonical source evidence on both records, and no current/prior alias/do-not-merge guard hit; broad agencies/programs/committees and low-confidence/generated-name pairs deferred.",
+    "prior_prep_alias_entries_considered_through_batch067": 200,
+    "prior_prep_target_entries_considered_through_batch067": 143,
+    "prior_prep_unique_records_excluded_through_batch067": 341,
+    "current_merges_entity_alias_count": 439,
+    "current_identity_aliases_entity_count": 379,
+    "current_do_not_merge_entity_pair_count": 20
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_midori-valdivia-mar2026": "entity_193976-midori-valdivia",
+        "entity_meeting164941-omar-messado": "entity_omar-messado-135311",
+        "entity_meeting-doc-197046-ray-smyth": "entity_meeting-doc-199126-ray-smyth",
+        "entity_meeting-doc-102771-richard-hildebrand": "entity_richard-hildebrand-44201",
+        "entity_meeting-doc-111776-robert-goldberg": "entity_robert-goldberg",
+        "entity_meeting-doc-44216-sarah-feinberg": "entity_sarah-feinberg-nyct-interim-president",
+        "entity_164896-sean-fahey": "entity_meeting-doc-160311-sean-fahey",
+        "entity_meeting-doc-138436-senna-phillips": "entity_senna-phillips"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_midori-valdivia-mar2026",
+      "target": "entity_193976-midori-valdivia",
+      "validator_duplicate_key": "entity_midori-valdivia",
+      "reason": "Both canonical records identify the same person, Midori Valdivia, with entity_type person and source-backed person/meeting context.",
+      "evidence_refs": [
+        "meeting_doc_201651#p016_c0005",
+        "meeting_doc_193976#p016_c0005"
+      ],
+      "shared_identity_keys": [
+        "entity_midori-valdivia"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch067": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting164941-omar-messado",
+      "target": "entity_omar-messado-135311",
+      "validator_duplicate_key": "entity_omar-messado",
+      "reason": "Both canonical records identify the same person, Omar Messado, with entity_type person and source-backed person/meeting context.",
+      "evidence_refs": [
+        "meeting_doc_164941#p001_c0003",
+        "meeting_doc_135311#p001_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_omar-messado"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch067": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-197046-ray-smyth",
+      "target": "entity_meeting-doc-199126-ray-smyth",
+      "validator_duplicate_key": "entity_ray-smyth",
+      "reason": "Both canonical records identify the same person, Ray Smyth, with entity_type person and source-backed person/meeting context.",
+      "evidence_refs": [
+        "meeting_doc_197046#p002_c0002",
+        "meeting_doc_199126#p002_c0002"
+      ],
+      "shared_identity_keys": [
+        "entity_ray-smyth"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch067": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-102771-richard-hildebrand",
+      "target": "entity_richard-hildebrand-44201",
+      "validator_duplicate_key": "entity_richard-hildebrand",
+      "reason": "Both canonical records identify the same person, Richard Hildebrand, with entity_type person and source-backed person/meeting context.",
+      "evidence_refs": [
+        "meeting_doc_102771#p004_c0007",
+        "meeting_doc_44201#p012_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_richard-hildebrand"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch067": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-111776-robert-goldberg",
+      "target": "entity_robert-goldberg",
+      "validator_duplicate_key": "entity_robert-goldberg",
+      "reason": "Both canonical records identify the same person, Robert Goldberg, with entity_type person and source-backed person/meeting context.",
+      "evidence_refs": [
+        "meeting_doc_111776#p001_c0004",
+        "meeting_doc_157711#p008_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_robert-goldberg"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch067": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-44216-sarah-feinberg",
+      "target": "entity_sarah-feinberg-nyct-interim-president",
+      "validator_duplicate_key": "entity_sarah-feinberg",
+      "reason": "Both canonical records identify the same person, Sarah Feinberg, with entity_type person and source-backed person/meeting context.",
+      "evidence_refs": [
+        "meeting_doc_44216#p171_c0003",
+        "meeting_doc_26846#p001_c0017"
+      ],
+      "shared_identity_keys": [
+        "entity_sarah-feinberg"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch067": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_164896-sean-fahey",
+      "target": "entity_meeting-doc-160311-sean-fahey",
+      "validator_duplicate_key": "entity_sean-fahey",
+      "reason": "Both canonical records identify the same person, Sean Fahey, with entity_type person and source-backed person/meeting context.",
+      "evidence_refs": [
+        "meeting_doc_164896#p001_c0003",
+        "meeting_doc_160311#p009_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_sean-fahey"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch067": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-138436-senna-phillips",
+      "target": "entity_senna-phillips",
+      "validator_duplicate_key": "entity_senna-phillips",
+      "reason": "Both canonical records identify the same person, Senna Phillips, with entity_type person and source-backed person/meeting context (Queens Bus Network Redesign team).",
+      "evidence_refs": [
+        "meeting_doc_138436#p005_c0003",
+        "meeting_doc_199241#p010_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_senna-phillips"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch067": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    }
+  ],
+  "aggregate_guard_results": {
+    "candidate_count": 8,
+    "canonical_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_alias_mapped_in_merges_json": true,
+    "targets_not_alias_mapped_in_identity_aliases_table": true,
+    "no_overlap_with_prior_prep_through_batch067": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 16,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 16,
+    "source_page_blocks_missing": [],
+    "all_pass": true
+  },
+  "deferred_low_confidence_examples": [
+    {
+      "alias": "entity_p-dietlin-meeting-doc-160311",
+      "target": "entity_peter-dietlin-194101",
+      "reason": "Initial-only alias requires more context than this high-confidence batch."
+    },
+    {
+      "alias": "entity_nyct_mta_procurement_department",
+      "target": "entity_procurement_department",
+      "reason": "Broad department/agency-style entity; outside this named-person-focused safe batch."
+    },
+    {
+      "alias": "entity_matthew-kirwin-180416",
+      "target": "entity_ellen-and-matthew-kirwin",
+      "reason": "Target is a combined two-person entity, so aliasing one individual would collapse distinct identities."
+    }
+  ],
+  "commands_used_for_evidence": [
+    {
+      "command": "test ! -e data/review_notes/codex-identity-batch068-prep.json && echo artifact_missing || echo artifact_exists",
+      "purpose": "Confirmed the batch068 prep artifact did not already exist before writing.",
+      "result": "artifact_missing"
+    },
+    {
+      "command": "jq '.intended_mutation.aliases.entity, .aggregate_guard_results' data/review_notes/codex-identity-batch067-prep.json",
+      "purpose": "Read prior batch067 aliases and guard result to preserve disjointness after the immediately preceding batch.",
+      "result": "batch067 contained 10 aliases with all aggregate guards passing."
+    },
+    {
+      "command": "node <<'NODE' <read-only duplicate_global_identity mining over data/canonical/entities.jsonl, current merges.json, read-only identity_aliases, prior prep aliases and targets through batch067 via robust filename parser, and do-not-merge guards> NODE",
+      "purpose": "Mined unresolved duplicate_global_identity candidates while excluding already mapped aliases, alias-mapped targets, current identity_aliases, prior prep records, and do-not-merge pairs.",
+      "result": "2588 current entity records scanned; 530 candidate pairs after alias/do-not-merge/prior-prep filters; 8 high-confidence candidates selected."
+    },
+    {
+      "command": "node <<'NODE' <read-only final guard script for canonical record presence, alias/target guard checks, prior prep disjointness through batch067, shared identity keys, raw source blocks, and source-page blocks> NODE",
+      "purpose": "Verified selected aliases and evidence before writing this prep artifact.",
+      "result": "all_pass true; 16 raw source blocks checked, 16 source-page blocks checked, no missing evidence blocks."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Stamped this prep artifact.",
+      "result": "2026-06-22T22:37:09Z"
+    }
+  ],
+  "commands_intentionally_not_run": [
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "provider-backed commands",
+    "DB repair/publish"
+  ]
+}

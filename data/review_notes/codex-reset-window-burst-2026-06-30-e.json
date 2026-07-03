@@ -1,0 +1,144 @@
+{
+  "note_type": "codex_reset_window_burst_result",
+  "created_date": "2026-06-30",
+  "repository": "/mnt/models/dev/mta-wiki",
+  "provider_policy": {
+    "external_llm_commands_used": false,
+    "forbidden_commands_avoided": [
+      "ingest",
+      "write",
+      "ask",
+      "schema",
+      "identity-review-run",
+      "ontology-normalize-run",
+      "provider profiles"
+    ],
+    "canonical_jsonl_hand_edited": false,
+    "generated_outputs_rebuilt_by": "bun packages/cli/src/cli.ts materialize"
+  },
+  "strategy": {
+    "mode": "aggressive_codex_burst",
+    "main_thread_role": "implementation, tests, deterministic materialization, validation",
+    "subagent_role": "bounded read-only discovery and implementation review",
+    "subagents": [
+      {
+        "thread_id": "019f17f8-f910-7072-8b33-8942c9fb7f3f",
+        "lane": "event_family other scout",
+        "result": "confirmed 267 pre-slice residuals and proposed exact payload-gated rules"
+      },
+      {
+        "thread_id": "019f17f9-15ae-7a83-af89-74ed08ad9bd6",
+        "lane": "project document_time_status scout",
+        "result": "confirmed 77 pre-slice unresolved statuses and proposed exact project-status rules"
+      },
+      {
+        "thread_id": "019f17fa-e324-7592-8632-cab353c5da4e",
+        "lane": "relation family scout",
+        "result": "confirmed relation_family other/missing pressure was 0"
+      },
+      {
+        "thread_id": "019f17fa-e61d-77a1-9c15-391c0ba4c171",
+        "lane": "treatment kind scout",
+        "result": "identified four missing treatment_kind records, all Grand Avenue/Metropolitan Avenue bus-lane design options with component_kind evidence"
+      },
+      {
+        "thread_id": "019f17ff-6219-7931-972b-e600cbefe2e1",
+        "lane": "project family scout",
+        "result": "confirmed 11 project_family unresolved records and recommended no high-confidence broad rule"
+      },
+      {
+        "thread_id": "019f17ff-669d-7920-9e15-e7667c105c2f",
+        "lane": "identity-review advisory/parser scout",
+        "result": "confirmed current identity-review artifacts have zero candidate edges, clusters, packets, validation issues, and duplicate identity issues"
+      }
+    ]
+  },
+  "baseline": {
+    "validate_issues": 0,
+    "event_family_other": 267,
+    "project_document_time_status_unresolved": 77,
+    "project_family_unresolved": 11,
+    "treatment_kind_missing": 4,
+    "relation_family_other": 0,
+    "identity_review_candidate_edges": 0
+  },
+  "after": {
+    "validate_issues": 0,
+    "event_family_other": 228,
+    "project_document_time_status_unresolved": 66,
+    "project_family_unresolved": 11,
+    "treatment_kind_missing": 0,
+    "relation_family_other": 0,
+    "identity_review_candidate_edges": 0,
+    "submissions": 98102,
+    "canonical_records": 84042,
+    "wiki_pages": 7338
+  },
+  "changes": [
+    {
+      "file": "packages/pipeline/src/ontology/normalizers.ts",
+      "summary": "added exact event-family gates, exact project document-time-status gates, and a guarded treatment_kind fill from component_kind for bus-lane design options"
+    },
+    {
+      "file": "packages/pipeline/test/ontology/normalizers.test.ts",
+      "summary": "added and adjusted focused tests for the new exact event, project-status, and treatment-kind rules"
+    },
+    {
+      "file": "packages/pipeline/src/materialize/materialize.ts",
+      "summary": "normalized canonical payloads on first insert so singleton records replay current deterministic normalizers during materialization"
+    },
+    {
+      "file": "packages/pipeline/test/materialize/materialize.test.ts",
+      "summary": "added a regression test for first-insert normalization of stale singleton enum values"
+    }
+  ],
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass: 256 tests, 3920 expectations"
+    },
+    {
+      "command": "bun test packages/pipeline/test/materialize/materialize.test.ts",
+      "result": "pass: 50 tests, 827 expectations"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass: Materialized 93092/98102 submissions; retired submissions skipped 243; pages 7342; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass: Issues 0"
+    }
+  ],
+  "remaining": {
+    "event_family_other": {
+      "count": 228,
+      "assessment": "many residual examples are venue, promotional, internal, or ambiguous records; continue only with exact payload-backed rules"
+    },
+    "project_document_time_status_unresolved": {
+      "count": 66,
+      "assessment": "remaining records need source-time certainty before status fill; continue with exact source-backed project-name/description/status gates"
+    },
+    "project_family_unresolved": {
+      "count": 11,
+      "assessment": "scout recommended no broad high-confidence rule"
+    },
+    "relation_family_other": {
+      "count": 0,
+      "assessment": "no active cleanup pressure"
+    },
+    "identity_review_candidate_edges": {
+      "count": 0,
+      "assessment": "no active advisory/parser pressure"
+    }
+  },
+  "next_concrete_fanout": [
+    "event_family residual exact-rule scout on the next 80 public/internal/promotional residuals",
+    "project document_time_status residual exact-rule scout on the 66 unresolved projects",
+    "route split/aggregate residual guardrail scout if routes become the next selected bucket"
+  ]
+}

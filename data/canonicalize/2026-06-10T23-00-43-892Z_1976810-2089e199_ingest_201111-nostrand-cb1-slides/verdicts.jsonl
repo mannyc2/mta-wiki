@@ -1,0 +1,22 @@
+{"decision_id":"relate-bus-lanes-nostrand-201111","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p006_c0001","201111_nostrand_cb1_slides#p006_c0002"]}
+{"decision_id":"relate-bus-bulbs-nostrand-201111","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p007_c0001","201111_nostrand_cb1_slides#p007_c0002"]}
+{"decision_id":"relate-off-board-fare-201111","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p010_c0002","201111_nostrand_cb1_slides#p004_c0004"]}
+{"decision_id":"relate-bus-signal-priority-201111","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p004_c0002"]}
+{"decision_id":"relate-sbs-stations-signage-201111","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p004_c0005","201111_nostrand_cb1_slides#p004_c0006","201111_nostrand_cb1_slides#p004_c0007"]}
+{"decision_id":"rel-b44-weekday-riders","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p002_c0004"]}
+{"decision_id":"rel-b44-avg-speed","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p002_c0004"]}
+{"decision_id":"rel-cb1-boardings-2000","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p002_c0004"]}
+{"decision_id":"rel-households-no-car-62pct","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p002_c0006"]}
+{"decision_id":"rel-commute-by-transit-60pct","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p002_c0006"]}
+{"decision_id":"rel-car-commute-21pct","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p002_c0006"]}
+{"decision_id":"rel-corridor-residents-300k","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p002_c0006"]}
+{"decision_id":"rel-traffic-no-changes-cb1","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p012_c0003"]}
+{"decision_id":"rel-ridership-low-flushing-taylor","verdict":"fail","failure_reason":"Route service-variant mismatch: the cited block explicitly mentions 'B44 local buses' and the claim's subject is 'B44 local bus between Flushing Ave and Taylor St', but the relation links to route_b44-limited (a limited-stop variant). The do_not_merge list confirms route_b44-limited and route_b44-local are distinct service variants that must not be conflated.","evidence_checked":["201111_nostrand_cb1_slides#p009_c0002"]}
+{"decision_id":"rel-traffic-little-change-south","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p012_c0005"]}
+{"decision_id":"rel-cac-meetings-2010","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p013_c0002"]}
+{"decision_id":"rel-open-house-1-2010","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p013_c0002"]}
+{"decision_id":"rel-cac4-open-house-2-2011","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p013_c0002"]}
+{"decision_id":"rel-final-design-2011","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p013_c0002"]}
+{"decision_id":"rel-start-sbs-service-2012","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p013_c0002"]}
+{"decision_id":"rel-construction-2012","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p013_c0002"]}
+{"decision_id":"rel-total-public-meetings","verdict":"pass","evidence_checked":["201111_nostrand_cb1_slides#p003_c0002","201111_nostrand_cb1_slides#p003_c0003"]}

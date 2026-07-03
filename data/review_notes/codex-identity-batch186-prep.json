@@ -1,0 +1,429 @@
+{
+  "note_id": "codex-identity-batch186-prep",
+  "batch": "identity186",
+  "created_at": "2026-06-23T10:06:23Z",
+  "scope": {
+    "selection_note": "Codex-only identity cleanup prep after the latest main-thread checkpoint. Manifest/checkpoint context supplied by the user: identity184 with 481 duplicate_global_identity issues. This prep favors entity duplicates with exact-name, alias, and source evidence support.",
+    "allowed_global_kinds": [
+      "corridor",
+      "entity",
+      "project",
+      "route"
+    ],
+    "prepared_global_kind": "entity",
+    "write_limit": "Only this review note was written. No identity overrides, LOG.md, manifest, submissions, canonical JSONL, DB, wiki, materialized outputs, or other files were intentionally edited.",
+    "validator_duplicate_counts_latest_allowed_run": {
+      "total_issues": 481,
+      "duplicate_global_identity": 481,
+      "by_global_kind": {
+        "corridor": 30,
+        "entity": 410,
+        "project": 23,
+        "route": 18
+      }
+    },
+    "candidate_limit": {
+      "requested": "small high-confidence batch of 5-10 aliases if possible",
+      "prepared_count": 9,
+      "pass": true
+    }
+  },
+  "prepared_count": 9,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_audit-committee-may2024",
+      "target_id": "entity_audit-committee-charter",
+      "canonical_id": "entity_audit-committee-charter",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_audit-committee-charter and entity_audit-committee-may2024 share identity key entity_audit-committee-of-the-board."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_audit-committee-may2024",
+          "evidence_id": "meeting_doc_140281#p001_c0003",
+          "quote": "Audit Committee Meeting"
+        },
+        {
+          "record_id": "entity_audit-committee-charter",
+          "evidence_id": "meeting_doc_128986#p078_c0003",
+          "quote": "AUDIT COMMITTEE"
+        }
+      ],
+      "reason": "The alias is a one-source Audit Committee of the Board record for the Metropolitan Transportation Authority. The target is the richer MTA Audit Committee record and already carries merged entity_name values including Audit Committee of the Board. The shared validator key and committee/organization payloads support the same MTA board committee identity.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "prior_prep_duplicate_found": false,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-205546-nyct-bus-committee",
+      "target_id": "entity_meeting-doc-138391-nyct-bus-committee",
+      "canonical_id": "entity_meeting-doc-138391-nyct-bus-committee",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-138391-nyct-bus-committee and entity_meeting-doc-205546-nyct-bus-committee share identity key entity_new-york-city-transit-and-bus-committee."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-205546-nyct-bus-committee",
+          "evidence_id": "meeting_doc_205546#p003_c0001",
+          "quote": "This performance metrics document was prepared for the New York City Transit & Bus Committee meeting."
+        },
+        {
+          "record_id": "entity_meeting-doc-138391-nyct-bus-committee",
+          "evidence_id": "meeting_doc_138391#p003_c0001",
+          "quote": "This performance metrics document was prepared for the April 2024 meeting of the New York City Transit & Bus Committee."
+        }
+      ],
+      "reason": "Both records identify the New York City Transit & Bus Committee with the same normalized committee identity. The alias is a later single-source committee record; the target is an existing committee record with the same entity_name and multiple evidence refs.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "prior_prep_duplicate_found": false,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-33261-mta-risk-insurance",
+      "target_id": "entity_meeting-doc-131651-mta-risk-insurance",
+      "canonical_id": "entity_meeting-doc-131651-mta-risk-insurance",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-131651-mta-risk-insurance and entity_meeting-doc-33261-mta-risk-insurance share identity key entity_mta-risk-and-insurance-management."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-33261-mta-risk-insurance",
+          "evidence_id": "meeting_doc_33261#p025_c0005",
+          "quote": "Requesting Dept/Div & Dept/Div Head Name: Risk and Insurance Management / Phyllis Rachmuth"
+        },
+        {
+          "record_id": "entity_meeting-doc-131651-mta-risk-insurance",
+          "evidence_id": "meeting_doc_131651#p002_c0011",
+          "quote": "MTA Risk & Insurance Mgmt."
+        },
+        {
+          "record_id": "entity_meeting-doc-131651-mta-risk-insurance",
+          "evidence_id": "meeting_doc_194131#p001_c0002",
+          "quote": "Division, Division Head Name: Risk and Insurance Management"
+        }
+      ],
+      "reason": "Both records identify the same MTA Risk and Insurance Management division/department. The alias source names Risk and Insurance Management as the requesting department/division, while the target already merges MTA Risk & Insurance Mgmt. and Risk and Insurance Management values.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "prior_prep_duplicate_found": false,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-long-island-committee",
+      "target_id": "entity_long-island-committee",
+      "canonical_id": "entity_long-island-committee",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_long-island-committee and entity_meeting-doc-long-island-committee share identity key entity_long-island-committee."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-long-island-committee",
+          "evidence_id": "meeting_doc_100311#p003_c0020",
+          "quote": "This is to inform the Long Island Committee of the MTA Long Island Rail Road's plan"
+        },
+        {
+          "record_id": "entity_long-island-committee",
+          "evidence_id": "meeting_doc_100336#p001_c0005",
+          "quote": "This is to inform the Long Island Committee of the MTA Long Island Rail Road's plan"
+        }
+      ],
+      "reason": "The alias is a single-source Long Island Committee record. The target is the richer Long Island Committee record for MTA Long Island Rail Road oversight and already carries merged names Long Island Committee and Long Island Rail Road Committee.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "prior_prep_duplicate_found": false,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-mckissack",
+      "target_id": "entity_mckissack-iec",
+      "canonical_id": "entity_mckissack-iec",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_mckissack-iec and entity_meeting-doc-mckissack share identity key entity_mckissack."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-mckissack",
+          "evidence_id": "meeting_doc_104701#p026_c0007",
+          "quote": "McKISSACK MTA Independent Engineering Consultant"
+        },
+        {
+          "record_id": "entity_mckissack-iec",
+          "evidence_id": "meeting_doc_102776#p018_c0005",
+          "quote": "McKISSACK MTA Independent Engineering Consultant"
+        }
+      ],
+      "reason": "Both records name McKissack as the MTA Independent Engineering Consultant. The alias is a one-source consultant record; the target is the richer IEC record with multiple source refs, short_name IEC, and merged role/description values.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "prior_prep_duplicate_found": false,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_metropolitan-suburban-bus-authority",
+      "target_id": "entity_lib-metro-suburban-bus-authority",
+      "canonical_id": "entity_lib-metro-suburban-bus-authority",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_lib-metro-suburban-bus-authority and entity_metropolitan-suburban-bus-authority share identity key entity_metropolitan-suburban-bus-authority."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_metropolitan-suburban-bus-authority",
+          "evidence_id": "meeting_doc_128986#p101_c0003",
+          "quote": "COMMITTEE ON OPERATIONS OF THE LONG ISLAND RAIL ROAD AND THE METROPOLITAN SUBURBAN BUS AUTHORITY"
+        },
+        {
+          "record_id": "entity_lib-metro-suburban-bus-authority",
+          "evidence_id": "meeting_doc_102741#p001_c0006",
+          "quote": "the Metropolitan Suburban Bus Authority (\"LIB\")"
+        }
+      ],
+      "reason": "Both records identify the Metropolitan Suburban Bus Authority. The target is richer and explicitly carries the LIB acronym and Long Island Bus aliases, while the alias record has the same authority name and LIB acronym in payload.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "prior_prep_duplicate_found": false,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_committee-chairs-members-192151",
+      "target_id": "entity_meeting-doc-mnr-committee-chairs",
+      "canonical_id": "entity_meeting-doc-mnr-committee-chairs",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_committee-chairs-members-192151 and entity_meeting-doc-mnr-committee-chairs share identity key entity_metro-north-railroad-committee-chairs-and-members."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_committee-chairs-members-192151",
+          "evidence_id": "meeting_doc_192151#p001_c0016",
+          "quote": "Committee Chairs & Members"
+        },
+        {
+          "record_id": "entity_meeting-doc-mnr-committee-chairs",
+          "evidence_id": "meeting_doc_102696#p001_c0004",
+          "quote": "Responsibility Summary of Actions Approval of Minutes Committee Chairs & Members"
+        }
+      ],
+      "reason": "Both records are Metro-North Railroad Committee Chairs & Members records. The target is the richer multi-source Metro-North committee record; the alias is a single meeting_doc_192151 committee-role extraction for the same committee chairs/members agenda entity.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "prior_prep_duplicate_found": false,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting128861-susan-sarch",
+      "target_id": "entity_meeting-doc-113891-susan-sarch",
+      "canonical_id": "entity_meeting-doc-113891-susan-sarch",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-113891-susan-sarch and entity_meeting128861-susan-sarch share identity key entity_susan-sarch."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting128861-susan-sarch",
+          "evidence_id": "meeting_doc_128861#p001_c0013",
+          "quote": "Susan Sarch - Vice President, General Counsel & Secretary"
+        },
+        {
+          "record_id": "entity_meeting-doc-113891-susan-sarch",
+          "evidence_id": "meeting_doc_113891#p001_c0012",
+          "quote": "Susan Sarch - Vice President, General Counsel & Secretary"
+        }
+      ],
+      "reason": "Both records identify Susan Sarch with the same Vice President, General Counsel & Secretary role for Metro-North context. The target has the clean meeting-doc id and equivalent title payload.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "prior_prep_duplicate_found": false,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting151651-jon-kaufman",
+      "target_id": "entity_meeting-doc-121091-jon-kaufman",
+      "canonical_id": "entity_meeting-doc-121091-jon-kaufman",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-121091-jon-kaufman and entity_meeting151651-jon-kaufman share identity key entity_jon-kaufman.",
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-121091-jon-kaufman and entity_meeting151651-jon-kaufman share identity key entity_jon-kaufman-chief-strategic-initiatives."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting151651-jon-kaufman",
+          "evidence_id": "meeting_doc_151651#p004_c0011",
+          "quote": "Jon Kaufman, Chief of Strategic Initiatives"
+        },
+        {
+          "record_id": "entity_meeting-doc-121091-jon-kaufman",
+          "evidence_id": "open_data_plan_2023_update#p002_c0003",
+          "quote": "Jon Kaufman, Chief of Strategic Initiatives"
+        }
+      ],
+      "reason": "Both records identify Jon Kaufman as Chief of Strategic Initiatives. The target has richer merged title/organization context and an Open Data Plan source naming him as MTA's Data Coordinator and Chief of Strategic Initiatives.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "prior_prep_duplicate_found": false,
+        "override_kind_valid": true
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "candidate": "entity_meeting-doc-98256-cdot -> entity_cdot-meeting-doc-104741",
+      "reason": "High-confidence live CDOT/Connecticut Department of Transportation duplicate, but the alias id appears in an older prep artifact, so batch186 does not reuse it."
+    },
+    {
+      "candidate": "Community Board same-number rows across boroughs",
+      "reason": "Deferred unless the pair has explicit same-borough support. Many live rows share broad keys such as entity_community-board-5 or entity_community-board-7 while payloads identify different boroughs."
+    },
+    {
+      "candidate": "remaining project duplicate_global_identity rows",
+      "reason": "Deferred to avoid the same-name-different-scope and parent/child traps documented by batch184, including Security Initiatives, 2017 Street Improvement Project, and support-project/contract-modification collisions."
+    },
+    {
+      "candidate": "remaining route/corridor duplicate_global_identity rows",
+      "reason": "Deferred for the route-variant and corridor partial-overlap risks documented by batch185."
+    },
+    {
+      "candidate": "generic department names such as Engineering, Finance, Operations, and Diversity and EEO",
+      "reason": "Some have plausible Metro-North context, but the names are generic enough that batch186 only includes the better-scoped Metro-North Committee Chairs & Members row."
+    }
+  ],
+  "blockers": [],
+  "exclusions_and_guards": {
+    "input_files_read": [
+      "LOG.md",
+      "data/review_notes/codex-identity-batch184-prep.json",
+      "data/review_notes/codex-identity-batch185-prep.json",
+      "data/review_notes/codex-identity-batch*-prep.json",
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/canonical/*.jsonl",
+      "raw/sources/*/blocks.jsonl",
+      "packages/pipeline/src/validate.ts",
+      "packages/db/src/identity.ts",
+      "packages/pipeline/src/identity/identity-review-apply.ts"
+    ],
+    "proposal_guards": [
+      "Alias and target must both be present in current canonical JSONL.",
+      "Alias must not already be present as an override alias.",
+      "Alias must not be a current merge target unless consciously safe; no batch186 proposal uses a current merge target as alias.",
+      "Target must not itself be a current override alias.",
+      "Alias and target must differ.",
+      "Pair must not appear in do-not-merge, including resolved-target do-not-merge suppression.",
+      "Override kind must be one of corridor, entity, project, or route.",
+      "Previously prepared alias ids found in older prep artifacts are deferred rather than reused."
+    ],
+    "commands_run_for_this_prep": [
+      "git status --short",
+      "sed -n read of LOG.md and relevant package helper files",
+      "jq read-only inspection of data/review_notes/codex-identity-batch184-prep.json and codex-identity-batch185-prep.json",
+      "jq read-only inspection of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+      "bun --eval allowed in-process validateRepo run to confirm 481 duplicate_global_identity issues",
+      "bun --eval readCanonicalRecordsFromJsonl plus identityKeysForRecord reproduction of duplicate_global_identity rows after a later transient SQLite lock",
+      "rg read-only inspection of prior prep artifacts and source block text",
+      "bun --eval read-only source block snippet extraction for selected evidence"
+    ],
+    "commands_not_run": [
+      "provider-backed commands",
+      "materialize",
+      "validate CLI",
+      "export-jsonl",
+      "canonicalize",
+      "canonicalize-wave",
+      "canonicalize-review",
+      "campaign dedup",
+      "identity-review",
+      "write",
+      "ask",
+      "schema",
+      "ontology-normalize"
+    ],
+    "db_lock_note": "A later validateRepo attempt hit a transient SQLite database lock. The successful earlier validateRepo run had already confirmed the requested 481 duplicate_global_identity backlog; subsequent candidate mining used canonical JSONL plus the same identity key and do-not-merge helper logic."
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "batch_id": "codex-identity-batch114",
+  "created_at": "2026-06-23T04:54:29Z",
+  "scope": {
+    "record_kinds": [
+      "corridor",
+      "route"
+    ],
+    "notes": "Codex-only durable identity cleanup prep. Local deterministic inspection only; no provider-backed commands or forbidden pipeline commands were run."
+  },
+  "prepared_count": 8,
+  "all_pass": true,
+  "expected_delta": {
+    "duplicate_global_identity": -8
+  },
+  "proposed_aliases": [
+    {
+      "kind": "route",
+      "alias_id": "route_b6-cb18-jun2017",
+      "target_id": "route_b6-2015-sbk-corridor",
+      "reason": "Same global B6 bus route. Both records have route_id B6 and compatible local-and-limited service type evidence; the alias is a one-source June 2017 CB18 B82/South Brooklyn observation, while the target already aggregates the B6 Local and Limited corridor references.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B6",
+          "service_variant": "",
+          "route_type_normalized": "local_and_limited",
+          "display_name": "B6"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "B6",
+          "service_variant": "",
+          "route_type_normalized": "local_and_limited",
+          "display_name": "B6 Local and Limited"
+        }
+      },
+      "source_evidence_refs": [
+        "brt_south_brooklyn_b82_cb18_jun2017#p031_c0002",
+        "2015_06_17_brt_southbrooklyn_kickoff_boards#p002_c0005",
+        "bay_pkwy_cropsey_ave_cb12_jun2025#p004_c0002"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_125th-st-m15",
+      "target_id": "route_m15-local-2010-09-14",
+      "reason": "Same global M15 local route. Both records have route_id M15, service_variant local, and route_type_normalized local; the target is the richer M15 Local record for First/Second Avenue service.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "M15",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "M15"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "M15",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "M15 Local"
+        }
+      },
+      "source_evidence_refs": [
+        "2012_09_19_125th_st_sbs_public_workshop_summary#p005_c0004",
+        "2010_09_14_brt_1st2nd_cac5#p010_c0007",
+        "2010_09_14_brt_1st2nd_cac5#p011_c0006"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_b45-flatbush-ave-cb2",
+      "target_id": "route_b45-flatbush-ave-oct2025",
+      "reason": "Same global B45 bus route in Flatbush Avenue records. Both records have route_id B45, neither asserts a conflicting service variant/type, and the evidence references identify the same route label.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B45",
+          "service_variant": "",
+          "route_type_normalized": "",
+          "display_name": "B45"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "B45",
+          "service_variant": "",
+          "route_type_normalized": "",
+          "display_name": "B45"
+        }
+      },
+      "source_evidence_refs": [
+        "flatbush_ave_cb2_jun2024#p011_c0004",
+        "flatbush_ave_cb8_jun2024#p011_c0004",
+        "flatbush_ave_bus_priority_cb6_oct2025#p013_c0002"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_b69-flatbush-ave-cb2",
+      "target_id": "route_b69-flatbush-ave-oct2025",
+      "reason": "Same global B69 bus route in Flatbush Avenue records. Both records have route_id B69, neither asserts a conflicting service variant/type, and the evidence references identify the same route label.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B69",
+          "service_variant": "",
+          "route_type_normalized": "",
+          "display_name": "B69"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "B69",
+          "service_variant": "",
+          "route_type_normalized": "",
+          "display_name": "B69"
+        }
+      },
+      "source_evidence_refs": [
+        "flatbush_ave_cb2_jun2024#p011_c0004",
+        "flatbush_ave_bus_priority_cb6_oct2025#p014_c0002"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_q35-flatbush-ave-kickoff",
+      "target_id": "route_q35-flatbush-cab1",
+      "reason": "Same global Q35 bus route on Flatbush Avenue. Both records have route_id Q35 and Brooklyn/Queens borough evidence; neither asserts a conflicting service variant/type.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "Q35",
+          "service_variant": "",
+          "route_type_normalized": "",
+          "display_name": "Q35"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "Q35",
+          "service_variant": "",
+          "route_type_normalized": "",
+          "display_name": "Q35"
+        }
+      },
+      "source_evidence_refs": [
+        "flatbush_ave_brooklyn_bus_priority_kick_off_june2022#p011_c0002",
+        "flatbush_ave_cab1_nov2022#p016_c0002"
+      ]
+    },
+    {
+      "kind": "corridor",
+      "alias_id": "corridor_woodhaven-cross-bay-sbs-corridor",
+      "target_id": "corridor_woodhaven-cross-bay-sbs",
+      "reason": "Same global Woodhaven/Cross Bay SBS corridor. Both records name the Woodhaven / Cross Bay SBS corridor in Queens and describe the same Woodside-to-Rockaways 14-mile corridor, with no materially different limits.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "corridor",
+          "corridor_name": "Woodhaven / Cross Bay SBS corridor",
+          "limits": "14 miles from Woodside to the Rockaways",
+          "borough_normalized": "queens",
+          "display_name": "Woodhaven / Cross Bay SBS corridor"
+        },
+        "target": {
+          "record_kind": "corridor",
+          "corridor_name": "Woodhaven / Cross Bay SBS Corridor",
+          "limits": "from Woodside to the Rockaways",
+          "borough_normalized": "queens",
+          "display_name": "Woodhaven / Cross Bay SBS Corridor"
+        }
+      },
+      "source_evidence_refs": [
+        "2015_04_29_brt_woodhaven_dw3_presentation#p003_c0002",
+        "2014_10_22_brt_woodhaven_cac2_presentation#p010_c0001",
+        "2014_10_22_brt_woodhaven_cac2_presentation#p010_c0002"
+      ]
+    },
+    {
+      "kind": "corridor",
+      "alias_id": "corridor_brt-b82-mar2018-southern-brooklyn-b82",
+      "target_id": "corridor_b82-southern-brooklyn",
+      "reason": "Same global Southern Brooklyn B82 corridor. Both records use the same corridor name and Brooklyn scope; the alias adds explicit Cropsey/Bay 37 to Flatlands/Kings Highway/Rockaway Parkway limits that fit the target's B82 Southern Brooklyn corridor scope.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "corridor",
+          "corridor_name": "Southern Brooklyn B82 corridor",
+          "limits": "Cropsey Ave & Bay 37 St to Flatlands Ave / Kings Highway / Rockaway Pkwy",
+          "borough_normalized": "brooklyn",
+          "display_name": "Southern Brooklyn B82 Corridor"
+        },
+        "target": {
+          "record_kind": "corridor",
+          "corridor_name": "Southern Brooklyn B82 corridor",
+          "limits": "",
+          "borough_normalized": "brooklyn",
+          "display_name": "Southern Brooklyn B82 Corridor"
+        }
+      },
+      "source_evidence_refs": [
+        "brt_south_brooklyn_b82_mar2018#p003_c0002",
+        "brt_south_brooklyn_b82_mar2018#p003_c0003",
+        "brt_south_brooklyn_b82_cb14_may2017#p003_c0002",
+        "brt_south_brooklyn_b82_cb14_may2017#p003_c0003"
+      ]
+    },
+    {
+      "kind": "corridor",
+      "alias_id": "corridor_bx6-south-bronx-sept2016",
+      "target_id": "corridor_bx6-south-bronx",
+      "reason": "Same global Bx6 South Bronx corridor. Both records name the Bx6 South Bronx corridor and give matching Hunts Point/Riverside Drive limits in opposite order, with no materially different scope.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "corridor",
+          "corridor_name": "Bx6 South Bronx corridor",
+          "limits": "from Riverside Drive West to Hunts Point",
+          "display_name": "Bx6 South Bronx corridor"
+        },
+        "target": {
+          "record_kind": "corridor",
+          "corridor_name": "Bx6 South Bronx corridor",
+          "limits": "Hunts Point to Riverside Drive",
+          "display_name": "Bx6 South Bronx corridor"
+        }
+      },
+      "source_evidence_refs": [
+        "brt_bx6_south_bronx_sept2016#p007_c0002",
+        "brt_bx6_south_bronx_sept2016#p007_c0001",
+        "brt_bx6_south_bronx_june2016#p007_c0002",
+        "brt_bx6_south_bronx_june2016#p009_c0002"
+      ]
+    }
+  ],
+  "guard_summary": {
+    "candidate_discovery": {
+      "route_group_command": "sqlite3 -header -column data/canonical.db \"select upper(coalesce(routes.route_id,'')) as route_id, coalesce(json_extract(records.payload,'$.service_variant'),'') as service_variant, coalesce(routes.route_type_normalized,'') as route_type_normalized, count(*) as n, group_concat(records.record_id, ' | ') as ids from records join routes on records.record_id=routes.record_id left join identity_aliases ia on ia.kind='route' and ia.alias=records.record_id where records.record_kind='route' and ia.alias is null and coalesce(routes.route_id,'') != '' group by upper(routes.route_id), coalesce(json_extract(records.payload,'$.service_variant'),''), coalesce(routes.route_type_normalized,'') having n > 1 order by n desc, route_id limit 160;\"",
+      "corridor_group_command": "sqlite3 -header -column data/canonical.db \"select lower(coalesce(corridors.corridor_name, corridors.name, corridors.street, records.display_name,'')) as name_key, coalesce(corridors.borough_normalized,'') as borough, count(*) as n, group_concat(records.record_id, ' | ') as ids from records join corridors on records.record_id=corridors.record_id left join identity_aliases ia on ia.kind='corridor' and ia.alias=records.record_id where records.record_kind='corridor' and ia.alias is null and coalesce(corridors.corridor_name, corridors.name, corridors.street, records.display_name,'') != '' group by lower(coalesce(corridors.corridor_name, corridors.name, corridors.street, records.display_name,'')), coalesce(corridors.borough_normalized,'') having n > 1 order by n desc, name_key limit 160;\"",
+      "result_summary": "Selected five route pairs with same route_id and compatible/non-conflicting service variant/type evidence, plus three corridor pairs whose names and limits/scopes match. Skipped same-name corridors with materially different or ambiguous limits, and skipped route groups where evidence or service variant/type was not clean enough."
+    },
+    "record_existence_and_kind": {
+      "count_command": "sqlite3 data/canonical.db \"select count(*) from records where record_id in ('route_b6-cb18-jun2017','route_b6-2015-sbk-corridor','route_125th-st-m15','route_m15-local-2010-09-14','route_b45-flatbush-ave-cb2','route_b45-flatbush-ave-oct2025','route_b69-flatbush-ave-cb2','route_b69-flatbush-ave-oct2025','route_q35-flatbush-ave-kickoff','route_q35-flatbush-cab1','corridor_woodhaven-cross-bay-sbs-corridor','corridor_woodhaven-cross-bay-sbs','corridor_brt-b82-mar2018-southern-brooklyn-b82','corridor_b82-southern-brooklyn','corridor_bx6-south-bronx-sept2016','corridor_bx6-south-bronx') and ((record_id like 'route_%' and record_kind='route') or (record_id like 'corridor_%' and record_kind='corridor'));\"",
+      "count_result": "16",
+      "detail_command": "sqlite3 -header -column data/canonical.db \"select r.record_id, r.record_kind, r.display_name, case when r.record_kind='route' then routes.route_id else corridors.corridor_name end as identity_key, case when r.record_kind='route' then coalesce(json_extract(r.payload,'$.service_variant'),'') else coalesce(corridors.limits,'') end as variant_or_limits, case when r.record_kind='route' then coalesce(routes.route_type_normalized,'') else coalesce(corridors.borough_normalized,'') end as type_or_borough, r.primary_source_id from records r left join routes on r.record_id=routes.record_id left join corridors on r.record_id=corridors.record_id where r.record_id in ('route_b6-cb18-jun2017','route_b6-2015-sbk-corridor','route_125th-st-m15','route_m15-local-2010-09-14','route_b45-flatbush-ave-cb2','route_b45-flatbush-ave-oct2025','route_b69-flatbush-ave-cb2','route_b69-flatbush-ave-oct2025','route_q35-flatbush-ave-kickoff','route_q35-flatbush-cab1','corridor_woodhaven-cross-bay-sbs-corridor','corridor_woodhaven-cross-bay-sbs','corridor_brt-b82-mar2018-southern-brooklyn-b82','corridor_b82-southern-brooklyn','corridor_bx6-south-bronx-sept2016','corridor_bx6-south-bronx') order by r.record_kind, r.record_id;\"",
+      "result_summary": "16/16 selected alias and target records exist with the expected record_kind. Route pairs have matching route_id values. Corridor pairs have matching names with compatible limits/scope."
+    },
+    "existing_alias_conflicts": {
+      "alias_merges_json_command": "CAND_ALIAS=\"route_b6-cb18-jun2017 route_125th-st-m15 route_b45-flatbush-ave-cb2 route_b69-flatbush-ave-cb2 route_q35-flatbush-ave-kickoff corridor_woodhaven-cross-bay-sbs-corridor corridor_brt-b82-mar2018-southern-brooklyn-b82 corridor_bx6-south-bronx-sept2016\"; for id in $CAND_ALIAS; do kind=${id%%_*}; printf '%s ' \"$id\"; jq -r --arg kind \"$kind\" --arg id \"$id\" '(.aliases[$kind][$id] // \"NO_MERGE_ALIAS\")' data/identity-overrides/merges.json; done",
+      "alias_merges_json_result": "All eight proposed aliases returned NO_MERGE_ALIAS.",
+      "identity_aliases_command": "sqlite3 -header -column data/canonical.db \"select kind, alias, target from identity_aliases where (kind='route' and alias in ('route_b6-cb18-jun2017','route_125th-st-m15','route_b45-flatbush-ave-cb2','route_b69-flatbush-ave-cb2','route_q35-flatbush-ave-kickoff')) or (kind='corridor' and alias in ('corridor_woodhaven-cross-bay-sbs-corridor','corridor_brt-b82-mar2018-southern-brooklyn-b82','corridor_bx6-south-bronx-sept2016'));\"",
+      "identity_aliases_result": "no output; none of the proposed aliases are already present in canonical identity_aliases",
+      "target_alias_guard_command": "CAND_TARGET=\"route_b6-2015-sbk-corridor route_m15-local-2010-09-14 route_b45-flatbush-ave-oct2025 route_b69-flatbush-ave-oct2025 route_q35-flatbush-cab1 corridor_woodhaven-cross-bay-sbs corridor_b82-southern-brooklyn corridor_bx6-south-bronx\"; for id in $CAND_TARGET; do kind=${id%%_*}; printf '%s ' \"$id\"; jq -r --arg kind \"$kind\" --arg id \"$id\" '(.aliases[$kind][$id] // \"NO_MERGE_ALIAS\")' data/identity-overrides/merges.json; done; sqlite3 -header -column data/canonical.db \"select kind, alias, target from identity_aliases where (kind='route' and alias in ('route_b6-2015-sbk-corridor','route_m15-local-2010-09-14','route_b45-flatbush-ave-oct2025','route_b69-flatbush-ave-oct2025','route_q35-flatbush-cab1')) or (kind='corridor' and alias in ('corridor_woodhaven-cross-bay-sbs','corridor_b82-southern-brooklyn','corridor_bx6-south-bronx'));\"",
+      "target_alias_guard_result": "All eight targets returned NO_MERGE_ALIAS from merges.json, and sqlite3 returned no output from identity_aliases."
+    },
+    "do_not_merge_conflicts": {
+      "db_command": "sqlite3 -header -column data/canonical.db \"with pairs(kind,alias,target) as (values ('route','route_b6-cb18-jun2017','route_b6-2015-sbk-corridor'),('route','route_125th-st-m15','route_m15-local-2010-09-14'),('route','route_b45-flatbush-ave-cb2','route_b45-flatbush-ave-oct2025'),('route','route_b69-flatbush-ave-cb2','route_b69-flatbush-ave-oct2025'),('route','route_q35-flatbush-ave-kickoff','route_q35-flatbush-cab1'),('corridor','corridor_woodhaven-cross-bay-sbs-corridor','corridor_woodhaven-cross-bay-sbs'),('corridor','corridor_brt-b82-mar2018-southern-brooklyn-b82','corridor_b82-southern-brooklyn'),('corridor','corridor_bx6-south-bronx-sept2016','corridor_bx6-south-bronx')) select d.* from do_not_merge d join pairs p on d.kind=p.kind and ((d.record_id_a=p.alias and d.record_id_b=p.target) or (d.record_id_a=p.target and d.record_id_b=p.alias));\"",
+      "db_result": "no output; no selected pair is present in canonical do_not_merge",
+      "json_command": "jq -r '.pairs.route[]?, .pairs.corridor[]? | select((.record_ids | index(\"route_b6-cb18-jun2017\") and index(\"route_b6-2015-sbk-corridor\")) or (.record_ids | index(\"route_125th-st-m15\") and index(\"route_m15-local-2010-09-14\")) or (.record_ids | index(\"route_b45-flatbush-ave-cb2\") and index(\"route_b45-flatbush-ave-oct2025\")) or (.record_ids | index(\"route_b69-flatbush-ave-cb2\") and index(\"route_b69-flatbush-ave-oct2025\")) or (.record_ids | index(\"route_q35-flatbush-ave-kickoff\") and index(\"route_q35-flatbush-cab1\")) or (.record_ids | index(\"corridor_woodhaven-cross-bay-sbs-corridor\") and index(\"corridor_woodhaven-cross-bay-sbs\")) or (.record_ids | index(\"corridor_brt-b82-mar2018-southern-brooklyn-b82\") and index(\"corridor_b82-southern-brooklyn\")) or (.record_ids | index(\"corridor_bx6-south-bronx-sept2016\") and index(\"corridor_bx6-south-bronx\"))) | .record_ids | @tsv' data/identity-overrides/do-not-merge.json",
+      "json_result": "no output; no selected pair is present in data/identity-overrides/do-not-merge.json"
+    },
+    "prior_prep_conflicts_through_identity111": {
+      "command": "for f in data/review_notes/codex-identity-batch0*-prep.json data/review_notes/codex-identity-batch10[0-9]-prep.json data/review_notes/codex-identity-batch11[0-1]-prep.json; do jq -r --arg f \"$f\" '.proposed_aliases[]? | select(.kind==\"route\" or .kind==\"corridor\") | select(.alias_id as $a | [\"route_b6-cb18-jun2017\",\"route_125th-st-m15\",\"route_b45-flatbush-ave-cb2\",\"route_b69-flatbush-ave-cb2\",\"route_q35-flatbush-ave-kickoff\",\"corridor_woodhaven-cross-bay-sbs-corridor\",\"corridor_brt-b82-mar2018-southern-brooklyn-b82\",\"corridor_bx6-south-bronx-sept2016\"] | index($a)) | [$f,.kind,.alias_id,.target_id] | @tsv' \"$f\" 2>/dev/null; done",
+      "result": "no output; none of the proposed aliases appear in prior codex identity prep artifacts through batch111"
+    },
+    "source_evidence_spot_check": {
+      "route_command": "jq -r 'select(.record_id|IN(\"route_b6-2015-sbk-corridor\",\"route_b6-cb18-jun2017\",\"route_125th-st-m15\",\"route_m15-local-2010-09-14\",\"route_b45-flatbush-ave-cb2\",\"route_b45-flatbush-ave-oct2025\",\"route_b69-flatbush-ave-cb2\",\"route_b69-flatbush-ave-oct2025\",\"route_q35-flatbush-ave-kickoff\",\"route_q35-flatbush-cab1\")) | [.record_id, .payload.route_id, (.payload.service_variant // \"\"), (.payload.route_type_normalized // \"\"), (.evidence_refs | map(.evidence_id) | join(\" | \"))] | @tsv' data/canonical/routes.jsonl",
+      "corridor_command": "jq -r 'select(.record_id|IN(\"corridor_woodhaven-cross-bay-sbs-corridor\",\"corridor_woodhaven-cross-bay-sbs\",\"corridor_brt-b82-mar2018-southern-brooklyn-b82\",\"corridor_b82-southern-brooklyn\",\"corridor_bx6-south-bronx-sept2016\",\"corridor_bx6-south-bronx\")) | [.record_id, .payload.corridor_name, (.payload.limits // \"\"), (.payload.borough_normalized // (.payload.boroughs_normalized // [] | join(\",\"))), (.evidence_refs | map(.evidence_id) | join(\" | \"))] | @tsv' data/canonical/corridors.jsonl",
+      "result_summary": "Route spot checks show same route_id and compatible or non-conflicting route service fields. Corridor spot checks show matching corridor names and compatible limits/scope for the selected pairs."
+    },
+    "forbidden_command_compliance": {
+      "result": "No external/provider-backed commands or profiles/providers were used. No canonicalize, canonicalize-wave, canonicalize-review, campaign dedup, identity-review-run, write, ask, schema-propose, ontology-normalize-run, materialize, export-jsonl, or validate commands were run. Inspection used local deterministic commands only: pwd, rg, git status, find, sed, head, jq, sqlite3, and date; the only write was this prep artifact."
+    }
+  }
+}

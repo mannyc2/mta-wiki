@@ -1,0 +1,397 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2013-03-sbs-125-st-cb11-slides"
+record_kind: "source"
+display_name: "M60 Select Bus Service on 125th Street - CB11 Presentation"
+source_id: "2013_03_sbs_125_st_cb11_slides"
+source_ids:
+  - "2013_03_sbs_125_st_cb11_slides"
+local_observation_id: "source_2013_03_sbs_125_st_cb11_slides"
+local_observation_ids:
+  - "source_2013_03_sbs_125_st_cb11_slides"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-10T23:12:17.269Z"
+raw_text: "M60 Select Bus Service on 125th Street - Manhattan Community Board 11 Transportation Committee - Tuesday, March 5, 2013"
+submission_ids:
+  - "sub_8bf95f74e4f2866c"
+payload:
+  authority_tier: "board_material"
+  content_type: "presentation"
+  date: "March 5, 2013"
+  date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2013-03-05"
+    precision: "day"
+    raw_text: "March 5, 2013"
+  date_text: "Tuesday, March 5, 2013"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2013-03-05"
+    precision: "day"
+    raw_text: "Tuesday, March 5, 2013"
+  description: "Presentation to Manhattan Community Board 11 Transportation Committee about proposed M60 Select Bus Service on 125th Street"
+  published_date_normalized: "2013-03-05"
+  published_date_precision: "day"
+  publisher: "New York City Transit"
+  title: "M60 Select Bus Service on 125th Street"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "2013_03_sbs_125_st_cb11_slides#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "2013_03_sbs_125_st_cb11_slides"
+    source_path: "raw/sources/2013_03_sbs_125_st_cb11_slides/blocks.jsonl"
+    text_sha256: "sha256:a4aa0011bf251ea05be6c1e2b8306665880c45f3838d24ae5676f256678883a1"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "2013_03_sbs_125_st_cb11_slides#p001_c0002"
+    page_number: 1
+    role: "audience"
+    source_id: "2013_03_sbs_125_st_cb11_slides"
+    source_path: "raw/sources/2013_03_sbs_125_st_cb11_slides/blocks.jsonl"
+    text_sha256: "sha256:65299402ea0f93cade8bb8cf66331022ac60b59da14420b8a45e2d64e543f1d4"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "2013_03_sbs_125_st_cb11_slides#p001_c0003"
+    page_number: 1
+    role: "date"
+    source_id: "2013_03_sbs_125_st_cb11_slides"
+    source_path: "raw/sources/2013_03_sbs_125_st_cb11_slides/blocks.jsonl"
+    text_sha256: "sha256:e454f227e6a29b719f675f0e7c1cfe77ddb17f1c9eabf525fb1cefee096d7699"
+    text_source: "raw_text"
+---
+
+# Download the presentation (pdf)
+
+source_id: 2013_03_sbs_125_st_cb11_slides
+citation: cite block ids exactly as shown in square brackets
+document: 243 block(s)
+
+## Page 1
+
+### [p001_c0001] M60 Select Bus Service on 125 th Street
+[p001_c0002] Manhattan Community Board 11 Transportation Committee
+[p001_c0003] Tuesday, March 5, 2013
+> [p001_c0004] The logo for the New York City Department of Transportation (NYC DOT), featuring the words "NEW YORK CITY" above "DOT" in a stylized font.
+> [p001_c0005] The logo for the Metropolitan Transportation Authority (MTA), consisting of a stylized "MTA" inside a circle.
+[p001_c0006] New York City Transit
+[p001_c0007] CEMUSA
+[p001_c0008] another way love the City.
+[p001_c0009] Y SPECIALTY PRODUCED PRODUCTS Available at over 300 locations citywide Proceeds go toward promoting and protecting NYC
+> [p001_c0010] The logo of the New York City Transit Authority (NYCTA) is visible, along with a small image of a yellow taxi.
+[p001_c0011] This is New York City
+> [p001_c0012] A white and blue M60 Select Bus Service bus is stopped at a bus stop. The destination sign above the windshield displays "M60 via 125 ST" in orange LED letters. Below the windshield, the bus number "3894" is visible. The bus features advertisements for "ZACKY'S" (686 BROADWAY) and "MERRELL" (featuring a shoe). The bus is surrounded by people, including a man in a white shirt and dark pants, and another person in a dark hoodie. The background shows a city street with trees and buildings under a clear blue sky.
+
+## Page 2
+
+### [p002_c0001] New York City Transit
+### [p002_c0002] +selectbuservice 125th Street
+### [p002_c0003] Overview
+[p002_c0004] Project Background
+[p002_c0005] Public Outreach
+[p002_c0006] Proposed Street Design in CB 11
+[p002_c0007] Traffic Analysis
+[p002_c0008] Changes to Parking Regulations
+[p002_c0009] Other Changes
+[p002_c0010] Next Steps New York City Transit
+
+## Page 3
+
+### [p003_c0001] New York City Transit
+### [p003_c0002] +selectbusservice 125th Street
+### [p003_c0003] NEW YORK CITY DOT
+### [p003_c0004] Buses on 125 th Street
+### [p003_c0005] Bus Routes on 125 th St:
+- [p003_c0006] • Bx15 • M60 • M100 • M101
+> [p003_c0007] A detailed map of the 125th Street corridor in New York City. The map shows several bus routes: Bx15 (green), M60 (red), M100 (purple), and M101 (blue). Key landmarks include St. Nicholas Park, Harlem, Adam Clayton Powell Jr. Blvd (7 Avenue), Martin Luther King Blvd, and the Robert F. Kennedy Bridge. The map also shows the intersection of 125th Street with Broadway, Lenox Ave, and Park Ave.
+### [p003_c0008] Weekday Bus Boardings on 125 th Street (2011)
+[p003_c0009]
+
+```text
+Bx15 M60 M100 M101 Total 8,838 9,682 6,912 7,198 32,630
+```
+[p003_c0010] M60 is busiest route
+[p003_c0011] _newyorkcity transit_
+[p003_c0012] _2011-10-10_
+
+## Page 4
+
+### [p004_c0001] New York City Transit
+### [p004_c0002] +selectbusservice 125th Street
+### [p004_c0003] M60 Ridership
+### [p004_c0004] Boardings by Area
+> [p004_c0005] Area Percentage 125 ST 49% MORNINGSIDE HEIGHTS 21% QUEENS 19% AIRPORT 11% A pie chart titled 'Boardings by Area' showing the distribution of M60 boardings. The largest slice is red, representing 125 ST at 49%. The next largest is blue, representing MORNINGSIDE HEIGHTS at 21%. A green slice represents QUEENS at 19%, and a purple slice represents AIRPORT at 11%.
+### [p004_c0006] Alightings by Area
+> [p004_c0007] Area Percentage 125 ST 51% QUEENS 22% MORNINGSIDE HEIGHTS 17% AIRPORT 10% A pie chart titled 'Alightings by Area' showing the distribution of M60 alightings. The largest slice is red, representing 125 ST at 51%. The next largest is green, representing QUEENS at 22%. A blue slice represents MORNINGSIDE HEIGHTS at 17%, and a purple slice represents AIRPORT at 10%.
+[p004_c0008] Much of the ridership of M60 is concentrated within Manhattan and on 125 th Street
+[p004_c0009] New York City Transit
+[p004_c0010] Most riders are not traveling to/from LaGuardia Airport
+
+## Page 5
+
+### [p005_c0001] New York City Transit
+### [p005_c0002] +selectbusservice 125th Street
+### [p005_c0003] Bus Speed
+> [p005_c0004] Period Bus in Motion Stopped at Red Lights Stopped at Bus Stops Other Delay AM 38% 22% 38% 1% PM 37% 32% 21% 10% Legend: Other Delay (Purple) Stopped at Bus Stops (Green) Stopped at Red Lights (Red) Bus in Motion (Blue)
+[p005_c0005] Source: M60 Eastbound
+[p005_c0006] Buses are stopped over 60% of the time
+[p005_c0007] Eastbound PM peak period bus speed: 2.7 mph
+[p005_c0008] Average bus speed in NYC: 7.7 mph
+
+## Page 6
+
+### [p006_c0001] MTA
+### [p006_c0002] New York City Transit
+### [p006_c0003] +selectbusservice 125th Street
+### [p006_c0004] NEW YORK CITY DOT
+### [p006_c0005] Select Bus Service on the M60
+[p006_c0006] Potential Improvements:
+[p006_c0007] Limited Stops
+[p006_c0008] Off-Board Fare Collection
+[p006_c0009] Offset bus lanes benefit all buses on corridor, and maintain needed parking
+[p006_c0010] Updated curb regulations reduce double parking, and make deliveries easier
+[p006_c0011] Transit Signal Priority reduces time stopped at red lights
+[p006_c0012] Pedestrian Safety Improvements at key intersections
+> [p006_c0013] A person wearing a purple jacket and a blue beanie is interacting with a fare collection machine. The machine has a screen and buttons for 'READY', 'PUSH TO START', and 'METRO CARD'.
+> [p006_c0014] A street view of a city street with a designated bus lane. The lane is marked with 'ONLY' and 'BUS' in large white letters on the pavement. A dark car is driving in the lane, and other cars are parked along the curb.
+[p006_c0015] _MTA_
+[p006_c0016] _New York City_
+[p006_c0017] _NYC DOT_
+
+## Page 7
+
+### [p007_c0001] MTA
+### [p007_c0002] New York City Transit
+### [p007_c0003] +selectbusservice 125th Street
+### [p007_c0004] NEW YORK CITY DOT
+### [p007_c0005] How SBS Works
+### [p007_c0006] Paying your fare:
+- [p007_c0007] 1. Pay at sidewalk Metrocard or coin machines before boarding the bus 2. Take your receipt 3. Board the bus through any of the three doors
+> [p007_c0008] A photograph showing three sidewalk fare machines (SBS) on a city street. The machines are blue and silver, with "Get Ticket Here" printed on them. They are positioned in front of a building with an AT&T sign. A person is walking past the machines on the left. The street is paved with concrete and has a yellow curb on the right. In the background, there are other buildings and people walking.
+[p007_c0009] _The logo for the New York City Transit Authority, featuring a stylized train icon._
+[p007_c0010] _newyorkcitytransit_
+[p007_c0011] _125th ST_
+
+## Page 8
+
+### [p008_c0001] New York City Transit
+### [p008_c0002] +selectbusservice 125th Street
+### [p008_c0003] Public Outreach
+[p008_c0004] Public Workshop #1: September 19, 2012
+[p008_c0005] CAC Meeting #1: November 28, 2012
+[p008_c0006] Public Workshop #2: December 3, 2012
+[p008_c0007] 125 th St Community Walk-through: January 17, 2013
+[p008_c0008] CAC Meeting #2: January 23, 2013
+[p008_c0009] M15 SBS Tour: February 1, 2013
+> [p008_c0010] A photograph showing a group of people seated at tables in a room, likely a workshop or meeting. The room has large windows and is well-lit.
+> [p008_c0011] A photograph showing a group of people seated at tables in a room, likely a workshop or meeting. The room has large windows and is well-lit.
+> [p008_c0012] A photograph showing a group of people standing outdoors in winter clothing, likely a community walk-through. The group is gathered in a circle, and the background shows a street with cars and buildings.
+[p008_c0013] _www.mta.info_
+
+## Page 9
+
+### [p009_c0001] New York City Transit
+### [p009_c0002] +selectbusservice 125th Street
+### [p009_c0003] Public Outreach
+### [p009_c0004] Key Points raised at Outreach Events
+[p009_c0005] Curb access should be preserved for shoppers/merchants
+[p009_c0006] Double parking of cars and trucks contributes to bus delays
+[p009_c0007] Select Bus Service should stop at major subway/rail connections
+[p009_c0008] Outreach to merchants and vendors is essential
+[p009_c0009] Issues at 125 th St/Lexington Av need to be addressed
+[p009_c0010] CB11, DOT, DHS and NYCT are collaborating to develop solutions
+[p009_c0011] _New York City Transit_
+
+## Page 10
+
+### [p010_c0001] New York City Transit
+### [p010_c0002] +selectbusservice 125th Street
+### [p010_c0003] Data Collection and Analysis
+[p010_c0004] Merchant Survey
+[p010_c0005] Sidewalk Survey
+[p010_c0006] Parking Analysis
+[p010_c0007] Traffic Analysis
+[p010_c0008] Review of Curb Regulations
+### [p010_c0009] Merchant Survey
+[p010_c0010] How do you think customers typically get to your business?
+> [p010_c0011] Method Percentage Walk 52% Car 23% Public transit 13% Other 12%
+[p010_c0012] From November Merchant Survey: merchant impressions closely match shopper behavior
+### [p010_c0013] Sidewalk Survey
+> [p010_c0014] Method Percentage Walk 39% Car 17% Public transit 31% Other 13% Car parked in street 5% Car service 1% Car driven to 1% Car parked in lot 1% Metro North rail/road 1%
+[p010_c0015] Most survey participants walk or ride transit to 125th St
+### [p010_c0016] Parking Analysis
+[p010_c0017] % of time when vehicles were double parked: Amsterdam Av to Adam Clayton Powell Jr. Blvd
+> [p010_c0018] Location North Curb South Curb Amsterdam Av 77% 26% Amsterdam Av to 125th St 9% 31% 125th St 17% 10% 125th St to Adam Clayton Powell Jr. Blvd 16% 10% Adam Clayton Powell Jr. Blvd 25% 31% Scale: High (40%), Medium (30%), Low (20%), Low (10%), Low (0%) Double parked cars [%]
+[p010_c0019] _New York City Transit_
+
+## Page 11
+
+### [p011_c0001] New York City Transit
+### [p011_c0002] +selectbusservice 125th Street
+### [p011_c0003] Proposed Design - Typical
+[p011_c0004] Offset Bus Lanes replace one general travel lane in each direction and maintain curb access
+> [p011_c0005] The diagram illustrates a typical roadway design for 125th Street, showing a cross-section of the road with various lanes and features. The roadway is divided into two main sections: the North Side of 125th Street and the South Side of 125th Street. The North Side features a Parking / Right Turn Bay/ Bus Stop, an Offset SBS Lane, and a Travel Lane. The South Side features a Travel Lane, an Offset SBS Lane, and a Parking / Right Turn Bay/ Bus Stop. The total width of the roadway is 60'-0". The diagram also shows a scale bar indicating 0, 2, and 10 Feet. Side Feature Direction North Side Parking / Right Turn Bay/ Bus Stop Southbound (↓) North Side Offset SBS Lane Southbound (↓) North Side Travel Lane Southbound (↓) South Side Travel Lane Northbound (↑) South Side Offset SBS Lane Northbound (↑) South Side Parking / Right Turn Bay/ Bus Stop Northbound (↑) 60'-0" Width of Roadway 0 2 10 Feet
+[p011_c0006] _12_
+
+## Page 12
+
+### [p012_c0001] New York City Transit
+### [p012_c0002] +selectbusservice 125th Street
+### [p012_c0003] Proposed Street Design: Adam Clayton Powell Jr. Blvd - Madison Av
+[p012_c0004] Legend ■ Parking ■ Bus Only Lane ■ Travel Lane / Right-Turn Bay Turn Restriction
+[p012_c0005] _newyorkcitytransit_
+
+## Page 13
+
+### [p013_c0001] New York City Transit
+### [p013_c0002] +selectbusservice 125th Street
+### [p013_c0003] Proposed Street Design: Madison Av to Second Av
+- [p013_c0004] Legend ■ Parking ■ Bus Only Lane ■ Travel Lane / Right-Turn Bay ■ Curbside Bus Lane Turn Restriction
+[p013_c0005] _newyorkcitytransit_
+
+## Page 14
+
+### [p014_c0001] New York City Transit
+### [p014_c0002] +selectbusservice 125th Street
+### [p014_c0003] Proposed M60 SBS Station Locations
+> [p014_c0004] A map showing the proposed M60 SBS route and station locations. The route is highlighted in purple and connects Manhattan to Queens. In Manhattan, the route follows 125th Street, with stops marked by blue and orange circles. The route then crosses the RFK Bridge into Queens, where it follows Astoria Blvd. Stops are marked with blue circles for Westbound M60 SBS and orange circles for Eastbound M60 SBS. The map also shows the LGA (Laguardia Airport) area. A legend in the bottom right corner identifies the symbols: blue circle for Westbound M60 SBS Stops, orange circle for Eastbound M60 SBS Stops, and purple line for M60 SBS Route.
+[p014_c0005] M60 SBS makes limited stops in Manhattan and Queens Bx15, M100 and M101 make local stops along 125 th Street
+
+## Page 15
+
+### [p015_c0001] New York City Transit
+### [p015_c0002] +selectbusservice 125th Street
+### [p015_c0003] Proposed SBS Stop Locations on 125 th Street
+> [p015_c0004] The map illustrates the proposed SBS stop locations on 125th Street. The M60 SBS route is shown as a purple line running along the street. Stops are marked with colored circles: blue for Westbound M60 SBS, yellow for Eastbound M60 SBS, and white for Local Stops. The map also shows the Metronorth line (green) and the RFK Bridge (To Queens). Street names include Amsterdam Av, St Nicholas Av, Frederick Douglass Blvd, Lenox Av, Madison Park Av, Lexington Av, and Second Av. The map also indicates directions to 106th/Broadway and the RFK Bridge. Legend: Westbound M60 SBS, Bx15, M100, and M101 Stops (Blue circle) Eastbound M60 SBS, Bx15, M100, and M101 Stops (Yellow circle) Local Stops (Bx15, M100, M101 only) (White circle) M60 SBS Route (Purple line)
+[p015_c0005] Local service is retained on Bx15, M100, M101
+
+## Page 16
+
+### [p016_c0001] New York City Transit
+### [p016_c0002] +selectbuservice 125th Street
+### [p016_c0003] Existing Traffic Conditions
+[p016_c0004] All intersections from Morningside Avenue to Second Avenue were analyzed at AM and PM peak on a typical day
+### [p016_c0005] Analysis inputs
+- [p016_c0006] • Traffic volumes • Traffic signal timing and progression • Number of lanes • Curb activity
+### [p016_c0007] Analysis outputs
+- [p016_c0008] • Average delay per vehicle • “Level of Service” (LOS): A through F • C to D is typical in NYC
+[p016_c0009] _New York City Transit_
+
+## Page 17
+
+### [p017_c0001] New York City Transit
+### [p017_c0002] +selectbusservice 125th Street
+### [p017_c0003] Traffic Changes on 125 th Street
+> [p017_c0004] Lenox Av 126 th Street Fifth Av 125 th Street 124 th Street Offset Bus Lanes replace one general travel lane in each direction SBS
+> [p017_c0005] Legend ■ Parking ■ Bus Only Lane ■ Travel Lane / Right-Turn Turn Restriction
+
+## Page 18
+
+### [p018_c0001] New York City Transit
+### [p018_c0002] +selectbusservice 125th Street
+### [p018_c0003] Traffic Changes on 125 th Street
+> [p018_c0004] Lenox Av 126 th Street Fifth Av 125 th Street 124 th Street
+[p018_c0005] Left Turn Restrictions reduce conflicts and increase signal time for through traffic
+[p018_c0006] Legend
+[p018_c0007] Parking
+[p018_c0008] Bus Only Lane
+[p018_c0009] Travel Lane / Right-Turn
+[p018_c0010] Turn Restriction
+
+## Page 19
+
+### [p019_c0001] New York City Transit
+### [p019_c0002] +selectbusservice 125th Street
+### [p019_c0003] Traffic Changes on 125 th Street
+> [p019_c0004] Lenox Av 126 th Street Fifth Av 125 th Street 124 th Street Right-turn bays reduce blockages at intersections SBS Updated Curb Regulations reduce double parking
+> [p019_c0005] Legend Parking Bus Only Lane Travel Lane / Right-Turn Turn Restriction
+
+## Page 20
+
+### [p020_c0001] New York City Transit
+### [p020_c0002] +selectbusservice 125th Street
+### [p020_c0003] Level of Service 125th Street: Existing
+[p020_c0004] Less than 45s delay (mid LOS D) at all intersections
+[p020_c0005] Level of Service A-B: less than 20s delay C-D: 20-44s delay D-E: 45-79s delay F: 80s or more delay
+
+## Page 21
+
+### [p021_c0001] New York City Transit
+### [p021_c0002] +selectbusservice 125th Street
+### [p021_c0003] Level of Service 125th Street: Proposed
+[p021_c0004] Level of Service ● A-B: less than 20s delay
+[p021_c0005] ● D-E: 45-79s delay
+[p021_c0006] ● C-D: 20-44s delay
+[p021_c0007] ● F: 80s or more delay
+[p021_c0008] ⦿ 10s+ delay increase
+
+## Page 22
+
+### [p022_c0001] New York City Transit
+### [p022_c0002] +selectbusservice 125th Street
+### [p022_c0003] Parking Regulations - Existing
+> [p022_c0004] Amsterdam Av 125th St Morningside Av St Nicholas Av Frederick Douglass Blvd Adam Clayton Powell Jr. Blvd
+> [p022_c0005] Adam Clayton Powell Jr. Blvd 125th St Lenox Av Fifth Av Madison Av
+> [p022_c0006] Madison Av 125th St Park Av Lexington Av Third Av Second Av
+[p022_c0007] Alternate Side Parking (unmetered)
+[p022_c0008] 1 Hour Metered Parking
+[p022_c0009] Permit Parking
+[p022_c0010] Bus Stop
+[p022_c0011] e.g. Ambulette, Diplomat, FDNY, NYPD, etc.
+
+## Page 23
+
+### [p023_c0001] New York City Transit
+### [p023_c0002] +selectbuservice 125th Street
+### [p023_c0003] NEW YORK CITY DOT
+### [p023_c0004] Potential Changes to Parking Regulations
+### [p023_c0005] Alternate-Side Parking (ASP) within CB11
+[p023_c0006] allows free parking for as long as 4 days
+[p023_c0007] makes it more difficult for shoppers and delivery trucks to find short-term parking
+[p023_c0008] leads to double parking
+[p023_c0009] DOT proposes converting ASP to 1-Hour Metered Parking from 8 AM to 7 PM
+[p023_c0010] DOT would also add 1-Hour Metered Commercial Loading from 8 AM to 12 PM where needed
+[p023_c0011] _New York City Transit_
+[p023_c0012] _NYC DOT_
+
+## Page 24
+
+### [p024_c0001] New York City Transit
+### [p024_c0002] +selectbusservice 125th Street
+### [p024_c0003] NEW YORK CITY DOT
+### [p024_c0004] Proposed Reroute of M100 in East Harlem
+[p024_c0005] Eliminates unsafe left turn from 125th Street onto 3rd Avenue and reduces delays for through traffic
+[p024_c0006] Increases service on 125th Street between 3rd Avenue and 1st Avenue
+[p024_c0007] Current layover impedes traffic flow
+> [p024_c0008] The map illustrates the proposed reroute of the M100 bus route in East Harlem. The current route is shown as a solid black line, and the proposed route is shown as a dashed blue line. The current route follows E 127th St, E 126th St, and E 125th St, with a 'current layover' indicated at the intersection of E 125th St and 3rd Ave. The proposed route follows E 125th St, 3rd Ave, E 124th St, E 123rd St, and E 122nd St, with a 'proposed layover' indicated at the intersection of E 125th St and 1st Ave. The map also shows the RFK Bridge to the east and the surrounding streets: E 127th St, E 126th St, E 125th St, E 124th St, E 123rd St, E 122nd St, 3rd Ave, 2nd Ave, and 1st Ave. A legend in the bottom left corner of the map area identifies the 'Current Route' as a solid black line and the 'Proposed Route' as a dashed blue line.
+[p024_c0009] _New York City Transit_
+[p024_c0010] _TACTICS NYC_
+
+## Page 25
+
+### [p025_c0001] New York City Transit
+### [p025_c0002] +selectbusservice 125th Street
+### [p025_c0003] NEW YORK CITY DOT
+### [p025_c0004] Proposed Bus Bulbs at Lexington Av
+> [p025_c0005] The diagram illustrates the proposed bus bulb project at the intersection of Lexington Avenue and 125th Street. The intersection is shown with a central crosswalk and four bus stops, each marked with a blue 'M' in a white square. The current M35 bus stop is located on the northbound side of Lexington Avenue. The proposed bus bulbs are shown as orange-colored extensions of the bus stops, extending outwards onto the cross-street (125th Street) and onto the southbound side of Lexington Avenue. These bulbs are designed to reduce pedestrian crossing distances and alleviate congestion. The diagram also shows various bus models and trees along the streets. CURRENT M35 BUS STOP BUS BULB LEXINGTON AVENUE BUS BUS BULB
+[p025_c0006] Bus bulbs would reduce pedestrian congestion and crossing distances
+[p025_c0007] Bulbs would be built as part of an upcoming capital project
+
+## Page 26
+
+### [p026_c0001] New York City Transit
+### [p026_c0002] +selectbusservice 125th Street
+### [p026_c0003] NEW YORK CITY DOT
+### [p026_c0004] Next Steps
+[p026_c0005] Revise Design based on Community Input
+[p026_c0006] Finalize Curb Regulations
+[p026_c0007] Finalize Bus Stop Locations
+[p026_c0008] Implementation in 2013
+[p026_c0009] Upcoming Meetings
+[p026_c0010] Community Advisory Committee Meeting #3: March 18, 2012, Alhambra Ballroom, 6:30 PM
+[p026_c0011] _newyorkcity_
+[p026_c0012] _M60 SBS Open House: Early April_

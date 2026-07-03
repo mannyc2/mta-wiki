@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_1ef0d75fb7",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_1ef0d75fb7.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_1ef0d75fb7.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "entity_bt-committee-members-sep2024",
+        "entity_meeting-doc-205631-committee-chair-members"
+      ],
+      "reason": "Strong identity field entity_type differs: 'committee' vs 'committee_role'. Test 1 (Contradiction test) forces do_not_merge. The relation_context shows a part_of_agency link from the role record to the committee, confirming they are related but distinct objects."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "Test 1 (Contradiction test) applies: entity_type differs between 'committee' and 'committee_role'. This is a decisive strong identity field difference under the Entities per-kind rule (Person/title vs agency never merge; a committee_role is analogous to a title/role). The relation_context explicitly links the role record as part_of_agency to the committee record, reinforcing they are distinct. No merge possible. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

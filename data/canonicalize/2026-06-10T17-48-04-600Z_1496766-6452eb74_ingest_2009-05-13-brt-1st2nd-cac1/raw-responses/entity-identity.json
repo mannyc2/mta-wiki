@@ -1,0 +1,82 @@
+{
+  "run_id": "2026-06-10T17-48-04-600Z_1496766-6452eb74_ingest_2009-05-13-brt-1st2nd-cac1",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T21:04:31.539Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-nyct-2009-cac",
+        "local_observation_id": "entity_nyct_2009_05_13_cac",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct already matches existing registry record entity_mta-nyct (MTA NYCT Reference, entity_type: agency, entity_name: MTA New York City Transit). Observation already resolves to this id — no different target to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p001_c0001",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-nycdot-2009-cac",
+        "local_observation_id": "entity_nyc_dot_2009_05_13_cac",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already matches existing registry record entity_nyc-dot (NYC DOT as Publisher, entity_type: agency, entity_name: New York City Department of Transportation). Observation already resolves to this id.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p008_c0009",
+            "source_quote": "_NEW YORK CITY DOT_"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-manhattan-bp-2009-cac",
+        "local_observation_id": "entity_manhattan_borough_president_office_2009",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_manhattan-borough-president already matches existing registry record entity_manhattan-borough-president (Manhattan Borough President, entity_type: government_office). Observation already resolves to this id.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p001_c0003",
+            "source_quote": "Manhattan Borough President's Office"
+          }
+        ]
+      },
+      {
+        "decision_id": "d4-sadik-khan-2009-cac",
+        "local_observation_id": "entity_janette_sadik_khan_2009",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_janette-sadik-khan-2009 already matches existing registry record entity_janette-sadik-khan-2009 (Janette Sadik-Khan, entity_type: person). Observation already resolves to this id.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p018_c0003",
+            "source_quote": "Voice of Janette Sadik-Khan Commissioner of New York City Department of Transportation"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "commissioner_of",
+            "subject_id": "entity_janette-sadik-khan-2009",
+            "object_id": "entity_nyc-dot",
+            "description": "Janette Sadik-Khan is identified as Commissioner of the New York City Department of Transportation in the May 2009 CAC meeting presentation.",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p018_c0003",
+                "source_quote": "Voice of Janette Sadik-Khan Commissioner of New York City Department of Transportation"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T21-03-44-590Z_1774507-e03cb3fd_canonicalize_2026-06-10t17-48-04-600z-1496766-6452eb74-ingest-2009-05-13-brt-1st2nd-cac1-entity-identity"
+}

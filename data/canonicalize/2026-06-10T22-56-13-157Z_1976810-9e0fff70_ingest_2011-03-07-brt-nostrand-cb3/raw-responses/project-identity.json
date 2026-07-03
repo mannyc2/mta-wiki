@@ -1,0 +1,97 @@
+{
+  "run_id": "2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:06:50.332Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d_001",
+        "local_observation_id": "project_nostrand_rogers_sbs_2011_cb3",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (project_nostrand-rogers-sbs) already matches the registry record of the same ID. The registry card for project_nostrand-rogers-sbs has the same project name ('Nostrand Ave / Rogers Ave Select Bus Service'), same project_type ('Select Bus Service'), same borough (Brooklyn), same source (2011_03_07_brt_nostrand_cb3), and same description of converting B44 Limited to SBS. The observation already resolves to this registry record, so no link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p001_c0004",
+            "source_quote": "Nostrand Ave/Rogers Ave Select Bus Service Community Board 3"
+          },
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p006_c0001",
+            "source_quote": "Nostrand SBS Project Features"
+          },
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p006_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before. SBS buses will have the same fare as the locals."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "capital_component_of",
+            "subject_id": "project_hwk1129-nostrand-reconstruction",
+            "object_id": "project_nostrand-rogers-sbs",
+            "description": "HWK1129 reconstruction of Nostrand Ave includes SBS work as part of the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p016_c0003",
+                "source_quote": "HWK1129: Reconstruction of Nostrand Ave, Flushing to Atlantic, including SBS work"
+              }
+            ]
+          },
+          {
+            "relation_kind": "capital_component_of",
+            "subject_id": "project_hwk1130-bus-stations-lanes-bedford-rogers",
+            "object_id": "project_nostrand-rogers-sbs",
+            "description": "HWK1130 builds bus stations and lanes on Bedford, Rogers, and Nostrand south of Atlantic as part of the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p016_c0005",
+                "source_quote": "HWK1130: Bus stations and lanes on Bedford, Rogers, and Nostrand South of Atlantic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d_002",
+        "local_observation_id": "project_hwk1129_nostrand_reconstruction",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (project_hwk1129-nostrand-reconstruction) already matches the existing registry record project_hwk1129-nostrand-reconstruction. Both have the same description (reconstruction of Nostrand Ave from Flushing to Atlantic including SBS work), same project_type (capital construction), same status (planned), and same source (2011_03_07_brt_nostrand_cb3). The observation already resolves to this ID.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p016_c0003",
+            "source_quote": "HWK1129: Reconstruction of Nostrand Ave, Flushing to Atlantic, including SBS work"
+          },
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p016_c0004",
+            "source_quote": "A horizontal bar chart for HWK1129. The first segment is labeled 'Final Design & Contracting'. The second, longer segment is labeled 'Construction'. An arrow points from the end of the 'Construction' segment to the text 'through 2014'."
+          }
+        ]
+      },
+      {
+        "decision_id": "d_003",
+        "local_observation_id": "project_hwk1130_bus_stations_lanes_bedford_rogers",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (project_hwk1130-bus-stations-lanes-bedford-rogers) already matches the existing registry record project_hwk1130-bus-stations-lanes-bedford-rogers. Both have the same label (HWK1130: Bus stations and lanes on Bedford, Rogers, and Nostrand South of Atlantic), same description, same source (2011_03_07_brt_nostrand_cb3), same project_type (capital construction), and same status (planned). The observation already resolves to this ID.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p016_c0005",
+            "source_quote": "HWK1130: Bus stations and lanes on Bedford, Rogers, and Nostrand South of Atlantic"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-658Z_2111393-d2fb4002_canonicalize_2026-06-10t22-56-13-157z-1976810-9e0fff70-ingest-2011-03-07-brt-nostrand-cb3-project-identity"
+}

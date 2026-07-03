@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T17-48-04-377Z_1496766-74d645bd_ingest_120418-brt-cb4-34th-street",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-10T19:17:16.386Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_route_m34_sbs_self_resolve",
+        "local_observation_id": "route_m34_sbs_2012_04_18",
+        "decision": "new",
+        "rationale": "The observation's base_record_id route_m34-sbs already exists as a fully-resolved registry record with matching payload details (M34 SBS on 34th Street, Manhattan, Select Bus Service). The registry record's source_ids already include 120418_brt_cb4_34th_street and its aliases include route_m34-sbs-2012-04-18 matching the observation's local_observation_id. The observation already resolves to its own base_record_id, so decision is new per canonicalization rules.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p005_c0003",
+            "source_quote": "M34-SBS 34th St Select Bus Service Javits - Ferry"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-543Z_1609875-ec8f4429_canonicalize_2026-06-10t17-48-04-377z-1496766-74d645bd-ingest-120418-brt-cb4-34th-street-route-identity"
+}

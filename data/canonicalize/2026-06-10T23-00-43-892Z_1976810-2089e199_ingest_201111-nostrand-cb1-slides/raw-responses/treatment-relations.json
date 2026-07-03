@@ -1,0 +1,205 @@
+{
+  "run_id": "2026-06-10T23-00-43-892Z_1976810-2089e199_ingest_201111-nostrand-cb1-slides",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:14:32.892Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate-bus-lanes-nostrand-201111",
+        "local_observation_id": "treatment_bus_lanes_nostrand_201111",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-lanes-nostrand-201111",
+            "description": "Dedicated Bus Lane on Nostrand Ave as part of Nostrand SBS project features",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p006_c0001",
+                "source_quote": "Nostrand SBS Project Features – From Flushing Ave to Farragut Rd"
+              },
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p006_c0002",
+                "source_quote": "Parking in midday, nights, and weekends; Travel Lane in AM and PM peak periods Travel Lane Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking Parking along the curb except at bus stops"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence explicitly identifies Dedicated Bus Lane as a Nostrand SBS Project Feature from Flushing Ave to Farragut Rd. Treatment is attached to project_nostrand-rogers-sbs which already has this relation in the existing registry.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p006_c0001",
+            "source_quote": "Nostrand SBS Project Features – From Flushing Ave to Farragut Rd"
+          },
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p006_c0002",
+            "source_quote": "Parking in midday, nights, and weekends; Travel Lane in AM and PM peak periods Travel Lane Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking Parking along the curb except at bus stops"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-bus-bulbs-nostrand-201111",
+        "local_observation_id": "treatment_bus_bulbs_stations_nostrand_201111",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-bulbs-stations-nostrand-201111",
+            "description": "SBS Stations with Bus Bulbs on Nostrand Ave as part of Nostrand SBS project features",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p007_c0001",
+                "source_quote": "Nostrand SBS Project Features – From Flushing Ave to Farragut Rd"
+              },
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p007_c0002",
+                "source_quote": "Local Bus Stop at curb New Shelter Fare Collection Machines Bus Bulb: Sidewalks at SBS stations will extend out to the bus lane. Buses will not need to pull in and out of traffic. Higher curbs on the SBS platform will allow for easier boarding."
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence explicitly identifies Bus Bulbs/Stations as Nostrand SBS Project Features from Flushing Ave to Farragut Rd. Treatment is attached to project_nostrand-rogers-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p007_c0001",
+            "source_quote": "Nostrand SBS Project Features – From Flushing Ave to Farragut Rd"
+          },
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p007_c0002",
+            "source_quote": "Local Bus Stop at curb New Shelter Fare Collection Machines Bus Bulb: Sidewalks at SBS stations will extend out to the bus lane. Buses will not need to pull in and out of traffic. Higher curbs on the SBS platform will allow for easier boarding."
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-off-board-fare-201111",
+        "local_observation_id": "treatment_off_board_fare_collection_201111",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_off-board-fare-collection-201111",
+            "description": "Off-board fare collection (pre-payment) as part of Nostrand SBS project features",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "1. Pay before you board by dipping MetroCard at sidewalk MetroCard machine or inserting coins at sidewalk coin machine 2. Take your proof of payment receipt 3. Enter through front or rear door of bus – no need to show receipt to the driver"
+              },
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p004_c0004",
+                "source_quote": "Pre-Payment"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence shows off-board fare collection as a Pre-Payment feature of the Nostrand SBS project slides presented to CB1. Treatment is attached to project_nostrand-rogers-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "1. Pay before you board by dipping MetroCard at sidewalk MetroCard machine or inserting coins at sidewalk coin machine 2. Take your proof of payment receipt 3. Enter through front or rear door of bus – no need to show receipt to the driver"
+          },
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p004_c0004",
+            "source_quote": "Pre-Payment"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-bus-signal-priority-201111",
+        "local_observation_id": "treatment_bus_signal_priority_201111",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-signal-priority-201111",
+            "description": "Bus Signal Priority as a feature of the Nostrand SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p004_c0002",
+                "source_quote": "Bus Signal Priority"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence shows Bus Signal Priority as a listed feature in the Nostrand SBS project slides. Treatment is attached to project_nostrand-rogers-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p004_c0002",
+            "source_quote": "Bus Signal Priority"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-sbs-stations-signage-201111",
+        "local_observation_id": "treatment_sbs_stations_signage_201111",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_sbs-stations-signage-201111",
+            "description": "SBS Stations, Branding, and Passenger Info as features of the Nostrand SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p004_c0005",
+                "source_quote": "Passenger Info"
+              },
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p004_c0006",
+                "source_quote": "Stations"
+              },
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p004_c0007",
+                "source_quote": "Branding"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence from the Nostrand SBS project slides shows Stations, Branding, and Passenger Info as features of the SBS project presented to CB1. Treatment is attached to project_nostrand-rogers-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p004_c0005",
+            "source_quote": "Passenger Info"
+          },
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p004_c0006",
+            "source_quote": "Stations"
+          },
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p004_c0007",
+            "source_quote": "Branding"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-11-52-714Z_2111393-8fd7209b_canonicalize_2026-06-10t23-00-43-892z-1976810-2089e199-ingest-201111-nostrand-cb1-slides-treatment-relations"
+}

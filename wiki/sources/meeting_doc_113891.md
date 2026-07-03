@@ -1,0 +1,187 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-113891"
+record_kind: "source"
+display_name: "Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Committees"
+source_id: "meeting_doc_113891"
+source_ids:
+  - "meeting_doc_113891"
+local_observation_id: "source_meeting_doc_113891"
+local_observation_ids:
+  - "source_meeting_doc_113891"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T12:17:29.259Z"
+submission_ids:
+  - "sub_e3d75d5d2adabdd8"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting minutes"
+  date: "May 22, 2023"
+  date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-05-22"
+    precision: "day"
+    raw_text: "May 22, 2023"
+  date_text: "Monday, May 22, 2023"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-05-22"
+    precision: "day"
+    raw_text: "Monday, May 22, 2023"
+  published_date_normalized: "2023-05-22"
+  published_date_precision: "day"
+  title: "Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Committees Monday, May 22, 2023"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_113891#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_113891"
+    source_path: "raw/sources/meeting_doc_113891/blocks.jsonl"
+    text_sha256: "sha256:f070fa17eeb536254b1cfdb349b9f514226662b10508297abdde531b817e5d3b"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_113891#p001_c0001"
+    page_number: 1
+    role: "date"
+    source_id: "meeting_doc_113891"
+    source_path: "raw/sources/meeting_doc_113891/blocks.jsonl"
+    text_sha256: "sha256:f070fa17eeb536254b1cfdb349b9f514226662b10508297abdde531b817e5d3b"
+    text_source: "raw_text"
+---
+
+# Minutes
+
+source_id: meeting_doc_113891
+citation: cite block ids exactly as shown in square brackets
+document: 94 block(s)
+
+## Page 1
+
+### [p001_c0001] Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Committees Monday, May 22, 2023
+[p001_c0002] Meeting held at 2 Broadway – 20 th Floor New York, New York 10004 9:30 am
+[p001_c0003] The following Committee members were present in person:
+[p001_c0004] Hon. Blanca López, Co-Chair Hon. Frank Borelli Jr. Hon. Gerard Bringmann Hon. Randolph Glucksman Hon. David Mack Hon. Vincent Tessitore, Jr. Hon. Neal Zuckerman
+[p001_c0005] The following Committee members attended via video:
+[p001_c0006] Hon. Samuel Chu, Co-Chair Hon. Norman Brown
+[p001_c0007] The following Committee members were absent:
+[p001_c0008] Hon. Michael Fleischer Hon. Midori Valdivia
+### [p001_c0009] Representing Long Island Rail Road:
+[p001_c0010] Catherine Rinaldi – Interim President Rob Free – Senior Vice President, Operations Lori Ebbighausen – Vice President, Corporate Safety Paul Dietlin – Vice President, Maintenance of Way
+### [p001_c0011] Representing Metro-North:
+[p001_c0012] Catherine Rinaldi - President Justin Vonashek – Senior Vice President, Operations Susan Sarch – Vice President, General Counsel & Secretary Shelley Prettyman – Vice President, System Safety Michael Loney - Vice President, Maintenance of Way
+[p001_c0013] The members of the Long Island Rail Road (“LIRR”) Committee met jointly with the members of the Metro-North Committee.
+[p001_c0014] Co-Chair López called the joint meeting to order.
+[p001_c0015] _1_
+
+## Page 2
+
+### [p002_c0001] PUBLIC COMMENTS:
+[p002_c0002] The following public speakers commented:
+[p002_c0003] Murray Bodin (in person) from Concerned Grandparents said that rules were not enforced in the case of the train derailment in the Midwest where there was a hotbox but no one did anything about it. He said that the problem is non-enforcement of rules. People need consistency of information.
+[p002_c0004] Jason Anthony (in person) questioned why they will be updating M9 trains instead of obtaining M9A trains, and that he believes the M9s should be retired. There should be audio announcements at all stations that alerts passengers that trains are arriving; special lighting to accommodate those passengers who cannot hear; more elevators to comply with ADA and more officers in key stations; discounts to passengers in the summer to encourage ridership; summer service to Long Beach from Atlantic Terminal; an elevator be built to provide access from the LIRR platform at East New York to the L subway station above; and more train service to and from Hunterspoint Avenue and Grand Central during the fourth of July weekend.
+[p002_c0005] Alita Dupree (via audio) said that OMNY work needs to continue and that there needs to be renewable energy sources for railroads. She stated that there should be more ways to show how to use the railroad to get around Long Island.
+[p002_c0006] Charlton D'Souza (via video), Passengers United President, expressed an issue with the new combo ticket where LIRR conductors punch all the holes on the ticket, which shows Grand Central as the final destination, and the ticket is not accepted on Metro-North. More training or an email on the proper procedure for handling these combo tickets needs to be provided. When a bridge on the New Haven line is opened, there are signal problems and Amtrak trains are held up. Communications need to be improved, especially on Sundays with thousands of riders coming from Boston. There is no connection with Shore Line East out of New London to the New Haven line on the last train leaving around 9 pm. He noted that Connecticut is looking to cut service on the New Haven line and adjust midday trains, which is not acceptable as Connecticut is part of the MTA service region. There needs to be improved and increased service in Connecticut, and even express trains from Grand Central to Connecticut to increase ridership and deter people from driving their cars.
+[p002_c0007] Jack Nierenberg (in person), Passengers United Vice President, said he is pleased that the last train to Greenport has been changed back from 5:04 pm to 5:39 pm, but adds a request that the train connecting the 2:31 pm train from Penn Station be changed back to 3:55 pm to meet the demand of Ronkonkoma and North Fork riders to avoid crowding on the 5:39 train. He stated that service to Montauk needs to be increased using the Central Branch and suggested lowering the fares across the board to increase ridership. Combo tickets need to be clearly labeled to indicate the destination or say LIRR territory or Metro-North territory. The ticket machines at Grand Central should dispense both Metro-North and LIRR tickets. The railroads should consider using gates or turnstiles at each station.
+[p002_c0008] _2_
+
+## Page 3
+
+[p003_c0001] Kara Gurl (in person), PCAC Planning and Advocacy Manager, said riders have been experiencing some ups with the new station access to the east side and some downs with the new service overhaul. A recent survey was performed by LIRRCC, which showed that since the new schedules began, average travel time increased by eleven minutes and more riders needed transfers, which increased from 34% pre-change to 60% due to loss of direct service and end of timed and cross-platform connections. Reinstating timed connections is key to ensuring riders have a smoother trip. Overcrowding on peak trains to and from Penn Station remains an issue. She expressed gratitude for both railroads to be operating at full PTC functionality and new LIRR information screens on the upper level of Grand Central.
+[p003_c0002] Andy Quito (via audio) commented that late night service from Penn Station, especially after events at Madison Square Garden, needs improvement. He stated that timed connections need to be brought back, especially on the weekends when service is reduced. Combo tickets should clarify the origin station and the end station with LIRR and Metro-North after the name of the station as appropriate. The waiting areas at Grand Central need more benches for riders with MTA police enforcing so there are no homeless individuals sleeping on the benches.
+[p003_c0003] The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the public comments.
+### [p003_c0004] APPROVAL OF MINUTES:
+[p003_c0005] Upon motion duly made and seconded, the Committee approved the minutes of the April 24, 2023 Joint LIRR/Metro-North Committee Meeting.
+### [p003_c0006] METRO-NORTH AND LIRR 2023 WORK PLANS:
+[p003_c0007] There were no changes to LIRR or Metro-North Work Plans. The 2023 Metro-North and LIRR Work Plans are filed with the records of this meeting.
+### [p003_c0008] PRESIDENT'S REPORTS:
+[p003_c0009] President Rinaldi commented that when someone calls you a broken record, it is usually not a good thing, but we kind of like them. In fact, a lot of records have been falling by the wayside lately on both sides of Long Island Sound. On Tuesday, May 9, both Metro-North and LIRR shattered their respective one-day post-pandemic ridership records, with Metro-North breaking through the 200,000 ceiling for the first time since March 6, 2020 with a little more than 205,000 riders. That same day, LIRR surpassed its previous record by almost 5,000, only to break it again the following day, May 10, with a new record total of almost 222,000 customers. That week, both agencies had their best Mondays. Metro-North also set COVID-era ridership records in average weekday, average Tuesday-Thursday and average weekend. It also marked the first time that LIRR broke the 200,000-customer mark on four days in a given week, post COVID. As an encore, those one-day records were once again shattered by both railroads the following week, and on the same day. President Rinaldi reported that the May 16 post-COVID record total for Metro-North came in at 207,484 and LIRR at 227,489. As of last Thursday, LIRR had surpassed the 200,000-daily customer mark 34 times since the introduction of service to Grand Central Madison ("GCM").
+[p003_c0010] _3_
+
+## Page 4
+
+[p004_c0001] President Rinaldi stated that Friday's ridership on LIRR was 208,310, which was the best Friday since the pandemic. Yesterday was the best Sunday since the pandemic, and last week was the first time LIRR reached 200,000 riders or more every single day Monday through Friday since the pandemic. While ridership still is not at pre-COVID levels, it is fantastic to see, and it is the closest we have come. We are now regularly at 70-plus percent of daily benchmarks from 2019.
+[p004_c0002] President Rinaldi stated that we are closely monitoring the events in Hartford, where the Connecticut budget proposal under consideration includes a reduction of service to 86% of pre-COVID weekday service levels. Governor Hochul rightly directed that no service decreases should take place in New York as part of the New York budget, and we will make every effort to ensure that New York customers do not feel the impact of any changes that are included in the Connecticut budget. President Rinaldi indicated that we have been in close contact with the Connecticut Department of Transportation ("CDOT") and their new commissioner with our concerns about the budget proposal because we value our partnership with CDOT and the state of Connecticut. We will continue to do whatever we can to provide all our customers with the safe and reliable service that they deserve.
+[p004_c0003] President Rinaldi said that last month we reported that some brave Metro-North employees acted together to rescue a three-year-old autistic boy from live track and third rail in Tarrytown. Their quick thinking and heroism saved the toddler from near-certain tragedy and rightfully caught the attention of both local and national media. Our heroes of the diamond also took notice and, prior to their May 1 game against the Cleveland Guardians, the Yankees celebrated the team that saved the boy with an invitation to watch batting practice and meet both the players and Bomber's skipper Aaron Boone. The team was also introduced to the crowd and felt the love and gratitude as they were showered by a good type of "Bronx cheer." President Rinaldi expressed her pride in the employees and thanked the Yankees organization for creating such a special experience for some really deserving Metro-North employees.
+[p004_c0004] To celebrate the latest success story in an ongoing effort to enhance and expand parking options for Upper Harlem Metro-North customers, President Rinaldi shared that she was joined by the Westchester and Putnam County executives and other elected officials on May 9 as they cut the ribbon on a brand-new parking facility a few blocks from Croton Falls station. President Rinaldi noted that to say the 450-space lot has long been needed is an understatement. In the past, commuters who were shut out of the much smaller village lot would have little choice but to join a long line of cars parked along the shoulder of busy State Route 202, which was an unattractive and unsafe option. This newer, safer parking area also has EV chargers for up to 10 cars and room to accommodate an additional 250 cars. To safely guide customers from the lot to the station, new sidewalks and lighting have also been installed along Croton Falls Road. We just know that this investment in the community, in safety, convenience and sustainable transportation will reap big dividends for years to come.
+[p004_c0005] Having lived a full and very useful life for the past 127 years, the Norwalk River Railroad Bridge is ready for retirement. President Rinaldi reported that on May 12, she joined Connecticut Governor Ned Lamont, Senators Murphy and Blumenthal, and other state, local, and federal officials in breaking ground on a brand-new, state-of-the art vertical lift railroad bridge with built-in redundancies in the form of a pair of two-track decks that move independent of one another.
+[p004_c0006] _4_
+
+## Page 5
+
+[p005_c0001] That means that a mechanical issue will not necessarily impact service to the extent it has in the past. That, combined with increased maintainability, higher vertical clearance, and the ability to operate at faster speeds over the new bridge means greater operational flexibility and better, more reliable service. The current span, commonly referred to as “Walk Bridge” is one of the oldest moveable bridges along the Northeast Corridor, built during the administration of President Grover Cleveland. Amtrak and Metro-North New Haven line service along this stretch is way too vital to both the regional and national transportation network for this project to be delayed any longer. President Rinaldi stated that she would be remiss if she did not give a great big shout-out to all the Metro-North departments who have collaborated for years with Connecticut on readiness projects associated with the bridge replacement. This includes, most notably, construction of the brand-new CP 243 interlocking east of the bridge, which is scheduled to open later this year and allow for the two track outages necessary to replace the bridge. President Rinaldi also noted that significant improvements have been made to Dock Yard allowing for additional train storage space and quicker, easier equipment turns as well as significant investment in the bridge itself to keep it operating during this time.
+[p005_c0002] President Rinaldi announced that as Metro-North continues to set post-pandemic ridership records this year – the 40th anniversary year – it is also rebranding select locomotives with special colors and designs to celebrate the railroad’s four decades of public service. About a week ago, crews at the North White Plains shop wrapped locomotive 208 in Metro-North’s original silver, blue and red design. This is the first of five locomotives to be vinyl wrapped as part of the railroad’s “Heritage Series.” The first three brandings pay homage to the looks sported by Metro-North’s FL9 locomotives from its 1983 founding until the last one was retired in April of 2007. Four additional designs are forthcoming, and some will be wrapped in the motifs of Metro-North’s predecessor railroads like New York Central, Penn Central and Conrail. President Rinaldi expressed hope that you may be one of the lucky customers to catch the freshly wrapped engines out and about the territory.
+[p005_c0003] President Rinaldi gave special recognition for one more Metro-North employee who earlier this month was named by Progressive Railroading Magazine as one of its 25 rising stars of 2023. Metro-North’s own Deputy of Operations, Planning and Analysis, Sean Fahey, was recently named to this exclusive list of up-and-coming railroaders under 40. We could not be more delighted for Sean. Sean joined Metro-North full time in 2009 as a customer service specialist, and soon took on increasingly vital roles in our operations scheduling group until ascending to his current position in 2020. Sean is passionate about designing the most effective, efficient and reliable train schedules imaginable, and his rock star skills have been invaluable as the organization moves towards a more data-driven approach to transportation solutions. The magazine will honor Sean and his fellow recipients at a virtual ceremony in July and in their September print edition. President Rinaldi thanked Sean for making Metro-North so proud.
+[p005_c0004] On May 8, a new pathway in and out of Grand Central debuted in the Terminal’s Biltmore Room with two brand-new escalators and an elevator leading between the legendary Biltmore Room space and GCM. More recently home to a newsstand and flower shop, the Biltmore Room - while still a useful cut-through to 43rd Street – no longer served the same purpose as it did when it was a popular arrival area for long-distance travelers on the old New York Central. The new Biltmore connection provides LIRR customers with direct escalator and elevator access between
+[p005_c0005] _5_
+
+## Page 6
+
+[p006_c0001] GCM and Grand Central Terminal's Main Concourse level for the first time. It will save LIRR riders even more time and maximize customer flow through both terminals. The new elevator provides additional flexibility and access for our ADA customers moving through the Grand Central Complex. These new options will also divert foot traffic away from a potentially more crowded route at the Dining Concourse connection. LIRR customers can now enjoy the historic architecture of the Biltmore Room as part of their daily experience. The connection also heightens safety for customers of both LIRR and Metro-North by providing a vital connection between the Joint Incident Command Post and GCM, increasing operational awareness by decreasing response times. Based on a December 2020 pedestrian flow analysis, it is estimated that approximately 22% of GCM passengers will exit through the Biltmore connection.
+[p006_c0002] President Rinaldi shared that new timetables went into effect today for LIRR. LIRR will once again be offering increased service to and from the East End to accommodate the anticipated summer crush. The Cannonball and an additional train to Greenport return. LIRR is also providing an extra eastbound train to Montauk on Thursdays. Coming back west, LIRR has five additional service opportunities from the Hamptons and Montauk on Sundays and holidays, including the westbound Cannonball to Penn Station. There is also an additional Monday morning train from Montauk to Hunterspoint Avenue. LIRR will be running some extra weekend trains to Long Beach and Freeport for Nassau County beach goers. Adding to all the seasonal fun are summer deals offered by MTA Away to some of Long Island's finest destinations including day-trip package deals to Gold Coast mansions, the Montauk Lighthouse, Fire Island and Greenport lighthouse cruises, and North Fork wineries. The summer tours' kick-off is an escorted visit to Calverton National Cemetery on Saturday, May 27 for those who wish to honor their loved ones for Memorial Day, and first includes a visit to a local florist.
+[p006_c0003] President Rinaldi reported that this past Friday, LIRR Senior Vice President of Operations, Rob Free was joined by local leaders to announce South Fork Commuter Connection service on summer Fridays will operate for the very first time since its 2019 debut. The South Fork Commuter Connection is a coordinated weekday train and shuttle bus service between Speonk and Montauk. For a $3.25 flat fare, customers in the morning can park at stations west of the Shinnecock Canal and take the train farther east to stations including Southampton, Bridgehampton, and East Hampton, where they will transfer onto free shuttle buses that will take them to and from nearby employment centers. Before LIRR redesigned schedules for the opening of GCM and introduced the largest service increase in its history, these Friday trains would have been suspended from Memorial Day through Labor Day. Now, they will operate year-round beginning this Friday. Given finite equipment levels and the fact that LIRR operates on a single track between Patchogue and Montauk, there are limits to the amount of service available east of Speonk. However, LIRR has listened to its customers and remains as committed as ever to expanding its East End service as much as operationally possible and this announcement is just the latest manifestation of that goal.
+[p006_c0004] Shovels are now in the ground at the first four of nine total LIRR stations about to receive significant accessibility upgrades as part of LIRR's latest ADA station improvements package. Amityville, Copiague, Lindenhurst, and Massapequa Park are the first up and, sometime next year, will be the first to achieve beneficial use from the project, which will bring all nine stations into compliance with the ADA via new and/or replaced elevators, sidewalk and path of travel
+[p006_c0005] _6_
+
+## Page 7
+
+[p007_c0001] improvements. Structural and architectural improvements, lighting, signage and electrical enhancements are included in the design-build contract. Valley Stream, Laurelton, Locust Manor, St. Albans and Auburndale are slated to receive these upgrades. Substantial overall project completion is scheduled for September 2025.
+[p007_c0002] President Rinaldi reported that on Saturday, May 13, the Suffolk County Fire Academy dedicated its railroad First Responder Training Simulator to one of LIRR's own. LIRR Transportation's Senior Director of Project Planning Tom Kost, Jr. and his family joined former colleagues and friends at the Yaphank site to officially rename the safety facility after Tom's late dad, Thomas E. Kost, a former Lindenhurst Volunteer Fire Department chief and 30-year LIRR employee. For decades, LIRR and Suffolk Fire Academy have partnered to provide vital training to the emergency responder community. This newly dedicated simulator includes sections of track and station platform, as well as a donated pair of train cars for a hands-on training experience. President Rinaldi commented that it is a beautiful and lasting tribute to a man of action and honor, and a source of pride for the entire Kost and LIRR families.
+[p007_c0003] Each year LIRR T.R.A.C.K.S. Program (Together Railroads and Communities Keeping Safe), a joint venture between LIRR's Corporate Safety department and the MTA Police, sponsors a safety contest for area school children. The 2022-2023 contest challenged kids to create ideas to be included in the program's activity book, which is distributed at school programs and other safety events. The book features the new T.R.A.C.K.S. superhero, "Safety Sam," the focus of last year's contest. It is a great idea for student engagement and an effective way to get kids thinking about railroad safety. Vice President of Corporate Safety Lori Ebbighausen will give a little more detail about this contest in her safety report.
+[p007_c0004] President Rinaldi concluded her report by announcing that last week was National Police Week and expressed her gratitude for the men and women in blue for the extremely difficult job that they perform every day to keep us safe. This past Thursday, the MTAPD held its Awards and Promotion ceremony in GCT's Vanderbilt Hall and echoed the pride that the families of the honorees felt during this ceremony. President Rinaldi stated that we owe our police a huge debt of gratitude and she expressed her personal gratefulness for their continued partnership on all matters involving the safety of our employees and customers. On behalf of the MTA family, President Rinaldi congratulated and thanked all the award recipients and those freshly promoted.
+[p007_c0005] Board Member Zuckerman asked a question regarding service cuts in Connecticut and how it would look if we continued to maintain normal levels of service as part of New York's plan. President Rinaldi responded that Metro-North has always operated the railroad as an integrated service, and we do not view Connecticut customers any differently. Metro-North has continued to work closely with the State of Connecticut to develop a tailored schedule to meet the reduction levels included in the Connecticut budget proposal from the Connecticut Governor, while holding our New York riders harmless. When Metro-North ran the reduced service levels during COVID, around the mid-80s as a percentage of pre-COVID service, Metro-North saw roughly 66% of pre-COVID levels during AM peak and 55% of pre-COVID levels during PM peak, which is quite different from the current levels of mid-90s of pre-COVID service levels in the AM peak and close to 90% in the PM peak.
+[p007_c0006] _7_
+
+## Page 8
+
+[p008_c0001] In response to a question from Board Member Glucksman regarding the timing of the anticipated service changes in Connecticut, President Rinaldi stated that this is a Connecticut process. President Rinaldi believes that Connecticut runs on a July 1 fiscal year, so anticipates that these service reductions would take effect in the fall sometime, after any budget cuts.
+### [p008_c0002] OPERATING REPORTS:
+[p008_c0003] Metro-North Senior Vice President Vonashek said that Metro-North's Operating Report begins on page 14 of the Key Performance Metrics report. Systemwide on time performance ("OTP") for April was 96.3%, which is above goal of 94%. Year to date ("YTD") OTP through April also remains above goal at 97.5%. There were four major incidents that negatively impacted April OTP. Two of the incidents were discussed last month, including the CSX derailment and the CP106 battery charger power failure. The March mean distance between failures ("MDBF") was above 389,000 miles, surpassing the monthly goal of 175,000 miles.
+[p008_c0004] LIRR Senior Vice President Free said that LIRR's April OTP was 93.4%, below the goal of 94%, while YTD OTP as of April was 94.9%, above goal of 94%. Five branches operated at or above goal for the month of April and eight branches operated at or above goal YTD as of April. There were 18 major events which resulted in 10 or more late trains in the month of April. The most significant was loss of signal power in Jamaica on April 28 during the PM rush hour. This incident negatively impacted OTP by 0.3%. The MDBF for the month of March was 188,085 miles, and YTD MDBF as of March was 172,985 miles, both above the goal of 170,000 miles.
+[p008_c0005] LIRR completed 99.7% of its trips for the month of April. On Saturday, June 10, for the Belmont Stakes, customers are urged to look at the TrainTime app and the website as there are some schedule adjustments, particularly on the Hempstead branch and at Elmont station. On Sunday June 11 and Saturday June 17, crossing renewal work will require some schedule adjustments. This Sunday, which is Memorial Day, marks the beginning of summer service. Updated schedule information can be found at the web site or the TrainTime app.
+[p008_c0006] The complete LIRR and Metro-North reports are filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentations.
+### [p008_c0007] SAFETY REPORT:
+[p008_c0008] Metro-North Vice President Prettyman said that Metro-North's safety report is found on page 18 of the Key Performance Metrics report. For the 12-month reporting period ending March 2023 compared to the prior 12 months ending March 2022, the customer injury rate decreased from 2.07 to 2.04 per one million customers. The 12-month rolling rates have been dropping over the past five months. The reportable employee lost time injury rate increased from 2.08 to 2.22 per 200,000 working hours. The 12-month rolling rates held steady this month after a slight uptick the prior month. Vice President Prettyman highlighted the recent safety initiative of the Harman Yard spring cleanup, held on May 10. These cleanups enhance safety for employees by removing slip, trip and fall hazards. At this event, 18 employees from multiple departments came together to remove over 100 bags of various debris. Vice President Prettyman also noted some
+[p008_c0009] _8_
+
+## Page 9
+
+[p009_c0001] accomplishments of the Office of System Safety's Environmental Compliance Services team for year to date, which are summarized in the Committee book. This team conducts field inspections at yards, shops, substations, and other facilities to assess compliance with hazardous waste, stormwater, petroleum bulk storage, and spill response requirements. Ninety-seven inspections have been completed for the year to date. This team also coordinates waste reduction efforts, maintenance of stormwater systems and other initiatives, which are summarized in the Committee book.
+[p009_c0002] LIRR Vice President Ebbighausen stated that LIRR's safety report through March 2023 is found on page 28 of the Key Performance Metrics book. The reportable customer injury rate has decreased again from 2.80 to 2.11 per one million customers. The employee reportable lost time injury rate remained flat at approximately 4.25 per 200,000 hours worked. Vice President Ebbighausen discussed the safety contest and the wonderful efforts of the communities that LIRR serves. T.R.A.C.K.S. is a joint venture with the MTAPD since 1985, which partners with different schools, camps, day cares, and community groups. In 2016, to further engage with the young in these communities, LIRR initiated the first school safety contest, which varied over the years to safety slogans, to the creation of our safety superhero last year. This year, the students created an activity book. Vice President Ebbighausen expressed her deep appreciation to all of the young people and the schools that participated, all of our community partners, and especially the winners. The winners are: at the elementary school level, from the Syosset school district, Village Elementary School, with a picture to color, Uma Pal Hafeez (2nd grade) and her teacher Ms. Kane; at the middle school level, from the Patchogue Medford school district, Oregon Middle School, with the word search, Alysiana Montanez (7th grade) and her teacher Mrs. Poulis; at the high school level, from the Syosset school district, Syosset High School, with a word scramble Zoey Chiu (9th grade) and her teacher Mrs. Mihalatos. Vice President Ebbighausen further acknowledged the LIRR team that supported the program, Linda Katz and Chrisann Fabio who spearheaded the contest and worked closely with the creative team from MTA headquarters led by Barbara Bosse, Ricky Sethiadi, Moti Asif, and Sophie Ong. The Safety Activity Book will be used as a promotional handout during T.R.A.C.K.S classroom training and special events.
+[p009_c0003] The full safety reports are filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentations.
+### [p009_c0004] MTAPD REPORT:
+[p009_c0005] MTAPD Chief of Police John Mueller said that for both railroads combined, there were 27 major felonies. Out of the 27 felonies, larcenies continue to plague us at 11 out of 27 or 41%. Seven of those were perpetrated on the train and 4 were in stations. MTAPD has continued to get the message out to customers to not leave any unattended property. There was a medal day last week along with a promotion ceremony. Chief Mueller expressed his appreciation for everyone at the table for their support of the MTAPD. He said that would not happen without the Board and Chairman Janno Lieber. Videos can be accessed on the MTA website showcasing the incredible work done by the men and women of the MTAPD.
+[p009_c0006] _9_
+
+## Page 10
+
+[p010_c0001] Board Member Mack commented that while he was unable to attend the promotion ceremony last week, he expressed the need for more men and women in our system to support safety. Board Member Mack complimented Chief Mueller on his cooperation with the Nassau and Suffolk PDs. He urged that they need to recruit more men and women to join the ranks.
+[p010_c0002] Board Member Bringmann noted an arrest made this past week for the murder that occurred on the Ronkonkoma train in February last year. He commended the MTAPD for their coordination with Suffolk PD in their efforts to bring this person to justice.
+[p010_c0003] The MTAPD report is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of Chief Mueller's presentation.
+### [p010_c0004] INFORMATION ITEMS:
+[p010_c0005] President Rinaldi noted one joint Metro-North/LIRR information item: (a) LIRR/Metro-North PTC Implementation Update, which is in the Committee book.
+[p010_c0006] President Rinaldi noted the following three Metro-North information items: (a) Final Review of 2022 Operating Budget Results; (b) Track Program Quarterly Update; and (c) proposed conveyance of a permanent easement to New York State Parks and the New York City Department of Environmental Protection for the Breakneck Connector Trail and Bridge, which will be an action item for the Finance Committee. These information items are in the Committee book.
+[p010_c0007] President Rinaldi noted the following three LIRR information items, which are in the Committee book: (a) Final Review of 2022 Operating Budget Results; (b) Summer Service and Trackwork Programs; and (c) Maintenance of Way Quarterly Update.
+[p010_c0008] The details of the information items are contained in reports filed with the records of this meeting.
+### [p010_c0009] FINANCE REPORTS:
+[p010_c0010] President Rinaldi reported that the Finance Reports for each railroad are contained in the meeting material.
+### [p010_c0011] PROCUREMENT:
+[p010_c0012] MTA Acting Assistant Deputy Chief Procurement Officer Omar Messado reported on one joint procurement item for Metro-North and Staten Island Rapid Transit Operating Authority ("SIRTOA") (collectively, the "Agencies"). Board approval will be requested to award a non-competitive negotiated miscellaneous service contract in the not-to-exceed amount of $5,511,300 to the firm Laser Tribology BV ("LT") for the lease of laser modules. The two-year lease with a one-year option will enable the Agencies to use cutting-edge laser technology to conduct railhead-based cleaning for the removal of leaf debris and contaminants from the top of rail surfaces. Each year the Agencies experience hundreds of slip/slide events caused by leaves falling on the tracks
+[p010_c0013] _10_
+
+## Page 11
+
+[p011_c0001] and depositing harmful residue on the rails, which adversely affects the train's ability to stop and can lead to wheel damage, the removal of trains from passenger service or derailments. The lasering process is expected to improve the Agencies' performance by more efficiently removing the source of the slip/slide problem, which will have a direct positive impact on safety, reliability, and service delivery. This service contract will be funded by each Agency's Operating Budget.
+[p011_c0002] Upon motion duly made and seconded, the Committee recommended approval of the procurement item.
+[p011_c0003] The details of this procurement are contained in reports filed with the records of this meeting.
+[p011_c0004] Board Member Glucksman commented that at the Metro-North Commuter Council last week, there was a discussion regarding the lack of paper timetables, and a request for a limited quantity of them for those without a smartphone. As such, he is requesting that limited quantities of paper timetables be made available.
+[p011_c0005] Board Member Bringmann commented that the same request is being made on behalf of LIRR that limited quantities of paper timetables be available in the major stations such as Penn Station, terminal stations, and some major stations such as Hicksville, Ronkonkoma, etc.
+### [p011_c0006] ADJOURNMENT:
+[p011_c0007] The Committee unanimously voted to adjourn the meeting.
+[p011_c0008] Respectfully submitted,
+[p011_c0009] _Susan Sarch Vice President, General Counsel & Secretary Metro-North Commuter Railroad Company_
+[p011_c0010] _Haley Stein Vice President, General Counsel & Secretary The Long Island Rail Road Company_
+[p011_c0011] _11_

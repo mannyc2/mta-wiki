@@ -1,0 +1,310 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-100346"
+record_kind: "source"
+display_name: "NYCT Committee Actions and Presentations Summary - November 2022"
+source_id: "meeting_doc_100346"
+source_ids:
+  - "meeting_doc_100346"
+local_observation_id: "source_meeting_doc_100346"
+local_observation_ids:
+  - "source_meeting_doc_100346"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T19:32:37.356Z"
+submission_ids:
+  - "sub_c5dbfa8879ae7996"
+payload:
+  authority_tier: "board_material"
+  content_type: "Board action staff summaries"
+  date_text: "November 2022"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-11"
+    precision: "month"
+    raw_text: "November 2022"
+  published_date_normalized: "2022-11"
+  published_date_precision: "month"
+  publisher: "MTA New York City Transit"
+  title: "NYCT Committee ACTIONS and PRESENTATIONS SUMMARY for NOVEMBER 2022"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_100346#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_100346"
+    source_path: "raw/sources/meeting_doc_100346/blocks.jsonl"
+    text_sha256: "sha256:04dcea8c2455c6aa6135f8dd933dc75b8fa5dcd50fe3374d0bfa6cba816c9f35"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0006"
+    evidence_id: "meeting_doc_100346#p004_c0006"
+    page_number: 4
+    source_id: "meeting_doc_100346"
+    source_path: "raw/sources/meeting_doc_100346/blocks.jsonl"
+    text_sha256: "sha256:63c07033ea2e3a1495819706372e0449bfe7f7df92888860eeaa5495a7557b94"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0001"
+    evidence_id: "meeting_doc_100346#p004_c0001"
+    page_number: 4
+    source_id: "meeting_doc_100346"
+    source_path: "raw/sources/meeting_doc_100346/blocks.jsonl"
+    text_sha256: "sha256:7cbe6576ff8b560a393192800b05962ff53b79bee356e1252e7128c616960751"
+    text_source: "raw_text"
+---
+
+# Board action staff summaries
+
+source_id: meeting_doc_100346
+citation: cite block ids exactly as shown in square brackets
+document: 145 block(s)
+
+## Page 1
+
+### [p001_c0001] NYCT Committee ACTIONS and PRESENTATIONS SUMMARY for NOVEMBER 2022
+[p001_c0002]
+
+```text
+Responsible Department Vendor Name Total Amount Summary of action NYCT JBA Change Management Corp $31,384,369 Consulting services for improving the maintenance of Track, Signal, Power and Infrastructure assets. NYCT Transit Sourcing Services $14,830,000 ION for 10,000 Subway Car Wheels NYCT Nova Bus $230,715,000 Exercise options for 289 low -floor 40-foot diesel buses New Flyer America NYCT Cubic Transportation Systems, Inc. $27,500,00 Modify the New Fare Payment System – One Metro New York contract to implement software and hardware enhancements that will unify the Metro-North Railroad , Long Island Rail Road, and NYC Transit Configurable Vending Machine designs, streamline maintenance and Revenue Collection activities, upgrade the communication switch for more efficient and flexible operations, and provide improvements to both internal and external security measures.
+```
+
+## Page 2
+
+> [p002_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p002_c0002] New York City Transit Procurements
+[p002_c0003] Louis Montanti , MTA Deputy Chief Procurement Officer – Procurement Operations
+
+## Page 3
+
+### [p003_c0001] PROCUREMENTS
+[p003_c0002] The Procurement Agenda this month includes 5 actions for a proposed estimated expenditure of $304.4M.
+
+## Page 4
+
+[p004_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department MTA Procurement Department Head Name Kuvershen Ayer Department Head Signature Kuvershen Ayer Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 11/28/22 2 Board 11/30/22
+```
+[p004_c0002]
+
+```text
+November 22, 2022 Department Department Head Name Department Head Signature Internal Approvals Approval Approval X President NYCT X Deputy CFO 11/22/22 X COO X Subways X Law X Diversity/Civil Rights
+```
+### [p004_c0003] Internal Approvals (cont.)
+[p004_c0004]
+
+```text
+Order Approval Order Approval Order Approval Order Approval
+```
+### [p004_c0005] PURPOSE
+[p004_c0006] To obtain approval of the Board to award various contracts and purchase orders, and to inform the NYC Transit Committee of these procurement actions.
+### [p004_c0007] DISCUSSION
+[p004_c0008] NYC Transit proposes to award Noncompetitive procurements in the following categories:
+[p004_c0009]
+
+```text
+Schedules Requiring Majority Vote: # of Actions $ Amount Schedule F: Personal Service Contracts 1 $ 31.4 M Schedule I: Modifications to Purchase and Public Works Contracts 1 27.5 M SUBTOTAL 2 $ 58.9 M
+```
+[p004_c0010] NYC Transit proposes to award Competitive procurements in the following categories:
+[p004_c0011]
+
+```text
+Schedules Requiring Majority Vote: # of Actions $ Amount Schedule I: Modifications to Purchase and Public Works Contracts 2 $ 230.7 M SUBTOTAL 2 $ 230.7 M
+```
+[p004_c0012] NYC Transit proposes to award Ratifications in the following categories:
+[p004_c0013]
+
+```text
+Schedules Requiring Two-Thirds Vote: # of Actions $ Amount Schedule D: Ratification of Completed Procurement Actions 1 $ 14.8 M SUBTOTAL 1 $ 14.8 M TOTAL 5 304.4 M
+```
+[p004_c0014] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p004_c0015] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p004_c0016] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+
+## Page 5
+
+### [p005_c0001] BOARD RESOLUTION
+[p005_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p005_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p005_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p005_c0005] NOW, the Board resolves as follows:
+[p005_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p005_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p005_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p005_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p005_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p005_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+
+## Page 6
+
+### [p006_c0001] New York City Transit
+[p006_c0002] NOVEMBER 2022
+### [p006_c0003] LIST OF NONCOMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p006_c0004] Procurements Requiring Majority Vote:
+### [p006_c0005] F. Personal Service Contracts
+[p006_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p006_c0007] 1. JBA Corporation Staff Summary Attached Two Years $31,384,369 Contract # SSE 388617
+[p006_c0008] Approval to award a two-year, personal service contract for consulting services for the NYC Transit Department of Subways, Division of Maintenance of Way.
+### [p006_c0009] I. Modifications to Purchase and Public Work Contracts
+[p006_c0010] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p006_c0011] 2. Cubic Transportation Systems, Inc Staff Summary Attached 13 Years, 7 months $27,500,000 Contract # A34024 AWO 8
+[p006_c0012] New Fare Payment System – One Metro New York: Modification to implement software and hardware enhancements that will unify the Metro-North Railroad, Long Island Rail Road, and NYC Transit Configurable Vending Machine designs, streamline maintenance and Revenue Collection activities, upgrade the communication switch for more efficient and flexible operations, and provide improvements to both internal and external security measures.
+
+## Page 7
+
+### [p007_c0001] Staff Summary
+### [p007_c0002] Page 1 of 2
+[p007_c0003]
+
+```text
+Item Number 1 Department: MTA Procurement, Kuvershen Ayer, CPO Internal Approvals Order Approval Order Approval 1 Materiel 6 President 2 X Law 3 X DDCR 4 X Subways 5 CFO
+```
+[p007_c0004]
+
+```text
+SUMMARY INFORMATION Vendor Name JBA Change Management Corporation Contract No. SSE 388617 Description Consulting Services for NYC Transit Department of Subways, Division of Maintenance of Way Total Amount: $31,384,369 Contract Term (including Options, if any) 2 Years Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Unique Source Funding Source Operating Capital Federal
+```
+### [p007_c0005] Purpose
+[p007_c0006] It is requested that the Board approve the award of a non-competitive two-year, personal service contract to JBA Change Management Corporation (“JBA”) pursuant to the All-Agency Service Contract Procurement Guidelines, Article III-C(5), for consulting services for the NYC Transit Department of Subways (“Subways”), Division of Maintenance of Way (“MOW”) that will build on its previous work and focus on longer-term preventative work and maintenance strategy.
+### [p007_c0007] Discussion
+[p007_c0008] Subways requested this consultant engagement in order to build on prior work performed by JBA under the Subway Action Plan (“SAP”) and increase the overall subway system’s reliability and safety. JBA is uniquely qualified to perform the work under this contract due to the fact that this work builds on and is an extension of two years’ worth of work already performed by JBA under the SAP. From 2017 to 2019, JBA was hired under the auspices of the SAP to help MOW develop and implement new processes, methods, materials, and tools to improve maintenance and inspections with the overall goal of reducing major subway incidents. As these incidents have decreased significantly, the effort under this contract will build on JBA’s previous work and guide MOW in improving equipment inspections and developing maintenance and monitoring programs based on best industry practices.
+[p007_c0009] MOW’s subdivisions of Track and Signals have recently lost a considerable number of personnel through attrition, which contributed to an overall loss of institutional knowledge. During the pandemic, the focus was on staff safety and service delivery. Engaging this consultant will ensure that the prior investment cited above is preserved and expanded upon.
+[p007_c0010] Under this contract, JBA will be tasked with improving the maintenance of track, signal, power, and infrastructure assets that affect the reliability of the subway track and signal systems to preemptively prevent system failures and improve reliability, and will include: (1) strengthening and reinforcement of process improvements from JBA’s prior work under the SAP; (2) improvement of track inspection program; (3) development and implementation of a Scheduled Maintenance System program for the Track and Signals subdivisions; (4) evaluation and development of a plan to increase the compliance with maintenance and testing standards for signals, power, and third rail; (5) identification of best practices for MOW Engineering inspection guidelines and maintenance methods; (6) development of key performance indicators for monitoring maintenance quality in Track and Signals; and (7) recommendation of institutional changes to sustain long-term improvement in the aforementioned initiatives.
+
+## Page 8
+
+### [p008_c0001] Page 2 of 2
+### [p008_c0002] Staff Summary
+[p008_c0003] JBA has a singular combination of SAP expertise, international rapid-transit industry experience, immediate availability, and previous experience with NYC Transit, including JBA's prior work when tasked by the MTA as a best practices consultant for rolling stock procurements.
+[p008_c0004] JBA submitted its initial proposal of $34,497,452. As a result of negotiations, JBA's final proposal was reduced to $31,384,369, a savings of $3,113,083. JBA will receive $29,384,369 for successful completion of all tasks during this two-year engagement; however, up to an additional $2 million will be available to JBA if certain performance and cost savings objectives are met. The final maximum price of $31,384,369 was deemed to be fair and reasonable.
+[p008_c0005] Although a financial review conducted by MTA Controller's Office revealed that JBA was not financially qualified, Subways and Procurement made a business decision to proceed with this recommendation for contract award to JBA based on a low risk as payments will only be made after work has been performed.
+[p008_c0006] This contract was evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, any applicable cybersecurity requirements, to the extent required, have been included in the base contract terms and conditions.
+[p008_c0007] JBA has certified that pursuant to EO 16 it is not doing business in Russia.
+### [p008_c0008] M/W/DBE Information
+[p008_c0009] The MTA Department of Diversity and Civil Rights has established zero percent MWBE/SDVOB goals on this contract due to lack of subcontracting opportunities and a lack of MWBE/SDVOB firms in the marketplace. JBA Corporation has not completed any contracts with MWBE goals; therefore, an assessment of the firm's MWBE/SDVOB performance is unavailable at this time.
+### [p008_c0010] Impact on Funding
+[p008_c0011] Funding will be from Operating funds.
+### [p008_c0012] Alternatives
+[p008_c0013] None recommended. JBA is uniquely qualified to provide these consulting services based on previous engagement with NYC Transit and international rapid-transit industry experience.
+### [p008_c0014] Recommendation
+[p008_c0015] It is recommended that the Board approve the award of a two-year, personal service contract to JBA Change Management Corporation in the amount of $31,384,369 for consulting services for the NYC Transit Department of Subways, Division of Maintenance of Way.
+
+## Page 9
+
+### [p009_c0001] Schedule I: Modifications to Purchase and Public Work Contracts
+### [p009_c0002] Item 2
+[p009_c0003]
+
+```text
+Vendor Name (Location) Cubic Transportation Systems, Inc. (San Diego, California) Description: New Fare Payment System – One Metro New York (OMNY) Contract Term (including Options, if any) November 1, 2017–July 31, 2030 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Department: MTA Fare Payment Program, Amy Linden
+```
+[p009_c0004]
+
+```text
+Contract Number A34024 AWO/Mod. #: 8 Original Amount: $ 553,827,839 Prior Modifications $ 49,247,457 Prior Budgetary Increases: $ 0 Current Amount: $ 604,555,296 This request: $ 27,500,000 % of This Request to Current Amount: 4.5% % of Modifications (including This Request) to Original Amount: 13.9%
+```
+### [p009_c0005] Discussion:
+[p009_c0006] NYC Transit is seeking Board approval to modify the contract with Cubic Transportation Systems, Inc. (“Cubic”) for New Fare Payment System – One Metro New York (“OMNY”) to implement software and hardware enhancements that will unify the Metro-North Railroad (“MNR”), Long Island Rail Road (“LIRR”), and NYC Transit Configurable Vending Machine (“CVM”) designs, streamline maintenance and Revenue Collection activities, upgrade the communication switch for more efficient and flexible operations, and provide improvements to both internal and external security measures.
+[p009_c0007] Performing these enhancements to the original design of the CVM improves the customer experience as well as operations between both Railroads’ Revenue Operations, NYC Transit Electronics Maintenance Division, and Revenue Control. The CVM will replace the existing MetroCard Vending Machines currently in use and become the primary distribution method for customers to purchase OMNY cards in stations.
+[p009_c0008] OMNY is an account-based, open-payment system based on proven payment industry standards and open architecture principles, allowing customers to pay fares using diverse options, including mobile apps, digital wallets (e.g., Apple Pay, Google Pay, and Samsung Pay), contactless bank cards, and MTA-issued contactless transit cards. When completed, OMNY will provide customers with multiple 24/7 self-service options for managing their accounts and options to purchase and reload fare media online, at local retailers, and at subway stations.
+[p009_c0009] Under the base contract, Cubic will deliver and install 1,720 CVMs to NYC Transit and, under the options exercised via Change Order No. 6, will deliver and install 594 additional CVMs to MNR and LIRR. This change order also includes 61 additional CVMs for MNR and LIRR, for a total of 655.
+[p009_c0010] This change order includes nine unique enhancements to all 2,375 CVMs, the overall highlights of which are:
+- [p009_c0011] • Implementation of a Bill Note Recycler. This is a physical bin that allows for simultaneous cash inflow and outflow management. The original design was modeled after the MetroCard Vending Machine, which had separate bins for cash in and cash out. Having one bin reduces the frequency of restocking the machines with bills. • Internal Barcode Reader. The reader is internal to the machine and allows for maintenance, inventory control, and tracking of the CVM’s modular and interchangeable components, including internal OMNY-card inventory and cash inventory. • Addition of Cyberlocks. Cyberlocks are programmable electronic locks that replace mechanical locks. Like mechanical locks, Cyberlocks provide security by controlling access, but in addition provide visibility into which keys are being used, and when. • Implementation of a Secure Coin Loader. The coin loader is a prefilled and inventoried lockbox of coins from Revenue Control. The loader will replace the comparatively insecure coin bag currently in use, thus eliminating human interaction with money. • Deployment of Rodent Ingress Protection kits. This is a mesh system at the base of the CVM that deters animals from entering the machine, but also does not trap or harm them. • Replacement of LED dot-matrix Marquee Display with LCD Marquee Display. This allows for a more effective display and conveyance of information.
+
+## Page 10
+
+### [p010_c0001] Schedule I: Modifications to Purchase and Public Work Contracts
+### [p010_c0002] The logo for the Metropolitan Transportation Authority (MTA) of New York City. It features a black circle with the white letters "MTA" inside, followed by the text "New York City Transit" in a bold, black, sans-serif font.
+[p010_c0003] Cubic submitted a price proposal for equipment, engineering, and technical and software support costs for this change order in the amount of $29,448,030. The base contract contains preestablished unit prices for various equipment as well as labor rates included in the scope of this change order. After negotiations, Cubic provided an updated proposal in the amount of $27,500,000, consisting of: (1) $22,895,251 for equipment including installation and warranty; (2) $2,428,863 for engineering costs; (3) $446,310 for Service Support through Substantial Completion; (4) $1,150,891 for Service Support for the seven-year base after substantial completion; and (5) $578,682 for Project Management. A total savings of $1,988,030 was achieved. Cubic's pricing for this change order has been found fair and reasonable.
+[p010_c0004] This contract has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. Any applicable cybersecurity requirements, to the extent required, have been included in the contract terms and conditions.
+[p010_c0005] Cubic has certified that pursuant to EO 16, it is not doing business in Russia.
+### [p010_c0006] Impact on Funding
+[p010_c0007] This requirement will utilize Capital funds.
+
+## Page 11
+
+### [p011_c0001] New York City Transit
+[p011_c0002] NOVEMBER 2022
+### [p011_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p011_c0004] Procurements Requiring Majority Vote:
+### [p011_c0005] I. Modifications to Purchase and Public Work Contracts
+[p011_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p011_c0007] 3. Nova Bus, Inc. $137,359,059 Staff Summary Attached 4. New Flyer of America, Inc. $93,355,950 ↓
+[p011_c0008] 112 Months from Original Notice of Award
+[p011_c0009] Contract #s B40666-1 Modification 3
+[p011_c0010] B40666-2 Modification 5
+[p011_c0011] Option to furnish and deliver 289 low-floor 40-foot diesel buses by NYC Transit on behalf of MTA Bus Company; 173 buses from Nova Bus, Inc. and 116 diesel buses from New Flyer of America, Inc.
+
+## Page 12
+
+### [p012_c0001] Schedule I: Modifications to Purchase and Public Work Contracts
+[p012_c0002] Item Number: 3-4
+[p012_c0003]
+
+```text
+Vendor Name (Location) Nova Bus, Inc. (Plattsburgh, New York) New Flyer of America, Inc. (St. Cloud, Minnesota) Contract Number B40666-1 (Nova Bus) B40666-2 (New Flyer) AWO/Mod. # 3 5 Description Options to Furnish and Deliver 289 Low-Floor 40-Foot Diesel Buses Original Amount: $ 218,905,330 Option Amount: $ 382,289,747 Total Amount: $ 601,195,077 Contract Term (including Options, if any) 112 months from original Notice of Award (inclusive of delivery of all buses and provision of warranty support) Prior Modifications: $ 3,063,000 Prior Budgetary Increases: $ Option(s) included in Total Amount? Yes No n/a Current Amount: $ 604,211,457 Procurement Type Competitive Noncompetitive This Request: $ 230,715,009 Solicitation Type RFP Bid Other: Modification Nova Bus: $137,359,059 New Flyer: $93,355,950 Funding Source Operating Capital Federal Other: % of This Request to Current Amount: 38.18% Requesting Department: MTA Bus Company, Frank Annicaro % of Modifications (including This Request) to Original Amount: 281.41%
+```
+### [p012_c0004] Discussion:
+[p012_c0005] It is requested that the Board approve the modification of two contracts for the purchase of a total of 289 low-floor 40-foot diesel buses by NYC Transit on behalf of MTA Bus Company: 173 buses from Nova Bus, Inc. ("Nova Bus") in the estimated amount of $137,359,059; and 116 diesel buses from New Flyer of America, Inc. ("New Flyer") in the estimated amount of $93,355,950; for a combined total estimated award amount of $230,715,009.
+[p012_c0006] The base contracts (B-40666-1 and B-40666-2) were the result of a competitively solicited and negotiated Request for Proposal ("RFP") for the purchase of 275 low-floor 40-foot diesel-electric hybrid buses to replace buses that were beyond their 12-year service life as well as related items such as spare parts, special tools and equipment, diagnostic testing, technical documentation, and training. The original RFP resulted in a 60/40 split award approved by the Board in December 2019. Each of the resulting contracts included options to purchase up to 558 additional buses, which could be unilaterally exercised by the Authority. Contract B-40666-1 was awarded to Nova Bus in the amount of $132,349,722 for 165 hybrid buses and Contract B-40666-2 was awarded to New Flyer in the amount of $86,555,608 for 110 hybrid buses. Contract modifications to purchase additional buses were subsequently awarded: 335 additional buses (126 hybrid and 209 diesel) from Nova Bus in the estimated amount of $227,233,620; and 223 additional buses (84 hybrid and 139 diesel) from New Flyer in the estimated amount of $155,056,127. The current combined total estimated award amount of these contracts including various technical changes is $604,211,457. Nova Bus is scheduled to complete delivery of the 500 buses (291 hybrid and 209 diesel) previously awarded under contract B40666-1 in April 2023 and New Flyer is scheduled to complete delivery of the 333 buses (194 hybrid and 139 diesel) previously awarded under contract B40666-2 in December 2023.
+[p012_c0007] The 289 buses that are the subject of these modifications will replace buses that are beyond their 12-year service life. The award to Nova Bus will consist of 173 diesel buses in the estimated amount of $137,359,059 ($793,983 per bus) and the award to New Flyer will consist of 116 diesel buses in the estimated amount of $93,355,950 ($804,793 per bus). Pricing for these option buses is based on the price per bus competitively obtained in the base contracts to which an adjustment formula, also established in the base, reflecting changes in labor and material cost indices, currency exchange rates, and other agreed-upon factors is applied. The pricing from both bus manufacturers was reviewed by the Cost Price Analysis Unit and found to be fair and reasonable.
+[p012_c0008] An analysis of recent inflationary trends suggests exercising these options will result in a cost avoidance of approximately 10 percent or $23,071,501 as delivery of these buses will be at least eight months earlier than if achieved through a new RFP. Additionally, by splitting the award between two bus manufacturers, the Authority will realize an overall earlier delivery by up to 19 weeks versus a single award. The combined delivery of the 289 diesel option buses is scheduled to begin in September 2023 and be completed in June 2024, for an overall delivery period of 76 weeks from Notice of Award. Nova Bus will deliver between October 2023 and June 2024, while New Flyer will deliver between September 2023 and April 2024. It should also be noted that this approach fosters technological competition and allows MTA Bus Company to mitigate potential performance and supply risks between two bus manufacturers instead of relying on only one for an order of this size.
+
+## Page 13
+
+### [p013_c0001] Schedule I: Modifications to Purchase and Public Work Contracts
+> [p013_c0002] The logo for the Metropolitan Transportation Authority (MTA) New York City Transit. It features a circular emblem with the letters "MTA" in white on a dark background, followed by the text "New York City Transit" in a bold, sans-serif font.
+[p013_c0003] These buses will be outfitted with new features including improved driver visibility, driver barriers, pedestrian turn warning, Wi-Fi, USB charging ports, digital information screens, automatic passenger counters, and prewiring for OMNY and an automated bus lane enforcement system.
+[p013_c0004] Both New Flyer and Nova Bus have met the goals established in their base contracts and will continue to collaboratively work with the Authority in order to maximize the goals attained under these contracts and to establish an expanded MWBE supplier base for future procurements.
+[p013_c0005] Nova Bus has committed to meeting the New York State Content of 35.0%, and New Flyer has committed to meeting the New York State Content of 21.2%. The total combined New York State Content for these modifications will be $67,867,132, which represents 29.4% of the total award.
+[p013_c0006] Both Nova Bus and New Flyer have certified pursuant to EO 16 that they do not do business in Russia.
+[p013_c0007] These contracts have been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. Any applicable cybersecurity requirements, to the extent required, have been included in the contract terms and conditions.
+### [p013_c0008] Impact on Funding
+[p013_c0009] These options will be funded with 100 percent MTA funds. Funds have been approved in the MTA Bus 2020–2024 Capital Plan. An overall funding shortfall of $35.6 million exists for the project. This shortfall will be funded from a deferral of approximately 50 other buses included in the MTA Bus Capital Plan. WAR certificates will be secured prior to award.
+
+## Page 14
+
+### [p014_c0001] NOVEMBER 2022
+### [p014_c0002] New York City Transit
+### [p014_c0003] LIST OF RATIFICATIONS FOR BOARD APPROVAL
+### [p014_c0004] Procurements Requiring Two-Thirds Vote:
+### [p014_c0005] D. Ratification of Completed Procurement Actions
+[p014_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p014_c0007] 5. Transit Sourcing Services, Inc.                      $14,830,000 Staff Summary Attached Six Months Contract # 6-30583
+[p014_c0008] Ratification of an Immediate Operating Need for the purchase of 10,000 subway car wheels.
+
+## Page 15
+
+### [p015_c0001] New York City Transit
+### [p015_c0002] Schedule D: Ratification of Completed Procurement Actions
+[p015_c0003] Item Number: 5
+[p015_c0004]
+
+```text
+Vendor Name (Location) Transit Sourcing Services, Inc. (Fort Mill, South Carolina) Description Purchase of 10,000 subway car wheels (wheels) Contract Term (including Options, if any) September 2022–March 2023 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Immediate Operating Need
+```
+[p015_c0005]
+
+```text
+Contract Number 6-30583 Renewal? Yes No Total Amount: $14,830,000 (est.) Funding Source Operating Capital Federal Other: Requesting Department: Department of Subways, Demetrius Crichlow
+```
+### [p015_c0006] Discussion:
+[p015_c0007] It is requested that the Board formally ratify the declaration of an Immediate Operating Need (“ION”) approved by the MTA Deputy Chief Procurement Officer, waiving competitive bidding pursuant to Article III.B.1. of the All-Agency Procurement Guidelines and Public Authorities Law Section 1209, subsection 9(a) and approve the award made to Transit Sourcing Services, Inc. (“TSS”) for 10,000 subway car wheels (wheels).
+[p015_c0008] Wheels are one of the most critical components to the maintenance of NYC Transit’s subway car fleet and are on the Qualified Products List (“QPL”). The QPL is a list of NYC Transit inventory items requiring the purchase of pre-qualified products for reasons of safety, compatibility, and maintenance reliability. Four manufacturers are approved on the QPL to supply wheels: MWL Brasil (“MWL” - located in Brazil), Sumitomo Corporation (Japan), Standard Steel (US), and Bonatrans (the Czech Republic).
+[p015_c0009] In order to meet operational requirements, in 2019, NYC Transit conducted a competitive procurement resulting in the issuance of two concurrent 36-month estimated quantity contracts to approved suppliers to ensure a timely and sufficient supply of wheels: one to MWL for 18,000 wheels and one to Sumitomo Corporation for 12,000 wheels.
+[p015_c0010] In August 2022, MWL notified NYC Transit that it filed bankruptcy and would not be able to manufacture additional wheels. Because the future of MWL’s business was uncertain, it was critical to supplement the wheels that were to be supplied by MWL. As a result, the Division of Car Equipment (“DCE”) requested the MTA Deputy Chief Procurement Officer approve the declaration of an ION to allow Procurement to engage an additional approved wheel supplier to provide 10,000 wheels to satisfy DCE’s ongoing Scheduled Maintenance System and normal maintenance requirements.
+[p015_c0011] As a result of the ION, Procurement contacted the other three approved wheel suppliers. Procurement requested that Sumitomo Corporation increase its monthly output but was advised by Sumitomo that it could not provide additional wheels due to various supply chain issues and capacity limitations. Standard Steel advised that it does not have the capacity to provide NYC Transit with wheels in 2022 or 2023. The only remaining supplier, TSS (the sole distributor of wheels manufactured by Bonatrans), advised that it would be able to deliver wheels to NYC Transit 180 days after receipt of the order.
+[p015_c0012] Utilizing the ION procedure, a noncompetitive solicitation for 10,000 wheels was issued. TSS originally submitted a quote in the amount of $1,548 per wheel. Procurement conducted price negotiations, which resulted in a price reduction to $1,483 per wheel, a savings of $65/wheel or $650,000. NYC Transit’s Cost Price Analysis Unit was requested to perform an urgent review of current market conditions and the cost data supplied by TSS. Based on its findings, the Cost Price Analysis Unit determined that TSS’s price of $1,483 per wheel was fair and reasonable. On September 9, 2022, a six-month estimated quantity contract guaranteeing 10,000 wheels was issued to TSS.
+[p015_c0013] Deliveries will commence in March 2023 and conclude in January 2024. TSS advised that Bonatrans is working to improve its quoted lead time.
+
+## Page 16
+
+### [p016_c0001] Schedule D: Ratification of Completed Procurement Actions
+> [p016_c0002] The logo for the New York City Transit Authority (NYCTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "New York City Transit" in a black, sans-serif font.
+[p016_c0003] The MTA Office of the Controller performed a financial review and found there is reasonable assurance that TSS is financially qualified to perform the work under this contract.
+[p016_c0004] TSS certified that pursuant to EO 16 they are not doing business in Russia.
+[p016_c0005] This contract was evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements; any applicable cybersecurity requirements, to the extent required, have been included in the contract.
+### [p016_c0006] Impact on Funding
+[p016_c0007] This requirement will utilize Operating funding.

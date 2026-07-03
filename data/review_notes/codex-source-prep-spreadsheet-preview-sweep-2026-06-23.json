@@ -1,0 +1,2751 @@
+{
+  "note_id": "codex-source-prep-spreadsheet-preview-sweep-2026-06-23",
+  "created_at": "2026-06-23T12:37:18Z",
+  "run_id": "spreadsheet-backlog-20260623",
+  "source_count": 267,
+  "ok_count": 266,
+  "unsupported_count": 1,
+  "failed_count": 0,
+  "raw_blocks_mutated": false,
+  "raw_blocks_nonzero_count": 0,
+  "unsupported": [
+    {
+      "source_id": "meeting_doc_26731",
+      "status": "unsupported",
+      "reason": "Legacy source.xls workbooks are not supported by the deterministic XLSX sidecar preview yet",
+      "sheet_count": 0,
+      "row_count": 0,
+      "cell_count": 0,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26731/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26731/preview.md"
+    }
+  ],
+  "sample_ok": [
+    {
+      "source_id": "meeting_doc_100246",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 130,
+      "cell_count": 1780,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_100246/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_100246/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_100251",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 59,
+      "cell_count": 472,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_100251/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_100251/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_105821",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 136,
+      "cell_count": 1856,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_105821/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_105821/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_105826",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 59,
+      "cell_count": 548,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_105826/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_105826/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_109211",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 130,
+      "cell_count": 758,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109211/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109211/preview.md"
+    }
+  ],
+  "outputs_root": "data/source-prep/spreadsheet-backlog-20260623",
+  "ids_file": "data/source-prep/spreadsheet-backlog-20260623.ids",
+  "rows": [
+    {
+      "source_id": "meeting_doc_100246",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 130,
+      "cell_count": 1780,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_100246/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_100246/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_100251",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 59,
+      "cell_count": 472,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_100251/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_100251/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_105821",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 136,
+      "cell_count": 1856,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_105821/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_105821/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_105826",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 59,
+      "cell_count": 548,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_105826/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_105826/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_109211",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 130,
+      "cell_count": 758,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109211/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109211/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_109241",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 59,
+      "cell_count": 513,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109241/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109241/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_109246",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 136,
+      "cell_count": 1861,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109246/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109246/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_109251",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 27,
+      "cell_count": 157,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109251/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109251/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_109256",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 0,
+      "cell_count": 0,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109256/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109256/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_109261",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 914,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109261/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109261/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_109266",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 425,
+      "cell_count": 4742,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109266/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109266/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_109271",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 35,
+      "cell_count": 99,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109271/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109271/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_111656",
+      "status": "ok",
+      "sheet_count": 3,
+      "row_count": 173,
+      "cell_count": 1018,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111656/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111656/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_111661",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 35,
+      "cell_count": 99,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111661/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111661/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_111666",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 27,
+      "cell_count": 157,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111666/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111666/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_111676",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 132,
+      "cell_count": 1806,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111676/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111676/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_111681",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 59,
+      "cell_count": 513,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111681/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111681/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_111686",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 426,
+      "cell_count": 4848,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111686/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111686/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_112081",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 914,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_112081/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_112081/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_113506",
+      "status": "ok",
+      "sheet_count": 3,
+      "row_count": 173,
+      "cell_count": 1010,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113506/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113506/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_113511",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113511/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113511/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_113516",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 35,
+      "cell_count": 99,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113516/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113516/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_113521",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 914,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113521/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113521/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_113526",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 132,
+      "cell_count": 1806,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113526/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113526/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_113531",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 58,
+      "cell_count": 491,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113531/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113531/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_113541",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 350,
+      "cell_count": 6045,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113541/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_113541/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_121031",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 356,
+      "cell_count": 8283,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_121031/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_121031/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_121036",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 132,
+      "cell_count": 1806,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_121036/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_121036/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_121041",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 59,
+      "cell_count": 515,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_121041/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_121041/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_121186",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 356,
+      "cell_count": 8337,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_121186/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_121186/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_121191",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 132,
+      "cell_count": 1806,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_121191/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_121191/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_121196",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 59,
+      "cell_count": 515,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_121196/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_121196/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_127571",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 36,
+      "cell_count": 102,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_127571/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_127571/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_127576",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 223,
+      "cell_count": 1081,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_127576/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_127576/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_127581",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 136,
+      "cell_count": 1816,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_127581/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_127581/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_127586",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 59,
+      "cell_count": 515,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_127586/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_127586/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_127591",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 358,
+      "cell_count": 4755,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_127591/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_127591/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_127596",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_127596/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_127596/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_131396",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 33,
+      "cell_count": 128,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_131396/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_131396/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_131406",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 223,
+      "cell_count": 1081,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_131406/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_131406/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_133181",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 36,
+      "cell_count": 102,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_133181/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_133181/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_133186",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 929,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_133186/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_133186/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_135411",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 36,
+      "cell_count": 102,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_135411/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_135411/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_135416",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 929,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_135416/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_135416/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_140626",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 36,
+      "cell_count": 165,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_140626/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_140626/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_140631",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 929,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_140631/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_140631/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_143401",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 36,
+      "cell_count": 165,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_143401/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_143401/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_143406",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 929,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_143406/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_143406/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_147351",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 0,
+      "cell_count": 0,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_147351/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_147351/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_147356",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_147356/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_147356/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_151866",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 35,
+      "cell_count": 99,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151866/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151866/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_151871",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151871/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151871/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_151881",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 61,
+      "cell_count": 587,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151881/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151881/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_151886",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 36,
+      "cell_count": 102,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151886/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151886/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_151891",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151891/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151891/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_151896",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 61,
+      "cell_count": 587,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151896/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151896/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_151901",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 134,
+      "cell_count": 1832,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151901/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151901/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_151906",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151906/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151906/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_151911",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 100,
+      "cell_count": 1280,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151911/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151911/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_154856",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 136,
+      "cell_count": 1862,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_154856/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_154856/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_154861",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 61,
+      "cell_count": 592,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_154861/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_154861/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_154866",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 36,
+      "cell_count": 102,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_154866/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_154866/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_154876",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_154876/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_154876/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_154886",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_154886/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_154886/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_154891",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 101,
+      "cell_count": 1298,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_154891/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_154891/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_157591",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 148,
+      "cell_count": 1909,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_157591/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_157591/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_157596",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_157596/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_157596/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_160331",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160331/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160331/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_160336",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 36,
+      "cell_count": 102,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160336/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160336/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_160341",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160341/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160341/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_160346",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 40,
+      "cell_count": 417,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160346/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160346/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_160351",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 37,
+      "cell_count": 151,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160351/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160351/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_160356",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 140,
+      "cell_count": 1914,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160356/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160356/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_160361",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 101,
+      "cell_count": 1298,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160361/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160361/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_163036",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 33,
+      "cell_count": 128,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_163036/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_163036/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_163041",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_163041/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_163041/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_163046",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 100,
+      "cell_count": 1280,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_163046/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_163046/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_163051",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 140,
+      "cell_count": 1918,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_163051/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_163051/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_163056",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 367,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_163056/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_163056/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_163061",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_163061/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_163061/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_164716",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 138,
+      "cell_count": 1888,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_164716/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_164716/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_164721",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 582,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_164721/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_164721/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_164726",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 66,
+      "cell_count": 200,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_164726/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_164726/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_164731",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_164731/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_164731/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_164736",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 101,
+      "cell_count": 1297,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_164736/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_164736/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_164741",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_164741/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_164741/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_166991",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 36,
+      "cell_count": 102,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_166991/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_166991/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_166996",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_166996/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_166996/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_167001",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 140,
+      "cell_count": 1918,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_167001/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_167001/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_167006",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 513,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_167006/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_167006/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_167011",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_167011/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_167011/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_167016",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 101,
+      "cell_count": 1297,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_167016/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_167016/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_170411",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 138,
+      "cell_count": 1888,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_170411/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_170411/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_170416",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 513,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_170416/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_170416/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_170421",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_170421/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_170421/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_170426",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 101,
+      "cell_count": 1319,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_170426/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_170426/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_170436",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_170436/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_170436/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_173916",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_173916/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_173916/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_173921",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 138,
+      "cell_count": 1888,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_173921/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_173921/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_173926",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 513,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_173926/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_173926/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_173931",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_173931/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_173931/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_173936",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 101,
+      "cell_count": 1319,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_173936/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_173936/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_176521",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_176521/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_176521/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_176526",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 101,
+      "cell_count": 1319,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_176526/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_176526/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_176531",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 138,
+      "cell_count": 1888,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_176531/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_176531/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_176536",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 479,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_176536/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_176536/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_176541",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_176541/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_176541/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_179491",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_179491/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_179491/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_179496",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_179496/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_179496/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_179501",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 138,
+      "cell_count": 1888,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_179501/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_179501/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_179506",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 101,
+      "cell_count": 1319,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_179506/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_179506/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_179511",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 479,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_179511/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_179511/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_186506",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 93,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186506/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186506/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_186511",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 138,
+      "cell_count": 1888,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186511/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186511/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_186516",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 480,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186516/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186516/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_186521",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186521/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186521/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_186526",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 36,
+      "cell_count": 102,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186526/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186526/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_186531",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 138,
+      "cell_count": 1888,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186531/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186531/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_186536",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 545,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186536/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186536/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_186541",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186541/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186541/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_186546",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186546/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186546/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_186556",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 148,
+      "cell_count": 1932,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186556/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186556/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_186576",
+      "status": "ok",
+      "sheet_count": 3,
+      "row_count": 177,
+      "cell_count": 2474,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186576/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186576/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_186581",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 867,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186581/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186581/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_186586",
+      "status": "ok",
+      "sheet_count": 3,
+      "row_count": 264,
+      "cell_count": 3228,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186586/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_186586/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_189796",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_189796/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_189796/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_189801",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 148,
+      "cell_count": 1932,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_189801/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_189801/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_189806",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 36,
+      "cell_count": 102,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_189806/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_189806/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_189816",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 140,
+      "cell_count": 1918,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_189816/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_189816/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_189821",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 479,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_189821/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_189821/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_189826",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_189826/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_189826/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_192311",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_192311/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_192311/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_192316",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 148,
+      "cell_count": 2034,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_192316/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_192316/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_192321",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 120,
+      "cell_count": 1614,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_192321/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_192321/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_192326",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 34,
+      "cell_count": 96,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_192326/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_192326/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_192331",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_192331/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_192331/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_194196",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194196/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194196/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_194201",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 101,
+      "cell_count": 1321,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194201/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194201/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_194206",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 32,
+      "cell_count": 90,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194206/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194206/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_194211",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194211/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194211/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_194216",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 120,
+      "cell_count": 1614,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194216/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194216/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_194221",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 35,
+      "cell_count": 361,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194221/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194221/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_194226",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 32,
+      "cell_count": 119,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194226/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_194226/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_196971",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 33,
+      "cell_count": 128,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_196971/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_196971/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_196976",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_196976/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_196976/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_196981",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 120,
+      "cell_count": 1614,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_196981/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_196981/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_196986",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 61,
+      "cell_count": 560,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_196986/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_196986/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_197016",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_197016/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_197016/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_197021",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 101,
+      "cell_count": 1320,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_197021/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_197021/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_198951",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 61,
+      "cell_count": 639,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_198951/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_198951/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_198956",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 120,
+      "cell_count": 1614,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_198956/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_198956/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_198961",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 101,
+      "cell_count": 1321,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_198961/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_198961/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_198966",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 930,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_198966/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_198966/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_198971",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_198971/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_198971/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_198976",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 35,
+      "cell_count": 99,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_198976/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_198976/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_201661",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 122,
+      "cell_count": 1640,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_201661/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_201661/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_201666",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 61,
+      "cell_count": 510,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_201666/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_201666/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_201671",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_201671/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_201671/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_201676",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 171,
+      "cell_count": 932,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_201676/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_201676/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_201681",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 33,
+      "cell_count": 93,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_201681/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_201681/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_201686",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 101,
+      "cell_count": 1321,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_201686/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_201686/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_205311",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 61,
+      "cell_count": 506,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_205311/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_205311/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_205316",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 120,
+      "cell_count": 1614,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_205316/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_205316/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_205321",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 101,
+      "cell_count": 1321,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_205321/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_205321/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_205326",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 32,
+      "cell_count": 90,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_205326/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_205326/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_205331",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 172,
+      "cell_count": 939,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_205331/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_205331/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_205336",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 31,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_205336/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_205336/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26721",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 26,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26721/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26721/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26726",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 161,
+      "cell_count": 906,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26726/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26726/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26731",
+      "status": "unsupported",
+      "reason": "Legacy source.xls workbooks are not supported by the deterministic XLSX sidecar preview yet",
+      "sheet_count": 0,
+      "row_count": 0,
+      "cell_count": 0,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26731/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26731/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26736",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 37,
+      "cell_count": 387,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26736/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26736/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26741",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 126,
+      "cell_count": 758,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26741/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26741/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26746",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 35,
+      "cell_count": 163,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26746/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26746/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26751",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 26,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26751/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26751/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26756",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 161,
+      "cell_count": 906,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26756/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26756/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26766",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 134,
+      "cell_count": 1829,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26766/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26766/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26771",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 1295,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26771/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26771/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26791",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 397,
+      "cell_count": 4791,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26791/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26791/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26856",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 136,
+      "cell_count": 2009,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26856/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26856/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26861",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 39,
+      "cell_count": 227,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26861/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26861/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26896",
+      "status": "ok",
+      "sheet_count": 3,
+      "row_count": 176,
+      "cell_count": 1700,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26896/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26896/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26901",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 935,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26901/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26901/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_26906",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 402,
+      "cell_count": 7722,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26906/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26906/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_29971",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 126,
+      "cell_count": 734,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_29971/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_29971/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_29976",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 35,
+      "cell_count": 163,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_29976/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_29976/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_29981",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 161,
+      "cell_count": 906,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_29981/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_29981/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_29986",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 131,
+      "cell_count": 1775,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_29986/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_29986/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_29991",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 569,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_29991/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_29991/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_29996",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 409,
+      "cell_count": 4803,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_29996/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_29996/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_33671",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 136,
+      "cell_count": 2740,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33671/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33671/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_33676",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 35,
+      "cell_count": 163,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33676/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33676/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_33681",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 26,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33681/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33681/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_33686",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 161,
+      "cell_count": 906,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33686/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33686/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_33691",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 130,
+      "cell_count": 1774,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33691/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33691/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_33696",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 532,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33696/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33696/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_33701",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 399,
+      "cell_count": 4663,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33701/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33701/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_42416",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 150,
+      "cell_count": 2998,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42416/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42416/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_42421",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 35,
+      "cell_count": 163,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42421/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42421/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_42426",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 26,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42426/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42426/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_42431",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 161,
+      "cell_count": 906,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42431/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42431/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_42436",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 132,
+      "cell_count": 1804,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42436/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42436/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_42441",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 865,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42441/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42441/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_42446",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 399,
+      "cell_count": 7770,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42446/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42446/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_43876",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 150,
+      "cell_count": 3010,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43876/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43876/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_43881",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 35,
+      "cell_count": 131,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43881/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43881/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_43886",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 26,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43886/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43886/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_43891",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 130,
+      "cell_count": 1778,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43891/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43891/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_43896",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 494,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43896/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43896/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_43901",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 403,
+      "cell_count": 7814,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43901/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43901/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_44136",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 161,
+      "cell_count": 906,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_44136/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_44136/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_51941",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 150,
+      "cell_count": 3006,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51941/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51941/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_51946",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 35,
+      "cell_count": 166,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51946/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51946/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_51951",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 161,
+      "cell_count": 906,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51951/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51951/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_51956",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 26,
+      "cell_count": 156,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51956/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51956/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_51961",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 394,
+      "cell_count": 5615,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51961/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51961/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_51966",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 0,
+      "cell_count": 0,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51966/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51966/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_51971",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 134,
+      "cell_count": 1830,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51971/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51971/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_51976",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 775,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51976/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51976/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_58551",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 150,
+      "cell_count": 3006,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58551/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58551/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_58556",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 35,
+      "cell_count": 99,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58556/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58556/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_58561",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 396,
+      "cell_count": 5639,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58561/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58561/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_58566",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 27,
+      "cell_count": 157,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58566/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58566/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_58571",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 0,
+      "cell_count": 0,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58571/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58571/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_58611",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 130,
+      "cell_count": 1780,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58611/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58611/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_58616",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 748,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58616/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58616/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_64101",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 130,
+      "cell_count": 1780,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_64101/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_64101/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_64106",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 748,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_64106/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_64106/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_68131",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 134,
+      "cell_count": 1830,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_68131/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_68131/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_68481",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 33,
+      "cell_count": 171,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_68481/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_68481/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_71971",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 748,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_71971/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_71971/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_71981",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 112,
+      "cell_count": 864,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_71981/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_71981/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_71996",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 392,
+      "cell_count": 4478,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_71996/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_71996/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_72221",
+      "status": "ok",
+      "sheet_count": 3,
+      "row_count": 174,
+      "cell_count": 1678,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_72221/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_72221/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_72226",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 671,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_72226/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_72226/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_76496",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 0,
+      "cell_count": 0,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_76496/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_76496/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_76601",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 394,
+      "cell_count": 5638,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_76601/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_76601/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_76606",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 130,
+      "cell_count": 1780,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_76606/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_76606/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_76611",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 569,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_76611/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_76611/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_76616",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 27,
+      "cell_count": 157,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_76616/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_76616/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_79221",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 134,
+      "cell_count": 1780,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_79221/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_79221/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_79226",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 820,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_79226/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_79226/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_79231",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 393,
+      "cell_count": 4450,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_79231/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_79231/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_85481",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 0,
+      "cell_count": 0,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_85481/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_85481/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_85616",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 393,
+      "cell_count": 4515,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_85616/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_85616/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_85621",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 130,
+      "cell_count": 1770,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_85621/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_85621/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_85626",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 680,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_85626/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_85626/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_87431",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 0,
+      "cell_count": 0,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_87431/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_87431/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_87441",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 407,
+      "cell_count": 4703,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_87441/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_87441/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_87456",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 134,
+      "cell_count": 1830,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_87456/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_87456/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_87461",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 663,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_87461/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_87461/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_89566",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 0,
+      "cell_count": 0,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_89566/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_89566/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_89576",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 130,
+      "cell_count": 1780,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_89576/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_89576/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_89581",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 59,
+      "cell_count": 644,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_89581/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_89581/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_89586",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 407,
+      "cell_count": 4701,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_89586/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_89586/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_91321",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 130,
+      "cell_count": 1780,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_91321/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_91321/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_91326",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 59,
+      "cell_count": 644,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_91326/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_91326/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_91331",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 407,
+      "cell_count": 4693,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_91331/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_91331/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_94881",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 130,
+      "cell_count": 1780,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_94881/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_94881/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_94886",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 649,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_94886/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_94886/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_94891",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 407,
+      "cell_count": 4694,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_94891/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_94891/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_95061",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 407,
+      "cell_count": 4699,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_95061/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_95061/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_95071",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 134,
+      "cell_count": 1830,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_95071/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_95071/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_95076",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 60,
+      "cell_count": 638,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_95076/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_95076/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_98026",
+      "status": "ok",
+      "sheet_count": 2,
+      "row_count": 134,
+      "cell_count": 1820,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_98026/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_98026/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_98031",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 59,
+      "cell_count": 636,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_98031/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_98031/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_98036",
+      "status": "ok",
+      "sheet_count": 4,
+      "row_count": 417,
+      "cell_count": 4769,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_98036/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_98036/preview.md"
+    },
+    {
+      "source_id": "meeting_doc_98111",
+      "status": "ok",
+      "sheet_count": 1,
+      "row_count": 0,
+      "cell_count": 0,
+      "blocks_jsonl_lines": 0,
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_98111/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_98111/preview.md"
+    }
+  ]
+}

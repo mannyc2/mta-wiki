@@ -1,0 +1,173 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-201766"
+record_kind: "source"
+display_name: "List of Noncompetitive Procurements for Board Approval"
+source_id: "meeting_doc_201766"
+source_ids:
+  - "meeting_doc_201766"
+local_observation_id: "source_meeting_doc_201766"
+local_observation_ids:
+  - "source_meeting_doc_201766"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T22:18:31.178Z"
+submission_ids:
+  - "sub_96e9e31537732ea8"
+payload:
+  authority_tier: "board_material"
+  content_type: "board document"
+  date_text: "MARCH 2026"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2026-03"
+    precision: "month"
+    raw_text: "MARCH 2026"
+  description: "Board document listing noncompetitive procurements requiring majority vote, including GIRO Inc. contracts for MTA Crew Dispatch and Management System and HASTUS Scheduling System upgrade."
+  published_date_normalized: "2026-03"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "LIST OF NONCOMPETITIVE PROCUREMENTS FOR BOARD APPROVAL"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_201766#p001_c0001"
+    page_number: 1
+    role: "publisher"
+    source_id: "meeting_doc_201766"
+    source_path: "raw/sources/meeting_doc_201766/blocks.jsonl"
+    text_sha256: "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_201766#p001_c0002"
+    page_number: 1
+    role: "date"
+    source_id: "meeting_doc_201766"
+    source_path: "raw/sources/meeting_doc_201766/blocks.jsonl"
+    text_sha256: "sha256:f8cb0a1876939e49eb4e31e638378daa748723d3789b542b74098c4f25e8ec28"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_201766#p001_c0003"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_201766"
+    source_path: "raw/sources/meeting_doc_201766/blocks.jsonl"
+    text_sha256: "sha256:a502606da41c04da7af67e190d1147b141594894b426db4ffcff65a24200494b"
+    text_source: "raw_text"
+---
+
+# Non-competitive procurements
+
+source_id: meeting_doc_201766
+citation: cite block ids exactly as shown in square brackets
+document: 74 block(s)
+
+## Page 1
+
+### [p001_c0001] Metropolitan Transportation Authority
+[p001_c0002] MARCH 2026
+### [p001_c0003] LIST OF NONCOMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p001_c0004] Procurements Requiring Majority Vote:
+### [p001_c0005] G. Miscellaneous Service Contracts
+[p001_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p001_c0007] 1. GIRO, Inc. Eight Years Contract # 900000000005203 $20,537,259 Staff Summary Attached Contract award for MTA Crew Dispatch and Management System Implementation, Licensing, and Maintenance for Metro-North Railroad and Long Island Rail Road.
+### [p001_c0008] H. Modification to Miscellaneous Procurement Contracts
+[p001_c0009] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p001_c0010] 2. GIRO, Inc. Five Years Contract # 900000000004134.1 $8,202,968 Staff Summary Attached Contract for Upgrade of HASTUS Scheduling System: Modification in order to extend the contract for five years to provide licensing and support and add additional funding.
+
+## Page 2
+
+### [p002_c0001] Schedule G: Miscellaneous Service Contracts
+[p002_c0002] Item Number: 1
+[p002_c0003]
+
+```text
+Vendor Name (Location) GIRO, Inc. (Montreal, Quebec) Description MTA Crew Dispatch & Management System Implementation, Licensing and Maintenance for MNR and LIRR Contract Term (including Options, if any): April 2026–March 2034 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Immediate Operating Need
+```
+[p002_c0004]
+
+```text
+Contract Number 900000000005203 Renewal? Yes No Total Estimated Amount: $20,537,259 (estimated) Funding Source Operating Capital Federal Other: Requesting Department: MTA IT, Rafail Portnoy, MTA CTO
+```
+### [p002_c0005] Background
+[p002_c0006] MTA Headquarters is seeking Board approval to award a noncompetitive miscellaneous services contract to GIRO, Inc. (“GIRO”) to deliver and implement a new Crew Dispatch and Management System (“CDMS”) called HASTUS to support the picking, crew management/dispatching, and time reporting process for Metro-North Railroad (“MNR”) and Long Island Rail Road (“LIRR”) in the estimated amount of $20,537,259 based on an Immediate Operating Need (“ION”) authorizing urgent procurement actions to replace MNR’s legacy mainframe Crew Management System (“CMS”) and LIRR’s legacy web-based Transportation Employees Assignment and Management System (“TEAMS”). The term for this contract is eight years (April 2026–March 2034).
+[p002_c0007] MNR’s CMS was originally developed, implemented, and configured 25 years ago by PS Technology (“PST”). It is a mission-critical, legacy crew management system that currently runs on the mainframe in MTA’s data center located at 2 Broadway. It is used to manage train crews such as the calling and scheduling of crews, the handling of job bidding, tracking train crew employee hours of service, and their status of availability to work. The CMS also generates timeslips for approximately 1,400 train and engine employees weekly to interface with the Kronos timekeeping system and PeopleSoft for payroll processing. PST can no longer support this outdated system nor address security vulnerabilities in accordance with MTA cybersecurity requirements.
+[p002_c0008] LIRR’s TEAMS was originally developed, implemented and configured for LIRR 20 years ago by PST. It is a web-based application with a back-end environment utilized by the LIRR Transportation department/Crew Dispatching office for crew position assignments, and crew dispatching. It maintains employee rosters, entitlements (including vacation, birthday, holidays, and personal days), and is used for issuing daily time slips to interface with the Kronos timekeeping system and PeopleSoft for payroll processing. Limited support is available to the outdated system, which is anticipated to end in 2026. Older technology used in TEAMS also can no longer be updated to address cybersecurity vulnerabilities.
+### [p002_c0009] Immediate Operating Need (“ION”) - Urgent replacement of legacy systems
+[p002_c0010] An ION, approved in August 2024 by the MTA Chief Technology Officer and acting MTA Chief Procurement Officer, authorized urgent procurement actions to immediately address the critical need to begin the replacement of CMS and TEAMS. Procurement initiated discussions with PST and GIRO to provide updates to their CDMS solutions. PST has developed and supported CMS and TEAMS for 25 years. GIRO’s proposed solution on a prior RFP was ranked favorably, and it has provided similar solutions to public transit agencies for 40 years and currently provides its HASTUS scheduling system for MTA NYC Transit, NYC Transit Bus, MTA Bus, and LIRR.
+### [p002_c0011] Background on the Previous Procurement
+[p002_c0012] A Request for Proposal (“RFP”) was released on January 28, 2020, for software and services to implement a new CDMS and replace legacy systems for MNR and LIRR. On July 1, 2022, MTA awarded the service contract, with a target completion timeframe of 32 months. By March 9, 2023, progress under the contract was significantly behind the planned schedule, and MTA placed the project on pause while it reassessed the path forward. Based on that reassessment, MTA determined that continuing with the current approach under the contract would not achieve the project objectives within required timeframes. MTA is therefore pursuing alternative sources via a new procurement to satisfy this ION.
+### [p002_c0013] Discussions with PST and GIRO
+[p002_c0014] Procurement initiated discussions with PST in August 2024, and with GIRO in September 2024, to provide and discuss CDMS requirements and solutions. Multiple sessions, both on-site and remote, were conducted with each firm to clarify MTA’s requirements, out-of-the-box functionality, and software configuration needed to address requirement gaps. PST and GIRO submitted proposals on March 31, 2025. The MTA began evaluations of each firm’s technical and cost proposals and held follow-up meetings with PST and GIRO to conduct software demonstrations, clarify compliance to requirements, project approach, and timeline. Both proposals were deemed technically qualified.
+
+## Page 3
+
+### [p003_c0001] Schedule G: Miscellaneous Service Contracts
+### [p003_c0002] MTA Metropolitan Transportation Authority
+[p003_c0003] MNR, LIRR and the IT Department have deemed PST and GIRO to have the most viable solutions with expectation of the least time to implement. PST as the incumbent of the current legacy CDMS systems, can re-configure a different and modern system to meet CDMS requirements and possesses a deep knowledge of MNR and LIRR crew operations and processes. GIRO, who was the runner-up in the 2020 RFP selection and as a supplier of its HASTUS scheduling system to NYC Transit and MTA Bus Company, was deemed to also provide a solution within a reasonable timeframe. Other proposers to the 2020 RFP were deemed to require substantially more customization to their solutions, not focused on rail operations, require more time to implement and did not comply fully with MTA's functional requirements.
+[p003_c0004] For this ION, a Selection Committee ("SC") was established comprising of the MTA IT Director of Intelligent Systems, MNR Superintendent of Crew Management, and LIRR Lead Transportation and Crew Management. GIRO received the highest ranking from the SC based on (1) depth and clarity on meeting MTA's CDMS requirements without extensive customization, (2) a detailed and comprehensive project plan and timeline, (3) ability to preserve existing dispatch functions while modernizing the platform for future enhancements as needed, (4) demonstration from GIRO customer Denver Transit of successful implementation of HASTUS to support train operations, and (5) track record of delivering software improvements, excellent maintenance and customer support.
+[p003_c0005] GIRO HASTUS best satisfies the Railroads four key concerns: (1) proven record of delivering mandated FRA Hours of Service compliance; (2) a mature, powerful and scalable platform providing advanced reporting and analytical capabilities with reduced security risks; (3) strong alignment of functions preserving current dispatch workflows; and (4) GIRO's broad experience of supporting passenger railroad operations, which improves implementation efforts while modernizing the platform with far less re-engineering and change management. In addition, GIRO offers a detailed plan for data migration and system decommissioning to ensure a smooth transition while minimizing potential disruptions.
+[p003_c0006] During negotiations, PST advised the MTA of a change in its ownership, effective January 2026, by a company lacking experience in public transit crew management operations. This introduced greater risk to critical staff retention, loss of confidence, project timelines, potential price increases and operational disruptions.
+### [p003_c0007] New HASTUS CDMS
+[p003_c0008] The new software will enable crew dispatchers to perform their duties optimally and support business processes and policies governing role assignments and pay for employees. This software also ensures that safety and compliance standards will be fully met in accordance with the Code of Federal Regulations ("CFR") Title 49 (Transportation) that requires maximum work times for covered service, as well as using fatigue models to act upon certain jobs that affect circadian rhythm, among other things. The CFR outlines maximum working times and mandatory rest based upon the working times.
+[p003_c0009] For MNR, the new system will provide:
+- [p003_c0010] 1. Cost efficiency: Overall, mainframe systems have higher operational and maintenance costs. 2. Improved integration: Downstream and upstream data sharing is easier with other applications. 3. Enhanced Performance: Modern hardware and software can deliver better performance. 4. Easier talent acquisition: Finding support personnel with mainframe skillset has become a challenge. It's much easier to find developers with newer skillsets. 5. Data accessibility: Moving off mainframes can make data more readily available for analytics and business intelligence.
+[p003_c0011] For LIRR, the new system will provide:
+- [p003_c0012] 1. Improved security: The LIRR TEAMS application utilizes Adobe Flash technology, which has numerous security vulnerabilities. Migrating eliminates those risks. 2. Better performance: Modern web technologies often provide faster, more efficient performance. 3. Wider compatibility: Flash is no longer supported by major browsers. Migration ensures your system works across all platforms. 4. Mobile accessibility: Flash doesn't work on most mobile devices. Migrating allows for better mobile support. 5. Futureproofing: Adobe ended Flash support in 2020. Migrating ensures that the system remains functional and updatable.
+### [p003_c0013] Cost Discussions and Negotiations
+[p003_c0014] GIRO submitted a proposal that's 50 percent below their current standard license fees which is consistent with the discount structure already contracted and Board approved in 2022 for the other MTA Agencies such as the NYC Transit DOB, and MTA Bus Company for another scheduling system. Further negotiations with GIRO yielded an additional $970,000 reduction. GIRO's final cost proposal of $20,537,259 is also $2,585,644 or 11.2 percent less than PST's total price of $23,122,903. This contract provides 35 months of implementation, a 12-month warranty, post go-live training, and the outer years of software maintenance and support. GIRO's proposal has been deemed to provide the best value for the MTA. All pricing and terms are deemed fair and reasonable.
+
+## Page 4
+
+### [p004_c0001] Schedule G: Miscellaneous Service Contracts
+### [p004_c0002] Metropolitan Transportation Authority
+[p004_c0003] GIRO's software will be installed, operated, and its data stored on MTA cloud infrastructure. Implementation includes assisting MTA with configuring MTA's non-production and production environments, installing software, providing procedures for testing and acceptance, and training. Payment for implementation is milestone-based to ensure performance. In accordance with the ION, a Notice to Proceed will be issued to GIRO in April 2026 to start planning for the installation, test software, design and configure software, and implement solution to go-live within 36 months.
+[p004_c0004] The system upgrade completed by GIRO in 2022 under a separate service agreement for NYC Transit and DOB was deemed successful. GIRO was found to be responsive and fully compliant with MTA requirements. The firm has been providing MTA support of its HASTUS system across multiple agencies for over 20 years.
+[p004_c0005] This contract is being evaluated to determine the appropriate scope of cybersecurity requirements, including any requirements under federal, state, and local law regulations. Any applicable cybersecurity requirements, to the extent required, will be included in the contract terms and conditions.
+[p004_c0006] GIRO has certified that pursuant to EO 16, it is not doing business in Russia.
+### [p004_c0007] D/M/WBE Information
+[p004_c0008] The MTA Department of Diversity and Civil Rights (DDCR) established zero MBE, WBE, and SDVOB goals on this contract.
+### [p004_c0009] Impact on Funding
+[p004_c0010] The total cost of this contract is funded by the MTA IT Operating Budget.
+
+## Page 5
+
+### [p005_c0001] Schedule H: Modifications to Personal Service & Miscellaneous Service Contracts
+### [p005_c0002] Metropolitan Transportation Authority
+### [p005_c0003] Item Number: 2
+[p005_c0004]
+
+```text
+Vendor Name (Location) GIRO Inc, (Montreal, Quebec) Description: Upgrade of HASTUS Scheduling System Current Contract Term (including Options, if any) February 19, 2024–March 9, 2027 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Sole-Source Funding Source Operating Capital Federal Other: Requesting Department: MTA IT, Rafail Portnoy, Chief Technology Officer
+```
+[p005_c0005]
+
+```text
+Contract Number 900000000004134 AWO/Mod. # 1 Original Amount: $ 8,023,546 Prior Modifications: $ 0 Current Amount: $ 8,023,546 This Request: $ 8,202,968 % of This Request to Current Amount: 102% % of Modifications (including This Request) to Original Amount: 102%
+```
+### [p005_c0006] Purpose
+[p005_c0007] MTA Headquarters seeks Board approval to modify a noncompetitive miscellaneous service contract with GIRO, Inc. (“GIRO”) to extend the existing licensing and support of the HASTUS Scheduling system currently being used by NYC Transit Department of Subways (“DOS”), Department of Buses (“DOB”), and the MTA Bus Company (“MTABC”) in the amount of $4,191,355. Also requested under this modification is an upgrade of Long Island Rail Road’s (“LIRR”) HASTUS system from version 2014 to the latest 2027 version, plus five years of licensing and support in the amount of $4,011,613. The total value of this modification is $8,202,968. All services will co-terminate in March 2032 for all user agencies.
+### [p005_c0008] Background: NYC Transit DOB, DOS, and MTABC’s HASTUS Scheduling System
+[p005_c0009] In July 2022, the MTA Board approved a noncompetitive miscellaneous service contract with GIRO to upgrade the HASTUS Scheduling System for DOS, DOB, and MTABC, which provided (1) bus scheduling enhancements such as consolidation of MTABC and DOB installations into a single HASTUS platform; and (2) integration of the new MinBus module to optimize vehicle blocking and support electric bus operations. This module also accounted for electric bus-specific requirements such as recharging and state-of-charge tracking, while improving control over interlined schedules and route/depot assignments. The contract also included DOS Rail scheduling upgrade to HASTUS Rail application that provides comprehensive scheduling capabilities with timetabling and crew assignments. The HASTUS system is proprietary to GIRO and can only be provided and supported by GIRO. This contract, in the amount of $8,023,546, expires in March 2027.
+### [p005_c0010] Background: LIRR’s HASTUS Scheduling System
+[p005_c0011] In 2006, the HASTUS scheduling system was first configured and installed as a critical scheduling platform for LIRR operations that provides comprehensive scheduling and scheduling optimization capabilities, including route definition, network mapping, vehicle movements, crew assignments, and rostering. LIRR Service Planning and Transportation currently rely on two separate systems: the in-house Train Planning Scheduling System (“TPSS”) for creating and publishing train schedules, and GIRO’s HASTUS Rail scheduling system for crew and equipment schedules. Both systems operate on outdated hardware and software and require upgrades to meet current operational and cybersecurity standards. These older versions have become challenging to support and do not have the current features and functionalities available in today’s modern technology that are operationally needed. Upgrading LIRR to the latest version of GIRO HASTUS software will introduce the functionality needed to transition and consolidate all train, crew, and equipment schedule creation into a single modern platform. Enabling the retirement of TPSS/Centralizing scheduling in one system will allow LIRR to fully leverage optimization capabilities, produce higher-quality schedules, improve service reliability, reduce manual work, and reduce overall operational costs. This will also result in the LIRR utilizing the same scheduling technology vendor as NYC Transit, creating potential knowledge-sharing and efficiency opportunities.
+### [p005_c0012] Previous Procurement for LIRR
+[p005_c0013] In 2017, Metro-North Railroad (“MNR”) conducted a competitive Request for Proposals process to implement an end-to-end, automated system for MNR’s Train Crew, and Equipment scheduling. The Board granted approval to award this joint-agency contract to Trapeze Software Group/Signature Rail (“Trapeze”) and provided the implementation of a Centralized Train Scheduling System (“CTSS”) at MNR first. Once deemed successful by MNR, the contract included an option to expand and implement similar CTSS specifications for LIRR based upon MNR specifications, which was originally intended to replace TPSS and the old HASTUS system for LIRR.
+
+## Page 6
+
+### [p006_c0001] Schedule H: Modifications to Personal Service & Miscellaneous Service Contracts
+### [p006_c0002] Metropolitan Transportation Authority
+[p006_c0003] In 2025, through a series of project discussions with LIRR and Trapeze, it was determined that LIRR's technical requirements and system configurations were significantly different from MNR's specifications. Combined with LIRR's 24/7 operations, the scheduling complexity is greater than that of MNR. Adding LIRR's additional requirements to this contract was estimated to cost an additional $7.6 million plus the outer years of support. At this point, the LIRR Service Planning and Transportation Department, in collaboration with the MTA IT Department, determined that the most economical and efficient path forward for a modern single platform was to upgrade the existing GIRO HASTUS to the latest version. Transitioning to another product would create significant disruptions to the scheduling activities, and these disruptions would more than offset any benefit gained by replacing the system in its entirety.
+### [p006_c0004] This Modification No. 1 to the Current GIRO Contract:
+[p006_c0005] This modification covers the five-year extension of this service agreement for the total amount of $8.2 million, which includes $4,191,355 for DOS, DOB, and MTABC; and $4,011,613 for LIRR. The LIRR upgrade includes the following modules: Vehicle, Crew, CrewOpt, Roster, Rider, and TrainOpt (formerly MiniRail). The latest HASTUS version is a significantly improved and more powerful product specifically with respect to data interface, development capabilities, and scheduling. This new version will provide enhancements in data and schedule development tasks and will improve quality control processes which are operation-critical for LIRR. This upgrade includes comprehensive scheduling capabilities with timetabling and crew assignments. The software contains powerful algorithms, which are configured to create efficient cost-saving timetables and schedules to meet the needs of the MTA user agencies. Work associated with the upgrade is expected to take up to 16 months, with GIRO and the MTA project team working to perform tasks concurrently where possible to minimize implementation time. This is a milestone-based system project with structured payment based on the receipt and acceptance of each deliverable. The MTA project team will monitor these milestones and approve each phase throughout the project. This LIRR upgrade also includes five years of maintenance and support to co-terminate with NYC Transit/MTABC support period.
+### [p006_c0006] Cost Discussions and Negotiations
+[p006_c0007] GIRO's original proposal included a 50 percent reduction from its standard license fees in accordance with the base agreement pricing established in 2022. Negotiations yielded an additional 6 percent or $504,000 reduction over five years from GIRO's original proposal of $8,707,503 to $8,202,968. As part of the negotiations, the original proposed annual escalation rate for maintenance services was reduced from 4 percent to 2.5 percent. All negotiated pricing and terms have been deemed fair and reasonable.
+[p006_c0008] The system upgrade completed by GIRO in 2022 for NYC Transit and DOB was deemed successful. GIRO was found to be responsive and fully compliant with MTA requirements. The firm has been providing MTA support of its HASTUS system across multiple agencies for over 20 years.
+[p006_c0009] The MTA Department of Diversity and Civil Rights (DDCR) established zero percent MBE, WBE, and SDVOB goals on this contract.
+[p006_c0010] GIRO has certified that pursuant to EO 16, it is not doing business in Russia.
+[p006_c0011] This contract has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. Any applicable cybersecurity requirements, to the extent required, will be included in the contract terms and conditions.
+### [p006_c0012] Impact on Funding
+[p006_c0013] This modification is funded by the MTA IT Operating Budget.

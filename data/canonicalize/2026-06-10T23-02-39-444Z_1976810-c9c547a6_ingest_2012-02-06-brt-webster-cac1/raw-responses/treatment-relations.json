@@ -1,0 +1,67 @@
+{
+  "run_id": "2026-06-10T23-02-39-444Z_1976810-c9c547a6_ingest_2012-02-06-brt-webster-cac1",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:23:20.915Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "skip-sbs-features-generic",
+        "local_observation_id": "treatment_sbs_features_generic",
+        "decision": "skip",
+        "rationale": "Page 7 is a generic informational slide titled 'Features of Select Bus Service' listing SBS components (bus lanes, branding, passenger info, stations, faster fare collection, bus signal priority) as background/educational content. The cited blocks do not explicitly state these features are attached to any specific corridor or project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p007_c0001",
+            "source_quote": "Features of Select Bus Service"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-bx12-bus-lanes",
+        "local_observation_id": "treatment_bx12_sbs_bus_lanes",
+        "decision": "skip",
+        "rationale": "Page 10 is a case-study slide titled 'Bx12 SBS | Features' shown at the Webster Avenue CAC meeting. The block lists Bx12 SBS features—including bus lanes with curbside 7am-7pm lanes, red coloration, overhead signs, and delivery windows—as an example of an existing SBS implementation on Fordham Road. The cited block does not explicitly state these are treatments attached to the Webster Avenue project or any other project/corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p010_c0002",
+            "source_quote": "▪ New/upgraded bus lanes – Curbside 7am-7pm lanes – Red coloration – Overhead signs for visibility – 'Delivery Windows' in retail core"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-bx12-off-board-fare",
+        "local_observation_id": "treatment_bx12_sbs_off_board_fare",
+        "decision": "skip",
+        "rationale": "Same Page 10 'Bx12 SBS | Features' case-study slide. The block lists off-board fare collection as a feature of the existing Bx12 SBS on Fordham Road—shown as an example at the Webster Avenue CAC meeting. The cited block does not explicitly state this treatment is attached to any project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p010_c0002",
+            "source_quote": "▪ Off-board fare collection"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-bx12-tsp",
+        "local_observation_id": "treatment_bx12_sbs_tsp",
+        "decision": "skip",
+        "rationale": "Same Page 10 'Bx12 SBS | Features' case-study slide. The block lists Transit Signal Priority as a feature of the existing Bx12 SBS on Fordham Road—shown as an example at the Webster Avenue CAC meeting. The cited block does not explicitly state this treatment is attached to any project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p010_c0002",
+            "source_quote": "▪ Transit Signal Priority"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-21-29-160Z_2111393-d5ce5fdd_canonicalize_2026-06-10t23-02-39-444z-1976810-c9c547a6-ingest-2012-02-06-brt-webster-cac1-treatment-relations"
+}

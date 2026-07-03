@@ -1,0 +1,168 @@
+{
+  "id": "codex-backlog-burst-2026-06-30-m",
+  "created_at": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "forbidden_commands_used": [],
+  "canonical_jsonl_update_path": "deterministic materialize only",
+  "bucket": "event_project_treatment_residual_cleanup_burst",
+  "baseline": {
+    "validation_issues": 0,
+    "event_records": 7941,
+    "event_family_other_before": 143,
+    "project_records": 1862,
+    "project_missing_or_unresolved_document_time_status_before": 37,
+    "treatment_records": 2648,
+    "treatment_raw_noisy_union_before": 37,
+    "treatment_adjusted_actionable_noisy_union_before": 19
+  },
+  "implemented_changes": [
+    {
+      "change": "add exact event_family gates for residual scout-backed events",
+      "affected_count": 18,
+      "affected_records": {
+        "implementation": [
+          "event_201536-emergency-response-training",
+          "event_meeting-doc-115576-automated-uploads",
+          "event_meeting-doc-115576-committee-books-redesign",
+          "event_mid-suffolk-yard-closeout"
+        ],
+        "public_engagement": [
+          "event_lirr-elaine-lee-olav",
+          "event_meeting-doc-138396-transit-employee-appreciation-day",
+          "event_meeting-doc-205541-transit-employee-appreciation-day",
+          "event_meeting-doc-87956-april-it-expo",
+          "event_mnr-olav-training",
+          "event_mnr-rail-safety-sticker-contest-2024",
+          "event_music-under-ny-auditions-june2023",
+          "event_school-safety-backpack-contest-2026",
+          "event_staycation-showcase-2026"
+        ],
+        "milestone": [
+          "event_meeting-doc-111711-tbta-90th-anniversary",
+          "event_meeting-doc-140466-transit-all-stars-may2024",
+          "event_meeting-doc-52976-extension-aug-2021",
+          "event_meeting173871-prior-tenant-vacated"
+        ],
+        "pause": [
+          "event_meeting-doc-171491-strike-start"
+        ]
+      }
+    },
+    {
+      "change": "scope exact side-street monitoring treatment as non-intervention context",
+      "affected_count": 1,
+      "scope": "non_intervention_monitoring_context",
+      "reason": "continue_to_monitor_not_treatment",
+      "affected_records": [
+        "treatment_side-street-monitoring"
+      ]
+    },
+    {
+      "change": "add exact project document_time_status gates from project-status scout",
+      "affected_count": 3,
+      "affected_records": {
+        "planned": [
+          "project_meeting-197041-tibbets-brook-daylighting",
+          "project_wakefield-transit-oriented-development-meeting-doc-160241"
+        ],
+        "active": [
+          "project_meeting-doc-26796-third-track-main-line"
+        ]
+      },
+      "skipped_candidate": {
+        "record_id": "project_queens-blvd-west-cbtc-meeting-doc-170976",
+        "reason": "Current record context exposes the ratification-request block but not the adjacent completed-procurement heading, so this remains unresolved until a safer cited-context rule or evidence ref is available."
+      }
+    }
+  ],
+  "post_materialize_counts": {
+    "validation_issues": 0,
+    "canonical_records": 84048,
+    "wiki_pages": 7337,
+    "event_records": 7941,
+    "event_family_other_after": 125,
+    "project_records": 1862,
+    "project_missing_or_unresolved_document_time_status_after": 34,
+    "treatment_records": 2648,
+    "treatment_raw_noisy_union_after": 37,
+    "treatment_scoped_contextual_after": 19,
+    "treatment_adjusted_actionable_noisy_union_after": 18
+  },
+  "tests": [
+    "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+    "bun test packages/pipeline/test/materialize/materialize.test.ts",
+    "bun run typecheck",
+    "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+    "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+    "bun packages/cli/src/cli.ts validate"
+  ],
+  "test_results": {
+    "normalizers": "264 pass, 4030 expect() calls",
+    "materialize": "55 pass, 851 expect() calls",
+    "typecheck": "pass",
+    "sqlite_quick_check": "ok",
+    "validate": "Issues: 0"
+  },
+  "subagent_audits_completed": [
+    {
+      "lane": "project_document_time_status_missing",
+      "result": "37 missing/unresolved records; 4 candidates found, 3 implemented, 1 left unresolved due insufficient normalizer-visible context."
+    },
+    {
+      "lane": "treatment_noisy_actionable_union",
+      "result": "19 adjusted actionable records; 1 exact monitoring context record implemented; remaining 18 are 16 bus_priority aggregates/toolkits plus 2 amenity/public-art records."
+    },
+    {
+      "lane": "event_family_other",
+      "result": "143 other records before this materialize; 18 prompt/scout candidates implemented; additional 9 high-confidence candidates found for next event slice."
+    },
+    {
+      "lane": "relation_family_other",
+      "result": "relation_family other is already 0. Optional refinement: 13 exact supports repair records could move from dependency_or_reference to timeline_context."
+    },
+    {
+      "lane": "entity_duplicate_identity_keys",
+      "result": "No open entity duplicate identity issues. Strong duplicate key groups are 2 groups / 4 pairs, all do-not-merge covered; recommended reviewed key-prunes can reduce groups to 0."
+    }
+  ],
+  "next_ready_slices": [
+    {
+      "lane": "event_family_other",
+      "expected_count_movement": "125 -> 116 if all 9 gates land",
+      "candidate_records": [
+        "event_aar-ford-e450-demo-oct2023",
+        "event_fare-pilot-duration-12-months",
+        "event_summer-2024-strategic-improvement",
+        "event_fall-2024-strategic-expansion",
+        "event_runwise-expansion-request",
+        "event_feb-financial-plan",
+        "event_fmtac-2025-year-end-may2026",
+        "event_meeting-doc-152171-un-week-gridlock",
+        "event_meeting-doc-189891-discussions-tmha"
+      ]
+    },
+    {
+      "lane": "entity_identity_keys",
+      "expected_count_movement": "strong duplicate identity-key groups 2 -> 0; entity count unchanged",
+      "candidate_change": "Add reviewed broad entity key prunes for entity_meeting-doc-64066-mta and entity_mta-metropolitan-transportation-authority in packages/db/src/identity.ts."
+    },
+    {
+      "lane": "relation_family_refinement",
+      "expected_count_movement": "relation_family other remains 0; optional supports repair refinement moves 13 dependency_or_reference records to timeline_context",
+      "candidate_change": "Exact supports/event->claim or supports/event->metric malformed has_timeline_event repair markers only."
+    },
+    {
+      "lane": "treatment_aggregate_policy",
+      "expected_count_movement": "adjusted treatment noisy/actionable 18 remaining",
+      "candidate_change": "Develop narrow aggregate/toolkit representation policy for 16 bus_priority package records; avoid blanket scope."
+    }
+  ],
+  "remaining_intentionally_unresolved": [
+    "125 event records still have event_family other after this slice; 9 additional exact gates are scout-ready.",
+    "34 project records still lack document_time_status; title-only, broad strategy, budget-table, and insufficient-context candidates remain unresolved.",
+    "18 adjusted treatment noisy/actionable records remain; aggregate bus_priority policy is still needed.",
+    "Relation_family other is already zero, so relation cleanup should shift to refinement rather than other-bucket reduction.",
+    "Entity duplicate pressure has no open issues; reviewed key-prunes can reduce guarded false-positive duplicate keys."
+  ]
+}

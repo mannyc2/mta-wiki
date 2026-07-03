@@ -1,0 +1,104 @@
+{
+  "note_id": "codex-metric-tail26-ridership-rating-audit-2026-07-02",
+  "date": "2026-07-02",
+  "mode": "codex_only_deterministic_post_ingest_cleanup",
+  "external_provider_llm_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-profile commands"
+  ],
+  "user_question_answered": {
+    "question": "For things which are not other, i.e a duplicate project or route, have we been fixing those?",
+    "answer": "Yes. Real route/project duplicate pressure has been fixed through deterministic identity aliases, do-not-merge guards, identity-key generation changes, and tests rather than broad display-name merging. The live identity-review backlog currently has 0 candidate edges, 0 clusters, and 0 duplicate_global_identity issues; raw route or project label repeats are treated as audit inputs, not automatic bugs."
+  },
+  "identity_duplicate_status": {
+    "route_records": 319,
+    "project_records": 1859,
+    "identity_review_counts": {
+      "candidate_edges": 0,
+      "clusters": 0,
+      "validation_issues": 0,
+      "duplicate_global_identity_issues": 0
+    },
+    "overrides": {
+      "route_aliases": 147,
+      "project_aliases": 353,
+      "route_do_not_merge_pairs": 68,
+      "project_do_not_merge_pairs": 70
+    },
+    "policy": "Fix deterministic same-identity duplicates with aliases; suppress false duplicate pressure with do-not-merge guards or stronger identity keys; do not merge variants, aggregate/list records, or route lifecycle/predecessor records solely because they share public labels."
+  },
+  "metric_unit_tail_slice": {
+    "bucket": "metric_claims missing unit_normalized.unit_family",
+    "before": {
+      "missing_unit_family": 40,
+      "finite_missing_unit_family": 34,
+      "distinct_missing_metric_names": 32,
+      "other_unit_family": 4
+    },
+    "after": {
+      "missing_unit_family": 26,
+      "finite_missing_unit_family": 25,
+      "distinct_missing_metric_names": 23,
+      "other_unit_family": 4
+    },
+    "records_normalized": 14
+  },
+  "subagents": [
+    {
+      "name": "Turing",
+      "session_id": "019f20e5-8fd6-7bd0-96b1-056dc5e19e4c",
+      "role": "read-only audit of remaining metric missing-unit tail",
+      "used_for": [
+        "identified safe exact metric gates",
+        "identified deferrals where payload evidence was ambiguous or conflicting"
+      ]
+    }
+  ],
+  "implemented_rules": [
+    "Exact gated missing-unit inference for ridership rows with rider/ridership/passenger evidence.",
+    "Exact vacancies inference when raw/context evidence says vacancy/vacancies.",
+    "Exact percent inference for summonses_total_increase_pct and subway_fires_change, including stored percent values in range fields.",
+    "Exact Secondary Screening Score rating inference when raw text includes points.",
+    "Exact Bell-Curve Grade Threshold - A rating inference when payload proves a 4.0 GPA scale and value is within 0..4.",
+    "Exact track_trespassing_winter_comparison count inference with incident evidence.",
+    "Exact hires_separations_count workforce inference for stored integer raw-count rows.",
+    "Exact debt_service_monthly_by_agency money inference for explicit dollar agency subtotals, scaled by 1000000.",
+    "Exact pension_errors_financial_impact count inference for error-count payloads, not dollar impact payloads.",
+    "Exact revenue_observation_tests_completed count inference from raw test wording or *_tests extra_fields keys."
+  ],
+  "intentional_deferrals": [
+    "Bare numeric ridership row with raw_value_text '6.8 million' still lacks non-name rider/passenger wording inside the current normalizer payload.",
+    "Bare numeric vacancies row with raw_value_text '2,643' still lacks non-name vacancy wording inside the current normalizer payload.",
+    "Bare numeric subway_fires, subway_fires_12mo_rolling, train_derailments, collisions, and revenue_vehicles remain unresolved without source-context evidence.",
+    "Change rows such as total_arrests_change, total_major_felonies_change, major_felony_change, hate_crimes_change, hate_crime_count_change, and tos_arrests_change remain unresolved until there is a bounded policy for signed change counts versus percentages.",
+    "traffic_fatalities_and_injuries is a composite safety metric and remains a split/policy candidate.",
+    "internal_eeo_complaints_by_basis remains deferred due conflicting basis/category/count semantics.",
+    "substantial_completion_date is a date-shaped record, not a metric unit inference.",
+    "procurement_amount lacks a stored scalar amount in the current payload.",
+    "infrastructure_protection, workforce_development, cares_program_count, and budgeted_resources remain ambiguous without broader source-context policy."
+  ],
+  "verification": {
+    "focused_tests": "bun test packages/pipeline/test/ontology/normalizers.test.ts: 278 pass, 0 fail, 4983 expect() calls",
+    "typecheck": "bun run typecheck: pass",
+    "materialize": "bun packages/cli/src/cli.ts materialize: Materialized 93067/98115 submissions; SQLite FTS quick_check ok",
+    "validate": "bun packages/cli/src/cli.ts validate: Issues 0; 98115 submissions; 84027 canonical records; 7331 wiki pages"
+  },
+  "files_changed": [
+    "packages/pipeline/src/ontology/normalizers.ts",
+    "packages/pipeline/test/ontology/normalizers.test.ts",
+    "data/canonical/metric_claims.jsonl",
+    "data/canonical.db",
+    "LOG.md",
+    "data/review_notes/codex-metric-tail26-ridership-rating-audit-2026-07-02.json"
+  ],
+  "next_lanes": [
+    "Audit the remaining 26 missing unit-family rows for one more exact bounded slice.",
+    "If switching back to identity work, rebaseline raw duplicate-looking project/route labels against identity keys and only implement aliases or guards for actual same-identity candidates."
+  ]
+}

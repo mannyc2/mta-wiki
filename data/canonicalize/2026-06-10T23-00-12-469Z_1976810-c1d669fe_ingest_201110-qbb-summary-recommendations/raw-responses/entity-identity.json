@@ -1,0 +1,46 @@
+{
+  "run_id": "2026-06-10T23-00-12-469Z_1976810-c1d669fe_ingest_201110-qbb-summary-recommendations",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:03:33.982Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nyc-dot-qbb-already-canonical",
+        "local_observation_id": "entity_nyc_dot_qbb_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already correctly resolves to the canonical registry record for the New York City Department of Transportation. Entity name, type, and acronym all match the existing entity_nyc-dot registry card. No different record needs linking.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p001_c0001",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "nycedc-qbb-already-canonical",
+        "local_observation_id": "entity_nycedc_qbb_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nycedc-qbb-study already correctly resolves to the canonical registry record for NYCEDC. Entity name ('New York City Economic Development Corporation'), entity_type ('agency'), and acronym ('NYCEDC') all match the existing entity_nycedc-qbb-study registry card. No different record needs linking.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p012_c0003",
+            "source_quote": "NYCEDC Proposed Bikeway/Pedestrian Crossing Location (November 2010)"
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p012_c0004",
+            "source_quote": "NYCEDC Proposed Bikeway/Pedestrian Crossing Location (November 2010)"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-57-627Z_2111393-e1d4742b_canonicalize_2026-06-10t23-00-12-469z-1976810-c1d669fe-ingest-201110-qbb-summary-recommendations-entity-identity"
+}

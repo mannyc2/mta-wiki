@@ -1,0 +1,169 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-135306"
+record_kind: "source"
+display_name: "Long Island Rail Road Procurements - March 2024"
+source_id: "meeting_doc_135306"
+source_ids:
+  - "meeting_doc_135306"
+local_observation_id: "source_meeting_doc_135306"
+local_observation_ids:
+  - "source_meeting_doc_135306"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T15:28:33.894Z"
+submission_ids:
+  - "sub_2ccee51ca750ba54"
+payload:
+  authority_tier: "board_material"
+  content_type: "Board Meeting Procurement Agenda"
+  date_text: "March 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-03"
+    precision: "month"
+    raw_text: "March 2024"
+  published_date_normalized: "2024-03"
+  published_date_precision: "month"
+  title: "Long Island Rail Road Procurements"
+evidence_refs:
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_135306#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_135306"
+    source_path: "raw/sources/meeting_doc_135306/blocks.jsonl"
+    text_sha256: "sha256:3fa1b61ccea689ec8b33f6b8e77a4674a8b28cf73f39f28b9274a41561148919"
+    text_source: "raw_text"
+  -
+    block_id: "p005_c0001"
+    evidence_id: "meeting_doc_135306#p005_c0001"
+    page_number: 5
+    source_id: "meeting_doc_135306"
+    source_path: "raw/sources/meeting_doc_135306/blocks.jsonl"
+    text_sha256: "sha256:e06d7511377a5ccf95a5288cce7fb09396a6625678ca9ce4782aebca8829e7bc"
+    text_source: "raw_text"
+---
+
+# Procurements
+
+source_id: meeting_doc_135306
+citation: cite block ids exactly as shown in square brackets
+document: 69 block(s)
+
+## Page 1
+
+> [p001_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p001_c0002] Long Island Rail Road Procurements
+[p001_c0003] Richard Mack , MTA Assistant Deputy Chief Contracts Officer – LIRR Procurements
+
+## Page 2
+
+### [p002_c0001] The logo for the MTA Long Island Rail Road, featuring a circular emblem with the letters 'MTA' and the text 'Long Island Rail Road' to its right.
+### [p002_c0002] PROCUREMENTS
+[p002_c0003] The Procurement Agenda this month includes 2 actions for a proposed estimated expenditure of $732.0M.
+
+## Page 3
+
+### [p003_c0001] BOARD RESOLUTION
+[p003_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p003_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p003_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p003_c0005] NOW, the Board resolves as follows:
+[p003_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p003_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p003_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p003_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p003_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p003_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+
+## Page 4
+
+[p004_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department LIRR Procurement Department Head Name Richard Mack Department Head Signature Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 03/26/23 2 Board 03/28/23 Internal Approvals (cont.) Order Approval Order Approval Order Approval
+```
+[p004_c0002]
+
+```text
+March 21, 2024 Department Department Head Name Department Head Signature Internal Approvals Approval Approval 1 Acting President 2 Acting SVP Operations 3
+```
+### [p004_c0003] PURPOSE
+[p004_c0004] To obtain approval of the Board to award various contracts and purchase orders, and to inform the Long Island Rail Road Committee of these procurement actions.
+### [p004_c0005] DISCUSSION
+[p004_c0006] LIRR proposes to award Noncompetitive procurements in the following categories: None
+[p004_c0007] LIRR proposes to award Competitive procurements in the following categories: None
+[p004_c0008] LIRR proposes to award Ratifications in the following categories:
+[p004_c0009]
+
+```text
+Schedules Requiring Two-Thirds Vote: # of Actions $ Amount Schedule D: Ratification of Completed Procurement Actions 2 $ 732.0 M SUBTOTAL $ M TOTAL 2 $ 732.0 M
+```
+[p004_c0010] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p004_c0011] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p004_c0012] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+
+## Page 5
+
+[p005_c0001] MARCH 2024
+### [p005_c0002] LIST OF RATIFICATIONS FOR BOARD APPROVAL
+### [p005_c0003] Procurements Requiring Two-Thirds Vote:
+### [p005_c0004] D. Ratification of Completed Procurement Actions
+[p005_c0005] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p005_c0006] 1. Mitsubishi Electric Power Products, Inc. 10 years Contract # 0000015994 $589,651,280 (est.) Staff Summary Attached Ratification of an Immediate Operating Need for the purchase agreement for M7 Propulsion System Equipment Upgrade Overhaul and Bench Test Equipment. 2. Mitsubishi Electric Power Products, Inc. 5 years Contract # 0000016001 $142,325,007 (est.) Staff Summary Attached Ratification of an Immediate Operating Need for the purchase agreement for the OEM Purchase Agreements for Replacement Parts.
+
+## Page 6
+
+### [p006_c0001] Schedule D: Ratification of Completed Procurement Actions
+[p006_c0002] Item Number: 1
+[p006_c0003]
+
+```text
+Vendor Name (Location) Mitsubishi Electric Power Products, Inc. (Warrendale, Pennsylvania) Description M7 Propulsion System Equipment Upgrade Overhaul Contract Term (including Options, if any) 10 Years (March 1, 2024–March 1, 2034) Option(s) included in Total Amount? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Immediate Operating Need
+```
+[p006_c0004]
+
+```text
+Contact Number 0000015994 Renewal? Yes No Total Amount: $589,651,280 (Est.) Funding Source Operating Capital Federal Other: Requesting Department: Maintenance of Equipment, Brad Jenkins Contract Manager: Marlon Torres
+```
+### [p006_c0005] Discussion:
+[p006_c0006] It is requested that the Board formally ratify the declaration of an Immediate Operating Need (“ION”) approved by the Deputy Chief Procurement Officer, MTA Procurement, waiving competitive bidding pursuant to Article III, Paragraph A, of the All-Agency Procurement Guidelines and Public Authorities Law 1209, subsection 9(a) and approve the award of a purchase agreement for M7 Propulsion System Equipment Upgrade Overhaul and Bench Test Equipment (“BTE”) to Mitsubishi Electric Power Products, Inc. (“MEPPI”).
+[p006_c0007] Due to the urgency to continue to support the Railroads, an ION was declared to purchase components for the M7 Propulsion System upgrade and BTEs. This action is warranted due to the lack of the required number of voting members in attendance at the February 2024 MTA Board meeting. It is noteworthy that this item was approved by both the MTA Joint Railroads subcommittee and MTA Board Finance subcommittee during meetings held on February 26, 2024. It is for this reason that this item is presented for Ratification. Utilizing the ION procedure, a purchase agreement for the M7 Propulsion System Equipment Upgrade Overhaul and Bench Test Equipment was issued on March 8, 2024.
+[p006_c0008] MEPPI is the sole responsible source for the M7 Propulsion System Equipment and BTEs for the M7 Propulsion System Equipment Upgrade Overhaul and BTE’s provided under this contract. No other vendors have access to the proprietary designs, specifications, and drawings for the system and therefore cannot readily provide these components.
+[p006_c0009] The propulsion components covered in the M-7 Propulsion System Upgrade Overhaul and BTE are approaching 20 years of service, which is past the industry standard of 15 years of service life. Long Island Rail Road (“LIRR”) and Metro-North Railroad (“MNR”) are at risk of exponential failure of the propulsion system once the components pass their useful life expectancy. Any failure of an Insulated Gate Bipolar Transistor (“IGBT”) and High Voltage Distribution Box (“HVDB”) will require the pair to be taken out of service. This will result in delays, canceled trains, and cars unavailable for service on both Railroads.
+[p006_c0010] Both Railroads have received a Last Time Buy (“LTB”) notification from MEPPI, for the Insulated Gate Bipolar Transistor (“IGBT”) and High Voltage Distribution Box (“HVDB”) Diode, critical components of the M-7 Propulsion System. Without the procurement of an LTB for the M-7 propulsion overhaul; LIRR and MNR are at risk of a cost prohibitive redesign of the propulsion inverter components necessary to keep the M-7 fleets in service.
+[p006_c0011] Due to the obsolescence and the continuous risk of failures without remedy of the existing system, an ION was declared to purchase the M-7 Propulsion System Equipment Upgrade to keep the M-7 fleets in service.
+[p006_c0012] The initial price proposal submitted was $681,404,003. Negotiations resulted in the final price of $589,651,280. A savings of $91,752,723 or 13 percent reduction or cost savings was achieved. The MTA reviewed and evaluated the pricing to determine cost reasonableness against comparative data from supporting documentation and historical data from past MEPPI purchases.
+[p006_c0013] This contract has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. Any applicable cybersecurity requirements to the extent required have been included in the contract terms and conditions.
+[p006_c0014] MEPPI has certified that pursuant to EO 16 it is not doing business in Russia.
+
+## Page 7
+
+### [p007_c0001] Schedule D: Ratification of Completed Procurement Actions
+### [p007_c0002] Long Island Rail Road
+### [p007_c0003] M/W/SVDOB Information
+[p007_c0004] MTA Department of Diversity and Civil Rights assigned zero goals for this procurement.
+### [p007_c0005] Impact on Funding
+[p007_c0006] This contract is funded by the respective railroad's Operating Budgets.
+
+## Page 8
+
+### [p008_c0001] Schedule D: Ratification of Completed Procurement Actions
+### [p008_c0002] Item Number: 2
+[p008_c0003]
+
+```text
+Vendor Name (Location) Mitsubishi Electric Power Products, Inc. (Warrendale, Pennsylvania) Contact Number 0000016001 Renewal? Yes No Description OEM Purchase Agreements for Replacement Parts Contract Term (including Options, if any) Five Years (March 1, 2024–March 1, 2029) Option(s) included in Total Amount? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Immediate Operating Need Total Amount: $142,325,007 (Est.) Funding Source Operating Capital Federal Other: Requesting Department: Maintenance of Equipment, Brad Jenkins Contract Manager: Marlon Torres
+```
+### [p008_c0004] Discussion:
+[p008_c0005] It is requested that the Board formally ratify the declaration of an Immediate Operating Need (“ION”) approved by the Deputy Chief Procurement Officer, MTA Procurement, waiving competitive bidding pursuant to Article III, Paragraph A, of the All-Agency Procurement Guidelines and Public Authorities Law 1209 subsection 9(a) and approve the award of a five-year contract for replacement parts to Mitsubishi Electric Power Products, Inc. (“MEPPI”).
+[p008_c0006] Due to the urgency to continue to support the Railroads and NYC Transit Life Cycle Maintenance and Reliability Centered Maintenance programs, an ION was declared to purchase replacement Parts for HVAC and propulsion replacement parts utilized on the LIRR’s M-7 electric railcars, MNR’s M-7 and M-8 electric railcars, and NYC Transit subway cars. This action is warranted due to the lack of the required number of voting members in attendance at the February 2024 MTA Board meeting. It is noteworthy that this item was approved by both the MTA Joint Railroads subcommittee and MTA Board Finance subcommittee during meetings held on February 26, 2024. It is for this reason that this item is presented for Ratification. Utilizing the ION procedure, a purchase agreement for replacement parts was issued on March 14, 2024.
+[p008_c0007] MEPPI is the sole responsible source for the components that will be provided under this contract. No other vendors have access to the proprietary designs, specifications, and drawings for the Propulsion System or materials and therefore cannot readily provide these parts and services. Long Island Rail Road (“LIRR”), Metro-North Railroad (“MNR”) (collectively the “Railroads”), and NYC Transit will continue to support its Life Cycle Maintenance and Reliability Centered Maintenance programs, which maintain high car reliability, improve customer service through on-time performance, and provide replacement parts at prescribed intervals. Additionally, parts required to perform unscheduled maintenance and repairs on rail and subway cars are needed to ensure safe, reliable, and maintainable operation.
+[p008_c0008] The initial price proposal submitted was $151,936,550. Negotiations resulted in the final price of $142,325,007. A savings of $9,611,543 or 7 percent reduction or cost savings was achieved. LIRR was able to obtain one-year fixed base pricing and annual adjustments in years 2, 3, 4, and 5 of the contracts. A Producer Price Index adjustment will be applied on each consequent anniversary for each year of the contract thereafter. Any additional items not identified and/or additions will be established on an as-required basis, and each item will be subject to a cost and/or price analysis as well as the most-favored customer pricing clause. Where applicable, MEPPI will provide redacted invoices from other customers’ purchases to support fair and reasonable pricing. For the fixed-price items, the MTA Cost Price Analysis Unit has reviewed a compilation of various metrics and based on those metrics, determined the pricing to be fair and reasonable.
+[p008_c0009] This contract has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. Any applicable cybersecurity requirements to the extent required have been included in the contract terms and conditions.
+[p008_c0010] MEPPI has certified that pursuant to EO 16 it is not doing business in Russia.
+### [p008_c0011] M/W/SVDOB Information
+[p008_c0012] MTA Department of Diversity and Civil Rights assigned zero goals for this procurement.
+### [p008_c0013] Impact on Funding
+[p008_c0014] This contract is funded by the respective railroad’s Operating Budget.

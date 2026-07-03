@@ -1,0 +1,508 @@
+{
+  "note_id": "codex-identity-batch124-prep",
+  "batch_id": "identity124",
+  "created_at": "2026-06-23T05:43:18Z",
+  "author": "Codex subagent",
+  "scope": {
+    "mode": "codex-only deterministic prep",
+    "batch": "identity124",
+    "global_kind": "entity",
+    "record_kinds_in_scope": [
+      "entity"
+    ],
+    "output_artifact": "data/review_notes/codex-identity-batch124-prep.json"
+  },
+  "prepared_count": 10,
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_jin-ct-llc-meeting-doc-133406",
+      "target_id": "entity_jin-ct-llc-meeting-doc-133406",
+      "alias_id": "entity_meeting-doc-133366-jin-ct-llc",
+      "canonical_name": "Jin CT LLC",
+      "alias_name": "Jin CT LLC",
+      "reason": "Same durable company. Both records have the exact entity name Jin CT LLC and compatible company typing; the alias is a single-source duplicate of the target company record.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_jin-ct-llc-meeting-doc-133406",
+          "record_kind": "entity",
+          "entity_name": "Jin CT LLC",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_133406"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133406#p011_c0008"
+          ],
+          "source_quote": "Jin CT LLC"
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-133366-jin-ct-llc",
+          "record_kind": "entity",
+          "entity_name": "Jin CT LLC",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_133366"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133366#p001_c0003"
+          ],
+          "source_quote": "Jin CT LLC"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: exact legal/company name and compatible company type. Not a role/person, committee/member, agency/subunit, office/person, or source-time false friend. Alias absent from current data/identity-overrides/merges.json entity map and visible identity prep through identity123; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_jin-ct-llc-meeting-doc-133406",
+      "target_id": "entity_jin-ct-llc-meeting-doc-133406",
+      "alias_id": "entity_meeting-doc-133551-jin-ct",
+      "canonical_name": "Jin CT LLC",
+      "alias_name": "Jin CT LLC",
+      "reason": "Same durable company. Both records have the exact entity name Jin CT LLC and company typing; the alias is another single-source duplicate of the target company record.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_jin-ct-llc-meeting-doc-133406",
+          "record_kind": "entity",
+          "entity_name": "Jin CT LLC",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_133406"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133406#p011_c0008"
+          ],
+          "source_quote": "Jin CT LLC"
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-133551-jin-ct",
+          "record_kind": "entity",
+          "entity_name": "Jin CT LLC",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_133551"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133551#p052_c0008"
+          ],
+          "source_quote": "Jin CT LLC"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: exact legal/company name and compatible company type. Not a role/person, committee/member, agency/subunit, office/person, or source-time false friend. Alias absent from current data/identity-overrides/merges.json entity map and visible identity prep through identity123; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_mercer-health-benefits",
+      "target_id": "entity_mercer-health-benefits",
+      "alias_id": "entity_meeting-doc-189981-mercer",
+      "canonical_name": "Mercer Health & Benefits, LLC",
+      "alias_name": "Mercer Health & Benefits LLC",
+      "reason": "Same durable benefits consulting firm. The target already carries both punctuation variants of Mercer Health & Benefits LLC and short name Mercer; the alias uses the same legal name without comma punctuation.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_mercer-health-benefits",
+          "record_kind": "entity",
+          "entity_name": "Mercer Health & Benefits, LLC",
+          "entity_type": "vendor",
+          "short_name": "Mercer",
+          "source_ids": [
+            "meeting_doc_129066",
+            "meeting_doc_151736",
+            "meeting_doc_160296"
+          ],
+          "evidence_refs": [
+            "meeting_doc_129066#p004_c0009",
+            "meeting_doc_160296#p002_c0010",
+            "meeting_doc_151736#p003_c0005"
+          ],
+          "source_quote": "Mercer Health & Benefits LLC (\"Mercer\")"
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-189981-mercer",
+          "record_kind": "entity",
+          "entity_name": "Mercer Health & Benefits LLC",
+          "entity_type": "company",
+          "short_name": "Mercer",
+          "source_ids": [
+            "meeting_doc_189981"
+          ],
+          "evidence_refs": [
+            "meeting_doc_189981#p010_c0006"
+          ],
+          "source_quote": "Mercer Health & Benefits LLC (\"Mercer\")"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: same legal/vendor name with only comma punctuation difference, same short name Mercer, and compatible vendor/company type. Not a role/person, committee/member, agency/subunit, office/person, or source-time false friend. Alias absent from current data/identity-overrides/merges.json entity map and visible identity prep through identity123; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_mercer-health-benefits",
+      "target_id": "entity_mercer-health-benefits",
+      "alias_id": "entity_mercer-health-benefits-186841",
+      "canonical_name": "Mercer Health & Benefits, LLC",
+      "alias_name": "Mercer Health & Benefits LLC",
+      "reason": "Same durable benefits consulting firm. The alias evidence identifies Mercer Health & Benefits LLC, short name Mercer, as the benefit consulting firm assisting MTA; the target is the established Mercer Health & Benefits vendor record with the same name variants.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_mercer-health-benefits",
+          "record_kind": "entity",
+          "entity_name": "Mercer Health & Benefits, LLC",
+          "entity_type": "vendor",
+          "short_name": "Mercer",
+          "source_ids": [
+            "meeting_doc_129066",
+            "meeting_doc_151736",
+            "meeting_doc_160296"
+          ],
+          "evidence_refs": [
+            "meeting_doc_129066#p004_c0009",
+            "meeting_doc_160296#p002_c0010",
+            "meeting_doc_151736#p003_c0005"
+          ],
+          "source_quote": "Mercer Health & Benefits LLC (\"Mercer\")"
+        },
+        "alias": {
+          "record_id": "entity_mercer-health-benefits-186841",
+          "record_kind": "entity",
+          "entity_name": "Mercer Health & Benefits LLC",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_186841"
+          ],
+          "evidence_refs": [
+            "meeting_doc_186841#p003_c0003"
+          ],
+          "source_quote": "The MTA, assisted by Mercer Health & Benefits LLC (\"Mercer\"), a benefit consulting firm"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: same legal/vendor name with only comma punctuation difference, shared Mercer short-name evidence, and compatible vendor/company/consulting-firm type. Not a role/person, committee/member, agency/subunit, office/person, or source-time false friend. Alias absent from current data/identity-overrides/merges.json entity map and visible identity prep through identity123; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_meeting-doc-167236-etech-simulation",
+      "target_id": "entity_meeting-doc-167236-etech-simulation",
+      "alias_id": "entity_meeting-doc-170981-etech",
+      "canonical_name": "Etech Simulation Corp",
+      "alias_name": "Etech Simulation Corporation",
+      "reason": "Same durable vendor. The alias expands Corp to Corporation and provides the same Etech short name; both records identify Etech Simulation as an organization/vendor.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_meeting-doc-167236-etech-simulation",
+          "record_kind": "entity",
+          "entity_name": "Etech Simulation Corp",
+          "entity_type": "vendor",
+          "source_ids": [
+            "meeting_doc_167236"
+          ],
+          "evidence_refs": [
+            "meeting_doc_167236#p005_c0006",
+            "meeting_doc_167236#p006_c0004"
+          ],
+          "source_quote": "Etech Simulation Corp"
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-170981-etech",
+          "record_kind": "entity",
+          "entity_name": "Etech Simulation Corporation",
+          "entity_type": "organization",
+          "acronym": "Etech",
+          "source_ids": [
+            "meeting_doc_170981"
+          ],
+          "evidence_refs": [
+            "meeting_doc_170981#p004_c0008"
+          ],
+          "source_quote": "Etech Simulation Corporation (\"Etech\")"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: Corp/Corporation expansion with matching Etech Simulation name and compatible vendor/organization type. Not a role/person, committee/member, agency/subunit, office/person, or source-time false friend. Alias absent from current data/identity-overrides/merges.json entity map and visible identity prep through identity123; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_meeting-doc-68196-kiewit",
+      "target_id": "entity_meeting-doc-68196-kiewit",
+      "alias_id": "entity_meeting-doc-72536-kiewit",
+      "canonical_name": "Kiewit Infrastructure Company",
+      "alias_name": "Kiewit Infrastructure Company",
+      "reason": "Same durable company/vendor. Both records use the exact entity name Kiewit Infrastructure Company, with compatible company and vendor typing.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_meeting-doc-68196-kiewit",
+          "record_kind": "entity",
+          "entity_name": "Kiewit Infrastructure Company",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_68196"
+          ],
+          "evidence_refs": [
+            "meeting_doc_68196#p051_c0010",
+            "meeting_doc_68196#p057_c0008"
+          ],
+          "source_quote": "Kiewit Infrastructure Company"
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-72536-kiewit",
+          "record_kind": "entity",
+          "entity_name": "Kiewit Infrastructure Company",
+          "entity_type": "vendor",
+          "source_ids": [
+            "meeting_doc_72536"
+          ],
+          "evidence_refs": [
+            "meeting_doc_72536#p009_c0001",
+            "meeting_doc_72536#p009_c0003"
+          ],
+          "source_quote": "Kiewit Infrastructure Company"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: exact company name and compatible company/vendor type. Not a role/person, committee/member, agency/subunit, office/person, or source-time false friend. Alias absent from current data/identity-overrides/merges.json entity map and visible identity prep through identity123; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_ltk-engineering-services",
+      "target_id": "entity_ltk-engineering-services",
+      "alias_id": "entity_meeting-doc-196901-ltk-engineering",
+      "canonical_name": "LTK Engineering Services of New York LLC",
+      "alias_name": "LTK Engineering Services of New York LLC",
+      "reason": "Same durable vendor. Both records use the exact entity name LTK Engineering Services of New York LLC and acronym LTK; the alias is a one-source duplicate of the established LTK vendor record.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_ltk-engineering-services",
+          "record_kind": "entity",
+          "entity_name": "LTK Engineering Services of New York LLC",
+          "entity_type": "vendor",
+          "acronym": "LTK",
+          "source_ids": [
+            "meeting_doc_197031",
+            "meeting_doc_98291"
+          ],
+          "evidence_refs": [
+            "meeting_doc_197031#p008_c0006",
+            "meeting_doc_98291#p009_c0006"
+          ],
+          "source_quote": "LTK Engineering Services of New York LLP"
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-196901-ltk-engineering",
+          "record_kind": "entity",
+          "entity_name": "LTK Engineering Services of New York LLC",
+          "entity_type": "vendor",
+          "acronym": "LTK",
+          "source_ids": [
+            "meeting_doc_196901"
+          ],
+          "evidence_refs": [
+            "meeting_doc_196901#p008_c0006"
+          ],
+          "source_quote": "LTK Engineering Services of New York LLC"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: exact entity name, matching acronym, and exact vendor type. Not a role/person, committee/member, agency/subunit, office/person, or source-time false friend. Alias absent from current data/identity-overrides/merges.json entity map and visible identity prep through identity123; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_meeting-doc-170991-laz-parking",
+      "target_id": "entity_meeting-doc-170991-laz-parking",
+      "alias_id": "entity_meeting-doc-171381-laz-parking",
+      "canonical_name": "LAZ PARKING NY/NJ, LLC",
+      "alias_name": "LAZ Parking NY/NJ, LLC",
+      "reason": "Same durable parking vendor. The target already carries the case variant LAZ Parking NY/NJ, LLC and acronym LAZ; the alias differs only in capitalization and has compatible company typing.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_meeting-doc-170991-laz-parking",
+          "record_kind": "entity",
+          "entity_name": "LAZ PARKING NY/NJ, LLC",
+          "entity_type": "vendor",
+          "acronym": "LAZ",
+          "source_ids": [
+            "meeting_doc_170991",
+            "meeting_doc_171021",
+            "meeting_doc_98321"
+          ],
+          "evidence_refs": [
+            "meeting_doc_171021#p001_c0003",
+            "meeting_doc_170991#p014_c0007",
+            "meeting_doc_98321#p113_c0008"
+          ],
+          "source_quote": "LICENSEE: LAZ PARKING NY/NJ, LLC (\"LAZ\")"
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-171381-laz-parking",
+          "record_kind": "entity",
+          "entity_name": "LAZ Parking NY/NJ, LLC",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_171381"
+          ],
+          "evidence_refs": [
+            "meeting_doc_171381#p053_c0007"
+          ],
+          "source_quote": "LAZ Parking NY/NJ, LLC"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: same legal name with capitalization difference only, shared LAZ acronym on target, and compatible vendor/company type. Not a role/person, committee/member, agency/subunit, office/person, or source-time false friend. Alias absent from current data/identity-overrides/merges.json entity map and visible identity prep through identity123; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_meeting-doc-115191-loram",
+      "target_id": "entity_meeting-doc-115191-loram",
+      "alias_id": "entity_meeting-doc-121091-loram",
+      "canonical_name": "Loram Maintenance of Way, Inc.",
+      "alias_name": "Loram Maintenance of Way, Inc.",
+      "reason": "Same durable contractor/vendor. Both records use the exact legal name Loram Maintenance of Way, Inc. and short name Loram, with compatible contractor/vendor typing.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_meeting-doc-115191-loram",
+          "record_kind": "entity",
+          "entity_name": "Loram Maintenance of Way, Inc.",
+          "entity_type": "vendor/contractor",
+          "short_name": "Loram",
+          "source_ids": [
+            "meeting_doc_115191",
+            "meeting_doc_143176",
+            "meeting_doc_143191"
+          ],
+          "evidence_refs": [
+            "meeting_doc_115191#p005_c0006",
+            "meeting_doc_115191#p006_c0004",
+            "meeting_doc_143176#p006_c0004"
+          ],
+          "source_quote": "Loram Maintenance of Way, Inc."
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-121091-loram",
+          "record_kind": "entity",
+          "entity_name": "Loram Maintenance of Way, Inc.",
+          "entity_type": "contractor",
+          "short_name": "Loram",
+          "source_ids": [
+            "meeting_doc_121091"
+          ],
+          "evidence_refs": [
+            "meeting_doc_121091#p015_c0009"
+          ],
+          "source_quote": "Loram Maintenance of Way, Inc."
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: exact legal name, matching short name, and compatible contractor/vendor type. Not a role/person, committee/member, agency/subunit, office/person, or source-time false friend. Alias absent from current data/identity-overrides/merges.json entity map and visible identity prep through identity123; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_mv-transportation",
+      "target_id": "entity_mv-transportation",
+      "alias_id": "entity_mv-transportation-meeting-doc-164791",
+      "canonical_name": "MV Transportation",
+      "alias_name": "MV Transportation",
+      "reason": "Same durable transportation contractor/company. Both records use the exact entity name MV Transportation; the alias evidence also supplies the short-name form MV, and contractor/company typing is compatible.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_mv-transportation",
+          "record_kind": "entity",
+          "entity_name": "MV Transportation",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_165146"
+          ],
+          "evidence_refs": [
+            "meeting_doc_165146#p029_c0003"
+          ],
+          "source_quote": "MV Transportation"
+        },
+        "alias": {
+          "record_id": "entity_mv-transportation-meeting-doc-164791",
+          "record_kind": "entity",
+          "entity_name": "MV Transportation",
+          "entity_type": "contractor",
+          "source_ids": [
+            "meeting_doc_164791"
+          ],
+          "evidence_refs": [
+            "meeting_doc_164791#p010_c0004"
+          ],
+          "source_quote": "MV Transportation (\"MV\")"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: exact entity name and compatible company/contractor type. Not a role/person, committee/member, agency/subunit, office/person, or source-time false friend. Alias absent from current data/identity-overrides/merges.json entity map and visible identity prep through identity123; pair absent from do-not-merge."
+    }
+  ],
+  "guard_summary": {
+    "entity_only": true,
+    "global_kind": "entity",
+    "prepared_count": 10,
+    "merges_shape_confirmed": "data/identity-overrides/merges.json stores alias_id -> target_id mappings under aliases.entity; proposals preserve that durable shape for later application.",
+    "exclusions": [
+      "Excluded aliases already present in data/identity-overrides/merges.json aliases.entity.",
+      "Excluded aliases already visible in codex identity prep artifacts through identity123.",
+      "Excluded low-confidence candidates and avoided role/person, committee/member, agency/subunit, office/person, and source-time false-friend shapes.",
+      "No selected alias or target id appeared in data/identity-overrides/do-not-merge.json."
+    ]
+  },
+  "command_evidence": [
+    {
+      "command": "rg --files data/identity-overrides data/review_notes data/canonical",
+      "purpose": "Located identity override files, prior review prep artifacts through identity123, and canonical entity records."
+    },
+    {
+      "command": "jq '.aliases | to_entries[0:10]' data/identity-overrides/merges.json",
+      "purpose": "Confirmed merges.json durable alias map shape and the presence of an entity alias map."
+    },
+    {
+      "command": "node read-only scan of data/review_notes/codex-identity-batch{047..123}-prep.json and data/identity-overrides/merges.json",
+      "purpose": "Verified selected aliases are absent from applied entity merges and visible prepared identity batches through identity123."
+    },
+    {
+      "command": "node read-only duplicate-name scan over data/canonical/entities.jsonl",
+      "purpose": "Found exact-name organization/vendor duplicate groups while filtering out likely person, role, committee-member, office-person, and agency-subunit ambiguity."
+    },
+    {
+      "command": "node read-only extraction of selected records from data/canonical/entities.jsonl",
+      "purpose": "Collected target and alias names, entity types, source ids, and evidence refs for each proposal."
+    },
+    {
+      "command": "sed -n '1,80p' data/identity-overrides/do-not-merge.json and node text search for selected ids",
+      "purpose": "Confirmed do-not-merge structure and checked that no selected alias or target id appears there."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Generated created_at timestamp for this prep artifact."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "canonicalize",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema-propose",
+    "ontology-normalize-run",
+    "ingest with --profile/provider",
+    "write with --profile/provider",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB publish/repair",
+    "provider-backed commands",
+    "external LLM commands"
+  ]
+}

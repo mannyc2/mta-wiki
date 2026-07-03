@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "corridor_cluster_9523db7ca6",
+  "kind": "corridor",
+  "packet_path": "data/identity-review/packets/corridor_cluster_9523db7ca6.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_9523db7ca6.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "corridor_hylan-boulevard-brt",
+        "corridor_stationary-staten-island"
+      ],
+      "reason": "Strong identity fields differ: corridor_hylan-boulevard-brt has specific limits (Lincoln Avenue to Steuben Street) and is a single BRT corridor; corridor_stationary-staten-island has no limits and represents a set of stationary camera corridors in Staten Island. Per per-kind rules for corridors, identity = street(s) + borough + limits. The second record lacks limits and its name and description indicate a grouping, not a single scoped corridor, so test 1 (contradiction) applies."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "The two records share a street (Hylan Boulevard) and borough (Staten Island), but the first is a precisely bounded BRT corridor (Lincoln Ave to Steuben St) while the second is an aggregate of multiple corridors with no limits. Per the identity merge canon, a corridor's identity hinges on street+borough+limits; the second record lacks limits and its name ('Staten Island stationary camera corridors') indicates it is not a single scoped corridor. Hence test 1 forces do_not_merge. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

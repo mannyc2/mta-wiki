@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "review_state": "quarantined",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_needs_correction_before_promotion",
+  "cluster_id": "route_cluster_008",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_008.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_008.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "quarantine": {
+    "blocker": "route_plus_policy_required",
+    "note": "Revisit route_bx41-plus because ACE/MTA plus route ids may be SBS-coded dataset route ids; do not promote do-not-merge against BX41-SBS yet."
+  },
+  "original_action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 2,
+    "missing_field_count": 1,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "route_bx41-plus",
+        "route_webster-ave-sbs"
+      ],
+      "reason": "Distinct service variants on the same base route BX41. route_bx41-plus is the limited-stop '+' variant (BX41+), while route_webster-ave-sbs is the Select Bus Service variant (BX41-SBS) on Webster Avenue in the Bronx. The shared identity key route_bx41 is only the broad base route label, not a variant-specific identifier. The canonical JSONL already keeps analogous pairs distinct (e.g., route_b44-plus vs route_b44-sbs). The negative signal 'variant mismatch: plus-label vs ace-dataset,sbs' confirms these are different service types that should not be merged."
+    }
+  ],
+  "original_rationale": "Both records share base route BX41 but represent different service variants: '+'(limited-stop) vs 'SBS' (Select Bus Service). The ACE routes dataset dictionary lists BX41+ as a distinct item alongside other '+' values. The webster-ave-sbs record has full route name 'Webster Avenue Select Bus Service', route label 'BX41-SBS', borough 'Bronx', and streets 'Webster Av'. The canonical JSONL maintains analogous separations (route_b44-plus separate from route_b44-sbs). The validator duplicate_identity alert is a false positive caused by the shared coarse identity key route_bx41.",
+  "required_follow_up": [
+    "Resolve blocker before creating accepted merge/do-not-merge overrides.",
+    "Do not apply this packet directly to data/identity-overrides/merges.json."
+  ]
+}

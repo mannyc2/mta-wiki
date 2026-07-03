@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-02-58-604Z_1976810-5cc8b5d0_ingest_2012-03-15-brt-hylan-meeting-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:33:36.344Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "hylan-study-2012-03",
+        "local_observation_id": "project_hylan_blvd_transportation_improvement_study_2012_03",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id 'project_hylan-blvd-transportation-improvement-study', which matches the existing registry record with the same name, source (2012_03_15_brt_hylan_meeting_slides), and description. No new registry record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_03_15_brt_hylan_meeting_slides",
+            "block_id": "p001_c0003",
+            "source_quote": "Hylan Boulevard Corridor Transportation Improvement Study"
+          },
+          {
+            "source_id": "2012_03_15_brt_hylan_meeting_slides",
+            "block_id": "p004_c0004",
+            "source_quote": "Improve traffic flow ■ Reduce bus travel time and improve reliability ■ Improve transit access to Manhattan, Brooklyn, and Staten Island destinations ■ Improve safety for all corridor users"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-33-01-547Z_2111393-4fbf8983_canonicalize_2026-06-10t23-02-58-604z-1976810-5cc8b5d0-ingest-2012-03-15-brt-hylan-meeting-slides-project-identity"
+}

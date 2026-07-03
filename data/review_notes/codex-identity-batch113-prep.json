@@ -1,0 +1,275 @@
+{
+  "batch_id": "codex-identity-batch113",
+  "created_at": "2026-06-23T04:53:23Z",
+  "scope": {
+    "record_kind": "project",
+    "global_only": true,
+    "max_aliases": 8
+  },
+  "prepared_count": 8,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-111896-mnr-auto-fuel-system",
+      "target_id": "project_mnr-automotive-fuel-system-may2023",
+      "reason": "Same Metro-North automotive fuel system upgrade project. Both records use the exact project_name/display name; differences are document-time status snapshots around active/in-progress property acquisition, not distinct scopes.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Metro-North Upgrade Automotive Fuel System Project",
+          "project_name": "Metro-North Upgrade Automotive Fuel System Project",
+          "project_type": "infrastructure upgrade",
+          "project_family": "capital_or_infrastructure",
+          "status": "active - property acquisition"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Metro-North Upgrade Automotive Fuel System Project",
+          "project_name": "Metro-North Upgrade Automotive Fuel System Project",
+          "project_type": "infrastructure upgrade",
+          "project_family": "capital_or_infrastructure",
+          "status": "in progress"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_111896#p108_c0009",
+        "meeting_doc_111896#p110_c0013",
+        "meeting_doc_112036#p077_c0009"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_mnrr-fuel-system-upgrade",
+      "target_id": "project_mnr-automotive-fuel-system-may2023",
+      "reason": "Same Metro-North automotive fuel system upgrade project. The alias has the same exact project_name/display name as the target and a compatible property-acquisition status snapshot.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Metro-North Upgrade Automotive Fuel System Project",
+          "project_name": "Metro-North Upgrade Automotive Fuel System Project",
+          "status": "property acquisition"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Metro-North Upgrade Automotive Fuel System Project",
+          "project_name": "Metro-North Upgrade Automotive Fuel System Project",
+          "project_type": "infrastructure upgrade",
+          "project_family": "capital_or_infrastructure",
+          "status": "in progress"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_95536#p073_c0008",
+        "meeting_doc_95536#p073_c0010",
+        "meeting_doc_112036#p077_c0009"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_r211-subway-car-meeting-doc-113971",
+      "target_id": "project_r211-subway-car-program",
+      "reason": "Same R211 Subway Car Program. Both records carry the exact project_name/display name and describe rolling-stock procurement/construction status for the same subway car program.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "R211 Subway Car Program",
+          "project_name": "R211 Subway Car Program",
+          "project_type": "Rolling Stock",
+          "status": "In Construction"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "R211 Subway Car Program",
+          "project_name": "R211 Subway Car Program",
+          "project_type": "rolling stock procurement",
+          "status": "In production"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_113971#p005_c0012",
+        "meeting_doc_113971#p006_c0003",
+        "meeting_doc_91616#p007_c0003"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_r211-subway-cars-dec2024",
+      "target_id": "project_r211-subway-car-program",
+      "reason": "Same R211 Subway Car Program. The pluralized December 2024 record uses the same project_name/display name and compatible rolling-stock project type/status.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "R211 Subway Car Program",
+          "project_name": "R211 Subway Car Program",
+          "project_type": "rolling stock",
+          "project_family": "other",
+          "status": "active"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "R211 Subway Car Program",
+          "project_name": "R211 Subway Car Program",
+          "project_type": "rolling stock procurement",
+          "project_family": "other",
+          "status": "In production"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_160446#p009_c0008",
+        "meeting_doc_91616#p007_c0003"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_98266-overhead-bridge-program",
+      "target_id": "project_meeting-doc-104771-overhead-bridge-program-ny",
+      "reason": "Same Overhead Bridge Program (NY). Both records use the exact display/project name; bridge maintenance vs bridge repair program wording and active/in-progress status are compatible document-time descriptions of the same program.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Overhead Bridge Program (NY)",
+          "project_name": "Overhead Bridge Program (NY)",
+          "project_type": "bridge maintenance",
+          "status": "in progress"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Overhead Bridge Program (NY)",
+          "project_name": "Overhead Bridge Program (NY)",
+          "project_type": "bridge repair program",
+          "status": "ongoing"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_98266#p007_c0002",
+        "meeting_doc_104771#p007_c0002",
+        "meeting_doc_104771#p007_c0003"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-111786-overhead-bridge-program-ny",
+      "target_id": "project_meeting-doc-104771-overhead-bridge-program-ny",
+      "reason": "Same Overhead Bridge Program (NY). The alias and target have exact matching display/project names; the alias status describes multiple sites at different completion percentages inside the same program.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Overhead Bridge Program (NY)",
+          "project_name": "Overhead Bridge Program (NY)",
+          "status": "multiple sites at various completion percentages"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Overhead Bridge Program (NY)",
+          "project_name": "Overhead Bridge Program (NY)",
+          "project_type": "bridge repair program",
+          "status": "ongoing"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_111786#p007_c0002",
+        "meeting_doc_104771#p007_c0002",
+        "meeting_doc_104771#p007_c0003"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_98266-right-of-way-fence",
+      "target_id": "project_meeting-doc-104771-right-of-way-fence",
+      "reason": "Same Right of Way Fence project/program. Both records share project_name 'Right of Way Fence' and capital/infrastructure maintenance scope; completion-status differences are document-time progress updates.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Right of Way Fence",
+          "project_name": "Right of Way Fence",
+          "project_type": "infrastructure maintenance",
+          "project_family": "capital_or_infrastructure",
+          "status": "in progress"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Right of Way Fence Program",
+          "project_name": "Right of Way Fence",
+          "project_type": "infrastructure improvements",
+          "project_family": "capital_or_infrastructure",
+          "status": "100% complete"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_98266#p012_c0006",
+        "meeting_doc_104771#p012_c0002",
+        "meeting_doc_111786#p012_c0002"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_mnr-right-of-way-fence-q3-2023",
+      "target_id": "project_meeting-doc-104771-right-of-way-fence",
+      "reason": "Same Right of Way Fence project/program. The alias and target have the same project_name; Q3 2023/in-progress wording is a source-time update for the same capital/infrastructure scope.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Right of Way Fence",
+          "project_name": "Right of Way Fence",
+          "status": "in progress"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Right of Way Fence Program",
+          "project_name": "Right of Way Fence",
+          "project_type": "infrastructure improvements",
+          "project_family": "capital_or_infrastructure",
+          "status": "100% complete"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_124216#p012_c0002",
+        "meeting_doc_104771#p012_c0002",
+        "meeting_doc_111786#p012_c0002"
+      ]
+    }
+  ],
+  "guard_summary": {
+    "candidate_discovery": {
+      "project_name_group_command": "sqlite3 -header -column data/canonical.db \"select lower(trim(coalesce(p.project_name,''))) as project_key, count(*) as n, group_concat(r.record_id, ' | ') as ids from records r join projects p on r.record_id=p.record_id where r.record_kind='project' and coalesce(p.project_name,'') != '' group by lower(trim(p.project_name)) having n > 1 order by n desc, project_key limit 120;\"",
+      "display_name_group_command": "sqlite3 -header -column data/canonical.db \"select lower(trim(r.display_name)) as display_key, count(*) as n, group_concat(r.record_id, ' | ') as ids from records r where r.record_kind='project' and coalesce(r.display_name,'') != '' group by lower(trim(r.display_name)) having n > 1 order by n desc, display_key limit 120;\"",
+      "result_summary": "Selected only exact-title project groups with compatible project_type/project_family/status snapshots. Skipped ambiguous bus-priority rows where phase, route variant, document audience, or corridor scope could make same-name records distinct."
+    },
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -column data/canonical.db \"select r.record_id, r.record_kind, r.display_name, p.project_name, p.project_type, p.project_family, p.document_time_status, p.status, r.primary_source_id, (select count(*) from record_sources rs where rs.record_id=r.record_id) as source_count from records r join projects p on r.record_id=p.record_id where r.record_id in ('project_meeting-doc-111896-mnr-auto-fuel-system','project_mnr-automotive-fuel-system-may2023','project_mnrr-fuel-system-upgrade','project_r211-subway-car-program','project_r211-subway-cars-dec2024','project_r211-subway-car-meeting-doc-113971','project_98266-overhead-bridge-program','project_meeting-doc-111786-overhead-bridge-program-ny','project_meeting-doc-104771-overhead-bridge-program-ny','project_98266-right-of-way-fence','project_mnr-right-of-way-fence-q3-2023','project_meeting-doc-104771-right-of-way-fence') order by r.record_id;\"",
+      "count_command": "sqlite3 data/canonical.db \"select count(*) from records where record_kind='project' and record_id in ('project_meeting-doc-111896-mnr-auto-fuel-system','project_mnr-automotive-fuel-system-may2023','project_mnrr-fuel-system-upgrade','project_r211-subway-car-program','project_r211-subway-cars-dec2024','project_r211-subway-car-meeting-doc-113971','project_98266-overhead-bridge-program','project_meeting-doc-111786-overhead-bridge-program-ny','project_meeting-doc-104771-overhead-bridge-program-ny','project_98266-right-of-way-fence','project_mnr-right-of-way-fence-q3-2023','project_meeting-doc-104771-right-of-way-fence');\"",
+      "count_result": "12",
+      "result_summary": "12/12 selected alias and target records exist as record_kind=project. Field checks show exact project_name/display-name matches within each selected project family: Metro-North Upgrade Automotive Fuel System Project, R211 Subway Car Program, Overhead Bridge Program (NY), and Right of Way Fence."
+    },
+    "source_evidence_spot_check": {
+      "jsonl_command": "jq -r 'select(.record_id|IN(\"project_meeting-doc-111896-mnr-auto-fuel-system\",\"project_mnr-automotive-fuel-system-may2023\",\"project_mnrr-fuel-system-upgrade\",\"project_r211-subway-car-program\",\"project_r211-subway-cars-dec2024\",\"project_r211-subway-car-meeting-doc-113971\",\"project_98266-overhead-bridge-program\",\"project_meeting-doc-111786-overhead-bridge-program-ny\",\"project_meeting-doc-104771-overhead-bridge-program-ny\",\"project_98266-right-of-way-fence\",\"project_mnr-right-of-way-fence-q3-2023\",\"project_meeting-doc-104771-right-of-way-fence\")) | [.record_id, .display_name, (.payload.project_name // \"\"), (.payload.project_type // \"\"), (.payload.project_family // \"\"), (.payload.document_time_status // \"\"), (.payload.status // \"\"), ([.evidence_refs[0:3][]?.evidence_id] | join(\",\"))] | @tsv' data/canonical/projects.jsonl",
+      "db_evidence_command": "sqlite3 -header -column data/canonical.db \"select record_id, json_extract(ref_json,'$.evidence_id') as evidence_id, source_id, page_number, block_id from evidence_refs where record_id in ('project_meeting-doc-111896-mnr-auto-fuel-system','project_mnr-automotive-fuel-system-may2023','project_mnrr-fuel-system-upgrade','project_r211-subway-car-program','project_r211-subway-cars-dec2024','project_r211-subway-car-meeting-doc-113971','project_98266-overhead-bridge-program','project_meeting-doc-111786-overhead-bridge-program-ny','project_meeting-doc-104771-overhead-bridge-program-ny','project_98266-right-of-way-fence','project_mnr-right-of-way-fence-q3-2023','project_meeting-doc-104771-right-of-way-fence') and ordinal < 3 order by record_id, ordinal;\"",
+      "result_summary": "All selected records have source-backed evidence refs. Evidence refs are included per alias above."
+    },
+    "existing_alias_conflicts": {
+      "merges_json_command": "for id in project_meeting-doc-111896-mnr-auto-fuel-system project_mnrr-fuel-system-upgrade project_r211-subway-car-meeting-doc-113971 project_r211-subway-cars-dec2024 project_98266-overhead-bridge-program project_meeting-doc-111786-overhead-bridge-program-ny project_98266-right-of-way-fence project_mnr-right-of-way-fence-q3-2023; do jq -r --arg id \"$id\" '.aliases.project[$id] // empty | select(. != \"\") | $id + \" -> \" + .' data/identity-overrides/merges.json; done",
+      "merges_json_result": "no output; none of the proposed aliases are already present in data/identity-overrides/merges.json",
+      "identity_aliases_command": "sqlite3 -header -column data/canonical.db \"select kind, alias, target from identity_aliases where kind='project' and alias in ('project_meeting-doc-111896-mnr-auto-fuel-system','project_mnrr-fuel-system-upgrade','project_r211-subway-car-meeting-doc-113971','project_r211-subway-cars-dec2024','project_98266-overhead-bridge-program','project_meeting-doc-111786-overhead-bridge-program-ny','project_98266-right-of-way-fence','project_mnr-right-of-way-fence-q3-2023');\"",
+      "identity_aliases_result": "no output; none of the proposed aliases are already present in canonical identity_aliases",
+      "target_alias_guard_command": "for id in project_mnr-automotive-fuel-system-may2023 project_r211-subway-car-program project_meeting-doc-104771-overhead-bridge-program-ny project_meeting-doc-104771-right-of-way-fence; do jq -r --arg id \"$id\" '.aliases.project[$id] // empty | select(. != \"\") | $id + \" -> \" + .' data/identity-overrides/merges.json; done; sqlite3 -header -column data/canonical.db \"select kind, alias, target from identity_aliases where kind='project' and alias in ('project_mnr-automotive-fuel-system-may2023','project_r211-subway-car-program','project_meeting-doc-104771-overhead-bridge-program-ny','project_meeting-doc-104771-right-of-way-fence');\"",
+      "target_alias_guard_result": "no output; selected targets are not themselves registered aliases in overrides or canonical identity_aliases"
+    },
+    "do_not_merge_conflicts": {
+      "db_command": "sqlite3 -header -column data/canonical.db \"with pairs(alias,target) as (values ('project_meeting-doc-111896-mnr-auto-fuel-system','project_mnr-automotive-fuel-system-may2023'),('project_mnrr-fuel-system-upgrade','project_mnr-automotive-fuel-system-may2023'),('project_r211-subway-car-meeting-doc-113971','project_r211-subway-car-program'),('project_r211-subway-cars-dec2024','project_r211-subway-car-program'),('project_98266-overhead-bridge-program','project_meeting-doc-104771-overhead-bridge-program-ny'),('project_meeting-doc-111786-overhead-bridge-program-ny','project_meeting-doc-104771-overhead-bridge-program-ny'),('project_98266-right-of-way-fence','project_meeting-doc-104771-right-of-way-fence'),('project_mnr-right-of-way-fence-q3-2023','project_meeting-doc-104771-right-of-way-fence')) select d.* from do_not_merge d join pairs p on d.kind='project' and ((d.record_id_a=p.alias and d.record_id_b=p.target) or (d.record_id_a=p.target and d.record_id_b=p.alias));\"",
+      "db_result": "no output; no selected pair is present in canonical do_not_merge",
+      "json_command": "jq -r '.pairs.project[]? | select((.record_ids | index(\"project_meeting-doc-111896-mnr-auto-fuel-system\") and index(\"project_mnr-automotive-fuel-system-may2023\")) or (.record_ids | index(\"project_mnrr-fuel-system-upgrade\") and index(\"project_mnr-automotive-fuel-system-may2023\")) or (.record_ids | index(\"project_r211-subway-car-meeting-doc-113971\") and index(\"project_r211-subway-car-program\")) or (.record_ids | index(\"project_r211-subway-cars-dec2024\") and index(\"project_r211-subway-car-program\")) or (.record_ids | index(\"project_98266-overhead-bridge-program\") and index(\"project_meeting-doc-104771-overhead-bridge-program-ny\")) or (.record_ids | index(\"project_meeting-doc-111786-overhead-bridge-program-ny\") and index(\"project_meeting-doc-104771-overhead-bridge-program-ny\")) or (.record_ids | index(\"project_98266-right-of-way-fence\") and index(\"project_meeting-doc-104771-right-of-way-fence\")) or (.record_ids | index(\"project_mnr-right-of-way-fence-q3-2023\") and index(\"project_meeting-doc-104771-right-of-way-fence\"))) | .record_ids | @tsv' data/identity-overrides/do-not-merge.json",
+      "json_result": "no output; no selected pair is present in data/identity-overrides/do-not-merge.json"
+    },
+    "prior_prep_conflicts_through_identity111": {
+      "command": "for f in data/review_notes/codex-identity-batch0*-prep.json data/review_notes/codex-identity-batch10[0-9]-prep.json data/review_notes/codex-identity-batch11[0-1]-prep.json; do jq -r --arg f \"$f\" '.proposed_aliases[]? | select(.kind==\"project\") | select(.alias_id as $a | [\"project_meeting-doc-111896-mnr-auto-fuel-system\",\"project_mnrr-fuel-system-upgrade\",\"project_r211-subway-car-meeting-doc-113971\",\"project_r211-subway-cars-dec2024\",\"project_98266-overhead-bridge-program\",\"project_meeting-doc-111786-overhead-bridge-program-ny\",\"project_98266-right-of-way-fence\",\"project_mnr-right-of-way-fence-q3-2023\"] | index($a)) | [$f,.alias_id,.target_id] | @tsv' \"$f\" 2>/dev/null; done",
+      "result": "no output; none of the proposed aliases appear in prior codex identity prep artifacts through batch111"
+    },
+    "forbidden_command_compliance": {
+      "result": "No external/provider-backed commands or profiles/providers were used. No canonicalize, canonicalize-wave, canonicalize-review, campaign dedup, identity-review-run, write, ask, schema-propose, ontology-normalize-run, materialize, export-jsonl, or validate commands were run. Inspection used local deterministic commands only: pwd, git status, ls/sed/head/date, rg, jq, and sqlite3; the only file write was this prep artifact."
+    }
+  },
+  "expected_delta": {
+    "duplicate_global_identity": -8
+  }
+}

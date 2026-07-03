@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "route_cluster_009",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_009.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_009.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 0,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "route_m57-ace",
+      "route_m57-nyct-2025"
+    ]
+  ],
+  "do_not_merge": [],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "When two route records share the same route_id, route_label, and borough, and neither has a variant suffix, they represent the same canonical route and should be merged."
+  ],
+  "rationale": "Both records describe the M57 bus route in Manhattan with identical route_id 'M57' and route_label 'M57', same borough 'Manhattan', no variant distinctions, and both reference the ACE program. The shared identity key 'route_m57' confirms duplicate global identity. The negative signal 'variant mismatch: unknown vs unknown' is not a real conflict since neither record has a variant. These are the same canonical route from different sources."
+}

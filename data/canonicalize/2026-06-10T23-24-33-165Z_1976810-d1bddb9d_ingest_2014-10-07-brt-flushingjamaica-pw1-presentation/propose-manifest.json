@@ -1,0 +1,70 @@
+{
+  "run_id": "2026-06-10T23-24-33-165Z_1976810-d1bddb9d_ingest_2014-10-07-brt-flushingjamaica-pw1-presentation",
+  "generated_at": "2026-06-11T04:05:07.957Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 5,
+  "completed": 5,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 49,
+  "validated_decision_count": 0,
+  "quarantined_decision_count": 5,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-24-33-165Z_1976810-d1bddb9d_ingest_2014-10-07-brt-flushingjamaica-pw1-presentation",
+    "manifest": "data/canonicalize/2026-06-10T23-24-33-165Z_1976810-d1bddb9d_ingest_2014-10-07-brt-flushingjamaica-pw1-presentation/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-24-33-165Z_1976810-d1bddb9d_ingest_2014-10-07-brt-flushingjamaica-pw1-presentation/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-24-33-165Z_1976810-d1bddb9d_ingest_2014-10-07-brt-flushingjamaica-pw1-presentation/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-24-33-165Z_1976810-d1bddb9d_ingest_2014-10-07-brt-flushingjamaica-pw1-presentation/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-33-165Z_1976810-d1bddb9d_ingest_2014-10-07-brt-flushingjamaica-pw1-presentation/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-05-115Z_2111393-b67cbf64_canonicalize_2026-06-10t23-24-33-165z-1976810-d1bddb9d-ingest-2014-10-07-brt-flushingjamaica-pw1-presentation-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-33-165Z_1976810-d1bddb9d_ingest_2014-10-07-brt-flushingjamaica-pw1-presentation/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-05-115Z_2111393-19c3c237_canonicalize_2026-06-10t23-24-33-165z-1976810-d1bddb9d-ingest-2014-10-07-brt-flushingjamaica-pw1-presentation-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-33-165Z_1976810-d1bddb9d_ingest_2014-10-07-brt-flushingjamaica-pw1-presentation/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-05-115Z_2111393-016fb712_canonicalize_2026-06-10t23-24-33-165z-1976810-d1bddb9d-ingest-2014-10-07-brt-flushingjamaica-pw1-presentation-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-33-165Z_1976810-d1bddb9d_ingest_2014-10-07-brt-flushingjamaica-pw1-presentation/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-05-116Z_2111393-0eb2bce3_canonicalize_2026-06-10t23-24-33-165z-1976810-d1bddb9d-ingest-2014-10-07-brt-flushingjamaica-pw1-presentation-corridor-identity"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-33-165Z_1976810-d1bddb9d_ingest_2014-10-07-brt-flushingjamaica-pw1-presentation/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-05-116Z_2111393-0c8a7e0e_canonicalize_2026-06-10t23-24-33-165z-1976810-d1bddb9d-ingest-2014-10-07-brt-flushingjamaica-pw1-presentation-relation-linker"
+    }
+  ]
+}

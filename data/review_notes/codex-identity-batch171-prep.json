@@ -1,0 +1,325 @@
+{
+  "note_id": "codex-identity-batch171-prep",
+  "batch": "identity171",
+  "created_at": "2026-06-23T08:53:34Z",
+  "scope": {
+    "global_kind": "project",
+    "selection_note": "Codex-only project identity cleanup prep from current data/canonical/projects.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and a read-only reconstruction of validateRepo duplicate_global_identity logic. Proposals were limited to current project duplicate issues where both ids exist, the proposed alias is neither a merge alias nor a current merge target, the target is not a merge alias, the ids differ, no project do-not-merge guard applies, and source/canonical evidence supports one durable project identity.",
+    "backlog_caveat": "The user described a current 544-issue validation backlog. The read-only duplicate_global_identity reconstruction over current global canonical JSONL observed 547 duplicate_global_identity issues at prep time, including 32 project issues. This note anchors to the current files read during this prep and records the count mismatch as a caveat rather than running validate."
+  },
+  "prepared_count": 3,
+  "proposed_aliases": [
+    {
+      "global_kind": "project",
+      "alias_id": "project_fordham-rd-bus-priority-cab",
+      "target_id": "project_fordham-rd-bus-priority",
+      "canonical_id": "project_fordham-rd-bus-priority",
+      "confidence": "high",
+      "validator_duplicate_key": "project_fordham-rd-bus-priority-project",
+      "validator_evidence": [
+        "Global project records project_fordham-rd-bus-priority and project_fordham-rd-bus-priority-cab share identity key project_fordham-rd-bus-priority-project."
+      ],
+      "reason": "The validator flags the CAB record and the richer Fordham Road-Inwood record on the same Fordham Road Bus Priority Project identity key. Canonical evidence shows the alias is a one-source January 2021 Fordham Road Bus Priority Project CAB/planning record, while the target is the multi-source Fordham Road-Inwood Bus Priority project that already includes Fordham Road bus-priority study evidence and Major Deegan-to-Boston Road context. Source evidence supports one continuing Fordham Road bus-priority project process rather than a separate child project.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Fordham Road Bus Priority Project",
+          "project_name": "Fordham Road Bus Priority Project",
+          "project_type": "bus priority",
+          "status": "planning",
+          "description": "Bus priority project on Fordham Road from Major Deegan Expressway to Boston Road, presented to Community Advisory Board in January 2021.",
+          "source_ids": [
+            "fordham_rd_major_deegan_expwy_boston_rd_cab_jan2021"
+          ],
+          "evidence_refs": [
+            "fordham_rd_major_deegan_expwy_boston_rd_cab_jan2021#p001_c0001",
+            "fordham_rd_major_deegan_expwy_boston_rd_cab_jan2021#p031_c0002",
+            "fordham_rd_major_deegan_expwy_boston_rd_cab_jan2021#p032_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "Fordham Road - Inwood Bus Priority",
+          "project_name": "Fordham Road - Inwood Bus Priority",
+          "project_type": "bus priority study",
+          "status": "design alternatives being studied",
+          "description": "Study of bus priority treatments along the Bx12 corridor, including Fordham Road and 207th Street/University Heights Bridge connection to Inwood, with three design alternatives under traffic analysis.",
+          "source_count": 7,
+          "source_ids_sample": [
+            "fordham_rd_inwood_cab_mar2022",
+            "fordham_rd_inwood_cab_may2023",
+            "fordham_rd_inwood_cb11_jun2023",
+            "fordham_rd_major_deegan_expwy_boston_rd_jun2021"
+          ],
+          "merged_project_names_include": [
+            "Fordham Road Bus Priority Project"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_fordham-rd-bus-priority-cab",
+          "evidence_id": "fordham_rd_major_deegan_expwy_boston_rd_cab_jan2021#p001_c0001",
+          "quote": "Fordham Road"
+        },
+        {
+          "record_id": "project_fordham-rd-bus-priority-cab",
+          "evidence_id": "fordham_rd_major_deegan_expwy_boston_rd_cab_jan2021#p031_c0002",
+          "quote": "Fordham Road Community Advisory Board (CAB) will guide the project before, during, and after implementation"
+        },
+        {
+          "record_id": "project_fordham-rd-bus-priority",
+          "evidence_id": "fordham_rd_inwood_cab_mar2022#p001_c0001",
+          "quote": "Fordham Road \\u2013 Inwood Bus Priority"
+        },
+        {
+          "record_id": "project_fordham-rd-bus-priority",
+          "evidence_id": "fordham_rd_inwood_cab_mar2022#p024_c0003",
+          "quote": "traffic analysis that includes 3 distinct design alternatives for bus priority treatments along the Bx12 corridor"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_projects_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_is_not_already_a_merge_target": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_bx12-sbs-brt-phase2",
+      "target_id": "project_bx12-sbs-fordham-rd-phase1",
+      "canonical_id": "project_bx12-sbs-fordham-rd-phase1",
+      "confidence": "high",
+      "validator_duplicate_key": "project_fordham-rd-bx12-sbs",
+      "validator_evidence": [
+        "Global project records project_bx12-sbs-brt-phase2 and project_bx12-sbs-fordham-rd-phase1 share identity key project_fordham-rd-bx12-sbs."
+      ],
+      "reason": "The validator flags both records on the Fordham Road Bx12 SBS identity key. Canonical evidence shows both records describe the Fordham Road Bx12 Select Bus Service project, with launched/in-service status and Bronx/Fordham Road scope. Source evidence confirms the alias record is not a separate Phase 2 implementation: the Phase 2 intro source itself says Fordham Road Bx12 SBS service launched in June 2008 and was the first phase of SBS/BRT service; the target source lists Fordham Road Bx12 SBS under the BRT Phase I Program as in service.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Bx12 Select Bus Service (Fordham Road)",
+          "project_name": "Bx12 Select Bus Service",
+          "project_type": "SBS",
+          "status": "launched",
+          "description": "First Phase I BRT route, launched on Fordham Road in the Bronx in June 2008",
+          "source_ids": [
+            "brt_intro_to_phase2",
+            "intro_to_brt_phase2"
+          ],
+          "evidence_refs": [
+            "brt_intro_to_phase2#p018_c0005",
+            "brt_intro_to_phase2#p020_c0003",
+            "intro_to_brt_phase2#p018_c0005",
+            "intro_to_brt_phase2#p020_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Fordham Road Bx12 SBS",
+          "project_name": "Fordham Road Bx12 SBS",
+          "project_type": "SBS",
+          "status": "in service",
+          "description": "BRT Phase I project. Fordham Road Bx12 Select Bus Service.",
+          "source_ids": [
+            "brt_future_corridors",
+            "brt_phase2_future_corridors_rpt"
+          ],
+          "evidence_refs": [
+            "brt_future_corridors#p004_c0002",
+            "brt_phase2_future_corridors_rpt#p004_c0002"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_bx12-sbs-brt-phase2",
+          "evidence_id": "brt_intro_to_phase2#p018_c0005",
+          "quote": "Fordham Road Bx12 SBS: service launched June 2008"
+        },
+        {
+          "record_id": "project_bx12-sbs-brt-phase2",
+          "evidence_id": "brt_intro_to_phase2#p020_c0003",
+          "quote": "The City implemented its first phase of BRT service, called Select Bus Service (SBS), on Fordham Road in the Bronx in June of 2008."
+        },
+        {
+          "record_id": "project_bx12-sbs-fordham-rd-phase1",
+          "evidence_id": "brt_future_corridors#p004_c0002",
+          "quote": "BRT Phase I Program A Fordham Road Bx12 SBS \\u2013 in service"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_projects_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_is_not_already_a_merge_target": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_hylan-blvd-sbs-brt-phase2",
+      "target_id": "project_hylan-blvd-sbs-phase1",
+      "canonical_id": "project_hylan-blvd-sbs-phase1",
+      "confidence": "high",
+      "validator_duplicate_key": "project_hylan-blvd-sbs",
+      "validator_evidence": [
+        "Global project records project_hylan-blvd-sbs-brt-phase2 and project_hylan-blvd-sbs-phase1 share identity key project_hylan-blvd-sbs."
+      ],
+      "reason": "The validator flags both records on the Hylan Boulevard SBS identity key. Canonical evidence shows both are Hylan Boulevard SBS project records with planned status and Staten Island/Hylan Boulevard SBS scope. Source evidence keeps the project identity aligned: the alias source lists Hylan Boulevard SBS as a Phase I BRT route in planning for a Staten Island south-shore-to-Brooklyn connection, and the target source lists Hylan Boulevard SBS in the BRT Phase I Program with 2013/2014 implementation. This is an overview-source duplication of the same planned SBS project, not a same-name-different-location collision.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Hylan Boulevard SBS",
+          "project_name": "Hylan Boulevard SBS",
+          "project_type": "SBS",
+          "status": "planned",
+          "description": "Phase I BRT route in planning for a faster connection from Staten Island's south shore to Brooklyn",
+          "borough": "Staten Island",
+          "source_ids": [
+            "brt_intro_to_phase2",
+            "intro_to_brt_phase2"
+          ],
+          "evidence_refs": [
+            "brt_intro_to_phase2#p018_c0005",
+            "brt_intro_to_phase2#p038_c0003",
+            "intro_to_brt_phase2#p018_c0005",
+            "intro_to_brt_phase2#p038_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Hylan Boulevard SBS",
+          "project_name": "Hylan Boulevard SBS",
+          "project_type": "SBS",
+          "status": "planned",
+          "description": "BRT Phase I project. Hylan Boulevard SBS.",
+          "source_ids": [
+            "brt_future_corridors",
+            "brt_phase2_future_corridors_rpt"
+          ],
+          "evidence_refs": [
+            "brt_future_corridors#p004_c0002",
+            "brt_phase2_future_corridors_rpt#p004_c0002"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_hylan-blvd-sbs-brt-phase2",
+          "evidence_id": "brt_intro_to_phase2#p038_c0003",
+          "quote": "Phase I BRT Routes Route Need Type Status Hylan Boulevard SBS Difficult trip Faster connection from Staten Island's south shore to Brooklyn; in planning"
+        },
+        {
+          "record_id": "project_hylan-blvd-sbs-brt-phase2",
+          "evidence_id": "brt_intro_to_phase2#p018_c0005",
+          "quote": "Hylan Boulevard SBS: planning underway for a revised project design"
+        },
+        {
+          "record_id": "project_hylan-blvd-sbs-phase1",
+          "evidence_id": "brt_future_corridors#p004_c0002",
+          "quote": "BRT Phase I Program F Hylan Boulevard SBS \\u2013 2013/2014 implementation"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_projects_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_is_not_already_a_merge_target": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "current_duplicate_issue_counts": {
+      "read_only_duplicate_global_identity_total": 547,
+      "project": 32,
+      "entity": 457,
+      "corridor": 34,
+      "route": 24
+    },
+    "input_files_read": [
+      "data/canonical/projects.jsonl",
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json"
+    ],
+    "proposal_guards": [
+      "Both ids for every proposal were verified as current project record_id values in data/canonical/projects.jsonl.",
+      "No proposed alias_id is a current project merge alias in data/identity-overrides/merges.json.",
+      "No proposed target_id is a current project merge alias in data/identity-overrides/merges.json.",
+      "No proposed alias_id is currently used as a project merge target in data/identity-overrides/merges.json.",
+      "Each alias_id differs from its target_id.",
+      "No proposed pair hits the current project do-not-merge guard in data/identity-overrides/do-not-merge.json."
+    ],
+    "blockers_to_requested_8_to_10": [
+      "Only 32 current project duplicate_global_identity issues were present in the read-only pass, and most remaining project issues failed the requested guards or high-confidence semantic screen.",
+      "Excluded project_fordham-rd-bus-priority-cb5-may2026 because the proposed alias is already a current merge target.",
+      "Excluded project_bx6-south-bronx-crosstown-sbs, project_faster-cleaner-safer-plan / project_meeting-doc-113946-faster-cleaner-safer, project_b46-sbs-utica-ave-2015-09-10 / project_utica-ave-sbs-2014, project_vn-x4-operational-improvements-safety-fence / project_vn-x4-safety-fence, and project_park-ave-viaduct-phase1 / project_park-avenue-viaduct-repair because the only plausible aliases are already current merge targets.",
+      "Excluded the 2017 Street Improvement Project collisions because the current duplicate class mixes Woodhaven Boulevard/Q52-Q53 Queens evidence with M79/79th Street Manhattan evidence; this is a same-name-different-location trap.",
+      "Excluded Lexington Avenue 96th-60th / 60th-52nd records as a segment/partial-overlap trap.",
+      "Excluded MTA 2020-2024 Capital Program Amendment #2 and #5 collisions because the current target record conflates parent capital-program identity with amendment records; these need a policy decision before adding more aliases.",
+      "Excluded ABLE 2022 expansion, 2023 expansion, and ABLE program collisions as likely parent-program versus staged expansion records.",
+      "Excluded CBDTP, Congestion Relief, CRZ toll revenue obligation, and TransCore modification collisions as parent-program versus financing/contract-action collisions.",
+      "Excluded East Side Access support, Main Line Second Track, Jamaica Capacity Improvement, Hall Interlocking, Penn Reconstruction design, and similar records as support-project, phase, or parent-child collisions.",
+      "Excluded LIRR Security Initiatives / NYCT Security Initiatives as a same-name-different-agency trap.",
+      "Excluded 34th Street Transitway because the semantically preferable direction would alias the thinner Phase I overview record into the richer concept record, but that overview record is already a current merge target; the reverse direction would choose a weaker target."
+    ]
+  },
+  "command_evidence": [
+    {
+      "command": "sed -n '240,340p' packages/pipeline/src/validate.ts && sed -n '1,240p' packages/db/src/identity.ts",
+      "purpose": "Read validateRepo duplicate_global_identity logic and the deterministic identity helper used to reproduce duplicate-key evidence without running validate."
+    },
+    {
+      "command": "bun --eval '<read-only duplicate-key pass over data/canonical/projects.jsonl using identityKeysForRecord plus current do-not-merge suppression>'",
+      "purpose": "Reconstructed current project duplicate_global_identity issues without running materialize, validate, export, or provider-backed commands; found 32 project issues."
+    },
+    {
+      "command": "bun --eval '<read-only duplicate-key pass over current entities/projects/corridors/routes canonical JSONL using identityKeysForRecord plus current do-not-merge suppression>'",
+      "purpose": "Checked the current global duplicate_global_identity backlog caveat; found 547 duplicate_global_identity issues total, by kind: entity 457, project 32, corridor 34, route 24."
+    },
+    {
+      "command": "jq -r '.aliases.project as $p | [selected proposal ids] ...' data/identity-overrides/merges.json",
+      "purpose": "Verified proposed aliases are not merge aliases, proposed targets are not merge aliases, and proposed aliases are not current merge targets."
+    },
+    {
+      "command": "jq -r '.pairs.project[]? | select(.record_ids | any(. as $id | [selected proposal ids] | index($id))) | .record_ids | @tsv' data/identity-overrides/do-not-merge.json",
+      "purpose": "Verified no current project do-not-merge guard covers any proposed pair."
+    },
+    {
+      "command": "bun --eval '<inspect selected project records, payload fields, source_ids, aliases, evidence refs>'",
+      "purpose": "Read canonical evidence for candidate pairs and screened out phase/stage, same-name-different-location, and parent-program/child-project traps."
+    },
+    {
+      "command": "jq -r 'select(.block_id|IN(...)) | [.source_id,.block_id,.raw_text] | @tsv' raw/sources/*/blocks.jsonl",
+      "purpose": "Read local source blocks for the evidence quotes cited by the three proposals."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Captured UTC created_at for this prep artifact."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "bun run validate",
+    "bun packages/cli/src/cli.ts validate",
+    "validateRepo execution",
+    "bun packages/cli/src/cli.ts materialize",
+    "materialize",
+    "bun packages/cli/src/cli.ts export",
+    "export",
+    "ingest",
+    "write",
+    "ask",
+    "identity-review-run",
+    "ontology-review",
+    "ontology-normalize-run",
+    "edits to data/identity-overrides/merges.json",
+    "edits to LOG.md",
+    "edits to manifest files",
+    "edits to canonical JSONL",
+    "edits to canonical DB",
+    "edits to wiki",
+    "edits to submissions",
+    "edits to retired.json"
+  ]
+}

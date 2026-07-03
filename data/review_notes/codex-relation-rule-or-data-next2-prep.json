@@ -1,0 +1,410 @@
+{
+  "note_id": "codex-relation-rule-or-data-next2-prep-2026-06-22",
+  "created_at": "2026-06-22T00:00:00Z",
+  "author": "codex",
+  "scope": "validator/rule lane; artifact-only prep; no generated-output commands; no provider-backed post-ingest commands",
+  "kind": "scoped_code_test_patch_recommendation",
+  "recommendation": {
+    "type": "validator_rule_gap",
+    "relation_kind": "has_timeline_event",
+    "current_rejected_shape": "event -> event",
+    "candidate_count": 15,
+    "confidence": "high",
+    "summary": "Allow event records to carry source-backed subevents, follow-on events, agenda actions, and related meeting/action events via has_timeline_event. The sampled rows are consistently event-to-event timeline/context edges, not mistaken project/source/entity endpoints.",
+    "current_validator_result": {
+      "command": "bun --eval direct call to relationEndpointShapeIssue(\"has_timeline_event\", \"event\", \"event\")",
+      "message": "Relation kind has_timeline_event expects project|route|corridor|entity|source -> event, got event -> event."
+    },
+    "why_not_data_cleanup": [
+      "The subject endpoint is already a canonical event record in all 15 candidates.",
+      "The object endpoint is already a canonical event record in all 15 candidates.",
+      "The relation semantics are coherent: parent timetable-change event to individual service-change events, committee/board meeting events to agenda action events, incident event to the meeting where it was discussed, and action-item approval event to a meeting event.",
+      "Retiring/replacing these rows as data fixes would either drop useful event-to-event chronology or force less precise endpoints. The validator already admits analogous timeline carriers for project, route, corridor, entity, and source."
+    ],
+    "exact_patch_plan": {
+      "files": [
+        "packages/pipeline/src/records/relations.ts",
+        "packages/pipeline/test/records/relations.test.ts"
+      ],
+      "relations_ts_change": "In RELATION_ENDPOINT_SHAPES.has_timeline_event.subject, add \"event\" to the existing subject list. Keep the object list as [\"event\"].",
+      "relations_test_change": "Add expect(relationEndpointShapeIssue(\"has_timeline_event\", \"event\", \"event\")).toBeUndefined(); to the relation helper accepted-shapes test. Update the has_timeline_event negative expected-subject message to include event if the test continues to assert the full expected-subject string.",
+      "non_goals": [
+        "Do not widen has_timeline_event for claim, treatment_component, or metric_claim subjects in this patch.",
+        "Do not widen has_claim event -> claim in this patch.",
+        "Do not widen has_metric source -> metric_claim or claim -> metric_claim in this patch.",
+        "Do not touch generated canonical/materialized outputs."
+      ]
+    }
+  },
+  "inventory_context": {
+    "method": "Targeted bun --eval over readCanonicalRecords() plus relationEndpointShapeIssue(); not full validate.",
+    "pending_retirement_exclusions": {
+      "batch019": [
+        "sub_e3dacb50a35c909a",
+        "sub_e89670dffd7d2c1f",
+        "sub_7016900affdbe84b",
+        "sub_db7fc16a63375073",
+        "sub_e0a876b760de7c90",
+        "sub_8c46f2c816d59acb",
+        "sub_30d5c582a9cdb298",
+        "sub_a908bb1e54abe963",
+        "sub_f9db6ab4364cfbea"
+      ],
+      "batch020": [
+        "sub_86f5c96117b0a103",
+        "sub_c1f48c3e4bc60c39",
+        "sub_3fab7a286d7bf864",
+        "sub_8b1dc41f5fa93999"
+      ]
+    },
+    "targeted_issue_count_after_exclusions": 117,
+    "top_buckets_after_exclusions": [
+      {
+        "bucket": "has_timeline_event event->event",
+        "count": 15,
+        "classification": "validator_rule_gap_recommended_here"
+      },
+      {
+        "bucket": "has_claim event->claim",
+        "count": 8,
+        "classification": "defer; plausible future rule gap but not included in this narrower event-timeline patch"
+      },
+      {
+        "bucket": "has_metric claim->metric_claim",
+        "count": 8,
+        "classification": "defer; metric-owning claim semantics need separate review"
+      },
+      {
+        "bucket": "implemented_by treatment_component->entity",
+        "count": 6,
+        "classification": "defer/data-likely; treatment components are implementation details rather than implemented projects under current rule"
+      },
+      {
+        "bucket": "has_metric source->metric_claim",
+        "count": 6,
+        "classification": "defer; source-metric relation is less analogous to the already accepted event-metric patch"
+      },
+      {
+        "bucket": "has_timeline_event claim->event",
+        "count": 5,
+        "classification": "defer; batch020 addressed four similar rows, remaining claim subjects need separate source-backed review"
+      },
+      {
+        "bucket": "has_timeline_event treatment_component->event",
+        "count": 5,
+        "classification": "defer; treatment component timeline ownership is not established by this event-to-event evidence"
+      }
+    ]
+  },
+  "candidate_rows": [
+    {
+      "record_id": "relation_board-meeting-after-committee-179676",
+      "submission_id": "sub_b405a05a8007d859",
+      "source_id": "meeting_doc_179676",
+      "local_observation_id": "relation_board_meeting_after_committee_179676",
+      "subject": {
+        "id": "event_committee-meeting-179676",
+        "kind": "event",
+        "display_name": "MTA Headquarters Committee meeting"
+      },
+      "object": {
+        "id": "event_board-meeting-179676",
+        "kind": "event",
+        "display_name": "MTA Board meeting"
+      },
+      "evidence_refs": [
+        "meeting_doc_179676#p003_c0001"
+      ],
+      "evidence_text": "Subject Request for Authorization to Award Various Procurements Department MTA Procurement Department Head Name Lisette Camilo Department Head Signature Lisette Camilo Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 07/28/25 2 Board 07/30/25",
+      "reason": "The source action table explicitly orders a committee event before a board event."
+    },
+    {
+      "record_id": "relation_cbdtp-event-board-meeting",
+      "submission_id": "sub_716ab95053ce2fd9",
+      "source_id": "meeting_doc_135591",
+      "local_observation_id": "relation_cbdtp_event_board_meeting",
+      "subject": {
+        "id": "event_mta-board-mtg-march27-2024",
+        "kind": "event",
+        "display_name": "event_mta_board_mtg_march27_2024"
+      },
+      "object": {
+        "id": "event_cbdtp-toll-rate-schedule-adoption",
+        "kind": "event",
+        "display_name": "event_cbdtp_toll_rate_schedule_adoption"
+      },
+      "evidence_refs": [
+        "meeting_doc_135591#p002_c0009",
+        "meeting_doc_135591#p002_c0010"
+      ],
+      "evidence_text": "5. CENTRAL BUSINESS DISTRICT TOLLING PROGRAM (CBDTP) Toll Rate Schedule / Staff Summary - CBDTP Toll Rate Schedule - Page 12",
+      "reason": "A board meeting event carries a specific toll-rate schedule action event."
+    },
+    {
+      "record_id": "relation_feb28-minutes-event",
+      "submission_id": "sub_a296701593241ca4",
+      "source_id": "meeting_doc_135591",
+      "local_observation_id": "relation_feb28_minutes_event",
+      "subject": {
+        "id": "event_mta-board-mtg-march27-2024",
+        "kind": "event",
+        "display_name": "event_mta_board_mtg_march27_2024"
+      },
+      "object": {
+        "id": "event_feb28-2024-board-minutes-approved",
+        "kind": "event",
+        "display_name": "event_feb28_2024_board_minutes_approved"
+      },
+      "evidence_refs": [
+        "meeting_doc_135591#p002_c0007",
+        "meeting_doc_135591#p002_c0008"
+      ],
+      "evidence_text": "MTA and MTA Agencies Regular Joint Committee and Board Meeting Minutes for February 28, 2024 / MTA and MTA Agencies Regular Joint Committee and Board Meeting Minutes for February 28, 2024 - Page 4",
+      "reason": "A board meeting event links to the prior meeting-minutes approval/presentation event."
+    },
+    {
+      "record_id": "relation_may-timetable-has-event-513pm-montauk",
+      "submission_id": "sub_1784665c44e4ab70",
+      "source_id": "meeting_doc_170846",
+      "local_observation_id": "relation_may_timetable_has_event_513pm_montauk",
+      "subject": {
+        "id": "event_meeting-doc-170846-may-timetable-change",
+        "kind": "event",
+        "display_name": "May 19 Timetable Change"
+      },
+      "object": {
+        "id": "event_meeting-doc-170846-513pm-montauk-extension",
+        "kind": "event",
+        "display_name": "5:13pm Penn to Montauk extension to daily summer service"
+      },
+      "evidence_refs": [
+        "meeting_doc_170846#p001_c0006",
+        "meeting_doc_170846#p001_c0008"
+      ],
+      "evidence_text": "MAY 19 TIMETABLE CHANGE / The 5:13pm train from Penn Station to Speonk, that normally operates to Montauk on summer Thursdays and Fridays, will now operate to Montauk, Monday through Friday, throughout the summer.",
+      "reason": "A timetable-change event carries a specific service-change event."
+    },
+    {
+      "record_id": "relation_may-timetable-has-event-early-morning-gcm",
+      "submission_id": "sub_21ce597aaf9ca2cd",
+      "source_id": "meeting_doc_170846",
+      "local_observation_id": "relation_may_timetable_has_event_early_morning_gcm",
+      "subject": {
+        "id": "event_meeting-doc-170846-may-timetable-change",
+        "kind": "event",
+        "display_name": "May 19 Timetable Change"
+      },
+      "object": {
+        "id": "event_meeting-doc-170846-new-early-morning-trains-gcm",
+        "kind": "event",
+        "display_name": "Two new early morning revenue trains Jamaica to Grand Central Madison"
+      },
+      "evidence_refs": [
+        "meeting_doc_170846#p001_c0006",
+        "meeting_doc_170846#p002_c0001"
+      ],
+      "evidence_text": "MAY 19 TIMETABLE CHANGE / Two new early morning revenue trains will operate from Jamaica to Grand Central Madison on weekdays.",
+      "reason": "Same timetable-change event carries another discrete service-change event."
+    },
+    {
+      "record_id": "relation_meeting-doc-102806-committee-meeting-procurement-package",
+      "submission_id": "sub_a64fbccd0d8acaae",
+      "source_id": "meeting_doc_102806",
+      "local_observation_id": "relation_meeting_doc_102806_committee_meeting_procurement_package",
+      "subject": {
+        "id": "event_meeting-doc-102806-committee-meeting",
+        "kind": "event",
+        "display_name": "Committee on Operations Regular Meeting - November 29, 2022"
+      },
+      "object": {
+        "id": "event_meeting-doc-102806-procurement-buses",
+        "kind": "event",
+        "display_name": "Procurement Award - 289 Low-Floor Diesel Buses"
+      },
+      "evidence_refs": [
+        "meeting_doc_102806#p005_c0002"
+      ],
+      "evidence_text": "Louis Montanti, Deputy Chief Procurement Officer, Operations, presented the procurement package which included five actions in the amount of $304.4M.",
+      "reason": "A committee meeting event includes a procurement-action event."
+    },
+    {
+      "record_id": "relation_nov2022-meeting-has-event-workplan",
+      "submission_id": "sub_2b7f7d6de2bfcac1",
+      "source_id": "meeting_doc_100286",
+      "local_observation_id": "relation_nov2022_meeting_has_event_workplan",
+      "subject": {
+        "id": "event_corp-gov-committee-meeting-nov2022",
+        "kind": "event",
+        "display_name": "MTA Corporate Governance Committee Meeting - November 29, 2022"
+      },
+      "object": {
+        "id": "event_2023-corp-gov-work-plan",
+        "kind": "event",
+        "display_name": "2023 Corporate Governance Committee Work Plan"
+      },
+      "evidence_refs": [
+        "meeting_doc_100286#p002_c0009"
+      ],
+      "evidence_text": "3. APPROVAL PROPOSED 2023 COMMITTEE WORK PLAN",
+      "reason": "A committee meeting event carries a work-plan approval agenda event."
+    },
+    {
+      "record_id": "relation_pal2824-governance-board-approval",
+      "submission_id": "sub_0147765b1f64411f",
+      "source_id": "meeting_doc_100286",
+      "local_observation_id": "relation_pal2824_governance_board_approval",
+      "subject": {
+        "id": "event_corp-gov-committee-meeting-nov2022",
+        "kind": "event",
+        "display_name": "MTA Corporate Governance Committee Meeting - November 29, 2022"
+      },
+      "object": {
+        "id": "event_pal2824-policy-approval-nov2022",
+        "kind": "event",
+        "display_name": "Board Approval of PAL 2824 Required Policies"
+      },
+      "evidence_refs": [
+        "meeting_doc_100286#p172_c0006"
+      ],
+      "evidence_text": "Board Action Order To Date Approval Info Other 1 Governance 11/29/22 X 2 Board 11/30/22 X",
+      "reason": "A governance committee event links to a board approval event in the action table."
+    },
+    {
+      "record_id": "relation_qmt-incident-discussed-sept2024",
+      "submission_id": "sub_6456cffbfd7eeb2c",
+      "source_id": "meeting_doc_155086",
+      "local_observation_id": "relation_qmt_incident_discussed_sept2024",
+      "subject": {
+        "id": "event_qmt-exhaust-duct-breach-sep2024",
+        "kind": "event",
+        "display_name": "QMT South Tube Exhaust Duct Breach Incident"
+      },
+      "object": {
+        "id": "event_tbta-committee-sept23-2024",
+        "kind": "event",
+        "display_name": "TBTA Committee Meeting September 2024"
+      },
+      "evidence_refs": [
+        "meeting_doc_155086#p009_c0012",
+        "meeting_doc_155086#p009_c0013"
+      ],
+      "evidence_text": "President Sheridan recounted that on September 4th, there was an incident at the Queens Midtown Tunnel (QMT) where the South Tube exhaust duct was breached by a drill rig from a barge on the East River. The permanent repair commenced immediately thereafter and was completed on September 6th.",
+      "reason": "An incident event is related to the committee meeting event where the incident was discussed."
+    },
+    {
+      "record_id": "relation_toll-violation-approved-july2024",
+      "submission_id": "sub_2c71b36b3c14fe4d",
+      "source_id": "meeting_doc_155086",
+      "local_observation_id": "relation_toll_violation_approved_july2024",
+      "subject": {
+        "id": "event_toll-violation-enforcement-approved",
+        "kind": "event",
+        "display_name": "Toll Violation Enforcement Action Item Approved"
+      },
+      "object": {
+        "id": "event_tbta-committee-july29-2024",
+        "kind": "event",
+        "display_name": "TBTA Committee Meeting July 2024"
+      },
+      "evidence_refs": [
+        "meeting_doc_155086#p006_c0005",
+        "meeting_doc_155086#p006_c0006"
+      ],
+      "evidence_text": "TBTA General Counsel and Corporate Secretary Paul L. Friman presented an Action Item asking the Committee to approve and move to the Board for adoption the revised toll violation enforcement regulations. Upon a motion duly made and seconded, the Toll Violation Enforcement Action Item was approved and moved to the Board.",
+      "reason": "An action-item approval event is tied to the committee meeting event that approved and moved it forward."
+    }
+  ],
+  "all_candidate_record_ids": [
+    "relation_board-meeting-after-committee-179676",
+    "relation_cbdtp-event-board-meeting",
+    "relation_feb28-minutes-event",
+    "relation_may-timetable-has-event-513pm-montauk",
+    "relation_may-timetable-has-event-744pm-lynbrook",
+    "relation_may-timetable-has-event-early-morning-gcm",
+    "relation_may-timetable-has-event-sunday-montauk",
+    "relation_meeting-doc-102806-committee-meeting-procurement-package",
+    "relation_meeting-doc-112146-budget-at-board",
+    "relation_meeting-doc-128981-budget-to-mta-board",
+    "relation_nov2022-meeting-has-event-workplan",
+    "relation_pal2824-governance-board-approval",
+    "relation_qmt-incident-discussed-sept2024",
+    "relation_responsibility-guidelines-governance-board",
+    "relation_toll-violation-approved-july2024"
+  ],
+  "commands_run": [
+    {
+      "command": "sed -n '228,282p' packages/pipeline/src/records/relations.ts",
+      "outcome": "Confirmed current has_timeline_event accepts project|route|corridor|entity|source subjects and event objects; event subject is not yet accepted."
+    },
+    {
+      "command": "sed -n '52,92p' packages/pipeline/test/records/relations.test.ts",
+      "outcome": "Confirmed current tests cover has_timeline_event source -> event and has_metric event -> metric_claim, but not has_timeline_event event -> event."
+    },
+    {
+      "command": "rg -n \"relation-rule-or-data-next|has_timeline_event source|has_metric event|event->event|claim->event|has_claim event\" LOG.md data/review_notes packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts -g '*.json' -g '*.jsonl' -g '*.md' -g '*.ts'",
+      "outcome": "Found prior rule/data prep and current relation helper test/code context."
+    },
+    {
+      "command": "sed -n '44,64p' LOG.md",
+      "outcome": "Confirmed batch019 and batch020 are queued/pending materialize and that has_metric event -> metric_claim plus has_timeline_event source -> event patches were already applied."
+    },
+    {
+      "command": "jq -r '.decisions[]?.retired_submission_id' data/review_notes/codex-relation-cleanup-batch020-prep.json || true",
+      "outcome": "No output; batch020 retire ids were taken from the logged/review-note context already present."
+    },
+    {
+      "command": "bun --eval 'import { readCanonicalRecords } from \"./packages/pipeline/src/canonical/store.ts\"; import { relationEndpointShapeIssue } from \"./packages/pipeline/src/records/relations.ts\"; ...'",
+      "outcome": "Failed because ./packages/pipeline/src/canonical/store.ts does not exist; no data mutated."
+    },
+    {
+      "command": "rg -n \"function readCanonicalRecords|const readCanonicalRecords|readCanonicalRecords\" packages data/review_notes -g '*.ts' -g '*.json'",
+      "outcome": "Located readCanonicalRecords in packages/pipeline/src/materialize/materialize.ts."
+    },
+    {
+      "command": "bun --eval 'import { readCanonicalRecords } from \"./packages/pipeline/src/materialize/materialize.ts\"; import { relationEndpointShapeIssue } from \"./packages/pipeline/src/records/relations.ts\"; const excluded = new Set([...batch019, ...batch020]); const records = readCanonicalRecords(); const byId = new Map(records.map((r) => [r.record_id, r])); ...'",
+      "outcome": "Targeted inventory only: 117 unexpected endpoint-shape rows after exclusions; top bucket has_timeline_event event->event count 15."
+    },
+    {
+      "command": "bun --eval 'import { readCanonicalRecords } from \"./packages/pipeline/src/materialize/materialize.ts\"; import { relationEndpointShapeIssue } from \"./packages/pipeline/src/records/relations.ts\"; ... filter has_timeline_event event->event ...'",
+      "outcome": "Printed the 15 has_timeline_event event->event candidate rows, submission ids, endpoints, and evidence refs."
+    },
+    {
+      "command": "jq -r 'select(.block_id==\"p003_c0001\") | {ref:(.source_id+\"#\"+.block_id), text:.raw_text} | @json' raw/sources/meeting_doc_179676/blocks.jsonl",
+      "outcome": "Retrieved exact action-table evidence for committee and board dates."
+    },
+    {
+      "command": "jq -r 'select(.block_id==\"p002_c0007\" or .block_id==\"p002_c0008\" or .block_id==\"p002_c0009\" or .block_id==\"p002_c0010\") | {ref:(.source_id+\"#\"+.block_id), text:.raw_text} | @json' raw/sources/meeting_doc_135591/blocks.jsonl",
+      "outcome": "Retrieved exact board/minutes and CBDTP evidence blocks."
+    },
+    {
+      "command": "jq -r 'select(.block_id==\"p001_c0006\" or .block_id==\"p001_c0008\" or .block_id==\"p002_c0001\") | {ref:(.source_id+\"#\"+.block_id), text:.raw_text} | @json' raw/sources/meeting_doc_170846/blocks.jsonl",
+      "outcome": "Retrieved exact timetable-change and service-change evidence blocks."
+    },
+    {
+      "command": "jq -r 'select(.block_id==\"p002_c0009\" or .block_id==\"p172_c0006\" or .block_id==\"p173_c0006\") | {ref:(.source_id+\"#\"+.block_id), text:.raw_text} | @json' raw/sources/meeting_doc_100286/blocks.jsonl",
+      "outcome": "Retrieved exact work-plan and board-action evidence blocks."
+    },
+    {
+      "command": "jq -r 'select(.block_id==\"p005_c0002\") | {ref:(.source_id+\"#\"+.block_id), text:.raw_text} | @json' raw/sources/meeting_doc_102806/blocks.jsonl",
+      "outcome": "Retrieved exact procurement-package evidence block."
+    },
+    {
+      "command": "jq -r 'select(.block_id==\"p009_c0012\" or .block_id==\"p009_c0013\" or .block_id==\"p006_c0005\" or .block_id==\"p006_c0006\") | {ref:(.source_id+\"#\"+.block_id), text:.raw_text} | @json' raw/sources/meeting_doc_155086/blocks.jsonl",
+      "outcome": "Retrieved exact incident and toll-violation action-item evidence blocks."
+    }
+  ],
+  "commands_not_run": [
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "canonicalize",
+    "dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "provider/profile commands"
+  ],
+  "blockers": []
+}

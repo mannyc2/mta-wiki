@@ -1,0 +1,382 @@
+{
+  "note_id": "codex-identity-batch182-prep",
+  "batch": "identity182",
+  "created_at": "2026-06-23T09:39:36Z",
+  "scope": {
+    "global_kind": "route/corridor",
+    "included_kinds": [
+      "route",
+      "corridor"
+    ],
+    "selection_note": "Codex-only post-ingest identity cleanup prep for ROUTE and CORRIDOR duplicate_global_identity rows only. Inputs were current data/canonical/routes.jsonl, data/canonical/corridors.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and allowed in-process validateRepo duplicate_global_identity output.",
+    "write_limit": "Only this review note was written. No identity overrides, LOG.md, manifest, canonical JSONL, DB, wiki, submissions, or other files were edited.",
+    "validator_duplicate_counts_latest_allowed_run": {
+      "total_issues": 505,
+      "duplicate_global_identity": 505,
+      "route_and_corridor_duplicate_global_identity": 51
+    }
+  },
+  "prepared_count": 3,
+  "proposed_aliases": [
+    {
+      "global_kind": "route",
+      "alias_id": "route_q53-ltd-woodhaven-2014",
+      "target_id": "route_q53-sbs-ace",
+      "canonical_id": "route_q53-sbs-ace",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global route records route_q53-ltd-woodhaven-2014 and route_q53-sbs-ace share identity key route_q53-sbs."
+      ],
+      "canonical_evidence": {
+        "alias": {
+          "record_id": "route_q53-ltd-woodhaven-2014",
+          "display_name": "Q53 LTD",
+          "route_id": "Q53",
+          "route_label": "Q53 LTD",
+          "route_name": "Q53 Limited",
+          "route_type_normalized": "limited_stop",
+          "service_variant": "limited_stop",
+          "record_aliases_include": [
+            "route_q53",
+            "route_q53-ltd-woodhaven-2015-05",
+            "route_q53-sbs"
+          ],
+          "merged_values_include": {
+            "description": [
+              "Existing limited bus route on Woodhaven/Cross Bay corridor, basis for SBS service",
+              "Limited-stop bus route on Woodhaven / Cross Bay corridor. Proposed SBS route based on existing Q52/53 LTD bus route.",
+              "Existing Q53 Limited bus route that the proposed SBS is based on"
+            ]
+          },
+          "source_ids_sample": [
+            "2014_10_22_brt_woodhaven_cac2_presentation",
+            "2015_03_woodhaven_sbs",
+            "2015_06_09_brt_woodhaven_cb9",
+            "brt_woodhaven_cb9_sept2016"
+          ]
+        },
+        "target": {
+          "record_id": "route_q53-sbs-ace",
+          "display_name": "Q53 SBS on Woodhaven Boulevard, Queens (TSP in development)",
+          "route_id": "Q53-SBS",
+          "route_label": "Q53-SBS",
+          "route_name": "Q53 SBS",
+          "route_type_normalized": "select_bus_service",
+          "service_variant": "sbs",
+          "record_aliases_include": [
+            "route_q53",
+            "route_q53-sbs",
+            "route_q53-sbs-fall2018"
+          ],
+          "merged_values_include": {
+            "description": [
+              "SBS route on Woodhaven/Cross Bay Boulevards corridor",
+              "Q53 Select Bus Service planned for Woodhaven/Cross Bay Boulevards corridor",
+              "Proposed Q53 Select Bus Service on Woodhaven / Cross Bay corridor",
+              "Proposed SBS route along Woodhaven and Cross Bay Boulevards based on the Q53 LTD route"
+            ]
+          },
+          "source_ids_sample": [
+            "brt_woodhaven_after_fall2018",
+            "brt_woodhaven_cb14_jan2017",
+            "mta_automated_camera_enforcement",
+            "tsp_status_2017"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "route_q53-ltd-woodhaven-2014",
+          "evidence_id": "2014_10_22_brt_woodhaven_cac2_presentation#p010_c0002",
+          "quote": "Based on the existing Q52/53 LTD bus route"
+        },
+        {
+          "record_id": "route_q53-ltd-woodhaven-2014",
+          "evidence_id": "brt_woodhaven_cb9_sept2016#p028_c0002",
+          "quote": "Fall 2017: Q52/Q53 Select Bus Service Launches"
+        },
+        {
+          "record_id": "route_q53-ltd-woodhaven-2014",
+          "evidence_id": "brt_woodhaven_openhouses_boards_may2016#p010_c0004",
+          "quote": "Q52/Q53 SBS will be 15-25% faster than the Q52/Q53 LTD"
+        },
+        {
+          "record_id": "route_q53-sbs-ace",
+          "evidence_id": "rockaway_beach_blvd_jun2019#p006_c0002",
+          "quote": "Q52/Q53 Select Bus Service (SBS) launched in November 2017"
+        },
+        {
+          "record_id": "route_q53-sbs-ace",
+          "evidence_id": "mta_automated_camera_enforcement#p001_b0001",
+          "quote": "Q53-SBS, Broadway / Queens Blvd / Woodhaven Blvd / Cross Bay Blvd"
+        }
+      ],
+      "reason": "The alias is the Q53 Limited predecessor/basis for the same Woodhaven/Cross Bay service later represented as Q53 SBS. This route-variant-looking merge is included because the canonical descriptions and source evidence explicitly state that Q52/Q53 SBS launched from the Q52/Q53 LTD service context.",
+      "guards": {
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "alias_is_not_current_merge_target": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "stale_id_hit": false,
+        "route_variant_guard": "accepted because source evidence explicitly ties Q53 LTD to the Q52/Q53 SBS launch and replacement/improvement context",
+        "partial_overlap_guard": "not_applicable_route"
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_b44-brt-phase2",
+      "target_id": "route_b44-sbs",
+      "canonical_id": "route_b44-sbs",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global route records route_b44-brt-phase2 and route_b44-sbs share identity key route_b44."
+      ],
+      "canonical_evidence": {
+        "alias": {
+          "record_id": "route_b44-brt-phase2",
+          "display_name": "B44 (Nostrand Avenue)",
+          "route_id": "B44",
+          "route_label": "B44",
+          "record_aliases_include": [
+            "route_b44"
+          ],
+          "source_ids": [
+            "brt_intro_to_phase2"
+          ]
+        },
+        "target": {
+          "record_id": "route_b44-sbs",
+          "display_name": "Nostrand Avenue-Rogers Avenue Select Bus Service (B44)",
+          "route_id": "B44",
+          "route_label": "B44 SBS",
+          "route_name": "B44 Select Bus Service",
+          "route_type_normalized": "select_bus_service",
+          "service_variant": "sbs",
+          "record_aliases_include": [
+            "route_b44",
+            "route_b44-sbs-2013-11",
+            "route_b44-sbs-ace"
+          ],
+          "merged_values_include": {
+            "description": [
+              "B44 Limited will become SBS on Nostrand Avenue/Rogers Avenue corridor",
+              "Proposed SBS service on Nostrand/Rogers corridor. B44 Limited will become SBS.",
+              "B44 Limited being replaced by B44 SBS"
+            ]
+          },
+          "source_ids_sample": [
+            "201011_nostrand_handout",
+            "2011_03_07_brt_nostrand_cb3",
+            "2013_11_sbs_nostrand_flyer",
+            "brt_route_index"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "route_b44-brt-phase2",
+          "evidence_id": "brt_intro_to_phase2#p032_c0003",
+          "quote": "Nostrand Avenue SBS ... Existing B44 bus service carries 44,000 trips a day; new service planned for 2011"
+        },
+        {
+          "record_id": "route_b44-sbs",
+          "evidence_id": "201011_nostrand_handout#p001_c0006",
+          "quote": "B44 SBS replaces the B44 Limited"
+        },
+        {
+          "record_id": "route_b44-sbs",
+          "evidence_id": "2011_03_07_brt_nostrand_cb3#p006_c0002",
+          "quote": "B44 Limited will become SBS; B44 Local will continue as before."
+        },
+        {
+          "record_id": "route_b44-sbs",
+          "evidence_id": "2013_11_sbs_nostrand_flyer#p001_c0001",
+          "quote": "B44 Nostrand/Rogers Avenues Select Bus Service Begins November 17, 2013"
+        },
+        {
+          "record_id": "route_b44-sbs",
+          "evidence_id": "mta_automated_camera_enforcement#p001_b0001",
+          "quote": "B44-SBS, Nostrand Av"
+        }
+      ],
+      "reason": "The alias is a one-source Phase II/Phase I planned Nostrand Avenue SBS route record keyed to existing B44 service, not a B44 local-only or B44 Limited record. The target is the implemented B44 SBS record for Nostrand/Rogers with explicit source evidence that B44 SBS replaced B44 Limited and began service in 2013.",
+      "guards": {
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "alias_is_not_current_merge_target": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "stale_id_hit": false,
+        "route_variant_guard": "accepted because the alias evidence says Nostrand Avenue SBS/new service planned for existing B44 service; the known B44 Limited/B44 SBS do-not-merge pair was not used as the proposed alias pair",
+        "partial_overlap_guard": "not_applicable_route"
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_b46-brt-phase2",
+      "target_id": "route_b46-local-limited-20110915",
+      "canonical_id": "route_b46-local-limited-20110915",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global route records route_b46-brt-phase2 and route_b46-local-limited-20110915 share identity key route_b46."
+      ],
+      "canonical_evidence": {
+        "alias": {
+          "record_id": "route_b46-brt-phase2",
+          "display_name": "B46 (Utica Avenue)",
+          "route_id": "B46",
+          "route_label": "B46",
+          "record_aliases_include": [
+            "route_b46"
+          ],
+          "source_ids": [
+            "brt_intro_to_phase2"
+          ]
+        },
+        "target": {
+          "record_id": "route_b46-local-limited-20110915",
+          "display_name": "B46",
+          "route_id": "B46",
+          "route_label": "B46",
+          "route_name": "B46",
+          "route_type_normalized": "local_and_limited_stop",
+          "record_aliases_include": [
+            "route_b46",
+            "route_b46-2012-04-26-utica",
+            "route_b46-2014-11-pw1"
+          ],
+          "merged_values_include": {
+            "description": [
+              "B46 bus route on Utica Avenue, running from Williamsburg Bridge Plaza to Kings Plaza. Second busiest bus route in NYC. Over 49,000 passengers per weekday.",
+              "B46 bus route along Utica Avenue in Brooklyn. Second-busiest bus route in NYC, carrying nearly 50,000 passengers per day. Includes B46 Limited and B46 Local service. Proposed for upgrade to B46 SBS (Select Bus Service)."
+            ]
+          },
+          "source_ids_sample": [
+            "2011_09_15_sbs_utica_cb8_9_17",
+            "2012_04_26_sbs_utica",
+            "2013_09_12_sbs_utica_cb8",
+            "2014_11_brt_uticaave_pw1"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "route_b46-brt-phase2",
+          "evidence_id": "brt_intro_to_phase2#p032_c0004",
+          "quote": "Utica Avenue corridor ... Existing B46 bus service carries 52,000 trips a day"
+        },
+        {
+          "record_id": "route_b46-local-limited-20110915",
+          "evidence_id": "2011_09_15_sbs_utica_cb8_9_17#p004_c0002",
+          "quote": "B46 is the second busiest bus route in NYC"
+        },
+        {
+          "record_id": "route_b46-local-limited-20110915",
+          "evidence_id": "2011_09_15_sbs_utica_cb8_9_17#p004_c0003",
+          "quote": "B46 local buses make all stops. B46 Limited-Stop buses operate 7 days a week."
+        },
+        {
+          "record_id": "route_b46-local-limited-20110915",
+          "evidence_id": "2013_09_12_sbs_utica_cb8#p003_c0003",
+          "quote": "map illustrates the B46 bus route in Brooklyn, starting at Williamsburg Bridge Plaza and ending at Kings Plaza"
+        }
+      ],
+      "reason": "The alias is a one-source Phase II Utica Avenue/B46 base-route mention. The target is the richer generic B46 local-and-limited route record on Utica Avenue, so this proposal avoids collapsing the base route directly into the SBS variant while still resolving the duplicate route_b46 identity row.",
+      "guards": {
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "alias_is_not_current_merge_target": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "stale_id_hit": false,
+        "route_variant_guard": "accepted as a base-route duplicate, not as a local/limited/SBS variant collapse",
+        "partial_overlap_guard": "not_applicable_route"
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "input_files_read": [
+      "data/canonical/routes.jsonl",
+      "data/canonical/corridors.jsonl",
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json"
+    ],
+    "proposal_guards": [
+      "Each proposed alias_id and target_id exists in current canonical JSONL.",
+      "No proposed alias_id is already present as a merge alias in current data/identity-overrides/merges.json.",
+      "No proposed alias_id is a current merge target in current data/identity-overrides/merges.json.",
+      "No proposed target_id is a current merge alias in current data/identity-overrides/merges.json.",
+      "No proposed pair appears in current data/identity-overrides/do-not-merge.json.",
+      "No corridor partial-overlap proposal was included.",
+      "Route variant-looking proposals were included only where source/canonical evidence tied the records to the same route lifecycle or to a safer generic base-route record."
+    ],
+    "notable_exclusions": [
+      {
+        "candidate": "route_m14-brt-phase2 -> route_m14-ad-sbs",
+        "reason": "Live validator row remains, but this pair was already prepared in codex-identity-batch179-prep.json; not repeated here."
+      },
+      {
+        "candidate": "route_bx55-lga-2012 -> route_bx55-2012",
+        "reason": "Prior notes and current canonical evidence show the LGA record is a participant-identified future LaGuardia access idea, while the target is Webster/Third Avenue Bx55 service context."
+      },
+      {
+        "candidate": "corridor_bus-fwd-2-church-av-brooklyn-local -> corridor_church-av",
+        "reason": "Excluded as a partial-overlap corridor: Coney Island Avenue to Flatbush Avenue versus Flatbush Avenue to Ocean Parkway."
+      },
+      {
+        "candidate": "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate -> corridor_church-av",
+        "reason": "Excluded because the Bus Forward SBS candidate lacks source-backed limits proving it is the same corridor as the materialized Flatbush Avenue to Ocean Parkway Church Avenue project."
+      },
+      {
+        "candidate": "corridor_broadway-manhattan-upper <-> corridor_bus-fwd-2-broadway-bronx-local",
+        "reason": "Excluded as same-street/different-location: Upper Manhattan Broadway versus Bronx Broadway."
+      },
+      {
+        "candidate": "corridor_lexington-ave-2015-01-06 <-> corridor_lexington-ave-96th-to-60th or corridor_lexington-avenue",
+        "reason": "Excluded as partial/different Lexington Avenue segments."
+      },
+      {
+        "candidate": "corridor_14th-st-crosstown-brt-phase2 <-> corridor_14th-street-ttp",
+        "reason": "Both records are current merge targets, so neither side is eligible as the alias under the requested guards."
+      },
+      {
+        "candidate": "corridor_125th-st-crosstown-brt-phase2 <-> corridor_125th-st-manhattan",
+        "reason": "The safer/richer target direction would require using current merge target corridor_125th-st-crosstown-brt-phase2 as alias; reverse direction would target the thinner Phase II candidate record."
+      },
+      {
+        "candidate": "route_b44-brt-phase2 -> route_b44-limited",
+        "reason": "Excluded in favor of route_b44-sbs because the alias source block describes Nostrand Avenue SBS/new service planned, while the B44 Limited/B44 SBS relationship is separately guarded by a do-not-merge decision."
+      },
+      {
+        "candidate": "route_b46-brt-phase2 -> route_utica-ave-sbs",
+        "reason": "Excluded in favor of the safer generic B46 local/limited target to avoid collapsing a one-source base-route mention directly into the SBS variant."
+      }
+    ],
+    "commands_run": [
+      "bun --eval 'import { validateRepo } from \"./packages/pipeline/src/validate.ts\"; ... extract duplicate_global_identity route/corridor messages'",
+      "jq read-only inspection of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+      "bun --eval read-only canonical JSONL summaries from data/canonical/routes.jsonl and data/canonical/corridors.jsonl",
+      "rg read-only source-block inspection for selected evidence refs"
+    ],
+    "forbidden_commands_not_run": [
+      "canonicalize*",
+      "campaign dedup",
+      "identity-review",
+      "write",
+      "ask",
+      "schema",
+      "ontology-normalize",
+      "provider/profile-backed commands",
+      "materialize",
+      "validate CLI",
+      "export-jsonl"
+    ]
+  },
+  "blockers": [
+    "Only 3 high-confidence route/corridor proposals survived the requested guards. Most remaining live rows are route variants without sufficient lifecycle evidence, source-specific route ideas, current merge-target direction traps, current target-is-alias conflicts, or partial-overlap corridors."
+  ]
+}

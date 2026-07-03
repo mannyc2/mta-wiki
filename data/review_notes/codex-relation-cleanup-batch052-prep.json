@@ -1,0 +1,242 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch052",
+  "created_at": "2026-06-23T02:05:00Z",
+  "author": "codex",
+  "batch_id": "relation052",
+  "batch": "batch052",
+  "scope": "Codex-only deterministic/manual relation cleanup prep; no provider-backed commands, post-ingest LLM harnesses, materialize/export-jsonl/full validate/DB publish, generated-output edits, durable retirements, replacement submissions, LOG edits, manifest edits, canonical/generated edits, or code edits applied",
+  "checkpoint_context": {
+    "reported_validate_backlog_after_identity079_relation050": {
+      "issue_count": 1460,
+      "unexpected_relation_endpoint_shape": 15,
+      "duplicate_global_identity": 1445
+    },
+    "source_triage_artifact": "data/review_notes/codex-relation-rule-or-data-next24-prep.json",
+    "source_triage_recommendation": "retire-only data cleanup for operated_by entity->entity; retire sub_9e51ef484cc836e5; no replacement recommended from current evidence",
+    "selected_bucket": "operated_by entity->entity",
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 0,
+    "expected_endpoint_shape_delta": -1,
+    "expected_remaining_unexpected_relation_endpoint_shape_after_apply": 14,
+    "not_repeated": "This prep uses relation052 as requested and does not repeat relation051 or relation037-relation050."
+  },
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal": "none",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch052-prep.json"
+  },
+  "summary_counts": {
+    "prepared_count": 1,
+    "retire_only_count": 1,
+    "retire_replace_count": 0,
+    "accepted_replacement_count": 0,
+    "issue_count": 0,
+    "expected_endpoint_shape_delta": -1
+  },
+  "bucket": {
+    "name": "Access-A-Ride incorrectly modeled as operated_by NYCT",
+    "original_relation_kind": "operated_by",
+    "original_endpoint_shape": "entity -> entity",
+    "cleanup_direction": "retire-only data cleanup; keep operated_by scoped to project|route|corridor -> entity",
+    "rationale": "The accepted relation says Access-A-Ride is operated by NYCT, but its only relation evidence is the agenda heading 'iii. Paratransit Report'. Same-source blocks support an Access-A-Ride entity, paratransit metrics, and provider-category definitions, but not a strong replacement operator edge."
+  },
+  "guards": {
+    "all_pass": true,
+    "original_accepted_not_retired": {
+      "status": "pass",
+      "selected_original_submission_id": "sub_9e51ef484cc836e5",
+      "selected_original_record_id": "relation_access-a-ride-operated-by-nyct",
+      "selected_original_journal": "data/submissions/2026-06-22T21-31-24-465Z_382829-0d339fd2_ingest_meeting-doc-91586.jsonl:48",
+      "current_validation_state": "accepted",
+      "retired_hits": []
+    },
+    "no_same_source_valid_replacement_with_sufficient_evidence": {
+      "status": "pass",
+      "source_id": "meeting_doc_91586",
+      "same_source_relation_records_reviewed": [
+        {
+          "record_id": "relation_access-a-ride-operated-by-nyct",
+          "submission_id": "sub_9e51ef484cc836e5",
+          "relation_kind": "operated_by",
+          "shape": "entity -> entity",
+          "evidence": "meeting_doc_91586#p001_c0011"
+        },
+        {
+          "record_id": "relation_nyct-publishes-metrics-report",
+          "submission_id": "sub_fc8f1c9430418e89",
+          "relation_kind": "published_by",
+          "shape": "source -> entity",
+          "evidence": "meeting_doc_91586#p001_c0001"
+        },
+        {
+          "record_id": "relation_mta-bus-publishes-financial-report",
+          "submission_id": "sub_d7340954e73206e1",
+          "relation_kind": "published_by",
+          "shape": "source -> entity",
+          "evidence": "meeting_doc_91586#p103_c0001"
+        },
+        {
+          "record_id": "relation_sir-operated-by-nyct",
+          "submission_id": "sub_d706d76141523af8",
+          "relation_kind": "part_of",
+          "shape": "entity -> entity",
+          "evidence": "meeting_doc_91586#p003_c0004"
+        }
+      ],
+      "same_source_evidence_reviewed": [
+        {
+          "evidence_id": "meeting_doc_91586#p001_c0011",
+          "summary": "Agenda heading for the Paratransit Report section; this is the original relation evidence and does not state an operator."
+        },
+        {
+          "evidence_id": "meeting_doc_91586#p047_c0001",
+          "summary": "Paratransit Report heading."
+        },
+        {
+          "evidence_id": "meeting_doc_91586#p047_c0003",
+          "summary": "Paratransit Operations monthly service-indicator table; supports paratransit metrics, not an operator relation."
+        },
+        {
+          "evidence_id": "meeting_doc_91586#p048_c0003",
+          "summary": "Defines Total Trips for registered Access-A-Ride clients and says ridership is presented by provider type."
+        },
+        {
+          "evidence_id": "meeting_doc_91586#p048_c0004",
+          "summary": "Defines provider categories; says primary Access-A-Ride branded vehicles are operated by contractors, which argues against inventing a NYCT operated_by replacement from this source."
+        }
+      ],
+      "conclusion": "No same-source accepted replacement relation is both endpoint-shape valid and sufficiently source-backed for this cleanup."
+    },
+    "current_operated_by_entity_to_entity_invalid_under_packages_pipeline_src_records_relations_ts": {
+      "status": "pass",
+      "file": "packages/pipeline/src/records/relations.ts",
+      "current_valid_operated_by_subjects": [
+        "project",
+        "route",
+        "corridor"
+      ],
+      "current_valid_operated_by_objects": [
+        "entity"
+      ],
+      "original_subject_kind": "entity",
+      "original_object_kind": "entity",
+      "endpoint_shape_issue": "Relation kind operated_by expects project|route|corridor -> entity, got entity -> entity."
+    },
+    "retire_only_semantically_safer_than_inventing_replacement": {
+      "status": "pass",
+      "reason": "The submitted description may reflect broader corpus knowledge, but the cited source block is only a section heading. A replacement such as part_of_agency, operates, related_to, or operated_by would either overstate the source or preserve the same endpoint-shape problem. Retire-only removes the malformed weak assertion while leaving accepted Access-A-Ride, NYCT, paratransit metric, and source-publication records intact."
+    },
+    "no_generated_files_edited": {
+      "status": "pass_for_this_task",
+      "note": "The shared worktree already contains generated-output and other edits owned by others. This task writes only data/review_notes/codex-relation-cleanup-batch052-prep.json and does not edit retired.json, submissions, canonical JSONL, materialized data, wiki output, LOG, manifest, code, or generated files."
+    }
+  },
+  "prepared_changes": [
+    {
+      "original": {
+        "submission_id": "sub_9e51ef484cc836e5",
+        "run_id": "2026-06-22T21-31-24-465Z_382829-0d339fd2_ingest_meeting-doc-91586",
+        "submitted_at": "2026-06-22T21:58:03.949Z",
+        "journal": "data/submissions/2026-06-22T21-31-24-465Z_382829-0d339fd2_ingest_meeting-doc-91586.jsonl:48",
+        "record_id": "relation_access-a-ride-operated-by-nyct",
+        "source_id": "meeting_doc_91586",
+        "local_observation_id": "relation_access_a_ride_operated_by_nyct",
+        "label": "Access-A-Ride operated by NYCT",
+        "malformed_shape": "operated_by entity -> entity",
+        "tool_args_sha256": "sha256:9e51ef484cc836e592f6bc5cbaaf6e731d0d7684ade02b48bba2a98a00556875",
+        "tool_args": {
+          "source_id": "meeting_doc_91586",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_access_a_ride_operated_by_nyct",
+          "label": "Access-A-Ride operated by NYCT",
+          "raw_text": "Paratransit Report - included in NYCT and Bus Committee Meeting",
+          "payload": {
+            "relation_kind": "operated_by",
+            "subject_local_observation_id": "entity_meeting_doc_91586_access_a_ride",
+            "object_local_observation_id": "entity_meeting_doc_91586_nyct",
+            "description": "Access-A-Ride paratransit service is operated as part of NYCT",
+            "relation_family": "agency_role"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_91586",
+              "evidence_id": "meeting_doc_91586#p001_c0011",
+              "source_path": "raw/sources/meeting_doc_91586/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0011",
+              "text_sha256": "sha256:0be671c624a37a5ae293c92dd38aaa962cd81b2184930fe116beb85b5de336a9",
+              "text_source": "raw_text",
+              "source_quote": "iii. Paratransit Report"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_9e51ef484cc836e5",
+          "reason": "Codex relation cleanup batch052 retires malformed operated_by entity -> entity relation relation_access-a-ride-operated-by-nyct because the only accepted relation evidence is an agenda heading for the Paratransit Report and same-source inspection found no sufficiently source-backed valid replacement.",
+          "source_decision": "data/review_notes/codex-relation-cleanup-batch052-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch052",
+          "reviewed_at": "2026-06-23T02:05:00Z"
+        },
+        "reason": "The relation uses an endpoint shape that is invalid for operated_by and the evidence is too thin to support a durable replacement.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": null
+    }
+  ],
+  "replacement_ids": [],
+  "accepted_replacements": [],
+  "apply_instructions": {
+    "conductor_can_apply_immediately": true,
+    "steps": [
+      "Add the proposed_retired_json_entry for sub_9e51ef484cc836e5 to data/submission-overrides/retired.json.",
+      "Do not append a replacement submission journal for batch052.",
+      "Do not change relation endpoint-shape rules for operated_by."
+    ]
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "Read-only rg/sed/node inspection only; no appendSubmission, materialize, export-jsonl, full validate, DB publish, provider-backed command, post-ingest LLM harness, generated-output command, durable data edit, or code edit run.",
+    "summary": {
+      "original_submission_id": "sub_9e51ef484cc836e5",
+      "original_validation_state": "accepted",
+      "retired_hits": [],
+      "replacement_submission_ids": [],
+      "accepted_replacement_count": 0,
+      "issue_count": 0,
+      "expected_endpoint_shape_delta": -1
+    }
+  },
+  "commands_run": [
+    "pwd && rg -n \"sub_9e51ef484cc836e5|relation051|relation052|operated_by|unexpected_relation_endpoint_shape\" data/review_notes data/submissions data/canonical packages/pipeline/src/records/relations.ts retired.json 2>/dev/null",
+    "git status --short",
+    "ls -la data/review_notes && rg --files | rg '(^|/)retired\\\\.json$|packages/pipeline/src/records/relations\\\\.ts|data/review_notes/codex-relation-rule-or-data-next24-prep\\\\.json'",
+    "sed -n '1,240p' data/review_notes/codex-relation-rule-or-data-next24-prep.json",
+    "sed -n '1,340p' data/review_notes/codex-relation-cleanup-batch051-prep.json",
+    "sed -n '220,290p' packages/pipeline/src/records/relations.ts",
+    "rg -n \"sub_9e51ef484cc836e5\" data/submissions data/submission-overrides/retired.json data/canonical/relations.jsonl",
+    "test ! -e data/review_notes/codex-relation-cleanup-batch052-prep.json && echo absent || echo present",
+    "sed -n '1,140p' data/submission-overrides/retired.json",
+    "rg -n \"sub_9e51ef484cc836e5|relation_access_a_ride_operated_by_nyct|entity_meeting_doc_91586_access_a_ride|entity_meeting_doc_91586_nyct|Access-A-Ride|Paratransit|NYCT\" data/submissions/2026-06-22T21-31-24-465Z_382829-0d339fd2_ingest_meeting-doc-91586.jsonl raw/sources/meeting_doc_91586/blocks.jsonl data/canonical/relations.jsonl data/canonical/entities.jsonl",
+    "sed -n '1,90p' raw/sources/meeting_doc_91586/blocks.jsonl && sed -n '470,490p' raw/sources/meeting_doc_91586/blocks.jsonl",
+    "rg -n '\"block_id\":\"p047|\"block_id\":\"p048' raw/sources/meeting_doc_91586/blocks.jsonl",
+    "node read-only check for retired hits of sub_9e51ef484cc836e5",
+    "node read-only summary of meeting_doc_91586 submissions involving relations, Access-A-Ride, Paratransit, and NYCT",
+    "node read-only summary of canonical meeting_doc_91586 relation records"
+  ],
+  "commands_not_run": [
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts materialize",
+    "export-jsonl",
+    "DB publish",
+    "canonicalize",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "any command with --profile/provider-backed command",
+    "appendSubmission"
+  ]
+}

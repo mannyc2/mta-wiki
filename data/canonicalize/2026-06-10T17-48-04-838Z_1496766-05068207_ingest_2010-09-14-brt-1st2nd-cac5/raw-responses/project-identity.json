@@ -1,0 +1,43 @@
+{
+  "run_id": "2026-06-10T17-48-04-838Z_1496766-05068207_ingest_2010-09-14-brt-1st2nd-cac5",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T19:49:20.159Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "proj-identity-001",
+        "local_observation_id": "project_first_second_ave_sbs_2010",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_first-second-ave-sbs-2010' already exists in the registry with source_id '2010_09_14_brt_1st2nd_cac5' already listed among its source_ids. The payload matches exactly: same project_name 'First Avenue/Second Avenue Select Bus Service', same status 'Phase I project launch: October 10, 2010', same description referencing M15 SBS, over 10 miles of bus facilities, and doubling protected bike lanes. The observation already resolves to its own base_record_id; no linking to another record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p001_c0001",
+            "source_quote": "First Avenue/Second Avenue Select Bus Service Community Advisory Committee Meeting #5"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p023_c0006",
+            "source_quote": "Phase I project launch: October 10, 2010"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p003_c0007",
+            "source_quote": "Adds over 10 miles of new and improved bus facilities"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p003_c0009",
+            "source_quote": "Doubles the protected bike lanes in New York City"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-48-32-199Z_1665469-c4ad72f7_canonicalize_2026-06-10t17-48-04-838z-1496766-05068207-ingest-2010-09-14-brt-1st2nd-cac5-project-identity"
+}

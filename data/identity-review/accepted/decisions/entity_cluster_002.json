@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "entity_cluster_002",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_002.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_002.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "entity_ddc-acting-commissioner-eduardo-del-valle",
+        "entity_nyc-ddc"
+      ],
+      "reason": "Records represent distinct entity types: 'government_official' (person: Eduardo del Valle, DDC Acting Commissioner) vs 'government_agency' (NYC Department of Design and Construction). The shared identity keys and aliases (entity_nyc-ddc, entity_nyc-department-of-design-and-construction) were incorrectly assigned to the person record. An agency and a person who works for that agency are related but not the same canonical identity."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Do not merge person (government_official) records with agency (government_agency) records solely on shared agency name or abbreviation identity keys. The agency name in a person record's agency_name field is affiliation context, not identity equivalence."
+  ],
+  "rationale": "Payload identity fields clearly distinguish Eduardo del Valle (entity_type: government_official) from NYC Department of Design and Construction (entity_type: government_agency). The duplicate detection fired because the person record's aliases/identity_keys included entity_nyc-ddc, but the authoritative identity fields confirm different canonical identities. No merge is warranted."
+}

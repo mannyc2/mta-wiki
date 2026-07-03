@@ -1,0 +1,589 @@
+{
+  "run_id": "2026-06-10T23-00-43-892Z_1976810-2089e199_ingest_201111-nostrand-cb1-slides",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T02:18:46.266Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-b44-weekday-riders",
+        "local_observation_id": "metric_b44_weekday_riders_42000",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-limited",
+            "object_id": "metric_b44-weekday-riders-42000_2",
+            "description": "B44 route has 42,000 weekday riders",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p002_c0004",
+                "source_quote": "42,000 weekday riders – 7th busiest bus route in city"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric directly measures ridership on the B44 bus route; evidence names the B44 from page 2 of the CB1 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p002_c0004",
+            "source_quote": "42,000 weekday riders – 7th busiest bus route in city"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-b44-avg-speed",
+        "local_observation_id": "metric_b44_avg_speed_7to8_mph",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-limited",
+            "object_id": "metric_b44-avg-speed-7to8-mph",
+            "description": "B44 route buses travel at average speed of 7-8 mph",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p002_c0004",
+                "source_quote": "Buses travel at an average speed of 7-8 mph"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric describes the average speed of B44 buses, which is a property of the B44 limited route.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p002_c0004",
+            "source_quote": "Buses travel at an average speed of 7-8 mph"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cb1-boardings-2000",
+        "local_observation_id": "metric_cb1_boardings_2000",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-limited",
+            "object_id": "metric_cb1-boardings-2000",
+            "description": "2,000 people board the B44 in CB 1",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p002_c0004",
+                "source_quote": "2,000 people board in CB 1"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric counts boardings on the B44 route specifically within Community Board 1.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p002_c0004",
+            "source_quote": "2,000 people board in CB 1"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-households-no-car-62pct",
+        "local_observation_id": "metric_households_no_car_62pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_households-no-car-62pct_3",
+            "description": "62% of households within 1/4 mile of the Nostrand Ave corridor do not own a car",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p002_c0006",
+                "source_quote": "62% of households do not own a car (69% in CB 1)"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric describes demographic conditions within 1/4 mile of the Nostrand Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p002_c0006",
+            "source_quote": "62% of households do not own a car (69% in CB 1)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-commute-by-transit-60pct",
+        "local_observation_id": "metric_commute_by_transit_60pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_commute-by-transit-60pct_2",
+            "description": "60% of residents within 1/4 mile of the corridor commute by transit",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p002_c0006",
+                "source_quote": "60% of residents commute by transit (58% in CB1, compared to 21% by car, truck, or van)"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric describes commute mode share of residents within 1/4 mile of the Nostrand Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p002_c0006",
+            "source_quote": "60% of residents commute by transit (58% in CB1, compared to 21% by car, truck, or van)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-car-commute-21pct",
+        "local_observation_id": "metric_cb1_commute_by_car_21pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_cb1-commute-by-car-21pct",
+            "description": "21% of CB 1 residents commute by car, truck, or van",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p002_c0006",
+                "source_quote": "compared to 21% by car, truck, or van"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric describes commute mode share along the Nostrand Avenue corridor population.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p002_c0006",
+            "source_quote": "compared to 21% by car, truck, or van"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-corridor-residents-300k",
+        "local_observation_id": "metric_corridor_residents_300000",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_corridor-residents-300000",
+            "description": "300,000 residents within 1/4 mile of the Nostrand Ave/Rogers Ave corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p002_c0006",
+                "source_quote": "300,000 residents"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric counts residents within the service area of the Nostrand Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p002_c0006",
+            "source_quote": "300,000 residents"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-sbs-faster-trips",
+        "local_observation_id": "claim_sbs_results_faster_trips",
+        "decision": "skip",
+        "rationale": "This claim describes SBS results on Fordham Rd and 1st/2nd Aves, not the Nostrand Avenue corridor or B44 route. The evidence block states the results are from Fordham Rd in the Bronx (Bx12 SBS) and 1st/2nd Aves in Manhattan (M15 SBS).",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "SBS has been operating on Fordham Rd in the Bronx since 2008, and on 1st and 2nd Aves in Manhattan since 2010, providing significant benefits:"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-sbs-customer-satisfaction",
+        "local_observation_id": "claim_sbs_results_customer_satisfaction",
+        "decision": "skip",
+        "rationale": "This claim describes customer satisfaction on Fordham Rd and 1st/2nd Ave SBS routes, not the Nostrand corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p005_c0003",
+            "source_quote": "Over 90% customer satisfaction"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-sbs-ridership-increase",
+        "local_observation_id": "claim_sbs_results_ridership_increase",
+        "decision": "skip",
+        "rationale": "This claim describes ridership increase on Fordham Rd and 1st/2nd Ave SBS routes, not the Nostrand corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p005_c0003",
+            "source_quote": "10% ridership increase on the entire route, including SBS and local"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-fare-evasion-declined",
+        "local_observation_id": "claim_fare_evasion_declined_after_prepayment",
+        "decision": "skip",
+        "rationale": "This claim describes fare evasion on Bx12 SBS and M15 SBS specifically, not the Nostrand corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p011_c0002",
+            "source_quote": "Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-enforcement-fine-100",
+        "local_observation_id": "claim_enforcement_fine_100",
+        "decision": "skip",
+        "rationale": "This claim describes the general SBS enforcement fine structure, not specific to the Nostrand corridor or B44 route.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p011_c0002",
+            "source_quote": "$100 fine for passengers without a receipt"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-traffic-no-changes-cb1",
+        "local_observation_id": "claim_traffic_no_changes_cb1",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "claim_traffic-no-changes-cb1",
+            "description": "No roadway changes planned for CB 1 as part of the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p012_c0003",
+                "source_quote": "No changes to roadway"
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim describes that no roadway changes are planned in Community Board 1 as part of the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p012_c0003",
+            "source_quote": "No changes to roadway"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ridership-low-flushing-taylor",
+        "local_observation_id": "claim_ridership_low_flushing_to_taylor",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_b44-limited",
+            "object_id": "claim_ridership-low-flushing-to-taylor",
+            "description": "Ridership is very low on the B44 between Flushing Ave and Taylor St",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p009_c0002",
+                "source_quote": "Ridership is very low between Flushing Ave and Taylor St"
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim describes ridership conditions on the B44 limited route between Flushing Ave and Taylor St.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p009_c0002",
+            "source_quote": "Ridership is very low between Flushing Ave and Taylor St"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-traffic-little-change-south",
+        "local_observation_id": "claim_traffic_little_change_south_cb1",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "claim_traffic-little-change-south-cb1",
+            "description": "Analysis found little change in traffic conditions in bus lane areas south of CB 1",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p012_c0005",
+                "source_quote": "In bus lane areas, analysis found little change in traffic conditions."
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim describes traffic analysis results for the Nostrand Avenue corridor south of CB 1.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p012_c0005",
+            "source_quote": "In bus lane areas, analysis found little change in traffic conditions."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-traffic-improvements-south",
+        "local_observation_id": "claim_traffic_improvements_south_cb1",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "claim_traffic-improvements-south-cb1",
+            "description": "Left curb lane improvements, signal improvements, and delivery zones will improve traffic flow south of CB 1",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p012_c0006",
+                "source_quote": "Left curb travel lane will function better than right curb lane. Signal improvements and delivery zones will improve traffic flow."
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim describes planned traffic improvements on the Nostrand Avenue corridor south of CB 1.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p012_c0006",
+            "source_quote": "Left curb travel lane will function better than right curb lane. Signal improvements and delivery zones will improve traffic flow."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac-meetings-2010",
+        "local_observation_id": "event_cac_meetings_2_and_3_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_cac-meetings-2-and-3-2010",
+            "description": "CAC Meetings #2 & 3 were held in Winter 2010 for the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p013_c0002",
+                "source_quote": "CAC Meetings # 2 & 3"
+              }
+            ]
+          }
+        ],
+        "rationale": "The event is a Community Advisory Committee meeting directly connected to the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p013_c0002",
+            "source_quote": "CAC Meetings # 2 & 3"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-open-house-1-2010",
+        "local_observation_id": "event_public_open_house_1_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_public-open-house-1-2010_2",
+            "description": "Public Open House #1 held in Summer 2010 for the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p013_c0002",
+                "source_quote": "Public Open House #1"
+              }
+            ]
+          }
+        ],
+        "rationale": "The event is an open house directly connected to the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p013_c0002",
+            "source_quote": "Public Open House #1"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac4-open-house-2-2011",
+        "local_observation_id": "event_cac_4_open_house_2_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_cac-4-open-house-2-2011_2",
+            "description": "CAC #4 & Open House #2 held in Winter 2011 for the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p013_c0002",
+                "source_quote": "CAC # 4 & Open House # 2"
+              }
+            ]
+          }
+        ],
+        "rationale": "The event combines CAC meeting #4 and Public Open House #2 for the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p013_c0002",
+            "source_quote": "CAC # 4 & Open House # 2"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-final-design-2011",
+        "local_observation_id": "event_final_design_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_final-design-2011",
+            "description": "Final Design phase in Summer 2011 for the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p013_c0002",
+                "source_quote": "Final Design"
+              }
+            ]
+          }
+        ],
+        "rationale": "The Final Design milestone is directly part of the Nostrand/Rogers SBS project timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p013_c0002",
+            "source_quote": "Final Design"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-start-sbs-service-2012",
+        "local_observation_id": "event_start_sbs_service_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_start-sbs-service-2012",
+            "description": "Start of SBS Service targeted for Winter 2012 on the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p013_c0002",
+                "source_quote": "Start of SBS Service"
+              }
+            ]
+          }
+        ],
+        "rationale": "Start of SBS Service is a key milestone in the Nostrand/Rogers SBS project timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p013_c0002",
+            "source_quote": "Start of SBS Service"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-construction-2012",
+        "local_observation_id": "event_construction_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_construction-2012",
+            "description": "Construction phase in Summer 2012 for the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p013_c0002",
+                "source_quote": "Construction"
+              }
+            ]
+          }
+        ],
+        "rationale": "The Construction phase is a milestone in the Nostrand/Rogers SBS project timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p013_c0002",
+            "source_quote": "Construction"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-total-public-meetings",
+        "local_observation_id": "event_nostrand_sbs_cac_meetings_total",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_nostrand-sbs-cac-meetings-total",
+            "description": "17 public meetings held about Nostrand & Rogers SBS in the 3 years prior to 2011",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "17 Public Meetings in the last 3 years about Nostrand & Rogers SBS"
+              },
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p003_c0003",
+                "source_quote": "4 Community Advisory Committee meetings and 2 Public Open Houses to date"
+              }
+            ]
+          }
+        ],
+        "rationale": "The 17 public meetings were specifically about the Nostrand & Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p003_c0002",
+            "source_quote": "17 Public Meetings in the last 3 years about Nostrand & Rogers SBS"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-11-52-714Z_2111393-3399069d_canonicalize_2026-06-10t23-00-43-892z-1976810-2089e199-ingest-201111-nostrand-cb1-slides-relation-linker"
+}

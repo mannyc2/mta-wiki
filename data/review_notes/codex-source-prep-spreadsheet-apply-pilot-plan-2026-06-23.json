@@ -1,0 +1,239 @@
+{
+  "note_id": "codex-source-prep-spreadsheet-apply-pilot-plan-2026-06-23",
+  "created_at": "2026-06-23T00:00:00Z",
+  "scope": {
+    "task": "Inspect spreadsheet preview artifacts and propose a safe sidecar-to-block conversion shape for one pilot source.",
+    "constraints_observed": [
+      "No provider or external LLM commands run.",
+      "No materialize, full validate, or export generated-output commands run.",
+      "No raw/sources files mutated.",
+      "No LOG.md or manifest files edited.",
+      "Only this review note is intended as an output file."
+    ]
+  },
+  "selected_pilot_source": {
+    "source_id": "meeting_doc_51956",
+    "selection": "selected",
+    "reason": "Preferred by request and confirmed suitable by sidecar evidence: preview status is ok, source is a small xlsx workbook, raw blocks are still empty, and metadata/source hash match the preview.",
+    "metadata_observed": {
+      "title": "July 2021 Fuel Hedge Program",
+      "publisher": "MTA",
+      "source_url": "https://www.mta.info/document/51956",
+      "upstream_source_id": "mta_meeting_doc_51956",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "detected_content_type": "xlsx",
+      "metadata_sha256": "sha256:36f79db5945efcb19452cd6223da9c36f0b28089872025e9799cc776d0b28cf5"
+    },
+    "preview_observed": {
+      "run_id": "spreadsheet-backlog-20260623",
+      "preview_json": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51956/preview.json",
+      "preview_md": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51956/preview.md",
+      "status": "ok",
+      "source_path": "raw/sources/meeting_doc_51956/source.xlsx",
+      "source_sha256": "sha256:36f79db5945efcb19452cd6223da9c36f0b28089872025e9799cc776d0b28cf5",
+      "sheet_count": 1,
+      "row_count": 26,
+      "cell_count": 156,
+      "raw_blocks_jsonl_lines_before_apply": 0,
+      "sheet_summary": [
+        {
+          "name": "Sheet1",
+          "sheet_id": "1",
+          "path": "xl/worksheets/sheet1.xml",
+          "row_count": 26,
+          "cell_count": 156,
+          "title_row": "A1=Current ULSD Hedges",
+          "header_row": [
+            "A2=Date",
+            "B2=Gallons Hedged",
+            "C2=Percent of Expected Gallons Purchased",
+            "D2=Weighted Average Hedge Price for Each Month",
+            "E2=2020 Adopted Budget (February Plan) Forecasted Commodity Price",
+            "F2=2021 Adopted Budget (February Plan) Forecasted Commodity Price"
+          ]
+        }
+      ]
+    }
+  },
+  "proposed_text_surface_shape": {
+    "recommendation": "Use a deterministic spreadsheet-specific text surface generated from the reviewed preview sidecar, but make blocks directly from preview rows instead of first flattening through generic text line splitting.",
+    "surface_file": "raw/sources/meeting_doc_51956/text.txt",
+    "source_surface": "spreadsheet",
+    "top_matter": [
+      "Spreadsheet source: meeting_doc_51956",
+      "Preview run: spreadsheet-backlog-20260623",
+      "Source file: raw/sources/meeting_doc_51956/source.xlsx",
+      "Source SHA-256: sha256:36f79db5945efcb19452cd6223da9c36f0b28089872025e9799cc776d0b28cf5"
+    ],
+    "sheet_sections": [
+      "Sheet: Sheet1",
+      "Sheet id: 1",
+      "Sheet path: xl/worksheets/sheet1.xml",
+      "Rows: 26",
+      "Cells: 156"
+    ],
+    "row_surface_format": "One non-empty workbook row becomes one line and one evidence block. Include cell refs inline for agent readability, e.g. Row 4: [Sheet1!A4] 44440 | [Sheet1!B4] 2854250 | [Sheet1!C4] 49.99999872142007 | [Sheet1!D4] 1.5272203732679337 | [Sheet1!E4] 1.82 | [Sheet1!F4] 1.36.",
+    "empty_cells": "Do not include empty cell values in row text, but preserve their refs in block metadata when they are present in the preview row.",
+    "value_normalization": "For the pilot, preserve preview text/raw_value exactly. Do not guess Excel serial dates, currency, percentages, or number formatting until styles/numFmt parsing is implemented. If display formatting is later added, keep raw_value and formatted_text side by side.",
+    "block_kind_mapping": {
+      "sheet title rows": "heading",
+      "header rows": "table_row",
+      "data rows": "table_row",
+      "sheet metadata lines": "section"
+    },
+    "pilot_expected_text_lines": "For meeting_doc_51956, expect one top-matter group, one Sheet1 section, and 24 data-row lines if rows 1 and 2 are kept as title/header blocks and row 3 is omitted from text because all cell text is empty."
+  },
+  "block_id_page_strategy": {
+    "recommendation": "Use virtual page numbers by sheet index and spreadsheet-specific block ids. Do not pretend spreadsheet rows are OCR pages.",
+    "page_number": "Set page_number to 1 for Sheet1 in the pilot; for multi-sheet workbooks use sheet index as page_number to preserve range validation behavior within a sheet.",
+    "block_id_pattern": {
+      "sheet_heading": "s001_h0001",
+      "sheet_row": "s001_r0004",
+      "row_range": "Existing range syntax can cite same-sheet ranges such as s001_r0004..s001_r0008 once sourceBlockRangeById accepts the s-prefix IDs without assuming p-prefix aliases."
+    },
+    "reading_order": "Order by workbook sheet order, then row number, with sheet metadata/header blocks before row data.",
+    "raw_source_path": "Use raw/sources/meeting_doc_51956/source.xlsx for row blocks, or raw/sources/meeting_doc_51956/text.txt only for synthetic top-matter lines. Prefer raw source xlsx plus cell metadata for evidence fidelity.",
+    "raw_start_end_chars": "For row blocks built from preview data, use deterministic offsets into the generated text surface line for compatibility. Store spreadsheet coordinates separately so raw_start_char/raw_end_char are not overloaded as cell refs.",
+    "compatibility_note": "packages/db/src/types.ts currently restricts source_surface to chandra_ocr | ocr_text. Add spreadsheet to that union before writing spreadsheet blocks, and confirm downstream validators/audits treat it as acceptable for non-PDF sources."
+  },
+  "metadata_needed_to_preserve_cell_refs": {
+    "block_level_fields": [
+      "workbook_source_path",
+      "workbook_sha256",
+      "preview_run_id",
+      "preview_path",
+      "sheet_name",
+      "sheet_id",
+      "sheet_path",
+      "row_number",
+      "cell_range",
+      "cell_refs",
+      "non_empty_cell_refs",
+      "empty_cell_refs",
+      "header_cell_refs",
+      "row_values_sha256"
+    ],
+    "cell_level_sidecar_shape": "Write a reviewed apply sidecar such as data/source-prep/<run_id>/<source_id>/applied-blocks.json with block_id -> cells[] entries. Each cell entry should include ref, column, row, type, style, raw_value, formula, text, and any future formatted_text/number_format fields.",
+    "why_sidecar_not_only_blocks_jsonl": "StagedSourceBlock is used broadly and is currently a lean evidence type. The row text should stay human-readable in blocks.jsonl while dense cell metadata lives in an adjacent apply sidecar for audit, reapply, and future formatting review.",
+    "minimum_for_pilot_in_blocks_jsonl": [
+      "source_surface=spreadsheet",
+      "block_kind=table_row or heading",
+      "sheet_name",
+      "sheet_id",
+      "sheet_path",
+      "row_number",
+      "cell_range=A4:F4",
+      "cell_refs=[Sheet1!A4, Sheet1!B4, ...]",
+      "preview_run_id=spreadsheet-backlog-20260623",
+      "raw_source_path=raw/sources/meeting_doc_51956/source.xlsx"
+    ]
+  },
+  "risks": [
+    {
+      "risk": "Current applySpreadsheetPreview builds generic ocr_text blocks from flattened text, so it does not preserve structured cell metadata beyond inline refs.",
+      "mitigation": "Replace or supplement buildSourceBlocksFromText in the spreadsheet apply path with buildSourceBlocksFromSpreadsheetPreview."
+    },
+    {
+      "risk": "Excel date serials and percentages are visible as raw numbers, e.g. A4=44440 and C4=49.99999872142007, which may be misread by agents.",
+      "mitigation": "For pilot, label these as raw workbook values in prompts/text. Do not auto-format until numFmt/style parsing is deterministic and tested."
+    },
+    {
+      "risk": "The StagedSourceBlock source_surface union excludes spreadsheet, and campaign ingest audit currently flags non-Chandra surfaces in some contexts.",
+      "mitigation": "Add spreadsheet as a non-PDF primary surface and keep the existing Chandra preference for PDFs only."
+    },
+    {
+      "risk": "Large workbooks may produce very large text surfaces and too many row blocks.",
+      "mitigation": "Pilot only meeting_doc_51956 first. For general rollout, add limits/summaries and keep full cell data in sidecar."
+    },
+    {
+      "risk": "Merged cells, hidden sheets/rows, formulas, cached formula values, styles, and formatted display text are only partially represented by the preview parser.",
+      "mitigation": "Keep unsupported workbook features explicit in preview/apply metadata and avoid semantic transformations in the first apply."
+    },
+    {
+      "risk": "sourceBlockRangeById assumes ranges stay within the same numeric page and aliases pNNN_bNNNN to Chandra pNNN_cNNNN.",
+      "mitigation": "Use same-sheet page_number mapping and add tests for s001_rNNNN exact/range lookup without alias rewriting."
+    }
+  ],
+  "exact_command_and_code_changes_recommended": {
+    "commands_to_run_after_implementation": [
+      "bun packages/cli/src/cli.ts source-prep-preview meeting_doc_51956 --run-id spreadsheet-backlog-20260623",
+      "bun packages/cli/src/cli.ts source-prep-apply-preview meeting_doc_51956 --run-id spreadsheet-backlog-20260623",
+      "bun test packages/pipeline/test/sources/source-prep.test.ts",
+      "bun run typecheck"
+    ],
+    "commands_not_recommended_for_this_pilot_step": [
+      "bun packages/cli/src/cli.ts materialize",
+      "bun run validate",
+      "export generated-output commands",
+      "ingest/write/provider-backed commands"
+    ],
+    "code_changes": [
+      {
+        "file": "packages/db/src/types.ts",
+        "change": "Extend StagedSourceBlock.source_surface from \"chandra_ocr\" | \"ocr_text\" to include \"spreadsheet\". Add optional spreadsheet metadata fields or allow a typed spreadsheet_metadata object if the project prefers not to widen the top-level block shape."
+      },
+      {
+        "file": "packages/pipeline/src/sources/source-prep-preview.ts",
+        "change": "Add buildSourceBlocksFromSpreadsheetPreview(sourceId, preview) that emits sheet/header/data row blocks directly from preview rows, assigns sNNN_hNNNN and sNNN_rNNNN ids, preserves cell refs/ranges, sets source_surface=spreadsheet, and returns both blocks and the generated text surface."
+      },
+      {
+        "file": "packages/pipeline/src/sources/source-prep-preview.ts",
+        "change": "Update applySpreadsheetPreview to require --run-id, verify preview source_id/status/hash against raw metadata/source file, write text.txt and blocks.jsonl only after successful block construction, and write an apply report/metadata sidecar under data/source-prep/<run_id>/<source_id>/ without mutating manifests."
+      },
+      {
+        "file": "packages/cli/src/commands/sources.ts",
+        "change": "Import applySpreadsheetPreview and add a source-prep-apply-preview handler that prints source id, run id, block count, text path, blocks path, sheet/row/cell counts, and refuses to run without --run-id."
+      },
+      {
+        "file": "packages/pipeline/src/sources/source-packet.ts",
+        "change": "Expose spreadsheet metadata in agentVisibleBlock only if needed; at minimum ensure spreadsheet table_row blocks render in fenced text like existing table/table_row blocks."
+      },
+      {
+        "file": "packages/pipeline/src/campaign/ingest-audit.ts and packages/pipeline/src/records/submissions.ts",
+        "change": "Confirm non-PDF spreadsheet evidence is treated as primary for spreadsheet sources while preserving Chandra as primary when PDF blocks exist."
+      },
+      {
+        "file": "packages/pipeline/test/sources/source-prep.test.ts",
+        "change": "Add tests that source-prep preview remains sidecar-only, apply writes spreadsheet blocks with cell refs and source_surface=spreadsheet, unsupported xls cannot apply, source hash mismatches fail before raw writes, and meeting_doc_51956-like rows preserve raw values."
+      }
+    ]
+  },
+  "acceptance_checks": [
+    {
+      "check": "Preview sidecar still exists and is reviewed explicitly.",
+      "expected": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_51956/preview.json has status ok, source_id meeting_doc_51956, one sheet, 26 rows, 156 cells."
+    },
+    {
+      "check": "Apply is opt-in and source-specific.",
+      "expected": "source-prep-apply-preview refuses to run without --run-id and refuses if preview.source_id differs from the requested source id."
+    },
+    {
+      "check": "No accidental raw mutation during preview.",
+      "expected": "Running source-prep-preview leaves raw/sources/meeting_doc_51956/blocks.jsonl at 0 lines."
+    },
+    {
+      "check": "Pilot apply creates usable evidence blocks.",
+      "expected": "After explicit apply, raw/sources/meeting_doc_51956/blocks.jsonl is non-empty and contains spreadsheet blocks including s001_h0001, s001_r0002, and data rows such as s001_r0004."
+    },
+    {
+      "check": "Cell references survive.",
+      "expected": "Block s001_r0004 has cell_range A4:F4, cell refs for Sheet1!A4 through Sheet1!F4, and normalized/raw text that includes inline [Sheet1!A4] style refs."
+    },
+    {
+      "check": "Raw workbook values survive.",
+      "expected": "A4 remains 44440, B4 remains 2854250, C4 remains 49.99999872142007, and D4 remains 1.5272203732679337 unless a future formatted_text field is added alongside raw_value."
+    },
+    {
+      "check": "Evidence lookup works.",
+      "expected": "sourceBlockById('meeting_doc_51956', 's001_r0004') resolves, and same-sheet ranges such as s001_r0004..s001_r0006 resolve without crossing virtual sheet pages."
+    },
+    {
+      "check": "Agent packet readability remains good.",
+      "expected": "ingest-visible source windows render spreadsheet table_row blocks as compact fenced row text and do not expose giant JSON blobs."
+    },
+    {
+      "check": "Typecheck and focused tests pass.",
+      "expected": "bun test packages/pipeline/test/sources/source-prep.test.ts and bun run typecheck pass after the code changes."
+    }
+  ]
+}

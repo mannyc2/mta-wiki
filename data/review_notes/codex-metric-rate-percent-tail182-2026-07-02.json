@@ -1,0 +1,151 @@
+{
+  "id": "codex-metric-rate-percent-tail182-2026-07-02",
+  "created_at": "2026-07-02T00:00:00Z",
+  "mode": "codex_only_deterministic",
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed model calls"
+  ],
+  "baseline": {
+    "metric_claim_rows": 36534,
+    "before_missing_unit_family": 193,
+    "before_unit_family_other": 5,
+    "before_finite_no_unit_rows": 185,
+    "route_records": 319,
+    "project_records": 1859,
+    "identity_review_validation_issues": 0,
+    "identity_review_candidate_edges": 0,
+    "route_merge_aliases": 147,
+    "project_merge_aliases": 353,
+    "route_do_not_merge_pairs": 68,
+    "project_do_not_merge_pairs": 70
+  },
+  "implemented_slice": {
+    "bucket": "metric_claim missing unit_normalized.unit_family",
+    "source_audit": "Linnaeus read-only rate/percent audit",
+    "delta": 11,
+    "after_missing_unit_family": 182,
+    "after_unit_family_other": 5,
+    "after_finite_no_unit_rows": 174,
+    "method": "Added exact metric_name entries for audited rate and percent rows. Percent rows remain gated on stored percent evidence in raw_value_text; rate rows require finite numeric payload.value and no existing unit or unit_normalized.",
+    "normalized_targets": [
+      {
+        "metric_name": "Lost Time Incident Rate (LTIR)",
+        "rows": 2,
+        "normalized_unit": "lost_time_incident_rate",
+        "unit_family": "safety_rate"
+      },
+      {
+        "metric_name": "lost_time_injury_rate",
+        "rows": 2,
+        "normalized_unit": "lost_time_injury_rate",
+        "unit_family": "safety_rate"
+      },
+      {
+        "metric_name": "average_major_felonies_per_day",
+        "rows": 1,
+        "normalized_unit": "felonies_per_day",
+        "unit_family": "count_rate"
+      },
+      {
+        "metric_name": "average_homeless_arriving_per_train",
+        "rows": 1,
+        "normalized_unit": "people_per_train",
+        "unit_family": "count_rate"
+      },
+      {
+        "metric_name": "felony_rate_per_1m_riders",
+        "rows": 1,
+        "normalized_unit": "felonies_per_million_riders",
+        "unit_family": "safety_rate"
+      },
+      {
+        "metric_name": "mask usage rate",
+        "rows": 1,
+        "normalized_unit": "percent",
+        "unit_family": "percentage"
+      },
+      {
+        "metric_name": "ridership as percent of pre-COVID baseline",
+        "rows": 1,
+        "normalized_unit": "percent",
+        "unit_family": "percentage"
+      },
+      {
+        "metric_name": "customer_collision_yoy_reduction",
+        "rows": 1,
+        "normalized_unit": "percent",
+        "unit_family": "percentage"
+      },
+      {
+        "metric_name": "injury_collision_yoy_reduction",
+        "rows": 1,
+        "normalized_unit": "percent",
+        "unit_family": "percentage"
+      }
+    ]
+  },
+  "guardrails": [
+    "Exact metric_name membership only.",
+    "Inference remains inert when payload.unit or payload.unit_normalized already exists.",
+    "Inference requires finite numeric payload.value.",
+    "Percent rows require raw_value_text containing the stored percent value.",
+    "Secondary Screening Score and Bell-Curve Grade Threshold - A remain deferred as policy-dependent rating rows.",
+    "Traffic volume rows, broad ridership rows, *_change ambiguity rows, crash_injuries, and vacancies remain deferred."
+  ],
+  "subagents": {
+    "hegel": {
+      "agent_path": "019f20a4-816f-7b63-a65e-d916f421a4e7",
+      "role": "read-only remaining-tail exact object/count audit",
+      "status": "running at checkpoint"
+    }
+  },
+  "tests": {
+    "focused": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+    "focused_result": "pass: 278 tests, 4815 expect() calls",
+    "typecheck": "bun run typecheck",
+    "typecheck_result": "pass"
+  },
+  "materialization": {
+    "command": "bun packages/cli/src/cli.ts materialize",
+    "result": "Materialized 93067/98115 submissions; retired submissions skipped: 265; SQLite FTS quick_check: ok"
+  },
+  "validation": {
+    "command": "bun packages/cli/src/cli.ts validate",
+    "result": "Issues: 0; submissions: 98115; canonical records: 84027; wiki pages: 7331"
+  },
+  "remaining_tail_examples": [
+    ["crash_injuries", 5],
+    ["Secondary Screening Score", 3],
+    ["audible_pedestrian_turn_warning_systems_installed", 2],
+    ["customer_community_outreach", 2],
+    ["customers_benefited", 2],
+    ["daily_users", 2],
+    ["first_responders_trained", 2],
+    ["major_felony_change", 2],
+    ["ridership", 2],
+    ["safety_incidents_by_hazard_type", 2],
+    ["total_arrests_change", 2],
+    ["total_major_felonies_change", 2],
+    ["users_served", 2],
+    ["vacancies", 2]
+  ],
+  "next_lanes": [
+    "Collect Hegel's exact object/count audit and implement one guarded slice if high-confidence.",
+    "Keep score/rating policy rows deferred unless the owner accepts a score-points/rating-threshold policy.",
+    "Continue to re-run route/project duplicate gates after each materialization; current route/project duplicate backlog remains closed."
+  ],
+  "files_changed": [
+    "packages/pipeline/src/ontology/normalizers.ts",
+    "packages/pipeline/test/ontology/normalizers.test.ts",
+    "data/canonical/metric_claims.jsonl",
+    "data/canonical.db",
+    "LOG.md",
+    "data/review_notes/codex-metric-rate-percent-tail182-2026-07-02.json"
+  ]
+}

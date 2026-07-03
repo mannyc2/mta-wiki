@@ -1,0 +1,258 @@
+{
+  "batch_id": "codex-identity-batch094",
+  "prepared_count": 10,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-138396-committee-on-operations",
+      "target_id": "entity_nyct-mta-bus-committee-charter",
+      "reason": "Both records represent the same MTA Board operations committee for NYCT, MaBSTOA, SIRTOA, and MTA Bus Company. The alias is a meeting-minutes record and the target is the charter/name record; both source excerpts name the same committee scope and operating agencies.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-138396-committee-on-operations",
+          "source_id": "meeting_doc_138396",
+          "block_id": "p001_c0001",
+          "quote": "Minutes of Regular Meeting Committee on Operations of the MTA New York City Transit Authority, Manhattan and Bronx Surface Transit Operating Authority, Staten Island Rapid Transit Operating Authority, and MTA Bus Company"
+        },
+        {
+          "record_id": "entity_nyct-mta-bus-committee-charter",
+          "source_id": "meeting_doc_128986",
+          "block_id": "p107_c0003",
+          "quote": "COMMITTEE ON OPERATIONS OF THE NEW YORK CITY TRANSIT AUTHORITY, THE MANHATTAN AND BRONX SURFACE TRANSIT OPERATING AUTHORITY, THE STATEN ISLAND RAPID TRANSIT OPERATING AUTHORITY AND THE MTA BUS COMPANY"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_committee-lirr-lib-operations",
+      "target_id": "entity_lirr-committee-charter",
+      "reason": "Both records are the same Committee on Operations of the Long Island Rail Road and the Metropolitan Suburban Bus Authority. The display names match exactly, entity_type is committee in both records, and both evidence refs cite the same committee title.",
+      "evidence": [
+        {
+          "record_id": "entity_committee-lirr-lib-operations",
+          "source_id": "meeting_doc_102741",
+          "block_id": "p001_c0003",
+          "quote": "COMMITTEE ON OPERATIONS OF THE LONG ISLAND RAIL ROAD AND THE METROPOLITAN SUBURBAN BUS AUTHORITY"
+        },
+        {
+          "record_id": "entity_lirr-committee-charter",
+          "source_id": "meeting_doc_128986",
+          "block_id": "p101_c0003",
+          "quote": "COMMITTEE ON OPERATIONS OF THE LONG ISLAND RAIL ROAD AND THE METROPOLITAN SUBURBAN BUS AUTHORITY"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_dutchess-county-meeting-doc-140526",
+      "target_id": "entity_meeting-doc-133381-dutchess-county",
+      "reason": "Both records represent Dutchess County as the same county/jurisdiction in MTA mortgage recording tax escalation payment tables. The record names and entity_type are the same, and both evidence blocks list Dutchess/Dutchess Cty alongside the same Orange and Rockland county payment context.",
+      "evidence": [
+        {
+          "record_id": "entity_dutchess-county-meeting-doc-140526",
+          "source_id": "meeting_doc_140526",
+          "block_id": "p002_c0004",
+          "quote": "COUNTY BILLED ... DUTCHESS $ 2,895,334 ... ORANGE ... ROCKLAND"
+        },
+        {
+          "record_id": "entity_meeting-doc-133381-dutchess-county",
+          "source_id": "meeting_doc_133381",
+          "block_id": "p002_c0004",
+          "quote": "County 1989 Base Year MRT Receipt ... Dutchess Cty ... Orange Cty ... Rockland Cty"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-102756-fra",
+      "target_id": "entity_meeting-doc-fra",
+      "reason": "Both records identify the Federal Railroad Administration/FRA, a federal rail agency. The alias evidence expands the acronym in an FRA-mandated rail-testing context, and the target evidence expands the same agency name and acronym in an East Side Access waiver context.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-102756-fra",
+          "source_id": "meeting_doc_102756",
+          "block_id": "p006_c0004",
+          "quote": "Federal Railroad Administration (FRA)-mandated ultrasonic rail testing and joint bar detection services"
+        },
+        {
+          "record_id": "entity_meeting-doc-fra",
+          "source_id": "meeting_doc_102686",
+          "block_id": "p002_c0005",
+          "quote": "the Federal Railroad Administration (FRA) granted a waiver that will allow East Side Access (ESA) to open on schedule"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-155481-fmtac",
+      "target_id": "entity_first-mutual-transportation-assurance",
+      "reason": "Both records represent First Mutual Transportation Assurance Company/FMTAC, MTA's captive insurance company. The alias and target evidence both name FMTAC and describe its primary insurance/reinsurance role for MTA.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-155481-fmtac",
+          "source_id": "meeting_doc_155481",
+          "block_id": "p036_c0011",
+          "quote": "First Mutual Transportation Assurance Company (FMTAC) provides primary insurance coverage for certain losses"
+        },
+        {
+          "record_id": "entity_first-mutual-transportation-assurance",
+          "source_id": "meeting_doc_140486",
+          "block_id": "p005_c0005",
+          "quote": "The First Mutual Transportation Assurance Company (FMTAC) is a New York captive insurance company"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-39661-fmtac",
+      "target_id": "entity_first-mutual-transportation-assurance",
+      "reason": "Both records represent First Mutual Transportation Assurance Company/FMTAC. The alias evidence names the company and states the same insurance/reinsurance function that the target record describes for MTA's captive insurer.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-39661-fmtac",
+          "source_id": "meeting_doc_39661",
+          "block_id": "p226_c0011",
+          "quote": "First Mutual Transportation Assurance Company (FMTAC) provides primary insurance coverage for certain losses"
+        },
+        {
+          "record_id": "entity_first-mutual-transportation-assurance",
+          "source_id": "meeting_doc_140486",
+          "block_id": "p001_c0010",
+          "quote": "MTA's captive insurer, the First Mutual Transportation Assurance Company"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-fmtac",
+      "target_id": "entity_first-mutual-transportation-assurance",
+      "reason": "Both records represent First Mutual Transportation Assurance Company/FMTAC. The alias evidence expands the full company name, and the target evidence identifies the same company as FMTAC and MTA's captive insurance company.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-fmtac",
+          "source_id": "meeting_doc_112041",
+          "block_id": "p041_c0005",
+          "quote": "CURRENT BUSINESS PLAN - The First Mutual Transportation Assurance Company (FMTAC) is a New York captive insurance company"
+        },
+        {
+          "record_id": "entity_first-mutual-transportation-assurance",
+          "source_id": "meeting_doc_140486",
+          "block_id": "p005_c0005",
+          "quote": "The First Mutual Transportation Assurance Company (FMTAC) is a New York captive insurance company"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_grand-central-madison-terminal-meeting-doc-107791",
+      "target_id": "entity_grand-central-madison-terminal",
+      "reason": "Both records represent Grand Central Madison Terminal, the new 8-track LIRR terminal and concourse below Grand Central Terminal. The source evidence for both records contains the same opening and facility description.",
+      "evidence": [
+        {
+          "record_id": "entity_grand-central-madison-terminal-meeting-doc-107791",
+          "source_id": "meeting_doc_107791",
+          "block_id": "p025_c0011",
+          "quote": "the GCM Terminal opened to the public, extending Long Island Rail Road service directly into the new 8 track terminal and concourse"
+        },
+        {
+          "record_id": "entity_grand-central-madison-terminal",
+          "source_id": "meeting_doc_107596",
+          "block_id": "p001_c0011",
+          "quote": "the GCM Terminal opened to the public, extending Long Island Rail Road service directly into the new 8 track terminal and concourse"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_mta-capital-program-127546",
+      "target_id": "entity_mta-capital-program",
+      "reason": "Both records represent the MTA Capital Program as a program/funding source. The display names and entity_type match, and both evidence refs use the same funding-source sentence naming the Long Island Rail Road Operating and MTA Capital Program budget.",
+      "evidence": [
+        {
+          "record_id": "entity_mta-capital-program-127546",
+          "source_id": "meeting_doc_127546",
+          "block_id": "p001_c0010",
+          "quote": "Funding for these projects is contained in the Long Island Rail Road Operating and MTA Capital Program budget."
+        },
+        {
+          "record_id": "entity_mta-capital-program",
+          "source_id": "meeting_doc_100336",
+          "block_id": "p001_c0010",
+          "quote": "Funding for these projects is contained in the Long Island Rail Road Operating and MTA Capital Program budget."
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-196901-jacobs-civil-consultants",
+      "target_id": "entity_jacobs-civil-consultants",
+      "reason": "Both records represent Jacobs Civil Consultants Inc. The display names and entity_type match, and both evidence refs contain the same sentence naming Jacobs Civil Consultants Inc. as successor to CH2M's joint venture interest in C2K.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-196901-jacobs-civil-consultants",
+          "source_id": "meeting_doc_196901",
+          "block_id": "p008_c0007",
+          "quote": "Jacobs Civil Consultants Inc. (Jacobs) became the successor to CH2M's joint venture interest in C2K"
+        },
+        {
+          "record_id": "entity_jacobs-civil-consultants",
+          "source_id": "meeting_doc_197031",
+          "block_id": "p008_c0007",
+          "quote": "Jacobs Civil Consultants Inc. (Jacobs) became the successor to CH2M's joint venture interest in C2K"
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "scope": {
+      "allowed_kinds": [
+        "entity"
+      ],
+      "proposed_kinds": [
+        "entity"
+      ],
+      "prepared_alias_count": 10,
+      "excluded_borough_jurisdiction_ambiguity": true,
+      "excluded_role_or_person_ambiguity": true
+    },
+    "commands": [
+      {
+        "cmd": "sqlite3 data/canonical.db '.tables'",
+        "result": "Confirmed local DB tables include records, entities, identity_aliases, do_not_merge, evidence_refs, and blocks_fts."
+      },
+      {
+        "cmd": "sqlite3 data/canonical.db \"select count(*) from entities; select count(*) from identity_aliases where kind='entity'; select count(*) from do_not_merge where kind='entity';\"",
+        "result": "Found 2386 entity records, 622 entity aliases in identity_aliases, and 20 entity do-not-merge rows."
+      },
+      {
+        "cmd": "sqlite3 -header -column data/canonical.db \"with pairs(kind,alias,target) as (...) select p.kind,p.alias,p.target, aa.target as existing_alias_target, dn.reason as db_do_not_merge_reason, ra.record_kind alias_kind, rt.record_kind target_kind from pairs p left join identity_aliases aa on aa.kind=p.kind and aa.alias=p.alias left join do_not_merge dn on dn.kind=p.kind and ((dn.record_id_a=p.alias and dn.record_id_b=p.target) or (dn.record_id_a=p.target and dn.record_id_b=p.alias)) left join records ra on ra.record_id=p.alias left join records rt on rt.record_id=p.target;\"",
+        "result": "For all 10 proposed pairs, alias and target materialize as entity records; existing_alias_target and db_do_not_merge_reason were empty."
+      },
+      {
+        "cmd": "jq -r '.aliases.entity // {} | to_entries[] | select(.key==<batch094 aliases>) | [.key,.value] | @tsv' data/identity-overrides/merges.json",
+        "result": "No proposed alias_id already appears in data/identity-overrides/merges.json."
+      },
+      {
+        "cmd": "jq -r '.pairs.entity[]? | select(<batch094 pair match>) | .record_ids | @tsv' data/identity-overrides/do-not-merge.json",
+        "result": "No proposed alias/target pair appears in data/identity-overrides/do-not-merge.json."
+      },
+      {
+        "cmd": "jq -r '.proposed_aliases[]? | select(.kind==\"entity\") | select(.alias_id==<batch094 aliases>) | [.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch0*-prep.json",
+        "result": "No proposed alias_id appeared in prior Codex identity prep proposals through batch093."
+      },
+      {
+        "cmd": "sqlite3 -header -column data/canonical.db \"select e.record_id,e.source_id,e.block_id,e.page_number,substr(b.raw_text,1,320) quote from evidence_refs e left join blocks_fts b using(source_id,block_id) where e.record_id in (<batch094 records>) ...\"",
+        "result": "Pulled local evidence refs and block text for the selected records; no external/provider LLM calls were used."
+      }
+    ],
+    "policy_checks": {
+      "no_external_provider_llm_calls": true,
+      "no_canonicalize_dedup_identity_review_write_ask_schema_ontology_commands": true,
+      "no_profile_or_provider_commands": true,
+      "no_materialize_export_jsonl_validate": true,
+      "no_log_manifest_merges_canonical_wiki_submissions_db_generated_output_edits": true,
+      "only_prep_artifact_written": "data/review_notes/codex-identity-batch094-prep.json"
+    }
+  }
+}

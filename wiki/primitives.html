@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MTA Wiki - Primitive Sheet</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f7f8fa;
+    --paper: #ffffff;
+    --paper-soft: #fbfcfd;
+    --ink: #18202a;
+    --muted: #667485;
+    --faint: #eef1f4;
+    --line: #d9e0e7;
+    --line-strong: #bdc8d3;
+    --blue: #145da0;
+    --blue-soft: #e9f3fc;
+    --green: #14715f;
+    --green-soft: #e8f5f1;
+    --amber: #8a5b12;
+    --amber-soft: #fff4dc;
+    --violet: #6c4a8b;
+    --violet-soft: #f2ecf7;
+    --red: #9a3443;
+    --red-soft: #fae9ed;
+    --radius: 8px;
+    --measure: 74ch;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 14px/1.55 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+
+  a {
+    color: var(--blue);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  code,
+  .mono {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: .92em;
+  }
+
+  .chrome {
+    min-height: 100vh;
+  }
+
+  .top {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 20px;
+    align-items: center;
+    padding: 14px clamp(18px, 4vw, 44px);
+    border-bottom: 1px solid var(--line);
+    background: rgba(247, 248, 250, .9);
+    backdrop-filter: blur(14px);
+  }
+
+  .top h1 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
+
+  .top p {
+    margin: 3px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .mode-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(68px, 1fr));
+    border: 1px solid var(--line-strong);
+    border-radius: 7px;
+    overflow: hidden;
+    background: var(--paper);
+  }
+
+  .mode-tabs button {
+    min-height: 34px;
+    border: 0;
+    border-right: 1px solid var(--line);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+  }
+
+  .mode-tabs button:last-child {
+    border-right: 0;
+  }
+
+  .mode-tabs button[aria-pressed="true"] {
+    background: var(--ink);
+    color: #fff;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 820px) minmax(280px, 380px);
+    gap: 22px;
+    width: min(1240px, 100%);
+    margin: 0 auto;
+    padding: 28px clamp(18px, 4vw, 44px) 56px;
+  }
+
+  .document,
+  .panel {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+
+  .document {
+    overflow: hidden;
+  }
+
+  .doc-head {
+    padding: 24px 26px 18px;
+    border-bottom: 1px solid var(--line);
+    background: linear-gradient(180deg, #fff, var(--paper-soft));
+  }
+
+  .crumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    min-height: 23px;
+    max-width: 100%;
+    padding: 3px 8px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .tag strong {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  .tag.route {
+    border-color: #b9d5ed;
+    background: var(--blue-soft);
+    color: #0c467a;
+  }
+
+  .tag.project {
+    border-color: #ead19a;
+    background: var(--amber-soft);
+    color: #68430d;
+  }
+
+  .tag.intervention {
+    border-color: #b8dcd3;
+    background: var(--green-soft);
+    color: #0c5748;
+  }
+
+  .tag.metric {
+    border-color: #d4c4df;
+    background: var(--violet-soft);
+    color: #553670;
+  }
+
+  .tag.gap {
+    border-color: #efc1c8;
+    background: var(--red-soft);
+    color: #772834;
+  }
+
+  .doc-title-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 18px;
+    align-items: start;
+  }
+
+  .doc-head h2 {
+    margin: 0;
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: .98;
+    letter-spacing: 0;
+  }
+
+  .doc-head .lede {
+    max-width: var(--measure);
+    margin: 14px 0 0;
+    color: #334252;
+    font-size: 16px;
+  }
+
+  .route-token {
+    display: grid;
+    place-items: center;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: var(--blue);
+    color: white;
+    font-size: 24px;
+    font-weight: 850;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, .14);
+  }
+
+  .doc-body {
+    padding: 24px 26px 30px;
+  }
+
+  .writer-region {
+    position: relative;
+    max-width: var(--measure);
+  }
+
+  .writer-region::before {
+    content: "writer region";
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+
+  .writer-region p {
+    margin: 0 0 15px;
+    color: #243242;
+  }
+
+  .writer-region h3 {
+    margin: 30px 0 10px;
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+
+  .citation {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 1px 6px;
+    border: 1px solid #c5d0da;
+    border-radius: 999px;
+    background: #eef3f7;
+    color: #283849;
+    font-size: 11px;
+    line-height: 1.1;
+    vertical-align: .12em;
+    cursor: help;
+  }
+
+  .citation::before {
+    content: "[";
+  }
+
+  .citation::after {
+    content: "]";
+  }
+
+  .tip {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 8px);
+    z-index: 20;
+    width: min(360px, 80vw);
+    padding: 10px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    background: var(--paper);
+    box-shadow: 0 14px 36px rgba(24, 32, 42, .12);
+    color: var(--ink);
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .citation:hover .tip,
+  .citation:focus .tip {
+    display: block;
+  }
+
+  .tip b {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .primitive-block {
+    margin: 20px 0 0;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--paper);
+  }
+
+  .primitive-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line);
+    background: var(--paper-soft);
+  }
+
+  .primitive-head b {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .primitive-body {
+    padding: 12px;
+  }
+
+  .fact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--paper);
+  }
+
+  .fact {
+    min-width: 0;
+    padding: 12px;
+    border-right: 1px solid var(--line);
+  }
+
+  .fact:last-child {
+    border-right: 0;
+  }
+
+  .fact span {
+    display: block;
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .fact b {
+    display: block;
+    margin-top: 3px;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+  }
+
+  .boundary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .boundary-card {
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--paper-soft);
+  }
+
+  .boundary-card h4 {
+    margin: 0 0 7px;
+    font-size: 13px;
+  }
+
+  .boundary-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .interventions {
+    display: grid;
+    gap: 8px;
+  }
+
+  .intervention-row {
+    display: grid;
+    grid-template-columns: 9px minmax(0, 1fr) auto;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--paper-soft);
+  }
+
+  .intervention-row::before {
+    content: "";
+    width: 9px;
+    align-self: stretch;
+    min-height: 42px;
+    border-radius: 999px;
+    background: var(--green);
+  }
+
+  .intervention-row h4 {
+    margin: 0 0 2px;
+    font-size: 13px;
+  }
+
+  .intervention-row p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .metric-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .metric-table th,
+  .metric-table td {
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--faint);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .metric-table tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .metric-table th {
+    color: var(--muted);
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+
+  .timeline {
+    position: relative;
+    display: grid;
+    gap: 13px;
+    padding-left: 18px;
+  }
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    bottom: 9px;
+    width: 2px;
+    background: var(--line);
+  }
+
+  .time-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: 92px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .time-row::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--paper);
+    border-radius: 50%;
+    background: var(--blue);
+    box-shadow: 0 0 0 1px var(--line-strong);
+  }
+
+  .time-row time {
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .time-row b,
+  .time-row span {
+    display: block;
+  }
+
+  .time-row span {
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .note {
+    padding: 12px;
+    border: 1px solid #efc1c8;
+    border-radius: var(--radius);
+    background: var(--red-soft);
+  }
+
+  .note b {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .note p {
+    margin: 0;
+    color: #573039;
+  }
+
+  .agent-token {
+    margin-top: 10px;
+    padding: 9px 10px;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: #f5f7f9;
+    color: #2e3d4e;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .side {
+    display: grid;
+    align-content: start;
+    gap: 14px;
+  }
+
+  .panel {
+    padding: 15px;
+  }
+
+  .panel h3 {
+    margin: 0 0 10px;
+    font-size: 14px;
+  }
+
+  .panel p {
+    margin: 0 0 10px;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .panel p:last-child {
+    margin-bottom: 0;
+  }
+
+  .rules {
+    display: grid;
+    gap: 9px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .rules li {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 9px;
+    align-items: start;
+  }
+
+  .rules b {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: var(--paper-soft);
+    color: var(--blue);
+    font-size: 12px;
+  }
+
+  .rules span {
+    color: #334252;
+    font-size: 13px;
+  }
+
+  .evidence-card {
+    padding: 11px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--paper-soft);
+  }
+
+  .evidence-card b {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .evidence-card p {
+    margin: 0;
+    color: #334252;
+    font-size: 12px;
+  }
+
+  .evidence-card .mono {
+    display: block;
+    margin-top: 8px;
+    color: var(--muted);
+    overflow-wrap: anywhere;
+  }
+
+  .contract-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  .contract-table th,
+  .contract-table td {
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--faint);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .contract-table th {
+    color: var(--muted);
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+
+  .contract-table code {
+    white-space: nowrap;
+  }
+
+  body[data-mode="plain"] .rich-only,
+  body[data-mode="plain"] .evidence-only,
+  body[data-mode="plain"] .agent-token,
+  body[data-mode="plain"] .side {
+    display: none;
+  }
+
+  body[data-mode="plain"] .layout {
+    grid-template-columns: minmax(0, 820px);
+    justify-content: center;
+  }
+
+  body[data-mode="plain"] .document {
+    border-color: transparent;
+    background: transparent;
+  }
+
+  body[data-mode="plain"] .doc-head,
+  body[data-mode="plain"] .doc-body {
+    background: var(--paper);
+    border: 1px solid var(--line);
+  }
+
+  body[data-mode="plain"] .doc-head {
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+
+  body[data-mode="plain"] .doc-body {
+    border-top: 0;
+    border-radius: 0 0 var(--radius) var(--radius);
+  }
+
+  body[data-mode="rich"] .evidence-only {
+    display: none;
+  }
+
+  body[data-mode="evidence"] .tip {
+    display: block;
+    position: static;
+    width: auto;
+    margin: 6px 0 0;
+    box-shadow: none;
+  }
+
+  body[data-mode="evidence"] .citation {
+    display: inline-block;
+    width: auto;
+    min-width: 0;
+    padding: 4px 6px;
+    text-align: left;
+    vertical-align: baseline;
+  }
+
+  body[data-mode="evidence"] .citation::before,
+  body[data-mode="evidence"] .citation::after {
+    content: "";
+  }
+
+  @media (max-width: 980px) {
+    .layout,
+    .top {
+      grid-template-columns: 1fr;
+    }
+
+    .top {
+      position: static;
+    }
+
+    .mode-tabs {
+      width: min(100%, 360px);
+    }
+  }
+
+  @media (max-width: 680px) {
+    .layout {
+      padding-inline: 14px;
+    }
+
+    .doc-title-row,
+    .fact-grid,
+    .boundary,
+    .time-row {
+      grid-template-columns: 1fr;
+    }
+
+    .route-token {
+      width: 62px;
+      height: 62px;
+      font-size: 20px;
+    }
+
+    .fact {
+      border-right: 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .fact:last-child {
+      border-bottom: 0;
+    }
+
+    .intervention-row {
+      grid-template-columns: 8px minmax(0, 1fr);
+    }
+
+    .intervention-row .citation {
+      justify-self: start;
+    }
+  }
+</style>
+</head>
+<body data-mode="rich">
+<div class="chrome">
+  <header class="top">
+    <div>
+      <h1>MTA Wiki primitive sheet</h1>
+      <p>How writer-agent references could render inside individual wiki pages.</p>
+    </div>
+    <div class="mode-tabs" role="group" aria-label="Render mode">
+      <button type="button" data-mode="plain" aria-pressed="false">Plain</button>
+      <button type="button" data-mode="rich" aria-pressed="true">Rich</button>
+      <button type="button" data-mode="evidence" aria-pressed="false">Evidence</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <article class="document" aria-labelledby="page-title">
+      <header class="doc-head">
+        <div class="crumbs">
+          <span class="tag route">route</span>
+          <span class="tag">truth <strong>source_stated</strong></span>
+          <span class="tag">review <strong>unreviewed</strong></span>
+          <span class="tag">sample <strong>M86 SBS</strong></span>
+        </div>
+        <div class="doc-title-row">
+          <div>
+            <h2 id="page-title">M86 SBS</h2>
+            <p class="lede">A route page can read like a concise wiki entry while still carrying structured route, project, treatment, metric, timeline, and source evidence primitives.</p>
+          </div>
+          <div class="route-token" aria-label="Route M86">M86</div>
+        </div>
+      </header>
+
+      <div class="doc-body">
+        <section class="writer-region">
+          <p>
+            The route record identifies the M86 as an 86th Street crosstown bus route in Manhattan, with limits from W 87th Street and West End Avenue to E 92nd Street and York Avenue
+            <span class="citation" tabindex="0">1<span class="tip"><b>m86_sbs_progress_report_2017#p003_c0007</b>Page 3. Role: route_limits. Source block supports the route limits wording.</span></span>.
+            A separate route-index source says 86th Street Select Bus Service began on July 13, 2015
+            <span class="citation" tabindex="0">2<span class="tip"><b>brt_route_index#p001_b0001</b>Page 1. Role: launch_date. Treat as source-stated unless a reviewer resolves the launch fact corpus-wide.</span></span>.
+          </p>
+
+          <div class="fact-grid rich-only" aria-label="Route identity primitive">
+            <div class="fact"><span>record</span><b>route_m86-sbs</b></div>
+            <div class="fact"><span>service</span><b>Select Bus Service</b></div>
+            <div class="fact"><span>scope</span><b>true_route</b></div>
+          </div>
+
+          <h3>Project and intervention boundary</h3>
+          <p>
+            For page writing, the route is the service identity. The M86 SBS implementation is a project bundle. The bus bulbs, queue jump lanes, off-board fare payment, and arrival information displays are interventions, represented by treatment component records.
+          </p>
+
+          <div class="primitive-block rich-only" id="project">
+            <div class="primitive-head">
+              <b>M86 Select Bus Service Implementation</b>
+              <span class="tag project">project bundle</span>
+            </div>
+            <div class="primitive-body">
+              <div class="boundary">
+                <div class="boundary-card">
+                  <h4>Project</h4>
+                  <p>Lifecycle-bearing bundle with status, launch date, agencies, routes, corridors, events, and related treatment components.</p>
+                </div>
+                <div class="boundary-card">
+                  <h4>Intervention</h4>
+                  <p>Physical or operational treatment component. It can render on project, route, or corridor pages without becoming a standalone page.</p>
+                </div>
+              </div>
+              <div class="agent-token mono">::{project id="project_m86-sbs" render="summary"}</div>
+            </div>
+          </div>
+
+          <div class="primitive-block rich-only" id="interventions">
+            <div class="primitive-head">
+              <b>Interventions</b>
+              <span class="tag intervention">treatment_component</span>
+            </div>
+            <div class="primitive-body">
+              <div class="interventions">
+                <div class="intervention-row">
+                  <div>
+                    <h4>Bus queue jump lanes</h4>
+                    <p>Signal priority family, 86th Street corridor.</p>
+                  </div>
+                  <span class="citation" tabindex="0">3<span class="tip"><b>brt_m86_m79_cb8_oct2016#p007_c0004</b>Evidence text includes "Bus queue jump lanes".</span></span>
+                </div>
+                <div class="intervention-row">
+                  <div>
+                    <h4>Off-board fare payment</h4>
+                    <p>Fare collection family, M86 SBS stations.</p>
+                  </div>
+                  <span class="citation" tabindex="0">4<span class="tip"><b>brt_m86_m79_cb8_oct2016#p007_c0007</b>Evidence supports off-board fare payment and related station information.</span></span>
+                </div>
+                <div class="intervention-row">
+                  <div>
+                    <h4>Bus bulbs</h4>
+                    <p>Bus stop or boarding family, Lexington and 3rd Avenues.</p>
+                  </div>
+                  <span class="citation" tabindex="0">5<span class="tip"><b>m86_sbs_progress_report_2017#p011_c0006..p011_c0007</b>Block range supports bus bulb definition and locations.</span></span>
+                </div>
+              </div>
+              <div class="agent-token mono">::{intervention-list parent="project_m86-sbs" families="signal_priority,fare_collection,bus_stop_or_boarding"}</div>
+            </div>
+          </div>
+
+          <h3>Metrics</h3>
+          <p>
+            Metrics should default to source-stated rows. They become charts only when the materializer or review layer can identify comparable groups.
+          </p>
+
+          <div class="primitive-block rich-only" id="metrics">
+            <div class="primitive-head">
+              <b>Metric claims</b>
+              <span class="tag metric">source-stated</span>
+            </div>
+            <div class="primitive-body">
+              <table class="metric-table">
+                <thead>
+                  <tr>
+                    <th>Claim</th>
+                    <th>Value</th>
+                    <th>Scope</th>
+                    <th>Evidence</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Daily ridership</td>
+                    <td><b>24,000</b> riders/day</td>
+                    <td>M86</td>
+                    <td><span class="citation" tabindex="0">6<span class="tip"><b>brt_route_index#p001_b0001</b>Metric evidence for daily passengers.</span></span></td>
+                  </tr>
+                  <tr>
+                    <td>Time at bus stop</td>
+                    <td><b>7.4 -> 6.6</b> minutes</td>
+                    <td>M86 local before SBS vs M86 SBS</td>
+                    <td><span class="citation" tabindex="0">7<span class="tip"><b>m86_sbs_progress_report_2017#p007_c0017</b>Metric table block. Treat as source-stated until comparability is reviewed.</span></span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="agent-token mono">::{metric-claim id="metric_at-bus-stop-time-m86-sbs-66min" compare="metric_at-bus-stop-time-m86-local-74min"}</div>
+            </div>
+          </div>
+
+          <h3>Lifecycle</h3>
+          <p>
+            Timeline primitives should order by normalized dates but display source wording and precision. A season, month, and exact day should not look equally certain.
+          </p>
+
+          <div class="primitive-block rich-only" id="timeline">
+            <div class="primitive-head">
+              <b>Timeline</b>
+              <span class="tag">event</span>
+            </div>
+            <div class="primitive-body">
+              <div class="timeline">
+                <div class="time-row">
+                  <time>Oct 2014</time>
+                  <div><b>Introduction presentations</b><span>Community Board 7 and 8 presentation records.</span></div>
+                </div>
+                <div class="time-row">
+                  <time>Feb 2015</time>
+                  <div><b>Implementation plan</b><span>M86 SBS implementation plan presented to CB7.</span></div>
+                </div>
+                <div class="time-row">
+                  <time>Jul 13 2015</time>
+                  <div><b>Service launch</b><span>86th Street Select Bus Service began service.</span></div>
+                </div>
+                <div class="time-row">
+                  <time>Jun 2016</time>
+                  <div><b>Capital construction</b><span>Pedestrian safety neckdowns and bus bulbs began construction.</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="note rich-only" id="review-note">
+            <b>Review note primitive</b>
+            <p>If a treatment is repeatedly discussed as an independently named project, flag it for review rather than silently promoting it from intervention to project.</p>
+            <div class="agent-token mono">::{review-note kind="modeling_boundary" subject="project_m86-sbs" object="treatment_bus-bulbs_2"}</div>
+          </div>
+
+          <div class="evidence-only">
+            <h3>Expanded evidence mode</h3>
+            <p>Evidence mode keeps the same writing surface but expands citation cards inline so a reviewer can audit the exact blocks and roles while reading.</p>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <aside class="side" aria-label="Primitive contracts">
+      <section class="panel">
+        <h3>Rules of thumb</h3>
+        <ul class="rules">
+          <li><b>1</b><span>Prose says what matters. Primitives say where the claim came from and what kind of thing it is.</span></li>
+          <li><b>2</b><span>Citation chips should be small by default and expandable during review.</span></li>
+          <li><b>3</b><span>Projects are bundles with lifecycle. Interventions are treatment components unless the corpus proves otherwise.</span></li>
+          <li><b>4</b><span>Metrics render as rows first. Charts come after comparable grouping.</span></li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h3>Citation primitive</h3>
+        <div class="evidence-card">
+          <b>m86_sbs_progress_report_2017#p003_c0007</b>
+          <p>Page 3. Role: route_limits. Supports route limits from W 87th Street and West End Avenue to E 92nd Street and York Avenue.</p>
+          <span class="mono">raw/sources/m86_sbs_progress_report_2017/blocks.jsonl</span>
+        </div>
+        <div class="agent-token mono">::{cite evidence="m86_sbs_progress_report_2017#p003_c0007" role="route_limits"}</div>
+      </section>
+
+      <section class="panel">
+        <h3>Record chips</h3>
+        <p>Chips identify record kinds. They should never be the only evidence for a factual sentence.</p>
+        <div class="crumbs">
+          <span class="tag route">route</span>
+          <span class="tag project">project</span>
+          <span class="tag intervention">intervention</span>
+          <span class="tag metric">metric</span>
+          <span class="tag gap">gap</span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h3>Agent token sketch</h3>
+        <table class="contract-table">
+          <thead>
+            <tr>
+              <th>Primitive</th>
+              <th>Token</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Citation</td>
+              <td><code>::{cite evidence="source#block"}</code></td>
+            </tr>
+            <tr>
+              <td>Record</td>
+              <td><code>::{record id="route_m86-sbs"}</code></td>
+            </tr>
+            <tr>
+              <td>Project</td>
+              <td><code>::{project id="project_m86-sbs"}</code></td>
+            </tr>
+            <tr>
+              <td>Interventions</td>
+              <td><code>::{intervention-list parent="project_m86-sbs"}</code></td>
+            </tr>
+            <tr>
+              <td>Metric</td>
+              <td><code>::{metric-claim id="metric_..."}</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </aside>
+  </main>
+</div>
+
+<script>
+  const buttons = Array.from(document.querySelectorAll(".mode-tabs [data-mode]"));
+
+  function setMode(mode) {
+    document.body.dataset.mode = mode;
+    for (const button of buttons) {
+      button.setAttribute("aria-pressed", String(button.dataset.mode === mode));
+    }
+  }
+
+  for (const button of buttons) {
+    button.addEventListener("click", () => setMode(button.dataset.mode));
+  }
+</script>
+</body>
+</html>

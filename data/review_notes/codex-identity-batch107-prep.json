@@ -1,0 +1,315 @@
+{
+  "batch_id": "codex-identity-batch107",
+  "created_at": "2026-06-23T04:31:59Z",
+  "scope": {
+    "kind": "project",
+    "mode": "Codex-only deterministic inspection",
+    "limit": 8
+  },
+  "prepared_count": 8,
+  "all_pass": true,
+  "expected_delta": {
+    "duplicate_global_identity": -8
+  },
+  "proposed_aliases": [
+    {
+      "kind": "project",
+      "alias_id": "project_grand-central-madison-jan2023",
+      "target_id": "project_grand-central-madison",
+      "reason": "Same global project: both records identify Grand Central Madison/East Side Access. The alias is a January 2023 source-time status slice for the same station/terminal expansion already represented by the target.",
+      "source_evidence_refs": [
+        "project_grand-central-madison-jan2023: meeting_doc_104701#p016_c0004, meeting_doc_104701#p016_c0005, meeting_doc_104701#p016_c0006",
+        "project_grand-central-madison: meeting_doc_105776#p002_c0008, meeting_doc_105776#p003_c0001"
+      ],
+      "validator_evidence": {
+        "shared_record_alias": "project_grand-central-madison",
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Grand Central Madison (East Side Access)",
+          "project_name": "Grand Central Madison",
+          "project_type": "Mega-project",
+          "status": "Substantially Complete",
+          "document_time_status": "other",
+          "primary_source_id": "meeting_doc_104701"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Grand Central Madison",
+          "project_name": "Grand Central Madison",
+          "project_type": "station/terminal expansion",
+          "status": "opened (limited shuttle service)",
+          "document_time_status": "implemented",
+          "primary_source_id": "meeting_doc_105776"
+        }
+      }
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_grand-central-madison-lirr",
+      "target_id": "project_grand-central-madison",
+      "reason": "Same global project: both records use the exact project name Grand Central Madison. The alias frames LIRR service-expansion timing, while the target is the consolidated Grand Central Madison project record.",
+      "source_evidence_refs": [
+        "project_grand-central-madison-lirr: meeting_doc_102711#p001_c0011",
+        "project_grand-central-madison: meeting_doc_105776#p002_c0008, meeting_doc_105776#p003_c0001"
+      ],
+      "validator_evidence": {
+        "shared_record_alias": "project_grand-central-madison",
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Grand Central Madison",
+          "project_name": "Grand Central Madison",
+          "project_type": "service expansion",
+          "status": "scheduled",
+          "document_time_status": "planned",
+          "primary_source_id": "meeting_doc_102711"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Grand Central Madison",
+          "project_name": "Grand Central Madison",
+          "project_type": "station/terminal expansion",
+          "status": "opened (limited shuttle service)",
+          "document_time_status": "implemented",
+          "primary_source_id": "meeting_doc_105776"
+        }
+      }
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_grand-central-madison-meeting-doc-104741",
+      "target_id": "project_grand-central-madison",
+      "reason": "Same global project: the alias and target are both Grand Central Madison. The alias's pre-inaugural shuttle-service status is a document-time lifecycle note, not a distinct project scope.",
+      "source_evidence_refs": [
+        "project_grand-central-madison-meeting-doc-104741: meeting_doc_104741#p004_c0007, meeting_doc_104741#p003_c0012, meeting_doc_104741#p006_c0005",
+        "project_grand-central-madison: meeting_doc_105776#p002_c0008, meeting_doc_105776#p003_c0001"
+      ],
+      "validator_evidence": {
+        "shared_record_alias": "project_grand-central-madison",
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Grand Central Madison",
+          "project_name": "Grand Central Madison",
+          "project_type": "terminal",
+          "status": "pre-inaugural shuttle service",
+          "document_time_status": "other",
+          "primary_source_id": "meeting_doc_104741"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Grand Central Madison",
+          "project_name": "Grand Central Madison",
+          "project_type": "station/terminal expansion",
+          "status": "opened (limited shuttle service)",
+          "document_time_status": "implemented",
+          "primary_source_id": "meeting_doc_105776"
+        }
+      }
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_grand-central-madison-meeting-doc-105771",
+      "target_id": "project_grand-central-madison",
+      "reason": "Same global project: both records identify Grand Central Madison. The alias gives opening/full-service timing for the same new terminal represented by the target.",
+      "source_evidence_refs": [
+        "project_grand-central-madison-meeting-doc-105771: meeting_doc_105771#p004_c0004, meeting_doc_105771#p004_c0006, meeting_doc_105771#p004_c0007",
+        "project_grand-central-madison: meeting_doc_105776#p002_c0008, meeting_doc_105776#p003_c0001"
+      ],
+      "validator_evidence": {
+        "shared_record_alias": "project_grand-central-madison",
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Grand Central Madison",
+          "project_name": "Grand Central Madison",
+          "project_type": "new terminal",
+          "status": "opened January 25, 2023; full service beginning February 27, 2023",
+          "document_time_status": "implemented",
+          "primary_source_id": "meeting_doc_105771"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Grand Central Madison",
+          "project_name": "Grand Central Madison",
+          "project_type": "station/terminal expansion",
+          "status": "opened (limited shuttle service)",
+          "document_time_status": "implemented",
+          "primary_source_id": "meeting_doc_105776"
+        }
+      }
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-grand-central-madison",
+      "target_id": "project_grand-central-madison",
+      "reason": "Same global project: the alias is a source-specific Grand Central Madison/GCM project record. Its pre-launch status is document-time context for the same station/infrastructure project.",
+      "source_evidence_refs": [
+        "project_meeting-doc-grand-central-madison: meeting_doc_100306#p004_c0003, meeting_doc_104706#p008_c0005, meeting_doc_104706#p016_c0006",
+        "project_grand-central-madison: meeting_doc_105776#p002_c0008, meeting_doc_105776#p003_c0001"
+      ],
+      "validator_evidence": {
+        "shared_record_alias": "project_grand-central-madison",
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Grand Central Madison (GCM)",
+          "project_name": "Grand Central Madison",
+          "project_type": "station/infrastructure",
+          "status": "pre-launch",
+          "document_time_status": "other",
+          "primary_source_id": "meeting_doc_100306"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Grand Central Madison",
+          "project_name": "Grand Central Madison",
+          "project_type": "station/terminal expansion",
+          "status": "opened (limited shuttle service)",
+          "document_time_status": "implemented",
+          "primary_source_id": "meeting_doc_105776"
+        }
+      }
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_lirr-mnr-ptc-implementation",
+      "target_id": "project_lirr-mnr-ptc",
+      "reason": "Same global project: both records describe LIRR/MNR Positive Train Control implementation. The alias names implementation directly; the target is the consolidated LIRR/MNR PTC project/update record.",
+      "source_evidence_refs": [
+        "project_lirr-mnr-ptc-implementation: meeting_doc_105781#p004_c0014, meeting_doc_105781#p004_c0015, meeting_doc_105781#p005_c0013",
+        "project_lirr-mnr-ptc: meeting_doc_105786#p004_c0004, meeting_doc_121101#p003_c0021"
+      ],
+      "validator_evidence": {
+        "shared_record_alias": "project_lirr-mnr-ptc-implementation",
+        "additional_shared_record_alias": "project_lirr-mnr-ptc-project-update",
+        "alias": {
+          "record_kind": "project",
+          "display_name": "LIRR/MNR PTC Implementation",
+          "project_name": "LIRR/MNR PTC Implementation",
+          "project_type": "implementation",
+          "status": "active",
+          "document_time_status": "active",
+          "primary_source_id": "meeting_doc_105781"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "LIRR/MNR PTC Project Update",
+          "project_name": "LIRR/MNR PTC Project",
+          "project_type": "technology implementation",
+          "status": "implementation and close-out",
+          "document_time_status": "other",
+          "primary_source_id": "meeting_doc_105786"
+        }
+      }
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-lirr-mnr-ptc",
+      "target_id": "project_lirr-mnr-ptc",
+      "reason": "Same global project: both records identify the LIRR/MNR PTC Project with implementation/close-out scope. Source differences are repeated meeting-document mentions, not separate project identities.",
+      "source_evidence_refs": [
+        "project_meeting-doc-lirr-mnr-ptc: meeting_doc_104756#p004_c0020, meeting_doc_104756#p004_c0021",
+        "project_lirr-mnr-ptc: meeting_doc_105786#p004_c0004, meeting_doc_121101#p003_c0021"
+      ],
+      "validator_evidence": {
+        "shared_record_alias": "project_lirr-mnr-ptc-project-update",
+        "alias": {
+          "record_kind": "project",
+          "display_name": "LIRR/MNR PTC Project",
+          "project_name": "LIRR/MNR PTC Project",
+          "project_type": "implementation",
+          "status": "implementation and close-out",
+          "document_time_status": "other",
+          "primary_source_id": "meeting_doc_104756"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "LIRR/MNR PTC Project Update",
+          "project_name": "LIRR/MNR PTC Project",
+          "project_type": "technology implementation",
+          "status": "implementation and close-out",
+          "document_time_status": "other",
+          "primary_source_id": "meeting_doc_105786"
+        }
+      }
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-lirr-mnr-ptc-update",
+      "target_id": "project_lirr-mnr-ptc",
+      "reason": "Same global project: the alias is an implementation-update record for the LIRR/MNR PTC project. Ongoing/active status is source-time update framing for the same PTC implementation and close-out project.",
+      "source_evidence_refs": [
+        "project_meeting-doc-lirr-mnr-ptc-update: meeting_doc_100316#p002_c0002, meeting_doc_100316#p002_c0015, meeting_doc_98276#p003_c0015",
+        "project_lirr-mnr-ptc: meeting_doc_105786#p004_c0004, meeting_doc_121101#p003_c0021"
+      ],
+      "validator_evidence": {
+        "shared_record_alias": "project_lirr-mnr-ptc-project-update",
+        "alias": {
+          "record_kind": "project",
+          "display_name": "LIRR/MNR PTC Implementation Update",
+          "project_name": "LIRR/MNR PTC Implementation Update",
+          "project_type": "implementation update",
+          "status": "ongoing",
+          "document_time_status": "active",
+          "primary_source_id": "meeting_doc_100316"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "LIRR/MNR PTC Project Update",
+          "project_name": "LIRR/MNR PTC Project",
+          "project_type": "technology implementation",
+          "status": "implementation and close-out",
+          "document_time_status": "other",
+          "primary_source_id": "meeting_doc_105786"
+        }
+      }
+    }
+  ],
+  "guard_summary": {
+    "record_existence_and_kind": {
+      "command": "sqlite3 -readonly -header -csv data/canonical.db \"with ids(id) as (values ('project_grand-central-madison-jan2023'),('project_grand-central-madison-lirr'),('project_grand-central-madison-meeting-doc-104741'),('project_grand-central-madison-meeting-doc-105771'),('project_meeting-doc-grand-central-madison'),('project_lirr-mnr-ptc-implementation'),('project_meeting-doc-lirr-mnr-ptc'),('project_meeting-doc-lirr-mnr-ptc-update'),('project_grand-central-madison'),('project_lirr-mnr-ptc')) select count(*) as ids_checked, sum(case when r.record_kind='project' then 1 else 0 end) as project_kind_count, coalesce(group_concat(case when r.record_kind is null or r.record_kind!='project' then ids.id end, '|'),'') as missing_or_non_project from ids left join records r on r.record_id=ids.id;\"",
+      "result": {
+        "ids_checked": 10,
+        "project_kind_count": 10,
+        "missing_or_non_project": ""
+      }
+    },
+    "existing_alias_conflicts": {
+      "commands": [
+        {
+          "command": "jq -r --argjson aliases '[\"project_grand-central-madison-jan2023\",\"project_grand-central-madison-lirr\",\"project_grand-central-madison-meeting-doc-104741\",\"project_grand-central-madison-meeting-doc-105771\",\"project_meeting-doc-grand-central-madison\",\"project_lirr-mnr-ptc-implementation\",\"project_meeting-doc-lirr-mnr-ptc\",\"project_meeting-doc-lirr-mnr-ptc-update\"]' '[.aliases.project as $p | $aliases[] | select($p[.] != null)] | length' data/identity-overrides/merges.json",
+          "result": 0
+        },
+        {
+          "command": "sqlite3 -readonly -header -csv data/canonical.db \"with ids(alias,target) as (values ('project_grand-central-madison-jan2023','project_grand-central-madison'),('project_grand-central-madison-lirr','project_grand-central-madison'),('project_grand-central-madison-meeting-doc-104741','project_grand-central-madison'),('project_grand-central-madison-meeting-doc-105771','project_grand-central-madison'),('project_meeting-doc-grand-central-madison','project_grand-central-madison'),('project_lirr-mnr-ptc-implementation','project_lirr-mnr-ptc'),('project_meeting-doc-lirr-mnr-ptc','project_lirr-mnr-ptc'),('project_meeting-doc-lirr-mnr-ptc-update','project_lirr-mnr-ptc')) select count(*) as identity_alias_conflicts from ids join identity_aliases ia on ia.kind='project' and ia.alias=ids.alias;\"",
+          "result": {
+            "identity_alias_conflicts": 0
+          }
+        }
+      ]
+    },
+    "do_not_merge_conflicts": {
+      "commands": [
+        {
+          "command": "sqlite3 -readonly -header -csv data/canonical.db \"with ids(alias,target) as (values ('project_grand-central-madison-jan2023','project_grand-central-madison'),('project_grand-central-madison-lirr','project_grand-central-madison'),('project_grand-central-madison-meeting-doc-104741','project_grand-central-madison'),('project_grand-central-madison-meeting-doc-105771','project_grand-central-madison'),('project_meeting-doc-grand-central-madison','project_grand-central-madison'),('project_lirr-mnr-ptc-implementation','project_lirr-mnr-ptc'),('project_meeting-doc-lirr-mnr-ptc','project_lirr-mnr-ptc'),('project_meeting-doc-lirr-mnr-ptc-update','project_lirr-mnr-ptc')) select count(*) as db_do_not_merge_pair_conflicts from ids join do_not_merge d on d.kind='project' and ((d.record_id_a=ids.alias and d.record_id_b=ids.target) or (d.record_id_a=ids.target and d.record_id_b=ids.alias));\"",
+          "result": {
+            "db_do_not_merge_pair_conflicts": 0
+          }
+        },
+        {
+          "command": "jq -r --argjson aliases '[\"project_grand-central-madison-jan2023\",\"project_grand-central-madison-lirr\",\"project_grand-central-madison-meeting-doc-104741\",\"project_grand-central-madison-meeting-doc-105771\",\"project_meeting-doc-grand-central-madison\",\"project_lirr-mnr-ptc-implementation\",\"project_meeting-doc-lirr-mnr-ptc\",\"project_meeting-doc-lirr-mnr-ptc-update\"]' '[.pairs.project[]? | .record_ids[] as $id | select($aliases | index($id))] | length' data/identity-overrides/do-not-merge.json",
+          "result": 0
+        }
+      ]
+    },
+    "prior_prep_conflicts": {
+      "command": "jq -r '.proposed_aliases[]? | select(.kind==\"project\") | .alias_id' data/review_notes/codex-identity-batch0{47..99}-prep.json data/review_notes/codex-identity-batch10{0..5}-prep.json | rg '^(project_grand-central-madison-jan2023|project_grand-central-madison-lirr|project_grand-central-madison-meeting-doc-104741|project_grand-central-madison-meeting-doc-105771|project_meeting-doc-grand-central-madison|project_lirr-mnr-ptc-implementation|project_meeting-doc-lirr-mnr-ptc|project_meeting-doc-lirr-mnr-ptc-update)$' | wc -l",
+      "result": 0
+    },
+    "candidate_source_and_validator_evidence": {
+      "command": "sqlite3 -readonly -header -csv data/canonical.db \"with ids(record_id) as (values ('project_grand-central-madison-jan2023'),('project_grand-central-madison-lirr'),('project_grand-central-madison-meeting-doc-104741'),('project_grand-central-madison-meeting-doc-105771'),('project_meeting-doc-grand-central-madison'),('project_grand-central-madison'),('project_lirr-mnr-ptc-implementation'),('project_meeting-doc-lirr-mnr-ptc'),('project_meeting-doc-lirr-mnr-ptc-update'),('project_lirr-mnr-ptc')) select r.record_id,r.display_name,json_extract(r.payload,'$.project_name') as project_name,json_extract(r.payload,'$.project_type') as project_type,json_extract(r.payload,'$.status') as status,json_extract(r.payload,'$.document_time_status') as doc_status,r.primary_source_id,group_concat(e.source_id||'#'||e.block_id,'; ') as evidence_refs from records r join ids using(record_id) left join evidence_refs e on e.record_id=r.record_id group by r.record_id order by r.record_id;\"",
+      "result": "All selected aliases and targets are project records with matching project_name/shared record_alias evidence; concise refs are copied into proposed_aliases."
+    },
+    "forbidden_command_compliance": {
+      "status": "pass",
+      "evidence": "Preparation used local deterministic inspection only: rg, jq, sqlite3 -readonly data/canonical.db, ls/sed/head/git status/date, and apply_patch to create this artifact. No external/provider-backed commands, profiles/providers, canonicalize, canonicalize-wave, canonicalize-review, campaign dedup, identity-review-run, write, ask, schema-propose, ontology-normalize-run, materialize, export-jsonl, or validate commands were run."
+    }
+  }
+}

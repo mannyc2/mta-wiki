@@ -1,0 +1,1634 @@
+{
+  "kind": "spreadsheet_preview",
+  "status": "ok",
+  "source_id": "meeting_doc_68481",
+  "run_id": "spreadsheet-backlog-20260623",
+  "generated_at": "2026-06-23T12:36:34.246Z",
+  "source_path": "raw/sources/meeting_doc_68481/source.xlsx",
+  "source_sha256": "sha256:046e0f396f309c778bdc60e259f9fd0f5251912ba422fe287d4164411fb6c9ff",
+  "sheets": [
+    {
+      "name": "Sheet1",
+      "sheet_id": "1",
+      "path": "xl/worksheets/sheet1.xml",
+      "row_count": 33,
+      "cell_count": 171,
+      "rows": [
+        {
+          "row_number": 1,
+          "cells": [
+            {
+              "ref": "C1",
+              "column": "C",
+              "row": 1,
+              "type": "s",
+              "style": "10",
+              "raw_value": "65",
+              "text": "Attachment A"
+            }
+          ]
+        },
+        {
+          "row_number": 2,
+          "cells": [
+            {
+              "ref": "C2",
+              "column": "C",
+              "row": 2,
+              "type": "s",
+              "style": "10",
+              "raw_value": "68",
+              "text": "MTA 2020-2024 Capital Program Amendement"
+            }
+          ]
+        },
+        {
+          "row_number": 3,
+          "cells": [
+            {
+              "ref": "C3",
+              "column": "C",
+              "row": 3,
+              "type": "s",
+              "style": "10",
+              "raw_value": "66",
+              "text": "CPRB Program Element Changs"
+            }
+          ]
+        },
+        {
+          "row_number": 4,
+          "cells": [
+            {
+              "ref": "C4",
+              "column": "C",
+              "row": 4,
+              "type": "s",
+              "style": "10",
+              "raw_value": "67",
+              "text": "($ in millions)"
+            }
+          ]
+        },
+        {
+          "row_number": 5,
+          "cells": [
+            {
+              "ref": "C5",
+              "column": "C",
+              "row": 5,
+              "style": "9",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 6,
+          "cells": [
+            {
+              "ref": "A6",
+              "column": "A",
+              "row": 6,
+              "type": "s",
+              "style": "11",
+              "raw_value": "0",
+              "text": "Agency"
+            },
+            {
+              "ref": "B6",
+              "column": "B",
+              "row": 6,
+              "type": "s",
+              "style": "11",
+              "raw_value": "1",
+              "text": "Element"
+            },
+            {
+              "ref": "C6",
+              "column": "C",
+              "row": 6,
+              "type": "s",
+              "style": "1",
+              "raw_value": "2",
+              "text": "Category – Element "
+            },
+            {
+              "ref": "D6",
+              "column": "D",
+              "row": 6,
+              "type": "s",
+              "style": "3",
+              "raw_value": "4",
+              "text": "CPRB Approved Program "
+            },
+            {
+              "ref": "E6",
+              "column": "E",
+              "row": 6,
+              "type": "s",
+              "style": "13",
+              "raw_value": "5",
+              "text": "Proposed Program"
+            },
+            {
+              "ref": "F6",
+              "column": "F",
+              "row": 6,
+              "type": "s",
+              "style": "13",
+              "raw_value": "6",
+              "text": "Change"
+            }
+          ]
+        },
+        {
+          "row_number": 7,
+          "cells": [
+            {
+              "ref": "A7",
+              "column": "A",
+              "row": 7,
+              "style": "12",
+              "raw_value": "3",
+              "text": "3"
+            },
+            {
+              "ref": "D7",
+              "column": "D",
+              "row": 7,
+              "style": "4",
+              "raw_value": "43800",
+              "text": "43800"
+            },
+            {
+              "ref": "E7",
+              "column": "E",
+              "row": 7,
+              "style": "14",
+              "text": ""
+            },
+            {
+              "ref": "F7",
+              "column": "F",
+              "row": 7,
+              "style": "14",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 8,
+          "cells": [
+            {
+              "ref": "A8",
+              "column": "A",
+              "row": 8,
+              "type": "s",
+              "style": "5",
+              "raw_value": "7",
+              "text": "NYCT"
+            },
+            {
+              "ref": "B8",
+              "column": "B",
+              "row": 8,
+              "type": "s",
+              "style": "6",
+              "raw_value": "8",
+              "text": "T-801-01"
+            },
+            {
+              "ref": "C8",
+              "column": "C",
+              "row": 8,
+              "type": "s",
+              "style": "7",
+              "raw_value": "9",
+              "text": "Subway Cars"
+            },
+            {
+              "ref": "D8",
+              "column": "D",
+              "row": 8,
+              "style": "8",
+              "raw_value": "6056.8",
+              "text": "6056.8"
+            },
+            {
+              "ref": "E8",
+              "column": "E",
+              "row": 8,
+              "style": "8",
+              "raw_value": "5816.2",
+              "text": "5816.2"
+            },
+            {
+              "ref": "F8",
+              "column": "F",
+              "row": 8,
+              "style": "8",
+              "raw_value": "-240.6",
+              "text": "-240.6"
+            }
+          ]
+        },
+        {
+          "row_number": 9,
+          "cells": [
+            {
+              "ref": "A9",
+              "column": "A",
+              "row": 9,
+              "type": "s",
+              "style": "5",
+              "raw_value": "7",
+              "text": "NYCT"
+            },
+            {
+              "ref": "B9",
+              "column": "B",
+              "row": 9,
+              "type": "s",
+              "style": "6",
+              "raw_value": "10",
+              "text": "T-805-02"
+            },
+            {
+              "ref": "C9",
+              "column": "C",
+              "row": 9,
+              "type": "s",
+              "style": "7",
+              "raw_value": "11",
+              "text": "Mainline Track Rehabilitation"
+            },
+            {
+              "ref": "D9",
+              "column": "D",
+              "row": 9,
+              "style": "8",
+              "raw_value": "1803.5",
+              "text": "1803.5"
+            },
+            {
+              "ref": "E9",
+              "column": "E",
+              "row": 9,
+              "style": "8",
+              "raw_value": "1861.8",
+              "text": "1861.8"
+            },
+            {
+              "ref": "F9",
+              "column": "F",
+              "row": 9,
+              "style": "8",
+              "raw_value": "58.3",
+              "text": "58.3"
+            }
+          ]
+        },
+        {
+          "row_number": 10,
+          "cells": [
+            {
+              "ref": "A10",
+              "column": "A",
+              "row": 10,
+              "type": "s",
+              "style": "5",
+              "raw_value": "7",
+              "text": "NYCT"
+            },
+            {
+              "ref": "B10",
+              "column": "B",
+              "row": 10,
+              "type": "s",
+              "style": "6",
+              "raw_value": "12",
+              "text": "T-805-03"
+            },
+            {
+              "ref": "C10",
+              "column": "C",
+              "row": 10,
+              "type": "s",
+              "style": "7",
+              "raw_value": "13",
+              "text": "Mainline Switch Replacement"
+            },
+            {
+              "ref": "D10",
+              "column": "D",
+              "row": 10,
+              "style": "8",
+              "raw_value": "754.7",
+              "text": "754.7"
+            },
+            {
+              "ref": "E10",
+              "column": "E",
+              "row": 10,
+              "style": "8",
+              "raw_value": "724.7",
+              "text": "724.7"
+            },
+            {
+              "ref": "F10",
+              "column": "F",
+              "row": 10,
+              "style": "8",
+              "raw_value": "-30",
+              "text": "-30"
+            }
+          ]
+        },
+        {
+          "row_number": 11,
+          "cells": [
+            {
+              "ref": "A11",
+              "column": "A",
+              "row": 11,
+              "type": "s",
+              "style": "5",
+              "raw_value": "7",
+              "text": "NYCT"
+            },
+            {
+              "ref": "B11",
+              "column": "B",
+              "row": 11,
+              "type": "s",
+              "style": "6",
+              "raw_value": "14",
+              "text": "T807-03"
+            },
+            {
+              "ref": "C11",
+              "column": "C",
+              "row": 11,
+              "type": "s",
+              "style": "7",
+              "raw_value": "15",
+              "text": "Line Structures"
+            },
+            {
+              "ref": "D11",
+              "column": "D",
+              "row": 11,
+              "style": "8",
+              "raw_value": "2383.9",
+              "text": "2383.9"
+            },
+            {
+              "ref": "E11",
+              "column": "E",
+              "row": 11,
+              "style": "8",
+              "raw_value": "2384.9",
+              "text": "2384.9"
+            },
+            {
+              "ref": "F11",
+              "column": "F",
+              "row": 11,
+              "style": "8",
+              "raw_value": "1",
+              "text": "1"
+            }
+          ]
+        },
+        {
+          "row_number": 12,
+          "cells": [
+            {
+              "ref": "A12",
+              "column": "A",
+              "row": 12,
+              "type": "s",
+              "style": "5",
+              "raw_value": "7",
+              "text": "NYCT"
+            },
+            {
+              "ref": "B12",
+              "column": "B",
+              "row": 12,
+              "type": "s",
+              "style": "6",
+              "raw_value": "16",
+              "text": "T-809-02"
+            },
+            {
+              "ref": "C12",
+              "column": "C",
+              "row": 12,
+              "type": "s",
+              "style": "7",
+              "raw_value": "17",
+              "text": "Substations"
+            },
+            {
+              "ref": "D12",
+              "column": "D",
+              "row": 12,
+              "style": "8",
+              "raw_value": "2055.5",
+              "text": "2055.5"
+            },
+            {
+              "ref": "E12",
+              "column": "E",
+              "row": 12,
+              "style": "8",
+              "raw_value": "2077.5",
+              "text": "2077.5"
+            },
+            {
+              "ref": "F12",
+              "column": "F",
+              "row": 12,
+              "style": "8",
+              "raw_value": "22",
+              "text": "22"
+            }
+          ]
+        },
+        {
+          "row_number": 13,
+          "cells": [
+            {
+              "ref": "A13",
+              "column": "A",
+              "row": 13,
+              "type": "s",
+              "style": "5",
+              "raw_value": "7",
+              "text": "NYCT"
+            },
+            {
+              "ref": "B13",
+              "column": "B",
+              "row": 13,
+              "type": "s",
+              "style": "6",
+              "raw_value": "18",
+              "text": "T-816-02"
+            },
+            {
+              "ref": "C13",
+              "column": "C",
+              "row": 13,
+              "type": "s",
+              "style": "7",
+              "raw_value": "19",
+              "text": "Miscellaneous"
+            },
+            {
+              "ref": "D13",
+              "column": "D",
+              "row": 13,
+              "style": "8",
+              "raw_value": "185.9",
+              "text": "185.9"
+            },
+            {
+              "ref": "E13",
+              "column": "E",
+              "row": 13,
+              "style": "8",
+              "raw_value": "134.6",
+              "text": "134.6"
+            },
+            {
+              "ref": "F13",
+              "column": "F",
+              "row": 13,
+              "style": "8",
+              "raw_value": "-51.3",
+              "text": "-51.3"
+            }
+          ]
+        },
+        {
+          "row_number": 14,
+          "cells": [
+            {
+              "ref": "A14",
+              "column": "A",
+              "row": 14,
+              "type": "s",
+              "style": "5",
+              "raw_value": "7",
+              "text": "NYCT"
+            },
+            {
+              "ref": "B14",
+              "column": "B",
+              "row": 14,
+              "type": "s",
+              "style": "6",
+              "raw_value": "20",
+              "text": "T-816-05"
+            },
+            {
+              "ref": "C14",
+              "column": "C",
+              "row": 14,
+              "type": "s",
+              "style": "7",
+              "raw_value": "21",
+              "text": "Engineering Services"
+            },
+            {
+              "ref": "D14",
+              "column": "D",
+              "row": 14,
+              "style": "8",
+              "raw_value": "312.60000000000002",
+              "text": "312.60000000000002"
+            },
+            {
+              "ref": "E14",
+              "column": "E",
+              "row": 14,
+              "style": "8",
+              "raw_value": "297",
+              "text": "297"
+            },
+            {
+              "ref": "F14",
+              "column": "F",
+              "row": 14,
+              "style": "8",
+              "raw_value": "-15.6",
+              "text": "-15.6"
+            }
+          ]
+        },
+        {
+          "row_number": 15,
+          "cells": [
+            {
+              "ref": "A15",
+              "column": "A",
+              "row": 15,
+              "type": "s",
+              "style": "5",
+              "raw_value": "22",
+              "text": "LIRR"
+            },
+            {
+              "ref": "B15",
+              "column": "B",
+              "row": 15,
+              "type": "s",
+              "style": "6",
+              "raw_value": "23",
+              "text": "L-802-04"
+            },
+            {
+              "ref": "C15",
+              "column": "C",
+              "row": 15,
+              "type": "s",
+              "style": "7",
+              "raw_value": "24",
+              "text": "Stations and Buildings"
+            },
+            {
+              "ref": "D15",
+              "column": "D",
+              "row": 15,
+              "style": "8",
+              "raw_value": "806.8",
+              "text": "806.8"
+            },
+            {
+              "ref": "E15",
+              "column": "E",
+              "row": 15,
+              "style": "8",
+              "raw_value": "742.1",
+              "text": "742.1"
+            },
+            {
+              "ref": "F15",
+              "column": "F",
+              "row": 15,
+              "style": "8",
+              "raw_value": "-64.7",
+              "text": "-64.7"
+            }
+          ]
+        },
+        {
+          "row_number": 16,
+          "cells": [
+            {
+              "ref": "A16",
+              "column": "A",
+              "row": 16,
+              "type": "s",
+              "style": "5",
+              "raw_value": "22",
+              "text": "LIRR"
+            },
+            {
+              "ref": "B16",
+              "column": "B",
+              "row": 16,
+              "type": "s",
+              "style": "6",
+              "raw_value": "25",
+              "text": "L-802-06"
+            },
+            {
+              "ref": "C16",
+              "column": "C",
+              "row": 16,
+              "type": "s",
+              "style": "7",
+              "raw_value": "26",
+              "text": "Penn Station"
+            },
+            {
+              "ref": "D16",
+              "column": "D",
+              "row": 16,
+              "style": "8",
+              "raw_value": "44.4",
+              "text": "44.4"
+            },
+            {
+              "ref": "E16",
+              "column": "E",
+              "row": 16,
+              "style": "8",
+              "raw_value": "59.4",
+              "text": "59.4"
+            },
+            {
+              "ref": "F16",
+              "column": "F",
+              "row": 16,
+              "type": "s",
+              "style": "8",
+              "raw_value": "27",
+              "text": "$15.0*"
+            }
+          ]
+        },
+        {
+          "row_number": 17,
+          "cells": [
+            {
+              "ref": "A17",
+              "column": "A",
+              "row": 17,
+              "type": "s",
+              "style": "5",
+              "raw_value": "22",
+              "text": "LIRR"
+            },
+            {
+              "ref": "B17",
+              "column": "B",
+              "row": 17,
+              "type": "s",
+              "style": "6",
+              "raw_value": "28",
+              "text": "L-804-01"
+            },
+            {
+              "ref": "C17",
+              "column": "C",
+              "row": 17,
+              "type": "s",
+              "style": "7",
+              "raw_value": "29",
+              "text": "Bridges"
+            },
+            {
+              "ref": "D17",
+              "column": "D",
+              "row": 17,
+              "style": "8",
+              "raw_value": "268.5",
+              "text": "268.5"
+            },
+            {
+              "ref": "E17",
+              "column": "E",
+              "row": 17,
+              "style": "8",
+              "raw_value": "254.5",
+              "text": "254.5"
+            },
+            {
+              "ref": "F17",
+              "column": "F",
+              "row": 17,
+              "style": "8",
+              "raw_value": "-14",
+              "text": "-14"
+            }
+          ]
+        },
+        {
+          "row_number": 18,
+          "cells": [
+            {
+              "ref": "A18",
+              "column": "A",
+              "row": 18,
+              "type": "s",
+              "style": "5",
+              "raw_value": "22",
+              "text": "LIRR"
+            },
+            {
+              "ref": "B18",
+              "column": "B",
+              "row": 18,
+              "type": "s",
+              "style": "6",
+              "raw_value": "30",
+              "text": "L-805-02"
+            },
+            {
+              "ref": "C18",
+              "column": "C",
+              "row": 18,
+              "type": "s",
+              "style": "7",
+              "raw_value": "31",
+              "text": "Signal Improvements"
+            },
+            {
+              "ref": "D18",
+              "column": "D",
+              "row": 18,
+              "style": "8",
+              "raw_value": "288.89999999999998",
+              "text": "288.89999999999998"
+            },
+            {
+              "ref": "E18",
+              "column": "E",
+              "row": 18,
+              "style": "8",
+              "raw_value": "339.5",
+              "text": "339.5"
+            },
+            {
+              "ref": "F18",
+              "column": "F",
+              "row": 18,
+              "type": "s",
+              "style": "8",
+              "raw_value": "32",
+              "text": "$50.6*"
+            }
+          ]
+        },
+        {
+          "row_number": 19,
+          "cells": [
+            {
+              "ref": "A19",
+              "column": "A",
+              "row": 19,
+              "type": "s",
+              "style": "5",
+              "raw_value": "22",
+              "text": "LIRR"
+            },
+            {
+              "ref": "B19",
+              "column": "B",
+              "row": 19,
+              "type": "s",
+              "style": "6",
+              "raw_value": "33",
+              "text": "L-806-01"
+            },
+            {
+              "ref": "C19",
+              "column": "C",
+              "row": 19,
+              "type": "s",
+              "style": "7",
+              "raw_value": "34",
+              "text": "Shops and Yards"
+            },
+            {
+              "ref": "D19",
+              "column": "D",
+              "row": 19,
+              "style": "8",
+              "raw_value": "118.9",
+              "text": "118.9"
+            },
+            {
+              "ref": "E19",
+              "column": "E",
+              "row": 19,
+              "style": "8",
+              "raw_value": "106.9",
+              "text": "106.9"
+            },
+            {
+              "ref": "F19",
+              "column": "F",
+              "row": 19,
+              "style": "8",
+              "raw_value": "-12",
+              "text": "-12"
+            }
+          ]
+        },
+        {
+          "row_number": 20,
+          "cells": [
+            {
+              "ref": "A20",
+              "column": "A",
+              "row": 20,
+              "type": "s",
+              "style": "5",
+              "raw_value": "22",
+              "text": "LIRR"
+            },
+            {
+              "ref": "B20",
+              "column": "B",
+              "row": 20,
+              "type": "s",
+              "style": "6",
+              "raw_value": "35",
+              "text": "L-809-04"
+            },
+            {
+              "ref": "C20",
+              "column": "C",
+              "row": 20,
+              "type": "s",
+              "style": "7",
+              "raw_value": "19",
+              "text": "Miscellaneous"
+            },
+            {
+              "ref": "D20",
+              "column": "D",
+              "row": 20,
+              "style": "8",
+              "raw_value": "231",
+              "text": "231"
+            },
+            {
+              "ref": "E20",
+              "column": "E",
+              "row": 20,
+              "style": "8",
+              "raw_value": "229",
+              "text": "229"
+            },
+            {
+              "ref": "F20",
+              "column": "F",
+              "row": 20,
+              "style": "8",
+              "raw_value": "-2",
+              "text": "-2"
+            }
+          ]
+        },
+        {
+          "row_number": 21,
+          "cells": [
+            {
+              "ref": "A21",
+              "column": "A",
+              "row": 21,
+              "type": "s",
+              "style": "5",
+              "raw_value": "36",
+              "text": "Metro-North"
+            },
+            {
+              "ref": "B21",
+              "column": "B",
+              "row": 21,
+              "type": "s",
+              "style": "6",
+              "raw_value": "37",
+              "text": "M-802-02"
+            },
+            {
+              "ref": "C21",
+              "column": "C",
+              "row": 21,
+              "type": "s",
+              "style": "7",
+              "raw_value": "38",
+              "text": "Outlying Stations"
+            },
+            {
+              "ref": "D21",
+              "column": "D",
+              "row": 21,
+              "style": "8",
+              "raw_value": "339.9",
+              "text": "339.9"
+            },
+            {
+              "ref": "E21",
+              "column": "E",
+              "row": 21,
+              "style": "8",
+              "raw_value": "348.3",
+              "text": "348.3"
+            },
+            {
+              "ref": "F21",
+              "column": "F",
+              "row": 21,
+              "style": "8",
+              "raw_value": "8.4",
+              "text": "8.4"
+            }
+          ]
+        },
+        {
+          "row_number": 22,
+          "cells": [
+            {
+              "ref": "A22",
+              "column": "A",
+              "row": 22,
+              "type": "s",
+              "style": "5",
+              "raw_value": "36",
+              "text": "Metro-North"
+            },
+            {
+              "ref": "B22",
+              "column": "B",
+              "row": 22,
+              "type": "s",
+              "style": "6",
+              "raw_value": "39",
+              "text": "M-803-01"
+            },
+            {
+              "ref": "C22",
+              "column": "C",
+              "row": 22,
+              "type": "s",
+              "style": "7",
+              "raw_value": "40",
+              "text": "Track"
+            },
+            {
+              "ref": "D22",
+              "column": "D",
+              "row": 22,
+              "style": "8",
+              "raw_value": "261.5",
+              "text": "261.5"
+            },
+            {
+              "ref": "E22",
+              "column": "E",
+              "row": 22,
+              "style": "8",
+              "raw_value": "268.8",
+              "text": "268.8"
+            },
+            {
+              "ref": "F22",
+              "column": "F",
+              "row": 22,
+              "style": "8",
+              "raw_value": "7.3",
+              "text": "7.3"
+            }
+          ]
+        },
+        {
+          "row_number": 23,
+          "cells": [
+            {
+              "ref": "A23",
+              "column": "A",
+              "row": 23,
+              "type": "s",
+              "style": "5",
+              "raw_value": "36",
+              "text": "Metro-North"
+            },
+            {
+              "ref": "B23",
+              "column": "B",
+              "row": 23,
+              "type": "s",
+              "style": "6",
+              "raw_value": "41",
+              "text": "M-804-01"
+            },
+            {
+              "ref": "C23",
+              "column": "C",
+              "row": 23,
+              "type": "s",
+              "style": "7",
+              "raw_value": "42",
+              "text": "Communications & Signals"
+            },
+            {
+              "ref": "D23",
+              "column": "D",
+              "row": 23,
+              "style": "8",
+              "raw_value": "182.2",
+              "text": "182.2"
+            },
+            {
+              "ref": "E23",
+              "column": "E",
+              "row": 23,
+              "style": "8",
+              "raw_value": "186.6",
+              "text": "186.6"
+            },
+            {
+              "ref": "F23",
+              "column": "F",
+              "row": 23,
+              "style": "8",
+              "raw_value": "4.4000000000000004",
+              "text": "4.4000000000000004"
+            }
+          ]
+        },
+        {
+          "row_number": 24,
+          "cells": [
+            {
+              "ref": "A24",
+              "column": "A",
+              "row": 24,
+              "type": "s",
+              "style": "5",
+              "raw_value": "36",
+              "text": "Metro-North"
+            },
+            {
+              "ref": "B24",
+              "column": "B",
+              "row": 24,
+              "type": "s",
+              "style": "6",
+              "raw_value": "43",
+              "text": "M-805-01"
+            },
+            {
+              "ref": "C24",
+              "column": "C",
+              "row": 24,
+              "type": "s",
+              "style": "7",
+              "raw_value": "44",
+              "text": "Power"
+            },
+            {
+              "ref": "D24",
+              "column": "D",
+              "row": 24,
+              "style": "8",
+              "raw_value": "202.2",
+              "text": "202.2"
+            },
+            {
+              "ref": "E24",
+              "column": "E",
+              "row": 24,
+              "style": "8",
+              "raw_value": "171.1",
+              "text": "171.1"
+            },
+            {
+              "ref": "F24",
+              "column": "F",
+              "row": 24,
+              "style": "8",
+              "raw_value": "-31.1",
+              "text": "-31.1"
+            }
+          ]
+        },
+        {
+          "row_number": 25,
+          "cells": [
+            {
+              "ref": "A25",
+              "column": "A",
+              "row": 25,
+              "type": "s",
+              "style": "5",
+              "raw_value": "36",
+              "text": "Metro-North"
+            },
+            {
+              "ref": "B25",
+              "column": "B",
+              "row": 25,
+              "type": "s",
+              "style": "6",
+              "raw_value": "45",
+              "text": "M-806-01"
+            },
+            {
+              "ref": "C25",
+              "column": "C",
+              "row": 25,
+              "type": "s",
+              "style": "7",
+              "raw_value": "46",
+              "text": "Shops & Yards"
+            },
+            {
+              "ref": "D25",
+              "column": "D",
+              "row": 25,
+              "style": "8",
+              "raw_value": "23",
+              "text": "23"
+            },
+            {
+              "ref": "E25",
+              "column": "E",
+              "row": 25,
+              "style": "8",
+              "raw_value": "17",
+              "text": "17"
+            },
+            {
+              "ref": "F25",
+              "column": "F",
+              "row": 25,
+              "style": "8",
+              "raw_value": "-6",
+              "text": "-6"
+            }
+          ]
+        },
+        {
+          "row_number": 26,
+          "cells": [
+            {
+              "ref": "A26",
+              "column": "A",
+              "row": 26,
+              "type": "s",
+              "style": "5",
+              "raw_value": "36",
+              "text": "Metro-North"
+            },
+            {
+              "ref": "B26",
+              "column": "B",
+              "row": 26,
+              "type": "s",
+              "style": "6",
+              "raw_value": "47",
+              "text": "M-808-01"
+            },
+            {
+              "ref": "C26",
+              "column": "C",
+              "row": 26,
+              "type": "s",
+              "style": "7",
+              "raw_value": "19",
+              "text": "Miscellaneous"
+            },
+            {
+              "ref": "D26",
+              "column": "D",
+              "row": 26,
+              "style": "8",
+              "raw_value": "147.5",
+              "text": "147.5"
+            },
+            {
+              "ref": "E26",
+              "column": "E",
+              "row": 26,
+              "style": "8",
+              "raw_value": "142.6",
+              "text": "142.6"
+            },
+            {
+              "ref": "F26",
+              "column": "F",
+              "row": 26,
+              "style": "8",
+              "raw_value": "-4.9000000000000004",
+              "text": "-4.9000000000000004"
+            }
+          ]
+        },
+        {
+          "row_number": 27,
+          "cells": [
+            {
+              "ref": "A27",
+              "column": "A",
+              "row": 27,
+              "type": "s",
+              "style": "5",
+              "raw_value": "48",
+              "text": "MTA Bus"
+            },
+            {
+              "ref": "B27",
+              "column": "B",
+              "row": 27,
+              "type": "s",
+              "style": "6",
+              "raw_value": "49",
+              "text": "U-803-02"
+            },
+            {
+              "ref": "C27",
+              "column": "C",
+              "row": 27,
+              "type": "s",
+              "style": "7",
+              "raw_value": "50",
+              "text": "Bus Company Projects"
+            },
+            {
+              "ref": "D27",
+              "column": "D",
+              "row": 27,
+              "style": "8",
+              "raw_value": "870.7",
+              "text": "870.7"
+            },
+            {
+              "ref": "E27",
+              "column": "E",
+              "row": 27,
+              "style": "8",
+              "raw_value": "870.4",
+              "text": "870.4"
+            },
+            {
+              "ref": "F27",
+              "column": "F",
+              "row": 27,
+              "style": "8",
+              "raw_value": "-0.3",
+              "text": "-0.3"
+            }
+          ]
+        },
+        {
+          "row_number": 28,
+          "cells": [
+            {
+              "ref": "A28",
+              "column": "A",
+              "row": 28,
+              "type": "s",
+              "style": "5",
+              "raw_value": "51",
+              "text": "MTA Interagency"
+            },
+            {
+              "ref": "B28",
+              "column": "B",
+              "row": 28,
+              "type": "s",
+              "style": "6",
+              "raw_value": "52",
+              "text": "N-800-01"
+            },
+            {
+              "ref": "C28",
+              "column": "C",
+              "row": 28,
+              "type": "s",
+              "style": "7",
+              "raw_value": "53",
+              "text": "MTA Mentoring Program Administration"
+            },
+            {
+              "ref": "D28",
+              "column": "D",
+              "row": 28,
+              "style": "8",
+              "raw_value": "0",
+              "text": "0"
+            },
+            {
+              "ref": "E28",
+              "column": "E",
+              "row": 28,
+              "style": "8",
+              "raw_value": "4.2",
+              "text": "4.2"
+            },
+            {
+              "ref": "F28",
+              "column": "F",
+              "row": 28,
+              "type": "s",
+              "style": "8",
+              "raw_value": "54",
+              "text": "$4.2*"
+            }
+          ]
+        },
+        {
+          "row_number": 29,
+          "cells": [
+            {
+              "ref": "A29",
+              "column": "A",
+              "row": 29,
+              "type": "s",
+              "style": "5",
+              "raw_value": "51",
+              "text": "MTA Interagency"
+            },
+            {
+              "ref": "B29",
+              "column": "B",
+              "row": 29,
+              "type": "s",
+              "style": "6",
+              "raw_value": "55",
+              "text": "N-813-01"
+            },
+            {
+              "ref": "C29",
+              "column": "C",
+              "row": 29,
+              "type": "s",
+              "style": "7",
+              "raw_value": "56",
+              "text": "MTA Construction & Development"
+            },
+            {
+              "ref": "D29",
+              "column": "D",
+              "row": 29,
+              "style": "8",
+              "raw_value": "0",
+              "text": "0"
+            },
+            {
+              "ref": "E29",
+              "column": "E",
+              "row": 29,
+              "style": "8",
+              "raw_value": "18.8",
+              "text": "18.8"
+            },
+            {
+              "ref": "F29",
+              "column": "F",
+              "row": 29,
+              "type": "s",
+              "style": "8",
+              "raw_value": "57",
+              "text": "$18.8*"
+            }
+          ]
+        },
+        {
+          "row_number": 30,
+          "cells": [
+            {
+              "ref": "A30",
+              "column": "A",
+              "row": 30,
+              "type": "s",
+              "style": "15",
+              "raw_value": "58",
+              "text": "MTA Expansion"
+            },
+            {
+              "ref": "B30",
+              "column": "B",
+              "row": 30,
+              "type": "s",
+              "style": "15",
+              "raw_value": "59",
+              "text": "G-811-01"
+            },
+            {
+              "ref": "C30",
+              "column": "C",
+              "row": 30,
+              "type": "s",
+              "style": "17",
+              "raw_value": "60",
+              "text": "Penn Station Access"
+            },
+            {
+              "ref": "D30",
+              "column": "D",
+              "row": 30,
+              "style": "19",
+              "raw_value": "1131.0999999999999",
+              "text": "1131.0999999999999"
+            },
+            {
+              "ref": "E30",
+              "column": "E",
+              "row": 30,
+              "style": "19",
+              "raw_value": "2051.9",
+              "text": "2051.9"
+            },
+            {
+              "ref": "F30",
+              "column": "F",
+              "row": 30,
+              "type": "s",
+              "style": "19",
+              "raw_value": "61",
+              "text": "$920.8*"
+            }
+          ]
+        },
+        {
+          "row_number": 31,
+          "cells": [
+            {
+              "ref": "A31",
+              "column": "A",
+              "row": 31,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "B31",
+              "column": "B",
+              "row": 31,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "C31",
+              "column": "C",
+              "row": 31,
+              "style": "18",
+              "text": ""
+            },
+            {
+              "ref": "D31",
+              "column": "D",
+              "row": 31,
+              "style": "20",
+              "text": ""
+            },
+            {
+              "ref": "E31",
+              "column": "E",
+              "row": 31,
+              "style": "20",
+              "text": ""
+            },
+            {
+              "ref": "F31",
+              "column": "F",
+              "row": 31,
+              "style": "20",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 32,
+          "cells": [
+            {
+              "ref": "A32",
+              "column": "A",
+              "row": 32,
+              "type": "s",
+              "style": "5",
+              "raw_value": "58",
+              "text": "MTA Expansion"
+            },
+            {
+              "ref": "B32",
+              "column": "B",
+              "row": 32,
+              "type": "s",
+              "style": "6",
+              "raw_value": "62",
+              "text": "G-813-01"
+            },
+            {
+              "ref": "C32",
+              "column": "C",
+              "row": 32,
+              "type": "s",
+              "style": "7",
+              "raw_value": "63",
+              "text": "LIRR Expansion Project"
+            },
+            {
+              "ref": "D32",
+              "column": "D",
+              "row": 32,
+              "style": "8",
+              "raw_value": "538.5",
+              "text": "538.5"
+            },
+            {
+              "ref": "E32",
+              "column": "E",
+              "row": 32,
+              "style": "8",
+              "raw_value": "438.5",
+              "text": "438.5"
+            },
+            {
+              "ref": "F32",
+              "column": "F",
+              "row": 32,
+              "style": "8",
+              "raw_value": "-100",
+              "text": "-100"
+            }
+          ]
+        },
+        {
+          "row_number": 33,
+          "cells": [
+            {
+              "ref": "A33",
+              "column": "A",
+              "row": 33,
+              "type": "s",
+              "style": "5",
+              "raw_value": "58",
+              "text": "MTA Expansion"
+            },
+            {
+              "ref": "B33",
+              "column": "B",
+              "row": 33,
+              "type": "s",
+              "style": "6",
+              "raw_value": "64",
+              "text": "G-816-01"
+            },
+            {
+              "ref": "C33",
+              "column": "C",
+              "row": 33,
+              "type": "s",
+              "style": "7",
+              "raw_value": "19",
+              "text": "Miscellaneous"
+            },
+            {
+              "ref": "D33",
+              "column": "D",
+              "row": 33,
+              "style": "8",
+              "raw_value": "234.6",
+              "text": "234.6"
+            },
+            {
+              "ref": "E33",
+              "column": "E",
+              "row": 33,
+              "style": "8",
+              "raw_value": "231.7",
+              "text": "231.7"
+            },
+            {
+              "ref": "F33",
+              "column": "F",
+              "row": 33,
+              "style": "8",
+              "raw_value": "-2.9",
+              "text": "-2.9"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

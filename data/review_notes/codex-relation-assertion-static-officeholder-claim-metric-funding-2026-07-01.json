@@ -1,0 +1,148 @@
+{
+  "note_id": "codex-relation-assertion-static-officeholder-claim-metric-funding-2026-07-01",
+  "created_at": "2026-07-01T00:00:00.000Z",
+  "author": "codex",
+  "kind": "deterministic_relation_assertion_status_cleanup",
+  "status": "implemented_materialized_validated",
+  "scope": "Codex-only deterministic post-ingest cleanup after the metric assertion-status checkpoint. No external/provider-backed LLM commands, ingest/write/ask/schema commands, identity-review-run, ontology-normalize-run, provider profiles, or hand edits to canonical JSONL were used.",
+  "read_only_subagents": [
+    {
+      "agent_id": "019f1b2b-828b-7242-b45f-e37987920729",
+      "lane": "metric_context ridership tail",
+      "result_used": "Observed ridership has_metric rows with concrete values and observed period/frequency anchors can be marked delivered while holding plans, estimates, projections, goals, and table bleed."
+    },
+    {
+      "agent_id": "019f1b2b-a54a-77a1-8532-576072e7cd63",
+      "lane": "agency_role officeholder and liaison tail",
+      "result_used": "Static entity-to-entity role aliases such as has_role, chairs, has_liaison, leads_organization, and is_principal_of can be marked delivered only when role text is explicit and non-temporal."
+    },
+    {
+      "agent_id": "019f1b2b-c3a6-7403-a1f7-04df055ce557",
+      "lane": "claim_context change_type tail",
+      "result_used": "Same-source has_claim rows can use normalized claim change_type values for delivered/planned/proposed/in_progress status when provenance and text guards pass."
+    },
+    {
+      "agent_id": "019f1b2b-de44-7112-bc62-785961360e4e",
+      "lane": "funding_award direct agreement tail",
+      "result_used": "Direct real-estate agreement source context supports delivered status for narrow agreement/license/lease/counterparty relation kinds."
+    }
+  ],
+  "code_changes": {
+    "assertion_qualifiers": [
+      "Added static organization hierarchy aliases and terminal location/source-authorship guards.",
+      "Added explicit static agency officeholder and liaison delivered inference with endpoint, temporal, and role-token guards.",
+      "Added same-source claim change_type assertion-status inference for delivered, planned, proposed, and in_progress values.",
+      "Added observed ridership has_metric delivered inference requiring ridership unit family, concrete value, and observed period/frequency anchor.",
+      "Added direct agreement funding-award inference for narrow agreement/license/lease/counterparty kinds tied to direct agreement source context."
+    ],
+    "tests": [
+      "Added assertion qualifier tests for static officeholder aliases and negative role guards.",
+      "Added claim change_type positive and negative tests.",
+      "Added observed ridership metric positive and negative tests.",
+      "Extended funding agreement tests for direct agreements and hold cases."
+    ]
+  },
+  "counts": {
+    "previous_logged_unknown_total_after_metric_checkpoint": 6372,
+    "pre_current_materialize_unknown_total": 6335,
+    "post_current_materialize_unknown_total": 6006,
+    "net_reduction_since_metric_checkpoint": 366,
+    "net_reduction_current_materialization": 329,
+    "selected_pre_to_post_unknown_counts": {
+      "metric_context.has_metric": {
+        "before": 3551,
+        "after": 3277,
+        "delta": -274
+      },
+      "claim_context.has_claim": {
+        "before": 361,
+        "after": 342,
+        "delta": -19
+      },
+      "agency_role.has_role": {
+        "before": 17,
+        "after": 1,
+        "delta": -16
+      },
+      "agency_role.chairs": {
+        "before": 4,
+        "after": 1,
+        "delta": -3
+      },
+      "agency_role.has_liaison": {
+        "before": 3,
+        "after": 0,
+        "delta": -3
+      },
+      "agency_role.leads_organization": {
+        "before": 2,
+        "after": 0,
+        "delta": -2
+      },
+      "agency_role.is_principal_of": {
+        "before": 1,
+        "after": 0,
+        "delta": -1
+      },
+      "funding_award.licenses": {
+        "before": 1,
+        "after": 0,
+        "delta": -1
+      },
+      "funding_award.leases": {
+        "before": 1,
+        "after": 0,
+        "delta": -1
+      },
+      "funding_award.has_agreement_with": {
+        "before": 6,
+        "after": 1,
+        "delta": -5
+      },
+      "funding_award.has_licensee": {
+        "before": 2,
+        "after": 1,
+        "delta": -1
+      },
+      "funding_award.has_counterparty": {
+        "before": 8,
+        "after": 7,
+        "delta": -1
+      }
+    },
+    "post_materialize_top_unknown_families": {
+      "metric_context": 3291,
+      "timeline_context": 443,
+      "claim_context": 419,
+      "agency_role": 413,
+      "funding_award": 324,
+      "corridor_scope": 276,
+      "partnership_engagement": 244,
+      "governance_legal": 112,
+      "treatment_context": 98,
+      "route_scope": 93,
+      "organization_hierarchy": 91,
+      "dependency_or_reference": 85
+    }
+  },
+  "verification": {
+    "focused_tests": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts: 60 pass, 0 fail, 339 expect() calls",
+    "typecheck": "bun run typecheck passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize: Materialized 93092/98102 submissions; retired submissions skipped 243; pages 7338; SQLite FTS quick_check ok",
+    "validate": "bun packages/cli/src/cli.ts validate: Issues 0; submissions 98102; canonical records 84040; wiki pages 7334"
+  },
+  "remaining_lanes": [
+    "metric_context.has_metric remains the largest relation assertion-status family with 3277 unknown rows; next safest lanes should target exact metric aliases or observed non-ridership value families with strong same-source evidence guards.",
+    "timeline_context remains 443 unknown rows and should be rebaselined before another lifecycle rule.",
+    "agency_role residuals are now mostly outside the narrow static officeholder aliases handled here; avoid broad role expansion without endpoint and temporal guards.",
+    "funding_award direct agreement residuals still include 324 unknown family rows; keep future/proposal and endpoint-shape guards strict."
+  ],
+  "generated_outputs": [
+    "data/canonical/relations.jsonl",
+    "data/canonical.db"
+  ],
+  "source_files_changed": [
+    "packages/pipeline/src/records/assertion-qualifiers.ts",
+    "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "batch": "identity215",
+  "generated_at": "2026-06-23T12:42:59Z",
+  "candidates": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_f-borelli-committee-member",
+      "target_id": "entity_audit-committee-borelli",
+      "identity_key": "entity_f-borelli",
+      "confidence": "high",
+      "reason": "Exact person identity. Both records name F. Borelli as a person in MTA committee/member context; the target carries the richer organization/title payload.",
+      "evidence": [
+        {
+          "record_id": "entity_audit-committee-borelli",
+          "display_name": "entity_audit_committee_borelli",
+          "entity_name": "F. Borelli",
+          "entity_type": "person",
+          "organization": "Metropolitan Transportation Authority",
+          "aliases": ["entity_f-borelli"],
+          "evidence_refs": ["meeting_doc_105876#p001_c0006"]
+        },
+        {
+          "record_id": "entity_f-borelli-committee-member",
+          "display_name": "F. Borelli",
+          "entity_name": "F. Borelli",
+          "entity_type": "person",
+          "role": "MTA Corporate Governance Committee Member",
+          "aliases": ["entity_f-borelli"],
+          "evidence_refs": ["meeting_doc_100286#p001_c0008"]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_h-mihaltses-committee-member",
+      "target_id": "entity_h-mihaltses-cgc-oct2025",
+      "identity_key": "entity_h-mihaltses",
+      "confidence": "high",
+      "reason": "Exact person identity. Both records use the same uncommon initial/surname label H. Mihaltses in MTA committee context.",
+      "evidence": [
+        {
+          "record_id": "entity_h-mihaltses-cgc-oct2025",
+          "display_name": "H. Mihaltses",
+          "entity_name": "H. Mihaltses",
+          "entity_type": "person",
+          "aliases": ["entity_h-mihaltses"],
+          "evidence_refs": ["meeting_doc_189751#p001_c0011"]
+        },
+        {
+          "record_id": "entity_h-mihaltses-committee-member",
+          "display_name": "H. Mihaltses",
+          "entity_name": "H. Mihaltses",
+          "entity_type": "person",
+          "role": "MTA Corporate Governance Committee Member",
+          "aliases": ["entity_h-mihaltses"],
+          "evidence_refs": ["meeting_doc_100286#p001_c0013"]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_manhattan-community-board-12-broadway-mar2025",
+      "target_id": "entity_manhattan-community-board-12",
+      "identity_key": "entity_manhattan-community-board-12",
+      "confidence": "high",
+      "reason": "Exact community-board identity. Both records explicitly identify Manhattan Community Board 12; the alias is a Broadway March 2025 one-source surface for the same board.",
+      "evidence": [
+        {
+          "record_id": "entity_manhattan-community-board-12",
+          "display_name": "Manhattan Community Board 12",
+          "entity_name": "Manhattan Community Board 12",
+          "entity_type": "community board",
+          "evidence_refs": ["brt_bx6_cb12_apr2017#p001_c0002", "brt_bx6_south_bronx_sept2016#p001_c0002"]
+        },
+        {
+          "record_id": "entity_manhattan-community-board-12-broadway-mar2025",
+          "display_name": "Manhattan Community Board 12",
+          "entity_name": "Manhattan Community Board 12",
+          "entity_type": "community board",
+          "aliases": ["entity_manhattan-community-board-12"],
+          "evidence_refs": [
+            "broadway_157_st_220_st_cb12_mar2025#p001_c0002 quote: CB 12 Existing Conditions Meeting",
+            "broadway_157_st_220_st_cb12_mar2025#p017_c0002 quote: Winter 2025: Present existing conditions to CB 12"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-113926-r-free",
+      "target_id": "entity_meeting-doc-111781-r-free",
+      "identity_key": "entity_r-free",
+      "confidence": "high",
+      "reason": "Exact person identity. Both records name R. FREE with the same LIRR Senior Vice President - Operations / department-head context.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-111781-r-free",
+          "display_name": "R. FREE",
+          "entity_name": "R. FREE",
+          "entity_type": "person",
+          "title": "Department Head",
+          "role": "SR. VICE PRESIDENT - OPERATIONS",
+          "aliases": ["entity_r-free", "entity_r-free-lirr-fall-trackwork"],
+          "evidence_refs": [
+            "meeting_doc_111781#p001_c0002 quote: R. FREE",
+            "meeting_doc_98236#p001_c0002 quote: Department Head Names R. FREE"
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-113926-r-free",
+          "display_name": "R. FREE",
+          "entity_name": "R. FREE",
+          "entity_type": "person",
+          "title": "SR. VICE PRESIDENT - OPERATIONS",
+          "aliases": ["entity_r-free"],
+          "evidence_refs": ["meeting_doc_113926#p001_c0003 quote: R. FREE"]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-164781-nyct-dept-subways",
+      "target_id": "entity_dept-of-subways-crichlow",
+      "identity_key": "entity_department-of-subways",
+      "confidence": "high",
+      "reason": "Exact NYCT unit identity. The alias is a one-source Department of Subways office extraction; the target is the richer NYCT Department of Subways record.",
+      "evidence": [
+        {
+          "record_id": "entity_dept-of-subways-crichlow",
+          "display_name": "Department of Subways, Demetrius Crichlow",
+          "entity_name": "Department of Subways",
+          "entity_type": "department",
+          "organization": "New York City Transit",
+          "aliases": ["entity_department-of-subways", "entity_department-of-subways-nyct", "entity_new-york-city-transit-department-of-subways"],
+          "evidence_refs": ["meeting_doc_100346#p015_c0005", "meeting_doc_108046#p001_c0004", "meeting_doc_111826#p007_c0003"]
+        },
+        {
+          "record_id": "entity_meeting-doc-164781-nyct-dept-subways",
+          "display_name": "entity_meeting_doc_164781_nyct_dept_subways",
+          "entity_name": "Department of Subways",
+          "entity_type": "office",
+          "description": "NYCT department that partnered with the Office of ADA Compliance to administer the ADA Sensitivity Training Course in 2005.",
+          "aliases": ["entity_department-of-subways"],
+          "evidence_refs": ["meeting_doc_164781#p007_c0006"]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-194171-mta-board",
+      "target_id": "entity_meeting-doc-173846-mta-board",
+      "identity_key": "entity_mta-board-of-directors",
+      "confidence": "high",
+      "reason": "Exact board identity. Both records explicitly name the MTA Board of Directors; entity_type differs only by agency/board wording.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-173846-mta-board",
+          "display_name": "MTA Board of Directors",
+          "entity_name": "MTA Board of Directors",
+          "entity_type": "agency",
+          "aliases": ["entity_mta-board-of-directors"],
+          "evidence_refs": ["meeting_doc_173846#p017_c0014"]
+        },
+        {
+          "record_id": "entity_meeting-doc-194171-mta-board",
+          "display_name": "MTA Board of Directors",
+          "entity_name": "MTA Board of Directors",
+          "entity_type": "board",
+          "aliases": ["entity_mta-board-of-directors"],
+          "evidence_refs": ["meeting_doc_194171#p016_c0004"]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_metronorth-committee-charter",
+      "target_id": "entity_meeting-doc-102746-committee",
+      "identity_key": "entity_committee-on-the-operations-of-the-metro-north-commuter-railroad",
+      "confidence": "high",
+      "reason": "Exact committee identity. Both records name the MTA board committee for operations of the Metro-North Commuter Railroad; wording differs by optional 'the' and charter phrasing.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-102746-committee",
+          "display_name": "Committee on the Operations of the Metro-North Commuter Railroad",
+          "entity_name": "Committee on the Operations of the Metro-North Commuter Railroad",
+          "entity_type": "board committee",
+          "parent_entity": "Metropolitan Transportation Authority",
+          "aliases": ["entity_committee-on-the-operations-of-the-metro-north-commuter-railroad"],
+          "evidence_refs": ["meeting_doc_102746#p001_c0004", "meeting_doc_102746#p001_c0006"]
+        },
+        {
+          "record_id": "entity_metronorth-committee-charter",
+          "display_name": "Committee on Operations of the Metro-North Commuter Railroad",
+          "entity_name": "Committee on Operations of the Metro-North Commuter Railroad",
+          "entity_type": "committee",
+          "aliases": ["entity_committee-on-operations-of-the-metro-north-commuter-railroad", "entity_committee-on-the-operations-of-the-metro-north-commuter-railroad"],
+          "evidence_refs": [
+            "meeting_doc_128986#p104_c0003 quote: COMMITTEE ON OPERATIONS OF THE METRO-NORTH COMMUTER RAILROAD",
+            "meeting_doc_160636#p095_c0004",
+            "meeting_doc_194076#p001_c0003"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_new-york-city-meeting-doc-140526",
+      "target_id": "entity_meeting-doc-112231-new-york-city",
+      "identity_key": "entity_new-york-city",
+      "confidence": "high",
+      "reason": "Exact municipal-government identity. Both records identify New York City as the municipality/municipal government.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-112231-new-york-city",
+          "display_name": "entity_meeting_doc_112231_new_york_city",
+          "entity_name": "New York City",
+          "entity_type": "municipal government",
+          "aliases": ["entity_new-york-city"],
+          "evidence_refs": ["meeting_doc_112231#p002_c0002 quote: Increase the top rate of the Payroll Mobility Tax (PMT) for the largest businesses in New York City"]
+        },
+        {
+          "record_id": "entity_new-york-city-meeting-doc-140526",
+          "display_name": "New York City",
+          "entity_name": "New York City",
+          "entity_type": "municipality",
+          "aliases": ["entity_new-york-city"],
+          "evidence_refs": ["meeting_doc_140526#p001_c0005"]
+        }
+      ]
+    }
+  ],
+  "do_not_merge": [
+    {
+      "global_kind": "entity",
+      "record_ids": ["entity_meeting-doc-128981-nyct", "entity_nyct-svp-safety-security-mtg-doc-193916"],
+      "identity_key": "entity_nyct-svp-safety-and-security",
+      "confidence": "high",
+      "reason": "Agency-versus-role/person false positive. The NYCT agency record is not the same entity as an NYCT SVP Safety & Security role extraction.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "entity_name": "New York City Transit Authority",
+          "entity_type": "agency",
+          "organization": "MTA",
+          "evidence_refs": ["meeting_doc_128981#p033_c0004 quote: Due to New York City Transit Authority", "meeting_doc_128981#p035_c0001 quote: NYCTR - Distributable Income"]
+        },
+        {
+          "record_id": "entity_nyct-svp-safety-security-mtg-doc-193916",
+          "display_name": "NYCT SVP Safety & Security",
+          "entity_name": "NYCT SVP Safety & Security",
+          "entity_type": "person",
+          "aliases": ["entity_nyct-svp-safety-and-security"],
+          "evidence_refs": ["meeting_doc_193916#p001_c0011"]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "record_ids": ["entity_dept-of-subways-crichlow", "entity_meeting-doc-196901-nyct-track-engineering"],
+      "identity_key": "entity_nyc-transit-department-of-subways-track-engineering-division",
+      "confidence": "high",
+      "reason": "Department-versus-division false positive. Track Engineering Division is a more specific subunit under the Department of Subways, not the same entity as the department-level record.",
+      "evidence": [
+        {
+          "record_id": "entity_dept-of-subways-crichlow",
+          "display_name": "Department of Subways, Demetrius Crichlow",
+          "entity_name": "Department of Subways",
+          "entity_type": "department",
+          "organization": "New York City Transit",
+          "evidence_refs": ["meeting_doc_100346#p015_c0005", "meeting_doc_108046#p001_c0004", "meeting_doc_111826#p007_c0003"]
+        },
+        {
+          "record_id": "entity_meeting-doc-196901-nyct-track-engineering",
+          "display_name": "NYC Transit Department of Subways - Track Engineering Division",
+          "entity_name": "NYC Transit Department of Subways - Track Engineering Division",
+          "entity_type": "department",
+          "aliases": ["entity_nyc-transit-department-of-subways-track-engineering-division"],
+          "evidence_refs": ["meeting_doc_196901#p006_c0004"]
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "record_ids": ["entity_bt-committee-members", "entity_bt-committee-members-sep2024"],
+      "reason": "covered_by_existing_override_identity212"
+    },
+    {
+      "record_ids": ["entity_janno-lieber-2025", "entity_meeting-doc-208011-j-lieber"],
+      "reason": "covered_by_existing_override_identity214"
+    },
+    {
+      "record_ids": ["entity_department-of-buses", "entity_meeting-doc-128981-nyct"],
+      "reason": "good_dnm_shape_but_related_ids_mentioned_in_batches212_214_guard_context"
+    },
+    {
+      "record_ids": ["entity_department-of-buses", "entity_nyct-meeting-doc-131666"],
+      "reason": "good_dnm_shape_but_related_ids_mentioned_in_batches212_214_guard_context"
+    },
+    {
+      "record_ids": ["entity_bloomberg-news-org", "entity_meeting-doc-155136-bloomberg"],
+      "reason": "not_high_confidence_brand_scope_news_org_vs_vendor_license_context"
+    },
+    {
+      "record_ids": ["entity_norman-brown-115226", "entity_safety-committee-member-brown-jan2022"],
+      "reason": "not_high_confidence_initial_only_person_match"
+    }
+  ],
+  "guard_summary": {
+    "scope": "Prepared next safe entity identity cleanup batch after identity212-214.",
+    "allowed_write": "Only this artifact was written: data/review_notes/codex-identity-batch215-prep.json.",
+    "source_of_truth_mutation": "none",
+    "commands_used": [
+      "rg read-only inspection",
+      "jq read-only inspection of data/canonical/entities.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and prior review notes",
+      "bun --eval importing validateRepo/readCanonicalRecords/identityKeysForRecord for deterministic read-only duplicate_global_identity mining",
+      "date for generated_at"
+    ],
+    "commands_not_used": [
+      "provider/external LLM commands",
+      "materialize",
+      "full validate CLI",
+      "export/generated-output commands",
+      "canonical JSONL/DB/wiki/submissions/LOG/manifest/override edits"
+    ],
+    "prior_batch_guards": [
+      "data/review_notes/codex-identity-batch212-prep.json checked",
+      "data/review_notes/codex-identity-batch213-prep.json checked",
+      "No data/review_notes/codex-identity-batch214-prep.json file was present; identity214 applied note in data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl and current override files were checked instead."
+    ],
+    "live_validation_snapshot": {
+      "duplicate_global_identity_total": 256,
+      "entity_duplicate_global_identity": 255
+    },
+    "selection_filters": [
+      "Excluded aliases already present in data/identity-overrides/merges.json.",
+      "Excluded targets that are already aliases in data/identity-overrides/merges.json.",
+      "Excluded pairs already present in data/identity-overrides/do-not-merge.json.",
+      "Excluded selected ids mentioned in identity212, identity213, or identity214 applied-note context.",
+      "Preferred exact agency/person/unit aliases with compatible entity_type and source-backed evidence refs.",
+      "Used do_not_merge only for clear role/subunit contamination or generic false positives."
+    ],
+    "candidate_count": 8,
+    "do_not_merge_count": 2,
+    "notes": "The worktree was already dirty, including source-of-truth and generated files. This prep did not revert, overwrite, materialize, validate via CLI, export, or mutate those files."
+  }
+}

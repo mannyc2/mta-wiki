@@ -1,0 +1,74 @@
+{
+  "run_id": "2026-06-10T17-48-04-786Z_1496766-71799552_ingest_2010-06-08-brt-nostrand-cb1",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-10T19:44:06.544Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "b44-limited-existing",
+        "local_observation_id": "route_b44_limited_2010_06_08",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-limited matches existing canonical record route_b44-limited; payload aligns on route_id B44, route_type limited_stop_bus, borough Brooklyn, and the registry already sources from 2010_06_08_brt_nostrand_cb1.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_08_brt_nostrand_cb1",
+            "block_id": "p008_c0002",
+            "source_quote": "B44 Limited will become SBS"
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-local-existing",
+        "local_observation_id": "route_b44_local_2010_06_08",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-local matches existing canonical record route_b44-local; payload aligns on route_id B44, route_type local_bus, borough Brooklyn, and the registry already sources from 2010_06_08_brt_nostrand_cb1.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_08_brt_nostrand_cb1",
+            "block_id": "p008_c0002",
+            "source_quote": "B44 Local will continue as before"
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-sbs-existing",
+        "local_observation_id": "route_b44_sbs_proposed_2010_06_08",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-sbs matches existing canonical record route_b44-sbs; payload aligns on route_id B44, route_type select_bus_service, borough Brooklyn, and the registry already sources from 2010_06_08_brt_nostrand_cb1.",
+        "proposed_relations": [
+          {
+            "relation_kind": "predecessor_of",
+            "subject_id": "route_b44-limited",
+            "object_id": "route_b44-sbs",
+            "description": "B44 Limited is the predecessor limited-stop service that was proposed to become B44 SBS.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_08_brt_nostrand_cb1",
+                "block_id": "p008_c0002",
+                "source_quote": "B44 Limited will become SBS"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_08_brt_nostrand_cb1",
+            "block_id": "p008_c0002",
+            "source_quote": "B44 Limited will become SBS"
+          },
+          {
+            "source_id": "2010_06_08_brt_nostrand_cb1",
+            "block_id": "p008_c0007",
+            "source_quote": "Nostrand Ave Bus Rapid Transit (BRT) route"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-43-26-094Z_1656125-2004681f_canonicalize_2026-06-10t17-48-04-786z-1496766-71799552-ingest-2010-06-08-brt-nostrand-cb1-route-identity"
+}

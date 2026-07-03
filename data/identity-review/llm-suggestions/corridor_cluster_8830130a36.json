@@ -1,0 +1,122 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:34:53.964Z",
+  "packet_path": "data/identity-review/packets/corridor_cluster_8830130a36.md",
+  "cluster_id": "corridor_cluster_8830130a36",
+  "kind": "corridor",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "corridor_cluster_8830130a36",
+    "kind": "corridor",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "corridor_brt-b82-mar2018-kings-highway",
+          "corridor_kings-highway-bay-pkwy-to-ocean-ave"
+        ],
+        "reason": "Decision test 1 (contradiction): strong identity field 'limits' differs. Record 1 has limits 'Bay Pkwy to Ocean Ave and E 23 St to Ave K'; record 2 has limits 'Bay Pkwy to Ocean Ave'. Different limits on same street and borough never merge per corridor rule."
+      },
+      {
+        "record_ids": [
+          "corridor_brt-b82-mar2018-kings-highway",
+          "corridor_kings-highway-brooklyn"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 1 has composite limits; record 3 has limits 'at E 34th Street, E 35th Street, and Avenue M' (a point, not a segment)."
+      },
+      {
+        "record_ids": [
+          "corridor_brt-b82-mar2018-kings-highway",
+          "corridor_kings-highway-e23-st-to-ave-k"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 1 has composite limits including both Bay Pkwy-Ocean Ave and E 23 St-Ave K; record 4 is only the latter segment."
+      },
+      {
+        "record_ids": [
+          "corridor_brt-b82-mar2018-kings-highway",
+          "corridor_kings-hwy-brooklyn-b82-cb11"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 1 has composite limits; record 5 has limits 'Bay Pkwy to McDonald Ave in CB 11'."
+      },
+      {
+        "record_ids": [
+          "corridor_kings-highway-bay-pkwy-to-ocean-ave",
+          "corridor_kings-highway-brooklyn"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 2 is segment 'Bay Pkwy to Ocean Ave'; record 3 is a point location at specific streets."
+      },
+      {
+        "record_ids": [
+          "corridor_kings-highway-bay-pkwy-to-ocean-ave",
+          "corridor_kings-highway-e23-st-to-ave-k"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 2 covers west segment (Bay Pkwy to Ocean Ave); record 4 covers east segment (E 23 St to Ave K). They are adjacent but distinct segments."
+      },
+      {
+        "record_ids": [
+          "corridor_kings-highway-bay-pkwy-to-ocean-ave",
+          "corridor_kings-hwy-brooklyn-b82-cb11"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 2 is 'Bay Pkwy to Ocean Ave'; record 5 is 'Bay Pkwy to McDonald Ave' – overlapping but not identical endpoint (Ocean Ave vs McDonald Ave). Different limits."
+      },
+      {
+        "record_ids": [
+          "corridor_kings-highway-brooklyn",
+          "corridor_kings-highway-e23-st-to-ave-k"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 3 is a point; record 4 is a segment."
+      },
+      {
+        "record_ids": [
+          "corridor_kings-highway-brooklyn",
+          "corridor_kings-hwy-brooklyn-b82-cb11"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 3 is a point; record 5 is a segment."
+      },
+      {
+        "record_ids": [
+          "corridor_kings-highway-e23-st-to-ave-k",
+          "corridor_kings-hwy-brooklyn-b82-cb11"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 4 is 'E 23 St to Ave K'; record 5 is 'Bay Pkwy to McDonald Ave' – different geographic coverage."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "corridor_brt-b82-mar2018-kings-highway",
+        "aliases": [
+          "corridor_kings-highway",
+          "corridor_kings-highway-southern-brooklyn"
+        ],
+        "reason": "Shared street name alias, not a strong identity match."
+      },
+      {
+        "record_id": "corridor_kings-highway-brooklyn",
+        "aliases": [
+          "corridor_kings-highway",
+          "corridor_kings-highway-corridor"
+        ],
+        "reason": "Shared street name alias, not a strong identity match."
+      },
+      {
+        "record_id": "corridor_kings-hwy-brooklyn-b82-cb11",
+        "aliases": [
+          "corridor_kings-highway",
+          "corridor_kings-highway-cb-11-brooklyn"
+        ],
+        "reason": "Shared street name alias, not a strong identity match."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "All five records are distinct corridors on Kings Highway, Brooklyn, with different limits. Per corridor merge rule (identity = street + borough + limits), differing limits force do_not_merge even when street and borough match. Each pair has explicit negative signals (different or partially different limits) and no pair shares identical limits. No merges possible."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-34-35-478Z_1282984-6e7344a4_identity-review-run_corridor-cluster-8830130a36",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-34-35-478Z_2026-06-23T14-34-35-478Z_1282984-6e7344a4_identity-review-run_corridor-cluster-8830130a36.jsonl"
+}

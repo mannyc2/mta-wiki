@@ -1,0 +1,17 @@
+{"decision_id":"relate-bus-lane-relocation-to-utica-study","verdict":"fail","failure_reason":"Cited block p007_c0005 does not state the connection between the proposed bus lane relocation and the Utica Avenue Bus Priority and Safety Study project. The connection is inferred solely from document structure (the presentation is about the study). Per review rule 'co-occurrence in a document is not a relation,' the cited block text must actually state the connection.","evidence_checked":["2012_01_24_sbs_utica_merchants#p007_c0005"]}
+{"decision_id":"relate-other-improvements-to-utica-study","verdict":"fail","failure_reason":"Cited block p010_c0004 does not state the connection between 'Other Improvements' (TSP, signal timing, left turn bays, pedestrian safety) and the Utica Avenue Bus Priority and Safety Study project. The connection is inferred from document structure only. The cited block text does not mention the study.","evidence_checked":["2012_01_24_sbs_utica_merchants#p010_c0004"]}
+{"decision_id":"rel-metric-b46-weekday-ridership","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p004_c0002"]}
+{"decision_id":"rel-metric-speeding-63-percent","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p005_c0002"]}
+{"decision_id":"rel-metric-crashes-total","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p005_c0002"]}
+{"decision_id":"rel-metric-crashes-fatalities","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p005_c0002"]}
+{"decision_id":"rel-metric-crashes-severe-injuries","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p005_c0002"]}
+{"decision_id":"rel-claim-b46-second-busiest","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p004_c0002"]}
+{"decision_id":"rel-claim-utica-no-subway","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p004_c0002"]}
+{"decision_id":"rel-claim-eastern-pkwy-transfer","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p004_c0002"]}
+{"decision_id":"rel-claim-congestion-slows-buses","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p004_c0002"]}
+{"decision_id":"rel-claim-utica-high-injury","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p005_c0002"]}
+{"decision_id":"rel-claim-congestion-eastern-pkwy","verdict":"fail","failure_reason":"Cited block p006_c0004 states only 'Traffic congestion is worst on approaches to Eastern Parkway' — it never mentions Utica Avenue or the Utica Ave corridor. The connection to corridor_utica-ave-carroll-to-church relies on slide context and a map on the same page (as the rationale itself acknowledges), which is co-occurrence in a document, not a relation stated in the block text.","evidence_checked":["2012_01_24_sbs_utica_merchants#p006_c0004"]}
+{"decision_id":"rel-event-fall-2011-cb-meeting","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p011_c0003"]}
+{"decision_id":"rel-event-winter-2012-analysis","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p011_c0003"]}
+{"decision_id":"rel-event-spring-2012-recommendations","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p011_c0003"]}
+{"decision_id":"rel-event-summer-2012-implementation","verdict":"pass","evidence_checked":["2012_01_24_sbs_utica_merchants#p011_c0003"]}

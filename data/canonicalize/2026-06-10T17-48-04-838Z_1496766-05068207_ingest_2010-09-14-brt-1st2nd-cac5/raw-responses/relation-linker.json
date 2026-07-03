@@ -1,0 +1,548 @@
+{
+  "run_id": "2026-06-10T17-48-04-838Z_1496766-05068207_ingest_2010-09-14-brt-1st2nd-cac5",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T19:50:36.664Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel_001",
+        "local_observation_id": "metric_10_miles_bus_facilities",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "metric_10-miles-bus-facilities",
+            "description": "M15 SBS project adds over 10 miles of new and improved bus facilities",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p003_c0007",
+                "source_quote": "Adds over 10 miles of new and improved bus facilities"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric describes the overall project output of the First Avenue/Second Avenue SBS project. Evidence names the project context on the same page.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p003_c0007",
+            "source_quote": "Adds over 10 miles of new and improved bus facilities"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_002",
+        "local_observation_id": "metric_sbs_peak_frequency_4_5_min",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-sbs",
+            "object_id": "metric_sbs-peak-frequency-4-5-min",
+            "description": "M15 SBS peak frequency of 4-5 minutes",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p011_c0008",
+                "source_quote": "Peak Off-peak M15 SBS 4-5 minutes 7-8 minutes"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric states the peak frequency for M15 SBS service. Evidence explicitly names M15 SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p011_c0008",
+            "source_quote": "Peak Off-peak M15 SBS 4-5 minutes 7-8 minutes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_003",
+        "local_observation_id": "metric_sbs_offpeak_frequency_7_8_min",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-sbs",
+            "object_id": "metric_sbs-offpeak-frequency-7-8-min",
+            "description": "M15 SBS off-peak frequency of 7-8 minutes",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p011_c0008",
+                "source_quote": "Peak Off-peak M15 SBS 4-5 minutes 7-8 minutes"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric states the off-peak frequency for M15 SBS service. Evidence explicitly names M15 SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p011_c0008",
+            "source_quote": "Peak Off-peak M15 SBS 4-5 minutes 7-8 minutes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_004",
+        "local_observation_id": "metric_local_peak_frequency_5_8_min",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-local-2010-09-14",
+            "object_id": "metric_local-peak-frequency-5-8-min",
+            "description": "M15 Local peak frequency of 5-8 minutes",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p011_c0008",
+                "source_quote": "M15 Local 5-8 minutes 7-9 minutes"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric states the peak frequency for M15 Local service. Evidence explicitly names M15 Local.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p011_c0008",
+            "source_quote": "M15 Local 5-8 minutes 7-9 minutes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_005",
+        "local_observation_id": "metric_local_offpeak_frequency_7_9_min",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-local-2010-09-14",
+            "object_id": "metric_local-offpeak-frequency-7-9-min",
+            "description": "M15 Local off-peak frequency of 7-9 minutes",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p011_c0008",
+                "source_quote": "M15 Local 5-8 minutes 7-9 minutes"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric states the off-peak frequency for M15 Local service. Evidence explicitly names M15 Local.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p011_c0008",
+            "source_quote": "M15 Local 5-8 minutes 7-9 minutes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_006",
+        "local_observation_id": "metric_fine_range_115_150",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "metric_fine-range-115-150",
+            "description": "Bus lane violation fines range from $115 to $150 for the M15 SBS project corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p021_c0008",
+                "source_quote": "Fines range from $115 to $150"
+              }
+            ]
+          }
+        ],
+        "rationale": "The fine amounts are presented in the Bus Lane Enforcement section of the CAC #5 presentation, which is entirely about the First/Second Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p021_c0008",
+            "source_quote": "Fines range from $115 to $150"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_007",
+        "local_observation_id": "metric_shelters_fare_machines_6_locations",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "metric_shelters-fare-machines-6-locations",
+            "description": "Shelters and fare machines installed at 6 locations as part of M15 SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p009_c0011",
+                "source_quote": "Shelters and fare machines installed at 6 locations"
+              }
+            ]
+          }
+        ],
+        "rationale": "Shelters and fare machines are infrastructure elements of the First/Second Avenue SBS project, reported in the Implementation Update section.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p009_c0011",
+            "source_quote": "Shelters and fare machines installed at 6 locations"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_008",
+        "local_observation_id": "metric_sbs_nb_hours_6am_11pm",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-sbs",
+            "object_id": "metric_sbs-nb-hours-6am-11pm",
+            "description": "M15 SBS Northbound service hours 6 am to 11 pm",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p011_c0006",
+                "source_quote": "M15 SBS Northbound 6 am to 11 pm"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric states service hours for M15 SBS Northbound. Evidence explicitly names M15 SBS Northbound.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p011_c0006",
+            "source_quote": "M15 SBS Northbound 6 am to 11 pm"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_009",
+        "local_observation_id": "metric_sbs_sb_hours_5am_10pm",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-sbs",
+            "object_id": "metric_sbs-sb-hours-5am-10pm",
+            "description": "M15 SBS Southbound service hours 5 am to 10 pm",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p011_c0006",
+                "source_quote": "M15 SBS Southbound 5 am to 10 pm"
+              }
+            ]
+          }
+        ],
+        "rationale": "The metric states service hours for M15 SBS Southbound. Evidence explicitly names M15 SBS Southbound.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p011_c0006",
+            "source_quote": "M15 SBS Southbound 5 am to 10 pm"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_010",
+        "local_observation_id": "claim_doubles_protected_bike_lanes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "claim_doubles-protected-bike-lanes",
+            "description": "First/Second Avenue SBS project doubles protected bike lanes in NYC",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p003_c0009",
+                "source_quote": "Doubles the protected bike lanes in New York City"
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim that the project doubles protected bike lanes is listed in the Overview section as a project benefit alongside the bus facilities metric.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p003_c0009",
+            "source_quote": "Doubles the protected bike lanes in New York City"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_011",
+        "local_observation_id": "claim_sbs_replaces_limited",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_m15-sbs",
+            "object_id": "claim_sbs-replaces-limited",
+            "description": "M15 SBS replaces M15 Limited service",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p010_c0006",
+                "source_quote": "M15 SBS replaces M15 Limited"
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim directly states that M15 SBS replaces M15 Limited. Evidence explicitly names M15 SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p010_c0006",
+            "source_quote": "M15 SBS replaces M15 Limited"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_012",
+        "local_observation_id": "claim_sbs_fare_equal_local",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_m15-sbs",
+            "object_id": "claim_sbs-fare-equal-local",
+            "description": "M15 SBS fare equals M15 Local bus fare",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p010_c0008",
+                "source_quote": "SBS fare = Local bus fare"
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim states SBS fare equals Local bus fare in the How SBS Works section about the M15 route. Evidence names SBS fare specifically.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p010_c0008",
+            "source_quote": "SBS fare = Local bus fare"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_013",
+        "local_observation_id": "claim_transfers_permitted_sbs_local",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_m15-sbs",
+            "object_id": "claim_transfers-permitted-sbs-local",
+            "description": "Transfers permitted between M15 SBS and M15 Local",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p010_c0009",
+                "source_quote": "Transfers permitted between"
+              },
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p010_c0010",
+                "source_quote": "SBS and Local"
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim states transfers are permitted between SBS and Local in the context of the M15 route. Evidence names SBS and Local.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p010_c0009",
+            "source_quote": "Transfers permitted between"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p010_c0010",
+            "source_quote": "SBS and Local"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_014",
+        "local_observation_id": "claim_customer_ambassadors_launch",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "claim_customer-ambassadors-launch",
+            "description": "NYCT/DOT staff at each station 16 hours a day during launch period to explain SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p016_c0006",
+                "source_quote": "NYCT/DOT staff at each station 16 hours a day during launch period to explain how to use SBS"
+              }
+            ]
+          }
+        ],
+        "rationale": "Customer Ambassadors are part of the project launch strategy described in the How SBS Works section of the CAC #5 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p016_c0006",
+            "source_quote": "NYCT/DOT staff at each station 16 hours a day during launch period to explain how to use SBS"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_015",
+        "local_observation_id": "claim_increased_police_enforcement",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "claim_increased-police-enforcement",
+            "description": "Increased police enforcement of bus lanes for M15 SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p021_c0007",
+                "source_quote": "Increased police enforcement"
+              }
+            ]
+          }
+        ],
+        "rationale": "Increased police enforcement is listed under Bus Lane Enforcement in the CAC #5 presentation, which is about the First/Second Avenue SBS project corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p021_c0007",
+            "source_quote": "Increased police enforcement"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_016",
+        "local_observation_id": "claim_monitoring_transit_traffic_safety",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "claim_monitoring-transit-traffic-safety",
+            "description": "Monitoring of transit service, traffic operations and safety for M15 SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p023_c0007",
+                "source_quote": "Monitoring of transit service, traffic operations and safety"
+              }
+            ]
+          }
+        ],
+        "rationale": "Monitoring is listed under Next Steps in the CAC #5 presentation as a planned activity after the Phase I launch of the First/Second Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p023_c0007",
+            "source_quote": "Monitoring of transit service, traffic operations and safety"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip_001",
+        "local_observation_id": "event_m15_sbs_launch_oct_10_2010",
+        "decision": "skip",
+        "rationale": "This event already has an existing has_timeline_event relation: project_first-second-ave-sbs-2010 -> event_m15-sbs-launch-oct-10-2010_2.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p003_c0006",
+            "source_quote": "M15 Select Bus Service begins: October 10, 2010"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip_002",
+        "local_observation_id": "event_cac_meeting_5_sep_22_2010",
+        "decision": "skip",
+        "rationale": "This event already has an existing has_timeline_event relation: project_first-second-ave-sbs-2010 -> event_cac-meeting-5-sep-22-2010.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p001_c0001",
+            "source_quote": "First Avenue/Second Avenue Select Bus Service Community Advisory Committee Meeting #5"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p001_c0002",
+            "source_quote": "September 22, 2010"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip_003",
+        "local_observation_id": "event_open_houses_sep_27_28_2010",
+        "decision": "skip",
+        "rationale": "This event already has an existing has_timeline_event relation: project_first-second-ave-sbs-2010 -> event_open-houses-sep-27-28-2010.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p022_c0006",
+            "source_quote": "Open Houses"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p022_c0007",
+            "source_quote": "September 27 & 28"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip_004",
+        "local_observation_id": "event_cac_6_spring_2011",
+        "decision": "skip",
+        "rationale": "This event already has an existing has_timeline_event relation: project_first-second-ave-sbs-2010 -> event_cac-6-spring-2011.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p023_c0008",
+            "source_quote": "CAC #6 - Spring 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip_005",
+        "local_observation_id": "event_video_enforcement_nov_2010",
+        "decision": "skip",
+        "rationale": "This event already has an existing has_timeline_event relation: project_first-second-ave-sbs-2010 -> event_video-enforcement-nov-2010.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p021_c0006",
+            "source_quote": "Video cameras (coming November 2010)"
+          }
+        ]
+      }
+    ],
+    "packet_id": "relation-linker"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-48-32-199Z_1665469-952c3083_canonicalize_2026-06-10t17-48-04-838z-1496766-05068207-ingest-2010-09-14-brt-1st2nd-cac5-relation-linker"
+}

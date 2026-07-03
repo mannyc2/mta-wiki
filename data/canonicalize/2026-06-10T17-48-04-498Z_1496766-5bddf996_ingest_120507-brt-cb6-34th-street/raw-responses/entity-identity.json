@@ -1,0 +1,108 @@
+{
+  "run_id": "2026-06-10T17-48-04-498Z_1496766-5bddf996_ingest_120507-brt-cb6-34th-street",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T19:17:35.999Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d01-nyct-2012-presenter",
+        "local_observation_id": "entity_nyct_2012_presenter",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct already exists in registry with matching entity_name ('MTA New York City Transit'), entity_type ('agency'), and includes source_id 120507_brt_cb6_34th_street. Observation already resolves to its canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "120507_brt_cb6_34th_street",
+            "block_id": "p001_c0003",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "d02-nyc-dot-2012-presenter",
+        "local_observation_id": "entity_nyc_dot_2012_presenter",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already exists in registry with matching entity_name ('New York City Department of Transportation'), entity_type ('agency'), and includes source_id 120507_brt_cb6_34th_street. Observation already resolves to its canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "120507_brt_cb6_34th_street",
+            "block_id": "p004_c0005",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d03-manhattan-cb6-2012",
+        "local_observation_id": "entity_manhattan_cb6_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_manhattan-community-board-6 already exists in registry with matching entity_name ('Manhattan Community Board 6'), entity_type ('community_board'), and includes source_id 120507_brt_cb6_34th_street. Observation already resolves to its canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "120507_brt_cb6_34th_street",
+            "block_id": "p001_c0001",
+            "source_quote": "34 th Street SBS Presentation to Manhattan CB 6 Transportation Committee"
+          }
+        ]
+      },
+      {
+        "decision_id": "d04-hudson-yards-dev-corp",
+        "local_observation_id": "entity_hudson_yards_development_corp",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_hudson-yards-development-corp already exists in registry with matching entity_name ('Hudson Yards Development Corporation'), entity_type ('development corporation'), and includes source_id 120507_brt_cb6_34th_street. Observation already resolves to its canonical record. Proposing same_as relation to entity_hudson-yards-dev-corp-2012 (identical name and type, both 34th St BRT context).",
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_hudson-yards-development-corp",
+            "object_id": "entity_hudson-yards-dev-corp-2012",
+            "description": "Both records represent Hudson Yards Development Corporation; appear in two different 34th Street BRT presentations (CB4 April 2012 and CB6 May 2012). Identical entity_name and entity_type, and entity_hudson-yards-dev-corp-2012 carries the alias entity_hudson-yards-development-corporation.",
+            "evidence_refs": [
+              {
+                "source_id": "120507_brt_cb6_34th_street",
+                "block_id": "p022_c0002",
+                "source_quote": "West Section – Hudson Yards Development Corporation"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "120507_brt_cb6_34th_street",
+            "block_id": "p022_c0002",
+            "source_quote": "West Section – Hudson Yards Development Corporation"
+          }
+        ]
+      },
+      {
+        "decision_id": "d05-nyc-dep-2012",
+        "local_observation_id": "entity_nyc_dep_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dep-2012 already exists in registry with matching entity_name ('New York City Department of Environmental Protection'), entity_type ('agency'), acronym ('DEP'), and includes source_id 120507_brt_cb6_34th_street. Observation already resolves to its canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "120507_brt_cb6_34th_street",
+            "block_id": "p025_c0002",
+            "source_quote": "DOT coordinated with: DEP, other city agencies, and private utilities"
+          }
+        ]
+      },
+      {
+        "decision_id": "d06-mta-2012",
+        "local_observation_id": "entity_mta_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-2012 already exists in registry with matching entity_name ('Metropolitan Transportation Authority'), entity_type ('agency'), acronym ('MTA'), and includes source_id 120507_brt_cb6_34th_street. Observation already resolves to its canonical record. Note: entity_mta-2012 is distinct from entity_mta-nyct per the existing pattern of separating parent MTA from subsidiary NYCT.",
+        "evidence_refs": [
+          {
+            "source_id": "120507_brt_cb6_34th_street",
+            "block_id": "p004_c0002",
+            "source_quote": "No additional cost to the MTA"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-462Z_1609876-f45dd8d2_canonicalize_2026-06-10t17-48-04-498z-1496766-5bddf996-ingest-120507-brt-cb6-34th-street-entity-identity"
+}

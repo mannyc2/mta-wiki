@@ -1,0 +1,80 @@
+{
+  "run_id": "2026-06-10T17-48-04-377Z_1496766-74d645bd_ingest_120418-brt-cb4-34th-street",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T19:23:50.212Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "skip-bus-lanes-34th-st",
+        "local_observation_id": "treatment_bus_lanes_34th_st",
+        "decision": "skip",
+        "evidence_refs": [
+          {
+            "block_id": "p007_c0002",
+            "source_id": "120418_brt_cb4_34th_street",
+            "source_quote": "60 ft wide section: East of Third Ave West of Ninth Ave"
+          }
+        ],
+        "rationale": "Already related: existing_relation_keys shows has_treatment project_34th-st-sbs-2012 -> treatment_bus-lanes-34th-st. The source (120418_brt_cb4_34th_street) is a 34th Street SBS presentation; block p023_c0002 confirms bus lanes are an element of this project. No new relation needed."
+      },
+      {
+        "decision_id": "skip-bus-bulbs-34th-st",
+        "local_observation_id": "treatment_bus_bulbs_34th_st",
+        "decision": "skip",
+        "evidence_refs": [
+          {
+            "block_id": "p009_c0001",
+            "source_id": "120418_brt_cb4_34th_street",
+            "source_quote": "Bus Bulb"
+          }
+        ],
+        "rationale": "Already related: existing_relation_keys shows has_treatment project_34th-st-sbs-2012 -> treatment_bus-bulbs-34th-st. Block p023_c0002 lists bus bulbs as a project element."
+      },
+      {
+        "decision_id": "skip-loading-zones-34th-st",
+        "local_observation_id": "treatment_loading_zones_34th_st",
+        "decision": "skip",
+        "evidence_refs": [
+          {
+            "block_id": "p006_c0001",
+            "source_id": "120418_brt_cb4_34th_street",
+            "source_quote": "34 th St SBS Curb Regulation Options for Loading Zones"
+          }
+        ],
+        "rationale": "Already related: existing_relation_keys shows has_treatment project_34th-st-sbs-2012 -> treatment_loading-zones-34th-st. Block p023_c0002 lists loading zones as a project element."
+      },
+      {
+        "decision_id": "skip-mta-bus-time-34th-st",
+        "local_observation_id": "treatment_mta_bus_time_34th_st",
+        "decision": "skip",
+        "evidence_refs": [
+          {
+            "block_id": "p005_c0002",
+            "source_id": "120418_brt_cb4_34th_street",
+            "source_quote": "Real time bus location information system • Implemented on M34, with expansion citywide • Information via: web, text, and smart phone • Replaces Clever Devices 34 th St. pilot project"
+          }
+        ],
+        "rationale": "Already related: existing_relation_keys shows has_treatment project_34th-st-sbs-2012 -> treatment_mta-bus-time-34th-st. MTA Bus Time is listed as implemented on M34 within the SBS presentation."
+      },
+      {
+        "decision_id": "skip-off-board-fare-34th-st",
+        "local_observation_id": "treatment_off_board_fare_collection_34th_st",
+        "decision": "skip",
+        "evidence_refs": [
+          {
+            "block_id": "p003_c0002",
+            "source_id": "120418_brt_cb4_34th_street",
+            "source_quote": "Implemented off-board fare collection"
+          }
+        ],
+        "rationale": "Already related: existing_relation_keys shows has_treatment project_34th-st-sbs-2012 -> treatment_off-board-fare-collection-34th-st. Off-board fare collection is explicitly cited as implemented for the project."
+      }
+    ],
+    "packet_id": "treatment-relations"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-544Z_1609875-25b5ab6a_canonicalize_2026-06-10t17-48-04-377z-1496766-74d645bd-ingest-120418-brt-cb4-34th-street-treatment-relations"
+}

@@ -1,0 +1,87 @@
+{
+  "run_id": "2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:57:39.471Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "bx41-sbs-2012-09-webster-new",
+        "local_observation_id": "route_bx41_sbs_2012_09_webster",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_webster-ave-sbs, which is the canonical BX41-SBS record. Registry record carries alias route_bx41-sbs-2012-09-webster and includes source 2012_09_webster_sbs_cac3_workshop. No different record to link to — this is the existing canonical home.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3_workshop",
+            "block_id": "p001_c0005",
+            "source_quote": "SBS Bus Stop with Shelter and Ticket Vending Machines"
+          },
+          {
+            "source_id": "2012_09_webster_sbs_cac3_workshop",
+            "block_id": "p002_c0005",
+            "source_quote": "SB SBS Bus Stop with Shelter and Ticket Vending Machines"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx35-2012-09-webster-new",
+        "local_observation_id": "route_bx35_2012_09_webster",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id route_bx35, which is the canonical Bx35 record. Registry record includes alias route_bx35-2012-09-webster and source 2012_09_webster_sbs_cac3_workshop. No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3_workshop",
+            "block_id": "p001_c0004",
+            "source_quote": "Existing Bus Stop for SB Bx 41 and WB Bx 35"
+          },
+          {
+            "source_id": "2012_09_webster_sbs_cac3_workshop",
+            "block_id": "p001_c0005",
+            "source_quote": "Bus Stop for Local NB Bx 41 and EB Bx 35 Routes"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx41-local-2012-09-webster-new",
+        "local_observation_id": "route_bx41_local_2012_09_webster",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id route_bx41-local-2012-09-webster, a dedicated registry record for this specific source context. Registry record carries alias route_bx41-local and includes source 2012_09_webster_sbs_cac3_workshop. Other Bx41 Local records (e.g., route_bx41-local-webster-2012, route_bx41-local-2012-10-webster) cover different time periods/sources; no evidence compels merging across source contexts.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3_workshop",
+            "block_id": "p001_c0005",
+            "source_quote": "Bus Stop for SB Local Bx 41 Route"
+          },
+          {
+            "source_id": "2012_09_webster_sbs_cac3_workshop",
+            "block_id": "p002_c0005",
+            "source_quote": "Bus Stop for Local SB Bx 41"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx55-2012-09-webster-new",
+        "local_observation_id": "route_bx55_2012_09_webster",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id route_bx55-2012-09-webster, a dedicated registry record with alias route_bx55 and source 2012_09_webster_sbs_cac3_workshop. Other Bx55 records (route_bx55-2012, route_bx55-limited-webster-2012) cover different source contexts; no evidence compels linking away from the existing dedicated record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3_workshop",
+            "block_id": "p002_c0004",
+            "source_quote": "Existing SB Bx 41 and Bx 55 Bus Stop"
+          },
+          {
+            "source_id": "2012_09_webster_sbs_cac3_workshop",
+            "block_id": "p002_c0004",
+            "source_quote": "Existing NB Bx 41 and Bx 55 Bus Stop"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-55-36-118Z_2111393-1f9f2746_canonicalize_2026-06-10t23-04-28-897z-1976810-86961af6-ingest-2012-09-webster-sbs-cac3-workshop-route-identity"
+}

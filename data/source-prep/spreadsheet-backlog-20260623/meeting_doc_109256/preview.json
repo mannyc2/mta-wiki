@@ -1,0 +1,19 @@
+{
+  "kind": "spreadsheet_preview",
+  "status": "ok",
+  "source_id": "meeting_doc_109256",
+  "run_id": "spreadsheet-backlog-20260623",
+  "generated_at": "2026-06-23T12:35:26.707Z",
+  "source_path": "raw/sources/meeting_doc_109256/source.xlsx",
+  "source_sha256": "sha256:b495c55904bd0ef3323fb2e1a042408b83c33eb43a76f071ea01567e0171bc7a",
+  "sheets": [
+    {
+      "name": "Sheet1",
+      "sheet_id": "1",
+      "path": "xl/worksheets/sheet1.xml",
+      "row_count": 0,
+      "cell_count": 0,
+      "rows": []
+    }
+  ]
+}

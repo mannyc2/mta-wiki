@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:23:11.880Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "corridor_34th_st_manhattan_20110118",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id corridor_34th-st-busway, which exists in the registry and already includes the source 20110118_34th_cac_mtg_minutes among its source_ids. The observation is already properly canonicalized under its existing record_id. Per rules, when the closest match IS the observation's own base_record_id, the decision is new — no link to a different record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0009",
+            "source_quote": "34 th Street Transitway corridor"
+          },
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p003_c0004",
+            "source_quote": "river-to-river along 34 th Street"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-22-11-499Z_2111393-46e55115_canonicalize_2026-06-10t22-56-13-249z-1976810-1c537fb6-ingest-20110118-34th-cac-mtg-minutes-corridor-identity"
+}

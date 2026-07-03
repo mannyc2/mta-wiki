@@ -1,0 +1,151 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2014-11-brt-utica-workshopsummary"
+record_kind: "source"
+display_name: "Utica Avenue Select Bus Service Workshop Summary"
+source_id: "2014_11_brt_utica_workshopsummary"
+source_ids:
+  - "2014_11_brt_utica_workshopsummary"
+local_observation_id: "source_2014_11_brt_utica_workshopsummary"
+local_observation_ids:
+  - "source_2014_11_brt_utica_workshopsummary"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-10T23:31:01.700Z"
+submission_ids:
+  - "sub_1d36bfbe8809511c"
+payload:
+  content_type: "workshop summary"
+  date_text: "November 13, 2014"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2014-11-13"
+    precision: "day"
+    raw_text: "November 13, 2014"
+  description: "Workshop summary for the Utica Avenue Select Bus Service public outreach workshop held on November 13, 2014"
+  published_date_normalized: "2014-11-13"
+  published_date_precision: "day"
+  publisher: "New York City Transit"
+  title: "Utica Avenue Select Bus Service Workshop Summary"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "2014_11_brt_utica_workshopsummary#p001_c0001"
+    page_number: 1
+    source_id: "2014_11_brt_utica_workshopsummary"
+    source_path: "raw/sources/2014_11_brt_utica_workshopsummary/blocks.jsonl"
+    text_sha256: "sha256:f39796e8afef7ae8d85a79c2dc8eb3d984bceef60ac5b08a756f1518827ddb9c"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0001"
+    evidence_id: "2014_11_brt_utica_workshopsummary#p002_c0001"
+    page_number: 2
+    source_id: "2014_11_brt_utica_workshopsummary"
+    source_path: "raw/sources/2014_11_brt_utica_workshopsummary/blocks.jsonl"
+    text_sha256: "sha256:5ba5dc60ada201ca68131890ef31b667c020a099ad0da03e5e74c43003f6e1d7"
+    text_source: "raw_text"
+---
+
+# Download the presentation (pdf)
+
+source_id: 2014_11_brt_utica_workshopsummary
+citation: cite block ids exactly as shown in square brackets
+document: 80 block(s)
+
+## Page 1
+
+### [p001_c0001] Utica Avenue Select Bus Service
+[p001_c0002] Workshop Summary | November 13, 2014
+[p001_c0003] New York City Transit
+[p001_c0004] +selectbuservice Utica Avenue
+
+## Page 2
+
+[p002_c0001] On November 13, 2014, the New York City Department of Transportation (DOT) and the Metropolitan Transportation Authority (MTA) kicked off the public outreach process for the Utica Avenue Select Bus Service (SBS) project. The MTA and DOT hosted a public workshop at PS 167 on Eastern Parkway to gather initial feedback from community members on plans to upgrade the B46 limited bus to Select Bus Service. The project aims to improve bus service while maintaining traffic flow and curb access and to increase safety for all users along the Utica Avenue corridor in Brooklyn.
+[p002_c0002] The workshop brought together community members, bus riders, transit advocates, representatives from elected offices, community boards, and police precincts to share their experiences as transit riders, drivers, and pedestrians traveling along the Utica Avenue corridor. The workshop consisted of three parts: 1) a presentation about Select Bus Service and related improvements on the corridor; 2) a travel discussion where participants shared their travel patterns, preferences, and decision-making processes; and 3) a mapping exercise where participants discussed concerns at specific intersections regarding transit, traffic, and safety.
+### [p002_c0003] 1) Select Bus Service Presentation
+[p002_c0004] DOT and MTA staff opened the workshop with a presentation, which included an overview of New York City's Select Bus Service program, preliminary data and analysis on the existing conditions along Utica Avenue, and an overview of the bus and safety improvements implemented by DOT in August 2014.
+### [p002_c0005] An overview of Select Bus Service
+[p002_c0006] Select Bus Service is New York City's version of Bus Rapid Transit: an improved bus service that offers fast, frequent, and reliable service on high-ridership bus routes. Select Bus Service brings quick and cost-effective improvements to New York City's transit network, benefitting the entire city through faster, more reliable bus service, safer streets, and improved roadway organization.
+[p002_c0007] The Select Bus Service program utilizes a toolbox of techniques and technologies including dedicated bus lanes, off-board fare collection, and
+[p002_c0008] transit signal priority to improve the quality and performance of transit and, in turn, to improve mobility and access in the neighborhoods that it serves. SBS projects are designed to make it easier, safer, and more comfortable to travel by bus, through features like bus bulbs, high-quality passenger information, and overall attention to pedestrian and vehicular safety.
+### [p002_c0009] Utica Avenue Select Bus Service
+[p002_c0010] During the 2009 Bus Rapid Transit Phase II Study, Brooklyn community members identified Utica Avenue as a corridor that could support and benefit from a Select Bus Service project. Sixty-one percent of residents along the corridor commute to work on public transit. However, the route is characterized by slow and crowded bus trips. The community ranked the Utica Avenue B46 corridor as one of two corridors most in need of improvements.
+> [p002_c0011] MODE TO WORK Mode Percentage Transit 61% Driving 24% Walk / Bicycle 10% Other 5%
+[p002_c0012] The most frequent bus route in New York City, the B46 carries nearly 50,000 passengers every day, making it the second-busiest bus route. It provides crucial connections to 30 bus routes and the 3 4 A C subway lines. Notably, the transfer between the B35 and B46 is the most frequently used bus-to-bus transfer in the five boroughs. The corridor also has one of the highest rates of injuries from motor vehicle crashes in Brooklyn. Data analysis revealed intersections where speeding and safety are considerable concerns. Crash data pinpointed six high-crash intersections along the route, where motor vehicle crashes occurred between 2008 and 2012: Avenue U, Flushing Avenue, Eastern Parkway, Avenue H, Winthrop Street, and Myrtle Avenue.
+[p002_c0013] _New York City Transit_
+[p002_c0014] _+selectbuservice Utica Avenue_
+
+## Page 3
+
+### [p003_c0001] 2014 Bus Priority and Safety Improvements
+[p003_c0002] DOT began to implement improvements to the corridor in August 2014 in preparation for the Select Bus Service project. DOT implemented 1.3 miles of offset and curbside bus lanes on Utica Avenue between St. John's Place and Church Avenue. Left-turn bays were added at certain intersections and left-turn bans at others to improve pedestrian safety and traffic flow, and new loading zones were added to accommodate businesses. In the sections where bus lanes were installed, B46 limited and local bus travel times have decreased by 8-15 percent. Vehicle travel times have decreased by 20-25 percent during AM and PM peak periods. Download the full presentation (pdf).
+### [p003_c0003] 2) Breakout Session: Travel Patterns
+[p003_c0004] After the SBS presentation, attendees gathered in small groups where they discussed how they travel along the corridor, their transit preferences, and their experiences as pedestrians, bus riders, cyclists, and drivers. Participants were asked to answer five questions:
+- [p003_c0005] 1. What modes of transportation do you take to get to your daily destinations? 2. What are some of the pros and cons of the modes of travel that you take? 3. What factors affect your decision to take public transit versus another mode?
+- [p003_c0006] 4. If the B46 was faster, more reliable, or less crowded, would you take it more? 5. What are some of the challenges you face as a driver/pedestrian/cyclist on Utica Avenue?
+[p003_c0007] The following is a summary of the comments shared related to each question:
+### [p003_c0008] Daily Mode of Transportation
+- [p003_c0009] • In Brooklyn, participants primarily traveled by bus ◦ Most-taken routes: B46 and B69 ◦ Participants also took the B45, B48, B68, B41, S79, and B62 ◦ S79 Brooklyn to Staten Island on Saturdays • To/from Manhattan, participants primarily traveled by subway ◦ Many took A C 3 4 trains ◦ A few took Franklin Shuttle and the F • Most residents also walked • A few participants had cars and drove • A few participants took cabs or dollar vans
+### [p003_c0010] Pros of Traveling via Bus and Subway
+- [p003_c0011] • Convenient, easy, frequent service • Faster to take transit • Low cost • "MTA goes my way"- only choice • Bus to subway transfers are important • Bus and subway travel to a variety of places • Keep new offset bus lanes on Utica Ave
+[p003_c0012] _New York City Transit_
+[p003_c0013] _+selectbuservice Utica Avenue_
+
+## Page 4
+
+### [p004_c0001] Cons of Traveling via Bus and Subway
+- [p004_c0002] • Poor reliability (delays in bus reaching the bus stop) • Bus bunching (multiple of the same bus coming at once) • Long waits – sometimes 20 minutes – if missed bus • Overcrowding, B46 very crowded during rush hour • Not enough space for wheelchairs or strollers • Not enough buses, need more buses/ articulated buses • Long waits for Williamsburg buses, need more buses and SBS to Williamsburg • Need more limited buses to DeKalb than to Williamsburg • Local buses need improvements • Lack of real-time information
+### [p004_c0003] Decision-making factors
+- [p004_c0004] • Can't afford taxi or car • Transit is easy and fast • Take bus to protect hips/legs from climbing stairs; use subway for long distances • No options other than public transportation • Subway is more convenient than driving
+- [p004_c0005] • Drive on weekends • If less crowded, would take bus more • Time, money
+### [p004_c0006] If B46 were to improve, would you travel more?
+- [p004_c0007] • Yes, if it ran more often • Yes, would shorten my commute • Yes, would stay on and take it longer • Could get to destination faster (since traffic is very bad now) • No, would only take the B46 as much as he/ she does now • Would take more if crowding improved and there were articulated buses
+### [p004_c0008] Challenges Faced on Utica Avenue
+- [p004_c0009] • Very dark at night – bus stops should be better lit • Long crossing distances along southern end of the corridor • Need longer walk time • Double/triple parking, especially between Linden Avenue and Snyder Avenue • Sidewalks need to be widened
+### [p004_c0010] 3) Breakout Session: Mapping Exercise
+[p004_c0011] The second breakout activity focused on street level issues. Participants were asked to share their specific concerns regarding transit, traffic, and safety at major intersections along the corridor. On large maps, participants identified issues of concern in their neighborhoods.
+### [p004_c0012] Utica Av/Fulton St
+- [p004_c0013] • Drivers act recklessly • Higher ADA usage due to new elevators, may increase bus use and sidewalk congestion • School crossing – need better signage
+### [p004_c0014] Utica Av/Kings Highway
+- [p004_c0015] • B46 stops are too close together • Long bus stop near KFC, request for limited/ SBS stop near KFC • Limited and local bus stops should be at the same place and not too far apart • Safety issues at this intersection • Pedestrian safety is an issue at Avenue H • Unsafe drivers, drivers speed, act recklessly when trying to get into KFC
+[p004_c0016] _New York City Transit_
+[p004_c0017] _+selectbuservice Utica Avenue_
+[p004_c0018] _NEW YORK CITY_
+
+## Page 5
+
+- [p005_c0001] • Bus delays and bunching • Difficult to cross street, sidewalks crowded, especially around places selling food • Need more crosswalk time • Long wait and distance to cross (for pedestrians) • Take B103 or B6 limited
+### [p005_c0002] Utica Av/Flatlands Av
+- [p005_c0003] • Long wait for B82 • Request to have B46 fall in line with B82 schedule • B82 bus stop at triangle in intersection is too short • Helpful to extend as a bus bulb • Improve pedestrian safety • Not enough time to cross (for pedestrians) • Failure to yield to pedestrians • Long wait and distance to cross
+### [p005_c0004] Utica Av/Flatbush Av
+- [p005_c0005] • Heavy traffic, bus delays • Utica bus stop too close to gas station • Pedestrian crossings - long and dangerous • Dangerous where Utica curves - remove bus stop, it's close enough to Fillmore stop • Fillmore/Utica - make SBS stop. Not at intersection with Flatbush • Southbound wait at Fillmore light is too long • Delay due to bus operator changes at depot • Drivers speed (safety issue) • Commercial 18-wheelers issue • Lights too long • Not enough time to cross (for pedestrians) • Failure to yield to pedestrians • Long wait to cross (for pedestrians)
+### [p005_c0006] Utica/Eastern Parkway
+- [p005_c0007] • Dangerous - for everyone (jaywalking, run red lights, etc.) • Slow speed of traffic • Buses hurt commercial activity at President • ADA issues at Utica station - heavy congestion • Motorized chairs heading to Utica from station's elevator • Selling swipes / MetroCard machine not working • Jaywalking and fast drivers • Dollar vans drive very fast, act crazy
+- [p005_c0008] • Need cameras at stations to watch for theft at Eastern Parkway • Sidewalks on Utica at Eastern Parkway and Union are too crowded
+### [p005_c0009] Northern corridor
+- [p005_c0010] • Buses are packed at DeKalb stop for people needing to go to Williamsburg • Traffic is slow towards bridge • Disorderly/assaults north of Eastern Pkwy • Crowded! • Need to train drivers more carefully at Williamsburg terminal
+### [p005_c0011] Utica/Gates Avenue
+- [p005_c0012] • 8 minute wait before it leaves • Senior housing area - consider mobility issues at that intersection
+### [p005_c0013] Utica/Empire
+- [p005_c0014] • Difficulty crossing • Lots of bus connections • Crowded intersection • Move SBS closer to Montgomery Street • Need to walk to St. John's or take bus just to get on a less crowded bus ○ Need connection to B45
+[p005_c0015] _MTA New York City Transit_
+[p005_c0016] _+selectbuservice Utica Avenue_
+[p005_c0017] _NEW YORK CITY DOT_
+
+## Page 6
+
+### [p006_c0001] Sterling/St. John's
+- [p006_c0002] • Too long of a walk to Fulton • Keep St. John's stop - too far without • Don't eliminate B45 connection at St. John's
+### [p006_c0003] Feedback on Nostrand
+- [p006_c0004] • SBS made Nostrand/Rogers Avs worse for drivers, riders, pedestrians • Had to walk an extra 6 minutes to the nearest stop • Didn't save time because walk was longer • Service improved when limited stops were added back
+### [p006_c0005] SBS Fare Collection
+- [p006_c0006] • Easy to use, speeds up trip • Difficult to navigate • Confusing, so try to avoid • Turned-off by system because don't know how to use
+### [p006_c0007] General Feedback
+- [p006_c0008] • More Eagle Team needed on SBS • Not too crowded after hours • DeKalb subway station exit is closed ◦ Instead, must walk to Myrtle Ave to take the M to Williamsburg if the bus is too crowded or not coming • Need an elevator fan at Eastern Parkway – can't breathe and it becomes a safety issue • Flatbush B82 stop too small, need bus bulb • Don't have SBS terminate at DeKalb (then must walk to Myrtle) • Add articulated buses on the B41 (LCL, LTD) and B46 (LCL, SBS) in the future. They're the busiest bus routes in Brooklyn. • Bring back the B23 and have it extended to Bergen Beach: Veterans Avenue. Give to Flatbush Depot. • Add SBS stop at Dean or Bergen to serve connection to B65 and B15 and to reduce existing 10 block distance between limited stops at Fulton and St John's - important connections to Downtown Brooklyn
+### [p006_c0009] What's next?
+[p006_c0010] The MTA and DOT will use the feedback gathered at the public work to help shape how Select Bus Service is implemented on Utica Avenue. The project team will continue to collect and analyze data and will begin initial planning for the Utica Avenue SBS route in consultation with the Community Advisory Committee, community boards, and the public. The project team will share information with the community at future workshops and presentations.
+### [p006_c0011] Stay in touch!
+[p006_c0012] For more information, please visit us at www.nyc.gov/brt or contact Krystin Hence, NYCDOT Outreach Coordinator, at brt@nyc.dot.gov or (212) 839-6684.
+[p006_c0013] _New York City Transit_
+[p006_c0014] _+selectbuservice Utica Avenue_

@@ -1,0 +1,5745 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-180056"
+record_kind: "source"
+display_name: "MTA 2026 Preliminary Budget, Vol 2"
+source_id: "meeting_doc_180056"
+source_ids:
+  - "meeting_doc_180056"
+local_observation_id: "source_meeting_doc_180056"
+local_observation_ids:
+  - "source_meeting_doc_180056"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T20:16:26.662Z"
+submission_ids:
+  - "sub_7bb3d096062f9805"
+payload:
+  authority_tier: "plan_document"
+  content_type: "budget report"
+  date_text: "July 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-07"
+    precision: "month"
+    raw_text: "July 2025"
+  description: "Volume 2 of the MTA 2026 Preliminary Budget and July Financial Plan 2026-2029, containing MTA-Consolidated detailed financial and position schedules, Agency sections with supporting baseline tables, and MTA Capital Program information."
+  published_date_normalized: "2025-07"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "MTA 2026 Preliminary Budget"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_180056#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_180056"
+    source_path: "raw/sources/meeting_doc_180056/blocks.jsonl"
+    text_sha256: "sha256:653c78eba9be1f0480b89ce37e64daf9d4c618b2e8999b141281ce62d411d624"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_180056#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_180056"
+    source_path: "raw/sources/meeting_doc_180056/blocks.jsonl"
+    text_sha256: "sha256:ad73b93fb91b82f46ce012d87f6073952d0359b66ba3e948a053a58bcc2ad041"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_180056#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_180056"
+    source_path: "raw/sources/meeting_doc_180056/blocks.jsonl"
+    text_sha256: "sha256:8fb536344acb3dbc29db6f20661384feac3357a8719f150128ad5d9d1a9ea1bf"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0006"
+    evidence_id: "meeting_doc_180056#p001_c0006"
+    page_number: 1
+    source_id: "meeting_doc_180056"
+    source_path: "raw/sources/meeting_doc_180056/blocks.jsonl"
+    text_sha256: "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0005"
+    evidence_id: "meeting_doc_180056#p002_c0005"
+    page_number: 2
+    source_id: "meeting_doc_180056"
+    source_path: "raw/sources/meeting_doc_180056/blocks.jsonl"
+    text_sha256: "sha256:db5467e22e9075a46d2a1beed530fd8de3d3a8ccb8d310d2ee8ffb9cb603bbc2"
+    text_source: "raw_text"
+---
+
+# MTA 2026 Preliminary Budget, Vol 2
+
+source_id: meeting_doc_180056
+citation: cite block ids exactly as shown in square brackets
+document: 2829 block(s)
+
+## Page 1
+
+### [p001_c0001] MTA 2026 Preliminary Budget
+[p001_c0002] July Financial Plan 2026 – 2029
+> [p001_c0003] A collage of various Metropolitan Transportation Authority (MTA) transportation modes. In the foreground, there are two blue and white buses and a yellow and blue subway train. Behind them, a silver and blue commuter train is visible. In the background, the Manhattan skyline with the Empire State Building and other skyscrapers is shown, along with the Brooklyn Bridge. A purple circular logo with the white letters 'MTA' is positioned in the center of the collage.
+[p001_c0004] Volume 2 July 2025
+> [p001_c0005] The Metropolitan Transportation Authority (MTA) logo, which consists of the letters 'MTA' in white inside a blue circle.
+[p001_c0006] Metropolitan Transportation Authority
+
+## Page 2
+
+### [p002_c0001] OVERVIEW
+### [p002_c0002] MTA 2026 Preliminary Budget July Financial Plan 2026-2029 Volume 2
+[p002_c0003] The MTA's July Plan is divided into two volumes:
+[p002_c0004] Volume 1 consists of financial schedules supporting the complete MTA Consolidated Financial Plan, including an Executive Summary, the baseline forecast (as detailed in Volume 2 and described below) and certain adjustments captured below the baseline. These "below-the-line" adjustments include: Fare and Toll Increases, MTA Initiatives, Management and Policy Actions, and Other items. Volume 1 also includes descriptions of the "below-the-line" actions as well as the required Certification by the Chair/CEO, and a description of the MTA Budget Process.
+[p002_c0005] Volume 2 includes MTA-Consolidated detailed financial and position schedules as well as the narratives that support the baseline projections included in the 2026 Preliminary Budget and the Financial Plan for 2026 through 2029. Also included are the Agency sections which incorporate descriptions of Agency Programs with supporting baseline tables and required information related to the MTA Capital Program.
+
+## Page 3
+
+### [p003_c0001] TABLE OF CONTENTS VOLUME 2
+### [p003_c0002] I. MTA Consolidated Financial Plan
+[p003_c0003] Where the Dollars Come From and Where the Dollars Go..... I-1 Financial Plan: Statement of Operations ..... I-2 Financial Plan: Cash Statements..... I-4 Reconciliation to Prior Plan..... I-6 Farebox Recovery and Operating Ratios..... I-7
+### [p003_c0004] II. Major Assumptions
+[p003_c0005] Agency Baseline Assumptions..... II-1 Subsidies..... II-33 Debt Service..... II-73 Debt Service Affordability Statement..... II-81 Positions (Headcount)..... II-87
+### [p003_c0006] III. Other MTA Consolidated Materials
+[p003_c0007] Consolidated Statements of Operations by Category: Accrued, Cash, and Cash Conversion Detail..... III-1 Year-to-Year Changes by Category..... III-6 Non-Recurring Revenues and Savings, and MTA Reserves..... III-7
+### [p003_c0008] IV. MTA Capital Program Information
+[p003_c0009] Commitment Goals by Agency..... IV-1 Completions by Agency..... IV-14 Operating Impacts Exceeding $1 Million..... IV-27
+
+## Page 4
+
+### [p004_c0001] V. Agency Financial Plans
+[p004_c0002] Bridges and Tunnels..... V-1 Construction & Development..... V-29 Long Island Rail Road..... V-53 MTA Grand Central Madison Operating Company (GCMOC)..... V-83 Metro-North Railroad..... V-105 MTA Headquarters and Inspector General..... V-135 First Mutual Transportation Assurance Co. (FMTAC)..... V-169 New York City Transit..... V-181 MTA Bus Company..... V-209 Staten Island Railway..... V-235
+
+## Page 5
+
+### [p005_c0001] I. MTA Consolidated Financial Plan
+
+## Page 6
+
+### [p006_c0001] MTA 2026 Preliminary Budget Baseline Revenue and Expenses Before Below-the-Line Adjustments Non-Reimbursable
+### [p006_c0002] Where the Dollars Come From ...
+> [p006_c0003] Revenue Source Data Revenue Source Percentage Dedicated Taxes 44% Farebox Revenue 26% Toll Revenue 13% Other Revenue 6% State/Local and Other 5% Other Funding Agreements 5% Other 1%
+[p006_c0004]
+
+```text
+By Revenue Source ($ in millions) Farebox Revenue $5,326 Toll Revenue 2,611 Other Revenue 1,158 Dedicated Taxes 9,156 State/Local and Other 1,112 Other Funding Agreements 1,046 Other 1 265 Total 2 $20,675
+```
+### [p006_c0005] Where the Dollars Go ...
+### [p006_c0006] By Expense Category
+> [p006_c0007] Expense Category Data Expense Category Percentage Payroll 31% Debt Service 14% Non-Labor + Other Exp Adj 24% Pension 8% Other Labor 3% Overtime 4%
+[p006_c0008]
+
+```text
+By Expense Category 3 ($ in millions) Payroll $6,651 Overtime 879 Health & Welfare 3,107 Pension 1,686 Other Labor 665 Total Labor $12,987 Non-Labor + Other Exp Adj 5,367 Debt Service 2,950 Total 2 $21,304
+```
+### [p006_c0009] By MTA Agency
+> [p006_c0010] MTA Agency Expense Data MTA Agency Percentage NYCT/SIR 54% LIRR 10% MNR 8% HQ/FMTAC/C&D 6% MTABC 5% B&T 2% MTA General Reserve 1% GCMOC <1%
+[p006_c0011]
+
+```text
+By MTA Agency 3 ($ in millions) NYCT/SIR $11,422 LIRR 2,166 GCMOC 98 MNR 1,721 MTABC 1,019 HQ/FMTAC/C&D 1,182 B&T 512 Debt Service 2,950 MTA Gen'l Res & Other Exp 234 Total 2 $21,304
+```
+[p006_c0012] Note: The revenues and expenses reflected in these charts are on an accrued basis.
+[p006_c0013] _1 Includes cash adjustments and prior-year carryover._
+[p006_c0014] _2 Totals may not add due to rounding._
+[p006_c0015] _3 Expenses exclude Non-Cash Liabilities._
+[p006_c0016] _I-1_
+
+## Page 7
+
+### [p007_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026 - 2029 MTA Consolidated Accrued Statement of Operations By Category ($ in millions)
+[p007_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenues Farebox Revenue $4,997 $5,241 $5,326 $5,411 $5,475 $5,490 Toll Revenue 2,572 2,585 2,611 2,637 2,654 2,666 Other Revenue 3,352 2,631 1,158 1,200 1,339 1,394 Capital and Other Reimbursements 0 0 0 0 0 0 Total Revenues $10,920 $10,457 $9,094 $9,248 $9,469 $9,549 Operating Expenses Labor: Payroll $6,075 $6,506 $6,651 $6,800 $6,947 $7,095 Overtime 1,107 890 879 900 907 920 Health and Welfare 1,719 1,966 2,114 2,257 2,417 2,593 OPEB Current Payments 856 921 993 1,072 1,159 1,252 Pension 1,421 1,575 1,686 1,730 1,747 1,767 Other Fringe Benefits 967 1,143 1,189 1,258 1,313 1,369 Reimbursable Overhead (553) (509) (524) (503) (507) (517) Total Labor Expenses $11,593 $12,492 $12,987 $13,514 $13,983 $14,480 Non-Labor: Electric Power $531 $628 $641 $646 $679 $713 Fuel 205 198 202 201 202 209 Insurance 8 15 38 38 50 65 Claims 1,160 424 440 452 465 473 Paratransit Service Contracts 617 765 874 948 999 1,057 Maintenance and Other Operating Contracts 1,000 1,066 1,036 1,053 1,060 1,083 Professional Services Contracts 655 892 805 831 788 780 Materials and Supplies 645 738 803 899 953 1,005 Other Business Expenses 304 302 304 312 339 339 Total Non-Labor Expenses $5,126 $5,027 $5,143 $5,380 $5,536 $5,724 Other Expense Adjustments: Other $14 $16 $14 $14 $14 $15 General Reserve 195 200 210 220 230 240 Total Other Expense Adjustments $209 $216 $224 $234 $244 $255 Total Expenses Before Non-Cash Liability Adjs. $16,928 $17,734 $18,354 $19,128 $19,764 $20,459 Depreciation $3,799 $3,912 $3,900 $3,928 $3,963 $4,011 GASB 49 Environmental Remediation 52 6 6 6 6 6 GASB 68 Pension Expense Adjustment (35) (36) (119) (58) (219) (219) GASB 75 OPEB Expense Adjustment 389 580 591 602 614 626 GASB 87 Lease Adjustment 39 43 38 38 38 38 GASB 96 SBITA Adjustment 2 16 15 15 15 15 Total Non-Cash Liability Adjustments $4,247 $4,522 $4,432 $4,533 $4,417 $4,478 Total Expenses After Non-Cash Liability Adjs. $21,175 $22,256 $22,786 $23,661 $24,181 $24,937 Conversion to Cash Basis: Non-Cash Liability Adjs. ($4,247) ($4,522) ($4,432) ($4,533) ($4,417) ($4,478) Debt Service 2,860 2,497 2,950 3,271 3,431 3,610 Total Expenses with Debt Service $19,788 $20,231 $21,304 $22,399 $23,196 $24,069 Dedicated Taxes & State and Local Subsidies $9,930 $10,440 $11,315 $11,680 $11,939 $11,740 Net Surplus/(Deficit) After Subsidies and Debt Service $1,062 $665 ($895) ($1,472) ($1,788) ($2,781) Conversion to Cash Basis: GASB Account $0 $0 $0 $0 $0 $0 Conversion to Cash Basis: All Other (1,062) (965) 265 514 764 1,404 Cash Balance Before Prior-Year Carryover $0 ($300) ($630) ($957) ($1,025) ($1,377)
+```
+[p007_c0003] _I-2_
+
+## Page 8
+
+### [p008_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026 - 2029 Accrued Statement of Operations by Agency ($ in millions)
+[p008_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable Total Revenues New York City Transit $6,661 $6,090 $4,695 $4,802 $4,989 $5,040 Bridges and Tunnels 2,599 2,612 2,638 2,664 2,681 2,693 Long Island Rail Road 696 739 735 735 738 742 Grand Central Madison 1 0 0 1 2 2 Metro-North Railroad 673 714 719 729 738 751 MTA Headquarters 55 49 49 51 51 51 MTA Bus Company 197 212 219 226 229 229 Staten Island Railway 6 6 5 5 5 6 First Mutual Transportation Assurance Company 32 34 35 35 36 36 Construction and Development 0 0 0 0 0 0 Total $10,920 $10,457 $9,094 $9,248 $9,469 $9,549 Total Expenses before Non-Cash Liability Adjs.* New York City Transit $10,461 $10,921 $11,339 $11,795 $12,205 $12,706 Bridges and Tunnels 511 512 512 511 499 486 Long Island Rail Road 1,891 2,061 2,166 2,345 2,437 2,507 Grand Central Madison 99 96 98 101 104 108 Metro-North Railroad 1,609 1,670 1,721 1,796 1,872 1,945 MTA Headquarters 1,034 1,231 1,209 1,241 1,271 1,281 MTA Bus Company 924 971 1,019 1,038 1,054 1,080 Staten Island Railway 78 90 83 82 81 82 First Mutual Transportation Assurance Company 115 (44) (27) (25) (15) (2) Construction and Development 0 0 0 0 0 0 Other 207 226 234 244 255 266 Total $16,928 $17,734 $18,354 $19,128 $19,764 $20,459 Depreciation New York City Transit $2,244 $2,413 $2,437 $2,437 $2,437 $2,437 Bridges and Tunnels 228 221 225 229 232 237 Long Island Rail Road 563 563 548 554 559 565 Grand Central Madison 209 204 201 201 201 201 Metro-North Railroad 352 341 354 373 398 436 MTA Headquarters 112 80 46 46 46 46 MTA Bus Company 65 72 72 72 72 72 Staten Island Railway 25 18 18 18 18 18 First Mutual Transportation Assurance Company 0 0 0 0 0 0 Construction and Development 0 0 0 0 0 0 Total $3,799 $3,912 $3,900 $3,928 $3,963 $4,011 GASB Adjustments New York City Transit $179 $138 $138 $138 $138 $138 Bridges and Tunnels 9 (1) (3) (3) 0 5 Long Island Rail Road (33) 44 (2) 35 (60) (61) Grand Central Madison 0 0 0 0 0 0 Metro-North Railroad 30 94 74 102 40 42 MTA Headquarters 235 256 247 262 242 249 MTA Bus Company 24 74 72 63 91 89 Staten Island Railway 3 6 6 8 4 4 First Mutual Transportation Assurance Company 0 0 0 0 0 0 Construction and Development 0 0 0 0 0 0 Total $448 $610 $532 $605 $454 $466 Net Surplus/(Deficit) New York City Transit ($6,223) ($7,383) ($9,219) ($9,568) ($9,791) ($10,241) Bridges and Tunnels 1,851 1,880 1,904 1,927 1,950 1,964 Long Island Rail Road (1,725) (1,928) (1,977) (2,198) (2,198) (2,270) Grand Central Madison (308) (299) (299) (301) (303) (306) Metro-North Railroad (1,318) (1,390) (1,430) (1,542) (1,572) (1,673) MTA Headquarters (1,326) (1,518) (1,453) (1,498) (1,508) (1,526) MTA Bus Company (816) (905) (944) (947) (989) (1,011) Staten Island Railway (100) (107) (101) (102) (97) (98) First Mutual Transportation Assurance Company (83) 77 61 61 51 39 Construction and Development 0 0 0 0 0 0 Other (207) (226) (234) (244) (255) (266) Total ($10,255) ($11,799) ($13,692) ($14,413) ($14,712) ($15,388)
+```
+[p008_c0003] Note: * Excludes Debt Service
+[p008_c0004] _I-3_
+
+## Page 9
+
+### [p009_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+### [p009_c0002] July Financial Plan 2026 - 2029
+### [p009_c0003] Cash Receipts and Expenditures
+[p009_c0004] ($ in millions)
+[p009_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $4,891 $5,262 $5,313 $5,398 $5,461 $5,475 Other Revenue 1,237 1,494 1,235 1,221 1,344 1,399 Capital and Other Reimbursements 2,245 2,662 2,704 2,570 2,560 2,529 Total Receipts $8,373 $9,419 $9,253 $9,189 $9,365 $9,403 Expenditures Labor: Payroll $6,605 $7,487 $7,387 $7,499 $7,646 $7,829 Overtime 1,361 1,109 1,098 1,119 1,134 1,158 Health and Welfare 1,810 2,070 2,184 2,329 2,492 2,672 OPEB Current Payments 832 902 972 1,050 1,136 1,228 Pension 1,468 1,048 1,783 1,827 1,848 1,875 Other Fringe Benefits 1,126 1,199 1,192 1,228 1,267 1,311 Contribution to GASB Fund 0 0 0 0 0 0 Reimbursable Overhead 0 0 0 0 0 0 Total Labor Expenditures $13,202 $13,815 $14,617 $15,052 $15,522 $16,073 Non-Labor: Electric Power $545 $637 $647 $651 $683 $717 Fuel 203 196 200 199 200 207 Insurance 51 20 40 37 51 67 Claims 454 402 330 334 338 340 Paratransit Service Contracts 600 763 872 946 997 1,055 Maintenance and Other Operating Contracts 963 1,098 955 953 960 988 Professional Services Contracts 759 1,063 956 906 863 849 Materials and Supplies 895 857 916 987 1,051 1,101 Other Business Expenses 258 283 306 302 313 307 Total Non-Labor Expenditures $4,728 $5,319 $5,223 $5,315 $5,457 $5,631 Other Expenditure Adjustments: Other $25 $196 $152 $129 $117 $114 General Reserve 195 200 210 220 230 240 Total Other Expenditure Adjustments $220 $396 $362 $349 $347 $354 Total Expenditures $18,150 $19,530 $20,202 $20,715 $21,326 $22,058 Net Cash Balance before Subsidies and Debt Service ($9,777) ($10,111) ($10,950) ($11,526) ($11,961) ($12,654) Dedicated Taxes & State and Local Subsidies $12,009 $11,549 $12,424 $12,937 $13,372 $13,906 Debt Service (2,232) (1,738) (2,104) (2,368) (2,436) (2,629) Cash Balance Before Prior-Year Carryover $0 ($300) ($629) ($957) ($1,025) ($1,377)
+```
+[p009_c0006] _I-4_
+
+## Page 10
+
+### [p010_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+[p010_c0002] July Financial Plan 2026 - 2029
+### [p010_c0003] Consolidated Cash Statement of Operations By Agency
+[p010_c0004] ($ in millions)
+[p010_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Total Receipts New York City Transit $5,542 $6,262 $6,224 $6,292 $6,447 $6,452 Long Island Rail Road 1,189 1,164 1,154 1,162 1,171 1,184 Grand Central Madison 1 0 0 1 2 2 Metro-North Railroad 985 1,095 1,133 1,035 1,037 1,051 MTA Headquarters 233 221 210 211 215 217 Construction & Development 19 188 200 210 210 214 First Mutual Transportation Assurance Company 32 34 35 35 36 36 MTA Bus Company 347 441 284 234 237 237 Staten Island Railway 25 14 13 10 10 10 Total $8,373 $9,419 $9,253 $9,189 $9,365 $9,403 Total Expenditures New York City Transit $11,128 $12,117 $12,388 $12,763 $13,151 $13,675 Long Island Rail Road 2,361 2,312 2,574 2,753 2,861 2,941 Grand Central Madison 93 125 98 101 104 108 Metro-North Railroad 2,001 2,072 2,211 2,133 2,200 2,271 MTA Headquarters 1,275 1,378 1,383 1,383 1,402 1,410 Construction & Development 140 188 200 210 210 214 First Mutual Transportation Assurance Company 32 34 35 35 36 36 MTA Bus Company 844 986 987 1,006 1,022 1,047 Staten Island Railway 68 97 89 84 83 84 Other 209 223 237 246 256 272 Total $18,150 $19,530 $20,202 $20,715 $21,326 $22,058 Net Operating Surplus/(Deficit) New York City Transit ($5,586) ($5,854) ($6,164) ($6,472) ($6,704) ($7,223) Long Island Rail Road (1,173) (1,148) (1,420) (1,591) (1,690) (1,757) Grand Central Madison (92) (125) (98) (100) (103) (106) Metro-North Railroad (1,016) (976) (1,079) (1,099) (1,163) (1,220) MTA Headquarters (1,041) (1,157) (1,173) (1,172) (1,186) (1,193) Construction & Development (121) 0 0 0 0 0 First Mutual Transportation Assurance Company 0 0 0 0 0 0 MTA Bus Company (497) (545) (703) (772) (785) (810) Staten Island Railway (42) (83) (76) (74) (74) (74) Other (209) (223) (237) (246) (256) (272) Total ($9,777) ($10,111) ($10,950) ($11,526) ($11,961) ($12,654)
+```
+[p010_c0006] _I-5_
+
+## Page 11
+
+### [p011_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 MTA Consolidated July Financial Plan Compared with February Financial Plan Cash Reconciliation before Below-the-Line Adjustments ($ in millions)
+[p011_c0002]
+
+```text
+Favorable/(Unfavorable) 2025 2026 2027 2028 FEBRUARY FINANCIAL PLAN 2025-2028 CASH BALANCE BEFORE PRIOR YEAR CARRYOVER ($260) ($500) ($938) ($1,035) Agency Baseline Re-estimates ($132) ($201) ($127) ($49) Farebox Revenue and Toll Revenue 1 77 17 14 13 CDOT Fare Increase (2025 and 2026) 1 16 21 21 NYCT Capital and Other Reimbursements 101 100 100 70 Tropical Storm Ida Insurance Reimbursement 66 - - - Paratransit Net of Fares and Reimbursements 2 (54) (142) (170) (49) Materials/Professional Services (81) (116) (111) (112) Health & Welfare (including retirees) 58 61 74 85 Worker's Comp/FELA/Claims (77) (7) (7) (7) Electric Power (45) (18) (12) (21) Pensions 23 (1) 24 47 Other Fringe Benefits (25) (21) (23) (22) Insurance (15) (28) (16) (9) Real Estate 2 (3) (10) (7) NYCT Service Adjustments (3) (4) (4) (4) B&T/MTA PD Collaboration 4 7 13 27 Fuel 14 17 16 18 MTA Bus Re-examination of Budgetary Needs and Impacts 25 19 19 19 Timing (218) 1 6 0 Other Baseline Re-estimates 3 14 (98) (60) (116) New Needs/Investments (54) (47) (45) (45) Maintenance (29) (27) (25) (25) Worker's Comp Claims Management (23) (3) (4) (4) Maintenance Contract for Signals and Interlocking - (7) (7) (7) FRA Signal/Dispatch Certification - (4) (8) (8) NYCT Bus Command Center - (5) (5) (5) Enterprise Asset Management (1) (4) (4) (4) FRA Mandate - Audio Visual Recording Monitoring (AVRM) (0) (5) (3) (3) All Other New Needs (1) 8 11 11 B&T Adjustments $15 $22 $36 $64 B&T Net Baseline Impacts 4 15 22 36 64 MTA Adjustments ($5) ($5) $0 ($5) General Reserve (5) (5) - (5) Debt Service (Cash) $19 $11 ($1) $74 Subsidies (Cash) $118 $91 $117 ($29) Metropolitan Mass Transportation Operating Assist (MMTOA) 1 1 (1,196) (1,227) Mass Transportation Trust Fund (MTTF) (12) (12) 1,173 1,205 MRT Recording Tax 26 (1) - 7 Urban Tax 55 - - (5) Payroll Mobility Tax (PMT) for Operating 215 235 179 105 For-Hire Vehicle (FHV) Surcharge (12) 1 0 (0) Local Operating Assistance (18-b) 35 - - - Station Maintenance 6 12 13 12 Investment Income 42 - - - Other Subsidy Adjustments: (294) (162) (70) (179) Forward Energy Contracts Program - Gain/(Loss) (1) (4) (0) - Other Local Subsidy Resources (292) - (49) (162) OPEB Trust/Reserve 5 - (158) (21) (17) City Subsidy for MTA Bus 3 17 (0) (4) City Subsidy for Staten Island Railway (10) 7 5 4 CDOT Subsidy for Metro-North Railroad 1 (12) (15) (7) B&T Surplus Transfer 62 16 28 54 Other Subsidies and Subsidy Adjustments (0) (12) 0 7 JULY FINANCIAL PLAN 2026-2029 CASH BALANCE BEFORE PRIOR YEAR CARRYOVER ($300) ($629) ($957) ($1,025)
+```
+[p011_c0003] _1 Excludes Paratransit Farebox Revenue and revenue generated from CDOT Fare Increases._
+[p011_c0004] _2 Includes Paratransit revenue, Paratransit expenses, and Urban Tax for Paratransit._
+[p011_c0005] _3 Includes OTPS and reimbursable adjustments, operating capital, and cash adjustments._
+[p011_c0006] _4 While B&T Operating Surplus Transfer is captured as a subsidy, B&T's baseline impacts are captured in individual reconciliation categories in the Agency Baseline Adjustments above. To avoid duplication, B&T's baseline impacts are eliminated within this line. Included within this B&T Net Baseline Impacts are reversals for higher toll revenue and favorable OTPS adjustments which are captured above._
+[p011_c0007] _5 Contributions to and/or Reimbursements from OPEB Trust and/or OPEB Reserve accounts._
+[p011_c0008] _I-6_
+
+## Page 12
+
+### [p012_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+### [p012_c0002] July Financial Plan 2026 - 2029 Farebox Recovery and Operating Ratios
+### [p012_c0003] FAREBOX RECOVERY RATIOS
+[p012_c0004]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 Plan 2027 Plan 2028 Plan 2029 New York City Transit 24.7% 25.0% 24.6% 24.3% 24.0% 23.2% Staten Island Railway 3.6% 3.4% 3.7% 3.7% 3.8% 3.7% Long Island Rail Road (3,4) 18.2% 18.9% 18.4% 17.3% 17.4% 16.9% Metro-North Railroad (3) 27.1% 27.5% 27.5% 26.3% 26.1% 25.3% MTA Bus Company 18.2% 17.2% 17.1% 17.5% 17.2% 16.8% MTA-Wide Farebox Recovery Ratio 23.4% 23.7% 23.4% 22.9% 22.7% 22.0%
+```
+### [p012_c0005] FAREBOX OPERATING RATIOS
+[p012_c0006]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 Plan 2027 Plan 2028 Plan 2029 New York City Transit 34.6% 34.7% 33.9% 33.2% 32.5% 31.2% Staten Island Railway 6.2% 5.5% 6.1% 6.2% 6.3% 6.3% Long Island Rail Road 32.5% 31.9% 30.5% 28.2% 27.3% 26.6% Metro-North Railroad (3) 39.7% 39.5% 39.0% 38.3% 37.1% 36.2% MTA Bus Company 21.0% 21.1% 20.8% 21.1% 21.1% 20.5% MTA-Wide Farebox Operating Ratio 33.9% 33.8% 33.0% 32.1% 31.4% 30.4%
+```
+[p012_c0007] (1) Farebox recovery ratio has a long-term focus. It includes costs that are not funded in the current year, except in an accounting-ledger sense, but are, in effect, passed on to future years. Those costs include depreciation and interest on long-term debt. Approximately 20% (and sometimes more) of MTA costs are not recovered in the current year from farebox revenues, other operating revenues or subsidies. That is why MTA operating statements generally show deficits. In addition, the recovery ratio allocates centralized MTA services to the Agencies, such as Security, the costs of the Inspector General, Civil Rights, Audit, Risk Management, Legal and Shared Services.
+[p012_c0008] (2) Farebox operating ratio focuses on Agency operating financial performance. It reflects the way MTA meets its statutory and bond-covenant budget-balancing requirements, and it excludes certain costs that are not subject to Agency control, but are provided centrally by MTA.
+[p012_c0009] (3) In the meeting materials for the Meeting of the Metro-North and Long Island Rail Road Committees, the calculations of the farebox operating and recovery ratios for the LIRR and MNR use a revised methodology to put the railroads on a more comparable basis. Those statistics, which are included in the respective financial and ridership reports of both Agencies, differ from the statistics presented in this table.
+[p012_c0010] (4) Long Island Rail Road farebox operating and recovery ratios include expenses associated with the Grand Central Madison Operating Company (GCMOC), which is responsible for the LIRR-operated portion of Grand Central Terminal.
+[p012_c0011] _I-7_
+
+## Page 13
+
+[p013_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p013_c0002] _I-8_
+
+## Page 14
+
+### [p014_c0001] II. Major Assumptions
+
+## Page 15
+
+### [p015_c0001] Agency Baseline Assumptions
+
+## Page 16
+
+### [p016_c0001] The July Financial Plan
+[p016_c0002] The July Financial Plan (the “July Plan” or “Plan”) consists of the 2025 Mid-Year Forecast, the 2026 Preliminary Budget, and projections for 2027 through 2029. Plan-to-plan changes compare the July Plan with the February Plan (2025 through 2028), capturing programmatic changes and other revenue and expense re-estimates. Volume 2 of the July Plan is comprised of the Baseline forecast, which excludes certain Policy actions and other “below-the-line” adjustments highlighted and captured in Volume 1 of this two-volume Plan. This section focuses on Agency forecasts, with subsidies and debt service information covered in subsequent sections of this Volume.
+[p016_c0003] The July Plan maintains a stable financial outlook for the MTA in the near-term, remaining balanced through 2026. MTA continues to improve the safe, reliable, and cost-efficient transportation service that fosters the long-term vibrancy and prosperity of the metropolitan New York region, focused on maintaining assets in a state of good repair and identifying innovative operating efficiencies to reduce expenses and improve service to customers.
+### [p016_c0004] Anticipated Fare and Toll Increases
+[p016_c0005] The July Plan includes proposals to increase fare and toll rates in January 2026, March 2027, and March 2029, with each increase projected to generate an additional 4 percent in farebox and toll revenues. The proposed January 2026 implementation represents a five-month delay in the fare and toll increases proposed for August 2025 in the February Plan. The additional farebox and toll revenue totals $2.56 billion over the Plan period after adjusting for offsetting impacts subsidies; compared with the February Plan, this is favorable by $26 million through 2028. Additional information on the proposed fare and toll rate increases, and additional revenue from these actions can be found in Volume 1 of this Plan.
+### [p016_c0006] Central Business District Tolling Program
+[p016_c0007] Toll collection for the Central Business District Tolling Program (CBDTP) commenced in January 2025. CBDTP was legislated to annually generate and leverage one billion dollars dedicated to support $15 billion of bonding for the 2020-24 Capital Program and subsequent capital programs, reduce traffic congestion, and improve air quality. Net revenues are deposited into the Capital Lockbox Fund and have no impact on the bottom line of the financial plan. Based on year-to-date results, revenue projections in July Plan are unchanged from the February Plan. Please reference the Capital Lockbox Fund section under Subsidies for more information.
+### [p016_c0008] Agency Baseline Assumptions
+### [p016_c0009] Federal Formula Grant
+[p016_c0010] The July Plan includes a $1.4 billion federal formula grant that was initially deposited with New York City Transit and then shifted for pay-as-you-go (PAYGO) capital within subsidies.
+### [p016_c0011] Transfer of B&T Public Safety Responsibilities to MTAPD
+[p016_c0012] In early 2025, as part of the MTA’s ongoing commitment to operational efficiency and long-term financial sustainability, the Authority began implementing a phased supplementation of public safety responsibilities at MTA Bridges and Tunnels facilities with the MTA Police Department
+[p016_c0013] _II-1_
+
+## Page 17
+
+[p017_c0001] (MTAPD), intended to capture economies of scale and to generate operational efficiencies while maintaining high safety standards. This initiative began at the Bronx-Whitestone and Throgs Neck Bridges and will continue as needed. This initiative aligns with the MTA's broader transformation efforts and reflects a financially responsible approach to workforce planning and customer expectations.
+### [p017_c0002] Baseline Changes from February
+[p017_c0003] The farebox revenue and ridership projections in this section reflect Agency baseline forecasts. Compared with the February Plan, baseline Farebox Revenues are higher in all years through the Plan period. Excluding the Connecticut fare increase on the New Haven Line, Farebox revenue is favorable by $119 million over the Plan period. Toll Revenues are $1 million favorable for 2025 and unchanged from the remainder of the Plan. Forecasts reflect year-to-date actuals and projected changes in regional economic conditions.
+[p017_c0004] NYCT Capital and Other Reimbursements are favorable throughout the Plan period, reflecting timing adjustments of MTA Construction & Development reimbursements. Insurance reimbursement for Tropical Storm Ida, which caused damage in 2021, was received earlier this year and is reflected in Agency baselines.
+[p017_c0005] Paratransit expense, net of fares and reimbursements, continues to grow as increased ridership results in higher transportation and operational support costs. Costs for Materials and Supplies, Maintenance and Other Operating Contracts, and Professional Services Contracts increase, primarily due to inflation projections. Favorable Health & Welfare expenses primarily reflect lower premium rates. Unfavorable Workers' Compensation and FELA expenses reflect higher payout trends for claims. Electric Power is unfavorable, driven by higher rates and consumption. Revised actuarial estimates result in favorable changes to Pensions. Higher Railroad Retirement taxes and FELA expenses at the LIRR and revised actual assumptions at MTA Bus, offset by revised staffing assumptions and rates at MNR, result in unfavorable changes for Other Fringe Benefits. Unfavorable Insurance and Claims changes are driven by higher premiums, exposure, claims losses, and reserve adjustments. Unfavorable Real Estate reflects lower projected retail revenue from Grand Central Terminal at MNR. NYCT service adjustment needs result in additional positions. Favorable changes for Fuel are driven by lower prices and consumption at NYCT. The Plan also reflects lower costs resulting from a re-examination of budgetary needs at MTA Bus, primarily due to initiatives aimed at reducing expenses for Health & Welfare/OPEB, professional services, materials and supplies, and maintenance and other operating contracts.
+[p017_c0006] Timing Impacts – 2024 expenses that will be incurred during the Plan period reflect retroactive wage payments, capital reimbursements, expense rollover, Paratransit reimbursement, security initiatives, Workers' Compensation claims, and the Smart Battery pilot program.
+[p017_c0007] Other Baseline Re-estimates reflect adjustments for salaries and wages, reimbursable overhead impact, other than personal services (OTPS), GASB, reimbursable expenses, non-cash items, recoveries, GCMOC maintenance contract, overtime, cash, Occupational Health Services (OHS) medical services, and information technology.
+[p017_c0008] _II-2_
+
+## Page 18
+
+### [p018_c0001] New Needs and Investments
+[p018_c0002] New Needs and Investments, reflected in the Agency baseline financial plans, include funding for critical information technology, maintenance and operation, and service support initiatives, including:
+### [p018_c0003] NYCT:
+[p018_c0004] Wheel Wear – Overtime hours required for wheel-truing and truck changes on revenue cars on the Jamaica line to address rapid wheel wear, while reducing the impact on service.
+[p018_c0005] Wheel Purchase – Purchase of 4,000 wheels that are immediately needed to keep cars operational and to maintain an inventory stock.
+[p018_c0006] Paratransit Call Center – Funding for legal compliance for Paratransit's Call Center, effective through 2027 and paralleling the current Call Center contract. Another Request for Proposal (RFP) will be issued in 2028.
+[p018_c0007] Workers' Compensation Claims Management – The MTA has transitioned its Workers' Compensation claims to an outside vendor, effective May 2025. These expenses are to cover outstanding payments of legacy claims, as well as new claims.
+[p018_c0008] Substations – The addition of 37 positions to address critical routine preventive maintenance for keeping substations in a state of good repair and enhancing engineering assistance for updating maintenance procedures.
+[p018_c0009] OMNY Reforecast of Hosting and Operations Expenses – Reforecasting OMNY hosting and operating expenses and modifying current orders to OMNY fare payment system configurations.
+[p018_c0010] Track Safety Audit – Three (3) additional positions for the Federal Transit Administration (FTA) special directive that requires NYCT to address safety incidents and concerns affecting transit workers.
+[p018_c0011] Central Maintenance Facility (CMF) Supervisor Coverage – An arbitration ruling for supervisor coverage stipulates that open lines or vacancies must conform to established past practice. The open lines are to be filled with the extra list, then on an overtime basis.
+[p018_c0012] Employee Availability – One (1) additional position for an initiative to reduce chronic absenteeism that leads to decreased operational efficiency, customer delays, and budget overruns.
+[p018_c0013] Global Maintenance Contract – Comprehensive contract that will provide coverage for all Communication-Based Train Control (CBTC) and Solid State Interlocking System (SSI) maintenance.
+[p018_c0014] Bus Radio System and Bus Command Center – Seven (7) additional positions for comprehensive maintenance and support services for the Department of Buses' new digital radio system and the New Bus Command Center. Also included is the maintenance support for the new bus radio system at the depot and 39 new radio towers.
+[p018_c0015] Heating, Ventilation, and Air Conditioning (HVAC) – An additional 15 personnel preventive maintenance positions are required due to the installation of new HVAC equipment over the past few years through Capital Projects.
+[p018_c0016] _II-3_
+
+## Page 19
+
+### [p019_c0001] LIRR:
+[p019_c0002] FRA Signal/Dispatch Certification – An additional 15 positions for required Federal Railroad Administration (FRA) certification of employees who perform dispatching tasks and work on signal systems and signal-related technology.
+[p019_c0003] FRA Mandate – Audio Visual Recording Monitoring (AVRM) – The FRA has mandated that by October 2027 every lead locomotive must be equipped with a CCTV system that records video from a forward-facing camera and a cab camera to a crash-hardened memory device. The LIRR legacy onboard CCTV system was installed before these regulations were established and does not meet the specific requirements of the mandate, including a crash-hardened memory module and specific technical requirements for the cab cameras.
+### [p019_c0004] MNR:
+[p019_c0005] GCM Trash Collection – Two (2) additional positions to support increased trash collection needs at Grand Central Madison.
+[p019_c0006] FRA Signal/Dispatch Certification – An additional 15 positions for the required Federal Railroad Administration (FRA) certification of employees who perform dispatching tasks and work on signal systems and signal-related technology.
+### [p019_c0007] MTA Bus:
+[p019_c0008] Employee Availability – One (1) additional position for an initiative to reduce chronic absenteeism that leads to decreased operational efficiency, customer delays, and budget overruns.
+[p019_c0009] Bus Radio System and Bus Command Center – Comprehensive maintenance and support services for the Department of Buses new digital radio system and the New Bus Command Center. Also included is the maintenance support for the new bus radio system at the Depot and 39 new radio towers.
+### [p019_c0010] MTA HQ:
+[p019_c0011] B&T/MTA PD Collaboration – A phased supplementation of public safety responsibilities at MTA Bridges and Tunnels facilities with the MTA Police Department (MTAPD), that is expected to capture economies of scale and generate operational efficiencies while maintaining high safety standards.
+[p019_c0012] Strategic Initiatives – Three (3) additional positions to deliver strategic initiatives and cost savings projects to support MTA fiscal responsibility.
+[p019_c0013] Rolling Stock – Addition of one new position to manage the state of good repair efforts to maintain safe and reliable transportation services. As part of the capital plan, the MTA is retiring commuter rail and subway cars that have exceeded useful life.
+[p019_c0014] Enterprise Asset Management (EAM) – Mobile device procurement, maintenance, and software costs to manage infrastructure and assets.
+[p019_c0015] _II-4_
+
+## Page 20
+
+### [p020_c0001] SIR:
+[p020_c0002] Expand Station & Car Cleaning – Four (4) additional positions required to maintain the existing fleet and the new R211 fleet, as well as for additional facility support for Americans with Disabilities Act (ADA) expansion projects.
+[p020_c0003] Rail Track Tree Removal – Removal of right-of-way hazardous trees that have reached the point of decay and pose a significant risk and threat to both life and property, causing potential injuries to people and damaging structures such as houses, cars, and power lines.
+[p020_c0004] _II-5_
+
+## Page 21
+
+### [p021_c0001] AGENCY BASELINE JULY CHANGES FROM FEBRUARY PLAN Favorable/(Unfavorable) ($ in millions)
+[p021_c0002]
+
+```text
+2025 2026 2027 2028 Agency Baseline Adjustments ($132) ($201) ($127) ($49) Farebox Revenue and Toll Revenue 1 77 17 14 13 CDOT Fare Increase (2025 and 2026) 1 16 21 21 NYCT Capital and Other Reimbursements 101 100 100 70 Tropical Storm Ida Insurance Reimbursement 66 0 0 0 Paratransit Net of Fares and Reimbursements 2 (54) (142) (170) (49) Materials/Professional Services (81) (116) (111) (112) Health & Welfare (including retirees) 58 61 74 85 Worker's Comp/FELA/Claims (77) (7) (7) (7) Electric Power (45) (18) (12) (21) Pensions 23 (1) 24 47 Other Fringe Benefits (25) (21) (23) (22) Insurance (15) (28) (16) (9) Real Estate 2 (3) (10) (7) NYCT Service Adjustments (3) (4) (4) (4) B&T/MTA PD Collaboration 4 7 13 27 Fuel 14 17 16 18 MTA Bus Re-examination of Budgetary Needs and Impacts 25 19 19 19 Timing (218) 1 6 0 Other Baseline Re-estimates 3 14 (98) (60) (116) New Needs/Investments ($54) ($47) ($45) ($45) Maintenance (29) (27) (25) (25) Worker's Comp Claims Management (23) (3) (4) (4) Maintenance Contract for Signals and Interlocking 0 (7) (7) (7) FRA Signal/Dispatch Certification 0 (4) (8) (8) NYCT Bus Command Center 0 (5) (5) (5) Enterprise Asset Management (1) (4) (4) (4) FRA Mandate - Audio Visual Recording Monitoring (AVRM) (0) (5) (3) (3) All Other New Needs (1) 8 11 11 B&T Adjustments $15 $22 $36 $64 B&T Net Baseline Impacts 4 15 22 36 64 MTA Adjustments ($5) ($5) $0 ($5) General Reserve (5) (5) 0 (5) Net Cash Baseline Changes ($176) ($231) ($135) ($34)
+```
+[p021_c0003] 1 Excludes Paratransit Farebox Revenue and revenue generated from CDOT Fare Increases.
+[p021_c0004] 2 Includes Paratransit revenue, Paratransit expenses, and Urban Tax for Paratransit
+[p021_c0005] 3 Includes OTPS and reimbursable adjustments, operating capital, and cash adjustments.
+[p021_c0006] 4 While B&T Operating Surplus Transfer is captured as a subsidy, B&T's baseline impacts are captured in individual reconciliation categories in the Agency Baseline Adjustments above. To avoid duplication, B&T's baseline impacts are eliminated within this line. Included within this B&T Net Baseline Impacts are reversals for higher toll revenue and favorable OTPS adjustments which are captured above.
+[p021_c0007] _II-6_
+
+## Page 22
+
+### [p022_c0001] Accrued Baseline Assumptions
+[p022_c0002] The following presents Agency baseline assumptions supporting the MTA Consolidated Statement of Operations, including analyses of individual revenue and expense categories. Additional details are available in each Agency's section.
+### [p022_c0003] PASSENGER & TOLL REVENUE / UTILIZATION
+[p022_c0004] Toll revenue forecasts presented in this section reflect crossings at Bridges and Tunnels' seven bridges and two tunnels, and do not include revenues associated with the Central Business District Tolling Program (CBDTP), which began collecting tolls in January 2025 and are deposited into the Capital Lockbox Fund.
+[p022_c0005] Utilization forecasts for 2025 include actual results through April for all Agencies other than the LIRR and MNR, which included actual results through May. Ridership projections for the remainder of 2025 through the Plan period are consistent with year-to-date actuals and projected changes in regional economic conditions.
+[p022_c0006] For the Mid-Year Forecast, MTA consolidated ridership is projected to total 1,903 million passengers, while crossings are expected to total 339 million at B&T facilities. Consolidated ridership is projected to increase by 144 million trips (8.2%) from 2024, while B&T traffic is forecast to increase by 312 thousand crossings (0.1%).
+[p022_c0007] MTA consolidated farebox revenue is expected to be $5,241 million, and toll revenue is expected to be $2,585 million, for the Mid-Year Forecast. Compared with 2024, consolidated farebox revenue is projected to increase by $276 million (5.5%), while B&T toll revenue is expected to grow by $8.5 million (0.3%). The farebox revenue growth over 2024 primarily reflects increased ridership across the MTA, although about $1 million of the increase is attributable to a five percent increase for fares in the Connecticut portion of MNR's New Haven Line that are set by the Connecticut Department of Transportation (CDOT) and scheduled to be implemented in September 2025.
+[p022_c0008] Compared with the Adopted Budget, consolidated paid ridership is forecast to be favorable by 58 million trips (3.2%), while B&T vehicular traffic is projected to decrease by 633 thousand crossings (0.2%). Consolidated farebox revenue is projected to be $84 million (1.6%) favorable, and B&T toll revenue is expected to be $1 million (0.1%) favorable compared with the Adopted Budget. About $1 million of the plan-to-plan farebox revenue increase is attributable to the 2025 CDOT fare increase.
+[p022_c0009] Through 2029, the Plan anticipates a continued increase in consolidated ridership and corresponding farebox revenue as the regional economy is projected to experience modest growth in employment.
+[p022_c0010] In 2029, consolidated farebox revenue is projected to reach $5,490 million, with B&T toll revenue reaching $2,666 million. Paid ridership is forecast at 1,995 million trips and with B&T projecting 350 million vehicle crossings.
+[p022_c0011] The 2025 CDOT fare increase is projected to generate $1 million in 2025 and then $10 million annually beginning in 2026. Additionally, CDOT will implement a second five percent fare increase in July 2026, which is projected to increase farebox revenue by $6 million in 2026 and $11 million annually thereafter. The additional revenue from these two CDOT increases is incorporated in the
+[p022_c0012] _II-7_
+
+## Page 23
+
+[p023_c0001] farebox revenue projections; however, the CDOT Subsidy for Metro-North, which reflects Connecticut's contractual share of net New Haven Line expenses and is reflected in the Subsidies section of this financial plan, are reduced accordingly.
+[p023_c0002] The impacts of proposed MTA fare and toll increases – New York City Transit, Staten Island Railway, MTA Bus, Long Island Rail Road, the NYS portion of Metro-North Railroad, and Bridges and Tunnels – are not reflected in baseline forecasts. Information concerning these proposals can be found in Section 3 of Volume 1 of this Plan.
+[p023_c0003] Agency utilization, along with plan-to-plan and year-to-year changes, are provided in the tables accompanying this section.
+[p023_c0004] _II-8_
+
+## Page 24
+
+### [p024_c0001] MTA Consolidated Utilization Plan-to-Plan Comparison Baseline Before Gap-Closing Actions (in millions)
+### [p024_c0002] July Financial Plan
+[p024_c0003]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Traffic Bridges & Tunnels 338.967 343.200 346.600 348.900 350.300 Ridership Long Island Rail Road 82.030 82.068 82.093 82.223 82.651 Metro-North Railroad 1 72.032 72.108 71.931 72.860 74.445 MTA Bus Company 92.992 92.673 96.036 97.513 97.389 New York City Transit 2 1,653.838 1,664.830 1,707.480 1,738.152 1,738.550 Staten Island Railway 2.371 2.390 2.390 2.408 2.408 1,903.263 1,914.069 1,959.930 1,993.156 1,995.443
+```
+### [p024_c0004] February Financial Plan
+[p024_c0005]
+
+```text
+Adopted Budget 2025 2026 2027 2028 Traffic Bridges & Tunnels 339.600 343.200 346.600 348.900 Ridership Long Island Rail Road 78.285 78.629 78.919 79.106 Metro-North Railroad 1 69.753 70.057 70.124 71.077 MTA Bus Company 89.061 92.673 96.036 97.513 New York City Transit 2 1,605.476 1,660.290 1,701.790 1,732.177 Staten Island Railway 2.379 2.390 2.390 2.408 1,844.954 1,904.038 1,949.259 1,982.282
+```
+### [p024_c0006] Plan-to-Plan Changes: Favorable / (Unfavorable)
+[p024_c0007]
+
+```text
+2025 2026 2027 2028 Traffic Bridges & Tunnels (0.633) 0.000 0.000 0.000 Ridership Long Island Rail Road 3.745 3.439 3.174 3.116 Metro-North Railroad 1 2.279 2.051 1.807 1.783 MTA Bus Company 3.931 0.000 0.000 (0.000) New York City Transit 2 48.362 4.540 5.690 5.975 Staten Island Railway (0.008) 0.000 0.000 0.000 58.309 10.031 10.672 10.874
+```
+[p024_c0008] _1 Metro-North Railroad utilization figures include both East of Hudson and West of Hudson services._
+[p024_c0009] _2 New York City Transit utilization figures include Paratransit and Fare Media Liability._
+[p024_c0010] _II-9_
+
+## Page 25
+
+### [p025_c0001] MTA Consolidated Utilization Plan-to-Plan Comparison Baseline Before Gap-Closing Actions (in millions)
+[p025_c0002]
+
+```text
+July Financial Plan Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Toll Revenue Bridges & Tunnels $2,584.730 $2,610.788 $2,636.652 $2,654.148 $2,665.501 Fare Revenue Long Island Rail Road 694.260 694.265 694.265 696.216 699.218 Metro-North Railroad 1 655.729 669.290 676.174 681.447 692.413 MTA Bus Company 192.087 192.087 198.760 205.977 209.144 New York City Transit 2 3,695.088 3,759.318 3,830.957 3,884.284 3,885.239 Staten Island Railway 3.808 3.968 3.968 3.998 3.998 $5,240.972 $5,318.927 $5,404.124 $5,471.922 $5,490.011 Total Toll/Fare Revenue $7,825.702 $7,929.715 $8,040.776 $8,126.070 $8,155.512
+```
+[p025_c0003]
+
+```text
+February Financial Plan Adopted Budget 2025 2026 2027 2028 Toll Revenue Bridges & Tunnels $2,583.402 $2,610.788 $2,636.652 $2,654.148 Fare Revenue Long Island Rail Road 678.089 680.959 683.357 685.963 Metro-North Railroad 1 647.455 650.197 652.488 657.554 MTA Bus Company 191.013 198.760 205.977 209.144 New York City Transit 2 3,636.699 3,747.684 3,818.018 3,871.824 Staten Island Railway 3.950 3.968 3.968 3.998 $5,157.206 $5,281.567 $5,363.808 $5,428.481 Total Toll/Fare Revenue $7,740.608 $7,892.355 $8,000.460 $8,082.629
+```
+[p025_c0004]
+
+```text
+Plan-to-Plan Changes: Favorable / (Unfavorable) 2025 2026 2027 2028 Toll Revenue Bridges & Tunnels $1.328 ($0.000) ($0.000) $0.000 Fare Revenue Long Island Rail Road 16.172 13.307 10.908 10.254 Metro-North Railroad 1 8.274 19.093 23.686 23.893 MTA Bus Company 1.073 (6.673) (7.217) (3.167) New York City Transit 2 58.390 11.634 12.939 12.461 Staten Island Railway (0.142) 0.000 0.000 0.000 $83.766 $37.361 $40.316 $43.440 Total Toll/Fare Revenue $85.094 $37.361 $40.316 $43.440
+```
+[p025_c0005] _1 Metro-North Railroad utilization figures include both East of Hudson and West of Hudson services._
+[p025_c0006] _2 New York City Transit utilization figures include Paratransit and Fare Media Liability._
+[p025_c0007] _II-10_
+
+## Page 26
+
+### [p026_c0001] MTA Consolidated Utilization July Financial Plan - Year-to-Year Change Baseline Before Gap-Closing Actions
+[p026_c0002]
+
+```text
+2024 - 2025 2025 - 2026 2026 - 2027 2027 - 2028 2028 - 2029 Traffic Bridges & Tunnels 0.312 4.233 3.400 2.300 1.400 Ridership Long Island Rail Road 6.520 0.038 0.025 0.130 0.428 Metro-North Railroad 1 4.653 0.076 (0.177) 0.929 1.585 MTA Bus Company 8.733 (0.319) 3.363 1.477 -0.124 New York City Transit 2 124.342 10.992 42.651 30.672 0.398 Staten Island Railway 0.051 0.018 0.001 0.018 0.000 Total Ridership 144.299 10.805 45.862 33.226 2.287 NYCT Ridership Subway 82.199 (2.109) 21.368 18.510 -0.281 Bus 39.236 10.697 19.435 11.145 -0.388 Paratransit 2.907 2.404 1.847 1.016 1.067 Total NYCT Ridership 124.342 10.992 42.651 30.672 0.398 2024 - 2025 2025 - 2026 2026 - 2027 2027 - 2028 2028 - 2029 Toll Revenue Bridges & Tunnels $8.509 $26.058 $25.864 $17.496 $11.353 Fare Revenue Long Island Rail Road $44.525 $0.005 $0.000 $1.951 $3.001 Metro-North Railroad 1 30.059 13.561 6.885 5.272 10.966 MTA Bus Company 10.906 0.000 6.673 7.217 3.167 New York City Transit 2 189.678 64.230 71.638 53.328 0.955 Staten Island Railway (0.074) 0.160 0.000 0.029 0.000 Total Farebox Revenue $275.094 $77.956 $85.197 $67.798 $18.090 Total Fare/Toll Revenue $283.603 $104.014 $111.061 $85.294 $29.443 NYCT Fare Revenue Subway $148.488 $17.543 $49.956 $43.163 ($0.541) Bus 44.318 47.476 36.869 21.132 (0.703) Paratransit 6.940 4.954 3.806 2.093 2.199 Fare Media Liability (10.068) (5.742) (18.993) (13.060) 0.000 Total NYCT Fare Revenue $189.678 $64.230 $71.638 $53.328 $0.955
+```
+[p026_c0003] _1 Metro-North Railroad utilization figures include both East-of-Hudson and West-of-Hudson service._
+[p026_c0004] _2 New York City Transit utilization figures include Paratransit and Fare Media Liability._
+[p026_c0005] _II-11_
+
+## Page 27
+
+### [p027_c0001] MTA Consolidated Utilization July Financial Plan - Year-to-Year Change Baseline Before Gap-Closing Actions
+[p027_c0002]
+
+```text
+2024 - 2025 2025 - 2026 2026 - 2027 2027 - 2028 2028 - 2029 Traffic Bridges & Tunnels 0.09% 1.25% 0.99% 0.66% 0.40% Ridership Long Island Rail Road 8.63% 0.05% 0.03% 0.16% 0.52% Metro-North Railroad 1 6.91% 0.11% -0.25% 1.29% 2.18% MTA Bus Company 10.36% -0.34% 3.63% 1.54% -0.13% New York City Transit 2 8.13% 0.66% 2.56% 1.80% 0.02% Staten Island Railway 2.18% 0.78% 0.02% 0.76% -0.01% Total Ridership 8.20% 0.57% 2.40% 1.70% 0.11% NYCT Ridership Subway 6.88% -0.17% 1.68% 1.43% -0.02% Bus 12.20% 2.96% 5.23% 2.85% -0.10% Paratransit 22.09% 14.96% 10.00% 5.00% 5.00% Total NYCT Ridership 8.13% 0.66% 2.56% 1.80% 0.02% 2024 - 2025 2025 - 2026 2026 - 2027 2027 - 2028 2028 - 2029 Toll Revenue Bridges & Tunnels 0.33% 1.01% 0.99% 0.66% 0.43% Fare Revenue Long Island Rail Road 6.85% 0.00% 0.00% 0.28% 0.43% Metro-North Railroad 1 4.80% 2.07% 1.03% 0.78% 1.61% MTA Bus Company 6.02% 0.00% 3.47% 3.63% 1.54% New York City Transit 2 5.41% 1.74% 1.91% 1.39% 0.02% Staten Island Railway -1.91% 4.19% 0.01% 0.74% 0.01% Total Farebox Revenue 5.54% 1.49% 1.60% 1.25% 0.33% Total Fare/Toll Revenue 3.76% 1.33% 1.40% 1.06% 0.36% NYCT Fare Revenue Subway 5.27% 0.59% 1.67% 1.42% -0.02% Bus 7.23% 7.22% 5.23% 2.85% -0.09% Paratransit 26.52% 14.96% 10.00% 5.00% 5.00% Fare Media Liability -21.04% -15.19% - - - Total NYCT Fare Revenue 5.41% 1.74% 1.91% 1.39% 0.02%
+```
+[p027_c0003] _1 Metro-North Railroad utilization figures include both East-of-Hudson and West-of-Hudson service._
+[p027_c0004] _2 New York City Transit utilization figures include Paratransit and Fare Media Liability._
+[p027_c0005] _II-12_
+
+## Page 28
+
+### [p028_c0001] OTHER OPERATING REVENUE
+[p028_c0002] The Other Operating Revenue category captures all operating revenues generated from sources other than fares and tolls, and includes advertising, paratransit reimbursement, fare reimbursement, rental income, fees, parking, and investment income, as well as Federal Formula Grant funds earmarked for capital purposes.
+[p028_c0003]
+
+```text
+Other Operating Revenue July Financial Plan 2026-2029 ($ in millions) 2025 Mid-Year Forecast 2026 Preliminary Budget 2027 2028 2029 Rental Income 99 100 108 113 115 Advertising 183 186 178 181 185 Paratransit Reimbursement (NYC and Urban Tax) 607 658 700 829 876 Fare Reimbursement (students/seniors) 102 97 97 97 97 Fees (including E-ZPass, AFC and Tab)* 18 13 12 12 12 FMTAC Operating and Investment Income 34 35 35 36 36 Parking 16 16 16 16 16 NYCT Federal Formula Grant 1,447 0 0 0 0 All Other (Federal Formula Grant, Insurance Reimbursement, Utilities, Transit Museum, Freight etc.) 125 53 54 56 57 Total Other Operating Revenue $2,631 $1,158 $1,200 $1,339 $1,394
+```
+[p028_c0004] Note: *Automated Fare Collection (AFC); Transit Adjudication Bureau (TAB)
+[p028_c0005] Year-to-year changes over the course of the Plan reflect a decrease of $1.5 billion in 2026, followed by increases of $42 million in 2027, $140 million in 2028, and $55 million in 2029. The decrease in 2026 is mainly due to the receipt of a Federal Formula Grant that was initially deposited with New York City Transit and then shifted for pay-as-you-go (PAYGO) capital within subsidies. Excluding the Federal Formula Grant, Other Operating Revenue for 2026 is $30 million less than in 2025, primarily due to the one-time receipt of Tropical Storm Ida insurance reimbursement in 2025, lower Automatic Fare Collection (AFC) and Transit Adjudication Bureau (TAB) fees, partially offset by higher Paratransit Reimbursement.
+[p028_c0006] Year-to-year revenue increases from 2027 through 2029 are primarily the result of the following: increases of $35 million in 2027, $134 million in 2028, and $50 million in 2029 at NYCT mostly attributable to increases in NYC paratransit reimbursements reflecting higher ridership, higher advertising and higher real estate revenues; at MNR increases of $3 million in 2027, $4 million in 2028, and $3 million in 2029 are mainly due to lower real estate vacancy rates; at MTA HQ of $2 million in 2027 and flat in 2028 and 2029, due to an increase in rental income. The increases at the LIRR, GCMOC, and FMTAC are minor.
+[p028_c0007] Compared with the February Plan, Other Operating Revenue increases by $1.7 billion in 2025, $124 million in 2026, $122 million in 2027, and $216 million in 2028. The increase in 2025 is mainly due to the receipt of a Federal Formula Grant at NYCT. Exclusive of the Federal Formula Grant, Other Operating Revenue is favorable compared with the July Plan by $51 million for 2025, reflecting insurance reimbursements relating to Tropical Storm Ida and the Scarborough Wall Collapse as well as higher net GCT retail and advertising revenues at MNR, an increase in investment income at FMTAC, higher rental, advertising, and miscellaneous revenue at the LIRR, and Tropical Storm Ida reimbursement at B&T. The increases in 2026 through 2028 are mainly due to paratransit reimbursement, advertising, and real estate revenue at NYCT, investment income at FMTAC, and advertising and rental revenue at LIRR; partially offset by lower GCT real estate rental rates at MNR.
+[p028_c0008] _II-13_
+
+## Page 29
+
+### [p029_c0001] CAPITAL AND OTHER REIMBURSEMENTS
+[p029_c0002] The Capital and Other Reimbursements category captures non-operating revenue sources. It consists of revenue generated by reimbursements of expenses from the Capital Program, as well as work performed by Agency capital engineering departments and MTA Construction & Development (MTA C&D). It also captures reimbursement assumptions from non-capital funding sources, including inter-agency reimbursements, external funding partners (e.g., Connecticut Department of Transportation and New York City), and contractual partnerships with real estate developers (e.g., Hudson Rail Yards).
+[p029_c0003] Reimbursable revenue and expense activity are primarily influenced by the nature and timing of capital project activity and the impacts generally net out and have no effect on the operating budget.
+[p029_c0004] July Plan revenue (and offsetting expenses captured within expense categories) is projected at $2,562 million in 2025, $2,659 million in 2026, $2,504 million in 2027, $2,539 million in 2028, and $2,582 million in 2029, reflecting a year-to-year increase of $97 million in 2026, decrease of $155 in 2027, increases of $35 million in 2028 and $43 million in 2029.
+[p029_c0005] Projected total increases over the Plan period, by Agency, are $26 million at MTA C&D, $24 million at the LIRR, and $16 million at NYCT. Partially offsetting these increases are decreases of $37 million at MNR, $6 million at MTA HQ, and $3 million at SIR. These variances primarily reflect revised timing assumptions of project activity and implications of reimbursable expense reductions.
+[p029_c0006] Compared with the February Plan, reimbursements are projected to decrease by $28 million in 2025, increase by $76 million in 2026, decrease by $57 million in 2027, and decrease by $11 million in 2028, primarily reflecting anticipated changes in capital project activity and revised scheduling assumptions.
+### [p029_c0007] PAYROLL
+[p029_c0008] MTA Consolidated Payroll expenses are impacted by factors that include position levels, labor agreements, inflation assumptions, changes in programs and initiatives, and capital project activity.
+[p029_c0009] Current payroll expenses across all MTA Agencies reflect, broadly, the impacts of labor agreements between NYCT/MaBSTOA and MTA Bus Company and the operational hourly employees represented by the MTA's largest union, the Transit Workers Union (TWU) Local 100, which establishes collective bargaining patterns that most other unions at MTA Agencies follow.
+[p029_c0010] In May 2023, collective bargaining resulted in a agreement between NYCT/MaBSTOA and the MTA Bus Company, affecting approximately 37,000 of the TWU Local 100's hourly operating employees. The agreement, ratified by the MTA Board in July 2023, covers the 36-month period from May 16, 2023, through May 15, 2026, and provides general wage increases on May 16 th of each year of 3.0% for 2023, 3.0% for 2024, and 3.5% for 2025. Since the passage of that agreement, several collective bargaining units at both commuter railroads (covering approximately 50% of their represented labor force) have reached agreements that align with the TWU pattern in terms of net recurrent costs; and at NYCT/MaBSTOA and MTA Bus, pattern-following agreements have been reached with more than 900 employees in several other distinct bargaining units. Most of the MTA's other unions, representing approximately 30% of the total
+[p029_c0011] _II-14_
+
+## Page 30
+
+[p030_c0001] unionized workforce, have agreements that have expired and are seeking new terms. The net economic value of the 2023-2026 TWU agreement was incorporated into each Agency's financial baseline in the February 2024 Plan with the expectation that these net costs will correspond to those in the TWU agreement. Additional financial impacts from other provisions in the agreement are also reflected in this July Plan.
+[p030_c0002] The MTA currently employs approximately 1,500 members of unions that typically follow New York City's agreements with the American Federation of State, County and Municipal Employees (AFSCME). Most of these employees are covered under an agreement that was ratified in March 2023. The agreement's economic provisions are based on New York City's agreement with its AFSCME workers. It spans a period of more than 65 months—from May 26, 2021, through November 6, 2026—and includes five wage increases, compounding to 16.2%, which was also reflected in the July 2024 Plan.
+[p030_c0003] July Plan baseline payroll expenses are projected at $6,506 million in 2025, growing annually by an average rate of 2.2% through 2029 to $7,095 million, with the changes mainly reflecting contractual wage progressions and, at the conclusion of current patterns, inflationary assumptions. Higher payroll expenses over the Plan period are comprised of increases at NYCT, the LIRR, MNR, MTA HQ, and MTA Bus, mainly due to settled and unsettled labor agreements. On a year-over-year basis, payroll expenses increase by $146 million in 2026, $149 million in 2027, $146 million in 2028, and $148 million in 2029. Higher payroll expenses also reflect the phased addition of new positions through the MTAPD and B&T collaboration initiative, as well as Penn Station train service at MNR, which is set to start in 2028.
+[p030_c0004] Compared with the February Plan, payroll expenses are projected to increase each year by $21 million (0.3%) in 2025, $26 million (0.4%) in 2026, $27 million (0.4%) in 2027, and $21 million (0.3%) in 2028. The plan-to-plan increases in all the years are mainly comprised of higher expenses at MTA HQ ($16 million in both 2025 and 2026, $19 million in 2027 and $21 million in 2028) in connection with the MTAPD and B&T collaboration initiative; expenses for NYCT ($4 million in 2025, $10 million in 2026, and $11 million in both 2027 and 2028) are mainly due to changes in maintenance and service plan headcount requirements; MNR changes ($10 million in 2025, $6 million in 2026, $8 million in 2027 and $10 million in 2028) are primarily due to the impact of labor contract settlements and reduced capital project activity; MTA Bus expenses ($1 million in 2025 and $3 million annually through 2028) are due to service requirement changes. For the LIRR, payroll expenses are expected to be lower in 2025 by $5 million due to vacancies, lower average pay rates, and adjustments to sick leave balance accruals. Expenses for LIRR are higher in 2026 through 2028 due to Federal Railroad Administration (FRA) Signal/Dispatch certification requirements. Partially offsetting these increases are payroll expense reductions at B&T, reflecting the impact of B&T's Planned Attrition Initiative.
+[p030_c0005] Over the Plan period, payroll expenses increased, on average, by $18 million at MTA HQ, $9 million at NYCT, $9 million at MNR, $3 million at MTA Bus, and flat at the LIRR, partially offset by an average expense decrease of $13 million at B&T.
+[p030_c0006] For specific program details and headcount implications throughout the Plan period, see the Agency sections.
+[p030_c0007] _II-15_
+
+## Page 31
+
+### [p031_c0001] OVERTIME
+[p031_c0002] Operating the MTA's mass transportation system and network of bridges, tunnels and roadway approaches requires the use of overtime, which in many circumstances is the best option, such as responding to emergencies and unplanned events, performing work during off-peak hours, and backfilling for periodic employee unavailability. At the same time, the MTA must tightly manage overtime to ensure it represents an efficient use of resources. Developing strong policies and procedures, robust reporting tools, and a management focus on cost-effectiveness make this possible.
+[p031_c0003] MTA Consolidated Overtime expenses are impacted by several factors, including vacancies, employee availability, project activity, weather, work rules, training requirements, and unexpected circumstances. Overtime costs also reflect wage growth based on collective bargaining agreements or assumptions for periods beyond the expiration of agreements; these wage growth projections are described in the payroll section of this Volume.
+[p031_c0004] July Plan expenses are projected at $890 million in 2025, $879 million in 2026, $900 million in 2027, $907 million in 2028, and $920 million in 2029, reflecting a year-to-year decrease of $12 million in 2026, and increases of $21 million in 2027, $7 million in 2028, and $13 million in 2029.
+[p031_c0005] The decrease from 2025 to 2026 is mostly attributable to the LIRR ($11 million) due to lower maintenance, vacancy/absentee coverage, scheduled service, and weather, MTA HQ ($2 million) due to MTAPD anticipated savings as a result of a new in-house training facility, and B&T ($2 million) due to a planned attrition initiative.
+[p031_c0006] The 2027 increase is mainly due to annual wage increases at NYCT ($10 million), the LIRR ($6 million), MNR ($5 million), and MTA Bus ($3 million). Escalations for 2028 and 2029 are mainly due to annual wage increases.
+[p031_c0007] Compared with the February Plan, Overtime expenses increase by $25 million in 2025, reflecting growth at NYCT ($16 million) primarily due to service-related overtime and programmatic maintenance, and at the LIRR ($11 million) primarily due to vacancy/absentee coverage and scheduled service.
+[p031_c0008] The average annual $7 million plan-to-plan increase from 2026 through 2028 primarily reflects increases at NYCT ($3 million) due to service plan requirements and maintenance, and at the LIRR ($1 million) due to FRA Signal/Dispatch Certification and installation of forward-facing cameras onboard revenue trains, partially offset by B&T ($10 million) due to the impact of position reductions related to attrition and MTA Bus ($3 million) due to reexamination of budgetary needs.
+### [p031_c0009] HEALTH & WELFARE
+[p031_c0010] Empire Plan premium rates for the July Financial Plan reflect actual rates provided by the New York State Department of Civil Service for 2025. Premium forecasts for 2026 through 2029 are based on the 10-year average change in premiums, excluding the largest and smallest annual percent changes. For employee health plans other than the Empire Plan, existing contractual rates, available projected rate changes, and actual claims trends are used in place of the Empire Plan assumptions. Year-to-year changes in expenses are also impacted by position levels.
+[p031_c0011] _II-16_
+
+## Page 32
+
+[p032_c0001] MTA Consolidated Health & Welfare expenses are estimated to be $1,966 million for the 2025 Mid-Year Forecast. Health & Welfare expenses for the 2026 Preliminary Budget are projected to be $2,114 million, $148 million (7.5%) greater than 2025 expenses, primarily due to higher premiums. MTA Consolidated Health & Welfare expenses are forecast to increase annually by 6.8%, 7.1%, and 7.3% for 2027 through 2029, respectively, when 2029 expenses are projected to reach $2,593 million.
+[p032_c0002] In comparison with the February Financial Plan, Health & Welfare expenses are favorable by $34 million in 2025, $32 million in 2026, $42 million in 2027, and $49 million in 2028, mainly due to the favorable impact of NYSHIP premiums renewing flat in 2025.
+### [p032_c0003] OPEB CURRENT PAYMENT
+[p032_c0004] The July Financial Plan baseline for each Agency reflects the pay-as-you-go component for the Other Post-Employment Benefit (OPEB) expense category referred to as “OPEB Current Payment,” and forecasts in this category are consistent with the assumptions described in the Health & Welfare section of this document. Premium assumptions in the baseline reflect rates provided by the New York State Department of Civil Service and are used as the primary assumption for pre-retiree Health & Welfare premium expenses in 2025. Premium forecasts for 2026 through 2029 are based on the 10-year average change in premiums, excluding the largest and smallest annual percent changes.
+[p032_c0005] OPEB Current Payment expenses are $921 million for the 2025 Mid-Year Forecast, $993 million for the 2026 Preliminary Budget, $1,072 million in 2027, $1,159 million in 2028, and $1,252 million in 2029. Year-to-year increases reflect NYSHIP premium growth assumptions, claims assumptions in the MTA-sponsored medical and prescription plans, and assumptions changes in the size of the retiree population.
+[p032_c0006] In comparison with the February Plan, expenses are favorable by $24 million in 2025, $29 million in 2026, $32 million in 2027, and $36 million in 2028, primarily due to the favorable impact of NYSHIP premiums renewing flat in 2025.
+### [p032_c0007] PENSIONS
+[p032_c0008] MTA employees are covered by several separate and distinct pension plans. All B&T employees and two-thirds of employees at NYCT are participants in the New York City Employee Retirement System (NYCERS). The remaining one-third of NYCT employees are participants in the Manhattan and Bronx Surface Transit Operating Authority (MaBSTOA) Plan, one of three MTA-sponsored Plans. The other two MTA-sponsored plans—the MTA Defined Benefit Plan and the Long Island Rail Road Additional Plan—cover employees at the LIRR, MNR, SIR, MTA Bus and MTA Police (which is part of MTAHQ). Non-police employees at MTAHQ are participants in the New York State and Local Retirement System (NYSLRS). Pension expenses also include employer-matched contributions made to defined contribution pension plans MTA-wide, such as the New York State Voluntary Defined Contribution program and MNR’s MTA 401(k) Plan for eligible employees who opted out of the MTA Defined Benefit Plan.
+[p032_c0009] Year-to-year pension cost changes are influenced by the most recent actuarial valuations for the pension plans in which MTA employees participate, as well as changes in assumed position levels, wage growth and labor settlements.
+[p032_c0010] _II-17_
+
+## Page 33
+
+[p033_c0001] Projected pension expenses total $1,575 million in 2025, $1,686 million in 2026, $1,730 million in 2027, $1,747 million in 2028, and $1,767 million in 2029. Pension expenses are based on actuarial projections and include the impact of anticipated headcount changes in the Financial Plan. Where actuarial projections are unavailable, the forward three-year average of the regional Consumer Price Index plus one percent—which is a proxy intended to capture anticipated impacts from demographic changes of employees and retirees—is applied to the projections.
+[p033_c0002] In comparison with the February Plan, projected pension expenses are favorable by $23 million in 2025, unfavorable by $1 million in 2026, then are favorable by $24 million in 2027 and $47 million in 2028. The favorable impacts primarily reflect the benefit of pension pre-payments made in 2024 on actuarial valuations. Partially offsetting these savings are higher than forecasted expenses for NYCERS at NYCT and B&T.
+[p033_c0003] The difference between the accrual and cash Pension expenses in 2025 is a reflection of the timing of pension prepayments that were advanced in 2024 for estimated pension costs in the MTA-Sponsored Plans in 2025.
+### [p033_c0004] OTHER FRINGE BENEFITS
+[p033_c0005] The Other Fringe Benefits category captures costs for Workers' Compensation and Federal Insurance Contributions Act (FICA) expenses for all Agencies except the Commuter Railroads. For the LIRR and MNR, expenses for Federal Employees Liability Act (FELA) and Railroad Retirement Tax (RRT) payments, which are similar in nature to Workers' Compensation and FICA, are included in this category. Miscellaneous employee expenses are also included in Other Fringe Benefits.
+[p033_c0006] July Plan expenses are projected at $1,143 million in 2025, $1,189 million in 2026, $1,258 million in 2027, $1,313 million in 2028, and $1,369 million in 2029, reflecting year-over-year increases of $46 million in 2025, $69 million in 2027, $55 million in 2028 and $57 million in 2029.
+[p033_c0007] The 2026 increase reflects higher expenses at NYCT ($39 million), the LIRR ($6 million), MTA Bus ($1 million), and MTA HQ ($1 million), partially offset by decreases at MNR ($3 million) and B&T ($1 million). The increases for 2026 through 2028 reflect higher average expenses over the period at NYCT ($6 million), the LIRR ($6 million), MNR ($3 million), MTAHQ ($2 million), and MTA Bus ($1 million). Changes primarily reflect variations in staffing levels driven by programmatic initiatives and annual wage increases. These changes also capture the latest actuarial-based Workers' Compensation reserve requirements at NYCT, Railroad Retirement Tax rates, and Railroad Unemployment Insurance expenses.
+[p033_c0008] Compared with the February Plan, expenses are projected to increase by $25 million for 2025 and increase an average of $22 million annually from 2026 through 2028. The increase in 2025 is mainly driven by higher than anticipated workers' compensation and FICA costs at the LIRR ($8 million), MNR ($8 million), and MTA Bus Company ($8 million). At all Agencies, plan-to-plan changes are consistent with annual wage increases, changes in staffing levels, and programmatic activity.
+### [p033_c0009] ELECTRIC POWER
+[p033_c0010] Electric Power is predominantly supplied to the MTA by the New York Power Authority (NYPA), PSEG Long Island (PSEGLI), New York State Electric and Gas, Central Hudson Gas and Electric, and Orange and Rockland Utilities in New York, and Eversource and United Illuminating in
+[p033_c0011] _II-18_
+
+## Page 34
+
+[p034_c0001] Connecticut. NYPA meets MTA's electricity requirements within the City of New York and Westchester County under the terms of the Long-Term Agreement (LTA); overall, NYPA provides approximately 80 percent of total MTA electric power requirements. The terms of the LTA provide, at the option of the MTA, that certain NYPA assets, including a share of low-cost upstate hydroelectric power, dedicated low-cost transmission line capacity from upstate New York, and a 500-megawatt power plant in Queens be allocated to serve the MTA—options the MTA currently exercises. Along with NYPA and other NYC-area governmental customers, MTA also has a long-term operational share in the Astoria II 550-megawatt power plant, also located in Queens.
+[p034_c0002] For 2025, NYPA expenses are based on an updated cost of service provided by NYPA in April, followed by projections for the generation of electricity. Price assumptions for NYPA-supplied electric power also include costs associated with meeting New York State's Clean Energy Standards initiative. Delivery of NYPA-supplied electricity is handled by Consolidated Edison (Con Ed), and delivery cost projections reflect rates approved by the State Public Service Commission (PSC), including the PSC's decision to create distinct delivery rates for high-tension and low-tension power supplied by NYPA. Cost estimates for electricity supplied by entities other than NYPA are based on forward electricity prices within their electric service territories.
+[p034_c0003]
+
+```text
+FINANCIAL PLAN ASSUMPTIONS FOR ELECTRIC POWER RATES (percent change from prior year) 2025 2026 2027 2028 2029 2025 July Financial Plan NYPA - Traction Power 13.4% 7.0% -4.9% 2.7% -0.5% NYPA - Non-Traction Uses 13.4% 7.0% -4.9% 2.7% -0.5% Con Edison Delivery 6.3% 15.0% 15.0% 15.0% 12.0% PSE&G LI 48.8% -8.5% -3.1% -5.2% 0.9% Eversource / United Illuminating 57.1% -6.8% -7.0% -6.5% 1.8% 2025 February Financial Plan NYPA - Traction Power 34.9% 15.1% 0.3% 0.4% NYPA - Non-Traction Uses 34.9% 15.1% 0.3% 0.4% Con Edison Delivery 6.1% 6.1% 6.1% 6.1% PSE&G LI 21.6% 8.3% 9.8% 0.9% Eversource / United Illuminating 51.3% 2.9% -3.2% -14.7%
+```
+[p034_c0004] MTA consolidated Electric Power expense of $628 million for the 2025 Mid-Year Forecast is $72 million (13.0%) higher than 2024 expenses and reflects the impact of electric power rate changes. Compared with the Adopted Budget, Electric Power expenses are $45 million (7.7%) unfavorable, reflecting higher consumption projections.
+[p034_c0005] Expenses for the 2026 Preliminary Budget are expected to be $641 million, an increase of $13 million (2.1%) from the 2025 Mid-Year Forecast. Compared with the February Plan, Electric Power expenses are $18 million (2.9%) unfavorable.
+[p034_c0006] Electric Power expenses are projected to increase by 0.8% in 2027, 5.0% in 2028 and 5.0% in 2029, when Electric Power expenses are forecast to total $713 million. Compared with the February Plan, expenses are unfavorable by $12 million (1.9%) in 2027 and $21 million (3.2%) in 2028.
+[p034_c0007] _II-19_
+
+## Page 35
+
+### [p035_c0001] FUEL
+[p035_c0002] Fuel expenses reflect, in addition to prices, operating factors that impact consumption such as service adjustments, weather events and seasonality. Diesel and natural gas prices for the July Financial Plan include actual prices through May 5, 2025, and reflect commodity futures prices as of May 9, 2025. Where commodity futures prices are unavailable, price changes are projected using S&P Global, Inc. forecasts (May 2025) for New York Harbor No. 2 Distillate for heating oil and diesel fuels and the Producer Price Index (PPI) for Utility Natural Gas. On a year-to-year basis, Ultra Low Sulfur Diesel (ULSD) prices are projected to decrease by 11.7% in 2025 and 4.3% in 2026, then increase by 1.4% in 2027, 0.6% in 2028, and 5.1% in 2029. For Compressed Natural Gas (CNG), year-to-year prices are forecasted to increase by 100.8% in 2025 and 6.6% in 2026, then decrease by 10.1% in 2027, 0.5% in 2028, and 2.7% in 2029.
+[p035_c0003] Since 2008, the MTA has used financial instruments to hedge a portion of its projected fuel expense to reduce budgetary risk from price volatility. 1 The MTA intends to continue this strategy, with new hedge contracts extending as far as 24 months from execution date, which provides a measure of financial stability from price fluctuations. At any point in time, approximately 50% of the projected fuel usage for the forward 12-month period will be hedged.
+[p035_c0004] Compared to the February Plan, fuel expenses are favorable over the Plan period.
+[p035_c0005] Fuel expenses of $198 million for the 2025 Mid-Year Forecast are $14 million favorable from the Adopted Budget. The Mid-Year Forecast price for ULSD is estimated to be $0.04 per gallon lower than assumed in the Adopted Budget. However, partially offsetting this are higher prices for CNG, which are estimated to be $1.24 per MMBTU higher.
+[p035_c0006] Fuel expenses of $202 million for the 2026 Preliminary Budget are $17 million favorable in comparison with the February Plan. The 2026 Preliminary Budget price for ULSD is estimated to be $0.13 per gallon lower, and CNG prices are estimated to be $1.06 per MMBTU higher than estimated in the February Plan.
+[p035_c0007] For 2027, July Plan fuel expenses are estimated to be $201 million, $16 million lower than projected in the February Plan. The price for ULSD is estimated to be $0.08 per gallon lower, and CNG prices are estimated to be $0.61 per MMBTU higher than projected in the February Plan.
+[p035_c0008] For 2028, July Plan fuel expenses are estimated to be $202 million, which is $18 million favorable in comparison to the February Plan. The price for ULSD is estimated to be $0.13 per gallon lower, and CNG prices are estimated to be $0.68 per MMBTU higher than projected in the February Plan.
+[p035_c0009] For 2029, July Plan fuel expenses are estimated to be $209 million.
+[p035_c0010] _1 Financial impacts from fuel hedge settlements are reflected in cash subsidies, not in the fuel expense category._
+[p035_c0011] _II-20_
+
+## Page 36
+
+### [p036_c0001] INSURANCE
+[p036_c0002] The MTA's insurance programs are obtained through the commercial insurance marketplace and by the MTA's First Mutual Transportation Assurance Company (FMTAC), which is a pure captive insurance company. The programs insured by FMTAC include:
+- [p036_c0003] • All-Agency Excess Liability (Primary) • All-Agency Excess Liability (Excess) 2 • All-Agency Protective Liability (Primary) • All-Agency Protective Liability (Excess) • All-Agency Protective Liability (LORAM) • All-Agency Property Policy 3 • All-Agency Sabotage & Terrorism 3 • Comprehensive Automobile Liability 4 • Paratransit (Access-A-Ride) 4 • Station Liability – LIRR & MNR • Force Account – LIRR & MNR • Premises Liability
+[p036_c0004]
+
+```text
+MTA CONSOLIDATED INSURANCE EXPENSES Non-Reimbursable ($ in millions) 2024 2025 2026 Insurance Expenses Actual Mid-Year Forecast Preliminary Budget 2027 2028 2029 NYCT $76 $85 $88 $91 $94 $98 LIRR 28 30 36 36 38 39 MNR 21 32 35 37 38 40 SIR 2 2 3 3 3 3 MTA Bus 7 10 11 12 12 13 B&T 13 11 14 13 14 14 MTAHQ 3 5 6 6 6 6 Total Gross Insurance Expenses $149 $177 $193 $197 $206 $214 Insurance Credits FMTAC ($141) ($162) ($155) ($159) ($155) ($149) Net Insurance Expenses $8 $15 $38 $38 $50 $65
+```
+[p036_c0005] The above table captures gross insurance expenses by Agency, including those costs that are contracted between MTA Risk Management and the commercial marketplace on behalf of MTA Agencies. It also captures FMTAC expense credits necessary for correct accounting treatment. Since FMTAC is an MTA Agency, its finances are incorporated within MTA consolidated financial reports and budgets. Therefore, premiums paid by an Agency to FMTAC result in offsetting revenue that must be credited. What remains, and is captured as net insurance expenses, are only those costs for non-FMTAC insurance premiums. This includes costs for policies that are contracted directly between MTA Risk Management and the commercial marketplace on behalf of an Agency, as well as for FMTAC policies, that are then re-insured in the commercial marketplace.
+[p036_c0006] _2 A portion is insured through FMTAC, and the remainder is insured in the global market._
+[p036_c0007] _3 These policies are insured through FMTAC and then reinsured in the global market._
+[p036_c0008] _4 Only the deductible portion of these policies is captured within FMTAC._
+[p036_c0009] _II-21_
+
+## Page 37
+
+[p037_c0001] Year-to-year increases in Insurance expenses are primarily driven by assessments of market conditions made by MTA's Risk Management Department in conjunction with its master broker. Policy premiums are primarily driven by changes in underlying losses and market conditions and are further influenced by factors such as claims losses, reserve adjustments and exposure (e.g., projected ridership, vehicle count, and volume of capital work).
+[p037_c0002] Insurance expenses are $15 million in the 2025 Mid-Year Forecast, $38 million in the 2026 Preliminary Budget, $38 million in 2027, $50 million in 2028 and $65 million in 2029. In comparison with the February Plan, MTA consolidated Insurance expenses are favorable by $4 million in 2025, then become unfavorable by $22 million in 2026, $18 million in 2027 and $19 million in 2028. The large increases beginning in 2026, relative to the February Plan, primarily reflect unfavorable renewals for the following policies: Excess Loss (Primary), Property programs, Comprehensive Auto and Paratransit.
+### [p037_c0003] CLAIMS
+[p037_c0004] Claims expenses are comprised of costs associated with employee and non-employee petitions for damages for loss or injury, and include actual payments, actuarial valuations of projected payments, reserve adjustments for incurred claims and other administrative expenses.
+[p037_c0005] Claims expenses in the July Financial Plan are projected to be $424 million for the 2025 Mid-Year Forecast, $440 million for the 2026 Preliminary Budget, $452 million in 2027, $465 million in 2028 and $473 million in 2029. Compared with the February Plan, expenses are unfavorable by $3 million in 2025, $6 million in 2026, $5 million in 2027 and $3 million in 2028.
+### [p037_c0006] PARATRANSIT SERVICE CONTRACTS
+[p037_c0007] Paratransit Service Contracts are third-party contracts for federally mandated transportation services for the benefit of people covered under the Americans with Disabilities Act, as well as for their accompanying personal care attendants. Funding is provided for direct transportation costs (primary vendors, taxis, E-hail, supplemental and broker services) and eligibility determinations, as well as for operational services for scheduling and dispatching trips. Expenses also capture the impact of maintaining vehicles, the scheduling system, the Automated Vehicle Locator, and the Interactive Voice Response system.
+[p037_c0008] July Plan expenses are projected at $765 million in 2025, $874 million in 2026, $948 million in 2027, $999 million in 2028, and $1,057 million in 2029, reflecting annual increases of $109 million in 2026, $73 million in 2027, $52 million in 2028, and $58 million in 2029. The primary driver of expense changes is total trip projections, projected to increase 15% in 2026, 10% in 2027 and 5% thereafter. Changes also include contractual adjustments to paratransit carriers.
+[p037_c0009] Compared with the February Plan, Paratransit Service Contract expenses are projected to increase by $150 million in 2025, followed by annual average increases of $255 million through 2028. The increases reflect increases in transportation and operation support costs.
+### [p037_c0010] MAINTENANCE AND OTHER OPERATING CONTRACTS
+[p037_c0011] Maintenance and Other Operating Contracts is a broad category of expenses that includes facility expenses (e.g., leases, rentals, utilities, real estate taxes), operating contracts (e.g., equipment/vehicle rental, E-Z Pass tags, environmental testing and services, rolling stock purchases), maintenance services (e.g., construction services, third-party snow removal
+[p037_c0012] _II-22_
+
+## Page 38
+
+[p038_c0001] services). Maintenance expenses for Grand Central Madison (GCM) fall under the auspices of Grand Central Madison Operating Company (GCMOC) which includes cleaning of the concourse and public-facing areas (excluding platform level), maintenance of elevators and escalators, HVAC, chiller and steam plants, pump stations, sewers, tunnel drainage, fire and life safety systems, power systems, and access control and intrusion detection systems.
+### [p038_c0002] MTA CONSOLIDATED: MAINTENANCE AND OTHER OPERATING CONTRACTS
+### [p038_c0003] Non-Reimbursable
+[p038_c0004] ($ in Millions)
+[p038_c0005]
+
+```text
+2025 2026 2027 2028 2029 NYCT $336 $310 $318 $289 $295 B&T 167 166 168 170 173 LIRR 127 121 126 153 154 GCMOC 88 91 93 96 98 MNR 139 137 138 140 151 HQ 162 167 170 170 171 MTA Bus 36 38 37 37 37 SIR 11 6 4 4 4 FMTAC 0 0 0 0 0 C&D 0 0 0 0 0 Total $1,066 $1,036 $1,053 $1,060 $1,083
+```
+### [p038_c0006] Year-to-Year Changes Favorable/(Unfavorable)
+[p038_c0007] ($ in Millions)
+[p038_c0008]
+
+```text
+2025-2026 2026-2027 2027-2028 2028-2029 NYCT $26 ($8) $29 ($5) LIRR 6 (5) (27) (1) MNR 2 (0) (3) (11) HQ (5) (3) (1) (1) MTA Bus (2) 0 0 (0) B&T 1 (2) (2) (3) SIR 5 2 0 (0) FMTAC 0 0 0 0 C&D 0 0 0 0 GCMOC (3) (3) (3) (3) Total $30 ($18) ($7) ($23)
+```
+[p038_c0009] _II-23_
+
+## Page 39
+
+[p039_c0001] The projected 2026 decrease is mainly driven by the following: NYCT, mainly due to the reforecast of paratransit fleet purchases and the timing impacts of prior-year expenses; the LIRR, due to one-time maintenance costs for Jamaica Central Control (JCC) and various Maintenance of Way (MoW) maintenance contracts; SIR, mainly due to the timing of prior-year fleet and facility maintenance expenses; and MNR, the timing of prior-year maintenance and operating contracts. These decreases are partially offset by increases at MTA HQ, mainly reflecting higher expenses for tenant improvements for various properties, re-estimates, and internal budget transfers; GCMOC, mainly due to higher inflation projections; and MTA Bus, primarily due to programmatic changes and higher inflation projections.
+[p039_c0002] The projected 2027 increase is mainly driven by the following: NYCT, reflecting higher expenses for communications-based train control (CBTC) and the bus digital radio system, as well as paratransit fleet reforecast; the LIRR, reflecting new infrastructure that will reach critical stages of maintenance, and higher inflation projections; MTA HQ mainly due to higher inflation projections; and B&T, reflecting Major Maintenance & Painting requirements and higher inflation projections.
+[p039_c0003] The projected increases in 2028 and 2029 at LIRR, GCMOC, B&T, and MTA HQ are mainly attributable to the reasons noted above, with increases at the MNR mainly due to Penn Station train service, higher New Haven Line MTA PD allocations, increased real estate rental costs, and the timing of Maintenance of Equipment (MoE) maintenance contracts. These increases are partially offset by lower expenses at NYCT, reflecting the reforecast of paratransit fleet purchases, changes for CBTC, and support services for the Buses' new digital radio system.
+### [p039_c0004] February Plan vs. July Plan Changes Favorable/(Unfavorable) ($ in Millions)
+[p039_c0005]
+
+```text
+Plan-to-Plan 2025 2026 2027 2028 NYCT ($26) ($35) ($32) $4 LIRR 2 (1) (1) (1) MNR 4 4 4 4 HQ (18) (23) (24) (26) MTA Bus 1 (2) (2) (1) B&T 0 (1) (1) (1) SIR (2) (1) (1) (0) FMTC 0 0 0 0 C&D 0 0 0 0 GCMOC (0) (0) (0) (0) Total ($40) ($59) ($57) ($21)
+```
+[p039_c0006] Compared with the February Plan, the 2025 increase is mainly driven by the timing of major programmatic expenses, as well as the reforecast of paratransit fleet purchases at NYCT, higher
+[p039_c0007] _II-24_
+
+## Page 40
+
+[p040_c0001] inflation projections at MTQ HQ, and the timing of non-revenue shop roof repairs at SIR. These increases are partially offset by lower MTA PD New Haven Line allocations at the MNR.
+[p040_c0002] The plan-to-plan increases for 2026 through 2028 are primarily driven by operating budget impacts for CBTC, bus radio maintenance, and the paratransit fleet reforecast at NYCT, as well as higher inflation projections at MTA HQ. These increases are partially offset by decreases for the reasons mentioned above at MNR.
+### [p040_c0003] PROFESSIONAL SERVICE CONTRACTS
+[p040_c0004] Professional Service Contracts expenses broadly consist of three categories: Information Technology (IT); Office and Employee expenses; and Other Professional Services. Information Technology expenses include software, hardware, IT consulting, data center costs, and IT maintenance and repair. Office and Employee expenses include, but are not limited to, expenses for temporary services, office equipment and related rentals, repair and maintenance, and outside training. Other Professional Services expenses include, but are not limited to, fees for contracted business analytics, engineering, legal, auditing, and market research services.
+### [p040_c0005] MTA CONSOLIDATED: PROFESSIONAL SERVICES CONTRACTS Non-Reimbursable ($ in Millions)
+[p040_c0006]
+
+```text
+2025 2026 2027 2028 2029 NYCT $349 $314 $332 $295 $302 B&T 28 28 29 30 30 LIRR 53 49 49 50 51 GCMOC 1 1 1 1 1 MNR 61 60 60 61 62 HQ 356 302 306 306 287 MTA Bus 39 50 52 46 46 SIR 5 1 1 1 1 FMTAC 0 0 0 0 0 C&D 1 1 1 1 1 Total $892 $805 $831 $788 $780
+```
+[p040_c0007] _II-25_
+
+## Page 41
+
+### [p041_c0001] Year-to-Year Changes Favorable/(Unfavorable) ($ in Millions)
+[p041_c0002]
+
+```text
+2025-2026 2026-2027 2027-2028 2028-2029 NYCT $35 ($19) $38 ($7) B&T (1) (1) (1) (1) LIRR 4 1 (1) (1) GCMOC 1 (0) (0) (0) MNR 1 (1) (1) (1) HQ 54 (4) 1 18 MTA Bus (11) (2) 6 0 SIR 4 0 0 0 FMTAC 0 0 0 0 C&D (0) 0 0 0 Total $87 ($25) $42 $8
+```
+[p041_c0003] The 2026 decrease is mostly attributable to the timing impact on prior-year expenses at MTA HQ, the timing of Automatic Camera Enforcement (ACE) and OMNY fare payment system configuration expenses at NYCT, the decrease for mobile ticket application support at the LIRR, and the completion of cybersecurity initiatives at SIR. Partially offsetting these decreases are higher expenses at MTA Bus mainly due to higher inflation projections.
+[p041_c0004] The 2027 increase is primarily driven by the timing of initiatives, including ACE, OMNY fare payment system configuration expenses, and inflationary changes at NYCT, new needs and re-estimates at MTA HQ, and higher inflation projections at MTA Bus. Decreases in 2028 and 2029 are mainly due to the timing of previously mentioned initiatives at NYCT, the Bus Command Center at MTA Bus, and adjustments for programmatic needs at MTA HQ.
+[p041_c0005] _II-26_
+
+## Page 42
+
+### [p042_c0001] February Plan vs. July Plan Changes Favorable/(Unfavorable) ($ in Millions) Plan-to-Plan
+[p042_c0002]
+
+```text
+2025 2026 2027 2028 NYCT ($65) ($10) ($6) ($6) B&T (1) 0 0 0 LI RR (1) (1) (0) (0) GCMOC (1) 1 1 1 MNR (7) (6) (6) (6) HQ (37) (6) (13) (21) MTA Bus 4 (2) (2) (2) SIR (4) (0) (0) (0) FMTAC 0 0 0 0 C&D (0) 0 0 0 Total ($108) ($22) ($25) ($34)
+```
+[p042_c0003] Major contributors to the overall plan-to-plan changes include:
+- [p042_c0004] • NYCT expenses increase in 2025 mainly due to the timing impact of prior-year expenses and higher support for the workers' compensation claims management system. Increases from 2026 through 2028 are primarily due to support for the workers' compensation claim management system, OMNY fare payment system configurations, and higher real estate expenses. • MTA HQ expense increases in 2025 are mainly due to the timing impact of prior-year expenses. Higher expenses from 2026 through 2028 are primarily due to higher costs of Enterprise Asset Management (EAM) mobile devices and device maintenance support, as well as higher software costs associated with managing infrastructure and assets. • MNR expenses increase from 2025 through 2028, mainly due to the transfer of Occupational Health Services (OHS) expenses, higher New Haven Line MTA Information Technology allocations, the timing of Positive Train Control (PTC) third-party onsite vendor contracts, and the timing of mobile ticket application support costs. • SIR expenses increase in 2025 mainly due to cybersecurity initiatives. • MTA Bus expenses decrease in 2025, mainly due to the re-examination of budgetary needs, and increase from 2026 through 2028, mainly due to higher inflation projections.
+[p042_c0005] _II-27_
+
+## Page 43
+
+### [p043_c0001] MATERIALS AND SUPPLIES
+[p043_c0002] Materials and Supplies include funding for a variety of expenses such as rolling stock replacement parts, electrical supplies, communication equipment, project materials, roadway equipment, and infrastructure maintenance supplies.
+### [p043_c0003] MTA CONSOLIDATED: MATERIALS & SUPPLIES
+[p043_c0004] Non-Reimbursable ($ in Millions)
+[p043_c0005]
+
+```text
+2025 2026 2027 2028 2029 NYCT $413 $405 $392 $409 $438 B&T 4 4 4 4 4 LIRR 140 186 284 310 323 GCMOC 0 0 0 0 0 MNR 131 157 172 181 190 HQ 4 4 4 4 4 MTA Bus 43 46 43 44 44 SIR 2 2 1 1 1 FMTAC 0 0 0 0 0 C&D 0 0 0 0 0 Total $738 $803 $899 $953 $1,005
+```
+[p043_c0006] Year-to-Year Changes Favorable/(Unfavorable) ($ in Millions)
+[p043_c0007]
+
+```text
+2025-2026 2026-2027 2027-2028 2028-2029 NYCT $8 $13 ($17) ($29) B&T 0 (0) (0) (0) LIRR (45) (98) (27) (13) GCMOC 0 0 0 0 MNR (25) (15) (9) (9) HQ 0 (0) (0) (0) MTA Bus (3) 4 (1) (1) SIR 0 0 (0) (0) FMTAC 0 0 0 0 C&D 0 0 0 0 Total ($65) ($97) ($54) ($51)
+```
+[p043_c0008] _II-28_
+
+## Page 44
+
+[p044_c0001] The increase from 2025 to 2026 is primarily due to material associated with Reliability Centered Maintenance (RCM) and fleet modification activities (which include the revised schedule for M7 Propulsion), and higher inflation projections at the LIRR; the revised timing of Maintenance of Equipment (MoE) material expenses, higher inflation projections, and Penn Station train service at MNR; and programmatic changes and higher inflation projections at MTA Bus. These increases are partially offset by a decrease at NYCT, primarily due to a one-year shift for implementing initiatives.
+[p044_c0002] Annual increases from 2027 through 2029 are primarily due to the aforementioned reasons at the LIRR and MNR, as well as changes to material requirements for revenue vehicles and revised inflation projections at NYCT.
+### [p044_c0003] February Plan vs. July Plan Favorable/(Unfavorable) ($ in Millions)
+[p044_c0004]
+
+```text
+Feb Plan vs. July Plan 2025 2026 2027 2028 NYCT ($46) ($34) ($26) ($26) B&T (1) (1) (1) (1) LIRR (5) (16) (20) (19) GCMOC 0 0 0 0 MNR (8) (12) (11) (11) HQ (3) (3) (3) (3) MTA Bus 1 (1) 3 3 SIR (0) (0) 0 0 FMTAC 0 0 0 0 C&D 0 0 0 0 Total ($63) ($67) ($58) ($57)
+```
+[p044_c0005] Compared with the February Plan, higher expenses are projected in 2025 at NYCT mainly due to the timing impact of prior-year expenses, higher inflation projections, and additional maintenance requirements for the revenue fleet; at the LIRR mainly due to material for the installation of forward-facing cameras onboard revenue trains per FRA Mandate and higher inflation projections; and at MNR mainly due to higher inflation projections and an accounting adjustment for obsolete material reserves. Increases from 2026 through 2028 are driven primarily by higher inflation projections at NYCT, as well as the aforementioned reasons at the LIRR and MNR, partially offset by a decrease at MTA Bus mainly due to re-examination of budgetary needs.
+[p044_c0006] _II-29_
+
+## Page 45
+
+### [p045_c0001] OTHER BUSINESS EXPENSES
+[p045_c0002] Other Business Expenses consist of a variety of expenses, including credit and debit card processing fees for fare and toll media purchases, OMNY transaction fees, bond service fees, Payroll Mobility Tax payments, and internal subsidy support requirements.
+### [p045_c0003] MTA CONSOLIDATED: OTHER BUSINESS EXPENSES Non-Reimbursable ($ in Millions)
+[p045_c0004]
+
+```text
+2025 2026 2027 2028 2029 NYCT $149 $155 $162 $165 $163 B&T 58 58 58 58 58 LIRR 26 26 26 26 26 GCMOC 0 0 0 0 0 MNR 29 29 29 48 49 HQ 23 20 21 26 26 MTA Bus 8 8 8 8 8 SIR 1 0 0 0 0 FMTAC 8 8 8 8 8 C&D 0 0 0 0 0 Total $302 $304 $312 $339 $339
+```
+### [p045_c0005] Year-to-Year Changes Favorable/(Unfavorable) ($ in Millions)
+[p045_c0006]
+
+```text
+2025-2026 2026-2027 2027-2028 2028-2029 NYCT ($6) ($7) ($3) $2 B&T (0) (0) (0) (0) LIRR (0) (0) 0 (0) GCMOC 0 (0) (0) (0) MNR 0 (0) (19) (1) HQ 3 (0) (5) (0) MTA Bus (0) 0 (0) (0) SIR 1 0 (0) (0) FMTAC (0) (0) (0) (0) C&D 0 (0) (0) (0) Total ($2) ($8) ($27) $0
+```
+[p045_c0007] The 2025 increase is mostly attributable to higher credit and debit card fees at NYCT, partially offset by a decrease at MTA HQ mainly due to the timing of 2024 expenses.
+[p045_c0008] The increases for 2026 through 2028 are attributable to reasons noted above at NYCT, higher New Jersey Transit subsidy payments for West of Hudson operations and higher credit/debit
+[p045_c0009] _II-30_
+
+## Page 46
+
+[p046_c0001] card processing at MNR in 2028, and higher Payroll Mobility Tax payments at MTA HQ, also in 2028.
+[p046_c0002]
+
+```text
+February Financial vs. July Financial Plan Plan-to-Plan Changes Favorable/(Unfavorable) ($ in Millions) Plan-to-Plan 2025 2026 2027 2028 NYCT ($0) ($0) ($0) ($1) B&T 1 1 1 1 LIIRR (0) (0) (0) (0) GCMOC (0) (0) (0) (0) MNR 2 2 2 2 HQ 21 22 22 22 MTA Bus 1 1 1 1 SIR (1) (0) (0) (0) FMAC 1 1 1 1 C&D 0 (0) (0) (0) Total $24 $26 $26 $25
+```
+[p046_c0003] Compared with the February Plan, 2025 through 2028 decreases in expenses mainly reflect the impact of the shift of the Outer Borough Transportation Account (OBTA) funding for B&T bridge rebates, included as an expense in the February Plan, from MTAHQ to B&T; and increased Passenger Rail Investment and Improvement Act (PRIIA) Amtrak recoveries and expense recoveries for the operation, maintenance, inspection, and oversight of M8 rail cars at MNR.
+[p046_c0004] _II-31_
+
+## Page 47
+
+[p047_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p047_c0002] _II-32_
+
+## Page 48
+
+### [p048_c0001] Subsidies
+
+## Page 49
+
+### [p049_c0001] SUBSIDIES - OVERVIEW
+[p049_c0002] The following pages provide accrued and cash summary tables for projections of subsidies and dedicated taxes received by the MTA. The details of Bridges and Tunnels operations that produce the Operating Surplus Transfer are discussed in the Bridges and Tunnels portion of the Agency Financial Plans section of this report. Consolidated income and expense information on NYCT's Paratransit operation is included at the end of this section. Note that additional details on NYCT's Paratransit operation can be found in the New York City Transit portion of the Agency Financial Plans section of this report.
+[p049_c0003] Tax Law changes in the NYS 2025-26 Enacted Budget impacted the Payroll Mobility Tax (PMT), Metropolitan Mass Transportation Operating Assistance (MMTOA) and Mass Transportation Trust Fund (MTTF). The MTTF, which in prior MTA financial plans was referred to as Petroleum Business Tax (PBT), comprises revenue derived from petroleum business privilege taxes, gasoline and diesel fuel excise taxes, and fees for vehicle registrations and driver licenses. Details of the legislative changes impacting these subsidies can be found in the sections that follow this overview.
+[p049_c0004] Excluding Subsidy Adjustments and Other Funding Agreements, compared with the February Plan, estimates for combined subsidy revenues are favorable through the Plan period, primarily reflecting higher year-to-date PMT receipts for 2025 and favorable PMT re-estimates for the remainder of the plan based on discussions with NYS Division of the Budget. The Mortgage Recording Tax (MRT), Urban Tax and Investment Income are all favorable in 2025 based on year-to-date receipts, and for the remainder of the Plan period are mostly unchanged from the February Plan except for minor offsetting MRT and Urban Tax variances in 2028. Receipts for the For-Hire Vehicle (FHV) are lower each year, impacting the deposits to the General Transportation Account. MMTOA and MTTF forecasts reflect offsetting shifts in sales tax receipts due to the tax law, with remaining plan-to-plan reductions reflecting revised State projections for petroleum business taxes and the vehicle registration and license fees.
+[p049_c0005] Consistent with prior plans, the July Plan assumes the receipt of $500 million in license fees from each of three new casinos, one each year from 2026 to 2028. It is projected that each casino will generate for MTA $100 million annually from gaming taxes, with the casinos beginning operation one year apart beginning in 2028.
+[p049_c0006] Higher than anticipated interest rates result in favorable investment in 2025 compared with the February Plan. Interest rates are forecast to decline to prior projections, with investment income for the remainder of the Plan period unchanged from the February Plan.
+[p049_c0007] Projected receipts for each subsidy, along with plan-to-plan and year-to-year changes, can be found on the following tables.
+[p049_c0008] _II-33_
+
+## Page 50
+
+### [p050_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+[p050_c0002] July Financial Plan 2026 - 2029
+[p050_c0003] Consolidated Subsidies
+[p050_c0004] Accrual Basis
+[p050_c0005] ($ in millions)
+[p050_c0006]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 MMTOA, PBT, Real Estate Taxes and Other Metropolitan Mass Transportation Operating Assistance (MMTOA) $3,000.0 $3,151.2 $1,954.4 $1,922.9 $1,961.4 $2,000.6 Mass Transportation Trust Fund (MTTF) 599.1 582.9 1,768.2 1,799.6 1,831.1 1,863.6 Mortgage Recording Tax (MRT) 350.0 412.9 474.6 571.9 599.2 628.9 MRT Transfer to Suburban Counties (12.1) (13.3) (14.8) (17.1) (17.6) (18.1) Urban Tax 387.2 441.6 480.0 580.1 594.5 609.3 $4,324.3 $4,575.3 $4,662.4 $4,857.4 $4,968.6 $5,084.3 PMT and MTA Aid Payroll Mobility Tax (PMT) for Operating $3,130.8 $3,365.0 $3,512.3 $3,582.5 $3,636.3 $3,672.6 Payroll Mobility Tax Replacement Funds 244.3 244.3 244.3 244.3 244.3 244.3 MTA Aid 269.6 273.6 273.6 273.6 273.6 273.6 $3,644.7 $3,882.9 $4,030.2 $4,100.4 $4,154.1 $4,190.5 For-Hire Vehicle (FHV) Surcharge Subway Action Plan Account $300.0 $300.0 $300.0 $300.0 $300.0 $300.0 Outerborough Transportation Account (OBTA) Transfer to Operating 0.8 30.6 49.2 49.7 50.2 50.7 General Transportation Account 0.0 0.0 0.0 0.0 0.0 0.0 $300.8 $330.6 $349.2 $349.7 $350.2 $350.7 Automated Camera Enforcement (ACE) $22.6 $93.0 $113.2 $127.7 $86.1 $86.1 Peer-to-Peer Car Sharing Trip Tax $1.4 $1.1 $1.2 $1.2 $1.2 $1.2 Capital Lockbox Fund Payroll Mobility Tax (PMT) for Capital Funding $0.0 $501.0 $1,400.0 $1,428.0 $1,449.4 $1,463.9 Central Business District Tolling Program (CBDTP) 0.0 500.0 500.0 500.0 700.0 700.0 Real Estate Transfer Tax 322.8 332.8 335.7 335.8 339.9 344.1 Internet Marketplace Tax - NYS 155.7 157.3 158.8 160.4 162.0 163.6 Internet Marketplace Tax - NYC 176.5 178.2 180.0 181.8 183.6 185.5 Subtotal: 654.9 1,669.3 2,574.5 2,606.0 2,835.0 2,857.1 Less: Debt Service on Lockbox Bonds to fund the 2020-2024 Capital Program (186.3) (272.1) (353.7) (446.3) (610.5) (808.5) Less: Debt Service on Lockbox Bonds to fund the 2025-2029 Capital Program 0.0 0.0 0.0 (25.2) (138.2) (371.5) Less: 2020-2024 Capital Program PAYGO and CBDTP Expenses (468.6) (896.1) (820.8) (731.8) (775.1) (584.8) Less: 2025-2029 Capital Program PAYGO 0.0 (501.0) (1,400.0) (1,402.8) (1,311.2) (1,092.4) $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 State and Local Subsidies State Operating Assistance $187.9 $187.9 $187.9 $187.9 $187.9 $187.9 Local Operating Assistance 187.9 187.9 187.9 187.9 187.9 187.9 Station Maintenance 211.0 213.7 222.2 228.1 232.3 236.4 State General Fund Subsidy 150.0 0.0 0.0 0.0 0.0 0.0 $736.8 $589.6 $598.0 $603.9 $608.2 $612.3 Casino License and Gaming Tax Revenues $0.0 $0.0 $500.0 $500.0 $600.0 $200.0 Investment Income $92.5 $73.2 $14.3 $14.3 $14.3 $14.3 Subtotal: Taxes & State and Local Subsidies $9,123.0 $9,545.7 $10,268.4 $10,554.5 $10,782.6 $10,539.3 Other Funding Agreements City Subsidy for MTA Bus Company $504.0 $548.5 $706.9 $775.9 $788.4 $813.3 City Subsidy for Staten Island Railway 42.0 80.6 77.2 75.6 75.0 76.9 CDOT Subsidy for Metro-North Railroad 260.4 265.2 262.4 273.9 292.7 310.1 $806.4 $894.2 $1,046.5 $1,125.5 $1,156.2 $1,200.3 Subtotal, including Other Funding Agreements $9,929.4 $10,439.9 $11,314.9 $11,679.9 $11,938.8 $11,739.5 Inter-agency Subsidy Transactions B&T Operating Surplus Transfer $1,422.7 $1,338.3 $1,283.2 $1,251.2 $1,187.9 $1,230.9 $1,422.7 $1,338.3 $1,283.2 $1,251.2 $1,187.9 $1,230.9 GROSS SUBSIDIES $11,352.1 $11,778.2 $12,598.1 $12,931.1 $13,126.6 $12,970.4
+```
+[p050_c0007] _II-34_
+
+## Page 51
+
+### [p051_c0001] METROPOLITAN TRANSPORTATION AUTHORITY Summary of Changes Between July and February Financial Plans Consolidated Subsidies Accrual Basis
+[p051_c0002]
+
+```text
+2025 2026 2027 2028 MMTOA, PBT, Real Estate Taxes and Other Metropolitan Mass Transportation Operating Assistance (MMTOA) $1.1 ($1,195.7) ($1,227.1) ($1,251.7) Mass Transportation Trust Fund (MTTF) (11.8) 1,173.4 1,204.9 1,236.3 Mortgage Recording Tax (MRT) 24.1 0.0 0.6 7.5 MRT Transfer to Suburban Counties (0.5) 0.0 0.0 (0.1) Reimburse Agency Security Costs 0.0 0.0 0.0 0.0 Interest on MRT Receipts 0.0 0.0 0.0 0.0 Urban Tax 50.2 0.0 (0.4) (5.6) $63.1 ($22.2) ($22.1) ($13.5) PMT and MTA Aid Payroll Mobility Tax (PMT) for Operating $214.9 $234.6 $178.8 $105.5 Payroll Mobility Tax Replacement Funds 0.0 0.0 0.0 0.0 MTA Aid 0.0 0.0 0.0 0.0 $214.9 $234.6 $178.8 $105.5 For-Hire Vehicle (FHV) Surcharge Subway Action Plan Account $0.0 $0.0 $0.0 $0.0 Outerborough Transportation Account (OBTA) Transfer to Operating 6.8 25.5 26.0 26.5 General Transportation Account (18.7) (24.6) (25.6) (26.6) ($11.8) $0.9 $0.4 ($0.1) Automated Camera Enforcement (ACE) $0.0 $0.0 $0.0 $0.0 Peer-to-Peer Car Sharing Trip Tax $0.0 $0.0 $0.0 $0.0 Capital Lockbox Fund Payroll Mobility Tax (PMT) for Capital Funding $501.0 $1,400.0 $1,428.0 $1,449.4 Central Business District Tolling Program (CBDTP) $0.0 $0.0 $0.0 $0.0 Real Estate Transfer Tax 0.0 0.0 0.0 0.0 Internet Marketplace Tax - NYS 0.0 0.0 0.0 0.0 Internet Marketplace Tax - NYC 0.0 0.0 0.0 0.0 Subtotal: 501.0 1,400.0 1,428.0 1,449.4 Less: Debt Service on Lockbox Bonds for the 2020-2024 Capital Program 148.5 276.9 492.7 573.5 Less: Debt Service on Lockbox Bonds for the 2025-2029 Capital Program 0.0 0.0 (25.2) (138.2) Less: 2020-2024 Capital Program PAYGO and CBDTP Expenses (148.5) (276.9) (492.7) (573.5) Less: 2025-2029 Capital Program PAYGO (501.0) (1,400.0) (1,402.8) (1,311.2) $0.0 $0.0 $0.0 $0.0 State and Local Subsidies State Operating Assistance $0.0 $0.0 $0.0 $0.0 Local Operating Assistance 0.0 0.0 0.0 0.0 Station Maintenance $5.5 $11.6 $12.8 $12.2 $5.5 $11.6 $12.8 $12.2 Casino License and Gaming Tax Revenues $0.0 $0.0 $0.0 $0.0 Investment Income $38.9 $0.0 $0.0 $0.0 Subtotal: Taxes & State and Local Subsidies $310.6 $224.8 $170.0 $104.0 Other Funding Agreements City Subsidy for MTA Bus Company $26.0 $4.3 ($2.7) ($4.9) City Subsidy for Staten Island Railway 6.7 4.6 4.0 3.6 CDOT Subsidy for Metro-North Railroad 0.7 (11.6) (15.3) (7.2) $33.4 ($2.7) ($14.0) ($8.6) Subtotal, including Other Funding Agreements $344.0 $222.1 $156.0 $95.4 Inter-agency Subsidy Transactions B&T Operating Surplus Transfer $11.7 $16.6 $29.1 $56.6 $11.7 $16.6 $29.1 $56.6 GROSS SUBSIDIES $355.7 $238.7 $185.1 $152.1
+```
+[p051_c0003] _II-35_
+
+## Page 52
+
+### [p052_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026 -2029 Consolidated Subsidies - Year to Year Changes Accrual Basis ($ in Millions)
+[p052_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Change 2024 - 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 MMTOA, PBT, Real Estate Taxes and Other Metropolitan Mass Transportation Operating Assistance (MMTOA) $3,000.0 $3,151.2 $151.1 $1,954.4 ($1,196.8) $1,922.9 ($31.4) $1,961.4 $38.5 $2,000.6 $39.2 Mass Transportation Trust Fund (MTTF) 599.1 582.9 (16.1) 1,768.2 1,185.2 1,799.6 31.4 1,831.1 31.4 1,863.6 32.5 Mortgage Recording Tax (MRT) 350.0 412.9 62.9 474.6 61.7 571.9 97.3 599.2 27.4 628.9 29.6 MRT Transfer to Suburban Counties (12.1) (13.3) (1.2) (14.8) (1.5) (17.1) (2.3) (17.6) (0.5) (18.1) (0.5) Urban Tax 387.2 441.6 54.3 480.0 38.5 580.1 100.0 594.5 14.4 609.3 14.8 $4,324.3 $4,575.3 $251.0 $4,662.4 $87.1 $4,857.4 $195.0 $4,968.6 $111.2 $5,084.3 $115.7 PMT and MTA Aid Payroll Mobility Tax (PMT) for Operating $3,130.8 $3,365.0 $234.2 $3,512.3 $147.3 $3,582.5 $70.2 $3,636.3 $53.7 $3,672.6 $36.4 Payroll Mobility Tax Replacement Funds 244.3 244.3 0.0 244.3 0.0 244.3 0.0 244.3 0.0 244.3 0.0 MTA Aid 269.6 273.6 4.1 273.6 0.0 273.6 0.0 273.6 0.0 273.6 0.0 $3,644.7 $3,882.9 $238.2 $4,030.2 $147.3 $4,100.4 $70.2 $4,154.1 $53.7 $4,190.5 $36.4 For-Hire Vehicle (FHV) Surcharge Subway Action Plan Account $300.0 $300.0 $0.0 $300.0 $0.0 $300.0 $0.0 $300.0 $0.0 $300.0 $0.0 Outerborough Transportation Account (OBTA) Transfer to Operating 0.8 30.6 29.8 49.2 18.6 49.7 0.5 50.2 0.5 50.7 0.5 General Transportation Account 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 $300.8 $330.6 $29.8 $349.2 $18.6 $349.7 $0.5 $350.2 $0.5 $350.7 $0.5 Automated Camera Enforcement (ACE) $22.6 $93.0 $70.4 $113.2 $20.2 $127.7 $14.4 $86.1 ($41.6) $86.1 $0.0 Peer-to-Peer Car Sharing Trip Tax $1.4 $1.1 ($0.3) $1.2 $0.0 $1.2 $0.0 $1.2 $0.0 $1.2 $0.0 Capital Lockbox Fund Payroll Mobility Tax (PMT) for Capital Funding $0.0 $501.0 $501.0 $1,400.0 $899.0 $1,428.0 $28.0 $1,449.4 $21.4 $1,463.9 $14.5 Central Business District Tolling Program (CBDTP) 0.0 500.0 500.0 500.0 0.0 500.0 0.0 700.0 200.0 700.0 0.0 Real Estate Transfer Tax 322.8 332.8 10.0 335.7 2.9 335.8 0.1 339.9 4.1 344.1 4.2 Internet Marketplace Tax - NYS 155.7 157.3 1.6 158.8 1.6 160.4 1.6 162.0 1.6 163.6 1.6 Internet Marketplace Tax - NYC 176.5 178.2 1.8 180.0 1.8 181.8 1.8 183.6 1.8 185.5 1.8 Subtotal: 654.9 1,669.3 1,014.3 2,574.5 905.3 2,606.0 31.5 2,835.0 229.0 2,857.1 22.1 Less: Debt Service on Lockbox Bonds for the 2020-2024 Capital Program (186.3) (272.1) (85.8) (353.7) (91.5) (446.3) (92.6) (610.5) (164.2) (808.5) (198.0) Less: Debt Service on Lockbox Bonds for the 2025-2029 Capital Program 0.0 0.0 0.0 0.0 0.0 (25.2) (25.2) (138.2) (113.0) (371.5) (233.3) Less: 2020-2024 Capital Program PAYGO and CBDTP Expenses (468.6) (896.1) (427.5) (820.8) 75.3 (731.8) 89.0 (775.1) (43.3) (584.8) 190.3 Less: 2025-2029 Capital Program PAYGO 0.0 (501.0) (501.0) (1,400.0) (899.0) (1,400.8) (2.8) (1,311.2) 91.6 (1,092.4) 218.8 $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 State and Local Subsidies State Operating Assistance $187.9 $187.9 $0.0 $187.9 $0.0 $187.9 $0.0 $187.9 $0.0 $187.9 $0.0 Local Operating Assistance 187.9 187.9 0.0 187.9 0.0 187.9 0.0 187.9 0.0 187.9 0.0 Station Maintenance 211.0 213.7 2.8 222.2 8.4 228.1 5.9 232.3 4.2 236.4 4.1 State General Fund Subsidy 150.0 0.0 (150.0) 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 $736.8 $589.6 ($147.2) $598.0 $8.4 $603.9 $5.9 $608.2 $4.2 $612.3 $4.1 Casino License Revenues $0.0 $0.0 $0.0 $500.0 $500.0 $500.0 $0.0 $600.0 $100.0 $200.0 ($400.0) Investment Income $92.5 $73.2 ($19.3) $14.3 ($58.9) $14.3 $0.0 $14.3 $0.0 $14.3 $0.0 Subtotal: Taxes & State and Local Subsidies $9,123.0 $9,545.7 $422.7 $10,268.4 $722.7 $10,554.5 $286.1 $10,782.6 $228.1 $10,539.3 ($243.3) Other Funding Agreements City Subsidy for MTA Bus Company $504.0 $548.5 $44.4 $706.9 $158.4 $775.9 $69.1 $788.4 $12.5 $813.3 $24.8 City Subsidy for Staten Island Railway 42.0 80.6 38.5 77.2 (3.4) 75.6 (1.6) 75.0 (0.6) 76.9 1.9 CDOT Subsidy for Metro-North Railroad 260.4 265.2 4.8 262.4 (2.8) 273.9 11.6 292.7 18.8 310.1 17.4 $806.4 $894.2 $87.8 $1,046.5 $152.3 $1,125.5 $79.0 $1,156.2 $30.7 $1,200.3 $44.1 Subtotal, including Other Funding Agreements $9,929.4 $10,439.9 $510.5 $11,314.9 $875.0 $11,679.9 $365.0 $11,938.8 $258.8 $11,739.5 ($199.2) Inter-agency Subsidy Transactions B&T Operating Surplus Transfer $1,422.7 $1,338.3 ($84.4) $1,283.2 ($55.1) $1,251.2 ($32.0) $1,187.9 ($63.4) $1,230.9 $43.0 $1,422.7 $1,338.3 ($84.4) $1,283.2 ($55.1) $1,251.2 ($32.0) $1,187.9 ($63.4) $1,230.9 $43.0 GROSS SUBSIDIES $11,352.1 $11,778.2 $426.1 $12,598.1 $819.9 $12,931.1 $333.1 $13,126.6 $195.5 $12,970.4 ($156.2)
+```
+[p052_c0003] _36-11_
+
+## Page 53
+
+### [p053_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+[p053_c0002] July Financial Plan 2026 - 2029
+[p053_c0003] Consolidated Subsidies
+[p053_c0004] Cash Basis
+[p053_c0005] ($ in millions)
+[p053_c0006]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 MMTOA, PBT, Real Estate Taxes and Other Metropolitan Mass Transportation Operating Assistance (MMTOA) $3,000.0 $3,151.2 $1,954.4 $1,922.9 $1,961.4 $2,000.6 Mass Transportation Trust Fund (MTTF) 639.6 583.2 1,768.2 1,799.6 1,831.1 1,863.6 Mortgage Recording Tax (MRT) 341.6 408.1 466.0 569.6 596.8 626.3 MRT Transfer to Suburban Counties (11.4) (12.1) (13.3) (14.8) (17.1) (17.6) MTA Bus Debt Service (12.3) (12.6) (14.5) (13.6) (12.3) (13.7) Urban Tax 377.8 438.9 471.0 578.9 593.2 608.0 $4,335.2 $4,556.7 $4,631.8 $4,842.6 $4,953.1 $5,067.2 PMT and MTA Aid Payroll Mobility Tax (PMT) for Operating $3,116.5 $3,365.0 $3,512.3 $3,582.5 $3,636.3 $3,672.6 Payroll Mobility Tax Replacement Funds 244.3 244.3 244.3 244.3 244.3 244.3 MTA Aid 269.6 273.6 273.6 273.6 273.6 273.6 $3,630.3 $3,882.9 $4,030.2 $4,100.4 $4,154.1 $4,190.5 For-Hire Vehicle (FHV) Surcharge Subway Action Plan Account $300.0 $300.0 $300.0 $300.0 $300.0 $300.0 Outerborough Transportation Account (OBTA) Transfer to Operating 0.8 30.6 49.2 49.7 50.2 50.7 General Transportation Account 0.0 0.0 0.0 0.0 0.0 0.0 $300.8 $330.6 $349.2 $349.7 $350.2 $350.7 Automated Camera Enforcement (ACE) $22.6 $93.0 $113.2 $127.7 $86.1 $86.1 Peer-to-Peer Car Sharing Trip Tax $1.4 $1.1 $1.2 $1.2 $1.2 $1.2 Capital Lockbox Fund Payroll Mobility Tax (PMT) for Capital Funding $0.0 $501.0 $1,400.0 $1,428.0 $1,449.4 $1,463.9 Central Business District Tolling Program (CBDTP) 0.0 500.0 500.0 500.0 700.0 700.0 Real Estate Transfer Tax 322.8 332.8 335.7 335.8 339.9 344.1 Internet Marketplace Tax -NYS 155.7 157.3 158.8 160.4 162.0 163.6 Internet Marketplace Tax - NYC 176.5 178.2 180.0 181.8 183.6 185.5 Subtotal: 654.9 1,669.3 2,574.5 2,606.0 2,835.0 2,857.1 Less: Debt Service on Lockbox Bonds for the 2020-2024 Capital Program (186.3) (272.1) (353.7) (446.3) (610.5) (808.5) Less: Debt Service on Lockbox Bonds for the 2025-2029 Capital Program 0.0 0.0 0.0 (25.2) (138.2) (371.5) Less: 2020-2024 Capital Program PAYGO and CBDTP Expenses (468.6) (896.1) (820.8) (731.8) (775.1) (584.8) Less: 2025-2029 Capital Program PAYGO 0.0 (501.0) (1,400.0) (1,402.8) (1,311.2) (1,092.4) $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 State and Local Subsidies State Operating Assistance $187.9 $187.9 $187.9 $187.9 $187.9 $187.9 Local Operating Assistance 152.9 222.9 187.9 187.9 187.9 187.9 Station Maintenance 205.5 213.7 222.2 228.1 232.3 236.4 State General Fund Subsidy 150.0 0.0 0.0 0.0 0.0 0.0 $696.4 $624.6 $598.0 $603.9 $608.2 $612.3 Casino License and Gaming Tax Revenues $0.0 $0.0 $500.0 $500.0 $600.0 $200.0 Investment Income $95.4 $78.5 $15.9 $14.3 $14.3 $14.3 Other Subsidy Adjustments NYCT Charge Back of MTA Bus Debt Service ($11.5) ($11.5) ($11.5) ($11.5) ($11.5) ($11.5) Forward Energy Contracts Program - Gain/(Loss) (6.6) (13.9) (5.9) (0.1) 0.0 0.0 Other Local Subsidy Resources 888.7 (224.6) 0.0 0.0 183.9 139.2 Other Local Subsidy to Cover Debt Service Prepayment (240.1) 0.0 0.0 0.0 0.0 0.0 OPEB Trust/Reserve* 0.0 0.0 (157.8) (21.0) 85.0 822.8 Federal Formula Grant 2,302.0 1,446.7 0.0 0.0 0.0 0.0 Federal Grant Funds to pay for Capital Projects (2,302.0) (1,446.7) 0.0 0.0 0.0 0.0 Subsidy Adjustments $630.4 ($250.0) ($175.3) ($32.6) $257.4 $950.5 Subtotal: Taxes & State and Local Subsidies $9,712.5 $9,317.4 $10,064.2 $10,507.1 $11,024.6 $11,472.7 Other Funding Agreements City Subsidy for MTA Bus Company $527.2 $523.3 $728.6 $824.7 $785.3 $822.1 City Subsidy for Staten Island Railway 44.6 42.0 80.6 77.2 75.6 75.0 CDOT Subsidy for Metro-North Railroad 283.4 265.2 262.4 273.9 292.7 310.1 $855.2 $830.5 $1,071.5 $1,175.9 $1,153.7 $1,207.2 Subtotal, including Other Funding Agreements $10,567.7 $10,147.9 $11,135.8 $11,683.0 $12,178.2 $12,679.9 Inter-agency Subsidy Transactions B&T Operating Surplus Transfer $1,440.9 $1,401.2 $1,288.7 $1,254.4 $1,194.2 $1,226.6 $1,440.9 $1,401.2 $1,288.7 $1,254.4 $1,194.2 $1,226.6 TOTAL SUBSIDIES $12,008.6 $11,549.1 $12,424.5 $12,937.4 $13,372.4 $13,906.5
+```
+[p053_c0007] * Contribution to and/or Reimbursements from OPEB Trust and/or OPEB Reserve Accounts.
+[p053_c0008] _II-37_
+
+## Page 54
+
+### [p054_c0001] METROPOLITAN TRANSPORTATION AUTHORITY Summary of Changes Between July and February Financial Plans Consolidated Subsidies
+[p054_c0002] Cash Basis ($ in millions)
+[p054_c0003]
+
+```text
+2025 2026 2027 2028 MMTOA, PBT, Real Estate Taxes and Other Metropolitan Mass Transportation Operating Assistance (MMTOA) $1.1 ($1,195.7) ($1,227.1) ($1,251.7) Mass Transportation Trust Fund (MTTF) (11.5) 1,173.4 1,204.9 1,236.3 Mortgage Recording Tax (MRT) 26.3 0.0 0.0 7.0 MRT Transfer to Suburban Counties (0.3) (0.5) 0.0 0.0 Urban Tax 54.8 0.0 0.0 (5.1) $70.3 ($22.8) ($22.2) ($13.4) PMT and MTA Aid Payroll Mobility Tax (PMT) for Operating $214.9 $234.6 $178.8 $105.5 Payroll Mobility Tax Replacement Funds 0.0 0.0 0.0 0.0 MTA Aid 0.0 0.0 0.0 0.0 $214.9 $0.0 $178.8 $105.5 For-Hire Vehicle (FHV) Surcharge Subway Action Plan Account $0.0 $0.0 $0.0 $0.0 Outerborough Transportation Account (OBTA) Transfer to Operating 6.8 25.5 26.0 26.5 General Transportation Account (18.7) (24.6) (25.6) (26.6) $0.0 $0.9 $0.4 ($0.1) Automated Camera Enforcement (ACE) $0.0 $0.0 $0.0 $0.0 Peer-to-Peer Car Sharing Trip Tax $0.0 $0.0 $0.0 $0.0 Capital Lockbox Fund Payroll Mobility Tax (PMT) for Capital Funding $501.0 $1,400.0 $1,428.0 $1,449.4 Central Business District Tolling Program (CBDTP) 0.0 0.0 0.0 0.0 Real Estate Transfer Tax 0.0 0.0 0.0 0.0 Internet Marketplace Tax - NYS 0.0 0.0 0.0 0.0 Internet Marketplace Tax - NYC 0.0 0.0 0.0 0.0 Subtotal: 501.0 1,400.0 1,428.0 1,449.4 Less: Debt Service on Lockbox Bonds for the 2020-2024 Capital Program 148.5 276.9 492.7 573.5 Less: Debt Service on Lockbox Bonds for the 2025-2029 Capital Program 0.0 0.0 (25.2) (138.2) Less: 2020-2024 Capital Program PAYGO and CBDTP Expenses (148.5) (276.9) (492.7) (573.5) Less: 2025-2029 Capital Program PAYGO (501.0) (1,400.0) (1,402.8) (1,311.2) $0.0 $0.0 $0.0 $0.0 State and Local Subsidies State Operating Assistance $0.0 $0.0 $0.0 $0.0 Local Operating Assistance 35.0 0.0 0.0 0.0 Station Maintenance 5.5 11.6 12.8 12.2 $40.5 $11.6 $12.8 $12.2 Casino License and Gaming Tax Revenues $0.0 $0.0 $0.0 $0.0 Investment Income $42.1 $0.0 $0.0 $0.0 Other Subsidy Adjustments NYCT Charge Back of MTA Bus Debt Service $0.0 $0.0 0.0 0.0 Forward Energy Contracts Program - Gain/(Loss) (1.3) (4.1) (0.1) 0.0 Other Local Subsidy Resources (292.5) 0.0 (49.0) (162.3) Other Local Subsidy to Cover Debt Service Prepayment 0.0 0.0 0.0 0.0 OPEB Trust/Reserve* 0.0 (157.8) (21.0) (17.0) Federal Formula Grant 1,446.7 0.0 0.0 0.0 Federal Grant Funds to pay for Capital Projects (1,446.7) 0.0 0.0 0.0 Subsidy Adjustments ($293.7) ($161.9) ($70.1) ($179.3) Subtotal: Taxes & State and Local Subsidies $62.3 $62.3 $99.7 ($75.2) Other Funding Agreements City Subsidy for MTA Bus Company $3.1 $17.5 ($0.2) ($4.4) City Subsidy for Staten Island Railway (10.4) 6.7 4.6 4.0 CDOT Subsidy for Metro-North Railroad 0.7 (11.6) (15.3) (7.2) ($6.7) $12.6 ($10.9) ($7.6) Subtotal, including Other Funding Agreements $55.6 $74.9 $88.8 ($82.8) Inter-agency Subsidy Transactions B&T Operating Surplus Transfer $62.2 $16.1 $27.8 $53.9 $62.2 $16.1 $27.8 $53.9 TOTAL SUBSIDIES $117.8 $91.0 $116.6 ($28.9)
+```
+[p054_c0004] _* Contributions to and/or Reimbursements from OPEB Trust and/or OPEB Reserve accounts._
+[p054_c0005] _II-38_
+
+## Page 55
+
+### [p055_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026 -2029 Consolidated Subsidies - Year to Year Changes Cash Basis ($ in millions)
+[p055_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Change 2024 - 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 MMTOA, PBT, Real Estate Taxes and Other Metropolitan Mass Transportation Operating Assistance (MMTOA) $3,000.0 $3,151.2 $151.1 $1,954.4 ($1,196.8) $1,922.9 ($31.4) $1,961.4 $38.5 $2,000.6 $39.2 Mass Transportation Trust Fund (MTTF) 639.6 583.2 (56.3) 1,768.2 1,195.0 1,799.6 31.5 1,831.1 31.4 1,863.6 32.5 Mortgage Recording Tax (MRT) 341.6 408.1 66.5 466.0 57.9 569.6 103.6 596.8 27.2 626.3 29.5 MRT Transfer to Suburban Counties (11.4) (12.1) (0.6) (13.3) (1.2) (14.8) (1.5) (17.1) (2.3) (17.6) (0.5) MTA Bus Debt Service (12.3) (12.6) (0.3) (14.5) (1.9) (13.6) 0.8 (12.3) 1.4 (13.7) (1.5) Urban Tax 377.8 438.9 61.1 471.0 32.1 578.9 107.8 593.2 14.4 608.0 14.7 $4,335.2 $4,556.7 $221.5 $4,631.8 $75.1 $4,842.6 $210.8 $4,953.1 $110.5 $5,067.2 $114.0 PMT and MTA Aid Payroll Mobility Tax (PMT) for Operating $3,116.5 $3,365.0 $248.5 $3,512.3 $147.3 $3,582.5 $70.2 $3,636.3 $53.7 $3,672.6 $36.4 Payroll Mobility Tax Replacement Funds 244.3 244.3 0.0 244.3 0.0 244.3 0.0 244.3 0.0 244.3 0.0 MTA Aid 269.6 273.6 4.1 273.6 0.0 273.6 0.0 273.6 0.0 273.6 0.0 $3,630.3 $3,882.9 $252.6 $4,030.2 $147.3 $4,100.4 $70.2 $4,154.1 $53.7 $4,190.5 $36.4 For-Hire Vehicle (FHV) Surcharge Subway Action Plan Account $300.0 $300.0 $0.0 $300.0 $0.0 $300.0 $0.0 $300.0 $0.0 $300.0 $0.0 Outerborough Transportation Account (OBTA) Transfer to Operating 0.8 30.6 29.8 49.2 18.6 49.7 0.5 50.2 0.5 50.7 0.5 General Transportation Account 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 $300.8 $330.6 $29.8 $349.2 $18.6 $349.7 $0.5 $350.2 $0.5 $350.7 $0.5 Automated Camera Enforcement (ACE) $22.6 $93.0 $70.4 $113.2 $20.2 $127.7 $14.4 $86.1 ($41.6) $86.1 $0.0 Peer-to-Peer Car Sharing Trip Tax $1.4 $1.1 ($0.3) $1.2 $0.0 $1.2 $0.0 $1.2 $0.0 $1.2 $0.0 Capital Lockbox Fund Payroll Mobility Tax (PMT) for Capital Funding $0.0 $501.0 $501.0 $1,400.0 $899.0 $1,428.0 $28.0 $1,449.4 $21.4 $1,463.9 $14.5 Central Business District Tolling Program (CBDTP) 0.0 500.0 500.0 500.0 0.0 500.0 0.0 700.0 200.0 700.0 0.0 Real Estate Transfer Tax 332.8 332.8 10.0 332.7 2.9 335.8 0.1 339.9 4.1 344.1 4.2 Internet Marketplace Tax - NYS 155.7 157.3 1.6 158.8 1.6 160.4 1.6 162.0 1.6 163.6 1.6 Internet Marketplace Tax - NYC 176.5 178.2 1.8 180.0 1.8 181.8 1.8 183.6 1.8 185.5 1.8 Subtotal: 654.9 1,669.3 1,014.3 2,574.5 905.3 2,606.0 31.5 2,835.0 229.0 2,857.1 22.1 Less: Debt Service on Lockbox Bonds for the 2020-2024 Capital Program (186.3) (272.1) (85.8) (253.7) (81.5) (446.3) (92.6) (610.5) (164.2) (808.5) (198.0) Less: Debt Service on Lockbox Bonds for the 2025-2029 Capital Program 0.0 0.0 0.0 0.0 0.0 (25.2) (25.2) (138.2) (113.0) (371.5) (233.9) Less: 2020-2024 Capital Program PAYGO and CBDTP Expenses (468.6) (896.1) (427.5) (820.8) 75.3 (731.8) 89.0 (775.1) (43.3) (584.8) 190.3 Less: 2025-2029 Capital Program PAYGO 0.0 (501.0) (501.0) (1,400.0) (899.0) (1,402.0) (2.0) (1,311.2) 91.6 (1,092.4) 218.4 $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 State and Local Subsidies State Operating Assistance $187.9 $187.9 $0.0 $187.9 $0.0 $187.9 $0.0 $187.9 $0.0 $187.9 $0.0 Local Operating Assistance 152.9 222.9 70.0 167.9 (35.0) 167.9 0.0 167.9 0.0 167.9 0.0 Station Maintenance 205.5 213.7 8.2 222.2 8.4 228.1 5.9 232.3 4.2 236.4 4.1 State General Fund Subsidy 150.0 0.0 (150.0) 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 $696.4 $624.6 ($71.8) $598.0 ($26.6) $603.9 $5.9 $608.2 $4.2 $612.3 $4.1 Casino License Revenues $0.0 $0.0 $0.0 $500.0 $500.0 $500.0 $0.0 $600.0 $100.0 $200.0 ($400.0) Investment Income $95.4 $78.5 ($16.9) $15.9 ($62.6) $14.3 ($1.7) $14.3 $0.0 $14.3 $0.0 Other Subsidy Adjustments NYCT Charge Back of MTA Bus Debt Service ($11.5) ($11.5) $0.0 ($11.5) $0.0 ($11.5) $0.0 ($11.5) $0.0 ($11.5) $0.0 Forward Energy Contracts Program - Gain/(Loss) (6.6) (13.9) (7.3) (5.9) 8.0 (0.1) 5.8 0.0 0.1 0.0 0.0 Other Local Subsidy Resources 888.7 (224.6) (1,113.3) 0.0 224.6 0.0 0.0 183.9 183.9 139.2 (44.7) Other Local Subsidy to Cover Debt Service Prepayment (240.1) 0.0 240.1 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 OPEB Trust/Reserve* 0.0 0.0 0.0 (157.8) (157.8) (21.0) 136.8 85.0 106.0 822.8 737.8 Federal Formula Grant 2,302.0 1,446.7 (855.3) 0.0 (1,446.7) 0.0 0.0 0.0 0.0 0.0 0.0 Federal Grant Funds to pay for Capital Projects (2,302.0) (1,446.7) 855.3 0.0 1,446.7 0.0 0.0 0.0 0.0 0.0 0.0 $630.4 ($250.0) ($880.4) ($175.3) $74.8 ($32.6) $142.6 $257.4 $290.1 $950.5 $693.1 Subtotal: Taxes & State and Local Subsidies $9,712.5 $9,317.4 ($395.1) $10,064.2 $746.8 $10,507.1 $442.9 $11,024.6 $517.5 $11,472.7 $448.1 Other Funding Agreements City Subsidy for MTA Bus Company $527.2 $523.3 ($3.9) $728.6 $205.3 $824.7 $96.1 $785.3 ($39.4) $822.1 $36.8 City Subsidy for Staten Island Railway 44.6 42.0 (2.5) 80.6 38.5 77.2 (3.4) 75.6 (1.6) 75.0 (0.6) CDOT Subsidy for Metro-North Railroad 283.4 265.2 (18.3) 262.4 (2.8) 273.9 11.6 292.7 18.8 310.1 17.4 $855.2 $830.5 ($24.7) $1,071.5 $241.1 $1,175.9 $104.3 $1,153.7 ($22.2) $1,207.2 $53.5 Subtotal, including Other Funding Agreements $10,567.7 $10,147.9 ($419.8) $11,135.8 $987.9 $11,683.0 $547.2 $12,178.2 $495.3 $12,679.9 $501.6 Inter-agency Subsidy Transactions B&T Operating Surplus Transfer $1,440.9 $1,401.2 ($39.7) $1,288.7 ($112.5) $1,254.4 ($34.3) $1,194.2 ($60.2) $1,226.6 $32.4 $1,440.9 $1,401.2 ($39.7) $1,288.7 ($112.5) $1,254.4 ($34.3) $1,194.2 ($60.2) $1,226.6 $32.4 GROSS SUBSIDIES $12,008.6 $11,549.1 ($459.5) $12,424.5 $875.4 $12,937.4 $512.9 $13,372.4 $435.0 $13,906.5 $534.0
+```
+[p055_c0003] _* Contributions to and/or Reimbursements from OPEB Trust and/or OPEB Reserve accounts._
+[p055_c0004] _II-39_
+
+## Page 56
+
+### [p056_c0001] METROPOLITAN MASS TRANSPORTATION OPERATING ASSISTANCE (MMTOA)
+[p056_c0002] Metropolitan Mass Transportation Operating Assistance (MMTOA) provides general operating subsidies for the MTA and other downstate transportation systems, and funds are derived from the Mass Transportation Operating Assistance (MTOA) Fund 1 . In addition to MMTOA, these funds are also appropriated to the Public Transportation Systems Operating Assistance Account and the Urban Mass Transit Operating Assistance Account. Changes in the Tax Law enacted in the NYS 2025-26 Enacted Budget changed the allocation of the sales tax receipts derived from the three-eighths of one percent sales and user tax imposed in the Metropolitan Commuter Transportation District (MCTD) which had previously been deposited in the MMTOA. Effective April 1, 2026, eighty-five percent of the sales tax receipts will be deposited in the Mass Transportation Trust Fund (MTTF), and the remaining 15 percent of the sales tax receipts will continue to be deposited in the MMTOA.
+[p056_c0003] The MMTOA Account consists of:
+- [p056_c0004] • 55% of the MTOA Petroleum Business Tax (PBT), which is collected statewide; • 100% of the receipts, becoming 15% beginning on April 1, 2026, from the three-eighths of one percent sales and use tax imposed in the MCTD • 80% of the receipts from the Corporate Franchise Tax imposed statewide on transportation and transmission companies; and • 100% of the receipts from the Corporate Surcharge imposed on general business corporations for the privilege of exercising their corporate franchise or doing business within the MCTD.
+[p056_c0005] The 2025 MMTOA Mid-Year Forecast is $1 million higher than the Adopted Budget reflecting the appropriation in the 2025-26 NYS Enacted Budget.
+[p056_c0006] For the remainder of the Plan period, MMTOA projections reflect the impact of the recent tax law changes implemented with the 2025-26 Enacted Budget. Compared with the February Plan, MMTOA estimates are lower by $1,196 million in 2026, $1,227 million in 2027 and $1,252 million in 2028. These unfavorable results are offset by favorable variances in the MTTF forecasts in each year, and reflect projections in the NYS 2025-26 Enacted Budget. Excluding the amount attributable to the transfer for sales tax receipts that are being reassigned to the MTTF, annual MMTOA estimates provided by the NYS Division of the Budget are lower than forecasts in the February Plan by $7 million in both 2026 and 2027, and by less than $1 million in 2028.
+[p056_c0007] Forecasts, plan-to-plan changes, and year-over-year changes on both an accrual and cash basis can be found in the table at the beginning of this Subsidies section.
+[p056_c0008] _1 MTOA consists of revenues from a small portion of the basic Petroleum Business Tax (PBT) imposed on petroleum businesses operating within New York State, a portion of the sales tax imposed on sales and uses of certain tangible personal property and services, corporate franchise taxes imposed on certain transportation and transmission companies, and temporary corporate surcharges imposed on the portion of the franchise and other taxes of certain businesses attributable to the conduct of business within the Metropolitan Commuter Transportation District (MCTD)._
+[p056_c0009] _II-40_
+
+## Page 57
+
+### [p057_c0001] MMTOA STATE DEDICATED TAXES
+[p057_c0002] July Financial Plan 2026-2029
+[p057_c0003] ($ in millions)
+[p057_c0004]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 Plan 2027 Plan 2028 Plan 2029 Forecast of MMTOA Gross Receipts (SFY): Total Gross Receipts Available for Allocation $3,777.4 $3,965.0 $2,587.6 $2,531.3 $2,580.8 $2,632.4 Allocation of Total Gross Receipts to Downstate: Total Gross Receipts $3,777.4 $3,965.0 $2,587.6 $2,531.3 $2,580.8 $2,632.4 Less: Upstate Share of PBT (54.8) (57.5) (37.5) (36.7) (37.4) (38.2) Less: Upstate Share of Transmission (18.2) (18.2) (18.2) (18.2) (18.2) (18.2) Less: Repay Negative Fund Balance 0.0 0.0 0.0 0.0 0.0 0.0 Less: New Fund Balance 0.0 0.0 0.0 0.0 0.0 0.0 Less: NYS GF Transfer - Hold Harmless 0.0 0.0 0.0 0.0 0.0 0.0 Upstate Percent Share of Investment Income 1.46% 1.46% 1.46% 1.46% 1.46% 1.46% Less: Upstate Share of Investment Income (0.3) (0.3) (0.2) (0.2) (0.2) (0.2) Total Net Downstate Share Available for Allocation $3,704.1 $3,889.1 $2,531.7 $2,476.2 $2,525.0 $2,575.9 Less: 18-B Adjustment (189.5) (189.5) (189.5) (189.5) (189.5) (189.5) Adjusted Total Net Downstate Share for Allocation $3,514.6 $3,699.5 $2,342.1 $2,286.7 $2,335.5 $2,386.4 Add: NYS Reimbursement 0.0 0.0 0.0 0.0 0.0 0.0 Adjusted Total Net Downstate Share + Other $3,514.6 $3,699.5 $2,342.1 $2,286.7 $2,335.5 $2,386.4 Allocation of Total Net Downstate Share to NYCT/SIR: NYCT/SIR Share 59.8% 59.7% 59.2% 59.6% 59.5% 59.4% From Total Net Downstate Share $2,216.6 $2,320.4 $1,498.6 $1,477.0 $1,503.4 $1,530.3 Less: 18-B Adjustment (156.5) (156.5) ($156.5) ($156.5) ($156.5) (156.5) Adjustment for Carry-Over from Calendar Year 0.0 0.0 $0.0 $0.0 $0.0 0.0 Adjusted Total Net Downstate Share $2,060.2 $2,163.9 $1,342.1 $1,320.5 $1,346.9 $1,373.8 Less: Transfer to Capital Program 0.0 0.0 0.0 0.0 0.0 0.0 From Carryover 0.0 0.0 0.0 0.0 0.0 0.0 Total NYCT/SIR Share $2,060.2 $2,163.9 $1,342.1 $1,320.5 $1,346.9 $1,373.8 SIR Share (Accrued) 7.8 8.4 5.2 5.1 5.3 5.4 Total SIR Share (Cash) 7.8 8.4 5.2 5.1 5.3 5.4 Total NYCT Share $2,052.3 $2,155.5 $1,336.9 $1,315.3 $1,341.7 $1,368.5 Allocation of Total Net Downstate Share to MTA (CRR/HQ): MTA Share 26.1% 26.0% 25.2% 25.4% 25.3% 25.3% From Total Net Downstate Share $965.5 $1,012.8 $637.9 $628.0 $640.1 $652.3 Less: 18-B Adjustment (25.6) (25.6) ($25.6) (25.6) (25.6) (25.6) Adjustment for Carry-Over from Calendar Year 0.0 0.0 $0.0 0.0 0.0 0.0 Adjusted Total Net Downstate Share $939.9 $987.2 $612.3 $602.4 $614.5 $626.8 Less: Transfer to Capital Program 0.0 0.0 0.0 0.0 0.0 0.0 Total MTA (CRR/HQ) Share $939.9 $987.2 $612.3 $602.4 $614.5 $626.8 Total MTA MMTOA $3,000.0 $3,151.2 $1,954.4 $1,922.9 $1,961.4 $2,000.6
+```
+[p057_c0005] _II-41_
+
+## Page 58
+
+### [p058_c0001] MASS TRANSPORTATION TRUST FUND (MTTF)
+[p058_c0002] In prior MTA financial plans, revenue derived from petroleum business privilege taxes, gasoline and diesel fuel excise taxes, and fees for vehicle registrations and driver licenses were designated as the Petroleum Business Tax (PBT) in MTA financial plans. Changes in the Tax Law enacted in the NYS 2025-26 Enacted Budget direct that, effective April 1, 2026, 85 percent of the receipts derived from the three-eighths of one percent sales and user tax imposed in the Metropolitan Commuter Transportation District (MCTD) will be deposited in the Mass Transportation Trust Fund (MTTF), and the remaining 15 percent of the sales tax receipts will continue to be deposited in the Metropolitan Mass Transportation Operating Assistance (MMTOA) Account. With the inclusion of a portion of the MCTD sales taxes in the MTTF, the July Plan and future MTA plans will designate this category of receipts as the “Mass Transportation Trust Fund” (MTTF).
+[p058_c0003] The petroleum business privilege tax component is imposed on petroleum businesses operating in New York State. The tax base is the quantity of various petroleum products refined and sold in the State or imported into the State for sale and use therein, and tax rates are subject to annual adjustments to reflect changes in the Producer Price Index (PPI) for refined petroleum products for the 12-month period ending August 31 of the immediately preceding year. While the tax rates rise and fall along with changes in the PPI, they are subject to a maximum change of plus or minus 500 basis points (5%) on the existing rate in any one year.
+[p058_c0004] State Law requires that 34 percent of the proceeds from the Petroleum Business Privilege Tax and the petroleum-based excise taxes, and the registration and license fees are deposited in the MTTF for MTA's benefit, 63 percent is earmarked for State uses such as upstate highways and other transportation needs, and the remaining 3 percent is allotted to other mass transit operating agencies. By statute, after debt obligations are satisfied, 85 percent of the MTTF for MTA is allotted to New York City Transit, with the remaining 15 percent allotted to the commuter railroads.
+[p058_c0005] Amounts transferred from the MTTF Account to the MTA's Dedicated Tax Fund, including the new sales tax component, constitute MTTF receipts. MTA utilizes the MTTF receipts to pay debt service on MTA's Dedicated Tax Fund Bonds (DTF Bonds), which are payable first from MTTF receipts and then, to the extent of any deficiency, from MMTOA receipts. To date, MTTF receipts have always been sufficient to meet debt service commitments and MMTOA taxes have never been used for this purpose.
+[p058_c0006] The 2025 MTTF Mid-Year Forecast, on a cash basis, is lower by $12 million from the Adopted Budget and the projections reflect the appropriated amount in NYS 2025-26 Enacted Budget adjusted for the MTA financial reporting period, which is on a calendar year basis. Projections for the remainder of the Plan, beginning in 2026, reflect the shift into the MTTF of 85 percent of the receipts derived from the three-eighths of one percent sales and user tax imposed in the MCTD. Compared with the February Plan, estimated receipts are higher by $1,173 million for 2026, $1,205 million for 2027, and $1,236 for 2028, projections that were provided by NYS Division of the Budget. Offsetting the additional sales tax flowing into the MTTF is an identical reduction of sales tax revenues flowing into the MMTOA Account. Excluding the amount attributable to the Sales Taxes, 2026 through 2028 annual MTTF forecasts for the petroleum-based taxes and the vehicle and license fees are lower than the February Plan Forecasts by $15 million, based on revised estimates from the NYS Division of the Budget.
+[p058_c0007] Forecasts, plan-to-plan changes, and year-over-year changes on both an accrual and cash basis can be found in the table at the beginning of this Subsidies section.
+[p058_c0008] _II-42_
+
+## Page 59
+
+### [p059_c0001] MASS TRANSPORTATION TRUST FUND (MTTF) July Financial Plan 2026-2029 ($ in millions)
+[p059_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 Plan 2027 Plan 2028 Plan 2029 Amount of Total Net Collections Available for the MTA (CASH): Petroleum Business Tax / Motor Fuel Tax / Motor Vehicle Fees $639.6 $583.2 $579.9 $579.9 $579.9 $579.9 Sales Tax - - 1,188.3 1,219.8 1,251.2 1,283.7 MTA Total $639.6 $583.2 $1,768.2 $1,799.6 $1,831.1 $1,863.6
+```
+### [p059_c0003] Accrual Basis
+[p059_c0004]
+
+```text
+NYCT/SIR Share of MTA Total $509.2 $495.5 $1,503.0 $1,529.7 $1,556.4 $1,584.1 Commuter Railroad Share of MTA Total 89.9 87.4 265.2 269.9 274.7 279.5 MTA Total of Net Collections $599.1 $582.9 $1,768.2 $1,799.6 $1,831.1 $1,863.6
+```
+### [p059_c0005] Cash Basis
+[p059_c0006]
+
+```text
+NYCT/SIR Share of MTA Total $543.6 $495.7 $1,503.0 $1,529.7 $1,556.4 $1,584.1 Commuter Railroad Share of MTA Total 95.9 87.5 265.2 269.9 274.7 279.5 MTA Total of Net Collections $639.6 $583.2 $1,768.2 $1,799.6 $1,831.1 $1,863.6
+```
+[p059_c0007] _II-43_
+
+## Page 60
+
+### [p060_c0001] MORTGAGE RECORDING TAXES (MRT)
+[p060_c0002] The Mortgage Recording Taxes consist of two distinct mortgage recording taxes collected by New York City and the seven other counties within the MTA's service area.
+[p060_c0003] Mortgage Recording Tax-1 (MRT-1) is imposed on borrowers of recorded mortgages of all real property, with certain exclusions, at the rate of three-tenths of one percent (0.3%) of the mortgage debt. By statute, MRT-1 receipts are first applied to meet MTA Headquarters operating expenses, with any remaining funds deposited into the New York City Transit and Commuter Railroad Accounts, with 55% for NYCT and 45% for the commuter railroads, for use to pay operating and capital costs.
+[p060_c0004] Mortgage Recording Tax-2 (MRT-2) is imposed on institutional lenders of recorded mortgages, with certain exclusions, at the rate of one-quarter of one percent (0.25%) of the debt secured by residential real estate structures that contain fewer than seven distinct residential dwelling units. MRT-2 receipts are first applied to make deposits into the Payment Sub-accounts for Dutchess, Orange, and Rockland Fund (DORF) payments and then for deposit into the Corporate Purposes Sub-account for the purpose of paying operating and capital costs, including any debt service and debt service reserve requirements, incurred for the benefit of MTA, NYCT and their respective subsidiaries. DORF payments are made in equal quarterly installments and consist of both fixed and escalator components. The fixed components are set at $1.5 million each for Dutchess and Orange Counties, and $2.0 million for Rockland County, while the escalator component for each county equals the multiplicative product of: (i) the percentage by which the county's mortgage recording tax payment (excluding revenues attributable to post-1989 tax rate increases) to MTA in the preceding calendar year increased over the calendar year 1989 payment; and (ii) each county's fixed component.
+### [p060_c0005] Forecast Methodology
+[p060_c0006] MRT forecasts consist of actual receipts through June 2025. Compared with the Adopted Budget, receipts through June were favorable by $9 million for MRT-1 and favorable by $1 million for MRT-2, and these variances are incorporated in the 2025 Mid-Year Forecast, with monthly receipts for the second half of 2025 assumed to also surpass the Adopted Budget forecasts by $9 million for MRT-1 and $6 million for MRT-2. For the remainder of the financial plan period, projections are consistent with the City of New York's latest financial plan update and, for the suburban counties, real estate activity projections developed by S&P Global, Inc.
+[p060_c0007] Uncertain economic conditions related to federal fiscal actions, as well as geopolitical concerns, have tampered both initial mortgage and mortgage refinancing activity. This situation continues to be evaluated, and forecasts in subsequent Plans will reflect any necessary changes to these projections.
+[p060_c0008] Forecasts, plan-to-plan changes, and year-over-year changes on both an accrual and cash basis can be found in the table at the beginning of this Subsidies section.
+### [p060_c0009] MRT-2 Adjustments (Cash)
+[p060_c0010] MRT-2 receipts are utilized to cover debt service for MTA Bus 2005-2009 Capital Program projects, which are paid by MTA under the terms of the agreement with New York City that established MTA Bus. MRT-2 receipts are also utilized to fund the annual MTA General Reserve, which is set at approximately one percent of total expenses.
+[p060_c0011] _II-44_
+
+## Page 61
+
+### [p061_c0001] MORTGAGE RECORDING TAX PROJECTIONS
+[p061_c0002] July Financial Plan 2026-2029
+[p061_c0003] ($ in millions)
+### [p061_c0004] Cash Basis
+[p061_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 Plan 2027 Plan 2028 Plan 2029 MORTGAGE RECORDING TAX #261-1
+```
+### [p061_c0006] Receipts Available for Transfer to NYCT and CRs:
+[p061_c0007]
+
+```text
+Total Gross Receipts $228.2 $274.8 $311.3 $379.1 $397.6 $417.6 Interest on MRT Receipts (*) 0.0 0.0 0.0 0.0 0.0 0.0 Less: MTAHQ Operating Expenses Net of Reimbursements (1,090.7) (1,262.4) (1,206.4) (1,236.5) (1,266.5) (1,276.8) Receipts Available for Transfer ($862.4) ($987.6) ($895.0) ($857.5) ($869.0) ($859.2) MRT-2 Required to Balance 862.4 987.6 895.0 857.5 869.0 859.2 Adjusted Receipts Available for Transfer $0.0 $0.0 $0.0 $0.0 $0.0 $0.0
+```
+### [p061_c0008] Allocation of Net Receipts to NYCT/SIR Account:
+[p061_c0009]
+
+```text
+Opening Balance $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 NYCT/SIR Share 55% 55% 55% 55% 55% 55% Interest on MRT Receipts (*) 0.0 0.0 0.0 0.0 0.0 0.0 Total NYCT/SIR Net Cash Share $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 Total SIR Net Cash Share 0.0 0.0 0.0 0.0 0.0 0.0 Total NYCT Net Cash Share $0.0 $0.0 $0.0 $0.0 $0.0 $0.0
+```
+### [p061_c0010] Allocation of Net Receipts to Commuter Railroad Account:
+[p061_c0011]
+
+```text
+Opening Balance - CR/SHF $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 Commuter Railroad Share 45% 45% 45% 45% 45% 45% Interest on MRT Receipts (*) 0.0 0.0 0.0 0.0 0.0 0.0 Less: Suburban Highway Fund 0.0 0.0 0.0 0.0 0.0 0.0 Transfers from MRT-2 0.0 0.0 0.0 0.0 0.0 0.0 Total Commuter Railroad Net Cash Share $0.0 $0.0 $0.0 $0.0 $0.0 $0.0
+```
+### [p061_c0012] MORTGAGE RECORDING TAX #261-2
+### [p061_c0013] Receipts Available
+[p061_c0014]
+
+```text
+Total Receipts to Corporate Account $113.4 $133.2 $154.6 $190.5 $199.2 $208.7 MTA Bus Debt Service (12.3) (12.6) (14.5) (13.6) (12.3) (13.7) General Reserve (195.0) (200.0) (210.0) (220.0) (230.0) (240.0) Total Receipts Available for Transfer ($93.9) ($79.3) ($69.8) ($43.1) ($43.0) ($45.0)
+```
+### [p061_c0015] Use of Total Receipts:
+[p061_c0016]
+
+```text
+DORF Opening Balance $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 Less: Transfer to MTA DORF Account (11.4) (12.1) (13.3) (14.8) (17.1) (17.6) Less: Transfer to MTAHQ Funds (862.4) (987.6) (895.0) (857.5) (869.0) (859.2) Net Receipts Available ($967.8) ($1,078.9) ($978.1) ($915.3) ($929.1) ($921.9)
+```
+[p061_c0017] (*) Beginning in 2023, Interest on MRT Receipts will be captured in Investment Income.
+[p061_c0018] _II-45_
+
+## Page 62
+
+### [p062_c0001] URBAN TAXES
+[p062_c0002] The Urban Taxes consist of two distinct taxes applied to certain commercial real property transactions and mortgage recordings within New York City: a Real Property Transfer Tax (RPTT) is imposed on sellers at a rate of one percent of the property value for New York City commercial real estate transactions with a real property value exceeding $500,000; and a Mortgage Recording Tax (MRT) is imposed on borrowers at a rate of five-eighths of one-percent (0.625%) of the recorded mortgage amount for New York City commercial property mortgages on properties valued in excess of $500,000. Tax receipts are available only for transit purposes in New York City, with 90% of the receipts earmarked for New York City Transit general operations and 6% used for the partial reimbursement of NYCT Paratransit costs. The remaining 4% is assigned as subsidy to New York City for private franchise buses, and the City applies these funds toward its reimbursement of MTA Bus expenses. Figures below reflect the 90% of Urban Tax receipts earmarked to NYCT general operations.
+### [p062_c0003] Forecast Methodology
+[p062_c0004] Urban Tax forecasts consist of actual receipts through June 2025. Compared with the Adopted Budget, receipts through June were favorable by $33 million for the RPTT component and favorable by $3 million for the MRT component. These variances are incorporated in the 2025 Mid-Year Forecast, with monthly receipts for the second half of 2025 assumed to also surpass the Adopted Budget forecasts by $16 million for the RPTT component and $3 million for the MRT component. For the remainder of the financial plan period, projections are consistent with the City of New York's latest financial plan update..
+[p062_c0005] Uncertain economic conditions related to federal fiscal actions, as well as geopolitical concerns, have tampered both commercial real estate transactions and commercial mortgage activity. This situation continues to be evaluated, and forecasts in subsequent Plans will reflect any necessary changes to these projections.
+[p062_c0006] Forecasts, plan-to-plan changes, and year-over-year changes on both an accrual and cash basis can be found in the table at the beginning of this Subsidies section.
+[p062_c0007] _II-46_
+
+## Page 63
+
+### [p063_c0001] FOR-HIRE VEHICLE SURCHARGE
+[p063_c0002] A revenue stream from surcharges on for-hire vehicle (FHV) trips was established in the New York State 2018-19 Enacted Budget and dedicated to the MTA to provide a stable, long-term source of funding for the New York City Subway Action Plan, outer borough transit improvements, and other MTA needs. This surcharge is imposed on for-hire vehicle trips entirely within New York State that start or terminate in, or traverse, Manhattan below 96th Street (the designated congestion zone). The revenue stream is derived from the following surcharges:
+- [p063_c0003] • Two dollars and seventy-five cents ($2.75) on for-hire-transportation trips (excluding medallion taxicabs and pooled vehicles) within NYS that start, end or traverse the designated congestion zone. • Two dollars and fifty cents ($2.50) on for-hire-transportation trips within NYS provided by medallion taxicabs that start, end or traverse the designated congestion zone. • Seventy-five cents ($0.75) per passenger on trips within NYS provided by pooled vehicles that's start, end or traverse the designated congestion zone.
+[p063_c0004] The FHV legislation stipulates that surcharge revenue is to be deposited into a dedicated fund, the New York City Transportation Assistance Fund for the benefit of the MTA; this fund consists of three sub-accounts, the Subway Action Plan Account, the Outer Borough Transportation Account, and the General Transportation Account. The legislation earmarked the first $362 million received in 2019 and $301 million in 2020 for the Subway Action Plan Account, with the Subway Action Plan Account receiving the first $300 million each year thereafter. The next $50 million received each year is earmarked for the Outer Borough Transportation Account, and receipts in excess of those deposited into the Subway Action Plan Account and the Outer Borough Transportation Account each year are earmarked for the General Transportation Account. Funds deposited into each of these accounts are to be used for the following exclusive purposes:
+- [p063_c0005] • Subway Action Plan Account – For funding the operating and capital costs of, and debt service associated with, the Subway Action Plan. • Outer Borough Transportation Account – For funding the operating and capital costs of, and debt service associated with, the MTA's facilities, equipment, and services in the counties of Bronx, Kings, Queens and Richmond, and any projects that improve transportation connections between any or all of these counties and New York County. This account may also be used to fund toll reduction programs for any crossings under the jurisdiction of the MTA, its subsidiaries, or affiliates. • General Transportation Account – For funding the operating and capital costs of the MTA, and for reimbursing the authority for its payment of debt service and reserve requirements on the portion of the authority's bonds and notes that have been issued specifically for the purposes of this account.
+[p063_c0006] The 2025 Mid-Year Forecast reflects lower than expected results through May 2025. Forecasts for the Plan period are revised downward from the February Plan, consistent with recent collection trends, by $19 million in 2025, $25 million in 2026, $26 million in 2027, and $27 million in 2028.
+[p063_c0007] Revised projections are sufficient to fully fund both the $300 million for the Subway Action Plan and the $50 million for the Outer Borough Transportation Account through the Plan period.
+[p063_c0008] _II-47_
+
+## Page 64
+
+[p064_c0001] However, the revised forecasts are insufficient to provide any funding for the General Transportation Account.
+[p064_c0002] Pursuant to section 1270-i (3) of the Public Authorities Law, funds earmarked for the Outer Borough Transportation Account are held in an MTA reserve account until the Governor and State Legislature approve the use of such funds for transportation improvements and expanded transportation options for the outer boroughs of New York City, mainly for the following purposes:
+[p064_c0003] In November 2023, the MTA was granted use of up to $22.2 million annually from the Outer Borough Transportation Account to fund or expand the following toll rebate programs:
+- [p064_c0004] • Maintain the current effective toll rate for Staten Island residents who are E-ZPass customers and participate in the Staten Island Resident Rebate program for the Verrazzano-Narrows Bridge; • Implement a rebate program for Queens residents who use E-ZPass on the Cross Bay Bridge; and, • Implement a rebate program for Bronx residents who use E-ZPass on the Henry Hudson Bridge.
+[p064_c0005] The July Financial Plan, includes funding for these toll rebate programs of $8.0 million in 2025, and $22.2 million in 2026 and annually thereafter.
+[p064_c0006] Another $2.9 million annually is funded from the OBTA, pursuant to approval granted to the MTA in June 2024, to offset reductions in farebox revenue reduction from 10% discounts on monthly Metro-North Railroad and Long Island Rail Road tickets for trips entirely within New York City. More recently the MTA was granted approval to fund an enhancement of express and local bus service in the amounts of $19.7 million in 2025, $24.1 million in 2026 and growing thereafter by 2% annually for the duration of the Plan.
+[p064_c0007] Forecasts, plan-to-plan changes, and year-over-year changes on both an accrual and cash basis can be found in the table at the beginning of this Subsidies section.
+[p064_c0008] _II-48_
+
+## Page 65
+
+### [p065_c0001] FOR-HIRE VEHICLE SURCHARGE July Financial Plan 2026 - 2029 ($ in millions)
+[p065_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Basis For-Hire Vehicle (FHV) Surcharge For-Hire Vehicle (FHV) Surcharge Received $354.508 $350.000 $350.000 $350.000 $350.000 $350.000 Less: Reserved for Outerborough Transportation Account Items (53.752) (19.440) (0.823) (0.327) 0.189 0.725 For-Hire Vehicle (FHV) Surcharge Available $300.756 $330.560 $349.177 $349.673 $350.189 $350.725 Distribution of FHV Surcharge Receipts Subway Action Plan Account $300.000 $300.000 $300.000 $300.000 $300.000 $300.000 Outerborough Transportation Account (OBTA) Received 53.752 19.440 0.823 0.327 (0.189) (0.725) OBTA Funds Directed to Operating Budget 0.756 30.560 49.177 49.673 50.189 50.725 General Transportation Account 0.000 0.000 0.000 0.000 0.000 0.000 For-Hire Vehicle (FHV) Surcharge Received $354.508 $350.000 $350.000 $350.000 $350.000 $350.000 Accrual Basis For-Hire Vehicle (FHV) Surcharge For-Hire Vehicle (FHV) Surcharge Received $354.508 $350.000 $350.000 $350.000 $350.000 $350.000 Less: Reserved for Outerborough Transportation Account Items (53.752) (19.440) (0.823) (0.327) 0.189 0.725 For-Hire Vehicle (FHV) Surcharge Available $300.756 $330.560 $349.177 $349.673 $350.189 $350.725 Distribution of FHV Surcharge Receipts Subway Action Plan $300.000 $300.000 $300.000 $300.000 $300.000 $300.000 Outerborough Transportation Account (OBTA) Received 53.752 19.440 0.823 0.327 (0.189) (0.725) OBTA Funds Directed to Operating Budget 0.756 30.560 49.177 49.673 50.189 50.725 General Transportation Account 0.000 0.000 0.000 0.000 0.000 0.000 For-Hire Vehicle (FHV) Surcharge Received $354.508 $350.000 $350.000 $350.000 $350.000 $350.000
+```
+[p065_c0003] _II-49_
+
+## Page 66
+
+### [p066_c0001] AUTOMATED CAMERA ENFORCEMENT (ACE)
+[p066_c0002] Prior to the 2024 February Financial Plan, Automated Camera Enforcement (ACE) was referred to as Automated Bus Lane Enforcement (ABLE).
+[p066_c0003] The original Automated Bus Lane Enforcement program, which consisted of bus-mounted mobile cameras, was first tested in a NYCT proof-of-concept program during 2010 and 2011. It was implemented under the ABLE banner in 2019, with an initial 123 buses equipped with camera technology. By the end of 2023, the program had expanded to include 500 additional buses for a total of 623 buses. Legislation in the NYS 2023-24 Enacted Budget made permanent the bus lane enforcement program, and also expanded the use of bus-mounted camera technology through the establishment of a four-year pilot program to include violations for vehicles illegally parked at bus stops or doubled-parked blocking bus travel lanes. With the expanded nature of the program, ABLE was renamed Automated Camera Enforcement (ACE).
+[p066_c0004] Working in conjunction with the New York City Department of Transportation, MTA launched ACE on 14 bus routes in June 2024 with 623 camera-installed buses in the program. At the end of 2024, fully operational bus-mounted cameras were installed on 1,023 buses covering 34 routes. Projections are on target to expand the program to cover 93 routes and 3,023 buses by the end of the four-year pilot program.
+[p066_c0005] Violation penalties are collected by the City of New York, with funds remitted to the MTA on a quarterly basis and deposited into the General Transportation Account of the New York City Transportation Assistance Fund.
+[p066_c0006] Annual projections of revenues from the ACE program are unchanged from the February Plan.
+[p066_c0007] Forecasts, plan-to-plan changes, and year-over-year changes on both an accrual and cash basis can be found in the table at the beginning of this Subsidies section.
+[p066_c0008] _II-50_
+
+## Page 67
+
+### [p067_c0001] PEER-TO-PEER CAR SHARING TRIP TAX
+[p067_c0002] The Peer-to-Peer Car Sharing Trip Tax, enacted in the NYS 2021-22 Enacted Budget and commenced in September 2022, imposes a three percent tax on gross receipts paid by all drivers of shared vehicles when the driver takes possession of a shared vehicle within the Metropolitan Commuter Transportation District (MCTD). Receipts are deposited into the Corporate Transportation Account of the MTA Special Assistance Fund and can be used for the purpose of paying operating and capital costs, including any debt service and debt service reserve requirements, incurred for the benefit of MTA, NYCT and their respective subsidiaries.
+[p067_c0003] Annual projections of revenues from the Peer-to-Peer Car Sharing Trip Tax are unchanged from the February Plan.
+[p067_c0004] _II-51_
+
+## Page 68
+
+### [p068_c0001] CAPITAL LOCKBOX FUND
+[p068_c0002] The NYS 2025-26 Enacted Budget included new revenue dedicated to funding the MTA's Capital Program by modifying Payroll Mobility Tax (PMT) rates to generate additional revenue and dedicating twenty-eight and one-half percent of the PMT revenue to the MTA Capital Lockbox Fund, after debt service is paid.
+[p068_c0003] Beginning on July 1, 2025, the changes in the tax law, increase the PMT rate in the Metropolitan Transportation Commuter District (MCTD) for employers with quarterly payroll expenses higher than $2.5 million, while also lowering the tax rate for quarterly payroll expenses between $312,500 and $437,500. The amendments eliminate the tax for some self-employed individuals and for local governments outside of New York City. The rate was not changed for employers outside of New York City with quarterly payrolls of between $437,500 and $2.5 million. Revenue dedicated to the Capital Lockbox Fund will begin to flow into the fund starting in September 2025. The July Plan estimates of receipts from the twenty-eight and one-half percent share of the gross PMT revenue that the new legislation dedicates to the 2025-2029 Capital Program Account within the MTA Capital Lockbox Fund are $501 million in 2025, $1,400 million in 2026, $1,428 million in 2027, $1,449 in 2028 and $1,464 in 2029. Further information is provided in the Payroll Mobility Tax of this Section.
+[p068_c0004] Other revenue streams dedicated to the MTA Capital Lockbox Fund were established in the NYS 2019-20 Enacted Budget, including the Central Business District Tolling Program (CBDTP), which was legislated to generate and leverage one billion dollars annually in dedicated revenues to support $15 billion of bonding for the 2020-24 Capital Program and subsequent capital programs by imposing tolls for vehicles entering or remaining the Congestion Relief Zone, which is defined as Manhattan south of and inclusive of 60th Street, not including the FDR Drive or the West Side Highway (which includes the Battery Park underpass and or any surface roadway portion of the Hugh L. Carey Tunnel that connects to West Street). CBDTP toll collections commenced on January 5, 2025 at a rate of 60% of the toll structure originally approved by the TBTA Board in March 2024 for the program's first three years. It will increase to 80% for the following three years, finally graduating to the full toll structure beginning in 2031.
+[p068_c0005] The 2025 Mid-Year Forecast for CBDTP revenues is unchanged from the February Plan, forecasted at $500 million annually through 2027, and then $700 million annually in 2028 and 2029. CBDTP revenues are fully earmarked for MTA Capital funding purposes.
+[p068_c0006] The NYS 2019-20 Enacted Budget also established a Real Estate Transfer Tax (RETT), effective July 1, 2019, which is comprised of an additional base tax and supplemental tax on residential properties located in New York City valued $2 million or above and on non-residential properties located in New York City valued at $25 million or above. The NYS 2019-20 also eliminated a tax loophole that had provided an exemption to third-party internet marketplace providers from requiring collection and remittance of New York State and New York City sales taxes on transactions conducted on their sites. Since June 1, 2019, internet marketplace providers have been required to collect and remit New York State and New York City sales taxes from out of state retailers on their sites with gross receipts exceeding $300,000 from sales of tangible property and delivering more than one hundred sales into New York State in the previous four quarters. These sales taxes are collected at the normal State sales tax rate of 4% plus local applicable sales taxes. The legislation does not, however, directly tie the MTA support from these additional State and City sales tax receipts to the actual revenues collected, instead specifying an annual allotment of revenues for the MTA from these taxes. For the New York State sales tax component, on a fiscal year basis, the MTA was allotted $112.5 million in 2020, $150 million in 2021, and thereafter an increase of one percent annually. The statutory allotment to the MTA for the New York City sales tax component was legislated at $127.5 million in 2020 and $170 million
+[p068_c0007] _II-52_
+
+## Page 69
+
+[p069_c0001] in 2021, followed by annual increases of one percent. RETT and the Internet Marketplace Tax receipts are directed by legislation to be deposited into the MTA's Central Business District Tolling Lockbox Fund for use to support financing for the 2020-2024 Capital Program and subsequent capital programs.
+[p069_c0002] The July Plan forecasts for the RETT and both the State and City components of the Internet Marketplace Tax are unchanged from the February Plan.
+[p069_c0003] Forecasts, plan-to-plan changes, and year-over-year changes on both an accrual and cash basis can be found in the table at the beginning of this Subsidies section.
+[p069_c0004] _II-53_
+
+## Page 70
+
+### [p070_c0001] CAPITAL LOCKBOX FUND July Financial Plan 2026 - 2029 ($ in millions)
+[p070_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Basis Capital Lockbox Fund Payroll Mobility Tax (PMT) for Capital Funding $0.000 $501.000 $1,400.000 $1,428.000 $1,449.420 $1,463.914 Central Business District Tolling Program (CBDTP) 0.000 500.000 500.000 500.000 700.000 700.000 Real Estate Transfer Tax 322.775 332.770 335.665 335.799 339.929 344.110 Internet Marketplace Tax - NYS 155.704 157.261 158.834 160.422 162.026 163.647 Internet Marketplace Tax - NYC 176.465 178.229 180.012 181.812 183.630 185.466 Subtotal: 654.944 1,669.260 2,574.510 2,606.033 2,835.006 2,857.138 Less: Debt Service on Lockbox Bonds for the 2020-2024 Capital Program (186.348) (272.138) (353.684) (446.251) (610.489) (808.459) Less: Debt Service on Lockbox Bonds for the 2025-2029 Capital Program 0.000 0.000 0.000 (25.174) (138.177) (371.487) Less: 2020-2024 Capital Program PAYGO and CBDTP Expenses (468.596) (896.122) (820.826) (731.782) (775.097) (584.765) Less: 2025-2029 Capital Program PAYGO 0.000 (501.000) (1,400.000) (1,402.826) (1,311.243) (1,092.427) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Accrual Basis Capital Program Funding from Lockbox Revenues Payroll Mobility Tax (PMT) for Capital Funding $0.000 $501.000 $1,400.000 $1,428.000 $1,449.420 $1,463.914 Central Business District Tolling Program (CBDTP) 0.000 500.000 500.000 500.000 700.000 700.000 Real Estate Transfer Tax 322.775 332.770 335.665 335.799 339.929 344.110 Internet Marketplace Tax - NYS 155.704 157.261 158.834 160.422 162.026 163.647 Internet Marketplace Tax - NYC 176.465 178.229 180.012 181.812 183.630 185.466 Subtotal: 654.944 1,669.260 2,574.510 2,606.033 2,835.006 2,857.138 Less: Debt Service on Lockbox Bonds for the 2020-2024 Capital Program (186.348) (272.138) (353.684) (446.251) (610.489) (808.459) Less: Debt Service on Lockbox Bonds for the 2025-2029 Capital Program 0.000 0.000 0.000 (25.174) (138.177) (371.487) Less: 2020-2024 Capital Program PAYGO and CBDTP Expenses (468.596) (896.122) (820.826) (731.782) (775.097) (584.765) Less: 2025-2029 Capital Program PAYGO 0.000 (501.000) (1,400.000) (1,402.826) (1,311.243) (1,092.427) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p070_c0003] _II-54_
+
+## Page 71
+
+### [p071_c0001] PAYROLL MOBILITY TAX (PMT)
+[p071_c0002] The Payroll Mobility Tax (PMT), also known as the Metropolitan Commuter Transportation Mobility Tax (MCTMT), enacted in 2009 1 to provide a stable source of revenue for the MTA, is a tax on employer payrolls and self-employment earnings. Effective on July 1, 2025, Tax Law changes in the NYS 2025-26 Enacted Budget increase the PMT rate in the Metropolitan Transportation District (MCTD) for employers with quarterly payroll expenses higher than $2.5 million, while also lowering the tax rate for quarterly payroll expenses between $312,500 and $437,500. The tax for certain self-employed individuals and for local governments outside of New York City has been eliminated, and the rate was not changed for employers outside of New York City with quarterly payrolls of between $437,500 and $2.5 million. Based on discussions with NYS Division of the Budget, the Plan assumes an increase in PMT revenues, with twenty-eight and one-half percent of the gross PMT revenues dedicated to the 2025-2029 Capital Program Account within the MTA Capital Lockbox Fund, after debt service is paid, with the remainder continuing to fund the operating budget. The current tax liabilities are as follows:
+- [p071_c0003] • Employers with payroll expense in excess of $2.5 million in any calendar quarter that are engaged in business in the counties of Bronx, Kings, New York, Queens, and Richmond are subject to a tax rate of 0.895 percent, an increase from the prior tax rate of 0.60 percent; and employers engaged in business in the counties of Dutchess, Nassau, Orange, Putnam, Rockland, Suffolk, and Westchester are subject to a tax rate of 0.635 percent, an increase from the prior rate of 0.34 percent; • Employers with payroll expenses in any calendar quarter greater than $437,500 but not greater than $2.5 million engaged in business in the counties of Bronx, Kings, New York, Queens, and Richmond continue to pay a tax rate of 0.60 percent; employers engaged in business in the counties of Dutchess, Nassau, Orange, Putnam, Rockland, Suffolk, and Westchester continue to pay a tax rate of 0.34 percent;
+[p071_c0004] Employers with payroll expenses greater than $375,000 but not greater than $437,500 in any calendar quarter are subject to a tax rate of 0.115 percent, down from the prior tax rate of 0.23 percent;
+- [p071_c0005] • Employers with payroll expenses greater than $312,500 but not greater than $375,000 in any calendar quarter are subject to a tax rate of 0.055 percent, down from the prior tax
+[p071_c0006] _1 When enacted in 2009, the PMT applied to all employers in the MCTD, and was imposed on self-employment earnings within the MCTD, at a rate of 0.34 percent. School districts were required to pay the tax, with school districts reimbursed by the State for their tax payments. The legislation permits the MTA to utilize the payroll mobility tax revenues:_
+- [p071_c0007] • As pledged revenue to secure and be applied to the payment of bonds to be issued in the future to fund capital projects of the MTA, NYCTA, and NYCTA subsidiaries; • To pay capital costs, including debt service of MTA and its subsidiaries, and NYCTA and its subsidiaries; • To pay for costs, including operating costs of MTA and its subsidiaries, and NYCTA and its subsidiaries.
+[p071_c0008] Effective April 2012, the amendments either reduced the tax rate or eliminated the liability for taxpayers in certain tax categories, exempted public and private schools and school districts from the tax, and provided that reductions attributable to the rate reduction and exemptions be offset through alternative sources in the State Budget.
+[p071_c0009] Effective January 2016, the State eliminated the PMT levy on public library systems and on public and free association libraries but did offset the reduction due to these exemptions with alternative revenue sources. NYS 2018-19 Enacted Budget eliminated appropriation by the State Legislation, allowing the PMT-collected funds to go directly to the MTA.
+[p071_c0010] Effective July 2023, State legislation increased the PMT tax liability for employers in the top taxpayer category and the self-employed engaged in business in the counties of Bronx, Kings, New York, Queens and Richmond.
+[p071_c0011] _II-55_
+
+## Page 72
+
+[p072_c0001] rate of 0.11 percent;
+- [p072_c0002] • Employers with payroll expenses of $312,000 or less are exempted from the tax; • Effective January 1, 2026, self-employment earnings in the counties of Bronx, Kings, New York, Queens, and Richmond that exceed $150,000 for a tax year, increased from $50,000 for a tax year, are subject to a tax rate of 0.60 percent; and • Effective January 1, 2026, self-employment earnings in the counties of Dutchess, Nassau, Orange, Putnam, Rockland, Suffolk, and Westchester that exceed $150,000 for a tax year, increased from $50,000 in the tax year, are subject to a tax rate of 0.34 percent.
+[p072_c0003] The impact from the PMT rate changes will be reflected in revenue receipts beginning in September 2025.
+[p072_c0004] Public and private schools and school districts continue to be exempted from the tax, and the reductions attributable to the PMT rate reductions and exemptions effective with the April 2012 amendments continue to be offset through annual State Budget appropriation of "PMT Replacement Funds". Prior changes eliminated the PMT levy on all public library systems and on public and free association libraries, effective on January 1, 2016, and the elimination of annual PMT appropriations through the State Budget process, replaced with PMT-collected funds directly transferred to the MTA. PMT Replacement funds, however, continue to be subject to annual State Budget appropriation.
+[p072_c0005] PMT Replacement funds are projected to total $244 million annually, unchanged from the February Plan.
+[p072_c0006] Annual PMT forecasts for the first couple of years of the Plan period reflect re-estimates based on discussions with the NYS Division of Budget, with conservative growth forecasts for the out-years of the Plan period.
+[p072_c0007] The 2025 Mid-Year Forecast is $215 million higher than Adopted Budget and reflects actual receipts through May 2025 and projected additional revenue from the higher projections of taxable payroll levels. Compared with the February Plan, PMT estimates are higher by $235 million in 2026, $179 million in 2027, and $106 million in 2028.
+[p072_c0008] The twenty-eight and one-half percent share of the PMT revenues that State Law dedicates to the 2025 to 2029 Capital Program Account within the MTA Capital Lockbox Fund are projected, in the July Plan, to be $501 million in 2025, $1,400 million in 2026, $1,428 million in 2027, $1,449 million in 2028 and $1,464 million in 2029.
+[p072_c0009] Forecasts, plan-to-plan changes, and year-over-year changes on both an accrual and cash basis can be found in the table at the beginning of this Subsidies section.
+[p072_c0010] _II-56_
+
+## Page 73
+
+### [p073_c0001] MTA AID TRUST REVENUES
+[p073_c0002] MTA Aid Trust Revenues (MTA Aid) are a tax and fee revenue stream enacted in 2009 along with the Payroll Mobility Tax. These revenues are permitted to be pledged to secure debt or to pay operating and capital costs. MTA Aid is composed of the following taxes and fees:
+- [p073_c0003] • License Fee – one-dollar fee for each six-month period of validity of a learner's permit or driver's license issued to individuals residing in the Metropolitan Commuter Transportation District (MCTD); • Motor Vehicle Registration Fee – fifty-dollar biennial fee on motor vehicle registrations in the MCTD corresponding to the vehicle registration period; • Taxicab Tax – fifty cents per ride tax imposed on taxicab owners for each taxicab ride that originates in New York City and terminates within the MCTD; • Auto Rental Tax – six percent supplemental tax on rental fees for passenger cars rented within the MCTD.
+[p073_c0004] The 2025 Mid-Year Forecast and the annual forecasts for the remainder of the Plan period are unchanged from the February Plan forecasts.
+[p073_c0005] Forecasts, plan-to-plan changes, and year-over-year changes on both an accrual and cash basis can be found in the table at the beginning of this Subsidies section.
+[p073_c0006] _II-57_
+
+## Page 74
+
+### [p074_c0001] STATE AND LOCAL SUBSIDIES
+[p074_c0002] State and Local Subsidies consist of the following:
+- [p074_c0003] • New York State Operating Assistance (18-b) – a statewide mass transportation program (State 18-b Operating Assistance) that provides direct State aid to the MTA, which is appropriated in the State Budget on an annual basis. Since 1994, the State has annually funded approximately 95% of its 18-b payments with MMTOA. • Local Operating Assistance (18-b) – payments made by New York City and each of the seven suburban counties in the MCTD, which are required by State transportation law to match State 18-b Operating Assistance. The matching payments are made quarterly to the MTA • Station Maintenance – a subsidy paid by New York City and each of the seven suburban counties in the MCTD for the operation, maintenance, and use of commuter railroad passenger stations within their jurisdictions. Conforming with State Law, Station Maintenance base amounts were established in 1999 and are subject to an annual adjustment tied to the consumer price index, replacing the procedure of billing for actual station operation and maintenance expenses.
+[p074_c0004] Forecasts for the New York State Operating Assistance (18-b) and Local Operating Assistance (18-b), on an accrual basis, remain unchanged from the February Plan. The 2025 cash forecast is $35 million higher than February, reflecting a timing delay from 2024 due to a late payment from New York City that impacted 2025. Changes to Station Maintenance forecasts reflect revised inflation projections.
+[p074_c0005] Forecasts, plan-to-plan changes, and year-over-year changes on both an accrual and cash basis can be found in the table at the beginning of this Subsidies section.
+[p074_c0006] _II-58_
+
+## Page 75
+
+### [p075_c0001] CASINO LICENSE AND GAMING TAX REVENUES
+[p075_c0002] The NYS 2023-24 Enacted Budget directs to the MTA all license fees from the awarding of up to three downstate casinos. Each license is assumed to generate $500 million, with one license being awarded in each of 2026, 2027 and 2028. In addition, the State Budget directs a share of future gaming taxes from these downstate casinos to the MTA. Gaming tax revenues are anticipated to generate $100 million annually from each of the three casinos, with gaming tax revenues starting in 2028 for the first casino, 2029 for the second casino and 2030 for the third casino. Forecasts for revenues from the casino licenses and the gaming tax are unchanged from the February Plan.
+[p075_c0003] Forecasts, plan-to-plan changes, and year-over-year changes on both an accrual and cash basis can be found in the table at the beginning of this Subsidies section.
+[p075_c0004] _II-59_
+
+## Page 76
+
+### [p076_c0001] OTHER SUBSIDY ADJUSTMENTS
+[p076_c0002] In addition to MRT-2 adjustments, which are discussed in the Mortgage Recording Taxes section, the July Plan includes other subsidy adjustments over the Plan period.
+[p076_c0003] NYCT Charge Back of MTA Bus Debt Service – In addition to funding capital costs associated with the MTA Bus 2005-2009 Capital Program, which is captured in Mortgage Recording Taxes, New York City Transit reimburses MTA Bus for federal grants and matching City moneys originally intended for use by the New York City franchise bus companies that were taken over as part of the creation of MTA Bus. Restrictions precluded the use of these funds by MTA Bus, and were therefore assigned for NYCT capital project funding, with NYCT paying debt service on bonds and commercial paper for MTA Bus projects of an amount equal to the value of the federal grant and matching City moneys to NYCT.
+[p076_c0004] Forward Energy Contracts Program – Since 2008, the MTA has hedged a portion of its projected fuel expense to reduce budgetary risk from price volatility. The Plan reflects continuation of this strategy, which provides a measure of financial stability from price fluctuations. To effectuate the strategy of reducing the budgetary impact from fuel price volatility, new hedge contracts, extending as far as 24 months from execution date, are executed monthly. MTA's hedging strategy is not intended to be speculative, but rather to reduce the financial impacts of fuel price changes. With approximately half of MTA's fuel needs covered by hedges at any time, the net effect is essentially a halving of any adverse impact from price increases, but also a halving of savings during price declines.
+[p076_c0005] Other Local Subsidy Resources – Local subsidy funds were freed up by federal reimbursement for operating losses incurred during the COVID pandemic. These local funds were previously deployed to reduce debt service costs, prepay pension expenses, and fund future retiree health expenses utilizing the OPEB Trust. Remaining local funds are available to help close annual deficits.
+[p076_c0006] OPEB Trust/Reserve – Funds totaling $179 million from 2026 and 2027 are being directed to the OPEB Reserve account which are intended to partially fund retiree health expenses in 2028 and 2029.
+[p076_c0007] Federal Formula Grant – The MTA received $2.3 billion from a federal formula grant in 2024 and an additional $1.4 billion in 2025, which is being applied as PAYGO capital. The July Plan captures the grant receipts and the application of these funds, which has no impact on the operating budget.
+[p076_c0008] Forecasts, plan-to-plan changes, and year-over-year changes on both an accrual and cash basis can be found in the table at the beginning of this Subsidies section.
+[p076_c0009] _II-60_
+
+## Page 77
+
+### [p077_c0001] OTHER FUNDING AGREEMENTS
+[p077_c0002] The following reimbursements, per operating agreements the MTA has with New York City and Connecticut, are captured in Other Funding Agreements:
+- [p077_c0003] • New York City Subsidy for MTA Bus – subsidy payments made by the City of New York to cover the operating deficit of MTA Bus. The operational analysis is covered in the MTA Bus section of this volume. • New York City Subsidy for Staten Island Railway – subsidy payments made by the City of New York to cover the operating deficit of Staten Island Railway. The operational analysis is covered in the Staten Island Railway section of this volume. • Connecticut Department of Transportation (CDOT) Subsidy for Metro-North Railroad – subsidy payments made by the State of Connecticut Department of Transportation to cover its share of the operating deficit of the New Haven Line and the Connecticut branch lines of Metro-North Railroad. The operational analysis is covered in the Metro-North section of this volume.
+[p077_c0004] Changes in the New York City subsidies and the CDOT subsidy are reflective of revised net operating expense assumptions for MTA Bus, Staten Island Railway and the New Haven Line and Connecticut branch lines of Metro-North Railroad, respectively.
+[p077_c0005] Forecasts, plan-to-plan changes, and year-over-year changes on both an accrual and cash basis can be found in the table at the beginning of this Subsidies section.
+[p077_c0006] Additional agreements provide funding to the MTA and are incorporated in the New York City Transit financial statements:
+- [p077_c0007] • Paratransit service receives funding from two sources. A portion of the Urban Taxes, in addition to the amounts included in Subsidies, are dedicated specifically for paratransit to partially cover operations, and New York City currently provides reimbursement to cover the net operating cost, legislated at 80 percent of expenses but capped at 50 percent plus $165 million. As a result, the City's contribution is less than 80 percent and is further reduced each year as expenses continue to increase. The Paratransit Operations financial statement at the end of this Subsidies section reflects these funds. • New York City and New York State provide partial reimbursement to cover Subway and Bus fares for eligible students through high school using Student OMNY cards for up to four trips daily for a full 12-month period beginning with the start of each school year. Funding from these agreements is included under Fare Reimbursements in the NYCT financial statements. • New York City also provides reimbursement to partially offset reduced Subway and Bus fares for New York City residents aged 65 or older and those with qualifying disabilities. Funding from these agreements is included under Fare Reimbursements in the NYCT financial statements.
+[p077_c0008] _II-61_
+
+## Page 78
+
+### [p078_c0001] MTA NEW YORK CITY TRANSIT SUBSIDY ALLOCATION
+[p078_c0002] July Financial Plan 2026 - 2029
+[p078_c0003] Cash Basis ($ in millions)
+[p078_c0004]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 MMTOA, PBT, Real Estate Taxes and Other Metropolitan Mass Transportation Operating Assistance (MMTOA) $2,052.3 $2,155.5 $1,336.9 $1,315.3 $1,341.7 $1,368.5 Mass Transportation Trust Fund (MTTF) 543.6 495.7 1,503.0 1,529.7 1,556.4 1,584.1 Urban Tax 377.8 438.9 471.0 578.9 593.2 608.0 $2,973.7 $3,090.1 $3,310.8 $3,423.9 $3,491.3 $3,560.5 PMT and MTA Aid Payroll Mobility Tax (PMT) for Operating $1,864.4 $2,075.3 $1,754.8 $1,805.3 $1,761.7 $1,856.4 Payroll Mobility Tax Replacement Funds 171.0 171.0 171.0 171.0 171.0 171.0 MTA Aid 188.7 191.5 191.5 191.5 191.5 191.5 $2,224.1 $2,437.8 $2,117.4 $2,167.8 $2,124.2 $2,218.9 For-Hire Vehicle (FHV) Surcharge: Subway Action Plan Account $300.0 $300.0 $300.0 $300.0 $300.0 $300.0 Outerborough Transportation Account (OBTA) Transfer to Operating 0.0 30.6 49.2 49.7 50.2 50.7 General Transportation Account 0.0 0.0 0.0 0.0 0.0 0.0 $300.0 $330.6 $349.2 $349.7 $350.2 $350.7 Automated Camera Enforcement (ACE) $22.6 $93.0 $113.2 $127.7 $86.1 $86.1 Peer-to-Peer Car Sharing Trip Tax $1.0 $0.8 $0.8 $0.8 $0.8 $0.8 Capital Lockbox Fund Payroll Mobility Tax (PMT) for Capital Funding $0.0 $400.8 $1,120.0 $1,142.4 $1,159.5 $1,171.1 Central Business District Tolling Program (CBDTP) 0.0 400.0 400.0 400.0 560.0 560.0 Real Estate Transfer Tax 258.2 266.2 268.5 268.6 271.9 275.3 Internet Marketplace Tax - NYS 124.6 125.8 127.1 128.3 129.6 130.9 Internet Marketplace Tax - NYC 141.2 142.6 144.0 145.4 146.9 148.4 Subtotal: 524.0 1,335.4 2,059.6 2,084.8 2,268.0 2,285.7 Less: Debt Service on Lockbox Bonds for the 2020-2024 Capital Program (149.1) (217.7) (282.9) (357.0) (488.4) (646.8) Less: Debt Service on Lockbox Bonds for the 2025-2029 Capital Program 0.0 0.0 0.0 (20.1) (110.5) (297.2) Less: 2020-2024 Capital Program PAYGO and CBDTP Expenses (374.9) (716.9) (656.7) (585.4) (620.1) (467.8) Less: 2025-2029 Capital Program PAYGO 0.0 (400.8) (1,120.0) (1,122.3) (1,049.0) (873.9) $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 State and Local Subsidies State Operating Assistance $158.1 $158.1 $158.1 $158.1 $158.1 $158.1 Local Operating Assistance 123.2 192.9 158.1 158.1 158.1 158.1 State General Fund Subsidy 102.0 0.0 0.0 0.0 0.0 0.0 $383.3 $351.0 $316.1 $316.1 $316.1 $316.1 Casino License and Gaming Tax Revenues $0.0 $0.0 $340.0 $340.0 $408.0 $136.0 Investment Income $66.8 $54.9 $11.2 $10.0 $10.0 $10.0 Other Subsidy Adjustments NYCT Charge Back of MTA Bus Debt Service ($11.5) ($11.5) ($11.5) ($11.5) ($11.5) ($11.5) Forward Energy Contracts Program - Gain/(Loss) (4.7) (9.8) (4.1) (0.1) 0.0 0.0 Other Local Subsidy Resources 680.4 (177.4) 0.0 0.0 145.3 110.0 Other Local Subsidy to Cover Debt Service Prepayment (168.1) 0.0 0.0 0.0 0.0 0.0 OPEB Trust/Reserve* 0.0 0.0 (110.5) (14.7) 59.5 576.0 Federal Formula Grant 2,302.0 1,446.7 0.0 0.0 0.0 0.0 Federal Grant Funds to pay for Capital Projects (2,302.0) (1,446.7) 0.0 0.0 0.0 0.0 $496.2 ($198.7) ($126.1) ($26.3) $193.3 $674.5 Subtotal: Taxes & State and Local Subsidies $6,467.6 $6,159.5 $6,432.5 $6,709.6 $6,980.0 $7,353.6 Inter-agency Subsidy Transactions B&T Operating Surplus Transfer $688.8 $666.2 $618.1 $601.1 $568.6 $582.9 $688.8 $666.2 $618.1 $601.1 $568.6 $582.9 TOTAL SUBSIDIES $7,156.4 $6,825.7 $7,050.7 $7,310.7 $7,548.6 $7,936.5
+```
+[p078_c0005] * Contributions to and/or Reimbursements from OPEB Trust and/or OPEB Reserve accounts.
+[p078_c0006] _II-62_
+
+## Page 79
+
+### [p079_c0001] MTA COMMUTER RAILROADS SUBSIDY ALLOCATION
+[p079_c0002] July Financial Plan 2026 - 2029
+[p079_c0003] Cash Basis
+[p079_c0004] ($ in millions)
+[p079_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 MMTOA, PBT, Real Estate Taxes and Other Metropolitan Mass Transportation Operating Assistance (MMTOA) $939.9 $987.2 $612.3 $602.4 $614.5 $626.8 Mass Transportation Trust Fund (MTTF) 95.9 87.5 265.2 269.9 274.7 279.5 Mortgage Recording Tax (MRT) 0.0 0.0 0.0 0.0 0.0 0.0 MRT Adjustments 0.0 0.0 0.0 0.0 0.0 0.0 $1,035.8 $1,074.7 $877.5 $872.4 $889.1 $906.3 PMT and MTA Aid Payroll Mobility Tax (PMT) for Operating $284.3 $210.8 $779.3 $861.9 $945.4 $894.3 Payroll Mobility Tax Replacement Funds 73.3 73.3 73.3 73.3 73.3 73.3 MTA Aid 80.9 82.1 82.1 82.1 82.1 82.1 $438.5 $366.2 $934.6 $1,017.3 $1,100.8 $1,049.7 For-Hire Vehicle (FHV) Surcharge Outerborough Transportation Account (OBTA) Transfer to Operating $0.8 $0.0 $0.0 $0.0 $0.0 $0.0 General Transportation Account 0.0 0.0 0.0 0.0 0.0 0.0 $0.8 $0.0 $0.0 $0.0 $0.0 $0.0 Automated Camera Enforcement (ACE) $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 Peer-to-Peer Car Sharing Trip Tax $0.5 $0.4 $0.4 $0.4 $0.4 $0.4 Capital Program Funding from Lockbox Revenues Payroll Mobility Tax (PMT) for Capital Funding $0.0 $100.2 $280.0 $285.6 $289.9 $292.8 Central Business District Tolling Program (CBDTP) 0.0 100.0 100.0 100.0 140.0 140.0 Real Estate Transfer Tax 64.6 66.6 67.1 67.2 68.0 68.8 Internet Marketplace Tax - NYS 31.1 31.5 31.8 32.1 32.4 32.7 Internet Marketplace Tax - NYC 35.3 35.6 36.0 36.4 36.7 37.1 Subtotal: 131.0 333.9 514.9 521.2 567.0 571.4 Less: Debt Service on Lockbox Bonds for the 2020-2024 Capital Program (37.3) (54.4) (70.7) (89.3) (122.1) (161.7) Less: Debt Service on Lockbox Bonds for the 2025-2029 Capital Program 0.0 0.0 0.0 (5.0) (27.6) (74.3) Less: 2020-2024 Capital Program PAYGO and CBDTP Expenses (93.7) (179.2) (164.2) (146.4) (155.0) (117.0) Less: 2025-2029 Capital Program PAYGO 0.0 (100.2) (280.0) (280.6) (262.2) (218.5) $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 State and Local Subsidies State Operating Assistance $29.3 $29.3 $29.3 $29.3 $29.3 $29.3 Local Operating Assistance 29.3 29.3 29.3 29.3 29.3 29.3 Station Maintenance 205.5 213.7 222.2 228.1 232.3 236.4 State General Fund Subsidy 48.0 0.0 0.0 0.0 0.0 0.0 $312.0 $272.2 $280.7 $286.6 $290.8 $294.9 Casino License and Gaming Tax Revenues $0.0 $0.0 $160.0 $160.0 $192.0 $64.0 Investment Income $28.6 $23.6 $4.8 $4.3 $4.3 $4.3 Other Subsidy Adjustments Forward Energy Contracts Program - Gain/(Loss) ($2.0) ($4.2) ($1.8) $0.0 $0.0 $0.0 Other Local Subsidy Resources 208.2 (47.2) 0.0 0.0 38.6 29.2 Other Local Subsidy to Cover Debt Service Prepayment (72.0) 0.0 0.0 0.0 0.0 0.0 OPEB Trust/Reserve* 0.0 0.0 (47.3) (6.3) 25.5 246.8 $134.2 ($51.3) ($49.1) ($6.3) $64.1 $276.1 Subtotal: Taxes & State and Local Subsidies $1,950.3 $1,685.7 $2,208.9 $2,334.6 $2,541.5 $2,595.7 Other Funding Agreements CDOT Subsidy for Metro-North Railroad $283.4 $265.2 $262.4 $273.9 $292.7 $310.1 $283.4 $265.2 $262.4 $273.9 $292.7 $310.1 Subtotal, including Other Funding Agreements $2,233.7 $1,950.9 $2,471.2 $2,608.5 $2,834.3 $2,905.8 Inter-agency Subsidy Transactions B&T Operating Surplus Transfer $752.1 $735.0 $670.6 $653.3 $625.6 $643.7 $752.1 $735.0 $670.6 $653.3 $625.6 $643.7 TOTAL SUBSIDIES $2,985.8 $2,685.9 $3,141.8 $3,261.8 $3,459.9 $3,549.5
+```
+[p079_c0006] * Contributions to and/or Reimbursements from OPEB Trust and/or OPEB Reserve accounts.
+[p079_c0007] _II-63_
+
+## Page 80
+
+### [p080_c0001] MTA STATEN ISLAND RAILWAY SUBSIDY ALLOCATION
+[p080_c0002] July Financial Plan 2026 - 2029
+[p080_c0003] Cash Basis
+[p080_c0004] ($ in millions)
+[p080_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 MMTOA Metropolitan Mass Transportation Operating Assistance (MMTOA) $7.8 $8.4 $5.2 $5.1 $5.3 $5.4 $7.8 $8.4 $5.2 $5.1 $5.3 $5.4 State and Local Subsidies State Operating Assistance $0.6 $0.6 $0.6 $0.6 $0.6 $0.6 Local Operating Assistance 0.5 0.8 0.6 0.6 0.6 0.6 $1.1 $1.4 $1.2 $1.2 $1.2 $1.2 Subtotal: Taxes & State and Local Subsidies $8.9 $9.8 $6.5 $6.4 $6.5 $6.6 Other Funding Agreements City Subsidy for Staten Island Railway $44.6 $42.0 $80.6 $77.2 $75.6 $75.0 $44.6 $42.0 $80.6 $77.2 $75.6 $75.0 TOTAL SUBSIDIES $53.5 $51.9 $87.1 $83.6 $82.1 $81.6
+```
+[p080_c0006] _II-64_
+
+## Page 81
+
+### [p081_c0001] MTA HEADQUARTERS SUBSIDY ALLOCATION
+[p081_c0002] July Financial Plan 2026 - 2029
+[p081_c0003] Cash Basis
+[p081_c0004] ($ in millions)
+[p081_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Net Funding Required for MTA Headquarters ($1,090.7) ($1,262.4) ($1,206.4) ($1,236.5) ($1,266.5) ($1,276.8) Mortgage Recording Tax -1 MRT-1 Gross Receipts $228.2 $274.8 $311.3 $379.1 $397.6 $417.6 Adjustments to MRT -1 Diversion of MRT to Suburban Highway $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 Total Adjustments to MRT-1 $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 Total MRT-1 Available to Fund MTA HQ $228.2 $274.8 $311.3 $379.1 $397.6 $417.6 Remaining Requirement to Fund MTA HQ, after MRT-1 ($862.4) ($987.6) ($895.0) ($857.5) ($869.0) ($859.2) Mortgage Recording Tax -2 MRT-2 Gross Receipts $113.4 $133.2 $154.6 $190.5 $199.2 $208.7 Adjustments to MRT - 2 Funding of General Reserve ($195.0) ($200.0) ($210.0) ($220.0) ($230.0) ($240.0) MTA Bus Debt Service (12.3) (12.6) (14.5) (13.6) (12.3) (13.7) Reimburse Agency Security Costs 0.0 0.0 0.0 0.0 0.0 0.0 MRT Transfer To Suburban Counties (11.4) (12.1) (13.3) (14.8) (17.1) (17.6) Interest on MRT Receipts 0.0 0.0 0.0 0.0 0.0 0.0 Total Adjustments to MRT-2 ($218.7) ($224.6) ($237.7) ($248.4) ($259.4) ($271.4) Total MRT-2 Available to Fund MTAHQ ($105.3) ($91.4) ($83.1) ($57.9) ($60.2) ($62.7) Remaining Requirement to Fund MTA HQ, after MRT-2 ($967.8) ($1,078.9) ($978.1) ($915.3) ($929.1) ($921.9) Payroll Mobility Tax for Fund Unallocated MRT-2 Receipts $967.8 $1,078.9 $978.1 $915.3 $929.1 $921.9
+```
+[p081_c0006] _II-65_
+
+## Page 82
+
+### [p082_c0001] MTA BUS COMPANY SUBSIDY ALLOCATION
+[p082_c0002] July Financial Plan 2026 - 2029
+[p082_c0003] Cash Basis
+[p082_c0004] ($ in millions)
+[p082_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Other Funding Agreements City Subsidy for MTA Bus Company $527.2 $523.3 $728.6 $824.7 $785.3 $822.1 TOTAL SUBSIDIES $527.2 $523.3 $728.6 $824.7 $785.3 $822.1
+```
+[p082_c0006] _II-66_
+
+## Page 83
+
+### [p083_c0001] MTA BRIDGES AND TUNNELS
+[p083_c0002] July Financial Plan 2026 - 2029
+### [p083_c0003] Surplus Transfer
+[p083_c0004] ($ in millions)
+[p083_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Net Surplus/(Deficit) $2,099.496 $2,105.371 $2,127.067 $2,153.567 $2,183.536 $2,207.538 Deductions from Net Operating Income: Capitalized Assets $8.580 $25.533 $23.799 $24.388 $24.893 $25.503 Reserves and Prepaid Expenses 3.432 0.000 0.000 0.000 0.000 0.000 GASB Reserves 0.100 0.000 0.000 0.000 0.000 0.000 Adjusted Net Income/(Deficit) $2,087.384 $2,079.838 $2,103.267 $2,129.179 $2,158.643 $2,182.035 Less: Debt Service $653.559 $736.431 $818.841 $876.729 $969.547 $949.904 Less: Contribution to the Capital Program 0.000 0.000 0.000 0.000 0.000 0.000 Net Income Available for Transfer to MTA and NYCT $1,433.825 $1,343.407 $1,284.426 $1,252.450 $1,189.095 $1,232.131 Distributable Income Distribution of Funds to MTA: Accrued Current Year Allocation $743.947 $699.172 $667.392 $651.773 $622.671 $646.034 Investment Income in the Current Year 11.250 5.098 1.240 1.240 1.240 1.240 Accrued Distribution to MTA $755.196 $704.270 $668.632 $653.013 $623.911 $647.275 Distribution of Funds to NYCT: First $24 million reserved for NYCT $24.000 $24.000 $24.000 $24.000 $24.000 $24.000 Additional Accrued Current Year Allocation 654.729 615.138 591.795 575.437 541.185 560.856 Accrued Distribution to NYCT $678.729 $639.138 $615.795 $599.437 $565.185 $584.856 Total Distributable Income: $1,433.925 $1,343.407 $1,284.426 $1,252.450 $1,189.095 $1,232.131 Cash Transfers Actual Cash Transfer to MTA and NYCT: From Current Year Surplus $752.061 $735.036 $670.570 $653.335 $625.581 $643.698 Investment Income from Prior Year 12.369 11.250 5.098 1.240 1.240 1.240 Cash Transfer to MTA $764.430 $746.285 $675.668 $654.575 $626.821 $644.938 Cash Transfer to NYCT $688.833 $666.175 $618.129 $601.073 $568.610 $582.889 Total Cash Transfer: $1,453.263 $1,412.460 $1,293.797 $1,255.648 $1,195.431 $1,227.827
+```
+[p083_c0006] _II-67_
+
+## Page 84
+
+### [p084_c0001] MTA BRIDGES AND TUNNELS
+[p084_c0002] July Financial Plan 2026 - 2029
+### [p084_c0003] Surplus Transfer
+[p084_c0004] ($ in millions)
+[p084_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Debt Service Detail By Agency: B&T Own Purpose Debt Service $416.043 $510.134 $611.781 $667.646 $747.173 $722.993 NYCT Transportation Debt Service 163.367 155.165 141.328 142.710 151.930 156.045 MTA Transportation Debt Service 74.149 71.131 65.731 66.374 70.444 70.866 Total Debt Service by Agency $653.559 $736.431 $818.841 $876.729 $969.547 $949.904 Total Accrued Amount for Transfer to MTA and NYCT: Total Adjusted Net Income Available for Transfer $2,076.135 $2,074.740 $2,102.027 $2,127.939 $2,157.403 $2,180.794 Less: B&T Total Debt Service (416.043) (510.134) (611.781) (667.646) (747.173) (722.993) Less: first $24 million reserved for NYCT (24.000) (24.000) (24.000) (24.000) (24.000) (24.000) Total Accrued Amount for Transfer $1,636.091 $1,540.606 $1,466.245 $1,436.293 $1,386.230 $1,433.801 Calculation of Actual Cash Transfer to MTA: Distribution of Funds to MTA Fifty Percent of Total Accrued Amount for Transfer $818.046 $770.303 $733.123 $718.147 $693.115 $716.900 Less: MTA Total Debt Service (74.149) (71.131) (65.731) (66.374) (70.444) (70.866) Accrued Distribution to MTA $743.897 $699.172 $667.392 $651.773 $622.671 $646.034 Investment Income in Current Year 11.250 5.098 1.240 1.240 1.240 1.240 Accrued Distribution to MTA with Investment Income $755.146 $704.270 $668.632 $653.013 $623.911 $647.275 Cash Conversion of MTA's Accrued Amount Current Year Amount $638.165 $628.888 $600.652 $586.596 $560.404 $581.431 Balance of Prior Year 113.896 106.148 69.917 66.739 65.177 62.267 Cash Transfer to MTA $752.061 $735.036 $670.570 $653.335 $625.581 $643.698 Investment Income from Prior Year 12.369 11.250 5.098 1.240 1.240 1.240 Cash Transfer to MTA with Investment Income $764.430 $746.285 $675.668 $654.575 $626.821 $644.938 Calculation of Accrual Cash Transfer to NYCT: Distribution of Funds to NYCT Fifty Percent of Total Accrued Amount for Transfer $818.046 $770.303 $733.123 $718.147 $693.115 $716.900 Less: NYCT Total Debt Service (163.367) (155.165) (141.328) (142.710) (151.930) (156.045) Plus: first $24 million reserved for NYCT 24.000 24.000 24.000 24.000 24.000 24.000 Accrued Distribution to NYCT $678.679 $639.138 $615.795 $599.437 $565.185 $584.856 Cash Conversion of NYCT's Accrued Amount Current Year Amount $587.778 $574.858 $554.215 $539.493 $508.666 $526.370 Balance of Prior Year 101.055 91.317 63.914 61.579 59.944 56.518 Cash Transfer to NYCT $688.833 $666.175 $618.129 $601.073 $568.610 $582.889
+```
+[p084_c0006] _II-68_
+
+## Page 85
+
+### [p085_c0001] MTA BUS COMPANY July Financial Plan 2026 - 2029 Summary ($ in millions)
+[p085_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Revenue Summary: Farebox Revenue $183.6 $192.1 $198.8 $206.0 $209.1 $208.9 Other Revenue 13.8 20.3 20.0 19.8 19.9 20.0 Total Revenues $197.4 $212.4 $218.8 $225.8 $229.0 $228.8 Non-Reimbursable Expense Summary: Labor Expenses $689.8 $745.9 $775.5 $794.9 $814.0 $835.4 Non-Labor Expenses 233.7 225.4 243.3 243.2 240.4 244.2 Depreciation 65.2 72.0 72.0 72.0 72.0 72.0 OPEB Liability Adjustment 0.0 0.0 0.0 0.0 0.0 0.0 GASB 49 Environmental Remediation 0.7 0.0 0.0 0.0 0.0 0.0 GASB 68 Pension Expense Adjustment (4.0) 10.8 6.6 (4.1) 22.0 16.9 GASB 75 OPEB Expense Adjustment 27.7 62.8 65.0 67.1 69.3 71.6 GASB 87 Lease Adjustment 0.0 0.0 0.0 0.0 0.0 0.0 GASB 96 SBITA Adjustment 0.0 0.0 0.0 0.0 0.0 0.0 Total Non-Reimbursable Expenses $1,013.1 $1,117.0 $1,162.4 $1,173.1 $1,217.6 $1,240.1 Total Net Revenue/(Deficit) ($815.7) ($904.5) ($943.6) ($947.3) ($988.6) ($1,011.3) Cash Adjustment Summary: Operating Cash Adjustments $318.9 $359.5 $240.3 $174.9 $203.7 $201.5 Contribution to GASB Fund (0.0) (0.0) (0.0) (0.0) (0.0) (0.0) Total Cash Adjustments $318.9 $359.5 $240.3 $174.9 $203.7 $201.5 Gross Cash Balance ($496.7) ($545.0) ($703.4) ($772.4) ($784.9) ($809.8) Other Adjustments: Non-Billable GASB Cash Adjustments $0.0 $0.0 $0.0 $0.0 $0.0 $0.0 Debt Service Expenses (5.3) (15.8) (18.6) (18.2) (18.5) (22.1) Non-Billable Debt Service (2005-09 Capital Program) (2.0) 12.4 15.1 14.7 15.0 18.6 Non-Billable Debt Service (2020-24 Capital Program) 0.0 0.0 0.0 0.0 0.0 0.0 Total Billable Debt Service ($7.3) ($3.5) ($3.5) ($3.5) ($3.5) ($3.5) Total Billable Adjusted Cash Balance after Debt Service ($504.0) ($548.5) ($706.9) ($775.9) ($788.4) ($813.3) City Subsidy Summary: Cash Balance Due from the City of New York $504.0 $548.5 $706.9 $775.9 $788.4 $813.3 Cash Subsidy Received from City of New York 527.2 523.3 728.6 824.7 785.3 822.1 Subsidy Cash Timing $23.2 ($25.2) $21.7 $48.8 ($3.1) $8.8 Net Cash Balance from Previous Year (39.1) (15.9) (41.1) (19.4) 29.4 26.2 Net Cash Surplus/(Deficit) ($15.9) ($41.1) ($19.4) $29.4 $26.2 $35.0
+```
+[p085_c0003] _II-69_
+
+## Page 86
+
+### [p086_c0001] STATEN ISLAND RAILWAY July Financial Plan 2026 - 2029 Summary ($ in millions)
+[p086_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Revenue Summary: Farebox Revenue $3.9 $3.8 $4.0 $4.0 $4.0 $4.0 Other Revenue 2.2 2.5 1.5 1.5 1.5 1.5 State/City Subsidies 9.0 9.7 6.5 6.4 6.5 6.6 Total Revenues $15.1 $16.0 $12.0 $11.8 $12.0 $12.1 Non-Reimbursable Expense Summary: Labor Expenses $54.3 $61.3 $63.0 $64.1 $63.1 $63.2 Non-Labor Expenses 23.9 28.8 20.2 17.8 18.3 18.7 Depreciation 24.6 17.5 17.5 17.5 17.5 17.5 OPEB Liability Adjustment 0.0 0.0 0.0 0.0 0.0 0.0 GASB 49 Environmental Remediation 0.1 0.0 0.0 0.0 0.0 0.0 GASB 68 Pension Expense Adjustment 2.0 0.3 0.3 1.7 (2.1) (2.1) GASB 75 OPEB Expense Adjustment 1.0 5.6 5.8 6.0 6.2 6.4 GASB 87 Lease Adjustment 0.2 0.0 0.0 0.0 0.0 0.0 GASB 96 SBITA Adjustment 0.0 0.0 0.0 0.0 0.0 0.0 Total Non-Reimbursable Expenses $106.1 $113.6 $106.8 $107.1 $103.0 $103.6 Total Net Revenue/(Deficit) ($91.0) ($97.6) ($94.9) ($95.3) ($91.0) ($91.5) Cash Adjustment Summary: Operating Cash Adjustments $57.8 $24.3 $25.5 $27.4 $23.8 $24.1 Contribution to GASB Fund 0.0 0.0 0.0 0.0 0.0 0.0 Subsidy Cash Adjustments (Other than SIRTOA Recovery) ($0.1) $0.1 $0.0 $0.0 $0.0 $0.0 Total Cash Adjustments $57.7 $24.4 $25.5 $27.4 $23.8 $24.1 Gross Cash Balance ($33.3) ($73.2) ($69.3) ($67.9) ($67.2) ($67.5) Other Adjustments: Debt Service Expenses ($8.7) ($7.4) ($7.9) ($7.7) ($7.8) ($9.4) Non-Billable Debt Service (2020-24 Capital Program) 0.0 0.0 0.0 0.0 0.0 0.0 Total Billable Debt Service ($8.7) ($7.4) ($7.9) ($7.7) ($7.8) ($9.4) Total Billable Adjusted Cash Balance after Debt Service ($42.0) ($80.6) ($77.2) ($75.6) ($75.0) ($76.9) City Subsidy Summary: Cash Balance Due from the City of New York ($42.0) ($80.6) ($77.2) ($75.6) ($75.0) ($76.9) Cash Subsidy Received from City of New York 44.6 42.0 80.6 77.2 75.6 75.0 Subsidy Cash Timing $2.5 ($38.5) $3.4 $1.6 $0.6 ($1.9) Net Cash Balance from Previous Year (44.6) (42.0) (80.6) (77.2) (75.6) (75.0) Net Cash Surplus/(Deficit) ($42.0) ($80.6) ($77.2) ($75.6) ($75.0) ($76.9)
+```
+[p086_c0003] _II-70_
+
+## Page 87
+
+### [p087_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan 2026-2029 Paratransit Operations ($ in thousands)
+[p087_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 Plan 2027 Plan 2028 Plan 2029 ADA Trips: 9,254,481 11,181,776 12,854,916 14,140,408 14,847,428 15,589,800 Pct Change from Previous Year 21.2% 20.8% 15.0% 10.0% 5.0% 5.0% Revenue: Fares $ 26,950 $ 33,108 $ 38,062 $ 41,868 $ 43,961 $ 46,160 Urban Tax 25,817 29,438 32,001 38,670 39,632 40,620 Sub-total $ 52,767 $ 62,546 $ 70,063 $ 80,538 $ 83,593 $ 86,780 City Reimbursements 504,218 577,903 626,292 661,041 789,659 835,165 Total Revenue $ 556,985 $ 640,449 $ 696,355 $ 741,579 $ 873,252 $ 921,945 Expenses: Operating Expenses: Salaries& Benefits $ 24,122 $ 29,860 $ 29,860 $ 29,860 $ 29,860 $ 29,860 Salaries 17,267 20,953 20,953 20,953 20,953 20,953 Benefits 6,855 8,907 8,907 8,907 8,907 8,907 Rental & Miscellaneous 692,869 827,139 955,020 1,037,227 1,056,803 1,116,887 Total Expenses $ 716,991 $ 856,999 $ 984,880 $ 1,067,087 $ 1,086,663 $ 1,146,747 Net Paratransit Surplus/(Deficit) $ (160,006) $ (216,550) $ (288,525) $ (325,508) $ (213,411) $ (224,802) Paratransit Details Total Paratransit Reimbursement: $ 530,035 $ 607,341 $ 658,293 $ 699,711 $ 829,291 $ 875,785 Urban Tax 25,817 29,438 32,001 38,670 39,632 40,620 City Reimbursements 504,218 577,903 626,292 661,041 789,659 835,165 Rental & Miscellaneous Expense: Paratransit Service Contracts Carrier Services $ 551,543 $ 687,321 $ 795,775 $ 874,966 $ 930,299 $ 988,371 Command Center 56,205 51,881 51,881 51,881 51,881 51,881 Eligibility Certification 4,261 3,963 3,963 3,963 3,963 3,963 Other 4,814 22,334 22,780 16,904 13,314 12,779 Subtotal $ 616,823 $ 765,499 $ 874,399 $ 947,714 $ 999,457 $ 1,056,994 Other Than Personnel Service: Insurance 30,934 37,782 35,675 36,458 38,281 40,195 Fuel 11,016 10,447 10,734 10,738 10,821 11,382 Other 31,911 11,711 32,426 40,517 6,429 6,487 Subtotal $ 73,861 $ 59,939 $ 78,835 $ 87,713 $ 55,532 $ 58,064 Non-City Reimbursable OTPS: $ 2,185 $ 1,700 $ 1,786 $ 1,800 $ 1,815 $ 1,829 Total Rental & Miscellaneous Expense $ 692,869 $ 827,139 $ 955,020 $ 1,037,227 $ 1,056,803 $ 1,116,887 Annual Growth in Total Expenses 19.2% 19.5% 14.9% 8.3% 1.8% 5.5% Ridership Registrant 9,254,481 11,181,776 12,854,916 14,140,408 14,847,428 15,589,800 Guest 658,774 886,020 1,018,598 1,120,458 1,176,480 1,235,304 Personal Care Attendant (PCA) 2,891,380 3,998,923 4,597,294 5,057,023 5,309,874 5,575,368 Total Ridership 12,804,635 16,066,718 18,470,808 20,317,888 21,333,783 22,400,472 Total Cost / Trip a $ 76.21 $ 75.71 $ 75.78 $ 74.70 $ 72.46 $ 72.83 Total Cost / Ridership b $ 55.08 $ 52.69 $ 52.74 $ 51.99 $ 50.43 $ 50.68
+```
+### [p087_c0003] Note:
+[p087_c0004] a Cost / Trip reflects cost per ADA registrant trip
+[p087_c0005] b Cost / Ridership reflects cost per ADA registrant, PCA and guest. Fare revenue is paid by registrants and guests.
+[p087_c0006] _II-71_
+
+## Page 88
+
+[p088_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p088_c0002] _II-72_
+
+## Page 89
+
+### [p089_c0001] Debt Service
+
+## Page 90
+
+### [p090_c0001] Debt Service in the Financial Plan
+[p090_c0002] The following tables present debt service projections for 2025 through 2029 in connection with approved Capital Programs, including the 2025-2029 Capital Program, which was approved by the Capital Plan Review Board in June 2025.
+[p090_c0003] Table 1 shows a $55 million favorable variance in debt service expenses to be paid from the operating budget over the Plan period. This variance is primarily due to refunding savings from the issuance of Transportation Revenue Bonds (TRB), Series 2024B and 2025A, which refunded certain outstanding TRB maturities. These savings were partially offset by debt service on additional bonds expected to be issued for the 2015-2019 Capital Program, replacing funding that was previously planned to come from annual revenues. Additionally, MTA updated the timing and interest rate assumptions for future issuances related to the 2020-2024 and 2025-2029 Capital Programs.
+[p090_c0004] Table 2 presents the forecasted borrowing schedule for debt supported by the operating budget.
+[p090_c0005] Table 3 shows a $1,869 million favorable variance over the Plan period for debt service expenses to be paid from the MTA Capital Lockbox, 2020-2024 Capital Program Account, due to revised assumptions regarding bond issuance timing and interest rates for future debt issuance.
+[p090_c0006] Table 4 presents the forecasted borrowing schedule for debt to be paid from the MTA Capital Lockbox, 2020-2024 Capital Program Account.
+[p090_c0007] Table 5 shows $535 million in debt service over the Plan period, to be paid from the newly created 2025–2029 Capital Program Account within the MTA Capital Lockbox, funded by additional revenues from the enacted New York State FY 2026 Budget. As this is the first presentation of these projections, no variance comparison with prior plans is available.
+[p090_c0008] Table 6 presents the forecasted borrowing schedule for debt to be paid from the MTA Capital Lockbox, 2025-2029 Capital Program Account.
+[p090_c0009] _II-73_
+
+## Page 91
+
+[p091_c0001] _Table 1 – Debt Service Forecast – Net Impact to Operating Budget_
+[p091_c0002]
+
+```text
+($ in millions) Year February Plan Debt Service July Plan Debt Service Difference Favorable/ (Unfavorable) 2025 2,522 $ 2,498 $ 24 2026 2,956 2,950 6 2027 3,263 3,271 (8) 2028 3,501 3,432 69 2029 3,574 3,610 (36) Total 2025-2029 $ 15,816 $ 15,761 $ 55
+```
+[p091_c0003] _Table 2 – Forecasted Borrowing Schedule –_
+[p091_c0004] Debt Secured and to be Paid by the Operating Budget
+[p091_c0005]
+
+```text
+($ in millions) 2025 1 2026 2027 2028 2029 Payroll Mobility Tax (PMT) Issuance New Money BANs (for 2020-2024 Capital Program) $0 2,330 2,019 1,427 524 Bonds to Retire New Money BANs (for 2020-2024 Capital Program) $0 0 0 0 2,353 New Money BANs (for 2015-2019 Capital Program) $0 640 0 0 0 Bonds to Retire New Money BANs (for 2015-2019 Capital Program) $0 0 0 0 646 Bonds to Retire Outstanding BANs (PMT 2024B BAN, PMT 2025A BAN, PMT 2025B BAN) $0 0 707 404 404 Total Bonds to be Issued $0 0 707 404 3,403 TBTA New Money Bonds (Bridges & Tunnels) (for TBTA capital programs costs) 2 $498 673 841 873 831 Total Long-Term Bonds to be Issued $498 673 1,548 1,277 4,234
+```
+[p091_c0006] 1 Excludes remarketings and refundings; excludes what has already been issued as of 5/23/25.
+[p091_c0007] 2 Includes projected issuances for TBTA 2025-2029 Capital Program.
+[p091_c0008] Non-TBTA, non-Capital Lockbox Fund, MTA borrowing for 2025-2029 Capital Program ($9.7 billion in total funding) is projected to begin in 2030 or later. This is subject to change based on cash flow requirements and availability of other funding sources.
+[p091_c0009] Upcoming BAN and bond borrowing figures above represent par value. Bonds and BANs may be issued with premium or discount so the total value of raised proceeds may differ from the values above.
+[p091_c0010] BANs and bonds could be issued under credits other than PMT.
+[p091_c0011] Excludes debt paid out of the Capital Lockbox.
+[p091_c0012] Note: Totals may not add due to rounding.
+[p091_c0013] _II-74_
+
+## Page 92
+
+[p092_c0001] This page shows debt and debt service for the MTA Capital Lockbox Fund, 2020-2024 Capital Program Account only.
+[p092_c0002]
+
+```text
+Table 3 – Debt Service Forecast – Debt Secured by Capital Lockbox (2020-2024 Account) ($ in millions) Year February Plan 20-24 Account Debt Service July Plan 20-24 Account Debt Service Difference Favorable/ (Unfavorable) 2025 $ 421 $ 272 $ 149 2026 631 354 277 2027 939 446 493 2028 1,184 611 573 2029 1,186 809 377 Total 2025-2029 $4,361 $ 2,492 $ 1,869
+```
+[p092_c0003]
+
+```text
+Table 4 – Forecasted Borrowing Schedule – Debt Secured and to be Paid by the Capital Lockbox (2020-2024 Account) 2025 1 2026 2027 2028 2029 ($ in millions) Total Long-Term Capital Lockbox, 2020-2024 Account Bonds to be Issued $800 2 578 1,930 2,802 3,253 1 Excludes what has already been issued as of 5/23/25. 2 Assumes issuance of TBTA Real Estate Transfer Tax Revenue Bonds. A portion of the bond issuance proceeds could be applied to retire outstanding TBTA 2 nd Subordinate Resolution BANs. Upcoming bond borrowing figures above represent par value. Since bonds may be issued with premium or discount, the total value of raised proceeds may differ from the values above.
+```
+[p092_c0004] Note: Totals may not add due to rounding.
+[p092_c0005] _II-75_
+
+## Page 93
+
+[p093_c0001] This page shows debt and debt service for the MTA Capital Lockbox Fund, 2025-2029 Capital Program Account only.
+[p093_c0002]
+
+```text
+Table 5 – Debt Service Forecast – Debt Secured by Capital Lockbox (2025-2029 Account) ($ in millions) February Plan 25-29 Account July Plan 25-29 Account Difference Year Debt Service Debt Service Favorable/ (Unfavorable) 2025 N/A $ 0 N/A 2026 N/A 0 N/A 2027 N/A 25 N/A 2028 N/A 138 N/A 2029 N/A 372 N/A Total 2025-2029 N/A $ 535 N/A
+```
+[p093_c0003]
+
+```text
+Table 6 – Forecasted Borrowing Schedule – Debt Secured and to be Paid by the Capital Lockbox (2025-2029 Account) 2025 2026 2027 2028 2029 ($ in millions) Total Long-Term Capital Lockbox, 2025-2029 Account Bonds to be Issued $0 0 392 1,744 3,564 Upcoming bond borrowing figures above represent par value. Since bonds may be issued with premium or discount, the total value of raised proceeds may differ from the values above.
+```
+[p093_c0004] Note: Totals may not add due to rounding.
+[p093_c0005] _II-76_
+
+## Page 94
+
+[p094_c0001]
+
+```text
+Forecasted Interest Rates 2025 2026 2027 2028 2029 Assumed Fixed Rates Triborough Bridge & Tunnel Authority (Bridges & Tunnels) General Revenue Bonds 5.25% 5.25% 5.25% 5.25% 5.25% Payroll Mobility Tax Bonds/Dedicated Tax Fund Bonds 5.22% 5.22% 5.22% 5.22% 5.22% Transportation Revenue Bonds 5.43% 5.43% 5.43% 5.43% 5.43% Payroll Mobility Tax BANs (3-Year Maturity) 3.87% 3.87% 3.87% 3.87% 3.87% Bonds Secured by Capital Lockbox, 2020-2024 Capital Program Account 5.22% 5.22% 5.22% 5.22% 5.22% Bonds Secured by Capital Lockbox, 2025-2029 Capital Program Account 5.22% 5.22% 5.22% 5.22% 5.22% Assumed Variable Rates 4.00% 4.00% 4.00% 4.00% 4.00%
+```
+### [p094_c0002] Debt Issuance Assumptions:
+- [p094_c0003] • All bonds to be issued assume 30-year level debt service with principal amortized over the life of the bonds, with the following exception: PMT Bonds for the MTA Bond funded portion of the 2020-24 capital program, which are 30-year bonds, amortized on a level debt service basis over 20 years, from year 11 to year 30. • Fixed-rate estimates are True Interest Cost (TIC) estimates, using market rates as of 5/5/25 and using a premium for each credit based on recent market spreads. • New bond and BAN issues use the fixed interest rate forecast at time of issuance using rates in above table. • Cost of issuance is assumed to be 0.5% of the BAN par amount, and 1.0% of the bond par amount. • All bonds issued to finance TBTA capital projects are assumed to be issued under the TBTA (MTA Bridges & Tunnels) General Revenue Resolution. • The Build America Bonds subsidy has been reduced by 5.7% annually through 9/30/2030 reflecting the sequester reduction for payments to issuers of direct-pay bonds. • An additional annual debt service expense of $45 million is added for interest associated with working capital financings.
+[p094_c0004] Note: Totals may not add due to rounding.
+[p094_c0005] _II-77_
+
+## Page 95
+
+### [p095_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026 - 2029 Total Budgeted Debt Service ($ in millions)
+[p095_c0002]
+
+```text
+ACTUAL FORECAST By Agency or Group: 2024 2025 2026 2027 2028 2029 New York City Transit: Budgeted Gross Debt Service for Existing Transportation Revenue Bonds $796,072 $562,884 $705,906 $763,118 $763,443 $791,707 Debt Service on Additional Transportation Revenue Bonds Supporting Approved Capital Programs 0.000 22,694 30,259 30,259 30,259 30,259 Budgeted Gross Debt Service for Existing Dedicated Tax Fund Bonds 223,527 258,464 255,558 296,849 321,672 297,823 Debt Service on Additional Dedicated Tax Fund Bonds 0.000 0.000 0.000 0.000 0.000 0.000 Budgeted Gross Debt Service for Existing Payroll Mobility Tax Bonds 353,980 297,358 372,166 413,320 420,656 419,126 Debt Service on Additional PMT Bonds 0.000 0.000 0.000 17,601 32,088 139,404 2 Broadway Certificates of Participation - NYCT Share 0.043 2.041 2.086 1.467 0.824 0.156 Subtotal MTA Paid Debt Service $1,373,623 $1,143,440 $1,365,975 $1,522,614 $1,568,941 $1,678,475 Budgeted Gross Debt Service for Existing TBTA (B&T) General Revenue Bonds $159,250 $146,412 $141,328 $142,710 $147,883 $124,304 Budgeted Gross Debt Service for Existing TBTA (B&T) Subordinate Revenue Bonds 10,048 8,754 0.000 0.000 4,047 31,740 Subtotal B&T Paid Debt Service $169,298 $155,165 $141,328 $142,710 $151,930 $156,045 Total NYCT Debt Service $1,542,920 $1,298,606 $1,507,303 $1,665,323 $1,720,872 $1,834,519 Commuter Railroads: Budgeted Gross Debt Service for Existing Transportation Revenue Bonds $570,860 $386,147 $482,056 $521,096 $521,103 $540,755 Debt Service on Additional Transportation Revenue Bonds Supporting Approved Capital 0.000 8,986 11,982 11,982 11,982 11,982 Budgeted Gross Debt Service for Existing Dedicated Tax Fund Bonds 39,365 54,543 54,387 63,175 68,458 63,382 Debt Service on Additional Dedicated Tax Fund Bonds 0.000 0.000 0.000 0.000 0.000 0.000 Budgeted Gross Debt Service for Existing Payroll Mobility Tax Bonds 284,315 210,792 257,896 286,414 291,497 290,437 Debt Service on Additional PMT Bonds 0.000 0.000 0.000 12,197 22,236 91,976 2 Broadway Certificates of Participation - CRR Share 0.013 0.705 0.637 0.448 0.252 0.048 Subtotal MTA Paid Debt Service $894,553 $661,173 $806,958 $895,311 $915,527 $998,580 Budgeted Gross Debt Service for Existing TBTA (B&T) General Revenue Bonds $70,893 $67,258 $65,731 $66,374 $68,780 $57,814 Budgeted Gross Debt Service for Existing TBTA (B&T) Subordinate Revenue Bonds 5,197 3,874 0.000 0.000 1,664 13,053 Subtotal B&T Paid Debt Service $76,090 $71,131 $65,731 $66,374 $70,444 $70,866 Total CRR Debt Service $970,643 $732,305 $872,689 $961,685 $985,972 $1,069,446 Bridges and Tunnels: Budgeted Gross Debt Service for Existing TBTA (B&T) General Revenue Bonds $365,423 $493,129 $560,012 $565,487 $585,986 $492,556 Debt Service on Additional TBTA (B&T) General Revenue Bonds Supporting Approved Capital Programs 0.000 16,086 55,067 105,551 162,878 219,936 Budgeted Gross Debt Service for Existing TBTA (B&T) Subordinate Revenue Bonds 2,610 3,410 0.000 0.000 1,797 14,090 Debt Service on Additional TBTA 2nd Subordinate Debt 4,756 0.804 0.000 0.000 0.000 0.000 2 Broadway Certificates of Participation - TBTA Share 0.006 0.316 0.313 0.220 0.123 0.023 Total B&T Debt Service $372,795 $513,745 $615,393 $671,257 $750,784 $726,605 MTA Bus: Budgeted Gross Debt Service for Existing Transportation Revenue Bonds $0.929 $8,944 $10,650 $9,977 $9,977 $10,353 Debt Service on Additional TRB Supporting Approved Capital Programs 0.000 1,912 2,550 2,550 2,550 2,550 Budgeted Gross Debt Service for Existing Payroll Mobility Tax Bonds 4,397 5,004 5,489 5,484 5,581 5,561 Debt Service on Additional PMT Bonds 0.000 0.000 0.000 0.234 0.426 3.724 Total MTA Bus Debt Service $5,326 $15,860 $18,689 $18,244 $18,534 $22,188 Staten Island Railway: Budgeted Gross Debt Service for Existing Transportation Revenue Bonds $0.272 $4,230 $5,086 $4,765 $4,765 $4,945 Debt Service on Additional TRB Supporting Approved Capital Programs 0.000 0.157 0.209 0.209 0.209 0.209 Budgeted Gross Debt Service for Existing Payroll Mobility Tax Bonds 8,433 3,025 2,621 2,619 2,665 2,656 Debt Service on Additional PMT Bonds 0.000 0.000 0.000 0.112 0.203 1.588 Total SIR Debt Service $8,705 $7,412 $7,917 $7,705 $7,843 $9,398 Total MTA HQ Debt Service for 2 Broadway Certificates of Participation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p095_c0003] _82-11_
+
+## Page 96
+
+### [p096_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026 - 2029 Total Budgeted Debt Service ($ in millions)
+[p096_c0002]
+
+```text
+ACTUAL FORECAST 2024 2025 2026 2027 2028 2029 MTA Summary: Subtotal MTA Debt Service: Budgeted Gross Debt Service for Existing Transportation Revenue Bonds $1,368.133 $962.204 $1,203.699 $1,298.956 $1,299.288 $1,347.760 Budgeted Gross Debt Service for Existing Dedicated Tax Fund Bonds 262.892 313.007 309.945 360.024 390.130 361.206 Budgeted Gross Debt Service for Existing Payroll Mobility Tax Bonds 651.125 516.178 638.172 707.837 720.400 717.780 Budgeted Gross Debt Service for Existing TBTA (B&T) General Revenue Bonds 595.566 706.799 767.071 774.570 802.649 674.674 Budgeted Gross Debt Service for Existing TBTA (B&T) Subordinate Revenue Bonds 17.854 16.037 0.000 0.000 7.508 58.883 2 Broadway Certificates of Participation 0.063 3.062 3.037 2.135 1.199 0.226 Debt Service on Additional Transportation Revenue Bonds Supporting Approved Capital Programs 0.000 33.750 45.000 45.000 45.000 45.000 Debt Service on Additional Dedicated Tax Fund Bonds Supporting Approved Capital Programs 0.000 0.000 0.000 0.000 0.000 0.000 Debt Service on Additional PMT Bonds 0.000 0.000 0.000 30.142 54.954 236.691 Debt Service on Additional TBTA (B&T) General Revenue Bonds Supporting Approved Capital Programs 0.000 16.086 55.067 105.551 162.878 219.936 Debt Service on Additional TBTA 2nd Subordinate Debt 4.756 0.804 0.000 0.000 0.000 0.000 Subtotal Debt Service $2,900.389 $2,567.927 $3,021.992 $3,324.214 $3,484.004 $3,662.155 Investment Income by Resolution: Investment Income from Transportation Debt Service Fund $0.000 ($13.742) ($18.323) $0.000 $0.000 $0.000 Investment Income from Dedicated Tax Fund Debt Service Fund 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income from Payroll Mobility Tax Bond Debt Service Fund 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income from TBTA (B&T) General Revenue Debt Service Fund 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income from TBTA (B&T) Subordinate Revenue Debt Service Fund 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income from 2 Broadway Certificates of Participation Debt Service Fund 0.000 0.000 0.000 0.000 0.000 0.000 Total Investment Income $0.000 ($13.742) ($18.323) $0.000 $0.000 $0.000 Total MTA Debt Service Net Transportation Revenue Bonds Debt Service $1,368.133 $982.212 $1,230.376 $1,343.956 $1,344.288 $1,392.760 Net Dedicated Tax Fund Bonds Debt Service 262.892 313.007 309.945 360.024 390.130 361.206 Net Dedicated Payroll Mobility Tax Bonds Debt Service 651.125 516.178 638.172 737.979 775.353 954.471 Net TBTA (B&T) General Revenue Bonds Debt Service 595.566 722.885 822.139 880.120 965.527 894.610 Net TBTA (B&T) Subordinate Revenue Bonds Debt Service 17.854 16.037 0.000 0.000 7.508 58.883 Debt Service on Additional TBTA 2nd Subordinate Debt 4.756 0.804 0.000 0.000 0.000 0.000 New 2 Broadway Certificates of Participation 0.063 3.062 3.037 2.135 1.199 0.226 Build America Bonds Interest Subsidy - TRB (23.497) (37.209) (34.471) (33.624) (32.994) (32.335) Build America Bonds Interest Subsidy - DTF (12.920) (15.936) (15.936) (15.936) (15.936) (15.936) Build America Bonds Interest Subsidy - TBTA GR Bonds (4.119) (3.611) (3.611) (3.611) (3.611) (3.611) Total MTA Wide Debt Service $2,859.853 $2,497.429 $2,949.651 $3,271.043 $3,431.463 $3,610.273
+```
+[p096_c0003] _II-79_
+
+## Page 97
+
+[p097_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p097_c0002] _II-80_
+
+## Page 98
+
+### [p098_c0001] Debt Service Affordability Statement
+
+## Page 99
+
+[p099_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p099_c0002] _II-81_
+
+## Page 100
+
+### [p100_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Debt Affordability Statement before Below-the-Line Adjustments (1) $ in millions
+[p100_c0002]
+
+```text
+Forecasted Debt Service and Borrowing Schedule Notes 2024 ACTL 2025 2026 2027 2028 2029 Combined MTA/TBTA Forecasted Debt Service Schedule 1, 2, 3 $2,859.9 $2,497.4 $2,949.7 $3,271.0 $3,431.5 $3,610.3 Forecasted New Long-Term Bonds Issued 4 - 497.7 673.3 1,548.3 1,277.3 4,234.4 Forecasted Debt Service by Credit 5 Notes 2024 ACTL 2025 2026 2027 2028 2029 Transportation Revenue Bonds 5 $15,536.7 $16,676.7 $16,686.9 $16,921.7 $17,088.8 $17,255.8 Pledged Revenues 10 1,344.6 945.0 1,195.9 1,310.3 1,311.3 1,360.4 Debt Service Debt Service as a % of Pledged Revenues 9% 6% 7% 8% 8% 8% Dedicated Tax Fund Bonds 6 $639.6 $583.2 $1,768.2 $1,799.6 $1,831.1 $1,863.6 Pledged Revenues 10 250.0 297.1 294.0 344.1 374.2 345.3 Debt Service Debt Service as a % of Pledged Revenues 39% 51% 17% 19% 20% 19% Payroll Mobility Tax Bonds 7 $3,386.1 $3,638.6 $3,785.9 $3,856.2 $3,909.9 $3,946.3 Pledged Revenues 10 651.1 516.2 638.2 738.0 775.4 954.5 Debt Service Debt Service as a % of Pledged Revenues 19% 14% 17% 19% 20% 24% Triborough Bridge and Tunnel Authority General Revenue Bonds 8 $2,076.1 $2,074.7 $2,102.0 $2,127.9 $2,157.4 $2,180.8 Pledged Revenues 10 591.4 719.3 818.5 876.5 961.9 891.0 Debt Service Debt Service as a % of Total Pledged Revenues 28% 35% 39% 41% 45% 41% Triborough Bridge and Tunnel Authority Subordinate Revenue Bonds 9 $1,484.7 $1,355.5 $1,283.5 $1,251.4 $1,195.5 $1,289.8 Pledged Revenues 10 17.9 16.0 - - 7.5 58.9 Debt Service Debt Service as a % of Total Pledged Revenues 1% 1% 0% 0% 1% 5% Triborough Bridge and Tunnel Authority 2nd Subordinate Revenue Bonds 11 $1,466.8 $1,339.4 $1,283.5 $1,251.4 $1,188.0 $1,230.9 Pledged Revenues 10, 12 4.8 0.8 - - - - Debt Service Debt Service as a % of Total Pledged Revenues 0% 0% 0% 0% 0% 0% 2 Broadway Certificates of Participation $0.1 $3.1 $3.0 $2.1 $1.2 $0.2 Lease Payments Cumulative Debt Service (Excluding State Service Contract Bonds) Notes 2024 ACTL 2025 2026 2027 2028 2029 Total Debt Service before Below-the-Line Adjustments: 1, 2, 3 $2,859.9 $2,497.4 $2,949.7 $3,271.0 $3,431.5 $3,610.3 Fare and Toll Revenues $7,568.8 $7,825.7 $7,936.4 $8,048.0 $8,129.2 $8,155.3 Total Debt Service as a % of Fare/Toll Revenue 37.8% 31.9% 37.2% 40.6% 42.2% 44.3% Operating Revenues (including Fare/Toll Revenues) and Subsidies $20,849.9 $20,896.7 $20,409.3 $20,927.6 $21,407.5 $21,288.8 Total Debt Service as a % of Operating Revenues and Subsidies 13.7% 12.0% 14.5% 15.6% 16.0% 17.0% Non-Reimbursable Expenses with Debt Service, exd. Non-Cash Liabilities $19,788.1 $20,231.4 $21,303.9 $22,399.1 $23,195.5 $24,069.4 Total Debt Service as a % of Non-reimbursable Expenses 14.5% 12.3% 13.8% 14.6% 14.8% 15.0%
+```
+[p100_c0003] Notes on the following page are integral to this table.
+[p100_c0004] _II-82_
+
+## Page 101
+
+[p101_c0001] 1 Floating rate notes assumed at the variable rate assumption plus the current fixed spread to maturity.
+[p101_c0002] 2 Synthetic fixed-rate debt assumed at swap rate; floating rate notes assumed at swap rate plus the current fixed spread to maturity.
+[p101_c0003] 3 All debt service numbers reduced by Build America Bonds (BAB) subsidy.
+[p101_c0004] 4 All bonds to be issued assume 30-year level debt service with the principal amortized over the life of the bonds, with the following exceptions: PMT Bonds for MTA Bond funded portion of the 2020-24 capital program, which are 30-year bonds, amortized on a level debt service basis over 20 years, from year 11 to year 30.
+[p101_c0005] 5 Transportation Revenue Bonds pledged revenues consist generally of the following: fares and other miscellaneous revenues from the transit and commuter systems, including advertising, rental income and certain concession revenues (not including Grand Central and Penn Station); revenues from the distribution to the transit and commuter system of TBTA surplus; State and local general operating subsidies; funds contributed to the General Transportation Account of the NYC Transportation Assistance Fund; special tax-supported operating subsidies after the payment of debt service on the MTA Dedicated Tax Fund Bonds, and the Payroll Mobility Tax Obligation Resolution Bonds; New York City urban tax for transit; station maintenance and service reimbursements; and revenues from the investment of capital program funds. Pledged revenues secure Transportation Revenue Bonds before the payment of operating and maintenance expenses. Starting in 2006, revenues, expenses and debt service for MTA Bus have also been included.
+[p101_c0006] 6 Dedicated Tax Fund pledged revenues as shown above consist generally of the following: petroleum business tax, motor fuel tax, motor vehicle fees and, beginning in 2026, district sales tax deposited into the Dedicated Mass Transportation Trust Fund for the benefit of the MTA; in addition, while not reflected in the DTF pledged revenue figures above, the petroleum business tax, district sales tax, franchise taxes and temporary franchise surcharges deposited into the Metropolitan Transportation Operating Assistance Account for the benefit of the MTA are also pledged. After the payment of debt service on the MTA Dedicated Tax Fund Bonds, these subsidies are available to pay debt service on the MTA Transportation Revenue Bonds, and then any remaining amounts are available to be used to meet operating costs of the transit system, the commuter system, and SIRTOA. Effective April 1, 2026, the State Fiscal Year 2025-2026 Enacted Budget will redirect 85% of annual District Sales Tax revenues currently deposited into the MMTOA Account into the MTTF on behalf of MTA.
+[p101_c0007] 7 Payroll Mobility Tax Obligations pledged revenues consist of Payroll Mobility Tax and Aid Trust Account Receipts, excluding 28.5% of gross Payroll Mobility Tax revenues dedicated to the 2025-2029 Account of the Capital Lockbox Fund, starting September 2025. Correspondingly, all debt service payable from the 2025-2029 Account of the Capital Lockbox Fund is excluded from this table.
+[p101_c0008] 8 Triborough Bridge and Tunnel Authority General Revenue Bond pledged revenues consist primarily of the tolls charged by TBTA on its seven bridges and two tunnels. Pledged revenues secure TBTA General Revenue Bonds after the payment of TBTA operating and maintenance expenses, including certain reserves.
+[p101_c0009] 9 Triborough Bridge and Tunnel Authority Subordinate Revenue Bonds pledged revenues consist primarily of the tolls charged by TBTA on its seven bridges and two tunnels, after the payment of debt service on the TBTA General Revenue Bonds.
+[p101_c0010] 10 A debt service schedule for each credit is attached as addendum hereto.
+[p101_c0011] 11 Triborough Bridge and Tunnel Authority Second Subordinate (2nd SUB) Revenue Bonds pledged revenues consist primarily of the tolls charged by TBTA on its seven bridges and two tunnels, after the payment of debt service on the TBTA General Revenue and Subordinate Revenue Bonds.
+[p101_c0012] 12 Reimbursable from Capital Lockbox for 2020-2024 Capital Program.
+[p101_c0013] Note: Does not include debt service to be paid by the Capital Lockbox Fund.
+[p101_c0014] _II-83_
+
+## Page 102
+
+### [p102_c0001] METROPOLITAN TRANSPORTATION AUTHORITY (including Triborough Bridge and Tunnel Authority)
+### [p102_c0002] Total Budgeted Annual Debt Service
+[p102_c0003] All Issuance through 5/23/2025 ($ in millions)
+[p102_c0004]
+
+```text
+Fiscal Year Transportation Revenue Resolution Dedicated Tax Fund Resolution TBTA General Revenue Resolution TBTA Subordinate Resolution TBTA 2nd Subordinate Resolution Payroll Mobility Tax Resolution MTA and TBTA Debt Service Secured by Non-Lockbox Operating Sources Existing DS (a) Add'l DS Combined Existing DS (a) Add'l DS Combined Existing DS Add'l DS Existing DS (a) Add'l DS Combined 2 Bdwy CoP 2 Bdwy CoP Existing DS (a) All Existing DS All Add'l DS Lease Payments Combined 2025 911.3 33.8 945.0 297.1 703.2 16.1 719.3 16.0 0.8 516.2 - 516.2 2,443.7 50.6 3.1 2,497.4 2026 1,150.9 45.0 1,195.9 294.0 763.5 55.1 818.5 - - 638.2 - 638.2 2,846.5 100.1 3.0 2,949.7 2027 1,265.3 45.0 1,310.3 344.1 771.0 105.6 876.5 - - 707.8 30.1 738.0 3,088.2 180.7 2.1 3,271.0 2028 1,266.3 45.0 1,311.3 374.2 799.0 162.9 961.9 7.5 - 720.4 55.0 775.4 3,167.4 262.8 1.2 3,431.5 2029 1,315.4 45.0 1,360.4 345.3 671.1 219.9 891.0 58.9 - 717.8 236.7 954.5 3,108.4 501.6 0.2 3,610.3 2030 1,366.1 45.0 1,411.1 388.9 678.8 271.4 950.2 59.7 - 601.7 416.8 1,018.5 3,095.2 733.2 - 3,828.5 2031 1,474.0 45.0 1,519.0 332.8 675.8 312.0 987.9 58.1 - 614.7 651.2 1,265.9 3,155.5 1,008.2 - 4,163.7 2032 1,415.2 45.0 1,460.2 399.1 560.1 339.6 899.7 41.0 - 558.5 872.8 1,431.3 2,973.9 1,257.4 - 4,231.2 2033 1,209.9 45.0 1,254.9 389.1 553.9 355.3 909.3 - - 695.7 1,005.5 1,701.2 2,848.7 1,405.8 - 4,254.5 2034 1,184.9 45.0 1,229.9 333.5 536.3 362.1 898.3 - - 729.6 1,104.9 1,834.5 2,784.3 1,512.0 - 4,296.3 2035 1,100.5 45.0 1,145.5 344.5 485.1 363.5 848.7 - - 726.9 1,108.7 1,835.6 2,656.9 1,517.2 - 4,174.2 2036 958.3 45.0 1,003.3 398.9 481.9 363.5 845.4 - - 732.3 1,108.7 1,841.0 2,571.4 1,517.3 - 4,088.6 2037 957.2 45.0 1,002.2 396.5 484.5 363.5 848.1 - - 739.4 1,124.4 1,863.9 2,577.6 1,533.0 - 4,110.6 2038 978.9 45.0 1,023.9 386.1 478.7 363.5 842.3 - - 709.6 1,138.8 1,848.4 2,553.2 1,547.3 - 4,100.6 2039 913.4 45.0 958.4 346.9 364.8 363.5 728.4 - - 698.5 1,203.0 1,901.5 2,323.6 1,611.5 - 3,935.1 2040 903.7 45.0 948.7 176.6 385.4 363.6 749.0 - - 731.9 1,269.0 2,001.0 2,197.6 1,677.6 - 3,875.2 2041 867.3 45.0 912.3 176.6 443.8 363.6 807.3 - - 681.4 1,316.4 1,997.8 2,169.1 1,725.0 - 3,894.1 2042 837.7 45.0 882.7 176.6 348.3 363.6 711.8 - - 676.6 1,339.2 2,015.7 2,039.2 1,747.7 - 3,786.9 2043 887.3 45.0 932.3 176.6 315.5 363.6 679.0 - - 586.4 1,343.3 1,929.7 1,965.8 1,751.8 - 3,717.6 2044 984.4 45.0 1,029.4 176.6 373.4 363.6 736.9 - - 483.8 1,343.4 1,827.2 2,018.2 1,752.0 - 3,770.2 2045 885.1 45.0 930.1 176.0 335.2 363.6 698.8 - - 502.9 1,343.6 1,846.5 1,899.3 1,752.1 - 3,651.4 2046 803.2 45.0 848.2 172.7 348.5 363.6 712.1 - - 538.4 1,343.7 1,882.2 1,862.9 1,752.3 - 3,615.1 2047 809.2 45.0 854.2 170.2 339.0 363.6 702.6 - - 555.7 1,343.9 1,899.5 1,874.1 1,752.4 - 3,626.5 2048 793.7 45.0 838.7 155.3 309.6 363.6 673.1 - - 557.8 1,344.1 1,901.8 1,816.3 1,752.6 - 3,569.0 2049 795.5 45.0 840.5 151.3 225.0 363.6 588.6 - - 557.9 1,344.2 1,902.2 1,729.7 1,752.8 - 3,482.5 2050 532.1 45.0 577.1 151.3 204.9 363.6 568.5 - - 555.2 1,344.4 1,899.7 1,443.5 1,753.0 - 3,196.5 2051 293.3 45.0 338.3 151.3 196.1 363.6 559.7 - - 475.3 1,344.6 1,819.9 1,116.1 1,753.2 - 2,869.3 2052 276.5 45.0 321.5 147.1 218.0 363.6 581.6 - - 391.3 1,344.8 1,736.2 1,033.0 1,753.4 - 2,786.4 2053 233.5 45.0 278.5 123.1 215.2 363.6 578.7 - - 373.2 1,345.1 1,718.2 945.0 1,753.6 - 2,698.6 2054 225.7 45.0 270.7 107.9 179.8 363.6 543.4 - - 214.0 1,345.3 1,559.3 727.4 1,753.9 - 2,481.3 2055 157.5 45.0 202.5 21.5 82.0 359.3 441.3 - - 162.8 1,345.5 1,508.3 423.7 1,749.9 - 2,173.6 2056 56.9 45.0 101.9 20.2 76.1 324.5 400.6 - - 121.2 1,345.8 1,467.1 274.5 1,715.3 - 1,989.8 2057 9.1 45.0 54.1 11.4 29.9 278.0 307.9 - - 75.2 1,302.7 1,378.0 125.7 1,625.7 - 1,751.4 2058 - - - - - 221.4 221.4 - - 29.8 1,263.5 1,293.1 29.6 1,484.9 - 1,514.5 2059 - - - - - 163.4 163.4 - - 25.1 1,054.0 1,079.1 25.1 1,217.3 - 1,242.5 2060 - - - - - 108.9 108.9 - - - 811.7 811.7 - 920.6 - 920.6 2061 - - - - - 63.5 63.5 - - - 541.8 541.8 - 605.3 - 605.3 2062 - - - - - 31.4 31.4 - - - 290.8 290.8 - 322.1 - 322.1 2063 - - - - - 11.9 11.9 - - - 131.8 131.8 - 143.7 - 143.7 2064 - - - - - 2.5 2.5 - - - 25.0 25.0 - 27.5 - 27.5 2065 - - - - - 0.0 0.0 - - - 0.0 0.0 - 0.0 - 0.0 2066 - - - - - - - - - - 0.0 0.0 - 0.0 - 0.0 2067 - - - - - - - - - - - - - - - -
+```
+[p102_c0005] Does not include debt service to be paid by Capital Lockbox Fund.
+### [p102_c0006] Notes:
+[p102_c0007] (a) Net of assumed investment income. Includes subordinate capital availability payments for public-private partnership.
+[p102_c0008] Also includes savings from debt service pre-payments: $190 million in 2025, $181 million in 2026. Additionally, in December 2024, MTA prepaid $186 million of TRB debt service resulting in $186 million in savings in 2025.
+[p102_c0009] (b) Includes savings from debt service pre-payments: $31 million in 2025, $34 million in 2026.
+[p102_c0010] (c) Includes savings from debt service pre-payments: $47 million in 2025.
+[p102_c0011] (d) Includes savings from debt service pre-payments: $135 million in 2025, $70 million in 2026. Additionally, in December 2024, MTA prepaid $39 million of PMT debt service resulting in $39 million in savings in 2025.
+[p102_c0012] _II-94_
+
+## Page 103
+
+### [p103_c0001] METROPOLITAN TRANSPORTATION AUTHORITY (including Triborough Bridge and Tunnel Authority)
+### [p103_c0002] Total Budgeted Annual Debt Service - Capital Lockbox Fund (Not Included in Operating Budget) All Issuance through 5/23/2025 ($ in millions)
+[p103_c0003]
+
+```text
+Fiscal Year Debt Service* for Debt to be Paid Out of the Metropolitan Transportation Authority Capital Lockbox Fund (Not Included in Operating Budget) Debt Service to be Funded by 2020 to 2024 Capital Program Account Debt Service to be Funded by 2025 to 2029 Capital Program Account Existing Debt Service Additional Debt Service Combined Additional Debt Service 2024 186.3 0.0 186.3 0.0 2025 257.1 15.0 272.1 0.0 2026 278.6 75.0 353.7 0.0 2027 281.5 164.7 446.3 25.2 2028 283.4 327.1 610.5 138.2 2029 285.2 523.3 808.5 371.5 2030 287.1 716.0 1,003.1 728.6 2031 289.0 848.7 1,137.7 1,102.3 2032 290.9 906.2 1,197.0 1,395.2 2033 292.8 922.6 1,215.4 1,568.5 2034 294.7 922.2 1,217.0 1,613.3 2035 296.7 922.3 1,219.0 1,615.0 2036 298.7 922.3 1,221.0 1,615.1 2037 300.7 922.4 1,223.1 1,615.2 2038 302.7 922.4 1,225.1 1,615.3 2039 304.8 922.5 1,227.2 1,615.4 2040 306.8 922.5 1,229.4 1,615.6 2041 308.9 922.6 1,231.5 1,615.7 2042 311.0 922.6 1,233.7 1,615.9 2043 313.2 922.7 1,235.9 1,616.1 2044 315.3 922.7 1,238.1 1,616.2 2045 317.5 922.8 1,240.3 1,616.4 2046 319.7 922.9 1,242.6 1,616.6 2047 321.9 923.0 1,244.9 1,616.8 2048 324.2 923.0 1,247.2 1,617.0 2049 326.5 923.1 1,249.6 1,617.2 2050 328.7 923.2 1,251.9 1,617.4 2051 331.1 923.3 1,254.3 1,617.7 2052 333.4 923.4 1,256.8 1,617.9 2053 335.7 923.5 1,259.2 1,618.2 2054 338.1 923.6 1,261.7 1,618.5 2055 340.6 908.7 1,249.3 1,618.8 2056 343.0 841.5 1,184.6 1,619.1 2057 345.5 735.3 1,080.8 1,599.8 2058 348.0 562.4 910.4 1,506.3 2059 340.6 373.0 713.7 1,298.7 2060 253.4 189.3 442.7 967.4 2061 256.0 59.6 315.6 595.1 2062 258.6 10.7 269.3 283.0 2063 261.2 0.0 261.2 82.9 2064 66.4 0.0 66.4 10.2 2065 - 0.0 0.0 0.0
+```
+[p103_c0004] _* Debt service on bonds issued under various existing and future bond credits._
+[p103_c0005] _II-85_
+
+## Page 104
+
+[p104_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p104_c0002] _II-86_
+
+## Page 105
+
+[p105_c0001] Positions (Headcount)
+
+## Page 106
+
+### [p106_c0001] POSITIONS
+[p106_c0002] The information contained in this section presents MTA positions by Agency, function, and occupational group. It also captures the position impacts of programmatic initiatives and re-estimates. Analysis of these numbers is provided on both a year-to-year and a plan-to-plan basis. The changes in positions described below are reflective of the MTA-wide commitment to achieving its goals/objectives, improving operations, and enhancing the customer experience. To that end, the July Financial Plan reflects changes to strategic resources, including reductions in areas where operations are being made more efficient, while also adding positions where more personnel are required.
+[p106_c0003]
+
+```text
+METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Favorable/(Unfavorable) Total Position Changes at a Glance 1 2025 2026 2027 2028 2025 February Plan - Total Baseline Positions 74,846 74,623 74,430 74,527 Total Plan-to-Plan Changes (313) (384) (300) (250) 2025 July Plan - Total Baseline Positions 75,159 75,007 74,730 74,777 Total Year-to-Year Changes, July Plan 152 277 (47) Total Plan-to-Plan Changes by Reporting Category: Non-Reimbursable (130) (209) (203) (180) Reimbursable (183) (175) (97) (70) Total (313) (384) (300) (250) Full-Time (313) (379) (295) (245) Full-Time Equivalents (0) (5) (5) (5) Total (313) (384) (300) (250) By Function Category - Administration (66) (76) (72) (59) - Operations (43) (70) (70) (70) - Maintenance (179) (210) (130) (118) - Engineering/Capital (1) (1) (1) (1) - Public Safety (24) (27) (27) (2) Total (313) (384) (300) (250) By Occupational Group - Managers/Supervisors (167) (175) (114) (57) - Professional, Technical, Clerical 34 11 12 26 - Operational Hourlies (180) (221) (199) (220) Total (313) (384) (300) (250) Total Plan-to-Plan Changes by Major Category: MTA Operating Efficiencies 0 0 0 0 New Needs (114) (179) (211) (278) Change in Reimbursable Positions (183) (175) (97) (70) Re-estimates & All Other (16) (31) 7 98 Total (313) (384) (300) (250)
+```
+[p106_c0004] _1 Reflects positions at year end (December 31). Totals may not add due to rounding._
+[p106_c0005] _II-87_
+
+## Page 107
+
+[p107_c0001] Position levels are established in order to enable the MTA and its Agencies to accomplish their mission of providing a safe and reliable transportation service, by supporting a wide variety of activities including operations and maintenance, customer service and safety. Position levels also capture resources required to support capital projects, as well as the operation, maintenance, and cleaning requirements of those projects once they are completed and put into operational service. These additional positions are captured in the tables and narrative on the following pages and detailed in the Agency sections.
+### [p107_c0002] Year-to-Year Position Changes
+[p107_c0003] It is important to note that the 2024 Actual levels shown in consolidated positions tables reflect only paid positions (incumbents); whereas the projections for 2025 and beyond reflect authorized positions (including vacancies). To illustrate, in the 2024 Actuals, there were 74,300 authorized positions at year end but only 71,938 incumbents, a difference of 2,362 positions.
+### [p107_c0004] 2026 vs. 2025
+[p107_c0005] The consolidated 2026 baseline includes 75,007 positions, an overall net decrease of 152 positions from the 2025 level of 75,159. This is primarily due to:
+- [p107_c0006] • NYCT – a net decrease of 244 positions, reflecting the impact operational needs and capital project staffing requirements. • LIRR – a net increase of 89 positions, primarily due to increases in headcount related to FRA Signal/Dispatch Certification, revenue fleet RCM programs, Maintenance of Equipment positions anticipated to be vacant in 2025 and filled by 2026. • MNR – a net increase of 86 positions, primarily to support the service to Penn Station and the addition of 15 positions to support the Signal and Dispatch Certification compliance program. • B&T – decreases by 39 positions, which is due to the B&T Planned Attrition Initiative. • MTAHQ – a net decrease of 37 positions, primarily due to the removal of 74 temporary positions added to the MTAPD in 2024 and 2025 to support the Subway Co-Response Outreach Teams (SCOUT) program. This reduction is partially offset by new positions added through the MTAPD and B&T Collaboration Initiative. • SIR – decreases by 7 positions, primarily due to the completion of operating and reimbursable projects.
+### [p107_c0007] 2027 – 2029
+[p107_c0008] Total forecasted positions are projected at 74,730 in 2027, a decrease of 277 positions from 2026. Positions decrease by 527 at NYCT, which reflects fluctuations in service, maintenance, and staffing requirements for capital projects. The LIRR increases by 218 positions due to increases in headcount related to revenue fleet RCM programs, Maintenance of Way positions to maintain new infrastructure added over the last several years as infrastructure components begin to reach critical maintenance stages. MNR increases by 73 positions, primarily to support service to Penn Station. B&T decreases by 32 positions due to the B&T Planned Attrition Initiative. MTAHQ increases by 20 positions, primarily due to a 32-position increase in the MTA PD for the MTAPD and B&T Collaboration Initiative, partially offset by a 12-position reduction in Strategic Initiatives. SIR decreases by 26 positions, primarily due to the completion of operating and reimbursable projects. MTA Bus decreases by 3 positions, reflecting the end of funding for the Queen's bus network redesign.
+[p107_c0009] Total forecasted positions are projected at 74,777 in 2028, an increase of 47 positions from 2027. Positions increase by 18 at NYCT, which reflects fluctuations in service, maintenance, and staffing
+[p107_c0010] _II-88_
+
+## Page 108
+
+[p108_c0001] requirements for capital projects. The LIRR decreases by 1 position due to the timing of capital project activity. MNR increases by 78 positions primarily to support service to Penn Station. B&T decreases by 95 positions due to the B&T Planned Attrition Initiative. MTAHQ increases by 67 positions, primarily due to the MTAPD and B&T Collaboration Initiative, partially offset by a reduction of 3 positions in Strategic Initiatives. SIR decreases by 20 positions, primarily due to the end of funding for operating and reimbursable capital project support.
+[p108_c0002] Total forecasted positions are projected at 74,982 in 2029, an increase of 205 positions from 2028. Positions increase by 127 at NYCT, which reflects fluctuations in service, maintenance, and staffing requirements for capital projects. MNR increases by 100 positions, primarily to support service to Penn Station. B&T decreases by 71 positions due to the B&T Planned Attrition Initiative. MTAHQ increases by 49 positions, primarily due to the MTAPD and B&T Collaboration Initiative.
+[p108_c0003] _II-89_
+
+## Page 109
+
+### [p109_c0001] New Needs
+[p109_c0002] Positions added in connection with New Needs in the July Financial Plan:
+[p109_c0003]
+
+```text
+METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Change Between 2025 July Financial Plan vs. 2025 February Financial Plan Favorable/(Unfavorable) Position Impacts of New Needs 1 2025 2026 2027 2028 NYCT Substations Maintenance and Support (37) (37) (37) (37) Track Safety Audit (3) (3) (3) (3) Strategic Priorities - Employee Availability (1) (1) (1) (1) Operating Budget Impact for HVAC (15) (15) (15) (15) Operating Budget Impact for Command Center 0 7 7 7 Total (56) (49) (49) (49) LIRR FRA Signal/Dispatch Certification 0 (15) (15) (15) Total 0 (15) (15) (15) MNR Laborers for GCM Trash Function (2) (2) (2) (2) Signal/Dispatch Certification 0 (15) (15) (15) Total (2) (17) (17) (17) B&T None 0 0 0 0 Total 0 0 0 0 MTAHQ Strategic Initiative (3) (3) (3) 0 Rolling Stock Program (1) (1) (1) (1) MTAPD/B&T Collaboration Initiative (47) (89) (121) (191) Total (51) (93) (125) (192) SIR Expanded Facility and Car Cleaning (4) (4) (4) (4) Total (4) (4) (4) (4) MTA C&D None 0 0 0 0 Total 0 0 0 0 MTA Bus Strategic Priorities - Employee Availability (1) (1) (1) (1) Total (1) (1) (1) (1) GCMOC None 0 0 0 0 Total 0 0 0 0 Total New Needs (114) (179) (211) (278)
+```
+[p109_c0004] _1 Totals may not add due to rounding._
+[p109_c0005] _II-90_
+
+## Page 110
+
+### [p110_c0001] Changes in Reimbursable Positions
+[p110_c0002] Major reimbursable positions reflecting the impact of revised capital project activity, in comparison with the February Plan:
+[p110_c0003]
+
+```text
+METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Change Between 2025 July Financial Plan vs. 2025 February Financial Plan Favorable/(Unfavorable) Position Impact of Reimbursable 1 2025 2026 2027 2028 NYCT Transfer Consolidated Function Vacancies 4 4 4 4 Capital Support Adjustments (112) (107) (29) (8) Total (108) (103) (25) (4) LIRR Transfer of Vacancies from Construction & Development (1) (1) (1) (1) Total (1) (1) (1) (1) MNR Transfer Consolidated Function Vacancies (6) (6) (6) (6) Reallocation of NR/R Headcount (8) (5) (5) (0) Total (15) (12) (12) (6) B&T None 0 0 0 0 Total 0 0 0 0 MTAHQ Finance 1 1 1 1 People 2 2 2 2 Rolling Stock program (6) (6) (6) (6) Total (3) (3) (3) (3) SIR None 0 0 0 0 Total 0 0 0 0 MTA C&D Additional Headcount to Support Operational Needs (60) (60) (60) (60) Interagency Transfer to MTAHQ (Rolling Stock Program) 2 2 2 2 Position Transfers to MNR 3 3 3 3 Reallocation of NR/R Headcount (1) (1) (1) (1) Total (56) (56) (56) (56) MTA Bus None 0 0 0 0 Total 0 0 0 0 GCMOC None 0 0 0 0 Total 0 0 0 0 Total Reimbursable (183) (175) (97) (70)
+```
+[p110_c0004] 1 Totals may not add due to rounding.
+[p110_c0005] _II-91_
+
+## Page 111
+
+### [p111_c0001] Re-estimates & All Other
+[p111_c0002] Major drivers of re-estimates, with more information contained in Agency sections:
+[p111_c0003]
+
+```text
+METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Change Between 2025 July Financial Plan vs. 2025 February Financial Plan Favorable/(Unfavorable) Position Impact of Re-estimates 1 2025 2026 2027 2028 NYCT Security Initiatives (17) (17) (17) (17) Service Plan Adjustments (25) (25) (25) (25) Availability Adjustment 0 (17) (17) (17) Others (19) (25) (19) (18) Total (61) (84) (78) (77) LIRR Maintenance of Equipment Hiring Plans 27 0 0 0 Total 27 0 0 0 MNR Reallocation of NR/R Headcount 15 12 12 6 Position Transfer from C&D (3) (3) (3) (3) Total 12 9 9 3 B&T Planned Attrition Initiative 41 80 112 207 Total 41 80 112 207 MTAHQ Internal Transfer People and Finance 3 3 3 3 Internal Transfer from People to OHS (1) (1) (1) (1) Interagency Transfer from C&D (Advertising and Promotion) (9) (9) (9) (9) Interagency Transfer from NYCT (Rolling Stock Program) (3) (3) (3) (3) Interagency Transfer from C&D (Rolling Stock Program) (2) (2) (2) (2) Total (12) (12) (12) (12) SIR None 0 0 0 0 Total 0 0 0 0 MTA C&D Interagency Transfer to MTAHQ (Advertising & Promotion) 9 9 9 9 Reallocation of NR/R Headcount 1 1 1 1 Total 10 10 10 10 MTA Bus Bus Operator Relief Adjustment (33) (33) (33) (33) Total (33) (33) (33) (33) GCMOC None 0 0 0 0 Total 0 0 0 0 Total Re-estimates (16) (31) 7 98
+```
+[p111_c0004] _1 Totals may not add due to rounding._
+[p111_c0005] _II-92_
+
+## Page 112
+
+### [p112_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Baseline Total Non-Reimbursable - Reimbursable Positions Full-Time Positions and Full-Time Equivalents by Agency
+[p112_c0002]
+
+```text
+Category 2024 2025 2026 Actual 1 Mid-Year Forecast Preliminary Budget 2027 2028 2029 Baseline Total Positions 1 71,938 75,158 75,007 74,730 74,777 74,982 NYC Transit 47,698 50,409 50,165 49,638 49,656 49,783 Long Island Rail Road 7,899 8,058 8,147 8,365 8,364 8,364 Metro-North Railroad 6,674 6,895 6,981 7,054 7,132 7,232 Bridges & Tunnels 963 1,004 965 933 838 767 Headquarters 3,614 3,541 3,504 3,524 3,591 3,640 Grand Central Madison Operating Company 5 10 10 10 10 10 Staten Island Railway 394 435 428 402 382 382 Construction & Development 807 755 755 755 755 755 Bus Company 3,884 4,052 4,052 4,049 4,049 4,049 Non-Reimbursable 1 66,048 67,451 67,631 67,760 67,825 68,031 NYC Transit 44,255 45,544 45,463 45,307 45,374 45,501 Long Island Rail Road 6,903 6,924 7,149 7,374 7,374 7,374 Metro-North Railroad 6,196 6,152 6,272 6,347 6,393 6,493 Bridges & Tunnels 876 943 904 872 777 706 Headquarters 3,551 3,467 3,430 3,450 3,517 3,566 Grand Central Madison Operating Company 5 10 10 10 10 10 Staten Island Railway 386 381 374 374 354 354 Construction & Development 28 16 16 16 16 16 Bus Company 3,849 4,014 4,014 4,011 4,011 4,011 Reimbursable 1 5,890 7,707 7,376 6,970 6,951 6,951 NYC Transit 3,443 4,864 4,702 4,331 4,282 4,282 Long Island Rail Road 996 1,134 998 991 990 990 Metro-North Railroad 479 743 709 707 739 739 Bridges & Tunnels 87 61 61 61 61 61 Headquarters 63 74 74 74 74 74 Grand Central Madison Operating Company - - - - - - Staten Island Railway 8 54 54 28 28 28 Construction & Development 779 739 739 739 739 739 Bus Company 35 38 38 38 38 38 Total Full-Time 1 71,846 74,985 74,828 74,551 74,598 74,803 NYC Transit 47,606 50,254 50,005 49,478 49,496 49,623 Long Island Rail Road 7,899 8,058 8,147 8,365 8,364 8,364 Metro-North Railroad 6,673 6,894 6,980 7,053 7,131 7,231 Bridges & Tunnels 963 1,004 965 933 838 767 Headquarters 3,614 3,541 3,504 3,524 3,591 3,640 Grand Central Madison Operating Company 5 10 10 10 10 10 Staten Island Railway 394 435 428 402 382 382 Construction & Development 807 755 755 755 755 755 Bus Company 3,884 4,034 4,034 4,031 4,031 4,031 Total Full-Time-Equivalents 1 93 174 179 179 179 179 NYC Transit 92 155 160 160 160 160 Long Island Rail Road - - - - - - Metro-North Railroad 1 1 1 1 1 1 Bridges & Tunnels - - - - - - Headquarters - - - - - - Grand Central Madison Operating Company - - - - - - Staten Island Railway - - - - - - Construction & Development - - - - - - Bus Company - 18 18 18 18 18
+```
+[p112_c0003] _1 For 2025 and beyond, the table captures authorized positions at year end (December 31). Totals may not add due to rounding._
+[p112_c0004] _II-93_
+
+## Page 113
+
+### [p113_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Baseline Total Non-Reimbursable - Reimbursable Positions Full-Time Positions and Full-Time Equivalents by Function and Agency
+[p113_c0002]
+
+```text
+Function 2024 2025 2026 2027 2028 2029 Actual 1 Mid-Year Forecast Preliminary Budget Administration 4,534 4,835 4,868 4,876 4,884 4,921 NYC Transit 634 876 910 934 945 982 Long Island Rail Road 503 527 528 524 524 524 Metro-North Railroad 530 561 564 564 564 564 Bridges & Tunnels 56 60 60 60 60 60 Headquarters 2,287 2,108 2,103 2,091 2,088 2,088 Grand Central Madison Operating Company 5 10 10 10 10 10 Staten Island Railway 28 32 32 32 32 32 Construction & Development 413 541 541 541 541 541 Bus Company 79 120 120 120 120 120 Operations 31,851 32,482 32,552 32,641 32,711 32,697 NYC Transit 23,727 24,340 24,339 24,260 24,253 24,239 Long Island Rail Road 2,941 2,843 2,843 2,950 2,949 2,949 Metro-North Railroad 2,229 2,284 2,357 2,430 2,508 2,508 Bridges & Tunnels 96 117 117 117 117 117 Headquarters - - - - - - Grand Central Madison Operating Company - - - - - - Staten Island Railway 143 157 155 145 145 145 Construction & Development - - - - - - Bus Company 2,715 2,741 2,741 2,739 2,739 2,739 Maintenance 31,704 33,692 33,512 33,140 33,134 33,338 NYC Transit 21,885 23,426 23,154 22,682 22,696 22,800 Long Island Rail Road 4,339 4,514 4,601 4,716 4,716 4,716 Metro-North Railroad 3,846 3,972 3,982 3,982 3,982 4,082 Bridges & Tunnels 362 388 388 388 388 388 Headquarters - - - - - - Grand Central Madison Operating Company - - - - - - Staten Island Railway 216 240 235 221 201 201 Construction & Development - - - - - - Bus Company 1,057 1,152 1,152 1,151 1,151 1,151 Engineering/Capital 1,443 1,529 1,530 1,528 1,528 1,528 NYC Transit 724 913 913 913 913 913 Long Island Rail Road 116 174 175 175 175 175 Metro-North Railroad 70 78 78 78 78 78 Bridges & Tunnels 110 118 118 118 118 118 Headquarters - - - - - - Grand Central Madison Operating Company - - - - - - Staten Island Railway 7 6 6 4 4 4 Construction & Development 394 214 214 214 214 214 Bus Company 22 26 26 26 26 26 Public Safety 2,406 2,620 2,544 2,544 2,519 2,497 NYC Transit 729 853 848 848 848 848 Long Island Rail Road - - - - - - Metro-North Railroad - - - - - - Bridges & Tunnels 339 321 282 250 155 84 Headquarters 1,327 1,433 1,401 1,433 1,503 1,552 Grand Central Madison Operating Company - - - - - - Staten Island Railway - - - - - - Construction & Development - - - - - - Bus Company 11 13 13 13 13 13 Baseline Total Positions 1 71,938 75,158 75,007 74,730 74,777 74,982
+```
+[p113_c0003] _1 For 2025 and beyond, the table captures authorized positions at year end (December 31). Totals may not add due to rounding._
+[p113_c0004] _II-94_
+
+## Page 114
+
+### [p114_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Baseline Total Full-time Positions and Full-time Equivalents by Function and Occupational Group Non-Reimbursable and Reimbursable
+[p114_c0002]
+
+```text
+FUNCTION/OCCUPATIONAL GROUP 2024 2025 2026 Actual 1 Mid-Year Forecast Preliminary Budget 2027 2028 2029 Administration Managers/Supervisors 2,024 2,300 2,300 2,304 2,303 2,313 Professional, Technical, Clerica 2,376 2,379 2,412 2,416 2,425 2,452 Operational Hourlies 134 156 156 156 156 156 Total Administration 4,534 4,835 4,868 4,876 4,884 4,921 Operations Managers/Supervisors 3,777 4,025 4,025 4,028 4,027 4,013 Professional, Technical, Clerica 934 972 961 971 988 988 Operational Hourlies 27,140 27,486 27,567 27,643 27,697 27,697 Total Operations 31,851 32,482 32,552 32,641 32,711 32,697 Maintenance Managers/Supervisors 5,898 6,286 6,215 6,072 6,002 5,991 Professional, Technical, Clerica 1,565 1,841 1,790 1,775 1,751 1,741 Operational Hourlies 24,241 25,565 25,507 25,293 25,381 25,606 Total Maintenance 31,704 33,692 33,512 33,140 33,134 33,338 Engineering/Capital Managers/Supervisors 519 703 704 704 704 704 Professional, Technical, Clerica 922 816 816 814 814 814 Operational Hourlies 2 10 10 10 10 10 Total Engineering/Capital 1,443 1,529 1,530 1,528 1,528 1,528 Public Safety Managers/Supervisors 714 862 834 828 806 807 Professional, Technical, Clerica 142 160 160 160 160 160 Operational Hourlies 1,550 1,598 1,550 1,556 1,553 1,530 Total Public Safety 2,406 2,620 2,544 2,544 2,519 2,497 Baseline Total Positions Managers/Supervisors 12,933 14,176 14,078 13,936 13,842 13,828 Professional, Technical, Clerica 5,939 6,168 6,139 6,136 6,138 6,155 Operational Hourlies 53,066 54,815 54,790 54,658 54,797 54,999 Baseline Total Positions 1 71,938 75,159 75,007 74,730 74,777 74,982
+```
+[p114_c0003] _1 For 2025 and beyond, the table captures authorized positions at year end (December 31). Totals may not add due to rounding._
+[p114_c0004] _II-95_
+
+## Page 115
+
+### [p115_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Year to Year Changes for Positions by Agency Baseline Total Non-Reimbursable - Reimbursable Positions Full-Time Positions and Full-Time Equivalents Favorable/(Unfavorable)
+[p115_c0002]
+
+```text
+CATEGORY Change 2025-2026 Change 2026-2027 Change 2027-2028 Change 2028-2029 Baseline Total Positions 1 152 277 (47) (205) NYC Transit 244 527 (18) (127) Long Island Rail Road (89) (218) 1 - Metro-North Railroad (86) (73) (78) (100) Bridges & Tunnels 39 32 95 71 Headquarters 37 (20) (67) (49) Grand Central Madison Operating Company - - - - Staten Island Railway 7 26 20 - Construction & Development - - - - Bus Company - 3 - - Non-Reimbursable 1 (180) (129) (65) (205) NYC Transit 82 156 (67) (127) Long Island Rail Road (225) (225) - (0) Metro-North Railroad (119) (75) (46) (100) Bridges & Tunnels 39 32 95 71 Headquarters 37 (20) (67) (49) Grand Central Madison Operating Company - - - - Staten Island Railway 7 - 20 - Construction & Development - - - - Bus Company - 3 - - Reimbursable 1 332 406 18 0 NYC Transit 162 371 49 - Long Island Rail Road 136 7 1 0 Metro-North Railroad 33 2 (32) - Bridges & Tunnels - - - - Headquarters - - - - Grand Central Madison Operating Company - - - - Staten Island Railway - 26 - - Construction & Development - - - - Bus Company - - - - Total Full-Time 1 157 277 (47) (205) NYC Transit 249 527 (18) (127) Long Island Rail Road (89) (218) 1 - Metro-North Railroad (86) (73) (78) (100) Bridges & Tunnels 39 32 95 71 Headquarters 37 (20) (67) (49) Grand Central Madison Operating Company - - - - Staten Island Railway 7 26 20 - Construction & Development - - - - Bus Company - 3 - - Total Full-Time-Equivalents 1 (5) - - - NYC Transit (5) - - - Long Island Rail Road - - - - Metro-North Railroad - - - - Bridges & Tunnels - - - - Headquarters - - - - Grand Central Madison Operating Company - - - - Staten Island Railway - - - - Construction & Development - - - - Bus Company - - - -
+```
+[p115_c0003] _1 For 2025 and beyond, the table captures authorized positions at year end (December 31). Totals may not add due to rounding._
+[p115_c0004] _II-96_
+
+## Page 116
+
+### [p116_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Year to Year Changes for Positions by Function and Agency Baseline Total Non-Reimbursable - Reimbursable Positions Full-Time Positions and Full-Time Equivalents Favorable/(Unfavorable)
+[p116_c0002]
+
+```text
+FUNCTION/DEPARTMENT Change 2025-2026 Change 2026-2027 Change 2027-2028 Change 2028-2029 Administration (33) (8) (8) (37) NYC Transit (34) (24) (11) (37) Long Island Rail Road (1) 4 - - Metro-North Railroad (3) - - - Bridges & Tunnels - - - - Headquarters 5 12 3 - Grand Central Madison Operating Company - - - - Staten Island Railway - - - - Construction & Development - - - - Bus Company - - - - Operations (70) (89) (70) 14 NYC Transit 1 79 7 14 Long Island Rail Road - (107) 1 - Metro-North Railroad (73) (73) (78) - Bridges & Tunnels - - - - Headquarters - - - - Grand Central Madison Operating Company - - - - Staten Island Railway 2 10 - - Construction & Development - - - - Bus Company - 2 - - Maintenance 180 372 6 (204) NYC Transit 272 472 (14) (104) Long Island Rail Road (87) (115) - - Metro-North Railroad (10) - - (100) Bridges & Tunnels - - - - Headquarters - - - - Grand Central Madison Operating Company - - - - Staten Island Railway 5 14 20 - Construction & Development - - - - Bus Company - 1 - - Engineering/Capital (1) 2 - - NYC Transit - - - - Long Island Rail Road (1) - - - Metro-North Railroad - - - - Bridges & Tunnels - - - - Headquarters - - - - Grand Central Madison Operating Company - - - - Staten Island Railway - 2 - - Construction & Development - - - - Bus Company - - - - Public Safety 76 - 25 22 NYC Transit 5 - - - Long Island Rail Road - - - - Metro-North Railroad - - - - Bridges & Tunnels 39 32 95 71 Headquarters 32 (32) (70) (49) Grand Central Madison Operating Company - - - - Staten Island Railway - - - - Construction & Development - - - - Bus Company - - - - Baseline Total Positions 1 152 277 (47) (205)
+```
+[p116_c0003] _1 For 2025 and beyond, the table captures authorized positions at year end (December 31). Totals may not add due to rounding._
+[p116_c0004] _II-97_
+
+## Page 117
+
+### [p117_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Year to Year Changes for Positions by Function and Occupational Group Baseline Total Full-time Positions and Full-time Equivalents Non-Reimbursable and Reimbursable Favorable/(Unfavorable)
+[p117_c0002]
+
+```text
+FUNCTION/OCCUPATIONAL GROUP Change 2025-2026 Change 2026-2027 Change 2027-2028 Change 2028-2029 Administration Managers/Supervisors - (4) 1 (10) Professional, Technical, Clerical (33) (4) (9) (27) Operational Hourlies - - - - Total Administration (33) (8) (8) (37) Operations Managers/Supervisors - (3) 1 14 Professional, Technical, Clerical 11 (10) (17) - Operational Hourlies (81) (76) (54) - Total Operations (70) (89) (70) 14 Maintenance Managers/Supervisors 71 143 70 11 Professional, Technical, Clerical 51 15 24 10 Operational Hourlies 58 214 (88) (225) Total Maintenance 180 372 6 (204) Engineering/Capital Managers/Supervisors (1) - - - Professional, Technical, Clerical - 2 - - Operational Hourlies - - - - Total Engineering/Capital (1) 2 - - Public Safety Managers/Supervisors 28 6 22 (1) Professional, Technical, Clerical - - - - Operational Hourlies 48 (6) 3 23 Total Public Safety 76 - 25 22 Baseline Total Positions Managers/Supervisors 98 142 94 14 Professional, Technical, Clerical 29 3 (2) (17) Operational Hourlies 25 132 (139) (202) Baseline Total Positions 1 152 277 (47) (205)
+```
+[p117_c0003] _1 For 2025 and beyond, the table captures authorized positions at year end (December 31). Totals may not add due to rounding._
+[p117_c0004] _II-98_
+
+## Page 118
+
+### [p118_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Baseline Change Between 2025 July Financial Plan vs. 2025 February Financial Plan Total Non-Reimbursable - Reimbursable Positions Full-Time Positions and Full Time Equivalents by Agency Favorable(Unfavorable)
+[p118_c0002]
+
+```text
+Category 2025 2026 2027 2028 Baseline Total Positions 1 (313) (384) (300) (250) NYC Transit (225) (236) (152) (130) Long Island Rail Road 26 (16) (16) (16) Metro-North Railroad (5) (20) (20) (20) Bridges & Tunnels 41 80 112 207 Headquarters (66) (108) (140) (207) Grand Central Madison Operating Company - - - - Staten Island Railway (4) (4) (4) (4) Construction & Development (46) (46) (46) (46) Bus Company (34) (34) (34) (34) Non-Reimbursable 1 (130) (209) (203) (180) NYC Transit (117) (133) (127) (126) Long Island Rail Road 27 (15) (15) (15) Metro-North Railroad 10 (8) (8) (14) Bridges & Tunnels 41 80 112 207 Headquarters (63) (105) (137) (204) Grand Central Madison Operating Company - - - - Staten Island Railway (4) (4) (4) (4) Construction & Development 10 10 10 10 Bus Company (34) (34) (34) (34) Reimbursable 1 (183) (175) (97) (70) NYC Transit (108) (103) (25) (4) Long Island Rail Road (1) (1) (1) (1) Metro-North Railroad (15) (12) (12) (6) Bridges & Tunnels - - - - Headquarters (3) (3) (3) (3) Grand Central Madison Operating Company - - - - Staten Island Railway - - - - Construction & Development (56) (56) (56) (56) Bus Company - - - - Total Full-Time 1 (313) (379) (295) (245) NYC Transit (225) (231) (147) (125) Long Island Rail Road 26 (16) (16) (16) Metro-North Railroad (5) (20) (20) (20) Bridges & Tunnels 41 80 112 207 Headquarters (66) (108) (140) (207) Grand Central Madison Operating Company - - - - Staten Island Railway (4) (4) (4) (4) Construction & Development (46) (46) (46) (46) Bus Company (34) (34) (34) (34) Total Full-Time-Equivalents 1 - (5) (5) (5) NYC Transit - (5) (5) (5) Long Island Rail Road - - - - Metro-North Railroad - - - - Bridges & Tunnels - - - - Headquarters - - - - Grand Central Madison Operating Company - - - - Staten Island Railway - - - - Construction & Development - - - - Bus Company - - - -
+```
+[p118_c0003] _1 For 2025 and beyond, the table captures authorized positions at year end (December 31). Totals may not add due to rounding._
+[p118_c0004] _II-99_
+
+## Page 119
+
+### [p119_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Baseline Change Between 2025 July Financial Plan vs. 2025 February Financial Plan Total Non-Reimbursable - Reimbursable Positions Full-Time Positions and Full Time Equivalents by Function and Agency Favorable/(Unfavorable)
+[p119_c0002]
+
+```text
+Function 2025 2026 2027 2028 Administration (66) (76) (72) (59) NYC Transit (5) (6) (6) 4 Long Island Rail Road (1) (7) (3) (3) Metro-North Railroad 5 2 2 2 Bridges & Tunnels - - - - Headquarters (19) (19) (19) (16) Grand Central Madison Operating Company - - - - Staten Island Railway - - - - Construction & Development (45) (45) (45) (45) Bus Company (1) (1) (1) (1) Operations (43) (70) (70) (70) NYC Transit (13) (36) (36) (36) Long Island Rail Road - (2) (2) (2) Metro-North Railroad 3 1 1 1 Bridges & Tunnels - - - - Headquarters - - - - Grand Central Madison Operating Company - - - - Staten Island Railway (2) (2) (2) (2) Construction & Development - - - - Bus Company (31) (31) (31) (31) Maintenance (179) (210) (130) (118) NYC Transit (192) (179) (95) (83) Long Island Rail Road 27 (7) (11) (11) Metro-North Railroad (10) (20) (20) (20) Bridges & Tunnels - - - - Headquarters - - - - Grand Central Madison Operating Company - - - - Staten Island Railway (2) (2) (2) (2) Construction & Development - - - - Bus Company (2) (2) (2) (2) Engineering/Capital (1) (1) (1) (1) NYC Transit 3 3 3 3 Long Island Rail Road - - - - Metro-North Railroad (3) (3) (3) (3) Bridges & Tunnels - - - - Headquarters - - - - Grand Central Madison Operating Company - - - - Staten Island Railway - - - - Construction & Development (1) (1) (1) (1) Bus Company - - - - Public Safety (24) (27) (27) (2) NYC Transit (18) (18) (18) (18) Long Island Rail Road - - - - Metro-North Railroad - - - - Bridges & Tunnels 41 80 112 207 Headquarters (47) (89) (121) (191) Grand Central Madison Operating Company - - - - Staten Island Railway - - - - Construction & Development - - - - Bus Company - - - - Baseline Total Positions 1 (313) (384) (300) (250)
+```
+[p119_c0003] _1 For 2025 and beyond, the table captures authorized positions at year end (December 31). Totals may not add due to rounding._
+[p119_c0004] _II-100_
+
+## Page 120
+
+### [p120_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Baseline Change Between 2025 July Financial Plan vs. 2025 February Financial Plan Non-Reimbursable and Reimbursable Full-time Positions and Full-time Equivalents by Occupational Group Favorable/(Unfavorable)
+[p120_c0002]
+
+```text
+FUNCTION/OCCUPATIONAL GROUP Change 2025 2026 2027 2028 Administration Managers/Supervisors (90) (94) (90) (87) Professional, Technical, Clerical 26 20 20 30 Operational Hourlies (2) (2) (2) (2) Total Administration (66) (76) (72) (59) Operations Managers/Supervisors 20 16 13 13 Professional, Technical, Clerical (2) (2) (2) (2) Operational Hourlies (61) (84) (81) (81) Total Operations (43) (70) (70) (70) Maintenance Managers/Supervisors (39) (55) (1) 31 Professional, Technical, Clerical 1 (13) (12) (8) Operational Hourlies (140) (142) (117) (141) Total Maintenance (179) (210) (130) (118) Engineering/Capital Managers/Supervisors (32) (32) (32) (32) Professional, Technical, Clerical 27 27 27 27 Operational Hourlies 4 4 4 4 Total Engineering/Capital (1) (1) (1) (1) Public Safety Managers/Supervisors (27) (11) (5) 17 Professional, Technical, Clerical (18) (20) (20) (20) Operational Hourlies 21 4 (2) 1 Total Public Safety (24) (27) (27) (2) Baseline Total Positions Managers/Supervisors (168) (176) (115) (58) Professional, Technical, Clerical 34 11 12 26 Operational Hourlies (178) (220) (198) (219) Baseline Total Positions 1 (313) (384) (300) (250)
+```
+[p120_c0003] _1 For 2025 and beyond, the table captures authorized positions at year end (December 31). Totals may not add due to rounding._
+[p120_c0004] _II-101_
+
+## Page 121
+
+[p121_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p121_c0002] _II-102_
+
+## Page 122
+
+### [p122_c0001] III. Other MTA Consolidated Materials
+
+## Page 123
+
+### [p123_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026 - 2029 MTA Consolidated Accrued Statement of Operations By Category ($ in millions)
+[p123_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenues Farebox Revenue $4,997 $5,241 $5,326 $5,411 $5,475 $5,490 Toll Revenue 2,572 2,585 2,611 2,637 2,654 2,666 Other Revenue 3,352 2,631 1,158 1,200 1,339 1,394 Capital and Other Reimbursements 0 0 0 0 0 0 Total Revenues $10,920 $10,457 $9,094 $9,248 $9,469 $9,549 Operating Expenses Labor: Payroll $6,075 $6,506 $6,651 $6,800 $6,947 $7,095 Overtime 1,107 890 879 900 907 920 Health and Welfare 1,719 1,966 2,114 2,257 2,417 2,593 OPEB Current Payments 856 921 993 1,072 1,159 1,252 Pension 1,421 1,575 1,686 1,730 1,747 1,767 Other Fringe Benefits 967 1,143 1,189 1,258 1,313 1,369 Reimbursable Overhead (553) (509) (524) (503) (507) (517) Total Labor Expenses $11,593 $12,492 $12,987 $13,514 $13,983 $14,480 Non-Labor: Electric Power $531 $628 $641 $646 $679 $713 Fuel 205 198 202 201 202 209 Insurance 8 15 38 38 50 65 Claims 1,160 424 440 452 465 473 Paratransit Service Contracts 617 765 874 948 999 1,057 Maintenance and Other Operating Contracts 1,000 1,066 1,036 1,053 1,060 1,083 Professional Services Contracts 655 892 805 831 788 780 Materials and Supplies 645 738 803 899 953 1,005 Other Business Expenses 304 302 304 312 339 339 Total Non-Labor Expenses $5,126 $5,027 $5,143 $5,380 $5,536 $5,724 Other Expense Adjustments: Other $14 $16 $14 $14 $14 $15 General Reserve 195 200 210 220 230 240 Total Other Expense Adjustments $209 $216 $224 $234 $244 $255 Total Expenses Before Non-Cash Liability Adjs. $16,928 $17,734 $18,354 $19,128 $19,764 $20,459 Depreciation $3,799 $3,912 $3,900 $3,928 $3,963 $4,011 GASB 49 Environmental Remediation 52 6 6 6 6 6 GASB 68 Pension Expense Adjustment (35) (36) (119) (58) (219) (219) GASB 75 OPEB Expense Adjustment 389 580 591 602 614 626 GASB 87 Lease Adjustment 39 43 38 38 38 38 GASB 96 SBITA Adjustment 2 16 15 15 15 15 Total Non-Cash Liability Adjustments $4,247 $4,522 $4,432 $4,533 $4,417 $4,478 Total Expenses After Non-Cash Liability Adjs. $21,175 $22,256 $22,786 $23,661 $24,181 $24,937 Conversion to Cash Basis: Non-Cash Liability Adjs. ($4,247) ($4,522) ($4,432) ($4,533) ($4,417) ($4,478) Debt Service 2,860 2,497 2,950 3,271 3,431 3,610 Total Expenses with Debt Service $19,788 $20,231 $21,304 $22,399 $23,196 $24,069 Dedicated Taxes & State and Local Subsidies $9,930 $10,440 $11,315 $11,680 $11,939 $11,740 Net Surplus/(Deficit) After Subsidies and Debt Service $1,062 $665 ($895) ($1,472) ($1,788) ($2,781) Conversion to Cash Basis: GASB Account $0 $0 $0 $0 $0 $0 Conversion to Cash Basis: All Other (1,062) (965) 265 514 764 1,404 Cash Balance Before Prior-Year Carryover $0 ($300) ($630) ($957) ($1,025) ($1,377)
+```
+[p123_c0003] _III-1_
+
+## Page 124
+
+### [p124_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026 - 2029 MTA Consolidated Accrual Statement of Operations By Category ($ in millions)
+[p124_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Reimbursable Operating Revenues Farebox Revenue $0 $0 $0 $0 $0 $0 Toll Revenue 0 0 0 0 0 0 Other Revenue 0 0 0 0 0 0 Capital and Other Reimbursements 2,503 2,562 2,659 2,504 2,539 2,582 Total Revenues $2,503 $2,562 $2,659 $2,504 $2,539 $2,582 Operating Expenses Labor: Payroll $725 $883 $904 $879 $890 $906 Overtime 297 225 245 243 248 253 Health and Welfare 86 105 113 116 121 126 OPEB Current Payments 16 17 16 17 18 19 Pension 113 128 141 143 145 148 Other Fringe Benefits 279 300 305 292 295 300 Reimbursable Overhead 551 510 524 503 507 517 Total Labor Expenses $2,069 $2,167 $2,248 $2,193 $2,222 $2,269 Non-Labor: Electric Power $1 $1 $1 $1 $1 $1 Fuel 0 0 0 0 0 0 Insurance 8 11 13 13 14 14 Claims 0 0 0 0 0 0 Maintenance and Other Operating Contracts 115 91 76 72 72 73 Professional Services Contracts 143 171 207 126 130 125 Materials and Supplies 154 118 112 96 99 98 Other Business Expenses 13 2 2 2 2 2 Total Non-Labor Expenses $434 $395 $411 $311 $317 $313 Other Expense Adjustments: Other - - - - - - General Reserve 0 0 0 0 0 0 Total Other Expense Adjustments $0 $0 $0 $0 $0 $0 Total Expenses $2,503 $2,562 $2,659 $2,504 $2,539 $2,582 Net Surplus/(Deficit) $0 $0 $0 $0 $0 $0
+```
+[p124_c0003] _III-2_
+
+## Page 125
+
+### [p125_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026 - 2029 MTA Consolidated Accrual Statement of Operations By Category ($ in millions)
+[p125_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable/Reimbursable Operating Revenues Farebox Revenue $4,997 $5,241 $5,326 $5,411 $5,475 $5,490 Toll Revenue 2,572 2,585 2,611 2,637 2,654 2,666 Other Revenue 3,352 2,631 1,158 1,200 1,339 1,394 Capital and Other Reimbursements 2,503 2,562 2,659 2,504 2,539 2,582 Total Revenues $13,423 $13,019 $11,753 $11,751 $12,008 $12,131 Operating Expenses Labor: Payroll $6,800 $7,388 $7,555 $7,680 $7,836 $8,001 Overtime 1,405 1,116 1,124 1,143 1,155 1,173 Health and Welfare 1,805 2,071 2,227 2,373 2,538 2,720 OPEB Current Payments 873 937 1,009 1,089 1,177 1,271 Pension 1,534 1,703 1,827 1,872 1,893 1,914 Other Fringe Benefits 1,247 1,443 1,494 1,549 1,607 1,670 Reimbursable Overhead (2) 1 0 0 0 0 Total Labor Expenses $13,662 $14,659 $15,235 $15,707 $16,205 $16,749 Non-Labor: Electric Power $532 $629 $641 $647 $679 $713 Fuel 206 198 202 201 202 210 Insurance 16 26 52 51 64 79 Claims 1,160 424 440 452 465 473 Paratransit Service Contracts 617 765 874 948 999 1,057 Maintenance and Other Operating Contracts 1,115 1,157 1,112 1,126 1,132 1,156 Professional Services Contracts 798 1,063 1,012 957 919 905 Materials and Supplies 799 856 915 996 1,052 1,103 Other Business Expenses 317 303 306 314 341 341 Total Non-Labor Expenses $5,560 $5,422 $5,554 $5,691 $5,853 $6,037 Other Expense Adjustments: Other $14 $16 $14 $14 $14 $15 General Reserve 195 200 210 220 230 240 Total Other Expense Adjustments $209 $216 $224 $234 $244 $255 Total Expenses Before Non-Cash Liability Adjs. $19,431 $20,296 $21,013 $21,632 $22,303 $23,041 Depreciation $3,799 $3,912 $3,900 $3,928 $3,963 $4,011 GASB 49 Environmental Remediation 52 6 6 6 6 6 GASB 68 Pension Expense Adjustment (35) (36) (119) (58) (219) (219) GASB 75 OPEB Expense Adjustment 389 580 591 602 614 626 GASB 87 Lease Adjustment 39 43 38 38 38 38 GASB 96 SBITA Adjustment 2 16 15 15 15 15 Total Non-Cash Liability Adjustments $4,247 $4,522 $4,432 $4,533 $4,417 $4,478 Total Expenses After Non-Cash Liability Adjs. $23,678 $24,818 $25,445 $26,165 $26,720 $27,519 Conversion to Cash Basis: Non-Cash Liability Adj. ($4,247) ($4,522) ($4,432) ($4,533) ($4,417) ($4,478) Debt Service 2,860 2,497 2,950 3,271 3,431 3,610 Total Expenses with Debt Service $22,291 $22,793 $23,963 $24,903 $25,735 $26,651 Dedicated Taxes and State/Local Subsidies $9,930 $10,440 $11,315 $11,680 $11,939 $11,740 Net Surplus/(Deficit) After Subsidies and Debt Service $1,062 $665 ($895) ($1,472) ($1,788) ($2,781) Conversion to Cash Basis: GASB Account $0 $0 $0 $0 $0 $0 Conversion to Cash Basis: All Other (1,062) (965) 265 514 764 1,404 Cash Balance Before Prior-Year Carryover $0 ($300) ($630) ($957) ($1,025) ($1,377)
+```
+[p125_c0003] _III-3_
+
+## Page 126
+
+### [p126_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+### [p126_c0002] July Financial Plan 2026 - 2029
+### [p126_c0003] Cash Receipts and Expenditures
+[p126_c0004] ($ in millions)
+[p126_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $4,891 $5,262 $5,313 $5,398 $5,461 $5,475 Other Revenue 1,237 1,494 1,235 1,221 1,344 1,399 Capital and Other Reimbursements 2,245 2,662 2,704 2,570 2,560 2,529 Total Receipts $8,373 $9,419 $9,253 $9,189 $9,365 $9,403 Expenditures Labor: Payroll $6,605 $7,487 $7,387 $7,499 $7,646 $7,829 Overtime 1,361 1,109 1,098 1,119 1,134 1,158 Health and Welfare 1,810 2,070 2,184 2,329 2,492 2,672 OPEB Current Payments 832 902 972 1,050 1,136 1,228 Pension 1,468 1,048 1,783 1,827 1,848 1,875 Other Fringe Benefits 1,126 1,199 1,192 1,228 1,267 1,311 Contribution to GASB Fund 0 0 0 0 0 0 Reimbursable Overhead 0 0 0 0 0 0 Total Labor Expenditures $13,202 $13,815 $14,617 $15,052 $15,522 $16,073 Non-Labor: Electric Power $545 $637 $647 $651 $683 $717 Fuel 203 196 200 199 200 207 Insurance 51 20 40 37 51 67 Claims 454 402 330 334 338 340 Paratransit Service Contracts 600 763 872 946 997 1,055 Maintenance and Other Operating Contracts 963 1,098 955 953 960 988 Professional Services Contracts 759 1,063 956 906 863 849 Materials and Supplies 895 857 916 987 1,051 1,101 Other Business Expenses 258 283 306 302 313 307 Total Non-Labor Expenditures $4,728 $5,319 $5,223 $5,315 $5,457 $5,631 Other Expenditure Adjustments: Other $25 $196 $152 $129 $117 $114 General Reserve 195 200 210 220 230 240 Total Other Expenditure Adjustments $220 $396 $362 $349 $347 $354 Total Expenditures $18,150 $19,530 $20,202 $20,715 $21,326 $22,058 Net Cash Balance before Subsidies and Debt Service ($9,777) ($10,111) ($10,950) ($11,526) ($11,961) ($12,654) Dedicated Taxes & State and Local Subsidies $12,009 $11,549 $12,424 $12,937 $13,372 $13,906 Debt Service (2,232) (1,738) (2,104) (2,368) (2,436) (2,629) Cash Balance Before Prior-Year Carryover $0 ($300) ($629) ($957) ($1,025) ($1,377)
+```
+[p126_c0006] _III-4_
+
+## Page 127
+
+### [p127_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+[p127_c0002] July Financial Plan 2026 - 2029
+[p127_c0003] Cash Conversion Detail By Agency
+[p127_c0004] ($ in Millions)
+[p127_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Depreciation New York City Transit $2,244 $2,413 $2,437 $2,437 $2,437 $2,437 Long Island Rail Road 563 563 548 554 559 565 Grand Central Madison 209 204 201 201 201 201 Metro-North Railroad 352 341 354 373 398 436 MTA Headquarters 112 80 46 46 46 46 MTA Bus Company 65 72 72 72 72 72 Staten Island Railway 25 18 18 18 18 18 Construction and Development 0 0 0 0 0 0 Bridges and Tunnels 228 221 225 229 232 237 Total $3,799 $3,912 $3,900 $3,928 $3,963 $4,011 GASB 49 Environmental Remediation New York City Transit $41 $0 $0 $0 $0 $0 Long Island Rail Road 8 2 2 2 2 2 Grand Central Madison 0 0 0 0 0 0 Metro-North Railroad 2 4 4 4 4 4 MTA Headquarters 0 0 0 0 0 0 MTA Bus Company 1 0 0 0 0 0 Staten Island Railway 0 0 0 0 0 0 Construction and Development 0 0 0 0 0 0 Bridges and Tunnels 0 0 0 0 0 0 Total $52 $6 $6 $6 $6 $6 GASB 68 Pension Expense Adjustment New York City Transit ($66) ($66) ($66) ($66) ($66) ($66) Long Island Rail Road 7 0 (39) (4) (99) (101) Grand Central Madison 0 0 0 0 0 0 Metro-North Railroad 25 26 3 29 (36) (36) MTA Headquarters 13 20 4 13 (13) (12) MTA Bus Company (4) 11 7 (4) 22 17 Staten Island Railway 2 0 0 2 (2) (2) Construction and Development 0 0 0 0 0 0 Bridges and Tunnels (12) (28) (28) (28) (25) (19) Total ($35) ($36) ($119) ($58) ($219) ($219) GASB 75 OPEB Expense Adjustment New York City Transit $173 $173 $173 $173 $173 $173 Long Island Rail Road (42) 35 36 36 37 38 Grand Central Madison 0 0 0 0 0 0 Metro-North Railroad 3 62 65 67 69 72 MTA Headquarters 215 221 227 234 240 247 MTA Bus Company 28 63 65 67 69 72 Staten Island Railway 1 6 6 6 6 6 Construction and Development 0 0 0 0 0 0 Bridges and Tunnels 13 21 20 19 19 19 Total $389 $580 $591 $602 $614 $626 GASB 87 Lease Adjustment New York City Transit $31 $31 $31 $31 $31 $31 Long Island Rail Road (1) 5 (1) (1) (1) (1) Grand Central Madison 0 0 0 0 0 0 Metro-North Railroad 4 4 4 4 4 4 MTA Headquarters (2) (2) (2) (2) (2) (2) MTA Bus Company 0 0 0 0 0 0 Staten Island Railway 0 0 0 0 0 0 Construction and Development 0 0 0 0 0 0 Bridges and Tunnels 7 6 6 6 6 6 Total $39 $43 $38 $38 $38 $38 GASB 96 SBITA Adjustment New York City Transit $0 $0 $0 $0 $0 $0 Long Island Rail Road (4) 2 1 1 1 1 Grand Central Madison 0 0 0 0 0 0 Metro-North Railroad (4) (2) (2) (2) (2) (2) MTA Headquarters 9 17 17 17 17 17 MTA Bus Company 0 0 0 0 0 0 Staten Island Railway 0 0 0 0 0 0 Construction and Development 0 0 0 0 0 0 Bridges and Tunnels 0 0 0 0 0 0 Total $2 $16 $15 $15 $15 $15 Net Operating Surplus/(Deficit) New York City Transit ($1,786) ($1,023) $480 $521 $512 $443 Long Island Rail Road 22 174 11 18 9 9 Grand Central Madison 7 (30) 0 0 0 0 Metro-North Railroad (80) (20) (77) (31) (28) (26) MTA Headquarters (63) 25 (13) 18 34 37 MTA Bus Company 229 214 97 40 40 41 Staten Island Railway 30 1 2 2 2 2 First Mutual Transportation Assurance Company 83 (77) (61) (61) (51) (39) Construction and Development (121) 0 0 0 0 0 Other 0 0 0 0 0 0 Total ($1,679) ($736) $439 $508 $518 $468 Subsidies New York City Transit $464 ($136) ($132) ($26) $196 $671 Commuter Railroads 147 (14) (45) (5) 67 274 MTA Headquarters (20) (16) (22) (14) (14) (16) MTA Bus Company 23 (25) 22 49 (3) 9 Staten Island Railway 2 (38) 3 2 1 (2) Total $617 ($229) ($174) $6 $246 $936 Total Cash Conversion $3,185 $3,557 $4,697 $5,047 $5,180 $5,882
+```
+[p127_c0006] _III-5_
+
+## Page 128
+
+### [p128_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p128_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable Operating Revenues Farebox Revenue $5,241 $5,326 $85 $5,411 $86 $5,475 $64 $5,490 $15 Toll Revenue 2,585 2,611 26 2,637 26 2,654 17 2,666 11 Other Revenue 2,631 1,158 (1,473) 1,200 42 1,339 140 1,394 55 Capital and Other Reimbursements 0 0 - 0 - 0 - 0 - Total Revenues $10,457 $9,094 ($1,362) $9,248 $153 $9,469 $221 $9,549 $81 Operating Expenses Labor: Payroll $6,506 $6,651 ($146) $6,800 ($149) $6,947 ($146) $7,095 ($148) Overtime 890 879 12 900 (21) 907 (7) 920 (13) Health and Welfare 1,966 2,114 (148) 2,257 (143) 2,417 (161) 2,593 (176) OPEB Current Payments 921 993 (72) 1,072 (79) 1,159 (86) 1,252 (93) Pension 1,575 1,686 (111) 1,730 (44) 1,747 (18) 1,767 (19) Other Fringe Benefits 1,143 1,189 (46) 1,258 (69) 1,313 (55) 1,369 (57) Reimbursable Overhead (509) (524) 15 (503) (22) (507) 4 (517) 10 Total Labor Expenses $12,492 $12,987 ($496) $13,514 ($527) $13,983 ($470) $14,480 ($497) Non-Labor: Electric Power $628 $641 ($13) $646 ($5) $679 ($33) $713 ($34) Fuel 198 202 (4) 201 1 202 (1) 209 (7) Insurance 15 38 (23) 38 1 50 (13) 65 (15) Claims 424 440 (16) 452 (12) 465 (13) 473 (8) Paratransit Service Contracts 765 874 (109) 948 (73) 999 (52) 1,057 (58) Maintenance and Other Operating Contracts 1,066 1,036 30 1,053 (18) 1,060 (7) 1,083 (23) Professional Services Contracts 892 805 87 831 (25) 788 42 780 8 Materials and Supplies 738 803 (65) 899 (97) 953 (54) 1,005 (51) Other Business Expenses 302 304 (2) 312 (8) 339 (27) 339 0 Total Non-Labor Expenses $5,027 $5,143 ($117) $5,380 ($237) $5,536 ($156) $5,724 ($188) Other Expense Adjustments: Other 16 14 2 14 0 14 0 15 0 General Reserve 200 210 (10) 220 (10) 230 (10) 240 (10) Total Other Expense Adjustments $216 $224 ($8) $234 ($10) $244 ($10) $255 ($10) Total Expenses Before Non-Cash Liability Adjs. $17,734 $18,354 ($620) $19,128 ($774) $19,764 ($636) $20,459 ($695) Depreciation $3,912 $3,900 $12 $3,928 ($28) $3,963 ($34) $4,011 ($49) GASB 49 Environmental Remediation 6 6 0 6 0 6 0 6 0 GASB 68 Pension Expense Adjustment (36) (119) 83 (58) (62) (219) 162 (219) 0 GASB 75 OPEB Expense Adjustment 580 591 (11) 602 (11) 614 (11) 626 (12) GASB 87 Lease Adjustment 43 38 5 38 0 38 0 38 0 GASB 96 SBITA Adjustment 16 15 1 15 0 15 0 15 0 Total Non-Cash Liability Adjustments $4,522 $4,432 $90 $4,533 ($101) $4,417 $116 $4,478 ($61) Total Expenses After Non-Cash Liability Adjs. $22,256 $22,786 ($530) $23,661 ($875) $24,181 ($520) $24,937 ($756) Conversion to Cash Basis: Non-Cash Liability Adjs. ($4,522) ($4,432) $90 ($4,533) ($101) ($4,417) $116 ($4,478) ($61) Debt Service (Excludes Service Contract Bonds) 2,497 2,950 (452) 3,271 (321) 3,431 (160) 3,610 (179) Total Expenses with Debt Service $20,231 $21,304 ($1,073) $22,399 ($1,095) $23,196 ($796) $24,069 ($874) Dedicated Taxes and State/Local Subsidies $10,440 $11,315 $875 $11,680 $365 $11,939 $259 $11,740 ($199) Net Surplus/(Deficit) After Subsidies and Debt Service $665 ($895) ($1,560) ($1,472) ($577) ($1,788) ($317) ($2,781) ($993) Conversion to Cash Basis: GASB Account $0 $0 - $0 - $0 - $0 - Conversion to Cash Basis: All Other (965) 265 1,230 514 249 764 249 1,404 641 Cash Balance Before Prior-Year Carryover ($300) ($630) ($330) ($957) ($328) ($1,025) ($67) ($1,377) ($352)
+```
+[p128_c0003] _9-III_
+
+## Page 129
+
+### [p129_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+### [p129_c0002] July Financial Plan 2026-2029 Non-Recurring Revenue and Savings
+[p129_c0003] ($ in millions)
+[p129_c0004]
+
+```text
+Agency Description 2025 Mid-Year Forecast 2026 Preliminary Budget 2027 Plan 2028 Plan 2029 Plan Explanation Explanation Explanation Explanation Explanation All Agencies Insurance Reimbursement Tropical Storm IDA (NYCT $49.9, MNR $11.8, LIRR $ 2.3, SIR $1.0, MTAHQ $0.7, MTA Bus $0.3 and B&T $0.1) $ 66.0 $ - $ - $ - $ - Total Non-Recurring Resources (> or = $1 million) $ 66.0 $ - $ - $ - $ -
+```
+[p129_c0005] _7-111_
+
+## Page 130
+
+### [p130_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2026-2029 Operating Budget Reserves - Year-End Balances ($ in millions)
+[p130_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 Plan 2027 Plan 2028 Plan 2029 MTA General Reserve (Reserved) $571.6 $582.8 $582.8 $582.8 $582.8 $582.8 MTA Retiree Welfare Benefits Plan $1,433.1 $1,479.6 $1,479.6 $1,479.6 $1,479.6 $1,479.6 New York City Transit 45.8 - - - - - Long Island Rail Road 32.1 - - - - - Metro-North Railroad 93.7 - - - - - Headquarters 5.4 - - - - - MTA Bus Company 7.0 - - - - - Staten Island Railway 2.2 - - - - - Bridges and Tunnels 19.0 - - - - - MTA Labor Reserve 1 $205.2 $0.0 $0.0 $0.0 $0.0 $0.0 B&T Necessary Reconstruction Fund 2 $431.8 $441.5 $441.5 $441.5 $441.5 $441.5
+```
+[p130_c0003] Note: Balances do not include investment income beyond June 30, 2025.
+[p130_c0004] 1 Reserve accounts have been set up to fund retroactive wage adjustments arising from future labor settlements.
+[p130_c0005] 2 The B&T Necessary Reconstruction Fund may be used for the necessary reconstruction of pledged projects.
+[p130_c0006] _III-8_
+
+## Page 131
+
+### [p131_c0001] IV. MTA Capital Program Information
+
+## Page 132
+
+### [p132_c0001] MTA New York City Transit 2025 Commitments
+[p132_c0002] $ in millions
+[p132_c0003]
+
+```text
+ACEP Project Description 2025 Commitments Goal ET040338 Sandy Mitigation: World Trade Center Site Flood Protection $ 15.0 ET040340 Sandy Mitigation: Outstanding Street Level Openings $ 16.2 Element Total $ 31.2 S80701 2020-2024 SIR Station Component Program $ 50.7 S8070113 Rehabilitate: Garretson Ave. Bridge $ 5.8 S8070114 Overcoat: 6 SIR Bridges $ 25.0 S8070115 Rehabilitate: Stapleton Viaduct $ 54.7 Element Total $ 136.3 T8010103 Purchase 435 B-Division Cars - R211 Option 2 $ 1,389.7 Element Total $ 1,389.7 T8030205 92 Express Buses $ 77.6 T8030216 5 Express Battery Electric Buses for Testing+Eval (Group 2) $ 10.6 T8030230 Batt Elec Bus Charging Infra Phase 3 (5 Depots) $ 206.7 T8030233 5 BEB for Test & Evaluation "Group 4" $ 15.0 Element Total $ 310.0 T80404 Purchase 96 Automated Farecard Access System (AFAS) Units $ 3.4 T80404 Purchase 40 OMNY Transfer Validators $ 1.8 T80404 New Fare Payment System, Ph3 (Additional Support Costs) $ 20.0 T8040403 Low Turnstiles & End Cabinets: Procurement (2020-2024) $ 10.5 T8040404 Purchase 15 Wide Aisle Gates (Various Vendors) $ 7.1 T8040407 Wide Turnstiles: (2020-2024) $ 13.1 T8040407 Purchase 30 Wide Aisle Gates (Cubic) $ 29.3 Element Total $ 85.1 T80412 1 Subway Street Stair: Woodhaven Blvd / QBL (S3) [SBMP] $ 1.1 T80412 1 Subway Street Stair: Jamaica Center / ARC (S1/M1/M3)[SBMP] $ 1.1 T80412 1 Subway Interior Stair: World Trade Ctr / 8AV (M3AB) [SBMP] $ 1.1 T80412 1 Subway Interior Stair: 170 St / BXC (P11) [SBMP] $ 1.1 T80412 Station Components: Parsons Blvd / QBL $ 11.1 T80412 1 Subway Street Stair: 169 St / QBL (S2) [SBMP] $ 1.1 T80412 1 Subway Street Stair: Queens Plz / QBL (S5/M5A/B/C) [SBMP] $ 1.1 T80412 1 Subway Interior Stair: 14 St / 8AV (P7) [SBMP] $ 1.1 T80412 1 Elev Interior Stair: Beach 60 St / FAR (P6AB/P8AB) [SBMP] $ 1.6 T80412 Fare Control Modifications at Rockaway Pkwy Intermodal $ 7.1 T80412 Station Components 43 Locs (Ph 2: Construction) - Package 1 $ 76.8 T80412 1 Subway Street Stair: 179 St / QBL (S15/M15) [SBMP] $ 1.1 T80412 1 Subway Interior Stair: Ralph Av / FUL (P9) [SBMP] $ 1.1 T80412 Platform Components: 5 Av / Flushing $ 4.5 T80412 1 Subway Interior Stair: Fordham Rd / BXC (P6A/B) [SBMP] $ 1.1 T80412 Water Remediation: Atlantic Ave - Barclays Center $ 7.8 T80412 Station Components: Avenue I / Culver $ 11.1 T80412 Other Art at Stations (2025) $ 3.0 T8041206 2 Sub Street Stairs: 169 St / QBL (S1/M1AB, S3/M3AB) [SBMP] $ 1.2 T8041206 1 Subway Street Stair: 169 St / QBL (S8/M8/M9) [SBMP] $ 1.2 T8041206 1 Subway Str Stair: 8 St / BWY (S5) [SBMP] $ 1.0 T8041206 1 Sub Street Stair: Vernon-Jackson / FLS (S2/M5/M2AB)[SBMP] $ 1.0 T8041206 3 Subway Interior Stairs: Elmhurst Av / QBL (P3,P4,P5)[SBMP] $ 1.8 T8041206 2 Subway Street Stairs: 179 St / QBL (S2/M2AB, S4/M4) [SBMP] $ 1.6 T8041206 2 Sub Street Stairs: 179 St / QBL (S8/M6AB, S10/M12AB)[SBMP] $ 1.6 T8041206 1 Subway Street Stair: Grand AV/QBL (S2) [SBMP] $ 1.0 T8041206 1 Subway Street Stair: 207 St / 8AV (S4/M5 A/B) [SBMP] $ 1.2 T8041206 2 Subway Street Stairs: Dyckman St / 8AV (S4, S5/P3AB)[SBMP] $ 1.2 T8041206 1 Elevated Street Stair: Beach 44 St / FAR (S4AB-M4AB)[SBMP] $ 1.1 T8041206 1 Elevated Street Stair: Beach 44 St / FAR (S3AB/M3AB)[SBMP] $ 1.1 T8041206 West Mezz Stair & Corridor Rehab, Eastern Pkwy / EPK [SBMP] $ 2.2 T8041206 1 Elevated Street Stair: Freeman St/WPR (S1/P1/P3) [SBMP] $ 1.1 T8041206 2 Street Stairs: Jay St - Metrotech / BWY (S5, S7/M6) [SBMP] $ 1.6 T8041206 3 Street Stairs: Vernon-Jackson/FLS(S1/M1,S3/M3,S5/P3)[SBMP] $ 2.6 T8041288 Station Renewal: 7th Avenue / 6th Ave $ 46.3 T8041289 Station Renewal: East 149th Street / Pelham $ 43.2 T8041290 Station Renewal: 179 St / QBL $ 81.8 T8041294 Station Renewal: Briarwood / QBL $ 24.1 T8041296 Platform Barriers $ 45.0 T8041297 Station Renewal: 3 Av - 138 St / PEL $ 81.6 T8041298 Station Renewal: Brook Av / PEL $ 52.1 Element Total $ 530.5
+```
+[p132_c0004] _IV-1_
+
+## Page 133
+
+### [p133_c0001] MTA New York City Transit 2025 Commitments
+[p133_c0002] $ in millions
+[p133_c0003]
+
+```text
+ACEP Project Description 2025 Commitments Goal T80413 2020-2024 Owner Controlled Insurance Program - ADA (2025) $ 14.7 T8041301 ADA: 42nd St - Bryant Park Complex $ 102.0 T8041335 ADA: Brook Av / PEL $ 64.9 T8041340 ADA: Brianwood / QBL $ 87.6 T8041374 Accessible Boarding Area Decals $ 0.9 T8041381 ADA: 167 Street / Concourse $ 100.2 T8041382 ADA: Kingsbridge Road / Jerome Avenue $ 108.3 T8041383 ADA: Gates Av / Jamaica $ 77.3 T8041384 ADA: Parsons Blvd / QBL $ 81.3 T8041385 ADA: 3 Av - 138 St / PEL $ 73.1 Element Total $ 710.4 T805 Track Force Account – 2025 $ 35.0 T805 NYCT 3rd Party Track/Switch (2025) $ 85.2 T8050201 Mainline Track Reserve: 3rd Party Related Work $ 19.6 T80502A4 Mainline Track Replacement 2024 / Lenox-WPR $ 3.4 T80502A6 Mainline Track Replacement 2024 / Jerome $ 5.6 T80502A9 Mainline Track Replacement: East 149 St / PEL & 179 St / QBL $ 10.6 T80502B1 Mainline Track Replacement: KingsbridgeRd / Jerome (ADA pk7) $ 14.0 T80502B2 Mainline Track Replace: 6 Stations (Ph 1: Design/Pre-Constr) $ 3.4 T80502B6 Mainline Track Replacement: 3 Av - 138 St / PEL $ 7.4 Element Total $ 184.0 T8050330 CBTC: Fulton - Switch Replacement $ 44.5 Element Total $ 44.5 T80605 Fan Plant Component Repairs - Lexington Av (Fiber Only) $ 10.0 T80605 Fan Plant Component Repairs - Fulton (Fiber Only) $ 8.9 T80605 Fan Plant Component Repairs - 8 Av N (Fiber Only) $ 13.5 T80605 Fan Plant Component Repairs - 6 Av Brooklyn (Fiber Only) $ 9.1 T80605 Fan Plant Component Repairs - Facility Work, Pkg 1 $ 59.6 T80605 Fan Plant Component Repairs - Facility Work, Pkg 2 $ 51.7 T80605 Fan Plant Component Repairs - 6 Av (Fiber Only) $ 20.0 T80605 Fan Plant Component Repairs - Crosstown (Fiber Only) $ 10.1 T80605 Fan Plant Component Repairs - 14 St Complex (Fiber Only) $ 10.5 T8060529 Rehabilitate Greenpoint Tube Discharge Line $ 1.9 Element Total $ 195.3 T80703 Structural Rehabilitation: Broadway Junction $ 6.0 T80703 Demolish Abandoned Structures - Ph2: 2 CBHs FLS $ 1.0 T80703 LSCRP: Repair of Priority Column Bases I/H (2023) $ 5.0 T80703 Rehabilitate Emergency Exits - 14 Locations $ 46.3 T8070375 Elevated Structure Repairs: 9th Av Port to Stillwell Av/ WST $ 67.8 T8070377 Demolish Old Rock Park Yard Substation/Rockaway $ 0.7 T8070378 Demo CBH n/o Elderts Ln $ 2.3 T8070379 Demo Abandoned Structures:Signal Tower n/o Parkchester / PEL $ 1.3 Element Total $ 130.4 T80803 CBTC Carborne Controller Trial $ 7.0 T80803 CBTC Canarsie Upgrade (Design Only) $ 6.0 T80803 Life Cycle Replacement of Code Systems - Phase II $ 87.4 T80803 UPS System Upgrade $ 56.3 T80803 ATS-A System Replacement (Design Only) $ 5.0 T80803 ATS Work Zone, Slow Speed, BIE, Shadow Mode Efficiency $ 8.0 T80803 Wayside Infrastructure for Wireless Train Connectivity $ 5.0 T80803 CBTC: Equip Work Trains Technology Baseline $ 50.0 T80803 CBTC 6 Av / 63 St: Equipment Supply $ 200.0 T8080325 CBTC: Fulton Line and 7 Interlockings $ 1,366.3 T8080333 Equip B Division with Second CBTC Radio: Siemens $ 114.3 T8080334 Equip B Division with Second CBTC Radio: Hitachi $ 70.2 T80803DD CBTC: Design for 2025-2029 Program $ 7.0 Element Total $ 1,982.6 T80806 Copper Cable Replacement (2020-2024) $ 28.9 T8080602 Upgrade / Replace PBX-2 at Jay St $ 23.0 T8080611 Passenger ID CCTV: Christopher St & Houston St / BW7 [SBMP] $ 1.8 T8080611 Passenger ID CCTV: Canal St & Franklin St / BW7 [SBMP] $ 1.6 T8080611 Passenger ID CCTV: Beach 90 St / RKY [SBMP] $ 0.4 T8080611 Passenger ID CCTV: Beach 98 St / RKY [SBMP] $ 0.4 T8080611 Passenger ID CCTV: 191 St / BW7 [SBMP] $ 0.3 T8080648 Track Intrusion: Forward Facing Camera Pilot $ 1.9
+```
+[p133_c0004] _IV-2_
+
+## Page 134
+
+### [p134_c0001] MTA New York City Transit 2025 Commitments
+[p134_c0002] $ in millions
+[p134_c0003]
+
+```text
+ACEP Project Description 2025 Commitments Goal T8080663 ATS-B Light Client and Trip Editor $ 25.0 T8080668 Track Intrusion: Platform Camera Video Analytics,3 Complexes $ 1.0 Element Total $ 84.3 T80904 Rehab Ducts: Hanover Sq/Pearl St Substation - CLK $ 18.7 T8090415 Rehabilitation of 5 CBHs - Various Locations $ 89.2 Element Total $ 107.8 T81004 Component Repairs: 215 St Signal Shop (Additional Scope) $ - T81004 Component Repairs: 215 St Signal Shop (Roof) $ 34.0 T8100431 DOS Facility Heating and Energy Efficiency Boiler Upgrades $ 31.7 Element Total $ 65.7 T81203 Zero Emission Fleet Transformation (ZEFT) Study, Ph1 Support $ 8.5 T81203 Drainage and Fire Protection: Charleston $ 16.9 T81203 HVAC/Misc: Flatbush Depot $ 37.1 T81203 HVAC & Air Curtains at Kingsbridge Depot $ 41.1 T81203 East New York Depot Fire Suppression System Rehabilitation $ 4.1 Element Total $ 107.7 T81204 CAD/AVL & Secure Bus Access (SBA) $ 12.0 Element Total $ 12.0 T8160202 Property Insurance Self-Insured Retention 2020-2024 $ 6.9 T8160202 2020-2024 Owner Controlled Insurance Program $ 16.3 T8160212 2020-2024 OCIP (2024) $ 7.8 T8160215 Capital Revolving Fund (CRF) - 2025 $ 5.0 Element Total $ 35.9 T81605 GO Support - Traffic Checkers 2025 $ 10.0 T8160505 Small Business Mentoring Program - 2020-2024 [SBDP] Mgmt $ 11.5 T8160525 Boring Services: In All Five Boroughs (2020-2024) - CONSTR $ 6.8 T816 NYCT 2025 Design/Scope Development (Q1) $ 62.5 T816 NYCT 2025 Design/Scope Development (Q2) $ 62.5 T816 NYCT 2025 Design/Scope Development (Q3) $ 62.5 T816 NYCT 2025 Design/Scope Development (Q4) $ 62.5 Element Total $ 278.3 T8160607 Groundwater and Soil Remediation (2024) $ 6.2 Element Total $ 6.2 T81607 Rehabilitate Track Employee Facility at 125 St/LEX $ 11.4 T81607 2020-2024 Employee Facility Repair/Consolidation (2023) $ 5.7 T81607 Employee Facilities Project Management: Batch 1 (7 Locs) $ 21.0 T81607 Employee Facilities Project Management: Batch 2 (4 Locs) $ 11.7 T8160718 2020-2024 Facility Elevators $ 35.3 T8160723 Employee Facility Repairs: 5 Locations (ICC) $ 16.4 Element Total $ 101.4 T90502 Mainline Track Replacement 2025 / Rockaway $ 46.9 T90502 Mainline Track Replacement 2025 / 8th Avenue $ 31.7 T90502 Mainline Track Replacement 2025 / Broadway-7th Ave $ 20.7 T90502 Mainline Track Replacement 2025 / Flushing $ 19.8 T90502 Mainline Track - 2025 DES/EFA $ 16.4 T90502 Mainline Track Replacement 2025 / 6th Avenue $ 19.3 T90502 Mainline Track Replacement 2025 / Astoria $ 15.7 T90502 Mainline Track Replacement 2025 / Reserve $ 8.3 T90502 Mainline Track Replacement 2025 / Eastern Parkway $ 26.2 T90502 Mainline Track Replacement 2025 / Canarsie $ 11.0 T90502 Mainline Track Replacement 2025 / West End $ 3.5 T90502 Mainline Track Replacement 2025 / Lenox-White Plains Rd $ 16.6 T90502 Mainline Track Replacement 2025 / Broadway $ 16.8 T90502 Mainline Track Replacement 2025 / Brighton $ 7.5 Element Total $ 260.4 T90503 Mainline Track Switches 2025 / Pelham $ 13.4 T90503 Mainline Switches - 2025 DES/EFA $ 20.0 T90503 Mainline Track Switches 2025 / 8th Avenue $ 9.2 T90503 Mainline Track Switches 2025 / Astoria $ 4.7 T90503 Mainline Track Switches 2025 / West End $ 7.6 T90503 Mainline Track Switches 2025 / 6th Avenue $ 6.0 T90503 Mainline Track Switches 2025 / Lenox-WPR $ 9.4 T90503 Mainline Track Switches 2025 / Brighton $ 4.1 T90503 Mainline Track Switches 2025 / Jamaica $ 5.2 T90503 Mainline Track Switches 2025 / Eastern Parkway $ 13.8
+```
+[p134_c0004] _IV-3_
+
+## Page 135
+
+### [p135_c0001] MTA New York City Transit 2025 Commitments
+[p135_c0002] $ in millions
+[p135_c0003]
+
+```text
+ACEP Project Description 2025 Commitments Goal T90503 Mainline Track Switches 2025 / Lexington $ 14.9 T90503 Mainline Track Switches 2025 / Canarsie $ 10.8 T90503 Mainline Track Switches 2025 / Flushing $ 14.3 Element Total $ 133.5 T90703 Rehabilitation of Emergency Exits: ICC 2025 Locations $ 8.0 Element Total $ 8.0 T91004 Yard Track - 2025 $ 7.6 T91004 Yard Switches - 2025 $ 3.3 Element Total $ 10.9 Total 2025 Commitments for New York City Transit $ 6,941.9
+```
+[p135_c0004] _IV-4_
+
+## Page 136
+
+### [p136_c0001] MTA Long Island Rail Road 2025 Commitments $ in millions
+[p136_c0002]
+
+```text
+ACEP LIRR ID Project Description 2025 Commitments Goal EL0402ZA PNZA East River Tunnel Signal Sys & Infra Restoration $ 0.5 Element Total $ 0.5 EL0603ZP PNZP West Side Yard & East River Tunnel Mitigation (Flood Wall) $ 50.5 EL0603ZS PNZS Long Island City Yard Resiliency - CR $ 0.8 Element Total $ 51.3 L60304TW PNTW Great Neck Pocket Track $ 0.3 Element Total $ 0.3 L606016J PN6J LIC Phase 3B Construction $ 8.1 Element Total $ 8.1 L70101MN PNMN M-9A Procurement TBD Element Total $ TBD L70204EJ PNEJ Huntington Station E. Pedestrian Overpass [SBDP] $ 0.0 L70204UO PNUO East Yaphank Station $ 13.8 L70204UW PNUW GCT/ESA UNIFIED TRASH FACILITY $ 0.7 Element Total $ 14.5 L70502LH PNLH Babylon Interlocking Renewal $ 11.5 Element Total $ 11.5 L70701XX PNXX Hall & Babylon Signal Power Motor Generator Repl. $ 1.5 Element Total $ 1.5 L8010102 PNMJ Purchase Dual-Mode Locomotives $ 155.1 Element Total $ 155.1 L8020401 PNQG Atlantic Terminal Leak Remediation & Renewal $ 12.6 L8020402 PNQD Floral Park Platform Replacement (Design Only) $ 12.5 L8020402 PN A3 Station Restroom Renovations $ 4.4 L8020403 PNQJ Station Building Components: Various Locations $ 8.9 L8020406 PNQX Fare Collection Program $ 4.6 L8020408 PN9S Valley Stream Station Roof Canopy Rehab $ 1.8 L8020408 PNQ5 Mastic Shirley Station Renewal and Bicycle Accessibility $ 1.6 L8020408 PNQH Station Roof Canopy Rehab(Freeport & Massapequa Park) $ 0.1 L8020408 PN A6 HVAC/Sanitary Sewer Connections (KO and Hicksville) $ 3.6 L8020409 PNQB ADA Hollis Station $ 0.6 L8020412 PNQY Forest Hills Platform Extensions & ADA Improvements $ 2.9 L8020416 PNQS Sea Cliff Retaining Walls and ADA Ramps $ 0.7 L8020419 PNQM Northport Platform $ 0.8 L8020426 PNQA Babylon Station Platform Replacement $ 1.0 L8020498 PN98 C&D Project Support $ 0.7 L80204DD PND D ADA Accessibility DES Bellerose $ 3.3 L80204RR PNQY Forest Hills Platform Extensions & ADA Improvements $ 0.2 Element Total $ 60.0 L8020501 PN4V Island Park Paving $ 2.8 L8020502 PN4W Island Park Paving $ 3.1 Element Total $ 5.9 L8020601 PN45 Penn Station Building Systems $ 4.2 Element Total $ 4.2 L8030101 PNWK CONSTRUCTION EQUIPMENT $ 2.3 L8030101 PNWK CONSTRUCTION EQUIPMENT $ 2.2 L8030105 PNLE PTC Add-ons - Queens Interlocking $ 0.9 L8030105 PNW8 Queens Interlocking $ 3.8 L8030109 PNWT 2024 Annual Track Program $ 2.0 Element Total $ 11.1 L8030401 PNW3 West Side Yard Flood Wall (Amtrak Territory Investments) $ 106.0 L8030403 PNW6 Hall Interlocking Expansion $ 11.4 L8030498 PN98 C&D Project Support $ 0.9 Element Total $ 118.3 L8040101 PNKD Bridge Drainage & Waterproofing $ 6.7 L8040102 PNKV 3 Montauk Branch East End Bridges - Construction $ 44.6 L8040102 PNKV East End Bridge Renewal - F/A $ 10.0 L8040104 PNKT Merritts Rd & Hempstead Tpke Bridge Painting $ 0.3 L8040104 PNKW Valley Stream Bridge Painting $ 0.4 L8040104 PND8 Main Street & North Sea Bridge Painting $ 4.3 L8040104 PNKQ North Country & Medford Bridge Painting - SBMP $ 7.5 L8040104 PNKY Main Street & North Sea Bridge Painting $ 3.7 L8040115 PNKX South Shore Bridge Painting - 7 Bridges $ 14.4
+```
+[p136_c0003] _IV-5_
+
+## Page 137
+
+### [p137_c0001] MTA Long Island Rail Road 2025 Commitments $ in millions
+[p137_c0002]
+
+```text
+ACEP LIRR ID Project Description 2025 Commitments Goal L8040119 PND7 Valley Stream Viaduct Waterproofing & Joint Repairs $ 2.2 L8040198 PN98 C&D Project Support $ 0.2 Element Total $ 4.9 L8040204 PNK2 SBMP Hatchways - 86th & 113th Street $ 4.9 Element Total $ 4.9 L8050101 PN82 Comm Pole Line $ 2.0 L8050102 PN83 Comm Component Replacement $ 1.2 L8050103 PN84 Fiber Optic Network $ 1.5 L8050106 PN87 Radio Head-End Replacement $ 4.9 L8050108 PN89 Help Points $ 2.0 L8050110 PN8S Grade Crossing Cameras $ 1.8 L8050111 PN8X Customer Information Technology Upgrades $ 2.0 Element Total $ 15.5 L8050201 PNL8 Babylon Interlocking Renewal $ 20.0 L8050201 PNL8 Babylon Interlocking Renewal $ 11.2 L8050203 PNLT Babylon to Patchogue $ 8.5 L8050204 PNLX Centralized Train Control $ 4.3 L8050205 PNLV Signal Normal Replacement Program $ 9.0 L8050207 PN SY Positive Train Control (ESA) $ 2.5 L8050208 PNST Positive Train Control (FRA Mandates) $ 29.7 L8050298 PN98 C&D Project Support $ 0.4 Element Total $ 85.5 L8060101 PNRE RSSE - Electric Rail Car Movers $ 1.2 L8060101 PNRF RSSE - Train Wash Replacement - KO $ 15.2 L8060101 PNRC Rolling Stock Support Shop Equipment $ 3.8 L8060103 PNRG Port Washington Track Extensions $ 3.0 L8060104 PNRN Mentor Allowance - Shops & Yards $ 1.6 L8060105 PNRK Mid Suffolk Yard $ 6.0 L8060198 PN98 C&D Project Support $ 0.2 Element Total $ 31.0 L8060401 PNRX Bethpage Facility Paving - SBMP $ 4.5 L8060401 PNRX Morris Park & KO Paving - SBMP $ 5.1 L8060403 PNRW Fire Protection Improvements $ 3.4 L8060405 PNPW Atlantic Terminal Ticket Office HVAC $ 4.4 L8060405 PNRT Atlantic Terminal Track 6 Facility HVAC $ 3.8 L8060405 PNRT Atlantic Terminal Track 6 Facility HVAC $ 0.5 L8060405 PNRU Atlantic Terminal Ticket Office HVAC $ 0.2 L8060406 PNR9 Rehabilitation of Employee Facilities - Bethpage $ 0.7 Element Total $ 22.6 L8070101 PNJA Substation Replacements $ 13.5 L8070102 PNJB Atlantic Tunnel Lighting $ 4.8 L8070102 PNJD Yard Lighting & Amenities $ 6.0 L8070103 PNJC Station & Building Electrical Systems and Platform $ 15.1 L8070103 PNJN Signal Power and Power Pole Line $ 4.1 L8070103 PNJP 4160 Volt Feeders $ 1.0 L8070104 PNJH 3rd Rail Protection Board & Aluminum Rail $ 9.0 L8070106 PNJE Substation Component Renewal $ 9.1 L8070108 PNJT Penn Station Substation (E01) Hardening $ 14.3 L8070110 PNJS Power Scada System $ 6.6 L8070111 PNJA Substation Replacement - Prelim Design $ 0.5 L8070198 PN98 C&D Project Support $ 0.2 Element Total $ 84.2 L8090401 PNGP SECURITY EQUIPMENT (DASNY) $ 0.1 L8090402 PNGQ Access Control at Stations, Platforms, Yards & Fac $ 2.6 L8090408 PNN9 Environmental Remediation $ 0.3 L8090409 PNNS EAM Development $ 1.5 L8090410 PNNT Program Administration $ 20.8 L8090410 PNNT Program Administration $ 1.9 L8090411 PNP2 LIRR Fire Protection Systems Assessment $ 0.2 L8090411 PNP4 SHOP ANALYSIS & PLANNING STUDY $ 0.9 L8090414 PNNX SBDP Administration $ 0.4
+```
+[p137_c0003] _IV-6_
+
+## Page 138
+
+### [p138_c0001] MTA Long Island Rail Road 2025 Commitments $ in millions
+[p138_c0002]
+
+```text
+ACEP LIRR ID Project Description 2025 Commitments Goal L8090415 PNNY OCIP $ 1.8 Element Total $ 30.5 L9030101 2025 Annual Track Program $ 110.0 L9030101 Concrete Ties $ 28.0 Element Total $ 138.0 L9090405 Program Admin. - Project Controls, Estimators & Insurance $ 12.2 Element Total $ 12.2 Total 2025 Commitments for the Long Island Rail Road $ 961.0
+```
+[p138_c0003] _IV-7_
+
+## Page 139
+
+### [p139_c0001] MTA Metro-North Railroad 2025 Commitments $ in millions
+[p139_c0002]
+
+```text
+ACEP Project Description 2025 Commitments Goal M8010101 M-9A Procurement TBD Element Total TBD M8020101 Priority Repairs 7 Design $ 55.0 M8020104 Track 94 Storage Room Rehabilitation $ 2.0 M8020105 GCT Fire Stand Pipe Phase II $ 65.0 Element Total $ 122.0 M8020205 Ludlow Station Accessibility Improvements $ 3.1 M8020206 New Fare Payment $ 30.0 M8020207 Install Bike Racks/Hastings Sidewalk Repair $ 6.0 M80202XX Rehab of 5 Harlem Line Stations $ 53.0 M8020302 Fleetwood Parking Lot $ 11.0 Element Total $ 103.1 M8030107 MoW Equipment $ 30.0 M8030113 Hudson Line Slope Stabilization $ 13.0 Element Total $ 43.0 M8030301 WoH Rock Slope Remediation - Pt Jervis Line $ 3.0 M8030304 Moodna/Woodbury Viaduct Repairs $ 36.0 Element Total $ 39.0 M8040113 Positive Train Stop Release $ 12.0 Element Total $ 12.0 M8050106 Hudson Line Track 1 Electrification $ 50.0 M8050111 Claremont Substation Design $ 3.0 Element Total $ 53.0 M8080106 Shops & Yards Master Plan Update $ 3.0 M8080108 GCT Cameras Package 1 $ 20.0 Element Total $ 23.0 M90301XX 2025 GCT Turnouts $ 101.0 Element Total $ 101.0 M90302XX Undergrade Bridge Repairs F/A East of Hudson $ 6.9 Element Total $ 6.9 M90401XX CTC Ethernet Migration Project $ 24.0 Element Total $ 24.0 M90801XX Program Administration $ 52.0 Element Total $ 52.0 Total 2025 Commitments for Metro-North Railroad $ 579.0
+```
+[p139_c0003] _IV-8_
+
+## Page 140
+
+### [p140_c0001] MTA Bus 2025 Commitments $ in millions
+[p140_c0002]
+
+```text
+ACEP Project Description 2025 Commitments Goal U6030222 Construction Management Services - 2014 $ 1.9 Element Total $ 1.9 U7030212 Environmental Remediation 2015-2019 $ 2.6 U7030217 Construction Management Services 2015-19 $ 3.4 Element Total $ 6.0 U8030214 MTA Bus Project Administration 2020-24 $ 4.1 Element Total $ 4.1 Total 2025 Commitments for MTA Bus $ 12.0
+```
+[p140_c0003] _IV-9_
+
+## Page 141
+
+### [p141_c0001] MTA Network Expansion 2025 Commitments $ in millions
+[p141_c0002]
+
+```text
+ACEP Project Description 2025 Commitments Goal G6090121 ESA - Mid-Day Storage Yard Facility CILs $ 1.4 G6090137 ESA - Signal Equipment $ 0.0 Element Total $ 1.4 G6150101 ESA - Rolling Stock Reserve (M9A) TBD Element Total TBD G7090134 ESA - Protect Locomotives $ 2.3 G7090149 ESA - Material Warranties $ 0.4 Element Total $ 2.6 G7100101 SAS2 - Design $ 65.3 G7100104/G8100102 SAS2 - PMC $ 191.0 G7100105 SAS2 - Project Support $ 24.0 G7100107 SAS2 - C1 - Utilities Contract $ 20.8 G7100114 SAS2 - SAS 2 Heavy Civil at 125th, TBM Tunnel $ 1,034.0 G7100198 SAS2 - SASP2 Real Estate $ 8.7 Element Total $ 1,343.8 G7130103 3rd Track - D-B Construction Contract Base $ 16.7 G7130118 3rd Track - Owner Controlled Insurance Program (OCIP) $ 7.4 G7130119 3rd Track - LIRR Force Account $ 14.9 Element Total $ 39.0 G7160101 MISC. - PMC support - Existing CM 1601 TO3 (HDR) - $ 0.3 Element Total $ 0.3 G8080102 IBX - Interborough Express $ 58.3 Element Total $ 58.3 G8090101 ESA - CPR 320 Negotiation Time IMPACT (Include $950K for incentives) $ 15.5 G8090102 ESA - 3rd Party EAC Needs - Queens/Harold $ 10.0 G8090103 ESA - 3rd Party EAC Needs - Systems $ 5.4 G809010xx ESA - Request for Equitable Adjustments (REAs) for TPC Contracts $ 55.0 G8090105 ESA - Force Account EAC Needs - Direct $ 0.4 G8090106 ESA - Force Account EAC Needs - Indirect $ 11.5 G8090107 ESA - Soft Costs EAC Needs - Design/CPS $ 7.8 G8090108 ESA - Soft Costs EAC Needs - PM $ 12.3 G8090109 ESA - Soft Costs EAC Needs - CM $ 6.0 G8090111 ESA - OCIP - EAC Needs $ 7.9 G8090112 ESA - Rolling Stock Reserve (M9A) TBD G8090113 ESA - Real Estate $ 46.0 G8090116 ESA - 48th Street Entrance at 415 Madison $ 48.7 G8090117 ESA - Materials Warranties $ 4.6 G8090118 ESA - Utility Allowance Package $ 3.4 G8090119 ESA - LIRR Operating Support Services $ 3.0 G8090120 ESA - FA System Testing & Commissioning $ 10.4 G8090121 ESA - LIRR Force Account - Harold Stage 3 $ 0.1 TBD ESA - Force Account Needs $ 4.0 Element Total $ 251.9 G8100104 SAS2 - SAS 2 Heavy Civil at 125th, TBM Tunnel $ 740.5 G8100108 SAS2 - OCIP $ 87.9 G8100198 SAS2 - SASP2 Real Estate $ 40.1 Element Total $ 868.5 G8110102 PSA - Program Management $ 4.0 G8110111 PSA - Force Account (PSA) $ 5.0 G8110112 PSA - Real Estate (PSA) $ 33.1 G8110114 PSA - Design-Build (PSA) $ 75.1 G8110120 PSA - Fleet Purchase $ 327.0 Element Total $ 444.2 G8130103 3rd Track - D-B Contract (LIRR 3rd Track) $ 20.7 G8130118 3rd Track - Owner Controlled Insurance Program (OCIP) $ 0.2 Element Total $ 20.9 G8140101 RI - Eastbound Reroute $ 28.6 New ACEP ESA - For FEOT Testing at each crossover. $ 0.3 Crossover Stage 4D FINAL-EBRR G8140103 RI - Loop & T Interlocking $ 4.1 G8140104 RI - Amtrak Direct Force Account $ 5.4 G8140105 RI - LIRR Direct Force Account $ 7.1 G8140106 RI - PM/CM $ 26.7 G8140107 RI - Design/CPS $ 1.4 G8140108 RI - Rolling Stock Reserve (M9A) TBD G8140116 RI - Harold Catenary Work $ 9.9
+```
+[p141_c0003] _IV-10_
+
+## Page 142
+
+### [p142_c0001] MTA Network Expansion 2025 Commitments $ in millions
+[p142_c0002]
+
+```text
+ACEP Project Description 2025 Commitments Goal G8140119 RI - LIRR Access and Protection $ 1.5 G8140120 RI - Other Regional Investments Support $ 0.2 Element Total $ 85.1 G8150101 Penn Reconstruction - GEC Contract $ 2.0 G8150102 Penn Reconstruction - Misc Engineering Project Support $ 4.5 Element Total $ 6.5 G8160101 MISC. - Misc Engineering Prog Support $ 2.3 Element Total $ 2.3 TBD SAS2 - SASP2 Real Estate $ 95.9 Element Total $ 95.9 L70206VN 33rd Street Corridor - PSNY - 33rd Street Corridor $ 3.5 Element Total $ 3.5 T8040707 33rd Street Corridor - Replace 3 Hydraulic Elevators $ 1.1 Element Total $ 1.1 Total 2025 Commitments for Expansion $ 3,225.2
+```
+[p142_c0003] _IV-11_
+
+## Page 143
+
+### [p143_c0001] MTA Interagency 2025 Commitments $ in millions
+[p143_c0002]
+
+```text
+ACEP Project Description 2025 Commitments Goal N80001 MTA Mentoring Program Admin $ 3.0 Element Total $ 3.0 N81001 MTA Police Department $ 10.0 Element Total $ 10.0 N81101 MTA Planning $ 1.4 Element Total $ 1.4 Total 2025 Commitments for MTA Interagency $ 14.4
+```
+[p143_c0003] _IV-12_
+
+## Page 144
+
+### [p144_c0001] MTA Bridges and Tunnels 2025 Commitments $ in millions
+[p144_c0002]
+
+```text
+ACEP Project Description 2025 Commitments Goal ED060201 Sandy Program Administration $ 0.1 Element Total $ 0.1 C801CP02 CENTRAL BUSINESS DISTRICT TOLLING PROGRAM (CBDTP) $ 4.2 Element Total $ 4.2 D701VN8Q VNB Cable Dehumidification-Phase 1 $ 38.5 Element Total $ 38.5 D704AW80 Adv. Traveler Info. Systems (ATIS) & VMS Upgrades $ 7.3 Element Total $ 7.3 D801AWX3 Structural Health Monitoring $ 0.5 Element Total $ 0.5 D801HC48 Rehabilitation of Tunnel Entrance/Exit - Manhattan $ 22.2 Element Total $ 22.2 D801VN8Q VNB CABLE DEHUMIDIFICATION $ 262.0 Element Total $ 262.0 D802RK90 Widening of S/B FDR Drive - from 125th St Entrance Ramp to 116th St. Exit Ramp $ 29.4 Element Total $ 29.4 D802VN81 Lower Level Main Span Deck Rehabilitation $ 0.5 D802VN84 Ph.2 -Reconstruction of Upper Level Approach $ 486.9 Element Total $ 487.4 D803AW57 ATMS Enhancements & Upgrades/OCCC System of Systems $ 2.0 D803AW65 TOLL COLLECTION SYSTEM REHABILITATION/UPGRADES $ 7.0 D803AW80 Adv. Traveler Info. Systems (ATIS) & VMS Upgrades $ 18.8 Element Total $ 27.8 D804BW98 Cable Dehumidification and Miscellaneous Work $ 2.0 Element Total $ 2.0 D804TN58 Electrical Resiliency Improvements $ 0.8 D804TN98 Main Cable Dehumid & Fencing $ 2.5 Element Total $ 3.3 D805AW12 Hazardous Materials Abatement $ 0.4 Element Total $ 0.4 D806AW21 PROGRAM ADMINISTRATION $ 2.5 D806AW28 Scope Development $ 0.6 D806AW29 Preliminary Design $ 3.2 Element Total $ 6.3 D807VN84 VNB -Paint Brooklyn Ramps $ 14.7 Element Total $ 14.7 Total 2025 Commitments for B&T $ 906.0
+```
+[p144_c0003] _IV-13_
+
+## Page 145
+
+### [p145_c0001] MTA New York City Transit 2025-28 Completions ($ in millions)
+[p145_c0002]
+
+```text
+ACEP Project Description Value Date Completed T8041206 1 Subway Street Stair: Grand AV/QBL (S5) [SBMP] $ 1.0 1/9/2025 T8050336 Mainline Track Switches 2023 / 8th Ave-Fulton $ 40.8 1/17/2025 T70412F4 Stairs: 14th St-6th Ave (S2/M4,S5/M11,S7/M13) $ 3.6 1/31/2025 T7041251 Platform Components: 6 Avenue / Canarsie $ 36.0 1/31/2025 T7041346 ADA: 6 Ave / Canarsie $ 98.0 1/31/2025 T7041347 ADA: 14 St / 6th Ave $ 27.9 1/31/2025 T7041348 ADA: 14 St / Broadway/7th Ave $ 77.6 1/31/2025 T7041330 New Stair: Street to Mezzanine - 14 St / 6th Ave(S13) $ 1.4 1/31/2025 T70412L2 Platform Components: 14th Street / 6AV $ 11.8 1/31/2025 T8041221 Station Ventilator Reconstruction: 8 Avenue/Canarsie $ 2.1 1/31/2025 T8070312 LSCRP: Outstanding Locations - West (14 St / 8 Av to 1 Av) $ 35.0 1/31/2025 T8041283 Track Wall Tiles: 14 St / Broadway-7 Ave $ 2.4 1/31/2025 T7030213 Automatic Passenger Counting (APC) - Phase 1 Rollout $ 6.0 2/4/2025 T8041206 1 Subway Street Stair: 63 Dr/ QBL (S3/M3A/B) [SBMP] $ 1.1 2/21/2025 T8041239 Grand Central: Center Core East / Flushing $ 109.5 2/24/2025 T8041240 Grand Central: Widening Stairs U2/U6 / Lexington $ 3.4 2/24/2025 T6080623 Passenger Station LAN: Solarwinds Network Management System $ 5.0 2/28/2025 T8040404 Wide Turnstiles: Procurement / Installation (2021) $ 3.8 2/28/2025 T8041206 3 Sub Str Stairs: 46 St / QBL (S2,S3,S4) [SBMP T2] $ 2.4 2/28/2025 T8050276 Mainline Track Replacement 2023 / Jamaica $ 12.2 2/28/2025 T8050339 Mainline Track Switches 2023 / Rockaway $ 18.0 2/28/2025 T8050346 Mainline Track Switches 2024 / Lenox-WPR $ 10.4 2/28/2025 T8041206 1 Subway Street Stair: Union Tpk/QBL (S1) [SBMP] $ 1.0 3/28/2025 T7041315 ADA: 149 Street - Grand Concourse Complex $ 112.1 3/31/2025 T7041338 ADA: Tremont Avenue / Concourse $ 50.9 3/31/2025 T7060506 Rehabilitate Forsyth St. Fan Plant $ 85.6 3/31/2025 T8160711 EFR Consolidation: 2 Avenue / 6th Avenue $ 20.7 3/31/2025 T8060514 Fan Plant SCADA Head-End Upgrade $ 18.8 3/31/2025 T8160705 Livingston Plz Elec and Mech Sys Improvements, Ph B $ 73.2 3/31/2025 T8160517 2020-2024 Concrete Cylinder Testing $ 1.7 3/31/2025 T8160518 2020-2024 Concrete Batch Plant Inspection $ 2.1 3/31/2025 T8040403 44 End Cabinets: Procurement $ 1.1 3/31/2025 T8040711 Replace 4 Escalators at 161 St / BXC and DeKalb Av / 4AV $ 49.4 3/31/2025 T8050258 Mainline Track Replacement 2022 / Liberty $ 22.0 3/31/2025 T8041218 Platform Components: 5 Locations / Broadway-7th Avenue $ 72.3 3/31/2025 T8050239 Mainline Track Replacement: 86 St / Broadway-7 Ave $ - 3/31/2025 T8060522 Rehabilitate Pump Room #1029 - Adams St / BWY $ 15.6 3/31/2025 T8060521 Rehabilitate Pump Room #1028 - Willoughby St/BWY $ 2.0 3/31/2025 T8050266 Mainline Track Replacement 2022 / White Plains Rd $ 20.6 3/31/2025 T8050338 Mainline Track Switches 2023 / Lenox-WPR $ 5.9 3/31/2025 T8041206 Station Vents: 23 St/8AV (Batteries A,B,C,D) [SBMP] $ 1.4 3/31/2025 T8041206 Station Vents: 23 St/8AV (Batteries M,N,O,P) [SBMP] $ 1.3 3/31/2025 T8160520 Bike Study at Various Locations $ - 3/31/2025 T7030216 45 Standard Battery Electric Buses (BEB) $ 61.9 3/31/2025 T8030213 15 Standard Battery Electric Buses (BEB) $ 22.1 3/31/2025 T7040707 Replace 6 Escalators / Various (Bronx & Manhattan) $ 55.7 4/30/2025 T7040713 Replace 5 Escalators / Various (Brooklyn & Manhattan) $ 31.8 4/30/2025 T7040707 Replace 1 Escalator at Intervale Av / WPR $ 7.4 4/30/2025 T6160705 RTO Fac: Chambers St / Nassau Loop $ 20.3 4/30/2025 T6160402 Replace Server Hardware: RCC and BCC $ 3.2 4/30/2025 T7070308 Structural Rehab: Emergency Exit 302N - 168 St/BW7 $ 17.5 4/30/2025 T8100417 Component Repairs: 207 St OH Facility $ 36.6 4/30/2025 T8050237 Mainline Track Replacement 2021 / Lenox-WPR $ 11.8 4/30/2025 T8160712 EFR Bathroom and Breakroom Ph3 $ 4.3 4/30/2025 T8050289 Mainline Track Replacement 2023 / White Plains Road $ 12.9 4/30/2025 T8060524 Deep Wells Back-flushing / Fulton / Crosstown Lines $ 11.8 5/4/2025 T8050353 Mainline Track Switches 2024 / Canarsie $ 7.6 5/23/2025 T8160715 Perimeter Hardening: PCC [SBMP] $ 2.6 5/30/2025 T8080616 Liftnet Transition to Ethernet, Phase 2 - Package 2 $ 5.8 5/30/2025 T8050293 Mainline Track Replacement 2024 / Pelham $ 15.3 5/30/2025 ET090307 Sandy Mitigation: Hardening of Substations - 24 Locs $ 93.6 5/31/2025 ET090313 Sandy Mitigation: West Bdwy/Murray Substn Flood Protection $ 2.4 5/31/2025 ET090314 1Sandy Mitigation: Tudor Substation Flood Protection $ 6.1 5/31/2025 T6090219 Sandy Mitigation: Hardening of Substations - 24 Locs (Core) $ 56.5 5/31/2025 T8070377 Demolish Old Rock Park Yard Substation/Rockaway $ 0.6 5/31/2025
+```
+[p145_c0003] _IV-14_
+
+## Page 146
+
+### [p146_c0001] MTA New York City Transit 2025-28 Completions ($ in millions)
+[p146_c0002]
+
+```text
+ACEP Project Description Value Date Completed T8030215 5 Standard Battery Electric Buses for Testing+Eval (Group 1) $ 10.2 5/31/2025 T8080611 PID CCTV: Bushwick Ave & Atlantic Ave Stations / CNR [SBDP] $ 1.5 5/31/2025 T8041206 1 Subway Street Stair: 205 St/BXC (S3) [SBMP] $ 0.9 5/31/2025 T6030232 Digital Information Signs: Depot Wi-Fi $ 2.5 6/1/2025 T7041214 85 Street-Forest Parkway / Jamaica $ 53.8 6/13/2025 T7041215 75 Street - Elderts Lane / Jamaica $ 53.0 6/13/2025 T7041216 Cypress Hills / Jamaica $ 59.2 6/13/2025 T8080649 PSLAN: Expand Partial to Full at 75 St/JAM $ 0.7 6/13/2025 T8041249 Platform Edges Wrap-Up: 104 St & 121 St/JAM $ 0.2 6/13/2025 T8070342 Demo of Abandoned Structures: 97 St CBH (Jamaica) $ 0.3 6/13/2025 T8070378 Demo CBH n/o Elderts Ln $ 2.3 6/13/2025 T8070379 Demo Abandoned Structures:Signal Tower n/o Parkchester / PEL $ 1.3 6/13/2025 T7100441 Rail Car Acceptance and Testing Facility, Brooklyn $ 110.7 6/20/2025 T8100420 Yard Track - 2023 $ 4.4 6/20/2025 T8041206 1 Sub Str Stair: 46 St/QBL (S1) [SBMP] $ 1.0 6/28/2025 T8080612 Passenger ID CCTV: Various Locations [Design-Build] $ 65.7 6/30/2025 T6100408 Heavy Shop Equipment Replacement (2010-14) $ 6.0 6/30/2025 T6100425 207 St Overhaul: Equipment for Car HVAC Repair & Maintenance $ 2.2 6/30/2025 T7130208 Purchase of 12 3-Ton Crane Cars $ 31.4 6/30/2025 T7100409 Heavy Shop Equipment Purchase & Replacement 2015-19 $ 0.3 6/30/2025 T7090202 Avenue Z Substation Renewal / CUL $ 31.2 6/30/2025 T80502A8 Track Force Account - 2024 $ 35.0 6/30/2025 T8050272 Mainline Track - 2023 DES/EFA $ 13.1 6/30/2025 T8050334 Mainline Switches - 2023 DES/EFA $ 12.7 6/30/2025 T8160716 Crew Quarters (EMD Facility Expansion) - 7 Av Station / 6AV $ 12.9 6/30/2025 T8070355 Rehabilitation of Emergency Exits - 2023 $ 9.3 6/30/2025 T7030224 Batt Elec Bus Charging Infra Phase1 (4 Depots) $ 63.3 6/30/2025 T8160522 GO Support - Traffic Checkers 2024 $ 10.0 6/30/2025 T8050232 Mainline Track Replacement 2021 / Jamaica $ 22.3 6/30/2025 T8041254 Station Ventilators: Phase 19 - 4 Locations, Brooklyn $ 10.5 6/30/2025 T8070356 LSCRP: Defects Within Stations (In-House) [20-24 Add'l Work] $ 17.8 6/30/2025 T8050250 Mainline Track Replacement 2022 / Brighton $ 50.8 6/30/2025 T7010101 Purchase 440 B-Division Cars - R211 $ 1,393.6 6/30/2025 T7010102 Purchase 20 Open Gangway Prototype Cars (R211) $ 81.4 6/30/2025 T7080332 CBTC: Culver (Church Ave to W8th St) $ 125.3 6/30/2025 T7080333 Ave X Interlocking: CBTC Culver $ 177.9 6/30/2025 T7080307 Ditmas Interlocking: CBTC Culver $ 110.1 6/30/2025 T7080343 Mainline Track Switches 2018 / CBTC Culver $ 39.9 6/30/2025 T6100453 2-Ton Overhead Crane 207th Street Shop $ 1.2 6/30/2025 T6100439 2-Ton Overhead Crane - Concourse $ 0.9 6/30/2025 T6080319 CBTC Queens Boulevard West - 50 St to Union Tpke: Phase 1 $ 227.4 6/30/2025 T7080342 CBTC: 8 Avenue, Equip 112 R160 cars (26 units) $ 11.9 6/30/2025 T8050294 Mainline Track Replacement 2024 / White Plains Road $ 23.6 6/30/2025 T80502A5 Mainline Track Replacement 2024 / Dyre $ 8.4 6/30/2025 S8070112 Track and Switch Rehabilitation: SIR Mainline (Switches) $ 84.6 7/2/2025 T8100424 Yard Fencing: Fresh Pond Yard $ 12.1 7/2/2025 T8100418 Yard Lighting: Fresh Pond Yard $ 10.2 7/2/2025 T8041206 Station Vents: 50 St/BW7 (Batteries A,E,F) [SBMP] $ 0.9 7/11/2025 T8041206 Station Vents: 50 St/BW7 (Batteries B,C,D) [SBMP] $ 0.9 7/11/2025 T8041206 Station Vents: 50 St/BW7 (Batteries G,L,M) [SBMP] $ 0.9 7/11/2025 T8080657 Upgrade Asynchronous Fiber Optic Network to SONET - Ring E $ 32.8 7/14/2025 T8041224 Water Remediation - Renewal: Borough Hall / Lexington $ 122.1 7/22/2025 T8041311 ADA: Borough Hall / Lexington $ 39.1 7/22/2025 T7041402 Grand Central: Main Mezzanine Finishes / Lexington $ 18.8 7/26/2025 T8040713 Replace 8 Escalators: Grand Central - 42 St / FLS $ 83.2 7/26/2025 T8041226 Station Ventilators: Grand Central / FLS $ 16.4 7/26/2025 T7130213 6 Non-Revenue Vehicles 2022 (2015-19) $ 1.0 7/31/2025 S7070106 New Power Substation: New Dorp $ 23.9 7/31/2025 S7070107 New Power Station: Clifton $ 32.9 7/31/2025 T8050284 Mainline Track Replacement 2023 / 4 Avenue $ 11.3 7/31/2025 T8050208 Mainline Track Replacement 2020 / Flushing $ 59.9 8/15/2025 T8040716 Replace 6 Escalators at Sutphin Blvd/ ARC and West 4 St/ 8AV $ 78.4 8/26/2025 T80502A3 Mainline Track Replacement 2024 / Broadway $ 7.5 8/29/2025 T8050352 Mainline Track Switches 2024 / Jerome $ 5.5 8/29/2025 ET040317 Sandy Mitigation: Upgrade Emergency Booth Comm System (EBCS) $ 85.9 8/31/2025
+```
+[p146_c0003] _IV-15_
+
+## Page 147
+
+### [p147_c0001] MTA New York City Transit 2025-28 Completions ($ in millions)
+[p147_c0002]
+
+```text
+ACEP Project Description Value Date Completed T8090406 Upgrade SCADA System (BMT) $ 45.5 8/31/2025 ET090310 Sandy Mitigation: Back-up Power Control Center (PCC) $ 11.9 8/31/2025 T90502 Mainline Track Replacement 2025 / Flushing $ 19.8 8/31/2025 T8080659 Antenna Cable Replacement: Jay Street $ 9.3 9/5/2025 T8090215 New Substation: 28 Street / 8th Avenue $ 71.1 9/17/2025 T8041206 1 Subway Street Stair: Northern Blvd / QBL (S4/P4/A/B) [SBMP] $ 1.0 9/21/2025 T8041206 1 Subway Street Stair: 23 St / BW7 (S2/P2A/P2B) [SBMP] $ 1.0 9/26/2025 T7130215 Convert 10 R77E Locomotives $ 34.3 9/30/2025 T8041278 Station Ventilators: Phase 23 - 3 Locations, Queens $ 6.6 9/30/2025 T8041281 Station Ventilators: Phase 24 - 2 Locations, Canarsie $ 3.7 9/30/2025 T8050295 Mainline Track Replacement 2024 / Jamaica $ 27.6 9/30/2025 T8041206 1 Subway Street Stair: Spring St / LEX (S1/P1) [SBMP] $ 0.9 9/30/2025 T90502 Mainline Track Replacement 2025 / Broadway-7th Ave $ 20.7 9/30/2025 T8041206 1 Elevated Street Stair: 231 St / BW7 (S3/P5/P7) [SBMP] $ 1.6 10/1/2025 T8041206 1 Subway Street Stair: Lafayette Av / FUL (S5/M7) [SBMP] $ 0.9 10/2/2025 T8040717 Replace 19 Elevators at Various Locations $ 160.1 10/13/2025 T7080342 CBTC: 8 Avenue, Equip 460 R211 Cars (92 units) $ 36.9 10/17/2025 T8080660 Comm Room Upgrade: APC Replacement (2020-24) $ 17.7 10/30/2025 T8080661 Comm Room HVAC: 138 St-Grand Concourse/JER (MR391) $ 0.4 10/30/2025 ET070308 Sandy Mitigation: Steinway Portal(9 Stns Bk/Q Initiative) $ 19.1 10/31/2025 ET060338 Sandy Resiliency: 2 Pump Rooms (Steinway Tube) $ 12.7 10/31/2025 T7080648 Police Radio System: Enhanced Coverage (Steinway Tube) $ 5.5 10/31/2025 T6080336 Steinway Tube Cathodic Protection $ 1.5 10/31/2025 T6070343 Sandy Mitigation: Steinway Portal $ 10.9 10/31/2025 T7130211 Purchase 25 Hybrid Locomotives $ 257.8 10/31/2025 T7070310 Overcoating: 17 Bridges / Dyre Av $ 62.8 10/31/2025 T7070301 Elev Struct Reh:Boston Rd-Abut of 180th St-WPR/Paint 90 bent $ 65.5 10/31/2025 T6080337 Walkway for 8 Bridges / Dyre $ 2.1 10/31/2025 T7070357 Overcoating: East 180 Street Flyover / Dyre Av $ 4.9 10/31/2025 T8070341 Demolish Abandoned Structures - Ph2: WPR $ 0.9 10/31/2025 T7041322 ADA: 95th St / 4AV $ 43.6 10/31/2025 T8041371 ADA: 137th Street / 7th Ave-Bway $ 37.4 10/31/2025 T8041331 ADA: Parkchester-E.177 St / Pelham $ 75.7 10/31/2025 T8041347 ADA: Northern Boulevard / Queens Boulevard $ 39.1 10/31/2025 T8040718 Replace 1 Escalators at Parkchester / Pelham $ 13.5 10/31/2025 T8041227 Platform Components: 137 St / BW7 $ 7.6 10/31/2025 T8041291 Customer Service Center: Parkchester / Pelham $ 3.7 10/31/2025 S7070101 Purchase 75 SIR Passenger Railcars -R211 $ 257.5 10/31/2025 T8050268 Mainline Track Replacement 2023 / 6th Ave-Culver $ 75.7 10/31/2025 T8050296 Mainline Track Replacement 2024 / Eastern Parkway $ 15.3 10/31/2025 T8041206 1 Subway Street Stair: 145 St / BW7 (S3/P3) [SBMP] $ 0.9 10/31/2025 T90503 Mainline Track Switches 2025 / 8th Avenue $ 9.2 10/31/2025 T8041206 1 Sub Str Stair: Jamaica Center/ARC (S2AB/M2AB/M4AB)[SBMP] $ 1.1 11/1/2025 T8050299 Mainline Track Replacement 2024 / 4 Avenue $ 24.2 11/14/2025 T8090221 Substation Renewal: 13 St / Culver $ 29.0 11/28/2025 T8090222 Substation Renewal: 82nd Road / QBL $ 26.2 11/28/2025 T8090223 Replace High Tension Switchgear (Seeley St Substation) $ 9.4 11/28/2025 T80502A2 Mainline Track Replacement 2024 / Brighton $ 7.5 11/30/2025 T90503 Mainline Track Switches 2025 / Astoria $ 4.7 11/30/2025 T8041270 Stormwater Mitigation: Street Stairs Package 2 $ 10.9 12/4/2025 T8050279 Mainline Track Replacement 2023 / Lenox-WPR $ 27.6 12/15/2025 T90503 Mainline Track Switches 2025 / 6th Avenue $ 6.0 12/15/2025 T8041206 2 Sub Str Stairs: Elmhurst Av / QBL (S3/M3AB, S5/M5AB)[SBMP] $ 1.6 12/24/2025 T8041206 2 Sub Street Stairs: Steinway St / QBL (S3/M3,S4/M4AB)[SBMP] $ 1.7 12/26/2025 T8160605 Consultant Services: UST Remediation - 2021 $ 5.2 12/29/2025 ET100315 Sandy Mitigation: Resiliency Improvements at Corona Yard $ 12.3 12/29/2025 T8041206 2 Sub Int Stairs: Canal St (UL) / BWY (PL27/26,PL24)[SBMP] $ 1.1 12/29/2025 T8130201 Non-Revenue Vehicles 2022 (2020-24) [NYCT] $ 6.1 12/30/2025 T8080656 PSLAN Upgrades for PA/CIS Phase 0 Stations $ 22.6 12/30/2025 T8080665 Fiber Optic Cable Replacement (Part 8) $ 5.4 12/30/2025 T8080666 Fiber Optic Cable Replacement (Part 9) $ 5.5 12/30/2025 T8070344 Paint/Structure Repair: King's Hwy - West 8th St / Culver $ 93.8 12/31/2025 T7030215 Paratransit AVLMM: System Replacement - Purchase/Install $ 12.4 12/31/2025 T7120404 TSP: Traffic Signal Priority, Phase 2 $ 4.2 12/31/2025 T7030215 Paratransit AVLMM: Real-Time Dispatch and Scheduling Engine $ 5.4 12/31/2025
+```
+[p147_c0003] _IV-16_
+
+## Page 148
+
+### [p148_c0001] MTA New York City Transit 2025-28 Completions ($ in millions)
+[p148_c0002]
+
+```text
+ACEP Project Description Value Date Completed T8041269 Water Conditions Remedy - 2023 $ 5.6 12/31/2025 T8050269 Continuous Welded Rail 2023 $ 77.7 12/31/2025 T8100427 Yard Switches - 2024 $ 3.9 12/31/2025 T8030218 Automated Passenger Counting (APC), Phase 2 $ 7.0 12/31/2025 T8080316 CBTC General Engineering Consultant (GEC) $ 22.0 12/31/2025 T8160719 Employee Facility Repairs at ADA & Station Component Locs $ 5.3 12/31/2025 T8090411 Rehabilitation of 5 CBHs - Various Locations $ 58.3 12/31/2025 T8030230 Batt Elec Bus Charging Infra Phase 2 (6 Depots) $ 196.2 12/31/2025 T8050277 Mainline Track Replacement 2023 / Canarsie $ 56.1 12/31/2025 T8050285 Mainline Track Replacement 2023 / Flushing $ 5.6 12/31/2025 T8041266 Art at Other Stations (2023) $ 2.5 12/31/2025 T8041266 Other Art at Stations (2024) $ 1.4 12/31/2025 T8080658 Fiber Optic Cable Replacement Ph3 (2023) - SEA/CUL $ 14.6 12/31/2025 T8041206 2 Sub Str Stairs: Jay St-MetroTech / BWY (S4/M4AB, S6)[SBMP] $ 1.3 12/31/2025 T90503 Mainline Track Switches 2025 / Brighton $ 4.1 12/31/2025 T90503 Mainline Track Switches 2025 / West End $ 7.6 12/31/2025 T6040405 New Fare Payment System, Phase 2 $ 98.6 12/31/2025 T7040401 New Fare Payment System, Ph2 $ 535.0 12/31/2025 T8060523 Rehab Pump Room: Rockwell Place / 4AV $ 27.9 2026 T7041210 111 Street / Flushing $ 56.3 2026 T7041211 103 St-Corona Plaza / Flushing $ 55.5 2026 T7041212 82 Street-Jackson Heights / Flushing $ 51.0 2026 T7041217 69 Street / Flushing $ 54.0 2026 T7041219 52 Street / Flushing $ 62.1 2026 T8041262 Platform Components: 111 Street / Flushing $ 6.3 2026 ET040341 Sandy Mitigation: Additional Work at Selected Vent Bays $ 9.2 2026 T8041280 WTC Cortlandt St Station BW7 Street Level Protection (Core) $ 16.6 2026 ET040342 Sandy Mitig: WTC Cortlandt Station BW7 Str Lvl Protection $ 1.7 2026 T8041277 Station Ventilators: Phase 22 - 3 Locations, Manhattan $ 4.2 2026 ET060317 Sandy Resiliency: Conversion of 2 Pump Trains $ 27.5 2026 T8050290 Mainline Track Replacement 2023 / Broadway (Canal St) $ 14.0 2026 T90502 Mainline Track Replacement 2025 / Canarsie $ 11.0 2026 T8041206 1 Subway Str Stair: 8 St / BWY (S5) [SBMP] $ 1.0 2026 T90503 Mainline Track Switches 2025 / Pelham $ 13.4 2026 T8041206 1 Subway Street Stair: Grand AV/QBL (S2) [SBMP] $ 1.0 2026 T90503 Mainline Track Switches 2025 / Jamaica $ 5.2 2026 T8090217 Replace Transformers and Associated Equipment, 2 Substations $ 24.4 2026 T8090218 Replace DC Lineup at Jamaica Yard Substation $ 13.1 2026 T8090230 Equipment Replacement: 62nd Rd / QBL $ 4.1 2026 T8090219 Replace High Tension Switchgear at 5 Substations $ 25.9 2026 T8090220 Replace High Tension Switchgear at 1 Substation $ 3.8 2026 T8090235 Replace Transformer, Broad Channel Substation $ 1.7 2026 S7070104 SIR: UHF T-Band Radio System Replacement $ 46.6 2026 T8120312 Platform Lifts at Tuskegee Airmen Depot $ 1.3 2026 T8050274 Mainline Track Replacement 2023 / Astoria $ 16.8 2026 T8050344 Mainline Track Switches 2024 / Broadway-7th Ave $ 8.5 2026 T90502 Mainline Track Replacement 2025 / 6th Avenue $ 19.3 2026 T90503 Mainline Track Switches 2025 / Lenox-WPR $ 9.4 2026 T8041206 1 Elev Stair,Ramp,Overpass: 161 ST/JER (P2AB-P4AB) [SBMP T2] $ 2.2 2026 T8041206 1 Elev Stair,Ramp,Overpass: 161 ST/JER (P6AB-P8AB) [SBMP T2] $ 2.2 2026 T7080342 CBTC: 8 Avenue, Equip 316 R179 cars (73 units) $ 36.9 2026 T8090228 Rehab Substation Roofs & Enclosures - 2 Locations $ 5.9 2026 T8090227 Rehab Substation Roof & Enclosure - B'way/W 143 St $ 6.3 2026 T8041206 3 Str Stairs: Lafayette Av/FUL (S2/M3/M4,S4/M6,S6/M8)[SBMP] $ 2.6 2026 T8070335 Paint/Structure Repair: Myrtle Ave - DeSales Place / Jamaica $ 80.9 2026 T8070336 Paint/Structure Repair:Williamsburg Bridge - Myrtle Ave/ Jam $ 69.9 2026 T8070337 Paint/Structural Repair: East New York Yrd/Shop Leads/Loops $ 59.0 2026 T8070347 Marcy Signal Tower / JAM $ 0.1 2026 T8070354 LSCRP: Lexington & Jerome $ 80.3 2026 T8120407 Portable Bus Lift / Equipment Replacement $ 4.7 2026 T8050275 Mainline Track Replacement 2023 / Brighton $ 28.1 2026 T8041206 1 Elevated Street Stair: 90 St/FLS (S1/M1AB) [SBMP] $ 1.2 2026 T8041206 1 Elevated Street Stair: 90 St/FLS (S2/M2) [SBMP] $ 1.1 2026 T8041206 1 Elevated Street Stair: 90 St/FLS (S3/M3) [SBMP] $ 1.1 2026 T90502 Mainline Track Replacement 2025 / Rockaway $ 46.9 2026
+```
+[p148_c0003] _IV-17_
+
+## Page 149
+
+### [p149_c0001] MTA New York City Transit 2025-28 Completions ($ in millions)
+[p149_c0002]
+
+```text
+ACEP Project Description Value Date Completed T90503 Mainline Track Switches 2025 / Eastern Parkway $ 13.8 2026 T7160207 Capital Revolving Fund (CRF) - 2019 $ 5.0 2026 T90502 Mainline Track Replacement 2025 / Eastern Parkway $ 26.2 2026 T8050328 Mainline Track Switches 2022 / Brighton $ 21.3 2026 ET060336 Sandy Resiliency: 4 Pump Rooms (Jerome/Pelham Tube) $ 3.2 2026 ET060342 Sandy Mitigation: 17 Fan Plant Wrap-up 2 Locs FP 7222 & 7232 $ 4.1 2026 T8060527 Sandy Mitigation: Jerome Pump Rooms $ 35.4 2026 T8060528 Sandy Mitigation: Duct Seals FP 7222, 7232 (Loan) $ 4.9 2026 T8160208 Capital Revolving Fund (CRF) - 2021 $ 5.0 2026 T8160607 Groundwater and Soil Remediation (2024) $ 6.2 2026 T8030203 18 Articulated Battery Electric Buses (BEB) $ 43.7 2026 T80502A6 Mainline Track Replacement 2024 / Jerome $ 5.6 2026 T80502B3 Mainline Track Replacement 2024 / E. Pkwy (S/O Gr Army Plaza) $ 19.3 2026 T90502 Mainline Track Replacement 2025 / 8th Avenue $ 31.7 2026 T90503 Mainline Track Switches 2025 / Flushing $ 14.3 2026 T8070348 Struct Paint and Repair, Myrtle Line Outstanding Work (CIP8) $ 130.7 2026 T90502 Mainline Track Replacement 2025 / West End $ 3.5 2026 T90503 Mainline Track Switches 2025 / Canarsie $ 10.8 2026 T8050298 Mainline Track - 2024 DES/EFA $ 13.1 2026 T8050342 Mainline Switches - 2024 DES/EFA $ 12.7 2026 T81203 Platform Lifts at West Farms Depot $ 9.1 2026 T8041235 Station Ventilators: Phase 20 - 4 Locations, Manhattan $ 11.3 2026 T8160714 Employee Facility Repairs at Station Component Locs $ 5.5 2026 T90502 Mainline Track Replacement 2025 / Broadway $ 16.8 2026 T8080318 CBTC: QBL Line East and 3 Interlockings (Hillside) - Install $ 430.6 2026 T8050321 CBTC: QBL East (Hillside) - Switch Replacement $ 22.1 2026 T8080317 CBTC: QBL Line East and 3 Interlockings (Hillside) - Furnish $ 96.5 2026 T7090219 New Substation: Canal Street / 8th Avenue $ 76.3 2026 T8041238 Station Components 43 Locs (Ph 1: Design / Pre-Construction) $ 0.2 2026 T8040712 Replace 17 Escalators at 6 Stations Systemwide $ 188.9 2026 T8070325 Elevated Structures Repair (Over-land Sections) / RKY $ 101.2 2026 ET070311 Sandy Mitigation: New Crossover at Beach 105 St / RKY $ 78.9 2026 ET070313 Rockaway Park Yard Compressor Room Flood Mitigation $ 17.4 2026 ET070310 Sandy Mitigation: ROW Debris Shielding / RKY $ 17.2 2026 ET070312 Sandy Mitigation: Rockaway Line Long-Term Protection $ 70.4 2026 T8070323 Replacement of Elec/Mech Eqpmnt of South Channel Bridge $ 60.3 2026 T8070324 Rehabilitate Hammels Wye $ 104.1 2026 ET070312 Sandy Mitigation: South Channel Bridge Generator $ 2.4 2026 T6080338 Sandy Mitigation: Core Program 2010-2014 $ 117.7 2026 T90502 Mainline Track Replacement 2025 / Brighton $ 7.5 2026 T8040719 Replace 17 Elevators at 8 Stations $ 135.4 2026 T8040720 Replace 20 Elevators at 9 Stations $ 157.6 2026 T8070331 Repair Track/Structure Supporting Steel, 61 St-Woodside-FLS $ 159.1 2026 T8070317 Overcoating:Track-Level Components, 48 St - 72 St / Flushing $ 15.3 2026 T8041258 61 Street-Woodside / Flushing $ 114.8 2026 T8040709 Replace 4 Escalators / Flushing $ 41.8 2026 T7080304 CBTC: 8 Avenue (59 St to High Street) $ 218.9 2026 T7080335 2 Interlockings: 30 St & 42 St North/ 8Ave $ 242.0 2026 T7080344 8th Ave Switch Replacement $ 27.6 2026 T8041348 ADA: Church Avenue / Brighton $ 52.1 2026 T8041209 Livonia - Junius Connection $ 27.8 2026 T8041312 ADA: Junius Street / New Lots (P3) $ 85.3 2026 T8041314 ADA: Sheepshead Bay / Brighton $ 48.3 2026 T8041336 ADA: Rockaway Blvd / Liberty Ave. $ 56.7 2026 T8041321 ADA: Kings Highway / Culver $ 60.4 2026 T8041338 ADA: Woodhaven Boulevard / Queens $ 71.9 2026 T8041339 ADA: Steinway Street / Queens $ 117.2 2026 T8041333 ADA: Mosholu Parkway / Jerome $ 52.3 2026 T8040715 Replace 14 Elevators at 5 Stations (P3) $ 73.2 2026 T8090224 Rehab Substation Roofs & Enclosures - 3 Locations $ 20.3 2026 T8040721 Replace 21 Escalators at 6 Stations $ 212.5 2026 T8080624 PA/CIS Upgrade: Canarsie Line, Phase 2 $ 83.1 2026 ET060327 Sandy Mitigation: Existing Pump Room Enhancements $ 31.2 2026 T8060526 Sandy Mitigation: Pump Room Enhancements (Loan) $ 38.7 2026 ET100222 Sandy Repairs: Culver Yard (Signals/Track) $ 107.7 2026
+```
+[p149_c0003] _IV-18_
+
+## Page 150
+
+### [p150_c0001] MTA New York City Transit 2025-28 Completions ($ in millions)
+[p150_c0002]
+
+```text
+ACEP Project Description Value Date Completed T6160210 Sandy Repairs: Culver Yard (Signals/Track) Core (Re-do Work) $ 0.6 2026 T8041287 Emergency Lighting: 11 Stations $ 17.5 2026 ET090244 Sandy Repairs: Power Repairs - Various Locations $ 83.6 2026 ET060341 Sandy Mitig: 17 Fan Plant Wrap-up 3 Loc FP 7230/8104/8107 $ 7.2 2026 T6160212 Sandy Mitigation: 17 Fan Plants Wrap-up, 3 Locs (Core) $ 0.1 2026 T8041326 ADA: 36th Street / 4th Ave. $ 98.9 2026 T8041302 ADA: 96 St / 8th Ave. $ 46.6 2026 T8041373 ADA: Court Square - 23rd Street / Queens $ 55.1 2026 T8041322 ADA: Classon Avenue / Crosstown $ 55.7 2026 T8041323 ADA: New Lots Av / New Lots $ 49.1 2026 T8041306 ADA: 86th Street / Lexington $ 66.9 2026 S8070107 ADA: Huguenot / SIR $ 31.9 2026 T8041256 Platform Components: New Lots Avenue / NLT $ 14.4 2026 T8041257 Station Renewal: 242 St / BW7 $ 29.7 2026 T8041259 Station Components: 46 St- Bliss St / FLS $ 3.0 2026 T8041334 ADA: 242 St / BW7 $ 44.8 2026 T8041309 ADA: 81 St - Museum of Natural History / 8AV $ 58.3 2026 T8041341 ADA: Broadway / AST $ 54.3 2026 T8041372 ADA: Harlem-148 Street / Lenox Avenue $ 26.7 2026 T8041349 ADA: 33 St - Rawson St / Flushing $ 83.3 2026 T8041352 ADA: 46 Street-Bliss Street / Flushing $ 72.8 2026 T8050287 Mainline Track Replacement: 81St/8AV, 86St/LEX, 46St/FLS $ 42.8 2026 S8070116 Other Art at SIR Stations (2024) $ 0.2 2026 T8080614 Under River Tubes (URT) Security, Phase 3 $ 101.3 2026 T8160209 Capital Revolving Fund (CRF) - 2022 $ 5.0 2026 T8080650 Passenger ID CCTV: Additional Locations $ 78.7 2026 T8160722 Employee Facility Repairs at ADA Locations $ 7.2 2026 S8070111 SIR Purchase: 7 Flat Cars $ 6.5 2026 T8130206 Purchase 45 Flat Cars (Fleet Growth) $ 41.6 2026 T8090231 Replace Control & Battery Cable, Zone 20 $ 9.4 2026 T80902 57 St Substation Renewal (Emergency Relief) $ 45.4 2026 T8060530 Rehabilitate Pump Rooms: 4 Locations / Various $ 54.8 2027 T8010102 Purchase 640 B-Division Cars - R211 Option 1 $ 1,929.6 2027 T8070376 Stormwater Mitigation: Miscellaneous Vulnerabilities $ 8.1 2027 T8090229 Replace High Tension Switchgear at 2 Substations $ 21.6 2027 T7130213 Non-Revenue Vehicles 2023 (2015-19) $ 5.2 2027 T8160203 Capital Revolving Fund (CRF) - 2020 $ 5.0 2027 T8090225 Hester St Substation Renewal - 6 Av $ 47.5 2027 T8090226 Village Substation Renewal $ 36.0 2027 T8130208 Non-Revenue Vehicles 2023 (NYCT) $ 18.1 2027 T8160525 Boring Services: In All Five Boroughs (2020-2024) - CONSTR $ 6.8 2027 T8130205 Upgrade of Critical Systems of Track Geometry Cars 3 & 4 $ 10.3 2027 T8070357 Demolish 1 Signal Tower / FLS $ 2.7 2027 T8070352 Structural Repairs: 9 Ave / WST $ 50.7 2027 T8160718 2020-2024 Facility Elevators $ 35.3 2027 T8080611 Comm Room Upgrade: 205th St / Concourse MR#210 [SBMP] $ 0.9 2027 T8160205 2020-2024 Owner Controlled Insurance Program (2021) $ 60.8 2027 T8070373 Paint: Portal to Kings Hwy/Culver $ 138.9 2027 T8030201 162 Standard Battery Electric Buses (BEB) $ 231.2 2027 T8030220 72 Articulated Battery Electric Buses (BEB) $ 142.6 2027 T8070359 Paint/Structure Repair: 225 Street - 242 Street/Bwy-7th Ave $ 129.9 2027 T8070374 Demolish 2 Abandoned CBHs / Broadway-7AV $ 1.0 2027 T80904 Rehab Ducts: Hanover Sq/Pearl St Substation - CLK $ 22.3 2027 T8070371 Ventilators Betw Stations Rehab - Halsey St/Canarsie 10 Locs $ 5.0 2027 T8041346 ADA: Broadway Junction Complex (JAM, CNR, FUL) $ 341.3 2027 T8041234 Platform Components: Broadway Junction / JAM $ 9.2 2027 T8040714 Replace 3 Escalators at Broadway Junction / Fulton $ 21.9 2027 T8050288 Mainline Track Replacement: Broadway Junction / JAM $ 1.4 2027 T8080323 CBTC: Crosstown Line and 3 Interlockings $ 579.8 2027 T8080328 Interlocking SSI Replacement: Bergen St / CUL $ 25.0 2027 T8160713 Rehab: Police District Office #4 - 14 Street-Union Square $ 44.6 2027 T8120303 New Depot: Jamaica $ 566.9 2027 T8120307 Jamaica Depot: Construct Bus Parking Lot at York College $ 22.7 2027 T8030219 Batt Elec Bus Charging Infra: Jamaica Gantries $ 14.4 2027 T8160606 Fire Alarm Systems & Sprinklers: Various DOS Locations $ 82.6 2027
+```
+[p150_c0003] _IV-19_
+
+## Page 151
+
+### [p151_c0001] MTA New York City Transit 2025-28 Completions ($ in millions)
+[p151_c0002]
+
+```text
+ACEP Project Description Value Date Completed T8160524 Test Pits (2021) $ 11.1 2027 T8030204 224 Articulated Buses $ 281.7 2027 T8120412 Automated Camera Enforcement (ACE), Phase 2B (671 Buses) $ 13.3 2027 T8090233 Substation Renewal: Concourse Yard / BXC $ 67.1 2027 T8090234 Replace Control Cable, Zone 25 $ 5.3 2027 T8090414 Rehabilitation of 1 CBH $ 6.1 2027 T8120413 ABLE - Phase 3 $ 18.2 2027 T8120414 ACE Phase 4 - 1000 Buses $ 22.4 2027 T8080670 Fiber Optic Cable Replacement (Part 10) $ 8.0 2027 T8070361 LSCR: Uptown Manhattan (BW7) $ 65.5 2028 T8070360 LSCR: Uptown Manhattan (8AV) $ 88.9 2028 T8070362 Repair Expansion Joints: 133 and LaSalle, Broadway-7 Ave $ 16.8 2028 T8070363 Stormwater Mitigation: 81 St & Broadway Sewer Connection/BW7 $ 9.3 2028 T8070364 Demo Abandoned Structures: CBH N/O 125th Street Station $ 1.7 2028 T8070375 Elevated Structure Repairs: 9th Av Port to Stillwell Av/ WST $ 67.8 2028 T8090415 Rehabilitation of 5 CBHs - Various Locations $ 89.2 2028 T8090232 Washington Heights Substation Renewal / 8AV $ 70.7 2028 T8070365 LSCR: Brooklyn (4AV) $ 31.8 2028 T8160210 Capital Revolving Fund (CRF) - 2023 $ 5.0 2028 T8100425 DCE Component Roof Repairs: Coney Island Overhaul Shop $ 73.4 2028 T8090412 Emergency Alarms Revised Rollout, Phase 1 $ 122.6 2028 T81204 Elevator Replacement at Kingsbridge & MJQ $ 8.3 2028 T8030205 92 Express Buses $ 77.8 2028 T8030216 5 Express Battery Electric Buses for Testing+Eval (Group 2) $ 10.6 2028 T8041310 ADA: Myrtle Av / JAM $ 80.3 2028 T8041379 ADA: Norwood Avenue / Jamaica $ 67.0 2028 T8041320 ADA: Avenue I / Culver $ 72.1 2028 T8041376 ADA: Burnside Av / Jerome Avenue $ 98.3 2028 T8041265 Platform Components: Burnside Av / JER $ 15.3 2028 T8041380 ADA: Middletown Rd / Pelham $ 57.8 2028 T80502A7 Mainline Track Replacement: 4 Stations (ADA pk6) $ 24.2 2028 T8160213 Capital Revolving Fund (CRF) - 2024 $ 5.0 2028 T8080664 Connection-Oriented Ethernet (COE), Phase 3C $ 129.8 2028 T8070372 LSCR: Manhattan / Nassau $ 65.6 2028
+```
+[p151_c0003] _IV-20_
+
+## Page 152
+
+### [p152_c0001] MTA Long Island Rail Road 2025-28 Completions ($ in millions)
+[p152_c0002]
+
+```text
+ACEP LIRR ID Project Description Value Date Completed L8040119 PND7 Valley Stream Viaduct Waterproofing/Joint Repairs Project $ 3.5 Jan-25 L8040108 PNKS HSF West Overpass Replacement $ 3.8 Mar-25 L8050101 PN82 Comm. Pole Line $ 8.0 Mar-25 L8050108 PN89 Help Points $ 2.0 Mar-25 L8050110 PN8S Grade Crossing Cameras $ 3.0 Mar-25 L8050111 PN8X Customer Information Technology Upgrade $ 3.0 Mar-25 L8050205 PNLV Signal Normal Replacement Program $ 20.0 Apr-25 L8020428 PNEH Jamaica West End Vertical Transportation Design $ 3.2 May-25 L8050106 PN87 Radio Head-End Replacement $ 12.0 Jun-25 L8050205 PNLW HST SWITCH HEATERS (ELECTRICAL PROTECTION) $ 5.0 Jul-25 L8050102 PN83 Comm Component Replacement $ 8.0 Aug-25 L8050104 PN85 Station Technology Upgrades $ 3.0 Aug-25 L70604YX PNYX Fire Protection Improvements $ 5.0 Oct-25 L8060401 PNRS Bolands Landing Platform Renewal $ 3.0 Oct-25 L8060403 PNRW Fire Protection Improvements $ 25.0 Oct-25 L70701XX PNXX Hall & Babylon Signal Power Motor Generator $ 20.1 Nov-25 PN3A 2025 Annual Track Program $ 110.0 Dec-25 L70204UA PNUA Station Component Replacement $ 5.6 Dec-25 L8020411 PNQF ADA Locust Manor New Elevators $ 22.8 Dec-25 L8020414 PN9K ADA St. Albans New Elevator $ 25.5 Dec-25 L8020421 PN9M ADA Laurelton Station $ 22.2 Dec-25 L8020424 PN9Q Valley Stream Escalator / Elevator Replacement $ 23.7 Dec-25 L8020425 PN9R Auburndale Elevator Replacement $ 8.3 Dec-25 L80204DD PNDD ADA Accessibility and Components 24 Stations DES $ 16.5 Dec-25 L8070103 PNJL Signal Power Motor Generator Replacement $ 4.0 Dec-25 L8070103 PNJK Substation Battery Replacement $ 3.0 Dec-25 L8090406 PNGU Centralized Video Storage/Management Solution $ 1.4 Dec-25 L8030111 PNWZ Right of Way Fencing $ 5.0 Dec-25 L8090403 PNGR Perimeter Physical Hardening Project $ 3.0 Dec-25 L8030102 PNWN Retaining Walls / Right of Way Projects $ 10.0 2026 L8060406 PNR9 Rehabilitation of Employee Facilities - Bethpage $ 21.1 2026 L8040109 PNKE Webster Avenue Bridge Replacement $ 17.0 2026 L8030101 PNWL New Track Geometry Car $ 20.0 2026 L70502LH PNLH BABYLON INTERLOCKING RENEWAL $ 32.6 2026 L8050201 PNL8 Babylon Interlocking Renewal $ 92.9 2026 L8060405 PNPV F&A Building #1 Rehabilitation $ 5.7 2026 L8030105 PNW8 Queens Interlocking $ 152.8 2026 L8040104 PNKY Main Street & North Sea Bridge Painting $ 3.7 2026 L70604YV PNYV HILLSIDE FACILITY/UPPER HOLBAN IMPROVEMENTS $ 4.1 2026 L8030112 PNWY Track Rehab- West Side Storage Yard $ 7.2 2026 L8070107 PNJR Jamaica Substation $ 77.4 2026 L8060101 PNRF RSSE - Train Wash Replacement $ 15.7 2026 L8070103 PNJM DC Relay Controls Replacement $ 3.0 2026 L8020501 PN4V Surface Parking Rehabilitation & Expansion $ 6.3 2026 L8060101 PNRE RSSE - Rail Car Movers $ 3.6 2026 L8060101 PNRD RSSE - Wheel Truer Upgrade/Replacement $ 6.4 2026 L8030403 PNW6 Hall Interlocking Expansion $ 168.6 2026 L8050101 PN82 Comm Pole Line $ 2.0 2026 L8050110 PN8S Grade Crossing Cameras $ 1.8 2026 L8050111 PN8X Customer Information Technology Upgrades $ 2.0 2026 L8060105 PNRK Mid Suffolk Yard Phase 2 $ 30.0 2026 L8090401 PNGP Security Camera Replacement Program $ 3.6 2026 L60502LR PNLR Centralized Train Control $ 17.0 2026 L8020417 PNQ3 Tactile Strips - Various Locations $ 12.8 2026 L8030101 PNWK Construction Equipment $ 44.2 2026 L8050103 PN84 Fiber Optic Network $ 24.0 2026 L8050204 PNLX Centralized Train Control $ 14.1 2026 L8060401 PNRX Paving - Rehabilitation $ 5.1 2026 L8070102 PNJB Atlantic Avenue Tunnel Lighting $ 10.0 2026 L8070103 PNJC Station & Building Electrical Systems and Platform $ 8.0 2026 L8070103 PNJJ Negative Reactor Upgrade $ 5.0 2026 L8070103 PNJN Signal Power & Power Pole Line Replacement $ 8.0 2026 L8070103 PNJP 4,160 Volt Feeders $ 4.0 2026 L8070104 PNJF 3RD Rail - 2000 MCM & Feeder Cable Upgrade $ 13.0 2026 L8070104 PNJH 3rd Rail - Protection Board & Aluminum Rail $ 27.0 2026
+```
+[p152_c0003] _IV-21_
+
+## Page 153
+
+### [p153_c0001] MTA Long Island Rail Road 2025-28 Completions ($ in millions)
+[p153_c0002]
+
+```text
+ACEP LIRR ID Project Description Value Date Completed L8070106 PNJE Substation Component Renewal $ 24.7 2026 L8090402 PNGQ Access Control at Stations, Platforms, Yards & Fac $ 2.4 2026 L8020426 PNQA Babylon Station Platform Replacement $ 125.9 2026 L70204UO PNUO Brookhaven National Lab Station $ 24.1 2027 L8020408 PNA6 HVAC/Sanitary Sewer Connections (KO and Hicksville) $ 3.6 2027 L8060405 PNRT Atlantic Terminal Track 6 Facility HVAC $ 5.4 2027 L8060405 PNPW Atlantic Terminal Ticket Office HVAC $ 5.0 2027 L8040204 PNK2 SBMP Hatchways - Crescent & Franklin, Hendrix & 76th St. $ 10.0 2027 L8060101 PNRC RSSE - Rolling Stock Support Shop Equipment $ 2.2 2027 L8040103 PNKH Systemwide Bridge Assessment Study $ 23.5 2028 L70502LN PNLN BABYLON TO PATCHOGUE $ 45.9 2028 L8050203 PNLT Babylon to Patchogue $ 10.0 2028
+```
+[p153_c0003] _IV-22_
+
+## Page 154
+
+### [p154_c0001] MTA Metro-North Railroad 2025-28 Completions ($ in millions)
+[p154_c0002]
+
+```text
+ACEP Project Description Value Date Completed M7050105 Harlem and Hudson Power Improvements (City Water Substation) $ 30.2 1/31/2025 M8030212 Fulton/South Street $ 48.6 2/28/2025 M7040109 Fire Suppression Systems $ 0.8 4/3/2025 M7030201 F/A Overhead Bridges East of Hudson $ 7.8 4/30/2025 M6050103 86th / 110th Substations $ 32.0 4/30/2025 M8060101 Upgrade Automotive Fuel System $ 12.9 3/31/2025 EM050208 Power Infrastructure Restoration-Substations - Sandy $ 49.6 7/31/2025 M8020201 Upper H&H Stations Priority Repairs $ 40.3 7/1/2025 M7040105 PBX Replacement $ 2.3 9/27/2025 M7050103 Replace AC Circuit Breaker/Switchgear $ 3.9 11/30/2025 M8030204 Railtop Culverts $ 2.8 12/30/2025 M7030207 Bridge Walkways $ 2.0 12/31/2025 M8020108 PAT Exit Repairs, 86th Street $ 2.1 12/31/2025 M8030205 Bridge Walkways $ 1.5 12/31/2025 M8030207 Right-of-Way Fencing $ 0.5 12/31/2025 M7050101 Replace MA's in Signal Substations $ 28.1 11/30/2025 M8020302 Fleetwood Parking Lot Repair $ 1.1 2026 M8020104 Track 94 Storage Room Rehabilitation $ 3.0 2026 M8020207 Install Bike Racks/Hastings Sidewalk Repair $ 2.0 2026 M8020101 GCT Trainshed Sector 1 $ 225.1 2026 M8020207 Dry Water Line Installation Harlem Line Stations $ 4.0 2026 M8020302 W255th St Reconstruction @ Riverdale $ 2.2 2026 M8020302 Poughkeepsie Garage Concrete Repairs $ 3.0 2026 M8020301 Brewster Yard Improvements-SE Parking $ 212.3 2026 M8030107 MoW Equipment $ 41.8 2026 M8080108 POD (Police Observation Device) Installation at 5 Stations $ 8.7 2027 M8050109 NHL Pelham Substation Replacement $ 45.0 2027 M8050110 Rebuild 2 NHL AC Substations 128/178 $ 66.6 2027 M8040106 Radio System $ 23.1 2027 M8060103 Small Business Mentoring Program - Security Booths -Shops & Yards $ 2.7 2027 M8030304 Moodna/Woodbury Viaduct Repairs $ 40.0 2027 M8020209 3 Bronx Stations [Woodlawn_BG_WB] $ 164.9 2027 M8040104 Network Infrastructure $ 14.5 2027 M8030201 Park Avenue Viaduct Replacement $ 833.6 2027 M8040105 Station PA System $ 2.0 2027 M8040108 CCTV $ 2.5 2027 M8050101 Repl. MA's in Signal Substations S-34 Croton Harmon $ 30.0 2028 M8050106 Hudson Line Track 1 Electrification $ 44.1 2028 M8030105 Rebuild Marble Hill Retaining Wall - Phase 1 $ 36.0 2028 M8030303 Smith Clove Road Undergrade Bridge - Pt Jervis Line $ 6.5 2028 M8020205 Ludlow Station Accessibility Improvements $ 23.0 2028 M8030104 Hudson Line Slope Stabilization MP16.3 to MP17.4 $ 93.0 2028
+```
+[p154_c0003] _IV-23_
+
+## Page 155
+
+### [p155_c0001] MTA Bus 2025-28 Completions ($ in millions)
+[p155_c0002]
+
+```text
+ACEP Project Description Value Date Completed U8030218 173 Standard Buses - Nova $ 36.1 Mar-25 U7030207 Storeroom Expansion - LaGuardia $ 7.6 Jan-25 U7030215 Project Admin. - 2018-19 $ 4.2 Jun-25 U7030216 Design Mgmt Svcs - 2015-19 $ 3.0 Jun-25 U6030222 Construction Mgmt Svcs - 2013 $ 1.6 Sep-25 U8030214 Project Admin. - 2020-24 $ 4.1 Dec-25 U8030219 Generator Replacement: College Point and Spring Creek $ 17.7 Dec-25 U8030231 HVAC Phase 2/Fire Control and CNG Ph. 2 - Spring Creek $ 12.0 Dec-25 U8030232 HVAC Phase 2/Fire Control and CNG Ph. 2 - College Point $ 22.4 Dec-25 U7030207 Storeroom Expansion - LaGuardia $ 7.6 Jan-25 U8030218 173 Standard Buses - Nova $ 36.1 Feb-25 U7030215 Project Admin. - 2018-19 $ 4.2 Jun-25 U7030216 Design Mgmt Svcs - 2015-19 $ 3.0 Jun-25 U6030222 Construction Mgmt Svcs - 2013 $ 1.6 Sep-25 U8030214 Project Admin. - 2020-24 $ 4.1 Dec-25 U8030219 Generator Replacement: College Point and Spring Creek $ 17.7 Dec-25 U8030231 HVAC Phase 2/Fire Control and CNG Ph. 2 - Spring Creek $ 12.0 Dec-25 U8030232 HVAC Phase 2/Fire Control and CNG Ph. 2 - College Point $ 22.4 Dec-25 U6030222 Construction Mgmt Svcs - 2014 $ 2.2 2026 U8030226 Design Mgmt Svcs - 2020 $ 2.4 2026 U8030220 Portable Bus Lifts $ 4.6 2026 U8030205 250 Express Buses $ 222.9 2026 U8030235 Construction Mgmt Svcs - 2020 $ 0.7 2026 U8030201 25 Std. Battery Electric Buses $ 34.6 2027 U8030214 Design Mgmt Svcs - 2021-24 $ 2.2 2027 U7030214 Non-Revenue Service Vehicles - 2015-19 $ 3.8 2027 U7030217 Construction Mgmt Svcs - 2015-19 $ 3.4 2027 U8030229 Automated Camera Enforcement (ACE), Ph. 2B (52 Buses) $ 1.0 2027 U8030234 110 Standard CNG Buses $ 115.8 2028
+```
+[p155_c0003] _IV-24_
+
+## Page 156
+
+### [p156_c0001] MTA Network Expansion 2025-28 Completions ($ in millions)
+[p156_c0002]
+
+```text
+ACEP Project Description Value Date Completed G7140102 East Bound Re-Route CH058B (Regional Investments) $ 163.6 Apr-25 G6090135/G7090135 ET Catenary Work CH063 (Regional Investments) $ 72.9 Dec-25 G8090103 VS300 (ESA) $ 19.4 2026 G7100107 Early Utilities (SAS2) $ 122.2 2027
+```
+[p156_c0003] _IV-25_
+
+## Page 157
+
+### [p157_c0001] MTA Bridges and Tunnels 2025-28 Completions ($ in millions)
+[p157_c0002]
+
+```text
+ACEP Project Description Value Date Completed D805QM36 Rehabilitation Ventilation/Service Buildings $ 31.2 Apr-25 D804HC83 Installation of Fire Suppression System $ 1.6 May-25 D804QM85 Installation of Fire Suppression System $ 1.6 May-25 D805AWX9 Service Building Upgrades $ 6.5 Jul-25 D802VN81 Lower Level Main Span Deck Rehabilitation $ 127.9 Dec-25 D807VN81 VN Painting $ 19.6 Dec-25 D804BW96/D804VN12 Bridge Structural lighting, Power Redundancy and Resiliency Improvements at the BWB and the VNB $ 96.0 2026 D802RK90 Widening of S/B FDR Drive - from 125th St Entrance Ramp to 116th St. Exit Ramp $ 32.3 2026 D804AW73 Rehab/Replace Facility Monitoring & Safety Systems at the HCT and QMT $ 53.0 2026 D804TN58 Electrical Resiliency Improvements $ 6.5 2026 D807VNPT/D804VN12 Tower painting and Electrical Resiliency Improvements $ 172.0 2026 D801RK04/D801RK19/D807RK19 RFK suspended span retrofit & Painting $ 540.0 2027 D804BW98/D806AW29 Cable Dehumidification and Miscellaneous Work at the BWB and TNB - Preliminary Design $ 6.0 2027 D801TN87/D807TNPT/D804TN85/D801TN49 Tower Protection & Painting $ 198.8 2027 D801HC48 Rehabilitation of Tunnel Entrance/Exit - Manhattan $ 20.6 2027 D803AW80 Adv. Traveler Info. Systems (ATIS) & VMS Upgrades $ 18.8 2027 D704AW80 Adv. Traveler Info. Systems (ATIS) & VMS Upgrades $ 10.6 2027
+```
+[p157_c0003] _IV-26_
+
+## Page 158
+
+### [p158_c0001] OPERATING IMPACTS EXCEEDING $1 MILLION For Capital Projects Reaching Beneficial Use 2025-2028
+### [p158_c0002] NEW YORK CITY TRANSIT CAPITAL PROJECTS
+[p158_c0003] Project: Bus Radio & Command Center Upgrade. The Bus Radio Upgrade operating budget impact is currently under review and the cost of the increased maintenance needs for the upgraded radio consoles based on existing radio maintenance efforts is being evaluated. Areas include Bus Depots for NYCT and MTA Bus, the Central Electronics Shop repairs, and Network Operations Support as well as the maintenance of the new Bus Command Center consoles and radio sites. The total annual operating impact including third-party contractual needs and increases in personnel is still being reviewed. This project also impacts the operating budget of MTA Bus.
+[p158_c0004] Project: Zero-Emission Bus Fleet. MTA announced a commitment to transition to a fully zero emission fleet using all-electric buses by 2040. This will result in moderate operating budget impacts for the maintenance of bus charging infrastructure in depots and in-route charging stations, training of personnel in maintaining and servicing high-voltage equipment/systems, safe disposal of end-of-life battery units complying with environmental regulations, and electric power expenses. Although the reduction in diesel and Compressed Natural Gas (CNG) fuel consumption will result in fuel expense savings, the cost of electric energy will be significantly greater. NYCT would also need to evaluate the Bus service plan, taking into consideration the operating performance of electric bus operating range, charging time in-route and at depots, existing route conditions, route mileage, operating speed, hours of service, and all run-on, run-off, and layover requirements. Preliminary assessment shows a fleet growth and increase in bus operator resources. This project also impacts the operating budget of MTA Bus.
+[p158_c0005] Project: Station Elevators (ADA). To comply with Federal mandates associated with Americans with Disabilities Act, Construction & Development has accelerated new elevator installations and rehabilitation of existing elevators throughout the transit system. As new and rehabilitated elevators enter service, the Elevators & Escalators department in the Subway Division will assume responsibilities for maintaining these assets. Rehabilitated elevators will be maintained by in-house workforce and new elevators will be maintained by third-party contractors with program oversight by an in-house contract management team. Rehabilitated elevators are also being replaced and maintained by 3 rd Party contractors. E&E is providing the program oversight via an in-house contract management team. On an annual basis, the Office of Management & Budget will work with the Elevators & Escalators department to determine the appropriate level of funding necessary for ongoing maintenance.
+[p158_c0006] Communication Based Train Control Projects (CBTC). CBTC projects are signal modernization projects that replace old legacy conventional signaling systems with new CBTC signaling systems. There are several CBTC projects at various stages of deployment that will impact the operating budget in the form of additional staffing needs as well as third-party contracting needs. Forthcoming third-party contractual needs and increases in personnel are still being reviewed.
+[p158_c0007] _IV-27_
+
+## Page 159
+
+### [p159_c0001] LONG ISLAND RAIL ROAD CAPITAL PROJECTS
+[p159_c0002] None.
+### [p159_c0003] METRO-NORTH RAILROAD CAPITAL PROJECTS
+[p159_c0004] Project: Penn Station Access. This project will create an extension of Metro-North Railroad's New Haven Line to reach Penn Station, creating four new accessible stations, improve existing tracks and bridges and cut travel times from the Bronx to Manhattan by as much as 50 minutes with trains running between Penn Station and New Rochelle with stops at new stations in the Bronx: Hunts Point, Parkchester, Morris Park and Co-Op City. To allow for sufficient time to train new train crews, operations managers and maintenance staff, hiring is planned to start in the coming years. At completion, the net impact on the operating budget is projected to be $45 million.
+### [p159_c0005] MTA SYSTEM-WIDE CAPITAL PROJECTS
+[p159_c0006] Project: Enterprise Asset Management. It is expected that the project will result in significant operating budget impacts leading up to and after its full implementation. Impacts will include both necessary investments and efficiency savings.
+[p159_c0007] _IV-28_
+
+## Page 160
+
+### [p160_c0001] V. Agency Financial Plans
+
+## Page 161
+
+### [p161_c0001] Bridges and Tunnels
+
+## Page 162
+
+### [p162_c0001] MTA BRIDGES AND TUNNELS 2026 Preliminary Budget July Financial Plan 2026–2029
+### [p162_c0002] FINANCIAL OVERVIEW
+[p162_c0003] Bridges and Tunnels (B&T), remains a critical source of revenue in support to mass transit, and the July Plan projects $1.6 billion of support in 2025, a 1.7% increase when compared to the Adopted Budget. This change reflects favorable revenue during the first four months of 2025, and lower operating expenses due to the Bridges & Tunnels Planned Attrition Initiative (see below). The 2025 Mid-Year Forecast reflects favorable plan-to-plan changes in toll revenue of $1.3 million (0.05%), and total operating expenses of $9.9 million (1.9%).
+### [p162_c0004] Congestion Pricing Relief Zone (CRZ)
+[p162_c0005] The Congestion Relief Zone (CRZ), also known as the Central Business District Tolling Program (CBDTP), officially began operations on January 5, 2025. It was legislated to generate and leverage one billion dollars annually in dedicated revenues to support $15 billion of bonding for the 2020-24 Capital Program and subsequent capital programs by imposing tolls for vehicles entering or remaining the Congestion Relief Zone, which is defined as Manhattan south of and inclusive of 60th Street, not including the FDR Drive or the West Side Highway (which includes the Battery Park underpass and or any surface roadway portion of the Hugh L. Carey Tunnel that connects to West Street). CBDTP toll collections commenced on January 5, 2025, at a rate of 60% of the toll structure originally approved by the TBTA Board in March 2024 for the program's first three years. It will increase to 80% for the following three years, finally graduating to the full toll structure beginning in 2031.
+[p162_c0006] The 2025 Mid-Year Forecast for CBDTP revenues is unchanged from the February Plan, forecasted at $500 million annually through 2027, and then $700 million annually in 2028 and 2029. CBDTP revenues are fully committed to capital funding for the 2020-24 Capital Program.
+### [p162_c0007] Bridges & Tunnels Planned Attrition Initiative
+[p162_c0008] As part of the MTA's ongoing commitment to operational efficiency and long-term financial sustainability, the Authority is implementing a phased supplementation of public safety responsibilities at MTA Bridges and Tunnels facilities with the MTA Police Department (MTAPD). This began in early 2025 with the Bronx-Whitestone and Throgs Neck Bridges and will continue as needs dictate.
+[p162_c0009] This is expected to capture economies of scale and generate operational efficiencies while maintaining high safety standards. The initiative aligns with the MTA's broader transformation efforts and reflects a financially responsible approach to workforce planning and customer expectations.
+[p162_c0010] _V-1_
+
+## Page 163
+
+### [p163_c0001] 2025 MID-YEAR FORECAST
+[p163_c0002] The 2025 Mid-Year Forecast projects a total net income of $2,105.4 million, an increase of $15.1 million compared to the Adopted Budget.
+[p163_c0003] Total revenue is forecast at $2,648.0 million, which is $5.3 million greater than the Adopted Budget and is due to higher-than-projected Toll Revenue through April, slightly higher Other Operating Revenue, and higher Investment Income reflecting higher than expected interest rates. Toll Revenue, which accounts for 99% of total revenues, is projected at $2,584.7 million in the Mid-Year Forecast compared to $2,583.4 million in the Adopted Budget.
+[p163_c0004] The Mid-Year Forecast includes expenses totaling $542.6 million before Depreciation and GASB Adjustments, $9.9 million lower than the Adopted Budget. Labor costs of $267.6 million are $8.0 million below the 2025 Adopted Budget due to the attrition of B&T staff as a result of the bargained 20-year retirement option. Non-labor expenses are $275.0 million – $1.9 million below the Adopted Budget – largely due to lower projected insurance, electric power and credit card fee expenses, partially offset by higher Other Than Personnel Services (OTPS).
+[p163_c0005] Total support to mass transit is $1,569.7 million compared to $1,543.8 million in the Adopted Budget, an increase of $25.9 million. The projected increase is due to better than projected toll revenue and lower operating expenses, which are detailed in the Summary of Major Plan-to-Plan Changes section.
+[p163_c0006] Total year-end positions are forecasted at 1,004, which is a decrease of 41 non-reimbursable positions from the Adopted Budget. This includes 61 capital reimbursable full-time equivalents.
+### [p163_c0007] 2026 PRELIMINARY BUDGET BASELINE
+[p163_c0008] In the 2026 Preliminary Budget, net income is projected at $2,127.1 million compared to $2,105.4 million in the February Plan, an increase of $21.7 million. Total revenue is budgeted at $2,670.2 million, reflecting no change from the February Plan. The Preliminary Budget projects toll revenue at $2,610.8 million, reflecting no change from the February Plan.
+[p163_c0009] Expenses before depreciation and GASB adjustments total $543.2 million, comprised of $265.4 million in labor expenses and $277.8 million in non-labor costs. Overall expenses are $21.6 million below the February Plan, which is detailed in the Summary of Major Plan-to-Plan Changes section.
+[p163_c0010] Total support to mass transit is $1,491.5 million in the 2026 Preliminary Budget compared to $1,474.9 million in the February Plan, an increase of $16.6 million mainly due to lower labor costs, partially offset by higher B&T Debt Service costs.
+[p163_c0011] In 2026, total headcount is budgeted at 965, including 61 capital reimbursable full-time equivalents.
+### [p163_c0012] 2027-2029 PROJECTIONS
+[p163_c0013] The 2027 projection for net income is $2,153.6 million compared to $2,117.2 million in the February Plan. This consists of $2,696.2 million in total revenue and $542.7 million in expenses. The expenses include $262.8 million in labor costs and $279.9 million in non-labor expenses.
+[p163_c0014] _V-2_
+
+## Page 164
+
+[p164_c0001] The 2028 projection for net income is $2,183.5 million, compared to $2,119.1 million in the February Plan. This consists of $2,713.8 million in total revenues, offset by $530.3 million in expenses. The expenses are comprised of $246.2 million in labor costs and $284.1 million in non-labor expenses.
+[p164_c0002] In 2029, the projection for net income is $2,207.5 million. This consists of $2,725.2 million in total revenues, offset by $517.6 million in expenses. The expenses are comprised of $229.1 million in labor costs and $288.5 million in non-labor expenses.
+[p164_c0003] Total headcount is planned at 933 for 2027, 838 for 2028, and 767 for 2029, including 61 capitaly reimbursable positions.
+[p164_c0004] Details for year-to-year changes, reconciliations of the July Financial Plan to the February Plan, and assumptions guiding traffic and headcount projections are discussed in the sections that follow.
+[p164_c0005] _V-3_
+
+## Page 165
+
+### [p165_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p165_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Toll Revenue $2,572,260 $2,584,730 $2,610,788 $2,636,652 $2,654,148 $2,665,501 Other Operating Revenue 26,536 27,198 27,099 27,099 27,099 27,099 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income 11,250 5,098 1,240 1,240 1,240 1,240 Total Revenues $2,610,046 $2,617,026 $2,639,127 $2,664,991 $2,682,487 $2,693,840 Operating Expense Labor: Payroll $108,792 $98,318 $96,036 $93,401 $85,229 $77,675 Overtime 30,974 29,732 27,597 24,713 18,946 13,672 Health and Welfare 28,640 29,423 29,559 30,524 30,137 30,061 OPEB Current Payments 34,830 34,830 36,815 38,914 41,132 43,476 Pension 34,019 35,819 36,855 37,126 34,063 28,959 Other Fringe Benefits 15,610 17,019 15,928 15,390 13,842 12,454 Reimbursable Overhead (6,938) (8,523) (8,523) (8,523) (8,523) (8,523) Total Labor Expenses $245,927 $236,618 $234,267 $231,544 $214,827 $197,774 Non-Labor: Electric Power $4,504 $4,994 $5,484 $5,614 $6,049 $6,351 Fuel 2,196 2,011 1,963 1,991 2,003 2,106 Insurance 12,736 11,449 14,006 12,954 13,789 14,151 Claims 0.070 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 155,437 166,657 165,784 167,973 170,262 173,082 Professional Services Contracts 21,384 27,682 28,445 29,117 29,691 30,387 Materials and Supplies 4,974 4,074 3,942 4,036 4,116 4,213 Other Business Expenses 63,322 58,168 58,171 58,195 58,215 58,239 Total Non-Labor Expenses $264,623 $275,037 $277,794 $279,881 $284,125 $288,529 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $510,550 $511,655 $512,061 $511,424 $498,951 $486,303 Depreciation $228,346 $221,309 $224,583 $228,828 $232,453 $236,849 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (11,646) (27,719) (28,372) (28,261) (24,819) (19,314) GASB 75 OPEB Expense Adjustment 12,686 21,012 19,535 19,319 19,008 18,669 GASB 87 Lease Adjustment 7,488 5,616 5,616 5,616 5,616 5,616 GASB 96 SBITA Adjustment 0.108 0.002 0.002 0.002 0.002 0.002 Total Non-Cash Liability Adjustments $236,981 $220,221 $221,364 $225,505 $232,261 $241,822 Total Expenses After Depreciation and GASB Adjs. $747,532 $731,875 $733,425 $736,929 $731,212 $728,125 Less: Depreciation $228,346 $221,309 $224,583 $228,828 $232,453 $236,849 GASB 68 Pension Expense Adj. (11,646) (27,719) (28,372) (28,261) (24,819) (19,314) GASB 75 OPEB Expense Adj 12,686 21,012 19,535 19,319 19,008 18,669 GASB 87 Lease Adjustment 7,488 5,616 5,616 5,616 5,616 5,616 GASB 96 SBITA Adjustment 0.108 0.002 0.002 0.002 0.002 0.002 Total Expenses $510,550 $511,655 $512,061 $511,424 $498,951 $486,303 Net Surplus/(Deficit) $2,099,496 $2,105,371 $2,127,067 $2,153,567 $2,183,536 $2,207,538
+```
+[p165_c0003] _V-4_
+
+## Page 166
+
+### [p166_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p166_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Toll Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 16.350 30.958 31.101 31.225 31.335 31.335 Investment Income 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $16.350 $30.958 $31.101 $31.225 $31.335 $31.335 Operating Expense Labor: Payroll $5.414 $13.603 $13.684 $13.766 $13.832 $13.832 Overtime 0.853 1.039 1.060 1.060 1.060 1.060 Health and Welfare 1.114 2.816 2.831 2.846 2.862 2.862 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 1.429 3.424 3.443 3.462 3.481 3.481 Other Fringe Benefits 0.601 1.552 1.560 1.568 1.576 1.576 Reimbursable Overhead 6.938 8.523 8.523 8.523 8.523 8.523 Total Labor Expenses $16.350 $30.958 $31.101 $31.225 $31.335 $31.335 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $16.350 $30.958 $31.101 $31.225 $31.335 $31.335 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p166_c0003] _V-5_
+
+## Page 167
+
+### [p167_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p167_c0002]
+
+```text
+Actual Mid-Year Preliminary 2024 Forecast Budget 2027 2028 2029 Non-Reimbursable / Reimbursable Page 1 of 2 Operating Revenue Toll Revenue $2,572,260 $2,584,730 $2,610,788 $2,636,652 $2,654,148 $2,665,501 Other Operating Revenue 26,536 27,198 27,099 27,099 27,099 27,099 Capital and Other Reimbursements 16,350 30,958 31,101 31,225 31,335 31,335 Investment Income 11,250 5,098 1,240 1,240 1,240 1,240 Total Revenues $2,626,396 $2,647,984 $2,670,228 $2,696,217 $2,713,822 $2,725,175 Operating Expense Labor: Payroll $114,206 $111,922 $109,720 $107,167 $99,061 $91,507 Overtime 31,827 30,772 28,657 25,773 20,006 14,732 Health and Welfare 29,754 32,239 32,389 33,370 32,999 32,922 OPEB Current Payments 34,830 34,830 36,815 38,914 41,132 43,476 Pension 35,449 39,243 40,298 40,587 37,545 32,440 Other Fringe Benefits 16,211 18,571 17,488 16,958 15,419 14,030 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $262,277 $267,576 $265,368 $262,769 $246,161 $229,109 Non-Labor: Electric Power $4,504 $4,994 $5,484 $5,614 $6,049 $6,351 Fuel 2,196 2,011 1,963 1,991 2,003 2,106 Insurance 12,736 11,449 14,006 12,954 13,789 14,151 Claims 0.070 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 155,437 166,657 165,784 167,973 170,262 173,082 Professional Services Contracts 21,384 27,682 28,445 29,117 29,691 30,387 Materials and Supplies 4,974 4,074 3,942 4,036 4,116 4,213 Other Business Expenses 63,322 58,168 58,171 58,195 58,215 58,239 Total Non-Labor Expenses $264,623 $275,037 $277,794 $279,881 $284,125 $288,529 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $526,900 $542,612 $543,161 $542,650 $530,286 $517,637 Depreciation $228,346 $221,309 $224,583 $228,828 $232,453 $236,849 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (11,646) (27,719) (28,372) (28,261) (24,819) (19,314) GASB 75 OPEB Expense Adjustment 12,686 21,012 19,535 19,319 19,008 18,669 GASB 87 Lease Adjustment 7,488 5,616 5,616 5,616 5,616 5,616 GASB 96 SBITA Adjustment 0.108 0.002 0.002 0.002 0.002 0.002 Total Non-Cash Liability Adjustments $236,981 $220,221 $221,364 $225,505 $232,261 $241,822 Total Expenses After Depreciation and GASB Adjs. $763,881 $762,833 $764,525 $768,154 $762,547 $759,460 Less: Depreciation $228,346 $221,309 $224,583 $228,828 $232,453 $236,849 GASB 68 Pension Expense Adj. (11,646) (27,719) (28,372) (28,261) (24,819) (19,314) GASB 75 OPEB Expense Adj 12,686 21,012 19,535 19,319 19,008 18,669 GASB 87 Lease Adjustment 7,488 5,616 5,616 5,616 5,616 5,616 GASB 96 SBITA Adjustment 0.108 0.002 0.002 0.002 0.002 0.002 Total Expenses $526,900 $542,612 $543,161 $542,650 $530,286 $517,637 Net Surplus/(Deficit) $2,099,496 $2,105,371 $2,127,067 $2,153,567 $2,183,536 $2,207,538
+```
+[p167_c0003] _V-6_
+
+## Page 168
+
+### [p168_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026 - 2029 Accrual Statement of Operations by Category ($ in millions)
+[p168_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Page 2 of 2 Net Surplus/(Deficit) $2,099.496 $2,105.371 $2,127.067 $2,153.567 $2,183.536 $2,207.538 Deductions from Income: Less: Capitalized Assets $8.580 $25.533 $23.799 $24.388 $24.893 $25.503 B&T Capital Reserves & Prepaid Exp. 3.432 0.000 0.000 0.000 0.000 0.000 GASB 45 Reserves 0.100 0.000 0.000 0.000 0.000 0.000 Adjusted Net Surplus/(Deficit) $2,087.384 $2,079.838 $2,103.267 $2,129.179 $2,158.643 $2,182.035 Less: Debt Service $653.559 $736.431 $818.841 $876.729 $969.547 $949.904 Less: Contribution to the Capital Program 0.000 0.000 0.000 0.000 0.000 0.000 Income Available for Distribution $1,433.825 $1,343.407 $1,284.426 $1,252.450 $1,189.095 $1,232.131 Distributable To: MTA - Investment Income $11.250 $5.098 $1.240 $1.240 $1.240 $1.240 MTA - Distributable Income 743.947 699.172 667.392 651.773 622.671 646.034 NYCT - Distributable Income 678.729 639.138 615.795 599.437 565.185 584.856 Total Distributable Income $1,433.925 $1,343.407 $1,284.426 $1,252.450 $1,189.095 $1,232.131 Actual Cash Transfers: MTA - Investment Income - Prior Year $12.369 $11.250 $5.098 $1.240 $1.240 $1.240 MTA - Cash Surplus Transfer 752.061 735.036 670.570 653.335 625.581 643.698 NYCT - Cash Surplus Transfer 688.833 666.175 618.129 601.073 568.610 582.889 Total Cash Transfers $1,453.263 $1,412.460 $1,293.797 $1,255.648 $1,195.431 $1,227.827 SUPPORT TO MASS TRANSIT: Total Revenue $2,626.396 $2,647.984 $2,670.228 $2,696.217 $2,713.822 $2,725.175 Total Expenses Before Non-Cash Liability Adj. 526.900 542.612 543.161 542.650 530.286 517.637 Net Operating Income $2,099.496 $2,105.371 $2,127.067 $2,153.567 $2,183.536 $2,207.538 Deductions from Operating Income: B&T Debt Service $416.043 $510.134 $611.781 $667.646 $747.173 $722.993 Contribution to the Capital Program 0.000 0.000 0.000 0.000 0.000 0.000 Capitalized Assets 8.580 25.533 23.799 24.388 24.893 25.503 B&T Capital Reserves 3.432 0.000 0.000 0.000 0.000 0.000 GASB Reserves 0.100 0.000 0.000 0.000 0.000 0.000 Total Deductions from Operating Income $428.155 $535.667 $635.581 $692.034 $772.066 $748.497 Total Support to Mass Transit $1,671.341 $1,569.704 $1,491.486 $1,461.533 $1,411.470 $1,459.041
+```
+[p168_c0003] _V-7_
+
+## Page 169
+
+### [p169_c0001] MTA BRIDGES AND TUNNELS 2026 Preliminary Budget July Financial Plan 2026–2029 Year-to-Year Changes by Category - Baseline
+### [p169_c0002] TOTAL REVENUE
+### [p169_c0003] Toll Revenue
+- [p169_c0004] • Toll Revenue is forecast at $2,584.7 million in 2025 and $2,610.8 million in 2026. Revenue growth in 2026 is attributed to an increase in traffic volume due to projected improvements in regional economic conditions and anticipated higher average toll revenue yield. • Toll Revenue increases to $2,636.7 million in 2027, $2,654.1 million in 2028, and $2,665.5 million in 2029, also reflecting expected improvements in the regional economy. (See the Traffic/Utilization section for more information).
+### [p169_c0005] Other Operating Revenue
+- [p169_c0006] • Other Operating Revenue, which consists mainly of E-ZPass administrative fees and receipts from the Battery Parking Garage, is estimated at $27.1 million in each year of the financial plan.
+### [p169_c0007] Capital and Other Reimbursements
+- [p169_c0008] • Capital and Other Reimbursements are tied to expected Capital Program work. • Reimbursements are estimated at $31.0 million in 2025, $31.1 million in 2026, $31.2 million in 2027, $31.3 million in 2028 and 2029.
+### [p169_c0009] Investment Income
+- [p169_c0010] • Investment Income reflects projected short-term investment yields on estimated fund balances and is estimated at $1.2 million annually for 2026 through 2029.
+### [p169_c0011] TOTAL EXPENSES
+### [p169_c0012] Payroll
+- [p169_c0013] • Payroll costs decrease from $98.3 million in 2025 to $96.0 million in 2026, primarily due to the impact of the Planned Attrition Initiative, partially offset by the expected filling of positions that were vacant in 2025, contractual step-up increases and assumed wage adjustments beyond contract expirations. • Thereafter, projected costs decrease to $93.4 million in 2027, $85.2 million in 2028, and $77.7 million in 2029, primarily due to attrition, and partially offset by contractual step-up increases and inflationary adjustments. • Salaries for most represented employees include the latest collective bargaining agreement settlements; assumptions for unsettled labor agreements assume 3% in 2023, 3% in 2024, 3.25% in 2025, and annual increases of 2% thereafter. • Non-represented employee wages are assumed to increase 2% on January 1, 2026, followed by 2% annually on January 1 of each year thereafter.
+### [p169_c0014] Overtime
+- [p169_c0015] • Overtime decreases by $2.1 million from 2025 to 2026, mainly due to planned attrition initiative, partially offset by higher wage rates based on settled collective bargaining agreements and future wage assumptions.
+[p169_c0016] _V-8_
+
+## Page 170
+
+### [p170_c0001] Health and Welfare/OPEB Current Payments
+- [p170_c0002] • In 2026, there is an increase of $2.1 million from 2025 primarily reflecting the anticipated filling of positions that were vacant in 2025. • Expenses increase by $2.4 million on average from 2027 through 2029, primarily reflecting revised assumptions and forecasted inflation.
+### [p170_c0003] Pensions
+- [p170_c0004] • Pension expenses incorporate current projections for NYCERS provided by the NYC Office of the Actuary and outyear assumptions. Pension costs are also impacted by attrition. • Projected annual costs increase from $39.2 million in 2025 to $40.3 million in 2026, increase to $40.6 million in 2027, and decrease to $37.5 million in 2028 and $32.4 million in 2029.
+### [p170_c0005] Other Fringe Benefits
+- [p170_c0006] • Year-to-year growth in Other Fringe Benefits is generally proportionate to changes in payroll and overtime and is also impacted by attrition. • Other Fringe Benefits range between $18.6 million in 2025 to $14.0 million in 2029.
+### [p170_c0007] Electric Power
+- [p170_c0008] • Electricity costs are based on the usage and rate projections. • Expenses are estimated at $5.0 million in 2025 and increase by $0.5 million to $5.5 million in 2026. On average, expenses increase by $0.3 million annually from 2027 through 2029.
+### [p170_c0009] Fuel
+- [p170_c0010] • Fuel expense projections are driven mainly by usage and rate forecasts for heating fuel. • Fuel expenses are estimated at $2.0 million in 2025, then remain relatively flat through 2029.
+### [p170_c0011] Insurance
+- [p170_c0012] • Reflects current insurance policy growth assumptions. Costs range from $11.4 million in 2025 to $14.2 million in 2029.
+### [p170_c0013] Maintenance and Other Operating Contracts
+- [p170_c0014] • Expenses are forecast to be $166.7 million in 2025 and decrease to $165.8 million in 2026 largely due to a decrease in Major Maintenance & Painting expenses. • Cost estimates increase to $168.0 million in 2027, $170.3 million in 2028, and $173.1 million in 2029 largely reflecting Major Maintenance & Painting requirements as well as inflationary adjustments.
+### [p170_c0015] Professional Service Contracts
+- [p170_c0016] • Total costs increase by $0.8 million in 2026, mainly due to revised legal fees and MTA chargebacks. • Estimated costs grow on average $0.7 million for 2027 through 2029, primarily due to inflationary adjustments.
+### [p170_c0017] Materials and Supplies
+- [p170_c0018] • Expenses decrease by $0.1 million in 2026 to $3.9 million, and average approximately $4.1 million annually through 2029 with modest year-to-year fluctuations mainly due to inflationary adjustments.
+### [p170_c0019] Other Business Expenses
+- [p170_c0020] • Other Business Expenses remain relatively flat at $58.2 million from 2025 through 2029.
+[p170_c0021] _V-9_
+
+## Page 171
+
+### [p171_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p171_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable Operating Revenues Toll Revenue $2,584,730 $2,610,788 $26,058 $2,636,652 $25,864 $2,654,148 $17,496 $2,665,501 $11,353 Other Operating Revenue 27,198 27,099 (0.099) 27,099 0.000 27,099 0.000 27,099 0.000 Investment Income 5,098 1,240 (3,858) 1,240 0.000 1,240 0.000 1,240 0.000 Total Revenues $2,617,026 $2,639,127 $22,101 $2,664,991 $25,864 $2,682,487 $17,496 $2,693,840 $11,353 Operating Expenses Labor: Payroll $98,318 $96,036 $2,282 $93,401 $2,635 $85,229 $8,172 $77,675 $7,554 Overtime 29,732 27,597 2,135 24,713 2,884 18,946 5,767 13,672 5,274 Health and Welfare 29,423 29,559 (0.135) 30,524 (0.965) 30,137 0.387 30,061 0.076 OPEB Current Payments 34,830 36,815 (1,985) 38,914 (2,098) 41,132 (2,218) 43,476 (2,345) Pension 35,819 36,855 (1,037) 37,126 (0.270) 34,063 3,062 28,959 5,104 Other Fringe Benefits 17,019 15,928 1,091 15,390 0.537 13,842 1,548 12,454 1,389 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (8,523) (8,523) 0.000 (8,523) 0.000 (8,523) 0.000 (8,523) 0.000 Total Labor Expenses $236,618 $234,267 $2,351 $231,544 $2,723 $214,827 $16,717 $197,774 $17,053 Non-Labor: Electric Power $4,994 $5,484 ($0.489) $5,614 ($0.131) $6,049 ($0.435) $6,351 ($0.302) Fuel 2,011 1,963 (0.048) 1,991 (0.028) 2,003 (0.012) 2,106 (0.102) Insurance 11,449 14,006 (2,557) 12,954 1,052 13,789 (0.835) 14,151 (0.362) Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 166,657 165,784 0.874 167,973 (2.190) 170,262 (2.289) 173,082 (2.820) Professional Services Contracts 27,682 28,445 (0.763) 29,117 (0.672) 29,691 (0.574) 30,387 (0.696) Materials and Supplies 4,074 3,942 0.132 4,036 (0.094) 4,116 (0.080) 4,213 (0.097) Other Business Expenses 58,168 58,171 (0.002) 58,195 (0.024) 58,215 (0.020) 58,239 (0.025) Total Non-Labor Expenses $275,037 $277,794 ($2,757) $279,881 ($2,087) $284,125 ($4,244) $288,529 ($4,404) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $511,655 $512,061 ($0.406) $511,424 $0.636 $498,951 $12,473 $486,303 $12,649 Depreciation $221,309 $224,583 ($3,274) $228,828 ($4,245) $232,453 ($3,625) $236,849 ($4,397) GASB 68 Pension Expense Adjustment (27,719) (28,372) 0.653 (28,261) (0.111) (24,819) (3,442) (19,314) (5,504) GASB 75 OPEB Expense Adjustment 21,012 19,535 1,477 19,319 0.215 19,008 0.311 18,669 0.340 GASB 87 Lease Adjustment 5,616 5,616 0.000 5,616 0.000 5,616 0.000 5,616 0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Expenses After Depreciation and GASB Adjs. $731,875 $733,425 ($1,549) $736,929 ($3,504) $731,212 $5,717 $728,125 $3,087 Less: Depreciation $221,309 $224,583 ($3,274) $228,828 ($4,245) $232,453 ($3,625) $236,849 ($4,397) GASB 68 Pension Expense Adjustment (27,719) (28,372) 0.653 (28,261) (0.111) (24,819) (3,442) (19,314) (5,504) GASB 75 OPEB Expense Adjustment 21,012 19,535 1,477 19,319 0.215 19,008 0.311 18,669 0.340 GASB 87 Lease Adjustment 5,616 5,616 0.000 5,616 0.000 5,616 0.000 5,616 0.000 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Expenses $511,657 $512,063 ($0.406) $511,426 $0.636 $498,953 $12,473 $486,305 $12,649 Net Surplus/(Deficit) $2,105,371 $2,127,067 $21,695 $2,153,567 $26,500 $2,183,536 $29,969 $2,207,538 $24,002
+```
+[p171_c0003] _V-10_
+
+## Page 172
+
+### [p172_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p172_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Reimbursable Operating Revenues Toll Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 30.958 31.101 0.143 31.225 0.125 31.335 0.109 31.335 0.000 Total Revenues $30.958 $31.101 $0.143 $31.225 $0.125 $31.335 $0.109 $31.335 $0.000 Operating Expenses Labor: Payroll $13.603 $13.684 ($0.080) $13.766 ($0.082) $13.832 ($0.066) $13.832 $0.000 Overtime 1.039 1.060 (0.021) 1.060 0.000 1.060 0.000 1.060 0.000 Health and Welfare 2.816 2.831 (0.015) 2.846 (0.015) 2.862 (0.016) 2.862 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 3.424 3.443 (0.019) 3.462 (0.019) 3.481 (0.020) 3.481 0.000 Other Fringe Benefits 1.552 1.560 (0.008) 1.568 (0.008) 1.576 (0.008) 1.576 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 8.523 8.523 0.000 8.523 0.000 8.523 0.000 8.523 0.000 Total Labor Expenses $30.958 $31.101 ($0.143) $31.225 ($0.125) $31.335 ($0.109) $31.335 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $30.958 $31.101 ($0.143) $31.225 ($0.125) $31.335 ($0.109) $31.335 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p172_c0003] _V-11_
+
+## Page 173
+
+### [p173_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+### [p173_c0002] Non-Reimbursable and Reimbursable Page 1 of 2
+### [p173_c0003] Operating Revenues
+[p173_c0004]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Toll Revenue $2,584,730 $2,610,788 $26,058 $2,636,652 $25,864 $2,654,148 $17,496 $2,665,501 $11,353 Other Operating Revenue 27,198 27,099 (0,099) 27,099 0,000 27,099 0,000 27,099 0,000 Investment Income 5,098 1,240 (3,858) 1,240 0,000 1,240 0,000 1,240 0,000 Capital and Other Reimbursements 30,958 31,101 0,143 31,225 0,125 31,335 0,109 31,335 0,000 Total Revenues $2,647,984 $2,670,228 $22,244 $2,696,217 $25,989 $2,713,822 $17,605 $2,725,175 $11,353
+```
+### [p173_c0005] Operating Expenses
+### [p173_c0006] Labor:
+[p173_c0007]
+
+```text
+Payroll $111,922 $109,720 $2,201 $107,167 $2,553 $99,061 $8,106 $91,507 $7,554 Overtime 30,772 28,657 2,115 25,773 2,884 20,006 5,767 14,732 5,274 Health and Welfare 32,239 32,389 (0,150) 33,370 (0,981) 32,999 0,371 32,922 0,076 OPEB Current Payments 34,830 36,815 (1,985) 38,914 (2,098) 41,132 (2,218) 43,476 (2,345) Pension 39,243 40,298 (1,056) 40,587 (0,289) 37,545 3,042 32,440 5,104 Other Fringe Benefits 18,571 17,488 1,084 16,958 0,529 15,419 1,540 14,030 1,389 Contribution to GASB Fund 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 Reimbursable Overhead 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 Total Labor Expenses $267,576 $265,368 $2,208 $262,769 $2,599 $246,161 $16,608 $229,109 $17,053
+```
+### [p173_c0008] Non-Labor:
+[p173_c0009]
+
+```text
+Electric Power $4,994 $5,484 ($0,489) $5,614 ($0,131) $6,049 ($0,435) $6,351 ($0,302) Fuel 2,011 1,963 0,048 1,991 (0,028) 2,003 (0,012) 2,106 (0,102) Insurance 11,449 14,006 (2,557) 12,954 1,052 13,789 (0,835) 14,151 (0,362) Claims 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 Paratransit Service Contracts 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 Maintenance and Other Operating Contracts 166,657 165,784 0,874 167,973 (2,190) 170,262 (2,289) 173,082 (2,820) Professional Services Contracts 27,682 28,445 (0,763) 29,117 (0,672) 29,691 (0,574) 30,387 (0,696) Materials and Supplies 4,074 3,942 0,132 4,036 (0,094) 4,116 (0,080) 4,213 (0,097) Other Business Expenses 58,168 58,171 (0,002) 58,195 (0,024) 58,215 (0,020) 58,239 (0,025) Total Non-Labor Expenses $275,037 $277,794 ($2,757) $279,881 ($2,087) $284,125 ($4,244) $288,529 ($4,404)
+```
+### [p173_c0010] Other Expense Adjustments:
+[p173_c0011]
+
+```text
+Other 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 Total Other Expense Adjustments $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000
+```
+### [p173_c0012] Total Expenses Before Depreciation and GASB Adjs.
+[p173_c0013]
+
+```text
+$542,612 $543,161 ($0,549) $542,650 $0,512 $530,286 $12,364 $517,637 $12,649 Depreciation $221,309 $224,583 ($3,274) $228,828 ($4,245) $232,453 ($3,625) $236,849 ($4,397) GASB 68 Pension Expense Adjustment (27,719) (28,372) 0,653 (28,261) (0,111) (24,819) (3,442) (19,314) (5,504) GASB 75 OPEB Expense Adjustment 21,012 19,535 1,477 19,319 0,215 19,008 0,311 18,669 0,340 GASB 87 Lease Adjustment 5,616 5,616 0,000 5,616 0,000 5,616 0,000 5,616 0,000 GASB 49 Environmental Remediation 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000
+```
+### [p173_c0014] Total Expenses After Depreciation and GASB Adjs.
+[p173_c0015]
+
+```text
+$762,833 $764,525 ($1,692) $768,154 ($3,629) $762,547 $5,608 $759,460 $3,087 Less: Depreciation $221,309 $224,583 ($3,274) $228,828 ($4,245) $232,453 ($3,625) $236,849 ($4,397) GASB 68 Pension Expense Adjustment (27,719) (28,372) 0,653 (28,261) (0,111) (24,819) (3,442) (19,314) (5,504) GASB 75 OPEB Expense Adjustment 21,012 19,535 1,477 19,319 0,215 19,008 0,311 18,669 0,340 GASB 87 Lease Adjustment 5,616 5,616 0,000 5,616 0,000 5,616 0,000 5,616 0,000 Environmental Remediation 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000
+```
+### [p173_c0016] Total Expenses
+[p173_c0017]
+
+```text
+$542,614 $543,163 ($0,549) $542,652 $0,512 $530,288 $12,364 $517,639 $12,649
+```
+### [p173_c0018] Net Surplus/(Deficit)
+[p173_c0019]
+
+```text
+$2,105,371 $2,127,067 $21,695 $2,153,567 $26,500 $2,183,536 $29,969 $2,207,538 $24,002
+```
+[p173_c0020] _V-12_
+
+## Page 174
+
+### [p174_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026 - 2029 Accrual Statement of Operations by Category ($ in millions)
+[p174_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable / Reimbursable Page 2 of 2 Net Surplus/(Deficit) $2,105.371 $2,127.067 $21.695 $2,153.567 $26.500 $2,183.536 $29.969 $2,207.538 $24.002 Deductions from Income: Less: Capitalized Assets $25.533 $23.799 $1.734 $24.388 ($0.588) $24.893 ($0.506) $25.503 ($0.610) Capitalized Reserves 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 45 Reserves 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Adjusted Net Surplus/(Deficit) $2,079.838 $2,103.267 $23.429 $2,129.179 $25.912 $2,158.643 $29.464 $2,182.035 $23.392 Less: Debt Service $736.431 $818.841 ($82.410) $876.729 ($57.889) $969.547 ($92.818) $949.904 $19.643 Less: Contribution to the Capital Program $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Income Available for Distribution $1,343.407 $1,284.426 ($58.981) $1,252.450 ($31.977) $1,189.095 ($63.355) $1,232.131 $43.035 Distributable To: MTA - Investment Income $5.098 $1.240 ($3.858) $1.240 $0.000 $1.240 $0.000 $1.240 $0.000 MTA - Distributable Income 699.172 667.392 (31.780) 651.773 (15.619) 622.671 (29.102) 646.034 23.364 NYCT - Distributable Income 639.138 615.795 (23.343) 599.437 (16.358) 565.185 (34.252) 584.856 19.671 Total Distributable Income: $1,343.407 $1,284.426 ($58.981) $1,252.450 ($31.977) $1,189.095 ($63.355) $1,232.131 $43.035 Actual Cash Transfers: MTA - Investment Income - Prior Year $11.250 $5.098 ($6.151) $1.240 ($3.858) $1.240 $0.000 $1.240 $0.000 MTA - Cash Surplus Transfer 735.036 670.570 (64.466) 653.335 (17.235) 625.581 (27.754) 643.698 18.117 NYCT - Cash Surplus Transfer 666.175 618.129 (48.046) 601.073 (17.056) 568.610 (32.463) 582.889 14.279 Total Cash Transfers: $1,412.460 $1,293.797 ($118.663) $1,255.648 ($38.149) $1,195.431 ($60.217) $1,227.827 $32.396 SUPPORT TO MASS TRANSIT: Total Revenue $2,647.984 $2,670.228 $22.244 $2,696.217 $25.989 $2,713.822 $17.605 $2,725.175 $11.353 Total Expenses Before Non-Cash Liability Adjs. 542.612 543.161 (0.549) 542.650 0.512 530.286 12.364 517.637 12.649 Net Operating Income: $2,105.371 $2,127.067 $21.695 $2,153.567 $26.500 $2,183.536 $29.969 $2,207.538 $24.002 Deductions from Operating Income: B&T Debt Service $510.134 $611.781 ($101.648) $667.646 ($55.864) $747.173 ($79.527) $722.993 $24.179 Contribution to the Capital Program 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capitalized Assets 25.533 23.799 1.734 24.388 (0.588) 24.893 (0.506) 25.503 (0.610) Reserves 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB Reserves 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Deductions from Operating Income: $535.667 $635.581 ($99.914) $692.034 ($56.453) $772.066 ($80.032) $748.497 $23.570 Total Support to Mass Transit: $1,569.704 $1,491.486 ($78.219) $1,461.533 ($29.952) $1,411.470 ($50.063) $1,459.041 $47.571
+```
+[p174_c0003] _V-13_
+
+## Page 175
+
+### [p175_c0001] MTA BRIDGES AND TUNNELS 2026 Preliminary Budget July Financial Plan 2026–2029 Summary of Major Plan-to-Plan Changes
+### [p175_c0002] 2025: ADOPTED BUDGET VS. MID-YEAR FORECAST
+### [p175_c0003] NON-REIMBURSABLE
+### [p175_c0004] REVENUE
+### [p175_c0005] Toll Revenue
+- [p175_c0006] • Toll revenue has been revised upward by $1.3 million due to higher-than-forecast results through April and a slight increase in assumed average toll revenue yield per vehicle. (See Traffic/Utilization section for more information).
+### [p175_c0007] Other Operating Revenue
+- [p175_c0008] • Other operating revenue has been revised upward by $0.1 million, reflecting insurance proceeds received for damages incurred by Tropical Storm Ida.
+### [p175_c0009] Investment Income
+- [p175_c0010] • Investment income increases by $3.9 million reflecting higher than forecasted interest rates in 2025.
+### [p175_c0011] EXPENSES
+[p175_c0012] Non-reimbursable expenses are projected to be $9.9 million lower than the Adopted Budget, reflecting $8.0 million in lower labor costs and $1.9 million in lower non-labor expenses. The following is a brief description of the major causes for the favorable variances:
+### [p175_c0013] Payroll
+- [p175_c0014] • The $4.7 million decrease in payroll expenses is primarily due to the impact of attrition
+### [p175_c0015] Overtime
+- [p175_c0016] • The $2.5 million decrease in overtime expenses is primarily due to the impact of the planned attrition initiative.
+### [p175_c0017] Health & Welfare/OPEB Current Payment
+- [p175_c0018] • The $1.2 million decrease in Health & Welfare is primarily due to the impact of position reductions related to attrition, vacancies, and revised assumptions, and the $3.3 million decrease in OPEB Current Payment expenses is mainly due to revised assumptions.
+### [p175_c0019] Pensions
+- [p175_c0020] • The $4.7 million increase in pension expenses is primarily due to revised actuarial assumptions provided by NYCERS, partially offset by the impact of attrition.
+### [p175_c0021] Other Fringe Benefits
+- [p175_c0022] • The $1.0 million decrease in other fringe benefit expenses is primarily due to attrition.
+### [p175_c0023] Reimbursable Overhead
+- [p175_c0024] • Reimbursable Overhead is consistent with the Adopted Budget.
+[p175_c0025] _V-14_
+
+## Page 176
+
+### [p176_c0001] Electric Power
+- [p176_c0002] • The $0.5 million decrease in electric power expenses is primarily due to revised usage estimates and revised electric power assumptions.
+### [p176_c0003] Fuel
+- [p176_c0004] • The $0.2 million increase in fuel expenses is primarily due to revised usage estimates and revised fuel assumptions.
+### [p176_c0005] Insurance
+- [p176_c0006] • Insurance costs are $2.2 million lower due to updated projections.
+### [p176_c0007] Maintenance and Other Operating Contracts
+- [p176_c0008] • The $0.3 million increase is mainly driven by lower costs for maintenance of E-ZPass Equipment and the E-ZPass Customer Service Center.
+### [p176_c0009] Professional Service Contracts
+- [p176_c0010] • The $0.6 million increase is mainly driven by higher professional service contract costs partially offset by reductions in projected advertising costs.
+### [p176_c0011] Materials & Supplies
+- [p176_c0012] • The $1.4 million increase is largely due to revised automotive parts and supplies estimates.
+### [p176_c0013] Other Business Expenses
+- [p176_c0014] • The $0.9 million decrease is due to lower credit card processing fees partially offset by higher debt collection costs.
+### [p176_c0015] Deductions from Operating Income
+- [p176_c0016] • Capitalized Assets increased by $2.3 million in 2025 due to the rollover of vehicle purchase expenses from 2024.
+### [p176_c0017] Reimbursable
+- [p176_c0018] • The Mid-Year Forecast reimbursable revenue and expenses were unchanged from the Adopted Budget.
+[p176_c0019] _V-15_
+
+## Page 177
+
+### [p177_c0001] 2026-2028: JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN
+### [p177_c0002] NON-REIMBURSABLE
+### [p177_c0003] REVENUE
+### [p177_c0004] Toll Revenue
+- [p177_c0005] • The projected toll revenue forecast is $2,610.8 million in 2026, $2,636.7 million in 2027, and $2,654.1 in 2028, reflecting no change than the February Plan.
+### [p177_c0006] Other Operating Revenue
+- [p177_c0007] • Other operating revenue remains consistent with February Plan levels.
+### [p177_c0008] Investment Income
+- [p177_c0009] • Investment income remains consistent with February Plan levels.
+### [p177_c0010] EXPENSES
+[p177_c0011] Non-reimbursable expenses decrease by $21.6 million in 2026, then decrease by $36.3 million in 2027, and $64.4 million in 2028.
+### [p177_c0012] Payroll
+- [p177_c0013] • Payroll expenses decrease by $9.2 million in 2026, $14.1 million in 2027, and $24.6 million in 2028 due to the impact of position reductions related to attrition.
+### [p177_c0014] Overtime
+- [p177_c0015] • Overtime expenses decrease by $5.3 million in 2026, $9.0 million in 2027, and $15.4 million in 2028 due to the impact of position reductions related to attrition.
+### [p177_c0016] Health & Welfare/OPEB Current Payment
+- [p177_c0017] • H&W expenses decrease by $2.6 million in 2026, $3.9 million in 2027, and $4.4 million in 2028 primarily due to lower health & welfare costs driven by the impact of position reductions related to attrition, and lower OPEB costs are due to revised assumptions.
+### [p177_c0018] Pensions
+- [p177_c0019] • Pension expenses increase by $1.0 million in 2026, and $0.1 million in 2027, then decrease by $4.8 million in 2028 due to revised actuarial assumptions provided by NYCERS and outyear assumptions as well as the impact of position reductions related to attrition.
+### [p177_c0020] Other Fringe Benefits
+- [p177_c0021] • Other fringe benefit expenses decrease by $1.9 million in 2026, $3.1 million in 2027, and $5.4 million in 2028 primarily reflecting the impact of position reductions related to attrition.
+### [p177_c0022] Electric Power
+- [p177_c0023] • Electric power expenses decrease by $0.7 million in both 2026 and 2027, and by $0.4 million in 2028, primarily due to revised usage estimates and revised electric power rate assumptions.
+### [p177_c0024] Fuel
+- [p177_c0025] • Fuel expenses increase by $0.2 million in 2026, by $0.3 million in 2027, and by $0.2 million in 2028 primarily due to revised fuel usage and price assumptions.
+[p177_c0026] _V-16_
+
+## Page 178
+
+### [p178_c0001] Insurance
+- [p178_c0002] • Insurance costs decrease by $0.6 million in 2026, by $2.9 million in 2027, and by $3.6 million in 2028 based on updated projections.
+### [p178_c0003] Maintenance and Other Operating Contracts
+- [p178_c0004] • Maintenance expenses increase by $1.3 million in 2026, by $1.2 million in 2027, and by $0.9 million in 2028 primarily due to higher costs for maintenance of E-ZPass equipment, as well as reflect revised inflation assumptions.
+### [p178_c0005] Professional Service Contracts
+- [p178_c0006] • Professional services expenses decrease on average by $0.4 million through 2028 largely driven by lower advertising expenses.
+### [p178_c0007] Materials & Supplies
+- [p178_c0008] • Materials and supplies expenses increase on average by $1.2 million in each year through 2028, driven mainly by higher automotive parts and supplies costs.
+### [p178_c0009] Other Business Expenses
+- [p178_c0010] • Other business expenses decrease on average by $0.9 million through 2028 due to lower credit/debit card processing fees, partially offset by higher commissions paid for debt collection.
+### [p178_c0011] Deductions from Operating Income
+- [p178_c0012] • Estimated costs for Capitalized Assets reflect minor adjustments of less than $0.1 million in 2026 through 2028, primarily due to departmental requirements and minor adjustments for inflation assumptions.
+### [p178_c0013] Reimbursable
+- [p178_c0014] • July Plan reimbursable revenue and expenses remain unchanged from the Adopted Budget for 2026 through 2028.
+[p178_c0015] _V-17_
+
+## Page 179
+
+### [p179_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p179_c0002] NON-REIMBURSABLE
+[p179_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Financial Plan - Adjusted Net Surplus/(Deficit) $2,067.014 $2,081.613 $2,092.882 $2,094.207 Baseline Changes Revenue Vehicle Toll Revenue $1.328 ($0.000) ($0.000) $0.000 Other Operating Revenue 0.099 0.000 0.000 0.000 Investment Income 3.858 0.000 0.000 0.000 Total Revenue Changes $5.285 ($0.000) ($0.000) $0.000 Expenses Labor: Payroll $4.650 $9.183 $14.114 $24.646 Overtime 2.491 5.309 8.983 15.445 Health and Welfare 1.243 2.595 3.922 6.747 OPEB Current Payment 3.281 3.621 3.989 4.388 Pensions (4.663) (1.035) (0.111) 4.765 Other Fringe Benefits 0.986 1.925 3.148 5.404 Reimbursable Overhead (0.000) (0.000) (0.000) (0.000) Total Labor Expense Changes $7.989 $21.597 $34.046 $61.394 Non-Labor: Electric Power $0.533 $0.732 $0.719 $0.413 Fuel (0.151) (0.204) (0.250) (0.211) Insurance 2.249 0.620 2.909 3.574 Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.253 (1.288) (1.158) (0.917) Professional Service Contracts (0.552) 0.399 0.333 0.425 Materials & Supplies (1.362) (1.160) (1.195) (1.210) Other Business Expenses 0.900 0.924 0.921 0.924 Total Non-Labor Expense Changes $1.871 $0.023 $2.280 $2.999 Total Expenses before Depreciation and GASB Adjs. $9.860 $21.620 $36.325 $64.394 Add: Depreciation ($0.959) $0.253 ($0.211) $0.317 Add: GASB 68 Pension Adjustment 5.274 1.560 0.653 (4.204) Add: GASB 75 OPEB Adjustment (3.851) (2.908) (3.297) (3.688) Add: GASB 87 Lease Adjustment (0.131) (0.131) (0.131) (0.131) Add: GASB 96 Adjustment 0.000 0.000 0.000 0.000 Add: Environmental Remediation 0.000 0.000 0.000 0.000 Total Expenses after Depreciation and GASB Adjs. $10.192 $20.394 $33.339 $56.688 Less: Depreciation ($0.959) $0.253 ($0.211) $0.317 Less: GASB 75 OPEB Expense Adjustment 5.274 1.560 0.653 (4.204) Less: GASB 68 Pension Adjustment (3.851) (2.908) (3.297) (3.688) Less: GASB 87 Lease Adjustment (0.131) (0.131) (0.131) (0.131) Less: GASB 96 Adjustment 0.000 0.000 0.000 0.000 Total Expense Changes $9.860 $21.620 $36.325 $64.394 Total Net Surplus/(Deficit) Changes $15.144 $21.620 $36.325 $64.394 Deductions from Income Capitalized Assets ($2.320) $0.034 ($0.028) $0.042 Capital Reserves 0.000 0.000 0.000 0.000 GASB 45 Reserves 0.000 0.000 0.000 0.000 Total Deductions from Income ($2.320) $0.034 ($0.028) $0.042 Total Adjusted Net Surplus/(Deficit) Changes $12.824 $21.654 $36.297 $64.356 2025 July Financial Plan - Adjusted Net Surplus/(Deficit) $2,079.838 $2,103.267 $2,129.179 $2,158.643
+```
+[p179_c0004] _V-18_
+
+## Page 180
+
+### [p180_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p180_c0002] REIMBURSABLE
+[p180_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Financial Plan - Adjusted Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 Baseline Changes Revenue Vehicle Toll Revenue $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 Capital and Other Reimbursement (0.000) 0.000 (0.000) (0.000) Investment Income 0.000 0.000 0.000 0.000 Total Revenue Changes ($0.000) $0.000 ($0.000) ($0.000) Expenses Labor: Payroll ($0.000) ($0.000) ($0.000) ($0.000) Overtime (0.000) 0.000 0.000 0.000 Health and Welfare 0.000 0.000 (0.000) (0.000) OPEB Current Payment 0.000 0.000 0.000 0.000 Pensions (0.000) 0.000 (0.000) (0.000) Other Fringe Benefits (0.000) 0.000 (0.000) (0.000) Reimbursable Overhead 0.000 0.000 0.000 0.000 Total Labor Expense Changes ($0.000) $0.000 ($0.000) ($0.000) Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 Professional Service Contracts 0.000 0.000 0.000 0.000 Materials & Supplies 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 Total Non-Labor Expense Changes $0.000 $0.000 $0.000 $0.000 Total Expenses before Depreciation ($0.000) $0.000 ($0.000) ($0.000) Add: Depreciation $0.000 $0.000 $0.000 $0.000 Add: GASB 68 Pension Adjustment 0.000 0.000 0.000 0.000 Add: GASB 75 OPEB Adjustment 0.000 0.000 0.000 0.000 Add: GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 Add: GASB 96 Adjustment 0.000 0.000 0.000 0.000 Add: Environmental Remediation 0.000 0.000 0.000 0.000 Total Expenses after Depreciation and GASB Adjs. ($0.000) $0.000 ($0.000) ($0.000) Less: Depreciation $0.000 $0.000 $0.000 $0.000 Less: GASB 68 Pension Adjustment 0.000 0.000 0.000 0.000 Less: GASB 75 OPEB Adjustment 0.000 0.000 0.000 0.000 Less: GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 Less: GASB 96 Adjustment 0.000 0.000 0.000 0.000 Total Expense Changes ($0.000) $0.000 ($0.000) ($0.000) Cash Adjustment Changes Total Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Net Surplus/(Deficit) Changes ($0.000) $0.000 ($0.000) ($0.000) Deductions from Income Capitalized Assets $0.000 $0.000 $0.000 $0.000 Capital Reserves 0.000 0.000 0.000 0.000 GASB 45 Reserves 0.000 0.000 0.000 0.000 Total Deductions from Income $0.000 $0.000 $0.000 $0.000 Total Adjusted Net Surplus/(Deficit) Changes ($0.000) $0.000 ($0.000) ($0.000) 2025 July Financial Plan - Adjusted Net Surplus/(Deficit) ($0.000) $0.000 ($0.000) ($0.000)
+```
+[p180_c0004] _V-19_
+
+## Page 181
+
+### [p181_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p181_c0002] NON-REIMBURSABLE and REIMBURSABLE
+[p181_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Financial Plan - Adjusted Net Surplus/(Deficit) $2,067.014 $2,081.613 $2,092.882 $2,094.207 Baseline Changes Revenue Vehicle Toll Revenue $1.328 ($0.000) ($0.000) $0.000 Other Operating Revenue 0.099 0.000 0.000 0.000 Capital and Other Reimbursement (0.000) 0.000 (0.000) (0.000) Investment Income 3.858 0.000 0.000 0.000 Total Revenue Changes $5.285 ($0.000) ($0.000) $0.000 Expenses Labor: Payroll $4.650 $9.183 $14.114 $24.646 Overtime 2.491 5.309 8.983 15.445 Health and Welfare 1.243 2.595 3.922 6.747 OPEB Current Payment 3.281 3.621 3.989 4.388 Pensions (4.663) (1.035) (0.111) 4.765 Other Fringe Benefits 0.986 1.925 3.148 5.404 Reimbursable Overhead 0.000 0.000 0.000 0.000 Total Labor Expense Changes $7.989 $21.597 $34.046 $61.394 Non-Labor: Electric Power $0.533 $0.732 $0.719 $0.413 Fuel (0.151) (0.204) (0.250) (0.211) Insurance 2.249 0.620 2.909 3.574 Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.253 (1.288) (1.158) (0.917) Professional Service Contracts (0.552) 0.399 0.333 0.425 Materials & Supplies (1.362) (1.160) (1.195) (1.210) Other Business Expenses 0.900 0.924 0.921 0.924 Total Non-Labor Expense Changes $1.871 $0.023 $2.280 $2.999 Total Expenses before Depreciation and GASB Adjs. $9.860 $21.620 $36.325 $64.394 Add: Depreciation ($0.959) $0.253 ($0.211) $0.317 Add: GASB 68 Pension Adjustment 5.274 1.560 0.653 (4.204) Add: GASB 75 OPEB Adjustment (3.851) (2.908) (3.297) (3.688) Add: GASB 87 Lease Adjustment (0.131) (0.131) (0.131) (0.131) Add: GASB 96 Adjustment 0.000 - - - Add: Environmental Remediation - - - - Total Expenses after Depreciation and GASB Adjs. $10.192 $20.394 $33.339 $56.688 Less: Depreciation ($0.959) $0.253 ($0.211) $0.317 Less: GASB 68 Pension Adjustment 5.274 1.560 0.653 (4.204) Less: GASB 75 OPEB Adjustment (3.851) (2.908) (3.297) (3.688) Less: GASB 87 Adjustment (0.131) (0.131) (0.131) (0.131) Less: GASB 96 Adjustment 0.000 0.000 0.000 0.000 Total Expense Changes $9.860 $21.620 $36.325 $64.394 Total Baseline Changes $15.144 $21.620 $36.325 $64.394 Deductions from Income Capitalized Assets ($2.320) $0.034 ($0.028) $0.042 Capital Reserves 0.000 0.000 0.000 0.000 GASB 45 Reserves 0.000 0.000 0.000 0.000 Total Deductions from Income ($2.320) $0.034 ($0.028) $0.042 Total Adjusted Baseline Changes $12.824 $21.654 $36.297 $64.356 2025 July Financial Plan - Adjusted Net Surplus/(Deficit) $2,079.838 $2,103.267 $2,129.179 $2,158.643
+```
+[p181_c0004] _V-20_
+
+## Page 182
+
+### [p182_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026-2029 Summary of Major Programmatic Changes Between Financial Plans ($ in millions)
+### [p182_c0002] NON-REIMBURSABLE and REIMBURSABLE
+[p182_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Financial Plan - Adjusted Net Surplus/(Deficit) $2,067.014 $2,081.613 $2,092.882 $2,094.207 Non-Reimbursable Major Changes Revenue Vehicle Toll Revenue $1.328 $0.000 $0.000 $0.000 Other Operating Revenue-Tropical Storm Ida Reimbursement 0.099 0.000 0.000 0.000 Investment Income 3.858 0.000 0.000 0.000 Sub-Total Non-Reimbursable Revenue Changes $5.285 $0.000 $0.000 $0.000 Expenses B&T Planned Attrition Initiative – Labor 10.313 20.735 32.882 57.083 Changes in Rates and Related Assumptions 0.306 2.011 4.541 8.087 OTPS Re-estimates and Inflation Adjustments (0.760) (1.126) (1.098) (0.776) Sub-Total Non-Reimbursable Expense Changes $9.859 $21.620 $36.325 $64.394 Total Non-Reimbursable Major Changes $15.144 $21.620 $36.325 $64.394 Reimbursable Major Changes Revenue Sub-Total Reimbursable Revenue Changes $0.000 $0.000 $0.000 $0.000 Expenses Sub-Total Reimbursable Expense Changes $0.000 $0.000 $0.000 $0.000 Total Reimbursable Major Changes $0.000 $0.000 $0.000 $0.000 Total Accrual Changes $15.144 $21.620 $36.325 $64.394 Cash Adjustment Changes Capitalized Assets Rollover 2024-2025/Adjustments (2.320) 0.034 (0.028) 0.042 Total Cash Adjustment Changes ($2.320) $0.034 ($0.028) $0.042 Total Net Changes $12.824 $21.654 $36.297 $64.436 2025 July Financial Plan - Adjusted Net Surplus/(Deficit) $2,079.837 $2,103.267 $2,129.179 $2,158.643
+```
+[p182_c0004] _V-21_
+
+## Page 183
+
+### [p183_c0001] MTA BRIDGES AND TUNNELS 2026 Preliminary Budget July Financial Plan 2026–2029 Traffic/Utilization
+### [p183_c0002] TRAFFIC UTILIZATION PROJECTIONS
+### [p183_c0003] Year-to-Year
+- [p183_c0004] • Traffic is projected to increase annually due to improved regional economic conditions, growing from 339.0 million crossings in 2025 to 343.2 million in 2026, followed by 346.6 million crossings in 2027, 348.9 million crossings in 2028, and 350.3 million crossings in 2029.
+### [p183_c0005] Plan-to-Plan
+- [p183_c0006] • Paid traffic volume is estimated to reach 339.0 million crossings in 2025, which is 0.6 million crossings, or 2.0%, below the Adopted Budget level. Traffic through April 2025 was slightly unfavorable to the Adopted Budget by 0.5 million crossings, or 0.5%, reflecting mainly inclement weather. • The traffic forecast for 2026 – 2028 remains unchanged from the February Plan.
+[p183_c0007] _V-22_
+
+## Page 184
+
+### [p184_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026 - 2029 Traffic Volume (Utilization) and Toll Revenue (in millions)
+### [p184_c0002] TRAFFIC VOLUME
+[p184_c0003] Total Traffic Volume
+[p184_c0004]
+
+```text
+Actual Mid-Year Preliminary 2024 Forecast Budget 2025 2026 2027 2028 2029
+```
+[p184_c0005]
+
+```text
+337.310 338.967 343.200 346.600 348.900 350.300
+```
+### [p184_c0006] TOLL REVENUE
+[p184_c0007] Toll Revenue
+[p184_c0008]
+
+```text
+$2,572.260 $2,584.730 $2,610.788 $2,636.652 $2,654.148 $2,665.501
+```
+[p184_c0009] _V-23_
+
+## Page 185
+
+### [p185_c0001] MTA BRIDGES AND TUNNELS 2026 Preliminary Budget July Financial Plan 2026–2029 Positions
+### [p185_c0002] POSITION ASSUMPTIONS
+### [p185_c0003] Year-to-Year
+[p185_c0004] End of year positions are 1,004 for 2025 and decrease by 39 positions in 2026, by 32 positions in 2027, by 95 positions in 2028, and 71 positions in 2029, driven by the impact of attrition.
+[p185_c0005] Total positions include 61 capital reimbursable positions in each year of the financial plan.
+### [p185_c0006] Plan-to-Plan
+[p185_c0007] Public Safety position levels decrease by 41 in 2025, reflecting 11 Supervisors and 30 Operational Hourlies, decrease by 80 in 2026, reflecting 27 Supervisors and 53 Operational Hourlies, decrease by 112 in 2027, reflecting 40 Supervisors and 72 Operational Hourlies, and decrease by 207 in 2028, reflecting 75 Supervisors and 132 Operational Hourlies. These decreases are driven by the impact of attrition.
+[p185_c0008] _V-24_
+
+## Page 186
+
+### [p186_c0001] MTA BRIDGES AND TUNNELS
+### [p186_c0002] July Financial Plan 2026-2029
+[p186_c0003] Favorable/(Unfavorable)
+### [p186_c0004] Total Position Changes at a Glance
+[p186_c0005]
+
+```text
+2025 2026 2027 2028 2025 February Plan - Total Positions 1,045 1,045 1,045 1,045 Total Plan-to-Plan Changes 41 80 112 207 2025 July Plan - Total Positions 1,004 965 933 838 Total Year-to-Year Changes, July Plan 39 32 95 Total Plan-to-Plan Changes by Reporting Category: Non-Reimbursable 41 80 112 207 Reimbursable 0 0 0 0 Total 41 80 112 207 Full-Time 41 80 112 207 Full-Time Equivalents 0 0 0 0 Total 41 80 112 207 By Function Category - Administration 0 0 0 0 - Operations 0 0 0 0 - Maintenance 0 0 0 0 - Engineering/Capital 0 0 0 0 - Public Safety 41 80 112 207 Total 41 80 112 207 By Occupational Group - Managers/Supervisors 11 27 40 75 - Professional/Technical/Clerical 0 0 0 0 - Operational Hourlies 30 53 72 132 Total 41 80 112 207 Total Plan-to-Plan Changes by Major Category: MTA Operating Efficiencies 0 0 0 0 New Needs 0 0 0 0 Change in Reimbursable Positions 0 0 0 0 Re-estimates & All Other 1 41 80 112 207 Total 41 80 112 207
+```
+[p186_c0006] _1 Includes Full-time Equivalents_
+[p186_c0007] _V-25_
+
+## Page 187
+
+### [p187_c0001] MTA BRIDGES & TUNNELS July Financial Plan 2026-2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-time/Full-time Equivalents
+[p187_c0002]
+
+```text
+FUNCTION/DEPARTMENT Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Administration Executive 15 17 17 17 17 17 Law (1) 5 5 5 5 5 5 CFO (2) 10 12 12 12 12 12 Administration 26 26 26 26 26 26 EEO 0 0 0 0 0 0 Total Administration 56 60 60 60 60 60 Operations ITS & Tolling 69 63 63 63 63 63 Operations (Non-Security) 27 54 54 54 54 54 Total Operations 96 117 117 117 117 117 Maintenance Maintenance 212 205 205 205 205 205 Operations - Maintainers 150 183 183 183 183 183 Total Maintenance 362 388 388 388 388 388 Engineering/Capital Engineering & Construction 93 97 97 97 97 97 Health & Safety 7 9 9 9 9 9 Law (1) 4 6 6 6 6 6 Planning & Budget Capital 6 6 6 6 6 6 Total Engineering/Capital 110 118 118 118 118 118 Public Safety Operations (Security) 307 276 237 205 110 39 Internal Security - Operations 32 45 45 45 45 45 Total Public Safety 339 321 282 250 155 84 Total Positions 963 1,004 965 933 838 767 Non-Reimbursable 876 943 904 872 777 706 Reimbursable 87 61 61 61 61 61 Total Full-Time 963 1,004 965 933 838 767 Total Full-Time Equivalents 0 0 0 0 0 0
+```
+[p187_c0003] (1) Includes Legal and Procurement staff.
+[p187_c0004] (2) Includes Controller and Operating Budget staff
+[p187_c0005] (3) Includes Human Resources and Administration staff.
+[p187_c0006] _V-26_
+
+## Page 188
+
+### [p188_c0001] MTA BRIDGES AND TUNNELS July Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p188_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual Mid-Year Preliminary 2027 2028 2029 2024 Forecast Budget 2024 2025 2026 Administration Managers/Supervisors 15 20 20 20 20 20 Professional/Technical/Clerical 41 40 40 40 40 40 Operational Hourlies 0 0 0 0 0 0 Total Administration Headcount 56 60 60 60 60 60 Operations Managers/Supervisors 24 62 62 62 62 62 Professional/Technical/Clerical 72 55 55 55 55 55 Operational Hourlies (1) 0 0 0 0 0 0 Total Operations Headcount 96 117 117 117 117 117 Maintenance Managers/Supervisors 21 27 27 27 27 27 Professional/Technical/Clerical 20 11 11 11 11 11 Operational Hourlies (2) 321 350 350 350 350 350 Total Maintenance Headcount 362 388 388 388 388 388 Engineering / Capital Managers/Supervisors 19 23 23 23 23 23 Professional/Technical/Clerical 91 95 95 95 95 95 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 110 118 118 118 118 118 Public Safety Managers/Supervisors 102 106 90 77 42 36 Professional/Technical/Clerical 30 36 36 36 36 36 Operational Hourlies (3) 207 179 156 137 77 12 Total Public Safety Headcount 339 321 282 250 155 84 Total Positions Managers/Supervisors 181 238 222 209 174 168 Professional/Technical/ Clerical 254 237 237 237 237 237 Operational Hourlies 528 529 506 487 427 362 Total Positions 963 1,004 965 933 838 767
+```
+[p188_c0003] (1) Represents Bridge and Tunnel Officers. These positions are paid annually, not hourly.
+[p188_c0004] (2) Represents maintenance personnel. These positions are paid annually, not hourly.
+[p188_c0005] (3) Represents Bridge and Tunnel Officers performing public safety. These positions are paid annually, not hourly.
+[p188_c0006] _V-27_
+
+## Page 189
+
+[p189_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p189_c0002] _V-28_
+
+## Page 190
+
+### [p190_c0001] Construction & Development
+
+## Page 191
+
+### [p191_c0001] MTA CONSTRUCTION & DEVELOPMENT 2026 Preliminary Budget July Financial Plan 2026 – 2029
+### [p191_c0002] FINANCIAL OVERVIEW
+[p191_c0003] MTA Construction & Development (MTA C&D) plans, rebuilds, improves, and expands the MTA's extensive network of subway, bus, commuter rail, bridge, and tunnel infrastructure. MTA C&D identifies, prioritizes, develops, and builds the capital infrastructure projects needed to renew and enhance the MTA's extensive assets. Together, these projects constitute the MTA's Capital Program, which ensures the continued performance and reliability of the system, delivering safe, fast, and accessible service for all users.
+[p191_c0004] The budgeted headcount within MTA Construction & Development (C&D) comprises personnel who directly or indirectly support the broader MTA Capital Program across the organization. These staff are dedicated to executing the Capital Program through functions such as project delivery, planning, development, contract management, and operations. Their roles provide the critical planning, project management, oversight, and technical expertise needed to advance capital projects systemwide. C&D headcount costs are reimbursed through Capital Programs as well as interagency chargebacks.
+[p191_c0005] Reimbursable expenses include work performed in support of the MTA Capital Program, as well as pass-through charges for broadband wireless and transit-oriented development. Below are some of the MTA C&D departments that generate revenue and capital planning development:
+- [p191_c0006] • Transit-Oriented Development (TOD) leverages MTA real estate assets to generate revenue, deliver cost avoidance, and enhance transit infrastructure. Through structuring and executing transactions involving MTA property, TOD produces in-kind improvements and financial benefits for the Capital Program. Key efforts include joint development projects (e.g., Second Avenue Subway Phase 2), RFPs for development opportunities (e.g., Quay St, Gun Hill Rd, Port Chester), and zoning actions that produce station easements and developer-funded capital investments (e.g., 347 Madison, Westbury, and Zoning for Accessibility initiatives). • MTA Regional Planning - to meet the demands of a changing region, we advance projects that help create additional capacity, connect with underserved communities, and respond to changing populations and land-use patterns. In addition to the Regional Investments that expand opportunities to leverage the regional transit system for the future, we will undertake a focused and in-depth analysis of the needs, constraints, and opportunities of our existing commuter rail infrastructure, looking for opportunities to implement improvements. This comprehensive examination of the Regional Rail Network will help us develop long-term strategies to enhance regional mobility, improve service reliability, increase passenger capacity, and formulate cost-effective service and capital infrastructure improvements. Projects that will be analyzed or developed include the electrification of the LIRR Main Line to Yaphank, improvements to the Port Jefferson and Montauk Branches, the addition of a third track to the Metro-North Harlem Line, and the connection of Hudson Line service to Penn Station. As a follow-up to the 20-Year Needs
+[p191_c0007] _V-29_
+
+## Page 192
+
+[p192_c0001] Assessment and the Comparative Evaluation, we will be advancing the evaluation and development of promising improvement and expansion projects, such as future phases of the Second Avenue Subway.
+- [p192_c0002] • The MTA Advertising & Promotions team has installed nearly 10,000 digital screens across the MTA system, generating advertising revenue for the agency and providing important service information to our customers. Please note that, effective April 2025, the Advertising and Promotions Team has transitioned from MTA Construction & Development (C&D) to MTA Headquarters. This move includes both the transfer of headcount and the associated budget from C&D to MTA Headquarters. • MTA Broadband team supports the MTA's mission of providing safe, reliable, and efficient public transportation services that keep New York and the region moving by negotiating, managing, and executing revenue-generating public-private partnerships that help fund MTA Operating budgets.
+### [p192_c0003] 2025 MID-YEAR FORECAST
+[p192_c0004] The 2025 Mid-Year Forecast reflects non-reimbursable expenses before depreciation of $4.1 million in labor expenses and $0.05 million in non-labor expenses, which are offset with inter-agency chargebacks, resulting in a net zero baseline total.
+[p192_c0005] Reimbursable expenses before depreciation of $188.1 million consist of labor expenses of $153.5 million and non-labor expenses of $34.5 million. As noted, reimbursable expenses consist of work performed in support of the MTA Capital Program and pass-through charges for digital advertising, broadband wireless, and property developments (including Webster Ave Clinton, Fordham Landing ZFA, Harlem River Lift Bridge, Gun Hill Ground Lease, 40 Quay Street, 110 William Street, One 57 th East and Wakefield). The reimbursable cost is being offset in revenue under the Capital and other reimbursements account.
+[p192_c0006] The baseline cash deficit reflecting both non-reimbursable and reimbursable expenses is projected to be $0.0 million.
+[p192_c0007] In 2025, the total number of positions is forecasted to be 755. There are 16 non-reimbursable positions, comprising the departments for Capital Program Management, Transit-Oriented Development, Planning, and Special Project Development. Reimbursable positions are forecasted to be 739, comprising the departments for Administration and Engineering & Capital.
+### [p192_c0008] 2026 PRELIMINARY BUDGET BASELINE
+[p192_c0009] The 2026 Preliminary Budget reflects non-reimbursable expenses before depreciation of $4.0 million in labor expenses and $0.05 million in non-labor expenses, which are offset with the inter-agency chargebacks, resulting in a net zero baseline total.
+[p192_c0010] Reimbursable expenses before depreciation of $200.2 million, with reimbursable labor expenses of $170.9 million and non-labor expenses of $29.3 million. The reimbursable cost is being offset in revenue under the Capital and other reimbursements account.
+[p192_c0011] _V-30_
+
+## Page 193
+
+[p193_c0001] The baseline cash deficit reflecting both non-reimbursable and reimbursable expenses is projected to be $0.0 million.
+[p193_c0002] Reimbursable expenses are lower than the February Financial Plan, primarily due to the revised timing of various projects, including Westside Yards West and Atlantic Yards.
+[p193_c0003] Baseline positions are projected to remain constant at 755 in 2026. This is consistent with the 2025 Mid-Year Forecast.
+### [p193_c0004] FINANCIAL PLAN 2027-2029 PROJECTIONS
+[p193_c0005] Operating cash deficits are projected to be $0.0 million annually from 2027 to 2029, compared to the February Financial Plan, as expenses are offset by reimbursable overhead and chargebacks to the agencies.
+[p193_c0006] Baseline positions are projected to remain constant at 755 through 2029.
+[p193_c0007] _V-31_
+
+## Page 194
+
+### [p194_c0001] MTA CONSTRUCTION & DEVELOPMENT July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p194_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Operating Expense Labor: Payroll $3.602 $2.870 $2.523 $2.573 $2.612 $2.661 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.442 0.526 0.594 0.621 0.644 0.671 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.420 0.470 0.603 0.615 0.624 0.636 Other Fringe Benefits 0.247 0.244 0.239 0.244 0.249 0.254 Reimbursable Overhead 0.000 (4.110) (3.959) (4.053) (4.129) (4.223) Total Labor Expenses $4.711 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts (4.628) (0.047) (0.047) (0.047) (0.048) (0.049) Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.037 0.047 0.047 0.047 0.048 0.049 Total Non-Labor Expenses ($4.591) $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $0.120 $0.000 $0.000 $0.000 $0.000 $0.000 Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $0.120 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) ($0.120) $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p194_c0003] _V-32_
+
+## Page 195
+
+### [p195_c0001] MTA CONSTRUCTION & DEVELOPMENT July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p195_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 129.505 188.062 200.238 210.436 210.177 214.067 Total Revenues $129.505 $188.062 $200.238 $210.436 $210.177 $214.067 Operating Expense Labor: Payroll $82.226 $101.656 $106.411 $108.497 $110.160 $112.239 Overtime 0.005 0.000 0.000 0.000 0.000 0.000 Health and Welfare 9.710 20.260 25.054 26.196 27.169 28.319 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 7.222 18.708 25.402 25.900 26.297 26.793 Other Fringe Benefits 5.981 8.813 10.065 10.291 10.488 10.720 Reimbursable Overhead 0.000 4.110 3.959 4.053 4.129 4.223 Total Labor Expenses $105.143 $153.546 $170.891 $174.938 $178.243 $182.294 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.001 0.006 0.006 0.006 0.006 0.006 Insurance 0.003 0.042 0.046 0.051 0.057 0.063 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.538 4.495 4.529 4.667 4.810 4.958 Professional Services Contracts 19.591 27.775 22.552 28.834 25.096 24.752 Materials and Supplies 0.002 0.095 0.046 0.047 0.047 0.048 Other Business Expenses 1.226 2.103 2.168 1.894 1.917 1.946 Total Non-Labor Expenses $24.362 $34.516 $29.347 $35.499 $31.933 $31.773 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $129.505 $188.062 $200.238 $210.436 $210.177 $214.067 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p195_c0003] _V-33_
+
+## Page 196
+
+### [p196_c0001] MTA CONSTRUCTION & DEVELOPMENT July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p196_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 129.505 188.062 200.238 210.436 210.177 214.067 Total Revenues $129.505 $188.062 $200.238 $210.436 $210.177 $214.067 Operating Expense Labor: Payroll $85.828 $104.526 $108.934 $111.070 $112.772 $114.900 Overtime 0.005 0.000 0.000 0.000 0.000 0.000 Health and Welfare 10.152 20.785 25.648 26.818 27.813 28.990 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 7.642 19.178 26.005 26.515 26.921 27.429 Other Fringe Benefits 6.227 9.057 10.304 10.535 10.736 10.974 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $109.854 $153.546 $170.891 $174.938 $178.243 $182.294 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.001 0.006 0.006 0.006 0.006 0.006 Insurance 0.003 0.042 0.046 0.051 0.057 0.063 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.538 4.495 4.529 4.667 4.810 4.958 Professional Services Contracts 14.963 27.728 22.505 28.787 25.048 24.703 Materials and Supplies 0.002 0.095 0.046 0.047 0.047 0.048 Other Business Expenses 1.264 2.151 2.215 1.942 1.965 1.995 Total Non-Labor Expenses $19.771 $34.516 $29.347 $35.499 $31.933 $31.773 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $129.625 $188.062 $200.238 $210.436 $210.177 $214.067 Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $129.625 $188.062 $200.238 $210.436 $210.177 $214.067 Net Surplus/(Deficit) ($0.120) $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p196_c0003] _V-34_
+
+## Page 197
+
+### [p197_c0001] MTA CONSTRUCTION & DEVELOPMENT July Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p197_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 18.940 188.062 200.238 210.436 210.177 214.067 Total Receipts $18.940 $188.062 $200.238 $210.436 $210.177 $214.067 Expenditures Labor: Payroll $95.698 $104.526 $108.934 $111.070 $112.772 $114.900 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 12.958 20.785 25.648 26.818 27.813 28.990 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 1.875 19.178 26.005 26.515 26.921 27.429 Other Fringe Benefits 6.776 9.057 10.304 10.535 10.736 10.974 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $117.307 $153.546 $170.891 $174.938 $178.243 $182.294 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.001 0.006 0.006 0.006 0.006 0.006 Insurance 0.003 0.042 0.046 0.051 0.057 0.063 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.249 4.495 4.529 4.667 4.810 4.958 Professional Services Contracts 20.920 27.728 22.505 28.787 25.048 24.703 Materials and Supplies 0.002 0.095 0.046 0.047 0.047 0.048 Other Business Expenses 1.102 2.151 2.215 1.942 1.965 1.995 Total Non-Labor Expenditures $22.277 $34.516 $29.347 $35.499 $31.933 $31.773 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $139.584 $188.062 $200.238 $210.436 $210.177 $214.067 Net Cash Balance ($120.644) $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p197_c0003] _V-35_
+
+## Page 198
+
+### [p198_c0001] MTA CONSTRUCTION & DEVELOPMENT
+[p198_c0002] July Financial Plan 2026 - 2029
+[p198_c0003] Cash Conversion (Cash Flow Adjustments)
+[p198_c0004] ($ in millions)
+[p198_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements (110.565) 0.000 0.000 0.000 0.000 0.000 Total Receipts ($110.565) $0.000 $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll ($9.870) $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.005 0.000 0.000 0.000 0.000 0.000 Health and Welfare (2.806) 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 5.767 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits (0.549) 0.000 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures ($7.453) $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.289 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts (5.957) 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.162 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures ($2.506) $0.000 $0.000 $0.000 $0.000 $0.000 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures ($9.959) $0.000 $0.000 $0.000 $0.000 $0.000 Total Cash Conversion Adjustments before Depreciation ($120.524) $0.000 $0.000 $0.000 $0.000 $0.000 Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Cash Conversion Adjustments ($120.524) $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p198_c0006] _V-36_
+
+## Page 199
+
+### [p199_c0001] MTA CONSTRUCTION & DEVELOPMENT 2026 Preliminary Budget July Financial Plan 2026 – 2029 Year-to-Year Changes by Category – Baseline
+### [p199_c0002] REVENUE
+### [p199_c0003] Capital and Other Reimbursements
+- [p199_c0004] • Reimbursements increase by $12.2 million in 2026 and $10.2 million in 2027, and decrease by $0.3 million in 2028, and increase by $3.9 million in 2029. • These changes reflect the re-estimate/deferment of development expenditures and the full-year staffing levels of existing MTA C&D reimbursable.
+### [p199_c0005] EXPENSES
+### [p199_c0006] Payroll
+- [p199_c0007] • Payroll expenses for represented MTA C&D staff on the MTA Headquarters payroll reflect wage growth assumptions that are based on prevailing labor agreement trends. Wage inflation for non-represented employees reflects an assumed 2% wage growth for 2026 to 2029. • 2025 expenses reflect the latest budgeted position assumptions. • Expenses will increase by $4.4 million in 2026 due to the additional budgeted positions and increase by $2.1 million in 2027, $1.7 million in 2028, and $2.1 million in 2029.
+### [p199_c0008] Health and Welfare
+- [p199_c0009] • Health and Welfare expenses increase by $4.9 million in 2026, $1.2 million in 2027, $1.0 million in 2028, and $1.2 million. • Health and Welfare reflect Empire Plan cost assumptions as well as changes in the level of budgeted personnel.
+### [p199_c0010] Pensions
+- [p199_c0011] • Pension costs increase by $6.8 million in 2026, $0.5 million in 2027, $0.4 million in 2028, and $0.5 million in 2029 due to actuarial projections. • Pension costs are primarily based on the New York State & Local Retirement System (NYSLRS) and estimated Agency rates for those MTA C&D employees currently on other agency payrolls.
+### [p199_c0012] Other Fringe Benefits
+- [p199_c0013] • Other Fringe Benefits costs will increase by $1.2 million in 2026 and $0.2 million annually from 2027 to 2029. • Projections are consistent with payroll rate increase assumptions and reflect the level of budgeted personnel.
+### [p199_c0014] Insurance
+- [p199_c0015] • All-Agency Protect Liability (Primary and Excess) reflects annual growth of 20%. • Comprehensive Automobile Liability reflects annual growth of 10%.
+[p199_c0016] _V-37_
+
+## Page 200
+
+### [p200_c0001] Maintenance and Other Operating Contracts
+- [p200_c0002] • Maintenance expenses increase by $0.03 million in 2026 and by $0.1 million annually from 2027 to 2029, mainly due to an increase in rent.
+### [p200_c0003] Professional Service Contracts
+- [p200_c0004] • Expenses are projected to decrease by a total of $5.2 million in 2026, and increase by $6.3 million in 2027, decrease by $3.7 million in 2028, and $0.3 million in 2029, mainly due to re-estimates in Third-Party expense agreements.
+### [p200_c0005] Other Business Expenses
+- [p200_c0006] • Expenses are projected to increase by a total of $0.06 million in 2026, then decrease by $0.3 million in 2027 due to re-estimated costs. Expenses are relatively constant from 2028 through 2029.
+[p200_c0007] _V-38_
+
+## Page 201
+
+### [p201_c0001] MTA CONSTRUCTION & DEVELOPMENT July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p201_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable Operating Revenues Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Operating Expenses Labor: Payroll $2.870 $2.523 $0.347 $2.573 ($0.049) $2.612 ($0.039) $2.661 ($0.049) Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.526 0.594 (0.068) 0.621 (0.027) 0.644 (0.023) 0.671 (0.027) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.470 0.603 (0.133) 0.615 (0.012) 0.624 (0.009) 0.636 (0.012) Other Fringe Benefits 0.244 0.239 0.005 0.244 (0.005) 0.249 (0.005) 0.254 (0.006) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (4.110) (3.959) (0.151) (4.053) 0.094 (4.129) 0.077 (4.223) 0.094 Total Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts (0.047) (0.047) (0.001) (0.047) 0.001 (0.048) 0.001 (0.049) 0.001 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.047 0.047 0.001 0.047 (0.001) 0.048 (0.001) 0.049 (0.001) Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses After Depreciation and GASB Adjs. $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p201_c0003] _V-39_
+
+## Page 202
+
+### [p202_c0001] MTA CONSTRUCTION & DEVELOPMENT July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p202_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Reimbursable Operating Revenues Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 188.062 200.238 12.177 210.436 10.198 210.177 (0.260) 214.067 3.890 Total Revenues $188.062 $200.238 $12.177 $210.436 $10.198 $210.177 ($0.260) $214.067 $3.890 Operating Expenses Labor: Payroll $101.656 $106.411 ($4.755) $108.497 ($2.086) $110.160 ($1.663) $112.239 ($2.078) Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 20.260 25.054 (4.794) 26.196 (1.142) 27.169 (0.973) 28.319 (1.149) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 18.708 25.402 (6.694) 25.900 (0.498) 26.297 (0.397) 26.793 (0.496) Other Fringe Benefits 8.813 10.065 (1.253) 10.291 (0.226) 10.488 (0.197) 10.720 (0.232) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 4.110 3.959 0.151 4.053 (0.094) 4.129 (0.077) 4.223 (0.094) Total Labor Expenses $153.546 $170.891 ($17.345) $174.938 ($4.046) $178.243 ($3.306) $182.294 ($4.050) Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.006 0.006 0.000 0.006 0.000 0.006 0.000 0.006 0.000 Insurance 0.042 0.046 (0.004) 0.051 (0.005) 0.057 (0.006) 0.063 (0.006) Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 4.495 4.529 (0.034) 4.667 (0.138) 4.810 (0.143) 4.958 (0.148) Professional Services Contracts 27.775 22.552 5.223 28.834 (6.282) 25.096 3.738 24.752 0.344 Materials and Supplies 0.095 0.046 0.049 0.047 (0.001) 0.047 (0.001) 0.048 (0.001) Other Business Expenses 2.103 2.168 (0.065) 1.894 0.274 1.917 (0.023) 1.946 (0.029) Total Non-Labor Expenses $34.516 $29.347 $5.168 $35.499 ($6.152) $31.933 $3.565 $31.773 $0.160 Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $188.062 $200.238 ($12.177) $210.436 ($10.198) $210.177 $0.260 $214.067 ($3.890) Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p202_c0003] _07-1_
+
+## Page 203
+
+### [p203_c0001] MTA CONSTRUCTION & DEVELOPMENT
+[p203_c0002] July Financial Plan 2026 - 2029
+[p203_c0003] Changes Year-to-Year by Category
+[p203_c0004] Favorable/(Unfavorable)
+[p203_c0005] ($ in millions)
+### [p203_c0006] Non-Reimbursable and Reimbursable
+### [p203_c0007] Operating Revenues
+[p203_c0008]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2026 - 2027 Change 2027 - 2028 Change 2028 - 2029 Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 188.062 200.238 12.177 210.436 10.198 210.177 Total Revenues $188.062 $200.238 $12.177 $210.436 $10.198 $210.177
+```
+### [p203_c0009] Operating Expenses
+### [p203_c0010] Labor:
+[p203_c0011]
+
+```text
+Payroll $104.526 $108.934 ($4.408) $111.070 ($2.136) $112.772 ($1.702) $114.900 ($2.128) Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 20.785 25.648 (4.863) 26.818 (1.169) 27.813 (0.996) 28.990 (1.177) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 19.178 26.005 (6.827) 26.515 (0.510) 26.921 (0.406) 27.429 (0.508) Other Fringe Benefits 9.057 10.304 (1.247) 10.535 (0.231) 10.736 (0.201) 10.974 (0.238) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $153.546 $170.891 ($17.345) $174.938 ($4.046) $178.243 ($3.306) $182.294 ($4.050)
+```
+### [p203_c0012] Non-Labor:
+[p203_c0013]
+
+```text
+Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.006 0.006 0.000 0.006 0.000 0.006 0.000 0.006 0.000 Insurance 0.042 0.046 (0.004) 0.051 (0.005) 0.057 (0.006) 0.063 (0.006) Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 4.495 4.529 (0.034) 4.667 (0.138) 4.810 (0.143) 4.958 (0.148) Professional Services Contracts 27.728 22.505 5.222 28.787 (6.281) 25.048 3.738 24.703 0.345 Materials and Supplies 0.095 0.046 0.049 0.047 (0.001) 0.047 (0.001) 0.048 (0.001) Other Business Expenses 2.151 2.215 (0.064) 1.942 0.273 1.965 (0.023) 1.995 (0.030) Total Non-Labor Expenses $34.516 $29.347 $5.168 $35.499 ($6.152) $31.933 $3.565 $31.773 $0.160
+```
+### [p203_c0014] Other Expense Adjustments:
+[p203_c0015]
+
+```text
+Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p203_c0016]
+
+```text
+Total Expenses Before Depreciation and GASB Adjs. $188.062 $200.238 ($12.177) $210.436 ($10.198) $210.177 $0.260 $214.067 ($3.890)
+```
+[p203_c0017]
+
+```text
+Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p203_c0018]
+
+```text
+Total Expenses After Depreciation and GASB Adjs. $188.062 $200.238 ($12.177) $210.436 ($10.198) $210.177 $0.260 $214.067 ($3.890)
+```
+[p203_c0019]
+
+```text
+Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p203_c0020] _V-41_
+
+## Page 204
+
+### [p204_c0001] MTA CONSTRUCTION & DEVELOPMENT
+### [p204_c0002] July Financial Plan 2026 - 2029
+### [p204_c0003] Changes Year-to-Year by Category
+[p204_c0004] Favorable/(Unfavorable)
+[p204_c0005] ($ in millions)
+### [p204_c0006] Cash Receipts and Expenditures
+### [p204_c0007] Receipts
+[p204_c0008]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 188.062 200.238 12.177 210.436 10.198 210.177 (0.260) 214.067 3.890 Total Receipts $188.062 $200.238 $12.177 $210.436 $10.198 $210.177 ($0.260) $214.067 $3.890
+```
+### [p204_c0009] Expenditures
+### [p204_c0010] Labor Expenditures:
+[p204_c0011]
+
+```text
+Payroll $104.526 $108.934 ($4.408) $111.070 ($2.136) $112.772 ($1.702) $114.900 ($2.128) Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 20.785 25.648 (4.863) 26.818 (1.169) 27.813 (0.996) 28.990 (1.177) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 19.178 26.005 (6.827) 26.515 (0.510) 26.921 (0.406) 27.429 (0.508) Other Fringe Benefits 9.057 10.304 (1.247) 10.535 (0.231) 10.736 (0.201) 10.974 (0.238) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $153.546 $170.891 ($17.345) $174.938 ($4.046) $178.243 ($3.306) $182.294 ($4.050)
+```
+### [p204_c0012] Non-Labor Expenditures:
+[p204_c0013]
+
+```text
+Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.006 0.006 0.000 0.006 0.000 0.006 0.000 0.006 0.000 Insurance 0.042 0.046 (0.004) 0.051 (0.005) 0.057 (0.006) 0.063 (0.006) Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 4.495 4.529 (0.034) 4.667 (0.138) 4.810 (0.143) 4.958 (0.148) Professional Services Contracts 27.728 22.505 5.222 28.787 (6.281) 25.048 3.738 24.703 0.345 Materials and Supplies 0.095 0.046 0.049 0.047 (0.001) 0.047 (0.001) 0.048 (0.001) Other Business Expenses 2.151 2.215 (0.064) 1.942 0.273 1.965 (0.023) 1.995 (0.030) Total Non-Labor Expenditures $34.516 $29.347 $5.168 $35.499 ($6.152) $31.933 $3.565 $31.773 $0.160
+```
+### [p204_c0014] Other Expenditure Adjustments:
+[p204_c0015]
+
+```text
+Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p204_c0016]
+
+```text
+Total Expenditures $188.062 $200.238 ($12.177) $210.436 ($10.198) $210.177 $0.260 $214.067 ($3.890) Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p204_c0017]
+
+```text
+Net Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p204_c0018] _27-A_
+
+## Page 205
+
+### [p205_c0001] MTA CONSTRUCTION & DEVELOPMENT 2026 Preliminary Budget July Financial Plan 2026 - 2029 Plan-To-Plan Changes by Generic Category - Baseline
+### [p205_c0002] 2025: MID-YEAR FORECAST VS. ADOPTED BUDGET
+### [p205_c0003] REVENUE
+- [p205_c0004] • Capital and Other Reimbursements is projected to decrease by $35.2 million from the February Plan, reflecting the timing of reimbursable workloads on property developments, including Westside Yards West, Atlantic Yards, Webster Ave Clinton, Fordham Landing ZFA, Harlem River Lift Bridge, Gun Hill Ground Lease, 40 Quay Street, 110 William Street, One 57th East, and Wakefield.
+### [p205_c0005] EXPENSES
+[p205_c0006] Total Non-Reimbursable/Reimbursable operating expenses decrease by $35.2 million.
+[p205_c0007] Major generic category changes include:
+- [p205_c0008] • Decrease in labor expenses due to lower than budgeted pension and health & welfare costs. • The filling of 2025 approved positions is lower than expected, further contributing to the favorable variance. • Decrease in Professional Services reflects re-estimates and the timing of projects in Third-party expense agreements.
+### [p205_c0009] 2026: JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN
+### [p205_c0010] REVENUE
+[p205_c0011] Revenues are projected to decrease from the February Financial Plan by $20.8 million, reflecting the re-estimate of reimbursable workload on Westside Yards West, Atlantic Yards, Webster Ave Clinton, Fordham Landing ZFA, Harlem River Lift Bridge, Gun Hill Ground Lease, 40 Quay Street, 110 William Street, One 57 th East and Wakefield property development.
+### [p205_c0012] EXPENSES
+[p205_c0013] Total Non-Reimbursable/Reimbursable operating expenses decreased by $20.8 million.
+[p205_c0014] Major generic category changes include:
+- [p205_c0015] • Re-estimates in Third-party Expense agreements. • Increase in labor expenses reflects the revised budget estimates of increased positions.
+[p205_c0016] _V-43_
+
+## Page 206
+
+### [p206_c0001] 2027 AND 2028: JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN
+### [p206_c0002] REVENUE
+- [p206_c0003] • Revenues increase by $17.9 million in 2027 and $24.0 million in 2028, which are attributable to the reasons noted in 2025.
+### [p206_c0004] EXPENSES
+- [p206_c0005] • Total Non-Reimbursable/Reimbursable operating expenses increase from the February Financial Plan by $17.9 million in 2027 and $24.0 million in 2028.
+[p206_c0006] _V-44_
+
+## Page 207
+
+### [p207_c0001] MTA CONSTRUCTION & DEVELOPMENT July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p207_c0002] NON-REIMBURSABLE
+### [p207_c0003] February Financial Plan - Cash Surplus/(Deficit)
+### [p207_c0004] Baseline Changes
+[p207_c0005]
+
+```text
+2025 2026 2027 2028 Revenue Total Revenue Changes $0.000 $0.000 $0.000 $0.000 Expenses Labor: Payroll $0.922 $1.452 $1.548 $1.638 Overtime Health and Welfare 0.348 0.342 0.374 0.404 OPEB Current Payment Pensions 0.437 0.347 0.370 0.391 Other Fringe Benefits 0.113 0.137 0.147 0.156 Reimbursable Overhead (1.820) (2.278) (2.439) (2.589) Total Labor Expense Changes $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 Fuel 0.005 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 Claims Paratransit Service Contracts Maintenance and Other Operating Contracts 0.117 0.000 0.000 0.000 Professional Service Contracts (0.138) 0.002 0.002 0.001 Materials & Supplies 0.000 0.000 0.000 0.000 Other Business Expenses 0.015 (0.002) (0.002) (0.001) Total Non-Labor Expense Changes ($0.000) ($0.000) $0.000 $0.000 Total Expense Changes before Depreciation and GASB Adjs. ($0.000) ($0.000) $0.000 $0.000 Depreciation $0.000 $0.000 $0.000 $0.000 GASB 68 Pension Expense Adjustment $0.000 $0.000 $0.000 $0.000 GASB 75 OPEB Expense Adjustment $0.000 $0.000 $0.000 $0.000 GASB 87 Lease Adjustment $0.000 $0.000 $0.000 $0.000 GASB 96 - SBITA Asset Subscriptions $0.000 $0.000 $0.000 $0.000 Environmental Remediation $0.000 $0.000 $0.000 $0.000 Total Expense Changes ($0.000) ($0.000) $0.000 $0.000 Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Baseline Changes ($0.000) ($0.000) $0.000 $0.000 July Financial Plan - Cash Surplus/(Deficit) ($0.000) ($0.000) $0.000 $0.000
+```
+[p207_c0006] _V-45_
+
+## Page 208
+
+### [p208_c0001] MTA CONSTRUCTION & DEVELOPMENT July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p208_c0002] REIMBURSABLE
+[p208_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 Baseline Changes Revenue Capital and Other Reimbursement (35.206) (20.844) (17.919) (24.009) Total Revenue Changes ($35.206) ($20.844) ($17.919) ($24.009) Expenses Labor: Payroll ($5.893) ($6.128) ($4.615) ($3.100) Overtime Health and Welfare 1.785 (1.459) (1.132) (0.783) OPEB Current Payment Pensions 3.777 (1.856) (1.509) (1.160) Other Fringe Benefits 0.231 (0.553) (0.410) (0.266) Reimbursable Overhead 1.820 2.278 2.439 2.589 Total Labor Expense Changes $1.720 ($7.719) ($5.227) ($2.720) Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 Claims Paratransit Service Contracts Maintenance and Other Operating Contracts (0.020) (0.320) (0.320) (0.320) Professional Service Contracts 33.209 28.909 23.184 26.759 Materials & Supplies 0.020 0.020 0.020 0.020 Other Business Expenses 0.277 (0.047) 0.262 0.271 Total Non-Labor Expense Changes $33.486 $28.562 $23.146 $26.730 Total Expense Changes $35.206 $20.844 $17.919 $24.009 Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Baseline Changes $0.000 $0.000 ($0.000) ($0.000) July Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 ($0.000) ($0.000)
+```
+[p208_c0004] _V-46_
+
+## Page 209
+
+### [p209_c0001] MTA CONSTRUCTION & DEVELOPMENT July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p209_c0002] NON-REIMBURSABLE/REIMBURSABLE
+[p209_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 Baseline Changes Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 Vehicle Toll Revenue 0.000 0.000 0.000 0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 Capital and Other Reimbursement (35.206) (20.844) (17.919) (24.009) Total Revenue Changes ($35.206) ($20.844) ($17.919) ($24.009) Expenses Labor: Payroll ($4.971) ($4.676) ($3.067) ($1.462) Overtime 0.000 0.000 0.000 0.000 Health and Welfare 2.133 (1.118) (0.758) (0.379) OPEB Current Payment 0.000 0.000 0.000 0.000 Pensions 4.214 (1.509) (1.139) (0.769) Other Fringe Benefits 0.344 (0.416) (0.263) (0.110) Reimbursable Overhead 0.000 0.000 0.000 0.000 Total Labor Expense Changes $1.720 ($7.719) ($5.227) ($2.720) Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 Fuel 0.005 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.097 (0.320) (0.320) (0.320) Professional Service Contracts 33.071 28.911 23.185 26.760 Materials & Supplies 0.020 0.020 0.020 0.020 Other Business Expenses 0.293 (0.049) 0.260 0.270 Total Non-Labor Expense Changes $33.486 $28.562 $23.146 $26.730 Total Expense Changes before Depreciation and GASB Adjs. $35.206 $20.844 $17.919 $24.009 Depreciation $0.000 $0.000 $0.000 $0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 GASB 96 - SBITA Asset Subscriptions 0.000 0.000 0.000 0.000 Environmental Remediation 0.000 0.000 0.000 0.000 Total Expense Changes $35.206 $20.844 $17.919 $24.009 Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Baseline Changes $0.000 $0.000 ($0.000) ($0.000) July Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 ($0.000) ($0.000)
+```
+[p209_c0004] _V-47_
+
+## Page 210
+
+### [p210_c0001] MTA CONSTRUCTION & DEVELOPMENT July Financial Plan 2026-2029 Summary of Major Programmatic Changes Between Financial Plans ($ in millions)
+### [p210_c0002] NON-REIMBURSABLE and REIMBURSABLE
+[p210_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 Non-Reimbursable Major Changes Revenue Sub-Total Non-Reimbursable Revenue Changes $0.000 $0.000 $0.000 $0.000 Expenses Interagency Transfer to MTAHQ (Advertising & Promotion) $1.292 $1.774 $1.827 $1.882 Reallocation of NR/R Headcount 0.304 0.417 0.430 0.442 Labor Actualization 0.225 0.087 0.182 0.265 Reimbursable Overhead (1.820) (2.278) (2.439) (2.589) All Other Sub-Total Non-Reimbursable Expense Changes $0.000 $0.000 $0.000 $0.000 Total Non-Reimbursable Major Changes $0.000 $0.000 $0.000 $0.000 Reimbursable Major Changes Revenue Capital and Other Reimbursements (35.206) (20.844) (17.919) (24.009) Sub-Total Reimbursable Revenue Changes ($35.206) ($20.844) ($17.919) ($24.009) Expenses Interagency Transfer to MTAHQ (Rolling Stock Program) $0.430 $0.590 $0.608 $0.626 Position Transfers to MNR $0.774 $1.063 $1.095 $1.128 Reallocation of NR/R Headcount ($0.304) ($0.417) ($0.430) ($0.442) Additional Headcount to Support Operational Needs ($8.668) ($13.233) ($13.546) ($13.802) Increase in Budgeted Positions $7.667 $2.000 $4.607 $7.181 Reimbursable Overhead $1.820 $2.278 $2.439 $2.589 Defer to 2026 and 2027 Professional Services and Other Misc Expense $7.300 ($3.300) ($4.000) $0.000 Third Party Reimbursable New Agreements ($3.575) ($1.750) ($0.750) ($0.675) Third Party Reimbursable Re-estimate 29.784 33.659 27.934 27.434 Payroll Mobility Tax (0.023) (0.047) (0.038) (0.029) Sub-Total Reimbursable Expense Changes $35.206 $20.844 $17.919 $24.009 Total Reimbursable Major Changes $0.000 $0.000 $0.000 $0.000 Total Accrual Changes $0.000 $0.000 $0.000 $0.000 Cash Adjustment Changes Total Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Baseline Changes $0.000 $0.000 $0.000 $0.000 July Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000
+```
+[p210_c0004] _V-48_
+
+## Page 211
+
+### [p211_c0001] MTA CONSTRUCTION & DEVELOPMENT 2026 Preliminary Budget July Financial Plan 2026 - 2029 Positions
+### [p211_c0002] POSITION ASSUMPTIONS
+[p211_c0003] The budgeted headcount within MTA Construction and Development (C&D) comprises personnel who directly or indirectly support the broader MTA Capital Program across the organization. Collectively, these roles are essential to delivering capital projects efficiently and ensuring strategic alignment across all facets of the program.
+### [p211_c0004] YEAR-TO-YEAR
+[p211_c0005] From 2026 to 2028, the positions will remain constant at 755. There are 16 non-reimbursable positions in 2025, and 739 reimbursable positions.
+[p211_c0006] Positions by occupational group are reflected below and remain constant through the Plan period:
+- [p211_c0007] • 665 Managers/Supervisors positions • 72 Professional, Technical, Clerical positions • 18 Operational Hourlies
+### [p211_c0008] PLAN-TO-PLAN
+[p211_c0009] In 2025, the total number of positions is expected to increase by 46 to 755. This is due to a 60-position increase from MTA Headquarters, a shift of 9 advertising and 2 rolling stock positions back to MTA Headquarters, and a decrease of 3 positions transferred to Metro-North Railroad. Baseline positions will remain constant at 755 positions through the rest of the Plan period.
+[p211_c0010] A further breakdown of non-reimbursable and reimbursable positions is reflected in the Financial Plan.
+[p211_c0011] **It should be noted that a number of MTA Construction & Development (C&D) staff are carried on the payrolls of other MTA agencies, such as NYCT, LIRR, MNR, or B&T, to preserve employee benefits. As a result, MTA C&D shows unfavorable staffing variances, which are offset by favorable variances in those respective agencies. C&D is actively working to realign budgets to improve the accuracy of future financial reporting.
+[p211_c0012] _V-49_
+
+## Page 212
+
+### [p212_c0001] MTA CONSTRUCTION & DEVELOPMENT
+### [p212_c0002] July Financial Plan 2026-2029
+[p212_c0003] Favorable/(Unfavorable)
+### [p212_c0004] Total Position Changes at a Glance
+[p212_c0005]
+
+```text
+2025 2026 2027 2028 2025 February Plan - Total Baseline Positions 709 709 709 709 Total Plan-to-Plan Changes (46) (46) (46) (46) 2025 July Plan - Total Baseline Positions 755 755 755 755 Total Year-to-Year Changes, July Plan 0 0 0 0
+```
+### [p212_c0006] Total Plan-to-Plan Changes by Reporting Category:
+[p212_c0007]
+
+```text
+Non-Reimbursable 10 10 10 10 Reimbursable (56) (56) (56) (56) Total (46) (46) (46) (46) Full-Time (46) (46) (46) (46) Full-Time Equivalents 0 0 0 0 Total (46) (46) (46) (46) By Function Category - Administration (45) (45) (45) (45) - Operations 0 0 0 0 - Maintenance 0 0 0 0 - Engineering/Capital (1) (1) (1) (1) - Public Safety 0 0 0 0 Total (46) (46) (46) (46) By Occupational Group - Managers/Supervisors (68) (68) (68) (68) - Professional, Technical, Clerical 19 19 19 19 - Operational Hourlies 3 3 3 3 Total (46) (46) (46) (46)
+```
+### [p212_c0008] Total Plan-to-Plan Changes by Major Category:
+[p212_c0009]
+
+```text
+MTA Operating Efficiencies 0 0 0 0 New Needs 0 0 0 0 Change in Reimbursable Positions (56) (56) (56) (56) Re-estimates & All Other 1 10 10 10 10 Total (46) (46) (46) (46)
+```
+[p212_c0010] _1 Includes Full-time Equivalents_
+[p212_c0011] _V-50_
+
+## Page 213
+
+### [p213_c0001] MTA CONSTRUCTION & DEVELOPMENT July Financial Plan 2026-2029 Total Positions by Function and Department Non-Reimbursable/ Reimbursable and Full-Time Positions/Full-Time Equivalents
+[p213_c0002]
+
+```text
+Function/Department 2024 Actual 2025 Mid-Year Forecast 2026 Preliminary Budget 2027 2028 2029 Non-Reimbursable Administration Transit Oriented Development 15 10 10 10 10 10 Deputy CDO, Planning 2 2 2 2 2 2 Transit Advertising & Media 11 Total Non-Reimbursable Administration 28 12 12 12 12 12 Non-Reimbursable Engineering/Capital Transit Oriented Development 4 4 4 4 4 Total Non-Reimbursable Engineering - 4 4 4 4 4 Total Non-Reimbursable Baseline 28 16 16 16 16 16 Reimbursable Administration MTA C&D 385 529 529 529 529 529 Engineering/Capital MTA C&D 356 210 210 210 210 210 East Side Access 5 Second Avenue Subway 13 OMNY 13 Penn Station Access 6 LIRR Concourse Train Hall 1 Total Engineering/Capital 394 210 210 210 210 210 Total Baseline Positions 807 755 755 755 755 755 Non-Reimbursable 28 16 16 16 16 16 Reimbursable 779 739 739 739 739 739 Total Full-Time 807 755 755 755 755 755 Total Full-Time Equivalents 807 755 755 755 755 755
+```
+[p213_c0003] _V-51_
+
+## Page 214
+
+### [p214_c0001] MTA CONSTRUCTION & DEVELOPMENT July Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p214_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Administration Managers/Supervisors 370 517 517 517 517 517 Professional/Technical/Clerical 43 14 14 14 14 14 Operational Hourlies 0 10 10 10 10 10 Total Administration Headcount 413 541 541 541 541 541 Operations Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Operations Headcount 0 0 0 0 0 0 Maintenance Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Maintenance Headcount 0 0 0 0 0 0 Engineering / Capital Managers/Supervisors 0 148 148 148 148 148 Professional/Technical/Clerical 394 58 58 58 58 58 Operational Hourlies 0 8 8 8 8 8 Total Engineering Headcount 394 214 214 214 214 214 Public Safety Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 Total Positions Managers/Supervisors 370 665 665 665 665 665 Professional/Technical/ Clerical 437 72 72 72 72 72 Operational Hourlies 0 18 18 18 18 18 Total Positions 807 755 755 755 755 755
+```
+[p214_c0003] _V-52_
+
+## Page 215
+
+### [p215_c0001] Long Island Rail Road
+
+## Page 216
+
+### [p216_c0001] MTA LONG ISLAND RAIL ROAD 2026 Preliminary Budget July Financial Plan 2026 - 2029
+### [p216_c0002] FINANCIAL OVERVIEW
+[p216_c0003] The July Financial Plan provides the resources required to provide a safe, secure and reliable transportation service for customers and employees.
+### [p216_c0004] Financial Highlights
+- [p216_c0005] • Non-Reimbursable Revenue: The Plan reflects $63.8 million more revenue over the Financial Plan period with Farebox Revenue increasing by approximately $50.6 million and Other Operating Revenue increasing by $13.1 million. The 2025 Farebox Revenue projection incorporates actuals through May. Farebox Revenue increases $16.2 million in 2025, and $34.5 million cumulative for 2026 through 2028 compared with the February Plan. The $13.1 million increase in other operating revenue is due to higher miscellaneous revenue in 2025 and higher rental and advertising revenue for the period 2025 through 2028. • Non-Reimbursable Expenses: The Plan reflects $16.9 million in higher expenses over the Plan period. Material inflation adjustments, Federal Employers' Liability Act (FELA), insurance, and electric power rates are the primary drivers of this increase. These higher expenses are partially offset by lower health & welfare rates, and pension expenses. • Headcount: Compared to the February Plan, the July Plan reflects a headcount decrease of 26 positions in 2025, and an increase of 16 positions for 2026 through 2028. The decrease in 2025 is due to 27 open positions, partially offset by 1 position shifted from MTA Construction and Development to LIRR. The increase for 2026 through 2028 is due to 15 positions added for FRA Signal/Dispatch Certification and 1 position shifted from MTA Construction and Development to LIRR.
+### [p216_c0006] Ridership and Revenue
+[p216_c0007] The July Plan forecasts 2025 ridership to be 82.0 million, which is 3.7 million or 4.8% higher than the Adopted Budget, and 6.5 million or 8.6% higher than 2024 actuals. The 2025 farebox revenue forecast is $16.2 million or 2.4% higher than the Adopted Budget, $44.5 million or 6.9% higher than 2024 actuals.
+[p216_c0008] _V-53_
+
+## Page 217
+
+### [p217_c0001] 2025 MID-YEAR FORECAST
+[p217_c0002] The 2025 Mid-Year Forecast includes non-reimbursable revenue totaling $739.4 million and non-reimbursable expenses, including Government Accounting Standards Board (GASB) adjustments and depreciation of $2,667.5 million. 2025 Mid-Year Forecast for reimbursable revenue and expenses are each $423.0 million.
+[p217_c0003] Total non-reimbursable revenue is higher than the Adopted Budget by $24.0 million due to higher farebox revenue. There is also an increase in other operating revenue due to higher rental, advertising, and miscellaneous revenue.
+[p217_c0004] Total non-reimbursable expenses compared to the Adopted Budget (excluding non-cash liabilities) are lower by $12.9 million primarily due to payroll savings and associated fringe costs, lower health & welfare rates, and pension. These lower expenses were partially offset by higher FELA, material inflation adjustments and electric power rates.
+[p217_c0005] The 2025 Mid-Year Forecast includes 8,058 full-time positions, comprised of 6,924 non-reimbursable positions and 1,134 reimbursable positions.
+[p217_c0006] _V-54_
+
+## Page 218
+
+### [p218_c0001] 2026 PRELIMINARY BUDGET BASELINE
+[p218_c0002] The 2026 Preliminary Budget includes revenue totaling $1,160.1 million, of which $734.6 million is non-reimbursable revenue and $425.5 million is reimbursable revenue, primarily from the MTA Capital Program. The total expense budget is $3,137.5 million, of which $2,591.0 million is for operating expenses, and the balance is associated with non-cash items such as the GASB Adjustments and Depreciation. Non-reimbursable operating expenses total $2,165.5 million (excluding non-cash items), while reimbursable expenses are $425.5 million.
+[p218_c0003] The 2026 Preliminary Budget's cash budget incorporates $1,154.1 million in cash receipts and $2,574.3 million in cash expenditures. The baseline cash requirement of $1,420.2 million is driven by operating expenses and revenues anticipated in the 2026 Preliminary Budget and other cash flow adjustments.
+[p218_c0004] On an accrued basis, revenues are lower and expenses are higher compared with the 2025 Mid-Year Forecast. Total revenues for 2026 are $1,160.1 million, $2.3 million lower than in 2025, with non-reimbursable revenues decreasing by $4.8 million and reimbursable revenues increasing by $2.5 million. Total expenses before GASB Adjustments and Depreciation of $2,591.0 million reflect an increase of $106.8 million over 2025. Non-reimbursable expenses increase by $104.3 million, and reimbursable expenses increase by $2.5 million.
+[p218_c0005] Total revenues in the 2026 Preliminary Budget are higher than the February Plan by $25.4 million, driven by higher farebox revenue of $13.3 million, capital and other reimbursements of $10.5 million, and other operating revenue of $1.6 million. Total expenses, excluding non-cash items, are $23.0 million higher. Non-reimbursable expenses increased by $12.5 million and reimbursable expenses increased by $10.5 million. The non-reimbursable increase results from material inflation adjustments, FELA, insurance, electric power rates, and installation of forward-facing cameras onboard revenue trains per FRA Mandate, partially offset by lower health & welfare rates.
+[p218_c0006] Full-time positions total 8,147 in the 2026 Preliminary Budget, with 7,149 non-reimbursable positions and 998 reimbursable positions. Compared to the 2025 Mid-Year Forecast, this reflects a net increase of 89 positions, comprised of an increase of 225 non-reimbursable positions and a decrease of 136 reimbursable positions. The non-reimbursable increase is due to increases in headcount related to FRA Signal/Dispatch Certification, revenue fleet RCM programs, Maintenance of Equipment positions anticipated to be vacant in 2025 and filled by 2026, and timing of capital project activity by month. Reimbursable positions decrease due to anticipated changes in capital project activity as well as the timing of capital and maintenance activity.
+[p218_c0007] Compared with the February Financial Plan, non-reimbursable positions increased by 15 and reimbursable positions increased by 1. The increase in year-end non-reimbursable headcount is due to FRA Signal/Dispatch certification.
+### [p218_c0008] FINANCIAL PLAN 2027 – 2029 PROJECTIONS
+[p218_c0009] The baseline projections for 2027 through 2029 reflect the continued implementation of initiatives launched in 2025 and 2026. During this period, investments in the RCM program increase as many components enter critical maintenance stages. Non-reimbursable revenues increase by 0.1% in 2027, 0.4% in 2028, and 0.5% in 2029, reaching $741.8 million. Reimbursable revenues
+[p218_c0010] _V-55_
+
+## Page 219
+
+[p219_c0001] increase by 1.4% in 2027, 1.4% in 2028 and 2.0% in 2029. Non-reimbursable expenses grow by 8.2% in 2027, 4.1% in 2028 and 3.1% in 2029, reaching $2,507.5 million. Reimbursable expenses increase by 1.4% in 2027, 1.4% in 2028 and 2.0% in 2029.
+[p219_c0002] Compared to the February Financial Plan, total revenues are higher by $23.0 million in 2027, and $22.7 million in 2028. Non-reimbursable revenue is higher by $12.7 million in 2027 and $12.2 million in 2028. Reimbursable revenues are higher by $10.4 million and $10.5 million, respectively. Reimbursable revenue changes are primarily due to pay rate adjustments and higher anticipated recovery for vehicle leases. Total expenses before Depreciation and other non-cash items are higher by $22.0 million in 2027 and $16.2 million in 2028. Non-reimbursable expenses are higher by $11.6 million in 2027 and $5.7 million in 2028. These expense increases reflect higher FELA, insurance, electric power rates, material inflation adjustments, and installation of forward-facing cameras onboard revenue trains per FRA Mandate, partially offset by lower health & welfare rates. Reimbursable expenses are higher by $10.4 million in 2027 and $10.5 million in 2028.
+[p219_c0003] On a year-to-year basis, baseline positions will increase by 218 positions in 2027, followed by a decrease of 1 position in 2028, and remain unchanged in 2029. Non-reimbursable positions will increase by 225 in 2027 with no change in 2028 and 2029. The 2027 non-reimbursable increase is due to additional Maintenance of Way positions to maintain new infrastructure added over the last several years as the infrastructure components begin to reach critical maintenance stages, and Maintenance of Equipment positions related to RCM programs and fleet growth. Reimbursable positions decrease by 7 in 2027, 1 in 2028, and remain unchanged in 2029.
+[p219_c0004] _V-56_
+
+## Page 220
+
+### [p220_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p220_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $649.735 $694.260 $694.265 $694.265 $696.216 $699.218 Other Operating Revenue 46.482 45.149 40.324 40.698 41.627 42.581 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $696.217 $739.409 $734.589 $734.964 $737.843 $741.798 Operating Expense Labor: Payroll $677.955 $746.583 $770.876 $803.973 $817.351 $838.395 Overtime 160.343 171.118 159.916 165.554 164.594 167.881 Health and Welfare 165.803 183.381 203.886 223.492 237.227 251.552 OPEB Current Payments 77.707 79.186 83.901 88.742 93.846 99.079 Pension 171.078 193.388 204.574 208.257 204.908 205.456 Other Fringe Benefits 181.568 201.112 206.957 215.144 218.880 223.952 Reimbursable Overhead (50.880) (37.610) (33.121) (33.893) (34.569) (35.594) Total Labor Expenses $1,383.575 $1,537.157 $1,596.989 $1,671.270 $1,702.236 $1,750.720 Non-Labor: Electric Power $103.522 $118.653 $122.982 $124.893 $128.773 $134.677 Fuel 26.542 24.903 23.751 24.240 24.386 25.318 Insurance 28.113 30.388 35.848 35.978 38.184 38.876 Claims 18.780 3.937 3.937 3.937 3.937 4.016 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 104.717 126.896 120.953 125.663 152.807 153.746 Professional Services Contracts 68.004 53.041 49.414 48.738 49.997 50.653 Materials and Supplies 133.828 140.462 185.832 283.725 310.286 323.001 Other Business Expenses 23.677 25.766 25.833 26.126 26.074 26.480 Total Non-Labor Expenses $507.182 $524.046 $568.550 $673.300 $734.444 $756.768 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,890.757 $2,061.203 $2,165.538 $2,344.570 $2,436.680 $2,507.488 Depreciation $563.128 $562.717 $548.072 $553.552 $559.087 $564.677 GASB 49 Environmental Remediation 7.512 2.000 2.000 2.000 2.000 2.000 GASB 68 Pension Expense Adjustment 6.892 0.480 (39.290) (3.550) (99.310) (100.680) GASB 75 OPEB Expense Adjustment (42.330) 35.000 35.700 36.414 37.142 37.885 GASB 87 Lease Adjustment (1.064) 4.547 (0.620) (0.620) (0.620) (0.620) GASB 96 SBITA Adjustment (3.645) 1.556 0.600 0.600 0.600 0.600 Total Non-Cash Liability Adjustments $530.492 $606.300 $546.462 $588.396 $498.899 $503.862 Total Expenses $2,421.249 $2,667.503 $2,712.000 $2,932.966 $2,935.579 $3,011.350 Net Surplus/(Deficit) ($1,725.032) ($1,928.094) ($1,977.411) ($2,198.003) ($2,197.736) ($2,269.552) Cash Conversion Adjustments Depreciation $563.128 $562.717 $548.072 $553.552 $559.087 $564.677 Operating/Capital (9.530) (22.435) (15.179) (13.946) (13.888) (13.750) Other Cash Adjustments (1.274) 240.202 24.341 67.042 (37.789) (38.203) Total Cash Conversion Adjustments $552.324 $780.484 $557.234 $606.649 $507.410 $512.724 Net Cash Surplus/(Deficit) ($1,172.709) ($1,147.609) ($1,420.177) ($1,591.354) ($1,690.326) ($1,756.828)
+```
+[p220_c0003] _V-57_
+
+## Page 221
+
+### [p221_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p221_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 468.396 422.986 425.475 431.486 437.703 446.561 Total Revenues $468.396 $422.986 $425.475 $431.486 $437.703 $446.561 Operating Expense Labor: Payroll $132.513 $141.490 $150.773 $153.184 $155.168 $158.450 Overtime 54.090 44.637 42.147 42.415 43.264 44.129 Health and Welfare 34.358 33.166 34.723 35.263 35.761 36.513 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 50.706 50.632 56.416 57.293 58.102 59.324 Other Fringe Benefits 36.026 34.066 35.508 36.059 36.568 37.338 Reimbursable Overhead 50.880 37.610 33.121 33.893 34.569 35.594 Total Labor Expenses $358.573 $341.601 $352.688 $358.107 $363.431 $371.348 Non-Labor: Electric Power $0.338 $0.623 $0.360 $0.360 $0.360 $0.360 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 7.502 10.219 11.983 12.223 12.390 12.635 Claims 0.100 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 45.486 24.190 19.529 19.765 20.009 20.289 Professional Services Contracts 6.799 1.966 0.763 0.778 0.794 0.810 Materials and Supplies 48.734 43.882 39.671 39.765 40.224 40.612 Other Business Expenses 0.864 0.504 0.481 0.489 0.496 0.506 Total Non-Labor Expenses $109.823 $81.385 $72.788 $73.379 $74.272 $75.212 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $468.396 $422.986 $425.475 $431.486 $437.703 $446.561 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p221_c0003] _V-58_
+
+## Page 222
+
+### [p222_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p222_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $649.735 $694.260 $694.265 $694.265 $696.216 $699.218 Other Operating Revenue 46.482 45.149 40.324 40.698 41.627 42.581 Capital and Other Reimbursements 468.396 422.986 425.475 431.486 437.703 446.561 Total Revenues $1,164.613 $1,162.395 $1,160.064 $1,166.450 $1,175.546 $1,188.359 Operating Expense Labor: Payroll $810.468 $888.072 $921.649 $957.157 $972.519 $996.845 Overtime 214.433 215.755 202.063 207.969 207.858 212.010 Health and Welfare 200.161 216.547 238.610 258.755 272.987 288.065 OPEB Current Payments 77.707 79.186 83.901 88.742 93.846 99.079 Pension 221.784 244.020 260.990 265.550 263.010 264.780 Other Fringe Benefits 217.595 235.179 242.464 251.203 255.448 261.290 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $1,742.148 $1,878.759 $1,949.676 $2,029.377 $2,065.667 $2,122.069 Non-Labor: Electric Power $103.859 $119.277 $123.342 $125.253 $129.133 $135.037 Fuel 26.542 24.903 23.751 24.240 24.386 25.318 Insurance 35.614 40.608 47.830 48.200 50.574 51.512 Claims 18.880 3.937 3.937 3.937 3.937 4.016 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 150.203 151.086 140.482 145.428 172.816 174.035 Professional Services Contracts 74.804 55.006 50.177 49.516 50.791 51.463 Materials and Supplies 182.562 184.344 225.504 323.490 350.509 363.613 Other Business Expenses 24.541 26.270 26.315 26.615 26.570 26.986 Total Non-Labor Expenses $617.005 $605.431 $641.338 $746.679 $808.716 $831.980 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $2,359.153 $2,484.189 $2,591.014 $2,776.056 $2,874.383 $2,954.049 Depreciation $563.128 $562.717 $548.072 $553.552 $559.087 $564.677 GASB 49 Environmental Remediation 7.512 2.000 2.000 2.000 2.000 2.000 GASB 68 Pension Expense Adjustment 6.892 0.480 (39.290) (3.550) (99.310) (100.680) GASB 75 OPEB Expense Adjustment (42.330) 35.000 35.700 36.414 37.142 37.885 GASB 87 Lease Adjustment (1.064) 4.547 (0.620) (0.620) (0.620) (0.620) GASB 96 SBITA Adjustment (3.645) 1.556 0.600 0.600 0.600 0.600 Total Non-Cash Liability Adjustments $530.492 $606.300 $546.462 $588.396 $498.899 $503.862 Total Expenses $2,889.645 $3,090.489 $3,137.476 $3,364.452 $3,373.282 $3,457.911 Net Surplus/(Deficit) ($1,725.032) ($1,928.094) ($1,977.411) ($2,198.003) ($2,197.736) ($2,269.552) Cash Conversion Adjustments Depreciation $563.128 $562.717 $548.072 $553.552 $559.087 $564.677 Operating/Capital (9.530) (22.435) (15.179) (13.946) (13.888) (13.750) Other Cash Adjustments (1.274) 240.202 24.341 67.042 (37.789) (38.203) Total Cash Conversion Adjustments $552.324 $780.484 $557.234 $606.649 $507.410 $512.724 Net Cash Surplus/(Deficit) ($1,172.709) ($1,147.609) ($1,420.177) ($1,591.354) ($1,690.326) ($1,756.828)
+```
+[p222_c0003] _V-59_
+
+## Page 223
+
+### [p223_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p223_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $655.570 $698.941 $703.489 $703.489 $705.440 $708.442 Other Operating Revenue 96.674 45.654 40.839 41.224 42.165 43.118 Capital and Other Reimbursements 436.375 419.384 409.782 417.015 423.277 432.273 Total Receipts $1,188.620 $1,163.979 $1,154.110 $1,161.728 $1,170.882 $1,183.833 Expenditures Labor: Payroll $808.261 $908.631 $917.792 $953.213 $968.485 $992.719 Overtime 208.030 222.706 202.063 207.969 207.858 212.010 Health and Welfare 201.278 216.547 238.610 258.755 272.987 288.065 OPEB Current Payments 77.467 79.186 83.901 88.742 93.846 99.079 Pension 228.419 3.930 260.990 265.550 263.010 264.780 Other Fringe Benefits 231.439 237.640 231.464 240.203 244.448 250.290 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $1,754.894 $1,668.639 $1,934.819 $2,014.433 $2,050.633 $2,106.943 Non-Labor: Electric Power $112.231 $119.277 $123.342 $125.253 $129.133 $135.037 Fuel 26.607 25.168 23.751 24.240 24.386 25.318 Insurance 31.023 39.755 46.945 47.793 50.055 51.006 Claims 3.335 4.504 1.929 1.929 1.929 2.008 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 148.848 168.476 140.482 145.428 172.816 174.035 Professional Services Contracts 43.334 51.279 37.177 36.516 37.791 38.463 Materials and Supplies 211.939 195.966 227.482 318.761 355.709 368.642 Other Business Expenses 25.218 29.300 29.135 29.505 29.532 29.985 Total Non-Labor Expenditures $602.534 $633.726 $630.244 $729.425 $801.351 $824.494 Other Expenditure Adjustments: Other $3.900 $9.224 $9.224 $9.224 $9.224 $9.224 Total Other Expense Adjustments $3.900 $9.224 $9.224 $9.224 $9.224 $9.224 Total Expenditures $2,361.328 $2,311.589 $2,574.287 $2,753.082 $2,861.208 $2,940.661 Net Cash Balance ($1,172.709) ($1,147.609) ($1,420.177) ($1,591.354) ($1,690.326) ($1,756.828) Cash Timing and Availability Adjustment 8.373 (0.000) (0.000) (0.000) (0.000) (0.000) Net Cash Balance after Cash Timing & Availability Adj ($1,164.336) ($1,147.609) ($1,420.177) ($1,591.354) ($1,690.326) ($1,756.828)
+```
+[p223_c0003] _V-60_
+
+## Page 224
+
+### [p224_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p224_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue $5.835 $4.681 $9.224 $9.224 $9.224 $9.224 Other Operating Revenue 50.192 0.505 0.515 0.525 0.538 0.538 Capital and Other Reimbursements (32.021) (3.602) (15.693) (14.471) (14.426) (14.288) Total Receipts $24.007 $1.584 ($5.955) ($4.722) ($4.664) ($4.526) Expenditures Labor: Payroll $2.207 ($20.558) $3.857 $3.945 $4.034 $4.126 Overtime 6.403 (6.951) 0.000 0.000 0.000 0.000 Health and Welfare (1.117) 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.240 0.000 0.000 0.000 0.000 0.000 Pension (6.635) 240.090 0.000 0.000 0.000 0.000 Other Fringe Benefits (13.844) (2.461) 11.000 11.000 11.000 11.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures ($12.746) $210.120 $14.857 $14.945 $15.034 $15.126 Non-Labor: Electric Power ($8.371) $0.000 0.000 $0.000 $0.000 $0.000 Fuel (0.065) (0.265) 0.000 0.000 0.000 0.000 Insurance 4.592 0.852 0.885 0.407 0.519 0.506 Claims 15.545 (0.567) 2.008 2.008 2.008 2.008 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 1.355 (17.390) 0.000 0.000 0.000 0.000 Professional Services Contracts 31.470 3.727 13.000 13.000 13.000 13.000 Materials and Supplies (29.377) (11.622) (1.979) 4.728 (5.200) (5.028) Other Business Expenses (0.677) (3.030) (2.820) (2.890) (2.962) (2.999) Total Non-Labor Expenditures $14.471 ($28.295) $11.094 $17.254 $7.365 $7.486 Other Expenditure Adjustments: Other Expense Adjustments ($3.900) ($9.224) ($9.224) ($9.224) ($9.224) ($9.224) Total Other Expenditure Adjustments ($3.900) ($9.224) ($9.224) ($9.224) ($9.224) ($9.224) Total Expenditures ($2.175) $172.600 $16.727 $22.974 $13.175 $13.388 Total Cash Conversion Adjustments before Depreciation $21.831 $174.184 $10.773 $18.253 $8.511 $8.862 Depreciation $563.128 $562.717 $548.072 $553.552 $559.087 $564.677 GASB 49 Environmental Remediation 7.512 2.000 2.000 2.000 2.000 2.000 GASB 68 Pension Expense Adjustment 6.892 0.480 (39.290) (3.550) (99.310) (100.680) GASB 75 OPEB Expense Adjustment (42.330) 35.000 35.700 36.414 37.142 37.885 GASB 87 Lease Adjustment (1.064) 4.547 (0.620) (0.620) (0.620) (0.620) GASB 96 SBITA Adjustment (3.645) 1.556 0.600 0.600 0.600 0.600 Total Non-Cash Liability Adjustments $530.492 $606.300 $546.462 $588.396 $498.899 $503.862 Cash Timing and Availability Adjustment 8.373 0.000 0.000 0.000 0.000 0.000 Total Cash Conversion Adjustments $560.697 $780.484 $557.234 $606.649 $507.410 $512.724
+```
+[p224_c0003] _V-61_
+
+## Page 225
+
+### [p225_c0001] MTA Long Island Rail Road 2026 Preliminary Budget July Financial Plan 2026 – 2029 Year-To-Year Changes by Category - Baseline
+### [p225_c0002] REVENUE
+### [p225_c0003] Farebox Revenue
+- [p225_c0004] • Farebox Revenue estimates are based on 2025 results through May. • Farebox revenues are unchanged in 2025 through 2027, and increase 0.3% in 2028, and 0.4% in 2029.
+### [p225_c0005] Other Operating Revenue
+- [p225_c0006] • Decreases from 2025 to 2026 due to lower miscellaneous revenue. • Increases from 2026 to 2027 due to higher rental revenue, partially offset by lower advertising revenue. • Annual increases from 2027 through 2029 due to higher advertising and rental revenue.
+### [p225_c0007] Capital and Other Reimbursements
+- [p225_c0008] • 2025 to 2026 reflects projected changes in capital project activity based on the latest project schedules, and revised project schedules for operating funded capital (OFC). • Increases for 2026 through 2029 represent normal inflationary increases.
+### [p225_c0009] EXPENSES
+### [p225_c0010] Payroll
+- [p225_c0011] • Salaries for represented employees in unsettled labor agreements assume 3% in 2023, 3% in 2024, 3.25% in 2025, and annual increases of 2% thereafter. • Salaries for represented employees in settled labor agreements assume the terms of the agreement, followed by annual increases of 2%. • Salaries for non-represented employees assume 2% annual increases from 2026 forward.
+### [p225_c0012] Overtime
+- [p225_c0013] • The decline from 2025 to 2026 is primarily attributable to maintenance, vacancy/absentee coverage, scheduled service, weather-related overtime, and reimbursable project overtime. • Increases for 2026 through 2028 are normal inflationary increases.
+### [p225_c0014] Health & Welfare
+- [p225_c0015] • Reflects projected annual premium increases for the New York State Health Insurance Program (NYSHIP). • Reflects the impact of position changes each year.
+### [p225_c0016] Pensions
+- [p225_c0017] • Reflects the latest actuarial estimates.
+[p225_c0018] _V-62_
+
+## Page 226
+
+### [p226_c0001] Other Fringe Benefits
+- [p226_c0002] • Railroad Retirement Tax maximum limits are based on Railroad Retirement maximum earnings tier levels and annual Consumer Price Index (CPI) increases; the tax rate for each tier is expected to remain unchanged. • Railroad Unemployment Insurance costs are lower for 2025 and are expected to return to pre-2021 rates beginning in 2026. • Reflects the impact of position changes each year.
+### [p226_c0003] Electric Power
+- [p226_c0004] • 2025 includes actuals through April. • Forecasts for the remainder of 2025 and annually through 2029 reflect the latest consumption estimates and rate changes.
+### [p226_c0005] Fuel
+- [p226_c0006] • 2025 includes actuals through April. • Forecasts for the remainder of 2025 and annually through 2029 reflect the latest fuel consumption estimates and price changes.
+### [p226_c0007] Insurance
+- [p226_c0008] • Reflects the latest premium projections, policy renewals, and Force Account Insurance estimates based on project activity.
+### [p226_c0009] Claims
+- [p226_c0010] • 2025 includes actuals through April, and anticipated settlements and payouts of claims for the balance of the year. • Forecasts for the remainder of 2025 and through 2029 reflect anticipated settlements and payouts of claims, as well as inflationary increases.
+### [p226_c0011] Maintenance and Other Operating Contracts
+- [p226_c0012] • 2025 to 2026 decreases primarily due to one-time maintenance costs for Jamaica Central Control (JCC) reflected in 2025, as well as various Maintenance of Way (MoW) maintenance contracts. • 2026 through 2029 increases due to increased costs related to new infrastructure that will reach critical stages of maintenance and normal inflationary increases.
+[p226_c0013] _V-63_
+
+## Page 227
+
+### [p227_c0001] Professional Service Contracts
+- [p227_c0002] • 2025 to 2026 decreases due to mobile ticket application support, partially offset by normal inflationary increases. • 2026 to 2029 reflects normal inflationary increases and payment schedules for mobile ticket application support.
+### [p227_c0003] Material and Supplies
+- [p227_c0004] • 2025 through 2028 increases due to material associated with RCM and fleet modification activities (which includes the revised schedule for M7 Propulsion), and normal inflationary increases. • 2028 to 2029 reflects normal inflationary increases.
+### [p227_c0005] Other Business Expenses
+- [p227_c0006] • 2025 through 2029 reflects normal inflationary increases.
+### [p227_c0007] Depreciation/Other Post-Employment Benefits/Environmental Remediation/GASB
+- [p227_c0008] • Reflects depreciation of current assets, as well as estimates for capital projects based on their beneficial use. OPEB and GASB are based on the latest actuarial estimates.
+### [p227_c0009] CASH ADJUSTMENTS
+### [p227_c0010] Expense
+- [p227_c0011] • Insurance adjustment to reflect projected payments versus accrued expenses for potential liabilities. • Timing of 2024 cash impacting 2025, 2026, and 2027. • Annual depreciation and other non-cash adjustments. • New York Power Authority (NYPA) loan payments. • Timing of material purchases and pension payments. • FELA
+[p227_c0012] _V-64_
+
+## Page 228
+
+### [p228_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p228_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable Operating Revenues Farebox Revenue $694,260 $694,265 $0.005 $694,265 $0.000 $696,216 $1.951 $699,218 $3.001 Other Operating Revenue 45,149 40,324 (4,825) 40,698 0.375 41,627 0.928 42,581 0.954 Total Revenues $739,409 $734,589 ($4,820) $734,964 $0.375 $737,843 $2,880 $741,798 $3,955 Operating Expenses Labor: Payroll $746,583 $770,876 ($24,294) $803,973 ($33,097) $817,351 ($13,378) $838,395 ($21,044) Overtime 171,118 159,916 11,202 165,554 (5,638) 164,594 0,960 167,881 (3,287) Health and Welfare 183,381 203,886 (20,506) 223,492 (19,606) 237,227 (13,735) 251,552 (14,325) OPEB Current Payments 79,186 83,901 (4,715) 88,742 (4,842) 93,846 (5,103) 99,079 (5,233) Pension 193,388 204,574 (11,186) 208,257 (3,684) 204,908 3,349 205,456 (0,547) Other Fringe Benefits 201,112 206,957 (5,844) 215,144 (8,187) 218,880 (3,735) 223,952 (5,072) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (37,610) (33,121) (4,489) (33,893) 0.771 (34,569) 0.676 (35,594) 1,025 Total Labor Expenses $1,537,157 $1,596,989 ($59,831) $1,671,270 ($74,282) $1,702,236 ($30,966) $1,750,720 ($48,484) Non-Labor: Electric Power $118,653 $122,982 ($4,329) $124,893 ($1,911) $128,773 ($3,880) $134,677 ($5,904) Fuel 24,903 23,751 1,152 24,240 (0,489) 24,386 (0,146) 25,318 (0,932) Insurance 30,388 35,848 (5,459) 35,978 (0,130) 38,184 (2,206) 38,876 (0,692) Claims 3,937 3,937 0.000 3,937 0.000 3,937 0.000 4,016 (0,079) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 126,896 120,953 5,943 125,663 (4,710) 152,807 (27,144) 153,746 (0,940) Professional Services Contracts 53,041 49,414 3,627 48,738 0.676 49,997 (1,259) 50,653 (0,657) Materials and Supplies 140,462 185,832 (45,370) 283,725 (97,893) 310,286 (26,561) 323,001 (12,715) Other Business Expenses 25,766 25,833 (0,068) 26,126 (0,293) 26,074 0.052 26,480 (0,406) Total Non-Labor Expenses $524,046 $568,550 ($44,504) $673,300 ($104,750) $734,444 ($61,144) $756,768 ($22,324) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $2,061,203 $2,165,538 ($104,335) $2,344,570 ($179,032) $2,436,680 ($92,110) $2,507,488 ($70,808) Depreciation $562,717 $548,072 $14,646 $553,552 ($5,480) $559,087 ($5,535) $564,677 ($5,590) GASB 49 Environmental Remediation 2,000 2,000 0.000 2,000 0.000 2,000 0.000 2,000 0.000 GASB 68 Pension Expense Adjustment 0.480 (39,290) 39,770 (3,550) (35,740) (99,310) 95,760 (100,680) 1,370 GASB 75 OPEB Expense Adjustment 35,000 35,700 (0,700) 36,414 (0,714) 37,142 (0,728) 37,885 (0,743) GASB 87 Lease Adjustment 4,547 (0,620) 5,167 (0,620) 0.000 (0,620) 0.000 (0,620) 0.000 GASB 96 SBITA Adjustment 1,556 0.600 (0,956) 0.600 0.000 0.600 0.000 0.600 0.000 Total Non-Cash Liability Adjustments $606,300 $546,462 $59,838 $588,396 ($41,934) $498,899 $89,497 $503,862 ($4,963) Total Expenses After Depreciation and GASB Adjs. $2,667,503 $2,712,000 ($44,497) $2,932,966 ($220,966) $2,935,579 ($2,613) $3,011,350 ($75,771) Net Surplus/(Deficit) ($1,928,094) ($1,977,411) ($49,318) ($2,198,003) ($220,591) ($2,197,736) $0.267 ($2,269,552) ($71,816)
+```
+[p228_c0003] _99-A_
+
+## Page 229
+
+### [p229_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p229_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Reimbursable Operating Revenues Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 422.986 425.475 2.489 431.486 6.011 437.703 6.217 446.561 8.858 Total Revenues $422.986 $425.475 $2.489 $431.486 $6.011 $437.703 $6.217 $446.561 $8.858 Operating Expenses Labor: Payroll $141.490 $150.773 ($9.283) $153.184 ($2.412) $155.168 ($1.984) $158.450 ($3.282) Overtime 44.637 42.147 2.490 42.415 (0.269) 43.264 (0.848) 44.129 (0.865) Health and Welfare 33.166 34.723 (1.557) 35.263 (0.539) 35.761 (0.498) 36.513 (0.752) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 50.632 56.416 (5.784) 57.293 (0.876) 58.102 (0.809) 59.324 (1.223) Other Fringe Benefits 34.066 35.508 (1.441) 36.059 (0.552) 36.568 (0.509) 37.338 (0.769) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 37.610 33.121 4.489 33.893 (0.771) 34.569 (0.676) 35.594 (1.025) Total Labor Expenses $341.601 $352.688 ($11.086) $358.107 ($5.419) $363.431 ($5.324) $371.348 ($7.917) Non-Labor: Electric Power $0.623 $0.360 $0.263 $0.360 $0.000 $0.360 $0.000 $0.360 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 10.219 11.983 (1.763) 12.223 (0.240) 12.390 (0.167) 12.635 (0.245) Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 24.190 19.529 4.661 19.765 (0.235) 20.009 (0.244) 20.289 (0.280) Professional Services Contracts 1.966 0.763 1.203 0.778 (0.015) 0.794 (0.016) 0.810 (0.016) Materials and Supplies 43.882 39.671 4.210 39.765 (0.093) 40.224 (0.459) 40.612 (0.389) Other Business Expenses 0.504 0.481 0.023 0.489 (0.007) 0.496 (0.007) 0.506 (0.010) Total Non-Labor Expenses $81.385 $72.788 $8.597 $73.379 ($0.591) $74.272 ($0.893) $75.212 ($0.940) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $422.986 $425.475 ($2.489) $431.486 ($6.011) $437.703 ($6.217) $446.561 ($8.858) Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p229_c0003] _99-A_
+
+## Page 230
+
+### [p230_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p230_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable and Reimbursable Operating Revenues Farebox Revenue $694.260 $694.265 $0.005 $694.265 $0.000 $696.216 $1.951 $699.218 $3.001 Other Operating Revenue 45.149 40.324 (4.825) 40.698 0.375 41.627 0.928 42.581 0.954 Capital and Other Reimbursements 422.986 425.475 2.489 431.486 6.011 437.703 6.217 446.561 8.858 Total Revenues $1,162.395 $1,160.064 ($2.331) $1,166.450 $6.385 $1,175.546 $9.097 $1,188.359 $12.813 Operating Expenses Labor: Payroll $888.072 $921.649 ($33.577) $957.157 ($35.508) $972.519 ($15.362) $996.845 ($24.326) Overtime 215.755 202.063 13.692 207.969 (5.907) 207.858 0.112 212.010 (4.153) Health and Welfare 216.547 238.610 (22.063) 258.755 (20.145) 272.987 (14.232) 288.065 (15.078) OPEB Current Payments 79.186 83.901 (4.715) 88.742 (4.842) 93.846 (5.103) 99.079 (5.233) Pension 244.020 260.990 (16.970) 265.550 (4.560) 263.010 2.540 264.780 (1.770) Other Fringe Benefits 235.179 242.464 (7.286) 251.203 (8.739) 255.448 (4.245) 261.290 (5.842) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $1,878.759 $1,949.676 ($70.918) $2,029.377 ($79.701) $2,065.667 ($36.290) $2,122.069 ($56.401) Non-Labor: Electric Power $119.277 $123.342 ($4.065) $125.253 ($1.911) $129.133 ($3.880) $135.037 ($5.904) Fuel 24.903 23.751 1.152 24.240 (0.489) 24.386 (0.146) 25.318 (0.932) Insurance 40.608 47.830 (7.223) 48.200 (0.370) 50.574 (2.373) 51.512 (0.938) Claims 3.937 3.937 0.000 3.937 0.000 3.937 0.000 4.016 (0.079) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 151.086 140.482 10.604 145.428 (4.946) 172.816 (27.388) 174.035 (1.220) Professional Services Contracts 55.006 50.177 4.830 49.516 0.661 50.791 (1.275) 51.463 (0.673) Materials and Supplies 184.344 225.504 (41.160) 323.490 (97.986) 350.509 (27.020) 363.613 (13.104) Other Business Expenses 26.270 26.315 (0.045) 26.615 (0.300) 26.570 0.045 26.986 (0.416) Total Non-Labor Expenses $605.431 $641.338 ($35.907) $746.679 ($105.341) $808.716 ($62.037) $831.980 ($23.264) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $2,484.189 $2,591.014 ($106.825) $2,776.056 ($185.042) $2,874.383 ($98.327) $2,954.049 ($79.666) Depreciation $562.717 $548.072 $14.646 $553.552 ($5.480) $559.087 ($5.535) $564.677 ($5.590) GASB 49 Environmental Remediation 2.000 2.000 0.000 2.000 0.000 2.000 0.000 2.000 0.000 GASB 68 Pension Expense Adjustment 0.480 (39.290) 39.770 (3.550) (35.740) (99.310) 95.760 (100.680) 1.370 GASB 75 OPEB Expense Adjustment 35.000 35.700 (0.700) 36.414 (0.714) 37.142 (0.728) 37.885 (0.743) GASB 87 Lease Adjustment 4.547 (0.620) 5.167 (0.620) 0.000 (0.620) 0.000 (0.620) 0.000 GASB 96 SBITA Adjustment 1.556 0.600 (0.956) 0.600 0.000 0.600 0.000 0.600 0.000 Total Non-Cash Liability Adjustments $606.300 $546.462 $59.838 $588.396 ($41.934) $498.899 $89.497 $503.862 ($4.963) Total Expenses After Depreciation and GASB Adjs. $3,090.489 $3,137.476 ($46.987) $3,364.452 ($226.977) $3,373.282 ($8.830) $3,457.911 ($84.629) Net Surplus/(Deficit) ($1,928.094) ($1,977.411) ($49.318) ($2,198.003) ($220.591) ($2,197.736) $0.267 ($2,269.552) ($71.816)
+```
+[p230_c0003] _J-7_
+
+## Page 231
+
+### [p231_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+### [p231_c0002] Cash Receipts and Expenditures
+### [p231_c0003] Receipts
+[p231_c0004]
+
+```text
+Farebox Revenue $698.941 $703.489 $4.548 $703.489 $0.000 $705.440 $1.951 $708.442 $3.001 Other Operating Revenue 45.654 40.839 (4.815) 41.224 0.385 42.165 0.941 43.118 0.954 Capital and Other Reimbursements 419.384 409.782 (9.602) 417.015 7.233 423.277 6.262 432.273 8.995 Total Receipts $1,163.979 $1,154.110 ($9.870) $1,161.728 $7.618 $1,170.882 $9.154 $1,183.833 $12.951
+```
+### [p231_c0005] Expenditures
+### [p231_c0006] Labor Expenditures:
+[p231_c0007]
+
+```text
+Payroll $908.631 $917.792 ($9.161) $953.213 ($35.421) $968.485 ($15.272) $992.719 ($24.234) Overtime 222.706 202.063 20.643 207.969 (5.907) 207.858 0.112 212.010 (4.153) Health and Welfare 216.547 238.610 (22.063) 258.755 (20.145) 272.987 (14.232) 288.065 (15.078) OPEB Current Payments 79.186 83.901 (4.715) 88.742 (4.842) 93.846 (5.103) 99.079 (5.233) Pension 3.930 260.990 (257.060) 265.550 (4.560) 263.010 2.540 264.780 (1.770) Other Fringe Benefits 237.640 231.464 6.175 240.203 (8.739) 244.448 (4.245) 250.290 (5.842) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $1,668.639 $1,934.819 ($266.180) $2,014.433 ($79.614) $2,050.633 ($36.201) $2,106.943 ($56.310)
+```
+### [p231_c0008] Non-Labor Expenditures:
+[p231_c0009]
+
+```text
+Electric Power $119.277 $123.342 ($4.065) $125.253 ($1.911) $129.133 ($3.880) $135.037 ($5.904) Fuel 25.168 23.751 1.417 24.240 (0.489) 24.386 (0.146) 25.318 (0.932) Insurance 39.755 46.945 (7.190) 47.793 (0.848) 50.055 (2.262) 51.006 (0.951) Claims 4.504 1.929 2.575 1.929 0.000 1.929 0.000 2.008 (0.079) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 168.476 140.482 27.994 145.428 (4.946) 172.816 (27.388) 174.035 (1.220) Professional Services Contracts 51.279 37.177 14.103 36.516 0.661 37.791 (1.275) 38.463 (0.673) Materials and Supplies 195.966 227.482 (31.517) 318.761 (91.279) 355.709 (36.948) 368.642 (12.932) Other Business Expenses 29.300 29.135 0.165 29.505 (0.370) 29.532 (0.027) 29.985 (0.453) Total Non-Labor Expenditures $633.726 $630.244 $3.482 $729.425 ($99.182) $801.351 ($71.925) $824.494 ($23.143)
+```
+### [p231_c0010] Other Expenditure Adjustments:
+[p231_c0011]
+
+```text
+Other 9.224 9.224 0.000 9.224 0.000 9.224 0.000 9.224 0.000 Total Other Expenditure Adjustments $9.224 $9.224 $0.000 $9.224 $0.000 $9.224 $0.000 $9.224 $0.000
+```
+[p231_c0012]
+
+```text
+Total Expenditures $2,311.589 $2,574.287 ($262.698) $2,753.082 ($178.796) $2,861.208 ($108.126) $2,940.661 ($79.453) Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p231_c0013]
+
+```text
+Cash Timing Adjustments ($0.000) ($0.000) ($0.000) ($0.000) ($0.000) ($0.000) ($0.000) ($0.000) ($0.000)
+```
+[p231_c0014]
+
+```text
+Net Surplus/(Deficit) ($1,147.609) ($1,420.177) ($272.567) ($1,591.354) ($171.177) ($1,690.326) ($98.972) ($1,756.828) ($66.502)
+```
+[p231_c0015] _837-A_
+
+## Page 232
+
+### [p232_c0001] MTA Long Island Rail Road 2026 Preliminary Budget July Financial Plan 2026 - 2029 Plan-To-Plan Changes by Generic Category - Baseline
+### [p232_c0002] 2025: MID-YEAR FORECAST VS. ADOPTED BUDGET
+[p232_c0003] The 2025 Mid-Year Forecast is based on results through April.
+### [p232_c0004] REVENUE
+- [p232_c0005] • Farebox Revenue is revised based on actuals through May. Ridership forecasts have been adjusted to reflect revised ridership forecasts based on regional economic forecasts. • Other Operating Revenue is favorable due to higher rental, advertising, and miscellaneous revenue. • Capital and Other Reimbursements are higher due to the timing of capital project activity, pay rate adjustments, and higher anticipated recovery for vehicle leases.
+### [p232_c0006] EXPENSES
+- [p232_c0007] • Payroll is lower due to vacancies, lower average pay rates reflecting new hires, and lower sick leave balance accrual adjustments. • Overtime is higher primarily due to reimbursable project related overtime, vacancy/absentee coverage, programmatic/routine maintenance and weather-related overtime. • Health and Welfare costs are lower due to premium rates. • OPEB Current Payment is lower due to premium rates. • Pensions costs are lower based on latest actuarial estimates. • Other Fringe Benefits is higher due to Railroad Retirement maximum earnings tier level increase, FELA, and overtime, partially offset by payroll savings due to vacancies and lower Railroad Unemployment Insurance rates. • Higher Electric Power expense due to higher rates. • Lower Fuel expense due to lower rates. • Insurance increase is due to higher liability and Force Account Insurance, partially offset by lower property insurance. • Maintenance and Other Operating Contracts costs are higher due to higher anticipated recovery for vehicle leases to support capital project activity, and the timing of Joint Facilities, partially offset by the timing of expenses for the lease of GCM rescue locomotives. • Higher Professional Service Contracts costs are primarily due to the timing of expenses related to mobile ticket application support and higher costs in support of reimbursable projects. • Higher Material & Supplies costs due to material for the installation of forward-facing cameras onboard revenue trains per FRA Mandate and inflation adjustments, partially offset by lower reimbursable project material. • Other Business Expenses are slightly higher due to higher credit card fees, partially offset by the reallocation of expenses between Other Business Expense and other expense categories.
+[p232_c0008] _V-69_
+
+## Page 233
+
+### [p233_c0001] Depreciation/Other Post-Employment Benefits/Environmental Remediation/GASB
+[p233_c0002] Reflects Depreciation of current assets and estimates for capital assets based on their beneficial use. OPEB, GASB, and Environmental Remediation are based on the latest actuarial estimates.
+### [p233_c0003] 2026 – 2028: JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN
+### [p233_c0004] REVENUE
+- [p233_c0005] • Passenger Revenue is higher, reflecting revised ridership forecasts based on regional economic forecasts. • Other Operating Revenue is higher due to advertising and rental revenue. • Capital and Other Reimbursements are higher each year due to pay rate adjustments and higher anticipated recovery for vehicle leases
+### [p233_c0006] EXPENSES
+- [p233_c0007] • Payroll is higher each year due to FRA Signal/Dispatch Certification. • Overtime is higher in 2026 and 2027 due to FRA Signal/Dispatch Certification, installation of forward-facing cameras onboard revenue trains, and higher reimbursable project overtime projections. 2028 is higher due to FRA Signal/Dispatch Certification and higher reimbursable project overtime projections. • Health and Welfare costs are lower in each year primarily due to premium rate changes. • Other Fringe Benefits costs are higher in each year due to higher due to a Railroad Retirement maximum earnings tier level increase and FELA. • Electric Power is higher for 2026 through 2028 due to higher projected rates. • Fuel is lower for 2026 through 2028 due to lower projected fuel prices. • Insurance is higher primarily due to Force Account and Liability Insurance. • Maintenance and Other Operating Contracts costs are higher in 2026 through 2028 due to higher anticipated recovery for vehicle leases to support capital project activity. • Professional Service Contracts costs are higher due to shift of funds from Grand Central Madison Operating Company (GCMOC), and shift of funds from Material and Supplies for Train Counts. • Material & Supplies are higher for 2026 through 2028 due to material for the installation of forward-facing cameras onboard revenue trains per FRA Mandate and inflation adjustments. • Other Business Expenses are higher due to higher debit/credit card fees.
+[p233_c0008] _V-70_
+
+## Page 234
+
+### [p234_c0001] Depreciation/Other Post-Employment Benefits/Environmental Remediation/GASB
+[p234_c0002] Reflects Depreciation of current assets as well as estimates for capital assets based on their beneficial use. OPEB, GASB, and Environmental Remediation are based on the latest actuarial estimates.
+[p234_c0003] _V-71_
+
+## Page 235
+
+### [p235_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p235_c0002] NON-REIMBURSABLE
+[p235_c0003] February Financial Plan - Cash Surplus/(Deficit)
+[p235_c0004]
+
+```text
+2025 2026 2027 2028 ($1,117.726) ($1,433.622) ($1,605.855) ($1,704.130)
+```
+### [p235_c0005] Baseline Changes
+### [p235_c0006] Revenue
+[p235_c0007]
+
+```text
+Farebox Revenue $16.172 $13.307 $10.908 $10.254 Vehicle Toll Revenue Other Operating Revenue 7.787 1.636 1.770 1.955 Capital and Other Reimbursement Total Revenue Changes $23.959 $14.943 $12.678 $12.208
+```
+### [p235_c0008] Expenses
+### [p235_c0009] Labor:
+[p235_c0010]
+
+```text
+Payroll $5.461 ($0.910) ($1.448) ($1.481) Overtime (11.220) (1.355) (1.756) (1.159) Health and Welfare 20.184 16.292 18.599 21.036 OPEB Current Payment 5.423 6.003 6.786 7.653 Pensions 4.199 3.189 4.481 5.650 Other Fringe Benefits (8.166) (11.749) (11.935) (11.912) Reimbursable Overhead 5.902 0.419 0.416 0.423 Total Labor Expense Changes $21.783 $11.889 $15.143 $20.211
+```
+### [p235_c0011] Non-Labor:
+[p235_c0012]
+
+```text
+Electric Power ($4.703) ($3.334) ($3.555) ($4.341) Fuel 0.541 1.828 1.266 1.602 Insurance (0.076) (5.034) (3.261) (2.841) Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 1.639 (0.665) (0.558) (0.540) Professional Service Contracts (1.137) (0.579) (0.351) (0.195) Materials & Supplies (5.027) (16.226) (19.998) (19.274) Other Business Expenses (0.076) (0.380) (0.329) (0.312) Total Non-Labor Expense Changes ($8.839) ($24.391) ($26.786) ($25.901)
+```
+### [p235_c0013] Total Expense Changes before Depreciation and GASB Adjs.
+[p235_c0014]
+
+```text
+$12.944 ($12.502) ($11.643) ($5.690)
+```
+[p235_c0015]
+
+```text
+Depreciation (27.077) (7.075) (7.146) (7.217) GASB 75 OPEB Expense Adjustment 22.120 22.562 23.014 23.474 GASB 68 Pension Expense Adjustment 4.800 15.350 11.350 9.390 GASB 87 Lease Compliance (5.167) 0.000 0.000 0.000 GASB 96 - SBITA Asset Subscriptions (0.956) 0.000 0.000 0.000 Environmental Remediation (0.000) 0.000 0.000 0.000 Total Expense Changes $6.665 $18.335 $15.575 $19.956
+```
+### [p235_c0016] Cash Adjustment Changes
+[p235_c0017]
+
+```text
+Timing from 2024 ($53.245) $3.667 $6.367 Bad Debt (0.018) 0.000 0.000 0.000 FELA Claims Adjustment 10.000 10.000 10.000 Pension Prepayment (12.330) Other Miscellaneous (2.629) (2.682) (2.744) (2.808) Insurance 1.481 0.360 (0.157) 0.095 Depreciation/OPEB/Pension/Lease/SBITA/Environmental 6.279 (30.837) (27.218) (25.646) Total Cash Adjustment Changes ($60.462) ($19.493) ($13.753) ($18.360)
+```
+### [p235_c0018] Total Baseline Changes
+[p235_c0019]
+
+```text
+($29.838) $13.785 $14.500 $13.804
+```
+[p235_c0020] July Financial Plan - Cash Surplus/(Deficit)
+[p235_c0021]
+
+```text
+($1,147.564) ($1,419.838) ($1,591.354) ($1,690.326)
+```
+[p235_c0022] _V-72_
+
+## Page 236
+
+### [p236_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p236_c0002] REIMBURSABLE
+[p236_c0003] February Financial Plan - Cash Surplus/(Deficit)
+[p236_c0004]
+
+```text
+2025 2026 2027 2028 $0.000 $0.000 $0.000 $0.000
+```
+### [p236_c0005] Baseline Changes
+### [p236_c0006] Revenue
+[p236_c0007]
+
+```text
+Farebox Revenue $0.000 $0.000 $0.000 $0.000 Vehicle Toll Revenue Other Operating Revenue Capital and Other Reimbursement 9.155 10.487 10.356 10.541 Total Revenue Changes $9.155 $10.487 $10.356 $10.541
+```
+### [p236_c0008] Expenses
+### [p236_c0009] Labor:
+[p236_c0010]
+
+```text
+Payroll $5.991 ($1.247) ($1.256) ($1.277) Overtime (4.495) (0.693) (0.544) (0.555) Health and Welfare 0.583 (0.332) (0.327) (0.332) OPEB Current Payment 0.000 0.000 0.000 0.000 Pensions 4.201 (0.539) (0.531) (0.540) Other Fringe Benefits 0.445 (0.339) (0.334) (0.340) Reimbursable Overhead (5.902) (0.419) (0.416) (0.423) Total Labor Expense Changes $0.821 ($3.568) ($3.408) ($3.468)
+```
+### [p236_c0011] Non-Labor:
+[p236_c0012]
+
+```text
+Electric Power ($0.263) $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 Insurance (1.592) (2.176) (2.221) (2.251) Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (9.463) (4.632) (4.723) (4.817) Professional Service Contracts (0.721) 0.000 0.000 0.000 Materials & Supplies 2.101 (0.107) 0.000 0.000 Other Business Expenses (0.036) (0.005) (0.005) (0.005) Total Non-Labor Expense Changes ($9.976) ($6.919) ($6.948) ($7.073)
+```
+### [p236_c0013] Total Expense Changes
+[p236_c0014] ($9.155) ($10.487) ($10.356) ($10.541)
+### [p236_c0015] Gap Closing Expenses :
+[p236_c0016]
+
+```text
+Total Gap Closing Expenses $0.000 $0.000 $0.000 $0.000
+```
+### [p236_c0017] Cash Adjustment Changes
+[p236_c0018]
+
+```text
+Operating Funded Capital (0.046) (0.339) 0.000 0.000 Total Cash Adjustment Changes ($0.046) ($0.339) $0.000 $0.000
+```
+### [p236_c0019] Total Baseline Changes
+[p236_c0020] ($0.046) ($0.339) $0.000 $0.000
+[p236_c0021] July Financial Plan - Cash Surplus/(Deficit)
+[p236_c0022] ($0.046) ($0.339) $0.000 $0.000
+[p236_c0023] _V-73_
+
+## Page 237
+
+### [p237_c0001] MTA LONG ISLAND RAILROAD July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p237_c0002] NON-REIMBURSABLE/REIMBURSABLE
+[p237_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) ($1,117.726) ($1,433.622) ($1,605.855) ($1,704.130) Baseline Changes Revenue Farebox Revenue $16.172 $13.307 $10.908 $10.254 Vehicle Toll Revenue 0.000 0.000 0.000 0.000 Other Operating Revenue 7.787 1.636 1.770 1.955 Capital and Other Reimbursement 9.155 10.487 10.356 10.541 Total Revenue Changes $33.114 $25.430 $23.034 $22.749 Expenses Labor: Payroll $11.452 ($2.157) ($2.704) ($2.758) Overtime (15.715) (2.048) (2.300) (1.713) Health and Welfare 20.766 15.960 18.273 20.704 OPEB Current Payment 5.423 6.003 6.786 7.653 Pensions 8.400 2.650 3.950 5.110 Other Fringe Benefits (7.722) (12.088) (12.269) (12.252) Reimbursable Overhead 0.000 0.000 0.000 0.000 Total Labor Expense Changes $22.604 $8.320 $11.735 $16.743 Non-Labor: Electric Power ($4.967) ($3.334) ($3.555) ($4.341) Fuel 0.541 1.828 1.266 1.602 Insurance (1.668) (7.210) (5.481) (5.092) Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (7.824) (5.297) (5.281) (5.357) Professional Service Contracts (1.858) (0.579) (0.351) (0.195) Materials & Supplies (2.926) (16.334) (19.998) (19.274) Other Business Expenses (0.112) (0.384) (0.333) (0.317) Total Non-Labor Expense Changes ($18.815) ($31.310) ($33.734) ($32.975) Total Expense Changes before Depreciation and GASB Adjs. $3.790 ($22.990) ($21.999) ($16.231) Depreciation ($27.077) ($7.075) ($7.146) ($7.217) GASB 75 OPEB Expense Adjustment 22.120 22.562 23.014 23.474 GASB 68 Pension Expense Adjustment 4.800 15.350 11.350 9.390 GASB 87 Lease Compliance (5.167) 0.000 0.000 0.000 GASB 96 - SBITA Asset Subscriptions (0.956) 0.000 0.000 0.000 Environmental Remediation (0.000) 0.000 0.000 0.000 Total Expense Changes ($2.489) $7.848 $5.219 $9.415 Cash Adjustment Changes Timing from 2024 ($53.245) $3.667 $6.367 $0.000 Bad Debt (0.018) 0.000 0.000 0.000 OFC (0.046) (0.339) 0.000 0.000 FELA Claims Adjustment 0.000 10.000 10.000 10.000 Pension Prepayment (12.330) 0.000 0.000 0.000 Other Miscellaneous (2.629) (2.682) (2.744) (2.808) Insurance 1.481 0.360 (0.157) 0.095 Depreciation/OPEB/Pension/Lease/SBITA/Environmental Remediation 6.279 (30.837) (27.218) (25.646) Total Cash Adjustment Changes ($60.508) ($19.833) ($13.753) ($18.360) Total Baseline Changes ($29.884) $13.445 $14.500 $13.804 July Financial Plan - Cash Surplus/(Deficit) ($1,147.610) ($1,420.177) ($1,591.354) ($1,690.326)
+```
+[p237_c0004] _V-74_
+
+## Page 238
+
+### [p238_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026-2029 Summary of Major Programmatic Changes Between Financial Plans ($ in millions)
+### [p238_c0002] NON-REIMBURSABLE and REIMBURSABLE
+[p238_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) ($1,117.726) ($1,433.622) ($1,605.855) ($1,704.130) Non-Reimbursable Major Changes Revenue Farebox Revenue $16.172 $13.307 $10.908 $10.254 Other Operating Revenue 7.787 1.636 1.770 1.955 Sub-Total Non-Reimbursable Revenue Changes $23.959 $14.943 $12.678 $12.208 Expenses Railroad Unemployment Insurance 2.041 0.000 0.000 0.000 FRA Mandate - AVRM (0.318) (4.777) (3.228) (1.387) Health & Welfare Rate Changes 19.868 22.536 25.743 29.039 FELA Adjustments (10.000) (10.000) (10.000) (10.000) Insurance (0.073) (5.034) (3.261) (2.841) Labor Expenses 5.731 (1.723) (1.773) (1.858) Miscellaneous Non-cash Charges and Credits 2.622 2.682 2.744 2.808 Pension 8.400 2.650 3.950 5.110 Rail Road Retirement Tier Changes (1.093) (0.924) (0.938) (0.930) Inflation Adjustments (4.828) (12.564) (17.695) (18.092) FRA Signal/Dispatch Certification 0.000 (2.854) (4.194) (4.289) Weather Related Cost (3.554) 0.000 0.000 0.000 Electric and Diesel Rate Changes (4.156) (1.506) (2.290) (2.739) G&A and Pension Overhead Changes 0.228 0.334 0.313 0.318 Depreciation/GASB 68 Pension Expense Adjustment/Environmental Remediation/OPEB/SBITA (6.279) 30.837 27.218 25.646 All Other (1.922) (1.323) (1.016) (0.830) Sub-Total Non-Reimbursable Expense Changes $6.665 $18.335 $15.575 $19.956 Total Non-Reimbursable Major Changes $30.624 $33.278 $28.253 $32.164 Reimbursable Major Changes Revenue Capital and Other Reimbursements 9.155 10.487 10.356 10.541 Sub-Total Reimbursable Revenue Changes $9.155 $10.487 $10.356 $10.541 Expenses Capital and Other Reimbursements (9.155) (10.487) (10.356) (10.541) Sub-Total Reimbursable Expense Changes ($9.155) ($10.487) ($10.356) ($10.541) Total Reimbursable Major Changes ($0.000) ($0.000) ($0.000) $0.000 Total Accrual Changes $30.624 $33.278 $28.253 $32.164 Cash Adjustment Changes Timing from 2024 ($53.245) $3.667 $6.367 $0.000 Operating Funded Capital (0.046) (0.339) 0.000 - FELA Claims Adjustment - 10.000 10.000 10.000 Pension Prepayment (12.330) - - - Other Miscellaneous (2.647) (2.682) (2.744) (2.808) Insurance 1.481 0.360 (0.157) 0.095 Depreciation/OPEB/Pension/Lease/Environmental Remediation 6.279 (30.837) (27.218) (25.646) Total Cash Adjustment Changes ($60.508) ($19.833) ($13.753) ($18.360) Total Baseline Changes ($29.884) $13.445 $14.500 $13.804 July Financial Plan - Cash Surplus/(Deficit) ($1,147.610) ($1,420.177) ($1,591.354) ($1,690.326)
+```
+[p238_c0004] _V-75_
+
+## Page 239
+
+### [p239_c0001] MTA Long Island Rail Road 2026 Preliminary Budget July Financial Plan 2026 – 2029 Ridership/(Utilization)
+### [p239_c0002] RIDERSHIP/UTILIZATION PROJECTIONS
+[p239_c0003] Ridership projections include actuals through May 2025. Ridership forecasts have been adjusted to reflect projections of regional economic change.
+[p239_c0004] The July forecast is 3.7 million or 4.8% higher than the 2025 Adopted Budget, and 6.5 million or 8.6% higher than 2024 year-end actuals. Compared to the February Financial Plan, ridership projections increase by 3.4 million in 2026, 3.2 million in 2027, and 3.1 million in 2028.
+[p239_c0005] _V-76_
+
+## Page 240
+
+### [p240_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026 - 2029 Ridership (Utilization) and Revenue (in millions)
+### [p240_c0002] RIDERSHIP
+[p240_c0003]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Total Commutation 28.207 32.774 32.810 32.835 32.826 33.042 Total Non-Commutation 47.304 49.256 49.258 49.258 49.397 49.610 Total Ridership 75.510 82.030 82.068 82.093 82.223 82.651
+```
+### [p240_c0004] FAREBOX REVENUE
+[p240_c0005]
+
+```text
+Baseline Total Farebox Revenue $649.735 $694.260 $694.265 $694.265 $696.216 $699.218
+```
+[p240_c0006] _V-77_
+
+## Page 241
+
+### [p241_c0001] MTA Long Island Rail Road 2026 Preliminary Budget July Financial Plan 2026 – 2029 Positions Year-To-Year Summary of Changes
+### [p241_c0002] POSITION ASSUMPTIONS
+[p241_c0003] Positions are identified as year-end (December 31st) for each year in the Financial Plan. They reflect an estimate of the total number of paid employees required to meet and achieve corporate goals as well as those in line with reimbursable activity. Position totals incorporate seasonal needs, as well as other fluctuations in staffing requirements for capital projects.
+### [p241_c0004] 2025 - 2026 CHANGES
+[p241_c0005] The 2026 Preliminary Budget totals 8,147 positions, a projected increase of 89 from the 2025 Mid-Year Forecast. This includes a projected increase of 225 non-reimbursable positions and a decrease of 136 reimbursable positions. The non-reimbursable increase is due to increases in headcount related to FRA Signal/Dispatch Certification, revenue fleet RCM programs, Maintenance of Equipment positions anticipated to be vacant in 2025 and filled by 2026, and timing of capital project activity by month. Reimbursable positions decrease due to anticipated changes in capital project activity as well as the timing of capital and maintenance activity.
+### [p241_c0006] 2027 – 2029 CHANGES
+[p241_c0007] Annual staffing levels increase by 218 positions in 2027, decrease by 1 in 2028, and are unchanged in 2029. Non-reimbursable positions will increase by 225 in 2027, with no growth in 2028 and 2029. The 2027 increase is due to additional Maintenance of Way positions to maintain new infrastructure added over the last several years as infrastructure components begin to reach critical maintenance stages. Reimbursable positions decrease by 7 in 2027, 1 in 2028, and are unchanged in 2029.
+[p241_c0008] _V-78_
+
+## Page 242
+
+### [p242_c0001] MTA Long Island Rail Road 2026 Preliminary Budget July Financial Plan 2026 – 2029 Positions Plan-to-Plan Summary of Changes
+### [p242_c0002] POSITION ASSUMPTIONS
+[p242_c0003] Positions are identified as of year-end (December 31st) for each year in the Financial Plan and reflect an estimate of the total number of paid employees required to meet and achieve corporate goals as well as those in line with reimbursable activity. Position totals incorporate seasonal needs and other fluctuations in staffing requirements for capital projects.
+### [p242_c0004] 2025 CHANGES
+[p242_c0005] Total positions of 8,058 in the 2025 Mid-Year Forecast represent a decrease of 26 positions from the 2025 Adopted Budget. Non-reimbursable positions decrease by 27 and reimbursable positions increase by 1. This decrease for non-reimbursable is due to the latest anticipated hiring plans/training classes for represented positions in the Maintenance of Equipment Department.
+### [p242_c0006] 2026 CHANGES
+[p242_c0007] The 2026 Preliminary Budget totals 8,147 positions, an increase of 16 positions from the 2025 Adopted Budget. Non-reimbursable positions increase by 15 and reimbursable positions increase by 1. The increase in year-end non-reimbursable headcount is due to FRA Signal/Dispatch certification.
+### [p242_c0008] 2027 – 2028 CHANGES
+[p242_c0009] The July Financial Plan for 2027 through 2028 reflects an increase of 16 positions in each year. Non-reimbursable positions increase by 15 and reimbursable positions increase by 1. The increase in year-end non-reimbursable headcount is due to FRA Signal/Dispatch certification.
+[p242_c0010] _V-79_
+
+## Page 243
+
+### [p243_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026 - 2029 Favorable/(Unfavorable)
+### [p243_c0002] Total Position Changes at a Glance
+[p243_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Plan - Total Baseline Positions 8,084 8,131 8,349 8,348 Total Plan-to-Plan Changes 26 (16) (16) (16) 2025 July Financial Plan - Total Baseline Position: 8,058 8,147 8,365 8,364 Total Year-to-Year Changes, July Plan (89) (218) 1 Total Plan-to-Plan Changes by Reporting Category: Non-Reimbursable 27 (15) (15) (15) Reimbursable (1) (1) (1) (1) Total 26 (16) (16) (16) Full-Time 26 (16) (16) (16) Full-Time Equivalents Total 26 (16) (16) (16) By Function Category - Administration (1) (7) (3) (3) - Operations 0 (2) (2) (2) - Maintenance 27 (7) (11) (11) - Engineering/Capital 0 0 0 0 - Public Safety Total 26 (16) (16) (16) By Occupational Group - Managers/Supervisors (2) (18) (14) (14) - Professional, Technical, Clerical 4 (4) (4) (4) - Operational Hourlies 25 6 2 2 Total 26 (16) (16) (16) Total Plan-to-Plan Changes by Major Category: Operating Efficiencies 0 0 0 0 New Needs 0 (15) (15) (15) Change in Reimbursable Positions (1) (1) (1) (1) Re-estimates & All Other 1 27 0 0 0 Total 26 (16) (16) (16)
+```
+[p243_c0004] _1 Includes Full-time Equivalents_
+[p243_c0005] _V-80_
+
+## Page 244
+
+### [p244_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026-2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full Time Equivalents
+[p244_c0002]
+
+```text
+FUNCTION/DEPARTMENT 2024 Actual 2025 Mid-Year Forecast 2026 Preliminary Budget 2027 2028 2029 Administration President 11 15 15 15 15 15 Market Dev & Mailroom 13 14 14 14 14 14 Security 12 14 13 13 13 13 Safety 54 55 55 55 55 55 Training 69 72 73 69 69 69 Rolling Stock Programs 10 17 17 17 17 17 VP Ops Support & Org Res 3 4 4 4 4 4 Communications 56 54 54 54 54 54 Labor Relations 13 13 13 13 13 13 Diversity 2 2 2 2 2 2 Legal 27 25 25 25 25 25 Procurement & Matl Mgmt 141 144 145 145 145 145 Finance 53 58 58 58 58 58 People 36 37 37 37 37 37 Security Pass Office 3 3 3 3 3 3 Total Administration 503 527 528 524 524 524 Operations Service Planning 31 28 28 22 22 22 Sr Vice President - Operations 3 4 4 4 4 4 Enterprise Asset Management 7 9 9 9 9 9 Transportation 2,356 2,264 2,266 2,379 2,378 2,378 Stations 544 538 536 536 536 536 Total Operations 2,941 2,843 2,843 2,950 2,949 2,949 Maintenance Sr. Vice President - Engineering 1 1 1 1 1 1 Maintenance of Way 2,124 2,249 2,244 2,282 2,282 2,282 Maintenance of Equipment 2,170 2,212 2,304 2,381 2,381 2,381 Railroad Program Support 44 52 52 52 52 52 Total Maintenance 4,339 4,514 4,601 4,716 4,716 4,716 Engineering/Capital Special Projects 32 46 47 47 47 47 Construction & Development 84 128 128 128 128 128 Total Engineering/Capital 116 174 175 175 175 175 Total Baseline Positions 7,899 8,058 8,147 8,365 8,364 8,364 Non-Reimbursable 6,903 6,924 7,149 7,374 7,374 7,374 Reimbursable 996 1,134 998 991 990 990 Total Full-Time 7,899 8,058 8,147 8,365 8,364 8,364 Total Full-Time Equivalents - - - - - -
+```
+[p244_c0003] _V-81_
+
+## Page 245
+
+### [p245_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p245_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual Mid-Year Preliminary 2027 2028 2029 2024 Forecast Budget 2024 2025 2026 Administration Managers/Supervisors 250 259 258 254 254 254 Professional/Technical/Clerical 144 155 157 157 157 157 Operational Hourlies 109 113 113 113 113 113 Total Administration Headcount 503 527 528 524 524 524 Operations Managers/Supervisors 378 394 394 389 388 388 Professional/Technical/Clerical 150 148 148 147 147 147 Operational Hourlies 2,413 2,301 2,301 2,414 2,414 2,414 Total Operations Headcount 2,941 2,843 2,843 2,950 2,949 2,949 Maintenance Managers/Supervisors 922 1,037 1,010 1,025 1,005 1,000 Professional/Technical/Clerical 220 260 285 290 290 290 Operational Hourlies 3,197 3,217 3,306 3,401 3,421 3,426 Total Maintenance Headcount 4,339 4,514 4,601 4,716 4,716 4,716 Engineering / Capital Managers/Supervisors 104 118 119 119 119 119 Professional/Technical/Clerical 12 56 56 56 56 56 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 116 174 175 175 175 175 Public Safety Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 Total Positions Managers/Supervisors 1,654 1,808 1,781 1,787 1,766 1,761 Professional/Technical/ Clerical 526 619 646 650 650 650 Operational Hourlies 5,719 5,631 5,720 5,928 5,948 5,953 Total Positions 7,899 8,058 8,147 8,365 8,364 8,364
+```
+[p245_c0003] _V-82_
+
+## Page 246
+
+### [p246_c0001] MTA Grand Central Madison Concourse Operating Company (GCMOC)
+
+## Page 247
+
+### [p247_c0001] MTA Grand Central Madison Operating Company 2026 Preliminary Budget July Financial Plan 2026 - 2029
+### [p247_c0002] FINANCIAL OVERVIEW
+[p247_c0003] Grand Central Madison Operating Company (GCMOC), a distinct MTA subsidiary agency created in 2023, oversees the maintenance of the facility and concourse areas of Grand Central Madison (GCM), the Long Island Rail Road's (LIRR) train concourse below Grand Central Terminal (GCT). Functions under GCMOC include cleaning the concourse and public-facing areas (excluding platform level), elevator/escalator maintenance, heating, ventilation, air-conditioning (HVAC), chiller and steam plants, pump stations, sewers, tunnel drainage, fire/life safety systems, power systems, access control and intrusion detection systems. Other operating and financial aspects of GCM are included in the LIRR, MNR and MTA HQ financial plans.
+### [p247_c0004] Financial Highlights
+- [p247_c0005] • Non-Reimbursable Revenue: The Plan reflects a $1.4 million increase in other operating revenue through 2028 due to anticipated higher rental revenues. • Non-Reimbursable Expenses: The Plan reflects a $2.5 million increase in expenses through 2028. This expense increase is primarily driven by higher electric power, steam, and water expenses. Expenses before non-cash items total $507.4 million over the Financial Plan. • Headcount: Compared to the February Plan, the July Plan remains unchanged.
+### [p247_c0006] 2025 MID-YEAR FORECAST
+[p247_c0007] The 2025 Mid-Year Forecast includes non-reimbursable revenue of $0.5 million and non-reimbursable expenses, including Government Accounting Standards Board (GASB) adjustments and depreciation, of $299.9 million. There are no reimbursable revenues or expenses.
+[p247_c0008] Compared to the Adopted Budget, revenues were $0.6 million higher due to anticipated higher rental revenues. Expenses before Depreciation and GASB adjustments were $0.8 million higher primarily due to electric, water, steam, consultant support for the Maintenance Contract, and IT hardware support, partially offset by payroll savings for vacancies.
+### [p247_c0009] 2026 PRELIMINARY BUDGET BASELINE
+[p247_c0010] The 2026 Preliminary Budget includes non-reimbursable revenue totaling $0.4 million. The expense budget is $299.0 million, of which $98.4 million is for operating expenses and the balance is associated with depreciation. There are no reimbursable revenues or expenses.
+[p247_c0011] On an accrued basis, revenues of $0.4 million are $0.1 million lower and expenses before depreciation of $98.4 million are $2.6 million higher compared to the 2025 Mid-Year Forecast.
+[p247_c0012] Based on the 2026 baseline cash requirement of $98.0 million, the 2026 Preliminary cash budget incorporates $0.4 million in cash receipts and $98.4 million in cash expenditures.
+[p247_c0013] _V-83_
+
+## Page 248
+
+[p248_c0001] Revenues in the 2026 Preliminary Budget increase $0.6 million from the February Financial Plan, reflecting updated rental revenue projections. Expenses excluding non-cash items increase $0.5 million due to higher payroll, electric power, steam, and water expenses.
+### [p248_c0002] 2027- 2029 PROJECTIONS
+[p248_c0003] The baseline projections for 2027 through 2029 reflect growth in rental revenue and increases in operating expenses. There are no reimbursable revenues or expenses.
+[p248_c0004] Non-reimbursable expenses grow by 2.8% from $98.4 million in 2026 to $101.2 million in 2027. They continue to rise by 3.1% in 2028, and 3.2% in 2029, reaching $107.7 million.
+[p248_c0005] Compared to the February Financial Plan, non-reimbursable revenue increases in 2027 and decreases in 2028. Non-reimbursable expenses before depreciation increase each year primarily due to electric power, water, and steam. Expenses before depreciation and other non-cash items increase 2027 and 2028.
+[p248_c0006] _V-84_
+
+## Page 249
+
+### [p249_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY
+### [p249_c0002] July Financial Plan 2026 - 2029
+### [p249_c0003] Accrual Statement of Operations By Category
+[p249_c0004] ($ in millions)
+[p249_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.583 0.495 0.357 1.134 1.843 2.137 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $0.583 $0.495 $0.357 $1.134 $1.843 $2.137 Operating Expense Labor: Payroll $0.705 $1.360 $1.661 $1.695 $1.722 $1.763 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.174 0.275 0.290 0.306 0.322 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.486 0.415 0.312 0.322 0.332 0.343 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $1.191 $1.949 $2.249 $2.307 $2.359 $2.428 Non-Labor: Electric Power $3.797 $4.725 $5.086 $5.237 $5.727 $6.281 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 90.393 87.992 90.534 93.102 95.743 98.461 Professional Services Contracts 3.820 1.141 0.507 0.509 0.511 0.521 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.001 0.013 0.010 0.010 0.010 0.011 Total Non-Labor Expenses $98.011 $93.872 $96.137 $98.858 $101.991 $105.274 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $99.202 $95.821 $98.386 $101.165 $104.350 $107.702 Depreciation $209.437 $204.124 $200.608 $200.608 $200.608 $200.608 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $209.437 $204.124 $200.608 $200.608 $200.608 $200.608 Total Expenses $308.638 $299.944 $298.994 $301.773 $304.959 $308.310 Net Surplus/(Deficit) ($308.055) ($299.449) ($298.637) ($300.639) ($303.115) ($306.173)
+```
+[p249_c0006] _V-85_
+
+## Page 250
+
+### [p250_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY
+### [p250_c0002] July Financial Plan 2026 - 2029
+### [p250_c0003] Accrual Statement of Operations By Category
+[p250_c0004] ($ in millions)
+[p250_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Operating Expense Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p250_c0006] _V-86_
+
+## Page 251
+
+### [p251_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY
+### [p251_c0002] July Financial Plan 2026 - 2029
+### [p251_c0003] Accrual Statement of Operations By Category
+[p251_c0004] ($ in millions)
+[p251_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.583 0.495 0.357 1.134 1.843 2.137 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $0.583 $0.495 $0.357 $1.134 $1.843 $2.137 Operating Expense Labor: Payroll $0.705 $1.360 $1.661 $1.695 $1.722 $1.763 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.174 0.275 0.290 0.306 0.322 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.486 0.415 0.312 0.322 0.332 0.343 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $1.191 $1.949 $2.249 $2.307 $2.359 $2.428 Non-Labor: Electric Power $3.797 $4.725 $5.086 $5.237 $5.727 $6.281 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 90.393 87.992 90.534 93.102 95.743 98.461 Professional Services Contracts 3.820 1.141 0.507 0.509 0.511 0.521 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.001 0.013 0.010 0.010 0.010 0.011 Total Non-Labor Expenses $98.011 $93.872 $96.137 $98.858 $101.991 $105.274 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $99.202 $95.821 $98.386 $101.165 $104.350 $107.702 Depreciation $209.437 $204.124 $200.608 $200.608 $200.608 $200.608 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $209.437 $204.124 $200.608 $200.608 $200.608 $200.608 Total Expenses $308.638 $299.944 $298.994 $301.773 $304.959 $308.310 Net Surplus/(Deficit) ($308.055) ($299.449) ($298.637) ($300.639) ($303.115) ($306.173)
+```
+[p251_c0006] _V-87_
+
+## Page 252
+
+### [p252_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY July Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p252_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.820 (0.447) 0.357 1.134 1.843 2.137 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts $0.820 ($0.447) $0.357 $1.134 $1.843 $2.137 Expenditures Labor: Payroll $0.252 $1.831 $1.661 $1.695 $1.722 $1.763 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.174 0.275 0.290 0.306 0.322 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.698 0.312 0.322 0.332 0.343 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $0.252 $2.703 $2.249 $2.307 $2.359 $2.428 Non-Labor: Electric Power $3.631 $4.725 $5.086 $5.237 $5.727 $6.281 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 87.394 109.445 90.534 93.102 95.743 98.461 Professional Services Contracts 3.177 3.372 0.507 0.509 0.511 0.521 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses (1.780) 4.749 0.010 0.010 0.010 0.011 Total Non-Labor Expenditures $92.423 $122.292 $96.137 $98.858 $101.991 $105.274 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $92.675 $124.995 $98.386 $101.165 $104.350 $107.702 Net Cash Balance ($91.855) ($125.441) ($98.028) ($100.030) ($102.507) ($105.565)
+```
+[p252_c0003] _V-88_
+
+## Page 253
+
+### [p253_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY
+### [p253_c0002] July Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p253_c0003]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.236 0.942 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts $0.236 ($0.942) $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll $0.452 ($0.471) $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.486 (0.283) 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $0.938 ($0.754) $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.165 $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 2.999 (21.453) 0.000 0.000 0.000 0.000 Professional Services Contracts 0.643 (2.231) 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 1.781 (4.736) 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures $5.588 ($28.420) $0.000 $0.000 $0.000 $0.000 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $6.527 ($29.174) $0.000 $0.000 $0.000 $0.000 Total Cash Conversion Adjustments before Depreciation $6.763 ($30.116) $0.000 $0.000 $0.000 $0.000 Depreciation $209.437 $204.124 $200.608 $200.608 $200.608 $200.608 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $209.437 $204.124 $200.608 $200.608 $200.608 $200.608 Total Cash Conversion Adjustments $216.200 $174.008 $200.608 $200.608 $200.608 $200.608
+```
+[p253_c0004] _V-89_
+
+## Page 254
+
+### [p254_c0001] MTA Grand Central Madison Operating Company 2026 Preliminary Budget July Financial Plan 2026 – 2029 Year-To-Year Changes by Category - Baseline
+### [p254_c0002] REVENUE
+### [p254_c0003] Other Operating Revenue
+- [p254_c0004] • Increases reflect changes in leasing activity.
+### [p254_c0005] EXPENSES
+### [p254_c0006] Payroll
+- [p254_c0007] • Salaries for non-represented employees assume 2% annual increases.
+### [p254_c0008] Health & Welfare
+- [p254_c0009] • Reflects projected annual premium increases for New York State Health Insurance Program (NYSHIP).
+### [p254_c0010] Other Fringe Benefits
+- [p254_c0011] • Railroad Retirement Tax maximum limits are based on Railroad Retirement maximum earnings tier levels and annual Consumer Price Index (CPI) increases; the tax rate for each tier is expected to remain unchanged.
+### [p254_c0012] Electric Power
+- [p254_c0013] • 2025 includes actuals through April, with forecasts for the remainder of the Plan period reflecting the updated consumption estimates and projected rate changes.
+### [p254_c0014] Maintenance and Other Operating Contracts
+- [p254_c0015] • 2026 to 2029 increases are primarily due to inflationary increases.
+### [p254_c0016] Professional Service Contracts
+- [p254_c0017] • Expenses decrease from 2025 to 2026 with the expiration of a 3 rd party support contract at the end of 2025. • 2026 through 2029 projections are based on projected interagency chargebacks
+### [p254_c0018] Other Business Expenses
+- [p254_c0019] • Reflects other miscellaneous expenses.
+### [p254_c0020] CASH ADJUSTMENTS
+### [p254_c0021] Expense
+- [p254_c0022] • Reflects the timing of 2024 year-end cash adjustments impacting 2025. • Includes annual depreciation and other non-cash adjustments.
+[p254_c0023] _V-90_
+
+## Page 255
+
+### [p255_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p255_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Non-Reimbursable Operating Revenues Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.495 0.357 (0.138) 1.134 0.777 1.843 0.709 2.137 0.294 Total Revenues $0.495 $0.357 ($0.138) $1.134 $0.777 $1.843 $0.709 $2.137 $0.294 Operating Expenses Labor: Payroll $1.360 $1.661 ($0.302) $1.695 ($0.033) $1.722 ($0.027) $1.763 ($0.041) Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.174 0.275 (0.101) 0.290 (0.015) 0.306 (0.015) 0.322 (0.016) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.415 0.312 0.103 0.322 (0.010) 0.332 (0.010) 0.343 (0.011) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $1.949 $2.249 ($0.300) $2.307 ($0.058) $2.359 ($0.052) $2.428 ($0.069) Non-Labor: Electric Power $4.725 $5.086 ($0.360) $5.237 ($0.151) $5.727 ($0.490) $6.281 ($0.554) Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 87.992 90.534 (2.542) 93.102 (2.567) 95.743 (2.641) 98.461 (2.719) Professional Services Contracts 1.141 0.507 0.635 0.509 (0.002) 0.511 (0.002) 0.521 (0.010) Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.013 0.010 0.003 0.010 0.000 0.010 0.000 0.011 0.000 Total Non-Labor Expenses $93.872 $96.137 ($2.265) $98.858 ($2.721) $101.991 ($3.133) $105.274 ($3.283) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $95.821 $98.386 ($2.565) $101.165 ($2.779) $104.350 ($3.186) $107.702 ($3.352) Depreciation $204.124 $200.608 $3.515 $200.608 $0.000 $200.608 $0.000 $200.608 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $204.124 $200.608 $3.515 $200.608 $0.000 $200.608 $0.000 $200.608 $0.000 Total Expenses After Depreciation and GASB Adjs. $299.944 $298.994 $0.950 $301.773 ($2.779) $304.959 ($3.186) $308.310 ($3.352) Net Surplus/(Deficit) ($299.449) ($298.637) $0.812 ($300.639) ($2.002) ($303.115) ($2.477) ($306.173) ($3.058)
+```
+[p255_c0003] _16-A_
+
+## Page 256
+
+### [p256_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY
+### [p256_c0002] July Financial Plan 2026 - 2029
+### [p256_c0003] Changes Year-to-Year by Category
+[p256_c0004] Favorable/(Unfavorable)
+[p256_c0005] ($ in millions)
+[p256_c0006]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Reimbursable Operating Revenues Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Operating Expenses Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p256_c0007] _V-22_
+
+## Page 257
+
+### [p257_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY
+[p257_c0002] July Financial Plan 2026 - 2029
+[p257_c0003] Changes Year-to-Year by Category
+[p257_c0004] Favorable/(Unfavorable)
+[p257_c0005] ($ in millions)
+[p257_c0006]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable and Reimbursable Operating Revenues Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.495 0.357 (0.138) 1.134 0.777 1.843 0.709 2.137 0.294 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $0.495 $0.357 ($0.138) $1.134 $0.777 $1.843 $0.709 $2.137 $0.294 Operating Expenses Labor: Payroll $1.360 $1.661 ($0.302) $1.695 ($0.033) $1.722 ($0.027) $1.763 ($0.041) Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.174 0.275 (0.101) 0.290 (0.015) 0.306 (0.015) 0.322 (0.016) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.415 0.312 0.103 0.322 (0.010) 0.332 (0.010) 0.343 (0.011) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $1.949 $2.249 ($0.300) $2.307 ($0.058) $2.359 ($0.052) $2.428 ($0.069) Non-Labor: Electric Power $4.725 $5.086 ($0.360) $5.237 ($0.151) $5.727 ($0.490) $6.281 ($0.554) Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 87.992 90.534 (2.542) 93.102 (2.567) 95.743 (2.641) 98.461 (2.719) Professional Services Contracts 1.141 0.507 0.635 0.509 (0.002) 0.511 (0.002) 0.521 (0.010) Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.013 0.010 0.003 0.010 0.000 0.010 0.000 0.011 0.000 Total Non-Labor Expenses $93.872 $96.137 ($2.265) $98.858 ($2.721) $101.991 ($3.133) $105.274 ($3.283) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $95.821 $98.386 ($2.565) $101.165 ($2.779) $104.350 ($3.186) $107.702 ($3.352) Depreciation $204.124 $200.608 $3.515 $200.608 $0.000 $200.608 $0.000 $200.608 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $204.124 $200.608 $3.515 $200.608 $0.000 $200.608 $0.000 $200.608 $0.000 Total Expenses After Depreciation and GASB Adjs. $299.944 $298.994 $0.950 $301.773 ($2.779) $304.959 ($3.186) $308.310 ($3.352) Net Surplus/(Deficit) ($299.449) ($298.637) $0.812 ($300.639) ($2.002) ($303.115) ($2.477) ($306.173) ($3.058)
+```
+[p257_c0007] _V-93_
+
+## Page 258
+
+### [p258_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY
+### [p258_c0002] July Financial Plan 2026 - 2029
+### [p258_c0003] Changes Year-to-Year by Category
+[p258_c0004] Favorable/(Unfavorable)
+[p258_c0005] ($ in millions)
+### [p258_c0006] Cash Receipts and Expenditures
+### [p258_c0007] Receipts
+[p258_c0008]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue (0.447) 0.357 0.804 1.134 0.777 1.843 0.709 2.137 0.294 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts ($0.447) $0.357 $0.804 $1.134 $0.777 $1.843 $0.709 $2.137 $0.294
+```
+### [p258_c0009] Expenditures
+### [p258_c0010] Labor Expenditures:
+[p258_c0011]
+
+```text
+Payroll $1.831 $1.661 $0.169 $1.695 ($0.033) $1.722 ($0.027) $1.763 ($0.041) Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.174 0.275 (0.101) 0.290 (0.015) 0.306 (0.015) 0.322 (0.016) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.698 0.312 0.386 0.322 (0.010) 0.332 (0.010) 0.343 (0.011) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $2.703 $2.249 $0.454 $2.307 ($0.058) $2.359 ($0.052) $2.428 ($0.069)
+```
+### [p258_c0012] Non-Labor Expenditures:
+[p258_c0013]
+
+```text
+Electric Power $4.725 $5.086 ($0.360) $5.237 ($0.151) $5.727 ($0.490) $6.281 ($0.554) Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 109.445 90.534 18.911 93.102 (2.567) 95.743 (2.641) 98.461 (2.719) Professional Services Contracts 3.372 0.507 2.866 0.509 (0.002) 0.511 (0.002) 0.521 (0.010) Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 4.749 0.010 4.739 0.010 0.000 0.010 0.000 0.011 0.000 Total Non-Labor Expenditures $122.292 $96.137 $26.155 $98.858 ($2.721) $101.991 ($3.133) $105.274 ($3.283)
+```
+### [p258_c0014] Other Expenditure Adjustments:
+[p258_c0015]
+
+```text
+Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p258_c0016]
+
+```text
+Total Expenditures $124.995 $98.386 $26.609 $101.165 ($2.779) $104.350 ($3.186) $107.702 ($3.352) Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p258_c0017]
+
+```text
+Net Cash Surplus/(Deficit) ($125.441) ($98.028) $27.413 ($100.030) ($2.002) ($102.507) ($2.477) ($105.565) ($3.058)
+```
+[p258_c0018] _16-A_
+
+## Page 259
+
+### [p259_c0001] MTA Grand Central Madison Operating Company 2026 Preliminary Budget July Financial Plan 2026 - 2029 Plan-To-Plan Changes by Generic Category - Baseline
+### [p259_c0002] 2025: MID-YEAR FORECAST VS. ADOPTED BUDGET
+[p259_c0003] The 2025 Mid-Year Forecast is based on results through April 2025.
+### [p259_c0004] REVENUE
+- [p259_c0005] • Other Operating Revenue is favorable due to increased rental revenue projections.
+### [p259_c0006] EXPENSES
+- [p259_c0007] • Payroll expenses are lower primarily due to vacancies. • Health and Welfare costs are lower, and Other Fringe Benefit costs are higher, since all fringe-related charges for interagency employees are now being recognized as Other Fringe Benefits. • Electric Power expenses are higher due to increased rates. • Maintenance and Other Operating Contracts costs are higher due to increased expenses for steam and water, partially offset by the shift of certain expenses to LIRR that was originally planned under GCMOC. • Professional Service Contracts costs are higher to reflect the extension of consultant expenses to support the maintenance contract and IT hardware support costs.
+### [p259_c0008] 2026 – 2028: JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN
+### [p259_c0009] REVENUE
+- [p259_c0010] • Other Operating Revenue increases through 2027 due to increased rental revenue projections and decreases in 2028 due to updated fixed minimum rent assumptions.
+### [p259_c0011] EXPENSES
+- [p259_c0012] • Payroll expenses are higher due to updated pay rates. • Health and Welfare expenses are reduced due to rates being reallocated to the Other Fringe category since all fringe-related charges for interagency employees are being recognized as Other Fringe Benefits. • Electric Power costs are higher due to increased rates. • Maintenance and Other Operating Contracts costs are higher due to increased expenses for steam and water, partially offset by a shift of certain expenses to LIRR that was originally planned under GCMOC. • Professional Service Contracts remain unchanged.
+[p259_c0013] _V-95_
+
+## Page 260
+
+### [p260_c0001] MTA Grand Central Madison Operating Company July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p260_c0002] NON-REIMBURSABLE
+[p260_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) ($95.113) ($98.150) ($100.064) ($101.455) Baseline Changes Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 Vehicle Toll Revenue Other Operating Revenue 0.569 0.640 0.533 (0.336) Capital and Other Reimbursement Total Revenue Changes $0.569 $0.640 $0.533 ($0.336) Expenses Labor: Payroll $0.138 ($0.133) ($0.135) ($0.138) Overtime - - - - Health and Welfare 0.172 0.080 0.075 0.069 OPEB Current Payment - - - - Pensions - - - - Other Fringe Benefits (0.149) (0.041) (0.046) (0.050) Reimbursable Overhead - - - - Total Labor Expense Changes $0.161 ($0.094) ($0.106) ($0.118) Non-Labor: Electric Power ($0.163) ($0.140) ($0.115) ($0.323) Fuel - - - - Insurance - - - - Claims - - - - Paratransit Service Contracts - - - - Maintenance and Other Operating Contracts (0.476) (0.282) (0.279) (0.274) Professional Service Contracts (0.300) 0.000 0.000 0.000 Materials & Supplies - - - - Other Business Expenses (0.004) (0.001) (0.001) (0.001) Total Non-Labor Expense Changes ($0.943) ($0.424) ($0.394) ($0.598) Total Expense Changes before Depreciation and GASB Adjs. ($0.781) ($0.518) ($0.500) ($0.716) Depreciation ($3.515) $0.000 $0.000 $0.000 GASB 75 OPEB Expense Adjustment - - - - GASB 68 Pension Expense Adjustment - - - - GASB 87 Lease Compliance - - - - GASB 96 SBITA - - - - Environmental Remediation - - - - Total Expense Changes ($4.296) ($0.518) ($0.500) ($0.716) Cash Adjustment Changes Timing from 2024 ($30.115) Depreciation 3.515 0.000 0.000 0.000 Total Cash Adjustment Changes ($26.600) $0.000 $0.000 $0.000 Total Baseline Changes ($30.327) $0.122 $0.034 ($1.052) July Financial Plan - Cash Surplus/(Deficit) ($125.441) ($98.028) ($100.030) ($102.507)
+```
+[p260_c0004] _V-96_
+
+## Page 261
+
+### [p261_c0001] MTA Grand Central Madison Operating Company July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p261_c0002] REIMBURSABLE
+[p261_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 Baseline Changes Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 Vehicle Toll Revenue Other Operating Revenue Capital and Other Reimbursement 0.000 0.000 0.000 0.000 Total Revenue Changes $0.000 $0.000 $0.000 $0.000 Expenses Labor: Payroll $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 OPEB Current Payment 0.000 0.000 0.000 0.000 Pensions 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 Total Labor Expense Changes $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 Professional Service Contracts 0.000 0.000 0.000 0.000 Materials & Supplies 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 Total Non-Labor Expense Changes $0.000 $0.000 $0.000 $0.000 Total Expense Changes $0.000 $0.000 $0.000 $0.000 Cash Adjustment Changes Operating Funded Capital 0.000 0.000 0.000 0.000 Total Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Baseline Changes $0.000 $0.000 $0.000 $0.000 July Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000
+```
+[p261_c0004] _V-97_
+
+## Page 262
+
+### [p262_c0001] MTA Grand Central Madison Operating Company July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p262_c0002] NON-REIMBURSABLE/REIMBURSABLE
+[p262_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) ($95.113) ($98.150) ($100.064) ($101.455) Baseline Changes Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 Vehicle Toll Revenue 0.000 0.000 0.000 0.000 Other Operating Revenue 0.569 0.640 0.533 (0.336) Capital and Other Reimbursement 0.000 0.000 0.000 0.000 Total Revenue Changes $0.569 $0.640 $0.533 ($0.336) Expenses Labor: Payroll $0.138 ($0.133) ($0.135) ($0.138) Overtime 0.000 0.000 0.000 0.000 Health and Welfare 0.172 0.080 0.075 0.069 OPEB Current Payment 0.000 0.000 0.000 0.000 Pensions 0.000 0.000 0.000 0.000 Other Fringe Benefits (0.149) (0.041) (0.046) (0.050) Reimbursable Overhead 0.000 0.000 0.000 0.000 Total Labor Expense Changes $0.161 ($0.094) ($0.106) ($0.118) Non-Labor: Electric Power ($0.163) ($0.140) ($0.115) ($0.323) Fuel 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (0.476) (0.282) (0.279) (0.274) Professional Service Contracts (0.300) 0.000 0.000 0.000 Materials & Supplies 0.000 0.000 0.000 0.000 Other Business Expenses (0.004) (0.001) (0.001) (0.001) Total Non-Labor Expense Changes ($0.943) ($0.424) ($0.394) ($0.598) Total Expense Changes before Depreciation and GASB Adjs. ($0.781) ($0.518) ($0.500) ($0.716) Depreciation ($3.515) $0.000 $0.000 $0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 GASB 87 Lease Compliance 0.000 0.000 0.000 0.000 GASB 96 SBITA 0.000 0.000 0.000 0.000 Environmental Remediation 0.000 0.000 0.000 0.000 Total Expense Changes ($4.296) ($0.518) ($0.500) ($0.716) Cash Adjustment Changes Timing from 2024 ($30.115) $0.000 $0.000 $0.000 Operating Funded Capital 0.000 0.000 0.000 0.000 Advertising 0.000 0.000 0.000 0.000 Depreciation 3.515 0.000 0.000 0.000 Total Cash Adjustment Changes ($26.600) $0.000 $0.000 $0.000 Total Baseline Changes ($30.327) $0.122 $0.034 ($1.052) July Financial Plan - Cash Surplus/(Deficit) ($125.441) ($98.028) ($100.030) ($102.507)
+```
+[p262_c0004] _V-98_
+
+## Page 263
+
+### [p263_c0001] MTA Grand Central Madison Operating Company July Financial Plan 2026-2029 Summary of Major Programmatic Changes Between Financial Plans ($ in millions)
+### [p263_c0002] NON-REIMBURSABLE and REIMBURSABLE
+[p263_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) ($95.113) ($98.150) ($100.064) ($101.455) Non-Reimbursable Major Changes Revenue Other Operating Revenue 0.569 0.640 0.533 (0.336) Sub-Total Non-Reimbursable Revenue Changes $0.569 $0.640 $0.533 ($0.336) Expenses Water/Steam (0.625) (0.428) (0.428) (0.426) Utility Rate Adjustment - Power (0.163) (0.140) (0.115) (0.323) Labor Expenses 0.164 (0.095) (0.106) (0.119) Consultant contract to support GCMOC Maintenance Contract (0.300) 0.000 0.000 0.000 LIRR Contract to Support GCMOC 0.143 0.146 0.149 0.152 Depreciation/GASB 68 Pension Expense Adjustment/Environmental Remediation/OPEB (3.515) 0.000 0.000 0.000 Sub-Total Non-Reimbursable Expense Changes ($4.296) ($0.518) ($0.500) ($0.716) Total Non-Reimbursable Major Changes ($3.727) $0.122 $0.034 ($1.052) Reimbursable Major Changes Revenue Capital and Other Reimbursements - - - - Sub-Total Reimbursable Revenue Changes $0.000 $0.000 $0.000 $0.000 Expenses Capital and Other Reimbursements 0.000 0.000 0.000 0.000 Sub-Total Reimbursable Expense Changes $0.000 $0.000 $0.000 $0.000 Total Reimbursable Major Changes $0.000 $0.000 $0.000 $0.000 Total Accrual Changes ($3.727) $0.122 $0.034 ($1.052) Cash Adjustment Changes Timing from 2024 ($30.115) $0.000 $0.000 $0.000 Depreciation 3.515 - - - Total Cash Adjustment Changes ($26.600) $0.000 $0.000 $0.000 Total Baseline Changes ($30.327) $0.122 $0.034 ($1.052) July Financial Plan - Cash Surplus/(Deficit) ($125.441) ($98.028) ($100.030) ($102.507)
+```
+[p263_c0004] _V-99_
+
+## Page 264
+
+### [p264_c0001] MTA Grand Central Madison Operating Company 2026 Preliminary Budget July Financial Plan 2026 – 2029 Positions Year-To-Year Summary of Changes
+### [p264_c0002] POSITION ASSUMPTIONS
+[p264_c0003] Positions are identified as of year-end (December 31st) for each year in the Financial Plan and reflect an estimate of the total number of paid employees required to meet and achieve corporate goals.
+[p264_c0004] There are 10 positions for GCMOC for each year of the Plan period.
+[p264_c0005] _V-100_
+
+## Page 265
+
+### [p265_c0001] MTA Grand Central Madison Operating Company 2026 Preliminary Budget July Financial Plan 2026 – 2029 Positions Plan-to-Plan Summary of Changes
+### [p265_c0002] POSITION ASSUMPTIONS
+[p265_c0003] Positions are identified as of year-end (December 31st) for each year in the Financial Plan and reflect an estimate of the total number of paid employees required to meet and achieve corporate goals.
+[p265_c0004] There are 10 positions for GCMOC for each year of the Plan period, unchanged from the February Plan.
+[p265_c0005] _V-101_
+
+## Page 266
+
+### [p266_c0001] MTA Grand Central Madison Operating Company
+### [p266_c0002] July Financial Plan 2026-2029
+[p266_c0003] Favorable/(Unfavorable)
+### [p266_c0004] Total Position Changes at a Glance
+[p266_c0005]
+
+```text
+2025 2026 2027 2028 2025 February Plan - Total Baseline Positions 10 10 10 10 Total Plan-to-Plan Changes - - - - 2025 July Financial Plan - Total Baseline Positions 10 10 10 10 Total Year-to-Year Changes, July Plan 0 0 0 Total Plan-to-Plan Changes by Reporting Category: Non-Reimbursable 0 0 0 0 Reimbursable 0 0 0 0 Total 0 0 0 0 Full-Time 0 0 0 0 Full-Time Equivalents Total 0 0 0 0 By Function Category - Administration 0 0 0 0 - Operations 0 0 0 0 - Maintenance 0 0 0 0 - Engineering/Capital 0 0 0 0 - Public Safety Total 0 0 0 0 By Occupational Group - Managers/Supervisors (3) (3) (3) (3) - Professional, Technical, Clerical 3 3 3 3 - Operational Hourlies 0 0 0 0 Total 0 0 0 0 Total Plan-to-Plan Changes by Major Category: Operating Efficiencies 0 0 0 0 New Needs - - - - Change in Reimbursable Positions 0 0 0 0 Re-estimates & All Other 1 0 0 0 0 Total 0 0 0 0
+```
+[p266_c0006] _1 Includes Full-time Equivalents_
+[p266_c0007] _V-102_
+
+## Page 267
+
+### [p267_c0001] MTA Grand Central Madison Operating Company July Financial Plan 2026-2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full Time Equivalents
+[p267_c0002]
+
+```text
+FUNCTION/DEPARTMENT 2024 Actual 2025 Mid-Year 2026 2027 2028 2029 Forecast Preliminary Budget Administration President 5 10 10 10 10 Total Administration 5 10 10 10 10 Total Baseline Positions 5 10 10 10 10
+```
+[p267_c0003] _V-103_
+
+## Page 268
+
+### [p268_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY July Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p268_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual Mid-Year Preliminary 2024 Forecast 2025 Budget 2026 2027 2028 2029 Administration Managers/Supervisors 5 7 7 7 7 7 Professional/Technical/Clerical 0 3 3 3 3 3 Operational Hourlies 0 0 0 0 0 0 Total Administration Headcount 5 10 10 10 10 10 Operations Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Operations Headcount 0 0 0 0 0 0 Maintenance Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Maintenance Headcount 0 0 0 0 0 0 Engineering / Capital Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 0 0 0 0 0 0 Public Safety Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 Total Positions Managers/Supervisors 5 7 7 7 7 7 Professional/Technical/ Clerical 0 3 3 3 3 3 Operational Hourlies 0 0 0 0 0 0 Total Positions 5 10 10 10 10 10
+```
+[p268_c0003] _V-104_
+
+## Page 269
+
+### [p269_c0001] Metro-North Railroad
+
+## Page 270
+
+### [p270_c0001] MTA METRO-NORTH RAILROAD 2026 Preliminary Budget July Financial Plan 2026 - 2029
+### [p270_c0002] FINANCIAL OVERVIEW
+[p270_c0003] The July Financial Plan provides the resources required to provide a safe, secure and reliable transportation service for customers and employees.
+### [p270_c0004] Financial Highlights
+- [p270_c0005] • Non-Reimbursable Revenue: The Plan reflects $83.4 million in higher revenue over the Plan period. Farebox revenue increases by $74.9 million, reflecting Connecticut Department of Transportation (CDOT) farebox increases as well as a slight increase in ridership. Other Operating Revenue increased by $8.5 million, reflecting Tropical Storm Ida and Scarborough Wall Collapse reimbursements partially offset by higher real estate vacancy rates and lower pre-Covid market rates. • Non-Reimbursable Expenses: The Plan reflects $83.7 million in higher expenses over the Plan period. This expense increase is primarily driven by higher insurance, higher materials and supplies, and higher professional service contracts partially offset by lower labor costs. • Headcount: The Plan reflects a budgeted increase of 20 positions, representing 15 positions to support the Signal and Dispatch Certification compliance program, the transfer of three positions from Construction and Development (C&D), and two positions to support trash collection in Grand Central Madison (GCM).
+### [p270_c0006] Ridership and Revenue
+[p270_c0007] The July Financial Plan reflects actuals through May 2025, approved CDOT farebox increases effective September 2025 and July 2026, and slightly increased ridership.
+[p270_c0008] Metro-North Railroad's (Metro-North) July Financial Plan adjusts 2025 ridership upwards to 72.0 million trips, which is 2.3 million higher than the Adopted Budget and 4.7 million higher than 2024 year-end actuals. The farebox revenue impact from the rate and ridership increases is a favorable change of $8.3 million in 2025; of this total, however, $1.4 million is due to the September 2025 CDOT fare increase which is offset by lower CDOT Subsidy for the New Haven Line.
+### [p270_c0009] 2025 MID-YEAR FORECAST
+[p270_c0010] The 2025 Mid-Year Forecast includes non-reimbursable revenue totaling $714.4 million and non-reimbursable expenses including non-cash liabilities of $2,104.9 million. The 2025 Mid-Year Forecast for reimbursable revenue and expenses each total $329.1 million.
+[p270_c0011] Total non-reimbursable revenue includes farebox revenue of $655.7 million and other operating revenue of $58.7 million. Farebox revenue is higher than the Adopted Budget by $8.3 million, reflecting increased ridership and the September 2025 CDOT fare increase. Other operating revenue is $20.8 million higher than the Adopted Budget driven by higher Tropical Storm Ida and Scarborough Wall Collapse reimbursements as well as higher net GCT retail and advertising revenues.
+[p270_c0012] _V-105_
+
+## Page 271
+
+[p271_c0001] Total non-reimbursable expenses (excluding non-cash liabilities) are $25.5 million higher than in the Adopted Budget, primarily due to higher insurance and payroll expenses.
+[p271_c0002] The 2025 Mid-Year Forecast cash subsidy requirement is $976.0 million and reflects an MTA share of $710.9 million and a CDOT share of $265.2 million.
+[p271_c0003] Full-time positions total 6,895 in the 2025 Mid-Year Forecast with 6,152 non-reimbursable positions and 743 reimbursable positions.
+### [p271_c0004] 2026 PRELIMINARY BUDGET BASELINE
+[p271_c0005] The 2026 Preliminary Budget reflects non-reimbursable revenue projections totaling $718.9 million and expenses including non-cash liability adjustments of $2,148.8 million resulting in an operating deficit of $1,429.9 million. Farebox revenue of $669.3 million is higher than the February Plan by $19.1 million; $16.1 million of this increase reflects the combined impact of the September 2025 and July 2026 CDOT fare increases. Other operating revenue of $49.6 million is essentially flat to the February Plan. Non-reimbursable expenses are lower by $17.0 million, reflecting favorable non-cash liabilities and total labor expenses partially offset by higher insurance and materials and supplies expenses.
+[p271_c0006] The 2026 Preliminary Budget for reimbursable expenditures and receipts are $388.8 million, an increase of $70.4 million from the February Plan. This increase results from higher capital project activity.
+[p271_c0007] The 2026 Preliminary Budget cash subsidy requirement is $1,078.8 million and reflects an MTA share of $816.4 million and a CDOT share of $262.4 million.
+[p271_c0008] Full-time positions total 6,981 in the 2026 Preliminary Budget with 6,272 non-reimbursable positions and 709 reimbursable positions.
+### [p271_c0009] 2027 - 2029 PROJECTIONS
+[p271_c0010] Non-reimbursable revenues increase by $9.9 million in 2027, $8.9 million in 2028, and $13.5 million in 2029 primarily reflecting higher net GCT retail and advertising revenues, as well as the full-year impact in 2027 of the July 2026 CDOT fare increase. Non-reimbursable expenses including non-cash liability adjustments increase by $122.3 million in 2027, $38.3 million in 2028, and $114.3 million in 2029.
+[p271_c0011] Reimbursable expenditures and receipts are lower in 2027 by $108.4 million, higher in 2028 by $11.5 million, and flat in 2029.
+[p271_c0012] Full-time positions for 2027 through 2029 are 7,054, 7,132 and 7,232 respectively. Non-reimbursable positions for the same period total 6,347, 6,393 and 6,493, respectively. Reimbursable positions for 2027 total 707 and remain flat through 2028 and 2029 with 739 positions.
+[p271_c0013] _V-106_
+
+## Page 272
+
+### [p272_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p272_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $625.670 $655.729 $669.290 $676.174 $681.447 $692.413 Other Operating Revenue 47.597 58.673 49.621 52.610 56.192 58.773 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $673.267 $714.401 $718.910 $728.785 $737.639 $751.186 Operating Expense Labor: Payroll $638.801 $674.291 $682.448 $708.742 $729.637 $751.115 Overtime 100.881 87.185 88.994 94.472 96.344 99.092 Health and Welfare 147.048 152.451 165.570 180.154 194.463 209.384 OPEB Current Payments 53.526 54.000 55.000 56.000 57.000 58.000 Pension 125.130 136.446 144.758 143.515 139.710 139.135 Other Fringe Benefits 149.231 161.301 160.156 166.010 170.404 175.024 Reimbursable Overhead (81.605) (108.618) (111.959) (106.161) (104.688) (106.129) Total Labor Expenses $1,133.012 $1,157.056 $1,184.969 $1,242.732 $1,282.870 $1,325.621 Non-Labor: Electric Power $81.532 $95.683 $94.559 $94.013 $96.713 $102.431 Fuel 23.506 23.729 22.629 22.996 23.214 24.548 Insurance 21.293 32.060 35.163 36.571 37.976 39.788 Claims 6.008 1.000 1.000 1.000 1.000 1.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 140.193 139.401 137.284 137.551 140.474 151.309 Professional Services Contracts 55.566 61.041 59.692 60.373 61.000 62.236 Materials and Supplies 117.692 131.174 156.577 171.666 181.021 189.812 Other Business Expenses 30.691 28.920 28.773 29.106 47.881 48.572 Total Non-Labor Expenses $476.480 $513.008 $535.677 $553.275 $589.280 $619.696 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,609.492 $1,670.064 $1,720.645 $1,796.007 $1,872.150 $1,945.316 Depreciation $351.615 $340.686 $354.007 $372.645 $397.686 $436.382 GASB 49 Environmental Remediation 2.496 4.000 4.000 4.000 4.000 4.000 GASB 68 Pension Expense Adjustment 25.058 26.210 3.300 29.320 (35.940) (36.030) GASB 75 OPEB Expense Adjustment 2.548 62.052 64.517 66.890 69.332 71.997 GASB 87 Lease Adjustment 3.850 3.849 4.281 4.206 4.123 4.032 GASB 96 SBITA Adjustment (3.652) (1.986) (1.986) (1.986) (1.986) (1.986) Total Non-Cash Liability Adjustments $381.915 $434.810 $428.119 $475.074 $437.215 $478.394 Total Expenses $1,991.407 $2,104.875 $2,148.764 $2,271.080 $2,309.365 $2,423.711 Net Surplus/(Deficit) ($1,318.140) ($1,390.473) ($1,429.854) ($1,542.296) ($1,571.727) ($1,672.525) Cash Conversion Adjustments Depreciation $351.615 $340.686 $354.007 $372.645 $397.686 $436.382 Operating/Capital (30.314) (45.771) (50.747) (25.475) (25.659) (26.132) Other Cash Adjustments (19.207) 119.535 47.825 96.416 36.774 41.947 Total Cash Conversion Adjustments $302.094 $414.450 $351.085 $443.585 $408.801 $452.197 Net Cash Surplus/(Deficit) ($1,016.046) ($976.024) ($1,078.769) ($1,098.710) ($1,162.925) ($1,220.327)
+```
+[p272_c0003] _V-107_
+
+## Page 273
+
+### [p273_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p273_c0002]
+
+```text
+Actual Mid-Year Preliminary 2024 Forecast Budget 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 MNR - MTA 135.592 154.797 149.129 142.108 153.030 156.383 MNR - CDOT 105.555 156.268 225.358 124.494 122.202 118.497 MNR - Other 20.772 16.062 14.355 13.798 16.689 16.973 Capital and Other Reimbursements 261.919 329.127 388.842 280.401 291.922 291.853 Total Revenues $261.919 $329.127 $388.842 $280.401 $291.922 $291.853 Operating Expense Labor: Payroll $47.268 $63.383 $69.092 $65.641 $68.168 $69.549 Overtime 33.400 36.517 35.304 36.252 36.854 38.006 Health and Welfare 21.928 25.531 27.121 26.505 27.374 28.010 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 12.579 15.372 16.198 15.688 16.199 16.574 Other Fringe Benefits 13.796 17.388 18.402 17.859 18.445 18.874 Reimbursable Overhead 80.156 109.184 111.959 106.161 104.688 106.129 Total Labor Expenses $209.127 $267.374 $278.076 $268.107 $271.729 $277.142 Non-Labor: Electric Power $0.218 ($0.013) $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.837 0.997 1.100 1.033 1.078 1.105 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 16.562 21.122 10.386 7.388 6.984 7.289 Professional Services Contracts 5.588 23.685 84.972 0.000 5.239 0.000 Materials and Supplies 29.253 15.930 14.308 3.873 6.892 6.318 Other Business Expenses 0.334 0.032 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $52.792 $61.752 $110.767 $12.294 $20.193 $14.711 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $261.919 $329.127 $388.842 $280.401 $291.922 $291.853 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p273_c0003] _V-108_
+
+## Page 274
+
+### [p274_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p274_c0002]
+
+```text
+Actual Mid-Year Preliminary 2024 Forecast Budget 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $625.670 $655.729 $669.290 $676.174 $681.447 $692.413 Other Operating Revenue 47.597 58.673 49.621 52.610 56.192 58.773 MNR - MTA 135.592 154.797 149.129 142.108 153.030 156.383 MNR - CDOT 105.555 156.268 225.358 124.494 122.202 118.497 MNR - Other 20.772 18.062 14.355 13.798 16.689 16.973 Capital and Other Reimbursements 261.919 329.127 388.842 280.401 291.922 291.853 Total Revenues $935.186 $1,043.528 $1,107.753 $1,009.185 $1,029.560 $1,043.039 Operating Expense Labor: Payroll $686.069 $737.674 $751.541 $774.383 $797.805 $820.664 Overtime 134.281 123.702 124.298 130.724 133.198 137.098 Health and Welfare 168.976 177.982 192.691 206.659 221.837 237.394 OPEB Current Payments 53.526 54.000 55.000 56.000 57.000 58.000 Pension 137.709 151.818 160.957 159.203 155.910 155.710 Other Fringe Benefits 163.027 178.689 178.558 183.869 188.849 193.898 Reimbursable Overhead (1.449) 0.566 0.000 0.000 0.000 0.000 Total Labor Expenses $1,342.139 $1,424.431 $1,463.044 $1,510.839 $1,554.599 $1,602.763 Non-Labor: Electric Power $81.750 $95.670 $94.559 $94.013 $96.713 $102.431 Fuel 23.506 23.729 22.629 22.996 23.214 24.548 Insurance 22.130 33.057 36.263 37.603 39.054 40.892 Claims 6.008 1.000 1.000 1.000 1.000 1.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 156.755 160.523 147.670 144.939 147.458 158.597 Professional Services Contracts 61.154 84.725 144.664 60.373 66.239 62.236 Materials and Supplies 146.945 147.104 170.886 175.539 187.914 196.130 Other Business Expenses 31.025 28.952 28.773 29.106 47.881 48.572 Total Non-Labor Expenses $529.272 $574.760 $646.444 $565.569 $609.473 $634.407 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,871.411 $1,999.191 $2,109.488 $2,076.407 $2,164.072 $2,237.169 Depreciation $351.615 $340.686 $354.007 $372.645 $397.686 $436.382 GASB 49 Environmental Remediation 2.496 4.000 4.000 4.000 4.000 4.000 GASB 68 Pension Expense Adjustment 25.058 26.210 3.300 29.320 (35.940) (36.030) GASB 75 OPEB Expense Adjustment 2.548 62.052 64.517 66.890 69.332 71.997 GASB 87 Lease Adjustment 3.850 3.849 4.281 4.206 4.123 4.032 GASB 96 SBITA Adjustment (3.652) (1.986) (1.986) (1.986) (1.986) (1.986) Total Non-Cash Liability Adjustments $381.915 $434.810 $428.119 $475.074 $437.215 $478.394 Total Expenses $2,253.326 $2,434.002 $2,537.607 $2,551.481 $2,601.287 $2,715.564 Net Surplus/(Deficit) ($1,318.140) ($1,390.473) ($1,429.854) ($1,542.296) ($1,571.727) ($1,672.525) Cash Conversion Adjustments Depreciation $351.615 $340.686 $354.007 $372.645 $397.686 $436.382 Operating/Capital (30.314) (45.771) (50.747) (25.475) (25.659) (26.132) Other Cash Adjustments (19.207) 119.535 47.825 96.416 36.774 41.947 Total Cash Conversion Adjustments $302.094 $414.450 $351.085 $443.585 $408.801 $452.197 Net Cash Surplus/(Deficit) ($1,016.046) ($976.024) ($1,078.769) ($1,098.710) ($1,162.925) ($1,220.327)
+```
+[p274_c0003] _V-109_
+
+## Page 275
+
+### [p275_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p275_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $607.325 $634.418 $646.930 $653.393 $658.257 $668.695 Other Operating Revenue 147.858 103.301 96.937 100.894 86.865 90.085 MNR - MTA 128.317 154.797 149.129 142.108 153.030 156.383 MNR - CDOT 77.363 184.912 225.358 124.494 122.202 118.497 MNR - Other 24.169 18.062 14.355 13.798 16.689 16.973 Capital and Other Reimbursements 229.849 357.771 388.842 280.401 291.922 291.853 Total Receipts $985.032 $1,095.489 $1,132.709 $1,034.687 $1,037.043 $1,050.633 Expenditures Labor: Payroll $664.679 $789.710 $753.158 $762.307 $784.800 $805.639 Overtime 128.946 141.139 127.748 132.345 132.366 136.003 Health and Welfare 187.963 195.859 209.743 224.351 239.419 255.494 OPEB Current Payments 53.593 54.000 55.000 56.000 57.000 58.000 Pension 145.349 3.910 161.120 159.200 155.560 155.350 Other Fringe Benefits 162.892 189.223 175.526 177.716 182.203 186.886 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $1,343.422 $1,373.841 $1,482.296 $1,511.920 $1,551.349 $1,597.372 Non-Labor: Electric Power $84.201 $98.038 $95.125 $94.218 $96.918 $102.636 Fuel 24.489 23.729 22.629 22.996 23.214 24.548 Insurance 39.402 35.924 37.340 38.001 40.608 41.719 Claims 1.180 6.767 1.146 1.146 1.146 1.146 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 189.292 205.518 155.618 147.913 152.800 171.394 Professional Services Contracts 81.564 121.752 152.768 65.036 66.239 62.236 Materials and Supplies 178.787 145.016 178.772 179.749 190.148 198.046 Other Business Expenses 58.741 60.928 85.784 72.418 77.546 71.863 Total Non-Labor Expenditures $657.656 $697.673 $729.183 $621.477 $648.620 $673.588 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $2,001.078 $2,071.513 $2,211.479 $2,133.397 $2,199.968 $2,270.960 Net Cash Balance ($1,016.046) ($976.024) ($1,078.769) ($1,098.710) ($1,162.925) ($1,220.327) Subsidies MTA $752.287 $710.867 $816.385 $824.775 $870.175 $910.213 CDOT 283.407 265.157 262.385 273.935 292.750 310.115 Total Subsidies $1,035.694 $976.024 $1,078.769 $1,098.710 $1,162.925 $1,220.327
+```
+[p275_c0003] _V-110_
+
+## Page 276
+
+### [p276_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p276_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue ($18.345) ($21.311) ($22.360) ($22.782) ($23.190) ($23.718) Other Operating Revenue 100.261 44.628 47.317 48.283 30.673 31.312 MNR - MTA (7.275) 0.000 0.000 0.000 0.000 0.000 MNR - CDOT (28.192) 28.644 0.000 0.000 0.000 0.000 MNR - Other 3.397 0.000 0.000 0.000 0.000 0.000 Total Capital and Other Reimbursements ($32.070) $28.644 $0.000 $0.000 $0.000 $0.000 Total Receipts $49.846 $51.961 $24.957 $25.502 $7.483 $7.594 Expenditures Labor: Payroll $21.390 ($52.036) ($1.618) $12.076 $13.005 $15.024 Overtime 5.335 (17.437) (3.450) (1.621) 0.832 1.095 Health and Welfare (18.987) (17.877) (17.053) (17.692) (17.582) (18.100) OPEB Current Payments (0.067) 0.000 0.000 0.000 0.000 0.000 Pension (7.640) 147.908 (0.163) 0.003 0.350 0.360 Other Fringe Benefits 0.135 (10.533) 3.032 6.153 6.646 7.012 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (1.449) 0.566 0.000 0.000 0.000 0.000 Total Labor Expenditures ($1.283) $50.590 ($19.251) ($1.081) $3.250 $5.391 Non-Labor: Electric Power ($2.451) ($2.368) (0.566) ($0.205) ($0.205) ($0.205) Fuel (0.983) 0.000 0.000 0.000 0.000 0.000 Insurance (17.272) (2.867) (1.077) (0.398) (1.555) (0.826) Claims 4.828 (5.767) (0.146) (0.146) (0.146) (0.146) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (32.537) (44.995) (7.948) (2.974) (5.342) (12.797) Professional Services Contracts (20.410) (37.026) (8.104) (4.663) 0.000 0.000 Materials and Supplies (31.842) 2.088 (7.887) (4.210) (2.234) (1.917) Other Business Expenses (27.716) (31.977) (57.012) (43.312) (29.664) (23.290) Total Non-Labor Expenditures ($128.384) ($122.912) ($82.739) ($55.909) ($39.147) ($39.182) Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures ($129.667) ($72.322) ($101.991) ($56.990) ($35.896) ($33.791) Total Cash Conversion Adjustments before Depreciation ($79.821) ($20.361) ($77.034) ($31.488) ($28.413) ($26.197) Depreciation $351.615 $340.686 $354.007 $372.645 $397.686 $436.382 GASB 49 Environmental Remediation 2.496 4.000 4.000 4.000 4.000 4.000 GASB 68 Pension Expense Adjustment 25.058 26.210 3.300 29.320 (35.940) (36.030) GASB 75 OPEB Expense Adjustment 2.548 62.052 64.517 66.890 69.332 71.997 GASB 87 Lease Adjustment 3.850 3.849 4.281 4.206 4.123 4.032 GASB 96 SBITA Adjustment (3.652) (1.986) (1.986) (1.986) (1.986) (1.986) Total Non-Cash Liability Adjustments $381.915 $434.810 $428.119 $475.074 $437.215 $478.394 Total Cash Conversion Adjustments $302.094 $414.450 $351.085 $443.585 $408.801 $452.197
+```
+[p276_c0003] _V-111_
+
+## Page 277
+
+### [p277_c0001] MTA METRO-NORTH RAILROAD 2026 Preliminary Budget July Financial Plan 2026 - 2029 Year-to-Year Changes by Category - Baseline
+### [p277_c0002] REVENUE
+### [p277_c0003] Farebox Revenue
+- [p277_c0004] • Farebox revenues are projected to increase by 2.1% in 2026, 1.0% in 2027, 0.8% in 2028, and 1.6% in 2029, with the 2026 and 2027 increases primarily reflecting the September 2025 and July 2026 CDOT fare increases.
+### [p277_c0005] Other Operating Revenue
+- [p277_c0006] • 2026 through 2029 reflects lower real estate vacancy rates.
+### [p277_c0007] Capital and Other Reimbursements
+[p277_c0008] Capital project cost reimbursements in each year of the Plan are based on recovering 100% of accrued project expenditures.
+### [p277_c0009] EXPENSES
+### [p277_c0010] Payroll
+### [p277_c0011] Non-Reimbursable
+- [p277_c0012] • 2026 through 2029 reflect primarily revised labor rate assumptions, Penn Station train service, the addition of 15 positions to support the Signal and Dispatch Certification compliance program, and two positions to support trash collection in Grand Central Madison (GCM).
+### [p277_c0013] Reimbursable
+- [p277_c0014] • 2026 through 2029 changes reflect the timing of capital project activity.
+### [p277_c0015] Overtime
+### [p277_c0016] Non-Reimbursable
+- [p277_c0017] • 2026 through 2029 are slightly higher due to general wage increase and revised labor assumptions as well as Penn Station train service.
+### [p277_c0018] Reimbursable
+- [p277_c0019] • 2026 through 2029 changes reflect the timing of capital project activity.
+### [p277_c0020] Health and Welfare
+- [p277_c0021] • Reflects revised staffing and rate assumptions.
+### [p277_c0022] OPEB Current Payment
+- [p277_c0023] • Other Post Employment Benefit (OPEB) Current Payments reflect Metro-North's estimated annual healthcare cost for current retirees. • Projections reflect changes to retiree assumptions.
+### [p277_c0024] Pensions
+- [p277_c0025] • Pension costs include all non-represented and most represented Metro-North employees in the MTA Defined Benefit Plan (DB Plan). Those employees not in the DB Plan participate in the MTA 401K Plan. Metro-North's projected share of the incremental funding requirements for the DB Plan is based on current actuarial projections.
+[p277_c0026] _V-112_
+
+## Page 278
+
+### [p278_c0001] Other Fringe Benefits
+- [p278_c0002] • Railroad Retirement Tax maximum limits are based on the projected maximum earnings base from the Railroad Retirement Board and inflationary increases. The tax rate for each tier is expected to remain unchanged.
+### [p278_c0003] Reimbursable Overhead
+### [p278_c0004] Non-Reimbursable
+- [p278_c0005] • Changes in overhead cost recoveries reflect revisions in Reimbursable project cost estimates.
+### [p278_c0006] Reimbursable
+- [p278_c0007] • 2026 through 2029 changes reflect the timing of capital project activity.
+### [p278_c0008] Electric Power
+- [p278_c0009] • 2026 through 2029 reflect the latest rate assumptions as well as Penn Station train service.
+### [p278_c0010] Fuel
+- [p278_c0011] • 2026 through 2029 reflect the latest fuel price assumptions.
+### [p278_c0012] Insurance
+- [p278_c0013] • Reflects revised insurance premium estimates.
+### [p278_c0014] Claims
+- [p278_c0015] • Reflects current claim trends for passenger injuries and miscellaneous claims.
+### [p278_c0016] Maintenance and Other Operating Contracts
+### [p278_c0017] Non-Reimbursable
+- [p278_c0018] • 2026 is lower primarily due to the retiming of maintenance and operating contracts in Maintenance of Equipment (MoE) partially offset by higher MTA Police allocations and real estate rental costs. • 2027 is higher primarily due to higher MTA Police allocations and real estate rental costs partially offset by the retiming of maintenance and operating contracts in MoE. • 2028 is higher primarily due to Penn Station train service, higher MTA Police allocations, and increased real estate rental costs. • 2029 is higher primarily due to the retiming of maintenance and operating contracts in MoE, increased MTA Police allocations, and higher real estate rental costs.
+### [p278_c0019] Reimbursable
+- [p278_c0020] • 2026 through 2029 changes reflect the timing of capital project activity.
+### [p278_c0021] Professional Services Contracts
+### [p278_c0022] Non-Reimbursable
+- [p278_c0023] • 2026 is lower due to the timing of mobile ticket application support costs and the re-timing of Positive Train Control (PTC) third-party onsite vendor contracts partially offset by increased New Haven Line (NHL) MTA Information Technology allocations. • 2027 through 2029 are higher due to increased NHL MTA Information Technology allocations, and the timing of mobile ticket application support costs.
+### [p278_c0024] Reimbursable
+- [p278_c0025] • 2026 through 2029 changes reflect the timing of capital project activity.
+[p278_c0026] _V-113_
+
+## Page 279
+
+### [p279_c0001] Material and Supplies
+### [p279_c0002] Non-Reimbursable
+- [p279_c0003] • 2026 through 2029 increases result primarily from the re-timing of MoE material expense, inflation and Penn Station train service.
+### [p279_c0004] Reimbursable
+- [p279_c0005] • 2026 through 2029 changes reflect the timing of capital project activity.
+### [p279_c0006] Other Business Expenses
+- [p279_c0007] • 2026 is flat. • 2027 is higher due to increased credit/debit card processing fees and higher subsidy payments to New Jersey Transit (NJT) for West of Hudson Operations partially offset by higher Passenger Rail Investment and Improvement Act (PRIIA) Amtrak recoveries. • 2027 is higher due to Penn Station train service. • 2028 is higher due to increased credit/debit card processing fees and higher subsidy payments to NJT for West of Hudson Operations.
+### [p279_c0008] Depreciation
+- [p279_c0009] • Reflects timing differences in project completions and assets reaching beneficial use.
+### [p279_c0010] GASB 68 Pension Adjustment
+- [p279_c0011] • Reflects the latest actuarial estimates.
+### [p279_c0012] Environmental Remediation
+- [p279_c0013] • Reflects the estimated liability for environmental remediation costs associated with capital projects.
+### [p279_c0014] GASB 75 Adjustment
+- [p279_c0015] • Reflects the latest actuarial estimates.
+### [p279_c0016] GASB 87 Lease Adjustment
+- [p279_c0017] • Reflects the timing of lease accounting adjustments for public sector entities.
+### [p279_c0018] GASB 96 SBITA Adjustment
+- [p279_c0019] • Reflects the timing of Subscription-Based Information Technology Arrangements (SBITA) adjustments for public sector entities.
+### [p279_c0020] CASH ADJUSTMENTS
+[p279_c0021] Cash adjustments are made to the accrued financial statements to align forecasts with actual cash impacts for several categories, including: Farebox Revenue, Payroll, Insurance, and Other Business Expenses. Other cash adjustments are made to reverse items that are accrued but have no impact on cash reporting, including: GASB adjustments, Depreciation, and Environmental Remediation.
+[p279_c0022] Major Year-over-Year cash adjustments include:
+- [p279_c0023] • Farebox Revenue – Reflects the adjustment for credit/debit card processing fees to get to net cash receipts. • Payroll Expense – Reflects the timing of wage settlements for represented employees with expired Collective Bargaining Agreements. • Insurance Expense – Reflects projected payment of premium versus accrued expenses.
+[p279_c0024] _V-114_
+
+## Page 280
+
+- [p280_c0001] • Other Business Expense – Reflects a reduction to cash expense to offset credit/debit card processing fees paid out of Farebox Revenue receipts.
+[p280_c0002] _V-115_
+
+## Page 281
+
+### [p281_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p281_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable Operating Revenues Farebox Revenue $655.729 $669.290 $13.561 $676.174 $6.885 $681.447 $5.272 $692.413 $10.966 Other Operating Revenue 58.673 49.621 (9.052) 52.610 2.990 56.192 3.582 58.773 2.582 Total Revenues $714.401 $718.910 $4.509 $728.785 $9.875 $737.639 $8.854 $751.186 $13.548 Operating Expenses Labor: Payroll $674.291 $682.448 ($8.157) $708.742 ($26.294) $729.637 ($20.895) $751.115 ($21.478) Overtime 87.185 88.994 (1.810) 94.472 (5.478) 96.344 (1.872) 99.092 (2.748) Health and Welfare 152.451 165.570 (13.119) 180.154 (14.584) 194.463 (14.309) 209.384 (14.921) OPEB Current Payments 54.000 55.000 (1.000) 56.000 (1.000) 57.000 (1.000) 58.000 (1.000) Pension 136.446 144.758 (8.312) 143.515 1.243 139.710 3.804 139.135 0.575 Other Fringe Benefits 161.301 160.156 1.145 166.010 (5.854) 170.404 (4.394) 175.024 (4.620) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (108.618) (111.959) 3.341 (106.161) (5.797) (104.688) (1.473) (106.129) 1.441 Total Labor Expenses $1,157.056 $1,184.969 ($27.912) $1,242.732 ($57.763) $1,282.870 ($40.139) $1,325.621 ($42.751) Non-Labor: Electric Power $95.683 $94.559 $1.124 $94.013 $0.546 $96.713 ($2.700) $102.431 ($5.718) Fuel 23.729 22.629 1.100 22.996 (0.368) 23.214 (0.218) 24.548 (1.334) Insurance 32.060 35.163 (3.103) 36.571 (1.408) 37.976 (1.405) 39.788 (1.812) Claims 1.000 1.000 0.000 1.000 0.000 1.000 0.000 1.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 139.401 137.284 2.117 137.551 (0.267) 140.474 (2.923) 151.309 (10.834) Professional Services Contracts 61.041 59.692 1.349 60.373 (0.681) 61.000 (0.628) 62.236 (1.236) Materials and Supplies 131.174 156.577 (25.403) 171.666 (15.089) 181.021 (9.355) 189.812 (8.791) Other Business Expenses 28.920 28.773 0.147 29.106 (0.333) 47.881 (18.776) 48.572 (0.691) Total Non-Labor Expenses $513.008 $535.677 ($22.669) $553.275 ($17.599) $589.280 ($36.005) $619.696 ($30.415) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,670.064 $1,720.645 ($50.581) $1,796.007 ($75.361) $1,872.150 ($76.144) $1,945.316 ($73.166) Depreciation $340.686 $354.007 ($13.321) $372.645 ($18.638) $397.686 ($25.042) $436.382 ($38.696) GASB 49 Environmental Remediation 4.000 4.000 0.000 4.000 0.000 4.000 0.000 4.000 0.000 GASB 68 Pension Expense Adjustment 26.210 3.300 22.910 29.320 (26.020) (35.940) 65.260 (36.030) 0.090 GASB 75 OPEB Expense Adjustment 62.052 64.517 (2.466) 66.890 (2.373) 69.332 (2.443) 71.997 (2.665) GASB 87 Lease Adjustment 3.849 4.281 (0.432) 4.206 0.076 4.123 0.083 4.032 0.091 GASB 96 SBITA Adjustment (1.986) (1.986) 0.000 (1.986) 0.000 (1.986) 0.000 (1.986) 0.000 Total Non-Cash Liability Adjustments $434.810 $428.119 $6.691 $475.074 ($46.955) $437.215 $37.859 $478.394 ($41.180) Total Expenses After Depreciation and GASB Adjs. $2,104.875 $2,148.764 ($43.890) $2,271.080 ($122.316) $2,309.365 ($38.285) $2,423.711 ($114.345) Net Surplus/(Deficit) ($1,390.473) ($1,429.854) ($39.381) ($1,542.296) ($112.441) ($1,571.727) ($29.431) ($1,672.525) ($100.798)
+```
+[p281_c0003] _V-116_
+
+## Page 282
+
+### [p282_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p282_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Reimbursable Operating Revenues Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 329.127 388.842 59.715 280.401 (108.442) 291.922 11.521 291.853 (0.069) Total Revenues $329.127 $388.842 $59.715 $280.401 ($108.442) $291.922 $11.521 $291.853 ($0.069) Operating Expenses Labor: Payroll $63.383 $69.092 ($5.710) $65.641 $3.451 $68.168 ($2.527) $69.549 ($1.381) Overtime 36.517 35.304 1.213 36.252 (0.948) 36.854 (0.602) 38.006 (1.152) Health and Welfare 25.531 27.121 (1.590) 26.505 0.615 27.374 (0.869) 28.010 (0.636) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 15.372 16.198 (0.827) 15.688 0.510 16.199 (0.511) 16.574 (0.375) Other Fringe Benefits 17.388 18.402 (1.013) 17.859 0.543 18.445 (0.586) 18.874 (0.428) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 109.184 111.959 (2.775) 106.161 5.797 104.688 1.473 106.129 (1.441) Total Labor Expenses $267.374 $278.076 ($10.701) $268.107 $9.968 $271.729 ($3.622) $277.142 ($5.413) Non-Labor: Electric Power ($0.013) $0.000 ($0.013) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.997 1.100 (0.103) 1.033 0.068 1.078 (0.045) 1.105 (0.027) Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 21.122 10.386 10.736 7.388 2.998 6.984 0.404 7.289 (0.305) Professional Services Contracts 23.685 84.972 (61.288) 0.000 84.972 5.239 (5.239) 0.000 5.239 Materials and Supplies 15.930 14.308 1.621 3.873 10.435 6.892 (3.019) 6.318 0.575 Other Business Expenses 0.032 0.000 0.032 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $61.752 $110.767 ($49.014) $12.294 $98.473 $20.193 ($7.899) $14.711 $5.482 Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $329.127 $388.842 ($59.715) $280.401 $108.442 $291.922 ($11.521) $291.853 $0.069 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p282_c0003] _V-117_
+
+## Page 283
+
+### [p283_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p283_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable and Reimbursable Operating Revenues Farebox Revenue $655.729 $669.290 $13.561 $676.174 $6.885 $681.447 $5.272 $692.413 $10.966 Other Operating Revenue 58.673 49.621 (9.052) 52.610 2.990 56.192 3.582 58.773 2.582 Capital and Other Reimbursements 329.127 388.842 59.715 280.401 (108.442) 291.922 11.521 291.853 (0.069) Total Revenues $1,043.528 $1,107.753 $64.224 $1,009.185 ($98.567) $1,029.560 $20.375 $1,043.039 $13.479 Operating Expenses Labor: Payroll $737.674 $751.541 ($13.867) $774.383 ($22.842) $797.805 ($23.423) $820.664 ($22.858) Overtime 123.702 124.298 (0.597) 130.724 (6.426) 133.198 (2.474) 137.098 (3.900) Health and Welfare 177.982 192.691 (14.709) 206.659 (13.968) 221.837 (15.177) 237.394 (15.557) OPEB Current Payments 54.000 55.000 (1.000) 56.000 (1.000) 57.000 (1.000) 58.000 (1.000) Pension 151.818 160.957 (9.139) 159.203 1.754 155.910 3.293 155.710 0.200 Other Fringe Benefits 178.689 178.558 0.132 183.869 (5.311) 188.849 (4.980) 193.898 (5.048) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.566 0.000 0.566 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $1,424.431 $1,463.044 ($38.613) $1,510.839 ($47.794) $1,554.599 ($43.761) $1,602.763 ($48.164) Non-Labor: Electric Power $95.670 $94.559 $1.110 $94.013 $0.546 $96.713 ($2.700) $102.431 ($5.718) Fuel 23.729 22.629 1.100 22.996 (0.368) 23.214 (0.218) 24.548 (1.334) Insurance 33.057 36.263 (3.206) 37.603 (1.340) 39.054 (1.451) 40.892 (1.839) Claims 1.000 1.000 0.000 1.000 0.000 1.000 0.000 1.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 160.523 147.670 12.853 144.939 2.731 147.458 (2.519) 158.597 (11.139) Professional Services Contracts 84.725 144.664 (59.939) 60.373 84.292 66.239 (5.867) 62.236 4.003 Materials and Supplies 147.104 170.886 (23.782) 175.539 (4.653) 187.914 (12.375) 196.130 (8.216) Other Business Expenses 28.952 28.773 0.179 29.106 (0.333) 47.881 (18.776) 48.572 (0.691) Total Non-Labor Expenses $574.760 $646.444 ($71.683) $565.569 $80.875 $609.473 ($43.904) $634.407 ($24.934) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,999.191 $2,109.488 ($110.297) $2,076.407 $33.080 $2,164.072 ($87.665) $2,237.169 ($73.097) Depreciation $340.686 $354.007 ($13.321) $372.645 ($18.638) $397.686 ($25.042) $436.382 ($38.696) GASB 49 Environmental Remediation 4.000 4.000 0.000 4.000 0.000 4.000 0.000 4.000 0.000 GASB 68 Pension Expense Adjustment 26.210 3.300 22.910 29.320 (26.020) (35.940) 65.260 (36.030) 0.090 GASB 75 OPEB Expense Adjustment 62.052 64.517 (2.466) 66.890 (2.373) 69.332 (2.443) 71.997 (2.665) GASB 87 Lease Adjustment 3.849 4.281 (0.432) 4.206 0.076 4.123 0.083 4.032 0.091 GASB 96 SBITA Adjustment (1.986) (1.986) 0.000 (1.986) 0.000 (1.986) 0.000 (1.986) 0.000 Total Non-Cash Liability Adjustments $434.810 $428.119 $6.691 $475.074 ($46.955) $437.215 $37.859 $478.394 ($41.180) Total Expenses After Depreciation and GASB Adjs. $2,434.002 $2,537.607 ($103.605) $2,551.481 ($13.874) $2,601.287 ($49.806) $2,715.564 ($114.277) Net Surplus/(Deficit) ($1,390.473) ($1,429.854) ($39.381) ($1,542.296) ($112.441) ($1,571.727) ($29.431) ($1,672.525) ($100.798)
+```
+[p283_c0003] _V-118_
+
+## Page 284
+
+### [p284_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+### [p284_c0002] Cash Receipts and Expenditures
+### [p284_c0003] Receipts
+[p284_c0004]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Farebox Revenue $634.418 $646.930 $12.512 $653.393 $6.463 $658.257 $4.864 $668.695 $10.438 Other Operating Revenue 103.301 96.937 (6.363) 100.894 3.956 86.865 (14.028) 90.085 3.220 Capital and Other Reimbursements 357.771 388.842 31.071 280.401 (108.442) 291.922 11.521 291.853 (0.069) Total Receipts $1,095.489 $1,132.709 $37.220 $1,034.687 ($98.023) $1,037.043 $2.356 $1,050.633 $13.590
+```
+### [p284_c0005] Expenditures
+### [p284_c0006] Labor Expenditures:
+[p284_c0007]
+
+```text
+Payroll $789.710 $753.158 $36.552 $762.307 ($9.148) $784.800 ($22.494) $805.639 ($20.839) Overtime 141.139 127.748 13.390 132.345 (4.597) 132.366 (0.020) 136.003 (3.637) Health and Welfare 195.859 209.743 (13.884) 224.351 (14.608) 239.419 (15.068) 255.494 (16.075) OPEB Current Payments 54.000 55.000 (1.000) 56.000 (1.000) 57.000 (1.000) 58.000 (1.000) Pension 3.910 161.120 (157.210) 159.200 1.920 155.560 3.640 155.350 0.210 Other Fringe Benefits 189.223 175.526 13.697 177.716 (2.191) 182.203 (4.487) 186.886 (4.682) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $1,373.841 $1,482.296 ($108.455) $1,511.920 ($29.624) $1,551.349 ($39.429) $1,597.372 ($46.023)
+```
+### [p284_c0008] Non-Labor Expenditures:
+[p284_c0009]
+
+```text
+Electric Power $98.038 $95.125 $2.913 $94.218 $0.907 $96.918 ($2.700) $102.636 ($5.718) Fuel 23.729 22.629 1.100 22.996 (0.368) 23.214 (0.218) 24.548 (1.334) Insurance 35.924 37.340 (1.416) 38.001 (0.661) 40.608 (2.608) 41.719 (1.110) Claims 6.767 1.146 5.621 1.146 0.000 1.146 0.000 1.146 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 205.518 155.618 49.900 147.913 7.705 152.800 (4.887) 171.394 (18.594) Professional Services Contracts 121.752 152.768 (31.016) 65.036 87.732 66.239 (1.203) 62.236 4.003 Materials and Supplies 145.016 178.772 (33.757) 179.749 (0.976) 190.148 (10.399) 198.046 (7.898) Other Business Expenses 60.928 85.784 (24.856) 72.418 13.366 77.546 (5.128) 71.863 5.683 Total Non-Labor Expenditures $697.673 $729.183 ($31.510) $621.477 $107.706 $648.620 ($27.142) $673.588 ($24.969)
+```
+### [p284_c0010] Other Expenditure Adjustments:
+[p284_c0011]
+
+```text
+Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p284_c0012]
+
+```text
+Total Expenditures $2,071.513 $2,211.479 ($139.965) $2,133.397 $78.082 $2,199.968 ($66.571) $2,270.960 ($70.992) Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p284_c0013]
+
+```text
+Net Cash Surplus/(Deficit) ($976.024) ($1,078.769) ($102.745) ($1,098.710) ($19.941) ($1,162.925) ($64.215) ($1,220.327) ($57.402)
+```
+### [p284_c0014] Subsidies
+[p284_c0015]
+
+```text
+MTA 710.867 816.385 105.518 824.775 8.390 870.175 45.400 910.213 40.037 CDOT 265.157 262.385 (2.772) 273.935 11.550 292.750 18.815 310.115 17.365 Total Subsidies $976.024 $1,078.769 $102.745 $1,098.710 $19.941 $1,162.925 $64.215 $1,220.327 $57.402
+```
+[p284_c0016] _V-119_
+
+## Page 285
+
+### [p285_c0001] MTA METRO-NORTH RAILROAD 2026 Preliminary Budget July Financial Plan 2026 - 2029 Summary of Plan-to-Plan Changes by Generic Category
+### [p285_c0002] REVENUE
+### [p285_c0003] Farebox Revenue
+- [p285_c0004] • 2025 through 2028 farebox revenue increases by $8.3 million in 2025, $19.1 million in 2026, $23.7 million in 2027, and $23.9 million in 2028. • Of these plan-to-plan changes, the September 2025 and July 2026 CDOT fare increases generate a combined $1.4 million in 2025, $16.1 million in 2026, and $20.5 million annually in 2027 and 2028. The additional farebox revenue from the CDOT fare increases is offset by lower CDOT Subsidy for the New Haven Line.
+### [p285_c0005] Other Operating Revenue
+- [p285_c0006] • 2025 increase reflects insurance reimbursements relating to Tropical Storm Ida and Scarborough Wall Collapse as well as higher net GCT retail and advertising revenues. • 2026 through 2028 decreases reflect lower GCT real estate rental rates partially offset by higher advertising revenues.
+### [p285_c0007] Capital and Other Reimbursements
+- [p285_c0008] • Capital project cost reimbursements in each year of the Plan are based on recovering 100% of accrued project expenditures. • 2025 through 2028 accrued reimbursable receipts are $329.1 million, $388.8 million, $280.4 million, and $291.9 million reflecting increases of $16.1 million in 2025, $70.4 million in 2026, a decrease of $46.5 million in 2027, and an increase of $12.5 million in 2028.
+### [p285_c0009] EXPENSES
+### [p285_c0010] Payroll
+### [p285_c0011] Non-Reimbursable
+- [p285_c0012] • 2025 is higher primarily due to reduced capital project activity, the impact of labor contract settlements, as well as the transfer of three C&D positions. • 2026 through 2028 is higher primarily due to the impact of labor contract settlements, as well as the transfer of three C&D positions.
+### [p285_c0013] Reimbursable
+- [p285_c0014] • 2025 through 2028 changes reflect the timing of capital projects.
+### [p285_c0015] Overtime
+### [p285_c0016] Non-Reimbursable
+- [p285_c0017] • 2025 through 2026 are flat. • 2027 through 2028 increases are related primarily to revised labor rate assumptions.
+### [p285_c0018] Reimbursable
+- [p285_c0019] • 2025 through 2028 changes reflect the timing of capital project activity.
+### [p285_c0020] Health and Welfare
+- [p285_c0021] • Reflects revised staffing assumptions and rates.
+[p285_c0022] _V-120_
+
+## Page 286
+
+### [p286_c0001] OPEB Current Payment
+- [p286_c0002] • Other Post Employment Benefit (OPEB) Current Payments reflect Metro-North's estimated annual cost of health care for current retirees. • Projections reflect changes to retiree assumptions.
+### [p286_c0003] Pensions
+- [p286_c0004] • Primarily reflects revised actuarial-based contributions to the MTA Defined Benefit Plan.
+### [p286_c0005] Other Fringe Benefits
+- [p286_c0006] • Reflects revised staffing assumptions and rates.
+### [p286_c0007] Reimbursable Overhead
+- [p286_c0008] • Overhead costs are based on a percentage share of direct labor costs charged to reimbursable projects. • Non-Reimbursable and reimbursable changes in overhead cost recoveries reflect revisions in reimbursable project cost estimates and overhead rates.
+### [p286_c0009] Electric Power
+- [p286_c0010] • 2025 through 2028 reflect increases in consumption due to a correction from the February Financial Plan partially offset by lower electric rates.
+### [p286_c0011] Fuel
+- [p286_c0012] • 2025 through 2028 reflects increases in consumption due to a correction from the February Financial Plan.
+### [p286_c0013] Insurance
+- [p286_c0014] • Reflects the impact of revised premiums.
+### [p286_c0015] Claims
+- [p286_c0016] • Reflects current passenger claim trends.
+### [p286_c0017] Maintenance and Other Operating Contracts
+### [p286_c0018] Non-Reimbursable
+- [p286_c0019] • 2025 decreases are primarily due to lower MTA Police allocations partially offset by the retiming of maintenance and operating contracts from 2024 in MoW, higher inflation, and increased real estate rentals and management services. • 2026 through 2028 decreases are primarily due to lower MTA Police allocations partially offset by higher inflation as well as increased real estate rentals and management services.
+### [p286_c0020] Reimbursable
+- [p286_c0021] • 2025 through 2028 changes reflect the timing of capital project activity.
+### [p286_c0022] Professional Services Contracts
+### [p286_c0023] Non-Reimbursable
+- [p286_c0024] • 2025 is higher primarily due to the transfer back to Metro-North of the Occupational Health Services (OHS) annual budget, higher NHL MTA Information Technology allocations, the re-timing of Positive Train Control (PTC) third-party onsite vendor contracts, and the timing of mobile ticket application support costs. • 2026 is higher primarily due to the transfer back to Metro-North of the OHS annual budget and higher NHL MTA Information Technology allocations partially offset by the timing of mobile ticket application support costs.
+[p286_c0025] _V-121_
+
+## Page 287
+
+- [p287_c0001] • 2027 through 2028 increases are due to the transfer back to Metro-North of the OHS annual budget and higher NHL MTA Information Technology allocations.
+### [p287_c0002] Reimbursable
+- [p287_c0003] • 2025 through 2028 changes reflect the timing of capital project activity.
+### [p287_c0004] Material and Supplies
+### [p287_c0005] Non-Reimbursable
+- [p287_c0006] • 2025 through 2028 increase primarily due to inflation and the booking of first quarter obsolete material reserves in 2025.
+### [p287_c0007] Reimbursable
+- [p287_c0008] • 2025 through 2028 changes reflect the timing of capital project activity.
+### [p287_c0009] Other Business Expenses
+### [p287_c0010] Non-Reimbursable
+- [p287_c0011] • 2025 through 2028 decreases are due to increased PRIIA Amtrak recoveries as well as increased expense recoveries for the operation, maintenance, inspection, and oversight of M8 rail cars used for Shore Line East Service partially offset by increased credit/debit card processing fees.
+### [p287_c0012] Depreciation
+- [p287_c0013] • Reflects timing differences in project completions and assets reaching beneficial use.
+### [p287_c0014] GASB 68 Pension Adjustment
+- [p287_c0015] • Reflects the latest actuarial estimates.
+### [p287_c0016] Environmental Remediation
+- [p287_c0017] • Reflects the estimated liability for environmental remediation costs associated with capital projects.
+### [p287_c0018] GASB 75 Adjustment
+- [p287_c0019] • Reflects the latest actuarial estimates.
+### [p287_c0020] GASB 87 Lease Adjustment
+- [p287_c0021] • Reflects the timing of lease accounting adjustments for public sector entities.
+### [p287_c0022] GASB 96 SBITA Adjustment
+- [p287_c0023] • Reflects the timing of Subscription-Based Information Technology Arrangements (SBITA) adjustments for public sector entities.
+### [p287_c0024] CASH ADJUSTMENTS
+[p287_c0025] Cash adjustments are made to the accrual financial statements to align the forecast with actual cash impacts for several categories. These categories include: Farebox Revenue, Payroll, Insurance, and Other Business Expenses. In addition, other cash adjustments are made to reverse items that are accrued but have no impact on cash reporting. These items include: GASB adjustments, Depreciation, and Environmental Remediation.
+[p287_c0026] Major Plan-over-Plan cash adjustments include:
+- [p287_c0027] • Farebox Revenue – Reflects the adjustment for credit/debit card processing fees to get to net cash receipts.
+[p287_c0028] _V-122_
+
+## Page 288
+
+- [p288_c0001] • Payroll Expense – Reflects the timing of wage settlements for represented employees with expired Collective Bargaining Agreements. • Insurance Expense – Reflects projected payment of premium versus accrued expenses. • Other Business Expense – Reflects a reduction to cash expense to offset credit/debit card processing fees paid out of Farebox Revenue receipts.
+[p288_c0002] _V-123_
+
+## Page 289
+
+### [p289_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p289_c0002] NON-REIMBURSABLE
+[p289_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Financial Plan - Cash Surplus/(Deficit) ($920.128) ($1,058.953) ($1,091.099) ($1,156.375) Baseline Changes Revenue Farebox Revenue $8.274 $19.093 $23.686 $23.893 Vehicle Toll Revenue 0.000 0.000 0.000 0.000 Other Operating Revenue 20.838 (0.420) (7.565) (4.369) Capital and Other Reimbursement 0.000 0.000 0.000 0.000 Total Revenue Changes $29.112 $18.673 $16.122 $19.525 Expenses Labor: Payroll ($10.440) ($5.774) ($8.298) ($10.053) Overtime 0.000 0.031 (0.634) (0.592) Health and Welfare 2.063 5.367 8.707 9.820 OPEB Current Payment 0.000 0.000 0.000 0.000 Pensions 6.400 (0.419) 3.405 5.048 Other Fringe Benefits (8.421) (4.630) (5.280) (5.657) Reimbursable Overhead 10.619 11.323 9.414 5.609 Total Labor Expense Changes $0.221 $5.898 $7.315 $4.174 Non-Labor: Electric Power ($6.088) ($1.760) ($0.948) ($2.042) Fuel (2.461) (1.293) (1.917) (1.229) Insurance (10.958) (12.669) (12.481) (12.164) Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.687 3.809 3.909 4.286 Professional Service Contracts (3.160) (2.987) (4.772) (4.950) Materials & Supplies (8.458) (11.769) (11.206) (11.059) Other Business Expenses 1.766 2.077 1.922 1.581 Total Non-Labor Expense Changes ($25.672) ($24.592) ($25.494) ($25.578) Total Expenses before Depreciation and GASB Adjustments ($25.451) ($18.694) ($18.179) ($21.404) Depreciation ($6.972) ($8.656) ($1.783) $6.379 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 GASB 68 Pension Adjustment 7.570 16.290 12.130 9.740 Environmental Remediation 0.000 0.000 0.000 0.000 GASB 75 Adjustment 27.491 28.342 29.335 30.451 GASB 87 Lease Adjustment (2.475) (2.908) (2.832) (2.749) GASB 96 SBITA Adjustment 2.665 2.665 2.665 2.665 Total Expense Changes $2.827 $17.039 $21.336 $25.082 Cash Conversion Adjustment Changes Depreciation $6.972 $8.656 $1.783 ($6.379) Operating/Capital (1.615) (15.209) 2.510 (1.136) Other Cash Adjustments (93.193) (48.975) (49.361) (43.641) Total Cash Conversion Adjustments ($87.836) ($55.528) ($45.069) ($51.157) Net Surplus/(Deficit) Changes ($55.896) ($19.816) ($7.611) ($6.550) 2025 July Financial Plan - Net Operating Cash Surplus/(Deficit) ($976.024) ($1,078.769) ($1,098.710) ($1,162.925)
+```
+[p289_c0004] _V-124_
+
+## Page 290
+
+### [p290_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+[p290_c0002]
+
+```text
+REIMBURSABLE 2025 2026 2027 2028 2025 February Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 Baseline Changes Revenue Farebox Revenue Other Operating Revenue Capital and Other Reimbursement 16.097 70.360 (46.533) 12.514 Total Revenue Changes $16.097 $70.360 ($46.533) $12.514 Expenses Labor: Payroll $3.654 ($0.328) ($1.072) ($0.411) Overtime (8.643) (4.817) (5.929) (3.311) Health and Welfare 1.864 1.421 0.941 1.636 OPEB Current Payment 0.000 0.000 0.000 0.000 Pensions 0.153 (0.046) (0.345) 0.120 Other Fringe Benefits (0.433) (0.748) (1.007) (0.574) Reimbursable Overhead (11.466) (11.552) (9.641) (5.839) Total Labor Expense Changes ($14.871) ($16.069) ($17.052) ($8.378) Non-Labor: Electric Power $0.013 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 Insurance (0.289) (0.310) (0.320) (0.537) Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts Maintenance and Other Operating Contracts 1.980 0.160 0.440 0.493 Professional Service Contracts 1.315 (53.056) 53.460 (5.239) Materials & Supplies (4.213) (1.085) 10.006 1.146 Other Business Expenses (0.032) 0.000 0.000 0.000 Total Non-Labor Expense Changes ($1.226) ($54.291) $63.585 ($4.136) Total Expense Changes ($16.097) ($70.360) $46.533 ($12.514) 2025 July Financial Plan - Net Operating Cash Surplus/(Deficit) $0.000 $0.000 ($0.000) $0.000
+```
+[p290_c0003] _V-125_
+
+## Page 291
+
+### [p291_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p291_c0002] NON-REIMBURSABLE and REIMBURSABLE
+[p291_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Financial Plan - Cash Surplus/(Deficit) ($920.128) ($1,058.953) ($1,091.099) ($1,156.375) Baseline Changes Revenue Farebox Revenue $8.274 $19.093 $23.686 $23.893 Vehicle Toll Revenue 0.000 0.000 0.000 0.000 Other Operating Revenue 20.838 (0.420) (7.565) (4.369) Capital and Other Reimbursement 16.097 70.360 (46.533) 12.514 Total Revenue Changes $45.209 $89.033 ($30.411) $32.039 Expenses Labor: Payroll ($6.787) ($6.102) ($9.370) ($10.465) Overtime (8.643) (4.785) (6.562) (3.903) Health and Welfare 3.928 6.788 9.648 11.456 OPEB Current Payment 0.000 0.000 0.000 0.000 Pensions 6.553 (0.465) 3.061 5.168 Other Fringe Benefits (8.854) (5.377) (6.287) (6.231) Reimbursable Overhead (0.847) (0.229) (0.227) (0.230) Total Labor Expense Changes ($14.650) ($10.171) ($9.737) ($4.204) Non-Labor: Electric Power ($6.075) ($1.760) ($0.948) ($2.042) Fuel (2.461) (1.293) (1.917) (1.229) Insurance (11.247) (12.980) (12.801) (12.701) Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 5.668 3.969 4.349 4.779 Professional Service Contracts (1.845) (56.043) 48.687 (10.189) Materials & Supplies (12.671) (12.854) (1.200) (9.913) Other Business Expenses 1.733 2.077 1.922 1.581 Total Non-Labor Expense Changes ($26.898) ($78.883) $38.091 ($29.715) Total Expenses before Non-Cash Liability Adjs. ($41.548) ($89.054) $28.354 ($33.918) Depreciation ($6.972) ($8.656) ($1.783) $6.379 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 GASB 68 Pension Adjustment 7.570 16.290 12.130 9.740 Environmental Remediation 0.000 0.000 0.000 0.000 GASB 75 Adjustment 27.491 28.342 29.335 30.451 GASB 87 Lease Adjustment (2.475) (2.908) (2.832) (2.749) GASB 96 SBITA Adjustment 2.665 2.665 2.665 2.665 Total Expense Changes ($13.270) ($53.321) $67.868 $12.567 Net Surplus/(Deficit) Changes $31.940 $35.712 $37.457 $44.606 Cash Conversion Adjustment Changes Depreciation $6.972 $8.656 $1.783 ($6.379) Operating/Capital (1.615) (15.209) 2.510 (1.136) Other Cash Adjustments (93.193) (48.975) (49.361) (43.641) Total Cash Conversion Adjustments ($87.836) ($55.528) ($45.069) ($51.157) Net Surplus/(Deficit) Changes ($55.896) ($19.816) ($7.611) ($6.550) 2025 July Financial Plan - Net Operating Cash Surplus/(Deficit) ($976.024) ($1,078.769) ($1,098.710) ($1,162.925)
+```
+[p291_c0004] _V-126_
+
+## Page 292
+
+### [p292_c0001] MTA Metro-North Railroad July Financial Plan 2026 - 2029 Summary of Major Programmatic Changes Between Financial Plans ($ in millions)
+### [p292_c0002] NON-REIMBURSABLE and REIMBURSABLE
+[p292_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Financial Plan - Cash Surplus/(Deficit) ($920.128) ($1,058.953) ($1,091.099) ($1,156.375) Non-Reimbursable Major Changes Revenue Fare Revenue 8,274 19,093 23,686 23,893 GCT Retail Revenue 2,350 (3,392) (10,391) (7,200) Non-GCT Rental Revenue 4,139 0,351 0,243 0,210 Parking Revenue 0,804 0,811 0,837 0,849 Advertising Revenue 1,783 1,809 1,747 1,773 Storm IDA Insurance Recovery 11,762 - - - Sub-Total Non-Reimbursable Revenue Changes $29,112 $18,673 $16,122 $19,525 Expenses - New Needs (0.136) (1,826) (3,906) (3,969) Labor Expense - GCM Trash Collection (0.136) (0,243) (0,248) (0,252) Signal & Dispatch Certification (1,583) (3,658) (3,717) Other Expenses Revised Insurance Premiums (12,046) (13,503) (12,603) (12,619) Electric Power - Revised Rates (1,326) 2,978 3,816 2,660 Fuel - Revised Rates (1,252) 0,667 0,012 0,778 Electric Power - Revised Consumption (4,762) (4,739) (4,765) (4,702) Fuel - Revised Consumption (1,209) (1,960) (1,930) (2,007) Revised Amtrak PRIIA Recoveries - NHL Share 0,659 1,448 1,448 1,448 Health & Welfare - Revised Labor Projections 2,835 5,033 8,448 9,758 Higher Credit Card Fees (0,012) (0,512) (0,605) (0,661) MTA Allocations - Consolidated Functions (Police, IT, etc) 3,489 2,838 2,576 2,570 Enhanced ticket stock for new TVM machines (0,156) (0,281) (0,288) (0,295) Inflation Adjustments (7,326) (14,901) (12,882) (13,131) Required Employee Clothing and Tool Reimbursements (1,513) (1,572) (1,572) (1,575) MTA Real Estate Expenses (0,322) (0,358) (0,359) (0,361) Reimbursable Overhead - Labor 10,966 10,795 8,908 5,081 Pension (1,190) (1,990) (0,730) 0,360 Rescheduling of Reimbursable Activity (YTD April) (6,966) - - - Other Fringe Benefits - Revised Rate Projections (5,569) (2,455) (2,945) (3,152) Net Labor Settlement Agreements (2,955) (3,517) (4,450) (4,598) Non-Cash Liabilities 28,279 35,733 39,515 46,486 Other Net Expense Changes 3,339 5,159 3,647 2,910 Sub-Total Non-Reimbursable Expense Changes $2,827 $17,039 $21,336 $25,082 Total Non-Reimbursable Major Changes $31,940 $35,712 $37,457 $44,606 Reimbursable Major Changes Revenue Projections for 2025-2029 reflects the retiming of capital project activity levels 16,097 70,360 (46,533) 12,514 Sub-Total Reimbursable Revenue Changes 16,097 70,360 (46,533) 12,514 Expenses Projections for 2025-2029 reflects the retiming of capital project activity levels (16,097) (70,360) 46,533 (12,514) Sub-Total Reimbursable Expense Changes (16,097) (70,360) 46,533 (12,514) Total Reimbursable Major Changes $0.000 $0.000 ($0.000) $0.000 Total Accrual Changes $31,940 $35,712 $37,457 $44,606 Cash Adjustment Changes Operating Capital - Rescheduling of Projects 0,763 (13,512) 2,592 (0,663) Timing of RWA Payments (9,634) - - - Claims 0,504 - - - Timing of cash payments for various 2024 invoices (41,007) - - - Non-Cash Liabilities (28,279) (35,733) (39,515) (46,486) Other Adjustments (10,184) (6,283) (8,146) (4,007) Total Cash Adjustment Changes ($87,836) ($55,528) ($45,069) ($51,157) Net Surplus/(Deficit) Changes ($55,896) ($19,816) ($7,611) ($6,550) 2025 July Financial Plan - Net Operating Cash Surplus/(Deficit) ($976.024) ($1,078.769) ($1,098.710) ($1,162.925)
+```
+[p292_c0004] _V-27_
+
+## Page 293
+
+### [p293_c0001] MTA METRO-NORTH RAILROAD 2026 Preliminary Budget July Financial Plan 2026 - 2029 Ridership / (Utilization)
+### [p293_c0002] RIDERSHIP/UTILIZATION PROJECTIONS
+[p293_c0003] The July Plan reflects ridership actuals through May 2025 as well as revised ridership forecasts based on projections of regional economic changes.
+[p293_c0004] The July Plan forecasts 2025 ridership to be 72.0 million trips, which is 2.3 million higher than the Adopted Budget and 4.7 million higher than 2024 actuals.
+[p293_c0005] _V-128_
+
+## Page 294
+
+### [p294_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Ridership (Utilization) and Revenue (in millions)
+[p294_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 RIDERSHIP Harlem Line Ridership - Commutation 8.540 9.843 9.850 9.792 9.926 9.964 Harlem Line Ridership - Non-Commutation 11.901 12.194 12.223 12.223 12.258 12.311 Total Harlem Line 20.441 22.037 22.074 22.015 22.184 22.275 Hudson Line Ridership - Commutation 4.724 5.603 5.608 5.574 5.650 5.671 Hudson Line Ridership - Non-Commutation 9.055 9.021 9.048 9.048 9.073 9.112 Total Hudson Line 13.779 14.624 14.656 14.622 14.723 14.784 New Haven Line Ridership - Commutation 11.663 13.773 13.780 13.698 13.882 13.936 New Haven Line Ridership - Non-Commutation 20.411 20.463 20.489 20.489 20.529 20.617 Total New Haven Line 32.074 34.237 34.269 34.187 34.411 34.554 Penn Station Access Line Ridership – Commutation 0.000 0.000 0.000 0.000 0.150 0.600 Penn Station Access Line Ridership – Non-Commutation 0.000 0.000 0.000 0.000 0.279 1.115 Total Penn Station Access Line 0.000 0.000 0.000 0.000 0.429 1.715 Total Commutation Ridership 24.928 29.219 29.239 29.064 29.609 30.172 Total Non-Commutation Ridership 41.366 41.679 41.760 41.760 42.139 43.155 Total East of Hudson Ridership 66.294 70.898 71.000 70.824 71.747 73.327 West of Hudson Ridership 1.085 1.134 1.109 1.107 1.113 1.118 Total Ridership 67.379 72.032 72.108 71.931 72.860 74.445 FAREBOX REVENUE Harlem Line - Commutation Revenue 52.647 60.237 60.237 60.237 60.406 60.667 Harlem Line - Non-Commutation Revenue 114.546 115.168 115.124 115.124 115.448 115.946 Total Harlem Line Revenue $167.194 $175.405 $175.361 $175.361 $175.854 $176.613 Hudson Line - Commutation Revenue 35.069 41.261 41.261 41.261 41.377 41.555 Hudson Line - Non-Commutation Revenue 107.206 105.098 105.025 105.025 105.321 105.775 Total Hudson Line Revenue $142.275 $146.359 $146.286 $146.286 $146.698 $147.330 New Haven Line - Commutation Revenue 75.021 89.787 93.280 94.985 95.429 95.841 New Haven Line - Non-Commutation Revenue 230.953 232.423 242.608 247.789 249.000 250.074 Total New Haven Line Revenue $305.975 $322.211 $335.888 $342.773 $344.429 $345.914 Penn Station Access Line Ridership – Commutation 0.000 0.000 0.000 0.000 0.150 0.600 Penn Station Access Line Ridership – Non-Commutation 0.000 0.000 0.000 0.000 0.279 1.115 Total Penn Station Access Line $0.000 $0.000 $0.000 $0.000 0.429 1.715 Total Commutation Revenue $162.738 $191.285 $194.778 $196.482 $197.362 $198.663 Total Non-Commutation Revenue 452.706 452.690 462.758 467.938 470.047 472.909 Total East of Hudson Revenue $615.444 $643.975 $657.536 $664.420 $669.660 $680.575 West of Hudson Revenue $10.226 $11.754 $11.754 $11.754 $11.787 $11.838 Total Farebox Revenue $625.670 $655.729 $669.290 $676.174 $681.447 $692.413
+```
+[p294_c0003] Notes: West of Hudson total ridership is both Pascack Valley and Port Jervis lines.
+[p294_c0004] _V-129_
+
+## Page 295
+
+### [p295_c0001] MTA METRO-NORTH RAILROAD 2026 Preliminary Budget July Financial Plan 2026 - 2029 Positions Year-To-Year Summary of Changes
+### [p295_c0002] POSITION ASSUMPTIONS
+[p295_c0003] Positions are identified as of year-end (December 31st) for each year. They reflect an estimate of the total number of paid employees required to meet and achieve corporate goals and those in line with reimbursable activity. Positions incorporate seasonal needs and other fluctuations in staffing requirements for capital projects.
+### [p295_c0004] 2026
+[p295_c0005] The 2026 Preliminary Budget totals 6,981 positions, a projected increase of 86 from the 2025 Mid-Year Forecast driven by the implementation of PSA train service and the addition of 15 positions to support the Signal and Dispatch Certification compliance program. This includes a projected increase of 119 non-reimbursable positions and a decrease of 33 reimbursable positions.
+### [p295_c0006] 2027
+[p295_c0007] The July Financial Plan totals 7,054 positions, a projected increase of 73 for 2027. This increase is driven by the implementation of PSA train service. This includes a projected increase of 75 non-reimbursable positions and a decrease of two reimbursable positions.
+### [p295_c0008] 2028
+[p295_c0009] The July Financial Plan totals 7,132 positions, a projected increase of 78 positions for 2028. This increase is driven by the implementation of PSA train service. This includes a projected increase of 46 non-reimbursable positions and an increase of 32 reimbursable positions.
+### [p295_c0010] 2029
+[p295_c0011] The July Financial Plan totals 7,232 positions, a projected increase of 100 positions for 2029. This increase is primarily driven by a revised staffing plan. This includes a projected increase of 100 non-reimbursable positions with no change in reimbursable positions.
+[p295_c0012] _V-130_
+
+## Page 296
+
+### [p296_c0001] MTA METRO-NORTH RAILROAD 2026 Preliminary Budget July Financial Plan 2026 - 2029 Positions Plan-to-Plan Summary of Changes
+### [p296_c0002] POSITION ASSUMPTIONS
+[p296_c0003] Positions are identified as of year-end (December 31st) for each year and reflect an estimate of the total number of paid employees required to meet and achieve corporate goals and those in line with reimbursable activity. Positions incorporate seasonal needs and other fluctuations in staffing requirements for capital projects.
+### [p296_c0004] 2025
+[p296_c0005] Total Positions of 6,895 in the 2025 Mid-Year Forecast represent an increase of five positions from the 2025 Adopted Budget. This increase is driven by the transfer of three positions from C&D and two additional positions to support GCM trash collection. Non-reimbursable positions decreased by 10 and reimbursable positions increased by 15. Changes between non-reimbursable and reimbursable are related to lower capital project activity.
+### [p296_c0006] 2026
+[p296_c0007] The July Financial Plan in 2026 totals 6,981 positions, an increase of 20 positions from the February Financial Plan. This increase is driven by the addition of 15 positions to support the Signal and Dispatch Certification compliance program, the transfer of three positions from C&D and two additional positions to support GCM trash collection. In total, non-reimbursable positions increased by eight and reimbursable positions increased by 12.
+### [p296_c0008] 2027
+[p296_c0009] The July Financial Plan in 2027 totals 7,054 and reflects an increase of 20 positions from the February Financial Plan. This increase is driven by the addition of 15 positions to support the Signal and Dispatch Certification compliance program, the transfer of three positions from C&D and two additional positions to support GCM trash collection. Non-reimbursable positions increased by eight and reimbursable positions increased by 12.
+### [p296_c0010] 2028
+[p296_c0011] The July Financial Plan in 2028 totals 7,132, which reflects an increase of 20 positions from the February Financial Plan. This increase is driven by the addition of 15 positions to support the Signal and Dispatch Certification compliance program, the transfer of three positions from C&D and two additional positions to support GCM trash collection. Non-reimbursable positions increased by 14 and reimbursable positions increased by six.
+[p296_c0012] _V-131_
+
+## Page 297
+
+### [p297_c0001] MTA METRO-NORTH RAILROAD
+### [p297_c0002] July Financial Plan 2026 - 2029
+[p297_c0003] Favorable/(Unfavorable)
+### [p297_c0004] Total Position Changes at a Glance
+[p297_c0005]
+
+```text
+2025 2026 2027 2028 2025 February Plan - Total Positions 6,890 6,961 7,034 7,112 Total Plan-to-Plan Changes (5) (20) (20) (20) 2025 July Plan - Total Positions 6,895 6,981 7,054 7,132 Total Year-to-Year Changes, July Plan (86) (73) (78)
+```
+### [p297_c0006] Total Plan-to-Plan Changes by Reporting Category:
+[p297_c0007]
+
+```text
+Non-Reimbursable 10 (8) (8) (14) Reimbursable (15) (12) (12) (6) Total (5) (20) (20) (20) Full-Time (5) (20) (20) (20) Full-Time Equivalents 0 0 0 0 Total (5) (20) (20) (20) By Function Category - Administration 5 2 2 2 - Operations 3 1 1 1 - Maintenance (10) (20) (20) (20) - Engineering/Capital (3) (3) (3) (3) - Public Safety 0 0 0 0 Total (5) (20) (20) (20) By Occupational Group - Managers/Supervisors (9) (12) (12) (12) - Professional, Technical, Clerical 25 13 13 13 - Operational Hourlies (21) (21) (21) (21) Total (5) (20) (20) (20)
+```
+### [p297_c0008] Total Plan-to-Plan Changes by Major Category:
+[p297_c0009]
+
+```text
+MTA Operating Efficiencies 0 0 0 0 New Needs (2) (17) (17) (17) Change in Reimbursable Positions (15) (12) (12) (6) Re-estimates & All Other 12 9 9 3 Total (5) (20) (20) (20)
+```
+[p297_c0010] _V-132_
+
+## Page 298
+
+### [p298_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p298_c0002]
+
+```text
+FUNCTION/DEPARTMENT 2024 2025 2026 2027 2028 2029 Actual Mid-Year Forecast Preliminary Budget Administration President 4 13 13 13 13 13 Security 18 18 18 18 18 18 Safety 78 84 84 84 84 84 Training 93 93 96 96 96 96 Rolling Stock Programs 7 10 10 10 10 10 Ops Support and Org Resiliency 24 23 23 23 23 23 Communications 45 45 45 45 45 45 Labor Relations 12 11 11 11 11 11 Diversity 5 5 5 5 5 5 Legal 16 16 16 16 16 16 Procurement & Material Management 109 120 120 120 120 120 Public Safety & Security 10 11 11 11 11 11 Finance 69 72 72 72 72 72 People 40 40 40 40 40 40 Total Administration 530 561 564 564 564 564 Operations Operations Support 27 28 30 30 30 30 Performance Analysis 10 11 11 11 11 11 Service Planning 23 26 26 26 26 26 Enterprise Asset Management 17 21 21 21 21 21 Transportation 1,755 1,788 1,788 1,788 1,788 1,788 Stations 397 401 401 401 401 401 Penn Station Access 0 9 80 153 231 231 Total Operations 2,229 2,284 2,357 2,430 2,508 2,508 Maintenance Maintenance of Way 2,222 2,287 2,295 2,295 2,295 2,295 Maintenance of Equipment 1,596 1,654 1,656 1,656 1,656 1,656 Metro-North West 28 31 31 31 31 31 Corporate 0 0 0 0 0 100 Total Maintenance 3,846 3,972 3,982 3,982 3,982 4,082 Engineering/Capital Construction & Development 70 78 78 78 78 78 Total Engineering/Capital 70 78 78 78 78 78 Total Positions 6,674 6,895 6,981 7,054 7,132 7,232 Non-Reimbursable 6,196 6,152 6,272 6,347 6,393 6,493 Reimbursable 479 743 709 707 739 739 Total Full-Time 6,673 6,894 6,980 7,053 7,131 7,231 Total Full-Time-Equivalents 1 1 1 1 1 1
+```
+[p298_c0003] _V-133_
+
+## Page 299
+
+### [p299_c0001] MTA METRO-NORTH RAILROAD July Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p299_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual Mid-Year Preliminary 2027 2028 2029 2024 Forecast Budget 2024 2025 2026 Administration Managers/Supervisors 171 183 184 184 184 184 Professional/Technical/Clerical 358 378 380 380 380 380 Operational Hourlies 0 0 0 0 0 0 Total Administration Headcount 530 561 564 564 564 564 Operations Managers/Supervisors 303 306 317 328 335 335 Professional/Technical/Clerical 248 261 263 274 291 291 Operational Hourlies 1,677 1,717 1,777 1,828 1,882 1,882 Total Operations Headcount 2,229 2,284 2,357 2,430 2,508 2,508 Maintenance Managers/Supervisors 726 725 725 725 725 725 Professional/Technical/Clerical 418 441 451 451 451 451 Operational Hourlies 2,702 2,806 2,806 2,806 2,806 2,906 Total Maintenance Headcount 3,846 3,972 3,982 3,982 3,982 4,082 Engineering / Capital Managers/Supervisors 39 46 46 46 46 46 Professional/Technical/Clerical 31 32 32 32 32 32 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 70 78 78 78 78 78 Public Safety Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 Total Positions Managers/Supervisors 1,240 1,260 1,272 1,283 1,290 1,290 Professional/Technical/ Clerical 1,055 1,112 1,126 1,137 1,154 1,154 Operational Hourlies 4,379 4,523 4,583 4,634 4,688 4,788 Total Positions 6,674 6,895 6,981 7,054 7,132 7,232
+```
+[p299_c0003] _V-134_
+
+## Page 300
+
+### [p300_c0001] MTA Headquarters and Inspector General
+
+## Page 301
+
+### [p301_c0001] MTA HEADQUARTERS 2026 Preliminary Budget July Financial Plan 2026 – 2029
+### [p301_c0002] FINANCIAL OVERVIEW
+[p301_c0003] MTA Headquarters supports the overall MTA mission of serving its customers and the people of New York by providing policy, financial guidance, administrative services, and oversight to the Operating Agencies. MTA Security and the MTA Police Department (MTAPD) maintain a safe and secure system for customers, employees and those doing business with the MTA, while providing outreach services and aiding individuals who are sheltering within the MTA system.
+### [p301_c0004] MTA Police / Bridges & Tunnels Collaboration Initiative
+[p301_c0005] As part of the MTA's ongoing commitment to operational efficiency and long-term financial sustainability, the Authority is implementing a phased supplementation of public safety responsibilities at MTA Bridges and Tunnels facilities with the MTA Police Department (MTAPD). This began in early 2025 with the Bronx-Whitestone and Throgs Neck bridges and will continue as needs dictate.
+[p301_c0006] This is expected to capture economies of scale and generate operational efficiencies while maintaining high safety standards. The initiative aligns with the MTA's broader transformation efforts and reflects a financially responsible approach to workforce planning and customer expectations.
+### [p301_c0007] Financial Highlights
+- [p301_c0008] • Non-Reimbursable Revenue: The Plan includes a minor impact in 2025 from a Tropical Storm Ida (2021) claim recovery while all other years remain consistent with the previous plan. • Non-Reimbursable Expenses: The Plan reflects $241.3 million in higher expenses over the February Plan period through 2028. The largest impacts include $84.7 million in new needs, primarily driven by the MTAPD and Bridges & Tunnels (B&T) collaboration initiative, as well as the Enterprise Asset Management (EAM) program which covers mobile device procurement, maintenance, and software. Additionally, the retiming of various departmental initiatives into 2025 contributes to the overall increase. These increases are partially offset by the favorable impact of the shift of the Outer Borough Transportation Account (OBTA) funding for B&T bridge rebates, included as an expense in the February Plan, from MTAHQ to B&T. These funds will no longer pass through MTAHQ but will be directly funded from OBTA to B&T. • Headcount: The Plan outlines a strategic expansion of the baseline authorized headcount, beginning with the phased addition of 47 new positions in 2025 through the MTAPD and B&T collaboration initiative, culminating in a total of 240 by 2029. It also incorporates the interagency transfer of 14 roles related to advertising and promotions and the Rolling Stock Program. Furthermore, three temporary positions were added to the
+[p301_c0009] _V-135_
+
+## Page 302
+
+[p302_c0001] Strategic Initiatives group through 2027, and one new role was funded via the People department's non-labor budget.
+### [p302_c0002] Expenses
+[p302_c0003] This Plan continues to support high-priority initiatives that began in previous plans that are aimed at increasing efficiency, safety, communication, and the customer experience throughout the system including:
+- [p302_c0004] • Real Estate state of good repair project work. • Information Technology (IT) initiatives and upgrades to support business and Agency needs.
+### [p302_c0005] 2025 MID-YEAR FORECAST
+[p302_c0006] The Mid-Year Forecast includes non-reimbursable operating revenues of $48.7 million and expenses before depreciation and non-cash items of $1,230.6 million, consisting of $666.0 million in labor expenses and $564.6 million in non-labor expenses. Depreciation and GASB adjustments total $336.2 million. Including these non-cash items, the resulting baseline deficit is $1,518.1 million.
+[p302_c0007] Reimbursements are projected to be $172.2 million, with reimbursable labor expenses of $68.0 million and non-labor expenses of $104.2 million. Favorable cash adjustments before depreciation and GASB adjustments are $25.2 million, primarily reflecting impacts of prior year spending and project timing and prepayments for the MTA Defined Benefit Plan for MTAPD. Compared to the Adopted budget, baseline positions are projected to increase by 66 positions.
+[p302_c0008] Major operating changes are primarily attributed to the retiming of various departmental initiatives into 2025 and the MTAPD and B&T collaboration initiative. These increases were partially offset by the funding shift for the B&T toll rebate programs to the OBTA.
+[p302_c0009] Major operating cash changes include:
+### [p302_c0010] New Initiatives:
+- [p302_c0011] • MTAPD and B&T collaboration initiative with 47 additional positions. Labor, academy and testing costs and equipment $6.1 million. • Enterprise Asset Management (EAM) mobile device procurement, maintenance and software costs to manage infrastructure and assets $0.7 million. • The addition of three positions to continue to deliver strategic initiatives and cost savings projects to support MTA fiscal responsibility $0.3 million. • Addition of one new position to manage the state of good repair efforts to maintain safe and reliable transportation services. As part of the capital plan, the MTA is retiring commuter rail and subway cars that have exceeded useful life and are being replaced $0.3 million.
+[p302_c0012] _V-136_
+
+## Page 303
+
+### [p303_c0001] 2026 PRELIMINARY BUDGET
+[p303_c0002] The 2026 Preliminary Budget includes non-reimbursable operating revenues of $49.0 million and expenses before non-cash liabilities of $1,209.2 million, consisting of $694.9 million in labor expenses and $514.3 million in non-labor expenses. Depreciation and GASB adjustments total $293.0 million. Including these non-cash items, the resulting baseline deficit is $1,453.2 million.
+[p303_c0003] Reimbursements are projected to be $160.5 million, with labor expenses of $71.9 million and non-labor expenses of $88.6 million. Unfavorable cash adjustments before depreciation and GASB adjustments are $12.8 million, primarily reflecting operating capital timing offset by labor and benefits in conjunction with professional services. The resulting baseline cash deficit is projected to be $1,173.0 million, $73.2 million unfavorable to the February Plan of $1,099.8 million.
+[p303_c0004] Major operating cash changes include:
+### [p303_c0005] New Initiatives:
+- [p303_c0006] • MTAPD and B&T collaboration initiative with 89 additional positions. Labor, academy and testing costs and equipment $13.9 million. • Enterprise Asset Management (EAM) mobile device procurement, maintenance, and software costs to manage infrastructure and assets $3.6 million. • The addition of three positions to continue to deliver strategic initiatives and cost savings projects to support MTA fiscal responsibility $0.5 million. • Addition of one new position to manage the state of good repair efforts to maintain safe and reliable transportation services. As part of the capital plan, the MTA is retiring commuter rail and subway cars that have exceeded useful life and are being replaced $0.3 million.
+### [p303_c0007] 2027 - 2029 PROJECTIONS
+[p303_c0008] The major drivers of the unfavorable change in expenses in the July Plan are:
+- [p303_c0009] • MTAPD and B&T collaboration initiative with 121 additional heads in 2027 and 240 additional heads overall by 2029. Total costs for labor, academy and testing costs and new hire equipment. • Enterprise Asset Management (EAM) mobile device procurement, maintenance, and software costs to manage infrastructure and assets.
+[p303_c0010] The 2027 forecast includes non-reimbursable operating revenues of $50.7 million and expenses before depreciation and GASB adjustments of $1,241.2 million, consisting of $719.2 million in labor expenses and $521.9 million in non-labor expenses. Depreciation and GASB adjustments total $308.1 million. Reimbursements are projected to be $160.3 million, with labor expenses of $73.5 million and non-labor expenses of $86.8 million. Favorable cash adjustments before non-cash liabilities are $18.3 million, due to payroll and benefits along with professional services and maintenance and other operating contracts offset by operating capital re-timing. In 2027, baseline positions increase by 20 from 2026 to a total of 3,524 due to the MTAPD and B&T collaboration initiative, partially offset by the elimination of the temporary surge of heads supporting strategic initiatives.
+[p303_c0011] _V-137_
+
+## Page 304
+
+[p304_c0001] The forecast for 2028 includes non-reimbursable operating revenues of $50.8 million and expenses before depreciation and GASB adjustments of $1,271.2 million, consisting of $744.8 million in labor expenses and $526.3 million in non-labor expenses. Depreciation and GASB adjustments total $288.1 million. Reimbursements are projected to be $164.4 million, with labor expenses of $75.1 million and non-labor expenses of $89.3 million. Favorable cash adjustments before non-cash liabilities are $34.0 million, primarily due to payroll and benefits, professional services and maintenance and other operating contracts offset by the timing of operating capital expenditures. Baseline positions increase by 67, to 3,591 from 2027 due to the phased addition of new positions through the MTAPD and B&T collaboration initiative ever slightly offset by elimination of heads from the temporary surge of positions supporting strategic initiatives.
+[p304_c0002] The 2029 projection includes non-reimbursable operating revenues of $50.8 million and expenses before depreciation and GASB adjustments of $1,281.5 million, consisting of $772.3 million in labor expenses and $509.1 million in non-labor expenses. Depreciation and GASB adjustments total $295.6 million. Reimbursements are projected at $166.2 million, with labor expenses of $76.8 million and non-labor expenses of $89.4 million. Favorable cash adjustments, excluding non-cash liabilities are $37.4 million, primarily due to payroll and benefits, professional services and maintenance and other operating contracts partially offset by the timing of operating capital expenditures. Baseline positions in 2029 increased 49 from 2028 due to the phased addition of new positions through the MTAPD and B&T collaboration initiative.
+[p304_c0003] _V-138_
+
+## Page 305
+
+### [p305_c0001] MTA HEADQUARTERS July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p305_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue: Rental Income 43.643 43.138 43.138 44.838 44.938 44.938 Advertising 0.013 0.000 0.000 0.000 0.000 0.000 Other 11.768 5.551 5.897 5.897 5.897 5.897 Other Operating Revenue 55.423 48.689 49.035 50.735 50.835 50.835 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $55.423 $48.689 $49.035 $50.735 $50.835 $50.835 Operating Expense Labor: Payroll $431.877 $432.430 $445.273 $457.003 $469.334 $483.123 Overtime 33.928 18.598 16.313 16.951 17.698 18.198 Health and Welfare 85.918 93.142 99.616 106.555 114.316 122.706 OPEB Current Payments 36.835 36.835 38.934 41.154 43.499 45.979 Pension 86.615 102.036 112.448 114.947 117.094 118.987 Other Fringe Benefits 41.918 44.547 45.971 47.586 49.243 51.133 Reimbursable Overhead (78.898) (61.588) (63.680) (65.012) (66.372) (67.794) Total Labor Expenses $638.193 $666.000 $694.876 $719.184 $744.813 $772.333 Non-Labor: Electric Power $6.643 $8.886 $10.473 $11.000 $10.515 $10.102 Fuel 1.435 1.767 1.840 1.703 1.621 1.741 Insurance 2.711 5.315 5.675 5.938 6.189 6.365 Claims 2.369 2.592 2.592 2.592 2.592 2.592 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 110.513 162.156 167.170 169.743 170.266 170.989 Professional Services Contracts 248.243 356.080 302.168 306.356 305.598 287.355 Materials and Supplies 0.190 4.344 3.917 3.931 3.942 3.954 Other Business Expenses MTA Internal Subsidy 12.015 13.433 13.465 13.470 13.434 13.384 Other 11.358 10.016 7.022 7.151 12.192 12.649 Other Business Expenses 23.373 23.449 20.487 20.621 25.625 26.033 Total Non-Labor Expenses $395.477 $564.590 $514.321 $521.884 $526.348 $509.131 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,033.670 $1,230.590 $1,209.198 $1,241.068 $1,271.161 $1,281.464 Depreciation $112.431 $80.500 $46.213 $46.213 $46.213 $46.213 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 13.186 19.979 4.432 13.396 (12.883) (12.076) GASB 75 OPEB Expense Adjustment 214.814 220.892 227.498 233.646 239.859 246.636 GASB 87 Lease Adjustment (2.083) (1.981) (1.981) (1.981) (1.981) (1.981) GASB 96 SBITA Adjustment 9.365 16.847 16.847 16.847 16.847 16.847 Total Non-Cash Liability Adjustments $347.713 $336.237 $293.009 $308.121 $288.055 $295.639 Total Expenses $1,381.382 $1,566.827 $1,502.207 $1,549.189 $1,559.216 $1,577.103 Net Surplus/(Deficit) ($1,325.960) ($1,518.137) ($1,453.171) ($1,498.453) ($1,508.380) ($1,526.268)
+```
+[p305_c0003] _V-139_
+
+## Page 306
+
+### [p306_c0001] MTA HEADQUARTERS July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p306_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 181.343 172.199 160.517 160.258 164.401 166.195 Total Revenues $181.343 $172.199 $160.517 $160.258 $164.401 $166.195 Operating Expense Labor: Payroll $4.002 $4.449 $5.529 $5.639 $5.726 $5.833 Overtime 2.893 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.794 1.008 1.336 1.429 1.523 1.630 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.466 0.524 0.762 0.791 0.815 0.842 Other Fringe Benefits 0.348 0.463 0.599 0.619 0.634 0.653 Reimbursable Overhead 78.898 61.588 63.680 65.012 66.372 67.794 Total Labor Expenses $87.401 $68.031 $71.906 $73.490 $75.071 $76.751 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.001 0.001 0.001 0.001 0.001 Professional Services Contracts 93.921 104.105 88.539 86.694 89.257 89.369 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses MTA Internal Subsidy 0.000 0.000 0.000 0.000 0.000 0.000 Other 0.022 0.062 0.071 0.072 0.073 0.074 Other Business Expenses 0.022 0.062 0.071 0.072 0.073 0.074 Total Non-Labor Expenses $93.942 $104.168 $88.611 $86.767 $89.331 $89.444 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $181.343 $172.199 $160.517 $160.258 $164.401 $166.195 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p306_c0003] _V-140_
+
+## Page 307
+
+### [p307_c0001] MTA HEADQUARTERS July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p307_c0002]
+
+```text
+Actual Mid-Year Preliminary 2024 Forecast Budget 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue: Rental Income 43.643 43.138 43.138 44.838 44.938 44.938 Advertising 0.013 0.000 0.000 0.000 0.000 0.000 Other 11.768 5.551 5.897 5.897 5.897 5.897 Other Operating Revenue 55.423 48.689 49.035 50.735 50.835 50.835 Capital and Other Reimbursements 181.343 172.199 160.517 160.258 164.401 166.195 Total Revenues $236.766 $220.888 $209.552 $210.993 $215.237 $217.031 Operating Expense Labor: Payroll $435.878 $436.879 $450.801 $462.642 $475.060 $488.956 Overtime 36.822 18.598 16.313 16.951 17.698 18.198 Health and Welfare 86.712 94.151 100.952 107.984 115.839 124.335 OPEB Current Payments 36.835 36.835 38.934 41.154 43.499 45.979 Pension 87.081 102.559 113.210 115.738 117.909 119.830 Other Fringe Benefits 42.266 45.009 46.571 48.206 49.878 51.786 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $725.594 $734.031 $766.782 $792.674 $819.884 $849.084 Non-Labor: Electric Power $6.643 $8.886 $10.473 $11.000 $10.515 $10.102 Fuel 1.435 1.767 1.840 1.703 1.621 1.741 Insurance 2.711 5.315 5.675 5.938 6.189 6.365 Claims 2.369 2.592 2.592 2.592 2.592 2.592 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 110.513 162.157 167.171 169.744 170.267 170.990 Professional Services Contracts 342.163 460.186 390.708 393.051 394.854 376.724 Materials and Supplies 0.190 4.344 3.917 3.931 3.942 3.954 Other Business Expenses MTA Internal Subsidy 12.015 13.433 13.465 13.470 13.434 13.384 Other 11.379 10.078 7.092 7.223 12.265 12.723 Other Business Expenses 23.394 23.511 20.557 20.693 25.698 26.107 Total Non-Labor Expenses $489.419 $668.758 $602.932 $608.651 $615.678 $598.575 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,215.013 $1,402.789 $1,369.714 $1,401.325 $1,435.562 $1,447.659 Depreciation $112.431 $80.500 $46.213 $46.213 $46.213 $46.213 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 13.186 19.979 4.432 13.396 (12.883) (12.076) GASB 75 OPEB Expense Adjustment 214.814 220.892 227.498 233.646 239.859 246.636 GASB 87 Lease Adjustment (2.083) (1.981) (1.981) (1.981) (1.981) (1.981) GASB 96 SBITA Adjustment 9.365 16.847 16.847 16.847 16.847 16.847 Total Non-Cash Liability Adjustments $347.713 $336.237 $293.009 $308.121 $288.055 $295.639 Total Expenses $1,562.726 $1,739.026 $1,662.723 $1,709.446 $1,723.617 $1,743.298 Net Surplus/(Deficit) ($1,325.960) ($1,518.137) ($1,453.171) ($1,498.453) ($1,508.380) ($1,526.268)
+```
+[p307_c0003] _V-141_
+
+## Page 308
+
+### [p308_c0001] MTA HEADQUARTERS July Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p308_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue: Rental Income 40.168 43.138 43.138 44.838 44.938 44.938 Advertising 0.013 0.000 0.000 0.000 0.000 0.000 Other Revenue 11.696 5.551 5.897 5.897 5.897 5.897 Other Operating Revenue 51.876 48.689 49.035 50.735 50.835 50.835 Capital and Other Reimbursements 181.343 172.199 160.517 160.258 164.401 166.195 Total Receipts $233.220 $220.888 $209.552 $210.993 $215.237 $217.031 Expenditures Labor: Payroll $419.229 $399.245 $433.583 $444.971 $456.915 $470.280 Overtime 36.515 18.598 16.313 16.951 17.698 18.198 Health and Welfare 88.452 82.958 88.951 95.146 102.068 109.554 OPEB Current Payments 32.114 36.835 38.934 41.154 43.499 45.979 Pension 98.711 47.224 109.807 111.013 111.429 113.346 Other Fringe Benefits 39.841 42.427 43.899 45.440 47.016 48.814 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $714.861 $627.287 $731.486 $754.675 $778.626 $806.173 Non-Labor: Electric Power $6.262 $8.353 $9.844 $10.340 $9.885 $9.496 Fuel 1.385 1.707 1.729 1.601 1.524 1.637 Insurance 0.768 5.283 5.675 5.938 6.189 6.365 Claims 1.227 2.592 2.592 2.592 2.592 2.592 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 103.871 160.349 167.171 161.136 161.675 162.404 Professional Services Contracts 339.113 443.763 377.812 389.739 391.534 373.567 Materials and Supplies 0.001 4.344 3.917 3.931 3.942 3.954 Other Business Expenses: MTA Internal Subsidy 8.515 13.433 13.465 13.470 13.434 13.384 Other 11.399 8.790 6.049 7.223 10.459 10.871 Other Business Expenses 19.914 22.223 19.514 20.693 23.892 24.254 Total Non-Labor Expenditures $472.542 $648.614 $588.255 $595.969 $601.231 $584.268 Other Expenditure Adjustments: Operating Capital 87.266 101.726 62.820 32.377 21.742 19.774 Total Other Expense Adjustments $87.266 $101.726 $62.820 $32.377 $21.742 $19.774 Total Expenditures $1,274.669 $1,377.627 $1,382.561 $1,383.021 $1,401.599 $1,410.215 Net Cash Balance ($1,041.450) ($1,156.739) ($1,173.009) ($1,172.028) ($1,186.363) ($1,193.184)
+```
+[p308_c0003] _V-142_
+
+## Page 309
+
+### [p309_c0001] MTA HEADQUARTERS July Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p309_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Rent and Utilities (3.475) 0.000 0.000 0.000 0.000 0.000 Advertising 0.000 0.000 0.000 0.000 0.000 0.000 Other Revenue (0.072) 0.000 0.000 0.000 0.000 0.000 Other Operating Revenue (3.547) 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts ($3.547) $0.000 $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll $16.649 $37.633 $17.219 $17.671 $18.145 $18.676 Overtime 0.307 0.000 0.000 0.000 0.000 0.000 Health and Welfare (1.740) 11.193 12.001 12.837 13.771 14.781 OPEB Current Payments 4.721 0.000 0.000 0.000 0.000 0.000 Pension (11.630) 55.336 3.404 4.725 6.480 6.483 Other Fringe Benefits 2.425 2.582 2.672 2.766 2.862 2.971 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $10.732 $106.744 $35.296 $37.999 $41.258 $42.912 Non-Labor: Electric Power $0.381 $0.533 0.628 $0.660 $0.631 $0.606 Fuel 0.050 0.061 0.111 0.102 0.097 0.105 Insurance 1.943 0.032 0.000 0.000 0.000 0.000 Claims 1.142 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 6.642 1.808 0.000 8.608 8.592 8.586 Professional Services Contracts 3.051 16.422 12.896 3.312 3.321 3.157 Materials and Supplies 0.189 0.000 0.000 0.000 0.000 0.000 Other Business Expenses MTA Internal Subsidy 3.500 0.000 0.000 0.000 0.000 0.000 Other Business Expenses (0.020) 1.287 1.043 0.000 1.806 1.853 Total Other Business Expenses 3.480 1.287 1.043 0.000 1.806 1.853 Total Non-Labor Expenditures $16.877 $20.143 $14.678 $12.683 $14.447 $14.307 Other Expenditure Adjustments: Operating Capital (87.266) (101.726) (62.820) (32.377) (21.742) (19.774) Total Other Expenditure Adjustments ($87.266) ($101.726) ($62.820) ($32.377) ($21.742) ($19.774) Total Expenditures ($59.656) $25.162 ($12.847) $18.305 $33.963 $37.444 Total Cash Conversion Adjustments before Depreciation ($63.203) $25.162 ($12.847) $18.305 $33.963 $37.444 Depreciation $112.431 $80.500 $46.213 $46.213 $46.213 $46.213 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 13.186 19.979 4.432 13.396 (12.883) (12.076) GASB 75 OPEB Expense Adjustment 214.814 220.892 227.498 233.646 239.859 246.636 GASB 87 Lease Adjustment (2.083) (1.981) (1.981) (1.981) (1.981) (1.981) GASB 96 SBITA Adjustment 9.365 16.847 16.847 16.847 16.847 16.847 Total Non-Cash Liability Adjustments $347.713 $336.237 $293.009 $308.121 $288.055 $295.639 Total Cash Conversion Adjustments $284.510 $361.398 $280.162 $326.426 $322.018 $333.083
+```
+[p309_c0003] _V-143_
+
+## Page 310
+
+### [p310_c0001] MTA HEADQUARTERS 2026 Preliminary Budget July Financial Plan 2026 - 2029 Year-to-Year Changes by Category - Baseline
+### [p310_c0002] REVENUE
+### [p310_c0003] Rental, Other Income and Reimbursements
+- [p310_c0004] • Other Operating Revenue includes a modest benefit in 2025 from a Tropical Storm Ida insurance recovery. In 2026, cash-back incentives from the use of procurement cards for vendor payments are reflected, as the program expands to include additional vendors. Rental income from the Times Square / Grand Central Shuttle station complex is projected to begin in early 2027 with new tenancies, generating $1.7 million, followed by a slight increase in 2028. Other reimbursements reflect updated cost recoveries for MTA HQ from other MTA agencies, along with the rescheduling of certain projects into 2025.
+### [p310_c0005] EXPENSES
+### [p310_c0006] Payroll
+- [p310_c0007] • Payroll increases year to year impacted by the phased addition of 47 new positions in 2025 through the MTAPD and B&T collaboration initiative – bringing the total to 240 by 2029. • Payroll expenses through 2029 reflect non-represented employee salaries increasing 2 percent annually. • Represented employee pay assumes pattern settlements, followed by annual 2 percent increases.
+### [p310_c0008] Overtime
+- [p310_c0009] • Overtime expenses are primarily related to MTAPD operations (approximately 80%), with the remainder largely attributable to MTA IT operations. With the new in-house training facility in Long Island City, MTAPD anticipates overtime expense savings from vacancy coverage needs due to the new training location. • Overtime expenses have been added to this plan due to the MTAPD and B&T collaboration initiative.
+### [p310_c0010] Health and Welfare
+- [p310_c0011] • Health and Welfare medical insurance for 2025 remains flat compared to 2024. Annual increases for the remainder of the plan are 5.6% for individuals and 5.7% for family coverage. • Health and Welfare rates also reflect changes in the level of budgeted personnel.
+### [p310_c0012] OPEB Current Payment
+- [p310_c0013] • Year-to-year increases are based on projected medical insurance coverage rates and the number eligible for benefits.
+### [p310_c0014] Pensions
+- [p310_c0015] • Pension costs in 2025 are based on actuarial assumptions for the various pension plans covering MTA HQ employees.
+[p310_c0016] _V-144_
+
+## Page 311
+
+- [p311_c0001] • GASB 68 Pension Expense adjustments are reflected separately and represent the difference between the actuarially required contribution and the total pension liability.
+### [p311_c0002] Other Fringe Benefits
+- [p311_c0003] • Projections are consistent with payroll rate increase assumptions and reflect contributions to Social Security or Railroad Retirement based on individual employees. • Assumptions in the staffing of authorized positions also drive changes in all years.
+### [p311_c0004] Electric Power and Fuel
+- [p311_c0005] • Revisions are based on updated forecasts of electric power rates and fuel prices.
+### [p311_c0006] Insurance and Claims
+- [p311_c0007] • Reflects the latest premium projections, policy renewals, and Force Account Insurance estimates. • Claims reflect 2025 actuals through April, anticipated settlements and payouts of claims, and inflationary assumptions.
+### [p311_c0008] Maintenance and Other Operating Contracts
+- [p311_c0009] • Maintenance expenses in 2025 reflect additional budget for tenant improvements for certain properties, the July Plan approved new needs and re-estimates, and internal budget transfers. • Expenses for 2026 through 2029 are driven by inflationary growth on baseline expenses with adjustments for annual technology maintenance needs.
+### [p311_c0010] Professional Service Contracts
+- [p311_c0011] • 2025 projections reflect 2024 year-end timing impacts, and the July Plan approved new needs and re-estimates, including transfers from other accounts. Most other baseline expenses reflect inflationary impacts, with adjustments for programmatic needs.
+### [p311_c0012] Materials and Supplies
+- [p311_c0013] • Baseline expenses for 2025 through 2029 reflect inflationary impacts.
+### [p311_c0014] Other Business Expenses
+- [p311_c0015] • Timing of 2024 expense impacts. • Baseline expenses for 2025 through 2029 reflect MTA HQ's share of Payroll Mobility Taxes and other costs are inflated by CPI-U.
+### [p311_c0016] MTA Internal Subsidy
+- [p311_c0017] • Projections reflect MTA contributions to fund toll rebate programs for the Cross Bay Bridge and the Verrazzano-Narrows Bridge.
+### [p311_c0018] Other Expenditure Adjustments:
+### [p311_c0019] Capital Expenditures
+- [p311_c0020] • Capital expenditures from 2025 through 2029 fluctuate due to the revised scheduling of baseline projects and new projects to support technology, safety, and security.
+[p311_c0021] _V-145_
+
+## Page 312
+
+### [p312_c0001] MTA HEADQUARTERS July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p312_c0002]
+
+```text
+Mid-Year Forecast Preliminary Budget Change Change Change Change Change 2025 2026 2025 - 2026 2027 2026 - 2027 2028 2027 - 2028 2029 2028 - 2029 Non-Reimbursable Operating Revenues Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Rental Income 43.138 43.138 0.000 44.838 1.700 44.938 0.100 44.938 0.000 Advertising 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other 5.551 5.897 0.346 5.897 0.000 5.897 0.000 5.897 0.000 Other Operating Revenue 48.689 49.035 0.346 50.735 1.700 50.835 0.100 50.835 0.000 Total Revenues $48.689 $49.035 $0.346 $50.735 $1.700 $50.835 $0.100 $50.835 $0.000 Operating Expenses Labor: Payroll $432.430 $445.273 ($12.843) $457.003 ($11.731) $469.334 ($12.331) $483.123 ($13.789) Overtime 18.598 16.313 2.284 16.951 (0.638) 17.698 (0.747) 18.198 (0.500) Health and Welfare 93.142 99.616 (6.473) 106.555 (6.939) 114.316 (7.761) 122.706 (8.389) OPEB Current Payments 36.835 38.934 (2.100) 41.154 (2.219) 43.499 (2.346) 45.979 (2.479) Pension 102.036 112.448 (10.412) 114.947 (2.498) 117.094 (2.147) 118.987 (1.894) Other Fringe Benefits 44.547 45.971 (1.424) 47.586 (1.615) 49.243 (1.657) 51.133 (1.889) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (61.588) (63.680) 2.092 (65.012) 1.333 (66.372) 1.360 (67.794) 1.422 Total Labor Expenses $666.000 $694.876 ($28.876) $719.184 ($24.308) $744.813 ($25.630) $772.333 ($27.519) Non-Labor: Electric Power $8.886 $10.473 ($1.586) $11.000 ($0.528) $10.515 $0.485 $10.102 $0.414 Fuel 1.767 1.840 (0.073) 1.703 0.137 1.621 0.082 1.741 (0.120) Insurance 5.315 5.675 (0.360) 5.938 (0.263) 6.189 (0.251) 6.365 (0.176) Claims 2.592 2.592 0.000 2.592 0.000 2.592 0.000 2.592 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 162.156 167.170 (5.014) 169.743 (2.573) 170.266 (0.523) 170.989 (0.723) Professional Services Contracts 356.080 302.168 53.912 306.356 (4.188) 305.598 0.759 287.355 18.243 Materials and Supplies 4.344 3.917 0.428 3.931 (0.014) 3.942 (0.011) 3.954 (0.013) Other Business Expenses 23.449 20.487 2.962 20.621 (0.134) 25.625 (5.005) 26.033 (0.408) Total Non-Labor Expenses $564.590 $514.321 $50.269 $521.884 ($7.563) $526.348 ($4.464) $509.131 $17.216 Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,230.590 $1,209.198 $21.392 $1,241.068 ($31.870) $1,271.161 ($30.093) $1,281.464 ($10.303) Depreciation $80.500 $46.213 $34.287 $46.213 $0.000 $46.213 $0.000 $46.213 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 19.979 4.432 15.547 13.396 (8.964) (12.883) 26.279 (12.076) (0.808) GASB 75 OPEB Expense Adjustment 220.892 227.498 (6.606) 233.646 (6.148) 239.859 (6.213) 246.636 (6.776) GASB 87 Lease Adjustment (1.981) (1.981) 0.000 (1.981) 0.000 (1.981) 0.000 (1.981) 0.000 GASB 96 SBITA Adjustment 16.847 16.847 0.000 16.847 0.000 16.847 0.000 16.847 0.000 Total Non-Cash Liability Adjustments $336.237 $293.009 $43.228 $308.121 ($5.112) $288.055 $20.066 $295.639 ($7.584) Total Expenses After Depreciation and GASB Adjs. $1,566.827 $1,502.207 $64.620 $1,549.189 ($46.982) $1,559.216 ($10.027) $1,577.103 ($17.887) Net Surplus/(Deficit) ($1,518.137) ($1,453.171) $64.966 ($1,498.453) ($45.282) ($1,508.380) ($9.927) ($1,526.268) ($17.887)
+```
+[p312_c0003] _V-146_
+
+## Page 313
+
+### [p313_c0001] MTA HEADQUARTERS July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p313_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Reimbursable Operating Revenues Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Rental Income 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Advertising 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 172.199 160.517 (11.682) 160.258 (0.259) 164.401 4.144 166.195 1.794 Total Revenues $172.199 $160.517 ($11.682) $160.258 ($0.259) $164.401 $4.144 $166.195 $1.794 Operating Expenses Labor: Payroll $4.449 $5.529 ($1.080) $5.639 ($0.110) $5.726 ($0.087) $5.833 ($0.107) Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 1.008 1.336 (0.328) 1.429 (0.093) 1.523 (0.094) 1.630 (0.106) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.524 0.762 (0.238) 0.791 (0.029) 0.815 (0.024) 0.842 (0.027) Other Fringe Benefits 0.463 0.599 (0.137) 0.619 (0.020) 0.634 (0.015) 0.653 (0.019) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 61.588 63.680 (2.092) 65.012 (1.333) 66.372 (1.360) 67.794 (1.422) Total Labor Expenses $68.031 $71.906 ($3.875) $73.490 ($1.584) $75.071 ($1.580) $76.751 ($1.681) Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.001 0.001 0.000 0.001 0.000 0.001 0.000 0.001 0.000 Professional Services Contracts 104.105 88.539 15.566 86.694 1.845 89.257 (2.562) 89.369 (0.112) Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.062 0.071 (0.009) 0.072 (0.001) 0.073 (0.001) 0.074 (0.001) Total Non-Labor Expenses $104.168 $88.611 $15.557 $86.767 $1.844 $89.331 ($2.563) $89.444 ($0.113) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $172.199 $160.517 $11.682 $160.258 $0.259 $164.401 ($4.144) $166.195 ($1.794) Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p313_c0003] _V-147_
+
+## Page 314
+
+### [p314_c0001] MTA HEADQUARTERS July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p314_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Non-Reimbursable and Reimbursable Operating Revenues Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Rental Income 43.138 43.138 0.000 44.838 1.700 44.938 0.100 44.938 0.000 Advertising 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other 5.551 5.897 0.346 5.897 0.000 5.897 0.000 5.897 0.000 Other Operating Revenue 48.689 49.035 0.346 50.735 1.700 50.835 0.100 50.835 0.000 Capital and Other Reimbursements 172.199 160.517 (11.682) 160.258 (0.259) 164.401 4.144 166.195 1.794 Total Revenues $220.888 $209.552 ($11.336) $210.993 $1.441 $215.237 $4.244 $217.031 $1.794 Operating Expenses Labor: Payroll $436.879 $450.801 ($13.923) $462.642 ($11.841) $475.060 ($12.418) $488.956 ($13.897) Overtime 18.598 16.313 2.284 16.951 (0.638) 17.698 (0.747) 18.198 (0.500) Health and Welfare 94.151 100.952 (6.801) 107.984 (7.032) 115.839 (7.856) 124.335 (8.496) OPEB Current Payments 36.835 38.934 (2.100) 41.154 (2.219) 43.499 (2.346) 45.979 (2.479) Pension 102.559 113.210 (10.651) 115.738 (2.527) 117.909 (2.172) 119.830 (1.920) Other Fringe Benefits 45.009 46.571 (1.561) 48.206 (1.635) 49.878 (1.672) 51.786 (1.908) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $734.031 $766.782 ($32.751) $792.674 ($25.892) $819.884 ($27.210) $849.084 ($29.200) Non-Labor: Electric Power $8.886 $10.473 ($1.586) $11.000 ($0.528) $10.515 $0.485 $10.102 $0.414 Fuel 1.767 1.840 (0.073) 1.703 0.137 1.621 0.082 1.741 (0.120) Insurance 5.315 5.675 (0.360) 5.938 (0.263) 6.189 (0.251) 6.365 (0.176) Claims 2.592 2.592 0.000 2.592 0.000 2.592 0.000 2.592 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 162.157 167.171 (5.014) 169.744 (2.573) 170.267 (0.523) 170.990 (0.723) Professional Services Contracts 460.186 390.708 69.478 393.051 (2.343) 394.854 (1.804) 376.724 18.131 Materials and Supplies 4.344 3.917 0.428 3.931 (0.014) 3.942 (0.011) 3.954 (0.013) Other Business Expenses 23.511 20.557 2.953 20.693 (0.135) 25.698 (5.006) 26.107 (0.409) Total Non-Labor Expenses $668.758 $602.932 $65.825 $608.651 ($5.719) $615.678 ($7.027) $598.575 $17.103 Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,402.789 $1,369.714 $33.074 $1,401.325 ($31.611) $1,435.562 ($34.237) $1,447.659 ($12.097) Depreciation $80.500 $46.213 $34.287 $46.213 $0.000 $46.213 $0.000 $46.213 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 19.979 4.432 15.547 13.396 (8.964) (12.883) 26.279 (12.076) (0.808) GASB 75 OPEB Expense Adjustment 220.892 227.498 (6.606) 233.646 (6.148) 239.859 (6.213) 246.636 (6.776) GASB 87 Lease Adjustment (1.981) (1.981) 0.000 (1.981) 0.000 (1.981) 0.000 (1.981) 0.000 GASB 96 SBITA Adjustment 16.847 16.847 0.000 16.847 0.000 16.847 0.000 16.847 0.000 Total Non-Cash Liability Adjustments $336.237 $293.009 $43.228 $308.121 ($5.112) $288.055 $20.066 $295.639 ($7.584) Total Expenses After Depreciation and GASB Adjs. $1,739.026 $1,662.723 $76.302 $1,709.446 ($46.723) $1,723.617 ($14.171) $1,743.298 ($19.681) Net Surplus/(Deficit) ($1,518.137) ($1,453.171) $64.966 ($1,498.453) ($45.282) ($1,508.380) ($9.927) ($1,526.268) ($17.887)
+```
+[p314_c0003] _V-148_
+
+## Page 315
+
+### [p315_c0001] MTA HEADQUARTERS July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+### [p315_c0002] Cash Receipts and Expenditures
+### [p315_c0003] Receipts
+[p315_c0004]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Rental Income 43.138 43.138 0.000 44.838 1.700 44.938 0.100 44.938 0.000 Advertising 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other 5.551 5.897 0.346 5.897 0.000 5.897 0.000 5.897 0.000 Other Operating Revenue 48.689 49.035 0.346 50.735 1.700 50.835 0.100 50.835 0.000 Capital and Other Reimbursements 172.199 160.517 (11.682) 160.258 (0.259) 164.401 4.144 166.195 1.794 Total Receipts $220.888 $209.552 ($11.336) $210.993 $1.441 $215.237 $4.244 $217.031 $1.794
+```
+### [p315_c0005] Expenditures
+### [p315_c0006] Labor Expenditures:
+[p315_c0007]
+
+```text
+Payroll $399.245 $433.583 ($34.337) $444.971 ($11.389) $456.915 ($11.943) $470.280 ($13.366) Overtime 18.598 16.313 2.284 16.951 (0.638) 17.698 (0.747) 18.198 (0.500) Health and Welfare 82.958 88.951 (5.993) 95.146 (6.196) 102.068 (6.922) 109.554 (7.486) OPEB Current Payments 36.835 38.934 (2.100) 41.154 (2.219) 43.499 (2.346) 45.979 (2.479) Pension 47.224 109.807 (62.583) 111.013 (1.206) 111.429 (0.416) 113.346 (1.917) Other Fringe Benefits 42.427 43.899 (1.472) 45.440 (1.541) 47.016 (1.576) 48.814 (1.799) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $627.287 $731.486 ($104.199) $754.675 ($23.189) $778.626 ($23.951) $806.173 ($27.547)
+```
+### [p315_c0008] Non-Labor Expenditures:
+[p315_c0009]
+
+```text
+Electric Power $8.353 $9.844 ($1.491) $10.340 ($0.496) $9.885 $0.456 $9.496 $0.389 Fuel 1.707 1.729 (0.023) 1.601 0.129 1.524 0.077 1.637 (0.113) Insurance 5.283 5.675 (0.392) 5.938 (0.263) 6.189 (0.251) 6.365 (0.176) Claims 2.592 2.592 0.000 2.592 0.000 2.592 0.000 2.592 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 160.349 167.171 (6.822) 161.136 6.035 161.675 (0.539) 162.404 (0.729) Professional Services Contracts 443.763 377.812 65.951 389.739 (11.927) 391.534 (1.795) 373.567 17.967 Materials and Supplies 4.344 3.917 0.428 3.931 (0.014) 3.942 (0.011) 3.954 (0.013) Other Business Expenses 22.223 19.514 2.709 20.693 (1.178) 23.892 (3.199) 24.254 (0.362) Total Non-Labor Expenditures $648.614 $588.255 $60.360 $595.969 ($7.714) $601.231 ($5.262) $584.268 $16.963
+```
+### [p315_c0010] Other Expenditure Adjustments:
+[p315_c0011]
+
+```text
+Other 101.726 62.820 38.906 32.377 30.443 21.742 10.635 19.774 1.968 Total Other Expenditure Adjustments $101.726 $62.820 $38.906 $32.377 $30.443 $21.742 $10.635 $19.774 $1.968
+```
+[p315_c0012]
+
+```text
+Total Expenditures $1,377.627 $1,382.561 ($4.934) $1,383.021 ($0.460) $1,401.599 ($18.579) $1,410.215 ($8.616) Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p315_c0013]
+
+```text
+Net Cash Surplus/(Deficit) ($1,156.739) ($1,173.009) ($16.270) ($1,172.028) $0.981 ($1,186.363) ($14.335) ($1,193.184) ($6.822)
+```
+[p315_c0014] _V-149_
+
+## Page 316
+
+### [p316_c0001] MTA HEADQUARTERS 2026 Preliminary Budget July Financial Plan 2026 - 2029 Summary of Plan-to-Plan Changes by Generic Category
+### [p316_c0002] 2025: JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN
+### [p316_c0003] REVENUE
+[p316_c0004] Other operating revenues in 2025 include the timing of reimbursements from prior year and a modest benefit from a Tropical Storm Ida insurance recovery.
+### [p316_c0005] EXPENSES
+[p316_c0006] Excluding a net increase of $190.1 million in non-cash liability amounts, total non-reimbursable/reimbursable operating expenses increase by $61.8 million.
+[p316_c0007] Major generic category changes include:
+- [p316_c0008] • Labor costs associated with MTAPD and B&T collaboration initiative with 47 additional positions. • The addition of three positions to continue to deliver strategic initiatives and cost savings projects to support MTA fiscal responsibility. • Addition of one new position to manage the state of good repair efforts to maintain safe and reliable transportation services. As part of the capital plan, the MTA is retiring commuter rail and subway cars that have exceeded useful life and are being replaced. • Professional Services include Enterprise Asset Management (EAM) mobile device procurement, maintenance and software costs to manage infrastructure and assets. • Professional Services, Maintenance and Other Operating Contracts and Other Business Expenses all reflect the impact of the timing of 2024 activity. • Other Business Expenses reflect MTA contributions to fund toll rebate programs for the Cross Bay Bridge and the Verrazzano-Narrows Bridge. • Net unfavorable GASB 68, 75 and 96 impacts.
+### [p316_c0009] 2026: JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN
+### [p316_c0010] REVENUE
+[p316_c0011] Other operating revenues in 2026 include adjustments to agency recoveries.
+### [p316_c0012] EXPENSES
+[p316_c0013] Excluding a GASB adjustment net increase of $195.1 million, total non-reimbursable/reimbursable operating expenses increase by $36.0 million.
+[p316_c0014] Major generic category changes include:
+- [p316_c0015] • Labor costs associated with the MTAPD and B&T collaboration initiative with 89 additional positions. • The addition of three positions to continue to deliver strategic initiatives and cost savings projects to support MTA fiscal responsibility.
+[p316_c0016] _V-150_
+
+## Page 317
+
+- [p317_c0001] • Addition of one new position to manage the state of good repair efforts to maintain safe and reliable transportation services. As part of the capital plan, the MTA is retiring commuter rail and subway cars that have exceeded useful life and are being replaced. • Professional Services include Enterprise Asset Management (EAM) mobile device and device maintenance and software costs to manage infrastructure and assets. • Other Business Expenses reflect MTA contributions to fund toll rebate programs for the Cross Bay Bridge and the Verrazzano-Narrows Bridge. • Net unfavorable GASB 68, 75 and 96 impacts.
+### [p317_c0002] 2027-2028: JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN REVENUE
+[p317_c0003] Operating revenues in 2027 and 2028 are lower than those projected in the February Plan due to adjustments to Agency recoveries.
+### [p317_c0004] EXPENSES
+[p317_c0005] Excluding non-cash adjustments, total Non-Reimbursable/Reimbursable operating expenses are unfavorable from the February Plan by $47.6 million in 2027 and $64.7 million in 2028.
+[p317_c0006] Changes in major generic categories are attributable to the continuation of previously described initiatives and expense adjustments.
+[p317_c0007] _V-151_
+
+## Page 318
+
+### [p318_c0001] MTA HEADQUARTERS July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p318_c0002] NON-REIMBURSABLE
+[p318_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) ($1,046.511) ($1,099.778) ($1,101.783) ($1,110.468) Baseline Changes Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 Vehicle Toll Revenue - - - - Rental Income - - - - Advertising Revenue - - - - Other 0.654 0.000 0.000 0.000 Total Other Operating Revenue 0.654 0.000 0.000 0.000 Capital and Other Reimbursement 0.000 0.000 0.000 0.000 Total Revenue Changes 0.654 0.000 0.000 0.000 Expenses Labor: Payroll ($15.551) ($16.352) ($18.702) ($21.244) Overtime (0.936) (0.750) (1.100) (1.600) Health and Welfare 5.560 4.598 3.101 0.935 OPEB Current Payment (0.227) (0.057) 0.134 0.348 Pensions 7.196 0.694 (0.614) (2.782) Other Fringe Benefits (1.370) (1.046) (1.095) (1.127) Reimbursable Overhead (25.621) (15.837) (16.333) (16.823) Total Labor Expense Changes (30.949) (28.751) (34.610) (42.292) Non-Labor: Electric Power ($0.029) ($0.277) ($0.584) ($0.495) Fuel 0.118 0.408 0.326 0.279 Insurance (2.239) (2.427) (2.456) (2.405) Claims - - - - Paratransit Service Contracts - - - - Maintenance and Other Operating Contracts (17.908) (22.539) (24.413) (25.539) Professional Service Contracts (37.345) (6.142) (12.796) (21.453) Materials & Supplies (3.472) (2.989) (2.990) (2.987) MTA Internal Subsidy 22.081 22.037 21.994 22.028 Other Business Expenses (1.349) (0.386) (0.349) (0.365) Total Non-Labor Expense Changes (40.144) (12.315) (21.268) (30.937) Other Expenses Adjustments: Other Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 Total Expenses before Depreciation and GASB Adjs. ($71.093) ($41.066) ($55.877) ($73.229) Depreciation $0.000 $0.000 $0.000 $0.000 GASB 68 Pension Adjustment 6.789 8.281 6.930 6.934 GASB 75 OPEB Adjustment (176.035) (182.525) (188.700) (194.976) GASB 87 Lease Adjustment - - - - GASB 96 Adjustment (20.888) (20.888) (20.888) (20.888) Environmental Remediation - - - - Total Expense Changes ($261.228) ($236.197) ($258.535) ($282.158) Cash Adjustment Changes Revenue Adjustments 0.000 0.000 0.000 0.000 Expense Adjustments $150.345 $162.966 $188.290 $206.263 Total Cash Adjustment Changes $150.345 $162.966 $188.290 $206.263 Total Baseline Changes ($110.228) ($73.231) ($70.245) ($75.895) July Financial Plan - Cash Surplus/(Deficit) ($1,156.739) ($1,173.009) ($1,172.028) ($1,186.363)
+```
+[p318_c0004] _V-152_
+
+## Page 319
+
+### [p319_c0001] MTA HEADQUARTERS July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p319_c0002] REIMBURSABLE
+[p319_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 Baseline Changes Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 Vehicle Toll Revenue - - - - Rental Income - - - - Advertising Revenue - - - - Other - - - - Capital and Other Reimbursement (9.256) (5.089) (8.260) (8.538) Total Revenue Changes ($9.256) ($5.089) ($8.260) ($8.538) Expenses Labor: Payroll ($0.361) ($1.257) ($1.220) ($1.180) Overtime - - - - Health and Welfare (0.051) (0.312) (0.342) (0.380) OPEB Current Payment - - - - Pensions (0.017) (0.222) (0.238) (0.239) Other Fringe Benefits (0.044) (0.159) (0.160) (0.158) Reimbursable Overhead 25.621 15.837 16.333 16.823 Total Labor Expense Changes $25.148 $13.887 $14.372 $14.866 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 Fuel - - - - Insurance - - - - Claims - - - - Paratransit Service Contracts - - - - Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 Professional Services (15.891) (8.791) (6.105) (6.321) Materials & Supplies 0.000 0.000 0.000 0.000 MTA Internal Subsidy - - - - Other Business Expenses (0.002) (0.007) (0.007) (0.007) Total Non-Labor Expense Changes ($15.892) ($8.798) ($6.112) ($6.327) Gap Closing Expenses : Total Gap Closing Expenses $0.000 $0.000 $0.000 $0.000 Total Expenses before Depreciation $9.256 $5.089 $8.260 $8.538 Depreciation - - - - Total Expense Changes $9.256 $5.089 $8.260 $8.538 Cash Adjustment Changes - - - - Total Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Baseline Changes $0.000 ($0.000) $0.000 $0.000 July Financial Plan - Cash Surplus/(Deficit) $0.000 ($0.000) $0.000 $0.000
+```
+[p319_c0004] _V-153_
+
+## Page 320
+
+### [p320_c0001] MTA HEADQUARTERS July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p320_c0002] NON REIMBURSABLE/REIMBURSABLE
+[p320_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) ($1,046.511) ($1,099.778) ($1,101.783) ($1,110.468) Baseline Changes Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 Vehicle Toll Revenue - - - - Rental Income - - - - Advertising Revenue - - - - Other 0.654 - - - Capital and Other Reimbursement (9.256) (5.089) (8.260) (8.538) Total Revenue Changes ($8.602) ($5.089) ($8.260) ($8.538) Expenses Labor: Payroll ($15.912) ($17.610) ($19.923) ($22.424) Overtime (0.936) (0.750) (1.100) (1.600) Health and Welfare 5.509 4.286 2.759 0.556 OPEB Current Payment (0.227) (0.057) 0.134 0.348 Pensions 7.180 0.471 (0.852) (3.021) Other Fringe Benefits (1.414) (1.204) (1.255) (1.285) Reimbursable Overhead - - - - Total Labor Expense Changes ($5.801) ($14.864) ($20.238) ($27.426) Non-Labor: Electric Power ($0.029) ($0.277) ($0.584) ($0.495) Fuel 0.118 0.408 0.326 0.279 Insurance (2.239) (2.427) (2.456) (2.405) Claims - - - - Paratransit Service Contracts - - - - Maintenance and Other Operating Contracts (17.908) (22.539) (24.413) (25.539) Professional Services (53.236) (14.933) (18.900) (27.773) Materials & Supplies (3.472) (2.989) (2.990) (2.987) MTA Internal Subsidy 22.081 22.037 21.994 22.028 Other Business Expenses (1.351) (0.393) (0.356) (0.372) Total Non-Labor Expense Changes ($56.037) ($21.113) ($27.380) ($37.264) Gap Closing Expenses : Total Gap Closing Expenses $0.000 $0.000 $0.000 $0.000 Total Expenses before Depreciation ($61.838) ($35.977) ($47.617) ($64.690) Depreciation $0.000 $0.000 $0.000 $0.000 GASB 68 Pension Adjustment 6.789 8.281 6.930 6.934 GASB 75 OPEB Adjustment (176.035) (182.525) (188.700) (194.976) GASB 87 Lease Adjustment - - - - GASB 96 Adjustment (20.888) (20.888) (20.888) (20.888) Environmental Remediation - - - - Total Expense Changes ($251.972) ($231.108) ($250.275) ($273.619) Cash Adjustment Changes Revenue Adjustments - - - - Expense Adjustments 150.345 162.966 188.290 206.263 Total Cash Adjustment Changes $150.345 $162.966 $188.290 $206.263 Total Baseline Changes ($110.228) ($73.231) ($70.245) ($75.895) July Financial Plan - Cash Surplus/(Deficit) ($1,156.739) ($1,173.009) ($1,172.028) ($1,186.363)
+```
+[p320_c0004] _V-154_
+
+## Page 321
+
+### [p321_c0001] MTA HEADQUARTERS July Financial Plan 2026-2029 Summary of Major Programmatic Changes Between Financial Plans ($ in millions)
+### [p321_c0002] NON-REIMBURSABLE and REIMBURSABLE
+[p321_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) ($1,046.511) ($1,099.778) ($1,101.783) ($1,110.468) Non-Reimbursable Major Changes Revenue Tropical Strom IDA (2021) insurance money claims receipt $0.654 $0.000 $0.000 $0.000 Sub-Total Non-Reimbursable Revenue Changes $0.654 $0.000 $0.000 $0.000 Expenses New Need - PD Policing services on all B&T - Labor & Non-Labor ($6.118) ($13.888) ($20.012) ($30.454) New Need - Strategic Initiatives - Labor (0.347) (0.538) (0.554) - New Need - EAM Mobile Devices (0.657) (3.640) (4.067) (4.390) Rollovers from 2024 (19.480) Pension 8.155 3.520 3.572 3.427 GASB 101 impact and Health and Welfare rates 2.096 7.271 8.492 11.023 Labor recoveries, mostly MTA PD (25.621) (15.837) (16.333) (16.823) Toll rebate funding shifted to OBTA 22.212 22.200 22.162 22.160 RED 2 Bdwy cooling tower replacement (offset by savings) 6.062 - - - Rental credits shifted to tenant improvements 6.412 1.203 - - Software license re-estimate (3year pre-pay) (16.600) 8.300 8.300 - Insurance (2.254) (2.424) (2.453) (2.401) Inflation adjustments (2.882) (3.377) (3.792) (2.948) Interagency transfers (2.966) (3.799) (3.864) (3.969) Professional & Operating Contracts provision (50.000) (51.500) (53.045) (54.636) RED Cadman transit property elimination from People Dept 1.734 1.734 1.664 1.694 Non Labor changes - recoveries, largely RED realignment 8.832 9.713 4.053 4.289 GASB adjustments (190.134) (195.132) (202.658) (208.929) Other 0.303 (0.003) (0.001) (0.201) Sub-Total Non-Reimbursable Expense Changes ($261.250) ($236.197) ($258.535) ($282.157) Total Non-Reimbursable Major Changes ($260.597) ($236.197) ($258.535) ($282.157) Reimbursable Major Changes Revenue Capital and other Reimbursements ($9.256) ($5.089) ($8.260) ($8.538) Sub-Total Reimbursable Revenue Changes ($9.256) ($5.089) ($8.260) ($8.538) Expenses New Need - Rolling Stock Program - Labor ($0.252) ($0.384) ($0.396) ($0.404) Interagency transfer Rolling Stock Program (0.769) (1.184) (1.219) (1.250) Labor Reimbursable - Reimbursable Overhead (excl. NN & interagency transfer) 26.169 15.454 15.987 16.520 Rollovers from 2024 - Risk Management Non-Labor (5.800) - - - Non-Labor Reimbursable (10.093) (8.798) (6.112) (6.328) Sub-Total Reimbursable Expense Changes $9.256 $5.089 $8.260 $8.538 Total Reimbursable Major Changes ($0.000) $0.000 $0.000 ($0.000) Total Accrual Changes ($260.597) ($236.197) ($258.535) ($282.158) Cash Adjustment Changes GASB adjustments $190.134 $195.132 $202.658 $208.929 Pension (4.433) (2.778) (2.004) (2.401) CAPOP adjustments 13.843 (15.738) 0.081 (1.756) Payroll Cash Adjustment (GASB101) 3.843 - - - Cash exclusive of pension, GASB & OPEB (52.814) (13.593) (12.579) 1.144 OPEB Current Payments Cash Adjustments (0.228) (0.057) 0.133 0.347 Total Cash Adjustment Changes $150.345 $162.966 $188.290 $206.263 Total Baseline Changes ($110.252) ($73.231) ($70.245) ($75.895) July Financial Plan - Cash Surplus/(Deficit) ($1,156.762) ($1,173.009) ($1,172.028) ($1,186.363)
+```
+[p321_c0004] _V-155_
+
+## Page 322
+
+### [p322_c0001] MTA HEADQUARTERS 2026 Preliminary Budget July Financial Plan 2026 - 2029 Positions
+### [p322_c0002] POSITION ASSUMPTIONS
+### [p322_c0003] YEAR-TO-YEAR CHANGES
+[p322_c0004] In 2026, total positions decrease by 37 from 2025, bringing headcount to 3,504. Of these, 3,430 are non-reimbursable and 74 are reimbursable.
+[p322_c0005] Headcount decreases by 37 in 2026, primarily due to the removal of 74 temporary positions added to the MTAPD in 2024 and 2025 to support the Subway Co-Response Outreach Teams (SCOUT) program. This reduction is partially offset by new positions added through the MTAPD and B&T collaboration initiative.
+[p322_c0006] Staffing then increases over the following years; 20 in 2027, 67 in 2028, and 49 in 2029. The 2027 net increase reflects a reduction of 12 positions in the Strategic Initiatives department, offset by a 32-position increase in the MTAPD as part of the ongoing B&T collaboration. In 2028, MTAPD adds 70 new positions through continued collaboration, while three temporary positions in Strategic Initiatives expire. The growth of 49 positions in 2029 is also driven by continued MTAPD expansion tied to the B&T initiative.
+### [p322_c0007] Positions by the occupational group are:
+- [p322_c0008] • Managers/Supervisors are 1,201 positions in 2026, reduced by 11 from 2025, decrease by 1 in 2027, increase by 11 in 2028 and increase by 7 in 2029 to 1,218. • Professional, Technical, and Clerical positions are projected to decrease by 1 in 2026 (to 1,242 positions) compared to 2025, decrease by 4 more in 2027 (to 1,238), and by 1 more in 2028 (to 1,237), after which they remain unchanged for 2029. • Operational Hourlies are budgeted at 1,061 positions in 2026, a decrease of 25 from 2025. In 2027, they increase by 25 from the 2026 level to reach 1,086 positions. In 2028, the number increases by 57 from 2027, and in 2029, it rises by an additional 42 to reach 1,185 positions.
+### [p322_c0009] 2025-2029: JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN
+[p322_c0010] Total baseline headcount is projected to increase by 66, 108, 140, and 207, positions in 2025 through 2028, for 2025 through 2028 respectively, compared to the February Plan. This growth is primarily driven by the collaboration between the MTAPD and Bridges and Tunnels. The number of MTAPD positions added is 47 in 2025, 89 in 2026, 121 in 2027, and 191 in 2028.
+[p322_c0011] A Strategic Initiatives approved new need adds three positions from 2025 through 2027, which are not carried into 2028. Additionally, nine positions associated with advertising and promotional efforts were transferred from Construction & Development (C&D) - four to Strategic Initiatives and five to Customer Communications. The Rolling Stock Program adds three positions from NYCT Procurement, two positions from C&D and one additional position approved as a new need, while Occupational Health Services (OHS) gains one position through an internal transfer from the
+[p322_c0012] _V-156_
+
+## Page 323
+
+[p323_c0001] People Department's non-labor budget. As a result of these adjustments, the total headcount is projected to be 3,541 in 2025, 3,504 in 2026, 3,524 in 2027, and 3,591 in 2028.
+[p323_c0002] _V-157_
+
+## Page 324
+
+### [p324_c0001] MTA HEADQUARTERS July Financial Plan 2026-2029 Favorable/(Unfavorable)
+### [p324_c0002] Total Position Changes at a Glance
+[p324_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Plan - Total Baseline Positions 3,475 3,396 3,384 3,384 Total Plan-to-Plan Changes (66) (108) (140) (207) 2025 July Plan - Total Baseline Positions 3,541 3,504 3,524 3,591 Total Year-to-Year Changes, July Plan 37 (20) (67) Total Plan-to-Plan Changes by Reporting Category: Non-Reimbursable (63) (105) (137) (204) Reimbursable (3) (3) (3) (3) Total (66) (108) (140) (207) Full-Time (66) (108) (140) (207) Full-Time Equivalents - - - - Total (66) (108) (140) (207) By Function Category - Administration (19) (19) (19) (16) - Operations - - - - - Maintenance - - - - - Engineering/Capital - - - - - Public Safety (47) (89) (121) (191) Total (66) (108) (140) (207) By Occupational Group - Managers/Supervisors (55) (56) (63) (74) - Professional, Technical, Clerical (6) (7) (7) (6) - Operational Hourlies (5) (45) (70) (127) Total (66) (108) (140) (207) Total Plan-to-Plan Changes by Major Category: MTA Operating Efficiencies 1 New Needs (51) (93) (125) (192) Change in Reimbursable Positions (3) (3) (3) (3) Re-estimates & All Other (12) (12) (12) (12) Total (66) (108) (140) (207)
+```
+[p324_c0004] _1 Includes Full-time Equivalents._
+[p324_c0005] _V-158_
+
+## Page 325
+
+### [p325_c0001] MTA HEADQUARTERS July Financial Plan 2026-2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p325_c0002]
+
+```text
+FUNCTION/DEPARTMENT Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Policy & Administration Office of the Chair and CEO 5 6 6 6 6 6 Policy & Administration 69 65 65 53 50 50 Permanent Citizens Advisory Committee (PCAC) 5 - - - - - Headquarters Services Audit 60 63 63 63 63 63 Customer Communications 43 25 25 25 25 25 Diversity & Inclusion 57 54 54 54 54 54 Policy & External Relations 55 54 54 54 54 54 Internal Relations 3 3 3 3 3 3 Finance 273 236 236 236 236 236 Labor Relations 49 16 16 16 16 16 Legal & Compliance 117 92 92 92 92 92 It Department 916 959 959 959 959 959 OMNY New Fare Payment - - - - - - People 322 260 260 260 260 260 Procurement 127 80 75 75 75 75 Real Estate 52 53 53 53 53 53 Rolling Stock Programs - 6 6 6 6 6 MTA Safety & Environment 25 20 20 20 20 20 MTA Security 27 27 27 27 27 27 Occupational Health Services 82 89 89 89 89 89 Public Safety MTA Police Department 1,327 1,433 1,401 1,433 1,503 1,552 Baseline Total Positions 3,614 3,541 3,504 3,524 3,591 3,640 Non-Reimbursable 3,551 3,467 3,430 3,450 3,517 3,566 Reimbursable 63 74 74 74 74 74 Full-Time 3,614 3,541 3,504 3,524 3,591 3,640 Full-Time Equivalents - - - - - -
+```
+[p325_c0003] _V-159_
+
+## Page 326
+
+### [p326_c0001] MTA HEADQUARTERS July Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p326_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual Mid-Year Preliminary 2027 2028 2029 2024 Forecast Budget 2024 2025 2026 Administration Managers/Supervisors 1,026 938 934 926 924 924 Professional/Technical/Clerical 1,260 1,169 1,168 1,164 1,163 1,163 Operational Hourlies 1 1 1 1 1 1 Total Administration Headcount 2,287 2,108 2,103 2,091 2,088 2,088 Operations Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Operations Headcount 0 0 0 0 0 0 Maintenance Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Maintenance Headcount 0 0 0 0 0 0 Engineering / Capital Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 0 0 0 0 0 0 Public Safety Managers/Supervisors 229 274 267 274 287 294 Professional/Technical/Clerical 70 74 74 74 74 74 Operational Hourlies 1,028 1,085 1,060 1,085 1,142 1,184 Total Public Safety Headcount 1,327 1,433 1,401 1,433 1,503 1,552 Total Positions Managers/Supervisors 1,255 1,212 1,201 1,200 1,211 1,218 Professional/Technical/ Clerical 1,330 1,243 1,242 1,238 1,237 1,237 Operational Hourlies 1,029 1,086 1,061 1,086 1,143 1,185 Total Positions 3,614 3,541 3,504 3,524 3,591 3,640
+```
+[p326_c0003] _V-160_
+
+## Page 327
+
+### [p327_c0001] MTA INSPECTOR GENERAL 2026 Preliminary Budget July Financial Plan 2026 - 2029
+### [p327_c0002] FINANCIAL OVERVIEW
+[p327_c0003] The July Plan forecast for the Office of Inspector General is consistent with the guidelines and assumptions used in developing the MTA Headquarters financial plan. It provides adequate resources needed to investigate and audit matters of concern throughout the MTA and its subsidiaries.
+### [p327_c0004] 2025 MID-YEAR FORECAST
+[p327_c0005] In the 2025 Mid-Year Forecast, baseline expenses are projected at $18.4 million, compared to $20.7 million in the 2025 Adopted Budget. This favorable variance is mainly due to lower labor expenses including the impacts of vacancies.
+### [p327_c0006] 2026 PRELIMINARY BUDGET
+[p327_c0007] In the 2026 Preliminary Budget, $20.0 million is projected in baseline expenses, compared to $21.7 million in the February Plan due to lower payroll costs and associated fringe benefits, and slightly lower non-labor expenses.
+### [p327_c0008] 2027-2029 PROJECTIONS
+[p327_c0009] Projections for 2027 through 2029, which reflect inflationary growth and MTA Headquarters guidelines and assumptions, are $20.5 million in 2026, $20.9 million in 2028, and $21.4 million in 2029.
+[p327_c0010] _V-161_
+
+## Page 328
+
+### [p328_c0001] MTA INSPECTOR GENERAL July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p328_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 14.903 18.356 19.985 20.472 20.907 21.426 Total Revenues $14.903 $18.356 $19.985 $20.472 $20.907 $21.426 Operating Expense Labor: Payroll $9.180 $10.511 $11.097 $11.313 $11.484 $11.698 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 1.086 1.939 2.387 2.576 2.775 3.001 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.868 0.993 1.351 1.400 1.440 1.484 Other Fringe Benefits 0.680 0.908 1.021 1.046 1.067 1.091 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $11.813 $14.351 $15.857 $16.334 $16.766 $17.274 Non-Labor: Electric Power $0.052 $0.064 $0.069 $0.069 $0.069 $0.067 Fuel 0.008 0.014 0.015 0.011 0.008 0.012 Insurance 0.017 0.021 0.020 0.021 0.022 0.023 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 2.373 3.186 3.281 3.290 3.293 3.297 Professional Services Contracts 0.518 0.547 0.553 0.554 0.553 0.553 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.123 0.174 0.190 0.194 0.196 0.199 Total Non-Labor Expenses $3.090 $4.005 $4.129 $4.138 $4.142 $4.152 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $14.903 $18.356 $19.985 $20.472 $20.907 $21.426 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p328_c0003] _V-162_
+
+## Page 329
+
+### [p329_c0001] MTA INSPECTOR GENERAL July Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p329_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 14.903 18.356 19.985 20.472 20.907 21.426 Total Receipts $14.903 $18.356 $19.985 $20.472 $20.907 $21.426 Expenditures Labor: Payroll $9.180 $10.511 $11.097 $11.313 $11.484 $11.698 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 1.086 1.939 2.387 2.576 2.775 3.001 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.868 0.993 1.351 1.400 1.440 1.484 Other Fringe Benefits 0.680 0.908 1.021 1.046 1.067 1.091 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $11.813 $14.351 $15.857 $16.334 $16.766 $17.274 Non-Labor: Electric Power $0.052 $0.064 $0.069 $0.069 $0.069 $0.067 Fuel 0.008 0.014 0.015 0.011 0.008 0.012 Insurance 0.017 0.021 0.020 0.021 0.022 0.023 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 2.373 3.186 3.281 3.290 3.293 3.297 Professional Services Contracts 0.518 0.547 0.553 0.554 0.553 0.553 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.123 0.174 0.190 0.194 0.196 0.199 Total Non-Labor Expenditures $3.090 $4.005 $4.129 $4.138 $4.142 $4.152 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $14.903 $18.356 $19.985 $20.472 $20.907 $21.426 Net Cash Balance $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p329_c0003] _V-163_
+
+## Page 330
+
+### [p330_c0001] MTA INSPECTOR GENERAL July Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p330_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Cash Conversion Adjustments before Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Cash Conversion Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p330_c0003] _V-164_
+
+## Page 331
+
+### [p331_c0001] MTA Inspector General July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p331_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Reimbursable Operating Revenues Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 18.356 19.985 1.629 20.472 0.487 20.907 0.435 21.426 0.519 Total Revenues $18.356 $19.985 $1.629 $20.472 $0.487 $20.907 $0.435 $21.426 $0.519 Operating Expenses Labor: Payroll $10.511 $11.097 ($0.586) $11.313 ($0.215) $11.484 ($0.171) $11.698 ($0.215) Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 1.939 2.387 (0.449) 2.576 (0.189) 2.775 (0.199) 3.001 (0.225) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.993 1.351 (0.358) 1.400 (0.049) 1.440 (0.040) 1.484 (0.044) Other Fringe Benefits 0.908 1.021 (0.113) 1.046 (0.025) 1.067 (0.021) 1.091 (0.025) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $14.351 $15.857 ($1.506) $16.334 ($0.478) $16.766 ($0.431) $17.274 ($0.509) Non-Labor: Electric Power $0.064 $0.069 ($0.005) $0.069 $0.000 $0.069 $0.000 $0.067 $0.002 Fuel 0.014 0.015 (0.002) 0.011 0.004 0.008 0.003 0.012 (0.004) Insurance 0.021 0.020 0.000 0.021 (0.001) 0.022 (0.001) 0.023 (0.001) Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.186 3.281 (0.095) 3.290 (0.008) 3.293 (0.003) 3.297 (0.004) Professional Services Contracts 0.547 0.553 (0.006) 0.554 0.000 0.553 0.001 0.553 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.174 0.190 (0.016) 0.194 (0.004) 0.196 (0.003) 0.199 (0.003) Total Non-Labor Expenses $4.005 $4.129 ($0.124) $4.138 ($0.009) $4.142 ($0.004) $4.152 ($0.010) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $18.356 $19.985 ($1.629) $20.472 ($0.487) $20.907 ($0.435) $21.426 ($0.519) Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p331_c0003] _V-165_
+
+## Page 332
+
+### [p332_c0001] MTA Inspector General July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+### [p332_c0002] Cash Receipts and Expenditures
+### [p332_c0003] Receipts
+[p332_c0004]
+
+```text
+Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 18.356 19.985 1.629 20.472 0.487 20.907 0.435 21.426 0.519 Total Receipts $18.356 $19.985 $1.629 $20.472 $0.487 $20.907 $0.435 $21.426 $0.519
+```
+### [p332_c0005] Expenditures
+### [p332_c0006] Labor Expenditures:
+[p332_c0007]
+
+```text
+Payroll $10.511 $11.097 ($0.586) $11.313 ($0.215) $11.484 ($0.171) $11.698 ($0.215) Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 1.939 2.387 (0.449) 2.576 (0.189) 2.775 (0.199) 3.001 (0.225) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.993 1.351 (0.358) 1.400 (0.049) 1.440 (0.040) 1.484 (0.044) Other Fringe Benefits 0.908 1.021 (0.113) 1.046 (0.025) 1.067 (0.021) 1.091 (0.025) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $14.351 $15.857 ($1.506) $16.334 ($0.478) $16.766 ($0.431) $17.274 ($0.509)
+```
+### [p332_c0008] Non-Labor Expenditures:
+[p332_c0009]
+
+```text
+Electric Power $0.064 $0.069 ($0.005) $0.069 $0.000 $0.069 $0.000 $0.067 $0.002 Fuel 0.014 0.015 (0.002) 0.011 0.004 0.008 0.003 0.012 (0.004) Insurance 0.021 0.020 0.000 0.021 (0.001) 0.022 (0.001) 0.023 (0.001) Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.186 3.281 (0.095) 3.290 (0.008) 3.293 (0.003) 3.297 (0.004) Professional Services Contracts 0.547 0.553 (0.006) 0.554 0.000 0.553 0.001 0.553 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.174 0.190 (0.016) 0.194 (0.004) 0.196 (0.003) 0.199 (0.003) Total Non-Labor Expenditures $4.005 $4.129 ($0.124) $4.138 ($0.009) $4.142 ($0.004) $4.152 ($0.010)
+```
+### [p332_c0010] Other Expenditure Adjustments:
+[p332_c0011]
+
+```text
+Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p332_c0012]
+
+```text
+Total Expenditures $18.356 $19.985 ($1.629) $20.472 ($0.487) $20.907 ($0.435) $21.426 ($0.519) Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p332_c0013]
+
+```text
+Net Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p332_c0014] _V-166_
+
+## Page 333
+
+### [p333_c0001] MTA INSPECTOR GENERAL July Financial Plan 2026 - 2029 Summary of Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p333_c0002] REIMBURSABLE
+[p333_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Financial Plan - Operating Cash Income/(Deficit) $0.000 $0.000 $0.000 $0.000 Revenue: Capital and Other Reimbursements (2.330) (1.703) (1.912) (2.130) Sub-Total Revenue Changes ($2.330) ($1.703) ($1.912) ($2.130) Expenses: Payroll $1.165 $1.132 $1.357 $1.576 Overtime - - - - Health and Welfare 0.709 0.449 0.438 0.401 OPEB Current Payment - - - - Pensions 0.304 0.030 0.006 0.022 Other Fringe Benefits 0.149 0.089 0.106 0.126 Reimbursable Overhead - - - - Fuel 0.030 0.041 0.040 0.039 Insurance (0.005) (0.003) (0.002) (0.002) Claims - - - - Paratransit Service Contracts - - - - Maintenance and Other Operating Contracts 0.153 0.150 0.149 0.150 Professional Service Contracts (0.186) (0.187) (0.187) (0.187) Materials & Supplies - - - - Other Business Expenses 0.011 0.007 0.008 0.009 Depreciation 0.000 0.000 0.000 0.000 Sub-Total Expense Changes $2.330 $1.702 $1.912 $2.129 Cash Adjustments: Revenue Expense Sub-Total Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Baseline Changes ($0.000) ($0.000) $0.000 ($0.000) Total Changes ($0.000) ($0.000) $0.000 ($0.000) 2025 July Financial Plan - Operating Cash Income/(Deficit) ($0.000) ($0.000) $0.000 ($0.000)
+```
+[p333_c0004] _V-167_
+
+## Page 334
+
+### [p334_c0001] MTA INSPECTOR GENERAL July Financial Plan 2026 - 2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time Positions/Full Time Equivalents
+[p334_c0002]
+
+```text
+FUNCTION/DEPARTMENT 2024 Actual 2025 Mid-Year Forecast 2026 Preliminary Budget 2027 2028 2029 Administration Office of the Inspector General 77 96 96 96 96 96 Total Administration 77 96 96 96 96 96 Baseline Total Positions 77 96 96 96 96 96 Non-Reimbursable - - - - - 0 Reimbursable 77 96 96 96 96 96 Total 77 96 96 96 96 96 Total Full-Time 77 96 96 96 96 96 Total Full-Time Equivalents - - - - - -
+```
+[p334_c0003] _V-168_
+
+## Page 335
+
+[p335_c0001] First Mutual Transportation Assurance Co. (FMTAC)
+
+## Page 336
+
+### [p336_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY 2026 Preliminary Budget July Financial Plan for 2026 - 2029
+### [p336_c0002] MISSION STATEMENT AND HIGHLIGHTS OF OPERATIONS
+[p336_c0003] The First Mutual Transportation Assurance Company (FMTAC) is a pure captive insurance company under Section 7005, Article 70 of the Insurance Law of New York and Section 1266, Subdivision 5 of the Public Authorities Law of the State of New York. FMTAC was established to maximize the flexibility and effectiveness of the MTA's insurance program, and its mission is to continue, develop, and improve the insurance and risk management needs required by the MTA..
+### [p336_c0004] FINANCIAL OVERVIEW
+[p336_c0005] FMTAC utilizes dedicated resources to efficiently address the challenges related to insurance and risk management for the MTA, and also continues to draw from the expertise and support services available in other MTA agencies and outside service providers to support risk management.
+[p336_c0006] For all years, on a cash basis, FMTAC generates annual net cash deficits of zero, which is the actual cash impact of FMTAC on MTA cash balances. FMTAC cash reserves are separate and distinct from MTA, and FMTAC must maintain the appropriate capital and reserve levels pursuant to the State of New York Insurance guidelines.
+[p336_c0007] Insurance premiums from the Agencies (revenue) are recorded as credits to the Insurance expense line. In this Plan, premiums increase between 3% to 5% annually except for the Casualty Owner-Controlled Insurance Program (OCIP) programs, which earn premiums based on a percentage of contract completion calculation.
+[p336_c0008] Additional expenses consist primarily of Claims, which are actuarially based, and Other Business Expenses.
+### [p336_c0009] 2025 MID-YEAR FORECAST
+[p336_c0010] In the 2025 Mid-Year Forecast, the projected baseline surplus is $77.2 million compared to the $43.5 million baseline surplus in the 2025 Adopted Budget, reflecting a $16.6 million increase in revenues and a $17.1 million decrease in expenses. The increase in revenues is specifically due to higher anticipated interest income from investments. The decrease in expense is attributable to: i) Insurance income, projected to increase by $19.0 million from the 2025 Adopted Budget, ii) and Other Business Expenses projected to decrease by $1.1 million based on trending actual results through April 2025, which are iii) partially offset by higher expenses for Claims of $2.7 million compared to the 2025 Adopted Budget based on an actuarial analysis of claim activity.
+[p336_c0011] _V-169_
+
+## Page 337
+
+### [p337_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY 2026 Preliminary Budget July Financial Plan 2026 - 2029
+### [p337_c0002] 2026 PRELIMINARY BUDGET BASELINE
+[p337_c0003] The 2026 Preliminary Budget projects a baseline surplus of $61.3 million, compared to the $45.3 million baseline surplus in the February Plan, reflecting a $17.0 million increase in revenues and a $1.0 million increase in expenses resulting from higher Claims expense, partially offset by higher insurance income and lower Other Business Expenses. Other Expense Adjustments for unrealized gains/losses on investments (Change in market value) are estimated to increase at a rate consistent with regional inflation projections.
+### [p337_c0004] FINANCIAL PLAN 2027 – 2029 PROJECTIONS
+[p337_c0005] Projections for 2027 through 2029 are representative of 2026 projections with market increases. Investment Income Revenue is estimated to increase over the 2026 projection at a rate equal to regional inflation changes. Claims are based on actuarial analyses of projected claim activities and adjustments, whether favorable or unfavorable, in required reserves. Other Business Expenses are estimated to increase over 2026 at a rate of 2% annually. Other Expenses Adjustment (Gain and Loss on Investment) is estimated to increase over 2026 projections at a rate consistent with regional inflation projections.
+[p337_c0006] _V-170_
+
+## Page 338
+
+### [p338_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+[p338_c0002] July Financial Plan 2026 - 2029
+[p338_c0003] Accrual Statement of Operations By Category
+[p338_c0004] ($ in millions)
+[p338_c0005]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income 32.153 33.537 34.516 35.172 35.787 36.424 Total Revenues $32.153 $33.537 $34.516 $35.172 $35.787 $36.424 Operating Expense Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance (141.208) (161.857) (154.725) (159.189) (155.333) (148.720) Claims 246.366 120.596 130.325 136.173 142.312 148.755 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 7.473 7.622 7.775 7.930 8.089 8.251 Total Non-Labor Expenses $112.631 ($33.639) ($16.625) ($15.086) ($4.932) $8.286 Other Expense Adjustments: Other Expense Adjustments $2.282 ($10.000) ($10.150) ($10.302) ($10.457) ($10.614) Total Other Expense Adjustments $2.282 ($10.000) ($10.150) ($10.302) ($10.457) ($10.614) Total Expenses Before Depreciation and GASB Adjs. $114.913 ($43.639) ($26.775) ($25.388) ($15.389) ($2.328) Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $114.913 ($43.639) ($26.775) ($25.388) ($15.389) ($2.328) Net Surplus/(Deficit) ($82.760) $77.176 $61.291 $60.560 $51.176 $38.752
+```
+[p338_c0006] _V-171_
+
+## Page 339
+
+### [p339_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY July Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p339_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Other Operating Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Investment Income 32.153 33.537 34.516 35.172 35.787 36.424 Total Receipts $32.153 $33.537 $34.516 $35.172 $35.787 $36.424 Expenditures Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance (141.208) (161.857) (154.725) (159.189) (155.333) (148.720) Claims 246.366 126.110 127.647 125.152 123.506 123.920 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 7.473 7.622 7.775 7.930 8.089 8.251 Total Non-Labor Expenditures $112.631 ($28.125) ($19.303) ($26.107) ($23.738) ($16.549) Other Expenditure Adjustments: Other ($80.478) $61.662 $53.819 $61.279 $59.525 $52.973 Total Other Expense Adjustments ($80.478) $61.662 $53.819 $61.279 $59.525 $52.973 Total Expenditures $32.153 $33.537 $34.516 $35.172 $35.787 $36.424 Net Cash Balance $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p339_c0003] _V-172_
+
+## Page 340
+
+### [p340_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p340_c0002] July Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p340_c0003]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 (5.514) 2.678 11.021 18.806 24.835 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures $0.000 ($5.514) $2.678 $11.021 $18.806 $24.835 Other Expenditure Adjustments: Other Expense Adjustments $82.760 ($71.662) ($63.969) ($71.581) ($69.982) ($63.587) Total Other Expenditure Adjustments $82.760 ($71.662) ($63.969) ($71.581) ($69.982) ($63.587) Total Expenditures $82.760 ($77.176) ($61.291) ($60.560) ($51.176) ($38.752) Total Cash Conversion Adjustments before Depreciation $82.760 ($77.176) ($61.291) ($60.560) ($51.176) ($38.752) Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Cash Conversion Adjustments $82.760 ($77.176) ($61.291) ($60.560) ($51.176) ($38.752)
+```
+[p340_c0004] _V-173_
+
+## Page 341
+
+### [p341_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY 2026 Preliminary Budget July Financial Plan 2026 - 2029 Year-to-Year Changes by Category - Baseline
+### [p341_c0002] REVENUE
+### [p341_c0003] Investment Income
+- [p341_c0004] • This is the realized gains or earned investment income from bonds and equity investments (dividends, interest).
+### [p341_c0005] EXPENSES
+### [p341_c0006] Insurance
+- [p341_c0007] • Insurance (premiums paid to FMTAC) is from the 2025 Mid-Year Forecast of the MTA Summary & Detailed Agency Insurance Cash Budgets and are based on increases in the market and exposure, as well as increases in the Claims expense and reserve adjustments. For the Casualty Owner-Controlled Insurance Program (OCIP) programs, an estimated earned premium is also included, calculated based on the percentage of contract completion • Insurance (premiums) are estimated to increase between 3% and 5%.
+### [p341_c0008] Claims
+- [p341_c0009] • Claims expenses are determined by actuarial projections of claim expense payments for 2026 to 2029 and any favorable or unfavorable adjustment to reserves. In addition to the actuarial analyses, the claims increase follows simultaneously with the factors of the growth in exposure (i.e., vehicle count) and higher insurance premiums.
+### [p341_c0010] Other Business Expenses
+- [p341_c0011] • Other Business Expenses increase 2% per year from 2026 through 2029, representing general increases for professional services provided and expenses not directly related to claims.
+### [p341_c0012] Other Expenses Adjustments-Investment change on the market value
+- [p341_c0013] • Investment income is the change in net unrealized gains or losses on investments. • Investment income projections are based on regional inflation.
+[p341_c0014] _V-174_
+
+## Page 342
+
+### [p342_c0001] Restricted Cash Adjustment
+- [p342_c0002] • Restricted cash grows as the net baseline surplus increases. Factors contributing to this growth are insurance premiums and related claims expenses.
+[p342_c0003] _V-175_
+
+## Page 343
+
+### [p343_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+[p343_c0002] July Financial Plan 2026 - 2029
+[p343_c0003] Changes Year-to-Year by Category
+[p343_c0004] Favorable/(Unfavorable)
+[p343_c0005] ($ in millions)
+[p343_c0006]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Non-Reimbursable Operating Revenues Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income 33.537 34.516 0.979 35.172 0.656 35.787 0.615 36.424 0.637 Total Revenues $33.537 $34.516 $0.979 $35.172 $0.656 $35.787 $0.615 $36.424 $0.637 Operating Expenses Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance (161.857) (154.725) (7.132) (159.189) 4.464 (155.333) (3.856) (148.720) (6.613) Claims 120.596 130.325 (9.729) 136.173 (5.848) 142.312 (6.139) 148.755 (6.443) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 7.622 7.775 (0.153) 7.930 (0.155) 8.089 (0.159) 8.251 (0.162) Total Non-Labor Expenses ($33.639) ($16.625) ($17.014) ($15.086) ($1.539) ($4.932) ($10.154) $8.286 ($13.218) Other Expense Adjustments: Other (10.000) (10.150) 0.150 (10.302) 0.152 (10.457) 0.155 (10.614) 0.157 Total Other Expense Adjustments ($10.000) ($10.150) $0.150 ($10.302) $0.152 ($10.457) $0.155 ($10.614) $0.157 Total Expenses Before Depreciation and GASB Adjs. ($43.639) ($26.775) ($16.864) ($25.388) ($1.387) ($15.389) ($9.999) ($2.328) ($13.061) Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses After Depreciation and GASB Adjs. ($43.639) ($26.775) ($16.864) ($25.388) ($1.387) ($15.389) ($9.999) ($2.328) ($13.061) Net Surplus/(Deficit) $77.176 $61.291 ($15.885) $60.560 ($0.731) $51.176 ($9.384) $38.752 ($12.424)
+```
+[p343_c0007] _V-176_
+
+## Page 344
+
+### [p344_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p344_c0002] July Financial Plan 2026 - 2029
+### [p344_c0003] Changes Year-to-Year by Category
+### [p344_c0004] Favorable/(Unfavorable)
+[p344_c0005] ($ in millions)
+### [p344_c0006] Cash Receipts and Expenditures
+### [p344_c0007] Receipts
+[p344_c0008]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income 33.537 34.516 0.979 35.172 0.656 35.787 0.615 36.424 0.637 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts $33.537 $34.516 $0.979 $35.172 $0.656 $35.787 $0.615 $36.424 $0.637
+```
+### [p344_c0009] Expenditures
+### [p344_c0010] Labor Expenditures:
+[p344_c0011]
+
+```text
+Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+### [p344_c0012] Non-Labor Expenditures:
+[p344_c0013]
+
+```text
+Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance (161.857) (154.725) (7.132) (159.189) 4.464 (155.333) (3.856) (148.720) (6.613) Claims 126.110 127.647 (1.537) 125.152 2.495 123.506 1.646 123.920 (0.414) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 7.622 7.775 (0.153) 7.930 (0.155) 8.089 (0.159) 8.251 (0.162) Total Non-Labor Expenditures ($28.125) ($19.303) ($8.822) ($26.107) $6.804 ($23.738) ($2.369) ($16.549) ($7.189)
+```
+### [p344_c0014] Other Expenditure Adjustments:
+[p344_c0015]
+
+```text
+Other 61.662 53.819 7.843 61.279 (7.460) 59.525 1.754 52.973 6.552 Total Other Expenditure Adjustments $61.662 $53.819 $7.843 $61.279 ($7.460) $59.525 $1.754 $52.973 $6.552
+```
+[p344_c0016]
+
+```text
+Total Expenditures $33.537 $34.516 ($0.979) $35.172 ($0.656) $35.787 ($0.615) $36.424 ($0.637) Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p344_c0017]
+
+```text
+Net Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p344_c0018] _V-177_
+
+## Page 345
+
+### [p345_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY July Financial Plan 2026 - 2029 Summary of Changes Between Financial Plans by Category
+### [p345_c0002] 2025 – 2028 JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN
+### [p345_c0003] REVENUE
+- [p345_c0004] • Investment income is based on actuals through April 2025 results, then projected through 2028 based on regional inflation assumptions.
+### [p345_c0005] EXPENSES
+- [p345_c0006] • An increase in Insurance (premium revenue) as projected in the 2025 Mid-Year Forecast of the MTA Summary & Detailed Agency Insurance Cash Budgets. • Claim expenses result from unfavorable developments due to updated loss estimates from actuarial projections. • Other Business Expenses decrease due to updated estimates based on trending actual results through April 2025. The regional inflation rate for Other Business Expenses is expected to increase by 2% annually.
+[p345_c0007] _V-178_
+
+## Page 346
+
+### [p346_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY July Financial Plan 2026 - 2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+[p346_c0002]
+
+```text
+NON-REIMBURSABLE 2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 Baseline Changes Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 Vehicle Toll Revenue - - - - Other Operating Revenue 0.000 0.000 0.000 0.000 Investment Income 16.565 17.039 17.325 17.553 Capital and Other Reimbursement - - - - Total Revenue Changes $16.565 $17.039 $17.325 $17.553 Expenses Labor: Payroll $0.000 $0.000 $0.000 $0.000 Health and Welfare - - - - OPEB Current Payment - - - - Pensions - - - - Other Fringe Benefits - - - - Reimbursable Overhead - - - - Total Labor Expense Changes $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 Insurance 18.975 4.132 0.179 (6.685) Claims (2.720) (5.863) (4.599) (3.042) Paratransit Service Contracts - - - - Maintenance and Other Operating Contracts - - - - Materials & Supplies - - - - Other Business Expenses 1.066 1.087 1.109 1.131 Total Non-Labor Expense Changes $17.321 ($644) ($3.311) ($8.596) Total Expenses before Depreciation and GASB Adjs. Depreciation $0.000 $0.000 $0.000 $0.000 OPEB Obligation - - - - Environmental Remediation - - - - Total Expense Changes $17.321 ($644) ($3.311) ($8.596) Cash Adjustment Changes Revenue: Other Operating Revenue 0.000 0.000 0.000 0.000 Expenses: Claims 9.881 4.482 4.881 8.231 Other Business Expenses 0.000 0.000 0.000 0.000 Total Expense Changes 9.881 4.482 4.881 8.231 Restricted Cash Adjustment (43.767) (20.877) (18.895) (17.188) Total Cash Adjustment Changes ($33.886) ($16.395) ($14.014) ($8.957) Total Baseline Changes $0.000 $0.000 $0.000 $0.000 July Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000
+```
+[p346_c0003] _V-179_
+
+## Page 347
+
+[p347_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p347_c0002] _V-180_
+
+## Page 348
+
+[p348_c0001] New York City Transit
+
+## Page 349
+
+### [p349_c0001] MTA NEW YORK CITY TRANSIT 2026 Preliminary Budget July Financial PLAN 2026 – 2029
+### [p349_c0002] FINANCIAL OVERVIEW
+[p349_c0003] The July Financial Plan provides the resources required to provide a safe, secure and reliable transportation service for customers and employees.
+### [p349_c0004] Financial Highlights
+- [p349_c0005] • Non-Reimbursable Revenue: The Plan reflects $2,358.5 million in additional revenue over the Plan period. Farebox Revenues increase by $109.7 million over the financial plan period. Subway and Bus farebox revenues are reflective of current ridership trends for 2025 and remain unchanged from the Adopted Budget for 2026 through 2029. Paratransit farebox revenue is reflective of current year's actuals with trips growing 15% in 2026, 10% in 2027, and 5% thereafter. Other Operating Revenues increase by $2,248.8 million primarily due to the receipt of a federal formula grant that is being applied as PAYGO capital, as well as an increase in City reimbursement of paratransit expenses. • Non-Reimbursable Expenses: The Plan reflects a $1,447.6 million increase in operating expenses over the Plan period. Several factors contribute to the net changes including increases in paratransit service expenses to reflect higher trip volume and costs, inflationary adjustments, electric power costs, professional service, maintenance and other operating contact expenses. These increases are partially offset by lower health & welfare rates, pension, insurance premiums, and fuel costs. • Headcount: Compared to the February Plan, the July Plan reflects a headcount increase of 225 positions in 2025, 236 positions in 2026, 152 positions in 2027, 130 positions in 2028, and 131 positions in 2029. The non-reimbursable headcount increase is primarily related to service plan adjustments, public safety initiatives, and enhanced preventive maintenance to maintain assets in a state of good repair. The reimbursable headcount increase is reflective of capital support requirements.
+### [p349_c0006] Ridership
+[p349_c0007] Paid ridership in 2025 reflects actual trends observed through April. Projections for subway and bus ridership for 2026 through 2029 remain unchanged. Paratransit ridership is expected to grow by 15% in 2026, 10% in 2027, and 5% annually in the following years. Ridership is expected to reach 1.654 billion in 2025 and grow annually to 1.665 billion in 2026, 1.707 billion in 2027, 1.738 billion in 2028, and 1.739 billion in 2029.
+[p349_c0008] Subway ridership is expected to reach 1.277 billion in 2025, 1.275 billion in 2026, 1.296 billion in 2027, 1.315 billion in 2028, and 1.314 billion in 2029. Bus ridership is expected to reach 361 million in 2025, 372 million in 2026, 391 million in 2027, 402 million in 2028 and 402 million in 2029. Paratransit ridership is expected to reach 16.1 million in 2025, 18.5 million in 2026, 20.3 million in 2027, and then increase 5% annually through 2029.
+[p349_c0009] _V-181_
+
+## Page 350
+
+### [p350_c0001] 2025 MID-YEAR FORECAST
+[p350_c0002] The Mid-Year Forecast includes non-reimbursable revenue totaling $6,089.6 million and non-reimbursable expenses, including depreciation and Government Accounting Standards Board (GASB) adjustments of $13,472.3 million. Mid-Year Forecast reimbursable revenues and expenses each total $1,403.3 million.
+[p350_c0003] Non-reimbursable revenue is higher than the Adopted Budget by $1,676.1 million. Other operating revenue is higher than the Adopted Budget by $1,617.7 million due to the receipt of a federal formula grant that is being applied as PAYGO capital, higher City paratransit reimbursement to account for increased paratransit expenses due to higher trip volume, and higher reimbursement to offset NYC student fares. Farebox revenue is higher than the Adopted Budget by $58.4 million to reflect actual farebox revenue through April 2025.
+[p350_c0004] Non-reimbursable expenses before depreciation and GASB adjustments are higher by $317.5 million. This is primarily driven by the timing of 2024 expenses, maintenance and service-related labor requirements, and paratransit service costs. These are partially offset by lower health and welfare rates, pension and fuel costs.
+[p350_c0005] Full-time positions total 50,409 in the Mid-Year Forecast, which includes 45,544 non-reimbursable positions and 4,864 reimbursable positions.
+### [p350_c0006] 2026 PRELIMINARY BUDGET BASELINE
+[p350_c0007] The 2026 Preliminary Budget includes revenue totaling $6,132.0 million, of which $4,694.8 million is non-reimbursable revenue and $1,437.1 million is reimbursable revenue primarily from reimbursements for capital projects support. Total expenses are $15,351.4 million, of which $12,776.4 million is for operating expenses and the remainder for non-cash depreciation and GASB adjustments. Non-reimbursable operating expenses are $11,339.3 million, and reimbursable operating expenses are $1,437.1 million.
+[p350_c0008] The 2026 Preliminary Budget's cash budget incorporates $6,224.0 million in cash receipts and $12,388.0 million in cash expenditures.
+[p350_c0009] On an accrued basis, total revenues are $138.2 million higher than the February Plan, and total expenses are higher by $504.9 million. Before GASB adjustments and depreciation, total 2026 expenses reflect an increase of $326.6 million. Non-reimbursable expenses increase by $305.6 million, and reimbursable expenses increase by $21.0 million.
+[p350_c0010] Full-time positions total 50,165 for 2026, comprised of 45,463 non-reimbursable positions and 4,702 reimbursable positions. Compared to the February Plan, this represents an increase of 236 positions, with non-reimbursable positions increasing by 133 and reimbursable positions increasing by 103. The increase in non-reimbursable headcount is primarily related to adjustments in service and operations, public safety initiatives, and enhanced preventive maintenance. The increase in reimbursable positions is required to support capital projects.
+[p350_c0011] _V-182_
+
+## Page 351
+
+### [p351_c0001] 2027 - 2029 PROJECTIONS
+[p351_c0002] The baseline projections for 2027 through 2029 reflect NYCT's most recent estimates of revenues and expenses, based on inflation and rate assumptions as well as the impact of initiatives.
+[p351_c0003] Non-reimbursable revenues grow by 2.3% from $4,694.8 million in 2026 to $4,801.9 million in 2027. They continue to rise by 3.9% in 2028 and 1.0% in 2029, reflecting higher Paratransit farebox and City reimbursement.
+[p351_c0004] Non-reimbursable expenses before depreciation and GASB adjustments grow by 4.0% from $11,339.3 million in 2026 to $11,794.9 million in 2027. They continue to rise by 3.5% in 2028 and 4.1% in 2029.
+[p351_c0005] Compared to the February Plan, non-reimbursable revenues are higher by $122.9 million in 2027 and $213.5 million in 2028. These favorable changes are primarily due to higher paratransit farebox and city reimbursement projections. Non-reimbursable expenses before depreciation and GASB adjustments increase by $302.4 million in 2027 and $254.5 million in 2028. This is primarily due to increases in paratransit service contracts to reflect higher trip volume, inflationary changes, electric power costs, maintenance, operating, and professional service contract expenses. These increases are partially offset by lower health & welfare rates, pension, insurance premiums, and fuel costs.
+[p351_c0006] Total headcount is 49,638 in 2027, 49,656 in 2028, and 49,783 in 2029. Compared to the February Plan, headcount increases by 152 positions in 2027 and 130 positions in 2028 to support service, operations, and maintenance requirements.
+[p351_c0007] _V-183_
+
+## Page 352
+
+### [p352_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p352_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue: Subway $2,820.175 $2,966.922 $2,984.465 $3,034.421 $3,077.584 $3,077.043 Bus 614.946 657.263 704.738 741.607 762.739 762.036 Paratransit 26.950 33.108 38.062 41.868 43.961 46.160 Fare Media Liability 71.554 37.795 32.053 13.060 0.000 0.000 Farebox Revenue $3,533.626 $3,695.088 $3,759.318 $3,830.956 $3,884.285 $3,885.239 Other Operating Revenue: Fare Reimbursement 84.016 89.516 84.016 84.016 84.016 84.016 Paratransit Reimbursement 530.035 607.341 658.293 699.711 829.291 875.785 Other 2,512.905 1,697.667 193.212 187.221 191.419 194.896 Other Operating Revenue $3,126.956 $2,394.524 $935.522 $970.948 $1,104.726 $1,154.698 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $6,660.582 $6,089.612 $4,694.839 $4,801.905 $4,989.011 $5,039.937 Operating Expense Labor: Payroll $3,855.050 $4,169.883 $4,258.762 $4,331.931 $4,433.775 $4,525.665 Overtime 685.203 484.599 484.660 494.410 503.939 513.986 Total Salaries and Wages $4,540.253 $4,654.482 $4,743.422 $4,826.341 $4,937.714 $5,039.652 Health and Welfare 1,177.935 1,379.634 1,479.081 1,573.392 1,690.762 1,821.332 OPEB Current Payments 617.061 675.264 736.432 802.908 875.292 954.154 Pension 936.525 1,032.708 1,107.853 1,147.104 1,174.718 1,197.005 Other Fringe Benefits 502.184 630.815 670.223 721.704 767.717 813.417 Total Fringe Benefits $3,233.704 $3,718.420 $3,993.589 $4,245.107 $4,508.489 $4,785.908 Reimbursable Overhead (331.635) (287.375) (301.851) (283.798) (287.010) (293.039) Total Labor Expenses $7,442.323 $8,085.527 $8,435.160 $8,787.651 $9,159.193 $9,532.520 Non-Labor: Electric Power $324.316 $386.267 $393.148 $396.040 $421.009 $442.782 Fuel 121.912 116.188 123.481 121.829 122.287 126.229 Insurance 75.715 85.274 88.414 90.717 93.954 98.466 Claims 800.164 236.261 241.219 246.326 251.587 251.587 Paratransit Service Contracts 616.823 765.499 874.399 947.714 999.456 1,056.993 Maintenance and Other Operating Contracts 361.953 335.911 310.307 318.067 289.398 294.634 Professional Services Contracts 223.826 348.803 313.963 332.473 294.664 302.037 Materials and Supplies 346.020 412.923 404.624 392.011 408.938 437.897 Other Business Expenses 147.623 148.653 154.585 162.044 165.010 163.112 Total Non-Labor Expenses $3,018.352 $2,835.780 $2,904.140 $3,007.221 $3,046.303 $3,173.737 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $10,460.675 $10,921.307 $11,339.300 $11,794.871 $12,205.496 $12,706.257 Depreciation $2,244.257 $2,413.000 $2,437.000 $2,437.000 $2,437.000 $2,437.000 GASB 49 Environmental Remediation 41.015 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (66.206) (66.000) (66.000) (66.000) (66.000) (66.000) GASB 75 OPEB Expense Adjustment 172.793 173.000 173.000 173.000 173.000 173.000 GASB 87 Lease Adjustment 30.923 31.000 31.000 31.000 31.000 31.000 GASB 96 SBITA Adjustment 0.320 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $2,423.102 $2,551.000 $2,575.000 $2,575.000 $2,575.000 $2,575.000 Total Expenses $12,883.777 $13,472.307 $13,914.300 $14,369.871 $14,780.496 $15,281.257 Net Surplus/(Deficit) ($6,223.196) ($7,382.695) ($9,219.461) ($9,567.967) ($9,791.485) ($10,241.321)
+```
+[p352_c0003] _V-184_
+
+## Page 353
+
+### [p353_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p353_c0002]
+
+```text
+Actual Mid-Year Preliminary 2024 Forecast Budget 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 1,432.235 1,403.349 1,437.120 1,377.773 1,391.245 1,419.378 Total Revenues $1,432.235 $1,403.349 $1,437.120 $1,377.773 $1,391.245 $1,419.378 Operating Expense Labor: Payroll $448.535 $549.047 $549.099 $525.467 $529.016 $538.723 Overtime 204.412 142.337 165.598 162.434 165.685 168.996 Total Salaries and Wages $652.947 $691.385 $714.696 $687.901 $694.700 $707.719 Health and Welfare 18.199 20.226 20.680 22.428 24.277 27.253 OPEB Current Payments 16.087 16.545 15.758 16.834 17.957 19.157 Pension 40.553 39.177 38.972 39.724 40.174 40.826 Other Fringe Benefits 219.670 235.525 236.074 224.285 225.752 230.010 Total Fringe Benefits $294.509 $311.474 $311.484 $303.270 $308.160 $317.246 Reimbursable Overhead 331.634 287.375 301.851 283.798 287.010 293.039 Total Labor Expenses $1,279.090 $1,290.234 $1,328.032 $1,274.970 $1,289.871 $1,318.004 Non-Labor: Electric Power $0.302 $0.252 $0.252 $0.252 $0.252 $0.252 Fuel 0.457 0.198 0.198 0.198 0.198 0.198 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 48.963 41.531 41.381 40.381 40.381 40.381 Professional Services Contracts 17.294 13.956 10.063 10.063 10.063 10.063 Materials and Supplies 75.751 58.088 58.088 52.787 51.342 51.342 Other Business Expenses 10.380 (0.909) (0.893) (0.877) (0.861) (0.861) Total Non-Labor Expenses $153.145 $113.115 $109.088 $102.803 $101.374 $101.374 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $1,432.235 $1,403.349 $1,437.120 $1,377.773 $1,391.245 $1,419.378 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p353_c0003] _V-185_
+
+## Page 354
+
+### [p354_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p354_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue: Subway $2,820.175 $2,966.922 $2,984.465 $3,034.421 $3,077.584 $3,077.043 Bus 614.946 657.263 704.738 741.607 762.739 762.036 Paratransit 26.950 33.108 38.062 41.868 43.961 46.160 Fare Media Liability 71.554 37.795 32.053 13.060 0.000 0.000 Farebox Revenue $3,533.626 $3,695.088 $3,759.318 $3,830.956 $3,884.285 $3,885.239 Other Operating Revenue: Fare Reimbursement 84.016 89.516 84.016 84.016 84.016 84.016 Paratransit Reimbursement 530.035 607.341 658.293 699.711 829.291 875.785 Other 2,512.905 1,697.667 193.212 187.221 191.419 194.896 Other Operating Revenue $3,126.956 $2,394.524 $935.522 $970.948 $1,104.726 $1,154.698 Capital and Other Reimbursements 1,432.235 1,403.349 1,437.120 1,377.773 1,391.245 1,419.378 Total Revenues $8,092.816 $7,492.961 $6,131.959 $6,179.677 $6,380.256 $6,459.315 Operating Expense Labor: Payroll $4,303.585 $4,718.931 $4,807.861 $4,857.398 $4,962.791 $5,064.388 Overtime 889.615 626.936 650.257 656.844 669.624 682.983 Total Salaries and Wages $5,193.200 $5,345.867 $5,458.119 $5,514.243 $5,632.414 $5,747.371 Health and Welfare 1,196.134 1,399.860 1,499.761 1,595.820 1,715.039 1,848.585 OPEB Current Payments 633.148 691.809 752.191 819.741 893.249 973.311 Pension 977.078 1,071.886 1,146.825 1,186.827 1,214.892 1,237.831 Other Fringe Benefits 721.854 866.340 906.297 945.989 993.469 1,043.427 Total Fringe Benefits $3,528.213 $4,029.895 $4,305.073 $4,548.378 $4,816.650 $5,103.154 Reimbursable Overhead (0.001) 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $8,721.413 $9,375.762 $9,763.192 $10,062.620 $10,449.064 $10,850.525 Non-Labor: Electric Power $324.618 $386.519 $393.400 $396.292 $421.261 $443.034 Fuel 122.369 116.386 123.679 122.027 122.485 126.427 Insurance 75.715 85.274 88.414 90.717 93.954 98.466 Claims 800.164 236.261 241.219 246.326 251.587 251.587 Paratransit Service Contracts 616.823 765.499 874.399 947.714 999.456 1,056.993 Maintenance and Other Operating Contracts 410.916 377.441 351.687 358.448 329.779 335.015 Professional Services Contracts 241.119 362.759 324.026 342.536 304.727 312.100 Materials and Supplies 421.771 471.010 462.712 444.797 460.279 489.239 Other Business Expenses 158.003 147.744 153.692 161.167 164.149 162.251 Total Non-Labor Expenses $3,171.497 $2,948.895 $3,013.228 $3,110.024 $3,147.677 $3,275.111 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $11,892.910 $12,324.657 $12,776.420 $13,172.644 $13,596.741 $14,125.636 Depreciation $2,244.257 $2,413.000 $2,437.000 $2,437.000 $2,437.000 $2,437.000 GASB 49 Environmental Remediation 41.015 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (66.206) (66.000) (66.000) (66.000) (66.000) (66.000) GASB 75 OPEB Expense Adjustment 172.793 173.000 173.000 173.000 173.000 173.000 GASB 87 Lease Adjustment 30.923 31.000 31.000 31.000 31.000 31.000 GASB 96 SBITA Adjustment 0.320 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $2,423.102 $2,551.000 $2,575.000 $2,575.000 $2,575.000 $2,575.000 Total Expenses $14,316.012 $14,875.657 $15,351.420 $15,747.644 $16,171.741 $16,700.636 Net Surplus/(Deficit) ($6,223.196) ($7,382.695) ($9,219.461) ($9,567.967) ($9,791.485) ($10,241.321)
+```
+[p354_c0003] _V-186_
+
+## Page 355
+
+### [p355_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p355_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $3,442,876 $3,732,610 $3,759,518 $3,831,156 $3,884,485 $3,885,439 Other Operating Revenue: Fare Reimbursement 39,052 104,480 84,016 84,016 84,016 84,016 Paratransit Reimbursement 486,121 665,238 657,694 699,631 829,209 875,698 Other Revenue 210,046 250,936 193,212 187,221 191,419 194,896 Other Operating Revenue 735,219 1,020,654 934,923 970,868 1,104,644 1,154,610 Capital and Other Reimbursements 1,363,743 1,509,042 1,529,558 1,489,522 1,457,863 1,412,439 Total Receipts $5,541,838 $6,262,306 $6,223,998 $6,291,547 $6,446,992 $6,452,488 Expenditures Labor: Payroll $4,258,880 $4,877,502 $4,769,660 $4,818,175 $4,907,522 $5,022,367 Overtime 889,615 626,936 650,257 656,844 669,624 682,983 Total Salaries & Wages $5,148,495 $5,504,438 $5,419,918 $5,475,019 $5,577,146 $5,705,350 Health and Welfare 1,208,681 1,419,367 1,483,933 1,580,032 1,698,066 1,830,340 OPEB Current Payments 633,148 691,809 752,191 819,741 893,249 973,311 Pension 993,818 898,786 1,146,825 1,186,827 1,214,892 1,237,831 Other Fringe Benefits 611,718 646,751 655,701 677,976 705,700 736,798 Total Fringe Benefits $3,447,365 $3,656,712 $4,038,649 $4,264,576 $4,511,907 $4,778,280 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $8,595,860 $9,161,150 $9,458,567 $9,739,596 $10,089,053 $10,483,630 Non-Labor: Electric Power $329,144 $397,441 $404,322 $407,214 $432,183 $453,956 Fuel 121,554 116,386 123,679 122,027 122,485 126,427 Insurance 104,624 88,386 90,182 89,742 94,142 100,678 Claims 151,534 225,206 160,235 165,342 170,603 170,603 Paratransit Service Contracts 599,571 763,499 872,399 945,714 997,456 1,054,993 Maintenance and Other Operating Contracts 394,586 396,441 351,687 358,448 329,779 335,015 Professional Services Contracts 230,487 353,759 315,026 333,536 295,727 303,100 Materials and Supplies 460,731 466,510 458,212 440,297 455,779 484,739 Other Business Expenses 139,817 147,744 153,692 161,167 164,149 162,251 Total Non-Labor Expenditures $2,532,048 $2,955,374 $2,929,434 $3,023,487 $3,062,303 $3,191,761 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $11,127,908 $12,116,524 $12,388,001 $12,763,082 $13,151,357 $13,675,392 Net Cash Balance ($5,586,070) ($5,854,218) ($6,164,003) ($6,471,535) ($6,704,365) ($7,222,903)
+```
+[p355_c0003] _V-187_
+
+## Page 356
+
+### [p356_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p356_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue ($90.750) $37.522 $0.200 $0.200 $0.200 $0.200 Other Operating Revenue: Fare Reimbursement (44.964) 14.964 0.000 0.000 0.000 0.000 Paratransit Reimbursement (43.914) 57.897 (0.599) (0.080) (0.082) (0.088) Other Revenue (2,302.859) (1,446.731) 0.000 0.000 0.000 0.000 Other Operating Revenue ($2,391.737) ($1,373.870) ($0.599) ($0.080) ($0.082) ($0.088) Capital and Other Reimbursements (68.492) 105.692 92.438 111.750 66.618 (6.939) Total Receipts ($2,550.978) ($1,230.655) $92.039 $111.870 $66.736 ($6.827) Expenditures Labor: Payroll $44.705 ($158.571) $38.201 $39.223 $55.268 $42.021 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Total Salaries and Wages $44.705 ($158.571) $38.201 $39.223 $55.268 $42.021 Health and Welfare (12.547) (19.507) 15.828 15.788 16.973 18.245 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension (16.740) 173.100 0.000 0.000 0.000 0.000 Other Fringe Benefits 110.136 219.589 250.596 268.013 287.769 306.629 Total Fringe Benefits $80.848 $373.182 $266.424 $283.801 $304.742 $324.874 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (0.001) 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $125.553 $214.612 $304.625 $323.025 $360.011 $366.894 Non-Labor: Electric Power ($4.526) ($10.922) (10.922) ($10.922) ($10.922) ($10.922) Fuel 0.815 0.000 0.000 0.000 0.000 0.000 Insurance (28.909) (3.112) (1.768) 0.975 (0.189) (2.212) Claims 648.630 11.055 80.984 80.984 80.984 80.984 Paratransit Service Contracts 17.252 2.000 2.000 2.000 2.000 2.000 Maintenance and Other Operating Contracts 16.330 (19.000) 0.000 0.000 0.000 0.000 Professional Services Contracts 10.632 9.000 9.000 9.000 9.000 9.000 Materials and Supplies (38.960) 4.500 4.500 4.500 4.500 4.500 Other Business Expenses 18.186 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures $639.449 ($6.479) $83.794 $86.537 $85.374 $83.350 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $765.002 $208.133 $388.419 $409.562 $445.384 $450.244 Total Cash Conversion Adjustments before Depreciation ($1,785.977) ($1,022.523) $480.457 $521.431 $512.120 $443.417 Depreciation $2,244.257 $2,413.000 $2,437.000 $2,437.000 $2,437.000 $2,437.000 GASB 49 Environmental Remediation 41.015 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (66.206) (66.000) (66.000) (66.000) (66.000) (66.000) GASB 75 OPEB Expense Adjustment 172.793 173.000 173.000 173.000 173.000 173.000 GASB 87 Lease Adjustment 30.923 31.000 31.000 31.000 31.000 31.000 GASB 96 SBITA Adjustment 0.320 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $2,423.102 $2,551.000 $2,575.000 $2,575.000 $2,575.000 $2,575.000 Total Cash Conversion Adjustments $637.126 $1,528.477 $3,055.457 $3,096.431 $3,087.120 $3,018.417
+```
+[p356_c0003] _V-188_
+
+## Page 357
+
+### [p357_c0001] MTA NEW YORK CITY TRANSIT 2026 Preliminary Budget July Financial Plan 2026 – 2029 Year-to-Year Changes by Category-Baseline
+### [p357_c0002] REVENUE
+### [p357_c0003] Farebox Revenue
+- [p357_c0004] • Subway and Bus farebox revenue estimates for 2025 reflect current ridership trends. For the remainder of the Plan period, farebox revenue projections are unchanged from the February Plan. • Paratransit Farebox Revenue for 2025 is reflective of current ridership trends. Farebox revenue is projected to increase by 15% in 2026, 10% in 2027 and 5% thereafter.
+### [p357_c0005] Other Operating Revenue
+- [p357_c0006] • City paratransit reimbursement, consistent with State Law, 2026-2027 is budgeted at 80% of eligible annual paratransit expenses, net of farebox revenue and Urban Tax receipts, and is capped at the sum of 50% of net paratransit operating expenses plus $165 million. For 2028–2029, City reimbursement is budgeted at 80% of net paratransit operating expenses. • Other Revenue includes changes in advertising, real estate, and the portion of Urban Tax receipts dedicated to paratransit operations.
+### [p357_c0007] Capital and Other Reimbursements
+- [p357_c0008] • Annual reimbursement levels fluctuate year-to-year based on capital project requirements. • Annual cash adjustments are included to recognize changes in the timing of receipts.
+### [p357_c0009] EXPENSES
+### [p357_c0010] Payroll
+- [p357_c0011] • Salaries for represented employees follow pattern settlements, followed by annual increases of 2%. • Salaries for non-represented employees assume annual increases of 2% starting in 2026.
+### [p357_c0012] Overtime
+- [p357_c0013] • Payroll wage rate increase assumptions apply.
+### [p357_c0014] Health & Welfare
+- [p357_c0015] • Projections for 2027 through 2028 assume a general increase in rates for annual and hourly employees. Projected changes also reflect the impact of headcount change.
+### [p357_c0016] Pensions
+- [p357_c0017] • Projections are consistent with current actuarial assumptions.
+### [p357_c0018] Other Fringe Benefits
+- [p357_c0019] • Projected changes year-to-year reflect payroll amounts and reimbursable headcount assumptions.
+[p357_c0020] _V-189_
+
+## Page 358
+
+### [p358_c0001] Electric Power
+- [p358_c0002] • The July Plan reflects projections of New York Power Authority energy supply rates for traction power and non-traction power, and for Con Edison delivery rates.
+### [p358_c0003] Fuel
+- [p358_c0004] • The July Plan reflects projected fuel prices and usage requirements.
+### [p358_c0005] Insurance
+- [p358_c0006] • Expenses reflect the latest premium projections.
+### [p358_c0007] Paratransit Service Contracts
+- [p358_c0008] • Cost-per-trip projections reflect current trends with annual inflation-based rate increases. • The number of trips is projected to increase 15% in 2026, 10% in 2027 and 5% thereafter through the Plan period, consistent with trip trends.
+### [p358_c0009] Maintenance and Other Operating Contracts
+- [p358_c0010] • Year-to-year expense changes reflect the reforecast of Paratransit fleet purchases, as well as the timing of 2024 expenses. The remaining changes are due to the maintenance contract for the communications-based train control system along with comprehensive maintenance and support services for the Buses' new digital radio system for communication with the bus command center.
+### [p358_c0011] Professional Service Contracts
+- [p358_c0012] • Annual expense levels differ year-to-year primarily due to the timing of projects such as Automated Camera Enforcement (ACE), OMNY fare payment system configuration expenses, and inflationary changes.
+### [p358_c0013] Materials and Supplies
+- [p358_c0014] • Year-to-year changes are due to material requirements for revenue vehicles and the timing of 2024 expenses. Other changes reflect inflationary projections.
+### [p358_c0015] Other Business Expenses
+- [p358_c0016] • Other Business Expenses reflect fare media card processing fees.
+### [p358_c0017] Depreciation
+- [p358_c0018] • Reflects depreciation of current assets, as well as estimates for capital projects based on their introduction into beneficial use.
+[p358_c0019] _V-190_
+
+## Page 359
+
+### [p359_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p359_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable Operating Revenues Subway 2,966.922 2,984.465 17.543 3,034.421 49.956 3,077.584 43.163 3,077.043 (0.541) Bus 657.263 704.738 47.476 741.607 36.869 762.739 21.132 762.036 (0.703) Paratransit 33.108 38.062 4.954 41.868 3.806 43.961 2.093 46.160 2.198 Fare Media Liability 37.795 32.053 (5.742) 13.060 (18.993) 0.000 (13.060) 0.000 0.000 Total Farebox Revenue $3,695.088 $3,759.318 $64.230 $3,830.956 $71.639 $3,884.285 $53.328 $3,885.239 $0.954 Fare Reimbursement 89.516 84.016 (5.500) 84.016 0.000 84.016 0.000 84.016 0.000 Paratransit Reimbursement 607.341 658.293 50.952 699.711 41.418 829.291 129.579 875.785 46.495 Other 1,697.667 193.212 (1,504.455) 187.221 (5.992) 191.419 4.198 194.896 3.477 Total Other Operating Revenue 2,394.524 935.522 (1,459.002) 970.948 35.427 1,104.726 133.778 1,154.698 49.972 Total Revenues $6,089.612 $4,694.839 ($1,394.772) $4,801.905 $107.065 $4,989.011 $187.106 $5,039.937 $50.926 Operating Expenses Labor: Payroll $4,169.883 $4,258.762 ($88.879) $4,331.931 ($73.169) $4,433.775 ($101.844) $4,525.665 ($91.890) Overtime 484.599 484.660 (0.061) 494.410 (9.750) 503.939 (9.529) 513.986 (10.048) Health and Welfare 1,379.634 1,479.081 (99.448) 1,573.392 (94.310) 1,690.762 (117.371) 1,821.332 (130.569) OPEB Current Payments 675.264 736.432 (61.168) 802.908 (66.476) 875.292 (72.384) 954.154 (78.862) Pension 1,032.708 1,107.853 (75.145) 1,147.104 (39.251) 1,174.718 (27.614) 1,197.005 (22.288) Other Fringe Benefits 630.815 670.223 (39.408) 721.704 (51.481) 767.717 (46.013) 813.417 (45.700) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (287.375) (301.851) 14.476 (283.798) (18.053) (287.010) 3.212 (293.039) 6.029 Total Labor Expenses $8,085.527 $8,435.160 ($349.632) $8,787.651 ($352.491) $9,159.193 ($371.543) $9,532.520 ($373.327) Non-Labor: Electric Power $386.267 $393.148 ($6.881) $396.040 ($2.892) $421.009 ($24.969) $442.782 ($21.773) Fuel 116.188 123.481 (7.293) 121.829 1.652 122.287 (0.458) 126.229 (3.942) Insurance 85.274 88.414 (3.140) 90.717 (2.303) 93.954 (3.237) 98.466 (4.512) Claims 236.261 241.219 (4.958) 246.326 (5.107) 251.587 (5.261) 251.587 0.000 Paratransit Service Contracts 765.499 874.399 (108.901) 947.714 (73.315) 999.456 (51.742) 1,056.993 (57.537) Maintenance and Other Operating Contracts 335.911 310.307 25.604 318.067 (7.760) 289.398 28.669 294.634 (5.236) Professional Services Contracts 348.803 313.963 34.840 332.473 (18.510) 294.664 37.809 302.037 (7.373) Materials and Supplies 412.923 404.624 8.299 392.011 12.613 408.938 (16.927) 437.897 (28.959) Other Business Expenses 148.653 154.585 (5.932) 162.044 (7.459) 165.010 (2.966) 163.112 1.898 Total Non-Labor Expenses $2,835.780 $2,904.140 ($68.360) $3,007.221 ($103.080) $3,046.303 ($39.082) $3,173.737 ($127.434) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $10,921.307 $11,339.300 ($417.993) $11,794.871 ($455.571) $12,205.496 ($410.625) $12,706.257 ($500.761) Depreciation $2,413.000 $2,437.000 ($24.000) $2,437.000 $0.000 $2,437.000 $0.000 $2,437.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (66.000) (66.000) 0.000 (66.000) 0.000 (66.000) 0.000 (66.000) 0.000 GASB 75 OPEB Expense Adjustment 173.000 173.000 0.000 173.000 0.000 173.000 0.000 173.000 0.000 GASB 87 Lease Adjustment 31.000 31.000 0.000 31.000 0.000 31.000 0.000 31.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $2,551.000 $2,575.000 ($24.000) $2,575.000 $0.000 $2,575.000 $0.000 $2,575.000 $0.000 Total Expenses After Depreciation and GASB Adjs. $13,472.307 $13,914.300 ($441.993) $14,369.871 ($455.571) $14,780.496 ($410.625) $15,281.257 ($500.761) Net Surplus/(Deficit) ($7,382.695) ($9,219.461) ($1,836.765) ($9,567.967) ($348.506) ($9,791.485) ($223.519) ($10,241.321) ($449.835)
+```
+[p359_c0003] _V-191_
+
+## Page 360
+
+### [p360_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p360_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Reimbursable Operating Revenues Subway 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Bus 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Fare Media Liability 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fare Reimbursement 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Reimbursement 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 1,403.349 1,437.120 33.771 1,377.773 (59.347) 1,391.245 13.472 1,419.378 28.134 Total Revenues $1,403.349 $1,437.120 $33.771 $1,377.773 ($59.347) $1,391.245 $13.472 $1,419.378 $28.134 Operating Expenses Labor: Payroll $549.047 $549.099 ($0.051) $525.467 $23.632 $529.016 ($3.548) $538.723 ($9.707) Overtime 142.337 165.598 (23.260) 162.434 3.164 165.685 (3.251) 168.996 (3.311) Health and Welfare 20.226 20.680 (0.453) 22.428 (1.748) 24.277 (1.849) 27.253 (2.976) OPEB Current Payments 16.545 15.758 0.787 16.834 (1.075) 17.957 (1.123) 19.157 (1.200) Pension 39.177 38.972 0.205 39.724 (0.752) 40.174 (0.451) 40.826 (0.651) Other Fringe Benefits 235.525 236.074 (0.549) 224.285 11.789 225.752 (1.467) 230.010 (4.258) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 287.375 301.851 (14.476) 283.798 18.053 287.010 (3.212) 293.039 (6.029) Total Labor Expenses $1,290.234 $1,328.032 ($37.798) $1,274.970 $53.062 $1,289.871 ($14.901) $1,318.004 ($28.134) Non-Labor: Electric Power $0.252 $0.252 $0.000 $0.252 $0.000 $0.252 $0.000 $0.252 $0.000 Fuel 0.198 0.198 0.000 0.198 0.000 0.198 0.000 0.198 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 41.531 41.381 0.150 40.381 1.000 40.381 0.000 40.381 0.000 Professional Services Contracts 13.956 10.063 3.893 10.063 0.000 10.063 0.000 10.063 0.000 Materials and Supplies 58.088 58.088 0.000 52.787 5.301 51.342 1.445 51.342 0.000 Other Business Expenses (0.909) (0.893) (0.016) (0.877) (0.016) (0.861) (0.016) (0.861) 0.000 Total Non-Labor Expenses $113.115 $109.088 $4.027 $102.803 $6.285 $101.374 $1.429 $101.374 $0.000 Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $1,403.349 $1,437.120 ($33.771) $1,377.773 $59.347 $1,391.245 ($13.472) $1,419.378 ($28.134) Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p360_c0003] _V-192_
+
+## Page 361
+
+### [p361_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p361_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Non-Reimbursable and Reimbursable Operating Revenues Subway 2,966,922 2,984,465 17,543 3,034,421 49,956 3,077,584 43,163 3,077,043 (0,541) Bus 657,263 704,738 47,476 741,607 36,869 762,739 21,132 762,036 (0,703) Paratransit 33,108 38,062 4,954 41,868 3,806 43,961 2,093 46,160 2,198 Fare Media Liability 37,795 32,053 (5,742) 13,060 (18,993) 0.000 (13,060) 0.000 0.000 Total Farebox Revenue $3,695,088 $3,759,318 $64,230 $3,830,956 $71,639 $3,884,285 $53,328 $3,885,239 $0,954 Fare Reimbursement 89,516 84,016 (5,500) 84,016 0.000 84,016 0.000 84,016 0.000 Paratransit Reimbursement 607,341 658,293 50,952 699,711 41,418 829,291 129,579 875,785 46,495 Other 1,697,667 193,212 (1,504,455) 187,221 (5,992) 191,419 4,198 194,896 3,477 Total Other Operating Revenue 2,394,524 935,522 (1,459,002) 970,948 35,427 1,104,726 133,778 1,154,698 49,972 Capital and Other Reimbursements 1,403,349 1,437,120 33,771 1,377,773 (59,347) 1,391,245 13,472 1,419,378 28,134 Total Revenues $7,492,961 $6,131,959 ($1,361,002) $6,179,677 $47,718 $6,380,256 $200,578 $6,459,315 $79,059 Operating Expenses Labor: Payroll $4,718,931 $4,807,861 ($88,930) $4,857,398 ($49,537) $4,962,791 ($105,392) $5,064,388 ($101,597) Overtime 626,936 650,257 (23,321) 656,844 (6,587) 669,624 (12,780) 682,983 (13,359) Health and Welfare 1,399,860 1,499,761 (99,901) 1,595,820 (96,058) 1,715,039 (119,220) 1,848,585 (133,546) OPEB Current Payments 691,809 752,191 (60,381) 819,741 (67,551) 893,249 (73,507) 973,311 (80,062) Pension 1,071,886 1,146,825 (74,939) 1,186,827 (40,003) 1,214,892 (28,065) 1,237,831 (22,939) Other Fringe Benefits 866,340 906,297 (39,957) 945,989 (39,692) 993,469 (47,480) 1,043,427 (49,957) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $9,375,762 $9,763,192 ($387,430) $10,062,620 ($299,429) $10,449,064 ($386,444) $10,850,525 ($401,461) Non-Labor: Electric Power $386,519 $393,400 ($6,881) $396,292 ($2,892) $421,261 ($24,969) $443,034 ($21,773) Fuel 116,386 123,679 (7,293) 122,027 1,652 122,485 (0,458) 126,427 (3,942) Insurance 85,274 88,414 (3,140) 90,717 (2,303) 93,954 (3,237) 98,466 (4,512) Claims 236,261 241,219 (4,958) 246,326 (5,107) 251,587 (5,261) 251,587 0.000 Paratransit Service Contracts 765,499 874,399 (108,901) 947,714 (73,315) 999,456 (51,742) 1,056,993 (57,537) Maintenance and Other Operating Contracts 377,441 351,687 25,754 358,448 (6,760) 329,779 28,669 335,015 (5,236) Professional Services Contracts 362,759 324,026 38,733 342,536 (18,510) 304,727 37,809 312,100 (7,373) Materials and Supplies 471,010 462,712 8,299 444,797 17,914 460,279 (15,482) 489,239 (28,959) Other Business Expenses 147,744 153,692 (5,948) 161,167 (7,475) 164,149 (2,982) 162,251 1,898 Total Non-Labor Expenses $2,948,895 $3,013,228 ($64,333) $3,110,024 ($96,795) $3,147,677 ($37,653) $3,275,111 ($127,434) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $12,324,657 $12,776,420 ($451,763) $13,172,644 ($396,224) $13,596,741 ($424,097) $14,125,636 ($528,895) Depreciation $2,413,000 $2,437,000 ($24,000) $2,437,000 $0.000 $2,437,000 $0.000 $2,437,000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (66,000) (66,000) 0.000 (66,000) 0.000 (66,000) 0.000 (66,000) 0.000 GASB 75 OPEB Expense Adjustment 173,000 173,000 0.000 173,000 0.000 173,000 0.000 173,000 0.000 GASB 87 Lease Adjustment 31,000 31,000 0.000 31,000 0.000 31,000 0.000 31,000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $2,551,000 $2,575,000 ($24,000) $2,575,000 $0.000 $2,575,000 $0.000 $2,575,000 $0.000 Total Expenses After Depreciation and GASB Adjs. $14,875,657 $15,351,420 ($475,763) $15,747,644 ($396,224) $16,171,741 ($424,097) $16,700,636 ($528,895) Net Surplus/(Deficit) ($7,382,695) ($9,219,461) ($1,836,765) ($9,567,967) ($348,506) ($9,791,485) ($223,519) ($10,241,321) ($449,835)
+```
+[p361_c0003] _V-193_
+
+## Page 362
+
+### [p362_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+### [p362_c0002] Cash Receipts and Expenditures
+### [p362_c0003] Receipts
+[p362_c0004]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Farebox Receipts $3,732,610 $3,759,518 $26,908 $3,831,156 $71,639 $3,884,485 $53,328 $3,885,439 $0.954 Fare Reimbursement 104,480 84,016 (20,464) 84,016 0.000 84,016 0.000 84,016 0.000 Paratransit Reimbursement 665,238 657,694 (7,544) 699,631 41,937 829,209 129,577 875,698 46,489 Other 250,936 193,212 (57,724) 187,221 (5,992) 191,419 4,198 194,896 3,477 Total Other Operating Revenue 1,020,654 934,923 (85,732) 970,868 35,946 1,104,644 133,776 1,154,610 49,966 Capital and Other Reimbursements 1,509,042 1,529,558 20,516 1,489,522 (40,036) 1,457,863 (31,660) 1,412,439 (45,423) Total Receipts $6,262,306 $6,223,998 ($38,308) $6,291,547 $67,549 $6,446,992 $155,445 $6,452,488 $5,497
+```
+### [p362_c0005] Expenditures
+### [p362_c0006] Labor Expenditures:
+[p362_c0007]
+
+```text
+Payroll $4,877,502 $4,769,660 $107,841 $4,818,175 ($48,515) $4,907,522 ($89,347) $5,022,367 ($114,845) Overtime 626,936 650,257 (23,321) 656,844 (6,587) 669,624 (12,780) 682,983 (13,359) Health and Welfare 1,419,367 1,483,933 (64,566) 1,580,032 (96,098) 1,698,066 (118,035) 1,830,340 (132,274) OPEB Current Payments 691,809 752,191 (60,381) 819,741 (67,551) 893,249 (73,507) 973,311 (80,062) Pension 898,786 1,146,825 (248,039) 1,186,827 (40,003) 1,214,892 (28,065) 1,237,831 (22,939) Other Fringe Benefits 646,751 655,701 (8,950) 677,976 (22,275) 705,700 (27,724) 736,798 (31,098) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $9,161,150 $9,458,567 ($297,417) $9,739,596 ($281,029) $10,089,053 ($349,458) $10,483,630 ($394,577)
+```
+### [p362_c0008] Non-Labor Expenditures:
+[p362_c0009]
+
+```text
+Electric Power $397,441 $404,322 ($6,881) $407,214 ($2,892) $432,183 ($24,969) $453,956 ($21,773) Fuel 116,386 123,679 (7,293) 122,027 1,652 122,485 (0,458) 126,427 (3,942) Insurance 88,386 90,182 (1,796) 89,742 0,440 94,142 (4,401) 100,678 (6,536) Claims 225,206 160,235 64,971 165,342 (5,107) 170,603 (5,261) 170,603 0.000 Paratransit Service Contracts 763,499 872,399 (108,901) 945,714 (73,315) 997,456 (51,742) 1,054,993 (57,537) Maintenance and Other Operating Contracts 396,441 351,687 44,754 358,448 (6,760) 329,779 28,669 335,015 (5,236) Professional Services Contracts 353,759 315,026 38,733 333,536 (18,510) 295,727 37,809 303,100 (7,373) Materials and Supplies 466,510 458,212 8,299 440,297 17,914 455,779 (15,482) 484,739 (28,959) Other Business Expenses 147,744 153,692 (5,948) 161,167 (7,475) 164,149 (2,982) 162,251 1,898 Total Non-Labor Expenditures $2,955,374 $2,929,434 $25,940 $3,023,487 ($94,052) $3,062,303 ($38,817) $3,191,761 ($129,458)
+```
+### [p362_c0010] Other Expenditure Adjustments:
+[p362_c0011]
+
+```text
+Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p362_c0012]
+
+```text
+Total Expenditures $12,116,524 $12,388,001 ($271,477) $12,763,082 ($375,081) $13,151,357 ($388,274) $13,675,392 ($524,035) Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p362_c0013]
+
+```text
+Net Cash Surplus/(Deficit) ($5,854,218) ($6,164,003) ($309,785) ($6,471,535) ($307,532) ($6,704,365) ($232,830) ($7,222,903) ($518,538)
+```
+[p362_c0014] _V-194_
+
+## Page 363
+
+### [p363_c0001] MTA NEW YORK CITY TRANSIT 2026 Preliminary Budget July Financial Plan 2026 – 2029 Summary of Major Plan-to-Plan Changes by Generic Categories
+### [p363_c0002] 2025: MID-YEAR FORECAST VS. ADOPTED BUDGET
+[p363_c0003] The 2025 Mid-Year Forecast is based on actual performance through April with projections for the remainder of the year based on current trends and known activities.
+### [p363_c0004] REVENUE
+- [p363_c0005] • Farebox Revenue is revised higher, based on actuals through April 2025 and current trends through the end of the year. • Other operating revenue is higher primarily due to the receipt of a federal formula grant that is being applied as PAYGO capital, insurance recoveries, as well as an increase in City reimbursement of paratransit expenses.
+### [p363_c0006] EXPENSES
+- [p363_c0007] • Payroll expenses increase due to the changes in maintenance and service plan headcount requirements. • Overtime increases in 2025 due to the timing of projects, as well as service and programmatic maintenance requirements. • Health & Welfare/OPEB current costs decrease due to lower health & welfare rates. • Pensions decrease slightly based on the latest actuarial estimates. • Other fringe benefits expenses decrease slightly mainly due to a reassessment in the amount of capital project activity and headcount changes. • Electric Power expenses increase primarily due to higher consumption and rates. • Fuel expenses decrease due to lower fuel prices and consumption. • Insurance expenses increase due to higher premium inflation assumptions. • Maintenance and Other Operating Contracts increase mainly due to the timing of major programmatic expenses, as well as the reforecast of paratransit fleet purchases. • Professional Service Contracts increase mainly due to the timing of 2024 expenses and investments in the workers' compensation claims management system. • Paratransit Service Contracts increase due to higher trip volume and operational support needs. • Materials and Supplies increase mainly due to the timing of 2024 expenses, inflationary changes, and additional maintenance requirements for the revenue fleet. • Other Business Expenses is slightly higher primarily due to the timing of 2024 expenses.
+[p363_c0008] _V-195_
+
+## Page 364
+
+### [p364_c0001] 2026-2028: JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN
+### [p364_c0002] REVENUE
+- [p364_c0003] • Farebox revenue is higher due to higher paratransit farebox revenue. • Other operating revenue is higher primarily due to higher City paratransit reimbursement driven by increased trip volume. • Capital and other reimbursements are higher reflecting additional capital project requirements.
+### [p364_c0004] EXPENSES
+- [p364_c0005] • Payroll increases due to maintenance and service plan requirements. • Overtime expenses increase slightly primarily due to adjustments in maintenance and service plan requirements. • Health & Welfare/OPEB costs decrease primarily due to rate changes. • Pension expenses reflect the latest actuarial estimates. • Other Fringe Benefits expenses increase slightly, reflecting headcount changes due to operating and capital activities. • Electric Power and Fuel changes are based on the latest NYPA projections, fuel prices, and consumption estimates. • Insurance expenses decrease due to lower premium inflation assumptions. • Paratransit Service Contracts increase mainly due to higher trip volume. • Maintenance and Other Operating Contracts increase primarily due to operating budget impacts for communications-based train control and bus radio maintenance, as well as Paratransit fleet reforecast. • Professional Service Contracts increase primarily due to investments in workers' compensation claim management system, OMNY fare payment system configurations, and higher real estate expenses. • Materials and Supplies increase primarily due to inflationary adjustments. • Other Business expenses had no significant budgetary changes.
+[p364_c0006] _V-196_
+
+## Page 365
+
+### [p365_c0001] MTA New York City Transit July Financial Plan 2026 - 2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+[p365_c0002]
+
+```text
+NON-REIMBURSABLE 2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) ($5,934.669) ($6,022.817) ($6,397.481) ($6,738.025) Baseline Changes Revenue Farebox Revenue $58.389 $11.634 $12.938 $12.462 Other Operating Revenue 1,617.727 105.562 109.986 201.064 Capital and Other Reimbursement - - - - Total Revenue Changes $1,676.116 $117.195 $122.925 $213.526 Expenses Labor: Payroll ($4.445) ($10.352) ($10.985) ($10.948) Overtime (16.211) (2.541) (2.579) (2.640) Health and Welfare 3.847 1.234 3.661 5.210 OPEB Current Payment 10.936 12.708 14.577 16.689 Pensions 5.144 (5.283) 14.646 32.019 Other Fringe Benefits (0.270) 2.487 (0.280) (1.275) Reimbursable Overhead (8.255) 5.798 1.517 0.433 Total Labor Expense Changes ($9.253) $4.051 $20.557 $39.488 Non-Labor: Electric Power ($35.585) ($15.172) ($9.311) ($15.730) Fuel 15.650 14.417 15.052 16.380 Insurance (0.804) (2.281) 2.012 6.071 Claims (0.000) (0.000) (0.000) (0.000) Paratransit Service Contracts (150.221) (226.775) (266.495) (272.349) Maintenance and Other Operating Contracts (26.240) (35.144) (32.174) 3.772 Professional Service Contracts (64.836) (10.284) (5.688) (5.832) Materials & Supplies (45.872) (34.169) (25.962) (25.802) Other Business Expenses (0.293) (0.193) (0.356) (0.535) Total Non-Labor Expense Changes ($308.202) ($309.601) ($322.922) ($294.025) Depreciation/OPEB/GASB ($181.278) ($178.278) ($155.278) ($132.278) Total Expense Changes ($498.733) ($483.828) ($457.642) ($386.815) Cash Adjustment Changes Revenue (1,234.269) 94.234 103.547 71.720 Expense (43.940) (47.065) 1.839 2.951 Depreciation/OPEB/GASB 181.278 178.278 155.278 132.278 Total Cash Adjustment Changes ($1,096.932) $225.446 $260.663 $206.949 Total Baseline Changes $80.451 ($141.186) ($74.054) $33.660 Total Changes $80.451 ($141.186) ($74.054) $33.660 July Financial Plan - Cash Surplus/(Deficit) ($5,854.218) ($6,164.003) ($6,471.535) ($6,704.365)
+```
+[p365_c0003] _V-197_
+
+## Page 366
+
+### [p366_c0001] MTA New York City Transit July Financial Plan 2026 - 2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+[p366_c0002]
+
+```text
+REIMBURSABLE 2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 Baseline Changes Revenue Farebox Revenue Other Operating Revenue Capital and Other Reimbursement (8.355) 21.045 5.482 (1.093) Total Revenue Changes ($8.355) $21.045 $5.482 ($1.093) Expenses Labor: Payroll ($7.674) ($11.604) ($3.341) ($0.927) Overtime 20.920 1.308 0.397 0.404 Health and Welfare (0.523) 0.657 0.777 0.885 OPEB Current Payment (1.236) 0.637 0.702 0.801 Pensions (1.108) 1.566 2.107 2.720 Other Fringe Benefits (0.899) (2.326) 0.878 2.104 Reimbursable Overhead 8.255 (5.798) (1.517) (0.433) Total Labor Expense Changes $17.733 ($15.560) $0.003 $5.554 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 Fuel - - - - Insurance - - - - Claims - - - - Paratransit Service Contracts - - - - Maintenance and Other Operating Contracts (4.400) (4.390) (4.390) (4.390) Professional Service Contracts (3.955) (0.217) (0.217) (0.217) Materials & Supplies (1.024) (1.024) (1.024) 0.000 Other Business Expenses 0.000 0.145 0.145 0.145 Total Non-Labor Expense Changes ($9.378) ($5.485) ($5.485) ($4.461) Total Expense Changes $8.355 ($21.045) ($5.482) $1.093 Cash Adjustment Changes Capital Reimbursement Timing Total Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Baseline Changes $0.000 $0.000 $0.000 $0.000 July Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000
+```
+[p366_c0003] _V-198_
+
+## Page 367
+
+### [p367_c0001] MTA New York City Transit July Financial Plan 2026 - 2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+[p367_c0002]
+
+```text
+NON-REIMBURSABLE and REIMBURSABLE 2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) ($5,934.669) ($6,022.817) ($6,397.481) ($6,738.025) Baseline Changes Revenue Farebox Revenue $58.389 $11.634 $12.938 $12.462 Other Operating Revenue 1,617.727 105.562 109.986 201.064 Capital and Other Reimbursement (8.355) 21.045 5.482 (1.093) Total Revenue Changes $1,667.761 $138.240 $128.406 $212.433 Expenses Labor: Payroll ($12.120) ($21.956) ($14.326) ($11.875) Overtime 4.709 (1.232) (2.182) (2.236) Health and Welfare 3.324 1.891 4.438 6.095 OPEB Current Payment 9.700 13.344 15.280 17.490 Pensions 4.035 (3.717) 16.754 34.739 Other Fringe Benefits (1.169) 0.161 0.598 0.829 Reimbursable Overhead 0.000 0.000 0.000 0.000 Total Labor Expense Changes $8.479 ($11.509) $20.561 $45.042 Non-Labor: Electric Power ($35.585) ($15.172) ($9.311) ($15.730) Fuel 15.650 14.417 15.052 16.380 Insurance (0.804) (2.281) 2.012 6.071 Claims (0.000) (0.000) (0.000) (0.000) Paratransit Service Contracts (150.221) (226.775) (266.495) (272.349) Maintenance and Other Operating Contracts (30.639) (39.533) (36.564) (0.618) Professional Service Contracts (68.791) (10.501) (5.905) (6.049) Materials & Supplies (46.895) (35.193) (26.985) (25.801) Other Business Expenses (0.293) (0.048) (0.211) (0.390) Total Non-Labor Expense Changes ($317.580) ($315.086) ($328.407) ($298.486) Depreciation/OPEB/GASB ($181.278) ($178.278) ($155.278) ($132.278) Total Expense Changes ($490.379) ($504.873) ($463.124) ($385.722) Cash Adjustment Changes Revenue (1,234.269) 94.234 103.547 71.720 Expense (43.940) (47.065) 1.839 2.951 Capital Reimbursement Timing 0.000 0.000 0.000 0.000 Depreciation/OPEB/GASB 181.278 178.278 155.278 132.278 Total Cash Adjustment Changes ($1,096.932) $225.446 $260.663 $206.949 Total Baseline Changes $80.451 ($141.186) ($74.054) $33.660 November Financial Plan - Cash Surplus/(Deficit) ($5,854.218) ($6,164.003) ($6,471.535) ($6,704.365)
+```
+[p367_c0003] _V-199_
+
+## Page 368
+
+### [p368_c0001] MTA New York City Transit July Financial Plan 2026 - 2029 Summary of Major Programmatic Changes Between Financial Plans ($ in millions)
+### [p368_c0002] TOTAL NON-REIMBURSABLE and REIMBURSABLE
+[p368_c0003]
+
+```text
+2025 2026 2027 2028 February Financial Plan - Cash Surplus/(Deficit) ($5,934.669) ($6,022.817) ($6,397.481) ($6,738.025) Non-Reimbursable Major Changes Revenue Farebox Revenue $58.389 $11.634 $12.938 $12.462 Preventive Maintenance Grant for PAYGO 1,446.731 - - - IDA Reimbursement 49.918 - - - NYC Paratransit Subsidy 103.758 101.413 103.645 193.856 Advertising Revenue 11.106 4.639 4.735 4.729 Student Fare Assistant 5.500 - - - Other Operating Revenue 0.714 (0.490) 1.606 2.479 Sub-Total Non-Reimbursable Revenue Changes $1,676.116 $117.195 $122.925 $213.526 Expenses Inflation-Related: Energy-Fuel 15.650 14.417 15.052 16.380 Energy-Electric Power (35.585) (15.172) (9.311) (15.730) Health and Welfare 18.922 20.315 23.095 26.222 Insurance (0.804) (2.053) 2.263 6.349 Workers Compensation Adjustment - (0.546) (0.556) (0.568) Pension 5.144 (2.963) 16.300 33.412 Changes in Inflation-Other (15.269) (31.897) (27.607) (26.156) Sub-total Inflation-Related ($11.942) ($17.899) $19.236 $39.909 Programmatic Initiatives: Subway Action Plan - Rollover (4.240) - - - Sub-total Programmatic Initiatives ($4.240) $0.00 $0.00 $0.00 Technical Adjustments/Re-estimates: 2024 Expense Timing (87.267) (2.246) - - Platform Budget/Normal Business (3.438) (3.687) (3.687) (3.687) Paratransit Service Reforecast (146.075) (250.291) (286.986) (258.778) MTA Audit and Procurement Services Adjustment 1.247 1.247 1.247 1.247 Real Estate Expense Reforecast (2.498) (6.160) (3.347) (3.363) Adverse Weather Impact 0.044 - - - OMNY Fare Media Liability 0.256 - - - OBi CBTC - Contract - (7.000) (7.000) (7.000) OBi Bus Command Center - (4.824) (4.824) (4.824) OBi HVAC (1.016) (2.070) (2.070) (2.070) Reimbursable Adjustments (6.461) 6.038 1.726 0.581 Wheel Wear (13.274) - - - Wheel Purchase (10.725) (2.275) - - Paratransit GCS Cybersecurity (0.275) (0.338) (0.057) - Worker's Comp Claims Management (22.870) (3.234) (3.734) (3.734) Substations (2.392) (4.861) (4.861) (4.861) OMNY NOPCO Fee 0.107 (2.656) (0.430) (0.430) Track Safety Audit (0.303) (0.623) (0.623) (0.623) CMF Supv Coverage (1.274) (1.973) (1.973) (1.973) Payhours Availability Adjustment (0.080) (4.939) (4.939) (4.939) EAM Mobile Devices 0.400 0.400 0.400 0.400 3300 Northern Blvd facility buildout (2.600) - - - Security Initiatives 0.345 (0.236) (0.236) (0.236) LED Lighting (2.265) 2.259 - - Other (0.859) (0.182) (0.206) (0.156) Sub-total Technical Adjustments/Re-estimates (301.273) (287.651) (321.600) (294.446) Depreciation/GASB (181.278) (178.278) (155.278) (132.278) Sub-Total Non-Reimbursable Expense Changes ($498.733) ($483.828) ($457.642) ($386.815) Total Non-Reimbursable Major Changes $1,177.383 ($366.632) ($334.717) ($173.289) Reimbursable Major Changes Revenue Sub-Total Reimbursable Revenue Changes (8.355) (8.355) 21.045 (1.093)
+```
+[p368_c0004] _V-200_
+
+## Page 369
+
+### [p369_c0001] MTA New York City Transit July Financial Plan 2026 - 2029 Summary of Major Programmatic Changes Between Financial Plans ($ in millions)
+### [p369_c0002] TOTAL NON-REIMBURSABLE and REIMBURSABLE
+[p369_c0003]
+
+```text
+2025 2026 2027 2028 Expenses Sub-Total Reimbursable Expense Changes 8.355 8.355 (21.045) 1.093 Total Reimbursable Major Changes $0.000 $0.000 $0.000 $0.000 Total Accrual Changes $1,177.383 ($366.632) ($334.717) ($173.289) Cash Adjustment Changes Farebox 37.322 0.000 0.000 0.000 Fare Reimbursement 14.964 0.000 0.000 0.000 Paratransit Reimbursement 58.380 (0.000) 0.028 0.031 Capital Reimbursements 101.795 94.234 103.519 71.689 Federal Preventive Maintenance Grant (1,446.731) 0.000 0.000 0.000 Retroactive Wages Timing and adjustment (1.920) (0.003) (0.004) (0.003) Insurance (4.998) (1.171) 1.843 2.955 Water and Sewage adjustment (19.000) 0.000 0.000 0.000 Workers Compensation Reserve (0.144) (0.001) (0.001) (0.001) Claims (69.929) 0.000 0.000 0.000 Depreciation/OPEB/GASB 181.278 178.278 155.278 132.278 Pension 86.280 (45.890) 0.000 0.000 Health Benefit carrier payment lag (34.230) 0.000 0.000 0.000 Total Cash Adjustment Changes/Timing ($1,096.932) $225.446 $260.663 $206.949 Total Baseline Changes $80.451 ($141.186) ($74.054) $33.660 Total Changes $80.451 ($141.186) ($74.054) $33.660 July Financial Plan - Cash Surplus/(Deficit) ($5,854.218) ($6,164.003) ($6,471.535) ($6,704.365)
+```
+[p369_c0004] _V-201_
+
+## Page 370
+
+### [p370_c0001] MTA NEW YORK CITY TRANSIT 2026 Preliminary Budget July Financial Plan 2026 – 2029 RIDERSHIP/UTILIZATION
+### [p370_c0002] RIDERSHIP / UTILIZATION
+[p370_c0003] Ridership projections for 2025 are based on actuals through April 2025 and current trends through the end of the year. Subway and Bus ridership forecasts for 2026 through 2029 remain unchanged from the February Plan. Paratransit ridership is expected to annually grow by 15% in 2026, 10% in 2027, and 5% thereafter.
+[p370_c0004] Ridership is expected to reach 1.654 billion in 2025 and grow to 1.665 billion in 2026, 1.707 billion in 2027, 1.738 billion in 2028 and 1.739 billion in 2029.
+[p370_c0005] Subway ridership is expected to reach 1.277 billion in 2025, 1.275 billion in 2026, 1.296 billion in 2027, 1.315 billion in 2028, and 1.314 billion in 2029. Bus ridership is expected to reach 361 million in 2025, 372 million in 2026, 391 million in 2027, 402 million in 2028 and 2029. Paratransit ridership is expected to reach 16.1 million in 2025, 18.5 million in 2026, and grow 10% in 2027 and 5.0% in 2027 and 2029.
+[p370_c0006] _V-202_
+
+## Page 371
+
+### [p371_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan 2026 - 2029 Ridership (Utilization) and Revenue (in millions)
+### [p371_c0002] RIDERSHIP
+[p371_c0003]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Subway 1,194.866 1,276.952 1,274.843 1,296.211 1,314.722 1,314.441 Bus 323.905 360.819 371.516 390.951 402.096 401.708 Paratransit 13.311 16.067 18.471 20.318 21.334 22.400 Total Ridership 1,532.082 1,653.838 1,664.830 1,707.480 1,738.152 1,738.550
+```
+### [p371_c0004] FAREBOX REVENUE (Excluding fare media liability)
+[p371_c0005]
+
+```text
+Subway $2,820.175 $2,966.922 $2,984.465 $3,034.421 $3,077.584 $3,077.043 Bus 614.946 657.263 704.738 741.607 762.739 762.036 Paratransit 26.950 33.108 38.062 41.868 43.961 46.160 Total Revenue $3,462.071 $3,657.293 $3,727.265 $3,817.897 $3,884.285 $3,885.239
+```
+[p371_c0006] _V-203_
+
+## Page 372
+
+### [p372_c0001] MTA New York City Transit 2026 Preliminary Budget July Financial Plan 2026 – 2029 Positions Year-To-Year Summary of Changes
+### [p372_c0002] POSITION ASSUMPTIONS
+[p372_c0003] Positions are identified as of year-end (December 31st) for each year in the Financial Plan. They reflect an estimate of the total number of paid employees required to meet and achieve corporate goals as well as those in line with reimbursable activity. Position totals incorporate seasonal needs, as well as other fluctuations in staffing requirements for capital projects.
+### [p372_c0004] 2026
+[p372_c0005] The 2026 Preliminary Budget totals 50,165 positions, a projected decrease of 244 positions from the 2025 Mid-Year Forecast primarily due to capital project requirements.
+### [p372_c0006] 2027 – 2029
+[p372_c0007] Annual staffing levels decrease by 527 positions in 2027, increase by 18 positions in 2028 and 127 positions in 2029 primarily due to fluctuations in service, maintenance, and capital projects staffing requirements.
+[p372_c0008] _V-204_
+
+## Page 373
+
+### [p373_c0001] MTA New York City Transit 2026 Preliminary Budget July Financial Plan 2026 – 2029 Positions Plan-to-Plan Summary of Changes
+### [p373_c0002] POSITION ASSUMPTIONS
+[p373_c0003] Positions are identified as of year-end (December 31st) for each year in the Financial Plan and reflect an estimate of the total number of paid employees required to meet and achieve corporate goals as well as those in line with reimbursable activity. Position totals incorporate seasonal needs as well as other fluctuations in staffing requirements for capital projects.
+### [p373_c0004] 2025
+[p373_c0005] The July Plan reflects an increase of 225 positions from the Adopted Budget. Non-reimbursable positions increase by 117 due to maintenance, operations, and service requirements, and reimbursable positions increase by 108 due to increased capital project support.
+### [p373_c0006] 2026
+[p373_c0007] The 2026 Preliminary Budget includes an increase of 236 positions from the February Plan, with non-reimbursable positions increasing by 133 primarily due to maintenance, operations, and service requirements, and reimbursable positions increasing by 103 due to increased capital project support.
+### [p373_c0008] 2027 – 2028
+[p373_c0009] The July Plan includes position increases of 152 positions in 2027 and 130 positions in 2028. Non-reimbursable positions increase primarily due to maintenance, operations, and service requirements, and reimbursable positions increase due to capital project support requirements.
+[p373_c0010] _V-205_
+
+## Page 374
+
+### [p374_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan 2026 - 2029 Favorable/(Unfavorable)
+### [p374_c0002] Total Position Changes at a Glance
+[p374_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Plan - Total Baseline Positions 50,184 49,929 49,486 49,526 Total Plan-to-Plan Changes (225) (236) (152) (130) 2025 July Plan - Total Baseline Positions 50,409 50,165 49,638 49,656 Total Year-to-Year Changes, July Plan 244 527 (18)
+```
+### [p374_c0004] Total Plan-to-Plan Changes by Reporting Category:
+[p374_c0005]
+
+```text
+Non-Reimbursable (117) (133) (127) (126) Reimbursable (108) (103) (25) (4) Total 1 (225) (236) (152) (130) Full-Time (225) (231) (147) (125) Full-Time Equivalents (0) (5) (5) (5) Total 1 (225) (236) (152) (130) By Function Category - Administration (5) (6) (6) 4 - Operations (13) (36) (36) (36) - Maintenance (192) (179) (95) (83) - Engineering/Capital 3 3 3 3 - Public Safety (18) (18) (18) (18) Total 1 (225) (236) (152) (130) By Occupational Group - Managers/Supervisors (40) (44) 7 40 - Professional, Technical, Clerical (12) (13) (12) 1 - Operational Hourlies (173) (179) (147) (171) Total 1 (225) (236) (152) (130)
+```
+### [p374_c0006] Total Plan-to-Plan Changes by Major Category:
+[p374_c0007]
+
+```text
+Operating Efficiencies 0 0 0 0 New Needs/OBI Operating Budget Impact (56) (49) (49) (49) Change in Reimbursable Positions (108) (103) (25) (4) Re-estimates & All Other 1 (61) (84) (78) (77) Total (225) (236) (152) (130)
+```
+[p374_c0008] _1 Includes Full-time Equivalents and Changes to Prior Year BRPs/Additional Savings Actions_
+[p374_c0009] _V-206_
+
+## Page 375
+
+### [p375_c0001] MTA New York City Transit July Financial Plan 2026 - 2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p375_c0002]
+
+```text
+2024 2025 Actual Mid-Year Forecast 2026 2027 2028 2029 Administration Office of the Chief Administrative Officer 38 54 54 54 54 54 Office of the President 11 20 20 20 20 20 Law 129 195 195 195 195 195 Office of the EVP - - - - - - Human Resources 84 120 120 120 120 120 EEO - 11 11 11 11 11 Office of Management and Budget 9 33 33 33 33 33 Strategy & Customer Experience 118 165 165 165 165 165 Non-Departmental - (108) (70) (46) (35) 2 Labor Relations 37 89 89 89 89 89 Office of People & Business Transformation 25 42 42 42 42 42 Materiel 106 147 143 143 143 143 Controller 77 109 109 109 109 109 Total Administration 634 876 910 934 945 982 Subways Operation Support /Admin Operations Subways Operation Support /Admin 434 450 450 450 450 450 Subways Service Delivery 8,702 9,039 9,034 8,959 8,952 8,917 Subways Stations 2,219 2,305 2,305 2,305 2,305 2,305 Subtotal - Subways 11,355 11,794 11,789 11,714 11,707 11,672 Buses 11,447 11,548 11,548 11,548 11,548 11,548 Paratransit 180 192 192 192 192 192 Operations Planning 268 369 365 361 361 361 Revenue Control 477 520 505 505 505 505 Non-Departmental - (83) (60) (60) (60) (39) Total Operations 23,727 24,340 24,339 24,260 24,253 24,239 Maintenance Subways Operation Support /Admin 154 168 163 139 124 124 Subways Service Delivery 78 82 82 82 82 82 Subways Engineering 318 377 346 319 298 291 Subways Car Equipment 4,928 5,393 5,363 5,367 5,423 5,557 Subways Infrastructure 1,200 1,315 1,305 1,155 1,133 1,124 Subways Elevator & Escalators 386 434 433 433 433 407 Subways Stations 2,452 2,622 2,602 2,602 2,602 2,602 Subways Facilities 1,623 1,875 1,840 1,745 1,726 1,722 Subways Track 2,546 2,648 2,648 2,550 2,550 2,549 Subways Power 1,196 1,283 1,272 1,235 1,235 1,235 Subways Signals 1,628 1,738 1,738 1,716 1,711 1,698 Subways Electronics Maintenance 1,354 1,458 1,326 1,326 1,326 1,326 Subways Electronics Maintenance 17,862 19,395 19,120 18,671 18,645 18,719 Buses 3,382 3,584 3,542 3,468 3,464 3,464 Supply Logistics 505 524 524 524 524 524 System Safety 76 93 92 92 92 92 OHS 59 75 75 75 75 75 Non-Departmental - (245) (199) (148) (104) (74) Total Maintenance 21,885 23,426 23,154 22,682 22,696 22,800 Engineering/Capital Construction & Development 649 832 832 832 832 832 Matrixed C & D Support 75 81 81 81 81 81 Total Engineering/Capital 724 913 913 913 913 913 Public Safety Security 729 853 848 848 848 848 Total Public Safety 729 853 848 848 848 848 Total Baseline Positions 47,698 50,409 50,165 49,638 49,656 49,783 Non-Reimbursable 44,255 45,544 45,463 45,307 45,374 45,501 Reimbursable 3,443 4,864 4,702 4,331 4,282 4,282 Total Full-Time 47,606 50,254 50,005 49,478 49,496 49,623 Total Full-Time Equivalents 92 155 160 160 160 160
+```
+[p375_c0003] _V-207_
+
+## Page 376
+
+### [p376_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p376_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual Mid-Year Preliminary 2027 2028 2029 2024 Forecast Budget 2024 2025 2026 Administration Managers/Supervisors 143 304 308 324 325 335 Professional/Technical/Clerical 475 548 578 586 596 623 Operational Hourlies 16 24 24 24 24 24 Total Administration Headcount 634 876 910 934 945 982 Operations Managers/Supervisors 2,737 2,919 2,908 2,907 2,900 2,886 Professional/Technical/Clerical 418 457 444 444 444 444 Operational Hourlies 20,571 20,965 20,988 20,910 20,910 20,910 Total Operations Headcount 23,727 24,340 24,339 24,260 24,253 24,239 Maintenance Managers/Supervisors 3,972 4,211 4,168 4,011 3,964 3,958 Professional/Technical/Clerical 872 1,083 997 977 953 943 Operational Hourlies 17,041 18,132 17,989 17,694 17,779 17,899 Total Maintenance Headcount 21,885 23,426 23,154 22,682 22,696 22,800 Engineering / Capital Managers/Supervisors 339 349 349 349 349 349 Professional/Technical/Clerical 383 562 562 562 562 562 Operational Hourlies 2 2 2 2 2 2 Total Engineering Headcount 724 913 913 913 913 913 Public Safety Managers/Supervisors 377 474 469 469 469 469 Professional/Technical/Clerical 37 45 45 45 45 45 Operational Hourlies 315 334 334 334 334 334 Total Public Safety Headcount 729 853 848 848 848 848 Total Positions Managers/Supervisors 7,568 8,257 8,202 8,060 8,007 7,997 Professional/Technical/ Clerical 2,185 2,695 2,626 2,614 2,600 2,617 Operational Hourlies 37,945 39,457 39,337 38,964 39,049 39,169 Total Positions 47,698 50,409 50,165 49,638 49,656 49,783
+```
+[p376_c0003] _V-208_
+
+## Page 377
+
+[p377_c0001] MTA Bus Company
+
+## Page 378
+
+### [p378_c0001] MTA BUS COMPANY 2026 Preliminary Budget July Financial Plan 2026 – 2029
+### [p378_c0002] FINANCIAL OVERVIEW
+[p378_c0003] The July Financial Plan provides the resources required to provide a safe, secure and reliable transportation service for customers and employees.
+### [p378_c0004] Financial Highlights
+- [p378_c0005] • Non-Reimbursable Revenue: The July Plan includes a net increase in farebox revenue of $1.1 million in 2025 reflective of paid ridership through April and ridership trends for the remainder of the year and an increase of $0.3 in Other Operating revenue. Projections for the remainder of the Plan are unchanged from the February Plan. • Non-Reimbursable Expenses: The Plan reflects a net decrease of $9.5 million over the plan period before the Government Accounting Standards Board (GASB) adjustments and depreciation. • Headcount: The plan reflects an increase of 34 positions to support MTA Bus expanded operational requirements and service support. This includes the expansion of relief support to meet service requirements and enhanced administrative support for employees' availability.
+### [p378_c0006] Ridership
+[p378_c0007] The July Plan reflects actual results through April. Ridership is estimated at 93.0 million for 2025, 92.7 million in 2026, 96.0 million in 2027, 97.5 million in 2028 and 97.4 million in 2029.
+### [p378_c0008] Expenses
+[p378_c0009] The July Plan includes funding for initiatives deemed necessary to provide reliable service to customers including additional staffing needed to support MTA Bus Company's (MTA Bus) expanded operational requirements and service support. Also included is funding for expanded administrative support to enhance employees' availability.
+### [p378_c0010] 2025 MID-YEAR FORECAST
+[p378_c0011] The 2025 Mid-Year Forecast includes Total Expenses before Depreciation and Other Post-Employment Benefits of $979.0 million, consisting of $971.3 million of non-reimbursable expenses and $7.7 million of reimbursable expenses.
+[p378_c0012] Total revenue is projected to be $220.1 million of which $212.4 million are operating revenues and $7.7 million are capital reimbursements.
+[p378_c0013] _V-209_
+
+## Page 379
+
+[p379_c0001] Non-reimbursable expenses before depreciation and GASB adjustments are $5.3 million lower than the Adopted Budget, primarily due to OPEB, pension, and professional service contracts partially offset by other fringe benefits and insurances.
+[p379_c0002] There is a total baseline of 4,052 Full-Time and Full-Time Equivalent positions (4,014 non-reimbursable positions and 38 reimbursable positions).
+### [p379_c0003] 2026 PRELIMINARY BUDGET
+[p379_c0004] 2026 Preliminary Budget includes Total Expenses before Depreciation and Other Post-Employment Benefits of $1,026.6 million consisting of $1,018.9 million of non-reimbursable expenses and $7.8 million of reimbursable expenses.
+[p379_c0005] Total revenue is projected to be $226.6 million, of which $198.8 million is Farebox Revenue, $20.0 million in Other Operating Revenue and $7.8 million in Capital and Other Reimbursements.
+[p379_c0006] Positions total 4,052 Full-Time and Full-Time Equivalent (4,014 non-reimbursable positions and 38 reimbursable positions).
+### [p379_c0007] 2027 - 2029 PROJECTIONS
+[p379_c0008] The baseline projections for 2027 through 2029 reflect revisions to revenue and expense forecasts based on changes in inflation and rate assumptions as well as the impact of new needs initiatives.
+[p379_c0009] Non-reimbursable revenues grow by 3.2% from $218.8 million in 2026 to $225.8 million in 2027. They continue to rise by 1.4% in 2028, reflecting growing farebox revenue but decrease by 0.1% in 2029.
+[p379_c0010] Non-reimbursable expenses before depreciation and GASB adjustments grow by 1.9% from $1,018.9 million in 2026 to $1,038.1 million in 2027. These expenses continue to rise by 1.6% in 2028 and 2.4% in 2029.
+[p379_c0011] Compared to the February Plan, non-reimbursable and reimbursable revenues remain unchanged.
+[p379_c0012] Non-reimbursable expenses before depreciation and GASB adjustments decrease by $3.0 million in 2027, and $5.2 million in 2028. Compared with the February Plan, labor expenses decrease by $3.4 million in 2027 and $5.7 million in 2028, mainly due to the re-examination of budgetary needs. Non-Labor expenses increase by $0.4 million in 2027 and $0.5 million in 2028, primarily due to programmatic re-estimates, inflation adjustments and related assumptions.
+[p379_c0013] Reimbursable expenses are unchanged from the February Plan.
+[p379_c0014] The total headcount is 4,049 in 2027 through 2029. Total baseline positions against the February Plan will increase by 34 positions in 2027 and 2028.
+[p379_c0015] _V-210_
+
+## Page 380
+
+### [p380_c0001] MTA BUS COMPANY July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p380_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $183.645 $192.087 $198.760 $205.977 $209.144 $208.890 Other Operating Revenue 13.759 20.330 20.035 19.790 19.871 19.953 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $197.404 $212.417 $218.794 $225.767 $229.015 $228.844 Operating Expense Labor: Payroll $327.949 $345.751 $359.374 $366.161 $373.392 $380.775 Overtime 91.801 95.325 97.459 100.063 102.064 104.106 Health and Welfare 106.459 117.233 124.342 131.480 139.024 146.997 OPEB Current Payments 32.088 37.276 38.614 41.391 44.328 47.429 Pension 59.931 65.669 69.643 69.034 67.615 67.676 Other Fringe Benefits 74.683 85.868 87.365 88.063 88.866 89.715 Reimbursable Overhead (3.131) (1.269) (1.278) (1.285) (1.292) (1.299) Total Labor Expenses $689.779 $745.855 $775.517 $794.907 $813.997 $835.400 Non-Labor: Electric Power $1.909 $2.193 $2.406 $2.527 $2.753 $2.937 Fuel 29.156 28.789 28.049 27.976 28.089 29.058 Insurance 6.951 10.267 11.167 11.644 12.483 12.829 Claims 78.667 58.838 60.115 61.516 62.863 64.202 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 33.739 35.785 37.824 37.332 37.178 37.184 Professional Services Contracts 36.743 38.686 49.652 51.789 45.635 45.603 Materials and Supplies 39.230 43.210 46.314 42.645 43.593 44.484 Other Business Expenses 7.356 7.672 7.811 7.762 7.807 7.893 Total Non-Labor Expenses $233.750 $225.440 $243.338 $243.190 $240.401 $244.190 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $923.529 $971.295 $1,018.855 $1,038.097 $1,054.398 $1,079.590 Depreciation $65.194 $72.000 $72.000 $72.000 $72.000 $72.000 GASB 49 Environmental Remediation 0.680 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (3.997) 10.840 6.580 (4.130) 21.950 16.910 GASB 75 OPEB Expense Adjustment 27.706 62.821 65.000 67.107 69.267 71.599 GASB 87 Lease Adjustment (0.027) 0.001 0.001 0.001 0.001 0.001 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $89.556 $145.662 $143.581 $134.978 $163.218 $160.510 Total Expenses $1,013.085 $1,116.957 $1,162.436 $1,173.075 $1,217.616 $1,240.100 Net Surplus/(Deficit) ($815.682) ($904.540) ($943.642) ($947.308) ($988.601) ($1,011.256)
+```
+[p380_c0003] _V-211_
+
+## Page 381
+
+### [p381_c0001] MTA BUS COMPANY July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p381_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 6.640 7.663 7.786 7.895 8.006 8.119 Total Revenues $6.640 $7.663 $7.786 $7.895 $8.006 $8.119 Operating Expense Labor: Payroll $3.652 $4.729 $4.837 $4.933 $5.032 $5.133 Overtime 0.088 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 1.664 1.672 1.677 1.682 1.687 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.061 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 2.840 1.269 1.278 1.285 1.292 1.299 Total Labor Expenses $6.640 $7.662 $7.786 $7.895 $8.006 $8.119 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $6.640 $7.662 $7.786 $7.895 $8.006 $8.119 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p381_c0003] _V-212_
+
+## Page 382
+
+### [p382_c0001] MTA BUS COMPANY July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p382_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $183.645 $192.087 $198.760 $205.977 $209.144 $208.890 Other Operating Revenue 13.759 20.330 20.035 19.790 19.871 19.953 Capital and Other Reimbursements 6.640 7.663 7.786 7.895 8.006 8.119 Total Revenues $204.043 $220.079 $226.580 $233.662 $237.021 $236.963 Operating Expense Labor: Payroll $331.601 $350.480 $364.210 $371.094 $378.424 $385.908 Overtime 91.889 95.325 97.459 100.063 102.064 104.106 Health and Welfare 106.459 118.898 126.013 133.156 140.706 148.684 OPEB Current Payments 32.088 37.276 38.614 41.391 44.328 47.429 Pension 59.931 65.669 69.643 69.034 67.615 67.676 Other Fringe Benefits 74.743 85.868 87.365 88.063 88.866 89.715 Reimbursable Overhead (0.291) 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $696.419 $753.517 $783.303 $802.802 $822.002 $843.518 Non-Labor: Electric Power $1.909 $2.193 $2.406 $2.527 $2.753 $2.937 Fuel 29.156 28.789 28.049 27.976 28.089 29.058 Insurance 6.951 10.267 11.167 11.644 12.483 12.829 Claims 78.667 58.838 60.115 61.516 62.863 64.202 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 33.739 35.785 37.824 37.332 37.178 37.184 Professional Services Contracts 36.743 38.686 49.652 51.789 45.635 45.603 Materials and Supplies 39.230 43.210 46.314 42.645 43.593 44.484 Other Business Expenses 7.356 7.672 7.811 7.762 7.807 7.893 Total Non-Labor Expenses $233.750 $225.440 $243.338 $243.190 $240.401 $244.190 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $930.169 $978.957 $1,026.641 $1,045.992 $1,062.403 $1,087.709 Depreciation $65.194 $72.000 $72.000 $72.000 $72.000 $72.000 GASB 49 Environmental Remediation 0.680 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (3.997) 10.840 6.580 (4.130) 21.950 16.910 GASB 75 OPEB Expense Adjustment 27.706 62.821 65.000 67.107 69.267 71.599 GASB 87 Lease Adjustment (0.027) 0.001 0.001 0.001 0.001 0.001 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $89.556 $145.662 $143.581 $134.978 $163.218 $160.510 Total Expenses $1,019.725 $1,124.620 $1,170.222 $1,180.970 $1,225.621 $1,248.219 Net Surplus/(Deficit) ($815.682) ($904.540) ($943.642) ($947.307) ($988.601) ($1,011.256)
+```
+[p382_c0003] _V-213_
+
+## Page 383
+
+### [p383_c0001] MTA BUS COMPANY July Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p383_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $181.401 $192.087 $198.760 $205.977 $209.144 $208.890 Other Operating Revenue 159.760 240.578 77.368 19.790 19.871 19.953 Capital and Other Reimbursements 5.981 8.321 7.785 7.894 8.005 8.119 Total Receipts $347.142 $440.986 $283.913 $233.661 $237.020 $236.962 Expenditures Labor: Payroll $327.092 $365.761 $363.791 $370.675 $378.005 $385.489 Overtime 92.233 95.326 97.459 100.063 102.064 104.106 Health and Welfare 101.247 124.098 126.014 133.157 140.707 148.685 OPEB Current Payments 33.200 37.276 38.613 41.391 44.328 47.429 Pension 0.000 67.219 69.643 69.034 67.615 67.676 Other Fringe Benefits 70.588 70.684 72.180 72.878 73.681 74.530 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $624.359 $760.365 $767.700 $787.198 $806.400 $827.916 Non-Labor: Electric Power $4.775 $2.193 $2.406 $2.527 $2.753 $2.938 Fuel 28.523 28.789 28.049 27.977 28.090 29.059 Insurance 14.978 10.266 11.167 11.644 12.483 12.829 Claims 50.328 35.580 36.352 37.199 38.014 38.824 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 34.914 42.076 38.674 38.201 38.066 38.090 Professional Services Contracts 38.176 55.856 48.802 50.919 44.747 44.697 Materials and Supplies 40.477 43.209 46.313 42.644 43.593 44.483 Other Business Expenses 7.358 7.672 7.812 7.762 7.807 7.893 Total Non-Labor Expenditures $219.529 $225.642 $219.575 $218.874 $215.552 $218.812 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $843.888 $986.007 $987.275 $1,006.072 $1,021.952 $1,046.727 Net Cash Balance ($496.746) ($545.021) ($703.363) ($772.411) ($784.932) ($809.765)
+```
+[p383_c0003] _V-214_
+
+## Page 384
+
+### [p384_c0001] MTA BUS COMPANY July Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p384_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue ($2.244) $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 146.002 220.248 57.333 0.000 0.000 0.000 Capital and Other Reimbursements (0.659) 0.659 0.000 (0.001) 0.000 0.000 Total Receipts $143.099 $220.907 $57.333 ($0.001) ($0.001) $0.000 Expenditures Labor: Payroll $4.508 ($15.281) $0.419 $0.419 $0.419 $0.419 Overtime (0.344) 0.000 0.000 0.000 0.000 0.000 Health and Welfare 5.212 (5.201) (0.001) (0.001) (0.001) (0.001) OPEB Current Payments (1.112) 0.000 0.001 0.001 0.000 0.000 Pension 59.931 (1.550) 0.000 0.000 0.000 0.000 Other Fringe Benefits 4.155 15.184 15.184 15.184 15.184 15.184 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (0.291) 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $72.060 ($6.847) $15.603 $15.603 $15.603 $15.603 Non-Labor: Electric Power ($2.867) $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.633 0.000 0.000 0.000 0.000 0.000 Insurance (8.028) 0.000 0.000 0.000 0.000 0.000 Claims 28.339 23.258 23.763 24.317 24.849 25.378 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (1.175) (6.291) (0.850) (0.870) (0.888) (0.906) Professional Services Contracts (1.432) (17.169) 0.850 0.869 0.888 0.906 Materials and Supplies (1.247) 0.001 0.001 0.001 0.001 0.001 Other Business Expenses (0.002) 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures $14.221 ($0.202) $23.762 $24.316 $24.848 $25.379 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $86.281 ($7.050) $39.365 $39.919 $40.451 $40.981 Total Cash Conversion Adjustments before Depreciation $229.380 $213.857 $96.698 $39.918 $40.450 $40.981 Depreciation $65.194 $72.000 $72.000 $72.000 $72.000 $72.000 GASB 49 Environmental Remediation 0.680 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (3.997) 10.840 6.580 (4.130) 21.950 16.910 GASB 75 OPEB Expense Adjustment 27.706 62.821 65.000 67.107 69.267 71.599 GASB 87 Lease Adjustment (0.027) 0.001 0.001 0.001 0.001 0.001 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $89.556 $145.662 $143.581 $134.978 $163.218 $160.510 Total Cash Conversion Adjustments $318.936 $359.519 $240.279 $174.897 $203.668 $201.491
+```
+[p384_c0003] _V-215_
+
+## Page 385
+
+### [p385_c0001] MTA BUS COMPANY 2026 Preliminary Budget July Financial Plan 2026– 2029 Year-to-Year Changes by Category-Baseline
+### [p385_c0002] REVENUE
+### [p385_c0003] Farebox Revenue
+- [p385_c0004] • The year-to-year projections reflect annual changes in paid ridership. Farebox Revenue increases by $6.7 million or 3.5% in 2026, $7.2 million or 3.6% in 2027, $3.2 million or 1.5% in 2028 and decreases by $0.3 million or 0.1% in 2029. • The plan-to-plan Farebox Revenue is reflective of current ridership trends for 2025 and remains unchanged from the Adopted Budget for 2026 through 2028.
+### [p385_c0005] Other Operating Revenue
+- [p385_c0006] • Annual changes in Other Operating Revenue are as follows: a decrease of $0.3 million in 2026, $0.2 million in 2027, and an increase of $0.1 million in 2028 and 2029.
+### [p385_c0007] EXPENSES
+### [p385_c0008] Payroll
+- [p385_c0009] • Represented employee contractual agreements follow pattern wage settlements, followed by annual 2% increases. • Wage increases for non-represented employees are projected at 3% in 2025, followed by annual 2% increases.
+### [p385_c0010] Overtime
+- [p385_c0011] • Payroll wage rate increase assumptions apply.
+### [p385_c0012] Health & Welfare and OPEB Current Payment
+- [p385_c0013] • Projections for 2027 through 2028 assume a general increase in rates for annual and hourly employees. Projected changes also reflect the impact of headcount changes.
+### [p385_c0014] Pensions
+- [p385_c0015] • Projections are consistent with current actuarial projections.
+### [p385_c0016] Other Fringe Benefits
+- [p385_c0017] • Projected changes reflect payroll-related amounts, Workers' Compensation reserve projections, and reimbursable headcount assumptions.
+### [p385_c0018] Electric Power
+- [p385_c0019] • The July Plan reflects projected New York Power Authority energy rate increases for both traction and non-traction power and Con Edison delivery rate changes.
+### [p385_c0020] Fuel
+- [p385_c0021] • The July Plan reflects fuel price assumptions based on existing contracts and projected regional spot market prices that are lower than the February Plan.
+[p385_c0022] _V-216_
+
+## Page 386
+
+### [p386_c0001] Insurance
+- [p386_c0002] • Expenses reflect the latest premium rates. Decreases are minimal annually.
+### [p386_c0003] Claims
+- [p386_c0004] • Projections are based on a three-year average and increase by $1.3 million in 2026, $1.4 million in 2027, and $1.3 million in each of 2028 and 2029.
+### [p386_c0005] Maintenance and Other Operating Contracts
+- [p386_c0006] • Changes in Maintenance and Other Operating Contracts are due to programmatic changes and projected inflation rates.
+### [p386_c0007] Professional Service Contracts
+- [p386_c0008] • Changes in Professional Service Contracts are due to projected inflation and partially offset by programmatic changes resulting from the Bus Command Center.
+### [p386_c0009] Materials and Supplies
+- [p386_c0010] • Materials and Supplies increase by $3.1 million in 2026, followed by decreases of $3.7 million in 2027, and an increase of $0.9 million in 2028 and 2029 due to programmatic changes and revised inflationary impacts.
+### [p386_c0011] Other Business Expenses
+- [p386_c0012] • Other Business Expenses increase is due to projected changes in inflation.
+### [p386_c0013] Depreciation
+- [p386_c0014] • Annual depreciation expense is unchanged over the Plan period.
+[p386_c0015] _V-217_
+
+## Page 387
+
+### [p387_c0001] MTA BUS COMPANY July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p387_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable Operating Revenues Farebox Revenue $192.087 $198.760 $6.673 $205.977 $7.217 $209.144 $3.167 $208.890 ($0.253) Other Operating Revenue 20.330 20.035 (0.296) 19.790 (0.244) 19.871 0.081 19.953 0.082 Total Revenues $212.417 $218.794 $6.377 $225.767 $6.973 $229.015 $3.248 $228.844 ($0.171) Operating Expenses Labor: Payroll $345.751 $359.374 ($13.623) $366.161 ($6.788) $373.392 ($7.231) $380.775 ($7.383) Overtime 95.325 97.459 (2.133) 100.063 (2.604) 102.064 (2.001) 104.106 (2.042) Health and Welfare 117.233 124.342 (7.108) 131.480 (7.138) 139.024 (7.545) 146.997 (7.973) OPEB Current Payments 37.276 38.614 (1.337) 41.391 (2.778) 44.328 (2.936) 47.429 (3.102) Pension 65.669 69.643 (3.973) 69.034 0.609 67.615 1.419 67.676 (0.061) Other Fringe Benefits 85.868 87.365 (1.496) 88.063 (0.698) 88.866 (0.803) 89.715 (0.849) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (1.269) (1.278) 0.009 (1.285) 0.007 (1.292) 0.007 (1.299) 0.007 Total Labor Expenses $745.855 $775.517 ($29.662) $794.907 ($19.390) $813.997 ($19.090) $835.400 ($21.403) Non-Labor: Electric Power $2.193 $2.406 ($0.213) $2.527 ($0.121) $2.753 ($0.226) $2.937 ($0.185) Fuel 28.789 28.049 0.740 27.976 0.073 28.089 (0.113) 29.058 (0.969) Insurance 10.267 11.167 (0.901) 11.644 (0.477) 12.483 (0.838) 12.829 (0.346) Claims 58.838 60.115 (1.277) 61.516 (1.401) 62.863 (1.347) 64.202 (1.339) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 35.785 37.824 (2.038) 37.332 0.492 37.178 0.153 37.184 (0.006) Professional Services Contracts 38.686 49.652 (10.966) 51.789 (2.137) 45.635 6.154 45.603 0.032 Materials and Supplies 43.210 46.314 (3.104) 42.645 3.669 43.593 (0.949) 44.484 (0.891) Other Business Expenses 7.672 7.811 (0.139) 7.762 0.049 7.807 (0.045) 7.893 (0.086) Total Non-Labor Expenses $225.440 $243.338 ($17.898) $243.190 $0.148 $240.401 $2.789 $244.190 ($3.790) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $971.295 $1,018.855 ($47.560) $1,038.097 ($19.242) $1,054.398 ($16.301) $1,079.590 ($25.192) Depreciation $72.000 $72.000 $0.000 $72.000 $0.000 $72.000 $0.000 $72.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 10.840 6.580 4.260 (4.130) 10.710 21.950 (26.080) 16.910 5.040 GASB 75 OPEB Expense Adjustment 62.821 65.000 (2.179) 67.107 (2.107) 69.267 (2.160) 71.599 (2.332) GASB 87 Lease Adjustment 0.001 0.001 0.000 0.001 0.000 0.001 0.000 0.001 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $145.662 $143.581 $2.081 $134.978 $8.603 $163.218 ($28.240) $160.510 $2.708 Total Expenses After Depreciation and GASB Adjs. $1,116.957 $1,162.436 ($45.479) $1,173.075 ($10.639) $1,217.616 ($44.541) $1,240.100 ($22.484) Net Surplus/(Deficit) ($904.540) ($943.642) ($39.102) ($947.308) ($3.666) ($988.601) ($41.293) ($1,011.256) ($22.655)
+```
+[p387_c0003] _V218_
+
+## Page 388
+
+### [p388_c0001] MTA BUS COMPANY July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p388_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029 Reimbursable Operating Revenues Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 7.663 7.786 0.123 7.895 0.109 8.006 0.111 8.119 0.113 Total Revenues $7.663 $7.786 $0.123 $7.895 $0.109 $8.006 $0.111 $8.119 $0.113 Operating Expenses Labor: Payroll $4.729 $4.837 ($0.107) $4.933 ($0.097) $5.032 ($0.099) $5.133 ($0.101) Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 1.664 1.672 (0.007) 1.677 (0.005) 1.682 (0.005) 1.687 (0.005) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 1.269 1.278 (0.009) 1.285 (0.007) 1.292 (0.007) 1.299 (0.007) Total Labor Expenses $7.662 $7.786 ($0.123) $7.895 ($0.109) $8.006 ($0.111) $8.119 ($0.113) Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $7.662 $7.786 ($0.123) $7.895 ($0.109) $8.006 ($0.111) $8.119 ($0.113) Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p388_c0003] _V219_
+
+## Page 389
+
+### [p389_c0001] MTA BUS COMPANY July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p389_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable and Reimbursable Operating Revenues Farebox Revenue $192.087 $198.760 $6.673 $205.977 $7.217 $209.144 $3.167 $208.890 ($0.253) Other Operating Revenue 20.330 20.035 (0.296) 19.790 (0.244) 19.871 0.081 19.953 0.082 Capital and Other Reimbursements 7.663 7.786 0.123 7.895 0.109 8.006 0.111 8.119 0.113 Total Revenues $220.079 $226.580 $6.501 $233.662 $7.082 $237.021 $3.358 $236.963 ($0.058) Operating Expenses Labor: Payroll $350.480 $364.210 ($13.730) $371.094 ($6.884) $378.424 ($7.329) $385.908 ($7.484) Overtime 95.325 97.459 (2.133) 100.063 (2.604) 102.064 (2.001) 104.106 (2.042) Health and Welfare 118.898 126.013 (7.115) 133.156 (7.143) 140.706 (7.550) 148.684 (7.978) OPEB Current Payments 37.276 38.614 (1.337) 41.391 (2.778) 44.328 (2.936) 47.429 (3.102) Pension 65.669 69.643 (3.973) 69.034 0.609 67.615 1.419 67.676 (0.061) Other Fringe Benefits 85.868 87.365 (1.496) 88.063 (0.698) 88.866 (0.803) 89.715 (0.849) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $753.517 $783.303 ($29.786) $802.802 ($19.499) $822.002 ($19.201) $843.518 ($21.516) Non-Labor: Electric Power $2.193 $2.406 ($0.213) $2.527 ($0.121) $2.753 ($0.226) $2.937 ($0.185) Fuel 28.789 28.049 0.740 27.976 0.073 28.089 (0.113) 29.058 (0.969) Insurance 10.267 11.167 (0.901) 11.644 (0.477) 12.483 (0.838) 12.829 (0.346) Claims 58.838 60.115 (1.277) 61.516 (1.401) 62.863 (1.347) 64.202 (1.339) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 35.785 37.824 (2.038) 37.332 0.492 37.178 0.153 37.184 (0.006) Professional Services Contracts 38.686 49.652 (10.966) 51.789 (2.137) 45.635 6.154 45.603 0.032 Materials and Supplies 43.210 46.314 (3.104) 42.645 3.669 43.593 (0.949) 44.484 (0.891) Other Business Expenses 7.672 7.811 (0.139) 7.762 0.049 7.807 (0.045) 7.893 (0.086) Total Non-Labor Expenses $225.440 $243.338 ($17.898) $243.190 $0.148 $240.401 $2.789 $244.190 ($3.790) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $978.957 $1,026.641 ($47.683) $1,045.992 ($19.351) $1,062.403 ($16.412) $1,087.709 ($25.305) Depreciation $72.000 $72.000 $0.000 $72.000 $0.000 $72.000 $0.000 $72.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 10.840 6.580 4.260 (4.130) 10.710 21.950 (26.080) 16.910 5.040 GASB 75 OPEB Expense Adjustment 62.821 65.000 (2.179) 67.107 (2.107) 69.267 (2.160) 71.599 (2.332) GASB 87 Lease Adjustment 0.001 0.001 0.000 0.001 0.000 0.001 0.000 0.001 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $145.662 $143.581 $2.081 $134.978 $8.603 $163.218 ($28.240) $160.510 $2.708 Total Expenses After Depreciation and GASB Adjs. $1,124.620 $1,170.222 ($45.602) $1,180.970 ($10.748) $1,225.621 ($44.652) $1,248.219 ($22.597) Net Surplus/(Deficit) ($904.540) ($943.642) ($39.102) ($947.307) ($3.666) ($988.601) ($41.293) ($1,011.256) ($22.655)
+```
+[p389_c0003] _V-220_
+
+## Page 390
+
+### [p390_c0001] MTA BUS COMPANY July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+### [p390_c0002] Cash Receipts and Expenditures
+### [p390_c0003] Receipts
+[p390_c0004]
+
+```text
+Farebox Revenue $192.087 $198.760 $6.673 $205.977 $7.217 $209.144 $3.167 $208.890 ($0.253) Other Operating Revenue 240.578 77.368 (163.210) 19.790 (57.577) 19.871 0.081 19.953 0.082 Capital and Other Reimbursements 8.321 7.785 (0.536) 7.894 0.109 8.005 0.111 8.119 0.113 Total Receipts $440.986 $283.913 ($157.073) $233.661 ($50.251) $237.020 $3.359 $236.962 ($0.058)
+```
+### [p390_c0005] Expenditures
+### [p390_c0006] Labor Expenditures:
+[p390_c0007]
+
+```text
+Payroll $365.761 $363.791 $1.970 $370.675 ($6.884) $378.005 ($7.329) $385.489 ($7.484) Overtime 95.326 97.459 (2.133) 100.063 (2.604) 102.064 (2.001) 104.106 (2.042) Health and Welfare 124.098 126.014 (1.915) 133.157 (7.143) 140.707 (7.550) 148.685 (7.978) OPEB Current Payments 37.276 38.613 (1.337) 41.391 (2.778) 44.328 (2.937) 47.429 (3.102) Pension 67.219 69.643 (2.423) 69.034 0.609 67.615 1.419 67.676 (0.061) Other Fringe Benefits 70.684 72.180 (1.496) 72.878 (0.698) 73.681 (0.803) 74.530 (0.849) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $760.365 $767.700 ($7.335) $787.198 ($19.498) $806.400 ($19.201) $827.916 ($21.516)
+```
+### [p390_c0008] Non-Labor Expenditures:
+[p390_c0009]
+
+```text
+Electric Power $2.193 $2.406 ($0.213) $2.527 ($0.121) $2.753 ($0.226) $2.938 ($0.185) Fuel 28.789 28.049 0.740 27.977 0.073 28.090 (0.113) 29.059 (0.969) Insurance 10.266 11.167 (0.901) 11.644 (0.477) 12.483 (0.838) 12.829 (0.346) Claims 35.580 36.352 (0.772) 37.199 (0.847) 38.014 (0.815) 38.824 (0.810) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 42.076 38.674 3.403 38.201 0.473 38.066 0.135 38.090 (0.023) Professional Services Contracts 55.856 48.802 7.053 50.919 (2.117) 44.747 6.173 44.697 0.050 Materials and Supplies 43.209 46.313 (3.104) 42.644 3.669 43.593 (0.949) 44.483 (0.891) Other Business Expenses 7.672 7.812 (0.139) 7.762 0.049 7.807 (0.045) 7.893 (0.086) Total Non-Labor Expenditures $225.642 $219.575 $6.067 $218.874 $0.701 $215.552 $3.321 $218.812 ($3.259)
+```
+### [p390_c0010] Other Expenditure Adjustments:
+[p390_c0011]
+
+```text
+Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p390_c0012]
+
+```text
+Total Expenditures $986.007 $987.275 ($1.268) $1,006.072 ($18.797) $1,021.952 ($15.880) $1,046.727 ($24.775) Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p390_c0013]
+
+```text
+Net Cash Surplus/(Deficit) ($545.021) ($703.363) ($158.342) ($772.411) ($69.048) ($784.932) ($12.521) ($809.765) ($24.833)
+```
+[p390_c0014] _V-221_
+
+## Page 391
+
+### [p391_c0001] MTA BUS COMPANY 2026 Preliminary Budget July Financial Plan 2026 – 2029 Summary of Major Plan-to-Plan Changes by Generic Category
+### [p391_c0002] 2025: MID-YEAR FORECAST VS. ADOPTED BUDGET
+### [p391_c0003] REVENUE
+- [p391_c0004] • Farebox Revenue increases by $1.1 million, reflecting higher than forecast paid ridership through April. • Other Operating Revenue increases by $0.3 million, resulting from Tropical Storm Ida insurance recoveries.
+### [p391_c0005] EXPENSES
+[p391_c0006] Total Expenses before Depreciation and GASB Adjustments decrease from the Adopted Budget by $5.3 million:
+- [p391_c0007] • Payroll expenses are projected to increase by $1.4 million resulting from service requirement changes. • Overtime expenses are projected to decrease by $1.2 million due to reexamination of budgetary needs. • Health and Welfare/OPEB decreases by $5.4 million due to payroll-related expenses, the re-examination of budgetary needs, and revised rates. • Pension expenses are projected to decrease by $3.0 million and are consistent with current actuarial assumptions. • Other Fringes Benefits are projected to increase by $7.7 million due to actual assumptions. • Electric Power decreases by $0.7 million and reflects a favorable change in electric power rate assumptions. • Maintenance and Other Operating Contracts expenses decrease by $0.7 million mainly due to the re-examination of budgetary needs partially offset by inflationary changes. • Professional Service Contracts expenses decrease by $4.1 million due to the re-examination of budgetary needs partially offset by inflationary changes. • Material and Supplies expenses are projected to decrease by $1.1 million due to the re-examination of budgetary needs and inflationary changes. • Other Business Expenses are projected to decrease by $0.7 million due to the re-examination of budgetary needs and inflationary changes.
+[p391_c0008] _V-222_
+
+## Page 392
+
+### [p392_c0001] 2026-2028 JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN
+### [p392_c0002] REVENUE
+[p392_c0003] Operating revenues are unchanged from the February Financial Plan in 2026 through 2028.
+### [p392_c0004] EXPENSES
+[p392_c0005] Total Expenses before Depreciation & GASB Adjustments from the February Plan are projected to increase by $4.0 million in 2026, decrease by $3.0 million in 2027, and $5.2 million in 2028.
+- [p392_c0006] • Payroll is projected to increase by $2.9 million in 2026 and 2027, and $3.0 million in 2028 resulting from service requirement changes. • Overtime expenses are projected to decrease by $2.5 million in 2026 and 2027, and $2.6 million in 2028 due to reexamination of budgetary needs. • Health & Welfare/OPEB Current Payments are projected to decrease by $8.3 million in 2026, $9.9 million in 2027, and $11.8 million in 2028 due to the re-examination of budgetary needs and revised rates. • Pension expenses are projected to decrease by $1.1 million in 2026, $1.4 million in 2027, and $1.6 million in 2028 reflecting current actuarial assumptions. • Other Fringes Benefits increase by $7.7 million in 2026, $7.5 million in 2027, and $7.3 million in 2028 due to actual assumptions. • Electric Power expenses are projected to decrease by $0.7 million in 2026 and 2027, and $0.5 million in 2028 due to projected rate changes. • Fuel expenses are projected to decrease by $1.5 million in 2026, $1.3 million in 2027, and $1.7 million in 2028 due to fuel price and usage assumptions. • Insurance expenses reflect paid and revised insurance premium rates with increases of $3.1 million in 2026, $3.2 million in 2027, and $3.3 million in 2028. • Maintenance and Other Operating Contract expenses are projected to increase by $2.1 million in 2026, $1.5 million in 2027, and $1.4 million in 2028 due to inflationary changes partially offset by the re-examination of budgetary needs. • Professional Services Contract expenses are projected to increase by $2.2 million in 2026, $1.7 million in 2027, and $1.8 million in 2028 due to inflationary changes partially offset by the re-examination of budgetary needs. • Materials and Supplies expenses are projected to increase by $0.9 million in 2026, and decrease by $3.3 million in 2027, and $3.0 million in 2028 mainly due to inflationary changes partially offset by the re-examination of budgetary needs. • Other Business Expenses are projected to decrease due to inflationary changes partially offset by the re-examination of budgetary needs.
+[p392_c0007] _V-223_
+
+## Page 393
+
+### [p393_c0001] MTA BUS COMPANY July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p393_c0002] NON-REIMBURSABLE
+[p393_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Financial Plan - Cash Surplus/(Deficit) ($519.319) ($699.317) ($775.411) ($790.136) Baseline Changes Revenue Farebox Revenue 1.073 0.000 0.000 0.000 Other Operating Revenue 0.337 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 Total Revenue Changes $1.410 $0.000 $0.000 $0.000 Expenses Labor: Payroll ($1.396) ($2.864) ($2.920) ($2.978) Overtime 1.207 2.461 2.511 2.561 Health and Welfare 0.780 1.964 3.246 4.728 OPEB Current Payment 4.640 6.373 6.668 7.028 Pensions 3.015 1.131 1.379 1.628 Other Fringe Benefits (7.682) (7.664) (7.498) (7.301) Reimbursable Overhead 0.000 0.000 0.000 0.000 Total Labor Expense Changes $0.564 $1.401 $3.386 $5.667 Non-Labor: Electric Power $0.708 $0.747 $0.702 $0.545 Fuel (0.007) 1.461 1.289 1.684 Insurance (2.395) (3.139) (3.186) (3.297) Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.661 (2.063) (1.542) (1.397) Professional Service Contracts 4.082 (2.194) (1.720) (1.818) Materials & Supplies 1.065 (0.884) 3.329 3.044 Other Business Expenses 0.652 0.624 0.743 0.776 Total Non-Labor Expense Changes $4.766 ($5.447) ($0.385) ($0.463) Total Expenses before Depreciation and GASB Adjs. $5.329 ($4.045) $3.000 $5.204 Depreciation (9.837) (9.837) (9.837) (9.837) OPEB Liability Adjustment 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 7.440 7.607 7.878 8.218 GASB 68 Pension Adjustment 48.960 62.520 82.230 27.950 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 Environmental Remediation 0.000 0.000 0.000 0.000 Total Expense Changes $51.892 $56.244 $83.271 $31.535 Cash Adjustment Changes Revenue Expense (Pension Adjustment) (2.740) 0.000 0.000 0.000 Impact of 2024 Timing on 2025/2026 Results (All Categories) (29.701) 0.000 0.000 0.000 Depreciation 9.837 9.837 9.837 9.837 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment (7.440) (7.607) (7.878) (8.218) GASB 68 Pension Adjustment (48.960) (62.520) (82.230) (27.950) GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 Total Cash Adjustment Changes ($79.004) ($60.290) ($80.271) ($26.331) Total Baseline Changes ($25.702) ($4.045) $3.000 $5.204 2025 July Financial Plan - Net Operating Cash Surplus/(Deficit) ($545.021) ($703.363) ($772.411) ($784.932)
+```
+[p393_c0004] _V-224_
+
+## Page 394
+
+### [p394_c0001] MTA BUS COMPANY July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p394_c0002] REIMBURSABLE
+[p394_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Financial Plan - Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 Baseline Changes Revenue Farebox Revenue Other Operating Revenue Capital and Other Reimbursements 0.000 0.000 0.000 0.000 Total Revenue Changes $0.000 $0.000 $0.000 $0.000 Expenses Labor: Payroll 0.000 0.000 0.000 0.000 Overtime 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 OPEB Current Payment 0.000 0.000 0.000 0.000 Pensions 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 Total Labor Expense Changes $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power 0.000 0.000 0.000 0.000 Fuel 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 Professional Service Contracts 0.000 0.000 0.000 0.000 Materials & Supplies 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 Total Non-Labor Expense Changes $0.000 $0.000 $0.000 $0.000 Total Expense Changes $0.000 $0.000 $0.000 $0.000 Cash Adjustment Changes Total Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Baseline Changes $0.000 $0.000 $0.000 $0.000 2025 July Financial Plan - Net Operating Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000
+```
+[p394_c0004] _V-225_
+
+## Page 395
+
+### [p395_c0001] MTA BUS COMPANY July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+### [p395_c0002] NON-REIMBURSABLE and REIMBURSABLE
+[p395_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Financial Plan - Cash Surplus/(Deficit) ($519.319) ($699.317) ($775.411) ($790.136) Baseline Changes Revenue Farebox Revenue $1.073 $0.000 $0.000 $0.000 Other Operating Revenue 0.337 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 Total Revenue Changes $1.410 $0.000 $0.000 $0.000 Expenses Labor: Payroll ($1.396) ($2.864) ($2.920) ($2.978) Overtime 1.207 2.461 2.511 2.561 Health and Welfare 0.780 1.964 3.246 4.728 OPEB Current Payment 4.640 6.373 6.668 7.028 Pensions 3.015 1.131 1.379 1.628 Other Fringe Benefits (7.682) (7.664) (7.498) (7.301) Reimbursable Overhead 0.000 0.000 0.000 0.000 Total Labor Expense Changes $0.564 $1.401 $3.386 $5.667 Non-Labor: Electric Power $0.708 $0.747 $0.702 $0.545 Fuel (0.007) 1.461 1.289 1.684 Insurance (2.395) (3.139) (3.186) (3.297) Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.661 (2.063) (1.542) (1.397) Professional Service Contracts 4.082 (2.194) (1.720) (1.818) Materials & Supplies 1.065 (0.884) 3.329 3.044 Other Business Expenses 0.652 0.624 0.743 0.776 Total Non-Labor Expense Changes $4.766 ($5.447) ($0.385) ($0.463) Total Expenses before Depreciation and GASB Adjs. $5.329 ($4.045) $3.000 $5.204 Depreciation (9.837) (9.837) (9.837) (9.837) OPEB Liability Adjustment 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 7.440 7.607 7.878 8.218 GASB 68 Pension Adjustment 48.960 62.520 82.230 27.950 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 Environmental Remediation 0.000 0.000 0.000 0.000 Total Expense Changes $51.892 $56.244 $83.271 $31.535 Cash Adjustment Changes Revenue Expense (Pension Adjustment) (2.740) 0.000 0.000 0.000 Impact of 2024 Timing on 2025/2026 Results (All Categories) (29.701) 0.000 0.000 0.000 Depreciation 9.837 9.837 9.837 9.837 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment (7.440) (7.607) (7.878) (8.218) GASB 68 Pension Adjustment (48.960) (62.520) (82.230) (27.950) GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 Total Cash Adjustment Changes ($79.004) ($60.290) ($80.271) ($26.331) Total Baseline Changes ($25.702) ($4.045) $3.000 $5.204 2025 July Financial Plan - Net Operating Cash Surplus/(Deficit) ($545.021) ($703.363) ($772.411) ($784.932)
+```
+[p395_c0004] _V-226_
+
+## Page 396
+
+### [p396_c0001] MTA BUS COMPANY July Financial Plan 2026-2029 Summary of Major Programmatic Changes Between Financial Plans ($ in millions)
+### [p396_c0002] TOTAL NON-REIMBURSABLE and REIMBURSABLE
+[p396_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Financial Plan - Cash Surplus/(Deficit) ($519.319) ($699.317) ($775.411) ($790.136) Non-Reimbursable Major Changes Revenue Farebox Revenue $1.073 $0.000 $0.000 $0.000 Other Operating Revenue 0.337 0.000 0.000 0.000 Sub-Total Non-Reimbursable Revenue Changes $1.410 $0.000 $0.000 $0.000 Expenses Programs: Bus Radio System (BRS) and the New Bus Command Center (BCC): $0.000 ($2.605) ($2.605) ($2.605) Strategic Priorities - Employee Availability (0.067) (0.164) (0.164) (0.167) Sub-Total Programs ($0.067) ($2.769) ($2.769) ($2.772) Major Re-estimates/Technical Adjustments/Other: Re-examination of Budgetary Needs $24.850 $18.850 $18.850 $18.850 Farebox Maintenance IT Bus Recovery Re-estimate (4.912) (5.048) (5.186) (5.453) Title Conversion (0.087) (0.178) (0.182) (0.185) Bus Operator Relief (2.083) (4.270) (4.355) (4.442) OT To cover Bus Operator Relief 1.505 3.070 3.131 3.194 Workers' comp (7.614) (7.427) (7.260) (7.062) Unemployment Insurance (0.050) (0.201) (0.201) (0.201) Insurance (2.395) (3.139) (3.186) (3.297) Inflation Adjustments (2.878) (5.113) 0.351 0.413 H&W OPEB (4.674) (1.224) 0.373 2.237 Fuel (0.007) 1.461 1.289 1.684 Pension 3.044 1.194 1.443 1.693 Electric 0.708 0.747 0.702 0.545 Depreciation (9.837) (9.837) (9.837) (9.837) GASB 75 OPEB Expense Adjustment 7.440 7.607 7.878 8.218 GASB 68 Pension Adjustment 48.960 62.520 82.230 27.950 Sub-Total Non-Reimbursable Expense Changes $51.959 $59.013 $86.039 $34.307 Total Non-Reimbursable Major Changes $53.302 $56.244 $83.271 $31.535 Reimbursable Major Changes Revenue Reimbursement of Increased Expense Requirements 0.000 0.000 0.000 0.000 Sub-Total Reimbursable Revenue Changes $0.000 $0.000 $0.000 $0.000 Expenses 0.000 0.000 0.000 0.000 Sub-Total Reimbursable Expense Changes $0.000 $0.000 $0.000 $0.000 Total Reimbursable Major Changes $0.000 $0.000 $0.000 $0.000 Total Accrual Changes $53.302 $56.244 $83.271 $31.535 Cash Adjustment Changes Pension Adjustment ($2.740) $0.000 $0.000 $0.000 Impact of 2024 Timing (29.701) 0.000 0.000 0.000 RCR Applied to 2025 Efficiency Target Depreciation 9.837 9.837 9.837 9.837 OPEB Liability Adjustment GASB 75 OPEB Expense Adjustment ($7.440) ($7.607) ($7.878) ($8.218) GASB 68 Pension Adjustment (48.960) (62.520) (82.230) (27.950) GASB 87 Lease Adjustment Total Cash Adjustment Changes ($79.004) ($60.290) ($80.271) ($26.331) Total Baseline Changes ($25.702) ($4.045) $3.000 $5.204 2025 July Financial Plan - Net Operating Cash Surplus/(Deficit) ($545.021) ($703.363) ($772.411) ($784.932)
+```
+[p396_c0004] _V-227_
+
+## Page 397
+
+### [p397_c0001] MTA BUS COMPANY 2026 Preliminary Budget July Financial Plan 2026 – 2029
+### [p397_c0002] Ridership (Utilization)
+[p397_c0003] The July Plan projects 3.9 million more paid riders than the Adopted Budget. The total annual 2025 ridership is estimated to be 93.0 million.
+[p397_c0004] Ridership forecasts for 2026 through 2028 are unchanged from the February Plan. The Plan projects ridership to be 92.7 million in 2026, 96.0 million in 2027, and 97.5 million in 2028.
+### [p397_c0005] Revenue
+[p397_c0006] Farebox Revenue is projected to be $192.1 million in 2025, an increase of $1.1 million from the Adopted Budget reflective of 2025 paid ridership trends, with the remainder of the Plan period unchanged from the February Plan. The Plan projects farebox revenue to be $198.8 million in 2026, $206.0 million in 2027, $209.1 million in 2028, and $208.9 million in 2029.
+[p397_c0007] _V-228_
+
+## Page 398
+
+### [p398_c0001] MTA BUS COMPANY July Financial Plan 2026 - 2029 Ridership (Utilization) and Revenue (in millions)
+[p398_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029
+```
+### [p398_c0003] RIDERSHIP
+[p398_c0004]
+
+```text
+Fixed Route 85.129 92.992 92.673 96.036 97.513 97.389 Total Ridership 85.129 92.992 92.673 96.036 97.513 97.389
+```
+### [p398_c0005] FAREBOX REVENUE
+[p398_c0006]
+
+```text
+Fixed Route Farebox Revenue $183.645 $192.087 $198.760 $205.977 $209.144 $208.890 Farebox Revenue $183.645 $192.087 $198.760 $205.977 $209.144 $208.890
+```
+[p398_c0007] _V-229_
+
+## Page 399
+
+### [p399_c0001] MTA BUS COMPANY 2026 Preliminary Budget July Financial Plan 2026– 2029 Positions
+### [p399_c0002] POSITION ASSUMPTIONS
+### [p399_c0003] YEAR-TO-YEAR CHANGES
+[p399_c0004] Total positions decrease by 3 in 2027, reflecting the end of funding for the Queen’s Bus Network Redesign project.
+### [p399_c0005] 2025: MID-YEAR FORECAST VS. ADOPTED BUDGET
+[p399_c0006] Positions total 4,052 in 2025, an increase of 34 positions from the February Plan to support MTA Bus operational requirements for service support and expanded administrative support for employees’ availability.
+### [p399_c0007] 2026-2028: JULY FINANCIAL PLAN VS. ADOPTED BUDGET
+[p399_c0008] Positions total 4,052 for 2026, 4,049 for 2027 and 2028, an increase of 34 positions each year when compared to the February Plan. This increase is to support MTA Bus operational requirements for service support and expanded administrative support for employees’ availability.
+[p399_c0009] _V-230_
+
+## Page 400
+
+### [p400_c0001] MTA BUS COMPANY July Financial Plan 2026-2029 Favorable/(Unfavorable)
+[p400_c0002]
+
+```text
+Total Position Changes at a Glance 2025 2026 2027 2028 2025 February Plan - Total Positions 4,018 4,018 4,015 4,015 Total Plan-to-Plan Changes (34) (34) (34) (34) 2025 July Plan - Total Positions 4,052 4,052 4,049 4,049 Total Year-to-Year Changes, July Plan 0 3 0
+```
+[p400_c0003]
+
+```text
+Total Plan-to-Plan Changes by Reporting Category: Non-Reimbursable (34) (34) (34) Reimbursable 0 0 0 Total (34) (34) (34) Full-Time (34) (34) (34) Full-Time Equivalents 0 0 0 Total (34) (34) (34) By Function Category - Administration (1) (1) (1) - Operations (31) (31) (31) - Maintenance (2) (2) (2) - Engineering/Capital 0 0 0 - Public Safety 0 0 0 Total (34) (34) (34) By Occupational Group - Managers/Supervisors (2) (2) (2) - Professional, Technical, Clerical 1 1 1 - Operational Hourlies (33) (33) (33) Total (34) (34) (34)
+```
+[p400_c0004]
+
+```text
+Total Plan-to-Plan Changes by Major Category: MTA Operating Efficiencies 0 0 0 New Needs (1) (1) (1) Change in Reimbursable Positions 0 0 0 Re-estimates & All Other (33) (33) (33) Total (34) (34) (34)
+```
+[p400_c0005] _V-231_
+
+## Page 401
+
+### [p401_c0001] MTA BUS COMPANY July Financial Plan 2026-2029 Total Positions by Function & Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p401_c0002]
+
+```text
+FUNCTION/DEPARTMENT Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Administration Office of the EVP 4 3 3 3 3 3 Human Resources 3 13 13 13 13 13 Office of Management and Budget 11 16 16 16 16 16 Material 10 15 15 15 15 15 Controller 14 19 19 19 19 19 Office of the President 3 12 12 12 12 12 System Safety Administration 0 0 0 0 0 0 Law 10 20 20 20 20 20 Strategic Office 24 22 22 22 22 22 Non Departmental 0 0 0 0 0 0 Total Administration 79 120 120 120 120 120 Operations Buses 2,386 2,464 2,464 2,464 2,464 2,464 Office of the Executive Vice President, Regional 3 3 3 3 3 3 Safety & Training 136 68 68 68 68 68 Road Operations 124 134 134 132 132 132 Transportation Support 31 33 33 33 33 33 Operations Planning 30 33 33 33 33 33 Revenue Control 5 6 6 6 6 6 Total Operations 2,715 2,741 2,741 2,739 2,739 2,739 Maintenance Buses 692 733 733 732 732 732 Maintenance Support/CMF 216 228 228 228 228 228 Facilities 61 87 87 87 87 87 Supply Logistics 88 104 104 104 104 104 Total Maintenance 1,057 1,152 1,152 1,151 1,151 1,151 Engineering/Capital Capital Program Management 22 26 26 26 26 26 Public Safety Office of the Senior Vice President 11 13 13 13 13 13 Total Positions 3,884 4,052 4,052 4,049 4,049 4,049 Non-Reimbursable 3,849 4,014 4,014 4,011 4,011 4,011 Reimbursable 35 38 38 38 38 38 Total Full-Time 3,884 4,034 4,034 4,031 4,031 4,031 Total Full-Time Equivalents - 18 18 18 18 18
+```
+[p401_c0003] _V-232_
+
+## Page 402
+
+### [p402_c0001] MTA BUS COMPANY July Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p402_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual Mid-Year Preliminary 2027 2028 2029 2024 Forecast Budget 2024 2025 2026 Administration Managers/Supervisors 30 56 56 56 56 56 Professional/Technical/Clerical 49 64 64 64 64 64 Operational Hourlies 0 0 0 0 0 0 Total Administration Headcount 79 120 120 120 120 120 Operations Managers/Supervisors 314 317 317 315 315 315 Professional/Technical/Clerical 39 45 45 45 45 45 Operational Hourlies 2,362 2,319 2,379 2,379 2,379 2,379 Total Operations Headcount 2,715 2,681 2,741 2,739 2,739 2,739 Maintenance Managers/Supervisors 230 253 253 253 253 253 Professional/Technical/Clerical 28 37 37 37 37 37 Operational Hourlies 799 862 862 861 861 861 Total Maintenance Headcount 1,057 1,152 1,152 1,151 1,151 1,151 Engineering / Capital Managers/Supervisors 13 15 15 15 15 15 Professional/Technical/Clerical 9 11 11 11 11 11 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 22 26 26 26 26 26 Public Safety Managers/Supervisors 6 8 8 8 8 8 Professional/Technical/Clerical 5 5 5 5 5 5 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 11 13 13 13 13 13 Total Positions Managers/Supervisors 593 649 649 647 647 647 Professional/Technical/ Clerical 130 162 162 162 162 162 Operational Hourlies 3,161 3,181 3,241 3,240 3,240 3,240 Total Positions 3,884 3,992 4,052 4,049 4,049 4,049
+```
+[p402_c0003] _V-233_
+
+## Page 403
+
+[p403_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p403_c0002] _V-234_
+
+## Page 404
+
+### [p404_c0001] Staten Island Railway
+
+## Page 405
+
+### [p405_c0001] MTA STATEN ISLAND RAILWAY 2026 Preliminary Budget July Financial Plan 2026 – 2029
+### [p405_c0002] FINANCIAL OVERVIEW
+[p405_c0003] The July Financial Plan provides the resources required to provide a safe, secure and reliable transportation service for customers and employees.
+### [p405_c0004] Financial Highlights
+- [p405_c0005] • Non-Reimbursable Revenue: The July Plan includes a net decrease in farebox revenue of $0.1 million in 2025 resulting from lower paid ridership through April than projected in the Adopted Budget. Projections for the remainder of the Plan are unchanged from the February Plan. • Non-Reimbursable Expenses: The Plan reflects a net increase of $11.4 million over the plan period before the Government Accounting Standards Board (GASB) adjustments and depreciation. • Headcount: The plan reflects an increase of 4 positions to support SIR's expanded operational requirements and service support. This includes continued maintenance of the legacy R44 fleet while new R211 cars are introduced into service, and expanded facilities maintenance.
+### [p405_c0006] Ridership
+[p405_c0007] The July Plan reflects actual results through April. Ridership is estimated at 2.371 million for 2025, 2.390 million in 2026 and 2027, and 2.408 million in 2028 and 2029.
+### [p405_c0008] Expenses
+[p405_c0009] The July Plan includes funding for initiatives deemed necessary to provide reliable service to customers, including additional staffing needed to maintain the R44 fleet service operation and the new R211 fleet. Also included is funding for the expanded facility maintenance.
+### [p405_c0010] 2025 MID-YEAR FORECAST
+[p405_c0011] The 2025 Mid-Year Forecast includes total expenses before depreciation and GASB adjustments of $97.7 million, consisting of $90.1 million of non-reimbursable expenses and $7.6 million of reimbursable expenses.
+[p405_c0012] Total revenues are projected to be $13.9 million, comprised of which $6.3 million in operating revenues and $7.6 million in capital reimbursements.
+[p405_c0013] Non-reimbursable expenses before depreciation and GASB adjustments are $7.5 million higher than the Adopted Budget, primarily due to professional service contracts, maintenance and other operating contracts, and other business expenses.
+[p405_c0014] _V-235_
+
+## Page 406
+
+[p406_c0001] Total baseline full-time and full-time equivalent positions are 435 (381 non-reimbursable positions and 54 reimbursable positions), an increase of 4 positions over the Adopted Budget.
+### [p406_c0002] 2026 PRELIMINARY BUDGET
+[p406_c0003] The 2026 Preliminary Budget includes total expenses before depreciation and GASB adjustments of $90.9 million, consisting of $83.2 million of non-reimbursable expenses and $7.7 million of reimbursable expenses.
+[p406_c0004] Total revenues are projected to be $13.2 million, of which $5.5 million are operating revenues and $7.7 million are capital and other reimbursements.
+[p406_c0005] The total number of baseline full-time and full-time equivalent positions is 428, including 374 non-reimbursable positions and 54 reimbursable positions, an increase of 4 positions from the February Plan.
+### [p406_c0006] 2027 - 2029 PROJECTIONS
+[p406_c0007] Baseline projections for 2027 through 2029 reflect revisions to revenue and expense forecasts based on changes in inflation and rate assumptions as well as the impact of initiatives.
+[p406_c0008] Non-reimbursable revenues grow by 0.8% from $5.4 million in 2027 to $5.5 million in 2028. They remain at $5.5 million in 2029, reflecting the level of farebox revenue.
+[p406_c0009] Non-reimbursable expenses before depreciation and GASB adjustments decrease by 0.6% from $81.9 million in 2027 to $81.4 million in 2028. These expenses are projected to rise by 0.6% in 2029.
+[p406_c0010] Compared to the February Plan, non-reimbursable and reimbursable revenues remain unchanged.
+[p406_c0011] Non-reimbursable expenses before depreciation and GASB adjustments increase by $1.0 million in 2027 and $1.2 million in 2028. Compared with the February Plan, labor expenses remain unchanged in 2027 and 2028. Non-labor expenses compared with the February Plan increase by $1.0 million in 2027 and $1.2 million in 2028 primarily due to rising insurance expenses and maintenance and other operating contracts.
+[p406_c0012] Reimbursable expenses are unchanged from the February Plan.
+[p406_c0013] Total headcount is 402 in 2027, and 382 in 2028 and 2029. Total baseline positions, against the February Plan, increase by 4 positions in 2027 and 2028.
+[p406_c0014] _V-236_
+
+## Page 407
+
+### [p407_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p407_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $3.866 $3.808 $3.968 $3.968 $3.998 $3.998 Other Operating Revenue 2.188 2.494 1.521 1.474 1.490 1.506 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $6.054 $6.302 $5.489 $5.442 $5.488 $5.504 Operating Expense Labor: Payroll $30.551 $34.176 $34.480 $34.679 $33.532 $33.595 Overtime 4.011 3.759 3.643 3.860 3.432 3.440 Health and Welfare 6.451 9.936 10.650 10.090 10.417 10.475 OPEB Current Payments 4.395 3.282 3.300 3.318 3.818 3.818 Pension 7.447 8.380 9.000 8.910 8.730 8.730 Other Fringe Benefits 1.446 1.813 1.955 3.281 3.135 3.134 Reimbursable Overhead 0.015 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $54.316 $61.345 $63.028 $64.138 $63.063 $63.192 Non-Labor: Electric Power $5.020 $6.297 $6.635 $6.630 $7.035 $7.267 Fuel 0.295 0.335 0.323 0.326 0.328 0.345 Insurance 1.532 2.337 2.945 2.943 3.185 3.244 Claims 7.231 0.887 0.887 0.887 0.887 0.887 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.362 10.726 5.972 3.985 3.939 3.947 Professional Services Contracts 2.015 5.377 1.372 1.245 1.214 1.202 Materials and Supplies 3.539 1.581 1.570 1.303 1.304 1.323 Other Business Expenses 0.923 1.257 0.463 0.436 0.438 0.443 Total Non-Labor Expenses $23.918 $28.797 $20.167 $17.754 $18.330 $18.658 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $78.234 $90.142 $83.195 $81.892 $81.394 $81.851 Depreciation $24.589 $17.500 $17.500 $17.500 $17.500 $17.500 GASB 49 Environmental Remediation 0.127 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 2.025 0.320 0.300 1.690 (2.130) (2.130) GASB 75 OPEB Expense Adjustment 0.951 5.631 5.826 6.015 6.209 6.418 GASB 87 Lease Adjustment 0.185 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $27.878 $23.451 $23.626 $25.205 $21.579 $21.788 Total Expenses $106.112 $113.593 $106.821 $107.097 $102.973 $103.639 Net Surplus/(Deficit) ($100.057) ($107.291) ($101.332) ($101.655) ($97.485) ($98.135)
+```
+[p407_c0003] _V-237_
+
+## Page 408
+
+### [p408_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p408_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 6.225 7.636 7.714 4.210 4.323 4.319 Total Revenues $6.225 $7.636 $7.714 $4.210 $4.323 $4.319 Operating Expense Labor: Payroll $1.524 $4.255 $4.301 $2.363 $2.412 $2.412 Overtime 1.752 0.951 0.952 0.825 0.844 0.842 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 2.927 2.430 2.460 1.022 1.067 1.065 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $6.203 $7.636 $7.714 $4.210 $4.323 $4.319 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.028 0.000 0.000 0.000 0.000 0.000 Materials and Supplies (0.006) 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.022 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $6.225 $7.636 $7.714 $4.210 $4.323 $4.319 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p408_c0003] _V-238_
+
+## Page 409
+
+### [p409_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p409_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $3.866 $3.808 $3.968 $3.968 $3.998 $3.998 Other Operating Revenue 2.188 2.494 1.521 1.474 1.490 1.506 Capital and Other Reimbursements 6.225 7.636 7.714 4.210 4.323 4.319 Total Revenues $12.279 $13.938 $13.203 $9.652 $9.811 $9.823 Operating Expense Labor: Payroll $32.075 $38.431 $38.782 $37.042 $35.944 $36.007 Overtime 5.763 4.710 4.596 4.685 4.276 4.283 Health and Welfare 6.451 9.936 10.650 10.090 10.417 10.475 OPEB Current Payments 4.395 3.282 3.300 3.318 3.818 3.818 Pension 7.447 8.380 9.000 8.910 8.730 8.730 Other Fringe Benefits 4.373 4.243 4.415 4.303 4.202 4.200 Reimbursable Overhead 0.015 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $60.519 $68.982 $70.742 $68.348 $67.386 $67.512 Non-Labor: Electric Power $5.020 $6.297 $6.635 $6.630 $7.035 $7.267 Fuel 0.295 0.335 0.323 0.326 0.328 0.345 Insurance 1.532 2.337 2.945 2.943 3.185 3.244 Claims 7.231 0.887 0.887 0.887 0.887 0.887 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.362 10.726 5.972 3.985 3.939 3.947 Professional Services Contracts 2.043 5.377 1.372 1.245 1.214 1.202 Materials and Supplies 3.533 1.581 1.570 1.303 1.304 1.323 Other Business Expenses 0.923 1.257 0.463 0.436 0.438 0.443 Total Non-Labor Expenses $23.940 $28.797 $20.167 $17.754 $18.330 $18.658 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $84.459 $97.779 $90.909 $86.102 $85.717 $86.170 Depreciation $24.589 $17.500 $17.500 $17.500 $17.500 $17.500 GASB 49 Environmental Remediation 0.127 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 2.025 0.320 0.300 1.690 (2.130) (2.130) GASB 75 OPEB Expense Adjustment 0.951 5.631 5.826 6.015 6.209 6.418 GASB 87 Lease Adjustment 0.185 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $27.878 $23.451 $23.626 $25.205 $21.579 $21.788 Total Expenses $112.337 $121.230 $114.535 $111.307 $107.296 $107.958 Net Surplus/(Deficit) ($100.057) ($107.292) ($101.332) ($101.655) ($97.485) ($98.135)
+```
+[p409_c0003] _V-239_
+
+## Page 410
+
+### [p410_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p410_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $3.892 $3.808 $3.968 $3.968 $3.998 $3.998 Other Operating Revenue 12.853 2.494 1.521 1.474 1.490 1.506 Capital and Other Reimbursements 8.563 7.636 7.714 4.210 4.323 4.319 Total Receipts $25.307 $13.938 $13.203 $9.652 $9.811 $9.823 Expenditures Labor: Payroll $31.123 $39.560 $38.689 $36.946 $35.757 $35.821 Overtime 5.610 4.709 4.595 4.685 4.276 4.282 Health and Welfare 9.137 9.936 10.651 10.090 10.417 10.474 OPEB Current Payments 2.721 3.282 3.300 3.318 3.818 3.818 Pension 0.000 7.330 9.000 8.910 8.730 8.730 Other Fringe Benefits 2.532 2.899 2.980 2.867 2.758 2.755 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $51.124 $67.715 $69.215 $66.816 $65.755 $65.880 Non-Labor: Electric Power $4.869 $6.601 $6.635 $6.393 $6.798 $7.030 Fuel 0.280 0.335 0.323 0.318 0.320 0.337 Insurance 1.278 2.337 2.945 2.943 3.185 3.244 Claims 0.431 1.005 0.500 0.500 0.500 0.500 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.686 10.726 5.972 3.985 3.939 3.947 Professional Services Contracts 1.939 5.577 1.572 1.445 1.414 1.402 Materials and Supplies 3.544 1.581 1.570 1.303 1.304 1.323 Other Business Expenses 0.401 1.057 0.263 0.236 0.238 0.243 Total Non-Labor Expenditures $16.427 $29.219 $19.780 $17.122 $17.698 $18.026 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $67.551 $96.934 $88.995 $83.938 $83.454 $83.907 Net Cash Balance ($42.243) ($82.996) ($75.792) ($74.286) ($73.643) ($74.084)
+```
+[p410_c0003] _V-240_
+
+## Page 411
+
+### [p411_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p411_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue $0.026 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 10.665 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 2.338 0.000 0.000 0.000 0.000 0.000 Total Receipts $13.028 $0.000 $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll $0.953 ($1.129) $0.092 $0.096 $0.187 $0.186 Overtime 0.153 0.001 0.000 0.000 0.000 0.000 Health and Welfare (2.686) 0.000 (0.001) 0.000 0.000 0.001 OPEB Current Payments 1.673 0.000 0.000 0.000 0.000 0.000 Pension 7.447 1.050 0.000 0.000 0.000 0.000 Other Fringe Benefits 1.842 1.344 1.435 1.436 1.444 1.444 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.015 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $9.395 $1.266 $1.527 $1.532 $1.631 $1.631 Non-Labor: Electric Power $0.152 ($0.304) 0.000 $0.237 $0.237 $0.237 Fuel 0.015 0.000 0.000 0.008 0.008 0.008 Insurance 0.254 0.000 0.000 0.000 0.000 0.000 Claims 6.800 (0.118) 0.387 0.387 0.387 0.387 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (0.324) 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.104 (0.200) (0.200) (0.200) (0.200) (0.200) Materials and Supplies (0.011) 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.523 0.200 0.200 0.200 0.200 0.200 Total Non-Labor Expenditures $7.513 ($0.422) $0.387 $0.632 $0.632 $0.632 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $16.908 $0.844 $1.914 $2.164 $2.263 $2.263 Total Cash Conversion Adjustments before Depreciation $29.937 $0.844 $1.914 $2.164 $2.263 $2.263 Depreciation $24.589 $17.500 $17.500 $17.500 $17.500 $17.500 GASB 49 Environmental Remediation 0.127 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 2.025 0.320 0.300 1.690 (2.130) (2.130) GASB 75 OPEB Expense Adjustment 0.951 5.631 5.826 6.015 6.209 6.418 GASB 87 Lease Adjustment 0.185 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $27.878 $23.451 $23.626 $25.205 $21.579 $21.788 Total Cash Conversion Adjustments $57.814 $24.295 $25.540 $27.369 $23.842 $24.051
+```
+[p411_c0003] _V-241_
+
+## Page 412
+
+### [p412_c0001] MTA STATEN ISLAND RAILWAY 2026 Preliminary Budget July Financial Plan 2026 – 2029 Year-to-Year Changes by Category-Baseline
+### [p412_c0002] REVENUE
+### [p412_c0003] Farebox Revenue
+- [p412_c0004] • Farebox Revenue for 2025 reflects actual results through April and ridership trends for the remainder of the year. For 2026 through 2029, farebox projections remain unchanged from the February Plan.
+### [p412_c0005] Other Operating Revenue
+- [p412_c0006] • Other Operating Revenue is unchanged through the Plan period.
+### [p412_c0007] Capital and Other Reimbursements
+- [p412_c0008] • Annual reimbursement levels remain unchanged through the Plan period.
+### [p412_c0009] EXPENSES
+### [p412_c0010] Payroll
+- [p412_c0011] • Represented employee wage increases assume pattern settlements followed by increases of 2.0% annually. • Wage increases for non-represented employees are projected at 2.0% per year. • The payroll expenses increase by $0.3 million in 2026, $0.2 million in 2027, and decrease by $1.1 million in 2028 due to programmatic changes, and increase by $0.1 million in 2029, reflecting wage increases.
+### [p412_c0012] Overtime
+- [p412_c0013] • Payroll wage rate increase assumptions apply.
+### [p412_c0014] Health & Welfare
+- [p412_c0015] • Projections for 2027 through 2028 assume a general increase in rates for annual and hourly employees. Projected changes also reflect the impact of headcount changes.
+### [p412_c0016] Pension
+- [p412_c0017] • Projections are consistent with current actuarial projections.
+### [p412_c0018] Other Fringe Benefits
+- [p412_c0019] • Projected changes reflect payroll related amounts, Workers' Compensation reserve projections, and reimbursable headcount assumptions.
+### [p412_c0020] Electric Power
+- [p412_c0021] • The July Plan reflects projected New York Power Authority energy rate increases for both traction and non-traction power and Con Edison delivery rate changes.
+[p412_c0022] _V-242_
+
+## Page 413
+
+### [p413_c0001] Fuel
+- [p413_c0002] • The July Plan reflects updated fuel price assumptions that are lower than the February Plan.
+### [p413_c0003] Insurance
+- [p413_c0004] • Expenses reflect the latest premium rates. Decreases are minimal annually.
+### [p413_c0005] Maintenance and Other Operating Contracts
+- [p413_c0006] • Expenses decrease by $2.0 million (33.3%) in 2027 compared to 2026 and remain unchanged in 2028 through 2029. The 2027 change reflects the completion of the non-revenue roof repairs. Other changes reflect inflationary projections.
+### [p413_c0007] Professional Services
+- [p413_c0008] • Expenses decrease by $4.0 million in 2026. The change reflects the completion of the cybersecurity initiatives. Other changes reflect inflationary projections.
+### [p413_c0009] Materials and Supplies
+- [p413_c0010] • Non-reimbursable expense levels decrease in 2027 by $0.3 million (17.0%) and remain unchanged year-to-year.
+### [p413_c0011] Other Business Expenses
+- [p413_c0012] • Annual expenses remain unchanged year-to-year.
+### [p413_c0013] Depreciation
+- [p413_c0014] • Annual expenses increase by $1.6 million in 2027, decrease by $3.6 million in 2028, and increase by $0.2 million in 2029 resulting from pension and liability changes.
+[p413_c0015] _V-243_
+
+## Page 414
+
+### [p414_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p414_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable Operating Revenues Farebox Revenue $3.808 $3.968 $0.160 $3.968 $0.000 $3.998 $0.030 $3.998 $0.000 Other Operating Revenue 2.494 1.521 (0.973) 1.474 (0.047) 1.490 0.016 1.506 0.016 Total Revenues $6.302 $5.489 ($0.813) $5.442 ($0.047) $5.488 $0.046 $5.504 $0.016 Operating Expenses Labor: Payroll $34.176 $34.480 ($0.304) $34.679 ($0.199) $33.532 $1.147 $33.595 ($0.063) Overtime 3.759 3.643 0.115 3.860 (0.217) 3.432 0.428 3.440 (0.009) Health and Welfare 9.936 10.650 (0.714) 10.090 0.560 10.417 (0.327) 10.475 (0.058) OPEB Current Payments 3.282 3.300 (0.018) 3.318 (0.018) 3.818 (0.500) 3.818 0.000 Pension 8.380 9.000 (0.620) 8.910 0.090 8.730 0.180 8.730 0.000 Other Fringe Benefits 1.813 1.955 (0.142) 3.281 (1.326) 3.135 0.147 3.134 0.001 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $61.345 $63.028 ($1.683) $64.138 ($1.110) $63.063 $1.075 $63.192 ($0.129) Non-Labor: Electric Power $6.297 $6.635 ($0.339) $6.630 $0.005 $7.035 ($0.405) $7.267 ($0.231) Fuel 0.335 0.323 0.012 0.326 (0.003) 0.328 (0.002) 0.345 (0.017) Insurance 2.337 2.945 (0.608) 2.943 0.002 3.185 (0.242) 3.244 (0.059) Claims 0.887 0.887 0.000 0.887 0.000 0.887 0.000 0.887 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 10.726 5.972 4.754 3.985 1.987 3.939 0.045 3.947 (0.008) Professional Services Contracts 5.377 1.372 4.006 1.245 0.126 1.214 0.031 1.202 0.012 Materials and Supplies 1.581 1.570 0.011 1.303 0.267 1.304 (0.002) 1.323 (0.019) Other Business Expenses 1.257 0.463 0.794 0.436 0.027 0.438 (0.002) 0.443 (0.005) Total Non-Labor Expenses $28.797 $20.167 $8.630 $17.754 $2.412 $18.330 ($0.576) $18.658 ($0.328) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $90.142 $83.195 $6.947 $81.892 $1.303 $81.394 $0.499 $81.851 ($0.457) Depreciation $17.500 $17.500 $0.000 $17.500 $0.000 $17.500 $0.000 $17.500 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.320 0.300 0.020 1.690 (1.390) (2.130) 3.820 (2.130) 0.000 GASB 75 OPEB Expense Adjustment 5.631 5.826 (0.195) 6.015 (0.189) 6.209 (0.194) 6.418 (0.209) GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $23.451 $23.626 ($0.175) $25.205 ($1.579) $21.579 $3.626 $21.788 ($0.209) Total Expenses After Depreciation and GASB Adjs. $113.593 $106.821 $6.772 $107.097 ($0.276) $102.973 $4.125 $103.639 ($0.666) Net Surplus/(Deficit) ($107.291) ($101.332) $5.959 ($101.655) ($0.323) ($97.485) $4.171 ($98.135) ($0.650)
+```
+[p414_c0003] _V-244_
+
+## Page 415
+
+### [p415_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p415_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 Change 2027 Change 2026 - 2027 Change 2028 Change 2027 - 2028 Change 2029 Change 2028 - 2029
+```
+### [p415_c0003] Reimbursable
+### [p415_c0004] Operating Revenues
+[p415_c0005]
+
+```text
+Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 7.636 7.714 0.078 4.210 (3.504) 4.323 0.113 4.319 (0.004) Total Revenues $7.636 $7.714 $0.078 $4.210 ($3.504) $4.323 $0.113 $4.319 ($0.004)
+```
+### [p415_c0006] Operating Expenses
+### [p415_c0007] Labor:
+[p415_c0008]
+
+```text
+Payroll $4.255 $4.301 ($0.046) $2.363 $1.938 $2.412 ($0.049) $2.412 $0.001 Overtime 0.951 0.952 (0.001) 0.825 0.127 0.844 (0.019) 0.842 0.002 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 2.430 2.460 (0.030) 1.022 1.438 1.067 (0.045) 1.065 0.002 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $7.636 $7.714 ($0.077) $4.210 $3.504 $4.323 ($0.113) $4.319 $0.004
+```
+### [p415_c0009] Non-Labor:
+[p415_c0010]
+
+```text
+Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+### [p415_c0011] Other Expense Adjustments:
+[p415_c0012]
+
+```text
+Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p415_c0013]
+
+```text
+Total Expenses Before Depreciation $7.636 $7.714 ($0.077) $4.210 $3.504 $4.323 ($0.113) $4.319 $0.004
+```
+[p415_c0014]
+
+```text
+Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p415_c0015]
+
+```text
+Net Surplus/(Deficit) $0.000 $0.000 $0.001 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p415_c0016] _V245_
+
+## Page 416
+
+### [p416_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p416_c0002]
+
+```text
+Mid-Year Forecast 2025 Preliminary Budget 2026 Change 2025 - 2026 2027 Change 2026 - 2027 2028 Change 2027 - 2028 2029 Change 2028 - 2029 Non-Reimbursable and Reimbursable Operating Revenues Farebox Revenue $3.808 $3.968 $0.160 $3.968 $0.000 $3.998 $0.030 $3.998 $0.000 Other Operating Revenue 2.494 1.521 (0.973) 1.474 (0.047) 1.490 0.016 1.506 0.016 Capital and Other Reimbursements 7.636 7.714 0.078 4.210 (3.504) 4.323 0.113 4.319 (0.004) Total Revenues $13.938 $13.203 ($0.735) $9.652 ($3.551) $9.811 $0.159 $9.823 $0.012 Operating Expenses Labor: Payroll $38.431 $38.782 ($0.350) $37.042 $1.739 $35.944 $1.098 $36.007 ($0.063) Overtime 4.710 4.596 0.114 4.685 (0.089) 4.276 0.409 4.283 (0.007) Health and Welfare 9.936 10.650 (0.714) 10.090 0.560 10.417 (0.327) 10.475 (0.058) OPEB Current Payments 3.282 3.300 (0.018) 3.318 (0.018) 3.818 (0.500) 3.818 0.000 Pension 8.380 9.000 (0.620) 8.910 0.090 8.730 0.180 8.730 0.000 Other Fringe Benefits 4.243 4.415 (0.172) 4.303 0.112 4.202 0.102 4.200 0.002 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $68.982 $70.742 ($1.761) $68.348 $2.394 $67.386 $0.962 $67.512 ($0.125) Non-Labor: Electric Power $6.297 $6.635 ($0.339) $6.630 $0.005 $7.035 ($0.405) $7.267 ($0.231) Fuel 0.335 0.323 0.012 0.326 (0.003) 0.328 (0.002) 0.345 (0.017) Insurance 2.337 2.945 (0.608) 2.943 0.002 3.185 (0.242) 3.244 (0.059) Claims 0.887 0.887 0.000 0.887 0.000 0.887 0.000 0.887 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 10.726 5.972 4.754 3.985 1.987 3.939 0.045 3.947 (0.008) Professional Services Contracts 5.377 1.372 4.006 1.245 0.126 1.214 0.031 1.202 0.012 Materials and Supplies 1.581 1.570 0.011 1.303 0.267 1.304 (0.002) 1.323 (0.019) Other Business Expenses 1.257 0.463 0.794 0.436 0.027 0.438 (0.002) 0.443 (0.005) Total Non-Labor Expenses $28.797 $20.167 $8.630 $17.754 $2.412 $18.330 ($0.576) $18.658 ($0.328) Other Expense Adjustments: Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $97.779 $90.909 $6.870 $86.102 $4.807 $85.717 $0.386 $86.170 ($0.453) Depreciation $17.500 $17.500 $0.000 $17.500 $0.000 $17.500 $0.000 $17.500 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.320 0.300 0.020 1.690 (1.390) (2.130) 3.820 (2.130) 0.000 GASB 75 OPEB Expense Adjustment 5.631 5.826 (0.195) 6.015 (0.189) 6.209 (0.194) 6.418 (0.209) GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $23.451 $23.626 ($0.175) $25.205 ($1.579) $21.579 $3.626 $21.788 ($0.209) Total Expenses After Depreciation and GASB Adjs. $121.230 $114.535 $6.695 $111.307 $3.228 $107.296 $4.012 $107.958 ($0.662) Net Surplus/(Deficit) ($107.292) ($101.332) $5.960 ($101.655) ($0.323) ($97.485) $4.171 ($98.135) ($0.650)
+```
+[p416_c0003] _V246_
+
+## Page 417
+
+### [p417_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026 - 2029 Changes Year-to-Year by Category Favorable/(Unfavorable) ($ in millions)
+[p417_c0002]
+
+```text
+Mid-Year Forecast Preliminary Budget Change Change Change Change 2025 2026 2025 - 2026 2027 2026 - 2027 2028 2027 - 2028 2029 2028 - 2029
+```
+### [p417_c0003] Cash Receipts and Expenditures
+### [p417_c0004] Receipts
+[p417_c0005]
+
+```text
+Farebox Revenue $3.808 $3.968 $0.160 $3.968 $0.000 $3.998 $0.030 $3.998 $0.000 Other Operating Revenue 2.494 1.521 (0.973) 1.474 (0.047) 1.490 0.016 1.506 0.016 Capital and Other Reimbursements 7.636 7.714 0.078 4.210 (3.504) 4.323 0.113 4.319 (0.004) Total Receipts $13.938 $13.203 ($0.735) $9.652 ($3.551) $9.811 $0.159 $9.823 $0.012
+```
+### [p417_c0006] Expenditures
+### [p417_c0007] Labor Expenditures:
+[p417_c0008]
+
+```text
+Payroll $39.560 $38.689 $0.871 $36.946 $1.743 $35.757 $1.189 $35.821 ($0.064) Overtime 4.709 4.595 0.113 4.685 (0.090) 4.276 0.409 4.282 (0.007) Health and Welfare 9.936 10.651 (0.715) 10.090 0.561 10.417 (0.327) 10.474 (0.057) OPEB Current Payments 3.282 3.300 (0.018) 3.318 (0.018) 3.818 (0.500) 3.818 0.000 Pension 7.330 9.000 (1.670) 8.910 0.090 8.730 0.180 8.730 0.000 Other Fringe Benefits 2.899 2.980 (0.081) 2.867 0.113 2.758 0.110 2.755 0.003 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $67.715 $69.215 ($1.500) $66.816 $2.399 $65.755 $1.061 $65.880 ($0.125)
+```
+### [p417_c0009] Non-Labor Expenditures:
+[p417_c0010]
+
+```text
+Electric Power $6.601 $6.635 ($0.035) $6.393 $0.242 $6.798 ($0.405) $7.030 ($0.231) Fuel 0.335 0.323 0.012 0.318 0.005 0.320 (0.002) 0.337 (0.017) Insurance 2.337 2.945 (0.608) 2.943 0.002 3.185 (0.242) 3.244 (0.059) Claims 1.005 0.500 0.505 0.500 0.000 0.500 0.000 0.500 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 10.726 5.972 4.754 3.985 1.987 3.939 0.045 3.947 (0.008) Professional Services Contracts 5.577 1.572 4.006 1.445 0.126 1.414 0.031 1.402 0.012 Materials and Supplies 1.581 1.570 0.011 1.303 0.267 1.304 (0.002) 1.323 (0.019) Other Business Expenses 1.057 0.263 0.794 0.236 0.027 0.238 (0.002) 0.243 (0.005) Total Non-Labor Expenditures $29.219 $19.780 $9.439 $17.122 $2.657 $17.698 ($0.576) $18.026 ($0.328)
+```
+### [p417_c0011] Other Expenditure Adjustments:
+[p417_c0012]
+
+```text
+Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p417_c0013]
+
+```text
+Total Expenditures $96.934 $88.995 $7.939 $83.938 $5.057 $83.454 $0.485 $83.907 ($0.453) Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p417_c0014]
+
+```text
+Net Cash Surplus/(Deficit) ($82.996) ($75.792) $7.204 ($74.286) $1.506 ($73.643) $0.644 ($74.084) ($0.441)
+```
+[p417_c0015] _V-247_
+
+## Page 418
+
+### [p418_c0001] MTA STATEN ISLAND RAILWAY 2026 Preliminary Budget July Financial Plan 2026 – 2028 Summary of Major Plan-to-Plan Changes by Generic Categories
+### [p418_c0002] 2025: MID-YEAR FORECAST VS. ADOPTED BUDGET
+### [p418_c0003] REVENUE
+- [p418_c0004] • Farebox revenue is projected to decrease by $0.1 million reflecting actual result through April and ridership trends for the remainder of the year. • Other Operating Revenue increases by $1.0 million, resulting from Tropical Storm Ida insurance recoveries.
+### [p418_c0005] EXPENSES
+[p418_c0006] Operating expenses are projected to increase by $7.5 million from the February Plan:
+- [p418_c0007] • Payroll expenses are projected to increase by $0.1 million. • Overtime expenses are projected to increase by $0.01 million. • Professional service contract expenses are projected to increase by $4.3 million due to cybersecurity initiatives. • Maintenance and other operating contract expenses increase by $2.3 million, reflecting the timing of 2024 projects, including non-revenue shop roof repairs. • Other Business expenses are higher by $0.8 million due to the timing of 2024 projects such as CCTV and other projects. • Insurance expenses are unfavorable by $0.8 million, reflecting revised premium assumptions.
+### [p418_c0008] 2026 – 2028: JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN
+### [p418_c0009] REVENUE
+[p418_c0010] Operating revenues are unchanged from the February Financial Plan for 2026 through 2028.
+### [p418_c0011] EXPENSES
+[p418_c0012] Operating expenses are projected to increase by $1.7 million in 2026, $1.0 million in 2027 and $1.2 million in 2028.
+[p418_c0013] Major generic category changes include:
+- [p418_c0014] • Payroll expenses are projected to increase by $0.3 million in 2026 through 2028. • Health and Welfare expenses are projected to increase by $0.1 million in 2026 through 2028. • Pension expenses are projected to decrease by $0.5 million in 2026 and by $0.6 million in both 2027 and 2028, largely due to an updated actuarial projection. • Insurance expenses are projected to increase by $1.4 million in 2026, and $1.3 million in 2027 and 2028, reflecting revised premium assumptions.
+[p418_c0015] _V-248_
+
+## Page 419
+
+- [p419_c0001] • Expenses for Electric Power are projected to decrease by $0.9 million in 2026, $1.0 million in 2027, and $0.7 million in 2028, due to revised rates and consumption. • Expenses for Fuel are projected to increase by $0.1 million from 2026 through 2028, due to revised rates and consumption. • Non-labor expenses are projected to increase by $1.6 million in 2026, $1.0 million in 2027, and $1.2 million in 2028.
+[p419_c0002] _V-249_
+
+## Page 420
+
+### [p420_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+[p420_c0002]
+
+```text
+NON-REIMBURSABLE 2025 2026 2027 2028 Adopted Financial Plan - Net Cash Surplus/(Deficit) (75.535) (74.089) (73.308) (72.401) Baseline Changes Revenue Farebox Revenue (0.142) 0.000 0.000 0.000 Other Operating Revenue 0.989 0.000 0.000 0.000 Capital and Other Reimbursement 0.000 0.000 0.000 0.000 Total Revenue Changes 0.847 0.000 0.000 0.000 Expenses Labor: Payroll (0.146) (0.293) (0.298) (0.304) Overtime (0.015) (0.031) (0.032) (0.033) Health and Welfare (0.052) (0.112) (0.120) (0.130) OPEB Current Payment 0.000 0.000 0.000 0.000 Pensions 0.870 0.470 0.580 0.610 Other Fringe Benefits (0.130) (0.140) (0.140) (0.141) Reimbursable Overhead 0.000 0.000 0.000 0.000 Total Labor Expense Changes 0.527 (0.106) (0.010) 0.002 Non-Labor: Electric Power 0.382 0.939 1.044 0.749 Fuel (0.115) (0.104) (0.109) (0.104) Insurance (0.792) (1.374) (1.254) (1.283) Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (2.325) (0.686) (0.535) (0.498) Professional Service Contracts (4.275) (0.203) (0.109) (0.097) Materials & Supplies (0.063) (0.130) 0.014 0.005 Other Business Expenses (0.837) (0.040) (0.019) (0.016) Total Non-Labor Expense Changes (8.025) (1.598) (0.968) (1.244) Total Expense Changes before Depreciation & GASB Adjs. (7.498) (1.704) (0.978) (1.242) Total Depreciation and GASB Adjs. Changes 0.000 0.000 0.000 0.000 Cash Adjustment Changes Cash Adj-2025 Results Real & Timing (0.809) Total Cash Adjustment Changes (0.809) 0.000 0.000 0.000 Total Baseline Changes (6.651) (1.704) (0.978) (1.242) Total Changes (7.460) (1.704) (0.978) (1.242) November Financial Plan - Net Cash Surplus/(Deficit) (82.995) (75.793) (74.286) (73.643)
+```
+[p420_c0003] _V-250_
+
+## Page 421
+
+### [p421_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+[p421_c0002]
+
+```text
+REIMBURSABLE 2025 2026 2027 2028 Adopted Financial Plan - Net Cash Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 Baseline Changes Revenue Farebox Revenue 0.000 0.000 0.000 0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 Capital and Other Reimbursement (0.001) (0.001) 0.001 0.000 Total Revenue Changes (0.001) (0.001) 0.001 0.000 Expenses Labor: Payroll 0.000 0.000 (0.000) 0.000 Overtime 0.001 0.000 (0.000) 0.000 Health and Welfare 0.000 0.000 0.000 0.000 OPEB Current Payment 0.000 0.000 0.000 0.000 Pensions 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 Total Labor Expense Changes 0.001 0.001 (0.001) 0.000 Non-Labor: Electric Power 0.000 0.000 0.000 0.000 Fuel 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 Professional Service Contracts 0.000 0.000 0.000 0.000 Materials & Supplies 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 Total Non-Labor Expense Changes 0.000 0.000 0.000 0.000 Total Expense Changes 0.001 0.001 (0.001) 0.000 Cash Adjustment Changes Total Cash Adjustment Changes $0.000 $0.000 $0.000 $0.000 Total Baseline Changes $0.000 ($0.000) $0.000 $0.000 November Financial Plan - Net Cash Surplus/(Deficit) $0.000 ($0.000) $0.000 $0.000
+```
+[p421_c0003] _V-251_
+
+## Page 422
+
+### [p422_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026-2029 Changes Between Financial Plans by Generic Categories ($ in millions)
+[p422_c0002]
+
+```text
+NON-REIMBURSABLE/REIMBURSABLE 2025 2026 2027 2028 Adopted Financial Plan - Net Cash Surplus/(Deficit) ($75.535) ($74.089) ($73.308) ($72.401) Baseline Changes Revenue Farebox Revenue (0.142) - - - Other Operating Revenue 0.989 - - - Capital and Other Reimbursement (0.001) (0.001) 0.001 - Total Revenue Changes $0.846 ($0.001) $0.001 $0.000 Expenses Labor: Payroll (0.146) (0.293) (0.298) (0.304) Overtime (0.014) (0.031) (0.032) (0.033) Health and Welfare (0.052) (0.112) (0.120) (0.130) OPEB Current Payment 0.000 0.000 0.000 0.000 Pensions 0.870 0.470 0.580 0.610 Other Fringe Benefits (0.130) (0.140) (0.140) (0.141) Reimbursable Overhead 0.000 0.000 0.000 0.000 Total Labor Expense Changes $0.528 ($0.105) ($0.011) $0.002 Non-Labor: Electric Power 0.382 0.939 1.044 0.749 Fuel (0.115) (0.104) (0.109) (0.104) Insurance (0.792) (1.374) (1.254) (1.283) Claims 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (2.325) (0.686) (0.535) (0.498) Professional Service Contracts (4.275) (0.203) (0.109) (0.097) Materials & Supplies (0.063) (0.130) 0.014 0.005 Other Business Expenses (0.837) (0.040) (0.019) (0.016) Total Non-Labor Expense Changes ($8.025) ($1.598) ($0.968) ($1.244) Total Expense Changes ($7.497) ($1.703) ($0.979) ($1.242) Cash Adjustment Changes ($0.809) $0.000 $0.000 $0.000 Total Cash Adjustment Changes ($0.809) $0.000 $0.000 $0.000 Total Baseline Changes ($7.460) ($1.704) ($0.978) ($1.242) November Financial Plan - Net Cash Surplus/(Deficit) ($82.995) ($75.793) ($74.286) ($73.643)
+```
+[p422_c0003] _V-252_
+
+## Page 423
+
+### [p423_c0001] MTA Staten Island Railway July Financial Plan 2026-2029 Summary of Major Programmatic Changes Between Financial Plans ($ in millions)
+### [p423_c0002] NON-REIMBURSABLE and REIMBURSABLE
+[p423_c0003]
+
+```text
+2025 2026 2027 2028 Adopted Financial Plan - Net Cash Surplus/(Deficit) (75.535) (74.089) (73.308) (72.401) Non-Reimbursable Major Changes Revenue Farebox Revenue (0.142) 0.000 0.000 0.000 Other Operating Revenue 0.989 0.000 0.000 0.000 Sub-Total Non-Reimbursable Revenue Changes 0.847 0.000 0.000 0.000 Expenses Inflation-Related: Energy - Electric Power 0.382 0.939 1.044 0.749 Energy - Fuel (0.115) (0.104) (0.109) (0.104) Changes in Inflation for Material, Prof. Serv, Other Business (0.260) (0.555) (0.146) (0.104) Insurance Forecast (0.792) (1.374) (1.254) (1.283) Pension Adjustment 0.870 0.470 0.580 0.610 Roll over (7.081) Two car cleaner (0.117) (0.237) (0.245) (0.253) Two janitors (0.107) (0.218) (0.226) (0.234) CBRE contract (0.255) (0.440) (0.440) (0.440) Tree removal contract (0.200) (0.050) (0.050) (0.050) Legal service charge back (0.012) (0.014) (0.014) (0.013) Unemployment insurance (0.120) (0.120) (0.120) (0.120) NRS roof (0.500) Sub-Total Non-Reimbursable Expense Changes (8.308) (1.703) (0.978) (1.242) Total Non-Reimbursable Major Changes (7.461) (1.703) (0.978) (1.242) Reimbursable Major Changes Capital and Other Reimbursements Sub-Total Reimbursable Expense Changes 0.000 0.000 0.000 0.000 Total Reimbursable Major Changes 0.000 0.000 0.000 0.000 Total Accrual Changes (7.461) (1.703) (0.978) (1.242) Cash Adjustment Changes Sub-Total Reimbursable Revenue Changes 0.000 0.000 0.000 0.000 Total Cash Adjustment Changes 0.000 0.000 0.000 0.000 Total Baseline Changes (7.461) (1.703) (0.978) (1.242) Total Changes (7.461) (1.703) (0.978) (1.242) November Financial Plan - Net Cash Surplus/(Deficit) (82.996) (75.792) (74.286) (73.643)
+```
+[p423_c0004] _V-253_
+
+## Page 424
+
+### [p424_c0001] MTA STATEN ISLAND RAILWAY 2026 Preliminary Budget July Financial Plan 2026 – 2029 RIDERSHIP/ (UTILIZATION)
+### [p424_c0002] RIDERSHIP/(UTILIZATION)
+[p424_c0003] Ridership projections are lower for 2025 and remain unchanged from 2026 through 2028 compared to the February Plan.
+[p424_c0004] _V-254_
+
+## Page 425
+
+### [p425_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026 - 2029 Ridership (Utilization) and Revenue (in millions)
+[p425_c0002]
+
+```text
+Actual 2024 Mid-Year Forecast 2025 Preliminary Budget 2026 2027 2028 2029 RIDERSHIP Fixed Route 2.299 2.371 2.390 2.390 2.408 2.408 FAREBOX REVENUE Fixed Route Farebox Revenue $3.866 $3.808 $3.968 $3.968 $3.998 $3.998 Farebox Revenue $3.866 $3.808 $3.968 $3.968 $3.998 $3.998
+```
+[p425_c0003] _V-255_
+
+## Page 426
+
+### [p426_c0001] MTA STATEN ISLAND RAILWAY 2026 Preliminary Budget July Financial Plan 2026 – 2029 POSITIONS
+### [p426_c0002] POSITION ASSUMPTIONS
+### [p426_c0003] YEAR-TO-YEAR CHANGES
+[p426_c0004] Total positions decrease annually due to the end of funding for non-reimbursable and reimbursable capital project support, by 7 positions in 2026, 26 in 2027, 20 positions in 2028 and no change in 2029.
+### [p426_c0005] JULY FINANCIAL PLAN VS. FEBRUARY FINANCIAL PLAN
+[p426_c0006] The total baseline positions are projected to increase by 4 positions each year, starting in 2026 to support SIR's expanded operational requirements and service needs, which include 2 non-reimbursable positions for continued maintenance of the legacy R44 fleet and 2 positions for expanded facility maintenance.
+[p426_c0007] _V-256_
+
+## Page 427
+
+### [p427_c0001] MTA Staten Island Railroad July Financial Plan 2026-2029 Favorable/(Unfavorable)
+### [p427_c0002] Total Position Changes at a Glance
+[p427_c0003]
+
+```text
+2025 2026 2027 2028 2025 February Plan - Total Baseline Positions 431 424 398 378 Total Plan-to-Plan Changes (4) (4) (4) (4) 2025 July Plan - Total Baseline Positions 435 428 402 382 Total Year-to-Year Changes, July Plan 7 26 20
+```
+### [p427_c0004] Total Plan-to-Plan Changes by Reporting Category:
+[p427_c0005]
+
+```text
+Non-Reimbursable (4) (4) (4) (4) Reimbursable 0 0 0 0 Total (4) (4) (4) (4) Full-Time (4) (4) (4) (4) Full-Time Equivalents 0 0 0 0 Total (4) (4) (4) (4) By Function Category - Administration 0 0 0 0 - Operations (2) (2) (2) (2) - Maintenance (2) (2) (2) (2) - Engineering/Capital 0 0 0 0 - Public Safety 0 0 0 0 Total (4) (4) (4) (4) By Occupational Group - Managers/Supervisors 0 0 0 0 - Professional, Technical, Clerical 0 0 0 0 - Operational Hourlies (4) (4) (4) (4) Total (4) (4) (4) (4)
+```
+### [p427_c0006] Total Plan-to-Plan Changes by Major Category:
+[p427_c0007]
+
+```text
+MTA Operating Efficiencies 0 0 0 0 New Needs (4) (4) (4) (4) Change in Reimbursable Positions 0 0 0 0 Re-estimates & All Other 1 0 0 0 0 Total (4) (4) (4) (4)
+```
+[p427_c0008] _1 Includes Full Time Equivalents_
+[p427_c0009] _V-257_
+
+## Page 428
+
+### [p428_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026-2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full Time Equivalents
+[p428_c0002]
+
+```text
+FUNCTION/DEPARTMENT 2024 Actual 2025 2026 2027 2028 2029 Administration Executive 6 8 8 8 8 8 General Office 18 20 20 20 20 20 Purchasing/Stores 4 4 4 4 4 4 Total Administration 28 32 32 32 32 32 Operations Transportation 143 157 155 145 145 145 Maintenance Mechanical 53 61 56 55 55 55 Electronic/Electrical 21 25 25 25 25 25 Power/Signals 31 33 33 33 32 32 Maintenance of Way 86 92 92 79 60 60 Infrastructure 25 29 29 29 29 29 Total Maintenance 216 240 235 221 201 201 Engineering/Capital Capital Project Support 7 6 6 4 4 4 Public Safety Police Baseline Total Positions 394 435 428 402 382 382 Non-Reimbursable 386 381 374 374 354 354 Reimbursable 8 54 54 28 28 28 Total Full-Time 394 435 428 402 382 382 Total Full-Time Equivalents
+```
+[p428_c0003] _V-258_
+
+## Page 429
+
+### [p429_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p429_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual Mid-Year Preliminary 2027 2028 2029 2024 Forecast Budget 2024 2025 2026 Administration Managers/Supervisors 14 16 16 16 16 16 Professional/Technical/Clerical 6 8 8 8 8 8 Operational Hourlies 8 8 8 8 8 8 Total Administration Headcount 28 32 32 32 32 32 Operations Managers/Supervisors 21 27 27 27 27 27 Professional/Technical/Clerical 6 6 6 6 6 6 Operational Hourlies 116 124 122 112 112 112 Total Operations Headcount 143 157 155 145 145 145 Maintenance Managers/Supervisors 27 33 32 31 28 28 Professional/Technical/Clerical 8 9 9 9 9 9 Operational Hourlies 181 198 194 181 164 164 Total Maintenance Headcount 216 240 235 221 201 201 Engineering / Capital Managers/Supervisors 5 4 4 4 4 4 Professional/Technical/Clerical 2 2 2 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 7 6 6 4 4 4 Public Safety Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 Total Positions Managers/Supervisors 67 80 79 78 75 75 Professional/Technical/ Clerical 22 25 25 23 23 23 Operational Hourlies 305 330 324 301 284 284 Total Positions 394 435 428 402 382 382
+```
+[p429_c0003] _V-259_
+
+## Page 430
+
+[p430_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p430_c0002] _V-260_

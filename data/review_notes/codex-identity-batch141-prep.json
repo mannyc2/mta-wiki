@@ -1,0 +1,162 @@
+{
+  "batch_id": "identity141",
+  "prepared_count": 10,
+  "proposed_aliases": [
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_woodhaven-blvd-queens",
+      "target_id": "corridor_woodhaven-boulevard",
+      "confidence": "high",
+      "reason": "Both records describe the Woodhaven Boulevard corridor in Queens. The alias is a Queens/Woodhaven Blvd spelling record with Woodhaven Boulevard corridor evidence, while the target is the fuller Woodhaven Boulevard corridor record already carrying Queens Boulevard-to-107th Avenue and Q52/Q53 SBS corridor context.",
+      "evidence_refs": [
+        "2015_04_29_brt_woodhaven_dw3_presentation#p014_c0001",
+        "brt_woodhaven_faq#p001_c0001",
+        "better_buses#p001_b0001",
+        "2014_10_22_brt_woodhaven_cac2_discussionmaterials#p001_c0004"
+      ],
+      "guard_notes": "Corridor guard satisfied: same street name after Boulevard/Blvd normalization and same Queens corridor identity. Pair is absent from current merges and do-not-merge. This does not merge any route/service variant. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_woodhaven-cross-bay-sbs",
+      "target_id": "corridor_woodhaven-cross-bay-blvds",
+      "confidence": "high",
+      "reason": "Both records describe the Woodhaven/Cross Bay Boulevards corridor in Queens from Woodside to the Rockaways. The alias is the SBS-labeled corridor record based on Q52/Q53 LTD/SBS context, and the target is the broader Woodhaven / Cross Bay Boulevards corridor record with the same limits and routes.",
+      "evidence_refs": [
+        "2014_10_22_brt_woodhaven_cac2_presentation#p010_c0001",
+        "2015_04_23_brt_woodhaven_dw2_presentation#p001_c0001",
+        "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p001_c0001",
+        "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p007_c0005"
+      ],
+      "guard_notes": "Corridor guard satisfied: same Woodhaven/Cross Bay Queens corridor and compatible Woodside-to-Rockaways scope. Pair is absent from current merges and do-not-merge. SBS wording is project/corridor context, not a route-variant merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_woodhaven-cross-bay-sbs-jan2016",
+      "target_id": "corridor_woodhaven-cross-bay-blvds",
+      "confidence": "high",
+      "reason": "Both records identify the Woodhaven / Cross Bay Boulevard(s) Queens corridor. The January 2016 alias is a source-specific Woodhaven/Cross Bay Boulevard record, while the target consolidates the same corridor with Woodside-to-Rockaways/Q52-Q53 context.",
+      "evidence_refs": [
+        "brt_woodhaven_cb9_jan2016#p008_c0001",
+        "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p001_c0001",
+        "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p007_c0005"
+      ],
+      "guard_notes": "Corridor guard satisfied: same named Queens corridor with compatible Woodhaven/Cross Bay scope. Pair is absent from current merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_woodhaven-cross-bay-blvd-cac5",
+      "target_id": "corridor_woodhaven-cross-bay-blvds",
+      "confidence": "high",
+      "reason": "Both records describe the same Woodhaven / Cross Bay Boulevard(s) corridor. The CAC5 alias is a dated source-specific extraction, and the target is the established corridor record with the same street pair and Queens SBS study context.",
+      "evidence_refs": [
+        "2015_12_15_brt_woodhaven_cac5_presentation#p001_c0001",
+        "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p001_c0001",
+        "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p007_c0005"
+      ],
+      "guard_notes": "Corridor guard satisfied: same Woodhaven/Cross Bay street-pair corridor in Queens. Pair is absent from current merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_b82-southern-brooklyn-jan2018",
+      "target_id": "corridor_b82-southern-brooklyn",
+      "confidence": "high",
+      "reason": "Both records describe the B82 Southern Brooklyn corridor. The alias is a January 2018 dated B82 Southern Brooklyn Corridor record, while the target is the undated Southern Brooklyn B82 corridor record from the same B82 bus-priority/SBS context.",
+      "evidence_refs": [
+        "brt_south_brooklyn_b82_jan2018#p003_c0002",
+        "brt_south_brooklyn_b82_cb14_may2017#p003_c0002"
+      ],
+      "guard_notes": "Corridor guard satisfied: same B82 Southern Brooklyn corridor identity. Pair is absent from current merges and do-not-merge. This is a corridor-scope merge and does not merge local, LTD, or SBS route records. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_b82-sbs-full-route-oct2018",
+      "target_id": "corridor_b82-southern-brooklyn",
+      "confidence": "high",
+      "reason": "Both records describe the Southern Brooklyn B82 corridor. The alias explicitly names the full B82 SBS corridor from Cropsey Ave/Bay 37 St to Pennsylvania Ave in Starrett City, and the target is the consolidated Southern Brooklyn B82 corridor record.",
+      "evidence_refs": [
+        "brt_south_brooklyn_b82_mbca_oct2018#p008_c0002",
+        "brt_south_brooklyn_b82_cb14_may2017#p003_c0002"
+      ],
+      "guard_notes": "Corridor guard satisfied: same B82 Southern Brooklyn corridor context and compatible full-route corridor scope. Pair is absent from current merges and do-not-merge. This does not merge B82 local/LTD/SBS route identities. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_e161st-st-brt-bx6-cb4-may2022",
+      "target_id": "corridor_east-161st-street",
+      "confidence": "high",
+      "reason": "Both records identify East/E 161st Street in the Bronx as a Bx6/capital-project corridor. The alias is a May 2022 CB4 source-specific abbreviation, while the target is the fuller East 161st Street corridor record.",
+      "evidence_refs": [
+        "brt_bx6_cb4_may2022#p016_c0002",
+        "brt_bx6_cb4_may2022#p016_c0005",
+        "161st_bx6_capital_project_2026#p001_b0001"
+      ],
+      "guard_notes": "Corridor guard satisfied: E/East abbreviation only, same numbered Bronx street and compatible Bx6 corridor context. Pair is absent from current merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_e163rd-st-brt-bx6-cb4-may2022",
+      "target_id": "corridor_east-163rd-street",
+      "confidence": "high",
+      "reason": "Both records identify East/E 163rd Street in the Bronx. The alias is a May 2022 CB4 source-specific abbreviation with Bx6 intersection-improvement context, while the target is the fuller East 163rd Street corridor record tied to the East 161st Street/Bx6 capital project.",
+      "evidence_refs": [
+        "brt_bx6_cb4_may2022#p033_c0001",
+        "161st_bx6_capital_project_2026#p001_b0001"
+      ],
+      "guard_notes": "Corridor guard satisfied: E/East abbreviation only, same numbered Bronx street, compatible Bx6 capital-project context. Pair is absent from current merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_e-167-168-st-bx-cb4",
+      "target_id": "corridor_east-167-168-st",
+      "confidence": "high",
+      "reason": "Both records describe the East/E 167th Street and East/E 168th Street Bronx corridor. The alias is a CB4 abbreviation record, while the target spells out East 167 Street and East 168 Street and includes Bx35 corridor metrics.",
+      "evidence_refs": [
+        "bx_cb4_projects_feb052020#p005_c0003",
+        "bx_cb4_projects_feb052020#p028_c0003",
+        "bronx_bus_network_final_plan_2019#p033_c0004"
+      ],
+      "guard_notes": "Corridor guard satisfied: E/East and ordinal abbreviation only, same paired Bronx streets and Bx35 corridor context. Pair is absent from current merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_bus-fwd-2-42nd-st-manhattan",
+      "target_id": "corridor_42nd-st-manhattan",
+      "confidence": "high",
+      "reason": "Both records describe 42nd Street in Manhattan. The alias is a Bus Forward 2 local bus priority corridor segment on E 42nd St from Lexington Av to Broadway, while the target is the established 42nd Street Corridor record with broader 12th Avenue-to-FDR Drive Manhattan scope.",
+      "evidence_refs": [
+        "bus_forward_2#p011_c0002",
+        "42nd_st_cb6_jun032019#p008_c0001",
+        "42nd_st_cb6_jun032019#p008_c0002",
+        "42nd_st_cb6_jun032019#p008_c0003"
+      ],
+      "guard_notes": "Corridor guard satisfied: same Manhattan street corridor; the alias limits are contained within the target's broader 42nd Street corridor limits. Pair is absent from current merges and do-not-merge. This is not a route/service-variant merge. Durable merge direction is alias_id -> target_id."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files data wiki raw packages docs | rg '(^data/review_notes/|merges\\\\.json$|do-not|identity|canonical|route|corridor)'",
+    "git status --short",
+    "ls data/review_notes 2>/dev/null | tail -80",
+    "jq 'keys' data/identity-overrides/merges.json | head -80",
+    "jq 'keys' data/identity-overrides/do-not-merge.json | head -80",
+    "jq '.' data/review_notes/codex-identity-batch138-prep.json | head -220",
+    "head -5 data/canonical/routes.jsonl && head -5 data/canonical/corridors.jsonl",
+    "node read-only route/corridor candidate grouping over data/canonical/routes.jsonl and data/canonical/corridors.jsonl",
+    "node read-only exact route_id/variant and corridor name/borough/limits grouping over canonical JSONL",
+    "node read-only targeted corridor pair inspection for Woodhaven, B82, Kings Highway, Bx6, numbered-street, and 42nd Street records",
+    "node read-only selected corridor record summary from data/canonical/corridors.jsonl",
+    "node read-only collision check against data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and prior codex identity prep files",
+    "rg -n \"125th-street-manhattan|125th-st-manhattan\" data/identity-overrides/do-not-merge.json data/review_notes | head -40",
+    "jq '.pairs | keys' data/identity-overrides/do-not-merge.json",
+    "node read-only corrected do-not-merge shape check confirming selected pairs are unguarded and corridor_125th-street-manhattan -> corridor_125th-st-manhattan is guarded",
+    "test -e data/review_notes/codex-identity-batch141-prep.json && echo exists || echo missing"
+  ],
+  "commands_not_run": [
+    "no provider-backed commands or agent harness commands",
+    "no canonicalize*, campaign dedup, identity-review, write, ask, schema, ontology-normalize, or --profile/provider commands",
+    "no materialize",
+    "no export-jsonl",
+    "no full validate",
+    "no edits to canonical JSONL, wiki pages, DB, LOG.md, manifest, retired submissions, submissions, or merges.json"
+  ]
+}

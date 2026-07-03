@@ -1,0 +1,273 @@
+{
+  "note_id": "codex-relation-rule-or-data-next21-prep",
+  "batch_id": "next21",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": "Codex-only relation endpoint-shape rule-or-data triage; deterministic local inspection plus this single prep artifact; no provider-backed commands, generated-output commands, durable data edits, or code edits",
+  "current_checkpoint_context": {
+    "reported_unexpected_relation_endpoint_shape_count_after_relation044_identity076_next20": 24,
+    "observed_endpoint_shape_issue_count": 24,
+    "recent_work_not_repeated": [
+      "owned_by corridor->entity validator rule patch",
+      "operated_by corridor->entity validator rule patch",
+      "has_claim treatment_component->claim validator rule patch",
+      "has_treatment route->treatment_component validator rule patch",
+      "operates_on_corridor entity->corridor validator rule patch",
+      "relation cleanup batches037-044 for timeline, published_by, implemented_by, related_route, and part_of_program buckets"
+    ],
+    "inspection_method": "Read-only SQLite queries against data/canonical.db using the current RELATION_ENDPOINT_SHAPES table from packages/pipeline/src/records/relations.ts, plus jq and rg inspection of existing canonical JSONL, submission journals, and source blocks."
+  },
+  "remaining_bucket_counts": {
+    "total": 24,
+    "buckets": [
+      { "bucket": "has_claim claim->claim", "count": 1 },
+      { "bucket": "has_timeline_event entity->metric_claim", "count": 1 },
+      { "bucket": "has_timeline_event event->entity", "count": 1 },
+      { "bucket": "has_timeline_event project->entity", "count": 1 },
+      { "bucket": "has_timeline_event source->entity", "count": 1 },
+      { "bucket": "has_treatment claim->treatment_component", "count": 1 },
+      { "bucket": "has_treatment entity->metric_claim", "count": 1 },
+      { "bucket": "has_treatment event->treatment_component", "count": 1 },
+      { "bucket": "implemented_by corridor->entity", "count": 1 },
+      { "bucket": "implemented_by entity->entity", "count": 1 },
+      { "bucket": "implemented_by event->entity", "count": 1 },
+      { "bucket": "implemented_by source->entity", "count": 1 },
+      { "bucket": "implemented_by treatment_component->entity", "count": 1 },
+      { "bucket": "operated_by entity->entity", "count": 1 },
+      { "bucket": "operated_by entity->event", "count": 1 },
+      { "bucket": "operated_by treatment_component->entity", "count": 1 },
+      { "bucket": "operates_on_corridor project->entity", "count": 1 },
+      { "bucket": "owned_by event->entity", "count": 1 },
+      { "bucket": "owned_by source->entity", "count": 1 },
+      { "bucket": "published_by claim->entity", "count": 1 },
+      { "bucket": "published_by metric_claim->source", "count": 1 },
+      { "bucket": "related_route project->project", "count": 1 },
+      { "bucket": "serves_route project->entity", "count": 1 },
+      { "bucket": "serves_route project->project", "count": 1 }
+    ],
+    "triage_note": "All current exact endpoint-shape buckets are singletons. After excluding recently handled timeline, published_by, implemented_by, related_route, part_of_program, and validator-rule lanes, has_treatment claim->treatment_component is the clearest next data cleanup: the source-backed treatment and claim are both valid records, but the relation uses the wrong relation kind/direction for a claim subject."
+  },
+  "recommendation": "data_cleanup",
+  "recommended_bucket": "has_treatment claim->treatment_component",
+  "expected_delta": {
+    "baseline_unexpected_relation_endpoint_shape": 24,
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 1,
+    "replacement_rows_expected_to_be_endpoint_shape_valid": 1,
+    "expected_remaining_after_cleanup": 23
+  },
+  "recommended_data_cleanup": {
+    "mechanism": "retire_and_replace",
+    "why_data_cleanup": "The current has_treatment endpoint contract intentionally scopes treatments to projects, corridors, and routes. This row instead uses a claim as the subject. The source evidence supports a treatment component and a source-stated claim about that treatment, not a claim owning a treatment. The recently admitted has_claim treatment_component->claim shape preserves the relationship without widening has_treatment.",
+    "why_not_validator_rule_patch": "Allowing has_treatment claim->treatment_component would make claims containers for treatment records and blur the pipeline's ownership boundary: claims are assertion records, while treatment_component records should attach to project/corridor/route scope or carry their own claim context via has_claim. The inverse valid shape already exists, so this is not an ontology gap.",
+    "candidate_submissions_to_retire": [
+      {
+        "submission_id": "sub_e9da8479c21e0686",
+        "record_id": "relation_accessibility-has-treatment-elevator",
+        "source_id": "meeting_doc_109976",
+        "current_relation_kind": "has_treatment",
+        "current_shape": "claim -> treatment_component",
+        "retire_reason": "Malformed direction/kind: the claim record is used as the has_treatment subject."
+      }
+    ],
+    "replacement_direction": {
+      "observation_kind": "relation",
+      "recommended_local_observation_id": "relation_elevator_livonia_rockaway_has_claim",
+      "recommended_label": "New elevator at Livonia Av & Rockaway Parkway has source claim",
+      "relation_kind": "has_claim",
+      "relation_family": "claim_context",
+      "subject_local_observation_id": "treatment_elevator_livonia_rockaway",
+      "subject_record_id": "treatment_elevator-livonia-rockaway",
+      "subject_kind": "treatment_component",
+      "object_local_observation_id": "claim_new_elevator_livonia_rockaway",
+      "object_record_id": "claim_new-elevator-livonia-rockaway",
+      "object_kind": "claim",
+      "recommended_shape": "treatment_component -> claim",
+      "evidence_refs_to_reuse": [
+        "meeting_doc_109976#p013_c0001",
+        "meeting_doc_109976#p013_c0003"
+      ]
+    },
+    "existing_replacement_check": "Read-only relation lookup found no existing relation involving these two endpoints except relation_accessibility-has-treatment-elevator, so replacement would not duplicate an already materialized edge."
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_accessibility-has-treatment-elevator",
+      "source_id": "meeting_doc_109976",
+      "submission_ids": [
+        "sub_e9da8479c21e0686"
+      ],
+      "malformed_shape_under_current_validator": "has_treatment claim->treatment_component",
+      "recommended_action": "retire relation_accessibility-has-treatment-elevator and replace it with has_claim treatment_component->claim",
+      "current_relation": {
+        "relation_kind": "has_treatment",
+        "relation_family": "treatment_context",
+        "subject": {
+          "record_id": "claim_new-elevator-livonia-rockaway",
+          "record_kind": "claim",
+          "display_name": "New Elevator at Livonia Av & Rockaway Parkway",
+          "local_observation_id": "claim_new_elevator_livonia_rockaway"
+        },
+        "object": {
+          "record_id": "treatment_elevator-livonia-rockaway",
+          "record_kind": "treatment_component",
+          "display_name": "New elevator at Livonia Av & Rockaway Parkway",
+          "local_observation_id": "treatment_elevator_livonia_rockaway"
+        },
+        "payload_summary": {
+          "assertion_status": "unknown",
+          "as_of_date": "2023-04-26"
+        }
+      },
+      "replacement_relation": {
+        "relation_kind": "has_claim",
+        "relation_family": "claim_context",
+        "subject": {
+          "record_id": "treatment_elevator-livonia-rockaway",
+          "record_kind": "treatment_component"
+        },
+        "object": {
+          "record_id": "claim_new-elevator-livonia-rockaway",
+          "record_kind": "claim"
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "meeting_doc_109976",
+          "evidence_id": "meeting_doc_109976#p013_c0001",
+          "source_path": "raw/sources/meeting_doc_109976/blocks.jsonl",
+          "page_number": 13,
+          "block_id": "p013_c0001",
+          "text_sha256": "sha256:6d40cc00221b6942c1d1053a53dfd426c9d83c196bb661c49b955221b8b8e21a",
+          "source_quote": "Welcome back to a new elevator! Thank you for your patience during construction."
+        },
+        {
+          "source_id": "meeting_doc_109976",
+          "evidence_id": "meeting_doc_109976#p013_c0003",
+          "source_path": "raw/sources/meeting_doc_109976/blocks.jsonl",
+          "page_number": 13,
+          "block_id": "p013_c0003",
+          "text_sha256": "sha256:349cb41153c4af687916965b08da894da5255f5a0d9ab16ba6f758af93a1dd43",
+          "source_quote": "Advancing Systemwide Accessibility"
+        }
+      ],
+      "triage_read": "The page text supports a treatment component at Livonia Av & Rockaway Parkway and a claim/description about the new elevator. It does not support making the claim the scope owner for a has_treatment edge."
+    },
+    {
+      "record_id": "relation_gct-has-elevator-t7",
+      "source_id": "meeting_doc_135296",
+      "submission_ids": [
+        "sub_54844f41b339d69c"
+      ],
+      "malformed_shape_under_current_validator": "has_treatment entity->metric_claim",
+      "triage_read": "Not selected. This is also malformed, but it appears to confuse treatment and metric semantics. It should remain a separate future data cleanup and is not evidence for widening has_treatment to entity or metric endpoints."
+    },
+    {
+      "record_id": "relation_meeting-doc-128866-winter-trackwork-2024-has-treatment-switch-installations",
+      "source_id": "meeting_doc_128866",
+      "submission_ids": [
+        "sub_41409bcac8bad651"
+      ],
+      "malformed_shape_under_current_validator": "has_treatment event->treatment_component",
+      "triage_read": "Not selected. This may need event-to-project/treatment restructuring, but event subjects should not be admitted to has_treatment just to clear one row."
+    },
+    {
+      "record_id": "relation_access-a-ride-operated-by-nyct",
+      "source_id": "meeting_doc_91586",
+      "submission_ids": [
+        "sub_9e51ef484cc836e5"
+      ],
+      "malformed_shape_under_current_validator": "operated_by entity->entity",
+      "triage_read": "Not selected. Entity service operated-by entity may be semantically plausible, but the cited evidence is only a Paratransit Report agenda line in an NYCT/Bus committee context. That is too thin for a validator rule patch in this bucket."
+    },
+    {
+      "record_id": "relation_rel-ace-starts-at-manhattan-brooklyn",
+      "source_id": "meeting_doc_201621",
+      "submission_ids": [
+        "sub_a0a60967ae6b4493"
+      ],
+      "malformed_shape_under_current_validator": "operates_on_corridor project->entity",
+      "triage_read": "Not selected. This remains a data error after the entity->corridor rule patch; the object is an agency entity while the evidence says the ACE/ABLE program began on buses across routes and boroughs."
+    }
+  ],
+  "evidence": {
+    "source_and_canonical_evidence_summary": [
+      "Canonical relation relation_accessibility-has-treatment-elevator comes from accepted submission sub_e9da8479c21e0686 in source meeting_doc_109976.",
+      "The relation's subject endpoint is canonical claim claim_new-elevator-livonia-rockaway, whose payload claim_text is 'Welcome back to a new elevator! Thank you for your patience during construction.'",
+      "The relation's object endpoint is canonical treatment_component treatment_elevator-livonia-rockaway, whose payload describes a new elevator installed at the Livonia Av & Rockaway Parkway L subway station entrance.",
+      "The source evidence blocks are a page-13 image description showing the elevator/signage at Livonia Av & Rockaway Parkway L and a page-13 heading, 'Advancing Systemwide Accessibility'.",
+      "A read-only lookup of relations involving either endpoint found only the malformed relation_accessibility-has-treatment-elevator; no existing has_claim treatment_component->claim replacement was present."
+    ],
+    "selected_source_blocks": [
+      {
+        "source_id": "meeting_doc_109976",
+        "block_id": "p013_c0001",
+        "page_number": 13,
+        "raw_text": "A photograph of a subway station entrance. In the foreground, a man in a light blue shirt and dark pants is seated in a wheelchair, smiling. To his left, a woman in a black jacket and red bag is pushing a red stroller with a purple bag. Behind them, a man in a blue patterned blazer and grey trousers is walking towards the camera. In the background, there is a glass elevator with a sign that says \"Welcome back to a new elevator! Thank you for your patience during construction.\" Above the elevator, there is a sign for \"Exit\" with accessibility icons and \"Livonia Av & Rockaway Parkway L\". A yellow arrow points to the \"Exit\" sign with the text \"Increased Appeal\".",
+        "canonical_text_sha256": "sha256:6d40cc00221b6942c1d1053a53dfd426c9d83c196bb661c49b955221b8b8e21a"
+      },
+      {
+        "source_id": "meeting_doc_109976",
+        "block_id": "p013_c0003",
+        "page_number": 13,
+        "raw_text": "Advancing Systemwide Accessibility",
+        "canonical_text_sha256": "sha256:349cb41153c4af687916965b08da894da5255f5a0d9ab16ba6f758af93a1dd43"
+      }
+    ],
+    "validator_boundary": {
+      "current_valid_has_treatment_shapes": [
+        "project->treatment_component",
+        "corridor->treatment_component",
+        "route->treatment_component"
+      ],
+      "current_valid_has_claim_shapes_relevant_to_replacement": [
+        "treatment_component->claim"
+      ],
+      "selected_invalid_shape": "has_treatment claim->treatment_component",
+      "interpretation": "The treatment component can carry the claim context through has_claim, while has_treatment remains reserved for attaching treatments to scope records."
+    }
+  },
+  "guards": {
+    "non_goals": [
+      "Do not retire, replace, or edit canonical data as part of this prep.",
+      "Do not apply code or validator rule patches in this artifact-only lane.",
+      "Do not rerun materialize, export-jsonl, full validate, DB publish, write, ask, schema, ontology-normalize, identity-review, canonicalize, campaign dedup, or any provider/profile-backed command.",
+      "Do not repeat next20's operates_on_corridor entity->corridor validator rule patch or recent relation044/identity076 work.",
+      "Do not pick another timeline, published_by, implemented_by, related_route, or part_of_program data batch in this next21 triage.",
+      "Do not widen has_treatment to claim subjects, entity subjects, event subjects, metric_claim objects, claim objects, source subjects, or source_gap endpoints.",
+      "Do not infer a project/corridor/route scope for the elevator from this cleanup unless a later data pass separately finds source-backed scope evidence."
+    ],
+    "negative_endpoint_combos_that_must_remain_invalid": [
+      "has_treatment claim->treatment_component",
+      "has_treatment entity->metric_claim",
+      "has_treatment event->treatment_component",
+      "has_treatment source->treatment_component",
+      "has_treatment treatment_component->claim",
+      "has_treatment treatment_component->treatment_component",
+      "has_treatment claim->claim",
+      "has_treatment project->claim",
+      "has_treatment project->metric_claim",
+      "has_claim claim->treatment_component"
+    ]
+  },
+  "commands_run_read_only": [
+    "pwd && ls data/review_notes | tail -40",
+    "sed -n '1,240p' data/review_notes/codex-relation-rule-or-data-next20-prep.json",
+    "git status --short",
+    "sqlite3 'file:data/canonical.db?mode=ro' '.tables'",
+    "sqlite3 'file:data/canonical.db?mode=ro' '.schema relations'",
+    "sed -n '190,270p' packages/pipeline/src/records/relations.ts",
+    "sed -n '270,360p' packages/pipeline/src/records/relations.ts",
+    "sqlite3 -json 'file:data/canonical.db?mode=ro' '<current endpoint-shape bucket inventory using RELATION_ENDPOINT_SHAPES known kinds only>'",
+    "sqlite3 'file:data/canonical.db?mode=ro' '.schema records'",
+    "sqlite3 'file:data/canonical.db?mode=ro' '.schema evidence_refs' && sqlite3 'file:data/canonical.db?mode=ro' '.schema record_submissions' && sqlite3 'file:data/canonical.db?mode=ro' '.schema record_sources'",
+    "sqlite3 -json 'file:data/canonical.db?mode=ro' 'SELECT * FROM records LIMIT 1;'",
+    "sqlite3 -json 'file:data/canonical.db?mode=ro' '<current endpoint-shape issue rows with endpoints, payloads, evidence, and submissions>'",
+    "sqlite3 -json 'file:data/canonical.db?mode=ro' '<relations involving claim_new-elevator-livonia-rockaway or treatment_elevator-livonia-rockaway>'",
+    "sqlite3 -json 'file:data/canonical.db?mode=ro' '<canonical selected relation, claim, and treatment records>'",
+    "jq -c 'select(.block_id==\"p013_c0001\" or .block_id==\"p013_c0003\") | {page_number,block_id,raw_text,text_sha256}' raw/sources/meeting_doc_109976/blocks.jsonl",
+    "rg -n 'sub_e9da8479c21e0686|relation_accessibility_has_treatment_elevator|relation_accessibility-has-treatment-elevator|claim_new_elevator_livonia_rockaway|treatment_elevator_livonia_rockaway' data/submissions data/canonical -g '!data/transcripts/**'",
+    "test ! -e data/review_notes/codex-relation-rule-or-data-next21-prep.json && echo missing || echo exists"
+  ],
+  "all_pass": true
+}

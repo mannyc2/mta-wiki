@@ -1,0 +1,2120 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-174016"
+record_kind: "source"
+display_name: "FMTAC 2025 Annual Board Meeting"
+source_id: "meeting_doc_174016"
+source_ids:
+  - "meeting_doc_174016"
+local_observation_id: "source_fmtac_annual_board_meeting_2025"
+local_observation_ids:
+  - "source_fmtac_annual_board_meeting_2025"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T17:41:06.475Z"
+submission_ids:
+  - "sub_92f6cce20247a6b1"
+payload:
+  authority_tier: "official_evaluation"
+  content_type: "annual_board_meeting_book"
+  date_text: "May 28, 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-05-28"
+    precision: "day"
+    raw_text: "May 28, 2025"
+  description: "FMTAC Annual Board Meeting document containing Program Summary & Executive Summary, Multi-Year Comparative Financial Statements 2021-2024, Draft Audited Financial Statements as of December 31, 2024, Statement of Actuarial Opinion, Regulatory Compliance Report, Investment Report, Service Provider Reports, Cybersecurity Certification, and Disaster Response & Business Continuity Plans"
+  published_date_normalized: "2025-05-28"
+  published_date_precision: "day"
+  publisher: "First Mutual Transportation Assurance Company (FMTAC)"
+  title: "First Mutual Transportation Assurance Company 2025 Annual Board Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_174016#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_174016"
+    source_path: "raw/sources/meeting_doc_174016/blocks.jsonl"
+    text_sha256: "sha256:edb6ecac401fbe542450c24c81c922170a1c646501310015b0f5b6863a3586f9"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0007"
+    evidence_id: "meeting_doc_174016#p001_c0007"
+    page_number: 1
+    source_id: "meeting_doc_174016"
+    source_path: "raw/sources/meeting_doc_174016/blocks.jsonl"
+    text_sha256: "sha256:0ea687ea7a30d060dff8bcc9da380672b15099e4aa4986f97d8414f83fe08378"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0009"
+    evidence_id: "meeting_doc_174016#p001_c0009"
+    page_number: 1
+    source_id: "meeting_doc_174016"
+    source_path: "raw/sources/meeting_doc_174016/blocks.jsonl"
+    text_sha256: "sha256:4cab873a92b73797e2a921adc98eebd352f424968217e541c15517bdf167e8e9"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0003"
+    evidence_id: "meeting_doc_174016#p002_c0003"
+    page_number: 2
+    source_id: "meeting_doc_174016"
+    source_path: "raw/sources/meeting_doc_174016/blocks.jsonl"
+    text_sha256: "sha256:fa31d28bdba561e4f160eeb62e80e0264999a08fec127437ed24f5b2b90c4e61"
+    text_source: "raw_text"
+---
+
+# Annual Board Meeting
+
+source_id: meeting_doc_174016
+citation: cite block ids exactly as shown in square brackets
+document: 1277 block(s)
+
+## Page 1
+
+### [p001_c0001] Staff Summary
+[p001_c0002]
+
+```text
+Subject FMTAC Annual Meeting Department Finance Department Head Name Kevin Willens, Chief Financial Officer Department Head Signature Project Manager/Division Head Claudia Reuben, Deputy Chief, Risk and Insurance Management
+```
+[p001_c0003]
+
+```text
+Date May 28, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p001_c0004]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance 5/28/25 X 2 Board 5/28/25 X
+```
+[p001_c0005]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Chief Financial Officer 2 Legal Procurement
+```
+### [p001_c0006] Purpose:
+[p001_c0007] To provide information concerning the First Mutual Transportation Assurance Company's (FMTAC's) 2024 activities and operations to board members in connection with May 28, 2025, annual FMTAC Board meeting.
+### [p001_c0008] Discussion:
+[p001_c0009] The monthly MTA board meeting of May 28, 2025 will also be the annual board meeting of MTA's captive insurer, the First Mutual Transportation Assurance Company. For informational purposes, the FMTAC Board Book is being distributed to board members in advance of the meeting.
+[p001_c0010] The FMTAC Board Book contains the Annual Meeting Newsletter (Section 1), which provides a summary update on the activities of FMTAC for the year ended December 31, 2024; historical comparative balance sheet and income statement summaries (Section 2); a draft of the FMTAC Audited Financial Statements for the years ended December 31, 2024 (Section 3); and the Statement of Actuarial Opinion prepared by Oliver Wyman setting forth the independent actuary's determination that the reserves recorded by FMTAC for the year ended December 31, 2024 meet the requirements of the captive insurance laws of the State of New York and make reasonable provision for unpaid loss and loss adjustment expense obligations of FMTAC (Section 4).
+[p001_c0011] Also, the FMTAC Board Book includes the regulatory compliance report for 2025 (Section 5), a Report on Investments (Section 6), and materials describing the captive manager advisers (Amethyst Captive Management), FMTAC's investment managers (BlackRock Financial Management), and actuaries (Oliver Wyman) (Section 7).
+
+## Page 2
+
+### [p002_c0001] First Mutual Transportation Assurance Company
+### [p002_c0002] 2025 Annual Board Meeting
+[p002_c0003] May 28, 2025 | MTA Corporate Office | 2 Broadway, 20 th Floor, New York, NY
+[p002_c0004] New York State Insurance Captive of
+> [p002_c0005] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom right corner. It features a dark blue circular icon with the white letters "MTA" inside. To the right of the icon, the words "Metropolitan", "Transportation", and "Authority" are stacked vertically in a bold, dark blue sans-serif font.
+
+## Page 3
+
+### [p003_c0001] Table of Contents
+[p003_c0002] First Mutual Transportation Assurance Company Annual Board Meeting May 28, 2025
+### [p003_c0003] NOTICE:
+[p003_c0004] The 2025 Board of Directors of First Mutual Transportation Assurance Company (“FMTAC”) will be held at 2 Broadway, 20 th Floor, New York, NY on May 28, 2025.
+### [p003_c0005] TABLE OF CONTENTS:
+[p003_c0006] FMTAC Program Summary & Executive Report..... TAB 1 Multi Year Comparative Financial Statements: 2021 - 2024..... TAB 2 DRAFT Audited Financial Statements: December 31, 2024..... TAB 3 Statement of Actuarial Opinion (Certification): December 31, 2024..... TAB 4 Regulatory Compliance Report..... TAB 5 Investment Report..... TAB 6 FMTAC Partners: Service Provider Reports..... TAB 7 FMTAC Cybersecurity Certification: Report to Board of Directors..... TAB 8 Disaster Response Plan & Business Continuity Plan..... TAB 9 Glossary of Insurance Terms..... TAB 10
+
+## Page 4
+
+### [p004_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p004_c0002] New York State Insurance Captive of
+> [p004_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a dark blue circle containing the white letters "MTA". To the right of the circle, the words "Metropolitan", "Transportation", and "Authority" are stacked vertically in a dark blue, sans-serif font.
+### [p004_c0004] T A B
+### [p004_c0005] 1
+### [p004_c0006] FMTAC Program Summary & Executive Summary
+
+## Page 5
+
+[p005_c0001] New York State Insurance Captive of
+[p005_c0002] Metropolitan Transportation Authority
+[p005_c0003] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p005_c0004] PROGRAM SUMMARY
+[p005_c0005] COMPANY BACKGROUND: The First Mutual Assurance Company ("FMTAC" or the "Company") is a wholly-owned captive insurance company licensed by the NYS Department of Financial Services ("NYSDFS"). FMTAC is approved to insure and reinsure the risk of the Metropolitan Transportation Authority ("MTA") and its family of agencies.
+[p005_c0006] Incorporation Date: December 5, 1997 Captive Type: Pure- wholly-owned Commenced Business: December 15, 1997 Fiscal Year-End: Dec. 31 st NAIC Company Code #: 11787
+### [p005_c0007] OFFICERS (* indicates new officer during 2024)
+[p005_c0008] Claudia Reuben * President Robin Cooper * Secretary/Vice President Laudwin Pemberton * Sr. Vice President Janno Lieber Chairman & CEO
+[p005_c0009] EQUITY STRUCTURE: FMTAC is a mutual captive insurance company capitalized with an initial surplus contribution of $3 million. MTA is 100% beneficial owner of the Company. Equity position as of December 31, 2024 summarized below:
+[p005_c0010]
+
+```text
+Contributed Surplus Additional Paid-In Capital Retained Earnings Total Equity $ 3,000,000 $ 77,668,919 $ 111,334,838 $192,003,757
+```
+[p005_c0011] INSURANCE COVERAGES: FMTAC provides the following coverages to MTA and its affiliated agencies:
+[p005_c0012] Stations & Force Liability: LIRR & MNR Auto Liability: Paratransit & Non-Revenue All Agency Protective Liability Builder's Risk Property & Terrorism MTA Headquarters Premises Excess Loss Fund ("ELF") General Liability Owner Controlled Insurance Programs ("OCIP")
+### [p005_c0013] REGULATORY & GOVERNANCE:
+[p005_c0014] Last Exam Date: December 31, 2015 Comments: Amend By-Laws (clarify meeting frequency) Current Exam Date: December 31, 2020 Status: Draft Report Received 05.13.2025 (In Review) Statutory Filings: April 15, 2025 NYDFS Cyber Certificate of Compliance for 12.31.2024 May 15, 2025 Treasury Terrorism Risk Insurance Act – Data Call June 30, 2025 Disaster Preparedness and Response Reporting
+[p005_c0015] *NOTE: FMTAC is excluded from state premium tax and assessments levied by NYSDFS
+### [p005_c0016] PLAN AMENDMENTS:
+- [p005_c0017] STATUS DATE Effective 10.31.2024: FMTAC to take on additional layers of $10M xs $50M for NYCT & $4M of the $50M xs $325M layer for All Agency Excess Liability coverage. All other terms and conditions remain unchanged. Approved 11.22.2024 Provide clarification on the All-Risk Terrorism coverage written by FMTAC specific to the 80% "backstop" covered by the Terrorism Risk Insurance Act. Submitted 07.05.2024
+### [p005_c0018] COUNCIL OF ADVISORS
+[p005_c0019] CAPTIVE OFFICE: 2 Broadway, 16 th Floor New York, New York 10004
+### [p005_c0020] RISK & FINANCE:
+[p005_c0021] Claudia Reuben claudia.reuben@mtahq.org Laudwin Pembert lpembert@mtahq.org Tracy Hsu thsu@mtahq.org Robin Cooper rocooper@mtahq.org Wilma Acevedo wacevedo@mtahq.org
+### [p005_c0022] ACTUARY FIRM:
+[p005_c0023] Oliver Wyman Actuarial Consulting, Inc. 1166 Ave of Americas, 38 th FL, New York, NY 10036 Steven G. McKinnon 631.577.0555 steven.mckinnon@oliverwyman.com
+### [p005_c0024] AUDIT FIRM:
+[p005_c0025] Deloitte & Touche LLP 30 Rockefeller Plaza, New York, NY 10112 Audit Lead: Victoria Kaufmann 813.619.4815 vikaufmann@deloitte.com
+### [p005_c0026] BROKERAGE FIRM:
+[p005_c0027] Alliant Insurance Services Casualty | Mini RFP | OCIP Lauren Gregory 631.235.1590 lauren.gregory@alliant.com
+[p005_c0028] Willis Towers Watson: Property (pre 2024) Marsh : Property (post 2024)
+### [p005_c0029] CAPTIVE MANAGER:
+[p005_c0030] Amethyst Captive Insurance Solutions 126 College Street, Suite 300 Burlington, VT 05401 James Girardin 802.735.1677 jgirardin@amethystcaptive.com Tara Smith 802.735.1679 tsmith@amethystcaptive.com Kevin L. Coté, CPA 802.735.1692 kcoote@amethystcaptive.com
+### [p005_c0031] INSURANCE DEPARTMENT:
+[p005_c0032] NYS Department of Financial Services One State Street, 4 th Floor New York, NY 10004 212.480.2757
+[p005_c0033] _Amethyst CAPTIVE INSURANCE SOLUTIONS_
+
+## Page 6
+
+### [p006_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p006_c0002] Executive Summary | 2024
+[p006_c0003] New York State Insurance Captive of
+### [p006_c0004] YEAR-END HIGHLIGHTS: December 31, 2024
+- [p006_c0005] ➤ FMTAC finished 2024 with $209.5M in Gross Premium Earned, up 18.4% from 2023. There was a $4.6M decrease in Property premium earnings because of a 29% overall reduction in writings during the May 2024 renewal. All other lines of business experienced growth over the prior year. ➤ OCIP had a 40% increase in earned premium as the Bridge Program reported 85% project cost of completion and Mini RFP finished the year with 54% project cost of completion, an increase over prior year of 29% and 33%, respectively. ➤ Net incurred losses of $246.4M is a 250% increase over 2023 driven by unfavorable loss development in the ELF, reflecting emergence of significant claim costs over the last few years with full limit exposures. 2024 results also includes an additional $50M IBNR loss reserve provision. ➤ 2024 investment income was significantly impacted by downturn in markets experienced during December 2024, as the portfolio market valuation eroded $11.9 million to finish the year with $10.5M of recognized losses ($2.3M unrealized loss | $8.2M realized loss). This was offset by return on investments of $40.4M, a 19.6% increase from 2023 despite a relatively flat portfolio as overall rate of return improved in 2024 compared to the last few years.
+### [p006_c0006] VARIANCE ANALYSIS: $ (omit 000)
+[p006_c0007]
+
+```text
+Year-Ended AUDITED 2024 2023 % chge Gross premium earned 209,451 176,935 18.4% Ceded reinsurance expense (68,243) (63,939) -6.7% Net earned premiums 141,208 112,996 25.0% Underwriting expenses (1,550) (2,083) -25.6% Net incurred losses (246,367) (70,472) 249.6% Underwriting result (106,709) 40,441 -363.9% Net operating expenses (5,923) (6,268) -5.5% Investment income 29,871 47,962 -37.7% Net (loss) income (82,761) 82,135 -200.8%
+```
+### [p006_c0008] GROSS WRITTEN PREMIUM $(omit 000)
+[p006_c0009] Current year premium growth of $22.1M (10.6%) driven by ELF and OCIP lines. ELF renewed with a 29% increase due to its adverse loss profile. In addition, FMTAC recognized $74.2M of writings for Part 2 of Mini OCIP 2 Phase 1.
+[p006_c0010] Offsetting growth, property had a $29.0M decrease in writings as All Risk Property renewed with a 29% reduction and the MetroCat Bond was a 3-year placement in 2023.
+> [p006_c0011] Year Gross Written Premium ($) 2021 157,702 2022 266,469 2023 209,657 2024 231,792
+### [p006_c0012] COMBINED RATIO %
+> [p006_c0013] Year Combined Ratio (%) 2021 153% 2022 64% 2023 70% 2024 180%
+### [p006_c0014] NET UW INCOME (LOSS) $(omit 000)
+> [p006_c0015] Year Net UW Income (Loss) ($) 2021 (45,367) 2022 55,190 2023 40,441 2024 (106,709)
+[p006_c0016] The combined ratio measures the % of written premium spent on claims and operating expenses. Under 100% indicates profitable underwriting.
+[p006_c0017] Current year 180% combined ratio reflects impact of adverse development on ELF losses as FMTAC recorded a $50M provision in addition to existing reserve levels as recommended by Oliver Wyman. This resulted in an increase to the ultimate incurred loss values of $131.8M or 48% since prior year.
+[p006_c0018] Most other lines reported minimal or favorable claim development except for Non-Revenue and OCIP GL 2010-2014 which experienced adverse claim development as a few claims developed more than initially anticipated.
+[p006_c0019] _Amethyst_
+[p006_c0020] _EXECUTIVE SUMMARY: 2024_
+
+## Page 7
+
+### [p007_c0001] Executive Summary | 2024
+### [p007_c0002] EQUITY & SURPLUS REVIEW:
+- [p007_c0003] ➤ Large current year underwriting losses compounded by increased reserve levels (shrinking green and increase in red bars per below graph) have absorbed prior years surplus growth held by FMTAC in 2023. Current year reserve to surplus ratio increased to 4:1 from a four-year low of 2.4:1 in 2023 as reserves grew 21.8% while equity dropped 30.1%. ELF claim development caused 60.5% of total incurred losses in 2024.
+> [p007_c0004] Year Contributed Capital Reserve to Surplus (Min 5:1) Excess Surplus (Deficit) 2024 80,669 62,869 48,465 2023 80,669 37,165 156,930 2022 80,669 40,067 71,894 2021 80,669 43,155 100,785 ■ Contributed Capital ■ Reserve to Surplus (Min 5:1) ■ Excess Surplus (Deficit)
+### [p007_c0005] BALANCE SHEET HIGHLIGHTS: $(omit 000)
+[p007_c0006]
+
+```text
+As of December 31 st AUDITED % chge 2024 2023 Cash & Investments 1,048,160 935,448 12.0% Loss Escrow 20,202 24,896 -18.9% Premium Receivables 145,037 176,556 -17.9% Other Assets 7,950 6,893 15.3% Total Assets 1,221,349 1,143,793 6.8% Insurance Reserves 717,690 589,172 21.8% Unearned Premium 250,698 217,580 15.2% Losses Payable 50,481 37,185 35.8% Other Liabilities 10,477 25,092 -58.2% Total Liabilities 1,029,346 869,029 18.4% Equity 192,003 274,764 -30.1% Total Liab & Equity 1,221,349 1,143,793 6.8%
+```
+### [p007_c0007] COMPLIANCE HIGHLIGHTS:
+[p007_c0008] NY State Department of Financial Services draft 2020 Examination Report was received on May 13, 2025 and currently in review. No comments or recommendations are noted in the report.
+### [p007_c0009] PREMIUM TO SURPLUS RATIO
+> [p007_c0010] Year FMTAC Ratio Acceptable Ratio 2024 1.2 3.0 2023 0.8 3.0 2022 1.4 3.0 2021 0.7 3.0
+[p007_c0011] Premium-to-Surplus Ratio is a measure of an insurer's financial strength and future solvency. Measuring adequacy of an insurer's surplus, relative to its operating exposure. A 3:1 ratio or lower is suggested for an insurer with lines of business having long claims payout schedules (tails). Lower ratios indicate greater surplus to support future premium written.
+[p007_c0012] Calculation: Premium Written divided by Total Equity.
+[p007_c0013] Conclusion: FMTAC, with a 2024 Premium-to Surplus ratio of 1.2:1, is operating well within the industry recommended accepted range of 3:1.
+### [p007_c0014] RESERVE TO SURPLUS RATIO
+> [p007_c0015] Year FMTAC Ratio Acceptable Ratio 2024 4.0 5.0 2023 2.4 5.0 2022 3.6 5.0 2021 3.1 5.0
+[p007_c0016] Reserves-to-Surplus Ratio measures how much the insurer's surplus and capital may be impaired if loss reserves are undervalued. A 5:1 ratio or lower is an acceptable with long-tail exposure. A low ratio indicates there is surplus to support future negative fluctuations in loss reserves.
+[p007_c0017] Calculation: Total Insurance Reserves divided by Total Equity.
+[p007_c0018] Conclusion: FMTAC, with a 2024 Reserve-to-Surplus ratio of 4.0:1, remains within the industry recommended accepted range of 5:1 or lower.
+[p007_c0019] _EXECUTIVE SUMMARY: 2024_
+
+## Page 8
+
+### [p008_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p008_c0002] New York State Insurance Captive of
+> [p008_c0003] The logo for the Metropolitan Transportation Authority (MTA) is a dark blue circle containing the white letters "MTA".
+[p008_c0004] Metropolitan Transportation Authority
+### [p008_c0005] T A B
+### [p008_c0006] 2
+### [p008_c0007] Multi Year Comparative Financial Statements: 2021 - 2024
+
+## Page 9
+
+### [p009_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY (A NEW YORK STATE WHOLLY OWNED INSURANCE SUBSIDIARY OF MTA) COMPARATIVE BALANCE SHEET FOR THE YEARS ENDED DECEMBER 31, 2024 TO DECEMBER 31, 2021
+[p009_c0002]
+
+```text
+(Unaudited) (Audited) (Audited) (Audited) Dec 31, 2024 Dec 31, 2023 Dec 31, 2022 Dec 31, 2021 ASSETS Cash & Cash Equivalents $ 155,066,403 $ 81,484,119 $ 65,465,916 $ 39,135,673 Investments & Security Trusts 893,093,592 853,964,205 824,159,974 869,004,787 Premium Receivable 145,036,505 176,556,249 120,313,449 69,470,596 Reinsurance Premium Deposit - MetroCat 1,517,361 1,517,361 1,472,813 1,451,389 Reinsurance Recoverable Reserves 53,995,183 73,765,664 91,530,318 93,214,924 Escrow Paid Loss Deposit Funds 20,202,293 24,896,327 5,558,399 5,558,399 Interest Income Receivable 5,802,408 4,902,417 3,799,100 3,077,339 Deferred Losses Receivable - RCAMP 630,737 468,763 483,387 938,142 Intercompany Receivable - MTA - - - - Deferred Policy Acquisition Costs - 4,719 5,843 3,775 TOTAL ASSETS $ 1,275,344,482 $ 1,217,559,824 $ 1,112,789,199 $ 1,081,855,024 LIABILITIES IBNR Loss Reserves $ 355,288,868 $ 259,543,111 $ 279,202,451 $ 312,753,110 Case Loss Reserves 367,014,114 333,394,990 324,477,840 306,367,767 Reserves - Deemed Recoverable 49,381,705 70,000,060 91,530,318 93,214,924 Losses & LAE Payable 50,481,044 37,184,814 2,950,979 1,309,954 Unearned Premium Reserve (net of Deferred Reinsurance Premium) 250,697,897 217,580,184 210,712,303 127,188,490 Other Due 2,768,650 6,972,795 8,903,964 5,340,459 Ceded Premium Payable 7,708,447 18,119,420 1,716,856 11,070,896 Intercompany Payable - MTA - - 664,988 - TOTAL LIABILITIES 1,083,340,725 942,795,374 920,159,699 857,245,600 STOCKHOLDER'S EQUITY Contributed Surplus - Cash 3,000,000 3,000,000 3,000,000 3,000,000 Additional Policyholder Surplus 77,668,919 77,668,919 77,668,919 77,668,919 Retained Earnings 194,095,525 111,960,580 143,940,506 206,477,524 Net Income / Net Loss) (82,760,687) 82,134,951 (31,979,925) (62,537,019) TOTAL STOCKHOLDER'S EQUITY 192,003,757 274,764,450 192,629,500 224,609,424 TOTAL LIABILITIES AND STOCKHOLDER'S EQUITY $ 1,275,344,482 $ 1,217,559,824 $ 1,112,789,199 $ 1,081,855,024
+```
+
+## Page 10
+
+### [p010_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY (A NEW YORK STATE WHOLLY OWNED INSURANCE SUBSIDIARY OF MTA) COMPARATIVE INCOME STATEMENTS FOR THE YEARS ENDED DECEMBER 31, 2024 TO DECEMBER 31, 2021
+[p010_c0002]
+
+```text
+(Unaudited) Dec 31, 2024 (Audited) Dec 31, 2023 (Audited) Dec 31, 2022 (Audited) Dec 31, 2021 UNDERWRITING INCOME: Gross Written Premiums Direct $ 231,792,033 $ 209,025,803 $ 265,811,857 $ 157,277,598 Assumed - 631,396 657,147 424,351 Total Written Premium 231,792,033 209,657,199 266,469,004 157,701,949 Premium Ceded (57,034,234) (90,532,983) (54,112,597) (61,302,781) Net Retained Premium 174,757,799 119,124,216 212,356,407 96,399,168 Change in Unearned Premium - Net (33,550,044) (6,128,231) (83,566,098) 6,835,113 Net Earned Premium 141,207,755 112,995,985 128,790,309 103,234,281 LOSS & LOSS ADJUSTMENT EXPENSES: Paid Losses & LAE 117,849,557 84,979,421 88,726,200 63,309,407 Change in Case Reserves 32,771,248 7,386,831 16,554,468 61,334,215 Change in IBNR Reserves 95,745,757 (21,894,627) (32,495,053) 21,932,496 Total Incurred Losses & LAE 246,366,562 70,471,625 72,785,615 146,576,118 UNDERWRITING EXPENSES: Safety & Loss Control 3,660,985 3,924,570 2,494,982 3,714,150 Commissions Expense / (Income) (2,115,403) (1,872,935) (1,714,025) (1,711,932) Change in Deferred Acquisition Costs 4,719 30,900 34,079 22,963 Total Underwriting Expenses 1,550,301 2,082,535 815,036 2,025,181 NET UNDERWRITING INCOME / (LOSS) (106,709,108) 40,441,825 55,189,658 (45,367,018) OTHER EXPENSES: Risk Management Fees 5,521,156 5,817,566 8,296,977 7,970,029 Other Misc. Charges 401,530 450,871 440,713 894,750 Total Other Expenses 5,922,686 6,268,437 8,737,690 8,864,779 INCOME / (LOSS) BEFORE INVESTMENT INCOME (112,631,794) 34,173,388 46,451,968 (54,231,797) INVESTMENT INCOME: Investment Income 29,871,107 47,961,563 (78,431,893) (8,305,222) Total Investment Income 29,871,107 47,961,563 (78,431,893) (8,305,222) NET INCOME / (NET LOSS) $ (82,760,687) $ 82,134,951 $ (31,979,925) $ (62,537,019)
+```
+
+## Page 11
+
+### [p011_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p011_c0002] New York State Insurance Captive of
+> [p011_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a dark blue circle containing the white letters "MTA". To the right of the circle, the words "Metropolitan", "Transportation", and "Authority" are stacked vertically in a dark blue, sans-serif font.
+### [p011_c0004] T A B
+### [p011_c0005] 3
+[p011_c0006] DRAFT Audited Financial Statements: December 31, 2024
+
+## Page 12
+
+### [p012_c0001] First Mutual Transportation Assurance Company
+[p012_c0002] (Component Unit of the Metropolitan Transportation Authority)
+[p012_c0003] Financial Statements as of and for the Years Ended December 31, 2024 and 2023, and Independent Auditor's Report
+
+## Page 13
+
+### [p013_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY (Component Unit of the Metropolitan Transportation Authority)
+### [p013_c0002] TABLE OF CONTENTS
+[p013_c0003] Page INDEPENDENT AUDITOR’S REPORT 1–2 MANAGEMENT’S DISCUSSION AND ANALYSIS 3–8 FINANCIAL STATEMENTS AS OF AND FOR THE YEARS ENDED DECEMBER 31, 2024 AND 2023: Statements of Net Position 9 Statements of Revenues, Expenses and Changes in Net Position 10 Statements of Cash Flows 11 Notes to Financial Statements 12–24
+
+## Page 14
+
+### [p014_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY (Component Unit of the Metropolitan Transportation Authority)
+### [p014_c0002] MANAGEMENT’S DISCUSSION AND ANALYSIS YEARS ENDED DECEMBER 31, 2024 AND 2023 (In thousands, except as noted)
+### [p014_c0003] OVERVIEW OF THE FINANCIAL STATEMENTS
+[p014_c0004] Introduction —The following is a narrative overview and analysis of the financial activities of the First Mutual Transportation Assurance Company (the “Company” or “FMTAC”) as of and for the years ended December 31, 2024 and 2023. This discussion and analysis are intended to serve as an introduction to the Company’s financial statements which have the following components: (1) Management’s Discussion and Analysis (“MD&A”), (2) Financial Statements and (3) Notes to the Financial Statements.
+[p014_c0005] Management’s Discussion and Analysis —This MD&A provides an assessment of how the Company’s position has improved or deteriorated and identifies the factors that, in management’s view, significantly affected the Company’s overall financial position. It may contain opinions, assumptions or conclusions by the Company’s management that should not be considered a replacement for, and must be read in conjunction with, the financial statements.
+[p014_c0006] The Financial Statements Include —The Statements of Net Position provide information about the nature and amounts of resources with present service capacity that FMTAC presently controls (assets), consumption of net assets by FMTAC that is applicable to a future reporting period (deferred outflow of resources), present obligations to sacrifice resources that FMTAC has little or no discretion to avoid (liabilities), and acquisition of net assets by FMTAC that is applicable to a future reporting period (deferred inflow of resources) with the difference between assets/deferred outflows of resources and liabilities/deferred inflows of resources being reported as net position.
+[p014_c0007] The Statements of Revenues, Expenses and Changes in Net Position show how the Company’s net position changed during each year and accounts for all of the revenues and expenses, measures the success of the Company’s operations from an accounting perspective over the past year, and can be used to determine how the Company has funded its costs.
+[p014_c0008] The Statements of Cash Flows provide information about the Company’s cash receipts, cash payments, and net changes in cash resulting from operations, noncapital financing, capital and related financing, and investing activities.
+[p014_c0009] The Notes to the Financial Statements —The notes to the financial statements provide additional information that is essential for a full understanding of the information provided in the financial statements.
+### [p014_c0010] FINANCIAL REPORTING ENTITY
+[p014_c0011] On December 5, 1997, the Metropolitan Transportation Authority (“MTA”) began its operation of its newly incorporated captive insurance company, FMTAC. FMTAC was created by the MTA to engage in the business of acting as a pure captive insurance company under Section 7005, Article 70 of the Insurance Law and Section 1266 Subdivision 5 of the Public Authorities Law of the State of New York.
+[p014_c0012] _- 3 -_
+
+## Page 15
+
+[p015_c0001] FMTAC's mission is to continue, develop, and improve the insurance and risk management needs as required by the MTA. The MTA is a component unit of the State of New York.
+### [p015_c0002] CONDENSED FINANCIAL INFORMATION
+[p015_c0003] The following sections will discuss the significant changes in the Company's financial position as of December 31, 2024 and 2023. Additionally, examinations of major economic factors that have contributed to these changes are provided. It should be noted that for purposes of the MD&A, summaries of the financial statements and the various exhibits presented are extracted from the Company's financial statements, which are presented in accordance with accounting principles generally accepted in the United States of America.
+[p015_c0004]
+
+```text
+(In thousands) As of December 31, Increase/(Decrease) 2024 2023 2022 2024-2023 2023-2022 ASSETS: Current assets $ 398,694 $ 360,091 $ 368,566 $ 38,603 $ (8,475) Noncurrent assets 822,655 783,704 744,222 38,951 39,482 Total assets $1,221,349 $1,143,795 $1,112,788 $ 77,554 $ 31,007
+```
+### [p015_c0005] Significant Changes in Assets
+### [p015_c0006] December 31, 2024 versus December 31, 2023
+[p015_c0007] Total assets increased by $77,554 or 6.8%, from December 31, 2023 to December 31, 2024. The fluctuation in the total assets of FMTAC was the result of increases in cash and cash equivalents and investments, which was partially offset by decreases in premium receivables. Cash and cash equivalents increased due to timing of receipts. The increase in investments was due to market fluctuations. Premium receivable decreased due to timing of the excess loss fund ("ELF") premiums receipts.
+### [p015_c0008] December 31, 2023 versus December 31, 2022
+[p015_c0009] Total assets increased by $31,007 or 2.8%, from December 31, 2022 to December 31, 2023. The fluctuation in the total assets of FMTAC was the result of increases in premiums receivable and investments, which was partially offset by decreases in Cash and Cash Equivalents. Premium receivable increased due to additional Owner Controlled Insurance Programs ("OCIP") and excess loss fund ("ELF") premiums written in 2023. The increase in investments was due to market fluctuations. Cash and Cash Equivalents decreased due to the timing of payments.
+[p015_c0010] _- 4 -_
+
+## Page 16
+
+[p016_c0001]
+
+```text
+(In thousands) As of December 31, Increase/(Decrease) 2024 2023 2022 2024-2023 2023-2022 Liabilities and restricted net position: Current liabilities $ 338,102 $ 226,405 $ 294,576 $ 111,697 $ (68,171) Noncurrent liabilities 691,244 642,626 625,583 48,618 17,043 Total liabilities 1,029,346 869,031 920,159 160,315 (51,128) Restricted net position 192,003 274,764 192,629 (82,761) 82,135 Total liabilities and net position $1,221,349 $1,143,795 $1,112,788 $ 77,554 $ 31,007
+```
+### [p016_c0002] Significant Changes in Liabilities
+### [p016_c0003] December 31, 2024 versus December 31, 2023
+[p016_c0004] Total liabilities from December 31, 2023 to December 31, 2024 increased by $160,315 or 18.4%. The increase in liabilities is due to an increase in unearned premiums and loss and loss adjustment expense reserves net of reinsurance recoverable, which was partially offset by a decrease in ceded premiums payable. The increase in unearned premiums was due to additional premium written for OCIP and to the increase in loss and loss adjustment expense reserves was due to increase in reserves on the ELF program and a decrease to the reinsurance recoverable. The decrease in ceded premiums payable was due to installment payments in relation to the multi-year property program.
+### [p016_c0005] December 31, 2023 versus December 31, 2022
+[p016_c0006] Total liabilities from December 31, 2022 to December 31, 2023 decreased by $51,128 or 5.6%. The decrease in liabilities is due to a decrease in loss and loss adjustment expense reserves, which was partially offset by an increase in unearned premiums and ceded premium payable. The decrease in loss and loss adjustment expense reserves was due to decrease in reserves on OCIP. The increase in unearned premiums was due to additional premium written for OCIP and to the increase in ceded premiums payable due to ceded premiums in relation to the ELF program.
+### [p016_c0007] Significant Changes in Net Position
+### [p016_c0008] December 31, 2024 versus December 31, 2023
+[p016_c0009] In 2024, the restricted net position decrease of $82,761 is comprised of operating revenues of $141,208 plus non-operating revenue of $29,871 less operating expenses of $253,840.
+### [p016_c0010] December 31, 2023 versus December 31, 2022
+[p016_c0011] In 2023, the restricted net position increase of $82,135 is comprised of operating revenues of $112,996 plus non-operating revenue of $47,962 less operating expenses of $78,823.
+[p016_c0012] _- 5 -_
+
+## Page 17
+
+### [p017_c0001] Condensed Statements of Revenues, Expenses and Changes in Net Position
+[p017_c0002]
+
+```text
+(In thousands) 2024 2023 2022 Increase/(Decrease) 2024–2023 2023–2022 Operating revenues $141,208 $112,996 $128,790 $ 28,212 $ (15,794) Operating expenses 253,840 78,823 82,339 175,017 (3,516) Operating (loss) income (112,632) 34,173 46,451 (146,805) (12,278) Non-operating income (loss) 29,871 47,962 (78,432) (18,091) 126,394 Change in net position (82,761) 82,135 (31,981) (164,896) 114,116 Restricted net position— Beginning of year 274,764 192,629 224,610 82,135 (31,981) Restricted net position— End of year $192,003 $274,764 $192,629 $ (82,761) $ 82,135
+```
+[p017_c0003] Operating Revenues —Operating revenues between 2023 and 2024 increased by $28,212 or 25.0%. The increase is primarily due to an increase in earned premium for the ELF and OCIP casualty programs. Earned premium for OCIP casualty programs are based on completion of the project construction.
+[p017_c0004] Operating revenues between 2022 and 2023 decreased by $15,794 or 12.3%. The decrease is primarily due to a decrease in earned premium for the OCIP casualty program. Earned premium for OCIP casualty programs are based on completion of the project construction.
+[p017_c0005] Operating Expenses —Operating expenses between 2023 and 2024 increased by 222.0%, or $175,017. The increase was primarily due to an increase in losses incurred related to the ELF program.
+[p017_c0006] Operating expenses between 2022 and 2023 decreased by 4.3%, or $3,516. The decrease was primarily due to a decrease in chargeback related expenses from the MTA.
+[p017_c0007] Non-Operating Income —Non-operating income between 2023 and 2024 decreased by 37.7%, or $18,091. This is a result of an increase in interest and realized gain income, which was partially offset by unrealized losses on investments held by FMTAC.
+[p017_c0008] Non-operating income between 2022 and 2023 increased by 161.2%, or $126,394. This is a result of an increase in net unrealized gains, interest and realized gain income on investments held by FMTAC.
+### [p017_c0009] OVERALL FINANCIAL POSITION AND RESULTS OF OPERATIONS AND IMPORTANT ECONOMIC CONDITIONS
+[p017_c0010] Results of Operations —Operating as a pure captive insurance company domiciled in the State of New York requires that all business plans and changes to said plans be reviewed and approved by the New York Insurance Department. As of December 31, 2024 and 2023, all programs administered by FMTAC have been reviewed and approved.
+[p017_c0011] _- 6 -_
+
+## Page 18
+
+[p018_c0001] As of December 31, 2024 and 2023, FMTAC received its annual loss reserve certification. The actuary determined that reserves recorded by FMTAC were adequate and no adjustments were deemed necessary.
+[p018_c0002] U.S. Insurance Market —The United States Property/Casualty industry recorded a $22.9 billion net underwriting gain in 2024, marking a substantial swing from the $21.3 billion loss recorded in the prior year, according to a new AM Best report, as 9.8% growth in net earned premiums was countered by a 2.1% increase in incurred losses and loss adjustment expenses, as well as a 9.8% rise in other underwriting expenses. The turnaround in the personal lines segment was primarily responsible for the improvement in underwriting results. Based on data from companies whose 2024 annual statutory statements were received as of March 11, 2025, the industry's combined ratio improved by 5.0 percentage points to 96.6%, with an estimated catastrophe loss impact of 8.7 points on the 2024 combined ratio, remaining even with 2023. With earned net investment income increasing 21.3% from the prior-year period, drove pre-tax operating income 123.5% to $109.3 billion.
+### [p018_c0003] CURRENTLY KNOWN FACTS, DECISIONS OR CONDITIONS
+[p018_c0004] MTA Long Island Rail Road —New Hyde Park Collision. On October 8, 2016, while the MTA Long Island Railroad was conducting track work east of the New Hyde Park Station on track placed out of service, a piece of track equipment derailed fouling live track and was struck by a train carrying passengers, causing the passenger train to derail. Numerous passengers and several employees were injured. There has been a total of 72 claims related to this accident; 57 passenger injuries, 8 employee injuries and the remaining are property damage claims. The derailment caused damage to three passenger cars, the track area and the track equipment involved. At this time, 33 lawsuits have been filed against LIRR. LIRR has paid out the entire $11 million FMTAC Force Account retention limit in expenses and settlements and $10 million has impacted the ELF program. The current outstanding reserves are $4.7 million and there are 7 open lawsuits.
+[p018_c0005] MTA Long Island Rail Road —Atlantic Terminal Bumper Block Strike. An incident occurred on January 4, 2017, when an MTA Long Island Railroad Far Rockaway Line train struck a bumper block in the Atlantic Terminal-Brooklyn Station. To date, 122 claims have been put into suit. LIRR has paid out the entire $11 million FMTAC Station Maintenance retention limit in expenses and settlements and $21.2 million has impacted and there are 2 open lawsuits.
+[p018_c0006] NYCTA Bicycle Case — On April 10, 2016, at about 3pm, then 23-years old Robert Liciaga, rode his bicycle through a cordoned-off construction site beneath an elevated subway line and was struck by a rotted cross tie which was dropped into a designated “drop zone.” Plaintiff sustained severe and permanent injuries and is confined to a long-term care facility. A Kings County Supreme Court jury found MTA NYCT 100% liable and awarded Plaintiff $110 million. The trial judge reduced the pain and suffering awards after post-trial motions were made thereby reducing the total award to roughly $69 million. The Authority's appealed. The appellate court declined to further reduce the award except to the extent of granting a collateral source hearing on the issue of future medical expenses. Settlement was reached for $65 million. FMTAC has contributed $31M toward the settlement.
+[p018_c0007] _- 7 -_
+
+## Page 19
+
+[p019_c0001] Terrorism Risk Insurance Act —Effective November 26, 2002, the Terrorism Risk Insurance Act (“TRIA”) was signed into law. Effective December 22, 2006, TRIA was extended through December 31, 2007. On December 31, 2007, the U.S. Treasury Department issued Interim Guidance Concerning the Terrorism Risk Insurance Program Reauthorization Act of 2007 (“TRIPRA”) which has been extended through December 31, 2014. On January 12, 2015, TRIA was extended through December 31, 2021. In December 2020, TRIA was extended through to December 31, 2027. For additional information, please refer to the property section under Note 5.
+[p019_c0002] Brooklyn NYCT Shooting — On April 12, 2022, at about 8:25 am, a man reported to be Frank Robert James, committed a mass shooting, which led to an explosion and smoke condition on a Manhattan-bound N train as it traveled between 59th Street and 36th Street subway stations in Brooklyn. Six of the 8 personal injury claims filed have resulted in lawsuits, 4 of which have been consolidated. NYCT’s motion to dismiss based on NYCT’s entitlement to governmental immunity have been granted in the four consolidated cases. NYCT moved to dismiss in the remaining 2 cases. One plaintiff voluntarily discontinued in response, while a decision is pending in the remaining case. It is anticipated that plaintiffs will appeal once final orders have been entered. The case has been reported to the ELF which would be responsible for any amount in excess of the $11 million self-insured retention up to the remaining limits available.
+[p019_c0003] This financial report is designed to provide our customers and other interested parties with a general overview of FMTAC’s finances and to demonstrate FMTAC’s accountability for the funds it receives. If you have any questions about this report or need additional financial information, contact Metropolitan Transportation Authority, Deputy Chief, Controller’s Office, 2 Broadway, New York, NY 10004.
+[p019_c0004] * * * * *
+[p019_c0005] _- 8 -_
+
+## Page 20
+
+### [p020_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY (Component Unit of the Metropolitan Transportation Authority)
+### [p020_c0002] STATEMENTS OF NET POSITION AS OF DECEMBER 31, 2024 AND 2023 (In thousands)
+[p020_c0003]
+
+```text
+2024 2023 ASSETS CURRENT ASSETS: Cash and cash equivalents (Note 3) $ 168,369 $ 99,717 Investments (Note 4) 71,069 76,986 Funds held by reinsurer (Note 5) 8,418 8,181 Premiums receivable due from affiliates (Note 7) 145,036 170,300 Interest income receivable (Note 4) 5,802 4,902 Other assets - 5 Total current assets 398,694 360,091 NONCURRENT ASSETS: Investments (Note 4) 822,025 776,978 Premiums receivable due from affiliates (Note 7) - 6,257 Owner Controlled Insurance Programs asset 630 469 Total noncurrent assets 822,655 783,704 TOTAL ASSETS $1,221,349 $1,143,795 LIABILITIES AND NET POSITION CURRENT LIABILITIES: Unearned premiums $ 163,111 $ 103,525 Ceded premium payable 5,989 12,427 Loss and loss adjustment expense liability (Note 6) 115,753 66,294 Losses payable 50,481 37,185 Due to affiliates 2,126 5,795 Accrued expenses 642 1,179 Total current liabilities 338,102 226,405 NONCURRENT LIABILITIES: Unearned premiums 87,587 114,055 Loss and loss adjustment expense liability (Note 6) 601,937 522,879 Ceded premium payable 1,720 5,692 Total noncurrent liabilities 691,244 642,626 Total liabilities 1,029,346 869,031 RESTRICTED NET POSITION 192,003 274,764 TOTAL LIABILITIES AND NET POSITION $1,221,349 $1,143,795
+```
+[p020_c0004] _- 9 -_
+
+## Page 21
+
+### [p021_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY (Component Unit of the Metropolitan Transportation Authority)
+### [p021_c0002] STATEMENTS OF REVENUES, EXPENSES AND CHANGES IN NET POSITION FOR THE YEARS ENDED DECEMBER 31, 2024 AND 2023 (In thousands)
+[p021_c0003]
+
+```text
+2024 2023 OPERATING REVENUES: Gross premiums written $ 231,792 $ 209,657 Premiums ceded (57,034) (90,533) Change in unearned premiums (33,550) (6,128) Total operating revenues 141,208 112,996 OPERATING EXPENSES: Loss and loss adjustment 246,367 70,472 Underwriting 1,550 2,083 General and administrative 5,923 6,268 Total operating expenses 253,840 78,823 OPERATING (LOSS) / INCOME (112,632) 34,173 NON-OPERATING INCOME—Net investment income 29,871 47,962 Total non-operating income 29,871 47,962 CHANGE IN NET POSITION (82,761) 82,135 RESTRICTED NET POSITION—Beginning of year 274,764 192,629 RESTRICTED NET POSITION—End of year $ 192,003 $ 274,764
+```
+[p021_c0004] See notes to financial statements.
+[p021_c0005] _- 10 -_
+
+## Page 22
+
+### [p022_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY (Component Unit of the Metropolitan Transportation Authority)
+### [p022_c0002] STATEMENTS OF CASH FLOWS FOR THE YEARS ENDED DECEMBER 31, 2024 AND 2023 (In thousands)
+[p022_c0003]
+
+```text
+2024 2023 CASH FLOWS FROM OPERATING ACTIVITIES: Premiums and other receipts $ 199,408 $ 74,330 Payments for claims and other operating expenses (120,597) (56,346) Net cash provided by operating activities 78,811 17,984 CASH FLOWS FROM INVESTING ACTIVITIES: Purchases of investments (682,750) (588,446) Sales and maturities of investments 637,556 505,774 Earnings on investments 35,035 27,780 Net cash used in investing activities (10,159) (54,892) NET INCREASE / (DECREASE) IN CASH AND CASH EQUIVALENTS 68,652 (36,908) CASH AND CASH EQUIVALENTS—Beginning of year 99,717 136,625 CASH AND CASH EQUIVALENTS—End of year $ 168,369 $ 99,717 RECONCILIATION OF OPERATING INCOME TO NET CASH (USED IN) / PROVIDED BY OPERATING ACTIVITIES: Operating income $(112,632) $ 34,173 Adjustments to reconcile to net cash provided by operating activities: Net increase in accounts payable, accrued expenses and other liabilities 144,190 25,010 Net decrease / (increase) in receivables 47,253 (41,199) NET CASH PROVIDED BY OPERATING ACTIVITIES $ 78,811 $ 17,984
+```
+[p022_c0004] _- 11 -_
+
+## Page 23
+
+### [p023_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY (Component Unit of the Metropolitan Transportation Authority)
+### [p023_c0002] NOTES TO FINANCIAL STATEMENTS
+### [p023_c0003] AS OF AND FOR THE YEARS ENDED DECEMBER 31, 2024 AND 2023
+[p023_c0004] (In thousands, except as noted)
+### [p023_c0005] 1. BASIS OF PRESENTATION
+[p023_c0006] Reporting Entity —First Mutual Transportation Assurance Company (the “Company”), a component unit of the Metropolitan Transportation Authority (“MTA”), was incorporated under the laws of the State of New York (the “State”) as a pure captive insurance company on December 5, 1997, and commenced operations on that date. The Company was established to maximize the flexibility and effectiveness of the MTA’s insurance program and is governed by a Board of Directors consisting of members of the MTA. The Company’s financial position and results of operations are included in the MTA’s Annual Comprehensive Financial Report. The MTA is a component unit of the State of New York and is included in the State of New York’s Comprehensive Annual Financial Report of the Comptroller as a public benefit corporation.
+[p023_c0007] FMTAC is operationally and legally independent of the MTA. FMTAC enjoys certain rights typically associated with separate legal status. However, FMTAC is included in the MTA’s consolidated financial statements as a blended component unit because of the MTA’s financial accountability, and FMTAC is under the direction of the MTA Board (a reference to “MTA Board” means the board of MTA and/or the boards of the FMTAC and other MTA component units that apply in the specific context, all of which are comprised of the same persons). Under accounting principles generally accepted in the United States of America (“GAAP”), the MTA is required to include FMTAC in its consolidated financial statements.
+[p023_c0008] The New York captive insurance statute requires a $250 minimum unimpaired paid-in-capital and surplus be maintained by a pure captive insurance company.
+### [p023_c0009] 2. SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES
+[p023_c0010] Basis of Accounting —The accompanying financial statements are prepared on the accrual basis of accounting in accordance with accounting principles generally accepted in the United States of America.
+[p023_c0011] FMTAC applies Governmental Accounting Standards Board (“GASB”) Codification of Governmental Accounting and Financial Reporting Standards (“GASB Codification”) Section P80, Proprietary Accounting and Financial Reporting .
+[p023_c0012] Use of Management’s Estimates —The preparation of financial statements in conformity with accounting principles generally accepted in the United States of America requires management to make estimates and assumptions that affect the reported amounts of assets and liabilities, and disclosure of contingent assets and liabilities at the date of the financial statements, and the reported amounts of revenues and expenses during the reporting period. Actual results could differ significantly from those estimates.
+[p023_c0013] _- 12 -_
+
+## Page 24
+
+[p024_c0001] Reclassifications —Certain amounts in the 2023 financial statements have been reclassified to conform to the 2024 presentation. This had no effect on restricted net position at December 31, 2023 or change in net position for the year then ended.
+[p024_c0002] Cash and Cash Equivalents —Includes highly liquid investments with a maturity of three months or less when purchased such as money market funds. Money market funds are stated at amortized cost, which approximates fair value.
+[p024_c0003] Investments —Investments are recorded on the statement of net position at fair value, which is the amount at which a financial instrument could be exchanged in a current transaction between willing parties, other than in a forced or liquidation sale. All investment income, including changes in the fair value of investments, is reported as revenue (as either net investment income or unrealized gain (loss) on investments) on the statement of revenues, expenses, and changes in net position.
+[p024_c0004] Restricted Net Position —Net position is restricted for activities related to the payment of insurance claims.
+### [p024_c0005] Operating Revenues
+[p024_c0006] Premiums —Earned premiums are determined over the term of their related policies, which approximates one year, or for certain Owner Controlled Insurance Programs (“OCIP”), as a percent of completed construction costs. Accordingly, an unearned premium liability is established for the portion of premiums written applicable to the unexpired period of policies in force or uncompleted construction projects. The Company does not directly pay premium taxes in accordance with its relationship with New York State.
+[p024_c0007] Premiums Ceded —Premiums ceded is where the Company is the named insured, and the insurer is an unrelated third-party re-insurance company. The ceded premiums are expensed over the term of the related policies. This arrangement is explained further in Note 5.
+### [p024_c0008] Operating Expenses
+[p024_c0009] Loss and Loss Adjustment Expenses —Loss and loss adjustment expenses are established for amounts estimated to settle incurred losses on individual cases and estimates for losses incurred but not reported.
+[p024_c0010] Loss and loss adjustment expenses are based on loss estimates for individual claims and actuarial estimates and, therefore, the ultimate liabilities may vary from such estimates. Any adjustments to these estimates, which could be significant, will be reflected in income in the period in which the estimates are changed or payments are made.
+[p024_c0011] Non-Operating Revenues and Expenses —Investment income and unrealized gain (loss) on investments account for FMTAC’s non-operating revenues and expenses.
+[p024_c0012] Income Taxes —The Company is not subject to income taxes arising on profits since it is a component unit of the MTA. The MTA and its subsidiaries are exempt from income taxes.
+[p024_c0013] _- 13 -_
+
+## Page 25
+
+### [p025_c0001] 3. CASH AND CASH EQUIVALENTS
+[p025_c0002] On December 31, 2024, and 2023, cash and cash equivalents consisted of (in thousands):
+[p025_c0003]
+
+```text
+2024 2023 Carrying Amount Bank Balance Carrying Amount Bank Balance Insured deposits $ 250 $ 250 $ 250 $ 250 Loss escrows 21,720 21,720 26,415 26,415 Uninsured deposits 146,399 146,399 73,052 73,052 $ 168,369 $ 168,369 $ 99,717 $ 99,717
+```
+[p025_c0004] The Company is required to set aside funds in escrow accounts that are used to settle claims on behalf of the Company. The account balances of the loss escrow are $21,720 and $26,415 as of December 31, 2024, and 2023, respectively.
+[p025_c0005] The Company invested additional funds as described in Note 4.
+### [p025_c0006] 4. INVESTMENTS
+[p025_c0007] The fair value and cost basis of investments consist of the following at December 31, 2024 and 2023 (in thousands):
+[p025_c0008]
+
+```text
+2024 2023 Fair Value Cost Fair Value Cost Funds for claim payments $ 542,352 $ 575,574 $ 526,409 $ 557,003 Security trust funds 350,742 361,584 327,555 338,725 $ 893,094 $ 937,158 $ 853,964 $ 895,728
+```
+[p025_c0009] All investments are registered and held by the Company or its agent in the Company's name.
+[p025_c0010] The Company makes funds available to claims processors to allow for adequate funding for submitted claims. The funds, in the above table, are invested primarily in fixed income investments such as U.S. Government Bonds. All investments outlined above are to be used to pay claims or pay administration expenses of the Company or as collateral for letter of credit obligations.
+[p025_c0011] All funds not held as cash and cash equivalents are invested by the Company in accordance with the Company's investment guidelines. Investments may be further limited by individual security trust agreements. The Company's investment policies comply with the New York State Comptroller's guidelines for such policies. Those policies permit investments in fixed income securities that are investment grade or higher and the policy also allows for the investment in equities.
+[p025_c0012] All investments are recorded on the Statements of Net Position at fair value and all investment income, including changes in the fair value of investments, is reported as revenue/(expense) on the Statements of Revenues, Expenses and Changes in Net Position. Fair values have been determined using quoted market values as of December 31, 2024 and 2023.
+[p025_c0013] _- 14 -_
+
+## Page 26
+
+[p026_c0001] The yield to maturity rate was 4.78% for the year ended December 31, 2024, and 4.44% for the year ended December 31, 2023. For the year ended December 31, 2024, the Company had realized gains of $28,237 and had unrealized losses of $2,282. For the year ended December 31, 2023, the Company had realized gains of $13,545 and had unrealized gains of $31,638. Additional investment income was earned from the RCAMP investments and the money market fund. Income from these sources were $3,916 and $2,779 for the years ended December 31, 2024, and 2023, respectively.
+[p026_c0002] Interest Rate Risk and Investments at Fair Value —Interest rate risk is the risk that changes in interest rates will adversely affect the fair value of the investment. Duration is a measure of interest rate risk. The greater the duration of a bond or portfolio of bonds, the greater its price volatility will be in response to a change in interest rate risk and vice versa. Duration is an indicator of a bond price's sensitivity to one hundred basis point change in interest rates. Duration is expressed as number of years.
+[p026_c0003] The Company categorizes its fair value measurements within the fair value hierarchy established by generally accepted accounting principles. The hierarchy is based on the valuation inputs used to measure the fair value of the Company's investments. Level 1 inputs are quoted prices in active markets for identical assets. Level 2 inputs are significant other observable inputs; Level 3 inputs are significant unobservable inputs. Listed below are the recurring fair value measurements as of December 31, 2024, and 2023. Debt and equity securities classified in Level 1 of the fair value hierarchy are valued using prices quoted in active markets issued by pricing vendors for those securities.
+[p026_c0004]
+
+```text
+(In thousands) 2024 2024 Fair Value Duration (Years) Fair Value Measurements Investment Type Total Level 1 Level 2 Level 3 Treasury (1) $ 400,911 4.34 $ 400,911 $ - $ 400,911 $ - Agency (2) 126,220 5.57 126,220 - 126,220 - Asset backed securities 61,094 2.77 61,094 - 61,094 - Commercial mortgage backed securities 183,954 4.70 183,954 - 183,954 - Foreign bonds 10,183 6.51 10,183 10,183 - - Corporate bonds 116,534 5.49 116,534 116,534 - - Total 898,896 898,896 $ 126,717 $ 772,179 $ - Less accrued interest (5,802) (5,802) Total investments $ 893,094 $ 893,094
+```
+[p026_c0005] Including but not limited to:
+[p026_c0006] (1) U.S. Treasury Notes
+[p026_c0007] (2) Fannie Mae, Freddie Mac, Federal Home Loan Bank, Federal Home Loan Mortgage Corporation
+[p026_c0008] _- 15 -_
+
+## Page 27
+
+[p027_c0001]
+
+```text
+(In thousands) 2023 2023 Fair Value Duration (Years) Total Fair Value Measurements Investment Type Level 1 Level 2 Level 3 Treasury (1) $ 374,518 4.32 $ 374,518 $ - $ 374,518 $ - Agency (2) 114,461 6.22 114,461 - 114,461 - Asset backed securities 71,510 3.26 71,510 - 71,510 - Commercial mortgage backed securities 173,298 5.25 173,298 - 173,298 - Foreign bonds 9,925 5.66 9,925 9,925 - - Corporate bonds 115,154 5.89 115,154 115,154 - - Total 858,866 858,866 $ 125,079 $ 733,787 $ - Less accrued interest (4,902) (4,902) Total investments $ 853,964 $ 853,964
+```
+[p027_c0002] Including but not limited to:
+[p027_c0003] (1) U.S. Treasury Notes
+[p027_c0004] (2) Fannie Mae, Freddie Mac, Federal Home Loan Bank, Federal Home Loan Mortgage Corporation
+[p027_c0005] Credit Risk —At December 31, 2024, the following credit quality rating has been assigned by a nationally recognized rating organization (in thousands):
+[p027_c0006]
+
+```text
+Quality Rating Fair Value Percentage of Fixed Income Portfolio AAA $ 315,262 35.1 % AA 19,920 2.2 A 74,718 8.3 BBB 45,096 5.0 Not rated 46,832 5.2 Credit risk debt securities 501,828 55.8 U.S. Government Notes 397,068 44.2 Total fixed income securities 898,896 100.0 % Less accrued interest (5,802) Total investments $ 893,094
+```
+[p027_c0007] _- 16 -_
+
+## Page 28
+
+[p028_c0001] Credit Risk —At December 31, 2023, the following credit quality rating has been assigned by a nationally recognized rating organization (in thousands):
+[p028_c0002]
+
+```text
+Quality Rating Fair Value Percentage of Fixed Income Portfolio AAA $ 318,862 37.1 % AA 14,190 1.7 A 77,785 9.1 BBB 41,558 4.8 Not rated 32,545 3.8 Credit risk debt securities 484,940 56.5 U.S. Government Notes 373,926 43.5 Total fixed income securities 858,866 100.0 % Less accrued interest (4,902) Total investments $ 853,964
+```
+### [p028_c0003] 5. INSURANCE PROGRAMS
+[p028_c0004] Property Program —Effective May 1, 2024, FMTAC renewed the all-agency property insurance program. For the annual period commencing May 1, FMTAC directly insures property damage claims of the other MTA Group entities in excess of a $25,000 per occurrence deductible, subject to an annual $75,000 aggregate as well as certain exceptions summarized below. The total program is $500,000 per occurrence covering property of the related entities collectively through self-insured and reinsured in the domestic and offshore marketplaces. Losses occurring after the annual aggregate is exceeded are subject to a deductible of $7,500 per occurrence. The property insurance policy provides replacement cost coverage for all risks (including Earthquake, Flood and Wind) of direct physical loss or damage to all real and personal property, with minor exceptions. The policy also provides extra expense and business interruption coverage. FMTAC's property insurance program has been expanded to include a further layer of $100,000 of fully collateralized storm surge coverage for losses from storm surges that surpass specified trigger levels in the New York Harbor or Long Island Sound and are associated with named storms that occur at any point in the three year period from May 19, 2023 to April 30, 2026. An additional $25 of fully collateralized storm surge coverage was added for a period of July 1, 2024 to May 31, 2025. The program is a Catastrophic Bond reinsured by MetroCat Re Ltd. 2023-1, a Bermuda special purpose insurer independent from the MTA and formed to provide FMTAC with capital markets based storm surge reinsurance. The MetroCat Re Ltd. 2023-1 reinsurance policy is fully collateralized by a Regulation 114 trust invested in U.S. Treasury Money Market Funds. The additional coverage provided is parametric and available for storm surge losses resulting from a storm that causes water levels that reach the specified index values.
+[p028_c0005] _- 17 -_
+
+## Page 29
+
+[p029_c0001] Terrorism Program —Effective May 1, 2023, FMTAC renewed the terrorism program. Commencing May 1, FMTAC directly insures certified terrorism claims of the other MTA Group entities in excess of a $25,000 per occurrence self-insured retention, subject to an annual $75,000 aggregate as well as certain exceptions summarized below. The total program is $1,075,000 per occurrence covering property of the related entities collectively. FMTAC is reinsured in the domestic, London, and European marketplaces for this coverage. Losses occurring after the retention aggregate is exceeded are subject to a deductible of $7,500 per occurrence. The direct and reinsurance policies are effective from May 1, 2023 to May 1, 2025.
+[p029_c0002] With respect to acts of terrorism, FMTAC provides direct coverage that is reinsured by the United States Government for 80% of “certified” losses in 2023, as covered by the Terrorism Risk Insurance Act (“TRIA”) of 2019 (originally introduced in 2002). Under the 2020 extension, terrorism acts sponsored by both foreign and domestic organizations are covered. The remaining 20% of MTA Group losses arising from an act of terrorism would be covered under the additional terrorism policy described below. Additionally, no federal compensation will be paid unless the aggregate industry insured losses exceed $200,000 (“trigger”) for 2023. There were no certified losses by the United States Government in 2023 that exceeded the trigger. In December 2020, the United States government’s reinsurance of TRIA was extended until December 31, 2027.
+[p029_c0003] To supplement the reinsurance to FMTAC through the 2019 Terrorism Risk Insurance Program Reauthorization Act (“TRIPRA”) program, FMTAC obtained an additional commercial reinsurance policy with various reinsurance carriers in the domestic, London and European marketplaces. That policy provides coverage for (1) 20% of any “certified” act of terrorism in 2023 and 2024—up to a maximum recovery of $215,000 for any one occurrence and in the annual aggregate, (2) the TRIPRA FMTAC captive deductible (per occurrence and on an aggregated basis) that applies when recovering under the 20% “certified” acts of terrorism insurance in 2023 and 2024 or (3) 100% of any “certified” terrorism loss which exceeds $5,000 and less than the $200,000 TRIPRA trigger—up to a maximum recovery of $200,000 for any occurrence and in the annual aggregate.
+[p029_c0004] Excess Loss Fund (“ELF”) —On October 31, 2003, the Company assumed the existing ELF program on both a retrospective and prospective basis. The retrospective portion contains the same insurance agreements, participant retentions and limits as existed under the ELF program for occurrences happening on or before October 30, 2003. The coverage limit will remain $50,000 per occurrence or the proceeds of the program whichever is less. On a prospective basis, effective October 31, 2003, the Company issued insurance policies indemnifying the MTA, its subsidiaries and affiliates above their specifically assigned Self-Insured Retention with a limit of $50,000 per occurrence with $50,000 annual aggregate. The balance of the ELF, $77,000 was transferred to and invested by the Company in order to secure any claims assumed from the ELF, as well as to capitalize the prospective programs and insure current and future claims. FMTAC charges appropriate annual premiums based on loss experience and exposure analysis to maintain the fiscal viability of the program. Effective October 31, 2024, FMTAC directly provides an All-Agency Excess Liability Policy to the MTA and its subsidiaries and affiliates. With the exception of one carrier, the limits are fully reinsured in the domestic, London, European and Bermuda marketplaces. The limits include claims arising from acts of terrorism.
+[p029_c0005] Stations and Force Liability —Effective December 15, 2024, the Company renewed its direct insurance for the first $11,000 per occurrence losses for Long Island Rail Road Company (“LIRR”) and Metro-North Commuter Railroad Company (“MNCR”) with no aggregate stop loss protection.
+[p029_c0006] _- 18 -_
+
+## Page 30
+
+[p030_c0001] All Agency Protective Liability —The Company issued a policy to cover MTA’s All Agency Protective Liability Program (“AAPL”), which is designed to protect the MTA and its agencies against the potential liability arising from independent contractors working on capital and noncapital projects. Effective June 1, 2024, the net retention to the Company is $2,000 per occurrence. The Company also issued a policy for $9,000 excess of $2,000 per occurrence with an $18,000 annual aggregate.
+[p030_c0002] Paratransit —Effective March 1, 2024, the Company renewed with the MTA, a self-insured retention reimbursement policy for the auto liability on the New York City Transit (“NYCT”) Paratransit operations. The Company is responsible for the first $3,000 per occurrence. Effective March 1, 2025, the Company renewed with the MTA, a self-insured retention reimbursement policy for the New York City Transit (“NYCT”) Paratransit operations. The Company is responsible for $3,000 per occurrence.
+[p030_c0003] Non-Revenue —Effective March 1, 2024, the Company restructured its non-revenue auto liability policy with the MTA’s non-revenue fleet program. The Company is responsible for $9,000 per occurrence of every claim excess of the $1,000 per occurrence of the commercial insurance program. The commercial insurance program is excess of the MTA’s $1,000 self-insured funding program. Effective March 1, 2025, the Company renewed with the MTA, the non-revenue auto liability policy with the MTA’s non-revenue fleet program. The Company is responsible for $9,000 per occurrence of every claim excess of the $1,000 per occurrence of the commercial insurance program. The commercial insurance program is excess of the MTA’s $1,000 self-insured funding program.
+[p030_c0004] Owner-Controlled Insurance Programs (OCIP) —The MTA purchases Owner Controlled Insurance Programs under which coverage is provided on a group basis for certain agency projects. The Company provides the collateral required by the OCIP insurers to cover deductible amounts. The Company records in the OCIP liability account the amount of principal paid by the MTA to the program. The interest earned is not recognized in the Statements of Revenues, Expenses, and Changes in Net Position. Rather, the amounts are recorded as owner-controlled insurance program asset as the Company may have to make payments to contractors with favorable loss experience.
+[p030_c0005] OCIP (asset)/liability consists of the following on December 31, 2024 and 2023 (in thousands):
+[p030_c0006]
+
+```text
+2024 2023 NYCT structures lines $ 532 $ 532 LIRR/MNCR 2000–2004 Capital Improvement Program (2,461) (2,461) NYCT 2000–2004 line structures/shops, yards and depots Capital Improvements Program (2,082) (2,016) NYCT 2000–2004 stations and escalators/elevators Capital Improvements Program (782) (761) LIRR/MNR 2005–2009 Capital Improvement Program (21) (21) CCC Second Ave. Subway 4,184 4,258 OCIP (asset) $ (630) $ (469)
+```
+[p030_c0007] _- 19 -_
+
+## Page 31
+
+[p031_c0001] The activity of all funds held by the OCIP reinsurer consists of the following for 2024 and 2023 (in thousands):
+[p031_c0002]
+
+```text
+2024 2023 Funds held by OCIP insurers—beginning of year $ 8,181 $ 7,817 Interest income 398 349 Claims payments 161 15 Funds held by OCIP reinsurer $ 8,418 $ 8,181
+```
+[p031_c0003] OCIPs Covering 2000–2004 Capital Program —The Company entered into three agreements with AIG covering portions of the 2000–2004 MTA Capital Program effective October 1, 2000: (1) LIRR/MNCR 2000–2004 capital improvement program; (2) NYCT 2000–2004 lines structures/shops, yards and depots capital improvement program; and (3) NYCT 2000–2004 stations and escalators/elevators capital improvement program. The combined collateral requirements are $86,094, which consists of $10,385 for the LIRR/MNCR OCIP, $52,709 for the NYCT 2000–2004 lines structures/shops, yards and depots capital improvement program and $23,000 for the NYCT 2000–2004 stations and escalators/elevators capital improvement program. The collateral posted by the Company to secure its reimbursement of the insurer’s payments is invested by the insurer with interest returning to the Company at a guaranteed annual rate of return. The Company earned $72 and $63 during the years ended December 31, 2024 and 2023, respectively. The interest earned will be used to make the Contractor Safety Incentive program payments to contractors with favorable loss experience. Any monies not used to pay losses or utilized for the Contractor Safety Incentive Program will be returned to the agencies at the end of the OCIPs. There were withdrawals from the Company of $0 and $123 and claim payments of $87 and $48 during the years ended December 31, 2024 and 2023, respectively.
+[p031_c0004] OCIP-LIRR/MNCR 2005–2009 Capital Improvement Projects —Effective June 1, 2006, the Company entered into a new OCIP insurance program for LIRR/MNCR for capital projects in the 2005–2009 MTA Capital Program. Like the other programs, the interest income generated from the funds being held will be used to pay Contractor Safety Incentive program payments. The Company has earned $18 and $14 in interest income during the years ended December 31, 2024 and 2023, respectively. There were no withdrawals from the Company during the years ended December 31, 2024 and 2023, respectively.
+[p031_c0005] Second Avenue Subway Project —Effective January 31, 2007, the Company entered into an OCIP program for the $2,500,000 Second Avenue Subway Project. This is a multi-year agreement with AIG covering Workers’ Compensation and General Liability for the Third-Party contractors, MTA and all its subsidiaries up to $500,000. This OCIP, like the others, requires the Company to post collateral for all losses related to workers’ injuries. In 2024 and 2023, $6,629 and $6,396 has been set aside to cover this exposure, respectively. During 2024 and 2023, the Company earned $308 and $272 in interest, respectively, with receipts (withdrawals) of $75 and ($123) in 2024 and 2023, respectively.
+[p031_c0006] East Side Access Project (“ESA”) —Effective April 1, 1999, the Company entered into an OCIP program for the East Side Access Project. It was a multi-year agreement with Liberty Mutual, the insurer, to insure third party contractors and the MTA and all its subsidiaries up to $300,000 for Workers’ Compensation and General Liability. The insurer required the Company to hold the collateral and loss funding for the first $500 per occurrence. On April 1, 2016, this coverage was renewed to April 1, 2021 and then in 2021 further extended to April 1, 2023. The program ended as of April 1, 2023. The Company will now hold the collateral and loss funding for the first $750 per occurrence resulting from Workers’ Compensation and the first $1,900 from General Liability.
+[p031_c0007] _- 20 -_
+
+## Page 32
+
+[p032_c0001] East Side Access Project—Excess General Liability —Effective August 1, 2018, the company entered into program to insure $10,000 per occurrence and aggregate of General Liability coverage in excess of $2,000 for claims related to the East Side Access Project. In 2021, this coverage was extended to April 1, 2023. The program ended as of April 1, 2023.
+[p032_c0002] NYCT 2005–2009 Capital Improvements Projects —Effective August 1, 2006, the Company entered into a multi-year agreement with Liberty Mutual and the MTA whereby the Company will hold the collateral and loss funding for the first $500 per occurrence resulting from Workers’ Compensation and General Liability losses during the NYCT’s 2005–2009 Capital Improvement Projects.
+[p032_c0003] MTA 2012–2014 Combined Capital Construction Program —Effective October 1, 2012, the Company entered into a multi-year agreement with ACE American Insurance Company and the MTA whereby the Company will hold the collateral and loss funding for the first $750 per occurrence resulting from Workers’ Compensation and the first $1,500 from General Liability losses during the MTA 2012–2014 Combined Capital Construction Program.
+[p032_c0004] MTA 2015–2019 Combined Capital Construction Program —Effective June 30, 2017, the Company entered into a multi-year agreement with Starr Indemnity & Liability Company and the MTA whereby the Company will hold the collateral and loss funding for the first $750 per occurrence resulting from Workers’ Compensation and the first $1,500 from General Liability losses during the MTA 2015–2019 Combined Capital Construction Program.
+[p032_c0005] MTA 2021–2025 Combined Capital Construction Program Bridge Program —Effective June 30, 2021, the Company entered into a multi-year agreement with Liberty Mutual and the MTA whereby the Company will hold the collateral and loss funding for the first $750 per occurrence resulting from Workers’ Compensation and the first $1,500 from General Liability losses during the MTA 2021–2025 Combined Capital Construction Bridge Program. On February 9, 2022, this coverage was extended to June 30, 2027.
+[p032_c0006] MTA LIRR 3rd Track Program —Effective January 1, 2018, the Company entered into a multi-year agreement with Starr Indemnity & Liability Company and the MTA whereby the Company will hold the collateral and loss funding for the first $750 per occurrence resulting from Workers’ Compensation and the first $1,500 from General Liability losses until January 1, 2024.
+[p032_c0007] MTA 2022–2024 Mini RFP Program —Effective June 30, 2022, the Company entered into a multi-year agreement with ACE American Insurance Company and the MTA. The Company will hold the collateral and loss funding for the first $750 per occurrence resulting from Workers’ Compensation and the first $2,500 from General Liability losses until June 30, 2028.
+[p032_c0008] MTA 2022–2024 Mini RFP Program #2 —Effective September 30, 2023, the Company entered into a multi-year agreement with Liberty Mutual Insurance Company and the MTA. The Company will hold the collateral and loss funding for the first $750 per occurrence resulting from Workers’ Compensation and the first $3,000 from General Liability losses until September 30, 2029.
+[p032_c0009] _- 21 -_
+
+## Page 33
+
+[p033_c0001] Builder's Risk —Effective October 1, 2001, the Company renegotiated the terms and conditions of the reinsurance coverage it purchased from Zurich for the Builder's Risk Insurance Program ("BR") provided to cover the following 2000–2004 capital program OCIPs:
+- [p033_c0002] 1. Long Island Rail Road/Metro-North Commuter Railroad Capital Improvement Program 2. NYCT's Lines Structures/Shops, Yards & Depots Capital Improvement Program, and 3. NYCT's Stations & Elevators Capital Improvement Program
+[p033_c0003] The Company's policy and reinsurance agreements provide the capital projects listed above with limits of $50,000 in the aggregate. In consideration of $950 in net retained premium, the Company issues a deductible reimbursement policy with limits of $75 excess of $25 contractor deductible.
+[p033_c0004] Similar to the above BR program, effective July 31, 2006, the Company entered into a new BR program for the following 2005–2009 capital program OCIPs:
+- [p033_c0005] 1. Long Island Rail Road/Metro-North Commuter Railroad Capital Improvement Program and 2. NYCT's 2005–2009 Capital Improvement Program
+[p033_c0006] The Company's policy and reinsurance agreements from Zurich provide the capital projects listed above with limits of $50,000 in the aggregate. In consideration of $7,500 in net retained premium, the Company issues a deductible reimbursement policy with limits of $475 excess of $25 contractor deductible.
+[p033_c0007] In 2005, the Company received approval to expand its Builder's Risk Insurance Program to directly insure the MTA and its agencies for property claims while various capital improvement projects are under construction. The policy will cover selected capital improvement projects and was bound June 1, 2005, with limits of $300,000 per occurrence subject to the $100,000 self-insured retention. In consideration of a ceded premium of $12,750, the Company purchased reinsurance for the East Side Access Project from Zurich limiting its exposure to the $100,000 per occurrence self-insured retention. In 2007, this limit was bought down to $50,000 for an additional premium of $5,053. In 2014, this coverage was extended to May 31, 2021, for an additional ceded premium of $18,106 and then further extended to December 31, 2022, for an additional ceded premium of $7,202. The Company also purchased reinsurance for the Second Avenue Subway Project. In consideration of ceded premium of $13,362, reinsurance covering losses up to $500,000 excess of $50,000 was purchased from Zurich. The reinsurance purchased by the Company will include an aggregate stop loss provision, whereby the Company will limit its total liability to $125,000 in the aggregate.
+[p033_c0008] Similar to the above BR programs, effective November 1, 2012, the Company entered into a new BR program for various MTA 2012–2014 combined capital program OCIPs. The Company issues a BR policy, to the MTA, with limits of $50,000 per occurrence with a $25 contractor deductible. The Company also purchased reinsurance from ACE with limits of $50,000 per occurrence with at $250 deductible.
+[p033_c0009] Effective June 30, 2017, the Company wrote a builders risk deductible reimbursement policy with the MTA for the 2015-2019 Combined Capital Construction Program with limits of $250 per occurrence, $1,000 per occurrence for peril of Flood with a $25 contractor deductible per claim. The policy expired on June 30, 2023. Effective June 1, 2021, the policy was extended from June 30, 2023 to June 30, 2025 for an additional premium of $480.
+[p033_c0010] _- 22 -_
+
+## Page 34
+
+[p034_c0001] On January 1, 2018, the Company wrote a builders risk deductible reimbursement policy with the MTA for the LIRR 3rd Track project with limits of $250 per occurrence with a $25 contractor deductible per claim. The policy expired on January 1, 2024.
+[p034_c0002] On June 30, 2022, the Company wrote a builders risk deductible reimbursement policy with the MTA for the Mini RFP #1 project with limits of $250 per occurrence with a $25 contractor deductible per claim. The policy will expire on June 30, 2028.
+[p034_c0003] On September 26, 2022, the Company wrote a builders risk liability policy with the MTA for the Metro-North Penn Station Access project with limits of $1,400 per occurrence and in aggregate. The policy was written for 60 days.
+[p034_c0004] On December 31, 2022, the Company wrote a builders risk deductible reimbursement policy with the MTA for the Metro-North Penn Station Access project with limits of $500 per occurrence. The policy will expire on July 29, 2027.
+[p034_c0005] On September 30, 2023, the Company wrote a builders risk deductible reimbursement policy with the MTA for the Mini OCIP #2 project with limits of $250 per occurrence with a $50 contractor deductible per claim. The policy will expire on October 1, 2029.
+### [p034_c0006] 6. LOSS AND LOSS ADJUSTMENT EXPENSES AND REINSURANCE
+[p034_c0007] The following schedule presents changes in the loss and loss adjustment expense liabilities during 2024 and 2023 (in thousands):
+[p034_c0008]
+
+```text
+2024 2023 Liability as of January 1, net of reinsurance recoverable of $73,766 and $91,424 $ 589,173 $ 603,786 Loss and loss adjustment expenses 246,367 70,472 Payments attributable to insured events of the current year (117,850) (85,085) Liability as of December 31, net of reinsurance recoverable of $53,995 and $73,766 717,690 589,173 Less current portion 115,753 66,294 Long-term liability $ 601,937 $ 522,879
+```
+[p034_c0009] _- 23 -_
+
+## Page 35
+
+### [p035_c0001] 7. RELATED PARTY TRANSACTIONS
+[p035_c0002] The Company provides insurance coverage for the MTA and its component units. The premium revenue from related parties during the period and receivable for the years ended December 31, 2024 and 2023, was as follows (in thousands):
+[p035_c0003]
+
+```text
+2024 2023 Receivable Earned Receivable Earned LIRR $ 16,651 $ 18,869 $ 17,613 $ 15,210 MNCR 2,920 2,915 2,773 2,949 MTA 125,465 119,424 156,171 94,837 $ 145,036 $ 141,208 $ 176,557 $ 112,996
+```
+[p035_c0004] Included in General and Administrative expenses for the years ended December 31, 2024 and 2023, respectively, are amounts the MTA charged of $5,521 and $5,818, respectively, to FMTAC for risk management services provided to the Company of which $2,126 and $5,795 remain as a liability at December 31, 2024 and 2023, respectively.
+### [p035_c0005] 8. NYCTA BICYCLE CASE
+[p035_c0006] NYCTA Bicycle Case — On April 10, 2016, at about 3pm, then 23-years old Robert Liciaga, rode his bicycle through a cordoned-off construction site beneath an elevated subway line and was struck by a rotted cross tie which was dropped into a designated “drop zone.” Plaintiff sustained severe and permanent injuries and is confined to a long-term care facility. A Kings County Supreme Court jury found MTA NYCT 100% liable and awarded Plaintiff $110 million. The trial judge reduced the pain and suffering awards after post-trial motions were made thereby reducing the total award to roughly $69 million. The Authority’s appealed. The appellate court declined to further reduce the award except to the extent of granting a collateral source hearing on the issue of future medical expenses. Settlement was reached for $65 million. FMTAC has contributed $31M toward the settlement.
+### [p035_c0007] 9. SUBSEQUENT EVENTS
+[p035_c0008] The Company has evaluated all subsequent events through May 30, 2025 , to ensure that these financial statements include appropriate recognition and disclosure of recognized events in the financial statements as of December 31, 2024. As of May 30, 2025 , there were no subsequent events that required recognition or disclosure.
+[p035_c0009] * * * * *
+[p035_c0010] _- 24 -_
+
+## Page 36
+
+### [p036_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p036_c0002] New York State Insurance Captive of
+> [p036_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a dark blue circle containing the white letters "MTA". To the right of the circle, the words "Metropolitan", "Transportation", and "Authority" are stacked vertically in a dark blue, sans-serif font.
+### [p036_c0004] T A B
+### [p036_c0005] 4
+### [p036_c0006] Statement of Actuarial Opinion (Certification): December 31, 2024
+
+## Page 37
+
+### [p037_c0001] First Mutual Transportation Assurance Company State of New York
+### [p037_c0002] Statement of Actuarial Opinion as of December 31, 2024
+### [p037_c0003] IDENTIFICATION
+[p037_c0004] I, Steven G. McKinnon, am a Senior Principal of the firm of Oliver Wyman Actuarial Consulting, Inc. I was appointed by the Board of Directors of First Mutual Transportation Assurance Company (hereinafter referred to as “FMTAC” or “the Company”) on August 1, 2017 to render an opinion on the Company’s December 31, 2024 loss and loss adjustment expense reserves as filed with the Department of Financial Services of the State of New York. I am a member of the American Academy of Actuaries and meet the definition of a Qualified Actuary per the NAIC Annual Statement Instructions – Property and Casualty, Actuarial Opinion. I am a member in good standing and a Fellow of the Casualty Actuarial Society.
+### [p037_c0005] SCOPE
+[p037_c0006] These reserves, as included in the Financial Statement as of December 31, 2024 of the Company, are summarized in the attached Exhibit A and reflect the loss reserve disclosures detailed in Exhibit B.
+[p037_c0007] The intended purpose of this actuarial opinion is to satisfy the requirement for an annual actuarial certification of loss and loss adjustment expense reserves. The loss and loss adjustment expense reserves are the responsibility of the Company's management; my responsibility is to express an opinion on these loss and loss adjustment expense reserves based on my review. My review included such tests and examinations of the actuarial assumptions, methods and calculations used in determining the reserves listed in Exhibit A as I considered necessary in the circumstances.
+[p037_c0008] In forming my opinion, I have relied on data evaluated as of September 30, 2024 1 for Builders Risk and December 31, 2024 for all other coverages. I reviewed the information provided to me by the Company through February 27, 2025 (review date). This information was provided by Ms. Claudia Reuben (Deputy Chief, MTA Risk and Insurance Management and President of FMTAC), Mr. Laudwin Pemberton (Deputy Director, MTA Risk and Insurance Management and Vice President of FMTAC), Ms. Robin Cooper (Deputy Director, MTA Risk and Insurance Management and Vice President and Secretary of FMTAC), and their designees. I have performed no verification as to the accuracy of this data; however, I have evaluated the data for reasonableness and consistency. My evaluation did not reveal any data issues materially impacting the results of my analysis.
+[p037_c0009] My review was limited to the items included in Exhibit A and did not include a review of other balance sheet or any income statement items. Data underlying the loss and loss adjustment expense reserves is compiled on a basis net of salvage and subrogation received. Reserves developed using this data implicitly anticipate future salvage and subrogation recoveries. I have not separately reviewed the anticipated salvage and subrogation or any recoverable other than reinsurance recoverables.
+[p037_c0010] _1 Additional Builders Risk claim information was provided to us on February 27, 2025, and we determined that this information would not have a material impact on the reserves presented in the actuarial report._
+[p037_c0011] _Page 1 of 7_
+
+## Page 38
+
+### [p038_c0001] OPINION
+[p038_c0002] In my opinion, giving consideration to the Relevant Comments herein, the Company's December 31, 2024 reserves carried in Exhibit A on account of the items identified above:
+- [p038_c0003] A. Meet the relevant requirements of the insurance laws of New York; B. Are consistent with reserves computed in accordance with accepted loss reserving standards; C. Make a reasonable provision, in the aggregate, for all unpaid loss and loss adjustment expense obligations of the Company under the terms of its policies and agreements.
+### [p038_c0004] RELEVANT COMMENTS
+### [p038_c0005] A. Risk of Material Adverse Deviation
+[p038_c0006] There are several factors that may result in actual net future loss and loss adjustment expense payments that are greater than the Company's net carried reserves. I have identified the major risk factors as the long-tailed nature of the liability exposures covered by the Company and the potential for catastrophic claims to trigger a large claim under the Excess Loss Program. The absence of other risk factors does not imply that additional risk factors will not be identified as being major risk factors in the future.
+- [p038_c0007] • Nature of Coverages Written – The Company has historically written workers compensation and general liability coverages. The ultimate value of these claims is subject to considerable variability and uncertainty due to their long-tailed nature. There may be significant time lag from the accident date to the date a claim is filed, as well as additional time lag from the date the claim is reported to the date the claim is settled and paid. • Potential for Large Claim(s) in Excess Loss Program – Under the Excess Loss Program, the Company provides $50 million of coverage, on a per occurrence basis and in the aggregate annually, to MTA agencies above a self-insured retention. The self-insured retentions of the agencies vary by program and year and are as high as $11 million per occurrence. The Company also participates in certain layers, along with the excess carriers, above the $50 Excess Loss Program layer. Similar structures, with various attachment points and limits, existed during prior years.
+[p038_c0008] As the appointed actuary for the Company's unpaid liabilities, I am required to provide a materiality standard for determining the risk of material adverse deviation. I have selected a materiality standard of 15% of the Company's total capital and surplus, or $28,878,916. This materiality standard considers the purpose of this opinion, my review of the Company's historical claim data, and coverages written by the Company. Other measures of materiality may be used for reserves that are being evaluated in a different context.
+[p038_c0009] In my opinion, there is a significant risk of material adverse deviation from the carried net reserve amounts. I have considered the materiality standard listed above, as well as the major risk factors discussed above, in making this determination.
+[p038_c0010] _Page 2 of 7_
+
+## Page 39
+
+### [p039_c0001] B. Reinsurance
+[p039_c0002] The actuarial report prepared in support of this opinion includes a summary of the Company's ceded reinsurance that is, or could be, material to the Company's ceded loss and loss adjustment expense reserves as of December 31, 2024. This information was provided by the Company and is assumed to be materially accurate and complete. An assessment as to whether or not the reinsurance contracts meet the requirements for reinsurance accounting is a management and accounting decision, and I express no opinion in this regard.
+[p039_c0003] Based on representations made by the Company and the Company's description of its ceded and assumed reinsurance agreements, I am not aware of any reinsurance contract having a material effect on the loss and loss adjustment expense reserves that either has been or should have been accounted for as retroactive reinsurance or as financial reinsurance.
+[p039_c0004] I note that there is currently a $70 million property claim associated with damage caused by Hurricane Ida in 2021. This claim is 100% reinsured, and I have accepted the remaining reserve of approximately $33.4 million reserve for this claim provided by the Company without further review.
+[p039_c0005] The Company has represented that it knows of no uncollectible reinsurance cessions within the last two years. However, the Company has represented that there is an ongoing dispute with the property reinsurer(s) regarding a claim associated with the COVID-19 pandemic, and I have relied on the Company's assessment of the potential for uncollectible reinsurance.
+### [p039_c0006] C. Reserve Development
+[p039_c0007] The Company's reserves produce exceptional values for NAIC IRIS Test 11: One-Year Reserve Development to Policyholders Surplus and NAIC IRIS Test 13: Estimated Current Reserve Deficiency to Policyholders Surplus.
+### [p039_c0008] NAIC IRIS Test 11
+[p039_c0009] NIAC IRIS Test 11 has a value of approximately 40%, while the usual range is less than 20%. This is the result of a large reserve increase for claims associated with the Excess Loss Fund.
+### [p039_c0010] NAIC IRIS Test 13
+[p039_c0011] NIAC IRIS Test 13 has a value of approximately 37%, while the usual range is less than 25%. Again, this is the result of a large reserve increase for claims associated with the Excess Loss Fund.
+[p039_c0012] Our understanding is that the Company has made adjustments to its claim reporting practices to avoid large reserve increases in the future. Additionally, in our actuarial study as of December 31, 2024, we have taken steps to add additional reserves to the Excess Loss Fund to provide for potential additional reserve growth in the future.
+[p039_c0013] _Page 3 of 7_
+
+## Page 40
+
+### [p040_c0001] D. Other Disclosures
+### [p040_c0002] Accounting Standard
+[p040_c0003] The Company has represented that the reserves on which I am expressing an opinion were prepared in accordance with the United States Generally Accepted Accounting Principles.
+### [p040_c0004] Salvage and Subrogation
+[p040_c0005] Data underlying the loss and loss adjustment expense reserves is compiled on a basis net of salvage and subrogation received. Reserves developed using this data implicitly anticipate future salvage and subrogation recoveries. I have not separately reviewed the anticipated salvage and subrogation recoverable.
+### [p040_c0006] Discount
+[p040_c0007] Reserves are provided on an undiscounted basis and do not consider the time value of money.
+### [p040_c0008] Underwriting Pools and Associations
+[p040_c0009] The Company has represented that it does not participate in pools and associations.
+### [p040_c0010] Asbestos and Environmental Exposure
+[p040_c0011] I have reviewed the Company's exposure to asbestos and environmental claims. In my opinion, there is a remote possibility of material liability since the Company has represented that its policies have exclusions for asbestos and environmental exposure and there have been no reported asbestos or environmental claims reported to date.
+### [p040_c0012] Risk Margin
+[p040_c0013] The carried reserves do not include an explicit risk margin.
+### [p040_c0014] E. Additional Comments
+[p040_c0015] Unpaid loss and loss adjustment expense liabilities are subject to inherent uncertainty due to the variability of fortuitous outcomes of contingent events which may affect loss and loss adjustment expense costs. In evaluating whether the reserves make a reasonable provision for unpaid losses and loss adjustment expenses, it is necessary to project future loss and loss adjustment expense emergence and payments. It is virtually certain that actual future losses and loss adjustment expenses will not develop exactly as projected and may, in fact, vary significantly from the projections. No warranty is expressed or implied that this will not occur.
+[p040_c0016] In my evaluation, I considered uncertainties related to the COVID-19 pandemic, including but not limited to:
+- [p040_c0017] • uncertainty related to regulatory, legislative and judicial decisions; • impacts to claim frequency and claim severity; • the potential slowdown in claim notification, quantification and settlement processes; and • the potential impact on future loss development patterns and settlement amounts.
+[p040_c0018] I have neither examined the assets of the Company nor formed any opinion as to the value or validity of the assets. My review was limited to the items noted in the scope paragraph and did not include an analysis of any income statement or other balance sheet items. My opinion that the reserves make a reasonable provision in the aggregate for the unpaid loss and loss adjustment expense
+[p040_c0019] _Page 4 of 7_
+
+## Page 41
+
+[p041_c0001] obligations of the Company presumes that these reserves are backed by valid assets and that these assets reflect suitably scheduled maturities and/or sufficient liquidity to meet cash flow requirements.
+### [p041_c0002] Supporting Documents and Usage
+[p041_c0003] This statement of opinion is intended solely for the use of, and only to be relied upon by, the Company and the State of New York.
+[p041_c0004] An actuarial report and underlying work papers supporting the findings expressed in this Statement of Actuarial Opinion are being provided to the Company to be retained for a period of seven years at its administrative offices and are available for regulatory examination.
+[p041_c0005] _Steven G. McKinnon, FCAS, MAAA, FCA Oliver Wyman Actuarial Consulting, Inc. 1166 Avenue of the Americas, 38 th Floor New York, NY 10036 (631) 577-0555 Steven.McKinnon@oliverwyman.com_
+[p041_c0006] March 3, 2025
+[p041_c0007] _Page 5 of 7_
+
+## Page 42
+
+### [p042_c0001] Exhibit A – SCOPE
+### [p042_c0002] Loss Reserves:
+[p042_c0003]
+
+```text
+Amount 1. Gross Reserve for Unpaid Losses (Page 2, Line 17) $734,673,119 2. Gross Reserve for Unpaid Loss Adjustment Expenses (Page 2, Line 18) $20,993,731 3. Gross Reserve for Unpaid Losses and Loss Adjustment Expenses [ = (1) + (2)] $755,666,850 4. Reinsurance Recoverable on Unpaid Losses and Loss Adjustment Expenses (Page 2, Line 9) $37,977,350 5. Reserve for Unpaid Losses and Loss Adjustment Expenses [ = (3) - (4)] $717,689,500
+```
+[p042_c0004] _Page 6 of 7_
+
+## Page 43
+
+### [p043_c0001] Exhibit B – DISCLOSURES
+[p043_c0002] 1. Name of the Appointed Actuary: Last Name First Name Middle McKinnon Steven G
+[p043_c0003] 2. The Appointed Actuary’s Relationship to the Company. C E if an Employee C if a Consultant
+[p043_c0004] 3. The Appointed Actuary is Qualified Actuary based upon F Enter F, A, M, or O based upon the following: F if a Fellow of the Casualty Actuarial Society (FCAS) A if an Associate of the Casualty Actuarial Society (ACAS) M if not a member of the Casualty Actuarial Society, but a Member of the American Academy of Actuaries (MAAA) approved by the Casualty Practice Council, as documented with the attached approval letter. O for Other
+[p043_c0005] 4. Type of Opinion, as Identified in the OPINION paragraph. R R if Reasonable I if Inadequate or Deficient Provision E if Excessive or Redundant Provision Q if Qualified. Use Q when part of the OPINION is Qualified N if No Opinion
+[p043_c0006] 5. Materiality Standard expressed in $US $28,878,916
+[p043_c0007] 6. Is there a Significant Risk of Material Adverse Deviation? Yes [X] No [ ] Not Applicable [ ]
+[p043_c0008] 7. Statutory Surplus $192,526,106
+[p043_c0009] _Page 7 of 7_
+
+## Page 44
+
+### [p044_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p044_c0002] New York State Insurance Captive of
+> [p044_c0003] The logo for the Metropolitan Transportation Authority (MTA) is a dark blue circle containing the white letters "MTA" in a bold, sans-serif font.
+[p044_c0004] Metropolitan Transportation Authority
+### [p044_c0005] T A B
+### [p044_c0006] 5
+### [p044_c0007] Regulatory Compliance Report
+
+## Page 45
+
+### [p045_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p045_c0002] New York Regulatory Compliance Report
+[p045_c0003] As of May 21, 2025
+[p045_c0004]
+
+```text
+Description Requirement / Due Date Comments/Date Completed Financial Reports & Examinations File Annual Report with NYSDFS Within 60 days of fiscal year end March 3, 2025 File Actuarial Certification of Loss Reserves. Within 60 days of fiscal year end March 3, 2025 File Audited Financial Statements with NYSDFS July 1 In progress File Parent Company Annual Report with NYSDFS Annually In progress Examination by NYSDFS Every 5 years Last exam as of 2020 – Draft report received May 13, 2025 and in review Taxes & Fees File Premium Tax (Franchise Tax) Return with NYS Tax Dept Within 3 ½ months after the reporting period (April 15 for December YE) FTMAC is exempt from NYS taxes Pay Premium Tax to NYS Tax Dept. 12/15 FTMAC is exempt from NYS taxes NYS Department of Financial Services Examination Fees Due at the end of an exam, based on time incurred. Will be paid as invoiced Pay Assessment Surcharge per Section 206 of NYSDFS Law Due quarterly when invoiced by NYSDFS FTMAC is exempt from NYSDFS Assessments Underwriting Changes in insurance programs (coverage, limits, reinsurers) Approval is required for business plan changes In Compliance Insurance policies and reinsurance agreements Insurance documentation must be on file in principal office in New York In Compliance Investments Maintain Minimum required capital and surplus in prescribed form [Cash, LOC, or investment type as described in section 7004, section (b)(2)] $250,000 of total surplus ($100,000 shall represent paid-in capital) In Compliance Intercompany loans Prior approval from NYSDFS required. In Compliance Corporate Governance Notify changes of Directors and Officers to NYSDFS Notify within 30 days and submit biographical affidavits for any new individuals Biographical affidavits not applicable. Notice of appointments of new MTA/FTMAC directors (made by Governor following background checks and Senate confirmation process) are made to NYSDFS within 30 days. NYSDFS fingerprinting requirement has been waived.
+```
+
+## Page 46
+
+[p046_c0001]
+
+```text
+Description Requirement / Due Date Comments/Date Completed Corporate Governance, con't File Certificate of Compliance for License Renewal with NYSDFS Annually by June 30 In progress Certificate of Designation Information needs to remain current In Compliance NYS Resident Directors Minimum of two NY resident directors In Compliance Hold Annual Meeting of Directors Must be held annually in NYS In Compliance – May 21, 2025 Other Filings NY Cyber Regulation Sec 500.17b written statement by Captive they are in compliance is due April 15, 2025 April 11, 2025 Annual Terrorism Risk Insurance Act (“TRIA”) data reporting Annually, May 15 In Compliance – May 14, 2025
+```
+
+## Page 47
+
+### [p047_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p047_c0002] New York State Insurance Captive of
+> [p047_c0003] The logo for the Metropolitan Transportation Authority (MTA), featuring the letters 'MTA' in white inside a dark blue circle.
+[p047_c0004] Metropolitan Transportation Authority
+### [p047_c0005] T A B
+### [p047_c0006] 6
+### [p047_c0007] Investment Report
+
+## Page 48
+
+### [p048_c0001] FMTAC Board Presentation
+### [p048_c0002] May 2025
+> [p048_c0003] The BlackRock logo, consisting of the word "BlackRock" in a bold, black, sans-serif font, with a registered trademark symbol.
+### [p048_c0004] FMTAC Board Presentation
+[p048_c0005] BlackRock managed portfolios for First Mutual Transportation Assurance Company include:
+- [p048_c0006] • FMTAC Ace American Trust • FMTAC Discovery Re Trust • FMTAC Excess Loss Fund • FMTAC General Operating Account • FMTAC Liberty Trust East Side Access • FMTAC Liberty Trust '06 NY Transit Authority • FMTAC Master Builders' Risk • FMTAC Star Indemnity
+[p048_c0007] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+
+## Page 49
+
+### [p049_c0001] FMTAC Aggregate Portfolio
+[p049_c0002] FMTAC-AGG
+
+## Page 50
+
+### [p050_c0001] Total Portfolio: Sector Positioning & Characteristics Portfolio Change
+[p050_c0002] _As of December 31, 2023_
+> [p050_c0003] Sector Percentage UST 42.9% MBS 21.0% ABS 8.4% CMBS 6.4% Financials 5.7% Industrials 6.9% Cash 1.5% Emerging Markets 0.2% Taxable Muni 1.0% NonAgency ARMs & CMOs 3.9% Sovereign Plus 0.0%
+[p050_c0004] _As of December 31, 2024_
+> [p050_c0005] Sector Percentage UST 43.9% MBS 20.4% ABS 7.0% CMBS 7.7% Financials 5.3% Industrials 6.1% Cash 1.4% Emerging Markets 0.4% Taxable Muni 1.3% NonAgency ARMs & CMOs 3.5% Sovereign Plus 0.1%
+[p050_c0006] _Portfolio Change 12/31/2023 vs. 12/31/2024_
+> [p050_c0007] Sector Change CMBS 1.35% UST 0.99% Utilities 0.36% Agency CMOs 0.31% Taxable Muni 0.26% Emerging Markets 0.24% Sovereign Plus 0.12% Cash -0.08% Financials -0.37% NonAgency ARMs & CMOs -0.43% MBS -0.56% Industrials -0.82% ABS -1.39%
+[p050_c0008] _Portfolio_
+[p050_c0009]
+
+```text
+Duration 4.52 Avg. Moody's/S&P Rating Aa1/AA Market Yield 4.65 Book Yield (excl. Cash) 3.59 YTD Interest Income ($000) 24,031 Net Asset Value ($000) 880,337
+```
+[p050_c0010] _Portfolio_
+[p050_c0011]
+
+```text
+Duration 4.43 Avg. Moody's/S&P Rating Aa1/AA Market Yield 4.86 Book Yield (excl. Cash) 4.01 YTD Interest Income ($000) 30,513 Net Asset Value ($000) 909,103
+```
+[p050_c0012] _Portfolio Change 12/31/2023 vs. 12/31/2024_
+[p050_c0013]
+
+```text
+Chg. in Active Duration -9 bps Avg. Moody's/S&P Rating No Change Active Market Yield +21 bps Book Yield (excl. cash) +42 bps Net Assets Value($000) 28,766 Unrealised G/L($000) -3,826
+```
+[p050_c0014] Note: MBS above consists of 30YR & 15 YR passthroughs, agency ARM's & CMO's. Other credit includes HY, EM, and sovereign plus Benchmark: No Benchmark
+[p050_c0015] _BlackRock_
+[p050_c0016] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p050_c0017] _3_
+
+## Page 51
+
+### [p051_c0001] Total Portfolio: Ratings & Key Rate Duration Portfolio Change
+[p051_c0002] _As of December 31, 2023_
+> [p051_c0003] Rating Percentage AAA 16.1% AA 68.6% A 8.8% BBB 5.2% Other 4.7%
+[p051_c0004] _As of December 31, 2024_
+> [p051_c0005] Rating Percentage AAA 15.2% AA 70.9% A 8.1% BBB 5.4% Other 0.9%
+### [p051_c0006] Effective Durations Buckets as of December 31, 2024
+[p051_c0007]
+
+```text
+Total <1Y 1Y-5Y 5Y-10Y 10Y-20Y 20Y+ Duration 4.43 0.40 3.19 6.15 14.41 - Market Value% 100% 12.40% 48.80% 33.50% 5.30% -
+```
+[p051_c0008] Standard Barclays Rating Benchmark: No Benchmark
+[p051_c0009] _BlackRock_
+[p051_c0010] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p051_c0011] _4_
+
+## Page 52
+
+### [p052_c0001] Aggregate Portfolio Performance (%) As of December 31, 2024
+> [p052_c0002] Period FMTAC-AGG (%) LEHINT-AGG (%) MTD -0.99 -0.93 QTD -1.98 -2.07 1 YR 2.77 2.47 3 YR * -0.51 -0.83 5 YR * 0.80 0.33 ITD * 1.83 1.55
+[p052_c0003] *Annualized Performance
+- [p052_c0004] • LEHINT-AGG = BBG Intermediate Aggregate Index -The Aggregate Portfolio is not managed to an official benchmark -The listed index is for illustrative purposes at the request of FMTAC but is not an official contracted benchmark to the Aggregate Portfolio. This index was selected as it has comparable asset classes and duration to the Aggregate Portfolio. -Official performance is measured at the individual portfolio level Inception date: 2/23/2018, BM tracking as of Inception
+[p052_c0005] _BlackRock_
+[p052_c0006] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p052_c0007] _5_
+
+## Page 53
+
+### [p053_c0001] Aggregate Portfolio Performance (%) Annual Performance 2020-2024
+> [p053_c0002] Year FMTAC-AGG (%) LEHINT-AGG (%) 2024 2.77 2.47 2023 5.52 5.18 2022 -9.18 -9.51 2021 -0.98 -1.29 2020 6.70 5.60
+[p053_c0003] *Annualized Performance
+[p053_c0004] • LEHINT-AGG = BBG Intermediate Aggregate Index -The Aggregate Portfolio is not managed to an official benchmark -The listed index is for illustrative purposes at the request of FMTAC but is not an official contracted benchmark to the Aggregate Portfolio. This index was selected as it has comparable asset classes and duration to the Aggregate Portfolio. -Official performance is measured at the individual portfolio level Inception date: 2/23/2018, BM tracking as of Inception
+[p053_c0005] _BlackRock_
+[p053_c0006] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p053_c0007] _6_
+
+## Page 54
+
+### [p054_c0001] Macro Outlook
+
+## Page 55
+
+### [p055_c0001] Current Market Environment
+
+## Page 56
+
+### [p056_c0001] March 2025: Q1 Closes on the Brink of Tariff Announcements
+[p056_c0002] Rates were rangebound, reacting to persistent themes of economic data, tariffs, and the Fed
+> [p056_c0003] Yield % Oct-24 Nov-24 Dec-24 Jan-25 Feb-25 Mar-25 Apr-25 1 Yr 2 Yr 3 Yr 5 Yr 10 Yr 30 Yr
+[p056_c0004] Source: The US Treasury. Data as of April 3, 2025.
+[p056_c0005] Expectations for a US Recession within a year have increased due to slowing growth worries
+> [p056_c0006] 1Y Recession Probability Forecast Index Level Jan-19 Jan-20 Jan-21 Jan-22 Jan-23 Jan-24 Jan-25
+[p056_c0007] Source: Bloomberg. Data as of April 2, 2025. Forecasts are based on estimates and assumptions, there is no guarantee that they will come to pass. It is not possible to invest directly in an index.
+[p056_c0008] Volatility increased and equities suffered as evolving trade policy dampened economic outlook
+> [p056_c0009] 40 35 30 25 20 15 10 6500 6000 5500 5000 4500 4000 Jan-24 Mar-24 May-24 Jul-24 Sep-24 Nov-24 Jan-25 Mar-25 VIX S&P500 (RHS)
+[p056_c0010] Source: Bloomberg. April 3, 2025. It is not possible to invest directly in an index.
+[p056_c0011] The USD has suffered vs major world currencies as tariffs could be detrimental for the USA
+> [p056_c0012] YTD Change % JPY 5.0 EUR 4.8 GBP 3.5 MXN 1.8 CAD 0.5 CNY 0.4 USD -4.3 -6 -1 4
+[p056_c0013] Source: Bloomberg. Data as of April 3, 2025.
+[p056_c0014] US Consumers (responsible for 2/3 of GDP) showed increasing concern of a challenging growth climate
+> [p056_c0015] 160 140 120 100 80 60 40 110 100 90 80 70 60 50 40 Mar-10 Mar-13 Mar-16 Mar-19 Mar-22 Mar-25 Conference Board University of Michigan
+[p056_c0016] Source: Conference Board, University of Michigan, Bloomberg, BlackRock. As of March 31, 2025.
+[p056_c0017] Credit spreads widened as tariff and consumer sentiment worries continued to persist
+> [p056_c0018] OAS, bps Sep-24 Oct-24 Nov-24 Dec-24 Jan-25 Feb-25 Mar-25 BBG U.S. Corporate Investment Grade Index BBG U.S. Corporate Crossover Index BBG US High Yield - Corporate Index
+[p056_c0019] Source: Bloomberg. Data as of April 2, 2025. It is not possible to invest directly in an index.
+[p056_c0020] _BlackRock_
+[p056_c0021] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p056_c0022] _9_
+
+## Page 57
+
+### [p057_c0001] US Macro Overview
+[p057_c0002] U.S. disinflation slows, but shelter inflation remains a bright spot
+[p057_c0003] _Source: Bloomberg. Data as of March 31, 2025._
+[p057_c0004] March non-farm payrolls added 228k jobs vs. 140k expected, while unemployment edged up slightly to 4.2%
+[p057_c0005] _Source: Bureau of Labor Statistics and Haver Analytics. Data as of April 3, 2025._
+[p057_c0006] GDP was revised sharply lower amid weakening data and rising trade war uncertainty, while tariff-driven inflation raises stagflation concerns
+[p057_c0007] _Source: BlackRock. Data as of April 4, 2025._
+[p057_c0008] Meaningful deficit reduction will demand difficult cuts across core spending areas
+[p057_c0009] _Source: BlackRock Investment Institute, CBO, data as of March 2025. Notes: Discretionary spending is set annually by Congress through the appropriations process (defense, education). Non-discretionary (mandatory) spending is required by law and occurs automatically (e.g. social security, Medicare). Mandatory spending is projected to rise further by 2030, mainly due to population aging._
+[p057_c0010] _BlackRock_
+[p057_c0011] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p057_c0012] _10_
+
+## Page 58
+
+### [p058_c0001] Fed and US Rates Overview
+[p058_c0002] The updated dot plot reflects median FOMC projection of the fed funds rate to fall 50 basis points in 2025 and 50 basis points in 2026
+> [p058_c0003] Implied Fed Funds Target Rate Projection Year End Longer run ● March 2025 — Median March 2025 — Fed Funds Futures 01/04/2025 — Median December 2024 - - - Fed Funds Futures 18/12/2024 3.875 3.625 - 4.375 2.675 - 4.125 2.625 - 3.875 2.500 - 3.875 3.000
+[p058_c0004] _Source: BlackRock Data as of April 2, 2025._
+[p058_c0005] Consumer inflation expectations surveys have surged higher amid ongoing policy uncertainty...
+> [p058_c0006] NY Fed (Point Estimate) Michigan Conference Board
+[p058_c0007] _Source: BlackRock Investment Institute. Data as of April 1, 2025._
+[p058_c0008] The rate trajectory reflects a market recalibration of Fed cut expectations amid growing recession risks
+> [p058_c0009] YTM monthly change 3/31/2025 Yield 2/28/2025 Yield OIS (%) Meeting Gap Cumulative rate cuts priced in EFFR 4.34 May 2025 FOMC OIS 4.29 -5 bp -5 bp Jun 2025 FOMC OIS 4.13 -16 bp -21 bp Jul 2025 FOMC OIS 3.98 -15 bp -36 bp Sep 2025 FOMC OIS 3.82 -17 bp -53 bp Oct 2025 FOMC OIS 3.72 -10 bp -63 bp Dec 2025 FOMC OIS 3.60 -11 bp -74 bp Jan 2026 FOMC OIS 3.53 -7 bp -81 bp Mar 2026 FOMC OIS 3.48 -5 bp -86 bp Apr 2026 FOMC OIS 3.43 -5 bp -91 bp Jun 2026 FOMC OIS 3.41 -2 bp -93 bp Jul 2026 FOMC OIS 3.39 -2 bp -96 bp Sep 2026 FOMC OIS 3.38 -1 bp -97 bp Oct 2026 FOMC OIS 3.37 -1 bp -97 bp Dec 2026 FOMC OIS 3.37 0 bp -98 bp
+[p058_c0010] _Source: BLS and BBG, data as of April 1, 2025._
+[p058_c0011] The 10-year government bond yield curves drops recently due to market volatility, tariff, and policy uncertainty
+> [p058_c0012] Last 20 Years Last 12 Months
+[p058_c0013] _Source: BBG, BlackRock Investment Institute. Data as of April 4, 2025_
+[p058_c0014] _BlackRock_
+[p058_c0015] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p058_c0016] _11_
+
+## Page 59
+
+### [p059_c0001] Global Macro Overview
+[p059_c0002] Prior to the recent tariff announcement, Euro area (EA) growth was expected to trend higher, while inflation continued to moderate
+> [p059_c0003] EA GDP growth with fcts (QoQ% ann.) Core Inflation with fct, YoY% Legend for GDP Growth: Hard data nowcast (red dashed line) BLK FR Econ fct (black dashed line) Actual GDP (yellow solid line) FMI nowcast (purple dashed line) ECB Mar-25 fct (purple dashed line) BB6 consensus fct (red dashed line)
+[p059_c0004] _Source: BlackRock. Data as of March 31, 2025._
+[p059_c0005] Germany and EU commission announced major defense spending which may boost economic activity in the region
+> [p059_c0006] Germany - GDP revisions Euro area - GDP revisions Legend: Old (black), New (red) Revisions (2025): Germany: BLK (+0.2-0.5pp), GS, JPM, Cr Ag, MS, BNP Euro area: BLK (+0.1-0.2pp), GS, JPM, Cr Ag, MS, BNP Revisions (2026): Germany: BLK (+0.3-1.1pp), GS, JPM, Cr Ag, MS, BNP Euro area: BLK (+0.2-0.4pp), GS, JPM, Cr Ag, MS, BNP
+[p059_c0007] _Source: BlackRock. Data as of March 31, 2025._
+[p059_c0008] President Trump looks to add a 10% baseline tax on all US imports and additional tariffs on trading partners with large trade deficits
+[p059_c0009]
+
+```text
+Reciprocal Tariffs Tariff Charged by U.S. to Other Countries Country Rate U.S. & Reciprocal Unilateral China 67% 34% European Union 39% 46% Vietnam 90% 46% Taiwan 64% 32% Japan 46% 24% India 52% 26% South Korea 50% 25% Thailand 72% 36% Australia 61% 31% Indonesia 64% 32% Malaysia 47% 24% Cambodia 97% 49% United Kingdom 10% 10% South Africa 60% 30% Israel 10% 10% Bangladesh 74% 37% Singapore 10% 10% Israel 33% 17% Philippines 34% 17% Chile 10% 10% Australia 10% 10% Pakistan 38% 29% Turkey 10% 10% El Lanka 86% 43% Colombia 10% 10% Reciprocal Tariffs Tariff Charged by U.S. to Other Countries Country Rate U.S. & Reciprocal Unilateral Peru 10% 10% Nicaragua 36% 18% Norway 36% 18% Costa Rica 12% 10% Jordan 40% 20% Dominican Republic 10% 10% United Arab Emirates 10% 10% New Zealand 20% 10% Argentina 10% 10% Canada 12% 10% Guatemala 10% 10% Honduras 10% 10% Madagascar 93% 47% Mexico (Mexico) 88% 44% Tunisia 35% 18% Kazakhstan 54% 27% Ghana 74% 37% Egypt 10% 10% Gulf Arabia 10% 10% El Salvador 10% 10% Cost of Ivory 41% 21% Laos 93% 47% Bolivia 74% 37% Trinidad and Tobago 12% 10% Mauritius 10% 10%
+```
+[p059_c0010] _Source: White House as of April 2, 2025._
+[p059_c0011] Yields in Europe sold off bringing investment grade credit to attractive levels, paired with strong growth in the region may drive spreads lower
+> [p059_c0012] Legend: EUR IG (red line) Germany 10Y (yellow line) EUR IG 2014-2022 Avg (dashed red line) Germany 10Y 2014-2022 Avg (dashed yellow line)
+[p059_c0013] _Source: BlackRock. Data as of March 31, 2025._
+[p059_c0014] _BlackRock_
+[p059_c0015] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p059_c0016] _12_
+
+## Page 60
+
+### [p060_c0001] Fixed Income Sector Reviews
+
+## Page 61
+
+### [p061_c0001] Global Investment Grade Credit
+[p061_c0002] Throughout Q1, US IG returns have provided stability over equities, indicating IG's potential resilience from tariff-related vol
+> [p061_c0003] Total returns since 2024 S&P 500 US HG US HY Jan-24 Apr-24 Jul-24 Oct-24 Jan-25
+[p061_c0004] _Left Source: JPM, BlackRock. Data as of March 20, 2025_
+[p061_c0005] Amidst increased defense spending across the EU, and specifically Germany, EUR IG Aerospace and Defense names have outperformed
+> [p061_c0006] Diff (RHS) EUR IG Aero&Defence OAS EUR IG Non-Cyc OAS Mar-24 Jun-24 Sep-24 Dec-24 Mar-25
+[p061_c0007] _Source: Bloomberg, BlackRock. Data as of March 11, 2025_
+[p061_c0008] Due to current rate levels, US IG monthly supply reached its highest levels since COVID; however, issuance is expected to moderate
+> [p061_c0009] Rolling 4-week total Monthly avg for rest of 2025 219
+[p061_c0010] _Source: BlackRock. Data as of March 18, 2025. Any opinions, forecasts represent an assessment of the market environment at a specific time and is not intended to be a forecast of future events or a guarantee of future results._
+[p061_c0011] Despite EUR IG continuing to trade at tight levels amidst geopolitical uncertainty and tariff policy, all-in yields remain attractive
+> [p061_c0012] Index spread percentile EUR IG EUR HY
+[p061_c0013] _Source: JPM. Data as of March 28, 2025_
+[p061_c0014] _BlackRock_
+[p061_c0015] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p061_c0016] _14_
+
+## Page 62
+
+### [p062_c0001] Agency MBS
+### [p062_c0002] Current coupon mortgage spread
+> [p062_c0003] The chart displays the Current Coupon Spread in basis points (bps) from March 2008 to March 2025. The spread shows significant volatility, with a major peak around 280 bps in early 2009, followed by a sharp decline and subsequent fluctuations. A notable low point is seen around 2013. The spread generally trends upwards from 2014, peaking again around 2023 before a slight decline in 2024. An inset chart provides a detailed view of the spread from March 2021 to March 2025, showing a steady increase from approximately 100 bps to over 180 bps.
+[p062_c0004] Source: Credit Suisse FN30 Current Coupon Agency MBS, Bloomberg as of March 31, 2025
+### [p062_c0005] Implied interest rate volatility
+> [p062_c0006] This chart illustrates the USD Swap ATM 3M10Y volatility from 2018 to 2025. The volatility is measured in basis points. It shows a general upward trend over the period, with a significant spike reaching approximately 150 bps in early 2023. There was a notable peak in 2020, followed by a period of relative stability and then a sharp increase starting in 2022.
+[p062_c0007] Source: Bloomberg as of March 31, 2025
+### [p062_c0008] Primary mortgage rate
+> [p062_c0009] The chart tracks three metrics from 2018 to 2025: the Primary Mortgage Rate (red line), the 10-year Treasury yield (yellow line), and the difference between them (green line). The Primary Mortgage Rate and 10y Treasury are plotted on the left y-axis (2.50% to 8.00%), while the Difference is plotted on the right y-axis (0.00 to 6.00). The Primary Mortgage Rate shows a sharp increase starting in 2022, reaching nearly 8% by 2024. The 10y Treasury yield also rises significantly after 2020, reaching around 6% by 2024. The difference between the two rates has been relatively stable until 2020, after which it has widened considerably.
+[p062_c0010] Source: Morgan Stanley, Freddie Mac as of March 31, 2025
+[p062_c0011] _BlackRock_
+[p062_c0012] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p062_c0013] _15_
+
+## Page 63
+
+### [p063_c0001] CMBS
+### [p063_c0002] CMBS conduit index spread by rating
+> [p063_c0003] AAA AS AA A BBB 31-Mar-25 112 156 186 213 479 28-Feb-25 94 120 140 180 400 MoM 18 36 46 33 79
+[p063_c0004] Source: JP Morgan as of March 31, 2025. JP Morgan CMBS Index
+### [p063_c0005] March remittance: 30-day+ delinquency rate
+[p063_c0006] Source: Trepp, Morgan Stanley Research as of April 11, 2025
+### [p063_c0007] CMBS conduit index credit curve
+> [p063_c0008] Rating Category Jun 28, 2024 Sep 30, 2024 Dec 31, 2024 Mar 31, 2025 AAA/AS 40 40 44 44 AAA/AA 72 72 74 74 AAA/A 115 101 101 101 AAA/BBB 500 397 397 367
+[p063_c0009] Source: JP Morgan as of March 31, 2025. JP Morgan CMBS Index
+### [p063_c0010] March remittance: special servicing
+[p063_c0011] Source: Trepp, Morgan Stanley Research as of April 11, 2025
+[p063_c0012] _BlackRock_
+[p063_c0013] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p063_c0014] _16_
+
+## Page 64
+
+### [p064_c0001] Commercial Real Estate (CRE) Fundamentals
+### [p064_c0002] CRE transaction volume
+> [p064_c0003] Y/Y GDP Growth Y/Y Change in Transaction Volume 2002 2007 2012 2017 2022 Growth in CRE Transaction Volume (YY)
+[p064_c0004] Source: RCA, BofA Global Research as of April 04, 2025
+### [p064_c0005] Y-o-Y change in NOI between underwriting and the end of the fifth year
+> [p064_c0006] Cumulative NOI change (%) Hotel Industrial Multifamily Office Retail Other UW Y1 Y2 Y3 Y4 Y5
+[p064_c0007] Source: Intex, BofA Global Research as of April 04, 2025
+### [p064_c0008] National CRE property prices modestly rose in January
+> [p064_c0009] Property price YoY (%) 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 Legend: National, Retail, Office, Industrial, Multifamily
+[p064_c0010] Source: Real Capital Analytics, Bloomberg as of March 31, 2025
+### [p064_c0011] National cap rates by property type vs effective fed funds rate
+> [p064_c0012] Jan-01 Dec-01 Nov-02 Nov-03 Oct-04 Apr-05 Jul-06 Jun-07 Jun-08 Jun-09 Nov-10 Jan-11 Dec-11 Nov-12 Oct-13 Sep-14 Aug-15 Jul-16 Jun-17 Jun-18 Jun-19 Jun-20 Jun-21 Jun-22 Jun-23 Dec-23 Nov-24 Legend: Office, Retail, Apartments, Industrial, Hotel, Fed Funds Effective Rate
+[p064_c0013] Source: Real Capital Analytics, Bloomberg, Federal Reserve Bank, Goldman Sachs Research as of April 11, 2025
+[p064_c0014] _BlackRock_
+[p064_c0015] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p064_c0016] _17_
+
+## Page 65
+
+### [p065_c0001] Commercial Real Estate (CRE) Fundamentals
+### [p065_c0002] CRE transaction volume
+> [p065_c0003] Y/Y GDP Growth Y/Y Change in Transaction Volume 2002 2007 2012 2017 2022 Growth in CRE Transaction Volume (YY)
+[p065_c0004] Source: RCA, BofA Global Research as of April 04, 2025
+### [p065_c0005] Y-o-Y change in NOI between underwriting and the end of the fifth year
+> [p065_c0006] Cumulative NOI change (%) Hotel Industrial Multifamily Office Retail Other UW Y1 Y2 Y3 Y4 Y5
+[p065_c0007] Source: Intex, BofA Global Research as of April 04, 2025
+### [p065_c0008] National CRE property prices modestly rose in January
+> [p065_c0009] Property price YoY (%) National Retail Office Industrial Multifamily '05 '06 '07 '08 '09 '10 '11 '12 '13 '14 '15 '16 '17 '18 '19 '20 '21 '22 '23 '24 '25
+[p065_c0010] Source: Real Capital Analytics, Bloomberg as of March 31, 2025
+### [p065_c0011] National cap rates by property type vs effective fed funds rate
+> [p065_c0012] Office Retail Apartments Industrial Hotel Fed Funds Effective Rate Jan-01 Dec-01 Nov-02 Oct-03 Sep-04 Aug-05 Jul-06 Jun-07 May-08 Apr-09 Mar-10 Feb-11 Jan-12 Dec-12 Nov-13 Oct-14 Sep-15 Aug-16 Jul-17 Jun-18 May-19 Apr-20 Mar-21 Feb-22 Jan-23 Dec-23 Nov-24
+[p065_c0013] Source: Real Capital Analytics, Bloomberg, Federal Reserve Bank, Goldman Sachs Research as of April 11, 2025
+[p065_c0014] _BlackRock_
+[p065_c0015] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p065_c0016] _18_
+
+## Page 66
+
+### [p066_c0001] CLO
+### [p066_c0002] CLO index spreads by rating
+> [p066_c0003] AAA AA A BBB 3/31/2025 134 185 212 333 2/28/2025 108 157 191 272 Mom Chg 27 28 22 61
+[p066_c0004] Source: Bloomberg as of March 31, 2025. JPM CLOIE Index
+### [p066_c0005] BB vs B bank loan prices
+[p066_c0006] Source: Bloomberg as of March 31, 2025 S&P/LSTA Leveraged BB Loan Index, S&P/LSTA Leveraged B Loan Index
+### [p066_c0007] CLO credit curve
+> [p066_c0008] AA-AAA A-AAA BBB-AAA 3/31/2025 50 78 199 2/28/2025 49 83 164 Mom Chg 1 -5 35
+[p066_c0009] Source: Bloomberg as of March 31, 2025. JPM CLOIE Index
+### [p066_c0010] Relative Value: CLO vs Corporates
+[p066_c0011] Source: BofA Global Research, Bloomberg, LCD as of April 11, 2025
+[p066_c0012] _BlackRock_
+[p066_c0013] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p066_c0014] _19_
+
+## Page 67
+
+### [p067_c0001] ABS
+### [p067_c0002] ABS Supply
+[p067_c0003]
+
+```text
+$bn 2021 2022 2023 2024 2024 YTD 2025 YTD Credit Card 17 32 23 13 8.4 3.7 Bank Charge 17 20 21 17 5.9 2.9 Retail 0 2 2 3 0.8 0.8 Auto 132 110 146 163 53.4 49.2 Private Loan 50 50 73 77 22.6 22.3 Nonprime Loan 42 33 34 40 11.5 14.6 Loans 27 16 23 30 11.7 9.1 Fleet & Other 13 11 16 16 4.6 3.9 Student Loans 26 7 7 8 2.1 1.8 IFELP 8 0 0 1 0.0 0.0 Private Credit 16 7 7 8 2.1 1.8 Equipment 13 22 21 26 7.2 8.8 ThruPlan 1 1 4 0 2.9 1.1 Unsecured Consumer 17 16 14 20 4.2 7.4 MPL 8 9 8 7 2.1 3.9 Branch & Other 9 7 7 13 2.1 3.9 Other 55 56 41 66 15.7 17.3 Total ABS 267 244 238 312 91.8 88.0 % VAAA 61% 50% 58% 62% 97% 80% % Floating-rate 5% 4% 7% 8% 9% 7%
+```
+[p067_c0004] Source: JP Morgan as of April 04, 2025
+### [p067_c0005] Relative Value: ABS vs Corporates
+[p067_c0006] Source: BofA Global Research, ICE Data Indices, LLC as of April 04, 2025
+### [p067_c0007] 60+ delinquencies have been moving higher across consumer products, but at substantially different paces
+[p067_c0008] Source: Intex, Morgan Stanley Research as of March 31, 2025
+### [p067_c0009] Student ABS: 90+ days delinquency rates rose sharply, driven mainly by resumption of the Federal student loan reporting
+[p067_c0010] Source: Equifax, Experian, TransUnion, VantageScore as of March 31, 2025
+[p067_c0011] _BlackRock_
+[p067_c0012] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p067_c0013] _20_
+
+## Page 68
+
+### [p068_c0001] Non-Agency RMBS
+### [p068_c0002] Case-Shiller's national home price index
+[p068_c0003] _Source: Morgan Stanley Research, Case-Shiller as of April 03, 2025_
+### [p068_c0004] Basis between new and existing home sales continues to close
+[p068_c0005] _Source: NAR, US Census Bureau, Morgan Stanley Research as of March 28, 2025_
+### [p068_c0006] March remits across sectors
+[p068_c0007] _Source: CoreLogic, Freddie Mac, Nomura as of March 27, 2025_
+### [p068_c0008] Non-QM AAA bonds are cheap vs IG based on historical spreads
+[p068_c0009] _Source: Bofa Global Research, Bloomberg as of April 04, 2025_
+[p068_c0010] _BlackRock_
+[p068_c0011] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p068_c0012] _21_
+
+## Page 69
+
+### [p069_c0001] Global High Yield (HY) Credit
+[p069_c0002] Though the US HY was down -1.10% as CCCs underperformed amidst rising growth concerns...
+> [p069_c0003] MTD Price Return Legend: U.S. High Yield - 2% Issuer Cap - MTD Price Return (Red) U.S. High Yield - 2% Issuer Cap Ba Component - MTD Price Return (Yellow) U.S. High Yield - 2% Issuer Cap Caa Component - MTD Price Return (Green) U.S. High Yield - 2% Issuer Cap Caa Component - MTD Price Return (Pink)
+[p069_c0004] Source: Barclays Live, Data as of March 31, 2025. Past performance is not indicative of future results.
+[p069_c0005] US HY spread levels have remained near all-time tights as overall defaults and distress remain at historical lows
+> [p069_c0006] US HY OAS Default Rate (6m Lag)
+[p069_c0007] Source: BofA Global Research, Data as of January 31, 2025.
+[p069_c0008] ...EUR HY's has seen positive YTD performance, driven by lower quality areas given higher growth expectation has led to risk-on sentiment
+> [p069_c0009] Legend: YTD excess return (%) (Red) YTD total return (%) (Yellow) Category YTD excess return (%) YTD total return (%) EUR HY ~0.3 ~0.6 EUR BB ~0.2 ~0.4 EUR B ~0.3 ~0.7 EUR CCC ~2.9 ~2.9
+[p069_c0010] Source: Bloomberg, BlackRock, Data as of April 2, 2025.
+[p069_c0011] At the sector level, dispersion has remained elevated across as the risk of geopolitical trade uncertainty has risen
+> [p069_c0012] Sector-Level Dispersion (3/25/25) Sector Dispersion Cap Goods ~1.05 Cons Non Cyc ~0.75 Tech ~0.72 Comms ~0.70 Basic Ind ~0.68 REITs ~0.65 Cons Cyc ~0.62 FinCos ~0.60 Energy ~0.58 Natural Ga ~0.55 Electric ~0.50 Transp ~0.45 Other Ind ~0.42 Other Fin ~0.40 Banking ~0.38 Brokerage ~0.35 Insurance ~0.30
+[p069_c0013] Source: Bloomberg, Barclays Research, Data as of March 25, 2025.
+[p069_c0014] _BlackRock_
+[p069_c0015] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p069_c0016] _22_
+
+## Page 70
+
+### [p070_c0001] Emerging Market Debt
+### [p070_c0002] Large EM sovereign supply in Feb has been well-absorbed...
+> [p070_c0003] EM Sovereign credit monthly issuance (US$ billions) Month 2022 2023 2024 2025 Jan 19 44 44 0 Feb 9 37 19 0 Mar 12 10 21 0 Apr 8 9 10 0 May 10 0 16 0 Jun 9 0 13 0 Jul 1 0 9 0 Aug 3 0 12 0 Sep 7 0 16 0 Oct 13 0 10 0 Nov 9 0 15 0 Dec 3 0 5 0
+[p070_c0004] Source: Morgan Stanley Research, March 2025
+### [p070_c0005] EM local debt has become more tactically attractive as Central Banks might have more space to cut rates than markets are currently pricing...
+[p070_c0006]
+
+```text
+Market Pricing, % BNPP forecast, % Difference, bp Mar 25 Jun 25 Sep 25 Dec 25 Dec 26 2025 2026 2025 2026 Poland 5.82 5.67 5.27 4.99 4.33 4.00 3.50 -80 -83 Czech Rep 3.70 3.32 3.36 3.31 3.49 3.00 2.50 -31 -90 Hungary 6.51 6.57 6.52 6.30 6.13 6.75 4.50 -66 -163 South Africa 7.49 7.40 7.36 7.33 7.49 7.00 6.50 -33 -90 Turkiye 42.4 37.6 33.6 31.0 27.2 27.50 20.00 -332 -720 CEEMEA 14.03 14.50 14.97 15.30 14.09 16.00 13.50 -40 -48 Brazil 8.77 8.97 8.28 8.11 8.97 8.25 7.75 -14 -32 Colombia 8.24 8.86 8.49 8.21 8.32 7.75 6.50 -46 -182 Chile 5.21 5.14 5.00 4.92 5.13 5.00 4.50 -8 -43 LatAm -9 -64 Thailand 1.99 1.85 1.70 1.61 1.58 1.75 1.75 14 17 S. Korea 2.85 2.68 2.54 2.50 2.41 2.50 2.50 0 9 India 6.45 5.99 5.86 5.77 5.72 5.75 5.75 -2 3 Malaysia 3.66 3.56 3.54 3.46 3.37 3.00 2.75 -46 -62 Asia -9 -8 *Calculated as the fed key rate equals policy rate **Excluding Türkiye Positive: BNPP forecast is higher Negative: BNPP forecast is lower
+```
+[p070_c0007] Source: National Sources and J.P. Morgan, March 2025
+### [p070_c0008] ...with strong interest in EM from crossover investors
+[p070_c0009]
+
+```text
+Overall EM Credit Supply (US$bn) Total Green Social Sustainable Sustainability-linked WTD YTD WTD YTD WTD YTD WTD YTD WTD YTD EM sovereign supply 7.8 90.3 - 2.6 - 1.8 - 2.6 - - Asia - 7.2 - - - - - 2.0 - - CEEMEA ex-MENA 5.6 33.4 - 1.0 - - - 0.5 - - MENA 2.2 28.0 - 1.6 - - - - - - LatAm - 21.7 - - - 1.8 - - - - EM corporate supply 20.8 154.6 1.1 8.3 0.2 2.6 0.1 8.2 - 1.1 Asia 20.0 78.6 1.1 4.2 0.2 2.6 0.1 3.6 - - CEEMEA - 42.9 - 2.9 - - - 2.0 - 0.3 LatAm - 27.7 - 1.3 - - - 2.4 - 0.8 Total 28.6 244.9 1.1 10.9 0.2 4.4 0.1 10.8 - 1.1
+```
+[p070_c0010] Source: Morgan Stanley Research, March 2025
+### [p070_c0011] ...and EM Local yield converted to USD is at historically attractive levels
+[p070_c0012] Source: J.P. Morgan, March 2025
+[p070_c0013] _BlackRock_
+[p070_c0014] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p070_c0015] _23_
+
+## Page 71
+
+### [p071_c0001] Multi-Sector Positioning Overview
+
+## Page 72
+
+### [p072_c0001] March 2025 FIG Multi-Sector Positioning Overview
+### [p072_c0002] Financial Institutions Group Unconstrained Positioning*
+[p072_c0003]
+
+```text
+Sector Current Position Sector focus & trade activity Rates/Curve 1 5 10 ➤ 2s10s was volatile over the month closing at approximately 32bps, 12bp higher than its February open. The 5s30s curve increased by approximately 13bps throughout the month, ending the period at 62bps as term premiums expanded steadily over the period. ➤ We held a neutral duration position in the backdrop of higher inflation expectations, slower growth and uncertainty in the FED policy rates. ➤ As the administration imposes more policies, we will await to see the impact of tariffs on inflation and growth, potential impacts of DOGE, treasury funding impacts, longer-term fiscal budget conversation Agency Mortgages 1 7 10 ➤ We remain overweight to CMO's as they continue to look compelling in the current market environment. As a core position Agency PT's are favorable relative to other sectors but have found more value in 15's and CMOs. Additionally, the asset class provides a diversified return profile. ➤ The Bloomberg MBS Index underperformed similar duration Treasuries by 27bps in March. Higher mortgage rates paired with weaker purchase seasons typical of the start of the year have resulted in subdued prepayment activity. CLO 1 5 10 ➤ We continue to maintain a neutral positioning for CLOs as the spreads have shown their resiliency in an otherwise spread widening environment. ➤ Credit curve was flat to wide month over month in March. We have been active in trading in the secondary market, mainly selling low spread AAA paper which is sensitive to gap risk. We have largely been staying away from generic BBs which continue to hover around record tight spread levels since the GFC, preferring select trades CLO equity and bespoke or private opportunities. We also have been optimizing our existing CLO equity control positions, monetizing more seasoned positions post-reset, and in redeploying into cleaner, higher cash-on-cash, and longer profiles in both new issue and secondary ABS 1 5 10 ➤ We have seen robust issuance come to market to the market. Currently the market is choppy and is in price discovery mode. Spreads moved to wider levels with most sectors moving beyond 12-month minimums but not 36-month maximums. ➤ Delinquencies have inched higher, especially in subprime auto, moving closer to pre-pandemic levels. CMBS 1 5 10 ➤ We maintain a neutral positioning for CMBS as conduit credit continued to steepen in March and spreads were wider. Both primary and secondary market participation remained muted, reflecting a cautious investor stance and a growing recognition that the bid/offer dynamic may deteriorate further in the event of prolonged volatility. ➤ The Bloomberg Barclays CMBS Index posted an excess return of -25bps vs duration-adjusted Treasuries with a total return of 26bps in March, bringing year to date excess return to -7bps and YTD total return to 257bps. NA RMBS 1 7 10 ➤ Overall, volumes have normalized while demand remains strong. The relatively low housing supply still provides a fundamentally strong backdrop. ➤ The asset class has experienced a continued positive tone and is still offering attractive relative valuation among short dated assets.
+```
+[p072_c0004] * Please note, the sector strategies described above are shown for illustrative purposes only and are reflective of unconstrained mandates only and may not reflect the strategy employed in all portfolios. KRD refers to key rate durations. Green shaded area indicates an overweight, yellow shaded area indicates neutral, red shaded area indicates an underweight. Source: Bloomberg for market data and BlackRock for positioning as of March 31, 2025. Past performance is not indicative of future results. Forecasts are based on estimates and assumptions. There is no guarantee that they will be achieved.
+[p072_c0005] _BlackRock_
+[p072_c0006] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p072_c0007] _25_
+
+## Page 73
+
+### [p073_c0001] March 2025 FIG Multi-Sector Positioning Overview
+### [p073_c0002] Financial Institutions Group Unconstrained Positioning*
+[p073_c0003]
+
+```text
+Sector Current Position Sector focus & trade activity EM / Sovereign The reciprocal tariffs surprised the EM markets as well, particularly the Asia region. By contrast LatAm fared relatively better than expectation, particularly Mexico. China is obviously a key driver of EM growth dynamics, so the growing risk of a significant US-China confrontation is concerning. Slowing global growth expectations in the DM world have a pass thru to EM expectations as well. On the positive side, there is a chance that the tariff announcement marked the peak in USD strength, which has positive implications for EM and opens door for more monetary policy easing in EM in response to slower growth EM assets held in remarkably well through the first leg of the widening this year, but did ultimately sell off alongside broader risk markets in early April. That said, EM betas to DM are still significantly outperforming. Corporates The unexpected sharp weakening of the US Growth outlook on the back of the harsher than expected reciprocal tariffs has highlighted the asymmetric risk for spread assets when volatility and valuations are compressed. Risk of stagflation damaging corporate earnings, plus tying the hands of monetary policy authorities has led to a material repricing of credit risk. Even with the 90-day tariff pause, uncertainty remains extremely elevated, demanding greater risk premiums. While we do see scope for a tactical bounce in risk assets, we think that the damage has been done to both consumer and corporate confidence, which will deteriorate growth and lead to a likely shallow recession later in 2025. Despite the widening, credit spreads do not reflect this potential outcome. Supply has slowed to very low levels given the volatility in markets, but fund flows have turned negative, hurting liquidity and raising bid-offer. While the yield-based buying remains strong out the curve, the market remains on edge and liquidity is poor. IG valuations touched longer term medians ahead of the tariff pause but have already retraced about half the weakness since Liberation Day. At +115, we still think risk is asymmetrically skewed to the downside. While we have covered much of our underweight into the widening, we are looking for more attractive levels before adding any additional risk. High Yield Leverage is creeping higher off a low base as earnings decline. Interest Coverage ticked up but is still declining from the highest level in over a decade as the impact of higher rates starts to be felt. In March rising stars outpaced falling angels and upgrades exceeded downgrades in all rating cohorts except CCCs. Default rates appear to be troughing at levels that are low by historical standards at 1.3%. The environment is likely to get far more challenging looking forward. The trade war is likely to lead to a recessionary growth backdrop with inflation remaining elevated. This will challenge the earnings for HY and lead to weakening credit metrics and a likely rise in default rates as the year progresses. With the Fed likely constrained with how much they can cut rates; lower quality credits may encounter renewed pressure as yields potentially stay higher for longer. While spreads have significantly widened out since the tariff announcements, the HY market is still not sufficiently pricing in a recession. HY spreads continue to trade tight relative to IG spreads on a long run basis. During the recent volatility, BB spreads have widened to 287 and spread ratios to BBB spreads have widened to 2.15x. With the recent widening, this relationship remains on par to the 5-year historical spread ratio of 2.19x. With an uncertain outlook on US growth, we continue to approach the asset class cautiously. While HY can likely continue to earn attractive income, we are likely to see wider spreads and better entry points over time. Municipals The Bloomberg Taxable Municipal (U.S. Aggregate Eligible) Index returned -0.71% with -62 basis points of excess performance, bringing the year-to-date total return to 2.83% with -99 basis points of excess performance. Issuance totaled $2.0 billion, a 24% decrease month-over-month. The Bloomberg Municipal Bond Index returned -1.69%, bringing the year-to-date total return to -0.22%. The front-end of the yield curve, high yield credits, prerefunded bonds, and the industrial development revenue and pollution control revenue (IDR/PCR) sector performed best. Supply-and-demand dynamics acted as a headwind. At the same time, issuance remained robust at $43 billion, 9% above the five-year average, bringing the year-to-date total to $120 billion, up 23% year-over-year.
+```
+[p073_c0004] * Please note, the sector strategies described above are shown for illustrative purposes only and are reflective of unconstrained mandates only and may not reflect the strategy employed in all portfolios. KRD refers to key rate durations. Green shaded area indicates an overweight, yellow shaded area indicates neutral, red shaded area indicates an underweight. Source: Bloomberg for market data and BlackRock for positioning as of March 31, 2025. Past performance is not indicative of future results. Forecasts are based on estimates and assumptions. There is no guarantee that they will be achieved.
+[p073_c0005] _BlackRock_
+[p073_c0006] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p073_c0007] _26_
+
+## Page 74
+
+### [p074_c0001] March 2025 FIG Multi-Sector Positioning Overview
+### [p074_c0002] Financial Institutions Group Unconstrained Positioning*
+[p074_c0003]
+
+```text
+Sector Current Position Sector focus & trade activity Private Structured ➤ Structured Credit continues to provide an attractive source of relative value with deals offering spread premium to public comparables and strong structural protections. The ability to structure these deals additionally creates an opportunity to tailor them for insurers. ➤ We continue to see diversified opportunity set across Structured Finance. Asset Backed and Real Estate Backed sectors remain as sources of great relative value, supported by continued growth of the vertical strip securitization opportunity set within sub-sectors such as Consumer. Within Real Estate Backed - Commercial Mortgage Loans and Private CMBS sub-sectors offer attractive spread premiums. IG Structured Credit currently supports a wide range of tenors from 1yr to 30yrs and spreads between 150bps to 400bps. Infrastructure Debt ➤ Insurers continue to look to infrastructure debt as a growing part of their SAA, as both an ALM and total return play across IG and HY opportunities. Additionally, Higher all-in yields are likely to boost demand for infrastructure debt, particularly among insurers. Broadly issuance has been scarce. ➤ Infrastructure debt can provide macro risk diversification and 50-300 bps of income enhancement relative to comparable public corporates with limited liquidity give-up IG Private Placements ➤ The Private Placement ("PP") market continues to exhibit robust activity. The PP market has priced 105 transactions through Q2 for a total of $51bn in transaction value. The quarter saw a consistent flow of deals, with the $19bn of supply priced in June, the highest one-month total in over 42 months+. Issuers have stayed active through the summer as spreads continue to bounce around multi-year tights, and issuers look to take advantage of current market conditions before attention shifts to the US Presidential Election at the back end of the year. ➤ The Private Placement market continues to provide a steady stream of supply across a diverse set of tenors to satisfy a variety of liability investors ➤ While the spreads are currently unfavorable, there are some idiosyncratic opportunities that can be looked at.
+```
+[p074_c0004] * Please note, the sector strategies described above are shown for illustrative purposes only and are reflective of unconstrained mandates only and may not reflect the strategy employed in all portfolios. KRD refers to key rate durations. Green shaded area indicates an overweight, yellow shaded area indicates neutral, red shaded area indicates an underweight. Source: Bloomberg for market data and BlackRock for positioning as of March 31, 2025. Past performance is not indicative of future results. Forecasts are based on estimates and assumptions. There is no guarantee that they will be achieved.
+[p074_c0005] _BlackRock_
+[p074_c0006] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p074_c0007] _27_
+
+## Page 75
+
+### [p075_c0001] Appendix
+
+## Page 76
+
+### [p076_c0001] Performance and Attribution
+
+## Page 77
+
+### [p077_c0001] Yield and Cash Level Summary
+> [p077_c0002] The chart displays four data series over time from January 2024 to December 2024: Cash Levels (RHS): Represented by green bars, showing daily cash levels in millions of dollars. The levels fluctuate significantly, with peaks around $60MM in early 2024 and $50MM in late 2024, and troughs around $10MM in mid-2024. Market Yield (LHS): Represented by a red line, showing the market yield percentage. It starts around 4.8%, peaks at approximately 5.5% in early 2024, and then generally trends downward to around 4.5% by late 2024. Book Yield (LHS): Represented by a yellow line, showing the book yield percentage. It remains relatively stable, starting around 3.5% and ending around 4.0%. Average Purchase Yield: Represented by pink dots, showing the average purchase yield percentage. It fluctuates between approximately 4.0% and 7.0% throughout the period.
+[p077_c0003] _BlackRock_
+[p077_c0004] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p077_c0005] _30_
+
+## Page 78
+
+### [p078_c0001] First Mutual Transportation Assurance Company – Performance Review
+### [p078_c0002] Performance Summary by Portfolio – December 31, 2024
+[p078_c0003]
+
+```text
+Portfolio Full Name 1 Month 3 Month 1 YR 3 YR* 5 YR* Inde ITD* Port Index Active Port Index Active Port Index Active Port Index Active Port x Active Port Index Active General Operating Account -1.62 -1.64 0.02 -2.88 -3.06 0.18 1.91 1.25 0.66 -2.16 -2.41 0.25 0.31 -0.33 0.64 1.86 1.27 0.59 Excess Loss Fund -0.91 -0.93 0.02 -1.95 -2.07 0.13 3.07 2.47 0.61 -0.51 -0.83 0.32 0.76 0.33 0.43 1.89 1.47 0.42 Ace American Trust -0.59 -0.59 0.00 -1.55 -1.65 0.09 2.90 2.74 0.17 0.05 -0.30 0.35 1.04 0.69 0.35 2.01 1.72 0.29 Liberty Trust '06 NY Transit Authority -0.59 -0.58 -0.02 -1.44 -1.62 0.18 3.24 2.84 0.40 0.29 -0.28 0.57 1.34 0.72 0.61 2.27 1.75 0.52 Star Indemnity -0.58 -0.59 0.01 -1.60 -1.65 0.05 2.71 2.74 -0.03 0.06 -0.30 0.36 0.96 0.69 0.27 1.89 1.72 0.17 Liberty Trust East Side Access -0.60 -0.58 -0.03 -1.44 -1.62 0.18 3.17 2.84 0.34 0.20 -0.28 0.48 1.22 0.72 0.49 2.18 1.75 0.43 Master Builders' Risk -1.55 -1.64 0.08 -2.77 -3.06 0.29 2.06 1.25 0.81 -2.06 -2.41 0.34 0.21 -0.33 0.53 1.77 1.28 0.49 Discovery Re Trust 0.42 0.45 -0.03 0.96 0.70 0.26 5.38 4.75 0.64 3.70 2.82 0.89 2.41 2.03 0.38 2.39 2.17 0.22
+```
+### [p078_c0004] Portfolio and Benchmark Summary – December 31, 2024
+[p078_c0005]
+
+```text
+Portfolio NAV Portfolio Full Name Index Full Name Primary Objective FMT-GOA $288,016,972 General Operating Account BBG U.S. Aggregate Index Total Return FMT-ELF $195,064,426 Excess Loss Fund BBG Intermediate Aggregate Index Total Return FMT-AAT $114,749,207 Ace American Trust BBG Intermediate Gov/Credit A or Higher Index Book Yield / Income FMT-LTNY $20,427,139 Liberty Trust '06 NY Transit Authority BBG US Aggregate Intermediate A3/A- or better Index Book Yield / Income FMT-STAR $76,912,864 Star Indemnity BBG Intermediate Gov/Credit A or Higher Index Book Yield / Income FMT-LTESA $89,851,754 Liberty Trust East Side Access BBG US Aggregate Intermediate A3/A- or better Index Book Yield / Income FMT-MBR $67,183,194 Master Builders' Risk BBG U.S. Aggregate Index Total Return FMT-DRT $56,888,355 Discovery Re Trust ICE BoFA 1 Yr US Treasury Note Index Cash Sleeve / Principal Protection Total $909,093,912 FMTAC-AGG
+```
+- [p078_c0006] - Data as of 12/31/2024 and numbers may not tie due to rounding - Performance holiday: 02/23/18 - 04/30/18 - * Performance for 3 YR, 5 YR, and ITD (Inception to Date) are annualized - Inception date: 2/23/2018 - Source: BlackRock Aladdin
+[p078_c0007] _BlackRock_
+[p078_c0008] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p078_c0009] _31_
+
+## Page 79
+
+### [p079_c0001] Active Performance Summary as of 12/31/2024
+### [p079_c0002] Active Performance Summary
+> [p079_c0003] Account 1 Month - Active 3 Month - Active 1 YR - Active 3 YR - Active * 5 YR - Active * ITD - Active * General Operating Account 0.02 0.18 0.66 0.25 0.64 0.59 Excess Loss Fund 0.02 0.13 0.61 0.32 0.43 0.42 Ace American Trust 0.00 0.09 0.17 0.35 0.35 0.29 Liberty Trust '06 NY Transit Authority 0.01 0.18 0.40 0.57 0.61 0.52 Star Indemnity -0.02 0.05 -0.03 0.36 0.27 0.17 Liberty Trust East Side Access -0.03 0.18 0.34 0.48 0.49 0.43 Master Builders' Risk 0.08 0.18 0.81 0.34 0.53 0.49 Discovery Re Trust -0.03 0.26 0.64 0.89 0.38 0.22
+[p079_c0004] - Data as of 12/31/2024 and numbers may not tie due to rounding - Performance holiday: 02/23/18 - 04/30/18 - * Performance for 3 YR and ITD (Inception to Date) are annualized - Inception date: 2/23/2018 - Source: BlackRock Aladdin
+[p079_c0005] _BlackRock_
+[p079_c0006] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p079_c0007] _32_
+
+## Page 80
+
+### [p080_c0001] Active Performance Summary as of 3/31/2025
+### [p080_c0002] Active Performance Summary
+> [p080_c0003] Time Period General Operating Account Excess Loss Fund Ace American Trust Liberty Trust '06 NY Transit Authority Star Indemnity Liberty Trust East Side Access Master Builders' Risk Discovery Re Trust 1 Month - Active -0.06 -0.07 -0.05 -0.03 0.00 -0.05 -0.09 0.01 3 Month - Active 0.01 -0.02 -0.03 -0.01 0.02 -0.01 -0.02 -0.01 1 YR - Active 0.35 0.23 0.03 0.24 -0.03 0.20 0.46 0.32 3 YR - Active * 0.27 0.31 0.20 0.43 0.22 0.38 0.35 0.66 5 YR - Active * 0.86 0.72 0.31 0.66 0.14 0.61 0.82 0.56 ITD - Active * 0.57 0.40 0.28 0.50 0.17 0.41 0.47 0.21
+[p080_c0004] - Data as of 3/31/2025 and numbers may not tie due to rounding - Performance holiday: 02/23/18 - 04/30/18 - * Performance for 3 YR and ITD (Inception to Date) are annualized - Inception date: 2/23/2018 - Source: BlackRock Aladdin
+[p080_c0005] _BlackRock_
+[p080_c0006] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR DISTRIBUTION_
+[p080_c0007] _33_
+
+## Page 81
+
+### [p081_c0001] Important Notes
+[p081_c0002] This document contains general information only and does not take into account an individual's financial circumstances. An assessment should be made as to whether the information is appropriate in individual circumstances and consideration should be given to talking to a professional adviser before making an investment decision.
+[p081_c0003] This material is provided for educational purposes only and is not intended to be relied upon as a forecast, research or investment advice, and is not a recommendation, offer or solicitation to buy or sell any securities or to adopt any investment strategy.
+### [p081_c0004] Manager Opinion
+[p081_c0005] The opinions expressed may change as subsequent conditions vary. The information and opinions contained in this material are derived from proprietary and non-proprietary sources deemed by BlackRock, Inc. and/or its subsidiaries (together, "BlackRock") to be reliable, are not necessarily all inclusive and are not guaranteed as to accuracy. There is no guarantee that any forecasts made will come to pass. Any investments named within this material may not necessarily be held in any accounts managed by BlackRock. Reliance upon information in this material is at the sole discretion of the reader.
+[p081_c0006] The issuers referenced are examples of issuers BlackRock considers to be well known and that may fall into the stated sectors. BlackRock may or may not own any securities of the issuers referenced and, if such securities are owned, no representation is being made that such securities will continue to be held
+### [p081_c0007] Outlook
+[p081_c0008] Statements concerning financial market trends are based on current market conditions, which will fluctuate. There is no guarantee that these investment strategies will work under all market conditions. Outlook and strategies are subject to change without notice.
+[p081_c0009] This material is not intended to be relied upon as a forecast, research or investment advice, and is not a recommendation, offer or solicitation to buy or sell any securities or to adopt any investment strategy. The opinions expressed may change as subsequent conditions vary. The information and opinions contained in this material are derived from proprietary and nonproprietary sources deemed by BlackRock to be reliable, are not necessarily all inclusive and are not guaranteed as to accuracy. There is no guarantee that any forecasts made will come to pass.
+### [p081_c0010] Index
+[p081_c0011] It is not possible to directly invest in an unmanaged index.
+[p081_c0012] The credit quality of a particular security or group of securities may be determined either by BlackRock or a nationally recognized statistical rating organization and does not ensure the stability or safety of an overall portfolio. In the event a security is unrated by a ratings organization, BlackRock may assign an internal rating for purposes of determining credit quality. Past performance is not indicative of future results.
+[p081_c0013] _BlackRock_
+[p081_c0014] _PREPARED FOR FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY - NOT FOR PUBLIC DISTRIBUTION_
+[p081_c0015] _34_
+
+## Page 82
+
+### [p082_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p082_c0002] New York State Insurance Captive of
+> [p082_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a dark blue circle containing the white letters "MTA". To the right of the circle, the words "Metropolitan", "Transportation", and "Authority" are stacked vertically in a dark blue, sans-serif font.
+### [p082_c0004] T A B
+### [p082_c0005] 7
+### [p082_c0006] FMTAC Partners: Service Provider Reports
+
+## Page 83
+
+[p083_c0001] 2024
+[p083_c0002] First Mutual Transportation Assurance Company, A New York Captive Insurance Company ("FMTAC")
+[p083_c0003] Selected Excerpted Wordings from Response to Request for Proposal for Captive Insurance Management Services
+### [p083_c0004] Prepared For:
+[p083_c0005] First Mutual Transportation Assurance Company ("FMTAC") c/o Mr. Peter Kranz, SVP, Director Risk Finance (ART) and Strategic Solutions Alliant Insurance Services, Inc. o.(802) 214-5825 c.(802) 309-5276 pete.kranz@alliant.com
+### [p083_c0006] Submitted By:
+[p083_c0007] Amethyst Captive Insurance Solutions, Inc. ("Amethyst") James Girardin & Tara J. Smith 126 College Street, Suite 300, Burlington, DC 05401 Direct: (802) 735-1677 & 1679 jgirardin@amethystcaptive.com & tsmith@amethystcaptive.com
+[p083_c0008] _Amethyst CAPTIVE INSURANCE SOLUTIONS_
+
+## Page 84
+
+[p084_c0001] OVERVIEW .....2 FMTAC MANAGEMENT TEAM (FOUR ASSOCIATES PLUS REGULATORY COMPLIANCE MANAGER).....6 VALUE SERVICES.....7 FAQ'S ..... 10 PROPOSED FEES ..... 15
+[p084_c0002] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p084_c0003] _Amethyst Confidential_
+[p084_c0004] _Page 1 of 23_
+
+## Page 85
+
+### [p085_c0001] Overview
+### [p085_c0002] OVERVIEW OF PROPOSAL
+[p085_c0003] THANK YOU for considering Amethyst Captive Insurance Solutions, Inc. ("Amethyst") as your captive insurance management partner.
+[p085_c0004] Our response to your Request for Proposal-Captive Management services ('RFP') received on September 5, 2024 is comprised of two (2) documents.
+- [p085_c0005] I. This Response to Request for Proposal document is crafted to address specific RFP requirements of the First Mutual Transportation Assurance Company ("FMTAC") organized as a pure New York licensed captive. a. To assist your review of our response, we provide an accompanying RFP matrix of required captive services ( Exhibit C ), per Exhibit B of DRAFT Subcontractor Agreement , which were re-organized by functional area to clearly present Amethyst's response and understanding of all detailed requirements. II. FMTAC Captive Insurance Company Exhibit Pack contains the 'Base', 'Edge' and 'Quality Assurance' documents; provided as a separate PDF document. The detailed content of each exhibit section is described at the end of this document.
+[p085_c0006] A SAMPLE Amethyst & FMTAC Management Services Agreement is available upon request. FMTAC service requirements are a good fit within our standard service platform. We understand Amethyst will be required to execute the Subcontractor Agreement provided by Alliant.
+### [p085_c0007] Strategic Nature of FMTAC - High Level Observations
+[p085_c0008] FMTAC fulfills a strategic need for the MTA's broad organizational risk and insurance programs of the MTA's affiliate agencies. FMTAC's mission is to continue, develop, and improve the insurance and risk management needs as required by the MTA. The MTA is a component unit of the State of New York.
+[p085_c0009] FMTAC direct writes and assumes a myriad of on-going liability, property and workers compensation risks associated with the extensive risk footprint of the MTA's operating agencies. The captive assumes risk directly and cedes risk as necessary, into the reinsurance markets. On a year-to-year basis premium writings and assumption of risk can vary widely depending on the various capital improvement and new project initiatives of the agencies. We understand the Owner Controlled Insurance Program ("OCIP") is an on-going group structure designed to cover agency project liabilities across the various agencies such as NYCT / Paratransit, LIRR/MNCR and the CCC. The broad array of risk written by the FMTAC includes:
+[p085_c0010]
+
+```text
+Insurance Program Limits Aggregate / Reinsurance Property (Incl. EQ, flood, wind, extra expense, business interruption and storm surge) Property $500M x/s above $25M p/o deductible. Excess Storm surge layer of $100M through a CAT bond $75M aggregate retention Reinsurers assume beyond FMTAC retained layers. Metrocat Re
+```
+[p085_c0011] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p085_c0012] _Amethyst Confidential_
+[p085_c0013] _Page 2 of 23_
+
+## Page 86
+
+[p086_c0001]
+
+```text
+Insurance Program Limits Aggregate / Reinsurance Terrorism – TRIPRA Certified Acts $1.075Bn property policy. First layer excess of $25M p/o deductible, FMTAC up to $75M aggregate Various US, London and EU reinsurance carriers US Treasury 80% of certified acts above industry $200M aggregate Excess Loss Fund – ELF (Prospective and Retrospective coverage) $50M limits subject to available transferred ELF funds. ELF attaches over above historical (retrospective to 10/31/03) coverage excess of agency SIR's. Stations & Force Liability LIRR and MCR Primary $11M p/o No aggregate All-Agency Property (AAPL) Primary $2M p/o independent contractor liability on capital and non-capital projects. First $9M x/s of $2m No aggregate $18M annual aggregate Paratransit (NYCT) Automobile liability - $3M SIR reimbursement policy None Non-Revenue Direct- $9M excess of $1M p/o (Agency SIR) for the non-revenue automobile fleet. Reinsurance Assumed from Travelers – 100% of Automobile ALAE Owner-Controlled Insurance Program(s) Group basis at varying levels over many years. Company provides the collateral required by the OCIP insurers to cover deductible amounts primarily for General Liability and Workers Compensation losses. Rolling OCIPs are extensive for various capital projects and carriers over many years including (2000-2004), (05-2009), 2 nd Ave Subway (2007), East Side Access, ESA X/S G/L, NYCT (05-2009). Also, various MTA Combined Capital Construction projects (12-2014), (15-2019), (21-2025 Bridge), LIRR 3 rd Track, (22-2024 Mini RFP w/ Ace), (22-2024 Mini RFP Liberty). None, OCIP's are primarily focused on primary retained and 1 st excess coverage layers and in combination with FMTAC structure used to hold carrier collateral and MTA funding. Builder's Risk Varying limit levels for multiple projects since 2001. Varying limits for multiple projects since 2001. Reinsurance purchased with w/ Zurich, Ace,
+```
+[p086_c0002] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p086_c0003] _Amethyst Confidential_
+[p086_c0004] _Page 3 of 23_
+
+## Page 87
+
+[p087_c0001] The FMTAC balance sheet and risk assumption transactions over the captives lifecycle reveal the significant scope and scale of the MTA insured entities. Programs renew on annual and multi-year basis reflecting the long-term nature of many of the underlying insured projects. The insurance market (risk transfer) and captive risk program (retained risk) requires a high degree of logistical planning and structuring to ensure a well-coordinated risk management and risk finance response. The FMTAC captive structure is an excellent tool to assist the risk management, brokerage resources, finance and legal efforts associated with large scale risks and attendant claims / losses.
+[p087_c0002] The MTA-owned captive appears to drive out cost inefficiencies and position the organization to transparently engage the various interested stakeholders (MTA Board, affiliate organizations, subcontractors, government constituencies, participating insurance and reinsurance carriers and others) that MTA is obligated to ensure world-class risk management and insurance coverage is secure and operational. The captive provides an efficient vehicle to evidence on-going coverages and represents a centralized solution to collect, disseminate and report insurance and risk program data in meaningful way that promotes Board and Officer decision making.
+[p087_c0003] The FMTAC is a key finance structure playing a significant role in covering MTA's property and liability risks including major capital and non-capital projects, monitoring underwriting performance, controlling operating costs, meeting regulatory compliance, performing on-going risk and loss mitigation procedures, identifying alternative risk transfer options available in the marketplace and finally demonstrating a strong commitment to governance of the MTA risk management function. The FMTAC ensures MTA has strategically funded coverage to pay claims in an efficient and effective manner, well into the future.
+[p087_c0004] The Amethyst team understands the opportunities and challenges of maintaining, growing, and improving pure captive insurance programs, and responding to the evolving needs of the group. We understand the balance between charging sufficient rates and offering favorable terms and the economic realities and financial constraints facing the insured/owner(s).
+[p087_c0005] Just as MTA risk and finance operations must adapt and respond to the changing needs of the NYC and Long Island communities it serves including the regulatory authorities that monitor delivery of safe; compliant transit services so to must the captive respond and adapt to the changing dynamics of regulatory, accounting, and insurance market operating standards.
+[p087_c0006] Communicating timely and providing accurate financial, policy and regulatory information are paramount for management and Board decision making. Amethyst team members have a significant working history working with managing captive insurance companies owned by large risk management organizations and we believe Amethyst is an excellent fit to meet FMTAC management needs and to ensure a seamless and highly coordinated captive management service.
+[p087_c0007] Amethyst proposes a seamless accessible real-time data operation for both the internal and external resource service team members. We use a highly secure web-based file sharing system combined with reporting and compliance tools designed/tailored according to each captive's needs.
+[p087_c0008] Based on our review of the limited program information contained in the Request for RFP we believe Amethyst would immediately add value to the captive operations. A captive insurance manager/partner should demonstrate the following essential characteristics:
+- [p087_c0009] ✓ Possess and maintain depth of industry and technical knowledge to recommend and adapt to on-going structural design change and planning considerations;
+[p087_c0010] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p087_c0011] _Amethyst Confidential_
+[p087_c0012] _Page 4 of 23_
+
+## Page 88
+
+- [p088_c0001] ✓ Consistently deliver professional resources, expertise and information systems to meet tight regulatory and management reporting deadlines with timely, accurate, financial and management data developed within a quality/compliance framework; ✓ Maintain data and perform analysis specifically designed for the Policyholders, MTA management and FMTAC vendor partners (Alliant Insurance Services, Deloitte, and others); ✓ Manage with a team-based orientation to address the on-going needs of MTA, FMTAC Board Members & Officers, and the Regulatory authorities (NY DFS, et al); ✓ Perform at a level expected of a first-class manager including a) senior management involvement; b) a firm culture that promotes and rewards quality; c) a formal review and internal control environment that puts FMTAC in the center of firm decision making.
+[p088_c0002] Amethyst started operations as an independent manager in 2011. The professional team is comprised of industry veterans with (170+) years of experience assessing, developing, and performing captive services. Our vision is focused squarely on client needs. We are unencumbered by corporate overhead with no outside owner interests.
+[p088_c0003] The Broad Amethyst Team: biographical and detailed background information is available at www.amethystcaptive.com/about .
+### [p088_c0004] Client Centered Firm Culture
+[p088_c0005] Amethyst client-centered services are in demand. FMTAC and the MTA team are model risk management organizations with characteristics similar to our tenured and highly developed clients. MTA requires a platform that produces best-in-class commercial outcomes, and we think you will appreciate Amethyst's track-record and enthusiastic commitment to quality.
+### [p088_c0006] Captives Under Management
+[p088_c0007]
+
+```text
+Amethyst Group Statistics Premiums Assets Capital Captives Under Management $1Bn+ $3.7Bn $2Bn+
+```
+[p088_c0008] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p088_c0009] _Amethyst Confidential_
+[p088_c0010] _Page 5 of 23_
+
+## Page 89
+
+### [p089_c0001] FMTC Management Team (four associates PLUS regulatory compliance manager)
+[p089_c0002] The proposed captive management team will roll onto the programs over a three (3) phase period. Phase 1: Transition, Phase 2: Year-End 2024 and On-Going Services and Phase 3: Re-visiting status quo on an on-going basis
+[p089_c0003] James (Jim) Girardin has overall responsibility for service delivery and also serves as a Sr. Account Executive providing compliance review, report preparation, review and analysis, CRL, Board and vendor communications including strategic planning and will serve present and attend MTA Director, planning and operations meetings, as requested. James will lead new program development and implementation efforts with MTA management and the NY DFS, as required.
+[p089_c0004] Tara Smith will serve as Sr. Account Executive leading the detailed transition and set-up services, compliance and quality review and shadowing account management responsibilities. Tara will have on-going account executive responsibilities supporting communications with the MTA team and outside expert vendors (legal, accounting, actuarial, brokerage, investment, audit, tax, and others) Tara can serve to present to management and the Board, as required.
+[p089_c0005] Kevin Cote (Sr. Account Executive) leading the on-going account management responsibilities including report preparation and analysis. Kevin will have on-going Sr. account executive responsibilities supporting communications with the MTA and review of Amethyst team members and outside expert vendors (legal, accounting, actuarial, brokerage, investment, audit, tax, and others) Kevin can serve to present to management and the Board, as required.
+[p089_c0006] Tanh Mears (Primary Sr. Account Management) will provide detailed account management services including accounting, reporting, regulatory and meeting preparation services. The senior team will support the account executive and managers.
+[p089_c0007] Leslie Fleming, Accounts Payable & Regulatory Compliance Manager , providing review and administrative compliance support (refer to INTERNAL CONTROL PROTOCOLS in the Quality Assurance Edge section of the FMTC Exhibit Pack ). Qualified Amethyst staff members perform reviews and internal control procedures, in a manner that achieves segregation of duties across cash, regulatory and financial review & reconciliations.
+[p089_c0008] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p089_c0009] _Amethyst Confidential_
+[p089_c0010] _Page 6 of 23_
+
+## Page 90
+
+### [p090_c0001] Value Services
+### [p090_c0002] Systems, Controls & Reporting Tools
+[p090_c0003] The Amethyst QAE is an overarching internal control system designed in conjunction with baseline recommendations provided by Johnson Lambert & Co., a recognized quality leader in the U.S. insurance industry. Each client's internal control processes/structure is further tailored to their own unique operations. Data security and client asset security is an integral component of the Amethyst Quality Assurance Edge™ a sample QAE matrix is included in the Quality Assurance section of the FMTC Exhibit Pack .
+[p090_c0004] Amethyst's investment in ledger, subscription and management, end-to-end cyber security systems emphasize data security, compliance, quality assurance and value-added features. The FMTC Exhibit Pack contains documents highlighting the accounting and financial management system reports.
+[p090_c0005] We develop financial statements and system reports tailored to contain FMTC's agreed analytics, key ratios, budgets, variance analysis, as requested. Amethyst places great emphasis on analytical tools to keep clients informed for decision making.
+[p090_c0006] Underwriting performance reports are designed to provide both i) historical and ii) pro-forma predictive value. Historical underwriting reports support audit and contract assurance while projections provide management with pro-forma predictive value to minimize surprises and enhance decision making. Projecting accurate underwriting results requires third party administrator loss data, and actuarially determined development and claim payout factors.
+[p090_c0007] Upon request, Amethyst can develop a unique client login area through our website at www.amethystcaptive.com . An MTA shared area can be used to share and store sensitive data such as financial reports, contracts, and Board reports housed in a highly secure hosted system OR simply use the Sharefile system for report transmissions.
+### [p090_c0008] Consulting and Value Added Through Technology, Analytics and Staff Experience
+[p090_c0009] FMTC surplus has been built since 1997. Our fiduciary role requires constant vigilance and transparency in monitoring surplus strength relative to the company's evolving coverage and risk profile. Amethyst emphasizes measuring and tracking the risk-based capital profile of the captive, and our service platform is developed to put early-warning strategic reporting front-and-center. Various projection tool(s) include i) financial (P&L impact) ii) economic (cash flow) and iii) regulatory requirement trend lines.
+[p090_c0010] Sample Executive Summary Analysis –Not actual FMTC data
+[p090_c0011]
+
+```text
+Policy Year REPORTED ACTUARIAL TREND Inc Paid Case Inc Paid Case Profit (Loss) Cash Flow Pos (Neg) Reserve Fav (Unfav) 05/06 31,727 29,381 2,347 29,946 26,337 3,609 (1,781) (3,044) 1,262 06/07 14,006 13,510 495 16,056 14,252 1,804 2,050 742 1,309 07/08 13,112 12,345 767 19,722 17,614 2,108 6,610 5,269 1,341 08/09 13,521 11,494 2,027 17,261 14,419 2,842 3,740 2,925 815 09/10 13,521 11,494 2,027 17,261 14,419 2,842 3,740 2,925 815 10/11 10,335 7,542 2,794 12,489 6,438 6,051 2,154 (1,104) 3,257 11/12 98,292 85,605 12,687 114,530 89,890 24,639 16,238 4,285 11,952
+```
+[p090_c0012] Reports can be provided to FMTC by various electronic mediums including e-mail and a secure client login Sharefile area.
+[p090_c0013] Based on the $4.3 million favorable cash flow trend, the Company should consider either: 1. Releasing a cash dividend, as suggested in above equity 2. Redirect cash to the investment portfolio
+[p090_c0014] _September 20, 2024_
+[p090_c0015] _Page 7 of 23_
+
+## Page 91
+
+[p091_c0001] Front-end solutions to detect fluctuation include tightly managed actuarial ratemaking; and more detailed breakdowns of risk exposures to the underlying demographic of the risks. Correlating premium funding to loss development is the constant imperative to improve predictability. Other logical exposure base breakdowns may be geographic, county, tort reform jurisdictions, private vs. public and so forth. As risk management organizations grow, they tend to increase self-insured risk levels through varying combinations of increased exposures, retained per-occurrence limits, increased retained aggregate losses, risk adjusted premium charges (rating plans), changes in excess and/or reinsurance protection purchased.
+[p091_c0002] As actual claims settle and adjust, projected actuarial losses change and impact potential volatility in the financial results, this is not unique to FMTAC. One might observe that FMTAC underwriting has achieved a great degree of stability which is further supported by the latest assumption of risk on primary excess layers on the AAPL and Non-revenue fleet liability programs.
+[p091_c0003] Underwriting performance reporting tools incorporate actuarial incurred loss and paid loss development factors embedded into the regular work-paper reporting processes. Periodically, factors are updated as the actuary completes the annual or semi-annual analysis. This approach enhances the predictive value of FMTAC data by comparing actual to actuarial projections. Large loss reserve composition helps isolate developing trends in large claims.
+[p091_c0004] _COMBINED RATIO COMPONENTS – YTD 12/31/2011 (omits impact of net investment income)_
+> [p091_c0005] Component Percentage Accident Year (excl large claims) 69.9% Large Claims 12.3% PY Incurred Movement 21.7% Operating Expenses 8.7% Calendar Year 69.3%
+[p091_c0006] _RESERVE ANALYSIS: with large loss breakout $(omit 000)_
+> [p091_c0007] Category Value ($000) Percentage IBNR 28,877 67% Case 14,126 33% Claims < 100k - 27% Claims 100k - 250k - 4% Claims > 250k - 2%
+[p091_c0008] _Sample Executive Summary – Not actual FMTAC program data_
+[p091_c0009] FMTAC will assess its risk profiles in an on-going strategic manner. Risk transfer through reinsurance is one financial tool to control capital exposure to volatility of incurred losses. FMTAC builds and deploys capital in response to the broad MTA operational profile. While short-term cash resources may get strained on occasion the captive has developed into a relevant and responsive structure for the future risk finance needs of the MTA and strategic affiliates.
+### [p091_c0010] Financial System, Executive Reporting Dashboards and Leading Indicators
+[p091_c0011] Executive & program Summary Reports are created according to FMTAC needs and can include any data the client requires. Reports might be developed to view:
+- [p091_c0012] ✓ Financial reports (balance sheets, income statements, cash flows, subscriber reports). ✓ Underwriting Performance & Corporate Compliance reports (w/ audit support) ✓ Policy year analysis of actual vs. actuarial expected incurred and paid LOSSES and LAE
+[p091_c0013] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p091_c0014] _Amethyst Confidential_
+[p091_c0015] _Page 8 of 23_
+
+## Page 92
+
+### [p092_c0001] Sample Executive Summary Exhibits – Not actual FMTAC data
+### [p092_c0002] UNDERWRITING PROFIT LOSS: includes IBNR
+[p092_c0003] $(omit 000)
+> [p092_c0004] Period Loss Profit Ultimate 05/06 -4,500 33,000 06/07 6,079 18,048 07/08 13,124 16,093 08/09 9,425 18,320 09/10 2,662 19,545 10/11 -748 20,498 11/12 9,800
+### [p092_c0005] EQUITY & SURPLUS REVIEW:
+> [p092_c0006] Period Statutory Min Reserve to Surplus Min Dividend Potential 2Q 2012 5,000 13,309 5,981 2011 5,000 10,362 6,337 2010 5,000 13,352 4,445
+### [p092_c0007] Off-site data protection and disaster recovery preparedness.
+[p092_c0008] Amethyst operates in a secure cloud (MS Azure and US Signal) environment with 4-hour data backup. All data is sequentially backed up offsite. In the event of a catastrophe our offsite disaster recovery plan is designed to be data accessible within 24 hours; moderately operational within 48 hours and fully operational within 72 hours. E-mail and phone service capability is immediate.
+[p092_c0009] Amethyst uses a full-time professional IT support firm. Rose Computer Technology Services are fully integrated into Amethyst IT; cybersecurity processes and support all areas of the IT platform. Please refer to the systems cyber security posture memo describing support, security and server environment contained in the FMTAC Exhibit Pack .
+[p092_c0010] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p092_c0011] _Amethyst Confidential_
+[p092_c0012] _Page 9 of 23_
+
+## Page 93
+
+### [p093_c0001] FAQ's
+- [p093_c0002] 1. Firm experience with captives providing comparable coverage. 2. Amethyst ability to ensure all work is done in compliance with applicable federal, state and other regulatory provisions.
+[p093_c0003] Amethyst staff currently manages a broad array of captives financial and regulatory reporting for national and international owners. Certain large captives under management write integrated risk programs in excess of twenty lines of coverage. One of our New York mega-captives writes nearly the same annual volume of premium and a balance sheet equivalent to FMTAC.
+[p093_c0004] Of note, Amethyst leadership was directly involved in the formation and on-going management of FMTAC in its first ten years of operation. We have a working history and knowledge of MTA, FMTAC operating structure and managing FMTAC and other captive licensed by NY DFS.
+[p093_c0005] We are in the midst of leading / conducting feasibility studies for multiple large public and private companies with revenues in excess $1Bn+ revenue. Over their careers, the Amethyst team has extensive experience developing, forming, and managing many captive insurance structures spread over a broad array of industry sectors.
+[p093_c0006] Amethyst manages captive insurance companies domiciled in DC, HI, NJ, NY, NV, TN and VT with further authorizations to manage in AZ, DE and UT. Regulatory compliance and proper communications with the authorities are essential skills developed by staff over their careers. The Amethyst QAE incorporates process and procedures tailored to meet FMTAC needs. We prepare and provide the QAE Compliance Report on a regular basis for Board inspection and update.
+### [p093_c0007] 3. Team & Tenure
+[p093_c0008] Tara Smith (BS Accounting, Economics minor) , Principal, Chief Operating Officer and Sr. Account Executive. Since 2003, Tara has served clients varying in capacity from primary client manager to account executive to Board member for a broad array of captives including DC and Non-DC based pure and group captives. Tara was a staff auditor with KPMG before entering the captive industry in 2005 with Willis until resigning in 2011 to start Amethyst. Tara is a recognized captive management quality leader with a reputation for technical excellence without equal among her peers in the captive industry.
+[p093_c0009] James (Jim) Girardin (BS Accounting, concentration in math and computer science, CPA-inactive) , Principal, Managing Director works alongside FMTAC/MTA management providing senior oversight and works closely with the service team. Jim and Tara are co-founding Amethyst principals. Both were practice leaders at Willis, developing and managing captive operations and client quality processes at the national and international level. Both were senior new formation / feasibility study resources. Jim co-founded and led Willis North American and Caribbean captive operations from 1992 through 2010. In 1988 Jim started his career as a CPA with EY and KPMG in assurance services and as a senior tax resource.
+[p093_c0010] Kevin Coté, CPA Joined Amethyst in 2025. Previously, Kevin was a VP at Brown & Brown, Inc for almost 17 years with experience in multiple U.S. and Foreign domiciles, many different industries, and variety of captive insurance company structures. He started in the non-profit sector then entered the captive industry as an auditor with Johnson Lambert, LLP in 2004. Kevin and the
+[p093_c0011] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p093_c0012] _Amethyst Confidential_
+[p093_c0013] _Page 10 of 23_
+
+## Page 94
+
+[p094_c0001] team provide captive insurance company Board, feasibility consulting, formation and management services for Fortune 500-1,000 companies, privately held, non-profit, risk retention groups, and cell companies. Industry experiences vary widely including construction and government agencies. Kevin earned his Certified Public Accountant in 2006, which is currently active in VT. He received a B.S. degree in Accounting. Kevin will work closely with Tanh and the team to provide financial and insurance company services to FMTAC.
+[p094_c0002] Tanh Mears (Account Executive, BS Accounting) joined Amethyst in 2022 and has been managing captives since 2001. Previously, Tanh worked with a national broker's captive management division earning a reputation for excellence. Tanh will perform and oversee FMTAC account management services including accounting, reporting, regulatory and meeting preparation services. The senior team will support Tanh.
+[p094_c0003] Leslie Fleming (Captive Regulatory Compliance Manager) joined Amethyst in 2019. Leslie has eighteen (18+) years of captive management experience having previously worked as a captive manager with a major carrier and a national broker. Leslie provides regulatory compliance preparation, review and administrative compliance support. She reviews and recommends internal control procedures performed by qualified Amethyst staff members, in a manner that achieves segregation of duties across cash, regulatory financial review & various account reconciliations.
+### [p094_c0004] Amethyst Vision
+[p094_c0005] Since inception in 2011, Amethyst Captive Insurance Solutions is a high-quality captive insurance management and consulting firm with a national focus. Our team is comprised of recognized quality leaders in the captive industry.
+[p094_c0006] Amethyst emphasizes forging long term strategic partnerships focused squarely on client needs. We recruit and train talented professionals that share Amethyst's passion to deliver exceptional client service in an open, collaborative environment.
+[p094_c0007] Our staff understands how their roles impact business performance. Amethyst is a great place to work for professionals who want to excel and be part of a firm that makes a difference in their community and the industry.
+[p094_c0008] As a closely held independent company, the firm principal's long term strategic plans include expansion of employee ownership and profit sharing to further instill the culture of a firm managed by its employee/owners focused on client services first.
+### [p094_c0009] 4. Processes and Controls to prevent Errors and Omissions
+[p094_c0010] Within this document we have described the Amethyst QAE, an overarching internal control system developed in conjunction with baseline recommendations provided by Johnson Lambert & Co. Each client's internal control processes/structure is further tailored to their own unique operations. Data security and client asset security is an integral component of the Amethyst Quality Assurance Edge™ a sample QAE matrix is included in the Quality Assurance section of the FMTAC Exhibit Pack .
+[p094_c0011] As part of the Amethyst QAE™ the enclosed FMTAC Exhibit Pack contains specific cash and accounts payable protocols and procedures.
+[p094_c0012] Cash protocols are designed to properly segregate duties; physically safeguard client check stock; and zero tolerance for exceptions, unless documented and approved at the highest
+[p094_c0013] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p094_c0014] _Amethyst Confidential_
+[p094_c0015] _Page 11 of 23_
+
+## Page 95
+
+[p095_c0001] authorization in the process. No vendors are paid that are not on the approved vendor list, the client ultimately approves all drafts and transfers, via signature or through wire transfer procedures. In essence, procedures are designed to provide three sets of eyes on all cash and banking related activities, including reconciliations being performed by non-primary account managers.
+[p095_c0002] Amethyst has adopted a formal Code of Ethics and Fraud Policy which must be accepted and executed as a condition of employment. Executed copies of our employee policy statements are available upon request.
+### [p095_c0003] 5. Amethyst distinguishing characteristics
+[p095_c0004] The firm is dedicated to producing high quality client-centered work products and services.
+[p095_c0005] Amethyst was conceived to provide an industry alternative to 'get-back' to quality captive services delivered by professionals passionate about client success. We are dedicated to providing relevant and useful information for captive Board members and key stakeholder decision makers. (The Exhibit Pack is just a sample of what we are doing for client captive owners)
+[p095_c0006] We believe Amethyst is the key to the services /solutions needed by MTA. Our team serves a two-fold role as both strategic adviser AND serving as a critical cog in the risk finance function. Our service fulfills a critical and required regulatory need. We do not just supplement MTA management, if we do our jobs correctly our team members become a valued member of the MTA management team.
+[p095_c0007] The core staff assigned to FMTAC are seasoned veterans with extensive experience and impeccable professional reputations. They each joined Amethyst from other captive insurance management operations where client processes were often secondary to their employers own priorities. Where scarcity of resources overshadowed and overtook the importance of fostering a culture of creativity and individual accomplishment in a team-based setting. Our team approach to management embraces an overlap of duties so FMTAC and MTA management can call any of your assigned team members and expect a quick turnaround for your query or request.
+[p095_c0008] Our employees are risk takers in the best professional sense. They joined Amethyst with a long-term growth outlook and a passion to build a better place to work that is focused on client needs first.
+[p095_c0009] Giving back to the community and the industry is integral to our firm Mission. As our business has grown so has the significance of time and $funds donated.
+[p095_c0010] The firm Principals developed Amethyst, partially with these staff and community support goals in mind:
+- [p095_c0011] 1 - Build a stable and respectful work culture for staff to provide for their families a caring atmosphere that rewards loyalty and creativity and balances work with life priorities. 2 – Amethyst is, in no small part, a portal to create the means to give back to the local community. Our giving profile has steadily grown as the firm and needs of the community have grown especially in the areas of addiction recovery, veterans PTSD, children's healthcare, homelessness and food insecurity.
+[p095_c0012] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p095_c0013] _Amethyst Confidential_
+[p095_c0014] _Page 12 of 23_
+
+## Page 96
+
+[p096_c0001] Amethyst is independent and works with all appointed external actuarial, legal, investment, third-party administrators, insurance brokers, and audit service providers.
+[p096_c0002] Referring to the client list ( Section IV ) you will note we work alongside many of the major, regional and specialty US brokers. For many client engagements the client and broker is seeking a segregation of the brokerage and captive management function.
+[p096_c0003] As an independent manager, FMTAC can rest assured our staff is not conflicted in its duty to the captive and the Board. Our relationships with service providers are managed to ensure we avoid conflicts of interest real or perceived.
+[p096_c0004] A professionally managed captive requires the coordination and smooth functioning of a myriad of various key functional areas. Sometimes Amethyst is the quarterback and other times the captive organization has its own quarterback (like MTA management). Teamwork is the key and Amethyst is comfortable coordinating and communicating and operating with all levels of management of the service provider panel. We regularly communicate at every level of client vendor staff from administrative matters through to executive leadership, for each client.
+[p096_c0005] Working and communicating with outside auditors, legal, claims, portfolio management and regulators is viewed as an opportunity (with every encounter) to become a more valued business adviser to FMTAC.
+[p096_c0006] Staying current is about being proactive for regulatory and business developments.
+### [p096_c0007] Industry Involvement and Continuing Professional Education
+[p096_c0008] Providing 'State of Affairs' is written into Addendum Services of our Management Agreement. Keeping FMTAC informed of changes in regulatory, accounting and industry matters is a vitally important service for all of our clients. Our investment in systems and professional subscription services ensures your management team is up to date on important developments requiring attention. Legal counsel or the accounting firms will often identify pressing issues that rise up in priority and other times we will take the lead to inform and advise on regulatory matters bubbling up and likely to impact the captive.
+[p096_c0009] Amethyst Principals led the captive evaluation and analysis efforts of their former firm(s). We incorporate technical analysis as necessary to help FMTAC arrive at informed decisions with relevant and useful situational analysis.
+[p096_c0010] Amethyst staff members are active member participants of the VCIA which is the pre-eminent captive industry trade association in the U.S. This involvement creates awareness of trends and developments by virtue of the constant networking with industry professionals/leaders of the various facets of the captive industry. Over the last five years staff members have served on Legislative, Conference, Strategic, Membership and Content Advisory Committees. Since 1990 staff members have Chaired Conference, Finance, Strategic Planning and various ad-hoc industry committees.
+[p096_c0011] More recently our staff members have coordinated and moderated education sessions on topics including Captive Risk Optimization, Governance, Captive Best Practices and Internal Controls, Own Risk Solvency Assessments, Captive Taxation, Captive Enterprise Risks for Large Risk Management Organizations, Top Ten Global Risks, Risk Retention Group Best Practices, Risk Management Leadership, Employee Benefits in Captives among many others. The firm actively seeks continuing education opportunities through various sources including webinars, live presentations by audit and legal firms within and outside our offices, regular annual conference
+[p096_c0012] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p096_c0013] _Amethyst Confidential_
+[p096_c0014] _Page 13 of 23_
+
+## Page 97
+
+[p097_c0001] education attendance, industry trade and news subscriptions, IRMI online risk financing publications and membership in industry trade groups, primarily resulting in continuous e-mail updates and newsworthy developments. The firms licensed CPAs must adhere to state licensing continuing education requirements and a substantial portion of CPE is captive based training.
+### [p097_c0002] National Industry and Educational Partnering Activities
+[p097_c0003] We have worked through enterprise risk and special purpose captive concepts and products for the life and Special Purpose Financial Captive industry with the Big 4 firms. Amethyst Principals have engaged in various insurance practice leader discussions and education formats for McGladrey, Oceanus Partners, SIGMA Actuarial, Canada RIMS, III, CICA, VCIA, among others.
+### [p097_c0004] 6. Client References, Retention Rate and Captives under management
+[p097_c0005] Client References in addition to the list in Appendix A are available upon request. The firm has enjoyed a 100% client retention rate since inception in July 2011. (13+ years)
+### [p097_c0006] 7. Describe any litigation or regulatory action(s) filed against your firm and the resolution thereof.
+[p097_c0007] The firm has had NO litigation, NO threatened litigation and NO regulatory actions since inception.
+### [p097_c0008] 8. Fee Proposal Transition Period and 2025-2029
+[p097_c0009] Refer to Section VII for fee discussion.
+### [p097_c0010] 9. Proposed Management Agreement
+[p097_c0011] Refer to Exhibit Pack for sample. A tailored agreement will be provided upon request
+### [p097_c0012] 10. Detail the following:
+- [p097_c0013] • IT - Financial Reporting – Refer to Section (V) of this document and the FMTAC Exhibit Pack Base, Edge, and QAE Sections • IT - Governance, Delivery & Support – Refer to FMTAC Exhibit Pack Quality Assurance Edge Memo and Rose IT Systems Support Description . • Describe Safeguards in place to protect information and physical assets – Refer to FMTAC Exhibit Pack – RoseCTS IT Cyber Security and Systems Posture • Describe Disaster Recovery Procedures (BCM, BCP)– Refer to FMTAC Exhibit Pack – Rose IT Systems Support Description
+[p097_c0014] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p097_c0015] _Amethyst Confidential_
+[p097_c0016] _Page 14 of 23_
+
+## Page 98
+
+### [p098_c0001] Proposed Fees
+### [p098_c0002] Proposed Fees – “Partial” Management (Review and Regulatory Compliance Services)
+[p098_c0003] Based on our knowledge of the FMTAC program and expected scope of management services we propose the following fee schedule presented below to conform with Exhibit A Compensation section the proposed Subcontractor Agreement :
+### [p098_c0004] FEE SCHEDULE
+[p098_c0005]
+
+```text
+Year Category/Role Estimated Hours (per annum) (1) Blended Rate (hourly) (2) Extended Price (annual fee) Transition Services 10/15-12/31/24 Captive Implementation Services (Transition work performed by Amethyst officers @ $200 / hr.) 250 $140 (30% discount applied) $35,000 2025 Captive Management Services 1,100 $155 $170,000 2026 Captive Management Services 1,050 $162 $170,000 2027 Captive Management Services 1,100 $155 $170,000 2028 Captive Management Services 1,150 $148 $170,000 2029 Captive Management Services 1,200 $142 $170,000 (Optional) 6 Captive Management Services TBD TBD (Optional) 7 Captive Management Services TBD TBD Exam Year Fee Exam year Services – Flat Fee (discounted) 100 N/A Included
+```
+[p098_c0006] In addition, subject to its prior written approval of the same, Alliant shall reimburse Amethyst for the amount of any out-of-pocket costs or expenses (including but not limited to Clearwater Analytical Services, travel, third party vendors, storage, company-specific software / subscriptions, and other costs directly incurred by the captive. Staff direct travel costs (airfare, rental, and hotel) reasonably incurred by Amethyst in providing the Scope of Services. Amethyst billings are prepared quarterly in advance, including prior quarter cost reimbursements.
+[p098_c0007] Amethyst suggests quarterly billings will yield greater efficiency than the proposed 45-day suggestion for cost reimbursements.
+[p098_c0008] The fees schedule above shall be paid by Alliant to Amethyst quarterly in advance.
+- [p098_c0009] (1) Year two and year three time efficiencies are expected while years four and five reflect on-going program changes/growth and attendant management time required. (2) Blended hourly rate fluctuates based on our offering a fixed annual flat fee of $170,000 over the five-year duration. If Amethyst is selected as FMTAC's captive manager we are willing to discuss alternative compensation structures that all parties are mutually agreeable.
+[p098_c0010] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p098_c0011] _Amethyst Confidential_
+[p098_c0012] _Page 15 of 23_
+
+## Page 99
+
+### [p099_c0001] FMTCAC Exhibit Pack
+[p099_c0002] Accompanying this proposal document, in a separate is an extensive document package prepared especially for FMTCAC. Our primary goal is to demonstrate possible reports and pay attention to detail you should expect from Amethyst. We are eager to review them with you to tailor to FMTCAC's management needs.
+[p099_c0003] Vermont Application Checklist – Draft document summarizing the key steps we believe are necessary to successfully transfer services from your existing manager to Amethyst.
+### [p099_c0004] THE BASE
+[p099_c0005] Program Summary & Captive Planner – Program highlights in digital format hot linked to internal and external team members. The Planner summarizes key internal and external filing, planning, and reporting deadlines. Documents updated periodically for program changes.
+[p099_c0006] QAE Compliance Report – Five-year summary (or since last exam) of the status of documents and filings required for Regulatory and Corporate compliance.
+[p099_c0007] Financial Report – Within our accounting and service templates we embed key review and compliance tools to ensure quality, accuracy, and adherence to a Quality Assurance service platform. Which might include variance analysis, budgeting versus actual, ratio analysis dynamically linked to pre-established Key Performance Indicators (KPI's)
+### [p099_c0008] THE EDGE
+[p099_c0009] Executive Summary – This is a sample board/ Board/management report discussing program, operational highlights, and recommendations with charts, exhibits and tables, as necessary.
+[p099_c0010] Budgeting, Key Performance Indicators, Swing Rated Schedules, UW Summaries – Various key analytical tools.
+[p099_c0011] Financial Management System – Amethyst accounting and financial management system. CYMA Accounting is a proven GL system containing robust features, secure data encryption on all portable systems, dynamically linked and integrated with our Excel-based work-paper packages for audit support (key feature for internal and external auditors, as well as DC regulators), login to ShareFile for authorized FMTCAC staff and/or finance interactive capabilities.
+### [p099_c0012] QUALITY ASSURANCE
+[p099_c0013] Amethyst Quality Assurance Edge ("QAE") Framework – A centerpiece of the Amethyst quality service philosophy, the QAE combines controls with Quality and Service standards.
+[p099_c0014] Systems Security and Integrity Memo – Full time professional outsourced IT with 24/7 support, continuous data backup, client data security and disaster recovery turnaround times.
+[p099_c0015] QAE Procedures Matrix – Broad compliance and control structure framework. The control structure is modeled around the natural operating cycles of an insurance company (Premium, Claim & Loss, Investments & Treasury, and Finance & Administration).
+[p099_c0016] Cash Protocols – specifically highlights the controls surrounding the AP, AR, and Cash procedures if Amethyst is responsible for payments and cash receipts activities.
+[p099_c0017] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p099_c0018] _Amethyst Confidential_
+[p099_c0019] _Page 16 of 23_
+
+## Page 100
+
+### [p100_c0001] – Detailed Management Services Response Matrix
+[p100_c0002] Separate Document Provided in Submission
+[p100_c0003] _Response to RFP - MTA Captive Ins. Mgmt. September 20, 2024_
+[p100_c0004] _Amethyst Confidential_
+[p100_c0005] _Page 17 of 23_
+
+## Page 101
+
+> [p101_c0001] The logo for Oliver Wyman, featuring a stylized blue icon to the left of the company name "Oliver Wyman" in a bold, blue, sans-serif font.
+### [p101_c0002] Oliver Wyman Actuarial Consulting, Inc.
+[p101_c0003] Oliver Wyman Actuarial Consulting, Inc. is part of the Oliver Wyman Group, a $3.1 billion independent (legally and operationally) business unit of Marsh McLennan. Oliver Wyman Group has over 7,000 employees in more than 75 cities across over 30 countries. Marsh McLennan is a global professional services firm with annual revenue over $22.7 billion, and is composed of four principal firms:
+- [p101_c0004] • Oliver Wyman Group (financial and insurance consulting) • Marsh (risk and brokerage services firm) • Mercer (human resource consulting, outsourcing and investment services firm) • Guy Carpenter (reinsurance intermediary)
+[p101_c0005] Oliver Wyman Actuarial Consulting, Inc. employs over 300 credentialed actuaries in our 550+ colleague staff, making it one of the largest actuarial practices in the United States. Over 180 of our credentialed members have earned the designation "Fellow of the Casualty Actuarial Society" or "Fellow of the Society of Actuaries", reflective of the completion of an exhaustive examination process. Oliver Wyman Actuarial Consulting, Inc. specializes in evaluating the long-term financial consequences of property, casualty, life, and health insurance risks.
+[p101_c0006] The Melville, NY office of Oliver Wyman Actuarial Consulting, Inc. provides actuarial consulting services to the MTA and FMTAC. The Melville office employs thirteen individuals, including four Fellows and one Associate of the Casualty Actuarial Society. The project team that serves the MTA and FMTAC includes Steven G. McKinnon, FCAS, MAAA, FCA and James D. Coyle, FCAS, MAAA. Mr. McKinnon and Mr. Coyle are senior members of Oliver Wyman Actuarial Consulting, Inc. and have over 35 years of combined experience in the insurance and risk management industry. Mr. McKinnon is a Senior Principal and manages the Melville office. He is the primary consultant for a large number of clients with New York State workers compensation exposure and has extensive experience with the complexities of dealing with the changing New York State workers compensation environment. Mr. McKinnon has two decades of experience with unique workers compensation exposures, including the Jones Act, FELA, the United States Longshore and Harbor Workers Act, the Federal Black Lung Act, and numerous state jurisdictions.
+[p101_c0007] Mr. McKinnon serves as the primary actuarial consultant to FMTAC, having day-to-day client management responsibilities for all aspects of Oliver Wyman's engagement to provide actuarial consulting services to FMTAC. Mr. Coyle assists with project management and peer review of the actuarial work prepared by Mr. McKinnon for FMTAC.
+[p101_c0008] _Oliver Wyman Actuarial Consulting, Inc._
+
+## Page 102
+
+### [p102_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p102_c0002] New York State Insurance Captive of
+> [p102_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a dark blue circle containing the white letters "MTA". To the right of the circle, the words "Metropolitan", "Transportation", and "Authority" are stacked vertically in a dark blue, sans-serif font.
+### [p102_c0004] T A B
+### [p102_c0005] 8
+### [p102_c0006] FMTAC Cybersecurity Certification: Report to Board of Directors
+
+## Page 103
+
+### [p103_c0001] Management Report to CISO and Board of Directors
+- [p103_c0002] ✓ Certification of Material Compliance filed w NY DFS ✓ Risk Assessment Scoring (Low) And ✓ Third Party Service Provider Review & Assessment
+[p103_c0003] First Mutual Transportation Assurance Company ("FMTAC") 2024
+### [p103_c0004] Prepared For:
+[p103_c0005] Ms. Claudia Reuben, Deputy Chief - Risk and Insurance Management
+[p103_c0006] MTA
+### [p103_c0007] Submitted By:
+[p103_c0008] Amethyst Captive Insurance Solutions, Inc. ("Amethyst")
+[p103_c0009] James Girardin
+[p103_c0010] 126 College Street, Suite 300, Burlington, VT 05401
+[p103_c0011] Direct: (802) 735-1677
+[p103_c0012] _Amethyst CAPTIVE INSURANCE SOLUTIONS_
+
+## Page 104
+
+### [p104_c0001] Ashley Larocque
+[p104_c0002] From: noreply@dfs.ny.gov Sent: Friday, April 11, 2025 3:49 PM To: Ashley Larocque Subject: NYS Department of Financial Services Cybersecurity Certification of Material Compliance Receipt
+[p104_c0003] Ashley LaRocque submitted a Certification of Material Compliance for First Mutual Transportation Assurance Company to the NYS Department of Financial Services. This is the only receipt and confirmation of this submission that you will receive. Please keep a copy of the below receipt number for your records.
+[p104_c0004] Receipt number: C-2025-675545
+[p104_c0005] Covered Entities are required to maintain all documents that support this submission for 5 years pursuant to Section 500.17(b)(3).
+[p104_c0006] For support regarding the submission of your Cybersecurity documents and filings, please contact: CyberRegSupport@dfs.ny.gov
+[p104_c0007] _1_
+
+## Page 105
+
+> [p105_c0001] A screenshot of a web browser displaying the Department of Financial Services (DFS) portal. The browser's address bar shows the URL 'https://portal.dfs.ny.gov/.../cybersecurity'. The page header includes the DFS logo and navigation links for 'Consumer Information', 'Applications & Filings', 'Industry Guidance', 'Reports & Publications', and 'Contact Us'. A 'My Account' and 'Sign Out' button are also visible. The main content area is titled 'Certify Material Compliance' and features a 'Success' message. The message states: 'You have successfully submitted a Certification of Material Compliance for First Mutual Transportation Assurance Company. Record number: C-2025-675545. Claudia C. Reuben and Tariq Habib certify that: (1) First Mutual Transportation Assurance Company qualifies for the following listed exemptions: Section 500.7(a)(2). (2) They have reviewed data and documentation sufficient to accurately determine and demonstrate First Mutual Transportation Assurance Company's material compliance with Part 500 and (3) after such review, they have determined that First Mutual Transportation Assurance Company materially complied with the requirements in Part 500 applicable to First Mutual Transportation Assurance Company during the prior calendar year.' It also lists the signatories (Claudia C. Reuben, Tariq Habib), the submitter (Ashley Larocque), and the date (04/11/2025). A note at the bottom states: 'Please note: Covered Entities are required to maintain all documents that support this submission for 5 years pursuant to Section 500.7(a)(3).' The footer of the page includes links for 'Who We Supervise', 'Institutions That We Supervise', and 'Need technical help with this Portal? Submit a Portal Help Form'. The browser's taskbar at the bottom shows various application icons and a search bar.
+[p105_c0002] From: Jim Girardin <jgirardin@amethystcaptive.com>
+[p105_c0003] Sent: Friday, April 11, 2025 11:02 AM
+[p105_c0004] To: Reuben, Claudia <claudia.reuben@mtahq.org>; Habib, Tariq <Tariq.Habib@mtahq.org>
+[p105_c0005] Cc: Hsu, Tracy <thsu@mtahq.org>; Tara Smith <tsmith@amethystcaptive.com>; Kevin Cote <kcote@amethystcaptive.com>; Ashley Larocque <alarocque@amethystcaptive.com>
+[p105_c0006] Subject: RE: FMTAC Cybersecurity 2024 Certification Steps to NY DFS
+[p105_c0007] _6_
+
+## Page 106
+
+### [p106_c0001] Jim Girardin
+[p106_c0002] From: Ashley Larocque Sent: Friday, April 11, 2025 4:25 PM To: Jim Girardin; Tara Smith Cc: Kevin Cote Subject: RE: FMTAC Cybersecurity 2024 Certification Steps to NY DFS Attachments: NYS Department of Financial Services Cybersecurity Certification of Material Compliance Receipt
+[p106_c0003] Hi Jim, Tara, and Kevin –
+[p106_c0004] I saved each screenshot from the filing so that we know what we did for next year 😊 Also attached is the confirmation it was filed, this is saved at: Final Submission
+[p106_c0005] Claudia, President of FMTAC and Tariq, CISO (Note for next year, change Tariq's phone # to: 646-252-7230)
+[p106_c0006] _1_
+
+## Page 107
+
+[p107_c0001]
+
+```text
+Cybersecurity - Cybersecurity import.dhs.gov/hhs/cybersecurity Department of Financial Services Consumer Information Applications & Filings Industry Guidance Reports & Publications Contact Us DFS Portal My Account Sign Out Cybersecurity Certify Material Compliance Back to Main Menu Find My Entity Find My Entity (Cont.) Signatory Info Submitter Info Certification Other Cyber Contacts Done If you are an Individual Licensee, please choose the second option. The first option is only for Covered Entities that are not individuals and have separate Highest-Ranking Executives and CISOs/Senior Officers. Highest-Ranking Executive and CISO/Senior Officer: Individual Licensee functionally acting as the Highest-Ranking Executive and the Senior Officer responsible for my Cybersecurity Program Highest-Ranking Executive: * CISO, or if there is no CISO, the Senior Officer responsible for the Cybersecurity Program. * Clodia C. Reuber Tariq Habib Title: * Title: * President CISO Email: * Email: * clodia.reuber@mtaq.org Tariq.Habib@mtaq.org Phone Number: * Phone Number: * 212-878-7361 212-878-7500 Back Next
+```
+[p107_c0002] Provided my information as the submitter
+[p107_c0003] _2_
+
+## Page 108
+
+[p108_c0001]
+
+```text
+The screenshot shows the 'Certify Material Compliance' page of the DFS Portal. The page has a dark blue header with the Department of Financial Services logo and navigation links. Below the header, there is a breadcrumb navigation: 'My Apps' > 'Cybersecurity'. The main content area is titled 'Certify Material Compliance' and contains a series of tabs: 'Find My Entity', 'Find My Entity (Cont)', 'Signatory Info', 'Submitter Info', 'Certification', 'Other Cyber Contacts', and 'Done'. The 'Submitter Info' tab is currently selected. A large form box titled 'Enter Submitter Information' contains the following fields: Submitter Name: * (filled with 'Nikity LaRocque') Submitter Title: * (filled with 'Account Executive - Captive') Submitter Phone Number: * (filled with '(802) 735-1692') Submitter Email Address: * (filled with 'nlarocque@adlvit.com') At the bottom of the form, there are 'Back' and 'Next' buttons. The 'Next' button is highlighted in blue.
+```
+[p108_c0002] Only section that we are filing is 500.19(d)
+[p108_c0003] _3_
+
+## Page 109
+
+[p109_c0001]
+
+```text
+Cybersecurity - Cybersecurity myportal.dfs.ny.gov/wet/cybersecurity Amethyst Rayroll Amethyst 401K Amethyst Sheerlie Fed Ex Freedom Voice MSRC Azons (CIO) NEXEN JONW NYS P. Six Online (S... OPTim Cleameter Analytics PWC Connect Portal... TRIA Data Cat (SAML... Sunlink Department of Financial Services Consumer Information Applications & Filings Industry Guidance Reports & Publications Contact Us DFS Portal My account Sign Out My Apps Cybersecurity Certify Material Compliance Back to Main Menu Find My Entity Find My Entity (Config) Signatory Info Submitter Info Certification Other Cyber Contacts Done Claudia C. Reuben and Tang Habib certify that: (1) First Mutual Transportation Assurance Company qualifies as a Class A Company; does not qualify for an exception to Part 500 or as a Class A Company; or qualifies for the following limited exemptions (check all applicable exemption lines) Section 500(f)(1) Section 500(f)(2) Section 500(f)(3) Section 500(f)(4) Section 500(f)(5) When determining whether the Covered Entity qualifies as a Class A Company or for the Section 500(f)(5) exemptions, you must take into account the number of employees, gross annual revenue, and assets of Affiliates. The definition of "Affiliate" is defined very broadly in Section 500(f)(5) to include almost all related companies. (2) they have reviewed data and documentation sufficient to accurately determine and demonstrate First Mutual Transportation Assurance Company's material compliance with Part 500; and (3) after such review, they have determined that First Mutual Transportation Assurance Company materially complied with the requirements in Part 500 applicable to First Mutual Transportation Assurance Company during the prior calendar year. By checking this box, the submitter certifies that they are authorized to submit this Certification on behalf of First Mutual Transportation Assurance Company and the information above is accurate to the best of their knowledge. Back Next City of New York Search
+```
+[p109_c0002] Added Jim and Kevin as others to receive these notifications for FMTAC
+[p109_c0003] _4_
+
+## Page 110
+
+> [p110_c0001] A screenshot of a web browser window showing the 'Certify Material Compliance' page of the Department of Financial Services (DFS) Portal. The browser's address bar shows the URL 'https://portal.dfs.ny.gov/web/cybersecurity'. The page header includes the DFS logo and navigation links for 'Consumer Information', 'Applications & Filings', 'Industry Guidance', 'Reports & Publications', and 'Contact Us'. A 'My Account' and 'Sign Out' button are also visible. The main content area is titled 'Certify Material Compliance' and contains a 'Back to Main Menu' button. Below this is a tabbed menu with 'Find My Entity', 'Find My Entity (Cont)', 'Signatory Info', 'Submitter Info', 'Certification', 'Other Cyber Contacts', and 'Done'. The 'Other Cyber Contacts' tab is active. A text prompt asks for contact information for individuals who should receive cybersecurity communications. A form below this prompt has fields for 'Title', 'Name', 'Phone', and 'Email', with dropdown menus for selecting values. The 'Title' dropdown is set to 'Capital Manager', 'Name' to 'Kevin Cole', 'Phone' to '(802) 735-1652', and 'Email' to 'kcole@investycapital.com'. An 'Add Another Contact' button is located below the form. A table below the form lists the contact information: Title: Capital Manager, Name: Kevin Cole, Phone: (802) 735-1652, Email: kcole@investycapital.com. A 'Remove' button is next to the table. At the bottom of the main content area are 'Back' and 'Submit' buttons. The footer of the page features a 'Who We Supervise' section and an 'Institutions That We Supervise' section with a 'Learn More' button. The browser's taskbar is visible at the very bottom, showing the 'Start' button, a search bar, and various application icons.
+[p110_c0002] _Final Submission Screenshot_
+[p110_c0003] _5_
+
+## Page 111
+
+[p111_c0001] Good morning Claudia and Tariq
+[p111_c0002] We are planning to submit the certification today. Absent any sort of technical glitches at NYDFS portal, our team member, Ms. Ashley LaRocque (copied here) will assist in this effort. Ashey is an Amethyst Senior Account Executive with 15+ years representing captives licensed in NY.
+[p111_c0003] Attached you will find 2 documents for your files:
+- [p111_c0004] 1. Most up to date FMTAC 2024 TPRSR survey tracker w/ assessment 2. (NEW) FMTAC 2024 Risk Assessment scoring report (ver1).
+[p111_c0005] We developed this tool from NIST guidance specifically for FMTAC and should be viewed as a data flow map for the team to identify key system processes, vendor assessments, nature of data handled between systems and vendors, access controls, use of masking or encryption technology, and identification of the systems and software used to exchange data between FMTAC and its vendors. We include MTA as key data source and handler of data as FMTAC is embedded within the MTA broad cyber security platform.
+[p111_c0006] The report assigns various subjective values including:
+- [p111_c0007] > Criticality of functions > Ratings and weightings of potential exposure in event of a breach, according to evaluated risk levels. > Control environment and rankings values (the observations for the control environment can be more properly fleshed out with review and discussion with MTA IT)
+[p111_c0008] All of this culminates (summarizes up into a top level) assessment using 6 strategic identified threats (Unauthorized Access, Misuse of Data, Data Leakage, Failed Processes, Loss of Data, and Disruption of Service).
+[p111_c0009] A numeric Risk Value rating is assigned at each threat level and arrives at an overall weighted value.
+[p111_c0010] The attached Risk Assessment Report indicates overall level of 22 and is deemed low on the threat scale while two areas of risk are deemed to be in the medium threat level (including threat arising in event of Unauthorized Access and Reputational Risk arising from unintentional exposure)
+[p111_c0011] These overall results are subject to interpretation, and we encourage the MTA IT team to review and advise w/ any suggestions in the future.
+[p111_c0012] Irrespective of the risk assessment results, we are able to proceed with filing the material compliance report (today), as the FMTAC by all measures appears to meet and exceed the minimal requirements of the 23 NYCRR500 requirements for a captive under 500.19(d).
+[p111_c0013] NOTE: There are NY law / regs changes effective in 2025 which will need to be incorporated in order to meet the annual reporting and compliance requirement for YE 2025.
+[p111_c0014] Regards,
+[p111_c0015] _7_
+
+## Page 112
+
+### [p112_c0001] First Mutual Transportation Assurance Company Risk Assessment Scoring - Risk Rating Dec-24
+### [p112_c0002] STEP #6. Calculating Risk Rating
+[p112_c0003] Impact (if exploited) * Likelihood (of exploit in the assessed control environment) = Risk Rating
+[p112_c0004] Risk rating categories are:
+- [p112_c0005] · Severe – A significant and urgent threat to the organization exists and risk reduction remediation should be immediate. · Elevated – A viable threat to the organization exists, and risk reduction remediation should be completed in a reasonable period of time. · Low – Threats are normal and generally acceptable, but may still have some impact to the organization. Implementing additional security enhancements may provide further defense against potential or currently unforeseen threats.
+[p112_c0006] Using the values for impact and likelihood the Residual Risk Rating Assessment follows: Major Assumption for Cybersecurity Risk Assessment is the ENTIRE FMTAC DATA SET is accessed by an authorized individual or entity.
+[p112_c0007]
+
+```text
+Identified Threat Primary Risk Type Criticality Ranking (Per Risk Type Table) Sensitivity Ranking (default to most severe category) Per Risk Type Table Impact Low = <30, M=30-75, High = > 75 Risk Impact Controls Assessment L, M, H Rating Assessment Value Risk Calc Notes / Recommendation a. b. a. x b. c. d. e. c. x e. Risk Value Rating (H, M, L) Rank H=10, M=5, L=1 Rank (H, M, L) Value Rank Likelihood Value Unauthorized Access (Malicious or Accidental) Operational 3 10 M 30 S 1.05 31.58 Low-Med Low-Elevated Vendor assessment updated. No individual strategic reviews deemed necessary. Biographical affidavits and limited large loss data is encrypted, password protected. Misuse of Information by Authorized Users Compliance, Operational 2 10 L 20 S 1.05 21.05 Low Low (Normal) None Data Leakage / Unintentional Exposure of Corp-Information Reputational 5 10 M 50 S 1.05 52.63 M Medium Vendor assessment has not raised to a level requiring strategic review. Historical financial and claims data maintained past typical digital destruction times given nature of long term liabilities associated with insurance company operations. Failed Processes Operational 3 1 L 3 S 1.05 3.16 Low Low (Normal) None Loss of Data Operational / Transactional 3 5 M 15 S 1.05 15.79 Low Low (Normal) None Disruption of Productivity Transactional 2 5 L 10 S 1.05 10.53 Low Low (Normal) None Overall Ranking 22.46
+```
+[p112_c0008] < 30 = LOW
+### [p112_c0009] Cybersecurity Risk Assessment and Analysis
+[p112_c0010] Regular risk assessments are a fundamental part of the risk management process. Use of this matrix is to determine an acceptable level of risk and to draw attention to any required control measures. The risk assessment process is continual, and should be reviewed regularly to ensure findings are still relevant, cost effective and align with FMTAC Goals.
+### [p112_c0011] By function or process and application including:
+- [p112_c0012] IT Infrastructure Information Security Electronic & Mobile Banking Core Banking NPI Meaningful Use Risk Assessment Social Media Remote Access
+### [p112_c0013] Collaborative Approach
+[p112_c0014] Approach to assessing risk concentrates on functionality, flow of information, and underlying technology of the defined process area and data set. This methodology is based upon NIST guidance and adapted for FMTAC unique operations. A multi-step process was used to determine risk levels, and as determined, relevant remediation recommendations were developed. The risk assessment is designed to evaluate the current level of risk, at a point in time.
+### [p112_c0015] Methodology
+- [p112_c0016] Define the process and service components, and determine viable threats related to the delivery of FMTAC services to MTA and the Regulatory bodies. Measure the organizational impact (at the captive level only) if the threat were to be exercised. Determine the relationship between the significant threats and relevant categories of threat prevention, mitigation, detection, or compensating controls. Evaluate the adequacy of the controls in each category. The assessment does not include audit or testing of controls. Determine how likely the threat is to occur, taking into account the control environment. Align the threat control categories and risk calculations with the following defined risk categories: - Strategic risk related to adverse business decisions, or the failure to implement appropriate business decisions in a manner consistent with the FMTAC strategic goals. - Reputational risk related to negative public opinion. - Operational risk related to loss resulting from inadequate or failed internal processes, people, and systems, or from external events. - Transactional risk related to problems with service or product delivery. - Compliance risk related to violations of laws, rules, or regulations, or from noncompliance with internal policies, procedures, or business standards. Document the residual risk to the organization per risk category, as defined above. Document risk reduction and security enhancement recommendations in the Report.
+### [p112_c0017] Reports and Deliverables
+- [p112_c0018] Executive Summary - Provides a picture of the risks associated with the system, application, function, or processes. All supporting findings and control details are provided along with any applicable recommendations to reduce risk and/or enhance the security posture of FMTAC. - Description of Operations, Criteria for Evaluation, Controls Environment - Findings and Recommendations - Risk Assessment Calculations - Control Detail by Category
+
+## Page 113
+
+### [p113_c0001] First Mutual Transportation Assurance Company Risk Assessment Scoring - FMTAC INVENTORY of Processes & Systems Dec-24
+[p113_c0002] Characterize the System (Process, Function, or Application) Characterizing the system helps determine the viable threats
+[p113_c0003]
+
+```text
+Risk Type Criticality Ranking FMTAC Operations & Management Functions Info Sensitivity Risk Rank Systems Utilized Data Transmission Remote Access? Data At-Risk & Application Processing Version Backup Underwriting T Inward Corporate Data Collection H EM ACIS & MTA VPN Login MSD, EM, MSA Microsoft (MS 365) Business Premium, SharePoint D,O,R T Policy Preparation & Distribution L EM ACIS & MTA VPN Login MSD, EM, MSA Sharepoint, CW D,O,R Finance T Budgeting M EM ACIS & MTA VPN Login MSD, EM, MSA MS 365, SharePoint, CW D,O,R T,O Investment Reporting M CW Portal ACIS - VPN Login MSO, EM, CW, MSA Sharepoint, CW D,O,R Accounting Processes: T Inward Data Collection - Premium Collected, Claims, Exp Pft M EM ACIS & MTA VPN Login MSD, EM, MSA MS 365, SharePoint D,O,R T Inward Data Collection - Other Financial Administration and G/L M EM ACIS & MTA VPN Login MSD, EM, MSA MS 365, SharePoint D,O,R T Outward Data Reporting - Not Financials M EM ACIS & MTA VPN Login MSD, EM, MSA MS 365, SharePoint D,O,R T Financial Statement Reporting - Inward M EM ACIS & MTA VPN Login MSD, EM, MSA MS 365, SharePoint D,O,R T Financial Statement Reporting - Outward M EM ACIS & MTA VPN Login MSO,CYMA,F9 MS 365, SharePoint D,O,R T Core Banking & Investment Management H EM MTA Treasury No FMTAC systems No FMTAC sys D,O,R Loss Cycle T Claims and Loss Reporting - Inward Collection M EM ACIS & MTA VPN Login MSD, EM, MSA MS 365, SharePoint D,O,R T Claims and Loss Reporting - Outward M EM ACIS & MTA VPN Login MSD, EM, MSA Sharepoint D,O,R C NY DFS - Annual Reporting & Licensing L EM, Mail ACIS & MTA VPN Login MSD, EM, MSA MS 365, SharePoint D,O,R C,T Annual CPA audit - Deloitte L EM, Mail ACIS, MTA, JL VPN Login MSD, EM, MSA Sharepoint D,O,R C,O NY Cyber Reporting L EM, NYDFS Portal ACIS & MTA VPN Login MSD, EM, MSA MS 365, SharePoint D,O,R C Business Plan Amendments & Updates L EM ACIS & MTA VPN Login MSD, EM, MSA Sharepoint D,O,R C TRIA Data Collection L EM ACIS & MTA VPN Login MSD, EM, MSA Sharepoint D,O,R Board of Directors: O Biographical Affidavit Collection, Reporting and Storage H ShareFile ACIS & MTA VPN Login MSD, EM, MSA MS 365, SharePoint D,O,R C Annual Board Meeting Preparation and Communications M EM ACIS & MTA VPN Login MSD, EM, MSA Sharepoint D,O,R C Corporate Documentation - Prep and Communication M EM ACIS & MTA VPN Login MSD, EM, MSA Sharepoint D,O,R Network Infrastructure & Operating Systems (Specific) Server - LAN N/A MS Azure & US Signal VPN, MFA Enterprise N/A Server (WIN) - Remote Access N/A Enterprise N/A N/A Security - Access Point Protection and Firewall(s) N/A NW, SOPHOS Enterprise N/A Security - Detection of Unauthorized Access N/A HIDS, IDS NW, SOPHOS, TL Enterprise N/A Security - Prevention of Unauthorized Access N/A Netwatcher Enterprise N/A Security - Client Device Encryption (If laptop lost / misplaced) N/A WM, BD Enterprise N/A Security - Data Loss Prevention N/A NW, SOPHOS, TL Enterprise N/A Security - Password Management N/A Dahtlane Enterprise N/A
+```
+### [p113_c0004] Key - Systems and Data Sources
+[p113_c0005]
+
+```text
+Systems Microsoft 365 Office (Word, Excel, Powerpoint, Outlook) MSO CTMA Financial Management Systems (General Ledger) CYMA Daily, Overnight, System Redundancy D,O,R Backup and Data - MS Azure IaaS MSA Netwatcher, SOPHOS NW, SOPHOS Wormage, Blidefender Full Disk Encryption WM, BD (Hos) and Client Intrusion Detection Systems (H)IDS Threatlocker (Advanced Endpoint Protection, Allowlisting) TL Vendor or Source MTA MTA Ametyst Captive Insurance Solutions A, ACIS Ametyst Captive Insurance Solutions Info Technology ITACIS Rouett - Ametyst Captive Insurance Solutions MSP ITRouett Carrier C TPA TPA Clearwater Analytics - Online Subscription CW
+```
+
+## Page 114
+
+### [p114_c0001] First Mutual Transportation Assurance Company Risk Assessment Scoring - FMTAC INVENTORY of Processes & Systems Dec-24
+[p114_c0002] Characterize the System (Process, Function, or Application) Characterizing the system helps determine the viable threats
+[p114_c0003]
+
+```text
+Risk Type Criticality Ranking FMTAC Operations & Management Functions Info Sensitivity Risk Rank Type of Data (For Appendix A of Final Report) Vendor or Source Internal and/or External Interfaces System or Process Users Data Flow Data Users Underwriting T Inward Corporate Data Collection H Corp Finance, Legal, RM MTA - Finance, Legal, RM I-RM MTA, A MTA-A-MTA MTA-RM & ACTG, ACS T Policy Preparation & Distribution L Corp Finance, Legal, RM MTA - Finance, Legal, RM I-RM MTA, A MTA-A-MTA MTA-RM & ACTG, ACS Finance T Budgeting M Corp Finance, RM MTA-RM & Finance I-RM & Finance MTA & ACS MTA-A-MTA MTA-RM & ACTG, ACS T, O Investment Reporting M Corp Finance Blackrod, MTA-RM, Treasury MTA & ACS CW-A-MTA MTA-RM & ACTG, ACS Accounting Processes: T Inward Data Collection - Premium Collected, Claims, Exp Pft M Corp Treasury MTA-Treas, MTA-Actg ITreas MTA, ACS MTA-A-MTA MTA-RM & ACTG, ACS T Inward Data Collection - Other Financial Administration and G/L M Corp Finance, RM MTA-Accounting I-RM, I-Actg, ACS MTA, ACS MTA-A-MTA MTA-RM & ACTG, ACS T Outward Data Reporting - Not Financials M Corp Finance, RM MTA-RM, ACS NY DFS MTA, ACS A-MTA MTA-RM & ACTG, ACS T Financial Statement Reporting - Inward M Corp Finance, RM MTA-Treas, MTA-Actg I-RM, I-Actg, ACS MTA & ACS A-MTA MTA-RM & ACTG, ACS T Financial Statement Reporting - Outward M Corp Finance ACS, MTA-Actg NYDFS MTA & NYDFS A-Edelotte Auditor T Core Banking & Investment Management H Corp Treasury MTA-Treas, MTA-Actg ITreas MTA A-EDPS MTA-A NY DFS ITreas Loss Cycle T Claims and Loss Reporting - Inward Collection M Corp - RM MTA-RM, Ebroker, Ecarrier I-RM, ACS MTA, ACS, Actuary MTA-A MTA-RM & ACTG, ACS, Actuary T Claims and Loss Reporting - Outward M Corp RM MTA-RM, Ebroker, Ecarrier Eactuary, Ebrokers, Reinsurers MTA, ACS, Actuary MTA-A-EACT NY DFS, Auditor NY DFS - Annual Reporting & Licensing C Annual CPA audit - Deloitte L Corp RM MTA-RM, ACS I-RM, ACS, NYDFS MTA, ACS, NYDFS A-EDPS MTA-RM, ACS, NY DFS C, T L Corp RM, Finance, Legal MTA-RM, ACS I-RM, ACS, NYDFS MTA, ACS, NYDFS A-EDPS MTA-RM, ACS, NY DFS Cyber C, O NY Cyber Reporting L Corp Finance MTA-Treas, RM, ACS I-RM MTA-RM, ACS, NY DFS Cyber A-EDPS & Tax MTA-RM, ACS, NY Tax dept C Business Plan Amendments & Updates L Corp - RM & Finance MTA-RM, ACS I-RM, ACS, NYDFS MTA-RM, ACS, NY DFS A-EDPS MTA-RM, ACS, NY DFS C TRIA Data Collection L Corp - RM & Finance MTA-RM, ACS I-RM, ACS, US Treas MTA-RM, ACS, US Treasury A-ETREAS MTA-RM, ACS, US Treasury Board of Directors: O Biographical Affidavit Collection, Reporting and Storage H Corp Legal MTA - Legal I-Legal, RM, ACS MTA, ACS, NYDFS A-EDPS MTA-RM, ACS, NY DFS C Annual Board Meeting Preparation and Communications M Corp Legal & RM MTA-Legal, RM, Treas Ebroker A-MTA-A MTA-RM, MTA-Legal, ACS, NY DFS C Corporate Documentation - Prep and Communication M Corp Legal & RM MTA-Legal, RM, Treas ACS A-MTA-A MTA-RM, MTA-Legal, ACS, NY DFS Network Infrastructure & Operating Systems (Specific) Server - LAN N/A All IT RoseCTS ITACS ACS N/A Server (WIN) - Remote Access N/A All IT RoseCTS ITACS ACS N/A Security - Access Point Protection and Firewall(s) N/A All IT RoseCTS ITACS ACS N/A Security - Detection of Unauthorized Access N/A All IT RoseCTS ITACS ACS N/A Security - Prevention of Unauthorized Access N/A All IT RoseCTS ITACS ACS N/A Security - Client Device Encryption (If laptop lost / misplaced) N/A All IT RoseCTS ITACS ACS N/A Security - Data Loss Prevention N/A All IT RoseCTS ITACS ACS N/A Security - Password Management N/A All IT RoseCTS ITACS ACS N/A
+```
+### [p114_c0004] Key - Systems and Data Sources
+[p114_c0005]
+
+```text
+Systems Microsoft 365 Office (Word, Excel, Powerpoint, Outlook) M50 CTMA Financial Management Systems (General Ledger) CTMA Daily, Overnight, System Redundancy D, O, S Backup and Data - MSazure IaaS MSA Netwatcher, SOPHOS NW, SOPHOS Wingage, Bliddefender Full Disk Encryption WIN, BD (Host) and Client Intrusion Detection Systems (H)IDS Threatlocker (Advanced Endpoint Protection, Allowlisting) TL Vendor or Source MTA MTA Amethyt Captive Insurance Solutions A, ACS Amethyt Captive Insurance Solutions Info Technology ITACS Rosoft - Amethyt Captive Insurance Solutions MSP ITRose TPA TPA Clearwater Analytics - Online Subscription CW
+```
+### [p114_c0006] Key - Internal and External Interfaces
+[p114_c0007]
+
+```text
+Internal Risk Management IBM MTA Internal Finance IF MTA Internal Treasury ITreas MTA Internal Tax ITax MTA Internal Legal IL External Broker Ebroker External Carrier Ecarrier External Actuary Eactuary External Auditor Auditor External NY DFS EDPS External WA Insurance Commissioner EWAC External Premium Tax & Assessment ENTax
+```
+
+## Page 115
+
+### [p115_c0001] First Mutual Transporation Assurance Company
+### [p115_c0002] Risk Assessment Scoring - Risk Types
+[p115_c0003] Dec-24
+### [p115_c0004] STEP #1 - Identify and Weight Types of Risk
+[p115_c0005] Critical
+[p115_c0006] Risk Risk
+[p115_c0007] Value Type Risk Type Description
+[p115_c0008]
+
+```text
+10 S · Strategic risk is related to adverse business decisions, or the failure to implement appropriate business decisions in a manner that is consistent with the institution's mission. 5 R · Reputational risk is related to negative public opinion. 3 O · Operational risk is related to loss resulting from inadequate or failed internal processes, people, and systems, or from external events. 2 T · Transactional risk is related to problems with service or product delivery. 2 C · Compliance risk is related to violations of laws, rules, or regulations, or from noncompliance with internal policies or procedures or business standards.
+```
+### [p115_c0009] Information Sensitivity
+[p115_c0010]
+
+```text
+10 H Contains sensitive corporate subsidiary or NPI characteristics. If released to public presents a strategic, reputational or legal / compliance threat. 5 M Contains corporate financial data which is automatically categorized confidential but in FMTAC case such data not deemed to pose a high risk if obtained through a hack. 1 L Contains data not deemed to pose a threat if obtained by a hack or unauthorized user.
+```
+
+## Page 116
+
+### [p116_c0001] First Mutual Transportation Assurance Company Risk Assessment Scoring - Identify Threats Dec-24
+### [p116_c0002] Step #2. Identify Threats
+[p116_c0003] Identified threat types:
+- [p116_c0004] 1 Unauthorized access (malicious or accidental). This could be from a direct hacking attack / compromise, malware infection, or internal threat. 2 Misuse of information (or privilege) by an authorized user. This could be the result of an unapproved use of data or changes made without approval. 3 Data leakage or unintentional exposure of information. This includes permitting the use of unencrypted USB and / or CD-ROM without restriction; deficient paper retention and destruction practices; transmitting Non-Public Personal Information (NPPI) over unsecured channels; or accidentally sending sensitive information to the wrong recipient. 4 Failed processes. 5 Loss of data. This can be the result of poor replication and back-up processes. 6 Disruption of service or productivity.
+### [p116_c0005] First Mutual Transportation Assurance Company Risk Assessment Scoring - Risk Impact Dec-24
+### [p116_c0006] STEP #3. Inherent Risk & Impact
+[p116_c0007] This step does not consider the control environment. It factors in the characterization of the system , and relies on our determination of the impact to the captive if the threat was exercised.
+[p116_c0008] Impact ratings are:
+[p116_c0009]
+
+```text
+100 H High Impact could be substantial. 50 M Medium Impact would be damaging, but recoverable, and / or is inconvenient. 10 L Low Impact would be minimal or non-existent.
+```
+
+## Page 117
+
+### [p117_c0001] First Mutual Transportation Assurance Company Risk Assessment Scoring - Controls Dec-24
+### [p117_c0002] STEP #4. Analyze the Control Environment
+[p117_c0003] To adequately assess FMTAC control environment we have identified threat prevention, mitigation, detection, and compensating controls and their relationship to identified threats.
+[p117_c0004]
+
+```text
+Key Controls Identified Control Assessment * Observations and Recommendations ORM - Organizational Risk Management Controls S MTA Comprehensive Info Sec Risk Management Program UPC - User Provisioning Controls S Users on need to know(least privilege) basis, authorized data accessible according to assignment on FMTAC, controlled by CISO /management staff. AC - Administration Controls S Formal IT Administration Policies and Staff administering network and applications UAC - User Authentication Controls S IDPC - Infrastructure Data Protection Controls SR Ensure NO USE of unencrypted flash drives, create inventory PESC - Data Center Physical & Environmental Security Controls S COO - Continuity of Operations Controls S
+```
+### [p117_c0005] Key * Control assessment categories:
+- [p117_c0006] S - Satisfactory – Meets control objective criteria, policy, or regulatory requirement. SR - Satisfactory with Recommendations – Meets control objective criteria, policy, or regulatory requirement with observations for additional enhancements to existing policies, procedures, or documentation. NI - Needs Improvement – Partially meets control objective criteria, policy, or regulatory requirement. I - Inadequate – Does not meet control objective criteria, policy, or regulatory requirement.
+### [p117_c0007] Key Controls Ranking Value
+- [p117_c0008] S 0.95 SR 0.75 NI 0.5 I 0.1
+### [p117_c0009] STEP #5. Likelihood Rating
+[p117_c0010] The likelihood of the given exploit taking into account the control environment in place.
+- [p117_c0011] High The threat-source is highly motivated and sufficiently capable, and controls to prevent the vulnerability from being exercised are ineffective. Medium The threat-source is motivated and capable, but controls are in place that may impede successful exercise of the vulnerability. Low The threat-source lacks motivation or capability, or controls are in place to prevent, or at least significantly impede, the vulnerability from being exercised.
+
+## Page 118
+
+### [p118_c0001] First Mutual Transportation Assurance Company Vendor Risk Assessment (Processes & System) Page 24
+[p118_c0002] Characterize the System (Process, Function, or Application) Characterizing the system helps determine the viable threat(s)
+[p118_c0003]
+
+```text
+Risk Type Criticality Rating Vendor PM/AC Operations & Management Functions Nature of Service Inward Data Format RM Process? Yes / No Sensitive Data Encrypted? (Y, N or None) Infra Sensitivity Risk Rank Probable Vendor Risk Threat Type of Data (Assessment in Appendix A) Vendor or Source Internal and External Interfaces System or Process Users Data Flow Data Users C-C Vendor Primary PM/AC Policies and Large Loss Claims PM/AC Policy Info & Big Loss Claims BSF to Analytics MS365, PDF Yes Yes / Yes / No L L Corp Finance, Legal, RM MTA, RM 1-RM Editor MTA, A, BRD BRD/MTA-A MTA-RM & ACTG, ACS C-0 Rose IT Primary PM/AC Policy Info & Large Loss Claims BSF to Analytics MS365, PDF Yes Yes / Yes L L Corp Finance, Legal, RM MTA, RM 1-RM Editor MTA, A, BRD BRD/MTA-A MTA-RM & ACTG, ACS C OW (Actuary) NY DFS - Annual Reporting & Licensing Actuary Review MS365, PDF No Yes / Yes L L Corp Finance, Legal, RM MTA - Finance, Legal, Tax, RM 1-RM MTA, ACT, A MTA-A/MTA MTA-RM & ACTG, ACS C WTA (Broker) MTA Insurance Policy Info & Claims Insurance Coverage MS365, PDF No None / N/A L L Corp Finance, Legal, RM MTA - Finance, Legal, Tax, RM 1-RM Editor MTA, A, BRD BRD/MTA-A MTA-RM & ACTG, ACS C Alliant (Broker) Primary PM/AC & MTA Policy Info & Large Loss Claims Insurance Coverage MS365, PDF Yes No / Unknown L L Corp Finance, Legal, RM MTA - RM 1-RM Editor MTA, A, BRD BRD/MTA-A MTA-RM & ACTG, ACS C Artes (Broker) Life & Property Ins. Placement Insurance Coverage MS365, PDF No None / N/A L L Corp Finance, Legal, RM MTA - RM 1-RM Editor MTA, A, BRD BRD/MTA-A MTA-RM & ACTG, ACS C Travelers Casualty Insurance Contracts & Claims Insurance Coverage MS365, PDF No None / N/A L L Corp Finance, Legal, RM MTA - RM 1-RM Examiner MTA, CAR CAR/MTA-A MTA-RM & ACTG, ACS C Convel Carrier & Claims Data Policy & Claims Handling MS365, PDF No None / N/A L L Corp Finance, Legal, RM MTA - RM 1-RM Examiner MTA, CAR CAR/MTA-A MTA-RM & ACTG, ACS C Dolomite Annual Audit Finance MS365, PDF Yes No / Unknown M L Corp Finance MTA - Finance, Legal, Tax, RM Editor AUD AUD-A MTA-RM & ACTG, ACS C MTA - (Process - Internal Only) Manage Insurance, Claims and Banking Data Claims & Loss Runs MS365, PDF No Yes / Yes M 1 - Process - Sub Operations subject to universal MTA EP Corp Finance, RM MTA-RM & Finance 1-RM & Finance MTA & ACS MTA-A/MTA MTA-RM & ACTG, ACS Q JP Morgan Chase Bank of NY - Midland (Outsourced) Bank Statements MS365, PDF No No - None M 1 - No Direct contact, All banking info handled by MTA Treasury Corp Finance MTA Finance 1-Finance MTA & ACS MTA-A/MTA MTA-RM & ACTG, ACS Q Bank of NY - Midland (Outsourced) Bank of NY - Midland (Outsourced) Bank Statements MS365, PDF No No - None M 1 - No Direct contact, All banking info handled by MTA Treasury Corp Finance MTA Finance 1-Finance MTA & ACS MTA-A/MTA MTA-RM & ACTG, ACS C Blackrock (Portfolio Mgmt) Portfolio Management Bank Statements MS365, PDF No No - None M 1 - No Direct contact, All banking info handled by MTA Treasury Corp Finance MTA Finance 1-Finance MTA & ACS MTA-A/MTA MTA-RM & ACTG, ACS C NY Dept. of Financial Services NY Deposits Regulator Regulation MS365, PDF No Yes / Yes L 1 - Sensitive Data Removed Corp Finance, RM MTA - Finance, Legal, Tax, RM EDFS MTA & ACS REG-A/REG MTA-RM & ACTG, ACS C Liberty Carrier - Claims and Loss Reporting - Inward Collection Claims & Loss Runs MS365, PDF No Yes / Yes L 1 - Sensitive Data Removed, except large losses Corp Finance, RM MTA-RM & Finance 1-RM None None None C CSI ITM - Claims and Loss Reporting - Inward Collection Claims & Loss Runs MS365, PDF No Yes / Yes L 1 - Sensitive Data Removed, except large losses Corp Finance, RM MTA-RM & Finance 1-RM None None None C Travelers Carrier - Claims and Loss Reporting - Inward Collection Claims & Loss Runs MS365, PDF No Yes / Yes L 1 - Sensitive Data Removed Corp Finance, RM MTA-Treas, MTA-Actg 1-RM MTA, ACS MTA-A/MTA MTA-RM & ACTG, ACS C CSI Claims and Loss Reporting - Inward Collection Claims & Loss Runs MS365, PDF No Yes / Yes L 1 - Sensitive Data Removed Corp Finance, RM MTA-Actg 1-RM, 1-Actg, ACS MTA, ACS MTA-A/MTA MTA-RM & ACTG, ACS C Convel Claims and Loss Reporting - Inward Collection Claims & Loss Runs MS365, PDF No Yes / Yes L 1 - Sensitive Data Removed Corp Finance, RM MTA-Actg 1-RM, 1-Actg, ACS MTA, ACS MTA-A/MTA MTA-RM & ACTG, ACS C Remittance Centers Large Loss Writelines and Contracts Large Loss and Contract Data MS365, PDF No Yes / Yes L 1 - Sensitive Data Corp Finance, RM MTA-Treas, MTA-Actg 1-RM, 1-Actg, ACS MTA & ACS MTA-RM & ACTG, ACS MTA-RM & ACTG, ACS
+```
+### [p118_c0004] Key - Systems and Data Sources
+[p118_c0005]
+
+```text
+Systems MSO Bitcom Office (Word, Excel, PowerPoint, Outlook) CMBA CMBA Financial Management System (General Ledger) D, D, R Daily, Overnight, System Redundancy RM Retalwatcher, SCPIHOS Endpoint Detection SCPIHOS Mimagic, Bitfinder Full Disk Encryption WM, BSC Remote and Client Network Detection Systems HRDSC Reflection & ProofPoint Essentials (Email Filter) EMF Vendor or Source MTA (Process - Internal Only) MTA Amethyst Capstone Insurance Solutions A, ACS Amethyst - Info Technology IT/ACS Rose IT IT/Rose OW (Actuary) ACT WTA (Broker) BRD Alliant (Broker) BRD Artes (Broker) BRD Travelers CAR Convel CAR Dolomite AUD MTA (Outsourced) MTA - RM JP Morgan Chase BNK Bank of NY - Midland (Outsourced) BNK Blackrock (Portfolio Mgmt) BNK NY Dept. of Financial Services REG Liberty CAR CSI CAR Travelers CAR CSI TFA Convel TFA Remittance Centers Per Schedule
+```
+### [p118_c0006] Key - Internal and External Interfaces
+[p118_c0007]
+
+```text
+Internal Risk Management IRM MTA Internal Finance 1-Finance MTA Internal Treasury ITreas MTA Internal Legal External Broker E, Broker External Carrier Carrier External Actuary Actuary External Auditor Audit External NY DFS EDFS External Premium Tax & Assessment ENYTax
+```
+
+## Page 119
+
+### [p119_c0001] First Mutual Transportation Assurance Company Cybersecurity Risk Impact Assessment - 2024 FYE DATE: 8-Apr-25
+[p119_c0002]
+
+```text
+TPSP Risk Impact Rating Previous Rating Assessment Details No. Role/Type TPSP Name Primary Contact Name Possesses or has High Potential to possess NPI Likelihood Impact Overall Rating Date Rating Secure Service Org. Control report Certification of Compliance w/other Laws/Regs Confirm Compliance to 23 NYCRR 500 or similar Attestation by TPSP of compliance to our Policy Conducting a Review of Policy & Procedures Approval by captive Parent SOC 2 Report Other Comments 1 Parent Company MTA Claudia Reubner No Prior manager subcontracted with Alliant Insurance Services. Handles and possesses area dataset as Anethylt below. 2 Captive Manager Deville Chris Russell No NA NA Yes NA NA NA NA NA Anethylt is deemed low likelihood of material adverse impact to FMTCAC in event of breach. NPI is limited to summary accounting data. Anethylt handles NO sensitive personal information. Anethylt compiles financial statements with summary FMTCAC dataset. Anethylt performs FS accounting procedures using bank and investment account data. NPI is not in possession of any secure access information (except bank account numbers) and has no authority to move or manage and FMTCAC bank balances or assets. No access to ANY FMTCAC assets. Anethylt is subcontractor to Alliant Insurance Services and does not enter into direct contract with FMTCAC. Anethylt James Girardin Possess Low Low Low N/A NA NA Yes NA NA NA NA Anethylt operates under subcontract with MTA as vendor of MTA (the non-CD parent of FMTCAC). Anethylt operates in a cybersecurity posture that well exceeds the minimum requirements of the captive under 23 NYCRR500. 3 Actuary Oliver Wyman Steven McKinnon No 4 Auditor Deloitte Bill Strohwey High potential to possess Low Low-Med Low N/A None Deloitte operates under contract with MTA (the non-CD parent of FMTCAC) requiring Deloitte to operate in a cybersecurity posture that well exceeds the minimum requirements of the captive under 23 NYCRR500. 5 Reinsurance Assumed Transfers Sean Anderson No 6 TPA CIB David Hutchinson No CIB operates under a contract with FMTCAC requiring Deloitte to operate in a cybersecurity posture that well exceeds the minimum requirements of the captive under 23 NYCRR500. 7 Carrier AIG Betty Hernandez Mgmt believes CIB has high potential to possess NPI in the form of FMTCAC bank and trust account access authorizations. Managed claim data has a high likelihood of containing claimant sensitive personal identifying information including HIPAA related information, however this data belongs to MTA (the parent) and affiliates, falling outside the scope of FMTCAC's cyber security risk assessment. FMTCAC (MTA) will follow up in 2025 to review CIB's self assessment regarding possession of banking and trust account access authorizations. 8 Legal Miller Fried Bernard Bell No 9 P&C Insurance Broker Alliant Insurance Services Lauren Gregory Possess Low Low Low N/A Alliant Insurance Services operates under contract with MTA (the non-CD parent of FMTCAC) requiring Alliant to operate in a cybersecurity posture that exceeds the minimum requirements of the captive under 23 NYCRR500. 10 Portfolio Manager Blackrock Stephen Boyle No Blackrock operates under contract with MTA (the non-CD parent of FMTCAC) requiring Blackrock to operate in a cybersecurity posture that exceeds the minimum requirements of the captive under 23 NYCRR500. 11 Consulting BDO Matt Hanson No 12 P&C Insurance Broker WTW Whitney O. Hayden No 13 TPA / Carrier Carvel Lisa Pyrozo No 14 P&C Insurance Broker Artes Capital Solutions Charlie Mcneer, VP No
+```
+
+## Page 120
+
+### [p120_c0001] Survey Results - 2024
+[p120_c0002]
+
+```text
+TPSP Survey Responses/Conclusions to Survey Questions Incidents Reported Comments No Role / Type Business Name Name - Survey Sent to Email address Sent Received Response K1 K2 V3 AA AS AE AP Date Response Sent Received Confirm/Disagree No response 1 Parent Company MTA Chris Chikalev Claudia Padron Tony Fernandez Robin Cooper Lauren Pennington chrischik@mta.org claudia.padron@mta.org tony.fernandez@mta.org robincooper@mta.org lpenning@mta.org 2-Apr 4/7/2024 Confirmed 2 Captive Managers Debita Chris Nason Christopher.Kussan-robin@phoenix.assurenc.com 2-Apr 4-Apr Confirmed No No No Yes, auditor, actuaries, regulators No, necessary to perform functions None Amethyst James Giarde jgiarde@amethystcap.com 2-Apr 4-Apr Confirmed w/ qualifications Yes necessary to perform functions Yes necessary to perform functions Yes, auditor, actuaries, regulators No, necessary to perform functions None 3 Actuary Olivier Weyman Steven McElroy Steven.McElroy@oliverweyman.com 3-Apr Confirmed No No No None 4 Auditor Debita Kostas Makrakis Makrakis, Kostas.donald@debita.com 4/2/2024 4/10/2024 Governed by contract with MTA No Comment No comment, Debita Security Protocols governed by contract with MTA. 5 Reinsurance Assumed Travelers Sean Anderson Anderson, Sean.T-STDASERS@travelers.com 4/2/2024 Confirm No No No No Comment No comment on reportable cyber security incidents to report. No follow-up deemed necessary based on scope and nature of services. 6 TPA CSS David Hutchinson hutchinson@css.com 4/2/2024 4/3/2024 Confirm No No No Comment No comment on reportable cyber security incidents and conclusion no possession of NPI - requires follow up 7 Other AIG Betty Hernandez Betty.Hernandez@AIG.com 4/2/2024 4/3/2024 Confirm 8 Legal Miller Fred Bernard Bell bellb@millerfred.com 4/7/2024 Confirmed No No No None 9 P&C Insurance Broker Alliant Insurance Services Lauren Gregory Lauren.Gregory-Clauzen.Gregory@alliant.com 2-Apr 4/2/2024 Confirmed w/ qualifications Yes necessary to perform functions necessary to perform functions Yes, auditor, actuaries, regulators No, necessary to perform functions No comment on reportable cyber security incidents to report - requires follow up 10 Portfolio Manager Blackrock Stephen Boyle Boyle, Stephen.cataphen.boyle@blackrock.com 4/2/2024 Confirm No N/A No N/A No N/A None 11 Consulting BDO Matt Hanson m.hanson@bdo.com 4/2/2024 Confirmed No No No None 12 P&C Insurance Broker WTW Whitney G. Hayden Hayden, Whitney.c@whitney.hayden@wtw.com 4/7/2024 Confirmed No No No None 13 P&C Insurance Broker Artem Capital Solutions Charlie Meecher, VP Charlie.Meecher@artem.com 9-Apr 4/10/2024 Confirmed No No None 14 Correl WTW Amanda Calvovalder Amanda.Calvovalder@correl.com 7-Apr 4/10/2024 Confirmed No No No None
+```
+- [p120_c0003] The six survey questions are: When marketing on the captive, are you required to directly or indirectly control, own, access, generate, receive or possess NPI? What do you do with such NPI? Do you send the captive any documents with NPI? If the answer to Q3 is yes, can this NPI be removed for future distributions? Do you send anyone outside the captive, documents with NPI on behalf of the captive (including auditors, actuaries, captive manager)? If the answer to Q5 is yes, can this NPI be removed for future distributions?
+
+## Page 121
+
+### [p121_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p121_c0002] New York State Insurance Captive of
+> [p121_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a dark blue circle with the white letters "MTA" inside. To the right of the circle, the words "Metropolitan", "Transportation", and "Authority" are stacked vertically in a dark blue, sans-serif font.
+### [p121_c0004] T A B
+### [p121_c0005] 9
+### [p121_c0006] Disaster Response Plan & Business Continuity Plan
+
+## Page 122
+
+### [p122_c0001] DISASTER RESPONSE PLAN
+### [p122_c0002] First Mutual Transportation Assurance Company (“Company”)
+[p122_c0003] NAIC# 11787
+[p122_c0004] EFFECTIVE: DECEMBER 30, 2024
+
+## Page 123
+
+### [p123_c0001] First Mutual Transportation Assurance Company DISASTER RESPONSE PLAN
+### [p123_c0002] Introduction
+[p123_c0003] This Disaster Response Plan (“Plan”) is designed to help ensure that key business processes of the Company will continue during a disaster or at least have high potential to be restored within a reasonable period of time following a disaster with the main objective of being able to continue to meet policyholder and claimant expectations despite the disaster. The Company needs to periodically review for potential threats of disaster and devise plans to ensure timely recovery. These efforts will include periodically conducting a Risk Based Analysis (“RBA”) of the Company’s capacity to assist its insureds when affected by a disaster, and subsequently to modify this Plan if indicated. The RBA involves review of the risks faced by the insureds that are covered by the insurance programs offered by the Company and factoring the mitigating and remedial actions possible given the different types and extent of disaster. This Plan is organized as a plan outline followed by an Appendix containing specific role assignments, Notification Lists, etc., referred to in actions of the Plan.
+[p123_c0004] The Company is a Captive Insurance Company and as such does not have employees, systems, applications, buildings, equipment, nor does the Company maintain a network. Instead, the Company relies on the Metropolitan Transportation Authority (“MTA”) the parent of the Company, and affiliates and subsidiaries of the MTA (“affiliates”), and on robust third-party service provider (“TPSP”) vetting, particularly related to the Company’s management company, including reasonable efforts to confirm those entities have appropriate Disaster Response and Business Continuity Plans in place related to Company operations. Please refer to the Company’s Third-Party Service Provider Security Policy for additional detail on the protocols the Company follows related to engaging, monitoring, and contracting with TPSPs. As a captive insurance company, the Company is licensed to insure only risks related to its parent and affiliates and their operations.
+[p123_c0005] The rest of this document provides key steps to be taken to maximize the chance of timely recovery of the Company’s operations and continuity of delivery of policyholder services in the event of a disaster. These processes and procedures are not meant to be all-inclusive, and actual processes may include variations and additional steps as dictated by the scope and consequences of the disaster and impact to affiliates and TPSPs of the Company. The specifics of the situation will need to be taken into consideration. In all cases, though, this document should be referred to at the onset of a potential or actual disaster and be factored into decisions as disaster response activities dictate and progress.
+### [p123_c0006] Roles & Responsibilities
+[p123_c0007] The Business Continuity Coordinator (“BCC”) oversees compliance with this Plan and has responsibility for:
+- [p123_c0008] 1. ensuring a RBA is conducted at least annually; 2. having overall responsibility for the Company’s response to a disaster; 3. ensuring overall maintenance of this Plan including ensuring this plan is reviewed at least once annually, approved by the Company’s Board at least once annually, and updated as required;
+
+## Page 124
+
+### [p124_c0001] First Mutual Transportation Assurance Company DISASTER RESPONSE PLAN
+- [p124_c0002] 4. working with the Company's affiliates, management company, and other critical TPSPs to ensure compliance with this Plan; 5. working with the Company's affiliates, management company, and other critical TPSPs to guide the Company through the Disaster Response if a disaster occurs; 6. ensuring this Plan is distributed any time a material change is made but at least once annually to key stakeholders including: BCC, Backup to the BCC, appropriate representatives of affiliates of the Company, and the management company; 7. acting in the capacity of liaison for the Company with any applicable regulatory authority including as provided for in any statute, regulation or other binding requirements; and 8. activating, deactivating and monitoring the Plan.
+### [p124_c0003] Lines of authority, succession of management & delegation of authority
+[p124_c0004] The BCC has overall responsibility for the Plan but because the Company does not have employees, systems, applications, buildings, equipment, nor does the Company maintain a network, the expectation is that operational authority will be delegated to employees of affiliates, management company, or other TPSPs, as deemed appropriate by the Board, including an employee of one of these entities potentially serving as the Company BCC, and that the Company's ability to respond to a disaster necessarily rests primarily with TPSPs and/or affiliates of the Company.
+### [p124_c0005] Risk Based Analysis
+[p124_c0006] The BCC shall ensure the Company performs a RBA at least annually. The analysis shall emphasize the capacity of the Company to assist customers affected by a disaster and shall use the results to maintain and periodically update this Plan as indicated by the analysis efforts.
+### [p124_c0007] Interaction with external business entities, including TPSPs
+[p124_c0008] As explained in the introduction of this document, the Company is a captive insurance company and does not have employees, systems, applications, buildings, equipment, nor does the Company maintain a network. Accordingly, the Company relies primarily on robust third party service provider ("TPSP") vetting, a management company, and the Company's affiliates to conduct Company operations. Notification of a disaster will more likely than not come to the attention of the BCC via a declaration from a TPSP that they have experienced a disaster or from the Company's management company, advising receipt of notice of a disaster by a TPSP that conducts important Company operations.
+[p124_c0009] It is also possible that the Company's parent or another affiliate could experience a disaster that impacts their employees, systems, applications, buildings, equipment, or network, resulting in impairment of processing of Company activity and an associated impact on the Company's ability to assist the Company's insureds when affected by a disaster. One beneficial side effect of the distributed way the Company conducts its operations is the low probability that all major aspects of the Company's processing will be affected simultaneously. For example, TPSPs of the Company are located across multiple states and in the case of the management company, has developed data centers and IaaS operations in multiple U.S. regions..
+[p124_c0010] _2_
+
+## Page 125
+
+### [p125_c0001] First Mutual Transportation Assurance Company DISASTER RESPONSE PLAN
+### [p125_c0002] Disaster Declaration and Response
+[p125_c0003] A “Disaster Declaration” is a formal notification process that accomplishes two main objectives:
+- [p125_c0004] 1. It formally sets the restoration and recovery processes in motion; and 2. It notifies and activates the recovery teams that they need to assist the Company through a disaster.
+[p125_c0005] The BCC will be the primary point of contact, make the disaster declaration, coordinate with regulators, and ensure timely notification is delivered to appropriate members of the Notification List(s) in the appendix to this Plan, using best available means under the circumstances, with priority on using email or text messaging communications if available. The BCC will also provide guidance regarding procedural changes in effect during the disaster, updates on disaster remediation, etc., at appropriate points as indicated by the specifics of the disaster, but no less frequently than once daily to entities listed in Notification List 1 of the Appendix unless otherwise agreed at the time of the disaster. The BCC is also responsible for guiding the Company and coordinating TPSPs as to any requirements related to disaster response and efforts to return the Company to normal operations and for revoking the Disaster Declaration when the disaster is over.
+[p125_c0006] The BCC shall make the Disaster Declaration decision based on all available information but with top priority placed on the impact on the Company’s ability to meet policyholder obligations. If as a result of a disaster there is significant potential for impact to the Company’s ability to meet policyholder obligations, then that should be viewed as strong evidence that a Disaster Declaration should be made. In addition, a disaster impacting a critical service provider of the Company should also be viewed as strong evidence that a Disaster Declaration should be made by the Company.
+### [p125_c0007] Regulatory Compliance
+[p125_c0008] This Plan may also serve the purpose of satisfying any regulatory requirements applicable to the Company related to disaster response. Accordingly, the BCC should be familiar with applicable requirements and ensure those requirements are factored into this Plan, including arranging updates to the Plan from time-to-time as indicated from such review and monitoring.
+[p125_c0009] _3_
+
+## Page 126
+
+### [p126_c0001] First Mutual Transportation Assurance Company DISASTER RESPONSE PLAN
+### [p126_c0002] APPENDIX A
+[p126_c0003]
+
+```text
+Business Continuity Coordinator(s)(Disaster Liaison or Disaster Leader) Name James R. Girardin 802-735-1677 and Tara J. Smith 802-735-1679 jgirardin@amethystcaptive.com & tsmith@amethystcaptive.com Business Continuity Coordinator (Disaster Liaison or Disaster Leader) - Address\Email\Phone(s) Lauren Gregory – Alliant Insurance Services 101 Park Avenue New York, New York 10178 Office 212-603-0200 (Amethyst Captive Insurance Solutions, Inc. c/o Alliant Insurance Services) Backup to Business Continuity Coordinator (Disaster Liaison or Disaster Leader) Name Claudia Reuben Backup to Business Continuity Coordinator (Disaster Liaison or Disaster Leader) Address\Email\Phone(s) 2 Broadway New York, New York 10004 Office 212-878-7361 Claudia.reuben@mtahq.org Company domicile New York Company headquarters address c/o Metropolitan Transportation Authority 2 Broadway, NY 10004 Company administrative office(s) for claims, policy and contract changes, processing premium payments, other services (list multiple locations and function if more than one) Amethyst Captive Insurance Solutions, Inc. c/o Alliant Insurance Services, 101 Park Avenue, New York, NY 10036 c/o Metropolitan Transportation Authority 2 Broadway, NY 10004 Kinds of insurance products sold Direct Primary & Excess: - Property - Terrorism - General Liability (Premise, All Agency Protective Liability, Stations & Force) - Excess Liability - Casualty (Owner Controlled Insurance Programs) - Builders Risk The policies listed above are indemnity form policies issued by the Company to affiliates. The Company does not have a duty to defend or an obligation to pay on behalf of affiliates although the Company may choose to do so from time-to-time for administrative convenience. All public-facing activities, including claims adjustments and payments, are handled by an underlying or an excess commercial carrier and a TPA or by a TPA appointed by an affiliate. The indemnity policies issued by the Company require it pay claims to
+```
+[p126_c0004] _4_
+
+## Page 127
+
+### [p127_c0001] First Mutual Transportation Assurance Company DISASTER RESPONSE PLAN
+[p127_c0002]
+
+```text
+the affiliates after the claims are adjusted by a TPA appointed by an affiliate or a commercial carrier as the case may be. Risk Evaluation: No impact to public-facing activity, even if there are several months of inactivity at the Company. After 3+ months of inactivity there may be a minimal impact to affiliates (also see Business Impact Analysis) Reinsurance Assumed: - Automobile Allocated Loss Adjustment Expenses (Paratransit/Non-Revenue) The Company assumes from a commercial carrier a portion or a layer of risk related to an affiliate that is first insured (fronted) by a commercial insurance company. All public-facing activities, including claims adjustments and payments, are handled by the commercial carrier and/or a TPA. The Company does not have a duty to defend – the Company is primarily a funding mechanism and pays the ceding company for the Company’s assumed portion of the losses. Risk Evaluation: No impact to public-facing activity, even if there is a several months of inactivity by the Company. After 3+ months of inactivity there may be a minimal impact to the ceding company or affiliates (also see Business Impact Analysis) Deductible Reimbursement Insurance: - Automobile (Paratransit/Non-Revenue) - Casualty (Owner Controlled Insurance Programs) - Builders Risk The Company provides deductible reimbursement coverage to affiliates for the above lines where the Company reimburses the affiliates for the losses they experience in the deductible layer under their commercial insurance program(s). All public-facing activities, including claims adjustments, defense and payments are handled by a commercial carrier and/or a Third Party claims Administrator (“TPA”). The commercial insurance policy with the affiliates
+```
+[p127_c0003] _5_
+
+## Page 128
+
+### [p128_c0001] First Mutual Transportation Assurance Company DISASTER RESPONSE PLAN
+[p128_c0002]
+
+```text
+provides for the affiliates to reimburse the carrier for the deductible layer. The Company does not have a duty to defend or an obligation to pay on behalf of affiliates although the Company may choose to do so from time-to-time for administrative convenience – the Company only reimburses deductible losses incurred by affiliates. Risk Evaluation: No impact to public-facing activity, even if there are several months of inactivity by the Company. After 3+ months of inactivity there may be a minimal impact to affiliates (also see Business Impact Analysis) Notification List 1 – Parent, Affiliate and TPSP primary contacts responsible for conducting Company operations (entities critical to the Company’s ongoing operations) PARENT CONTACT Claudia Reuben c/o Metropolitan Transportation Authority 2 Broadway, New York, NY 10004 Claudia.reuben@mtahq.org 212 878 7361 Notification List 2 – policyholders and other key TPSPs not already scheduled in Notification List 1 INSURED CONTACT (1) Laudwin Pemberton c/o Metropolitan Transportation Authority 2 Broadway, New York, NY 10004 LPEMBERT@mtahq.org 646 252 1427 LEGAL CONTACT Paige Graves c/o Metropolitan Transportation Authority 2 Broadway, New York, NY 10004 Paige.Graves@mtahq.org 212 878-7000 PARENT BROKER Lauren Gregory c/o Alliant Insurance Services 101 Park Avenue New York, NY Lauren.Gregory@alliant.com 631.235.1590
+```
+[p128_c0003] _6_
+
+## Page 129
+
+### [p129_c0001] First Mutual Transportation Assurance Company DISASTER RESPONSE PLAN
+[p129_c0002]
+
+```text
+REGULATOR Bernard Lott, Financial Services Examiner 4 (Acting Captive Director) New York State Department of Financial Services 1 State Street New York, NY 10004-1511 bernard.lott@dfs.ny.gov> 212-709-7763
+```
+[p129_c0003] _7_
+
+## Page 130
+
+### [p130_c0001] Department of Financial Services
+### [p130_c0002] Disaster Response Plan Questionnaire
+[p130_c0003]
+
+```text
+Submission Date 01/31/2025 Reporting Year 2024 Submitter Last/Entity Name James R. Girardin Submitter Title Captive Insurance Manager Submitter Phone (802) 735-1677 direct Submitter Email jgirardin@amethystcaptive.com Approved within last year Yes Approval Date 7/1/2024 Expected Resubmission Date Before 7/1/2025
+```
+[p130_c0004] Represented Company(ies):
+[p130_c0005]
+
+```text
+Name First Mutual Transportation Assurance Company NAIC 11787 Group Null Jurisdiction New York Claims Processing Address 1 2 Broadway New York, NY 10004 New York premium volume from most recent Schedule T $211,405,803 Gross Premium Written Fire $64,769,010
+```
+[p130_c0006] Contacts
+[p130_c0007]
+
+```text
+Team Responsibilities/Authority: Does your plan describe the responsibilities and reporting authority of the disaster response team? Yes - "Disaster Declaration & Response" Communication Team Leader: Does your plan identify the name and title of the person responsible for activating and deactivating the disaster response plan? Yes – "Appendix" & "Roles & Responsibilities" Monitors: Does your plan identify the name and title of the person responsible for monitoring the disaster response plan? Yes – "Appendix" & "Roles & Responsibilities" Disaster Liaisons: Does your plan identify the Primary Disaster Liaison (the employee who is available during and after a disaster to relay information between the company and DFS)? Yes – James Girardin & Tara Smith jgirardin@amethystcaptive.com tsmith@amethystcaptive.com 802-735-1677 Jim direct 802-735-1679 Tara direct Does your plan identify the Secondary Disaster Liaison? Yes – Claudia Reuben Claudia.reuben@mtahq.org 778-957-4991 Disaster Leaders: Does your plan identify the Primary Disaster Leader (the employee who has control of the company's disaster plan)? Yes – James Girardin & Tara Smith jgirardin@amethystcaptive.com tsmith@amethystcaptive.com 802-735-1677 Jim direct 802-735-1679 Tara direct Does your plan identify the Secondary Disaster Leader? Yes – Claudia Reuben Claudia.reuben@mtahq.org 778-957-4991
+```
+[p130_c0008] Training
+[p130_c0009] _Page 1 of 2_
+
+## Page 131
+
+[p131_c0001]
+
+```text
+Personnel: Does your plan describe the way in which the company trains its employees and agents to assist customers during and after a disaster? No – Because as the Company only direct customers are affiliates Company Staff: Does your plan describe training needed to prepare staff for their responsibilities in responding to changing circumstances as the disaster enters varying stages that will necessitate activation of different phases and parts of your plan? Yes – “Roles & Responsibilities”
+```
+[p131_c0002] _Page 2 of 2_
+
+## Page 132
+
+[p132_c0001]
+
+```text
+Insurance Producers: Does your plan provide education/instructions to insurance producers to prepare them for their responsibilities, including how to handle customers in the event of a disaster? NA – the Company's only direct customers are affiliates and only serves as reimbursement source for claims settled through channels. Independent Adjusters: Does your plan require your company to conduct training following a disaster to prepare insurance adjusters for New York-specific disaster procedures and coverage issues? NA – the Company's only direct customers are affiliates and only serves as reimbursement source for claims settled through channels.
+```
+### [p132_c0002] Notifications
+[p132_c0003]
+
+```text
+Customers: Does your plan describe the steps the company will take to notify, in a timely manner, the company's customers of any procedural changes? Yes – "Disaster Declaration & Response" Adjusters and MGAs: If the company uses an independent adjuster or managing general agent ("MGA"), then does your plan describe the way in which the independent adjuster or MGA will provide additional or alternative claims and customer service handling capacity and procedures, including when the independent adjuster or MGA may be located in the disaster- affected area? NA – the Company's only direct customers are affiliates and only serves as reimbursement source for claims settled through channels. Insurance Producers and Adjusters: Does your plan describe the steps the company will take to notify insurance producers and independent adjusters, in a timely manner, of any procedural changes made in response to a disaster? NA – the Company's only direct customers are affiliates and only serves as reimbursement source for claims settled through channels.
+```
+### [p132_c0004] Handling
+[p132_c0005]
+
+```text
+Identifying a disaster: Does your plan identify the methodology the company uses to identify a disaster and determine whether the company should activate all or part of its disaster response plan? Yes – "Disaster Declaration & Response" Communication Channels: Communication Channels: Does your plan describe the additional or alternative communication channels the company will use to communicate with insurance producers or independent adjusters located in or servicing a disaster-affected area? NA – the Company's only direct customers are affiliates and only serves as reimbursement source for claims settled through channels. Local/Toll Free Number: Does your plan identify a local or toll-free number for customers to report claims? NA – the Company's only direct customers are affiliates and only serves as reimbursement source for claims settled through channels. Claims Handling Capacity: Does your plan describe the way in which the Company will provide additional or alternative claims and customer service handling capacity and procedures, including ensuring that there are adequate personnel and information technology systems? NA – the Company's only direct customers are affiliates and only serves as reimbursement source for claims settled through channels. INFORMATIONAL Alternate Procedures: Does your company have alternate or non-computerized procedures for processing claims in an emergency? No Counsel: Does your plan require having counsel available to advise on coverage/claim issues? No
+```
+### [p132_c0006] Procedures
+[p132_c0007]
+
+```text
+Facilities and Equipment: If the company supplies facilities and equipment for insurance producers, does your plan describe what alternate facilities or equipment the company will provide for producers affected by the disaster? NA – because the Company has no facilities Backup Facilities: Does your plan require 'back-up' facilities available for use in an emergency? NA – because the Company has no facilities Fraudulent Acts: Does your plan describe the additional or alternative procedures will the company use for detecting a fraudulent insurance act during and after a disaster? No – because as the Company only direct customers are affiliates. Plan Testing: Does your plan describe the methodology the company uses to test the disaster response plan and the frequency of testing? NA – the Company's only direct customers are affiliates and only serves as reimbursement source for claims settled through channels. INFORMATIONAL Personnel Identification: Does your plan specify what forms of personnel identification your company issues to independent adjusters and producers to permit access to affected areas in disaster situations? No
+```
+[p132_c0008] _Page 3 of 2_
+
+## Page 133
+
+[p133_c0001]
+
+```text
+Mobile response vehicles: Does your plan indicate that mobile response vehicles may be deployed to a New York State disaster site? No
+```
+[p133_c0002] Additional Comments: Approved at the May 2024 MTA Board Meeting
+### [p133_c0003] Documents
+[p133_c0004]
+
+```text
+2024 FTMAC Disaster Response Plan – Red-Lined.docx Disaster Response Plan 2024 FTMAC Disaster Response Plan.docx Disaster Response Plan Affirmation by an officer or other Executive-2024_ CR Signed.pdf Signed Affirmation
+```
+[p133_c0005] _Page 4 of 2_
+
+## Page 134
+
+### [p134_c0001] BUSINESS CONTINUITY PLAN
+### [p134_c0002] First Mutual Transportation Assurance Company (“Company”)
+[p134_c0003] EFFECTIVE: May 1, 2025
+
+## Page 135
+
+### [p135_c0001] First Mutual Transportation Assurance Company BUSINESS CONTINUITY PLAN
+### [p135_c0002] Introduction
+[p135_c0003] This Business Continuity Plan (“Plan”) is designed to help ensure that key business processes of the Company will continue during a disaster or at least have high potential to be restored within a reasonable period of time following a disaster and that restoration proceeds in logical order based on priorities planned for in advance. The Company needs to periodically review for potential threats of disaster and devise plans to ensure timely recovery. These efforts will include, at least annually, conducting a Business Impact Analysis (“BIA”) and subsequent modification to this Plan and/or the Company’s Disaster Response Plan if indicated by the BIA. The BIA shall be designed with the emphasis on predicting the consequences of disruption of a key business functions and processes as a result of a disaster, and to gather information needed to develop recovery and/or mitigation strategies.
+[p135_c0004] This Plan is organized as a plan outline followed by two Appendices, the first containing specific role assignments referred to in the Plan (Appendix A), and the second containing the most recent BIA (Appendix B).
+[p135_c0005] The Company is a Captive Insurance Company and as such does not have employees, systems, applications, buildings, equipment, nor does the Company maintain a network. Instead, the Company relies on the Metropolitan Transportation Authority (“MTA”) the parent of the Company, and affiliates and subsidiaries of the MTA (“affiliates”), and on robust third-party service provider (“TPSP”) vetting, particularly related to the Company’s management company, including reasonable efforts to confirm those entities have appropriate Disaster Response and Business Continuity Plans in place related to Company operations. Please refer to the Company’s Third-Party Service Provider Security Policy for additional detail on the protocols the Company follows related to engaging, monitoring, and contracting with TPSPs. As a captive insurance company, the Company is licensed to insure only risks related to its parent and affiliates and their operations.
+[p135_c0006] The rest of this document provides key steps to be taken to document Company processes in order to better understand the impact of disruption to specific Company processes in order to maximize the chance of timely recovery of the Company’s operations in the event that Company operations are impacted. These processes and procedures are not meant to be all-inclusive, and actual processes may include additional steps as dictated by the findings of other efforts detailed herein.
+### [p135_c0007] Roles & Responsibilities
+[p135_c0008] The Business Continuity Coordinator (“BCC”) oversees compliance with this Plan and has responsibility for:
+- [p135_c0009] 1. ensuring a BIA is conducted at least annually; 2. the overall maintenance of this Plan including ensuring the Plan is reviewed at least once annually, approved by its Board at least once annually, and updated as required; 3. holding and leading a meeting at least once annually to review the Business Continuity and Disaster Response Plans of the Company;
+[p135_c0010] _1 | Page_
+
+## Page 136
+
+### [p136_c0001] First Mutual Transportation Assurance Company BUSINESS CONTINUITY PLAN
+- [p136_c0002] 4. working with the Company's affiliates, management company, and other critical TPSPs to ensure maintenance of this Plan as well as mitigations and/or other staging actions designed to ensure timely recovery from a disaster are undertaken and maintained; and 5. ensuring this Plan is distributed any time a material change is made but at least once annually to key stakeholders including: BCC, Backup to the BCC, appropriate representatives of affiliates of the Company, and the management company.
+### [p136_c0003] Lines of Authority, Succession of Management & Delegation of Authority
+[p136_c0004] The BCC has overall responsibility for the Plan. The Company does not have employees, systems, applications, buildings, equipment, nor does the Company maintain a network and therefore the expectation is that operational authority will be delegated to employees of affiliates, management company, or other TPSPs, as deemed appropriate by the BCC and/or the Board, including an employee of one of these entities potentially serving as the Company's BCC.
+[p136_c0005] The Company's ability to maintain a state of readiness to be able to promptly and effectively respond to a disaster necessarily rests primarily with TPSPs and/or affiliates of the Company. The priority of delegation of authority based on availability will be: 1) BCC, 2) lead management company representative, 3) lead parent company representative, all as detailed in the Company's Disaster Response Plan.
+### [p136_c0006] Business Impact Analysis
+[p136_c0007] The BCC shall ensure the Company performs a BIA at least annually. This analysis emphasizes the capacity of the Company to continue its normal business operations during and immediately after a disaster. The BCC will lead the development and review of the BIA and will ensure mitigations and/or recovery strategies are put in place to minimize the operational and financial impact of disruption. The BIA shall include identification of major business processes and recovery point objectives. See attached Appendix B for current BIA.
+### [p136_c0008] Interaction with External Business Entities, Including TPSPs
+[p136_c0009] As explained in the Introduction to this Plan, the Company is a captive insurance company and does not have employees, systems, applications, buildings, equipment, nor does the Company maintain a network. Accordingly, the Company relies primarily on robust third-party service provider ("TPSP") vetting, a management company, and the Company's affiliates to conduct Company operations. Notification of a disaster will more likely than not come to the attention of the BCC via a declaration from a TPSP that they have experienced a disaster or from the Company's management company, advising receipt of notice of a disaster by a TPSP that conducts important Company operations.
+[p136_c0010] It is also possible that the MTA or an affiliate or subsidiary could experience a disaster that impacts their employees, systems, applications, buildings, equipment, or network, resulting in impairment of processing of Company activity. One beneficial side effect of the distributed way the Company conducts its operations, and a component of the Company's business continuity strategy, is the low probability that all major aspects of the Company's processing will be affected simultaneously. For example, Company operations are distributed across multiple entities; TPSPs of the Company have operations located across multiple states including the management company.
+[p136_c0011] _2 | Page_
+
+## Page 137
+
+### [p137_c0001] First Mutual Transportation Assurance Company BUSINESS CONTINUITY PLAN
+### [p137_c0002] Disaster Declaration and Response
+[p137_c0003] A “Disaster Declaration” is a formal notification process that accomplishes two main objectives:
+- [p137_c0004] 1. It formally sets the restoration and recovery processes in motion; 2. It notifies and activates the recovery teams that they need to assist the Company through the disaster.
+[p137_c0005] The BCC will be the primary point of contact, make the disaster declaration, coordinate with regulators, and ensure timely notification is delivered to appropriate members of the Notification List(s) detailed in the appendix to the Company’s Disaster Response Plan, using the best available means under the circumstances, with priority on using email communications if available. The BCC will also provide guidance regarding procedural changes in effect during the disaster, updates on disaster remediation, at appropriate points as indicated by the specifics of the disaster, but no less frequently than once daily to entities listed in Notification List 1 of the Appendix to the Company’s Disaster Response Plan unless otherwise agreed at the time of the disaster. The BCC is also responsible for guiding the Company and coordinating TPSPs as to any requirements related to disaster response and efforts to return the Company to normal operations and for revoking the Disaster Declaration when the disaster is over.
+[p137_c0006] The BCC shall make the Disaster Declaration decision based on all available information but with top priority placed on the impact on the Company’s ability to meet policyholder obligations. If as a result of a disaster there is significant potential for impact to the Company’s ability to meet policyholder obligations, then that should be viewed as strong evidence that a Disaster Declaration should be declared. In addition, a disaster impacting a critical service provider of the Company should also be viewed as strong evidence that a Disaster Declaration should be declared by the Company.
+### [p137_c0007] Business Processes, Information Technology and Data
+[p137_c0008] It is important that the Company be able to continue its normal business processes in the event of a disaster. As mentioned in the Introduction to this Plan, the Company is a captive insurance company and as such does not have employees, systems, applications, buildings, equipment, nor does the Company maintain a network. Instead, the Company relies on the affiliates of the Company and on robust TPSP vetting, particularly related to the Company’s management company. This vetting will include reasonable efforts to periodically confirm those entities have appropriate Disaster Response and Business Continuity Plans in place related to Company operations. The TPSPs are located across multiple states and has made representations that critical Company data are replicated to an offsite location at regular intervals during the workday and that physical backups are made and securely stored offsite at least daily. The expectation is that these factors will mean minimal interruption to Company operations, and rapid recovery of data if required, in the event of a disaster impacting Company operations.
+[p137_c0009] _3 | Page_
+
+## Page 138
+
+### [p138_c0001] First Mutual Transportation Assurance Company BUSINESS CONTINUITY PLAN
+[p138_c0002] The distributed way the Company conducts its operations and its reliance on TPSPs makes for a low probability that all major aspects of the Company's processing will be affected simultaneously. However, in the event of a major event that impacts multiple locations, the Company aims to commence near normal business processes with access to information systems and data within a reasonable time, factoring the BIA. Depending on the severity of the event, 'reasonable time' could vary from 48 hours to two weeks as prescribed in the BIA.
+### [p138_c0003] Training & Testing
+[p138_c0004] The BCC shall periodically -- at least once every three years -- host a formal meeting with employees of an appropriate affiliate or affiliates of the Company as well as employees of the Company's management Company to walk through this Plan, with an emphasis on recovery strategies, recovery point objectives and business processes identified as critical as a result of the BIA. During this process the BCC shall secure updated representations regarding disaster response and business continuity plans in place at these entities related to Company operations. The meeting shall be documented in Company files and any findings suggesting amendments to this Plan or the Disaster Response Plan of the Company shall be actioned for timely remediation.
+### [p138_c0005] Regulatory Compliance
+[p138_c0006] This Plan may also serve the purpose of satisfying any regulatory requirements applicable to the Company related to business continuity and disaster response. Accordingly, the BCC should be familiar with applicable requirements and ensure those requirements are factored into this Plan, including arranging updates to the Plan from time-to-time as indicated from such review and monitoring.
+[p138_c0007] _4 | Page_
+
+## Page 139
+
+### [p139_c0001] First Mutual Transportation Assurance Company BUSINESS CONTINUITY PLAN
+### [p139_c0002] APPENDIX A
+[p139_c0003]
+
+```text
+Business Continuity Coordinator (Disaster Liaison or Disaster Leader) Name Claudia Reuben Business Continuity Coordinator (Disaster Liaison or Disaster Leader) - Address\Email\Phone(s) 2 Broadway, New York, New York 10004 Office 212-878-7361 Claudia.reuben@mtahq.org Backup to Business Continuity Coordinator (Disaster Liaison or Disaster Leader) Name James R. Girardin, jgirardin@amethystcaptive.com, 802-735-1677 direct Backup to Business Continuity Coordinator (Disaster Liaison or Disaster Leader) - Address\Email\Phone(s) c/o Alliant Insurance Services, Inc. 101 Park Ave New York, New York 10178 jgirardin@amethystcaptive.com 802-735-1677 direct
+```
+[p139_c0004] _5 | Page_
+
+## Page 140
+
+### [p140_c0001] APPENDIX B
+### [p140_c0002] BUSINESS IMPACT ANALYSIS
+[p140_c0003] As of
+[p140_c0004]
+
+```text
+Process Description Point in time the BI has a greater impact Amount of time before the BI has operational or financial impact Operational / Financial Impact of a BI Event Resources needed to continue operations at varying levels of disruption Potential for dissatisfaction or defection by customers * Insurance policy issuance * Policies are issued annually using the same policy forms as expiring coordinated by an officer, Parent's insurance broker or by Davies; signed by an authorized person * Annually; Paratransit/Non -Revenue – 3/1 Property / Terrorism – 5/1 All Agency Protective Liability – 6/1 All Agency Excess Liability – 10/31 Premises - 12/7 Stations & Force – 12/15 Minimal if any impact as the policy issuance can be deferred * Delay in evidencing coverage to parent/affiliate, although no significant impact since the ultimate risk remains with parent/affiliate, with or without a captive policy * Process could be coordinated by an officer of the Company working for parent/affiliate or its broker or Colleagues from another Davies office at a different location within a short period * No impact as the insured is the Parent / affiliates
+```
+[p140_c0005] _6 | Page_
+
+## Page 141
+
+### [p141_c0001] First Mutual Transportation Assurance Company BUSINESS CONTINUITY PLAN
+[p141_c0002]
+
+```text
+Combined Capital Construction OCIP – 6/30/25 LIRR 3 rd Track OCIP – 1/1/24 OCIP Excess Casualty – 4/1/23 Builders Risk Combined Capital Construction 6/30/25 Builders Risk LIRR 3 rd Track 1/1/24 OCIP – Mini RFP – 6/30/28 Builders Risk – Mini RFP – 6/30/28
+```
+[p141_c0003] _7 | Page_
+
+## Page 142
+
+### [p142_c0001] First Mutual Transportation Assurance Company BUSINESS CONTINUITY PLAN
+[p142_c0002]
+
+```text
+Claims Handling Company does not have a duty to defend. All public-facing activity is handled by a commercial insurer and/or a TPA and non-public facing claims are by the parent and a TPA NA NA NA NA NA Cash and Treasury function Not a high-volume activity. This is carried out by the treasury team at the parent/affiliate, after Davies and an Officer initiate payment requests No special periods but there are a few deadlines driven by policy renewals and periodical claim reimbursement. Varies by type of payment, but generally 3+ months Claims Payable: Delay in claims payments may have moderate to high impact Claims receivable (reinsurance): Little to no activity. Payments coordinated by parent/affiliate can be made electronically by reinsurer. Operating Expenses: Usually monthly quarterly payments. Delays have no significant impact Written Premium: Minimal if any impact. Timing can be changed & is paid by Parent/affiliate's treasury function can likely maintain payments using loan funds or Company funds until normal operations are restored. Parent/affiliate's treasury functions are critical part of their own operations which has its own BCP and has multiple offices to operate from. Colleagues from another Davies office can help meet the needs. No impact to the Customer or Insured
+```
+[p142_c0003] _8 | Page_
+
+## Page 143
+
+### [p143_c0001] First Mutual Transportation Assurance Company BUSINESS CONTINUITY PLAN
+[p143_c0002]
+
+```text
+the parent to captive electronically. Ceded Premium: There are a few payments that are due by a certain date which may have a moderate to high impact Regulatory Reporting Amethyst prepares the regulatory reports, approved by Officers prior to submission. Prior to December 29, 2024, Davies was responsible for reporting. During February and March A delay of 3+ months may be impactful Regulators will likely grant extensions, especially after a disaster. Delayed filings could result in penalties and/or reputational damage. Amethyst has its own BCP that can be activated and the work distributed appropriately. No impact to the Customer or Insured Accounting and financial reporting Amethyst prepares monthly financials for submission to Parent. Prior to December 29, 2024, Davies was responsible for reporting. Low to medium impact monthly or quarterly. Medium impact at year-end Low to medium impact monthly or quarterly if delayed more than 2 months Medium to high impact at year-end if delayed more than 2 months 1-2 months or more resulting in delays in consolidating Company financials with parent Parent/affiliate accounting team with knowledge of Company financials can help. Colleagues from Amethyst office can help meet the needs. No impact to the Customer or Insured
+```
+[p143_c0003] _9 | Page_
+
+## Page 144
+
+### [p144_c0001] FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p144_c0002] New York State Insurance Captive of
+> [p144_c0003] The logo for the Metropolitan Transportation Authority (MTA) is a dark blue circle containing the white letters "MTA" in a bold, sans-serif font.
+[p144_c0004] Metropolitan Transportation Authority
+### [p144_c0005] T A B
+### [p144_c0006] 10
+### [p144_c0007] Glossary of Insurance Terms
+
+## Page 145
+
+### [p145_c0001] Glossary of Captive Insurance Terms
+[p145_c0002] Actuarial Report - An analysis intended to project ultimate loss costs using probability theory and other methods of statistical analysis. Used to determine the adequacy of a property and casualty insurer's statutory loss reserves and life insurer's unearned premium (technical) reserves.
+[p145_c0003] Adjuster - A person who settles claims for insurers or self-insurance pools who may be either an employee of the insurance company or an independent contractor engaged by the insurer or self-insured.
+[p145_c0004] Admitted Company - A company licensed or authorized to sell insurance to the general public. In the U.S., admitted companies are licensed on a state-by-state basis and differentiated from surplus lines insurers, which are authorized to sell insurance in a state on a non-admitted basis,
+[p145_c0005] Affiliated Risk - The risks of the owners of the captive or their affiliates or of the participant in a captive cell when describing risks insured in a captive,
+[p145_c0006] Aggregate - The greatest amount recoverable under a policy or reinsurance agreement from a single loss or all losses incurred during the contract period (can be multiyear or annual).
+[p145_c0007] Aggregate Excess - Short for aggregate excess of loss. A method by which an insurer may recover excess losses after a policy or reinsurance aggregate or underlying deductible has been exhausted.
+[p145_c0008] Broker - An intermediary who represents the insured in the purchase of insurance or reinsurance. Therefore, the broker's compensation should be from the insured, not the insurer, to prevent conflicts of interest.
+[p145_c0009] Captive - An insurance company that has as its primary purpose the financing of the risks of its owners or participants. Typically licensed under special purpose insurer laws and operated under a different regulatory system than commercial insurers. The intention of such special purpose licensing laws and regulations is that the captive provides insurance to sophisticated insureds that require less policyholder protection than the general public.
+[p145_c0010] Case Reserves - Loss reserves set up for an identified claim, with each claim assigned a case number.
+[p145_c0011] Claims-made Insurance - Insurance that provides coverage for claims made against an insured within the policy period, regardless of when the action or accident giving rise to the claim occurred. The insured must have been notified of the claim after the retroactive date and must report it to the insurer before the expiration of the policy or any extended reporting period.
+[p145_c0012] Deductible - An amount that an insured agrees to pay, per occurrence or on a per-policy basis, toward the total amount of the insured loss or losses. Insurance is written on this basis at reduced rates since the insured is responsible for the deductible payments as losses occur.
+[p145_c0013] Deferred Acquisitions Cost - The amount of an insurer's acquisition costs incurred as premium is written but earned and expensed over the term of the policy. The deferred portion is capitalized and recognized as an asset on the insurer's balance sheet.
+[p145_c0014] _1_
+
+## Page 146
+
+[p146_c0001] Deferred Tax Asset - The amount of loss reserves or unearned premium that is not deducted from an insurer's income when calculating income taxes. The deferral in the tax deduction arises because of the requirement to discount loss and unearned premium reserves. The insurer records an asset equal to the expected future amount of the tax deduction,
+[p146_c0002] Earned Premium - The amount of premium covering the period a policy has been in force. Usually property, casualty, and health premium is earned in equal proportion to the amount of time elapsed since policy inception, i.e., 1/12 per month, but life insurance and some property and casualty policies insuring seasonal risks may earn in proportion to the amount of exposure.
+[p146_c0003] Gross Written Premium (GWP) - The total premium written and assumed by an insurer before deductions for reinsurance and ceding commissions.
+[p146_c0004] Incurred but not reported (IBNR) - The loss reserve value established by insurance and reinsurance companies in recognition of their liability for future payments on losses that have occurred but that have not yet been reported to them.
+[p146_c0005] Incurred Loss - Total amount of a loss, including amounts paid and reserves for future payments.
+[p146_c0006] Insured - Person or organization covered by an insurance policy, including the "named insured" and any additional insureds for-whom protection is provided under the policy term.
+[p146_c0007] Liability Limits - The stipulated sum or sums beyond which an insurance company is not liable for payments due to a third party. The insured remains legally liable above the limits.
+[p146_c0008] Limitation of Risk - The maximum amount an insurer or reinsurer must pay in any one loss event.
+[p146_c0009] Loss - The destruction, reduction, or disappearance of value of tangible or intangible property; bodily or emotional injury; or reduction in income
+[p146_c0010] Loss Adjustment Expense (LAE) - The expense incurred by the insurer in the investigation, defense, and settlement of claims under its policies.
+[p146_c0011] Occurrence - An accident or incident, including continuous or repeated exposure to conditions that result in a loss neither expected nor intended from the standpoint of the insured, or an act or related series of acts that result in the same.
+[p146_c0012] Premium - The sum paid for an insurance policy or consideration in the insurance contract. As income to the insurer, it is therefore the basis for taxes on the insurer.
+[p146_c0013] Pure Premium - The amount of premium calculated for the risk to be insured, net of policy expenses. The amount of premium available to pay losses and allocated loss adjustment expenses (ALAEs).
+[p146_c0014] Sponsor - The legal entity that contributes statutory capital to from a sponsored or association captive.
+[p146_c0015] Standard Premium - Premium established by using rates believed by underwriters to reflect the standard or average risk for the class, before application of retrospective rating formulas. When debits and credits based on the insureds loss history or exposure are applied, the standard premium equals the pure premium.
+[p146_c0016] _2_
+
+## Page 147
+
+[p147_c0001] Underwriting Expenses - 1. The cost incurred by an insurer when deciding whether to accept or decline a risk; may include meetings with the insureds or brokers, actuarial review of loss history, or physical inspections of exposures. 2. Expenses deducted from insurance company revenues (including incurred losses and acquisition costs) to determine underwriting profit.
+[p147_c0002] Underwriting Profit - Insurer profit before investment income and income taxes.
+[p147_c0003] Underwriting Risk - Uncertainty about whether or when a loss will occur and its amount.
+[p147_c0004] Unearned Premium (UEP) - In property and casualty insurance, the fraction of written premium corresponding to the unexpired paid-up portion of the policy. If a policy has cancellation provisions, this is reserved on either a gross or short-rate basis (both discounted for income tax calculations).
+[p147_c0005] Yellow Book - The annual reporting form for property and casualty insurers in the U.S.
+[p147_c0006] _3_

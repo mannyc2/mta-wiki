@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T23-02-39-805Z_1976810-c647d6ee_ingest_2012-02-brt-webster-cac1-summary",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:23:10.180Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d-webster-ave-sbs-cac1-2012-new",
+        "local_observation_id": "project_webster_ave_sbs_cac1_2012",
+        "decision": "new",
+        "rationale": "Observation's base_record_id (project_12-webster-ave) matches the existing canonical registry record for Webster Avenue Select Bus Service exactly. Registry record includes this source (2012_02_brt_webster_cac1_summary) and the alias project_webster-ave-sbs-cac1-2012. No linking to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p001_c0003",
+            "source_quote": "Webster Avenue Select Bus Service"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-fordham-plaza-redev-2012-new",
+        "local_observation_id": "project_fordham_plaza_redevelopment_2012",
+        "decision": "new",
+        "rationale": "Observation's base_record_id (project_fordham-plaza-redevelopment-2012) matches the existing canonical registry record for Fordham Plaza Redevelopment exactly. Registry record includes this source (2012_02_brt_webster_cac1_summary) and the same description. No linking to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p002_c0006",
+            "source_quote": "Fordham Plaza Redevelopment"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-fordham-road-sbs-2012-new",
+        "local_observation_id": "project_fordham_road_sbs_2012_reference",
+        "decision": "new",
+        "rationale": "Observation's base_record_id (project_fordham-road-sbs-2010-01-14) matches the existing canonical registry record for Fordham Road Select Bus Service exactly. Registry record includes this source (2012_02_brt_webster_cac1_summary) and the alias project_fordham-road-sbs-2012-reference. No linking to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p001_c0008",
+            "source_quote": "Fordham Road Select Bus Service"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-21-37-000Z_2111393-1da59b95_canonicalize_2026-06-10t23-02-39-805z-1976810-c647d6ee-ingest-2012-02-brt-webster-cac1-summary-project-identity"
+}

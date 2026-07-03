@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "route_cluster_006",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_006.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_006.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 0,
+    "weak_alias_count": 2,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "route_b68-ace",
+      "route_b68-nyct-2025"
+    ]
+  ],
+  "do_not_merge": [],
+  "weak_aliases": [
+    {
+      "record_id": "route_b68-ace",
+      "aliases": [
+        "B68",
+        "route_b68",
+        "route_b68_ace"
+      ],
+      "reason": "Source labels and local observation IDs are useful for search but not merge authority."
+    },
+    {
+      "record_id": "route_b68-nyct-2025",
+      "aliases": [
+        "B68",
+        "B68 Bus Route",
+        "route_b68",
+        "route_b68_nyct_2025"
+      ],
+      "reason": "Source labels and local observation IDs are useful for search but not merge authority."
+    }
+  ],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Merge route records sharing the same route_id and borough when no variant distinction exists and both reference the same transit program/context."
+  ],
+  "rationale": "Both records describe the MTA B68 bus route in Brooklyn. They share the identity key 'route_b68' (flagged as duplicate_global_identity), identical route_id 'B68', same borough 'Brooklyn', and both relate to the Automated Camera Enforcement (ACE) program. The negative signal 'variant mismatch: unknown vs unknown' indicates neither record carries a variant label, so there is no actual variant conflict. The only difference is the source document, which is expected for the same real-world route observed from different data sources."
+}

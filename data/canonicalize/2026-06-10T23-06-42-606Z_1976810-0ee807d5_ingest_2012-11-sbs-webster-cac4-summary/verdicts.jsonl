@@ -1,0 +1,8 @@
+{"decision_id":"bx15-limited-link","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4_summary#p001_c0008"]}
+{"decision_id":"d001-offset-bus-lane-webster","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4_summary#p001_c0007"]}
+{"decision_id":"d002-dedicated-bus-signal-e176","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4_summary#p002_c0006","2012_11_sbs_webster_cac4_summary#p002_c0007"]}
+{"decision_id":"d003-signal-optimization-gun-hill","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4_summary#p002_c0004","2012_11_sbs_webster_cac4_summary#p002_c0005"]}
+{"decision_id":"d004-left-turn-ban-fordham","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4_summary#p002_c0008","2012_11_sbs_webster_cac4_summary#p002_c0009"]}
+{"decision_id":"d005-ittner-place-one-way","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4_summary#p002_c0006"]}
+{"decision_id":"rel-claim-bx15-transfer-bx41","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4_summary#p002_c0012"]}
+{"decision_id":"rel-event-cac4-webster-corridor","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4_summary#p001_c0003"]}

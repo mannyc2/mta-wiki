@@ -1,0 +1,334 @@
+{
+  "run_id": "2026-06-10T23-05-54-642Z_1976810-59962f5c_ingest_2012-11-sbs-webster-cac4",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:07:16.257Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-offset-bus-lanes-webster",
+        "local_observation_id": "treatment_offset_bus_lanes_webster",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_offset-bus-lanes-webster_2",
+            "description": "4 miles of offset bus lanes with bus bulb stations along Webster Avenue, part of Bx41 SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p008_c0002",
+                "source_quote": "■ Bx41 LTD → Bx41 SBS ■ 4 miles of offset bus lanes with bus bulb stations"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p021_c0003",
+                "source_quote": "▪ Replace one general travel lane with a bus lane in each direction"
+              }
+            ]
+          }
+        ],
+        "rationale": "p008_c0002 explicitly states 4 miles of offset bus lanes as part of Bx41 SBS; p021_c0003 confirms replacing one general travel lane with a bus lane in each direction. These are core treatments of the Webster Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p008_c0002",
+            "source_quote": "■ Bx41 LTD → Bx41 SBS ■ 4 miles of offset bus lanes with bus bulb stations ■ For the entire route: – Low-floor buses – Off board fare collection – Station and bus branding – Transit signal priority – Pedestrian safety improvements"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p021_c0003",
+            "source_quote": "▪ Replace one general travel lane with a bus lane in each direction"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-off-board-fare-webster",
+        "local_observation_id": "treatment_off_board_fare_webster",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_off-board-fare-webster",
+            "description": "Off-board fare collection for the entire Bx41 SBS route, like Bx12 SBS on Fordham Road",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p008_c0002",
+                "source_quote": "■ Off board fare collection"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p031_c0002",
+                "source_quote": "■ Off board fare collection (like the Bx12 SBS on Fordham Road)"
+              }
+            ]
+          }
+        ],
+        "rationale": "p008_c0002 lists off-board fare collection as a treatment for the entire Bx41 SBS route; p031_c0002 reiterates off-board fare collection like the Bx12 SBS on Fordham Road.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p008_c0002",
+            "source_quote": "■ Bx41 LTD → Bx41 SBS ■ 4 miles of offset bus lanes with bus bulb stations ■ For the entire route: – Low-floor buses – Off board fare collection – Station and bus branding – Transit signal priority – Pedestrian safety improvements"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p031_c0002",
+            "source_quote": "■ Off board fare collection (like the Bx12 SBS on Fordham Road)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tsp-webster",
+        "local_observation_id": "treatment_transit_signal_priority_webster",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_transit-signal-priority-webster_2",
+            "description": "Transit signal priority for the entire Bx41 SBS route",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p008_c0002",
+                "source_quote": "■ Transit signal priority"
+              }
+            ]
+          }
+        ],
+        "rationale": "p008_c0002 explicitly lists transit signal priority among the treatments for the entire Bx41 SBS route.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p008_c0002",
+            "source_quote": "■ Bx41 LTD → Bx41 SBS ■ 4 miles of offset bus lanes with bus bulb stations ■ For the entire route: – Low-floor buses – Off board fare collection – Station and bus branding – Transit signal priority – Pedestrian safety improvements"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ped-safety-webster",
+        "local_observation_id": "treatment_pedestrian_safety_webster",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_pedestrian-safety-webster_2",
+            "description": "Pedestrian safety improvements for the entire Bx41 SBS route including curb extensions, refuge islands, and neckdowns",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p008_c0002",
+                "source_quote": "■ Pedestrian safety improvements"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p011_c0002",
+                "source_quote": "Pedestrian neckdowns... Pedestrian refuge islands and greening"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p016_c0002",
+                "source_quote": "Neckdown / curb extension"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p016_c0003",
+                "source_quote": "Pedestrian refuge / Median"
+              }
+            ]
+          }
+        ],
+        "rationale": "p008_c0002 lists pedestrian safety improvements for the entire route; p011_c0002 shows neckdowns and refuge islands; p016_c0002 and p016_c0003 illustrate specific pedestrian safety elements.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p008_c0002",
+            "source_quote": "■ Bx41 LTD → Bx41 SBS ■ 4 miles of offset bus lanes with bus bulb stations ■ For the entire route: – Low-floor buses – Off board fare collection – Station and bus branding – Transit signal priority – Pedestrian safety improvements"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p011_c0002",
+            "source_quote": "Pedestrian neckdowns: Points to a narrow pedestrian crossing area on the left side of the street. SBS Station / Bus Bulb: Points to a bus stop area with a shelter and a bus. Pedestrian refuge islands and greening: Points to a small pedestrian refuge island with a tree in the middle of the intersection."
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p016_c0002",
+            "source_quote": "Neckdown / curb extension"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p016_c0003",
+            "source_quote": "Pedestrian refuge / Median"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cbe-improvements",
+        "local_observation_id": "treatment_cbe_traffic_improvements",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_cbe-traffic-improvements",
+            "description": "Cross Bronx Expressway intersection improvements: left-turn ban, dual right-turn lanes, SB bus-only queue jump, convert Ittner Place to one-way",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p024_c0002",
+                "source_quote": "Banning left-turns at CBE on-ramp... Dual right-turning lanes better accommodate the high vehicle volumes accessing the CBE. SB Bus-Only Queue Jump allows buses to get ahead of traffic where there is no bus lane. Convert Ittner Place to one-way to improve access onto the CBE."
+              }
+            ]
+          }
+        ],
+        "rationale": "p024_c0002 describes the Cross Bronx Expressway intersection as part of the Webster Avenue SBS traffic improvements, with explicit callouts for banning left turns, dual right-turn lanes, SB bus-only queue jump, and converting Ittner Place to one-way.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p024_c0002",
+            "source_quote": "Banning left-turns at CBE on-ramp... Dual right-turning lanes better accommodate the high vehicle volumes accessing the CBE. SB Bus-Only Queue Jump allows buses to get ahead of traffic where there is no bus lane. Convert Ittner Place to one-way to improve access onto the CBE."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-e-tremont-improvements",
+        "local_observation_id": "treatment_e_tremont_improvements",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_e-tremont-improvements",
+            "description": "E Tremont Avenue intersection improvements: lengthened left-turn bay, simplified Valentine Ave design, new pedestrian crossings, convert E 178 St to WB one-way, banned SB left-turns",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p025_c0002",
+                "source_quote": "Lengthened Left-Turn Bay... Simplify Valentine Avenue Design... New pedestrian crossings... Convert E 178 St to WB one-way to allow rerouted SB left-turns to access E Tremont Ave... Banned SB left-turns"
+              }
+            ]
+          }
+        ],
+        "rationale": "p025_c0002 describes the E Tremont Avenue intersection improvements as part of the Webster Avenue SBS project, with callouts for lengthened left-turn bay, simplified Valentine Ave design, new pedestrian crossings, E 178th St conversion, and banned SB left turns.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p025_c0002",
+            "source_quote": "Lengthened Left-Turn Bay... Simplify Valentine Avenue Design... New pedestrian crossings... Convert E 178 St to WB one-way to allow rerouted SB left-turns to access E Tremont Ave... Banned SB left-turns"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fordham-rd-improvements",
+        "local_observation_id": "treatment_fordham_rd_improvements",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_fordham-rd-improvements",
+            "description": "Fordham Road intersection improvements: lengthened left-turn bays, NB and SB right-turn bays, banned EB and WB left-turns, signal time reallocated to Webster Ave",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p026_c0002",
+                "source_quote": "Lengthened Left-Turn Bays create more storage space for heavy left-turning volumes"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p026_c0003",
+                "source_quote": "NB and SB right-turn bays add storage space for turning vehicles and keep the bus lane clear"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p026_c0004",
+                "source_quote": "Banned EB and WB left-turns simplify intersection operations. Saved signal time goes to Webster Ave"
+              }
+            ]
+          }
+        ],
+        "rationale": "p026_c0002-4 explicitly describe Fordham Road intersection improvements as part of the Webster Avenue SBS traffic design, including lengthened left-turn bays, right-turn bays, and banned EB/WB left-turns.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p026_c0002",
+            "source_quote": "Lengthened Left-Turn Bays create more storage space for heavy left-turning volumes"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p026_c0003",
+            "source_quote": "NB and SB right-turn bays add storage space for turning vehicles and keep the bus lane clear"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p026_c0004",
+            "source_quote": "Banned EB and WB left-turns simplify intersection operations. Saved signal time goes to Webster Ave"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-e-gun-hill-rd-improvements",
+        "local_observation_id": "treatment_e_gun_hill_rd_improvements",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_e-gun-hill-rd-improvements",
+            "description": "E Gun Hill Road intersection improvements: thru and right-turn only lanes, increased signal time for congested turning movements, curbside bus lane and bus-only RT signal phase",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p027_c0002",
+                "source_quote": "Thru and right-turn only lanes improve traffic organization on this congested approach... Increase signal time for congested turning movements... Curbside bus lane and Bus-Only RT signal phase helps buses get through the intersection faster"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p027_c0003",
+                "source_quote": "Thru and right-turn only lanes improve traffic organization on this congested approach"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p027_c0004",
+                "source_quote": "Increase signal time for congested turning movements"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p027_c0005",
+                "source_quote": "Curbside bus lane and Bus-Only RT signal phase helps buses get through the intersection faster"
+              }
+            ]
+          }
+        ],
+        "rationale": "p027_c0002-5 describe the E Gun Hill Road intersection improvements as part of the Webster Avenue SBS project, including thru/right-turn only lanes, increased signal time, and curbside bus lane with bus-only RT signal phase.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p027_c0003",
+            "source_quote": "Thru and right-turn only lanes improve traffic organization on this congested approach"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p027_c0004",
+            "source_quote": "Increase signal time for congested turning movements"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p027_c0005",
+            "source_quote": "Curbside bus lane and Bus-Only RT signal phase helps buses get through the intersection faster"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-04-53-326Z_2111393-2d1898a1_canonicalize_2026-06-10t23-05-54-642z-1976810-59962f5c-ingest-2012-11-sbs-webster-cac4-treatment-relations"
+}

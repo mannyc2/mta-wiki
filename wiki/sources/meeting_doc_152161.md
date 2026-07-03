@@ -1,0 +1,280 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-152161"
+record_kind: "source"
+display_name: "2025-2029 Capital Plan Board Presentation"
+source_id: "meeting_doc_152161"
+source_ids:
+  - "meeting_doc_152161"
+local_observation_id: "source_2025_2029_capital_plan_board_presentation"
+local_observation_ids:
+  - "source_2025_2029_capital_plan_board_presentation"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T16:36:53.934Z"
+submission_ids:
+  - "sub_1a87f095bd140a91"
+payload:
+  authority_tier: "board_material"
+  content_type: "board presentation"
+  publisher: "MTA"
+  title: "2025-2029 Capital Plan Board Presentation"
+evidence_refs:
+  -
+    block_id: "p001_c0005"
+    evidence_id: "meeting_doc_152161#p001_c0005"
+    page_number: 1
+    source_id: "meeting_doc_152161"
+    source_path: "raw/sources/meeting_doc_152161/blocks.jsonl"
+    source_quote: "2025-2029 Capital Plan"
+    text_sha256: "sha256:cc83810dbeb715eb47adb41e1e20a2127b99fd2204f90656316afc3e8de35359"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_152161#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_152161"
+    source_path: "raw/sources/meeting_doc_152161/blocks.jsonl"
+    source_quote: "The Future Rides With Us"
+    text_sha256: "sha256:ec08c560eb7832907655fc235a39a5ac7cc66e3987286430da26b47df518e625"
+    text_source: "raw_text"
+---
+
+# 2025-2029 Capital Plan Board Presentation
+
+source_id: meeting_doc_152161
+citation: cite block ids exactly as shown in square brackets
+document: 152 block(s)
+
+## Page 1
+
+> [p001_c0001] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a white circle.
+[p001_c0002] INWOOD 207 ST
+> [p001_c0003] A large, glowing blue circle with a white capital letter 'A' inside, representing the A train line.
+### [p001_c0004] The Future Rides With Us
+[p001_c0005] 2025-2029 Capital Plan
+> [p001_c0006] A smaller version of the MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a white circle.
+
+## Page 2
+
+### [p002_c0001] The 2025-2029 Capital Plan
+[p002_c0002] A vital investment in transit in New York City and throughout the region
+> [p002_c0003] Legend Line Improvements Station Improvements Signal Modernization Line and Service Station Name Structure Repair Train Line ADA Improvements Elevated Line Protection Train Line Station Renewals Elevated Line Protection Train Line Customer Communication Upgrades Elevation/Escalator Replacement Facility Improvements Citywide Rolling Stock Replacements Shop Repair Shop Name Upgrades Power System Upgrades 1,500 regional operating on 1,500 regional operating on Pump Room 500 Electric Buses 2,000 Conventional Buses
+> [p002_c0004] Legend Line Improvements Facility Improvements Station Improvements Signal Renewal Line/Branch Description Facility Name Description of Work Station Name Climate Resilience Line/Branch Description Shops & Yards Project ADA Improvements Switch/Capacity Upgrades Line/Branch Description Power System Upgrades Rehabilitation Line Repair Line/Branch Description Bridge or Viaduct Rehab Renewals Order 500 regional railroad cars, including M9As, coaches, and locomotives.
+[p002_c0005] _*CTDOT responsible for capital work on Connecticut portion of New Haven Line_
+[p002_c0006] _**Metro-North service west of Hudson is provided under an agreement with NJ Transit and certain assets are the responsibility of NJ Transit_
+
+## Page 3
+
+### [p003_c0001] MTA
+### [p003_c0002] Provide Frequent & Reliable Service
+### [p003_c0003] PLAN HIGHLIGHTS
+- [p003_c0004] • Order 2,000 new railcars • Install modern signals on at least 75 miles of the subway system • Modernize train shops & yards • Rebuild or repair 80 substations • Rebuild key infrastructure, including the Grand Central Artery , over 30 railroad bridges and viaducts , and subway tunnels • Start building the Interborough Express
+> [p003_c0005] A front-facing view of a silver and blue MTA Long Island Rail Road train car, number 9069, on tracks. The train has headlights on and is positioned on a yellow-painted platform edge. The MTA logo and 'Long Island Rail Road' text are visible on the front of the train.
+
+## Page 4
+
+### [p004_c0001] MTA
+### [p004_c0002] Improve the Customer Experience
+### [p004_c0003] PLAN HIGHLIGHTS
+- [p004_c0004] • Make at least 60 more subway stations accessible • Rebuild and make priority repairs at one-third of subway stations and 30 railroad stations • Continue to expand camera infrastructure • Install new technology to communicate with customers • Install new fare gates in 150 subway stations
+
+## Page 5
+
+### [p005_c0001] MTA
+### [p005_c0002] Take Action on Climate Change
+### [p005_c0003] PLAN HIGHLIGHTS
+- [p005_c0004] • Install new infrastructure to improve stormwater flood protections • Protect over 20 miles of the Hudson Line • Improve ventilation and reduce excessive heat • Safeguard our bridges • Purchase 500 zero-emission buses
+> [p005_c0005] A photograph taken at night showing construction workers in high-visibility yellow vests and hard hats installing a large, ornate metal gate. The gate is being pushed into place by several workers. In the background, a subway entrance is visible with a glowing red 'STOP' sign and a red 'X' sign. The scene is illuminated by artificial lights, and the ground is paved with yellow markings.
+
+## Page 6
+
+### [p006_c0001] MTA
+### [p006_c0002] Building the Plan
+[p006_c0003] Bottom up: building on the 20-Year Needs Assessment to determine investment needs
+> [p006_c0004] The cover of the MTA 20-Year Needs Assessment report, titled "The Future Rides With Us". The cover art depicts a vibrant, modern city street with a blue and yellow train, a bus, and pedestrians. Below the street scene is a cross-section of a subway station with people waiting and a train arriving. The MTA logo and "Metropolitan Transportation Authority" text are at the bottom left.
+> [p006_c0005] A photograph of a silver and blue railcar on tracks. Overlaid on the image is the text "Over 8,700 Railcars".
+> [p006_c0006] A photograph of a blue bus. Overlaid on the image is the text "Nearly 6,000 Buses".
+> [p006_c0007] A photograph of a large red rail bridge under construction. Overlaid on the image is the text "Over 1,000 Rail Bridges".
+> [p006_c0008] A photograph of a subway station platform with workers. Overlaid on the image is the text "704 Stations".
+> [p006_c0009] An aerial photograph of a bridge over a body of water. Overlaid on the image is the text "7 Vehicular Bridges" and "2 Tunnels".
+> [p006_c0010] A photograph of a train track. Overlaid on the image is the text "Over 1,900 Miles of Track".
+> [p006_c0011] A photograph of a maintenance shop. Overlaid on the image is the text "Over 100 Maintenance Shops".
+> [p006_c0012] A photograph of an elevator. Overlaid on the image is the text "493 Elevators".
+
+## Page 7
+
+### [p007_c0001] Building the Plan
+[p007_c0002] Bottom up: building on the 20-Year Needs Assessment to determine investment needs
+> [p007_c0003] 2,000 railcars beyond useful life
+> [p007_c0004] 42% Buses due for replacement
+> [p007_c0005] 80 LIRR bridges and viaducts in poor condition
+> [p007_c0006] 53% Harlem Line station platforms in disrepair
+> [p007_c0007] Cable dehumidification needed at Whitestone & Throgs Neck Bridges
+> [p007_c0008] 39% Metro-North track is in poor condition
+> [p007_c0009] 8 of 16 shops have majority components in disrepair
+> [p007_c0010] 36% NYCT substation components in poor/marginal condition
+
+## Page 8
+
+### [p008_c0001] MTA
+### [p008_c0002] State of Good Repair Focus
+[p008_c0003] Across the program, investments are sized to get us on the path to State of Good Repair , taking into account the continued aging of the system.
+> [p008_c0004] The figure consists of three stacked bar charts, each representing a different infrastructure component. Each chart has two bars for the years 2025 and 2030. The bars are stacked with three categories: 'In a state of good repair' (light purple), 'Addressed by the Plan' (dark blue), and 'Projected decay' (red). The 'In a state of good repair' category is the largest in all charts, especially in 2025. The 'Addressed by the Plan' category is most prominent in the 2030 NYCT Substations chart. The 'Projected decay' category is the smallest in all charts, particularly in the LIRR Bridges chart. Component Year In a state of good repair Addressed by the Plan Projected decay NYCT Substations 2025 High Low Low 2030 Medium Medium Low LIRR Bridges 2025 High Low Low 2030 High Low Low Harlem Line Station Platforms 2025 Medium Low High 2030 Medium Medium Low
+
+## Page 9
+
+### [p009_c0001] MTA
+### [p009_c0002] New York City Transit – Power
+[p009_c0003] The power system is vital to providing good service and our assets are aging
+### [p009_c0004] Average number of trains delayed per incident
+[p009_c0005] July 2018 – March 2024
+> [p009_c0006] Category Average number of trains delayed per incident Power 33.9 Infrastructure 24.1 Electronics Maintenance 13.6 Track 13.3 Signals 11.7 Elevators / Escalators 10.2 Car Equipment 6.0
+[p009_c0007] 81 of 224 substations are rated poor or marginal...
+[p009_c0008] and are only getting older
+
+## Page 10
+
+### [p010_c0001] MTA
+### [p010_c0002] New York City Transit – Power
+[p010_c0003] This Plan will address the most vulnerable locations
+> [p010_c0004] A map of Lower Manhattan showing subway stations and vulnerable locations. The map includes the Hudson River to the west and the East River to the east. Subway lines are color-coded: red (A, C, E), green (B, D, F), and yellow (G, H, I, L, M). Stations are marked with grey circles containing colored dots. Two stations are highlighted with red double-ringed circles, indicating they are the most vulnerable. The map is credited to 'Subways GIS, Subways EAM, ESRI, HERE 2019, NYC OpenData, NY MTA'.
+> [p010_c0005] A map of Upper Manhattan showing subway stations and vulnerable locations. The map includes the Hudson River to the east. Subway lines are color-coded: red (A, C, E), green (B, D, F), and yellow (G, H, I, L, M). Stations are marked with grey circles containing colored dots. Two stations are highlighted with red double-ringed circles, indicating they are the most vulnerable. The map is credited to 'Subways GIS, Subways EAM, ESRI, HERE 2019, NYC OpenData, NY MTA'.
+
+## Page 11
+
+### [p011_c0001] MTA
+### [p011_c0002] New York City Transit – Power
+[p011_c0003] This Plan will keep us ahead of the decay curve
+> [p011_c0004] A Sankey diagram illustrating the impact of the 2025-2029 Capital Plan on substation conditions. The diagram compares the percentage of substations in 'good repair' and 'poor or marginal condition' in 2025 and 2030. The 2025-2029 Capital Plan is shown as a thick purple band that shifts the distribution from 2025 to 2030. Condition 2025 2030 Substations in a state of good repair 64% 73% Substations in poor or marginal condition 36% 27% The diagram shows that the 2025-2029 Capital Plan will improve the condition of substations, reducing the backlog of poor or marginal condition substations from 36% in 2025 to 27% in 2030. Conversely, the percentage of substations in a state of good repair will increase from 64% in 2025 to 73% in 2030.
+
+## Page 12
+
+### [p012_c0001] MTA
+### [p012_c0002] Long Island Rail Road – Bridges
+[p012_c0003] Even though it's a small percentage, a large number of LIRR bridges need repair
+> [p012_c0004] A vertical bar chart with two segments. The top segment is blue and labeled '87%'. The bottom segment is red and labeled '13%'. A red arrow points from the text '63 undergrade bridges need repair' to the red segment. Category Percentage Other 87% 63 undergrade bridges need repair 13% 63 undergrade bridges need repair
+> [p012_c0005] Four photographs showing various stages of bridge structural damage and repair. Top left: A view looking up at a bridge pier with significant water damage and rust. Top right: A close-up of a bridge's steel framework showing severe rust and corrosion. Bottom left: A view of a bridge's steel girder and support structure, showing rust and wear. Bottom right: A person standing on a bridge deck, looking down at a long, narrow opening in the concrete deck where green reinforcement bars are visible.
+> [p012_c0006] A map of Long Island showing the Long Island Rail Road (LIRR) route in blue. Red dots are placed along the route to indicate bridges in poor or marginal condition. The map covers a large area of the island, with the dots concentrated in several clusters, particularly in the central and southern parts of the island.
+[p012_c0007] ● Bridge in poor or marginal condition
+
+## Page 13
+
+### [p013_c0001] MTA
+### [p013_c0002] Long Island Rail Road – Bridges
+[p013_c0003] This Plan will nearly double our investment in structures to address the most urgent locations and stabilize the decay curve
+> [p013_c0004] 2025 87% 2030 88% 13% 12% 2025-2029 Capital Plan Category 2025 2030 Rehabilitation 87% 88% Painting and Waterproofing 13% 12%
+[p013_c0005] This Plan will address ~20 locations for rehabilitation...
+[p013_c0006] ...and ~45 locations for painting and waterproofing.
+
+## Page 14
+
+### [p014_c0001] MTA
+### [p014_c0002] Hudson Line Resilience
+[p014_c0003] It's not just asset condition – we're also protecting our system from growing threats like climate change.
+> [p014_c0004] A photograph showing the Hudson Line tracks submerged in water. The tracks are dark metal rails with cross-ties, partially covered by a layer of water. In the background, the wide expanse of the Hudson River is visible under a sky filled with white and grey clouds. Distant hills are visible on the horizon.
+[p014_c0005] _High tide flooding near Croton Harmon after a storm, Jan 2024_
+> [p014_c0006] An illustrative rendering of a train station platform and tracks submerged in water. The water is a bright, translucent blue, indicating a significant rise in sea level. The tracks are dark metal rails with cross-ties, partially submerged. In the background, there are green trees, a tall building, and a clear blue sky with some clouds. A sign for 'Spuyten Duyvil' is visible on the platform.
+[p014_c0007] _Illustrative rendering showing monthly high tide flooding at Spuyten Duyvil station in the 2050s with 30 inches of projected sea level rise_
+
+## Page 15
+
+### [p015_c0001] MTA
+### [p015_c0002] Hudson Line Resilience
+[p015_c0003] We are focused on the most vulnerable segments of the Hudson Line
+[p015_c0004] _Current torrential rain flood_
+[p015_c0005] +
+[p015_c0006] _Steep slopes_
+[p015_c0007] +
+[p015_c0008] _2050s sea level rise flood_
+[p015_c0009] =
+[p015_c0010] _Climate vulnerable interlockings_
+
+## Page 16
+
+### [p016_c0001] Hudson Line Resilience
+[p016_c0002] This Plan targets climate vulnerability and assets in poor condition, setting us up to continue service for the next hundred years.
+> [p016_c0003] A map of the Hudson Line route from Croton-Harmon to Duviel Marble Hill. The route is marked with orange diamond symbols representing poor/marginal condition culverts and yellow rectangular symbols representing poor/marginal condition retaining walls. A red dashed line indicates climate vulnerable interlocking along the entire route. Major stations labeled include Croton-Harmon, Ossining, Scarborough, Philipse Manor, Tarrytown, Irvington, Ardsley-on-Hudson, Dobbs Ferry, Hastings-on-Hudson, Greystone, Glenwood, Yonkers, Ludlow, Riverdale, Spuyten, and Duviel Marble Hill.
+- [p016_c0004] Climate vulnerable interlocking Poor/marginal condition culvert Poor/marginal condition retaining wall
+[p016_c0005] _Torrential rain and tidal flood threats on the Hudson Line_
+> [p016_c0006] A cross-sectional diagram illustrating climate threats to the Hudson Line. On the left, a blue area represents the 'Future High Tide with Sea Level Rise + Torrential Rain' with white arrows indicating water level. A red label 'Flooding risk' points to the water level. A red label 'Equipment damage risk' points to a blue train. A red label 'Washout risk' points to the ground beneath the tracks. A red label 'Run-off from adjacent properties' points to a slope on the right. A red label 'Mudslide risk' points to a slope on the right. A 'Retaining wall' is shown on the right side of the tracks.
+[p016_c0007] _Climate resilience protections will reduce flooding threats_
+> [p016_c0008] A cross-sectional diagram illustrating climate resilience protections. On the left, a blue area represents the 'Future High Tide with Sea Level Rise + Torrential Rain' with white arrows indicating water level. A green label 'Seawall' points to a wall at the water's edge. A green label 'Rock revetment' points to the ground beneath the tracks. A green label 'Raised equipment' points to a blue train on an elevated platform. A green label 'Reduced runoff from upland properties' points to a slope on the right. A green label 'Drainage to accommodate runoff' points to a drainage area on the right. A 'Retaining wall' is shown on the right side of the tracks. The 'Right-of-way' is indicated at the bottom.
+
+## Page 17
+
+### [p017_c0001] MTA
+### [p017_c0002] Building the Plan
+[p017_c0003] Top down: comparing level of investment to other industrial enterprises
+> [p017_c0004] Annual Capital Expenditure / Gross Asset Value Ratio: MTA Versus Selected Industries Industry CapEx to Gross Asset Value Ratio MTA 3.4% Freight Rail 4.2% Utility 7.0% Shipping 7.1% Logistics 8.0% Commercial Airlines 11.1% Automobile 12.9% Peer Average 8.3% Note: Assumes Gross Asset Value of Capital Assets of $170.0 billion provided by the MTA. Assumes $5.7 billion of annual capital spend based upon the MTA's 2018-2022 average actual capital expenditures. Assumes index of 1.11 from 2024 to 2027 dollars based on ENR Building Cost Index of New York.
+[p017_c0005] A J.P. Morgan analysis found that annual capital expenditures of $16-23 billion were necessary to match comparable peers.
+
+## Page 18
+
+### [p018_c0001] MTA
+### [p018_c0002] Building the Plan
+[p018_c0003] Independent review: New York State Comptroller
+[p018_c0004] _2025-2029 Capital Program by Aspect of Need and Uses_
+[p018_c0005]
+
+```text
+Aspect of Needs and Uses Low High Considerations SOGR/NR $37,300 $55,200 Construction Cost Inflation; Outdated SOGR projections Rolling Stock Purchases $12,000 $20,900 Purchase timing and cost inflation Resilience $2,000 $4,000 Dependent on work sequencing, inclement weather patterns Accessibility $5,300 $8,100 Dependent on NYCT Portion of Capital Program Network Expansion $1,200 $3,975 Projects Selected Total (2025-2029 Capital Program) $57,800 $92,175 Unfunded 2020-2024 Capital Projects $0 $15,000 Toll Amount; Federal Approval; Amount of Non-toll Replacement Funding Total with Unfunded 2020-2024 Capital Projects $57,800 $107,175
+```
+[p018_c0006] Sources: Metropolitan Transportation Authority; OSC analysis
+[p018_c0007] Analysis found total capital need ranges from $57.8 to $92.2 billion for 2025-2029 Capital Plan.
+
+## Page 19
+
+### [p019_c0001] MTA
+### [p019_c0002] Building the Plan
+[p019_c0003] Accounts for inflation we've experienced over the past five years, especially in the construction sector.
+### [p019_c0004] Building Cost Index
+[p019_c0005] 29.1% cumulative inflation
+> [p019_c0006] Year Building Cost Index (Relative) 2019 1.0 2020 1.1 2021 1.2 2022 1.3 2023 1.4 2024 1.5
+[p019_c0007] _Source: ENC Building Cost Index – New York_
+
+## Page 20
+
+### [p020_c0001] MTA
+### [p020_c0002] Building the Plan
+[p020_c0003] Increasing capacity to deliver at MTA Construction & Development.
+### [p020_c0004] Case Study: ADA Station Bundling
+> [p020_c0005] Time Period Contracts Stations 2010-2014 13 14 2015-2019 15 16 2020-2024 12 52 The chart consists of three stacked bars. The first bar (2010-2014) is blue with 13 horizontal segments. The second bar (2015-2019) is green with 15 horizontal segments. The third bar (2020-2024) is orange with 12 horizontal segments. The height of the third bar is significantly taller than the others, representing 52 stations.
+### [p020_c0006] Agencywide: Record Commitments ($ in Billions)
+> [p020_c0007] Year Commitment ($ in Billions) 2020 $5.4 2021 $7.7 2022 $11.4 2023 $8.0 The chart shows four bars representing the years 2020, 2021, 2022, and 2023. The bars are white with blue text labels. A dashed white box is drawn around the 2023 bar, and inside the box, the words 'Congestion', 'Pricing', and 'Delay' are listed vertically.
+
+## Page 21
+
+### [p021_c0001] MTA
+### [p021_c0002] Building the Plan
+[p021_c0003] This Plan accounts for modest and achievable growth in our contracting capacity
+[p021_c0004] _Proposed 2025-2029 Commitments by Year_
+> [p021_c0005] A stacked bar chart titled 'Proposed 2025-2029 Commitments by Year'. The vertical axis represents the number of commitments, ranging from 0 to 18,000 in increments of 2,000. The horizontal axis represents the years from 2025 to 2029. Each bar is composed of three segments: 'Third Party / In-House' (blue, bottom), 'Major Projects' (yellow, middle), and 'Rolling Stock' (orange, top). The total commitments show a dip in 2026 and a steady increase through 2029. Year Third Party / In-House Major Projects Rolling Stock Total Commitments 2025 8,500 500 5,500 14,500 2026 6,000 1,000 3,200 10,200 2027 10,800 1,000 2,400 14,200 2028 11,500 1,000 2,000 14,500 2029 11,700 2,800 1,000 15,500
+
+## Page 22
+
+### [p022_c0001] MTA
+### [p022_c0002] The 2025-2029 Capital Plan
+### [p022_c0003] Focused on urgent needs
+[p022_c0004] More than 90% dedicated to core infrastructure
+### [p022_c0005] Responsibly sized
+[p022_c0006] In line with independent estimates and lower than inflation
+### [p022_c0007] Ambitious and achievable
+[p022_c0008] Based on increased capacity across MTA C&D
+[p022_c0009]
+
+```text
+Agency ($ in millions) New York City Transit 47,386 MTA Bus Company 454 Long Island Rail Road 6,005 Metro-North Railroad 6,005 MTA Interagency 300 Major Projects & Expansion 5,250 Total CPRB Plan 65,400
+```
+[p022_c0010]
+
+```text
+Bridges & Tunnels 3,000 Total 2025-2029 Capital Plan 68,400
+```
+
+## Page 23
+
+### [p023_c0001] MTA
+### [p023_c0002] The choice is clear
+> [p023_c0003] An illustration of a current urban street scene. On the street level, there is a mix of cars, a bus, and pedestrians. A yellow and black striped barrier is visible on the right side of the street. Below the street, a subway station is shown with a train on tracks. The station has multiple levels with people waiting and walking. The overall scene is somewhat cluttered and represents a less efficient urban environment.
+> [p023_c0004] An illustration of a proposed urban street scene. The street level features dedicated bus lanes marked with red pavement and the words "ONLY BUS". A blue bus is shown in one of these lanes, and a yellow taxi is in another. Pedestrians and cyclists are also present. Below the street, a modern subway station is shown with a train on tracks. The station has multiple levels with people waiting and walking. The overall scene is cleaner and more organized, representing a more efficient urban environment.

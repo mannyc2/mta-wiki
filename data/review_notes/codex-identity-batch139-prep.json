@@ -1,0 +1,200 @@
+{
+  "batch_id": "identity139",
+  "global_kind": "entity",
+  "prepared_count": 12,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-72551-mta-sir",
+      "target_id": "entity_meeting-doc-100241-staten-island-railway",
+      "confidence": "high",
+      "reason": "Both records identify the Staten Island Railway agency. The alias source names \"MTA Staten Island Railway (SIR)\" and the target is the source-rich Staten Island Railway canonical record with many meeting-document references.",
+      "evidence_refs": [
+        "meeting_doc_72551#p040_c0012",
+        "meeting_doc_100366#p016_c0001",
+        "meeting_doc_100241#p004_c0006"
+      ],
+      "guard_notes": "Entity guard satisfied: same railway agency, with only MTA prefix/SIR acronym variation. Alias is absent from current entity merges and the pair is absent from entity do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_sir-meeting-doc-140406",
+      "target_id": "entity_meeting-doc-100241-staten-island-railway",
+      "confidence": "high",
+      "reason": "Both records identify the Staten Island Railway agency. The alias record uses the MTA Staten Island Railway name with the SIR acronym, while the target is the broader source-backed Staten Island Railway record.",
+      "evidence_refs": [
+        "meeting_doc_140406#p011_c0008",
+        "meeting_doc_140406#p002_c0002",
+        "meeting_doc_100366#p016_c0001",
+        "meeting_doc_104721#p001_c0003"
+      ],
+      "guard_notes": "Entity guard satisfied: same agency identity, not a committee, department, or program category. Alias is absent from current entity merges and the pair is absent from entity do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_sir-staten-island-railway",
+      "target_id": "entity_meeting-doc-100241-staten-island-railway",
+      "confidence": "high",
+      "reason": "Both records identify the same Staten Island Railway agency. The alias carries MTA Staten Island Railway / railway agency wording across multiple sources, and the target carries the durable Staten Island Railway agency name.",
+      "evidence_refs": [
+        "meeting_doc_105951#p001_c0001",
+        "meeting_doc_105951#p001_c0002",
+        "meeting_doc_107541#p001_c0007",
+        "meeting_doc_100366#p016_c0001",
+        "meeting_doc_100241#p004_c0006"
+      ],
+      "guard_notes": "Entity guard satisfied: MTA prefix and SIR shorthand are naming variants for the same railway agency. Alias is absent from current entity merges and the pair is absent from entity do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-143306-staten-island-railway",
+      "target_id": "entity_meeting-doc-100241-staten-island-railway",
+      "confidence": "high",
+      "reason": "Both records use the exact entity name Staten Island Railway and entity type agency. The alias is a single meeting-document duplicate, while the target is the source-rich canonical agency record.",
+      "evidence_refs": [
+        "meeting_doc_143306#p029_c0002",
+        "meeting_doc_143306#p022_c0003",
+        "meeting_doc_100366#p016_c0001",
+        "meeting_doc_102831#p020_c0001"
+      ],
+      "guard_notes": "Entity guard satisfied: exact durable organization name and compatible agency type. Alias is absent from current entity merges and the pair is absent from entity do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_staten-island-railway-meeting-doc-101141",
+      "target_id": "entity_meeting-doc-100241-staten-island-railway",
+      "confidence": "high",
+      "reason": "Both records identify Staten Island Railway. The alias display name adds the MTA prefix, but its payload entity name is Staten Island Railway, matching the target agency record.",
+      "evidence_refs": [
+        "meeting_doc_101141#p012_c0003",
+        "meeting_doc_101141#p026_c0003",
+        "meeting_doc_100366#p016_c0001",
+        "meeting_doc_104721#p001_c0003"
+      ],
+      "guard_notes": "Entity guard satisfied: same railway agency identity with only prefix/style variation. Alias is absent from current entity merges and the pair is absent from entity do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-115391-sirtoa",
+      "target_id": "entity_staten-island-rapid-transit-operating-authority",
+      "confidence": "high",
+      "reason": "Both records use the exact durable organization name Staten Island Rapid Transit Operating Authority. The alias is a one-source agency duplicate and the target is a source-rich operating-authority record.",
+      "evidence_refs": [
+        "meeting_doc_115391#p004_c0004",
+        "meeting_doc_115246#p001_c0001",
+        "meeting_doc_111756#p006_c0005"
+      ],
+      "guard_notes": "Entity guard satisfied: exact organization name and compatible agency/operating-authority type. Alias is absent from current entity merges and the pair is absent from entity do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-33226-sirtoa",
+      "target_id": "entity_staten-island-rapid-transit-operating-authority",
+      "confidence": "high",
+      "reason": "Both records use the exact durable organization name Staten Island Rapid Transit Operating Authority. The alias is a single-source duplicate of the source-rich operating-authority target.",
+      "evidence_refs": [
+        "meeting_doc_33226#p003_c0007",
+        "meeting_doc_115246#p001_c0001",
+        "meeting_doc_124306#p001_c0001"
+      ],
+      "guard_notes": "Entity guard satisfied: exact organization name and compatible agency/operating-authority type. Alias is absent from current entity merges and the pair is absent from entity do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-tab",
+      "target_id": "entity_transit-adjudication-bureau",
+      "confidence": "high",
+      "reason": "Both records use the exact durable agency name Transit Adjudication Bureau. The target also carries the standard TAB acronym in its display name, matching the alias cluster context.",
+      "evidence_refs": [
+        "meeting_doc_100356#p004_c0003",
+        "meeting_doc_102811#p005_c0020",
+        "meeting_doc_105961#p001_c0004",
+        "meeting_doc_102786#p009_c0013"
+      ],
+      "guard_notes": "Entity guard satisfied: exact agency name, with TAB as acronym only. Alias is absent from current entity merges and the pair is absent from entity do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_transit-adjudication-bureau-2023",
+      "target_id": "entity_transit-adjudication-bureau",
+      "confidence": "high",
+      "reason": "Both records use the exact durable agency name Transit Adjudication Bureau. The dated alias is a single-source duplicate of the source-rich Transit Adjudication Bureau target.",
+      "evidence_refs": [
+        "meeting_doc_105906#p001_c0010",
+        "meeting_doc_105961#p001_c0004",
+        "meeting_doc_107541#p001_c0010"
+      ],
+      "guard_notes": "Entity guard satisfied: exact agency name and compatible agency type. Alias is absent from current entity merges and the pair is absent from entity do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-72551-fmtac",
+      "target_id": "entity_first-mutual-transportation-assurance",
+      "confidence": "high",
+      "reason": "Both records identify First Mutual Transportation Assurance Company. The alias includes the FMTAC acronym in parentheses, while the target is the source-rich company/agency record with the same full name.",
+      "evidence_refs": [
+        "meeting_doc_72551#p040_c0012",
+        "meeting_doc_102796#p083_c0007",
+        "meeting_doc_107466#p003_c0002"
+      ],
+      "guard_notes": "Entity guard satisfied: exact full organization name with acronym variant. Alias is absent from current entity merges and the pair is absent from entity do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-85751-fmtac",
+      "target_id": "entity_first-mutual-transportation-assurance",
+      "confidence": "high",
+      "reason": "Both records identify First Mutual Transportation Assurance Company / FMTAC. The alias display expands FMTAC to the same full company name used by the target.",
+      "evidence_refs": [
+        "meeting_doc_85751#p002_c0007",
+        "meeting_doc_102796#p083_c0007",
+        "meeting_doc_111901#p004_c0004"
+      ],
+      "guard_notes": "Entity guard satisfied: full name and acronym identify the same durable organization. Alias is absent from current entity merges and the pair is absent from entity do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-79496-gcmoc",
+      "target_id": "entity_gcmcoc-2023-adopted-budget",
+      "confidence": "high",
+      "reason": "Both records use the exact durable organization name Grand Central Madison Concourse Operating Company. The alias is a single-source subsidiary record and the target is a source-rich agency record for the same named company.",
+      "evidence_refs": [
+        "meeting_doc_79496#p163_c0007",
+        "meeting_doc_105846#p001_c0004",
+        "meeting_doc_133491#p010_c0002"
+      ],
+      "guard_notes": "Entity guard satisfied: exact company name and compatible subsidiary/agency record type. Alias is absent from current entity merges and the pair is absent from entity do-not-merge. Durable merge direction is alias_id -> target_id."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files data/identity-overrides data/review_notes data/canonical wiki raw | head -200",
+    "git status --short",
+    "ls -la data/identity-overrides data/review_notes 2>/dev/null",
+    "jq 'keys' data/identity-overrides/merges.json && jq '.[0:3] // . | if type==\"array\" then .[0:3] else . end' data/identity-overrides/do-not-merge.json",
+    "head -5 data/canonical/entities.jsonl",
+    "jq '.proposed_aliases[0:2], {keys: keys}' data/review_notes/codex-identity-batch138-prep.json",
+    "jq '.proposed_aliases[0:1], {keys: keys}' data/review_notes/codex-identity-batch137-prep.json",
+    "jq '.aliases.entity | keys[]' data/identity-overrides/merges.json",
+    "jq '.pairs | keys, (to_entries[0:10])' data/identity-overrides/do-not-merge.json",
+    "wc -l data/canonical/entities.jsonl",
+    "jq normalized-name grouping over data/canonical/entities.jsonl",
+    "jq alias/do-not-merge spot checks for selected entity candidate ids",
+    "jq target alias checks for selected entity target ids",
+    "jq selected entity record payload/evidence inspections"
+  ],
+  "commands_not_run": [
+    "provider-backed commands",
+    "agent harness commands",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "commands with --profile or provider",
+    "materialize",
+    "export-jsonl",
+    "full validate"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T17-48-04-591Z_1496766-bb550d62_ingest_14th-street-truck-transit-priority-trifold-r1-p2",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-10T19:21:47.399Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "corridor-14th-street-ttp-trifold-new",
+        "local_observation_id": "corridor_14th_street_ttp_trifold",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'corridor_14th-street-ttp' is the closest registry match — it is the exact same registry card. The source '14th_street_truck_transit_priority_trifold_r1_p2' is already in the registry record's source_ids, and the alias 'corridor_14th-street-ttp-trifold' is in its record_aliases. The limits in the observation (9th Avenue to 3rd Avenue) are consistent with the registry record's eastbound limits. Since the closest match IS the observation's own base_record_id, this is 'new' (it already resolves to that id), per the rule that link must match a DIFFERENT existing record.",
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+            "block_id": "p001_c0017",
+            "source_quote": "Left turns will not be allowed off of 14th Street between 9th Avenue and 3rd Avenue."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-20-34-670Z_1617604-ea8f6ff9_canonicalize_2026-06-10t17-48-04-591z-1496766-bb550d62-ingest-14th-street-truck-transit-priority-trifold-r1-p2-corridor-identity"
+}

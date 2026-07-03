@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T23-10-25-438Z_1976810-853a327c_ingest_2013-03-sbs-125-st-cb11-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:34:08.501Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "decision-entity-nyct-new",
+        "local_observation_id": "entity_nyct_2013_03_cb11",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_mta-nyct (MTA New York City Transit). The observation name \"New York City Transit\" matches the registry record's entity_name \"MTA New York City Transit\", and the source 2013_03_sbs_125_st_cb11_slides is already listed in entity_mta-nyct's source_ids. No different registry record is a better match; the match is the observation's own base record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p001_c0006",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "decision-entity-nycdot-new",
+        "local_observation_id": "entity_nyc_dot_2013_03_cb11",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_nyc-dot (New York City Department of Transportation). The observation name and acronym match the registry record exactly, and the source 2013_03_sbs_125_st_cb11_slides is already listed in entity_nyc-dot's source_ids. No different registry record is a better match; the match is the observation's own base record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p001_c0004",
+            "source_quote": "New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "decision-entity-cb11-new",
+        "local_observation_id": "entity_cb11_manhattan_2013_03",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_community-board-11-manhattan (Manhattan Community Board 11). The observation name \"Manhattan Community Board 11\" matches, and the source 2013_03_sbs_125_st_cb11_slides is already listed in entity_community-board-11-manhattan's source_ids. No different registry record is a better match; the match is the observation's own base record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p001_c0002",
+            "source_quote": "Manhattan Community Board 11 Transportation Committee"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-32-40-280Z_2111393-70aa4104_canonicalize_2026-06-10t23-10-25-438z-1976810-853a327c-ingest-2013-03-sbs-125-st-cb11-slides-entity-identity"
+}

@@ -1,0 +1,295 @@
+{
+  "run_id": "2026-06-10T23-09-00-287Z_1976810-091c3bb9_ingest_201203-brt-34th-cac6",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:16:30.472Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-tr-001-off-board-fare",
+        "local_observation_id": "tc_201203_34th_sbs_off_board_fare",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_tc-201203-34th-sbs-off-board-fare",
+            "description": "Off-board fare collection implemented on 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p003_c0002",
+                "source_quote": "Implemented off-board fare collection"
+              },
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p004_c0002",
+                "source_quote": "Travel times reduced by 10%"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_tc-201203-34th-sbs-off-board-fare",
+            "description": "Off-board fare collection implemented on 34th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p003_c0002",
+                "source_quote": "Implemented off-board fare collection"
+              },
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p004_c0002",
+                "source_quote": "Travel times reduced by 10%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source blocks p003_c0002 and p004_c0002 explicitly document off-board fare collection implemented on 34th Street as part of the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p003_c0002",
+            "source_quote": "Implemented off-board fare collection"
+          },
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p004_c0002",
+            "source_quote": "Travel times reduced by 10%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tr-002-bus-lanes",
+        "local_observation_id": "tc_201203_34th_sbs_bus_lanes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_tc-201203-34th-sbs-bus-lanes",
+            "description": "Offset bus lanes on 34th Street as part of SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p007_c0002",
+                "source_quote": "60 ft wide section: East of Third Ave West of Ninth Ave"
+              },
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p008_c0002",
+                "source_quote": "52 ft wide section: Third Ave to Ninth Ave"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_tc-201203-34th-sbs-bus-lanes",
+            "description": "Offset bus lanes on 34th Street corridor for SBS",
+            "evidence_refs": [
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p007_c0002",
+                "source_quote": "60 ft wide section: East of Third Ave West of Ninth Ave"
+              },
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p008_c0002",
+                "source_quote": "52 ft wide section: Third Ave to Ninth Ave"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source blocks p007_c0002 and p008_c0002 document the 34th St SBS design with offset bus lanes in both 60 ft and 52 ft wide sections; p009_c0003 and p009_c0004 label offset bus lanes directly.",
+        "evidence_refs": [
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p007_c0002",
+            "source_quote": "60 ft wide section: East of Third Ave West of Ninth Ave"
+          },
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p008_c0002",
+            "source_quote": "52 ft wide section: Third Ave to Ninth Ave"
+          },
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p009_c0004",
+            "source_quote": "Offset Bus Lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tr-003-bus-bulbs",
+        "local_observation_id": "tc_201203_34th_sbs_bus_bulbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_tc-201203-34th-sbs-bus-bulbs",
+            "description": "Bus bulbs (curb extensions) at bus stops on 34th Street as part of SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p009_c0001",
+                "source_quote": "Bus Bulb"
+              },
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p020_c0002",
+                "source_quote": "Elements: bus lanes, loading zones, and 2 bus bulbs"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_tc-201203-34th-sbs-bus-bulbs",
+            "description": "Bus bulbs on 34th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p009_c0001",
+                "source_quote": "Bus Bulb"
+              },
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p020_c0002",
+                "source_quote": "Elements: bus lanes, loading zones, and 2 bus bulbs"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source blocks p009_c0001 labels 'Bus Bulb' on the 34th St design photo; p020_c0002, p021_c0002, p024_c0002 enumerate '2 bus bulbs', '9 bus bulbs', '3 bus bulbs' as construction elements in all three sections.",
+        "evidence_refs": [
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p009_c0001",
+            "source_quote": "Bus Bulb"
+          },
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p020_c0002",
+            "source_quote": "Elements: bus lanes, loading zones, and 2 bus bulbs"
+          },
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p021_c0002",
+            "source_quote": "Elements: bus lanes, loading zones, and 9 bus bulbs"
+          },
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p024_c0002",
+            "source_quote": "DOT elements: bus lanes, loading zones, and 3 bus bulbs"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tr-004-loading-zones",
+        "local_observation_id": "tc_201203_34th_sbs_loading_zones",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_tc-201203-34th-sbs-loading-zones",
+            "description": "Loading zones on 34th Street as part of SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p009_c0005",
+                "source_quote": "Loading Zone"
+              },
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p010_c0002",
+                "source_quote": "Provide loading access to residential buildings, including day times"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_tc-201203-34th-sbs-loading-zones",
+            "description": "Loading zones on 34th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p009_c0005",
+                "source_quote": "Loading Zone"
+              },
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p010_c0002",
+                "source_quote": "Provide loading access to residential buildings, including day times"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source block p009_c0005 labels 'Loading Zone' on the 34th St design photo; p010_c0002 describes Loading Zone Goals including loading access to residential buildings, stores, and NYU Clinical Cancer Center on 34th St.",
+        "evidence_refs": [
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p009_c0005",
+            "source_quote": "Loading Zone"
+          },
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p010_c0002",
+            "source_quote": "Provide loading access to residential buildings, including day times"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tr-005-mta-bus-time",
+        "local_observation_id": "tc_201203_34th_sbs_mta_bus_time",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_tc-201203-34th-sbs-mta-bus-time",
+            "description": "MTA Bus Time real-time bus information implemented on M34 SBS",
+            "evidence_refs": [
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p005_c0002",
+                "source_quote": "Will be implemented on M34, with expansion citywide"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_tc-201203-34th-sbs-mta-bus-time",
+            "description": "MTA Bus Time real-time bus information on 34th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201203_brt_34th_cac6",
+                "block_id": "p005_c0002",
+                "source_quote": "Will be implemented on M34, with expansion citywide"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source block p005_c0002 explicitly states MTA Bus Time 'Will be implemented on M34, with expansion citywide' as part of the 34th St SBS project update.",
+        "evidence_refs": [
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p005_c0002",
+            "source_quote": "Will be implemented on M34, with expansion citywide"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-11-34-022Z_2111393-95f2a7f7_canonicalize_2026-06-10t23-09-00-287z-1976810-091c3bb9-ingest-201203-brt-34th-cac6-treatment-relations"
+}

@@ -1,0 +1,476 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-115321"
+record_kind: "source"
+display_name: "source_meeting_doc_115321"
+source_id: "meeting_doc_115321"
+source_ids:
+  - "meeting_doc_115321"
+local_observation_id: "source_meeting_doc_115321"
+local_observation_ids:
+  - "source_meeting_doc_115321"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T12:14:24.817Z"
+submission_ids:
+  - "sub_fd0c7d14144313a8"
+payload:
+  authority_tier: "plan_document"
+  content_type: "Financial Plan"
+  date_text: "July 2023"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-07"
+    precision: "month"
+    raw_text: "July 2023"
+  published_date_normalized: "2023-07"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "MTA 2024 Preliminary Budget July Financial Plan 2024-2027 Volume 1"
+  year: 2023
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_115321#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_115321"
+    source_path: "raw/sources/meeting_doc_115321/blocks.jsonl"
+    text_sha256: "sha256:3163c2befd22f7086bc43be67352ff85a0a7147bef4d127053112694a3686a81"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_115321#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_115321"
+    source_path: "raw/sources/meeting_doc_115321/blocks.jsonl"
+    text_sha256: "sha256:d45587b7d95c8a3325fe8c7fce8ec7ee84cea4cf18a8b262163f2a4cf1936780"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_115321#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_115321"
+    source_path: "raw/sources/meeting_doc_115321/blocks.jsonl"
+    text_sha256: "sha256:d739213fdeb5c80a1978105f0c007f191add90e8dc2b40e7a106d32bd18bcf01"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0006"
+    evidence_id: "meeting_doc_115321#p001_c0006"
+    page_number: 1
+    source_id: "meeting_doc_115321"
+    source_path: "raw/sources/meeting_doc_115321/blocks.jsonl"
+    text_sha256: "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0002"
+    evidence_id: "meeting_doc_115321#p002_c0002"
+    page_number: 2
+    source_id: "meeting_doc_115321"
+    source_path: "raw/sources/meeting_doc_115321/blocks.jsonl"
+    text_sha256: "sha256:45a6e26f9d3f06eadeb2b3a685a94e928cc3e147424ef30f2ea941444913690d"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0003"
+    evidence_id: "meeting_doc_115321#p002_c0003"
+    page_number: 2
+    source_id: "meeting_doc_115321"
+    source_path: "raw/sources/meeting_doc_115321/blocks.jsonl"
+    text_sha256: "sha256:ef2f217d2d1a2ab54cd0044ffef9c881851611b18a5e433dfd679fcafc08fb1f"
+    text_source: "raw_text"
+---
+
+# MTA 2024 Preliminary Budget, July Financial Plan 1
+
+source_id: meeting_doc_115321
+citation: cite block ids exactly as shown in square brackets
+document: 197 block(s)
+
+## Page 1
+
+### [p001_c0001] MTA 2024 Preliminary Budget
+[p001_c0002] July Financial Plan 2024-2027
+> [p001_c0003] A collage of various MTA transportation modes. In the foreground, there are two buses: a blue and white bus on the left and a light blue bus in the center. To the right, there is a silver and blue train and a subway car. In the background, the New York City skyline is visible, including the Empire State Building and the Chrysler Building. The Manhattan Bridge is also visible in the background, set against a sunset sky with purple and orange hues. A purple circle with the white 'MTA' logo is positioned in the center of the collage.
+[p001_c0004] Volume 1 July 2023
+> [p001_c0005] The MTA logo, which consists of the letters 'MTA' in white inside a blue circle.
+[p001_c0006] Metropolitan Transportation Authority
+
+## Page 2
+
+### [p002_c0001] OVERVIEW
+### [p002_c0002] MTA 2024 Preliminary Budget July Financial Plan 2024-2027 Volume 1
+[p002_c0003] The MTA's July Plan is divided into two volumes:
+[p002_c0004] Volume 1 consists of financial schedules supporting the complete MTA-Consolidated Financial Plan, including an Executive Summary, the baseline forecast (as detailed in Volume 2 and described below) and certain adjustments captured below the baseline. These "below-the-line" adjustments include: Fare/Toll Increases, Policy Actions, and any MTA Efficiencies and Re-estimates. Volume 1 also includes descriptions of the "below-the-line" actions as well as the required Certification by the Chair/CEO, and a description of the MTA Budget Process.
+[p002_c0005] Volume 2 includes MTA-Consolidated detailed financial and position schedules as well as the narratives that support the baseline projections included in the 2024 Preliminary Budget and the Financial Plan for 2024 through 2027. Also included are the Agency sections which incorporate descriptions of Agency Programs with supporting baseline tables and required information related to the MTA Capital Program.
+
+## Page 3
+
+### [p003_c0001] TABLE OF CONTENTS VOLUME 1
+[p003_c0002] I. Introduction Executive Summary..... I-1 II. MTA Consolidated Financial Plan Where the Dollars Come From and Where the Dollars Go..... II-1 Financial Plan: Statement of Operations..... II-2 Financial Plan: Cash Receipts and Expenditures..... II-4 Reconciliation to Prior Plan..... II-6 Consolidated Subsidies Cash..... II-8 Debt Service Affordability Statement after Below-the-Line Adjustments..... II-10 III. Plan Adjustments Fare/Toll Increases..... III-1 Below-the-Line Adjustments ..... III-3 IV. Appendix Chair and Chief Executive Officer Certification..... IV-1 V. Other The MTA Budget Process..... V-1
+
+## Page 4
+
+### [p004_c0001] I. Introduction
+
+## Page 5
+
+### [p005_c0001] Executive Summary
+[p005_c0002] The 2023 MTA July Financial Plan (the “July Plan” or “Plan”), which includes the 2023 Mid-Year Forecast, the 2024 Preliminary Budget and a Financial Plan for the years 2024 to 2027, updates the 2023 February Financial Plan (the “February Plan”). This Plan, as with all plans beginning with the 2020 July Plan, reflects the ongoing financial and operational impacts stemming from the pandemic, and the gradual recovery of the MTA Region.
+[p005_c0003] As discussed below in further detail, the July Plan reflects a significant commitment from both New York State and New York City to address the MTA’s fiscal shortfalls, as well as resources for service, safety, and security improvements. The Plan includes fare and toll rate increases to generate an annualized 4.0% net increase in fare revenue and an annualized 5.5% net increase in toll revenue in 2023, followed by biennial fare and toll rate increases that generate a 4% net increase in farebox and toll revenue beginning in 2025 and 2027. The Plan reflects savings from operating efficiencies initiatives, including an increase in the savings target of an additional $100 million annually starting in 2025.
+### [p005_c0004] New York State 2023-2024 Enacted Budget
+[p005_c0005] In the FY 2024 Enacted Budget, the State took substantial action to provide the MTA with additional operating revenues dedicated to help solve the MTA’s fiscal crisis due to the effects of the pandemic. This includes an increase in the metropolitan commuter transportation mobility tax (MCTMT) in New York City, a one-time State subsidy of $300 million, an increase in New York City’s contribution to the MTA for the costs of paratransit services and directing a portion of future casino revenues to the MTA.
+[p005_c0006] The Enacted Budget increased the maximum rate of the Payroll Mobility Tax for employers with payroll expenses over $437,500 in any calendar quarter engaging in business in New York City from 0.34% to 0.60%, effective July 1, 2023. The PMT on self-employed individuals with net earnings of $50,000 in New York City was increased from 0.34% to 0.47% for the tax year ending no later than December 31, 2023, and then increasing to 0.60% for subsequent tax years. No other changes to existing PMT rates were made. The increase in PMT rates is projected to generate approximately $1.1 billion annually for the MTA.
+[p005_c0007] The Enacted Budget also provided $300 million in one-time State aid to address the extraordinary impact of the COVID pandemic on MTA operating revenues.
+[p005_c0008] Also included was an extension of an increase in New York City’s contribution to paratransit that had been set to expire on June 30, 2024 and has been extended to June 30, 2030. The Enacted Budget increases the City’s contribution further during the two-year period ending on June 30, 2025: the contribution by the City is increased to eighty percent of net paratransit operating expenses, provided that the City contribution may not exceed $165 million greater than fifty percent of net paratransit operating expenses. The increase in the City’s share of net paratransit expenses is expected to favorably impact the MTA by approximately $165 million annually.
+[p005_c0009] The Enacted Budget directs all license fees from the awarding of up to three downstate casinos to MTA which the Plan assumes will provide an estimated $500 million in both 2026 and 2027.
+[p005_c0010] _I-1_
+
+## Page 6
+
+[p006_c0001] The Plan assumes the third license will be awarded after 2027 and would generate another $500 million. The Enacted Budget also provides MTA a share of the gaming taxes from the downstate casinos, but the Plan assumes that will not provide any revenue until after 2027.
+[p006_c0002] A five-year pilot program was included in the NYS 2023-24 Enacted Budget which authorizes MTA and the New York City Department of Transportation to use automated cameras for enforcement of four additional bus operation-related violations including: violation of posted no standing rules at bus stops; general no stopping zones on bicycle lanes; double parking; and general no standing zones on bus lanes; the Enacted Budget also expanded the number of buses outfitted with cameras from just over 400 buses to over 1,100 buses. The current Automated Bus Lane Enforcement (ABLE) program, which was set to expire in 2025, was extended through 2028.
+[p006_c0003] A fare-free bus pilot program was also authorized. Legislation requires that the program include five fare-free bus routes, one in each of New York City's five boroughs, provided that the pilot program not cost more than $15 million in net operating costs. The selected bus routes are to remain fare-free for six to twelve months.
+[p006_c0004] With the additional State funding, the MTA lowered its proposed fare rate increase to generate a 4 percent annualized increase in farebox revenue, compared with the 5.5 percent proposal included in the February Plan; the proposed toll rate increase, however, remains at 5.5 percent. The lower fare rate increase is projected to reduce MTA farebox revenue by approximately $65 million on an annualized basis. The MTA is investing approximately $35 million annually to improve subway service during mid-day hours on weekdays, on weekends, and on weeknights, and is also making $35 million in annual investments in safety and fare enforcement actions.
+[p006_c0005] Overall, the additional State funding, along with the service-related costs, provide a net improvement to the MTA of $724 million in 2023, $1.1 billion in 2024 and $1.2 billion in 2025, followed by $1.7 billion in 2026 and 2027.
+### [p006_c0006] The July Plan
+[p006_c0007] Ridership continues to recover from the pandemic on a trajectory in line with the midpoint of the McKinsey "high case" and "low case" scenarios that were prepared by McKinsey & Company on behalf of MTA in May 2022. The July Plan continues to assume ridership will continue to track with the midpoint, which is expected to reach a "new normal" of 80 percent of the pre-pandemic level by the end of 2026. Improvements in farebox revenue have exceeded ridership gains as remote work options have changed ticket purchasing dynamics, and these changes are expected to continue and are reflected in the July Plan. The Plan reflects favorable farebox revenue results through April of $37 million, along with favorable toll revenue of $45 million, and, for 2024 through 2027, a favorable adjustment of the average fare reflecting current travel patterns and ticket mix being experienced.
+[p006_c0008] The July Plan also includes anticipated farebox and toll revenue derived from the proposed 2023 4% fare rate increase and the 5.5% toll rate increase. The fare and toll increases, expected to go into effect in late August or early September, are expected to generate $61 million of additional farebox revenue and $57 million of additional toll revenue in 2023, followed by approximately $205 million annually of farebox revenue and $133 million of toll revenue, on average, through the remainder of the Plan. The Plan also includes the resumption of regular biennial fare and toll increases yielding a four percent increase in farebox and toll revenues, which are proposed to be instituted in January 2025 and March 2027. These proposed increases are expected to generate
+[p006_c0009] _I-2_
+
+## Page 7
+
+[p007_c0001] $1.15 billion through the Plan period.
+[p007_c0002] MTA operating agencies have been engaged in an ambitious effort to identify and implement innovative ways of conducting business more efficiently, reduce expenses, and improve service to customers. The February Plan included savings targets from operating efficiencies initiatives of $100 million in 2023, increasing to $400 million in 2024, $408 million in 2025 and $416 million in 2026.
+[p007_c0003] For the 2023 July Financial Plan, New York City Transit, Long Island Rail Road and Metro-North Railroad each have compiled detailed lists of operating efficiencies initiatives totaling, over the Plan period, $688 million at NYCT, $139 million at the LIRR and $140 million at MNR, with $94 million of the MNR savings accruing to the MTA and the remaining $46 million impacting the CDOT subsidy for Connecticut service. These identified savings have been incorporated into Agency financial plans. The remainder of the annual savings targets, along with an annual $100 million increase in the savings target beginning in 2025, remain below-the-line in Volume 1 of the Plan. Among the initiatives identified:
+- [p007_c0004] • The Division of Subways at NYCT, working with their Operations, Maintenance and Procurement stakeholders, is addressing critical station infrastructure planning and ($204M); has extended car equipment maintenance cycles ($163M); is obtaining efficiencies in rail material acquisition ($55M); and is lengthening crew tours to right-size train operations staff ($8M). • The Division of Buses at NYCT has identified changes to bus maintenance schedules utilizing predictive maintenance tools ($35M); and improved analysis of vehicle condition and performance to allow for better maintenance planning ($15M). Aligned with these operational efficiencies are the revenues and schedule savings from Automated Bus Lane Enforcement (ABLE) measures through camera installation on 700 additional buses and expanded enforcement, as permitted through the State 2023-24 Enacted Budget ($80M). Paratransit trip-booking improvements utilizing self-service functionality will create savings and provide a better Paratransit customer experience ($16M). • Long Island Rail Road and Metro-North Railroad have been working together over the past year to identify and incorporate industry best practices in their equipment shops as well as scheduling work along the rail right-of-way. Improved rail equipment scheduling for required maintenance and inspections along with ensuring proper staffing at shop locations will result in reductions to overtime ($51M). Both railroads are working to ensure appropriate inventory is available for required maintenance ($42M). Shop-specific practices are being adjusted for more efficient workflow to reduce the impacts of unplanned events ($36M). Management oversight of operating contracts is better aligning third-party services at work locations along the right-of-way ($24M). Finally, equipment and crew are being more efficiently scheduled to match with demand ($26M).
+[p007_c0005] The Plan also recognizes the recent negotiated settlement with TWU Local 100. While the settlement awaits ratification of the bargaining unit's membership and the MTA Board, the net economic value of that agreement informs the Plan's assumptions for growth in labor costs for all represented MTA bargaining units. The fiscal impact throughout the MTA has been estimated and is included as a below-the-line adjustment to this Plan. If the TWU Local 100 contract is ratified, the settlement – and the impact of the agreement on other bargaining units – will be incorporated into each Agency's baseline financial plans in the November Plan. Previous financial plans had assumed two percent annual wage increases, while the pending TWU Local 100 agreement calls
+[p007_c0006] _I-3_
+
+## Page 8
+
+[p008_c0001] for annual increases of three percent annually for the first two years and 3.5 percent for the third year. Over the Plan period, the additional net labor expenses are estimated to increase by $1.15 billion. Other costs and savings from the agreement, likewise, will be incorporated into the November Plan.
+[p008_c0002] The Plan includes several actions that were taken to reduce current and future expenses and aid in eliminating annual deficits through 2027 and in years beyond the Plan period. These actions include pre-paying 2023 and 2024 pension expenses for employees covered by MTA-sponsored pension plans ($1.06 billion), pre-paying of debt and debt service expenses ($1.37 billion) and funding the OPEB (Other Post-Employment Benefits) Trust, which will cover retiree health benefits ($1.32 billion).
+[p008_c0003] Additionally, the Plan anticipates two additional actions to be taken: a 2024 pre-payment of $500 million towards 2025 pension expenses for MTA-sponsored plans; and the use of $258 million over the Plan period from the OPEB Trust for retiree health benefits.
+[p008_c0004] Other local subsidy resources freed up from the receipt of Federal COVID funding will also be applied to close remaining annual deficits. The Plan assumes $1.24 billion of resources will be used to close the 2023 deficit, followed by $17 million in 2024, $38 million in 2025, $218 million in 2026 and $548 million in 2027.
+### [p008_c0005] The “Bottom Line”
+[p008_c0006] The July Plan presents a balanced budget annually through 2027. This is due to the collective impacts of additional and recurring dedicated revenue provided to MTA in the NYS Enacted Budget, proposed modest toll and fare increases, savings expected to be achieved by MTA implementing operating efficiencies without reducing service and other actions taken by MTA to reduce the burden of debt and other liabilities on the MTA operating budget.
+### [p008_c0007] Risks to MTA’s Financial Future
+[p008_c0008] Additional risks to the Plan include:
+[p008_c0009] Continued paid ridership recovery. The Plan assumes a 10 percent increase in paid ridership by 2026. The potential cost for 5 percent lower recovery is estimated at $325 million per year.
+[p008_c0010] Dedicated tax receipts. An economic slowdown or recession could have a significant impact on the level of dedicated tax receipts received by MTA.
+[p008_c0011] Casino revenue. The approval, and awarding, of downstate casino licenses is uncertain in both outcome and timing, which risks the $500 million assumed to be received by MTA in 2026 and 2027.
+[p008_c0012] MTA operating efficiencies. The Plan could fall short of balance if the $400 million to $500 million of operating efficiencies is not successfully implemented by the MTA.
+[p008_c0013] _I-4_
+
+## Page 9
+
+### [p009_c0001] II. MTA Consolidated Financial Plan
+
+## Page 10
+
+### [p010_c0001] MTA 2024 Preliminary Budget Baseline Revenues and Expenses After Below-the-Line (BTL) Adjustments Non-Reimbursable
+### [p010_c0002] Where the Dollars Come From ...
+> [p010_c0003] Revenue Source Data Revenue Source Percentage Dedicated Taxes 43% Farebox Revenue 26% Toll Revenue 13% Other Revenue 7% Other Funding Agreements 4% Other 4% State/Local and Other 3%
+[p010_c0004]
+
+```text
+By Revenue Source ($ in millions) Farebox Revenue $5,070 Toll Revenue 2,522 Other Revenue 1,312 Dedicated Taxes 8,514 State/Local and Other 645 Other Funding Agreements 818 Other 1 898 Total 2 $19,780
+```
+### [p010_c0005] Where the Dollars Go ...
+### [p010_c0006] By Expense Category
+> [p010_c0007] Expense Category Data Expense Category Percentage Payroll 31% Debt Service 14% Non-Labor + Other Exp Adj 24% Health & Welfare 14% Pension 7% Other Labor 3% BTL Adjustments 2% Overtime 5%
+[p010_c0008]
+
+```text
+By Expense Category 3 includes below-the-line adjustments ($ in millions) Payroll $6,111 Overtime 859 Health & Welfare 2,797 Pension 1,416 Other Labor 648 Total Labor $11,831 Non-Labor + Other Exp Adj 4,666 Debt Service 2,826 BTL Adjustments for Expenses 4 457 Total 2 $19,780
+```
+### [p010_c0009] By MTA Agency
+> [p010_c0010] Expense by MTA Agency Data MTA Agency Percentage NYCT/SIR 51% LIRR 10% MNR 8% MTABC 5% B&T 3% HQ/FMTAC/C&D 1% Debt Service 14% MTA Gen'l Res & Other Exp Adj 3%
+[p010_c0011]
+
+```text
+By MTA Agency 3 includes below-the-line adjustments ($ in millions) NYCT/SIR $10,021 LIRR 2,119 GCMOC 92 MNR 1,533 MTABC 948 HQ/FMTAC/C&D 999 B&T 571 Debt Service 2,826 MTA Gen'l Res & Other Exp Adj 212 BTL Adjustments for Expenses 4 457 Total 2 $19,780
+```
+[p010_c0012] _1 Includes cash adjustments and prior-year carryover._
+[p010_c0013] _2 Totals may not add due to rounding._
+[p010_c0014] _3 Expenses exclude Depreciation, GASB 68 Pension Adjustment, GASB 75 OPEB Adjustment, GASB 87 Lease Adjustment and Environmental Remediation._
+[p010_c0015] _4 The "BTL Adjustments for Expenses" cannot be segmented by expense category or by Agency._
+[p010_c0016] Note: The revenues and expenses reflected in these charts are on an accrued basis.
+[p010_c0017] _II-1_
+
+## Page 11
+
+### [p011_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2024-2027 MTA Consolidated Statement Of Operations By Category ($ in millions)
+### [p011_c0002] Non-Reimbursable
+[p011_c0003]
+
+```text
+Actual 2022 Mid-Year Forecast 2023 Preliminary Budget 2024 Plan 2025 Plan 2026 Plan 2027 Operating Revenues Farebox Revenue $4,024 $4,602 $5,070 $5,216 $5,366 $5,538 Toll Revenue 2,332 2,449 2,522 2,526 2,529 2,532 Other Revenue 7,657 892 962 977 1,002 1,021 Capital and Other Reimbursements 0 0 0 0 0 0 Total Revenues $14,014 $7,943 $8,554 $8,719 $8,897 $9,091
+```
+### [p011_c0004] Operating Expenses
+### [p011_c0005] Labor:
+[p011_c0006]
+
+```text
+Payroll $5,414 $5,909 $6,111 $6,247 $6,402 $6,587 Overtime 1,127 927 859 884 904 923 Health & Welfare 1,423 1,716 1,863 1,986 2,123 2,280 OPEB Current Payment 752 851 934 1,019 1,110 1,209 Pensions 1,339 1,379 1,416 1,557 1,613 1,690 Other-Fringe Benefits 1,009 1,069 1,112 1,168 1,222 1,289 Reimbursable Overhead (400) (453) (464) (463) (477) (460) Total Labor Expenses $10,666 $11,398 $11,831 $12,398 $12,898 $13,519
+```
+### [p011_c0007] Non-Labor:
+[p011_c0008]
+
+```text
+Electric Power $556 $565 $641 $670 $681 $717 Fuel 283 222 220 217 213 218 Insurance 9 30 32 48 67 96 Claims 376 384 410 422 435 444 Paratransit Service Contracts 412 511 512 544 575 604 Maintenance and Other Operating Contracts 806 997 939 951 928 954 Professional Service Contracts 555 736 660 650 651 652 Materials & Supplies 561 708 771 807 799 904 Other Business Expenses 246 283 278 291 293 295 Total Non-Labor Expenses $3,804 $4,435 $4,463 $4,598 $4,640 $4,882
+```
+### [p011_c0009] Other Expense Adjustments:
+[p011_c0010]
+
+```text
+Other $100 $14 $12 $13 $13 $13 General Reserve 0 185 190 200 205 210 Total Other Expense Adjustments $100 $199 $202 $213 $218 $223
+```
+[p011_c0011]
+
+```text
+Total Expenses before Non-Cash Liability Adj. $14,570 $16,032 $16,496 $17,209 $17,756 $18,625
+```
+[p011_c0012]
+
+```text
+Depreciation $3,286 $3,464 $3,507 $3,558 $3,612 $3,666 GASB 68 Pension Expense Adjustment (393) (124) (192) (149) (207) (158) GASB 75 OPEB Expense Adjustment 1,093 1,254 1,273 1,291 1,311 1,329 GASB 87 Lease Adjustment 21 5 5 5 5 5 Environmental Remediation 17 6 6 6 6 6
+```
+[p011_c0013]
+
+```text
+Total Expenses after Non-Cash Liability Adj. $18,594 $20,637 $21,096 $21,920 $22,482 $23,473
+```
+[p011_c0014]
+
+```text
+Conversion to Cash Basis: Non-Cash Liability Adj. ($4,024) ($4,605) ($4,600) ($4,711) ($4,726) ($4,848) Debt Service (excludes Service Contract Bonds) 3,121 2,683 2,826 2,928 2,986 3,303
+```
+[p011_c0015]
+
+```text
+Total Expenses with Debt Service $17,691 $18,715 $19,323 $20,137 $20,741 $21,928
+```
+[p011_c0016]
+
+```text
+Dedicated Taxes and State/Local Subsidies $8,556 $9,125 $9,921 $10,211 $11,050 $11,374
+```
+[p011_c0017]
+
+```text
+Net Surplus/(Deficit) After Subsidies and Debt Service $4,879 ($1,647) ($847) ($1,206) ($794) ($1,463)
+```
+[p011_c0018]
+
+```text
+Conversion to Cash Basis: GASB Account 0 0 0 0 0 0 Conversion to Cash Basis: All Other (6,045) 1,603 898 172 410 797
+```
+[p011_c0019]
+
+```text
+Cash Balance Before Prior-Year Carryover ($1,166) ($44) $51 ($1,035) ($384) ($666)
+```
+[p011_c0020]
+
+```text
+Below-the-Line Adjustments 0 44 (51) 1,035 384 666 Prior Year Carryover Balance 1,166 0 0 0 0 0
+```
+[p011_c0021]
+
+```text
+Net Cash Balance $0 $0 $0 $0 $0 $0
+```
+[p011_c0022] _II-2_
+
+## Page 12
+
+### [p012_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2024 - 2027 Plan Adjustments ($ in millions)
+[p012_c0002]
+
+```text
+Actual 2022 Mid-Year Forecast 2023 Preliminary Budget 2024 2025 2026 2027 Cash Balance Before Prior-Year Carryover $(1,166) ($44) $51 ($1,035) ($384) ($666) Fare and Toll Increases: Fare/Toll Increase - January 2025 (4% Yield) 0 0 299 305 312 Subsidy Impacts - Fare/Toll Increase, January 2025 0 0 (14) (8) (8) Fare/Toll Increase - March 2027 (4% Yield) 0 0 0 0 277 Subsidy Impacts - Fare/Toll Increase, March 2027 0 0 0 0 (13) Subtotal: $0 $0 $285 $297 $568 MTA Initiatives: MTA Operating Efficiencies 0 193 302 298 348 Subtotal: $0 $193 $302 $298 $348 Management and Policy Actions: Additional Labor Expense - TWU Settlement and Pattern (235) (140) (230) (270) (275) Safety and Security actions to be allocated (11) (11) (11) (11) (11) Additional Pension Pre-payment 0 (500) 515 0 0 Reimbursement from OPEB Trust 39 56 57 70 36 Subtotal: ($206) ($594) $331 ($211) ($250) Other: FEMA COVID Reimbursement 250 350 117 0 0 Subtotal: $250 $350 $117 $0 $0 TOTAL ADJUSTMENTS $44 ($51) $1,035 $384 $666 Prior Year Carryover Balance $1,166 $0 $0 $0 $0 $0 Net Cash Surplus/(Deficit) $0 $0 $0 $0 $0 $0
+```
+[p012_c0003] _II-3_
+
+## Page 13
+
+### [p013_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+### [p013_c0002] July Financial Plan 2024 - 2027
+### [p013_c0003] Cash Receipts and Expenditures
+[p013_c0004] ($ in millions)
+[p013_c0005]
+
+```text
+Actual 2022 Mid-Year Forecast 2023 Preliminary Budget 2024 2025 2026 2027 Cash Receipts and Expenditures Receipts Farebox Revenue $3,996 $4,592 $5,061 $5,207 $5,356 $5,528 Other Revenue 1,365 2,171 1,124 1,174 1,086 1,037 Capital and Other Reimbursements 1,879 2,449 2,188 2,200 2,249 2,211 Total Receipts $7,240 $9,211 $8,374 $8,580 $8,691 $8,776 Expenditures Labor: Payroll $5,837 $6,674 $6,726 $6,973 $6,995 $7,155 Overtime 1,304 1,135 1,052 1,074 1,103 1,116 Health and Welfare 1,495 1,779 1,917 2,041 2,180 2,337 OPEB Current Payments 740 843 923 1,007 1,097 1,196 Pension 1,426 2,120 864 1,644 1,701 1,780 Other Fringe Benefits 1,159 1,101 1,118 1,158 1,190 1,248 Contribution to GASB Fund 0 0 0 0 0 0 Reimbursable Overhead 0 0 0 0 0 0 Total Labor Expenditures $11,961 $13,651 $12,600 $13,896 $14,267 $14,833 Non-Labor: Electric Power $566 $573 $648 $676 $685 $720 Fuel 280 218 214 212 207 212 Insurance (11) 46 28 47 61 89 Claims 231 325 332 330 330 329 Paratransit Service Contracts 411 509 510 542 573 602 Maintenance and Other Operating Contracts 710 1,000 851 862 829 842 Professional Services Contracts 620 885 687 689 699 685 Materials and Supplies 662 834 900 929 912 1,006 Other Business Expenses 227 264 252 265 288 290 Total Non-Labor Expenditures $3,696 $4,654 $4,422 $4,551 $4,585 $4,777 Other Expenditure Adjustments: Other $126 $168 $90 $107 $138 $123 General Reserve 0 185 190 200 205 210 Total Other Expenditure Adjustments $126 $353 $280 $307 $343 $333 Total Expenditures $15,783 $18,658 $17,302 $18,754 $19,194 $19,942 Net Cash Balance before Subsidies and Debt Service ($8,542) ($9,447) ($8,929) ($10,174) ($10,503) ($11,166) Dedicated Taxes & State and Local Subsidies $9,796 $11,354 $11,069 $11,216 $12,227 $12,876 Debt Service (2,420) (1,950) (2,089) (2,077) (2,108) (2,375) Cash Balance Before Prior-Year Carryover ($1,166) ($44) $51 ($1,035) ($384) ($666) Adjustments $0 $44 ($51) $1,035 $384 $666 Prior-Year Carryover Balance 1,166 0 0 0 0 0 Net Cash Balance $0 $0 $0 $0 $0 $0
+```
+[p013_c0006] _II-4_
+
+## Page 14
+
+[p014_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p014_c0002] _II-5_
+
+## Page 15
+
+### [p015_c0001] METROPOLITAN TRANSPORTATION AUTHORITY July Financial Plan 2024-2027 MTA Consolidated July Financial Plan Compared with February Financial Plan Cash Reconciliation after Below-the-Line Adjustments ($ in millions)
+[p015_c0002]
+
+```text
+Favorable/(Unfavorable) 2023 2024 2025 2026 FEBRUARY FINANCIAL PLAN 2023-2026 $1 ($1,188) ($1,242) ($1,623) NET CASH SURPLUS/(DEFICIT) Agency Baseline Re-estimates $754 $1,224 $775 $676 Farebox and Toll Revenue 216 607 634 644 NYC Paratransit Reimbursement 104 172 177 178 Electric Power and Fuel 127 (11) (46) (39) Health & Welfare (including retirees) (27) (72) (87) (105) Pensions 90 73 (39) (75) Timing (286) (41) - - 2024 Pension Prepayment (629) 629 - - Local Subsidy to Cover 2023 and 2024 Pension prepayments 1 1,056 - - - Local Subsidy - MTA Bus Adjustment (63) (122) 136 68 Other Baseline Re-estimates (including timing) 2 166 (11) 0 6 New Needs/Investments 3 ($27) ($84) ($68) ($57) Maintenance (6) (14) (7) (7) Safety & Security (1) (38) (30) (21) Service/Service Support (2) (5) (5) (3) All Other New Needs (18) (27) (26) (26) Savings Programs $69 $140 $141 $144 New Operating Efficiencies and Re-estimates 4 69 140 141 144 MTA Adjustments $5 $5 $0 $0 General Reserve 5 5 - - B&T Adjustments ($149) ($208) ($206) ($206) B&T Net Baseline Impacts 5 (149) (208) (206) (206) Debt Service (Cash) $298 $384 $472 $286 Subsidies (Cash) $159 $642 $330 $1,618 Metropolitan Mass Transportation Operating Assist (MMTOA) 75 228 228 228 Petroleum Business Tax (PBT) Receipts 0 4 4 4 Real Estate Taxes (399) (218) (211) (163) Payroll Mobility Tax (PMT) 452 1,191 1,276 1,361 For-Hire Vehicle (FHV) Surcharge (14) - - - Automated Bus Lane Enforcement (ABLE) Violations 7 42 38 35 Peer-to-Peer Car Sharing Trip Tax 0 0 0 0 Station Maintenance (2) (1) (1) (1) State General Fund Subsidy 300 - - - Casino License Revenues - - - 500 Forward Energy Contracts Program (18) (7) - - Local Subsidy Available Due to Federal COVID Aid (548) (885) (990) (432) City Subsidy for MTA Bus 5 (8) (267) (168) City Subsidy for Staten Island Railway 293 290 248 249 CDOT Subsidy for Metro-North Railroad 8 7 6 6 Below-the-Line (BTL) Adjustments ($1,107) ($913) ($202) ($839) Base Fare/Toll Increases: Fare/Toll Increase - June 2023 (4% Yield) (incorporated ATL) (159) (271) (277) (283) Subsidy Impacts - Fare/Toll Increase, June 2023 (incorporated ATL) 8 9 7 7 Fare/Toll Increase - January 2025 (4% Yield) - - 79 13 Subsidy Impacts - Fare/Toll Increase, January 2025 - - (4) 1 MTA Efficiencies: MTA Operating Efficiencies (100) (207) (106) (118) Management and Policy Actions: Additional Fare Increases (from February Plan) (50) (100) (100) (100) Additional Labor Expense - TWU Settlement and Pattern (235) (140) (230) (270) Safety & Security Actions to be Allocated (11) (11) (11) (11) Additional Pension Pre-payment - (500) 515 - Reimbursement from OPEB Trust 39 56 57 70 Other: FEMA COVID Reimbursement - 250 (133) (149) New Government Funding or Additional MTA Actions (from February Plan) (600) - - - Prior Year Carryover ($3) ($1) $0 $0 JULY FINANCIAL PLAN 2024-2027 $0 $0 $0 $0 NET CASH SURPLUS/(DEFICIT)
+```
+[p015_c0003] _II-6_
+
+## Page 16
+
+### [p016_c0001] Footnotes for Cash Reconciliation (after Below-the-Line Adjustments)
+[p016_c0002] 1 Local Subsidy Available Due to Federal COVID Funding was used to prepay 2023 and 2024 MTA Sponsored pension plan expenses for Long Island Rail Road, Metro-North Railroad and New York City Transit.
+[p016_c0003] 2 Includes OTPS and reimbursable adjustments, adjusted fare media liability, operating capital, adjusted COVID-related expenditures and cash adjustments.
+[p016_c0004] 3 Expenses related to the expansion of the ABLE program are incorporated in All Other New Needs and are offset by additional revenue from fines, which are captured in Subsidies.
+[p016_c0005] 4 Additional unidentified operational efficiencies are captured in Volume 1.
+[p016_c0006] 5 While B&T Operating Surplus Transfer is captured as a subsidy, B&T's baseline impacts are captured in individual reconciliation categories in the Agency Baseline Adjustments above. To avoid duplication, B&T's baseline impacts are eliminated within this line. Included within this B&T Net Baseline Impacts are reversals for higher toll revenue in 2022 and unfavorable OTPS adjustments which are captured above.
+[p016_c0007] _II-7_
+
+## Page 17
+
+### [p017_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+### [p017_c0002] July Financial Plan 2024 - 2027
+### [p017_c0003] Consolidated Subsidies
+[p017_c0004] Cash Basis ($ in Millions)
+[p017_c0005]
+
+```text
+Actual 2022 Mid-Year Forecast 2023 Preliminary Budget 2024 2025 2026 2027 MMTOA, PBT, Real Estate Taxes and Other Metropolitan Mass Transportation Operating Assistance (MMTOA) $2,601.0 $2,838.5 $2,991.0 $2,991.0 $2,991.0 $3,050.8 Petroleum Business Tax (PBT) 585.7 611.2 615.3 615.3 615.3 615.3 Mortgage Recording Tax (MRT) 647.9 365.5 455.4 498.6 540.9 569.6 MRT Transfer to Suburban Counties (20.9) (18.0) (11.7) (13.0) (14.5) (15.8) MTA Bus Debt Service (12.2) (12.3) (12.3) (12.6) (14.5) (13.6) Interest on MRT Receipts 9.3 6.2 6.2 6.2 6.2 6.2 Urban Tax 729.5 374.7 511.9 542.7 575.5 578.9 $4,540.4 $4,166.0 $4,555.8 $4,628.2 $4,699.8 $4,791.3 PMT and MTA Aid Payroll Mobility Tax (PMT) $1,796.9 $2,238.2 $3,020.5 $3,150.1 $3,277.7 $3,403.7 Payroll Mobility Tax Replacement Funds 244.3 244.3 244.3 244.3 244.3 244.3 MTA Aid 263.3 282.7 282.9 283.1 283.3 283.5 $2,304.5 $2,765.2 $3,547.7 $3,677.5 $3,805.3 $3,931.5 For-Hire Vehicle (FHV) Surcharge Subway Action Plan Account $300.0 $300.0 $300.0 $300.0 $300.0 $300.0 Transfer from OBTA into Operating Budget Subsidies 0.0 0.0 0.0 0.0 0.0 0.0 General Transportation Account 0.0 15.1 47.6 67.5 69.6 71.7 $300.0 $315.1 $347.6 $367.5 $369.6 $371.7 Automated Bus Lane Enforcement (ABLE) Violations $4.4 $9.9 $45.3 $40.8 $38.2 $38.2 Peer-to-Peer Car Sharing Trip Tax $0.0 $0.2 $0.2 $0.2 $0.2 $0.2 Capital Program Funding from Lockbox Revenues Central Business District Tolling Program (CBDTP) $0.0 $0.0 $600.0 $1,000.0 $1,000.0 $1,000.0 Real Property Transfer Tax Surcharge (Mansion Tax) 524.4 311.7 320.6 332.8 335.7 335.8 Internet Marketplace Tax -NYS 152.6 154.2 155.7 157.3 158.8 160.4 Internet Marketplace Tax - NYC 173.0 174.7 176.5 178.2 180.0 181.8 Subtotal: 850.0 640.6 1,252.8 1,668.3 1,674.5 1,678.0 Less: Debt Service on Lockbox Bonds (13.4) (96.2) (155.6) (399.6) (733.2) (1,020.1) Less: Lockbox Allocated to PAYGO (838.9) (544.4) (1,097.1) (1,268.7) (941.3) (657.9) ($2.3) $0.0 $0.0 $0.0 $0.0 $0.0 State and Local Subsidies State Operating Assistance $187.9 $187.9 $187.9 $187.9 $187.9 $187.9 Local Operating Assistance 189.3 187.9 187.9 187.9 187.9 187.9 Station Maintenance 190.7 197.6 202.3 206.8 211.3 216.1 State General Fund Subsidy 0.0 300.0 0.0 0.0 0.0 0.0 $567.9 $873.5 $578.1 $582.7 $587.2 $591.9 Casino License Revenues $0.0 $0.0 $0.0 $0.0 $500.0 $500.0 Investment Income $10.7 $8.0 $7.0 $6.0 $6.0 $6.0 Other Subsidy Adjustments NYCT Charge Back of MTA Bus Debt Service ($11.5) ($11.5) ($11.5) ($11.5) ($11.5) ($11.5) Forward Energy Contracts Program - Gain/(Loss) 63.7 1.3 (6.9) 0.0 0.0 0.0 Committed to Capital Program Contributions (120.2) (114.1) (108.8) (103.8) (99.0) (94.4) Local Subsidy Available Due to Federal COVID Funding 598.8 1,237.1 16.9 38.1 217.9 548.3 Local Subsidy to Cover Labor Reserve (278.8) 0.0 0.0 0.0 0.0 0.0 Local Subsidy to Cover General Reserve (185.0) 0.0 0.0 0.0 0.0 0.0 $67.0 $1,112.8 ($110.4) ($77.2) $107.4 $442.4 Subtotal: Taxes & State and Local Subsidies $7,792.5 $9,250.6 $8,971.3 $9,225.6 $10,113.6 $10,673.1 Other Funding Agreements City Subsidy for MTA Bus Company $521.5 $524.8 $527.9 $529.6 $671.4 $809.8 City Subsidy for Staten Island Railway 24.4 55.1 63.0 49.4 71.9 70.9 CDOT Subsidy for Metro-North Railroad 264.0 260.3 258.0 279.1 285.9 301.4 $810.0 $840.2 $848.9 $858.1 $1,029.2 $1,182.1 Subtotal, including Other Funding Agreements $8,602.5 $10,090.8 $9,820.2 $10,083.7 $11,142.9 $11,855.2 Inter-agency Subsidy Transactions B&T Operating Surplus Transfer $1,193.2 $1,263.1 $1,248.4 $1,131.9 $1,083.9 $1,020.4 $1,193.2 $1,263.1 $1,248.4 $1,131.9 $1,083.9 $1,020.4 TOTAL SUBSIDIES $9,795.7 $11,353.9 $11,068.6 $11,215.6 $12,226.7 $12,875.6
+```
+[p017_c0006] _II-8_
+
+## Page 18
+
+### [p018_c0001] METROPOLITAN TRANSPORTATION AUTHORITY Summary of Changes Between July and February Financial Plans Consolidated Subsidies Cash Basis ($ in Millions)
+[p018_c0002]
+
+```text
+2023 2024 2025 2026 MMTOA, PBT, Real Estate Taxes and Other Metropolitan Mass Transportation Operating Assistance (MMTOA) $752.3 $227.6 $227.6 $227.6 Petroleum Business Tax (PBT) 0.5 3.6 3.6 3.6 Mortgage Recording Tax (MRT) (267.4) (193.6) (176.1) (143.9) MRT Transfer to Suburban Counties (6.4) 0.4 (0.6) (2.1) Interest on MRT Receipts 0.0 0.0 0.0 0.0 Urban Tax (125.4) (25.2) (34.1) (17.1) ($323.5) $12.8 $20.5 $68.1 PMT and MTA Aid Payroll Mobility Tax (PMT) $452.3 $1,190.7 $1,275.8 $1,361.0 Payroll Mobility Tax Replacement Funds 0.0 0.0 0.0 0.0 MTA Aid 0.0 0.0 0.0 0.0 $452.3 $1,190.7 $1,275.8 $1,361.0 For-Hire Vehicle (FHV) Surcharge Subway Action Plan Account $0.0 $0.0 $0.0 $0.0 Transfer from OBTA into Operating Budget Subsidies 0.0 0.0 0.0 0.0 General Transportation Account (13.6) 0.0 0.0 0.0 ($13.6) $0.0 $0.0 $0.0 Automated Bus Lane Enforcement (ABLE) Violations $7.0 $42.4 $37.9 $35.3 Peer-to-Peer Car Sharing Trip Tax $0.2 $0.2 $0.2 $0.2 Capital Program Funding from Lockbox Revenues Central Business District Tolling Program (CBDTP) $0.0 ($150.0) $0.0 $0.0 Real Property Transfer Tax Surcharge (Mansion Tax) 0.0 0.0 0.0 0.0 Internet Marketplace Tax - NYS 0.0 0.0 0.0 0.0 Internet Marketplace Tax - NYC 0.0 0.0 0.0 0.0 Subtotal: 0.0 (150.0) 0.0 0.0 Less: Debt Service on Lockbox Bonds 34.4 20.0 41.1 83.2 Less: Lockbox Allocated to PAYGO (34.4) 130.0 (41.1) (83.2) $0.0 $0.0 $0.0 $0.0 State and Local Subsidies State Operating Assistance $0.0 $0.0 $0.0 $0.0 Local Operating Assistance 0.0 0.0 0.0 0.0 Station Maintenance (2.3) (1.4) (0.8) (0.9) State General Fund Subsidy 300.0 0.0 0.0 0.0 $297.7 ($1.4) ($0.8) ($0.9) Casino License and Gaming Tax Revenues $0.0 $0.0 $0.0 $500.0 Investment Income $7.7 $6.7 $5.7 $5.7 Other Subsidy Adjustments NYCT Charge Back of MTA Bus Debt Service $0.0 $0.0 $0.0 $0.0 Forward Energy Contracts Program - Gain/(Loss) (17.6) (6.9) 0.0 0.0 Committed to Capital Program Contributions 0.0 0.0 0.0 0.0 Local Subsidy Available Due to Federal COVID Funding (548.3) (884.7) (989.9) (432.1) ($565.9) ($891.6) ($989.9) ($432.1) Subtotal: Taxes & State and Local Subsidies ($138.0) $359.8 $349.3 $1,537.3 Other Funding Agreements City Subsidy for MTA Bus Company $8.8 $11.9 ($245.9) ($143.5) City Subsidy for Staten Island Railway 2.4 3.4 (4.3) (6.0) CDOT Subsidy for Metro-North Railroad (6.7) (23.7) (17.1) (18.6) $4.5 ($8.4) ($267.4) ($168.2) Subtotal, including Other Funding Agreements ($133.5) $351.5 $82.0 $1,369.1 Inter-agency Subsidy Transactions B&T Operating Surplus Transfer $292.7 $290.2 $248.0 $248.6 $292.7 $290.2 $248.0 $248.6 TOTAL SUBSIDIES $159.2 $641.7 $330.0 $1,617.7
+```
+[p018_c0003] _II-9_
+
+## Page 19
+
+### [p019_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+[p019_c0002] July Financial Plan 2024-2027
+[p019_c0003] Debt Affordability Statement after Below-the-Line Adjustments (1)
+[p019_c0004] $ in millions
+[p019_c0005]
+
+```text
+Forecasted Debt Service and Borrowing Schedule Notes 2022 ACTL 2023 2024 2025 2026 2027 Combined MTA/TBTA Forecasted Debt Service Schedule 1, 2, 3 $3,121.2 $2,683.1 $2,826.1 $2,928.1 $2,985.6 $3,302.8 Forecasted New Long-Term Bonds Issued 4 - 515.0 2,039.6 545.7 572.7 559.8 Forecasted Debt Service by Credit 9 Notes 2022 ACTL 2023 2024 2025 2026 2027 Transportation Revenue Bonds Pledged Revenues 5 $12,763.4 $14,948.9 $15,595.6 $15,872.6 $16,222.7 $16,483.7 Debt Service 10 1,720.7 1,397.2 1,310.7 1,267.9 1,325.4 1,436.4 Debt Service as a % of Pledged Revenues 13% 9% 8% 8% 8% 9% Dedicated Tax Fund Bonds Pledged Revenues 6 $585.7 $611.3 $615.3 $615.3 $615.3 $615.3 Debt Service 10 474.8 234.0 268.3 284.7 245.1 319.6 Debt Service as a % of Pledged Revenues 81% 38% 44% 46% 40% 52% Payroll Mobility Tax Bonds Pledged Revenues 7 $2,060.2 $2,520.9 $3,303.5 $3,433.2 $3,561.0 $3,687.2 Debt Service 10 231.0 355.9 549.1 562.6 577.8 659.3 Debt Service as a % of Pledged Revenues 11% 14% 17% 16% 16% 18% Triborough Bridge and Tunnel Authority General Revenue Bonds Pledged Revenues 8 $1,870.9 $1,887.7 $1,948.1 $1,927.7 $1,914.5 $1,899.4 Debt Service 10 587.2 607.4 656.6 772.0 821.3 872.5 Debt Service as a % of Total Pledged Revenues 31% 32% 34% 40% 43% 46% Triborough Bridge and Tunnel Authority Subordinate Revenue Bonds Pledged Revenues 9 $1,283.7 $1,280.3 $1,291.5 $1,155.6 $1,093.3 $1,026.9 Debt Service 10 102.7 75.7 18.3 16.0 - - Debt Service as a % of Total Pledged Revenues 8% 6% 1% 1% 0% 0% Triborough Bridge and Tunnel Authority 2nd Subordinate Revenue Bonds Pledged Revenues 11 $1,181.0 $1,204.6 $1,273.2 $1,139.6 $1,093.3 $1,026.9 Debt Service 10 - 8.6 18.5 20.9 12.9 12.9 Debt Service as a % of Total Pledged Revenues 0% 1% 1% 2% 1% 1% 2 Broadway Certificates of Participation Lease Payments $4.7 $4.4 $4.7 $3.9 $3.0 $2.1 Cumulative Debt Service (Excluding State Service Contract Bonds) Notes 2022 ACTL 2023 2024 2025 2026 2027 Total Debt Service before Below-the-Line Adjustments: 1, 2, 3 $3,121.2 $2,683.1 $2,826.1 $2,928.1 $2,985.6 $3,302.8 Fare and Toll Revenues before Below-the-Line Adjustments $6,356.1 $7,051.4 $7,592.3 $7,742.0 $7,894.8 $8,070.1 Total Debt Service as a % of Fare/Toll Revenue 49.1% 38.1% 37.2% 37.8% 37.8% 40.9% Operating Revenues (including Fare/Toll Revenues) and Subsidies $22,569.5 $17,329.4 $18,667.2 $19,103.9 $20,089.2 $20,568.6 Total Debt Service as a % of Operating Revenues and Subsidies 13.8% 15.6% 15.1% 15.3% 14.9% 16.1% Non-Reimbursable Exp with Debt Service without Non-Cash Liabilities $17,690.7 $18,715.0 $19,322.5 $20,136.9 $20,741.2 $21,927.5 Total Debt Service as a % of Non-reimbursable Expenses 17.6% 14.3% 14.6% 14.5% 14.4% 15.1% Total Debt Service after Below the Line Adjustments: 12 $3,121.2 $2,683.1 $2,826.1 $2,928.1 $2,985.6 $3,302.8 Fare and Toll Revenues after Below the Line Adjustments 12 $6,356.1 $7,051.4 $7,592.3 $8,040.9 $8,199.9 $8,659.4 Total Debt Service as a % of Fare and Toll Revenue after BTL Adjustments 49.1% 38.1% 37.2% 36.4% 36.4% 38.1% Operating Revenues and Subsidies after Below the Line Adjustments 12 $22,569.5 $17,618.7 $19,073.6 $19,562.6 $20,456.0 $21,172.5 Total Debt Service as a % of Operating Rev/Subsidies after BTL Adjs. 13.8% 15.2% 14.8% 15.0% 14.6% 15.6% Non-reimbursable Exp with DS after Below the Line Adjustments 12 $17,690.7 $18,960.6 $19,779.7 $19,560.8 $20,723.6 $21,865.4 Total Debt Service as a % of Non-Reimbursable Exp after BTL Adjs. 17.6% 14.2% 14.3% 15.0% 14.4% 15.1%
+```
+[p019_c0006] Notes on the following page are integral to this table.
+[p019_c0007] _II-10_
+
+## Page 20
+
+[p020_c0001] 1 Floating rate notes assumed at the variable rate assumption plus the current fixed spread to maturity.
+[p020_c0002] 2 Synthetic fixed-rate debt assumed at swap rate; floating rate notes assumed at swap rate plus the current fixed spread to maturity.
+[p020_c0003] 3 All debt service numbers reduced by Build America Bonds (BAB) subsidy.
+[p020_c0004] 4 All bonds to be issued assume 30-year level debt service with the principal amortized over the life of the bonds, with the following exceptions: PMT Bonds for MTA Bond funded portion of the 2020-24 capital program, which are 30-year bonds, amortized on a level debt service basis over 20 years, from year 11 to year 30.
+[p020_c0005] 5 Transportation Revenue Bonds pledged revenues consist generally of the following: fares and other miscellaneous revenues from the transit and commuter systems, including advertising, rental income and certain concession revenues (not including Grand Central and Penn Station); revenues from the distribution to the transit and commuter system of TBTA surplus; State and local general operating subsidies; funds contributed to the General Transportation Account of the NYC Transportation Assistance Fund; special tax-supported operating subsidies after the payment of debt service on the MTA Dedicated Tax Fund Bonds, and the Payroll Mobility Tax Obligation Resolution Bonds; New York City urban tax for transit; station maintenance and service reimbursements; and revenues from the investment of capital program funds. Pledged revenues secure Transportation Revenue Bonds before the payment of operating and maintenance expenses. Starting in 2006, revenues, expenses and debt service for MTA Bus have also been included.
+[p020_c0006] 6 Dedicated Tax Fund pledged revenues as shown above consist generally of the following: petroleum business tax, motor fuel tax and motor vehicle fees deposited into the Dedicated Mass Transportation Trust Fund for the benefit of the MTA; in addition, while not reflected in the DTF pledged revenue figures above, the petroleum business tax, district sales tax, franchise taxes and temporary franchise surcharges deposited into the Metropolitan Transportation Operating Assistance Account for the benefit of the MTA are also pledged. After the payment of debt service on the MTA Dedicated Tax Fund Bonds, these subsidies are available to pay debt service on the MTA Transportation Revenue Bonds, and then any remaining amounts are available to be used to meet operating costs of the transit system, the commuter system, and SIRTOA.
+[p020_c0007] 7 Payroll Mobility Tax Obligations pledged revenues consist of Payroll Mobility Tax and Aid Trust Account Receipts.
+[p020_c0008] 8 Triborough Bridge and Tunnel Authority General Revenue Bond pledged revenues consist primarily of the tolls charged by TBTA on its seven bridges and two tunnels. Pledged revenues secure TBTA General Revenue Bonds after the payment of TBTA operating and maintenance expenses, including certain reserves.
+[p020_c0009] 9 Triborough Bridge and Tunnel Authority Subordinate Revenue Bonds pledged revenues consist primarily of the tolls charged by TBTA on its seven bridges and two tunnels, after the payment of debt service on the TBTA General Revenue Bonds.
+[p020_c0010] 10 A debt service schedule for each credit is attached as addendum hereto, net of investment income.
+[p020_c0011] 11 Triborough Bridge and Tunnel Authority Second Subordinate (2nd SUB) Revenue Bonds pledged revenues consist primarily of the tolls charged by TBTA on its seven bridges and two tunnels, after the payment of debt service on the TBTA General Revenue and Subordinate Revenue Bonds.
+[p020_c0012] 12 These totals incorporate the Plan's Below-the-Line Adjustments.
+[p020_c0013] Note: Does not include debt service to be paid by CBDDTP Lockbox.
+[p020_c0014] _II-11_
+
+## Page 21
+
+[p021_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p021_c0002] _II-12_
+
+## Page 22
+
+### [p022_c0001] III. Plan Adjustments
+
+## Page 23
+
+### [p023_c0001] Plan Adjustments
+[p023_c0002] The discussion that follows reflects proposed Plan Adjustments to the Baseline.
+### [p023_c0003] Fare/Toll Increases
+[p023_c0004] The February Plan included a proposed 2023 increase in fare and toll rates that would generate an annualized 5.5 percent increase in farebox and toll revenue, effective in June 2023. Additional State financial support has resulted in an amended proposed 2023 increase, of 4 percent for farebox revenue and 5.5 percent for toll revenue effective in August. The additional revenue from these actions is included in Agency baseline financial plans presented in Volume 2 of this Plan. This Plan includes proposed fare and toll increases in 2025 and 2027, and the additional revenue anticipated from these actions are below-the-line in Volume 1.
+[p023_c0005] Fare and Toll Increase in January 2025 – An increase in fares and tolls, yielding a 4 percent overall increase in farebox and toll revenues, is assumed for implementation in January 2025 and is projected to generate $299 million annualized increase in MTA consolidated farebox and toll revenues, with consolidated farebox and toll revenues expected to increase $299 million in 2025, $305 million in 2026 and $312 million in 2027. Factoring in subsidy impacts for MTA Bus, SIR and B&T (10 percent of all B&T surplus toll revenues are delayed for distribution to NYCT and the Commuter Railroads, per MTA Board policy, until B&T results are audited), the net increase to the MTA is $285 million in 2025, $297 million in 2026 and $304 million in 2027. Compared with the February Plan, net projections are favorable by $75 million in 2025 and $14 million in 2026. These changes are primarily driven by higher baseline farebox and toll revenues, and the proposed implementation date advancing from April to January.
+[p023_c0006] Fare and Toll Increase in March 2027 – An increase in fares and tolls, yielding a 4% overall increase in farebox and toll revenues, is assumed for implementation in March 2027 and is projected to generate a $325 million annualized increase in MTA consolidated farebox and toll revenues, with consolidated farebox and toll revenues expected to increase by $277 million in 2027. Factoring in the subsidy impacts for MTA Bus, SIR and B&T, the net increase to the MTA is $265 million in 2027.
+[p023_c0007] _III-1_
+
+## Page 24
+
+### [p024_c0001] MTA Consolidated Utilization
+[p024_c0002] MTA Agency Fare and Toll Revenue Projections, in millions Including the Impact of Fare & Toll Yield Increases
+[p024_c0003]
+
+```text
+Mid-Year Forecast 2023 Preliminary Budget 2024 2025 2026 2027 Fare Revenue Long Island Rail Road Baseline $559.1 $630.7 $652.2 $673.2 $687.9 2025 Yield Increase 0.000 0.000 26.087 26.929 27.515 2027 Yield Increase 0.000 0.000 0.000 0.000 24.463 $559.1 $630.7 $678.3 $700.2 $739.9 Metro-North Railroad 1 Baseline $515.4 $556.2 $564.0 $571.8 $580.9 2025 Yield Increase 0.000 0.000 12.011 12.210 12.445 2027 Yield Increase 0.000 0.000 0.000 0.000 11.207 $515.4 $556.2 $576.0 $584.0 $604.6 MTA Bus Company 2 Baseline $172.4 $190.0 $196.2 $202.9 $208.1 2025 Yield Increase 0.000 0.000 7.850 8.117 8.325 2027 Yield Increase 0.000 0.000 0.000 0.000 7.380 $172.4 $190.0 $204.1 $211.0 $223.8 New York City Transit 3 Baseline $3,351.2 $3,688.3 $3,799.4 $3,913.5 $4,056.7 2025 Yield Increase 0.000 0.000 151.745 156.541 162.269 2027 Yield Increase 0.000 0.000 0.000 0.000 143.291 $3,351.2 $3,688.3 $3,951.1 $4,070.1 $4,362.3 Staten Island Railway 2 Baseline $4.3 $4.8 $5.0 $5.1 $5.3 2025 Yield Increase 0.000 0.000 0.199 0.205 0.212 2027 Yield Increase 0.000 0.000 0.000 0.000 0.187 $4.3 $4.8 $5.2 $5.3 $5.7 Total Farebox Revenue Baseline $4,602.3 $5,070.1 $5,216.8 $5,366.6 $5,538.9 2025 Yield Increase 0.000 0.000 197.892 204.002 210.766 2027 Yield Increase 0.000 0.000 0.000 0.000 186.528 $4,602.3 $5,070.1 $5,414.7 $5,570.6 $5,936.2 Toll Revenue Bridges & Tunnels 4 Baseline $2,449.1 $2,522.4 $2,525.7 $2,529.0 $2,532.3 2025 Yield Increase 0.000 0.000 101.029 101.160 101.292 2027 Yield Increase 0.000 0.000 0.000 0.000 90.845 $2,449.1 $2,522.4 $2,626.7 $2,630.2 $2,724.4 TOTAL FARE & TOLL REVENUE Baseline $7,051.4 $7,592.5 $7,742.5 $7,895.6 $8,071.2 2025 Yield Increase 0.000 0.000 298.920 305.162 312.058 2027 Yield Increase 0.000 0.000 0.000 0.000 277.373 $7,051.4 $7,592.5 $8,041.4 $8,200.7 $8,660.6
+```
+[p024_c0004] _1 Metro-North Railroad utilization figures include both East of Hudson and West of Hudson services._
+[p024_c0005] _2 MTA Bus and Staten Island Railway revenues from fare increases are used to reduce NYC subsidies to MTA Bus and SIR._
+[p024_c0006] _3 New York City Transit utilization figures include Paratransit and Fare Media Liability._
+[p024_c0007] _4 Distribution of 10% of B&T surplus toll revenue is delayed to subsequent year per MTA Board resolution._
+[p024_c0008] _III-2_
+
+## Page 25
+
+### [p025_c0001] Below-the-Line Adjustments
+[p025_c0002] MTA Operating Efficiencies – The February Plan included anticipated savings from operating efficiencies initiatives of $100 million in 2023, $400 million in 2024, $408 million in 2025 and $416 million in 2026. Significant progress has been made to identify initiatives, and savings from those identified initiatives are included in Agency baseline financial plans. There remain, however, savings targets of $193 million in 2024, $202 million in 2025, $196 million in 2026 and $244 million in 2027 still to be identified. Additionally, savings targets have been increased by $100 million beginning in 2025, with the additional savings target growing to $102 million in 2026 and $104 million in 2027.
+[p025_c0003] Additional Labor Expense – TWU Settlement and Pattern – The Plan also recognizes the recent negotiated settlement with TWU Local 100. While the settlement awaits ratification of the bargaining unit's membership and the MTA Board, the net economic value of that agreement informs the Plan's assumptions for growth in labor costs for all represented MTA bargaining units. The fiscal impact throughout the MTA has been estimated and is included as a below-the-line adjustment to this Plan. If, as expected, the TWU Local 100 contract is ratified, the settlement – and the impact of the agreement on other bargaining units – will be incorporated into each Agency's baseline financial plans in the November Plan. Previous financial plans had assumed two percent annual wage increases, while the pending TWU Local 100 agreement calls for annual increases of three percent annually for the first two years and 3.5 percent for the third year. Over the Plan period, the additional net labor expenses are estimated to increase by $1.15 billion. Other costs and savings from the agreement, likewise, will be incorporated into the November Plan.
+[p025_c0004] Reimbursement from OPEB Trust – In 2023, MTA deposited $1.32 billion of Local Subsidy into its OPEB Trust to provide for future retiree health expenses. This Plan anticipates the use of $258 million towards OPEB Current Payment expenses to partially cover retiree health benefits costs over the Plan period.
+[p025_c0005] Safety & Security Actions to be Allocated – With the additional State funding, the MTA is making $35 million in annual investments in safety and fare enforcement efforts. In this Plan, $24 million in investments have been identified and are included in Agency baseline financial plans, with the remaining $11 million to be allocated shortly.
+[p025_c0006] Additional Pension Pre-payment – A $500 million pre-payment of 2025 Pension expense will be made in 2024, which is expected to save $15 million.
+[p025_c0007] FEMA COVID Reimbursement – MTA is assuming reimbursement of direct COVID-related expenses through the Federal Emergency Management Agency (FEMA) of $250 million in 2023, $350 million in 2024, and $117 million in 2025. The $717 million total expected in FEMA Reimbursement is unchanged from the February Plan, although earlier receipt of these funds is assumed.
+[p025_c0008] _III-3_
+
+## Page 26
+
+[p026_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p026_c0002] _III-4_
+
+## Page 27
+
+### [p027_c0001] IV. Appendix
+
+## Page 28
+
+### [p028_c0001] Certification of the Chair and Chief Executive Officer of the Metropolitan Transportation Authority in accordance with Section 202.3(l) of the State Comptroller's Regulations
+[p028_c0002] I, Janno Lieber, Chair and Chief Executive Officer of the Metropolitan Transportation Authority ("MTA") hereby certify, to the best of my knowledge and belief after reasonable inquiry, including certifications from senior management at the MTA agencies, that the attached budget and financial plan is based on reasonable assumptions and methods of estimation and that the requirements of Section 202.3 and 202.4 of the Regulations referenced above have been satisfied.
+[p028_c0003] Metropolitan Transportation Authority
+[p028_c0004] By: _____
+[p028_c0005] _Janno Lieber_
+[p028_c0006] Chair and Chief Executive Officer
+[p028_c0007] Dated: _____
+[p028_c0008] 1.14.23
+[p028_c0009] _IV-1_
+
+## Page 29
+
+[p029_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p029_c0002] _IV-2_
+
+## Page 30
+
+### [p030_c0001] V. Other
+
+## Page 31
+
+### [p031_c0001] The MTA Budget Process
+[p031_c0002] MTA budgeting is a rigorous and thorough on-going process and culminates with the passage of the Budget in December. In the course of a year, MTA prepares a February, July and November Financial Plan, and Adoption Materials in December. In addition to the existing year, each Plan requires Agencies to prepare four-year projections which include the upcoming and three following calendar years.
+[p031_c0003] Both the July and November Financial Plans are divided into two distinct volumes:
+- [p031_c0004] • Volume I summarizes the complete financial plan, including the baseline as well as policy items and other “below-the-line” items; • Volume II includes detailed Agency information supporting baseline revenue, expense, cash and headcount projections. Also included is detailed information supporting actions taken to increase savings as well as individual Agency deficit reduction programs.
+### [p031_c0005] July Plan
+[p031_c0006] The July Financial Plan provides the opportunity for the MTA to present a revised forecast of the current year’s finances, a preliminary presentation of the following year’s proposed budget, and a three year re-forecast of out-year finances. This Plan may include a series of gap closing proposals necessary to maintain a balanced budget and actions requiring public hearings. The Mid-Year Forecast becomes the basis on which monthly results are compared for the remainder of the year.
+### [p031_c0007] November Plan
+[p031_c0008] After stakeholders weigh in and the impact of new developments and risks are quantified, a November Plan is prepared, which is an update to the July Financial Plan. The November Plan includes a revised current year and finalization of the proposed budget for the upcoming year and projections for the three out-years.
+### [p031_c0009] December Adopted Budget
+[p031_c0010] In December, the November Plan is updated to capture further developments, risks and actions that are necessary to ensure budget balance and is presented to the MTA Board for review and approval.
+### [p031_c0011] February Plan
+[p031_c0012] Finally, certain below-the-line policy issues included in the December Adopted Budget are moved into the baseline and technical adjustments are made. This results in what is called the February Plan. The Adopted Budget is allocated over the 12 month period and becomes the basis on which monthly results are compared.
+[p031_c0013] _V-1_

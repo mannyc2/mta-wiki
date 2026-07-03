@@ -1,0 +1,214 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2011-03-07-brt-nostrand-cb3"
+record_kind: "source"
+display_name: "Nostrand Ave/Rogers Ave Select Bus Service Community Board 3"
+source_id: "2011_03_07_brt_nostrand_cb3"
+source_ids:
+  - "2011_03_07_brt_nostrand_cb3"
+local_observation_id: "source_2011_03_07_brt_nostrand_cb3"
+local_observation_ids:
+  - "source_2011_03_07_brt_nostrand_cb3"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-10T22:56:56.292Z"
+raw_text: "Nostrand Ave/Rogers Ave Select Bus Service Community Board 3 - Monday, March 7, 2011"
+submission_ids:
+  - "sub_5d258e6e6b7fb9c0"
+payload:
+  authority_tier: "board_material"
+  content_type: "presentation"
+  date_text: "Monday, March 7, 2011"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2011-03-07"
+    precision: "day"
+    raw_text: "Monday, March 7, 2011"
+  description: "Presentation to Community Board 3 about Nostrand Ave/Rogers Ave Select Bus Service project"
+  document_date: "March 7, 2011"
+  document_date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2011-03-07"
+    precision: "day"
+    raw_text: "March 7, 2011"
+  published_date_normalized: "2011-03-07"
+  published_date_precision: "day"
+  publisher: "MTA New York City Transit"
+  title: "Nostrand Ave/Rogers Ave Select Bus Service Community Board 3"
+  year: 2011
+evidence_refs:
+  -
+    block_id: "p001_c0004"
+    evidence_id: "2011_03_07_brt_nostrand_cb3#p001_c0004"
+    page_number: 1
+    role: "title"
+    source_id: "2011_03_07_brt_nostrand_cb3"
+    source_path: "raw/sources/2011_03_07_brt_nostrand_cb3/blocks.jsonl"
+    source_quote: "Nostrand Ave/Rogers Ave Select Bus Service Community Board 3"
+    text_sha256: "sha256:8014b20424522f3e233437ee9b2505173b24059e8f318d2bf294d6ef9d1c6174"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0005"
+    evidence_id: "2011_03_07_brt_nostrand_cb3#p001_c0005"
+    page_number: 1
+    role: "date"
+    source_id: "2011_03_07_brt_nostrand_cb3"
+    source_path: "raw/sources/2011_03_07_brt_nostrand_cb3/blocks.jsonl"
+    source_quote: "Monday, March 7, 2011"
+    text_sha256: "sha256:c75485de7dbc03342723919f8b6e480ae5f0c4718f772de3c66fe525a52c0eb6"
+    text_source: "raw_text"
+---
+
+# Download the presentation (pdf)
+
+source_id: 2011_03_07_brt_nostrand_cb3
+citation: cite block ids exactly as shown in square brackets
+document: 100 block(s)
+
+## Page 1
+
+> [p001_c0001] A photograph of a city street scene at Nostrand Ave/Rogers Ave in New York City. A bus is stopped at a stop, and people are waiting. A blue tactile paving strip runs along the sidewalk. Buildings, trees, and a McDonald's sign are visible in the background.
+> [p001_c0002] The logo for the Metropolitan Transportation Authority (MTA) New York City Transit, featuring the MTA globe icon and the text "MTA New York City Transit".
+> [p001_c0003] The logo for the New York City Department of Transportation (NYC DOT), featuring the text "NEW YORK CITY" above "DOT" and a stylized bridge icon.
+### [p001_c0004] Nostrand Ave/Rogers Ave Select Bus Service Community Board 3
+[p001_c0005] Monday, March 7, 2011
+
+## Page 2
+
+### [p002_c0001] Phase I BRT Corridors
+> [p002_c0002] This map illustrates the Phase I BRT Corridors in New York City and its surrounding regions. The map highlights two types of routes: Current SBS Routes, shown in blue, and SBS Projects in Planning, shown in red. The map covers parts of Manhattan, the Bronx, Queens, Brooklyn, Staten Island, and Nassau County. Legend: Current SBS Routes (Blue line) SBS Projects in Planning (Red line) Key Locations and Routes: Manhattan: 125th St, 34 Street Bronx: Fordham Road / Pelham Parkway Queens: First Avenue / Second Avenue Brooklyn: Nostrand Avenue Staten Island: Staten Island Mall Bay Ridge: Hylan Boulevard Sheepshead Bay: Sheepshead Bay Surrounding Counties: Westchester County, Nassau County. Map Features: A north arrow is located in the bottom right corner. The map also shows the surrounding water bodies, including the East River and the Atlantic Ocean.
+[p002_c0003] _New York City Transit_
+
+## Page 3
+
+### [p003_c0001] SBS Features
+> [p003_c0002] A diagram showing a blue bus approaching a traffic light. A yellow cone-shaped light beam from the bus points to the traffic light, which is displaying a green light. This illustrates the concept of bus signal priority.
+[p003_c0003] _Bus Signal Priority_
+> [p003_c0004] A photograph of a city street with a dedicated bus lane. A blue and white bus is visible in the lane, and other vehicles are in the adjacent lanes. The street is lined with shops and buildings.
+[p003_c0005] _Bus Lanes_
+> [p003_c0006] A photograph of a bus stop where a person is interacting with a blue pre-payment machine. The machine has a screen and a keypad. Other people are waiting nearby.
+[p003_c0007] _Pre-Payment_
+> [p003_c0008] A map showing two SBS routes: "Westbound to Inwood" and "Eastbound to Bay Plaza". The map displays various stops along the routes, including Washington, 14th St, 15th St, 16th St, 17th St, 18th St, 19th St, 20th St, 21st St, 22nd St, 23rd St, 24th St, 25th St, 26th St, 27th St, 28th St, 29th St, 30th St, 31st St, 32nd St, 33rd St, 34th St, 35th St, 36th St, 37th St, 38th St, 39th St, 40th St, 41st St, 42nd St, 43rd St, 44th St, 45th St, 46th St, 47th St, 48th St, 49th St, 50th St, 51st St, 52nd St, 53rd St, 54th St, 55th St, 56th St, 57th St, 58th St, 59th St, 60th St, 61st St, 62nd St, 63rd St, 64th St, 65th St, 66th St, 67th St, 68th St, 69th St, 70th St, 71st St, 72nd St, 73rd St, 74th St, 75th St, 76th St, 77th St, 78th St, 79th St, 80th St, 81st St, 82nd St, 83rd St, 84th St, 85th St, 86th St, 87th St, 88th St, 89th St, 90th St, 91st St, 92nd St, 93rd St, 94th St, 95th St, 96th St, 97th St, 98th St, 99th St, 100th St, 101st St, 102nd St, 103rd St, 104th St, 105th St, 106th St, 107th St, 108th St, 109th St, 110th St, 111th St, 112th St, 113th St, 114th St, 115th St, 116th St, 117th St, 118th St, 119th St, 120th St, 121st St, 122nd St, 123rd St, 124th St, 125th St, 126th St, 127th St, 128th St, 129th St, 130th St, 131st St, 132nd St, 133rd St, 134th St, 135th St, 136th St, 137th St, 138th St, 139th St, 140th St, 141st St, 142nd St, 143rd St, 144th St, 145th St, 146th St, 147th St, 148th St, 149th St, 150th St, 151st St, 152nd St, 153rd St, 154th St, 155th St, 156th St, 157th St, 158th St, 159th St, 160th St, 161st St, 162nd St, 163rd St, 164th St, 165th St, 166th St, 167th St, 168th St, 169th St, 170th St, 171st St, 172nd St, 173rd St, 174th St, 175th St, 176th St, 177th St, 178th St, 179th St, 180th St, 181st St, 182nd St, 183rd St, 184th St, 185th St, 186th St, 187th St, 188th St, 189th St, 190th St, 191st St, 192nd St, 193rd St, 194th St, 195th St, 196th St, 197th St, 198th St, 199th St, 200th St, 201st St, 202nd St, 203rd St, 204th St, 205th St, 206th St, 207th St, 208th St, 209th St, 210th St, 211st St, 212nd St, 213rd St, 214th St, 215th St, 216th St, 217th St, 218th St, 219th St, 220th St, 221st St, 222nd St, 223rd St, 224th St, 225th St, 226th St, 227th St, 228th St, 229th St, 230th St, 231st St, 232nd St, 233rd St, 234th St, 235th St, 236th St, 237th St, 238th St, 239th St, 240th St, 241st St, 242nd St, 243rd St, 244th St, 245th St, 246th St, 247th St, 248th St, 249th St, 250th St, 251st St, 252nd St, 253rd St, 254th St, 255th St, 256th St, 257th St, 258th St, 259th St, 260th St, 261st St, 262nd St, 263rd St, 264th St, 265th St, 266th St, 267th St, 268th St, 269th St, 270th St, 271st St, 272nd St, 273rd St, 274th St, 275th St, 276th St, 277th St, 278th St, 279th St, 280th St, 281st St, 282nd St, 283rd St, 284th St, 285th St, 286th St, 287th St, 288th St, 289th St, 290th St, 291st St, 292nd St, 293rd St, 294th St, 295th St, 296th St, 297th St, 298th St, 299th St, 300th St, 301st St, 302nd St, 303rd St, 304th St, 305th St, 306th St, 307th St, 308th St, 309th St, 310th St, 311st St, 312nd St, 313rd St, 314th St, 315th St, 316th St, 317th St, 318th St, 319th St, 320th St, 321st St, 322nd St, 323rd St, 324th St, 325th St, 326th St, 327th St, 328th St, 329th St, 330th St, 331st St, 332nd St, 333rd St, 334th St, 335th St, 336th St, 337th St, 338th St, 339th St, 340th St, 341st St, 342nd St, 343rd St, 344th St, 345th St, 346th St, 347th St, 348th St, 349th St, 350th St, 351st St, 352nd St, 353rd St, 354th St, 355th St, 356th St, 357th St, 358th St, 359th St, 360th St, 361st St, 362nd St, 363rd St, 364th St, 365th St, 366th St, 367th St, 368th St, 369th St, 370th St, 371st St, 372nd St, 373rd St, 374th St, 375th St, 376th St, 377th St, 378th St, 379th St, 380th St, 381st St, 382nd St, 383rd St, 384th St, 385th St, 386th St, 387th St, 388th St, 389th St, 390th St, 391st St, 392nd St, 393rd St, 394th St, 395th St, 396th St, 397th St, 398th St, 399th St, 400th St, 401st St, 402nd St, 403rd St, 404th St, 405th St, 406th St, 407th St, 408th St, 409th St, 410th St, 411st St, 412nd St, 413rd St, 414th St, 415th St, 416th St, 417th St, 418th St, 419th St, 420th St, 421st St, 422nd St, 423rd St, 424th St, 425th St, 426th St, 427th St, 428th St, 429th St, 430th St, 431st St, 432nd St, 433rd St, 434th St, 435th St, 436th St, 437th St, 438th St, 439th St, 440th St, 441st St, 442nd St, 443rd St, 444th St, 445th St, 446th St, 447th St, 448th St, 449th St, 450th St, 451st St, 452nd St, 453rd St, 454th St, 455th St, 456th St, 457th St, 458th St, 459th St, 460th St, 461st St, 462nd St, 463rd St, 464th St, 465th St, 466th St, 467th St, 468th St, 469th St, 470th St, 471st St, 472nd St, 473rd St, 474th St, 475th St, 476th St, 477th St, 478th St, 479th St, 480th St, 481st St, 482nd St, 483rd St, 484th St, 485th St, 486th St, 487th St, 488th St, 489th St, 490th St, 491st St, 492nd St, 493rd St, 494th St, 495th St, 496th St, 497th St, 498th St, 499th St, 500th St, 501st St, 502nd St, 503rd St, 504th St, 505th St, 506th St, 507th St, 508th St, 509th St, 510th St, 511st St, 512nd St, 513rd St, 514th St, 515th St, 516th St, 517th St, 518th St, 519th St, 520th St, 521st St, 522nd St, 523rd St, 524th St, 525th St, 526th St, 527th St, 528th St, 529th St, 530th St, 531st St, 532nd St, 533rd St, 534th St, 535th St, 536th St, 537th St, 538th St, 539th St, 540th St, 541st St, 542nd St, 543rd St, 544th St, 545th St, 546th St, 547th St, 548th St, 549th St, 550th St, 551st St, 552nd St, 553rd St, 554th St, 555th St, 556th St, 557th St, 558th St, 559th St, 560th St, 561st St, 562nd St, 563rd St, 564th St, 565th St, 566th St, 567th St, 568th St, 569th St, 570th St, 571st St, 572nd St, 573rd St, 574th St, 575th St, 576th St, 577th St, 578th St, 579th St, 580th St, 581st St, 582nd St, 583rd St, 584th St, 585th St, 586th St, 587th St, 588th St, 589th St, 590th St, 591st St, 592nd St, 593rd St, 594th St, 595th St, 596th St, 597th St, 598th St, 599th St, 600th St, 601st St, 602nd St, 603rd St, 604th St, 605th St, 606th St, 607th St, 608th St, 609th St, 610th St, 611st St, 612nd St, 613rd St, 614th St, 615th St, 616th St, 617th St, 618th St, 619th St, 620th St, 621st St, 622nd St, 623rd St, 624th St, 625th St, 626th St, 627th St, 628th St, 629th St, 630th St, 631st St, 632nd St, 633rd St, 634th St, 635th St, 636th St, 637th St, 638th St, 639th St, 640th St, 641st St, 642nd St, 643rd St, 644th St, 645th St, 646th St, 647th St, 648th St, 649th St, 650th St, 651st St, 652nd St, 653rd St, 654th St, 655th St, 656th St, 657th St, 658th St, 659th St, 660th St, 661st St, 662nd St, 663rd St, 664th St, 665th St, 666th St, 667th St, 668th St, 669th St, 670th St, 671st St, 672nd St, 673rd St, 674th St, 675th St, 676th St, 677th St, 678th St, 679th St, 680th St, 681st St, 682nd St, 683rd St, 684th St, 685th St, 686th St, 687th St, 688th St, 689th St, 690th St, 691st St, 692nd St, 693rd St, 694th St, 695th St, 696th St, 697th St, 698th St, 699th St, 700th St, 701st St, 702nd St, 703rd St, 704th St, 705th St, 706th St, 707th St, 708th St, 709th St, 710th St, 711st St, 712nd St, 713rd St, 714th St, 715th St, 716th St, 717th St, 718th St, 719th St, 720th St, 721st St, 722nd St, 723rd St, 724th St, 725th St, 726th St, 727th St, 728th St, 729th St, 730th St, 731st St, 732nd St, 733rd St, 734th St, 735th St, 736th St, 737th St, 738th St, 739th St, 740th St, 741st St, 742nd St, 743rd St, 744th St, 745th St, 746th St, 747th St, 748th St, 749th St, 750th St, 751st St, 752nd St, 753rd St, 754th St, 755th St, 756th St, 757th St, 758th St, 759th St, 760th St, 761st St, 762nd St, 763rd St, 764th St, 765th St, 766th St, 767th St, 768th St, 769th St, 770th St, 771st St, 772nd St, 773rd St, 774th St, 775th St, 776th St, 777th St, 778th St, 779th St, 780th St, 781st St, 782nd St, 783rd St, 784th St, 785th St, 786th St, 787th St, 788th St, 789th St, 790th St, 791st St, 792nd St, 793rd St, 794th St, 795th St, 796th St, 797th St, 798th St, 799th St, 800th St, 801st St, 802nd St, 803rd St, 804th St, 805th St, 806th St, 807th St, 808th St, 809th St, 810th St, 811st St, 812nd St, 813rd St, 814th St, 815th St, 816th St, 817th St, 818th St, 819th St, 820th St, 821st St, 822nd St, 823rd St, 824th St, 825th St, 826th St, 827th St, 828th St, 829th St, 830th St, 831st St, 832nd St, 833rd St, 834th St, 835th St, 836th St, 837th St, 838th St, 839th St, 840th St, 841st St, 842nd St, 843rd St, 844th St, 845th St, 846th St, 847th St, 848th St, 849th St, 850th St, 851st St, 852nd St, 853rd St, 854th St, 855th St, 856th St, 857th St, 858th St, 859th St, 860th St, 861st St, 862nd St, 863rd St, 864th St, 865th St, 866th St, 867th St, 868th St, 869th St, 870th St, 871st St, 872nd St, 873rd St, 874th St, 875th St, 876th St, 877th St, 878th St, 879th St, 880th St, 881st St, 882nd St, 883rd St, 884th St, 885th St, 886th St, 887th St, 888th St, 889th St, 890th St, 891st St, 892nd St, 893rd St, 894th St, 895th St, 896th St, 897th St, 898th St, 899th St, 900th St, 901st St, 902nd St, 903rd St, 904th St, 905th St, 906th St, 907th St, 908th St, 909th St, 910th St, 911st St, 912nd St, 913rd St, 914th St, 915th St, 916th St, 917th St, 918th St, 919th St, 920th St, 921st St, 922nd St, 923rd St, 924th St, 925th St, 926th St, 927th St, 928th St, 929th St, 930th St, 931st St, 932nd St, 933rd St, 934th St, 935th St, 936th St, 937th St, 938th St, 939th St, 940th St, 941st St, 942nd St, 943rd St, 944th St, 945th St, 946th St, 947th St, 948th St, 949th St, 950th St, 951st St, 952nd St, 953rd St, 954th St, 955th St, 956th St, 957th St, 958th St, 959th St, 960th St, 961st St, 962nd St, 963rd St, 964th St, 965th St, 966th St, 967th St, 968th St, 969th St, 970th St, 971st St, 972nd St, 973rd St, 974th St, 975th St, 976th St, 977th St, 978th St, 979th St, 980th St, 981st St, 982nd St, 983rd St, 984th St, 985th St, 986th St, 987th St, 988th St, 989th St, 990th St, 991st St, 992nd St, 993rd St, 994th St, 995th St, 996th St, 997th St, 998th St, 999th St, 1000th St.
+[p003_c0009] _Passenger Info_
+> [p003_c0010] A photograph of a modern bus station with a glass and metal structure. People are waiting inside the shelter, and a bus is visible in the background.
+[p003_c0011] _Stations_
+> [p003_c0012] A photograph of a blue and white bus with "NYC" branding. The bus is driving on a city street.
+[p003_c0013] _Branding_
+[p003_c0014] _New York City Transit_
+
+## Page 4
+
+### [p004_c0001] Fordham Road SBS
+### [p004_c0002] Travel Time:
+[p004_c0003] 20% reduction in running time
+### [p004_c0004] Ridership:
+[p004_c0005] 10% increase
+### [p004_c0006] Customer Satisfaction:
+[p004_c0007] 98% satisfied or very satisfied
+> [p004_c0008] A photograph of a New York City Select Bus Service (SBS) bus, number 5744, stopped at a bus stop. The bus is white with blue and light blue accents, featuring the 'selectbus service' logo. The destination sign above the windshield displays 'BX12 BOY PLAZA 50-UP CITY'. A woman in a light blue shirt and dark pants is waiting at the bus stop. The background shows a city street with buildings and a clear blue sky.
+[p004_c0009] _New York City Transit_
+[p004_c0010] _NEW YORK CITY DOT_
+
+## Page 5
+
+### [p005_c0001] First Avenue/Second Avenue SBS
+[p005_c0002] Service began October 2010 on the M15 SBS
+[p005_c0003] New buses have 3 doors, streamlined appearance, and quiet operation
+[p005_c0004] Fare-prepayment
+[p005_c0005] Curbside and offset bus lanes
+[p005_c0006] Initial results: SBS buses are 18% faster
+> [p005_c0007] A photograph of a blue and white articulated bus, identified as an M15 SBS, parked at a bus stop. The bus is positioned under a large, modern, covered structure with a curved roof. The bus's destination sign displays "M15 BUS SERVICE". Several people are visible near the bus, and the background shows urban buildings under a clear sky.
+[p005_c0008] _New York City Transit_
+[p005_c0009] _NEW YORK CITY DOT_
+
+## Page 6
+
+### [p006_c0001] Nostrand SBS Project Features
+[p006_c0002] B44 Limited will become SBS; B44 Local will continue as before. SBS buses will have the same fare as the locals.
+[p006_c0003] Offset bus lanes with bus bulbs at stations for 5 miles
+[p006_c0004] Transit Signal Priority for 3.8 miles from Flatbush Avenue to Sheepshead Bay
+### [p006_c0005] For the Entire Route:
+- [p006_c0006] • New low-floor buses • Next generation fare collection • Branding of stations and buses
+> [p006_c0007] The map illustrates the Nostrand Ave Bus Rapid Transit (BRT) project route, which runs north-south through Brooklyn and into Queens. The route is marked with a red dashed line, indicating BRT-in bus lanes, and a red solid line, indicating BRT-in mixed traffic. The route starts at the Williamsburg Bridge Plaza Station/Bus Transfer Hub in Queens and ends at the Emmons Ave/Knapp St Station in Brooklyn. Key stations along the route include Lee/Taylor Stations, Flushing Stations, Lafayette Ave Station, DeKalb Ave Station, Fulton Stations, St. John's Place Stations, Empire Blvd Stations, Clarkson Stations, Church Stations, Avenue D/Newkirk Stations, Flatbush Av/Brooklyn College Station, Kings Highway Station, Avenue U Station, Avenue X Station, and Emmons Ave/Knapp St Station. The map also shows the East River, Upper New York Bay, and various local landmarks such as Medgar Evers College, Kings County Hospital, and Marine Park. A legend in the bottom left corner identifies the symbols for Subway Station (red circle with number), BRT Station (blue square), BRT-in Bus Lane (red dashed line), and BRT-in Mixed Traffic (red solid line). A scale bar indicates 1 mile, and a north arrow is provided.
+[p006_c0008] _MTA New York City Transit_
+[p006_c0009] _NEW YORK CITY_
+
+## Page 7
+
+### [p007_c0001] Proposed Stations
+### [p007_c0002] Williamsburg Bridge to St John's Place
+> [p007_c0003] This map illustrates the proposed transit infrastructure between the Williamsburg Bridge and St. John's Place in Brooklyn. The map covers the area from the Williamsburg Bridge in the north to St. John's Place in the south, spanning parts of Manhattan, Brooklyn, and Queens. Proposed Stations: Williamsburg Bridge Plaza Station/Bus Transfer Hub: Located at the bridge, serving the J, M, and Z subway lines. Lee/Taylor Stations: Located at the intersection of Lee and Taylor Streets. Flushing Stations: Located at the intersection of Flushing Avenue and Bedford Avenue. Lafayette Ave Station: Located at the intersection of Lafayette Avenue and Bedford Avenue. DeKalb Ave Station: Located at the intersection of DeKalb Avenue and Bedford Avenue. This station is highlighted with a blue dashed circle and labeled "Bus Bulb Stations Built with HWK1129". Fulton Stations: Located at the intersection of Fulton Street and Nostrand Avenue. This station is also highlighted with a blue dashed circle and serves the A and C subway lines. St. John's Place Stations: Located at the southern end of the corridor, serving the 3 subway line. Transit Infrastructure: BRT in Bus Lane: Indicated by a red dashed line along Bedford Avenue. BRT in Mixed Traffic: Indicated by a solid red line along Bedford Avenue. Other Features: Williamsburg Bridge: The bridge connecting Manhattan and Brooklyn. East River: The body of water separating Manhattan from Brooklyn. Downtown Brooklyn: The area south of the Williamsburg Bridge. Fulton St Shopping Corridor: A designated area along Fulton Street. Medgar Evers College: Located at the southern end of the corridor. Long Island RR Nostrand Av: A rail line running parallel to the BRT corridor. Legend: 3 Subway Station ■ BRT Station --- BRT in Bus Lane — BRT in Mixed Traffic
+[p007_c0004] _MTA New York City Transit_
+[p007_c0005] _NEW YORK CITY TRANSIT_
+
+## Page 8
+
+### [p008_c0001] Nostrand Avenue at DeKalb Avenue Existing Conditions
+> [p008_c0002] A photograph of Nostrand Avenue at DeKalb Avenue in New York City, showing existing traffic conditions. The street is a two-lane road with cars parked on the left and driving in the center. A large, light-colored building is on the right. Traffic lights are visible at the intersection, and a 'ONE WAY' sign is on the left. The sky is clear with some clouds.
+[p008_c0003] _New York City Transit_
+[p008_c0004] _NEW YORK CITY DOT_
+
+## Page 9
+
+### [p009_c0001] Nostrand Avenue at DeKalb Avenue Proposed Design: SBS Station, with Peak Travel Lane on Left
+[p009_c0002] _New York City Transit_
+[p009_c0003] _NEW YORK CITY DOT_
+
+## Page 10
+
+### [p010_c0001] Nostrand Avenue at Church Avenue Existing Conditions
+> [p010_c0002] A photograph of Nostrand Avenue at Church Avenue in New York City. The street is a wide, multi-lane road with several cars parked along the sides and others driving in the lanes. On the left side, there are several storefronts, including a Chase bank branch with a "Welcome to Chase" sign. A McDonald's flag is visible hanging from a building further down the street. Pedestrians are walking on the sidewalks. The sky is clear and blue. The overall scene depicts a typical urban street environment.
+> [p010_c0003] The logo for the Metropolitan Transportation Authority (MTA), featuring the letters "MTA" in a stylized font inside a circle.
+[p010_c0004] New York City Transit
+> [p010_c0005] The logo for the New York City Department of Transportation (NYC DOT), featuring the text "NEW YORK CITY" above a stylized graphic of a train or bus.
+
+## Page 11
+
+### [p011_c0001] Nostrand Avenue at Church Avenue Proposed Design: SBS Station, with Parking Lane on Opposite Curb
+> [p011_c0002] A 3D architectural rendering of a proposed SBS station on Nostrand Avenue at Church Avenue. The station features a blue-paved platform with a blue tactile paving strip. A group of people, including a person in a wheelchair, are waiting at the station. A bus is stopped at the platform, and a white van is driving on the street. The street is lined with trees and buildings, including a Chase bank branch and a McDonald's. The sky is clear and blue.
+> [p011_c0003] The MTA logo, consisting of the letters 'MTA' inside a circle.
+[p011_c0004] _New York City Transit_
+[p011_c0005] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above a stylized 'DOT'._
+
+## Page 12
+
+### [p012_c0001] Delivery Zones
+[p012_c0002] Truck loading zones can keep curb clear for store deliveries
+[p012_c0003] With trucks using curb instead of double-parking, travel lanes are kept open
+[p012_c0004] Options include time of day and location
+[p012_c0005] Will work with CBs and businesses to locate
+> [p012_c0006] A photograph of a street signpost with two signs. The top sign is red and reads "NO STANDING EXCEPT TRUCKS LOADING & UNLOADING 6 AM - 10 AM EXCEPT SUNDAY" with a white arrow pointing right. The bottom sign is white with a green border and reads "2 HOUR PARKING 10 AM - 7 PM EXCEPT SUNDAY" with a green arrow pointing right. The signpost is in front of a stone building.
+[p012_c0007] _New York City Transit_
+
+## Page 13
+
+### [p013_c0001] Example: 7 AM to 7 PM Delivery Zones on Right Curb
+> [p013_c0002] A diagram of a four-lane street with delivery zones on the right curb. The lanes are color-coded: grey, grey, red, and yellow. The top lane is grey with five teal delivery zones. The second lane is grey with three teal delivery zones and a white arrow pointing right. The third lane is red with a large blue delivery zone and one teal delivery zone, with a white arrow pointing right and slightly down. The bottom lane is yellow with a large orange delivery zone and a small orange delivery zone, followed by three teal delivery zones. The street is bounded by a grid pattern at the top and bottom.
+[p013_c0003] Conceptual Design
+[p013_c0004] _MTA New York City Transit_
+[p013_c0005] _NEW YORK CITY DOT_
+
+## Page 14
+
+### [p014_c0001] Community Planning Process
+[p014_c0002] 23 meetings to date with elected officials, Community Boards, and the public about Nostrand/Rogers BRT
+[p014_c0003] 3 Community Advisory Committee meetings and one Public Open House to date
+[p014_c0004] Community Advisory Committee Composed of:
+- [p014_c0005] • Elected Officials • Community Organizations • Community Boards • Business Representatives • Major Institutions • Transit Customers
+[p014_c0006] _New York City Transit_
+
+## Page 15
+
+### [p015_c0001] Nostrand / Rogers SBS: Timeline
+> [p015_c0002] The diagram is a horizontal timeline with a dark blue header bar containing the years 2004, 2005, 2006, 2007, 2008, 2009, and 2010. Below the header, vertical lines connect each year to a white rectangular box containing text describing the events of that year. 2004 2005 2006 2007 2008 2009 2010 NYCT & DOT initiate NYC BRT Study BRT Study and Public Input selects Nostrand/Rogers Aves as one of five BRT corridors for further development Nostrand/Rogers SBS identified for implementation 1st CAC Meeting 2 nd & 3 rd CAC Meetings
+[p015_c0003] _New York City Transit_
+
+## Page 16
+
+### [p016_c0001] Nostrand / Rogers SBS: Timeline
+> [p016_c0002] The diagram shows a timeline from 2011 to 2013, divided into quarters: Winter, Spring, Summer, and Fall. Below the timeline, specific milestones are marked: 2011: CAC #4 (Construction Activity Center) and CB Presentations (Construction Bid Presentations) are scheduled for the Winter and Spring quarters. 2012: CAC #5 and CAC #6 are scheduled for the Winter and Spring quarters. CB Presentations are scheduled for the Summer quarter. 2013: SBS Start of Service (Service Start of Service) is scheduled for the Summer quarter.
+[p016_c0003] HWK1129: Reconstruction of Nostrand Ave, Flushing to Atlantic, including SBS work
+> [p016_c0004] A horizontal bar chart for HWK1129. The first segment is labeled "Final Design & Contracting". The second, longer segment is labeled "Construction". An arrow points from the end of the "Construction" segment to the text "through 2014".
+[p016_c0005] HWK1130: Bus stations and lanes on Bedford, Rogers, and Nostrand South of Atlantic
+> [p016_c0006] A horizontal bar chart for HWK1130. The first segment is labeled "Final Design & Contracting". The second segment is labeled "Construction".
+[p016_c0007] _New York City Transit_

@@ -1,0 +1,30 @@
+{
+  "review_run_id": "2026-06-23T14-42-00-000Z_manual-identity-review",
+  "reviewed_at": "2026-06-23T14:42:00.000Z",
+  "packet_path": "data/identity-review/packets/project_cluster_5374bac3ce.md",
+  "cluster_id": "project_cluster_5374bac3ce",
+  "kind": "project",
+  "profile_name": "manual",
+  "provider": "manual",
+  "model": "manual",
+  "attempt": 1,
+  "max_attempts": 1,
+  "suggestion": {
+    "cluster_id": "project_cluster_5374bac3ce",
+    "kind": "project",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "project_meeting-doc-155026-laurelton-accessibility",
+          "project_signal-modernization-fulton-ac-line"
+        ],
+        "reason": "Do not merge: the records share only a program/funding context. Program membership is relation context, not project identity, and the project names/scopes differ."
+      }
+    ],
+    "weak_aliases": [],
+    "ambiguous": []
+  },
+  "transcript_dir": "manual",
+  "session_path": "manual"
+}

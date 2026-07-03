@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-15-07-535Z_1976810-1e49fd8b_ingest_2013-09-12-sbs-utica-cb8",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:58:21.702Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "route_b46_2013_09_12_utica_cb8",
+        "decision": "new",
+        "rationale": "Observation's base_record_id is route_b46-local-limited-20110915, which already owns source 2013_09_12_sbs_utica_cb8. The observation already resolves to this canonical record. Per policy, when the closest match is the observation's own base_record_id, the decision is new. No different registry record is a better match — route_b46-limited-2012 and route_b46-local-2012 are variant-specific (limited and local respectively), while this observation describes the general B46 route, consistent with the bundled 'local and limited-stop' route_type on route_b46-local-limited-20110915.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_12_sbs_utica_cb8",
+            "block_id": "p003_c0002",
+            "source_quote": "B46: second busiest bus route in NYC"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-57-19-165Z_2111393-ba528c55_canonicalize_2026-06-10t23-15-07-535z-1976810-1e49fd8b-ingest-2013-09-12-sbs-utica-cb8-route-identity"
+}

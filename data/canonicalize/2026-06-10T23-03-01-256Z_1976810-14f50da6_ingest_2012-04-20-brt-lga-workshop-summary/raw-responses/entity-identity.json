@@ -1,0 +1,77 @@
+{
+  "run_id": "2026-06-10T23-03-01-256Z_1976810-14f50da6_ingest_2012-04-20-brt-lga-workshop-summary",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:38:58.102Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d1-nycdot-lga-aa",
+        "local_observation_id": "entity_nycdot_lga_aa_2012",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_nyc-dot, which matches the existing registry card entity_nyc-dot (New York City Department of Transportation, agency). Entity name, type, and role are consistent with the existing registry record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p001_c0002",
+            "source_quote": "NYCDOT"
+          },
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p001_c0003",
+            "source_quote": "NYCDOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-urs-lga-aa",
+        "local_observation_id": "entity_urs_lga_aa_2012",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_urs-lga-aa-2012, which matches the existing registry card entity_urs-lga-aa-2012 (URS, consulting firm). Payload entity_name and entity_type are consistent.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p001_c0002",
+            "source_quote": "URS"
+          },
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p002_c0002",
+            "source_quote": "URS"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-zetlin-lga-aa",
+        "local_observation_id": "entity_zetlin_strategic_communications_2012",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_zetlin-strategic-communications-2012, matching the existing registry card with same entity_name (Zetlin Strategic Communications) and entity_type (consulting firm).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p001_c0003",
+            "source_quote": "Zetlin Strategic Communications"
+          }
+        ]
+      },
+      {
+        "decision_id": "d4-nyct-lga-aa",
+        "local_observation_id": "entity_nyct_lga_aa_2012",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_mta-nyct, matching the existing registry card entity_mta-nyct (MTA New York City Transit, agency). Entity name and role are consistent.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0008",
+            "source_quote": "NYCT"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-34-57-469Z_2111393-7787fc31_canonicalize_2026-06-10t23-03-01-256z-1976810-14f50da6-ingest-2012-04-20-brt-lga-workshop-summary-entity-identity"
+}

@@ -1,0 +1,1077 @@
+{
+  "kind": "spreadsheet_preview",
+  "status": "ok",
+  "source_id": "meeting_doc_194226",
+  "run_id": "spreadsheet-backlog-20260623",
+  "generated_at": "2026-06-23T12:36:07.872Z",
+  "source_path": "raw/sources/meeting_doc_194226/source.xlsx",
+  "source_sha256": "sha256:43f8bd10ab666639663d88d8f80981d0edbd671210df6712de8b22f587d218f1",
+  "sheets": [
+    {
+      "name": "Nov Forecast vs Act Explanation",
+      "sheet_id": "7",
+      "path": "xl/worksheets/sheet1.xml",
+      "row_count": 32,
+      "cell_count": 119,
+      "rows": [
+        {
+          "row_number": 1,
+          "cells": [
+            {
+              "ref": "A4",
+              "column": "A",
+              "row": 4,
+              "style": "10",
+              "raw_value": "4",
+              "text": "4"
+            },
+            {
+              "ref": "C4",
+              "column": "C",
+              "row": 4,
+              "style": "31",
+              "text": ""
+            },
+            {
+              "ref": "D4",
+              "column": "D",
+              "row": 4,
+              "style": "10",
+              "text": ""
+            },
+            {
+              "ref": "E4",
+              "column": "E",
+              "row": 4,
+              "style": "10",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 5,
+          "cells": [
+            {
+              "ref": "A5",
+              "column": "A",
+              "row": 5,
+              "style": "12",
+              "raw_value": "5",
+              "text": "5"
+            },
+            {
+              "ref": "C5",
+              "column": "C",
+              "row": 5,
+              "style": "32",
+              "raw_value": "6",
+              "text": "6"
+            }
+          ]
+        },
+        {
+          "row_number": 6,
+          "cells": [
+            {
+              "ref": "A6",
+              "column": "A",
+              "row": 6,
+              "style": "10",
+              "raw_value": "7",
+              "text": "7"
+            },
+            {
+              "ref": "C6",
+              "column": "C",
+              "row": 6,
+              "type": "s",
+              "style": "16",
+              "raw_value": "8",
+              "text": "Percent"
+            },
+            {
+              "ref": "D6",
+              "column": "D",
+              "row": 6,
+              "style": "10",
+              "text": ""
+            },
+            {
+              "ref": "E6",
+              "column": "E",
+              "row": 6,
+              "style": "10",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 7,
+          "cells": [
+            {
+              "ref": "A8",
+              "column": "A",
+              "row": 8,
+              "type": "s",
+              "style": "10",
+              "raw_value": "11",
+              "text": "Column1"
+            },
+            {
+              "ref": "B8",
+              "column": "B",
+              "row": 8,
+              "type": "s",
+              "style": "10",
+              "raw_value": "7",
+              "text": "Variance"
+            },
+            {
+              "ref": "C8",
+              "column": "C",
+              "row": 8,
+              "type": "s",
+              "style": "10",
+              "raw_value": "8",
+              "text": "Percent"
+            },
+            {
+              "ref": "D8",
+              "column": "D",
+              "row": 8,
+              "type": "s",
+              "style": "10",
+              "raw_value": "12",
+              "text": "Column4"
+            },
+            {
+              "ref": "E8",
+              "column": "E",
+              "row": 8,
+              "type": "s",
+              "style": "10",
+              "raw_value": "6",
+              "text": "Reason for Variance"
+            },
+            {
+              "ref": "H8",
+              "column": "H",
+              "row": 8,
+              "style": "33",
+              "text": ""
+            },
+            {
+              "ref": "I8",
+              "column": "I",
+              "row": 8,
+              "style": "33",
+              "text": ""
+            },
+            {
+              "ref": "J8",
+              "column": "J",
+              "row": 8,
+              "style": "33",
+              "text": ""
+            },
+            {
+              "ref": "K8",
+              "column": "K",
+              "row": 8,
+              "style": "33",
+              "text": ""
+            },
+            {
+              "ref": "L8",
+              "column": "L",
+              "row": 8,
+              "style": "33",
+              "text": ""
+            },
+            {
+              "ref": "M8",
+              "column": "M",
+              "row": 8,
+              "style": "33",
+              "text": ""
+            },
+            {
+              "ref": "N8",
+              "column": "N",
+              "row": 8,
+              "style": "33",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 9,
+          "cells": [
+            {
+              "ref": "A9",
+              "column": "A",
+              "row": 9,
+              "style": "10",
+              "text": ""
+            },
+            {
+              "ref": "B9",
+              "column": "B",
+              "row": 9,
+              "style": "10",
+              "text": ""
+            },
+            {
+              "ref": "C9",
+              "column": "C",
+              "row": 9,
+              "style": "10",
+              "text": ""
+            },
+            {
+              "ref": "D9",
+              "column": "D",
+              "row": 9,
+              "style": "10",
+              "text": ""
+            },
+            {
+              "ref": "E9",
+              "column": "E",
+              "row": 9,
+              "style": "10",
+              "text": ""
+            },
+            {
+              "ref": "H9",
+              "column": "H",
+              "row": 9,
+              "style": "34",
+              "text": ""
+            },
+            {
+              "ref": "I9",
+              "column": "I",
+              "row": 9,
+              "style": "34",
+              "text": ""
+            },
+            {
+              "ref": "J9",
+              "column": "J",
+              "row": 9,
+              "style": "34",
+              "text": ""
+            },
+            {
+              "ref": "K9",
+              "column": "K",
+              "row": 9,
+              "style": "34",
+              "text": ""
+            },
+            {
+              "ref": "L9",
+              "column": "L",
+              "row": 9,
+              "style": "34",
+              "text": ""
+            },
+            {
+              "ref": "M9",
+              "column": "M",
+              "row": 9,
+              "style": "34",
+              "text": ""
+            },
+            {
+              "ref": "N9",
+              "column": "N",
+              "row": 9,
+              "style": "34",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 10,
+          "cells": [
+            {
+              "ref": "A10",
+              "column": "A",
+              "row": 10,
+              "type": "s",
+              "style": "9",
+              "raw_value": "0",
+              "text": "Total Revenue"
+            },
+            {
+              "ref": "B10",
+              "column": "B",
+              "row": 10,
+              "style": "17",
+              "raw_value": "-41.3",
+              "text": "-41.3"
+            },
+            {
+              "ref": "C10",
+              "column": "C",
+              "row": 10,
+              "style": "3",
+              "raw_value": "4.0000000000000001E-3",
+              "text": "4.0000000000000001E-3"
+            },
+            {
+              "ref": "D10",
+              "column": "D",
+              "row": 10,
+              "style": "10",
+              "raw_value": "13",
+              "text": "13"
+            },
+            {
+              "ref": "H10",
+              "column": "H",
+              "row": 10,
+              "style": "33",
+              "text": ""
+            },
+            {
+              "ref": "I10",
+              "column": "I",
+              "row": 10,
+              "style": "33",
+              "text": ""
+            },
+            {
+              "ref": "J10",
+              "column": "J",
+              "row": 10,
+              "style": "33",
+              "text": ""
+            },
+            {
+              "ref": "K10",
+              "column": "K",
+              "row": 10,
+              "style": "33",
+              "text": ""
+            },
+            {
+              "ref": "L10",
+              "column": "L",
+              "row": 10,
+              "style": "33",
+              "text": ""
+            },
+            {
+              "ref": "M10",
+              "column": "M",
+              "row": 10,
+              "style": "33",
+              "text": ""
+            },
+            {
+              "ref": "N10",
+              "column": "N",
+              "row": 10,
+              "style": "33",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 11,
+          "cells": [
+            {
+              "ref": "A11",
+              "column": "A",
+              "row": 11,
+              "style": "10",
+              "raw_value": "20",
+              "text": "20"
+            },
+            {
+              "ref": "H11",
+              "column": "H",
+              "row": 11,
+              "style": "2",
+              "text": ""
+            },
+            {
+              "ref": "I11",
+              "column": "I",
+              "row": 11,
+              "style": "2",
+              "text": ""
+            },
+            {
+              "ref": "J11",
+              "column": "J",
+              "row": 11,
+              "style": "2",
+              "text": ""
+            },
+            {
+              "ref": "K11",
+              "column": "K",
+              "row": 11,
+              "style": "2",
+              "text": ""
+            },
+            {
+              "ref": "L11",
+              "column": "L",
+              "row": 11,
+              "style": "2",
+              "text": ""
+            },
+            {
+              "ref": "M11",
+              "column": "M",
+              "row": 11,
+              "style": "2",
+              "text": ""
+            },
+            {
+              "ref": "N11",
+              "column": "N",
+              "row": 11,
+              "style": "2",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 12,
+          "cells": [
+            {
+              "ref": "A12",
+              "column": "A",
+              "row": 12,
+              "style": "19",
+              "raw_value": "18",
+              "text": "18"
+            },
+            {
+              "ref": "H12",
+              "column": "H",
+              "row": 12,
+              "style": "30",
+              "text": ""
+            },
+            {
+              "ref": "I12",
+              "column": "I",
+              "row": 12,
+              "style": "30",
+              "text": ""
+            },
+            {
+              "ref": "J12",
+              "column": "J",
+              "row": 12,
+              "style": "30",
+              "text": ""
+            },
+            {
+              "ref": "K12",
+              "column": "K",
+              "row": 12,
+              "style": "30",
+              "text": ""
+            },
+            {
+              "ref": "L12",
+              "column": "L",
+              "row": 12,
+              "style": "30",
+              "text": ""
+            },
+            {
+              "ref": "M12",
+              "column": "M",
+              "row": 12,
+              "style": "30",
+              "text": ""
+            },
+            {
+              "ref": "N12",
+              "column": "N",
+              "row": 12,
+              "style": "30",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 13,
+          "cells": [
+            {
+              "ref": "A13",
+              "column": "A",
+              "row": 13,
+              "style": "19",
+              "raw_value": "22",
+              "text": "22"
+            }
+          ]
+        },
+        {
+          "row_number": 14,
+          "cells": [
+            {
+              "ref": "A14",
+              "column": "A",
+              "row": 14,
+              "style": "2",
+              "raw_value": "19",
+              "text": "19"
+            }
+          ]
+        },
+        {
+          "row_number": 15,
+          "cells": [
+            {
+              "ref": "A15",
+              "column": "A",
+              "row": 15,
+              "style": "10",
+              "raw_value": "16",
+              "text": "16"
+            }
+          ]
+        },
+        {
+          "row_number": 16,
+          "cells": [
+            {
+              "ref": "A16",
+              "column": "A",
+              "row": 16,
+              "style": "10",
+              "raw_value": "15",
+              "text": "15"
+            }
+          ]
+        },
+        {
+          "row_number": 17,
+          "cells": [
+            {
+              "ref": "A17",
+              "column": "A",
+              "row": 17,
+              "style": "10",
+              "raw_value": "29",
+              "text": "29"
+            }
+          ]
+        },
+        {
+          "row_number": 18,
+          "cells": [
+            {
+              "ref": "A18",
+              "column": "A",
+              "row": 18,
+              "style": "10",
+              "raw_value": "25",
+              "text": "25"
+            }
+          ]
+        },
+        {
+          "row_number": 19,
+          "cells": [
+            {
+              "ref": "A19",
+              "column": "A",
+              "row": 19,
+              "type": "s",
+              "style": "9",
+              "raw_value": "9",
+              "text": "Total  Expenses"
+            },
+            {
+              "ref": "B19",
+              "column": "B",
+              "row": 19,
+              "style": "22",
+              "raw_value": "290",
+              "text": "290"
+            },
+            {
+              "ref": "C19",
+              "column": "C",
+              "row": 19,
+              "style": "3",
+              "raw_value": "1.4999999999999999E-2",
+              "text": "1.4999999999999999E-2"
+            },
+            {
+              "ref": "D19",
+              "column": "D",
+              "row": 19,
+              "style": "10",
+              "raw_value": "14",
+              "text": "14"
+            }
+          ]
+        },
+        {
+          "row_number": 20,
+          "cells": [
+            {
+              "ref": "D20",
+              "column": "D",
+              "row": 20,
+              "style": "10",
+              "raw_value": "23",
+              "text": "23"
+            }
+          ]
+        },
+        {
+          "row_number": 21,
+          "cells": [
+            {
+              "ref": "A21",
+              "column": "A",
+              "row": 21,
+              "style": "2",
+              "raw_value": "26",
+              "text": "26"
+            }
+          ]
+        },
+        {
+          "row_number": 22,
+          "cells": [
+            {
+              "ref": "A22",
+              "column": "A",
+              "row": 22,
+              "style": "2",
+              "raw_value": "21",
+              "text": "21"
+            }
+          ]
+        },
+        {
+          "row_number": 23,
+          "cells": [
+            {
+              "ref": "A23",
+              "column": "A",
+              "row": 23,
+              "style": "2",
+              "raw_value": "27",
+              "text": "27"
+            }
+          ]
+        },
+        {
+          "row_number": 24,
+          "cells": [
+            {
+              "ref": "A24",
+              "column": "A",
+              "row": 24,
+              "style": "9",
+              "raw_value": "17",
+              "text": "17"
+            }
+          ]
+        },
+        {
+          "row_number": 25,
+          "cells": [
+            {
+              "ref": "A25",
+              "column": "A",
+              "row": 25,
+              "style": "9",
+              "raw_value": "31",
+              "text": "31"
+            },
+            {
+              "ref": "R25",
+              "column": "R",
+              "row": 25,
+              "type": "s",
+              "style": "1",
+              "raw_value": "24",
+              "text": "MTA HQ - $58.3M favorable were mainly attributable to non-cash adjustments ($42.7M), the timing of internal subsidies ($10.2M), overhead ($2.8 million), and health and welfare ($1.9 million), partially offset by overtime ($5.3 million), OPEB ($1.1 million), and homeless outreach ($2.7 million)."
+            }
+          ]
+        },
+        {
+          "row_number": 26,
+          "cells": [
+            {
+              "ref": "A26",
+              "column": "A",
+              "row": 26,
+              "style": "2",
+              "raw_value": "30",
+              "text": "30"
+            }
+          ]
+        },
+        {
+          "row_number": 27,
+          "cells": [
+            {
+              "ref": "A27",
+              "column": "A",
+              "row": 27,
+              "style": "9",
+              "raw_value": "28",
+              "text": "28"
+            }
+          ]
+        },
+        {
+          "row_number": 28,
+          "cells": [
+            {
+              "ref": "A28",
+              "column": "A",
+              "row": 28,
+              "style": "10",
+              "raw_value": "4",
+              "text": "4"
+            },
+            {
+              "ref": "C28",
+              "column": "C",
+              "row": 28,
+              "style": "11",
+              "text": ""
+            },
+            {
+              "ref": "D28",
+              "column": "D",
+              "row": 28,
+              "style": "10",
+              "text": ""
+            },
+            {
+              "ref": "E28",
+              "column": "E",
+              "row": 28,
+              "style": "10",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 29,
+          "cells": [
+            {
+              "ref": "A29",
+              "column": "A",
+              "row": 29,
+              "style": "12",
+              "raw_value": "5",
+              "text": "5"
+            },
+            {
+              "ref": "C29",
+              "column": "C",
+              "row": 29,
+              "style": "13",
+              "raw_value": "6",
+              "text": "6"
+            }
+          ]
+        },
+        {
+          "row_number": 30,
+          "cells": [
+            {
+              "ref": "A30",
+              "column": "A",
+              "row": 30,
+              "style": "10",
+              "raw_value": "7",
+              "text": "7"
+            },
+            {
+              "ref": "C30",
+              "column": "C",
+              "row": 30,
+              "type": "s",
+              "style": "16",
+              "raw_value": "8",
+              "text": "Percent"
+            },
+            {
+              "ref": "D30",
+              "column": "D",
+              "row": 30,
+              "style": "10",
+              "text": ""
+            },
+            {
+              "ref": "E30",
+              "column": "E",
+              "row": 30,
+              "style": "10",
+              "text": ""
+            },
+            {
+              "ref": "Z30",
+              "column": "Z",
+              "row": 30,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "AA30",
+              "column": "AA",
+              "row": 30,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "AB30",
+              "column": "AB",
+              "row": 30,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "AC30",
+              "column": "AC",
+              "row": 30,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "AD30",
+              "column": "AD",
+              "row": 30,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "AE30",
+              "column": "AE",
+              "row": 30,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "AF30",
+              "column": "AF",
+              "row": 30,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "AG30",
+              "column": "AG",
+              "row": 30,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "AH30",
+              "column": "AH",
+              "row": 30,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "AI30",
+              "column": "AI",
+              "row": 30,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "AJ30",
+              "column": "AJ",
+              "row": 30,
+              "style": "4",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 31,
+          "cells": [
+            {
+              "ref": "A31",
+              "column": "A",
+              "row": 31,
+              "type": "s",
+              "style": "5",
+              "raw_value": "1",
+              "text": "Subsidies"
+            },
+            {
+              "ref": "B31",
+              "column": "B",
+              "row": 31,
+              "style": "22",
+              "raw_value": "557.20000000000005",
+              "text": "557.20000000000005"
+            },
+            {
+              "ref": "C31",
+              "column": "C",
+              "row": 31,
+              "style": "25",
+              "raw_value": "6.3E-2",
+              "text": "6.3E-2"
+            },
+            {
+              "ref": "D31",
+              "column": "D",
+              "row": 31,
+              "style": "25",
+              "raw_value": "32",
+              "text": "32"
+            }
+          ]
+        },
+        {
+          "row_number": 32,
+          "cells": [
+            {
+              "ref": "A32",
+              "column": "A",
+              "row": 32,
+              "type": "s",
+              "style": "5",
+              "raw_value": "2",
+              "text": "Debt Service"
+            },
+            {
+              "ref": "B32",
+              "column": "B",
+              "row": 32,
+              "style": "22",
+              "raw_value": "7.5",
+              "text": "7.5"
+            },
+            {
+              "ref": "C32",
+              "column": "C",
+              "row": 32,
+              "style": "8",
+              "raw_value": "3.0000000000000001E-3",
+              "text": "3.0000000000000001E-3"
+            },
+            {
+              "ref": "D32",
+              "column": "D",
+              "row": 32,
+              "style": "5",
+              "raw_value": "33",
+              "text": "33"
+            }
+          ]
+        },
+        {
+          "row_number": 33,
+          "cells": [
+            {
+              "ref": "B33",
+              "column": "B",
+              "row": 33,
+              "style": "26",
+              "text": ""
+            },
+            {
+              "ref": "C33",
+              "column": "C",
+              "row": 33,
+              "style": "27",
+              "text": ""
+            },
+            {
+              "ref": "E33",
+              "column": "E",
+              "row": 33,
+              "style": "9",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 34,
+          "cells": [
+            {
+              "ref": "A34",
+              "column": "A",
+              "row": 34,
+              "style": "6",
+              "text": ""
+            },
+            {
+              "ref": "B34",
+              "column": "B",
+              "row": 34,
+              "style": "6",
+              "text": ""
+            },
+            {
+              "ref": "C34",
+              "column": "C",
+              "row": 34,
+              "style": "6",
+              "text": ""
+            },
+            {
+              "ref": "D34",
+              "column": "D",
+              "row": 34,
+              "style": "6",
+              "text": ""
+            },
+            {
+              "ref": "E34",
+              "column": "E",
+              "row": 34,
+              "style": "9",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 35,
+          "cells": [
+            {
+              "ref": "A35",
+              "column": "A",
+              "row": 35,
+              "type": "s",
+              "style": "28",
+              "raw_value": "3",
+              "text": "Notes: Totals may not add due to rounding"
+            }
+          ]
+        },
+        {
+          "row_number": 36,
+          "cells": [
+            {
+              "ref": "A36",
+              "column": "A",
+              "row": 36,
+              "type": "s",
+              "style": "29",
+              "raw_value": "10",
+              "text": "           Results are preliminary and subject to audit review"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

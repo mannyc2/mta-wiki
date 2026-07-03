@@ -1,0 +1,64 @@
+{
+  "run_id": "2026-06-10T23-13-57-315Z_1976810-4a9314a7_ingest_2013-06-04-sbs-125th-cb11",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:44:39.515Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "entity-mta-nyct-existing",
+        "local_observation_id": "entity_mta_nyct_2013_06_04_sbs_125th",
+        "decision": "new",
+        "rationale": "The observation's base_record_id and record_id (entity_mta-nyct) already resolve to the existing canonical registry record entity_mta-nyct. The observation maps to its own canonical record, so this is a new positive confirmation of the existing identity — not a link to a different record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p001_c0006",
+            "source_quote": "New York City Transit"
+          },
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p004_c0002",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nyc-dot-existing",
+        "local_observation_id": "entity_nyc_dot_2013_06_04_sbs_125th",
+        "decision": "new",
+        "rationale": "The observation's base_record_id and record_id (entity_nyc-dot) already resolve to the existing canonical registry record entity_nyc-dot. This source confirms NYC DOT's participation as a presenter/co-branded entity in this presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p004_c0004",
+            "source_quote": "NEW YORK CITY DOT"
+          },
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p006_c0004",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-cb11-manhattan-existing",
+        "local_observation_id": "entity_community_board_11_manhattan_2013_06",
+        "decision": "new",
+        "rationale": "The observation's base_record_id and record_id (entity_community-board-11-manhattan) already resolve to the existing canonical registry record entity_community-board-11-manhattan. This source confirms CB11 as an audience for the 125th Street SBS update.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p001_c0002",
+            "source_quote": "Community Board 11 Update"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-43-05-309Z_2111393-c032e375_canonicalize_2026-06-10t23-13-57-315z-1976810-4a9314a7-ingest-2013-06-04-sbs-125th-cb11-entity-identity"
+}

@@ -1,0 +1,100 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:34:53.151Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_0858889973.md",
+  "cluster_id": "entity_cluster_0858889973",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_0858889973",
+    "kind": "entity",
+    "merge_groups": [
+      [
+        "entity_community-advisory-committee-2015",
+        "entity_woodhaven-cac-2014"
+      ]
+    ],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_community-advisory-committee-2015",
+          "entity_community-advisory-committee-flushing-jamaica"
+        ],
+        "reason": "Project scope differs: Woodhaven/Cross Bay vs Flushing to Jamaica SBS. Contradiction test — strong identity field (description/project affiliation) differs."
+      },
+      {
+        "record_ids": [
+          "entity_community-advisory-committee-2015",
+          "entity_community-advisory-committee-webster"
+        ],
+        "reason": "Project scope differs: Woodhaven/Cross Bay vs Webster Avenue SBS. Same contradiction test."
+      },
+      {
+        "record_ids": [
+          "entity_community-advisory-committee-flushing-jamaica",
+          "entity_community-advisory-committee-webster"
+        ],
+        "reason": "Project scope differs: Flushing to Jamaica vs Webster Avenue SBS. Contradiction test."
+      },
+      {
+        "record_ids": [
+          "entity_community-advisory-committee-flushing-jamaica",
+          "entity_woodhaven-cac-2014"
+        ],
+        "reason": "Project scope differs: Flushing to Jamaica vs Woodhaven/Cross Bay SBS. Contradiction test."
+      },
+      {
+        "record_ids": [
+          "entity_community-advisory-committee-webster",
+          "entity_woodhaven-cac-2014"
+        ],
+        "reason": "Project scope differs: Webster Avenue vs Woodhaven/Cross Bay SBS. Contradiction test."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "entity_community-advisory-committee-2015",
+        "aliases": [
+          "entity_community-advisory-committee-cac"
+        ],
+        "reason": "Shared generic alias not sufficient to indicate same committee; must be project-scoped."
+      },
+      {
+        "record_id": "entity_community-advisory-committee-flushing-jamaica",
+        "aliases": [
+          "entity_community-advisory-committee",
+          "entity_community-advisory-committee-cac-flushing-to-jamaica-sbs"
+        ],
+        "reason": "Generic base alias and project-specific alias; the project-specific one is more precise."
+      },
+      {
+        "record_id": "entity_community-advisory-committee-webster",
+        "aliases": [
+          "entity_community-advisory-committee",
+          "entity_community-advisory-committee-cac"
+        ],
+        "reason": "Generic aliases that could apply to any CAC."
+      },
+      {
+        "record_id": "entity_woodhaven-cac-2014",
+        "aliases": [
+          "entity_woodhaven-cross-bay-boulevards-sbs-community-advisory-committee"
+        ],
+        "reason": "Long alias, but project-specific, not generic."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [
+      "For project-specific committees, the project scope (corridor, route, service area) is a strong identity field. Records with different scopes never merge even if the base committee name is identical."
+    ],
+    "confidence": "high",
+    "rationale": "All records are community advisory committees for different bus projects. Contradiction test (test 1) applies: description/project scope differs across Flushing-Jamaica, Webster, and Woodhaven/Cross Bay. The two Woodhaven/Cross Bay records (entity_community-advisory-committee-2015 and entity_woodhaven-cac-2014) differ only by year suffix and represent the same durable committee; they merge under the lifecycle record rule (test 2). All cross-project pairs are do_not_merge. The high confidence is due to clear project attribution in payload identity fields."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-34-31-075Z_1282984-70a91e11_identity-review-run_entity-cluster-0858889973",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-34-31-075Z_2026-06-23T14-34-31-075Z_1282984-70a91e11_identity-review-run_entity-cluster-0858889973.jsonl"
+}

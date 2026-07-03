@@ -1,0 +1,75 @@
+{
+  "id": "codex-event-family-followup-burst-2026-06-30-n",
+  "created_at": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "forbidden_commands_used": [],
+  "canonical_jsonl_update_path": "deterministic materialize only",
+  "bucket": "event_family_other_followup",
+  "baseline": {
+    "validation_issues": 0,
+    "event_records": 7941,
+    "event_family_other_before": 125
+  },
+  "implemented_changes": [
+    {
+      "change": "add exact event_family gates for the next event scout slice",
+      "affected_count": 8,
+      "affected_records": {
+        "milestone": [
+          "event_aar-ford-e450-demo-oct2023"
+        ],
+        "implementation": [
+          "event_fall-2024-strategic-expansion",
+          "event_fare-pilot-duration-12-months",
+          "event_summer-2024-strategic-improvement"
+        ],
+        "publication": [
+          "event_feb-financial-plan",
+          "event_fmtac-2025-year-end-may2026",
+          "event_meeting-doc-152171-un-week-gridlock"
+        ],
+        "planning": [
+          "event_meeting-doc-189891-discussions-tmha"
+        ]
+      }
+    }
+  ],
+  "skipped_candidates": [
+    {
+      "record_id": "event_runwise-expansion-request",
+      "reason": "The scout target was approval, but the normalizer-visible cited block only proves contract expansion negotiation/addition of 38 locations and not the adjacent board-ratification heading; left as other."
+    }
+  ],
+  "post_materialize_counts": {
+    "validation_issues": 0,
+    "canonical_records": 84048,
+    "wiki_pages": 7337,
+    "event_records": 7941,
+    "event_family_other_after": 117
+  },
+  "tests": [
+    "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+    "bun run typecheck",
+    "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+    "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+    "bun packages/cli/src/cli.ts validate"
+  ],
+  "test_results": {
+    "normalizers": "264 pass, 4047 expect() calls",
+    "typecheck": "pass",
+    "sqlite_quick_check": "ok",
+    "validate": "Issues: 0"
+  },
+  "remaining_intentionally_unresolved": [
+    "117 event records still have event_family other.",
+    "Runwise expansion request remains other until approval-specific context is cited or an exact non-approval family is chosen.",
+    "Broad title-only, venue/commercial/social/race/tour, generic briefing/update, and caption-only event records remain excluded from broad rules."
+  ],
+  "next_lanes": [
+    "Entity reviewed key-prune slice to reduce guarded strong duplicate identity-key groups 2 -> 0.",
+    "Fresh event_family other scout for the remaining 117 records.",
+    "Project document_time_status missing bucket now at 34.",
+    "Treatment adjusted noisy/actionable bucket remains 18."
+  ]
+}

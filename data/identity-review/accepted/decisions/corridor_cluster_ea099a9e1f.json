@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "corridor_cluster_ea099a9e1f",
+  "kind": "corridor",
+  "packet_path": "data/identity-review/packets/corridor_cluster_ea099a9e1f.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_ea099a9e1f.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 6,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "corridor_broadway-manhattan-upper",
+        "corridor_broadway-queens"
+      ],
+      "reason": "Different boroughs (Manhattan vs Queens) per contradictory strong identity field 'borough', per Decision Test 1 and corridor rule: same street name with differing borough never merges."
+    },
+    {
+      "record_ids": [
+        "corridor_broadway-manhattan-upper",
+        "corridor_bus-fwd-2-broadway-bronx-local"
+      ],
+      "reason": "Different boroughs (Manhattan vs Bronx) per contradictory strong identity field 'borough', per Decision Test 1 and corridor rule."
+    },
+    {
+      "record_ids": [
+        "corridor_broadway-manhattan-upper",
+        "corridor_woodhaven-cross-bay-blvds"
+      ],
+      "reason": "Different street name (Broadway vs Woodhaven/Cross Bay Boulevards) and different limits/borough scope; strong identity fields 'street' and 'borough' contradict, per Decision Test 1 and corridor rule."
+    },
+    {
+      "record_ids": [
+        "corridor_broadway-queens",
+        "corridor_bus-fwd-2-broadway-bronx-local"
+      ],
+      "reason": "Different boroughs (Queens vs Bronx) per contradictory strong identity field 'borough', per Decision Test 1 and corridor rule."
+    },
+    {
+      "record_ids": [
+        "corridor_broadway-queens",
+        "corridor_woodhaven-cross-bay-blvds"
+      ],
+      "reason": "Different street name (Broadway vs Woodhaven/Cross Bay Boulevards) and different limits; strong identity fields 'street' and 'limits' contradict, per Decision Test 1 and corridor rule."
+    },
+    {
+      "record_ids": [
+        "corridor_bus-fwd-2-broadway-bronx-local",
+        "corridor_woodhaven-cross-bay-blvds"
+      ],
+      "reason": "Different boroughs (Bronx vs Queens) and different street name; per Decision Test 1 and corridor rule: same street name with differing borough never merges."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "All candidate edges involve corridors sharing the base street name 'Broadway' but differing in boroughs (Manhattan, Queens, Bronx) and/or street identity (Broadway vs Woodhaven/Cross Bay). The Identity Merge Canon explicitly forbids merging when boroughs differ, and also when limits or street names differ. No pair passes the Same-Object test (Test 2). All pairs are resolved as do_not_merge under Decision Test 1 (Contradiction test) and the per-kind corridor rule. No ambiguity exists. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

@@ -1,0 +1,427 @@
+{
+  "note_id": "codex-relation-rule-or-data-next5-prep",
+  "created_at": "2026-06-22T00:00:00.000Z",
+  "author": "codex",
+  "scope": "validator/rule-data triage only for next relation endpoint bucket after next4; no code, canonical, materialized, wiki, manifest, override, journal, or LOG edits",
+  "kind": "relation_endpoint_rule_or_data_triage",
+  "recommendation": {
+    "type": "data_cleanup_bucket",
+    "bucket": "implemented_by treatment_component -> entity",
+    "candidate_count": 6,
+    "confidence": "medium_high",
+    "summary": "Do not widen the implemented_by endpoint validator to accept treatment_component subjects yet. The next largest post-next4/post-batch023 bucket is six treatment_component -> entity implemented_by rows, but the examples are mixed: three Blue Lighting rows have an obvious same-source project carrier, one Pelham Bay row is a treatment/entity implementation detail without a specific project record, one Help Point row is closer to LIRR field-visit/program-support context than implementation, and the ABLE row reflects program-vs-treatment modeling. This should be curated as data cleanup rather than encoded as a broad validator rule.",
+    "recommended_action": "Prepare a small retire-and-replace cleanup batch for the six malformed implemented_by treatment_component -> entity relations. Use project -> entity implemented_by replacements where the source already has a same-source project carrier; otherwise use a reviewed looser relation such as related_to or add/attach a proper project/program carrier in a separate cleanup lane if evidence supports it.",
+    "do_not_patch_validator_yet": {
+      "rejected_patch": "Add treatment_component to RELATION_ENDPOINT_SHAPES.implemented_by.subject.",
+      "reason": "The current schema and agent instructions keep agency_role implemented_by scoped to project -> entity, while treatment components attach upward through has_treatment. Allowing treatment_component -> entity would hide endpoint/modeling problems and admit weak rows where the text says only field-visit support or broad program ownership."
+    }
+  },
+  "checkpoint_context": {
+    "given_checkpoint": "88 unexpected_relation_endpoint_shape issues before next4; has_metric claim -> metric_claim rule patched but not full-validated.",
+    "current_code_observed": {
+      "has_metric_claim_subject_present": true,
+      "files_observed": [
+        "packages/pipeline/src/records/relations.ts",
+        "packages/pipeline/test/records/relations.test.ts"
+      ],
+      "observed_acceptance": "relationEndpointShapeIssue(\"has_metric\", \"claim\", \"metric_claim\") is accepted in current code/tests."
+    },
+    "excluded_from_this_triage": [
+      {
+        "reason": "next4 has_metric claim -> metric_claim validator patch",
+        "simulated_or_observed_resolved_count": 8
+      },
+      {
+        "reason": "relation023 treatment_component timeline cleanup batch",
+        "excluded_original_record_ids": [
+          "relation_montauk-crossing-timetable-133331",
+          "relation_pj-crossing-timetable-133331",
+          "relation_pw-trackwork-timetable-133331",
+          "relation_treatment-has-event-bus-only-signals",
+          "relation_treatment-has-event-tsp-installation"
+        ],
+        "excluded_count": 5
+      }
+    ]
+  },
+  "targeted_inventory_after_exclusions": {
+    "method": "Read-only bun --eval over readCanonicalRecords() and relationEndpointShapeIssue(); excluded relation023 original record ids; did not run CLI validate.",
+    "unexpected_relation_endpoint_shape_total": 75,
+    "by_relation_kind": {
+      "operated_by": 6,
+      "has_claim": 2,
+      "serves_route": 10,
+      "has_treatment": 4,
+      "owned_by": 3,
+      "implemented_by": 15,
+      "part_of_program": 12,
+      "has_timeline_event": 14,
+      "related_route": 2,
+      "published_by": 5,
+      "operates_on_corridor": 2
+    },
+    "top_shape_buckets": [
+      {
+        "bucket": "implemented_by treatment_component->entity",
+        "count": 6
+      },
+      {
+        "bucket": "has_timeline_event claim->event",
+        "count": 5
+      },
+      {
+        "bucket": "has_timeline_event metric_claim->event",
+        "count": 4
+      },
+      {
+        "bucket": "implemented_by entity->entity",
+        "count": 4
+      },
+      {
+        "bucket": "operated_by entity->entity",
+        "count": 4
+      },
+      {
+        "bucket": "published_by claim->entity",
+        "count": 4
+      },
+      {
+        "bucket": "part_of_program project->source",
+        "count": 3
+      },
+      {
+        "bucket": "serves_route project->project",
+        "count": 3
+      }
+    ]
+  },
+  "current_validator_context": {
+    "implemented_by_rule": {
+      "subject_kinds": [
+        "project"
+      ],
+      "object_kinds": [
+        "entity"
+      ],
+      "current_rejection_message": "Relation kind implemented_by expects project -> entity, got treatment_component -> entity."
+    },
+    "related_rules_and_docs_checked": [
+      {
+        "path": "docs/schema-contracts.md",
+        "finding": "Endpoint table lists implemented_by as project -> entity and has_treatment as project/corridor -> treatment_component."
+      },
+      {
+        "path": "packages/agents/src/canonicalize.ts",
+        "finding": "Treatment relation pass says treatment observations should attach to a project or corridor via has_treatment; it does not make treatments first-class agency-role carriers."
+      },
+      {
+        "path": "packages/pipeline/src/records/relations.ts",
+        "finding": "Current RELATION_ENDPOINT_SHAPES.implemented_by admits only project -> entity."
+      }
+    ]
+  },
+  "exact_issue_examples": [
+    {
+      "record_id": "relation_lirr-blue-lighting-installed",
+      "source_id": "meeting_doc_108036",
+      "current_shape": "implemented_by treatment_component -> entity",
+      "subject": {
+        "record_id": "treatment_tc-meeting-doc-108036-blue-lighting-lirr",
+        "kind": "treatment_component",
+        "local_observation_id": "tc_meeting_doc_108036_blue_lighting_lirr",
+        "description": "Blue LED lighting installed at LIRR stations; NYCT and Metro-North pilots this year"
+      },
+      "object": {
+        "record_id": "entity_annual-report-2021-lirr",
+        "kind": "entity",
+        "local_observation_id": "entity_meeting_doc_108036_lirr",
+        "name": "Long Island Rail Road"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_108036#p010_c0003",
+          "text": "Blue Lighting"
+        },
+        {
+          "ref": "meeting_doc_108036#p010_c0004",
+          "text": "LIRR installed at 26 stations; NYCT and Metro-North pilots this year"
+        }
+      ],
+      "cleanup_read": "Same source already has project_meeting-doc-108036-blue-lighting with local_observation_id project_meeting_doc_108036_blue_lighting; replace with implemented_by project -> entity rather than broadening the validator."
+    },
+    {
+      "record_id": "relation_blue-lighting-metro-north-pilot",
+      "source_id": "meeting_doc_108036",
+      "current_shape": "implemented_by treatment_component -> entity",
+      "subject": {
+        "record_id": "treatment_tc-meeting-doc-108036-blue-lighting-lirr",
+        "kind": "treatment_component",
+        "local_observation_id": "tc_meeting_doc_108036_blue_lighting_lirr"
+      },
+      "object": {
+        "record_id": "entity_mta-metro-north-2015-webster-map",
+        "kind": "entity",
+        "local_observation_id": "entity_meeting_doc_108036_metro_north",
+        "name": "MTA Metro-North Railroad"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_108036#p010_c0004",
+          "text": "LIRR installed at 26 stations; NYCT and Metro-North pilots this year"
+        }
+      ],
+      "cleanup_read": "Use the same Blue Lighting project carrier if preserving Metro-North pilot implementation; the text supports an agency role but the subject should be the project/program record."
+    },
+    {
+      "record_id": "relation_nyct-metro-north-blue-lighting-pilots",
+      "source_id": "meeting_doc_108036",
+      "current_shape": "implemented_by treatment_component -> entity",
+      "subject": {
+        "record_id": "treatment_tc-meeting-doc-108036-blue-lighting-lirr",
+        "kind": "treatment_component",
+        "local_observation_id": "tc_meeting_doc_108036_blue_lighting_lirr"
+      },
+      "object": {
+        "record_id": "entity_mta-nyct",
+        "kind": "entity",
+        "local_observation_id": "entity_meeting_doc_108036_nyct",
+        "name": "MTA New York City Transit"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_108036#p010_c0004",
+          "text": "LIRR installed at 26 stations; NYCT and Metro-North pilots this year"
+        }
+      ],
+      "cleanup_read": "Likely same project -> entity replacement as the other Blue Lighting rows."
+    },
+    {
+      "record_id": "relation_nycdot-partner-pelham-bay-lane",
+      "source_id": "meeting_doc_100341",
+      "current_shape": "implemented_by treatment_component -> entity",
+      "subject": {
+        "record_id": "treatment_pelham-bay-bus-contraflow-lane",
+        "kind": "treatment_component",
+        "local_observation_id": "treatment_pelham_bay_bus_contraflow_lane",
+        "description": "Bus contra-flow lane on Pelham Bay being painted red by NYC DOT, to enable rerouting Bx12 SBS to Co-op City"
+      },
+      "object": {
+        "record_id": "entity_nyc-dot",
+        "kind": "entity",
+        "local_observation_id": "entity_nyc_dot_nov2022",
+        "name": "NYC DOT"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_100341#p005_c0002",
+          "text": "The Bus network redesigns are a major project intended to directly address these concerns."
+        },
+        {
+          "ref": "meeting_doc_100341#p005_c0003",
+          "text": "We are also excited to announce additional bus lane improvement on Pelham Bay where our partners at NYC DOT are painting the street red."
+        }
+      ],
+      "cleanup_read": "The source supports NYC DOT involvement with a bus-lane treatment. It does not provide a precise same-source project record for this Pelham Bay lane, so this row needs curated cleanup, not a blanket implemented_by validator widening."
+    },
+    {
+      "record_id": "relation_help-points-lirr-program-support",
+      "source_id": "meeting_doc_189841",
+      "current_shape": "implemented_by treatment_component -> entity",
+      "subject": {
+        "record_id": "treatment_help-point-installations",
+        "kind": "treatment_component",
+        "local_observation_id": "treatment_help_point_installations",
+        "description": "Help Point units installed at Deer Park Station with site assessments conducted for upcoming installations at Wyandanch Station and Farmingdale Station on the Ronkonkoma Branch."
+      },
+      "object": {
+        "record_id": "entity_annual-report-2021-lirr",
+        "kind": "entity",
+        "local_observation_id": "entity_lirr_meeting_doc_189841",
+        "name": "Long Island Rail Road"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_189841#p027_c0004",
+          "text": "LIRR's Program Support team proudly hosted members of the LIRR ADA Task Force and the Commuter Council for a field visit..."
+        },
+        {
+          "ref": "meeting_doc_189841#p027_c0005",
+          "text": "The day began at Deer Park Station, where Help Points have already been"
+        }
+      ],
+      "cleanup_read": "This is weaker as implemented_by: the cited block says Program Support hosted a field visit, not that LIRR implemented the Help Point treatment. Retire/replace with a weaker contextual relation or defer for source-specific cleanup."
+    },
+    {
+      "record_id": "relation_nyct-implements-able",
+      "source_id": "meeting_doc_127471",
+      "current_shape": "implemented_by treatment_component -> entity",
+      "subject": {
+        "record_id": "treatment_able-program_2",
+        "kind": "treatment_component",
+        "local_observation_id": "treatment_component_able_program",
+        "description": "ABLE deploys automated cameras on buses which ticket vehicles illegally operating in bus lanes."
+      },
+      "object": {
+        "record_id": "entity_mta-nyct",
+        "kind": "entity",
+        "local_observation_id": "entity_meeting_doc_127471_nyct",
+        "name": "MTA New York City Transit"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_127471#p006_c0004",
+          "text": "Our Automated Bus Lane Enforcement (ABLE) camera program continues to improve bus speeds by 5%..."
+        },
+        {
+          "ref": "meeting_doc_127471#p027_c0006",
+          "text": "Building on the success of bus lanes is NYCT's ABLE camera program."
+        },
+        {
+          "ref": "meeting_doc_127471#p027_c0007",
+          "text": "ABLE also is a win for safety: ABLE corridors have seen a 20% reduction in collisions on average."
+        }
+      ],
+      "cleanup_read": "The source calls ABLE a camera program. Existing canonical project records for ABLE/ACE exist, but not as a same-source project in meeting_doc_127471. This is a modeling cleanup candidate, not a validator-shape patch candidate."
+    }
+  ],
+  "simulated_impact": {
+    "current_after_next4_and_relation023_exclusions": 75,
+    "resolved_if_bucket_cleaned_or_rule_widened": 6,
+    "remaining_after_bucket": 69,
+    "why_cleanup_has_same_endpoint_count_impact_as_rule_patch": "All six rows are in one shape bucket; either retiring/replacing them or admitting the shape would remove six endpoint-shape issues. Cleanup is preferred because it preserves the validator as a signal for treatment/project modeling."
+  },
+  "candidate_cleanup_plan": {
+    "recommended_batch_name": "relation cleanup batch024 or next available relation cleanup lane",
+    "rows": [
+      {
+        "retire_record_id": "relation_lirr-blue-lighting-installed",
+        "preferred_replacement": "implemented_by project_meeting_doc_108036_blue_lighting -> entity_meeting_doc_108036_lirr",
+        "confidence": "high"
+      },
+      {
+        "retire_record_id": "relation_blue-lighting-metro-north-pilot",
+        "preferred_replacement": "implemented_by project_meeting_doc_108036_blue_lighting -> entity_meeting_doc_108036_metro_north",
+        "confidence": "medium_high"
+      },
+      {
+        "retire_record_id": "relation_nyct-metro-north-blue-lighting-pilots",
+        "preferred_replacement": "implemented_by project_meeting_doc_108036_blue_lighting -> entity_meeting_doc_108036_nyct",
+        "confidence": "medium_high"
+      },
+      {
+        "retire_record_id": "relation_nycdot-partner-pelham-bay-lane",
+        "preferred_replacement": "curated cleanup; likely related_to treatment_pelham_bay_bus_contraflow_lane -> entity_nyc_dot_nov2022 unless a precise same-source project carrier is added/reviewed",
+        "confidence": "medium"
+      },
+      {
+        "retire_record_id": "relation_help-points-lirr-program-support",
+        "preferred_replacement": "curated cleanup; source supports LIRR Program Support context more clearly than implemented_by, so prefer related_to or defer if no useful relation remains",
+        "confidence": "medium"
+      },
+      {
+        "retire_record_id": "relation_nyct-implements-able",
+        "preferred_replacement": "curated cleanup; either attach ABLE to a proper project/program carrier or use related_to treatment_component_able_program -> entity_meeting_doc_127471_nyct if preserving only source-backed context",
+        "confidence": "medium"
+      }
+    ],
+    "dry_run_status": "Not dry-run through createSubmissionEntry in this triage artifact; this note recommends the bucket and replacement strategy only."
+  },
+  "deferred_competing_buckets": [
+    {
+      "bucket": "has_timeline_event claim->event",
+      "count": 5,
+      "reason": "Still mixed claim scheduling/context semantics; prior cleanup precedent handled similar claim timeline context as data cleanup, and it should not be bundled with implemented_by treatment rows."
+    },
+    {
+      "bucket": "has_timeline_event metric_claim->event",
+      "count": 4,
+      "reason": "Metric/event date context may need separate modeling review; admitting metric_claim timeline subjects would be broader than the inspected evidence supports."
+    },
+    {
+      "bucket": "implemented_by entity->entity and operated_by entity->entity",
+      "count": 8,
+      "reason": "Prior notes classify these agency/service entity pairs as mixed and often self-link-like; do not broaden agency-role predicates to all entity pairs."
+    },
+    {
+      "bucket": "published_by claim->entity",
+      "count": 4,
+      "reason": "Claim publication may be plausible for some rows, but current rows need their own publisher/claim semantics review."
+    }
+  ],
+  "commands_run": [
+    {
+      "command": "pwd && rg --files -g '!*node_modules*' | rg '(^data/review_notes/|packages/harness/src/mta|relation|canonical|validate|review)'",
+      "outcome": "Confirmed repo root and located relation/validation/review files; output was broad."
+    },
+    {
+      "command": "git status --short",
+      "outcome": "Confirmed very dirty shared worktree; treated all existing changes as external and did not revert or overwrite."
+    },
+    {
+      "command": "ls -la data/review_notes",
+      "outcome": "Listed prior review artifacts and confirmed next4/batch023 context files exist."
+    },
+    {
+      "command": "jq '{file:input_filename, recommendation_type, checkpoint, excluded_buckets, top_candidate, candidates, commands_run}' data/review_notes/codex-relation-rule-or-data-next4-prep.json data/review_notes/codex-relation-rule-or-data-next3-prep.json data/review_notes/codex-relation-rule-or-data-next2-prep.json data/review_notes/codex-relation-rule-or-data-next-prep.json",
+      "outcome": "Initial key probe showed prior artifacts use different top-level fields; commands_run from next4 confirmed the 88-issue checkpoint and has_metric claim review."
+    },
+    {
+      "command": "jq 'keys' data/review_notes/codex-relation-rule-or-data-next4-prep.json && jq '.recommendation, .inventory_context, .candidates, .simulated_impact' data/review_notes/codex-relation-rule-or-data-next4-prep.json",
+      "outcome": "Read next4 recommendation: allow has_metric claim -> metric_claim, resolving 8 of 88 and leaving implemented_by treatment_component->entity as a top remaining bucket."
+    },
+    {
+      "command": "jq 'keys' data/review_notes/codex-relation-cleanup-batch023-prep.json && jq '.' data/review_notes/codex-relation-cleanup-batch023-prep.json",
+      "outcome": "Read batch023 prep and extracted the five has_timeline_event treatment_component -> event original relation record ids to exclude."
+    },
+    {
+      "command": "sed -n '200,275p' packages/pipeline/src/records/relations.ts && sed -n '52,76p' packages/pipeline/test/records/relations.test.ts && sed -n '219,275p' packages/pipeline/src/validate.ts",
+      "outcome": "Confirmed current has_metric claim subject patch/test is present and implemented_by remains project -> entity."
+    },
+    {
+      "command": "bun --eval '<readCanonicalRecords plus relationEndpointShapeIssue inventory, excluding batch023 submission ids>'",
+      "outcome": "First exclusion attempt left total at 80 because canonical relation records did not expose the expected submission_id field in the row formatter."
+    },
+    {
+      "command": "bun --eval '<readCanonicalRecords plus relationEndpointShapeIssue inventory, excluding batch023 original relation record ids>'",
+      "outcome": "Computed target inventory: 75 endpoint-shape issues; top bucket implemented_by treatment_component->entity count 6."
+    },
+    {
+      "command": "bun --eval '<print six implemented_by treatment_component->entity rows with subject/object/evidence and same-source projects>'",
+      "outcome": "Collected exact bucket rows and confirmed Blue Lighting has a same-source project carrier, while Pelham Bay, Help Points, and ABLE need curated cleanup."
+    },
+    {
+      "command": "jq -c 'select(selected block ids) | {ref:(.source_id+\"#\"+.block_id), page_number, block_kind, text:.raw_text}' raw/sources/.../blocks.jsonl",
+      "outcome": "Retrieved exact source block text for Blue Lighting, Help Points, Pelham Bay bus lane, and ABLE examples."
+    },
+    {
+      "command": "rg -n 'treatment_component.*implemented_by|implemented_by.*treatment_component|implemented_by.*project|agency_role|has_treatment' docs packages data/review_notes -g '*.md' -g '*.ts' -g '*.json' -g '*.jsonl'",
+      "outcome": "Confirmed schema/docs and prior next4 note treat implemented_by treatment_component->entity as data cleanup likely, not an already accepted rule."
+    },
+    {
+      "command": "sed -n '108,130p' docs/schema-contracts.md && sed -n '320,338p' packages/agents/src/canonicalize.ts && sed -n '220,235p' packages/pipeline/src/records/relations.ts",
+      "outcome": "Checked exact schema and prompt context: implemented_by is project -> entity; treatments attach to project/corridor via has_treatment."
+    },
+    {
+      "command": "bun --eval '<search project records for ABLE/Automated Bus Lane Enforcement and source meeting_doc_127471 context>'",
+      "outcome": "Found canonical ABLE/ACE project records but no same-source meeting_doc_127471 project carrier for the offending ABLE row; supports curated data cleanup rather than a narrow rule patch."
+    },
+    {
+      "command": "bun --eval 'relationEndpointShapeIssue checks for implemented_by treatment_component->entity, implemented_by project->entity, related_to treatment_component->entity, has_treatment project->treatment_component'",
+      "outcome": "Confirmed current validator rejects implemented_by treatment_component->entity, accepts implemented_by project->entity, accepts related_to because it has no endpoint-shape rule, and accepts has_treatment project->treatment_component."
+    },
+    {
+      "command": "test ! -e data/review_notes/codex-relation-rule-or-data-next5-prep.json && echo 'target artifact is new' || echo 'exists'",
+      "outcome": "Confirmed the target prep artifact did not already exist before writing."
+    }
+  ],
+  "commands_intentionally_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl --verify",
+    "provider-backed post-ingest commands",
+    "DB repair or publish commands"
+  ],
+  "files_written": [
+    "data/review_notes/codex-relation-rule-or-data-next5-prep.json"
+  ]
+}

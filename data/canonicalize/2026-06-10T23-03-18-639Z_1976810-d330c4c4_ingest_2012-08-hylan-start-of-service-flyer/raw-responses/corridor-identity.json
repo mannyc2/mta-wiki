@@ -1,0 +1,84 @@
+{
+  "run_id": "2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:48:26.719Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "hylan-blvd-lincoln-steuben-2012-new",
+        "local_observation_id": "corridor_hylan_blvd_lincoln_to_steuben_2012",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id corridor_hylan-boulevard-brt: limits match exactly ('Between Lincoln Avenue and Steuben Street'), source 2012_08_hylan_start_of_service_flyer is already in the record's source_ids, and alias corridor_hylan-blvd-lincoln-to-steuben-2012 is already present in the record's aliases. No different record matches more closely.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0005",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0017",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0018",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "richmond-ave-platinum-forest-hill-2012-new",
+        "local_observation_id": "corridor_richmond_ave_platinum_to_forest_hill_2012",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id corridor_richmond-ave-hylan-2011: limits match ('Between Platinum Avenue and Forest Hill Road'), source is already listed, and alias corridor_richmond-ave-platinum-to-forest-hill-2012 is already in the record's aliases. No different record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0005",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0019",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0020",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "richmond-ave-shirley-hylan-2012-new",
+        "local_observation_id": "corridor_richmond_ave_shirley_to_hylan_2012",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id corridor_richmond-ave-hylan-2011: although limits differ ('Shirley Avenue to Hylan Boulevard' vs record's 'Platinum Avenue to Forest Hill Road'), the alias corridor_richmond-ave-shirley-to-hylan-2012 is already in the record's aliases and the source is already listed, indicating prior canonicalization folded this segment into the same corridor record. No different record is a closer match.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0005",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0019",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0020",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-47-35-386Z_2111393-3fb92e6e_canonicalize_2026-06-10t23-03-18-639z-1976810-d330c4c4-ingest-2012-08-hylan-start-of-service-flyer-corridor-identity"
+}

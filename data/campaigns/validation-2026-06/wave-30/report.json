@@ -1,0 +1,87 @@
+{
+  "campaign_id": "validation-2026-06",
+  "wave": 30,
+  "generated_at": "2026-06-23T15:35:16.539Z",
+  "sources_selected": [
+    "meeting_doc_100251",
+    "meeting_doc_105826",
+    "meeting_doc_109241",
+    "meeting_doc_109251",
+    "meeting_doc_109271",
+    "meeting_doc_111661",
+    "meeting_doc_111666",
+    "meeting_doc_111681",
+    "meeting_doc_113511",
+    "meeting_doc_113516"
+  ],
+  "ingested": [],
+  "skipped_already_done": [],
+  "quarantined": [
+    {
+      "source_id": "meeting_doc_100251",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_105826",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_109241",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_109251",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_109271",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_111661",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_111666",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_111681",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_113511",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_113516",
+      "reason": "401 status code (no body)"
+    }
+  ],
+  "run_ids": [],
+  "telemetry": {
+    "concurrency": 10,
+    "timeout_min": 300,
+    "wall_clock_s": 148,
+    "rate_limit": [
+      {
+        "provider": "pioneer",
+        "rate_per_minute": 170,
+        "requests": 0,
+        "requests_per_minute_observed": 0,
+        "rate_limited_429": 0,
+        "circuit_breaker_trips": 0,
+        "wait_ms_p50": 0,
+        "wait_ms_p95": 0,
+        "wait_ms_max": 0,
+        "last_rate_limit_headers": {}
+      }
+    ],
+    "materialize": {
+      "completed_ingests": 0,
+      "runs": 1,
+      "total_seconds": 142,
+      "every_k": 10
+    }
+  }
+}

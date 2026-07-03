@@ -1,0 +1,448 @@
+{
+  "note_id": "codex-identity-batch220-prep",
+  "batch": "identity220",
+  "created_at": "2026-06-23T14:32:00Z",
+  "author": "codex",
+  "scope": {
+    "operation": "prepare_identity_cleanup_artifact_only",
+    "issue_type": "duplicate_global_identity",
+    "current_duplicate_snapshot": {
+      "method": "Read-only validateRepo library call from packages/pipeline/src/validate.ts.",
+      "issue_count": 161,
+      "duplicate_global_identity": 160,
+      "unexpected_relation_endpoint_shape": 1,
+      "duplicate_global_identity_by_kind": {
+        "corridor": 2,
+        "entity": 157,
+        "project": 1
+      }
+    },
+    "selection_note": "Focused on high-confidence post-identity219 entity collisions named by the owner: Janno Lieber, MaBSTOA, Castleton Depot, Lamond Kearse, Timothy Dodd/Doddo, NYCT committee clusters, MTA Board, and one Metro-North/NYCT contamination DNM. Church Avenue corridor was intentionally excluded.",
+    "forbidden_commands_run": [],
+    "provider_backed_commands_run": false,
+    "generated_output_commands_run": false,
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-batch220-prep.json. No overrides, LOG, manifests, canonical JSONL, DB, wiki, materialized outputs, or generated validation outputs were mutated."
+  },
+  "prepared_count": 10,
+  "proposed_durable_decisions": [
+    {
+      "decision_id": "identity220-entity-001",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_janno-lieber-mta-chair",
+      "target_id": "entity_janno-lieber-2025",
+      "identity_keys": [
+        "entity_janno-lieber",
+        "entity_janno-lieber-mta-chair"
+      ],
+      "confidence": "high",
+      "reason": "Both records identify the same person, Janno Lieber, in MTA Chair/CEO context. The target is the broader multi-source Janno Lieber record; the alias is a thin MTA Chair occurrence.",
+      "source_evidence": [
+        {
+          "record_id": "entity_janno-lieber-mta-chair",
+          "evidence_ref": "meeting_doc_201776#p286_c0001",
+          "quote": "MTA Chair Janno Lieber"
+        },
+        {
+          "record_id": "entity_janno-lieber-2025",
+          "evidence_ref": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p002_c0002",
+          "quote": "MTA Chairman Janno Lieber"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_pair_absent": true,
+        "same_entity_type": "person",
+        "same_person_name": "Janno Lieber",
+        "person_vs_mta_agency_guard_respected": true
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_janno-lieber-mta-chair",
+        "target_id": "entity_janno-lieber-2025",
+        "reason": "Same person: Janno Lieber in MTA Chair/MTA Chairman context.",
+        "source_decision": "data/review_notes/codex-identity-batch220-prep.json#identity220-entity-001",
+        "reviewed_at": "2026-06-23T14:32:00Z"
+      }
+    },
+    {
+      "decision_id": "identity220-entity-002",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_167646-mtabstoa",
+      "target_id": "entity_mabstoa",
+      "identity_keys": [
+        "entity_manhattan-and-bronx-surface-transit-operating-authority"
+      ],
+      "confidence": "high",
+      "reason": "Both records identify Manhattan and Bronx Surface Transit Operating Authority / MaBSTOA. The target is the established multi-source MaBSTOA agency cluster.",
+      "source_evidence": [
+        {
+          "record_id": "entity_167646-mtabstoa",
+          "evidence_ref": "meeting_doc_167646#p088_c0005",
+          "quote": "Manhattan and Bronx Surface Transit Operating Authority"
+        },
+        {
+          "record_id": "entity_mabstoa",
+          "evidence_ref": "meeting_doc_201706#p002_c0003",
+          "quote": "Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA)."
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_pair_absent": true,
+        "same_entity_type_or_compatible": "agency/operating authority",
+        "not_merging_with_mta_bus_company_or_nyct": true
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_167646-mtabstoa",
+        "target_id": "entity_mabstoa",
+        "reason": "Same MaBSTOA agency: Manhattan and Bronx Surface Transit Operating Authority.",
+        "source_decision": "data/review_notes/codex-identity-batch220-prep.json#identity220-entity-002",
+        "reviewed_at": "2026-06-23T14:32:00Z"
+      }
+    },
+    {
+      "decision_id": "identity220-entity-003",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_castleton-bus-depot",
+      "target_id": "entity_meeting-doc-176421-castleton-depot",
+      "identity_keys": [
+        "entity_castleton-depot"
+      ],
+      "confidence": "high",
+      "reason": "Both records identify Castleton Depot, the Staten Island bus depot. The entity_type difference is only depot-vs-agency extraction noise.",
+      "source_evidence": [
+        {
+          "record_id": "entity_castleton-bus-depot",
+          "evidence_ref": "meeting_doc_201776#p286_c0001",
+          "quote": "all 58 XD40s would be going to Castleton"
+        },
+        {
+          "record_id": "entity_meeting-doc-176421-castleton-depot",
+          "evidence_ref": "meeting_doc_176421#p005_c0007",
+          "quote": "As the Depot Training Supervisor at Castleton Depot"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_pair_absent": true,
+        "same_facility_name": "Castleton Depot",
+        "same_facility_type": "bus depot"
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_castleton-bus-depot",
+        "target_id": "entity_meeting-doc-176421-castleton-depot",
+        "reason": "Same Castleton Depot bus-depot facility.",
+        "source_decision": "data/review_notes/codex-identity-batch220-prep.json#identity220-entity-003",
+        "reviewed_at": "2026-06-23T14:32:00Z"
+      }
+    },
+    {
+      "decision_id": "identity220-entity-004",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-135596-lamond-kearse",
+      "target_id": "entity_meeting-doc-190056-lamond-kearse",
+      "identity_keys": [
+        "entity_lamond-w-kearse"
+      ],
+      "confidence": "high",
+      "reason": "Both records identify Lamond/Lamond W. Kearse as the MTA compliance/ethics-risk-compliance officer. The target already aggregates Lamond Kearse variants.",
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-135596-lamond-kearse",
+          "evidence_ref": "meeting_doc_135596#p068_c0006",
+          "quote": "Lamond W. Kearse Chief Ethics, Risk and Compliance Officer"
+        },
+        {
+          "record_id": "entity_meeting-doc-190056-lamond-kearse",
+          "evidence_ref": "meeting_doc_128986#p003_c0007",
+          "quote": "Lamond W. Kearsse, Chief Compliance Officer"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_pair_absent": true,
+        "same_entity_type": "person",
+        "same_person_name_variant": "Lamond W. Kearse/Kearsse",
+        "compatible_role_context": "MTA compliance / ethics, risk and compliance"
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_meeting-doc-135596-lamond-kearse",
+        "target_id": "entity_meeting-doc-190056-lamond-kearse",
+        "reason": "Same person: Lamond W. Kearse/Kearsse in MTA compliance leadership context.",
+        "source_decision": "data/review_notes/codex-identity-batch220-prep.json#identity220-entity-004",
+        "reviewed_at": "2026-06-23T14:32:00Z"
+      }
+    },
+    {
+      "decision_id": "identity220-entity-005",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-133286-timothy-dodd",
+      "target_id": "entity_meeting-doc-199176-timothy-doddo",
+      "identity_keys": [
+        "entity_timothy-j-doddo"
+      ],
+      "confidence": "high",
+      "reason": "Both records identify the NYCT safety-plan project manager Timothy Doddo; the alias appears to be a one-letter surname OCR/name variant captured as Timothy Dodd.",
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-133286-timothy-dodd",
+          "evidence_ref": "meeting_doc_133286#p001_c0002",
+          "quote": "Project Manager Name Timothy Dodd"
+        },
+        {
+          "record_id": "entity_meeting-doc-199176-timothy-doddo",
+          "evidence_ref": "meeting_doc_199176#p001_c0002",
+          "quote": "Project Manager Name Timothy Doddo"
+        },
+        {
+          "record_id": "entity_meeting-doc-199176-timothy-doddo",
+          "evidence_ref": "meeting_doc_199181#p010_c0016",
+          "quote": "Timothy J. Doddo, CSP, WSO-CSE, TSSP"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_pair_absent": true,
+        "same_entity_type": "person",
+        "same_nyct_safety_plan_context": true,
+        "surname_variant_explained": "Dodd vs Doddo"
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_meeting-doc-133286-timothy-dodd",
+        "target_id": "entity_meeting-doc-199176-timothy-doddo",
+        "reason": "Same NYCT safety-plan person: Timothy Dodd/Doddo project-manager name variant.",
+        "source_decision": "data/review_notes/codex-identity-batch220-prep.json#identity220-entity-005",
+        "reviewed_at": "2026-06-23T14:32:00Z"
+      }
+    },
+    {
+      "decision_id": "identity220-entity-006",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-194171-nyct-committee",
+      "target_id": "entity_meeting-doc-140466-nyct-committee-members",
+      "identity_keys": [
+        "entity_new-york-city-transit-committee"
+      ],
+      "confidence": "high",
+      "reason": "Both records identify the same MTA Board New York City Transit Committee. The target is the richer member-list record already used for the committee cluster.",
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-194171-nyct-committee",
+          "evidence_ref": "meeting_doc_194171#p016_c0004",
+          "quote": "Members of the New York City Transit Committee include:"
+        },
+        {
+          "record_id": "entity_meeting-doc-140466-nyct-committee-members",
+          "evidence_ref": "meeting_doc_140466#p014_c0004",
+          "quote": "Members of the New York City Transit Committee include:"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_pair_absent": true,
+        "both_entity_type_committee_or_compatible": true,
+        "same_parent_context": "MTA Board committee"
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_meeting-doc-194171-nyct-committee",
+        "target_id": "entity_meeting-doc-140466-nyct-committee-members",
+        "reason": "Same New York City Transit Committee of the MTA Board.",
+        "source_decision": "data/review_notes/codex-identity-batch220-prep.json#identity220-entity-006",
+        "reviewed_at": "2026-06-23T14:32:00Z"
+      }
+    },
+    {
+      "decision_id": "identity220-entity-007",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_nyct-committee-dec2024",
+      "target_id": "entity_meeting-doc-140466-nyct-committee-members",
+      "identity_keys": [
+        "entity_new-york-city-transit-committee"
+      ],
+      "confidence": "high",
+      "reason": "The alias record is typed as a program, but its name and evidence identify New York City Transit Committee members, not a separate program.",
+      "source_evidence": [
+        {
+          "record_id": "entity_nyct-committee-dec2024",
+          "evidence_ref": "meeting_doc_160446#p032_c0004",
+          "quote": "Members of the New York City Transit Committee include:"
+        },
+        {
+          "record_id": "entity_meeting-doc-140466-nyct-committee-members",
+          "evidence_ref": "meeting_doc_140466#p014_c0004",
+          "quote": "Members of the New York City Transit Committee include:"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_pair_absent": true,
+        "program_typing_is_extraction_noise": true,
+        "same_committee_name": "New York City Transit Committee"
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_nyct-committee-dec2024",
+        "target_id": "entity_meeting-doc-140466-nyct-committee-members",
+        "reason": "Same New York City Transit Committee/member-list entity; program type is extraction noise.",
+        "source_decision": "data/review_notes/codex-identity-batch220-prep.json#identity220-entity-007",
+        "reviewed_at": "2026-06-23T14:32:00Z"
+      }
+    },
+    {
+      "decision_id": "identity220-entity-008",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_nyct-committee-members",
+      "target_id": "entity_meeting-doc-140466-nyct-committee-members",
+      "identity_keys": [
+        "entity_new-york-city-transit-committee",
+        "entity_nyct-committee-members"
+      ],
+      "confidence": "high",
+      "reason": "Same committee/member-list identity for the New York City Transit Committee, with overlapping chair/member roster and parent MTA Board context.",
+      "source_evidence": [
+        {
+          "record_id": "entity_nyct-committee-members",
+          "evidence_ref": "nyct_key_performance_metrics_doc194001#p032_c0004",
+          "quote": "Members of the New York City Transit Committee include:"
+        },
+        {
+          "record_id": "entity_meeting-doc-140466-nyct-committee-members",
+          "evidence_ref": "meeting_doc_140466#p014_c0004",
+          "quote": "Members of the New York City Transit Committee include:"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_pair_absent": true,
+        "same_committee_name_or_abbreviation": "NYC/NYCT/New York City Transit Committee",
+        "same_parent_context": "MTA Board of Directors"
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_nyct-committee-members",
+        "target_id": "entity_meeting-doc-140466-nyct-committee-members",
+        "reason": "Same NYCT/New York City Transit Committee member-list entity.",
+        "source_decision": "data/review_notes/codex-identity-batch220-prep.json#identity220-entity-008",
+        "reviewed_at": "2026-06-23T14:32:00Z"
+      }
+    },
+    {
+      "decision_id": "identity220-entity-009",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_mta-board",
+      "target_id": "entity_mta-board-open-data-plan",
+      "identity_keys": [
+        "entity_mta-board"
+      ],
+      "confidence": "high",
+      "reason": "Both records identify the same MTA Board governing body. The target is the richer multi-source board cluster; the alias is a one-source board-meeting record.",
+      "source_evidence": [
+        {
+          "record_id": "entity_mta-board",
+          "evidence_ref": "meeting_doc_201926#p001_c0001",
+          "quote": "Exhibit Book MTA Board Meeting 3/25/2026"
+        },
+        {
+          "record_id": "entity_mta-board-open-data-plan",
+          "evidence_ref": "open_data_plan_2025_update#p005_c0005",
+          "quote": "updating the MTA Board on our progress and achievements"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_pair_absent": true,
+        "same_entity_name": "MTA Board",
+        "same_entity_type_or_compatible": "governing body/board"
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_mta-board",
+        "target_id": "entity_mta-board-open-data-plan",
+        "reason": "Same MTA Board governing body.",
+        "source_decision": "data/review_notes/codex-identity-batch220-prep.json#identity220-entity-009",
+        "reviewed_at": "2026-06-23T14:32:00Z"
+      }
+    },
+    {
+      "decision_id": "identity220-entity-010",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-124881-mnr",
+        "entity_meeting-doc-128981-nyct"
+      ],
+      "identity_keys": [
+        "entity_metro-north-commuter-railroad-company",
+        "entity_mta-metro-north-2015-webster-map",
+        "entity_mta-metro-north-railroad"
+      ],
+      "confidence": "high",
+      "reason": "This is an agency-contamination false positive, not a same-identity match. One record is Metro-North Commuter Railroad Company / MTA Metro-North Railroad; the other is New York City Transit Authority / NYCT. Shared Metro-North keys on the NYCT record are contamination and should be suppressed with a DNM guard.",
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-124881-mnr",
+          "evidence_ref": "meeting_doc_131536#p001_c0007",
+          "quote": "AGENCY: MTA Metro-North Railroad (\"MNR\")"
+        },
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_direct_do_not_merge_pair_absent": true,
+        "direct_alias_absent_from_current_merges_json": true,
+        "same_entity_type": "agency",
+        "different_agency_guard": "Metro-North Railroad vs New York City Transit Authority",
+        "parent_mta_hierarchy_does_not_imply_identity": true
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_meeting-doc-124881-mnr",
+          "entity_meeting-doc-128981-nyct"
+        ],
+        "reason": "Do not merge sibling/related agencies: MTA Metro-North Railroad and New York City Transit Authority are distinct; shared Metro-North keys on NYCT are contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch220-prep.json#identity220-entity-010",
+        "reviewed_at": "2026-06-23T14:32:00Z"
+      }
+    }
+  ],
+  "skipped_review_only": [
+    {
+      "candidate": "entity_meeting-doc-124881-mnr -> entity_metro-north-railroad",
+      "confidence": "medium",
+      "reason": "Likely same MTA Metro-North Railroad agency, but the alias record contains visible contamination in _merged_field_values, including Long Island Rail Road, Finance Committee, and Metro-North Security Department. Better handled in a cluster-aware Metro-North cleanup pass."
+    },
+    {
+      "candidate": "entity_mta-bus-company / entity_mta-nyct / entity_meeting-doc-128981-nyct collisions",
+      "confidence": "medium",
+      "reason": "Several issues reflect NYCT, MTA Bus, and parent-MTA shared-key contamination. They need targeted DNM rows, but the safest set depends on whether the next pass wants entity-level DNM suppression or cleanup of contaminated identity aliases."
+    },
+    {
+      "candidate": "entity_nyct-transit-committee-members -> entity_meeting-doc-140466-nyct-committee-members",
+      "confidence": "medium",
+      "reason": "Very likely same NYCT committee member-list identity, but the roster appears to represent an older committee composition. Deferred to keep this batch at 10 durable decisions and avoid over-collapsing roster snapshots without a committee-roster policy."
+    },
+    {
+      "candidate": "corridor Church Avenue duplicate rows",
+      "confidence": "not reviewed",
+      "reason": "Explicitly excluded by owner instruction."
+    }
+  ]
+}

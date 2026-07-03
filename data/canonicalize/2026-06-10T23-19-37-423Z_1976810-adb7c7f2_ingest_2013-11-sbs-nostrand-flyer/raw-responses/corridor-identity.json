@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T04:04:41.325Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected EOF",
+  "raw_response": "",
+  "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-39-696Z_2111393-c3425add_canonicalize_2026-06-10t23-19-37-423z-1976810-adb7c7f2-ingest-2013-11-sbs-nostrand-flyer-corridor-identity"
+}

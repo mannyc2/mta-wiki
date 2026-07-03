@@ -1,0 +1,34 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:37:45.505Z",
+  "packet_path": "data/identity-review/packets/route_cluster_7e8439753a.md",
+  "cluster_id": "route_cluster_7e8439753a",
+  "kind": "route",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "route_cluster_7e8439753a",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_q54",
+          "route_q59"
+        ],
+        "reason": "Contradiction test: strong identity field route_id differs (Q54 vs Q59). These are distinct bus routes."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "The two records have different route IDs (Q54 and Q59), which are strong identity fields per the Merge Canon. The candidate edge incorrectly cited shared_base_route:Q54 for route_q59. No grounds for merge; they are separate routes."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-37-38-535Z_1282984-453bf000_identity-review-run_route-cluster-7e8439753a",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-37-38-535Z_2026-06-23T14-37-38-535Z_1282984-453bf000_identity-review-run_route-cluster-7e8439753a.jsonl"
+}

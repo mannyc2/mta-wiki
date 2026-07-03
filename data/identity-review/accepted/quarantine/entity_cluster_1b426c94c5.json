@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_1b426c94c5",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_1b426c94c5.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_1b426c94c5.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "do_not_merge entity_brooklyn-community-board-12 <> entity_community-board-12-brooklyn: record entity_community-board-12-brooklyn is not in the current canonical corpus"
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "entity_brooklyn-community-board-12",
+        "entity_community-board-12-brooklyn"
+      ],
+      "reason": "Contradiction test (test 1): entity_name differs: the first record is specifically 'Brooklyn Community Board 12 Transportation Committee' (a committee), while the second is 'Community Board 12, Brooklyn' (the full board). A committee is a subsidiary/sub-unit of the board, so by the 'Authority vs subsidiary never merge' rule, they are distinct entities. Relate with part_of_agency, not merge."
+    }
+  ]
+}
