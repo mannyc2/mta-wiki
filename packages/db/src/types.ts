@@ -157,6 +157,14 @@ export type MaterializeResult = {
   submissionsRead: number;
   acceptedSubmissions: number;
   retiredSubmissions: number;
+  semanticCorrections?: {
+    total: number;
+    applied: number;
+    skipped: number;
+    appliedByOp: Record<string, number>;
+    skippedByOp: Record<string, number>;
+    appliedBySourceDecision: Record<string, number>;
+  } | undefined;
   recordCounts: Record<string, number>;
   pageCount: number;
   canonicalDir: string;

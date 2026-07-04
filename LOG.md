@@ -6,6 +6,12 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-04
 
+### Owner Direction: Defer V2 Track
+
+- Owner direction after the Plan 014 STOP: defer the v2-dependent `014`/`015` track until later
+  and proceed first with the no-spend semantic-quality track (`017`, then `018`). No provider
+  spend is involved in this direction.
+
 ### Plan 014 Stopped: V2 Extract Pilot Below Replay Bar
 
 - Added a no-spend replay-boundary fix for Plan 014: v2 extract boundary output now runs

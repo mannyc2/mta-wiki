@@ -13,7 +13,7 @@ import {
   validateIdentityOverrideArtifacts,
   validateIdentityReviewAcceptedArtifacts,
 } from "@mta-wiki/pipeline/identity/identity-review-apply";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { entriesToRecords, readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
 import {
   extractWriterRegion,
   parseBlockPrimitives,
@@ -23,7 +23,8 @@ import {
 } from "@mta-wiki/pipeline/materialize/primitives";
 import { relationEndpointShapeIssue } from "@mta-wiki/pipeline/records/relations";
 import { evidenceId, readStagedSourceBlocks, sourceBlockById, sourceBlocksRelativePath } from "@mta-wiki/pipeline/sources/source-prep";
-import { validateSubmissionRetirementOverrides } from "@mta-wiki/pipeline/records/submission-overrides";
+import { retiredSubmissionIds, validateSubmissionRetirementOverrides } from "@mta-wiki/pipeline/records/submission-overrides";
+import { semanticCorrectionsExist, validateSemanticCorrections } from "@mta-wiki/pipeline/records/semantic-corrections";
 import { readSubmissionEntries } from "@mta-wiki/pipeline/records/submissions";
 import type { MtaValidationIssue, MtaValidationReport } from "@mta-wiki/db/types";
 
@@ -387,6 +388,40 @@ function validateRelations(issues: MtaValidationIssue[]) {
   }
 }
 
+export function validateSemanticInvariantsForRecords(records: MtaCanonicalRecord[]): MtaValidationIssue[] {
+  const issues: MtaValidationIssue[] = [];
+  for (const record of records) {
+    if (record.review_state === "quarantined") continue;
+    if (record.record_kind === "relation") {
+      const subjectId = typeof record.payload.subject_id === "string" ? record.payload.subject_id : undefined;
+      const objectId = typeof record.payload.object_id === "string" ? record.payload.object_id : undefined;
+      if (subjectId && subjectId === objectId) {
+        issues.push({
+          code: "relation_self_loop",
+          message: `Relation ${record.record_id} has identical subject_id and object_id: ${subjectId}`,
+          recordId: record.record_id,
+        });
+      }
+    }
+    if (record.record_kind === "event") {
+      const eventKind = typeof record.payload.event_kind === "string" ? record.payload.event_kind.toLowerCase() : "";
+      const lifecyclePhase = typeof record.payload.lifecycle_phase === "string" ? record.payload.lifecycle_phase : "";
+      if (eventKind.includes("target") && lifecyclePhase === "completed") {
+        issues.push({
+          code: "event_completion_target_completed",
+          message: `Event ${record.record_id} is a target event but has lifecycle_phase completed.`,
+          recordId: record.record_id,
+        });
+      }
+    }
+  }
+  return issues;
+}
+
+function validateSemanticInvariants(records: MtaCanonicalRecord[], issues: MtaValidationIssue[]) {
+  issues.push(...validateSemanticInvariantsForRecords(records));
+}
+
 function validateGlobalIdentities(issues: MtaValidationIssue[]) {
   const keys = new Map<string, string>();
 
@@ -512,6 +547,11 @@ export function validateRepo(options: { strictWriterCitations?: boolean | undefi
   issues.push(...validateIdentityReviewAcceptedArtifacts().issues);
   issues.push(...validateIdentityOverrideArtifacts());
   issues.push(...validateSubmissionRetirementOverrides({ knownSubmissionIds: new Set(submissions.map((entry) => entry.submission_id)) }));
+  issues.push(
+    ...validateSemanticCorrections({
+      records: semanticCorrectionsExist() ? entriesToRecords(submissions, { retiredSubmissionIds: retiredSubmissionIds() }) : undefined,
+    }),
+  );
 
   return {
     requiredPathCount,

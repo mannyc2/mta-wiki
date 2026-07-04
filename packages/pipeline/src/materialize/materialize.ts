@@ -23,6 +23,7 @@ import { withDerivedRelations } from "@mta-wiki/pipeline/records/derived-relatio
 import { withSourceDateBackfill } from "@mta-wiki/pipeline/sources/source-date-backfill";
 import { withAssertionQualifiers } from "@mta-wiki/pipeline/records/assertion-qualifiers";
 import { normalizeRelationPayload, type RelationEndpointKinds } from "@mta-wiki/pipeline/records/relations";
+import { readSemanticCorrections, withSemanticCorrections } from "@mta-wiki/pipeline/records/semantic-corrections";
 import { stableHash } from "@mta-wiki/db/stable-json";
 import { retiredSubmissionIds } from "@mta-wiki/pipeline/records/submission-overrides";
 import { normalizeSubmitInput, readSubmissionEntries, relationEndpointIssues, validateSubmitInput } from "@mta-wiki/pipeline/records/submissions";
@@ -1511,7 +1512,8 @@ export function materializeWiki(): MaterializeResult {
   const submissions = readSubmissionEntries();
   const retiredIds = retiredSubmissionIds();
   const acceptedSubmissions = materializableEntries(submissions, { retiredSubmissionIds: retiredIds });
-  const records = entriesToRecords(submissions, { retiredSubmissionIds: retiredIds });
+  const semanticCorrectionResult = withSemanticCorrections(entriesToRecords(submissions, { retiredSubmissionIds: retiredIds }), readSemanticCorrections());
+  const records = semanticCorrectionResult.records;
   const counts: Record<string, number> = {};
 
   mkdirSync(canonicalDir(), { recursive: true });
@@ -1536,6 +1538,7 @@ export function materializeWiki(): MaterializeResult {
     submissionsRead: submissions.length,
     acceptedSubmissions: acceptedSubmissions.length,
     retiredSubmissions: submissions.filter((entry) => retiredIds.has(entry.submission_id)).length,
+    semanticCorrections: semanticCorrectionResult.summary,
     recordCounts: counts,
     pageCount: pagePaths.length,
     canonicalDir: canonicalDir(),

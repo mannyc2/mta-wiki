@@ -181,6 +181,11 @@ export const materializeCommands = {
     const quickCheck = repairCanonicalFtsWithSqliteCli();
     console.log(`Materialized ${result.acceptedSubmissions}/${result.submissionsRead} submissions.`);
     console.log(`Retired submissions skipped: ${result.retiredSubmissions}`);
+    if (result.semanticCorrections && result.semanticCorrections.total > 0) {
+      console.log(
+        `Semantic corrections: ${result.semanticCorrections.applied}/${result.semanticCorrections.total} applied, ${result.semanticCorrections.skipped} skipped.`,
+      );
+    }
     console.log(`Pages: ${result.pageCount}`);
     console.log(`Canonical: ${relative(repoRoot, result.canonicalDir)}`);
     console.log(`Wiki: ${relative(repoRoot, result.wikiDir)}`);
