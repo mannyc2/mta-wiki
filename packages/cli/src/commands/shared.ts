@@ -18,6 +18,8 @@ export type Command =
   | "export-release"
   | "export-site"
   | "quality-report"
+  | "quality-seeded-defects"
+  | "quality-judge-calibration"
   | "replay-eval"
   | "extract"
   | "identity-review"

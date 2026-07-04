@@ -47,6 +47,8 @@ import {
   type PipelineReport,
 } from "@mta-wiki/agents";
 import { canonicalDbPath } from "@mta-wiki/db/canonical-db";
+import { calibrationMarkdown, scoreJudgeCalibration, writeV1CalibrationFixtures } from "@mta-wiki/pipeline/quality/judge-calibration";
+import { seededDefectSummary, writeSeededDefectFixtures } from "@mta-wiki/pipeline/quality/seeded-defects";
 import { optionValue, requireSubject, type CommandHandler } from "./shared.js";
 
 function repairCanonicalFtsWithSqliteCli(): string {
@@ -267,6 +269,22 @@ export const materializeCommands = {
     );
     console.log(`Cross-field flags: events=${eventFlags}, routes=${routeFlags}.`);
     console.log(`Wrote ${relative(repoRoot, result.deterministicPath)}`);
+  },
+
+  "quality-seeded-defects": () => {
+    const calibration = writeV1CalibrationFixtures();
+    const result = writeSeededDefectFixtures({ seed: optionValue(process.argv, "--seed") ?? "semqa-v1" });
+    console.log(`Calibration fixtures: ${relative(repoRoot, calibration.dir)} (${calibration.humanRows} human rows)`);
+    console.log(seededDefectSummary(result));
+  },
+
+  "quality-judge-calibration": () => {
+    const verdicts = optionValue(process.argv, "--verdicts");
+    if (!verdicts) throw new Error("Missing --verdicts <jsonl> for quality-judge-calibration");
+    const score = scoreJudgeCalibration(verdicts.startsWith("/") ? verdicts : join(repoRoot, verdicts), { runId: optionValue(process.argv, "--run-id") });
+    console.log(calibrationMarkdown(score));
+    console.log(JSON.stringify(score, null, 2));
+    if (score.human_agreement.status === "FAIL" || score.seeded_recall.status === "FAIL") process.exitCode = 1;
   },
 
   "dossier": (args) => {

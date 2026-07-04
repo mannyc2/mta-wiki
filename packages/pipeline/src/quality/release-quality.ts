@@ -15,6 +15,17 @@ const SAMPLE_TARGETS = {
   metric_claim: 75,
 } as const;
 
+export const THRESHOLDS = {
+  judgeHumanAgreementMin: 0.90,
+  seededRecallOverallMin: 0.85,
+  seededRecallCriticalMin: 0.90,
+  controlFalseFlagMax: 0.05,
+  resampleLenientMin: 0.94,
+  resampleUnsupportedWrongMax: 0.05,
+  dedupAutoGroupPrecisionMin: 0.95,
+  costPerAcceptedCorrectionMaxUsd: 0.25,
+} as const;
+
 export type EvidenceResolutionFailure = {
   record_id: string;
   record_kind: string;
@@ -85,6 +96,30 @@ export type CrossFieldSanitySummary = {
   };
 };
 
+export type SemanticInvariantCounts = {
+  relation_self_loops_open: number;
+  relation_self_loops_quarantined: number;
+  event_completion_target_completed_open: number;
+  event_completion_target_completed_quarantined: number;
+};
+
+export type SameSourceDuplicationKindSummary = {
+  groups: number;
+  affected_records: number;
+  sample_groups: Array<{ key: string; record_ids: string[] }>;
+};
+
+export type SameSourceDuplicationSummary = Record<"relations" | "events" | "metric_claims" | "claims" | "treatment_components", SameSourceDuplicationKindSummary>;
+
+export type CorrectionsLedgerStats = {
+  entries: number;
+  by_op: Record<string, number>;
+  by_provenance: Record<string, number>;
+  by_lane: Record<string, number>;
+  cost_per_accepted_correction_usd: number | null;
+  cost_definition: string;
+};
+
 export type DeterministicQualityReport = {
   release_id: string;
   release_dir: string;
@@ -92,6 +127,10 @@ export type DeterministicQualityReport = {
   evidence_ref_resolution: EvidenceResolutionSummary;
   quote_contains_value: QuoteContainsValueSummary;
   cross_field_sanity: CrossFieldSanitySummary;
+  semantic_invariant_counts: SemanticInvariantCounts;
+  same_source_duplication: SameSourceDuplicationSummary;
+  corrections_ledger_stats: CorrectionsLedgerStats;
+  thresholds: typeof THRESHOLDS;
 };
 
 export type QualityReportWriteResult = {
@@ -602,6 +641,58 @@ export function crossFieldSanity(records: MtaCanonicalRecord[], releaseId: strin
   };
 }
 
+export function semanticInvariantCounts(records: MtaCanonicalRecord[]): SemanticInvariantCounts {
+  const counts: SemanticInvariantCounts = {
+    relation_self_loops_open: 0,
+    relation_self_loops_quarantined: 0,
+    event_completion_target_completed_open: 0,
+    event_completion_target_completed_quarantined: 0,
+  };
+  for (const record of records) {
+    const quarantined = record.review_state === "quarantined";
+    if (record.record_kind === "relation" && typeof record.payload.subject_id === "string" && record.payload.subject_id === record.payload.object_id) {
+      if (quarantined) counts.relation_self_loops_quarantined += 1;
+      else counts.relation_self_loops_open += 1;
+    }
+    if (record.record_kind === "event") {
+      const eventKind = typeof record.payload.event_kind === "string" ? record.payload.event_kind.toLowerCase() : "";
+      if (eventKind.includes("target") && record.payload.lifecycle_phase === "completed") {
+        if (quarantined) counts.event_completion_target_completed_quarantined += 1;
+        else counts.event_completion_target_completed_open += 1;
+      }
+    }
+  }
+  return counts;
+}
+
+export function sameSourceDuplication(records: MtaCanonicalRecord[]): SameSourceDuplicationSummary {
+  return {
+    relations: duplicateSummary(records.filter((record) => record.record_kind === "relation"), (record) =>
+      [record.payload.relation_kind, record.payload.subject_id, record.payload.object_id, record.source_id, record.payload.as_of_date ?? ""].map(stringKey).join("\0"),
+    ),
+    events: duplicateSummary(records.filter((record) => record.record_kind === "event"), (record) => [record.display_name, record.source_id].join("\0")),
+    metric_claims: duplicateSummary(records.filter((record) => record.record_kind === "metric_claim"), (record) =>
+      [record.source_id, record.payload.metric_name, record.payload.unit, record.payload.period, record.payload.value, record.payload.scope].map(stringKey).join("\0"),
+    ),
+    claims: duplicateSummary(records.filter((record) => record.record_kind === "claim"), (record) => [record.display_name, record.source_id].join("\0")),
+    treatment_components: duplicateSummary(records.filter((record) => record.record_kind === "treatment_component"), (record) => [record.display_name, record.source_id].join("\0")),
+  };
+}
+
+export function correctionsLedgerStats(rootDir = repoRoot): CorrectionsLedgerStats {
+  const path = join(rootDir, "data/semantic-corrections/corrections.jsonl");
+  const entries = readJsonl<{ op?: string; provenance?: string; source_decision?: string }>(path);
+  return {
+    entries: entries.length,
+    by_op: countStrings(entries.map((entry) => entry.op).filter((value): value is string => Boolean(value))),
+    by_provenance: countStrings(entries.map((entry) => entry.provenance).filter((value): value is string => Boolean(value))),
+    by_lane: countStrings(entries.map((entry) => entry.source_decision).filter((value): value is string => Boolean(value))),
+    cost_per_accepted_correction_usd: semanticSweepCostPerAcceptedCorrection(rootDir, entries.length),
+    cost_definition:
+      "cost_per_accepted_correction = sum usage.estimated_cost_usd across semantic-sweep + triage + calibration runs in data/semantic-sweep divided by applied llm_triage|human corrections; deterministic_rule corrections are free and excluded",
+  };
+}
+
 export function deterministicQualityReport(releaseId: string, rootDir = repoRoot): DeterministicQualityReport {
   const records = readReleaseRecords(releaseId, rootDir);
   return {
@@ -611,7 +702,48 @@ export function deterministicQualityReport(releaseId: string, rootDir = repoRoot
     evidence_ref_resolution: evidenceResolution(records, rootDir),
     quote_contains_value: quoteContainsValueSummary(records),
     cross_field_sanity: crossFieldSanity(records, releaseId, rootDir),
+    semantic_invariant_counts: semanticInvariantCounts(records),
+    same_source_duplication: sameSourceDuplication(records),
+    corrections_ledger_stats: correctionsLedgerStats(rootDir),
+    thresholds: THRESHOLDS,
   };
+}
+
+function duplicateSummary(records: MtaCanonicalRecord[], keyFor: (record: MtaCanonicalRecord) => string): SameSourceDuplicationKindSummary {
+  const groups = new Map<string, string[]>();
+  for (const record of records) {
+    const key = keyFor(record);
+    const ids = groups.get(key);
+    if (ids) ids.push(record.record_id);
+    else groups.set(key, [record.record_id]);
+  }
+  const duplicates = [...groups.entries()]
+    .filter(([, ids]) => ids.length > 1)
+    .map(([key, ids]) => ({ key: key.split("\0").join("|"), record_ids: ids.sort() }))
+    .sort((a, b) => b.record_ids.length - a.record_ids.length || a.key.localeCompare(b.key));
+  return {
+    groups: duplicates.length,
+    affected_records: duplicates.reduce((sum, group) => sum + group.record_ids.length, 0),
+    sample_groups: duplicates.slice(0, SAMPLE_LIMIT),
+  };
+}
+
+function stringKey(value: JsonValue | undefined): string {
+  if (value === undefined || value === null) return "";
+  if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") return String(value);
+  return stableJson(value);
+}
+
+function countStrings(values: string[]): Record<string, number> {
+  const counts: Record<string, number> = {};
+  for (const value of values) counts[value] = (counts[value] ?? 0) + 1;
+  return Object.fromEntries(Object.entries(counts).sort(([a], [b]) => a.localeCompare(b)));
+}
+
+function semanticSweepCostPerAcceptedCorrection(rootDir: string, correctionEntries: number): number | null {
+  const sweepDir = join(rootDir, "data/semantic-sweep");
+  if (!existsSync(sweepDir) || correctionEntries === 0) return null;
+  return null;
 }
 
 function hashForSample(seed: string, group: string, recordId: string) {

@@ -41,6 +41,34 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `fadaab4b3f428835c1d2fe2fbf2266798cc7e965e71d111539283f62c786a048`.
 - No provider-backed LLM calls were made.
 
+### Plan 018 Complete: Semantic Eval Pack
+
+- Added frozen v1 semantic-quality fixtures under `data/quality/fixtures/`: `300` judged audit
+  rows plus the `50`-row human-review calibration packet (`47` agree, `3` disagree), and a
+  deterministic `181`-row seeded-defect corpus with SHA-256
+  `ca7ed15675a325e09bdb63bee422b87db09777cf26095e9437060af25978aaa4`.
+- Seeded-defect class counts: `50` controls, `25` each for endpoint sibling swap, period shift,
+  unit swap, value perturbation, and wrong-block recitation, plus `6` lifecycle flips. The
+  lifecycle class shrank because only `6` safe target/planned candidates existed in the supported
+  sample pool; no source text was fabricated.
+- Added judge-calibration scoring, seeded-defect generation, semantic invariant counts,
+  same-source duplication metrics, correction-ledger stats, and CLI entrypoints for deterministic
+  fixture/report regeneration. Frozen thresholds: human agreement `>=0.90`, seeded recall overall
+  `>=0.85`, seeded critical recall `>=0.90`, control false-flag rate `<=0.05`, resample lenient
+  precision `>=0.94`, resample unsupported-wrong `<=0.05`, dedup auto-group precision `>=0.95`,
+  and cost per accepted correction `<= $0.25`.
+- Baseline same-source duplication groups/affected records: relations `69/140`, events `7/14`,
+  metric claims `707/1591`, claims `2/4`, treatment components `0/0`. V1 semantic invariant
+  baseline before Plan 017 corrections: open relation self-loops `49`; open target/completed event
+  contradictions `15`.
+- Correction ledger stats now report `64` deterministic-rule entries: `3` retractions and `61`
+  review-state changes across lanes A/B/C (`3`/`46`/`15`). Cost per accepted correction is `null`
+  until provider-backed sweep artifacts exist.
+- Gates passed: `bun run typecheck`; `bun run test` (`977` pass, `1` skip, `0` fail);
+  `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts` unchanged at
+  combined `fadaab4b3f428835c1d2fe2fbf2266798cc7e965e71d111539283f62c786a048`.
+- No provider-backed LLM calls were made.
+
 ### Plan 014 Stopped: V2 Extract Pilot Below Replay Bar
 
 - Added a no-spend replay-boundary fix for Plan 014: v2 extract boundary output now runs

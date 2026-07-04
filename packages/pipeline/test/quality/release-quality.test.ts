@@ -6,11 +6,15 @@ import { join } from "node:path";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord, StagedSourceBlock } from "@mta-wiki/db/types";
 import {
+  correctionsLedgerStats,
   crossFieldSanity,
   deterministicQualityReport,
   evidenceResolution,
   quoteContainsValueSummary,
+  sameSourceDuplication,
+  semanticInvariantCounts,
   stratifiedSampleRows,
+  THRESHOLDS,
   writeDeterministicQualityReport,
 } from "@mta-wiki/pipeline/quality/release-quality";
 
@@ -131,6 +135,41 @@ describe("release quality checks", () => {
     expect(report.record_count).toBe(1);
     expect(report.evidence_ref_resolution.resolved_refs).toBe(1);
     expect(writeDeterministicQualityReport("det", root).deterministic).toEqual(report);
+  });
+
+  it("reports semantic invariant, duplication, threshold, and correction-ledger metrics", () => {
+    const relationA = record("relation_loop_a", "relation", { relation_kind: "same_as", subject_id: "entity_a", object_id: "entity_a" });
+    const relationB = record("relation_dup_a", "relation", { relation_kind: "serves", subject_id: "route_b1", object_id: "corridor_a", as_of_date: "2026" });
+    const relationC = record("relation_dup_b", "relation", { relation_kind: "serves", subject_id: "route_b1", object_id: "corridor_a", as_of_date: "2026" });
+    const eventA = record("event_bad", "event", { event_kind: "completion_target", lifecycle_phase: "completed" },);
+    const eventB = record("event_dup_a", "event", {});
+    const eventC = record("event_dup_b", "event", {});
+    eventB.display_name = "Duplicate Event";
+    eventC.display_name = "Duplicate Event";
+    const quarantined = record("relation_loop_q", "relation", { relation_kind: "same_as", subject_id: "entity_b", object_id: "entity_b" });
+    quarantined.review_state = "quarantined";
+
+    const invariants = semanticInvariantCounts([relationA, relationB, relationC, eventA, eventB, eventC, quarantined]);
+    expect(invariants.relation_self_loops_open).toBe(1);
+    expect(invariants.relation_self_loops_quarantined).toBe(1);
+    expect(invariants.event_completion_target_completed_open).toBe(1);
+
+    const dupes = sameSourceDuplication([relationA, relationB, relationC, eventA, eventB, eventC, quarantined]);
+    expect(dupes.relations.groups).toBe(1);
+    expect(dupes.relations.affected_records).toBe(2);
+    expect(dupes.events.groups).toBe(1);
+    expect(THRESHOLDS.judgeHumanAgreementMin).toBe(0.9);
+
+    const root = join(work, "ledger");
+    mkdirSync(join(root, "data", "semantic-corrections"), { recursive: true });
+    writeJsonl(join(root, "data", "semantic-corrections", "corrections.jsonl"), [
+      { correction_id: "semqa-000001", op: "set_review_state", provenance: "deterministic_rule", source_decision: "lane-a" },
+      { correction_id: "semqa-000002", op: "retract_record", provenance: "human", source_decision: "lane-b" },
+    ]);
+    const ledger = correctionsLedgerStats(root);
+    expect(ledger.entries).toBe(2);
+    expect(ledger.by_op.set_review_state).toBe(1);
+    expect(ledger.by_provenance.human).toBe(1);
   });
 });
 
