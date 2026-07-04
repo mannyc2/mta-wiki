@@ -69,6 +69,20 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   combined `fadaab4b3f428835c1d2fe2fbf2266798cc7e965e71d111539283f62c786a048`.
 - No provider-backed LLM calls were made.
 
+### Plan 019 Started: Semantic Sweep Infrastructure
+
+- Plan 019 drift check passed after repairing `quality-judge-calibration --help` so the
+  prerequisite command prints usage instead of requiring `--verdicts`.
+- Added the no-spend semantic-sweep engine and CLI surface: content-keyed append-only ledger
+  rows, exposure-first corpus ordering, batched judge prompt assembly, retry-on-missing-id,
+  usage summaries, `--dry-run`, `--limit`, `--kinds`, `--source`, and mocked tests. A
+  `semantic-sweep --dry-run --limit 5` check found `76688` judgeable records and made no
+  provider calls or data writes.
+- Step 1 gates passed: `bun run typecheck`; `bun run test` (`980` pass, `1` skip, `0`
+  fail); `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts`
+  unchanged at combined `fadaab4b3f428835c1d2fe2fbf2266798cc7e965e71d111539283f62c786a048`.
+- No provider-backed LLM calls were made.
+
 ### Plan 014 Stopped: V2 Extract Pilot Below Replay Bar
 
 - Added a no-spend replay-boundary fix for Plan 014: v2 extract boundary output now runs

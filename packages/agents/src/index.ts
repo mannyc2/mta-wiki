@@ -20,6 +20,20 @@ export {
   stratifiedSampleRows,
   writeDeterministicQualityReport,
 } from "@mta-wiki/pipeline/quality/release-quality";
+export {
+  JUDGEABLE_KINDS,
+  SEMANTIC_SWEEP_PROMPT_VERSION,
+  corpusJudgeInputs,
+  judgeInputFromFixture,
+  judgeInputFromRecord,
+  parseSemanticSweepResults,
+  promptForSemanticSweepBatch,
+  runSemanticSweep,
+  semanticSweepContentKey,
+  semanticSweepLedgerPath,
+  semanticSweepRunSummaryPath,
+  semanticSweepSummaryText,
+} from "@mta-wiki/pipeline/quality/semantic-sweep";
 export { exportSite, siteOutDir, type SiteExportResult } from "@mta-wiki/pipeline/site/export-site";
 export { importGtfs, readGtfsManifest, type GtfsManifest } from "@mta-wiki/db/import-gtfs";
 export { buildDossier, dossierMarkdown, writeDossier, type Dossier } from "@mta-wiki/pipeline/identity/dossier";

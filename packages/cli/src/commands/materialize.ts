@@ -49,6 +49,7 @@ import {
 import { canonicalDbPath } from "@mta-wiki/db/canonical-db";
 import { calibrationMarkdown, scoreJudgeCalibration, writeV1CalibrationFixtures } from "@mta-wiki/pipeline/quality/judge-calibration";
 import { seededDefectSummary, writeSeededDefectFixtures } from "@mta-wiki/pipeline/quality/seeded-defects";
+import { runSemanticSweep, semanticSweepSummaryText } from "@mta-wiki/pipeline/quality/semantic-sweep";
 import { optionValue, requireSubject, type CommandHandler } from "./shared.js";
 
 function repairCanonicalFtsWithSqliteCli(): string {
@@ -171,6 +172,17 @@ Writes a deterministic active-goal completion audit under data/review_notes/ by 
 This command does not run provider-backed post-ingest commands, writer agents, or wiki prose edits.`);
 }
 
+function printQualityJudgeCalibrationHelp() {
+  console.log(`Usage: bun packages/cli/src/cli.ts quality-judge-calibration --verdicts <jsonl> [--run-id <id>]
+
+Scores judge verdicts against the frozen v1 calibration fixtures:
+- data/quality/fixtures/v1-rc5-calibration/human-50.jsonl
+- data/quality/fixtures/seeded-defects-v1/fixtures.jsonl
+
+Writes deterministic calibration reports under data/quality/calibration/.
+This command does not call a provider.`);
+}
+
 export const materializeCommands = {
   materialize: () => {
     if (!hasLocalStagedSourceBlocks()) {
@@ -279,12 +291,41 @@ export const materializeCommands = {
   },
 
   "quality-judge-calibration": () => {
+    if (process.argv.includes("--help") || process.argv.includes("-h")) {
+      printQualityJudgeCalibrationHelp();
+      return;
+    }
     const verdicts = optionValue(process.argv, "--verdicts");
     if (!verdicts) throw new Error("Missing --verdicts <jsonl> for quality-judge-calibration");
     const score = scoreJudgeCalibration(verdicts.startsWith("/") ? verdicts : join(repoRoot, verdicts), { runId: optionValue(process.argv, "--run-id") });
     console.log(calibrationMarkdown(score));
     console.log(JSON.stringify(score, null, 2));
     if (score.human_agreement.status === "FAIL" || score.seeded_recall.status === "FAIL") process.exitCode = 1;
+  },
+
+  "semantic-sweep": async (args) => {
+    if (process.argv.includes("--help") || process.argv.includes("-h")) {
+      console.log(`Usage: bun packages/cli/src/cli.ts semantic-sweep [--dry-run] [--limit <n>] [--kinds <k1,k2>] [--source <source-id>] [--batch-size <n>] [--run-id <id>] [--profile <name>]
+
+Judges evidence support for claim/event/metric_claim/relation/treatment_component records.
+Writes append-only verdict rows to data/semantic-sweep/verdicts.jsonl and per-run summaries to data/semantic-sweep/runs/.
+Use --dry-run to estimate count/cost without provider calls.`);
+      return;
+    }
+    const sourceId = optionValue(process.argv, "--source");
+    const kinds = optionValue(process.argv, "--kinds") ?? optionValue(process.argv, "--kind");
+    const summary = await runSemanticSweep({
+      dryRun: args.dryRun,
+      runId: args.runId,
+      limit: args.importLimit,
+      batchSize: args.batchSize,
+      sourceId,
+      kinds: kinds?.split(",").map((value) => value.trim()).filter(Boolean),
+      profileName: args.profileName,
+      provider: args.provider,
+      model: args.model,
+    });
+    console.log(semanticSweepSummaryText(summary));
   },
 
   "dossier": (args) => {

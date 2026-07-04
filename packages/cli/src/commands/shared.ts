@@ -20,6 +20,7 @@ export type Command =
   | "quality-report"
   | "quality-seeded-defects"
   | "quality-judge-calibration"
+  | "semantic-sweep"
   | "replay-eval"
   | "extract"
   | "identity-review"

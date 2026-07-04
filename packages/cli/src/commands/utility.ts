@@ -28,6 +28,7 @@ Usage:
   bun run harness quality-report [release-id]                    Write deterministic release quality checks under data/quality/
   bun run harness quality-seeded-defects --seed semqa-v1          Write deterministic seeded-defect fixtures
   bun run harness quality-judge-calibration --verdicts <jsonl>    Score judge verdicts against frozen calibration fixtures
+  bun run harness semantic-sweep [--dry-run] [--limit <n>] [--kinds <k1,k2>] [--source <source-id>] [--batch-size <n>]   Judge evidence support into data/semantic-sweep/
   bun run harness replay-eval [--release-id <id>] [--run-id <id>] [--actual-dir <dir>] [--actual-only]   Build replay manifest/baseline and diff actual outputs against v1
   bun run harness extract [--source <source-id>] [--run-id <id>] [--limit <n>] [--mock-response <path>]   Run v2 extraction into data/replay/runs/
   bun run harness identity-review [--limit <n>] [--include <regex>] [--exclude <regex>]
