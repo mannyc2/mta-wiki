@@ -79,6 +79,31 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   history archive by moving `.git-archive` to `/home/cjpher/mta-wiki-git-archive` and leaving
   `.git-archive` as an ignored symlink. The archive was not deleted.
 
+### Bounded Writer Full-Slice Budget
+
+- After the live 20-page sample, the remaining route/corridor backlog is `486` empty pages.
+  The sample's all-in cost including rejected attempts was `$0.661203`; the hardened successful
+  run rate projects the remaining slice in roughly the `$10-$17` range depending on tool turns
+  and retries. Under the owner's open LLM-spend approval in this conversation, proceed with a
+  conservative Plan 012 operational budget of `$20` total spend and stop/report if actual spend
+  reaches `$24` before completion.
+
+### Bounded Writer Full-Slice Batch 01
+
+- Plan 012 full-slice batch 01 filled `50` route/corridor writer regions after the 20-page
+  sample. Actual usage including rejected/empty attempts: `53` writer runs, `298` provider
+  requests, `10944266` input tokens, `221676` output tokens, `32964299` cache-read tokens,
+  `44130241` total tokens, estimated cost `$1.138762`.
+- STOPs handled before commit: malformed metric-as-citation primitives; an uncited paragraph;
+  an unsupported map-derived distance estimate; two empty writer-region attempts; and review
+  cleanup for off-scope dataset/cardinality or corridor metrics. The writer tool now rejects
+  malformed primitives and uncited paragraphs before writing.
+- Batch review found `50` modified wiki pages, `0` validation issues, and no modified writer
+  headings, bullet lists, bad `cite:` targets, or lingering flagged review terms.
+- Batch gates passed: `bun run typecheck`; `bun run test` (`961 pass`, `1 skip`, `0 fail`);
+  `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts` with combined
+  hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ### V2 Extract Pilot Spend Gate
 
 - Owner approval for Plan 014 provider spend, recorded verbatim: "I give you permission for the

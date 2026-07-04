@@ -104,5 +104,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_merrick-blvd-bus-lanes|Merrick Boulevard]] corridor is a segment of Merrick Boulevard in Jamaica, Queens, running between Hillside Avenue and Archer Avenue. It was identified as a proposed bus lane location through the Jamaica Bus Improvement Study, a planning effort led by the New York City Department of Transportation. [[cite:201104_jamaica_cac2_slides#p026_c0003|limits]] [[cite:20110517_jamaica_open_house_posters#p007_c0002|Merrick Boulevard]]
 
+The study recommended a high-visibility, 24-hour offset bus lane on Merrick Boulevard, intended to improve bus access to the 165th Street Bus Terminal. [[cite:201104_jamaica_cac2_slides#p026_c0005|24-hour bus lane]] The offset configuration, with the bus lane positioned one lane away from the curb, would also allow for bus layover space north of 89th Avenue. [[cite:201106_jamaica_cb12_slides#p024_c0006|offset bus lane]] The proposed lane was presented at a Community Advisory Committee meeting in March 2011, an open house in May 2011, and a Queens Community Board 12 meeting in June 2011. [[cite:201104_jamaica_cac2_slides#p001_c0001|CAC Meeting #2]] [[cite:201106_jamaica_cb12_slides#p001_c0001|CB12 Meeting]]
+
+Benefits cited for the Merrick Boulevard bus lane included faster and more reliable bus service, reduced congestion by separating buses from general traffic, and helping buses quickly enter and exit the 165th Street Bus Terminal. [[cite:20110517_jamaica_open_house_posters#p007_c0008|benefits]] The project was part of a broader set of bus lane recommendations in the study area that also included improvements on Archer Avenue, Jamaica Avenue, and 165th Street. [[cite:20110517_jamaica_open_house_posters#p005_c0002|Archer Avenue]] [[cite:20110517_jamaica_open_house_posters#p006_c0002|Jamaica Avenue]]
 <!-- mta-wiki:writer:end -->

@@ -5,6 +5,7 @@ import { Type } from "typebox";
 import { normalizeRepoPath, repoRoot } from "@mta-wiki/core/paths";
 import type { TranscriptWriter } from "@mta-wiki/core/transcript";
 import { pageRelativePathForCanonicalRecord, readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { buildWriterPrimitiveValidationContext, validateWriterPrimitivesInPage } from "@mta-wiki/pipeline/validate";
 import { stableHash } from "@mta-wiki/db/stable-json";
 import { evidenceId, sourceBlockById, sourceBlocksRelativePath } from "@mta-wiki/pipeline/sources/source-prep";
 import type { JsonObject, MtaEvidenceRef, MtaReviewNote } from "@mta-wiki/db/types";
@@ -242,6 +243,17 @@ export function createMtaWriterTools(transcript: TranscriptWriter, runId: string
       }
       const previous = existsSync(absolutePath) ? readFileSync(absolutePath, "utf8") : "";
       const next = replaceWriterRegion(previous, params.markdown);
+      const primitiveIssues = validateWriterPrimitivesInPage(relativePath, next, {
+        ...buildWriterPrimitiveValidationContext(readCanonicalRecords()),
+        strictWriterCitations: true,
+      });
+      if (primitiveIssues.length > 0) {
+        throw new Error(
+          `Writer primitive validation failed before write for ${relativePath}: ${primitiveIssues
+            .map((issue) => `${issue.code}: ${issue.message}`)
+            .join("; ")}`,
+        );
+      }
 
       mkdirSync(dirname(absolutePath), { recursive: true });
       writeFileSync(absolutePath, next, "utf8");

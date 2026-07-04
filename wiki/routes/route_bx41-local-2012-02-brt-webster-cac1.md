@@ -458,5 +458,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_bx41-local-2012-02-brt-webster-cac1|Bx41 Local]] was the local bus route operating along Webster Avenue in the Bronx; at the time of the first Community Advisory Committee meeting in February 2012, the route was cut at Gun Hill Road and community members requested an extension be considered [[cite:2012_02_brt_webster_cac1_summary#p003_c0003|CAC Meeting #1 Summary]].
 
+Under the Webster Avenue Select Bus Service plan, the [[route:route_bx41-local-2012-02-brt-webster-cac1|Bx41 Local]] was designed to remain unchanged with existing stop spacing and service approximately every 10 minutes [[cite:2012_09_webster_sbs_cac3#p018_c0002|CAC Meeting #3]]. A newsletter confirmed that the "Bx41 local route remains the same" and the SBS fare would equal the local bus fare, noting that the Bx41 SBS would replace the Bx41 Limited [[cite:2012_10_webster_sbs_newsletter#p001_c0006|October 2012 Newsletter]].
+
+After implementation, the [[route:route_bx41-local-2012-02-brt-webster-cac1|Bx41 Local]] benefited from bus lanes and traffic improvements on Webster Avenue, with travel time reductions of 11 to 17 percent [[cite:2014_08_25_brt_websteravenue_progressreport#p018_c0004|August 2014 Progress Report]]. Combined average weekday ridership for the Bx41 Local and Bx41 SBS rose to approximately 24,300 riders in October 2013, measured by [[metric:metric_bx41-ridership-oct|Bx41 Average Weekday Ridership - Oct 2012 vs Oct 2013]], compared to 20,200 riders in October 2012 when the service was Bx41 Local and Bx41 Limited [[cite:2014_03_06_brt_webster_cb6#p018_c0002|CB6 Presentation March 2014]].
 <!-- mta-wiki:writer:end -->

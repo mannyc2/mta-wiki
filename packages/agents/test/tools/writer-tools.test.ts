@@ -33,4 +33,26 @@ describe("writer tool surface", () => {
       }),
     ).rejects.toThrow("only writes existing materialized wiki pages");
   });
+
+  it("rejects malformed writer primitives before writing", async () => {
+    const writeTool = createWriterTools(transcript, config).find((tool) => tool.name === "mta_write_writer_context");
+    expect(writeTool).toBeDefined();
+    await expect(
+      writeTool!.execute("call-1", {
+        path: "wiki/projects/project_writer_tool_invalid_primitive_test.md",
+        markdown: "Bad metric citation [[cite:metric_bx41-ridership-oct|metric record]].",
+      }),
+    ).rejects.toThrow("Writer primitive validation failed before write");
+  });
+
+  it("rejects uncited writer prose before writing", async () => {
+    const writeTool = createWriterTools(transcript, config).find((tool) => tool.name === "mta_write_writer_context");
+    expect(writeTool).toBeDefined();
+    await expect(
+      writeTool!.execute("call-1", {
+        path: "wiki/projects/project_writer_tool_uncited_prose_test.md",
+        markdown: "Uncited factual paragraph.",
+      }),
+    ).rejects.toThrow("uncited_writer_paragraph");
+  });
 });

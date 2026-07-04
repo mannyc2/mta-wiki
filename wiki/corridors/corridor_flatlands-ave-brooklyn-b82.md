@@ -112,5 +112,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+Flatlands Avenue is a corridor in Brooklyn running from E 103 Street to Pennsylvania Avenue [[cite:brt_south_brooklyn_b82_dec2017#p022_c0006|Key design pieces]]. This segment was identified as part of the B82 Select Bus Service project and is described as a wider portion of Flatlands with concrete medians [[cite:brt_south_brooklyn_b82#p018_c0001|Existing: Flatlands Ave]]. Three city bus routes and one express bus route use this portion of Flatlands Avenue, providing a transit connection from Pennsylvania Avenue/Starrett City to the Canarsie-Rockaway Parkway station [[cite:brt_south_brooklyn_b82#p018_c0002|wider portion of Flatlands]].
 
+The proposed design for the B82 SBS project included bus lanes on Flatlands Avenue from E 103 Street to Pennsylvania Avenue, operating 7 AM to 7 PM Monday through Saturday [[cite:brt_south_brooklyn_b82_jan2018#p013_c0007|Bus Lanes on Flatlands Ave]]. The corridor was also slated for a widen/reconfigure travel lanes treatment as part of the project's street design package [[cite:brt_south_brooklyn_b82#p016_c0002|map illustrates proposed bus lane treatments]]. The B82 SBS route traverses Flatlands Avenue eastward after running north along Kings Highway, continuing to Pennsylvania Avenue [[cite:brt_south_brooklyn_b82_feb2018#p011_c0002|proposed B82 SBS route]].
+
+The corridor was presented to Brooklyn Community Board 5 in April 2017 and again in January 2018 as part of iterative community outreach on the B82 SBS design [[cite:brt_south_brooklyn_b82#p001_c0002|CB 5 Transportation Committee]] [[cite:brt_south_brooklyn_b82_jan2018#p001_c0002|January 22, 2018 presentation]].
 <!-- mta-wiki:writer:end -->

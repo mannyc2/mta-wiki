@@ -121,5 +121,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_pennsylvania-ave-brooklyn-b82|Pennsylvania Avenue]] corridor runs from Flatlands Avenue to Seaview Avenue in Brooklyn [[cite:brt_south_brooklyn_b82#p020_c0001|Existing: Pennsylvania Ave (Flatlands Ave to Seaview Ave)]]. It serves five bus routes: B82 Local, B82 Limited, B83, BM2, and BM5 [[cite:brt_south_brooklyn_b82#p020_c0002|5 bus routes]]. Existing conditions include slow bus speeds, long pedestrian crossings, and narrow concrete medians [[cite:brt_south_brooklyn_b82#p020_c0002|slow bus speeds, long pedestrian crossings]].
 
+The corridor is a key segment of the B82 Southern Brooklyn Select Bus Service project, which identified Pennsylvania Avenue between Flatlands Avenue and Seaview Avenue as needing bus lane and safety treatments [[cite:brt_south_brooklyn_b82_dec2017#p022_c0006|Pennsylvania Ave from Flatlands Ave to Seaview Ave]]. Proposed designs include offset bus lanes in both directions to provide faster, more reliable bus service while maintaining two travel lanes in each direction and preserving parking on both sides [[cite:brt_south_brooklyn_b82_dec2017#p025_c0002|offset bus lanes, parking remains]]. A bus lane two-way with extra lane space was proposed along Pennsylvania Avenue near Community Board 5 [[cite:brt_south_brooklyn_b82#p016_c0002|Pennsylvania Ave green line]].
+
+Pedestrian safety improvements call for adding new traffic signals and crosswalks where crossings are currently more than 1,000 feet apart, including at Vandalia Avenue and Twin Pines Drive, and at Geneva Loop and Seaview Avenue [[cite:brt_south_brooklyn_b82_dec2017#p026_c0005|1,000 feet between crosswalks Vandalia]] [[cite:brt_south_brooklyn_b82_dec2017#p027_c0003|1,000 feet between crosswalks Geneva]].
 <!-- mta-wiki:writer:end -->

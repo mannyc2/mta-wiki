@@ -414,5 +414,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_b44-local|Proposed B44 Local - Nostrand/Rogers Avenues]] is a local bus route running between Bedford-Stuyvesant and Sheepshead Bay in Brooklyn, serving Nostrand Avenue, Rogers Avenue, and New York Avenue [[cite:brooklyn_bus_network_draft_plan_with_route_profiles#p062_c0014|Nostrand/Rogers Avenues route profile]] [[cite:brooklyn_bus_network_draft_plan_with_route_profiles#p062_c0015|service description]].
 
+Under the Nostrand/Rogers Select Bus Service plan that launched in November 2013, the B44 Limited became SBS, while the B44 Local continued largely as before [[cite:b44_sbs_progress_report_2016#p005_c0004|B44 SBS implementation background]]. The local route maintained its northbound routing on New York Avenue while SBS was rerouted to the wider Rogers Avenue, which decreased the northbound SBS length from 9.9 to 9.5 miles [[cite:b44_sbs_progress_report_2016#p015_c0005|rerouting to Rogers Avenue]].
+
+The Brooklyn Bus Network Redesign Draft Plan proposed slightly wider stop spacing for the local route, from 725 feet to 939 feet, along with increased weekday frequencies and a slight planned route-length reduction from 8.6 to 8.5 miles [[cite:brooklyn_bus_network_draft_plan_with_route_profiles#p062_c0017|route length values]] [[cite:brooklyn_bus_network_draft_plan_with_route_profiles#p062_c0019|stop spacing values]] [[cite:brooklyn_bus_network_draft_plan_with_route_profiles#p062_c0024|Local route stop spacing proposal]] [[cite:brooklyn_bus_network_draft_plan_with_route_profiles#p062_c0025|weekday frequencies increased]]. Nostrand Avenue was identified as one of the top-ranked [[metric:metric_corridors-studied|Corridors studied for bus priority]] in the NYC DOT evaluation process supporting the redesign [[cite:brooklyn_bus_network_draft_plan_with_route_profiles#p020_c0004|Nostrand Av among top-ranked corridors]].
 <!-- mta-wiki:writer:end -->

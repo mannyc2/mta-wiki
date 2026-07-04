@@ -262,5 +262,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_m102|M102 Bus Route]] appears in multiple Manhattan bus-priority source packets, including Lexington Avenue and Third Avenue route lists [[cite:lexington_ave_60_st_52_st_sept2025#p004_c0002|Lexington Avenue route list]] [[cite:2014_05_05_brt_thirdave_cb6_presentation#p002_c0002|Third Avenue background]]. Along the 116th Street, Morningside Avenue, and Pleasant Avenue corridor, the M102 is one of over 10 bus routes serving more than 65,000 daily bus passengers in the study area [[cite:116_st_morningside_ave_pleasant_ave_cb10_feb2025#p004_c0002|CB10 study area routes]]. On Third Avenue, the M101, M102, and M103 together carry 59,000 daily riders on a curbside bus lane that has been in effect since 1982 [[cite:2014_05_05_brt_thirdave_cb6_presentation#p002_c0002|Third Avenue background]].
 
+At Lexington Avenue and 42nd Street, the M102 transfers with the M42 bus, though daily transfer volumes between M42 and M101/M102/M103 buses are described as infrequent [[cite:42nd_st_cb6_sep042019#p017_c0003|bus stop transfer analysis]]. The M102 is also a served route on the Lexington Avenue Bus Lane Upgrades project between 60th Street and 52nd Street, where NYC DOT has proposed converting existing curbside bus lanes to 24/7 offset bus lanes to improve speeds and reliability [[cite:lexington_ave_60_st_52_st_sept2025#p004_c0002|Lexington Ave upgraded route list]].
+
+On Lexington Avenue between 96th Street and 60th Street, the M102 was part of a 2019 Bus Forward project that installed offset bus lanes and boarding platforms at M101 Limited stops [[cite:bus_forward_lex_ave_96th_60th_st_june2019#p008_c0002|Lexington Ave route list]]. Earlier, during 2012 public workshops on 125th Street transportation improvements, a suggestion was made to extend the M102 to City Hall [[cite:2012_12_03_sbs_125th_workshop_summary#p004_c0004|M102 extension suggestion]].
 <!-- mta-wiki:writer:end -->

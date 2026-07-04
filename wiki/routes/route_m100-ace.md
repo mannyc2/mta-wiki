@@ -355,5 +355,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_m100-ace|M100]] is a Manhattan bus route serving 125th Street as a local crosstown service and also operating along the Broadway corridor between 157th Street and 220th Street [[cite:mta_automated_camera_enforcement#p001_b0001|M100, Broadway / Amsterdam Av listed as ACE route]] [[cite:2012_09_sbs_125th_workshop_1#p002_c0004|M100 listed with Bx15, M60, M101 as 125th St route]]. Along 125th Street, the M100 makes all local stops on every block, a pattern that remained unchanged through the M60 Select Bus Service planning process between 2012 and 2015 [[cite:2013_03_07_sbs_125th_cb9#p013_c0005|Bx15, M100 and M101 make local stops along 125th Street]] [[cite:2013_06_05_sbs_125th_cb9#p009_c0006|Bus stops are unchanged on Bx15, M100, M101]] [[cite:2015_04_14_brt_125th_cb10_post_implementation_update#p003_c0005|Bx15, M100 and M101 continue to stop on every block on 125th Street]].
 
+In 2011, the M100 recorded 6,912 weekday boardings along 125th Street, making it the least-ridden of the four routes on the corridor [[cite:2012_09_sbs_125th_workshop_1#p002_c0007|M100 weekday boardings: 6,912 on 125th Street]]. At the first public workshop in September 2012, community members described M100 and M101 buses as operating "rather infrequently" and identified bus bunching as a recurring issue [[cite:2012_09_19_125th_st_sbs_public_workshop_summary#p004_c0009|M100 and M101 buses operate rather infrequently]].
+
+On the Broadway corridor from 157th Street to 220th Street, the M100 is one of five MTA bus routes (with Bx7, Bx20, M5, M4) that NYC DOT is studying for potential bus and safety improvements as of March 2025 [[cite:broadway_157_st_220_st_cb12_mar2025#p005_c0002|Bx7, Bx20, M5, M4, M100 listed as routes using corridor]].
+
+During the 125th Street planning process, proposed designs for offset bus lanes and left-turn restrictions identified the M100 (alongside Bx15 and M101) as a continuing local service whose stop pattern would be unaffected by the SBS treatment on the M60 [[cite:2013_04_09_sbs_125th_workshop_3#p016_c0003|Bus Stop for Bx15, M100, M101 shown on proposed design map]] [[cite:2015_01_06_brt_125th_cb11#p005_c0005|M100 local stop pattern unchanged on SBS corridor map]].
 <!-- mta-wiki:writer:end -->

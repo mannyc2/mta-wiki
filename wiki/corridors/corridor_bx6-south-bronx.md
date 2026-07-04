@@ -379,5 +379,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_bx6-south-bronx|South Bronx Crosstown]] was identified as a candidate for Select Bus Service in the 2009 Bus Rapid Transit Phase II Study [[cite:brt_bx6_cb3_feb2017#p003_c0002|2009 BRT Phase II Study]]. The corridor serves nearly [[metric:metric_bx6-daily-ridership-25000_5|25,000 daily riders]] and connects to multiple subway lines, Metro-North, and 20 bus routes [[cite:brt_bx6_cb12_apr2017#p003_c0003|connections and ridership]].
 
+The 4.8-mile route from Hunts Point to Riverside Drive averages 56 minutes, with over 25% of trip time spent boarding passengers and the bus moving less than half the time [[cite:2015_11_20_brt_south_bronx_crosstown_kickoff#p006_c0002|travel time and boarding]]. The [[metric:metric_bx6-board-time-percent|Bx6 boarding time percentage]] metrics show that westbound during the PM peak, the bus is in motion only 41% of the time [[cite:brt_bx6_south_bronx_cb10_june2016#p009_c0003|delay cause breakdown]].
+
+Proposed SBS treatments included dedicated bus lanes, off-board fare collection, all-door boarding, transit signal priority, improved station amenities, and pedestrian safety improvements [[cite:brt_bx6_cb4_mar2017#p005_c0007|off-board fare collection]] [[cite:brt_bx6_cb4_mar2017#p005_c0004|signal priority]]. A one-way bus tunnel at 161st Street was the final design for the tunnel area, benefiting 25,000 daily riders without significant traffic impacts and addressing the boarding issue in front of the courts [[cite:brt_bx6_south_bronx_mar2017#p029_c0001|161st Street final proposal]] [[cite:brt_bx6_south_bronx_mar2017#p033_c0002|benefits and traffic impacts]]. Cobblestone replacement at three Hunts Point Avenue bus stops was also planned as part of the street design work [[cite:brt_bx6_cb2_feb2017#p011_c0003|cobblestone replacement]].
 <!-- mta-wiki:writer:end -->

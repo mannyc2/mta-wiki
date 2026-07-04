@@ -95,5 +95,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_165th-st-bus-lanes|165th Street]] bus lane corridor in Jamaica, Queens, was proposed as part of the Jamaica Bus Improvement Study led by NYC DOT [[cite:201104_jamaica_cac2_slides#p002_c0007|NYC DOT study]], spanning from Hillside Avenue to 89th Avenue [[cite:201104_jamaica_cac2_slides#p027_c0003|limits in CAC slides]] [[cite:201106_jamaica_cb12_slides#p025_c0003|limits in CB12 slides]] [[cite:20110517_jamaica_open_house_posters#p007_c0004|limits in open house poster]]. The primary purpose of the proposed bus lane was to prioritize bus movements exiting from the 165th Street Bus Terminal, a major hub for bus routes serving southeast Queens [[cite:201104_jamaica_cac2_slides#p027_c0005|prioritize bus movements]] [[cite:201106_jamaica_cb12_slides#p025_c0005|prioritize bus movements CB12]].
 
+The corridor was presented in community outreach materials from spring 2011, including a Community Advisory Committee meeting on March 25, 2011, and a Queens Community Board 12 meeting on June 15, 2011 [[cite:201104_jamaica_cac2_slides#p001_c0001|CAC meeting date]] [[cite:201106_jamaica_cb12_slides#p001_c0002|CB12 meeting date]]. The proposed treatment was part of a broader package of bus lane improvements along Merrick Boulevard, Archer Avenue, and Jamaica Avenue in the Jamaica study area [[cite:20110517_jamaica_open_house_posters#p007_c0001|Merrick and 165th poster]]. Source materials do not indicate whether the 165th Street bus lane was ultimately implemented.
 <!-- mta-wiki:writer:end -->

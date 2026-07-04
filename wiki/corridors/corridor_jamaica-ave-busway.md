@@ -231,5 +231,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_jamaica-ave-busway|Jamaica Avenue Busway, Queens]] is a 24-hour, seven-day-a-week busway on Jamaica Avenue from Sutphin Boulevard to 168th Street, operating in both directions [[cite:jamaica_archer_brochure#p001_c0002|limits from brochure]] [[cite:jamaica_archer_brochure#p001_c0005|24/7 schedule]]. It launched on October 24, 2021 as a one-year pilot project [[cite:jamaica_busway_monitoring_update_2022#p005_c0003|launch date]].
 
+Only buses, trucks, and emergency vehicles may make through trips along the corridor [[cite:jamaica_archer_brochure#p001_c0006|through-trip rule]]. All other vehicles may enter for local access to the curb but must make the next available right turn off the busway [[cite:jamaica_archer_brochure#p001_c0007|local-access rule]]. Left turns are restricted except for the eastbound left at 153rd Street [[cite:jamaica_archer_brochure#p001_c0007|left-turn exception]]. Pickups and drop-offs are allowed throughout Jamaica Avenue except westbound between 147th Place and Sutphin Boulevard [[cite:jamaica_archer_brochure#p001_c0018|pickup-dropoff restriction]].
+
+The corridor serves 139,000 daily riders across 14 bus routes, with pre-busway PM peak speeds of 6.8 MPH [[cite:jamaica_busway_monitoring_update_2022#p002_c0003|ridership and speed baseline]]. Busway hours are 6AM-8PM all days [[cite:jamaica_busway_monitoring_update_2022#p003_c0005|ridership hours table]].
+
+Earlier planning for the corridor dates to the 2011 Jamaica Bus Improvement Study, which proposed offset bus lanes, expanded hours of operation, and turn restrictions for Jamaica Avenue from Parsons Boulevard to 168th Street, with a west extension from Parsons Boulevard to Sutphin Boulevard [[cite:20110517_jamaica_open_house_posters#p006_c0002|Sutphin to Parsons segment]] [[cite:20110517_jamaica_open_house_posters#p006_c0004|Parsons to 168th segment]] [[cite:201106_jamaica_cb12_slides#p020_c0003|existing lanes area]] [[cite:201106_jamaica_cb12_slides#p022_c0003|west extension proposal]] [[cite:201104_jamaica_cac2_slides#p021_c0003|up to 90 buses per hour per direction]]. Those study concepts anticipated the full busway treatment that ultimately launched a decade later.
 <!-- mta-wiki:writer:end -->

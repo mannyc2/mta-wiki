@@ -47,6 +47,12 @@ describe("writer prompt contract", () => {
     expect(prompt).toContain("bare `source_id#block_id` citations");
     expect(prompt).toContain("Use record primitives only from the allow-list above");
     expect(prompt).toContain("Do not use bare `[[record_id|label]]` wikilinks");
+    expect(prompt).toContain("never use `cite:` for metric ids");
+    expect(prompt).toContain("[[cite:metric:metric_id|label]]");
+    expect(prompt).toContain("[[cite:metric_id|label]]");
+    expect(prompt).toContain("use its allow-listed `[[metric:metric_id|label]]` primitive separately");
+    expect(prompt).toContain("cite the block that contains that exact value");
+    expect(prompt).toContain("Do not estimate distances, lengths, or durations");
     expect(prompt).toContain("every blank-line-separated prose paragraph contains the literal string `[[cite:`");
   });
 
