@@ -37,5 +37,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_x51-201110-qbb|X51 Express Bus Route]] is a Queens-based express bus service that crosses the Queensboro Bridge (QBB). It was documented in the NYC Department of Transportation's Queensboro Bridge Bus Priority Study, presented to local community boards in 2010 [[cite:201110_qbb_approach_summary#p001_c0001|NYC DOT QBB Bus Priority Study]]. The study recorded an estimated daily ridership of 180 passengers for the X51, marked with an asterisk indicating estimated volume [[cite:201110_qbb_approach_summary#p008_c0003|X51* 180]] [[cite:201110_qbb_approach_summary#p008_c0005|Estimated ridership volume]].
 
+The X51 was one of eighteen express routes using the QBB at the time of the study, which together carried 7,920 daily riders [[cite:201110_qbb_approach_summary#p008_c0003|Express bus total 7,920]]. The Queensboro Bridge carried about 16,000 bus trips per day including local service, with 110 buses during the PM rush hour [[cite:201110_qbb_approach_summary#p004_c0003|QBB bus corridor data]]. An express bus rider survey of 511 respondents found that 81% rode the bus daily, 88% were traveling to or from work, and 80% of PM riders perceived traffic congestion on the bridge sometimes, often, or always [[cite:201110_qbb_approach_summary#p012_c0004|Express rider survey data]]. Among express riders who perceived delay on the QBB, 62% reported an average delay of 5-15 minutes [[cite:201110_qbb_approach_summary#p012_c0004|Express rider delay perception]].
+
+The available QBB study table supports the X51's historical bridge-use and ridership context, but not its exact terminal points, operating schedule, or later service status [[cite:201110_qbb_approach_summary#p008_c0003|Route data from QBB study]].
 <!-- mta-wiki:writer:end -->

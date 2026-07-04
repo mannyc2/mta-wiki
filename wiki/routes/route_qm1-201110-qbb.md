@@ -37,5 +37,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[route:route_qm1-201110-qbb|QM1 Express Bus Route]] is an express bus route in Queens documented as part of the 2010 Queensboro Bridge Bus Priority Study by NYC DOT [[cite:201110_qbb_approach_summary#p001_c0001|NYC DOT presentation]] [[cite:201110_qbb_approach_summary#p001_c0003|presentation to community boards]]. The route carried 750 daily riders according to the study's data, contributing to [[metric:metric_express-bus-total-daily-ridership|Express Bus Total Daily Ridership on QBB]] of 7,920 across all express routes using the bridge [[cite:201110_qbb_approach_summary#p008_c0003|QM1 daily ridership and express total]].
 
+The QM1 operates with a deadhead route shared with QM1A, QM2, QM2A, QM10, QM11, and QM12 buses [[cite:201110_qbb_approach_summary#p008_c0006|QM1 deadhead route]]. The QBB corridor carried approximately 16,000 bus trips per day including about 8,000 local riders, with 110 buses during PM rush hour, and over 75% of express and local bus riders reported that traffic congestion regularly delayed their bus [[cite:201110_qbb_approach_summary#p004_c0003|QBB corridor statistics]].
+
+Of [[metric:metric_express-rider-survey-respondents|Express Bus Rider Survey Respondents]] (511 express riders surveyed), 88% were traveling to or from work, 81% rode the bus daily, and 80% perceived traffic congestion sometimes, often, or always during PM hours at locations including the Queensboro Bridge [[cite:201110_qbb_approach_summary#p012_c0004|express rider survey data]]. Among express riders who perceived delay on the bridge, 62% reported an average delay of 5-15 minutes [[cite:201110_qbb_approach_summary#p012_c0004|express rider delay perception]].
+
+The study's Queens-side focus area includes Queens Plaza, ramp connections to 21st St/Thomson Ave, Thomson Ave, Queens Blvd, and Northern Blvd [[cite:201110_qbb_approach_summary#p005_c0002|study area Queens side]].
 <!-- mta-wiki:writer:end -->

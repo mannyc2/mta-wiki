@@ -77,5 +77,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The [[route:route_q23-lga-2012|Q23]] is a local bus route in Queens, used by transit riders to access LaGuardia Airport alongside the Q48 [[cite:2012_04_20_brt_lga_workshop_summary#p002_c0013|LGA workshop notes]]. During the second public workshop of the LaGuardia Airport Access Alternatives Analysis in November 2011, participants said they would like to see the Q23 extended onto airport property and suggested that the route could meet 71st Street and Continental Boulevard to provide better subway access than the Q72 while also helping relieve the Q44 [[cite:2012_04_20_brt_lga_workshop_summary#p002_c0013|LGA Q23 airport extension]] [[cite:2012_04_20_brt_lga_workshop_summary#p004_c0003|Q23 direct LGA routing]]. In the Queens Bus Redesign, the Q23 was featured as a case study for route simplification, including a more direct routing with fewer turns and fewer diversions, a faster corridor, and less redundant service [[cite:meeting_doc_87961#p007_c0003|Q23 case study]] [[cite:meeting_doc_87961#p007_c0004|Q23 route simplification]].
 <!-- mta-wiki:writer:end -->

@@ -58,5 +58,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_125th-st-m35|M35]] is a local bus route serving Wards Island and 125th Street in Manhattan. During a September 2012 public workshop on bus service along 125th Street, participants identified disorderly conduct and slow passenger boarding and disembarking as a delay issue specifically noted on the M35 [[cite:2012_09_19_125th_st_sbs_public_workshop_summary#p005_c0004|Bus Service on 125th Street — Public Workshop Summary]]. Patrons of social service facilities on Wards Island were reported to disembark the M35 at 125th Street and Lexington Avenue, with concerns raised about congestion and public disturbance at that intersection [[cite:2012_09_19_125th_st_sbs_public_workshop_summary#p006_c0004|Bus Service on 125th Street — Public Workshop Summary]].
 
+At a follow-up public workshop in December 2012, workshop participants commented that the M35 has a more detrimental impact on the Lexington Avenue and 125th Street intersection than other buses serving the corridor, and suggested eliminating the M35 entirely while extending the M100 to Randall's Island [[cite:2012_12_03_sbs_125th_workshop_summary#p004_c0004|125th Street Transportation Improvements Project — Workshop Summary]]. These comments were part of a broader discussion about congestion, pedestrian safety, and potential Select Bus Service improvements on 125th Street.
 <!-- mta-wiki:writer:end -->

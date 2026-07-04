@@ -59,5 +59,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[route:route_meeting-doc-129371-s93|S93]] is a local bus route on Staten Island that was identified as one of four bridge-crossing local bus routes selected for front-of-bus bike rack installation as part of MTA's bicycle, pedestrian, and micromobility (BPM) access initiatives [[cite:meeting_doc_129371#p005_c0004|S93 front-of-bus bike rack]]. The other routes receiving the same treatment were S53, Q50, and Bx23 [[cite:meeting_doc_129371#p005_c0004|S53, S93, Q50, Bx23]].
 
+The permanent bike rack installation on [[route:route_meeting-doc-129371-s93|S93]] was completed as part of MTA's work to provide bike access across bridges where dedicated pedestrian or cycling paths do not exist, including the Verrazzano-Narrows Bridge [[cite:meeting_doc_98651#p005_c0002|permanent bike racks on four bus routes crossing bridges]]. The same accomplishment was reported in the October 2022 BPM Strategic Action Plan presentation, which noted that bike access across the Whitestone and Verrazzano Bridges was being provided via bus route bike racks [[cite:meeting_doc_98651#p011_c0003|bike access via bus racks on Whitestone and Verrazzano bridges]].
+
+This bike rack deployment coincided with broader MTA efforts to install front-of-bus bike racks on three Select Bus Service routes (Q44 SBS, S79 SBS, and M60 SBS) and to improve bicycle parking infrastructure across subway and commuter rail stations [[cite:meeting_doc_129371#p005_c0002|front-of-bus bike racks on SBS routes]] [[cite:meeting_doc_129371#p005_c0003|Q44 SBS, S79 SBS, M60 SBS]]. The MTA's Extending Transit's Reach Strategic Action Plan, published in January 2023, established the framework for these access improvements [[cite:meeting_doc_129371#p002_c0002|Strategic Action Plan published Jan 2023]].
 <!-- mta-wiki:writer:end -->

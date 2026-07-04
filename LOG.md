@@ -114,6 +114,28 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `bun scripts/determinism-anchor.ts` with combined hash
   `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
+### Bounded Writer Full-Slice Batch 08
+
+- Plan 012 full-slice batch 08 filled another `50` route/corridor writer regions, bringing the
+  post-sample full-slice total to `400` pages; `86` route/corridor writer pages remain empty.
+  Actual usage: `50` writer runs, `330` provider requests, `11148984` input tokens, `184994`
+  output tokens, `25480449` cache-read tokens, `36814427` total tokens, estimated cost
+  `$1.151897`.
+- STOPs handled before commit: value-as-label metric primitives on the B17, S Shuttle, SIM1C,
+  and Staten Island express bus pages; one S53 outside-writer-region duplicate-marker repair;
+  Q8 value-only metric labels; and internal/temporal/source-scope wording on M35, X51, Bx2,
+  Q80, SIM4C, QM10, and X64.
+- Batch review found `50` modified wiki pages, `0` writer-edit/citation issues across `396`
+  citations, and no modified writer headings, bullet lists, bad `cite:` targets, range-like cite
+  targets, value-like metric labels, temporal live-status terms, or lingering flagged
+  internal/review terms.
+- Added a review note for coarse ACE page-level evidence, historical QBB aggregate/survey scope,
+  and OCR table/figure precision caveats.
+- Batch gates passed: `bun run typecheck`; `bun run test` (`961` pass, `1` skip,
+  `0` fail); `bun run validate` with `Issues: 0`; and
+  `bun scripts/determinism-anchor.ts` with combined hash
+  `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ## 2026-07-03
 
 ### Remaining Plan Approval

@@ -61,5 +61,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_lirr-ronkonkoma-branch-2023|Ronkonkoma Branch]] is an MTA Long Island Rail Road commuter rail branch serving Suffolk County. The LIRR's 2023 Annual Operating Report recorded a system-wide [[metric:metric_lirr-avg-delay-per-late-train-2023|average delay per late train]] of -11.2 minutes and [[metric:metric_lirr-mdbf-fleet-2023|fleet-wide MDBF]] of 176,622 miles [[cite:meeting_doc_133321#p004_c0001|2023 Operating Statistics]][[cite:meeting_doc_133321#p006_c0004|MDBF Table]].
 
+The branch recorded an overall on-time performance of 91.6% in 2023, down from 92.9% in 2022 and below the annual goal of 94.5% [[cite:meeting_doc_133321#p004_c0001|Ronkonkoma Branch OTP 2023]]. Peak-period performance was 91.2% in the AM peak and 92.5% in the PM peak, while weekend service achieved 95.6% [[cite:meeting_doc_133321#p004_c0001|Ronkonkoma Branch OTP by period]].
+
+Elevator availability on the Ronkonkoma Branch was 98.7% in both 2022 and 2023, unchanged year-over-year and below the system-wide overall average of 99.1% in 2023 [[cite:meeting_doc_133321#p007_c0004|Elevator Availability by Branch]]. The [[metric:metric_lirr-elevator-overall-2023|system-wide overall elevator availability]] was 99.1% in 2023.
+
+During the March 3 to May 19, 2025 timetable period, bus service replaced weekday/midday train service between Ronkonkoma and Greenport to support track maintenance and crossing rehabilitations east of Ronkonkoma [[cite:meeting_doc_164866#p002_c0003|Bus replacement Ronkonkoma-Greenport]]. On four weekends (March 1-2, 8-9, 15-16, and 22-23, 2025), both main tracks were taken out of service between Brentwood and Ronkonkoma for switch and signal work near Ronkonkoma station, with trains terminating and originating at Deer Park on an hourly basis and bus service replacing trains in both directions [[cite:meeting_doc_164866#p002_c0006|Weekend switch and signal work]]. On March 17, 2025, the LIRR operated two additional westbound trains from the Ronkonkoma Branch for the St. Patrick's Day Parade [[cite:meeting_doc_164866#p002_c0008|Extra St. Patrick's Day trains]].
 <!-- mta-wiki:writer:end -->

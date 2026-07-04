@@ -36,5 +36,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+[[route:route_34th-st-sbs|34th Street Select Bus Service]] seeks to improve transit service, pedestrian safety and mobility and curb access on one of Manhattan's most celebrated streets [[cite:brt_route_index#p001_b0001|34th Street SBS description]]. Off-board fare payment along the route began in November 2011, while capital improvements began in 2014 [[cite:brt_route_index#p001_b0001|implementation timeline]]. The route is one of 16 Select Bus Service routes implemented throughout New York City, each incorporating various elements of bus rapid transit to serve the different types of bus routes and streets [[cite:brt_route_index#p001_b0001|16 SBS routes citywide]].
 <!-- mta-wiki:writer:end -->

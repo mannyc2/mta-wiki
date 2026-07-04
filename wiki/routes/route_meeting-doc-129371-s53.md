@@ -56,5 +56,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_meeting-doc-129371-s53|S53]] is one of four local bus routes that MTA documents with permanent front-of-bus bike racks, alongside the S93, Q50, and Bx23 [[cite:meeting_doc_129371#p005_c0004|S53, S93, Q50, and Bx23 bike racks]]. A separate bicycle, pedestrian, and micromobility access presentation describes the same four routes as bus routes crossing bridges, where the bike racks were installed to improve bicycle access on bridge-linked trips [[cite:meeting_doc_98651#p005_c0002|permanent bike racks on four bridge-crossing routes]].
 
+The S53 bike-rack work sits within the MTA's broader Extending Transit's Reach Strategic Action Plan, which was published in January 2023 to improve bicycle, pedestrian, and micromobility access across the system [[cite:meeting_doc_129371#p002_c0002|Extending Transit's Reach plan publication]]. The same update distinguishes the local-route bike racks from front-of-bus bike racks on Select Bus Service routes including Q44 SBS, S79 SBS, and M60 SBS [[cite:meeting_doc_129371#p005_c0003|SBS routes with front-of-bus bike racks]].
 <!-- mta-wiki:writer:end -->

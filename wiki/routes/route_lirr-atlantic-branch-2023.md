@@ -48,5 +48,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_lirr-atlantic-branch-2023|Atlantic Branch]], operated by the MTA Long Island Rail Road, recorded an overall on-time performance of 94.0% for 2023 in the LIRR's Annual Operating Report, down from 98.1% in 2022 [[cite:meeting_doc_133321#p003_c0004|Performance Summary 2023]]. No annual goal is listed for the branch [[cite:meeting_doc_133321#p003_c0004|Atlantic Branch annual goal not stated]]. Its sub-period on-time performance for 2023 was higher than the overall figure: weekend service achieved 99.0%, AM Peak 98.1%, PM Peak 97.8%, Total Peak 97.9%, and Off Peak Weekday 97.8% [[cite:meeting_doc_133321#p003_c0004|Atlantic Branch sub-period OTP 2023]].
 
+In a February 2025 timetable change covering March 3 through May 19, 2025, the Atlantic Branch was listed as the site of Rail Replacement and Maintenance work [[cite:meeting_doc_164866#p001_c0006|March 3 Timetable project list]]. The same schedule also supported Atlantic Tunnel Lighting improvements [[cite:meeting_doc_164866#p001_c0006|Atlantic Tunnel Lighting]]. Funding for these projects was contained in the LIRR Operating and MTA Capital Program budget [[cite:meeting_doc_164866#p002_c0010|Funding source]].
+
+System-level metrics from the 2023 Annual Operating Report provide broader context: the LIRR reported [[metric:metric_lirr-delay-total-2023|18,365 total delay minutes systemwide]], with [[metric:metric_lirr-delay-train-ops-2023|Train Operations (29.9%)]] and [[metric:metric_lirr-delay-external-2023|External Factors (19.9%)]] as the largest categories [[cite:meeting_doc_133321#p005_c0002|System Categories of Delay 2023]]. Fleet-wide [[metric:metric_lirr-mdbf-fleet-2023|Mean Distance Between Failures (MDBF)]] reached 176,622 miles for December 2023, above the 170,000-mile goal [[cite:meeting_doc_133321#p006_c0004|Fleet MDBF table]].
 <!-- mta-wiki:writer:end -->

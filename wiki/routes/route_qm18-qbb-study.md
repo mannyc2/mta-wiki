@@ -58,5 +58,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_qm18-qbb-study|QM18 Express Bus Route]] is an express bus service between Manhattan and Queens documented in the Queensboro Bridge (QBB) Bus Priority Study, published by NYC DOT in 2011 [[cite:201110_qbb_summary_recommendations#p001_c0001|NYC DOT QBB study]]. During the study period, the route carried approximately 110 daily riders, contributing to a total of 7,920 daily express bus riders crossing the QBB [[cite:201110_qbb_approach_summary#p008_c0003|QM18 daily ridership of 110]]. The study identified that congestion on the QBB caused significant bus delay, with over 75% of riders reporting regular delays [[cite:201110_qbb_approach_summary#p004_c0003|over 75% report delay]].
 
+The QM18 shared a bus stop with the QM15, QM16, QM17, and QM21 at Third Avenue and 57th Street in Manhattan, where a bus weave maneuver was identified as a safety concern [[cite:201110_qbb_summary_recommendations#p010_c0005|bus weave at 3rd Ave & 57th St]]. The study's Recommendation #2 addressed this intersection with a Leading Pedestrian Interval that also created an opportunity for eastbound bus signal priority [[cite:201110_qbb_summary_recommendations#p010_c0004|LPI and bus signal priority]].
+
+The [[metric:metric_express-bus-total-daily-ridership|Express Bus Total Daily Ridership on QBB]] figure of 7,920 across all express routes reflects the corridor's significance as a bus corridor carrying 16,000 total bus trips daily [[cite:201110_qbb_approach_summary#p008_c0003|total express ridership]]. The QBB Bus Priority Study's short-term recommendations were implemented in fall 2011, while Recommendation #5 called for additional analysis of bus priority options on the Thomson Avenue ramps [[cite:201110_qbb_summary_recommendations#p017_c0004|recommendations #1-4 implemented fall 2011]][[cite:201110_qbb_summary_recommendations#p017_c0006|rec #5 pending analysis]].
 <!-- mta-wiki:writer:end -->

@@ -51,5 +51,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The [[route:route_c-subway-nyct-2025|C Subway Line]] was the venue for a historic milestone on February 1, 2024, when NYCT introduced the first modern open gangway subway cars in the United States — the R211 cars — which allow customers to walk between cars, reducing crowding and improving accessibility, with 9 R211 trains in service at the time [[cite:meeting_doc_135451#p003_c0004|R211 open gangway introduced on C line]]. In November 2025, data-driven timetable updates on the C produced a 9.0-point improvement in on-time performance from October, achieving the line's best non-COVID monthly performance, as tracked by [[metric:metric_c-line-otp-improvement-oct-to-nov2025|C Line OTP Improvement October to November 2025]] [[cite:nyct_key_performance_metrics_doc194001#p008_c0010|C line 9.0-point OTP improvement]]. The C line also posted 85% Customer Journey Time Performance in the same period [[cite:nyct_key_performance_metrics_doc194001#p009_c0008|C line CJTP 85%]]. On January 27, 2024, Station Agent Herbert and NYPD Officers Chowdhury and Caminero were acknowledged for assisting a customer who collapsed onto the tracks at Lafayette Avenue station on the C line [[cite:meeting_doc_135451#p004_c0005|Lafayette C line customer rescue]].
 <!-- mta-wiki:writer:end -->

@@ -39,5 +39,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The New York City Independent Budget Office's February 2025 report "Speeding Up Slowly" identified the M50 crosstown bus as one of the slowest bus routes in the city, with a December 2024 average speed of 4.2 miles per hour -- only slightly faster than a brisk walking pace [[cite:speeding_up_slowly_2025#p009_c0003|M50 speed cited in Speeding Up Slowly report]]. The M50 route runs between the West 42nd Street Pier and the East Side of Manhattan [[route:route_m50-west-42-st-pier-east-side|M50 route record]].
 <!-- mta-wiki:writer:end -->

@@ -38,5 +38,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[route:route_woodhaven-crossbay-sbs|Woodhaven and Cross Bay Boulevard Select Bus Service began service on November 12, 2017 better connecting Queens]], serving Queens via Woodhaven and Cross Bay Boulevards [[cite:brt_route_index#p001_b0001|Woodhaven SBS route description]]. The route provides improved bus service for over 30,000 daily passengers, offering more reliable and faster bus service to major job centers [[cite:brt_route_index#p001_b0001|over 30,000 daily passengers]].
 
+Woodhaven and Cross Bay Boulevard SBS connects to the 7, A, E, F, M, J, Z, R, and S subway lines, the Long Island Rail Road, and 20 other bus routes [[cite:brt_route_index#p001_b0001|subway and rail connections]]. As a Queens Select Bus Service route, it is one of 16 SBS routes implemented throughout New York City under the joint MTA New York City Transit and NYC Department of Transportation program [[cite:brt_route_index#p001_b0001|16 SBS routes implemented]].
 <!-- mta-wiki:writer:end -->

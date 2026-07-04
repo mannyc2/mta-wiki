@@ -55,5 +55,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The Q80 is a proposed new route label introduced under the Queens Bus Network Redesign to simplify the overlapping service patterns of the Q10 route in Southwest Queens. [[cite:queens_addendum_equity_evaluation_appendix_d#p010_c0004|The Q80 label was created to distinguish the Lefferts Boulevard branch of the Q10 that provides direct service to JFK Airport.]]
 
+The Q10 route previously operated three separate service patterns under one route number: a direct Lefferts Boulevard route to JFK Airport, a second that served South Ozone Park before heading to the airport, and a third that terminated in South Ozone Park without continuing to the airport. [[cite:queens_addendum_equity_evaluation_appendix_d#p010_c0004|The Q10 had multiple confusing service patterns sharing the same route number.]] The Q80 label was introduced specifically for the Lefferts Boulevard direct airport route, which serves a population that is over 80% non-white and traverses several Tier 1 and 2 equity consideration areas. [[cite:queens_addendum_equity_evaluation_appendix_d#p010_c0004|The Q80 would serve a population that is over 80% non-white.]] The Q80 would offer more frequent and new overnight service along the full length of Lefferts Boulevard, benefiting airport workers with non-traditional schedules. [[cite:queens_addendum_equity_evaluation_appendix_d#p010_c0004|The Q80 would offer more frequent and new overnight service along the entire length of Lefferts Boulevard.]]
+
+The Q10 would continue to operate between Kew Gardens and JFK Airport via Rockaway Boulevard and 130 Street, restructured as a "Rush" route providing faster service for South Ozone Park residents while maintaining the airport connection. [[cite:queens_addendum_equity_evaluation_appendix_d#p010_c0004|The Q10 would maintain its pattern between Kew Gardens and JFK Airport and be restructured as a Rush route.]]
+
+On the ACE (Automated Camera Enforcement) program page, the Q80 route is listed together with the Q10 on Lefferts Boulevard, with the source noting a 60-day warning period. [[cite:mta_automated_camera_enforcement#p001_b0001|ACE lists Q10/Q80 on Lefferts Blvd in a 60-day warning period.]]
 <!-- mta-wiki:writer:end -->
