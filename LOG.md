@@ -6,6 +6,28 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-04
 
+### Plan 012 Complete: Route/Corridor Writer Pass + Site Redeploy
+
+- Plan 012 is complete: the 20-page sample plus `486` full-slice writer pages filled the
+  route/corridor writer backlog; current inventory is `318` route pages + `218` corridor pages,
+  and `writer-backlog-queue --kind route,corridor` reports `0/0` empty pages.
+- Total recorded Plan 012 provider spend was `$12.073301`, under the `$20` operational budget
+  and the `$24` STOP threshold. This includes rejected/verifier-failed attempts, sample retries,
+  and all ten full-slice batches.
+- Re-exported the static site with `bun run export:site`: `routes=318`, `corridors=218`,
+  `projects=1859`, `sources=2561`; `dist/site` is `354M`, no HTML file is over `3M`, and
+  Pagefind indexed `4964` pages.
+- Redeployed GitHub Pages from `gh-pages` commit `86bc1b2b` (`Deploy static site with writer
+  prose`). Live URL `https://mannyc2.github.io/mta-wiki/` returns HTTP `200`; spot checks
+  confirmed `routes/route_q1-queens.html` renders writer prose with citation links,
+  `projects/project_lirr-mnr-ptc.html` renders capped content with the repository link, and
+  `sources/queens_addendum_equity_evaluation_appendix_d.html` exposes cited block
+  `p006_c0011`.
+- Final Plan 012 gates passed after deploy: `bun run typecheck`; `bun run test` (`961` pass,
+  `1` skip, `0` fail); `bun run validate` with `Issues: 0`; and
+  `bun scripts/determinism-anchor.ts` with combined hash
+  `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ### Bounded Writer Full-Slice Batch 02
 
 - Plan 012 full-slice batch 02 filled another `50` route/corridor writer regions, bringing the
