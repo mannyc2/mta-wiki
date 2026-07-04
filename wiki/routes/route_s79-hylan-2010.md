@@ -153,5 +153,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_s79-hylan-2010|S79 local bus]] was a local bus route operating along Hylan Boulevard on Staten Island, serving as the predecessor to the S79 Select Bus Service (SBS) [[cite:201106_hylan_slides#p022_c0006|Replaces local S79 service]]. The route carried significant ridership, with approximately 16,000 daily trips across the S78 and S79 local buses combined [[cite:201109_brt_hylan_introductory_info#p004_c0006|16,000 trips/day on S78 and S79 local buses]].
 
+The S79 local bus faced chronic delays from traffic congestion on Hylan Boulevard, the only continuous north-south route on the south shore, carrying about 28,000 vehicles on a typical weekday [[cite:2010_12_02_brt_hylan_open_house_slides#p004_c0004|Traffic Congestion on Hylan Blvd]]. Congestion, frequent express bus stops, narrow lanes, and onboard fare payment all contributed to bus passenger delays [[cite:201106_hylan_slides#p009_c0006|Causes of bus passenger delays]].
+
+Under the Hylan Boulevard Transportation Improvement Study, the S79 local bus was planned for replacement by a streamlined S79 Select Bus Service with limited-stop spacing, a more direct route near the Staten Island Mall and Eltingville Transit Center, and off-board fare collection [[cite:2012_03_15_brt_hylan_meeting_slides#p008_c0005|Introduce Limited stop spacing on S79]]. Proposed improvements included peak-period bus lanes on Hylan Boulevard, transit signal priority (TSP), advance signals at key intersections, and optimized signal timing [[cite:2012_sbs_hylan_winter_newsletter#p001_c0005|Streamlined S79 bus service would operate with fewer stops]]. The S79 SBS improvements were announced as coming in 2012 [[cite:2012_sbs_hylan_winter_newsletter#p001_c0003|S79 SELECT BUS SERVICE IMPROVEMENTS COMING IN 2012]].
 <!-- mta-wiki:writer:end -->

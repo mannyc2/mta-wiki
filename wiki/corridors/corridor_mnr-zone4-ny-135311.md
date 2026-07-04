@@ -36,5 +36,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+MNR Zone 4 (NY) is the southernmost New York MNR service zone, covering the Hudson line from Croton Harmon and south and the Harlem line from White Plains and South [[cite:meeting_doc_135311#p006_c0009|MNR Zone 4 definition]]. It is one of five MNR zones defined in a March 2024 procurement for emergency and scheduled bus services (Contract #426684), alongside Zone 1 (CT), Zone 2 (CT), Zone 3 (NY), and Zone 5 (NY) [[cite:meeting_doc_135311#p006_c0009|zone table]]. The zone boundaries serve as the geographic basis for distributing bus service assignments among the 13 recommended vendor firms selected through a competitive RFP process [[cite:meeting_doc_135311#p007_c0003|13 recommended firms]] [[cite:meeting_doc_135311#p007_c0006|zone-based distribution]].
 
+The zone was defined as part of a broader procurement led by MNR on behalf of itself and the LIRR, with a total estimated aggregate budget of $55 million over a five-year term ($30 million for MNR, $25 million for LIRR) [[cite:meeting_doc_135311#p006_c0006|total budget]]. The [[corridor:corridor_mnr-zone4-ny-135311|MNR Zone 4 (NY)]] corridor is adjacent to MNR Zone 3 to the north and the LIRR service area to the south and east, which covers Nassau, Western Suffolk, Eastern Suffolk, Queens, King, and New York Counties [[cite:meeting_doc_135311#p006_c0009|adjacent zones]].
+
+Since the zone definition originates from a procurement agenda document rather than a formal service planning study, the precise station-by-station limits within the described line segments are not specified in the source [[cite:meeting_doc_135311#p006_c0009|source limits]].
 <!-- mta-wiki:writer:end -->

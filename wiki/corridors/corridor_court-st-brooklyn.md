@@ -33,5 +33,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+Court Street in Brooklyn received a protected bike lane as part of NYC DOT's street redesign projects in 2025, complementing the MTA's Congestion Relief Zone program in Manhattan [[cite:streets_plan_update_2026#p002_c0005|protected bike lane on Court Street in Brooklyn]]. NYC DOT described the lane as one of several major street redesign projects that prioritized walking, transit, and cycling alongside new protected bus and bike lanes on 2nd and 3rd Avenues in Manhattan, new bike and pedestrian paths over the Queensboro Bridge, and a new section of the Harlem River Greenway [[cite:streets_plan_update_2026#p002_c0005|major street redesign projects]]. The MTA's Congestion Relief Zone, which led to an 11 percent reduction in traffic and faster bridge and tunnel crossings of up to 50 percent, was cited as the broader backdrop for these investments [[cite:streets_plan_update_2026#p002_c0005|Congestion Relief Zone]]. Additional details about the Court Street protected bike lane's length, design specifications, or installation date are not available in the current source material and would benefit from further documentation.
 <!-- mta-wiki:writer:end -->

@@ -35,5 +35,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[corridor:corridor_mcguinness-blvd-greenpoint|McGuinness Boulevard (Greenpoint, Brooklyn)]] is a corridor in Brooklyn where NYC DOT plans to implement parking-protected bike lanes as part of the near-term street redesign agenda in the NYC Streets Plan update released in 2026 [[cite:streets_plan_update_2026#p002_c0002|streets_plan_update_2026]]. The project had been stalled in prior years and is being resumed through that update [[cite:streets_plan_update_2026#p002_c0002|streets_plan_update_2026]]. The corridor's planned redesign is listed alongside other near-term priorities including extending Madison Avenue double bus lanes in Manhattan and redesigning the 31st Street corridor in Astoria [[cite:streets_plan_update_2026#p002_c0002|streets_plan_update_2026]].
 
+The Streets Plan update notes that 2025 was a challenging year, with some key projects delayed, curtailed, or paused due to capacity constraints, political considerations, or legal challenges, and that NYC DOT is building in-house capacity to deliver more transformative projects [[cite:streets_plan_update_2026#p002_c0007|streets_plan_update_2026]].
 <!-- mta-wiki:writer:end -->

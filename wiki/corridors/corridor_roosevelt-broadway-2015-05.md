@@ -42,5 +42,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The Roosevelt Av / Broadway Av segment is the northernmost portion of the [[corridor:corridor_woodhaven-cross-bay-blvds|Woodhaven / Cross Bay Boulevards SBS corridor]] in Queens [[cite:2015_05_13_brt_woodhaven_cb6_presentation#p020_c0002|Corridor design summary map]]. As presented to Community Board 6 in May 2015, this segment does not include bus lanes; instead, the proposed treatment consists of improved curbside bus stops [[cite:2015_05_13_brt_woodhaven_cb6_presentation#p020_c0004|No bus lanes – Improved curbside bus stops]]. Unlike the Woodhaven Boulevard mainline to the south, which received main-road bus lanes and median stations [[cite:2015_05_13_brt_woodhaven_cb6_presentation#p020_c0008|Main road bus lanes – All buses use median stations]], the Roosevelt Av / Broadway Av segment is shown as a grey (no-treatment-change) segment on the corridor design summary map [[cite:2015_05_13_brt_woodhaven_cb6_presentation#p020_c0002|Roosevelt Av / Broadway Av: The northernmost segment, shown in grey]]. The overall corridor serves the Q52/Q53 limited route and carries approximately [[metric:metric_daily-riders-30000-2015|30,000 daily bus riders]] [[cite:2015_05_13_brt_woodhaven_cb6_presentation#p008_c0002|30,000 daily bus riders]].
 <!-- mta-wiki:writer:end -->

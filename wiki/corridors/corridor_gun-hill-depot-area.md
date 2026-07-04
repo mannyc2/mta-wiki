@@ -32,5 +32,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_gun-hill-depot-area|Gun Hill depot service area]] encompasses bus routes serving disadvantaged communities in the northeast and central Bronx from the Gun Hill depot. The MTA has prioritized this corridor for zero-emission bus deployment due to long-standing environmental justice concerns over emissions and air-quality issues [[cite:meeting_doc_100341#p029_c0005|hydrogen buses and Gun Hill depot]].
 
+In late 2022, the MTA accepted an $8 million NYSERDA Electric Truck & Bus Challenge grant to deploy two hydrogen fuel cell buses at the Gun Hill depot [[cite:meeting_doc_100341#p029_c0003|NYSERDA $8M grant award]]. The two buses are 40-foot New Flyer Xcelsior CHARGE H2 buses with a range of over 300 miles, using hydrogen primarily produced with 100% renewable energy from hydropower, and were scheduled to enter passenger service by the end of 2024 [[cite:meeting_doc_100341#p029_c0006|hydrogen bus specifications]]. The MTA will install a hydrogen fueling station at the depot capable of fueling up to 40 buses [[cite:meeting_doc_100341#p029_c0005|hydrogen fueling station capacity]].
+
+The hydrogen fuel cell buses operate on approximately eight routes serving the northeast and central Bronx. The MTA described this deployment as a step toward demonstrating hydrogen as a complement to the battery-electric fleet on the path to an all zero-emission bus fleet by 2040 [[cite:meeting_doc_100341#p029_c0004|zero-emission fleet goal by 2040]].
 <!-- mta-wiki:writer:end -->

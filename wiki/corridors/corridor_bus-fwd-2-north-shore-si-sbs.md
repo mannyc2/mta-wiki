@@ -41,5 +41,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The [[corridor:corridor_bus-fwd-2-north-shore-si-sbs|North Shore BRT, Staten Island (SBS candidate U)]] corridor was identified as SBS candidate corridor "U" in the Bus Forward 2017 plan, one of 21 candidate corridors across the city selected for the next phase of Select Bus Service expansion [[cite:bus_forward_2#p005_c0001|Staten Island U North Shore listed among 21 SBS candidate corridors]]. The corridor was designated based on data analysis, public workshops, on-street surveying, and online feedback conducted by NYC DOT and the MTA [[cite:bus_forward_2#p004_c0002|21 candidate corridors identified through data analysis and public outreach]]. As of the Bus Forward plan's publication, the North Shore BRT was described as currently being studied by the MTA, with NYC DOT supporting the effort [[cite:bus_forward_2#p005_c0002|North Shore BRT being studied by MTA, supported by NYC DOT]]. This corridor represents one of two Staten Island-related items in the candidate list; the separate Bay Street corridor was also identified as a local bus priority corridor in the same plan [[cite:bus_forward_2#p011_c0002|Bay St from Central Av to Victory Blvd listed as local bus priority corridor]].
 <!-- mta-wiki:writer:end -->

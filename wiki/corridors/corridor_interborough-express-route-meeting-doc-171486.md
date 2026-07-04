@@ -53,5 +53,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[corridor:corridor_interborough-express-route-meeting-doc-171486|Interborough Express Route]] is documented on page 13 of an [[cite:meeting_doc_171486#p001_c0001|MTA Board Meeting]] presentation from [[cite:meeting_doc_171486#p001_c0002|April 30, 2025]]. The corridor runs through Brooklyn, starting at [[cite:meeting_doc_171486#p013_c0002|Roosevelt Avenue]] and proceeding south through Grand Avenue, Eliot Avenue, Metropolitan Avenue, Myrtle Avenue, Wilson Avenue, Atlantic Avenue, Sutter Avenue, Livonia Avenue, Linden Blvd, Remsen Avenue, Utica Avenue, Flatbush Av., Nostrand Av., East 16 Street, McDonald Avenue, New Utrecht Avenue, 8 Avenue, and 4 Avenue, ending at [[cite:meeting_doc_171486#p013_c0002|Brooklyn Army Terminal]].
 
+The [[cite:meeting_doc_171486#p013_c0001|Interborough Express]] was presented under the "Strengthen & Expand the Network" theme and is listed as a sample project in the [[cite:meeting_doc_171486#p009_c0003|2025-2029 MTA Capital Plan]] [[cite:meeting_doc_171486#p009_c0004|alongside other vital transportation projects]]. The presentation indicates the [[cite:meeting_doc_171486#p013_c0005|NYS Budget to Fund Capital Plan]] as the funding mechanism.
+
+The same Board Meeting presentation reported that the [[cite:meeting_doc_171486#p004_c0001|MTA budget has shrunk 3% since 2019]], with annual spending declining from [[metric:metric_budget-2019-spending|$16.6 billion in 2019]] to [[cite:meeting_doc_171486#p004_c0002|$16.1 billion in the 2025 Final Proposed Budget]] (in real 2019 dollars).
+
+This corridor page is sourced from a single presentation slide; the route description comes from OCR alt-text describing a map and no precise station locations or alignment type (e.g., rail, bus, or dedicated guideway) are specified in the source. The relation [[cite:meeting_doc_171486#p013_c0001|Interborough Express uses corridor]] links this corridor to the Interborough Express project.
 <!-- mta-wiki:writer:end -->

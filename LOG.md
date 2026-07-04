@@ -39,6 +39,25 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts` with combined
   hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
+### Bounded Writer Full-Slice Batch 04
+
+- Plan 012 full-slice batch 04 filled another `50` route/corridor writer regions, bringing the
+  post-sample full-slice total to `200` pages. Actual usage: `50` writer runs, `333` provider
+  requests, `10574342` input tokens, `179704` output tokens, `28504861` cache-read tokens,
+  `39258907` total tokens, estimated cost `$1.093375`.
+- STOPs handled before commit: primitive-label verifier failures on Manhattan Avenue CB9,
+  Kings Highway Bay Pkwy-Ocean Ave, and Lower Montauk Branch; two source-facing wording cleanups
+  for Streets Plan administration phrasing; one LIRR county-scope prose cleanup; one M79
+  range-like citation cleanup; and one New Haven Line farebox unit-scale wording cleanup.
+- Generated review notes for the LIRR county-zone scope mismatch and New Haven Line farebox
+  revenue scale ambiguity.
+- Batch review found `50` modified wiki pages, `0` writer-edit/citation issues across `470`
+  citations, and no modified writer headings, bullet lists, bad `cite:` targets, range-like cite
+  targets, or lingering flagged internal/review terms.
+- Batch gates passed: `bun run typecheck`; `bun run test` (`961 pass`, `1 skip`, `0 fail`);
+  `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts` with combined
+  hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ## 2026-07-03
 
 ### Remaining Plan Approval

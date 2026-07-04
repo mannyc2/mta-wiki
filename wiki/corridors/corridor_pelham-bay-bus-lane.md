@@ -32,5 +32,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_pelham-bay-bus-lane|Pelham Bay bus contra-flow lane]] was announced at the November 2022 meeting of the New York City Transit & Bus Committee, where NYCT President Richard Davey stated that NYC DOT partners were "painting the street red" to create a new bus contra-flow lane on Pelham Bay [[cite:meeting_doc_100341#p005_c0003|meeting_doc_100341#p005_c0003]]. Once the lane is finished, the MTA plans to reroute the Bx12 SBS on a more direct route path to Co-op City [[cite:meeting_doc_100341#p005_c0003|meeting_doc_100341#p005_c0003]]. The announcement was presented in the context of broader bus network redesign efforts and the agency's "Faster, Cleaner, Safer" operational action plan [[cite:meeting_doc_100341#p004_c0006|meeting_doc_100341#p004_c0006]].
 
+The contra-flow lane is being implemented by NYC DOT, consistent with the joint MTA-NYC DOT partnership that delivers bus priority projects across the city [[cite:meeting_doc_100341#p005_c0003|meeting_doc_100341#p005_c0003]]. No further details about the lane's length, exact boundaries, completion timeline, or post-implementation performance metrics were available in the source document. The project's current status and whether the Bx12 SBS rerouting was ultimately carried out remain open questions.
 <!-- mta-wiki:writer:end -->

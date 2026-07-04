@@ -166,5 +166,13 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The Q43 is an NYCT-operated local bus route in Queens serving Sutphin Boulevard and Hillside Avenue, identified as "Q43" in the ACE Routes Dataset [[cite:ace_routes_dataset_dictionary#p001_b0069|ACE Routes Dataset: Q43 item]] and operated by MTA New York City Transit [[cite:meeting_doc_160441#p004_c0004|meeting_doc_160441: Q43 (NYCT)]].
 
+The route carried Automated Bus Lane Enforcement (ABLE) cameras through at least 2023 [[cite:bus_lane_camera_report_2024#p008_c0004|2024 bus lane camera report: Q43 listed among ABLE routes]] and is listed under the MTA's Automated Camera Enforcement (ACE) program serving Sutphin Blvd and Hillside Ave [[cite:mta_automated_camera_enforcement#p001_b0001|MTA ACE page: Q43, Sutphin Blvd / Hillside Av]].
+
+As of a 2017 NYC DOT status report, the Q43 had Transit Signal Priority (TSP) technology operating along Hillside Avenue as part of the city's TSP program [[cite:tsp_status_2017#p001_b0001|2017 TSP status report: Q43 on Hillside Avenue]].
+
+In the Queens Bus Network Redesign, the proposed plan includes a Q43 Extension to Long Island Jewish Hospital [[cite:queens_addendum_equity_evaluation_appendix_d#p016_c0007|Queens addendum equity evaluation: Q43 Extension to Long Island Jewish Hospital]]. A Spring/Summer 2025 service enhancement package recommended frequency increases and running time adjustments for the Q43 on its Jamaica-Floral Park routing [[cite:meeting_doc_160441#p004_c0004|meeting_doc_160441: Q43 frequency increases and running time adjustments]].
+
+Earlier, the 2011 Jamaica Bus Improvement Study included the Q43 in proposed bus stop reconfigurations at the intersection of Hillside Avenue and Sutphin Boulevard, alongside the Q20A/Q20B and Q44 [[cite:201104_jamaica_cac2_slides#p028_c0006|2011 Jamaica CAC2 slides: Q43 bus stop at Hillside/Sutphin]], and the Q43 stop appeared on diagrams presented to Queens Community Board 12 [[cite:201106_jamaica_cb12_slides#p026_c0006|2011 Jamaica CB12 slides: Q43 bus stop diagram]].
 <!-- mta-wiki:writer:end -->
