@@ -77,5 +77,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+NYC DOT completed bus lanes on [[corridor:corridor_hillside-ave-queens|Hillside Avenue]] in eastern Queens as part of its 2025 street redesign program, a set of projects that improved service for more than 215,000 daily riders on the corridor [[cite:streets_plan_update_2026#p002_c0006|bus lanes on Hillside Avenue serving more than 215,000 daily riders]].
 
+The corridor was previously identified as a Select Bus Service (SBS) candidate corridor — listed as "O Hillside Avenue" under Queens — in the Bus Forward citywide transit plan, which named 21 candidate corridors across the city for the next phase of SBS [[cite:bus_forward_2#p005_c0001|Hillside Avenue as SBS candidate corridor]].
+
+Earlier planning work through the Jamaica Bus Improvement Study examined the intersection of Hillside Avenue with Home Lawn Street and 169th Street, proposing design changes including a pedestrian plaza, bollards, realigned traffic flow, and making Home Lawn Street the primary north/south roadway to provide more pedestrian space and improve bus movement [[cite:201104_jamaica_cac2_slides#p031_c0002|Hillside Ave & Home Lawn St/169th St intersection]] [[cite:201104_jamaica_cac2_slides#p032_c0004|intersection redesign with red plaza and roadway realignment]].
+
+The corridor runs through eastern Queens and is part of a broader bus priority effort in the Jamaica area, which serves as a hub for 47 NYCT, MTA Bus, and LI Bus routes [[cite:201104_jamaica_cac2_slides#p004_c0004|47 bus routes at Jamaica hub]].
 <!-- mta-wiki:writer:end -->

@@ -245,5 +245,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[route:route_q20-2014-10-07-flushing-jamaica|Q20A/B]] is a local bus route in Queens running from Jamaica to College Point via Main Street [[cite:2014_10_07_brt_flushingjamaica_pw1_presentation#p014_c0003|Route description]]. The Q20A/B operated on Main Street together with the Q44 limited-stop service, and both were characterized by "long and slow bus trips" in the Flushing-to-Jamaica corridor identified in early BRT studies [[cite:2014_06_11_brt_flushingjamaica_cac1_presentation#p016_c0004|Corridor context]]. Combined weekday ridership for the Q20 was 13,609 with a peak frequency of 12 minutes [[cite:2014_10_07_brt_flushingjamaica_pw1_presentation#p016_c0003|Ridership data]].
 
+When the Q44 limited was upgraded to Q44 Select Bus Service, the Q20A/B local service continued in its existing pattern to maintain local stop coverage [[cite:2015_05_brt_flushing_jamaica_presentation_openhouse#p007_c0003|Service plan]]. All bus stops removed from the Q44 SBS route within Community Board 7 would still be served by the Q20 [[cite:2015_07_07_brt_flushing_jamaica_cb7_presentation#p010_c0003|Stop coverage]]. The route was also part of earlier Jamaica Bus Improvement Study proposals, with a shared bus stop for Q20A/Q20B/Q44 and Q43 at Hillside Avenue and Sutphin Boulevard identified for potential reconfiguration [[cite:201104_jamaica_cac2_slides#p028_c0006|Bus stop location]].
 <!-- mta-wiki:writer:end -->

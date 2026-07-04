@@ -271,5 +271,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The M23 Select Bus Service operates along 23rd Street as a Manhattan crosstown route [[cite:brt_route_index#p001_b0001|23rd Street SBS description]]. Service began on November 6, 2016, benefitting approximately 15,000 daily riders and connecting to multiple subway and bus routes [[cite:brt_route_index#p001_b0001|23rd Street service start and ridership]]. Pre-pandemic the route carried almost 14,500 weekday riders, ranking as the eighth busiest bus route in Manhattan [[cite:meeting_doc_79331#p021_c0001|M23 SBS ridership and ranking]].
 
+The project launched at a public kickoff on October 13, 2015, co-hosted by the MTA and NYC DOT [[cite:2015_10_14_brt_23rdst_kickoff#p001_c0001|M23 SBS kickoff heading]] [[cite:2015_10_14_brt_23rdst_kickoff#p001_c0006|NYC DOT logo on kickoff slide]]. At that time, 23rd Street was identified as a Manhattan crosstown corridor carrying 15,000 daily M23 passengers with connections to PATH, multiple subway lines, and 14 other local and SBS bus routes [[cite:2015_10_14_brt_23rdst_kickoff#p005_c0001|23rd Street Manhattan Crosstown]] [[cite:2015_10_14_brt_23rdst_kickoff#p005_c0002|M23 daily passengers and connections]].
+
+The proposed bus lane design placed westbound bus lanes from 1st Avenue to 8th Avenue and eastbound bus lanes from 10th Avenue to 2nd Avenue, in effect 24/7 except westbound between 7th and 8th Avenue [[cite:brt_m23_cb5_jun2016#p005_c0001|Bus Lane Design heading]] [[cite:brt_m23_cb5_jun2016#p005_c0002|Westbound bus lanes]] [[cite:brt_m23_cb5_jun2016#p005_c0003|Eastbound bus lanes]]. The M23-SBS is an active Automated Camera Enforcement (ACE) route, with bus-mounted cameras issuing violations to vehicles obstructing bus lanes and stops along 23rd Street [[cite:mta_automated_camera_enforcement#p001_b0001|ACE route list includes M23-SBS]] [[cite:bus_lane_camera_report_2024#p008_c0004|M23-SBS listed in camera report route list]].
+
+The NaviLens wayfinding app for blind and low-vision customers was tested on the M23 SBS line [[cite:meeting_doc_76796#p027_c0005|NaviLens pilot on M23 SBS]]. The route record notes that ABLE automated enforcement cameras operated on this route through 2023.
 <!-- mta-wiki:writer:end -->

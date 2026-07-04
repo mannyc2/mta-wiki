@@ -64,5 +64,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+Fulton St is one of 49 Brooklyn corridors studied for potential bus priority street improvements, included among 17 top-ranked corridors in the Brooklyn Bus Network Redesign process [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p020_c0004|Fulton St listed among 17 top-ranked Brooklyn corridors]]. The corridor intersects with the Malcolm X Blvd / Utica Ave transit improvement corridor near Atlantic Ave, where the Fulton St stop is the second busiest B46 stop with about 3,800 daily boardings and the area north of Fulton St experiences a bottleneck as southbound traffic backs up approaching Atlantic Ave [[cite:malcolm_x_blvd_utica_ave_may2019#p012_c0002|Fulton St is 2nd busiest B46 stop with 3,800 daily boardings]].
 
+Between Fulton St and Atlantic Ave, the curb is designated as Department of Education Authorized Parking Only from 7am to 4pm on weekdays, but the curb remains largely empty throughout the day, with average parking occupancy measured at just 7% between 7am and 7pm [[cite:malcolm_x_blvd_utica_ave_may2019#p013_c0002|DOE authorized parking with 7% occupancy]]. As part of the Malcolm X Blvd / Utica Ave transit improvements, a southbound-only curbside bus lane was implemented from Fulton St to Atlantic Ave, which allows buses to bypass the traffic congestion approaching Atlantic Ave while retaining overnight parking [[cite:malcolm_x_blvd_utica_ave_may2019#p017_c0002|Curbside Bus Lane Fulton St to Atlantic Ave southbound only]].
 <!-- mta-wiki:writer:end -->

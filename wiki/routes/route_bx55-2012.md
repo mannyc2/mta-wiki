@@ -261,5 +261,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_bx55-2012|Bx55 Limited]] was a limited-stop bus route in the Bronx, serving as the limited-stop replacement for the 3rd Avenue elevated subway service that was discontinued in 1973 [[cite:2014_08_25_brt_websteravenue_progressreport#p011_c0004|Bx55 described as limited-stop replacement for discontinued 3rd Avenue elevated]]. It operated partly on Webster Avenue and partly on 3rd Avenue [[cite:2014_08_25_brt_websteravenue_progressreport#p011_c0004|Bx55 route description]].
 
+During the planning phase for the Webster Avenue Select Bus Service project in 2012-2013, the Bx55 Limited was listed as an existing service running north of Fordham Plaza, alongside the Bx41 Local and Bx41 Limited [[cite:2012_11_sbs_webster_cac4#p029_c0003|existing service listing Bx55 Limited north of Fordham Plaza]][[cite:2013_02_sbs_webster_bx_cb4#p034_c0003|Bx55 Limited north of Fordham Plaza]]. Community members raised questions about where Bx55 stops would be located relative to the proposed SBS stations [[cite:2012_10_brt_webster_cac3_meeting_summary#p002_c0012|community question about Bx55 stop location]].
+
+At the fourth Community Advisory Committee meeting on November 29, 2012, NYCT presented a plan under which the Bx55 Limited would be renamed the Bx15 Limited and provide limited-stop service between The Hub and Fordham Plaza along Third Avenue, plus local service between West Harlem and The Hub [[cite:2012_11_sbs_webster_cac4_summary#p001_c0008|Bx55 to be renamed Bx15 Limited]]. After the Bx41 SBS launched on June 30, 2013, the duplicative portion of the Bx55 on northern Webster Avenue was eliminated [[cite:2014_08_25_brt_websteravenue_progressreport#p011_c0005|duplicative portion eliminated]][[cite:2014_08_25_brt_websteravenue_progressreport#p005_c0005|Bx41 SBS launched June 30, 2013]].
+
+The route record carries a split-candidate scope because the merged source observations describe the Bx55 as both "Limited" and "local" service at different points in its history [[cite:2013_02_sbs_webster_bx_cb4#p034_c0005|Bx55 (Limited) listed]][[cite:2012_11_sbs_webster_cac4#p030_c0005|Bx55 (Limited) along with Bx15 (Local)]].
 <!-- mta-wiki:writer:end -->

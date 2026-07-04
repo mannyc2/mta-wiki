@@ -62,5 +62,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_east-149-st|East 149 Street Corridor]] runs 1.5 miles along East 149 Street from River Avenue to Southern Boulevard in the Bronx [[cite:bronx_bus_network_final_plan_2019#p029_c0004|2019 Bronx Bus Network Redesign, p. 29]]. It serves four bus routes: Bx19, Bx2, Bx4A, and Bx17, with a combined daily route ridership of approximately 46,000 (excluding Bx2 ridership, which is reported together with the Bx1) [[cite:bronx_bus_network_final_plan_2019#p029_c0004|2019 Bronx Bus Network Redesign, p. 29]].
 
+The corridor was identified through the MTA and NYC DOT joint analysis of 46 Bronx corridors scored for bus priority improvements, with outreach and implementation on the first set of corridors starting in 2020 [[cite:bronx_bus_network_final_plan_2019#p013_c0002|2019 Bronx Bus Network Redesign, p. 13]]. By the time of the 2021 Bronx Bus Network Redesign Addendum, the East 149 Street Corridor was absent from the active "Future Plan" and "Present Implementation" corridor status table, which listed corridors such as Tremont Avenue, Washington Bridge, University Avenue, and Story Avenue instead [[cite:bronx_bus_network_final_plan_addendum_2021#p005_c0003|2021 Addendum, p. 5]]. This is consistent with the corridor's documented status as completed in 2020.
+
+The corridor's existing average stop spacing of 882 feet in the Bronx was targeted for improvement through bus stop balancing, part of a system-wide effort to bring stop spacing closer to international standards of 1,000 to 1,680 feet [[cite:bronx_bus_network_final_plan_2019#p011_c0002|2019 Bronx Bus Network Redesign, p. 11]]. The corridor also connects to the broader [[metric:metric_avg-stop-spacing-existing-bronx|existing Bronx average bus stop spacing]] profile documented in the redesign plan.
 <!-- mta-wiki:writer:end -->

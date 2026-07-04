@@ -246,5 +246,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The Proposed B103 LTD is a limited-stop route proposed as part of the Brooklyn Bus Network Redesign Draft Plan [[route:route_b103-ltd-proposed-draft|Proposed B103 LTD]] [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p041_c0003|Route Improvement Summary Table]]. The route would serve Downtown Brooklyn, Park Slope, Kensington, Flatbush, and Canarsie, carrying approximately 13,000 daily riders [[cite:church_ave_project_update_oct2019#p007_c0002|Church Ave project update]]. It is described as a secondary route on Flatbush Avenue, operating along that corridor for parts of its alignment [[cite:flatbush_ave_brooklyn_bus_priority_kick_off_june2022#p011_c0002|Flatbush Ave kickoff meeting]].
 
+The Draft Plan proposes weekday service hours from 5:00 AM to 1:30 AM with a frequency of 3 minutes in the AM Peak (6:00-8:59 AM), 7 minutes Midday, 4 minutes in the PM Peak, 5 minutes in Early Evening, and 12 minutes in Late Evening [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p044_c0003|Frequency table]]. The route improvement summary shows that the B103 LTD would benefit from more direct routing, new connections, improved stop spacing, improved frequency, and designation as a priority corridor [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p041_c0003|Route Improvement Summary Table]].
+
+In the MTA Transit All-Stars program, dispatcher Peter Watts of Queens South Road Operations was recognized for helping improve service along the B103 route [[cite:meeting_doc_160391#p002_c0006|Transit All-Stars recognition]]. Superintendent Kelly Geoghegan was also noted for her role in Queens South Road Operations that contributed to improvements on routes including the B103 [[cite:meeting_doc_160391#p001_c0014|Transit All-Stars]].
+
+The route record carries a "split_candidate" scope with a "merged_service_variant_conflict" reason, reflecting that different source observations classify its service type as both "limited" and "local" rather than reaching a single normalized value [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p041_c0003|Route Improvement Summary Table]].
 <!-- mta-wiki:writer:end -->

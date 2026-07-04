@@ -181,5 +181,13 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_bx22|Bx22]] is a Bronx local bus route that travels on Fordham Road, White Plains Road, and Castle Hill Avenue, as listed in the MTA's automated camera enforcement program [[cite:mta_automated_camera_enforcement#p001_b0001|ACE route list]]. The route carries approximately 12,300 daily riders, serving the Fordham Road corridor alongside the Bx9, Bx12 (SBS and local), and Bx17 [[cite:fordham_rd_inwood_cb6_jun2023#p007_c0002|ridership data]].
 
+The Bx22 is one of five routes that together carry 85,000 average daily bus riders on Fordham Road, a critical crosstown corridor and major Bronx-Manhattan connection [[cite:fordham_rd_inwood_cb11_jun2023#p004_c0002|corridor context]]. On the Fordham Road corridor, average bus speeds were 6.8 mph during the AM peak and 5.9 mph during the PM peak [[cite:bx_cb5_projects_dec032019#p025_c0003|speed data]].
+
+The Fordham Road corridor--which the Bx22 serves together with the Bx9, Bx12 SBS/Local, Bx17, Bx34, and Bee-Line 60-62 buses--has been the focus of bus priority planning by NYC DOT and the MTA under the Better Buses program [[cite:fordham_rd_major_deegan_expwy_boston_rd_jun2021#p028_c0002|route list]] [[cite:better_buses#p001_b0001|Better Buses program]]. Proposed treatments presented to community boards in 2023 included Alternative A (24/7 offset bus lanes in both directions), Alternative B (eastbound busway from Morris Avenue to Webster Avenue), and Alternative C (two-way busway between Jerome and Webster Avenues) [[cite:fordham_rd_inwood_cb6_jun2023#p011_c0004|Alternative A]] [[cite:fordham_rd_inwood_cb6_jun2023#p011_c0006|Alternative B]] [[cite:fordham_rd_inwood_cb6_jun2023#p011_c0008|Alternative C]].
+
+Automated bus lane camera enforcement (ABLE) was implemented on the corridor starting November 2022. While the Bx12 SBS saw a 4.7% speed increase by April 2023 after ABLE deployment [[metric:metric_able-speed-change-april2023|Bx12 SBS Speed Change +4.7% in April 2023 after ABLE]] [[cite:fordham_rd_inwood_cb11_jun2023#p016_c0002|ABLE evaluation]], speeds remained below the 6.7 mph recorded after the original Bx12 SBS launch in 2008 [[cite:fordham_rd_inwood_cb11_jun2023#p016_c0002|ABLE context]].
+
+The Bx22 is part of a future-plan corridor identified in the Bronx Bus Network Redesign, covering Pelham Parkway, Fordham Road, and West 207th Street together with the Bx9, Bx12, Bx12 SBS, and Bx17 [[cite:fordham_rd_inwood_cb5_jun2023#p004_c0002|Fordham corridor routes]].
 <!-- mta-wiki:writer:end -->

@@ -82,5 +82,13 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_east-167-168-st|East 167 Street and East 168 Street Corridor]] is a 1.2-mile bus priority corridor in the Bronx, running from Jerome Avenue to Franklin Avenue, served by the Bx35 route with a daily ridership of approximately 27,000 [[cite:bronx_bus_network_final_plan_2019#p033_c0004|Bronx Bus Network Final Plan 2019 corridor metrics]].
 
+NYCDOT, as part of a Bronx-wide corridor analysis supporting the Bronx Bus Network Redesign, identified both E 167th/E 168th Street and E.L. Grant Highway as top Bronx corridors for bus priority treatments, citing high ridership and bus volumes, slow and unreliable bus service, and important cross-borough connections as key factors [[cite:bx_cb4_projects_feb052020#p005_c0003|CB4 presentation corridor identification]] [[cite:bx_cb3_projects_feb112020#p005_c0003|CB3 presentation corridor identification]].
+
+The Bx35 carries approximately 22,000 weekday riders along this corridor and provides important crosstown connections to eight bus routes and the 4, B/D subway lines [[cite:bx_cb4_projects_feb052020#p028_c0003|CB4 Bx35 background]]. Average bus speeds are 4.7 mph during the AM peak and 4.3 mph during the PM peak [[cite:bx_cb4_projects_feb052020#p028_c0003|CB4 Bx35 background]]. Key operational issues include a congested corridor with slow bus speeds, double parking and loading activities, and vehicles blocking bus stops [[cite:bx_cb4_projects_feb052020#p028_c0003|CB4 Bx35 background]].
+
+The existing average bus stop spacing across the Bronx is 882 feet, shorter than international peer systems, and the Bronx Bus Network Redesign Final Plan targeted an increased average of 1,092 feet through stop balancing [[cite:bronx_bus_network_final_plan_2019#p011_c0002|Bronx Final Plan stop spacing existing]] [[cite:bronx_bus_network_final_plan_2019#p011_c0003|Bronx Final Plan stop spacing proposed]] ([[metric:metric_avg-stop-spacing-existing-bronx|Average Bus Stop Spacing - Existing Bronx]]).
+
+Proposed improvements studied for the corridor include queue jump signals to allow buses to bypass traffic, new metered parking or truck loading zones to reduce double parking and lane blocking, and curbside bus lane configurations [[cite:bx_cb3_projects_feb112020#p015_c0003|CB3 proposed changes]] [[cite:bx_cb3_projects_feb112020#p012_c0001|CB3 proposed locations]] [[cite:bx_cb3_projects_feb112020#p014_c0004|CB3 proposed bus lane cross-section]].
 <!-- mta-wiki:writer:end -->

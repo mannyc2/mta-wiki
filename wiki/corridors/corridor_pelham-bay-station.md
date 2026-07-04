@@ -66,5 +66,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_pelham-bay-station|Pelham Bay Park 6 Station Area Corridor]] is a bus priority corridor at the Pelham Bay Park 6 subway station in the eastern Bronx, serving as a major transit hub where seven bus routes converge. The corridor is very short at 0.1 miles and carried a combined daily route ridership of 63,000 [[cite:bronx_bus_network_final_plan_2019#p027_c0004|Final Plan corridor profile]]. It runs along Westchester Avenue and Wilkinson Avenue between those two streets [[cite:bronx_bus_network_final_plan_addendum_2021#p005_c0003|Addendum bus priority corridor table]]. Routes serving the corridor include the Bx5, Bx12, Bx12 SBS, Bx23, Bx24, Bx29, and Q50 LTD [[cite:bronx_bus_network_final_plan_2019#p027_c0004|Final Plan corridor profile]].
 
+NYC DOT classified this project as completed in 2020, according to the bus priority corridor status table in the 2021 Addendum [[cite:bronx_bus_network_final_plan_addendum_2021#p005_c0003|Addendum bus priority corridor table]]. Its short length reflects the station-area focus: the corridor provides bus priority treatments immediately around the subway station entrance rather than along a continuous linear street segment. The Q50 LTD route, which provides limited-stop service, is the only route on this corridor not operated by MTA NYCT (it is operated by MTA Bus) [[cite:bronx_bus_network_final_plan_2019#p027_c0004|Final Plan corridor profile]].
+
+For context on stop spacing in the Bronx network redesign, the [[metric:metric_avg-stop-spacing-existing-bronx|Average Bus Stop Spacing - Existing Bronx]] was 882 feet across the borough [[cite:bronx_bus_network_final_plan_2019#p011_c0002|Final Plan stop balancing section]]; the Final Plan proposed increasing the average to 1,092 feet [[cite:bronx_bus_network_final_plan_2019#p011_c0003|Final Plan stop balancing section]].
 <!-- mta-wiki:writer:end -->

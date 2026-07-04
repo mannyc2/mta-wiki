@@ -4,6 +4,23 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-04
+
+### Bounded Writer Full-Slice Batch 02
+
+- Plan 012 full-slice batch 02 filled another `50` route/corridor writer regions, bringing the
+  post-sample full-slice total to `100` pages. Actual usage including verifier-failed attempts:
+  `50` writer runs, `357` provider requests, `14206261` input tokens, `258561` output tokens,
+  `38142773` cache-read tokens, `52607595` total tokens, estimated cost `$1.472338`.
+- STOPs handled before commit: value-as-label metric primitives on the Broadway Queens, Harlem
+  Line, and DeKalb Avenue pages; one malformed DeKalb metric primitive with an extra label pipe;
+  and review cleanup for source-specific political wording plus dataset/cardinality language.
+- Batch review found `50` modified wiki pages, `0` validation issues, and no modified writer
+  headings, bullet lists, bad `cite:` targets, or lingering flagged review terms.
+- Batch gates passed: `bun run typecheck`; `bun run test` (`961 pass`, `1 skip`, `0 fail`);
+  `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts` with combined
+  hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ## 2026-07-03
 
 ### Remaining Plan Approval

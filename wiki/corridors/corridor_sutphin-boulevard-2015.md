@@ -51,5 +51,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_sutphin-boulevard-2015|Sutphin Blvd corridor]] in Jamaica, Queens, was evaluated as part of the Q44 Select Bus Service planning effort in 2015. During both morning and evening commute times, Q44 bus speeds were noted to be slow on Sutphin Boulevard [[cite:2015_05_brt_flushing_jamaica_presentation_openhouse#p008_c0006|Jamaica Bus Speeds]]. An on-street survey of the corridor found that 58% of respondents reached Sutphin Boulevard by transit (bus or subway), while 20% drove and 18% walked from home [[cite:2015_06_09_brt_flushing_jamaica_cb12#p012_c0003|Sutphin Blvd Survey: Transportation Methods]]. Among drivers, only 24% parked on Sutphin Boulevard itself [[cite:2015_06_09_brt_flushing_jamaica_cb12#p013_c0003|Sutphin Blvd Survey: Parking Location]].
 
+An existing curb regulations survey found that bus stops occupy nearly half (45%) of the curb space on Sutphin Boulevard, while metered parking accounts for 43% and no-parking/standing zones 12% [[cite:2015_06_09_brt_flushing_jamaica_cb12#p015_c0003|Sutphin Blvd Existing Regulations Map]] [[cite:2015_06_09_brt_flushing_jamaica_cb12#p015_c0004|Bus stops occupy nearly half of curb space]]. Parking occupancy on metered blocks was under 80% [[cite:2015_06_09_brt_flushing_jamaica_cb12#p015_c0005|Parking occupancy rates]].
+
+As part of the Q44 SBS proposals, stop removals were identified at Sutphin Boulevard and Jamaica Avenue [[cite:2015_06_09_brt_flushing_jamaica_cb12#p011_c0002|Stop removals proposed in Jamaica]]. The corridor also intersected with Vision Zero safety improvements planned at the Sutphin Boulevard and Archer Avenue priority intersection, including left turn restrictions, pedestrian safety islands, and bus bulbs [[cite:2015_05_brt_flushing_jamaica_presentation_openhouse#p011_c0005|Priority Intersections on Q44 SBS Route]] [[cite:2015_05_brt_flushing_jamaica_presentation_openhouse#p011_c0007|VISION ZERO Safety Improvements]].
+
+The existing conditions photo showed a bus at Sutphin Boulevard and Hillside Avenue, illustrating the congested street environment that the SBS improvements aimed to address [[cite:2015_05_brt_flushing_jamaica_presentation_openhouse#p003_c0009|Existing Conditions: Sutphin Boulevard at Hillside Avenue]].
 <!-- mta-wiki:writer:end -->

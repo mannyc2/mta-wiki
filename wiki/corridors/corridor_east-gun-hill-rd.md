@@ -59,5 +59,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_east-gun-hill-rd|East Gun Hill Road Corridor]] runs on East Gun Hill Road from Bainbridge Avenue to Bartow Avenue in the Bronx, covering 2.3 miles. [[cite:bronx_bus_network_final_plan_2019#p035_c0004|Corridor metrics]] The corridor serves routes Bx28, Bx30, and Bx38, with a combined daily route ridership of 23,000. [[cite:bronx_bus_network_final_plan_2019#p035_c0004|Corridor metrics]] The 2021 Bronx Bus Network Redesign Addendum lists this corridor as a "Future Plan" corridor, with Bx30 noted as a current route on the alignment. [[cite:bronx_bus_network_final_plan_addendum_2021#p005_c0003|Corridor status table]]
 
+For context on the broader network, the [[metric:metric_avg-stop-spacing-existing-bronx|existing average bus stop spacing across the Bronx]] was 882 feet. [[cite:bronx_bus_network_final_plan_2019#p011_c0002|Average stop spacing metric]]
 <!-- mta-wiki:writer:end -->

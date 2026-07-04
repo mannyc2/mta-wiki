@@ -56,5 +56,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+Broadway from 157th Street to 220th Street in Upper Manhattan is a bus priority corridor where NYC DOT is evaluating bus and safety improvements [[cite:broadway_157_st_220_st_cb12_mar2025#p005_c0002|Broadway corridor overview]]. The corridor carries [[metric:metric_30k-daily-riders-5-routes-may2024|30,000 daily riders on 5 bus routes]] on the Bx7, Bx20, M4, M5, and M100 lines, connecting to the 1, A, and C subway lines and Metro North [[cite:broadway_157_st_220_st_cb12_mar2025#p005_c0002|Bus routes and connections]].
 
+The corridor serves a transit-dependent population: [[metric:metric_180k-residents-pia|180,000 residents]] live within a quarter-mile, 76% of households lack a vehicle, and 71% commute by public transit [[cite:broadway_157_st_220_st_cb12_mar2025#p004_c0002|Transit dependency data]]. About [[metric:metric_15pct-disability|15% of residents have a disability]] [[cite:broadway_157_st_220_st_cb12_mar2025#p008_c0002|Population demographics]]. The corridor is a Tier 1 Priority Investment Area under the NYC Streets Plan, reflecting its density, socioeconomic makeup, and limited prior investment [[cite:broadway_157_st_220_st_cb12_mar2025#p004_c0002|Priority Investment Area designation]].
+
+Bus speeds are slow across the corridor, typically between 4 and 7 mph, with the slowest segment between 171st and 186th Streets. This segment also carries the highest ridership, with [[metric:metric_15000-daily-riders-171-186|over 15,000 daily riders]] [[cite:broadway_157_st_220_st_cb12_mar2025#p006_c0002|Speed and ridership data]].
+
+NYC DOT aims to improve the corridor by adding bus lanes, upgrading stops, improving pedestrian connections, and updating curb regulations and signal timing [[cite:broadway_157_st_220_st_cb12_mar2025#p011_c0002|Project goals]]. In winter 2025, DOT presented existing conditions to Community Board 12, and will continue developing a design proposal with community feedback [[cite:broadway_157_st_220_st_cb12_mar2025#p017_c0002|Community engagement timeline]].
 <!-- mta-wiki:writer:end -->
