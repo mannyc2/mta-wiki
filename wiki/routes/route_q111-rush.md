@@ -63,5 +63,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_q111-rush|Q111 Rush Route]] is a proposed rush variant under the Queens Bus Network Redesign, introduced in the 2024 Queens Proposed Final Plan Addendum [[cite:queens_proposed_final_plan_addendum_2024#p007_c0001|Q111 Rush Route heading]]. The route operates between Rosedale and Jamaica, traveling north on Guy R Brewer Blvd from Jamaica Center, then east on 147th Avenue, south on Rosedale Road, and east on Peninsula Boulevard; Guy R Brewer Blvd and 147th Avenue segments are marked as existing service, while Rosedale Road and Peninsula Boulevard are part-time service [[cite:queens_proposed_final_plan_addendum_2024#p007_c0002|map description]].
 
+The Q111 Rush Route serves the Guy R Brewer Blvd corridor with a rush-period segment on that boulevard, using local stop spacing on 147th Avenue [[cite:queens_proposed_final_plan_addendum_2024#p007_c0004|service description]]. It is designed to provide faster service to key transfer points in Jamaica [[cite:queens_proposed_final_plan_addendum_2024#p007_c0004|service description]]. Underlying local service along this corridor is provided by the Q115 [[cite:queens_proposed_final_plan_addendum_2024#p007_c0004|service description]].
+
+The Q111 Rush Route is counted among the [[metric:metric_94-local-routes-proposed|94 Local routes proposed]] in the addendum, which includes 25 Rush Routes [[cite:queens_proposed_final_plan_addendum_2024#p008_c0003|94 Local routes including 25 Rush Routes]].
 <!-- mta-wiki:writer:end -->

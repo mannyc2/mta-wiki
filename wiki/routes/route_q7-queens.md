@@ -56,5 +56,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The [[route:route_q7-queens|Q7 bus route]] appears in the Queens Bus Network Redesign as one of 16 routes receiving a frequency increase and one of 8 routes receiving a span increase as part of the Proposed Final Plan Addendum [[cite:queens_addendum_equity_evaluation_appendix_d#p006_c0008|Frequency Increases list]] [[cite:queens_addendum_equity_evaluation_appendix_d#p006_c0010|Span Increases list]]. The span increase is specifically intended to address the lack of east-west overnight service along the Rockaway Boulevard corridor [[cite:queens_addendum_equity_evaluation_appendix_d#p006_c0012|Q7 span increase rationale]]. In the areas served by the Q7, nearly 30% of residents do not own a vehicle, making reliable overnight service critical for equitable access to jobs, healthcare, and other essential services [[cite:queens_addendum_equity_evaluation_appendix_d#p006_c0012|Q7 vehicle access statistic]]. The frequency and span improvements are prioritized in routes serving Tier 1 and Tier 2 equity areas, where transit-dependent and historically underserved populations are most concentrated [[cite:queens_addendum_equity_evaluation_appendix_d#p006_c0006|Frequency/span prioritization]] [[cite:queens_addendum_equity_evaluation_appendix_d#p003_c0006|Tier 1 definition]].
 <!-- mta-wiki:writer:end -->

@@ -43,5 +43,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The J Subway Line serves Brooklyn, Queens, and Manhattan as a true subway route [[cite:meeting_doc_115256#p002_c0004|J line route scope from July 2023 metrics]]. On June 29, 2023, President Richard Davey, Senior Vice President of Subways Demetrius Crichlow, and local officials announced at Hoyt-Schermerhorn Sts Station that weekend service would be increased on the J line along with the G and M lines; a second batch of R211 subway cars also entered service that day [[cite:meeting_doc_115256#p002_c0004|increased weekend service announcement]]. As of June 2023, the J line's Customer Journey Time Performance (CJTP) was 81%, as reported in the July 2023 NYCT Key Performance Metrics document [[cite:meeting_doc_115256#p013_c0008|J line CJTP 81%]]. The July 2023 metrics document was prepared for the New York City Transit & Bus Committee meeting on July 17, 2023 [[cite:meeting_doc_115256#p003_c0001|document for July 2023 committee meeting]].
 
+No individual J-line satisfaction score or ridership figure was reported in this source; the G line (75%) and B line (65%) satisfaction scores were highlighted instead [[cite:meeting_doc_115256#p005_c0004|line satisfaction scores June 2023]]. The J line shares its weekend service increase announcement with the G and M lines, and all three lines benefited from the off-peak frequency initiative described in the same document [[cite:meeting_doc_115256#p013_c0010|off-peak frequency increases on G, J, M lines]].
 <!-- mta-wiki:writer:end -->

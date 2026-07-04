@@ -136,6 +136,27 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `bun scripts/determinism-anchor.ts` with combined hash
   `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
+### Bounded Writer Full-Slice Batch 09
+
+- Plan 012 full-slice batch 09 filled another `50` route/corridor writer regions, bringing the
+  post-sample full-slice total to `450` pages; `36` route/corridor writer pages remain empty.
+  Actual usage including verifier-failed attempts: `50` writer runs, `337` provider requests,
+  `10563786` input tokens, `196684` output tokens, `24641132` cache-read tokens, `35401602`
+  total tokens, estimated cost `$1.095715`.
+- STOPs handled before commit: value-as-label metric primitives on the Haverstraw-Ossining
+  Ferry, X38, Hudson Rail Link, Q14, and SIM4X pages; batch-wide value-like metric label
+  normalization inside writer regions; and source-time wording cleanup on B13, B2, Bx25,
+  Madison Avenue express routes, Hudson Rail Link, Haverstraw-Ossining Ferry, and SIM4.
+- Batch review found `50` modified wiki pages, `0` writer-edit/citation issues across `440`
+  citations, and no modified writer headings, bullet lists, bad `cite:` targets, value-like
+  metric labels, temporal live-status terms, or lingering flagged internal/review terms.
+- Added a review note for corridor-level metric scope, legacy workshop/survey evidence, shared
+  contract/variant pages, and 2025-2026 source-time proposal language.
+- Batch gates passed: `bun run typecheck`; `bun run test` (`961` pass, `1` skip,
+  `0` fail); `bun run validate` with `Issues: 0`; and
+  `bun scripts/determinism-anchor.ts` with combined hash
+  `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ## 2026-07-03
 
 ### Remaining Plan Approval

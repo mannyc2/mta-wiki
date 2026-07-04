@@ -37,5 +37,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The Bx24 is a Bronx local bus route that was simplified as part of the Bronx Local Bus Network Redesign, which launched in late June 2022. [[cite:meeting_doc_98311#p005_c0008|Bronx Redesign launch]] Alongside other simplified routes (Bx11, Bx36, and Bx40/Bx42), the [[route:route_bx24-oct2022|Bx24]] saw reduced travel times during the first two weeks of the 2022 school year compared to the same period in September 2019. [[cite:meeting_doc_98311#p005_c0008|Reduced travel times for simplified routes]] Daily and weekly average speeds across the 13 modified routes in the redesign increased 4%. [[cite:meeting_doc_98311#p005_c0008|4% speed increase on 13 modified routes]] The redesign also brought improvements in reliability and travel time for Bronx local bus performance overall. [[cite:meeting_doc_98311#p005_c0008|Bronx local bus performance improvements]]
 
+The [[metric:metric_bronx-redesign-speed-increase_2|Bronx Redesign Speed Increase]] metric captures the 4% average speed increase across the 13 modified routes. [[cite:meeting_doc_98311#p005_c0008|4% speed increase]]
+
+This route record draws on the October 2022 NYC Transit & Bus Committee performance metrics document. [[cite:meeting_doc_98311#p003_c0001|October 2022 committee meeting document]]
 <!-- mta-wiki:writer:end -->

@@ -37,5 +37,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The Q105 was a participant-identified route concept submitted during the November 2, 2011 public meeting of the LaGuardia Airport Access Alternatives Analysis, described as "Q105 from Midtown to LGA via Northern Boulevard" [[cite:2012_04_20_brt_lga_workshop_summary#p003_c0006|Q105 identified as participant route]]. The second public meeting drew [[metric:metric_workshop-23-participants|23 workshop participants]] spread across four small groups, and [[metric:metric_survey-18-returned|18 surveys returned]] at the conclusion of the workshop [[cite:2012_04_20_brt_lga_workshop_summary#p001_c0005|23 participants]] [[cite:2012_04_20_brt_lga_workshop_summary#p006_c0008|18 surveys returned]].
 
+The Q105 was one of several participant-proposed routes to improve transit access to LaGuardia Airport during the LGA AA study, which had selected Bus Rapid Transit (BRT) as the locally preferred mode after examining several transportation alternatives [[cite:2012_04_20_brt_lga_workshop_summary#p001_c0013|BRT selected as locally preferred mode]]. At the time, only seven percent of passengers arrived at LaGuardia by bus, with the majority using hired cars, van services, or personal vehicles [[cite:2012_04_20_brt_lga_workshop_summary#p001_c0012|only 7% arrive by bus]].
+
+When asked which neighborhood could benefit most from a new BRT service, workshop participants showed the most interest in a route between the airport and the 74th Street/Roosevelt Avenue station through Jackson Heights [[cite:2012_04_20_brt_lga_workshop_summary#p006_c0009|most interest in 74th St/Roosevelt Ave route]]. Among BRT features, participants preferred Real Time Bus Information, Enhanced Stations, Offset Bus Lanes, and Off-Board Fare Collection; they did not prefer Curbside Bus Lanes [[cite:2012_04_20_brt_lga_workshop_summary#p006_c0009|preferred BRT features]]. A majority of participants either supported BRT or supported it with concerns [[cite:2012_04_20_brt_lga_workshop_summary#p006_c0010|majority support BRT]].
+
+This Q105 record documents a participant-suggested routing concept from a 2011&#8211;2012 public outreach process and does not represent a formal MTA route designation or service plan [[cite:2012_04_20_brt_lga_workshop_summary#p003_c0006|Q105 identified as participant route]].
 <!-- mta-wiki:writer:end -->

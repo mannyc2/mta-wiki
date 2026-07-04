@@ -38,5 +38,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The M14 is a Manhattan crosstown bus route operating along 14th Street between the Lower East Side and the Meatpacking District. In the BRT Phase II planning document, the 14th Street Crosstown Corridor was identified as a "Difficult Trip" need — a category for crosstown and circumferential trips not well served by the hub-and-spoke subway system [[cite:brt_intro_to_phase2#p024_c0005|Difficult Trips description]]. The existing M14 route carried approximately 39,000 trips per day at the time of the study, of which about 2,100 were categorized as long and slow (trips over 30 minutes at speeds under 8 mph) [[cite:brt_intro_to_phase2#p034_c0004|Existing M14 route data]]. During rush hour, average bus speed on the M14 was four to five miles per hour — barely faster than walking [[cite:brt_intro_to_phase2#p012_c0007|M14 rush hour speed]]. The [[metric:metric_m14-rush-hour-speed|M14 rush hour speed]] of 4-5 mph reflects a broader pattern of slow bus speeds across Manhattan, where average bus speed across all routes was 5.5 mph [[cite:brt_intro_to_phase2#p013_c0009|Average bus speeds by borough]]. Citywide, NYC's buses averaged 8.1 mph in 2006, down 11% from 9.1 mph in 1996 [[cite:brt_intro_to_phase2#p013_c0006|Average bus speeds 1996-2006]].
 <!-- mta-wiki:writer:end -->

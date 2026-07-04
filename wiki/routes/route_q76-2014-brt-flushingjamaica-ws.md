@@ -38,5 +38,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The [[route:route_q76-2014-brt-flushingjamaica-ws|Q76]] is a Queens bus route between Jamaica and Flushing [[cite:2014_brt_flushingjamaica_workshopsummary#p003_c0016|Q76 mentioned in workshop]]. During 2014 public workshops for the Flushing to Jamaica Select Bus Service project, community members observed that the Q76 is sometimes faster than the Q44 because it encounters less traffic [[cite:2014_brt_flushingjamaica_workshopsummary#p003_c0016|Q76 faster than Q44]]. The four bus lines on the Main Street and Kissena/Parsons Boulevards corridors carried [[metric:metric_68k-daily-riders-four-lines-2014|68,000 daily riders on four bus lines]], with [[metric:metric_bus-speed-less-than-10mph-2014|bus speeds averaging less than 10 mph]] overall [[cite:2014_brt_flushingjamaica_workshopsummary#p002_c0010|68,000 daily riders and speed data]] [[cite:2014_brt_flushingjamaica_workshopsummary#p002_c0013|bus speeds less than 10 mph]]. The limited-stop services experienced [[metric:metric_limited-delayed-50-percent-2014|delays nearly 50% of travel time]] during peak periods, of which [[metric:metric_29-percent-traffic-delays-2014|29% of delays from traffic/red lights]] [[cite:2014_brt_flushingjamaica_workshopsummary#p002_c0013|50% delay 29% traffic]].
 <!-- mta-wiki:writer:end -->

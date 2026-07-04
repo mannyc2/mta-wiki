@@ -40,5 +40,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The [[route:route_b103e-express-cb18-jun2017|B103 Express]] is an existing express bus route serving Flatlands Avenue in Brooklyn, documented at a bus stop signpost that displays a green B103E sign at Flatlands Av & E 105 St [[cite:brt_south_brooklyn_b82_cb18_jun2017#p037_c0004|B103E bus stop sign at Flatlands Av & E 105 St]]. The B103 Express operates on a wider portion of Flatlands Ave with concrete medians, where 3 city bus routes and 1 express bus route use this segment to provide a transit connection from Pennsylvania Ave/Starrett City to the Canarsie-Rockaway Pkwy L train station [[cite:brt_south_brooklyn_b82_cb18_jun2017#p037_c0002|existing Flatlands Ave route description]]. The route was documented in the context of B82 Select Bus Service planning presented to Community Board 18 on June 21, 2017 [[cite:brt_south_brooklyn_b82_cb18_jun2017#p001_c0002|presentation to Community Board 18]]. Proposed B82 SBS designs along the corridor include bus lane treatments and intersection redesigns on Flatlands Ave that would affect the street environment shared with the B103 Express [[cite:brt_south_brooklyn_b82_cb18_jun2017#p018_c0005|key design pieces on Flatlands Ave]].
 <!-- mta-wiki:writer:end -->

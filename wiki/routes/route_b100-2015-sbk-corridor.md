@@ -38,5 +38,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_b100-2015-sbk-corridor|B100]] was identified as one of 14 bus routes providing east-west service across south Brooklyn in the NYC DOT South Brooklyn Crosstown kick-off presentation boards from June 2015 [[cite:2015_06_17_brt_southbrooklyn_kickoff_boards#p002_c0004|14 bus routes provide East-West service]]. The route appeared alongside B1, B2, B3, B4, B6, B7, B8, B9, B11, B36, B64, and B82 in a bulleted list of east-west bus routes serving the corridor [[cite:2015_06_17_brt_southbrooklyn_kickoff_boards#p002_c0005|B100 listed with other east-west routes]].
 
+The kick-off boards were published as part of the South Brooklyn Crosstown study, which stemmed from the Bus Rapid Transit Phase II Study (2009) that identified the south Brooklyn east-west corridor as a priority service need [[cite:2015_06_17_brt_southbrooklyn_kickoff_boards#p002_c0009|BRT Phase II Study priority]]. At the time, the 14 east-west bus routes in the corridor carried [[metric:metric_south-brooklyn-east-west-ridership|a combined ridership of 178,000 per day]] [[cite:2015_06_17_brt_southbrooklyn_kickoff_boards#p002_c0007|178,000 per day]].
+
+The B100 is a borough-specific true bus route serving Brooklyn, classified as an east-west route within the South Brooklyn Crosstown corridor [[cite:2015_06_17_brt_southbrooklyn_kickoff_boards#p002_c0005|B100 listed as east-west route]]. No further route-specific details about the B100's alignment, terminals, or service frequency were documented in this source.
 <!-- mta-wiki:writer:end -->
