@@ -86,5 +86,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+According to the LIRR 2023 Annual Operating Report, the [[route:route_lirr-far-rockaway-branch-2023|Far Rockaway Branch]] posted an overall on-time performance of 96.6% for 2023, up from 95.3% in 2022, against an annual goal of 98.0% [[cite:meeting_doc_133321#p003_c0004|2023 OTP data for Far Rockaway Branch]]. Peak-period OTP was 94.2% (Total Peak), while weekend OTP reached 96.6% [[cite:meeting_doc_133321#p003_c0004|Performance Summary table]].
 
+The branch's elevator availability was 98.9% in 2023, down from 99.4% in 2022 [[cite:meeting_doc_133321#p007_c0004|Elevator Availability table]]. Escalator availability was 92.2% in 2023, a decline from 93.2% in 2022, and was the lowest among LIRR branches with escalators [[cite:meeting_doc_133321#p007_c0005|Escalator Availability table]].
+
+During December 2023 weekends (December 2-3, 9-10, and 16-17), Far Rockaway Branch trains were diverted from Penn Station to Grand Central due to West Side Yard switch installation work [[cite:meeting_doc_127546#p001_c0008|December 2023 service adjustment notice]]. Similar approximately 48-hour diversions to Grand Central Madison occurred on February weekends in 2024 [[cite:meeting_doc_131526#p001_c0007|February 2024 diversion notice]]. In response to the 2025 Rockaway Line 17-week outage for the Rockaway Line Rehabilitation and Resiliency Project, LIRR discounted the [[metric:metric_lirr-far-rockaway-ticket-peak|peak ticket price]] of $7.00 and the [[metric:metric_lirr-far-rockaway-ticket-offpeak|off-peak price]] of $5.00 to a single [[metric:metric_lirr-far-rockaway-ticket-discounted|discounted price]] of $2.75 for trips to and from Far Rockaway Station, intended to allow A Train customers to use LIRR service [[cite:meeting_doc_160271#p002_c0001|Fare discount proposal]].
 <!-- mta-wiki:writer:end -->

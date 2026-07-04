@@ -91,5 +91,13 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_bx13|MTA Bus Bx13]] is a Bronx bus route operated by MTA New York City Transit's Department of Buses. It serves multiple bus-priority corridors where slow speeds and congestion have been documented. After a route redesign, E.L. Grant Highway was projected to carry over 26,000 daily passengers on the Bx11, Bx13, and Bx35 combined, with average bus speeds of 6.7 mph in the AM peak and 5.7 mph in the PM peak [[cite:bx_cb4_projects_feb052020#p012_c0002|E.L. Grant Highway ridership and speed data]].
 
+The Bx13 is one of five routes on the Washington Bridge / 181st Street corridor, which carries a combined 111,400 weekday riders, with 36,800 crossing the Washington Bridge daily; average bus speeds along this corridor were 9.9 mph in the AM peak and 8.2 mph in the PM peak [[cite:bx_cb5_projects_dec032019#p020_c0003|Washington Bridge corridor data]].
+
+The 181st Street Busway, a half-mile bus-priority facility on 181st Street between Broadway and Amsterdam Avenue in Washington Heights, launched on April 26, 2021, serving the Bx3, Bx11, Bx13, Bx35, and Bx36, and was expected to benefit over 66,000 daily riders [[cite:meeting_doc_37081#p041_c0004|181st Street Busway launch]].
+
+Following the busway's implementation, a community survey noted that Bx13 bus service along the corridor remained slow and inadequate, alongside the Bx3 and Bx11 [[cite:181st_street_jun2022#p016_c0006|survey comment on slow service]].
+
+At the intersection of E 161st Street and Melrose Avenue, the Bx13 shares stops with the Bx6 and Bx6 SBS [[cite:brt_bx6_cb4_may2022#p030_c0003|bus stop diagram at Melrose Avenue]].
 <!-- mta-wiki:writer:end -->

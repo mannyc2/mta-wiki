@@ -74,6 +74,26 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `bun scripts/determinism-anchor.ts` with combined hash
   `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
+### Bounded Writer Full-Slice Batch 06
+
+- Plan 012 full-slice batch 06 filled another `50` route/corridor writer regions, bringing the
+  post-sample full-slice total to `300` pages; `186` route/corridor writer pages remain empty.
+  Actual usage: `50` writer runs, `309` provider requests, `11140758` input tokens, `204816`
+  output tokens, `29640488` cache-read tokens, `40986062` total tokens, estimated cost
+  `$1.155039`.
+- STOPs handled before commit: value-as-label metric primitives on the Q35 Flatbush, SIM24
+  Madison Avenue, B14, BM4, and M4 pages; range-like Bx3 citation handles; and internal
+  `frontmatter`/`payload`/`packet` wording on M subway and B9 pages.
+- Batch review found `50` modified wiki pages, `0` writer-edit/citation issues across `411`
+  citations, and no modified writer headings, bullet lists, bad `cite:` targets, range-like cite
+  targets, value-like metric labels, or lingering flagged internal/review terms.
+- Added a review note for S78 customer-satisfaction metric evidence precision and an S46/S96
+  fare-free-pilot map label inconsistency.
+- Batch gates passed: `bun run typecheck`; `bun run test` (`961` pass, `1` skip,
+  `0` fail); `bun run validate` with `Issues: 0`; and
+  `bun scripts/determinism-anchor.ts` with combined hash
+  `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ## 2026-07-03
 
 ### Remaining Plan Approval

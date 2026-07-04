@@ -29,5 +29,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_greenport-branch|Greenport Branch]] is a connecting LIRR branch whose service was adjusted during a December 2024 crossing renewal program on the Port Jefferson Branch [[cite:meeting_doc_157681#p002_c0001|Temporary Service Adjustments]]. With one of two main tracks out of service between Hicksville and Cold Spring Harbor on the weekends of December 7-8 and December 14-15, schedule adjustments were required on the Huntington, Port Jefferson, and Ronkonkoma Branches, and the connecting Greenport service was adjusted accordingly [[cite:meeting_doc_157681#p002_c0001|Temporary Service Adjustments]].
 
+The track outage supported rehabilitation of the Syosset-Woodbury Road railroad crossing on the Port Jefferson Branch [[cite:meeting_doc_157681#p001_c0011|Crossing Renewal]]. The crossing renewal and a separate Thanksgiving Day program were presented to the MTA Long Island Rail Road's Long Island Committee in an October 30, 2024 staff summary, with funding from the LIRR Operating and MTA Capital Program budget [[cite:meeting_doc_157681#p001_c0004|Purpose]] [[cite:meeting_doc_157681#p002_c0003|Impact on Funding]].
 <!-- mta-wiki:writer:end -->

@@ -93,5 +93,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_bx11|MTA Bus Bx11]] is a Bronx local bus route that was included in the MTA's Bronx Local Bus Network Redesign, which launched in late June 2022. After the redesign, routes including the Bx11, Bx24, Bx36, and Bx40/Bx42 — described as simplified routes — saw reduced travel times during the first two weeks of the 2022 school year compared to the same period in 2019, with daily and weekly average speeds increasing 4% on the 13 modified routes [[cite:meeting_doc_98311#p005_c0008|Bronx Local Bus Network Redesign travel time improvements]].
 
+The Bx11 operates on the E.L. Grant Highway corridor, which is 0.6 miles long and, together with routes Bx13 and Bx35, carries a combined 36,000 daily passengers [[cite:bronx_bus_network_final_plan_2019#p030_c0004|E.L. Grant Highway corridor profile]]. As part of the MTA redesign, Bx11 service was shifted to run on E.L. Grant Highway instead of Ogden Avenue, 168th Street, and Shakespeare Avenue; during peak times, up to 37 buses per hour serve the corridor [[cite:bx_cb4_projects_feb052020#p011_c0002|Bx11 route change and frequency]].
+
+The Bx11 also serves the Washington Bridge corridor (Amsterdam Avenue to University Avenue), which carries five routes — Bx3, Bx11, Bx13, Bx35, and Bx36 — with a combined 111,400 weekday riders, of whom 36,800 cross the Washington Bridge daily. Average bus speeds on that corridor were 9.9 mph during the AM peak and 8.2 mph during the PM peak, with traffic congestion at bridge-end intersections identified as a key issue [[cite:bx_cb5_projects_dec032019#p020_c0003|Washington Bridge corridor data]].
+
+The Bx11 is one of five routes served by the 181st Street Busway, a half-mile busway on 181st Street between Broadway and Amsterdam Avenue in Washington Heights that launched on April 26, 2021 and benefits over 66,000 daily riders [[cite:meeting_doc_37081#p041_c0004|181st Street Busway launch]]. Community feedback collected after the busway's implementation indicated that bus service on the Bx11, along with the Bx3 and Bx13, was still considered slow and inadequate, and that increased traffic and congestion near the Washington Bridge, where the busway ends, remained a concern [[cite:181st_street_jun2022#p016_c0006|Post-busway community survey comments]].
 <!-- mta-wiki:writer:end -->

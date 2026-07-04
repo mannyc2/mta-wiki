@@ -87,5 +87,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_bx38-ace|Bx38 bus route]] is a local bus route in the Bronx, operated by NYCT, running along E Gun Hill Rd and Co-op City Blvd [[cite:mta_automated_camera_enforcement#p001_b0001|ACE route listing]]. The route shares the Gun Hill Road corridor with the Bx28, Bx41, and Bx41-SBS, serving around 40,000 daily customers [[cite:meeting_doc_127471#p005_c0007|Gun Hill bus lanes announcement]]. The corridor connects Co-Op City to the Montefiore Hospital area and provides connections to the 2, 5, B, and D subway lines [[cite:meeting_doc_127471#p006_c0002|Gun Hill corridor connections]].
 
+In October 2023, NYC DOT completed 3.1 miles of bus lanes on Gun Hill Road, a project that was announced jointly with the MTA Department of Buses [[cite:meeting_doc_127471#p005_c0007|Gun Hill bus lanes announcement]]. A proposed service enhancement package identified the Bx28/Bx38 for running time adjustments as part of 16 local bus routes and route combinations slated for frequency increases and/or running time adjustments, with an annualized operating cost increase of approximately $8 million across the full package [[cite:meeting_doc_160441#p004_c0004|Bx28/Bx38 running time adjustments]][[cite:meeting_doc_160441#p004_c0010|total annualized cost increase]]. The Bx38 is also listed as an Automated Camera Enforcement (ACE) route, subject to camera enforcement for bus lane and bus stop violations [[cite:mta_automated_camera_enforcement#p001_b0001|ACE route listing]].
+
+The Bronx Local Bus Network Redesign, discussed at the March 2022 NYCT and Bus Committee meeting, included new route installations in Co-op City that serve the same area as the Bx38 [[cite:meeting_doc_79331#p053_c0005|Bronx redesign Co-op City panels]].
 <!-- mta-wiki:writer:end -->

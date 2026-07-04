@@ -102,5 +102,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The Q69 is an MTA Bus Company local route operating between Long Island City and Astoria, Queens, primarily along 21st Street and Ditmars Boulevard [[cite:mta_automated_camera_enforcement#p001_b0001|Q69 ACE route listing]]. New bus lanes installed along 21st Street in western Queens serve the Q69 along with the Q66 and Q100, improving service for 29,000 riders in the Long Island City-to-Astoria corridor [[cite:meeting_doc_98311#p005_c0002|21st Street bus lanes serve Q66, Q69, Q100]].
 
+The Q69 is part of the Automated Camera Enforcement (ACE) program, which uses bus-mounted cameras to ticket double parking, blocked bus stops, and bus-lane violations [[cite:mta_automated_camera_enforcement#p001_b0001|ACE route listing for Q69]]. Along Queens Plaza, the route saw a 22% speed gain under ACE, one of the largest corridor-level improvements cited in the program's first nine months [[cite:meeting_doc_167241#p028_c0009|Q69 22% gain along Queens Plaza]]. The [[metric:metric_able-cameras-300-by-end-2022|300 New ABLE Cameras by End of 2022]] metric context noted the broader bus lane enforcement expansion underway during the same period.
+
+As part of MTA service enhancements supporting Congestion Pricing, the Q69 was approved for running time adjustments as one of 16 local bus routes/route combinations identified for improvement [[cite:meeting_doc_160441#p004_c0004|Q69 listed as Long Island City-Astoria for running time adjustments]]. These adjustments were planned for implementation in the summer 2025 schedule [[cite:meeting_doc_160441#p001_c0013|Local bus routes summer 2025 implementation]].
+
+The Q69's documented speed improvements on Queens Plaza and its inclusion in both the 21st Street bus lane corridor and the ACE camera enforcement program make it a notable example of bus priority infrastructure delivering measurable gains in Queens [[cite:meeting_doc_167241#p028_c0009|Q69 22% gain along Queens Plaza]].
 <!-- mta-wiki:writer:end -->

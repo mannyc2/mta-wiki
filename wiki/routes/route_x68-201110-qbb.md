@@ -87,5 +87,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_x68-201110-qbb|X68 Express Bus Route]] is a Queens-Manhattan express bus route that crosses the Queensboro Bridge (QBB) and uses 42nd Street in Manhattan [[cite:42nd_st_cb4_jun192019#p006_c0003|X68 Queens Route on 42nd St]]. A 2010 NYC DOT Queensboro Bridge Bus Priority Study recorded approximately 330 daily riders on the X68 (listed as X68* in the study's express bus ridership table) [[cite:201110_qbb_approach_summary#p008_c0003|X68 daily ridership 330]]. The route was one of many express bus routes studied for reliability improvements on the QBB corridor [[cite:201110_qbb_approach_summary#p003_c0004|study goal to improve bus speed and reliability]].
 
+The X68 is identified as one of eight MTA bus routes operating on 42nd Street across three boroughs, alongside the M42 Manhattan Route and six Staten Island express bus routes, carrying approximately 16,000 daily MTA bus passengers and up to 210 buses per hour [[cite:42nd_st_cb6_jun032019#p007_c0003|8 routes on 42nd St]]. The 42nd Street corridor at the time averaged bus speeds of 4.0 mph, slower than both the Manhattan average of 5.6 mph and the citywide average of 7.7 mph [[cite:42nd_st_cb4_jun192019#p005_c0003|bus speed averages]]. The [[metric:metric_bus-people-79-percent|metric showing buses carry 79% of people on 42nd St using 33% of street space]] illustrates the street's efficiency imbalance [[cite:42nd_st_cb4_jun192019#p008_c0002|buses carry 79% of people]].
 <!-- mta-wiki:writer:end -->

@@ -29,5 +29,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_ronkonkoma-branch|Ronkonkoma Branch]] is an LIRR commuter rail branch documented in an October 30, 2024 staff summary to the MTA Long Island Committee covering Thanksgiving holiday service and a fall track work program. The document describes a Thanksgiving Day Program on November 28, 2024 that included two extra westbound trains originating from Ronkonkoma and four extra eastbound trains returning to Ronkonkoma [[cite:meeting_doc_157681#p001_c0008|Ronkonkoma Thanksgiving extra trains]].
 
+A December 2024 track work program required temporary service adjustments affecting the Ronkonkoma Branch. With one of two main tracks out of service on the Port Jefferson Branch between Hicksville and Cold Spring Harbor while the Syosset-Woodbury Road railroad crossing was rehabilitated on the weekends of December 7-8 and December 14-15, schedule adjustments were required on the Ronkonkoma, Huntington, and Port Jefferson Branches, with connecting Greenport service adjusted accordingly [[cite:meeting_doc_157681#p002_c0001|Temporary Service Adjustments affecting Ronkonkoma Branch]] [[cite:meeting_doc_157681#p001_c0011|Crossing Renewal weekends]].
+
+Funding for these programs was contained in the Long Island Rail Road Operating and MTA Capital Program budget [[cite:meeting_doc_157681#p002_c0003|Funding source]].
 <!-- mta-wiki:writer:end -->

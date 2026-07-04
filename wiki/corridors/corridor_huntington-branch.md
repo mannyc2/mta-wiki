@@ -29,5 +29,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_huntington-branch|Huntington Branch]] is a Long Island Rail Road branch that is referenced in an LIRR staff summary dated October 30, 2024, describing Thanksgiving holiday service and a fall trackwork program [[cite:meeting_doc_157681#p001_c0002|Staff Summary]]. According to that document, temporary schedule adjustments were required on the Huntington Branch, along with the Port Jefferson and Ronkonkoma Branches, because one of two main tracks was taken out of service on the Port Jefferson Branch between Hicksville and Cold Spring Harbor to support a crossing renewal [[cite:meeting_doc_157681#p002_c0001|Temporary Service Adjustments]].
 
+The trackwork that triggered these adjustments was the Syosset-Woodbury Road railroad crossing rehabilitation, which took place on the weekends of December 7-8 and December 14-15, 2024 [[cite:meeting_doc_157681#p001_c0011|Crossing Renewal]]. Funding for the trackwork and associated service was covered by the Long Island Rail Road Operating and MTA Capital Program budget [[cite:meeting_doc_157681#p002_c0003|Impact on Funding]].
+
+In addition to these service adjustments, the Thanksgiving Day program on November 28, 2024, included one eastbound extra train from New York City to Huntington as part of nine early afternoon eastbound extras arranged for parade attendees returning to Long Island [[cite:meeting_doc_157681#p001_c0008|Thanksgiving Extras]].
 <!-- mta-wiki:writer:end -->

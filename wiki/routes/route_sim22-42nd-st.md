@@ -115,5 +115,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[route:route_sim22-42nd-st|SIM22]] is a Staten Island Express Bus Route that travels along 42nd Street in Manhattan, as shown in maps of the 42nd Street Transit Improvements project area [[cite:42nd_st_cb4_jun192019#p006_c0001|SIM22 42nd St corridor map]]. It is one of six Staten Island express routes (along with SIM8, SIM8X, SIM25, SIM26, and SIM30) that use 42nd Street, carrying an estimated 16,000 daily MTA bus passengers across all routes [[cite:42nd_st_cb4_jun192019#p006_c0003|6 Staten Island Express Bus Routes]].
 
+The 42nd Street Transit Improvements project (Better Buses Action Plan priority project #06) identified SIM22 as one of seven routes served on the 2.0-mile corridor from 12th Avenue to FDR Drive [[cite:better_buses_action_plan_2019#p029_c0006|Routes served on 42nd St]]. The corridor experiences severe congestion: [[metric:metric_bus-people-79-percent|buses carry 79% of people on 42nd St using 33% of street space]], and the M42 local route shows running times that nearly double between overnight and daytime periods — for example, the eastbound weekday 6-10am running time is 33.1 minutes versus 18.8 minutes overnight [[cite:42nd_st_cb4_jun192019#p008_c0002|79% people 33% street space]] [[cite:42nd_st_cb4_jun192019#p010_c0003|M42 running time table]].
+
+[[route:route_sim22-42nd-st|SIM22]] also operates on Lexington Avenue between 60th Street and 52nd Street, one of eight MTA bus routes on that segment serving approximately 71,000 daily riders [[cite:lexington_ave_60_st_52_st_oct2025#p004_c0002|8 bus routes Lexington Ave 60-52]]. A proposed project would upgrade the existing curbside bus lane to a 24/7 offset bus lane to improve speeds and reliability [[cite:lexington_ave_60_st_52_st_cb8_oct2025#p007_c0002|offset bus lane proposal Lexington Ave]].
 <!-- mta-wiki:writer:end -->

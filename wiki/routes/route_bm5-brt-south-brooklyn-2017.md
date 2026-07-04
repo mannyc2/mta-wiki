@@ -102,5 +102,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_bm5-brt-south-brooklyn-2017|BM5 Express]] is an express bus route operated by the MTA Bus Company, running between Brooklyn and Queens (Spring Creek-Linden Blvd-Woodhaven Blvd) and Midtown Manhattan [[cite:meeting_doc_160441#p003_c0005|BM5 (MTA Bus): Brooklyn & Queens]]. It is one of five bus routes serving Pennsylvania Avenue between Flatlands Avenue and Seaview Avenue, an area characterized by slow bus speeds, long pedestrian crossings, and narrow concrete medians [[cite:brt_south_brooklyn_b82#p020_c0002|Serves 5 bus routes]].
 
+In summer 2024, the BM5 was identified as one of six express bus routes with the highest utilization to receive additional trips in anticipation of congestion pricing [[cite:meeting_doc_138456#p001_c0009|Add trips to express bus routes]]. Those trips were removed in fall 2024 when congestion pricing was paused, but were reinstated for spring 2025 as one Queens/Brooklyn-bound trip in the PM peak [[cite:meeting_doc_160441#p003_c0005|BM5 (MTA Bus)]]. This was part of a broader service enhancement package covering eight express bus routes and sixteen local routes, with an annualized operating cost increase of approximately $8 million [[cite:meeting_doc_160441#p001_c0009|annualized increase in operating cost]].
+
+The BM5 is documented in the B82 Southern Brooklyn Select Bus Service planning materials as one of the existing routes on the proposed B82 SBS corridor [[cite:brt_south_brooklyn_b82_dec2017#p023_c0002|Serves 5 bus routes]]. Its description in later board materials lists its service as originating in Spring Creek, running via Linden Boulevard and Woodhaven Boulevard through Brooklyn and Queens before reaching Midtown [[cite:meeting_doc_160441#p003_c0005|BM5 (MTA Bus)]].
 <!-- mta-wiki:writer:end -->

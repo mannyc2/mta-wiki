@@ -39,5 +39,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[corridor:corridor_queens-interlocking|Queens Interlocking]] is a critical interlocking area on the LIRR Main Line corridor where a multi-phased track, switch, and signal renewal project is underway [[cite:meeting_doc_196911#p001_c0004|Queens Interlocking renewal described]]. The work is designed to improve operations and support state of good repair maintenance in this area of the LIRR network [[cite:meeting_doc_196911#p001_c0004|purpose of renewal project]].
 
+As part of the renewal, signal testing was scheduled for three weekends in February 2026: February 7-8, February 14-16 (Presidents Day weekend), and February 21-22 [[cite:meeting_doc_196911#p001_c0007|signal testing weekend dates]]. During each testing weekend, two of four main tracks were taken out of service within Queens Interlocking [[cite:meeting_doc_196911#p001_c0007|two of four tracks out of service]]. Temporary service adjustments included bus replacement between Stewart Manor and Hempstead, bypassed stops at several stations, and reduced Ronkonkoma service to hourly in both directions on the February 14-16 weekend [[cite:meeting_doc_196911#p002_c0001|temporary service adjustment details]].
+
+Once complete, the improved switch configuration and modernized signal system at Queens Interlocking are expected to add new routing options and improve operations through this segment of the Main Line corridor [[cite:meeting_doc_196911#p001_c0007|expected benefits of renewal]]. A signal cutover was planned for later in 2026 [[cite:meeting_doc_196911#p001_c0007|signal cutover planned later this year]]. Funding for the work is contained in the LIRR Operating and MTA Capital Program budgets [[cite:meeting_doc_196911#p002_c0003|funding source]]. Additional phases of the project were noted as ongoing throughout the year [[cite:meeting_doc_196911#p001_c0004|additional phases planned]].
 <!-- mta-wiki:writer:end -->

@@ -97,5 +97,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_q66-flushing|Q66 bus route]] is a Queens local route operated by MTA Bus Company, serving Flushing and Long Island City [[cite:meeting_doc_160441#p004_c0004|Q66 listed as Flushing-Long Island City local bus route]]. Along Main Street in Flushing, Q66 buses recorded average speeds of 2.7 mph in 2017 and 3.4 mph in 2018, reflecting the severe congestion that affects the 21 bus routes from three counties using that corridor [[cite:brt_flushing_main_st_aug2018#p021_c0003|photo of Q66 bus with speed chart for 2017 and 2018]].
 
+The Q66 was among 29 of the lowest-performing bus routes targeted by the Road Operations team beginning in 2023, and by mid-2023 it had achieved over a 3% increase in Customer Journey Time Performance [[cite:meeting_doc_113986#p015_c0011|Q66 and B41 saw over 3% increase in CJTP]]. New bus lanes along 21st Street in western Queens, running from Long Island City to Astoria, were planned to serve the Q66 together with the Q69 and Q100 routes, benefiting 29,000 riders [[cite:meeting_doc_98311#p005_c0002|new bus lanes on 21st Street serve Q66, Q69, Q100]].
+
+As part of a congestion-pricing-backed bus service enhancement package, the Q66 was selected for frequency increases and running time adjustments, scheduled for implementation in summer 2025 [[cite:meeting_doc_160441#p004_c0004|Q66 (MTABC): Frequency Increases and Running time adjustments]]. The route also operates on corridors where Automated Bus Lane Enforcement (ABLE) cameras have been deployed across the network, contributing to average speed improvements of over 5% on equipped routes [[cite:meeting_doc_121046#p015_c0010|555 ABLE cameras on 19 routes across five boroughs]].
 <!-- mta-wiki:writer:end -->

@@ -95,5 +95,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_b25|B25]] is a Brooklyn local bus route operating primarily on Fulton Street. It is listed in the ACE Routes dataset with route identifier "B25" [[cite:ace_routes_dataset_dictionary#p001_b0089|ACE dataset B25 item]] and is part of a dataset containing 84 route entries [[cite:ace_routes_dataset_dictionary#p001_b0099|ACE dataset cardinality of 84]].
 
+The B25 was a participant in the MTA's ABLE (Automated Bus Lane Enforcement) mobile camera program through 2023, one of 21 routes equipped with on-bus enforcement cameras [[cite:bus_lane_camera_report_2024#p008_c0003|ABLE cameras on 21 routes through 2023]]. The ABLE system captures no-standing and no-parking violations by recording vehicles stopped in bus lanes using onboard cameras, requiring two buses to observe the same vehicle at the same GPS location at least five minutes apart before a violation is issued [[cite:bus_lane_camera_report_2024#p009_c0001|ABLE violation capture mechanism]].
+
+Bus lane enforcement cameras on the B25 were activated on December 12, 2022, as part of a broader expansion that added cameras to 300 additional buses and 9 new routes [[cite:meeting_doc_102836#p015_c0011|B25 camera activation December 12, 2022]]. The B25 was among the final three routes activated in this push, alongside the B62 and B42 [[cite:meeting_doc_102836#p015_c0011|final three routes B25, B62, B42]]. The MTA's Automated Camera Enforcement (ACE) program subsequently lists the B25 as an active enforcement route on Fulton Street [[cite:mta_automated_camera_enforcement#p001_b0001|ACE B25 on Fulton St]].
+
+The B25 is also documented in select bus lane camera enforcement corridor lists maintained by the New York City Department of Transportation, appearing alongside routes such as the B26, B42, and B62 in Brooklyn ABLE route records [[cite:bus_lane_camera_report_2024#p008_c0004|B25 in ABLE route list]].
 <!-- mta-wiki:writer:end -->

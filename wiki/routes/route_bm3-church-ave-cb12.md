@@ -90,5 +90,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The [[route:route_bm3-church-ave-cb12|BM3]] is an express bus route that provides direct service along Ocean Avenue to Midtown and Downtown Manhattan [[cite:church_ave_cb12_jun2019#p007_c0002|Direct service along Ocean Ave to Midtown & Downtown]]. It is listed in NYC DOT Church Avenue Transit & Traffic Improvements materials alongside the BM4 as one of the express bus services in the area [[cite:church_ave_project_update_oct2019#p007_c0002|BM3 & BM4 express buses]]. On Church Avenue between E 19 St and Ocean Avenue, bus passengers make up [[metric:metric_bus-passengers-72-percent-am-peak|72% of travelers during AM peak]] and [[metric:metric_bus-passengers-69-percent-pm-peak|69% during PM peak]], reflecting the importance of bus service in this corridor [[cite:church_ave_public_forum_jul2019#p009_c0002|Bus passengers make up 72% of travelers during AM peak, and 69% during PM peak]].
 <!-- mta-wiki:writer:end -->
