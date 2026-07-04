@@ -1,8 +1,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
-import { stableJson } from "@mta-wiki/db/stable-json";
-import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
+import { stableHash, stableJson } from "@mta-wiki/db/stable-json";
+import type { JsonObject, JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
 import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
 import {
   FACT_DEDUP_KINDS,
@@ -80,6 +80,50 @@ export type FactDedupScoutWriteResult = {
   report: FactDedupScoutReport;
 };
 
+export type FactDedupRetirementRecordCard = FactDedupRecordCard & {
+  evidence_ref_count: number;
+  payload_field_count: number;
+  survivor_rank: number;
+};
+
+export type FactDedupRetirementAction = {
+  op: "retract_record" | "supersede_record";
+  record_id: string;
+  survivor_record_id?: string | undefined;
+  guard_payload: JsonObject;
+  cascade: string[];
+  reason: string;
+};
+
+export type FactDedupRetirementGroup = {
+  group_id: string;
+  kind: FactDedupKind;
+  key: string;
+  parts: Record<string, string>;
+  survivor_record_id: string;
+  loser_record_ids: string[];
+  payload_difference_fields: string[];
+  records: FactDedupRetirementRecordCard[];
+  actions: FactDedupRetirementAction[];
+};
+
+export type FactDedupSameSourceDryRunReport = {
+  report_id: string;
+  generated_at: string;
+  source: "canonical_db";
+  record_count: number;
+  group_count: number;
+  action_count: number;
+  by_kind: Record<FactDedupKind, { groups: number; actions: number }>;
+  groups: FactDedupRetirementGroup[];
+};
+
+export type FactDedupSameSourceDryRunWriteResult = {
+  jsonPath: string;
+  markdownPath: string;
+  report: FactDedupSameSourceDryRunReport;
+};
+
 type KeyedRecord = {
   record: MtaCanonicalRecord;
   key: FactKey;
@@ -98,6 +142,14 @@ function factGroupsRoot(rootDir = repoRoot): string {
 
 export function factDedupScoutPath(runId: string, rootDir = repoRoot): string {
   return join(factGroupsRoot(rootDir), `scout-${runId}.json`);
+}
+
+export function factDedupSameSourceDryRunJsonPath(runId: string, rootDir = repoRoot): string {
+  return join(factGroupsRoot(rootDir), `same-source-dry-run-${runId}.json`);
+}
+
+export function factDedupSameSourceDryRunMarkdownPath(runId: string, rootDir = repoRoot): string {
+  return join(factGroupsRoot(rootDir), `same-source-dry-run-${runId}.md`);
 }
 
 export function writeFactDedupScout(options: { records?: MtaCanonicalRecord[] | undefined; runId?: string | undefined; rootDir?: string | undefined; now?: () => Date } = {}): FactDedupScoutWriteResult {
@@ -141,6 +193,43 @@ export function buildFactDedupScout(records: readonly MtaCanonicalRecord[], opti
   return report;
 }
 
+export function writeFactDedupSameSourceDryRun(options: { records?: MtaCanonicalRecord[] | undefined; runId?: string | undefined; rootDir?: string | undefined; now?: () => Date } = {}): FactDedupSameSourceDryRunWriteResult {
+  const rootDir = options.rootDir ?? repoRoot;
+  const now = options.now ?? (() => new Date());
+  const runId = options.runId ?? now().toISOString().slice(0, 10);
+  const records = options.records ?? readCanonicalRecords();
+  const report = buildFactDedupSameSourceDryRun(records, { runId, now });
+  const jsonPath = factDedupSameSourceDryRunJsonPath(runId, rootDir);
+  const markdownPath = factDedupSameSourceDryRunMarkdownPath(runId, rootDir);
+  mkdirSync(dirname(jsonPath), { recursive: true });
+  writeFileSync(jsonPath, `${stableJson(report as unknown as JsonValue)}\n`, "utf8");
+  writeFileSync(markdownPath, sameSourceDryRunMarkdown(report), "utf8");
+  return { jsonPath, markdownPath, report };
+}
+
+export function buildFactDedupSameSourceDryRun(records: readonly MtaCanonicalRecord[], options: { runId?: string | undefined; now?: () => Date } = {}): FactDedupSameSourceDryRunReport {
+  const now = options.now ?? (() => new Date());
+  const runId = options.runId ?? now().toISOString().slice(0, 10);
+  const anchors = buildAnchorIndex(records);
+  const groups = sameSourceRetirementGroups(records, anchors);
+  const byKind = Object.fromEntries(
+    FACT_DEDUP_KINDS.map((kind) => {
+      const kindGroups = groups.filter((group) => group.kind === kind);
+      return [kind, { groups: kindGroups.length, actions: kindGroups.reduce((sum, group) => sum + group.actions.length, 0) }];
+    }),
+  ) as Record<FactDedupKind, { groups: number; actions: number }>;
+  return {
+    report_id: `fact-dedup-same-source-dry-run-${runId}`,
+    generated_at: now().toISOString(),
+    source: "canonical_db",
+    record_count: records.length,
+    group_count: groups.length,
+    action_count: groups.reduce((sum, group) => sum + group.actions.length, 0),
+    by_kind: byKind,
+    groups,
+  };
+}
+
 export function factDedupScoutSummaryText(result: FactDedupScoutWriteResult): string {
   const lines = [`Fact-dedup scout: ${relative(repoRoot, result.path)}`];
   for (const kind of FACT_DEDUP_KINDS) {
@@ -157,6 +246,19 @@ export function factDedupScoutSummaryText(result: FactDedupScoutWriteResult): st
   }
   if (result.report.stop_conditions.ace_pair_missing) {
     lines.push(`STOP: ACE canary pair was not present in the event near-miss tier`);
+  }
+  return lines.join("\n");
+}
+
+export function factDedupSameSourceDryRunSummaryText(result: FactDedupSameSourceDryRunWriteResult): string {
+  const lines = [
+    `Fact-dedup same-source dry-run: ${relative(repoRoot, result.jsonPath)}`,
+    `Review table: ${relative(repoRoot, result.markdownPath)}`,
+    `Groups: ${result.report.group_count}; proposed removals: ${result.report.action_count}`,
+  ];
+  for (const kind of FACT_DEDUP_KINDS) {
+    const summary = result.report.by_kind[kind];
+    lines.push(`- ${kind}: groups=${summary.groups} proposed_removals=${summary.actions}`);
   }
   return lines.join("\n");
 }
@@ -178,6 +280,150 @@ function summarizeKind(kind: FactDedupKind, records: MtaCanonicalRecord[], ancho
       near_miss_candidate_pairs: nearMiss.samples,
     },
   };
+}
+
+function sameSourceRetirementGroups(records: readonly MtaCanonicalRecord[], anchors: AnchorIndex): FactDedupRetirementGroup[] {
+  const groups = new Map<string, KeyedRecord[]>();
+  for (const record of records) {
+    if (!isRetirementKind(record.record_kind)) continue;
+    const key = sameSourceFactKey(record, anchors);
+    if (!key) continue;
+    const comparable = factKeyComparable(key);
+    groups.set(comparable, [...(groups.get(comparable) ?? []), { record, key, comparable }]);
+  }
+
+  return [...groups.values()]
+    .filter((items) => items.length > 1)
+    .map((items) => retirementGroup(items, records))
+    .sort((a, b) => a.kind.localeCompare(b.kind) || a.group_id.localeCompare(b.group_id));
+}
+
+function retirementGroup(items: KeyedRecord[], records: readonly MtaCanonicalRecord[]): FactDedupRetirementGroup {
+  const key = items[0]!.key;
+  const ranked = [...items].sort(compareSurvivor);
+  const survivor = ranked[0]!.record;
+  const losers = ranked.slice(1).map((item) => item.record);
+  return {
+    group_id: `same-source:${key.kind}:${stableHash(key.parts as JsonObject).slice(0, 16)}`,
+    kind: key.kind,
+    key: key.key,
+    parts: key.parts,
+    survivor_record_id: survivor.record_id,
+    loser_record_ids: losers.map((record) => record.record_id).sort(),
+    payload_difference_fields: payloadDifferenceFields(items.map((item) => item.record)),
+    records: ranked.map((item, index) => retirementCard(item.record, key.parts, index + 1)),
+    actions: losers.sort((a, b) => a.record_id.localeCompare(b.record_id)).map((loser) => retirementAction(loser, survivor, records)),
+  };
+}
+
+function retirementAction(loser: MtaCanonicalRecord, survivor: MtaCanonicalRecord, records: readonly MtaCanonicalRecord[]): FactDedupRetirementAction {
+  if (loser.record_kind === "relation") {
+    return {
+      op: "retract_record",
+      record_id: loser.record_id,
+      guard_payload: sameSourceGuardPayload(loser),
+      cascade: relationReferrers(records, loser.record_id),
+      reason: `same-source duplicate of ${survivor.record_id}; survivor selected by evidence refs, payload field count, then record_id`,
+    };
+  }
+  return {
+    op: "supersede_record",
+    record_id: loser.record_id,
+    survivor_record_id: survivor.record_id,
+    guard_payload: sameSourceGuardPayload(loser),
+    cascade: [],
+    reason: `same-source duplicate of ${survivor.record_id}; survivor selected by evidence refs, payload field count, then record_id`,
+  };
+}
+
+function compareSurvivor(left: KeyedRecord, right: KeyedRecord): number {
+  return (
+    right.record.evidence_refs.length - left.record.evidence_refs.length ||
+    payloadFieldCount(right.record) - payloadFieldCount(left.record) ||
+    left.record.record_id.localeCompare(right.record.record_id)
+  );
+}
+
+function retirementCard(record: MtaCanonicalRecord, keyParts: Record<string, string>, rank: number): FactDedupRetirementRecordCard {
+  return {
+    ...card(record, keyParts),
+    evidence_ref_count: record.evidence_refs.length,
+    payload_field_count: payloadFieldCount(record),
+    survivor_rank: rank,
+  };
+}
+
+function sameSourceGuardPayload(record: MtaCanonicalRecord): JsonObject {
+  const payload = record.payload;
+  if (record.record_kind === "relation") return guard(payload, ["relation_kind", "subject_id", "object_id", "as_of_date"]);
+  if (record.record_kind === "event") return guard(payload, ["event_family", "event_kind", "date_normalized", "date_text", "date", "event_name", "description"]);
+  if (record.record_kind === "metric_claim") return guard(payload, ["metric_name", "unit", "period", "value", "scope"]);
+  if (record.record_kind === "claim") return guard(payload, ["claim_text", "description"]);
+  if (record.record_kind === "treatment_component") return guard(payload, ["treatment_kind", "treatment_family", "locations", "location", "locations_normalized"]);
+  return {};
+}
+
+function guard(payload: JsonObject, fields: string[]): JsonObject {
+  return Object.fromEntries(fields.filter((field) => payload[field] !== undefined).map((field) => [field, payload[field]])) as JsonObject;
+}
+
+function payloadFieldCount(record: MtaCanonicalRecord): number {
+  return Object.values(record.payload).filter((value) => value !== undefined).length;
+}
+
+function payloadDifferenceFields(records: MtaCanonicalRecord[]): string[] {
+  const fields = new Set(records.flatMap((record) => Object.keys(record.payload)));
+  return [...fields]
+    .filter((field) => new Set(records.map((record) => stableJson((record.payload[field] ?? null) as JsonValue))).size > 1)
+    .sort();
+}
+
+function relationReferrers(records: readonly MtaCanonicalRecord[], recordId: string): string[] {
+  return records
+    .filter((record) => record.record_kind === "relation" && (record.payload.subject_id === recordId || record.payload.object_id === recordId))
+    .map((record) => record.record_id)
+    .sort();
+}
+
+function sameSourceDryRunMarkdown(report: FactDedupSameSourceDryRunReport): string {
+  const lines = [
+    `# ${report.report_id}`,
+    "",
+    `Generated: ${report.generated_at}`,
+    "",
+    `Groups: ${report.group_count}`,
+    `Proposed removals: ${report.action_count}`,
+    "",
+    "| Kind | Group | Survivor | Losers | Payload Diff Fields | Key Parts |",
+    "|---|---|---|---|---|---|",
+  ];
+  for (const group of report.groups) {
+    lines.push(
+      [
+        group.kind,
+        group.group_id,
+        group.survivor_record_id,
+        group.loser_record_ids.join("<br>"),
+        group.payload_difference_fields.join(", ") || "(none)",
+        Object.entries(group.parts)
+          .map(([key, value]) => `${key}=${value || "(empty)"}`)
+          .join("<br>"),
+      ]
+        .map(markdownCell)
+        .join(" | ")
+        .replace(/^/u, "| ")
+        .replace(/$/u, " |"),
+    );
+  }
+  return `${lines.join("\n")}\n`;
+}
+
+function markdownCell(value: string): string {
+  return value.replace(/\|/gu, "\\|").replace(/\n/gu, "<br>");
+}
+
+function isRetirementKind(kind: string): kind is FactDedupKind {
+  return (FACT_DEDUP_KINDS as readonly string[]).includes(kind);
 }
 
 function duplicateGroups(

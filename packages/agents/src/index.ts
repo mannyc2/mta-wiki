@@ -45,7 +45,17 @@ export {
   sameSourceFactKey,
   tokenSetHash,
 } from "@mta-wiki/pipeline/quality/fact-keys";
-export { buildFactDedupScout, factDedupScoutPath, factDedupScoutSummaryText, writeFactDedupScout } from "@mta-wiki/pipeline/quality/fact-dedup";
+export {
+  buildFactDedupSameSourceDryRun,
+  buildFactDedupScout,
+  factDedupSameSourceDryRunJsonPath,
+  factDedupSameSourceDryRunMarkdownPath,
+  factDedupSameSourceDryRunSummaryText,
+  factDedupScoutPath,
+  factDedupScoutSummaryText,
+  writeFactDedupSameSourceDryRun,
+  writeFactDedupScout,
+} from "@mta-wiki/pipeline/quality/fact-dedup";
 export { exportSite, siteOutDir, type SiteExportResult } from "@mta-wiki/pipeline/site/export-site";
 export { importGtfs, readGtfsManifest, type GtfsManifest } from "@mta-wiki/db/import-gtfs";
 export { buildDossier, dossierMarkdown, writeDossier, type Dossier } from "@mta-wiki/pipeline/identity/dossier";

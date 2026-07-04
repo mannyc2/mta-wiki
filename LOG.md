@@ -124,6 +124,17 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts` unchanged at
   combined `fadaab4b3f428835c1d2fe2fbf2266798cc7e965e71d111539283f62c786a048`.
 
+### Plan 020 Stopped: Same-Source Dry-Run Overbroad
+
+- Added the owner-review dry-run surface `fact-dedup --same-source --dry-run`, which writes
+  `data/fact-groups/same-source-dry-run-2026-07-04.{json,md}` without modifying
+  `data/semantic-corrections/corrections.jsonl` or canonical JSONL.
+- STOP outcome: the first dry-run proposed `1275` removals across `999` groups, but precision
+  review found material same-key payload differences (for example, same claim text across
+  different routes, subjects, locations, or monthly/YTD contexts). No retirement corrections were
+  applied. The same-source key needs tightening or material-difference exclusions before any owner
+  skim/approval can safely proceed.
+
 ### Plan 014 Stopped: V2 Extract Pilot Below Replay Bar
 
 - Added a no-spend replay-boundary fix for Plan 014: v2 extract boundary output now runs

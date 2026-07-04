@@ -47,7 +47,7 @@ import {
   type PipelineReport,
 } from "@mta-wiki/agents";
 import { canonicalDbPath } from "@mta-wiki/db/canonical-db";
-import { factDedupScoutSummaryText, writeFactDedupScout } from "@mta-wiki/pipeline/quality/fact-dedup";
+import { factDedupSameSourceDryRunSummaryText, factDedupScoutSummaryText, writeFactDedupSameSourceDryRun, writeFactDedupScout } from "@mta-wiki/pipeline/quality/fact-dedup";
 import { calibrationMarkdown, scoreJudgeCalibration, writeV1CalibrationFixtures } from "@mta-wiki/pipeline/quality/judge-calibration";
 import { seededDefectSummary, writeSeededDefectFixtures } from "@mta-wiki/pipeline/quality/seeded-defects";
 import { humanCalibrationJudgeInputs, readFixtureJudgeInputs, runSemanticSweep, semanticSweepSummaryText } from "@mta-wiki/pipeline/quality/semantic-sweep";
@@ -341,16 +341,27 @@ Use --dry-run to estimate count/cost without provider calls.`);
   "fact-dedup": () => {
     if (process.argv.includes("--help") || process.argv.includes("-h")) {
       console.log(`Usage: bun packages/cli/src/cli.ts fact-dedup --scout [--run-id <id>]
+       bun packages/cli/src/cli.ts fact-dedup --same-source --dry-run [--run-id <id>]
 
 Writes data/fact-groups/scout-<id>.json with deterministic same-source duplicate groups,
 cross-source exact-key groups, and event near-miss candidate pairs.
+The same-source dry-run writes data/fact-groups/same-source-dry-run-<id>.{json,md}
+for owner review before any correction journal is applied.
 This command does not call a provider or write canonical JSONL.`);
       return;
     }
-    if (!process.argv.includes("--scout")) throw new Error("Missing --scout for fact-dedup");
-    const result = writeFactDedupScout({ runId: optionValue(process.argv, "--run-id") });
-    console.log(factDedupScoutSummaryText(result));
-    if (result.report.stop_conditions.ace_pair_missing || result.report.stop_conditions.near_miss_volume_exceeded) process.exitCode = 1;
+    if (process.argv.includes("--scout")) {
+      const result = writeFactDedupScout({ runId: optionValue(process.argv, "--run-id") });
+      console.log(factDedupScoutSummaryText(result));
+      if (result.report.stop_conditions.ace_pair_missing || result.report.stop_conditions.near_miss_volume_exceeded) process.exitCode = 1;
+      return;
+    }
+    if (process.argv.includes("--same-source") && process.argv.includes("--dry-run")) {
+      const result = writeFactDedupSameSourceDryRun({ runId: optionValue(process.argv, "--run-id") });
+      console.log(factDedupSameSourceDryRunSummaryText(result));
+      return;
+    }
+    throw new Error("Missing --scout or --same-source --dry-run for fact-dedup");
   },
 
   "dossier": (args) => {
