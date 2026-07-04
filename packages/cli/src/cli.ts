@@ -120,6 +120,7 @@ function parseCommand(argv: string[]): ParsedArgs {
     "quality-seeded-defects",
     "quality-judge-calibration",
     "semantic-sweep",
+    "fact-dedup",
     "replay-eval",
     "extract",
     "identity-review",

@@ -109,6 +109,21 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   fail); `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts`
   unchanged at combined `fadaab4b3f428835c1d2fe2fbf2266798cc7e965e71d111539283f62c786a048`.
 
+### Plan 020 Started: Fact-Dedup Scout
+
+- Added deterministic fact-key and `fact-dedup --scout` infrastructure for same-source duplicate
+  groups, cross-source exact fact groups, and event near-miss candidate pairs. The scout reads
+  the live canonical DB, writes `data/fact-groups/scout-2026-07-04.json`, and makes no provider
+  calls or canonical JSONL edits.
+- Scout counts by kind: relations `69/140` same-source groups/records and `150/333`
+  cross-source exact groups/records; events `9/19`, `439/1283`, and `1086` near-miss pairs;
+  metric claims `708/1593` and `215/496`; claims `23/49` and `26/61`; treatment components
+  `190/473` and `181/575`. The ACE 2023 legislation pair is present in the event near-miss
+  tier, and near-miss volume is below the `10000` STOP threshold.
+- Step 1 gates passed: `bun run typecheck`; `bun run test` (`986` pass, `1` skip, `0` fail);
+  `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts` unchanged at
+  combined `fadaab4b3f428835c1d2fe2fbf2266798cc7e965e71d111539283f62c786a048`.
+
 ### Plan 014 Stopped: V2 Extract Pilot Below Replay Bar
 
 - Added a no-spend replay-boundary fix for Plan 014: v2 extract boundary output now runs

@@ -1,0 +1,280 @@
+import { mkdirSync, writeFileSync } from "node:fs";
+import { dirname, join, relative } from "node:path";
+import { repoRoot } from "@mta-wiki/core/paths";
+import { stableJson } from "@mta-wiki/db/stable-json";
+import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import {
+  FACT_DEDUP_KINDS,
+  anchorRecordId,
+  buildAnchorIndex,
+  crossSourceExactFactKey,
+  eventNearMissBucketKey,
+  factKeyComparable,
+  sameSourceFactKey,
+  type AnchorIndex,
+  type FactDedupKind,
+  type FactKey,
+} from "@mta-wiki/pipeline/quality/fact-keys";
+
+export const FACT_DEDUP_ACE_PAIR = ["event_able-ace-expansion-2023", "event_ace-2023-legislature-expansion"] as const;
+export const FACT_DEDUP_NEAR_MISS_STOP_PAIR_LIMIT = 10_000;
+
+export type FactDedupRecordCard = {
+  record_id: string;
+  display_name: string;
+  source_id: string;
+  anchor_record_id?: string | undefined;
+  key_parts?: Record<string, string> | undefined;
+};
+
+export type FactDedupGroupSample = {
+  key: string;
+  parts: Record<string, string>;
+  member_count: number;
+  record_ids: string[];
+  records: FactDedupRecordCard[];
+};
+
+export type FactDedupPairSample = {
+  bucket_key: string;
+  bucket_parts: Record<string, string>;
+  record_ids: [string, string];
+  records: [FactDedupRecordCard, FactDedupRecordCard];
+};
+
+export type FactDedupKindScoutSummary = {
+  record_count: number;
+  same_source_true_dup_groups: number;
+  same_source_affected_records: number;
+  cross_source_exact_groups: number;
+  cross_source_affected_records: number;
+  near_miss_candidate_pairs: number;
+  samples: {
+    same_source_true_dup_groups: FactDedupGroupSample[];
+    cross_source_exact_groups: FactDedupGroupSample[];
+    near_miss_candidate_pairs: FactDedupPairSample[];
+  };
+};
+
+export type FactDedupScoutReport = {
+  report_id: string;
+  generated_at: string;
+  source: "canonical_db";
+  record_count: number;
+  kind_summaries: Record<FactDedupKind, FactDedupKindScoutSummary>;
+  ace_pair: {
+    record_ids: typeof FACT_DEDUP_ACE_PAIR;
+    present_in_event_near_miss_tier: boolean;
+  };
+  stop_conditions: {
+    near_miss_pair_limit: number;
+    near_miss_pair_count: number;
+    near_miss_volume_exceeded: boolean;
+    ace_pair_missing: boolean;
+  };
+};
+
+export type FactDedupScoutWriteResult = {
+  path: string;
+  report: FactDedupScoutReport;
+};
+
+type KeyedRecord = {
+  record: MtaCanonicalRecord;
+  key: FactKey;
+  comparable: string;
+};
+
+type NearMissRecord = {
+  record: MtaCanonicalRecord;
+  bucket: FactKey;
+  nameKey: string;
+};
+
+function factGroupsRoot(rootDir = repoRoot): string {
+  return join(rootDir, "data", "fact-groups");
+}
+
+export function factDedupScoutPath(runId: string, rootDir = repoRoot): string {
+  return join(factGroupsRoot(rootDir), `scout-${runId}.json`);
+}
+
+export function writeFactDedupScout(options: { records?: MtaCanonicalRecord[] | undefined; runId?: string | undefined; rootDir?: string | undefined; now?: () => Date } = {}): FactDedupScoutWriteResult {
+  const rootDir = options.rootDir ?? repoRoot;
+  const now = options.now ?? (() => new Date());
+  const runId = options.runId ?? now().toISOString().slice(0, 10);
+  const records = options.records ?? readCanonicalRecords();
+  const report = buildFactDedupScout(records, { runId, now });
+  const path = factDedupScoutPath(runId, rootDir);
+  mkdirSync(dirname(path), { recursive: true });
+  writeFileSync(path, `${stableJson(report as unknown as JsonValue)}\n`, "utf8");
+  return { path, report };
+}
+
+export function buildFactDedupScout(records: readonly MtaCanonicalRecord[], options: { runId?: string | undefined; now?: () => Date } = {}): FactDedupScoutReport {
+  const now = options.now ?? (() => new Date());
+  const runId = options.runId ?? now().toISOString().slice(0, 10);
+  const anchors = buildAnchorIndex(records);
+  const kindSummaries = Object.fromEntries(
+    FACT_DEDUP_KINDS.map((kind) => [kind, summarizeKind(kind, records.filter((record) => record.record_kind === kind), anchors)]),
+  ) as Record<FactDedupKind, FactDedupKindScoutSummary>;
+  const nearMissPairCount = FACT_DEDUP_KINDS.reduce((sum, kind) => sum + kindSummaries[kind].near_miss_candidate_pairs, 0);
+  const acePairPresent = eventNearMissPairExists(kindSummaries.event.samples.near_miss_candidate_pairs, FACT_DEDUP_ACE_PAIR);
+  const report: FactDedupScoutReport = {
+    report_id: `fact-dedup-scout-${runId}`,
+    generated_at: now().toISOString(),
+    source: "canonical_db",
+    record_count: records.length,
+    kind_summaries: kindSummaries,
+    ace_pair: {
+      record_ids: FACT_DEDUP_ACE_PAIR,
+      present_in_event_near_miss_tier: acePairPresent,
+    },
+    stop_conditions: {
+      near_miss_pair_limit: FACT_DEDUP_NEAR_MISS_STOP_PAIR_LIMIT,
+      near_miss_pair_count: nearMissPairCount,
+      near_miss_volume_exceeded: nearMissPairCount > FACT_DEDUP_NEAR_MISS_STOP_PAIR_LIMIT,
+      ace_pair_missing: !acePairPresent,
+    },
+  };
+  return report;
+}
+
+export function factDedupScoutSummaryText(result: FactDedupScoutWriteResult): string {
+  const lines = [`Fact-dedup scout: ${relative(repoRoot, result.path)}`];
+  for (const kind of FACT_DEDUP_KINDS) {
+    const summary = result.report.kind_summaries[kind];
+    lines.push(
+      `- ${kind}: records=${summary.record_count} same_source_groups=${summary.same_source_true_dup_groups} ` +
+        `same_source_records=${summary.same_source_affected_records} cross_source_exact_groups=${summary.cross_source_exact_groups} ` +
+        `cross_source_records=${summary.cross_source_affected_records} near_miss_pairs=${summary.near_miss_candidate_pairs}`,
+    );
+  }
+  lines.push(`ACE near-miss canary: ${result.report.ace_pair.present_in_event_near_miss_tier ? "present" : "MISSING"}`);
+  if (result.report.stop_conditions.near_miss_volume_exceeded) {
+    lines.push(`STOP: near-miss candidate volume ${result.report.stop_conditions.near_miss_pair_count} > ${result.report.stop_conditions.near_miss_pair_limit}`);
+  }
+  if (result.report.stop_conditions.ace_pair_missing) {
+    lines.push(`STOP: ACE canary pair was not present in the event near-miss tier`);
+  }
+  return lines.join("\n");
+}
+
+function summarizeKind(kind: FactDedupKind, records: MtaCanonicalRecord[], anchors: AnchorIndex): FactDedupKindScoutSummary {
+  const sameSource = duplicateGroups(records, (record) => sameSourceFactKey(record, anchors), false);
+  const crossSource = duplicateGroups(records, (record) => crossSourceExactFactKey(record, anchors), true);
+  const nearMiss = kind === "event" ? eventNearMissPairs(records, anchors) : { count: 0, samples: [] as FactDedupPairSample[] };
+  return {
+    record_count: records.length,
+    same_source_true_dup_groups: sameSource.groups.length,
+    same_source_affected_records: sameSource.affectedRecords,
+    cross_source_exact_groups: crossSource.groups.length,
+    cross_source_affected_records: crossSource.affectedRecords,
+    near_miss_candidate_pairs: nearMiss.count,
+    samples: {
+      same_source_true_dup_groups: sameSource.groups.slice(0, 10),
+      cross_source_exact_groups: crossSource.groups.slice(0, 10),
+      near_miss_candidate_pairs: nearMiss.samples,
+    },
+  };
+}
+
+function duplicateGroups(
+  records: MtaCanonicalRecord[],
+  keyFor: (record: MtaCanonicalRecord) => FactKey | undefined,
+  requireCrossSource: boolean,
+): { groups: FactDedupGroupSample[]; affectedRecords: number } {
+  const groups = new Map<string, KeyedRecord[]>();
+  for (const record of records) {
+    const key = keyFor(record);
+    if (!key) continue;
+    const comparable = factKeyComparable(key);
+    groups.set(comparable, [...(groups.get(comparable) ?? []), { record, key, comparable }]);
+  }
+
+  const duplicateGroups = [...groups.values()]
+    .filter((items) => items.length > 1)
+    .filter((items) => !requireCrossSource || new Set(items.map((item) => item.record.source_id)).size > 1)
+    .map((items) => groupSample(items))
+    .sort((a, b) => b.member_count - a.member_count || a.key.localeCompare(b.key));
+  return {
+    groups: duplicateGroups,
+    affectedRecords: duplicateGroups.reduce((sum, group) => sum + group.member_count, 0),
+  };
+}
+
+function groupSample(items: KeyedRecord[]): FactDedupGroupSample {
+  const sorted = [...items].sort((a, b) => a.record.record_id.localeCompare(b.record.record_id));
+  const key = sorted[0]!.key;
+  return {
+    key: key.key,
+    parts: key.parts,
+    member_count: sorted.length,
+    record_ids: sorted.map((item) => item.record.record_id),
+    records: sorted.slice(0, 10).map((item) => card(item.record, item.key.parts)),
+  };
+}
+
+function eventNearMissPairs(records: MtaCanonicalRecord[], anchors: AnchorIndex): { count: number; samples: FactDedupPairSample[] } {
+  const buckets = new Map<string, NearMissRecord[]>();
+  for (const record of records) {
+    const bucket = eventNearMissBucketKey(record, anchors);
+    const exact = crossSourceExactFactKey(record, anchors);
+    if (!bucket || !exact) continue;
+    const comparable = factKeyComparable(bucket);
+    buckets.set(comparable, [...(buckets.get(comparable) ?? []), { record, bucket, nameKey: exact.parts.name_token_hash ?? "" }]);
+  }
+
+  let count = 0;
+  const samples: FactDedupPairSample[] = [];
+  const sortedBuckets = [...buckets.values()].sort((a, b) => a[0]!.bucket.key.localeCompare(b[0]!.bucket.key));
+  for (const bucketRecords of sortedBuckets) {
+    const sorted = [...bucketRecords].sort((a, b) => a.record.record_id.localeCompare(b.record.record_id));
+    for (let leftIndex = 0; leftIndex < sorted.length; leftIndex += 1) {
+      for (let rightIndex = leftIndex + 1; rightIndex < sorted.length; rightIndex += 1) {
+        const left = sorted[leftIndex]!;
+        const right = sorted[rightIndex]!;
+        if (left.record.source_id === right.record.source_id) continue;
+        if (left.nameKey === right.nameKey) continue;
+        count += 1;
+        if (samples.length < 10 || isAcePair([left.record.record_id, right.record.record_id])) {
+          const sample = pairSample(left, right);
+          if (!samples.some((existing) => samePair(existing.record_ids, sample.record_ids))) samples.push(sample);
+        }
+      }
+    }
+  }
+  return { count, samples: samples.slice(0, 25) };
+}
+
+function pairSample(left: NearMissRecord, right: NearMissRecord): FactDedupPairSample {
+  return {
+    bucket_key: left.bucket.key,
+    bucket_parts: left.bucket.parts,
+    record_ids: [left.record.record_id, right.record.record_id],
+    records: [card(left.record, { ...left.bucket.parts, name_token_hash: left.nameKey }), card(right.record, { ...right.bucket.parts, name_token_hash: right.nameKey })],
+  };
+}
+
+function card(record: MtaCanonicalRecord, keyParts?: Record<string, string>): FactDedupRecordCard {
+  return {
+    record_id: record.record_id,
+    display_name: record.display_name,
+    source_id: record.source_id,
+    anchor_record_id: keyParts?.anchor_record_id,
+    key_parts: keyParts,
+  };
+}
+
+function eventNearMissPairExists(samples: FactDedupPairSample[], pair: readonly [string, string]): boolean {
+  return samples.some((sample) => samePair(sample.record_ids, pair));
+}
+
+function isAcePair(pair: readonly [string, string]): boolean {
+  return samePair(pair, FACT_DEDUP_ACE_PAIR);
+}
+
+function samePair(a: readonly [string, string], b: readonly [string, string]): boolean {
+  return [...a].sort().join("\0") === [...b].sort().join("\0");
+}

@@ -47,6 +47,7 @@ import {
   type PipelineReport,
 } from "@mta-wiki/agents";
 import { canonicalDbPath } from "@mta-wiki/db/canonical-db";
+import { factDedupScoutSummaryText, writeFactDedupScout } from "@mta-wiki/pipeline/quality/fact-dedup";
 import { calibrationMarkdown, scoreJudgeCalibration, writeV1CalibrationFixtures } from "@mta-wiki/pipeline/quality/judge-calibration";
 import { seededDefectSummary, writeSeededDefectFixtures } from "@mta-wiki/pipeline/quality/seeded-defects";
 import { humanCalibrationJudgeInputs, readFixtureJudgeInputs, runSemanticSweep, semanticSweepSummaryText } from "@mta-wiki/pipeline/quality/semantic-sweep";
@@ -335,6 +336,21 @@ Use --dry-run to estimate count/cost without provider calls.`);
       ledgerPath: optionValue(process.argv, "--ledger"),
     });
     console.log(semanticSweepSummaryText(summary));
+  },
+
+  "fact-dedup": () => {
+    if (process.argv.includes("--help") || process.argv.includes("-h")) {
+      console.log(`Usage: bun packages/cli/src/cli.ts fact-dedup --scout [--run-id <id>]
+
+Writes data/fact-groups/scout-<id>.json with deterministic same-source duplicate groups,
+cross-source exact-key groups, and event near-miss candidate pairs.
+This command does not call a provider or write canonical JSONL.`);
+      return;
+    }
+    if (!process.argv.includes("--scout")) throw new Error("Missing --scout for fact-dedup");
+    const result = writeFactDedupScout({ runId: optionValue(process.argv, "--run-id") });
+    console.log(factDedupScoutSummaryText(result));
+    if (result.report.stop_conditions.ace_pair_missing || result.report.stop_conditions.near_miss_volume_exceeded) process.exitCode = 1;
   },
 
   "dossier": (args) => {
