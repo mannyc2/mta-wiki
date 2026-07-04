@@ -94,6 +94,26 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `bun scripts/determinism-anchor.ts` with combined hash
   `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
+### Bounded Writer Full-Slice Batch 07
+
+- Plan 012 full-slice batch 07 filled another `50` route/corridor writer regions, bringing the
+  post-sample full-slice total to `350` pages; `136` route/corridor writer pages remain empty.
+  Actual usage: `50` writer runs, `342` provider requests, `13472028` input tokens, `211344`
+  output tokens, `32042357` cache-read tokens, `45725729` total tokens, estimated cost
+  `$1.389472`.
+- STOPs handled before commit: value-as-label metric primitives on the Bx23 page; one range-like
+  Bay Parkway/Cropsey Avenue citation target; one internal `packet` wording cleanup; one scanner
+  false-positive around Avenue I wording; and source-time rewrites for ACE warning-period prose.
+- Batch review found `50` modified wiki pages, `0` writer-edit/citation issues across `386`
+  citations, and no modified writer headings, bullet lists, bad `cite:` targets, range-like cite
+  targets, value-like metric labels, or lingering flagged internal/review terms.
+- Added a review note for coarse ACE page-level evidence granularity and thin route-specific
+  evidence on LGA/Bee-Line route pages.
+- Batch gates passed: `bun run typecheck`; `bun run test` (`961` pass, `1` skip,
+  `0` fail); `bun run validate` with `Issues: 0`; and
+  `bun scripts/determinism-anchor.ts` with combined hash
+  `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ## 2026-07-03
 
 ### Remaining Plan Approval

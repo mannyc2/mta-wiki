@@ -75,5 +75,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_bx5-addendum-update|Bx5]] is a Bronx bus route operating along Bruckner Blvd / Story Av [[cite:mta_automated_camera_enforcement#p001_b0001|ACE route listing]]. The Bronx Bus Network Redesign Addendum, published in 2021, postponed Bx5 schedule changes that had been part of the original 2019 redesign plan. According to the addendum, the Bx6 SBS implementation was delayed until 2023 due to the 18-month COVID-19 pandemic pause, and the associated changes to the Bx5 and Bx6 Local schedules were postponed to coincide with the full deployment of OMNY and the Bx6 SBS realignment [[cite:bronx_bus_network_final_plan_addendum_2021#p003_c0004|Bx5 schedule postponement]] [[cite:bronx_bus_network_final_plan_addendum_2021#p007_c0010|Bx5 schedule postponed until OMNY deployment]]. The same document also noted that all-door boarding was planned to launch on all bus routes in 2023 [[cite:bronx_bus_network_final_plan_addendum_2021#p003_c0004|all-door boarding 2023]].
 
+The addendum identifies the Bx5 as a current route on the Story Avenue corridor, a present-implementation bus priority corridor where the Bx6 SBS will operate after its redesign [[cite:bronx_bus_network_final_plan_addendum_2021#p005_c0003|Story Avenue corridor routes]]. The Bx5 also serves the Pelham Bay Park 6 station area corridor [[cite:bronx_bus_network_final_plan_addendum_2021#p005_c0003|Pelham Bay station corridor]].
+
+In December 2021, NYC DOT opened three miles of new dedicated bus lanes in Soundview serving 45,000 daily riders, which gave priority to the Bx5 along with the Bx36 and Bx39 routes [[cite:soundview_bus_priority_press_release_2021#p001_b0001|Soundview bus lanes Bx5]].
+
+The Bx5 is also listed on the MTA's automated camera enforcement (ACE) page for bus lane and bus stop enforcement, covering the Bruckner Blvd / Story Av corridor [[cite:mta_automated_camera_enforcement#p001_b0001|Bx5 ACE route listing]].
 <!-- mta-wiki:writer:end -->

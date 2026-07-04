@@ -69,5 +69,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_x28-x38-bay-pkwy|X28/X38 Express bus]] is one of the bus routes serving the Bay Parkway and Cropsey Avenue corridor study area for a joint MTA and NYC DOT bus priority and safety improvements project. The study area covers Bay Parkway from Avenue J to Shore Parkway (2.4 miles) and Cropsey Avenue from Bay Parkway to 26th Avenue (0.6 miles), where approximately 35,000 daily bus riders use the B6, B82, and X28/X38 services along with connections to F, N, and D subway trains [[cite:bay_pkwy_cropsey_ave_jan2025#p004_c0002|Why Bay Parkway and Cropsey Avenue?]].
 
+Bus speeds on Bay Parkway have been documented as low as 3 miles per hour during the busiest hours, with double parking identified as a significant contributor to low speeds along the corridor [[cite:bay_pkwy_cropsey_ave_jan2025#p009_c0002|Double parking contributor]]. The corridor is also a Vision Zero Priority Corridor; between 2019 and 2023, 25 people were killed or seriously injured on Bay Parkway [[cite:bay_pkwy_cropsey_ave_nov2024#p004_c0002|Vision Zero data]].
+
+In the June 2025 draft proposal presented to Brooklyn Community Board 12, offset bus lanes were proposed for both Bay Parkway (between Avenue J and Cropsey Avenue) and Cropsey Avenue (between Bay Parkway and 26th Avenue), with the design customized block-by-block to balance tradeoffs and meet local needs [[cite:bay_pkwy_cropsey_ave_cb12_jun2025#p007_c0001|Offset bus lanes draft proposal heading]] [[cite:bay_pkwy_cropsey_ave_cb12_jun2025#p007_c0002|Offset bus lanes draft proposal details]]. The proposed implementation timeline targets late 2025 or 2026 [[cite:bay_pkwy_cropsey_ave_cb12_jun2025#p017_c0008|Proposed Implementation]].
+
+Earlier presentations to Community Board 11 (November 2024) and Community Board 12 (January 2025) provided background on existing conditions, demographics, and a bus priority toolkit [[cite:bay_pkwy_cropsey_ave_nov2024#p001_c0002|CB11 Transportation Committee]] [[cite:bay_pkwy_cropsey_ave_jan2025#p001_c0002|CB12 Transportation Committee]]. The Bay Parkway corridor was identified as a Bus Priority Corridor in the 2023 NYC Streets Plan Update and is within Tier 2 Priority Investment Areas [[cite:bay_pkwy_cropsey_ave_jan2025#p005_c0004|Bay Parkway Bus Priority Corridor]].
 <!-- mta-wiki:writer:end -->

@@ -97,5 +97,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+On December 8, 2025, the [[route:route_f-nyct-2025|F Subway Line]] and the M line implemented the first permanent change to the subway network since 2017, swapping their routes between Queens and Manhattan during weekdays [[cite:nyct_key_performance_metrics_doc194001#p004_c0007|F/M swap implementation]]. The rerouting sends F trains onto the 53rd Street line between Queens Plaza and 5 Av/53 St, while M trains use the 63rd Street line between 21 St-Queensbridge and 57 St [[cite:meeting_doc_186641#p001_c0005|F M swap proposal]]. The change affected eight stations in Queens and Manhattan and was expected to serve approximately 1.2 million daily riders on the E, F, M, and R lines with reduced delays, increased reliability, and eased crowding [[cite:nyct_key_performance_metrics_doc194001#p009_c0011|F/M swap expected benefits]].
 
+Earlier related investments include the 14 St F/M/L upgrades, listed as completed at the September 2024 MTA Board meeting [[cite:meeting_doc_152171#p005_c0006|14 St F/M/L Upgrades]]. A four-year signal modernization project along Queens Boulevard, serving the F along with the E, M, and R, was also wrapping up by late 2021, promising more frequent and reliable service [[cite:meeting_doc_65171#p005_c0006|Queens Boulevard signal modernization]].
 <!-- mta-wiki:writer:end -->

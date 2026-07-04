@@ -76,5 +76,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The B11 is a Brooklyn bus route that runs east-west through south Brooklyn, appearing in a 2015 listing of existing bus routes in the South Brooklyn Crosstown corridor [[cite:2015_06_17_brt_southbrooklyn_kickoff_boards#p002_c0005|B11 listed among south Brooklyn bus routes]]. In the ACE Routes Dataset, [[route:route_b11|B11]] is the alphabetically smallest route identifier among the dataset's [[metric:metric_route-cardinality-84|84 distinct routes]] [[cite:ace_routes_dataset_dictionary#p001_b0097|B11 identified as smallest route value]][[cite:ace_routes_dataset_dictionary#p001_b0099|Route column cardinality of 84]]. The B11 is enrolled in the MTA's Automated Camera Enforcement (ACE) program, under which bus-mounted cameras issue violations to vehicles that block bus lanes, obstruct bus stops, or double park along the route [[cite:mta_automated_camera_enforcement#p001_b0001|B11 listed on ACE bus routes page with program description]]. The ACE-enforced corridor for the B11 runs along 49 St, 50 St, two lettered avenues, and Bedford Av [[cite:mta_automated_camera_enforcement#p001_b0001|B11 ACE route listing with streets]].
 <!-- mta-wiki:writer:end -->

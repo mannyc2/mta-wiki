@@ -68,5 +68,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_s62-tsp-2017|S62 local bus route]] runs along Victory Boulevard on Staten Island. Transit Signal Priority (TSP) was first introduced in New York City on Victory Boulevard in 2006, using infrared line-of-sight technology [[cite:tsp_report_2017#p005_c0004|TSP first introduced on Victory Boulevard in 2006]]. That early TSP system is no longer active in New York City [[cite:tsp_report_2017#p005_c0004|early TSP no longer in use]].
 
+By July 2017, NYC DOT and MTA were planning a "Victory Boulevard extension" of TSP for the S62 and S92 routes [[cite:tsp_report_2017#p011_c0003|Victory Boulevard extension – S62, S92]]. NYC DOT reported it was ready to implement TSP along the S62 and S92 by the end of 2017, contingent on MTA's procurement of new bus technology [[cite:tsp_report_2017#p011_c0005|ready to implement S62/S92 by end of 2017]]. Later that month, NYC DOT Commissioner Polly Trottenberg announced the planned TSP expansion for the S62 and S92 along Victory Boulevard [[cite:tsp_status_2017#p001_b0001|S62 and S92 along Victory Boulevard in Staten Island]].
+
+As of early 2025, the S62 continued to operate as a local bus route along Victory Boulevard [[cite:victory_blvd_bay_st_wild_ave_winter2025#p008_c0004|S62 among Victory Boulevard local routes]].
 <!-- mta-wiki:writer:end -->

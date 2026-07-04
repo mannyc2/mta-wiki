@@ -77,5 +77,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[route:route_qm17-qbb-study|QM17 Express Bus Route]] is an express bus route serving Manhattan and Queens, operated by MTA Bus Company [[cite:201110_qbb_summary_recommendations#p010_c0005|QM17 listed at Third Ave and 57th St bus stop among QM routes]]. The route has a recorded daily ridership of 200 riders based on the Queensboro Bridge Bus Priority Study data [[cite:201110_qbb_approach_summary#p008_c0003|route daily table shows QM17: 200]]. It operates along Rockaway Beach Boulevard in Queens, where it is listed alongside the Q22, Q52 SBS, Q53 SBS, and QM16 routes [[cite:rockaway_beach_blvd_jun2019#p010_c0005|Rockaway Beach Blvd routes list includes QM17]].
 
+The QM17 appears in the Queensboro Bridge Bus Priority Study documentation as one of the express bus routes that use the QBB corridor. A study map of Third Avenue and 57th Street in Manhattan shows a QM17 bus stop on Third Avenue served by bus-only lanes, where bus weave maneuvers were identified as a concern [[cite:201110_qbb_summary_recommendations#p010_c0005|bus weave maneuver and QM17 stop on Third Ave]]. The Rockaway Beach Boulevard Improvements project, presented to Queens Community Board 14 in June 2019, identified QM17 as one of the routes served on the corridor [[cite:rockaway_beach_blvd_jun2019#p010_c0005|QM17 listed as served route on Rockaway Beach Blvd]].
 <!-- mta-wiki:writer:end -->

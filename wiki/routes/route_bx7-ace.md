@@ -77,5 +77,13 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_bx7-ace|Bx7]] is an MTA New York City Transit local bus route operating primarily on Riverdale Avenue and Broadway, serving the Bronx and Manhattan [[cite:mta_automated_camera_enforcement#p001_b0001|ACE route listing]]. It is one of five MTA bus routes (Bx7, Bx20, M5, M4, M100) that utilize the Broadway corridor between 157th Street and 220th Street, connecting to the 1, A, and C subway lines and Metro-North Railroad [[cite:broadway_157_st_220_st_cb12_mar2025#p005_c0002|corridor routes]].
 
+The corridor has been a focus of bus improvement efforts since at least 2019, when the Better Buses Action Plan identified Broadway as a priority corridor due to slow speeds and high ridership [[cite:better_buses_pdf_better_buses_broadway_improvements_cb8_2019#p004_c0002|Better Buses Action Plan priority]]. As of May 2024, the corridor carries roughly 30,000 riders across the five bus routes, with slow bus speeds between 4 and 7 mph for most of the day [[cite:broadway_157_st_220_st_cb12_mar2025#p004_c0002|corridor conditions]].
+
+The Bx7 carried approximately 13,257 weekday riders in 2018 [[cite:better_buses_pdf_better_buses_broadway_improvements_cb8_2019#p006_c0005|2018 weekday ridership]]. By 2024, on the slowest and highest-ridership segment between 171st and 186th Streets, over 15,000 daily riders shared the corridor [[cite:broadway_157_st_220_st_cb12_mar2025#p006_c0002|highest ridership segment]], matching the [[metric:metric_15000-daily-riders-171-186|15,000 daily riders between 171 and 186]] figure. Speeds on that same segment dipped as low as 4 MPH during peak hours [[cite:broadway_157_st_220_st_cb12_mar2025#p006_c0002|slowest speeds]].
+
+In 2019, a proposed design for the Broadway corridor included a bus queue jump signal at Exterior Street and 230th Street [[cite:better_buses_pdf_better_buses_broadway_improvements_cb8_2019#p015_c0001|queue jump proposal]]. As of March 2025, DOT continues to study bus and safety improvements on this corridor, presenting existing conditions to Community Board 12 and working on a design proposal [[cite:broadway_157_st_220_st_cb12_mar2025#p017_c0002|next steps]].
+
+The route is also listed on the MTA's automated camera enforcement page under the street label Riverdale Avenue / Broadway [[cite:mta_automated_camera_enforcement#p001_b0001|ACE page listing]].
 <!-- mta-wiki:writer:end -->

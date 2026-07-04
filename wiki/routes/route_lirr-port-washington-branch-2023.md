@@ -74,5 +74,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_lirr-port-washington-branch-2023|Port Washington Branch]] is an LIRR branch line operated by the MTA Long Island Rail Road [[cite:meeting_doc_164866#p001_c0002|entity name]] [[cite:meeting_doc_164866#p001_c0005|plan purpose]]. According to the LIRR's 2023 Annual Operating Report, the branch recorded an overall on-time performance of 95.3% in 2023, compared to 97.4% in 2022 and an annual goal of 96.3% [[cite:meeting_doc_133321#p004_c0001|OTP table]]. The branch achieved its highest on-time performance during off-peak weekday and weekend periods, both at 97.5% in 2023 [[cite:meeting_doc_133321#p004_c0001|OTP table]]. The [[metric:metric_lirr-elevator-overall-2023|Overall Elevator Availability 2023]] for the Port Washington Branch was 99.3% in 2023, up from 98.9% in 2022 [[cite:meeting_doc_133321#p007_c0004|elevator availability table]].
 
+Two track work programs involved the Port Washington Branch. In July 2023, the single main track between Great Neck and Port Washington was taken out of service for approximately 48 hours on the weekend of July 8-9 for rail replacement, track surfacing, track welding, and mud spot remediation, with bus service replacing trains [[cite:meeting_doc_113926#p001_c0008|summer trackwork program]]. In 2025, a March 3 timetable change included Track Surfacing on the Port Washington Branch among the projects supported during the schedule period [[cite:meeting_doc_164866#p001_c0006|March timetable change]].
 <!-- mta-wiki:writer:end -->

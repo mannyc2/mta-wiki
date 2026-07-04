@@ -60,5 +60,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The [[route:route_m31-ace|M31]] is a Manhattan bus route operating along York Avenue and 57th Street [[cite:mta_automated_camera_enforcement#p001_b0001|ACE route listing]]. Board materials reported Automated Camera Enforcement (ACE) activation on the route; the M31 and the B15 began their 60-day warning period on April 13 [[cite:meeting_doc_205546#p011_c0010|ACE activation on B15 and M31]]. The cited milestone described 60 ACE-enabled routes systemwide, with more than 1,700 ACE-equipped buses covering 560 miles of routes and benefiting over one million customers on an average weekday [[cite:meeting_doc_205546#p006_c0004|ACE milestone]]. The M31's ACE enrollment is part of this broader expansion intended to improve bus speeds, reduce collisions, and enhance service reliability through automated enforcement of bus lanes and bus stops [[cite:meeting_doc_205546#p011_c0010|ACE activation on B15 and M31]].
 <!-- mta-wiki:writer:end -->

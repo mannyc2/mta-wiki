@@ -86,5 +86,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_q60-ace|Q60 Local Bus Route]] is a local bus service between Manhattan and Queens using the Queensboro Bridge, primarily operating on Queens Blvd [[cite:mta_automated_camera_enforcement#p001_b0001|ACE route listing]]. The route carried an average of 2,710 weekday riders across both directions (1,430 eastbound, 1,280 westbound) in the 2010 study period [[cite:201110_qbb_approach_summary#p007_c0002|average weekday ridership table]].
 
+The Q60 was a subject of the 2010-2011 Queensboro Bridge Bus Priority Study, conducted by NYC DOT [[cite:201110_qbb_summary_recommendations#p001_c0001|NYC DOT logo and document title]]. The study identified a safety issue at the intersection of Second Avenue and 60th Street, where the Q60 turns left against traffic from the QBB during the same signal phase [[cite:201110_qbb_summary_recommendations#p006_c0003|Q60 left-turn conflict description]]. Two study recommendations directly addressed this corridor: Recommendation #1A, which proposed a special bus phase at 2nd Avenue and 60th Street to allow for the turn and reduce collision risk [[cite:201110_qbb_summary_recommendations#p007_c0006|special bus phase solution]]; and Recommendation #1B, which called for reconfiguring 60th Street to provide two westbound bus lanes and stops serving both the Q60 and Q101 [[cite:201110_qbb_summary_recommendations#p009_c0005|60th Street reconfiguration solution]]. Short-term study improvements were implemented in fall 2011 [[cite:201110_qbb_summary_recommendations#p004_c0012|fall 2011 implementation]].
+
+The Q60 is listed among the bus routes subject to MTA's Automated Camera Enforcement (ACE) program along Queens Blvd [[cite:mta_automated_camera_enforcement#p001_b0001|ACE route listing with major streets]].
 <!-- mta-wiki:writer:end -->

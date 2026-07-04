@@ -74,5 +74,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_lirr-port-jefferson-branch-2023|Port Jefferson Branch]] is a commuter rail branch of the MTA Long Island Rail Road, operating in [[cite:meeting_doc_133321#p004_c0001|Suffolk County]]. According to the LIRR's 2023 Annual Operating Report, the branch recorded an overall on-time performance of 90.9% in 2023, slightly down from 90.7% in 2022 and below the annual goal of 92.2% [[cite:meeting_doc_133321#p004_c0001|OTP table]]. Peak-period performance was notably lower, with AM Peak at 88.5% and PM Peak at 90.8%, while weekend service achieved 94.3% [[cite:meeting_doc_133321#p004_c0001|OTP table]].
 
+The branch's elevator availability was 99.0% in 2023, up slightly from 98.9% in 2022 [[cite:meeting_doc_133321#p007_c0004|elevator table]]. Escalator availability reached 98.1% in 2023, compared to 97.7% the prior year [[cite:meeting_doc_133321#p007_c0005|escalator table]]. These figures are near the system-wide averages recorded for [[metric:metric_lirr-elevator-overall-2023|Overall Elevator Availability 2023]] and [[metric:metric_lirr-escalator-overall-2023|Overall Escalator Availability 2023]].
+
+During summer 2023, the LIRR conducted a six-weekend concrete tie installation and track maintenance program on the single main track between Huntington and Port Jefferson, running from July 15-16 through August 19-20 [[cite:meeting_doc_113926#p001_c0008|summer trackwork program]]. Each weekend the track was taken out of service for approximately 48 hours, with bus service replacing trains, while crews installed concrete ties, replaced rail, upgraded switches, and performed track welding and surfacing [[cite:meeting_doc_113926#p001_c0008|summer trackwork program]].
+
+A March 2025 timetable change included Third Rail State of Good Repair work on the Port Jefferson Branch as one of the projects supported during that schedule period [[cite:meeting_doc_164866#p001_c0006|project list]].
 <!-- mta-wiki:writer:end -->

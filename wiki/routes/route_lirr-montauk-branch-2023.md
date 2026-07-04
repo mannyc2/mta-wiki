@@ -75,5 +75,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The Montauk Branch is operated by the MTA Long Island Rail Road [[cite:meeting_doc_100336#p001_c0002|LIRR]]. In the 2023 LIRR Annual Operating Report, the branch recorded an overall on-time performance of 90.8%, below the system-wide goal of 94.0% and down from 91.9% in 2022 [[cite:meeting_doc_133321#p003_c0004|Montauk Branch OTP 2023]]. Performance varied by period: AM Peak reached 90.6%, PM Peak 90.9%, and off-peak weekday service performed better at 93.0%, while weekend service measured 90.4% [[cite:meeting_doc_133321#p003_c0004|Montauk Branch OTP by period]].
 
+In December 2022, one of two main tracks between Valley Stream and Rockville Centre was taken out of service overnight for switch maintenance, requiring bus service on the West Hempstead Branch for approximately eight hours and schedule adjustments on the Babylon Branch [[cite:meeting_doc_100336#p001_c0008|Montauk Branch Switch Maintenance]]. Funding for this work was covered by the LIRR Operating and MTA Capital Program budgets [[cite:meeting_doc_100336#p001_c0010|Impact on Funding]].
+
+By mid-2025, a Montauk Branch Improvements initiative showed measurable runtime reductions on the SPK-MTK corridor: eastbound runtime decreased from 74.7 to 73.7 minutes (a 1-minute improvement), and westbound runtime decreased from 76.9 to 76.3 minutes (a 0.6-minute improvement) [[cite:meeting_doc_179531#p009_c0005|SPK-MTK Runtime chart]][[cite:meeting_doc_179531#p009_c0007|Total Improvement]].
 <!-- mta-wiki:writer:end -->

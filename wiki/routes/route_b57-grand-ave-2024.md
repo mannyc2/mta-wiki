@@ -68,5 +68,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_b57-grand-ave-2024|B57 bus]] is a Brooklyn local bus route identified as one of 10 bus routes operated from the MTA Grand Av Bus Depot in late 2024 community board presentations about the Grand St/Grand Av Safety & Bus Priority Improvements project [[cite:grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024#p007_c0005|B57 listed among depot routes]]. The depot handles 1,032 buses pulling in and out every weekday, with over 80 movements during the busiest hour, and the presentation noted significant operational difficulties for pull-in and pull-out due to truck traffic and congestion from the Grand St Bridge, resulting in longer wait times and less reliable service for riders [[cite:grand_ave_metropolitan_ave_queens_blvd_nov2024#p007_c0004|depot operations context]]. The corridor improvements studied along Grand Avenue between Metropolitan Avenue and Queens Boulevard were described as serving an area lacking direct subway service [[cite:grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024#p007_c0005|area lacking subway service]].
 
+The B57 route record is based solely on these mentions, which list the B57 alongside the B38, B47, B60, B62, and Q59 as routes served by the Grand Av Bus Depot [[cite:grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024#p007_c0005|depot route list]]. No route-specific data on ridership, frequency, stops, or running times for the B57 appears in these sources.
 <!-- mta-wiki:writer:end -->

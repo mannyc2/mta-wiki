@@ -76,5 +76,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[route:route_qm25-fresh-pond-rd|QM25]] is an express bus route in Queens, operating as part of a group of express routes (QM24/QM25/QM34) described as "Middle Village, Ridgewood & Glendale Express to Midtown/Downtown via LIE" [[cite:fresh_pond_rd_may2019#p006_c0002|Impacted Routes map]]. The route runs on the Fresh Pond Rd corridor, identified as a 2019 NYC DOT Better Buses priority project from Metropolitan Ave to Putnam Ave (about half a mile) due to slow bus speeds of 3.0 mph during the PM peak, compared to the Queens average of 6.4 mph, and high route ridership of approximately 30,000 daily riders across routes on the corridor [[cite:fresh_pond_rd_tc_jun2019#p005_c0002|Project Background]].
 
+A speed table from the May 2019 CB 5 Transportation Committee presentation shows [[route:route_qm25-fresh-pond-rd|QM25]] operating at low speeds in the southbound direction during afternoon and evening hours on this segment: 3.4 mph at 4:00 PM and 5:00 PM, 3.5 mph at 6:00 PM, and 5.2 mph at 7:00 PM [[cite:fresh_pond_rd_may2019#p008_c0003|Bus Speeds table]]. Slow bus speeds coincided with continuous southbound traffic backup in the afternoon and evening [[cite:fresh_pond_rd_tc_jun2019#p007_c0002|Corridor Overview]].
+
+Proposed improvements presented to Community Board 5 in June 2019 included a southbound-only curbside bus lane from Bleecker St to Putnam Ave, active during PM peak hours, along with bus stop consolidation and parking and loading changes [[cite:fresh_pond_rd_may2019#p018_c0002|Proposed curbside bus lane]]. The speed and ridership data from these 2019 presentations represents the available evidence for [[route:route_qm25-fresh-pond-rd|QM25]] operating conditions on this corridor as of mid-2019 [[cite:fresh_pond_rd_may2019#p008_c0003|Bus Speeds table]].
 <!-- mta-wiki:writer:end -->

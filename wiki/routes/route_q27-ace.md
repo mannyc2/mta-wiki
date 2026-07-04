@@ -60,5 +60,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The Q27 is a Queens local bus route operated by MTA New York City Transit, running primarily on Springfield Blvd / Rocky Hill Rd / 46 Av [[cite:mta_automated_camera_enforcement#p001_b0001|Q27 major streets]]. It is one of [[metric:metric_ace-active-routes|ACE active on 60 bus routes]], meaning Automated Camera Enforcement cameras on buses can issue civil penalties to vehicles blocking bus lanes or stopping at bus stops along its corridor [[cite:mta_automated_camera_enforcement#p001_b0001|Q27 listed as ACE route]].
 
+The Q27 is also one of [[metric:metric_brt-flushing-jamaica-oct2016-bus-routes-count|13 MTA bus routes using Main Street near Roosevelt Avenue]], where it connects to the 7 train at the Flushing–Main Street station [[cite:brt_flushing_jamaica_oct2016#p003_c0002|13 bus routes on Main St]]. This station sees more than 35,000 bus-to-subway transfers daily — the largest volume of any station in the city [[cite:brt_flushing_jamaica_oct2016#p003_c0002|bus-subway transfers at Main Street/Roosevelt Ave]].
+
+The route serves [[metric:metric_ace-near-bus-stop-access|98% of New Yorkers live within 1/4 mile of bus stop]] accessibility coverage and is part of the ACE program that benefits over 1 million weekday riders across the system [[cite:mta_automated_camera_enforcement#p001_b0001|ACE benefiting over 1M weekday riders]].
 <!-- mta-wiki:writer:end -->

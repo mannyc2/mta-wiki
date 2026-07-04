@@ -76,5 +76,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_q33-serves-lga-2011|Q33]] bus route served LaGuardia Airport as of June 2011, alongside the M60, Q47, Q48, and Q72 bus routes [[cite:110622_lga_aa_slides#p006_c0004|LGA served by M60, Q33, Q47, Q48 and Q72 bus routes]].
 
+During the November 2011 public workshop for the LaGuardia Airport Access Alternatives Analysis, riders reported that the Q33 was very slow along Roosevelt Avenue and suggested it would reach the airport much faster if routed along Northern Boulevard or Astoria Boulevard [[cite:2012_04_20_brt_lga_workshop_summary#p003_c0008|Q33 is very slow along Roosevelt Avenue]].
+
+The Q33 was also identified as a primary transit mode for airport employees, alongside the M60, with shift times affecting the ability to use transit [[cite:2012_10_lga_plan_one_pager#p002_c0012|Many employees ride transit, primarily the M60 and Q33]].
 <!-- mta-wiki:writer:end -->

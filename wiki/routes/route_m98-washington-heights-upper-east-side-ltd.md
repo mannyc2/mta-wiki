@@ -69,5 +69,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_m98-washington-heights-upper-east-side-ltd|M98]] is a Limited bus route in Manhattan, running between Washington Heights and the Upper East Side via Lexington Avenue [[cite:bus_forward_lex_ave_96th_60th_st_june2019#p008_c0002|bus-forward-lex-ave-96th-60th-st-june2019]]. A February 2025 report from the New York City Independent Budget Office found that the M98 ran at 8.5 miles per hour in December 2024, making it the fastest local bus service in Manhattan [[cite:speeding_up_slowly_2025#p009_c0003|speeding-up-slowly-2025]].
 
+The M98 shares the Lexington Avenue corridor between 96th Street and 60th Street with the M101, M102, and M103. As of a 2019 Bus Forward presentation, this segment carried 44,000 daily riders across all four routes, with buses scheduled every 3 minutes in both AM and PM peak periods and average speeds of 5.0 mph in the AM peak and 3.9 mph in the PM peak [[cite:bus_forward_lex_ave_96th_60th_st_june2019#p008_c0002|bus-forward-lex-ave-96th-60th-st-june2019]]. A May 2019 presentation to Community Board 8 reported the same ridership and speed figures [[cite:bus_forward_lex_ave_96th_60th_st_may2019#p008_c0002|bus-forward-lex-ave-96th-60th-st-may2019]].
+
+The M98 is classified as a Limited-stop route [[cite:speeding_up_slowly_2025#p005_c0009|speeding-up-slowly-2025]] and operates under MTA New York City Transit - Department of Buses. Related records for this source set describe Lexington Avenue bus lane enhancement proposals presented to Community Board 8 in May and June 2019, including an offset bus lane, turn bays, curb regulation updates, and bus boarding platforms for the M101 Limited stops nearby, though these proposals were not specifically targeted at the M98 route.
 <!-- mta-wiki:writer:end -->

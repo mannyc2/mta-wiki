@@ -60,5 +60,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[route:route_q17-ace|Q17]] is a Queens local bus route that serves Kissena Boulevard, Horace Harding Expressway, 188th Street, and Hillside Avenue [[cite:mta_automated_camera_enforcement#p001_b0001|ACE route listing]]. The route is one of [[metric:metric_ace-active-routes|ACE active on 60 bus routes]] under the MTA's Automated Camera Enforcement program, which issues civil penalties for bus lane and bus stop violations [[cite:mta_automated_camera_enforcement#p001_b0001|ACE program overview]]. It is also one of [[metric:metric_brt-flushing-jamaica-oct2016-bus-routes-count|13 MTA bus routes]] that use Main Street near Roosevelt Avenue in downtown Flushing [[cite:brt_flushing_jamaica_oct2016#p003_c0002|Main St bus routes]]. At that location, the bus-to-subway transfer point to the 7 train handles more than [[metric:metric_brt-flushing-jamaica-oct2016-bus-subway-transfers|35,000 bus to subway transfers]] daily, the largest volume of any station in the city [[cite:brt_flushing_jamaica_oct2016#p003_c0002|bus-subway transfer volume]].
 
+The Q17's listed streets and its inclusion in the ACE route set indicate it is subject to automated enforcement for bus lane and bus stop violations in Queens [[cite:mta_automated_camera_enforcement#p001_b0001|ACE route listing]].
 <!-- mta-wiki:writer:end -->

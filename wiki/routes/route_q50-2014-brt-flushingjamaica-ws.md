@@ -79,5 +79,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The Q50 is one of only two bus routes connecting Queens and the Bronx, according to community feedback from 2014 public workshops for the Flushing to Jamaica Select Bus Service project, alongside the Q44 [[cite:2014_brt_flushingjamaica_workshopsummary#p003_c0012|Flushing to Jamaica Workshop Summary]]. The [[route:route_q50-2014-brt-flushingjamaica-ws|Q50]] is a local bus route that crosses MTA bridges and was included in an MTA program to install front-of-bus bike racks on four local bus routes, along with the S53, S93, and Bx23 [[cite:meeting_doc_129371#p005_c0004|Extending Transit's Reach Update]]. Permanent bike racks were installed on the Q50 and the other three bridge-crossing local routes as part of MTA's bicycle access initiatives [[cite:meeting_doc_98651#p005_c0002|BPM Strategic Action Plan Presentation]].
 <!-- mta-wiki:writer:end -->

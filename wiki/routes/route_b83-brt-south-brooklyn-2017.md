@@ -81,5 +81,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_b83-brt-south-brooklyn-2017|B83]] is a local bus route that runs along Pennsylvania Avenue in Brooklyn and is among the five bus routes that the Pennsylvania Avenue corridor serves [[cite:brt_south_brooklyn_b82_dec2017#p023_c0002|Pennsylvania Ave serves 5 bus routes including B83]].
 
+As part of the B82 Southern Brooklyn Select Bus Service project, the B83 was identified alongside the B82 Local and express buses as a route that would benefit from faster, more reliable service through proposed offset bus lanes on Pennsylvania Avenue [[cite:brt_south_brooklyn_b82_jan2018#p019_c0003|Faster more reliable service for B83]]. The project proposed a two-way bus lane using extra lane space on Pennsylvania Avenue between Flatlands Avenue and Seaview Avenue, open to all buses, emergency vehicles, and right turns [[cite:brt_south_brooklyn_b82#p016_c0002|Pennsylvania Ave offset bus lane treatment]].
+
+Existing conditions on the Pennsylvania Avenue segment included slow bus speeds, long pedestrian crossings, and narrow concrete medians [[cite:brt_south_brooklyn_b82#p020_c0002|Pennsylvania Ave existing conditions]]. To address safety gaps, the project also proposed new pedestrian crossings with traffic signals at two locations on Pennsylvania Avenue -- at Delmar Loop and at Hornell Loop -- where more than 1,000 feet separated the nearest marked crosswalks [[cite:brt_south_brooklyn_b82_dec2017#p026_c0005|Delmar Loop pedestrian crossing gap]] [[cite:brt_south_brooklyn_b82_dec2017#p027_c0003|Hornell Loop pedestrian crossing gap]].
+
+The B83 documentation on this page is drawn from community board presentations prepared by NYC DOT and MTA NYCT between 2017 and early 2018 as part of the B82 Southern Brooklyn SBS project [[cite:brt_south_brooklyn_b82_jan2018#p017_c0002|Pennsylvania Ave serves 5 bus routes]].
 <!-- mta-wiki:writer:end -->

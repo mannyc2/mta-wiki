@@ -79,5 +79,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[route:route_q5-ace|Q5 on Merrick Boulevard, Queens (TSP in development)]] is a local bus route operating on Merrick Boulevard in Queens. A 2017 NYC DOT report listed the Q5 on Merrick Boulevard as a route in development for Transit Signal Priority (TSP), a technology that adjusts traffic signals in response to bus movements [[cite:tsp_status_2017#p001_b0001|DOT Releases Status Report on Transit Signal Priority]]. The same report noted that TSP most benefits two-way streets outside Manhattan and complements all-door boarding and dedicated bus lanes [[cite:tsp_status_2017#p001_b0001|TSP complements other measures]].
 
+The Q5 is included in the MTA's Automated Camera Enforcement (ACE) program, which uses bus-mounted cameras to issue violations to vehicles blocking bus lanes, bus stops, or double-parked along bus routes [[cite:mta_automated_camera_enforcement#p001_b0001|ACE bus routes listing Q5]]. The ACE program lists the Q5's major streets as Merrick Boulevard, with Hook Creek Boulevard and Sunrise Highway used on weekends only [[cite:mta_automated_camera_enforcement#p001_b0001|Q5, Merrick Blvd (and Hook Creek Blvd / Sunrise Highway on weekends only)]].
+
+In the Queens Bus Network Redesign Proposed Final Plan Addendum, published December 2024, the Q5 is described as the underlying local service for a rush route serving the Merrick Boulevard corridor, with local stop spacing between Rosedale and the corridor [[cite:queens_proposed_final_plan_addendum_2024#p006_c0004|Underlying local service provided by the Q5]]. The route provides local service along Merrick Boulevard and offers connections to key transfer points in Jamaica [[cite:queens_proposed_final_plan_addendum_2024#p006_c0004|Provides faster service to key transfer points in Jamaica]].
 <!-- mta-wiki:writer:end -->

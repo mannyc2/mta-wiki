@@ -55,5 +55,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The [[route:route_bee-line-62|Bee-Line 62]] is a Westchester County Bee-Line bus route operated by the Bee-Line Bus System, serving the Fordham Road corridor in the Bronx alongside MTA-operated routes [[cite:better_buses#p001_b0001|Bee-Line 60-62 buses on Fordham Road]]. It is one of nine bus routes on Fordham Road between the Major Deegan Expressway and Boston Road that together carry 93,700 average daily riders; the Bee-Line 60 and 61 also operate on this segment [[cite:fordham_rd_major_deegan_expwy_boston_rd_jun2021#p028_c0002|Bee-Line 60-62 on Fordham Rd]]. The Fordham Road corridor provides connections to the A, B/D, 1, 2/5, 4, and 6 subway lines and the Metro-North Railroad Harlem, Hudson, and New Haven Lines [[cite:fordham_rd_major_deegan_expwy_boston_rd_jun2021#p028_c0002|subway and Metro North connections]]. The Bee-Line 62 serves Bronx neighborhoods and provides transit access between the Bronx and Westchester County [[cite:fordham_rd_major_deegan_expwy_boston_rd_jun2021#p028_c0002|connections to Bronx, Manhattan, and Westchester destinations]].
 <!-- mta-wiki:writer:end -->

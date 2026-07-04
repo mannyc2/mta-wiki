@@ -77,5 +77,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_qm16-qbb-study|QM16 Express Bus Route]] is an express bus route between Manhattan and Queens, documented with a daily ridership of 140 riders during the Queensboro Bridge Bus Priority Study period in 2010-2011 [[cite:201110_qbb_approach_summary#p008_c0003|QM16 daily ridership 140]]. The route was included in the study's analysis of QM bus service at the intersection of Third Avenue and 57th Street, where it shares a stop with the QM15, QM17, QM18, and QM21 [[cite:201110_qbb_summary_recommendations#p010_c0005|Bus stop QM15 QM16 QM17 QM18 QM21]].
 
+The QM16 is also one of the routes operating on Rockaway Beach Boulevard, listed alongside the Q22, Q52 SBS, and Q53 SBS [[cite:rockaway_beach_blvd_jun2019#p010_c0005|Q22 Q52 SBS Q53 SBS QM16 QM17]]. The 3.7-mile Rockaway Beach Boulevard corridor, from Beach 116th Street to Beach 73rd Street, was identified as a priority 2019 project in the Better Buses Action Plan, with a combined daily ridership of 36,000 across all routes served [[cite:better_buses_action_plan_2019#p041_c0011|3.7 mile corridor routes served Q22 Q52/53 SBS QM16 total daily ridership 36,000]].
 <!-- mta-wiki:writer:end -->

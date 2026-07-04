@@ -52,5 +52,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_m96-ace|M96 Bus Route]] operates along 96th Street in Manhattan and is part of the Automated Camera Enforcement (ACE) program, listed as "M96, 96 St" among the active ACE bus routes [[cite:mta_automated_camera_enforcement#p001_b0001|ACE lists M96 on 96 St]]. [[metric:metric_ace-active-routes|ACE active on 60 bus routes]] and [[metric:metric_ace-weekday-riders|ACE benefiting over 1M weekday riders]].
 
+In December 2024, the New York City Department of Transportation announced the completion of a major redesign of Manhattan's 96th Street, adding 1.7 miles of bus lanes aimed at enhancing bus service speed and reliability for the 15,500 weekday riders along the M96 and M106 routes [[cite:meeting_doc_160446#p010_c0012|96th Street redesign project adds 1.7 miles of bus lanes]]. The project covers the stretch from Second Avenue to West End Avenue, including offset and curbside bus lanes in both directions to prevent vehicle blockages, pedestrian safety improvements, left-turn bays to streamline traffic flow, neighborhood loading zones, and treatments to reduce turning speeds [[cite:meeting_doc_160446#p011_c0008|project details include offset bus lanes, pedestrian safety, left-turn bays]].
+
+The MTA activated ACE on 34 routes that same year in partnership with NYC DOT and the NYC Department of Finance. By late November, all routes had transitioned from the warning period to issuing violations, with bus lane speeds increasing an average of 5%, a 20% reduction in collisions, and an estimated 5-10% reduction in emissions [[cite:meeting_doc_160446#p011_c0009|ACE activation results include 5% speed increase, 20% collision reduction]].
 <!-- mta-wiki:writer:end -->
