@@ -178,5 +178,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The Q21 Local is an existing local bus route in Queens along the Woodhaven / Cross Bay Boulevards corridor, documented during planning for the proposed Q52/Q53 Select Bus Service project. Multiple design workshop maps label it as the "Q21 Route" alongside the proposed SBS lines [[cite:2015_04_16_brt_woodhaven_dw1_presentation#p009_c0004|Q52 Route Q53 Route Q21 Route Q11 Route]]. At the Design Workshop #2, a map of proposed SBS routes included symbols for local stops used by routes including the Q21 [[cite:2015_04_23_brt_woodhaven_dw2_discussionmaterials#p001_c0003|map of proposed SBS routes]].
 
+Community feedback from the first public workshop recorded that "Q53 is fastest but Q11/21 is more frequent than Q52" [[cite:2014_woodhaven_crossbayblvd_public_workshop_summary#p005_c0009|local knowledge about route frequencies]]. In a community board presentation, residents identified it as "Important to maintain local bus service (Q11, Q21)" [[cite:2015_01_brt_woodhaven_cb9#p033_c0002|community feedback on maintaining local service]]. At the Liberty Avenue and Woodhaven Boulevard intersection, 3,627 daily bus boardings were counted across routes Q11, Q21, Q52, and Q53 combined [[cite:2015_06_09_brt_woodhaven_cb9#p013_c0003|boarding count at key intersection]]. The preferred design concept (Main Road Bus Lanes) called for all buses including local routes to use median stations [[cite:2015_04_23_brt_woodhaven_dw2_presentation#p013_c0008|all buses use median stations]].
+
+The Q21 Local operated alongside the Q11, Q52 Limited, and Q53 Limited on the corridor, and its continued role was discussed as part of the transition from limited-stop to Select Bus Service [[cite:2014_woodhaven_crossbayblvd_public_workshop_summary#p005_c0005|Q53, Q52, Q11, Q21 signal priority will make bus service better]].
 <!-- mta-wiki:writer:end -->

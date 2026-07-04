@@ -46,5 +46,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_flatbush-ave-brt-phase2|Flatbush Avenue Corridor]] was identified as one of 16 potential future Bus Rapid Transit corridors through the BRT Phase II planning study that the New York City Department of Transportation and MTA New York City Transit initiated in the fall of 2008 [[cite:brt_phase2_future_corridors_rpt#p002_c0003|BRT Phase II study initiated fall 2008]].
 
+NYCT and DOT first compiled a list of [[metric:metric_potential-corridors-over-40|over 40 potential BRT corridors]] from a citywide transit needs analysis and public feedback, then evaluated them on five primary criteria: community feedback, ridership potential, network benefits, bus lane and busway feasibility, and geographic diversity [[cite:brt_phase2_future_corridors_rpt#p003_c0003|Evaluation criteria and 16 corridors identified]].
+
+Public outreach in spring 2009 included seven workshops and an online survey, drawing [[metric:metric_workshop-participants-325|over 325 workshop participants]], [[metric:metric_community-business-groups-47|representatives from 47 community and business groups]], staff from [[metric:metric_elected-officials-offices-23|23 local elected officials' offices]], and [[metric:metric_survey-respondents-600|over 600 online survey respondents]] [[cite:brt_phase2_future_corridors_rpt#p002_c0006|Public outreach metrics]].
+
+The Flatbush Avenue Corridor appears as entry 8 in the table of BRT Phase II candidates but was not among the three short-listed corridors prioritized for the next planning effort, which were Webster Avenue/Third Avenue, Hillside Avenue, and LaGuardia/East Elmhurst [[cite:brt_phase2_future_corridors_rpt#p004_c0002|Flatbush Avenue Corridor listed as BRT Phase II candidate]] [[cite:brt_phase2_future_corridors_rpt#p003_c0005|Short list of three candidates]].
 <!-- mta-wiki:writer:end -->

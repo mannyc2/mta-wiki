@@ -200,5 +200,13 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_meeting-doc-106021-hudson-line|Hudson Line]] is a Metro-North Railroad commuter rail line serving Manhattan, the Bronx, and Hudson Valley counties along the Hudson River corridor. MTA Metro-North Railroad operates the line, as documented across multiple MTA board reports and financial plans [[cite:meeting_doc_106021#p001_c0001|February Financial Plan]] [[cite:meeting_doc_138236#p001_c0002|Metro-North Railroad]].
 
+The Hudson Line carried approximately 12.11 million riders in 2023, rising 21.2% from 2022 with about 1.0 million more rides [[cite:meeting_doc_138236#p001_c0004|2023 ridership summary]]. In 2024, Hudson Line ridership rose a further 13.8% from 2023, adding approximately 1.7 million more rides [[cite:meeting_doc_170821#p001_c0004|2024 ridership summary]]. Budget forecasts for 2026 projected total Hudson Line ridership of 14.150 million, with 4.929 million commutation and 9.221 million non-commutation trips [[cite:meeting_doc_160111#p008_c0002|ridership table]].
+
+The Hudson Line achieved 97.0% on-time performance in 2022, matching the railroad's 94.0% goal [[cite:meeting_doc_111726#p027_c0002|2022 OTP summary]]. By 2025 the overall on-time performance reached 98.1%, exceeding the 94.0% goal across all measured periods [[cite:meeting_doc_196921#p003_c0001|2025 performance table]].
+
+A schedule change effective October 5, 2025 introduced new "Super-Express" trains making the trip to and from Poughkeepsie Station in under 90 minutes, along with PM Peak and weekend adjustments to support Park Avenue Viaduct track work [[cite:meeting_doc_186726#p001_c0013|Super-Express trains]]. A subsequent schedule change effective March 29, 2026 made minor adjustments to off-peak weekday outbound trains to Poughkeepsie [[cite:meeting_doc_201556#p002_c0005|March 2026 adjustments]].
+
+In the event of an NJ Transit strike, the Hudson Line served as an alternative for West of Hudson customers, with additional train cars added, cross-honored fares and parking, and free bus and ferry connections [[cite:meeting_doc_171491#p003_c0003|strike contingency plan]]. A drive-to-Beacon option offered riders 12 morning AM rush trains with a 78-minute one-seat ride to Grand Central at 99.1% on-time performance [[cite:meeting_doc_171491#p004_c0005|Beacon alternative]].
 <!-- mta-wiki:writer:end -->

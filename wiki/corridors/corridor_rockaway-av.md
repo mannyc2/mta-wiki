@@ -32,5 +32,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+Rockaway Av is one of the 17 top-ranked corridors identified for potential bus priority street improvements in the MTA Brooklyn Bus Network Redesign [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p020_c0002|Draft Plan]]. The corridor was identified through a process that evaluated 49 Brooklyn corridors based on demand for bus service, bus performance, feasibility, the corridor's role in the transit network, and neighborhood demographics and equity metrics [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p019_c0008|corridor selection criteria]]. Rockaway Av appears in a list of 17 top-ranked corridors, alongside corridors such as Flatbush Av, Nostrand Av, Utica Av, and Church Av [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p020_c0004|top-ranked corridors]].
 
+[[metric:metric_bus-ridership-decline-2016-2019|Bus ridership in Brooklyn fell 14 percent from 2016 to 2019]] and [[metric:metric_avg-bus-speed-brooklyn-2019|average bus speeds in 2019 were 7.0 MPH]], reflecting systemic challenges that the corridor identification process aims to address [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p008_c0006|ridership decline]] [[cite:brooklyn_bus_network_draft_plan_without_route_profiles#p009_c0009|bus speeds]]. Specific speed or ridership data for Rockaway Av itself has not been located in the source document beyond its identification as a priority corridor for study.
 <!-- mta-wiki:writer:end -->

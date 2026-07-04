@@ -178,5 +178,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_q54|Q54]] is a local bus route that primarily operates along Jamaica Avenue and Metropolitan Avenue, serving both Queens and Brooklyn [[cite:mta_automated_camera_enforcement#p001_b0001|ACE route listing]]. It is part of the MTA's Automated Camera Enforcement (ACE) program (formerly the Automated Bus Lane Enforcement or ABLE program) [[cite:ace_routes_dataset_dictionary#p001_b0053|Q54 in ACE dataset]].
 
+The route carried an average daily ridership of 13,411 in 2024 [[cite:ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_sept2025#p002_c0002|Q54 daily ridership]]. In November 2023, the ABLE program was expanded to the Q54 along the Jamaica Avenue Busway, benefiting approximately 12,000 customers [[cite:meeting_doc_127471#p006_c0004|ABLE expansion to Q54]]. The route is listed among those subject to the MTA's on-bus mobile camera enforcement program [[cite:bus_lane_camera_report_2024#p008_c0004|Q54 in bus lane camera routes]].
+
+The Q54 is one of three routes (along with the Q58 and Q59) that together carry over 51,000 daily bus passengers in a study area focused on Grand Street and Grand Avenue safety and bus priority improvements between Metropolitan Avenue and Queens Boulevard [[cite:grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024#p004_c0002|Q54 in Grand St/Grand Av study area]]. That project was presented to Queens Community Board 4 in November 2024 and to Community Board 5 in December 2024 [[cite:grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024#p001_c0003|CB4 presentation Nov 2024]] [[cite:grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024#p001_c0003|CB5 presentation Dec 2024]].
+
+The route is also referenced in a June 2025 community board proposal for bus priority and safety improvements along Marcy Avenue between Borinquen Place and Broadway, where the Q54 is one of three Williamsburg Bridge Plaza-bound bus routes that experience delays and slower speeds [[cite:ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p002_c0002|Marcy Ave corridor confluence]].
 <!-- mta-wiki:writer:end -->

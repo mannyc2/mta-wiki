@@ -21,6 +21,24 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts` with combined
   hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
+### Bounded Writer Full-Slice Batch 03
+
+- Plan 012 full-slice batch 03 filled another `50` route/corridor writer regions, bringing the
+  post-sample full-slice total to `150` pages. Actual usage including one failed BM2 attempt and
+  retry: `51` writer runs, `355` provider requests, `13824915` input tokens, `218806` output
+  tokens, `36761039` cache-read tokens, `50804760` total tokens, estimated cost `$1.426253`.
+- STOPs handled before commit: an empty BM2 write rejected for missing citations and rerun cleanly;
+  value-as-label metric primitives on Stationary Bronx and Better Buses pages; one internal
+  frontmatter/payload wording cleanup; one range-like cite cleanup; one stationary/ABLE metric
+  mismatch on Stationary Brooklyn; and one Bx17 corridor-benefit overclaim tightened to context.
+- Generated a review note for the West 181st Street table/narrative completion-date conflict.
+- Batch review found `50` modified wiki pages, `0` validation issues, and no modified writer
+  headings, bullet lists, bad `cite:` targets, range-like cite targets, or lingering flagged
+  internal/review terms.
+- Batch gates passed: `bun run typecheck`; `bun run test` (`961 pass`, `1 skip`, `0 fail`);
+  `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts` with combined
+  hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ## 2026-07-03
 
 ### Remaining Plan Approval

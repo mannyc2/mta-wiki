@@ -44,5 +44,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+Through 2023, Hylan Boulevard was the only Staten Island corridor where New York City DOT installed stationary bus lane cameras as part of the citywide enforcement program [[cite:bus_lane_camera_report_2024#p007_c0010|Staten Island]] [[cite:bus_lane_camera_report_2024#p007_c0011|Hylan Boulevard*]]. The asterisk indicates that mobile ABLE (Automated Bus Lane Enforcement) cameras were also deployed on this corridor through 2023, supplementing the fixed camera coverage [[cite:bus_lane_camera_report_2024#p007_c0012|Mobile (ABLE) cameras also in use through 2023]]. Citywide, 188 fixed camera locations were installed at stationary sites through 2023, with 371 cameras (two per site) monitoring bus lane compliance [[cite:bus_lane_camera_report_2024#p006_c0004|fixed bus lane cameras 188 locations]] [[cite:bus_lane_camera_report_2024#p010_c0002|990 unique cameras 371 stationary 619 on-bus]]. The report also lists the S79-SBS among routes with mobile ABLE camera coverage, so Staten Island appears in both the fixed-corridor and on-bus enforcement inventories [[cite:bus_lane_camera_report_2024#p008_c0004|ABLE routes S79-SBS]].
 <!-- mta-wiki:writer:end -->

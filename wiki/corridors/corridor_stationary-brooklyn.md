@@ -56,5 +56,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+These thirteen Brooklyn corridors had DOT-operated stationary bus lane cameras as of 2023, with cameras installed at fixed locations along bus lanes to capture vehicles traveling illegally in the bus lane [[cite:bus_lane_camera_report_2024#p007_c0002|Brooklyn header]][[cite:bus_lane_camera_report_2024#p007_c0003|Brooklyn corridor list]][[cite:bus_lane_camera_report_2024#p006_c0003|stationary camera description]]. The stationary cameras use two overhead cameras per site: one captures the rear license plate and the other provides a wider street view to distinguish legal activity from violations [[cite:bus_lane_camera_report_2024#p006_c0003|stationary camera operation]].
 
+Streets with an asterisk—Bedford Avenue, Fulton Street, Jay Street, Nostrand Avenue, Rockaway Parkway, Rogers Avenue, and Utica Avenue—also had MTA-operated mobile (ABLE) cameras in use through 2023 [[cite:bus_lane_camera_report_2024#p007_c0012|ABLE mobile asterisk note]]. The stationary and mobile camera systems target different violation types: stationary cameras primarily capture driving-in-bus-lane violations, while ABLE cameras capture no standing/parking violations [[cite:bus_lane_camera_report_2024#p009_c0001|stationary vs ABLE violation types]]. Across all five boroughs, 188 stationary camera locations were installed through 2023 [[cite:bus_lane_camera_report_2024#p006_c0004|188 locations]].
+
+Citywide, over 36.1 million stationary camera events were recorded in 2022–2023, leading to 1,248,543 stationary notices of liability [[cite:bus_lane_camera_report_2024#p010_c0003|36,117,200 events]][[cite:bus_lane_camera_report_2024#p013_c0001|1,248,543 stationary NOLs]]. Of stationary violations issued across the same period, 92% were not challenged [[cite:bus_lane_camera_report_2024#p015_c0005|92% not challenged]].
 <!-- mta-wiki:writer:end -->

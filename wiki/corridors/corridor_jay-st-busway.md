@@ -77,5 +77,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The Jay Street Busway is a pilot project on Jay Street between Livingston Street and Tillary Street in Brooklyn, launched in August 2020 and operated Monday through Friday from 7am to 7pm [[cite:busways#p001_b0001|Busways page]] [[cite:jay_street_pilot_overview#p001_c0002|Jay Street Busway Pilot heading]]. The corridor carries seven bus routes with approximately 46,000 passengers each weekday [[cite:jay_street_pilot_overview#p002_c0004|Jay Street FAQ]] [[metric:metric_jay-st-weekday-riders|47,000 weekday riders]].
 
+Before the busway, midday bus speeds averaged 3.4 MPH in Fall 2019, with Jay Street described as congested and a bottleneck for buses [[cite:jay_street_pilot_overview#p002_c0004|Jay Street FAQ]] [[metric:metric_jay-st-midday-speed-2019|3.4 MPH speed]]. Through-access on the corridor is limited to buses, trucks, bicycles, and emergency vehicles; local access is permitted only from the east and west [[cite:busways#p001_b0001|Busways page]]. The project includes enhanced protected bicycle lanes on Jay Street and Smith Street [[cite:busways#p001_b0001|Busways page]].
+
+The pilot is part of the Better Buses Restart initiative and is guided by a Community Advisory Board over its one-year duration [[cite:jay_street_pilot_overview#p002_c0016|Community Outreach section]]. DOT committed to monitoring traffic and making adjustments as needed after implementation [[cite:jay_street_pilot_overview#p002_c0017|Post-implementation monitoring]]. For-hire vehicles such as taxis and Ubers are subject to the same restrictions as other automobiles and must approach from the east or west to pick up passengers [[cite:jay_street_pilot_overview#p002_c0014|For-hire vehicle FAQ]]. Diverted car traffic is expected to use parallel corridors Boerum Place/Adams Street and Flatbush Avenue [[cite:jay_street_pilot_overview#p002_c0006|Traffic diversion FAQ]].
 <!-- mta-wiki:writer:end -->

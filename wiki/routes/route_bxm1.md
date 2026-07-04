@@ -188,5 +188,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[route:route_bxm1|BxM1 Express Bus]] is an MTA express bus route connecting the Bronx and Manhattan [[cite:better_buses#p001_b0001|Better Buses page listing BxM1 among express routes]]. The 116th Street study materials list BxM1 among the routes serving the study area [[cite:116_st_morningside_ave_pleasant_ave_cb10_feb2025#p004_c0002|116th St study area route list]].
 
+The BxM1 is one of ten bus routes (alongside M3, M7, M102, M116, BxM6, BxM7, BxM8, BxM9, and BxM11) that operate within the NYC DOT 116th Street study area, a corridor encompassing 116th Street, Manhattan Avenue, Pleasant Avenue, and Morningside Avenue between 114th Street and 113th Street—a total of 2.2 miles [[cite:116_st_morningside_ave_pleasant_ave_cb10_feb2025#p004_c0002|study area description]]. Over 65,000 daily bus passengers use these routes, which provide critical crosstown connections to the 2, 3, 6, B, C subway lines [[cite:116_st_morningside_ave_pleasant_ave_cb10_feb2025#p004_c0002|study area connections]].
+
+The BxM1 also travels on Lexington Avenue between 60th Street and 52nd Street, where it is one of eight MTA bus routes (alongside M101, M102, M103, SIM11, SIM22, SIM26, and SIM6) operating on that segment [[cite:lexington_ave_60_st_52_st_sept2025#p004_c0002|Lexington Ave route list]]. On average, 71,000 daily riders depend on these routes, and the average bus speed on this segment is 6 mph overall and 5 mph during daytime hours [[cite:lexington_ave_60_st_52_st_sept2025#p004_c0002|project background]].
+
+The route is included in on-bus ridership data for the 116th Street bus priority study, which has identified slow bus speeds—less than 4 mph in some segments—and weekday congestion causing 785 hours of delay to M116 passengers daily [[cite:116_st_morningside_ave_pleasant_ave_cb9_jun2025#p006_c0002|slow bus speeds on 116th St]]. NYC DOT is exploring bus priority and pedestrian safety improvements in the area as part of the Better Buses program [[cite:better_buses#p001_b0001|Better Buses program description]].
 <!-- mta-wiki:writer:end -->

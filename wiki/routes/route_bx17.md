@@ -156,5 +156,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[route:route_bx17|Bx17 (NYCT)]] is a local Bronx bus route operated by MTA New York City Transit, serving the Fordham Road corridor between Port Morris and Fordham Plaza [[cite:meeting_doc_160441#p004_c0004|Bx17 service description]] [[cite:bx_cb5_projects_dec032019#p025_c0003|Fordham corridor routes]]. On the Fordham Road corridor, which carries multiple bus routes, average bus speeds were measured at 6.8 mph during the AM peak and 5.9 mph during the PM peak [[cite:bx_cb5_projects_dec032019#p025_c0003|Fordham corridor bus speeds]].
 
+The Fordham Road corridor carries approximately 85,000 average daily bus riders across five routes — Bx12 SBS, Bx12 Local, Bx9, Bx17, and Bx22 [[cite:fordham_rd_inwood_cb7_jun2023#p004_c0002|85,000 daily riders on 5 routes]] [[cite:fordham_rd_inwood_cb11_jun2023#p004_c0002|same figure]]. The [[route:route_bx17|Bx17]] itself has an estimated 7,600 daily riders [[cite:fordham_rd_inwood_cb6_jun2023#p007_c0002|Bx17 daily ridership]].
+
+Automated Bus Lane Enforcement (ABLE) cameras were deployed on the Bx12 SBS along Fordham Road in November 2022; by April 2023, Fordham Road average bus speeds increased by 4.7% [[cite:fordham_rd_inwood_cb11_jun2023#p016_c0004|ABLE speed change table]]. That [[metric:metric_able-speed-change-april2023|Bx12 SBS Speed Change +4.7% in April 2023 after ABLE]] metric is specific to Bx12 SBS, so it is useful here only as Fordham Road corridor context, not as a Bx17-specific result. In a separate service action, the Bx17 received frequency increases and running time adjustments on the Port Morris–Fordham Plaza segment [[cite:meeting_doc_160441#p004_c0004|Bx17 service changes]].
 <!-- mta-wiki:writer:end -->
