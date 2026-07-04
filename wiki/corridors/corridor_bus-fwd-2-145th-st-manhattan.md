@@ -35,5 +35,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+W 145th St from Amsterdam Av to Adam C Powell Blvd in Manhattan is a local bus priority corridor listed in the Bus Forward plan, where NYC DOT and the MTA committed to addressing issues affecting bus speed [[cite:bus_forward_2#p011_c0002|W 145th St corridor listing]] [[cite:bus_forward_2#p011_c0001|bus speed corridor introduction]]. The plan noted that the agencies would examine a first round of priority corridors through planning and outreach over the following year, with expected implementation in 2018 and 2019 [[cite:bus_forward_2#p010_c0004|implementation timeline]]. At the time the plan was published, [[metric:metric_bus-forward-2-avg-bus-speed|average bus speeds citywide]] were 7.4 mph and [[metric:metric_bus-forward-2-commercial-districts-speed|bus speeds in busy commercial districts]] were below 4 mph, providing the broader context for the priority-corridor approach [[cite:bus_forward_2#p003_c0002|citywide bus speed context]].
 
+This corridor is one of several Manhattan segments identified alongside corridors in the Bronx, Brooklyn, Queens, and Staten Island for the next phase of Select Bus Service and local bus priority improvements [[cite:bus_forward_2#p004_c0002|21 candidate SBS corridors]] [[cite:bus_forward_2#p005_c0001|full corridor list by borough]]. As a source-stated corridor record, its specific treatment components, route assignments, and implementation status beyond the Bus Forward planning document have not been established in the available evidence.
 <!-- mta-wiki:writer:end -->

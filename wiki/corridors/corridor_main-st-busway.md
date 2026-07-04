@@ -44,5 +44,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[corridor:corridor_main-st-busway|Main Street Busway]] in Queens is one of the busiest busways in New York City by ridership, serving approximately 155,000 weekday riders [[cite:busways#p001_b0001|155,000 weekday riders]] ([[metric:metric_main-st-weekday-riders|Main Street Busway weekday ridership]]). The busway operates on Main Street between Sanford Avenue and Northern Boulevard (northbound) or 37th Avenue (southbound), and on Kissena Boulevard between Sanford Avenue and Main Street, with restrictions in effect from 6am to 7pm seven days a week [[cite:busways#p001_b0001|Main Street Busway limits and hours]]. Only buses, trucks, and emergency vehicles have through-access along the corridor, while local traffic may enter but must turn at the next available right, except at 41st Avenue where a left turn is permitted [[cite:busways#p001_b0001|through-access vehicles and local access rules]].
 
+The busway was implemented in two phases: the southbound direction began in March 2017, and the northbound direction followed in January 2021 [[cite:busways#p001_b0001|southbound and northbound start dates]]. Its weekday ridership of approximately 155,000 riders is substantially higher than that of other NYC busways such as the [[metric:metric_14th-st-weekday-riders|14th Street Busway]] (approximately 32,000 weekday riders), the [[metric:metric_jay-st-weekday-riders|Jay Street Busway]] (approximately 47,000 weekday riders), and the [[metric:metric_tremont-ave-riders|Tremont Avenue Busway]] (over 34,000 daily riders) [[cite:busways#p001_b0001|comparative busway ridership figures]].
+
+The busway is administered by NYC DOT, which publishes corridor information through its Busways program page alongside other Queens corridors such as the Jamaica Avenue Busway and Archer Avenue Busway [[cite:busways#p001_b0001|NYC DOT Busways page]].
 <!-- mta-wiki:writer:end -->

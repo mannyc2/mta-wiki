@@ -122,5 +122,13 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_pascack-valley-line-2023-ridership|Pascack Valley Line]] carried 0.44 million riders in 2023, up from 0.37 million in 2022, an increase of 18.5% [[cite:meeting_doc_138236#p002_c0006|2023 Annual Ridership table]]. The line's 0.44 million rides were part of the 1.01 million total West of Hudson ridership for 2023; Port Jervis Line ridership was 0.57 million the same year [[cite:meeting_doc_138236#p002_c0006|2023 Annual Ridership table]].
 
+Ridership continued to grow into 2024. The Pascack Valley Line carried 0.50 million riders in 2024, up 11.9% from 0.44 million in 2023, while the Port Jervis Line rose 3.1% to 0.59 million; combined West of Hudson ridership reached 1.09 million, a 7.0% increase from 2023 [[cite:meeting_doc_170821#p002_c0006|2024 vs 2023 table]]. The 2024 West of Hudson total of 1.09 million remained 1.0 million below the record 2.1 million set in 2008 [[cite:meeting_doc_170821#p001_c0004|2024 Ridership Report summary]]. Over the longer term, Pascack Valley Line ridership in 2024 was 23% higher than in 1990 [[cite:meeting_doc_170821#p005_c0005|West of Hudson trends]].
+
+In a Fall 2023 NJ TRANSIT customer satisfaction survey, Pascack Valley Line customers rated overall satisfaction at 89%, compared to 88% for Port Jervis Line customers and 86% for the rest of Metro-North customers [[cite:meeting_doc_146946#p003_c0002|Customer satisfaction survey results]].
+
+Operationally, the Pascack Valley Line achieved 95.2% on-time performance in 2025, exceeding the 94.0% goal, with AM Peak OTP at 97.3% [[cite:meeting_doc_196921#p008_c0002|2025 West of Hudson Performance Summary]]. A 2025 MTA Board presentation noted that a potential NJ Transit strike would affect West of Hudson Metro-North riders on the Pascack Valley and Port Jervis Lines, and identified the Nanuet Station as a key access point with 9 morning AM rush trains and an 84-minute trip to Secaucus Transfer and NY Penn Station [[cite:meeting_doc_171491#p002_c0001|Strike impact slide]] [[cite:meeting_doc_171491#p005_c0003|Nanuet Station alternatives]].
+
+The MTA Metro-North February Financial Plan for 2026-2029 forecasts combined West of Hudson ridership (encompassing both the Pascack Valley and Port Jervis Lines) at 1.117 million for 2025, dipping slightly to 1.084 million in the 2026 adopted budget, and remaining near 1.09 million through 2029 [[cite:meeting_doc_199096#p010_c0002|Ridership and Revenue table]] [[cite:meeting_doc_199096#p010_c0003|West of Hudson note]].
 <!-- mta-wiki:writer:end -->

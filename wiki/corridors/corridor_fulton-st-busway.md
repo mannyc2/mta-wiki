@@ -40,5 +40,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The [[corridor:corridor_fulton-st-busway|Fulton Street Busway, Brooklyn]] is a bus-only corridor on Fulton Street between Adams Street and Flatbush Avenue that operates 24 hours a day, seven days a week [[cite:busways#p001_b0001|NYC DOT Busways page]]. Only buses have through-access along the busway; truck loading zones are located on adjacent streets, and all vehicles may use short sections of Fulton Street to make north-south connections [[cite:busways#p001_b0001|NYC DOT Busways page]]. The busway serves approximately 40,000 weekday riders [[cite:busways#p001_b0001|NYC DOT Busways page]] ([[metric:metric_fulton-st-weekday-riders|Fulton Street Busway weekday ridership]]). It was first launched in the 1970s, making it one of New York City's oldest busways [[cite:busways#p001_b0001|NYC DOT Busways page]]. The corridor is managed by NYC DOT as part of the city's busway program, which aims to improve bus speed and reliability by restricting general traffic while permitting transit and freight priority [[cite:busways#p001_b0001|NYC DOT Busways page]]. Unlike many newer busways that operate only during peak hours, the Fulton Street Busway is enforced around the clock [[cite:busways#p001_b0001|NYC DOT Busways page]].
 <!-- mta-wiki:writer:end -->

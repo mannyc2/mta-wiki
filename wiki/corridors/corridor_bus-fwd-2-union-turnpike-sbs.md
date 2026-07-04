@@ -33,5 +33,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+[[corridor:corridor_bus-fwd-2-union-turnpike-sbs|Union Turnpike (SBS candidate P)]] was identified as one of 21 candidate corridors for the next phase of Select Bus Service expansion as part of the BUSFORWARD 2017 plan produced by NYC DOT in partnership with the MTA [[cite:bus_forward_2#p004_c0002|21 candidate SBS corridors identified]] [[cite:bus_forward_2#p001_c0001|BUSFORWARD 2017]]. The corridor is designated candidate corridor P and is located in Queens [[cite:bus_forward_2#p005_c0001|Union Turnpike as corridor P]]. The plan was developed in response to 2015 and 2017 City Council legislation calling for an updated SBS implementation plan and broader transit improvements [[cite:bus_forward_2#p002_c0001|2015 legislation for SBS update]] [[cite:bus_forward_2#p002_c0002|May 2017 legislation for transit improvements]]. The Citywide Transit Plan built on the 2009 BRT plan to expand the SBS network and identify complementary projects beyond BRT based on changes in transit use, land use, and demographics [[cite:bus_forward_2#p002_c0003|Citywide Transit Plan builds on 2009 BRT plan]]. No further implementation detail, route alignments, or timeline specific to the Union Turnpike corridor has been recorded from this source.
 <!-- mta-wiki:writer:end -->

@@ -122,5 +122,13 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_port-jervis-line-2023-ridership|Port Jervis Line]] is a Metro-North Railroad West of Hudson commuter rail line. In 2023, the line carried approximately 0.57 million rides, up 9.0% from the 0.52 million rides in 2022 [[cite:meeting_doc_138236#p002_c0006|2023 Ridership Table]]. The line was part of 1.01 million total West of Hudson rides in 2023, which rose 12.9% from 2022 [[cite:meeting_doc_138236#p002_c0006|2023 West of Hudson Total]].
 
+In 2024, Port Jervis Line ridership reached approximately 0.59 million, a 3.1% increase from 2023, while total West of Hudson ridership grew to 1.09 million, up 7.0% from the prior year [[cite:meeting_doc_170821#p002_c0006|2024 Ridership Table]]. A financial plan note confirms that West of Hudson total ridership combines both the Pascack Valley and Port Jervis lines [[cite:meeting_doc_199096#p010_c0003|West of Hudson Ridership Note]].
+
+A Fall 2023 NJ TRANSIT customer satisfaction survey found that Port Jervis customers reported 88% satisfaction, slightly below the 89% for Pascack Valley customers and comparable to the 86% satisfaction score for other Metro-North customers in the Fall 2023 Customers Count survey [[cite:meeting_doc_146946#p003_c0002|Fall 2023 Satisfaction Survey]].
+
+Because Port Jervis Line service depends on NJ Transit-operated tracks, a potential NJ Transit strike threatened service to the line; Metro-North prepared contingency plans including cross-honored fares and parking on the Hudson and Harlem Lines [[cite:meeting_doc_171491#p002_c0001|NJ Transit Strike Impact]]. For example, from Salisbury Mills Station on the Port Jervis Line, riders had a choice of 5 morning AM rush trains taking 87 minutes to Secaucus Transfer and NY Penn, with a March on-time performance of 90.9% [[cite:meeting_doc_171491#p004_c0003|Salisbury Mills Service Details]].
+
+In 2025, the Port Jervis Line recorded an overall on-time performance of 92.9%, improving from 90.9% in 2024, though still below the 94.0% goal [[cite:meeting_doc_196921#p008_c0002|2025 West of Hudson Performance Summary]]. AM Peak OTP reached 93.6% (up from 90.3%) and PM Peak OTP reached 94.1% (up from 89.2%) [[cite:meeting_doc_196921#p008_c0002|2025 Port Jervis OTP Details]].
 <!-- mta-wiki:writer:end -->

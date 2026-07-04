@@ -131,5 +131,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_s78-hylan-2010|S78 local bus]] is one of the primary local bus routes on the Hylan Boulevard corridor on Staten Island. Along with the S79 local bus, the S78 carried approximately 16,000 daily trips on the corridor [[cite:2010_12_02_brt_hylan_open_house_slides#p004_c0004|16,000 trips/day on S78 and S79]]. The Hylan Boulevard corridor is also served by eight express bus routes [[cite:2014_hylan_blvd_final_report#p003_c0005|corridor served by S78 local and eight express bus routes]].
 
+When the S79 was converted to Select Bus Service on September 2, 2012, the S78 continued to serve all local stops, with added service to accommodate riders who would have fewer stops on the S79 SBS [[cite:2012_08_hylan_start_of_service_flyer#p001_c0002|S78 will continue to serve local stops with added service]] [[cite:2012_08_hylan_start_of_service_flyer#p002_c0013|Local stops served by S59 and S78 with added service]] [[cite:201106_hylan_slides#p022_c0006|S78 and S59 continue to serve all local stops]]. As part of the SBS plan, the S78 was rerouted via Steuben Street [[cite:2012_03_15_brt_hylan_meeting_slides#p008_c0005|S78 rerouted via Steuben Street]].
+
+At stakeholder meetings, some customers expressed concern that the local S78 would become overcrowded due to the greater stop spacing on the S79 SBS. To address this, frequency and service span were increased on the S78 [[cite:2014_hylan_blvd_final_report#p007_c0008|frequency and service span increased on S78]]. Customer satisfaction surveys conducted before (June 2012) and after (April 2013) implementation showed a noticeable improvement in service perceptions, particularly on the S79 but also among S78 riders [[cite:2014_hylan_blvd_final_report#p018_c0009|noticeable improvement in service perceptions]].
+
+The [[metric:metric_s78-travel-time-customer-post|S78 customer self-reported travel time after SBS]] decreased from 27.9 minutes to 23.7 minutes based on the post-implementation survey [[cite:2014_hylan_blvd_final_report#p019_c0003|S78 travel times decreased from 27.9 to 23.7 minutes]].
 <!-- mta-wiki:writer:end -->

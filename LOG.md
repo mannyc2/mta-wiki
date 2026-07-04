@@ -58,6 +58,22 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts` with combined
   hash `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
+### Bounded Writer Full-Slice Batch 05
+
+- Plan 012 full-slice batch 05 filled another `50` route/corridor writer regions, bringing the
+  post-sample full-slice total to `250` pages. Actual usage: `50` writer runs, `329` provider
+  requests, `7338567` input tokens, `170465` output tokens, `22883167` cache-read tokens,
+  `30392199` total tokens, estimated cost `$0.767950`.
+- STOPs handled before commit: primitive-label verifier failures on Jamaica Avenue, Van Sinderen
+  Av/Fulton St, and Park Avenue Sector 2; one Church Avenue local/SBS scope wording cleanup.
+- Batch review found `50` modified wiki pages, `0` writer-edit/citation issues across `370`
+  citations, and no modified writer headings, bullet lists, bad `cite:` targets, range-like cite
+  targets, or lingering flagged internal/review terms.
+- Batch gates passed: `bun run typecheck`; `bun run test` (`961` pass, `1` skip,
+  `0` fail); `bun run validate` with `Issues: 0`; and
+  `bun scripts/determinism-anchor.ts` with combined hash
+  `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ## 2026-07-03
 
 ### Remaining Plan Approval

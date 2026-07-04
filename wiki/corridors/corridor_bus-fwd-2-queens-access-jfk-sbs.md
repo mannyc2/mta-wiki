@@ -34,5 +34,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+"Queens Access to JFK" (SBS candidate T) is one of 21 candidate corridors identified by NYC DOT and the MTA for the next phase of Select Bus Service expansion, listed under the Queens borough in the Bus Forward 2017 plan [[cite:bus_forward_2#p005_c0001|SBS candidate corridor list]]. It was designated as corridor "T" in the plan, alongside eight other Queens candidate corridors (labels M through T) [[cite:bus_forward_2#p005_c0001|SBS candidate corridor list]]. The corridor was identified through data analysis and public feedback including workshops, on-street surveying, and online input as part of the broader effort to grow the SBS network and improve job access across the city [[cite:bus_forward_2#p004_c0002|21 candidate corridors identified]]. No specific route alignment, proposed treatments, or implementation timeline for this corridor have been published in the source document.
 <!-- mta-wiki:writer:end -->

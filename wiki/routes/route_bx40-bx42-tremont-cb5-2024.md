@@ -134,5 +134,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_bx40-bx42-tremont-cb5-2024|Bx40/42]] is a local Bronx bus route that serves Tremont Avenue east of Rosedale Avenue, as part of straight, direct routing implemented in June 2022 under the Tremont Avenue Bus Priority Improvements project [[cite:tremont_ave_bus_priority_cab1_dec2022#p007_c0002|CAB Meeting #1 – December 2022]]. As part of those changes, the Bx36 and Bx40/42 no longer switch streets at Webster Avenue [[cite:tremont_ave_bus_priority_cb5_mar2024#p006_c0002|CB5 Presentation – March 2024]]. Bus stop consolidation on the corridor improved travel time and reliability [[cite:tremont_ave_bus_priority_cb6_feb2024#p006_c0002|CB6 Presentation – February 2024]].
 
+Earlier, during the Webster Avenue Select Bus Service project, the Bx40/42 was one of the routes whose stops were relocated to Valentine Avenue, alongside the Bx36, to accommodate new SBS station placements and bus bulbs at the East Tremont Avenue intersection [[cite:2013_03_sbs_webster_bx_cb5#p033_c0003|CB5 Webster SBS – March 2013]] [[cite:2014_03_20_brt_webste_cb5#p024_c0002|CB5 Webster SBS – March 2014]]. By October 2022, MTA reported that simplified routing of the Bx11, Bx24, Bx36, and Bx40/Bx42 had led to reduced travel times [[cite:meeting_doc_98311#p005_c0008|NYCT Key Performance Metrics – October 2022]].
+
+The route is one of several served by the Tremont Avenue corridor, which the 2019 Bronx Bus Network Final Plan identified as a 6.8-mile corridor with a combined daily route ridership of 69,000 across routes including the Bx4A, Bx9, Bx18, Bx36, Bx40, and Bx42 [[cite:bronx_bus_network_final_plan_2019#p032_c0004|Bronx Bus Network Final Plan – 2019]]. The Tremont Avenue Bus Priority Improvements project continues NYC DOT and MTA bus service work on the corridor [[cite:tremont_ave_bus_priority_cab1_dec2022#p007_c0002|CAB Meeting #1 – December 2022]].
 <!-- mta-wiki:writer:end -->

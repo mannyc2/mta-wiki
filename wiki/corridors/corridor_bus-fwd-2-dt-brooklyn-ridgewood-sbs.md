@@ -34,5 +34,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+This corridor is one of 21 candidate corridors identified by NYC DOT and the MTA for the next phase of Select Bus Service, as part of the Bus Forward 2017 citywide plan [[cite:bus_forward_2#p004_c0002|21 candidate SBS corridors identified]]. Listed as corridor "I" and labeled "Downtown Brooklyn to Ridgewood," it is one of five Brooklyn candidate SBS corridors in the plan [[cite:bus_forward_2#p005_c0001|Brooklyn corridors list]]. The corridor was identified through data analysis and public feedback including workshops, on-street surveying, and online outreach [[cite:bus_forward_2#p004_c0002|identification process]]. The broader SBS program, which this corridor feeds into, has produced speeds 10-30% faster on existing SBS routes and about a 10% ridership increase [[cite:bus_forward_2#p003_c0004|SBS performance results]], while citywide average bus speed was 7.4 mph at the time of the plan [[cite:bus_forward_2#p003_c0002|average bus speed 7.4 mph]]. No specific bus routes or street alignments are named in the source for this corridor; the corridor name alone defines its geography between [[corridor:corridor_bus-fwd-2-dt-brooklyn-ridgewood-sbs|Downtown Brooklyn and Ridgewood]].
 <!-- mta-wiki:writer:end -->

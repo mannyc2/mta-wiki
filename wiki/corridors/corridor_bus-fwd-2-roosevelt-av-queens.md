@@ -35,5 +35,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The corridor [[corridor:corridor_bus-fwd-2-roosevelt-av-queens|Roosevelt Av, Queens (82nd St to 74th St)]] is one of several local bus priority corridors identified in the Bus Forward plan for examination and potential bus speed improvements [[cite:bus_forward_2#p011_c0002|Roosevelt Av from 82nd St to 74th St]]. NYC DOT and the MTA stated they would address issues affecting bus speed on this and other corridors, noting that the list was subject to change during planning and evaluation [[cite:bus_forward_2#p011_c0001|list of corridors is subject to change]].
 
+The Bus Forward plan, published by NYC DOT in 2017, was developed in response to 2015 and 2017 City Council legislation calling for an updated Select Bus Service plan and complementary transit improvements [[cite:bus_forward_2#p002_c0001|2015 legislation for SBS update]] [[cite:bus_forward_2#p002_c0002|May 2017 legislation for transit improvements]]. At that time, citywide average bus speed was 7.4 mph and below 4 mph in busy commercial districts [[cite:bus_forward_2#p003_c0002|average bus speed 7.4 mph]], with [[metric:metric_bus-forward-2-nearly-2-5-million-daily-riders|nearly 2.5 million daily bus riders]] [[cite:bus_forward_2#p003_c0002|Nearly 2.5 million New Yorkers ride buses every day]].
+
+This corridor is a short segment running from 82nd Street to 74th Street along Roosevelt Avenue in Queens [[cite:bus_forward_2#p011_c0002|Roosevelt Av from 82nd St to 74th St]]. Its inclusion on the Bus Forward corridor list placed it alongside other Queens priority corridors such as Jamaica Avenue from 153rd St to 162nd St and Fresh Pond Road from Metropolitan Avenue to Putnam Avenue [[cite:bus_forward_2#p011_c0002|Queens corridor list]]. The plan anticipated that a first round of these priority corridors would undergo planning and outreach over the following year, with implementation expected in 2018 and 2019 [[cite:bus_forward_2#p010_c0004|expected implementation in 2018 and 2019]].
+
+The corridor record describes this as a local bus priority corridor being examined for bus speed improvements [[cite:bus_forward_2#p011_c0002|Roosevelt Av from 82nd St to 74th St]]. The specific bus routes that operate on this Roosevelt Avenue segment are not identified in the Bus Forward document.
 <!-- mta-wiki:writer:end -->

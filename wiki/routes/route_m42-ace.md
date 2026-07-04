@@ -147,5 +147,11 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_m42-ace|M42]] is a Manhattan local bus route providing crosstown service along 42nd Street [[cite:42nd_st_cb4_jun192019#p006_c0003|M42 Manhattan Route]]. As of 2019, it was one of eight MTA bus routes using 42nd Street, carrying approximately 16,000 daily passengers alongside six Staten Island express routes (SIM8, SIM8X, SIM22, SIM25, SIM26, SIM30) and the X68 Queens route, with up to 210 buses per hour traveling along the corridor [[cite:42nd_st_cb6_jun032019#p007_c0003|8 routes use 42nd St]]. [[metric:metric_bus-people-79-percent|Buses carry 79% of people on 42nd St using 33% of street space]] [[cite:42nd_st_cb4_jun192019#p008_c0002|buses carry 79% of people]].
 
+The 42nd Street corridor was identified as a Bus Forward priority in 2017 and became project 06 in the Better Buses Action Plan (April 2019), with the corridor running 2.0 miles from 12th Avenue to FDR Drive [[cite:better_buses_action_plan_2019#p029_c0005|42nd St project background]]. Average bus speeds at that time were 4.2 mph in the AM peak and 2.9 mph in the PM peak [[cite:better_buses_action_plan_2019#p029_c0006|corridor stats]].
+
+Running time data from mid-2019 shows M42 end-to-end travel times nearly double overnight levels throughout the day [[cite:42nd_st_cb4_jun192019#p010_c0005|nearly double overnight]]. Eastbound weekday running time ranges from [[metric:metric_m42-eb-weekday-overnight-running-time|18.8 minutes overnight (12-6am)]] to [[metric:metric_m42-eb-weekday-10am-3pm-running-time|34.4 minutes midday (10am-3pm)]]; westbound weekday peak reaches [[metric:metric_m42-wb-weekday-3-7pm-running-time|35.2 minutes in the 3-7pm period]] [[cite:42nd_st_cb4_jun192019#p010_c0003|M42 running time table]]. On average, M42 buses spend more than 40% of their time stalled in traffic or at red lights [[cite:42nd_st_cb4_jun192019#p010_c0005|40% time stalled]].
+
+The 42nd Street Transit Improvements project, jointly presented by NYC DOT and MTA New York City Transit to Community Boards 4, 5, and 6 in June 2019, proposed offset bus lanes at all times, seven-second bus queue jump signals, quick kurb installations, turn bays, and extended turn restrictions at key intersections [[cite:42nd_st_cb6_sep042019#p012_c0002|proposed treatments at Lexington Ave]].
 <!-- mta-wiki:writer:end -->
