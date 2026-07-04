@@ -3,23 +3,24 @@
 - Release: v1-rc5
 - Sources: 10
 - Self diff: no
-- Overall agreement: 0.28% (2/722)
+- Overall exact-record agreement: 0.28% (2/722)
+- Overall field agreement: 20.18% (1720/8522)
 
 ## Agreement By Kind
 
-| Kind | Expected | Actual | Match | Field mismatch | Missing | Extra | Agreement |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| claim | 57 | 36 | 0 | 13 | 44 | 23 | 0.00% |
-| corridor | 10 | 11 | 0 | 10 | 0 | 1 | 0.00% |
-| entity | 34 | 19 | 0 | 14 | 20 | 5 | 0.00% |
-| event | 57 | 35 | 0 | 23 | 34 | 12 | 0.00% |
-| metric_claim | 163 | 91 | 1 | 77 | 85 | 13 | 0.61% |
-| project | 13 | 7 | 0 | 6 | 7 | 1 | 0.00% |
-| relation | 252 | 92 | 0 | 13 | 239 | 79 | 0.00% |
-| route | 51 | 45 | 0 | 44 | 7 | 1 | 0.00% |
-| source | 10 | 8 | 0 | 8 | 2 | 0 | 0.00% |
-| source_gap | 2 | 0 | 0 | 0 | 2 | 0 | 0.00% |
-| treatment_component | 73 | 30 | 1 | 20 | 52 | 9 | 1.37% |
+| Kind | Expected | Actual | Match | Field mismatch | Missing | Extra | Exact Agreement | Field Agreement |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| claim | 57 | 36 | 0 | 13 | 44 | 23 | 0.00% | 13.15% |
+| corridor | 10 | 11 | 0 | 10 | 0 | 1 | 0.00% | 47.77% |
+| entity | 34 | 19 | 0 | 14 | 20 | 5 | 0.00% | 14.73% |
+| event | 57 | 35 | 0 | 23 | 34 | 12 | 0.00% | 27.09% |
+| metric_claim | 163 | 91 | 1 | 77 | 85 | 13 | 0.61% | 27.88% |
+| project | 13 | 7 | 0 | 6 | 7 | 1 | 0.00% | 19.79% |
+| relation | 252 | 92 | 0 | 13 | 239 | 79 | 0.00% | 4.56% |
+| route | 51 | 45 | 0 | 44 | 7 | 1 | 0.00% | 39.25% |
+| source | 10 | 8 | 0 | 8 | 2 | 0 | 0.00% | 47.33% |
+| source_gap | 2 | 0 | 0 | 0 | 2 | 0 | 0.00% | 0.00% |
+| treatment_component | 73 | 30 | 1 | 20 | 52 | 9 | 1.37% | 16.30% |
 
 ## Top Mismatch Fields
 
@@ -48,18 +49,18 @@
 
 ## Agreement By Source
 
-| Source | Expected | Actual | Match | Field mismatch | Missing | Extra | Agreement |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| 116_st_morningside_ave_pleasant_ave_cb10_feb2025 | 96 | 53 | 0 | 38 | 58 | 15 | 0.00% |
-| 116_st_morningside_ave_pleasant_ave_cb10_jun2025 | 84 | 34 | 0 | 20 | 64 | 14 | 0.00% |
-| 116_st_morningside_ave_pleasant_ave_cb10_may2025 | 91 | 51 | 1 | 33 | 57 | 17 | 1.10% |
-| 116_st_morningside_ave_pleasant_ave_cb11_mar2025 | 74 | 32 | 0 | 27 | 47 | 5 | 0.00% |
-| 116_st_morningside_ave_pleasant_ave_cb11_may2025 | 98 | 49 | 0 | 26 | 72 | 23 | 0.00% |
-| 14th_street_busway | 33 | 22 | 0 | 13 | 20 | 9 | 0.00% |
-| 14th_street_busway_brochure | 35 | 16 | 0 | 9 | 26 | 7 | 0.00% |
-| 2009_05_13_brt_1st2nd_cac1 | 36 | 53 | 0 | 26 | 10 | 27 | 0.00% |
-| 2010_01_14_brt_1st2nd_cac3 | 99 | 49 | 0 | 24 | 75 | 25 | 0.00% |
-| 2010_04_29_brt_1st2nd_cac4 | 76 | 15 | 1 | 12 | 63 | 2 | 1.32% |
+| Source | Expected | Actual | Match | Field mismatch | Missing | Extra | Exact Agreement | Field Agreement |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 116_st_morningside_ave_pleasant_ave_cb10_feb2025 | 96 | 53 | 0 | 38 | 58 | 15 | 0.00% | 23.36% |
+| 116_st_morningside_ave_pleasant_ave_cb10_jun2025 | 84 | 34 | 0 | 20 | 64 | 14 | 0.00% | 10.55% |
+| 116_st_morningside_ave_pleasant_ave_cb10_may2025 | 91 | 51 | 1 | 33 | 57 | 17 | 1.10% | 19.87% |
+| 116_st_morningside_ave_pleasant_ave_cb11_mar2025 | 74 | 32 | 0 | 27 | 47 | 5 | 0.00% | 28.46% |
+| 116_st_morningside_ave_pleasant_ave_cb11_may2025 | 98 | 49 | 0 | 26 | 72 | 23 | 0.00% | 17.21% |
+| 14th_street_busway | 33 | 22 | 0 | 13 | 20 | 9 | 0.00% | 24.54% |
+| 14th_street_busway_brochure | 35 | 16 | 0 | 9 | 26 | 7 | 0.00% | 13.60% |
+| 2009_05_13_brt_1st2nd_cac1 | 36 | 53 | 0 | 26 | 10 | 27 | 0.00% | 49.79% |
+| 2010_01_14_brt_1st2nd_cac3 | 99 | 49 | 0 | 24 | 75 | 25 | 0.00% | 14.39% |
+| 2010_04_29_brt_1st2nd_cac4 | 76 | 15 | 1 | 12 | 63 | 2 | 1.32% | 14.61% |
 
 ## Diagnostic Examples
 

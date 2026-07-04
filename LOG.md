@@ -21,6 +21,10 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   Plan 014's `<75%` STOP floor. Compared with the prior projection-v2 run, relation endpoint
   remapping reduced extras from `154` to `144` and missing records from `502` to `492`, but
   field mismatches rose to `228` because more relation records became comparable.
+- Follow-up replay-report instrumentation exposed true field-level agreement alongside exact
+  record agreement; the same no-spend run scored `1720/8522` fields (`20.18%`) overall, with
+  relation fields at `4.56%`, metric fields at `27.88%`, route fields at `39.25%`, and source
+  fields at `47.33%`. This confirms the STOP is not merely an exact-record matching artifact.
 - Top mismatch classes remain extraction/schema-granularity issues, not provider spend gates:
   `payload.description` (`177`), `payload.scope` (`64`), `payload.metric_name` (`54`),
   `payload.raw_value_text` (`53`), route companion/name/scope fields, `evidence_refs` (`43`),

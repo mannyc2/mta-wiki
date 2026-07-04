@@ -80,6 +80,8 @@ export type ReplayDiffEntry = {
   expected_record_id?: string | undefined;
   actual_record_id?: string | undefined;
   match_key?: string | undefined;
+  field_total?: number | undefined;
+  field_match?: number | undefined;
   fields?: string[] | undefined;
   field_values?: Array<{ field: string; expected: string; actual: string }> | undefined;
 };
@@ -116,6 +118,9 @@ export type ReplayKindAgreement = {
   missing: number;
   extra: number;
   agreement_rate: number | null;
+  field_total: number;
+  field_match: number;
+  field_agreement_rate: number | null;
 };
 
 export type ReplaySourceAgreement = ReplayKindAgreement & {
@@ -601,14 +606,26 @@ function fieldDiffs(expected: ReplayProjectedRecord, actual: ReplayProjectedReco
   return fields.filter((field) => left.get(field) !== right.get(field));
 }
 
-function fieldDiffDetails(expected: ReplayProjectedRecord, actual: ReplayProjectedRecord) {
+function fieldCount(record: ReplayProjectedRecord) {
+  const fields = new Map<string, string>();
+  flatten(comparableRecord(record) as JsonValue, "", fields);
+  return fields.size;
+}
+
+function fieldComparisonSummary(expected: ReplayProjectedRecord, actual: ReplayProjectedRecord) {
   const left = new Map<string, string>();
   const right = new Map<string, string>();
   flatten(comparableRecord(expected) as JsonValue, "", left);
   flatten(comparableRecord(actual) as JsonValue, "", right);
-  return sortedUnique([...left.keys(), ...right.keys()])
+  const fields = sortedUnique([...left.keys(), ...right.keys()]);
+  const fieldValues = fields
     .filter((field) => left.get(field) !== right.get(field))
     .map((field) => ({ field, expected: left.get(field) ?? "undefined", actual: right.get(field) ?? "undefined" }));
+  return {
+    field_total: fields.length,
+    field_match: fields.length - fieldValues.length,
+    field_values: fieldValues,
+  };
 }
 
 function shortFieldValue(value: string) {
@@ -638,6 +655,8 @@ export function diffReplay(expected: ReplayProjectedRecord[], actual: ReplayProj
       expected_record_id: expectedItem.record.v1_record_id,
       actual_record_id: actualItem.record.v1_record_id,
       match_key: firstSharedKey(expectedItem, actualItem),
+      field_total: fieldCount(expectedItem.record),
+      field_match: fieldCount(expectedItem.record),
     });
   }
 
@@ -658,19 +677,23 @@ export function diffReplay(expected: ReplayProjectedRecord[], actual: ReplayProj
         record_kind: expectedItem.record.record_kind,
         expected_record_id: expectedItem.record.v1_record_id,
         match_key: expectedItem.coarseKeys[0],
+        field_total: fieldCount(expectedItem.record),
+        field_match: 0,
       });
       continue;
     }
     unmatchedActual.delete(paired.index);
-    const fieldValues = fieldDiffDetails(expectedItem.record, paired.candidate.record);
+    const fieldSummary = fieldComparisonSummary(expectedItem.record, paired.candidate.record);
     entries.push({
       status: "field_mismatch",
       record_kind: expectedItem.record.record_kind,
       expected_record_id: expectedItem.record.v1_record_id,
       actual_record_id: paired.candidate.record.v1_record_id,
       match_key: firstSharedKey(expectedItem, paired.candidate),
-      fields: fieldValues.map((field) => field.field),
-      field_values: fieldValues.map((field) => ({ field: field.field, expected: shortFieldValue(field.expected), actual: shortFieldValue(field.actual) })),
+      field_total: fieldSummary.field_total,
+      field_match: fieldSummary.field_match,
+      fields: fieldSummary.field_values.map((field) => field.field),
+      field_values: fieldSummary.field_values.map((field) => ({ field: field.field, expected: shortFieldValue(field.expected), actual: shortFieldValue(field.actual) })),
     });
   }
 
@@ -757,7 +780,7 @@ function readBaselineDir(dir: string) {
 }
 
 function blankAgreement(): ReplayKindAgreement {
-  return { expected: 0, actual: 0, match: 0, field_mismatch: 0, missing: 0, extra: 0, agreement_rate: null };
+  return { expected: 0, actual: 0, match: 0, field_mismatch: 0, missing: 0, extra: 0, agreement_rate: null, field_total: 0, field_match: 0, field_agreement_rate: null };
 }
 
 function addAgreement(target: ReplayKindAgreement, diff: ReplayDiffResult, kind?: MtaObservationKind) {
@@ -769,6 +792,9 @@ function addAgreement(target: ReplayKindAgreement, diff: ReplayDiffResult, kind?
   target.expected += entries.filter((entry) => entry.status !== "extra").length;
   target.actual += entries.filter((entry) => entry.status !== "missing").length;
   target.agreement_rate = target.expected === 0 ? null : target.match / target.expected;
+  target.field_total += entries.reduce((sum, entry) => sum + (entry.field_total ?? 0), 0);
+  target.field_match += entries.reduce((sum, entry) => sum + (entry.field_match ?? 0), 0);
+  target.field_agreement_rate = target.field_total === 0 ? null : target.field_match / target.field_total;
 }
 
 function agreementForDiff(sourceId: string, diff: ReplayDiffResult): ReplaySourceAgreement {
@@ -890,21 +916,32 @@ export function replayReportMarkdown(report: ReplayReport) {
     `- Release: ${report.release_id}`,
     `- Sources: ${report.source_count}`,
     `- Self diff: ${report.self_diff ? "yes" : "no"}`,
-    `- Overall agreement: ${percent(report.totals.agreement_rate)} (${report.totals.match}/${report.totals.expected})`,
+    `- Overall exact-record agreement: ${percent(report.totals.agreement_rate)} (${report.totals.match}/${report.totals.expected})`,
+    `- Overall field agreement: ${percent(report.totals.field_agreement_rate)} (${report.totals.field_match}/${report.totals.field_total})`,
     "",
     "## Agreement By Kind",
     "",
-    "| Kind | Expected | Actual | Match | Field mismatch | Missing | Extra | Agreement |",
-    "|---|---:|---:|---:|---:|---:|---:|---:|",
+    "| Kind | Expected | Actual | Match | Field mismatch | Missing | Extra | Exact Agreement | Field Agreement |",
+    "|---|---:|---:|---:|---:|---:|---:|---:|---:|",
   ];
   for (const [kind, row] of Object.entries(report.by_kind).sort(([a], [b]) => a.localeCompare(b))) {
-    lines.push(`| ${kind} | ${row.expected} | ${row.actual} | ${row.match} | ${row.field_mismatch} | ${row.missing} | ${row.extra} | ${percent(row.agreement_rate)} |`);
+    lines.push(
+      `| ${kind} | ${row.expected} | ${row.actual} | ${row.match} | ${row.field_mismatch} | ${row.missing} | ${row.extra} | ${percent(row.agreement_rate)} | ${percent(row.field_agreement_rate)} |`,
+    );
   }
   lines.push("", "## Top Mismatch Fields", "", "| Field | Count |", "|---|---:|");
   for (const [field, count] of Object.entries(report.mismatch_fields_top).slice(0, 20)) lines.push(`| ${field} | ${count} |`);
-  lines.push("", "## Agreement By Source", "", "| Source | Expected | Actual | Match | Field mismatch | Missing | Extra | Agreement |", "|---|---:|---:|---:|---:|---:|---:|---:|");
+  lines.push(
+    "",
+    "## Agreement By Source",
+    "",
+    "| Source | Expected | Actual | Match | Field mismatch | Missing | Extra | Exact Agreement | Field Agreement |",
+    "|---|---:|---:|---:|---:|---:|---:|---:|---:|",
+  );
   for (const row of report.source_rows) {
-    lines.push(`| ${row.source_id} | ${row.expected} | ${row.actual} | ${row.match} | ${row.field_mismatch} | ${row.missing} | ${row.extra} | ${percent(row.agreement_rate)} |`);
+    lines.push(
+      `| ${row.source_id} | ${row.expected} | ${row.actual} | ${row.match} | ${row.field_mismatch} | ${row.missing} | ${row.extra} | ${percent(row.agreement_rate)} | ${percent(row.field_agreement_rate)} |`,
+    );
   }
   lines.push("", "## Diagnostic Examples", "", "### Field Mismatches", "", "| Source | Kind | Expected | Actual | Key | Fields |", "|---|---|---|---|---|---|");
   for (const example of report.diagnostic_examples.field_mismatches.slice(0, 10)) {

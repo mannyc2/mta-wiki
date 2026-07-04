@@ -258,8 +258,13 @@ describe("replay report", () => {
     expect(result.report.totals.match).toBe(1);
     expect(result.report.totals.field_mismatch).toBe(1);
     expect(result.report.totals.extra).toBe(1);
+    expect(result.report.totals.field_match).toBe(14);
+    expect(result.report.totals.field_total).toBe(21);
+    expect(result.report.totals.field_agreement_rate).toBe(14 / 21);
     expect(result.report.by_kind.metric_claim?.agreement_rate).toBe(0);
+    expect(result.report.by_kind.metric_claim?.field_agreement_rate).toBe(6 / 7);
     expect(result.report.by_kind.relation?.agreement_rate).toBe(1);
+    expect(result.report.by_kind.relation?.field_agreement_rate).toBe(1);
     expect(result.report.source_rows).toEqual([
       {
         source_id: "source_a",
@@ -270,6 +275,9 @@ describe("replay report", () => {
         missing: 1,
         extra: 1,
         agreement_rate: 1 / 3,
+        field_match: 14,
+        field_total: 21,
+        field_agreement_rate: 14 / 21,
       },
     ]);
     expect(result.report.mismatch_fields_top["payload.value"]).toBe(1);
