@@ -83,6 +83,32 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   unchanged at combined `fadaab4b3f428835c1d2fe2fbf2266798cc7e965e71d111539283f62c786a048`.
 - No provider-backed LLM calls were made.
 
+### Plan 019 Calibration Spend Gate
+
+- Owner approval for Plan 019 provider spend, recorded verbatim: "I give you permission for the
+  llm spend."
+- Calibration dry-run estimate for Pioneer DeepSeek V4 Flash: `231` rows (`181` seeded-defect
+  fixtures plus `50` human-calibration records), batch size `10`, estimated cost `$0.025087`.
+
+### Plan 019 Stopped: Calibration Below Threshold
+
+- Ran the owner-approved Plan 019 calibration as `plan019-calibration-20260704` with Pioneer
+  DeepSeek V4 Flash. Actual usage: `24` requests, `96438` input tokens, `77004` output tokens,
+  estimated cost `$0.025045`. Verdicts are in
+  `data/quality/calibration/plan019-calibration-verdicts.jsonl`; score reports are
+  `data/quality/calibration/plan019-calibration-20260704.{json,md}`.
+- STOP outcome: calibration failed, so no 1,000-record pilot or full corpus sweep was run.
+  Human agreement was `43/50` (`86.00%`, threshold `90.00%`); seeded recall overall was
+  `63/131` (`48.09%`, threshold `85.00%`); seeded critical recall was `31/50` (`62.00%`,
+  threshold `90.00%`); control false-flag was `1/50` (`2.00%`, threshold `<=5.00%`) and passed.
+- Seeded recall by class: value perturbation `25/25` PASS; endpoint sibling swap `6/25`,
+  lifecycle flip `0/6`, period shift `16/25`, unit swap `2/25`, wrong-block recite `14/25`
+  all FAIL. Prompt iteration requires a bumped `prompt_version` plus fresh owner-gated
+  calibration; no silent retune or rerun was performed.
+- STOP-state gates passed: `bun run typecheck`; `bun run test` (`981` pass, `1` skip, `0`
+  fail); `bun run validate` with `Issues: 0`; and `bun scripts/determinism-anchor.ts`
+  unchanged at combined `fadaab4b3f428835c1d2fe2fbf2266798cc7e965e71d111539283f62c786a048`.
+
 ### Plan 014 Stopped: V2 Extract Pilot Below Replay Bar
 
 - Added a no-spend replay-boundary fix for Plan 014: v2 extract boundary output now runs

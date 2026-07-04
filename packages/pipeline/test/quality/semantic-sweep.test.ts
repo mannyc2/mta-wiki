@@ -7,6 +7,7 @@ import {
   judgeInputFromFixture,
   parseSemanticSweepResults,
   promptForSemanticSweepBatch,
+  readFixtureJudgeInputs,
   runSemanticSweep,
   semanticSweepLedgerPath,
   type SemanticSweepJudge,
@@ -111,5 +112,37 @@ describe("semantic sweep", () => {
     expect(prompt).toContain("record_a");
     const parsed = parseSemanticSweepResults('```json\n{"results":[{"record_id":"record_a","verdict":"unsupported","relied_on_span":"x","rationale":"y"}]}\n```');
     expect(parsed).toEqual([{ record_id: "record_a", verdict: "unsupported", relied_on_span: "x", rationale: "y" }]);
+  });
+
+  it("reads fixture inputs and can write to a non-corpus ledger", async () => {
+    const rootDir = join(work, "fixture-ledger");
+    const fixturePath = join(rootDir, "fixture.jsonl");
+    mkdirSync(rootDir, { recursive: true });
+    await Bun.write(
+      fixturePath,
+      `${JSON.stringify({
+        record_id: "seed_a",
+        record_kind: "claim",
+        display_name: "Seed claim",
+        payload: { claim_text: "Bus lanes improved speeds" },
+        evidence: [{ source_id: "source_a", block_id: "p001_c0001", block_text: "Bus lanes improved speeds", source_quote: "Bus lanes improved speeds" }],
+      })}\n`,
+    );
+    const inputs = readFixtureJudgeInputs(fixturePath);
+    expect(inputs).toHaveLength(1);
+    const summary = await runSemanticSweep({
+      rootDir,
+      runId: "fixture-run",
+      inputs,
+      ledgerPath: "data/quality/calibration/fixture-verdicts.jsonl",
+      judge: async (batch) => ({
+        results: batch.map((input) => ({ record_id: input.record_id, verdict: "supported", relied_on_span: "Bus lanes improved speeds", rationale: "Direct span." })),
+        usage: { requests: 1, input_tokens: 10, output_tokens: 5, estimated_cost_usd: 0.000001 },
+      }),
+    });
+    expect(summary.ledger_path).toBe("data/quality/calibration/fixture-verdicts.jsonl");
+    expect(existsSync(semanticSweepLedgerPath(rootDir))).toBe(false);
+    expect(readLedger(rootDir)).toHaveLength(0);
+    expect(existsSync(join(rootDir, "data/quality/calibration/fixture-verdicts.jsonl"))).toBe(true);
   });
 });

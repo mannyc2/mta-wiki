@@ -7,8 +7,8 @@ import { openCanonicalDb } from "@mta-wiki/db/canonical-db";
 import { sha256, stableHash, stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonObject, JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
 import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
-import { evidenceBlockText } from "@mta-wiki/pipeline/quality/release-quality";
-import type { JudgeVerdict } from "@mta-wiki/pipeline/quality/judge-calibration";
+import { evidenceBlockText, readReleaseRecords } from "@mta-wiki/pipeline/quality/release-quality";
+import { calibrationFixtureDir, type JudgeVerdict } from "@mta-wiki/pipeline/quality/judge-calibration";
 
 export const SEMANTIC_SWEEP_PROMPT_VERSION = "semqa-v1";
 export const SEMANTIC_SWEEP_METHOD = "llm_record_vs_cited_block";
@@ -114,6 +114,7 @@ export type SemanticSweepOptions = {
   model?: string | undefined;
   inputs?: SemanticSweepJudgeInput[] | undefined;
   judge?: SemanticSweepJudge | undefined;
+  ledgerPath?: string | undefined;
   now?: () => Date;
 };
 
@@ -188,6 +189,10 @@ function semanticSweepRoot(rootDir = repoRoot) {
 
 export function semanticSweepLedgerPath(rootDir = repoRoot) {
   return join(rootDir, SEMANTIC_SWEEP_LEDGER);
+}
+
+function resolvePath(path: string, rootDir = repoRoot) {
+  return path.startsWith("/") ? path : join(rootDir, path);
 }
 
 export function semanticSweepRunSummaryPath(runId: string, rootDir = repoRoot) {
@@ -297,6 +302,28 @@ export function judgeInputFromFixture(row: {
   return { ...input, content_key: semanticSweepContentKey(input) };
 }
 
+export function readFixtureJudgeInputs(path: string, rootDir = repoRoot): SemanticSweepJudgeInput[] {
+  return readJsonl<{
+    record_id: string;
+    record_kind: string;
+    display_name: string;
+    payload: JsonObject;
+    evidence: SemanticSweepEvidence[];
+  }>(resolvePath(path, rootDir)).map((row) => judgeInputFromFixture(row));
+}
+
+export function humanCalibrationJudgeInputs(rootDir = repoRoot, releaseId = "v1-rc5"): SemanticSweepJudgeInput[] {
+  const rows = readJsonl<{ record_id: string }>(join(calibrationFixtureDir(rootDir), "human-50.jsonl"));
+  const records = new Map(readReleaseRecords(releaseId, rootDir).map((record) => [record.record_id, record]));
+  return rows.map((row) => {
+    const record = records.get(row.record_id);
+    if (!record) throw new Error(`Human calibration record ${row.record_id} not found in release ${releaseId}`);
+    const input = judgeInputFromRecord(record, rootDir);
+    if (!input) throw new Error(`Human calibration record ${row.record_id} is not judgeable`);
+    return input;
+  });
+}
+
 export function exposureFirstRecordIds(rootDir = repoRoot): string[] {
   const dbPath = join(rootDir, "data", "canonical.db");
   const db = openCanonicalDb(dbPath, { readonly: true });
@@ -403,6 +430,7 @@ function defaultRunId(now = new Date()) {
 
 function summaryFor(options: {
   rootDir: string;
+  ledgerPath: string;
   runId: string;
   dryRun: boolean;
   candidateCount: number;
@@ -422,7 +450,7 @@ function summaryFor(options: {
   return {
     run_id: options.runId,
     dry_run: options.dryRun,
-    ledger_path: relative(options.rootDir, semanticSweepLedgerPath(options.rootDir)),
+    ledger_path: relative(options.rootDir, options.ledgerPath),
     candidate_records: options.candidateCount,
     skipped_existing: options.skippedExisting,
     judged_records: options.judgedRows.length,
@@ -529,7 +557,7 @@ export async function runSemanticSweep(options: SemanticSweepOptions = {}): Prom
   const selection = selectionForOptions(options);
   const inputCost = selection.model.cost?.input ?? 0;
   const outputCost = selection.model.cost?.output ?? 0;
-  const ledgerPath = semanticSweepLedgerPath(rootDir);
+  const ledgerPath = options.ledgerPath ? resolvePath(options.ledgerPath, rootDir) : semanticSweepLedgerPath(rootDir);
   const existingKeys = new Set(readJsonl<SemanticSweepLedgerRow>(ledgerPath).map((row) => row.content_key));
   let candidateCount = 0;
   let skippedExisting = 0;
@@ -567,6 +595,7 @@ export async function runSemanticSweep(options: SemanticSweepOptions = {}): Prom
   if (options.dryRun) {
     return summaryFor({
       rootDir,
+      ledgerPath,
       runId,
       dryRun: true,
       candidateCount,
@@ -639,6 +668,7 @@ export async function runSemanticSweep(options: SemanticSweepOptions = {}): Prom
       semanticSweepRunSummaryPath(runId, rootDir),
       summaryFor({
         rootDir,
+        ledgerPath,
         runId,
         dryRun: false,
         candidateCount,
@@ -660,6 +690,7 @@ export async function runSemanticSweep(options: SemanticSweepOptions = {}): Prom
 
   return summaryFor({
     rootDir,
+    ledgerPath,
     runId,
     dryRun: false,
     candidateCount,

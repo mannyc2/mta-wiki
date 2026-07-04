@@ -49,7 +49,7 @@ import {
 import { canonicalDbPath } from "@mta-wiki/db/canonical-db";
 import { calibrationMarkdown, scoreJudgeCalibration, writeV1CalibrationFixtures } from "@mta-wiki/pipeline/quality/judge-calibration";
 import { seededDefectSummary, writeSeededDefectFixtures } from "@mta-wiki/pipeline/quality/seeded-defects";
-import { runSemanticSweep, semanticSweepSummaryText } from "@mta-wiki/pipeline/quality/semantic-sweep";
+import { humanCalibrationJudgeInputs, readFixtureJudgeInputs, runSemanticSweep, semanticSweepSummaryText } from "@mta-wiki/pipeline/quality/semantic-sweep";
 import { optionValue, requireSubject, type CommandHandler } from "./shared.js";
 
 function repairCanonicalFtsWithSqliteCli(): string {
@@ -306,6 +306,7 @@ export const materializeCommands = {
   "semantic-sweep": async (args) => {
     if (process.argv.includes("--help") || process.argv.includes("-h")) {
       console.log(`Usage: bun packages/cli/src/cli.ts semantic-sweep [--dry-run] [--limit <n>] [--kinds <k1,k2>] [--source <source-id>] [--batch-size <n>] [--run-id <id>] [--profile <name>]
+       bun packages/cli/src/cli.ts semantic-sweep --fixtures <jsonl> [--human-calibration] [--ledger <jsonl>] [--run-id <id>]
 
 Judges evidence support for claim/event/metric_claim/relation/treatment_component records.
 Writes append-only verdict rows to data/semantic-sweep/verdicts.jsonl and per-run summaries to data/semantic-sweep/runs/.
@@ -314,6 +315,12 @@ Use --dry-run to estimate count/cost without provider calls.`);
     }
     const sourceId = optionValue(process.argv, "--source");
     const kinds = optionValue(process.argv, "--kinds") ?? optionValue(process.argv, "--kind");
+    const fixturePath = optionValue(process.argv, "--fixtures");
+    const humanCalibration = process.argv.includes("--human-calibration");
+    const inputs = [
+      ...(fixturePath ? readFixtureJudgeInputs(fixturePath) : []),
+      ...(humanCalibration ? humanCalibrationJudgeInputs() : []),
+    ];
     const summary = await runSemanticSweep({
       dryRun: args.dryRun,
       runId: args.runId,
@@ -324,6 +331,8 @@ Use --dry-run to estimate count/cost without provider calls.`);
       profileName: args.profileName,
       provider: args.provider,
       model: args.model,
+      inputs: inputs.length > 0 ? inputs : undefined,
+      ledgerPath: optionValue(process.argv, "--ledger"),
     });
     console.log(semanticSweepSummaryText(summary));
   },
