@@ -250,6 +250,10 @@ describe("writer backlog packets", () => {
       const queueItems = collectWriterBacklogItems(undefined, { recordKinds: ["route", "corridor"] });
       expect(run.scope.record_kinds).toEqual(["corridor", "route"]);
       expect(run.scope.empty_writer_regions).toBe(queueItems.length);
+      if (queueItems.length === 0) {
+        expect(run.packets.length).toBe(0);
+        return;
+      }
       expect(run.packets.length).toBeGreaterThan(0);
       expect(run.packets.every((packet) => packet.record_kind === "route" || packet.record_kind === "corridor")).toBe(true);
       expect(run.packets.every((packet) => packet.instructions.some((instruction) => instruction.includes("[[cite:source_id#block_id|label]]")))).toBe(true);
@@ -260,9 +264,12 @@ describe("writer backlog packets", () => {
   }, ARTIFACT_TEST_TIMEOUT_MS);
 
   it("builds writer packets for an explicit page list in caller order", () => {
-    const queueItems = collectWriterBacklogItems(undefined, { recordKinds: ["route", "corridor"] });
+    const routeCorridorQueueItems = collectWriterBacklogItems(undefined, { recordKinds: ["route", "corridor"] });
+    const queueItems = routeCorridorQueueItems.length >= 3 ? routeCorridorQueueItems : collectWriterBacklogItems(undefined);
+    const recordKinds = routeCorridorQueueItems.length >= 3 ? ["route", "corridor"] : undefined;
+    expect(queueItems.length).toBeGreaterThanOrEqual(3);
     const pagePaths = [queueItems[2]!.page_path, queueItems[0]!.page_path, queueItems[1]!.page_path];
-    const run = generateWriterBacklogPackets({ limit: 3, offset: 0, recordKinds: ["route", "corridor"], pagePaths });
+    const run = generateWriterBacklogPackets({ limit: 3, offset: 0, recordKinds, pagePaths });
     try {
       expect(run.scope.page_paths).toEqual(pagePaths);
       expect(run.scope.empty_writer_regions).toBe(pagePaths.length);

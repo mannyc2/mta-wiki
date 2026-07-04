@@ -37,5 +37,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+[[route:route_meeting-doc-160441-q13|Q13 (NYCT)]] is an NYCT-operated local bus route running between Flushing and Ft. Totten in Queens [[cite:meeting_doc_160441#p004_c0004|Q13 listed with running time adjustments]]. It was selected for running time adjustments as part of a broader MTA bus service enhancement package developed in support of Congestion Pricing (the Central Business District Tolling Program) [[cite:meeting_doc_160441#p001_c0005|Congestion Pricing context]].
 
+The overall recommendation calls for frequency increases and/or running time adjustments on eight express bus routes and 16 local bus routes/route combinations [[cite:meeting_doc_160441#p001_c0007|recommendation]]. The Q13 is item 9 on the local bus list and is identified for running time adjustments only, not frequency increases [[cite:meeting_doc_160441#p004_c0004|Q13 entry]]. Running time adjustments aim to improve schedule reliability and reduce bus bunching on routes where utilization is high or reliability issues are present [[cite:meeting_doc_160441#p002_c0012|running time adjustment rationale]].
+
+To support all local route improvements, approximately 29 additional buses are needed, secured through rehabilitation work extending the service life of buses planned for retirement [[cite:meeting_doc_160441#p003_c0007|29 additional buses]]. The annualized operating cost increase for local bus routes across the package is approximately $6.6 million per year, with a first-year cost of approximately $5 million to rehabilitate 29 local buses [[cite:meeting_doc_160441#p001_c0009|cost figures]]. Implementation for local bus routes is planned for Summer 2025 [[cite:meeting_doc_160441#p001_c0013|Summer 2025 timeline]].
 <!-- mta-wiki:writer:end -->

@@ -157,6 +157,26 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `bun scripts/determinism-anchor.ts` with combined hash
   `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
 
+### Bounded Writer Full-Slice Batch 10
+
+- Plan 012 full-slice batch 10 filled the final `36` route/corridor writer regions, bringing
+  the post-sample full-slice total to `486` pages; the route/corridor writer backlog is now
+  `0`. Actual usage including verifier-failed attempts: `36` writer runs, `237` provider
+  requests, `6985652` input tokens, `113661` output tokens, `15222344` cache-read tokens,
+  `22321657` total tokens, estimated cost `$0.721297`.
+- STOPs handled before commit: value-as-label metric primitives on Q1, B74, and X27 pages;
+  batch-wide value-like metric label normalization inside writer regions; and source-time or
+  internal wording cleanup on B110, Wassaic Branch, QM65, Q38, Q77, and QM7 pages.
+- Batch review found `36` modified wiki pages, `0` writer-edit/citation issues across `276`
+  citations, and no modified writer headings, bullet lists, bad `cite:` targets, value-like
+  metric labels, temporal live-status terms, or lingering flagged internal/review terms.
+- Added a review note for Queens redesign proposal scope, shared cost metrics on
+  meeting-doc-160441 routes, thin route evidence, and branch/ferry source scope.
+- Batch gates passed: `bun run typecheck`; `bun run test` (`961` pass, `1` skip,
+  `0` fail); `bun run validate` with `Issues: 0`; and
+  `bun scripts/determinism-anchor.ts` with combined hash
+  `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ## 2026-07-03
 
 ### Remaining Plan Approval

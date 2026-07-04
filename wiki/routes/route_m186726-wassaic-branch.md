@@ -35,5 +35,7 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+On Christmas Day 2025, the [[route:route_m186726-wassaic-branch|Wassaic Branch]] will operate with service every two hours as part of Metro-North's special holiday schedule [[cite:meeting_doc_186726#p004_c0008|Christmas Day Wassaic Branch service]]. Christmas Day has one of the lowest ridership levels of the year, and the reduced frequency across branches reflects that lighter demand [[cite:meeting_doc_186726#p004_c0007|Christmas Day ridership context]]. During the same holiday schedule, the main-line Hudson, Harlem, and New Haven services run hourly, the New Canaan Branch runs every hour, and the Danbury and Waterbury Branches run every three hours [[cite:meeting_doc_186726#p004_c0008|Christmas Day branch comparison]].
 
+This service information comes from a Metro-North staff summary prepared by the Service Design department, effective with the October 5, 2025 timetable change on the Hudson, Harlem, and New Haven Lines [[cite:meeting_doc_186726#p001_c0002|Staff summary department header]] [[cite:meeting_doc_186726#p001_c0009|Schedule effective date]]. The timetable update also supports Park Avenue Viaduct and Walk Bridge replacement project work [[cite:meeting_doc_186726#p001_c0010|Infrastructure project context]]. No additional Wassaic Branch-specific service changes, ridership metrics, or improvement programs were described in this document beyond the Christmas Day holiday service frequency.
 <!-- mta-wiki:writer:end -->

@@ -40,5 +40,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The QM7 is an MTA NYCT express bus route operated out of College Point Depot, traveling between Fresh Meadows in Queens and Wall Street in lower Manhattan [[cite:meeting_doc_131641#p004_c0007|QM7 route described in Transit All-Stars]]. The only known source-documented reference to the QM7 appears in the MTA NYCT Transit All-Stars January 2024 publication, which mentions it as the route operated by bus operator John Breedon, a twelve-year NYCT veteran recognized for his service and peer support at College Point Depot [[cite:meeting_doc_131641#p004_c0006|John Breedon recognized at College Point Depot]]. College Point Depot, where the QM7 is based, manages approximately 2,094 bus trips daily covering over 30,000 miles across 26 bus routes, and was operated with only 7 dispatchers during the Covid-19 pandemic [[cite:meeting_doc_131641#p003_c0014|College Point metrics and pandemic staffing]]. Other routes served from the same depot are part of the same operational context, but no further service-planning documentation for the QM7 was found in the cited source materials. The QM7 route record classifies it as an express bus service with a true route scope spanning Queens and Manhattan [[cite:meeting_doc_131641#p004_c0007|QM7 route record evidence]].
 <!-- mta-wiki:writer:end -->

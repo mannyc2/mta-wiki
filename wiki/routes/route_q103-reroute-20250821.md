@@ -40,5 +40,5 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
-
+The [[route:route_q103-reroute-20250821|Q103]] is a Queens bus route operated by MTA. Starting August 21, the Q103 will be rerouted to serve 21 St and 44 St instead of 41 St and Vernon Blvd [[cite:meeting_doc_187251#p005_c0003|Q103 reroute details]]. The reroute was included in a presentation at the MTA Board Meeting on September 30, 2025 [[cite:meeting_doc_187251#p001_c0002|MTA Board Meeting date]], alongside a related change extending the B62 along 21 St to the Astoria Houses [[cite:meeting_doc_187251#p005_c0003|B62 extension details]]. The source document groups these Queens service changes under a "Provide 21st Century Bus Service" initiative [[cite:meeting_doc_187251#p005_c0002|21st Century Bus Service]]. The reroute represents a service change within the Queens Bus Network Redesign, shifting the Q103's path from the 41 St and Vernon Blvd corridor to 21 St and 44 St in the Astoria area.
 <!-- mta-wiki:writer:end -->

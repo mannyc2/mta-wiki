@@ -52,5 +52,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_q4-lcl-ltd|Q4]] is a local and limited bus route in Queens, connecting Jamaica to Cambria Heights, and was one of five routes selected for the MTA Fare-Free Bus Pilot mandated by the 2023 New York State budget [[cite:meeting_doc_147096#p002_c0006|Q4 route map description]]. The pilot ran from September 24, 2023 through August 2024, with fare collection resuming on September 1, 2024 [[cite:meeting_doc_147096#p002_c0005|pilot start and end dates]] [[cite:meeting_doc_147096#p008_c0002|pilot concludes at end of August]].
 
+During the pilot, weekday ridership on the [[route:route_q4-lcl-ltd|Q4]] increased from a pre-pilot baseline of 10,762 (September 2022 – May 2023) to a total pilot ridership of 14,506 (September 2023 – May 2024), a 35% increase—the highest among the five pilot routes [[cite:meeting_doc_147096#p004_c0003|weekday ridership table]]. Weekend ridership rose from 4,371 pre-pilot to 6,378 during the pilot, a 46% increase [[cite:meeting_doc_147096#p004_c0004|weekend ridership table]].
+
+Service performance metrics showed mixed results. The [[route:route_q4-lcl-ltd|Q4]]'s Service Delivered rate (percent of scheduled peak buses actually provided) dipped marginally from 97.5% pre-pilot to 97.4% during the pilot, a change of -0.1 percentage points [[cite:meeting_doc_147096#p011_c0004|service delivered table]]. End-to-end bus speeds decreased from 7.8 mph to 7.4 mph, a 4.8% decline—the largest speed decrease among the five pilot routes [[cite:meeting_doc_147096#p012_c0003|speed table]]. Customer Journey Time Performance (riders arriving within 5 minutes of schedule) fell from 78.1% to 74.6%, a 3.5 percentage point drop [[cite:meeting_doc_147096#p013_c0004|customer journey time table]].
 <!-- mta-wiki:writer:end -->

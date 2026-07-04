@@ -41,5 +41,9 @@ evidence_refs:
 ---
 
 <!-- mta-wiki:writer:start -->
+The [[route:route_163121-q109-shuttle|Q109]] is a shuttle bus route established as part of the Rockaway Line Rehabilitation & Resiliency Project, a major 17-week effort to rebuild Superstorm Sandy-damaged infrastructure on the Rockaway A Line that began on January 17 [[cite:meeting_doc_163121#p024_c0003|MTA commenced project on January 17]]. The Q109 runs between Howard Beach-JFK Airport and Beach 67 Street, making stops at Broad Channel and Beach 90 Street [[cite:meeting_doc_163121#p024_c0008|Q109 route description]].
 
+The Q109 is one of two free shuttle bus options provided during the Rockaway Line shutdown, alongside the Q97 nonstop route between Howard Beach-JFK Airport and Far Rockaway-Mott Avenue [[cite:meeting_doc_163121#p024_c0008|two shuttle options]]. During the project, buses operate 53 AM and 55 PM weekday peak trips on the Q97 and Q109 routes, with additional express service on QM15, QM16, and QM17 as alternative transportation for customers [[cite:meeting_doc_163121#p011_c0010|17-week project shuttle details]]. The Far Rockaway Ticket on the Long Island Rail Road is discounted to $2.75 during the project period [[cite:meeting_doc_163121#p024_c0008|LIRR ticket discount]].
+
+Hugo Zamora serves as the dedicated New York City Transit project lead for the Rockaway Line work, overseeing every element of the customer experience including the shuttle bus operations [[cite:meeting_doc_163121#p024_c0007|Zamora project lead]]. The Q109 is operated by MTA NYCT's Department of Buses and serves the Queens borough [[cite:meeting_doc_163121#p024_c0008|Q109 in Queens]].
 <!-- mta-wiki:writer:end -->
