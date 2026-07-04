@@ -47,7 +47,7 @@ describe("v2 extract boundary", () => {
     });
     expect(result.accepted_record_count).toBe(1);
     expect(result.enum_miss_count).toBe(1);
-    expect(result.records[0]?.payload.relation_family).toBe("other");
+    expect(result.records[0]?.payload.relation_family).toBe("route_scope");
     expect((result.records[0]?.payload.extra_fields as Record<string, unknown>).relation_family_other_text).toBe("not_a_family");
     expect((result.records[0]?.payload.extra_fields as Record<string, unknown>).novel_field).toBe("kept for review");
     expect(result.review.map((entry) => entry.code)).toContain("enum_miss_coerced_to_other");
@@ -64,6 +64,39 @@ describe("v2 extract boundary", () => {
     );
     expect(result.accepted_record_count).toBe(0);
     expect(result.review.map((entry) => entry.code)).toContain("missing_evidence_refs");
+  });
+
+  it("adds deterministic runner-owned companion fields before replay projection", () => {
+    const result = validateExtractEnvelope(
+      {
+        source_id: "source_a",
+        records: [
+          {
+            record_kind: "route",
+            display_name: "M15",
+            payload: { route_id: "M15", route_type: "local" },
+            evidence_refs: [{ source_id: "source_a", block_id: "p001_c0001", source_quote: "M15 local bus" }],
+          },
+          {
+            record_kind: "metric_claim",
+            display_name: "Daily bus passengers",
+            payload: { metric_name: "daily_bus_passengers", raw_value_text: "65,000 passengers", value: 65000, unit: "passengers" },
+            evidence_refs: [{ source_id: "source_a", block_id: "p001_c0001", source_quote: "65,000 passengers" }],
+          },
+        ],
+      },
+      { sourceBlocks: [block("p001_c0001", "M15 local bus serves 65,000 passengers.")] },
+    );
+    expect(result.accepted_record_count).toBe(2);
+    const route = result.records.find((record) => record.record_kind === "route");
+    const metric = result.records.find((record) => record.record_kind === "metric_claim");
+    expect(route?.payload.route_type_normalized).toBe("local");
+    expect(route?.payload.service_variant).toBe("local");
+    expect(metric?.payload.unit_normalized).toEqual({
+      raw_text: "passengers",
+      normalized_unit: "riders",
+      unit_family: "ridership",
+    });
   });
 
   it("derives display names from payload anchors when the model omits display_name", () => {

@@ -68,4 +68,41 @@ describe("anchorMatchExtractResult", () => {
     expect(result.extraction.records[0]?.v1_record_id).toStartWith("corridor_");
     expect(result.extraction.review.map((entry) => entry.code)).toContain("anchor_new");
   });
+
+  it("remaps relation endpoint surfaces to canonical global ids without same-response endpoint records", () => {
+    const result = anchorMatchExtractResult(
+      extraction("relation", "relation_local", "Corridor route scope", {
+        relation_kind: "serves_route",
+        relation_family: "route_scope",
+        subject_id: "corridor_116th_street",
+        object_id: "route_M116",
+      }),
+      [
+        record("corridor_116th-street", "corridor", { corridor_name: "116th Street" }),
+        record("route_m116", "route", { route_id: "M116" }),
+      ],
+    );
+    const relation = result.extraction.records[0];
+    expect(relation?.payload.subject_id).toBe("corridor_116th-street");
+    expect(relation?.payload.object_id).toBe("route_m116");
+    expect(relation?.relation?.subject_id).toBe("corridor_116th-street");
+    expect(relation?.relation?.object_id).toBe("route_m116");
+  });
+
+  it("leaves relation endpoint labels unresolved when exact surfaces span global kinds", () => {
+    const result = anchorMatchExtractResult(
+      extraction("relation", "relation_local", "Ambiguous endpoint", {
+        relation_kind: "mentions",
+        relation_family: "other",
+        subject_id: "M15",
+        object_id: "route_m15",
+      }),
+      [
+        record("corridor_m15", "corridor", { corridor_name: "M15" }),
+        record("route_m15", "route", { route_id: "M15" }),
+      ],
+    );
+    expect(result.extraction.records[0]?.payload.subject_id).toBe("M15");
+    expect(result.extraction.records[0]?.payload.object_id).toBe("route_m15");
+  });
 });

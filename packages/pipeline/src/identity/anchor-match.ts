@@ -30,6 +30,8 @@ type AnchorIndex = {
   doNotMerge: Set<string>;
 };
 
+const GLOBAL_KIND_VALUES: GlobalMtaRecordKind[] = ["entity", "project", "corridor", "route"];
+
 function norm(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/gu, " ").trim().replace(/\s+/gu, " ");
 }
@@ -160,8 +162,64 @@ function resolveAnchor(
   };
 }
 
-function remapEndpoint(value: JsonValue | undefined, idMap: Map<string, string>) {
-  return typeof value === "string" ? idMap.get(value) ?? value : value;
+function endpointKindFromPayload(payload: JsonObject, side: "subject" | "object") {
+  for (const field of [`${side}_record_kind`, `${side}_kind`, `${side}_type`]) {
+    const value = payload[field];
+    if (typeof value === "string" && isGlobalRecordKind(value)) return value;
+  }
+  return undefined;
+}
+
+function endpointKindFromValue(value: string) {
+  const prefix = value.trim().toLowerCase().split(/[_\-\s]+/u)[0];
+  return isGlobalRecordKind(prefix) ? prefix : undefined;
+}
+
+function stripEndpointKindPrefix(kind: GlobalMtaRecordKind, value: string) {
+  return value.replace(new RegExp(`^${kind}(?:[_\\-\\s]+)`, "iu"), "").trim();
+}
+
+function endpointSurfaceKeys(kind: GlobalMtaRecordKind, value: string) {
+  const raw = value.trim();
+  const kindless = stripEndpointKindPrefix(kind, raw);
+  const variants = new Set<string>([
+    raw,
+    raw.replace(/[_-]+/gu, " "),
+    kindless,
+    kindless.replace(/[_-]+/gu, " "),
+    ...queryKeys(kind, raw),
+    ...queryKeys(kind, kindless),
+  ]);
+  return [...variants].map(norm).filter(Boolean);
+}
+
+function exactEndpointCandidate(index: AnchorIndex, kind: GlobalMtaRecordKind, value: string) {
+  const candidateIds = new Set<string>();
+  const bySurface = index.surfaces.get(kind);
+  if (!bySurface) return undefined;
+  for (const surface of endpointSurfaceKeys(kind, value)) {
+    for (const id of bySurface.get(surface) ?? []) candidateIds.add(id);
+  }
+  const candidates = [...candidateIds].sort();
+  return candidates.length === 1 ? candidates[0] : undefined;
+}
+
+function remapEndpoint(value: JsonValue | undefined, idMap: Map<string, string>, index: AnchorIndex, payload: JsonObject, side: "subject" | "object") {
+  if (typeof value !== "string") return value;
+  const local = idMap.get(value);
+  if (local) return local;
+  if (index.byId.has(value)) return value;
+
+  const kind = endpointKindFromPayload(payload, side) ?? endpointKindFromValue(value);
+  if (kind) return exactEndpointCandidate(index, kind, value) ?? value;
+
+  const candidates = new Set<string>();
+  for (const globalKind of GLOBAL_KIND_VALUES) {
+    const candidate = exactEndpointCandidate(index, globalKind, value);
+    if (candidate) candidates.add(candidate);
+  }
+  const sorted = [...candidates].sort();
+  return sorted.length === 1 ? sorted[0] : value;
 }
 
 export function anchorMatchExtractResult(result: ExtractBoundaryResult, records: MtaCanonicalRecord[], pairs: AnchorDoNotMergePair[] = []): AnchorMatchResult {
@@ -182,8 +240,8 @@ export function anchorMatchExtractResult(result: ExtractBoundaryResult, records:
   for (const record of result.records) {
     if (record.record_kind !== "relation") continue;
     const payload = { ...record.payload };
-    payload.subject_id = remapEndpoint(payload.subject_id, idMap);
-    payload.object_id = remapEndpoint(payload.object_id, idMap);
+    payload.subject_id = remapEndpoint(payload.subject_id, idMap, index, payload, "subject");
+    payload.object_id = remapEndpoint(payload.object_id, idMap, index, payload, "object");
     record.payload = payload;
     record.relation = {
       subject_id: typeof payload.subject_id === "string" ? payload.subject_id : undefined,

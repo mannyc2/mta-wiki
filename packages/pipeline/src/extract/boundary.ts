@@ -6,6 +6,7 @@ import { validatePayloadSchema } from "@mta-wiki/db/payload-schemas";
 import type { JsonObject, JsonValue, MtaEvidenceRef, MtaObservationKind, StagedSourceBlock } from "@mta-wiki/db/types";
 import { ASSERTION_STATUSES } from "@mta-wiki/pipeline/records/assertion-qualifiers";
 import { RELATION_FAMILIES } from "@mta-wiki/pipeline/records/relations";
+import { normalizeObservationPayload } from "@mta-wiki/pipeline/ontology/normalizers";
 import type { ReplayBaselineFile, ReplayEvidenceIdentity, ReplayProjectedRecord } from "@mta-wiki/pipeline/replay/replay";
 
 export type ExtractedRecordDraft = {
@@ -207,8 +208,9 @@ function normalizePayload(sourceId: string, draft: ExtractedRecordDraft, result:
 
   if (Object.keys(extra).length > 0) payload.extra_fields = extra;
   result.enum_miss_count += coerceEnumMisses(sourceId, draft, payload, enumVocabulary, result);
-  validateNormalizedPayload(sourceId, draft, payload, result);
-  return payload;
+  const normalized = normalizeObservationPayload(draft.record_kind, payload);
+  validateNormalizedPayload(sourceId, draft, normalized, result);
+  return normalized;
 }
 
 function normalizeRelationEndpointAliases(payload: JsonObject, kind: MtaObservationKind) {

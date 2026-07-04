@@ -6,6 +6,33 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-04
 
+### Plan 014 Stopped: V2 Extract Pilot Below Replay Bar
+
+- Added a no-spend replay-boundary fix for Plan 014: v2 extract boundary output now runs
+  through the deterministic v1 payload normalizers before replay projection, and anchor
+  matching now remaps relation endpoints such as `route_M116` / `corridor_116th_street` to
+  canonical global ids when the match is exact and unambiguous.
+- Reprocessed the saved 10-source pilot responses via `extract --mock-response` into
+  `data/replay/runs/v2-extract-pilot-20260704-boundary-normalized/`; this used existing
+  transcript `response.md` files and spent `$0` provider money. The rerun accepted `374`
+  records, had `0` enum misses, and wrote the report
+  `data/replay/reports/v2-extract-pilot-20260704-boundary-normalized-projection-v2.{json,md}`.
+- The no-spend normalized replay result is `2/722` exact matches (`0.28%`), still far below
+  Plan 014's `<75%` STOP floor. Compared with the prior projection-v2 run, relation endpoint
+  remapping reduced extras from `154` to `144` and missing records from `502` to `492`, but
+  field mismatches rose to `228` because more relation records became comparable.
+- Top mismatch classes remain extraction/schema-granularity issues, not provider spend gates:
+  `payload.description` (`177`), `payload.scope` (`64`), `payload.metric_name` (`54`),
+  `payload.raw_value_text` (`53`), route companion/name/scope fields, `evidence_refs` (`43`),
+  unit fields, borough fields, agency/event-note fields, plus many missing relation/event/
+  treatment/metric records.
+- STOP outcome: do not run the full Plan 014 replay or promote v2. Plan 015 is blocked by its
+  drift check because there is no LOG promotion decision making v2 the maintenance-mode path.
+- Gates after the boundary/report update passed: `bun run typecheck`; `bun run test` (`964`
+  pass, `1` skip, `0` fail); `bun run validate` with `Issues: 0`; and
+  `bun scripts/determinism-anchor.ts` with combined hash
+  `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`.
+
 ### Plan 012 Complete: Route/Corridor Writer Pass + Site Redeploy
 
 - Plan 012 is complete: the 20-page sample plus `486` full-slice writer pages filled the
