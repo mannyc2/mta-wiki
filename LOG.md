@@ -12,6 +12,35 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   and proceed first with the no-spend semantic-quality track (`017`, then `018`). No provider
   spend is involved in this direction.
 
+### Plan 017 Complete: Semantic Corrections Substrate
+
+- Added `data/semantic-corrections/corrections.jsonl` as the deterministic record-level
+  correction journal, wired into materialization after `entriesToRecords` and before canonical
+  JSONL/wiki/SQLite writes. The first journal has `64` deterministic-rule entries:
+  `3` `retract_record` alias self-loops, `46` self-loop `set_review_state: quarantined`
+  entries, and `15` target/completed event `set_review_state: quarantined` entries.
+- Before→after inventory: unhandled self-loop relations `49 → 0`; alias-shaped self-loop
+  relation records `3 → 0`; quarantined self-loop relations `0 → 46`; unhandled target/
+  completed contradiction events `15 → 0`; quarantined target/completed events `0 → 15`.
+- New validation surfaces: `invalid_semantic_correction`, `semantic_correction_skipped`,
+  `relation_self_loop`, and `event_completion_target_completed`. The correction validator
+  evaluates the journal against the pre-correction materialized record set so retractions remain
+  valid after they disappear from the shipped corpus.
+- Determinism anchor re-baseline: records `84027 → 84024`; dump
+  `17054fd6f6e8bbdb855c2120ae1c4bebe8a73de47b50b8724f52fff2d551922b →
+  b8560f61e19b24872430e5215eae95e0b958c415d728b9c9b5232bae2c67e466`; FTS
+  `f4838f4b9807560b62ba6b8296591041544408daac8f295422b43612a7c4ea2f →
+  39486b0bcdbc68e242e5c9e4efcfc5f2194ccc6ac625313bd38905efc3a28c20`; master unchanged
+  `7eb86293059611f6a04a97c7805ebc25cc6fb387f4989bd18ec7d24a3615cc09`; combined
+  `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a →
+  fadaab4b3f428835c1d2fe2fbf2266798cc7e965e71d111539283f62c786a048`.
+- Gates passed: empty-journal materialize proved hash-neutral at combined
+  `d9a03eba3f4c33e90ab1b3b9caf525679ad90aa38a38eceeb1fc12fe3f11950a`; final
+  `bun run typecheck`; `bun run test` (`973` pass, `1` skip, `0` fail); `bun run validate`
+  with `Issues: 0`; and `bun scripts/determinism-anchor.ts` twice at combined
+  `fadaab4b3f428835c1d2fe2fbf2266798cc7e965e71d111539283f62c786a048`.
+- No provider-backed LLM calls were made.
+
 ### Plan 014 Stopped: V2 Extract Pilot Below Replay Bar
 
 - Added a no-spend replay-boundary fix for Plan 014: v2 extract boundary output now runs

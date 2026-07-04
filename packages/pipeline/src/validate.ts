@@ -534,6 +534,7 @@ export function validateRepo(options: { strictWriterCitations?: boolean | undefi
   validateStagedSourceBlocks(issues);
   validateEvidence(issues);
   validateRelations(issues);
+  validateSemanticInvariants(records, issues);
   validateGlobalIdentities(issues);
   validateMetricPayloads(issues);
   validateWriterPrimitives(pagePaths, records, issues);
