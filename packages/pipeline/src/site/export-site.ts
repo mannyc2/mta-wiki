@@ -34,6 +34,8 @@ export type SiteRenderContext = {
   sourcePageIds: Set<string>;
 };
 
+type FeaturedEntry = { title: string; url: string; evidence: number; blurb: string };
+
 export function siteOutDir(rootDir = repoRoot) {
   return join(rootDir, "dist", "site");
 }
@@ -74,6 +76,14 @@ function compactJson(value: JsonValue | undefined, depth = 0): string {
 
 function pageTitle(record: MtaCanonicalRecord) {
   return record.display_name || record.record_id;
+}
+
+function blurbFor(record: MtaCanonicalRecord) {
+  const text = asString(record.payload.description) ?? record.raw_text ?? "";
+  if (text.length <= 160) return text;
+  const cut = text.slice(0, 160);
+  const space = cut.lastIndexOf(" ");
+  return `${cut.slice(0, space > 80 ? space : 160)}…`;
 }
 
 function parseWikiPage(markdown: string) {
@@ -372,19 +382,65 @@ function indexPage(kind: SiteRecordKind, records: MtaCanonicalRecord[]) {
   return htmlShell(title, body, `/${dir}.html`);
 }
 
-function homePage(counts: SiteExportResult["pages"]) {
+function featuredSectionHtml(kindLabel: string, entries: FeaturedEntry[], totalCount: number, indexHref: string) {
+  const items = entries
+    .map(
+      (entry) =>
+        `<li><a href="${attr(entry.url.replace(/^\//u, ""))}">${htmlEscape(entry.title)}</a><span class="featured-evidence">${entry.evidence} citations</span>${entry.blurb ? `<p>${htmlEscape(entry.blurb)}</p>` : ""}</li>`,
+    )
+    .join("\n");
+  return `<section class="home-featured"><h2>Most documented ${htmlEscape(kindLabel)}s</h2><ol>${items}</ol><p><a href="${attr(indexHref)}">All ${totalCount} ${htmlEscape(kindLabel)}s →</a></p></section>`;
+}
+
+function homePage(data: {
+  counts: SiteExportResult["pages"];
+  stats: { records: number; evidenceRefs: number; metricClaims: number; relations: number; events: number; claims: number };
+  featured: { routes: FeaturedEntry[]; corridors: FeaturedEntry[]; projects: FeaturedEntry[] };
+}) {
+  const { counts, stats, featured } = data;
   const body = `<section class="home">
 <h1>MTA Wiki</h1>
-<p>Structured v1 records and citations for MTA and NYC bus-priority knowledge.</p>
+<p>Structured, source-cited records about MTA and NYC bus-priority routes, corridors, and
+projects — extracted from public government documents.</p>
+<form class="home-search" action="search.html" method="get" role="search">
+<input type="search" name="q" placeholder="Search routes, projects, corridors, sources…" aria-label="Search the wiki">
+<button type="submit">Search</button>
+</form>
 <div class="home-grid">
 <a href="routes.html"><strong>${counts.routes}</strong><span>Routes</span></a>
 <a href="corridors.html"><strong>${counts.corridors}</strong><span>Corridors</span></a>
 <a href="projects.html"><strong>${counts.projects}</strong><span>Projects</span></a>
 <a href="sources.html"><strong>${counts.sources}</strong><span>Source citation targets</span></a>
+<a href="graph.html"><strong>→</strong><span>Relation graph</span></a>
+<a href="primitives.html"><strong>→</strong><span>Primitive reference</span></a>
 </div>
-<p><a href="graph.html">Graph</a> <a href="primitives.html">Primitives</a></p>
+</section>
+<section class="home-stats"><h2>What's inside</h2>
+<ul>
+<li><strong>${stats.records.toLocaleString("en-US")}</strong><span>canonical records</span></li>
+<li><strong>${stats.evidenceRefs.toLocaleString("en-US")}</strong><span>evidence citations</span></li>
+<li><strong>${stats.metricClaims.toLocaleString("en-US")}</strong><span>metric claims</span></li>
+<li><strong>${stats.relations.toLocaleString("en-US")}</strong><span>relations</span></li>
+<li><strong>${stats.events.toLocaleString("en-US")}</strong><span>events</span></li>
+<li><strong>${stats.claims.toLocaleString("en-US")}</strong><span>claims</span></li>
+</ul>
+<p>Counts are computed from the canonical database at export time.</p>
+</section>
+${featuredSectionHtml("route", featured.routes, counts.routes, "routes.html")}
+${featuredSectionHtml("corridor", featured.corridors, counts.corridors, "corridors.html")}
+${featuredSectionHtml("project", featured.projects, counts.projects, "projects.html")}
+<section class="home-provenance"><h2>Where this data comes from</h2>
+<p>Sources are public NYC/MTA government records obtained from public agency websites. Every
+structured record cites evidence blocks in the source documents, and source pages are
+exported as citation targets.</p>
+<p>Extraction is LLM-assisted and may contain errors; extracted text and derived data are
+provided for research and reference. To request a correction or takedown,
+<a href="https://github.com/mannyc2/mta-wiki/issues">open a GitHub issue</a>.</p>
 </section>`;
-  return htmlShell("Home", body, "/index.html");
+  return htmlShell("Home", body, "/index.html", {
+    description:
+      "Research workbench for MTA and NYC bus-priority knowledge: searchable, source-cited routes, corridors, projects, and source documents.",
+  });
 }
 
 function sourcesIndex(records: MtaCanonicalRecord[]) {
@@ -441,7 +497,7 @@ function hasWikiPage(rootDir: string, record: MtaCanonicalRecord) {
 }
 
 function css() {
-  return `:root{color-scheme:light;--ink:#1d2433;--muted:#5b6475;--line:#d8dde7;--bg:#fbfcfe;--panel:#fff;--accent:#0f766e}*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}.site-header{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px 24px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.94);backdrop-filter:blur(10px)}.brand{font-weight:700;color:var(--ink);text-decoration:none}nav{display:flex;gap:14px}nav a,a{color:var(--accent)}main{max-width:1180px;margin:0 auto;padding:28px 24px 64px}h1{font-size:clamp(2rem,4vw,4rem);line-height:1.05;margin:0 0 12px}h2{margin-top:32px}.eyebrow,.record-id{color:var(--muted);font-size:.9rem}.home-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:28px 0}.home-grid a{display:block;border:1px solid var(--line);background:var(--panel);padding:18px;text-decoration:none}.home-grid strong{display:block;font-size:2rem;color:var(--ink)}.index-list ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}.index-list li{display:grid;grid-template-columns:minmax(0,1fr)minmax(120px,32%);gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}.index-list span{color:var(--muted);font-size:.85rem;overflow-wrap:anywhere}table{width:100%;border-collapse:collapse;background:var(--panel);font-size:.92rem}th,td{border:1px solid var(--line);padding:8px;vertical-align:top;text-align:left}td{overflow-wrap:anywhere}.facts th{width:220px}.cap-note{border-left:4px solid var(--accent);padding:10px 12px;background:#eef8f6}.empty-writer{color:var(--muted);background:#f1f4f8;padding:12px}.primitive,.component{border:1px solid var(--line);background:#fff;padding:2px 6px}.primitive-value{font-weight:700}.metric-card{display:inline-block;margin:12px 0;padding:12px 14px}.component-label{color:var(--muted);font-size:.85rem}.component-value{font-size:1.4rem;font-weight:700}.chip-row{display:flex;gap:12px;align-items:center;width:max-content}.source-meta{display:grid;grid-template-columns:120px minmax(0,1fr);gap:6px 16px}.source-meta dt{font-weight:700}.source-meta dd{margin:0}.source-text{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;background:#fff;border:1px solid var(--line);padding:16px;font-size:.9rem}pre,code{font-family:"SFMono-Regular",Consolas,monospace}.site-search input{border:1px solid var(--line);padding:6px 10px;min-width:210px;font:inherit;background:#fff}.site-footer{border-top:1px solid var(--line);margin-top:48px;padding:20px 24px;color:var(--muted);font-size:.9rem;max-width:1180px;margin-left:auto;margin-right:auto}.search-page #search{margin-top:16px}.index-filter{margin:12px 0;border:1px solid var(--line);padding:8px 10px;font:inherit;width:min(420px,100%)}.citation-unresolved{color:var(--muted);border-bottom:1px dotted var(--muted)}@media(max-width:720px){.site-header{align-items:flex-start;flex-direction:column}.site-search{width:100%}.site-search input{width:100%}.index-list li{grid-template-columns:1fr}.facts th{width:auto}main{padding:20px 16px 48px}}`;
+  return `:root{color-scheme:light;--ink:#1d2433;--muted:#5b6475;--line:#d8dde7;--bg:#fbfcfe;--panel:#fff;--accent:#0f766e}*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}.site-header{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px 24px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.94);backdrop-filter:blur(10px)}.brand{font-weight:700;color:var(--ink);text-decoration:none}nav{display:flex;gap:14px}nav a,a{color:var(--accent)}main{max-width:1180px;margin:0 auto;padding:28px 24px 64px}h1{font-size:clamp(2rem,4vw,4rem);line-height:1.05;margin:0 0 12px}h2{margin-top:32px}.eyebrow,.record-id{color:var(--muted);font-size:.9rem}.home-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:28px 0}.home-grid a{display:block;border:1px solid var(--line);background:var(--panel);padding:18px;text-decoration:none}.home-grid strong{display:block;font-size:2rem;color:var(--ink)}.index-list ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}.index-list li{display:grid;grid-template-columns:minmax(0,1fr)minmax(120px,32%);gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}.index-list span{color:var(--muted);font-size:.85rem;overflow-wrap:anywhere}table{width:100%;border-collapse:collapse;background:var(--panel);font-size:.92rem}th,td{border:1px solid var(--line);padding:8px;vertical-align:top;text-align:left}td{overflow-wrap:anywhere}.facts th{width:220px}.cap-note{border-left:4px solid var(--accent);padding:10px 12px;background:#eef8f6}.empty-writer{color:var(--muted);background:#f1f4f8;padding:12px}.primitive,.component{border:1px solid var(--line);background:#fff;padding:2px 6px}.primitive-value{font-weight:700}.metric-card{display:inline-block;margin:12px 0;padding:12px 14px}.component-label{color:var(--muted);font-size:.85rem}.component-value{font-size:1.4rem;font-weight:700}.chip-row{display:flex;gap:12px;align-items:center;width:max-content}.source-meta{display:grid;grid-template-columns:120px minmax(0,1fr);gap:6px 16px}.source-meta dt{font-weight:700}.source-meta dd{margin:0}.source-text{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;background:#fff;border:1px solid var(--line);padding:16px;font-size:.9rem}pre,code{font-family:"SFMono-Regular",Consolas,monospace}.site-search input{border:1px solid var(--line);padding:6px 10px;min-width:210px;font:inherit;background:#fff}.site-footer{border-top:1px solid var(--line);margin-top:48px;padding:20px 24px;color:var(--muted);font-size:.9rem;max-width:1180px;margin-left:auto;margin-right:auto}.search-page #search{margin-top:16px}.index-filter{margin:12px 0;border:1px solid var(--line);padding:8px 10px;font:inherit;width:min(420px,100%)}.citation-unresolved{color:var(--muted);border-bottom:1px dotted var(--muted)}.home-search{display:flex;gap:8px;margin:20px 0;max-width:560px}.home-search input{flex:1;border:1px solid var(--line);padding:12px 14px;font:inherit}.home-search button{border:1px solid var(--accent);background:var(--accent);color:#fff;padding:12px 18px;font:inherit;cursor:pointer}.home-stats ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;list-style:none;margin:16px 0;padding:0}.home-stats li{border:1px solid var(--line);background:var(--panel);padding:14px}.home-stats strong{display:block;font-size:1.5rem}.home-stats span{color:var(--muted);font-size:.85rem}.home-featured ol{list-style:none;margin:12px 0;padding:0}.home-featured li{border-bottom:1px solid var(--line);padding:12px 0}.home-featured p{margin:4px 0 0;color:var(--muted);font-size:.92rem}.featured-evidence{color:var(--muted);font-size:.85rem;margin-left:10px}.home-provenance{border:1px solid var(--line);background:var(--panel);padding:18px 20px;margin-top:36px}.home-provenance p{margin:8px 0;color:var(--muted)}@media(max-width:720px){.site-header{align-items:flex-start;flex-direction:column}.site-search{width:100%}.site-search input{width:100%}.index-list li{grid-template-columns:1fr}.facts th{width:auto}main{padding:20px 16px 48px}}`;
 }
 
 function dirSize(path: string): number {
@@ -534,7 +590,42 @@ export function exportSite(options: { rootDir?: string | undefined; outDir?: str
   writeFile(join(outDir, "corridors.html"), indexPage("corridor", corridorRecords));
   writeFile(join(outDir, "projects.html"), indexPage("project", projectRecords));
   writeFile(join(outDir, "sources.html"), sourcesIndex(sourceRecords));
-  writeFile(join(outDir, "index.html"), homePage({ routes: routeRecords.length, corridors: corridorRecords.length, projects: projectRecords.length, sources: sourceRecords.length }));
+
+  const kindCounts = new Map<string, number>();
+  for (const record of records) kindCounts.set(record.record_kind, (kindCounts.get(record.record_kind) ?? 0) + 1);
+  const evidenceRefTotal = records.reduce((sum, record) => sum + record.evidence_refs.length, 0);
+
+  function featured(list: MtaCanonicalRecord[], limit: number): FeaturedEntry[] {
+    return [...list]
+      .sort((a, b) => b.evidence_refs.length - a.evidence_refs.length || a.record_id.localeCompare(b.record_id))
+      .slice(0, limit)
+      .map((record) => ({
+        title: pageTitle(record),
+        url: recordUrl(record)!,
+        evidence: record.evidence_refs.length,
+        blurb: blurbFor(record),
+      }));
+  }
+
+  writeFile(
+    join(outDir, "index.html"),
+    homePage({
+      counts: { routes: routeRecords.length, corridors: corridorRecords.length, projects: projectRecords.length, sources: sourceRecords.length },
+      stats: {
+        records: records.length,
+        evidenceRefs: evidenceRefTotal,
+        metricClaims: kindCounts.get("metric_claim") ?? 0,
+        relations: kindCounts.get("relation") ?? 0,
+        events: kindCounts.get("event") ?? 0,
+        claims: kindCounts.get("claim") ?? 0,
+      },
+      featured: {
+        routes: featured(routeRecords, 6),
+        corridors: featured(corridorRecords, 4),
+        projects: featured(projectRecords, 6),
+      },
+    }),
+  );
   writeFile(join(outDir, "404.html"), htmlShell("Not Found", `<h1>Not Found</h1><p>The requested page is not in this static export.</p>`, "/404.html"));
   writeFile(join(outDir, "search.html"), searchPage());
   writeFile(join(outDir, "assets", "site.css"), css());

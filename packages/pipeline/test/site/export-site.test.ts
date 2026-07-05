@@ -77,13 +77,16 @@ describe("exportSite", () => {
       expect(sourceHtml).toContain("id=\"p001_c0001\"");
       const searchHtml = await Bun.file(join(root, "dist", "site", "search.html")).text();
       const sitemapXmlText = await Bun.file(join(root, "dist", "site", "sitemap.xml")).text();
+      const indexHtml = await Bun.file(join(root, "dist", "site", "index.html")).text();
       exportSite({ rootDir: root });
       const after = await Bun.file(join(root, "dist", "site", "routes", "route_m1.html")).text();
       expect(after).toBe(routeHtml);
       const searchAfter = await Bun.file(join(root, "dist", "site", "search.html")).text();
       const sitemapAfter = await Bun.file(join(root, "dist", "site", "sitemap.xml")).text();
+      const indexAfter = await Bun.file(join(root, "dist", "site", "index.html")).text();
       expect(searchAfter).toBe(searchHtml);
       expect(sitemapAfter).toBe(sitemapXmlText);
+      expect(indexAfter).toBe(indexHtml);
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
@@ -174,6 +177,126 @@ describe("exportSite", () => {
       expect(routeHtml).toContain("citation-unresolved");
       expect(routeHtml).toContain("dead cite");
       expect(routeHtml).not.toContain("missing_src.html");
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("features routes ranked by evidence count, ties broken by record_id", async () => {
+    const root = fixtureRoot();
+    try {
+      const routeTop = record("route_top", "route", { route_id: "TOP" });
+      routeTop.display_name = "Top Route";
+      routeTop.evidence_refs = Array.from({ length: 5 }, (_entry, index) => ({
+        source_id: "source_a",
+        block_id: `p001_c${String(index + 1).padStart(4, "0")}`,
+      }));
+      const routeZzz = record("route_zzz", "route", { route_id: "ZZZ" });
+      routeZzz.display_name = "Zzz Route";
+      routeZzz.evidence_refs = [
+        { source_id: "source_a", block_id: "p001_c0010" },
+        { source_id: "source_a", block_id: "p001_c0011" },
+      ];
+      const routeAaa = record("route_aaa", "route", { route_id: "AAA" });
+      routeAaa.display_name = "Aaa Route";
+      routeAaa.evidence_refs = [
+        { source_id: "source_a", block_id: "p001_c0020" },
+        { source_id: "source_a", block_id: "p001_c0021" },
+      ];
+      const source = record("source_a", "source");
+      rebuildCanonicalDb([source, routeTop, routeZzz, routeAaa], { path: join(root, "data", "canonical.db") });
+      writePage(root, "wiki/routes/route_top.md", "---\nrecord_id: route_top\n---\n<!-- mta-wiki:writer:start -->\nTop.\n<!-- mta-wiki:writer:end -->\n");
+      writePage(root, "wiki/routes/route_zzz.md", "---\nrecord_id: route_zzz\n---\n<!-- mta-wiki:writer:start -->\nZzz.\n<!-- mta-wiki:writer:end -->\n");
+      writePage(root, "wiki/routes/route_aaa.md", "---\nrecord_id: route_aaa\n---\n<!-- mta-wiki:writer:start -->\nAaa.\n<!-- mta-wiki:writer:end -->\n");
+      writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
+
+      exportSite({ rootDir: root });
+      const homeHtml = await Bun.file(join(root, "dist", "site", "index.html")).text();
+
+      const topIndex = homeHtml.indexOf("Top Route");
+      const aaaIndex = homeHtml.indexOf("Aaa Route");
+      const zzzIndex = homeHtml.indexOf("Zzz Route");
+      expect(topIndex).toBeGreaterThan(-1);
+      expect(aaaIndex).toBeGreaterThan(-1);
+      expect(zzzIndex).toBeGreaterThan(-1);
+      expect(topIndex).toBeLessThan(aaaIndex);
+      expect(aaaIndex).toBeLessThan(zzzIndex);
+      expect(homeHtml).toContain("5 citations");
+      expect(homeHtml).toContain("2 citations");
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("computes the corpus stats strip from fixture records, comma-formatting large counts", async () => {
+    const root = fixtureRoot();
+    try {
+      const source = record("source_a", "source");
+      const route = record("route_m1", "route", { route_id: "M1" });
+      route.evidence_refs = Array.from({ length: 1234 }, (_entry, index) => ({
+        source_id: "source_a",
+        block_id: `p001_c${String((index % 9999) + 1).padStart(4, "0")}`,
+      }));
+      const metric = record("metric_speed", "metric_claim", { metric_name: "bus_speed", value: 10, unit: "mph" });
+      rebuildCanonicalDb([source, route, metric], { path: join(root, "data", "canonical.db") });
+      writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute.\n<!-- mta-wiki:writer:end -->\n");
+      writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
+
+      exportSite({ rootDir: root });
+      const homeHtml = await Bun.file(join(root, "dist", "site", "index.html")).text();
+
+      expect(homeHtml).toContain("<strong>3</strong><span>canonical records</span>");
+      expect(homeHtml).toContain(`<strong>${(1234).toLocaleString("en-US")}</strong><span>evidence citations</span>`);
+      expect(homeHtml).toContain("<strong>1</strong><span>metric claims</span>");
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("homepage surfaces search, all six browse tiles, and the provenance section", async () => {
+    const root = fixtureRoot();
+    try {
+      const source = record("source_a", "source");
+      rebuildCanonicalDb([source], { path: join(root, "data", "canonical.db") });
+      writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
+
+      exportSite({ rootDir: root });
+      const homeHtml = await Bun.file(join(root, "dist", "site", "index.html")).text();
+
+      expect(homeHtml).toContain('action="search.html"');
+      expect(homeHtml).toContain('href="routes.html"');
+      expect(homeHtml).toContain('href="corridors.html"');
+      expect(homeHtml).toContain('href="projects.html"');
+      expect(homeHtml).toContain('href="sources.html"');
+      expect(homeHtml).toContain('href="graph.html"');
+      expect(homeHtml).toContain('href="primitives.html"');
+      expect(homeHtml).toContain("Where this data comes from");
+      expect(homeHtml).toContain("https://github.com/mannyc2/mta-wiki/issues");
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("truncates a long description into a blurb ending with an ellipsis", async () => {
+    const root = fixtureRoot();
+    try {
+      const descriptionBase =
+        "Bus priority corridor improvements reduce travel time and improve reliability for riders across the borough near major transit hubs and intersections throughout the corridor length with additional signal timing upgrades and dedicated lanes. ";
+      const longDescription = (descriptionBase + descriptionBase).slice(0, 400);
+      const source = record("source_a", "source");
+      const route = record("route_m1", "route", { route_id: "M1", description: longDescription });
+      rebuildCanonicalDb([source, route], { path: join(root, "data", "canonical.db") });
+      writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute.\n<!-- mta-wiki:writer:end -->\n");
+      writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
+
+      exportSite({ rootDir: root });
+      const homeHtml = await Bun.file(join(root, "dist", "site", "index.html")).text();
+
+      const blurbMatch = homeHtml.match(/<a href="routes\/route_m1\.html">route_m1<\/a><span class="featured-evidence">\d+ citations<\/span><p>([^<]*)<\/p>/u);
+      expect(blurbMatch).not.toBeNull();
+      const blurb = blurbMatch![1]!;
+      expect(blurb.endsWith("…")).toBe(true);
+      expect(blurb.length).toBeLessThanOrEqual(161);
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
