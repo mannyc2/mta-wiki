@@ -3,16 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Structured, source-cited records about MTA and NYC bus-priority routes, corridors, and projects.">
+<link rel="canonical" href="https://mannyc2.github.io/mta-wiki/sources.html">
+<meta property="og:title" content="Sources - MTA Wiki">
+<meta property="og:description" content="Structured, source-cited records about MTA and NYC bus-priority routes, corridors, and projects.">
+<meta property="og:url" content="https://mannyc2.github.io/mta-wiki/sources.html">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%8C%3C/text%3E%3C/svg%3E">
+
 <title>Sources - MTA Wiki</title>
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <header class="site-header">
   <a class="brand" href="index.html">MTA Wiki</a>
-  <nav><a href="routes.html">Routes</a><a href="corridors.html">Corridors</a><a href="projects.html">Projects</a></nav>
+  <nav><a href="routes.html">Routes</a><a href="corridors.html">Corridors</a><a href="projects.html">Projects</a><a href="sources.html">Sources</a></nav>
+  <form class="site-search" action="search.html" method="get" role="search">
+    <input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki">
+  </form>
 </header>
-<main>
-<section class="index-list"><h1>Sources</h1><p>2561 citation targets</p><ol><li><a href="sources/116_st_morningside_ave_pleasant_ave_cb10_jun2025.html">116th Street Bus &amp; Pedestrian Priority Project – Updated Proposal, CB10 June 2025</a><span>116_st_morningside_ave_pleasant_ave_cb10_jun2025</span></li>
+<main data-pagefind-body>
+<section class="index-list"><h1>Sources</h1><p>2561 citation targets</p><input type="search" class="index-filter" placeholder="Filter by name or id" aria-label="Filter this list"><ol><li><a href="sources/116_st_morningside_ave_pleasant_ave_cb10_jun2025.html">116th Street Bus &amp; Pedestrian Priority Project – Updated Proposal, CB10 June 2025</a><span>116_st_morningside_ave_pleasant_ave_cb10_jun2025</span></li>
 <li><a href="sources/116_st_morningside_ave_pleasant_ave_cb10_may2025.html">116th Street Bus and Pedestrian Priority Project - CB10 May 2025</a><span>116_st_morningside_ave_pleasant_ave_cb10_may2025</span></li>
 <li><a href="sources/116_st_morningside_ave_pleasant_ave_cb11_may2025.html">116th Street Bus and Pedestrian Priority Project - CB11 May 2025</a><span>116_st_morningside_ave_pleasant_ave_cb11_may2025</span></li>
 <li><a href="sources/116_st_morningside_ave_pleasant_ave_cb9_jun2025.html">116th Street Bus and Pedestrian Priority Project - Proposal to CB9</a><span>116_st_morningside_ave_pleasant_ave_cb9_jun2025</span></li>
@@ -2572,7 +2583,23 @@
 <li><a href="sources/2014_woodhaven_cb10_060514.html">Woodhaven/Cross Bay Boulevards Community Board 10 June 5, 2014</a><span>2014_woodhaven_cb10_060514</span></li>
 <li><a href="sources/2014_woodhaven_comm_planning_workshop_presentation.html">Woodhaven/Cross Bay Boulevards Select Bus Service Public Workshop April 23, 2014</a><span>2014_woodhaven_comm_planning_workshop_presentation</span></li>
 <li><a href="sources/2014_11_06_brt_woodhaven_pw3_boards.html">Woodhaven/Cross Bay SBS Public Open House #3 Boards</a><span>2014_11_06_brt_woodhaven_pw3_boards</span></li>
-<li><a href="sources/meeting_doc_160121.html">YEAR END HOLIDAY SERVICE</a><span>meeting_doc_160121</span></li></ol></section>
+<li><a href="sources/meeting_doc_160121.html">YEAR END HOLIDAY SERVICE</a><span>meeting_doc_160121</span></li></ol><script>
+(function () {
+  var input = document.querySelector(".index-filter");
+  if (!input) return;
+  var items = Array.prototype.slice.call(document.querySelectorAll(".index-list ol li"));
+  input.addEventListener("input", function () {
+    var q = input.value.toLowerCase();
+    items.forEach(function (li) { li.hidden = q !== "" && li.textContent.toLowerCase().indexOf(q) === -1; });
+  });
+})();
+</script></section>
 </main>
+<footer class="site-footer">
+<p>Built from public NYC/MTA government records. Every structured record cites evidence
+blocks in official source documents. Data was extracted with an LLM pipeline and may
+contain errors — verify against the cited sources.</p>
+<p><a href="https://github.com/mannyc2/mta-wiki">GitHub repository</a> · <a href="https://github.com/mannyc2/mta-wiki/tree/main/data/exports/releases">Data releases</a> · MIT-licensed code · To request a correction or takedown, <a href="https://github.com/mannyc2/mta-wiki/issues">open a GitHub issue</a>.</p>
+</footer>
 </body>
 </html>

@@ -3,16 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Structured, source-cited records about MTA and NYC bus-priority routes, corridors, and projects.">
+<link rel="canonical" href="https://mannyc2.github.io/mta-wiki/corridors.html">
+<meta property="og:title" content="Corridors - MTA Wiki">
+<meta property="og:description" content="Structured, source-cited records about MTA and NYC bus-priority routes, corridors, and projects.">
+<meta property="og:url" content="https://mannyc2.github.io/mta-wiki/corridors.html">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%8C%3C/text%3E%3C/svg%3E">
+
 <title>Corridors - MTA Wiki</title>
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <header class="site-header">
   <a class="brand" href="index.html">MTA Wiki</a>
-  <nav><a href="routes.html">Routes</a><a href="corridors.html">Corridors</a><a href="projects.html">Projects</a></nav>
+  <nav><a href="routes.html">Routes</a><a href="corridors.html">Corridors</a><a href="projects.html">Projects</a><a href="sources.html">Sources</a></nav>
+  <form class="site-search" action="search.html" method="get" role="search">
+    <input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki">
+  </form>
 </header>
-<main>
-<section class="index-list"><h1>Corridors</h1><p>218 pages</p><ol><li><a href="corridors/corridor_116th-street.html">116th Street Study Area, Manhattan</a><span>corridor_116th-street</span></li>
+<main data-pagefind-body>
+<section class="index-list"><h1>Corridors</h1><p>218 pages</p><input type="search" class="index-filter" placeholder="Filter by name or id" aria-label="Filter this list"><ol><li><a href="corridors/corridor_116th-street.html">116th Street Study Area, Manhattan</a><span>corridor_116th-street</span></li>
 <li><a href="corridors/corridor_125th-st-manhattan.html">125th Street</a><span>corridor_125th-st-manhattan</span></li>
 <li><a href="corridors/corridor_125th-street-manhattan.html">125th Street</a><span>corridor_125th-street-manhattan</span></li>
 <li><a href="corridors/corridor_14th-street-ttp.html">14th Street TTP Corridor</a><span>corridor_14th-street-ttp</span></li>
@@ -229,7 +240,23 @@
 <li><a href="corridors/corridor_woodhaven-cross-bay-blvds.html">Woodhaven / Cross Bay Boulevards</a><span>corridor_woodhaven-cross-bay-blvds</span></li>
 <li><a href="corridors/corridor_woodhaven-boulevard.html">Woodhaven Boulevard, Queens Boulevard to 107th Avenue, Queens</a><span>corridor_woodhaven-boulevard</span></li>
 <li><a href="corridors/corridor_woodhaven-blvd-dry-harbor-to-metropolitan.html">Woodhaven Boulevard: Dry Harbor Road to Metropolitan Avenue</a><span>corridor_woodhaven-blvd-dry-harbor-to-metropolitan</span></li>
-<li><a href="corridors/corridor_woodhaven-blvd-union-tpke-to-81st-rd.html">Woodhaven Boulevard: Union Turnpike to 81st Road</a><span>corridor_woodhaven-blvd-union-tpke-to-81st-rd</span></li></ol></section>
+<li><a href="corridors/corridor_woodhaven-blvd-union-tpke-to-81st-rd.html">Woodhaven Boulevard: Union Turnpike to 81st Road</a><span>corridor_woodhaven-blvd-union-tpke-to-81st-rd</span></li></ol><script>
+(function () {
+  var input = document.querySelector(".index-filter");
+  if (!input) return;
+  var items = Array.prototype.slice.call(document.querySelectorAll(".index-list ol li"));
+  input.addEventListener("input", function () {
+    var q = input.value.toLowerCase();
+    items.forEach(function (li) { li.hidden = q !== "" && li.textContent.toLowerCase().indexOf(q) === -1; });
+  });
+})();
+</script></section>
 </main>
+<footer class="site-footer">
+<p>Built from public NYC/MTA government records. Every structured record cites evidence
+blocks in official source documents. Data was extracted with an LLM pipeline and may
+contain errors — verify against the cited sources.</p>
+<p><a href="https://github.com/mannyc2/mta-wiki">GitHub repository</a> · <a href="https://github.com/mannyc2/mta-wiki/tree/main/data/exports/releases">Data releases</a> · MIT-licensed code · To request a correction or takedown, <a href="https://github.com/mannyc2/mta-wiki/issues">open a GitHub issue</a>.</p>
+</footer>
 </body>
 </html>

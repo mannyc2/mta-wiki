@@ -3,26 +3,84 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Research workbench for MTA and NYC bus-priority knowledge: searchable, source-cited routes, corridors, projects, and source documents.">
+<link rel="canonical" href="https://mannyc2.github.io/mta-wiki/index.html">
+<meta property="og:title" content="Home - MTA Wiki">
+<meta property="og:description" content="Research workbench for MTA and NYC bus-priority knowledge: searchable, source-cited routes, corridors, projects, and source documents.">
+<meta property="og:url" content="https://mannyc2.github.io/mta-wiki/index.html">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%8C%3C/text%3E%3C/svg%3E">
+
 <title>Home - MTA Wiki</title>
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <header class="site-header">
   <a class="brand" href="index.html">MTA Wiki</a>
-  <nav><a href="routes.html">Routes</a><a href="corridors.html">Corridors</a><a href="projects.html">Projects</a></nav>
+  <nav><a href="routes.html">Routes</a><a href="corridors.html">Corridors</a><a href="projects.html">Projects</a><a href="sources.html">Sources</a></nav>
+  <form class="site-search" action="search.html" method="get" role="search">
+    <input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki">
+  </form>
 </header>
-<main>
+<main data-pagefind-body>
 <section class="home">
 <h1>MTA Wiki</h1>
-<p>Structured v1 records and citations for MTA and NYC bus-priority knowledge.</p>
+<p>Structured, source-cited records about MTA and NYC bus-priority routes, corridors, and
+projects — extracted from public government documents.</p>
+<form class="home-search" action="search.html" method="get" role="search">
+<input type="search" name="q" placeholder="Search routes, projects, corridors, sources…" aria-label="Search the wiki">
+<button type="submit">Search</button>
+</form>
 <div class="home-grid">
 <a href="routes.html"><strong>318</strong><span>Routes</span></a>
 <a href="corridors.html"><strong>218</strong><span>Corridors</span></a>
 <a href="projects.html"><strong>1859</strong><span>Projects</span></a>
 <a href="sources.html"><strong>2561</strong><span>Source citation targets</span></a>
+<a href="graph.html"><strong>→</strong><span>Relation graph</span></a>
+<a href="primitives.html"><strong>→</strong><span>Primitive reference</span></a>
 </div>
-<p><a href="graph.html">Graph</a> <a href="primitives.html">Primitives</a></p>
+</section>
+<section class="home-stats"><h2>What's inside</h2>
+<ul>
+<li><strong>84,024</strong><span>canonical records</span></li>
+<li><strong>132,522</strong><span>evidence citations</span></li>
+<li><strong>36,530</strong><span>metric claims</span></li>
+<li><strong>20,637</strong><span>relations</span></li>
+<li><strong>7,945</strong><span>events</span></li>
+<li><strong>8,928</strong><span>claims</span></li>
+</ul>
+<p>Counts are computed from the canonical database at export time.</p>
+</section>
+<section class="home-featured"><h2>Most documented routes</h2><ol><li><a href="routes/route_q52-sbs-queens.html">Q52 SBS bus route</a><span class="featured-evidence">90 citations</span><p>SBS route on Woodhaven/Cross Bay Boulevards corridor</p></li>
+<li><a href="routes/route_q53-sbs-ace.html">Q53 SBS on Woodhaven Boulevard, Queens (TSP in development)</a><span class="featured-evidence">90 citations</span><p>SBS route on Woodhaven/Cross Bay Boulevards corridor</p></li>
+<li><a href="routes/route_utica-ave-sbs.html">B46-SBS - ABLE route</a><span class="featured-evidence">79 citations</span><p>SBS on Utica Avenue on the B46 bus route in Brooklyn</p></li>
+<li><a href="routes/route_webster-ave-sbs.html">BX41-SBS - ABLE route</a><span class="featured-evidence">63 citations</span><p>SBS on Webster Avenue on the Bx41 bus route in the Bronx</p></li>
+<li><a href="routes/route_b44-sbs.html">Nostrand Avenue-Rogers Avenue Select Bus Service (B44)</a><span class="featured-evidence">56 citations</span><p>SBS route on Nostrand Avenue/Rogers Avenue/Bedford Avenue in Brooklyn, from Williamsburg Bridge Bus Plaza to Emmons Avenue/Knapp Street</p></li>
+<li><a href="routes/route_bx12-plus.html">BX12-SBS - ABLE route</a><span class="featured-evidence">53 citations</span><p>First BRT implementation on Bx12 route with 20% travel time savings</p></li></ol><p><a href="routes.html">All 318 routes →</a></p></section>
+<section class="home-featured"><h2>Most documented corridors</h2><ol><li><a href="corridors/corridor_woodhaven-cross-bay-blvds.html">Woodhaven / Cross Bay Boulevards</a><span class="featured-evidence">69 citations</span><p>SBS corridor from Woodside (near LIRR) to Rockaway Beach, passing through Elmhurst, Rego Park, Middle Village, Woodhaven, Ozone Park, Howard Beach, and…</p></li>
+<li><a href="corridors/corridor_34th-st-busway.html">34th Street, Manhattan</a><span class="featured-evidence">54 citations</span><p>Busway corridor on 34th Street between Ninth Avenue and Third Avenue in Manhattan</p></li>
+<li><a href="corridors/corridor_webster-ave-bronx.html">Webster Avenue Corridor</a><span class="featured-evidence">52 citations</span><p>Proposed SBS corridor in the Bronx based on the existing Bx41 route</p></li>
+<li><a href="corridors/corridor_nostrand-avenue.html">Nostrand Av</a><span class="featured-evidence">45 citations</span><p>North-south corridor in Brooklyn, carries B44 SBS and B44 Local. Vision Zero priority corridor.</p></li></ol><p><a href="corridors.html">All 218 corridors →</a></p></section>
+<section class="home-featured"><h2>Most documented projects</h2><ol><li><a href="projects/project_annual-2021-penn-station-access.html">Penn Station Access</a><span class="featured-evidence">171 citations</span><p>Project to bring Metro-North into Penn Station and construct four new rail stations in the Bronx. Design Build and PMC contracts awarded on December 29, 2021.…</p></li>
+<li><a href="projects/project_woodhaven-cross-bay-sbs.html">Woodhaven / Cross Bay Boulevards Select Bus Service</a><span class="featured-evidence">119 citations</span><p>Long-term SBS project on Woodhaven and Cross Bay Boulevards addressing bus speed, pedestrian safety, and traffic flow. Includes 2014 bus lane implementation…</p></li>
+<li><a href="projects/project_annual-2021-second-ave-subway-phase2.html">Second Avenue Subway Phase 2</a><span class="featured-evidence">105 citations</span><p>Phase 2 of the Second Avenue Subway. Committed $221 million as of December 2021. Initial funding $1.735 billion. FTA approved entry into Engineering phase on…</p></li>
+<li><a href="projects/project_12-webster-ave.html">Webster Avenue Select Bus Service</a><span class="featured-evidence">93 citations</span><p>Add southbound offset bus lane with physical barrier to separate bus and right turning movements, signal timing adjustments</p></li>
+<li><a href="projects/project_annual-2021-cbdtp.html">Central Business District Tolling Program</a><span class="featured-evidence">92 citations</span><p>First of its kind in the U.S., designed to reduce traffic congestion, improve air quality, promote mass transit usage, and raise revenue for key capital…</p></li>
+<li><a href="projects/project_queens-bus-network-redesign.html">Queens Bus Network Redesign</a><span class="featured-evidence">87 citations</span><p>Finalized early 2025. Includes simplifying, straightening, and consolidating routes, $30 million of new/increased service, new &#39;rush&#39; limited routes. Set to go…</p></li></ol><p><a href="projects.html">All 1859 projects →</a></p></section>
+<section class="home-provenance"><h2>Where this data comes from</h2>
+<p>Sources are public NYC/MTA government records obtained from public agency websites. Every
+structured record cites evidence blocks in the source documents, and source pages are
+exported as citation targets.</p>
+<p>Extraction is LLM-assisted and may contain errors; extracted text and derived data are
+provided for research and reference. To request a correction or takedown,
+<a href="https://github.com/mannyc2/mta-wiki/issues">open a GitHub issue</a>.</p>
 </section>
 </main>
+<footer class="site-footer">
+<p>Built from public NYC/MTA government records. Every structured record cites evidence
+blocks in official source documents. Data was extracted with an LLM pipeline and may
+contain errors — verify against the cited sources.</p>
+<p><a href="https://github.com/mannyc2/mta-wiki">GitHub repository</a> · <a href="https://github.com/mannyc2/mta-wiki/tree/main/data/exports/releases">Data releases</a> · MIT-licensed code · To request a correction or takedown, <a href="https://github.com/mannyc2/mta-wiki/issues">open a GitHub issue</a>.</p>
+</footer>
 </body>
 </html>

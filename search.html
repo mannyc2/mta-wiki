@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Full-text search across all MTA Wiki routes, corridors, projects, and source documents.">
+<link rel="canonical" href="https://mannyc2.github.io/mta-wiki/search.html">
+<meta property="og:title" content="Search - MTA Wiki">
+<meta property="og:description" content="Full-text search across all MTA Wiki routes, corridors, projects, and source documents.">
+<meta property="og:url" content="https://mannyc2.github.io/mta-wiki/search.html">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%8C%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="pagefind/pagefind-ui.css">
+<title>Search - MTA Wiki</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">MTA Wiki</a>
+  <nav><a href="routes.html">Routes</a><a href="corridors.html">Corridors</a><a href="projects.html">Projects</a><a href="sources.html">Sources</a></nav>
+  <form class="site-search" action="search.html" method="get" role="search">
+    <input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki">
+  </form>
+</header>
+<main data-pagefind-body>
+<section class="search-page">
+<h1>Search</h1>
+<p class="search-hint">Searches all exported route, corridor, project, and source pages. Use the kind filter to narrow results.</p>
+<div id="search" data-pagefind-ignore></div>
+<noscript><p>Search requires JavaScript. Browse <a href="routes.html">routes</a>, <a href="corridors.html">corridors</a>, <a href="projects.html">projects</a>, or <a href="sources.html">sources</a> instead.</p></noscript>
+<script src="pagefind/pagefind-ui.js"></script>
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+  const ui = new PagefindUI({ element: "#search", showSubResults: true, showImages: false, pageSize: 10 });
+  const q = new URLSearchParams(window.location.search).get("q");
+  if (q) ui.triggerSearch(q);
+});
+</script>
+</section>
+</main>
+<footer class="site-footer">
+<p>Built from public NYC/MTA government records. Every structured record cites evidence
+blocks in official source documents. Data was extracted with an LLM pipeline and may
+contain errors — verify against the cited sources.</p>
+<p><a href="https://github.com/mannyc2/mta-wiki">GitHub repository</a> · <a href="https://github.com/mannyc2/mta-wiki/tree/main/data/exports/releases">Data releases</a> · MIT-licensed code · To request a correction or takedown, <a href="https://github.com/mannyc2/mta-wiki/issues">open a GitHub issue</a>.</p>
+</footer>
+</body>
+</html>

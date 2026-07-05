@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mannyc2.github.io/mta-wiki/sitemap.xml
