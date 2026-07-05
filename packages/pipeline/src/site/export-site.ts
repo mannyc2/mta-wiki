@@ -37,6 +37,9 @@ export type SiteRenderContext = {
   sourcePageIds: Set<string>;
   relatedByRecordId: Map<string, RelatedEntry[]>;
   linkedKindCounts: Map<string, Map<string, number>>;
+  pageBearingIds: Set<string>;
+  citedByBlock: Map<string, Map<string, string[]>>;
+  citingRecordsBySource: Map<string, string[]>;
 };
 
 type FeaturedEntry = { title: string; url: string; evidence: number; blurb: string };
@@ -392,6 +395,79 @@ function sourceAnchorHtml(text: string) {
   return htmlEscape(text).replace(/\[(p\d{3}_[bc]\d{4})\]/gu, `<a id="$1"></a>[$1]`);
 }
 
+type ParsedSourceBody = { preamble: string; blocks: Array<{ id: string; text: string }> };
+
+function parseSourceBlocks(body: string): ParsedSourceBody {
+  const marker = /^\[(p\d{3}_[bc]\d{4})\][ \t]?/gmu;
+  const blocks: Array<{ id: string; text: string }> = [];
+  let preambleEnd: number | undefined;
+  let current: { id: string; start: number } | undefined;
+  for (let match = marker.exec(body); match; match = marker.exec(body)) {
+    if (current) blocks.push({ id: current.id, text: body.slice(current.start, match.index) });
+    else preambleEnd = match.index;
+    current = { id: match[1]!, start: match.index + match[0].length };
+  }
+  if (current) blocks.push({ id: current.id, text: body.slice(current.start) });
+  return { preamble: body.slice(0, preambleEnd ?? (current ? 0 : body.length)), blocks };
+}
+
+function sourceMetaRows(record: MtaCanonicalRecord): string {
+  const rows: Array<[string, string]> = [["Source ID", record.source_id]];
+  const publisher = asString(record.payload.publisher);
+  if (publisher) rows.push(["Publisher", publisher]);
+  const dateNormalized = asString(record.payload.published_date_normalized);
+  const datePrecision = asString(record.payload.published_date_precision);
+  const dateText = asString(record.payload.date_text);
+  if (dateNormalized) rows.push(["Date", datePrecision ? `${dateNormalized} (${datePrecision})` : dateNormalized]);
+  else if (dateText) rows.push(["Date", dateText]);
+  const contentType = asString(record.payload.content_type);
+  if (contentType) rows.push(["Document type", contentType]);
+  const authorityTier = asString(record.payload.authority_tier);
+  if (authorityTier) rows.push(["Authority tier", humanizeKind(authorityTier)]);
+  const retrievedAt = asString(record.payload.retrieved_at);
+  if (retrievedAt) rows.push(["Retrieved", retrievedAt]);
+  const description = asString(record.payload.description);
+  if (description) rows.push(["Description", description.slice(0, 500)]);
+  return rows.map(([key, value]) => `<dt>${htmlEscape(key)}</dt><dd>${htmlEscape(value)}</dd>`).join("");
+}
+
+function sourceLinksHtml(record: MtaCanonicalRecord, blob: string) {
+  const rawUrl = asString(record.payload.source_url) ?? asString(record.payload.url);
+  const original = rawUrl && /^https?:\/\//u.test(rawUrl) ? `<a href="${attr(rawUrl)}" rel="noopener">Original document ↗</a>` : "";
+  return `<p class="source-links">${original}<a href="${attr(blob)}">Wiki markdown on GitHub</a></p>`;
+}
+
+function blockCitedByHtml(sourceId: string, blockId: string, context: SiteRenderContext, fromUrl: string) {
+  const citingIds = context.citedByBlock.get(sourceId)?.get(blockId);
+  if (!citingIds || citingIds.length === 0) return "";
+  const n = citingIds.length;
+  const linkableIds = citingIds.filter((id) => context.pageBearingIds.has(id)).slice(0, 3);
+  const links = linkableIds
+    .map((id) => {
+      const citingRecord = context.recordsById.get(id);
+      const targetUrl = citingRecord ? recordUrl(citingRecord) : undefined;
+      if (!citingRecord || !targetUrl) return undefined;
+      return `<a href="${attr(relativeRecordUrl(fromUrl, targetUrl))}">${htmlEscape(pageTitle(citingRecord))}</a>`;
+    })
+    .filter((entry): entry is string => entry !== undefined);
+  const more = n - links.length;
+  const suffix = links.length > 0 ? `: ${links.join(", ")}${more > 0 ? ` +${more} more` : ""}` : "";
+  return `<p class="block-cited" data-pagefind-ignore>Cited by ${n} record${n === 1 ? "" : "s"}${suffix}</p>`;
+}
+
+function renderSourceBlock(block: { id: string; text: string }, seenIds: Set<string>, sourceId: string, context: SiteRenderContext, fromUrl: string): string {
+  const isFirst = !seenIds.has(block.id);
+  seenIds.add(block.id);
+  const idAttr = isFirst ? ` id="${attr(block.id)}"` : "";
+  const refLabel = `[${htmlEscape(block.id)}]`;
+  const ref = isFirst
+    ? `<a class="block-ref" href="#${attr(block.id)}" data-pagefind-ignore>${refLabel}</a>`
+    : `<span class="block-ref">${refLabel}</span>`;
+  return [`<section class="src-block"${idAttr}>`, ref, `<pre>${htmlEscape(block.text)}</pre>`, blockCitedByHtml(sourceId, block.id, context, fromUrl), `</section>`].join(
+    "\n",
+  );
+}
+
 function renderRecordPage(record: MtaCanonicalRecord, markdown: string, path: string, context: SiteRenderContext) {
   const url = recordUrl(record)!;
   const large = Buffer.byteLength(markdown) > LARGE_MARKDOWN_CAP_BYTES;
@@ -450,26 +526,72 @@ function renderRecordPage(record: MtaCanonicalRecord, markdown: string, path: st
 
 function renderSourcePage(record: MtaCanonicalRecord, markdown: string, path: string, context: SiteRenderContext) {
   const url = recordUrl(record)!;
+  const title = pageTitle(record);
   const parsed = parseWikiPage(markdown);
   const bodyBytes = Buffer.byteLength(parsed.body);
-  const truncated = bodyBytes > SOURCE_TEXT_CAP_BYTES;
-  const visible = truncated ? parsed.body.slice(0, SOURCE_TEXT_CAP_BYTES) : parsed.body;
   const blob = wikiBlobUrl(path, context.githubBaseUrl);
-  const note = truncated ? `<p class="cap-note">showing first ${SOURCE_TEXT_CAP_BYTES} bytes of ${bodyBytes} - <a href="${attr(blob)}">full data in the repository</a></p>` : "";
+  const parsedBlocks = parseSourceBlocks(parsed.body);
+
+  let note: string;
+  let bodyContent: string;
+  if (parsedBlocks.blocks.length === 0) {
+    const truncated = bodyBytes > SOURCE_TEXT_CAP_BYTES;
+    const visible = truncated ? parsed.body.slice(0, SOURCE_TEXT_CAP_BYTES) : parsed.body;
+    note = truncated
+      ? `<p class="cap-note">showing first ${SOURCE_TEXT_CAP_BYTES} bytes of ${bodyBytes} - <a href="${attr(blob)}">full data in the repository</a></p>`
+      : "";
+    bodyContent = `<pre class="source-text">${sourceAnchorHtml(visible)}</pre>`;
+  } else {
+    const preamble = parsedBlocks.preamble.trim();
+    const preambleHtml = preamble ? `<pre class="source-text">${htmlEscape(preamble)}</pre>` : "";
+    const seenIds = new Set<string>();
+    const renderedSections: string[] = [];
+    let usedBytes = 0;
+    let shownBlocks = 0;
+    let truncated = false;
+    for (const block of parsedBlocks.blocks) {
+      const blockBytes = Buffer.byteLength(block.text);
+      if (usedBytes + blockBytes > SOURCE_TEXT_CAP_BYTES) {
+        const remaining = SOURCE_TEXT_CAP_BYTES - usedBytes;
+        if (remaining > 0) {
+          const slicedText = block.text.slice(0, remaining);
+          renderedSections.push(renderSourceBlock({ id: block.id, text: slicedText }, seenIds, record.source_id, context, url));
+          usedBytes += Buffer.byteLength(slicedText);
+          shownBlocks += 1;
+        }
+        truncated = true;
+        break;
+      }
+      renderedSections.push(renderSourceBlock(block, seenIds, record.source_id, context, url));
+      usedBytes += blockBytes;
+      shownBlocks += 1;
+    }
+    note = truncated
+      ? `<p class="cap-note">showing first ${usedBytes} of ${bodyBytes} bytes (${shownBlocks} of ${parsedBlocks.blocks.length} blocks) - <a href="${attr(blob)}">full data in the repository</a></p>`
+      : "";
+    bodyContent = [preambleHtml, ...renderedSections].join("\n");
+  }
+
+  const citingCount = context.citingRecordsBySource.get(record.source_id)?.length ?? 0;
+  const citedBlockCount = context.citedByBlock.get(record.source_id)?.size ?? 0;
+  const publisher = asString(record.payload.publisher);
+
   const body = [
     `<article class="source-page">`,
+    `<nav class="crumbs"><a href="../index.html">Home</a> / <a href="../sources.html">Sources</a> / <span>${htmlEscape(title)}</span></nav>`,
     `<p class="eyebrow" data-pagefind-filter="kind">source</p>`,
-    `<h1>${htmlEscape(pageTitle(record))}</h1>`,
-    `<dl class="source-meta">`,
-    `<dt>Source ID</dt><dd>${htmlEscape(record.source_id)}</dd>`,
-    `<dt>Publisher</dt><dd>${htmlEscape(asString(record.payload.publisher) ?? "")}</dd>`,
-    `<dt>Date</dt><dd>${htmlEscape(asString(record.payload.published_date_normalized) ?? asString(record.payload.date_text) ?? "")}</dd>`,
-    `</dl>`,
+    `<h1>${htmlEscape(title)}</h1>`,
+    `<p class="record-id">${htmlEscape(record.source_id)}</p>`,
+    `<dl class="source-meta">${sourceMetaRows(record)}</dl>`,
+    `<p class="cite-line">Cited by ${citingCount} records · ${citedBlockCount} blocks cited</p>`,
+    sourceLinksHtml(record, blob),
     note,
-    `<pre class="source-text">${sourceAnchorHtml(visible)}</pre>`,
+    bodyContent,
     `</article>`,
   ].join("\n");
-  return htmlShell(pageTitle(record), body, url);
+  return htmlShell(title, body, url, {
+    description: `Source document: ${title}${publisher ? `, ${publisher}` : ""} — cited by ${citingCount} records in the MTA Wiki.`,
+  });
 }
 
 const INDEX_FILTER_INPUT = `<input type="search" class="index-filter" placeholder="Filter by name or id" aria-label="Filter this list">`;
@@ -611,7 +733,7 @@ function hasWikiPage(rootDir: string, record: MtaCanonicalRecord) {
 }
 
 function css() {
-  return `:root{color-scheme:light;--ink:#1d2433;--muted:#5b6475;--line:#d8dde7;--bg:#fbfcfe;--panel:#fff;--accent:#0f766e}*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}.site-header{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px 24px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.94);backdrop-filter:blur(10px)}.brand{font-weight:700;color:var(--ink);text-decoration:none}nav{display:flex;gap:14px}nav a,a{color:var(--accent)}main{max-width:1180px;margin:0 auto;padding:28px 24px 64px}h1{font-size:clamp(2rem,4vw,4rem);line-height:1.05;margin:0 0 12px}h2{margin-top:32px}.eyebrow,.record-id{color:var(--muted);font-size:.9rem}.home-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:28px 0}.home-grid a{display:block;border:1px solid var(--line);background:var(--panel);padding:18px;text-decoration:none}.home-grid strong{display:block;font-size:2rem;color:var(--ink)}.index-list ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}.index-list li{display:grid;grid-template-columns:minmax(0,1fr)minmax(120px,32%);gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}.index-list span{color:var(--muted);font-size:.85rem;overflow-wrap:anywhere}table{width:100%;border-collapse:collapse;background:var(--panel);font-size:.92rem}th,td{border:1px solid var(--line);padding:8px;vertical-align:top;text-align:left}td{overflow-wrap:anywhere}.facts th{width:220px}.cap-note{border-left:4px solid var(--accent);padding:10px 12px;background:#eef8f6}.empty-writer{color:var(--muted);background:#f1f4f8;padding:12px}.primitive,.component{border:1px solid var(--line);background:#fff;padding:2px 6px}.primitive-value{font-weight:700}.metric-card{display:inline-block;margin:12px 0;padding:12px 14px}.component-label{color:var(--muted);font-size:.85rem}.component-value{font-size:1.4rem;font-weight:700}.chip-row{display:flex;gap:12px;align-items:center;width:max-content}.source-meta{display:grid;grid-template-columns:120px minmax(0,1fr);gap:6px 16px}.source-meta dt{font-weight:700}.source-meta dd{margin:0}.source-text{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;background:#fff;border:1px solid var(--line);padding:16px;font-size:.9rem}pre,code{font-family:"SFMono-Regular",Consolas,monospace}.site-search input{border:1px solid var(--line);padding:6px 10px;min-width:210px;font:inherit;background:#fff}.site-footer{border-top:1px solid var(--line);margin-top:48px;padding:20px 24px;color:var(--muted);font-size:.9rem;max-width:1180px;margin-left:auto;margin-right:auto}.search-page #search{margin-top:16px}.index-filter{margin:12px 0;border:1px solid var(--line);padding:8px 10px;font:inherit;width:min(420px,100%)}.citation-unresolved{color:var(--muted);border-bottom:1px dotted var(--muted)}.home-search{display:flex;gap:8px;margin:20px 0;max-width:560px}.home-search input{flex:1;border:1px solid var(--line);padding:12px 14px;font:inherit}.home-search button{border:1px solid var(--accent);background:var(--accent);color:#fff;padding:12px 18px;font:inherit;cursor:pointer}.home-stats ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;list-style:none;margin:16px 0;padding:0}.home-stats li{border:1px solid var(--line);background:var(--panel);padding:14px}.home-stats strong{display:block;font-size:1.5rem}.home-stats span{color:var(--muted);font-size:.85rem}.home-featured ol{list-style:none;margin:12px 0;padding:0}.home-featured li{border-bottom:1px solid var(--line);padding:12px 0}.home-featured p{margin:4px 0 0;color:var(--muted);font-size:.92rem}.featured-evidence{color:var(--muted);font-size:.85rem;margin-left:10px}.home-provenance{border:1px solid var(--line);background:var(--panel);padding:18px 20px;margin-top:36px}.home-provenance p{margin:8px 0;color:var(--muted)}.crumbs{font-size:.85rem;color:var(--muted);margin-bottom:8px}.crumbs a{color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.chip{border:1px solid var(--line);background:var(--panel);padding:2px 10px;font-size:.82rem;border-radius:999px;color:var(--muted)}.chip a{text-decoration:none}.chip-more{border-style:dashed}.meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:4px 18px;margin:12px 0;border:1px solid var(--line);background:var(--panel);padding:12px 14px}.meta-grid dt{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}.meta-grid dd{margin:0 0 8px;overflow-wrap:anywhere}.cite-line{color:var(--muted);font-size:.9rem}.source-chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 18px}details.panel{border:1px solid var(--line);background:var(--panel);margin:18px 0}details.panel summary{cursor:pointer;padding:10px 14px;font-weight:600}details.panel[open] summary{border-bottom:1px solid var(--line)}details.panel section{padding:0 14px 14px}.related-group ul{list-style:none;padding:0;margin:6px 0;display:flex;flex-wrap:wrap;gap:8px}.related-group li a{border:1px solid var(--line);background:var(--panel);padding:4px 10px;display:inline-block;text-decoration:none}.cap-note-inline{color:var(--muted);font-size:.85rem}@media(max-width:720px){.site-header{align-items:flex-start;flex-direction:column}.site-search{width:100%}.site-search input{width:100%}.index-list li{grid-template-columns:1fr}.facts th{width:auto}main{padding:20px 16px 48px}}`;
+  return `:root{color-scheme:light;--ink:#1d2433;--muted:#5b6475;--line:#d8dde7;--bg:#fbfcfe;--panel:#fff;--accent:#0f766e}*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}.site-header{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px 24px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.94);backdrop-filter:blur(10px)}.brand{font-weight:700;color:var(--ink);text-decoration:none}nav{display:flex;gap:14px}nav a,a{color:var(--accent)}main{max-width:1180px;margin:0 auto;padding:28px 24px 64px}h1{font-size:clamp(2rem,4vw,4rem);line-height:1.05;margin:0 0 12px}h2{margin-top:32px}.eyebrow,.record-id{color:var(--muted);font-size:.9rem}.home-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:28px 0}.home-grid a{display:block;border:1px solid var(--line);background:var(--panel);padding:18px;text-decoration:none}.home-grid strong{display:block;font-size:2rem;color:var(--ink)}.index-list ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}.index-list li{display:grid;grid-template-columns:minmax(0,1fr)minmax(120px,32%);gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}.index-list span{color:var(--muted);font-size:.85rem;overflow-wrap:anywhere}table{width:100%;border-collapse:collapse;background:var(--panel);font-size:.92rem}th,td{border:1px solid var(--line);padding:8px;vertical-align:top;text-align:left}td{overflow-wrap:anywhere}.facts th{width:220px}.cap-note{border-left:4px solid var(--accent);padding:10px 12px;background:#eef8f6}.empty-writer{color:var(--muted);background:#f1f4f8;padding:12px}.primitive,.component{border:1px solid var(--line);background:#fff;padding:2px 6px}.primitive-value{font-weight:700}.metric-card{display:inline-block;margin:12px 0;padding:12px 14px}.component-label{color:var(--muted);font-size:.85rem}.component-value{font-size:1.4rem;font-weight:700}.chip-row{display:flex;gap:12px;align-items:center;width:max-content}.source-meta{display:grid;grid-template-columns:120px minmax(0,1fr);gap:6px 16px}.source-meta dt{font-weight:700}.source-meta dd{margin:0}.source-text{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;background:#fff;border:1px solid var(--line);padding:16px;font-size:.9rem}pre,code{font-family:"SFMono-Regular",Consolas,monospace}.site-search input{border:1px solid var(--line);padding:6px 10px;min-width:210px;font:inherit;background:#fff}.site-footer{border-top:1px solid var(--line);margin-top:48px;padding:20px 24px;color:var(--muted);font-size:.9rem;max-width:1180px;margin-left:auto;margin-right:auto}.search-page #search{margin-top:16px}.index-filter{margin:12px 0;border:1px solid var(--line);padding:8px 10px;font:inherit;width:min(420px,100%)}.citation-unresolved{color:var(--muted);border-bottom:1px dotted var(--muted)}.home-search{display:flex;gap:8px;margin:20px 0;max-width:560px}.home-search input{flex:1;border:1px solid var(--line);padding:12px 14px;font:inherit}.home-search button{border:1px solid var(--accent);background:var(--accent);color:#fff;padding:12px 18px;font:inherit;cursor:pointer}.home-stats ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;list-style:none;margin:16px 0;padding:0}.home-stats li{border:1px solid var(--line);background:var(--panel);padding:14px}.home-stats strong{display:block;font-size:1.5rem}.home-stats span{color:var(--muted);font-size:.85rem}.home-featured ol{list-style:none;margin:12px 0;padding:0}.home-featured li{border-bottom:1px solid var(--line);padding:12px 0}.home-featured p{margin:4px 0 0;color:var(--muted);font-size:.92rem}.featured-evidence{color:var(--muted);font-size:.85rem;margin-left:10px}.home-provenance{border:1px solid var(--line);background:var(--panel);padding:18px 20px;margin-top:36px}.home-provenance p{margin:8px 0;color:var(--muted)}.crumbs{font-size:.85rem;color:var(--muted);margin-bottom:8px}.crumbs a{color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.chip{border:1px solid var(--line);background:var(--panel);padding:2px 10px;font-size:.82rem;border-radius:999px;color:var(--muted)}.chip a{text-decoration:none}.chip-more{border-style:dashed}.meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:4px 18px;margin:12px 0;border:1px solid var(--line);background:var(--panel);padding:12px 14px}.meta-grid dt{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}.meta-grid dd{margin:0 0 8px;overflow-wrap:anywhere}.cite-line{color:var(--muted);font-size:.9rem}.source-chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 18px}details.panel{border:1px solid var(--line);background:var(--panel);margin:18px 0}details.panel summary{cursor:pointer;padding:10px 14px;font-weight:600}details.panel[open] summary{border-bottom:1px solid var(--line)}details.panel section{padding:0 14px 14px}.related-group ul{list-style:none;padding:0;margin:6px 0;display:flex;flex-wrap:wrap;gap:8px}.related-group li a{border:1px solid var(--line);background:var(--panel);padding:4px 10px;display:inline-block;text-decoration:none}.cap-note-inline{color:var(--muted);font-size:.85rem}.src-block{border:1px solid var(--line);border-left:3px solid var(--line);background:var(--panel);margin:10px 0;padding:8px 12px;scroll-margin-top:72px}.src-block:target{border-left-color:var(--accent);background:#eef8f6;outline:1px solid var(--accent)}.src-block pre{border:0;padding:0;margin:6px 0 0;background:transparent;white-space:pre-wrap;overflow-wrap:anywhere;font-size:.9rem}.block-ref{font-family:"SFMono-Regular",Consolas,monospace;font-size:.78rem;color:var(--muted);text-decoration:none}.block-cited{margin:6px 0 0;font-size:.82rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:6px}.source-links a{margin-right:14px}@media(max-width:720px){.site-header{align-items:flex-start;flex-direction:column}.site-search{width:100%}.site-search input{width:100%}.index-list li{grid-template-columns:1fr}.facts th{width:auto}main{padding:20px 16px 48px}}`;
 }
 
 function dirSize(path: string): number {
@@ -671,6 +793,19 @@ function readRelationEdges(dbPath: string): RelationEdge[] {
   }
 }
 
+type EvidenceRefRow = { record_id: string; source_id: string; block_id: string | null };
+
+function readEvidenceRefRows(dbPath: string): EvidenceRefRow[] {
+  const db = openCanonicalDb(dbPath, { readonly: true });
+  try {
+    return db
+      .query("SELECT record_id, source_id, block_id FROM evidence_refs ORDER BY source_id, block_id, record_id")
+      .all() as EvidenceRefRow[];
+  } finally {
+    db.close();
+  }
+}
+
 export function exportSite(options: { rootDir?: string | undefined; outDir?: string | undefined; githubBaseUrl?: string | undefined } = {}): SiteExportResult {
   const rootDir = options.rootDir ?? repoRoot;
   const dbPath = join(rootDir, "data", "canonical.db");
@@ -678,6 +813,7 @@ export function exportSite(options: { rootDir?: string | undefined; outDir?: str
   const records = readCanonicalRecordsFromDbFile(dbPath);
   if (!records) throw new Error(`Unable to read ${relative(rootDir, dbPath)}. Run bun run materialize before export-site.`);
   const relationEdges = readRelationEdges(dbPath);
+  const evidenceRefRows = readEvidenceRefRows(dbPath);
   const outDir = options.outDir ?? siteOutDir(rootDir);
   rmSync(outDir, { recursive: true, force: true });
   mkdirSync(outDir, { recursive: true });
@@ -697,9 +833,10 @@ export function exportSite(options: { rootDir?: string | undefined; outDir?: str
     sourcePageIds: new Set(sourceRecords.map((record) => record.source_id)),
     relatedByRecordId: new Map(),
     linkedKindCounts: new Map(),
+    pageBearingIds: new Set([...routeRecords, ...corridorRecords, ...projectRecords].map((r) => r.record_id)),
+    citedByBlock: new Map(),
+    citingRecordsBySource: new Map(),
   };
-
-  const pageBearingIds = new Set([...routeRecords, ...corridorRecords, ...projectRecords].map((r) => r.record_id));
 
   function addRelated(fromId: string, other: MtaCanonicalRecord, relation: string) {
     const list = context.relatedByRecordId.get(fromId) ?? [];
@@ -717,15 +854,40 @@ export function exportSite(options: { rootDir?: string | undefined; outDir?: str
       [subject, object],
       [object, subject],
     ] as const) {
-      if (!pageBearingIds.has(me.record_id)) continue;
+      if (!context.pageBearingIds.has(me.record_id)) continue;
       const counts = context.linkedKindCounts.get(me.record_id) ?? new Map<string, number>();
       counts.set(other.record_kind, (counts.get(other.record_kind) ?? 0) + 1);
       context.linkedKindCounts.set(me.record_id, counts);
-      if (pageBearingIds.has(other.record_id)) addRelated(me.record_id, other, edge.relation_kind);
+      if (context.pageBearingIds.has(other.record_id)) addRelated(me.record_id, other, edge.relation_kind);
     }
   }
   for (const list of context.relatedByRecordId.values()) {
     list.sort((a, b) => a.title.localeCompare(b.title) || a.id.localeCompare(b.id));
+  }
+
+  const citingBySourceSets = new Map<string, Set<string>>();
+  const citedByBlockSets = new Map<string, Map<string, Set<string>>>();
+  for (const row of evidenceRefRows) {
+    const citingRecord = context.recordsById.get(row.record_id);
+    if (citingRecord?.record_kind === "source" && citingRecord.source_id === row.source_id) continue;
+    const citingSet = citingBySourceSets.get(row.source_id) ?? new Set<string>();
+    citingSet.add(row.record_id);
+    citingBySourceSets.set(row.source_id, citingSet);
+    if (row.block_id !== null) {
+      const blockMap = citedByBlockSets.get(row.source_id) ?? new Map<string, Set<string>>();
+      const blockSet = blockMap.get(row.block_id) ?? new Set<string>();
+      blockSet.add(row.record_id);
+      blockMap.set(row.block_id, blockSet);
+      citedByBlockSets.set(row.source_id, blockMap);
+    }
+  }
+  for (const [sourceId, set] of citingBySourceSets) {
+    context.citingRecordsBySource.set(sourceId, [...set].sort());
+  }
+  for (const [sourceId, blockMap] of citedByBlockSets) {
+    const outBlockMap = new Map<string, string[]>();
+    for (const [blockId, set] of blockMap) outBlockMap.set(blockId, [...set].sort());
+    context.citedByBlock.set(sourceId, outBlockMap);
   }
 
   const siteUrls: string[] = [];

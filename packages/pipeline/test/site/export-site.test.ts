@@ -76,7 +76,8 @@ describe("exportSite", () => {
       expect(routeHtml).toContain('<details class="panel"><summary>Structured data');
       expect(routeHtml).toContain("Citations (250)");
       expect(routeHtml).toContain('<details class="panel" data-pagefind-ignore>');
-      expect(sourceHtml).toContain("showing first 1000000 bytes");
+      expect(sourceHtml).toContain("showing first 1000000");
+      expect(sourceHtml).toContain("full data in the repository");
       expect(sourceHtml).toContain("id=\"p001_c0001\"");
       const searchHtml = await Bun.file(join(root, "dist", "site", "search.html")).text();
       const sitemapXmlText = await Bun.file(join(root, "dist", "site", "sitemap.xml")).text();
@@ -415,6 +416,98 @@ describe("exportSite", () => {
       expect(routeHtml).toContain('<a href="../routes.html">Routes</a>');
       expect(routeHtml).not.toContain("Routess");
       expect(routeHtml).toMatch(/name="description" content="[^"]*citations from[^"]*"/u);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("renders a block-structured source page: anchors, duplicate ids, metadata, and an original-document link", async () => {
+    const root = fixtureRoot();
+    try {
+      const sourceB = record("source_b", "source", {
+        title: "Source B",
+        publisher: "NYC DOT",
+        content_type: "meeting book",
+        authority_tier: "board_material",
+        source_url: "https://example.com/doc.pdf",
+      });
+      const sourceC = record("source_c", "source", { title: "Source C", source_url: "javascript:alert(1)" });
+      rebuildCanonicalDb([sourceB, sourceC], { path: join(root, "data", "canonical.db") });
+      writePage(
+        root,
+        "wiki/sources/source_b.md",
+        "---\nsource_id: source_b\n---\nintro preamble line\n[p001_c0001] first block text with <b>tag</b> & symbol\n[p001_b0002] legacy-id block text\n[p001_c0001] duplicate marker text\n",
+      );
+      writePage(root, "wiki/sources/source_c.md", "---\nsource_id: source_c\n---\n[p001_c0001] block text\n");
+
+      const first = exportSite({ rootDir: root });
+      const sourceBHtml = await Bun.file(join(root, "dist", "site", "sources", "source_b.html")).text();
+      const sourceCHtml = await Bun.file(join(root, "dist", "site", "sources", "source_c.html")).text();
+      expect(first.pages.sources).toBe(2);
+
+      expect(sourceBHtml).toContain('class="src-block" id="p001_c0001"');
+      expect(sourceBHtml).toContain('id="p001_b0002"');
+      expect(sourceBHtml).toContain('class="source-text"');
+      expect(sourceBHtml).toContain("intro preamble line");
+      expect(sourceBHtml).toContain("first block text with &lt;b&gt;tag&lt;/b&gt; &amp; symbol");
+      expect(sourceBHtml).toContain("legacy-id block text");
+      expect(sourceBHtml).toContain("duplicate marker text");
+      expect(sourceBHtml.split('id="p001_c0001"').length).toBe(2);
+      expect(sourceBHtml).toContain('<span class="block-ref">[p001_c0001]</span>');
+      expect(sourceBHtml).toContain("Original document ↗");
+      expect(sourceBHtml).toContain('rel="noopener"');
+      expect(sourceBHtml).toContain("board material");
+      expect(sourceBHtml).toContain("meeting book");
+      expect(sourceBHtml).toContain("Wiki markdown on GitHub");
+
+      expect(sourceCHtml).not.toContain("Original document");
+      expect(sourceCHtml).not.toContain("javascript:alert(1)");
+      expect(sourceCHtml).toContain("Wiki markdown on GitHub");
+
+      exportSite({ rootDir: root });
+      const sourceBAfter = await Bun.file(join(root, "dist", "site", "sources", "source_b.html")).text();
+      expect(sourceBAfter).toBe(sourceBHtml);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("shows per-block cited-by info and a distinct-record total in the header cite line", async () => {
+    const root = fixtureRoot();
+    try {
+      const source = record("source_a", "source", { title: "Source A" });
+      const route = record("route_m1", "route", { route_id: "M1" });
+      route.evidence_refs = [{ source_id: "source_a", block_id: "p001_c0001" }];
+      const metric = record("metric_speed", "metric_claim", { metric_name: "bus_speed", value: 10, unit: "mph" });
+      metric.evidence_refs = [{ source_id: "source_a", block_id: "p001_c0001" }];
+      rebuildCanonicalDb([source, route, metric], { path: join(root, "data", "canonical.db") });
+      writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute.\n<!-- mta-wiki:writer:end -->\n");
+      writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\n[p001_c0001] block text\n");
+
+      exportSite({ rootDir: root });
+      const sourceHtml = await Bun.file(join(root, "dist", "site", "sources", "source_a.html")).text();
+
+      expect(sourceHtml).toContain("Cited by 2 records · 1 blocks cited");
+      expect(sourceHtml).toContain("Cited by 2 records");
+      expect(sourceHtml).toContain('href="../routes/route_m1.html"');
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("falls back to the legacy plain-text rendering when there are no block markers", async () => {
+    const root = fixtureRoot();
+    try {
+      const source = record("source_d", "source", { title: "Source D" });
+      rebuildCanonicalDb([source], { path: join(root, "data", "canonical.db") });
+      writePage(root, "wiki/sources/source_d.md", "---\nsource_id: source_d\n---\nplain text with no block markers at all.\n");
+
+      exportSite({ rootDir: root });
+      const sourceHtml = await Bun.file(join(root, "dist", "site", "sources", "source_d.html")).text();
+
+      expect(sourceHtml).toContain('class="source-text"');
+      expect(sourceHtml).not.toContain("src-block");
+      expect(sourceHtml).toContain("plain text with no block markers at all.");
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
