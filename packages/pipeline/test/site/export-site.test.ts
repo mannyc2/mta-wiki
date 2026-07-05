@@ -75,9 +75,105 @@ describe("exportSite", () => {
       expect(routeHtml).not.toContain("quote 201");
       expect(sourceHtml).toContain("showing first 1000000 bytes");
       expect(sourceHtml).toContain("id=\"p001_c0001\"");
+      const searchHtml = await Bun.file(join(root, "dist", "site", "search.html")).text();
+      const sitemapXmlText = await Bun.file(join(root, "dist", "site", "sitemap.xml")).text();
       exportSite({ rootDir: root });
       const after = await Bun.file(join(root, "dist", "site", "routes", "route_m1.html")).text();
       expect(after).toBe(routeHtml);
+      const searchAfter = await Bun.file(join(root, "dist", "site", "search.html")).text();
+      const sitemapAfter = await Bun.file(join(root, "dist", "site", "sitemap.xml")).text();
+      expect(searchAfter).toBe(searchHtml);
+      expect(sitemapAfter).toBe(sitemapXmlText);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("renders shared chrome: search form, meta tags, footer, pagefind filters, and index filter", async () => {
+    const root = fixtureRoot();
+    try {
+      const source = record("source_a", "source", { title: "Source A" });
+      const route = record("route_m1", "route", { route_id: "M1" });
+      route.evidence_refs = [{ source_id: "source_a", block_id: "p001_c0001" }];
+      rebuildCanonicalDb([source, route], { path: join(root, "data", "canonical.db") });
+      writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute prose.\n<!-- mta-wiki:writer:end -->\n");
+      writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\n[p001_c0001] source text\n");
+
+      exportSite({ rootDir: root });
+      const routeHtml = await Bun.file(join(root, "dist", "site", "routes", "route_m1.html")).text();
+      const routesIndexHtml = await Bun.file(join(root, "dist", "site", "routes.html")).text();
+
+      expect(routeHtml).toContain("data-pagefind-body");
+      expect(routeHtml).toContain('action="../search.html"');
+      expect(routeHtml).toContain('name="description"');
+      expect(routeHtml).toContain("rel=\"canonical\"");
+      expect(routeHtml).toContain("Built from public NYC/MTA government records");
+      expect(routeHtml).toContain('data-pagefind-filter="kind"');
+      expect(routesIndexHtml).toContain('action="search.html"');
+      expect(routesIndexHtml).toContain("index-filter");
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("writes a working search page wired to pagefind", async () => {
+    const root = fixtureRoot();
+    try {
+      const source = record("source_a", "source");
+      rebuildCanonicalDb([source], { path: join(root, "data", "canonical.db") });
+      writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
+
+      exportSite({ rootDir: root });
+      const searchHtml = await Bun.file(join(root, "dist", "site", "search.html")).text();
+      expect(searchHtml).toContain("pagefind/pagefind-ui.js");
+      expect(searchHtml).toContain("pagefind/pagefind-ui.css");
+      expect(searchHtml).toContain('id="search"');
+      expect(searchHtml).toContain("triggerSearch");
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("writes sitemap.xml and robots.txt with absolute urls, excluding 404", async () => {
+    const root = fixtureRoot();
+    try {
+      const source = record("source_a", "source");
+      const route = record("route_m1", "route", { route_id: "M1" });
+      rebuildCanonicalDb([source, route], { path: join(root, "data", "canonical.db") });
+      writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute.\n<!-- mta-wiki:writer:end -->\n");
+      writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
+
+      exportSite({ rootDir: root });
+      const sitemap = await Bun.file(join(root, "dist", "site", "sitemap.xml")).text();
+      const robots = await Bun.file(join(root, "dist", "site", "robots.txt")).text();
+
+      expect(sitemap).toContain("<loc>https://mannyc2.github.io/mta-wiki/routes/route_m1.html</loc>");
+      expect(sitemap).toContain("<loc>https://mannyc2.github.io/mta-wiki/search.html</loc>");
+      expect(sitemap).not.toContain("404.html");
+      expect(robots).toContain("Sitemap: https://mannyc2.github.io/mta-wiki/sitemap.xml");
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("renders unresolved citations as plain text, not dead links", async () => {
+    const root = fixtureRoot();
+    try {
+      const source = record("source_a", "source");
+      const route = record("route_m1", "route", { route_id: "M1" });
+      rebuildCanonicalDb([source, route], { path: join(root, "data", "canonical.db") });
+      writePage(
+        root,
+        "wiki/routes/route_m1.md",
+        "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nSee [[cite:missing_src#p001_c0001|dead cite]].\n<!-- mta-wiki:writer:end -->\n",
+      );
+      writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
+
+      exportSite({ rootDir: root });
+      const routeHtml = await Bun.file(join(root, "dist", "site", "routes", "route_m1.html")).text();
+      expect(routeHtml).toContain("citation-unresolved");
+      expect(routeHtml).toContain("dead cite");
+      expect(routeHtml).not.toContain("missing_src.html");
     } finally {
       rmSync(root, { recursive: true, force: true });
     }

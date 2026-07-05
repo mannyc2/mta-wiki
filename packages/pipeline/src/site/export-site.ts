@@ -11,6 +11,7 @@ const SOURCE_TEXT_CAP_BYTES = 1_000_000;
 const LARGE_MARKDOWN_CAP_BYTES = 2_000_000;
 const LARGE_WRITER_CAP_BYTES = 120_000;
 const TABLE_ROW_CAP = 200;
+const SITE_BASE_URL = "https://mannyc2.github.io/mta-wiki";
 
 export type SiteRecordKind = (typeof SITE_KINDS)[number];
 
@@ -30,6 +31,7 @@ export type SiteRenderContext = {
   recordsById: Map<string, MtaCanonicalRecord>;
   sourceById: Map<string, MtaCanonicalRecord>;
   githubBaseUrl: string;
+  sourcePageIds: Set<string>;
 };
 
 export function siteOutDir(rootDir = repoRoot) {
@@ -113,6 +115,9 @@ function sourceTitle(source: MtaCanonicalRecord | undefined, sourceId: string) {
 function primitiveInlineHtml(kind: string, id: string, blockId: string | undefined, label: string, fromUrl: string, context: SiteRenderContext) {
   const cleanLabel = htmlEscape(label || id);
   if (kind === "cite") {
+    if (!context.sourcePageIds.has(id)) {
+      return `<span class="citation-link citation-unresolved" title="source ${attr(id)} is not in this export">${cleanLabel}</span>`;
+    }
     const url = relativeRecordUrl(fromUrl, `/sources/${id}.html`) + (blockId ? `#${encodeURIComponent(blockId)}` : "");
     return `<a class="citation-link" href="${attr(url)}">${cleanLabel}</a>`;
   }
@@ -191,9 +196,12 @@ function evidenceRows(record: MtaCanonicalRecord, context: SiteRenderContext, fr
     .map((ref) => {
       const source = context.sourceById.get(ref.source_id);
       const sourceUrl = relativeRecordUrl(fromUrl, `/sources/${ref.source_id}.html`) + (ref.block_id ? `#${encodeURIComponent(ref.block_id)}` : "");
+      const sourceCell = context.sourcePageIds.has(ref.source_id)
+        ? `<a href="${attr(sourceUrl)}">${htmlEscape(sourceTitle(source, ref.source_id))}</a>`
+        : htmlEscape(sourceTitle(source, ref.source_id));
       return [
         "<tr>",
-        `<td><a href="${attr(sourceUrl)}">${htmlEscape(sourceTitle(source, ref.source_id))}</a></td>`,
+        `<td>${sourceCell}</td>`,
         `<td>${htmlEscape(ref.block_id ?? ref.block_range ?? "")}</td>`,
         `<td>${htmlEscape(asString(source?.payload.publisher) ?? "")}</td>`,
         `<td>${htmlEscape(asString(source?.payload.published_date_normalized) ?? asString(source?.payload.date_text) ?? "")}</td>`,
@@ -226,25 +234,44 @@ function payloadSummary(record: MtaCanonicalRecord) {
   return `<section class="facts"><h2>Structured Data</h2><table>${rows}</table></section>`;
 }
 
-function htmlShell(title: string, body: string, currentUrl: string) {
+function htmlShell(title: string, body: string, currentUrl: string, options: { description?: string; headExtra?: string } = {}) {
   const depth = currentUrl.split("/").filter(Boolean).length - 1;
   const prefix = depth <= 0 ? "" : "../".repeat(depth);
+  const description = options.description ?? "Structured, source-cited records about MTA and NYC bus-priority routes, corridors, and projects.";
+  const canonical = `${SITE_BASE_URL}${currentUrl}`;
   return `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="${attr(description)}">
+<link rel="canonical" href="${attr(canonical)}">
+<meta property="og:title" content="${attr(title)} - MTA Wiki">
+<meta property="og:description" content="${attr(description)}">
+<meta property="og:url" content="${attr(canonical)}">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%8C%3C/text%3E%3C/svg%3E">
+${options.headExtra ?? ""}
 <title>${htmlEscape(title)} - MTA Wiki</title>
 <link rel="stylesheet" href="${prefix}assets/site.css">
 </head>
 <body>
 <header class="site-header">
   <a class="brand" href="${prefix}index.html">MTA Wiki</a>
-  <nav><a href="${prefix}routes.html">Routes</a><a href="${prefix}corridors.html">Corridors</a><a href="${prefix}projects.html">Projects</a></nav>
+  <nav><a href="${prefix}routes.html">Routes</a><a href="${prefix}corridors.html">Corridors</a><a href="${prefix}projects.html">Projects</a><a href="${prefix}sources.html">Sources</a></nav>
+  <form class="site-search" action="${prefix}search.html" method="get" role="search">
+    <input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki">
+  </form>
 </header>
-<main>
+<main data-pagefind-body>
 ${body}
 </main>
+<footer class="site-footer">
+<p>Built from public NYC/MTA government records. Every structured record cites evidence
+blocks in official source documents. Data was extracted with an LLM pipeline and may
+contain errors — verify against the cited sources.</p>
+<p><a href="https://github.com/mannyc2/mta-wiki">GitHub repository</a> · <a href="https://github.com/mannyc2/mta-wiki/tree/main/data/exports/releases">Data releases</a> · MIT-licensed code · To request a correction or takedown, <a href="https://github.com/mannyc2/mta-wiki/issues">open a GitHub issue</a>.</p>
+</footer>
 </body>
 </html>
 `;
@@ -284,7 +311,7 @@ function renderRecordPage(record: MtaCanonicalRecord, markdown: string, path: st
       : "";
   const body = [
     `<article class="record-page ${attr(record.record_kind)}">`,
-    `<p class="eyebrow">${htmlEscape(record.record_kind)}</p>`,
+    `<p class="eyebrow" data-pagefind-filter="kind">${htmlEscape(record.record_kind)}</p>`,
     `<h1>${htmlEscape(pageTitle(record))}</h1>`,
     `<p class="record-id">${htmlEscape(record.record_id)}</p>`,
     capNote,
@@ -307,7 +334,7 @@ function renderSourcePage(record: MtaCanonicalRecord, markdown: string, path: st
   const note = truncated ? `<p class="cap-note">showing first ${SOURCE_TEXT_CAP_BYTES} bytes of ${bodyBytes} - <a href="${attr(blob)}">full data in the repository</a></p>` : "";
   const body = [
     `<article class="source-page">`,
-    `<p class="eyebrow">source</p>`,
+    `<p class="eyebrow" data-pagefind-filter="kind">source</p>`,
     `<h1>${htmlEscape(pageTitle(record))}</h1>`,
     `<dl class="source-meta">`,
     `<dt>Source ID</dt><dd>${htmlEscape(record.source_id)}</dd>`,
@@ -321,6 +348,19 @@ function renderSourcePage(record: MtaCanonicalRecord, markdown: string, path: st
   return htmlShell(pageTitle(record), body, url);
 }
 
+const INDEX_FILTER_INPUT = `<input type="search" class="index-filter" placeholder="Filter by name or id" aria-label="Filter this list">`;
+const INDEX_FILTER_SCRIPT = `<script>
+(function () {
+  var input = document.querySelector(".index-filter");
+  if (!input) return;
+  var items = Array.prototype.slice.call(document.querySelectorAll(".index-list ol li"));
+  input.addEventListener("input", function () {
+    var q = input.value.toLowerCase();
+    items.forEach(function (li) { li.hidden = q !== "" && li.textContent.toLowerCase().indexOf(q) === -1; });
+  });
+})();
+</script>`;
+
 function indexPage(kind: SiteRecordKind, records: MtaCanonicalRecord[]) {
   const title = `${kind[0]!.toUpperCase()}${kind.slice(1)}s`;
   const dir = recordDir(kind)!;
@@ -328,7 +368,7 @@ function indexPage(kind: SiteRecordKind, records: MtaCanonicalRecord[]) {
     .sort((a, b) => pageTitle(a).localeCompare(pageTitle(b)) || a.record_id.localeCompare(b.record_id))
     .map((record) => `<li><a href="${dir}/${attr(record.record_id)}.html">${htmlEscape(pageTitle(record))}</a><span>${htmlEscape(record.record_id)}</span></li>`)
     .join("\n");
-  const body = `<section class="index-list"><h1>${htmlEscape(title)}</h1><p>${records.length} pages</p><ol>${items}</ol></section>`;
+  const body = `<section class="index-list"><h1>${htmlEscape(title)}</h1><p>${records.length} pages</p>${INDEX_FILTER_INPUT}<ol>${items}</ol>${INDEX_FILTER_SCRIPT}</section>`;
   return htmlShell(title, body, `/${dir}.html`);
 }
 
@@ -352,7 +392,35 @@ function sourcesIndex(records: MtaCanonicalRecord[]) {
     .sort((a, b) => pageTitle(a).localeCompare(pageTitle(b)) || a.source_id.localeCompare(b.source_id))
     .map((record) => `<li><a href="sources/${attr(record.source_id)}.html">${htmlEscape(pageTitle(record))}</a><span>${htmlEscape(record.source_id)}</span></li>`)
     .join("\n");
-  return htmlShell("Sources", `<section class="index-list"><h1>Sources</h1><p>${records.length} citation targets</p><ol>${items}</ol></section>`, "/sources.html");
+  return htmlShell("Sources", `<section class="index-list"><h1>Sources</h1><p>${records.length} citation targets</p>${INDEX_FILTER_INPUT}<ol>${items}</ol>${INDEX_FILTER_SCRIPT}</section>`, "/sources.html");
+}
+
+function searchPage() {
+  const body = [
+    `<section class="search-page">`,
+    `<h1>Search</h1>`,
+    `<p class="search-hint">Searches all exported route, corridor, project, and source pages. Use the kind filter to narrow results.</p>`,
+    `<div id="search" data-pagefind-ignore></div>`,
+    `<noscript><p>Search requires JavaScript. Browse <a href="routes.html">routes</a>, <a href="corridors.html">corridors</a>, <a href="projects.html">projects</a>, or <a href="sources.html">sources</a> instead.</p></noscript>`,
+    `<script src="pagefind/pagefind-ui.js"></script>`,
+    `<script>
+window.addEventListener("DOMContentLoaded", () => {
+  const ui = new PagefindUI({ element: "#search", showSubResults: true, showImages: false, pageSize: 10 });
+  const q = new URLSearchParams(window.location.search).get("q");
+  if (q) ui.triggerSearch(q);
+});
+</script>`,
+    `</section>`,
+  ].join("\n");
+  return htmlShell("Search", body, "/search.html", {
+    description: "Full-text search across all MTA Wiki routes, corridors, projects, and source documents.",
+    headExtra: `<link rel="stylesheet" href="pagefind/pagefind-ui.css">`,
+  });
+}
+
+function sitemapXml(urls: string[]) {
+  const body = [...urls].sort().map((u) => `<url><loc>${htmlEscape(u)}</loc></url>`).join("\n");
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`;
 }
 
 function writeFile(path: string, content: string) {
@@ -373,7 +441,7 @@ function hasWikiPage(rootDir: string, record: MtaCanonicalRecord) {
 }
 
 function css() {
-  return `:root{color-scheme:light;--ink:#1d2433;--muted:#5b6475;--line:#d8dde7;--bg:#fbfcfe;--panel:#fff;--accent:#0f766e}*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}.site-header{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px 24px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.94);backdrop-filter:blur(10px)}.brand{font-weight:700;color:var(--ink);text-decoration:none}nav{display:flex;gap:14px}nav a,a{color:var(--accent)}main{max-width:1180px;margin:0 auto;padding:28px 24px 64px}h1{font-size:clamp(2rem,4vw,4rem);line-height:1.05;margin:0 0 12px}h2{margin-top:32px}.eyebrow,.record-id{color:var(--muted);font-size:.9rem}.home-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:28px 0}.home-grid a{display:block;border:1px solid var(--line);background:var(--panel);padding:18px;text-decoration:none}.home-grid strong{display:block;font-size:2rem;color:var(--ink)}.index-list ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}.index-list li{display:grid;grid-template-columns:minmax(0,1fr)minmax(120px,32%);gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}.index-list span{color:var(--muted);font-size:.85rem;overflow-wrap:anywhere}table{width:100%;border-collapse:collapse;background:var(--panel);font-size:.92rem}th,td{border:1px solid var(--line);padding:8px;vertical-align:top;text-align:left}td{overflow-wrap:anywhere}.facts th{width:220px}.cap-note{border-left:4px solid var(--accent);padding:10px 12px;background:#eef8f6}.empty-writer{color:var(--muted);background:#f1f4f8;padding:12px}.primitive,.component{border:1px solid var(--line);background:#fff;padding:2px 6px}.primitive-value{font-weight:700}.metric-card{display:inline-block;margin:12px 0;padding:12px 14px}.component-label{color:var(--muted);font-size:.85rem}.component-value{font-size:1.4rem;font-weight:700}.chip-row{display:flex;gap:12px;align-items:center;width:max-content}.source-meta{display:grid;grid-template-columns:120px minmax(0,1fr);gap:6px 16px}.source-meta dt{font-weight:700}.source-meta dd{margin:0}.source-text{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;background:#fff;border:1px solid var(--line);padding:16px;font-size:.9rem}pre,code{font-family:"SFMono-Regular",Consolas,monospace}@media(max-width:720px){.site-header{align-items:flex-start;flex-direction:column}.index-list li{grid-template-columns:1fr}.facts th{width:auto}main{padding:20px 16px 48px}}`;
+  return `:root{color-scheme:light;--ink:#1d2433;--muted:#5b6475;--line:#d8dde7;--bg:#fbfcfe;--panel:#fff;--accent:#0f766e}*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}.site-header{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px 24px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.94);backdrop-filter:blur(10px)}.brand{font-weight:700;color:var(--ink);text-decoration:none}nav{display:flex;gap:14px}nav a,a{color:var(--accent)}main{max-width:1180px;margin:0 auto;padding:28px 24px 64px}h1{font-size:clamp(2rem,4vw,4rem);line-height:1.05;margin:0 0 12px}h2{margin-top:32px}.eyebrow,.record-id{color:var(--muted);font-size:.9rem}.home-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:28px 0}.home-grid a{display:block;border:1px solid var(--line);background:var(--panel);padding:18px;text-decoration:none}.home-grid strong{display:block;font-size:2rem;color:var(--ink)}.index-list ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}.index-list li{display:grid;grid-template-columns:minmax(0,1fr)minmax(120px,32%);gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}.index-list span{color:var(--muted);font-size:.85rem;overflow-wrap:anywhere}table{width:100%;border-collapse:collapse;background:var(--panel);font-size:.92rem}th,td{border:1px solid var(--line);padding:8px;vertical-align:top;text-align:left}td{overflow-wrap:anywhere}.facts th{width:220px}.cap-note{border-left:4px solid var(--accent);padding:10px 12px;background:#eef8f6}.empty-writer{color:var(--muted);background:#f1f4f8;padding:12px}.primitive,.component{border:1px solid var(--line);background:#fff;padding:2px 6px}.primitive-value{font-weight:700}.metric-card{display:inline-block;margin:12px 0;padding:12px 14px}.component-label{color:var(--muted);font-size:.85rem}.component-value{font-size:1.4rem;font-weight:700}.chip-row{display:flex;gap:12px;align-items:center;width:max-content}.source-meta{display:grid;grid-template-columns:120px minmax(0,1fr);gap:6px 16px}.source-meta dt{font-weight:700}.source-meta dd{margin:0}.source-text{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;background:#fff;border:1px solid var(--line);padding:16px;font-size:.9rem}pre,code{font-family:"SFMono-Regular",Consolas,monospace}.site-search input{border:1px solid var(--line);padding:6px 10px;min-width:210px;font:inherit;background:#fff}.site-footer{border-top:1px solid var(--line);margin-top:48px;padding:20px 24px;color:var(--muted);font-size:.9rem;max-width:1180px;margin-left:auto;margin-right:auto}.search-page #search{margin-top:16px}.index-filter{margin:12px 0;border:1px solid var(--line);padding:8px 10px;font:inherit;width:min(420px,100%)}.citation-unresolved{color:var(--muted);border-bottom:1px dotted var(--muted)}@media(max-width:720px){.site-header{align-items:flex-start;flex-direction:column}.site-search{width:100%}.site-search input{width:100%}.index-list li{grid-template-columns:1fr}.facts th{width:auto}main{padding:20px 16px 48px}}`;
 }
 
 function dirSize(path: string): number {
@@ -396,11 +464,16 @@ function oversizedHtml(path: string, root: string, maxBytes = 3_000_000): string
   return results.sort();
 }
 
-function copyStaticWikiHtml(rootDir: string, outDir: string) {
+function copyStaticWikiHtml(rootDir: string, outDir: string): string[] {
+  const copied: string[] = [];
   for (const filename of ["graph.html", "primitives.html"]) {
     const source = join(rootDir, "wiki", filename);
-    if (existsSync(source)) copyFileSync(source, join(outDir, filename));
+    if (existsSync(source)) {
+      copyFileSync(source, join(outDir, filename));
+      copied.push(filename);
+    }
   }
+  return copied;
 }
 
 function uniqueBy<T>(values: T[], key: (value: T) => string) {
@@ -425,12 +498,6 @@ export function exportSite(options: { rootDir?: string | undefined; outDir?: str
   rmSync(outDir, { recursive: true, force: true });
   mkdirSync(outDir, { recursive: true });
 
-  const context: SiteRenderContext = {
-    recordsById: new Map(records.map((record) => [record.record_id, record])),
-    sourceById: new Map(records.filter((record) => record.record_kind === "source").map((record) => [record.source_id, record])),
-    githubBaseUrl: options.githubBaseUrl ?? "https://github.com/mannyc2/mta-wiki/blob/main",
-  };
-
   const routeRecords = records.filter((record) => record.record_kind === "route" && hasWikiPage(rootDir, record));
   const corridorRecords = records.filter((record) => record.record_kind === "corridor" && hasWikiPage(rootDir, record));
   const projectRecords = records.filter((record) => record.record_kind === "project" && hasWikiPage(rootDir, record));
@@ -439,17 +506,28 @@ export function exportSite(options: { rootDir?: string | undefined; outDir?: str
     (record) => record.source_id,
   );
 
+  const context: SiteRenderContext = {
+    recordsById: new Map(records.map((record) => [record.record_id, record])),
+    sourceById: new Map(records.filter((record) => record.record_kind === "source").map((record) => [record.source_id, record])),
+    githubBaseUrl: options.githubBaseUrl ?? "https://github.com/mannyc2/mta-wiki/blob/main",
+    sourcePageIds: new Set(sourceRecords.map((record) => record.source_id)),
+  };
+
+  const siteUrls: string[] = [];
+
   for (const record of [...routeRecords, ...corridorRecords, ...projectRecords]) {
     const path = pagePath(rootDir, record);
     if (!path || !existsSync(path)) continue;
     const url = recordUrl(record)!;
     writeFile(join(outDir, url.replace(/^\//u, "")), renderRecordPage(record, readFileSync(path, "utf8"), relative(rootDir, path), context));
+    siteUrls.push(`${SITE_BASE_URL}${url}`);
   }
   for (const record of sourceRecords) {
     const path = pagePath(rootDir, record);
     if (!path || !existsSync(path)) continue;
     const url = recordUrl(record)!;
     writeFile(join(outDir, url.replace(/^\//u, "")), renderSourcePage(record, readFileSync(path, "utf8"), relative(rootDir, path), context));
+    siteUrls.push(`${SITE_BASE_URL}${url}`);
   }
 
   writeFile(join(outDir, "routes.html"), indexPage("route", routeRecords));
@@ -458,8 +536,21 @@ export function exportSite(options: { rootDir?: string | undefined; outDir?: str
   writeFile(join(outDir, "sources.html"), sourcesIndex(sourceRecords));
   writeFile(join(outDir, "index.html"), homePage({ routes: routeRecords.length, corridors: corridorRecords.length, projects: projectRecords.length, sources: sourceRecords.length }));
   writeFile(join(outDir, "404.html"), htmlShell("Not Found", `<h1>Not Found</h1><p>The requested page is not in this static export.</p>`, "/404.html"));
+  writeFile(join(outDir, "search.html"), searchPage());
   writeFile(join(outDir, "assets", "site.css"), css());
-  copyStaticWikiHtml(rootDir, outDir);
+  const copiedStaticHtml = copyStaticWikiHtml(rootDir, outDir);
+
+  siteUrls.push(
+    `${SITE_BASE_URL}/routes.html`,
+    `${SITE_BASE_URL}/corridors.html`,
+    `${SITE_BASE_URL}/projects.html`,
+    `${SITE_BASE_URL}/sources.html`,
+    `${SITE_BASE_URL}/index.html`,
+    `${SITE_BASE_URL}/search.html`,
+    ...copiedStaticHtml.map((filename) => `${SITE_BASE_URL}/${filename}`),
+  );
+  writeFile(join(outDir, "sitemap.xml"), sitemapXml(siteUrls));
+  writeFile(join(outDir, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_BASE_URL}/sitemap.xml\n`);
 
   return {
     outDir,
