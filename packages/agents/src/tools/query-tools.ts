@@ -2,7 +2,7 @@ import type { AgentTool } from "@earendil-works/pi-agent-core";
 import { Type } from "typebox";
 import type { TranscriptWriter } from "@mta-wiki/core/transcript";
 import { embedQuery, type Embedder } from "@mta-wiki/pipeline/sources/embeddings";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { recordCard, searchSemanticIndex, semanticIndexExists, type SemanticSearchHit } from "@mta-wiki/pipeline/materialize/semantic-index";
 import { createMtaTools } from "./ingest-tools.js";
 import { createMtaWriterTools } from "./writer-tools.js";

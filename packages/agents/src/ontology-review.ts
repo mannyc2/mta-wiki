@@ -3,7 +3,7 @@ import { dirname, join, relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { derivedRelationCoverage, type DerivedRelationCoverage } from "@mta-wiki/pipeline/records/derived-relations";
 import { identityDoNotMergeSuppressed } from "@mta-wiki/db/identity";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { normalizeRelationKind } from "@mta-wiki/pipeline/records/relations";
 import { sourceBlockById } from "@mta-wiki/pipeline/sources/source-prep";
 import { readSubmissionEntries } from "@mta-wiki/pipeline/records/submissions";

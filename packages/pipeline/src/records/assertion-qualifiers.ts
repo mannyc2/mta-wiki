@@ -995,6 +995,40 @@ function statusFromEntityImplementationTimelineRelation(
   return undefined;
 }
 
+function statusFromTreatmentOperationalTimelineRelation(
+  record: MtaCanonicalRecord,
+  payload: JsonObject,
+  subject: MtaCanonicalRecord | undefined,
+  object: MtaCanonicalRecord | undefined,
+  citingSource: MtaCanonicalRecord | undefined,
+): string | undefined {
+  if (payload.relation_family !== "timeline_context" || payload.relation_kind !== "has_timeline_event") return undefined;
+  if (subject?.record_kind !== "treatment_component" || object?.record_kind !== "event") return undefined;
+  if (object.payload.event_family !== "implementation" && object.payload.event_family !== "launch") return undefined;
+  const eventDate = comparableMonthOrDayDate(object.payload.date_normalized);
+  if (!eventDate) return undefined;
+
+  const sourceDate = comparableMonthOrDayDate(citingSource?.payload.published_date_normalized);
+  const key = timelineImplementationTextKey(record, payload, object);
+  const hasFutureSignal =
+    hasAnyToken(key, ["will_be", "to_be", "postpon", "defer", "cancel", "pending", "expected", "upcoming"]) ||
+    hasAnyExactToken(key, ["will", "would", "planned", "proposed", "future", "scheduled", "candidate", "potential"]);
+  if (sourceDate && eventDate > sourceDate) return hasFutureSignal ? "planned" : "unknown";
+  if (hasFutureSignal) return "planned";
+
+  const hasDeliveredSignal = hasAnyExactToken(key, [
+    "implemented",
+    "installed",
+    "activated",
+    "completed",
+    "launched",
+    "opened",
+    "began",
+    "started",
+  ]);
+  return hasDeliveredSignal ? "delivered" : "unknown";
+}
+
 function deliveredStatusFromRouteImplementationTimelineRelation(payload: JsonObject, subject: MtaCanonicalRecord | undefined, object: MtaCanonicalRecord | undefined): string | undefined {
   if (payload.relation_family !== "timeline_context") return undefined;
   if (payload.relation_kind !== "has_timeline_event") return undefined;
@@ -2595,6 +2629,7 @@ export function withAssertionQualifiers(records: MtaCanonicalRecord[]): MtaCanon
 
     const assertionStatus =
       statusFromPayload(payload) ??
+      statusFromTreatmentOperationalTimelineRelation(record, payload, subject, object, citingSource) ??
       (subject ? statusFromPayload(subject.payload) : undefined) ??
       (object ? statusFromPayload(object.payload) : undefined) ??
       deliveredStatusFromPublishedBySourceRelation(payload, subject, object) ??

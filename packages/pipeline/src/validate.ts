@@ -13,7 +13,7 @@ import {
   validateIdentityOverrideArtifacts,
   validateIdentityReviewAcceptedArtifacts,
 } from "@mta-wiki/pipeline/identity/identity-review-apply";
-import { entriesToRecords, readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import {
   extractWriterRegion,
   parseBlockPrimitives,
@@ -23,9 +23,8 @@ import {
 } from "@mta-wiki/pipeline/materialize/primitives";
 import { relationEndpointShapeIssue } from "@mta-wiki/pipeline/records/relations";
 import { evidenceId, readStagedSourceBlocks, sourceBlockById, sourceBlocksRelativePath } from "@mta-wiki/pipeline/sources/source-prep";
-import { retiredSubmissionIds, validateSubmissionRetirementOverrides } from "@mta-wiki/pipeline/records/submission-overrides";
-import { semanticCorrectionsExist, validateSemanticCorrections } from "@mta-wiki/pipeline/records/semantic-corrections";
-import { readSubmissionEntries } from "@mta-wiki/pipeline/records/submissions";
+import { validateSubmissionRetirementOverrides } from "@mta-wiki/pipeline/records/submission-overrides";
+import { validateSemanticCorrections } from "@mta-wiki/pipeline/records/semantic-corrections";
 import type { MtaValidationIssue, MtaValidationReport } from "@mta-wiki/db/types";
 
 function walkMarkdown(dir: string): string[] {
@@ -42,6 +41,29 @@ function walkMarkdown(dir: string): string[] {
   }
 
   return paths.sort();
+}
+
+function readSubmissionIds(): string[] {
+  const dir = join(repoRoot, "data", "submissions");
+  if (!existsSync(dir)) return [];
+
+  const ids: string[] = [];
+  for (const fileName of readdirSync(dir).filter((name) => name.endsWith(".jsonl")).sort()) {
+    const content = readFileSync(join(dir, fileName), "utf8");
+    for (const [index, line] of content.split(/\r?\n/u).entries()) {
+      if (!line.trim()) continue;
+      let value: unknown;
+      try {
+        value = JSON.parse(line);
+      } catch (error) {
+        throw new Error(`Invalid JSONL in data/submissions/${fileName}:${index + 1}: ${String(error)}`);
+      }
+      if (typeof value === "object" && value !== null && "submission_id" in value && typeof value.submission_id === "string") {
+        ids.push(value.submission_id);
+      }
+    }
+  }
+  return ids;
 }
 
 function validateRequiredPaths(issues: MtaValidationIssue[]) {
@@ -526,7 +548,7 @@ function validateWriterPrimitives(pagePaths: string[], records: MtaCanonicalReco
 export function validateRepo(options: { strictWriterCitations?: boolean | undefined } = {}): MtaValidationReport {
   const issues: MtaValidationIssue[] = [];
   const requiredPathCount = validateRequiredPaths(issues);
-  const submissions = readSubmissionEntries();
+  const submissionIds = readSubmissionIds();
   const records = readCanonicalRecords();
   const pagePaths = walkMarkdown(join(repoRoot, "wiki"));
 
@@ -547,16 +569,12 @@ export function validateRepo(options: { strictWriterCitations?: boolean | undefi
   }
   issues.push(...validateIdentityReviewAcceptedArtifacts().issues);
   issues.push(...validateIdentityOverrideArtifacts());
-  issues.push(...validateSubmissionRetirementOverrides({ knownSubmissionIds: new Set(submissions.map((entry) => entry.submission_id)) }));
-  issues.push(
-    ...validateSemanticCorrections({
-      records: semanticCorrectionsExist() ? entriesToRecords(submissions, { retiredSubmissionIds: retiredSubmissionIds() }) : undefined,
-    }),
-  );
+  issues.push(...validateSubmissionRetirementOverrides({ knownSubmissionIds: new Set(submissionIds) }));
+  issues.push(...validateSemanticCorrections());
 
   return {
     requiredPathCount,
-    submissionCount: submissions.length,
+    submissionCount: submissionIds.length,
     canonicalRecordCount: records.length,
     wikiPageCount: pagePaths.length,
     issues,

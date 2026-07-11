@@ -7,7 +7,8 @@ import { createTranscript, type TranscriptWriter } from "@mta-wiki/core/transcri
 import type { HarnessConfig, HarnessRunOptions, HarnessRunResult } from "@mta-wiki/core/types";
 import { normalizeRepoPath } from "@mta-wiki/core/paths";
 import type { MtaCanonicalRecord, MtaValidationIssue } from "@mta-wiki/db/types";
-import { pageRelativePathForCanonicalRecord, readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
+import { pageRelativePathForCanonicalRecord } from "@mta-wiki/pipeline/materialize/materialize";
 import { extractWriterRegion, parseInlinePrimitives } from "@mta-wiki/pipeline/materialize/primitives";
 import { buildWriterPrimitiveValidationContext, validateWriterPrimitivesInPage } from "@mta-wiki/pipeline/validate";
 import {

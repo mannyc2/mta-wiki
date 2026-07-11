@@ -4,8 +4,8 @@ import { join, relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonObject, JsonValue, MtaCanonicalRecord, MtaEvidenceRef, StagedSourceBlock } from "@mta-wiki/db/types";
-import { FILE_BY_KIND } from "@mta-wiki/pipeline/materialize/materialize";
-import type { ReleaseManifest } from "@mta-wiki/pipeline/materialize/export-release";
+import { FILE_BY_KIND } from "@mta-wiki/pipeline/materialize/canonical-read";
+import { parseReleaseManifest, type ReleaseManifest } from "@mta-wiki/pipeline/materialize/export-release";
 
 const SAMPLE_LIMIT = 100;
 const SAMPLE_TARGETS = {
@@ -206,7 +206,7 @@ function readJsonl<T>(path: string): T[] {
 }
 
 export function readReleaseManifest(releaseId: string, rootDir = repoRoot): ReleaseManifest {
-  return JSON.parse(readFileSync(join(releaseDir(releaseId, rootDir), "manifest.json"), "utf8")) as ReleaseManifest;
+  return parseReleaseManifest(JSON.parse(readFileSync(join(releaseDir(releaseId, rootDir), "manifest.json"), "utf8")));
 }
 
 export function readReleaseRecords(releaseId: string, rootDir = repoRoot): MtaCanonicalRecord[] {

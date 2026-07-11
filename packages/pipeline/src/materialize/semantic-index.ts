@@ -2,7 +2,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { embedTexts, embeddingsEndpoint, type Embedder } from "@mta-wiki/pipeline/sources/embeddings";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { stableHash } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
 

@@ -831,7 +831,7 @@ export const RELATION_ENDPOINT_SHAPES: Record<string, { subject: MtaObservationK
     object: ["treatment_component"],
   },
   has_timeline_event: {
-    subject: ["project", "route", "corridor", "entity", "source", "event"],
+    subject: ["project", "route", "corridor", "entity", "source", "event", "treatment_component"],
     object: ["event"],
   },
   has_metric: {

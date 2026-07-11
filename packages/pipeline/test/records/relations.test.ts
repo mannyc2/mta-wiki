@@ -57,6 +57,7 @@ describe("relation helpers", () => {
     expect(relationEndpointShapeIssue("has_timeline_event", "entity", "event")).toBeUndefined();
     expect(relationEndpointShapeIssue("has_timeline_event", "source", "event")).toBeUndefined();
     expect(relationEndpointShapeIssue("has_timeline_event", "event", "event")).toBeUndefined();
+    expect(relationEndpointShapeIssue("has_timeline_event", "treatment_component", "event")).toBeUndefined();
     expect(relationEndpointShapeIssue("has_metric_claim", "project", "metric_claim")).toBeUndefined();
     expect(relationEndpointShapeIssue("has_metric", "event", "metric_claim")).toBeUndefined();
     expect(relationEndpointShapeIssue("has_metric", "claim", "metric_claim")).toBeUndefined();
@@ -72,7 +73,7 @@ describe("relation helpers", () => {
     // admitted as a legal serves_route subject, so the expected-subject set is project|corridor.
     expect(relationEndpointShapeIssue("serves_route", "corridor", "route")).toBeUndefined();
     expect(relationEndpointShapeIssue("has_timeline_event", "source", "entity")?.message).toContain(
-      "expects project|route|corridor|entity|source|event -> event",
+      "expects project|route|corridor|entity|source|event|treatment_component -> event",
     );
     expect(relationEndpointShapeIssue("has_metric", "source", "claim")?.message).toContain(
       "expects project|route|corridor|entity|event|claim -> metric_claim",

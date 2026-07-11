@@ -9,7 +9,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
-import { readCanonicalRecords, readCanonicalRecordsFromJsonl } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords, readCanonicalRecordsFromJsonl } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
 

@@ -1,4 +1,3 @@
-import { writerRegion } from "@mta-wiki/pipeline/materialize/writer-change-gate";
 import type { JsonObject } from "@mta-wiki/db/types";
 
 export const PRIMITIVE_KINDS = ["route", "corridor", "project", "entity", "metric", "cite"] as const;
@@ -87,7 +86,9 @@ export function parseBlockPrimitives(markdown: string): BlockPrimitive[] {
 }
 
 export function extractWriterRegion(markdown: string): string | null {
-  const region = writerRegion(markdown);
+  const region = markdown
+    .replace(/\r\n?/gu, "\n")
+    .match(/<!-- mta-wiki:writer:start -->[\s\S]*?<!-- mta-wiki:writer:end -->/u)?.[0];
   if (!region) return null;
   return region
     .replace(/^<!-- mta-wiki:writer:start -->\n?/u, "")

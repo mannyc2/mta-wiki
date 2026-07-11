@@ -8,7 +8,7 @@ import {
   type GlobalMtaRecordKind,
 } from "@mta-wiki/db/identity";
 import { kindSpec } from "@mta-wiki/db/kind-registry";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { readSubmissionEntries } from "@mta-wiki/pipeline/records/submissions";
 import type { JsonObject, JsonValue, MtaCanonicalRecord, MtaEvidenceRef, MtaObservationKind, MtaSubmissionEntry } from "@mta-wiki/db/types";
 

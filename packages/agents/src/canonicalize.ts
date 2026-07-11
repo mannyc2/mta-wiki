@@ -20,7 +20,7 @@ import {
   type CanonicalizePacket,
   type CanonicalizeProposedRelation,
 } from "@mta-wiki/pipeline/records/canonicalize-packets";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { relationEndpointShapeIssue, normalizeRelationKind } from "@mta-wiki/pipeline/records/relations";
 import { quoteIsInBlock } from "@mta-wiki/pipeline/records/submissions";
 import { sourceBlockById } from "@mta-wiki/pipeline/sources/source-prep";

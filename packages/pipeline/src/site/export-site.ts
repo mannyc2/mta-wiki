@@ -5,7 +5,7 @@ import { repoRoot } from "@mta-wiki/core/paths";
 import { openCanonicalDb } from "@mta-wiki/db/canonical-db";
 import type { JsonObject, JsonValue, MtaCanonicalRecord, MtaEvidenceRef } from "@mta-wiki/db/types";
 import { parseBlockPrimitives } from "@mta-wiki/pipeline/materialize/primitives";
-import { readCanonicalRecordsFromDbFile } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecordsFromDbFile } from "@mta-wiki/pipeline/materialize/canonical-read";
 
 const SITE_KINDS = ["route", "corridor", "project"] as const;
 const SOURCE_TEXT_CAP_BYTES = 1_000_000;

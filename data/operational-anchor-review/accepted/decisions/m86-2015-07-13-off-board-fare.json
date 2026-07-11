@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "decision_id": "m86-2015-07-13-off-board-fare",
+  "review_state": "accepted",
+  "accepted_at": "2026-07-11T00:00:00.000Z",
+  "reviewer": "codex-temporal-audit-2026-07-11",
+  "rationale": "The joint NYC DOT/MTA report gives the M86 SBS launch as July 13, 2015, documents the M86 off-board fare system, and states that launch ambassadors familiarized riders with that system and all-door boarding. The canonical project-to-event, project-to-route, and project-to-treatment relations are delivered and share the same project and official source. This decision does not date queue jumps, bus bulbs, neckdowns, or later capital work.",
+  "source_id": "m86_sbs_progress_report_2017",
+  "event_record_id": "event_m86-sbs-launch",
+  "timeline_relation_record_id": "relation_rel-project-has-launch-event",
+  "route_record_id": "route_m86-sbs",
+  "route_scope_relation_record_id": "relation_rel-m86-sbs-project-serves-route",
+  "treatment_record_id": "treatment_off-board-fare-m86",
+  "treatment_scope_relation_record_id": "relation_rel-project-has-off-board-fare",
+  "treatment_family": "fare_collection",
+  "expected_operational_date": "2015-07-13",
+  "expected_date_precision": "day",
+  "evidence_bindings": [
+    {
+      "role": "event_date",
+      "record_id": "event_m86-sbs-launch",
+      "source_id": "m86_sbs_progress_report_2017",
+      "evidence_id": "m86_sbs_progress_report_2017#p006_c0005"
+    },
+    {
+      "role": "timeline_relation",
+      "record_id": "relation_rel-project-has-launch-event",
+      "source_id": "m86_sbs_progress_report_2017",
+      "evidence_id": "m86_sbs_progress_report_2017#p006_c0005"
+    },
+    {
+      "role": "route_identity",
+      "record_id": "route_m86-sbs",
+      "source_id": "m86_sbs_progress_report_2017",
+      "evidence_id": "m86_sbs_progress_report_2017#p003_c0007"
+    },
+    {
+      "role": "route_scope",
+      "record_id": "relation_rel-m86-sbs-project-serves-route",
+      "source_id": "m86_sbs_progress_report_2017",
+      "evidence_id": "m86_sbs_progress_report_2017#p006_c0005"
+    },
+    {
+      "role": "treatment_definition",
+      "record_id": "treatment_off-board-fare-m86",
+      "source_id": "m86_sbs_progress_report_2017",
+      "evidence_id": "m86_sbs_progress_report_2017#p005_c0003..p005_c0007"
+    },
+    {
+      "role": "treatment_scope",
+      "record_id": "relation_rel-project-has-off-board-fare",
+      "source_id": "m86_sbs_progress_report_2017",
+      "evidence_id": "m86_sbs_progress_report_2017#p005_c0003"
+    },
+    {
+      "role": "route_treatment_event_bridge",
+      "record_id": "event_m86-sbs-launch",
+      "source_id": "m86_sbs_progress_report_2017",
+      "evidence_id": "m86_sbs_progress_report_2017#p006_c0005"
+    },
+    {
+      "role": "route_treatment_event_bridge",
+      "record_id": "treatment_off-board-fare-m86",
+      "source_id": "m86_sbs_progress_report_2017",
+      "evidence_id": "m86_sbs_progress_report_2017#p005_c0003..p005_c0007"
+    }
+  ]
+}

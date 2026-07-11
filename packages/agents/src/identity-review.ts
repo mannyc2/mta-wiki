@@ -10,7 +10,7 @@ import type { HarnessConfig, IdentityReviewRunManifest, IdentityReviewRunOptions
 import { assistantText } from "@mta-wiki/core/usage";
 import { validateRepo } from "@mta-wiki/pipeline/validate";
 import { identityKeysForRecord, identityPairKey, isGlobalRecordKind, readIdentityDoNotMergeOverrides } from "@mta-wiki/db/identity";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { sourceBlockById } from "@mta-wiki/pipeline/sources/source-prep";
 import { shortHash } from "@mta-wiki/db/stable-json";
 import { readSubmissionEntries } from "@mta-wiki/pipeline/records/submissions";

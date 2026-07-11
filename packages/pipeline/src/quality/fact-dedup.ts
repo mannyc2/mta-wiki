@@ -3,7 +3,7 @@ import { dirname, join, relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableHash, stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonObject, JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import {
   FACT_DEDUP_KINDS,
   anchorRecordId,

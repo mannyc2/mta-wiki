@@ -6,7 +6,7 @@ import { readConfig } from "@mta-wiki/core/config";
 import { openCanonicalDb } from "@mta-wiki/db/canonical-db";
 import { sha256, stableHash, stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonObject, JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { evidenceBlockText, readReleaseRecords } from "@mta-wiki/pipeline/quality/release-quality";
 import { calibrationFixtureDir, type JudgeVerdict } from "@mta-wiki/pipeline/quality/judge-calibration";
 

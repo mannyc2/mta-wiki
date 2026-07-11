@@ -4,6 +4,29 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-11
+
+### Operational Anchor Contract V1 Audit Canary
+
+- Added the evidence-safe `mta-wiki-operational-anchors/v1` release projection and manifest v2
+  content hashes. Operational changes retain raw date literals, normalized precision, independent
+  route/treatment scope, evidence coverage, authority, review state, conflicts, and reason-coded
+  exclusions; only realized, month-or-finer, fully evidenced, unambiguous official-source rows are
+  marked study-eligible.
+- Added append-only reviewed scope decisions for three source-backed treatment timelines without
+  mutating the frozen canonical JSONL corpus. Direct treatment-to-event extraction is now allowed
+  only when the source explicitly states the treatment date. Release exports fail closed when the
+  configured accepted-decision directory is missing and include the exact validated decision set
+  as a deterministic, manifest-addressed snapshot.
+- Cut local audit canary `v2-temporal-canary-5`: `633` anchor rows, `3` study-eligible rows, manifest
+  SHA-256 `eb08d0045be158c98d62df91d6baf601b75bad16bca8a157aafb67af11461af7`, and accepted-review
+  snapshot SHA-256 `07ac7fac34534a35977cff04d8d4f4b3bf175c2575d75f5b85b3d871722a9dfd`.
+  This is a manifest-pinned integration canary, not an external publication decision.
+- Active caveat: current eligibility is intentionally sparse; `599` rows lack treatment scope or
+  evidence, `582` lack route scope or evidence, and `304` have an ambiguous/non-realized lifecycle
+  phase. Consumers must retain exclusions and must not infer route-treatment cross-products or
+  promote ineligible rows.
+
 ## 2026-07-04
 
 ### Owner Direction: Defer V2 Track

@@ -10,7 +10,7 @@ import {
   resolveIdentityCandidates,
   type GlobalMtaRecordKind,
 } from "@mta-wiki/db/identity";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { canonicalDbPath, openCanonicalDb } from "@mta-wiki/db/canonical-db";
 import { danglingReferences, derivedRelationCoverage } from "@mta-wiki/pipeline/records/derived-relations";
 import { gapCountsByClass } from "@mta-wiki/pipeline/materialize/gap-report";
