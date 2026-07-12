@@ -40,9 +40,12 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   and repaired omitted Hempstead/Q82 replacement and stop-removal treatments on Q110 while preserving its
   stable occurrence identity. A second reviewed recovery promoted literal stop-removal changes on
   Q19/Q29/Q50/Q54/Q59/Q72 as six independent, one-route atomic occurrences with no cross-products.
-  Coverage now reports `14` occurrences, `13` eligible occurrences, `16` eligible occurrence-route pairs,
-  `268` open priority rows, and `25` terminal rows. Eleven QBNR change units are clause-complete, leaving
-  `116`; three explicit no-change rows are tracked separately.
+  A third reviewed recovery promoted Q28/Q66/Q84/Q100/B57/QM1/QM7/QM16/QM17/QM18 as ten more
+  independent one-route occurrences. It preserves eight literal `bus_stop_or_boarding` treatments and
+  two `service_pattern` treatments without Q12/Q63/Q5 cross-products. Coverage now reports `24`
+  occurrences, `23` eligible occurrences, `26` eligible occurrence-route pairs, `268` open priority rows,
+  and `45` terminal rows. Twenty-one QBNR change units are clause-complete, leaving `106`; three explicit
+  no-change rows are tracked separately.
 
 ## 2026-07-11
 

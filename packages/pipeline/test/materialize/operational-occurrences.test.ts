@@ -245,8 +245,8 @@ describe("operational occurrences v1", () => {
         member_treatment_families: string[];
       }>;
     };
-    expect(rows).toHaveLength(14);
-    expect(summary.candidate_projection_count).toBe(16);
+    expect(rows).toHaveLength(24);
+    expect(summary.candidate_projection_count).toBe(26);
     expect(review.decision_count).toBe(rows.length);
     expect(expectedCandidates.candidate_count).toBe(expectedCandidates.candidates.length);
     expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === "Q110")).toEqual([
@@ -303,7 +303,31 @@ describe("operational occurrences v1", () => {
         },
       ]);
     }
-    expect(expectedCandidates.candidates.some((candidate) => candidate.route_id === "Q36")).toBe(false);
+    for (const [routeId, occurrenceId, family] of [
+      ["Q28", "occurrence:945379d2517d60e675fdad6f", "bus_stop_or_boarding"],
+      ["Q66", "occurrence:edd2e984c259a68b769207cf", "bus_stop_or_boarding"],
+      ["Q84", "occurrence:9550bacedc3391a3365a6e95", "bus_stop_or_boarding"],
+      ["Q100", "occurrence:e62c82167eb4e9fac21cea9c", "bus_stop_or_boarding"],
+      ["B57", "occurrence:00027f5ec1ea65794a3ae5cf", "bus_stop_or_boarding"],
+      ["QM1", "occurrence:4a6debe0dddd0a7beab0950e", "bus_stop_or_boarding"],
+      ["QM7", "occurrence:f07d48437c42bfd026f8f3db", "bus_stop_or_boarding"],
+      ["QM16", "occurrence:172bd6cf2ba95fb530efe1ea", "service_pattern"],
+      ["QM17", "occurrence:bfd2a93891d015e91bc93b81", "service_pattern"],
+      ["QM18", "occurrence:1552e655aae6eb184e5bf069", "bus_stop_or_boarding"],
+    ] as const) {
+      expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === routeId)).toEqual([
+        {
+          occurrence_id: occurrenceId,
+          route_id: routeId,
+          treatment_kind: "atomic",
+          analysis_family: family,
+          member_treatment_families: [family],
+        },
+      ]);
+    }
+    for (const forbiddenRouteId of ["Q12", "Q36", "Q63", "Q5"]) {
+      expect(expectedCandidates.candidates.some((candidate) => candidate.route_id === forbiddenRouteId)).toBe(false);
+    }
   });
 
   it("groups accepted atomic anchor reviews into one stable plural-route occurrence", () => {
