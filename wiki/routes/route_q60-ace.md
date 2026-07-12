@@ -10,16 +10,19 @@ source_ids:
   - "201110_qbb_approach_summary"
   - "201110_qbb_summary_recommendations"
   - "mta_automated_camera_enforcement"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q60_ace"
 local_observation_ids:
   - "route_q60_201110_qbb"
   - "route_q60_ace"
   - "route_q60_qbb_study"
+  - "route_q60_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-10T23:01:32.020Z"
+generated_at: "2026-07-12T23:02:57.000Z"
 raw_text: "Q60 (Eastbound) 1,430, Q60 (Westbound)* 1,280, Q60 (Total) 2,710"
 submission_ids:
+  - "sub_01f1968389877e0d"
   - "sub_6cb1c24bca90d35a"
   - "sub_7fe60100a5b3be08"
   - "sub_ff2a079a8a88cc2c"
@@ -37,8 +40,10 @@ payload:
     - "manhattan"
     - "queens"
   description: "Local bus service between Manhattan and Queens using the Queensboro Bridge"
+  gtfs_route_id: "Q60"
   route_id: "Q60"
   route_label: "Q60"
+  route_name: "Q60"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "local"
@@ -82,6 +87,16 @@ evidence_refs:
     source_id: "201110_qbb_summary_recommendations"
     source_path: "raw/sources/201110_qbb_summary_recommendations/blocks.jsonl"
     text_sha256: "sha256:d53d1d3a4df0999ce6c75d172baa502b93c0b94fe5598bf26fd73f915a31597e"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0064"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0064"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q60"
+    text_sha256: "sha256:238e88e2438d5588214e505de395e4f3e7c4d78b833ed96cb8398fefecea8eda"
     text_source: "raw_text"
 ---
 

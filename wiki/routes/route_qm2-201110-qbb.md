@@ -6,19 +6,24 @@ display_name: "QM2 Express Bus Route"
 source_id: "201110_qbb_approach_summary"
 source_ids:
   - "201110_qbb_approach_summary"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_qm2_201110_qbb"
 local_observation_ids:
   - "route_qm2_201110_qbb"
+  - "route_qm2_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-10T23:02:42.360Z"
+generated_at: "2026-07-12T23:02:57.000Z"
 raw_text: "QM2 1,160"
 submission_ids:
+  - "sub_81012fc9275708aa"
   - "sub_f51e6d847d5cedd2"
 payload:
   borough: "Queens"
   borough_normalized: "queens"
+  gtfs_route_id: "QM2"
   route_id: "QM2"
+  route_name: "QM2"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "express"
@@ -33,6 +38,16 @@ evidence_refs:
     source_path: "raw/sources/201110_qbb_approach_summary/blocks.jsonl"
     source_quote: "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
     text_sha256: "sha256:7a60487563c9efadc67277fe6f070f4c89fe6d1c5777a420f3f71180c11580af"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0103"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0103"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "QM2"
+    text_sha256: "sha256:0d939206b55a81c3fd958ac25fd0654daf01dd1fa900bc66683bc92afeb0f46f"
     text_source: "raw_text"
 ---
 

@@ -19,6 +19,7 @@ source_ids:
   - "meeting_doc_115256"
   - "meeting_doc_202106"
   - "mta_automated_camera_enforcement"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q58"
 local_observation_ids:
   - "route_able_q58"
@@ -31,9 +32,10 @@ local_observation_ids:
   - "route_q58_grand_ave_2024"
   - "route_q58_grand_ave_nov2024"
   - "route_q58_meeting_doc_202106"
+  - "route_q58_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-21T22:35:18.476Z"
+generated_at: "2026-07-12T23:02:57.000Z"
 raw_text: "Q58 ABLE camera route through 2023"
 submission_ids:
   - "sub_16e53186a38b6d0b"
@@ -41,6 +43,7 @@ submission_ids:
   - "sub_1b5262751d7be143"
   - "sub_54bdcf629b747ecb"
   - "sub_61b4903e362a96e2"
+  - "sub_7c5bf9d5652eab4b"
   - "sub_8f96961670c84ca0"
   - "sub_90fcb76801723108"
   - "sub_b9637ca1e5f08df3"
@@ -69,6 +72,7 @@ payload:
   borough: "Queens"
   borough_normalized: "queens"
   description: "Operates on Broadway with Q53 SBS"
+  gtfs_route_id: "Q58"
   note: "ABLE cameras operated on this route through 2023"
   program: "ABLE"
   route: "Q58"
@@ -218,6 +222,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_202106/blocks.jsonl"
     source_quote: "Q58 Delays (10:03 AM)"
     text_sha256: "sha256:a51e38161f22cbaa4e7fd619d2e1c79b8c92700f68cce6dbbafe742ee642a1cb"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0062"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0062"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q58"
+    text_sha256: "sha256:0064feb6a1fb25e90db099ee09e6956776771e659f3b129a1b6bb640e490eb35"
     text_source: "raw_text"
 ---
 

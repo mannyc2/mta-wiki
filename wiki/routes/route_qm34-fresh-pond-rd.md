@@ -10,14 +10,18 @@ source_ids:
   - "fresh_pond_rd_jun2019"
   - "fresh_pond_rd_may2019"
   - "fresh_pond_rd_tc_jun2019"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_qm34_fresh_pond_rd_may2019"
 local_observation_ids:
   - "route_qm34_fresh_pond_rd"
   - "route_qm34_fresh_pond_rd_may2019"
+  - "route_qm34_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T18:45:36.852Z"
+generated_at: "2026-07-12T23:02:57.000Z"
+raw_text: "QM34"
 submission_ids:
+  - "sub_5e455896ea540774"
   - "sub_73eab58be0ad36b1"
   - "sub_794f702dd60ec556"
   - "sub_da42ebb4a977048e"
@@ -30,7 +34,9 @@ payload:
   borough: "Queens"
   borough_normalized: "queens"
   description: "Express bus route operating on Fresh Pond Rd corridor"
+  gtfs_route_id: "QM34"
   route_id: "QM34"
+  route_name: "QM34"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "express"
@@ -72,6 +78,16 @@ evidence_refs:
     source_id: "fresh_pond_rd_jun2019"
     source_path: "raw/sources/fresh_pond_rd_jun2019/blocks.jsonl"
     text_sha256: "sha256:ba708d386724df4ba3c5e4ad9843b959ef33db75382bf890a4b8a1e95efbe282"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0123"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0123"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "QM34"
+    text_sha256: "sha256:9faa66d678b6ca1b14efe518b38e71a093e8a7e41ba501bfa06095d7a2d4c409"
     text_source: "raw_text"
 ---
 

@@ -9,22 +9,27 @@ source_id: "mta_automated_camera_enforcement"
 source_ids:
   - "meeting_doc_186616"
   - "mta_automated_camera_enforcement"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q6_ace"
 local_observation_ids:
   - "route_meeting_doc_186616_q6_ace"
   - "route_q6_ace"
+  - "route_q6_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-07-12T13:58:31.117Z"
+generated_at: "2026-07-12T23:02:57.000Z"
 raw_text: "Q6"
 submission_ids:
   - "sub_14c7922d4c77272f"
   - "sub_a4951871be46b549"
+  - "sub_cd66a5ad6dbfeb18"
 payload:
   borough: "Queens"
   borough_normalized: "queens"
+  gtfs_route_id: "Q06"
   route_id: "Q6"
   route_label: "Q6"
+  route_name: "Q6"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "bus"
@@ -50,6 +55,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_186616/blocks.jsonl"
     source_quote: "Q6"
     text_sha256: "sha256:94f2bd4451ebb0cab2547064ae8c8f887aa47d99c673cd60f8aca040dbd13e54"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0008"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0008"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q6"
+    text_sha256: "sha256:b0f14ad1100d6dc5e7429efda031606d18ef7c3434d3af5c186a0fbbf3a1b297"
     text_source: "raw_text"
 ---
 
