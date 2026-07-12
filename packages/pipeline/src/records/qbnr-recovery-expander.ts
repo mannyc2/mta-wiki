@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { recordBaseIdForInput, slug } from "@mta-wiki/db/identity";
+import { canonicalRecordIdForInput, isGlobalRecordKind, recordBaseIdForInput, slug } from "@mta-wiki/db/identity";
 import type { JsonObject, JsonValue, MtaCanonicalRecord, StagedSourceBlock } from "@mta-wiki/db/types";
 import { normalizeObservationPayload } from "@mta-wiki/pipeline/ontology/normalizers";
 import {
@@ -237,13 +237,17 @@ function evidence(block: StagedSourceBlock, role: string, sourceQuote: string): 
 }
 
 function expectedRecordId(observation: Omit<OperationalRecoveryObservation, "expected_record_id" | "evidence_bindings">): string {
-  return recordBaseIdForInput({
+  const input = {
     source_id: QBNR_SERVICE_CHANGES_SOURCE_ID,
     observation_kind: observation.observation_kind,
     local_observation_id: observation.local_observation_id,
     label: observation.label,
     ...(observation.raw_text === undefined ? {} : { raw_text: observation.raw_text }),
-  });
+    payload: observation.payload,
+  };
+  return isGlobalRecordKind(observation.observation_kind)
+    ? canonicalRecordIdForInput(input)
+    : recordBaseIdForInput(input);
 }
 
 function relationEvidence(block: StagedSourceBlock, semanticRole: string, quote: string): OperationalRecoveryEvidenceBinding[] {

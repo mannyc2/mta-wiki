@@ -3,6 +3,7 @@ import { repoRoot } from "@mta-wiki/core/paths";
 import { writeOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
 import { applyOperationalRecoveryProposal } from "@mta-wiki/pipeline/records/operational-recovery-apply";
 import { validateOperationalRecoveryProposalTree } from "@mta-wiki/pipeline/records/operational-recovery-proposals";
+import { draftQbnrRecoveryProposalFromFile } from "@mta-wiki/pipeline/records/qbnr-recovery-draft";
 import { optionValue, requireSubject, type CommandHandler } from "./shared.js";
 
 const operationalCoverage: CommandHandler = () => {
@@ -68,9 +69,17 @@ const recoveryApply: CommandHandler = (args) => {
   );
 };
 
+const qbnrRecoveryDraft: CommandHandler = (args) => {
+  const specPath = requireSubject(args.command, args.subject, "reviewed QBNR batch spec path");
+  const result = draftQbnrRecoveryProposalFromFile(specPath);
+  console.log(`Operational recovery proposal: ${result.proposal.proposal_id}`);
+  console.log(`Proposed artifact: ${relative(repoRoot, result.output_path)}`);
+};
+
 export const qualityCommands = {
   "operational-coverage": operationalCoverage,
   "coverage-matrix": operationalCoverage,
   "operational-recovery-proposals": recoveryProposals,
   "operational-recovery-apply": recoveryApply,
+  "qbnr-recovery-draft": qbnrRecoveryDraft,
 } satisfies Record<string, CommandHandler>;

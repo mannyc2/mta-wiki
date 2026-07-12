@@ -24,6 +24,7 @@ export type Command =
   | "coverage-matrix"
   | "operational-recovery-proposals"
   | "operational-recovery-apply"
+  | "qbnr-recovery-draft"
   | "semantic-sweep"
   | "fact-dedup"
   | "replay-eval"
