@@ -10,11 +10,19 @@
     "operational-coverage:a9b2bf1ff109628219637775"
   ],
   "source_id": "mta_queens_bus_network_redesign_service_changes",
-  "review_state": "proposed",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-12T23:31:06.000Z",
   "provenance": {
     "drafted_by": "codex-corpus-completion-2026-07-12",
     "drafted_at": "2026-07-12T23:22:12.000Z",
-    "method": "qbnr_batch_spec_expansion"
+    "method": "qbnr_batch_spec_expansion",
+    "verifier": {
+      "reviewed_by": "codex-independent-qbnr-spec-review",
+      "reviewed_at": "2026-07-12T23:31:06.000Z",
+      "verdict": "passed",
+      "rationale": "All twenty-one official rows were independently checked for exact block hashes and realized dates, exhaustive ordered cell partitions, treatment cardinality and family normalization, unique pinned true-route anchors, alternative-route context isolation, collision-free generated identities, and an exact 218-row accepted-journal conversion. Fresh strict expansion is byte-identical to this artifact and focused recovery tests pass."
+    }
   },
   "rationale": "Twenty-one exact official MTA rows exhaust the remaining non-start QBNR work units that already have unique current route anchors. Every row binds one realized date, one current route, and all source-stated treatment members. Alternative-route and unchanged-service language is exhaustively classified as context and creates no route edge; source summaries for Q101 and Q102 are retained as context without duplicating their detailed changes. Q76 is retained as an exact three-member bundle because its College Point reroute, Q20B service replacement, and stop removal are separately stated and unambiguous.",
   "observations": [
