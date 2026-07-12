@@ -38,7 +38,8 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   occurrences, `10` eligible occurrence-route pairs, `268` open priority rows, and `13` terminal rows.
   The official table contains `127` de-duplicated actionable change units. A strict all-cell audit leaves
   `123` incomplete: Q1/Q3/Q7/Q8 are clause-complete, while Q110's stable approved occurrence still needs
-  the row's separately rendered stop-removal treatment. Three explicit no-change rows are tracked separately.
+  the row's Hempstead/Q82 replacement and separately rendered stop-removal treatments. Three explicit
+  no-change rows are tracked separately.
 
 ## 2026-07-11
 

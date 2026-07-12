@@ -213,7 +213,7 @@ const q52Exception = {
 };
 
 const incompleteOccurrenceReasons: Record<string, string> = {
-  Q110: "Approved occurrence omits the source row's separate stop-removal cell and must be enriched as a bundle.",
+  Q110: "Approved occurrence omits the Hempstead/Q82 replacement sentence and separate stop-removal cell; it must be enriched as a three-member bundle.",
 };
 
 const units: WorkUnit[] = rowGroups(sourceRows()).map((group) => {

@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "proposal_id": "orp_qbnr_q110_stop_removal_enrichment_2025",
+  "proposal_kind": "observation_bundle",
+  "corpus_fingerprint": "4217ded93fe76f5d689d98d4f3bd8cee912cc998b3e11606b5bdaef79df0483e",
+  "gap_ids": [
+    "operational-coverage:d9967b59043b66904e64a4cf"
+  ],
+  "source_id": "mta_queens_bus_network_redesign_service_changes",
+  "review_state": "proposed",
+  "provenance": {
+    "drafted_by": "codex-corpus-completion-2026-07-12",
+    "drafted_at": "2026-07-12T21:40:00.000Z",
+    "method": "strict_all_source_cells_remediation"
+  },
+  "rationale": "The official Q110 row separately states that Hempstead Avenue service was discontinued and replaced by Q82, then renders stop removal in another substantive cell. The existing Q110 treatment covers only reroute and extension, so the stable occurrence needs two additional literal treatments and project-to-treatment scope relations; its founding event, Q110 route, and occurrence identity remain unchanged. Q82 remains replacement context and is never an occurrence route.",
+  "observations": [
+    {
+      "expected_record_id": "treatment_q110-hempstead-replacement-2025",
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q110_hempstead_replacement_2025",
+      "label": "Q110 Hempstead Avenue service replacement",
+      "raw_text": "Q110 service along Hempstead Av will be discontinued and replaced by the new Q82 .",
+      "payload": {
+        "treatment_kind": "route segment discontinuation and replacement",
+        "description": "Q110 service along Hempstead Avenue was discontinued and replaced by the new Q82.",
+        "location_text": "Hempstead Avenue"
+      },
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094",
+          "block_id": "p001_b0094",
+          "source_quote": "Q110 service along Hempstead Av will be discontinued and replaced by the new Q82 ."
+        }
+      ]
+    },
+    {
+      "expected_record_id": "treatment_q110-stop-removal-2025",
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q110_stop_removal_2025",
+      "label": "Q110 stop removals",
+      "raw_text": "Some stops have been removed from this route.",
+      "payload": {
+        "treatment_kind": "stop removal",
+        "description": "Some Q110 stops were removed."
+      },
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094",
+          "block_id": "p001_b0094",
+          "source_quote": "Some stops have been removed from this route."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q110_hempstead_replacement",
+      "label": "Queens redesign includes Q110 Hempstead Avenue service replacement",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q110_hempstead_replacement_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "The Q110 redesign discontinued Hempstead Avenue service and replaced it with Q82 service.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094",
+          "block_id": "p001_b0094",
+          "source_quote": "Q110 service along Hempstead Av will be discontinued and replaced by the new Q82 ."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094",
+          "block_id": "p001_b0094",
+          "source_quote": "Q110 service along Hempstead Av will be discontinued and replaced by the new Q82 ."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q110_stop_removal",
+      "label": "Queens redesign includes Q110 stop removals",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q110_stop_removal_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "The Q110 redesign removed some stops.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094",
+          "block_id": "p001_b0094",
+          "source_quote": "Some stops have been removed from this route."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094",
+          "block_id": "p001_b0094",
+          "source_quote": "Some stops have been removed from this route."
+        }
+      ]
+    }
+  ]
+}
