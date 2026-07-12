@@ -10,11 +10,19 @@
     "operational-coverage:a9b2bf1ff109628219637775"
   ],
   "source_id": "mta_queens_bus_network_redesign_service_changes",
-  "review_state": "proposed",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-12T22:16:08.000Z",
   "provenance": {
     "drafted_by": "codex-corpus-completion-2026-07-12",
     "drafted_at": "2026-07-12T22:09:17.000Z",
-    "method": "qbnr_batch_spec_expansion"
+    "method": "qbnr_batch_spec_expansion",
+    "verifier": {
+      "reviewed_by": "codex-independent-qbnr-spec-review",
+      "reviewed_at": "2026-07-12T22:16:08.000Z",
+      "verdict": "passed",
+      "rationale": "The spec and emitted artifact match the six official source rows exactly: all block hashes and ordered post-event cells validate, all dates are realized and day-precise, each target is the unique pinned true-route anchor for its stated GTFS route, and expansion yields exactly one route, one event, one bus-stop treatment, and three relations per row with no collisions."
+    }
   },
   "rationale": "Six exact official MTA route rows establish source-local route identity, realized effective dates, and one stop-removal treatment apiece. Each route retains exactly one reviewed current GTFS anchor; current-routing language constrains treatment scope and does not create a routing treatment; every navigation and timetable cell is explicitly accounted for as non-treatment context.",
   "observations": [
