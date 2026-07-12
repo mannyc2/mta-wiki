@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "receipt_id": "q7-route-redesign-2025-08-31",
-  "status": "candidate_ready_pending_release_cut",
+  "status": "reached_downstream_review",
   "operator": "codex-core-coverage-2026-07-12",
   "searched_at": "2026-07-12T13:30:00.000Z",
   "acquisition_method": "recovered_existing_official_capture",
@@ -91,5 +91,26 @@
     "speed_row_count": 54178,
     "gtfs_route_id_speed_row_count": 0,
     "required_consumer_crosswalk": "Q07 -> Q7"
+  },
+  "release": {
+    "release_id": "v3-operational-occurrences-1",
+    "manifest_sha256": "01cb22b55b9a7f3acee15f7bfbdd92d1028a44d5b999338346172d0412c190a0",
+    "generator_commit": "c5834836c8e9c7aa0f1e96a12b80b2bf7873ed83",
+    "operational_occurrences_sha256": "e5212065c32498d758e23c58c908dd56193b42f26f5e4a56616ccbd301b963a4",
+    "reproducibility": "two forced cuts produced byte-identical release files and manifest"
+  },
+  "downstream_review": {
+    "consumer": "bus-reliability-tracker",
+    "consumer_commit": "bcbe4c955dc116eda2570db3bf26a55f719e06d2",
+    "import_artifact_path": "data/artifacts/studio/v2/wiki/operational-occurrences-v3-operational-occurrences-1.json",
+    "import_artifact_sha256": "411f2ce686dd6d11f389c654b1d6a7b7891fde39ed96546ede991bc8187ed97f",
+    "candidate_artifact_path": "data/artifacts/studio/v2/studies/study-events-v3-operational-occurrences-1.json",
+    "candidate_artifact_sha256": "9d62b2923ebff63c7a4fa715a1b3da427d5d87e69d4d19e823637e0bc8340bc7",
+    "candidate_set_id": "candidate-set-v2:bb333220c9cdfbfe592329f8",
+    "candidate_id": "study-event-v2:8476b86179cbe2ae5d827cd1",
+    "review_worksheet_path": "data/study-event-approvals/reviews/candidate-set-v2-bb333220c9cdfbfe592329f8.review-worksheet.json",
+    "review_worksheet_sha256": "6c3841de4f2564ddc84dffed25953aeedf81282ee2974673ccc797ef394d69f9",
+    "review_status": "REVIEW_REQUIRED",
+    "approval_applied": false
   }
 }
