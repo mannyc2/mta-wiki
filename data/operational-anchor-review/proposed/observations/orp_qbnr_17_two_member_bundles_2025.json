@@ -10,11 +10,19 @@
     "operational-coverage:a9b2bf1ff109628219637775"
   ],
   "source_id": "mta_queens_bus_network_redesign_service_changes",
-  "review_state": "proposed",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-12T23:02:57.000Z",
   "provenance": {
     "drafted_by": "codex-corpus-completion-2026-07-12",
     "drafted_at": "2026-07-12T22:56:32.000Z",
-    "method": "qbnr_batch_spec_expansion"
+    "method": "qbnr_batch_spec_expansion",
+    "verifier": {
+      "reviewed_by": "codex-independent-qbnr-spec-review",
+      "reviewed_at": "2026-07-12T23:02:57.000Z",
+      "verdict": "passed",
+      "rationale": "All seventeen official rows were independently checked for current block hashes, realized dates, exhaustive ordered cell partitions, two-member cardinality, treatment-family normalization, and unique pinned true-route anchors. Fresh strict expansion exactly matches this artifact, Q76 is excluded, Q5/Q80/Q98/Q47 remain context-only, and no canonical record or relation triple collides."
+    }
   },
   "rationale": "Seventeen exact official MTA route rows each bind one current route, one realized effective date, and exactly two source-stated treatment members. Every non-treatment sentence is exhaustively classified as route qualifier, alternative-service context, separate-route context, navigation, or timetable context. Q5, Q80, Q98, and Q47 remain context-only and create no route edge. The excluded Q76 row is not included because strict clause accounting yields more than two treatment members.",
   "observations": [
