@@ -245,8 +245,8 @@ describe("operational occurrences v1", () => {
         member_treatment_families: string[];
       }>;
     };
-    expect(rows).toHaveLength(41);
-    expect(summary.candidate_projection_count).toBe(43);
+    expect(rows).toHaveLength(62);
+    expect(summary.candidate_projection_count).toBe(64);
     expect(review.decision_count).toBe(rows.length);
     expect(expectedCandidates.candidate_count).toBe(expectedCandidates.candidates.length);
     expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === "Q110")).toEqual([
@@ -354,7 +354,40 @@ describe("operational occurrences v1", () => {
         },
       ]);
     }
-    for (const forbiddenRouteId of ["Q5", "Q12", "Q36", "Q47", "Q63", "Q80", "Q98"]) {
+    for (const [routeId, occurrenceId, memberFamilies] of [
+      ["Q5", "occurrence:88e85e2d2475090abec9877a", ["service_pattern", "service_pattern"]],
+      ["Q11", "occurrence:28e219b4524b102cdd9dd1d0", ["service_pattern", "service_pattern", "bus_stop_or_boarding"]],
+      ["Q13", "occurrence:de25867eefd234ee717d5477", ["bus_stop_or_boarding", "service_pattern"]],
+      ["Q22", "occurrence:348b29a03ef80cb34b909b32", ["service_pattern", "service_pattern", "service_pattern", "bus_stop_or_boarding"]],
+      ["Q23", "occurrence:267aaa5473dee60fb3a4141d", ["service_pattern", "service_pattern", "service_pattern", "service_pattern", "bus_stop_or_boarding"]],
+      ["Q26", "occurrence:9cc235d476d6671abef6061f", ["service_pattern", "service_pattern", "service_pattern", "service_pattern", "bus_stop_or_boarding"]],
+      ["Q27", "occurrence:012a7db8f83a7369d830cfbe", ["service_pattern", "service_pattern", "bus_stop_or_boarding", "bus_stop_or_boarding"]],
+      ["Q35", "occurrence:1837c6c5074899a254d2f432", ["bus_stop_or_boarding", "service_pattern", "service_pattern"]],
+      ["Q38", "occurrence:ba2df83e40caa33e0414df00", ["service_pattern", "service_pattern", "bus_stop_or_boarding"]],
+      ["Q43", "occurrence:c88a94143d770aa926bd2457", ["service_pattern", "bus_stop_or_boarding", "bus_stop_or_boarding"]],
+      ["Q47", "occurrence:8fe6a36ee85ea925934f0090", ["service_pattern", "bus_stop_or_boarding", "service_pattern", "service_pattern"]],
+      ["Q65", "occurrence:e3e892497a55c312fb79e181", ["service_pattern", "service_pattern", "service_pattern", "service_pattern", "service_pattern", "bus_stop_or_boarding"]],
+      ["Q76", "occurrence:11142a33a2e70c97f1f4bc37", ["service_pattern", "service_pattern", "bus_stop_or_boarding"]],
+      ["Q77", "occurrence:6e77fd301c480a7727683f26", ["bus_stop_or_boarding", "service_pattern", "bus_stop_or_boarding"]],
+      ["Q85", "occurrence:7a4cb90846e515964b1d7198", ["service_pattern", "service_pattern", "bus_stop_or_boarding"]],
+      ["Q101", "occurrence:17599e5e02011a49dbf3a39e", ["service_pattern", "service_pattern", "bus_stop_or_boarding"]],
+      ["Q102", "occurrence:6db5b36a1964f9acbc9a8c28", ["service_pattern", "service_pattern"]],
+      ["Q111", "occurrence:b882f54df6c24c9a1b7b89f6", ["bus_stop_or_boarding", "bus_stop_or_boarding"]],
+      ["B62", "occurrence:18bf68576411afed0305dfed", ["service_pattern", "service_pattern"]],
+      ["QM12", "occurrence:59ecd060600071fd96d07ab4", ["service_pattern", "service_pattern", "bus_stop_or_boarding"]],
+      ["QM25", "occurrence:9170c983a3c76974673a0ce6", ["service_pattern", "bus_stop_or_boarding"]],
+    ] as const) {
+      expect(expectedCandidates.candidates.filter((candidate) => candidate.occurrence_id === occurrenceId)).toEqual([
+        {
+          occurrence_id: occurrenceId,
+          route_id: routeId,
+          treatment_kind: "bundle",
+          analysis_family: "route_redesign",
+          member_treatment_families: memberFamilies,
+        },
+      ]);
+    }
+    for (const forbiddenRouteId of ["Q12", "Q20B", "Q21", "Q36", "Q63", "Q80", "Q98"]) {
       expect(expectedCandidates.candidates.some((candidate) => candidate.route_id === forbiddenRouteId)).toBe(false);
     }
   });

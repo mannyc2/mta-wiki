@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "decision_id": "q26-route-redesign-2025-06-29",
+  "review_state": "approved",
+  "accepted_at": "2026-07-12T23:41:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-12",
+  "rationale": "The official MTA Q26 row binds a realized June 29, 2025 onset and one uniquely anchored route to all 5 canonical treatment members stated for that row. Each member retains its literal treatment family. The official Queens Bus Network Redesign project context separately supports route_redesign as the reviewed bundle analysis family. No alternative route scope is inherited.",
+  "occurrence_id": "occurrence:9cc235d476d6671abef6061f",
+  "founding_key": "event:event_q26-qbnr-service-change-2025-06-29",
+  "observation_event_record_ids": [
+    "event_q26-qbnr-service-change-2025-06-29"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-q26",
+    "relation_qbnr-2025-has-q26-college-point-extension",
+    "relation_qbnr-2025-has-q26-q65-service-replacement",
+    "relation_qbnr-2025-has-q26-flushing-reroute",
+    "relation_qbnr-2025-has-q26-frequency-span-adjustment",
+    "relation_qbnr-2025-has-q26-stop-removal",
+    "relation_qbnr-has-q26-service-change-2025-06-29"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-06-29",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_q26-qbnr-service-change-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-q26-service-change-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_q26-lga-2012",
+      "gtfs_route_id": "Q26",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_q26-lga-2012",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-q26",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "bundle",
+  "treatment": {
+    "kind": "bundle",
+    "analysis_family": "route_redesign",
+    "analysis_family_evidence_bindings": [
+      {
+        "role": "bundle_analysis_family",
+        "record_id": "project_queens-bus-network-redesign",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0001"
+      }
+    ],
+    "members": [
+      {
+        "treatment_record_id": "treatment_q26-college-point-extension-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q26-college-point-extension-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q26-college-point-extension",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q26-q65-service-replacement-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q26-q65-service-replacement-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q26-q65-service-replacement",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q26-flushing-reroute-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q26-flushing-reroute-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q26-flushing-reroute",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q26-frequency-span-adjustment-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q26-frequency-span-adjustment-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q26-frequency-span-adjustment",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q26-stop-removal-2025",
+        "treatment_family": "bus_stop_or_boarding",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q26-stop-removal-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q26-stop-removal",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "decision_id": "q47-route-redesign-2025-08-31",
+  "review_state": "approved",
+  "accepted_at": "2026-07-12T23:41:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-12",
+  "rationale": "The official MTA Q47 row binds a realized August 31, 2025 onset and one uniquely anchored route to all 4 canonical treatment members stated for that row. Each member retains its literal treatment family. The official Queens Bus Network Redesign project context separately supports route_redesign as the reviewed bundle analysis family. No alternative route scope is inherited.",
+  "occurrence_id": "occurrence:8fe6a36ee85ea925934f0090",
+  "founding_key": "event:event_q47-qbnr-service-change-2025-08-31",
+  "observation_event_record_ids": [
+    "event_q47-qbnr-service-change-2025-08-31"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-q47",
+    "relation_qbnr-2025-has-q47-woodside-jackson-23-avenue-reroute-extension",
+    "relation_qbnr-2025-has-q47-terminal-a-replacement",
+    "relation_qbnr-2025-has-q47-bulova-all-trip-service",
+    "relation_qbnr-2025-has-q47-stop-removal",
+    "relation_qbnr-has-q47-service-change-2025-08-31"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-08-31",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_q47-qbnr-service-change-2025-08-31",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0052"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-q47-service-change-2025-08-31",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0052"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_q47-serves-lga-2011",
+      "gtfs_route_id": "Q47",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_q47-serves-lga-2011",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0052"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-q47",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0052"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "bundle",
+  "treatment": {
+    "kind": "bundle",
+    "analysis_family": "route_redesign",
+    "analysis_family_evidence_bindings": [
+      {
+        "role": "bundle_analysis_family",
+        "record_id": "project_queens-bus-network-redesign",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0001"
+      }
+    ],
+    "members": [
+      {
+        "treatment_record_id": "treatment_q47-woodside-jackson-23-avenue-reroute-extension-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q47-woodside-jackson-23-avenue-reroute-extension-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0052"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q47-woodside-jackson-23-avenue-reroute-extension",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0052"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q47-terminal-a-replacement-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q47-terminal-a-replacement-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0052"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q47-terminal-a-replacement",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0052"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q47-bulova-all-trip-service-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q47-bulova-all-trip-service-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0052"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q47-bulova-all-trip-service",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0052"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q47-stop-removal-2025",
+        "treatment_family": "bus_stop_or_boarding",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q47-stop-removal-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0052"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q47-stop-removal",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0052"
+          }
+        ]
+      }
+    ]
+  }
+}

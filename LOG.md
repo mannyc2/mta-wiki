@@ -46,9 +46,14 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   17 uniquely anchored route rows as exact two-member bundles, preserving one `bus_stop_or_boarding` and
   one `service_pattern` member apiece while using project evidence only for the reviewed `route_redesign`
   analysis family. No Q5/Q80/Q98/Q47 cross-products were introduced. Coverage now reports `41`
-  occurrences, `40` eligible occurrences, `43` eligible occurrence-route pairs, `268` open priority rows,
-  and `79` terminal rows. Thirty-eight QBNR change units are clause-complete, leaving `89`; three explicit
-  no-change rows are tracked separately.
+  occurrences. A fifth reviewed recovery promoted the `21` fully source-complete ordinary service-change
+  rows in its existing-anchor cohort as one-route bundles carrying every canonical row treatment (`2`–`6`
+  members). Literal member families
+  remain unchanged; only the project-backed analysis family is `route_redesign`, and alternative-route
+  treatment context does not become route scope. Coverage now reports `62` occurrences, `61` eligible
+  occurrences, `64` eligible occurrence-route pairs, `268` open priority rows, and `121` terminal rows.
+  Fifty-nine QBNR change units are clause-complete, leaving `68`; three explicit no-change rows are tracked
+  separately.
 
 ## 2026-07-11
 
