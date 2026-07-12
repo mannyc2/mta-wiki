@@ -61,6 +61,12 @@ const files: Record<string, string> = {
   "operational_anchors_summary.json": operationalAnchorSummaryJson(
     summarizeOperationalAnchors(legacyAnchorRows, {
       canonicalEventCount: new Set(legacyAnchorRows.map((row) => row.event_record_id)).size,
+      operationalFamilyEventCount: new Set(legacyAnchorRows.map((row) => row.event_record_id)).size,
+      entryGate: {
+        relations_examined: 0,
+        non_event_timeline_objects: 0,
+        non_operational_event_objects: 0,
+      },
     }),
   ),
   "operational_anchor_review_decisions.json": operationalAnchorReviewSnapshotJson(anchorReviews),
@@ -69,41 +75,42 @@ const files: Record<string, string> = {
   "operational_occurrence_review_decisions.json": operationalOccurrenceReviewSnapshotJson(reviewSnapshot),
 };
 
+const candidates = rows
+  .filter((row) => row.study_projection_eligible)
+  .flatMap((row) =>
+    row.routes.map((route) => {
+      const memberFamilies =
+        row.treatment.kind === "atomic"
+          ? [row.treatment.member.treatment_family]
+          : row.treatment.members.map((member) => member.treatment_family);
+      let analysisFamily =
+        row.treatment.kind === "atomic" ? row.treatment.member.treatment_family : row.treatment.bundle_family;
+      if (
+        row.treatment.kind === "atomic" &&
+        analysisFamily === "fare_collection" &&
+        /(?:off[-_]?board|proof[-_]?of[-_]?payment)/iu.test(row.treatment.member.treatment_record_id)
+      ) {
+        analysisFamily = "off_board_fare_collection";
+      }
+      const routeId = /^Q0[1-9]$/u.test(route.gtfs_route_id)
+        ? `Q${route.gtfs_route_id.slice(2)}`
+        : route.gtfs_route_id;
+      return {
+        occurrence_id: row.occurrence_id,
+        route_id: routeId,
+        treatment_kind: row.treatment.kind,
+        analysis_family: analysisFamily,
+        member_treatment_families: memberFamilies,
+      };
+    }),
+  )
+  .sort((left, right) =>
+    [left.occurrence_id, left.route_id].join("|").localeCompare([right.occurrence_id, right.route_id].join("|")),
+  );
 const expected = {
   schema_version: 1,
-  candidate_count: 6,
-  candidates: rows
-    .filter((row) => row.study_projection_eligible)
-    .flatMap((row) =>
-      row.routes.map((route) => {
-        const memberFamilies =
-          row.treatment.kind === "atomic"
-            ? [row.treatment.member.treatment_family]
-            : row.treatment.members.map((member) => member.treatment_family);
-        let analysisFamily =
-          row.treatment.kind === "atomic" ? row.treatment.member.treatment_family : row.treatment.bundle_family;
-        if (
-          row.treatment.kind === "atomic" &&
-          analysisFamily === "fare_collection" &&
-          /(?:off[-_]?board|proof[-_]?of[-_]?payment)/iu.test(row.treatment.member.treatment_record_id)
-        ) {
-          analysisFamily = "off_board_fare_collection";
-        }
-        const routeId = /^Q0[1-9]$/u.test(route.gtfs_route_id)
-          ? `Q${route.gtfs_route_id.slice(2)}`
-          : route.gtfs_route_id;
-        return {
-          occurrence_id: row.occurrence_id,
-          route_id: routeId,
-          treatment_kind: row.treatment.kind,
-          analysis_family: analysisFamily,
-          member_treatment_families: memberFamilies,
-        };
-      }),
-    )
-    .sort((left, right) =>
-      [left.occurrence_id, left.route_id].join("|").localeCompare([right.occurrence_id, right.route_id].join("|")),
-    ),
+  candidate_count: candidates.length,
+  candidates,
 };
 files["expected_route_candidates.json"] = `${stableJson(expected as unknown as JsonValue)}\n`;
 

@@ -15,8 +15,8 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 - Added a deterministic operational completion ledger and CLI. The first fingerprinted baseline has
   `2,735` explicit gap rows and a bounded `275`-row priority feeder across route, treatment,
   date-precision, delivered-status, and timeline-subject dimensions. The strict sequential
-  route-resolved treatment queue contains `15` rows. The matrix separately reports `4` reviewed
-  occurrences, `3` eligible occurrences, and `6` eligible occurrence-route pairs.
+  route-resolved treatment queue contains `15` rows. The matrix separately reports `5` reviewed
+  occurrences, `4` eligible occurrences, and `7` eligible occurrence-route pairs.
 - Added the reviewed recovery queue for strict relation and observation-bundle proposals. Accepted
   proposals require owner/delegate attribution plus a passed adversarial verifier; apply writes a
   new append-only submission journal with proposal provenance, materializes through the normal
@@ -24,11 +24,12 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   failures. Corpus-wide record-id assignment is checked before journal creation, and one exact
   proposal-derived journal validator gates both retry/apply and repository validation. The
   repository validator now gates the complete proposed/applied/rejected tree.
-- First reviewed ledger pass closed `4` false-open route/treatment rows whose broad inherited anchors
-  are superseded by approved, study-eligible Q7 and September 2025 ACE occurrences. The bounded queue
-  now has `271` open and `4` terminal priority rows. The ledger remains the work denominator, not a
-  claim that the remaining gaps are recoverable or absent; proposals, curation decisions, and
-  exhaustive search receipts remain the next pass.
+- First reviewed ledger pass closed `7` false-open route/treatment/status rows whose broad inherited
+  anchors are superseded by approved, study-eligible Q7, Q110, and September 2025 ACE occurrences.
+  Q110 now projects as exactly one June 29, 2025 `route_redesign` candidate. The bounded queue has
+  `268` open and `7` terminal priority rows. The ledger remains the work denominator, not a claim
+  that the remaining gaps are recoverable or absent; proposals, curation decisions, and exhaustive
+  search receipts remain the next pass.
 
 ## 2026-07-11
 

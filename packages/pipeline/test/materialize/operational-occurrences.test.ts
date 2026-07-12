@@ -233,9 +233,31 @@ describe("operational occurrences v1", () => {
     const review = parseOperationalOccurrenceReviewSnapshot(
       JSON.parse(readFileSync(join(dir, manifest.pointers.operational_occurrence_review_decisions!), "utf8")) as unknown,
     );
-    expect(rows).toHaveLength(4);
-    expect(summary.candidate_projection_count).toBe(6);
+    const expectedCandidates = JSON.parse(
+      readFileSync(join(dir, "expected_route_candidates.json"), "utf8"),
+    ) as {
+      candidate_count: number;
+      candidates: Array<{
+        occurrence_id: string;
+        route_id: string;
+        treatment_kind: string;
+        analysis_family: string | null;
+        member_treatment_families: string[];
+      }>;
+    };
+    expect(rows).toHaveLength(5);
+    expect(summary.candidate_projection_count).toBe(7);
     expect(review.decision_count).toBe(rows.length);
+    expect(expectedCandidates.candidate_count).toBe(expectedCandidates.candidates.length);
+    expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === "Q110")).toEqual([
+      {
+        occurrence_id: "occurrence:6a6f8f8e85979d872ba2bdd7",
+        route_id: "Q110",
+        treatment_kind: "atomic",
+        analysis_family: "route_redesign",
+        member_treatment_families: ["route_redesign"],
+      },
+    ]);
   });
 
   it("groups accepted atomic anchor reviews into one stable plural-route occurrence", () => {
