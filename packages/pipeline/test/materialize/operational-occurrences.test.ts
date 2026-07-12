@@ -245,8 +245,8 @@ describe("operational occurrences v1", () => {
         member_treatment_families: string[];
       }>;
     };
-    expect(rows).toHaveLength(5);
-    expect(summary.candidate_projection_count).toBe(7);
+    expect(rows).toHaveLength(8);
+    expect(summary.candidate_projection_count).toBe(10);
     expect(review.decision_count).toBe(rows.length);
     expect(expectedCandidates.candidate_count).toBe(expectedCandidates.candidates.length);
     expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === "Q110")).toEqual([
@@ -258,6 +258,34 @@ describe("operational occurrences v1", () => {
         member_treatment_families: ["route_redesign"],
       },
     ]);
+    expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === "Q1")).toEqual([
+      {
+        occurrence_id: "occurrence:da2c48455650dbf4288cbd62",
+        route_id: "Q1",
+        treatment_kind: "bundle",
+        analysis_family: "route_redesign",
+        member_treatment_families: ["service_pattern", "bus_stop_or_boarding", "service_pattern"],
+      },
+    ]);
+    expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === "Q3")).toEqual([
+      {
+        occurrence_id: "occurrence:2223ede249d4fd7b352c8a40",
+        route_id: "Q3",
+        treatment_kind: "atomic",
+        analysis_family: "bus_stop_or_boarding",
+        member_treatment_families: ["bus_stop_or_boarding"],
+      },
+    ]);
+    expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === "Q8")).toEqual([
+      {
+        occurrence_id: "occurrence:934b8066ac790c3820f764d1",
+        route_id: "Q8",
+        treatment_kind: "atomic",
+        analysis_family: "bus_stop_or_boarding",
+        member_treatment_families: ["bus_stop_or_boarding"],
+      },
+    ]);
+    expect(expectedCandidates.candidates.some((candidate) => candidate.route_id === "Q36")).toBe(false);
   });
 
   it("groups accepted atomic anchor reviews into one stable plural-route occurrence", () => {

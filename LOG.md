@@ -30,6 +30,14 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `268` open and `7` terminal priority rows. The ledger remains the work denominator, not a claim
   that the remaining gaps are recoverable or absent; proposals, curation decisions, and exhaustive
   search receipts remain the next pass.
+- Applied the first reviewed observation-bundle recovery journal against the official Queens service-change
+  table. Existing Q1, Q3, and Q8 routes gained exact row evidence; the canonical corpus gained `3` realized
+  events, `5` literal treatments, and `11` row-scoped relations. Approved occurrences preserve Q1 as one
+  three-member `route_redesign` bundle and Q3/Q8 as atomic `bus_stop_or_boarding` changes, producing one
+  route candidate apiece and no Q36 cross-product. Coverage now reports `8` occurrences, `7` eligible
+  occurrences, `10` eligible occurrence-route pairs, `268` open priority rows, and `13` terminal rows.
+  The official table contains `127` de-duplicated actionable change units; `122` remain after Q1/Q3/Q8
+  plus previously approved Q7/Q110, with three explicit no-change rows tracked separately.
 
 ## 2026-07-11
 
