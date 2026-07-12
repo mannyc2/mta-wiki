@@ -253,9 +253,9 @@ describe("operational occurrences v1", () => {
       {
         occurrence_id: "occurrence:6a6f8f8e85979d872ba2bdd7",
         route_id: "Q110",
-        treatment_kind: "atomic",
+        treatment_kind: "bundle",
         analysis_family: "route_redesign",
-        member_treatment_families: ["route_redesign"],
+        member_treatment_families: ["service_pattern", "route_redesign", "bus_stop_or_boarding"],
       },
     ]);
     expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === "Q1")).toEqual([

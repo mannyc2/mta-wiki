@@ -212,9 +212,7 @@ const q52Exception = {
   candidate_record_id: "route_q52-sbs-queens",
 };
 
-const incompleteOccurrenceReasons: Record<string, string> = {
-  Q110: "Approved occurrence omits the Hempstead/Q82 replacement sentence and separate stop-removal cell; it must be enriched as a three-member bundle.",
-};
+const incompleteOccurrenceReasons: Record<string, string> = {};
 
 const units: WorkUnit[] = rowGroups(sourceRows()).map((group) => {
   const first = group[0]!;

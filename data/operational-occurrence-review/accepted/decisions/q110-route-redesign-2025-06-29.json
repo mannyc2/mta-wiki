@@ -2,9 +2,9 @@
   "schema_version": 1,
   "decision_id": "q110-route-redesign-2025-06-29",
   "review_state": "approved",
-  "accepted_at": "2026-07-12T20:23:24.000Z",
+  "accepted_at": "2026-07-12T21:51:16.000Z",
   "reviewer": "codex-corpus-completion-2026-07-12",
-  "rationale": "The official MTA Q110 row binds a realized June 29, 2025 onset, the Q110 route, and one canonical route-redesign treatment in the same evidence block. The treatment record represents the source-stated reroute and extension as a single route_redesign member; this decision does not inherit Q7 scope or attach any other Queens redesign route or treatment.",
+  "rationale": "The official MTA Q110 row binds a realized June 29, 2025 onset and the Q110 route to a three-member package in one evidence block: reroute/extension, discontinuation and Q82 replacement of the Hempstead Avenue segment, and stop removals. Canonical members retain their literal route_redesign, service_pattern, and bus_stop_or_boarding families; official project context supports route_redesign as the reviewed bundle analysis family. Q36 and Q82 remain treatment context and are never occurrence routes.",
   "occurrence_id": "occurrence:6a6f8f8e85979d872ba2bdd7",
   "founding_key": "event:event_q110-route-redesign-effective-2025-06-29",
   "observation_event_record_ids": [
@@ -12,7 +12,9 @@
   ],
   "observation_relation_record_ids": [
     "relation_qbnr-2025-affects-q110",
+    "relation_qbnr-2025-has-q110-hempstead-replacement",
     "relation_qbnr-2025-has-q110-route-redesign",
+    "relation_qbnr-2025-has-q110-stop-removal",
     "relation_qbnr-has-q110-2025-effective-event"
   ],
   "resolved_status": "realized",
@@ -54,26 +56,73 @@
       ]
     }
   ],
-  "treatment_scope_kind": "atomic",
+  "treatment_scope_kind": "bundle",
   "treatment": {
-    "kind": "atomic",
-    "member": {
-      "treatment_record_id": "treatment_q110-route-redesign-2025",
-      "treatment_family": "route_redesign",
-      "evidence_bindings": [
-        {
-          "role": "treatment_definition",
-          "record_id": "treatment_q110-route-redesign-2025",
-          "source_id": "mta_queens_bus_network_redesign_service_changes",
-          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094"
-        },
-        {
-          "role": "treatment_scope",
-          "record_id": "relation_qbnr-2025-has-q110-route-redesign",
-          "source_id": "mta_queens_bus_network_redesign_service_changes",
-          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094"
-        }
-      ]
-    }
+    "kind": "bundle",
+    "analysis_family": "route_redesign",
+    "analysis_family_evidence_bindings": [
+      {
+        "role": "bundle_analysis_family",
+        "record_id": "project_queens-bus-network-redesign",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0001"
+      }
+    ],
+    "members": [
+      {
+        "treatment_record_id": "treatment_q110-hempstead-replacement-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q110-hempstead-replacement-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q110-hempstead-replacement",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q110-route-redesign-2025",
+        "treatment_family": "route_redesign",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q110-route-redesign-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q110-route-redesign",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q110-stop-removal-2025",
+        "treatment_family": "bus_stop_or_boarding",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q110-stop-removal-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q110-stop-removal",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0094"
+          }
+        ]
+      }
+    ]
   }
 }

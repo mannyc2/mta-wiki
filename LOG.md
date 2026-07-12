@@ -36,10 +36,10 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   three-member `route_redesign` bundle and Q3/Q8 as atomic `bus_stop_or_boarding` changes, producing one
   route candidate apiece and no Q36 cross-product. Coverage now reports `8` occurrences, `7` eligible
   occurrences, `10` eligible occurrence-route pairs, `268` open priority rows, and `13` terminal rows.
-  The official table contains `127` de-duplicated actionable change units. A strict all-cell audit leaves
-  `123` incomplete: Q1/Q3/Q7/Q8 are clause-complete, while Q110's stable approved occurrence still needs
-  the row's Hempstead/Q82 replacement and separately rendered stop-removal treatments. Three explicit
-  no-change rows are tracked separately.
+  The official table contains `127` de-duplicated actionable change units. A strict all-cell audit found
+  and repaired omitted Hempstead/Q82 replacement and stop-removal treatments on Q110 while preserving its
+  stable occurrence identity. Q1/Q3/Q7/Q8/Q110 are now clause-complete, leaving `122` change units; three
+  explicit no-change rows are tracked separately.
 
 ## 2026-07-11
 

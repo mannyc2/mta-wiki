@@ -1,7 +1,7 @@
 # Operational coverage matrix
 
-Input fingerprint: `d86d2d1f4d9879143bb4af4fcf1b6145cb5e145e205a944c27838f17a7f0ac94`
-Corpus fingerprint: `59b0fa087d1088a03dc9e44dd75f2da890f6bf4e7024f963356cfa6d5854e4d0`
+Input fingerprint: `ee4b9b259f11b6a69e9721926e879141749402e5b6c56c8177b631b3b71809c5`
+Corpus fingerprint: `703f3c0005a416d989e5635681bf40e8ee571e1aabb93a8984ef358fbb989ac0`
 Study window: 2023-04-01 through 2026-12-31
 
 ## Canonical event population
@@ -23,7 +23,7 @@ Study window: 2023-04-01 through 2026-12-31
 
 - Distinct occurrences: 8
 - Eligible occurrences: 7
-- Bundle occurrences: 3
+- Bundle occurrences: 4
 - Eligible occurrence-route pairs: 10
 - Unique eligible GTFS routes: 10
 
