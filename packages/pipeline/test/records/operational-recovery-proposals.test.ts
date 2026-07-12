@@ -175,6 +175,7 @@ const blockTexts = new Map([
   [`${sourceId}#b_project`, "The fixture project is described here."],
   [`${sourceId}#b_rel`, "The fixture project includes a bus lane treatment."],
   [`${sourceId}#b_event`, "The fixture project launched on July 1, 2025."],
+  [`${sourceId}#b_route`, "The M86 route serves the fixture project."],
 ]);
 
 function resolveBlock(source: string, block: string): OperationalRecoveryResolvedBlock | undefined {
@@ -182,7 +183,7 @@ function resolveBlock(source: string, block: string): OperationalRecoveryResolve
   return rawText ? { source_id: source, block_id: block, raw_text: rawText, raw_text_sha256: `sha256:${block}` } : undefined;
 }
 
-function context(records = canonicalFixture(), stage: "pending" | "applied" | "rejected" = "pending") {
+function context(records = canonicalFixture(), stage: "pending" | "resuming" | "applied" | "rejected" = "pending") {
   return {
     records,
     stage,
@@ -251,6 +252,65 @@ function appliedObservationRecords(): MtaCanonicalRecord[] {
       },
       "b_event",
     ),
+  ];
+}
+
+function targetedRouteProposal(): OperationalRecoveryObservationBundleProposal {
+  const proposal = structuredClone(observationProposal());
+  proposal.proposal_id = "orp_fixture_targeted_route";
+  proposal.rationale = "A route row augments an existing canonical route with source-local evidence.";
+  proposal.observations[0] = {
+    expected_record_id: "route_fixture",
+    target_record_id: "route_fixture",
+    observation_kind: "route",
+    local_observation_id: "fixture_route_row",
+    label: "M86 route row",
+    payload: { route_id: "M86", route_name: "M86" },
+    evidence_bindings: [{
+      role: "route_scope",
+      source_id: sourceId,
+      evidence_id: `${sourceId}#b_route`,
+      block_id: "b_route",
+      source_quote: "The M86 route serves the fixture project.",
+    }],
+  };
+  proposal.relations[0] = {
+    local_observation_id: "fixture_project_route",
+    label: "Fixture project affects M86",
+    relation_kind: "affects_route",
+    subject: { record_id: "project_fixture" },
+    object: { local_observation_id: "fixture_route_row" },
+    assertion_status: "delivered",
+    as_of_date: "2025-07-15",
+    evidence_bindings: [{
+      role: "relationship",
+      source_id: sourceId,
+      evidence_id: `${sourceId}#b_route`,
+      block_id: "b_route",
+      source_quote: "The M86 route serves the fixture project.",
+    }],
+  };
+  return proposal;
+}
+
+function targetedRouteRecord(): MtaCanonicalRecord {
+  const target = record("route_fixture", "route", { route_id: "M86", route_name: "M86" }, "b_route");
+  target.evidence_refs[0]!.role = "route_scope";
+  target.evidence_refs[0]!.source_quote = "The M86 route serves the fixture project.";
+  return target;
+}
+
+function targetedAppliedRecords(): MtaCanonicalRecord[] {
+  return [
+    ...canonicalFixture(),
+    targetedRouteRecord(),
+    record("relation_fixture-project-route", "relation", {
+      relation_kind: "affects_route",
+      subject_id: "project_fixture",
+      object_id: "route_fixture",
+      assertion_status: "delivered",
+      as_of_date: "2025-07-15",
+    }, "b_route"),
   ];
 }
 
@@ -345,6 +405,100 @@ describe("operational recovery proposals", () => {
     const collision = structuredClone(proposal);
     const records = [...canonicalFixture(), record("event_fixture-delivery-event", "event", {}, "b_event")];
     expect(validateOperationalRecoveryProposal(collision, context(records)).join(" ")).toContain("already exists");
+  });
+
+  it("strictly validates targeted observations against an existing same-kind canonical record", () => {
+    const proposal = targetedRouteProposal();
+    expect(parseOperationalRecoveryProposal(proposal).observations[0]?.target_record_id).toBe("route_fixture");
+    expect(validateOperationalRecoveryProposal(proposal, context([...canonicalFixture(), targetedRouteRecord()]))).toEqual([]);
+
+    const missing = structuredClone(proposal);
+    missing.observations[0]!.target_record_id = "route_missing";
+    expect(validateOperationalRecoveryProposal(missing, context()).join(" ")).toContain("target record route_missing does not exist");
+
+    const wrongKind = structuredClone(proposal);
+    wrongKind.observations[0]!.target_record_id = "project_fixture";
+    wrongKind.observations[0]!.expected_record_id = "project_fixture";
+    expect(validateOperationalRecoveryProposal(wrongKind, context()).join(" ")).toContain("has kind project, expected route");
+
+    const nonGlobal = structuredClone(proposal);
+    nonGlobal.observations[0]!.observation_kind = "event";
+    expect(validateOperationalRecoveryProposal(nonGlobal, context([...canonicalFixture(), targetedRouteRecord()])).join(" "))
+      .toContain("target_record_id is supported only for global record kinds");
+    expect(() => operationalRecoveryProposalSubmissionInputs(nonGlobal, [...canonicalFixture(), targetedRouteRecord()]))
+      .toThrow("cannot target a non-global event record");
+
+    const mismatchedExpected = structuredClone(proposal);
+    mismatchedExpected.observations[0]!.expected_record_id = "route_other";
+    expect(validateOperationalRecoveryProposal(mismatchedExpected, context([...canonicalFixture(), targetedRouteRecord()])).join(" "))
+      .toContain("must equal target_record_id");
+
+    expect(() => parseOperationalRecoveryProposal({
+      ...proposal,
+      observations: [{ ...proposal.observations[0], unexpected: true }],
+    })).toThrow("unknown field");
+  });
+
+  it("converts targeted observations without create_new and preserves the local relation endpoint", () => {
+    const proposal = targetedRouteProposal();
+    const inputs = operationalRecoveryProposalSubmissionInputs(proposal, [...canonicalFixture(), targetedRouteRecord()]);
+    expect(inputs[0]).toMatchObject({ target_record_id: "route_fixture" });
+    expect(inputs[0]?.create_new).toBeUndefined();
+    expect(inputs[1]?.payload).toMatchObject({ object_local_observation_id: "fixture_route_row" });
+
+    const projectEntry = fakeEntry("fixture_project", {
+      source_id: sourceId,
+      observation_kind: "project",
+      local_observation_id: "project_fixture",
+      target_record_id: "project_fixture",
+      label: "Fixture project",
+      payload: { project_name: "Fixture project" },
+      evidence_refs: [{ source_id: sourceId, block_id: "b_project", evidence_id: `${sourceId}#b_project` }],
+    }, "2026-07-12T03:00:00.000Z", []);
+    const targetEntry = fakeEntry("fixture_target", inputs[0]!, "2026-07-12T03:00:01.000Z", []);
+    const relationEntry = fakeEntry("fixture_target_relation", inputs[1]!, "2026-07-12T03:00:02.000Z", []);
+    const materialized = recordIdAssignmentsForMaterializableEntries([projectEntry, targetEntry, relationEntry]);
+    expect(materialized.values()).toContain("route_fixture");
+  });
+
+  it("requires exact targeted evidence during resume/apply and keeps targeted journals tamper-evident", () => {
+    const proposal = targetedRouteProposal();
+    const recordsWithoutNewEvidence = [
+      ...canonicalFixture(),
+      record("route_fixture", "route", { route_id: "M86", route_name: "M86" }, "b_rel"),
+    ];
+    expect(validateOperationalRecoveryProposal(proposal, context(recordsWithoutNewEvidence, "resuming"))).toEqual([]);
+    expect(validateOperationalRecoveryProposal(proposal, context(recordsWithoutNewEvidence, "applied")).join(" "))
+      .toContain("exact evidence is not materialized on target route_fixture");
+    expect(validateOperationalRecoveryProposal(proposal, context(targetedAppliedRecords(), "applied"))).toEqual([]);
+
+    const records = [...canonicalFixture(), targetedRouteRecord()];
+    const tamperedEvidence = structuredClone(records);
+    tamperedEvidence.find((record) => record.record_id === "route_fixture")!.evidence_refs[0]!.source_quote = "A different quote.";
+    expect(validateOperationalRecoveryProposal(proposal, context(tamperedEvidence, "applied")).join(" "))
+      .toContain("exact evidence is not materialized on target route_fixture");
+
+    const tamperedRole = structuredClone(records);
+    tamperedRole.find((record) => record.record_id === "route_fixture")!.evidence_refs[0]!.role = "different_role";
+    expect(validateOperationalRecoveryProposal(proposal, context(tamperedRole, "applied")).join(" "))
+      .toContain("exact evidence is not materialized on target route_fixture");
+
+    const tamperedHash = structuredClone(records);
+    tamperedHash.find((record) => record.record_id === "route_fixture")!.evidence_refs[0]!.text_sha256 = "sha256:different";
+    expect(validateOperationalRecoveryProposal(proposal, context(tamperedHash, "applied")).join(" "))
+      .toContain("canonical evidence hash does not match the resolved source block");
+
+    const batch = buildOperationalRecoverySubmissionBatch(proposal, records, fakeEntry);
+    const entries = batch.journal_content.trim().split("\n").map((line) => JSON.parse(line) as Record<string, unknown>);
+    (entries[0]!.tool_args as Record<string, unknown>).target_record_id = "route_tampered";
+    expect(() => validateOperationalRecoveryJournal(
+      `${entries.map((entry) => JSON.stringify(entry)).join("\n")}\n`,
+      "targeted-journal.jsonl",
+      proposal,
+      records,
+      fakeEntry,
+    )).toThrow("differs from the exact proposal-derived submission");
+    expect(buildOperationalRecoverySubmissionBatch(proposal, records, fakeEntry)).toEqual(batch);
   });
 
   it("converts accepted proposals into deterministic, provenance-bearing accepted journal entries", () => {

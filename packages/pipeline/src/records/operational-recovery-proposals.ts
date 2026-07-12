@@ -81,6 +81,7 @@ export type OperationalRecoveryRelation = {
 
 export type OperationalRecoveryObservation = {
   expected_record_id: string;
+  target_record_id?: string | undefined;
   observation_kind: Exclude<MtaObservationKind, "source" | "table" | "relation">;
   local_observation_id: string;
   label: string;
@@ -240,6 +241,7 @@ const proposedRelationFields = new Set([
 ]);
 const observationFields = new Set([
   "expected_record_id",
+  "target_record_id",
   "observation_kind",
   "local_observation_id",
   "label",
@@ -465,6 +467,7 @@ function parseObservation(value: unknown, sourceId: string, path: string): Opera
   const payload = requiredObject(object.payload, `${path}.payload`) as JsonObject;
   return {
     expected_record_id: requiredString(object, "expected_record_id", path),
+    ...(object.target_record_id === undefined ? {} : { target_record_id: optionalString(object, "target_record_id", path) }),
     observation_kind: observationKind as OperationalRecoveryObservation["observation_kind"],
     local_observation_id: requiredString(object, "local_observation_id", path),
     label: requiredString(object, "label", path),
@@ -644,6 +647,10 @@ function evidenceBindingReasons(
   return reasons;
 }
 
+function normalizedEvidenceQuote(value: string): string {
+  return value.replace(/\s+/gu, " ").trim();
+}
+
 function relationTriple(record: MtaCanonicalRecord): string | null {
   if (record.record_kind !== "relation") return null;
   const kind = record.payload.relation_kind;
@@ -755,23 +762,68 @@ export function validateOperationalRecoveryProposal(
       ...(observation.raw_text ? { raw_text: observation.raw_text } : {}),
       payload: observation.payload,
     } satisfies MtaSubmitObservationInput;
-    const derivedRecordId = isGlobalRecordKind(observation.observation_kind)
-      ? canonicalRecordIdForInput(identityInput)
-      : recordBaseIdForInput(identityInput);
-    if (observation.expected_record_id !== derivedRecordId) {
-      reasons.push(
-        `observations[${index}]: expected_record_id ${observation.expected_record_id} does not match deterministic id ${derivedRecordId}`,
-      );
-    }
     const existing = recordsById.get(observation.expected_record_id);
-    if (context.stage === "pending" && existing) {
-      reasons.push(`observations[${index}]: expected record ${observation.expected_record_id} already exists`);
-    }
-    if (context.stage === "resuming" && existing && existing.record_kind !== observation.observation_kind) {
-      reasons.push(`observations[${index}]: resumable expected record ${observation.expected_record_id} has the wrong kind`);
-    }
-    if (context.stage === "applied" && (!existing || existing.record_kind !== observation.observation_kind)) {
-      reasons.push(`observations[${index}]: applied expected record ${observation.expected_record_id} is missing or has the wrong kind`);
+    if (observation.target_record_id) {
+      if (!isGlobalRecordKind(observation.observation_kind)) {
+        reasons.push(
+          `observations[${index}]: target_record_id is supported only for global record kinds`,
+        );
+      }
+      const target = recordsById.get(observation.target_record_id);
+      if (!target) {
+        reasons.push(`observations[${index}]: target record ${observation.target_record_id} does not exist`);
+      } else if (target.record_kind !== observation.observation_kind) {
+        reasons.push(
+          `observations[${index}]: target record ${observation.target_record_id} has kind ${target.record_kind}, expected ${observation.observation_kind}`,
+        );
+      }
+      if (observation.expected_record_id !== observation.target_record_id) {
+        reasons.push(
+          `observations[${index}]: expected_record_id ${observation.expected_record_id} must equal target_record_id ${observation.target_record_id}`,
+        );
+      }
+      if (context.stage === "applied" && target?.record_kind === observation.observation_kind) {
+        for (const [evidenceIndex, binding] of observation.evidence_bindings.entries()) {
+          const exact = target.evidence_refs.find(
+            (ref) =>
+              ref.source_id === binding.source_id &&
+              ref.evidence_id === binding.evidence_id &&
+              ref.block_id === binding.block_id &&
+              ref.role === binding.role &&
+              ref.source_quote === normalizedEvidenceQuote(binding.source_quote),
+          );
+          if (!exact) {
+            reasons.push(
+              `observations[${index}].evidence_bindings[${evidenceIndex}]: exact evidence is not materialized on target ${observation.target_record_id}`,
+            );
+          } else {
+            const resolvedBlock = context.resolve_block(binding.source_id, binding.block_id);
+            if (resolvedBlock?.raw_text_sha256 && exact.text_sha256 !== resolvedBlock.raw_text_sha256) {
+              reasons.push(
+                `observations[${index}].evidence_bindings[${evidenceIndex}]: canonical evidence hash does not match the resolved source block`,
+              );
+            }
+          }
+        }
+      }
+    } else {
+      const derivedRecordId = isGlobalRecordKind(observation.observation_kind)
+        ? canonicalRecordIdForInput(identityInput)
+        : recordBaseIdForInput(identityInput);
+      if (observation.expected_record_id !== derivedRecordId) {
+        reasons.push(
+          `observations[${index}]: expected_record_id ${observation.expected_record_id} does not match deterministic id ${derivedRecordId}`,
+        );
+      }
+      if (context.stage === "pending" && existing) {
+        reasons.push(`observations[${index}]: expected record ${observation.expected_record_id} already exists`);
+      }
+      if (context.stage === "resuming" && existing && existing.record_kind !== observation.observation_kind) {
+        reasons.push(`observations[${index}]: resumable expected record ${observation.expected_record_id} has the wrong kind`);
+      }
+      if (context.stage === "applied" && (!existing || existing.record_kind !== observation.observation_kind)) {
+        reasons.push(`observations[${index}]: applied expected record ${observation.expected_record_id} is missing or has the wrong kind`);
+      }
     }
     for (const [evidenceIndex, binding] of observation.evidence_bindings.entries()) {
       reasons.push(...evidenceBindingReasons(binding, proposal, context, `observations[${index}].evidence_bindings[${evidenceIndex}]`));
@@ -873,16 +925,23 @@ export function operationalRecoveryProposalSubmissionInputs(
       evidence_refs: evidenceRefs(proposal.evidence_bindings),
     }];
   }
-  const observations: MtaSubmitObservationInput[] = proposal.observations.map((observation) => ({
-    source_id: proposal.source_id,
-    observation_kind: observation.observation_kind,
-    local_observation_id: observation.local_observation_id,
-    create_new: true,
-    label: observation.label,
-    ...(observation.raw_text ? { raw_text: observation.raw_text } : {}),
-    payload: structuredClone(observation.payload),
-    evidence_refs: evidenceRefs(observation.evidence_bindings),
-  }));
+  const observations: MtaSubmitObservationInput[] = proposal.observations.map((observation) => {
+    if (observation.target_record_id && !isGlobalRecordKind(observation.observation_kind)) {
+      throw new Error(
+        `Proposal ${proposal.proposal_id} observation ${observation.local_observation_id} cannot target a non-global ${observation.observation_kind} record`,
+      );
+    }
+    return {
+      source_id: proposal.source_id,
+      observation_kind: observation.observation_kind,
+      local_observation_id: observation.local_observation_id,
+      ...(observation.target_record_id ? { target_record_id: observation.target_record_id } : { create_new: true }),
+      label: observation.label,
+      ...(observation.raw_text ? { raw_text: observation.raw_text } : {}),
+      payload: structuredClone(observation.payload),
+      evidence_refs: evidenceRefs(observation.evidence_bindings),
+    };
+  });
   const relations: MtaSubmitObservationInput[] = proposal.relations.map((relation) => ({
     source_id: proposal.source_id,
     observation_kind: "relation",
