@@ -122,6 +122,8 @@ function parseCommand(argv: string[]): ParsedArgs {
     "quality-judge-calibration",
     "operational-coverage",
     "coverage-matrix",
+    "operational-recovery-proposals",
+    "operational-recovery-apply",
     "semantic-sweep",
     "fact-dedup",
     "replay-eval",

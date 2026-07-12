@@ -538,6 +538,31 @@ function assignRecordIds(entries: MtaSubmissionEntry[]) {
   return ids;
 }
 
+/**
+ * Return the exact identity-to-record-id assignment the materializer would use
+ * for a submission set. Recovery apply uses this before creating a journal so
+ * a new observation cannot silently take an existing base id or acquire an
+ * unreviewed collision suffix.
+ */
+export function materializedRecordIdAssignments(
+  entries: MtaSubmissionEntry[],
+  options: MaterializeEntryOptions = {},
+): Map<string, string> {
+  const accepted = materializableEntries(entries, options);
+  return recordIdAssignmentsForMaterializableEntries(accepted);
+}
+
+/** Test/support seam for callers that already hold materializable entries. */
+export function recordIdAssignmentsForMaterializableEntries(
+  entries: MtaSubmissionEntry[],
+): Map<string, string> {
+  const byToolArgs = new Map<string, MtaSubmissionEntry>();
+  for (const entry of entries) {
+    byToolArgs.set(stableHash(entry.tool_args as unknown as JsonObject), entry);
+  }
+  return assignRecordIds([...byToolArgs.values()]);
+}
+
 function displayName(entry: MtaSubmissionEntry) {
   const args = entry.tool_args;
   return args.label ?? args.raw_text ?? args.local_observation_id;

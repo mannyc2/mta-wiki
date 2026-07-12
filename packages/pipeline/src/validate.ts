@@ -25,6 +25,7 @@ import { relationEndpointShapeIssue } from "@mta-wiki/pipeline/records/relations
 import { evidenceId, readStagedSourceBlocks, sourceBlockById, sourceBlocksRelativePath } from "@mta-wiki/pipeline/sources/source-prep";
 import { validateSubmissionRetirementOverrides } from "@mta-wiki/pipeline/records/submission-overrides";
 import { validateSemanticCorrections } from "@mta-wiki/pipeline/records/semantic-corrections";
+import { validateOperationalRecoveryProposalTree } from "@mta-wiki/pipeline/records/operational-recovery-proposals";
 import type { MtaValidationIssue, MtaValidationReport } from "@mta-wiki/db/types";
 
 function walkMarkdown(dir: string): string[] {
@@ -571,6 +572,7 @@ export function validateRepo(options: { strictWriterCitations?: boolean | undefi
   issues.push(...validateIdentityOverrideArtifacts());
   issues.push(...validateSubmissionRetirementOverrides({ knownSubmissionIds: new Set(submissionIds) }));
   issues.push(...validateSemanticCorrections());
+  issues.push(...validateOperationalRecoveryProposalTree({ records }).issues);
 
   return {
     requiredPathCount,

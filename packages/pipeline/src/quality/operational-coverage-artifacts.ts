@@ -123,6 +123,11 @@ export type WriteOperationalCoverageArtifactsResult = {
   manifest: OperationalCoverageArtifactManifest;
 };
 
+export type LoadOperationalCoverageArtifactsResult = {
+  outputDir: string;
+  build: OperationalCoverageArtifactBuild;
+};
+
 function sha256(value: string): string {
   return createHash("sha256").update(value).digest("hex");
 }
@@ -525,9 +530,9 @@ export function buildOperationalCoverageArtifacts(
   return { ledger, matrix, manifest, contents };
 }
 
-export function writeOperationalCoverageArtifacts(
+export function loadOperationalCoverageArtifacts(
   options: WriteOperationalCoverageArtifactsOptions = {},
-): WriteOperationalCoverageArtifactsResult {
+): LoadOperationalCoverageArtifactsResult {
   const rootDir = options.rootDir ?? repoRoot;
   const routeAnchorRelativePath = options.routeAnchorPath ?? DEFAULT_OPERATIONAL_COVERAGE_ROUTE_ANCHORS;
   const routeAnchorPath = resolve(rootDir, routeAnchorRelativePath);
@@ -566,9 +571,22 @@ export function writeOperationalCoverageArtifacts(
     ...(options.studyWindow ? { studyWindow: options.studyWindow } : {}),
   });
 
-  mkdirSync(outputDir, { recursive: true });
-  for (const [name, content] of Object.entries(build.contents).sort(([left], [right]) => left.localeCompare(right))) {
-    writeFileSync(join(outputDir, name), content, "utf8");
+  return { outputDir, build };
+}
+
+export function writeOperationalCoverageArtifacts(
+  options: WriteOperationalCoverageArtifactsOptions = {},
+): WriteOperationalCoverageArtifactsResult {
+  const loaded = loadOperationalCoverageArtifacts(options);
+
+  mkdirSync(loaded.outputDir, { recursive: true });
+  for (const [name, content] of Object.entries(loaded.build.contents).sort(([left], [right]) => left.localeCompare(right))) {
+    writeFileSync(join(loaded.outputDir, name), content, "utf8");
   }
-  return { outputDir, ledger: build.ledger, matrix: build.matrix, manifest: build.manifest };
+  return {
+    outputDir: loaded.outputDir,
+    ledger: loaded.build.ledger,
+    matrix: loaded.build.matrix,
+    manifest: loaded.build.manifest,
+  };
 }

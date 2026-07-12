@@ -29,6 +29,19 @@ Receipts bind to the matrix's corpus fingerprint and replay from
 `data/operational-anchor-review/ledger-decisions/search-receipts/`; a missing, stale, incomplete,
 or match-bearing receipt fails closed.
 
+Missing records and relations are recovered only through the strict proposal tree at
+`data/operational-anchor-review/proposed/`. Relation proposals bind existing canonical endpoints
+and exact canonical evidence; observation bundles keep all new records and relations within one
+source and require shared block context for local observation links. Acceptance requires
+`accepted_by`, `accepted_at`, and a passed adversarial verifier. The force-gated apply command writes
+a new append-only journal whose every entry carries `recovery_provenance`, runs normal
+materialization, refreshes the operational matrix, verifies the resulting records and relations,
+and only then moves the unchanged proposal to `applied/`. A partial failure remains resumable and
+cannot silently duplicate a proposal or submission identity. Before journal creation, apply runs
+the materializer's record-id assignment across the complete unretired submission corpus and rejects
+any proposal that would shift an existing id or receive an undeclared collision suffix. Apply and
+repository validation share one exact proposal-derived validator for every persisted journal field.
+
 ### Release pointer semantics
 
 `data/exports/releases/LATEST` names the current public release. Creating a release snapshot does

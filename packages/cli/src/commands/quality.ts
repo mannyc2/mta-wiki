@@ -1,7 +1,9 @@
 import { relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { writeOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
-import { optionValue, type CommandHandler } from "./shared.js";
+import { applyOperationalRecoveryProposal } from "@mta-wiki/pipeline/records/operational-recovery-apply";
+import { validateOperationalRecoveryProposalTree } from "@mta-wiki/pipeline/records/operational-recovery-proposals";
+import { optionValue, requireSubject, type CommandHandler } from "./shared.js";
 
 const operationalCoverage: CommandHandler = () => {
   const start = optionValue(process.argv, "--start");
@@ -35,7 +37,40 @@ const operationalCoverage: CommandHandler = () => {
   );
 };
 
+const recoveryProposals: CommandHandler = () => {
+  const report = validateOperationalRecoveryProposalTree();
+  if (report.issues.length > 0) {
+    throw new Error(`Invalid operational recovery proposal tree: ${report.issues.map((issue) => issue.message).join("; ")}`);
+  }
+  const states = new Map<string, number>();
+  for (const artifact of report.proposals) {
+    const key = `${artifact.stage}/${artifact.proposal.review_state}`;
+    states.set(key, (states.get(key) ?? 0) + 1);
+  }
+  console.log(`Operational recovery proposals: ${report.proposals.length}`);
+  console.log(
+    [...states.entries()].sort(([left], [right]) => left.localeCompare(right)).map(([key, count]) => `${key}=${count}`).join(", ") ||
+      "Queue is empty.",
+  );
+};
+
+const recoveryApply: CommandHandler = (args) => {
+  const proposalId = requireSubject(args.command, args.subject, "proposal id");
+  const report = applyOperationalRecoveryProposal(proposalId, { force: args.force });
+  console.log(`Operational recovery proposal: ${report.proposal_id}`);
+  console.log(`Journal: ${report.journal_path} (${report.submission_count} submission(s))`);
+  console.log(
+    report.skipped_already_applied
+      ? "Already applied; journal content verified."
+      : report.dry_run
+        ? "Dry run only. Pass --force to write, materialize, verify, and move the proposal."
+        : `Applied and moved to ${report.applied_proposal_path}.`,
+  );
+};
+
 export const qualityCommands = {
   "operational-coverage": operationalCoverage,
   "coverage-matrix": operationalCoverage,
+  "operational-recovery-proposals": recoveryProposals,
+  "operational-recovery-apply": recoveryApply,
 } satisfies Record<string, CommandHandler>;

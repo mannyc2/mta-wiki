@@ -17,9 +17,16 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   date-precision, delivered-status, and timeline-subject dimensions. The strict sequential
   route-resolved treatment queue contains `15` rows. The matrix separately reports `4` reviewed
   occurrences, `3` eligible occurrences, and `6` eligible occurrence-route pairs.
+- Added the reviewed recovery queue for strict relation and observation-bundle proposals. Accepted
+  proposals require owner/delegate attribution plus a passed adversarial verifier; apply writes a
+  new append-only submission journal with proposal provenance, materializes through the normal
+  pipeline, refreshes coverage, verifies the result, and is resumable and idempotent across late
+  failures. Corpus-wide record-id assignment is checked before journal creation, and one exact
+  proposal-derived journal validator gates both retry/apply and repository validation. The
+  repository validator now gates the complete proposed/applied/rejected tree.
 - Active caveat: all `275` priority rows are still `unreviewed`. The ledger is the work denominator,
-  not a claim that those gaps are recoverable or absent; curation decisions, search receipts, and
-  proposal/apply tooling remain the next pass.
+  not a claim that those gaps are recoverable or absent; actual proposals, curation decisions, and
+  exhaustive search receipts remain the next pass.
 
 ## 2026-07-11
 
