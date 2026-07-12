@@ -9,20 +9,23 @@ source_id: "201110_qbb_summary_recommendations"
 source_ids:
   - "201110_qbb_approach_summary"
   - "201110_qbb_summary_recommendations"
+  - "mta_queens_bus_network_redesign_service_changes"
   - "rockaway_beach_blvd_jun2019"
 local_observation_id: "route_qm17_qbb_study"
 local_observation_ids:
   - "route_qm17_201110_qbb"
   - "route_qm17_qbb_study"
+  - "route_qm17_qbnr_2025"
   - "route_rockaway_beach_qm17"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T22:37:30.189Z"
+generated_at: "2026-07-12T22:39:53.000Z"
 raw_text: "Bus Stop: QM 15 QM 16 QM 17 QM 18 QM 21"
 submission_ids:
   - "sub_6920f9b309326584"
   - "sub_b88590811b58cc7e"
   - "sub_cf896bd45b030621"
+  - "sub_f5701f3fbb95afd3"
 payload:
   _merged_field_values:
     description:
@@ -40,7 +43,9 @@ payload:
     - "manhattan"
     - "queens"
   description: "Express bus service between Manhattan and Queens"
+  gtfs_route_id: "QM17"
   route_id: "QM17"
+  route_name: "QM17"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "express"
@@ -73,6 +78,16 @@ evidence_refs:
     source_path: "raw/sources/rockaway_beach_blvd_jun2019/blocks.jsonl"
     source_quote: "Q22, Q52 SBS, Q53 SBS, QM16, QM17"
     text_sha256: "sha256:21788a5bb648c805ee0633933cc87d38026b965fee2f84403874402e3505ece5"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0115"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0115"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "QM17"
+    text_sha256: "sha256:de0dbbf02a035c7c0b013f52538d2ac9a2c3e5bb5c5ffd7d0bda6944a4eb5a23"
     text_source: "raw_text"
 ---
 

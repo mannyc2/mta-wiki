@@ -13,6 +13,7 @@ source_ids:
   - "meeting_doc_121046"
   - "meeting_doc_160441"
   - "meeting_doc_98311"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q66_flushing"
 local_observation_ids:
   - "route_meeting_doc_113986_q66"
@@ -20,14 +21,16 @@ local_observation_ids:
   - "route_q66_flushing"
   - "route_q66_meeting_doc_121046"
   - "route_q66_oct2022"
+  - "route_q66_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T22:26:36.677Z"
+generated_at: "2026-07-12T22:39:53.000Z"
 raw_text: "Q66 bus shown in photo on Main Street"
 submission_ids:
   - "sub_7820760b12eba509"
   - "sub_96d796c1b4ec8c2e"
   - "sub_99581bac7dc4ee1b"
+  - "sub_a053107a6b3c19bb"
   - "sub_cd08aba2e28c737b"
   - "sub_f8c2522112fc2b3b"
 payload:
@@ -42,8 +45,10 @@ payload:
   borough: "Queens"
   borough_normalized: "queens"
   description: "Q66 bus route serving Main Street in Flushing"
+  gtfs_route_id: "Q66"
   operator: "MTA Bus Company"
   route_id: "Q66"
+  route_name: "Q66"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "local"
@@ -93,6 +98,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_98311/blocks.jsonl"
     source_quote: "New bus lanes along 21st Street in western Queens, running from Long Island City to Astoria, will serve the Q66, Q69 and Q100 routes"
     text_sha256: "sha256:36fed67d156804114d3fabfd87f0b0fa1664a580fa825093718d217cbf91b1b6"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0069"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0069"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q66"
+    text_sha256: "sha256:c450520d88492853d0ff54527bc7490b88518b40674bec976519ea12606cfa14"
     text_source: "raw_text"
 ---
 

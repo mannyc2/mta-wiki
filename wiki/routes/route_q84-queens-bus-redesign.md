@@ -8,20 +8,29 @@ display_name: "Q84"
 source_id: "meeting_doc_87961"
 source_ids:
   - "meeting_doc_87961"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q84_queens_bus_redesign"
 local_observation_ids:
+  - "route_q84_qbnr_2025"
   - "route_q84_queens_bus_redesign"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T21:10:10.065Z"
+generated_at: "2026-07-12T22:39:53.000Z"
 raw_text: "Case Study: Q84 - Creating a new \"Rush\" route to connect Cambria Heights and Downtown Jamaica"
 submission_ids:
+  - "sub_577a9fd9113355ce"
   - "sub_9140ef551623208a"
 payload:
+  _merged_field_values:
+    route_type_normalized:
+      - "rush"
+      - "bus"
   borough: "Queens"
   borough_normalized: "queens"
   description: "Creating a new Rush route to connect Cambria Heights and Downtown Jamaica. Stops closer together in residential Cambria Heights and farther apart near the Jamaica LIRR/Subway hub."
+  gtfs_route_id: "Q84"
   route_id: "Q84"
+  route_name: "Q84"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "Rush"
@@ -45,6 +54,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_87961/blocks.jsonl"
     source_quote: "• Creating a new \"Rush\" route to connect Cambria Heights and Downtown Jamaica"
     text_sha256: "sha256:e5dcef420a476c98b3a7c4cecd0f433ba0a986343be6380aa847607abb2f2e4a"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0081"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0081"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q84"
+    text_sha256: "sha256:93dc684ef747ae65d1baced8e3cc484f4b0a38fb718d6f8b8c530e021527d600"
     text_source: "raw_text"
 ---
 

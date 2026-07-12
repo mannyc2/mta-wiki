@@ -6,13 +6,17 @@ display_name: "QM7"
 source_id: "meeting_doc_131641"
 source_ids:
   - "meeting_doc_131641"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_qm7"
 local_observation_ids:
   - "route_qm7"
+  - "route_qm7_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-20T14:43:04.820Z"
+generated_at: "2026-07-12T22:39:53.000Z"
+raw_text: "QM7"
 submission_ids:
+  - "sub_8be2aef1c81dabea"
   - "sub_f2b8b35e760b8cbe"
 payload:
   boroughs:
@@ -22,7 +26,9 @@ payload:
     - "queens"
     - "manhattan"
   description: "travels from Fresh Meadows to Wall Street"
+  gtfs_route_id: "QM7"
   route_id: "QM7"
+  route_name: "QM7"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "express bus"
@@ -36,6 +42,16 @@ evidence_refs:
     source_id: "meeting_doc_131641"
     source_path: "raw/sources/meeting_doc_131641/blocks.jsonl"
     text_sha256: "sha256:294e630aec7c90137d69fe8126c19d2869b2452873f746d63273d8494f6253b2"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0108"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0108"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "QM7"
+    text_sha256: "sha256:4eb61ab4479760b8acbda86b91acd69d2434d500810f81fac0d2792f7bb25be0"
     text_source: "raw_text"
 ---
 

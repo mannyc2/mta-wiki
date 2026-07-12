@@ -9,15 +9,18 @@ source_id: "201110_qbb_summary_recommendations"
 source_ids:
   - "201110_qbb_approach_summary"
   - "201110_qbb_summary_recommendations"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_qm18_qbb_study"
 local_observation_ids:
   - "route_qm18_201110_qbb"
   - "route_qm18_qbb_study"
+  - "route_qm18_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-10T23:03:22.328Z"
+generated_at: "2026-07-12T22:39:53.000Z"
 raw_text: "Bus Stop: QM 15 QM 16 QM 17 QM 18 QM 21"
 submission_ids:
+  - "sub_79e43db06266155c"
   - "sub_cbdb55ffa8e4999d"
   - "sub_f389af30e780009d"
 payload:
@@ -30,7 +33,9 @@ payload:
     - "manhattan"
     - "queens"
   description: "Express bus service between Manhattan and Queens"
+  gtfs_route_id: "QM18"
   route_id: "QM18"
+  route_name: "QM18"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "express"
@@ -54,6 +59,16 @@ evidence_refs:
     source_path: "raw/sources/201110_qbb_approach_summary/blocks.jsonl"
     source_quote: "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
     text_sha256: "sha256:7a60487563c9efadc67277fe6f070f4c89fe6d1c5777a420f3f71180c11580af"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0116"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0116"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "QM18"
+    text_sha256: "sha256:f9a2c974c3c4b49822a01cc11780d4a45ee50135df3f372f65384979aa545dae"
     text_source: "raw_text"
 ---
 
