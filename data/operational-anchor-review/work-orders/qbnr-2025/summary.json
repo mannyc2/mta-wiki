@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source_id": "mta_queens_bus_network_redesign_service_changes",
+  "source_row_count": 133,
+  "deduplicated_unit_count": 130,
+  "actionable_change_unit_count": 127,
+  "explicit_no_change_unit_count": 3,
+  "completed_occurrence_unit_count": 4,
+  "remaining_change_unit_count": 123,
+  "projectable_pending_unit_count": 117,
+  "canonical_then_terminal_pending_unit_count": 6,
+  "counts_by_status": {
+    "completed_occurrence": 4,
+    "partial_occurrence_needs_enrichment": 1,
+    "pending_canonical_then_terminal": 6,
+    "pending_create_route": 51,
+    "pending_existing_anchor": 64,
+    "pending_identity_exception": 1,
+    "terminal_no_change": 3
+  },
+  "ledger_sha256": "6021daff2c609d76eeb0914db3c3541d1d47915112ef2bd5a5bbae9234559208"
+}

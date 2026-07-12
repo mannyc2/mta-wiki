@@ -37,6 +37,7 @@
     "materialize": "bun packages/cli/src/cli.ts materialize",
     "rebuild-db": "bun packages/cli/src/cli.ts rebuild-db-from-canonical",
     "rebuild-evidence-index": "bun packages/cli/src/cli.ts rebuild-evidence-index",
+    "qbnr-work-ledger": "bun scripts/generate-qbnr-work-ledger.ts",
     "export:release": "bun packages/cli/src/cli.ts export-release",
     "export:site": "bun packages/cli/src/cli.ts export-site",
     "audit": "bun packages/cli/src/cli.ts audit",
