@@ -10,11 +10,19 @@
     "operational-coverage:a9b2bf1ff109628219637775"
   ],
   "source_id": "mta_queens_bus_network_redesign_service_changes",
-  "review_state": "proposed",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-12T21:09:20.000Z",
   "provenance": {
     "drafted_by": "codex-corpus-completion-2026-07-12",
     "drafted_at": "2026-07-12T21:01:16.000Z",
-    "method": "manual_row_scoped_curation"
+    "method": "manual_row_scoped_curation",
+    "verifier": {
+      "reviewed_by": "codex-independent-source-review",
+      "reviewed_at": "2026-07-12T21:09:19.000Z",
+      "verdict": "passed",
+      "rationale": "Every observation and relation was checked against the resolved official source blocks and current canonical identities. Q1 is one three-member treatment bundle, Q3 and Q8 are atomic stop-removal changes, and Q36 is never modeled as an occurrence route. All 22 generated journal entries preview as accepted."
+    }
   },
   "rationale": "Three exact official MTA route rows establish source-local route identity, realized effective dates, and bounded treatment scope for Q1, Q3, and Q8. Q1 is preserved as one occurrence-sized three-member bundle; Q3 and Q8 each contain only an atomic stop-removal intervention. Q36 is retained only inside the Q1 replacement-treatment description and is never projected as a Q1 occurrence route.",
   "observations": [
