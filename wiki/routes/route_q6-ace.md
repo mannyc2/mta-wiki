@@ -7,14 +7,18 @@ record_kind: "route"
 display_name: "Q6"
 source_id: "mta_automated_camera_enforcement"
 source_ids:
+  - "meeting_doc_186616"
   - "mta_automated_camera_enforcement"
 local_observation_id: "route_q6_ace"
 local_observation_ids:
+  - "route_meeting_doc_186616_q6_ace"
   - "route_q6_ace"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-08T20:20:21.944Z"
+generated_at: "2026-07-12T13:58:31.117Z"
+raw_text: "Q6"
 submission_ids:
+  - "sub_14c7922d4c77272f"
   - "sub_a4951871be46b549"
 payload:
   borough: "Queens"
@@ -23,6 +27,7 @@ payload:
   route_label: "Q6"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
+  route_type: "bus"
   route_type_normalized: "bus"
   streets: "Sutphin Blvd / Rockaway Blvd"
 evidence_refs:
@@ -35,6 +40,16 @@ evidence_refs:
     source_path: "raw/sources/mta_automated_camera_enforcement/blocks.jsonl"
     source_quote: "Q6, Sutphin Blvd / Rockaway Blvd"
     text_sha256: "sha256:5e3cad5451631ea70cff8966419e8249eb64b6a82474a14420dc5bc670d53d68"
+    text_source: "raw_text"
+  -
+    block_id: "p011_c0010"
+    evidence_id: "meeting_doc_186616#p011_c0010"
+    page_number: 11
+    role: "route_identity"
+    source_id: "meeting_doc_186616"
+    source_path: "raw/sources/meeting_doc_186616/blocks.jsonl"
+    source_quote: "Q6"
+    text_sha256: "sha256:94f2bd4451ebb0cab2547064ae8c8f887aa47d99c673cd60f8aca040dbd13e54"
     text_source: "raw_text"
 ---
 

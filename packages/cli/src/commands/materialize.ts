@@ -242,10 +242,15 @@ export const materializeCommands = {
 
   "export-release": (args) => {
     const releaseId = optionValue(process.argv, "--id") ?? new Date().toISOString().slice(0, 10);
-    const result = exportRelease(releaseId, { force: args.force, qualityReport: optionValue(process.argv, "--quality-report") });
+    const setLatest = process.argv.includes("--set-latest");
+    const result = exportRelease(releaseId, {
+      force: args.force,
+      setLatest,
+      qualityReport: optionValue(process.argv, "--quality-report"),
+    });
     console.log(
       `Exported release ${result.releaseId}: ${result.recordCount} records across ${result.files} file(s) to ${relative(repoRoot, result.dir)} ` +
-        `(manifest ${result.manifestSha256.slice(0, 12)})`,
+        `(manifest ${result.manifestSha256.slice(0, 12)}; ${setLatest ? "promoted to LATEST" : "LATEST unchanged"})`,
     );
   },
 

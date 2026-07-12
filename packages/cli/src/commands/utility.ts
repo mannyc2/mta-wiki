@@ -23,7 +23,7 @@ Usage:
   bun run harness seed-pilot
   bun run harness materialize
   bun run harness export-jsonl [--verify]   On-demand JSONL dump of the live DB; --verify asserts DB == shadow JSONL
-  bun run harness export-release [--id <release-id>] [--force] [--quality-report <path>]   Versioned release snapshot under data/exports/releases/
+  bun run harness export-release [--id <release-id>] [--force] [--set-latest] [--quality-report <path>]   Versioned release snapshot; --set-latest explicitly promotes it
   bun run harness export-site                                      Build static HTML under dist/site and run Pagefind
   bun run harness quality-report [release-id]                    Write deterministic release quality checks under data/quality/
   bun run harness quality-seeded-defects --seed semqa-v1          Write deterministic seeded-defect fixtures

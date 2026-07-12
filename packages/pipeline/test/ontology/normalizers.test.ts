@@ -10960,6 +10960,12 @@ describe("treatment bus stop and boarding family", () => {
     expect(treatment({ treatment_kind: "bus equipment" }).treatment_family).toBe("vehicle_or_fleet");
     expect(treatment({ treatment_kind: "route_reroute" }).treatment_family).toBe("service_pattern");
     expect(treatment({ treatment_kind: "Route re-alignment" }).treatment_family).toBe("service_pattern");
+    expect(treatment({ treatment_kind: "route rerouting" }).treatment_family).toBe("service_pattern");
+    expect(treatment({ treatment_kind: "route segment discontinuation and replacement" }).treatment_family).toBe(
+      "service_pattern",
+    );
+    expect(treatment({ treatment_kind: "route shortening" }).treatment_family).toBe("service_pattern");
+    expect(treatment({ treatment_kind: "route truncation" }).treatment_family).toBe("service_pattern");
     expect(treatment({ treatment_kind: "bus priority lane" }).treatment_family).toBe("bus_lane");
     expect(treatment({ treatment_kind: "bus tunnel" }).treatment_family).toBe("traffic_restriction");
     expect(treatment({ treatment_kind: "daylighting" }).treatment_family).toBe("pedestrian_or_accessibility");

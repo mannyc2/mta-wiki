@@ -19,6 +19,7 @@ source_ids:
   - "meeting_doc_167241"
   - "meeting_doc_170921"
   - "meeting_doc_179606"
+  - "meeting_doc_186616"
   - "meeting_doc_186836"
   - "meeting_doc_187096"
   - "meeting_doc_201621"
@@ -39,10 +40,11 @@ local_observation_ids:
   - "project_meeting_doc_143306_ace"
   - "project_meeting_doc_170921_ace"
   - "project_meeting_doc_179606_ace"
+  - "project_meeting_doc_186616_ace_sep15_activation"
   - "project_meeting_doc_186836_ace_update"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T19:17:58.641Z"
+generated_at: "2026-07-12T13:58:30.582Z"
 raw_text: "Since its launch in June 2024, the program has extended across all five boroughs, equipping more than 1,400 buses and covering 560 miles of service, benefitting over 915,000 daily customers."
 submission_ids:
   - "sub_1aa5f02e3b9a9520"
@@ -52,6 +54,7 @@ submission_ids:
   - "sub_6c006ba59473cf4f"
   - "sub_7460bca3aac21b45"
   - "sub_8813e8a987fa4cfb"
+  - "sub_8c51d78baa322ad6"
   - "sub_95567bf0fb0c8c95"
   - "sub_9c0faa6c0e8c5594"
   - "sub_a92cecc5802e68ee"
@@ -80,6 +83,7 @@ payload:
       - "Modification 2 to Hayden for bus stop and double-parked vehicle enforcement and up to 1,000 additional ACE systems; Modification 1 to Seon for bus stop, double-parked, bike lane, and paratransit stop enforcement on up to 1,000 ACE systems"
       - "Started as Automated Bus Lane Enforcement (ABLE) in 2019, evolved into ACE. Uses cameras on buses to enforce bus lanes, bus stops, and double-parking rules. Active on 58 routes, covering about 560 miles of streets across all five boroughs."
       - "Automated Camera Enforcement system for bus lanes, bus stops, double-parked vehicles, bike lanes, and paratransit stops"
+      - "Four additional ACE routes—Q6, Bx20, Bx3, and Bx7—were activated on September 15, 2025 under a 60-day warning period."
     document_time_status:
       - "active"
       - "planned"
@@ -387,6 +391,25 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_187096/blocks.jsonl"
     source_quote: "Improving the enforcement of traffic restrictions is a critical element to ensuring the success of MTA's strategic goal of providing twenty-first century bus service"
     text_sha256: "sha256:935baef8b8f9a84ad57323c5413d6a60e9e085e1b53cec33ae8e8917aa0c7752"
+    text_source: "raw_text"
+  -
+    block_id: "p011_c0010"
+    evidence_id: "meeting_doc_186616#p011_c0010"
+    page_number: 11
+    role: "event_and_scope"
+    source_id: "meeting_doc_186616"
+    source_path: "raw/sources/meeting_doc_186616/blocks.jsonl"
+    text_sha256: "sha256:94f2bd4451ebb0cab2547064ae8c8f887aa47d99c673cd60f8aca040dbd13e54"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_186616#p001_c0002"
+    page_number: 1
+    role: "publication_date_context"
+    source_id: "meeting_doc_186616"
+    source_path: "raw/sources/meeting_doc_186616/blocks.jsonl"
+    source_quote: "September 2025"
+    text_sha256: "sha256:0be8e91e2d5af1b13feeab5c041f02ed79d57a4997656e8b51e5f144f7b7a7b0"
     text_source: "raw_text"
 ---
 

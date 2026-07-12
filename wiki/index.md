@@ -7294,6 +7294,7 @@
 - [[wiki/sources/meeting_doc_98651|Improving Bicycle, Pedestrian & Micromobility Access to MTA Facilities]] (source)
 - [[wiki/sources/meeting_doc_98656|Third Track Board Presentation]] (source)
 - [[wiki/sources/meeting_doc_98661|Faster, Cleaner, Safer: Strategic Action Plan]] (source)
+- [[wiki/sources/mta_queens_bus_network_redesign_service_changes|MTA Queens Bus Network Redesign service changes]] (source)
 - [[wiki/sources/nostrandave_map|Nostrand Avenue SBS Map]] (source)
 - [[wiki/sources/nyct_itsp_solicitation_notice_2026|NYCT ITSP Solicitation Notice]] (source)
 - [[wiki/sources/nyct_key_performance_metrics_doc194001|NYCT Key Performance Metrics - December 2025]] (source)
@@ -7341,8 +7342,8 @@
 ## Data-Only Records
 
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
-- event: 7945 canonical records in `data/canonical/events.jsonl`
+- event: 7948 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 20637 canonical records in `data/canonical/relations.jsonl`
+- relation: 20652 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
-- treatment_component: 2648 canonical records in `data/canonical/treatment_components.jsonl`
+- treatment_component: 2654 canonical records in `data/canonical/treatment_components.jsonl`

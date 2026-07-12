@@ -11,6 +11,25 @@ The v1 public data release is `v1-rc5`.
 
 The release manifest records per-kind counts, hashes, and pointers to companion release artifacts.
 
+### Release pointer semantics
+
+`data/exports/releases/LATEST` names the current public release. Creating a release snapshot does
+not change that pointer by default. Promotion is a separate, explicit action:
+
+```bash
+bun packages/cli/src/cli.ts export-release --id <release-id> --set-latest
+```
+
+Omit `--set-latest` for draft, test, and internal canary cuts. The exporter updates the pointer only
+after the complete release and manifest have been written successfully.
+
+### Internal releases and canaries
+
+Internal releases such as temporal canaries may remain untracked and can be removed after their
+release id, generator commit, and manifest SHA-256 have been recorded for reproducibility. Removing
+release artifacts or promoting a canary is an owner action; neither happens as a side effect of an
+ordinary release export.
+
 ## License
 
 Code is licensed under the MIT License.

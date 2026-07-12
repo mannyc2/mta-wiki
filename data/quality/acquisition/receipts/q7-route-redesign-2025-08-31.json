@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "receipt_id": "q7-route-redesign-2025-08-31",
+  "status": "candidate_ready_pending_release_cut",
+  "operator": "codex-core-coverage-2026-07-12",
+  "searched_at": "2026-07-12T13:30:00.000Z",
+  "acquisition_method": "recovered_existing_official_capture",
+  "search": {
+    "target_family": "route_redesign",
+    "route_or_area": "Q7 / Queens Bus Network Redesign Phase 2",
+    "date_window": "2025-08",
+    "exact_queries": [
+      "local artifact inventory: Queens Bus Network Redesign service changes",
+      "embedded MTA Drupal data table: Q7 effective date routing changes"
+    ],
+    "domains": [
+      "mta.info"
+    ],
+    "urls_inspected": [
+      "https://www.mta.info/project/queens-bus-network-redesign/service-changes"
+    ],
+    "disposition": "candidate_found",
+    "rationale": "The captured official MTA route-by-route page contains one Q7 row that binds the exact effective date, route identity, and three source-stated routing components. The HTML had already been captured in the adjacent artifact store but its client-rendered table had not been exposed to mta-wiki text/block intake."
+  },
+  "source": {
+    "source_id": "mta_queens_bus_network_redesign_service_changes",
+    "publisher": "MTA",
+    "source_url": "https://www.mta.info/project/queens-bus-network-redesign/service-changes",
+    "final_url": "https://www.mta.info/project/queens-bus-network-redesign/service-changes",
+    "retrieved_at": "2026-06-07T01:03:14.507Z",
+    "publication_date": null,
+    "publication_date_reason": "The page exposes no datePublished/dateModified metadata; staged documentDate 2025-06-29 was a Phase 1 effective date and is not publication evidence.",
+    "content_type": "text/html; charset=UTF-8",
+    "artifact_bytes": 317531,
+    "artifact_sha256": "4b5dc9ca398980a3803e076378acefd7ac3ec04343e0ac32db95a17c1d51226d",
+    "artifact_store_key": "sha256/4b/4b5dc9ca398980a3803e076378acefd7ac3ec04343e0ac32db95a17c1d51226d/source.html"
+  },
+  "intake": {
+    "command": "bun packages/cli/src/cli.ts prepare-source <captured-source-dir>",
+    "staged_source_id": "mta_queens_bus_network_redesign_service_changes",
+    "block_count": 135,
+    "extracted_table_row_count": 133,
+    "primary_evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0009",
+    "primary_evidence_sha256": "2034193e6dcbff745b93bfa0c0863408f3adeb3d1c1a58fe756fd065011ddda5",
+    "published_evidence_surface": "wiki/sources/mta_queens_bus_network_redesign_service_changes.md",
+    "published_evidence_surface_sha256": "e7f75e375d984d6f06c4147d072392ad8d8a02012d5d03147d3cee2ee220e418"
+  },
+  "curation": {
+    "journals": [
+      "data/submissions/2026-07-12_codex_q110-redesign-2025-curation.jsonl",
+      "data/submissions/2026-07-12_codex_q7-redesign-2025-curation.jsonl",
+      "data/submissions/2026-07-12_codex_q7-redesign-bundle-members-2025-curation.jsonl"
+    ],
+    "event_record_id": "event_q7-route-redesign-effective-2025-08-31",
+    "timeline_relation_record_id": "relation_qbnr-has-q7-2025-effective-event",
+    "route_record_id": "route_q7-queens",
+    "route_scope_relation_record_id": "relation_qbnr-2025-affects-q7",
+    "bundle_container_record_id": "treatment_q7-route-redesign-2025",
+    "bundle_member_record_ids": [
+      "treatment_q7-jfk-shortening-2025",
+      "treatment_q7-sutter-pitkin-discontinuation-2025",
+      "treatment_q7-western-reroute-2025"
+    ],
+    "bundle_member_scope_relation_ids": [
+      "relation_qbnr-2025-has-q7-jfk-shortening",
+      "relation_qbnr-2025-has-q7-sutter-pitkin-discontinuation",
+      "relation_qbnr-2025-has-q7-western-reroute"
+    ],
+    "canonical_member_family": "service_pattern",
+    "reviewed_bundle_analysis_family": "route_redesign",
+    "semantic_correction_ids": [
+      "core-coverage-q7-package-family-20260712",
+      "core-coverage-qbnr-page-date-20260712"
+    ]
+  },
+  "occurrence": {
+    "occurrence_id": "occurrence:c5e9aba290ca2be1be6fb38e",
+    "founding_key": "event:event_q7-route-redesign-effective-2025-08-31",
+    "review_decision_id": "q7-route-redesign-2025-08-31",
+    "resolved_onset": "2025-08-31",
+    "date_precision": "day",
+    "gtfs_route_id": "Q07",
+    "consumer_analysis_route_id": "Q7",
+    "treatment_scope_kind": "bundle",
+    "blocking_exclusions": []
+  },
+  "outcome_coverage": {
+    "dataset_start": "2023-04",
+    "dataset_end": "2026-03",
+    "analysis_route_id": "Q7",
+    "speed_row_count": 54178,
+    "gtfs_route_id_speed_row_count": 0,
+    "required_consumer_crosswalk": "Q07 -> Q7"
+  }
+}

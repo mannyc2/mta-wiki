@@ -7,21 +7,26 @@ record_kind: "route"
 display_name: "Q7 bus route"
 source_id: "queens_addendum_equity_evaluation_appendix_d"
 source_ids:
+  - "mta_queens_bus_network_redesign_service_changes"
   - "queens_addendum_equity_evaluation_appendix_d"
 local_observation_id: "route_q7_queens"
 local_observation_ids:
+  - "route_q7_qbnr_effective_2025"
   - "route_q7_queens"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-08T20:29:14.557Z"
+generated_at: "2026-07-12T14:16:11.459Z"
+raw_text: "Q7"
 submission_ids:
   - "sub_186aa5fb398014fd"
+  - "sub_d7290222fb99e8b4"
 payload:
   route_id: "Q7"
   route_label: "Q7"
   route_name: "Q7"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
+  route_type: "bus"
   route_type_normalized: "bus"
   routes:
     - "Q7"
@@ -52,6 +57,16 @@ evidence_refs:
     source_id: "queens_addendum_equity_evaluation_appendix_d"
     source_path: "raw/sources/queens_addendum_equity_evaluation_appendix_d/blocks.jsonl"
     text_sha256: "sha256:b22373ff6fa32b756ba004d6601827a285470f55c20a460ace991e5d9af67d35"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0009"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0009"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q7"
+    text_sha256: "sha256:2034193e6dcbff745b93bfa0c0863408f3adeb3d1c1a58fe756fd065011ddda5"
     text_source: "raw_text"
 ---
 

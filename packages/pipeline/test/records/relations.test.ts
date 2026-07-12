@@ -521,6 +521,15 @@ describe("relation helpers", () => {
     });
     expect(
       normalizeRelationPayload({
+        relation_kind: "has_treatment",
+        relation_family: "treatment_scope",
+      }),
+    ).toEqual({
+      relation_kind: "has_treatment",
+      relation_family: "treatment_context",
+    });
+    expect(
+      normalizeRelationPayload({
         relation_kind: "parent_subsidiary",
         relation_family: "other",
       }),

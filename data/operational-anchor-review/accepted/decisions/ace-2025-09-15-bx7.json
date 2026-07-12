@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "decision_id": "ace-2025-09-15-bx7",
+  "review_state": "accepted",
+  "accepted_at": "2026-07-12T00:00:00.000Z",
+  "reviewer": "codex-core-coverage-2026-07-12",
+  "rationale": "The official September 2025 MTA performance report states that four additional ACE routes—including Bx7—were activated on September 15 under a 60-day warning period. The document date supplies the 2025 year, and the same source-backed project, delivered timeline relation, named route, automated-camera-enforcement treatment, and delivered scope relations bind this atomic Bx7 activation without inferring scope from another route.",
+  "source_id": "meeting_doc_186616",
+  "event_record_id": "event_meeting-doc-186616-ace-routes-activated-sep15-2025",
+  "timeline_relation_record_id": "relation_meeting-doc-186616-ace-has-sep15-activation",
+  "route_record_id": "route_bx7-ace",
+  "route_scope_relation_record_id": "relation_meeting-doc-186616-ace-affects-bx7",
+  "treatment_record_id": "treatment_meeting-doc-186616-ace-route-activation",
+  "treatment_scope_relation_record_id": "relation_meeting-doc-186616-ace-has-route-activation-treatment",
+  "treatment_family": "automated_bus_lane_enforcement",
+  "expected_operational_date": "2025-09-15",
+  "expected_date_precision": "day",
+  "evidence_bindings": [
+    {
+      "role": "event_date",
+      "record_id": "event_meeting-doc-186616-ace-routes-activated-sep15-2025",
+      "source_id": "meeting_doc_186616",
+      "evidence_id": "meeting_doc_186616#p011_c0010"
+    },
+    {
+      "role": "event_date",
+      "record_id": "event_meeting-doc-186616-ace-routes-activated-sep15-2025",
+      "source_id": "meeting_doc_186616",
+      "evidence_id": "meeting_doc_186616#p001_c0002"
+    },
+    {
+      "role": "timeline_relation",
+      "record_id": "relation_meeting-doc-186616-ace-has-sep15-activation",
+      "source_id": "meeting_doc_186616",
+      "evidence_id": "meeting_doc_186616#p011_c0010"
+    },
+    {
+      "role": "route_identity",
+      "record_id": "route_bx7-ace",
+      "source_id": "meeting_doc_186616",
+      "evidence_id": "meeting_doc_186616#p011_c0010"
+    },
+    {
+      "role": "route_scope",
+      "record_id": "relation_meeting-doc-186616-ace-affects-bx7",
+      "source_id": "meeting_doc_186616",
+      "evidence_id": "meeting_doc_186616#p011_c0010"
+    },
+    {
+      "role": "treatment_definition",
+      "record_id": "treatment_meeting-doc-186616-ace-route-activation",
+      "source_id": "meeting_doc_186616",
+      "evidence_id": "meeting_doc_186616#p011_c0010"
+    },
+    {
+      "role": "treatment_scope",
+      "record_id": "relation_meeting-doc-186616-ace-has-route-activation-treatment",
+      "source_id": "meeting_doc_186616",
+      "evidence_id": "meeting_doc_186616#p011_c0010"
+    },
+    {
+      "role": "route_treatment_event_bridge",
+      "record_id": "event_meeting-doc-186616-ace-routes-activated-sep15-2025",
+      "source_id": "meeting_doc_186616",
+      "evidence_id": "meeting_doc_186616#p011_c0010"
+    }
+  ]
+}

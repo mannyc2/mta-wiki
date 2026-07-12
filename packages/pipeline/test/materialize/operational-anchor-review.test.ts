@@ -40,6 +40,10 @@ describe("accepted operational-anchor review corpus", () => {
 
     expect(validation.quarantined).toEqual([]);
     expect(validation.accepted.map((decision) => decision.decision_id)).toEqual([
+      "ace-2025-09-15-bx20",
+      "ace-2025-09-15-bx3",
+      "ace-2025-09-15-bx7",
+      "ace-2025-09-15-q6",
       "m15-2010-10-10-off-board-fare",
       "m86-2015-07-13-off-board-fare",
       "m86-2015-07-13-real-time-information",
@@ -49,6 +53,10 @@ describe("accepted operational-anchor review corpus", () => {
     expect(reviewedRows.every((row) => row.source_authority === "official_public_agency")).toBe(true);
     expect(reviewedRows.every((row) => Object.values(row.evidence_coverage).every(Boolean))).toBe(true);
     expect(reviewedRows.map((row) => [row.gtfs_route_ids, row.treatment_families, row.candidate_operational_date_normalized])).toEqual([
+      [["BX20"], ["automated_bus_lane_enforcement"], "2025-09-15"],
+      [["BX3"], ["automated_bus_lane_enforcement"], "2025-09-15"],
+      [["BX7"], ["automated_bus_lane_enforcement"], "2025-09-15"],
+      [["Q06"], ["automated_bus_lane_enforcement"], "2025-09-15"],
       [["M15+"], ["fare_collection"], "2010-10-10"],
       [["M86+"], ["fare_collection"], "2015-07-13"],
       [["M86+"], ["signage_and_markings"], "2015-07-13"],
@@ -69,5 +77,26 @@ describe("accepted operational-anchor review corpus", () => {
       validation.accepted.map((decision) => decision.decision_id),
     );
     expect(snapshot.decisions.every((decision) => decision.artifact_path === undefined)).toBe(true);
+  });
+
+  it("rejects a bundle container from the atomic review path", () => {
+    const records = readCanonicalRecordsFromJsonl();
+    const decision = loadOperationalAnchorReviewDecisions()[0]!;
+    const patchedRecords = records.map((record) =>
+      record.record_id === decision.treatment_record_id
+        ? {
+            ...record,
+            payload: { ...record.payload, treatment_scope_kind: "bundle_container" },
+          }
+        : record,
+    );
+
+    const validation = validateOperationalAnchorReviewDecisions([decision], patchedRecords);
+
+    expect(validation.accepted).toEqual([]);
+    expect(validation.quarantined).toHaveLength(1);
+    expect(validation.quarantined[0]?.reasons).toContain(
+      `treatment ${decision.treatment_record_id} is a bundle container and cannot be accepted as an atomic anchor`,
+    );
   });
 });

@@ -392,6 +392,9 @@ function validateDecision(decision: OperationalAnchorReviewDecision, recordsById
   if (canonicalFamily !== decision.treatment_family) {
     reasons.push(`treatment family ${canonicalFamily ?? "missing"} does not match reviewed family ${decision.treatment_family}`);
   }
+  if (text(treatment.payload.treatment_scope_kind) === "bundle_container") {
+    reasons.push(`treatment ${treatment.record_id} is a bundle container and cannot be accepted as an atomic anchor`);
+  }
 
   const boundRecords = [event, timeline, route, routeScope, treatment, treatmentScope, ...(subject ? [subject] : [])];
   for (const record of boundRecords) {
