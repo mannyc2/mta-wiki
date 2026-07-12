@@ -7,11 +7,19 @@
     "operational-coverage:d9967b59043b66904e64a4cf"
   ],
   "source_id": "mta_queens_bus_network_redesign_service_changes",
-  "review_state": "proposed",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-12T21:45:41.000Z",
   "provenance": {
     "drafted_by": "codex-corpus-completion-2026-07-12",
     "drafted_at": "2026-07-12T21:40:00.000Z",
-    "method": "strict_all_source_cells_remediation"
+    "method": "strict_all_source_cells_remediation",
+    "verifier": {
+      "reviewed_by": "codex-independent-source-review",
+      "reviewed_at": "2026-07-12T21:45:40.000Z",
+      "verdict": "passed",
+      "rationale": "All substantive Q110 cells were checked against p001_b0094 and current canonical records. The existing reroute/extension plus the proposed Hempstead/Q82 replacement and stop-removal treatments exhaust the row. Q36 and Q82 remain treatment context only, and all four generated journal entries preview as accepted."
+    }
   },
   "rationale": "The official Q110 row separately states that Hempstead Avenue service was discontinued and replaced by Q82, then renders stop removal in another substantive cell. The existing Q110 treatment covers only reroute and extension, so the stable occurrence needs two additional literal treatments and project-to-treatment scope relations; its founding event, Q110 route, and occurrence identity remain unchanged. Q82 remains replacement context and is never an occurrence route.",
   "observations": [
