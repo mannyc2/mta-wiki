@@ -245,8 +245,8 @@ describe("operational occurrences v1", () => {
         member_treatment_families: string[];
       }>;
     };
-    expect(rows).toHaveLength(8);
-    expect(summary.candidate_projection_count).toBe(10);
+    expect(rows).toHaveLength(14);
+    expect(summary.candidate_projection_count).toBe(16);
     expect(review.decision_count).toBe(rows.length);
     expect(expectedCandidates.candidate_count).toBe(expectedCandidates.candidates.length);
     expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === "Q110")).toEqual([
@@ -285,6 +285,24 @@ describe("operational occurrences v1", () => {
         member_treatment_families: ["bus_stop_or_boarding"],
       },
     ]);
+    for (const [routeId, occurrenceId] of [
+      ["Q19", "occurrence:efd16a2af21563a6b38bebb2"],
+      ["Q29", "occurrence:b5911e36c6aa226658a53bb3"],
+      ["Q50", "occurrence:771f5f9c06cb706d0a867ecc"],
+      ["Q54", "occurrence:6b643d9b210e25c1c39ca6d3"],
+      ["Q59", "occurrence:654f57cceeb6697c2220a4be"],
+      ["Q72", "occurrence:adf7db270c885b91a00425fb"],
+    ] as const) {
+      expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === routeId)).toEqual([
+        {
+          occurrence_id: occurrenceId,
+          route_id: routeId,
+          treatment_kind: "atomic",
+          analysis_family: "bus_stop_or_boarding",
+          member_treatment_families: ["bus_stop_or_boarding"],
+        },
+      ]);
+    }
     expect(expectedCandidates.candidates.some((candidate) => candidate.route_id === "Q36")).toBe(false);
   });
 

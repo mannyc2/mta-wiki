@@ -38,8 +38,11 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   occurrences, `10` eligible occurrence-route pairs, `268` open priority rows, and `13` terminal rows.
   The official table contains `127` de-duplicated actionable change units. A strict all-cell audit found
   and repaired omitted Hempstead/Q82 replacement and stop-removal treatments on Q110 while preserving its
-  stable occurrence identity. Q1/Q3/Q7/Q8/Q110 are now clause-complete, leaving `122` change units; three
-  explicit no-change rows are tracked separately.
+  stable occurrence identity. A second reviewed recovery promoted literal stop-removal changes on
+  Q19/Q29/Q50/Q54/Q59/Q72 as six independent, one-route atomic occurrences with no cross-products.
+  Coverage now reports `14` occurrences, `13` eligible occurrences, `16` eligible occurrence-route pairs,
+  `268` open priority rows, and `25` terminal rows. Eleven QBNR change units are clause-complete, leaving
+  `116`; three explicit no-change rows are tracked separately.
 
 ## 2026-07-11
 
