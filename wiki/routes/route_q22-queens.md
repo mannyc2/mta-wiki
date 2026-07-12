@@ -7,23 +7,27 @@ record_kind: "route"
 display_name: "Q22 bus route"
 source_id: "queens_addendum_equity_evaluation_appendix_d"
 source_ids:
+  - "mta_queens_bus_network_redesign_service_changes"
   - "queens_addendum_equity_evaluation_appendix_d"
   - "rockaway_beach_blvd_jun2019"
 local_observation_id: "route_q22_queens"
 local_observation_ids:
+  - "route_q22_qbnr_2025"
   - "route_q22_queens"
   - "route_rockaway_beach_q22"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T22:36:24.088Z"
+generated_at: "2026-07-12T23:31:06.000Z"
 raw_text: "Q22"
 submission_ids:
   - "sub_36f3dafc09cbac72"
   - "sub_6371f63ef50a14a7"
+  - "sub_9f9343de1fa560f9"
 payload:
   borough: "Queens"
   borough_normalized: "queens"
   description: "Local bus route operating on Rockaway Beach Boulevard in the Rockaways"
+  gtfs_route_id: "Q22"
   route_id: "Q22"
   route_label: "Q22"
   route_name: "Q22"
@@ -59,6 +63,16 @@ evidence_refs:
     source_path: "raw/sources/rockaway_beach_blvd_jun2019/blocks.jsonl"
     source_quote: "Q22, Q52 SBS, Q53 SBS, QM16, QM17"
     text_sha256: "sha256:21788a5bb648c805ee0633933cc87d38026b965fee2f84403874402e3505ece5"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0027"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0027"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q22"
+    text_sha256: "sha256:fe24a585e772f657f3dc844f9b3a5ed7ea0848dadbf4257de786ae76ef7128c0"
     text_source: "raw_text"
 ---
 

@@ -8,18 +8,28 @@ display_name: "Q13 (NYCT)"
 source_id: "meeting_doc_160441"
 source_ids:
   - "meeting_doc_160441"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_meeting_doc_160441_q13"
 local_observation_ids:
   - "route_meeting_doc_160441_q13"
+  - "route_q13_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-20T22:12:22.971Z"
+generated_at: "2026-07-12T23:31:06.000Z"
+raw_text: "Q13"
 submission_ids:
+  - "sub_48e17f2458b92e0d"
   - "sub_a460d973910c61ee"
 payload:
+  _merged_field_values:
+    route_type_normalized:
+      - "local"
+      - "bus"
   description: "Flushing-Ft. Totten • Running time adjustments"
+  gtfs_route_id: "Q13"
   operator: "NYCT"
   route_id: "Q13"
+  route_name: "Q13"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "local"
@@ -33,6 +43,16 @@ evidence_refs:
     source_id: "meeting_doc_160441"
     source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
     text_sha256: "sha256:385178108f7be74ba367420569e47119d97e73e0fdd68dc1ff9610a748e6587a"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0015"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0015"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q13"
+    text_sha256: "sha256:9090df9ac3c8cc40d02ef84881621a6d1e4499b8276cc5d28393cc3754c09126"
     text_source: "raw_text"
 ---
 

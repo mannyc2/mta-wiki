@@ -7,24 +7,33 @@ record_kind: "route"
 display_name: "Q111 Rush Route"
 source_id: "queens_proposed_final_plan_addendum_2024"
 source_ids:
+  - "mta_queens_bus_network_redesign_service_changes"
   - "queens_proposed_final_plan_addendum_2024"
 local_observation_id: "route_q111_rush"
 local_observation_ids:
+  - "route_q111_qbnr_2025"
   - "route_q111_rush"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-08T20:31:12.461Z"
+generated_at: "2026-07-12T23:31:06.000Z"
 raw_text: "Q111 Rush Route: Service from Rosedale to Jamaica. Serves Guy R Brewer Blvd corridor. Rush segment on Guy R Brewer Blvd. Underlying local service provided by the Q115."
 submission_ids:
+  - "sub_5fe03292bd2705e1"
   - "sub_796acec31eb77ef0"
 payload:
+  _merged_field_values:
+    route_type_normalized:
+      - "rush"
+      - "bus"
   corridors:
     - "Guy R Brewer Blvd"
   description: "Service from Rosedale to Jamaica, serves Guy R Brewer Blvd corridor, rush segment on Guy R Brewer Blvd"
+  gtfs_route_id: "Q111"
   limits: "Rosedale to Jamaica"
   route: "Q111"
   route_id: "Q111"
   route_label: "Q111 Rush Route"
+  route_name: "Q111"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "Rush"
@@ -59,6 +68,16 @@ evidence_refs:
     source_path: "raw/sources/queens_proposed_final_plan_addendum_2024/blocks.jsonl"
     source_quote: "• Serves Guy R Brewer Blvd corridor • Local stop spacing on 147th Avenue • Rush segment on Guy R Brewer Blvd • Serves key destinations along Guy R Brewer Blvd • Provides faster service to key transfer points in Jamaica • Underlying local service provided by the Q115"
     text_sha256: "sha256:fe17c79126cb522d76cc1b9b043806d67c73cb27537abb1e054a312445943576"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0095"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0095"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q111"
+    text_sha256: "sha256:a5b521e5d4b85cd275d96f5dabed59ecf0c265e36111af0fe15175232920fd62"
     text_source: "raw_text"
 ---
 

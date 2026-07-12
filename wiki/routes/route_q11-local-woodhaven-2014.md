@@ -18,6 +18,7 @@ source_ids:
   - "2015_04_29_brt_woodhaven_dw3_presentation"
   - "2015_04_30_brt_woodhaven_dw4_discussionmaterials"
   - "2015_06_09_brt_woodhaven_cb9"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q11_local_woodhaven_2014"
 local_observation_ids:
   - "route_q11_2015_dw1"
@@ -29,10 +30,11 @@ local_observation_ids:
   - "route_q11_local_woodhaven_dw2"
   - "route_q11_local_woodhaven_dw2_2015"
   - "route_q11_local_woodhaven_dw3"
+  - "route_q11_qbnr_2025"
   - "route_q11_woodhaven_workshop1"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T17:57:07.667Z"
+generated_at: "2026-07-12T23:31:06.000Z"
 raw_text: "Q11 Route"
 submission_ids:
   - "sub_2c4d1f59f0ecf32d"
@@ -40,6 +42,7 @@ submission_ids:
   - "sub_353cd9634a180d0a"
   - "sub_435216c537967b2b"
   - "sub_4a538f4e3aab5aa1"
+  - "sub_5246c98c12a53ad5"
   - "sub_8022f7d552a58ea5"
   - "sub_9d61513ebf48845d"
   - "sub_df2f660163dfce1e"
@@ -62,12 +65,19 @@ payload:
     route_label:
       - "Q11"
       - "Q11 Local"
+    route_name:
+      - "Q11 Local"
+      - "Q11"
     route_type:
       - "Local"
       - "local"
+    route_type_normalized:
+      - "local"
+      - "bus"
   borough: "Queens"
   borough_normalized: "queens"
   description: "Q11 Local bus route along Woodhaven/Cross Bay Boulevards corridor"
+  gtfs_route_id: "Q11"
   note: "Local bus service mentioned in community feedback as important to maintain"
   route_id: "Q11"
   route_label: "Q11"
@@ -174,6 +184,16 @@ evidence_refs:
     source_path: "raw/sources/2015_04_16_brt_woodhaven_dw1_discussionmaterials/blocks.jsonl"
     source_quote: "Q11 Route"
     text_sha256: "sha256:0cdf0f17b2f6eb2723f84e4d5d3ba615d5dc0ab361662eb917f97752d1508c48"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0013"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0013"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q11"
+    text_sha256: "sha256:af279e0fca357849a63b43f4dde3180eac4ea5ef8de5f5391a0fd9378b66df09"
     text_source: "raw_text"
 ---
 

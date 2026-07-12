@@ -14,6 +14,7 @@ source_ids:
   - "flatbush_ave_cb14_jan2023"
   - "flatbush_ave_cb9_sept2022"
   - "meeting_doc_160441"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q35_flatbush_ave_kickoff"
 local_observation_ids:
   - "route_meeting_doc_160441_q35"
@@ -21,15 +22,17 @@ local_observation_ids:
   - "route_q35_flatbush_ave"
   - "route_q35_flatbush_ave_kickoff"
   - "route_q35_flatbush_cab1"
+  - "route_q35_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-20T22:12:29.072Z"
+generated_at: "2026-07-12T23:31:06.000Z"
 raw_text: "Secondary routes include Q35"
 submission_ids:
   - "sub_3bc5343dff8e2469"
   - "sub_896d170d6d478b23"
   - "sub_dbb0f31ab0740907"
   - "sub_e1f1ee54f0ee947e"
+  - "sub_ec885907f4db3456"
   - "sub_f523b0b75990b2c4"
 payload:
   _merged_field_values:
@@ -49,9 +52,11 @@ payload:
     - "brooklyn"
     - "queens"
   description: "Secondary route that operates on Flatbush Ave, providing connections to the Rockaways."
+  gtfs_route_id: "Q35"
   operator: "MTA Bus Company"
   route_id: "Q35"
   route_label: "Q35"
+  route_name: "Q35"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "local"
@@ -102,6 +107,16 @@ evidence_refs:
     source_id: "meeting_doc_160441"
     source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
     text_sha256: "sha256:385178108f7be74ba367420569e47119d97e73e0fdd68dc1ff9610a748e6587a"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0040"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0040"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q35"
+    text_sha256: "sha256:b455ac7047dc84e94de7e132d7d62711aa6fbb09d09d29bdc46cea0c5280bb3c"
     text_source: "raw_text"
 ---
 

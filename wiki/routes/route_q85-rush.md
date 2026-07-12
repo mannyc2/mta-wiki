@@ -7,24 +7,33 @@ record_kind: "route"
 display_name: "Q85 Rush Route"
 source_id: "queens_proposed_final_plan_addendum_2024"
 source_ids:
+  - "mta_queens_bus_network_redesign_service_changes"
   - "queens_proposed_final_plan_addendum_2024"
 local_observation_id: "route_q85_rush"
 local_observation_ids:
+  - "route_q85_qbnr_2025"
   - "route_q85_rush"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-08T20:31:12.403Z"
+generated_at: "2026-07-12T23:31:06.000Z"
 raw_text: "Q85 Rush Route: Service from Rosedale to Jamaica. Serves Merrick Blvd corridor. Rush segment on Merrick Blvd. Underlying local service provided by the Q5."
 submission_ids:
+  - "sub_c9ef5f36190b3d50"
   - "sub_ff0c4c5078d693f7"
 payload:
+  _merged_field_values:
+    route_type_normalized:
+      - "rush"
+      - "bus"
   corridors:
     - "Merrick Blvd"
   description: "Service from Rosedale to Jamaica, serves Merrick Blvd corridor, rush segment on Merrick Blvd"
+  gtfs_route_id: "Q85"
   limits: "Rosedale to Jamaica"
   route: "Q85"
   route_id: "Q85"
   route_label: "Q85 Rush Route"
+  route_name: "Q85"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "Rush"
@@ -59,6 +68,16 @@ evidence_refs:
     source_path: "raw/sources/queens_proposed_final_plan_addendum_2024/blocks.jsonl"
     source_quote: "• Serves Merrick Blvd corridor • Local stop spacing between Rosedale and Merrick Blvd corridor • Rush segment on Merrick Blvd • Serves key destinations along Merrick Blvd • Provides faster service to key transfer points in Jamaica • Underlying local service provided by the Q5"
     text_sha256: "sha256:3adfb8c167dc119681f7d255518ee72024582a4c2a92a73c0861111cf5b3ef7e"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0082"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0082"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q85"
+    text_sha256: "sha256:945e8b3b78916568dca093f1474805f5242c567b4864023ff2ec7d1be4c4dde6"
     text_source: "raw_text"
 ---
 

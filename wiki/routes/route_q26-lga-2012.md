@@ -8,19 +8,25 @@ display_name: "Q26"
 source_id: "2012_04_20_brt_lga_workshop_summary"
 source_ids:
   - "2012_04_20_brt_lga_workshop_summary"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q26_lga_2012"
 local_observation_ids:
   - "route_q26_lga_2012"
+  - "route_q26_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-10T23:05:20.245Z"
+generated_at: "2026-07-12T23:31:06.000Z"
+raw_text: "Q26"
 submission_ids:
+  - "sub_2e7ddf86ed2965a6"
   - "sub_ce4b2da29461da87"
 payload:
   borough: "Queens"
   borough_normalized: "queens"
   description: "Participant-identified route from North Shore Towers to LGA (mentioned alongside Q48)"
+  gtfs_route_id: "Q26"
   route_id: "Q26"
+  route_name: "Q26"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type_normalized: "bus"
@@ -33,6 +39,16 @@ evidence_refs:
     source_id: "2012_04_20_brt_lga_workshop_summary"
     source_path: "raw/sources/2012_04_20_brt_lga_workshop_summary/blocks.jsonl"
     text_sha256: "sha256:39c30e9f1dbf4e9c601d14d9722be8470c825251338c762017df86d16e7a91df"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0031"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0031"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q26"
+    text_sha256: "sha256:6f3868194efaddd77ddc3fd08dd569e358303eb8d8eb7347c4faacefec9845bc"
     text_source: "raw_text"
 ---
 

@@ -9,17 +9,20 @@ source_id: "meeting_doc_187251"
 source_ids:
   - "meeting_doc_187251"
   - "meeting_doc_85816"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q102_mention"
 local_observation_ids:
   - "route_q102_meeting_doc_85816"
   - "route_q102_mention"
+  - "route_q102_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T21:10:21.618Z"
+generated_at: "2026-07-12T23:31:06.000Z"
 raw_text: "QUEENS Q102 B62 Starting August 21 The B62 will be extended along 21 St to the Astoria Houses and will serve this stop."
 submission_ids:
   - "sub_7d4af47cdc8b2092"
   - "sub_c5dff63e3205354c"
+  - "sub_d395506799f4d9e1"
 payload:
   _merged_field_values:
     route_type_normalized:
@@ -34,8 +37,10 @@ payload:
     - "queens"
     - "manhattan"
   description: "Local bus service between Astoria, Queens and Roosevelt Island, Manhattan, via Long Island City. Operates weekdays, Saturdays, and Sundays 5am to 1am. One-way distance of approximately 6 miles."
+  gtfs_route_id: "Q102"
   route_id: "Q102"
   route_label: "Q102"
+  route_name: "Q102"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "local"
@@ -67,6 +72,16 @@ evidence_refs:
     source_id: "meeting_doc_85816"
     source_path: "raw/sources/meeting_doc_85816/blocks.jsonl"
     text_sha256: "sha256:5100b8296ccd55c874796dcb4c2d171cb79ff50d01d178516fa7c2ddbedfb3fc"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0091"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0091"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q102"
+    text_sha256: "sha256:53c84073d405f501dc6091479ad20fd937ceb8d8e472a923b3f1b563221a483b"
     text_source: "raw_text"
 ---
 

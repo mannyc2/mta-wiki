@@ -9,23 +9,32 @@ source_id: "2014_06_11_brt_flushingjamaica_cac1_presentation"
 source_ids:
   - "2014_06_11_brt_flushingjamaica_cac1_presentation"
   - "brt_flushing_jamaica_oct2016"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q65_flushing_jamaica_cac1"
 local_observation_ids:
   - "route_brt_flushing_jamaica_oct2016_q65"
   - "route_q65_flushing_jamaica_cac1"
+  - "route_q65_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T18:13:41.067Z"
+generated_at: "2026-07-12T23:31:06.000Z"
+raw_text: "Q65"
 submission_ids:
+  - "sub_03b91779c0c3c81e"
   - "sub_265d269740173120"
   - "sub_a0ef9228378de90b"
 payload:
+  _merged_field_values:
+    route_type_normalized:
+      - "local"
+      - "bus"
   borough: "Queens"
   borough_normalized: "queens"
   boroughs:
     - "Queens"
   boroughs_normalized:
     - "queens"
+  gtfs_route_id: "Q65"
   route_id: "Q65"
   route_label: "Q65"
   route_name: "Q65"
@@ -51,6 +60,16 @@ evidence_refs:
     source_id: "brt_flushing_jamaica_oct2016"
     source_path: "raw/sources/brt_flushing_jamaica_oct2016/blocks.jsonl"
     text_sha256: "sha256:ea1332aea10e1286011c4d43da00fa3ba071dce31c6034e8939470f4ddfc8ae5"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0068"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0068"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q65"
+    text_sha256: "sha256:3ce2f1d179ec9f4ac05dd09f5ee082cbf277b926a614eaace02a66f46d7bbfc0"
     text_source: "raw_text"
 ---
 

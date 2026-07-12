@@ -8,20 +8,23 @@ display_name: "Q5 on Merrick Boulevard, Queens (TSP in development)"
 source_id: "mta_automated_camera_enforcement"
 source_ids:
   - "mta_automated_camera_enforcement"
+  - "mta_queens_bus_network_redesign_service_changes"
   - "queens_proposed_final_plan_addendum_2024"
   - "tsp_status_2017"
 local_observation_id: "route_q5_ace"
 local_observation_ids:
   - "route_q5_ace"
   - "route_q5_addendum_2024"
+  - "route_q5_qbnr_2025"
   - "route_q5_tsp_2017"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-09T01:57:41.305Z"
+generated_at: "2026-07-12T23:31:06.000Z"
 raw_text: "Underlying local service provided by the Q5"
 submission_ids:
   - "sub_000d39f5358c56d3"
   - "sub_1d00bd5dcb8a4c19"
+  - "sub_8214fa7bb9e5a598"
   - "sub_cebb904fd691268b"
 payload:
   _merged_field_values:
@@ -34,6 +37,7 @@ payload:
   borough: "Queens"
   borough_normalized: "queens"
   description: "Underlying local service for Q85 Rush Route"
+  gtfs_route_id: "Q5"
   note: "Hook Creek Blvd / Sunrise Highway on weekends only"
   route: "Q5"
   route_id: "Q5"
@@ -75,6 +79,16 @@ evidence_refs:
     source_path: "raw/sources/tsp_status_2017/blocks.jsonl"
     source_quote: "Q5 on Merrick Boulevard"
     text_sha256: "sha256:7b2bb88cd8d09fce574b6d49d2311ecfe755511bbc75b79fd88672093ff65ab7"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0007"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0007"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q5"
+    text_sha256: "sha256:bf51221459d93e025891c973270c93426abff77a044a9d9de64966120113ebdd"
     text_source: "raw_text"
 ---
 
