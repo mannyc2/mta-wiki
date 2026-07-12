@@ -14,6 +14,7 @@ source_ids:
   - "grand_ave_metropolitan_ave_queens_blvd_nov2024"
   - "meeting_doc_127471"
   - "mta_automated_camera_enforcement"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q54"
 local_observation_ids:
   - "route_able_q54"
@@ -24,9 +25,10 @@ local_observation_ids:
   - "route_q54_grand_ave_nov2024"
   - "route_q54_marcy_ave_2025"
   - "route_q54_marcy_cb1_jun2025"
+  - "route_q54_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-20T15:17:52.932Z"
+generated_at: "2026-07-12T22:16:08.000Z"
 raw_text: "Q54 ABLE camera route through 2023"
 submission_ids:
   - "sub_24c7c0efb268d7d5"
@@ -37,6 +39,7 @@ submission_ids:
   - "sub_7fd664973dd65ac8"
   - "sub_ac79764bba50e5df"
   - "sub_b457ecb6e53bcaf5"
+  - "sub_b68018e2fcebcfd6"
   - "sub_d5886c3784865b2d"
 payload:
   _merged_field_values:
@@ -63,6 +66,7 @@ payload:
     - "brooklyn"
     - "queens"
   description: "Williamsburg Bridge Plaza-bound bus route with Avg. Daily Ridership of 13,411 (2024). Uses Marcy Av corridor between Borinquen Pl and Broadway. Experiencing consistently slower speeds between 52nd St and 54th St (westbound)."
+  gtfs_route_id: "Q54"
   note: "ABLE cameras operated on this route through 2023"
   program: "ABLE"
   route: "Q54"
@@ -174,6 +178,16 @@ evidence_refs:
     source_id: "meeting_doc_127471"
     source_path: "raw/sources/meeting_doc_127471/blocks.jsonl"
     text_sha256: "sha256:f110a524011af2ef7ba2bce44f8564c8092e491a22382cc03925bd38ceab98f7"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0059"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0059"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q54"
+    text_sha256: "sha256:8316796c321ba0116f8f31f333b111e594b0fbe9bb2fdb8cee524e2b34d04e40"
     text_source: "raw_text"
 ---
 

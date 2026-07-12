@@ -10,17 +10,20 @@ source_ids:
   - "2014_brt_flushingjamaica_workshopsummary"
   - "meeting_doc_129371"
   - "meeting_doc_98651"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q50_2014_brt_flushingjamaica_ws"
 local_observation_ids:
   - "route_meeting_doc_129371_q50"
   - "route_meeting_doc_98651_q50"
   - "route_q50_2014_brt_flushingjamaica_ws"
+  - "route_q50_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T22:16:35.960Z"
+generated_at: "2026-07-12T22:16:08.000Z"
 raw_text: "Q50 connects Queens and the Bronx"
 submission_ids:
   - "sub_515b5612e0a34cec"
+  - "sub_5b5e14e5677c6081"
   - "sub_7327854b90780cf7"
   - "sub_c9ffb6ba59c36335"
 payload:
@@ -41,7 +44,9 @@ payload:
     - "queens"
     - "bronx"
   description: "Inter-borough bus connecting Queens and the Bronx"
+  gtfs_route_id: "Q50"
   route_id: "Q50"
+  route_name: "Q50"
   route_record_scope: "true_route"
   route_record_scope_reason: "local_limited_bus_classifier_artifact"
   route_type: "local"
@@ -75,6 +80,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_98651/blocks.jsonl"
     source_quote: "Installed permanent bike racks on four bus routes crossing bridges: the S53, S93, Q50, and Bx23"
     text_sha256: "sha256:3d221c046db5314170a82c9dc1ba8025412a134e86663fff29733cfb754b04a9"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0055"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0055"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q50"
+    text_sha256: "sha256:5f5f88efce3ea07c9469709136b34f548251fdd269f62309332b317b07567128"
     text_source: "raw_text"
 ---
 
