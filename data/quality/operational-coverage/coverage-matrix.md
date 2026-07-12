@@ -1,7 +1,7 @@
 # Operational coverage matrix
 
-Input fingerprint: `c45fed4d9fc7fe1151a1059845d6460618b8a612d049d0fa11dd3953642e705d`
-Corpus fingerprint: `61d0d185db11d3cdd6bdb63a654827f328fe0c57703676ae71b5a1a7d47da888`
+Input fingerprint: `3103bf1a9a22faf96972b795e605a9385756ffac14b6a103bd763878b2072a0b`
+Corpus fingerprint: `6463341038f84a1cec87ffda83861a7f43cce49f256a47c43308b1ad03138af2`
 Study window: 2023-04-01 through 2026-12-31
 
 ## Canonical event population
@@ -21,19 +21,19 @@ Study window: 2023-04-01 through 2026-12-31
 
 ## Resolved occurrences and downstream projection
 
-- Distinct occurrences: 24
-- Eligible occurrences: 23
-- Bundle occurrences: 4
-- Eligible occurrence-route pairs: 26
-- Unique eligible GTFS routes: 26
+- Distinct occurrences: 41
+- Eligible occurrences: 40
+- Bundle occurrences: 21
+- Eligible occurrence-route pairs: 43
+- Unique eligible GTFS routes: 42
 
 ## Completion ledger
 
 - Gap rows: 2807
 - Priority gap denominator: 347
-- Priority open: 302
+- Priority open: 268
 - Priority adjudicated/recoverable: 0
-- Priority terminal: 45
+- Priority terminal: 79
 - Sequential route-resolved treatment gaps: 15
 
 ## Downstream-served layer

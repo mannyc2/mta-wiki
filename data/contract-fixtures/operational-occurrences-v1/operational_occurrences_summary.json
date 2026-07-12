@@ -1,1 +1,1 @@
-{"atomic_count":20,"bundle_count":4,"candidate_projection_count":26,"counts_by_exclusion_reason":{"unsupported_bundle_analysis_family":1},"multi_route_count":1,"occurrence_count":24,"schema_version":1,"study_projection_eligible_count":23}
+{"atomic_count":20,"bundle_count":21,"candidate_projection_count":43,"counts_by_exclusion_reason":{"unsupported_bundle_analysis_family":1},"multi_route_count":1,"occurrence_count":41,"schema_version":1,"study_projection_eligible_count":40}

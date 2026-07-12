@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "q17-treatment-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:b3607598a73d02576721d997",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-12",
+  "decided_at": "2026-07-12T23:12:00.000Z",
+  "rationale": "The broad inherited Queens redesign graph contains treatment candidates from several routes and is not a safe treatment-level study projection. Approved occurrence occurrence:86a96bd18ca50921cbfb07bf binds this event only to the reviewed two-member Q17 bundle using official same-block evidence, so further recovery of the broad diagnostic treatment gap is not applicable.",
+  "proposal_ids": [
+    "orp_qbnr_17_two_member_bundles_2025"
+  ],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

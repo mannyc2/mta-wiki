@@ -5,17 +5,17 @@
   "deduplicated_unit_count": 130,
   "actionable_change_unit_count": 127,
   "explicit_no_change_unit_count": 3,
-  "completed_occurrence_unit_count": 21,
-  "remaining_change_unit_count": 106,
-  "projectable_pending_unit_count": 100,
+  "completed_occurrence_unit_count": 38,
+  "remaining_change_unit_count": 89,
+  "projectable_pending_unit_count": 83,
   "canonical_then_terminal_pending_unit_count": 6,
   "counts_by_status": {
-    "completed_occurrence": 21,
+    "completed_occurrence": 38,
     "pending_canonical_then_terminal": 6,
     "pending_create_route": 51,
-    "pending_existing_anchor": 48,
+    "pending_existing_anchor": 31,
     "pending_identity_exception": 1,
     "terminal_no_change": 3
   },
-  "ledger_sha256": "6c8a5b8359d64b56e76fd6484f793b8f9cda43bdaa72032bbffa8bfd497bfccb"
+  "ledger_sha256": "f5b1b0b12281ca7161f2db6d0d29b987f0b494983bb357be97810fe15cbc8791"
 }
