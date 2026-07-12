@@ -10,11 +10,19 @@
     "operational-coverage:a9b2bf1ff109628219637775"
   ],
   "source_id": "mta_queens_bus_network_redesign_service_changes",
-  "review_state": "proposed",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-12T22:39:53.000Z",
   "provenance": {
     "drafted_by": "codex-corpus-completion-2026-07-12",
     "drafted_at": "2026-07-12T22:33:50.000Z",
-    "method": "qbnr_batch_spec_expansion"
+    "method": "qbnr_batch_spec_expansion",
+    "verifier": {
+      "reviewed_by": "codex-independent-qbnr-spec-review",
+      "reviewed_at": "2026-07-12T22:39:53.000Z",
+      "verdict": "passed",
+      "rationale": "All ten official source rows, hashes, dates, and ordered cell partitions were checked against current staged evidence. Every target is the unique pinned true-route GTFS anchor; the pure expansion exactly matches this artifact; treatment families normalize as eight bus_stop_or_boarding and two service_pattern members; and Q12, Q63, and Q5 remain context only with no generated route or treatment edge."
+    }
   },
   "rationale": "Ten exact official MTA route rows establish source-local route identity, realized effective dates, and one unambiguous atomic treatment apiece. Current-routing language constrains treatment scope and does not create a routing treatment. Q12, Q63, and Q5 references are explicitly partitioned as rider or separate-route context and do not create route edges. Every navigation and timetable cell is explicitly accounted for as non-treatment context.",
   "observations": [
