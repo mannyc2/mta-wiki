@@ -20,6 +20,8 @@ export type Command =
   | "quality-report"
   | "quality-seeded-defects"
   | "quality-judge-calibration"
+  | "operational-coverage"
+  | "coverage-matrix"
   | "semantic-sweep"
   | "fact-dedup"
   | "replay-eval"

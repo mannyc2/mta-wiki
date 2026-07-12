@@ -127,13 +127,22 @@ export type OperationalAnchorRow = {
 export type OperationalAnchorSummary = {
   schema_version: typeof OPERATIONAL_ANCHOR_SCHEMA_VERSION;
   row_count: number;
+  broad_row_count: number;
+  reviewed_row_count: number;
+  distinct_operational_event_count: number;
   study_eligible_count: number;
+  study_eligible_reviewed_count: number;
   counts_by_temporal_role: Record<string, number>;
   counts_by_scope_resolution: Record<string, number>;
   counts_by_exclusion_reason: Record<string, number>;
+  entry_gate: OperationalAnchorEntryGate;
+  broad_funnel: OperationalAnchorBroadFunnel;
   funnel: {
     canonical_events: number;
+    operational_family_events_total: number;
     timeline_linked_operational_events: number;
+    timeline_linked_distinct_events: number;
+    unlinked_operational_events: number;
     candidate_operational_date_present: number;
     realized_operational: number;
     realized_day_or_month: number;
@@ -143,6 +152,31 @@ export type OperationalAnchorSummary = {
     conflict_free: number;
     study_eligible: number;
   };
+};
+
+export type OperationalAnchorBroadFunnel = {
+  operational_family_events_total: number;
+  timeline_linked_distinct_events: number;
+  unlinked_operational_events: number;
+  candidate_operational_date_present: number;
+  realized_operational: number;
+  realized_day_or_month: number;
+  resolved_route_scope: number;
+  resolved_treatment_scope: number;
+  evidence_complete: number;
+  conflict_free: number;
+  study_eligible: number;
+};
+
+export type OperationalAnchorEntryGate = {
+  relations_examined: number;
+  non_event_timeline_objects: number;
+  non_operational_event_objects: number;
+};
+
+export type OperationalAnchorProjection = {
+  rows: OperationalAnchorRow[];
+  entry_gate: OperationalAnchorEntryGate;
 };
 
 export type ComputeOperationalAnchorsOptions = {
@@ -190,6 +224,12 @@ const realizedLifecyclePhases = new Set([
 const plannedStatuses = new Set(["planned", "proposed"]);
 const routeScopeKinds = new Set(["affects_route", "serves_route"]);
 const eventRouteScopeKinds = new Set(["affects_route"]);
+
+export function countOperationalFamilyEvents(records: readonly MtaCanonicalRecord[]): number {
+  return records.filter(
+    (record) => record.record_kind === "event" && operationalEventFamilies.has(text(record.payload.event_family) ?? ""),
+  ).length;
+}
 
 function text(value: JsonValue | undefined): string | null {
   if (typeof value === "string" && value.trim()) return value.trim();
@@ -762,8 +802,8 @@ function exclusions(input: {
   if (input.scopeResolution === "unreviewed_inherited" && !input.inheritedScopeConfirmed) reasons.add("unconfirmed_inherited_scope");
   if (!input.evidenceCoverage.event) reasons.add("missing_event_evidence");
   if (!input.evidenceCoverage.timeline) reasons.add("missing_timeline_evidence");
-  if (!input.evidenceCoverage.route_scope) reasons.add("missing_route_scope_evidence");
-  if (!input.evidenceCoverage.treatment_scope) reasons.add("missing_treatment_scope_evidence");
+  if (input.routeRecordCount > 0 && !input.evidenceCoverage.route_scope) reasons.add("missing_route_scope_evidence");
+  if (input.treatmentRecordCount > 0 && !input.evidenceCoverage.treatment_scope) reasons.add("missing_treatment_scope_evidence");
   if (input.reviewStates.includes("quarantined")) reasons.add("quarantined_record");
   if (input.conflictStates.includes("date_conflict")) reasons.add("conflicting_date_evidence");
   if (input.conflictStates.includes("route_identity_conflict")) reasons.add("conflicting_route_identity");
@@ -976,11 +1016,11 @@ function reviewedOperationalAnchorRows(input: {
   });
 }
 
-export function computeOperationalAnchors(
+export function computeOperationalAnchorProjection(
   records: readonly MtaCanonicalRecord[],
   routeAnchors: readonly RouteAnchorRow[],
   options: ComputeOperationalAnchorsOptions = {},
-): OperationalAnchorRow[] {
+): OperationalAnchorProjection {
   const recordsById = new Map(records.map((record) => [record.record_id, record]));
   const sourcesByKey = sourceRecordIndex(records);
   const relations = records.flatMap((record) => {
@@ -992,11 +1032,24 @@ export function computeOperationalAnchors(
     options.reviewDecisions ?? [],
     records,
   );
+  const entryGate: OperationalAnchorEntryGate = {
+    relations_examined: 0,
+    non_event_timeline_objects: 0,
+    non_operational_event_objects: 0,
+  };
   const timelinesByEvent = new Map<string, Relation[]>();
   for (const relation of relations) {
     if (relation.kind !== "has_timeline_event") continue;
+    entryGate.relations_examined += 1;
     const event = recordsById.get(relation.objectId);
-    if (!event || event.record_kind !== "event" || !operationalEventFamilies.has(text(event.payload.event_family) ?? "")) continue;
+    if (!event || event.record_kind !== "event") {
+      entryGate.non_event_timeline_objects += 1;
+      continue;
+    }
+    if (!operationalEventFamilies.has(text(event.payload.event_family) ?? "")) {
+      entryGate.non_operational_event_objects += 1;
+      continue;
+    }
     const timelines = timelinesByEvent.get(event.record_id) ?? [];
     timelines.push(relation);
     timelinesByEvent.set(event.record_id, timelines);
@@ -1129,7 +1182,18 @@ export function computeOperationalAnchors(
     }),
   );
 
-  return rows.sort((a, b) => a.anchor_id.localeCompare(b.anchor_id));
+  return {
+    rows: rows.sort((a, b) => a.anchor_id.localeCompare(b.anchor_id)),
+    entry_gate: entryGate,
+  };
+}
+
+export function computeOperationalAnchors(
+  records: readonly MtaCanonicalRecord[],
+  routeAnchors: readonly RouteAnchorRow[],
+  options: ComputeOperationalAnchorsOptions = {},
+): OperationalAnchorRow[] {
+  return computeOperationalAnchorProjection(records, routeAnchors, options).rows;
 }
 
 function countBy(values: Iterable<string>): Record<string, number> {
@@ -1140,41 +1204,76 @@ function countBy(values: Iterable<string>): Record<string, number> {
 
 export function summarizeOperationalAnchors(
   rows: readonly OperationalAnchorRow[],
-  input: { canonicalEventCount?: number | undefined } = {},
+  input: {
+    canonicalEventCount: number;
+    operationalFamilyEventCount: number;
+    entryGate: OperationalAnchorEntryGate;
+  },
 ): OperationalAnchorSummary {
-  const dated = rows.filter((row) => row.candidate_operational_date_normalized !== null);
-  const realized = dated.filter((row) => row.temporal_role === "realized_operational");
-  const precise = realized.filter((row) => preciseOperationalDatePrecisions.has(row.candidate_operational_date_precision));
-  const routeResolved = precise.filter(
+  const broadRows = rows.filter((row) => row.anchor_id.startsWith("operational:"));
+  const reviewedRows = rows.filter((row) => row.anchor_id.startsWith("operational-reviewed:"));
+  const distinctOperationalEventCount = new Set(broadRows.map((row) => row.event_record_id)).size;
+  const timelineLinkedDistinctEvents = new Set(broadRows.map((row) => row.event_record_id)).size;
+  const operationalFamilyEventsTotal = input.operationalFamilyEventCount;
+  if (operationalFamilyEventsTotal < timelineLinkedDistinctEvents) {
+    throw new Error(
+      `operational family event count ${operationalFamilyEventsTotal} is smaller than ${timelineLinkedDistinctEvents} timeline-linked distinct events`,
+    );
+  }
+  const broadDated = broadRows.filter((row) => row.candidate_operational_date_normalized !== null);
+  const broadRealized = broadDated.filter((row) => row.temporal_role === "realized_operational");
+  const broadPrecise = broadRealized.filter((row) => preciseOperationalDatePrecisions.has(row.candidate_operational_date_precision));
+  const broadRouteResolved = broadPrecise.filter(
     (row) =>
       row.gtfs_route_ids.length === 1 &&
       (row.route_scope_resolution === "direct" || row.route_scope_resolution === "reviewed_inherited"),
   );
-  const treatmentResolved = routeResolved.filter(
+  const broadTreatmentResolved = broadRouteResolved.filter(
     (row) =>
       row.treatment_record_ids.length === 1 &&
       (row.treatment_scope_resolution === "direct" || row.treatment_scope_resolution === "reviewed_inherited"),
   );
-  const evidenceComplete = treatmentResolved.filter((row) => Object.values(row.evidence_coverage).every(Boolean));
-  const conflictFree = evidenceComplete.filter((row) => row.conflict_states.length === 0);
+  const broadEvidenceComplete = broadTreatmentResolved.filter((row) => Object.values(row.evidence_coverage).every(Boolean));
+  const broadConflictFree = broadEvidenceComplete.filter((row) => row.conflict_states.length === 0);
   return {
     schema_version: OPERATIONAL_ANCHOR_SCHEMA_VERSION,
     row_count: rows.length,
+    broad_row_count: broadRows.length,
+    reviewed_row_count: reviewedRows.length,
+    distinct_operational_event_count: distinctOperationalEventCount,
     study_eligible_count: rows.filter((row) => row.study_eligible).length,
+    study_eligible_reviewed_count: reviewedRows.filter((row) => row.study_eligible).length,
     counts_by_temporal_role: countBy(rows.map((row) => row.temporal_role)),
     counts_by_scope_resolution: countBy(rows.map((row) => row.scope_resolution)),
     counts_by_exclusion_reason: countBy(rows.flatMap((row) => row.exclusion_reasons)),
+    entry_gate: input.entryGate,
+    broad_funnel: {
+      operational_family_events_total: operationalFamilyEventsTotal,
+      timeline_linked_distinct_events: timelineLinkedDistinctEvents,
+      unlinked_operational_events: operationalFamilyEventsTotal - timelineLinkedDistinctEvents,
+      candidate_operational_date_present: broadDated.length,
+      realized_operational: broadRealized.length,
+      realized_day_or_month: broadPrecise.length,
+      resolved_route_scope: broadRouteResolved.length,
+      resolved_treatment_scope: broadTreatmentResolved.length,
+      evidence_complete: broadEvidenceComplete.length,
+      conflict_free: broadConflictFree.length,
+      study_eligible: broadRows.filter((row) => row.study_eligible).length,
+    },
     funnel: {
-      canonical_events: input.canonicalEventCount ?? rows.length,
-      timeline_linked_operational_events: rows.length,
-      candidate_operational_date_present: dated.length,
-      realized_operational: realized.length,
-      realized_day_or_month: precise.length,
-      resolved_route_scope: routeResolved.length,
-      resolved_treatment_scope: treatmentResolved.length,
-      evidence_complete: evidenceComplete.length,
-      conflict_free: conflictFree.length,
-      study_eligible: rows.filter((row) => row.study_eligible).length,
+      canonical_events: input.canonicalEventCount,
+      operational_family_events_total: operationalFamilyEventsTotal,
+      timeline_linked_operational_events: broadRows.length,
+      timeline_linked_distinct_events: timelineLinkedDistinctEvents,
+      unlinked_operational_events: operationalFamilyEventsTotal - timelineLinkedDistinctEvents,
+      candidate_operational_date_present: broadDated.length,
+      realized_operational: broadRealized.length,
+      realized_day_or_month: broadPrecise.length,
+      resolved_route_scope: broadRouteResolved.length,
+      resolved_treatment_scope: broadTreatmentResolved.length,
+      evidence_complete: broadEvidenceComplete.length,
+      conflict_free: broadConflictFree.length,
+      study_eligible: broadRows.filter((row) => row.study_eligible).length,
     },
   };
 }

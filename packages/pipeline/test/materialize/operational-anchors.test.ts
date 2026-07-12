@@ -5,6 +5,7 @@ import {
   type OperationalAnchorReviewDecision,
 } from "@mta-wiki/pipeline/materialize/operational-anchor-review";
 import {
+  computeOperationalAnchorProjection,
   computeOperationalAnchors,
   operationalAnchorsJsonl,
   summarizeOperationalAnchors,
@@ -243,6 +244,45 @@ function reviewedProjectDecision(overrides: Partial<OperationalAnchorReviewDecis
 }
 
 describe("operational anchor export", () => {
+  it("separates reviewed overlays from broad rows and distinct events", () => {
+    const fixture = projectAnchorFixture();
+    const projection = computeOperationalAnchorProjection(fixture.records, fixture.routeAnchors, {
+      reviewDecisions: [reviewedProjectDecision()],
+    });
+    const summary = summarizeOperationalAnchors(projection.rows, {
+      canonicalEventCount: 1,
+      operationalFamilyEventCount: 1,
+      entryGate: projection.entry_gate,
+    });
+
+    expect(summary.row_count).toBe(2);
+    expect(summary.broad_row_count).toBe(1);
+    expect(summary.reviewed_row_count).toBe(1);
+    expect(summary.distinct_operational_event_count).toBe(1);
+    expect(summary.study_eligible_reviewed_count).toBe(1);
+    expect(summary.funnel.timeline_linked_operational_events).toBe(1);
+    expect(summary.funnel.timeline_linked_distinct_events).toBe(1);
+    expect(summary.funnel.unlinked_operational_events).toBe(0);
+  });
+
+  it("counts timeline relations rejected by the operational entry gate", () => {
+    const fixture = directAnchorFixture();
+    fixture.records.push(
+      record("project_not_event", "project"),
+      relation("relation_to_non_event", "has_timeline_event", "route_b1", "project_not_event", "delivered"),
+      record("event_publication", "event", { event_family: "publication" }),
+      relation("relation_to_publication", "has_timeline_event", "route_b1", "event_publication", "delivered"),
+    );
+
+    const projection = computeOperationalAnchorProjection(fixture.records, fixture.routeAnchors);
+    expect(projection.rows).toHaveLength(1);
+    expect(projection.entry_gate).toEqual({
+      relations_examined: 3,
+      non_event_timeline_objects: 1,
+      non_operational_event_objects: 1,
+    });
+  });
+
   it("adds an atomic reviewed anchor without promoting the broad inherited project row", () => {
     const fixture = projectAnchorFixture();
     const recordsBefore = structuredClone(fixture.records);
@@ -456,6 +496,7 @@ describe("operational anchor export", () => {
     expect(anchor?.gtfs_route_ids).toEqual([]);
     expect(anchor?.scope_resolution).toBe("missing");
     expect(anchor?.exclusion_reasons).toContain("missing_route_scope");
+    expect(anchor?.exclusion_reasons).not.toContain("missing_route_scope_evidence");
     expect(anchor?.study_eligible).toBe(false);
   });
 
@@ -627,7 +668,12 @@ describe("operational anchor export", () => {
         as_of_date: "2024-07",
       }),
     ];
-    const summary = summarizeOperationalAnchors(computeOperationalAnchors(records, [routeAnchor("route_b1", "B1")]));
+    const projection = computeOperationalAnchorProjection(records, [routeAnchor("route_b1", "B1")]);
+    const summary = summarizeOperationalAnchors(projection.rows, {
+      canonicalEventCount: 1,
+      operationalFamilyEventCount: 1,
+      entryGate: projection.entry_gate,
+    });
 
     expect(summary.funnel.resolved_route_scope).toBe(1);
     expect(summary.funnel.resolved_treatment_scope).toBe(0);
@@ -648,17 +694,26 @@ describe("operational anchor export", () => {
         as_of_date: "2024-07",
       }),
     );
-    const anchorsA = computeOperationalAnchors(fixture.records, fixture.routeAnchors);
-    const anchorsB = computeOperationalAnchors([...fixture.records].reverse(), [...fixture.routeAnchors].reverse());
+    const projectionA = computeOperationalAnchorProjection(fixture.records, fixture.routeAnchors);
+    const projectionB = computeOperationalAnchorProjection([...fixture.records].reverse(), [...fixture.routeAnchors].reverse());
+    const anchorsA = projectionA.rows;
+    const anchorsB = projectionB.rows;
 
     expect(operationalAnchorsJsonl(anchorsA)).toBe(operationalAnchorsJsonl(anchorsB));
-    const summary = summarizeOperationalAnchors(anchorsA);
+    const summary = summarizeOperationalAnchors(anchorsA, {
+      canonicalEventCount: 2,
+      operationalFamilyEventCount: 2,
+      entryGate: projectionA.entry_gate,
+    });
     expect(summary.row_count).toBe(2);
     expect(summary.study_eligible_count).toBe(1);
     expect(summary.counts_by_exclusion_reason.non_realized_operational_date).toBe(1);
     expect(summary.funnel).toEqual({
       canonical_events: 2,
+      operational_family_events_total: 2,
       timeline_linked_operational_events: 2,
+      timeline_linked_distinct_events: 2,
+      unlinked_operational_events: 0,
       candidate_operational_date_present: 2,
       realized_operational: 1,
       realized_day_or_month: 1,

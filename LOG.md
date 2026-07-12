@@ -4,6 +4,23 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-12
+
+### Operational Corpus Completion Baseline
+
+- Split operational-anchor reporting into `633` broad rows, `7` reviewed overlays, and `633`
+  distinct timeline-linked event ids. The canonical operational-family denominator is `1,247`,
+  leaving `614` unlinked events; reviewed overlays no longer inflate event coverage. Added entry-gate
+  counters and made missing scope mutually exclusive with missing scope-evidence reasons.
+- Added a deterministic operational completion ledger and CLI. The first fingerprinted baseline has
+  `2,735` explicit gap rows and a bounded `275`-row priority feeder across route, treatment,
+  date-precision, delivered-status, and timeline-subject dimensions. The strict sequential
+  route-resolved treatment queue contains `15` rows. The matrix separately reports `4` reviewed
+  occurrences, `3` eligible occurrences, and `6` eligible occurrence-route pairs.
+- Active caveat: all `275` priority rows are still `unreviewed`. The ledger is the work denominator,
+  not a claim that those gaps are recoverable or absent; curation decisions, search receipts, and
+  proposal/apply tooling remain the next pass.
+
 ## 2026-07-11
 
 ### Operational Anchor Contract V1 Audit Canary

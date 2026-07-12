@@ -11,6 +11,24 @@ The v1 public data release is `v1-rc5`.
 
 The release manifest records per-kind counts, hashes, and pointers to companion release artifacts.
 
+### Operational coverage diagnostics
+
+`bun packages/cli/src/cli.ts operational-coverage` writes a deterministic completion ledger,
+priority queue, and coverage matrix under `data/quality/operational-coverage/`. The matrix keeps
+canonical operational events, broad anchor rows, reviewed overlays, resolved occurrences, and
+occurrence-route projections as separate populations. Reviewed overlays never increase the
+canonical-event or timeline-linked-event denominator, and bundles remain one occurrence regardless
+of member count.
+
+The priority queue is a bounded study-work feeder, not a completeness percentage. Its denominator
+includes every open route, treatment, date-precision, delivered-status, or timeline-subject gap for
+bus-relevant in-window events and the explicit route-redesign, TSP, and busway families. Durable
+decisions must retain exact evidence or receipt bindings; terminal `absent_in_source` decisions
+require a gap-bound search receipt covering every required source plus the staged-source registry.
+Receipts bind to the matrix's corpus fingerprint and replay from
+`data/operational-anchor-review/ledger-decisions/search-receipts/`; a missing, stale, incomplete,
+or match-bearing receipt fails closed.
+
 ### Release pointer semantics
 
 `data/exports/releases/LATEST` names the current public release. Creating a release snapshot does
@@ -46,6 +64,7 @@ Tracked durable surfaces:
 - `data/submissions/`, the accepted and rejected observation journals.
 - `data/canonical/`, the canonical JSONL records.
 - `data/evidence-block-index.jsonl`, compact cited-block metadata used by public-clone validation.
+- `data/quality/operational-coverage/`, the deterministic operational completion ledger and matrix.
 - `data/reference/gtfs/`, the small GTFS route/agency reference input used by SQLite projections.
 - `wiki/`, the generated wiki pages and source context pages.
 - `data/exports/releases/v1-rc5/`, the current v1 release snapshot.

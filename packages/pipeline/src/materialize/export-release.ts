@@ -18,7 +18,8 @@ import {
 import { taxonomyJson } from "@mta-wiki/pipeline/materialize/export-taxonomy";
 import {
   OPERATIONAL_ANCHOR_SCHEMA_VERSION,
-  computeOperationalAnchors,
+  computeOperationalAnchorProjection,
+  countOperationalFamilyEvents,
   operationalAnchorSummaryJson,
   summarizeOperationalAnchors,
   writeOperationalAnchorsJsonl,
@@ -450,11 +451,12 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
     loadOperationalAnchorReviewDecisions(reviewDecisionDir),
     records,
   );
-  const operationalAnchors = computeOperationalAnchors(records, routeAnchors, {
+  const operationalAnchorProjection = computeOperationalAnchorProjection(records, routeAnchors, {
     // Release cuts must validate every accepted decision. A stale/missing
     // canonical binding is a hard error, never a silently omitted anchor.
     reviewDecisions: acceptedReviewDecisions,
   });
+  const operationalAnchors = operationalAnchorProjection.rows;
   const operationalAnchorPath = join(dir, "operational_anchors.jsonl");
   writeOperationalAnchorsJsonl(operationalAnchorPath, operationalAnchors);
   fileEntries.push(["operational_anchors.jsonl", fileMetadata(operationalAnchorPath)]);
@@ -465,6 +467,8 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
     operationalAnchorSummaryJson(
       summarizeOperationalAnchors(operationalAnchors, {
         canonicalEventCount: records.filter((record) => record.record_kind === "event").length,
+        operationalFamilyEventCount: countOperationalFamilyEvents(records),
+        entryGate: operationalAnchorProjection.entry_gate,
       }),
     ),
     "utf8",
