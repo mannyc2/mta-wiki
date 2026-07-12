@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "ace-september-2025-treatment-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:baea7d8ec620f5ce8e1e9f3c",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-12",
+  "decided_at": "2026-07-12T20:14:24.000Z",
+  "rationale": "The broad ACE project anchor inherits multiple program-level treatment records and is not a safe projection of the September 15, 2025 activation treatment. Approved occurrence occurrence:09a7c0cfcac97e1a2651695b already carries the exact reviewed treatment scope for this event, so further recovery of the broad diagnostic treatment gap is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

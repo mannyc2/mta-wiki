@@ -1,6 +1,6 @@
 # Operational coverage matrix
 
-Input fingerprint: `5c31f021878d2a2d095cdfcf3c7ba76597c393b19080b2a47a30d7656b8c9535`
+Input fingerprint: `1bf7a32f7bfcdfd4ffda1777ae2e31cb5d133ba022db3ef0df3b7d22f6504118`
 Corpus fingerprint: `1be9a8e606f2faa014db897df6f9bbe6663ac0476ed906fe78c65bd1c25638df`
 Study window: 2023-04-01 through 2026-12-31
 
@@ -31,9 +31,9 @@ Study window: 2023-04-01 through 2026-12-31
 
 - Gap rows: 2735
 - Priority gap denominator: 275
-- Priority open: 275
+- Priority open: 271
 - Priority adjudicated/recoverable: 0
-- Priority terminal: 0
+- Priority terminal: 4
 - Sequential route-resolved treatment gaps: 15
 
 ## Downstream-served layer

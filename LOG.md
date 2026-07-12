@@ -24,8 +24,10 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   failures. Corpus-wide record-id assignment is checked before journal creation, and one exact
   proposal-derived journal validator gates both retry/apply and repository validation. The
   repository validator now gates the complete proposed/applied/rejected tree.
-- Active caveat: all `275` priority rows are still `unreviewed`. The ledger is the work denominator,
-  not a claim that those gaps are recoverable or absent; actual proposals, curation decisions, and
+- First reviewed ledger pass closed `4` false-open route/treatment rows whose broad inherited anchors
+  are superseded by approved, study-eligible Q7 and September 2025 ACE occurrences. The bounded queue
+  now has `271` open and `4` terminal priority rows. The ledger remains the work denominator, not a
+  claim that the remaining gaps are recoverable or absent; proposals, curation decisions, and
   exhaustive search receipts remain the next pass.
 
 ## 2026-07-11
