@@ -3337,6 +3337,42 @@
         "reason": "SIM23 is an individual express route, while SIM23/SIM24 is a bundled express-route scope record. Shared SIM23 route number is insufficient for merging a branch with an aggregate bundle.",
         "source_decision": "data/review_notes/codex-route-normalization-phase3-adjacent-2026-06-24.json#identity-review-remaining14-2026-06-25",
         "reviewed_at": "2026-06-25T02:50:00Z"
+      },
+      {
+        "record_ids": [
+          "route_bx18a",
+          "route_bx18a-b"
+        ],
+        "reason": "Bx18A is a GTFS-addressable branch, while Bx18A/B is the official evaluation's aggregate reporting surface for both Bronx branches. Preserve the aggregate identity for aggregate pilot metrics and do not alias it to one branch.",
+        "source_decision": "data/operational-anchor-review/proposed/applied/observations/orp_fare_free_pilot_route_scope_and_resumption_2023_2024.json#route-identity-split",
+        "reviewed_at": "2026-07-13T06:34:19.000Z"
+      },
+      {
+        "record_ids": [
+          "route_bx18b",
+          "route_bx18a-b"
+        ],
+        "reason": "Bx18B is a GTFS-addressable branch, while Bx18A/B is the official evaluation's aggregate reporting surface for both Bronx branches. Preserve the aggregate identity for aggregate pilot metrics and do not alias it to one branch.",
+        "source_decision": "data/operational-anchor-review/proposed/applied/observations/orp_fare_free_pilot_route_scope_and_resumption_2023_2024.json#route-identity-split",
+        "reviewed_at": "2026-07-13T06:34:19.000Z"
+      },
+      {
+        "record_ids": [
+          "route_s46",
+          "route_s46-s96"
+        ],
+        "reason": "S46 is the GTFS-addressable local route, while S46/S96 is the official evaluation's aggregate reporting surface for the Staten Island local and limited services. Preserve the aggregate identity for aggregate pilot metrics and do not alias it to S46.",
+        "source_decision": "data/operational-anchor-review/proposed/applied/observations/orp_fare_free_pilot_route_scope_and_resumption_2023_2024.json#route-identity-split",
+        "reviewed_at": "2026-07-13T06:34:19.000Z"
+      },
+      {
+        "record_ids": [
+          "route_s96",
+          "route_s46-s96"
+        ],
+        "reason": "S96 is the GTFS-addressable limited route, while S46/S96 is the official evaluation's aggregate reporting surface for the Staten Island local and limited services. Preserve the aggregate identity for aggregate pilot metrics and do not alias it to S96.",
+        "source_decision": "data/operational-anchor-review/proposed/applied/observations/orp_fare_free_pilot_route_scope_and_resumption_2023_2024.json#route-identity-split",
+        "reviewed_at": "2026-07-13T06:34:19.000Z"
       }
     ]
   }
