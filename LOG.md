@@ -82,6 +82,17 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   precedence, and recognizes staff summaries as board material. Its audited corpus sweep intentionally
   backfills `65` previously unset board-material tiers, corrects four existing `press`/`express`
   false positives, and classifies the two new sources; the audit records `71` source transitions total.
+- Recovered the exact Bx36 Automated Camera Enforcement activation by repairing the already-canonical
+  Tremont Avenue event rather than creating a duplicate. A November 2024 NYC DOT presentation binds
+  Bx36, the source-scoped camera-enforcement treatment, and the realized June 20, 2024 activation in
+  one evidence block; the date is explicitly the camera/warning-period onset, not later violation
+  issuance. The earlier unnamed fourteen-route May plan remains prospective. One approved atomic
+  occurrence raises the projection to `129` occurrences, `128` eligible occurrences, and `153`
+  eligible route pairs. Five unsafe broad-project/plan diagnostics are terminally superseded, leaving
+  the `508`-row priority ledger at `162` open and `346` terminal rows. Cut byte-reproducible unpromoted
+  release `v1-rc13`: manifest SHA-256
+  `81ecfa2de1f2f52d9ef41617f49be7fab9f8a4b571a28c04a09e349c4c4f89bc`, route-anchor SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`; `LATEST` remains `v1-rc5`.
 
 ## 2026-07-12
 
