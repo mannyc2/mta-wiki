@@ -1,0 +1,434 @@
+{
+  "proposal_id": "orp_qbnr_8_service_starts_2025",
+  "corpus_fingerprint": "3c2edddead8bc978148b48ac6733e72d5235f18ed50aad484271ecbc72e1def3",
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf",
+    "operational-coverage:45dd3045070322bc90d91414",
+    "operational-coverage:a9b2bf1ff109628219637775"
+  ],
+  "project_record_id": "project_queens-bus-network-redesign",
+  "project_label": "Queens Bus Network Redesign",
+  "drafted_by": "codex-corpus-completion-2026-07-12",
+  "drafted_at": "2026-07-12T23:55:43.000Z",
+  "rationale": "Eight exact official MTA rows establish realized service-start dates, one uniquely anchored current route per row, and fifteen bounded treatment members. Q14, Q51, Q115, and QM65 are atomic service-pattern occurrences. Q61, Q80, Q82, and Q89 are reviewed route-redesign bundles whose analysis family is supported by the official Queens Bus Network Redesign project context. Every predecessor, replacement, and alternative route reference remains treatment text or rider context only; only Q14, Q51, Q61, Q80, Q82, Q89, Q115, and QM65 receive affects_route relations.",
+  "units": [
+    {
+      "source_block_ids": [
+        "p001_b0016"
+      ],
+      "source_block_sha256s": [
+        "sha256:de85a4b4e6b29093b7ec8eb0b7ea0e5722465e9ffb023b049e59621da2aeea8f"
+      ],
+      "source_route_labels": [
+        "Q14"
+      ],
+      "route_label": "Q14",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q14-queens"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q14"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "segment_combination",
+          "label": "Q14 Q23-Q38 segment combination",
+          "source_quote": "The new Q14 will combine the Astoria Blvd-Roosevelt Av segment of the current Q23 with the northern half of the existing Q38.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q14 combined the Astoria Boulevard-Roosevelt Avenue segment of Q23 with the northern half of Q38."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q14 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q14 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0056"
+      ],
+      "source_block_sha256s": [
+        "sha256:a38748bb0d65570b019bfe7e6e1b245e81964f59cfd9263be0f9a19ed8fcb9de"
+      ],
+      "source_route_labels": [
+        "Q51"
+      ],
+      "route_label": "Q51",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q51-queens"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q51"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "east_west_link",
+          "label": "Q51 Linden Boulevard east-west link",
+          "source_quote": "The Q51 will provide a new east-west link along Linden Blvd between Cambria Heights and Ozone Park.",
+          "treatment_kind": "service expansion",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q51 created a new Linden Boulevard east-west link between Cambria Heights and Ozone Park."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q51 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q51 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0065"
+      ],
+      "source_block_sha256s": [
+        "sha256:9a57ebccce33c2fb7755621a4a3d00c837584358602ff4862e700c3f6239b102"
+      ],
+      "source_route_labels": [
+        "Q61"
+      ],
+      "route_label": "Q61",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q61-queens"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q61"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "beechhurst_flushing_connection",
+          "label": "Q61 Beechhurst-Flushing connection",
+          "source_quote": "The new Q61 will connect Beechhurst to Flushing, providing service along Willets Point Blvd.",
+          "treatment_kind": "service expansion",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q61 created a connection between Beechhurst and Flushing via Willets Point Boulevard."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "q15_beechhurst_replacement",
+          "label": "Q61 replacement of Q15 Beechhurst service",
+          "source_quote": "The route will replace existing Q15 service in Beechhurst",
+          "treatment_kind": "route segment discontinuation and replacement",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q61 replaced existing Q15 service in Beechhurst."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "q34_linden_hill_replacement",
+          "label": "Q61 replacement of Q34 Linden Hill service",
+          "source_quote": "and existing Q34 service in Linden Hill.",
+          "treatment_kind": "route segment discontinuation and replacement",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q61 replaced existing Q34 service in Linden Hill."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q61 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q61 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0078"
+      ],
+      "source_block_sha256s": [
+        "sha256:38f96ec10aaf5139abdd6e3376f00ca586c1f87af27d5c897aafd2674954282d"
+      ],
+      "source_route_labels": [
+        "Q80"
+      ],
+      "route_label": "Q80",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q80"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q80"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "q10_limited_branch_replacement",
+          "label": "Q80 replacement of Q10 Limited branch",
+          "source_quote": "The new Q80 will replace the Q10 limited branch,",
+          "treatment_kind": "route segment discontinuation and replacement",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q80 replaced the Q10 Limited branch."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "frequency_overnight_service",
+          "label": "Q80 frequency and overnight service expansion",
+          "source_quote": "providing more frequent and new overnight service along the entire length of Lefferts Blvd.",
+          "treatment_kind": "service frequency and span adjustment",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q80 increased frequency and added overnight service along the entire length of Lefferts Boulevard."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q80 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q80 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0079"
+      ],
+      "source_block_sha256s": [
+        "sha256:b0ab037f3bdf260561c984b18c873bfa743e84c64c2cf0df8d9834403b1100c4"
+      ],
+      "source_route_labels": [
+        "Q82"
+      ],
+      "route_label": "Q82",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q82-queens"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q82"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "belmont_jamaica_connection",
+          "label": "Q82 Belmont Park-Jamaica connection",
+          "source_quote": "The new Q82 will connect Belmont Park to Jamaica,",
+          "treatment_kind": "service expansion",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q82 created a connection between Belmont Park and Jamaica."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "q110_hempstead_replacement",
+          "label": "Q82 replacement of Q110 Hempstead Avenue service",
+          "source_quote": "replacing Q110 service on Hempstead Av",
+          "treatment_kind": "route segment discontinuation and replacement",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q82 replaced Q110 service on Hempstead Avenue."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "q36_212_replacement",
+          "label": "Q82 replacement of Q36 212 Street service",
+          "source_quote": "and Q36 service on 212 St/212 Pl.",
+          "treatment_kind": "route segment discontinuation and replacement",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q82 replaced Q36 service on 212 Street and 212 Place."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "limited_stops",
+          "label": "Q82 Hillside Avenue limited stops",
+          "source_quote": "The Q82 will make limited stops on Hillside Av.",
+          "treatment_kind": "limited stops",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q82 began making limited stops on Hillside Avenue."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For local service, take the Q1 , Q3 , or Q76 .",
+          "review_rationale": "Alternative-service guidance; no Q1, Q3, or Q76 route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q82 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q82 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0086"
+      ],
+      "source_block_sha256s": [
+        "sha256:0ce6db6806027c9aad26d3da3cd566c85b3986127ed6984db62927bb55a25eec"
+      ],
+      "source_route_labels": [
+        "Q89"
+      ],
+      "route_label": "Q89",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q89-proposed-new"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q89"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "q85_green_acres_replacement",
+          "label": "Q89 replacement of Q85 Green Acres branch",
+          "source_quote": "The new Q89 will replace the existing Q85 Green Acres branch.",
+          "treatment_kind": "route segment discontinuation and replacement",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q89 replaced the existing Q85 Green Acres branch."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "limited_stops",
+          "label": "Q89 Merrick Boulevard limited stops",
+          "source_quote": "The Q89 will make limited stops on Merrick Blvd.",
+          "treatment_kind": "limited stops",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q89 began making limited stops on Merrick Boulevard."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For local service, take the Q5 .",
+          "review_rationale": "Alternative-service guidance; no Q5 route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q89 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q89 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0099"
+      ],
+      "source_block_sha256s": [
+        "sha256:18b96215314925733e491dae6e4db6949ec2fd01425bda6e7133f112f9a46deb"
+      ],
+      "source_route_labels": [
+        "Q115"
+      ],
+      "route_label": "Q115",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q115-addendum-2024"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q115"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "all_day_frequent_service",
+          "label": "Q115 all-day frequent service",
+          "source_quote": "The new Q115 will provide all-day frequent service along the Guy R. Brewer Blvd corridor between Jamaica and Springfield Gardens.",
+          "treatment_kind": "service expansion",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q115 created all-day frequent service along Guy R. Brewer Boulevard between Jamaica and Springfield Gardens."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q115 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q115 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0133"
+      ],
+      "source_block_sha256s": [
+        "sha256:c5f16ff3669873fefa3221ddf1e65dc3c0fe8d30f1680a1537bda42e13fba1d1"
+      ],
+      "source_route_labels": [
+        "QM65"
+      ],
+      "route_label": "QM65",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_meeting-doc-138431-qm65"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM65"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "laurelton_downtown_connection",
+          "label": "QM65 Laurelton-Downtown Manhattan connection",
+          "source_quote": "The new QM65 will connect Laurelton to Downtown Manhattan via Rochdale and South Jamaica.",
+          "treatment_kind": "service expansion",
+          "expected_treatment_family": "service_pattern",
+          "description": "QM65 created a connection between Laurelton and Downtown Manhattan via Rochdale and South Jamaica."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on new QM65 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM65 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    }
+  ]
+}
