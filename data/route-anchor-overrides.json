@@ -1,5 +1,13 @@
 {
   "_doc": "Reviewed route-anchor exceptions. Overrides select a current canonical record. Non-GTFS dispositions exclude a record from current GTFS matching and bind the review to its expected literal route_id (or null).",
-  "overrides": {},
-  "non_gtfs_dispositions": {}
+  "overrides": {
+    "Q48": "route_q48-glen-oaks-2025"
+  },
+  "non_gtfs_dispositions": {
+    "route_q48-serves-lga-2011": {
+      "disposition": "historical_retired",
+      "reason": "The official 2025 Queens Bus Network Redesign row records discontinuation of the historical LaGuardia Q48 and reuse of the Q48 designation for a distinct Glen Oaks service beginning June 30, 2025.",
+      "expected_route_id": "Q48"
+    }
+  }
 }

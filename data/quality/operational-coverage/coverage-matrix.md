@@ -1,7 +1,7 @@
 # Operational coverage matrix
 
-Input fingerprint: `1afe300218135ec406c2bedfbbddcc28c9929764b45e75a228042064bc810045`
-Corpus fingerprint: `146d8699582c7b44e6bd8867a661f4e075bdebdd586fcacb4933b72e91a055ca`
+Input fingerprint: `d14d2df31218e8f639f08e5d18b3d8e0cabad14ef111647fb2d4b741cc93eb4e`
+Corpus fingerprint: `69823fbe39ca3cf3f9cf84ad8393aaaf604a7407b806e19b26b5af43caa91aa5`
 Study window: 2023-04-01 through 2026-12-31
 
 ## Canonical event population
