@@ -22,6 +22,7 @@ export type Command =
   | "quality-judge-calibration"
   | "operational-coverage"
   | "coverage-matrix"
+  | "forecast-frontier"
   | "operational-recovery-proposals"
   | "operational-recovery-apply"
   | "qbnr-recovery-draft"

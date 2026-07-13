@@ -162,6 +162,12 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
   `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
   `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
+- Added a deterministic forecast-to-realized acquisition frontier with explicit `as_of` and grace-period
+  inputs. Terminal operational diagnostics no longer hide future acquisition work: the July 13, 2026 cut
+  keeps `47` targets open even though all `148` associated study diagnostics are terminal, with `39` due,
+  `3` date-unresolved, and `21` same-subject realized candidates held for review rather than auto-closed.
+  The target-list JSON/Markdown SHA-256 values are `c314ce6c0e467e4c408e5aa5e89e97e8e04fbbf2a4e793942663a7e2c7d2825e`
+  and `0ed153ca57f552e17512f8869ea56a6f86b849f35bc7127374ab95ae42c3bb8b`.
 
 ## 2026-07-12
 

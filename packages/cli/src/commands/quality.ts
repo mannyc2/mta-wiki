@@ -1,5 +1,6 @@
 import { relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
+import { writeForecastRealizationArtifacts } from "@mta-wiki/pipeline/quality/forecast-realization-artifacts";
 import { writeOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
 import { applyOperationalRecoveryProposal } from "@mta-wiki/pipeline/records/operational-recovery-apply";
 import { validateOperationalRecoveryProposalTree } from "@mta-wiki/pipeline/records/operational-recovery-proposals";
@@ -35,6 +36,38 @@ const operationalCoverage: CommandHandler = () => {
     `Completion gaps: ${completion.gap_rows}; priority denominator ${completion.priority_gap_rows}; ` +
       `open ${completion.priority_open_rows}, adjudicated/recoverable ${completion.priority_adjudicated_recoverable_rows}, ` +
       `terminal ${completion.priority_terminal_rows}`,
+  );
+};
+
+const forecastFrontier: CommandHandler = () => {
+  const asOf = optionValue(process.argv, "--as-of");
+  if (!asOf) throw new Error("forecast-frontier requires an explicit --as-of YYYY-MM-DD");
+  const rawGraceDays = optionValue(process.argv, "--grace-days");
+  if (rawGraceDays === undefined) {
+    throw new Error("forecast-frontier requires an explicit --grace-days <non-negative integer>");
+  }
+  const graceDays = Number(rawGraceDays);
+  if (!Number.isInteger(graceDays) || graceDays < 0) {
+    throw new Error(`--grace-days must be a non-negative integer: ${rawGraceDays}`);
+  }
+  const result = writeForecastRealizationArtifacts({
+    asOf,
+    graceDays,
+    outputDir: optionValue(process.argv, "--output") ?? optionValue(process.argv, "-o"),
+    operationalCoverageDir: optionValue(process.argv, "--coverage"),
+  });
+  const summary = result.targetList.summary;
+  console.log(`Forecast-realization frontier: ${relative(repoRoot, result.outputDir)}`);
+  console.log(`As of ${result.targetList.as_of}; grace period ${result.targetList.grace_days} day(s)`);
+  console.log(
+    `Acquisition targets: ${summary.acquisition_target_count} ` +
+      `(due ${summary.targets_due_for_acquisition_count}, not due ${summary.targets_not_due_count}, ` +
+      `date unresolved ${summary.targets_with_unresolved_date_count})`,
+  );
+  console.log(
+    `Realized candidates requiring review: ${summary.targets_with_realized_candidates_count}; ` +
+      `terminal operational diagnostics remain separate: ${summary.operational_terminal_diagnostic_row_count}/` +
+      `${summary.operational_diagnostic_row_count}`,
   );
 };
 
@@ -79,6 +112,7 @@ const qbnrRecoveryDraft: CommandHandler = (args) => {
 export const qualityCommands = {
   "operational-coverage": operationalCoverage,
   "coverage-matrix": operationalCoverage,
+  "forecast-frontier": forecastFrontier,
   "operational-recovery-proposals": recoveryProposals,
   "operational-recovery-apply": recoveryApply,
   "qbnr-recovery-draft": qbnrRecoveryDraft,
