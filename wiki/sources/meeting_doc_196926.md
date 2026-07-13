@@ -15,6 +15,7 @@ generated_at: "2026-06-21T21:15:50.651Z"
 submission_ids:
   - "sub_7eecd5a84d0e3786"
 payload:
+  authority_tier: "board_material"
   content_type: "pdf"
   date_text: "JANUARY 28, 2026"
   date_text_normalized:

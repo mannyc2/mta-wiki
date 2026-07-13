@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "receipt_id": "source-authority-press-express-audit-2026-07-13",
+  "status": "normalizer_fixed_and_corpus_backfilled",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T11:25:00Z",
+  "scope": "Canonical source authority classification",
+  "defect": {
+    "finding": "The authority normalizer used an unbounded substring test for the word press, so Express Bus and Expressway text could be classified as press_release.",
+    "impact": "Three MTA staff summaries, one NYC DOT presentation, and the newly curated structured schedule query carried false press_release tiers; many other staff summaries lacked the board_material companion entirely."
+  },
+  "rule_change": {
+    "bare_press_signal": "Require a complete normalized token for bare press, while retaining explicit press_release, announcement, and newsroom signals.",
+    "staff_summary_signal": "Classify staff summaries as board_material.",
+    "precedence_guard": "Keep genuine press-release signals ahead of dataset signals so a press release that discusses an open-data dataset remains press_release.",
+    "dataset_fallthrough": "A structured dataset description containing express but no complete press token falls through to dataset_documentation."
+  },
+  "regression_guards": [
+    "staff summary titled Express Bus Service Additions -> board_material",
+    "structured dataset query describing express trips -> dataset_documentation",
+    "press release announcing an open-data dataset -> press_release"
+  ],
+  "canonical_sweep": {
+    "baseline_commit": "0f02ca1a66b468cdec534829e4007da63f529456",
+    "changed_source_count": 71,
+    "existing_source_changes": 69,
+    "new_source_classifications": 2,
+    "transition_counts": {
+      "null_to_board_material": 65,
+      "press_release_to_board_material": 3,
+      "press_release_to_plan_document": 1,
+      "null_to_press_release": 1,
+      "null_to_dataset_documentation": 1
+    },
+    "interpretation": "The 65 null-to-board changes are an intentional corpus-wide staff-summary/committee-material backfill. The four existing false positives and one new schedule-query false positive require guarded semantic corrections because their accepted journals already contain the stale tier."
+  },
+  "guarded_correction_ids": [
+    "core-coverage-schedule-query-dataset-authority-tier-20260713",
+    "core-coverage-meeting-doc-138456-board-authority-tier-20260713",
+    "core-coverage-meeting-doc-146846-board-authority-tier-20260713",
+    "core-coverage-meeting-doc-160441-board-authority-tier-20260713",
+    "core-coverage-fordham-expressway-presentation-authority-tier-20260713"
+  ]
+}

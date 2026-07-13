@@ -16,6 +16,7 @@ raw_text: "Schedule F Personal Service Contracts Staff Summary - Item Number 1 -
 submission_ids:
   - "sub_f2b69940111eb65d"
 payload:
+  authority_tier: "board_material"
   content_type: "Staff Summary"
   date_text: "Board review 9/21/22"
   date_text_normalized:

@@ -15,6 +15,7 @@ generated_at: "2026-06-21T21:56:52.205Z"
 submission_ids:
   - "sub_b53c2fd28f345cfc"
 payload:
+  authority_tier: "board_material"
   content_type: "Staff Summary"
   description: "Staff summary requesting authorization to enter into a lease agreement with Markys S. Central Park, LLC for retail space at Grand Central Terminal."
   publisher: "Metropolitan Transportation Authority"

@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "receipt_id": "express-bus-trip-additions-june-30-2024",
+  "status": "exact_onset_and_delivered_scope_recovered",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T11:25:00Z",
+  "scope": {
+    "prior_planning_event_id": "event_express-bus-additions-june2024",
+    "exact_date_event_id": "event_express-bus-service-increases-begin-june-30-2024",
+    "project_record_id": "project_summer-2024-express-bus-service-additions",
+    "treatment_record_id": "treatment_weekday-express-bus-trip-additions-summer-2024",
+    "route_record_ids": [
+      "route_bm2-brt-south-brooklyn-2017",
+      "route_bm5-brt-south-brooklyn-2017",
+      "route_sim1c-meeting-doc-138456",
+      "route_sim4c-meeting-doc-138456",
+      "route_sim23-madison-ave-cb6-jun2025",
+      "route_sim24-madison-ave-cb6-jun2025"
+    ]
+  },
+  "bounded_search": {
+    "local_registry_search": {
+      "roots": [
+        "raw/sources",
+        "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs"
+      ],
+      "queries": [
+        "express bus route service increases will begin on June 30",
+        "BM2 BM5 SIM1C SIM4C SIM23 SIM24 summer 2024",
+        "mta-approves-commuter-rail-discounts-bronx-and-queens-and-more-express-bus-service"
+      ],
+      "result": "No previously staged or captured copy of the exact-date MTA press release was present. The staged April, July, and December board materials supplied month/season and retrospective status but not an exact realized day on one record."
+    },
+    "official_web_search": {
+      "domain": "mta.info",
+      "queries": [
+        "BM2 BM5 SIM1C SIM4C SIM23 SIM24 summer 2024",
+        "BM2 BM5 SIM1C SIM4C SIM23 SIM24 June 2024 schedule",
+        "Certain weekday trips were added express bus 2024"
+      ],
+      "result": "Located the official April 30 MTA press release stating that the six route increases would begin June 30, then captured it into the staged corpus."
+    }
+  },
+  "official_source_capture": {
+    "source_id": "mta_express_bus_service_increases_june30_2024",
+    "publisher": "MTA",
+    "title": "MTA Approves Commuter Rail Discounts for the Bronx and Queens and More Express Bus Service for Brooklyn and Staten Island",
+    "url": "https://www.mta.info/press-release/mta-approves-commuter-rail-discounts-bronx-and-queens-and-more-express-bus-service",
+    "publication_date": "2024-04-30",
+    "retrieved_at": "2026-07-13T10:04:06.025Z",
+    "source_html_sha256": "c29212414313be791e3da367507080bd163c614824f8b2732233ad313d6f71c9",
+    "source_html_bytes": 54897,
+    "text_sha256": "b79df3e2aa81c9795e775cefd9541c8e2ac5494c9470674c3a236898d96cd637",
+    "blocks_sha256": "1898c0bec5714e0e395900ae6f1ab2032b7ab8ab091846fc577ad07fa897b037",
+    "evidence": [
+      {
+        "evidence_id": "mta_express_bus_service_increases_june30_2024#p001_b0046",
+        "evidence_sha256": "sha256:1d4acead94f50a5a08cfa2148435a64af964f4d19e7b37a654710587c4ee3fb6",
+        "finding": "The official press release is dated April 30, 2024."
+      },
+      {
+        "evidence_id": "mta_express_bus_service_increases_june30_2024#p001_b0050",
+        "evidence_sha256": "sha256:bdae9d7af51a302e039dc31027f8d01aad5041d1fb01644bf165b08682f6ce5b",
+        "finding": "MTA states that peak-period service increases on exactly BM2, BM5, SIM1C, SIM4C, SIM23, and SIM24 will begin June 30."
+      }
+    ]
+  },
+  "retrospective_delivery_evidence": {
+    "source_id": "meeting_doc_146846",
+    "publication_date": "2024-07-16",
+    "evidence_id": "meeting_doc_146846#p001_c0005",
+    "evidence_sha256": "sha256:d555d7d98db0b044c261c93f7957c834d15522b467a61ad7041ee9c3e71bf671",
+    "finding": "The later official staff summary says the weekday trips were added to the same six routes in summer 2024."
+  },
+  "official_schedule_corroboration": {
+    "dataset": "NY OpenData bus_schedules_2024",
+    "publisher_attribution": "MTA",
+    "socrata_dataset_id": "udt9-hvjq",
+    "staged_source_id": "ny_open_data_mta_bus_schedule_boundaries_2024",
+    "staged_artifact_sha256": {
+      "weekday_count_response": "ff672cb577395ebfbf127c4e88bbfd66face8ce62ec1efaabf24f05a147693b1",
+      "bundle_boundary_response": "5d58d9c572a5b8105c98d6c1132d303ace682262fb88d82ae3ce593eaf269665",
+      "dataset_metadata": "0d9a369c8c37f87e82e0b194373661e6f88eda5780523dc084d14a1357a862f7",
+      "text": "d41ecdf1d1b5682ed33e4b773b61386587be83fcb3a8d74481ffd22a97b29317",
+      "blocks": "1b3ab902b79eb4d9a108455a917fe6b84b3d31b172418f7c728c9f3e48866dd2"
+    },
+    "local_capture_root": "/mnt/models/dev/bus-reliability-tracker/data/raw/socrata-partitioned/bus_schedules_2024/schedule-2024",
+    "manifest_sha256": "5cbca0badce28afa24b1d2b9e63d6d3d5d1fa98f3462c50aea23ef981eed90bb",
+    "dataset_metadata_sha256": "7afd03f1b9963997bbb4a8d09c18da685470828df6e0e27feced2e1710e2081d",
+    "columns_metadata_sha256": "77e49deba3b2e2fe19f1249a7a708e06ae90dd8040d81111d7aa3570db01e515",
+    "partition_sha256": {
+      "june": "2958a106aec4d70eb53399677aa1425fad9b44e814c730960c6bbd9e47749eae",
+      "july": "f0156983a37c46d85b3f56bc7463206f065316156686a56685f222f6550f5c97",
+      "august": "a7404a1ffcff1f3937aa6d1442f220b24949f86445d39168fe4cd23d2187c4cb",
+      "september": "ff2157412faae0ff5cacfb56c0331f1cb0e9903b86ef61f3af3ed6900015e82b"
+    },
+    "finding": "The 2024Jun schedule bundle first takes effect on Schedule Day 2024-06-30. On the first affected weekday, 2024-07-01, Express-service origin-terminal trip counts increase by exactly the route, direction, and trip quantities named in the board records. The 2024Sep bundle takes effect 2024-09-01 and those added rows are absent on the first post-change weekday.",
+    "role": "Independent official structured-feed corroboration; the addition occurrence remains bound to the staged MTA announcement and retrospective staff summary, while the same schedule capture separately anchors the paired Fall removal occurrence."
+  },
+  "temporal_adjudication": {
+    "resolved_realized_onset": "2024-06-30",
+    "precision": "day",
+    "basis": "The dated official announcement supplies the exact June 30 start for the identical six-route service package, and the July 16 retrospective confirms that package was delivered in summer 2024. No contrary implementation date was found.",
+    "preserve_prospective_source_semantics": true,
+    "status_resolution_mechanism": "The exact-date event remains a source-time planned observation. A separate delivered has_timeline_event relation, evidenced by the July retrospective, resolves the occurrence as realized without rewriting the announcement as retrospective evidence.",
+    "prior_month_event_disposition": "The April 26 month-only planning event remains separate and prospective; it is a duplicate planning surface, not a second realized occurrence."
+  },
+  "treatment_and_route_adjudication": {
+    "treatment_scope_kind": "atomic",
+    "treatment_family": "service_pattern",
+    "route_count": 6,
+    "basis": "The later source describes one shared intervention—added weekday trips—and directly enumerates the six affected routes. Route-specific trip times remain descriptive details rather than six invented treatment identities."
+  },
+  "project_identity_adjudication": {
+    "survivor_record_id": "project_summer-2024-express-bus-service-additions",
+    "merged_alias": "project_meeting-doc-140461-express-bus-additions-2024",
+    "mechanism": "data/identity-overrides/merges.json",
+    "basis": "The April planning record and July delivered record describe the same six-route Summer package, not two projects. Identity consolidation preserves both source IDs, evidence refs, and planned/implemented merged field values; a guarded correction promotes only the resolved project status to implemented."
+  },
+  "duration_caveat": {
+    "finding": "The July source recommends returning to prior schedules in September 2024, and the December source later says the increases were removed in fall 2024.",
+    "disposition": "The addition occurrence does not imply permanence. The separate reviewed occurrence occurrence:1dddfb078a97dd148a4e123d now represents the exact September 1 formal schedule boundary and delivered Fall removal without altering this event's source-time semantics.",
+    "removal_receipt": "data/quality/acquisition/receipts/express-bus-trip-discontinuation-september-2024.json"
+  },
+  "reproducibility": {
+    "curation_script": "scripts/curate-express-bus-trip-additions-june-2024.ts",
+    "submission_journal": "data/submissions/2026-07-13_codex_express-bus-trip-additions-june-2024.jsonl",
+    "observation_count": 18,
+    "semantic_correction_ids": [
+      "core-coverage-express-bus-june-2024-prospective-lifecycle-20260713",
+      "core-coverage-express-bus-june-30-2024-year-resolution-20260713",
+      "core-coverage-congestion-pricing-june-2024-prospective-lifecycle-20260713",
+      "core-coverage-express-bus-support-relation-prospective-status-20260713",
+      "core-coverage-express-bus-project-umbrella-agency-20260713",
+      "core-coverage-express-bus-announcement-description-source-boundary-20260713",
+      "core-coverage-express-bus-project-resolved-status-20260713",
+      "core-coverage-meeting-doc-138456-board-authority-tier-20260713",
+      "core-coverage-meeting-doc-146846-board-authority-tier-20260713"
+    ],
+    "authority_classification_audit": "data/quality/acquisition/receipts/source-authority-press-express-audit-2026-07-13.json",
+    "promotion_script": "scripts/promote-express-bus-trip-additions-2024.ts",
+    "occurrence_decision": "data/operational-occurrence-review/accepted/decisions/express-bus-trip-additions-2024-06-30.json",
+    "occurrence_decision_sha256": "341d3e9a81975418fa4ce03e40140065bd1b39d7e3be3da536315cfad95d4992",
+    "projected_occurrence_count": 128,
+    "projected_eligible_occurrence_count": 127,
+    "projected_eligible_route_pair_count": 152
+  }
+}

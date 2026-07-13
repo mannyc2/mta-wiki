@@ -15,6 +15,7 @@ generated_at: "2026-06-21T23:19:26.527Z"
 submission_ids:
   - "sub_fbd641f38b46c3b6"
 payload:
+  authority_tier: "board_material"
   content_type: "meeting document - staff summary with resolutions"
   date_text: "March 17, 2021"
   date_text_normalized:

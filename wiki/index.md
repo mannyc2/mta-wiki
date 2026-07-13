@@ -3061,6 +3061,7 @@
 - [[wiki/projects/project_ezpass-transponder-procurement-2024|E-ZPass Electronic Transponder Procurement]] (project)
 - [[wiki/projects/project_f-m-swap-2025|F / M Subway Service Swap (F/M Swap)]] (project)
 - [[wiki/projects/project_fair-fares|Fair Fares program]] (project)
+- [[wiki/projects/project_fall-2024-express-bus-trip-readjustment|Fall 2024 Express Bus Trip Readjustment]] (project)
 - [[wiki/projects/project_far-rockaway-switch-maintenance-2026|Far Rockaway Branch – Switch Maintenance]] (project)
 - [[wiki/projects/project_fare-free-bus-pilot|Fare-Free Bus Pilot]] (project)
 - [[wiki/projects/project_fare-gate-station-guard-pilot-nov2022|Fare Gate Station Guard Pilot]] (project)
@@ -3597,7 +3598,6 @@
 - [[wiki/projects/project_meeting-doc-140411-tbta-payroll-mobility-tax-bonds|TBTA Payroll Mobility Tax Bonds Series 2024B and 2024C]] (project)
 - [[wiki/projects/project_meeting-doc-140411-temp-fare-pilot-railroads|Temporary Fare Pilot Program on the Railroads]] (project)
 - [[wiki/projects/project_meeting-doc-140461-battery-electric-access-a-ride|Battery-Electric Access-A-Ride Pilot]] (project)
-- [[wiki/projects/project_meeting-doc-140461-express-bus-additions-2024|Express Bus Service Additions 2024]] (project)
 - [[wiki/projects/project_meeting-doc-140516-parking-discount|North White Plains Parking Discount]] (project)
 - [[wiki/projects/project_meeting-doc-140516-uniticket-discount|UniTicket Fare Discount Pilot]] (project)
 - [[wiki/projects/project_meeting-doc-140516-weekend-ferry-pilot|Weekend Ferry Pilot]] (project)
@@ -4275,6 +4275,7 @@
 - [[wiki/projects/project_subway-surfing-kills-campaign|Subway Surfing Kills Campaign]] (project)
 - [[wiki/projects/project_subways-cleaning-initiative|Subways Cleaning Initiative]] (project)
 - [[wiki/projects/project_subways-north-star-2024|Department of Subways North Star]] (project)
+- [[wiki/projects/project_summer-2024-express-bus-service-additions|Express Bus Service Additions 2024]] (project)
 - [[wiki/projects/project_summer-saturdays-pilot|Summer Saturdays Discount Program]] (project)
 - [[wiki/projects/project_super-express-trains-new-haven-line|New Haven Line Super Express Trains]] (project)
 - [[wiki/projects/project_swiftly-pilot|Swiftly Pilot]] (project)
@@ -7350,8 +7351,10 @@
 - [[wiki/sources/meeting_doc_98651|Improving Bicycle, Pedestrian & Micromobility Access to MTA Facilities]] (source)
 - [[wiki/sources/meeting_doc_98656|Third Track Board Presentation]] (source)
 - [[wiki/sources/meeting_doc_98661|Faster, Cleaner, Safer: Strategic Action Plan]] (source)
+- [[wiki/sources/mta_express_bus_service_increases_june30_2024|MTA approves more express bus service for Brooklyn and Staten Island]] (source)
 - [[wiki/sources/mta_queens_bus_network_redesign_service_changes|MTA Queens Bus Network Redesign service changes]] (source)
 - [[wiki/sources/nostrandave_map|Nostrand Avenue SBS Map]] (source)
+- [[wiki/sources/ny_open_data_mta_bus_schedule_boundaries_2024|MTA Bus Schedules 2024 six-route boundary and weekday-count query]] (source)
 - [[wiki/sources/nyc_dot_current_projects_july_2026|NYC DOT Current Projects]] (source)
 - [[wiki/sources/nyc_mayor_broadway_created_june_2026|Mayor Mamdani: The World Cup Belongs to New Yorkers]] (source)
 - [[wiki/sources/nyct_itsp_solicitation_notice_2026|NYCT ITSP Solicitation Notice]] (source)
@@ -7400,8 +7403,8 @@
 ## Data-Only Records
 
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
-- event: 8073 canonical records in `data/canonical/events.jsonl`
+- event: 8075 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 21189 canonical records in `data/canonical/relations.jsonl`
+- relation: 21205 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
-- treatment_component: 2922 canonical records in `data/canonical/treatment_components.jsonl`
+- treatment_component: 2924 canonical records in `data/canonical/treatment_components.jsonl`

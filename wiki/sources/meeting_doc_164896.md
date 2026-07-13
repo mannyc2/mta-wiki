@@ -16,6 +16,7 @@ raw_text: "Staff Summary - Subject: County of Westchester Employer-Based Shuttle
 submission_ids:
   - "sub_42945609c5229e48"
 payload:
+  authority_tier: "board_material"
   content_type: "staff summary"
   date: "February 3, 2025"
   date_normalized:

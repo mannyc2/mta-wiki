@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "express-bus-june-30-treatment-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:aa1111777291b0eaa86b7673",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T11:06:10.000Z",
+  "rationale": "Approved occurrence occurrence:8fd87e702db534906b401f11 directly binds the delivered atomic service_pattern treatment treatment_weekday-express-bus-trip-additions-summer-2024 and its delivered has_treatment relation. The broad diagnostic does not require a second treatment edge or a duplicate treatment identity.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

@@ -5460,7 +5460,14 @@ describe("source authority_tier (C7)", () => {
   it("derives a tier from the document's own classification fields", () => {
     expect(source({ content_type: "monitoring report" }).authority_tier).toBe("official_evaluation");
     expect(source({ content_type: "presentation", title: "Board Committee Agenda" }).authority_tier).toBe("board_material");
+    expect(source({ content_type: "staff summary", title: "Express Bus Service Additions" }).authority_tier).toBe("board_material");
     expect(source({ content_type: "press release" }).authority_tier).toBe("press_release");
+    expect(source({ content_type: "press release", description: "Announces an open-data dataset" }).authority_tier).toBe(
+      "press_release",
+    );
+    expect(source({ content_type: "official structured dataset query", description: "weekday express trip counts" }).authority_tier).toBe(
+      "dataset_documentation",
+    );
     expect(source({ content_type: "brochure" }).authority_tier).toBe("plan_document");
   });
 

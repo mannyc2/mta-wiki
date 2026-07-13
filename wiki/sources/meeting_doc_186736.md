@@ -16,6 +16,7 @@ raw_text: "LICENSE WITH GATEWAY FOODS HOLDING LLC FOR THE RETAIL CONCESSION AND 
 submission_ids:
   - "sub_d4ad21b69337c80b"
 payload:
+  authority_tier: "board_material"
   content_type: "Staff Summary"
   date_text: "SEPTEMBER 30, 2025"
   date_text_normalized:

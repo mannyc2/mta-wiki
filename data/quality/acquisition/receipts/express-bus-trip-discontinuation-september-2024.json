@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "receipt_id": "express-bus-trip-discontinuation-september-2024",
+  "status": "exact_schedule_boundary_and_delivered_scope_recovered",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T11:25:00Z",
+  "scope": {
+    "project_record_id": "project_fall-2024-express-bus-trip-readjustment",
+    "event_record_id": "event_express-bus-schedule-readjustment-effective-2024-09-01",
+    "treatment_record_id": "treatment_weekday-express-bus-trip-discontinuation-fall-2024",
+    "occurrence_id": "occurrence:1dddfb078a97dd148a4e123d",
+    "paired_addition_occurrence_id": "occurrence:8fd87e702db534906b401f11",
+    "route_record_ids": [
+      "route_bm2-brt-south-brooklyn-2017",
+      "route_bm5-brt-south-brooklyn-2017",
+      "route_sim1c-meeting-doc-138456",
+      "route_sim4c-meeting-doc-138456",
+      "route_sim23-madison-ave-cb6-jun2025",
+      "route_sim24-madison-ave-cb6-jun2025"
+    ]
+  },
+  "official_narrative_evidence": {
+    "prospective": {
+      "source_id": "meeting_doc_146846",
+      "document_date": "2024-07-16",
+      "evidence": [
+        {
+          "evidence_id": "meeting_doc_146846#p001_c0005",
+          "evidence_sha256": "sha256:d555d7d98db0b044c261c93f7957c834d15522b467a61ad7041ee9c3e71bf671",
+          "finding": "MTA proposed that the added weekday trips on the exact six routes revert to their previous schedules."
+        },
+        {
+          "evidence_id": "meeting_doc_146846#p001_c0011",
+          "evidence_sha256": "sha256:8e52d2fc377d96521a94f196ee3a5971ab4aaea832f07b705315e3e29e7bedd6",
+          "finding": "The source gives September 2024 as the prospective implementation month."
+        }
+      ],
+      "disposition": "Preserved as source-time planning context; it is not rewritten as realized evidence and is not emitted as a second occurrence."
+    },
+    "retrospective": {
+      "source_id": "meeting_doc_160441",
+      "document_date": "2024-12-10",
+      "evidence": [
+        {
+          "evidence_id": "meeting_doc_160441#p003_c0004",
+          "evidence_sha256": "sha256:730a088e5bef117b4b219c33d1ed4a5918f303f53260c116cf651770b2dfedb9",
+          "finding": "MTA states that the six express-route summer increases were removed in fall 2024."
+        },
+        {
+          "evidence_id": "meeting_doc_160441#p003_c0005",
+          "evidence_sha256": "sha256:a1cb3550e548ba0e4cc902da5e264574b62e2318fcfe0a6f5418eb28d04373de",
+          "finding": "MTA enumerates the six affected routes and the route/direction trip package."
+        }
+      ]
+    }
+  },
+  "official_schedule_capture": {
+    "source_id": "ny_open_data_mta_bus_schedule_boundaries_2024",
+    "dataset_id": "udt9-hvjq",
+    "dataset_title": "MTA Bus Schedules: 2024",
+    "publisher": "Metropolitan Transportation Authority",
+    "dataset_url": "https://data.ny.gov/Transportation/MTA-Bus-Schedules-2024/udt9-hvjq/about_data",
+    "api_url": "https://data.ny.gov/resource/udt9-hvjq.json",
+    "retrieved_at": "2026-07-13T10:25:43Z",
+    "staged_at": "2026-07-13T10:37:03.075Z",
+    "artifacts": {
+      "source_json_sha256": "ff672cb577395ebfbf127c4e88bbfd66face8ce62ec1efaabf24f05a147693b1",
+      "bundle_boundaries_json_sha256": "5d58d9c572a5b8105c98d6c1132d303ace682262fb88d82ae3ce593eaf269665",
+      "dataset_metadata_json_sha256": "0d9a369c8c37f87e82e0b194373661e6f88eda5780523dc084d14a1357a862f7",
+      "text_sha256": "d41ecdf1d1b5682ed33e4b773b61386587be83fcb3a8d74481ffd22a97b29317",
+      "blocks_sha256": "1b3ab902b79eb4d9a108455a917fe6b84b3d31b172418f7c728c9f3e48866dd2"
+    },
+    "field_semantics": [
+      "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0004",
+      "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0005",
+      "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0006",
+      "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0007",
+      "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0008",
+      "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0011"
+    ],
+    "bundle_boundary_query": {
+      "select": "distinct schedule_date,bundle",
+      "where": "schedule_date in('2024-06-29T00:00:00.000','2024-06-30T00:00:00.000','2024-08-31T00:00:00.000','2024-09-01T00:00:00.000')",
+      "order": "schedule_date,bundle",
+      "limit": 100,
+      "response_row_count": 4,
+      "response_sha256": "5d58d9c572a5b8105c98d6c1132d303ace682262fb88d82ae3ce593eaf269665",
+      "fall_boundary_evidence": [
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0015",
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0016"
+      ],
+      "finding": "The official dataset names 2024Jun as the bundle in effect on August 31 and 2024Sep as the bundle in effect on September 1."
+    },
+    "weekday_count_query": {
+      "select": "schedule_date,route_id,direction,bundle,count(*) as trip_count",
+      "where": "origin='1' AND trip_type='13' AND service_id like '%Weekday%' AND route_id in('BM2','BM5','SIM1C','SIM4C','SIM23','SIM24') AND schedule_date in('2024-06-28T00:00:00.000','2024-07-01T00:00:00.000','2024-08-30T00:00:00.000','2024-09-03T00:00:00.000')",
+      "group": "schedule_date,route_id,direction,bundle",
+      "order": "schedule_date,route_id,direction,bundle",
+      "limit": 500,
+      "response_row_count": 48,
+      "response_sha256": "ff672cb577395ebfbf127c4e88bbfd66face8ce62ec1efaabf24f05a147693b1",
+      "interpretation": "Each count is a scheduled express-trip origin row, not an observed vehicle trip and not a count of every scheduled timepoint stop."
+    },
+    "excluded_field_caveat": "The day_type field was excluded because sampled live rows label 2024-07-01 inconsistently with the weekday service_id. The explicit service_id Weekday filter is used for comparable route counts."
+  },
+  "route_level_corroboration": [
+    {
+      "route_id": "BM2",
+      "direction": "W",
+      "august_30_count": 21,
+      "september_3_count": 20,
+      "evidence_ids": [
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0043",
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0055"
+      ]
+    },
+    {
+      "route_id": "BM5",
+      "direction": "E",
+      "august_30_count": 18,
+      "september_3_count": 17,
+      "evidence_ids": [
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0044",
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0056"
+      ]
+    },
+    {
+      "route_id": "SIM1C",
+      "direction": "N",
+      "august_30_count": 56,
+      "september_3_count": 55,
+      "evidence_ids": [
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0046",
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0058"
+      ]
+    },
+    {
+      "route_id": "SIM4C",
+      "direction": "S",
+      "august_30_count": 30,
+      "september_3_count": 29,
+      "evidence_ids": [
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0053",
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0065"
+      ]
+    },
+    {
+      "route_id": "SIM23",
+      "directions": [
+        "N",
+        "S"
+      ],
+      "august_30_counts": [
+        7,
+        7
+      ],
+      "september_3_counts": [
+        6,
+        6
+      ],
+      "evidence_ids": [
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0048",
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0049",
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0060",
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0061"
+      ]
+    },
+    {
+      "route_id": "SIM24",
+      "directions": [
+        "N",
+        "S"
+      ],
+      "august_30_counts": [
+        7,
+        7
+      ],
+      "september_3_counts": [
+        6,
+        6
+      ],
+      "evidence_ids": [
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0050",
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0051",
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0062",
+        "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0063"
+      ]
+    }
+  ],
+  "temporal_adjudication": {
+    "resolved_realized_onset": "2024-09-01",
+    "precision": "day",
+    "onset_semantics": "formal schedule-effective bundle boundary",
+    "first_affected_weekday": "2024-09-03",
+    "basis": "The structured feed establishes the exact September 1 bundle boundary; the December retrospective establishes delivered removal of the identical six-route package. The weekday-count comparison shows the route-level reductions on September 3 and does not replace the formal schedule-effective date.",
+    "resolved_status": "realized"
+  },
+  "scope_adjudication": {
+    "treatment_scope_kind": "atomic",
+    "treatment_family": "service_pattern",
+    "route_count": 6,
+    "basis": "The official sources describe one shared discontinuation of a six-route weekday trip package. A distinct Fall project prevents the inverse treatment from cross-producting with the Summer addition project."
+  },
+  "source_class_correction": {
+    "correction_id": "core-coverage-schedule-query-dataset-authority-tier-20260713",
+    "finding": "The generic normalizer matched 'press' inside 'express' and initially labeled the structured dataset query as a press release.",
+    "disposition": "Patch the source authority tier to dataset_documentation without changing source literals or evidence.",
+    "board_material_correction_ids": [
+      "core-coverage-meeting-doc-146846-board-authority-tier-20260713",
+      "core-coverage-meeting-doc-160441-board-authority-tier-20260713"
+    ],
+    "normalizer_fix": "Bare press matching now requires token boundaries, so a structured dataset description containing express falls through to dataset_documentation. Explicit press-release signals retain precedence over dataset mentions, and staff summaries classify as board material.",
+    "authority_classification_audit": "data/quality/acquisition/receipts/source-authority-press-express-audit-2026-07-13.json"
+  },
+  "reproducibility": {
+    "curation_script": "scripts/curate-express-bus-trip-discontinuation-fall-2024.ts",
+    "submission_journal": "data/submissions/2026-07-13_codex_express-bus-trip-discontinuation-fall-2024.jsonl",
+    "observation_count": 18,
+    "promotion_script": "scripts/promote-express-bus-trip-discontinuation-2024.ts",
+    "occurrence_decision": "data/operational-occurrence-review/accepted/decisions/express-bus-trip-discontinuation-2024-09-01.json",
+    "occurrence_decision_sha256": "89d72291c6c33c98c972deeef927d83b125cb54555e5c6afdf61588dd406435b",
+    "projected_occurrence_count": 128,
+    "projected_eligible_occurrence_count": 127,
+    "projected_eligible_route_pair_count": 152
+  }
+}

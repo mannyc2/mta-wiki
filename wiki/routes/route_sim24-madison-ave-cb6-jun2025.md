@@ -7,21 +7,26 @@ source_id: "madison_ave_e23_st_e42_st_cb6_jun2025"
 source_ids:
   - "madison_ave_e23_st_e42_st_cb6_jun2025"
   - "meeting_doc_138456"
+  - "meeting_doc_146846"
   - "meeting_doc_160441"
   - "meeting_doc_79331"
 local_observation_id: "route_sim24_madison_ave_cb6_jun2025"
 local_observation_ids:
   - "route_meeting_doc_160441_sim24"
   - "route_meeting_doc_79331_sim24"
+  - "route_sim24_express_fall_2024_discontinuation"
+  - "route_sim24_express_summer_2024_realized"
   - "route_sim24_madison_ave_cb6_jun2025"
   - "route_sim24_meeting_doc_138456"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T20:54:29.210Z"
+generated_at: "2026-07-13T10:40:28.473Z"
 raw_text: "SIM24 (NYCT): Staten Island: Prince's Bay-Huguenot Av-Midtown"
 submission_ids:
+  - "sub_0fb8d2d7f72fa832"
   - "sub_11030a731441d682"
   - "sub_3a9df6bccdfcaacd"
+  - "sub_5d7be3f4f2d78996"
   - "sub_7b64292d06f029c3"
   - "sub_cae961e6037533cf"
 payload:
@@ -39,6 +44,7 @@ payload:
   description: "Express bus route on Madison Avenue in study area"
   operator: "NYCT"
   route_id: "SIM24"
+  route_label: "SIM24"
   route_name: "SIM24"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
@@ -91,6 +97,26 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_79331/blocks.jsonl"
     source_quote: "Starting 2022, the MTA took over operation of SIM23 and SIM24 routes."
     text_sha256: "sha256:d6f622e5d0703fc59d56235363a0196db4d0ecb7d9c22914dce4b4d36272a35f"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0004"
+    evidence_id: "meeting_doc_146846#p003_c0004"
+    page_number: 3
+    role: "delivered_route_identity_and_trip_pattern"
+    source_id: "meeting_doc_146846"
+    source_path: "raw/sources/meeting_doc_146846/blocks.jsonl"
+    source_quote: "SIM24"
+    text_sha256: "sha256:2d5b66f5689e30fff6dd3a72d0505bf2fa133db542c47e06fe21cc437bd3718c"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0005"
+    evidence_id: "meeting_doc_160441#p003_c0005"
+    page_number: 3
+    role: "retrospective_route_identity_and_trip_pattern"
+    source_id: "meeting_doc_160441"
+    source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
+    source_quote: "SIM24"
+    text_sha256: "sha256:a1cb3550e548ba0e4cc902da5e264574b62e2318fcfe0a6f5418eb28d04373de"
     text_source: "raw_text"
 ---
 

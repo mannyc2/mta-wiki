@@ -6,16 +6,21 @@ display_name: "SIM4C (NYCT)"
 source_id: "meeting_doc_138456"
 source_ids:
   - "meeting_doc_138456"
+  - "meeting_doc_146846"
   - "meeting_doc_160441"
 local_observation_id: "route_sim4c_meeting_doc_138456"
 local_observation_ids:
   - "route_meeting_doc_160441_sim4c"
+  - "route_sim4c_express_fall_2024_discontinuation"
+  - "route_sim4c_express_summer_2024_realized"
   - "route_sim4c_meeting_doc_138456"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-20T21:40:38.658Z"
+generated_at: "2026-07-13T10:40:27.497Z"
 raw_text: "SIM4C (NYCT): Staten Island: Huguenot-Richmond Av-Midtown/Downtown"
 submission_ids:
+  - "sub_0543a1c507c3a22e"
+  - "sub_598d6e6d6dd4c032"
   - "sub_95947d5d03f5937e"
   - "sub_de9634c71d0af4be"
 payload:
@@ -26,6 +31,7 @@ payload:
   description: "Staten Island: Huguenot-Richmond Av-Midtown/Downtown"
   operator: "NYCT"
   route_id: "SIM4C"
+  route_label: "SIM4C"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "express"
@@ -58,6 +64,26 @@ evidence_refs:
     page_number: 3
     source_id: "meeting_doc_160441"
     source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
+    text_sha256: "sha256:a1cb3550e548ba0e4cc902da5e264574b62e2318fcfe0a6f5418eb28d04373de"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0013"
+    evidence_id: "meeting_doc_146846#p002_c0013"
+    page_number: 2
+    role: "delivered_route_identity_and_trip_pattern"
+    source_id: "meeting_doc_146846"
+    source_path: "raw/sources/meeting_doc_146846/blocks.jsonl"
+    source_quote: "SIM4C"
+    text_sha256: "sha256:5f01e56329716c49b27e65e1edf1dbaf0ded2ee45f8a411a6dd0a7235b4905bb"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0005"
+    evidence_id: "meeting_doc_160441#p003_c0005"
+    page_number: 3
+    role: "retrospective_route_identity_and_trip_pattern"
+    source_id: "meeting_doc_160441"
+    source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
+    source_quote: "SIM4C"
     text_sha256: "sha256:a1cb3550e548ba0e4cc902da5e264574b62e2318fcfe0a6f5418eb28d04373de"
     text_source: "raw_text"
 ---

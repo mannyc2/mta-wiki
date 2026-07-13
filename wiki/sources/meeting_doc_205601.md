@@ -16,6 +16,7 @@ raw_text: "Staff Summary for License Agreement with Dover Greens LLC for Commute
 submission_ids:
   - "sub_75d3d33707163325"
 payload:
+  authority_tier: "board_material"
   content_type: "staff summary"
   date: "2026-04-30"
   date_normalized:

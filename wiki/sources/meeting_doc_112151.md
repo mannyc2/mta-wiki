@@ -15,6 +15,7 @@ generated_at: "2026-06-20T12:17:39.939Z"
 submission_ids:
   - "sub_13ce7ddb6ba42928"
 payload:
+  authority_tier: "board_material"
   content_type: "staff_summary_and_policy_document"
   date_text: "May 24, 2023"
   date_text_normalized:

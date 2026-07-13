@@ -16,6 +16,7 @@ raw_text: "Staff Summary - DISPOSITION OF PROPERTY TO THE TARRYTOWN MUNICIPAL HO
 submission_ids:
   - "sub_7802822691abcf00"
 payload:
+  authority_tier: "board_material"
   content_type: "application/pdf"
   description: "Staff summary regarding disposition of MNR property to Tarrytown Municipal Housing Authority for less than fair market value, and related permanent easement"
   document_kind: "Staff Summary"

@@ -16,7 +16,7 @@ raw_text: "Service Changes: Express Bus Service Additions Summer 2024 - Sarah Wy
 submission_ids:
   - "sub_ed06c00d8de6dba2"
 payload:
-  authority_tier: "press_release"
+  authority_tier: "board_material"
   content_type: "staff summary"
   date: "April 26, 2024"
   date_normalized:

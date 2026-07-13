@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "express-bus-june-30-delivered-status-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:e4afa1591ca15b8878ca36b8",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T11:06:20.000Z",
+  "rationale": "The April announcement event correctly remains source-time planned. Approved occurrence occurrence:8fd87e702db534906b401f11 resolves it as realized through a separately evidence-bound delivered timeline relation and the July retrospective. Rewriting the announcement lifecycle would erase document-time semantics, so no further broad-row status recovery applies.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

@@ -16,6 +16,7 @@ raw_text: "Subject FALL TRACKWORK PROGRAMS Date August 19, 2025"
 submission_ids:
   - "sub_8b3919992c606a98"
 payload:
+  authority_tier: "board_material"
   content_type: "staff summary"
   date: "August 19, 2025"
   date_normalized:

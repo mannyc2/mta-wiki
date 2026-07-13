@@ -15,6 +15,7 @@ generated_at: "2026-06-20T12:14:15.083Z"
 submission_ids:
   - "sub_28fe1f12600e3dc7"
 payload:
+  authority_tier: "board_material"
   content_type: "application/pdf"
   publisher: "MTA"
   retrieved_at: "2026-06-07T01:15:00.248Z"

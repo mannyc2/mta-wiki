@@ -16,6 +16,7 @@ raw_text: "Subject ACQUISITION OF PROPERTY ALONG ERSKINE PLACE IN THE BRONX FROM
 submission_ids:
   - "sub_498097d7979ef8ec"
 payload:
+  authority_tier: "board_material"
   content_type: "staff summary"
   date_text: "APRIL 30, 2026"
   date_text_normalized:

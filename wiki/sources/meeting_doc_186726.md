@@ -16,6 +16,7 @@ raw_text: "Subject OCTOBER 5, 2025 SCHEDULE CHANGE & FALL/WINTER PROGRAMS Depart
 submission_ids:
   - "sub_b69e9f6fbc15f31b"
 payload:
+  authority_tier: "board_material"
   content_type: "staff summary"
   date: "2025-09-09"
   date_normalized:

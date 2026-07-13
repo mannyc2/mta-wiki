@@ -11586,13 +11586,14 @@ function normalizeSourceGapPayload(payload: JsonObject): JsonObject {
 const SOURCE_DATE_FIELDS = ["publication_date", "date", "document_date", "date_text", "year"] as const;
 
 /** Authority tier from the document's own classification fields (C7). Returns undefined when no
- *  signal — S2.7 enriches this with publisher heuristics and builds the corroboration view on top. */
+ *  signal — S2.7 enriches this with publisher heuristics and builds the corroboration view on top.
+ *  Bare-word signals must use token boundaries: substring matching `press` also matches `express`. */
 function normalizeAuthorityTier(payload: JsonObject): string | undefined {
   const hay = normalizedHaystack(payload, ["content_type", "source_type", "document_type", "document_kind", "publisher", "title", "description"]);
   if (!hay) return undefined;
   if (hasAny(hay, ["evaluation", "monitoring_report", "monitoring", "assessment", "audit", "before_and_after"])) return "official_evaluation";
-  if (hasAny(hay, ["board", "committee", "agenda", "minutes", "board_book"])) return "board_material";
-  if (hasAny(hay, ["press_release", "press", "announcement", "newsroom"])) return "press_release";
+  if (hasAny(hay, ["board", "committee", "agenda", "minutes", "board_book", "staff_summary"])) return "board_material";
+  if (hasAny(hay, ["press_release", "announcement", "newsroom"]) || hasAnyToken(hay, ["press"])) return "press_release";
   if (hasAny(hay, ["data_dictionary", "dataset", "open_data", "metadata", "data_documentation"])) return "dataset_documentation";
   if (hasAny(hay, ["plan", "report", "study", "proposal", "presentation", "brochure", "factsheet", "fact_sheet"])) return "plan_document";
   return undefined;

@@ -15,6 +15,7 @@ generated_at: "2026-06-21T21:14:33.957Z"
 submission_ids:
   - "sub_46f658bbb7d14683"
 payload:
+  authority_tier: "board_material"
   content_type: "staff summary"
   date: "JANUARY 26, 2026"
   date_normalized:

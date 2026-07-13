@@ -16,6 +16,7 @@ raw_text: "New York City Transit Procurements. Louis Montanti, MTA Deputy Chief 
 submission_ids:
   - "sub_702473fb69f16dc3"
 payload:
+  authority_tier: "board_material"
   content_type: "procurement staff summary"
   date: "February 2025"
   date_normalized:

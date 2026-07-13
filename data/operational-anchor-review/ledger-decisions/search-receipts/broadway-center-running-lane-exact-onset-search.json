@@ -3,9 +3,9 @@
   "receipt_id": "broadway-center-running-lane-exact-onset-search",
   "gap_id": "operational-coverage:638d039018fabef3e9b37740",
   "reviewer": "codex-corpus-completion-2026-07-13",
-  "searched_at": "2026-07-13T09:40:00.000Z",
-  "rationale": "Searched every source connected to the Broadway/Q70 occurrence and the staged source registry for retrospective language that states an exact physical activation date. The May presentation supplies only a forecast, while the later official sources establish delivered status by an as-of date without stating when the lane physically opened.",
-  "corpus_fingerprint": "71489c7e1d99808ff20f816135e8855468c569f76d21fa9b93f3df796411e9b1",
+  "searched_at": "2026-07-13T11:30:00.000Z",
+  "rationale": "Revalidated every source connected to the Broadway/Q70 occurrence and the staged source registry against the final express-bus corpus for retrospective language that states an exact physical activation date. The May presentation supplies only a forecast, while the later official sources establish delivered status by an as-of date without stating when the lane physically opened. The new express-bus sources, project identity consolidation, and source-authority backfill are unrelated to Broadway and do not change the registry matches.",
+  "corpus_fingerprint": "6b4d239ae6119515c968d3016e214031036bc04243049b6c048aaeacb7c76ee1",
   "source_searches": [
     {
       "source_id": "better_buses",
