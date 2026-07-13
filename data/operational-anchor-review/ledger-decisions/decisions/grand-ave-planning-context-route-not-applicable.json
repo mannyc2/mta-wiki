@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "grand-ave-planning-context-route-not-applicable",
+  "gap_id": "operational-coverage:91332156f9623b4e8ffdbf8c",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T07:25:00.000Z",
+  "rationale": "This is a prospective project-level implementation target, not a realized route-level occurrence. The same presentation mentions several routes across project and network context, but supplies no delivered event-to-route scope. Assigning those candidates to the planning milestone would create an unsupported route-treatment cross-product, so route recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_project-implementation-late-2025-2026",
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024",
+      "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024#p022_c0002",
+      "block_id": "p022_c0002"
+    },
+    {
+      "record_id": "relation_project-timeline-implementation_2",
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024",
+      "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024#p022_c0002",
+      "block_id": "p022_c0002"
+    }
+  ],
+  "search_receipt_ids": []
+}
