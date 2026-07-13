@@ -2,7 +2,7 @@
   "schema_version": 1,
   "proposal_id": "orp_qbnr_q48_lifecycle_split_2025",
   "proposal_kind": "observation_bundle",
-  "corpus_fingerprint": "d6bf199dcda4e55e4336ce12d90facd8392fcc0be0079115fb5503f3e901b19c",
+  "corpus_fingerprint": "d1c7e4be67f52b9286fe8332ecf1e4245a9febf3f2568f1062985fac12a28d6d",
   "route_anchor_pin": {
     "path": "data/exports/releases/v1-rc6/route_anchors.jsonl",
     "release_id": "v1-rc6",

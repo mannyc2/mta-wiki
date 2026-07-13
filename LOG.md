@@ -56,9 +56,13 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `service_pattern` occurrences and Q61/Q80/Q82/Q89 as complete two-to-four-member bundles. Referenced
   predecessor and replacement routes remain treatment context only. Coverage now reports `70` occurrences,
   `69` eligible occurrences, `72` eligible occurrence-route pairs, `268` open priority rows, and `137`
-  terminal rows. Sixty-seven QBNR change units are clause-complete, leaving `60`; only two existing-anchor
-  rows remain pending, alongside the create-route, identity-exception, and canonical-then-terminal cohorts.
-  Three explicit no-change rows are tracked separately.
+  terminal rows. A seventh reviewed recovery promoted Q25 as one two-member bundle on only the current
+  Q25 identity; the discontinued Limited service remains `service_pattern` context and does not create a
+  route identity or candidate. Coverage now reports `71` occurrences, `70` eligible occurrences, `73`
+  eligible occurrence-route pairs, `268` open priority rows, and `139` terminal rows. Sixty-eight QBNR
+  change units are clause-complete, leaving `59`; Q48 is the sole pending existing-anchor row. Its pending
+  lifecycle-split proposal remains proposed and otherwise unchanged, with only its corpus fingerprint
+  refreshed after this coverage cut. Three explicit no-change rows are tracked separately.
 
 ## 2026-07-11
 

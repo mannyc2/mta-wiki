@@ -245,8 +245,8 @@ describe("operational occurrences v1", () => {
         member_treatment_families: string[];
       }>;
     };
-    expect(rows).toHaveLength(70);
-    expect(summary.candidate_projection_count).toBe(72);
+    expect(rows).toHaveLength(71);
+    expect(summary.candidate_projection_count).toBe(73);
     expect(review.decision_count).toBe(rows.length);
     expect(expectedCandidates.candidate_count).toBe(expectedCandidates.candidates.length);
     expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === "Q110")).toEqual([
@@ -419,9 +419,23 @@ describe("operational occurrences v1", () => {
         },
       ]);
     }
+    expect(
+      expectedCandidates.candidates.filter(
+        (candidate) => candidate.occurrence_id === "occurrence:4a1a43f2512f477e5c68f917",
+      ),
+    ).toEqual([
+      {
+        occurrence_id: "occurrence:4a1a43f2512f477e5c68f917",
+        route_id: "Q25",
+        treatment_kind: "bundle",
+        analysis_family: "route_redesign",
+        member_treatment_families: ["service_pattern", "bus_stop_or_boarding"],
+      },
+    ]);
     for (const forbiddenRouteId of ["Q12", "Q20B", "Q21", "Q36", "Q63", "Q98"]) {
       expect(expectedCandidates.candidates.some((candidate) => candidate.route_id === forbiddenRouteId)).toBe(false);
     }
+    expect(expectedCandidates.candidates.some((candidate) => /limited/iu.test(candidate.route_id))).toBe(false);
   });
 
   it("groups accepted atomic anchor reviews into one stable plural-route occurrence", () => {
