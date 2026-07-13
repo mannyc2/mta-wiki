@@ -1,0 +1,352 @@
+{
+  "proposal_id": "orp_qbnr_6_create_route_service_start_bundles_2025",
+  "corpus_fingerprint": "5d5ca34015a82999562d859203cec93d139fc74e9b45ff554e84a53115bf5bc9",
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf",
+    "operational-coverage:45dd3045070322bc90d91414",
+    "operational-coverage:a9b2bf1ff109628219637775"
+  ],
+  "project_record_id": "project_queens-bus-network-redesign",
+  "project_label": "Queens Bus Network Redesign",
+  "drafted_by": "codex-corpus-completion-2026-07-13",
+  "drafted_at": "2026-07-13T02:10:00.000Z",
+  "rationale": "Six exact official MTA rows establish realized QBNR service-start dates and one new current route identity per row. Each row has multiple bounded treatment members and is reviewed as a Queens Bus Network Redesign route-redesign bundle; predecessor, replacement, alternative, and timetable references remain treatment text or reviewed context only.",
+  "units": [
+    {
+      "source_block_ids": [
+        "p001_b0023"
+      ],
+      "source_block_sha256s": [
+        "sha256:0645ac27103cd691a5817a0808299e4993c7f7538210710f4c34244e748f4b1b"
+      ],
+      "source_route_labels": [
+        "Q20"
+      ],
+      "route_label": "Q20",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q20"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "college_point_jamaica_connection",
+          "label": "Q20 college point jamaica connection",
+          "source_quote": "The Q20 will connect College Point and Jamaica using the existing Q20A routing along 20 Av and Main St.",
+          "treatment_kind": "service expansion",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated Q20 college point jamaica connection treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "q20b_replacement",
+          "label": "Q20 q20b replacement",
+          "source_quote": "Existing Q20B service on 14 Av will be discontinued and replaced by the Q76 .",
+          "treatment_kind": "route segment discontinuation and replacement",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated Q20 q20b replacement treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "jamaica_avenue_approach",
+          "label": "Q20 jamaica avenue approach",
+          "source_quote": "To the south, the Q20 will approach Downtown Jamaica via Jamaica Av instead of Sutphin Blvd.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated Q20 jamaica avenue approach treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q20 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q20 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0050"
+      ],
+      "source_block_sha256s": [
+        "sha256:ee7e92d48d8a66b48aa2c838a71b1afbab70457999b0d7a2465553afa8368008"
+      ],
+      "source_route_labels": [
+        "Q45"
+      ],
+      "route_label": "Q45",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q45"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "all_day_frequent_service",
+          "label": "Q45 all day frequent service",
+          "source_quote": "The new Q45 will provide all-day frequent service along Union Tpke",
+          "treatment_kind": "service frequency and span adjustment",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated Q45 all day frequent service treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "direct_connection",
+          "label": "Q45 direct connection",
+          "source_quote": "and create a new direct connection between 188 St and Kew Gardens.",
+          "treatment_kind": "service expansion",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated Q45 direct connection treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q45 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q45 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0066"
+      ],
+      "source_block_sha256s": [
+        "sha256:73195d32cc7fd9078a71914e98a15751920bd51188409c2bf5ff98af77d8c8eb"
+      ],
+      "source_route_labels": [
+        "Q63"
+      ],
+      "route_label": "Q63",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q63"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "northern_boulevard_connection",
+          "label": "Q63 northern boulevard connection",
+          "source_quote": "The new Q63 will run the length of Northern Blvd between Flushing and Long Island City.",
+          "treatment_kind": "service expansion",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated Q63 northern boulevard connection treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "limited_stops",
+          "label": "Q63 limited stops",
+          "source_quote": "The new Q63 will make limited stops on Northern Blvd between Main St and 114 St and on Northern Blvd and Jackson Av between 49 St and Court Square.",
+          "treatment_kind": "limited stops",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated Q63 limited stops treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For local service between Main St and 114 St, take the Q66 . For local service between 49 St and Court Sq, take the Q101 .",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q63 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q63 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0075"
+      ],
+      "source_block_sha256s": [
+        "sha256:f481dd4474426569dd3d1c54dd2de10c52c1e461c4eb991cee063347de6abcbe"
+      ],
+      "source_route_labels": [
+        "Q75"
+      ],
+      "route_label": "Q75",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q75"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "q30_short_trip_replacement",
+          "label": "Q75 q30 short trip replacement",
+          "source_quote": "The new Q75 will replace existing Q30 short trips between Queensborough Community College and Jamaica.",
+          "treatment_kind": "route segment discontinuation and replacement",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated Q75 q30 short trip replacement treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "limited_stops",
+          "label": "Q75 limited stops",
+          "source_quote": "The Q75 will make limited stops on Utopia Pkwy.",
+          "treatment_kind": "limited stops",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated Q75 limited stops treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For local service, take the Q31 .",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q75 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q75 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0083"
+      ],
+      "source_block_sha256s": [
+        "sha256:75a338454c98f804a85dc38457ec405a1369a47fec64975d2fd43c4962990c97"
+      ],
+      "source_route_labels": [
+        "Q86"
+      ],
+      "route_label": "Q86",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q86"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "q5_q85_branch_combination",
+          "label": "Q86 q5 q85 branch combination",
+          "source_quote": "The new Q86 will combine the existing Q5 and Q85 Rosedale branches, creating new connections between Rosedale and Laurelton and bringing service further south.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated Q86 q5 q85 branch combination treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "limited_stops",
+          "label": "Q86 limited stops",
+          "source_quote": "The Q86 will make limited stops on Merrick Blvd between Archer Av and Springfield Blvd.",
+          "treatment_kind": "limited stops",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated Q86 limited stops treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For local service, take the Q5 .",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q86 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q86 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0084"
+      ],
+      "source_block_sha256s": [
+        "sha256:58241d38cda9c436390cb204f950a2a5d1a6bd2e8fae77e16644a134bce5d93d"
+      ],
+      "source_route_labels": [
+        "Q87"
+      ],
+      "route_label": "Q87",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q87"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "q5_green_acres_replacement",
+          "label": "Q87 q5 green acres replacement",
+          "source_quote": "The new Q87 will replace the existing Q5 Green Acres branch.",
+          "treatment_kind": "route segment discontinuation and replacement",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated Q87 q5 green acres replacement treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "limited_stops",
+          "label": "Q87 limited stops",
+          "source_quote": "The Q87 will make limited stops on Merrick Blvd between Archer Av and Springfield Blvd.",
+          "treatment_kind": "limited stops",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated Q87 limited stops treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For local service, take the Q5 .",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q87 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q87 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    }
+  ]
+}
