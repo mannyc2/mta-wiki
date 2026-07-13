@@ -15,11 +15,19 @@
     "operational-coverage:a9b2bf1ff109628219637775"
   ],
   "source_id": "mta_queens_bus_network_redesign_service_changes",
-  "review_state": "proposed",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-13T04:32:09.000Z",
   "provenance": {
     "drafted_by": "codex-corpus-completion-2026-07-13",
     "drafted_at": "2026-07-13T02:10:00.000Z",
-    "method": "qbnr_batch_spec_expansion"
+    "method": "qbnr_batch_spec_expansion",
+    "verifier": {
+      "reviewed_by": "codex-independent-qbnr-spec-review",
+      "reviewed_at": "2026-07-13T04:32:09.000Z",
+      "verdict": "passed",
+      "rationale": "All six paired source rows, hashes, rename text, June 30 date, successor GTFS identities, and clause partitions were independently checked. Strict expansion deduplicates each predecessor/successor pair into one current QM identity and yields three routes, three events, sixteen treatments, and twenty-two same-unit project relations; all forty-four deterministic ids are new and collision-free. X63, X64, and X68 remain separate predecessor identities with no merge or cross-route edge, and no older unresolved literal is expected to awaken."
+    }
   },
   "rationale": "Three exact official MTA rows establish realized QBNR rename dates and one new QM successor route identity per row. Each rename is a bounded Queens Bus Network Redesign route-redesign bundle. X63, X64, and X68 remain distinct predecessor identities mentioned only in treatment evidence; later downstream crosswalk review may connect pre- and post-redesign series without merging canonical routes.",
   "observations": [
