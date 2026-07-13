@@ -7,22 +7,26 @@ source_id: "201110_qbb_approach_summary"
 source_ids:
   - "201110_qbb_approach_summary"
   - "meeting_doc_138431"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_qm3_201110_qbb"
 local_observation_ids:
   - "route_meeting_doc_138431_qm3"
   - "route_qm3_201110_qbb"
+  - "route_qm3_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-20T16:54:05.858Z"
+generated_at: "2026-07-13T03:27:52.000Z"
 raw_text: "QM3 90"
 submission_ids:
   - "sub_7482b9c4048ebe49"
   - "sub_7c67606539a9c393"
+  - "sub_e16ca80431b745c7"
 payload:
   borough: "Queens"
   borough_normalized: "queens"
   description: "Express route proposed for discontinuation under the Queens Bus Network Redesign"
   route_id: "QM3"
+  route_name: "QM3"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "express"
@@ -46,6 +50,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_138431/blocks.jsonl"
     source_quote: "the discontinuation of one route (the QM3)"
     text_sha256: "sha256:df26fd7f55e7a7f1226828d8178df76945346728a1d012eba92e0e30bbb7bb37"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0104"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0104"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "QM3"
+    text_sha256: "sha256:a4acd1cf077bf00b38518918fead3e0cfcc6b9b6edfb0461d31d7a307fcc2030"
     text_source: "raw_text"
 ---
 

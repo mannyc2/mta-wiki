@@ -18,6 +18,7 @@ source_ids:
   - "2015_04_29_brt_woodhaven_dw3_presentation"
   - "2015_04_30_brt_woodhaven_dw4_discussionmaterials"
   - "2015_06_09_brt_woodhaven_cb9"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q21_local_woodhaven_2014"
 local_observation_ids:
   - "route_q21_2015_dw1"
@@ -29,12 +30,14 @@ local_observation_ids:
   - "route_q21_local_woodhaven_dw2"
   - "route_q21_local_woodhaven_dw2_2015"
   - "route_q21_local_woodhaven_dw3"
+  - "route_q21_qbnr_2025"
   - "route_q21_woodhaven_workshop1"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T17:57:03.353Z"
+generated_at: "2026-07-13T03:27:52.000Z"
 raw_text: "Q21 Route"
 submission_ids:
+  - "sub_06895535e1ef3da3"
   - "sub_0a79e78af5728d57"
   - "sub_12269e0750c1842f"
   - "sub_3a436ff3a9034cce"
@@ -62,9 +65,15 @@ payload:
     route_label:
       - "Q21"
       - "Q21 Local"
+    route_name:
+      - "Q21 Local"
+      - "Q21"
     route_type:
       - "Local"
       - "local"
+    route_type_normalized:
+      - "local"
+      - "bus"
   borough: "Queens"
   borough_normalized: "queens"
   description: "Q21 Local bus route along Woodhaven/Cross Bay Boulevards corridor"
@@ -174,6 +183,16 @@ evidence_refs:
     source_path: "raw/sources/2015_04_16_brt_woodhaven_dw1_discussionmaterials/blocks.jsonl"
     source_quote: "Q21 Route"
     text_sha256: "sha256:0cdf0f17b2f6eb2723f84e4d5d3ba615d5dc0ab361662eb917f97752d1508c48"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0026"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0026"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q21"
+    text_sha256: "sha256:24c148f37abc73bf0535b6afb59ef514ea3549ab2b51a8ad37b9eb5938c6f6bf"
     text_source: "raw_text"
 ---
 
