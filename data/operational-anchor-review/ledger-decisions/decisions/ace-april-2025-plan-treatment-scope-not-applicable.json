@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "ace-april-2025-plan-treatment-scope-not-applicable",
+  "gap_id": "operational-coverage:fec4c50f7496efd0858692df",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:20:00.000Z",
+  "rationale": "The March 24, 2025 forecast describes a planned ACE program expansion but does not independently establish a delivered atomic treatment. The separately reviewed May occurrences preserve the realized treatment history without promoting or cross-joining this prospective diagnostic.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_ace-expansion-manhattan-apr2025",
+      "source_id": "meeting_doc_167241",
+      "evidence_id": "meeting_doc_167241#p005_c0003",
+      "block_id": "p005_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}

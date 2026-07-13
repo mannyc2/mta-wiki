@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "ace-april-2025-plan-delivered-status-not-applicable",
+  "gap_id": "operational-coverage:74d19eb5d2ce553225eb7ca3",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:20:00.000Z",
+  "rationale": "The March 24, 2025 source explicitly describes this April expansion as planned. It is faithful prospective history, not evidence that an operational occurrence was delivered, and the later exact-day May cohorts must not retroactively convert this forecast into a realized event.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_ace-expansion-manhattan-apr2025",
+      "source_id": "meeting_doc_167241",
+      "evidence_id": "meeting_doc_167241#p005_c0003",
+      "block_id": "p005_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}

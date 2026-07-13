@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "decision_id": "ace-may19-2025-route-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:ca2e33eccdceaa4780832e0b",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:20:00.000Z",
+  "rationale": "Approved exact-day occurrence occurrence:2eb555e5b3999b7cdaae5004 binds the bounded 2025-05-19 ACE cohort only to M2, M4. The broad raw route diagnostic is superseded by that reviewed occurrence; importing route scope from the umbrella ACE program would create an unsupported cross-product.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_ace-m2-m4-implementation-2025-05-19",
+      "source_id": "ace_routes_dataset_dictionary",
+      "evidence_id": "ace_routes_dataset_dictionary#p001_b0136",
+      "block_id": "p001_b0136"
+    },
+    {
+      "record_id": "event_ace-m2-m4-implementation-2025-05-19",
+      "source_id": "ace_routes_dataset_dictionary",
+      "evidence_id": "ace_routes_dataset_dictionary#p001_b0137",
+      "block_id": "p001_b0137"
+    },
+    {
+      "record_id": "event_ace-m2-m4-implementation-2025-05-19",
+      "source_id": "meeting_doc_179621",
+      "evidence_id": "meeting_doc_179621#p001_c0002",
+      "block_id": "p001_c0002"
+    },
+    {
+      "record_id": "event_ace-m2-m4-implementation-2025-05-19",
+      "source_id": "meeting_doc_179621",
+      "evidence_id": "meeting_doc_179621#p003_c0009",
+      "block_id": "p003_c0009"
+    },
+    {
+      "record_id": "event_ace-m2-m4-implementation-2025-05-19",
+      "source_id": "mta_ace_routes_may2025_cut",
+      "evidence_id": "mta_ace_routes_may2025_cut#p001_b0002",
+      "block_id": "p001_b0002"
+    },
+    {
+      "record_id": "event_ace-m2-m4-implementation-2025-05-19",
+      "source_id": "mta_ace_routes_may2025_cut",
+      "evidence_id": "mta_ace_routes_may2025_cut#p001_b0003",
+      "block_id": "p001_b0003"
+    },
+    {
+      "record_id": "event_ace-m2-m4-implementation-2025-05-19",
+      "source_id": "nyct_key_performance_metrics_june2025",
+      "evidence_id": "nyct_key_performance_metrics_june2025#p003_c0003",
+      "block_id": "p003_c0003"
+    },
+    {
+      "record_id": "event_ace-m2-m4-implementation-2025-05-19",
+      "source_id": "nyct_key_performance_metrics_june2025",
+      "evidence_id": "nyct_key_performance_metrics_june2025#p005_c0003",
+      "block_id": "p005_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}

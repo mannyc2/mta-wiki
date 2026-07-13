@@ -10,17 +10,21 @@ source_ids:
   - "broadway_157_st_220_st_cb12_mar2025"
   - "madison_ave_e23_st_e42_st_cb5_may2025"
   - "madison_ave_e23_st_e42_st_cb6_jun2025"
+  - "mta_ace_routes_may2025_cut"
   - "mta_automated_camera_enforcement"
 local_observation_id: "route_m4_ace"
 local_observation_ids:
+  - "route_ace_may2025_m4"
   - "route_m4_ace"
   - "route_m4_broadway_cb12_mar2025"
   - "route_m4_madison_ave_cb6_jun2025"
   - "route_m4_madison_ave_may2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T18:55:53.553Z"
+generated_at: "2026-07-13T15:20:29.745Z"
+raw_text: "{\"row_id\":\"row-s8j7-7i64-49jz\",\"route\":\"M4\",\"program\":\"ACE\",\"implementation_date\":\"2025-05-19T00:00:00.000\"}"
 submission_ids:
+  - "sub_4c6da6b863cdb74b"
   - "sub_80b55fbddecd3b18"
   - "sub_a1c7d1ba5adcbc66"
   - "sub_c9186983e9146692"
@@ -31,6 +35,9 @@ payload:
       - "MTA bus route on Broadway corridor between 157th St and 220th St"
       - "Local bus route on Madison Avenue in study area"
       - "M4 local bus on Madison Avenue study area"
+    route_type:
+      - "local"
+      - "bus"
     route_type_normalized:
       - "bus"
       - "local"
@@ -44,6 +51,7 @@ payload:
   route_type: "local"
   route_type_normalized: "bus"
   service_variant: "local"
+  source_literal: "M4"
   streets: "5 Av / Madison Av / Broadway"
 evidence_refs:
   -
@@ -81,6 +89,16 @@ evidence_refs:
     source_id: "madison_ave_e23_st_e42_st_cb5_may2025"
     source_path: "raw/sources/madison_ave_e23_st_e42_st_cb5_may2025/blocks.jsonl"
     text_sha256: "sha256:985f6a589f3d76798599bb44607ae29c8c1683910f86d1c8e0c824479e1c723b"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0003"
+    evidence_id: "mta_ace_routes_may2025_cut#p001_b0003"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_ace_routes_may2025_cut"
+    source_path: "raw/sources/mta_ace_routes_may2025_cut/blocks.jsonl"
+    source_quote: "\"route\":\"M4\""
+    text_sha256: "sha256:9f678307c7c631f9cbde51eff922d9af1b4e74d2df00ff29b44c3ff73cde7df2"
     text_source: "raw_text"
 ---
 

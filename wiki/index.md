@@ -2749,6 +2749,8 @@
 - [[wiki/projects/project_access-a-ride-primary-carrier-options|Access-A-Ride Primary Carrier Option Years]] (project)
 - [[wiki/projects/project_accessibility-ada-design-build|Accessibility – Design-Build and bundling]] (project)
 - [[wiki/projects/project_ace-automated-camera-enforcement|Automated Camera Enforcement (ACE)]] (project)
+- [[wiki/projects/project_ace-m2-m4-implementation-2025-05-19|M2/M4 ACE implementation cohort — May 19, 2025]] (project)
+- [[wiki/projects/project_ace-m42-m100-bx5-implementation-2025-05-27|M42/M100/BX5 ACE implementation cohort — May 27, 2025]] (project)
 - [[wiki/projects/project_ace-program|MTA ACE (Automated Camera Enforcement) Program]] (project)
 - [[wiki/projects/project_ada-149st-grand-concourse-tremont|ADA upgrade 149 St-Grand Concourse/Tremont Av]] (project)
 - [[wiki/projects/project_ada-19-elevators-mn-qns|ADA Elevator Package - 19 Elevators Manhattan/Queens]] (project)
@@ -7353,6 +7355,7 @@
 - [[wiki/sources/meeting_doc_98651|Improving Bicycle, Pedestrian & Micromobility Access to MTA Facilities]] (source)
 - [[wiki/sources/meeting_doc_98656|Third Track Board Presentation]] (source)
 - [[wiki/sources/meeting_doc_98661|Faster, Cleaner, Safer: Strategic Action Plan]] (source)
+- [[wiki/sources/mta_ace_routes_may2025_cut|MTA ACE Routes — May 2025 Five-Route Official Cut]] (source)
 - [[wiki/sources/mta_express_bus_service_increases_june30_2024|MTA approves more express bus service for Brooklyn and Staten Island]] (source)
 - [[wiki/sources/mta_queens_bus_network_redesign_service_changes|MTA Queens Bus Network Redesign service changes]] (source)
 - [[wiki/sources/nostrandave_map|Nostrand Avenue SBS Map]] (source)
@@ -7406,8 +7409,8 @@
 ## Data-Only Records
 
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
-- event: 8070 canonical records in `data/canonical/events.jsonl`
+- event: 8072 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 21221 canonical records in `data/canonical/relations.jsonl`
+- relation: 21231 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
-- treatment_component: 2927 canonical records in `data/canonical/treatment_components.jsonl`
+- treatment_component: 2929 canonical records in `data/canonical/treatment_components.jsonl`
