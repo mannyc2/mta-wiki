@@ -51,6 +51,7 @@ source_ids:
   - "capital_woodhaven_blvd_capital_projects_cb5_sept2024"
   - "capital_woodhaven_blvd_capital_projects_cb6_sept2024"
   - "capital_woodhaven_blvd_capital_projects_cb9_dec2024"
+  - "mta_queens_bus_network_redesign_service_changes"
   - "queens_addendum_equity_evaluation_appendix_d"
   - "rockaway_beach_blvd_jun2019"
   - "routes_woodhaven_corridor_map_lg"
@@ -76,6 +77,7 @@ local_observation_ids:
   - "route_q52_ltd_woodhaven_dw3"
   - "route_q52_q53_sbs_woodhaven_apr2019"
   - "route_q52_q53_sbs_woodhaven_sept_flyer"
+  - "route_q52_qbnr_2025"
   - "route_q52_sbs_2015_dw1"
   - "route_q52_sbs_2015_dw4"
   - "route_q52_sbs_brt_woodhaven_cb6_2016"
@@ -114,7 +116,7 @@ local_observation_ids:
   - "route_rockaway_beach_q52_sbs"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T22:53:47.764Z"
+generated_at: "2026-07-13T04:48:41.000Z"
 raw_text: "Q52/Q53 bus routes"
 submission_ids:
   - "sub_01102210c2db86fa"
@@ -135,6 +137,7 @@ submission_ids:
   - "sub_53f6ad084a33623c"
   - "sub_58777c222132d76d"
   - "sub_5bd3fb78b0e5d61e"
+  - "sub_5fde659057a31357"
   - "sub_62374f4775b388ac"
   - "sub_659a8a7abb418a95"
   - "sub_667e0ef2694650b9"
@@ -238,6 +241,7 @@ payload:
       - "Q52 Select Bus Service"
       - "Q52 LTD"
       - "Q52/Q53 Select Bus Service"
+      - "Q52"
     route_type:
       - "Select Bus Service"
       - "Limited"
@@ -250,6 +254,7 @@ payload:
       - "select_bus_service"
       - "limited_stop"
       - "ltd"
+      - "bus"
     service_variant:
       - "sbs"
       - "limited_stop"
@@ -260,6 +265,7 @@ payload:
   boroughs_normalized:
     - "queens"
   description: "SBS route on Woodhaven/Cross Bay Boulevards corridor"
+  gtfs_route_id: "Q52+"
   mode: "bus"
   note: "Existing LTD route on Woodhaven/Cross Bay corridor"
   route_id: "Q52-SBS"
@@ -1047,6 +1053,16 @@ evidence_refs:
     source_path: "raw/sources/routes_woodhaven_corridor_map_lg/blocks.jsonl"
     source_quote: "Existing Q52 Route Existing Q53 Route"
     text_sha256: "sha256:1f2d9eee1309e43d7a45f217497984f593acc877caab3ca4d6732d201d383139"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0057"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0057"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q52"
+    text_sha256: "sha256:d48ee0cdc32f8fc8334dd298837fa2c9b5a89c5216561297939b23097338fffa"
     text_source: "raw_text"
 ---
 
