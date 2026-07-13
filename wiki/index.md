@@ -4659,6 +4659,7 @@
 - [[wiki/routes/route_q101-qbb-study|Q101 Local Bus Route]] (route)
 - [[wiki/routes/route_q102-mention|Q102 route (mentioned)]] (route)
 - [[wiki/routes/route_q103-reroute-20250821|Q103 reroute to 21 St and 44 St]] (route)
+- [[wiki/routes/route_q104-qbnr-2025|Q104]] (route)
 - [[wiki/routes/route_q105-lga-2012|Q105]] (route)
 - [[wiki/routes/route_q11-local-woodhaven-2014|Q11 Local]] (route)
 - [[wiki/routes/route_q110-queens|Q110 bus route]] (route)
@@ -4682,11 +4683,14 @@
 - [[wiki/routes/route_q35-flatbush-cab1|Q35 (MTA Bus)]] (route)
 - [[wiki/routes/route_q38-queens|Q38 bus route]] (route)
 - [[wiki/routes/route_q4-lcl-ltd|Q4]] (route)
+- [[wiki/routes/route_q40-qbnr-2025|Q40]] (route)
+- [[wiki/routes/route_q42-qbnr-2025|Q42]] (route)
 - [[wiki/routes/route_q43|Q43 - ABLE route]] (route)
 - [[wiki/routes/route_q44-cb12-2011|Q44 local bus route]] (route)
 - [[wiki/routes/route_q47-serves-lga-2011|Q47]] (route)
 - [[wiki/routes/route_q48-glen-oaks-2025|Q48 Glen Oaks service]] (route)
 - [[wiki/routes/route_q48-serves-lga-2011|Q48 historical service]] (route)
+- [[wiki/routes/route_q49-qbnr-2025|Q49]] (route)
 - [[wiki/routes/route_q5-ace|Q5 on Merrick Boulevard, Queens (TSP in development)]] (route)
 - [[wiki/routes/route_q50-2014-brt-flushingjamaica-ws|Q50]] (route)
 - [[wiki/routes/route_q51-queens|Q51 bus route]] (route)
@@ -4695,11 +4699,14 @@
 - [[wiki/routes/route_q53-lga-2012|Q53]] (route)
 - [[wiki/routes/route_q53-sbs-ace|Q53 SBS on Woodhaven Boulevard, Queens (TSP in development)]] (route)
 - [[wiki/routes/route_q54|Q54 - ABLE route]] (route)
+- [[wiki/routes/route_q55-qbnr-2025|Q55]] (route)
+- [[wiki/routes/route_q56-qbnr-2025|Q56]] (route)
 - [[wiki/routes/route_q58|Q58 - ABLE route]] (route)
 - [[wiki/routes/route_q59|Q59 bus]] (route)
 - [[wiki/routes/route_q6-ace|Q6]] (route)
 - [[wiki/routes/route_q60-ace|Q60 Local Bus Route]] (route)
 - [[wiki/routes/route_q61-queens|Q61 bus route]] (route)
+- [[wiki/routes/route_q64-qbnr-2025|Q64]] (route)
 - [[wiki/routes/route_q65-flushing-jamaica-cac1|Q65 on 164 St]] (route)
 - [[wiki/routes/route_q66-flushing|Q66 bus route]] (route)
 - [[wiki/routes/route_q69-ace|Q69 (MTA Bus)]] (route)
@@ -4707,6 +4714,7 @@
 - [[wiki/routes/route_q70-sbs|Q70 SBS LaGuardia Airport]] (route)
 - [[wiki/routes/route_q72-serves-lga-2011|Q72]] (route)
 - [[wiki/routes/route_q73-proposed-queens-redesign|Q73 (proposed)]] (route)
+- [[wiki/routes/route_q74-qbnr-2025|Q74]] (route)
 - [[wiki/routes/route_q76-2014-brt-flushingjamaica-ws|Q76]] (route)
 - [[wiki/routes/route_q77-queens|Q77 bus route]] (route)
 - [[wiki/routes/route_q78-queens|Q78 bus route]] (route)
@@ -4716,6 +4724,9 @@
 - [[wiki/routes/route_q84-queens-bus-redesign|Q84]] (route)
 - [[wiki/routes/route_q85-rush|Q85 Rush Route]] (route)
 - [[wiki/routes/route_q89-proposed-new|Q89]] (route)
+- [[wiki/routes/route_q9-qbnr-2025|Q9]] (route)
+- [[wiki/routes/route_q90-qbnr-2025|Q90]] (route)
+- [[wiki/routes/route_q98-qbnr-2025|Q98]] (route)
 - [[wiki/routes/route_q98v-meeting-doc-33236|Q98V]] (route)
 - [[wiki/routes/route_qm1-201110-qbb|QM1 Express Bus Route]] (route)
 - [[wiki/routes/route_qm10-qbb-study|QM10 Express Bus Route]] (route)
@@ -4731,8 +4742,12 @@
 - [[wiki/routes/route_qm25-fresh-pond-rd|QM25]] (route)
 - [[wiki/routes/route_qm2a-201110-qbb|QM2A Express Bus Route]] (route)
 - [[wiki/routes/route_qm3-201110-qbb|QM3 Express Bus Route]] (route)
+- [[wiki/routes/route_qm31-qbnr-2025|QM31]] (route)
 - [[wiki/routes/route_qm34-fresh-pond-rd|QM34]] (route)
+- [[wiki/routes/route_qm35-qbnr-2025|QM35]] (route)
 - [[wiki/routes/route_qm4-qbb-study|QM4 Express Bus Route]] (route)
+- [[wiki/routes/route_qm40-qbnr-2025|QM40]] (route)
+- [[wiki/routes/route_qm5-qbnr-2025|QM5]] (route)
 - [[wiki/routes/route_qm7|QM7]] (route)
 - [[wiki/routes/route_r-nyct-2025|R Subway Line]] (route)
 - [[wiki/routes/route_rockaway-shuttle-167241|Rockaway Shuttle train]] (route)
@@ -7344,8 +7359,8 @@
 ## Data-Only Records
 
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
-- event: 8022 canonical records in `data/canonical/events.jsonl`
+- event: 8037 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 20951 canonical records in `data/canonical/relations.jsonl`
+- relation: 20997 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
-- treatment_component: 2805 canonical records in `data/canonical/treatment_components.jsonl`
+- treatment_component: 2820 canonical records in `data/canonical/treatment_components.jsonl`
