@@ -475,6 +475,54 @@ describe("operational coverage ledger", () => {
     expect(itspReport.gaps[0]?.priority_families).toContain("transit_signal_priority");
   });
 
+  it("keeps an in-window subway platform safety event out of the bus-priority queue", () => {
+    const source = record("source_platform_report", "source", {
+      publisher: "MTA",
+      published_date_normalized: "2024-06-01",
+      title: "Transit committee report",
+    }, "source_platform_report");
+    const event = record("event_platform_barrier", "event", {
+      event_family: "launch",
+      date_normalized: "2024-01",
+      description: "NYCT subway platform barrier pilot began",
+    }, "source_platform_report");
+    const project = record("project_platform_barrier", "project", {
+      project_family: "pilot",
+      description: "Safety barriers between subway platforms and open track areas",
+    }, "source_platform_report");
+    const treatment = record("treatment_platform_barrier", "treatment_component", {
+      treatment_kind: "platform safety barrier",
+      treatment_family: "safety",
+      description: "Safety barriers installed at subway stations",
+    }, "source_platform_report");
+    const report = buildOperationalCoverageLedger({
+      canonical_records: [source, event, project, treatment],
+      operational_anchor_rows: [anchor(event.record_id, `operational:${event.record_id}`, {
+        project_record_ids: [project.record_id],
+        subject_record_ids: [project.record_id],
+        subject_record_kinds: ["project"],
+        route_record_ids: [],
+        gtfs_route_ids: [],
+        route_scope_resolution: "missing",
+        treatment_record_ids: [treatment.record_id],
+        treatment_families: ["safety"],
+        source_id: "source_platform_report",
+        source_ids: ["source_platform_report"],
+        normalized_date: "2024-01",
+        candidate_operational_date_normalized: "2024-01",
+        candidate_operational_date_precision: "month",
+        candidate_operational_dates_normalized: ["2024-01"],
+        evidence_coverage: { event: true, timeline: true, route_scope: false, treatment_scope: true },
+      })],
+      operational_occurrence_rows: [],
+    });
+
+    expect(report.gaps).toHaveLength(1);
+    expect(report.gaps[0]?.dimension).toBe("route");
+    expect(report.gaps[0]?.priority).toBe(false);
+    expect(report.gaps[0]?.priority_basis).toEqual([]);
+  });
+
   it("does not treat multi-route, multi-treatment, planned, or imprecise rows as complete", () => {
     const input = baseInput();
     input.operational_anchor_rows = [anchor("event_current", "operational:event_current", {

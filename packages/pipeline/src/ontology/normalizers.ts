@@ -10767,6 +10767,14 @@ function normalizeTreatmentKind(value: string) {
     ["paint_removal", "capital_or_infrastructure"],
     ["physical_separation", "bus_lane"],
     ["physical_protection", "bus_lane"],
+    ["platform_barrier", "safety"],
+    ["platform_barriers", "safety"],
+    ["platform_bollards", "safety"],
+    ["platform_edge_barrier", "safety"],
+    ["platform_heating", "capital_or_infrastructure"],
+    ["platform_replacement", "capital_or_infrastructure"],
+    ["platform_safety_barrier", "safety"],
+    ["platform_screen_doors", "safety"],
     ["police_deployment", "safety"],
     ["power_system_upgrade", "capital_or_infrastructure"],
     ["pre_payment", "fare_collection"],
@@ -10947,7 +10955,7 @@ function normalizeTreatmentKind(value: string) {
   if (key.includes("enforcement") || key.includes("camera")) return "enforcement";
   if (key.includes("curb") || key.includes("loading") || key.includes("parking")) return "curb_management";
   if (key.includes("turn") || key.includes("restriction") || key.includes("access") || key.includes("through_trip") || key.includes("traffic")) return "traffic_restriction";
-  if (key.includes("bus_stop") || key.includes("boarding") || key.includes("platform") || key.includes("bus_bulb") || key.includes("boarder")) return "bus_stop_or_boarding";
+  if (key.includes("bus_stop") || key.includes("boarding") || key.includes("bus_bulb") || key.includes("boarder")) return "bus_stop_or_boarding";
   if (key.includes("signal") || key.includes("queue_jump") || key.includes("tsp")) return "signal_priority";
   if (key.includes("pedestrian") || key.includes("neckdown") || key.includes("ada")) return "pedestrian_or_accessibility";
   if (key.includes("signage") || key.includes("marking")) return "signage_and_markings";

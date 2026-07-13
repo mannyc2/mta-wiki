@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "receipt_id": "platform-safety-barrier-family-2024",
+  "status": "ontology_scope_reviewed",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T08:15:00Z",
+  "acquisition_method": "recovered_existing_official_capture",
+  "search": {
+    "target_family": "treatment_identity",
+    "route_or_area": "NYCT subway platform barrier pilot",
+    "date_window": "2024-01",
+    "exact_queries": [
+      "canonical treatment inventory: platform safety barrier",
+      "meeting_doc_143341 evidence blocks: subway platforms open track barriers"
+    ],
+    "domains": [
+      "mta.info"
+    ],
+    "disposition": "existing_evidence_decisive",
+    "rationale": "The accepted official MTA evidence explicitly describes barriers between subway platforms and open track areas. No bus route, bus stop, bus boarding, or surface-transit treatment is present in the treatment evidence."
+  },
+  "canonical_inventory": {
+    "record_id": "treatment_platform-safety-barriers",
+    "submission_id": "sub_81423b849d03b5d6",
+    "source_id": "meeting_doc_143341",
+    "treatment_kind": "platform safety barrier",
+    "pre_review_treatment_family": "bus_stop_or_boarding",
+    "pre_review_priority_queue_sha256": "79a7d1bddc6cb3ea97faff1c8e21f1bbb9dfb30d8a6cf67705f8a5e1ef5c9ae8"
+  },
+  "official_evidence": {
+    "source_id": "meeting_doc_143341",
+    "publisher": "MTA",
+    "evidence": [
+      {
+        "evidence_id": "meeting_doc_143341#p005_c0011",
+        "evidence_sha256": "sha256:ab3bb77b61e4220e30f5f29c983a9d5e37227675f726c417e69f585c47f2d9bb",
+        "source_quote": "Specifically, Maintenance of Way was tasked with finding a feasible, cost-effective solution to help protect customers from falling or accessing open track areas from subway platforms. The combined efforts of Infrastructure, MOW Engineering and Service Delivery has resulted in implementing NYCT's pilot platform barrier program."
+      },
+      {
+        "evidence_id": "meeting_doc_143341#p005_c0012",
+        "evidence_sha256": "sha256:b433607e58befce736d990d73bd31f6e8926e2572151c9c44a6b682f47cc16f1",
+        "source_quote": "The pilot began in January 2024, with more than 200 barriers constructed and installed at 4 stations. Following evaluation of the pilot, the target is to install barriers at 2 stations per month. The team is on target to meet that goal. These safety barriers are not only making stations safer but are a"
+      },
+      {
+        "evidence_id": "meeting_doc_143341#p005_c0013",
+        "evidence_sha256": "sha256:53eebf84fa08bebaae5dddab1cd3a1507fe93a3899f3c5457f6bc1ae81bd2697",
+        "source_quote": "more cost-effective solution than platform screen doors. We salute Anthony and the MOW Iron team for their skillfulness in fabricating and installing these barrier to help keep customers safe."
+      }
+    ]
+  },
+  "ontology_decision": {
+    "verdict": "non_bus_safety_treatment",
+    "corrected_treatment_family": "safety",
+    "semantic_correction_id": "core-coverage-platform-safety-barrier-family-20260713",
+    "normalizer_change": "Remove generic platform substring matching from bus_stop_or_boarding; retain explicit bus_stop, boarding, bus_bulb, and boarder signals.",
+    "preservation_contract": [
+      "Preserve the source-stated treatment kind, description, date, location, evidence refs, and submission id.",
+      "Patch only the derived treatment_family companion on the existing canonical record.",
+      "Do not infer a bus route or operational bus occurrence from the shared meeting-document source."
+    ]
+  },
+  "coverage_effect": {
+    "event_record_id": "event_platform-barrier-pilot-start",
+    "affected_gap_ids": [
+      "operational-coverage:a892335d5f62bb15794e715b",
+      "operational-coverage:7e4a64cefa844d47feffaadb"
+    ],
+    "expected_disposition": "remain in the full diagnostic ledger as non-priority; leave the bounded bus-priority queue",
+    "expected_priority_gap_delta": -2,
+    "expected_priority_open_delta": -2,
+    "expected_priority_terminal_delta": 0
+  }
+}

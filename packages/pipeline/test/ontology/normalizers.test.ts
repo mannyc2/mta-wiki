@@ -10952,6 +10952,21 @@ describe("treatment bus stop and boarding family", () => {
     expect(treatment({ treatment_kind: "revised station spacing" }).treatment_family).toBe("service_pattern");
   });
 
+  it("does not infer bus boarding scope from a generic platform literal", () => {
+    expect(treatment({ treatment_kind: "platform" }).treatment_family).toBe("other");
+    expect(treatment({ treatment_kind: "platform safety barrier" }).treatment_family).toBe("safety");
+    expect(treatment({ treatment_kind: "platform barrier" }).treatment_family).toBe("safety");
+    expect(treatment({ treatment_kind: "platform barriers" }).treatment_family).toBe("safety");
+    expect(treatment({ treatment_kind: "platform bollards" }).treatment_family).toBe("safety");
+    expect(treatment({ treatment_kind: "platform edge barrier" }).treatment_family).toBe("safety");
+    expect(treatment({ treatment_kind: "platform screen doors" }).treatment_family).toBe("safety");
+    expect(treatment({ treatment_kind: "platform heating" }).treatment_family).toBe("capital_or_infrastructure");
+    expect(treatment({ treatment_kind: "platform replacement" }).treatment_family).toBe("capital_or_infrastructure");
+    expect(treatment({ treatment_kind: "elevated platform" }).treatment_family).toBe("other");
+    expect(treatment({ treatment_kind: "bus boarding platform" }).treatment_family).toBe("bus_stop_or_boarding");
+    expect(treatment({ treatment_kind: "boarding platform" }).treatment_family).toBe("bus_stop_or_boarding");
+  });
+
   it("maps exact non-station treatment literals without widening ambiguous matches", () => {
     expect(treatment({ treatment_kind: "branding" }).treatment_family).toBe("customer_information");
     expect(treatment({ treatment_kind: "passenger information" }).treatment_family).toBe("customer_information");
