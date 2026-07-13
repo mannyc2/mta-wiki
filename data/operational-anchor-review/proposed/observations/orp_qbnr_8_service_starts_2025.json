@@ -10,11 +10,19 @@
     "operational-coverage:a9b2bf1ff109628219637775"
   ],
   "source_id": "mta_queens_bus_network_redesign_service_changes",
-  "review_state": "proposed",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-13T00:07:37.000Z",
   "provenance": {
     "drafted_by": "codex-corpus-completion-2026-07-12",
     "drafted_at": "2026-07-12T23:55:43.000Z",
-    "method": "qbnr_batch_spec_expansion"
+    "method": "qbnr_batch_spec_expansion",
+    "verifier": {
+      "reviewed_by": "codex-independent-qbnr-spec-review",
+      "reviewed_at": "2026-07-13T00:07:37.000Z",
+      "verdict": "passed",
+      "rationale": "All eight official service-start rows were independently checked for exact block hashes and realized dates, exhaustive ordered cell partitions, lifecycle semantics, unique pinned true-route anchors, treatment cardinality and family normalization, referenced-route context isolation, Q89 status safety, collision-free identities, and an exact 62-row accepted-journal conversion. Fresh strict expansion is byte-identical to this artifact."
+    }
   },
   "rationale": "Eight exact official MTA rows establish realized service-start dates, one uniquely anchored current route per row, and fifteen bounded treatment members. Q14, Q51, Q115, and QM65 are atomic service-pattern occurrences. Q61, Q80, Q82, and Q89 are reviewed route-redesign bundles whose analysis family is supported by the official Queens Bus Network Redesign project context. Every predecessor, replacement, and alternative route reference remains treatment text or rider context only; only Q14, Q51, Q61, Q80, Q82, Q89, Q115, and QM65 receive affects_route relations.",
   "observations": [
