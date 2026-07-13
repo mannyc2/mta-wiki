@@ -37,6 +37,17 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   receipt-backed and retracted, structurally removing eight more gaps. Three promotional-transfer
   policy gaps remain intentionally open because route applicability and delivered status are not yet
   evidenced. The rc8-pinned ledger now has `499` priority rows: `233` open and `266` terminal.
+- Recovered the official 2023–2024 Fare-Free Bus Pilot route scope from its retrospective MTA
+  evaluation. Four GTFS-addressable routes (`BX18A`, `BX18B`, `S46`, and `S96`) now remain distinct
+  from the report's `Bx18A/B` and `S46/S96` aggregate metric surfaces; all seven participant route ids
+  have delivered project scope, and fare resumption is a positive `fare_collection` treatment dated
+  September 1, 2024. Cut byte-reproducible internal anchor release `v1-rc10` from recovery commit
+  `2b1bf535`: manifest SHA-256 `e0a70e9af30035a6585d2f195366b389a6fe9bcceb0120763a461e581ab5551c`,
+  route-anchor SHA-256 `43805bea087746a3a7c518c72a1e7c6ea161b16d26fc691dca5c3a1f84061d8b`,
+  and deterministic quality-report SHA-256 `45202e375258c03a6c579630790f27a7252ae888edfe6c98591de04eb9b85ceb`.
+  Exactly four of `403` route-anchor rows changed from `v1-rc9`; all `134,171` evidence references
+  resolve. Occurrence totals intentionally remain unchanged until reviewed promotion, and `LATEST`
+  remains `v1-rc5`.
 
 ## 2026-07-12
 
