@@ -151,6 +151,17 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
   `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
   `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
+- Recovered the official December 8, 2025 ACE warning-phase activation as one bounded B60/B68/M57
+  occurrence with one atomic `automated_bus_lane_enforcement` treatment. The prior non-study decision
+  is preserved as retired history because it conflated warning-phase activation with the later,
+  unasserted fine-bearing onset. Both successor diagnostics are terminal, bringing the priority ledger
+  to `489`/`489` terminal; the projection now contains `135` occurrences, `134` eligible occurrences,
+  and `172` eligible route pairs without weakening the exact-date or scope gates.
+- Cut byte-reproducible unpromoted release `v1-rc19` from generator commit `35984e9d`: manifest SHA-256
+  `c5d4563d37815d330b37898774a027fb07563335163fcfccbaeebfc3da81720f`. All `20` addressed files were
+  independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
+  `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
 
 ## 2026-07-12
 
