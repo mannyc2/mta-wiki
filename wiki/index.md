@@ -4670,6 +4670,7 @@
 - [[wiki/routes/route_q17-ace|Q17]] (route)
 - [[wiki/routes/route_q19-2014-m60-flyer|Q19]] (route)
 - [[wiki/routes/route_q20-2014-10-07-flushing-jamaica|Q20A bus route]] (route)
+- [[wiki/routes/route_q20-qbnr-2025|Q20]] (route)
 - [[wiki/routes/route_q20b-cb12-2011|Q20B bus route]] (route)
 - [[wiki/routes/route_q21-local-woodhaven-2014|Q21 Local]] (route)
 - [[wiki/routes/route_q22-queens|Q22 bus route]] (route)
@@ -4687,6 +4688,7 @@
 - [[wiki/routes/route_q42-qbnr-2025|Q42]] (route)
 - [[wiki/routes/route_q43|Q43 - ABLE route]] (route)
 - [[wiki/routes/route_q44-cb12-2011|Q44 local bus route]] (route)
+- [[wiki/routes/route_q45-qbnr-2025|Q45]] (route)
 - [[wiki/routes/route_q47-serves-lga-2011|Q47]] (route)
 - [[wiki/routes/route_q48-glen-oaks-2025|Q48 Glen Oaks service]] (route)
 - [[wiki/routes/route_q48-serves-lga-2011|Q48 historical service]] (route)
@@ -4706,6 +4708,7 @@
 - [[wiki/routes/route_q6-ace|Q6]] (route)
 - [[wiki/routes/route_q60-ace|Q60 Local Bus Route]] (route)
 - [[wiki/routes/route_q61-queens|Q61 bus route]] (route)
+- [[wiki/routes/route_q63-qbnr-2025|Q63]] (route)
 - [[wiki/routes/route_q64-qbnr-2025|Q64]] (route)
 - [[wiki/routes/route_q65-flushing-jamaica-cac1|Q65 on 164 St]] (route)
 - [[wiki/routes/route_q66-flushing|Q66 bus route]] (route)
@@ -4715,6 +4718,7 @@
 - [[wiki/routes/route_q72-serves-lga-2011|Q72]] (route)
 - [[wiki/routes/route_q73-proposed-queens-redesign|Q73 (proposed)]] (route)
 - [[wiki/routes/route_q74-qbnr-2025|Q74]] (route)
+- [[wiki/routes/route_q75-qbnr-2025|Q75]] (route)
 - [[wiki/routes/route_q76-2014-brt-flushingjamaica-ws|Q76]] (route)
 - [[wiki/routes/route_q77-queens|Q77 bus route]] (route)
 - [[wiki/routes/route_q78-queens|Q78 bus route]] (route)
@@ -4723,6 +4727,8 @@
 - [[wiki/routes/route_q82-queens|Q82 bus route]] (route)
 - [[wiki/routes/route_q84-queens-bus-redesign|Q84]] (route)
 - [[wiki/routes/route_q85-rush|Q85 Rush Route]] (route)
+- [[wiki/routes/route_q86-qbnr-2025|Q86]] (route)
+- [[wiki/routes/route_q87-qbnr-2025|Q87]] (route)
 - [[wiki/routes/route_q89-proposed-new|Q89]] (route)
 - [[wiki/routes/route_q9-qbnr-2025|Q9]] (route)
 - [[wiki/routes/route_q90-qbnr-2025|Q90]] (route)
@@ -7359,8 +7365,8 @@
 ## Data-Only Records
 
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
-- event: 8037 canonical records in `data/canonical/events.jsonl`
+- event: 8043 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 20997 canonical records in `data/canonical/relations.jsonl`
+- relation: 21022 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
-- treatment_component: 2820 canonical records in `data/canonical/treatment_components.jsonl`
+- treatment_component: 2833 canonical records in `data/canonical/treatment_components.jsonl`

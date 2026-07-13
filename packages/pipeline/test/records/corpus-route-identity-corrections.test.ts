@@ -5,6 +5,7 @@ import { describe, expect, it } from "bun:test";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { identityPairKey, readIdentityDoNotMergeOverrides } from "@mta-wiki/db/identity";
 import type { JsonObject, MtaCanonicalRecord } from "@mta-wiki/db/types";
+import { withDerivedRelations } from "@mta-wiki/pipeline/records/derived-relations";
 import {
   readSemanticCorrections,
   withSemanticCorrections,
@@ -115,6 +116,17 @@ type Q52Receipt = {
   };
 };
 
+type Q20MetricScopeReceipt = {
+  historical_evidence: SourceEvidence[];
+  current_lifecycle_evidence: SourceEvidence;
+  decision: {
+    current_route_record_id: string;
+    metric_record_ids: string[];
+    derived_relation_record_ids: string[];
+    semantic_correction_ids: string[];
+  };
+};
+
 type SourceBlock = {
   source_id: string;
   block_id: string;
@@ -123,6 +135,7 @@ type SourceBlock = {
 };
 
 const Q20_RECEIPT_PATH = "data/quality/acquisition/receipts/q15a-q20a-terminal-route-identity-2025.json";
+const Q20_METRIC_SCOPE_RECEIPT_PATH = "data/quality/acquisition/receipts/q20-historical-metric-scope-2014-2025.json";
 const Q52_RECEIPT_PATH = "data/quality/acquisition/receipts/q52-route-scope-2025-08-31.json";
 
 function readJson<T>(relativePath: string): T {
@@ -374,6 +387,73 @@ describe("reviewed Q20A and Q52 route-identity corrections", () => {
     ] as const) {
       const entry = routePairs.get(identityPairKey(...pair));
       expect(entry?.source_decision).toStartWith(`${Q20_RECEIPT_PATH}#`);
+    }
+  });
+
+  it("keeps 2014 Q20A/B metrics off the distinct current Q20 lifecycle", () => {
+    const receipt = readJson<Q20MetricScopeReceipt>(Q20_METRIC_SCOPE_RECEIPT_PATH);
+    const corrections = readSemanticCorrections();
+    const routes = readJsonl<MtaCanonicalRecord>("data/canonical/routes.jsonl");
+    const events = readJsonl<MtaCanonicalRecord>("data/canonical/events.jsonl");
+    const treatments = readJsonl<MtaCanonicalRecord>("data/canonical/treatment_components.jsonl");
+    const metrics = readJsonl<MtaCanonicalRecord>("data/canonical/metric_claims.jsonl");
+    const relations = readJsonl<MtaCanonicalRecord>("data/canonical/relations.jsonl");
+
+    const currentRoute = recordById(routes, receipt.decision.current_route_record_id);
+    const metricRecords = receipt.decision.metric_record_ids.map((recordId) => recordById(metrics, recordId));
+    const scopedCorrections = receipt.decision.semantic_correction_ids.map((correctionId) => correctionById(corrections, correctionId));
+    expect(scopedCorrections).toHaveLength(4);
+    expect(new Set(scopedCorrections.map((correction) => correction.op))).toEqual(new Set(["retract_record"]));
+    expect(scopedCorrections.map((correction) => correction.record_id).sort()).toEqual(
+      [...receipt.decision.derived_relation_record_ids].sort(),
+    );
+    for (const correction of scopedCorrections) {
+      expect(correction.source_decision).toBe(Q20_METRIC_SCOPE_RECEIPT_PATH);
+      expect(correction.guards.payload).toMatchObject({
+        relation_kind: "has_metric",
+        derived_relation: true,
+        derivation_rule: "metric-route-has-metric",
+        derived_from_payload_field: "route",
+        derived_from_payload_value: "Q20",
+        subject_id: receipt.decision.current_route_record_id,
+      });
+    }
+
+    const mechanicallyDerived = withDerivedRelations([currentRoute, ...metricRecords]);
+    for (const relationId of receipt.decision.derived_relation_record_ids) {
+      expect(mechanicallyDerived.some((record) => record.record_id === relationId)).toBe(true);
+      expect(relations.some((record) => record.record_id === relationId)).toBe(false);
+    }
+    const corrected = withSemanticCorrections(mechanicallyDerived, scopedCorrections);
+    expect(corrected.issues).toEqual([]);
+    expect(corrected.summary.applied).toBe(4);
+    for (const relationId of receipt.decision.derived_relation_record_ids) {
+      expect(corrected.records.some((record) => record.record_id === relationId)).toBe(false);
+    }
+    for (const record of [currentRoute, ...metricRecords]) {
+      expect(recordById(corrected.records, record.record_id)).toEqual(record);
+    }
+
+    expect(recordById(events, "event_q20-qbnr-start-2025-06-29").payload.date_normalized).toBe("2025-06-29");
+    for (const treatmentId of [
+      "treatment_q20-college-point-jamaica-connection-2025",
+      "treatment_q20-jamaica-avenue-approach-2025",
+      "treatment_q20-q20b-replacement-2025",
+    ]) {
+      expect(recordById(treatments, treatmentId).payload.treatment_family).toBe("service_pattern");
+    }
+    for (const relationId of [
+      "relation_qbnr-2025-affects-q20",
+      "relation_qbnr-has-q20-start-2025-06-29",
+      "relation_qbnr-2025-has-q20-college-point-jamaica-connection",
+      "relation_qbnr-2025-has-q20-jamaica-avenue-approach",
+      "relation_qbnr-2025-has-q20-q20b-replacement",
+    ]) {
+      expect(recordById(relations, relationId).record_kind).toBe("relation");
+    }
+
+    for (const evidence of [...receipt.historical_evidence, receipt.current_lifecycle_evidence]) {
+      expectEvidenceHash(evidence.evidence_id, evidence.source_block_sha256);
     }
   });
 
