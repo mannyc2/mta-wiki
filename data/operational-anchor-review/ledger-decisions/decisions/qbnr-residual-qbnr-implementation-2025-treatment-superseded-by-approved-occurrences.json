@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "qbnr-residual-qbnr-implementation-2025-treatment-superseded-by-approved-occurrences",
+  "gap_id": "operational-coverage:f592a4c616bec582666f18bb",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T05:45:00.000Z",
+  "rationale": "This retrospective project-level QBNR implementation summary is not an independent route-level occurrence. The accepted occurrence fixture already contains all 121 source-complete QBNR route occurrences with exact route, treatment, date, and delivered scope. Scoping this umbrella duplicate would add no studyable fact and could create route-treatment cross-products, so this diagnostic is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

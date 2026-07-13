@@ -7395,8 +7395,8 @@
 ## Data-Only Records
 
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
-- event: 8074 canonical records in `data/canonical/events.jsonl`
+- event: 8072 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 21175 canonical records in `data/canonical/relations.jsonl`
+- relation: 21173 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
 - treatment_component: 2921 canonical records in `data/canonical/treatment_components.jsonl`

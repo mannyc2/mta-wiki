@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "qbnr-residual-qbnr-phase1-end-june-2025-route-superseded-by-approved-occurrences",
+  "gap_id": "operational-coverage:ec2a5f90688b7a9f727c8748",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T05:45:00.000Z",
+  "rationale": "This project-level Phase 1 description is not an independent route-level occurrence. The accepted occurrence fixture already contains 83 source-complete QBNR route occurrences on June 29 or June 30, 2025, each with exact route, treatment, date, and delivered scope. Recovering scope on the coarse duplicate would risk route-treatment cross-products, so this diagnostic is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

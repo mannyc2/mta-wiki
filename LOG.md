@@ -31,6 +31,12 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   The release carries the `124`/`123`/`126` occurrence totals above; its deterministic quality
   report resolves all `134,143` evidence references and reports zero open semantic invariants.
   `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
+- Reconciled the final `38` open QBNR completion-ledger diagnostics without changing the occurrence
+  fixture: `27` coarse phase/umbrella diagnostics are terminally superseded by the `121` reviewed
+  route-level occurrences; two false August 21 OCR events and their timeline relations were
+  receipt-backed and retracted, structurally removing eight more gaps. Three promotional-transfer
+  policy gaps remain intentionally open because route applicability and delivered status are not yet
+  evidenced. The rc8-pinned ledger now has `499` priority rows: `233` open and `266` terminal.
 
 ## 2026-07-12
 
