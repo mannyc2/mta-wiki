@@ -118,6 +118,17 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `cb755c2a67460188d2286337dddc13c72e827ccebd2a2616bdc828111a2be83a`. All `20` addressed files were
   independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
   `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
+- Recovered the May 2025 Automated Camera Enforcement expansion from a five-row official MTA Open Data
+  cut. The program took effect on M2/M4 on May 19 and BX5/M100/M42 on May 27, producing two exact-day,
+  atomic occurrences without treating the dates as later fine-bearing onsets. The earlier April forecast
+  remains planned, the malformed ACE-to-Jamaica edge is retracted, and seven residual diagnostics are
+  terminal. The projection now contains `134` occurrences, `133` eligible occurrences, and `169` eligible
+  route pairs; the `488`-row priority ledger has `105` open and `383` terminal rows.
+- Cut byte-reproducible unpromoted release `v1-rc16` from generator commit `6099c03b`: manifest SHA-256
+  `c6c3dd7c3f3636f13102ddefd85e91f72635cca686f8eb531f2f05529a17713c`. All `20` addressed files were
+  independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
+  `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
   `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
 
 ## 2026-07-12
