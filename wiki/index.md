@@ -4684,7 +4684,8 @@
 - [[wiki/routes/route_q43|Q43 - ABLE route]] (route)
 - [[wiki/routes/route_q44-cb12-2011|Q44 local bus route]] (route)
 - [[wiki/routes/route_q47-serves-lga-2011|Q47]] (route)
-- [[wiki/routes/route_q48-serves-lga-2011|Q48]] (route)
+- [[wiki/routes/route_q48-glen-oaks-2025|Q48 Glen Oaks service]] (route)
+- [[wiki/routes/route_q48-serves-lga-2011|Q48 historical service]] (route)
 - [[wiki/routes/route_q5-ace|Q5 on Merrick Boulevard, Queens (TSP in development)]] (route)
 - [[wiki/routes/route_q50-2014-brt-flushingjamaica-ws|Q50]] (route)
 - [[wiki/routes/route_q51-queens|Q51 bus route]] (route)
@@ -7342,8 +7343,8 @@
 ## Data-Only Records
 
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
-- event: 8014 canonical records in `data/canonical/events.jsonl`
+- event: 8016 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 20925 canonical records in `data/canonical/relations.jsonl`
+- relation: 20932 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
-- treatment_component: 2795 canonical records in `data/canonical/treatment_components.jsonl`
+- treatment_component: 2798 canonical records in `data/canonical/treatment_components.jsonl`
