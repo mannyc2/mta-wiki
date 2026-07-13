@@ -19,6 +19,8 @@ afterAll(() => rmSync(work, { recursive: true, force: true }));
 
 function exportTestRelease(releaseId: string, opts: ReleaseExportOptions) {
   return exportRelease(releaseId, {
+    routeAnchorOverrides: {},
+    reviewedNonGtfsRouteDispositions: {},
     ...opts,
     operationalAnchorReviewDecisionDir: emptyReviewDecisionDir,
   });
@@ -360,6 +362,8 @@ describe("exportRelease", () => {
         rootDir: root,
         force: true,
         records: [record("route_b2", "route")],
+        routeAnchorOverrides: {},
+        reviewedNonGtfsRouteDispositions: {},
         operationalAnchorReviewDecisionDir: badReviewDecisionDir,
       }),
     ).toThrow("invalid JSON");

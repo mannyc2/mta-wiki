@@ -1,6 +1,6 @@
 # Operational coverage matrix
 
-Input fingerprint: `b0a54eb7880ee3ffdb80d60626f19c49e617e0e10cadd988b7a8530bf6e13a48`
+Input fingerprint: `ab7633257424e0983d6c43ed8a475ecfad721dabc785dfc854889a7f2b1309ba`
 Corpus fingerprint: `ed12fdc6db0c300521cb16dbfc9daee60703e84ab12b2f23c89c4f2b0fcb8744`
 Study window: 2023-04-01 through 2026-12-31
 

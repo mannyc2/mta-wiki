@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
-import { join, relative, resolve } from "node:path";
+import { isAbsolute, join, normalize, relative, resolve, sep } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
@@ -78,6 +78,8 @@ export type OperationalCoverageArtifactManifest = {
   corpus_fingerprint: string;
   canonical_record_count: number;
   route_anchor_path: string;
+  route_anchor_release_id: string | null;
+  route_anchor_sha256: string;
   route_anchor_count: number;
   anchor_review_decision_count: number;
   occurrence_review_decision_count: number;
@@ -85,6 +87,12 @@ export type OperationalCoverageArtifactManifest = {
   ledger_decision_count: number;
   search_receipt_count: number;
   files: Record<string, OperationalCoverageArtifactMetadata>;
+};
+
+export type OperationalCoverageRouteAnchorPin = {
+  path: string;
+  release_id: string | null;
+  sha256: string;
 };
 
 export type OperationalCoverageArtifactBuild = {
@@ -103,6 +111,8 @@ export type BuildOperationalCoverageArtifactsInput = {
   ledgerDecisions?: readonly OperationalCoverageAcceptedDecision[] | undefined;
   searchReceipts?: readonly OperationalCoverageSearchReceipt[] | undefined;
   routeAnchorPath?: string | undefined;
+  routeAnchorReleaseId?: string | null | undefined;
+  routeAnchorSha256?: string | undefined;
   studyWindow?: OperationalCoverageDateInterval | undefined;
   downstream?: OperationalCoverageDownstreamLayer | undefined;
 };
@@ -130,6 +140,110 @@ export type LoadOperationalCoverageArtifactsResult = {
 
 function sha256(value: string): string {
   return createHash("sha256").update(value).digest("hex");
+}
+
+function slashPath(value: string): string {
+  return value.split(sep).join("/");
+}
+
+function releaseIdForRouteAnchorPath(path: string): string | null {
+  return /^data\/exports\/releases\/([^/]+)\/route_anchors\.jsonl$/u.exec(path)?.[1] ?? null;
+}
+
+function normalizedRepositoryPath(path: string, label: string): string {
+  if (isAbsolute(path)) throw new Error(`${label} must be repository-relative: ${path}`);
+  const normalized = slashPath(normalize(path));
+  if (!normalized || normalized === "." || normalized.startsWith("../") || normalized !== path.replace(/\\/gu, "/")) {
+    throw new Error(`${label} is not a normalized repository-relative path: ${path}`);
+  }
+  return normalized;
+}
+
+function routeAnchorPin(
+  path: string,
+  content: string,
+  releaseId = releaseIdForRouteAnchorPath(path),
+): OperationalCoverageRouteAnchorPin {
+  return { path, release_id: releaseId, sha256: sha256(content) };
+}
+
+export function sameOperationalCoverageRouteAnchorPin(
+  left: OperationalCoverageRouteAnchorPin,
+  right: OperationalCoverageRouteAnchorPin,
+): boolean {
+  return left.path === right.path && left.release_id === right.release_id && left.sha256 === right.sha256;
+}
+
+/**
+ * Reads the persisted coverage manifest as the authority for its route-anchor
+ * input and verifies that exact immutable artifact before a downstream action.
+ */
+export function loadOperationalCoverageRouteAnchorPin(options: {
+  rootDir?: string | undefined;
+  outputDir?: string | undefined;
+} = {}): {
+  pin: OperationalCoverageRouteAnchorPin;
+  routeAnchors: RouteAnchorRow[];
+  corpusFingerprint: string;
+  inputFingerprint: string;
+} {
+  const rootDir = resolve(options.rootDir ?? repoRoot);
+  const outputDir = resolve(rootDir, options.outputDir ?? DEFAULT_OPERATIONAL_COVERAGE_OUTPUT_DIR);
+  const manifestPath = join(outputDir, "manifest.json");
+  if (!existsSync(manifestPath)) throw new Error(`Required operational coverage manifest is missing: ${manifestPath}`);
+  let manifest: Record<string, unknown>;
+  try {
+    const parsed = JSON.parse(readFileSync(manifestPath, "utf8")) as unknown;
+    if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) throw new Error("expected an object");
+    manifest = parsed as Record<string, unknown>;
+  } catch (error) {
+    throw new Error(`${manifestPath}: invalid JSON: ${error instanceof Error ? error.message : String(error)}`);
+  }
+  if (typeof manifest.route_anchor_path !== "string" || !manifest.route_anchor_path) {
+    throw new Error(`${manifestPath}: missing route_anchor_path pin`);
+  }
+  const path = normalizedRepositoryPath(manifest.route_anchor_path, `${manifestPath}: route_anchor_path`);
+  const expectedReleaseId = releaseIdForRouteAnchorPath(path);
+  if (manifest.route_anchor_release_id !== expectedReleaseId) {
+    throw new Error(
+      `${manifestPath}: route_anchor_release_id does not match route_anchor_path ` +
+        `(expected ${expectedReleaseId ?? "null"}, found ${String(manifest.route_anchor_release_id)})`,
+    );
+  }
+  if (typeof manifest.route_anchor_sha256 !== "string" || !/^[a-f0-9]{64}$/u.test(manifest.route_anchor_sha256)) {
+    throw new Error(`${manifestPath}: missing or invalid route_anchor_sha256 pin`);
+  }
+  if (typeof manifest.corpus_fingerprint !== "string" || !/^[a-f0-9]{64}$/u.test(manifest.corpus_fingerprint)) {
+    throw new Error(`${manifestPath}: missing or invalid corpus_fingerprint`);
+  }
+  if (typeof manifest.input_fingerprint !== "string" || !/^[a-f0-9]{64}$/u.test(manifest.input_fingerprint)) {
+    throw new Error(`${manifestPath}: missing or invalid input_fingerprint`);
+  }
+  const absolutePath = resolve(rootDir, path);
+  const rootPrefix = rootDir.endsWith(sep) ? rootDir : `${rootDir}${sep}`;
+  if (absolutePath !== rootDir && !absolutePath.startsWith(rootPrefix)) {
+    throw new Error(`${manifestPath}: route_anchor_path escapes the repository root`);
+  }
+  if (!existsSync(absolutePath)) throw new Error(`Manifest-pinned route-anchor artifact is missing: ${absolutePath}`);
+  const content = readFileSync(absolutePath, "utf8");
+  const actual = routeAnchorPin(path, content, expectedReleaseId);
+  if (actual.sha256 !== manifest.route_anchor_sha256) {
+    throw new Error(
+      `${manifestPath}: route_anchor_sha256 mismatch for ${path}; expected ${manifest.route_anchor_sha256}, found ${actual.sha256}`,
+    );
+  }
+  const routeAnchors = readJsonl<RouteAnchorRow>(absolutePath);
+  if (!Number.isInteger(manifest.route_anchor_count) || manifest.route_anchor_count !== routeAnchors.length) {
+    throw new Error(
+      `${manifestPath}: route_anchor_count mismatch for ${path}; expected ${String(manifest.route_anchor_count)}, found ${routeAnchors.length}`,
+    );
+  }
+  return {
+    pin: actual,
+    routeAnchors,
+    corpusFingerprint: manifest.corpus_fingerprint,
+    inputFingerprint: manifest.input_fingerprint,
+  };
 }
 
 function json(value: unknown): string {
@@ -416,6 +530,11 @@ export function buildOperationalCoverageArtifacts(
     left.receipt_id.localeCompare(right.receipt_id),
   );
   const studyWindow = input.studyWindow ?? DEFAULT_OPERATIONAL_STUDY_WINDOW;
+  const routeAnchorPath = input.routeAnchorPath ?? DEFAULT_OPERATIONAL_COVERAGE_ROUTE_ANCHORS;
+  const routeAnchorReleaseId = input.routeAnchorReleaseId === undefined
+    ? releaseIdForRouteAnchorPath(routeAnchorPath)
+    : input.routeAnchorReleaseId;
+  const routeAnchorSha256 = input.routeAnchorSha256 ?? sha256(jsonl(routeAnchors));
   const corpusFingerprint = sha256(stableJson({
     records,
     route_anchors: routeAnchors,
@@ -449,6 +568,11 @@ export function buildOperationalCoverageArtifacts(
   const inputFingerprint = sha256(stableJson({
     records,
     route_anchors: routeAnchors,
+    route_anchor_pin: {
+      path: routeAnchorPath,
+      release_id: routeAnchorReleaseId,
+      sha256: routeAnchorSha256,
+    },
     anchor_review_decisions: anchorReviewDecisions,
     occurrence_review_decisions: occurrenceReviewDecisions,
     occurrence_identity_registry: occurrenceIdentityRegistry,
@@ -512,7 +636,9 @@ export function buildOperationalCoverageArtifacts(
     input_fingerprint: inputFingerprint,
     corpus_fingerprint: corpusFingerprint,
     canonical_record_count: records.length,
-    route_anchor_path: input.routeAnchorPath ?? DEFAULT_OPERATIONAL_COVERAGE_ROUTE_ANCHORS,
+    route_anchor_path: routeAnchorPath,
+    route_anchor_release_id: routeAnchorReleaseId,
+    route_anchor_sha256: routeAnchorSha256,
     route_anchor_count: routeAnchors.length,
     anchor_review_decision_count: anchorReviewDecisions.length,
     occurrence_review_decision_count: occurrenceReviewDecisions.length,
@@ -534,8 +660,8 @@ export function loadOperationalCoverageArtifacts(
   options: WriteOperationalCoverageArtifactsOptions = {},
 ): LoadOperationalCoverageArtifactsResult {
   const rootDir = options.rootDir ?? repoRoot;
-  const routeAnchorRelativePath = options.routeAnchorPath ?? DEFAULT_OPERATIONAL_COVERAGE_ROUTE_ANCHORS;
-  const routeAnchorPath = resolve(rootDir, routeAnchorRelativePath);
+  const routeAnchorInputPath = options.routeAnchorPath ?? DEFAULT_OPERATIONAL_COVERAGE_ROUTE_ANCHORS;
+  const routeAnchorPath = resolve(rootDir, routeAnchorInputPath);
   const outputDir = resolve(rootDir, options.outputDir ?? DEFAULT_OPERATIONAL_COVERAGE_OUTPUT_DIR);
   const decisionDir = resolve(rootDir, options.decisionDir ?? DEFAULT_OPERATIONAL_COVERAGE_DECISION_DIR);
   const searchReceiptDir = resolve(
@@ -543,6 +669,7 @@ export function loadOperationalCoverageArtifacts(
     options.searchReceiptDir ?? DEFAULT_OPERATIONAL_COVERAGE_SEARCH_RECEIPT_DIR,
   );
   const records = readCoverageCanonicalRecords(rootDir);
+  const routeAnchorContent = readFileSync(routeAnchorPath, "utf8");
   const routeAnchors = readJsonl<RouteAnchorRow>(routeAnchorPath);
   const anchorReviewDecisions = loadOperationalAnchorReviewDecisions(
     join(rootDir, "data", "operational-anchor-review", "accepted", "decisions"),
@@ -558,6 +685,7 @@ export function loadOperationalCoverageArtifacts(
   const downstream = loadDownstreamLayer(rootDir);
   validateLedgerDecisionEvidence(ledgerDecisions, records);
   validateSearchReceiptSources(searchReceipts, records);
+  const routeAnchorRelativePath = slashPath(relative(rootDir, routeAnchorPath));
   const build = buildOperationalCoverageArtifacts({
     records,
     routeAnchors,
@@ -567,11 +695,41 @@ export function loadOperationalCoverageArtifacts(
     ledgerDecisions,
     searchReceipts,
     downstream,
-    routeAnchorPath: relative(rootDir, routeAnchorPath).split("/").join("/"),
+    routeAnchorPath: routeAnchorRelativePath,
+    routeAnchorReleaseId: releaseIdForRouteAnchorPath(routeAnchorRelativePath),
+    routeAnchorSha256: sha256(routeAnchorContent),
     ...(options.studyWindow ? { studyWindow: options.studyWindow } : {}),
   });
 
   return { outputDir, build };
+}
+
+export function loadPinnedOperationalCoverageArtifacts(
+  options: Omit<WriteOperationalCoverageArtifactsOptions, "routeAnchorPath"> = {},
+): LoadOperationalCoverageArtifactsResult & { routeAnchorPin: OperationalCoverageRouteAnchorPin } {
+  const persisted = loadOperationalCoverageRouteAnchorPin(options);
+  const loaded = loadOperationalCoverageArtifacts({ ...options, routeAnchorPath: persisted.pin.path });
+  if (persisted.corpusFingerprint !== loaded.build.manifest.corpus_fingerprint) {
+    throw new Error(
+      `Operational coverage manifest has stale corpus_fingerprint ${persisted.corpusFingerprint}; ` +
+        `current fingerprint is ${loaded.build.manifest.corpus_fingerprint}`,
+    );
+  }
+  if (persisted.inputFingerprint !== loaded.build.manifest.input_fingerprint) {
+    throw new Error(
+      `Operational coverage manifest has stale input_fingerprint ${persisted.inputFingerprint}; ` +
+        `current fingerprint is ${loaded.build.manifest.input_fingerprint}`,
+    );
+  }
+  const builtPin: OperationalCoverageRouteAnchorPin = {
+    path: loaded.build.manifest.route_anchor_path,
+    release_id: loaded.build.manifest.route_anchor_release_id,
+    sha256: loaded.build.manifest.route_anchor_sha256,
+  };
+  if (!sameOperationalCoverageRouteAnchorPin(persisted.pin, builtPin)) {
+    throw new Error("Operational coverage route-anchor pin changed while reloading current coverage");
+  }
+  return { ...loaded, routeAnchorPin: persisted.pin };
 }
 
 export function writeOperationalCoverageArtifacts(

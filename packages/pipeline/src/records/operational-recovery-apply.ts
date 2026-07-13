@@ -7,8 +7,11 @@ import type { JsonObject, MtaCanonicalRecord, MtaSubmissionEntry } from "@mta-wi
 import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { materializeWiki, materializedRecordIdAssignments } from "@mta-wiki/pipeline/materialize/materialize";
 import {
-  loadOperationalCoverageArtifacts,
+  loadOperationalCoverageRouteAnchorPin,
+  loadPinnedOperationalCoverageArtifacts,
+  sameOperationalCoverageRouteAnchorPin,
   writeOperationalCoverageArtifacts,
+  type OperationalCoverageRouteAnchorPin,
 } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
 import {
   buildOperationalRecoverySubmissionBatch,
@@ -52,10 +55,11 @@ export type OperationalRecoveryApplyOptions = {
   records?: readonly MtaCanonicalRecord[] | undefined;
   readRecords?: (() => readonly MtaCanonicalRecord[]) | undefined;
   materialize?: (() => unknown) | undefined;
-  refreshCoverage?: (() => unknown) | undefined;
+  refreshCoverage?: ((routeAnchorPin?: OperationalCoverageRouteAnchorPin) => unknown) | undefined;
   createEntry?: OperationalRecoveryEntryFactory | undefined;
   resolveBlock?: ((sourceId: string, blockId: string) => OperationalRecoveryResolvedBlock | undefined) | undefined;
   currentCorpusFingerprint?: string | undefined;
+  routeAnchorPin?: OperationalCoverageRouteAnchorPin | undefined;
   knownGapIds?: ReadonlySet<string> | undefined;
   recordIdAssignments?: ((entries: MtaSubmissionEntry[], retiredSubmissionIds: Set<string>) => Map<string, string>) | undefined;
 };
@@ -205,15 +209,31 @@ export function applyOperationalRecoveryProposal(
   const validationStage = artifact.stage === "applied" ? "applied" : journalExists ? "resuming" : "pending";
   let currentCorpusFingerprint = options.currentCorpusFingerprint;
   let knownGapIds = options.knownGapIds;
+  let currentRouteAnchorPin = options.routeAnchorPin;
   if (validationStage === "pending" && (currentCorpusFingerprint === undefined || knownGapIds === undefined)) {
-    const coverage = loadOperationalCoverageArtifacts({ rootDir }).build;
-    currentCorpusFingerprint ??= coverage.matrix.corpus_fingerprint;
-    knownGapIds ??= new Set(coverage.ledger.gaps.map((gap) => gap.gap_id));
+    const coverage = loadPinnedOperationalCoverageArtifacts({ rootDir });
+    currentCorpusFingerprint ??= coverage.build.matrix.corpus_fingerprint;
+    knownGapIds ??= new Set(coverage.build.ledger.gaps.map((gap) => gap.gap_id));
+    currentRouteAnchorPin ??= coverage.routeAnchorPin;
+  }
+  if (proposal.route_anchor_pin && !currentRouteAnchorPin) {
+    currentRouteAnchorPin = loadOperationalCoverageRouteAnchorPin({ rootDir }).pin;
+  }
+  if (
+    proposal.route_anchor_pin &&
+    (!currentRouteAnchorPin || !sameOperationalCoverageRouteAnchorPin(proposal.route_anchor_pin, currentRouteAnchorPin))
+  ) {
+    throw new Error(
+      `Operational recovery proposal ${proposalId} route-anchor pin disagrees with current coverage: ` +
+        `proposal ${proposal.route_anchor_pin.path}@${proposal.route_anchor_pin.sha256}; ` +
+        `current ${currentRouteAnchorPin?.path ?? "unavailable"}@${currentRouteAnchorPin?.sha256 ?? "unavailable"}`,
+    );
   }
   const proposalReasons = validateOperationalRecoveryProposal(proposal, {
     records,
     stage: validationStage,
     ...(currentCorpusFingerprint ? { current_corpus_fingerprint: currentCorpusFingerprint } : {}),
+    ...(currentRouteAnchorPin ? { current_route_anchor_pin: currentRouteAnchorPin } : {}),
     ...(knownGapIds ? { known_gap_ids: knownGapIds } : {}),
     resolve_block: resolveBlock,
   });
@@ -277,7 +297,20 @@ export function applyOperationalRecoveryProposal(
   }
 
   (options.materialize ?? materializeWiki)();
-  (options.refreshCoverage ?? (() => writeOperationalCoverageArtifacts({ rootDir })))();
+  if (options.refreshCoverage) {
+    options.refreshCoverage(currentRouteAnchorPin);
+  } else {
+    currentRouteAnchorPin ??= loadOperationalCoverageRouteAnchorPin({ rootDir }).pin;
+    const refreshed = writeOperationalCoverageArtifacts({ rootDir, routeAnchorPath: currentRouteAnchorPin.path });
+    const refreshedPin: OperationalCoverageRouteAnchorPin = {
+      path: refreshed.manifest.route_anchor_path,
+      release_id: refreshed.manifest.route_anchor_release_id,
+      sha256: refreshed.manifest.route_anchor_sha256,
+    };
+    if (!sameOperationalCoverageRouteAnchorPin(currentRouteAnchorPin, refreshedPin)) {
+      throw new Error(`Operational coverage refresh changed the route-anchor pin for proposal ${proposalId}`);
+    }
+  }
   const recordsAfter = options.readRecords?.() ?? readCanonicalRecords();
   const postApplyReasons = validateOperationalRecoveryProposal(proposal, {
     records: recordsAfter,

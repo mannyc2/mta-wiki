@@ -21,7 +21,11 @@ import {
   relationEndpointIssues,
 } from "@mta-wiki/pipeline/records/submissions";
 import { evidenceId } from "@mta-wiki/pipeline/sources/source-prep";
-import { loadOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
+import {
+  loadPinnedOperationalCoverageArtifacts,
+  sameOperationalCoverageRouteAnchorPin,
+  type OperationalCoverageRouteAnchorPin,
+} from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
 import {
   evidenceBlockIndexEntry,
   readEvidenceBlockIndex,
@@ -112,6 +116,7 @@ type OperationalRecoveryProposalBase = {
   proposal_id: string;
   proposal_kind: OperationalRecoveryProposalKind;
   corpus_fingerprint: string;
+  route_anchor_pin?: OperationalCoverageRouteAnchorPin | undefined;
   gap_ids: string[];
   source_id: string;
   review_state: OperationalRecoveryProposalReviewState;
@@ -151,6 +156,7 @@ export type OperationalRecoveryProposalValidationContext = {
   records: readonly MtaCanonicalRecord[];
   stage: OperationalRecoveryProposalStage;
   current_corpus_fingerprint?: string | undefined;
+  current_route_anchor_pin?: OperationalCoverageRouteAnchorPin | undefined;
   known_gap_ids?: ReadonlySet<string> | undefined;
   resolve_block: (sourceId: string, blockId: string) => OperationalRecoveryResolvedBlock | undefined;
 };
@@ -214,6 +220,7 @@ const commonFields = new Set([
   "proposal_id",
   "proposal_kind",
   "corpus_fingerprint",
+  "route_anchor_pin",
   "gap_ids",
   "source_id",
   "review_state",
@@ -229,6 +236,7 @@ const relationProposalFields = new Set([...commonFields, "proposed_relation", "e
 const observationProposalFields = new Set([...commonFields, "observations", "relations"]);
 const provenanceFields = new Set(["drafted_by", "drafted_at", "method", "verifier"]);
 const verifierFields = new Set(["reviewed_by", "reviewed_at", "verdict", "rationale"]);
+const routeAnchorPinFields = new Set(["path", "release_id", "sha256"]);
 const evidenceFields = new Set(["role", "source_id", "evidence_id", "block_id", "source_quote"]);
 const canonicalEvidenceFields = new Set([...evidenceFields, "record_id"]);
 const proposedRelationFields = new Set([
@@ -341,6 +349,27 @@ function stringArray(value: unknown, path: string): string[] {
   const normalized = value.map((item) => (item as string).trim());
   if (new Set(normalized).size !== normalized.length) throw new Error(`${path} contains duplicate values`);
   return normalized;
+}
+
+function parseRouteAnchorPin(value: unknown, path: string): OperationalCoverageRouteAnchorPin | undefined {
+  if (value === undefined) return undefined;
+  const object = requiredObject(value, path);
+  rejectUnknownFields(object, routeAnchorPinFields, path);
+  const pinPath = requiredString(object, "path", path);
+  if (pinPath.startsWith("/") || pinPath.includes("\\") || pinPath.split("/").some((part) => !part || part === "." || part === "..")) {
+    throw new Error(`${path}.path must be a normalized repository-relative path`);
+  }
+  const releaseId = object.release_id;
+  if (releaseId !== null && (typeof releaseId !== "string" || !releaseId.trim())) {
+    throw new Error(`${path}.release_id must be a non-empty string or null`);
+  }
+  const expectedReleaseId = /^data\/exports\/releases\/([^/]+)\/route_anchors\.jsonl$/u.exec(pinPath)?.[1] ?? null;
+  if (releaseId !== expectedReleaseId) {
+    throw new Error(`${path}.release_id does not match the pinned route-anchor path`);
+  }
+  const hash = requiredString(object, "sha256", path);
+  if (!/^[a-f0-9]{64}$/u.test(hash)) throw new Error(`${path}.sha256 must be a lowercase SHA-256`);
+  return { path: pinPath, release_id: releaseId === null ? null : releaseId.trim(), sha256: hash };
 }
 
 function parseVerifier(value: unknown, path: string): OperationalRecoveryVerifier | undefined {
@@ -584,6 +613,9 @@ export function parseOperationalRecoveryProposal(
     schema_version: OPERATIONAL_RECOVERY_PROPOSAL_SCHEMA_VERSION,
     proposal_id: proposalId,
     corpus_fingerprint: corpusFingerprint,
+    ...(object.route_anchor_pin === undefined
+      ? {}
+      : { route_anchor_pin: parseRouteAnchorPin(object.route_anchor_pin, `${path}.route_anchor_pin`) }),
     gap_ids: gapIds,
     source_id: sourceId,
     ...review,
@@ -689,6 +721,15 @@ export function validateOperationalRecoveryProposal(
       reasons.push(`stale corpus_fingerprint ${proposal.corpus_fingerprint}`);
     }
     if (context.known_gap_ids === undefined) reasons.push("current operational coverage gap ledger is unavailable");
+    if (proposal.route_anchor_pin) {
+      if (!context.current_route_anchor_pin) reasons.push("current operational coverage route-anchor pin is unavailable");
+      else if (!sameOperationalCoverageRouteAnchorPin(proposal.route_anchor_pin, context.current_route_anchor_pin)) {
+        reasons.push(
+          `route-anchor pin disagreement: proposal uses ${proposal.route_anchor_pin.path}@${proposal.route_anchor_pin.sha256}, ` +
+            `current coverage uses ${context.current_route_anchor_pin.path}@${context.current_route_anchor_pin.sha256}`,
+        );
+      }
+    }
   }
   for (const gapId of proposal.gap_ids) {
     if (context.known_gap_ids && !context.known_gap_ids.has(gapId)) reasons.push(`unknown operational coverage gap ${gapId}`);
@@ -1145,11 +1186,16 @@ function proposalLocation(
   return undefined;
 }
 
-function coverageContext(rootDir: string): { fingerprint: string; gapIds: Set<string> } {
-  const loaded = loadOperationalCoverageArtifacts({ rootDir });
+function coverageContext(rootDir: string): {
+  fingerprint: string;
+  gapIds: Set<string>;
+  routeAnchorPin: OperationalCoverageRouteAnchorPin;
+} {
+  const loaded = loadPinnedOperationalCoverageArtifacts({ rootDir });
   return {
     fingerprint: loaded.build.matrix.corpus_fingerprint,
     gapIds: new Set(loaded.build.ledger.gaps.map((gap) => gap.gap_id)),
+    routeAnchorPin: loaded.routeAnchorPin,
   };
 }
 
@@ -1190,6 +1236,7 @@ export function validateOperationalRecoveryProposalTree(options: {
   rootDir?: string | undefined;
   records?: readonly MtaCanonicalRecord[] | undefined;
   currentCorpusFingerprint?: string | undefined;
+  currentRouteAnchorPin?: OperationalCoverageRouteAnchorPin | undefined;
   knownGapIds?: ReadonlySet<string> | undefined;
   resolveBlock?: ((sourceId: string, blockId: string) => OperationalRecoveryResolvedBlock | undefined) | undefined;
   createEntry?: OperationalRecoveryEntryFactory | undefined;
@@ -1203,6 +1250,7 @@ export function validateOperationalRecoveryProposalTree(options: {
     : coverageContext(rootDir);
   const currentCorpusFingerprint = options.currentCorpusFingerprint ?? coverage?.fingerprint;
   const knownGapIds = options.knownGapIds ?? coverage?.gapIds;
+  const currentRouteAnchorPin = options.currentRouteAnchorPin ?? coverage?.routeAnchorPin;
   const resolveBlock = options.resolveBlock ?? operationalRecoveryBlockResolver(rootDir);
   const proposals: OperationalRecoveryProposalArtifact[] = [];
   const issues: MtaValidationIssue[] = [];
@@ -1241,6 +1289,7 @@ export function validateOperationalRecoveryProposalTree(options: {
         records,
         stage: validationStage,
         ...(currentCorpusFingerprint ? { current_corpus_fingerprint: currentCorpusFingerprint } : {}),
+        ...(currentRouteAnchorPin ? { current_route_anchor_pin: currentRouteAnchorPin } : {}),
         ...(knownGapIds ? { known_gap_ids: knownGapIds } : {}),
         resolve_block: resolveBlock,
       });

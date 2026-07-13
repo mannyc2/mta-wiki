@@ -1,3 +1,7 @@
+import { createHash } from "node:crypto";
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
 import type { JsonObject, MtaCanonicalRecord } from "@mta-wiki/db/types";
 import type { OperationalAnchorRow } from "@mta-wiki/pipeline/materialize/operational-anchors";
@@ -7,7 +11,39 @@ import {
   type OperationalCoverageAcceptedDecision,
   type OperationalCoverageSearchReceipt,
 } from "@mta-wiki/pipeline/quality/operational-coverage";
-import { buildOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
+import {
+  buildOperationalCoverageArtifacts,
+  loadOperationalCoverageRouteAnchorPin,
+} from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
+
+function sha256(value: string): string {
+  return createHash("sha256").update(value).digest("hex");
+}
+
+function pinnedRouteAnchorFixture(releaseId = "v1-rc5") {
+  const rootDir = mkdtempSync(join(tmpdir(), "operational-coverage-pin-"));
+  const routeAnchorPath = `data/exports/releases/${releaseId}/route_anchors.jsonl`;
+  const content = `${JSON.stringify({
+    gtfs_route_id: "Q3",
+    canonical_route_record_id: "route_q3",
+    variant_record_ids: [],
+    disposition: "true_route",
+  })}\n`;
+  mkdirSync(join(rootDir, `data/exports/releases/${releaseId}`), { recursive: true });
+  writeFileSync(join(rootDir, routeAnchorPath), content, "utf8");
+  const manifestPath = join(rootDir, "data/quality/operational-coverage/manifest.json");
+  mkdirSync(join(manifestPath, ".."), { recursive: true });
+  const manifest = {
+    corpus_fingerprint: "a".repeat(64),
+    input_fingerprint: "b".repeat(64),
+    route_anchor_path: routeAnchorPath,
+    route_anchor_release_id: releaseId,
+    route_anchor_sha256: sha256(content),
+    route_anchor_count: 1,
+  };
+  writeFileSync(manifestPath, `${JSON.stringify(manifest)}\n`, "utf8");
+  return { rootDir, manifestPath, manifest };
+}
 
 function record(
   recordId: string,
@@ -522,5 +558,58 @@ describe("operational coverage ledger", () => {
     expect(replay.manifest.ledger_decision_count).toBe(1);
     expect(replay.matrix.corpus_fingerprint).toBe(baseline.matrix.corpus_fingerprint);
     expect(replay.ledger.queue.find((row) => row.gap_id === gap.gap_id)?.status).toBe("terminal");
+  });
+
+  it("persists the default route-anchor release identity and accepts an alternate manifest pin", () => {
+    const input = baseInput();
+    const built = buildOperationalCoverageArtifacts({
+      records: input.canonical_records,
+      routeAnchors: [],
+      anchorReviewDecisions: [],
+      occurrenceReviewDecisions: [],
+      occurrenceIdentityRegistry: [],
+    });
+    expect(built.manifest).toMatchObject({
+      route_anchor_path: "data/exports/releases/v1-rc5/route_anchors.jsonl",
+      route_anchor_release_id: "v1-rc5",
+    });
+    expect(built.manifest.route_anchor_sha256).toMatch(/^[a-f0-9]{64}$/u);
+
+    const fixture = pinnedRouteAnchorFixture("v2-anchor-canary");
+    try {
+      expect(loadOperationalCoverageRouteAnchorPin({ rootDir: fixture.rootDir }).pin).toEqual({
+        path: fixture.manifest.route_anchor_path,
+        release_id: "v2-anchor-canary",
+        sha256: fixture.manifest.route_anchor_sha256,
+      });
+    } finally {
+      rmSync(fixture.rootDir, { recursive: true, force: true });
+    }
+  });
+
+  it("rejects stale route-anchor hashes and release/path disagreement", () => {
+    const staleHash = pinnedRouteAnchorFixture();
+    try {
+      writeFileSync(staleHash.manifestPath, `${JSON.stringify({
+        ...staleHash.manifest,
+        route_anchor_sha256: "0".repeat(64),
+      })}\n`, "utf8");
+      expect(() => loadOperationalCoverageRouteAnchorPin({ rootDir: staleHash.rootDir }))
+        .toThrow("route_anchor_sha256 mismatch");
+    } finally {
+      rmSync(staleHash.rootDir, { recursive: true, force: true });
+    }
+
+    const wrongPath = pinnedRouteAnchorFixture("alternate-release");
+    try {
+      writeFileSync(wrongPath.manifestPath, `${JSON.stringify({
+        ...wrongPath.manifest,
+        route_anchor_release_id: "v1-rc5",
+      })}\n`, "utf8");
+      expect(() => loadOperationalCoverageRouteAnchorPin({ rootDir: wrongPath.rootDir }))
+        .toThrow("route_anchor_release_id does not match route_anchor_path");
+    } finally {
+      rmSync(wrongPath.rootDir, { recursive: true, force: true });
+    }
   });
 });

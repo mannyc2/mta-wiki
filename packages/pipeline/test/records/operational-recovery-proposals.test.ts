@@ -25,6 +25,11 @@ import {
 const fingerprint = "a".repeat(64);
 const gapId = "operational-coverage:fixture-gap";
 const sourceId = "source_fixture";
+const routeAnchorPin = {
+  path: "data/exports/releases/v2-anchor-canary/route_anchors.jsonl",
+  release_id: "v2-anchor-canary",
+  sha256: "c".repeat(64),
+} as const;
 
 function record(
   recordId: string,
@@ -733,6 +738,57 @@ describe("operational recovery proposals", () => {
       expect(second.wrote_journal).toBe(false);
       expect(materializeCalls).toBe(1);
       expect(readFileSync(join(root, first.journal_path), "utf8")).toBe(journal);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("refreshes operational coverage with the same route-anchor pin used at draft time", () => {
+    const root = tempRoot("same-anchor-pin");
+    let currentRecords = canonicalFixture();
+    let refreshedPin: typeof routeAnchorPin | undefined;
+    try {
+      const proposal = observationProposal();
+      proposal.route_anchor_pin = routeAnchorPin;
+      writeProposal(root, proposal, "observations");
+      const report = applyOperationalRecoveryProposal(proposal.proposal_id, {
+        rootDir: root,
+        force: true,
+        records: currentRecords,
+        readRecords: () => currentRecords,
+        materialize: () => { currentRecords = appliedObservationRecords(); },
+        refreshCoverage: (pin) => { refreshedPin = pin as typeof routeAnchorPin; },
+        routeAnchorPin,
+        createEntry: fakeEntry,
+        recordIdAssignments: fakeRecordIdAssignments,
+        resolveBlock,
+        currentCorpusFingerprint: fingerprint,
+        knownGapIds: new Set([gapId]),
+      });
+      expect(report.coverage_refreshed).toBe(true);
+      expect(refreshedPin).toEqual(routeAnchorPin);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("rejects draft/apply route-anchor pin disagreement before writing a journal", () => {
+    const root = tempRoot("anchor-pin-disagreement");
+    try {
+      const proposal = observationProposal();
+      proposal.route_anchor_pin = routeAnchorPin;
+      writeProposal(root, proposal, "observations");
+      expect(() => applyOperationalRecoveryProposal(proposal.proposal_id, {
+        rootDir: root,
+        records: canonicalFixture(),
+        routeAnchorPin: { ...routeAnchorPin, path: "data/exports/releases/v3/route_anchors.jsonl", release_id: "v3" },
+        createEntry: fakeEntry,
+        recordIdAssignments: fakeRecordIdAssignments,
+        resolveBlock,
+        currentCorpusFingerprint: fingerprint,
+        knownGapIds: new Set([gapId]),
+      })).toThrow("route-anchor pin disagrees with current coverage");
+      expect(existsSync(join(root, "data", "submissions"))).toBe(false);
     } finally {
       rmSync(root, { recursive: true, force: true });
     }

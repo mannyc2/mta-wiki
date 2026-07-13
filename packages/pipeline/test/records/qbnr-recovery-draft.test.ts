@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { afterEach, describe, expect, it } from "bun:test";
@@ -127,6 +127,11 @@ function fixture() {
     records,
     blocks: [block],
     routeAnchors,
+    routeAnchorPin: {
+      path: "data/exports/releases/v1-rc5/route_anchors.jsonl",
+      release_id: "v1-rc5",
+      sha256: "d".repeat(64),
+    },
     currentCorpusFingerprint: fingerprint,
     knownGapIds: new Set([gapId]),
   };
@@ -179,6 +184,32 @@ describe("QBNR recovery proposal draft wrapper", () => {
     ];
     expect(() => draftQbnrRecoveryProposalFromFile(ambiguous.specPath, ambiguous.options))
       .toThrow("must have exactly one row in the pinned route-anchor release; found 2");
+  });
+
+  it("threads the exact coverage route-anchor pin into the drafted proposal", () => {
+    const pinned = fixture();
+    pinned.options.routeAnchorPin = {
+      path: "data/exports/releases/v2-anchor-canary/route_anchors.jsonl",
+      release_id: "v2-anchor-canary",
+      sha256: "c".repeat(64),
+    };
+    const result = draftQbnrRecoveryProposalFromFile(pinned.specPath, pinned.options);
+    expect(result.proposal.route_anchor_pin).toEqual(pinned.options.routeAnchorPin);
+  });
+
+  it("never emits a new proposal when injected coverage inputs omit route-anchor provenance", () => {
+    const unpinned = fixture();
+    delete unpinned.options.routeAnchorPin;
+    expect(() => draftQbnrRecoveryProposalFromFile(unpinned.specPath, unpinned.options))
+      .toThrow("Required operational coverage manifest is missing");
+    expect(existsSync(join(
+      unpinned.rootDir,
+      "data",
+      "operational-anchor-review",
+      "proposed",
+      "observations",
+      `${unpinned.spec.proposal_id}.json`,
+    ))).toBe(false);
   });
 
   it("never overwrites an existing proposal", () => {

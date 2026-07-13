@@ -1,5 +1,14 @@
 import { describe, expect, it } from "bun:test";
-import { computeRouteAnchors, routeAnchorsJsonl, type GtfsRoute } from "@mta-wiki/pipeline/materialize/route-anchors";
+import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import {
+  computeRouteAnchors,
+  readRouteAnchorReview,
+  routeAnchorsJsonl,
+  type GtfsRoute,
+  type ReviewedNonGtfsRouteDispositions,
+} from "@mta-wiki/pipeline/materialize/route-anchors";
 import type { JsonObject, MtaCanonicalRecord } from "@mta-wiki/db/types";
 
 function route(recordId: string, payload: JsonObject, aliases: string[] = [], sourceIds: string[] = ["source_a"]): MtaCanonicalRecord {
@@ -108,6 +117,185 @@ describe("computeRouteAnchors", () => {
         anchor_reason: "Draft-plan proposal record tied to B3 planning context rather than an operating GTFS route id.",
       },
     ]);
+  });
+
+  it("excludes a reviewed historical route-number reuse before selecting the current anchor", () => {
+    const historical = route(
+      "route_q48-serves-lga-2011",
+      { route_id: "Q48", route_label: "Q48", route_record_scope: "true_route" },
+      ["route_q48"],
+      ["source_2011", "source_2012"],
+    );
+    const current = route(
+      "route_q48-qbnr-2025",
+      { route_id: "Q48", route_label: "Q48", route_record_scope: "true_route" },
+      [],
+      ["source_2025"],
+    );
+    const dispositions: ReviewedNonGtfsRouteDispositions = {
+      "route_q48-serves-lga-2011": {
+        disposition: "historical_retired",
+        reason: "The 2011 airport route was retired; the current Q48 reuses its number for a distinct service.",
+        expected_route_id: "Q48",
+      },
+    };
+
+    const rows = computeRouteAnchors(
+      [historical, current],
+      [gtfs("Q48")],
+      { Q48: "route_q48-qbnr-2025" },
+      dispositions,
+    );
+
+    expect(rows).toEqual([
+      {
+        gtfs_route_id: "Q48",
+        canonical_route_record_id: "route_q48-qbnr-2025",
+        variant_record_ids: [],
+        aliases: ["Q48"],
+        disposition: "true_route",
+        anchor_reason: "manual_override",
+      },
+      {
+        gtfs_route_id: null,
+        canonical_route_record_id: "route_q48-serves-lga-2011",
+        variant_record_ids: [],
+        aliases: ["Q48", "route_q48"],
+        disposition: "historical_retired",
+        anchor_reason: "The 2011 airport route was retired; the current Q48 reuses its number for a distinct service.",
+      },
+    ]);
+    expect(rows[0]?.variant_record_ids).not.toContain("route_q48-serves-lga-2011");
+
+    const shuffled = computeRouteAnchors(
+      [current, historical],
+      [gtfs("Q48")],
+      { Q48: "route_q48-qbnr-2025" },
+      dispositions,
+    );
+    expect(routeAnchorsJsonl(shuffled)).toBe(routeAnchorsJsonl(rows));
+  });
+
+  it("fails closed on stale or inapplicable reviewed non-GTFS dispositions", () => {
+    const historical = route("route_q48-old", { route_id: "Q48", route_label: "Q48", route_record_scope: "true_route" });
+
+    expect(() =>
+      computeRouteAnchors([historical], [gtfs("Q48")], {}, {
+        "route_missing": {
+          disposition: "historical_retired",
+          reason: "Missing record",
+          expected_route_id: "Q48",
+        },
+      }),
+    ).toThrow("is stale: canonical record not found");
+
+    expect(() =>
+      computeRouteAnchors([historical], [gtfs("Q48")], {}, {
+        "route_q48-old": {
+          disposition: "historical_retired",
+          reason: "Stale route-number binding",
+          expected_route_id: "Q49",
+        },
+      }),
+    ).toThrow('is stale: expected route_id "Q49", found "Q48"');
+
+    expect(() =>
+      computeRouteAnchors([historical], [gtfs("Q48")], {}, {
+        "route_q48-old": {
+          disposition: "proposal",
+          reason: "Wrong disposition for a literal route id",
+          expected_route_id: "Q48",
+        },
+      }),
+    ).toThrow("disposition must be historical_retired");
+
+    expect(() =>
+      computeRouteAnchors(
+        [historical],
+        [gtfs("Q48")],
+        { Q48: "route_q48-old" },
+        {
+          "route_q48-old": {
+            disposition: "historical_retired",
+            reason: "Retired route",
+            expected_route_id: "Q48",
+          },
+        },
+      ),
+    ).toThrow("points to non-candidate route_q48-old");
+
+    expect(() =>
+      computeRouteAnchors(
+        [route("route_b3-draft-plan", { route_id: "B3", route_label: "B3" })],
+        [gtfs("B3")],
+      ),
+    ).toThrow("is stale: expected route_id null, found \"B3\"");
+
+    expect(() =>
+      computeRouteAnchors(
+        [route("route_q48-current", { route_id: "Q48", route_label: "Q48", route_record_scope: "true_route" })],
+        [gtfs("Q48")],
+        { Q84: "route_q48-current" },
+      ),
+    ).toThrow("Route anchor override for Q84 is stale: GTFS route not found");
+  });
+
+  it("strictly parses reviewed route-anchor exception files", () => {
+    const dir = mkdtempSync(join(tmpdir(), "route-anchor-review-"));
+    try {
+      const path = join(dir, "review.json");
+      expect(() => readRouteAnchorReview(path)).toThrow("Reviewed route-anchor exception file is required");
+      writeFileSync(
+        path,
+        JSON.stringify({
+          overrides: { Q48: "route_q48-current" },
+          non_gtfs_dispositions: {
+            "route_q48-old": {
+              disposition: "historical_retired",
+              reason: "Reviewed number reuse",
+              expected_route_id: "Q48",
+            },
+          },
+        }),
+      );
+      expect(readRouteAnchorReview(path)).toEqual({
+        overrides: { Q48: "route_q48-current" },
+        non_gtfs_dispositions: {
+          "route_q48-old": {
+            disposition: "historical_retired",
+            reason: "Reviewed number reuse",
+            expected_route_id: "Q48",
+          },
+        },
+      });
+
+      writeFileSync(path, JSON.stringify({ overrides: {}, non_gtfs_dispositions: [] }));
+      expect(() => readRouteAnchorReview(path)).toThrow("expected object");
+
+      writeFileSync(
+        path,
+        JSON.stringify({
+          overrides: {},
+          non_gtfs_dispositions: {
+            "route_q48-old": { disposition: "historical_retired", reason: "Missing freshness binding" },
+          },
+        }),
+      );
+      expect(() => readRouteAnchorReview(path)).toThrow("expected_route_id must be non-empty string or null");
+
+      writeFileSync(
+        path,
+        JSON.stringify({
+          overrides: {},
+          non_gtfs_dispositions: {
+            "route_q48-old": { disposition: "historical_retried", reason: "Typo", expected_route_id: "Q48" },
+          },
+        }),
+      );
+      expect(() => readRouteAnchorReview(path)).toThrow("disposition must be one of");
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
   });
 
   it("is deterministic when inputs are shuffled", () => {

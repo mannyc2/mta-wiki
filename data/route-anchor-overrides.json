@@ -1,4 +1,5 @@
 {
-  "_doc": "Reviewed manual gtfs_route_id -> canonical route record overrides for route_anchors.jsonl. Keep empty unless the deterministic anchor rule picks the wrong true-route record.",
-  "overrides": {}
+  "_doc": "Reviewed route-anchor exceptions. Overrides select a current canonical record. Non-GTFS dispositions exclude a record from current GTFS matching and bind the review to its expected literal route_id (or null).",
+  "overrides": {},
+  "non_gtfs_dispositions": {}
 }

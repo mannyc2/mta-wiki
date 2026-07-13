@@ -10,6 +10,7 @@ import {
   type OperationalRecoveryObservation,
   type OperationalRecoveryObservationBundleProposal,
 } from "@mta-wiki/pipeline/records/operational-recovery-proposals";
+import type { OperationalCoverageRouteAnchorPin } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
 
 export const QBNR_SERVICE_CHANGES_SOURCE_ID = "mta_queens_bus_network_redesign_service_changes" as const;
 
@@ -72,6 +73,7 @@ export type QbnrRecoveryBatchSpec = {
 export type QbnrRecoveryExpansionContext = {
   blocks: readonly StagedSourceBlock[];
   records: readonly MtaCanonicalRecord[];
+  routeAnchorPin?: OperationalCoverageRouteAnchorPin | undefined;
 };
 
 type ParsedQbnrRow = {
@@ -527,6 +529,7 @@ export function expandQbnrRecoveryBatch(
     proposal_id: spec.proposal_id,
     proposal_kind: "observation_bundle",
     corpus_fingerprint: spec.corpus_fingerprint,
+    ...(context.routeAnchorPin ? { route_anchor_pin: context.routeAnchorPin } : {}),
     gap_ids: [...spec.gap_ids],
     source_id: QBNR_SERVICE_CHANGES_SOURCE_ID,
     review_state: "proposed",

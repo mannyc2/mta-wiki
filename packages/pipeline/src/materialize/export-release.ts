@@ -9,11 +9,12 @@ import { FILE_BY_KIND, readCanonicalRecords } from "@mta-wiki/pipeline/materiali
 import {
   computeRouteAnchors,
   readGtfsRoutesFromDb,
-  readRouteAnchorOverrides,
+  readRouteAnchorReview,
   routeAnchorOverridesPath,
   writeRouteAnchorsJsonl,
   type GtfsRoute,
   type RouteAnchorOverrides,
+  type ReviewedNonGtfsRouteDispositions,
 } from "@mta-wiki/pipeline/materialize/route-anchors";
 import { taxonomyJson } from "@mta-wiki/pipeline/materialize/export-taxonomy";
 import {
@@ -314,6 +315,7 @@ export type ReleaseExportOptions = {
   rootDir?: string | undefined;
   gtfsRoutes?: GtfsRoute[] | undefined;
   routeAnchorOverrides?: RouteAnchorOverrides | undefined;
+  reviewedNonGtfsRouteDispositions?: ReviewedNonGtfsRouteDispositions | undefined;
   operationalAnchorReviewDecisionDir?: string | undefined;
   operationalOccurrenceReviewDecisionDir?: string | undefined;
   operationalOccurrenceIdentityRegistry?: readonly OperationalOccurrenceIdentityEntry[] | undefined;
@@ -442,8 +444,14 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
 
   const routeAnchorPath = join(dir, "route_anchors.jsonl");
   const gtfsRoutes = opts.gtfsRoutes ?? (opts.records ? [] : readGtfsRoutesFromDb());
-  const routeAnchorOverrides = opts.routeAnchorOverrides ?? readRouteAnchorOverrides(routeAnchorOverridesPath(rootDir));
-  const routeAnchors = computeRouteAnchors(records, gtfsRoutes, routeAnchorOverrides);
+  const routeAnchorReview =
+    opts.routeAnchorOverrides === undefined || opts.reviewedNonGtfsRouteDispositions === undefined
+      ? readRouteAnchorReview(routeAnchorOverridesPath(rootDir))
+      : undefined;
+  const routeAnchorOverrides = opts.routeAnchorOverrides ?? routeAnchorReview?.overrides ?? {};
+  const reviewedNonGtfsRouteDispositions =
+    opts.reviewedNonGtfsRouteDispositions ?? routeAnchorReview?.non_gtfs_dispositions ?? {};
+  const routeAnchors = computeRouteAnchors(records, gtfsRoutes, routeAnchorOverrides, reviewedNonGtfsRouteDispositions);
   writeRouteAnchorsJsonl(routeAnchorPath, routeAnchors);
   fileEntries.push(["route_anchors.jsonl", fileMetadata(routeAnchorPath)]);
 

@@ -4,7 +4,10 @@ import { repoRoot } from "@mta-wiki/core/paths";
 import type { JsonValue, MtaCanonicalRecord, StagedSourceBlock } from "@mta-wiki/db/types";
 import type { RouteAnchorRow } from "@mta-wiki/pipeline/materialize/route-anchors";
 import { readCanonicalRecordsFromDbFile } from "@mta-wiki/pipeline/materialize/canonical-read";
-import { loadOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
+import {
+  loadPinnedOperationalCoverageArtifacts,
+  type OperationalCoverageRouteAnchorPin,
+} from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
 import {
   operationalRecoveryBlockResolver,
   operationalRecoveryProposalRoot,
@@ -29,6 +32,7 @@ export type QbnrRecoveryDraftOptions = {
   records?: readonly MtaCanonicalRecord[] | undefined;
   blocks?: readonly StagedSourceBlock[] | undefined;
   routeAnchors?: readonly RouteAnchorRow[] | undefined;
+  routeAnchorPin?: OperationalCoverageRouteAnchorPin | undefined;
   currentCorpusFingerprint?: string | undefined;
   knownGapIds?: ReadonlySet<string> | undefined;
 };
@@ -285,12 +289,13 @@ export function draftQbnrRecoveryProposalFromFile(
   const spec = parseQbnrRecoveryBatchSpec(readJson(resolvedSpecPath), resolvedSpecPath);
 
   const needsCoverage = options.currentCorpusFingerprint === undefined ||
-    options.knownGapIds === undefined || options.routeAnchors === undefined;
-  const coverage = needsCoverage ? loadOperationalCoverageArtifacts({ rootDir }) : undefined;
+    options.knownGapIds === undefined || options.routeAnchors === undefined || options.routeAnchorPin === undefined;
+  const coverage = needsCoverage ? loadPinnedOperationalCoverageArtifacts({ rootDir }) : undefined;
   const currentCorpusFingerprint = options.currentCorpusFingerprint ?? coverage!.build.matrix.corpus_fingerprint;
   const knownGapIds = options.knownGapIds ?? new Set(coverage!.build.ledger.gaps.map((gap) => gap.gap_id));
+  const routeAnchorPin = options.routeAnchorPin ?? coverage?.routeAnchorPin;
   const routeAnchors = options.routeAnchors ?? readJsonl<RouteAnchorRow>(
-    resolve(rootDir, coverage!.build.manifest.route_anchor_path),
+    resolve(rootDir, routeAnchorPin!.path),
   );
   const records = options.records ?? readCanonicalRecordsFromDbFile(join(rootDir, "data", "canonical.db"));
   if (!records) fail(`canonical database is missing or unreadable: ${join(rootDir, "data", "canonical.db")}`);
@@ -317,6 +322,7 @@ export function draftQbnrRecoveryProposalFromFile(
     rootDir,
     records,
     currentCorpusFingerprint,
+    ...(routeAnchorPin ? { currentRouteAnchorPin: routeAnchorPin } : {}),
     knownGapIds,
     resolveBlock,
   });
@@ -324,11 +330,12 @@ export function draftQbnrRecoveryProposalFromFile(
     fail(`existing recovery proposal tree is invalid: ${existing.issues.map((issue) => issue.message).join("; ")}`);
   }
 
-  const proposal = expandQbnrRecoveryBatch(spec, { blocks, records });
+  const proposal = expandQbnrRecoveryBatch(spec, { blocks, records, ...(routeAnchorPin ? { routeAnchorPin } : {}) });
   const reasons = validateOperationalRecoveryProposal(proposal, {
     records,
     stage: "pending",
     current_corpus_fingerprint: currentCorpusFingerprint,
+    ...(routeAnchorPin ? { current_route_anchor_pin: routeAnchorPin } : {}),
     known_gap_ids: knownGapIds,
     resolve_block: resolveBlock,
   });
@@ -347,6 +354,7 @@ export function draftQbnrRecoveryProposalFromFile(
     rootDir,
     records,
     currentCorpusFingerprint,
+    ...(routeAnchorPin ? { currentRouteAnchorPin: routeAnchorPin } : {}),
     knownGapIds,
     resolveBlock,
   });
