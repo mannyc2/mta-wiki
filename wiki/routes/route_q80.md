@@ -8,20 +8,25 @@ display_name: "Q80 bus route"
 source_id: "queens_addendum_equity_evaluation_appendix_d"
 source_ids:
   - "mta_automated_camera_enforcement"
+  - "mta_queens_bus_network_redesign_service_changes"
   - "queens_addendum_equity_evaluation_appendix_d"
 local_observation_id: "route_q80_queens"
 local_observation_ids:
   - "route_q80_ace"
+  - "route_q80_qbnr_2025"
   - "route_q80_queens"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-09T00:00:00.000Z"
+generated_at: "2026-07-13T00:07:37.000Z"
+raw_text: "Q80"
 submission_ids:
+  - "sub_2aae64a6c42bcfd7"
   - "sub_717172dca6302b45"
   - "sub_c9a57b38046e7047"
 payload:
   borough: "Queens"
   borough_normalized: "queens"
+  gtfs_route_id: "Q80"
   note: "Listed in ACE route surface with Q10 on Lefferts Blvd during 60-day warning period."
   route_id: "Q80"
   route_label: "Q80"
@@ -51,6 +56,16 @@ evidence_refs:
     source_path: "raw/sources/mta_automated_camera_enforcement/blocks.jsonl"
     source_quote: "Q10/Q80, Lefferts Blvd (in 60-day warning period)"
     text_sha256: "sha256:5e3cad5451631ea70cff8966419e8249eb64b6a82474a14420dc5bc670d53d68"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0078"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0078"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q80"
+    text_sha256: "sha256:38f96ec10aaf5139abdd6e3376f00ca586c1f87af27d5c897aafd2674954282d"
     text_source: "raw_text"
 ---
 

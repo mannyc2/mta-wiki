@@ -8,16 +8,19 @@ display_name: "Q51 bus route"
 source_id: "queens_addendum_equity_evaluation_appendix_d"
 source_ids:
   - "meeting_doc_87961"
+  - "mta_queens_bus_network_redesign_service_changes"
   - "queens_addendum_equity_evaluation_appendix_d"
 local_observation_id: "route_q51_queens"
 local_observation_ids:
+  - "route_q51_qbnr_2025"
   - "route_q51_queens"
   - "route_q51_queens_bus_redesign"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T21:09:50.370Z"
+generated_at: "2026-07-13T00:07:37.000Z"
 raw_text: "Case Study: Q51 - Brand new route to connect Southeast Queens and East New York, Brooklyn"
 submission_ids:
+  - "sub_2ea5f1bfd92bec75"
   - "sub_4b504467dec93898"
   - "sub_d0773f0aa4fd3c2d"
 payload:
@@ -34,6 +37,7 @@ payload:
     - "queens"
     - "brooklyn"
   description: "Brand new route to connect Southeast Queens and East New York, Brooklyn. Fewer stops for faster service."
+  gtfs_route_id: "Q51"
   route_id: "Q51"
   route_label: "Q51"
   route_name: "Q51"
@@ -70,6 +74,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_87961/blocks.jsonl"
     source_quote: "• Brand new route to connect Southeast Queens and East New York, Brooklyn • Fewer stops for faster service"
     text_sha256: "sha256:bbfa7053534e9a0135d1b68359ec3325c82345c4d04a50d03047434b43503c29"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0056"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0056"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q51"
+    text_sha256: "sha256:a38748bb0d65570b019bfe7e6e1b245e81964f59cfd9263be0f9a19ed8fcb9de"
     text_source: "raw_text"
 ---
 
