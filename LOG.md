@@ -66,6 +66,22 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `27edf0a8cd219cf6281898fb30453942e044593712ed5e8f958958e8944e842f`; `LATEST` remains `v1-rc5`.
   Publisher authority matching is now shared across export and coverage, and semantic supersedes
   rewrite both canonical endpoints and their local-observation pointers.
+- Recovered the complete 2024 lifecycle of the six-route express-bus trip package. The April MTA
+  announcement and July retrospective now resolve one realized June 30 addition occurrence; a
+  hash-pinned official schedule query establishes the September 1 `2024Sep` bundle boundary, the
+  September 3 weekday counts reproduce all eight direction-specific trip removals, and the December
+  retrospective confirms delivery of the distinct Fall discontinuation treatment. The two approved
+  six-route atomic occurrences raise the projection to `128` occurrences, `127` eligible occurrences,
+  and `152` eligible route pairs. Five unavoidable broad multi-route/treatment/status diagnostics and
+  the duplicate month-only planning row are terminally superseded, leaving the `506`-row priority
+  ledger at `165` open and `341` terminal rows.
+  Cut byte-reproducible unpromoted release `v1-rc12`: manifest SHA-256
+  `c651829b74907af51956227f6e3700781a2c540bef8d319e98d281a84d0c02a3`, route-anchor SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`; `LATEST` remains
+  `v1-rc5`. The source-authority fix token-bounds bare `press`, preserves explicit press-release
+  precedence, and recognizes staff summaries as board material. Its audited corpus sweep intentionally
+  backfills `65` previously unset board-material tiers, corrects four existing `press`/`express`
+  false positives, and classifies the two new sources; the audit records `71` source transitions total.
 
 ## 2026-07-12
 
