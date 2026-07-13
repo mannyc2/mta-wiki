@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "receipt_id": "q25-route-scope-2025-06-29",
+  "status": "identity_scope_reviewed",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T00:00:00Z",
+  "acquisition_method": "recovered_existing_official_capture",
+  "search": {
+    "target_family": "route_identity",
+    "route_or_area": "Q25 / Queens",
+    "date_window": "2014-2026",
+    "exact_queries": [
+      "accepted submission inventory: target_record_id route_q25-queens",
+      "current local GTFS reference: route_id Q25",
+      "official MTA Queens Bus Network Redesign service changes: Q25"
+    ],
+    "domains": [
+      "mta.info"
+    ],
+    "urls_inspected": [
+      "https://www.mta.info/project/queens-bus-network-redesign/service-changes",
+      "https://new.mta.info/schedules/bus"
+    ],
+    "disposition": "candidate_found",
+    "rationale": "The existing official evidence inventory is sufficient to decide the identity scope. Nine accepted observations resolve to one Q25 canonical record; the current GTFS reference contains one Q25 route; and the official 2025 redesign row distinguishes the continuing Q25 route from the discontinued Q25 Limited service pattern."
+  },
+  "canonical_inventory": {
+    "record_id": "route_q25-queens",
+    "record_aliases": [
+      "route_q25"
+    ],
+    "canonical_generated_at": "2026-06-19T18:13:35.421Z",
+    "submission_count": 9,
+    "source_count": 9,
+    "submission_ids": [
+      "sub_183fee7f9ad7e35e",
+      "sub_39bdee0c7f55e6a7",
+      "sub_577d00fc3c305841",
+      "sub_76d44eecf9c96aae",
+      "sub_a403f9c4d5612c8f",
+      "sub_a7edb8fcf3e74243",
+      "sub_b81ba07c1004db6b",
+      "sub_c0bacd3cc0d1debf",
+      "sub_d076766bf747b41f"
+    ],
+    "observations": [
+      {
+        "submission_id": "sub_183fee7f9ad7e35e",
+        "source_id": "2014_brt_flushingjamaica_workshopsummary",
+        "local_observation_id": "route_q25_2014_brt_flushingjamaica_ws",
+        "target_record_id": "route_q25-queens",
+        "service_variant": "limited_stop"
+      },
+      {
+        "submission_id": "sub_39bdee0c7f55e6a7",
+        "source_id": "2014_06_11_brt_flushingjamaica_cac1_presentation",
+        "local_observation_id": "route_q25_flushing_jamaica_cac1",
+        "target_record_id": "route_q25-queens",
+        "service_variant": "local"
+      },
+      {
+        "submission_id": "sub_577d00fc3c305841",
+        "source_id": "brt_flushing_jamaica_oct2016",
+        "local_observation_id": "route_brt_flushing_jamaica_oct2016_q25",
+        "target_record_id": "route_q25-queens",
+        "service_variant": "local"
+      },
+      {
+        "submission_id": "sub_76d44eecf9c96aae",
+        "source_id": "2015_06_15_brt_flushing_jamaica_cb8_presentation",
+        "local_observation_id": "route_q25_2015_06_15_cb8",
+        "target_record_id": "route_q25-queens",
+        "service_variant": "local"
+      },
+      {
+        "submission_id": "sub_a403f9c4d5612c8f",
+        "source_id": "queens_addendum_equity_evaluation_appendix_d",
+        "local_observation_id": "route_q25_queens",
+        "target_record_id": null,
+        "service_variant": null,
+        "identity_basis": "canonical identity observation for Q25 bus route"
+      },
+      {
+        "submission_id": "sub_a7edb8fcf3e74243",
+        "source_id": "2014_10_07_brt_flushingjamaica_pw1_presentation",
+        "local_observation_id": "route_q25_2014_10_07_flushing_jamaica",
+        "target_record_id": "route_q25-queens",
+        "service_variant": "limited_stop"
+      },
+      {
+        "submission_id": "sub_b81ba07c1004db6b",
+        "source_id": "tsp_status_2017",
+        "local_observation_id": "route_q25_tsp_2017",
+        "target_record_id": "route_q25-queens",
+        "service_variant": "local"
+      },
+      {
+        "submission_id": "sub_c0bacd3cc0d1debf",
+        "source_id": "2015_06_09_brt_flushing_jamaica_cb12",
+        "local_observation_id": "route_q25_2015_06_09",
+        "target_record_id": "route_q25-queens",
+        "service_variant": "local"
+      },
+      {
+        "submission_id": "sub_d076766bf747b41f",
+        "source_id": "2015_01_22_brt_flushingjamaica_pw3_boards",
+        "local_observation_id": "route_q25_pw3",
+        "target_record_id": "route_q25-queens",
+        "service_variant": "local"
+      }
+    ],
+    "merged_service_variants": [
+      "local",
+      "limited_stop"
+    ],
+    "pre_review_scope": "split_candidate",
+    "pre_review_scope_reason": "merged_service_variant_conflict"
+  },
+  "current_gtfs": {
+    "feed_date": "2026-03-19_mta_bus_all",
+    "manifest_path": "data/reference/gtfs/manifest.json",
+    "routes_path": "data/reference/gtfs/routes.txt",
+    "routes_sha256": "7b04d611eee9ad689eda88556e6934fe36c699342cf489c61dcdfef2c2670097",
+    "matching_route_count": 1,
+    "route": {
+      "route_id": "Q25",
+      "agency_id": "MTABC",
+      "route_short_name": "Q25",
+      "route_long_name": "College Point - Jamaica",
+      "route_desc": "Via Parsons Blvd / Kissena Blvd / 127 St",
+      "route_type": "3"
+    }
+  },
+  "official_lifecycle_evidence": {
+    "source_id": "mta_queens_bus_network_redesign_service_changes",
+    "publisher": "MTA",
+    "source_url": "https://www.mta.info/project/queens-bus-network-redesign/service-changes",
+    "retrieved_at": "2026-06-07T01:03:14.507Z",
+    "publication_date": null,
+    "publication_date_reason": "The page exposes no publication metadata; June 29, 2025 is the source-stated Q25 service-change effective date.",
+    "artifact_sha256": "4b5dc9ca398980a3803e076378acefd7ac3ec04343e0ac32db95a17c1d51226d",
+    "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0030",
+    "evidence_sha256": "sha256:c199bae69827a2356ac59e32b15bf085f8c279c2dea3ca8a8d6188bb2f79020f",
+    "effective_date": "2025-06-29",
+    "source_quote": "The Q25 will keep its current routing, but some stops have been removed. View the full list of stops. The Q25 Limited will be discontinued."
+  },
+  "identity_decision": {
+    "verdict": "current_umbrella_route_with_historical_service_pattern",
+    "canonical_record_id": "route_q25-queens",
+    "canonical_route_id": "Q25",
+    "route_record_scope": "true_route",
+    "route_record_scope_reason": "reviewed_current_route_historical_limited_pattern_lifecycle_compatible",
+    "continuing_identity": "The current umbrella Q25 route, represented by the single current GTFS Q25 identity, continues through the June 29, 2025 redesign change.",
+    "historical_pattern": "Q25 Limited is a limited-stop service pattern historically observed within Q25 and explicitly discontinued on June 29, 2025; it is not a second current route identity requiring a split.",
+    "rationale": "The submission merge preserved both local and limited-stop literals because sources describe Q25 at different service-pattern moments. Current GTFS and the official redesign lifecycle statement resolve those literals as one continuing route plus a discontinued historical pattern, so the merged variant values are lifecycle-compatible rather than an unresolved identity conflict.",
+    "preservation_contract": [
+      "Preserve all nine submission ids and all source/evidence references.",
+      "Preserve _merged_field_values, including local and limited_stop service-variant literals.",
+      "Patch only route_record_scope and route_record_scope_reason."
+    ],
+    "semantic_correction_id": "core-coverage-q25-route-scope-20260713"
+  }
+}
