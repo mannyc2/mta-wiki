@@ -15,11 +15,19 @@
     "operational-coverage:a9b2bf1ff109628219637775"
   ],
   "source_id": "mta_queens_bus_network_redesign_service_changes",
-  "review_state": "proposed",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-13T03:47:09.000Z",
   "provenance": {
     "drafted_by": "codex-corpus-completion-2026-07-13",
     "drafted_at": "2026-07-13T02:10:00.000Z",
-    "method": "qbnr_batch_spec_expansion"
+    "method": "qbnr_batch_spec_expansion",
+    "verifier": {
+      "reviewed_by": "codex-independent-qbnr-spec-review",
+      "reviewed_at": "2026-07-13T03:47:09.000Z",
+      "verdict": "passed",
+      "rationale": "All fifteen official source rows, hashes, route labels, dates, and current GTFS ids were independently checked. Pure re-expansion is byte-identical; rc7 shows one no_wiki_coverage row for every target; all ninety deterministic canonical ids are new and collision-free; treatment normalization yields twelve bus_stop_or_boarding and three service_pattern members; and every generated edge stays within its source unit."
+    }
   },
   "rationale": "Fifteen exact official MTA rows establish realized QBNR dates and one new current route identity per row. Each row has one bounded treatment member and therefore remains an atomic occurrence; predecessor, replacement, alternative, and timetable references remain treatment text or reviewed context only.",
   "observations": [
