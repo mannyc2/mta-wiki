@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "decision_id": "b12-route-improvement-initiative-2024-01",
+  "review_state": "accepted",
+  "accepted_at": "2026-07-13T14:20:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official June 2024 MTA retrospective states that the Route Improvement Initiative began on the B12 in January 2024, identifies B12 directly, and describes deliberate and proactive service management as a key contributor by the June report. This review selects one program-level service_pattern treatment; January dates the initiative package, not every terminal or route-management tactic documented later. It explicitly excludes the unrelated subway platform-safety-barrier story on page 5.",
+  "source_id": "meeting_doc_143341",
+  "event_record_id": "event_route-improvement-initiative-start",
+  "timeline_relation_record_id": "relation_rii-has-timeline-event-launch",
+  "route_record_id": "route_b12-ace",
+  "route_scope_relation_record_id": "relation_rii-serves-b12",
+  "treatment_record_id": "treatment_b12-deliberate-proactive-service-management",
+  "treatment_scope_relation_record_id": "relation_rii-b12-has-deliberate-proactive-service-management",
+  "treatment_family": "service_pattern",
+  "expected_operational_date": "2024-01",
+  "expected_date_precision": "month",
+  "evidence_bindings": [
+    {
+      "role": "event_date",
+      "record_id": "event_route-improvement-initiative-start",
+      "source_id": "meeting_doc_143341",
+      "evidence_id": "meeting_doc_143341#p003_c0006"
+    },
+    {
+      "role": "timeline_relation",
+      "record_id": "relation_rii-has-timeline-event-launch",
+      "source_id": "meeting_doc_143341",
+      "evidence_id": "meeting_doc_143341#p003_c0006"
+    },
+    {
+      "role": "route_identity",
+      "record_id": "route_b12-ace",
+      "source_id": "meeting_doc_143341",
+      "evidence_id": "meeting_doc_143341#p003_c0005"
+    },
+    {
+      "role": "route_scope",
+      "record_id": "relation_rii-serves-b12",
+      "source_id": "meeting_doc_143341",
+      "evidence_id": "meeting_doc_143341#p003_c0005"
+    },
+    {
+      "role": "treatment_definition",
+      "record_id": "treatment_b12-deliberate-proactive-service-management",
+      "source_id": "meeting_doc_143341",
+      "evidence_id": "meeting_doc_143341#p003_c0007"
+    },
+    {
+      "role": "treatment_scope",
+      "record_id": "relation_rii-b12-has-deliberate-proactive-service-management",
+      "source_id": "meeting_doc_143341",
+      "evidence_id": "meeting_doc_143341#p003_c0007"
+    },
+    {
+      "role": "route_treatment_event_bridge",
+      "record_id": "project_dob-route-improvement-initiative",
+      "source_id": "meeting_doc_143341",
+      "evidence_id": "meeting_doc_143341#p003_c0005"
+    },
+    {
+      "role": "route_treatment_event_bridge",
+      "record_id": "event_route-improvement-initiative-start",
+      "source_id": "meeting_doc_143341",
+      "evidence_id": "meeting_doc_143341#p003_c0006"
+    },
+    {
+      "role": "route_treatment_event_bridge",
+      "record_id": "treatment_b12-deliberate-proactive-service-management",
+      "source_id": "meeting_doc_143341",
+      "evidence_id": "meeting_doc_143341#p003_c0007"
+    }
+  ]
+}

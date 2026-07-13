@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "decision_id": "b12-route-improvement-initiative-start-2024-01",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T14:25:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The June 2024 official retrospective establishes one realized B12 Route Improvement Initiative occurrence with a January 2024 month-level program onset and one atomic service_pattern treatment: the program-level Route Improvement Initiative service-management package. Individual terminal and route-management tactics are documented by June but do not inherit a January onset. The occurrence does not include the platform-safety-barrier treatment from a separate subway story in the same source.",
+  "occurrence_id": "occurrence:5110ac089234f4641e170f5e",
+  "founding_key": "event:event_route-improvement-initiative-start",
+  "observation_event_record_ids": [
+    "event_route-improvement-initiative-start"
+  ],
+  "observation_relation_record_ids": [
+    "relation_rii-b12-has-deliberate-proactive-service-management",
+    "relation_rii-has-timeline-event-launch",
+    "relation_rii-serves-b12"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2024-01",
+    "precision": "month",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_route-improvement-initiative-start",
+        "source_id": "meeting_doc_143341",
+        "evidence_id": "meeting_doc_143341#p003_c0006"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_rii-has-timeline-event-launch",
+        "source_id": "meeting_doc_143341",
+        "evidence_id": "meeting_doc_143341#p003_c0006"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_b12-ace",
+      "gtfs_route_id": "B12",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_b12-ace",
+          "source_id": "meeting_doc_143341",
+          "evidence_id": "meeting_doc_143341#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_rii-serves-b12",
+          "source_id": "meeting_doc_143341",
+          "evidence_id": "meeting_doc_143341#p003_c0005"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "atomic",
+  "treatment": {
+    "kind": "atomic",
+    "member": {
+      "treatment_record_id": "treatment_b12-deliberate-proactive-service-management",
+      "treatment_family": "service_pattern",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_b12-deliberate-proactive-service-management",
+          "source_id": "meeting_doc_143341",
+          "evidence_id": "meeting_doc_143341#p003_c0007"
+        },
+        {
+          "role": "treatment_scope",
+          "record_id": "relation_rii-b12-has-deliberate-proactive-service-management",
+          "source_id": "meeting_doc_143341",
+          "evidence_id": "meeting_doc_143341#p003_c0007"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "receipt_id": "express-bus-service-enhancements-march-2025",
+  "status": "staged_official_planning_and_realization_evidence_reconciled",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T16:00:00Z",
+  "scope": {
+    "project_record_id": "project_spring-2025-express-bus-service-enhancements",
+    "planning_event_record_id": "event_meeting-doc-160441-express-spring-2025",
+    "realized_event_record_id": "event_express-bus-service-enhancements-took-effect-march-2025",
+    "treatment_record_id": "treatment_weekday-express-bus-trip-additions-spring-2025",
+    "gtfs_route_ids": [
+      "BM2",
+      "BM5",
+      "QM15",
+      "SIM1C",
+      "SIM23",
+      "SIM24",
+      "SIM4C",
+      "X27"
+    ]
+  },
+  "bounded_source_review": {
+    "result": "No new acquisition is required. Two already-staged official MTA board materials jointly provide the prospective package, exact eight-route treatment scope, retrospective delivery status, and month-precision realized onset.",
+    "sources": [
+      {
+        "source_id": "meeting_doc_160441",
+        "document_date": "2024-12-10",
+        "source_pdf_sha256": "2cbb8ac03d1b52681982b1bd4d994c17b2f6e6995c1d4806bdf34b0ee8f754b8",
+        "blocks_jsonl_sha256": "a8e8b7a9a66145447444633e8c96e24afa195d39a8170f6f653c0786fc71efde",
+        "evidence": [
+          {
+            "evidence_id": "meeting_doc_160441#p002_c0005",
+            "evidence_sha256": "sha256:9f0ebbb72e351ca1ef2ab2434ccd52c0118885848a4dbe4b127d05dc256bac03",
+            "finding": "The staff summary is dated December 10, 2024."
+          },
+          {
+            "evidence_id": "meeting_doc_160441#p001_c0012",
+            "evidence_sha256": "sha256:01e72dd6a057bc1690b0d360ab8a6a68668a346a33dd6fe6de718ebd46e09995",
+            "finding": "The official implementation window for the express-bus routes is Spring 2025."
+          },
+          {
+            "evidence_id": "meeting_doc_160441#p003_c0004",
+            "evidence_sha256": "sha256:730a088e5bef117b4b219c33d1ed4a5918f303f53260c116cf651770b2dfedb9",
+            "finding": "The treatment is additional weekday express-bus trips added to the Spring 2025 schedules."
+          },
+          {
+            "evidence_id": "meeting_doc_160441#p003_c0005",
+            "evidence_sha256": "sha256:a1cb3550e548ba0e4cc902da5e264574b62e2318fcfe0a6f5418eb28d04373de",
+            "finding": "The source enumerates the exact trips and all eight affected routes."
+          }
+        ]
+      },
+      {
+        "source_id": "meeting_doc_171141",
+        "document_date": "2025-04-28",
+        "source_pdf_sha256": "51da3489ccb15a3fdf6b2fdbbd8603808cff8fd439215afaf1d5057ca4839d8a",
+        "blocks_jsonl_sha256": "25919e028d70731b69d171dc15e4d35bbdb5b18e2cbb84b1b84e08036e6fc1af",
+        "evidence": [
+          {
+            "evidence_id": "meeting_doc_171141#p001_c0003",
+            "evidence_sha256": "sha256:80aa190c5d97a47a5acde989e25d4d3cfbe123dce4a1d4b36ce74a1efe63058f",
+            "finding": "The retrospective report is dated April 28, 2025."
+          },
+          {
+            "evidence_id": "meeting_doc_171141#p005_c0003",
+            "evidence_sha256": "sha256:db189e9145a8c754be91933d52adbc9aaa176fd33d9ceb6ebc781642dde94f80",
+            "finding": "MTA states that the eight express-bus route changes took effect in March."
+          }
+        ]
+      }
+    ]
+  },
+  "temporal_adjudication": {
+    "planning_disposition": "The December event remains a season-precision planned milestone linked to the project by a planned timeline relation as of 2024-12-10.",
+    "realized_disposition": "A separate event preserves the April retrospective's literal March onset, resolved to 2025-03 at month precision from the report date.",
+    "double_count_control": "Only the realized March event and its delivered relations belong to the approved operational occurrence observation set. The planning event and planned relation remain canonical history but cannot found a realized occurrence."
+  },
+  "scope_adjudication": {
+    "treatment_scope_kind": "atomic",
+    "treatment_family": "service_pattern",
+    "route_count": 8,
+    "basis": "The sources describe one shared intervention—additional weekday peak-period trips—and directly enumerate eight routes."
+  },
+  "reproducibility": {
+    "curation_script": "scripts/curate-express-bus-service-enhancements-march-2025.ts",
+    "submission_journal": "data/submissions/2026-07-13_codex_express-bus-service-enhancements-march-2025.jsonl",
+    "semantic_correction_ids": [
+      "core-coverage-spring-2025-express-prospective-lifecycle-20260713",
+      "core-coverage-spring-2025-express-treatment-cross-source-fold-20260713"
+    ],
+    "promotion_script": "scripts/promote-express-bus-service-enhancements-march-2025.ts",
+    "focused_test": "packages/pipeline/test/records/corpus-express-bus-service-enhancements-march-2025.test.ts"
+  }
+}

@@ -4247,6 +4247,7 @@
 - [[wiki/projects/project_south-fork-commuter-connection-summer-fridays|South Fork Commuter Connection Summer Friday Service]] (project)
 - [[wiki/projects/project_south-street-fulton-ave-bridges-replacement|South Street and Fulton Avenue Bridges Replacement]] (project)
 - [[wiki/projects/project_southeast-station-parking-garage-dec2023|project_southeast_station_parking_garage_dec2023]] (project)
+- [[wiki/projects/project_spring-2025-express-bus-service-enhancements|Spring 2025 Express Bus Service Enhancements]] (project)
 - [[wiki/projects/project_st-albans-ada-station-rehabilitation|Montauk Branch – ADA Station Rehabilitation – St. Albans]] (project)
 - [[wiki/projects/project_st-albans-ada-upgrade-mar2024|LIRR St. Albans ADA Station Upgrade Program]] (project)
 - [[wiki/projects/project_st-albans-station-accessibility-192301|The Accessible St. Albans]] (project)
@@ -7403,8 +7404,8 @@
 ## Data-Only Records
 
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
-- event: 8075 canonical records in `data/canonical/events.jsonl`
+- event: 8076 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 21208 canonical records in `data/canonical/relations.jsonl`
+- relation: 21222 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
-- treatment_component: 2925 canonical records in `data/canonical/treatment_components.jsonl`
+- treatment_component: 2926 canonical records in `data/canonical/treatment_components.jsonl`

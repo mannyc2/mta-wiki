@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "spring-2025-express-realized-raw-treatment-diagnostic-superseded",
+  "gap_id": "operational-coverage:6b290978620e7597f521c343",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T16:10:30.000Z",
+  "rationale": "The raw source-neighborhood diagnostic sees unrelated fare-gate treatments from the April report alongside the directly linked weekday express-bus trip additions. Approved occurrence occurrence:833f69866045c25967353373 binds the realized March event only to treatment_weekday-express-bus-trip-additions-spring-2025 as one atomic service_pattern treatment, so the ambiguous raw diagnostic is superseded.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

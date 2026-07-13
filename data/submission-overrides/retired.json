@@ -1614,6 +1614,24 @@
       "reason": "Codex metric date-event repair retires a metric_claim that modeled the Second Avenue Subway Phase 2 forecasted revenue-service date as a metric; same-source event replacement preserves the September 2032 forecast date.",
       "source_decision": "data/review_notes/codex-metric-date-event-repair-2026-07-03.json#metric-date-event-repair",
       "reviewed_at": "2026-07-03T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_1b81caeb20d86a81",
+      "reason": "Retire the temporary single-source workaround for the Spring 2025 weekday express-bus treatment. The provenance-preserving guarded supersession now folds the original planning and retrospective source-scoped observations into one durable treatment without discarding either source, local id, submission, or evidence set.",
+      "source_decision": "data/quality/acquisition/receipts/express-bus-service-enhancements-march-2025.json",
+      "reviewed_at": "2026-07-13T17:00:00Z"
+    },
+    {
+      "submission_id": "sub_c3658ff85e51a6ff",
+      "reason": "Replace the Spring 2025 planning treatment submission whose target_record_id was inapplicable to a source-scoped treatment component. The same evidence and local identity are preserved by the create_new replacement and then folded through the reviewed provenance-preserving semantic supersession.",
+      "source_decision": "data/quality/acquisition/receipts/express-bus-service-enhancements-march-2025.json",
+      "reviewed_at": "2026-07-13T17:00:00Z"
+    },
+    {
+      "submission_id": "sub_f94ac6aad5f764d7",
+      "reason": "Replace the DeKalb/Lafayette B38 evidence-enrichment submission with a minimal route_id assertion. The retired row redundantly introduced route_label and broad route-type/geography fields that were already canonical and changed only the route-anchor selection reason; the replacement preserves the exact delivered B38 evidence without public anchor-byte churn.",
+      "source_decision": "data/quality/acquisition/receipts/dekalb-lafayette-summer-2024-temporary-bus-lanes.json",
+      "reviewed_at": "2026-07-13T17:20:00Z"
     }
   ]
 }

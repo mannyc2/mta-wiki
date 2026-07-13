@@ -4,8 +4,8 @@
   "gap_id": "operational-coverage:638d039018fabef3e9b37740",
   "reviewer": "codex-corpus-completion-2026-07-13",
   "searched_at": "2026-07-13T11:30:00.000Z",
-  "rationale": "Revalidated every source connected to the Broadway/Q70 occurrence and the staged source registry against the final express-bus corpus for retrospective language that states an exact physical activation date. The May presentation supplies only a forecast, while the later official sources establish delivered status by an as-of date without stating when the lane physically opened. The new express-bus sources, project identity consolidation, and source-authority backfill are unrelated to Broadway and do not change the registry matches.",
-  "corpus_fingerprint": "3989a301fe3f67bb834c175ed37fddb21b7913c7ce93ecf7bbda59d951a59eee",
+  "rationale": "Revalidated every source connected to the Broadway/Q70 occurrence and the staged source registry against the current corpus fingerprint for retrospective language that states an exact physical activation date. The May presentation supplies only a forecast, while the later official sources establish delivered status by an as-of date without stating when the lane physically opened. The DeKalb/Lafayette, March express, and B12 graph additions are unrelated to Broadway and do not change the registry matches.",
+  "corpus_fingerprint": "2035367ccc47fd928d947c93a960c34b3b381e95e98401c26353d3cfea6ef4d4",
   "source_searches": [
     {
       "source_id": "better_buses",

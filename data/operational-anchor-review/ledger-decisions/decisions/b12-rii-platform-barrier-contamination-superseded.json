@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "b12-rii-platform-barrier-contamination-superseded",
+  "gap_id": "operational-coverage:96d717ecb3ff4b31a32730d2",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T14:30:00.000Z",
+  "rationale": "The raw diagnostic incorrectly proposed treatment_platform-safety-barriers from a separate subway story on page 5 of the source. Accepted anchor review b12-route-improvement-initiative-2024-01 and approved occurrence occurrence:5110ac089234f4641e170f5e instead bind the B12 launch to the exact page-3 source-scoped service_pattern treatment treatment_b12-deliberate-proactive-service-management. The contaminated raw treatment gap is terminal and not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "project_dob-route-improvement-initiative",
+      "source_id": "meeting_doc_143341",
+      "evidence_id": "meeting_doc_143341#p003_c0007",
+      "block_id": "p003_c0007"
+    }
+  ],
+  "search_receipt_ids": []
+}

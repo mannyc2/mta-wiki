@@ -147,6 +147,83 @@ describe("semantic corrections", () => {
     expect(relation.payload.object_local_observation_id).toBe("entity_new");
   });
 
+  it("folds cross-source treatment provenance into the survivor without replacing its semantics", () => {
+    const sharedEvidence = { source_id: "source_shared", block_id: "p001_c0001", source_quote: "Shared evidence" };
+    const survivor = rec(
+      "treatment_survivor",
+      "treatment_component",
+      { treatment_kind: "service_pattern", description: "Survivor description" },
+      {
+        source_id: "source_retrospective",
+        source_ids: ["source_retrospective"],
+        local_observation_id: "treatment_retrospective",
+        local_observation_ids: ["treatment_retrospective"],
+        display_name: "Weekday express-bus trip additions",
+        evidence_refs: [
+          { source_id: "source_retrospective", block_id: "p002_c0001", source_quote: "Trips were added" },
+          sharedEvidence,
+        ],
+        submission_ids: ["submission_retrospective"],
+        generated_at: "2026-07-12T09:00:00.000Z",
+      },
+    );
+    const duplicate = rec(
+      "treatment_duplicate",
+      "treatment_component",
+      { treatment_kind: "service_pattern", description: "Duplicate description" },
+      {
+        source_id: "source_planning",
+        source_ids: ["source_planning"],
+        local_observation_id: "treatment_planning",
+        local_observation_ids: ["treatment_planning"],
+        display_name: "Planned weekday express-bus trip additions",
+        evidence_refs: [
+          { source_id: "source_planning", block_id: "p003_c0004", source_quote: "Trips will be added" },
+          sharedEvidence,
+        ],
+        submission_ids: ["submission_planning"],
+        generated_at: "2026-07-13T10:30:00.000Z",
+      },
+    );
+    const relation = rec("relation_project_treatment", "relation", {
+      relation_kind: "has_treatment",
+      subject_id: "project_express_bus",
+      subject_local_observation_id: "project_express_bus",
+      object_id: "treatment_duplicate",
+      object_local_observation_id: "treatment_planning",
+    });
+    const project = rec("project_express_bus", "project", {});
+
+    const result = withSemanticCorrections([survivor, duplicate, project, relation], [
+      correction({
+        correction_id: "semqa-000001",
+        op: "supersede_record",
+        record_id: "treatment_duplicate",
+        patch: { survivor_record_id: "treatment_survivor" },
+      }),
+    ]);
+
+    expect(result.records.some((record) => record.record_id === "treatment_duplicate")).toBe(false);
+    const folded = result.records.find((record) => record.record_id === "treatment_survivor")!;
+    expect(folded.source_id).toBe("source_retrospective");
+    expect(folded.local_observation_id).toBe("treatment_retrospective");
+    expect(folded.display_name).toBe("Weekday express-bus trip additions");
+    expect(folded.payload).toEqual({ treatment_kind: "service_pattern", description: "Survivor description" });
+    expect(folded.source_ids).toEqual(["source_planning", "source_retrospective"]);
+    expect(folded.local_observation_ids).toEqual(["treatment_planning", "treatment_retrospective"]);
+    expect(folded.submission_ids).toEqual(["submission_planning", "submission_retrospective"]);
+    expect(folded.evidence_refs).toEqual([
+      { source_id: "source_retrospective", block_id: "p002_c0001", source_quote: "Trips were added" },
+      sharedEvidence,
+      { source_id: "source_planning", block_id: "p003_c0004", source_quote: "Trips will be added" },
+    ]);
+    expect(folded.generated_at).toBe("2026-07-13T10:30:00.000Z");
+
+    const rewritten = result.records.find((record) => record.record_id === "relation_project_treatment")!;
+    expect(rewritten.payload.object_id).toBe("treatment_survivor");
+    expect(rewritten.payload.object_local_observation_id).toBe("treatment_retrospective");
+  });
+
   it("skips stale guards and is idempotent for guarded corrections", () => {
     const records = [
       rec("metric_a", "metric_claim", { value: 10 }),

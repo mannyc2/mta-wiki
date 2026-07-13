@@ -259,6 +259,7 @@ function supersedeRecord(byId: Map<string, MtaCanonicalRecord>, correction: Sema
   const removedRecord = byId.get(removedId);
   const survivorRecord = byId.get(survivorRecordId);
   if (!removedRecord || !survivorRecord) return false;
+  foldSupersededRecordProvenance(survivorRecord, removedRecord);
   for (const cascadeId of correction.cascade) byId.delete(cascadeId);
   byId.delete(removedId);
   for (const record of byId.values()) {
@@ -286,6 +287,44 @@ function supersedeRecord(byId: Map<string, MtaCanonicalRecord>, correction: Sema
     throw new Error(`semantic correction ${correction.correction_id} left references to superseded ${removedId}: ${remaining.join(", ")}`);
   }
   return true;
+}
+
+function foldSupersededRecordProvenance(survivor: MtaCanonicalRecord, removed: MtaCanonicalRecord): void {
+  survivor.source_ids = uniqueStrings([
+    survivor.source_id,
+    ...(survivor.source_ids ?? []),
+    removed.source_id,
+    ...(removed.source_ids ?? []),
+  ]);
+  survivor.local_observation_ids = uniqueStrings([
+    survivor.local_observation_id,
+    ...(survivor.local_observation_ids ?? []),
+    removed.local_observation_id,
+    ...(removed.local_observation_ids ?? []),
+  ]);
+  survivor.submission_ids = uniqueStrings([...survivor.submission_ids, ...removed.submission_ids]);
+
+  const evidenceByIdentity = new Map<string, MtaEvidenceRef>();
+  for (const ref of [...survivor.evidence_refs, ...removed.evidence_refs]) {
+    const identity = stableJson(ref as unknown as JsonValue);
+    if (!evidenceByIdentity.has(identity)) evidenceByIdentity.set(identity, { ...ref });
+  }
+  survivor.evidence_refs = [...evidenceByIdentity.values()];
+
+  survivor.generated_at = latestTimestamp(survivor.generated_at, removed.generated_at);
+}
+
+function uniqueStrings(values: readonly string[]): string[] {
+  return [...new Set(values)].sort((left, right) => left.localeCompare(right));
+}
+
+function latestTimestamp(left: string, right: string): string {
+  const leftTime = Date.parse(left);
+  const rightTime = Date.parse(right);
+  if (Number.isFinite(leftTime) && Number.isFinite(rightTime) && leftTime !== rightTime) {
+    return leftTime > rightTime ? left : right;
+  }
+  return left.localeCompare(right) >= 0 ? left : right;
 }
 
 function relationReferrers(byId: Map<string, MtaCanonicalRecord>, recordId: string): MtaCanonicalRecord[] {
