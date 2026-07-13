@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-meeting91591-nova-delivery-completion-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:0c5d00d58e1cf9d0e1b1e6d7",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "The source anticipates completion of a five-bus procurement delivery. It does not prove an operational route deployment or a route-level treatment onset, so this fleet forecast is not a study occurrence.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_meeting91591-nova-delivery-completion",
+      "source_id": "meeting_doc_91591",
+      "evidence_id": "meeting_doc_91591#p007_c0010",
+      "block_id": "p007_c0010"
+    }
+  ],
+  "search_receipt_ids": []
+}

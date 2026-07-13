@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-late-summer-fall2026-bus-lanes-operational-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:eed2f459bc5750785f2f69ee",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "The Fordham Road presentation says the proposed bus lanes are expected to be operational in late Summer or Fall 2026. That future expectation is not delivered-status evidence and cannot serve as an operational onset.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_late-summer-fall2026-bus-lanes-operational",
+      "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026",
+      "evidence_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026#p011_c0003",
+      "block_id": "p011_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}

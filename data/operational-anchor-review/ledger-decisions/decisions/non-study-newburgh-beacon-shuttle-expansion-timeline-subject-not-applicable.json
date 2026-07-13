@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-newburgh-beacon-shuttle-expansion-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:555f5fe1f58c4d9689a02945",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "The Newburgh-Beacon Bridge Shuttle is a cross-Hudson connecting service outside the NYCT bus outcome universe. Its expansion is therefore not applicable as a study anchor, independent of the separate normalized-date defect on this record.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_newburgh-beacon-shuttle-expansion",
+      "source_id": "meeting_doc_194096",
+      "evidence_id": "meeting_doc_194096#p015_c0008",
+      "block_id": "p015_c0008"
+    }
+  ],
+  "search_receipt_ids": []
+}

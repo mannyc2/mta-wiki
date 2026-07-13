@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-meeting-doc-115391-fare-effective-date-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:fce9095a6a385f7963ff738d",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "This record is a proposed fare-change effective date, not a bus operational treatment onset. It is potentially useful as pricing context but is outside the study occurrence universe.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_meeting-doc-115391-fare-effective-date",
+      "source_id": "meeting_doc_115391",
+      "evidence_id": "meeting_doc_115391#p003_c0002",
+      "block_id": "p003_c0002"
+    }
+  ],
+  "search_receipt_ids": []
+}

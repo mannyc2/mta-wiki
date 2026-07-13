@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-implementation-late-2024-or-2025-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:4d16cf0331bec9279a3e8b03",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "This Tremont Avenue record is a planning target of late 2024 or 2025, not a retrospective delivery statement. Candidate project routes and designs cannot be promoted into a realized occurrence from this milestone.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_implementation-late-2024-or-2025",
+      "source_id": "tremont_ave_bus_priority_cb6_jun2024",
+      "evidence_id": "tremont_ave_bus_priority_cb6_jun2024#p023_c0008",
+      "block_id": "p023_c0008"
+    }
+  ],
+  "search_receipt_ids": []
+}

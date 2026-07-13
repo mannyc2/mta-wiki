@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-implementation-tentative-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:b54f12764517a423e06bd21b",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "The source labels this Tremont Avenue implementation timing tentative. It neither selects a treatment configuration nor proves a delivered route-level onset.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_implementation-tentative",
+      "source_id": "tremont_ave_bus_priority_cab1_dec2022",
+      "evidence_id": "tremont_ave_bus_priority_cab1_dec2022#p023_c0003",
+      "block_id": "p023_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}

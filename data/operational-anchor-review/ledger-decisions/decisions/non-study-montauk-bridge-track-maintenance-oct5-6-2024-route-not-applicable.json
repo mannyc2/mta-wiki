@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-montauk-bridge-track-maintenance-oct5-6-2024-route-not-applicable",
+  "gap_id": "operational-coverage:36bbf99a06e37a522725d9f8",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "This is temporary LIRR track work with replacement buses, not an NYCT bus-priority or service-redesign intervention. Date, status, route, and treatment recovery are outside the operational study universe.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_montauk-bridge-track-maintenance-oct5-6-2024",
+      "source_id": "meeting_doc_151821",
+      "evidence_id": "meeting_doc_151821#p001_c0007",
+      "block_id": "p001_c0007"
+    },
+    {
+      "record_id": "event_montauk-bridge-track-maintenance-oct5-6-2024",
+      "source_id": "meeting_doc_151821",
+      "evidence_id": "meeting_doc_151821#p002_c0001",
+      "block_id": "p002_c0001"
+    }
+  ],
+  "search_receipt_ids": []
+}

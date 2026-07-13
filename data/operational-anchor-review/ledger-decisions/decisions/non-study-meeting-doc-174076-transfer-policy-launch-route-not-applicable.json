@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-meeting-doc-174076-transfer-policy-launch-route-not-applicable",
+  "gap_id": "operational-coverage:9136a8a9b970d32f47d31dd0",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "This Board item proposes a promotional transfer policy aligned with QBNR Phase 1. It is a fare-policy measure, not an independent route-redesign occurrence; the delivered QBNR route changes are already represented by source-complete route-atomic occurrences.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_meeting-doc-174076-transfer-policy-launch",
+      "source_id": "meeting_doc_174076",
+      "evidence_id": "meeting_doc_174076#p001_c0005",
+      "block_id": "p001_c0005"
+    }
+  ],
+  "search_receipt_ids": []
+}

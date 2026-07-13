@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-install-bus-lane-markings-fall2025-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:c7cbfcb9d485b736b26d1e89",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "The Flatbush Avenue presentation supplies projected Fall 2025 implementation phasing. It does not retrospectively confirm that the markings or related candidate treatments became operational, so this planning milestone is not a study occurrence.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_install-bus-lane-markings-fall2025",
+      "source_id": "flatbush_ave_bus_priority_cb8_oct2025",
+      "evidence_id": "flatbush_ave_bus_priority_cb8_oct2025#p026_c0016",
+      "block_id": "p026_c0016"
+    },
+    {
+      "record_id": "event_install-bus-lane-markings-fall2025",
+      "source_id": "flatbush_ave_bus_priority_cb8_oct2025",
+      "evidence_id": "flatbush_ave_bus_priority_cb8_oct2025#p026_c0017",
+      "block_id": "p026_c0017"
+    }
+  ],
+  "search_receipt_ids": []
+}

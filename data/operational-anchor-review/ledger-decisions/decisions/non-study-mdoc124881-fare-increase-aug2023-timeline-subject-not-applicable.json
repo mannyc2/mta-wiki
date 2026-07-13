@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-mdoc124881-fare-increase-aug2023-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:d08e1960251695a24df6cf7b",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "This event is a fare-price policy change, not a bus speed intervention. Its exact date can be useful as confounder context, but route-treatment scope is not applicable for the operational anchor study.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_mdoc124881-fare-increase-aug2023",
+      "source_id": "meeting_doc_124881",
+      "evidence_id": "meeting_doc_124881#p102_c0009",
+      "block_id": "p102_c0009"
+    }
+  ],
+  "search_receipt_ids": []
+}

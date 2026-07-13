@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-meeting-151656-ace-phase3-warning-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:06cd6e0ad04b0b0a15252054",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "This event starts an ACE warning period, not the later enforcement phase. Treating the warning date as activation would move the intervention onset earlier than the source supports.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_meeting-151656-ace-phase3-warning",
+      "source_id": "meeting_doc_151656",
+      "evidence_id": "meeting_doc_151656#p005_c0004",
+      "block_id": "p005_c0004"
+    }
+  ],
+  "search_receipt_ids": []
+}

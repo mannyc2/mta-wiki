@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-all-door-boarding-2023-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:e87a7dc0f7227e99e34d61a7",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "The 2021 Bronx Bus Network Redesign addendum forecasts all-door boarding for 2023 and makes it contingent on MetroCard retirement and full OMNY implementation. It does not prove a realized 2023 launch, so this prospective milestone cannot found a study occurrence.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_all-door-boarding-2023",
+      "source_id": "bronx_bus_network_final_plan_addendum_2021",
+      "evidence_id": "bronx_bus_network_final_plan_addendum_2021#p003_c0004",
+      "block_id": "p003_c0004"
+    }
+  ],
+  "search_receipt_ids": []
+}
