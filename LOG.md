@@ -146,6 +146,11 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   search found no exact physical onset, so November 4 remains only a status-as-of bound. The final date gap
   is terminal `absent_in_source`, bringing the `488`-row priority ledger to zero open and `488` terminal
   rows. Occurrence totals remain `134`/`133`/`169` because the day/month study gate was not weakened.
+- Cut byte-reproducible unpromoted release `v1-rc18` from generator commit `af5133aa`: manifest SHA-256
+  `f5f2582270194ba49dc5ccbd2753e6019e00d23cdcb2a148c612b257c2eb9478`. All `20` addressed files were
+  independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
+  `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
 
 ## 2026-07-12
 
