@@ -3082,6 +3082,7 @@
 - [[wiki/projects/project_fjord-trail|Fjord Trail]] (project)
 - [[wiki/projects/project_flatbush-ave-state-st-grand-army-plaza|Flatbush Avenue - State Street to Grand Army Plaza]] (project)
 - [[wiki/projects/project_flatbush-avenue-bus-priority-brooklyn|Flatbush Avenue Bus Priority, Brooklyn]] (project)
+- [[wiki/projects/project_flatbush-phase1-center-running-bus-lanes-livingston-state|Flatbush Avenue Phase 1 Center-Running Bus Lanes]] (project)
 - [[wiki/projects/project_fleetwood-parking-lot-repair|Fleetwood Parking Lot Repair Project]] (project)
 - [[wiki/projects/project_flood-mitigation-substations-2022|Flood Mitigation at 26 Substations]] (project)
 - [[wiki/projects/project_flushing-in-motion|Flushing In Motion]] (project)
@@ -7357,6 +7358,7 @@
 - [[wiki/sources/nostrandave_map|Nostrand Avenue SBS Map]] (source)
 - [[wiki/sources/ny_open_data_mta_bus_schedule_boundaries_2024|MTA Bus Schedules 2024 six-route boundary and weekday-count query]] (source)
 - [[wiki/sources/nyc_dot_current_projects_july_2026|NYC DOT Current Projects]] (source)
+- [[wiki/sources/nyc_dot_flatbush_installation_begins_2025|Transformative Flatbush Avenue Bus Lane Installation Begins This Week]] (source)
 - [[wiki/sources/nyc_mayor_broadway_created_june_2026|Mayor Mamdani: The World Cup Belongs to New Yorkers]] (source)
 - [[wiki/sources/nyct_itsp_solicitation_notice_2026|NYCT ITSP Solicitation Notice]] (source)
 - [[wiki/sources/nyct_key_performance_metrics_doc194001|NYCT Key Performance Metrics - December 2025]] (source)
@@ -7404,8 +7406,8 @@
 ## Data-Only Records
 
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
-- event: 8076 canonical records in `data/canonical/events.jsonl`
+- event: 8070 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 21222 canonical records in `data/canonical/relations.jsonl`
+- relation: 21221 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
-- treatment_component: 2926 canonical records in `data/canonical/treatment_components.jsonl`
+- treatment_component: 2927 canonical records in `data/canonical/treatment_components.jsonl`

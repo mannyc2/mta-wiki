@@ -5,7 +5,7 @@
   "reviewer": "codex-corpus-completion-2026-07-13",
   "searched_at": "2026-07-13T11:30:00.000Z",
   "rationale": "Revalidated every source connected to the Broadway/Q70 occurrence and the staged source registry against the current corpus fingerprint for retrospective language that states an exact physical activation date. The May presentation supplies only a forecast, while the later official sources establish delivered status by an as-of date without stating when the lane physically opened. The DeKalb/Lafayette, March express, and B12 graph additions are unrelated to Broadway and do not change the registry matches.",
-  "corpus_fingerprint": "2035367ccc47fd928d947c93a960c34b3b381e95e98401c26353d3cfea6ef4d4",
+  "corpus_fingerprint": "c001767bf79e1de573663e10ed9234fe320e5e46c7be9af352ab1725ef7244d8",
   "source_searches": [
     {
       "source_id": "better_buses",

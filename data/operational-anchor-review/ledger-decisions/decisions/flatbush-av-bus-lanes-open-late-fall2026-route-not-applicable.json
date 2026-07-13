@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "decision_id": "flatbush-av-bus-lanes-open-late-fall2026-route-not-applicable",
+  "gap_id": "operational-coverage:edaac8116070785d7eb21dc1",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T18:50:00.000Z",
+  "rationale": "This planned milestone does not independently bind delivered route scope. Inheriting candidate scope from the wider Flatbush project would create an unsupported planning cross-product and could duplicate the separately approved Phase 1 occurrence.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_flatbush-av-bus-lanes-open-late-fall2026",
+      "source_id": "flatbush_ave_bus_priority_cb6_oct2025",
+      "evidence_id": "flatbush_ave_bus_priority_cb6_oct2025#p028_c0022",
+      "block_id": "p028_c0022"
+    },
+    {
+      "record_id": "event_flatbush-av-bus-lanes-open-late-fall2026",
+      "source_id": "flatbush_ave_bus_priority_cb6_oct2025",
+      "evidence_id": "flatbush_ave_bus_priority_cb6_oct2025#p028_c0023",
+      "block_id": "p028_c0023"
+    },
+    {
+      "record_id": "event_flatbush-av-bus-lanes-open-late-fall2026",
+      "source_id": "flatbush_ave_bus_priority_cb8_oct2025",
+      "evidence_id": "flatbush_ave_bus_priority_cb8_oct2025#p026_c0022",
+      "block_id": "p026_c0022"
+    },
+    {
+      "record_id": "event_flatbush-av-bus-lanes-open-late-fall2026",
+      "source_id": "flatbush_ave_bus_priority_cb8_oct2025",
+      "evidence_id": "flatbush_ave_bus_priority_cb8_oct2025#p026_c0023",
+      "block_id": "p026_c0023"
+    },
+    {
+      "record_id": "event_flatbush-av-bus-lanes-open-late-fall2026",
+      "source_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026",
+      "evidence_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026#p017_c0007",
+      "block_id": "p017_c0007"
+    },
+    {
+      "record_id": "event_flatbush-av-bus-lanes-open-late-fall2026",
+      "source_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026",
+      "evidence_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026#p017_c0008",
+      "block_id": "p017_c0008"
+    },
+    {
+      "record_id": "event_flatbush-av-bus-lanes-open-late-fall2026",
+      "source_id": "flatbush_ave_bus_priority_sept2025",
+      "evidence_id": "flatbush_ave_bus_priority_sept2025#p035_c0023",
+      "block_id": "p035_c0023"
+    }
+  ],
+  "search_receipt_ids": []
+}

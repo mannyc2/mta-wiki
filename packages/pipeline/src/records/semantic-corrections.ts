@@ -315,7 +315,9 @@ function foldSupersededRecordProvenance(survivor: MtaCanonicalRecord, removed: M
 }
 
 function uniqueStrings(values: readonly string[]): string[] {
-  return [...new Set(values)].sort((left, right) => left.localeCompare(right));
+  // Match the canonical materializer and SQLite's default binary text order so
+  // folded provenance round-trips byte-for-byte through canonical.db.
+  return [...new Set(values)].sort();
 }
 
 function latestTimestamp(left: string, right: string): string {

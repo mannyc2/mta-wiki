@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "decision_id": "flatbush-goal-implement-2025-delivered-status-not-applicable",
+  "gap_id": "operational-coverage:d526c161bff73549b550f449",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T18:50:00.000Z",
+  "rationale": "This event is explicitly prospective and remains planned after duplicate reconciliation. It cannot establish delivered status for a study occurrence.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_goal-implement-2025",
+      "source_id": "flatbush_ave_cb2_jun2025",
+      "evidence_id": "flatbush_ave_cb2_jun2025#p029_c0016",
+      "block_id": "p029_c0016"
+    },
+    {
+      "record_id": "event_goal-implement-2025",
+      "source_id": "flatbush_ave_cb6_jun2025",
+      "evidence_id": "flatbush_ave_cb6_jun2025#p029_c0016",
+      "block_id": "p029_c0016"
+    },
+    {
+      "record_id": "event_goal-implement-2025",
+      "source_id": "flatbush_ave_cb8_jun2025",
+      "evidence_id": "flatbush_ave_cb8_jun2025#p029_c0016",
+      "block_id": "p029_c0016"
+    }
+  ],
+  "search_receipt_ids": []
+}

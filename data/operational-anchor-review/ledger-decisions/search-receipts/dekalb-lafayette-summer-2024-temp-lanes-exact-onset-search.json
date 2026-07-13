@@ -5,7 +5,7 @@
   "reviewer": "codex-corpus-completion-2026-07-13",
   "searched_at": "2026-07-13T14:20:00.000Z",
   "rationale": "Searched every source required by the event gap, both duplicate official NYC DOT decks, and the full captured artifact-tree registry for a day- or month-level physical activation date. The captured project corpus contains only the two already-staged decks, which state Summer 2024. Separate official MTA G Train shutdown pages state shuttle-service dates but do not explicitly date physical lane activation; they were not staged and August 12 was not inferred as the lane onset.",
-  "corpus_fingerprint": "2035367ccc47fd928d947c93a960c34b3b381e95e98401c26353d3cfea6ef4d4",
+  "corpus_fingerprint": "c001767bf79e1de573663e10ed9234fe320e5e46c7be9af352ab1725ef7244d8",
   "source_searches": [
     {
       "source_id": "better_buses",

@@ -157,7 +157,7 @@ describe("semantic corrections", () => {
         source_id: "source_retrospective",
         source_ids: ["source_retrospective"],
         local_observation_id: "treatment_retrospective",
-        local_observation_ids: ["treatment_retrospective"],
+        local_observation_ids: ["treatment_retrospective", "treatment_fall2026"],
         display_name: "Weekday express-bus trip additions",
         evidence_refs: [
           { source_id: "source_retrospective", block_id: "p002_c0001", source_quote: "Trips were added" },
@@ -175,7 +175,7 @@ describe("semantic corrections", () => {
         source_id: "source_planning",
         source_ids: ["source_planning"],
         local_observation_id: "treatment_planning",
-        local_observation_ids: ["treatment_planning"],
+        local_observation_ids: ["treatment_planning", "treatment_fall_2026"],
         display_name: "Planned weekday express-bus trip additions",
         evidence_refs: [
           { source_id: "source_planning", block_id: "p003_c0004", source_quote: "Trips will be added" },
@@ -210,7 +210,12 @@ describe("semantic corrections", () => {
     expect(folded.display_name).toBe("Weekday express-bus trip additions");
     expect(folded.payload).toEqual({ treatment_kind: "service_pattern", description: "Survivor description" });
     expect(folded.source_ids).toEqual(["source_planning", "source_retrospective"]);
-    expect(folded.local_observation_ids).toEqual(["treatment_planning", "treatment_retrospective"]);
+    expect(folded.local_observation_ids).toEqual([
+      "treatment_fall2026",
+      "treatment_fall_2026",
+      "treatment_planning",
+      "treatment_retrospective",
+    ]);
     expect(folded.submission_ids).toEqual(["submission_planning", "submission_retrospective"]);
     expect(folded.evidence_refs).toEqual([
       { source_id: "source_retrospective", block_id: "p002_c0001", source_quote: "Trips were added" },

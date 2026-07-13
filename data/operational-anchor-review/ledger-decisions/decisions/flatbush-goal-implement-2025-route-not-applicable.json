@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "decision_id": "flatbush-goal-implement-2025-route-not-applicable",
+  "gap_id": "operational-coverage:c2567aa52339f0b35dd5ba07",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T18:50:00.000Z",
+  "rationale": "This planned milestone does not independently bind delivered route scope. Inheriting candidate scope from the wider Flatbush project would create an unsupported planning cross-product and could duplicate the separately approved Phase 1 occurrence.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_goal-implement-2025",
+      "source_id": "flatbush_ave_cb2_jun2025",
+      "evidence_id": "flatbush_ave_cb2_jun2025#p029_c0016",
+      "block_id": "p029_c0016"
+    },
+    {
+      "record_id": "event_goal-implement-2025",
+      "source_id": "flatbush_ave_cb6_jun2025",
+      "evidence_id": "flatbush_ave_cb6_jun2025#p029_c0016",
+      "block_id": "p029_c0016"
+    },
+    {
+      "record_id": "event_goal-implement-2025",
+      "source_id": "flatbush_ave_cb8_jun2025",
+      "evidence_id": "flatbush_ave_cb8_jun2025#p029_c0016",
+      "block_id": "p029_c0016"
+    }
+  ],
+  "search_receipt_ids": []
+}
