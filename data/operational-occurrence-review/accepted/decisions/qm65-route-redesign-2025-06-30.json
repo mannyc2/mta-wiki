@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "decision_id": "qm65-route-redesign-2025-06-30",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T00:15:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official MTA QM65 row binds a realized June 30, 2025 service start and one uniquely anchored route to its one canonical service_pattern treatment. This atomic occurrence preserves that literal family and does not inherit any referenced route as route scope.",
+  "occurrence_id": "occurrence:7497bde52fc4c2d6bedb0ec9",
+  "founding_key": "event:event_qm65-qbnr-start-2025-06-30",
+  "observation_event_record_ids": [
+    "event_qm65-qbnr-start-2025-06-30"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-qm65",
+    "relation_qbnr-2025-has-qm65-laurelton-downtown-connection",
+    "relation_qbnr-has-qm65-start-2025-06-30"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-06-30",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_qm65-qbnr-start-2025-06-30",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0133"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-qm65-start-2025-06-30",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0133"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_meeting-doc-138431-qm65",
+      "gtfs_route_id": "QM65",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_meeting-doc-138431-qm65",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0133"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-qm65",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0133"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "atomic",
+  "treatment": {
+    "kind": "atomic",
+    "member": {
+      "treatment_record_id": "treatment_qm65-laurelton-downtown-connection-2025",
+      "treatment_family": "service_pattern",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_qm65-laurelton-downtown-connection-2025",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0133"
+        },
+        {
+          "role": "treatment_scope",
+          "record_id": "relation_qbnr-2025-has-qm65-laurelton-downtown-connection",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0133"
+        }
+      ]
+    }
+  }
+}

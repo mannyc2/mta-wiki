@@ -245,8 +245,8 @@ describe("operational occurrences v1", () => {
         member_treatment_families: string[];
       }>;
     };
-    expect(rows).toHaveLength(62);
-    expect(summary.candidate_projection_count).toBe(64);
+    expect(rows).toHaveLength(70);
+    expect(summary.candidate_projection_count).toBe(72);
     expect(review.decision_count).toBe(rows.length);
     expect(expectedCandidates.candidate_count).toBe(expectedCandidates.candidates.length);
     expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === "Q110")).toEqual([
@@ -387,7 +387,39 @@ describe("operational occurrences v1", () => {
         },
       ]);
     }
-    for (const forbiddenRouteId of ["Q12", "Q20B", "Q21", "Q36", "Q63", "Q80", "Q98"]) {
+    for (const [routeId, occurrenceId] of [
+      ["Q14", "occurrence:b0386b3cb7a23934798f0a21"],
+      ["Q51", "occurrence:ce5829e0060fb3a0834fc99b"],
+      ["Q115", "occurrence:f738d53af84e374b3b108739"],
+      ["QM65", "occurrence:7497bde52fc4c2d6bedb0ec9"],
+    ] as const) {
+      expect(expectedCandidates.candidates.filter((candidate) => candidate.occurrence_id === occurrenceId)).toEqual([
+        {
+          occurrence_id: occurrenceId,
+          route_id: routeId,
+          treatment_kind: "atomic",
+          analysis_family: "service_pattern",
+          member_treatment_families: ["service_pattern"],
+        },
+      ]);
+    }
+    for (const [routeId, occurrenceId, memberFamilies] of [
+      ["Q61", "occurrence:5d51147fc80a669bfb81da45", ["service_pattern", "service_pattern", "service_pattern"]],
+      ["Q80", "occurrence:8ceb4179de2ab8a2852347df", ["service_pattern", "service_pattern"]],
+      ["Q82", "occurrence:136f3d32a53a62f096f8f44e", ["service_pattern", "bus_stop_or_boarding", "service_pattern", "service_pattern"]],
+      ["Q89", "occurrence:2748598653b74d33fcdce3d1", ["bus_stop_or_boarding", "service_pattern"]],
+    ] as const) {
+      expect(expectedCandidates.candidates.filter((candidate) => candidate.occurrence_id === occurrenceId)).toEqual([
+        {
+          occurrence_id: occurrenceId,
+          route_id: routeId,
+          treatment_kind: "bundle",
+          analysis_family: "route_redesign",
+          member_treatment_families: memberFamilies,
+        },
+      ]);
+    }
+    for (const forbiddenRouteId of ["Q12", "Q20B", "Q21", "Q36", "Q63", "Q98"]) {
       expect(expectedCandidates.candidates.some((candidate) => candidate.route_id === forbiddenRouteId)).toBe(false);
     }
   });
