@@ -15,11 +15,19 @@
     "operational-coverage:a9b2bf1ff109628219637775"
   ],
   "source_id": "mta_queens_bus_network_redesign_service_changes",
-  "review_state": "proposed",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-13T01:00:22.000Z",
   "provenance": {
     "drafted_by": "codex-corpus-completion-2026-07-13",
     "drafted_at": "2026-07-13T00:53:20.000Z",
-    "method": "qbnr_batch_spec_expansion"
+    "method": "qbnr_batch_spec_expansion",
+    "verifier": {
+      "reviewed_by": "codex-independent-qbnr-spec-review",
+      "reviewed_at": "2026-07-13T01:00:22.000Z",
+      "verdict": "passed",
+      "rationale": "The official Q25 block, hash, date, and exhaustive clause partition were independently verified. The embedded v1-rc6 pin resolves only route_q25-queens as current Q25 with no Limited variant identity. Treatment semantics, one-route scope, deterministic identities, byte-stable expansion, and the exact eight-row accepted-journal conversion with a seven-record canonical delta all pass."
+    }
   },
   "rationale": "The exact official MTA Q25 row establishes a realized June 29, 2025 service-change date, the uniquely pinned current Q25 route, and two bounded treatment members: stop removal on the continuing route and discontinuation of the Limited service pattern. The reviewed v1-rc6 anchor treats the historical Limited pattern as lifecycle-compatible evidence on the current Q25 identity; it does not create a second Limited route identity. Full-list, detail, and timetable language remains navigation context. Only the current Q25 route receives an affects_route relation; the official Queens Bus Network Redesign project context can later support route_redesign as the reviewed bundle analysis family.",
   "observations": [
