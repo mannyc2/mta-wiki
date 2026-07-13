@@ -40,6 +40,7 @@ describe("accepted operational-anchor review corpus", () => {
 
     expect(validation.quarantined).toEqual([]);
     expect(validation.accepted.map((decision) => decision.decision_id)).toEqual([
+      "ace-2024-06-20-bx36",
       "ace-2025-09-15-bx20",
       "ace-2025-09-15-bx3",
       "ace-2025-09-15-bx7",
@@ -53,6 +54,7 @@ describe("accepted operational-anchor review corpus", () => {
     expect(reviewedRows.every((row) => row.source_authority === "official_public_agency")).toBe(true);
     expect(reviewedRows.every((row) => Object.values(row.evidence_coverage).every(Boolean))).toBe(true);
     expect(reviewedRows.map((row) => [row.gtfs_route_ids, row.treatment_families, row.candidate_operational_date_normalized])).toEqual([
+      [["BX36"], ["automated_bus_lane_enforcement"], "2024-06-20"],
       [["BX20"], ["automated_bus_lane_enforcement"], "2025-09-15"],
       [["BX3"], ["automated_bus_lane_enforcement"], "2025-09-15"],
       [["BX7"], ["automated_bus_lane_enforcement"], "2025-09-15"],

@@ -25,11 +25,13 @@ source_ids:
   - "meeting_doc_201621"
   - "mta_automated_camera_enforcement"
   - "nyct_key_performance_metrics_doc194001"
+  - "tremont_ave_bus_priority_cb6_nov2024"
 local_observation_id: "project_ace_automated_camera_enforcement"
 local_observation_ids:
   - "project_ace_april2024_procurement"
   - "project_ace_automated_camera_enforcement"
   - "project_ace_automated_camera_enforcement_sep2025"
+  - "project_ace_bx36_activation_2024"
   - "project_ace_dec2024_kpm"
   - "project_ace_meeting_doc_138336"
   - "project_ace_meeting_doc_201621"
@@ -44,7 +46,7 @@ local_observation_ids:
   - "project_meeting_doc_186836_ace_update"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-07-12T13:58:30.582Z"
+generated_at: "2026-07-13T11:45:10.670Z"
 raw_text: "Since its launch in June 2024, the program has extended across all five boroughs, equipping more than 1,400 buses and covering 560 miles of service, benefitting over 915,000 daily customers."
 submission_ids:
   - "sub_1aa5f02e3b9a9520"
@@ -57,6 +59,7 @@ submission_ids:
   - "sub_8c51d78baa322ad6"
   - "sub_95567bf0fb0c8c95"
   - "sub_9c0faa6c0e8c5594"
+  - "sub_a455b430a0406f77"
   - "sub_a92cecc5802e68ee"
   - "sub_ab14fada1e2634cf"
   - "sub_c10b055f05485cbc"
@@ -84,6 +87,7 @@ payload:
       - "Started as Automated Bus Lane Enforcement (ABLE) in 2019, evolved into ACE. Uses cameras on buses to enforce bus lanes, bus stops, and double-parking rules. Active on 58 routes, covering about 560 miles of streets across all five boroughs."
       - "Automated Camera Enforcement system for bus lanes, bus stops, double-parked vehicles, bike lanes, and paratransit stops"
       - "Four additional ACE routes—Q6, Bx20, Bx3, and Bx7—were activated on September 15, 2025 under a 60-day warning period."
+      - "ACE camera enforcement was in effect on Tremont Avenue on the Bx36 route since June 20, 2024."
     document_time_status:
       - "active"
       - "planned"
@@ -410,6 +414,26 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_186616/blocks.jsonl"
     source_quote: "September 2025"
     text_sha256: "sha256:0be8e91e2d5af1b13feeab5c041f02ed79d57a4997656e8b51e5f144f7b7a7b0"
+    text_source: "raw_text"
+  -
+    block_id: "p026_c0002"
+    evidence_id: "tremont_ave_bus_priority_cb6_nov2024#p026_c0002"
+    page_number: 26
+    role: "delivered_project_status"
+    source_id: "tremont_ave_bus_priority_cb6_nov2024"
+    source_path: "raw/sources/tremont_ave_bus_priority_cb6_nov2024/blocks.jsonl"
+    source_quote: "ACE cameras in effect on Tremont Av (Bx36 route) since 6/20/24"
+    text_sha256: "sha256:628378b1a7db2a7e622d1f0e79ca61e6f1593f096a1e9732e5adaff5c05adfc2"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "tremont_ave_bus_priority_cb6_nov2024#p001_c0003"
+    page_number: 1
+    role: "retrospective_document_date"
+    source_id: "tremont_ave_bus_priority_cb6_nov2024"
+    source_path: "raw/sources/tremont_ave_bus_priority_cb6_nov2024/blocks.jsonl"
+    source_quote: "November 14, 2024"
+    text_sha256: "sha256:44107b4ca4a67a4b07495e7f47adcb755f778c1df41f5525a95eccf7d76462a4"
     text_source: "raw_text"
 ---
 

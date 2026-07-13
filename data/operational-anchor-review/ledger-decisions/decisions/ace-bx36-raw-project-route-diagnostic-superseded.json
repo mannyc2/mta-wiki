@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "ace-bx36-raw-project-route-diagnostic-superseded",
+  "gap_id": "operational-coverage:94e0a8841a4f2040b93043e0",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T13:30:00.000Z",
+  "rationale": "The raw broad projection inherits the ACE project's citywide route inventory and is intentionally ambiguous. Accepted anchor review ace-2024-06-20-bx36 and approved occurrence occurrence:333a3d854315aa8fa6d90e93 bind this exact event only to Bx36, so mutating the project-wide graph to make the raw diagnostic singular is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_tremont-ace-cameras-operative",
+      "source_id": "tremont_ave_bus_priority_cb6_nov2024",
+      "evidence_id": "tremont_ave_bus_priority_cb6_nov2024#p026_c0002",
+      "block_id": "p026_c0002"
+    }
+  ],
+  "search_receipt_ids": []
+}

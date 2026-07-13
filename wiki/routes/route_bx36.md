@@ -41,6 +41,7 @@ local_observation_ids:
   - "route_bx36_2014_03_20"
   - "route_bx36_37081"
   - "route_bx36_ace"
+  - "route_bx36_ace_activation_2024"
   - "route_bx36_bx_cb5"
   - "route_bx36_oct2022"
   - "route_bx36_soundview"
@@ -58,7 +59,7 @@ local_observation_ids:
   - "route_meeting_doc_113986_bx36"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T22:45:28.854Z"
+generated_at: "2026-07-13T11:45:11.202Z"
 raw_text: "BX36 ABLE camera route through 2023"
 submission_ids:
   - "sub_151d4529713f92be"
@@ -83,6 +84,7 @@ submission_ids:
   - "sub_bef6ccf9caef510b"
   - "sub_c6ed5fe4efaa4b6f"
   - "sub_cda36ab41a36ccdb"
+  - "sub_e39d7ffd929cd5fe"
   - "sub_f20b4f271e53ba4a"
   - "sub_f2487ffde9871f91"
 payload:
@@ -404,6 +406,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_98311/blocks.jsonl"
     source_quote: "The simplified routes (Bx11, Bx24, Bx36, and Bx40/Bx42) have seen reduced travel times."
     text_sha256: "sha256:12912113301bf2b1b70851c80c1599db2cd1191799f7efebd59f9a664a38345f"
+    text_source: "raw_text"
+  -
+    block_id: "p026_c0002"
+    evidence_id: "tremont_ave_bus_priority_cb6_nov2024#p026_c0002"
+    page_number: 26
+    role: "delivered_route_identity"
+    source_id: "tremont_ave_bus_priority_cb6_nov2024"
+    source_path: "raw/sources/tremont_ave_bus_priority_cb6_nov2024/blocks.jsonl"
+    source_quote: "Bx36 route"
+    text_sha256: "sha256:628378b1a7db2a7e622d1f0e79ca61e6f1593f096a1e9732e5adaff5c05adfc2"
     text_source: "raw_text"
 ---
 
