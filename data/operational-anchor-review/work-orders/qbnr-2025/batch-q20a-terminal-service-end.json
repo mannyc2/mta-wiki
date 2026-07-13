@@ -1,0 +1,72 @@
+{
+  "proposal_id": "orp_qbnr_q20a_terminal_service_end_2025",
+  "corpus_fingerprint": "e89b9f9120cf2dc4894027de4eae4d497ac9a7ef475820d732f3f67b79aa40ad",
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf"
+  ],
+  "project_record_id": "project_queens-bus-network-redesign",
+  "project_label": "Queens Bus Network Redesign",
+  "drafted_by": "codex-corpus-completion-terminal-review",
+  "drafted_at": "2026-07-13T02:30:00.000Z",
+  "rationale": "The exact official MTA Q20A row establishes that Q20A service ended on June 29, 2025, was replaced by Q20 with a changed Downtown Jamaica approach, and had stops removed. The reviewed historical Q20A identity remains distinct from Q20B and the successor Q20. Navigation language is retained as context only. This terminal lifecycle event is intentionally excluded from study projection and must not produce an operational occurrence.",
+  "units": [
+    {
+      "source_block_ids": [
+        "p001_b0024"
+      ],
+      "source_block_sha256s": [
+        "sha256:c7babc46e91c8d0982c7183093a134c084df0b711752fac30dc2d19ae135e670"
+      ],
+      "source_route_labels": [
+        "Q20A"
+      ],
+      "route_label": "Q20A",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q20-2014-10-07-flushing-jamaica"
+      },
+      "study_disposition": {
+        "status": "excluded",
+        "reason": "historical route service ended in the 2025 Queens Bus Network Redesign and has no current GTFS route anchor"
+      },
+      "event_kind": "end",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "service_discontinuation_replacement",
+          "label": "Q20A discontinuation and Q20 replacement",
+          "source_quote": "The Q20A will be discontinued and replaced by the Q20, which mostly follows the same route. To the south, the Q20 will approach Downtown Jamaica via Jamaica Av instead of Sutphin Blvd.",
+          "treatment_kind": "route service discontinuation and replacement",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q20A service was discontinued and replaced by Q20, whose southern approach uses Jamaica Avenue instead of Sutphin Boulevard."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q20A stop removals",
+          "source_quote": "Some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Some Q20A stops were removed."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text only."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q20 service.",
+          "review_rationale": "Navigation text only."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q20 timetable.",
+          "review_rationale": "Navigation text only."
+        }
+      ]
+    }
+  ]
+}

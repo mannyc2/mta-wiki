@@ -1,0 +1,179 @@
+{
+  "proposal_id": "orp_qbnr_q20b_q21_q34_qm3_terminal_service_ends_2025",
+  "corpus_fingerprint": "e89b9f9120cf2dc4894027de4eae4d497ac9a7ef475820d732f3f67b79aa40ad",
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf",
+    "operational-coverage:45dd3045070322bc90d91414",
+    "operational-coverage:a9b2bf1ff109628219637775"
+  ],
+  "project_record_id": "project_queens-bus-network-redesign",
+  "project_label": "Queens Bus Network Redesign",
+  "drafted_by": "codex-corpus-completion-terminal-review",
+  "drafted_at": "2026-07-13T02:30:00.000Z",
+  "rationale": "Four exact official MTA rows establish realized terminal dates and whole-route discontinuation treatments for historical Q20B, Q21, Q34, and QM3 identities. Every successor, replacement, alternative route, rail option, and navigation statement is retained as rider context only and creates no additional route edge. These terminal lifecycle events are intentionally excluded from study projection and must not produce operational occurrences.",
+  "units": [
+    {
+      "source_block_ids": [
+        "p001_b0025"
+      ],
+      "source_block_sha256s": [
+        "sha256:8b59f2194f59bcd49542bd27ff62da6d2549cd895b2d2f52f84c9de379cc9c7d"
+      ],
+      "source_route_labels": [
+        "Q20B"
+      ],
+      "route_label": "Q20B",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q20b-cb12-2011"
+      },
+      "study_disposition": {
+        "status": "excluded",
+        "reason": "historical route service ended in the 2025 Queens Bus Network Redesign and has no current GTFS route anchor"
+      },
+      "event_kind": "end",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "service_discontinuation",
+          "label": "Q20B service discontinuation",
+          "source_quote": "The Q20B will be discontinued.",
+          "treatment_kind": "route service discontinuation",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q20B route service was discontinued."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For service south of 20 Av, take the Q20. For service on Parsons Blvd north of 20 Av, take the Q44 . For service on 14 Av, take the rerouted Q76 .",
+          "review_rationale": "Alternative-service guidance only; Q20, Q44, and Q76 are not route scope for the Q20B terminal event."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q20 service.",
+          "review_rationale": "Navigation text only."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q20 timetable.",
+          "review_rationale": "Navigation text only."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0026"
+      ],
+      "source_block_sha256s": [
+        "sha256:24c148f37abc73bf0535b6afb59ef514ea3549ab2b51a8ad37b9eb5938c6f6bf"
+      ],
+      "source_route_labels": [
+        "Q21"
+      ],
+      "route_label": "Q21",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q21-local-woodhaven-2014"
+      },
+      "study_disposition": {
+        "status": "excluded",
+        "reason": "historical route service ended in the 2025 Queens Bus Network Redesign and has no current GTFS route anchor"
+      },
+      "event_kind": "end",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "service_discontinuation",
+          "label": "Q21 service discontinuation",
+          "source_quote": "The Q21 will be discontinued.",
+          "treatment_kind": "route service discontinuation",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q21 route service was discontinued."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For service south of 157 Av, take the Q41 , or Q52-SBS / Q53-SBS . For service on and north of 157 Av, take the rerouted Q11 .",
+          "review_rationale": "Alternative-service guidance only; Q41, Q52-SBS, Q53-SBS, and Q11 are not route scope for the Q21 terminal event."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0039"
+      ],
+      "source_block_sha256s": [
+        "sha256:d886d5ec5fa4e77f4d0351975f83d519fbd6483e4e6d565970be7f371f624904"
+      ],
+      "source_route_labels": [
+        "Q34"
+      ],
+      "route_label": "Q34",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q34-queens"
+      },
+      "study_disposition": {
+        "status": "excluded",
+        "reason": "historical route service ended in the 2025 Queens Bus Network Redesign and has no current GTFS route anchor"
+      },
+      "event_kind": "end",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "service_discontinuation",
+          "label": "Q34 service discontinuation",
+          "source_quote": "The Q34 will be discontinued.",
+          "treatment_kind": "route service discontinuation",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q34 route service was discontinued."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For service on Kissena/Parsons Blvds, take the Q25 or Q17 For service north of Northern Blvd, take the new Q61 .",
+          "review_rationale": "Alternative-service guidance only; Q25, Q17, and Q61 are not route scope for the Q34 terminal event."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0104"
+      ],
+      "source_block_sha256s": [
+        "sha256:a4acd1cf077bf00b38518918fead3e0cfcc6b9b6edfb0461d31d7a307fcc2030"
+      ],
+      "source_route_labels": [
+        "QM3"
+      ],
+      "route_label": "QM3",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_qm3-201110-qbb"
+      },
+      "study_disposition": {
+        "status": "excluded",
+        "reason": "historical route service ended in the 2025 Queens Bus Network Redesign and has no current GTFS route anchor"
+      },
+      "event_kind": "end",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "service_discontinuation",
+          "label": "QM3 service discontinuation",
+          "source_quote": "The QM3 will be discontinued.",
+          "treatment_kind": "route service discontinuation",
+          "expected_treatment_family": "service_pattern",
+          "description": "QM3 route service was discontinued."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "As an alternative, consider the LIRR. You can also take the Q12 bus along Northern Blvd and transfer to the ‚Äã at Flushing-Main St.",
+          "review_rationale": "Alternative-service guidance only; LIRR, Q12, and the garbled transfer symbol are not route scope or treatments for the QM3 terminal event."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "proposal_id": "orp_qbnr_q15a_terminal_service_end_2025",
+  "corpus_fingerprint": "e89b9f9120cf2dc4894027de4eae4d497ac9a7ef475820d732f3f67b79aa40ad",
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf"
+  ],
+  "project_record_id": "project_queens-bus-network-redesign",
+  "project_label": "Queens Bus Network Redesign",
+  "drafted_by": "codex-corpus-completion-terminal-review",
+  "drafted_at": "2026-07-13T02:30:00.000Z",
+  "rationale": "The exact official MTA Q15A row establishes that the historical Q15A route ended on June 29, 2025 and was discontinued. The row requires a distinct historical Q15A canonical route because no current canonical route safely identifies Q15A. Alternative-service and navigation language is retained as context only. The terminal lifecycle event is intentionally excluded from study projection and must not produce an operational occurrence.",
+  "units": [
+    {
+      "source_block_ids": [
+        "p001_b0018"
+      ],
+      "source_block_sha256s": [
+        "sha256:ba39621ef17d246365ed71d45fe4fed9ea27b6c327e80bad5de6024844260c7c"
+      ],
+      "source_route_labels": [
+        "Q15A"
+      ],
+      "route_label": "Q15A",
+      "route_resolution": {
+        "mode": "create",
+        "local_observation_id": "route_q15a_historical_2025",
+        "expected_record_id": "route_q15a-historical-2025"
+      },
+      "study_disposition": {
+        "status": "excluded",
+        "reason": "historical route service ended in the 2025 Queens Bus Network Redesign and has no current GTFS route anchor"
+      },
+      "event_kind": "end",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "service_discontinuation",
+          "label": "Q15A service discontinuation",
+          "source_quote": "The Q15A will be discontinued.",
+          "treatment_kind": "route service discontinuation",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q15A route service was discontinued."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For service on 150 St, take the Q15. For service along 154 St, take the new Q61 .",
+          "review_rationale": "Alternative-service guidance only; Q15 and Q61 are not route scope for the Q15A terminal event."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q15 service.",
+          "review_rationale": "Navigation text only."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q15 timetable.",
+          "review_rationale": "Navigation text only."
+        }
+      ]
+    }
+  ]
+}
