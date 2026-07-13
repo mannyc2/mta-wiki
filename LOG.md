@@ -24,6 +24,13 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   Ninety-eight broad inherited QBNR route/treatment diagnostics are terminally superseded by the
   route-scoped occurrences. The three route-rename events intentionally have no such diagnostics
   because their canonical event family is outside the broad operational-family gap generator.
+- Cut immutable local audit release `v1-rc9` from generator commit `8fa94aac`: manifest SHA-256
+  `9be47d3294e08b64b103188ad2247b7c8f920507461a511ef5ae46ca3298ec80`, all `20`
+  addressed files independently reproduced byte-for-byte, and route anchors unchanged from
+  `v1-rc8` at SHA-256 `874d2233713d624e127f6f690a42088ee9473873fb8ebff3d8f21cfb88916dc4`.
+  The release carries the `124`/`123`/`126` occurrence totals above; its deterministic quality
+  report resolves all `134,143` evidence references and reports zero open semantic invariants.
+  `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
 
 ## 2026-07-12
 
