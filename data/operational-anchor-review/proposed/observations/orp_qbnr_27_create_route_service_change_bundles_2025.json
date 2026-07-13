@@ -15,11 +15,19 @@
     "operational-coverage:a9b2bf1ff109628219637775"
   ],
   "source_id": "mta_queens_bus_network_redesign_service_changes",
-  "review_state": "proposed",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-13T04:23:09.000Z",
   "provenance": {
     "drafted_by": "codex-corpus-completion-2026-07-13",
     "drafted_at": "2026-07-13T02:10:00.000Z",
-    "method": "qbnr_batch_spec_expansion"
+    "method": "qbnr_batch_spec_expansion",
+    "verifier": {
+      "reviewed_by": "codex-independent-qbnr-spec-review",
+      "reviewed_at": "2026-07-13T04:23:09.000Z",
+      "verdict": "passed",
+      "rationale": "All twenty-seven official rows, hashes, dates, current GTFS identities, and clause partitions were independently checked. Exact expansion yields twenty-seven routes, twenty-seven events, seventy treatments, and 124 same-unit project relations; all 248 deterministic ids are new and collision-free, treatment normalization yields thirty-three bus_stop_or_boarding and thirty-seven service_pattern members, and rc7 has one no_wiki_coverage row for each target. Three older source-backed serves_route edges will become resolvable for continuing Q24, QM8, and QM11 identities; each was separately checked as lifecycle-compatible."
+    }
   },
   "rationale": "Twenty-seven exact official MTA rows establish realized QBNR service-change dates and one new current route identity per row. Each row has multiple bounded treatment members and is reviewed as a Queens Bus Network Redesign route-redesign bundle; referenced routes remain treatment text or reviewed rider context only.",
   "observations": [
