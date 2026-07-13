@@ -140,6 +140,12 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
   `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239` and occurrence totals remain
   `134` total, `133` eligible, and `169` eligible route pairs. `LATEST` intentionally remains `v1-rc5`.
+- Recovered the delivered Fall 2024 Grand Concourse/Tremont Avenue queue-jump signal with direct Bx36
+  route and signal-priority treatment scope from the official November NYC DOT deck. The source proves
+  installation but only at season precision; an exhaustive `24`-source, captured-registry, and official-web
+  search found no exact physical onset, so November 4 remains only a status-as-of bound. The final date gap
+  is terminal `absent_in_source`, bringing the `488`-row priority ledger to zero open and `488` terminal
+  rows. Occurrence totals remain `134`/`133`/`169` because the day/month study gate was not weakened.
 
 ## 2026-07-12
 

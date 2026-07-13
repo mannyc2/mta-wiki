@@ -20,7 +20,9 @@ import {
 const REVIEWER = "codex-corpus-completion-2026-07-13";
 const DECIDED_AT = "2026-07-13T20:40:00.000Z";
 const EXCLUDED_EVENT_ID = "event_queue-jump-implementation-fall2024";
-const EXCLUDED_GAP_ID = "operational-coverage:1421a4564c24ec04c9a70638";
+const LEGACY_EXCLUDED_GAP_ID = "operational-coverage:1421a4564c24ec04c9a70638";
+const CLOSED_EXCLUDED_GAP_ID = "operational-coverage:e2a8d437c3dab6ad27820394";
+const CLOSED_EXCLUDED_DECISION_ID = "tremont-queue-jump-fall-2024-exact-onset-absent";
 
 // Covers the exact 32 event records and 24 incoming timeline relations, including
 // identities, endpoints, statuses, source ids, dates, and evidence refs/hashes.
@@ -834,6 +836,7 @@ function stateCounts(queue: readonly QueueRow[]): {
 
 function assertQueueInventory(queue: readonly QueueRow[]): {
   state: "pre" | "post";
+  queueJumpState: "legacy_open" | "date_terminal";
   rowsByGap: Map<string, QueueRow>;
 } {
   const expectedByGap = new Map(gapSpecs.map((spec) => [spec.gapId, spec]));
@@ -907,34 +910,53 @@ function assertQueueInventory(queue: readonly QueueRow[]): {
     "The 104 target gaps are in a mixed or unexpected review state",
   );
 
-  const excluded = queue.find((row) => row.gap_id === EXCLUDED_GAP_ID);
-  assert(excluded, `Missing explicitly excluded gap ${EXCLUDED_GAP_ID}`);
+  const legacyExcluded = queue.find((row) => row.gap_id === LEGACY_EXCLUDED_GAP_ID);
+  const closedExcluded = queue.find((row) => row.gap_id === CLOSED_EXCLUDED_GAP_ID);
   assert(
-    excluded.event_record_id === EXCLUDED_EVENT_ID,
-    `${EXCLUDED_GAP_ID} event changed`,
+    Number(Boolean(legacyExcluded)) + Number(Boolean(closedExcluded)) === 1,
+    "Expected exactly one legacy-open or date-terminal queue-jump gap",
   );
-  assert(
-    excluded.dimension === "timeline_subject",
-    `${EXCLUDED_GAP_ID} dimension changed`,
-  );
-  assert(excluded.priority, `${EXCLUDED_GAP_ID} is no longer priority`);
-  assert(
-    excluded.status === "open" && excluded.verdict === "unreviewed",
-    `${EXCLUDED_GAP_ID} must remain the sole open gap`,
-  );
-  assert(
-    excluded.decision_ids.length === 0,
-    `${EXCLUDED_GAP_ID} unexpectedly has a decision`,
-  );
-  assert(
-    excluded.resolved_occurrence_ids.length === 0,
-    `${EXCLUDED_GAP_ID} unexpectedly resolves to an occurrence`,
-  );
+  if (legacyExcluded) {
+    assert(legacyExcluded.event_record_id === EXCLUDED_EVENT_ID, `${LEGACY_EXCLUDED_GAP_ID} event changed`);
+    assert(legacyExcluded.dimension === "timeline_subject", `${LEGACY_EXCLUDED_GAP_ID} dimension changed`);
+    assert(legacyExcluded.priority, `${LEGACY_EXCLUDED_GAP_ID} is no longer priority`);
+    assert(
+      legacyExcluded.status === "open" && legacyExcluded.verdict === "unreviewed",
+      `${LEGACY_EXCLUDED_GAP_ID} must remain open before its separate curation`,
+    );
+    assert(legacyExcluded.decision_ids.length === 0, `${LEGACY_EXCLUDED_GAP_ID} unexpectedly has a decision`);
+    assert(
+      legacyExcluded.resolved_occurrence_ids.length === 0,
+      `${LEGACY_EXCLUDED_GAP_ID} unexpectedly resolves to an occurrence`,
+    );
+  }
+  if (closedExcluded) {
+    assert(closedExcluded.event_record_id === EXCLUDED_EVENT_ID, `${CLOSED_EXCLUDED_GAP_ID} event changed`);
+    assert(closedExcluded.dimension === "date_precision", `${CLOSED_EXCLUDED_GAP_ID} dimension changed`);
+    assert(closedExcluded.priority, `${CLOSED_EXCLUDED_GAP_ID} is no longer priority`);
+    assert(
+      closedExcluded.status === "terminal" && closedExcluded.verdict === "absent_in_source",
+      `${CLOSED_EXCLUDED_GAP_ID} must remain terminal after its separate curation`,
+    );
+    assert(
+      stableJson(closedExcluded.decision_ids as unknown as JsonValue) ===
+        stableJson([CLOSED_EXCLUDED_DECISION_ID] as unknown as JsonValue),
+      `${CLOSED_EXCLUDED_GAP_ID} decision changed`,
+    );
+    assert(
+      closedExcluded.resolved_occurrence_ids.length === 0,
+      `${CLOSED_EXCLUDED_GAP_ID} unexpectedly resolves to an occurrence`,
+    );
+  }
+  const queueJumpState = legacyExcluded ? "legacy_open" : "date_terminal";
+  assert(!(pre && queueJumpState === "date_terminal"), "A closed queue jump cannot precede the 104 decisions");
 
   const counts = stateCounts(queue);
   const expectedCounts = pre
     ? { total: 488, open: 105, terminal: 383, ready: 0 }
-    : { total: 488, open: 1, terminal: 487, ready: 0 };
+    : queueJumpState === "legacy_open"
+      ? { total: 488, open: 1, terminal: 487, ready: 0 }
+      : { total: 488, open: 0, terminal: 488, ready: 0 };
   assert(
     stableJson(counts as unknown as JsonValue) ===
       stableJson(expectedCounts as unknown as JsonValue),
@@ -944,14 +966,16 @@ function assertQueueInventory(queue: readonly QueueRow[]): {
     queue.filter((row) => row.status === "open").map((row) => row.gap_id),
   );
   const expectedOpenGapIds = pre
-    ? sorted([...expectedByGap.keys(), EXCLUDED_GAP_ID])
-    : [EXCLUDED_GAP_ID];
+    ? sorted([...expectedByGap.keys(), LEGACY_EXCLUDED_GAP_ID])
+    : queueJumpState === "legacy_open"
+      ? [LEGACY_EXCLUDED_GAP_ID]
+      : [];
   assert(
     stableJson(openGapIds as unknown as JsonValue) ===
       stableJson(expectedOpenGapIds as unknown as JsonValue),
     "Open-gap inventory changed outside the explicit 104+1 partition",
   );
-  return { state: pre ? "pre" : "post", rowsByGap };
+  return { state: pre ? "pre" : "post", queueJumpState, rowsByGap };
 }
 
 function decisionEvidence(
@@ -1119,7 +1143,7 @@ assert(
   "Generated decision ids are not unique",
 );
 assert(
-  !gapSpecs.some((spec) => spec.gapId === EXCLUDED_GAP_ID),
+  !gapSpecs.some((spec) => spec.gapId === LEGACY_EXCLUDED_GAP_ID || spec.gapId === CLOSED_EXCLUDED_GAP_ID),
   "The queue-jump gap must remain excluded",
 );
 
@@ -1128,7 +1152,7 @@ const { eventsById, incomingByEvent } = assertCanonicalContext(records);
 const targetEventIds = new Set(eventSpecs.map((spec) => spec.eventId));
 assertNoOccurrences(targetEventIds);
 const queue = readJsonl<QueueRow>(queuePath);
-const { state, rowsByGap } = assertQueueInventory(queue);
+const { state, queueJumpState, rowsByGap } = assertQueueInventory(queue);
 const apply = process.argv.includes("--apply");
 const verifyPost = process.argv.includes("--verify-post");
 assert(
@@ -1138,7 +1162,7 @@ assert(
 if (verifyPost)
   assert(
     state === "post",
-    "--verify-post requires a refreshed 488/1/487 coverage queue",
+    "--verify-post requires the 104 prospective gaps to be terminal",
   );
 const result = writeOrVerifyDecisions(
   gapSpecs,
@@ -1162,15 +1186,18 @@ process.stdout.write(
         (spec) => spec.contextMode === "explicit_source_context",
       ).length,
       gap_count: result.decisions.length,
-      excluded_gap_id: EXCLUDED_GAP_ID,
+      excluded_event_id: EXCLUDED_EVENT_ID,
+      queue_jump_state: queueJumpState,
+      legacy_excluded_gap_id: LEGACY_EXCLUDED_GAP_ID,
+      closed_excluded_gap_id: CLOSED_EXCLUDED_GAP_ID,
       written_count: result.written,
       verified_existing_count: result.verified,
       pending_count: result.pending,
       expected_pre_counts: { total: 488, open: 105, terminal: 383, ready: 0 },
       expected_post_refresh_counts: {
         total: 488,
-        open: 1,
-        terminal: 487,
+        open: queueJumpState === "legacy_open" ? 1 : 0,
+        terminal: queueJumpState === "legacy_open" ? 487 : 488,
         ready: 0,
       },
       refresh_required_after_apply: state === "pre" && apply,

@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "receipt_id": "tremont-queue-jump-fall-2024-exact-onset-search",
+  "gap_id": "operational-coverage:e2a8d437c3dab6ad27820394",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "searched_at": "2026-07-13T21:10:00.000Z",
+  "rationale": "Searched every source required by the event gap, both duplicate November 2024 NYC DOT decks, the full captured artifact-tree registry, and the official NYC DOT/MTA web surfaces for a day- or month-level physical activation date. The November decks say only Fall 2024 and installed; earlier project materials are prospective, while later materials do not backfill an exact queue-jump onset. November 4 is the presentation/status-as-of date and was not inferred as activation.",
+  "corpus_fingerprint": "f1147d2e9030de65b14250a46388be974fe74fe41d784e7cfde3b4342c4bd301",
+  "source_searches": [
+    {
+      "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "2012_11_sbs_webster_cac4_summary",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "2013_03_sbs_webster_bx_cb5",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "2014_03_20_brt_webste_cb5",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "ace_routes_dataset_dictionary",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "bus_lane_camera_report_2024",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "busway_tremontavenue",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "bx_cb5_projects_dec032019",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "meeting_doc_113986",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "meeting_doc_37081",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "meeting_doc_98311",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "mta_automated_camera_enforcement",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "soundview_bus_priority_press_release_2021",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cab4_mar2025",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb5_jun2024",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb5_mar2024",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb5_nov2024",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb6_feb2024",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb6_feb2025",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb6_jul2024",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb6_jun2024",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb6_nov2024",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "tremont_ave_busway",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "tremont_ave_busway_es",
+      "queries": [
+        "Bx36 queue jump AND (exact installation date OR activation date)",
+        "Grand Concourse Tremont queue jump AND (installed on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    }
+  ],
+  "registry_search": {
+    "queries": [
+      "Fall 2024 Bx36 queue jump signal installed",
+      "Tremont Avenue Grand Concourse queue jump exact activation date"
+    ],
+    "title_filters": [
+      "Bx36",
+      "Fall 2024",
+      "Grand Concourse",
+      "queue jump",
+      "Tremont Avenue"
+    ],
+    "publisher_filters": [
+      "Metropolitan Transportation Authority",
+      "NYC DOT"
+    ],
+    "matched_source_ids": [
+      "tremont_ave_bus_priority_cb5_nov2024",
+      "tremont_ave_bus_priority_cb6_nov2024"
+    ]
+  }
+}

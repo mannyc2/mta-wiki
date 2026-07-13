@@ -4,54 +4,54 @@
   "gap_id": "operational-coverage:638d039018fabef3e9b37740",
   "reviewer": "codex-corpus-completion-2026-07-13",
   "searched_at": "2026-07-13T11:30:00.000Z",
-  "rationale": "Revalidated every source connected to the Broadway/Q70 occurrence and the staged source registry against the current corpus fingerprint for retrospective language that states an exact physical activation date. The May presentation supplies only a forecast, while the later official sources establish delivered status by an as-of date without stating when the lane physically opened. The DeKalb/Lafayette, March express, and B12 graph additions are unrelated to Broadway and do not change the registry matches.",
-  "corpus_fingerprint": "e9cdd9eb7b97fa874643788d27d6446ca5b04401601b4360c68a428ea98453f5",
+  "rationale": "Revalidated every persisted Broadway/Q70 source search and registry match against the current corpus fingerprint for retrospective language stating an exact physical activation date. The May presentation remains only a forecast, while later official sources establish delivered status by an as-of date without stating when the lane physically opened. Current corpus changes outside this event add no source-connected Broadway onset evidence.",
+  "corpus_fingerprint": "f1147d2e9030de65b14250a46388be974fe74fe41d784e7cfde3b4342c4bd301",
   "source_searches": [
     {
       "source_id": "better_buses",
       "queries": [
-        "opened on OR became operational on OR activated on",
-        "began operating on OR went into effect on OR service began on"
+        "began operating on OR went into effect on OR service began on",
+        "opened on OR became operational on OR activated on"
       ],
       "matching_block_ids": []
     },
     {
       "source_id": "broadway_69_st_roosevelt_ave_may2026",
       "queries": [
-        "opened on OR became operational on OR activated on",
-        "began operating on OR went into effect on OR service began on"
+        "began operating on OR went into effect on OR service began on",
+        "opened on OR became operational on OR activated on"
       ],
       "matching_block_ids": []
     },
     {
       "source_id": "brt_routes_fullreport",
       "queries": [
-        "opened on OR became operational on OR activated on",
-        "began operating on OR went into effect on OR service began on"
+        "began operating on OR went into effect on OR service began on",
+        "opened on OR became operational on OR activated on"
       ],
       "matching_block_ids": []
     },
     {
       "source_id": "nyc_dot_current_projects_july_2026",
       "queries": [
-        "opened on OR became operational on OR activated on",
-        "began operating on OR went into effect on OR service began on"
+        "began operating on OR went into effect on OR service began on",
+        "opened on OR became operational on OR activated on"
       ],
       "matching_block_ids": []
     },
     {
       "source_id": "nyc_mayor_broadway_created_june_2026",
       "queries": [
-        "opened on OR became operational on OR activated on",
-        "began operating on OR went into effect on OR service began on"
+        "began operating on OR went into effect on OR service began on",
+        "opened on OR became operational on OR activated on"
       ],
       "matching_block_ids": []
     },
     {
       "source_id": "q70_fare_free_service_increases_2025",
       "queries": [
-        "opened on OR became operational on OR activated on",
-        "began operating on OR went into effect on OR service began on"
+        "began operating on OR went into effect on OR service began on",
+        "opened on OR became operational on OR activated on"
       ],
       "matching_block_ids": []
     }
@@ -62,13 +62,13 @@
       "Broadway center-running bus lane exact opening or activation date"
     ],
     "title_filters": [
-      "Broadway",
-      "69th Street, Roosevelt Avenue, Q70, or LaGuardia"
+      "69th Street, Roosevelt Avenue, Q70, or LaGuardia",
+      "Broadway"
     ],
     "publisher_filters": [
+      "Metropolitan Transportation Authority",
       "NYC DOT",
-      "NYC Mayor's Office",
-      "Metropolitan Transportation Authority"
+      "NYC Mayor's Office"
     ],
     "matched_source_ids": [
       "broadway_69_st_roosevelt_ave_may2026",

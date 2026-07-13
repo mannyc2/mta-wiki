@@ -63,7 +63,9 @@ const receiptPath =
 const decisionDir = "data/operational-anchor-review/ledger-decisions/decisions";
 const decisionPrefix = "prospective-residual-";
 const queueJumpEventId = "event_queue-jump-implementation-fall2024";
-const queueJumpGapId = "operational-coverage:1421a4564c24ec04c9a70638";
+const queueJumpGapId = "operational-coverage:e2a8d437c3dab6ad27820394";
+const queueJumpDecisionId =
+  "tremont-queue-jump-fall-2024-exact-onset-absent";
 const fullDimensions = [
   "date_precision",
   "delivered_status",
@@ -187,17 +189,17 @@ describe("applied prospective residual closure", () => {
       "data/quality/operational-coverage/priority-queue.jsonl",
     );
     expect(queue).toHaveLength(488);
-    expect(queue.filter((row) => row.status === "open")).toHaveLength(1);
-    expect(queue.filter((row) => row.status === "terminal")).toHaveLength(487);
+    expect(queue.filter((row) => row.status === "open")).toHaveLength(0);
+    expect(queue.filter((row) => row.status === "terminal")).toHaveLength(488);
 
-    const openRow = queue.find((row) => row.status === "open");
-    expect(openRow).toMatchObject({
+    const queueJumpRow = queue.find((row) => row.gap_id === queueJumpGapId);
+    expect(queueJumpRow).toMatchObject({
       gap_id: queueJumpGapId,
       event_record_id: queueJumpEventId,
-      dimension: "timeline_subject",
-      status: "open",
-      verdict: "unreviewed",
-      decision_ids: [],
+      dimension: "date_precision",
+      status: "terminal",
+      verdict: "absent_in_source",
+      decision_ids: [queueJumpDecisionId],
       resolved_occurrence_ids: [],
     });
     expect(
@@ -211,7 +213,7 @@ describe("applied prospective residual closure", () => {
       ),
     ).toBe(false);
     expect(eventsById.get(queueJumpEventId)?.payload.lifecycle_phase).toBe(
-      "other",
+      "installed",
     );
 
     const targetRows = queue.filter((row) =>
