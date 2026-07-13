@@ -48,6 +48,13 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   Exactly four of `403` route-anchor rows changed from `v1-rc9`; all `134,171` evidence references
   resolve. Occurrence totals intentionally remain unchanged until reviewed promotion, and `LATEST`
   remains `v1-rc5`.
+- Promoted the retrospective pilot launch and fare-resumption events as two approved seven-route
+  atomic occurrences against immutable `v1-rc10` anchors. The launch uses the existing zero-fare
+  treatment; resumption uses the distinct positive fare-collection-resumption treatment. Aggregate
+  `Bx18A/B` and `S46/S96` performance facts remain unsplit. The fixture now contains `126`
+  occurrences, `125` study-eligible occurrences, and `140` eligible route pairs (`41` atomic, `85`
+  bundles, `3` multi-route). Ten duplicate, prospective, or broad diagnostics are terminally
+  superseded, reducing the `499`-row priority ledger from `233` to `223` open rows.
 
 ## 2026-07-12
 

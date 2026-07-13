@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "fare-collection-resumption-2024-route-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:e55b033cee2d4be945e53ad2",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T06:45:30.000Z",
+  "rationale": "The retrospective official evaluation's fare-resumption event now founds one approved seven-route occurrence with exact rc10 route identities and delivered route scope. The broad event-level route diagnostic is therefore superseded and not independently applicable.",
+  "proposal_ids": [
+    "orp_fare_free_pilot_route_scope_and_resumption_2023_2024"
+  ],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

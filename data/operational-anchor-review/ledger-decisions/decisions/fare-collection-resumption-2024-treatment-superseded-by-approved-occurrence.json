@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "fare-collection-resumption-2024-treatment-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:6ae1f03dd9d673fed4153775",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T06:45:30.000Z",
+  "rationale": "The retrospective official evaluation's fare-resumption event now founds an approved atomic fare_collection occurrence using the positive fare-collection-resumption treatment. The broad event-level treatment diagnostic is therefore superseded and not independently applicable.",
+  "proposal_ids": [
+    "orp_fare_free_pilot_route_scope_and_resumption_2023_2024"
+  ],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

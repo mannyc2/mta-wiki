@@ -245,15 +245,15 @@ describe("operational occurrences v1", () => {
         member_treatment_families: string[];
       }>;
     };
-    expect(rows).toHaveLength(124);
+    expect(rows).toHaveLength(126);
     expect(summary).toEqual({
       schema_version: 1,
-      occurrence_count: 124,
-      study_projection_eligible_count: 123,
-      atomic_count: 39,
+      occurrence_count: 126,
+      study_projection_eligible_count: 125,
+      atomic_count: 41,
       bundle_count: 85,
-      multi_route_count: 1,
-      candidate_projection_count: 126,
+      multi_route_count: 3,
+      candidate_projection_count: 140,
       counts_by_exclusion_reason: { unsupported_bundle_analysis_family: 1 },
     });
     expect(review.decision_count).toBe(rows.length);
@@ -278,6 +278,26 @@ describe("operational occurrences v1", () => {
         ],
       },
     });
+    const expectedFareFreeRoutes = ["B60", "BX18A", "BX18B", "M116", "Q4", "S46", "S96"];
+    for (const [occurrenceId, onset, treatmentRecordId] of [
+      ["occurrence:7a2f12e7e5c483d946eea9f4", "2023-09-24", "treatment_fare-free-fare-collection"],
+      ["occurrence:89db405827ea6e206146708c", "2024-09-01", "treatment_fare-collection-resumption-2024"],
+    ] as const) {
+      const occurrence = rows.find((row) => row.occurrence_id === occurrenceId);
+      expect(occurrence).toMatchObject({
+        resolved_status: "realized",
+        resolved_onset: { date: onset, precision: "day" },
+        study_projection_eligible: true,
+        treatment: {
+          kind: "atomic",
+          member: {
+            treatment_record_id: treatmentRecordId,
+            treatment_family: "fare_collection",
+          },
+        },
+      });
+      expect(occurrence?.routes.map((route) => route.gtfs_route_id)).toEqual(expectedFareFreeRoutes);
+    }
     expect(JSON.stringify(q48Occurrence)).not.toContain("historical");
     expect(
       expectedCandidates.candidates.filter(
