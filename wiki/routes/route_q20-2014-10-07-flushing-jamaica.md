@@ -23,6 +23,7 @@ source_ids:
   - "2015_09_22_brt_flushing_jamaica_cb7_presentation"
   - "brt_flushing_jamaica_oct2016"
   - "meeting_doc_202106"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q20a_cb12_2011"
 local_observation_ids:
   - "route_brt_flushing_jamaica_oct2016_q20ab"
@@ -36,12 +37,13 @@ local_observation_ids:
   - "route_q20a_q20b_2015_07_07_cb7"
   - "route_q20a_q20b_flushing_jamaica_cac1"
   - "route_q20a_q20b_jamaica_cac2"
+  - "route_q20a_qbnr_2025"
   - "route_q20ab_2015_06_15_cb8"
   - "route_q20ab_2015_cb7"
   - "route_q20ab_pw3"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-21T22:35:00.741Z"
+generated_at: "2026-07-13T03:16:23.000Z"
 raw_text: "Bus stops at Hillside Av & Sutphin Blvd serve Q20A/Q20B/Q44 and Q43 routes"
 submission_ids:
   - "sub_2bf169f6d0a1a563"
@@ -58,6 +60,7 @@ submission_ids:
   - "sub_a471c552d71fc205"
   - "sub_cf17e071de8b7fda"
   - "sub_f1fbb5f5a7b7db4f"
+  - "sub_f6b8cb736002adca"
 payload:
   _merged_field_values:
     description:
@@ -82,6 +85,7 @@ payload:
     route_name:
       - "Q20A/B"
       - "Q20AB Local"
+      - "Q20A"
     route_type:
       - "local"
       - "Local"
@@ -241,6 +245,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_202106/blocks.jsonl"
     source_quote: "Q20"
     text_sha256: "sha256:a51e38161f22cbaa4e7fd619d2e1c79b8c92700f68cce6dbbafe742ee642a1cb"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0024"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0024"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q20A"
+    text_sha256: "sha256:c7babc46e91c8d0982c7183093a134c084df0b711752fac30dc2d19ae135e670"
     text_source: "raw_text"
 ---
 
