@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-implementation-late2025-or-2026-delivered-status-not-applicable",
+  "gap_id": "operational-coverage:c5842fe52615ee0fa08e6b02",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_implementation-late2025-or-2026 is lifecycle_phase=planned and the cited source does not report this exact milestone as delivered. Its sole incoming has_timeline_event relation is explicitly planned or proposed. Later project history must be represented by a separate retrospective event rather than retroactively converting this forecast, so delivered-status recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_implementation-late2025-or-2026",
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024",
+      "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024#p022_c0002",
+      "block_id": "p022_c0002"
+    },
+    {
+      "record_id": "relation_project-has-implementation-target",
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024",
+      "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024#p022_c0002",
+      "block_id": "p022_c0002"
+    }
+  ],
+  "search_receipt_ids": []
+}

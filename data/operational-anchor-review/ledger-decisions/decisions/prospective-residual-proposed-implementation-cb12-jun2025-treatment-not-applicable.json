@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-proposed-implementation-cb12-jun2025-treatment-not-applicable",
+  "gap_id": "operational-coverage:ca5f7c2098c5d3453e5f6a20",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_proposed-implementation-cb12-jun2025 is a prospective planning milestone, not a realized treatment occurrence. Its sole incoming has_timeline_event relation is explicitly planned or proposed. Proposed project components cannot be cross-joined into delivered treatment scope, so treatment recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_proposed-implementation-cb12-jun2025",
+      "source_id": "bay_pkwy_cropsey_ave_cb12_jun2025",
+      "evidence_id": "bay_pkwy_cropsey_ave_cb12_jun2025#p017_c0008",
+      "block_id": "p017_c0008"
+    },
+    {
+      "record_id": "relation_project-timeline-implementation-cb12-jun2025",
+      "source_id": "bay_pkwy_cropsey_ave_cb12_jun2025",
+      "evidence_id": "bay_pkwy_cropsey_ave_cb12_jun2025#p017_c0008",
+      "block_id": "p017_c0008"
+    }
+  ],
+  "search_receipt_ids": []
+}

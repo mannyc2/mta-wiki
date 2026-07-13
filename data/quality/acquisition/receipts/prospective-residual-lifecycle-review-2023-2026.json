@@ -1,0 +1,557 @@
+{
+  "schema_version": 1,
+  "receipt_id": "prospective-residual-lifecycle-review-2023-2026",
+  "status": "reviewed_work_order_not_applied",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T19:15:00Z",
+  "acquisition_method": "existing_staged_official_sources_only",
+  "scope": {
+    "correction_count": 26,
+    "prior_lifecycle_counts": {
+      "other": 24,
+      "launched": 2
+    },
+    "corrected_lifecycle_phase": "planned",
+    "relation_backed_count": 18,
+    "direct_prospective_evidence_count": 8,
+    "event_inventory_sha256": "f0a612503c77437a8ef3736c383ac4a05e456afcccf9287e04e6ad0202e3f838",
+    "relation_inventory_sha256": "0a7eb3208f39e02fc4707249908096cf983095ddbd1a4ca397695a34101a7591",
+    "excluded_event_record_ids": [
+      "event_queue-jump-implementation-fall2024"
+    ],
+    "rule": "Change only lifecycle_phase to planned when exact local evidence is prospective or the event has an exact incoming planned/proposed timeline relation. Preserve every source literal, date field, identity, relation, and evidence reference."
+  },
+  "lifecycle_decisions": [
+    {
+      "sequence": 1,
+      "correction_id": "core-coverage-prospective-residual-01-bus-service-increase-summer-2025-planned-20260713",
+      "record_id": "event_bus-service-increase-summer-2025",
+      "source_id": "meeting_doc_174141",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "meeting_doc_174141#p006_c0004",
+      "event_evidence_sha256": "sha256:98c3334b9f82742d898c0cef0792c76d845a555e861bcf964cad8bf3ad01d1b2",
+      "event_evidence_literals": [
+        "will increase bus service on 16 local routes"
+      ],
+      "prior_payload_sha256": "dae9280b5b699812a1615de6614a9bbf7c47619468837787cf3a8369163405a0",
+      "planned_payload_sha256": "827109dda0596a616578ee35173bf083db16a4995fd3b44939b0b3a0266121db",
+      "incoming_relation": null,
+      "supporting_evidence": null,
+      "basis": "The May 28 performance document says Transit will increase local-bus service over the summer; it is prospective at source time."
+    },
+    {
+      "sequence": 2,
+      "correction_id": "core-coverage-prospective-residual-02-busway-implementation-spring2025-planned-20260713",
+      "record_id": "event_busway-implementation-spring2025",
+      "source_id": "tremont_ave_bus_priority_cb5_nov2024",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "tremont_ave_bus_priority_cb5_nov2024#p030_c0006",
+      "event_evidence_sha256": "sha256:6fb4b3ea403c4b55834f68434118176369bf0df52af7b94911edc947e4c17ca7",
+      "event_evidence_literals": [
+        "Implement Busway Spring 2025"
+      ],
+      "prior_payload_sha256": "1dd368ebf6b19567697395ce7a1d31ee771287ba0e2378086e36e33bf15bbc22",
+      "planned_payload_sha256": "279ba9fefaac4f81c6e0f48a56870b6312b5a939b66d3190a1067da33a128a3f",
+      "incoming_relation": null,
+      "supporting_evidence": {
+        "evidence_id": "tremont_ave_bus_priority_cb5_nov2024#p030_c0001",
+        "evidence_sha256": "sha256:759f4c0213571addf354aadab734cf53182c7930fa752b44ed51122c728616d1",
+        "literals": [
+          "Next Steps"
+        ]
+      },
+      "basis": "The November 2024 presentation places Spring 2025 busway implementation under Next Steps."
+    },
+    {
+      "sequence": 3,
+      "correction_id": "core-coverage-prospective-residual-03-busway-implementation-summer-fall-2025-planned-20260713",
+      "record_id": "event_busway-implementation-summer-fall-2025",
+      "source_id": "34th_st_enhanced_bus_priority_cb6_jun2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "34th_st_enhanced_bus_priority_cb6_jun2025#p032_c0008",
+      "event_evidence_sha256": "sha256:70feb28fda7859fb478885e0ae8ffdf66a5df7e29d42bef18b23396fafd8dde0",
+      "prior_payload_sha256": "923c4a36de536e1a7da700ccc2548244bb717170a152187339e37d1a88d375f2",
+      "planned_payload_sha256": "94f60656ef9c5b14eecc36165710235b391f9d3a10759bf808d8e9a0987ff787",
+      "incoming_relation": {
+        "record_id": "relation_project-has-event-implementation-cb6-jun2025",
+        "assertion_status": "planned",
+        "payload_sha256": "31a2d0a5cfa8cfe66a44cb0e6c5e8eb322294e30de9c1f27501f7efde27b54d9"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact project timeline relation classifies this Summer/Fall 2025 milestone as planned."
+    },
+    {
+      "sequence": 4,
+      "correction_id": "core-coverage-prospective-residual-04-busway-launch-spring2025-planned-20260713",
+      "record_id": "event_busway-launch-spring2025",
+      "source_id": "tremont_ave_bus_priority_cb6_feb2025",
+      "prior_lifecycle_phase": "launched",
+      "event_evidence_id": "tremont_ave_bus_priority_cb6_feb2025#p034_c0005",
+      "event_evidence_sha256": "sha256:0bed32f4ba1a12c9eddf9ddc376198841178c3ce7182f1442d28788c032fcb97",
+      "event_evidence_literals": [
+        "Busway Launch"
+      ],
+      "prior_payload_sha256": "427acb9ab534943d0e0c59e90528aa2929b212d4a4d149de4dcc508060c73969",
+      "planned_payload_sha256": "f5409c0ae16a7c162781b5ffa6b7f90fe58e6516f92aec5d72f484a8ed715f5f",
+      "incoming_relation": null,
+      "supporting_evidence": {
+        "evidence_id": "tremont_ave_bus_priority_cb6_feb2025#p034_c0001",
+        "evidence_sha256": "sha256:759f4c0213571addf354aadab734cf53182c7930fa752b44ed51122c728616d1",
+        "literals": [
+          "Next Steps"
+        ]
+      },
+      "basis": "The February 2025 presentation lists the later Spring 2025 busway launch under Next Steps; it is not a launch confirmation."
+    },
+    {
+      "sequence": 5,
+      "correction_id": "core-coverage-prospective-residual-05-curb-regulations-refine-2026-3-planned-20260713",
+      "record_id": "event_curb-regulations-refine-2026_3",
+      "source_id": "lexington_ave_60_st_52_st_sept2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "lexington_ave_60_st_52_st_sept2025#p012_c0003",
+      "event_evidence_sha256": "sha256:9e876cc14f7c0157a2dede8176fbf1732b21851af6392c53ed9c26e5fca9c120",
+      "prior_payload_sha256": "b41dbb6f79e47a5a027240840573c3f734fff23efcab67e360a9380135ae303c",
+      "planned_payload_sha256": "0f2743c08beca72c1e656245408b7bf1a4dad86f4095de9f09e70e035d099bc8",
+      "incoming_relation": {
+        "record_id": "relation_project-has-event-curb2026",
+        "assertion_status": "proposed",
+        "payload_sha256": "5d94c832d0359af0ab126694b8a5a2a4849e58c95340813624b109b66a326e61"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact project timeline relation classifies the 2026 curb-regulation refinement as proposed."
+    },
+    {
+      "sequence": 6,
+      "correction_id": "core-coverage-prospective-residual-06-fall2025-implementation-planned-20260713",
+      "record_id": "event_fall2025-implementation",
+      "source_id": "lexington_ave_60_st_52_st_sept2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "lexington_ave_60_st_52_st_sept2025#p012_c0003",
+      "event_evidence_sha256": "sha256:9e876cc14f7c0157a2dede8176fbf1732b21851af6392c53ed9c26e5fca9c120",
+      "prior_payload_sha256": "63e783ae9c916a956391da9f7fd869a69f50dc4f8ba73b9c6b702a9558c13aeb",
+      "planned_payload_sha256": "1aa80d845c3e41855e751f754439a845f250508a522464c92a164e0b9c2ec613",
+      "incoming_relation": {
+        "record_id": "relation_project-has-event-impl-fall2025",
+        "assertion_status": "proposed",
+        "payload_sha256": "b5d7f44bdc2021762e05b04785bd6992e638219ffb49442bd72408e0b11b39d1"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact project timeline relation classifies the Fall 2025 implementation target as proposed."
+    },
+    {
+      "sequence": 7,
+      "correction_id": "core-coverage-prospective-residual-07-implementation-begins-late-may-2026-planned-20260713",
+      "record_id": "event_implementation-begins-late-may-2026",
+      "source_id": "broadway_69_st_roosevelt_ave_may2026",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "broadway_69_st_roosevelt_ave_may2026#p012_c0003",
+      "event_evidence_sha256": "sha256:45b58037c13ab29042f75b92be7029df8d016c8f98d275ba737e24932023e046",
+      "prior_payload_sha256": "16727007cf26997b7e9fb6e251982d7a0dd2ca0ba6966e93aed465825ce399fc",
+      "planned_payload_sha256": "18af708071e48891bdc18b7c1d75b4c67ffe7be27800c091926b3a272eb14846",
+      "incoming_relation": {
+        "record_id": "relation_project-event-implementation-begins",
+        "assertion_status": "proposed",
+        "payload_sha256": "d538ad1df550127f85be4a27a21105eedea3ae23b7eb7b219096b2a13b09f22d"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact Broadway project timeline relation classifies the Late May/Early June implementation start as proposed."
+    },
+    {
+      "sequence": 8,
+      "correction_id": "core-coverage-prospective-residual-08-implementation-fall2025-spring2026-planned-20260713",
+      "record_id": "event_implementation-fall2025-spring2026",
+      "source_id": "lexington_ave_60_st_52_st_oct2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "lexington_ave_60_st_52_st_oct2025#p012_c0003",
+      "event_evidence_sha256": "sha256:5bdbfb02532a820bfc85ad772066ccab53422d4c19fdc41041a1e7e52c8f6b17",
+      "prior_payload_sha256": "cb94fb43fff9c2638267d9d1b36ad39a2dadde64ae338859a4794d4a413af13b",
+      "planned_payload_sha256": "682ab218be0db0c61fd370b9d79d4e359a63c9cd7d6ed879545ca5f9e87a007c",
+      "incoming_relation": {
+        "record_id": "relation_project-has-timeline-event-implementation",
+        "assertion_status": "proposed",
+        "payload_sha256": "315044baab15075354d620208177af1bbc18e55711e454ff1e52690ec53a6ee1"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact project timeline relation classifies this Fall 2025/Spring 2026 implementation window as proposed."
+    },
+    {
+      "sequence": 9,
+      "correction_id": "core-coverage-prospective-residual-09-implementation-late2025-or-2026-planned-20260713",
+      "record_id": "event_implementation-late2025-or-2026",
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024#p022_c0002",
+      "event_evidence_sha256": "sha256:8693059910eb56890afc3440b5ab3de8c426bff50c409c85110ad60a89f735ff",
+      "prior_payload_sha256": "91a985a7c08783b8d7acc46acb35414499df63592c709d426ba31fbfe308a5c6",
+      "planned_payload_sha256": "59257dd224b120342dccf627cd12a7e05bf9fe058ec08ac383ef53f410ebbdc6",
+      "incoming_relation": {
+        "record_id": "relation_project-has-implementation-target",
+        "assertion_status": "planned",
+        "payload_sha256": "fefb6a5885889736f2e6d21b5118f16bef2af3eeac90d8945ca033aaf0fc73f0"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact Grand Avenue project timeline relation classifies the late-2025-or-2026 target as planned."
+    },
+    {
+      "sequence": 10,
+      "correction_id": "core-coverage-prospective-residual-10-implementation-spring2025-planned-20260713",
+      "record_id": "event_implementation-spring2025",
+      "source_id": "tremont_ave_bus_priority_cb6_feb2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "tremont_ave_bus_priority_cb6_feb2025#p034_c0005",
+      "event_evidence_sha256": "sha256:0bed32f4ba1a12c9eddf9ddc376198841178c3ce7182f1442d28788c032fcb97",
+      "event_evidence_literals": [
+        "Begin Implementation"
+      ],
+      "prior_payload_sha256": "434ef6ee68368a994a3d0dfea104edd0d1ae8902ddb90b9dce101fe761337f79",
+      "planned_payload_sha256": "bd2d8e50d6857d80bcd45a0a1252280c31c140cf6d577666b061427692f0f105",
+      "incoming_relation": null,
+      "supporting_evidence": {
+        "evidence_id": "tremont_ave_bus_priority_cb6_feb2025#p034_c0001",
+        "evidence_sha256": "sha256:759f4c0213571addf354aadab734cf53182c7930fa752b44ed51122c728616d1",
+        "literals": [
+          "Next Steps"
+        ]
+      },
+      "basis": "The February 2025 presentation lists the later March/April implementation under Next Steps."
+    },
+    {
+      "sequence": 11,
+      "correction_id": "core-coverage-prospective-residual-11-implementation-summer-2025-3-planned-20260713",
+      "record_id": "event_implementation-summer-2025_3",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025#p023_c0002",
+      "event_evidence_sha256": "sha256:7a49056984cc82c5c38b84cddf1b8f03584570e01cad52292ea0306c7a006a36",
+      "prior_payload_sha256": "2db6047cf73cd7ea98ae9a7db4f36c69bea88c3f6bcd8e6f91c3b6e9e732f359",
+      "planned_payload_sha256": "16724abbcc8efe753add52d382766ade01bcf86074d0492d2266ab3d8f7046d3",
+      "incoming_relation": {
+        "record_id": "relation_event-timeline-implementation-summer2025",
+        "assertion_status": "proposed",
+        "payload_sha256": "162496fef6f1362620ba6dee1141058efabb56a4a3f8c2e349cdc43afe0c7e77"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact 116th Street project timeline relation classifies this tentative Summer 2025 start as proposed."
+    },
+    {
+      "sequence": 12,
+      "correction_id": "core-coverage-prospective-residual-12-implementation-summer-2025-4-planned-20260713",
+      "record_id": "event_implementation-summer-2025_4",
+      "source_id": "34th_st_enhanced_bus_priority_cb4_jan2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "34th_st_enhanced_bus_priority_cb4_jan2025#p021_c0002",
+      "event_evidence_sha256": "sha256:629aef39bcfb9e89dd9dc682645abb4f3536da4d98a6c99552f2dd877755d449",
+      "prior_payload_sha256": "58f1884d20fa6ad1ec8c90240a5b69109562d1535b5f97af143d68d1de57426b",
+      "planned_payload_sha256": "32a5dd48cbc84266e336cf3bcb008977ba3e96eacbcbab9e1615d6453b56726c",
+      "incoming_relation": {
+        "record_id": "relation_project-event-summer-2025-implementation",
+        "assertion_status": "planned",
+        "payload_sha256": "214a64138836b0241ce5b30a6fe44e76650fa1a22cf65af964e313f674a32b4e"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact 34th Street project timeline relation classifies the Summer 2025 implementation as planned."
+    },
+    {
+      "sequence": 13,
+      "correction_id": "core-coverage-prospective-residual-13-implementation-summer-fall-2025-planned-20260713",
+      "record_id": "event_implementation-summer-fall-2025",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb9_feb2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "116_st_morningside_ave_pleasant_ave_cb9_feb2025#p024_c0003",
+      "event_evidence_sha256": "sha256:ca54f4f78953270f1fb79d86648dc19a9090f60e9efe72f9d430acdcab6b87f1",
+      "prior_payload_sha256": "b1618e30c03549b97493ed1e3784f536cd8c95cfbaa34626724100621a1e60d7",
+      "planned_payload_sha256": "4fb83bb7f26f80470701d0c69ed112512f006585776fae30754150ba4ab92159",
+      "incoming_relation": {
+        "record_id": "relation_project-has-timeline-implementation_4",
+        "assertion_status": "planned",
+        "payload_sha256": "359f7166d89207457d263ceed44084fcc1b27f92f81787dc52f3cf174c279515"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact 116th Street project timeline relation classifies this Summer/Fall 2025 target as planned."
+    },
+    {
+      "sequence": 14,
+      "correction_id": "core-coverage-prospective-residual-14-implementation-summer-fall-2025-2-planned-20260713",
+      "record_id": "event_implementation-summer-fall-2025_2",
+      "source_id": "34th_st_enhanced_bus_priority_cb4_may2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "34th_st_enhanced_bus_priority_cb4_may2025#p032_c0008",
+      "event_evidence_sha256": "sha256:70feb28fda7859fb478885e0ae8ffdf66a5df7e29d42bef18b23396fafd8dde0",
+      "prior_payload_sha256": "93e2d330089bdff8e1431036eec00c266d50db63be252c46c74174a317a55826",
+      "planned_payload_sha256": "775267a3e35d3312b3aa2bba5743113af61ddaa5c1cb50f390db503be0434a65",
+      "incoming_relation": {
+        "record_id": "relation_rel-project-has-timeline-implementation-2025",
+        "assertion_status": "planned",
+        "payload_sha256": "293c99543b23eb40c7fb2867042b177a3dfdbcbcc25a437c29c9757766198488"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact 34th Street project timeline relation classifies this Summer/Fall 2025 implementation as planned."
+    },
+    {
+      "sequence": 15,
+      "correction_id": "core-coverage-prospective-residual-15-implementation-summer-fall-2025-3-planned-20260713",
+      "record_id": "event_implementation-summer-fall-2025_3",
+      "source_id": "34th_st_enhanced_bus_priority_cb5_may2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "34th_st_enhanced_bus_priority_cb5_may2025#p032_c0008",
+      "event_evidence_sha256": "sha256:70feb28fda7859fb478885e0ae8ffdf66a5df7e29d42bef18b23396fafd8dde0",
+      "prior_payload_sha256": "f9ffb550318d79129e32c1337e00ac7f964b22b1527769fc187eccb01b9ccdf4",
+      "planned_payload_sha256": "5ac0803797aaa9d9ccf6258a39d12c62c8945994e840d4ed243e9db41f1da7da",
+      "incoming_relation": {
+        "record_id": "relation_project-has-event-implementation_4",
+        "assertion_status": "planned",
+        "payload_sha256": "0b52658783c7592618bdbe8672fa53979584c844ab1cba88cf3de5b590f45f9d"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact 34th Street project timeline relation classifies this projected implementation as planned."
+    },
+    {
+      "sequence": 16,
+      "correction_id": "core-coverage-prospective-residual-16-implementation-tentative-summer2025-cb11-jun2025-planned-20260713",
+      "record_id": "event_implementation-tentative-summer2025-cb11-jun2025",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025#p034_c0002",
+      "event_evidence_sha256": "sha256:e64763facfd23898c40e748a52d6cf4446bfc91742776b3922f2e4af698da98d",
+      "prior_payload_sha256": "de2e951e4aac4f3bd9d4f774d2cfb7ec2245f57850bb006b6d1f2a0cfa1d34da",
+      "planned_payload_sha256": "e616c4f2f28ccebc0350a733c6d7310ed23d6d29b0327f8d8c58edd0e5d57912",
+      "incoming_relation": {
+        "record_id": "relation_project-has-timeline-event-implementation_4",
+        "assertion_status": "proposed",
+        "payload_sha256": "370a291c8e94dbed8c8588b779cf6cc3f794ceb391a8bbaf41cc7355469a7694"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact 116th Street project timeline relation classifies this tentative Summer 2025 start as proposed."
+    },
+    {
+      "sequence": 17,
+      "correction_id": "core-coverage-prospective-residual-17-implementation-timeline-fall2025-spring2026-planned-20260713",
+      "record_id": "event_implementation-timeline-fall2025-spring2026",
+      "source_id": "lexington_ave_60_st_52_st_cb8_oct2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "lexington_ave_60_st_52_st_cb8_oct2025#p012_c0003",
+      "event_evidence_sha256": "sha256:5bdbfb02532a820bfc85ad772066ccab53422d4c19fdc41041a1e7e52c8f6b17",
+      "prior_payload_sha256": "9fa5642212d2a6542aefc3238fe1e7199b78939a203d57aeacc7bd50e4ca3a1e",
+      "planned_payload_sha256": "0d9f55adc37d3ae1460bfabf876cd39f449ae022badb9a05c080bb9e7e5531d7",
+      "incoming_relation": {
+        "record_id": "relation_project-has-timeline-implementation_7",
+        "assertion_status": "proposed",
+        "payload_sha256": "1dced4f6118c754ee986d7697e5877d011892d3d7b8eb96b65baedf6430a0edf"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact project timeline relation classifies this Fall 2025/Spring 2026 window as proposed."
+    },
+    {
+      "sequence": 18,
+      "correction_id": "core-coverage-prospective-residual-18-meeting-doc-160441-local-summer-2025-planned-20260713",
+      "record_id": "event_meeting-doc-160441-local-summer-2025",
+      "source_id": "meeting_doc_160441",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "meeting_doc_160441#p001_c0013",
+      "event_evidence_sha256": "sha256:dcc639baef5c6739ece99ea21cf887ab1e3dbf69b8dd91bd2ae01264865719bc",
+      "event_evidence_literals": [
+        "Local bus routes: Summer 2025"
+      ],
+      "prior_payload_sha256": "9162471b31280f7021cf5a92556ff26bfe6eebbc084dfde15ed3ed839c902b21",
+      "planned_payload_sha256": "da68e560711014ffefd97616472386d0095b8280266ad76af898c3e21eed2b9d",
+      "incoming_relation": null,
+      "supporting_evidence": {
+        "evidence_id": "meeting_doc_160441#p003_c0007",
+        "evidence_sha256": "sha256:23b6ffba3612086713c49a13a326acf1befed1a799134ce902c5f52feed19da4",
+        "literals": [
+          "planned for implementation in the summer 2025 schedule"
+        ]
+      },
+      "basis": "The December 2024 staff summary explicitly says the local-route details were under development and planned for Summer 2025."
+    },
+    {
+      "sequence": 19,
+      "correction_id": "core-coverage-prospective-residual-19-potential-implementation-summer-fall-2025-2-planned-20260713",
+      "record_id": "event_potential-implementation-summer-fall-2025_2",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025#p025_c0003",
+      "event_evidence_sha256": "sha256:0019658510f13de6d8c7d15751567b719490aacbd6dcca0abd3a6215293cf2bc",
+      "prior_payload_sha256": "df0f719dc0531d692ae52597307aeda32b03eb577fecb62cbbc0543a934b0beb",
+      "planned_payload_sha256": "c83377033e7bcba05350e854fdeba1e6e7e450a8e798fc6d187ced9142dd0736",
+      "incoming_relation": {
+        "record_id": "relation_project-has-timeline-implementation-summer-fall-2025",
+        "assertion_status": "planned",
+        "payload_sha256": "1271c33df89a47919ca1f11179a2135cb493389c67c2ef77fd34c881860c183d"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact 116th Street project timeline relation classifies this potential implementation as planned."
+    },
+    {
+      "sequence": 20,
+      "correction_id": "core-coverage-prospective-residual-20-proposed-implementation-cb12-jun2025-planned-20260713",
+      "record_id": "event_proposed-implementation-cb12-jun2025",
+      "source_id": "bay_pkwy_cropsey_ave_cb12_jun2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "bay_pkwy_cropsey_ave_cb12_jun2025#p017_c0008",
+      "event_evidence_sha256": "sha256:d251cf799b16b03afbed0d49c1029635f63e643a93b28815f96a105c175a0136",
+      "prior_payload_sha256": "f3874115ced6351eb742ef877479c7af78d76c92b7e3b591a50d28bc4771c107",
+      "planned_payload_sha256": "0720f663d4cadf1fe727efda75bda9598628cdcabf90bb8bb446b23688a08475",
+      "incoming_relation": {
+        "record_id": "relation_project-timeline-implementation-cb12-jun2025",
+        "assertion_status": "proposed",
+        "payload_sha256": "21d4f27574db23d6d732a86fa8efb7bd6a069544f655cf2d7d2d026b8c106f26"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact Bay Parkway/Cropsey Avenue project timeline relation classifies the Late 2025-or-2026 implementation as proposed."
+    },
+    {
+      "sequence": 21,
+      "correction_id": "core-coverage-prospective-residual-21-summer-2025-implementation-feb2025-planned-20260713",
+      "record_id": "event_summer-2025-implementation-feb2025",
+      "source_id": "34th_st_enhanced_bus_priority_cb6_feb2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "34th_st_enhanced_bus_priority_cb6_feb2025#p021_c0002",
+      "event_evidence_sha256": "sha256:1b9a2f00112491fd0dbfce92e33e85479b790c68cf615826a6bf1c53ea42e3e8",
+      "prior_payload_sha256": "822e9b9ef13b8f4f901a8855adc6cd019a52fd97c996338bf339971a0b588fcb",
+      "planned_payload_sha256": "6286d844f2b2b5afd8fa879d18685718a942dba7ac3706f22d80ed13503e5ce6",
+      "incoming_relation": {
+        "record_id": "relation_project-event-summer-2025-feb2025",
+        "assertion_status": "planned",
+        "payload_sha256": "90b1de79d1f52e8d3e35761af8d85e31548a4dbc79e2700337b4ff275b7c0007"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact 34th Street project timeline relation classifies the Summer 2025 implementation as planned."
+    },
+    {
+      "sequence": 22,
+      "correction_id": "core-coverage-prospective-residual-22-summer-fall-2025-implementation-planned-20260713",
+      "record_id": "event_summer-fall-2025-implementation",
+      "source_id": "dekalb_lafayette_cb3_dec2024",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "dekalb_lafayette_cb3_dec2024#p027_c0002",
+      "event_evidence_sha256": "sha256:ecdcaf6dd8f0e4c663a5ebad6194b4e93a83e181b0faed95a4586f0e4cd03d62",
+      "prior_payload_sha256": "44c4a212618796d31c7ee80f220f1eaaec8845039f11bb1f35184bc682181efd",
+      "planned_payload_sha256": "b6dc27eda09b07662131d7f86578406b13f28f71777d9923802b0c3724f3902a",
+      "incoming_relation": {
+        "record_id": "relation_project-has-event-implementation_6",
+        "assertion_status": "planned",
+        "payload_sha256": "820c0d8534b24567f2858617450c9293e88cd5029b16c907fd39042259a0e20d"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact DeKalb/Lafayette project timeline relation classifies the Summer/Fall 2025 implementation as planned."
+    },
+    {
+      "sequence": 23,
+      "correction_id": "core-coverage-prospective-residual-23-summer2025-tentative-implementation-may2025-planned-20260713",
+      "record_id": "event_summer2025-tentative-implementation-may2025",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025#p027_c0002",
+      "event_evidence_sha256": "sha256:ddba460a3166a5e1c6eca8aa7e08a3af8d7dda0d018b74b7c5b0e8e9bfd9bfe3",
+      "prior_payload_sha256": "764bad9c655f65d611457b15188071e943c61ebcaef1e449e4bec9df5f383d7c",
+      "planned_payload_sha256": "1ac51cb01a9d72edd9888451f5017e1482ff489a4017825d2241d415aa48ad77",
+      "incoming_relation": {
+        "record_id": "relation_project-has-event-summer2025-implementation-may2025",
+        "assertion_status": "proposed",
+        "payload_sha256": "6a544e2fd2a98e7bec5b772ef9416474b1676270ea6029f29520a8546103e31e"
+      },
+      "supporting_evidence": null,
+      "basis": "The exact 116th Street project timeline relation classifies the tentative Summer 2025 implementation as proposed."
+    },
+    {
+      "sequence": 24,
+      "correction_id": "core-coverage-prospective-residual-24-tremont-busway-impl-spring2025-planned-20260713",
+      "record_id": "event_tremont-busway-impl-spring2025",
+      "source_id": "tremont_ave_bus_priority_cab4_mar2025",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "tremont_ave_bus_priority_cab4_mar2025#p034_c0005",
+      "event_evidence_sha256": "sha256:0bed32f4ba1a12c9eddf9ddc376198841178c3ce7182f1442d28788c032fcb97",
+      "event_evidence_literals": [
+        "Begin Implementation"
+      ],
+      "prior_payload_sha256": "b61ec3a7552808a27d17f8551fa96dec48c932fc08d3e5ab1ceca43bdae6c395",
+      "planned_payload_sha256": "c74376a66038884ec3c6eba654b2634470e34340f968a93e92dd5535cb4a86d0",
+      "incoming_relation": null,
+      "supporting_evidence": {
+        "evidence_id": "tremont_ave_bus_priority_cab4_mar2025#p034_c0001",
+        "evidence_sha256": "sha256:759f4c0213571addf354aadab734cf53182c7930fa752b44ed51122c728616d1",
+        "literals": [
+          "Next Steps"
+        ]
+      },
+      "basis": "The March 2025 CAB presentation lists the later March/April implementation under Next Steps."
+    },
+    {
+      "sequence": 25,
+      "correction_id": "core-coverage-prospective-residual-25-tremont-busway-implementation-spring2025-planned-20260713",
+      "record_id": "event_tremont-busway-implementation-spring2025",
+      "source_id": "tremont_ave_bus_priority_cb6_nov2024",
+      "prior_lifecycle_phase": "other",
+      "event_evidence_id": "tremont_ave_bus_priority_cb6_nov2024#p030_c0006",
+      "event_evidence_sha256": "sha256:6fb4b3ea403c4b55834f68434118176369bf0df52af7b94911edc947e4c17ca7",
+      "event_evidence_literals": [
+        "Implement Busway Spring 2025"
+      ],
+      "prior_payload_sha256": "be66ad0025b33ec27fcace771227cbf06f60a5308f9e4fd7cc8ab3971526c5b8",
+      "planned_payload_sha256": "deb951e842119cf41a064617dfe7c540360fe78b5fbb981dad95b5795412b1b5",
+      "incoming_relation": null,
+      "supporting_evidence": {
+        "evidence_id": "tremont_ave_bus_priority_cb6_nov2024#p030_c0001",
+        "evidence_sha256": "sha256:759f4c0213571addf354aadab734cf53182c7930fa752b44ed51122c728616d1",
+        "literals": [
+          "Next Steps"
+        ]
+      },
+      "basis": "The November 2024 presentation places Spring 2025 busway implementation under Next Steps."
+    },
+    {
+      "sequence": 26,
+      "correction_id": "core-coverage-prospective-residual-26-tremont-busway-launch-spring2025-planned-20260713",
+      "record_id": "event_tremont-busway-launch-spring2025",
+      "source_id": "tremont_ave_bus_priority_cab4_mar2025",
+      "prior_lifecycle_phase": "launched",
+      "event_evidence_id": "tremont_ave_bus_priority_cab4_mar2025#p034_c0005",
+      "event_evidence_sha256": "sha256:0bed32f4ba1a12c9eddf9ddc376198841178c3ce7182f1442d28788c032fcb97",
+      "event_evidence_literals": [
+        "Busway Launch"
+      ],
+      "prior_payload_sha256": "33301e94650aac72bebfe15b434da2b4825cc93316fd07adabf714210082e77d",
+      "planned_payload_sha256": "ccb77837aede5d4fe356ce0fad1434a1d3ff3588a21a6d72434c22b162279924",
+      "incoming_relation": null,
+      "supporting_evidence": {
+        "evidence_id": "tremont_ave_bus_priority_cab4_mar2025#p034_c0001",
+        "evidence_sha256": "sha256:759f4c0213571addf354aadab734cf53182c7930fa752b44ed51122c728616d1",
+        "literals": [
+          "Next Steps"
+        ]
+      },
+      "basis": "The March 2025 CAB presentation lists the later Spring 2025 busway launch under Next Steps; it is not a launch confirmation."
+    }
+  ],
+  "evidence_strength": {
+    "strong_relation_backed_event_count": 18,
+    "strong_direct_wording_event_ids": [
+      "event_bus-service-increase-summer-2025",
+      "event_meeting-doc-160441-local-summer-2025"
+    ],
+    "contextual_next_steps_event_ids": [
+      "event_busway-implementation-spring2025",
+      "event_busway-launch-spring2025",
+      "event_implementation-spring2025",
+      "event_tremont-busway-impl-spring2025",
+      "event_tremont-busway-implementation-spring2025",
+      "event_tremont-busway-launch-spring2025"
+    ],
+    "weak_spot": "The six Tremont event lines use action labels rather than an explicit planned verb. Their prospective semantics rests on the official slide heading Next Steps and a source month preceding the stated Spring 2025 milestone. Both the action block and heading block are pinned; no realized status is inferred.",
+    "anti_inference": "The real Fall 2024 Tremont queue-jump event is excluded because the same source explicitly says the signal was installed."
+  },
+  "reproducibility": {
+    "work_order_script": "scripts/curate-prospective-residual-lifecycles.ts",
+    "semantic_corrections_path": "data/semantic-corrections/corrections.jsonl",
+    "apply_flag": "--apply",
+    "applied": false,
+    "expected_patch": {
+      "op": "patch_payload",
+      "set": {
+        "lifecycle_phase": "planned"
+      }
+    }
+  }
+}

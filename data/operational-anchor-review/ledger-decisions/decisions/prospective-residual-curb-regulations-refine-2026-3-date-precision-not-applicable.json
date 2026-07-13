@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-curb-regulations-refine-2026-3-date-precision-not-applicable",
+  "gap_id": "operational-coverage:3bf6ea8b822f420eafa6d92b",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_curb-regulations-refine-2026_3 records the prospective target \"2026\", not a realized physical or service onset. Its sole incoming has_timeline_event relation is explicitly planned or proposed. Refining that forecast into a study date would substitute a planning target for operational evidence, so date recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_curb-regulations-refine-2026_3",
+      "source_id": "lexington_ave_60_st_52_st_sept2025",
+      "evidence_id": "lexington_ave_60_st_52_st_sept2025#p012_c0003",
+      "block_id": "p012_c0003"
+    },
+    {
+      "record_id": "relation_project-has-event-curb2026",
+      "source_id": "lexington_ave_60_st_52_st_sept2025",
+      "evidence_id": "lexington_ave_60_st_52_st_sept2025#p012_c0003",
+      "block_id": "p012_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}

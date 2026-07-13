@@ -129,7 +129,12 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
   `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
   `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
-  `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
+- Corrected `26` source-time implementation forecasts to the prospective `planned` lifecycle without
+  changing their dates, identities, relations, or evidence. Evidence-bound decisions terminalized all
+  `104` resulting study diagnostics as not applicable; no forecast was promoted to an occurrence. The
+  `488`-row priority ledger now has one open row and `487` terminal rows. The sole open row is the real
+  Fall 2024 Tremont/Grand Concourse Bx36 queue-jump installation, retained for separate curation and
+  exact-onset adjudication.
 
 ## 2026-07-12
 

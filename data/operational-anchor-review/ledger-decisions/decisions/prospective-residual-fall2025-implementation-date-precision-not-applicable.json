@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-fall2025-implementation-date-precision-not-applicable",
+  "gap_id": "operational-coverage:3ea94670bf85e94779dcf7e9",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_fall2025-implementation records the prospective target \"Fall 2025\", not a realized physical or service onset. Its sole incoming has_timeline_event relation is explicitly planned or proposed. Refining that forecast into a study date would substitute a planning target for operational evidence, so date recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_fall2025-implementation",
+      "source_id": "lexington_ave_60_st_52_st_sept2025",
+      "evidence_id": "lexington_ave_60_st_52_st_sept2025#p012_c0003",
+      "block_id": "p012_c0003"
+    },
+    {
+      "record_id": "relation_project-has-event-impl-fall2025",
+      "source_id": "lexington_ave_60_st_52_st_sept2025",
+      "evidence_id": "lexington_ave_60_st_52_st_sept2025#p012_c0003",
+      "block_id": "p012_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}

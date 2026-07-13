@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-summer-fall-2025-implementation-route-not-applicable",
+  "gap_id": "operational-coverage:102a6ffe2a9fadc681d86d8e",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_summer-fall-2025-implementation is a prospective planning milestone, not a realized route-level occurrence. Its sole incoming has_timeline_event relation is explicitly planned or proposed. Project or corridor route candidates are context only; assigning them to this forecast would create unsupported operational scope, so route recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_summer-fall-2025-implementation",
+      "source_id": "dekalb_lafayette_cb3_dec2024",
+      "evidence_id": "dekalb_lafayette_cb3_dec2024#p027_c0002",
+      "block_id": "p027_c0002"
+    },
+    {
+      "record_id": "relation_project-has-event-implementation_6",
+      "source_id": "dekalb_lafayette_cb3_dec2024",
+      "evidence_id": "dekalb_lafayette_cb3_dec2024#p027_c0002",
+      "block_id": "p027_c0002"
+    }
+  ],
+  "search_receipt_ids": []
+}

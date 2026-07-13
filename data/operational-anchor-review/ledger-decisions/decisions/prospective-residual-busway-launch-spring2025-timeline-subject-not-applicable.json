@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-busway-launch-spring2025-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:7aa90f3201c8a1747ee7ee9f",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_busway-launch-spring2025 is retained as source-backed prospective history, but it has no incoming timeline subject and no reviewed occurrence. Its cited forecast must not be attached to a project merely to manufacture operational scope; timeline-subject recovery for the study queue is therefore not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_busway-launch-spring2025",
+      "source_id": "tremont_ave_bus_priority_cb6_feb2025",
+      "evidence_id": "tremont_ave_bus_priority_cb6_feb2025#p034_c0005",
+      "block_id": "p034_c0005"
+    }
+  ],
+  "search_receipt_ids": []
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-summer-fall-2025-implementation-date-precision-not-applicable",
+  "gap_id": "operational-coverage:488252945cf4dca4b2c2f6ab",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_summer-fall-2025-implementation records the prospective target \"Summer/Fall 2025\", not a realized physical or service onset. Its sole incoming has_timeline_event relation is explicitly planned or proposed. Refining that forecast into a study date would substitute a planning target for operational evidence, so date recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_summer-fall-2025-implementation",
+      "source_id": "dekalb_lafayette_cb3_dec2024",
+      "evidence_id": "dekalb_lafayette_cb3_dec2024#p027_c0002",
+      "block_id": "p027_c0002"
+    },
+    {
+      "record_id": "relation_project-has-event-implementation_6",
+      "source_id": "dekalb_lafayette_cb3_dec2024",
+      "evidence_id": "dekalb_lafayette_cb3_dec2024#p027_c0002",
+      "block_id": "p027_c0002"
+    }
+  ],
+  "search_receipt_ids": []
+}

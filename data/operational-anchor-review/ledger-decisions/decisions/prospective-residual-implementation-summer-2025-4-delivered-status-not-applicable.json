@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-implementation-summer-2025-4-delivered-status-not-applicable",
+  "gap_id": "operational-coverage:0be7b2e6792ce84c817bdc9d",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_implementation-summer-2025_4 is lifecycle_phase=planned and the cited source does not report this exact milestone as delivered. Its sole incoming has_timeline_event relation is explicitly planned or proposed. Later project history must be represented by a separate retrospective event rather than retroactively converting this forecast, so delivered-status recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_implementation-summer-2025_4",
+      "source_id": "34th_st_enhanced_bus_priority_cb4_jan2025",
+      "evidence_id": "34th_st_enhanced_bus_priority_cb4_jan2025#p021_c0002",
+      "block_id": "p021_c0002"
+    },
+    {
+      "record_id": "relation_project-event-summer-2025-implementation",
+      "source_id": "34th_st_enhanced_bus_priority_cb4_jan2025",
+      "evidence_id": "34th_st_enhanced_bus_priority_cb4_jan2025#p021_c0002",
+      "block_id": "p021_c0002"
+    }
+  ],
+  "search_receipt_ids": []
+}

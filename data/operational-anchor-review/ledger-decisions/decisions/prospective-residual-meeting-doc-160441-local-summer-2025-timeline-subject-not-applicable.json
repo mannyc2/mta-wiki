@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-meeting-doc-160441-local-summer-2025-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:5b8855aed38468d65664d126",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_meeting-doc-160441-local-summer-2025 is retained as source-backed prospective history, but it has no incoming timeline subject and no reviewed occurrence. Its cited forecast must not be attached to a project merely to manufacture operational scope; timeline-subject recovery for the study queue is therefore not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_meeting-doc-160441-local-summer-2025",
+      "source_id": "meeting_doc_160441",
+      "evidence_id": "meeting_doc_160441#p001_c0013",
+      "block_id": "p001_c0013"
+    },
+    {
+      "record_id": "event_meeting-doc-160441-local-summer-2025",
+      "source_id": "meeting_doc_160441",
+      "evidence_id": "meeting_doc_160441#p005_c0006",
+      "block_id": "p005_c0006"
+    }
+  ],
+  "search_receipt_ids": []
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-implementation-fall2025-spring2026-treatment-not-applicable",
+  "gap_id": "operational-coverage:ba82c440df53b842d535b15d",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_implementation-fall2025-spring2026 is a prospective planning milestone, not a realized treatment occurrence. Its sole incoming has_timeline_event relation is explicitly planned or proposed. Proposed project components cannot be cross-joined into delivered treatment scope, so treatment recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_implementation-fall2025-spring2026",
+      "source_id": "lexington_ave_60_st_52_st_oct2025",
+      "evidence_id": "lexington_ave_60_st_52_st_oct2025#p012_c0003",
+      "block_id": "p012_c0003"
+    },
+    {
+      "record_id": "relation_project-has-timeline-event-implementation",
+      "source_id": "lexington_ave_60_st_52_st_oct2025",
+      "evidence_id": "lexington_ave_60_st_52_st_oct2025#p012_c0003",
+      "block_id": "p012_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}
