@@ -41,7 +41,7 @@ describe("QBNR work-ledger accounting", () => {
     ])).toThrow("terminal_service_end is valid only for a service_end work unit");
   });
 
-  it("keeps all six corpus service-end units pending until recovery is applied", () => {
+  it("closes all six corpus service-end units after reviewed recovery", () => {
     const ledgerPath = join(
       repoRoot,
       "data/operational-anchor-review/work-orders/qbnr-2025/route-units.jsonl",
@@ -55,10 +55,11 @@ describe("QBNR work-ledger accounting", () => {
 
     expect(serviceEnds).toHaveLength(6);
     expect(new Set(serviceEnds.map((unit) => unit.work_status))).toEqual(
-      new Set(["pending_canonical_then_terminal"]),
+      new Set(["terminal_service_end"]),
     );
-    expect(accounting.terminal_service_end_unit_count).toBe(0);
-    expect(accounting.canonical_then_terminal_pending_unit_count).toBe(6);
-    expect(accounting.remaining_change_unit_count).toBe(58);
+    expect(accounting.terminal_service_end_unit_count).toBe(6);
+    expect(accounting.canonical_then_terminal_pending_unit_count).toBe(0);
+    expect(accounting.projectable_pending_unit_count).toBe(52);
+    expect(accounting.remaining_change_unit_count).toBe(52);
   });
 });

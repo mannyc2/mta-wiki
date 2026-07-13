@@ -4,10 +4,40 @@
     "Q48": "route_q48-glen-oaks-2025"
   },
   "non_gtfs_dispositions": {
+    "route_q15a-historical-2025": {
+      "disposition": "historical_retired",
+      "reason": "The official 2025 Queens Bus Network Redesign row records that Q15A service ended on June 29, 2025; the recovered record is a historical route identity and must not compete for a current GTFS anchor.",
+      "expected_route_id": "Q15A"
+    },
+    "route_q20-2014-10-07-flushing-jamaica": {
+      "disposition": "historical_retired",
+      "reason": "The official 2025 Queens Bus Network Redesign row records that Q20A service ended on June 29, 2025 and was replaced by the distinct current Q20 identity; the historical Q20A record must not compete for that current anchor.",
+      "expected_route_id": "Q20A"
+    },
+    "route_q20b-cb12-2011": {
+      "disposition": "historical_retired",
+      "reason": "The official 2025 Queens Bus Network Redesign row records that Q20B service ended on June 27, 2025; the recovered record is a historical route identity and must not compete for a current GTFS anchor.",
+      "expected_route_id": "Q20B"
+    },
+    "route_q21-local-woodhaven-2014": {
+      "disposition": "historical_retired",
+      "reason": "The official 2025 Queens Bus Network Redesign row records that Q21 service ended on August 31, 2025; the recovered record is a historical route identity and must not compete for a current GTFS anchor.",
+      "expected_route_id": "Q21"
+    },
+    "route_q34-queens": {
+      "disposition": "historical_retired",
+      "reason": "The official 2025 Queens Bus Network Redesign row records that Q34 service ended on June 27, 2025; the recovered record is a historical route identity and must not compete for a current GTFS anchor.",
+      "expected_route_id": "Q34"
+    },
     "route_q48-serves-lga-2011": {
       "disposition": "historical_retired",
       "reason": "The official 2025 Queens Bus Network Redesign row records discontinuation of the historical LaGuardia Q48 and reuse of the Q48 designation for a distinct Glen Oaks service beginning June 30, 2025.",
       "expected_route_id": "Q48"
+    },
+    "route_qm3-201110-qbb": {
+      "disposition": "historical_retired",
+      "reason": "The official 2025 Queens Bus Network Redesign row records that QM3 service ended on June 27, 2025; the recovered record is a historical route identity and must not compete for a current GTFS anchor.",
+      "expected_route_id": "QM3"
     }
   }
 }
