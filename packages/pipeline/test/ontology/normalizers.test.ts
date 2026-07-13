@@ -57,6 +57,84 @@ describe("event lifecycle_phase", () => {
     expect(event({ event_kind: "Feasibility study" }).lifecycle_phase).toBe("studied");
   });
 
+  it("uses exact prospective evidence when lifecycle is missing or other", () => {
+    expect(
+      event(
+        {
+          event_kind: "installation",
+          description: "Installation of 3 Bus Only Signals along Flatbush Ave",
+        },
+        { raw_text: "3 Bus Only Signals are planned for Summer 2024 installation along Flatbush Ave" },
+      ).lifecycle_phase,
+    ).toBe("planned");
+    expect(
+      event({
+        event_kind: "service launch",
+        lifecycle_phase: "other",
+        description: "Bus lanes expected to be operational",
+      }).lifecycle_phase,
+    ).toBe("planned");
+    expect(
+      event(
+        { event_kind: "launch", description: "Promotional transfer policy launch" },
+        { raw_text: "To obtain Board approval to launch a promotional transfer policy beginning on June 29, 2025" },
+      ).lifecycle_phase,
+    ).toBe("proposed");
+    expect(
+      event(
+        { event_kind: "launch", lifecycle_phase: "other", description: "Citywide Bus Lane Enforcement Task Force begins" },
+        { raw_text: "The Citywide Bus Lane Enforcement Task Force, which will begin on December 4, 2023." },
+      ).lifecycle_phase,
+    ).toBe("planned");
+    expect(
+      event(
+        {
+          event_kind: "service_expansion",
+          description: "Newburgh-Beacon Bridge Shuttle expansion",
+        },
+        { raw_text: "Beginning on Tuesday, January 2, the Newburgh-Beacon Bridge Shuttle will expand bus service." },
+      ).lifecycle_phase,
+    ).toBe("planned");
+  });
+
+  it("does not silently rewrite explicit lifecycle phases during replay", () => {
+    expect(
+      event(
+        {
+          event_kind: "installation",
+          lifecycle_phase: "installed",
+          description: "Installation of 3 Bus Only Signals along Flatbush Ave",
+        },
+        { raw_text: "3 Bus Only Signals are planned for Summer 2024 installation along Flatbush Ave" },
+      ).lifecycle_phase,
+    ).toBe("installed");
+    expect(
+      event({
+        event_kind: "service launch",
+        lifecycle_phase: "launched",
+        description: "Bus lanes expected to be operational",
+      }).lifecycle_phase,
+    ).toBe("launched");
+    expect(
+      event(
+        { event_kind: "launch", lifecycle_phase: "launched", description: "Promotional transfer policy launch" },
+        { raw_text: "To obtain Board approval to launch a promotional transfer policy beginning on June 29, 2025" },
+      ).lifecycle_phase,
+    ).toBe("launched");
+    expect(
+      event(
+        { event_kind: "service_expansion", lifecycle_phase: "expanded", description: "Newburgh-Beacon Bridge Shuttle expansion" },
+        { raw_text: "Beginning on Tuesday, January 2, the Newburgh-Beacon Bridge Shuttle will expand bus service." },
+      ).lifecycle_phase,
+    ).toBe("expanded");
+
+    expect(event({ event_kind: "installation", lifecycle_phase: "installed", description: "Bus Only Signals were installed in Summer 2024." }).lifecycle_phase).toBe(
+      "installed",
+    );
+    expect(event({ event_kind: "service launch", lifecycle_phase: "launched", description: "Bus lanes became operational." }).lifecycle_phase).toBe("launched");
+    expect(event({ event_kind: "launch", lifecycle_phase: "launched", description: "Transfer policy launched after Board approval." }).lifecycle_phase).toBe("launched");
+  });
+
   it("maps concrete opening events to the launch event family", () => {
     expect(event({ event_kind: "opening" }).event_family).toBe("launch");
     expect(event({ event_kind: "station_opening" }).event_family).toBe("launch");

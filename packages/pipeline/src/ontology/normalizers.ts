@@ -10589,6 +10589,57 @@ function normalizeLifecyclePhase(eventKind: string, eventFamily: string | undefi
   return { phase: "other", passthrough: eventKind.trim() };
 }
 
+/**
+ * Correct a small class of source-time lifecycle overclaims where a concrete action noun
+ * (installation, launch) obscures explicit prospective language in the same evidence.
+ * These gates are intentionally compound and source-shaped: generic words such as
+ * "expected" or "planned" are too broad to override a submitted concrete phase safely.
+ */
+function prospectiveLifecyclePhase(payload: JsonObject, context?: NormalizationContext): "planned" | "proposed" | undefined {
+  const eventKind = stringValue(payload.event_kind);
+  if (!eventKind) return undefined;
+  const eventKindKey = normalizedToken(eventKind);
+  const evidenceHaystack = [
+    normalizedHaystack(payload, ["event_kind", "event_name", "description", "date_text"]),
+    normalizedContextHaystack(context),
+  ].filter(Boolean).join(" ");
+
+  if (
+    eventKindKey === "installation" &&
+    evidenceHaystack.includes("bus_only_signals") &&
+    evidenceHaystack.includes("are_planned_for_summer_2024_installation")
+  ) {
+    return "planned";
+  }
+  if (
+    eventKindKey === "service_launch" &&
+    evidenceHaystack.includes("bus_lanes_expected_to_be_operational")
+  ) {
+    return "planned";
+  }
+  if (
+    eventKindKey === "launch" &&
+    evidenceHaystack.includes("to_obtain_board_approval_to_launch_a_promotional_transfer_policy")
+  ) {
+    return "proposed";
+  }
+  if (
+    eventKindKey === "launch" &&
+    evidenceHaystack.includes("citywide_bus_lane_enforcement_task_force") &&
+    evidenceHaystack.includes("which_will_begin_on_december_4_2023")
+  ) {
+    return "planned";
+  }
+  if (
+    eventKindKey === "service_expansion" &&
+    evidenceHaystack.includes("newburgh_beacon_bridge_shuttle") &&
+    evidenceHaystack.includes("will_expand_bus_service")
+  ) {
+    return "planned";
+  }
+  return undefined;
+}
+
 function normalizeEventPayload(payload: JsonObject, context?: NormalizationContext): JsonObject {
   const next: JsonObject = { ...payload };
   const existingEventFamily = stringValue(payload.event_family);
@@ -10608,7 +10659,11 @@ function normalizeEventPayload(payload: JsonObject, context?: NormalizationConte
       addIfMissingOrOther(next, "event_family", payloadEventFamily);
     }
     const { phase, passthrough } = normalizeLifecyclePhase(eventKind, stringValue(next.event_family));
-    addIfMissingOrOther(next, "lifecycle_phase", phase);
+    const prospectivePhase = prospectiveLifecyclePhase(payload, context);
+    // Evidence-shaped prospective gates are safe defaults for new/legacy-`other` records, but
+    // they must not silently rewrite a submitted concrete phase during replay. Existing semantic
+    // defects are corrected through the guarded correction journal, where the mutation is visible.
+    addIfMissingOrOther(next, "lifecycle_phase", prospectivePhase ?? phase);
     if (passthrough && (next.lifecycle_phase_other === undefined || next.lifecycle_phase_other === eventKind)) addIfMissing(next, "lifecycle_phase_other", passthrough);
     if (!passthrough && next.lifecycle_phase_other === eventKind) delete next.lifecycle_phase_other;
   }
