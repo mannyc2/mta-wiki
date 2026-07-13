@@ -71,8 +71,8 @@ payload:
   route_id: "Q25"
   route_label: "Q25"
   route_name: "Q25"
-  route_record_scope: "split_candidate"
-  route_record_scope_reason: "merged_service_variant_conflict"
+  route_record_scope: "true_route"
+  route_record_scope_reason: "reviewed_current_route_historical_limited_pattern_lifecycle_compatible"
   route_type: "local bus"
   route_type_normalized: "bus"
   routes:
