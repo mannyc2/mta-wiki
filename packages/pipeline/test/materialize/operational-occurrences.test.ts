@@ -245,10 +245,44 @@ describe("operational occurrences v1", () => {
         member_treatment_families: string[];
       }>;
     };
-    expect(rows).toHaveLength(71);
-    expect(summary.candidate_projection_count).toBe(73);
+    expect(rows).toHaveLength(72);
+    expect(summary.candidate_projection_count).toBe(74);
     expect(review.decision_count).toBe(rows.length);
     expect(expectedCandidates.candidate_count).toBe(expectedCandidates.candidates.length);
+    const q48Occurrence = rows.find(
+      (row) => row.occurrence_id === "occurrence:29fc4436c22b58d52f231964",
+    );
+    expect(q48Occurrence).toMatchObject({
+      founding_key: "event:event_q48-new-service-start-2025-06-30",
+      routes: [
+        {
+          route_record_id: "route_q48-glen-oaks-2025",
+          gtfs_route_id: "Q48",
+        },
+      ],
+      provenance: {
+        event_record_ids: ["event_q48-new-service-start-2025-06-30"],
+        route_record_ids: ["route_q48-glen-oaks-2025"],
+        treatment_record_ids: [
+          "treatment_q48-glen-oaks-branch-2025",
+          "treatment_q48-limited-stops-2025",
+        ],
+      },
+    });
+    expect(JSON.stringify(q48Occurrence)).not.toContain("historical");
+    expect(
+      expectedCandidates.candidates.filter(
+        (candidate) => candidate.occurrence_id === "occurrence:29fc4436c22b58d52f231964",
+      ),
+    ).toEqual([
+      {
+        occurrence_id: "occurrence:29fc4436c22b58d52f231964",
+        route_id: "Q48",
+        treatment_kind: "bundle",
+        analysis_family: "route_redesign",
+        member_treatment_families: ["service_pattern", "bus_stop_or_boarding"],
+      },
+    ]);
     expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === "Q110")).toEqual([
       {
         occurrence_id: "occurrence:6a6f8f8e85979d872ba2bdd7",

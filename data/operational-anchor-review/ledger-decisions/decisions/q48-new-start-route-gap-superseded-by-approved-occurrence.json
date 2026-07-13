@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "q48-new-start-route-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:6a9cbdf85916dfc3b4333549",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T01:39:00.000Z",
+  "rationale": "The broad inherited Queens redesign graph is intentionally multi-route and is not a safe route-level study projection. Approved occurrence occurrence:29fc4436c22b58d52f231964 binds the new-service-start event only to route_q48-glen-oaks-2025; the historical Q48 route remains excluded, so further recovery of this broad diagnostic route gap is not applicable.",
+  "proposal_ids": [
+    "orp_qbnr_q48_lifecycle_split_2025"
+  ],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

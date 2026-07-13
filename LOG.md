@@ -59,10 +59,13 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   terminal rows. A seventh reviewed recovery promoted Q25 as one two-member bundle on only the current
   Q25 identity; the discontinued Limited service remains `service_pattern` context and does not create a
   route identity or candidate. Coverage now reports `71` occurrences, `70` eligible occurrences, `73`
-  eligible occurrence-route pairs, `268` open priority rows, and `139` terminal rows. Sixty-eight QBNR
-  change units are clause-complete, leaving `59`; Q48 is the sole pending existing-anchor row. Its pending
-  lifecycle-split proposal remains proposed and otherwise unchanged, with only its corpus fingerprint
-  refreshed after this coverage cut. Three explicit no-change rows are tracked separately.
+  eligible occurrence-route pairs, `268` open priority rows, and `139` terminal rows. An eighth reviewed
+  recovery promoted only the current Q48 Glen Oaks service start as a two-member bundle; its retired
+  historical route remains null-GTFS `historical_retired` context and does not create an occurrence or
+  candidate. Coverage now reports `72` occurrences, `71` eligible occurrences, `74` eligible
+  occurrence-route pairs, `268` open priority rows, and `141` terminal rows. Sixty-nine QBNR change units
+  are clause-complete, leaving `58`: `51` create-route units, one identity exception, and six
+  canonical-then-terminal units. Three explicit no-change rows are tracked separately.
 
 ## 2026-07-11
 
