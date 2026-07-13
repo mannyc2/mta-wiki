@@ -1,0 +1,407 @@
+{
+  "schema_version": 1,
+  "proposal_id": "orp_qbnr_q48_lifecycle_split_2025",
+  "proposal_kind": "observation_bundle",
+  "corpus_fingerprint": "95e8c09e988ab6cf977a954a086dce494bc5bf748aceb5d86e9f73309f722948",
+  "route_anchor_pin": {
+    "path": "data/exports/releases/v1-rc6/route_anchors.jsonl",
+    "release_id": "v1-rc6",
+    "sha256": "1c03e16069f933ac87bc6ee71076a0db5c45ebbdcd9aaa39dc7397d0bc1779db"
+  },
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf",
+    "operational-coverage:45dd3045070322bc90d91414",
+    "operational-coverage:a9b2bf1ff109628219637775"
+  ],
+  "source_id": "mta_queens_bus_network_redesign_service_changes",
+  "review_state": "proposed",
+  "provenance": {
+    "drafted_by": "codex-corpus-completion-2026-07-13",
+    "drafted_at": "2026-07-13T00:55:07.000Z",
+    "method": "owner_reviewed_qbnr_lifecycle_split"
+  },
+  "rationale": "The exact official MTA Q48 row at p001_b0053 (sha256:2d86bb2a28c2950f7d20c2914620b66ed3a177234eeab7a66616d68708e2977f) establishes a June 30, 2025 lifecycle boundary: the existing Q48 was discontinued and replaced by Q90, while a new Q48 began serving the former Q46 Glen Oaks branch and made limited stops on Union Turnpike west of 188 Street. The historical LaGuardia-serving Q48 remains explicitly targeted to route_q48-serves-lga-2011, while the new Glen Oaks service must be created as route_q48-glen-oaks-2025. A reviewed do-not-merge decision protects that lifecycle split before apply. Q46, Q90, and Q45 are source context only; this bundle creates no route identity or route edge for them. Route-anchor disposition and override changes remain deferred until the new route is canonical.",
+  "observations": [
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_q48_historical_qbnr_2025",
+      "label": "Q48 historical service",
+      "raw_text": "The existing Q48 will be discontinued and replaced with the new Q90.",
+      "payload": {
+        "route_id": "Q48",
+        "route_name": "Q48"
+      },
+      "expected_record_id": "route_q48-serves-lga-2011",
+      "target_record_id": "route_q48-serves-lga-2011",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The existing Q48 will be discontinued and replaced with the new Q90."
+        }
+      ]
+    },
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_q48_glen_oaks_2025",
+      "label": "Q48 Glen Oaks service",
+      "raw_text": "The new Q48 will serve the existing Glen Oaks branch of the Q46.",
+      "payload": {
+        "route_id": "Q48",
+        "route_name": "Q48",
+        "gtfs_route_id": "Q48",
+        "description": "The new Q48 serves the former Q46 Glen Oaks branch."
+      },
+      "expected_record_id": "route_q48-glen-oaks-2025",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The new Q48 will serve the existing Glen Oaks branch of the Q46."
+        }
+      ]
+    },
+    {
+      "observation_kind": "event",
+      "local_observation_id": "event_q48_historical_service_end_2025_06_30",
+      "label": "Q48 historical service end June 30, 2025",
+      "raw_text": "Changes to the Q48 took effect June 30, 2025. The existing Q48 will be discontinued and replaced with the new Q90.",
+      "payload": {
+        "event_kind": "route service end",
+        "event_family": "other",
+        "lifecycle_phase": "other",
+        "lifecycle_phase_other": "route service end",
+        "date_text": "June 30, 2025",
+        "date_normalized": "2025-06-30",
+        "date_precision": "day",
+        "description": "The existing Q48 was discontinued and replaced with Q90."
+      },
+      "expected_record_id": "event_q48-historical-service-end-2025-06-30",
+      "evidence_bindings": [
+        {
+          "role": "event_date",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "Changes to the Q48 took effect June 30, 2025."
+        },
+        {
+          "role": "lifecycle_status",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The existing Q48 will be discontinued and replaced with the new Q90."
+        }
+      ]
+    },
+    {
+      "observation_kind": "event",
+      "local_observation_id": "event_q48_new_service_start_2025_06_30",
+      "label": "Q48 Glen Oaks service start June 30, 2025",
+      "raw_text": "Changes to the Q48 took effect June 30, 2025. The new Q48 will serve the existing Glen Oaks branch of the Q46.",
+      "payload": {
+        "event_kind": "route service start",
+        "event_family": "launch",
+        "lifecycle_phase": "launched",
+        "date_text": "June 30, 2025",
+        "date_normalized": "2025-06-30",
+        "date_precision": "day",
+        "description": "The new Q48 began serving the former Q46 Glen Oaks branch."
+      },
+      "expected_record_id": "event_q48-new-service-start-2025-06-30",
+      "evidence_bindings": [
+        {
+          "role": "event_date",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "Changes to the Q48 took effect June 30, 2025."
+        },
+        {
+          "role": "lifecycle_status",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The new Q48 will serve the existing Glen Oaks branch of the Q46."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q48_historical_discontinuation_replacement_2025",
+      "label": "Q48 historical discontinuation and Q90 replacement",
+      "raw_text": "The existing Q48 will be discontinued and replaced with the new Q90.",
+      "payload": {
+        "treatment_kind": "route segment discontinuation and replacement",
+        "description": "The existing Q48 service was discontinued and replaced by Q90."
+      },
+      "expected_record_id": "treatment_q48-historical-discontinuation-replacement-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The existing Q48 will be discontinued and replaced with the new Q90."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q48_glen_oaks_branch_2025",
+      "label": "Q48 Glen Oaks branch reassignment",
+      "raw_text": "The new Q48 will serve the existing Glen Oaks branch of the Q46.",
+      "payload": {
+        "treatment_kind": "route change",
+        "description": "The new Q48 took over the former Q46 Glen Oaks branch."
+      },
+      "expected_record_id": "treatment_q48-glen-oaks-branch-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The new Q48 will serve the existing Glen Oaks branch of the Q46."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q48_limited_stops_2025",
+      "label": "Q48 limited stops on Union Turnpike",
+      "raw_text": "The new Q48 will make limited stops on Union Tpke west of 188 St.",
+      "payload": {
+        "treatment_kind": "limited stops",
+        "description": "The new Q48 makes limited stops on Union Turnpike west of 188 Street."
+      },
+      "expected_record_id": "treatment_q48-limited-stops-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The new Q48 will make limited stops on Union Tpke west of 188 St."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "local_observation_id": "relation_qbnr_2025_affects_q48_historical",
+      "label": "Queens Bus Network Redesign affects historical Q48",
+      "relation_kind": "affects_route",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "route_q48_historical_qbnr_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "Queens Bus Network Redesign discontinued the existing Q48 and replaced it with Q90.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The existing Q48 will be discontinued and replaced with the new Q90."
+        },
+        {
+          "role": "route_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The existing Q48 will be discontinued and replaced with the new Q90."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_affects_q48_current",
+      "label": "Queens Bus Network Redesign affects new Q48",
+      "relation_kind": "affects_route",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "route_q48_glen_oaks_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "Queens Bus Network Redesign established the new Q48 on the former Q46 Glen Oaks branch.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The new Q48 will serve the existing Glen Oaks branch of the Q46."
+        },
+        {
+          "role": "route_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The new Q48 will serve the existing Glen Oaks branch of the Q46."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_has_q48_historical_end_2025_06_30",
+      "label": "Queens Bus Network Redesign has historical Q48 service end",
+      "relation_kind": "has_timeline_event",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "event_q48_historical_service_end_2025_06_30"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "The existing Q48 service ended June 30, 2025.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "Changes to the Q48 took effect June 30, 2025."
+        },
+        {
+          "role": "timeline_relation",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The existing Q48 will be discontinued and replaced with the new Q90."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_has_q48_new_start_2025_06_30",
+      "label": "Queens Bus Network Redesign has new Q48 service start",
+      "relation_kind": "has_timeline_event",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "event_q48_new_service_start_2025_06_30"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "The new Q48 service on the former Q46 Glen Oaks branch began June 30, 2025.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "Changes to the Q48 took effect June 30, 2025."
+        },
+        {
+          "role": "timeline_relation",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The new Q48 will serve the existing Glen Oaks branch of the Q46."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q48_historical_discontinuation",
+      "label": "Queens Bus Network Redesign includes historical Q48 discontinuation",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q48_historical_discontinuation_replacement_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "The existing Q48 was discontinued and replaced by Q90.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The existing Q48 will be discontinued and replaced with the new Q90."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The existing Q48 will be discontinued and replaced with the new Q90."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q48_glen_oaks_branch",
+      "label": "Queens Bus Network Redesign includes Q48 Glen Oaks branch reassignment",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q48_glen_oaks_branch_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "The new Q48 took over the former Q46 Glen Oaks branch.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The new Q48 will serve the existing Glen Oaks branch of the Q46."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The new Q48 will serve the existing Glen Oaks branch of the Q46."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q48_limited_stops",
+      "label": "Queens Bus Network Redesign includes Q48 limited stops",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q48_limited_stops_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "The new Q48 makes limited stops on Union Turnpike west of 188 Street.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The new Q48 will make limited stops on Union Tpke west of 188 St."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+          "block_id": "p001_b0053",
+          "source_quote": "The new Q48 will make limited stops on Union Tpke west of 188 St."
+        }
+      ]
+    }
+  ]
+}
