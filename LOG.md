@@ -55,6 +55,17 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   occurrences, `125` study-eligible occurrences, and `140` eligible route pairs (`41` atomic, `85`
   bundles, `3` multi-route). Ten duplicate, prospective, or broad diagnostics are terminally
   superseded, reducing the `499`-row priority ledger from `233` to `223` open rows.
+- Recovered Broadway/Q70 delivery from two newly staged official city retrospectives while
+  preserving the May `Mid June` forecast as planned and the aggregate project scalar as proposed.
+  The separate installed-status event has direct `Q70+` route and center-running bus-lane scope;
+  June 10 remains only a status-as-of upper bound. An exhaustive six-source search terminally records
+  the exact onset as absent rather than fabricating a publication-date onset. Eight Fordham/Broadway
+  forecast diagnostics are also terminal `not_applicable`, leaving the `501`-row priority ledger at
+  `166` open and `335` terminal rows. Cut unpromoted audit release `v1-rc11`: manifest SHA-256
+  `b0f9323f22b0161da93a0839588deae6791d39cbe79a32750b2729e3b672aa0b`, route-anchor SHA-256
+  `27edf0a8cd219cf6281898fb30453942e044593712ed5e8f958958e8944e842f`; `LATEST` remains `v1-rc5`.
+  Publisher authority matching is now shared across export and coverage, and semantic supersedes
+  rewrite both canonical endpoints and their local-observation pointers.
 
 ## 2026-07-12
 

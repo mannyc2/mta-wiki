@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 import type { OperationalAnchorRow } from "@mta-wiki/pipeline/materialize/operational-anchors";
 import type { OperationalOccurrenceRow } from "@mta-wiki/pipeline/materialize/operational-occurrences";
+import { isOfficialPublicPublisher } from "@mta-wiki/pipeline/records/source-authority";
 
 export const OPERATIONAL_COVERAGE_SCHEMA_VERSION = 1 as const;
 export const DEFAULT_OPERATIONAL_STUDY_WINDOW = { start: "2023-04-01", end: "2026-12-31" } as const;
@@ -434,9 +435,7 @@ function officialSource(record: MtaCanonicalRecord): boolean {
     .map((field) => token(record.payload[field]))
     .filter(Boolean)
     .join(" ");
-  return /\b(?:mta|metropolitan transportation authority|new york city transit|nyc dot|new york city department of transportation|nyc department of transportation)\b/u.test(
-    publisherText,
-  );
+  return isOfficialPublicPublisher(publisherText);
 }
 
 function sourcePublishedInPriorityWindow(record: MtaCanonicalRecord): boolean {
@@ -906,12 +905,18 @@ export function buildOperationalCoverageLedger(input: OperationalCoverageInput):
         row.candidate_operational_date_normalized !== null &&
         (row.candidate_operational_date_precision === "day" || row.candidate_operational_date_precision === "month"),
     );
-    const deliveredComplete = rows.some(
-      (row) =>
-        row.temporal_role === "realized_operational" &&
-        row.lifecycle_phase !== null &&
-        realizedLifecyclePhases.has(row.lifecycle_phase),
-    );
+    const deliveredComplete = rows.some((row) => {
+      const hasRealizedLifecycle =
+        row.lifecycle_phase !== null && realizedLifecyclePhases.has(row.lifecycle_phase);
+      if (!hasRealizedLifecycle) return false;
+      if (row.temporal_role === "realized_operational") return true;
+      return (
+        row.temporal_role === "status_as_of" &&
+        row.assertion_statuses.length === 1 &&
+        row.assertion_statuses[0] === "delivered" &&
+        !row.conflict_states.includes("status_conflict")
+      );
+    });
     if (!routeComplete) addGap("route");
     if (!treatmentComplete) addGap("treatment");
     if (!dateComplete) addGap("date_precision");

@@ -70,10 +70,10 @@
       "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026",
       "evidence_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026#p011_c0003",
       "evidence_sha256": "sha256:42e3289fa8f030fe8494748b812c8c8b433fb4887f088bc652f9109284d73a47",
-      "source_date": "2026-05-28",
+      "source_date": "2026-05-07",
       "prior_lifecycle_phase": "launched",
       "corrected_lifecycle_phase": "planned",
-      "expected_queue_status": "open",
+      "expected_queue_status": "terminal",
       "basis": "The official CB5 implementation timeline says the bus lanes are expected to be operational in late Summer/Fall. It is prospective, not a launch confirmation."
     },
     {
@@ -81,10 +81,10 @@
       "source_id": "broadway_69_st_roosevelt_ave_may2026",
       "evidence_id": "broadway_69_st_roosevelt_ave_may2026#p012_c0003",
       "evidence_sha256": "sha256:45b58037c13ab29042f75b92be7029df8d016c8f98d275ba737e24932023e046",
-      "source_date": "2026-05-20",
+      "source_date": "2026-05-19",
       "prior_lifecycle_phase": "launched",
       "corrected_lifecycle_phase": "planned",
-      "expected_queue_status": "open",
+      "expected_queue_status": "terminal",
       "basis": "The official Broadway/69th Street/Roosevelt Avenue implementation timeline says the bus lanes are expected to be operational in mid-June. It is prospective, not a launch confirmation."
     },
     {

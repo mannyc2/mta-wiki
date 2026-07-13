@@ -9,6 +9,7 @@ import {
 } from "@mta-wiki/pipeline/materialize/operational-anchor-review";
 import type { RouteAnchorRow } from "@mta-wiki/pipeline/materialize/route-anchors";
 import { normalizeDateText } from "@mta-wiki/pipeline/ontology/normalizers";
+import { isOfficialPublicPublisher } from "@mta-wiki/pipeline/records/source-authority";
 
 export const OPERATIONAL_ANCHOR_SCHEMA_VERSION = 1 as const;
 
@@ -716,12 +717,6 @@ function sourceRecordIndex(records: readonly MtaCanonicalRecord[]): ReadonlyMap<
     }
   }
   return index;
-}
-
-function isOfficialPublicPublisher(value: string): boolean {
-  return /\b(?:mta|metropolitan transportation authority|new york city transit|nyc transit|nyc dot|nycdot|new york city department of transportation)\b/iu.test(
-    value,
-  );
 }
 
 function sourceAuthority(

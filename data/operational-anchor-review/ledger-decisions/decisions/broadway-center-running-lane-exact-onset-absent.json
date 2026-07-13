@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "broadway-center-running-lane-exact-onset-absent",
+  "gap_id": "operational-coverage:638d039018fabef3e9b37740",
+  "prior_verdict": "unreviewed",
+  "verdict": "absent_in_source",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T09:45:00.000Z",
+  "rationale": "The bounded staged-corpus and registry search found no official statement of the lane's exact physical activation date. The May source is explicitly prospective, and the June 10 and July captures establish only that the center-running lane had been created or recently installed. June 10 therefore remains a status-as-of upper bound, not an operational onset.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": [
+    "broadway-center-running-lane-exact-onset-search"
+  ]
+}

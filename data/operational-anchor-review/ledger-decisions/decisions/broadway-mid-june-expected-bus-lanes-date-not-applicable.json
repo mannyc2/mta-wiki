@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "broadway-mid-june-expected-bus-lanes-date-not-applicable",
+  "gap_id": "operational-coverage:4aca4d6ac43acbf2b540cfba",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T09:25:00.000Z",
+  "rationale": "'Mid June' is a forecast from the May 19 planning deck, not a realized physical activation date. Later official evidence is represented by a separate status-as-of event and does not convert this forecast into onset evidence.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_bus-lanes-operational-mid-june-2026",
+      "source_id": "broadway_69_st_roosevelt_ave_may2026",
+      "evidence_id": "broadway_69_st_roosevelt_ave_may2026#p012_c0003",
+      "block_id": "p012_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}

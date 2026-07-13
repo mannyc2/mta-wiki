@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "broadway-mid-june-expected-bus-lanes-delivered-not-applicable",
+  "gap_id": "operational-coverage:880b7121c2e7da122341bea3",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T09:25:00.000Z",
+  "rationale": "This exact event says the bus lanes were expected to be operational and its timeline edge is proposed. Delivered status belongs to the separate retrospective installation-confirmed record, not to this planning assertion.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_bus-lanes-operational-mid-june-2026",
+      "source_id": "broadway_69_st_roosevelt_ave_may2026",
+      "evidence_id": "broadway_69_st_roosevelt_ave_may2026#p012_c0003",
+      "block_id": "p012_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}

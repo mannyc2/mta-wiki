@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "broadway-mid-june-expected-bus-lanes-treatment-not-applicable",
+  "gap_id": "operational-coverage:89c748cb36f55647d3f9aaa4",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T09:25:00.000Z",
+  "rationale": "The May project bundle contains six components with different semantics and timelines. Later retrospective evidence proves only the center-running lane and is represented separately; it does not retroactively bind the entire proposed bundle to this forecast event.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_bus-lanes-operational-mid-june-2026",
+      "source_id": "broadway_69_st_roosevelt_ave_may2026",
+      "evidence_id": "broadway_69_st_roosevelt_ave_may2026#p012_c0003",
+      "block_id": "p012_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}

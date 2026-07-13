@@ -256,6 +256,9 @@ function supersedeRecord(byId: Map<string, MtaCanonicalRecord>, correction: Sema
   const survivorRecordId = correction.patch.survivor_record_id;
   if (typeof survivorRecordId !== "string" || !byId.has(survivorRecordId)) return false;
   const removedId = correction.record_id;
+  const removedRecord = byId.get(removedId);
+  const survivorRecord = byId.get(survivorRecordId);
+  if (!removedRecord || !survivorRecord) return false;
   for (const cascadeId of correction.cascade) byId.delete(cascadeId);
   byId.delete(removedId);
   for (const record of byId.values()) {
@@ -264,10 +267,16 @@ function supersedeRecord(byId: Map<string, MtaCanonicalRecord>, correction: Sema
     let changed = false;
     if (nextPayload.subject_id === removedId) {
       nextPayload.subject_id = survivorRecordId;
+      if (typeof nextPayload.subject_local_observation_id === "string") {
+        nextPayload.subject_local_observation_id = survivorRecord.local_observation_id;
+      }
       changed = true;
     }
     if (nextPayload.object_id === removedId) {
       nextPayload.object_id = survivorRecordId;
+      if (typeof nextPayload.object_local_observation_id === "string") {
+        nextPayload.object_local_observation_id = survivorRecord.local_observation_id;
+      }
       changed = true;
     }
     if (changed) record.payload = nextPayload;

@@ -553,6 +553,24 @@ describe("operational anchor export", () => {
     expect(anchor?.study_eligible).toBe(false);
   });
 
+  it("recognizes official NYC publisher aliases used by captured city sources", () => {
+    for (const publisher of [
+      "NYC DOT",
+      "New York City DOT",
+      "New York City Department of Transportation",
+      "NYC Mayor's Office",
+      "Office of the Mayor",
+    ]) {
+      const fixture = directAnchorFixture();
+      const source = fixture.records.find((candidate) => candidate.record_id === "source_source_test");
+      if (!source) throw new Error("missing test authority record");
+      source.payload.publisher = publisher;
+      const [anchor] = computeOperationalAnchors(fixture.records, fixture.routeAnchors);
+      expect(anchor?.source_authority).toBe("official_public_agency");
+      expect(anchor?.exclusion_reasons).not.toContain("untrusted_source_authority");
+    }
+  });
+
   it("requires a bounded treatment family for a scoped treatment record", () => {
     const fixture = directAnchorFixture();
     const treatment = fixture.records.find((candidate) => candidate.record_id === "treatment_bus_lane");

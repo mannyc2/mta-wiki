@@ -2868,8 +2868,7 @@
 - [[wiki/projects/project_bridgeport-waterbury-shuttle|Bridgeport/Waterbury Shuttle]] (project)
 - [[wiki/projects/project_bridges-tunnels-capital-199041|Bridges and Tunnels Capital Maintenance Projects]] (project)
 - [[wiki/projects/project_broadway-157th-220th-manhattan|Broadway, 157th Street to 220th Street Study, Manhattan]] (project)
-- [[wiki/projects/project_broadway-69th-roosevelt-queens|Broadway, 69th Street to Roosevelt Avenue Bus Lane, Queens]] (project)
-- [[wiki/projects/project_broadway-bus-priority-2026|Broadway Bus Priority]] (project)
+- [[wiki/projects/project_broadway-bus-priority-2026|Broadway, 69th Street to Roosevelt Avenue Bus Lane, Queens]] (project)
 - [[wiki/projects/project_broadway-bus-safety-157th-220th-mar2025|Broadway Bus and Safety Improvements]] (project)
 - [[wiki/projects/project_broadway-safety-mobility-improvements|Broadway Safety and Mobility Improvements]] (project)
 - [[wiki/projects/project_broadway-transit-improvements-cb8|Broadway Transit Improvements (Bronx CB8)]] (project)
@@ -7353,6 +7352,8 @@
 - [[wiki/sources/meeting_doc_98661|Faster, Cleaner, Safer: Strategic Action Plan]] (source)
 - [[wiki/sources/mta_queens_bus_network_redesign_service_changes|MTA Queens Bus Network Redesign service changes]] (source)
 - [[wiki/sources/nostrandave_map|Nostrand Avenue SBS Map]] (source)
+- [[wiki/sources/nyc_dot_current_projects_july_2026|NYC DOT Current Projects]] (source)
+- [[wiki/sources/nyc_mayor_broadway_created_june_2026|Mayor Mamdani: The World Cup Belongs to New Yorkers]] (source)
 - [[wiki/sources/nyct_itsp_solicitation_notice_2026|NYCT ITSP Solicitation Notice]] (source)
 - [[wiki/sources/nyct_key_performance_metrics_doc194001|NYCT Key Performance Metrics - December 2025]] (source)
 - [[wiki/sources/nyct_key_performance_metrics_june2025|NYCT Key Performance Metrics June 2025]] (source)
@@ -7399,8 +7400,8 @@
 ## Data-Only Records
 
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
-- event: 8072 canonical records in `data/canonical/events.jsonl`
+- event: 8073 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 21181 canonical records in `data/canonical/relations.jsonl`
+- relation: 21189 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
 - treatment_component: 2922 canonical records in `data/canonical/treatment_components.jsonl`

@@ -260,6 +260,72 @@ describe("operational coverage ledger", () => {
     ]);
   });
 
+  it("separates delivered status-as-of evidence from a still-missing operational onset", () => {
+    const statusEvent = record("event_status_as_of", "event", {
+      event_family: "implementation",
+      lifecycle_phase: "installed",
+    });
+    const source = record("source_recent", "source", {
+      publisher: "NYC DOT",
+      published_date_normalized: "2026-06-10",
+    });
+    const statusAnchor = anchor(statusEvent.record_id, undefined, {
+      temporal_role: "status_as_of",
+      raw_date: "2026-06-10",
+      normalized_date: "2026-06-10",
+      date_precision: "day",
+      candidate_operational_date_raw: null,
+      candidate_operational_date_normalized: null,
+      candidate_operational_date_precision: "unknown",
+      candidate_operational_date_source_field: null,
+      candidate_operational_dates_normalized: [],
+      status_as_of_dates: ["2026-06-10"],
+      event_family: "implementation",
+      lifecycle_phase: "installed",
+      assertion_statuses: ["delivered"],
+      exclusion_reasons: ["status_as_of_only", "missing_operational_date"],
+      study_eligible: false,
+    });
+
+    const report = buildOperationalCoverageLedger({
+      canonical_records: [source, statusEvent],
+      operational_anchor_rows: [statusAnchor],
+      operational_occurrence_rows: [],
+    });
+    expect(report.gaps.map((gap) => gap.dimension)).toEqual(["date_precision"]);
+
+    const conflicted = buildOperationalCoverageLedger({
+      canonical_records: [source, statusEvent],
+      operational_anchor_rows: [{ ...statusAnchor, conflict_states: ["status_conflict"] }],
+      operational_occurrence_rows: [],
+    });
+    expect(conflicted.gaps.map((gap) => gap.dimension).sort()).toEqual(["date_precision", "delivered_status"]);
+  });
+
+  it("uses the shared official-publisher aliases for recent priority-family sources", () => {
+    for (const publisher of ["New York City DOT", "NYC Mayor's Office", "Office of the Mayor"]) {
+      const event = record("event_recent_busway", "event", {
+        event_family: "implementation",
+        lifecycle_phase: "installed",
+        description: "Busway implementation",
+      });
+      const source = record("source_recent", "source", {
+        publisher,
+        published_date_normalized: "2026-06-10",
+        title: "Busway implementation update",
+      });
+      const report = buildOperationalCoverageLedger({
+        canonical_records: [source, event],
+        operational_anchor_rows: [],
+        operational_occurrence_rows: [],
+      });
+      const gaps = report.gaps.filter((gap) => gap.event_record_id === event.record_id);
+      expect(gaps.length).toBeGreaterThan(0);
+      expect(gaps.every((gap) => gap.priority)).toBe(true);
+      expect(gaps.every((gap) => gap.priority_basis.includes("recent_priority_family"))).toBe(true);
+    }
+  });
+
   it("keeps explicitly historical events out while prioritizing current dates and recent official family signals", () => {
     const report = buildOperationalCoverageLedger({ ...baseInput(), operational_anchor_rows: [] });
     const historical = report.gaps.find((gap) => gap.event_record_id === "event_historical");

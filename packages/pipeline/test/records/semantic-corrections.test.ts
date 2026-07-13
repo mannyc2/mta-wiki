@@ -129,13 +129,22 @@ describe("semantic corrections", () => {
     const records = [
       rec("entity_old", "entity", {}),
       rec("entity_new", "entity", {}),
-      rec("relation_old", "relation", { relation_kind: "related_to", subject_id: "entity_old", object_id: "entity_new" }),
+      rec("relation_old", "relation", {
+        relation_kind: "related_to",
+        subject_id: "entity_old",
+        subject_local_observation_id: "entity_old",
+        object_id: "entity_new",
+        object_local_observation_id: "entity_new",
+      }),
     ];
     const result = withSemanticCorrections(records, [
       correction({ correction_id: "semqa-000001", op: "supersede_record", record_id: "entity_old", patch: { survivor_record_id: "entity_new" } }),
     ]);
     expect(result.records.some((record) => record.record_id === "entity_old")).toBe(false);
-    expect(result.records.find((record) => record.record_id === "relation_old")!.payload.subject_id).toBe("entity_new");
+    const relation = result.records.find((record) => record.record_id === "relation_old")!;
+    expect(relation.payload.subject_id).toBe("entity_new");
+    expect(relation.payload.subject_local_observation_id).toBe("entity_new");
+    expect(relation.payload.object_local_observation_id).toBe("entity_new");
   });
 
   it("skips stale guards and is idempotent for guarded corrections", () => {

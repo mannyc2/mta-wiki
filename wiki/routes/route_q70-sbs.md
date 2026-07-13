@@ -8,20 +8,24 @@ source_ids:
   - "better_buses"
   - "broadway_69_st_roosevelt_ave_may2026"
   - "brt_routes_fullreport"
+  - "nyc_dot_current_projects_july_2026"
   - "q70_fare_free_service_increases_2025"
 local_observation_id: "route_q70_sbs"
 local_observation_ids:
   - "route_q70_sbs"
   - "route_q70_sbs_2025_observation"
   - "route_q70_sbs_broadway_2026"
+  - "route_q70_sbs_delivered_dot_2026"
   - "route_q70_sbs_fullreport"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T18:15:21.618Z"
+generated_at: "2026-07-13T09:13:23.846Z"
+raw_text: "Q70 SBS"
 submission_ids:
   - "sub_187836b6bcc1b8e3"
   - "sub_4b38b532a4a9646d"
   - "sub_7ec65d1e12316b80"
+  - "sub_b2fb390bafd52adb"
   - "sub_e6a437e5bdb6dc52"
 payload:
   _merged_field_values:
@@ -48,7 +52,7 @@ payload:
   borough: "Queens"
   borough_normalized: "queens"
   description: "Q70 Select Bus Service from LaGuardia Airport to the Jackson Heights – Roosevelt Avenue subway station and bus terminal."
-  route_id: "Q70"
+  route_id: "Q70-SBS"
   route_label: "Q70 Select Bus Service"
   route_name: "Q70 SBS"
   route_record_scope: "true_route"
@@ -101,6 +105,16 @@ evidence_refs:
     source_id: "brt_routes_fullreport"
     source_path: "raw/sources/brt_routes_fullreport/blocks.jsonl"
     text_sha256: "sha256:c0a58dbfc174f76cd72ab4d10249b2d74d6492ad57b93d603dc08b8760db6ab8"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0631"
+    evidence_id: "nyc_dot_current_projects_july_2026#p001_b0631"
+    page_number: 1
+    role: "route_identity"
+    source_id: "nyc_dot_current_projects_july_2026"
+    source_path: "raw/sources/nyc_dot_current_projects_july_2026/blocks.jsonl"
+    source_quote: "Q70 SBS"
+    text_sha256: "sha256:ba1026d7e34c7d25733c60ffe77287249bd0a9f7ea1ebb79ccad274115142166"
     text_source: "raw_text"
 ---
 
