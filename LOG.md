@@ -93,6 +93,20 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   release `v1-rc13`: manifest SHA-256
   `81ecfa2de1f2f52d9ef41617f49be7fab9f8a4b571a28c04a09e349c4c4f89bc`, route-anchor SHA-256
   `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`; `LATEST` remains `v1-rc5`.
+- Recovered three additional study surfaces without weakening the evidence gates: delivered Summer 2024
+  DeKalb/Lafayette temporary bus lanes now have direct B38 scope while an exhaustive receipt preserves the
+  exact onset as absent; the eight-route express-bus weekday trip package is one realized March 2025
+  occurrence; and the B12 Route Improvement Initiative is one January 2024 program-level service-management
+  occurrence whose detailed tactics explicitly do not inherit that onset. Provenance-preserving semantic
+  supersession now retains both source/local identities, submissions, and evidence when reviewed
+  source-scoped treatment duplicates are folded. The projection contains `131` occurrences, `130`
+  study-eligible occurrences, and `162` eligible route pairs; the `510`-row priority ledger has `155` open
+  and `355` terminal rows.
+- Cut byte-reproducible unpromoted release `v1-rc14` from generator commit `4d28f1a8`: manifest SHA-256
+  `77f97af3523041f5f6ae9ed31ca3e38db0687e0d8efbe16ee81e36a108614994`. All `20` addressed files were
+  independently reproduced byte-for-byte and reverified against the manifest; route anchors remain unchanged
+  at SHA-256 `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
+  `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
 
 ## 2026-07-12
 
