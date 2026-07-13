@@ -4780,6 +4780,9 @@
 - [[wiki/routes/route_qm44-qbnr-2025|QM44]] (route)
 - [[wiki/routes/route_qm5-qbnr-2025|QM5]] (route)
 - [[wiki/routes/route_qm6-qbnr-2025|QM6]] (route)
+- [[wiki/routes/route_qm63-qbnr-2025|QM63]] (route)
+- [[wiki/routes/route_qm64-qbnr-2025|QM64]] (route)
+- [[wiki/routes/route_qm68-qbnr-2025|QM68]] (route)
 - [[wiki/routes/route_qm7|QM7]] (route)
 - [[wiki/routes/route_qm8-qbnr-2025|QM8]] (route)
 - [[wiki/routes/route_r-nyct-2025|R Subway Line]] (route)
@@ -7392,8 +7395,8 @@
 ## Data-Only Records
 
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
-- event: 8070 canonical records in `data/canonical/events.jsonl`
+- event: 8073 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 21149 canonical records in `data/canonical/relations.jsonl`
+- relation: 21171 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
-- treatment_component: 2903 canonical records in `data/canonical/treatment_components.jsonl`
+- treatment_component: 2919 canonical records in `data/canonical/treatment_components.jsonl`
