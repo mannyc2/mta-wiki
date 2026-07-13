@@ -3259,6 +3259,33 @@
       },
       {
         "record_ids": [
+          "route_q15a-historical-2025",
+          "route_q15-qbnr-2025"
+        ],
+        "reason": "Official 2025 Queens Bus Network Redesign evidence ends Q15A while continuing Q15 over part of the former Q15A routing. Shared routing is lifecycle continuity, not authority to merge the discontinued Q15A route identity with the current Q15 route identity.",
+        "source_decision": "data/quality/acquisition/receipts/q15a-q20a-terminal-route-identity-2025.json#q15a_vs_q15",
+        "reviewed_at": "2026-07-13T12:00:00Z"
+      },
+      {
+        "record_ids": [
+          "route_q20-2014-10-07-flushing-jamaica",
+          "route_q20-qbnr-2025"
+        ],
+        "reason": "Official 2025 Queens Bus Network Redesign evidence says Q20A ended and was replaced by a newly started Q20 that mostly follows the same routing. Replacement and routing inheritance are lifecycle relations, not same-route identity.",
+        "source_decision": "data/quality/acquisition/receipts/q15a-q20a-terminal-route-identity-2025.json#q20a_vs_q20b_and_q20",
+        "reviewed_at": "2026-07-13T12:00:00Z"
+      },
+      {
+        "record_ids": [
+          "route_q20-2014-10-07-flushing-jamaica",
+          "route_q20b-cb12-2011"
+        ],
+        "reason": "Q20A and Q20B are separately named historical route branches with separate canonical route identities and distinct service-end rows in the official 2025 redesign source. Older Q20A/B bundle literals are context, not merge authority.",
+        "source_decision": "data/quality/acquisition/receipts/q15a-q20a-terminal-route-identity-2025.json#q20a_vs_q20b_and_q20",
+        "reviewed_at": "2026-07-13T12:00:00Z"
+      },
+      {
+        "record_ids": [
           "route_q26-lga-2012",
           "route_q48-serves-lga-2011"
         ],

@@ -109,6 +109,49 @@ function records(...routes: MtaCanonicalRecord[]): MtaCanonicalRecord[] {
 
 const q3Route = record("route_q3", "route", { route_id: "Q3", route_name: "Q3" }, "A display name that is not used for identity");
 
+function terminalQ15AUnit() {
+  const source = block(
+    "p001_b0018",
+    "Q15A | Q15A service ended June 29, 2025. | The Q15A will be discontinued. | For service on 150 St, take the Q15. For service along 154 St, take the new Q61 . | Get more details on Q15 service. | View the new Q15 timetable.",
+  );
+  const unit: QbnrRecoveryUnitSpec = {
+    source_block_ids: [source.block_id],
+    source_block_sha256s: [source.raw_text_sha256],
+    source_route_labels: ["Q15A"],
+    route_label: "Q15A",
+    route_resolution: {
+      mode: "create",
+      local_observation_id: "route_q15a_historical_2025",
+      expected_record_id: "route_q15a-historical-2025",
+    },
+    study_disposition: { status: "excluded", reason: "route service ended before the current GTFS feed" },
+    event_kind: "end",
+    occurrence_shape: "atomic",
+    clauses: [{
+      clause_kind: "treatment",
+      id: "service_discontinuation",
+      label: "Q15A service discontinuation",
+      source_quote: "The Q15A will be discontinued.",
+      treatment_kind: "service discontinuation",
+      expected_treatment_family: "service_pattern",
+      description: "Q15A service was discontinued.",
+    }, {
+      clause_kind: "context",
+      source_quote: "For service on 150 St, take the Q15. For service along 154 St, take the new Q61 .",
+      review_rationale: "Alternative-service context is not a treatment on the ended route.",
+    }, {
+      clause_kind: "context",
+      source_quote: "Get more details on Q15 service.",
+      review_rationale: "Navigation text.",
+    }, {
+      clause_kind: "context",
+      source_quote: "View the new Q15 timetable.",
+      review_rationale: "Navigation text.",
+    }],
+  };
+  return { source, unit };
+}
+
 describe("QBNR recovery batch expander", () => {
   it("expands one exact atomic row into the current deterministic proposal contract", () => {
     const proposal = expandQbnrRecoveryBatch(spec(), { blocks: [q3Block], records: records(q3Route) });
@@ -357,5 +400,47 @@ describe("QBNR recovery batch expander", () => {
     expect(created.observations[0]?.target_record_id).toBeUndefined();
     expect(() => expandQbnrRecoveryBatch(spec(create), { blocks: [q3Block], records: records(q3Route) }))
       .toThrow("requests route creation but canonical route route_q3 already identifies Q3");
+  });
+
+  it("permits an explicit deterministic create identity only for an excluded end unit", () => {
+    const terminal = terminalQ15AUnit();
+    const proposal = expandQbnrRecoveryBatch(spec(terminal.unit), {
+      blocks: [terminal.source],
+      records: records(),
+    });
+    expect(proposal.observations[0]).toMatchObject({
+      observation_kind: "route",
+      local_observation_id: "route_q15a_historical_2025",
+      expected_record_id: "route_q15a-historical-2025",
+    });
+
+    const mismatched = terminalQ15AUnit();
+    if (mismatched.unit.route_resolution.mode !== "create" || !("expected_record_id" in mismatched.unit.route_resolution)) {
+      throw new Error("fixture setup failed");
+    }
+    mismatched.unit.route_resolution.expected_record_id = "route_q15a-wrong";
+    expect(() => expandQbnrRecoveryBatch(spec(mismatched.unit), {
+      blocks: [mismatched.source],
+      records: records(),
+    })).toThrow("does not match deterministic canonical route id route_q15a-historical-2025");
+
+    const partial = terminalQ15AUnit();
+    partial.unit.route_resolution = {
+      mode: "create",
+      local_observation_id: "route_q15a_historical_2025",
+    } as QbnrRecoveryUnitSpec["route_resolution"];
+    expect(() => expandQbnrRecoveryBatch(spec(partial.unit), {
+      blocks: [partial.source],
+      records: records(),
+    })).toThrow("requires both local_observation_id and expected_record_id");
+
+    const ordinary = atomicQ3Unit();
+    ordinary.route_resolution = {
+      mode: "create",
+      local_observation_id: "route_q3_custom",
+      expected_record_id: "route_q3-custom",
+    };
+    expect(() => expandQbnrRecoveryBatch(spec(ordinary), { blocks: [q3Block], records: records() }))
+      .toThrow("allowed only for excluded end units");
   });
 });

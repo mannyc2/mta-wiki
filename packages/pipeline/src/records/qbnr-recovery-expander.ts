@@ -19,7 +19,8 @@ export type QbnrOccurrenceShape = "atomic" | "bundle";
 
 export type QbnrRouteResolution =
   | { mode: "target"; target_record_id: string }
-  | { mode: "create" };
+  | { mode: "create" }
+  | { mode: "create"; local_observation_id: string; expected_record_id: string };
 
 export type QbnrStudyDisposition =
   | { status: "projectable"; gtfs_route_id: string }
@@ -114,7 +115,7 @@ function fail(message: string): never {
   throw new Error(`Invalid QBNR recovery batch: ${message}`);
 }
 
-function nonEmpty(value: string | undefined, path: string): string {
+function nonEmpty(value: unknown, path: string): string {
   if (typeof value !== "string" || !value.trim()) fail(`${path} must be a non-empty string`);
   return value.trim();
 }
@@ -282,7 +283,23 @@ function routeObservation(
   if (disposition.status === "excluded") nonEmpty(disposition.reason, `${path}.study_disposition.reason`);
   if (disposition.status !== "projectable" && disposition.status !== "excluded") fail(`${path}.study_disposition.status is unsupported`);
 
-  const localObservationId = `route_${slug(unit.route_label)}_qbnr_${year}`.replace(/-/gu, "_");
+  const resolution = unit.route_resolution as QbnrRouteResolution & Record<string, unknown>;
+  const hasExplicitLocalId = Object.hasOwn(resolution, "local_observation_id");
+  const hasExplicitExpectedId = Object.hasOwn(resolution, "expected_record_id");
+  if (hasExplicitLocalId !== hasExplicitExpectedId) {
+    fail(`${path}.route_resolution explicit create identity requires both local_observation_id and expected_record_id`);
+  }
+  if (hasExplicitLocalId && (
+    resolution.mode !== "create"
+    || unit.event_kind !== "end"
+    || disposition.status !== "excluded"
+  )) {
+    fail(`${path}.route_resolution explicit create identity is allowed only for excluded end units`);
+  }
+
+  const localObservationId = hasExplicitLocalId
+    ? nonEmpty(resolution.local_observation_id, `${path}.route_resolution.local_observation_id`)
+    : `route_${slug(unit.route_label)}_qbnr_${year}`.replace(/-/gu, "_");
   const payload: JsonObject = {
     route_id: unit.route_label,
     route_name: unit.route_label,
@@ -296,8 +313,8 @@ function routeObservation(
     payload,
   };
 
-  if (unit.route_resolution.mode === "target") {
-    const targetId = nonEmpty(unit.route_resolution.target_record_id, `${path}.route_resolution.target_record_id`);
+  if (resolution.mode === "target") {
+    const targetId = nonEmpty(resolution.target_record_id, `${path}.route_resolution.target_record_id`);
     const target = records.find((record) => record.record_id === targetId);
     if (!target) fail(`${path} target route ${targetId} does not exist`);
     if (target.record_kind !== "route") fail(`${path} target ${targetId} has kind ${target.record_kind}, expected route`);
@@ -311,10 +328,16 @@ function routeObservation(
       evidence_bindings: [evidence(block, "route_identity", unit.route_label)],
     };
   }
-  if (unit.route_resolution.mode !== "create") fail(`${path}.route_resolution.mode is unsupported`);
+  if (resolution.mode !== "create") fail(`${path}.route_resolution.mode is unsupported`);
   const existingIdentity = records.find((record) => record.record_kind === "route" && routePayloadSurfaces(record).has(routeSurface(unit.route_label)));
   if (existingIdentity) fail(`${path} requests route creation but canonical route ${existingIdentity.record_id} already identifies ${unit.route_label}`);
-  const expected = expectedRecordId(base);
+  const derivedExpected = expectedRecordId(base);
+  const expected = hasExplicitExpectedId
+    ? nonEmpty(resolution.expected_record_id, `${path}.route_resolution.expected_record_id`)
+    : derivedExpected;
+  if (expected !== derivedExpected) {
+    fail(`${path}.route_resolution.expected_record_id ${expected} does not match deterministic canonical route id ${derivedExpected}`);
+  }
   if (records.some((record) => record.record_id === expected)) fail(`${path} generated route record ${expected} already exists; use target mode`);
   return {
     ...base,

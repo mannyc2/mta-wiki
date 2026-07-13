@@ -6,6 +6,7 @@
   "actionable_change_unit_count": 127,
   "explicit_no_change_unit_count": 3,
   "completed_occurrence_unit_count": 69,
+  "terminal_service_end_unit_count": 0,
   "remaining_change_unit_count": 58,
   "projectable_pending_unit_count": 52,
   "canonical_then_terminal_pending_unit_count": 6,

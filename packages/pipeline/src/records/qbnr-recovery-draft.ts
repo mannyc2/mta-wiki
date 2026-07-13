@@ -80,8 +80,18 @@ function routeResolution(value: unknown, path: string): QbnrRouteResolution {
   const parsed = object(value, path);
   const mode = string(parsed.mode, `${path}.mode`);
   if (mode === "create") {
-    exactFields(parsed, ["mode"], path);
-    return { mode };
+    exactFields(parsed, ["mode", "local_observation_id", "expected_record_id"], path);
+    const hasLocalId = Object.hasOwn(parsed, "local_observation_id");
+    const hasExpectedId = Object.hasOwn(parsed, "expected_record_id");
+    if (hasLocalId !== hasExpectedId) {
+      fail(`${path} explicit create identity requires both local_observation_id and expected_record_id`);
+    }
+    if (!hasLocalId) return { mode };
+    return {
+      mode,
+      local_observation_id: string(parsed.local_observation_id, `${path}.local_observation_id`),
+      expected_record_id: string(parsed.expected_record_id, `${path}.expected_record_id`),
+    };
   }
   if (mode === "target") {
     exactFields(parsed, ["mode", "target_record_id"], path);
@@ -174,13 +184,22 @@ function unit(value: unknown, path: string): QbnrRecoveryUnitSpec {
   const sourceBlockSha256s = strings(parsed.source_block_sha256s, `${path}.source_block_sha256s`);
   const sourceRouteLabels = strings(parsed.source_route_labels, `${path}.source_route_labels`);
   uniqueStrings(sourceBlockIds, `${path}.source_block_ids`);
+  const parsedRouteResolution = routeResolution(parsed.route_resolution, `${path}.route_resolution`);
+  const parsedStudyDisposition = studyDisposition(parsed.study_disposition, `${path}.study_disposition`);
+  if (
+    parsedRouteResolution.mode === "create"
+    && "local_observation_id" in parsedRouteResolution
+    && (eventKind !== "end" || parsedStudyDisposition.status !== "excluded")
+  ) {
+    fail(`${path}.route_resolution explicit create identity is allowed only for excluded end units`);
+  }
   return {
     source_block_ids: sourceBlockIds,
     source_block_sha256s: sourceBlockSha256s,
     source_route_labels: sourceRouteLabels,
     route_label: string(parsed.route_label, `${path}.route_label`),
-    route_resolution: routeResolution(parsed.route_resolution, `${path}.route_resolution`),
-    study_disposition: studyDisposition(parsed.study_disposition, `${path}.study_disposition`),
+    route_resolution: parsedRouteResolution,
+    study_disposition: parsedStudyDisposition,
     event_kind: eventKind as QbnrRecoveryUnitSpec["event_kind"],
     occurrence_shape: occurrenceShape,
     clauses: parsed.clauses.map((item, index) => clause(item, `${path}.clauses[${index}]`)),

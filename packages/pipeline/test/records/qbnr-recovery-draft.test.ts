@@ -7,11 +7,13 @@ import type { JsonObject, MtaCanonicalRecord, StagedSourceBlock } from "@mta-wik
 import type { RouteAnchorRow } from "@mta-wiki/pipeline/materialize/route-anchors";
 import {
   draftQbnrRecoveryProposalFromFile,
+  parseQbnrRecoveryBatchSpec,
   type QbnrRecoveryDraftOptions,
 } from "@mta-wiki/pipeline/records/qbnr-recovery-draft";
 import {
   QBNR_SERVICE_CHANGES_SOURCE_ID,
   type QbnrRecoveryBatchSpec,
+  type QbnrRecoveryUnitSpec,
 } from "@mta-wiki/pipeline/records/qbnr-recovery-expander";
 
 const fingerprint = "a".repeat(64);
@@ -138,6 +140,71 @@ function fixture() {
   return { rootDir, block, spec, specPath, options };
 }
 
+function terminalCreateFixture() {
+  const created = fixture();
+  const rawText = "Q15A | Q15A service ended June 29, 2025. | The Q15A will be discontinued. | For service on 150 St, take the Q15. For service along 154 St, take the new Q61 . | Get more details on Q15 service. | View the new Q15 timetable.";
+  const hash = sha256(rawText);
+  const terminalBlock: StagedSourceBlock = {
+    ...created.block,
+    block_id: "p001_b0018",
+    reading_order: 18,
+    raw_end_char: rawText.length,
+    raw_text: rawText,
+    normalized_text: rawText,
+    raw_text_sha256: hash,
+    normalized_text_sha256: hash,
+  };
+  const terminalUnit: QbnrRecoveryUnitSpec = {
+    source_block_ids: [terminalBlock.block_id],
+    source_block_sha256s: [terminalBlock.raw_text_sha256],
+    source_route_labels: ["Q15A"],
+    route_label: "Q15A",
+    route_resolution: {
+      mode: "create",
+      local_observation_id: "route_q15a_historical_2025",
+      expected_record_id: "route_q15a-historical-2025",
+    },
+    study_disposition: { status: "excluded", reason: "route service ended before the current GTFS feed" },
+    event_kind: "end",
+    occurrence_shape: "atomic",
+    clauses: [{
+      clause_kind: "treatment",
+      id: "service_discontinuation",
+      label: "Q15A service discontinuation",
+      source_quote: "The Q15A will be discontinued.",
+      treatment_kind: "service discontinuation",
+      expected_treatment_family: "service_pattern",
+      description: "Q15A service was discontinued.",
+    }, {
+      clause_kind: "context",
+      source_quote: "For service on 150 St, take the Q15. For service along 154 St, take the new Q61 .",
+      review_rationale: "Alternative-service context is not a treatment on the ended route.",
+    }, {
+      clause_kind: "context",
+      source_quote: "Get more details on Q15 service.",
+      review_rationale: "Navigation text.",
+    }, {
+      clause_kind: "context",
+      source_quote: "View the new Q15 timetable.",
+      review_rationale: "Navigation text.",
+    }],
+  };
+  created.spec.units = [terminalUnit];
+  created.spec.rationale = "Exact terminal Q15A row recovery fixture.";
+  created.options.blocks = [terminalBlock];
+  created.options.records = created.options.records!.filter((candidate) => candidate.record_kind !== "route");
+  created.options.routeAnchors = [];
+  writeFileSync(join(
+    created.rootDir,
+    "raw",
+    "sources",
+    QBNR_SERVICE_CHANGES_SOURCE_ID,
+    "blocks.jsonl",
+  ), `${JSON.stringify(terminalBlock)}\n`, "utf8");
+  writeFileSync(created.specPath, `${JSON.stringify(created.spec, null, 2)}\n`, "utf8");
+  return { ...created, block: terminalBlock };
+}
+
 describe("QBNR recovery proposal draft wrapper", () => {
   it("writes exactly one deterministic proposed artifact into the observation queue", () => {
     const first = fixture();
@@ -229,6 +296,53 @@ describe("QBNR recovery proposal draft wrapper", () => {
     const result = draftQbnrRecoveryProposalFromFile(created.specPath, created.options);
     expect(result.proposal.observations[0]).toMatchObject({
       observation_kind: "route",
+      expected_record_id: "route_q3-qbnr-2025",
+    });
+  });
+
+  it("parses the complete terminal create identity pair and rejects partial or ordinary use", () => {
+    const terminal = terminalCreateFixture();
+    expect(parseQbnrRecoveryBatchSpec(terminal.spec).units[0]!.route_resolution).toEqual({
+      mode: "create",
+      local_observation_id: "route_q15a_historical_2025",
+      expected_record_id: "route_q15a-historical-2025",
+    });
+
+    const partial = structuredClone(terminal.spec);
+    partial.units[0]!.route_resolution = {
+      mode: "create",
+      local_observation_id: "route_q15a_historical_2025",
+    } as QbnrRecoveryUnitSpec["route_resolution"];
+    expect(() => parseQbnrRecoveryBatchSpec(partial)).toThrow(
+      "requires both local_observation_id and expected_record_id",
+    );
+
+    const ordinary = fixture().spec;
+    ordinary.units[0]!.route_resolution = {
+      mode: "create",
+      local_observation_id: "route_q3_custom",
+      expected_record_id: "route_q3-custom",
+    };
+    expect(() => parseQbnrRecoveryBatchSpec(ordinary)).toThrow("allowed only for excluded end units");
+  });
+
+  it("drafts the reviewed terminal create identity without changing ordinary create IDs", () => {
+    const terminal = terminalCreateFixture();
+    const result = draftQbnrRecoveryProposalFromFile(terminal.specPath, terminal.options);
+    expect(result.proposal.observations[0]).toMatchObject({
+      observation_kind: "route",
+      local_observation_id: "route_q15a_historical_2025",
+      expected_record_id: "route_q15a-historical-2025",
+    });
+
+    const ordinary = fixture();
+    ordinary.spec.units[0]!.route_resolution = { mode: "create" };
+    writeFileSync(ordinary.specPath, JSON.stringify(ordinary.spec), "utf8");
+    ordinary.options.records = ordinary.options.records!.filter((candidate) => candidate.record_kind !== "route");
+    ordinary.options.routeAnchors = [];
+    const ordinaryResult = draftQbnrRecoveryProposalFromFile(ordinary.specPath, ordinary.options);
+    expect(ordinaryResult.proposal.observations[0]).toMatchObject({
+      local_observation_id: "route_q3_qbnr_2025",
       expected_record_id: "route_q3-qbnr-2025",
     });
   });

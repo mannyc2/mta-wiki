@@ -31,5 +31,8 @@ describe("current identity override guardrails", () => {
     expect(routePairs.has(identityPairKey("route_b46-local-2012", "route_b46-local-limited-20110915"))).toBe(true);
     expect(routePairs.has(identityPairKey("route_able-s79-sbs", "route_s79-hylan-2010"))).toBe(true);
     expect(routePairs.has(identityPairKey("route_sim23-madison-ave-cb6-jun2025", "route_sim23-sim24-express-bus"))).toBe(true);
+    expect(routePairs.has(identityPairKey("route_q15a-historical-2025", "route_q15-qbnr-2025"))).toBe(true);
+    expect(routePairs.has(identityPairKey("route_q20-2014-10-07-flushing-jamaica", "route_q20b-cb12-2011"))).toBe(true);
+    expect(routePairs.has(identityPairKey("route_q20-2014-10-07-flushing-jamaica", "route_q20-qbnr-2025"))).toBe(true);
   });
 });

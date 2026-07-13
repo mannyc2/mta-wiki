@@ -12,6 +12,14 @@ import {
   readRouteAnchorOverrides,
   type GtfsRoute,
 } from "../packages/pipeline/src/materialize/route-anchors";
+import {
+  summarizeQbnrWorkLedger,
+  type QbnrWorkStatus,
+} from "../packages/pipeline/src/records/qbnr-work-ledger";
+import {
+  applyQbnrTerminalServiceEndDecisions,
+  loadQbnrTerminalServiceEndDecisionStore,
+} from "../packages/pipeline/src/records/qbnr-terminal-service-end-decisions";
 
 const SOURCE_ID = "mta_queens_bus_network_redesign_service_changes";
 const OUTPUT_DIR = join(
@@ -23,15 +31,6 @@ const OUTPUT_DIR = join(
 );
 
 type EventKind = "no_change" | "route_rename" | "service_change" | "service_end" | "service_start";
-type WorkStatus =
-  | "completed_occurrence"
-  | "pending_canonical_then_terminal"
-  | "pending_create_route"
-  | "pending_existing_anchor"
-  | "pending_identity_exception"
-  | "partial_occurrence_needs_enrichment"
-  | "terminal_no_change";
-
 type SourceRow = {
   block: StagedSourceBlock;
   route_label: string;
@@ -51,8 +50,10 @@ type WorkUnit = {
   route_label: string;
   event_kind: EventKind;
   effective_date: string | null;
-  work_status: WorkStatus;
+  work_status: QbnrWorkStatus;
   canonical_route_record_id: string | null;
+  canonical_event_record_id?: string | undefined;
+  terminal_service_end_decision_id?: string | undefined;
   identity_exception_record_id: string | null;
   gtfs_route_id: string | null;
   occurrence_id: string | null;
@@ -214,7 +215,7 @@ const q52Exception = {
 
 const incompleteOccurrenceReasons: Record<string, string> = {};
 
-const units: WorkUnit[] = rowGroups(sourceRows()).map((group) => {
+const generatedUnits: WorkUnit[] = rowGroups(sourceRows()).map((group) => {
   const first = group[0]!;
   const routeLabel = currentRouteLabel(group);
   const directGtfs = gtfsByShortName.get(normalizedRouteLabel(routeLabel));
@@ -224,7 +225,7 @@ const units: WorkUnit[] = rowGroups(sourceRows()).map((group) => {
   const gtfsRouteId = directGtfs?.route_id ?? identityException?.gtfs_route_id ?? null;
   const anchor = gtfsRouteId ? routeAnchors.get(gtfsRouteId) : undefined;
   const occurrenceId = occurrenceByRouteLabel.get(normalizedRouteLabel(routeLabel)) ?? null;
-  let workStatus: WorkStatus;
+  let workStatus: QbnrWorkStatus;
   const notes: string[] = [];
   if (first.event_kind === "no_change") {
     workStatus = "terminal_no_change";
@@ -271,34 +272,21 @@ const units: WorkUnit[] = rowGroups(sourceRows()).map((group) => {
   };
 });
 
-const countsByStatus = Object.fromEntries(
-  [...new Set(units.map((unit) => unit.work_status))]
-    .sort()
-    .map((status) => [status, units.filter((unit) => unit.work_status === status).length]),
+const terminalServiceEndDecisionStore = loadQbnrTerminalServiceEndDecisionStore();
+const units = applyQbnrTerminalServiceEndDecisions(
+  generatedUnits,
+  terminalServiceEndDecisionStore.decisions,
+  records,
 );
-const changeUnits = units.filter((unit) => unit.event_kind !== "no_change");
+
 const ledgerBytes = units.map((unit) => stableJson(unit as unknown as JsonValue)).join("\n") + "\n";
+const accounting = summarizeQbnrWorkLedger(units);
 const summary = {
   schema_version: 1,
   source_id: SOURCE_ID,
   source_row_count: sourceRows().length,
   deduplicated_unit_count: units.length,
-  actionable_change_unit_count: changeUnits.length,
-  explicit_no_change_unit_count: units.filter((unit) => unit.event_kind === "no_change").length,
-  completed_occurrence_unit_count: units.filter((unit) => unit.work_status === "completed_occurrence").length,
-  remaining_change_unit_count: changeUnits.filter((unit) => unit.work_status !== "completed_occurrence").length,
-  projectable_pending_unit_count: units.filter((unit) =>
-    [
-      "partial_occurrence_needs_enrichment",
-      "pending_existing_anchor",
-      "pending_create_route",
-      "pending_identity_exception",
-    ].includes(unit.work_status)
-  ).length,
-  canonical_then_terminal_pending_unit_count: units.filter(
-    (unit) => unit.work_status === "pending_canonical_then_terminal",
-  ).length,
-  counts_by_status: countsByStatus,
+  ...accounting,
   ledger_sha256: createHash("sha256").update(ledgerBytes).digest("hex"),
 };
 
