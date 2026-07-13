@@ -107,6 +107,18 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   independently reproduced byte-for-byte and reverified against the manifest; route anchors remain unchanged
   at SHA-256 `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
   `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
+- Recovered the bounded Flatbush Avenue Phase 1 center-running bus-lane installation from an official
+  September 25, 2025 NYC DOT start announcement and the April 2026 delivery retrospective. One approved
+  month-precision occurrence carries only B41, B67, and the Livingston Street-to-State Street atomic
+  `bus_lane`; the separate Fall completion milestone and wider Phase 2 bundle remain non-duplicative history.
+  Seven duplicate planning events were provenance-folded, and all `21` residual Phase 1/planning diagnostics
+  are terminal. The projection now contains `132` occurrences, `131` eligible occurrences, and `164` eligible
+  route pairs; the `483`-row priority ledger has `107` open and `376` terminal rows.
+- Cut byte-reproducible unpromoted release `v1-rc15` from generator commit `44f0c888`: manifest SHA-256
+  `cb755c2a67460188d2286337dddc13c72e827ccebd2a2616bdc828111a2be83a`. All `20` addressed files were
+  independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
+  `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
 
 ## 2026-07-12
 
