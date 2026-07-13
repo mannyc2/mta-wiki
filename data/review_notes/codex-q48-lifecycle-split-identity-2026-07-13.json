@@ -1,0 +1,41 @@
+{
+  "note_id": "q48-lifecycle-split-dnm",
+  "created_at": "2026-07-13T00:55:07.000Z",
+  "kind": "reviewed_future_record_do_not_merge",
+  "status": "reviewed_pre_apply",
+  "scope": "Q48 route identity across the June 30, 2025 Queens Bus Network Redesign service change",
+  "existing_record_id": "route_q48-serves-lga-2011",
+  "future_record_id": "route_q48-glen-oaks-2025",
+  "deterministic_identity_input": {
+    "observation_kind": "route",
+    "local_observation_id": "route_q48_glen_oaks_2025",
+    "create_new": true,
+    "expected_record_id": "route_q48-glen-oaks-2025"
+  },
+  "source_evidence": {
+    "source_id": "mta_queens_bus_network_redesign_service_changes",
+    "block_id": "p001_b0053",
+    "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0053",
+    "source_block_sha256": "sha256:2d86bb2a28c2950f7d20c2914620b66ed3a177234eeab7a66616d68708e2977f",
+    "raw_text": "Q48 | Changes to the Q48 took effect June 30, 2025. | The existing Q48 will be discontinued and replaced with the new Q90. | Get more details on Q90 service. | View the new Q90 timetable. | The new Q48 will serve the existing Glen Oaks branch of the Q46. The new Q48 will make limited stops on Union Tpke west of 188 St. For local service, take the new Q45 ."
+  },
+  "decision": "do_not_merge",
+  "rationale": "The source explicitly contrasts an existing Q48 that ends and is replaced by Q90 with a new Q48 that starts on the former Q46 Glen Oaks branch. The historical canonical record describes a Q48 serving LaGuardia Airport in 2011. The shared route designation is therefore insufficient identity evidence and would collapse two distinct route lifecycles if treated as a merge key.",
+  "guard_checks": {
+    "historical_record_exists": true,
+    "future_record_does_not_yet_exist": true,
+    "future_record_id_is_deterministic": true,
+    "do_not_merge_schema_permits_future_record_id": true,
+    "create_new_identity_is_distinct_from_historical_target": true
+  },
+  "sequencing": [
+    "Install this reviewed do-not-merge decision before applying the recovery proposal.",
+    "Apply the proposal with the historical observation explicitly targeted to route_q48-serves-lga-2011 and the new observation explicitly marked create_new by omission of target_record_id.",
+    "Only after route_q48-glen-oaks-2025 is canonical, review and activate the Q48 route-anchor disposition and override changes."
+  ],
+  "deferred_mutations": [
+    "No route-anchor historical disposition is changed by this note.",
+    "No Q48 route-anchor override is activated by this note.",
+    "No proposal is accepted or applied by this note."
+  ]
+}
