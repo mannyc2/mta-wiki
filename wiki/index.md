@@ -4665,6 +4665,7 @@
 - [[wiki/routes/route_q111-rush|Q111 Rush Route]] (route)
 - [[wiki/routes/route_q115-addendum-2024|Q115]] (route)
 - [[wiki/routes/route_q14-queens|Q14 bus route]] (route)
+- [[wiki/routes/route_q15a-historical-2025|Q15A]] (route)
 - [[wiki/routes/route_q17-ace|Q17]] (route)
 - [[wiki/routes/route_q19-2014-m60-flyer|Q19]] (route)
 - [[wiki/routes/route_q20-2014-10-07-flushing-jamaica|Q20A bus route]] (route)
@@ -7343,8 +7344,8 @@
 ## Data-Only Records
 
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
-- event: 8016 canonical records in `data/canonical/events.jsonl`
+- event: 8017 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 20932 canonical records in `data/canonical/relations.jsonl`
+- relation: 20935 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
-- treatment_component: 2798 canonical records in `data/canonical/treatment_components.jsonl`
+- treatment_component: 2799 canonical records in `data/canonical/treatment_components.jsonl`
