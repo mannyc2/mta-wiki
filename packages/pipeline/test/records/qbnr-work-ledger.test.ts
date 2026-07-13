@@ -49,7 +49,12 @@ describe("QBNR work-ledger accounting", () => {
     const units = readFileSync(ledgerPath, "utf8")
       .split(/\r?\n/u)
       .filter(Boolean)
-      .map((line) => JSON.parse(line) as QbnrWorkLedgerAccountingUnit);
+      .map((line) => JSON.parse(line) as QbnrWorkLedgerAccountingUnit & {
+        route_label: string;
+        canonical_route_record_id: string | null;
+        gtfs_route_id: string | null;
+        occurrence_id: string | null;
+      });
     const serviceEnds = units.filter((unit) => unit.event_kind === "service_end");
     const accounting = summarizeQbnrWorkLedger(units);
 
@@ -59,7 +64,19 @@ describe("QBNR work-ledger accounting", () => {
     );
     expect(accounting.terminal_service_end_unit_count).toBe(6);
     expect(accounting.canonical_then_terminal_pending_unit_count).toBe(0);
-    expect(accounting.projectable_pending_unit_count).toBe(52);
-    expect(accounting.remaining_change_unit_count).toBe(52);
+    expect(accounting.completed_occurrence_unit_count).toBe(121);
+    expect(accounting.projectable_pending_unit_count).toBe(0);
+    expect(accounting.remaining_change_unit_count).toBe(0);
+    expect(accounting.counts_by_status).toEqual({
+      completed_occurrence: 121,
+      terminal_no_change: 3,
+      terminal_service_end: 6,
+    });
+    expect(units.find((unit) => unit.route_label === "Q52")).toMatchObject({
+      canonical_route_record_id: "route_q52-sbs-queens",
+      gtfs_route_id: "Q52+",
+      occurrence_id: "occurrence:70956fca3524ebf56de16ef4",
+      work_status: "completed_occurrence",
+    });
   });
 });

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "q104-treatment-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:8aa4bb7a1e5d2cb1aa1ee687",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T05:00:30.000Z",
+  "rationale": "The broad inherited Queens redesign graph contains treatment candidates from several routes and is not a safe treatment-level study projection. Approved occurrence occurrence:e8b335ea5de4ad66af6ff19b binds this event only to 1 canonical Q104 treatment member using official same-block evidence, so further recovery of the broad diagnostic treatment gap is not applicable.",
+  "proposal_ids": [
+    "orp_qbnr_15_create_route_atomic_2025"
+  ],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

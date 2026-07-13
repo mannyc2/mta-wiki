@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "decision_id": "qm68-route-redesign-2025-06-30",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T05:00:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official MTA QM68 row binds a realized 2025-06-30 onset, the QM68 route, and 4 canonical treatment members in the same exact source block. The reviewed route_redesign analysis family groups only those source-stated members and does not inherit project-wide route or treatment scope.",
+  "occurrence_id": "occurrence:bca0b565b6971c90a6af9e55",
+  "founding_key": "event:event_qm68-qbnr-rename-2025-06-30",
+  "observation_event_record_ids": [
+    "event_qm68-qbnr-rename-2025-06-30"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-qm68",
+    "relation_qbnr-2025-has-qm68-avenue-service-discontinuation",
+    "relation_qbnr-2025-has-qm68-midtown-stop-additions",
+    "relation_qbnr-2025-has-qm68-route-rename",
+    "relation_qbnr-2025-has-qm68-stop-removal",
+    "relation_qbnr-has-qm68-rename-2025-06-30"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-06-30",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_qm68-qbnr-rename-2025-06-30",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0135"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-qm68-rename-2025-06-30",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0135"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_qm68-qbnr-2025",
+      "gtfs_route_id": "QM68",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_qm68-qbnr-2025",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0135"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-qm68",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0135"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "bundle",
+  "treatment": {
+    "kind": "bundle",
+    "analysis_family": "route_redesign",
+    "analysis_family_evidence_bindings": [
+      {
+        "role": "bundle_analysis_family",
+        "record_id": "project_queens-bus-network-redesign",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0001"
+      }
+    ],
+    "members": [
+      {
+        "treatment_record_id": "treatment_qm68-avenue-service-discontinuation-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_qm68-avenue-service-discontinuation-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0135"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-qm68-avenue-service-discontinuation",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0135"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_qm68-midtown-stop-additions-2025",
+        "treatment_family": "bus_stop_or_boarding",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_qm68-midtown-stop-additions-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0135"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-qm68-midtown-stop-additions",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0135"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_qm68-route-rename-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_qm68-route-rename-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0135"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-qm68-route-rename",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0135"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_qm68-stop-removal-2025",
+        "treatment_family": "bus_stop_or_boarding",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_qm68-stop-removal-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0135"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-qm68-stop-removal",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0135"
+          }
+        ]
+      }
+    ]
+  }
+}

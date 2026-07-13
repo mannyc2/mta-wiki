@@ -4,6 +4,27 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-13
+
+### Queens Redesign Operational Corpus Completed
+
+- Completed the bounded official Queens Bus Network Redesign service-change corpus: all `127`
+  actionable change units now have either a reviewed, evidence-backed operational occurrence (`121`)
+  or a reviewed terminal service-end disposition (`6`); the three explicit no-change rows remain
+  separately terminal. The deterministic QBNR work ledger has zero remaining, projectable-pending,
+  or canonical-then-terminal units.
+- Promoted the final `52` source-complete route units as independent one-route occurrences: `15`
+  atomic treatments and `37` route-redesign bundles carrying all `116` literal canonical members.
+  The promotion is fail-closed over five hash-pinned accepted proposals, exact canonical evidence,
+  `220` scoped relations, and immutable `v1-rc8` route anchors. Q9 resolves to GTFS `Q09`; the reviewed
+  Q52 exception resolves only to `route_q52-sbs-queens` / GTFS `Q52+`; QM63/QM64/QM68 scope only their
+  successor identities.
+- The operational fixture and rc8-pinned coverage projection now contain `124` occurrences, `123`
+  study-eligible occurrences, and `126` eligible occurrence-route pairs (`39` atomic, `85` bundles).
+  Ninety-eight broad inherited QBNR route/treatment diagnostics are terminally superseded by the
+  route-scoped occurrences. The three route-rename events intentionally have no such diagnostics
+  because their canonical event family is outside the broad operational-family gap generator.
+
 ## 2026-07-12
 
 ### Operational Corpus Completion Baseline

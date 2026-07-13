@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "decision_id": "q31-route-redesign-2025-06-29",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T05:00:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official MTA Q31 row binds a realized 2025-06-29 onset, the Q31 route, and 3 canonical treatment members in the same exact source block. The reviewed route_redesign analysis family groups only those source-stated members and does not inherit project-wide route or treatment scope.",
+  "occurrence_id": "occurrence:6ae7cf4ad6af0772d6c7f258",
+  "founding_key": "event:event_q31-qbnr-service-change-2025-06-29",
+  "observation_event_record_ids": [
+    "event_q31-qbnr-service-change-2025-06-29"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-q31",
+    "relation_qbnr-2025-has-q31-bay-terrace-terminal",
+    "relation_qbnr-2025-has-q31-bell-boulevard-reroute",
+    "relation_qbnr-2025-has-q31-stop-removal",
+    "relation_qbnr-has-q31-service-change-2025-06-29"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-06-29",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_q31-qbnr-service-change-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0036"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-q31-service-change-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0036"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_q31-qbnr-2025",
+      "gtfs_route_id": "Q31",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_q31-qbnr-2025",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0036"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-q31",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0036"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "bundle",
+  "treatment": {
+    "kind": "bundle",
+    "analysis_family": "route_redesign",
+    "analysis_family_evidence_bindings": [
+      {
+        "role": "bundle_analysis_family",
+        "record_id": "project_queens-bus-network-redesign",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0001"
+      }
+    ],
+    "members": [
+      {
+        "treatment_record_id": "treatment_q31-bay-terrace-terminal-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q31-bay-terrace-terminal-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0036"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q31-bay-terrace-terminal",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0036"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q31-bell-boulevard-reroute-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q31-bell-boulevard-reroute-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0036"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q31-bell-boulevard-reroute",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0036"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q31-stop-removal-2025",
+        "treatment_family": "bus_stop_or_boarding",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q31-stop-removal-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0036"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q31-stop-removal",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0036"
+          }
+        ]
+      }
+    ]
+  }
+}

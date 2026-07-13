@@ -245,8 +245,17 @@ describe("operational occurrences v1", () => {
         member_treatment_families: string[];
       }>;
     };
-    expect(rows).toHaveLength(72);
-    expect(summary.candidate_projection_count).toBe(74);
+    expect(rows).toHaveLength(124);
+    expect(summary).toEqual({
+      schema_version: 1,
+      occurrence_count: 124,
+      study_projection_eligible_count: 123,
+      atomic_count: 39,
+      bundle_count: 85,
+      multi_route_count: 1,
+      candidate_projection_count: 126,
+      counts_by_exclusion_reason: { unsupported_bundle_analysis_family: 1 },
+    });
     expect(review.decision_count).toBe(rows.length);
     expect(expectedCandidates.candidate_count).toBe(expectedCandidates.candidates.length);
     const q48Occurrence = rows.find(
@@ -466,7 +475,26 @@ describe("operational occurrences v1", () => {
         member_treatment_families: ["service_pattern", "bus_stop_or_boarding"],
       },
     ]);
-    for (const forbiddenRouteId of ["Q12", "Q20B", "Q21", "Q36", "Q63", "Q98"]) {
+    const finalPromotionRoutes = [
+      "Q2", "Q9", "Q12", "Q15", "Q16", "Q18", "Q20", "Q24", "Q30", "Q31", "Q36", "Q37", "Q39",
+      "Q40", "Q41", "Q42", "Q45", "Q46", "Q49", "Q52+", "Q55", "Q56", "Q63", "Q64", "Q67", "Q74",
+      "Q75", "Q83", "Q86", "Q87", "Q88", "Q90", "Q98", "Q104", "Q112", "Q113", "Q114", "QM5", "QM6",
+      "QM8", "QM11", "QM20", "QM31", "QM32", "QM35", "QM36", "QM40", "QM42", "QM44", "QM63", "QM64",
+      "QM68",
+    ];
+    for (const routeId of finalPromotionRoutes) {
+      expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === routeId)).toHaveLength(1);
+    }
+    expect(expectedCandidates.candidates.filter((candidate) => candidate.route_id === "Q52+")).toEqual([
+      {
+        occurrence_id: "occurrence:70956fca3524ebf56de16ef4",
+        route_id: "Q52+",
+        treatment_kind: "bundle",
+        analysis_family: "route_redesign",
+        member_treatment_families: ["service_pattern", "fare_collection"],
+      },
+    ]);
+    for (const forbiddenRouteId of ["Q15A", "Q20A", "Q20B", "Q21", "Q34", "QM3"]) {
       expect(expectedCandidates.candidates.some((candidate) => candidate.route_id === forbiddenRouteId)).toBe(false);
     }
     expect(expectedCandidates.candidates.some((candidate) => /limited/iu.test(candidate.route_id))).toBe(false);

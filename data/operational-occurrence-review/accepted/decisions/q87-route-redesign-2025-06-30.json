@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "decision_id": "q87-route-redesign-2025-06-30",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T05:00:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official MTA Q87 row binds a realized 2025-06-30 onset, the Q87 route, and 2 canonical treatment members in the same exact source block. The reviewed route_redesign analysis family groups only those source-stated members and does not inherit project-wide route or treatment scope.",
+  "occurrence_id": "occurrence:a04ec993d0faee78af481311",
+  "founding_key": "event:event_q87-qbnr-start-2025-06-30",
+  "observation_event_record_ids": [
+    "event_q87-qbnr-start-2025-06-30"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-q87",
+    "relation_qbnr-2025-has-q87-limited-stops",
+    "relation_qbnr-2025-has-q87-q5-green-acres-replacement",
+    "relation_qbnr-has-q87-start-2025-06-30"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-06-30",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_q87-qbnr-start-2025-06-30",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-q87-start-2025-06-30",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_q87-qbnr-2025",
+      "gtfs_route_id": "Q87",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_q87-qbnr-2025",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-q87",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "bundle",
+  "treatment": {
+    "kind": "bundle",
+    "analysis_family": "route_redesign",
+    "analysis_family_evidence_bindings": [
+      {
+        "role": "bundle_analysis_family",
+        "record_id": "project_queens-bus-network-redesign",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0001"
+      }
+    ],
+    "members": [
+      {
+        "treatment_record_id": "treatment_q87-limited-stops-2025",
+        "treatment_family": "bus_stop_or_boarding",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q87-limited-stops-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q87-limited-stops",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q87-q5-green-acres-replacement-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q87-q5-green-acres-replacement-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q87-q5-green-acres-replacement",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084"
+          }
+        ]
+      }
+    ]
+  }
+}

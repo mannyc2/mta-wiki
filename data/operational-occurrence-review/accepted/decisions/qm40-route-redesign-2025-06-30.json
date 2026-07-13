@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "decision_id": "qm40-route-redesign-2025-06-30",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T05:00:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official MTA QM40 row binds a realized 2025-06-30 onset, the QM40 route, and one canonical bus_stop_or_boarding treatment in the same exact source block. This occurrence preserves the literal treatment family and does not inherit project-wide route or treatment scope.",
+  "occurrence_id": "occurrence:8d3b28a38f4ebee3119cf554",
+  "founding_key": "event:event_qm40-qbnr-service-change-2025-06-30",
+  "observation_event_record_ids": [
+    "event_qm40-qbnr-service-change-2025-06-30"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-qm40",
+    "relation_qbnr-2025-has-qm40-stop-pair-removal",
+    "relation_qbnr-has-qm40-service-change-2025-06-30"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-06-30",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_qm40-qbnr-service-change-2025-06-30",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0126"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-qm40-service-change-2025-06-30",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0126"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_qm40-qbnr-2025",
+      "gtfs_route_id": "QM40",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_qm40-qbnr-2025",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0126"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-qm40",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0126"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "atomic",
+  "treatment": {
+    "kind": "atomic",
+    "member": {
+      "treatment_record_id": "treatment_qm40-stop-pair-removal-2025",
+      "treatment_family": "bus_stop_or_boarding",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_qm40-stop-pair-removal-2025",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0126"
+        },
+        {
+          "role": "treatment_scope",
+          "record_id": "relation_qbnr-2025-has-qm40-stop-pair-removal",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0126"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "decision_id": "q52-route-redesign-2025-08-31",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T05:00:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official MTA Q52 row binds a realized 2025-08-31 onset, the Q52+ route, and 2 canonical treatment members in the same exact source block. The reviewed route_redesign analysis family groups only those source-stated members and does not inherit project-wide route or treatment scope.",
+  "occurrence_id": "occurrence:70956fca3524ebf56de16ef4",
+  "founding_key": "event:event_q52-qbnr-service-change-2025-08-31",
+  "observation_event_record_ids": [
+    "event_q52-qbnr-service-change-2025-08-31"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-q52",
+    "relation_qbnr-2025-has-q52-edgemere-extension",
+    "relation_qbnr-2025-has-q52-omny-only-fare-payment",
+    "relation_qbnr-has-q52-service-change-2025-08-31"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-08-31",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_q52-qbnr-service-change-2025-08-31",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0057"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-q52-service-change-2025-08-31",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0057"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_q52-sbs-queens",
+      "gtfs_route_id": "Q52+",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_q52-sbs-queens",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0057"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-q52",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0057"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "bundle",
+  "treatment": {
+    "kind": "bundle",
+    "analysis_family": "route_redesign",
+    "analysis_family_evidence_bindings": [
+      {
+        "role": "bundle_analysis_family",
+        "record_id": "project_queens-bus-network-redesign",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0001"
+      }
+    ],
+    "members": [
+      {
+        "treatment_record_id": "treatment_q52-edgemere-extension-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q52-edgemere-extension-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0057"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q52-edgemere-extension",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0057"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q52-omny-only-fare-payment-2025",
+        "treatment_family": "fare_collection",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q52-omny-only-fare-payment-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0057"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q52-omny-only-fare-payment",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0057"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -192,13 +192,21 @@ const routeAnchors = new Map(
     .map((row) => [row.gtfs_route_id!, row]),
 );
 
+const q52Exception = {
+  route_label: "Q52",
+  gtfs_route_id: "Q52+",
+  candidate_record_id: "route_q52-sbs-queens",
+};
+
 const occurrenceByRouteLabel = new Map<string, string>();
 for (const decision of loadOperationalOccurrenceAcceptedDecisions()) {
   const isQbnr = decision.resolved_onset.evidence_bindings.some((binding) => binding.source_id === SOURCE_ID);
   if (!isQbnr) continue;
   for (const route of decision.routes) {
     const shortName = gtfsById.get(route.gtfs_route_id)?.short_name ?? route.gtfs_route_id;
-    const label = normalizedRouteLabel(shortName);
+    const label = normalizedRouteLabel(
+      route.gtfs_route_id === q52Exception.gtfs_route_id ? q52Exception.route_label : shortName,
+    );
     const existing = occurrenceByRouteLabel.get(label);
     if (existing && existing !== decision.occurrence_id) {
       throw new Error(`Multiple QBNR occurrences already resolve ${label}`);
@@ -206,12 +214,6 @@ for (const decision of loadOperationalOccurrenceAcceptedDecisions()) {
     occurrenceByRouteLabel.set(label, decision.occurrence_id);
   }
 }
-
-const q52Exception = {
-  route_label: "Q52",
-  gtfs_route_id: "Q52+",
-  candidate_record_id: "route_q52-sbs-queens",
-};
 
 const incompleteOccurrenceReasons: Record<string, string> = {};
 
