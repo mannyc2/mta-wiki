@@ -135,6 +135,11 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `488`-row priority ledger now has one open row and `487` terminal rows. The sole open row is the real
   Fall 2024 Tremont/Grand Concourse Bx36 queue-jump installation, retained for separate curation and
   exact-onset adjudication.
+- Cut byte-reproducible unpromoted release `v1-rc17` from generator commit `b26fb86c`: manifest SHA-256
+  `70fe3d6279868eb25f180a34fe6d32c9786a5f7645d4a4cd904640b65cc1aa63`. All `20` addressed files were
+  independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239` and occurrence totals remain
+  `134` total, `133` eligible, and `169` eligible route pairs. `LATEST` intentionally remains `v1-rc5`.
 
 ## 2026-07-12
 
