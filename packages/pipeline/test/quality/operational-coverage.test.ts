@@ -66,6 +66,21 @@ function record(
   };
 }
 
+function withEvidence(
+  value: MtaCanonicalRecord,
+  sourceId = value.source_id,
+  sourceQuote?: string,
+): MtaCanonicalRecord {
+  return {
+    ...value,
+    evidence_refs: [{
+      source_id: sourceId,
+      evidence_id: `${sourceId}#fixture`,
+      ...(sourceQuote ? { source_quote: sourceQuote } : {}),
+    }],
+  };
+}
+
 function anchor(
   eventRecordId: string,
   anchorId = `operational:${eventRecordId}`,
@@ -139,7 +154,7 @@ function occurrence(
         bundle_family_evidence_bindings: [],
         members: [
           { treatment_record_id: "treatment_bus_lane", treatment_family: "bus_lane", evidence_bindings: [] },
-          { treatment_record_id: "treatment_tsp", treatment_family: "transit_signal_priority", evidence_bindings: [] },
+          { treatment_record_id: "treatment_tsp", treatment_family: "signal_priority", evidence_bindings: [] },
         ],
       };
   return {
@@ -257,13 +272,216 @@ describe("operational coverage ledger", () => {
     expect(current?.priority_families).toEqual(["route_redesign"]);
   });
 
+  it("recognizes canonical signal-priority context without widening generic signal treatments", () => {
+    const source = record("source_recent", "source", {
+      publisher: "MTA",
+      published_date_normalized: "2024-01-01",
+      title: "Generic project update",
+    });
+    const currentEvent = record("event_linked_current", "event", {
+      event_family: "implementation",
+      date_normalized: "2025-06-01",
+    });
+    const historicalEvent = record("event_linked_historical", "event", {
+      event_family: "implementation",
+      date_normalized: "2022-06-01",
+    });
+    const signalProject = withEvidence(record("project_signal", "project", { project_family: "signal_priority" }));
+    const busProject = withEvidence(record("project_bus", "project", { project_family: "bus_priority" }));
+    const contextualItsp = withEvidence(record("treatment_contextual_itsp", "treatment_component", {
+      treatment_family: "signal_priority",
+      treatment_kind: "ITSP deployment",
+    }), "source_recent", "ITSP deployment");
+    const linkedAnchor = (eventId: string, projectId: string): OperationalAnchorRow => anchor(eventId, `operational:${eventId}`, {
+      project_record_ids: [projectId],
+      subject_record_ids: [projectId],
+      subject_record_kinds: ["project"],
+      route_record_ids: [],
+      gtfs_route_ids: [],
+      treatment_record_ids: [],
+      treatment_families: [],
+      route_scope_resolution: "missing",
+      treatment_scope_resolution: "missing",
+      scope_resolution: "missing",
+      evidence_coverage: { event: true, timeline: true, route_scope: false, treatment_scope: false },
+      evidence_refs: [{
+        record_id: eventId,
+        source_id: "source_recent",
+        evidence_id: "source_recent#event",
+        block_id: "event",
+        page_number: 1,
+        text_sha256: "a".repeat(64),
+        role: "event",
+      }, {
+        record_id: "timeline_a",
+        source_id: "source_recent",
+        evidence_id: "source_recent#timeline",
+        block_id: "timeline",
+        page_number: 1,
+        text_sha256: "b".repeat(64),
+        role: "timeline_relation",
+      }],
+      normalized_date: eventId === "event_linked_historical" ? "2022-06-01" : "2025-06-01",
+      candidate_operational_date_normalized: eventId === "event_linked_historical" ? "2022-06-01" : "2025-06-01",
+      candidate_operational_dates_normalized: [eventId === "event_linked_historical" ? "2022-06-01" : "2025-06-01"],
+    });
+
+    const signalReport = buildOperationalCoverageLedger({
+      canonical_records: [source, currentEvent, signalProject],
+      operational_anchor_rows: [linkedAnchor(currentEvent.record_id, signalProject.record_id)],
+      operational_occurrence_rows: [],
+    });
+    expect(signalReport.gaps[0]?.priority_basis).toEqual(["date_window", "recent_priority_family"]);
+    expect(signalReport.gaps[0]?.priority_families).toEqual(["transit_signal_priority"]);
+
+    const busReport = buildOperationalCoverageLedger({
+      canonical_records: [source, currentEvent, busProject],
+      operational_anchor_rows: [linkedAnchor(currentEvent.record_id, busProject.record_id)],
+      operational_occurrence_rows: [],
+    });
+    expect(busReport.gaps[0]?.priority).toBe(false);
+
+    const contextualItspReport = buildOperationalCoverageLedger({
+      canonical_records: [source, currentEvent, busProject, contextualItsp],
+      operational_anchor_rows: [linkedAnchor(currentEvent.record_id, busProject.record_id)],
+      operational_occurrence_rows: [],
+    });
+    expect(contextualItspReport.gaps[0]?.priority).toBe(true);
+    expect(contextualItspReport.gaps[0]?.priority_basis).toEqual(["date_window", "recent_priority_family"]);
+    expect(contextualItspReport.gaps[0]?.priority_families).toEqual(["transit_signal_priority"]);
+    const contextualTreatmentGap = contextualItspReport.gaps.find((gap) => gap.dimension === "treatment");
+    expect(contextualTreatmentGap?.treatment_record_ids).toEqual([]);
+    expect(contextualTreatmentGap?.candidate_record_ids).toContain(contextualItsp.record_id);
+
+    const otherSourceItsp = withEvidence({
+      ...record("treatment_other_source_itsp", "treatment_component", {
+        treatment_family: "signal_priority",
+        treatment_kind: "ITSP deployment",
+      }, "source_other"),
+      source_ids: ["source_other", "source_recent"],
+    }, "source_other", "ITSP deployment");
+    const otherSourceReport = buildOperationalCoverageLedger({
+      canonical_records: [source, currentEvent, busProject, otherSourceItsp],
+      operational_anchor_rows: [linkedAnchor(currentEvent.record_id, busProject.record_id)],
+      operational_occurrence_rows: [],
+    });
+    expect(otherSourceReport.gaps[0]?.priority).toBe(false);
+
+    const sourceOther = record("source_other", "source", {
+      publisher: "MTA",
+      published_date_normalized: "2024-02-01",
+      title: "Other generic project update",
+    }, "source_other");
+    const policyProjectOther = withEvidence(record("project_policy_other", "project", {
+      project_family: "policy_program",
+    }, "source_other"), "source_other");
+    const rowA = linkedAnchor(currentEvent.record_id, busProject.record_id);
+    const rowB = {
+      ...linkedAnchor(currentEvent.record_id, policyProjectOther.record_id),
+      anchor_id: `operational:${currentEvent.record_id}:source-other`,
+      source_id: "source_other",
+      source_ids: ["source_other"],
+      evidence_refs: [{
+        record_id: currentEvent.record_id,
+        source_id: "source_other",
+        evidence_id: "source_other#event",
+        block_id: "event",
+        page_number: 1,
+        text_sha256: "c".repeat(64),
+        role: "event" as const,
+      }, {
+        record_id: "timeline_other",
+        source_id: "source_other",
+        evidence_id: "source_other#timeline",
+        block_id: "timeline",
+        page_number: 1,
+        text_sha256: "d".repeat(64),
+        role: "timeline_relation" as const,
+      }],
+    };
+    const splitRowContextReport = buildOperationalCoverageLedger({
+      canonical_records: [source, sourceOther, currentEvent, busProject, policyProjectOther, otherSourceItsp],
+      operational_anchor_rows: [rowA, rowB],
+      operational_occurrence_rows: [],
+    });
+    expect(splitRowContextReport.gaps[0]?.priority).toBe(false);
+
+    const contaminatedEntity = withEvidence(record("entity_contaminated", "entity", {
+      description: "Merged bus and TSP material from an unrelated source",
+    }));
+    const contaminatedEntityReport = buildOperationalCoverageLedger({
+      canonical_records: [source, currentEvent, contaminatedEntity, contextualItsp],
+      operational_anchor_rows: [linkedAnchor(currentEvent.record_id, contaminatedEntity.record_id)],
+      operational_occurrence_rows: [],
+    });
+    expect(contaminatedEntityReport.gaps[0]?.priority).toBe(false);
+
+    const policyProject = withEvidence(record("project_policy", "project", {
+      project_family: "policy_program",
+      description: "A report that happens to discuss bus and TSP projects",
+      _merged_field_values: { project_family: ["busway", "signal_priority"] },
+    }));
+    const contaminatedProjectReport = buildOperationalCoverageLedger({
+      canonical_records: [source, currentEvent, policyProject, contextualItsp],
+      operational_anchor_rows: [linkedAnchor(currentEvent.record_id, policyProject.record_id)],
+      operational_occurrence_rows: [],
+    });
+    expect(contaminatedProjectReport.gaps[0]?.priority).toBe(false);
+
+    const historicalReport = buildOperationalCoverageLedger({
+      canonical_records: [source, historicalEvent, signalProject],
+      operational_anchor_rows: [linkedAnchor(historicalEvent.record_id, signalProject.record_id)],
+      operational_occurrence_rows: [],
+    });
+    expect(historicalReport.gaps[0]?.priority).toBe(false);
+
+    for (const [id, treatmentKind] of [
+      ["treatment_pedestrian", "pedestrian signal"],
+      ["treatment_cbtc", "CBTC signal"],
+      ["treatment_timing", "traffic signal timing"],
+      ["treatment_queue_jump", "bus queue jump"],
+    ] as const) {
+      const treatment = record(id, "treatment_component", {
+        treatment_family: "signal_priority",
+        treatment_kind: treatmentKind,
+      });
+      const report = buildOperationalCoverageLedger({
+        canonical_records: [source, currentEvent, treatment],
+        operational_anchor_rows: [anchor(currentEvent.record_id, `operational:${id}`, {
+          assertion_statuses: ["planned"],
+          lifecycle_phase: "other",
+          treatment_record_ids: [id],
+          treatment_families: ["signal_priority"],
+        })],
+        operational_occurrence_rows: [],
+      });
+      expect(report.gaps[0]?.priority_families).not.toContain("transit_signal_priority");
+    }
+
+    const itsp = record("treatment_itsp", "treatment_component", {
+      treatment_family: "signal_priority",
+      treatment_kind: "ITSP deployment",
+    });
+    const itspReport = buildOperationalCoverageLedger({
+      canonical_records: [source, currentEvent, itsp],
+      operational_anchor_rows: [anchor(currentEvent.record_id, "operational:itsp", {
+        assertion_statuses: ["planned"],
+        lifecycle_phase: "other",
+        treatment_record_ids: [itsp.record_id],
+        treatment_families: ["signal_priority"],
+      })],
+      operational_occurrence_rows: [],
+    });
+    expect(itspReport.gaps[0]?.priority_families).toContain("transit_signal_priority");
+  });
+
   it("does not treat multi-route, multi-treatment, planned, or imprecise rows as complete", () => {
     const input = baseInput();
     input.operational_anchor_rows = [anchor("event_current", "operational:event_current", {
       gtfs_route_ids: ["B1", "B2"],
       route_record_ids: ["route_b1", "route_b2"],
       treatment_record_ids: ["treatment_bus_lane", "treatment_tsp"],
-      treatment_families: ["bus_lane", "transit_signal_priority"],
+      treatment_families: ["bus_lane", "signal_priority"],
       temporal_role: "planned_operational",
       lifecycle_phase: "other",
       candidate_operational_date_normalized: "2024",

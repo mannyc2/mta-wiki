@@ -130,7 +130,9 @@ const supportedBundleAnalysisFamilies = new Set([
   "queue_jump",
   "route_redesign",
   "select_bus_service",
+  "signal_priority",
   "stop_change",
+  // Legacy decision decoder alias. New decisions use canonical signal_priority.
   "transit_signal_priority",
 ]);
 

@@ -606,6 +606,20 @@ describe("operational occurrences v1", () => {
         row.treatment.bundle_family_evidence_bindings.every((entry) => topLedger.has(JSON.stringify(entry))),
     ).toBe(true);
 
+    const signalPriorityDecision = structuredClone(decision);
+    if (signalPriorityDecision.treatment.kind !== "bundle") throw new Error("fixture drift");
+    signalPriorityDecision.treatment.analysis_family = "signal_priority";
+    const signalPriorityRows = computeOperationalOccurrences(input.records, input.routeAnchors, {
+      reviewDecisions: [],
+      occurrenceReviewDecisions: [signalPriorityDecision],
+      identityRegistry: [explicitIdentity],
+    });
+    expect(signalPriorityRows[0]?.treatment).toMatchObject({
+      kind: "bundle",
+      bundle_family: "signal_priority",
+    });
+    expect(signalPriorityRows[0]?.study_projection_eligible).toBe(true);
+
     const wrongRouteOwner = structuredClone(decision);
     wrongRouteOwner.routes[0]!.evidence_bindings[0]!.record_id = "project_fixture";
     expect(() =>

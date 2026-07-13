@@ -30,8 +30,8 @@ Study window: 2023-04-01 through 2026-12-31
 ## Completion ledger
 
 - Gap rows: 2959
-- Priority gap denominator: 499
-- Priority open: 223
+- Priority gap denominator: 503
+- Priority open: 227
 - Priority adjudicated/recoverable: 0
 - Priority terminal: 276
 - Sequential route-resolved treatment gaps: 15

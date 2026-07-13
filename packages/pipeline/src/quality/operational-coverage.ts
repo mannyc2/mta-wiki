@@ -305,7 +305,7 @@ function priorityFamiliesIn(value: unknown): OperationalCoveragePriorityFamily[]
     if (typeof candidate === "string") {
       const normalized = candidate.toLowerCase().replace(/[_-]+/gu, " ");
       if (/\b(?:route|bus network) redesign\b/u.test(normalized)) found.add("route_redesign");
-      if (/\btransit signal priority\b|\btsp\b/u.test(normalized)) found.add("transit_signal_priority");
+      if (/\btransit signal priority\b|\b(?:tsp|itsp)\b/u.test(normalized)) found.add("transit_signal_priority");
       if (/\bbusway\b/u.test(normalized)) found.add("busway");
       return;
     }
@@ -321,13 +321,98 @@ function priorityFamiliesIn(value: unknown): OperationalCoveragePriorityFamily[]
   return [...found].sort((left, right) => left.localeCompare(right));
 }
 
+function explicitSignalPriorityIn(value: unknown): boolean {
+  if (typeof value === "string") {
+    const normalized = value.toLowerCase().replace(/[_-]+/gu, " ");
+    return /\btransit signal priority\b|\b(?:tsp|itsp)\b/u.test(normalized);
+  }
+  if (Array.isArray(value)) return value.some(explicitSignalPriorityIn);
+  return false;
+}
+
+function scalarFamily(record: MtaCanonicalRecord, field: string): string {
+  return typeof record.payload[field] === "string" ? token(record.payload[field]) : "";
+}
+
+function priorityFamiliesForTreatmentRecord(record: MtaCanonicalRecord): OperationalCoveragePriorityFamily[] {
+  const found = new Set(priorityFamiliesIn([record.display_name, record.raw_text, record.payload]));
+  const explicitSignalPriority =
+    record.record_kind === "treatment_component" &&
+    scalarFamily(record, "treatment_family") === "signal_priority" &&
+    explicitSignalPriorityIn([
+      record.display_name,
+      record.raw_text,
+      record.payload.treatment_kind,
+      record.payload.description,
+      record.evidence_refs.map((ref) => ref.source_quote),
+    ]);
+  if (!explicitSignalPriority) {
+    found.delete("transit_signal_priority");
+  }
+  return [...found].sort((left, right) => left.localeCompare(right));
+}
+
+const busProjectFamilies = new Set([
+  "bus_lane",
+  "bus_network_redesign",
+  "bus_priority",
+  "busway",
+  "sbs_or_brt",
+  "signal_priority",
+]);
+
+function recordHasEvidenceFrom(record: MtaCanonicalRecord, sourceIds: ReadonlySet<string>): boolean {
+  return record.evidence_refs.some((ref) => sourceIds.has(ref.source_id));
+}
+
+function linkedProjectSupportsBusContext(
+  record: MtaCanonicalRecord,
+  directSourceIds: ReadonlySet<string>,
+): boolean {
+  return record.record_kind === "project" &&
+    busProjectFamilies.has(scalarFamily(record, "project_family")) &&
+    recordHasEvidenceFrom(record, directSourceIds);
+}
+
+function treatmentSupportsSignalPriorityContext(
+  record: MtaCanonicalRecord,
+  directSourceIds: ReadonlySet<string>,
+): boolean {
+  if (
+    record.record_kind !== "treatment_component" ||
+    scalarFamily(record, "treatment_family") !== "signal_priority"
+  ) return false;
+
+  if (record.evidence_refs.some((ref) =>
+    directSourceIds.has(ref.source_id) && explicitSignalPriorityIn(ref.source_quote))) return true;
+
+  const recordSourceIds = new Set(sourceIdsFor(record));
+  const evidenceSourceIds = new Set(record.evidence_refs.map((ref) => ref.source_id));
+  const [recordSourceId] = recordSourceIds;
+  const [evidenceSourceId] = evidenceSourceIds;
+  if (
+    recordSourceIds.size !== 1 ||
+    evidenceSourceIds.size !== 1 ||
+    recordSourceId !== evidenceSourceId ||
+    !recordSourceId ||
+    !directSourceIds.has(recordSourceId)
+  ) return false;
+
+  return explicitSignalPriorityIn([
+    record.display_name,
+    record.raw_text,
+    record.payload.treatment_kind,
+    record.payload.description,
+  ]);
+}
+
 function busStudySignalIn(value: unknown): boolean {
   let found = false;
   const visit = (candidate: unknown): void => {
     if (found) return;
     if (typeof candidate === "string") {
       const normalized = candidate.toLowerCase().replace(/[_-]+/gu, " ");
-      found = /\b(?:bus|busway|sbs|tsp)\b|select bus service|transit signal priority|route redesign|automated bus lane enforcement/u.test(
+      found = /\b(?:bus|busway|sbs|tsp|itsp)\b|select bus service|transit signal priority|route redesign|automated bus lane enforcement/u.test(
         normalized,
       );
       return;
@@ -673,13 +758,52 @@ export function buildOperationalCoverageLedger(input: OperationalCoverageInput):
       const record = recordsById.get(recordId);
       return record ? [record] : [];
     });
-    const priorityFamilies = priorityFamiliesIn([
-      event.display_name,
-      event.payload,
-      ...rows.flatMap((row) => [row.treatment_families, row.event_family]),
-      ...treatmentRecords.flatMap((record) => [record.display_name, record.payload]),
-      ...sourceRecords.flatMap((record) => [record.display_name, record.payload.title]),
-    ]);
+    let hasDirectLinkedSignalPriorityProject = false;
+    let hasContextualSignalPriorityCandidate = false;
+    for (const row of rows) {
+      const eventEvidenceSourceIds = new Set(row.evidence_refs
+        .filter((ref) => ref.role === "event")
+        .map((ref) => ref.source_id));
+      const timelineEvidenceSourceIds = new Set(row.evidence_refs
+        .filter((ref) => ref.role === "timeline_relation")
+        .map((ref) => ref.source_id));
+      const directRowSourceIds = [...eventEvidenceSourceIds]
+        .filter((sourceId) => timelineEvidenceSourceIds.has(sourceId));
+      const linkedProjectRecords = uniqueSorted([
+        ...row.project_record_ids,
+        ...row.subject_record_ids,
+      ]).flatMap((recordId) => {
+        const record = recordsById.get(recordId);
+        return record?.record_kind === "project" ? [record] : [];
+      });
+      for (const sourceId of directRowSourceIds) {
+        const sourceScope = new Set([sourceId]);
+        const directBusProjects = linkedProjectRecords.filter((record) =>
+          linkedProjectSupportsBusContext(record, sourceScope));
+        if (directBusProjects.some((record) => scalarFamily(record, "project_family") === "signal_priority")) {
+          hasDirectLinkedSignalPriorityProject = true;
+        }
+        if (
+          directBusProjects.length > 0 &&
+          (recordsBySource.get(sourceId) ?? []).some((record) =>
+            treatmentSupportsSignalPriorityContext(record, sourceScope))
+        ) {
+          hasContextualSignalPriorityCandidate = true;
+        }
+      }
+    }
+    const priorityFamilies = uniqueSorted([
+      ...priorityFamiliesIn([
+        event.display_name,
+        event.payload,
+        ...rows.flatMap((row) => [row.treatment_families, row.event_family]),
+        ...sourceRecords.flatMap((record) => [record.display_name, record.payload.title]),
+      ]),
+      ...treatmentRecords.flatMap(priorityFamiliesForTreatmentRecord),
+      ...(hasDirectLinkedSignalPriorityProject || hasContextualSignalPriorityCandidate
+        ? ["transit_signal_priority" as const]
+        : []),
+    ]) as OperationalCoveragePriorityFamily[];
     const publishedOfficialSource = sourceRecords.some(
       (source) => officialSource(source) && sourcePublishedInPriorityWindow(source),
     );
