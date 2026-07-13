@@ -15,11 +15,19 @@
     "operational-coverage:a9b2bf1ff109628219637775"
   ],
   "source_id": "mta_queens_bus_network_redesign_service_changes",
-  "review_state": "proposed",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-13T01:21:01.000Z",
   "provenance": {
     "drafted_by": "codex-corpus-completion-2026-07-13",
     "drafted_at": "2026-07-13T00:55:07.000Z",
-    "method": "owner_reviewed_qbnr_lifecycle_split"
+    "method": "owner_reviewed_qbnr_lifecycle_split",
+    "verifier": {
+      "reviewed_by": "codex-independent-qbnr-lifecycle-review",
+      "reviewed_at": "2026-07-13T01:21:01.000Z",
+      "verdict": "passed",
+      "rationale": "The official Q48 block, hash, date, and old/new lifecycle split were independently verified. The reviewed future-ID do-not-merge guard preserves distinct historical LaGuardia and new Glen Oaks identities. Endpoint separation, source context isolation, current v1-rc6 pin, deterministic identities, and the exact fourteen-row accepted-journal simulation with thirteen new canonical IDs all pass; route-anchor cutover remains explicitly deferred until after apply."
+    }
   },
   "rationale": "The exact official MTA Q48 row at p001_b0053 (sha256:2d86bb2a28c2950f7d20c2914620b66ed3a177234eeab7a66616d68708e2977f) establishes a June 30, 2025 lifecycle boundary: the existing Q48 was discontinued and replaced by Q90, while a new Q48 began serving the former Q46 Glen Oaks branch and made limited stops on Union Turnpike west of 188 Street. The historical LaGuardia-serving Q48 remains explicitly targeted to route_q48-serves-lga-2011, while the new Glen Oaks service must be created as route_q48-glen-oaks-2025. A reviewed do-not-merge decision protects that lifecycle split before apply. Q46, Q90, and Q45 are source context only; this bundle creates no route identity or route edge for them. Route-anchor disposition and override changes remain deferred until the new route is canonical.",
   "observations": [
