@@ -245,15 +245,15 @@ describe("operational occurrences v1", () => {
         member_treatment_families: string[];
       }>;
     };
-    expect(rows).toHaveLength(134);
+    expect(rows).toHaveLength(135);
     expect(summary).toEqual({
       schema_version: 1,
-      occurrence_count: 134,
-      study_projection_eligible_count: 133,
-      atomic_count: 49,
+      occurrence_count: 135,
+      study_projection_eligible_count: 134,
+      atomic_count: 50,
       bundle_count: 85,
-      multi_route_count: 9,
-      candidate_projection_count: 169,
+      multi_route_count: 10,
+      candidate_projection_count: 172,
       counts_by_exclusion_reason: { unsupported_bundle_analysis_family: 1 },
     });
     expect(review.decision_count).toBe(rows.length);

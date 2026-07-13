@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "decision_id": "ace-b60-b68-m57-warning-phase-2025-12-08",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T22:45:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official December 2025 MTA committee book states that B60, B68, and M57 entered one 60-day ACE warning phase on December 8. The report context resolves the source literal to December 8, 2025, and the warning definition establishes a realized operational treatment onset. This decision binds exactly those three routes to one atomic automated_bus_lane_enforcement treatment. It does not infer that fine-bearing enforcement began on December 8, calculate a later fine-bearing date from the 60-day period, or inherit any other route from the umbrella ACE program.",
+  "occurrence_id": "occurrence:1ed365a241353614f72f025e",
+  "founding_key": "event:event_ace-program-expansion-dec2025",
+  "observation_event_record_ids": [
+    "event_ace-program-expansion-dec2025"
+  ],
+  "observation_relation_record_ids": [
+    "relation_ace-b60-b68-m57-2025-12-08-affects-b60",
+    "relation_ace-b60-b68-m57-2025-12-08-affects-b68",
+    "relation_ace-b60-b68-m57-2025-12-08-affects-m57",
+    "relation_ace-b60-b68-m57-warning-has-activation-2025-12-08",
+    "relation_ace-b60-b68-m57-warning-has-treatment-2025-12-08"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-12-08",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_ace-program-expansion-dec2025",
+        "source_id": "nyct_key_performance_metrics_doc194001",
+        "evidence_id": "nyct_key_performance_metrics_doc194001#p010_c0011"
+      },
+      {
+        "role": "event_date",
+        "record_id": "event_ace-program-expansion-dec2025",
+        "source_id": "nyct_key_performance_metrics_doc194001",
+        "evidence_id": "nyct_key_performance_metrics_doc194001#p001_c0002"
+      },
+      {
+        "role": "event_date",
+        "record_id": "event_ace-program-expansion-dec2025",
+        "source_id": "nyct_key_performance_metrics_doc194001",
+        "evidence_id": "nyct_key_performance_metrics_doc194001#p003_c0003"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_ace-b60-b68-m57-warning-has-activation-2025-12-08",
+        "source_id": "nyct_key_performance_metrics_doc194001",
+        "evidence_id": "nyct_key_performance_metrics_doc194001#p010_c0011"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_ace-b60-b68-m57-warning-has-activation-2025-12-08",
+        "source_id": "nyct_key_performance_metrics_doc194001",
+        "evidence_id": "nyct_key_performance_metrics_doc194001#p001_c0002"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_ace-b60-b68-m57-warning-has-activation-2025-12-08",
+        "source_id": "nyct_key_performance_metrics_doc194001",
+        "evidence_id": "nyct_key_performance_metrics_doc194001#p003_c0003"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_b60",
+      "gtfs_route_id": "B60",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_b60",
+          "source_id": "nyct_key_performance_metrics_doc194001",
+          "evidence_id": "nyct_key_performance_metrics_doc194001#p010_c0011"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_ace-b60-b68-m57-2025-12-08-affects-b60",
+          "source_id": "nyct_key_performance_metrics_doc194001",
+          "evidence_id": "nyct_key_performance_metrics_doc194001#p010_c0011"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_b68-nyct-2025",
+      "gtfs_route_id": "B68",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_b68-nyct-2025",
+          "source_id": "nyct_key_performance_metrics_doc194001",
+          "evidence_id": "nyct_key_performance_metrics_doc194001#p010_c0011"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_ace-b60-b68-m57-2025-12-08-affects-b68",
+          "source_id": "nyct_key_performance_metrics_doc194001",
+          "evidence_id": "nyct_key_performance_metrics_doc194001#p010_c0011"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_m57-nyct-2025",
+      "gtfs_route_id": "M57",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_m57-nyct-2025",
+          "source_id": "nyct_key_performance_metrics_doc194001",
+          "evidence_id": "nyct_key_performance_metrics_doc194001#p010_c0011"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_ace-b60-b68-m57-2025-12-08-affects-m57",
+          "source_id": "nyct_key_performance_metrics_doc194001",
+          "evidence_id": "nyct_key_performance_metrics_doc194001#p010_c0011"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "atomic",
+  "treatment": {
+    "kind": "atomic",
+    "member": {
+      "treatment_record_id": "treatment_ace-b60-b68-m57-warning-phase-2025-12-08",
+      "treatment_family": "automated_bus_lane_enforcement",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_ace-b60-b68-m57-warning-phase-2025-12-08",
+          "source_id": "nyct_key_performance_metrics_doc194001",
+          "evidence_id": "nyct_key_performance_metrics_doc194001#p010_c0011"
+        },
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_ace-b60-b68-m57-warning-phase-2025-12-08",
+          "source_id": "nyct_key_performance_metrics_doc194001",
+          "evidence_id": "nyct_key_performance_metrics_doc194001#p011_c0009"
+        },
+        {
+          "role": "treatment_scope",
+          "record_id": "relation_ace-b60-b68-m57-warning-has-treatment-2025-12-08",
+          "source_id": "nyct_key_performance_metrics_doc194001",
+          "evidence_id": "nyct_key_performance_metrics_doc194001#p010_c0011"
+        }
+      ]
+    }
+  }
+}

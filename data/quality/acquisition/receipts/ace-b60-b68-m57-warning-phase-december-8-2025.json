@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "receipt_id": "ace-b60-b68-m57-warning-phase-december-8-2025",
+  "status": "existing_staged_official_source_curated_and_prior_interpretation_reconciled",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T22:30:00Z",
+  "acquisition_method": "existing_staged_official_source_only",
+  "source": {
+    "source_id": "nyct_key_performance_metrics_doc194001",
+    "upstream_source_id": "mta_nyct_key_performance_metrics_doc194001_pdf",
+    "title": "NYCT Key Performance Metrics Committee Book",
+    "publisher": "MTA",
+    "source_url": "https://www.mta.info/document/194001",
+    "artifact_sha256": {
+      "metadata.json": "641b84213f03daa8591e9fbc9f1d7325eea12daed2d55770448fe87173fa35d0",
+      "source.pdf": "61b015b7778c176b182d4d81422aaf27c06f0ee6ad2953cb494cbff9453b2f19",
+      "text.txt": "94e7d39757e0cb7c39f580341d8fdb990c2637be87c7ece9bee55a83a83bd68e",
+      "blocks.jsonl": "068d54b750065e0a05d2b1b696d64eaf5171763908626207115060c5bf7f7ee7"
+    },
+    "evidence_blocks": [
+      {
+        "block_id": "p001_c0002",
+        "text_sha256": "sha256:1c2e7d7242d4937bffeb7ae2ac5b4071b084298424eb1637e9c216f6f292d64f",
+        "role": "report_month_context",
+        "literal": "December 2025"
+      },
+      {
+        "block_id": "p003_c0003",
+        "text_sha256": "sha256:da018863a9eae42e35f1a801fc448de9d224d07d24d389b5c264e09564cfb624",
+        "role": "report_date_context",
+        "literal": "December 15, 2025"
+      },
+      {
+        "block_id": "p010_c0011",
+        "text_sha256": "sha256:e147dfa103fac9d1499e269c62864619e13cdfd4b3540e71e98ebfb706cd1a42",
+        "role": "warning_phase_activation",
+        "literal": "On December 8, the B68 and B60 in Brooklyn and the M57 in Manhattan entered a 60-day warning phase"
+      },
+      {
+        "block_id": "p011_c0009",
+        "text_sha256": "sha256:2d2318454276de1fad6ef39bbd54826456515f6b382b2a9e95ab426545adf858",
+        "role": "warning_phase_definition",
+        "literal": "lanes, bus stops, or double-parked received warning notices"
+      }
+    ]
+  },
+  "temporal_adjudication": {
+    "source_date_literal": "December 8",
+    "date_normalized": "2025-12-08",
+    "date_precision": "day",
+    "resolution_basis": "The event sentence supplies December 8. The official report cover supplies December 2025 and the report-date block supplies December 15, 2025, resolving the year without rewriting the event's source literal.",
+    "lifecycle_phase": "expanded",
+    "operational_boundary": "Entry into the official 60-day warning phase is the realized onset of this bounded ACE treatment cohort.",
+    "fine_bearing_start_date": null,
+    "rejected_inferences": [
+      "December 8 is not asserted as the start of fine-bearing enforcement.",
+      "The December 15 report date is not used as an activation date.",
+      "The 60-day duration is not used to invent a later fine-bearing date."
+    ]
+  },
+  "scope_adjudication": {
+    "project_record_id": "project_ace-b60-b68-m57-warning-cohort-2025-12-08",
+    "event_record_id": "event_ace-program-expansion-dec2025",
+    "treatment_record_id": "treatment_ace-b60-b68-m57-warning-phase-2025-12-08",
+    "treatment_family": "automated_bus_lane_enforcement",
+    "treatment_granularity": "one_atomic_treatment_for_one_exact_day_cohort",
+    "route_anchor_release": "v1-rc18",
+    "route_anchor_path": "data/exports/releases/v1-rc18/route_anchors.jsonl",
+    "route_anchor_sha256": "517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239",
+    "routes": [
+      {
+        "gtfs_route_id": "B60",
+        "canonical_route_record_id": "route_b60"
+      },
+      {
+        "gtfs_route_id": "B68",
+        "canonical_route_record_id": "route_b68-nyct-2025"
+      },
+      {
+        "gtfs_route_id": "M57",
+        "canonical_route_record_id": "route_m57-nyct-2025"
+      }
+    ],
+    "excluded_scope": [
+      "all other ACE program routes",
+      "umbrella ACE route coverage",
+      "the later fine-bearing enforcement onset",
+      "unrelated bus-priority treatments"
+    ]
+  },
+  "identity_and_projection": {
+    "founding_key": "event:event_ace-program-expansion-dec2025",
+    "expected_occurrence_id": "occurrence:1ed365a241353614f72f025e",
+    "expected_route_count": 3,
+    "expected_atomic_treatment_count": 1,
+    "included_relation_record_ids": [
+      "relation_ace-b60-b68-m57-warning-has-activation-2025-12-08",
+      "relation_ace-b60-b68-m57-warning-has-treatment-2025-12-08",
+      "relation_ace-b60-b68-m57-2025-12-08-affects-b60",
+      "relation_ace-b60-b68-m57-2025-12-08-affects-b68",
+      "relation_ace-b60-b68-m57-2025-12-08-affects-m57"
+    ],
+    "excluded_occurrence_relation_record_ids": [
+      "relation_ace-b60-b68-m57-warning-part-of-program"
+    ]
+  },
+  "prior_decision_reconciliation": {
+    "retired_decision_id": "non-study-ace-program-expansion-dec2025-timeline-subject-not-applicable",
+    "retired_decision_sha256": "c89594a8ccb5896cfc1798b336aa64b45de04c966817beea8edd45627aa4fe70",
+    "retired_gap_id": "operational-coverage:ee9721813dc1e45e440d0589",
+    "retirement_path": "data/operational-anchor-review/ledger-decisions/retired/non-study-ace-program-expansion-dec2025-timeline-subject-not-applicable.json",
+    "reason": "The prior interpretation conflated a warning-phase operational activation with the distinct later start of fine-bearing enforcement. Once exact route and treatment structure is linked, its old timeline-subject gap disappears; the decision is therefore preserved as retired history instead of left active against an unknown gap.",
+    "successor_gap_ids": [
+      "operational-coverage:cb81df5ab159c18671171291",
+      "operational-coverage:64381715a1777d38c32034f4"
+    ],
+    "successor_decision_ids": [
+      "ace-b60-b68-m57-warning-phase-2025-12-08-route-gap-superseded-by-approved-occurrence",
+      "ace-b60-b68-m57-warning-phase-2025-12-08-treatment-gap-superseded-by-approved-occurrence"
+    ]
+  },
+  "reproducibility": {
+    "curation_script": "scripts/curate-ace-december-2025-warning-cohort.ts",
+    "submission_journal": "data/submissions/2026-07-13_codex_ace-december-2025-warning-cohort-curation.jsonl",
+    "observation_count": 11,
+    "semantic_correction_ids": [
+      "core-coverage-ace-dec2025-01-warning-event-semantics-20260713",
+      "core-coverage-ace-dec2025-02-recite-warning-event-evidence-20260713",
+      "core-coverage-ace-dec2025-10-retract-umbrella-covers-b60-20260713",
+      "core-coverage-ace-dec2025-10-retract-umbrella-covers-b68-20260713",
+      "core-coverage-ace-dec2025-10-retract-umbrella-covers-m57-20260713"
+    ],
+    "promotion_script": "scripts/promote-ace-december-2025-warning-cohort.ts",
+    "residual_adjudication_script": "scripts/adjudicate-ace-december-2025-residual-gaps.ts",
+    "focused_test": "packages/pipeline/test/records/corpus-ace-december-2025-warning-cohort.test.ts"
+  }
+}

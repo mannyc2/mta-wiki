@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "decision_id": "ace-b60-b68-m57-warning-phase-2025-12-08-route-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:cb81df5ab159c18671171291",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T22:45:00.000Z",
+  "rationale": "Approved exact-day occurrence occurrence:1ed365a241353614f72f025e binds the bounded December 8, 2025 ACE warning-phase cohort only to B60, B68, and M57. The broad raw route diagnostic is superseded by that reviewed occurrence; importing route candidates or route scope from the umbrella ACE program would create an unsupported cross-product.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_ace-program-expansion-dec2025",
+      "source_id": "nyct_key_performance_metrics_doc194001",
+      "evidence_id": "nyct_key_performance_metrics_doc194001#p001_c0002",
+      "block_id": "p001_c0002"
+    },
+    {
+      "record_id": "event_ace-program-expansion-dec2025",
+      "source_id": "nyct_key_performance_metrics_doc194001",
+      "evidence_id": "nyct_key_performance_metrics_doc194001#p003_c0003",
+      "block_id": "p003_c0003"
+    },
+    {
+      "record_id": "event_ace-program-expansion-dec2025",
+      "source_id": "nyct_key_performance_metrics_doc194001",
+      "evidence_id": "nyct_key_performance_metrics_doc194001#p010_c0011",
+      "block_id": "p010_c0011"
+    },
+    {
+      "record_id": "event_ace-program-expansion-dec2025",
+      "source_id": "nyct_key_performance_metrics_doc194001",
+      "evidence_id": "nyct_key_performance_metrics_doc194001#p011_c0009",
+      "block_id": "p011_c0009"
+    }
+  ],
+  "search_receipt_ids": []
+}

@@ -2749,6 +2749,7 @@
 - [[wiki/projects/project_access-a-ride-primary-carrier-options|Access-A-Ride Primary Carrier Option Years]] (project)
 - [[wiki/projects/project_accessibility-ada-design-build|Accessibility – Design-Build and bundling]] (project)
 - [[wiki/projects/project_ace-automated-camera-enforcement|Automated Camera Enforcement (ACE)]] (project)
+- [[wiki/projects/project_ace-b60-b68-m57-warning-cohort-2025-12-08|B60/B68/M57 ACE warning-phase cohort — December 8, 2025]] (project)
 - [[wiki/projects/project_ace-m2-m4-implementation-2025-05-19|M2/M4 ACE implementation cohort — May 19, 2025]] (project)
 - [[wiki/projects/project_ace-m42-m100-bx5-implementation-2025-05-27|M42/M100/BX5 ACE implementation cohort — May 27, 2025]] (project)
 - [[wiki/projects/project_ace-program|MTA ACE (Automated Camera Enforcement) Program]] (project)
@@ -7411,6 +7412,6 @@
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
 - event: 8072 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 21236 canonical records in `data/canonical/relations.jsonl`
+- relation: 21239 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
-- treatment_component: 2929 canonical records in `data/canonical/treatment_components.jsonl`
+- treatment_component: 2930 canonical records in `data/canonical/treatment_components.jsonl`

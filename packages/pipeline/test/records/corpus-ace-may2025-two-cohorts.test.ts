@@ -676,13 +676,13 @@ describe("May 2025 ACE occurrence promotion and residual coverage", () => {
     }
   });
 
-  it("pins the overall occurrence fixture totals after the two-cohort promotion", () => {
+  it("pins the current overall fixture totals while preserving the two May cohorts", () => {
     expect(readJson<OccurrenceSummary>(
       "data/contract-fixtures/operational-occurrences-v1/operational_occurrences_summary.json",
     )).toMatchObject({
-      occurrence_count: 134,
-      study_projection_eligible_count: 133,
-      candidate_projection_count: 169,
+      occurrence_count: 135,
+      study_projection_eligible_count: 134,
+      candidate_projection_count: 172,
     });
   });
 });

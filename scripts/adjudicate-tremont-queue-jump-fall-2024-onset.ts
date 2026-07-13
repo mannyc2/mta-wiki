@@ -195,7 +195,7 @@ const refreshedExistingReceipts = EXISTING_RECEIPT_IDS.map((receiptId) => {
   parseOperationalCoverageSearchReceipt(existing, receiptId);
   const rationale = receiptId === "broadway-center-running-lane-exact-onset-search"
     ? "Revalidated every persisted Broadway/Q70 source search and registry match against the current corpus fingerprint for retrospective language stating an exact physical activation date. The May presentation remains only a forecast, while later official sources establish delivered status by an as-of date without stating when the lane physically opened. Current corpus changes outside this event add no source-connected Broadway onset evidence."
-    : "Revalidated every persisted DeKalb/Lafayette source search and registry match against the current corpus fingerprint for a day- or month-level physical lane activation date. The two official decks continue to state only Summer 2024; current corpus changes outside this event add no source-connected exact onset evidence, and G Train shuttle-service dates remain non-equivalent to lane activation.";
+    : "Revalidated every persisted DeKalb/Lafayette source search and registry match against the current corpus fingerprint for a day- or month-level physical lane activation date. The two official decks continue to state only Summer 2024; current corpus changes outside this event add no source-connected exact onset evidence, and G Train shuttle-service dates remain non-equivalent to lane activation. August 12 was not inferred as the physical lane activation date.";
   const refreshed = parseOperationalCoverageSearchReceipt({
     ...existing,
     rationale,
