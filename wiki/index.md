@@ -7363,6 +7363,7 @@
 - [[wiki/sources/ny_open_data_mta_bus_schedule_boundaries_2024|MTA Bus Schedules 2024 six-route boundary and weekday-count query]] (source)
 - [[wiki/sources/nyc_dot_current_projects_july_2026|NYC DOT Current Projects]] (source)
 - [[wiki/sources/nyc_dot_flatbush_installation_begins_2025|Transformative Flatbush Avenue Bus Lane Installation Begins This Week]] (source)
+- [[wiki/sources/nyc_dot_gun_hill_road_completion_2023|NYC DOT Celebrates Completion of East Gun Hill Road Redesign]] (source)
 - [[wiki/sources/nyc_mayor_broadway_created_june_2026|Mayor Mamdani: The World Cup Belongs to New Yorkers]] (source)
 - [[wiki/sources/nyct_itsp_solicitation_notice_2026|NYCT ITSP Solicitation Notice]] (source)
 - [[wiki/sources/nyct_key_performance_metrics_doc194001|NYCT Key Performance Metrics - December 2025]] (source)
@@ -7410,8 +7411,8 @@
 ## Data-Only Records
 
 - claim: 8928 canonical records in `data/canonical/claims.jsonl`
-- event: 8072 canonical records in `data/canonical/events.jsonl`
+- event: 8074 canonical records in `data/canonical/events.jsonl`
 - metric_claim: 36530 canonical records in `data/canonical/metric_claims.jsonl`
-- relation: 21239 canonical records in `data/canonical/relations.jsonl`
+- relation: 21247 canonical records in `data/canonical/relations.jsonl`
 - route: 1 canonical records in `data/canonical/routes.jsonl`
-- treatment_component: 2930 canonical records in `data/canonical/treatment_components.jsonl`
+- treatment_component: 2931 canonical records in `data/canonical/treatment_components.jsonl`

@@ -4,6 +4,28 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-14
+
+### Tracker rc19 Reject Reconciliation
+
+- Reconciled all `473` non-authorizing Tracker rc19 reject recommendations one-for-one against the
+  pinned candidate set, hard-gate triage, deep review, corrected reconciliation, and immutable MTA
+  Wiki `v1-rc19` manifest. The deterministic ledger reproduces the `434` mechanical rows (`219`
+  spine-only, `152` spine-plus-calendar, `63` calendar-only) and `39` deep-review rows. Every row
+  remains explicitly non-authorizing and carries its evidence hashes, owner, action, and blocker.
+- Repaired the two honestly source-fixable Gun Hill Road candidate identities with official NYC DOT
+  route/segment evidence for `BX28` and `BX38` and an MTA-stated October 31, 2023 completion phase.
+  The bounded 3.1-mile treatment folds both sources' provenance into one identity. Completion remains
+  a milestone rather than first operational onset, so no occurrence or study authorization is
+  fabricated; both rows still require an exact treated-lane outcome spine and a phase-preserving
+  downstream consumer.
+- After the source repair, all `473` rows remain blocked: exclusive dispositions are `321` MTA
+  route/treatment binding gaps, `2` MTA date/phase gaps, `2` Tracker exact-lane gaps, `112` Tracker
+  pattern-grouping gaps, `8` outcome-window gaps, `8` causal/confounder rejections, and `20`
+  intentionally non-independent later ACE phases. Exact non-exclusive Tracker work packets preserve
+  overlaps and require candidate-set-bound human approval; no gate, calendar, spine, or causal claim
+  was weakened.
+
 ## 2026-07-13
 
 ### Queens Redesign Operational Corpus Completed

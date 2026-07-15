@@ -11,20 +11,24 @@ source_ids:
   - "meeting_doc_127471"
   - "meeting_doc_160441"
   - "mta_automated_camera_enforcement"
+  - "nyc_dot_gun_hill_road_completion_2023"
 local_observation_id: "route_bx28_addendum_update"
 local_observation_ids:
   - "route_bx28_ace"
   - "route_bx28_addendum_update"
+  - "route_bx28_gun_hill_completion_2023"
   - "route_meeting_doc_127471_bx28"
   - "route_meeting_doc_160441_bx28"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-20T22:29:15.023Z"
+generated_at: "2026-07-14T22:59:35.103Z"
+raw_text: "East Gun Hill Road serves 40,000 daily bus riders across the Bx28 and Bx38 routes — connecting to other local buses and the 2, 4, 5, and D subway lines. The route also connects to community institutions, residential centers, and commercial hubs — including Montefiore and North Central Bronx hospitals, Co-Op City, the Jerome-Gun Hill Business Improvement District, and The Mall at Bay Plaza. New bus-only lanes and turn bays will help bus riders cut through congestion and double parking, which had slowed buses to less than five m.p.h. during peak commuting times."
 submission_ids:
   - "sub_001fa42b2a981a9f"
   - "sub_2367484315f1f783"
   - "sub_3302c372367b8678"
   - "sub_9b8bac4e9c2a3949"
+  - "sub_fe11fd8d8ab33147"
 payload:
   _merged_field_values:
     description:
@@ -93,6 +97,16 @@ evidence_refs:
     source_id: "meeting_doc_160441"
     source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
     text_sha256: "sha256:385178108f7be74ba367420569e47119d97e73e0fdd68dc1ff9610a748e6587a"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0021"
+    evidence_id: "nyc_dot_gun_hill_road_completion_2023#p001_b0021"
+    page_number: 1
+    role: "route_identity"
+    source_id: "nyc_dot_gun_hill_road_completion_2023"
+    source_path: "raw/sources/nyc_dot_gun_hill_road_completion_2023/blocks.jsonl"
+    source_quote: "Bx28 and Bx38 routes"
+    text_sha256: "sha256:f2d50c0df7d117ee3f132cf6496b5e1c9f938e889b2a9f2b323178d6a1a77a86"
     text_source: "raw_text"
 ---
 
