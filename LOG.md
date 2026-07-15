@@ -25,6 +25,13 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   intentionally non-independent later ACE phases. Exact non-exclusive Tracker work packets preserve
   overlaps and require candidate-set-bound human approval; no gate, calendar, spine, or causal claim
   was weakened.
+- Cut immutable, unpromoted release `v1-rc20` from generator commit `7b6b89ba`: manifest SHA-256
+  `a2e9147fbb3db3b27a48df27f9550a8b31ab28bc85e30b7166d75b46b54e1a08`. Two fresh exports
+  reproduced all `20` addressed files and the manifest byte-for-byte. The operational-occurrence and
+  route-anchor SHA-256 values remain unchanged from rc19 at
+  `424ee1ceed24bc8c8af77d49e328c0f6bb7859e88a619bbb79a0c13ac7ed5399` and
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`; the deterministic quality
+  report resolves all `134,586` evidence references. `LATEST` intentionally remains `v1-rc5`.
 
 ## 2026-07-13
 
