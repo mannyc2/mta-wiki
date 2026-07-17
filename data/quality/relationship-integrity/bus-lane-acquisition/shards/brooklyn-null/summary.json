@@ -13,7 +13,7 @@
     "study-event-v2:ea0ab416262ceed4e7184116"
   ],
   "exact_route_binding_proved_count": 8,
-  "exclusions_sha256": "bb6453f936453b3e356eed6209d78c8a491d7fdf9775f480a99ccef01abc5d14",
+  "exclusions_sha256": "bafe8d4ba43709cdc3561d57f871c1195495127dc49de1aee44712f05bba4271",
   "exclusive_primary_disposition_counts": {
     "completed_search_route_linkage_unresolved": 52,
     "linkage_supported_phase_unresolved": 8
@@ -21,7 +21,7 @@
   "existing_canonical_link_count": 8,
   "explicitly_excluded_count": 60,
   "operational_occurrence_added_or_updated_count": 0,
-  "receipts_sha256": "f1af1a4d582e73ddc1ede7346fd4515a803b3624b96d6403bd14a80e9ee1c989",
+  "receipts_sha256": "8806c619a6a3cbcdf4233f74fb58cab8d243651b649b69c02c8f8c4c24344a10",
   "researched_count": 60,
   "researched_on": "2026-07-15",
   "route_partition_counts": {

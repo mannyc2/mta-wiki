@@ -318,7 +318,7 @@ const RESEARCH: Record<string, CorridorResearch> = {
     source_ids: [...COMMON, "church_projects", "dot_projects_2019"], exact_project_routes: ["B35"], project_route_basis: "church_projects",
     project_route_locator: "HTML section: Church Avenue Transit & Traffic Improvements",
     project_route_supported_claim: "The Church Avenue project description identifies B35 as a route served by the bus-lane improvements.",
-    canonical_links: { B35: ["relation_project-serves-b35"] },
+    canonical_links: { B35: ["relation_project-serves-b35_2"] },
   },
   "Flatbush Avenue": {
     web_query: "site:nyc.gov/html/dot Flatbush Avenue bus lane B41 B67 2025 official community board",

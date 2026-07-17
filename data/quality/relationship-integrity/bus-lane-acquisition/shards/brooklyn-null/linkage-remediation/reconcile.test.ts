@@ -53,6 +53,20 @@ describe("Brooklyn/null supported-linkage reconciliation v1", () => {
       && item.official_routes.length > 0
       && item.supported_claim.length > 0
     )).toBe(true);
+    const b35 = campaign.decisions.find(
+      (decision) =>
+        decision.candidate_id ===
+        "study-event-v2:2d2be03b8437c8af3bf6ddef",
+    )!;
+    expect(b35.relation_proofs).toHaveLength(1);
+    expect(b35.relation_proofs[0]!.relation_id).toBe(
+      "relation_project-serves-b35_2",
+    );
+    expect(
+      b35.relation_proofs[0]!.evidence_refs.map(
+        (ref) => ref.evidence_id,
+      ),
+    ).toEqual(["church_ave_cb12_jun2019#p007_c0002"]);
   });
 
   it("remediates only the proved B54 route-to-corridor gap through accepted submissions", () => {

@@ -23,6 +23,24 @@ function generatedRows(): LinkageReconciliationRow[] {
     .map((line) => JSON.parse(line) as LinkageReconciliationRow);
 }
 
+function canonicalRelationHashes(): Map<string, string> {
+  return new Map(
+    readFileSync(
+      join(
+        outputDir,
+        "../../../../canonical/relations.jsonl",
+      ),
+      "utf8",
+    )
+      .split(/\r?\n/u)
+      .filter(Boolean)
+      .map((line) => {
+        const row = JSON.parse(line) as { record_id: string };
+        return [row.record_id, sha256(line)] as const;
+      }),
+  );
+}
+
 describe("bus-lane supported-linkage reconciliation", () => {
   it("reconciles the truth-correct 54-row gate with exact exclusive statuses", () => {
     expect(campaign.rows).toEqual(generatedRows());
@@ -38,14 +56,21 @@ describe("bus-lane supported-linkage reconciliation", () => {
     });
   });
 
-  it("proves endpoint, type, and evidence validity against canonical plus accepted-pending records", () => {
+  it("proves endpoint, type, evidence, and raw-byte identity against current canonical records", () => {
+    const rawHashes = canonicalRelationHashes();
     for (const row of campaign.rows) {
       expect(row.relation_proof.endpoints_resolve).toBe(true);
       expect(row.relation_proof.endpoint_type_valid).toBe(true);
       expect(row.relation_proof.local_observation_only_endpoint).toBe(false);
       expect(row.relation_proof.relation_evidence_hash_valid).toBe(true);
+      expect(row.relation_proof.current_canonical_materialization).toBe(
+        true,
+      );
       expect(row.relation_proof.relation_evidence_refs.length).toBeGreaterThan(0);
       expect(row.relation_proof.route_variant_exact).toBe(true);
+      expect(row.relation_proof.record_sha256).toBe(
+        rawHashes.get(row.relation_proof.relation_id),
+      );
       expect(row.authoritative_linkage_evidence.source_sha256).toMatch(/^[0-9a-f]{64}$/u);
       if (row.exclusive_primary_status === "implemented_pending") {
         expect(row.relation_proof.record_status).toBe("accepted_pending_submission");
@@ -58,6 +83,13 @@ describe("bus-lane supported-linkage reconciliation", () => {
         expect(row.relation_proof.supersession).toBeNull();
       }
     }
+    expect(
+      campaign.rows.find(
+        (row) =>
+          row.candidate_id ===
+          "study-event-v2:2d2be03b8437c8af3bf6ddef",
+      )?.relation_proof.relation_id,
+    ).toBe("relation_project-serves-b35_2");
   });
 
   it("follows the live Staten Island retirement ledger to the effective replacement relations", () => {

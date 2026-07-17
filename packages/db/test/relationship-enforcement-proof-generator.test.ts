@@ -335,6 +335,7 @@ function sourceValues(
         type_violation_count: 0,
         evidence_violation_count: 0,
         record_hash_violation_count: 0,
+        materialization_status_violation_count: 0,
         reconciliation_identity_violation_count: 0,
         canonical_projection_violation_count: 0,
         violation_count: 0,

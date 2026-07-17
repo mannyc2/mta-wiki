@@ -108,7 +108,7 @@ const EXPECTED_CANDIDATES: ExpectedCandidate[] = [
   {
     candidateId: "study-event-v2:2d2be03b8437c8af3bf6ddef",
     normalizedRouteId: "B35",
-    relationIds: ["relation_project-serves-b35"],
+    relationIds: ["relation_project-serves-b35_2"],
     action: "verified_existing_canonical",
   },
   {

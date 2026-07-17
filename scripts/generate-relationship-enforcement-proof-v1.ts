@@ -189,6 +189,7 @@ type ReconciliationRow = {
     endpoint_type_valid: boolean;
     relation_evidence_hash_valid: boolean;
     record_status: string;
+    current_canonical_materialization: boolean;
     record_sha256: string;
     pending_journal_path: string | null;
     pending_submission_ids: string[];
@@ -707,6 +708,7 @@ function deriveLinkageMaterializationSummary(
   let typeViolationCount = 0;
   let evidenceViolationCount = 0;
   let recordHashViolationCount = 0;
+  let materializationStatusViolationCount = 0;
   for (const row of rows) {
     const proof = row.relation_proof;
     const canonical = canonicalById.get(proof.relation_id);
@@ -728,6 +730,9 @@ function deriveLinkageMaterializationSummary(
       proof.record_sha256
     ) {
       recordHashViolationCount += 1;
+    }
+    if (proof.current_canonical_materialization !== true) {
+      materializationStatusViolationCount += 1;
     }
     const canonicalPayload = canonical.payload;
     if (
@@ -799,7 +804,8 @@ function deriveLinkageMaterializationSummary(
     evidenceViolationCount +
     reconciliationIdentityViolationCount +
     canonicalProjectionViolationCount +
-    recordHashViolationCount;
+    recordHashViolationCount +
+    materializationStatusViolationCount;
   return {
     schema_version: 1,
     campaign_id:
@@ -815,6 +821,8 @@ function deriveLinkageMaterializationSummary(
     type_violation_count: typeViolationCount,
     evidence_violation_count: evidenceViolationCount,
     record_hash_violation_count: recordHashViolationCount,
+    materialization_status_violation_count:
+      materializationStatusViolationCount,
     reconciliation_identity_violation_count:
       reconciliationIdentityViolationCount,
     canonical_projection_violation_count:
@@ -3292,6 +3300,7 @@ function assertDerivedSourceShape(
         value.type_violation_count === 0 &&
         value.evidence_violation_count === 0 &&
         value.record_hash_violation_count === 0 &&
+        value.materialization_status_violation_count === 0 &&
         value.reconciliation_identity_violation_count === 0 &&
         value.canonical_projection_violation_count === 0 &&
         value.violation_count === 0 &&

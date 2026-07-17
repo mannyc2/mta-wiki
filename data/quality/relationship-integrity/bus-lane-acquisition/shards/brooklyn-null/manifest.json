@@ -21,19 +21,19 @@
       "sha256": "725909c3fd12b365b42cfb49ec880a8b839d93ab0be82d92c8db661e8101c7ac"
     },
     {
-      "bytes": 427852,
+      "bytes": 427854,
       "path": "receipts.jsonl",
-      "sha256": "f1af1a4d582e73ddc1ede7346fd4515a803b3624b96d6403bd14a80e9ee1c989"
+      "sha256": "8806c619a6a3cbcdf4233f74fb58cab8d243651b649b69c02c8f8c4c24344a10"
     },
     {
       "bytes": 44599,
       "path": "registry-projection-exclusions.jsonl",
-      "sha256": "bb6453f936453b3e356eed6209d78c8a491d7fdf9775f480a99ccef01abc5d14"
+      "sha256": "bafe8d4ba43709cdc3561d57f871c1195495127dc49de1aee44712f05bba4271"
     },
     {
       "bytes": 1735,
       "path": "summary.json",
-      "sha256": "4a41d4b07f663fa5ee9a1efe10267d41f8e1b06b9cc66063f66e465fa34f1d6e"
+      "sha256": "260e4cb612c6a74dd15bbd1d958aefb3e28fc8b6331eef46f96d1cd1f62164f6"
     },
     {
       "bytes": 1243,
@@ -44,7 +44,7 @@
   "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
   "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
   "generated_on": "2026-07-15",
-  "manifest_payload_sha256": "4b2559d97a2c231f867cf7ebc8e4fc202039ced953c9380a4e746493e6fbc0a2",
+  "manifest_payload_sha256": "1974f43fb7c3b4227f4f0163d757e86e455cad545995fee2ee17d8696df0641d",
   "schema_version": 1,
   "shard": "brooklyn-null"
 }

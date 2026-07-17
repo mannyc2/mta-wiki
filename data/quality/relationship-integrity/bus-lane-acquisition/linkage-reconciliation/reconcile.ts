@@ -277,6 +277,7 @@ export type LinkageReconciliationRow = {
   relation_proof: {
     relation_id: string;
     record_status: "canonical_existing" | "accepted_pending_submission";
+    current_canonical_materialization: true;
     record_sha256: string;
     pending_journal_path: string | null;
     pending_submission_ids: string[];
@@ -966,14 +967,58 @@ export function buildLinkageReconciliationCampaign(): LinkageReconciliationCampa
       return Boolean((subject && routeRecordMatches(subject, candidate.route_id)) || (object && routeRecordMatches(object, candidate.route_id)));
     }).sort((left, right) => relationRank(left) - relationRank(right) || compareStrings(left.record_id, right.record_id));
     invariant(matchingRelations.length > 0, `${candidate.candidate_id} action has no exact route-variant relation`);
-    const relation = matchingRelations[0]!;
+    const selectedRelation = matchingRelations[0]!;
+    const pendingRelation =
+      spec.status === "implemented_pending"
+        ? selectedRelation
+        : null;
+    const relation =
+      spec.status === "implemented_pending"
+        ? canonicalById.get(selectedRelation.record_id)
+        : selectedRelation;
+    invariant(
+      relation,
+      `${selectedRelation.record_id} accepted submission has not materialized into current canonical data`,
+    );
+    if (pendingRelation) {
+      for (const key of [
+        "relation_kind",
+        "relation_family",
+        "subject_id",
+        "object_id",
+      ] as const) {
+        invariant(
+          relation.payload[key] === pendingRelation.payload[key],
+          `${relation.record_id} canonical materialization changed ${key}`,
+        );
+      }
+      const pendingEvidence = verifyRelationEvidence(pendingRelation)
+        .sort((left, right) =>
+          compareStrings(left.evidence_id, right.evidence_id)
+        );
+      const canonicalEvidence = verifyRelationEvidence(relation)
+        .sort((left, right) =>
+          compareStrings(left.evidence_id, right.evidence_id)
+        );
+      invariant(
+        stableJson(pendingEvidence as never) ===
+          stableJson(canonicalEvidence as never),
+        `${relation.record_id} canonical materialization changed exact evidence`,
+      );
+      invariant(
+        pendingRelation.submission_ids.every((submissionId) =>
+          relation.submission_ids.includes(submissionId)
+        ),
+        `${relation.record_id} canonical materialization lost accepted-submission lineage`,
+      );
+    }
     const relationKind = relation.payload.relation_kind;
     const relationFamily = relation.payload.relation_family;
     const subjectId = relation.payload.subject_id;
     const objectId = relation.payload.object_id;
     invariant(typeof relationKind === "string" && typeof relationFamily === "string", `${relation.record_id} lacks relation kind/family`);
     invariant(typeof subjectId === "string" && typeof objectId === "string", `${relation.record_id} lacks canonical endpoints`);
-    const endpointMap = spec.status === "verified_existing" ? canonicalById : combinedById;
+    const endpointMap = canonicalById;
     const subject = endpointMap.get(subjectId);
     const object = endpointMap.get(objectId);
     invariant(subject && object, `${relation.record_id} endpoint does not resolve`);
@@ -986,14 +1031,14 @@ export function buildLinkageReconciliationCampaign(): LinkageReconciliationCampa
     const contextEndpoint = subject.record_id === routeEndpoint.record_id ? object : subject;
     invariant(["project", "corridor", "treatment", "treatment_component", "segment"].includes(contextEndpoint.record_kind), `${relation.record_id} context endpoint is not physical/project scope: ${contextEndpoint.record_kind}`);
     const evidenceRefs = verifyRelationEvidence(relation);
-    const recordHash = spec.status === "verified_existing"
-      ? canonicalRelationHashes.get(relation.record_id)
-      : sha256(stableJson(relation as never));
+    const recordHash = canonicalRelationHashes.get(
+      relation.record_id,
+    );
     invariant(recordHash, `${relation.record_id} record hash missing`);
     const pendingJournalPath = spec.status === "implemented_pending" ? pending.journalByRecordId.get(relation.record_id) : undefined;
     if (spec.status === "implemented_pending") invariant(pendingJournalPath, `${relation.record_id} pending journal provenance missing`);
     const pendingSubmissionIds = spec.status === "implemented_pending"
-      ? [...relation.submission_ids].sort(compareStrings)
+      ? [...pendingRelation!.submission_ids].sort(compareStrings)
       : [];
     if (spec.status === "implemented_pending") {
       invariant(pendingSubmissionIds.length > 0, `${relation.record_id} has no active pending submissions`);
@@ -1090,6 +1135,7 @@ export function buildLinkageReconciliationCampaign(): LinkageReconciliationCampa
       relation_proof: {
         relation_id: relation.record_id,
         record_status: spec.status === "verified_existing" ? "canonical_existing" : "accepted_pending_submission",
+        current_canonical_materialization: true,
         record_sha256: recordHash,
         pending_journal_path: pendingJournalPath ?? null,
         pending_submission_ids: pendingSubmissionIds,
