@@ -55,6 +55,29 @@ export const RELATIONSHIP_COMPLETENESS_REQUIRED_WARNING_CODES = [
   "RC_TREATMENT_PHYSICALITY_REVIEW_REQUIRED",
 ] as const;
 
+/**
+ * Frozen reviewed bus-lane inventory for the v1 enforcement migration. This is intentionally
+ * not derived from the completeness summary: a self-consistent but shrunken summary must not be
+ * able to authorize enforcement.
+ */
+export const RELATIONSHIP_COMPLETENESS_BUS_LANE_INVENTORY_V1 = {
+  decisions: {
+    path:
+      "data/relationship-integrity/dispositions/v1/bus-lane-treatments/decisions.jsonl",
+    row_count: 669,
+    sha256:
+      "6d9e8a5d16bc2066434411e96051400cdbee1617c110266e0b3fbfa22b794439",
+  },
+  counts_by_primary_disposition: {
+    aggregate_or_unbounded_treatment: 110,
+    non_lane_supporting_feature: 17,
+    non_physical_enforcement_or_control: 42,
+    physical_scope_satisfied: 163,
+    review_required: 0,
+    reviewed_non_projectable_physical_scope_unproven: 337,
+  },
+} as const;
+
 export type RelationshipCompletenessRequiredSelector =
   (typeof RELATIONSHIP_COMPLETENESS_REQUIRED_SELECTORS)[number];
 

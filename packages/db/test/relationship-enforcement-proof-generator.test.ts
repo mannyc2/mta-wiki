@@ -529,6 +529,13 @@ function sourceValues(
     relationship_completeness: {
       relationship_completeness_summary: {
         schema_version: 1,
+        input_pins: [{
+          path:
+            "data/relationship-integrity/dispositions/v1/bus-lane-treatments/decisions.jsonl",
+          row_count: 669,
+          sha256:
+            "6d9e8a5d16bc2066434411e96051400cdbee1617c110266e0b3fbfa22b794439",
+        }],
         enforcement_migration: migration,
         warning_definitions:
           RELATIONSHIP_COMPLETENESS_REQUIRED_WARNING_CODES.map(
@@ -539,13 +546,21 @@ function sourceValues(
           eligible_event_ids_outside_operational_denominator: 0,
         },
         bus_lane_treatments: {
-          denominator_count: 663,
-          audited_treatment_count: 663,
-          materialized_treatment_count: 663,
+          denominator_count: 669,
+          audited_treatment_count: 669,
+          materialized_treatment_count: 669,
           accepted_pending_addition_count: 0,
-          exact_evidence_bound_count: 663,
-          physical_scope_satisfied_count: 156,
-          reviewed_non_projectable_count: 507,
+          counts_by_primary_disposition: {
+            aggregate_or_unbounded_treatment: 110,
+            non_lane_supporting_feature: 17,
+            non_physical_enforcement_or_control: 42,
+            physical_scope_satisfied: 163,
+            review_required: 0,
+            reviewed_non_projectable_physical_scope_unproven: 337,
+          },
+          exact_evidence_bound_count: 669,
+          physical_scope_satisfied_count: 163,
+          reviewed_non_projectable_count: 506,
           omitted_treatment_count: 0,
           warning_treatment_count: 0,
           review_complete: true,
@@ -964,6 +979,49 @@ describe("relationship enforcement proof generator", () => {
         sourceTexts: fabricatedCompatibility,
       })
     ).toThrow("reviewed schema-v2 incompatibility");
+
+    const shrunkCompleteness = new Map(sourceTexts);
+    const completenessSource =
+      RELATIONSHIP_ENFORCEMENT_GATE_SOURCES
+        .relationship_completeness[0]!;
+    const completenessSummary = JSON.parse(
+      shrunkCompleteness.get(completenessSource.path)!,
+    ) as {
+      bus_lane_treatments: {
+        denominator_count: number;
+        audited_treatment_count: number;
+        materialized_treatment_count: number;
+        exact_evidence_bound_count: number;
+        physical_scope_satisfied_count: number;
+        reviewed_non_projectable_count: number;
+        counts_by_primary_disposition: {
+          reviewed_non_projectable_physical_scope_unproven: number;
+        };
+      };
+    };
+    const treatments = completenessSummary.bus_lane_treatments;
+    treatments.denominator_count = 668;
+    treatments.audited_treatment_count = 668;
+    treatments.materialized_treatment_count = 668;
+    treatments.exact_evidence_bound_count = 668;
+    treatments.reviewed_non_projectable_count = 505;
+    treatments.counts_by_primary_disposition
+      .reviewed_non_projectable_physical_scope_unproven = 336;
+    shrunkCompleteness.set(
+      completenessSource.path,
+      `${stableJson(
+        completenessSummary as unknown as JsonValue,
+      )}\n`,
+    );
+    expect(() =>
+      buildRelationshipEnforcementOutputs({
+        contract,
+        matrix,
+        sourceTexts: shrunkCompleteness,
+      })
+    ).toThrow(
+      "source backlog is not zero: relationship_completeness",
+    );
   });
 
   it("rejects a content-addressed gate that substitutes a noncanonical source path", () => {

@@ -1,7 +1,10 @@
 import { existsSync, readFileSync } from "node:fs";
 import { isAbsolute, join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
-import { RELATIONSHIP_COMPLETENESS_REQUIRED_WARNING_CODES } from "./relationship-completeness-contract.js";
+import {
+  RELATIONSHIP_COMPLETENESS_BUS_LANE_INVENTORY_V1,
+  RELATIONSHIP_COMPLETENESS_REQUIRED_WARNING_CODES,
+} from "./relationship-completeness-contract.js";
 import { sha256, stableJson } from "./stable-json.js";
 import type { JsonValue, MtaObservationKind } from "./types.js";
 
@@ -2152,6 +2155,27 @@ function assertRelationshipEnforcementGateArtifact(
       summary.bus_lane_treatments,
       "completeness bus-lane treatments",
     );
+    const busLaneTreatmentDispositionCounts = enforcementObject(
+      busLaneTreatments.counts_by_primary_disposition,
+      "completeness bus-lane treatment dispositions",
+    );
+    const completenessInputPins = Array.isArray(
+        summary.input_pins,
+      )
+      ? summary.input_pins.map((entry, index) =>
+          enforcementObject(
+            entry,
+            `completeness input pin ${index}`,
+          ),
+        )
+      : [];
+    const busLaneDecisionPins = completenessInputPins.filter(
+      (pin) =>
+        pin.path ===
+        RELATIONSHIP_COMPLETENESS_BUS_LANE_INVENTORY_V1.decisions
+          .path,
+    );
+    const busLaneDecisionPin = busLaneDecisionPins[0];
     const requiredMigrationKeys = [
       "bus_lane_treatment_completeness_ready",
       "eligible_occurrence_core_roles_ready",
@@ -2227,7 +2251,23 @@ function assertRelationshipEnforcementGateArtifact(
         occurrences.eligible_event_ids_outside_operational_denominator ===
           0 &&
         busLaneTreatments.review_complete === true &&
-        busLaneTreatments.denominator_count === 663 &&
+        busLaneTreatments.denominator_count ===
+          RELATIONSHIP_COMPLETENESS_BUS_LANE_INVENTORY_V1
+            .decisions.row_count &&
+        busLaneDecisionPins.length === 1 &&
+        busLaneDecisionPin?.row_count ===
+          RELATIONSHIP_COMPLETENESS_BUS_LANE_INVENTORY_V1
+            .decisions.row_count &&
+        busLaneDecisionPin?.sha256 ===
+          RELATIONSHIP_COMPLETENESS_BUS_LANE_INVENTORY_V1
+            .decisions.sha256 &&
+        stableJson(
+          busLaneTreatmentDispositionCounts as JsonValue,
+        ) ===
+          stableJson(
+            RELATIONSHIP_COMPLETENESS_BUS_LANE_INVENTORY_V1
+              .counts_by_primary_disposition as JsonValue,
+          ) &&
         busLaneTreatments.denominator_count ===
           busLaneTreatments.audited_treatment_count &&
         busLaneTreatments.denominator_count ===
