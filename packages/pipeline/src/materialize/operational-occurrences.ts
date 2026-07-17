@@ -20,9 +20,13 @@ import {
 import type { OperationalOccurrenceAcceptedDecision } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
 import type { RouteAnchorRow } from "@mta-wiki/pipeline/materialize/route-anchors";
 
-export const OPERATIONAL_OCCURRENCE_SCHEMA_VERSION = 1 as const;
+export const OPERATIONAL_OCCURRENCE_SCHEMA_VERSION = 2 as const;
 
-export type OperationalOccurrenceEvidenceRole = OperationalAnchorReviewEvidenceRole | "bundle_analysis_family";
+export type OperationalOccurrenceEvidenceRole =
+  | OperationalAnchorReviewEvidenceRole
+  | "bundle_analysis_family"
+  | "phase_relation"
+  | "physical_scope";
 
 export type OperationalOccurrenceEvidenceBinding = Omit<OperationalAnchorReviewEvidenceBinding, "role"> & {
   role: OperationalOccurrenceEvidenceRole;
@@ -85,6 +89,15 @@ export type OperationalOccurrenceRow = {
   occurrence_review_decision_id: string;
   founding_key: string;
   resolution_cluster_id: string | null;
+  /** Canonical event rows are the physical phase identities. `single_phase` is scoped to this
+   * occurrence identity and does not assert that the parent project has no other phases. */
+  phase_record_ids: string[];
+  phase_relation_record_ids: string[];
+  phase_relation_evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+  phase_relation_disposition: "single_phase" | "related_phases";
+  physical_scope_record_ids: string[];
+  physical_scope_relation_record_ids: string[];
+  physical_scope_evidence_bindings: OperationalOccurrenceEvidenceBinding[];
   observations: OperationalOccurrenceObservation[];
   resolved_status: "realized";
   resolved_onset: OperationalOccurrenceResolvedOnset;
@@ -135,6 +148,89 @@ const supportedBundleAnalysisFamilies = new Set([
   // Legacy decision decoder alias. New decisions use canonical signal_priority.
   "transit_signal_priority",
 ]);
+
+/**
+ * Multi-phase occurrence projection is deliberately narrower than the general relation ontology.
+ * These are the existing canonical sequence semantics that can state an earlier/later event
+ * relationship. An approved occurrence review must still select the relation, both endpoints must
+ * be canonical event rows in that occurrence, and the relation must be source-stated, delivered,
+ * non-quarantined, and exactly evidence-bound.
+ */
+export const OPERATIONAL_OCCURRENCE_PHASE_RELATION_ALLOWLIST = [
+  { relation_kind: "follows", relation_family: "timeline_context", assertion_status: "delivered" },
+  { relation_kind: "has_subsequent_event", relation_family: "timeline_context", assertion_status: "delivered" },
+  { relation_kind: "precedes", relation_family: "dependency_or_reference", assertion_status: "delivered" },
+  { relation_kind: "precedes_event", relation_family: "timeline_context", assertion_status: "delivered" },
+  { relation_kind: "predecessor_of", relation_family: "dependency_or_reference", assertion_status: "delivered" },
+] as const;
+
+/**
+ * Bounded segments currently use canonical corridor rows. A physical scope may be projected only
+ * by a reviewed direct edge between the exact treatment component and that corridor. No current
+ * indirect relation kind proves component-specific scope, so project-to-corridor traversal is
+ * intentionally absent from this allowlist.
+ */
+export const OPERATIONAL_OCCURRENCE_PHYSICAL_SCOPE_RELATION_ALLOWLIST = [
+  {
+    relation_kind: "applied_on_corridor",
+    relation_family: "corridor_scope",
+    assertion_status: "delivered",
+    subject_kind: "treatment_component",
+    object_kind: "corridor",
+  },
+  {
+    relation_kind: "located_on_corridor",
+    relation_family: "corridor_scope",
+    assertion_status: "delivered",
+    subject_kind: "treatment_component",
+    object_kind: "corridor",
+  },
+  {
+    relation_kind: "has_treatment",
+    relation_family: "treatment_context",
+    assertion_status: "delivered",
+    subject_kind: "corridor",
+    object_kind: "treatment_component",
+  },
+] as const;
+
+function relationSemanticKey(record: MtaCanonicalRecord): string {
+  return [
+    text(record.payload.relation_kind) ?? "",
+    text(record.payload.relation_family) ?? "",
+    text(record.payload.assertion_status) ?? "",
+  ].join("|");
+}
+
+const allowedPhaseRelationSemantics = new Set(
+  OPERATIONAL_OCCURRENCE_PHASE_RELATION_ALLOWLIST.map((entry) =>
+    [entry.relation_kind, entry.relation_family, entry.assertion_status].join("|"),
+  ),
+);
+
+function assertSourceStatedReviewedRelation(record: MtaCanonicalRecord, path: string): void {
+  if (record.record_kind !== "relation") throw new Error(`${path} must resolve to a canonical relation`);
+  if (record.truth_status !== "source_stated") throw new Error(`${path} must be source_stated`);
+  if (record.review_state === "quarantined") throw new Error(`${path} is quarantined`);
+  if (record.evidence_refs.length === 0) throw new Error(`${path} must have exact canonical evidence`);
+  if (record.evidence_refs.some((ref) => !ref.evidence_id)) {
+    throw new Error(`${path} has an evidence ref without evidence_id`);
+  }
+}
+
+function relationEvidenceBindings(
+  record: MtaCanonicalRecord,
+  role: "phase_relation" | "physical_scope",
+  path: string,
+): OperationalOccurrenceEvidenceBinding[] {
+  assertSourceStatedReviewedRelation(record, path);
+  return uniqueBindings(record.evidence_refs.map((ref) => ({
+    role,
+    record_id: record.record_id,
+    source_id: ref.source_id,
+    evidence_id: ref.evidence_id!,
+  })));
+}
 
 function text(value: JsonValue | undefined): string | null {
   if (typeof value === "string" && value.trim()) return value.trim();
@@ -276,6 +372,139 @@ function eventBundleAnalysisFamily(event: MtaCanonicalRecord | undefined): strin
   return text(event.payload.bundle_analysis_family) ?? text(event.payload.analysis_family);
 }
 
+type OperationalOccurrencePhysicalScope = {
+  recordIds: string[];
+  relationRecordIds: string[];
+  evidenceBindings: OperationalOccurrenceEvidenceBinding[];
+};
+
+type DirectPhysicalScopeEndpoints = {
+  treatmentRecordId: string;
+  scopeRecordId: string;
+};
+
+function directPhysicalScopeEndpoints(input: {
+  relation: MtaCanonicalRecord;
+  treatmentRecordIds: ReadonlySet<string>;
+  recordsById: ReadonlyMap<string, MtaCanonicalRecord>;
+  path: string;
+}): DirectPhysicalScopeEndpoints | null {
+  const subjectId = relationEndpoint(input.relation, "subject_id");
+  const objectId = relationEndpoint(input.relation, "object_id");
+  if (!subjectId || !objectId) return null;
+  const subject = input.recordsById.get(subjectId);
+  const object = input.recordsById.get(objectId);
+  const isExactTreatmentCorridorPair =
+    (input.treatmentRecordIds.has(subjectId) && subject?.record_kind === "treatment_component" && object?.record_kind === "corridor") ||
+    (input.treatmentRecordIds.has(objectId) && object?.record_kind === "treatment_component" && subject?.record_kind === "corridor");
+  if (!isExactTreatmentCorridorPair) return null;
+
+  const allowed = OPERATIONAL_OCCURRENCE_PHYSICAL_SCOPE_RELATION_ALLOWLIST.some((entry) =>
+    text(input.relation.payload.relation_kind) === entry.relation_kind &&
+    text(input.relation.payload.relation_family) === entry.relation_family &&
+    text(input.relation.payload.assertion_status) === entry.assertion_status &&
+    subject?.record_kind === entry.subject_kind &&
+    object?.record_kind === entry.object_kind,
+  );
+  if (!allowed) {
+    throw new Error(
+      `${input.path} directly connects an occurrence treatment to a corridor with unapproved physical-scope semantics ` +
+        `${relationSemanticKey(input.relation) || "missing"}`,
+    );
+  }
+  assertSourceStatedReviewedRelation(input.relation, input.path);
+  return subject?.record_kind === "treatment_component"
+    ? { treatmentRecordId: subjectId, scopeRecordId: objectId }
+    : { treatmentRecordId: objectId, scopeRecordId: subjectId };
+}
+
+function occurrencePhysicalScope(input: {
+  treatmentRecordIds: readonly string[];
+  reviewedRelationRecordIds: readonly string[];
+  recordsById: ReadonlyMap<string, MtaCanonicalRecord>;
+}): OperationalOccurrencePhysicalScope {
+  const treatmentIds = new Set(input.treatmentRecordIds);
+  const scopes = uniqueSorted(input.reviewedRelationRecordIds).flatMap((relationId) => {
+    const relation = input.recordsById.get(relationId);
+    if (!relation || relation.record_kind !== "relation") {
+      throw new Error(`reviewed occurrence relation ${relationId} must resolve to a canonical relation`);
+    }
+    const endpoints = directPhysicalScopeEndpoints({
+      relation,
+      treatmentRecordIds: treatmentIds,
+      recordsById: input.recordsById,
+      path: `physical-scope relation ${relationId}`,
+    });
+    return endpoints ? [{ relation, endpoints }] : [];
+  });
+  const recordIds = uniqueSorted(scopes.map(({ endpoints }) => endpoints.scopeRecordId));
+  const relationRecordIds = uniqueSorted(scopes.map(({ relation }) => relation.record_id));
+  const evidenceBindings = uniqueBindings(scopes.flatMap(({ relation }) =>
+    relationEvidenceBindings(relation, "physical_scope", `physical-scope relation ${relation.record_id}`)));
+  return { recordIds, relationRecordIds, evidenceBindings };
+}
+
+type PhaseRelationEndpoints = { subjectId: string; objectId: string };
+
+function assertAllowedPhaseRelation(input: {
+  relation: MtaCanonicalRecord;
+  phaseRecordIds: ReadonlySet<string>;
+  recordsById: ReadonlyMap<string, MtaCanonicalRecord>;
+  path: string;
+}): PhaseRelationEndpoints {
+  assertSourceStatedReviewedRelation(input.relation, input.path);
+  if (!allowedPhaseRelationSemantics.has(relationSemanticKey(input.relation))) {
+    throw new Error(
+      `${input.path} has unapproved phase relation semantics ${relationSemanticKey(input.relation) || "missing"}`,
+    );
+  }
+  const subjectId = relationEndpoint(input.relation, "subject_id");
+  const objectId = relationEndpoint(input.relation, "object_id");
+  const subject = subjectId ? input.recordsById.get(subjectId) : undefined;
+  const object = objectId ? input.recordsById.get(objectId) : undefined;
+  if (
+    !subjectId ||
+    !objectId ||
+    subjectId === objectId ||
+    subject?.record_kind !== "event" ||
+    object?.record_kind !== "event" ||
+    !input.phaseRecordIds.has(subjectId) ||
+    !input.phaseRecordIds.has(objectId)
+  ) {
+    throw new Error(`${input.path} must connect two distinct canonical event records in the occurrence phase set`);
+  }
+  return { subjectId, objectId };
+}
+
+function assertConnectedPhaseGraph(
+  phaseRecordIds: readonly string[],
+  endpoints: readonly PhaseRelationEndpoints[],
+  path: string,
+): void {
+  if (phaseRecordIds.length === 1) {
+    if (endpoints.length !== 0) throw new Error(`${path} single phase must not project a phase relation`);
+    return;
+  }
+  if (endpoints.length === 0) throw new Error(`${path} binds multiple phase events without an allowed phase relation`);
+  const adjacency = new Map(phaseRecordIds.map((recordId) => [recordId, new Set<string>()]));
+  for (const endpoint of endpoints) {
+    adjacency.get(endpoint.subjectId)!.add(endpoint.objectId);
+    adjacency.get(endpoint.objectId)!.add(endpoint.subjectId);
+  }
+  const visited = new Set<string>();
+  const pending = [phaseRecordIds[0]!];
+  while (pending.length > 0) {
+    const current = pending.pop()!;
+    if (visited.has(current)) continue;
+    visited.add(current);
+    for (const next of adjacency.get(current) ?? []) pending.push(next);
+  }
+  if (visited.size !== phaseRecordIds.length) {
+    const missing = phaseRecordIds.filter((recordId) => !visited.has(recordId));
+    throw new Error(`${path} phase relations do not connect every phase identity: ${missing.join(", ")}`);
+  }
+}
+
 function occurrenceForEvent(input: {
   eventId: string;
   decisions: readonly OperationalAnchorReviewDecision[];
@@ -320,9 +549,6 @@ function occurrenceForEvent(input: {
   const bundleFamilyEvidenceBindings = bundleFamily
     ? uniqueBindings(eventEvidenceBindings.map((binding) => ({ ...binding, role: "bundle_analysis_family" as const })))
     : [];
-  const occurrenceEvidenceBindings = uniqueBindings([...evidenceBindings, ...bundleFamilyEvidenceBindings]);
-  const sourceIds = uniqueSorted(occurrenceEvidenceBindings.map((binding) => binding.source_id));
-  assertOfficialOccurrenceSources(sourceIds, input.records, `migrated:${input.eventId}`);
   const bundleSupported = Boolean(
     bundleFamily && supportedBundleAnalysisFamilies.has(bundleFamily) && bundleFamilyEvidenceBindings.length > 0,
   );
@@ -337,18 +563,37 @@ function occurrenceForEvent(input: {
         };
   const exclusionReasons: OperationalOccurrenceExclusionReason[] =
     treatment.kind === "bundle" && !bundleSupported ? ["unsupported_bundle_analysis_family"] : [];
-  const relationRecordIds = uniqueSorted(
+  const treatmentScopeRelationRecordIds = uniqueSorted(
     decisions.flatMap((decision) => [
       decision.timeline_relation_record_id,
       decision.route_scope_relation_record_id,
       decision.treatment_scope_relation_record_id,
     ]),
   );
+  const physicalScope = occurrencePhysicalScope({
+    treatmentRecordIds: members.map((member) => member.treatment_record_id),
+    reviewedRelationRecordIds: treatmentScopeRelationRecordIds,
+    recordsById: input.recordsById,
+  });
+  const relationRecordIds = uniqueSorted([
+    ...treatmentScopeRelationRecordIds,
+    ...physicalScope.relationRecordIds,
+  ]);
+  const occurrenceEvidenceBindings = uniqueBindings([
+    ...evidenceBindings,
+    ...bundleFamilyEvidenceBindings,
+    ...physicalScope.evidenceBindings,
+  ]);
+  const sourceIds = uniqueSorted(occurrenceEvidenceBindings.map((binding) => binding.source_id));
+  assertOfficialOccurrenceSources(sourceIds, input.records, `migrated:${input.eventId}`);
   const observations: OperationalOccurrenceObservation[] = [
     {
       event_record_id: input.eventId,
       relation_record_ids: relationRecordIds,
-      document_time_statuses: uniqueSorted(rows.flatMap((row) => row.assertion_statuses)),
+      document_time_statuses: uniqueSorted([
+        ...rows.flatMap((row) => row.assertion_statuses),
+        ...(text(event?.payload.lifecycle_phase) ? [text(event?.payload.lifecycle_phase)!] : []),
+      ]),
       document_time_dates: observationDates(rows.flatMap((row) => row.candidate_operational_date_candidates)),
       status_as_of_dates: uniqueSorted(rows.flatMap((row) => row.status_as_of_dates)),
     },
@@ -361,6 +606,13 @@ function occurrenceForEvent(input: {
     occurrence_review_decision_id: `occurrence-review:${identity.occurrence_id}`,
     founding_key: identity.founding_key,
     resolution_cluster_id: identity.resolution_cluster_id,
+    phase_record_ids: [input.eventId],
+    phase_relation_record_ids: [],
+    phase_relation_evidence_bindings: [],
+    phase_relation_disposition: "single_phase",
+    physical_scope_record_ids: physicalScope.recordIds,
+    physical_scope_relation_record_ids: physicalScope.relationRecordIds,
+    physical_scope_evidence_bindings: physicalScope.evidenceBindings,
     observations,
     resolved_status: "realized",
     resolved_onset: {
@@ -463,14 +715,11 @@ function requireBindingRoles(
   if (missing.length > 0) throw new Error(`${path} missing required evidence role(s): ${missing.join(", ")}`);
 }
 
-function explicitObservationDate(event: MtaCanonicalRecord, decision: OperationalOccurrenceAcceptedDecision): OperationalOccurrenceObservationDate {
+function explicitObservationDate(event: MtaCanonicalRecord, path: string): OperationalOccurrenceObservationDate {
   const normalized = text(event.payload.date_normalized);
   const precision = text(event.payload.date_precision);
-  if (normalized !== decision.resolved_onset.date || precision !== decision.resolved_onset.precision) {
-    throw new Error(
-      `occurrence review ${decision.decision_id} onset ${decision.resolved_onset.date}/${decision.resolved_onset.precision} ` +
-        `does not match event ${event.record_id} ${normalized ?? "missing"}/${precision ?? "missing"}`,
-    );
+  if (!normalized || !precision) {
+    throw new Error(`${path} event ${event.record_id} must carry a canonical normalized date and precision`);
   }
   return {
     raw: text(event.payload.date_raw) ?? text(event.payload.date_text) ?? text(event.payload.date) ?? normalized,
@@ -530,7 +779,7 @@ function explicitOccurrence(input: {
     }
     return relation;
   });
-  const allBindings = uniqueBindings([
+  const decisionBindings = uniqueBindings([
     ...decision.resolved_onset.evidence_bindings,
     ...decision.routes.flatMap((route) => route.evidence_bindings),
     ...(decision.treatment.kind === "atomic"
@@ -540,7 +789,7 @@ function explicitOccurrence(input: {
           ...decision.treatment.members.flatMap((member) => member.evidence_bindings),
         ]),
   ]);
-  for (const binding of allBindings) bindingRecord(binding, input.recordsById, decision.decision_id);
+  for (const binding of decisionBindings) bindingRecord(binding, input.recordsById, decision.decision_id);
   requireBindingRoles(decision.resolved_onset.evidence_bindings, ["event_date", "timeline_relation"], `occurrence review ${decision.decision_id} onset`);
   for (const binding of decision.resolved_onset.evidence_bindings) {
     if (
@@ -553,6 +802,14 @@ function explicitOccurrence(input: {
       const record = input.recordsById.get(binding.record_id);
       if (!record || record.record_kind !== "event") {
         throw new Error(`occurrence review ${decision.decision_id} event_date must bind an observation event record`);
+      }
+      const normalized = text(record.payload.date_normalized);
+      const precision = text(record.payload.date_precision);
+      if (normalized !== decision.resolved_onset.date || precision !== decision.resolved_onset.precision) {
+        throw new Error(
+          `occurrence review ${decision.decision_id} onset ${decision.resolved_onset.date}/${decision.resolved_onset.precision} ` +
+            `does not match onset event ${record.record_id} ${normalized ?? "missing"}/${precision ?? "missing"}`,
+        );
       }
     }
     if (binding.role === "timeline_relation") {
@@ -691,32 +948,87 @@ function explicitOccurrence(input: {
   }
   const exclusionReasons: OperationalOccurrenceExclusionReason[] =
     treatment.kind === "bundle" && !bundleSupported ? ["unsupported_bundle_analysis_family"] : [];
-  const sourceIds = uniqueSorted(allBindings.map((binding) => binding.source_id));
-  assertOfficialOccurrenceSources(sourceIds, input.records, decision.decision_id);
+  const observationEventIdSet = new Set(decision.observation_event_record_ids);
+  const onsetEventIdSet = new Set(
+    decision.resolved_onset.evidence_bindings
+      .filter((binding) => binding.role === "event_date")
+      .map((binding) => binding.record_id),
+  );
   const observations = events
-    .map((event) => ({
-      event_record_id: event.record_id,
-      relation_record_ids: [...decision.observation_relation_record_ids].sort(),
-      document_time_statuses: uniqueSorted([
-        ...relations.flatMap((relation) => {
-          const status = text(relation.payload.assertion_status);
-          return status ? [status] : [];
-        }),
-        ...(text(event.payload.lifecycle_phase) ? [text(event.payload.lifecycle_phase)!] : []),
-      ]),
-      document_time_dates: [explicitObservationDate(event, decision)],
-      status_as_of_dates: uniqueSorted(
-        relations.flatMap((relation) => {
-          const value = text(relation.payload.as_of_date) ?? text(relation.payload.status_as_of_date);
-          return value ? [value] : [];
-        }),
-      ),
-    }))
+    .map((event) => {
+      const scopedRelations = relations.filter((relation) => {
+        const subjectId = relationEndpoint(relation, "subject_id");
+        const objectId = relationEndpoint(relation, "object_id");
+        if (subjectId === event.record_id || objectId === event.record_id) return true;
+        const touchesAnotherPhase = Boolean(
+          (subjectId && observationEventIdSet.has(subjectId)) ||
+          (objectId && observationEventIdSet.has(objectId)),
+        );
+        return onsetEventIdSet.has(event.record_id) && !touchesAnotherPhase;
+      });
+      return {
+        event_record_id: event.record_id,
+        relation_record_ids: scopedRelations.map((relation) => relation.record_id).sort(),
+        document_time_statuses: uniqueSorted([
+          ...scopedRelations.flatMap((relation) => {
+            const status = text(relation.payload.assertion_status);
+            return status ? [status] : [];
+          }),
+          ...(text(event.payload.lifecycle_phase) ? [text(event.payload.lifecycle_phase)!] : []),
+        ]),
+        document_time_dates: [explicitObservationDate(event, `occurrence review ${decision.decision_id}`)],
+        status_as_of_dates: uniqueSorted(
+          scopedRelations.flatMap((relation) => {
+            const value = text(relation.payload.as_of_date) ?? text(relation.payload.status_as_of_date);
+            return value ? [value] : [];
+          }),
+        ),
+      };
+    })
     .sort((left, right) => left.event_record_id.localeCompare(right.event_record_id));
   const memberIds =
     treatment.kind === "atomic"
       ? [treatment.member.treatment_record_id]
       : treatment.members.map((member) => member.treatment_record_id);
+  const phaseRecordIds = uniqueSorted(decision.observation_event_record_ids);
+  if (phaseRecordIds.length !== decision.observation_event_record_ids.length) {
+    throw new Error(`${decision.decision_id} contains duplicate phase event identities`);
+  }
+  const phaseRecordIdSet = new Set(phaseRecordIds);
+  const phaseRelations = relations.filter((relation) => {
+    const subjectId = relationEndpoint(relation, "subject_id");
+    const objectId = relationEndpoint(relation, "object_id");
+    return Boolean(subjectId && objectId && phaseRecordIdSet.has(subjectId) && phaseRecordIdSet.has(objectId));
+  });
+  const phaseRelationEndpoints = phaseRelations.map((relation) =>
+    assertAllowedPhaseRelation({
+      relation,
+      phaseRecordIds: phaseRecordIdSet,
+      recordsById: input.recordsById,
+      path: `phase relation ${relation.record_id} in ${decision.decision_id}`,
+    }));
+  assertConnectedPhaseGraph(phaseRecordIds, phaseRelationEndpoints, `occurrence review ${decision.decision_id}`);
+  const phaseRelationRecordIds = phaseRelations.map((relation) => relation.record_id).sort();
+  const phaseRelationEvidenceBindings = uniqueBindings(phaseRelations.flatMap((relation) =>
+    relationEvidenceBindings(relation, "phase_relation", `phase relation ${relation.record_id}`)));
+  for (const binding of phaseRelationEvidenceBindings) bindingRecord(binding, input.recordsById, decision.decision_id);
+  const physicalScope = occurrencePhysicalScope({
+    treatmentRecordIds: memberIds,
+    reviewedRelationRecordIds: decision.observation_relation_record_ids,
+    recordsById: input.recordsById,
+  });
+  for (const binding of physicalScope.evidenceBindings) bindingRecord(binding, input.recordsById, decision.decision_id);
+  const allBindings = uniqueBindings([
+    ...decisionBindings,
+    ...phaseRelationEvidenceBindings,
+    ...physicalScope.evidenceBindings,
+  ]);
+  const sourceIds = uniqueSorted(allBindings.map((binding) => binding.source_id));
+  assertOfficialOccurrenceSources(sourceIds, input.records, decision.decision_id);
+  const provenanceRelationIds = uniqueSorted([
+    ...decision.observation_relation_record_ids,
+    ...physicalScope.relationRecordIds,
+  ]);
   return {
     schema_version: OPERATIONAL_OCCURRENCE_SCHEMA_VERSION,
     occurrence_id: decision.occurrence_id,
@@ -724,6 +1036,13 @@ function explicitOccurrence(input: {
     occurrence_review_decision_id: decision.decision_id,
     founding_key: decision.founding_key,
     resolution_cluster_id: identity.resolution_cluster_id,
+    phase_record_ids: phaseRecordIds,
+    phase_relation_record_ids: phaseRelationRecordIds,
+    phase_relation_evidence_bindings: phaseRelationEvidenceBindings,
+    phase_relation_disposition: phaseRecordIds.length === 1 ? "single_phase" : "related_phases",
+    physical_scope_record_ids: physicalScope.recordIds,
+    physical_scope_relation_record_ids: physicalScope.relationRecordIds,
+    physical_scope_evidence_bindings: physicalScope.evidenceBindings,
     observations,
     resolved_status: "realized",
     resolved_onset: {
@@ -744,7 +1063,7 @@ function explicitOccurrence(input: {
     provenance: {
       anchor_review_decision_ids: [],
       event_record_ids: [...decision.observation_event_record_ids].sort(),
-      relation_record_ids: [...decision.observation_relation_record_ids].sort(),
+      relation_record_ids: provenanceRelationIds,
       route_record_ids: routes.map((route) => route.route_record_id),
       treatment_record_ids: [...memberIds].sort(),
     },
@@ -794,7 +1113,8 @@ export function computeOperationalOccurrences(
   if (new Set(rows.map((row) => row.occurrence_id)).size !== rows.length) {
     throw new Error("operational occurrence computation produced duplicate occurrence_id values");
   }
-  return rows.map((row, index) => parseOperationalOccurrence(row, `computed operational occurrence[${index}]`));
+  const parsed = rows.map((row, index) => parseOperationalOccurrence(row, `computed operational occurrence[${index}]`));
+  return assertOperationalOccurrenceCanonicalIntegrity(parsed, records);
 }
 
 export function summarizeOperationalOccurrences(rows: readonly OperationalOccurrenceRow[]): OperationalOccurrenceSummary {
@@ -834,6 +1154,13 @@ const occurrenceFields = new Set([
   "occurrence_aliases",
   "occurrence_id",
   "occurrence_review_decision_id",
+  "phase_record_ids",
+  "phase_relation_disposition",
+  "phase_relation_evidence_bindings",
+  "phase_relation_record_ids",
+  "physical_scope_evidence_bindings",
+  "physical_scope_record_ids",
+  "physical_scope_relation_record_ids",
   "provenance",
   "resolution_cluster_id",
   "resolved_onset",
@@ -886,6 +1213,8 @@ const summaryFields = new Set([
 const occurrenceEvidenceRoles = new Set<OperationalOccurrenceEvidenceRole>([
   "event_date",
   "bundle_analysis_family",
+  "phase_relation",
+  "physical_scope",
   "route_identity",
   "route_scope",
   "route_treatment_event_bridge",
@@ -1017,7 +1346,31 @@ function parseTreatment(value: unknown, path: string): OperationalOccurrenceTrea
 }
 
 export function parseOperationalOccurrence(value: unknown, path = "operational occurrence"): OperationalOccurrenceRow {
-  const object = contractObject(value, path);
+  let object = contractObject(value, path);
+  // Immutable v1 releases remain readable. The v2 phase fields are a deterministic projection of
+  // the already-pinned single event in provenance; no historical byte is mutated or reinterpreted.
+  if (object.schema_version === 1) {
+    const legacyProvenance = contractObject(object.provenance, `${path}.provenance`);
+    const legacyEventIds = contractStringArray(
+      legacyProvenance.event_record_ids,
+      `${path}.provenance.event_record_ids`,
+      true,
+    );
+    if (legacyEventIds.length !== 1) {
+      throw new Error(`${path} schema v1 compatibility requires exactly one provenance event id`);
+    }
+    object = {
+      ...object,
+      schema_version: OPERATIONAL_OCCURRENCE_SCHEMA_VERSION,
+      phase_record_ids: legacyEventIds,
+      phase_relation_record_ids: [],
+      phase_relation_evidence_bindings: [],
+      phase_relation_disposition: "single_phase",
+      physical_scope_record_ids: [],
+      physical_scope_relation_record_ids: [],
+      physical_scope_evidence_bindings: [],
+    };
+  }
   contractKeys(object, occurrenceFields, path);
   if (object.schema_version !== OPERATIONAL_OCCURRENCE_SCHEMA_VERSION) {
     throw new Error(`${path}.schema_version must be ${OPERATIONAL_OCCURRENCE_SCHEMA_VERSION}`);
@@ -1073,9 +1426,113 @@ export function parseOperationalOccurrence(value: unknown, path = "operational o
     true,
   );
   const evidenceBindings = parseOccurrenceBindings(object.evidence_bindings, `${path}.evidence_bindings`, true);
+  const phaseRecordIds = contractStringArray(object.phase_record_ids, `${path}.phase_record_ids`, true);
+  const phaseRelationRecordIds = contractStringArray(
+    object.phase_relation_record_ids,
+    `${path}.phase_relation_record_ids`,
+  );
+  const phaseRelationEvidenceBindings = parseOccurrenceBindings(
+    object.phase_relation_evidence_bindings,
+    `${path}.phase_relation_evidence_bindings`,
+  );
+  const phaseRelationDisposition = contractString(
+    object.phase_relation_disposition,
+    `${path}.phase_relation_disposition`,
+  );
+  const physicalScopeRecordIds = contractStringArray(
+    object.physical_scope_record_ids,
+    `${path}.physical_scope_record_ids`,
+  );
+  const physicalScopeRelationRecordIds = contractStringArray(
+    object.physical_scope_relation_record_ids,
+    `${path}.physical_scope_relation_record_ids`,
+  );
+  const physicalScopeEvidenceBindings = parseOccurrenceBindings(
+    object.physical_scope_evidence_bindings,
+    `${path}.physical_scope_evidence_bindings`,
+  );
+  if (physicalScopeEvidenceBindings.some((binding) => binding.role !== "physical_scope")) {
+    throw new Error(`${path}.physical_scope_evidence_bindings must all use physical_scope`);
+  }
+  if (phaseRelationEvidenceBindings.some((binding) => binding.role !== "phase_relation")) {
+    throw new Error(`${path}.phase_relation_evidence_bindings must all use phase_relation`);
+  }
+  if (phaseRelationDisposition !== "single_phase" && phaseRelationDisposition !== "related_phases") {
+    throw new Error(`${path}.phase_relation_disposition must be single_phase or related_phases`);
+  }
+  const provenanceEventIds = contractStringArray(provenance.event_record_ids, `${path}.provenance.event_record_ids`, true);
+  const provenanceRelationIds = contractStringArray(provenance.relation_record_ids, `${path}.provenance.relation_record_ids`, true);
+  const provenanceRouteIds = contractStringArray(
+    provenance.route_record_ids,
+    `${path}.provenance.route_record_ids`,
+    true,
+  );
+  const provenanceTreatmentIds = contractStringArray(
+    provenance.treatment_record_ids,
+    `${path}.provenance.treatment_record_ids`,
+    true,
+  );
+  const observations = object.observations.map((entry, index) => parseObservation(entry, `${path}.observations[${index}]`));
+  const treatmentRecordIds = treatment.kind === "atomic"
+    ? [treatment.member.treatment_record_id]
+    : treatment.members.map((member) => member.treatment_record_id);
+  const sameStringSet = (left: readonly string[], right: readonly string[]) =>
+    stableJson(uniqueSorted(left) as unknown as JsonValue) === stableJson(uniqueSorted(right) as unknown as JsonValue);
+  if (stableJson(phaseRecordIds as unknown as JsonValue) !== stableJson(provenanceEventIds as unknown as JsonValue)) {
+    throw new Error(`${path}.phase_record_ids must exactly match provenance.event_record_ids`);
+  }
+  if (!sameStringSet(phaseRecordIds, observations.map((observation) => observation.event_record_id))) {
+    throw new Error(`${path}.phase_record_ids must exactly match observation event identities`);
+  }
+  if (!sameStringSet(provenanceRouteIds, routes.map((route) => route.route_record_id))) {
+    throw new Error(`${path}.provenance.route_record_ids must exactly match projected routes`);
+  }
+  if (!sameStringSet(provenanceTreatmentIds, treatmentRecordIds)) {
+    throw new Error(`${path}.provenance.treatment_record_ids must exactly match projected treatment members`);
+  }
+  if (phaseRelationRecordIds.some((recordId) => !provenanceRelationIds.includes(recordId))) {
+    throw new Error(`${path}.phase_relation_record_ids must be included in provenance.relation_record_ids`);
+  }
+  if (physicalScopeRelationRecordIds.some((recordId) => !provenanceRelationIds.includes(recordId))) {
+    throw new Error(`${path}.physical_scope_relation_record_ids must be included in provenance.relation_record_ids`);
+  }
+  const physicalScopeBindingRecordIds = uniqueSorted(physicalScopeEvidenceBindings.map((binding) => binding.record_id));
+  if (
+    stableJson(physicalScopeBindingRecordIds as unknown as JsonValue) !==
+    stableJson(uniqueSorted(physicalScopeRelationRecordIds) as unknown as JsonValue)
+  ) {
+    throw new Error(`${path}.physical_scope_evidence_bindings must bind every physical_scope_relation_record_id exactly`);
+  }
+  const phaseRelationBindingRecordIds = uniqueSorted(phaseRelationEvidenceBindings.map((binding) => binding.record_id));
+  if (
+    stableJson(phaseRelationBindingRecordIds as unknown as JsonValue) !==
+    stableJson(uniqueSorted(phaseRelationRecordIds) as unknown as JsonValue)
+  ) {
+    throw new Error(`${path}.phase_relation_evidence_bindings must bind every phase_relation_record_id exactly`);
+  }
+  if (
+    (physicalScopeRecordIds.length === 0) !== (physicalScopeRelationRecordIds.length === 0) ||
+    (physicalScopeRelationRecordIds.length === 0) !== (physicalScopeEvidenceBindings.length === 0)
+  ) {
+    throw new Error(`${path} physical scope ids, relations, and evidence must be present or absent together`);
+  }
+  if (
+    phaseRelationDisposition === "single_phase" &&
+    (phaseRecordIds.length !== 1 || phaseRelationRecordIds.length !== 0 || phaseRelationEvidenceBindings.length !== 0)
+  ) {
+    throw new Error(`${path} single_phase requires exactly one phase record and no phase relation records or evidence`);
+  }
+  if (
+    phaseRelationDisposition === "related_phases" &&
+    (phaseRecordIds.length < 2 || phaseRelationRecordIds.length === 0 || phaseRelationEvidenceBindings.length === 0)
+  ) {
+    throw new Error(`${path} related_phases requires multiple phase records and evidence-bound phase relations`);
+  }
   const ledgerKeys = new Set(evidenceBindings.map(bindingKey));
   const nestedBindings = [
     ...onsetEvidenceBindings,
+    ...phaseRelationEvidenceBindings,
+    ...physicalScopeEvidenceBindings,
     ...routes.flatMap((route) => route.evidence_bindings),
     ...(treatment.kind === "atomic"
       ? treatment.member.evidence_bindings
@@ -1088,6 +1545,28 @@ export function parseOperationalOccurrence(value: unknown, path = "operational o
   if (missingNested.length > 0) {
     throw new Error(`${path} nested evidence binding is missing from the top-level evidence ledger: ${bindingKey(missingNested[0]!)}`);
   }
+  const provenanceBindingIds = new Set([
+    ...provenanceEventIds,
+    ...provenanceRelationIds,
+    ...provenanceRouteIds,
+    ...provenanceTreatmentIds,
+  ]);
+  // Bundle-family and route/treatment/event bridge evidence may be carried by a canonical project.
+  // Projects are deliberately not occurrence members; the binding itself is the explicit
+  // provenance reference and must still be in the top-level evidence ledger.
+  const projectScopedEvidenceRoles = new Set<OperationalOccurrenceEvidenceRole>([
+    "bundle_analysis_family",
+    "route_treatment_event_bridge",
+  ]);
+  const outOfScopeBinding = evidenceBindings.find((binding) =>
+    !projectScopedEvidenceRoles.has(binding.role) && !provenanceBindingIds.has(binding.record_id));
+  if (outOfScopeBinding) {
+    throw new Error(`${path} evidence binding references a record outside occurrence provenance: ${bindingKey(outOfScopeBinding)}`);
+  }
+  const sourceIds = contractStringArray(object.source_ids, `${path}.source_ids`, true);
+  if (!sameStringSet(sourceIds, evidenceBindings.map((binding) => binding.source_id))) {
+    throw new Error(`${path}.source_ids must exactly match top-level evidence sources`);
+  }
   return {
     schema_version: OPERATIONAL_OCCURRENCE_SCHEMA_VERSION,
     occurrence_id: contractString(object.occurrence_id, `${path}.occurrence_id`),
@@ -1098,7 +1577,14 @@ export function parseOperationalOccurrence(value: unknown, path = "operational o
     ),
     founding_key: contractString(object.founding_key, `${path}.founding_key`),
     resolution_cluster_id: contractNullableString(object.resolution_cluster_id, `${path}.resolution_cluster_id`),
-    observations: object.observations.map((entry, index) => parseObservation(entry, `${path}.observations[${index}]`)),
+    phase_record_ids: phaseRecordIds,
+    phase_relation_record_ids: phaseRelationRecordIds,
+    phase_relation_evidence_bindings: phaseRelationEvidenceBindings,
+    phase_relation_disposition: phaseRelationDisposition,
+    physical_scope_record_ids: physicalScopeRecordIds,
+    physical_scope_relation_record_ids: physicalScopeRelationRecordIds,
+    physical_scope_evidence_bindings: physicalScopeEvidenceBindings,
+    observations,
     resolved_status: "realized",
     resolved_onset: {
       date,
@@ -1110,7 +1596,7 @@ export function parseOperationalOccurrence(value: unknown, path = "operational o
     },
     routes,
     treatment,
-    source_ids: contractStringArray(object.source_ids, `${path}.source_ids`, true),
+    source_ids: sourceIds,
     evidence_bindings: evidenceBindings,
     exclusion_reasons: exclusionReasons,
     review_state: "approved",
@@ -1120,20 +1606,254 @@ export function parseOperationalOccurrence(value: unknown, path = "operational o
         provenance.anchor_review_decision_ids,
         `${path}.provenance.anchor_review_decision_ids`,
       ),
-      event_record_ids: contractStringArray(provenance.event_record_ids, `${path}.provenance.event_record_ids`, true),
-      relation_record_ids: contractStringArray(provenance.relation_record_ids, `${path}.provenance.relation_record_ids`, true),
-      route_record_ids: contractStringArray(provenance.route_record_ids, `${path}.provenance.route_record_ids`, true),
-      treatment_record_ids: contractStringArray(
-        provenance.treatment_record_ids,
-        `${path}.provenance.treatment_record_ids`,
-        true,
-      ),
+      event_record_ids: provenanceEventIds,
+      relation_record_ids: provenanceRelationIds,
+      route_record_ids: provenanceRouteIds,
+      treatment_record_ids: provenanceTreatmentIds,
     },
   };
 }
 
-export function parseOperationalOccurrencesJsonl(value: string): OperationalOccurrenceRow[] {
-  return value
+function sameRecordIds(left: readonly string[], right: readonly string[]): boolean {
+  return uniqueSorted(left).join("\0") === uniqueSorted(right).join("\0");
+}
+
+function sameBindings(
+  left: readonly OperationalOccurrenceEvidenceBinding[],
+  right: readonly OperationalOccurrenceEvidenceBinding[],
+): boolean {
+  return stableJson(uniqueBindings(left) as unknown as JsonValue) ===
+    stableJson(uniqueBindings(right) as unknown as JsonValue);
+}
+
+function assertExactProjectedRelationEvidence(input: {
+  relations: readonly MtaCanonicalRecord[];
+  bindings: readonly OperationalOccurrenceEvidenceBinding[];
+  role: "phase_relation" | "physical_scope";
+  recordsById: ReadonlyMap<string, MtaCanonicalRecord>;
+  path: string;
+}): void {
+  const expected = uniqueBindings(input.relations.flatMap((relation) =>
+    relationEvidenceBindings(relation, input.role, `${input.path} relation ${relation.record_id}`)));
+  const actual = uniqueBindings(input.bindings);
+  if (actual.length !== input.bindings.length) {
+    throw new Error(`${input.path} contains duplicate ${input.role} evidence bindings`);
+  }
+  if (
+    stableJson(expected as unknown as JsonValue) !==
+    stableJson(actual as unknown as JsonValue)
+  ) {
+    throw new Error(`${input.path} ${input.role} evidence bindings do not exactly match canonical evidence IDs`);
+  }
+  for (const binding of actual) bindingRecord(binding, input.recordsById, input.path);
+}
+
+/**
+ * Canonical validation is separate from JSON shape parsing: every projected phase/scope identity
+ * and relation must resolve to the authoritative canonical record of the expected type, and every
+ * projected evidence tuple must exactly equal the relation's canonical evidence refs.
+ */
+export function assertOperationalOccurrenceCanonicalIntegrity(
+  rows: readonly OperationalOccurrenceRow[],
+  records: readonly MtaCanonicalRecord[],
+): OperationalOccurrenceRow[] {
+  const recordsById = new Map<string, MtaCanonicalRecord>();
+  for (const record of records) {
+    if (recordsById.has(record.record_id)) throw new Error(`canonical corpus contains duplicate record id ${record.record_id}`);
+    recordsById.set(record.record_id, record);
+  }
+
+  for (const row of rows) {
+    const path = `operational occurrence ${row.occurrence_id}`;
+    if (new Set(row.phase_record_ids).size !== row.phase_record_ids.length) {
+      throw new Error(`${path} contains duplicate phase identities`);
+    }
+    if (new Set(row.phase_relation_record_ids).size !== row.phase_relation_record_ids.length) {
+      throw new Error(`${path} contains duplicate phase relation identities`);
+    }
+    if (new Set(row.physical_scope_record_ids).size !== row.physical_scope_record_ids.length) {
+      throw new Error(`${path} contains duplicate physical-scope identities`);
+    }
+    if (new Set(row.physical_scope_relation_record_ids).size !== row.physical_scope_relation_record_ids.length) {
+      throw new Error(`${path} contains duplicate physical-scope relation identities`);
+    }
+
+    const observationsByEventId = new Map<string, OperationalOccurrenceObservation>();
+    for (const observation of row.observations) {
+      if (observationsByEventId.has(observation.event_record_id)) {
+        throw new Error(`${path} contains duplicate observations for phase ${observation.event_record_id}`);
+      }
+      observationsByEventId.set(observation.event_record_id, observation);
+    }
+
+    for (const phaseRecordId of row.phase_record_ids) {
+      const phase = recordsById.get(phaseRecordId);
+      if (!phase || phase.record_kind !== "event") {
+        throw new Error(`${path} phase ${phaseRecordId} must resolve to a canonical event`);
+      }
+      if (phase.truth_status !== "source_stated" || phase.review_state === "quarantined") {
+        throw new Error(`${path} phase ${phaseRecordId} must be source_stated and non-quarantined`);
+      }
+      if (phase.evidence_refs.length === 0 || phase.evidence_refs.some((ref) => !ref.evidence_id)) {
+        throw new Error(`${path} phase ${phaseRecordId} must retain exact canonical evidence IDs`);
+      }
+    }
+
+    const observedRelationIds = uniqueSorted(row.observations.flatMap((observation) => observation.relation_record_ids));
+    const observedRelations = observedRelationIds.map((recordId) => {
+      const relation = recordsById.get(recordId);
+      if (!relation || relation.record_kind !== "relation") {
+        throw new Error(`${path} observation relation ${recordId} must resolve to a canonical relation`);
+      }
+      return relation;
+    });
+    const observedRelationsById = new Map(observedRelations.map((relation) => [relation.record_id, relation]));
+    for (const phaseRecordId of row.phase_record_ids) {
+      const phase = recordsById.get(phaseRecordId)!;
+      const observation = observationsByEventId.get(phaseRecordId);
+      if (!observation) throw new Error(`${path} phase ${phaseRecordId} must have exactly one observation`);
+      const normalized = text(phase.payload.date_normalized);
+      const precision = text(phase.payload.date_precision);
+      if (
+        !normalized ||
+        !precision ||
+        !observation.document_time_dates.some((date) => date.normalized === normalized && date.precision === precision)
+      ) {
+        throw new Error(`${path} phase ${phaseRecordId} observation must retain its canonical date and precision`);
+      }
+      const observationRelations = observation.relation_record_ids.map((recordId) => {
+        const relation = observedRelationsById.get(recordId);
+        if (!relation) throw new Error(`${path} phase ${phaseRecordId} references unresolvable relation ${recordId}`);
+        return relation;
+      });
+      const expectedStatuses = uniqueSorted([
+        ...observationRelations.flatMap((relation) => {
+          const status = text(relation.payload.assertion_status);
+          return status ? [status] : [];
+        }),
+        ...(text(phase.payload.lifecycle_phase) ? [text(phase.payload.lifecycle_phase)!] : []),
+      ]);
+      if (!sameRecordIds(expectedStatuses, observation.document_time_statuses)) {
+        throw new Error(`${path} phase ${phaseRecordId} status claims must exactly match its canonical event and relations`);
+      }
+      const expectedStatusDates = uniqueSorted(observationRelations.flatMap((relation) => {
+        const value = text(relation.payload.as_of_date) ?? text(relation.payload.status_as_of_date);
+        return value ? [value] : [];
+      }));
+      if (!sameRecordIds(expectedStatusDates, observation.status_as_of_dates)) {
+        throw new Error(`${path} phase ${phaseRecordId} status dates must exactly match its canonical relations`);
+      }
+    }
+
+    const onsetEventBindings = row.resolved_onset.evidence_bindings.filter((binding) => binding.role === "event_date");
+    if (onsetEventBindings.length === 0) throw new Error(`${path} must bind its onset to a canonical phase event`);
+    const onsetEventIds = uniqueSorted(onsetEventBindings.map((binding) => binding.record_id));
+    for (const binding of onsetEventBindings) {
+      const event = bindingRecord(binding, recordsById, path);
+      if (
+        event.record_kind !== "event" ||
+        !row.phase_record_ids.includes(event.record_id) ||
+        text(event.payload.date_normalized) !== row.resolved_onset.date ||
+        text(event.payload.date_precision) !== row.resolved_onset.precision
+      ) {
+        throw new Error(`${path} onset evidence must bind a canonical occurrence phase at the resolved precision`);
+      }
+    }
+    const phaseRecordIdSet = new Set(row.phase_record_ids);
+    const observedPhaseRelations = observedRelations.filter((relation) => {
+      const subjectId = relationEndpoint(relation, "subject_id");
+      const objectId = relationEndpoint(relation, "object_id");
+      return Boolean(subjectId && objectId && phaseRecordIdSet.has(subjectId) && phaseRecordIdSet.has(objectId));
+    });
+    if (!sameRecordIds(observedPhaseRelations.map((relation) => relation.record_id), row.phase_relation_record_ids)) {
+      throw new Error(`${path} phase relation ids must exactly match event-to-event observation relations`);
+    }
+    const phaseEndpoints = observedPhaseRelations.map((relation) =>
+      assertAllowedPhaseRelation({
+        relation,
+        phaseRecordIds: phaseRecordIdSet,
+        recordsById,
+        path: `${path} phase relation ${relation.record_id}`,
+      }));
+    assertConnectedPhaseGraph(row.phase_record_ids, phaseEndpoints, path);
+    assertExactProjectedRelationEvidence({
+      relations: observedPhaseRelations,
+      bindings: row.phase_relation_evidence_bindings,
+      role: "phase_relation",
+      recordsById,
+      path,
+    });
+    if (!sameBindings(
+      row.evidence_bindings.filter((binding) => binding.role === "phase_relation"),
+      row.phase_relation_evidence_bindings,
+    )) {
+      throw new Error(`${path} top-level phase relation evidence must exactly match the phase evidence ledger`);
+    }
+
+    const treatmentRecordIds = row.treatment.kind === "atomic"
+      ? [row.treatment.member.treatment_record_id]
+      : row.treatment.members.map((member) => member.treatment_record_id);
+    const treatmentRecordIdSet = new Set(treatmentRecordIds);
+    const observedPhysicalScopes = observedRelations.flatMap((relation) => {
+      const endpoints = directPhysicalScopeEndpoints({
+        relation,
+        treatmentRecordIds: treatmentRecordIdSet,
+        recordsById,
+        path: `${path} physical-scope candidate ${relation.record_id}`,
+      });
+      return endpoints ? [{ relation, endpoints }] : [];
+    });
+    if (!sameRecordIds(
+      observedPhysicalScopes.map(({ relation }) => relation.record_id),
+      row.physical_scope_relation_record_ids,
+    )) {
+      throw new Error(`${path} physical-scope relation ids must exactly match reviewed direct treatment scope`);
+    }
+    const projectedScopeIds = uniqueSorted(observedPhysicalScopes.map(({ endpoints }) => endpoints.scopeRecordId));
+    if (!sameRecordIds(projectedScopeIds, row.physical_scope_record_ids)) {
+      throw new Error(`${path} physical-scope ids must exactly match canonical direct-scope relation endpoints`);
+    }
+    for (const scopeRecordId of row.physical_scope_record_ids) {
+      const scope = recordsById.get(scopeRecordId);
+      if (!scope || scope.record_kind !== "corridor") {
+        throw new Error(`${path} physical scope ${scopeRecordId} must resolve to a canonical corridor/segment record`);
+      }
+      if (scope.truth_status !== "source_stated" || scope.review_state === "quarantined") {
+        throw new Error(`${path} physical scope ${scopeRecordId} must be source_stated and non-quarantined`);
+      }
+      if (scope.evidence_refs.length === 0 || scope.evidence_refs.some((ref) => !ref.evidence_id)) {
+        throw new Error(`${path} physical scope ${scopeRecordId} must retain exact canonical evidence IDs`);
+      }
+    }
+    for (const relationRecordId of row.physical_scope_relation_record_ids) {
+      if (!row.observations.some((observation) =>
+        onsetEventIds.includes(observation.event_record_id) && observation.relation_record_ids.includes(relationRecordId))) {
+        throw new Error(`${path} physical scope relation ${relationRecordId} must be reviewed on an onset phase observation`);
+      }
+    }
+    assertExactProjectedRelationEvidence({
+      relations: observedPhysicalScopes.map(({ relation }) => relation),
+      bindings: row.physical_scope_evidence_bindings,
+      role: "physical_scope",
+      recordsById,
+      path,
+    });
+    if (!sameBindings(
+      row.evidence_bindings.filter((binding) => binding.role === "physical_scope"),
+      row.physical_scope_evidence_bindings,
+    )) {
+      throw new Error(`${path} top-level physical-scope evidence must exactly match the physical-scope ledger`);
+    }
+  }
+  return [...rows];
+}
+
+/** Shape-only unless canonical records are supplied; shape acceptance is not canonical validation. */
+export function parseOperationalOccurrencesJsonl(
+  value: string,
+  canonicalRecords?: readonly MtaCanonicalRecord[],
+): OperationalOccurrenceRow[] {
+  const rows = value
     .split(/\r?\n/u)
     .filter((line) => line.trim().length > 0)
     .map((line, index) => {
@@ -1145,10 +1865,12 @@ export function parseOperationalOccurrencesJsonl(value: string): OperationalOccu
       }
       return parseOperationalOccurrence(parsed, `operational occurrences line ${index + 1}`);
     });
+  return canonicalRecords ? assertOperationalOccurrenceCanonicalIntegrity(rows, canonicalRecords) : rows;
 }
 
 export function parseOperationalOccurrenceSummary(value: unknown): OperationalOccurrenceSummary {
-  const object = contractObject(value, "operational occurrence summary");
+  let object = contractObject(value, "operational occurrence summary");
+  if (object.schema_version === 1) object = { ...object, schema_version: OPERATIONAL_OCCURRENCE_SCHEMA_VERSION };
   contractKeys(object, summaryFields, "operational occurrence summary");
   if (object.schema_version !== OPERATIONAL_OCCURRENCE_SCHEMA_VERSION) {
     throw new Error(`operational occurrence summary.schema_version must be ${OPERATIONAL_OCCURRENCE_SCHEMA_VERSION}`);

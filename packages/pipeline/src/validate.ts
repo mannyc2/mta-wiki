@@ -2,6 +2,8 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { identityKeysForRecord, isGlobalRecordKind } from "@mta-wiki/db/identity";
+import { canonicalDbPath, openCanonicalDb } from "@mta-wiki/db/canonical-db";
+import { stableJson } from "@mta-wiki/db/stable-json";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 import {
   evidenceBlockIndexEntry,
@@ -13,7 +15,9 @@ import {
   validateIdentityOverrideArtifacts,
   validateIdentityReviewAcceptedArtifacts,
 } from "@mta-wiki/pipeline/identity/identity-review-apply";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
+import {
+  readCanonicalRecordsFromDbFile,
+} from "@mta-wiki/pipeline/materialize/canonical-read";
 import {
   extractWriterRegion,
   parseBlockPrimitives,
@@ -26,6 +30,13 @@ import { evidenceId, readStagedSourceBlocks, sourceBlockById, sourceBlocksRelati
 import { validateSubmissionRetirementOverrides } from "@mta-wiki/pipeline/records/submission-overrides";
 import { validateSemanticCorrections } from "@mta-wiki/pipeline/records/semantic-corrections";
 import { validateOperationalRecoveryProposalTree } from "@mta-wiki/pipeline/records/operational-recovery-proposals";
+import { auditRelationshipGraph } from "@mta-wiki/pipeline/records/relationship-integrity";
+import type { RelationshipGraphAudit } from "@mta-wiki/pipeline/records/relationship-integrity";
+import {
+  loadRelationshipContract,
+  relationshipContractValidationMode,
+  type RelationshipValidationMode,
+} from "@mta-wiki/db/relationship-contract";
 import type { MtaValidationIssue, MtaValidationReport } from "@mta-wiki/db/types";
 
 function walkMarkdown(dir: string): string[] {
@@ -42,29 +53,6 @@ function walkMarkdown(dir: string): string[] {
   }
 
   return paths.sort();
-}
-
-function readSubmissionIds(): string[] {
-  const dir = join(repoRoot, "data", "submissions");
-  if (!existsSync(dir)) return [];
-
-  const ids: string[] = [];
-  for (const fileName of readdirSync(dir).filter((name) => name.endsWith(".jsonl")).sort()) {
-    const content = readFileSync(join(dir, fileName), "utf8");
-    for (const [index, line] of content.split(/\r?\n/u).entries()) {
-      if (!line.trim()) continue;
-      let value: unknown;
-      try {
-        value = JSON.parse(line);
-      } catch (error) {
-        throw new Error(`Invalid JSONL in data/submissions/${fileName}:${index + 1}: ${String(error)}`);
-      }
-      if (typeof value === "object" && value !== null && "submission_id" in value && typeof value.submission_id === "string") {
-        ids.push(value.submission_id);
-      }
-    }
-  }
-  return ids;
 }
 
 function validateRequiredPaths(issues: MtaValidationIssue[]) {
@@ -255,9 +243,9 @@ function validateStagedSourceBlocks(issues: MtaValidationIssue[]) {
   }
 }
 
-function validateEvidence(issues: MtaValidationIssue[]) {
+function validateEvidence(records: MtaCanonicalRecord[], issues: MtaValidationIssue[]) {
   const publicEvidenceIndex = readEvidenceBlockIndex();
-  for (const record of readCanonicalRecords()) {
+  for (const record of records) {
     for (const [index, ref] of record.evidence_refs.entries()) {
       const sourceDir = join(repoRoot, "raw", "sources", ref.source_id);
       const indexedBlock = ref.block_id ? evidenceBlockIndexEntry(publicEvidenceIndex, ref.source_id, ref.block_id) : undefined;
@@ -346,8 +334,7 @@ function validateEvidence(issues: MtaValidationIssue[]) {
   }
 }
 
-function validateRelations(issues: MtaValidationIssue[]) {
-  const records = readCanonicalRecords();
+function validateRelations(records: MtaCanonicalRecord[], issues: MtaValidationIssue[]) {
   const ids = new Set(records.map((record) => record.record_id));
   const byId = new Map(records.map((record) => [record.record_id, record]));
   const localObservationIds = new Set(records.flatMap((record) => [record.local_observation_id, ...(record.local_observation_ids ?? [])]));
@@ -445,10 +432,10 @@ function validateSemanticInvariants(records: MtaCanonicalRecord[], issues: MtaVa
   issues.push(...validateSemanticInvariantsForRecords(records));
 }
 
-function validateGlobalIdentities(issues: MtaValidationIssue[]) {
+function validateGlobalIdentities(records: MtaCanonicalRecord[], issues: MtaValidationIssue[]) {
   const keys = new Map<string, string>();
 
-  for (const record of readCanonicalRecords()) {
+  for (const record of records) {
     if (!isGlobalRecordKind(record.record_kind)) continue;
 
     if (/_\d+$/u.test(record.record_id)) {
@@ -477,8 +464,8 @@ function validateGlobalIdentities(issues: MtaValidationIssue[]) {
   }
 }
 
-function validateMetricPayloads(issues: MtaValidationIssue[]) {
-  for (const record of readCanonicalRecords()) {
+function validateMetricPayloads(records: MtaCanonicalRecord[], issues: MtaValidationIssue[]) {
+  for (const record of records) {
     if (record.record_kind !== "metric_claim") continue;
     if (record.payload.value !== undefined && typeof record.payload.value !== "number") {
       issues.push({
@@ -546,20 +533,170 @@ function validateWriterPrimitives(pagePaths: string[], records: MtaCanonicalReco
   }
 }
 
-export function validateRepo(options: { strictWriterCitations?: boolean | undefined } = {}): MtaValidationReport {
+function validateRelationshipProjectionParity(audit: RelationshipGraphAudit, issues: MtaValidationIssue[]) {
+  if (!existsSync(canonicalDbPath())) return;
+  let db: ReturnType<typeof openCanonicalDb> | undefined;
+  try {
+    db = openCanonicalDb(canonicalDbPath(), { readonly: true });
+    const sqlFindings = db.query(
+      "SELECT finding_id, code, record_id FROM relationship_validation_findings ORDER BY finding_id",
+    ).all() as Array<{ finding_id: string; code: string; record_id: string | null }>;
+    const repositoryFindings = audit.findings.map((finding) => ({
+      finding_id: finding.finding_id,
+      code: finding.code,
+      record_id: finding.record_id ?? null,
+    }));
+    if (stableJson(sqlFindings as unknown as import("@mta-wiki/db/types").JsonValue) !== stableJson(repositoryFindings as unknown as import("@mta-wiki/db/types").JsonValue)) {
+      issues.push({
+        code: "relationship_projection_mismatch",
+        path: "data/canonical.db",
+        message: `Repository relationship findings (${repositoryFindings.length}) do not match the SQLite finding ledger (${sqlFindings.length}); rebuild canonical.db from the same authoritative JSONL.`,
+      });
+    }
+
+    const count = (view: string) => Number((db!.query(`SELECT COUNT(*) AS count FROM ${view}`).get() as { count: number }).count);
+    const expected = {
+      relationship_endpoint_violations: audit.findings.filter((finding) => finding.code === "REL_ENDPOINT_DANGLING").length,
+      relationship_type_violations: audit.findings.filter((finding) => finding.code === "REL_ENDPOINT_TYPE_INVALID" || finding.code === "REL_CONTRACT_RULE_MISSING").length,
+      relationship_evidence_violations: new Set(audit.findings.filter((finding) => finding.code === "REL_EVIDENCE_MISSING" || finding.code === "REL_EVIDENCE_UNRESOLVED").map((finding) => finding.record_id)).size,
+      relationship_identity_ambiguities: audit.findings.filter((finding) => finding.code === "REL_ALIAS_AMBIGUOUS").length,
+    };
+    for (const [view, expectedCount] of Object.entries(expected)) {
+      const actualCount = count(view);
+      if (actualCount === expectedCount) continue;
+      issues.push({
+        code: "relationship_sql_diagnostic_mismatch",
+        path: "data/canonical.db",
+        message: `${view} reports ${actualCount} row(s), but the repository validator reports ${expectedCount} corresponding finding(s).`,
+      });
+    }
+  } catch (error) {
+    issues.push({
+      code: "relationship_projection_unreadable",
+      path: "data/canonical.db",
+      message: `Unable to verify the SQLite relationship diagnostic mirror: ${error instanceof Error ? error.message : String(error)}`,
+    });
+  } finally {
+    db?.close();
+  }
+}
+
+function validateRelationshipCompletenessWarnings(
+  warnings: MtaValidationIssue[],
+  issues: MtaValidationIssue[],
+  mode: RelationshipValidationMode,
+) {
+  if (!existsSync(canonicalDbPath())) return;
+  let db: ReturnType<typeof openCanonicalDb> | undefined;
+  try {
+    db = openCanonicalDb(canonicalDbPath(), { readonly: true });
+    const state = db.query(
+      `SELECT mode, hard_mode_ready, input_fingerprint
+       FROM relationship_enforcement_state
+       WHERE contract_id = 'relationship-completeness-v1'`,
+    ).get() as { mode: "warning" | "enforce"; hard_mode_ready: number; input_fingerprint: string } | null;
+    if (!state) {
+      issues.push({
+        code: "relationship_enforcement_state_mismatch",
+        path: "data/canonical.db",
+        message: "SQLite relationship completeness enforcement state is missing.",
+      });
+    } else if (state.mode !== (mode === "enforce" ? "enforce" : "warning")) {
+      issues.push({
+        code: "relationship_enforcement_state_mismatch",
+        path: "data/canonical.db",
+        message: `SQLite completeness mode ${state.mode} does not match relationship contract mode ${mode}.`,
+      });
+    }
+    if (mode === "enforce" && !Boolean(state?.hard_mode_ready)) {
+      issues.push({
+        code: "relationship_completeness_enforcement_not_ready",
+        path: "data/canonical.db",
+        message: "SQLite relationship completeness hard-mode criteria are not satisfied.",
+      });
+    }
+
+    const sink = mode === "enforce" ? issues : warnings;
+    const findingRows = db.query(
+      `SELECT code, selector, subject_id, detail_json
+       FROM relationship_completeness_findings
+       ORDER BY finding_id`,
+    ).all() as Array<{ code: string; selector: string; subject_id: string; detail_json: string }>;
+    for (const finding of findingRows) {
+      let detail = `${finding.selector}/${finding.subject_id}`;
+      try {
+        const parsed = JSON.parse(finding.detail_json) as {
+          row?: { reasons?: unknown };
+        };
+        if (Array.isArray(parsed.row?.reasons)) detail = `${detail}: ${parsed.row.reasons.join(", ")}`;
+      } catch {
+        detail = `${detail}: invalid SQLite detail_json`;
+      }
+      sink.push({
+        code: finding.code,
+        recordId: finding.subject_id,
+        path: "data/canonical.db",
+        message: detail,
+      });
+    }
+    for (const view of [
+      "relationship_disposition_evidence_violations",
+      "relationship_completeness_selector_violations",
+    ]) {
+      const count = Number((db.query(`SELECT COUNT(*) AS count FROM ${view}`).get() as { count: number }).count);
+      if (count === 0) continue;
+      issues.push({
+        code: "relationship_completeness_sql_diagnostic_mismatch",
+        path: "data/canonical.db",
+        message: `${view} reports ${count} violation row(s).`,
+      });
+    }
+  } catch (error) {
+    issues.push({
+      code: "relationship_completeness_unreadable",
+      path: "data/canonical.db",
+      message: error instanceof Error ? error.message : String(error),
+    });
+  } finally {
+    db?.close();
+  }
+}
+
+export function validateRepo(options: {
+  strictWriterCitations?: boolean | undefined;
+  relationshipMode?: RelationshipValidationMode | undefined;
+} = {}): MtaValidationReport {
   const issues: MtaValidationIssue[] = [];
+  const warnings: MtaValidationIssue[] = [];
+  const relationshipContract = loadRelationshipContract();
+  const contractRelationshipMode = relationshipContractValidationMode(relationshipContract);
+  if (options.relationshipMode !== undefined && options.relationshipMode !== contractRelationshipMode) {
+    throw new Error(
+      `relationship validation mode is locked by the checked-in contract (${contractRelationshipMode}); ` +
+      `refusing requested downgrade/override ${options.relationshipMode}`,
+    );
+  }
+  const relationshipMode = contractRelationshipMode;
   const requiredPathCount = validateRequiredPaths(issues);
-  const submissionIds = readSubmissionIds();
-  const records = readCanonicalRecords();
+  const dbRecords = readCanonicalRecordsFromDbFile();
+  if (!dbRecords) {
+    issues.push({
+      code: "missing_canonical_db",
+      path: "data/canonical.db",
+      message: "canonical.db is missing or has an incompatible schema; re-run materialize.",
+    });
+  }
+  const records = dbRecords ?? [];
+  const submissionIds = [...new Set(records.flatMap((record) => record.submission_ids))].sort();
   const pagePaths = walkMarkdown(join(repoRoot, "wiki"));
 
   validatePages(pagePaths, issues);
   validateStagedSourceBlocks(issues);
-  validateEvidence(issues);
-  validateRelations(issues);
+  validateEvidence(records, issues);
+  validateRelations(records, issues);
   validateSemanticInvariants(records, issues);
-  validateGlobalIdentities(issues);
-  validateMetricPayloads(issues);
+  validateGlobalIdentities(records, issues);
+  validateMetricPayloads(records, issues);
   validateWriterPrimitives(pagePaths, records, issues);
   if (options.strictWriterCitations) {
     const strictContext = { ...buildWriterPrimitiveValidationContext(records), strictWriterCitations: true };
@@ -570,9 +707,30 @@ export function validateRepo(options: { strictWriterCitations?: boolean | undefi
   }
   issues.push(...validateIdentityReviewAcceptedArtifacts().issues);
   issues.push(...validateIdentityOverrideArtifacts());
-  issues.push(...validateSubmissionRetirementOverrides({ knownSubmissionIds: new Set(submissionIds) }));
+  // Ordinary validation is a canonical.db consumer. Producer-journal/correction application is
+  // fail-closed in materializeWiki before authoritative JSONL and SQLite are written; here we
+  // validate the immutable override/correction artifact schemas without rematerializing inputs.
+  issues.push(...validateSubmissionRetirementOverrides());
   issues.push(...validateSemanticCorrections());
   issues.push(...validateOperationalRecoveryProposalTree({ records }).issues);
+
+  const relationshipAudit = auditRelationshipGraph(records, {
+    mode: relationshipMode,
+    contract: relationshipContract,
+    includeOrphans: false,
+  });
+  validateRelationshipProjectionParity(relationshipAudit, issues);
+  for (const finding of relationshipAudit.findings) {
+    const issue: MtaValidationIssue = {
+      code: finding.code,
+      message: `${finding.detail} [${finding.finding_id}]`,
+      recordId: finding.record_id,
+      path: finding.record_id ? undefined : "data/contracts/relationships/v1/contract.json",
+    };
+    if (finding.severity === "error") issues.push(issue);
+    else if (finding.severity === "warning") warnings.push(issue);
+  }
+  validateRelationshipCompletenessWarnings(warnings, issues, relationshipMode);
 
   return {
     requiredPathCount,
@@ -580,5 +738,6 @@ export function validateRepo(options: { strictWriterCitations?: boolean | undefi
     canonicalRecordCount: records.length,
     wikiPageCount: pagePaths.length,
     issues,
+    warnings,
   };
 }

@@ -7,20 +7,26 @@ record_kind: "route"
 display_name: "Q1 bus route"
 source_id: "queens_addendum_equity_evaluation_appendix_d"
 source_ids:
+  - "mta_q1_hillside_route_profile_2025"
   - "mta_queens_bus_network_redesign_service_changes"
   - "queens_addendum_equity_evaluation_appendix_d"
 local_observation_id: "route_q1_queens"
 local_observation_ids:
+  - "route_q1_hillside_profile_2025"
   - "route_q1_qbnr_effective_2025"
   - "route_q1_queens"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-07-12T21:09:20.000Z"
+generated_at: "2026-07-15T18:00:00.000Z"
 raw_text: "Q1"
 submission_ids:
   - "sub_118f5b3eb296d126"
+  - "sub_38af61a59da128f1"
   - "sub_94ab8229dad99eac"
 payload:
+  borough: "Queens"
+  borough_normalized: "queens"
+  description: "Q1 route profile identifying service on Hillside Avenue."
   route_id: "Q1"
   route_label: "Q1"
   route_name: "Q1"
@@ -29,6 +35,7 @@ payload:
   route_type_normalized: "bus"
   routes:
     - "Q1"
+  service_variant: "local"
 evidence_refs:
   -
     block_id: "p006_c0008"
@@ -57,6 +64,26 @@ evidence_refs:
     source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
     source_quote: "Q1"
     text_sha256: "sha256:65b4c2dbe8205c4ddb61bca7957e2c4dcb4c049356a2377960e7692c5eb1550f"
+    text_source: "raw_text"
+  -
+    block_id: "p001_p0002"
+    evidence_id: "mta_q1_hillside_route_profile_2025#p001_p0002"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_q1_hillside_route_profile_2025"
+    source_path: "raw/sources/mta_q1_hillside_route_profile_2025/blocks.jsonl"
+    source_quote: "Q1"
+    text_sha256: "sha256:c08c3666807634df5e857f8320bc7ebe773c93265cf309c85b51ce41dddbee6c"
+    text_source: "raw_text"
+  -
+    block_id: "p001_p0005"
+    evidence_id: "mta_q1_hillside_route_profile_2025#p001_p0005"
+    page_number: 1
+    role: "corridor_scope"
+    source_id: "mta_q1_hillside_route_profile_2025"
+    source_path: "raw/sources/mta_q1_hillside_route_profile_2025/blocks.jsonl"
+    source_quote: "The Q1 will be extended west along Hillside Av to Sutphin Blvd."
+    text_sha256: "sha256:aee29ee128deaf4fb21dc5d97c61c2860a76b1ea8651d820cf90281f4a8ed6f0"
     text_source: "raw_text"
 ---
 

@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "eligible_occurrence_count": 134,
+  "unique_treatment_count": 276,
+  "treatment_membership_count": 276,
+  "classification_counts": {
+    "physical_corridor_or_segment_intervention": 1,
+    "nonphysical_service_operations_policy_control": 275,
+    "point_or_stop_physical_intervention": 0,
+    "review_required": 0
+  },
+  "scope_requirement_counts": {
+    "corridor_or_segment_required": 1,
+    "not_applicable": 275,
+    "point_or_stop_required": 0,
+    "review_required": 0
+  },
+  "occurrence_disposition_counts": {
+    "physical_scope_satisfied": 0,
+    "physical_scope_missing": 1,
+    "physical_scope_relation_missing": 0,
+    "physical_scope_evidence_missing": 0,
+    "physical_scope_relation_invalid": 0,
+    "physicality_review_required": 0,
+    "physical_scope_not_applicable": 133
+  },
+  "finding_counts": {
+    "OTPHY_PHYSICAL_SCOPE_MISSING": 1
+  },
+  "review_ledger_complete": true,
+  "physical_scope_complete": false,
+  "hard_mode_ready": false,
+  "release_id": "v1-rc20",
+  "review_stage": "provisional_rc20",
+  "release_manifest_sha256": "a2e9147fbb3db3b27a48df27f9550a8b31ab28bc85e30b7166d75b46b54e1a08",
+  "review_ledger_sha256": "bf05e73a7f39f363d5687747c085aad60cac270127411c70c8ae842315253704",
+  "policy_sha256": "4b664726e353e7b1d823409b054fe3ecd931bf87da63eb8ffcd9c0ecda913ed5",
+  "contract_sha256": "d9decfbe225ecfa7224b64fb18ef27923966181e51da520c199984a8dba4b17b",
+  "by_treatment_family": {
+    "automated_bus_lane_enforcement": {
+      "unique_treatment_count": 5,
+      "occurrence_membership_count": 5,
+      "classifications": {
+        "nonphysical_service_operations_policy_control": 5
+      }
+    },
+    "bus_lane": {
+      "unique_treatment_count": 1,
+      "occurrence_membership_count": 1,
+      "classifications": {
+        "physical_corridor_or_segment_intervention": 1
+      }
+    },
+    "bus_stop_or_boarding": {
+      "unique_treatment_count": 116,
+      "occurrence_membership_count": 116,
+      "classifications": {
+        "nonphysical_service_operations_policy_control": 116
+      }
+    },
+    "fare_collection": {
+      "unique_treatment_count": 4,
+      "occurrence_membership_count": 4,
+      "classifications": {
+        "nonphysical_service_operations_policy_control": 4
+      }
+    },
+    "route_redesign": {
+      "unique_treatment_count": 1,
+      "occurrence_membership_count": 1,
+      "classifications": {
+        "nonphysical_service_operations_policy_control": 1
+      }
+    },
+    "service_pattern": {
+      "unique_treatment_count": 149,
+      "occurrence_membership_count": 149,
+      "classifications": {
+        "nonphysical_service_operations_policy_control": 149
+      }
+    }
+  },
+  "final_post_semantic_release_guard_ready": false
+}

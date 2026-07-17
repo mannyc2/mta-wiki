@@ -53,7 +53,10 @@ describe("schema row validators (B2)", () => {
 describe("rebuild-based versioning (B5)", () => {
   it("a freshly rebuilt DB carries user_version === CANONICAL_DB_VERSION and opens cleanly", () => {
     const path = join(tmpdir(), "version-gate.db");
-    rebuildCanonicalDb([], { path });
+    rebuildCanonicalDb([], {
+      path,
+      evidenceRegistry: { provenance: "test_fixture", entries: [] },
+    });
     const db = openCanonicalDb(path, { readonly: true });
     try {
       const version = Number((db.query("PRAGMA user_version").get() as { user_version: number }).user_version);

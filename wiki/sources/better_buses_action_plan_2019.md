@@ -47,7 +47,7 @@ evidence_refs:
     text_source: "raw_text"
 ---
 
-# NYC DOT Better Buses Action Plan
+# Better Buses Action Plan
 
 source_id: better_buses_action_plan_2019
 citation: cite block ids exactly as shown in square brackets

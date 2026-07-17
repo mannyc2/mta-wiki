@@ -5,7 +5,6 @@ import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
 import type { OperationalAnchorReviewDecision } from "@mta-wiki/pipeline/materialize/operational-anchor-review";
 import {
-  OPERATIONAL_OCCURRENCE_SCHEMA_VERSION,
   parseOperationalOccurrence,
   type OperationalOccurrenceEvidenceBinding,
   type OperationalOccurrenceRow,
@@ -647,7 +646,7 @@ export function parseOperationalOccurrenceReviewSnapshot(value: unknown): Operat
   };
 }
 
-// Compile-time assertion that occurrence and review contract versions begin in
-// lockstep. They may diverge in a future explicitly versioned migration.
-const _initialContractVersion: typeof OPERATIONAL_OCCURRENCE_SCHEMA_VERSION = OPERATIONAL_OCCURRENCE_REVIEW_SCHEMA_VERSION;
-void _initialContractVersion;
+// Review decisions remain v1: occurrence contract v2 adds a deterministic phase projection from
+// already-reviewed event/relation ids and does not broaden the accepted decision surface.
+const _occurrenceContractSupportsReviewV1: 1 = OPERATIONAL_OCCURRENCE_REVIEW_SCHEMA_VERSION;
+void _occurrenceContractSupportsReviewV1;

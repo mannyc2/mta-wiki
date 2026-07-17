@@ -36,7 +36,47 @@ export type DerivedRelationCoverage = {
   /** Multiple candidates matched — recorded, never guessed (becomes a dangling_reference gap). */
   ambiguous_count: number;
   skipped_self_count: number;
+  /** Exact versioned decisions that forbid a mechanically resolvable edge. */
+  skipped_reviewed_non_edge_count: number;
 };
+
+export type DerivedRelationNonEdgeDecisionV1 = {
+  schema_version: 1;
+  decision_id: string;
+  rule_id: string;
+  field: string;
+  normalized_value: string;
+  target_record_id: string;
+  origin_record_ids: readonly string[];
+  reason_code: "temporal_identity_mismatch";
+  source_decision: string;
+};
+
+/**
+ * Exact fail-closed exceptions to mechanical relation derivation.
+ *
+ * These are deliberately pinned to the reviewed origin records. A later metric that merely uses
+ * the same short route literal cannot inherit a historical non-edge decision; it must receive an
+ * explicit evidence-backed route relationship or a new versioned decision.
+ */
+export const DERIVED_RELATION_NON_EDGE_DECISIONS_V1 = [
+  {
+    schema_version: 1,
+    decision_id: "relationship-reference-review-v1:692f49d5dbd6992a71ee23f4",
+    rule_id: "metric-route-has-metric",
+    field: "route",
+    normalized_value: "q20",
+    target_record_id: "route_q20-qbnr-2025",
+    origin_record_ids: [
+      "metric_q20-corridor-ridership-share-2014",
+      "metric_q20-peak-frequency-2014",
+      "metric_q20-ridership-2014",
+      "metric_q20-weekday-ridership-2014",
+    ],
+    reason_code: "temporal_identity_mismatch",
+    source_decision: "data/quality/acquisition/receipts/q20-historical-metric-scope-2014-2025.json",
+  },
+] as const satisfies readonly DerivedRelationNonEdgeDecisionV1[];
 
 /** A relation-context reference that could not become an edge (S2.4 item 3) — the C3 ambiguity-is-data
  *  surface and the S2.8 `dangling_reference` gap class. */
@@ -123,19 +163,12 @@ const DERIVED_RELATION_RULES: DerivedRelationRule[] = [
     targetKinds: ["entity", "project"],
     relationKind: "part_of_program",
     direction: "origin_to_target",
+    skipSelf: true,
   },
   {
     id: "route-operator",
     originKind: "route",
     fields: ["operator", "agency"],
-    targetKinds: ["entity"],
-    relationKind: "operated_by",
-    direction: "origin_to_target",
-  },
-  {
-    id: "project-operator",
-    originKind: "project",
-    fields: ["operator"],
     targetKinds: ["entity"],
     relationKind: "operated_by",
     direction: "origin_to_target",
@@ -182,15 +215,6 @@ const DERIVED_RELATION_RULES: DerivedRelationRule[] = [
     direction: "origin_to_target",
     skipSelf: true,
   },
-  {
-    id: "entity-publisher",
-    originKind: "entity",
-    fields: ["publisher"],
-    targetKinds: ["entity"],
-    relationKind: "published_by",
-    direction: "origin_to_target",
-    skipSelf: true,
-  },
 ];
 
 const LOOKUP_FIELDS_BY_KIND: Partial<Record<MtaObservationKind, string[]>> = {
@@ -234,6 +258,57 @@ function lookupKey(value: string) {
     .replace(/[^a-z0-9]+/gu, " ")
     .replace(/\s+/gu, " ")
     .trim();
+}
+
+function reviewedNonEdgeKey(
+  ruleId: string,
+  originRecordId: string,
+  field: string,
+  normalizedValue: string,
+  targetRecordId: string,
+) {
+  return [ruleId, originRecordId, field, normalizedValue, targetRecordId].join("\0");
+}
+
+const REVIEWED_NON_EDGE_BY_KEY = new Map(
+  DERIVED_RELATION_NON_EDGE_DECISIONS_V1.flatMap((decision) =>
+    decision.origin_record_ids.map((originRecordId) => [
+      reviewedNonEdgeKey(
+        decision.rule_id,
+        originRecordId,
+        decision.field,
+        decision.normalized_value,
+        decision.target_record_id,
+      ),
+      decision,
+    ] as const)
+  ),
+);
+
+function exactReviewedNonEdgeDecision(
+  rule: DerivedRelationRule,
+  origin: MtaCanonicalRecord,
+  field: string,
+  value: string,
+  target: MtaCanonicalRecord,
+): DerivedRelationNonEdgeDecisionV1 | undefined {
+  return REVIEWED_NON_EDGE_BY_KEY.get(reviewedNonEdgeKey(
+    rule.id,
+    origin.record_id,
+    field,
+    lookupKey(value),
+    target.record_id,
+  ));
+}
+
+function requiresExactReviewedNonEdgeDecision(
+  rule: DerivedRelationRule,
+  value: string,
+  target: MtaCanonicalRecord,
+): boolean {
+  return rule.id === "metric-route-has-metric" &&
+    lookupKey(value) === "q20" &&
+    target.record_id === "route_q20-qbnr-2025";
 }
 
 function recordIdSurface(record: MtaCanonicalRecord) {
@@ -513,6 +588,7 @@ type CoverageAccumulator = {
   unresolved_count: number;
   ambiguous_count: number;
   skipped_self_count: number;
+  skipped_reviewed_non_edge_count: number;
 };
 
 function coverageKey(rule: DerivedRelationRule, field: string) {
@@ -528,6 +604,7 @@ function emptyCoverage(): CoverageAccumulator {
     unresolved_count: 0,
     ambiguous_count: 0,
     skipped_self_count: 0,
+    skipped_reviewed_non_edge_count: 0,
   };
 }
 
@@ -584,6 +661,24 @@ function deriveRelations(records: MtaCanonicalRecord[], options: { coverageOnly:
             continue;
           }
 
+          const reviewedNonEdge = exactReviewedNonEdgeDecision(
+            rule,
+            origin,
+            field,
+            value,
+            resolution.record,
+          );
+          if (reviewedNonEdge) {
+            summary.skipped_reviewed_non_edge_count += 1;
+            continue;
+          }
+          if (requiresExactReviewedNonEdgeDecision(rule, value, resolution.record)) {
+            throw new Error(
+              `derived relation ${rule.id}.${field} on ${origin.record_id} resolves ${JSON.stringify(value)} ` +
+                `to ${resolution.record.record_id} but has no exact versioned non-edge decision`,
+            );
+          }
+
           const key = relationKey(rule.relationKind, subject.record_id, object.record_id);
           if (relationKeys.has(key)) {
             summary.already_present_count += 1;
@@ -625,6 +720,7 @@ function deriveRelations(records: MtaCanonicalRecord[], options: { coverageOnly:
           unresolved_count: summary.unresolved_count,
           ambiguous_count: summary.ambiguous_count,
           skipped_self_count: summary.skipped_self_count,
+          skipped_reviewed_non_edge_count: summary.skipped_reviewed_non_edge_count,
         };
       }),
     ),

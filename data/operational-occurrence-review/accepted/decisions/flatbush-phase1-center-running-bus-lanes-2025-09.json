@@ -2,9 +2,9 @@
   "schema_version": 1,
   "decision_id": "flatbush-phase1-center-running-bus-lanes-2025-09",
   "review_state": "approved",
-  "accepted_at": "2026-07-13T18:45:00.000Z",
-  "reviewer": "codex-corpus-completion-2026-07-13",
-  "rationale": "The September 25, 2025 official NYC DOT announcement establishes that installation of the bounded Livingston Street-to-State Street Phase 1 center-running bus lanes began during September 2025, and the April 2026 official retrospective confirms that this same two-block phase was installed during Fall 2025. This decision uses September only as a month-level installation-commencement onset: it does not invent an exact work-start day, fine-bearing day, or operational-completion day. It binds only B41 and B67 and one atomic bus_lane treatment, while preserving the separate season-precision completion event and excluding Phase 2 islands, pedestrian-space, curb-management, signal-priority, camera-enforcement, and reroute scope.",
+  "accepted_at": "2026-07-16T08:30:00.000Z",
+  "reviewer": "codex-relationship-integrity-2026-07-16",
+  "rationale": "The September 25, 2025 official NYC DOT announcement establishes that installation of the bounded Livingston Street-to-State Street Phase 1 center-running bus lanes began during September 2025, and the April 2026 official retrospective confirms that this same two-block phase was installed during Fall 2025. This decision uses September only as a month-level installation-commencement onset: it does not invent an exact work-start day, fine-bearing day, or operational-completion day. It binds only B41 and B67 and one atomic bus_lane treatment, while preserving the separate season-precision completion event and excluding Phase 2 islands, pedestrian-space, curb-management, signal-priority, camera-enforcement, and reroute scope. The July 16 relationship-integrity review also selects the source-stated delivered treatment-to-corridor relation for the exact Livingston Street-to-State Street segment; this is a direct canonical edge supported by the same April 2026 NYC DOT block, not a geometry, proximity, or street-name inference.",
   "occurrence_id": "occurrence:8c987704152b459014217d44",
   "founding_key": "event:event_flatbush-phase1-installation-start-sep2025",
   "observation_event_record_ids": [
@@ -14,7 +14,8 @@
     "relation_flatbush-phase1-has-center-running-bus-lanes",
     "relation_flatbush-phase1-has-start-event-sep2025",
     "relation_flatbush-phase1-serves-b41",
-    "relation_flatbush-phase1-serves-b67"
+    "relation_flatbush-phase1-serves-b67",
+    "relation_flatbush-phase1-treatment-on-bounded-corridor-livingston-state-20260715"
   ],
   "resolved_status": "realized",
   "resolved_onset": {

@@ -1581,13 +1581,13 @@
     },
     {
       "submission_id": "sub_177d00b4035ba1b9",
-      "reason": "Codex project pseudo-heading cleanup retires a singleton project record created from the one-line checkmark heading 'Increase Ridership \u2713'. The cited block and nearby page context show an accomplishment/slide heading about one billion subway rides, not a source-scoped project record with scope, type, or project status.",
+      "reason": "Codex project pseudo-heading cleanup retires a singleton project record created from the one-line checkmark heading 'Increase Ridership ✓'. The cited block and nearby page context show an accomplishment/slide heading about one billion subway rides, not a source-scoped project record with scope, type, or project status.",
       "source_decision": "data/review_notes/codex-project-pseudo-heading-retirements-2026-07-01.json#project-pseudo-heading-retirements",
       "reviewed_at": "2026-07-01T00:00:00Z"
     },
     {
       "submission_id": "sub_2decaa7513a169a6",
-      "reason": "Codex project pseudo-heading cleanup retires a singleton project record created from the one-line checkmark heading 'Incredible Advocates \u2713'. The cited block and nearby page context show a recognition/slide heading, not a source-scoped project record with scope, type, or project status.",
+      "reason": "Codex project pseudo-heading cleanup retires a singleton project record created from the one-line checkmark heading 'Incredible Advocates ✓'. The cited block and nearby page context show a recognition/slide heading, not a source-scoped project record with scope, type, or project status.",
       "source_decision": "data/review_notes/codex-project-pseudo-heading-retirements-2026-07-01.json#project-pseudo-heading-retirements",
       "reviewed_at": "2026-07-01T00:00:00Z"
     },
@@ -1632,6 +1632,612 @@
       "reason": "Replace the DeKalb/Lafayette B38 evidence-enrichment submission with a minimal route_id assertion. The retired row redundantly introduced route_label and broad route-type/geography fields that were already canonical and changed only the route-anchor selection reason; the replacement preserves the exact delivered B38 evidence without public anchor-byte churn.",
       "source_decision": "data/quality/acquisition/receipts/dekalb-lafayette-summer-2024-temporary-bus-lanes.json",
       "reviewed_at": "2026-07-13T17:20:00Z"
+    },
+    {
+      "submission_id": "sub_0242ca79d0a6f47d",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_aa8a07240cb9b1ab, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_0242ca79d0a6f47d",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_02847ecf0dfc521f",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_07a374e3c9c64e8b, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_02847ecf0dfc521f",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_0c2727e40e4e0fdc",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_afa58f64eb9f2872, targeting entity_mta-nyct and citing exact reviewed identity evidence. Complete-source review found exact MTA NYCT attribution in the staged presentation, so this local observation belongs to New York City Transit rather than the parent authority.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_0c2727e40e4e0fdc",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_1603d762bd29b5d9",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_aee94435d5b5604a, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_1603d762bd29b5d9",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_197290ab432de0f3",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_84d667e07317303b, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_197290ab432de0f3",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_19cf97947d32f35f",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 retires this evidence-unsupported entity observation without replacement. The complete staged memorial-image source shows generic MTA branding at a subway setting but never identifies a legal entity or states that MTA organized the event. The agency observation and organizer description exceed the source and must be retired.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_19cf97947d32f35f",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_216b6a838277e29f",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_5168b806af9256d0, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_216b6a838277e29f",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_24405db04d716bd0",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_753e78a4185a544e, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_24405db04d716bd0",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_275160bbef4aadee",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_3bf566fb586b4d89, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_275160bbef4aadee",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_2c7d5f637c436025",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_da6ec27a9f392fe8, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_2c7d5f637c436025",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_2da0f940a801db3d",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_f38669e0d6ebea4f, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_2da0f940a801db3d",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_331e52d4ced22596",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_da21616c4e3da541, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_331e52d4ced22596",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_392a96ce7a13e3c9",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_21567dc9c7cd2dca, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_392a96ce7a13e3c9",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_3c4044add1828d1c",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_8ce11b063fb85a50, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_3c4044add1828d1c",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_416bfd9959e38421",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_2249e22ec41cdda1, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_416bfd9959e38421",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_463e14c50f4ec9bc",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_2806bd17c980a764, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_463e14c50f4ec9bc",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_5349270c43b264c0",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_63abfdafb5da4ff3, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_5349270c43b264c0",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_53ac8a523791c9a9",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_3fa8bdc6aa3b013c, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_53ac8a523791c9a9",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_53b563dd01136d2d",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_4a6d606d0bdcded7, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_53b563dd01136d2d",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_59553cf61b83d7fd",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_812f16246238604c, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_59553cf61b83d7fd",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_5b9e0118408d4b24",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_8f6e61a734a762ea, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_5b9e0118408d4b24",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_604688b0c658ceb8",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_572ac46be09c5f99, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_604688b0c658ceb8",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_635920d1a9d0f975",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_50a51b78c7fd03f0, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_635920d1a9d0f975",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_639e28b4f49c9400",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_dc13d3ff1f2ee975, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_639e28b4f49c9400",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_65828cdedd1a7ecf",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_15f6e49e8f3fe3ba, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_65828cdedd1a7ecf",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_66b9bf0ed606fb7e",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_48acce1e29b24797, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_66b9bf0ed606fb7e",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_672dfd10c84508c8",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_dbb9d1270fa1168f, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_672dfd10c84508c8",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_686ee217f7023e7b",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 retires this evidence-unsupported entity observation without replacement. The complete staged ACE routes dictionary contains no MTA, Metropolitan Transportation Authority, NYCT, or New York City Transit identity assertion. Its cited blocks only describe a Route field, so the publisher entity was fabricated beyond evidence and must be retired.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_686ee217f7023e7b",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_69b520c8259fa6dd",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_4f98e1e9b80c022d, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_69b520c8259fa6dd",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_6f870616c839434b",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_d46cb7bd0ee0bde8, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_6f870616c839434b",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_7490ae93abb46014",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_00d69a4d8f5a1c95, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_7490ae93abb46014",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_8180dcbf25ec9056",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_0f6c1d6fac48e867, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_8180dcbf25ec9056",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_8676f3a81492109f",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_9b08da1dbf54d805, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_8676f3a81492109f",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_8e2092fd83def5ac",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_4278dfe10ca96e62, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_8e2092fd83def5ac",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_93432f9e83cec801",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_e485f1130dbc43ec, targeting entity_mta-nyct and citing exact reviewed identity evidence. Complete-source review found exact MTA NYCT attribution in the staged presentation, so this local observation belongs to New York City Transit rather than the parent authority. Its downstream implementation/publication edges still exceed their cited branding evidence and require separate remediation.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_93432f9e83cec801",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_937a8c0854bd16b5",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_82bb9855f5622f03, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_937a8c0854bd16b5",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_947cd8227babef81",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_1f95e9d344e6aa04, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_947cd8227babef81",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_95ac1db2b888b865",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_6998a7288d83fa76, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_95ac1db2b888b865",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_96904c1925ca9909",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_7a01d96c79e5e8f2, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_96904c1925ca9909",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_97e92df543f549b3",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_10398b10cd5373f7, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_97e92df543f549b3",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_9a8315008e682c95",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_04c2b5c1053f4030, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_9a8315008e682c95",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_9e5ff4a0de15bc23",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_4a6b9b895b3b57bf, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_9e5ff4a0de15bc23",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_a768d3f90ce81e87",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_5393556fcadccc4e, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_a768d3f90ce81e87",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_a7b8921cd8877640",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_8548304dca11773b, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_a7b8921cd8877640",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_a7e180e3a7f03759",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_fa78eb6f1fff850f, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_a7e180e3a7f03759",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_b6d2d31bcb930aea",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_a5ff1a7733de8154, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_b6d2d31bcb930aea",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_be9949bee9049ad5",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_55454b904e8d38a3, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_be9949bee9049ad5",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_c59889fddffd046c",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_cd4fd9085b19d5df, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_c59889fddffd046c",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_c73785884a91ec9d",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_cad6d8b585911b24, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_c73785884a91ec9d",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_d286ad54e68796bd",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_7011e14d342c3296, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_d286ad54e68796bd",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_e24faf1dd8ded4dd",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_268a249042820608, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_e24faf1dd8ded4dd",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_e4ab40f09101ab71",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_678e4a303b8887f2, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_e4ab40f09101ab71",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_ebaefc69a9d4bb0f",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_042635b8e6364f78, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_ebaefc69a9d4bb0f",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_ee8fddb0aa546ba9",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_47da67da9ed6905d, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_ee8fddb0aa546ba9",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_f7a9879295aca0fd",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_eed17d4822759d0c, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_f7a9879295aca0fd",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_f8283a7c91f11a03",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_c3f675b29cd92384, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_f8283a7c91f11a03",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_f8f7015136c63f10",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_8969e3e7f97478ca, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_f8f7015136c63f10",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_f97066494513adbc",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_66fed54184d82904, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_f97066494513adbc",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_fa43a8a5e4d7cd5b",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_1e92f3abf9614118, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error. At least one downstream local relation cannot safely follow the retarget because its predicate, endpoint class, status, or exact role is not supported.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_fa43a8a5e4d7cd5b",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_fd4afd213ccd1e45",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_bf08e64d413dfb2e, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_fd4afd213ccd1e45",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_ffadae6e6d6ad6e6",
+      "reason": "Authoritative identity review mta-nyct-target-reviewed-decisions-v1 replaces this local entity observation with sub_4d1671bf71bf4e9d, targeting entity_mta-entity-update-2025 and citing exact reviewed identity evidence. The staged official source uses MTA/Metropolitan Transportation Authority as the parent institutional identity and does not identify this local observation as New York City Transit; the current NYCT target is therefore a parent/subsidiary identity error.",
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_ffadae6e6d6ad6e6",
+      "reviewed_at": "2026-07-16T01:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_1d99e31817d6f887",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_8cf276a61775fcd8; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_1d99e31817d6f887",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_27a198f4e701327d",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_561b413271134f6b; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_27a198f4e701327d",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_27f66b2c5c2db1d6",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_7fc0a48c558ccdfa; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_27f66b2c5c2db1d6",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_2af27de45dff820a",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_ecaf665bc7a45ebf; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_2af27de45dff820a",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_3624fbe09caf186f",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_5586e9f03c0d91b5; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_3624fbe09caf186f",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_421e4e76e6c367cc",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_202e2110eb76342e; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_421e4e76e6c367cc",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_6d6f862a79c8834b",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_865ce99822fc851b; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_6d6f862a79c8834b",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_76b0ef1dde1938bf",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_d101ce3ea92c0746; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_76b0ef1dde1938bf",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_77dc4ac16e69c211",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_449c950abbe51108; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_77dc4ac16e69c211",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_8060076bb0a12d3a",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_6d28c328dbe96478; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_8060076bb0a12d3a",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_85587caa7b9e8e3c",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_d212f9841da76c1c; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_85587caa7b9e8e3c",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_890e7d730d2452af",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_98acbe9c646bee06; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_890e7d730d2452af",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_a38d6f8ec9f054ec",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_c7287747bb9b3c4a; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_a38d6f8ec9f054ec",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_b42c8cc1ed4242c9",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_15ea91329afe239d; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_b42c8cc1ed4242c9",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_b83f5c008f20bac2",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_eade7830e0e8a6cf; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_b83f5c008f20bac2",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_bde839f19c429ed1",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_12a6d1a59f89bd5e; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_bde839f19c429ed1",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_d867e060e4745281",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_22fc8e08faf8e21c; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_d867e060e4745281",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_d9cdde3e64d8cf36",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_6a901a6f487c1a9f; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_d9cdde3e64d8cf36",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_f9173fe14787d671",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_5062c1dde65cb3b2; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_f9173fe14787d671",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_f9dd074301edd7dc",
+      "reason": "The staged official PDF bytes are unchanged, but its authoritative source packet was reblocked from the superseded cached-pdf-text block surface to current Chandra primary blocks. Replace this row with sub_fe69ed174c5eae12; its claim and canonical identity are unchanged, and its exact evidence now resolves to the current content-addressed block registry.",
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_f9dd074301edd7dc",
+      "reviewed_at": "2026-07-16T01:30:00.000Z"
+    },
+    {
+      "submission_id": "sub_b3fd1d768f00f286",
+      "reason": "The reviewed route-identity split preserves distinct Bx15 Local and Bx15 Limited physical route records. Replace this limited-stop observation, which was incorrectly targeted to the Bx15 Local identity, with sub_a4ca1983bfb6ce83; the replacement changes only the canonical target and preserves the exact source-backed payload and evidence.",
+      "source_decision": "data/quality/relationship-integrity/semantic-remediation/ledger.jsonl#route-identity/sub_b3fd1d768f00f286",
+      "reviewed_at": "2026-07-16T03:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_7ef8e80454f1c62e",
+      "reason": "This generated semantic-remediation row misclassifies an embedded Safety and Security Report mention as a second canonical source for the meeting_doc_113946 staged document. Retain physical-source submission sub_8880027ddc0e8794; the embedded statement and exact evidence remain in the staged source.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_7ef8e80454f1c62e",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_f817f1b21e000302",
+      "reason": "This relation depends on the retired meeting_doc_113946 embedded-report pseudo-source. Rebinding it to the containing meeting minutes would change the claim, so retire the edge while preserving its source statement in the authoritative evidence blocks.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_f817f1b21e000302",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_80d3ab843a8e37ba",
+      "reason": "This generated semantic-remediation row misclassifies the embedded Ridership Data Through July 2023 section as a second canonical source for the meeting_doc_121276 staged exhibit book. Retain physical-source submission sub_1a0a92e36dffe31e; the embedded statement and exact evidence remain in the staged source.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_80d3ab843a8e37ba",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_ebd19ab73e34c996",
+      "reason": "This relation depends on the retired meeting_doc_121276 embedded-report pseudo-source. Rebinding it to the containing exhibit book would change the prepared-by claim, so retire the edge while preserving its source statement in the authoritative evidence blocks.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_ebd19ab73e34c996",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_80c3f9672781b046",
+      "reason": "This generated semantic-remediation row misclassifies an embedded Safety and Security Report mention as a second canonical source for the meeting_doc_170981 staged meeting minutes. Retain physical-source submission sub_3786a84e3a051311; the embedded statement and exact evidence remain in the staged source.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_80c3f9672781b046",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_960d576071061a64",
+      "reason": "This relation depends on the retired meeting_doc_170981 embedded-report pseudo-source. Rebinding it to the containing meeting minutes would change the claim, so retire the edge while preserving its source statement in the authoritative evidence blocks.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_960d576071061a64",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_524bbe1a2aabb4f3",
+      "reason": "This generated semantic-remediation row misclassifies an embedded LIRR President's Report mention as a second canonical source for the meeting_doc_205556 staged meeting minutes. Retain physical-source submission sub_1ce843465dfab245; the embedded statement and exact evidence remain in the staged source.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_524bbe1a2aabb4f3",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_af84f73845b39d74",
+      "reason": "This relation depends on the retired meeting_doc_205556 LIRR report pseudo-source. Rebinding it to the containing joint minutes would change the presented-by claim, so retire the edge while preserving its source statement in the authoritative evidence block.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_af84f73845b39d74",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_c43a00963ed7bf72",
+      "reason": "This generated semantic-remediation row misclassifies an embedded MTA C&D President's Report mention as a second canonical source for the meeting_doc_205556 staged meeting minutes. Retain physical-source submission sub_1ce843465dfab245; the embedded statement and exact evidence remain in the staged source.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_c43a00963ed7bf72",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_6a3b87e89d6f8dbd",
+      "reason": "This relation depends on the retired meeting_doc_205556 MTA C&D report pseudo-source. Rebinding it to the containing joint minutes would change the presented-by claim, so retire the edge while preserving its source statement in the authoritative evidence block.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_6a3b87e89d6f8dbd",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_b4eb4618080b6ddb",
+      "reason": "This generated semantic-remediation row misclassifies an embedded Metro-North President's Report mention as a second canonical source for the meeting_doc_205556 staged meeting minutes. Retain physical-source submission sub_1ce843465dfab245; the embedded statement and exact evidence remain in the staged source.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_b4eb4618080b6ddb",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_29951b4ef8398128",
+      "reason": "This relation depends on the retired meeting_doc_205556 Metro-North report pseudo-source. Rebinding it to the containing joint minutes would change the presented-by claim, so retire the edge while preserving its source statement in the authoritative evidence block.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_29951b4ef8398128",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_f4770bc4ce071a6c",
+      "reason": "This generated semantic-remediation row misclassifies an embedded NYC Transit President's Report mention as a second canonical source for the meeting_doc_205556 staged meeting minutes. Retain physical-source submission sub_1ce843465dfab245; the embedded statement and exact evidence remain in the staged source.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_f4770bc4ce071a6c",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_98da12bdb65c632d",
+      "reason": "This relation depends on the retired meeting_doc_205556 NYC Transit report pseudo-source. Rebinding it to the containing joint minutes would change the presented-by claim, so retire the edge while preserving its source statement in the authoritative evidence block.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_98da12bdb65c632d",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_8f9321a81e180367",
+      "reason": "This generated semantic-remediation row misclassifies the embedded 2020 Year-End Review section as a second canonical source for the meeting_doc_26831 staged exhibit book. Retain physical-source submission sub_7f7c9c7765c28c54; the embedded statement and exact evidence remain in the staged source.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_8f9321a81e180367",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_441d731c782b5350",
+      "reason": "This relation depends on the retired meeting_doc_26831 embedded-report pseudo-source. Rebinding it to the containing exhibit book would change the prepared-by claim, so retire the edge while preserving its source statement in the authoritative evidence blocks.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#embedded-report-pseudo-sources/sub_441d731c782b5350",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_d256b1825a9130cb",
+      "reason": "This semantic-remediation Queens borough entity exactly repeats the earlier reviewed entity from sub_343f86ef704f5bc1 with the same source literal, entity type, description, and evidence block. Retire the redundant row and retain the proof-backed Queens identity.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#queens-semantic-remediation-duplicate/sub_d256b1825a9130cb",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_4136d1aadb36264b",
+      "reason": "This semantic-remediation located_in relation repeats the earlier reviewed Jamaica Bus Depot to Queens edge from sub_e7f4c51d1db4ec3e with the same authoritative block and substantive assertion. Retire it with its redundant Queens endpoint and retain the prior proof-backed edge.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#queens-semantic-remediation-duplicate/sub_4136d1aadb36264b",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_e3708564e75e6501",
+      "reason": "After the reviewed endpoint correction, this row exactly duplicates relation_bt-distributes-to-mta on relation kind, B&T-to-MTA endpoints, assertion/date, and evidence identity. Retain sub_86a5676ccd28c686 because it is the durable target of corrections semqa-000007 and zz-relationship-semantic-v1-7c940c700fbbaf65; retire only this parallel duplicate.",
+      "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#bt-distributable-income-exact-duplicate/sub_e3708564e75e6501",
+      "reviewed_at": "2026-07-17T00:00:00.000Z"
     }
   ]
 }

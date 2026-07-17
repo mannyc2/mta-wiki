@@ -1,15 +1,20 @@
 import { describe, expect, it } from "bun:test";
-import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+import { readFileSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
   computeRouteAnchors,
+  readGtfsRoutesFromDb,
   readRouteAnchorReview,
   routeAnchorsJsonl,
   type GtfsRoute,
+  type ReviewedNonGtfsRouteDisposition,
+  type ReviewedNonGtfsRouteDispositionKind,
   type ReviewedNonGtfsRouteDispositions,
 } from "@mta-wiki/pipeline/materialize/route-anchors";
-import type { JsonObject, MtaCanonicalRecord } from "@mta-wiki/db/types";
+import type { JsonObject, JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
+import { repoRoot } from "@mta-wiki/core/paths";
 
 function route(recordId: string, payload: JsonObject, aliases: string[] = [], sourceIds: string[] = ["source_a"]): MtaCanonicalRecord {
   return {
@@ -21,7 +26,7 @@ function route(recordId: string, payload: JsonObject, aliases: string[] = [], so
     local_observation_id: recordId,
     display_name: recordId,
     payload,
-    evidence_refs: [],
+    evidence_refs: [{ source_id: sourceIds[0] ?? "source_a", evidence_id: `${sourceIds[0] ?? "source_a"}#${recordId}` }],
     submission_ids: [],
     truth_status: "source_stated",
     review_state: "unreviewed",
@@ -37,6 +42,43 @@ const gtfs = (routeId: string, shortName = routeId): GtfsRoute => ({
   borough: "Brooklyn",
   gtfs_feed_date: "2026-03-19_mta_bus_all",
 });
+
+function disposition(
+  recordId: string,
+  expectedRouteId: string | null,
+  kind: ReviewedNonGtfsRouteDispositionKind,
+  reason: string,
+  evidenceSource = "source_a",
+): ReviewedNonGtfsRouteDisposition {
+  return {
+    decision_id: `test:${recordId}`,
+    evidence_ids: [`${evidenceSource}#${recordId}`],
+    reviewed_at: "2026-07-15",
+    review_state: "approved",
+    disposition: kind,
+    reason,
+    expected_route_id: expectedRouteId,
+    study_projectable: false,
+  };
+}
+
+function reviewFile(overrides: JsonObject = {}, nonGtfsDispositions: JsonObject = {}): JsonObject {
+  return {
+    schema_version: 1,
+    contract_id: "route-identity-dispositions-v1",
+    gtfs_feed: {
+      feed_date: "2026-03-19_mta_bus_all",
+      route_count: 386,
+      routes_sha256: "a".repeat(64),
+    },
+    sbs_plus_successor_rule: {
+      rule_id: "unique-sbs-plus-successor-v1",
+      description: "Test rule description",
+    },
+    overrides,
+    non_gtfs_dispositions: nonGtfsDispositions,
+  };
+}
 
 describe("computeRouteAnchors", () => {
   it("anchors a B44 variant set to the umbrella short-name match and records variants", () => {
@@ -87,7 +129,18 @@ describe("computeRouteAnchors", () => {
         route("route_b1-reviewed", { route_id: "B1", route_label: "B1 Reviewed", route_record_scope: "true_route" }),
       ],
       [gtfs("B1")],
-      { B1: "route_b1-reviewed" },
+      {
+        B1: {
+          decision_id: "test:b1-reviewed-anchor",
+          evidence_ids: ["source_a#route_b1-reviewed"],
+          reviewed_at: "2026-07-15",
+          review_state: "approved",
+          canonical_route_record_id: "route_b1-reviewed",
+          additional_variant_record_ids: [],
+          expected_route_ids: { "route_b1-reviewed": "B1" },
+          reason: "Fixture review selects the intended canonical record.",
+        },
+      },
     );
     expect(rows[0]?.canonical_route_record_id).toBe("route_b1-reviewed");
     expect(rows[0]?.anchor_reason).toBe("manual_override");
@@ -106,7 +159,19 @@ describe("computeRouteAnchors", () => {
   });
 
   it("emits reviewed null-route disposition rows", () => {
-    const rows = computeRouteAnchors([route("route_b3-draft-plan", { route_label: "B3", route_name: "Avenue U" })], []);
+    const rows = computeRouteAnchors(
+      [route("route_b3-draft-plan", { route_label: "B3", route_name: "Avenue U" })],
+      [],
+      {},
+      {
+        "route_b3-draft-plan": disposition(
+          "route_b3-draft-plan",
+          null,
+          "proposal",
+          "Draft-plan proposal record tied to B3 planning context rather than an operating GTFS route id.",
+        ),
+      },
+    );
     expect(rows).toEqual([
       {
         gtfs_route_id: null,
@@ -133,17 +198,30 @@ describe("computeRouteAnchors", () => {
       ["source_2025"],
     );
     const dispositions: ReviewedNonGtfsRouteDispositions = {
-      "route_q48-serves-lga-2011": {
-        disposition: "historical_retired",
-        reason: "The 2011 airport route was retired; the current Q48 reuses its number for a distinct service.",
-        expected_route_id: "Q48",
-      },
+      "route_q48-serves-lga-2011": disposition(
+        "route_q48-serves-lga-2011",
+        "Q48",
+        "historical_retired",
+        "The 2011 airport route was retired; the current Q48 reuses its number for a distinct service.",
+        "source_2011",
+      ),
     };
 
     const rows = computeRouteAnchors(
       [historical, current],
       [gtfs("Q48")],
-      { Q48: "route_q48-qbnr-2025" },
+      {
+        Q48: {
+          decision_id: "test:q48-current-anchor",
+          evidence_ids: ["source_2025#route_q48-qbnr-2025"],
+          reviewed_at: "2026-07-15",
+          review_state: "approved",
+          canonical_route_record_id: "route_q48-qbnr-2025",
+          additional_variant_record_ids: [],
+          expected_route_ids: { "route_q48-qbnr-2025": "Q48" },
+          reason: "Fixture review selects the current route-number identity.",
+        },
+      },
       dispositions,
     );
 
@@ -170,7 +248,18 @@ describe("computeRouteAnchors", () => {
     const shuffled = computeRouteAnchors(
       [current, historical],
       [gtfs("Q48")],
-      { Q48: "route_q48-qbnr-2025" },
+      {
+        Q48: {
+          decision_id: "test:q48-current-anchor",
+          evidence_ids: ["source_2025#route_q48-qbnr-2025"],
+          reviewed_at: "2026-07-15",
+          review_state: "approved",
+          canonical_route_record_id: "route_q48-qbnr-2025",
+          additional_variant_record_ids: [],
+          expected_route_ids: { "route_q48-qbnr-2025": "Q48" },
+          reason: "Fixture review selects the current route-number identity.",
+        },
+      },
       dispositions,
     );
     expect(routeAnchorsJsonl(shuffled)).toBe(routeAnchorsJsonl(rows));
@@ -181,53 +270,55 @@ describe("computeRouteAnchors", () => {
 
     expect(() =>
       computeRouteAnchors([historical], [gtfs("Q48")], {}, {
-        "route_missing": {
-          disposition: "historical_retired",
-          reason: "Missing record",
-          expected_route_id: "Q48",
-        },
+        "route_missing": disposition("route_missing", "Q48", "historical_retired", "Missing record"),
       }),
     ).toThrow("is stale: canonical record not found");
 
     expect(() =>
       computeRouteAnchors([historical], [gtfs("Q48")], {}, {
-        "route_q48-old": {
-          disposition: "historical_retired",
-          reason: "Stale route-number binding",
-          expected_route_id: "Q49",
-        },
+        "route_q48-old": disposition("route_q48-old", "Q49", "historical_retired", "Stale route-number binding"),
       }),
     ).toThrow('is stale: expected route_id "Q49", found "Q48"');
 
     expect(() =>
       computeRouteAnchors([historical], [gtfs("Q48")], {}, {
         "route_q48-old": {
-          disposition: "proposal",
-          reason: "Wrong disposition for a literal route id",
-          expected_route_id: "Q48",
-        },
+          ...disposition("route_q48-old", "Q48", "historical_retired", "Must never be projectable"),
+          study_projectable: true,
+        } as unknown as ReviewedNonGtfsRouteDisposition,
       }),
-    ).toThrow("disposition must be historical_retired");
+    ).toThrow("must set study_projectable false");
 
     expect(() =>
       computeRouteAnchors(
         [historical],
         [gtfs("Q48")],
-        { Q48: "route_q48-old" },
         {
-          "route_q48-old": {
-            disposition: "historical_retired",
-            reason: "Retired route",
-            expected_route_id: "Q48",
+          Q48: {
+            decision_id: "test:q48-conflicting-disposition",
+            evidence_ids: ["source_a#route_q48-old"],
+            reviewed_at: "2026-07-15",
+            review_state: "approved",
+            canonical_route_record_id: "route_q48-old",
+            additional_variant_record_ids: [],
+            expected_route_ids: { "route_q48-old": "Q48" },
+            reason: "Invalid fixture attempts both a binding and a disposition.",
           },
         },
+        {
+          "route_q48-old": disposition("route_q48-old", "Q48", "historical_retired", "Retired route"),
+        },
       ),
-    ).toThrow("points to non-candidate route_q48-old");
+    ).toThrow("also disposes route_q48-old as non-projectable");
 
     expect(() =>
       computeRouteAnchors(
         [route("route_b3-draft-plan", { route_id: "B3", route_label: "B3" })],
         [gtfs("B3")],
+        {},
+        {
+          "route_b3-draft-plan": disposition("route_b3-draft-plan", null, "proposal", "Stale proposal disposition"),
+        },
       ),
     ).toThrow("is stale: expected route_id null, found \"B3\"");
 
@@ -235,7 +326,18 @@ describe("computeRouteAnchors", () => {
       computeRouteAnchors(
         [route("route_q48-current", { route_id: "Q48", route_label: "Q48", route_record_scope: "true_route" })],
         [gtfs("Q48")],
-        { Q84: "route_q48-current" },
+        {
+          Q84: {
+            decision_id: "test:stale-gtfs-route",
+            evidence_ids: ["source_a#route_q48-current"],
+            reviewed_at: "2026-07-15",
+            review_state: "approved",
+            canonical_route_record_id: "route_q48-current",
+            additional_variant_record_ids: [],
+            expected_route_ids: { "route_q48-current": "Q48" },
+            reason: "Invalid fixture references a missing GTFS route.",
+          },
+        },
       ),
     ).toThrow("Route anchor override for Q84 is stale: GTFS route not found");
   });
@@ -245,57 +347,120 @@ describe("computeRouteAnchors", () => {
     try {
       const path = join(dir, "review.json");
       expect(() => readRouteAnchorReview(path)).toThrow("Reviewed route-anchor exception file is required");
+      const q48Override = {
+        decision_id: "test:q48-current",
+        evidence_ids: ["source_q48#current"],
+        reviewed_at: "2026-07-15",
+        review_state: "approved",
+        canonical_route_record_id: "route_q48-current",
+        additional_variant_record_ids: [],
+        expected_route_ids: { "route_q48-current": "Q48" },
+        reason: "Reviewed current number reuse",
+      };
+      const q48Disposition = disposition("route_q48-old", "Q48", "historical_retired", "Reviewed number reuse");
       writeFileSync(
         path,
-        JSON.stringify({
-          overrides: { Q48: "route_q48-current" },
-          non_gtfs_dispositions: {
-            "route_q48-old": {
-              disposition: "historical_retired",
-              reason: "Reviewed number reuse",
-              expected_route_id: "Q48",
-            },
-          },
-        }),
+        JSON.stringify(reviewFile({ Q48: q48Override }, { "route_q48-old": q48Disposition })),
       );
       expect(readRouteAnchorReview(path)).toEqual({
-        overrides: { Q48: "route_q48-current" },
-        non_gtfs_dispositions: {
-          "route_q48-old": {
-            disposition: "historical_retired",
-            reason: "Reviewed number reuse",
-            expected_route_id: "Q48",
-          },
+        schema_version: 1,
+        contract_id: "route-identity-dispositions-v1",
+        gtfs_feed: {
+          feed_date: "2026-03-19_mta_bus_all",
+          route_count: 386,
+          routes_sha256: "a".repeat(64),
         },
+        sbs_plus_successor_rule: { rule_id: "unique-sbs-plus-successor-v1", description: "Test rule description" },
+        overrides: { Q48: q48Override },
+        non_gtfs_dispositions: { "route_q48-old": q48Disposition },
       });
 
-      writeFileSync(path, JSON.stringify({ overrides: {}, non_gtfs_dispositions: [] }));
+      writeFileSync(path, JSON.stringify(reviewFile({}, [] as unknown as JsonObject)));
       expect(() => readRouteAnchorReview(path)).toThrow("expected object");
 
+      const missingExpected = { ...q48Disposition } as Partial<ReviewedNonGtfsRouteDisposition>;
+      delete missingExpected.expected_route_id;
       writeFileSync(
         path,
-        JSON.stringify({
-          overrides: {},
-          non_gtfs_dispositions: {
-            "route_q48-old": { disposition: "historical_retired", reason: "Missing freshness binding" },
-          },
-        }),
+        JSON.stringify(reviewFile({}, { "route_q48-old": missingExpected as unknown as JsonValue })),
       );
       expect(() => readRouteAnchorReview(path)).toThrow("expected_route_id must be non-empty string or null");
 
       writeFileSync(
         path,
-        JSON.stringify({
-          overrides: {},
-          non_gtfs_dispositions: {
-            "route_q48-old": { disposition: "historical_retried", reason: "Typo", expected_route_id: "Q48" },
-          },
-        }),
+        JSON.stringify(
+          reviewFile({}, {
+            "route_q48-old": { ...q48Disposition, disposition: "historical_retried" } as unknown as JsonValue,
+          }),
+        ),
       );
       expect(() => readRouteAnchorReview(path)).toThrow("disposition must be one of");
+
+      writeFileSync(path, JSON.stringify(reviewFile({ Q48: "route_q48-current" }, {})));
+      expect(() => readRouteAnchorReview(path)).toThrow("expected reviewed object");
     } finally {
       rmSync(dir, { recursive: true, force: true });
     }
+  });
+
+  it("maps only a unique terminal-plus SBS successor when no exact GTFS route exists", () => {
+    const m23Sbs = route("route_m23-sbs", { route_id: "M23", route_label: "M23-SBS", route_record_scope: "true_route" });
+    const rows = computeRouteAnchors([m23Sbs], [gtfs("M23+", "M23-SBS")]);
+    expect(rows[0]?.canonical_route_record_id).toBe("route_m23-sbs");
+    expect(rows[0]?.anchor_reason).toBe("unique_sbs_plus_successor:label_matches_gtfs_short_name");
+
+    const baseAndSbs = computeRouteAnchors([m23Sbs], [gtfs("M23"), gtfs("M23+", "M23-SBS")]);
+    expect(baseAndSbs.find((row) => row.gtfs_route_id === "M23")?.canonical_route_record_id).toBe("route_m23-sbs");
+    expect(baseAndSbs.find((row) => row.gtfs_route_id === "M23+")?.canonical_route_record_id).toBeNull();
+  });
+
+  it("adds a non-exact route variant only through an evidence-linked reviewed override", () => {
+    const sbs = route("route_bx6-sbs", { route_id: "Bx6", route_label: "Bx6-SBS", route_record_scope: "true_route" });
+    const local = route("route_bx6-local", { route_id: "Bx6 Local", route_label: "Bx6 Local", route_record_scope: "true_route" });
+    const rows = computeRouteAnchors(
+      [local, sbs],
+      [gtfs("BX6", "Bx6")],
+      {
+        BX6: {
+          decision_id: "test:bx6-local",
+          evidence_ids: ["source_a#route_bx6-sbs", "source_a#route_bx6-local"],
+          reviewed_at: "2026-07-15",
+          review_state: "approved",
+          canonical_route_record_id: "route_bx6-sbs",
+          additional_variant_record_ids: ["route_bx6-local"],
+          expected_route_ids: { "route_bx6-local": "Bx6 Local", "route_bx6-sbs": "Bx6" },
+          reason: "Official sources identify local and SBS variants under BX6.",
+        },
+      },
+    );
+    expect(rows[0]?.canonical_route_record_id).toBe("route_bx6-sbs");
+    expect(rows[0]?.variant_record_ids).toEqual(["route_bx6-local"]);
+    expect(rows[0]?.anchor_reason).toBe("manual_override");
+
+    expect(() =>
+      computeRouteAnchors(
+        [local, sbs],
+        [gtfs("BX6", "Bx6")],
+        {
+          BX6: {
+            decision_id: "test:bx6-unbound-evidence",
+            evidence_ids: ["source_a#route_bx6-sbs", "source_a#route_bx6-local", "source_a#unbound"],
+            reviewed_at: "2026-07-15",
+            review_state: "approved",
+            canonical_route_record_id: "route_bx6-sbs",
+            additional_variant_record_ids: ["route_bx6-local"],
+            expected_route_ids: { "route_bx6-local": "Bx6 Local", "route_bx6-sbs": "Bx6" },
+            reason: "Invalid fixture with an evidence id bound to neither reviewed record.",
+          },
+        },
+      ),
+    ).toThrow("cites evidence not bound to any reviewed record: source_a#unbound");
+  });
+
+  it("fails closed when a canonical route would fall through every accounting lane", () => {
+    expect(() => computeRouteAnchors([route("route_unmatched", { route_id: "NOT-A-GTFS-ROUTE" })], [gtfs("B1")])).toThrow(
+      "Route-anchor exhaustiveness violation: 1 canonical route record(s)",
+    );
   });
 
   it("is deterministic when inputs are shuffled", () => {
@@ -304,8 +469,98 @@ describe("computeRouteAnchors", () => {
       route("route_b4_a", { route_id: "B4", route_label: "B4 East", route_record_scope: "true_route" }),
       route("route_b3-draft-plan", { route_label: "B3", route_name: "Avenue U" }),
     ];
-    const first = routeAnchorsJsonl(computeRouteAnchors(records, [gtfs("B4"), gtfs("B5")]));
-    const second = routeAnchorsJsonl(computeRouteAnchors([...records].reverse(), [gtfs("B5"), gtfs("B4")]));
+    const dispositions = {
+      "route_b3-draft-plan": disposition("route_b3-draft-plan", null, "proposal", "Draft route"),
+    };
+    const first = routeAnchorsJsonl(computeRouteAnchors(records, [gtfs("B4"), gtfs("B5")], {}, dispositions));
+    const second = routeAnchorsJsonl(computeRouteAnchors([...records].reverse(), [gtfs("B5"), gtfs("B4")], {}, dispositions));
     expect(second).toBe(first);
+  });
+
+  it("accounts for every current canonical route record and preserves the immutable rc20 anchor bytes", () => {
+    const canonicalRoutes = readFileSync(join(repoRoot, "data/canonical/routes.jsonl"), "utf8")
+      .split("\n")
+      .filter(Boolean)
+      .map((line) => JSON.parse(line) as MtaCanonicalRecord);
+    const review = readRouteAnchorReview();
+    const rows = computeRouteAnchors(canonicalRoutes, readGtfsRoutesFromDb(), review.overrides, review.non_gtfs_dispositions);
+    const accounting = new Map<string, number>();
+    for (const row of rows) {
+      for (const recordId of [row.canonical_route_record_id, ...row.variant_record_ids]) {
+        if (recordId) accounting.set(recordId, (accounting.get(recordId) ?? 0) + 1);
+      }
+    }
+
+    expect(canonicalRoutes).toHaveLength(395);
+    expect(rows).toHaveLength(482);
+    expect(accounting.size).toBe(395);
+    expect([...accounting.values()].every((count) => count === 1)).toBe(true);
+    expect(rows.filter((row) => row.gtfs_route_id !== null && row.canonical_route_record_id !== null)).toHaveLength(279);
+    expect(rows.filter((row) => row.gtfs_route_id !== null && row.canonical_route_record_id === null)).toHaveLength(107);
+    expect(rows.filter((row) => row.gtfs_route_id === null)).toHaveLength(96);
+    expect(rows.reduce((count, row) => count + row.variant_record_ids.length, 0)).toBe(20);
+
+    const summary = JSON.parse(
+      readFileSync(join(repoRoot, "data/quality/relationship-integrity/route-identity/summary.json"), "utf8"),
+    ) as {
+      before: { unaccounted_route_records: number };
+      remediation: {
+        unique_sbs_plus_successor_bindings: number;
+        reviewed_variant_bindings: number;
+        post_rc20_exact_gtfs_bindings: number;
+        reviewed_non_projectable_dispositions: number;
+      };
+      after: { unaccounted_route_records: number; canonical_route_records_accounted: number };
+    };
+    expect(summary.before.unaccounted_route_records).toBe(109);
+    expect(summary.remediation).toMatchObject({
+      unique_sbs_plus_successor_bindings: 13,
+      reviewed_variant_bindings: 1,
+      post_rc20_exact_gtfs_bindings: 16,
+      reviewed_non_projectable_dispositions: 79,
+    });
+    expect(summary.after).toMatchObject({ unaccounted_route_records: 0, canonical_route_records_accounted: 395 });
+
+    const qualityDir = join(repoRoot, "data/quality/relationship-integrity/route-identity");
+    const parseJsonl = (name: string) =>
+      readFileSync(join(qualityDir, name), "utf8")
+        .split("\n")
+        .filter(Boolean)
+        .map((line) => JSON.parse(line) as { record_id: string; exclusive_primary_disposition: string });
+    const before = parseJsonl("before-unaccounted.jsonl");
+    const investigations = parseJsonl("investigations.jsonl");
+    const after = parseJsonl("after-accounting.jsonl");
+    expect(before).toHaveLength(109);
+    expect(investigations).toHaveLength(109);
+    expect(after).toHaveLength(395);
+    expect(new Set(before.map((entry) => entry.record_id)).size).toBe(109);
+    expect(new Set(investigations.map((entry) => entry.record_id)).size).toBe(109);
+    expect(new Set(after.map((entry) => entry.record_id)).size).toBe(395);
+    expect(new Set(investigations.map((entry) => entry.exclusive_primary_disposition))).toEqual(
+      new Set(["canonical_gtfs_binding_added", "reviewed_non_projectable_disposition"]),
+    );
+
+    const artifactManifest = JSON.parse(readFileSync(join(qualityDir, "manifest.json"), "utf8")) as {
+      review_artifact: { path: string; bytes: number; sha256: string };
+      files: Record<string, { bytes: number; sha256: string }>;
+      route_anchor_projection_sha256: string;
+    };
+    for (const [name, metadata] of Object.entries(artifactManifest.files)) {
+      const bytes = readFileSync(join(qualityDir, name));
+      expect(bytes.byteLength).toBe(metadata.bytes);
+      expect(createHash("sha256").update(bytes).digest("hex")).toBe(metadata.sha256);
+    }
+    const reviewBytes = readFileSync(join(repoRoot, artifactManifest.review_artifact.path));
+    expect(reviewBytes.byteLength).toBe(artifactManifest.review_artifact.bytes);
+    expect(createHash("sha256").update(reviewBytes).digest("hex")).toBe(artifactManifest.review_artifact.sha256);
+    expect(createHash("sha256").update(routeAnchorsJsonl(rows)).digest("hex")).toBe(
+      artifactManifest.route_anchor_projection_sha256,
+    );
+
+    const rc20Path = join(repoRoot, "data/exports/releases/v1-rc20/route_anchors.jsonl");
+    expect(createHash("sha256").update(readFileSync(rc20Path)).digest("hex")).toBe(
+      "517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239",
+    );
+    expect(readFileSync(join(repoRoot, "data/exports/releases/LATEST"), "utf8").trim()).toBe("v1-rc5");
   });
 });

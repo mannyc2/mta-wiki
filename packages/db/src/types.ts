@@ -192,6 +192,7 @@ export type MtaValidationReport = {
   canonicalRecordCount: number;
   wikiPageCount: number;
   issues: MtaValidationIssue[];
+  warnings: MtaValidationIssue[];
 };
 
 export type MtaReviewNote = {

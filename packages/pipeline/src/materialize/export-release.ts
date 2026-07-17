@@ -51,6 +51,11 @@ import {
   operationalOccurrenceReviewAcceptedDir,
   operationalOccurrenceReviewSnapshotJson,
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
+import {
+  RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION,
+  relationshipReleaseBundleDescriptorPath,
+  stageRelationshipReleaseBundle,
+} from "@mta-wiki/pipeline/materialize/relationship-release-bundle";
 
 export type ReleaseManifestFile = {
   bytes: number;
@@ -58,14 +63,15 @@ export type ReleaseManifestFile = {
 };
 
 export type ReleaseManifest = {
-  manifest_version: 1 | 2 | 3;
+  manifest_version: 1 | 2 | 3 | 4;
   release_id: string;
   generator_commit: string;
   contract_versions: {
     operational_anchors?: typeof OPERATIONAL_ANCHOR_SCHEMA_VERSION | undefined;
     operational_anchor_review_decisions?: typeof OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION | undefined;
-    operational_occurrences?: typeof OPERATIONAL_OCCURRENCE_SCHEMA_VERSION | undefined;
+    operational_occurrences?: 1 | typeof OPERATIONAL_OCCURRENCE_SCHEMA_VERSION | undefined;
     operational_occurrence_review_decisions?: typeof OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION | undefined;
+    relationship_integrity_bundle?: typeof RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION | undefined;
   };
   record_counts: Record<string, number>;
   files: Record<string, ReleaseManifestFile>;
@@ -79,6 +85,7 @@ export type ReleaseManifest = {
     route_anchors: string | null;
     taxonomy: string | null;
     quality_report: string | null;
+    relationship_integrity_bundle?: string | null | undefined;
   };
 };
 
@@ -136,8 +143,8 @@ function assertManifestKeys(object: Record<string, unknown>, allowed: readonly s
 export function parseReleaseManifest(value: unknown): ReleaseManifest {
   const root = manifestObject(value, "$root");
   const version = root.manifest_version === undefined ? 1 : root.manifest_version;
-  if (version !== 1 && version !== 2 && version !== 3) {
-    throw new Error("Invalid release manifest manifest_version: expected 1, 2, or 3");
+  if (version !== 1 && version !== 2 && version !== 3 && version !== 4) {
+    throw new Error("Invalid release manifest manifest_version: expected 1, 2, 3, or 4");
   }
   assertManifestKeys(
     root,
@@ -184,7 +191,8 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
           "taxonomy",
           "quality_report",
         ]
-        : [
+        : version === 3
+          ? [
             "operational_anchors",
             "operational_anchor_summary",
             "operational_anchor_review_decisions",
@@ -194,17 +202,29 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
             "route_anchors",
             "taxonomy",
             "quality_report",
-          ],
+          ]
+          : [
+              "operational_anchors",
+              "operational_anchor_summary",
+              "operational_anchor_review_decisions",
+              "operational_occurrences",
+              "operational_occurrence_summary",
+              "operational_occurrence_review_decisions",
+              "route_anchors",
+              "taxonomy",
+              "quality_report",
+              "relationship_integrity_bundle",
+            ],
     "pointers",
   );
   const operationalAnchors =
-    version === 3
+    version >= 3
       ? manifestAddressedPointer(pointersInput.operational_anchors, "pointers.operational_anchors", files)
       : version === 2
         ? manifestPointer(pointersInput.operational_anchors, "pointers.operational_anchors")
         : null;
   const operationalAnchorSummary =
-    version === 3
+    version >= 3
       ? manifestAddressedPointer(pointersInput.operational_anchor_summary, "pointers.operational_anchor_summary", files)
       : version === 2
         ? manifestPointer(pointersInput.operational_anchor_summary, "pointers.operational_anchor_summary")
@@ -218,11 +238,11 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
         )
       : null;
   const operationalOccurrences =
-    version === 3
+    version >= 3
       ? manifestAddressedPointer(pointersInput.operational_occurrences, "pointers.operational_occurrences", files)
       : null;
   const operationalOccurrenceSummary =
-    version === 3
+    version >= 3
       ? manifestAddressedPointer(
           pointersInput.operational_occurrence_summary,
           "pointers.operational_occurrence_summary",
@@ -230,7 +250,7 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
         )
       : null;
   const operationalOccurrenceReviewDecisions =
-    version === 3
+    version >= 3
       ? manifestAddressedPointer(
           pointersInput.operational_occurrence_review_decisions,
           "pointers.operational_occurrence_review_decisions",
@@ -244,12 +264,20 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
       input,
       version === 2
         ? ["operational_anchors", "operational_anchor_review_decisions"]
-        : [
+        : version === 3
+          ? [
             "operational_anchors",
             "operational_anchor_review_decisions",
             "operational_occurrences",
             "operational_occurrence_review_decisions",
-          ],
+          ]
+          : [
+              "operational_anchors",
+              "operational_anchor_review_decisions",
+              "operational_occurrences",
+              "operational_occurrence_review_decisions",
+              "relationship_integrity_bundle",
+            ],
       "contract_versions",
     );
     if (input.operational_anchors !== OPERATIONAL_ANCHOR_SCHEMA_VERSION) {
@@ -262,19 +290,27 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
       );
     }
     contracts.operational_anchor_review_decisions = OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION;
-    if (version === 3) {
-      if (input.operational_occurrences !== OPERATIONAL_OCCURRENCE_SCHEMA_VERSION) {
+    if (version >= 3) {
+      if (input.operational_occurrences !== 1 && input.operational_occurrences !== OPERATIONAL_OCCURRENCE_SCHEMA_VERSION) {
         throw new Error(
-          `Invalid release manifest contract_versions.operational_occurrences: expected ${OPERATIONAL_OCCURRENCE_SCHEMA_VERSION}`,
+          `Invalid release manifest contract_versions.operational_occurrences: expected 1 or ${OPERATIONAL_OCCURRENCE_SCHEMA_VERSION}`,
         );
       }
-      contracts.operational_occurrences = OPERATIONAL_OCCURRENCE_SCHEMA_VERSION;
+      contracts.operational_occurrences = input.operational_occurrences;
       if (input.operational_occurrence_review_decisions !== OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION) {
         throw new Error(
           `Invalid release manifest contract_versions.operational_occurrence_review_decisions: expected ${OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION}`,
         );
       }
       contracts.operational_occurrence_review_decisions = OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION;
+      if (version === 4) {
+        if (input.relationship_integrity_bundle !== RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION) {
+          throw new Error(
+            `Invalid release manifest contract_versions.relationship_integrity_bundle: expected ${RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION}`,
+          );
+        }
+        contracts.relationship_integrity_bundle = RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION;
+      }
     }
   }
 
@@ -295,6 +331,14 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
       route_anchors: manifestPointer(pointersInput.route_anchors, "pointers.route_anchors"),
       taxonomy: manifestPointer(pointersInput.taxonomy, "pointers.taxonomy"),
       quality_report: manifestPointer(pointersInput.quality_report, "pointers.quality_report"),
+      relationship_integrity_bundle:
+        version === 4
+          ? manifestAddressedPointer(
+              pointersInput.relationship_integrity_bundle,
+              "pointers.relationship_integrity_bundle",
+              files,
+            )
+          : null,
     },
   };
 }
@@ -320,6 +364,7 @@ export type ReleaseExportOptions = {
   operationalOccurrenceReviewDecisionDir?: string | undefined;
   operationalOccurrenceIdentityRegistry?: readonly OperationalOccurrenceIdentityEntry[] | undefined;
   qualityReport?: string | null | undefined;
+  relationshipIntegrityBundleDescriptor?: string | null | undefined;
 };
 
 function recordJson(record: MtaCanonicalRecord): string {
@@ -540,8 +585,61 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   writeFileSync(taxonomyPath, taxonomyJson(), "utf8");
   fileEntries.push(["taxonomy.json", fileMetadata(taxonomyPath)]);
 
+  const configuredRelationshipBundleDescriptor =
+    opts.relationshipIntegrityBundleDescriptor === undefined
+      ? relationshipReleaseBundleDescriptorPath(rootDir)
+      : opts.relationshipIntegrityBundleDescriptor;
+  const relationshipBundle =
+    configuredRelationshipBundleDescriptor !== null && existsSync(configuredRelationshipBundleDescriptor)
+      ? stageRelationshipReleaseBundle(rootDir, dir, configuredRelationshipBundleDescriptor)
+      : null;
+  const relationshipContractPath = join(
+    rootDir,
+    "data",
+    "contracts",
+    "relationships",
+    "v1",
+    "contract.json",
+  );
+  if (existsSync(relationshipContractPath)) {
+    const relationshipContract = JSON.parse(
+      readFileSync(relationshipContractPath, "utf8"),
+    ) as { contract_status?: unknown };
+    if (
+      relationshipContract.contract_status === "enforced" &&
+      !relationshipBundle
+    ) {
+      throw new Error(
+        "An enforced relationship contract requires a manifest-v4 content-addressed relationship-integrity bundle",
+      );
+    }
+    if (
+      relationshipContract.contract_status !== "warning_first" &&
+      relationshipContract.contract_status !== "enforced"
+    ) {
+      throw new Error(
+        `Relationship contract has unsupported status ${String(relationshipContract.contract_status)}`,
+      );
+    }
+  }
+  if (
+    opts.relationshipIntegrityBundleDescriptor !== undefined &&
+    opts.relationshipIntegrityBundleDescriptor !== null &&
+    !relationshipBundle
+  ) {
+    throw new Error(
+      `Relationship release bundle descriptor is missing: ${opts.relationshipIntegrityBundleDescriptor}`,
+    );
+  }
+  if (relationshipBundle) {
+    for (const file of relationshipBundle.files) {
+      fileEntries.push([file.path, { bytes: file.bytes, sha256: file.sha256 }]);
+    }
+  }
+
+  const manifestVersion = relationshipBundle ? 4 : 3;
   const manifest: ReleaseManifest = {
-    manifest_version: 3,
+    manifest_version: manifestVersion,
     release_id: releaseId,
     generator_commit: gitHeadCommit(),
     contract_versions: {
@@ -549,6 +647,9 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
       operational_anchor_review_decisions: OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION,
       operational_occurrences: OPERATIONAL_OCCURRENCE_SCHEMA_VERSION,
       operational_occurrence_review_decisions: OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION,
+      ...(relationshipBundle
+        ? { relationship_integrity_bundle: RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION }
+        : {}),
     },
     record_counts: sortedObject(countEntries),
     files: sortedObject(fileEntries),
@@ -562,6 +663,9 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
       route_anchors: "route_anchors.jsonl",
       taxonomy: "taxonomy.json",
       quality_report: opts.qualityReport ?? null,
+      ...(relationshipBundle
+        ? { relationship_integrity_bundle: relationshipBundle.manifest_path }
+        : {}),
     },
   };
   const manifestPath = join(dir, "manifest.json");

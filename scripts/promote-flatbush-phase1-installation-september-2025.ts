@@ -28,15 +28,21 @@ const PROJECT_ID = "project_flatbush-phase1-center-running-bus-lanes-livingston-
 const EVENT_ID = "event_flatbush-phase1-installation-start-sep2025";
 const COMPLETION_EVENT_ID = "event_flatbush-av-phase1-installed-fall2025";
 const TREATMENT_ID = "treatment_flatbush-phase1-center-running-bus-lanes-livingston-state";
+const CORRIDOR_ID = "corridor_flatbush-phase1-livingston-state";
 const TIMELINE_RELATION_ID = "relation_flatbush-phase1-has-start-event-sep2025";
 const COMPLETION_RELATION_ID = "relation_flatbush-phase1-has-completion-event-fall2025";
 const TREATMENT_RELATION_ID = "relation_flatbush-phase1-has-center-running-bus-lanes";
+const PHYSICAL_SCOPE_RELATION_ID =
+  "relation_flatbush-phase1-treatment-on-bounded-corridor-livingston-state-20260715";
 const START_SOURCE_ID = "nyc_dot_flatbush_installation_begins_2025";
 const RETROSPECTIVE_SOURCE_ID = "flatbush_ave_bus_priority_mtp_briefing_apr2026";
 const ROUTE_ANCHOR_PATH = "data/exports/releases/v1-rc14/route_anchors.jsonl";
 const ROUTE_ANCHOR_SHA256 = "517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239";
-const REVIEWER = "codex-corpus-completion-2026-07-13";
-const ACCEPTED_AT = "2026-07-13T18:45:00.000Z";
+const REVIEWER = "codex-relationship-integrity-2026-07-16";
+const ACCEPTED_AT = "2026-07-16T08:30:00.000Z";
+const IDENTITY_ISSUED_AT = "2026-07-13T18:45:00.000Z";
+const PREVIOUS_DECISION_SHA256 =
+  "c2ec62a5042fadf094e12a9c02411d3a43ea787ad338d4934668c51141870159";
 
 const evidencePins = {
   publicationDate: {
@@ -147,6 +153,23 @@ function assertRelation(
   assert(relation.payload.as_of_date === "2026-04", `${recordId} as_of_date changed`);
 }
 
+function assertPhysicalScopeRelation(
+  recordsById: ReadonlyMap<string, MtaCanonicalRecord>,
+): void {
+  const corridor = requiredRecord(recordsById, CORRIDOR_ID, "corridor");
+  assert(
+    corridor.payload.location_text === "Flatbush Avenue between Livingston Street and State Street",
+    `${CORRIDOR_ID} bounded location changed`,
+  );
+  const relation = requiredRecord(recordsById, PHYSICAL_SCOPE_RELATION_ID, "relation");
+  assert(relation.payload.relation_kind === "located_on_corridor", `${PHYSICAL_SCOPE_RELATION_ID} kind changed`);
+  assert(relation.payload.relation_family === "corridor_scope", `${PHYSICAL_SCOPE_RELATION_ID} family changed`);
+  assert(relation.payload.subject_id === TREATMENT_ID, `${PHYSICAL_SCOPE_RELATION_ID} subject changed`);
+  assert(relation.payload.object_id === CORRIDOR_ID, `${PHYSICAL_SCOPE_RELATION_ID} object changed`);
+  assert(relation.payload.assertion_status === "delivered", `${PHYSICAL_SCOPE_RELATION_ID} is not delivered`);
+  binding(recordsById, "physical_scope", PHYSICAL_SCOPE_RELATION_ID, evidencePins.deliveredPhase);
+}
+
 function assertBoundedPhaseGraph(
   records: readonly MtaCanonicalRecord[],
   recordsById: ReadonlyMap<string, MtaCanonicalRecord>,
@@ -187,6 +210,7 @@ function assertBoundedPhaseGraph(
   assertRelation(recordsById, TIMELINE_RELATION_ID, "has_timeline_event", EVENT_ID);
   assertRelation(recordsById, COMPLETION_RELATION_ID, "has_timeline_event", COMPLETION_EVENT_ID);
   assertRelation(recordsById, TREATMENT_RELATION_ID, "has_treatment", TREATMENT_ID);
+  assertPhysicalScopeRelation(recordsById);
   for (const route of routeSpecs) {
     const routeRecord = requiredRecord(recordsById, route.routeRecordId, "route");
     assert(routeRecord.payload.route_id === route.gtfsRouteId, `${route.routeRecordId} GTFS identity changed`);
@@ -231,7 +255,7 @@ function occurrenceDecision(
     foundingKey: `event:${EVENT_ID}`,
     foundingEventRecordIds: [EVENT_ID],
     decisionId: DECISION_ID,
-    issuedAt: ACCEPTED_AT,
+    issuedAt: IDENTITY_ISSUED_AT,
   });
   return parseOperationalOccurrenceAcceptedDecision({
     schema_version: 1,
@@ -239,7 +263,7 @@ function occurrenceDecision(
     review_state: "approved",
     accepted_at: ACCEPTED_AT,
     reviewer: REVIEWER,
-    rationale: "The September 25, 2025 official NYC DOT announcement establishes that installation of the bounded Livingston Street-to-State Street Phase 1 center-running bus lanes began during September 2025, and the April 2026 official retrospective confirms that this same two-block phase was installed during Fall 2025. This decision uses September only as a month-level installation-commencement onset: it does not invent an exact work-start day, fine-bearing day, or operational-completion day. It binds only B41 and B67 and one atomic bus_lane treatment, while preserving the separate season-precision completion event and excluding Phase 2 islands, pedestrian-space, curb-management, signal-priority, camera-enforcement, and reroute scope.",
+    rationale: "The September 25, 2025 official NYC DOT announcement establishes that installation of the bounded Livingston Street-to-State Street Phase 1 center-running bus lanes began during September 2025, and the April 2026 official retrospective confirms that this same two-block phase was installed during Fall 2025. This decision uses September only as a month-level installation-commencement onset: it does not invent an exact work-start day, fine-bearing day, or operational-completion day. It binds only B41 and B67 and one atomic bus_lane treatment, while preserving the separate season-precision completion event and excluding Phase 2 islands, pedestrian-space, curb-management, signal-priority, camera-enforcement, and reroute scope. The July 16 relationship-integrity review also selects the source-stated delivered treatment-to-corridor relation for the exact Livingston Street-to-State Street segment; this is a direct canonical edge supported by the same April 2026 NYC DOT block, not a geometry, proximity, or street-name inference.",
     occurrence_id: identity.occurrence_id,
     founding_key: identity.founding_key,
     observation_event_record_ids: [EVENT_ID],
@@ -247,6 +271,7 @@ function occurrenceDecision(
       TIMELINE_RELATION_ID,
       ...routeSpecs.map((route) => route.relationId),
       TREATMENT_RELATION_ID,
+      PHYSICAL_SCOPE_RELATION_ID,
     ].sort(),
     resolved_status: "realized",
     resolved_onset: {
@@ -287,7 +312,7 @@ function identityRegistry(decision: OperationalOccurrenceAcceptedDecision): Oper
     foundingKey: decision.founding_key,
     foundingEventRecordIds: decision.observation_event_record_ids,
     decisionId: decision.decision_id,
-    issuedAt: ACCEPTED_AT,
+    issuedAt: IDENTITY_ISSUED_AT,
   });
   const current = existing.find((entry) => entry.founding_key === expected.founding_key);
   if (current) {
@@ -306,9 +331,15 @@ function writeArtifacts(
 ): void {
   const path = join(repoRoot, "data/operational-occurrence-review/accepted/decisions", `${decision.decision_id}.json`);
   const bytes = `${JSON.stringify(decision, null, 2)}\n`;
-  if (existsSync(path)) assert(readFileSync(path, "utf8") === bytes, `Refusing to overwrite non-equivalent ${path}`);
+  if (existsSync(path)) {
+    const current = readFileSync(path);
+    assert(
+      current.toString("utf8") === bytes || sha256(current) === PREVIOUS_DECISION_SHA256,
+      `Refusing to overwrite non-equivalent ${path}`,
+    );
+  }
   mkdirSync(dirname(path), { recursive: true });
-  if (!existsSync(path)) writeFileSync(path, bytes, "utf8");
+  if (!existsSync(path) || readFileSync(path, "utf8") !== bytes) writeFileSync(path, bytes, "utf8");
   writeFileSync(
     join(repoRoot, "data/operational-occurrence-identities/registry.jsonl"),
     `${identities.map((entry) => stableJson(entry as unknown as JsonValue)).join("\n")}\n`,
@@ -347,6 +378,13 @@ assert(
     row.treatment.member.treatment_record_id === TREATMENT_ID &&
     row.treatment.member.treatment_family === "bus_lane",
   "Flatbush Phase 1 treatment scope changed",
+);
+assert(
+  stableJson(row.physical_scope_record_ids as unknown as JsonValue) ===
+    stableJson([CORRIDOR_ID] as unknown as JsonValue) &&
+    stableJson(row.physical_scope_relation_record_ids as unknown as JsonValue) ===
+      stableJson([PHYSICAL_SCOPE_RELATION_ID] as unknown as JsonValue),
+  "Flatbush Phase 1 exact physical scope did not project",
 );
 assert(
   !row.provenance.event_record_ids.includes(COMPLETION_EVENT_ID) &&

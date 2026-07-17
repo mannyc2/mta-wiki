@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-07-15T21:00:00.000Z",
+  "sources": [
+    {
+      "source_id": "nyc_dot_third_avenue_midtown_extension_cb6_jun2025",
+      "status": "staged_identical_to_acquisition",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/3rd-ave-24-st-59-st-jun2025.pdf",
+      "receipt_acquisition_sha256": "a7233db02e759f66397c0700f1b7d3a50fc4a80fe918ea62603de9e9a6eb5105",
+      "staged_byte_sha256": "a7233db02e759f66397c0700f1b7d3a50fc4a80fe918ea62603de9e9a6eb5105",
+      "staged_byte_length": 5022679,
+      "staged_blocks_sha256": "193885dc3e183a9de003804a715d0a45ac6af332fb398b57a1855b0d325d2024",
+      "staged_block_count": 308
+    },
+    {
+      "source_id": "nyc_dot_third_avenue_upper_extension_cb11_jan2025",
+      "status": "staged_identical_to_acquisition",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/3rd-ave-96-st-128-st-jan2025.pdf",
+      "receipt_acquisition_sha256": "c2666b453a8fb4f040640571198cfd13e834a511a58a88af925ea0d7febd6e7f",
+      "staged_byte_sha256": "c2666b453a8fb4f040640571198cfd13e834a511a58a88af925ea0d7febd6e7f",
+      "staged_byte_length": 1992232,
+      "staged_blocks_sha256": "cd1a755bde5232fa514b3fafb96a98d73cd317765440ec0f09c45dc524079720",
+      "staged_block_count": 279
+    }
+  ]
+}

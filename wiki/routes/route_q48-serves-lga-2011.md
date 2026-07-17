@@ -1,8 +1,6 @@
 ---
 managed_by: "mta-wiki-materializer"
 record_id: "route_q48-serves-lga-2011"
-record_aliases:
-  - "route_q48"
 record_kind: "route"
 display_name: "Q48 historical service"
 source_id: "110622_lga_aa_slides"

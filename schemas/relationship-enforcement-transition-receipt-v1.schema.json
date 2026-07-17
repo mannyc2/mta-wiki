@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mta-wiki.local/schemas/relationship-enforcement-transition-receipt-v1.schema.json",
+  "title": "MTA Wiki relationship enforcement transition receipt v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_id",
+    "contract_id",
+    "transition",
+    "promoted_at",
+    "promoted_by",
+    "previous_proof",
+    "final_matrix",
+    "previous_gates",
+    "pre_promotion_sources",
+    "invariant_artifacts",
+    "refresh_artifacts"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "receipt_id": { "const": "relationship-contract-v1-enforcement-transition" },
+    "contract_id": { "const": "relationship-contract-v1" },
+    "transition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from_state", "to_state"],
+      "properties": {
+        "from_state": { "const": "warning_ready" },
+        "to_state": { "const": "enforced_refresh_required" }
+      }
+    },
+    "promoted_at": { "type": "string", "minLength": 1 },
+    "promoted_by": { "type": "string", "minLength": 1 },
+    "previous_proof": {
+      "allOf": [
+        { "$ref": "#/$defs/artifactRef" },
+        {
+          "type": "object",
+          "required": ["proof_stage"],
+          "properties": { "proof_stage": { "const": "pre_promotion_warning" } }
+        }
+      ]
+    },
+    "final_matrix": { "type": "object" },
+    "previous_gates": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "allOf": [
+          { "$ref": "#/$defs/artifactRef" },
+          {
+            "type": "object",
+            "required": ["gate_id"],
+            "properties": { "gate_id": { "type": "string", "minLength": 1 } }
+          }
+        ]
+      }
+    },
+    "pre_promotion_sources": { "$ref": "#/$defs/pins" },
+    "invariant_artifacts": { "$ref": "#/$defs/pins" },
+    "refresh_artifacts": { "$ref": "#/$defs/pins" }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "artifactRef": {
+      "type": "object",
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "pins": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "allOf": [
+          { "$ref": "#/$defs/artifactRef" },
+          {
+            "type": "object",
+            "required": ["role"],
+            "properties": {
+              "role": { "type": "string", "minLength": 1 },
+              "archive_path": { "type": "string", "minLength": 1 },
+              "transition_fingerprint": { "$ref": "#/$defs/sha256" }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-07-15T21-00-00-000Z_manhattan-third-avenue-linkage-remediation",
+  "candidates": [
+    {
+      "candidate_id": "study-event-v2:17dced7b33f61eb49e6fff59",
+      "route_id": "M103",
+      "generic_route_binding_implemented": true,
+      "canonical_links_added": [
+        "relation_m103-operates-on-third-avenue-midtown-corridor-2025",
+        "relation_third-avenue-midtown-2025-bus-lane-located-on-corridor",
+        "relation_third-avenue-midtown-2025-project-has-bus-lane",
+        "relation_third-avenue-midtown-2025-project-uses-corridor",
+        "relation_third-avenue-midtown-project-serves-m103-2025"
+      ],
+      "canonical_records_added": [
+        "corridor_third-avenue-east-24th-59th",
+        "project_third-avenue-complete-street-east-24th-59th-2025",
+        "source_nyc-dot-third-avenue-midtown-extension-cb6-jun2025",
+        "treatment_third-avenue-continuous-bus-lane-east-26th-59th-2025"
+      ],
+      "canonical_records_updated": [],
+      "staged_source_ids": [
+        "nyc_dot_third_avenue_midtown_extension_cb6_jun2025"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's historical matched-segment identifiers remain unpinned.",
+        "The candidate's registry implementation date and stable phase identity remain unproved.",
+        "No canonical operational-occurrence identity was proved; the generic proposal linkage is not an onset claim."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:2954b9c6483f74e7ca7ee209",
+      "route_id": "M98",
+      "generic_route_binding_implemented": true,
+      "canonical_links_added": [
+        "relation_m98-operates-on-third-avenue-upper-corridor-2025",
+        "relation_third-avenue-upper-2025-bus-lane-located-on-corridor",
+        "relation_third-avenue-upper-2025-project-has-bus-lane",
+        "relation_third-avenue-upper-2025-project-uses-corridor",
+        "relation_third-avenue-upper-project-serves-m98-2025"
+      ],
+      "canonical_records_added": [
+        "corridor_third-avenue-east-96th-128th",
+        "project_third-avenue-complete-street-east-96th-128th-2025",
+        "source_nyc-dot-third-avenue-upper-extension-cb11-jan2025",
+        "treatment_third-avenue-offset-bus-lane-east-96th-128th-2025"
+      ],
+      "canonical_records_updated": [],
+      "staged_source_ids": [
+        "nyc_dot_third_avenue_upper_extension_cb11_jan2025"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's historical matched-segment identifiers remain unpinned.",
+        "The candidate's registry implementation date and stable phase identity remain unproved.",
+        "No canonical operational-occurrence identity was proved; the generic proposal linkage is not an onset claim."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:a863d72fae32caeacb91125d",
+      "route_id": "M101",
+      "generic_route_binding_implemented": true,
+      "canonical_links_added": [
+        "relation_m101-operates-on-third-avenue-midtown-corridor-2025",
+        "relation_third-avenue-midtown-2025-bus-lane-located-on-corridor",
+        "relation_third-avenue-midtown-2025-project-has-bus-lane",
+        "relation_third-avenue-midtown-2025-project-uses-corridor",
+        "relation_third-avenue-midtown-project-serves-m101-2025"
+      ],
+      "canonical_records_added": [
+        "corridor_third-avenue-east-24th-59th",
+        "project_third-avenue-complete-street-east-24th-59th-2025",
+        "source_nyc-dot-third-avenue-midtown-extension-cb6-jun2025",
+        "treatment_third-avenue-continuous-bus-lane-east-26th-59th-2025"
+      ],
+      "canonical_records_updated": [],
+      "staged_source_ids": [
+        "nyc_dot_third_avenue_midtown_extension_cb6_jun2025"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's historical matched-segment identifiers remain unpinned.",
+        "The candidate's registry implementation date and stable phase identity remain unproved.",
+        "No canonical operational-occurrence identity was proved; the generic proposal linkage is not an onset claim."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:f113d0e26ca8e84dad903f4c",
+      "route_id": "M102",
+      "generic_route_binding_implemented": true,
+      "canonical_links_added": [
+        "relation_m102-operates-on-third-avenue-midtown-corridor-2025",
+        "relation_third-avenue-midtown-2025-bus-lane-located-on-corridor",
+        "relation_third-avenue-midtown-2025-project-has-bus-lane",
+        "relation_third-avenue-midtown-2025-project-uses-corridor",
+        "relation_third-avenue-midtown-project-serves-m102-2025"
+      ],
+      "canonical_records_added": [
+        "corridor_third-avenue-east-24th-59th",
+        "project_third-avenue-complete-street-east-24th-59th-2025",
+        "source_nyc-dot-third-avenue-midtown-extension-cb6-jun2025",
+        "treatment_third-avenue-continuous-bus-lane-east-26th-59th-2025"
+      ],
+      "canonical_records_updated": [],
+      "staged_source_ids": [
+        "nyc_dot_third_avenue_midtown_extension_cb6_jun2025"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's historical matched-segment identifiers remain unpinned.",
+        "The candidate's registry implementation date and stable phase identity remain unproved.",
+        "No canonical operational-occurrence identity was proved; the generic proposal linkage is not an onset claim."
+      ]
+    }
+  ]
+}

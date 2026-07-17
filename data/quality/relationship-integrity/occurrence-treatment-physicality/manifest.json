@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "contract_id": "occurrence-treatment-physicality-v1",
+  "release_id": "v1-rc20",
+  "review_stage": "provisional_rc20",
+  "input_pins": [
+    {
+      "path": "data/exports/releases/v1-rc20/manifest.json",
+      "bytes": 3337,
+      "sha256": "a2e9147fbb3db3b27a48df27f9550a8b31ab28bc85e30b7166d75b46b54e1a08"
+    },
+    {
+      "path": "data/exports/releases/v1-rc20/operational_occurrences.jsonl",
+      "bytes": 826833,
+      "sha256": "424ee1ceed24bc8c8af77d49e328c0f6bb7859e88a619bbb79a0c13ac7ed5399",
+      "row_count": 135
+    },
+    {
+      "path": "data/exports/releases/v1-rc20/treatment_components.jsonl",
+      "bytes": 4471845,
+      "sha256": "a324a277a86a58420ae1fec02c271278e66a312b496472aaa356cda56ab4dd53",
+      "row_count": 2931
+    },
+    {
+      "path": "data/exports/releases/v1-rc20/relations.jsonl",
+      "bytes": 35050442,
+      "sha256": "e63be8863d171a3a47d94a9c37dd775f2339255c407a3d867cadfb25fd69071e",
+      "row_count": 21247
+    },
+    {
+      "path": "data/exports/releases/v1-rc20/corridors.jsonl",
+      "bytes": 779645,
+      "sha256": "6cd41689890e066bf169e6306aafd23e61be16c906136543939f7a77ba844050",
+      "row_count": 218
+    },
+    {
+      "path": "data/quality/relationship-integrity/completeness/manifest.json",
+      "bytes": 4957,
+      "sha256": "7a30377b2f9f838daa38dd1427362d733862418ec99456ab8f185508d3cfe23d"
+    },
+    {
+      "path": "data/quality/relationship-integrity/completeness/occurrence-completeness.jsonl",
+      "bytes": 177829,
+      "sha256": "3bee7496cbc70e1eca128c285a5fe4ca54b6a6e28ecccc6ec898bdb7362576ee",
+      "row_count": 134
+    },
+    {
+      "path": "data/contracts/occurrence-treatment-physicality/v1/policy.json",
+      "bytes": 16189,
+      "sha256": "4b664726e353e7b1d823409b054fe3ecd931bf87da63eb8ffcd9c0ecda913ed5"
+    },
+    {
+      "path": "data/contracts/occurrence-treatment-physicality/v1/review-ledger.jsonl",
+      "bytes": 504801,
+      "sha256": "bf05e73a7f39f363d5687747c085aad60cac270127411c70c8ae842315253704",
+      "row_count": 276
+    },
+    {
+      "path": "data/contracts/occurrence-treatment-physicality/v1/contract.json",
+      "bytes": 3365,
+      "sha256": "d9decfbe225ecfa7224b64fb18ef27923966181e51da520c199984a8dba4b17b"
+    }
+  ],
+  "files": {
+    "findings.jsonl": {
+      "path": "data/quality/relationship-integrity/occurrence-treatment-physicality/findings.jsonl",
+      "bytes": 533,
+      "sha256": "fcf5b47d84df5d90dcbd106a18438f35044e75e9917198fffc8718364bd09ea3",
+      "row_count": 1
+    },
+    "occurrence-audit.jsonl": {
+      "path": "data/quality/relationship-integrity/occurrence-treatment-physicality/occurrence-audit.jsonl",
+      "bytes": 83880,
+      "sha256": "5ab19c6a583796f4a7972c430e4817e502c0a877b4a8b889c952e183de0ba212",
+      "row_count": 134
+    },
+    "report.md": {
+      "path": "data/quality/relationship-integrity/occurrence-treatment-physicality/report.md",
+      "bytes": 2552,
+      "sha256": "fc1dc49e2382d0c0e4a0e9775785400caebc7040d1c543dab878e440b7318a7b"
+    },
+    "summary.json": {
+      "path": "data/quality/relationship-integrity/occurrence-treatment-physicality/summary.json",
+      "bytes": 2727,
+      "sha256": "997a47368932aa52ae1a81ae8a656cbfb613a4ab5c4ed8d37c2607968bab38a0"
+    },
+    "treatment-audit.jsonl": {
+      "path": "data/quality/relationship-integrity/occurrence-treatment-physicality/treatment-audit.jsonl",
+      "bytes": 156132,
+      "sha256": "b721847cef26aded9b53c463523c53632d3efa00f62877776fdbf82d63a7ca11",
+      "row_count": 276
+    }
+  },
+  "audit_fingerprint": "a266f7d094063379baf2cba3d165b531af49f469994f9b4f0c784a87d97b1ed7"
+}

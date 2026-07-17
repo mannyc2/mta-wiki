@@ -5,7 +5,10 @@ import { describe, expect, it } from "bun:test";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { identityPairKey, readIdentityDoNotMergeOverrides } from "@mta-wiki/db/identity";
 import type { JsonObject, MtaCanonicalRecord } from "@mta-wiki/db/types";
-import { withDerivedRelations } from "@mta-wiki/pipeline/records/derived-relations";
+import {
+  derivedRelationCoverage,
+  withDerivedRelations,
+} from "@mta-wiki/pipeline/records/derived-relations";
 import {
   readSemanticCorrections,
   withSemanticCorrections,
@@ -185,6 +188,23 @@ function sorted(values: readonly string[]): string[] {
   return [...values].sort();
 }
 
+function unionStrings(...values: ReadonlyArray<readonly string[]>): string[] {
+  return [...new Set(values.flat())].sort();
+}
+
+function payloadLiterals(record: MtaCanonicalRecord, field: string): string[] {
+  const merged = (record.payload._merged_field_values as JsonObject | undefined)?.[field];
+  const direct = record.payload[field];
+  return unionStrings(
+    Array.isArray(merged) ? merged.filter((value): value is string => typeof value === "string") : [],
+    Array.isArray(direct)
+      ? direct.filter((value): value is string => typeof value === "string")
+      : typeof direct === "string"
+        ? [direct]
+        : [],
+  );
+}
+
 function expectSubset(expectedSubset: readonly string[], actual: readonly string[]): void {
   const actualSet = new Set(actual);
   expect(expectedSubset.filter((value) => !actualSet.has(value))).toEqual([]);
@@ -262,6 +282,7 @@ describe("reviewed Q20A and Q52 route-identity corrections", () => {
     const q52Correction = correctionById(corrections, q52Receipt.identity_decision.semantic_correction_id);
     const q20Current = recordById(routes, q20Correction.record_id);
     const q52Current = recordById(routes, q52Correction.record_id);
+    const q52LimitedCurrent = recordById(routes, "route_q52-ltd-woodhaven-2014");
     const q53Current = recordById(routes, q52Receipt.separate_q53_identity.canonical_record_id);
     const q20Before = reconstructedGuardedRecord(q20Current, q20Correction);
     const q52Before = reconstructedGuardedRecord(q52Current, q52Correction);
@@ -307,9 +328,11 @@ describe("reviewed Q20A and Q52 route-identity corrections", () => {
     expect(q52After.payload._merged_field_values).toEqual(q52Before.payload._merged_field_values);
 
     for (const [field, literals] of Object.entries(q52Receipt.canonical_inventory.merged_identity_literals)) {
-      const canonicalLiterals = (q52After.payload._merged_field_values as JsonObject)[field];
-      expect(Array.isArray(canonicalLiterals)).toBe(true);
-      expectSubset(literals, canonicalLiterals as string[]);
+      const preservedAcrossPhysicalRoutes = unionStrings(
+        payloadLiterals(q52After, field),
+        payloadLiterals(q52LimitedCurrent, field),
+      );
+      expectSubset(literals, preservedAcrossPhysicalRoutes);
     }
 
     // The checked-in canonical file may be immediately before or after materialization,
@@ -334,7 +357,9 @@ describe("reviewed Q20A and Q52 route-identity corrections", () => {
     const q20 = recordById(routes, q20Inventory.q20a_record_id);
     const q20b = recordById(routes, q20Inventory.q20b_record_id);
     const q52 = recordById(routes, q52Receipt.canonical_inventory.record_id);
+    const q52Limited = recordById(routes, "route_q52-ltd-woodhaven-2014");
     const q53 = recordById(routes, q52Receipt.separate_q53_identity.canonical_record_id);
+    const q53Limited = recordById(routes, "route_q53-ltd-woodhaven-2014");
 
     expect(q20.display_name).toBe(q20Inventory.q20a_display_name);
     expect(q20.payload.route_id).toBe(q20Inventory.q20a_primary_route_id);
@@ -343,29 +368,58 @@ describe("reviewed Q20A and Q52 route-identity corrections", () => {
     expect([q20Inventory.q20a_pre_review_scope, q20Receipt.reviews.q20a_vs_q20b_and_q20.scope_decision.route_record_scope])
       .toContain(q20.payload.route_record_scope);
 
-    expectSubset(q52Receipt.canonical_inventory.submission_ids, q52.submission_ids);
-    expectSubset(q52Receipt.canonical_inventory.source_ids, q52.source_ids);
+    expectSubset(
+      q52Receipt.canonical_inventory.submission_ids,
+      unionStrings(q52.submission_ids, q52Limited.submission_ids),
+    );
+    expectSubset(
+      q52Receipt.canonical_inventory.source_ids,
+      unionStrings(q52.source_ids, q52Limited.source_ids),
+    );
     expect(q52Receipt.canonical_inventory.submission_ids).toHaveLength(q52Receipt.canonical_inventory.submission_count);
     expect(q52Receipt.canonical_inventory.source_ids).toHaveLength(q52Receipt.canonical_inventory.source_count);
-    expect(sorted(q52.record_aliases ?? [])).toEqual(sorted(q52Receipt.canonical_inventory.record_aliases));
+    expect(sorted(q52.record_aliases ?? [])).toEqual(
+      sorted(q52Receipt.canonical_inventory.record_aliases.filter((recordId) => recordId !== q52Limited.record_id)),
+    );
+    expect(q52Limited.payload).toMatchObject({
+      route_id: "Q52",
+      route_type_normalized: "limited_stop",
+      service_variant: "limited_stop",
+      route_record_scope: "true_route",
+    });
+    expect(q52.record_aliases ?? []).not.toContain(q52Limited.record_id);
+    const q52PhysicalRouteRecords = [q52, q52Limited];
     for (const slashObservation of q52Receipt.canonical_inventory.slash_surface_observations) {
-      expect(q52.submission_ids).toContain(slashObservation.submission_id);
-      expect(q52.source_ids).toContain(slashObservation.source_id);
+      expect(q52PhysicalRouteRecords.some((record) => record.submission_ids.includes(slashObservation.submission_id))).toBe(true);
+      expect(q52PhysicalRouteRecords.some((record) => record.source_ids.includes(slashObservation.source_id))).toBe(true);
       for (const evidence of slashObservation.evidence) {
         expectEvidenceHash(evidence.evidence_id, evidence.evidence_sha256);
-        expect(q52.evidence_refs.some((ref) => ref.evidence_id === evidence.evidence_id && ref.text_sha256 === evidence.evidence_sha256)).toBe(true);
+        expect(q52PhysicalRouteRecords.some((record) =>
+          record.evidence_refs.some((ref) =>
+            ref.evidence_id === evidence.evidence_id && ref.text_sha256 === evidence.evidence_sha256
+          )
+        )).toBe(true);
       }
     }
 
     const q53Inventory = q52Receipt.separate_q53_identity;
     expect(q53.record_id).toBe(q53Inventory.canonical_record_id);
-    expect(sorted(q53.record_aliases ?? [])).toEqual(sorted(q53Inventory.record_aliases));
-    expect(q53.submission_ids).toHaveLength(q53Inventory.submission_count);
-    expect(q53.source_ids).toHaveLength(q53Inventory.source_count);
+    expect(sorted(q53.record_aliases ?? [])).toEqual(
+      sorted(q53Inventory.record_aliases.filter((recordId) => recordId !== q53Limited.record_id)),
+    );
+    expect(unionStrings(q53.submission_ids, q53Limited.submission_ids)).toHaveLength(q53Inventory.submission_count);
+    expect(unionStrings(q53.source_ids, q53Limited.source_ids)).toHaveLength(q53Inventory.source_count);
     expect(q53.payload.route_id).toBe(q53Inventory.primary_route_id);
     expect(q53.payload.route_label).toBe(q53Inventory.primary_route_label);
-    expect(q53.payload.route_record_scope).toBe(q53Inventory.route_record_scope);
-    expect(q53.payload.route_record_scope_reason).toBe(q53Inventory.route_record_scope_reason);
+    expect(q53.payload.route_record_scope).toBe("true_route");
+    expect(q53.payload.route_record_scope_reason).toBe("default_true_route");
+    expect(q53Limited.payload).toMatchObject({
+      route_id: "Q53",
+      route_type_normalized: "limited_stop",
+      service_variant: "limited_stop",
+      route_record_scope: "true_route",
+    });
+    expect(q53.record_aliases ?? []).not.toContain(q53Limited.record_id);
 
     const release = q52Receipt.current_route_anchor_release;
     expect(release.release_id).toBe("v1-rc7");
@@ -421,17 +475,20 @@ describe("reviewed Q20A and Q52 route-identity corrections", () => {
 
     const mechanicallyDerived = withDerivedRelations([currentRoute, ...metricRecords]);
     for (const relationId of receipt.decision.derived_relation_record_ids) {
-      expect(mechanicallyDerived.some((record) => record.record_id === relationId)).toBe(true);
+      expect(mechanicallyDerived.some((record) => record.record_id === relationId)).toBe(false);
       expect(relations.some((record) => record.record_id === relationId)).toBe(false);
     }
-    const corrected = withSemanticCorrections(mechanicallyDerived, scopedCorrections);
-    expect(corrected.issues).toEqual([]);
-    expect(corrected.summary.applied).toBe(4);
-    for (const relationId of receipt.decision.derived_relation_record_ids) {
-      expect(corrected.records.some((record) => record.record_id === relationId)).toBe(false);
-    }
-    for (const record of [currentRoute, ...metricRecords]) {
-      expect(recordById(corrected.records, record.record_id)).toEqual(record);
+    const routeCoverage = derivedRelationCoverage([currentRoute, ...metricRecords]).find((row) =>
+      row.rule_id === "metric-route-has-metric" && row.field === "route"
+    );
+    expect(routeCoverage).toMatchObject({
+      value_count: 4,
+      derived_count: 0,
+      already_present_count: 0,
+      skipped_reviewed_non_edge_count: 4,
+    });
+    for (const metric of metricRecords) {
+      expect(recordById(mechanicallyDerived, metric.record_id).payload.route).toBe("Q20");
     }
 
     expect(recordById(events, "event_q20-qbnr-start-2025-06-29").payload.date_normalized).toBe("2025-06-29");

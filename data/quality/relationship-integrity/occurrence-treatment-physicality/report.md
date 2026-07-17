@@ -1,0 +1,37 @@
+# Eligible occurrence treatment physicality review
+
+- Release snapshot: `v1-rc20` (`provisional_rc20`).
+- Eligible operational occurrences: 134.
+- Unique reviewed treatment records: 276.
+- Treatment memberships: 276.
+- Classification counts: {"physical_corridor_or_segment_intervention":1,"nonphysical_service_operations_policy_control":275,"point_or_stop_physical_intervention":0,"review_required":0}.
+- Occurrence scope dispositions: {"physical_scope_satisfied":0,"physical_scope_missing":1,"physical_scope_relation_missing":0,"physical_scope_evidence_missing":0,"physical_scope_relation_invalid":0,"physicality_review_required":0,"physical_scope_not_applicable":133}.
+- Immutable review ledger complete: true.
+- Physical-scope role complete: false.
+- Final post-semantic release guard ready: false.
+- Hard-mode ready: false.
+
+## Exact family inventory
+
+- `automated_bus_lane_enforcement`: {"unique_treatment_count":5,"occurrence_membership_count":5,"classifications":{"nonphysical_service_operations_policy_control":5}}.
+- `bus_lane`: {"unique_treatment_count":1,"occurrence_membership_count":1,"classifications":{"physical_corridor_or_segment_intervention":1}}.
+- `bus_stop_or_boarding`: {"unique_treatment_count":116,"occurrence_membership_count":116,"classifications":{"nonphysical_service_operations_policy_control":116}}.
+- `fare_collection`: {"unique_treatment_count":4,"occurrence_membership_count":4,"classifications":{"nonphysical_service_operations_policy_control":4}}.
+- `route_redesign`: {"unique_treatment_count":1,"occurrence_membership_count":1,"classifications":{"nonphysical_service_operations_policy_control":1}}.
+- `service_pattern`: {"unique_treatment_count":149,"occurrence_membership_count":149,"classifications":{"nonphysical_service_operations_policy_control":149}}.
+
+## Findings
+
+- `OTPHY_PHYSICAL_SCOPE_MISSING`: 1.
+
+## Interpretation
+
+The policy reviews exact treatment family/kind pairs and exact treatment evidence. It does not infer
+physicality from a family name, location literal, proximity, or street-name similarity. A
+nonphysical decision only makes the physical-scope role not applicable; it is not a waiver and does
+not independently make an occurrence study-eligible.
+
+The provisional rc20 snapshot is not an enforcement migration. Final verification must run against
+the post-semantic immutable release and its matching completeness bundle. The final run refuses any
+change to treatment identity, exact evidence, classification, or eligible occurrence membership
+without an explicit reviewed ledger migration.

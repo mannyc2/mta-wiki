@@ -9,7 +9,7 @@ import { readCanonicalRecordsFromJsonl } from "../packages/pipeline/src/material
 import { loadOperationalOccurrenceAcceptedDecisions } from "../packages/pipeline/src/materialize/operational-occurrence-review";
 import {
   computeRouteAnchors,
-  readRouteAnchorOverrides,
+  readRouteAnchorReview,
   type GtfsRoute,
 } from "../packages/pipeline/src/materialize/route-anchors";
 import {
@@ -186,8 +186,14 @@ const gtfsByShortName = new Map(
     .filter((route) => route.short_name)
     .map((route) => [normalizedRouteLabel(route.short_name!), route]),
 );
+const routeAnchorReview = readRouteAnchorReview();
 const routeAnchors = new Map(
-  computeRouteAnchors(records, gtfs, readRouteAnchorOverrides())
+  computeRouteAnchors(
+    records,
+    gtfs,
+    routeAnchorReview.overrides,
+    routeAnchorReview.non_gtfs_dispositions,
+  )
     .filter((row) => row.gtfs_route_id)
     .map((row) => [row.gtfs_route_id!, row]),
 );

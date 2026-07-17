@@ -33,7 +33,7 @@ import {
 import {
   computeRouteAnchors,
   readGtfsRoutesFromDb,
-  readRouteAnchorOverrides,
+  readRouteAnchorReview,
 } from "../packages/pipeline/src/materialize/route-anchors";
 
 const dir = join(repoRoot, "data", "contract-fixtures", "operational-occurrences-v1");
@@ -42,7 +42,13 @@ mkdirSync(dir, { recursive: true });
 const records = readCanonicalRecordsFromJsonl();
 const anchorReviews = loadOperationalAnchorReviewDecisions();
 const occurrenceReviews = loadOperationalOccurrenceAcceptedDecisions();
-const routeAnchors = computeRouteAnchors(records, readGtfsRoutesFromDb(), readRouteAnchorOverrides());
+const routeAnchorReview = readRouteAnchorReview();
+const routeAnchors = computeRouteAnchors(
+  records,
+  readGtfsRoutesFromDb(),
+  routeAnchorReview.overrides,
+  routeAnchorReview.non_gtfs_dispositions,
+);
 const rows = computeOperationalOccurrences(records, routeAnchors, {
   reviewDecisions: anchorReviews,
   occurrenceReviewDecisions: occurrenceReviews,

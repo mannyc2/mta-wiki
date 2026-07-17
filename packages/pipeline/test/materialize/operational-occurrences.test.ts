@@ -216,7 +216,7 @@ function explicitBundleDecision(): OperationalOccurrenceAcceptedDecision {
   };
 }
 
-describe("operational occurrences v1", () => {
+describe("operational occurrences v2 with immutable v1 compatibility", () => {
   it("strict-decodes the manifest-v3 migration fixture and verifies every addressed byte", () => {
     const dir = join(repoRoot, "data", "contract-fixtures", "operational-occurrences-v1");
     const manifest = parseReleaseManifest(JSON.parse(readFileSync(join(dir, "manifest.json"), "utf8")) as unknown);
@@ -247,7 +247,7 @@ describe("operational occurrences v1", () => {
     };
     expect(rows).toHaveLength(135);
     expect(summary).toEqual({
-      schema_version: 1,
+      schema_version: 2,
       occurrence_count: 135,
       study_projection_eligible_count: 134,
       atomic_count: 50,
@@ -263,6 +263,9 @@ describe("operational occurrences v1", () => {
     );
     expect(q48Occurrence).toMatchObject({
       founding_key: "event:event_q48-new-service-start-2025-06-30",
+      phase_record_ids: ["event_q48-new-service-start-2025-06-30"],
+      phase_relation_record_ids: [],
+      phase_relation_disposition: "single_phase",
       routes: [
         {
           route_record_id: "route_q48-glen-oaks-2025",
@@ -553,6 +556,265 @@ describe("operational occurrences v1", () => {
         identityRegistry: [input.identity],
       }),
     ).toThrow(/official|untrusted/u);
+  });
+
+  it("projects physical scope only from a delivered reviewed direct treatment-to-corridor edge", () => {
+    const input = fixture();
+    const physicalScopeRelation = record("relation_physical_scope", "relation", {
+      relation_kind: "located_on_corridor",
+      relation_family: "corridor_scope",
+      subject_id: "treatment_a",
+      object_id: "corridor_fixture",
+      assertion_status: "delivered",
+    });
+    input.records.push(
+      record("corridor_fixture", "corridor", {
+        corridor_name: "Fixture Avenue from First Street to Second Street",
+      }),
+      physicalScopeRelation,
+    );
+    const decision = explicitBundleDecision();
+    decision.observation_relation_record_ids.push(physicalScopeRelation.record_id);
+    const identity = { ...input.identity, decision_id: decision.decision_id };
+    const rows = computeOperationalOccurrences(input.records, input.routeAnchors, {
+      reviewDecisions: [],
+      occurrenceReviewDecisions: [decision],
+      identityRegistry: [identity],
+    });
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0]).toMatchObject({
+      phase_record_ids: ["event_fixture"],
+      phase_relation_record_ids: [],
+      phase_relation_disposition: "single_phase",
+      physical_scope_record_ids: ["corridor_fixture"],
+      physical_scope_relation_record_ids: ["relation_physical_scope"],
+      physical_scope_evidence_bindings: [{
+        role: "physical_scope",
+        record_id: "relation_physical_scope",
+        source_id: sourceId,
+        evidence_id: evidenceId,
+      }],
+    });
+    expect(rows[0]?.provenance.relation_record_ids).toContain("relation_physical_scope");
+    expect(rows[0]!.evidence_bindings).toContainEqual({
+      role: "physical_scope",
+      record_id: "relation_physical_scope",
+      source_id: sourceId,
+      evidence_id: evidenceId,
+    });
+    expect(parseOperationalOccurrencesJsonl(operationalOccurrencesJsonl(rows), input.records)).toEqual(rows);
+
+    const wrongCanonicalEvidence = structuredClone(rows[0]!);
+    wrongCanonicalEvidence.physical_scope_evidence_bindings[0]!.evidence_id = `${sourceId}#wrong-scope`;
+    wrongCanonicalEvidence.evidence_bindings.find((entry) => entry.role === "physical_scope")!.evidence_id =
+      `${sourceId}#wrong-scope`;
+    expect(parseOperationalOccurrencesJsonl(operationalOccurrencesJsonl([wrongCanonicalEvidence]))).toEqual([
+      wrongCanonicalEvidence,
+    ]);
+    expect(() => parseOperationalOccurrencesJsonl(
+      operationalOccurrencesJsonl([wrongCanonicalEvidence]),
+      input.records,
+    )).toThrow("do not exactly match canonical evidence IDs");
+
+    const wrongCanonicalScope = structuredClone(rows[0]!);
+    wrongCanonicalScope.physical_scope_record_ids = ["corridor_not_the_relation_endpoint"];
+    expect(parseOperationalOccurrencesJsonl(operationalOccurrencesJsonl([wrongCanonicalScope]))).toEqual([
+      wrongCanonicalScope,
+    ]);
+    expect(() => parseOperationalOccurrencesJsonl(
+      operationalOccurrencesJsonl([wrongCanonicalScope]),
+      input.records,
+    )).toThrow("must exactly match canonical direct-scope relation endpoints");
+
+    const evidenceIncomplete = structuredClone(rows[0]!);
+    evidenceIncomplete.physical_scope_relation_record_ids.push("relation_unbound_physical_scope");
+    evidenceIncomplete.provenance.relation_record_ids.push("relation_unbound_physical_scope");
+    expect(() => parseOperationalOccurrencesJsonl(operationalOccurrencesJsonl([evidenceIncomplete])))
+      .toThrow("must bind every physical_scope_relation_record_id exactly");
+  });
+
+  it("does not fan one treatment out to every corridor on its broad parent project", () => {
+    const input = fixture();
+    const firstBroadScope = relation("relation_project_scope_first", "uses_corridor", "corridor_first");
+    firstBroadScope.payload.relation_family = "corridor_scope";
+    const secondBroadScope = relation("relation_project_scope_second", "uses_corridor", "corridor_second");
+    secondBroadScope.payload.relation_family = "corridor_scope";
+    input.records.push(
+      record("corridor_first", "corridor"),
+      record("corridor_second", "corridor"),
+      firstBroadScope,
+      secondBroadScope,
+    );
+    const decision = explicitBundleDecision();
+    decision.observation_relation_record_ids.push(firstBroadScope.record_id, secondBroadScope.record_id);
+    const identity = { ...input.identity, decision_id: decision.decision_id };
+    const rows = computeOperationalOccurrences(input.records, input.routeAnchors, {
+      reviewDecisions: [],
+      occurrenceReviewDecisions: [decision],
+      identityRegistry: [identity],
+    });
+
+    expect(rows[0]?.physical_scope_record_ids).toEqual([]);
+    expect(rows[0]?.physical_scope_relation_record_ids).toEqual([]);
+    expect(rows[0]?.provenance.relation_record_ids).toContain(firstBroadScope.record_id);
+    expect(rows[0]?.provenance.relation_record_ids).toContain(secondBroadScope.record_id);
+
+    const unprovedDirectScope = record("relation_unproved_direct_scope", "relation", {
+      relation_kind: "located_on_corridor",
+      relation_family: "corridor_scope",
+      subject_id: "treatment_a",
+      object_id: "corridor_first",
+      assertion_status: "planned",
+    });
+    const unprovedRecords = [...input.records, unprovedDirectScope];
+    const unprovedDecision = structuredClone(decision);
+    unprovedDecision.observation_relation_record_ids.push(unprovedDirectScope.record_id);
+    expect(() =>
+      computeOperationalOccurrences(unprovedRecords, input.routeAnchors, {
+        reviewDecisions: [],
+        occurrenceReviewDecisions: [unprovedDecision],
+        identityRegistry: [identity],
+      }),
+    ).toThrow("unapproved physical-scope semantics");
+  });
+
+  it("requires exact allowed phase semantics and separates shape parsing from canonical validation", () => {
+    const shapeInput = fixture();
+    const shapeRows = computeOperationalOccurrences(shapeInput.records, shapeInput.routeAnchors, {
+      reviewDecisions: [anchorDecision({ id: "x1-shape", routeId: "route_x1", treatmentId: "treatment_a" })],
+      identityRegistry: [shapeInput.identity],
+    });
+    const relatedPhases = structuredClone(shapeRows[0]!);
+
+    relatedPhases.phase_record_ids.push("event_fixture_phase_2");
+    relatedPhases.phase_relation_record_ids = ["relation_fixture_phase_sequence"];
+    relatedPhases.phase_relation_disposition = "related_phases";
+    relatedPhases.provenance.event_record_ids.push("event_fixture_phase_2");
+    relatedPhases.provenance.relation_record_ids.push("relation_fixture_phase_sequence");
+    relatedPhases.observations.push({
+      ...structuredClone(relatedPhases.observations[0]!),
+      event_record_id: "event_fixture_phase_2",
+    });
+    const phaseBinding = {
+      role: "phase_relation" as const,
+      record_id: "relation_fixture_phase_sequence",
+      source_id: sourceId,
+      evidence_id: evidenceId,
+    };
+    relatedPhases.phase_relation_evidence_bindings = [phaseBinding];
+    relatedPhases.evidence_bindings.push(phaseBinding);
+    expect(parseOperationalOccurrencesJsonl(operationalOccurrencesJsonl([relatedPhases]))).toEqual([relatedPhases]);
+    expect(() => parseOperationalOccurrencesJsonl(
+      operationalOccurrencesJsonl([relatedPhases]),
+      shapeInput.records,
+    )).toThrow("must resolve to a canonical event");
+
+    const phaseEvidenceIncomplete = structuredClone(relatedPhases);
+    phaseEvidenceIncomplete.phase_relation_evidence_bindings = [];
+    expect(() => parseOperationalOccurrencesJsonl(operationalOccurrencesJsonl([phaseEvidenceIncomplete])))
+      .toThrow("must bind every phase_relation_record_id exactly");
+
+    const input = fixture();
+    input.records.push(
+      record("event_fixture_phase_2", "event", {
+        event_family: "implementation",
+        lifecycle_phase: "expanded",
+        date_text: "September 30, 2025",
+        date_normalized: "2025-09-30",
+        date_precision: "day",
+      }),
+      record("relation_fixture_phase_sequence", "relation", {
+        relation_kind: "precedes_event",
+        relation_family: "timeline_context",
+        subject_id: "event_fixture",
+        object_id: "event_fixture_phase_2",
+        assertion_status: "delivered",
+      }),
+    );
+    const decision = explicitBundleDecision();
+    decision.observation_event_record_ids.push("event_fixture_phase_2");
+    decision.observation_relation_record_ids.push("relation_fixture_phase_sequence");
+    const identity = { ...input.identity, decision_id: decision.decision_id };
+    const rows = computeOperationalOccurrences(input.records, input.routeAnchors, {
+      reviewDecisions: [],
+      occurrenceReviewDecisions: [decision],
+      identityRegistry: [identity],
+    });
+    expect(rows[0]).toMatchObject({
+      phase_record_ids: ["event_fixture", "event_fixture_phase_2"],
+      phase_relation_record_ids: ["relation_fixture_phase_sequence"],
+      phase_relation_disposition: "related_phases",
+      phase_relation_evidence_bindings: [{
+        role: "phase_relation",
+        record_id: "relation_fixture_phase_sequence",
+        source_id: sourceId,
+        evidence_id: evidenceId,
+      }],
+    });
+    expect(rows[0]?.observations.find((observation) => observation.event_record_id === "event_fixture_phase_2")
+      ?.document_time_dates[0]?.normalized).toBe("2025-09-30");
+    expect(parseOperationalOccurrencesJsonl(operationalOccurrencesJsonl(rows), input.records)).toEqual(rows);
+
+    const wrongCanonicalEvidence = structuredClone(rows[0]!);
+    wrongCanonicalEvidence.phase_relation_evidence_bindings[0]!.evidence_id = `${sourceId}#wrong-phase`;
+    wrongCanonicalEvidence.evidence_bindings.find((entry) => entry.role === "phase_relation")!.evidence_id =
+      `${sourceId}#wrong-phase`;
+    expect(parseOperationalOccurrencesJsonl(operationalOccurrencesJsonl([wrongCanonicalEvidence]))).toEqual([
+      wrongCanonicalEvidence,
+    ]);
+    expect(() => parseOperationalOccurrencesJsonl(
+      operationalOccurrencesJsonl([wrongCanonicalEvidence]),
+      input.records,
+    )).toThrow("do not exactly match canonical evidence IDs");
+
+    const arbitraryRecords = structuredClone(input.records);
+    const arbitraryRelation = arbitraryRecords.find((item) => item.record_id === "relation_fixture_phase_sequence")!;
+    arbitraryRelation.payload.relation_kind = "has_timeline_event";
+    expect(() =>
+      computeOperationalOccurrences(arbitraryRecords, input.routeAnchors, {
+        reviewDecisions: [],
+        occurrenceReviewDecisions: [decision],
+        identityRegistry: [identity],
+      }),
+    ).toThrow("unapproved phase relation semantics");
+
+    const plannedRecords = structuredClone(input.records);
+    plannedRecords.find((item) => item.record_id === "relation_fixture_phase_sequence")!.payload.assertion_status = "planned";
+    expect(() =>
+      computeOperationalOccurrences(plannedRecords, input.routeAnchors, {
+        reviewDecisions: [],
+        occurrenceReviewDecisions: [decision],
+        identityRegistry: [identity],
+      }),
+    ).toThrow("unapproved phase relation semantics");
+
+    const evidenceFreeRecords = structuredClone(input.records);
+    evidenceFreeRecords.find((item) => item.record_id === "relation_fixture_phase_sequence")!.evidence_refs = [];
+    expect(() =>
+      computeOperationalOccurrences(evidenceFreeRecords, input.routeAnchors, {
+        reviewDecisions: [],
+        occurrenceReviewDecisions: [decision],
+        identityRegistry: [identity],
+      }),
+    ).toThrow("must have exact canonical evidence");
+
+    const disconnectedRecords = [...input.records, record("event_fixture_phase_3", "event", {
+      event_family: "implementation",
+      lifecycle_phase: "expanded",
+      date_text: "October 31, 2025",
+      date_normalized: "2025-10-31",
+      date_precision: "day",
+    })];
+    const disconnectedDecision = structuredClone(decision);
+    disconnectedDecision.observation_event_record_ids.push("event_fixture_phase_3");
+    expect(() =>
+      computeOperationalOccurrences(disconnectedRecords, input.routeAnchors, {
+        reviewDecisions: [],
+        occurrenceReviewDecisions: [disconnectedDecision],
+        identityRegistry: [identity],
+      }),
+    ).toThrow("do not connect every phase identity");
   });
 
   it("retains a multi-member migrated review as one excluded bundle instead of coercing an atomic family", () => {

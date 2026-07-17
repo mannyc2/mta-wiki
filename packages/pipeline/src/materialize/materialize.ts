@@ -11,18 +11,26 @@ import {
   recordBaseIdForInput,
 } from "@mta-wiki/db/identity";
 import { rebuildCanonicalDb } from "@mta-wiki/db/canonical-db";
+import { loadRelationshipContract, relationshipContractValidationMode } from "@mta-wiki/db/relationship-contract";
 import { canonicalDir, FILE_BY_KIND } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { withDerivedRelations } from "@mta-wiki/pipeline/records/derived-relations";
 import { withSourceDateBackfill } from "@mta-wiki/pipeline/sources/source-date-backfill";
 import { withAssertionQualifiers } from "@mta-wiki/pipeline/records/assertion-qualifiers";
 import { normalizeRelationPayload, type RelationEndpointKinds } from "@mta-wiki/pipeline/records/relations";
-import { readSemanticCorrections, withSemanticCorrections } from "@mta-wiki/pipeline/records/semantic-corrections";
+import { auditRelationshipGraph } from "@mta-wiki/pipeline/records/relationship-integrity";
+import { readSemanticCorrections, readSemanticCorrectionSupersessions, semanticSupersessionIdentities, withSemanticCorrections } from "@mta-wiki/pipeline/records/semantic-corrections";
 import { stableHash } from "@mta-wiki/db/stable-json";
 import { retiredSubmissionIds } from "@mta-wiki/pipeline/records/submission-overrides";
 import { normalizeSubmitInput, readSubmissionEntries, relationEndpointIssues, validateSubmitInput } from "@mta-wiki/pipeline/records/submissions";
 import { normalizeObservationPayload, type NormalizationContext } from "@mta-wiki/pipeline/ontology/normalizers";
 import { sourceDocumentMarkdown } from "@mta-wiki/pipeline/sources/source-packet";
 import { sourceBlocksPath } from "@mta-wiki/pipeline/sources/source-prep";
+import { relationshipCompletenessForMaterialization } from "@mta-wiki/pipeline/quality/relationship-completeness-boundary";
+import {
+  buildEvidenceBlockIndexEntries,
+  writeEvidenceBlockIndex,
+  type EvidenceBlockIndex,
+} from "@mta-wiki/pipeline/sources/evidence-block-index";
 import type { JsonObject, JsonValue, MaterializeResult, MtaCanonicalRecord, MtaEvidenceRef, MtaObservationKind, MtaSubmissionEntry, MtaSubmitObservationInput } from "@mta-wiki/db/types";
 
 const CANONICAL_KINDS = [
@@ -1511,10 +1519,47 @@ export function materializeWiki(): MaterializeResult {
   const submissions = readSubmissionEntries();
   const retiredIds = retiredSubmissionIds();
   const acceptedSubmissions = materializableEntries(submissions, { retiredSubmissionIds: retiredIds });
-  const semanticCorrectionResult = withSemanticCorrections(entriesToRecords(submissions, { retiredSubmissionIds: retiredIds }), readSemanticCorrections());
+  const semanticCorrections = readSemanticCorrections();
+  const semanticCorrectionResult = withSemanticCorrections(
+    entriesToRecords(submissions, { retiredSubmissionIds: retiredIds }),
+    semanticCorrections,
+    readSemanticCorrectionSupersessions(),
+  );
+  if (semanticCorrectionResult.issues.length > 0) {
+    throw new Error(
+      `semantic corrections rejected authoritative materialization (${semanticCorrectionResult.issues.length} issue(s)): ` +
+        semanticCorrectionResult.issues.slice(0, 8).map((issue) => `${issue.code} ${issue.recordId ?? issue.path ?? ""}: ${issue.message}`).join("; "),
+    );
+  }
   const records = semanticCorrectionResult.records;
   const counts: Record<string, number> = {};
 
+  // Authoritative JSONL is the source of truth, so the relationship contract must run over the
+  // final in-memory record set before *any* generated file is changed. SQLite repeats these
+  // invariants as a derived-store defense, but it cannot protect JSONL that was already written.
+  // Build the evidence registry from the same final record set in memory. Reading the previous
+  // generated index here would falsely reject newly staged, valid evidence (or accept a stale
+  // hash) before the index can be rebuilt.
+  const evidenceEntries = buildEvidenceBlockIndexEntries(records);
+  const evidenceIndex: EvidenceBlockIndex = {
+    byRef: new Map(evidenceEntries.map((entry) => [`${entry.source_id}\0${entry.block_id}`, entry])),
+    sourceIds: new Set(evidenceEntries.map((entry) => entry.source_id)),
+  };
+  const relationshipContract = loadRelationshipContract();
+  const relationshipAudit = auditRelationshipGraph(records, {
+    mode: relationshipContractValidationMode(relationshipContract),
+    contract: relationshipContract,
+    includeOrphans: false,
+    evidenceIndex,
+  });
+  const relationshipErrors = relationshipAudit.findings.filter((finding) => finding.severity === "error");
+  if (relationshipErrors.length > 0) {
+    const sample = relationshipErrors.slice(0, 8).map((finding) => `${finding.code} ${finding.record_id ?? finding.finding_id}`).join("; ");
+    throw new Error(`relationship contract rejected authoritative materialization (${relationshipErrors.length} error(s)): ${sample}`);
+  }
+  const relationshipCompleteness = relationshipCompletenessForMaterialization(records, relationshipContract);
+
+  writeEvidenceBlockIndex(records);
   mkdirSync(canonicalDir(), { recursive: true });
   for (const kind of CANONICAL_KINDS) {
     const kindRecords = records.filter((record) => record.record_kind === kind);
@@ -1531,7 +1576,12 @@ export function materializeWiki(): MaterializeResult {
 
   // Additive: rebuild the canonical SQLite materialization alongside the JSONL above. Runs last,
   // so a build failure surfaces loudly without affecting the already-written JSONL/indexes.
-  rebuildCanonicalDb(records, { submissions });
+  rebuildCanonicalDb(records, {
+    submissions,
+    identitySupersessions: semanticSupersessionIdentities(semanticCorrections),
+    relationshipFindings: relationshipAudit.findings,
+    relationshipCompleteness: relationshipCompleteness.mirror,
+  });
 
   return {
     submissionsRead: submissions.length,

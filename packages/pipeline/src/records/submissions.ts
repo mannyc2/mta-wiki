@@ -2,12 +2,15 @@ import { appendFileSync, existsSync, mkdirSync, readdirSync, readFileSync } from
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { PAYLOAD_SCHEMA_VERSION, requiredPayloadAnchors } from "@mta-wiki/db/kind-registry";
+import { canonicalDbPath, openCanonicalDb } from "@mta-wiki/db/canonical-db";
+import { loadRelationshipContract, type LoadedRelationshipContract } from "@mta-wiki/db/relationship-contract";
 import { normalizeObservationPayload } from "@mta-wiki/pipeline/ontology/normalizers";
 import { ontologyWarningsForPayload } from "@mta-wiki/pipeline/ontology/ontology";
 import { validatePayloadSchema } from "@mta-wiki/db/payload-schemas";
 import { stableHash } from "@mta-wiki/db/stable-json";
 import { evidenceId, readStagedSourceBlocks, sourceBlockById, sourceBlocksRelativePath } from "@mta-wiki/pipeline/sources/source-prep";
-import type { JsonObject, JsonValue, MtaEvidenceRef, MtaEvidenceSubmissionRef, MtaSubmitObservationInput, MtaSubmissionEntry } from "@mta-wiki/db/types";
+import { evidenceBlockIndexEntry, readEvidenceBlockIndex, type EvidenceBlockIndex } from "@mta-wiki/pipeline/sources/evidence-block-index";
+import type { JsonObject, JsonValue, MtaEvidenceRef, MtaEvidenceSubmissionRef, MtaObservationKind, MtaSubmitObservationInput, MtaSubmissionEntry } from "@mta-wiki/db/types";
 
 const OBSERVATION_KINDS = new Set([
   "source",
@@ -23,6 +26,50 @@ const OBSERVATION_KINDS = new Set([
   "source_gap",
   "relation",
 ]);
+
+let publicEvidenceIndex: EvidenceBlockIndex | undefined;
+let publicEvidenceIndexLoaded = false;
+
+type DirectEndpointRegistry = {
+  recordsById: Map<string, MtaObservationKind>;
+  identities: Map<string, Array<{ target: string; status: string }>>;
+  contract: LoadedRelationshipContract;
+};
+
+let directEndpointRegistry: DirectEndpointRegistry | undefined;
+
+function loadDirectEndpointRegistry(): DirectEndpointRegistry {
+  if (directEndpointRegistry) return directEndpointRegistry;
+  if (!existsSync(canonicalDbPath())) throw new Error("canonical.db is missing; rebuild it before submitting direct canonical relation endpoints");
+  const db = openCanonicalDb(canonicalDbPath(), { readonly: true });
+  try {
+    const recordsById = new Map(
+      (db.query("SELECT record_id, record_kind FROM records ORDER BY record_id").all() as Array<{ record_id: string; record_kind: MtaObservationKind }>)
+        .map((row) => [row.record_id, row.record_kind]),
+    );
+    const identities = new Map<string, Array<{ target: string; status: string }>>();
+    const rows = db.query(
+      "SELECT identity_value, canonical_record_id, resolution_status FROM canonical_identities WHERE identity_class != 'canonical' ORDER BY identity_value, canonical_record_id",
+    ).all() as Array<{ identity_value: string; canonical_record_id: string; resolution_status: string }>;
+    for (const row of rows) {
+      const values = identities.get(row.identity_value) ?? [];
+      values.push({ target: row.canonical_record_id, status: row.resolution_status });
+      identities.set(row.identity_value, values);
+    }
+    directEndpointRegistry = { recordsById, identities, contract: loadRelationshipContract() };
+    return directEndpointRegistry;
+  } finally {
+    db.close();
+  }
+}
+
+function indexedEvidenceBlock(sourceId: string, blockId: string) {
+  if (!publicEvidenceIndexLoaded) {
+    publicEvidenceIndex = readEvidenceBlockIndex();
+    publicEvidenceIndexLoaded = true;
+  }
+  return evidenceBlockIndexEntry(publicEvidenceIndex, sourceId, blockId);
+}
 
 function submissionsDir() {
   return join(repoRoot, "data", "submissions");
@@ -90,12 +137,20 @@ function normalizeEvidenceRef(ref: MtaEvidenceSubmissionRef): MtaEvidenceRef {
   try {
     block = sourceBlockById(sourceId, blockId);
   } catch {
+    // Public clones intentionally omit raw source blocks. Preserve a proposal/journal's existing
+    // content-addressed evidence fields so deterministic recovery validation does not erase the
+    // very page/hash identity it is trying to verify against the public evidence index.
+    const indexed = indexedEvidenceBlock(sourceId, blockId);
     return {
       source_id: sourceId,
       evidence_id: evidenceId(sourceId, blockId),
       source_path: normalizedPath,
+      page_number: ref.page_number ?? indexed?.page_number,
       block_id: blockId,
       block_range: blockId.includes("..") ? blockId : ref.block_range,
+      child_block_ids: ref.child_block_ids ?? indexed?.child_block_ids,
+      text_sha256: ref.text_sha256 ?? indexed?.raw_text_sha256,
+      text_source: ref.text_source ?? (indexed ? "raw_text" : undefined),
       role: ref.role,
       source_quote: sourceQuote,
     };
@@ -195,6 +250,67 @@ export function relationEndpointIssues(input: MtaSubmitObservationInput, knownLo
     );
   }
 
+  return issues;
+}
+
+/** Fail closed at the journal boundary for cross-source/canonicalizer relations that name physical
+ * record ids directly. Local-observation endpoints remain validated by relationEndpointIssues and
+ * receive their exact type check at the pre-write materializer gate once their records exist. */
+export function directCanonicalRelationEndpointIssues(input: MtaSubmitObservationInput): string[] {
+  if (input.observation_kind !== "relation") return [];
+  const directEndpoints = ["subject_id", "object_id"] as const;
+  if (!directEndpoints.some((field) => typeof input.payload?.[field] === "string")) return [];
+
+  let registry: DirectEndpointRegistry;
+  try {
+    registry = loadDirectEndpointRegistry();
+  } catch (error) {
+    return [error instanceof Error ? error.message : String(error)];
+  }
+  const issues: string[] = [];
+  const kinds: Partial<Record<(typeof directEndpoints)[number], MtaObservationKind>> = {};
+  for (const field of directEndpoints) {
+    const id = input.payload?.[field];
+    if (typeof id !== "string" || !id.trim()) continue;
+    const kind = registry.recordsById.get(id);
+    if (kind) {
+      kinds[field] = kind;
+      continue;
+    }
+    const resolutions = registry.identities.get(id) ?? [];
+    const targets = [...new Set(resolutions.map((entry) => entry.target))].sort();
+    if (targets.length === 1) {
+      const label = resolutions.some((entry) => entry.status === "superseded") ? "superseded" : "alias";
+      issues.push(`relation payload.${field} uses ${label} id ${id}; rewrite it to canonical physical record ${targets[0]}`);
+    } else if (targets.length > 1) {
+      issues.push(`relation payload.${field} uses ambiguous identity ${id}; candidate canonical records: ${targets.join(", ")}`);
+    } else {
+      issues.push(`relation payload.${field} references missing canonical physical record ${id}`);
+    }
+  }
+  const derivedFrom = input.payload?.derived_from_record_id;
+  if (typeof derivedFrom === "string" && !registry.recordsById.has(derivedFrom)) {
+    issues.push(`relation payload.derived_from_record_id references missing canonical record ${derivedFrom}`);
+  }
+  const relationKind = stringPayloadField(input.payload, "relation_kind");
+  const relationFamily = stringPayloadField(input.payload, "relation_family");
+  const subjectKind = kinds.subject_id;
+  const objectKind = kinds.object_id;
+  if (relationKind && subjectKind && objectKind) {
+    const rule = registry.contract.rulesByKind.get(relationKind);
+    if (!rule) {
+      issues.push(`relation kind ${relationKind} is not listed in ${registry.contract.contract.contract_id}`);
+    } else if (!relationFamily) {
+      issues.push(`relation ${relationKind} requires an explicit relation_family for contract validation`);
+    } else if (!rule.allowed_family_shapes.some((tuple) =>
+      tuple.relation_family === relationFamily &&
+      tuple.subject_kind === subjectKind &&
+      tuple.object_kind === objectKind)) {
+      issues.push(
+        `relation ${relationKind} family/endpoint tuple ${relationFamily}/${subjectKind}->${objectKind} is not allowed by ${registry.contract.contract.contract_id}`,
+      );
+    }
+  }
   return issues;
 }
 
@@ -485,7 +601,12 @@ export function appendSubmission(runId: string, input: MtaSubmitObservationInput
       .filter((entry) => entry.validation.state === "accepted" && entry.tool_args.source_id === normalized.source_id)
       .map((entry) => entry.tool_args.local_observation_id),
   );
-  const entry = createSubmissionEntry(runId, input, new Date().toISOString(), relationEndpointIssues(normalized, knownLocalObservationIds));
+  const entry = createSubmissionEntry(
+    runId,
+    input,
+    new Date().toISOString(),
+    [...relationEndpointIssues(normalized, knownLocalObservationIds), ...directCanonicalRelationEndpointIssues(normalized)],
+  );
   mkdirSync(submissionsDir(), { recursive: true });
   appendFileSync(submissionPath(runId), `${JSON.stringify(entry)}\n`, "utf8");
   return entry;

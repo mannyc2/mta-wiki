@@ -188,8 +188,8 @@ describe("applied prospective residual closure", () => {
     const queue = readJsonl<QueueRow>(
       "data/quality/operational-coverage/priority-queue.jsonl",
     );
-    expect(queue).toHaveLength(489);
-    expect(queue.filter((row) => row.status === "open")).toHaveLength(0);
+    expect(queue).toHaveLength(492);
+    expect(queue.filter((row) => row.status === "open")).toHaveLength(3);
     expect(queue.filter((row) => row.status === "terminal")).toHaveLength(489);
 
     const queueJumpRow = queue.find((row) => row.gap_id === queueJumpGapId);

@@ -47,8 +47,12 @@ import {
   type PipelineReport,
 } from "@mta-wiki/agents";
 import { canonicalDbPath } from "@mta-wiki/db/canonical-db";
+import { loadRelationshipContract, relationshipContractValidationMode } from "@mta-wiki/db/relationship-contract";
 import { factDedupSameSourceDryRunSummaryText, factDedupScoutSummaryText, writeFactDedupSameSourceDryRun, writeFactDedupScout } from "@mta-wiki/pipeline/quality/fact-dedup";
+import { auditRelationshipGraph } from "@mta-wiki/pipeline/records/relationship-integrity";
+import { readSemanticCorrections, semanticSupersessionIdentities } from "@mta-wiki/pipeline/records/semantic-corrections";
 import { calibrationMarkdown, scoreJudgeCalibration, writeV1CalibrationFixtures } from "@mta-wiki/pipeline/quality/judge-calibration";
+import { relationshipCompletenessForMaterialization } from "@mta-wiki/pipeline/quality/relationship-completeness-boundary";
 import { seededDefectSummary, writeSeededDefectFixtures } from "@mta-wiki/pipeline/quality/seeded-defects";
 import { humanCalibrationJudgeInputs, readFixtureJudgeInputs, runSemanticSweep, semanticSweepSummaryText } from "@mta-wiki/pipeline/quality/semantic-sweep";
 import { optionValue, requireSubject, type CommandHandler } from "./shared.js";
@@ -124,7 +128,26 @@ function rebuildDbFromTrackedCanonical() {
     throw new Error("No tracked canonical JSONL records found; refusing to rebuild an empty data/canonical.db.");
   }
 
-  const result = rebuildCanonicalDb(records);
+  const relationshipContract = loadRelationshipContract();
+  const relationshipAudit = auditRelationshipGraph(records, {
+    mode: relationshipContractValidationMode(relationshipContract),
+    contract: relationshipContract,
+    includeOrphans: false,
+  });
+  const relationshipErrors = relationshipAudit.findings.filter((finding) => finding.severity === "error");
+  if (relationshipErrors.length > 0) {
+    throw new Error(
+      `Refusing canonical.db rebuild: authoritative JSONL has ${relationshipErrors.length} relationship-contract error(s): ` +
+        relationshipErrors.slice(0, 8).map((finding) => `${finding.code} ${finding.record_id ?? finding.finding_id}`).join("; "),
+    );
+  }
+  const relationshipCompleteness = relationshipCompletenessForMaterialization(records, relationshipContract);
+
+  const result = rebuildCanonicalDb(records, {
+    identitySupersessions: semanticSupersessionIdentities(readSemanticCorrections()),
+    relationshipFindings: relationshipAudit.findings,
+    relationshipCompleteness: relationshipCompleteness.mirror,
+  });
   const quickCheck = repairCanonicalFtsWithSqliteCli();
   console.log(
     `Rebuilt ${relative(repoRoot, result.path)} from tracked canonical JSONL: ` +

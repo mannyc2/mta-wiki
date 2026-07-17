@@ -1,7 +1,7 @@
 # Operational coverage matrix
 
-Input fingerprint: `7de2ec54b346b5eb3c3e51f62e7dd2b0e71610146a1925eb5953ee7c4c92f1ec`
-Corpus fingerprint: `3a67863168d658a7ec803b7ee51ec6b10e1b53c132f766468af84504f6af68a6`
+Input fingerprint: `a2b666a88088d30f14d271bf53221bfdede045f8f65d2d132ebedf456d16fc68`
+Corpus fingerprint: `93c3fbceb1dca07a7224abbbcf0af9ced54a8b16e41b6531afc49a67d2873fee`
 Study window: 2023-04-01 through 2026-12-31
 
 ## Canonical event population
@@ -30,8 +30,8 @@ Study window: 2023-04-01 through 2026-12-31
 ## Completion ledger
 
 - Gap rows: 2934
-- Priority gap denominator: 489
-- Priority open: 0
+- Priority gap denominator: 492
+- Priority open: 3
 - Priority adjudicated/recoverable: 0
 - Priority terminal: 489
 - Sequential route-resolved treatment gaps: 15

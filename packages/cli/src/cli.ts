@@ -126,6 +126,8 @@ function parseCommand(argv: string[]): ParsedArgs {
     "operational-recovery-proposals",
     "operational-recovery-apply",
     "qbnr-recovery-draft",
+    "relationship-integrity",
+    "relationship-completeness",
     "semantic-sweep",
     "fact-dedup",
     "replay-eval",

@@ -143,6 +143,7 @@ type SemanticCorrection = {
   op: string;
   record_id: string;
   source_decision: string;
+  reason?: string;
 };
 
 const cutSourceId = "mta_ace_routes_may2025_cut";
@@ -476,7 +477,7 @@ describe("May 2025 ACE official route cut and two bounded canonical cohorts", ()
     ]));
   });
 
-  it("preserves the April forecast as planned, retracts the false Jamaica edge, and retains the quarantined self-loop", () => {
+  it("preserves the April forecast as planned and retracts both malformed legacy edges", () => {
     const events = readJsonl<MtaCanonicalRecord>("data/canonical/events.jsonl");
     const relations = readJsonl<MtaCanonicalRecord>("data/canonical/relations.jsonl");
 
@@ -492,13 +493,7 @@ describe("May 2025 ACE official route cut and two bounded canonical cohorts", ()
       assertion_status: "planned",
     });
     expect(relations.some((relation) => relation.record_id === falseJamaicaRelationId)).toBe(false);
-    expect(byRecordId(relations, quarantinedSelfLoopId)).toMatchObject({
-      review_state: "quarantined",
-      payload: {
-        subject_id: "entity_ace-program",
-        object_id: "entity_ace-program",
-      },
-    });
+    expect(relations.some((relation) => relation.record_id === quarantinedSelfLoopId)).toBe(false);
 
     const corrections = readJsonl<SemanticCorrection>("data/semantic-corrections/corrections.jsonl")
       .filter((correction) => semanticCorrectionIds.includes(correction.correction_id as typeof semanticCorrectionIds[number]));
@@ -509,6 +504,15 @@ describe("May 2025 ACE official route cut and two bounded canonical cohorts", ()
       [forecastRelationId, "patch_payload"],
     ].sort());
     expect(corrections.every((correction) => correction.source_decision === receiptPath)).toBe(true);
+    expect(
+      readJsonl<SemanticCorrection>("data/semantic-corrections/corrections.jsonl").find(
+        (correction) => correction.record_id === quarantinedSelfLoopId && correction.op === "retract_record",
+      ),
+    ).toMatchObject({
+      correction_id: "relationship-integrity-legacy-0158-relation-rel-ace-routes-expansion",
+      reason:
+        "The edge is a canonical self-loop created by endpoint collapse and does not encode the source-backed subject/object roles; its underlying fact remains on the cited canonical record pending a correctly typed counterpart.",
+    });
   });
 });
 

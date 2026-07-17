@@ -186,6 +186,31 @@ export type OperationalRecoveryProposalValidationReport = {
   issues: MtaValidationIssue[];
 };
 
+/** Reconstruct an accepted recovery entry in a public clone where raw blocks are intentionally
+ * absent. Proposal validation immediately before journal validation has already resolved every
+ * cited evidence id/hash (and quote where public source-page text exists). We therefore suppress
+ * only the specific raw-staging absence emitted by the generic submission validator; every other
+ * structural, endpoint, schema, and evidence error remains fatal. This keeps the subsequent exact
+ * byte comparison of the persisted journal intact. */
+function createPortableOperationalRecoveryEntry(
+  runId: string,
+  input: MtaSubmitObservationInput,
+  submittedAt: string,
+  additionalIssues: string[],
+): MtaSubmissionEntry {
+  const entry = createSubmissionEntry(runId, input, submittedAt, additionalIssues);
+  const missingRawBlock = /^evidence_refs\[\d+\] unknown source block: Missing staged source blocks for .+; run prepare-source first\.$/u;
+  if (entry.validation.issues.length === 0 || !entry.validation.issues.every((issue) => missingRawBlock.test(issue))) return entry;
+  return {
+    ...entry,
+    validation: {
+      ...entry.validation,
+      state: "accepted",
+      issues: [],
+    },
+  };
+}
+
 const proposalKinds = new Set<OperationalRecoveryProposalKind>(["relation", "observation_bundle"]);
 const reviewStates = new Set<OperationalRecoveryProposalReviewState>(["proposed", "accepted", "rejected"]);
 const relationKinds = new Set<OperationalRecoveryRelation["relation_kind"]>([
@@ -1129,8 +1154,15 @@ function escapeRegExp(value: string): string {
 function wikiBlockText(rootDir: string, sourceId: string, blockId: string): string | undefined {
   const path = join(rootDir, "wiki", "sources", `${sourceId}.md`);
   if (!existsSync(path)) return undefined;
-  const match = new RegExp(`^\\[${escapeRegExp(blockId)}\\]\\s*(.*)$`, "mu").exec(readFileSync(path, "utf8"));
-  return match?.[1]?.trim() || undefined;
+  const content = readFileSync(path, "utf8");
+  const marker = new RegExp(`\\[${escapeRegExp(blockId)}\\]`, "u").exec(content);
+  if (!marker || marker.index === undefined) return undefined;
+  const start = marker.index + marker[0].length;
+  // Source pages render table/figure blocks as a marker followed by a fenced multi-line body.
+  // Capture until the next citeable block marker instead of assuming all text is on one line.
+  const next = /\[p\d{3}_[^\]]+\]/u.exec(content.slice(start));
+  const end = next?.index === undefined ? content.length : start + next.index;
+  return content.slice(start, end).trim() || undefined;
 }
 
 function rawBlock(rootDir: string, sourceId: string, blockId: string): StagedSourceBlock | undefined {
@@ -1422,7 +1454,7 @@ export function validateOperationalRecoveryProposalTree(options: {
         relative(rootDir, journalPath).split("/").join("/"),
         proposal,
         records,
-        options.createEntry,
+        options.createEntry ?? createPortableOperationalRecoveryEntry,
       );
     } catch (error) {
       issues.push({

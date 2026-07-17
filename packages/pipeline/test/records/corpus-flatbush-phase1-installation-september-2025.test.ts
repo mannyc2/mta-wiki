@@ -202,6 +202,8 @@ const relationIds = {
   treatment: "relation_flatbush-phase1-has-center-running-bus-lanes",
   hierarchy: "relation_flatbush-phase1-part-of-flatbush-bus-priority",
 } as const;
+const physicalScopeRelationId =
+  "relation_flatbush-phase1-treatment-on-bounded-corridor-livingston-state-20260715";
 
 const sourcePins = [
   {
@@ -472,6 +474,13 @@ describe("Flatbush Phase 1 September 2025 source and canonical lifecycle", () =>
     expect(byRecordId(relations, relationIds.start).payload.object_id).toBe(startEventId);
     expect(byRecordId(relations, relationIds.completion).payload.object_id).toBe(completionEventId);
     expect(byRecordId(relations, relationIds.hierarchy).payload.object_id).toBe(umbrellaProjectId);
+    expect(byRecordId(relations, physicalScopeRelationId).payload).toMatchObject({
+      relation_kind: "located_on_corridor",
+      relation_family: "corridor_scope",
+      subject_id: treatmentId,
+      object_id: "corridor_flatbush-phase1-livingston-state",
+      assertion_status: "delivered",
+    });
 
     const routeRelations = scopedRelations.filter((relation) => relation.payload.relation_kind === "serves_route");
     expect(routeRelations.map((relation) => relation.payload.object_id).sort()).toEqual([b41RouteId, b67RouteId].sort());
@@ -586,7 +595,8 @@ describe("Flatbush Phase 1 September 2025 occurrence promotion and coverage", ()
       schema_version: 1,
       decision_id: decisionId,
       review_state: "approved",
-      accepted_at: "2026-07-13T18:45:00.000Z",
+      accepted_at: "2026-07-16T08:30:00.000Z",
+      reviewer: "codex-relationship-integrity-2026-07-16",
       occurrence_id: occurrenceId,
       founding_key: foundingKey,
       observation_event_record_ids: [startEventId],
@@ -603,6 +613,7 @@ describe("Flatbush Phase 1 September 2025 occurrence promotion and coverage", ()
       relationIds.b41,
       relationIds.b67,
       relationIds.treatment,
+      physicalScopeRelationId,
     ].sort());
     expect(decision.observation_event_record_ids).not.toContain(completionEventId);
     expect(decision.observation_relation_record_ids).not.toContain(relationIds.completion);

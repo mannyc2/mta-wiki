@@ -1,7 +1,20 @@
 import { relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
+import {
+  loadRelationshipContract,
+  relationshipContractValidationMode,
+} from "@mta-wiki/db/relationship-contract";
 import { writeForecastRealizationArtifacts } from "@mta-wiki/pipeline/quality/forecast-realization-artifacts";
 import { writeOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
+import {
+  loadRelationshipCompletenessArtifacts,
+  syncRelationshipCompletenessToCanonicalDb,
+  writeRelationshipCompletenessArtifacts,
+} from "@mta-wiki/pipeline/quality/relationship-completeness";
+import {
+  relationshipIntegrityArtifactSummary,
+  writeRelationshipIntegrityArtifacts,
+} from "@mta-wiki/pipeline/quality/relationship-integrity-artifacts";
 import { applyOperationalRecoveryProposal } from "@mta-wiki/pipeline/records/operational-recovery-apply";
 import { validateOperationalRecoveryProposalTree } from "@mta-wiki/pipeline/records/operational-recovery-proposals";
 import { draftQbnrRecoveryProposalFromFile } from "@mta-wiki/pipeline/records/qbnr-recovery-draft";
@@ -109,6 +122,68 @@ const qbnrRecoveryDraft: CommandHandler = (args) => {
   console.log(`Proposed artifact: ${relative(repoRoot, result.output_path)}`);
 };
 
+const relationshipIntegrity: CommandHandler = () => {
+  const contractMode = relationshipContractValidationMode(loadRelationshipContract());
+  const requestedMode = optionValue(process.argv, "--mode");
+  if (requestedMode !== undefined && requestedMode !== contractMode) {
+    throw new Error(
+      `relationship-integrity mode is locked by the checked-in contract (${contractMode}); ` +
+      `refusing requested downgrade/override ${requestedMode}`,
+    );
+  }
+  const result = writeRelationshipIntegrityArtifacts({
+    mode: contractMode,
+    outputDir: optionValue(process.argv, "--output") ?? optionValue(process.argv, "-o"),
+  });
+  console.log(relationshipIntegrityArtifactSummary(result));
+  if (result.audit.findings.some((finding) => finding.severity === "error")) process.exitCode = 1;
+};
+
+const relationshipCompleteness: CommandHandler = () => {
+  const relationshipMode = relationshipContractValidationMode(loadRelationshipContract());
+  const mode = relationshipMode === "warn" ? "warning" : "enforce";
+  const rawRequestedMode = optionValue(process.argv, "--mode");
+  const requestedMode = rawRequestedMode === "warn" ? "warning" : rawRequestedMode;
+  if (requestedMode !== undefined && requestedMode !== mode) {
+    throw new Error(
+      `relationship-completeness mode is locked by the checked-in contract (${mode}); ` +
+      `refusing requested downgrade/override ${rawRequestedMode}`,
+    );
+  }
+  const options = {
+    releaseDir: optionValue(process.argv, "--release"),
+    coverageDir: optionValue(process.argv, "--coverage"),
+    outputDir: optionValue(process.argv, "--output") ?? optionValue(process.argv, "-o"),
+    expectedReleaseManifestSha256: optionValue(process.argv, "--manifest-sha256"),
+    reviewedCurrentCorpusMigration: process.argv.includes("--reviewed-current-corpus-migration"),
+  };
+  const result = writeRelationshipCompletenessArtifacts(options);
+  const summary = result.summary;
+  console.log(`Relationship completeness artifacts: ${relative(repoRoot, result.outputDir)}`);
+  console.log(`Release: ${summary.release_id}; input fingerprint: ${summary.input_fingerprint}`);
+  console.log(
+      `Eligible occurrences: ${summary.occurrences.eligible_occurrence_count}; ` +
+      `core-role warnings: ${summary.occurrences.core_role_warning_occurrence_count}; ` +
+      `all contract-role warnings: ${summary.occurrences.contract_warning_occurrence_count}; ` +
+      `schema migration warnings: ${summary.occurrences.schema_migration_warning_occurrence_count}`,
+  );
+  console.log(
+    `Operational event denominator: ${summary.operational_events.denominator_count}; ` +
+      `eligible-occurrence treatment physicality denominator: ` +
+      `${summary.occurrence_treatment_physicality.denominator_count}; ` +
+      `hard mode ready: ${summary.enforcement_migration.hard_mode_ready}`,
+  );
+  if (!process.argv.includes("--no-sync-db")) {
+    const dbResult = syncRelationshipCompletenessToCanonicalDb(
+      loadRelationshipCompletenessArtifacts(options),
+    );
+    console.log(
+      `SQLite completeness mirror: ${relative(repoRoot, dbResult.path)}; ` +
+      `mode=${mode}; records=${dbResult.recordCount}; relations=${dbResult.relationCount}.`,
+    );
+  }
+};
+
 export const qualityCommands = {
   "operational-coverage": operationalCoverage,
   "coverage-matrix": operationalCoverage,
@@ -116,4 +191,6 @@ export const qualityCommands = {
   "operational-recovery-proposals": recoveryProposals,
   "operational-recovery-apply": recoveryApply,
   "qbnr-recovery-draft": qbnrRecoveryDraft,
+  "relationship-integrity": relationshipIntegrity,
+  "relationship-completeness": relationshipCompleteness,
 } satisfies Record<string, CommandHandler>;
