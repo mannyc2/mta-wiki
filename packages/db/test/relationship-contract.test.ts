@@ -962,6 +962,7 @@ describe("relationship-contract-v1 SQLite mirror", () => {
     const warningContract: RelationshipContract = {
       ...loadRelationshipContract().contract,
       contract_status: "warning_first",
+      enforcement_state: undefined,
       endpoint_matrix: pointer,
       enforcement_proof: undefined,
     };

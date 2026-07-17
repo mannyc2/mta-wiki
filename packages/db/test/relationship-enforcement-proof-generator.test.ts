@@ -252,6 +252,7 @@ function fixtureContract(
   return {
     ...loadRelationshipContract().contract,
     contract_status: "warning_first",
+    enforcement_state: undefined,
     reviewed_at: "2026-07-16T07:00:00.000Z",
     reviewed_by: "fixture-enforcement-reviewer",
     endpoint_matrix: {

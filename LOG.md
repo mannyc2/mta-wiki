@@ -4,6 +4,33 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-17
+
+### Relationship Integrity Enforcement and rc22
+
+- Promoted the versioned relationship contract to enforced mode after two clean deterministic
+  warning-mode captures and a seven-gate zero-violation migration proof. All `21,422` canonical
+  relations are covered by `704` typed rules and `1,008` reviewed endpoint-family shapes. SQL
+  foreign-key, endpoint, type, evidence, completeness-selector, and waiver violations are zero;
+  the graph retains only `45,983` orphan informational rows and three explicitly reviewed shape
+  advisories.
+- Completed the full completeness migration without granting eligibility through waivers: `134`
+  projectable occurrences satisfy every mandatory role, `1,231` other operational events have
+  reviewed versioned non-projectable dispositions, all `395` routes are GTFS-accounted or explicitly
+  disposed, and all `669` bus-lane treatments have exact evidence-bound physical scope or a reviewed
+  non-projectable disposition. Every completeness warning bucket is zero.
+- Exhausted the `321` registry-only bus-lane acquisition queue with four-channel search receipts and
+  exact exclusion artifacts for every row. Fifty-four authoritative route-treatment bindings are
+  materialized; one physical segment is proved, while no exact date/phase or operational
+  occurrence is manufactured. All `321` rows remain unresolved for Tracker projection pending
+  complete occurrence-grade authoritative evidence.
+- Cut immutable, unpromoted manifest-v4 release `v1-rc22` from generator commit `a874d93a`: manifest
+  SHA-256 `249ef6be1d927e44d405c11bcff643d18b2133e5407be37dc7612f935a1b53e4`.
+  Its `225`-artifact enforced relationship bundle is content-addressed; all `20` rc21 data files,
+  including relations and operational occurrences, remain byte-identical. Tracker replay was not
+  run because its read-only importer supports manifest v3 / occurrence contract v1, while rc22 is
+  manifest v4 / occurrence contract v2. `LATEST` intentionally remains `v1-rc5`.
+
 ## 2026-07-14
 
 ### Tracker rc19 Reject Reconciliation

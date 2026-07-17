@@ -1,0 +1,2272 @@
+{
+  "schema_version": 1,
+  "remediation_id": "mta-nyct-target-identity-remediation-v1",
+  "review_id": "mta-nyct-target-reviewed-decisions-v1",
+  "status": "applied",
+  "reviewed_at": "2026-07-16T01:00:00.000Z",
+  "reviewed_by": "Codex canonical relationship-integrity campaign",
+  "pinned_inputs": {
+    "review_path": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json",
+    "review_file_sha256": "b83f8348937351d0870657d394dec4d41714428c4aa40dcce9de424c39448b6a",
+    "review_logical_sha256": "8b8e30012d5654a5654b440d158fca11e6ae5892efcfe76af3701f7123854ec2",
+    "base_retirement_count": 272,
+    "base_retirements_logical_sha256": "a1602b0ad1d1c5ed92070a37b9d3d631fcc04dc615f5c359cae5ad483f097c99"
+  },
+  "outputs": {
+    "journal_path": "data/submissions/2026-07-16T01-00-00-000Z_mta-nyct-target-identity-remediation.jsonl",
+    "retirement_path": "data/submission-overrides/retired.json"
+  },
+  "summary": {
+    "reviewed_decision_count": 61,
+    "retired_original_submission_count": 61,
+    "replacement_submission_count": 59,
+    "target_counts": {
+      "entity_mta-entity-update-2025": 57,
+      "entity_mta-nyct": 2,
+      "retired_without_replacement": 2
+    },
+    "action_counts": {
+      "retain_nyct_with_exact_evidence": 2,
+      "retarget_umbrella_mta": 57,
+      "retire_evidence_unsupported_observation": 2
+    },
+    "replacement_submission_ids_sha256": "f13c3745440f855788d7ce25b05b4b6840b2d8762c8fd19323f176794acc2c04",
+    "retired_original_submission_ids_sha256": "82e9679986d72444ae98f056743b3342a71dcfe7e74fcebbbe164632f1a2bb53",
+    "replacement_evidence_id_count": 164,
+    "replacement_evidence_ids_sha256": "d2b390a21c38a8d0f93c06adbb13a5dd77a409f4308d3b652c0fe253c2a4dc65",
+    "downstream_relation_submission_count": 44,
+    "downstream_relation_submission_ids_sha256": "f7b8ff2b097ba8df0e395d6c6dcd29af172be688b024b5bdf13496b4c0cb544f",
+    "unreviewed_count": 0
+  },
+  "decisions": [
+    {
+      "original_submission_id": "sub_0242ca79d0a6f47d",
+      "source_id": "meeting_doc_205546",
+      "local_observation_id": "entity_meeting_doc_205546_mta",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_aa8a07240cb9b1ab",
+      "replacement_evidence_ids": [
+        "meeting_doc_205546#p005_c0004",
+        "meeting_doc_205546#p015_c0008",
+        "meeting_doc_205546#p031_c0002"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_0242ca79d0a6f47d"
+    },
+    {
+      "original_submission_id": "sub_02847ecf0dfc521f",
+      "source_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb8_mar2025",
+      "local_observation_id": "entity_mta_eastern_pkwy_cb8_mar2025",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_07a374e3c9c64e8b",
+      "replacement_evidence_ids": [
+        "eastern_pkwy_schenectady_ave_ralph_ave_cb8_mar2025#p002_c0004",
+        "eastern_pkwy_schenectady_ave_ralph_ave_cb8_mar2025#p003_c0003",
+        "eastern_pkwy_schenectady_ave_ralph_ave_cb8_mar2025#p005_c0006"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_02847ecf0dfc521f"
+    },
+    {
+      "original_submission_id": "sub_0c2727e40e4e0fdc",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+      "local_observation_id": "entity_mta_cb9_jun2025",
+      "review_decision": "retain_nyct_with_exact_evidence",
+      "identity_resolution": "retain_nyct_with_exact_evidence",
+      "reviewed_target_record_id": "entity_mta-nyct",
+      "replacement_submission_id": "sub_afa58f64eb9f2872",
+      "replacement_evidence_ids": [
+        "116_st_morningside_ave_pleasant_ave_cb9_jun2025#p006_c0005"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_0c2727e40e4e0fdc"
+    },
+    {
+      "original_submission_id": "sub_1603d762bd29b5d9",
+      "source_id": "meeting_doc_164756",
+      "local_observation_id": "entity_meeting_doc_164756_mta",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_aee94435d5b5604a",
+      "replacement_evidence_ids": [
+        "meeting_doc_164756#p003_c0007",
+        "meeting_doc_164756#p005_c0002",
+        "meeting_doc_164756#p032_c0002"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_1603d762bd29b5d9"
+    },
+    {
+      "original_submission_id": "sub_197290ab432de0f3",
+      "source_id": "brt_bx6_cb9_may2022",
+      "local_observation_id": "entity_brt_bx6_cb9_mta",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_84d667e07317303b",
+      "replacement_evidence_ids": [
+        "brt_bx6_cb9_may2022#p001_c0001",
+        "brt_bx6_cb9_may2022#p001_c0005",
+        "brt_bx6_cb9_may2022#p012_c0011",
+        "brt_bx6_cb9_may2022#p013_c0011",
+        "brt_bx6_cb9_may2022#p014_c0011"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_472e4c99ad8a5087",
+          "local_observation_id": "relation_brt_bx6_cb9_published_by_mta",
+          "relation_kind": "published_by",
+          "relation_family": "publication_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "source_brt_bx6_cb9_may2022",
+          "object_local_observation_id": "entity_brt_bx6_cb9_mta",
+          "evidence_refs": [
+            {
+              "evidence_id": "brt_bx6_cb9_may2022#p001_c0005",
+              "source_id": "brt_bx6_cb9_may2022",
+              "source_path": "raw/sources/brt_bx6_cb9_may2022/blocks.jsonl",
+              "block_id": "p001_c0005",
+              "page_number": 1,
+              "text_sha256": "sha256:391ccae1265bd1fe7c5aa0edde7379059752507e601d9e622cf00f4324459461",
+              "evidence_excerpt": "The MTA logo, which consists of the letters 'MTA' in a bold, sans-serif font inside a black circle."
+            }
+          ],
+          "disposition": "evidence_does_not_prove_publication_role",
+          "action": "retire_relation_submission",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "An MTA logo on the cover proves branding, not the exact legal publisher of the Bx6 update."
+        },
+        {
+          "relation_submission_id": "sub_9eabbf2f92024473",
+          "local_observation_id": "relation_brt_bx6_cb9_implemented_by_mta",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_brt_bx6_cb9_capital_improvements",
+          "object_local_observation_id": "entity_brt_bx6_cb9_mta",
+          "evidence_refs": [
+            {
+              "evidence_id": "brt_bx6_cb9_may2022#p001_c0001",
+              "source_id": "brt_bx6_cb9_may2022",
+              "source_path": "raw/sources/brt_bx6_cb9_may2022/blocks.jsonl",
+              "block_id": "p001_c0001",
+              "page_number": 1,
+              "text_sha256": "sha256:036c7d8d9b536dd4635d0fe171eee26bc9f78b9c12201a1d62dcf105b964b779",
+              "evidence_excerpt": "Bx6 Select Bus Service Project Update"
+            },
+            {
+              "evidence_id": "brt_bx6_cb9_may2022#p001_c0005",
+              "source_id": "brt_bx6_cb9_may2022",
+              "source_path": "raw/sources/brt_bx6_cb9_may2022/blocks.jsonl",
+              "block_id": "p001_c0005",
+              "page_number": 1,
+              "text_sha256": "sha256:391ccae1265bd1fe7c5aa0edde7379059752507e601d9e622cf00f4324459461",
+              "evidence_excerpt": "The MTA logo, which consists of the letters 'MTA' in a bold, sans-serif font inside a black circle."
+            }
+          ],
+          "disposition": "evidence_does_not_prove_implemented_by",
+          "action": "retire_relation_submission",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The cited title and logo do not prove implementation responsibility or realized status."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_197290ab432de0f3"
+    },
+    {
+      "original_submission_id": "sub_19cf97947d32f35f",
+      "source_id": "meeting_doc_40161",
+      "local_observation_id": "entity_mta_meeting_doc_40161",
+      "review_decision": "retire_evidence_unsupported_observation",
+      "identity_resolution": "retire_evidence_unsupported_observation",
+      "reviewed_target_record_id": null,
+      "replacement_evidence_ids": [],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_19cf97947d32f35f"
+    },
+    {
+      "original_submission_id": "sub_216b6a838277e29f",
+      "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026",
+      "local_observation_id": "entity_mta_fordham",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_5168b806af9256d0",
+      "replacement_evidence_ids": [
+        "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026#p002_c0002",
+        "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026#p002_c0005",
+        "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026#p005_c0005"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_216b6a838277e29f"
+    },
+    {
+      "original_submission_id": "sub_24405db04d716bd0",
+      "source_id": "queens_proposed_final_plan_addendum_2024",
+      "local_observation_id": "entity_mta_publisher_addendum_2024",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_753e78a4185a544e",
+      "replacement_evidence_ids": [
+        "queens_proposed_final_plan_addendum_2024#p001_c0001",
+        "queens_proposed_final_plan_addendum_2024#p001_c0002",
+        "queens_proposed_final_plan_addendum_2024#p002_c0002",
+        "queens_proposed_final_plan_addendum_2024#p003_c0012"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_24405db04d716bd0"
+    },
+    {
+      "original_submission_id": "sub_275160bbef4aadee",
+      "source_id": "brt_bx6_cb2_edc_may2022",
+      "local_observation_id": "entity_mta_brt_bx6_cb2_edc_may2022",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_3bf566fb586b4d89",
+      "replacement_evidence_ids": [
+        "brt_bx6_cb2_edc_may2022#p001_c0005",
+        "brt_bx6_cb2_edc_may2022#p013_c0011",
+        "brt_bx6_cb2_edc_may2022#p014_c0006"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_275160bbef4aadee"
+    },
+    {
+      "original_submission_id": "sub_2c7d5f637c436025",
+      "source_id": "m60_sbs_125th_street",
+      "local_observation_id": "entity_m60_sbs_125th_mta",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_da6ec27a9f392fe8",
+      "replacement_evidence_ids": [
+        "m60_sbs_125th_street#p001_c0003",
+        "m60_sbs_125th_street#p001_c0004",
+        "m60_sbs_125th_street#p021_c0006"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_2c7d5f637c436025"
+    },
+    {
+      "original_submission_id": "sub_2da0f940a801db3d",
+      "source_id": "jamaica_busway_monitoring_update_2022",
+      "local_observation_id": "entity_mta_source_2022",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_f38669e0d6ebea4f",
+      "replacement_evidence_ids": [
+        "jamaica_busway_monitoring_update_2022#p003_c0006",
+        "jamaica_busway_monitoring_update_2022#p004_c0004",
+        "jamaica_busway_monitoring_update_2022#p009_c0007"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_2da0f940a801db3d"
+    },
+    {
+      "original_submission_id": "sub_331e52d4ced22596",
+      "source_id": "2012_01_24_sbs_utica_merchants",
+      "local_observation_id": "entity_mta_2012_01_24",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_da21616c4e3da541",
+      "replacement_evidence_ids": [
+        "2012_01_24_sbs_utica_merchants#p004_c0001",
+        "2012_01_24_sbs_utica_merchants#p010_c0003"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_6b3342274762b25f",
+          "local_observation_id": "relation_b46_local_operated_by_mta",
+          "relation_kind": "operated_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "route_b46_local_2012",
+          "object_local_observation_id": "entity_mta_2012_01_24",
+          "evidence_refs": [
+            {
+              "evidence_id": "2012_01_24_sbs_utica_merchants#p004_c0003",
+              "source_id": "2012_01_24_sbs_utica_merchants",
+              "source_path": "raw/sources/2012_01_24_sbs_utica_merchants/blocks.jsonl",
+              "block_id": "p004_c0003",
+              "page_number": 4,
+              "text_sha256": "sha256:069b3701edd6da9fc4a51371241764b5e931da1b47ead2463604a796d611aeed",
+              "evidence_excerpt": "The map illustrates the B46 bus route, which runs from Williamsburg Bridge Plaza in the north to Kings Plaza in the south. The route is primarily located on the East Side of Manhattan, following the path of the East 110th Street busway. Key stops and landmarks include: Williamsburg: Marcy Av, Rodney St, Union Av, Broad"
+            },
+            {
+              "evidence_id": "2012_01_24_sbs_utica_merchants#p010_c0003",
+              "source_id": "2012_01_24_sbs_utica_merchants",
+              "source_path": "raw/sources/2012_01_24_sbs_utica_merchants/blocks.jsonl",
+              "block_id": "p010_c0003",
+              "page_number": 10,
+              "text_sha256": "sha256:4a57f5e46e751af4e568a298e90025c3687d5a1f4e04c41794b0baa18051df3b",
+              "evidence_excerpt": "The diagram shows a blue and white bus with the MTA logo on its side. A yellow traffic light is positioned above the bus. A yellow cone-shaped beam of light originates from the bus and points towards the traffic light. Inside the cone, there is a red arrow pointing downwards, indicating the bus's priority. In the top l"
+            }
+          ],
+          "disposition": "evidence_does_not_prove_route_operator",
+          "action": "retire_relation_submission_and_rebuild_only_with_exact_operator_evidence",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "A route map and MTA-branded bus illustration identify the B46 and the MTA brand, but do not name its legal operating agency."
+        },
+        {
+          "relation_submission_id": "sub_ab8dd398bd65a24d",
+          "local_observation_id": "relation_b46_limited_operated_by_mta",
+          "relation_kind": "operated_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "route_b46_limited_2012",
+          "object_local_observation_id": "entity_mta_2012_01_24",
+          "evidence_refs": [
+            {
+              "evidence_id": "2012_01_24_sbs_utica_merchants#p004_c0003",
+              "source_id": "2012_01_24_sbs_utica_merchants",
+              "source_path": "raw/sources/2012_01_24_sbs_utica_merchants/blocks.jsonl",
+              "block_id": "p004_c0003",
+              "page_number": 4,
+              "text_sha256": "sha256:069b3701edd6da9fc4a51371241764b5e931da1b47ead2463604a796d611aeed",
+              "evidence_excerpt": "The map illustrates the B46 bus route, which runs from Williamsburg Bridge Plaza in the north to Kings Plaza in the south. The route is primarily located on the East Side of Manhattan, following the path of the East 110th Street busway. Key stops and landmarks include: Williamsburg: Marcy Av, Rodney St, Union Av, Broad"
+            }
+          ],
+          "disposition": "evidence_does_not_prove_route_operator",
+          "action": "retire_relation_submission_and_rebuild_only_with_exact_operator_evidence",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The route map describes B46 Limited service but never identifies the legal operating agency."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_331e52d4ced22596"
+    },
+    {
+      "original_submission_id": "sub_392a96ce7a13e3c9",
+      "source_id": "buslane_enforcement_brochure",
+      "local_observation_id": "entity_buslane_brochure_mta",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_21567dc9c7cd2dca",
+      "replacement_evidence_ids": [
+        "buslane_enforcement_brochure#p002_c0014"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_0a682863dbb8a3f7",
+          "local_observation_id": "relation_mta_operates_bus_lane_cameras",
+          "relation_kind": "operates",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_buslane_brochure_mta",
+          "object_local_observation_id": "claim_bus_lane_enforcement_methods",
+          "evidence_refs": [
+            {
+              "evidence_id": "buslane_enforcement_brochure#p002_c0014",
+              "source_id": "buslane_enforcement_brochure",
+              "source_path": "raw/sources/buslane_enforcement_brochure/blocks.jsonl",
+              "block_id": "p002_c0014",
+              "page_number": 2,
+              "text_sha256": "sha256:1e9e47bca67de2475a059ea5f918e4c7cdde69024a0da62dae71ba818afe02c7",
+              "evidence_excerpt": "The City or MTA may operate bus lane cameras on any bus lanes to catch violators. NYC DOT posts signs along routes that have bus lane cameras as a warning for drivers. There is a 60-day grace period after bus lane cameras are first installed. After the grace period ends, motorists who block bus lanes will be subject to"
+            }
+          ],
+          "disposition": "relation_uses_claim_as_operated_system",
+          "action": "retire_and_rebuild_with_distinct_camera_program_or_claim_model",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The text supports that the City or MTA may operate cameras, but the current object is a narrative enforcement-method claim rather than a camera system or program."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_392a96ce7a13e3c9"
+    },
+    {
+      "original_submission_id": "sub_3c4044add1828d1c",
+      "source_id": "better_buses",
+      "local_observation_id": "entity_mta",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_8ce11b063fb85a50",
+      "replacement_evidence_ids": [
+        "better_buses#p001_b0001"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_3c4044add1828d1c"
+    },
+    {
+      "original_submission_id": "sub_416bfd9959e38421",
+      "source_id": "flatbush_ave_cb6_jun2025",
+      "local_observation_id": "entity_flatbush_ave_cb6_mta",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_2249e22ec41cdda1",
+      "replacement_evidence_ids": [
+        "flatbush_ave_cb6_jun2025#p001_c0005",
+        "flatbush_ave_cb6_jun2025#p002_c0004",
+        "flatbush_ave_cb6_jun2025#p005_c0005"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_416bfd9959e38421"
+    },
+    {
+      "original_submission_id": "sub_463e14c50f4ec9bc",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb9_feb2025",
+      "local_observation_id": "entity_mta_cb9_feb2025",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_2806bd17c980a764",
+      "replacement_evidence_ids": [
+        "116_st_morningside_ave_pleasant_ave_cb9_feb2025#p002_c0004",
+        "116_st_morningside_ave_pleasant_ave_cb9_feb2025#p004_c0006",
+        "116_st_morningside_ave_pleasant_ave_cb9_feb2025#p014_c0011"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_5ae17d62145d7e3d",
+          "local_observation_id": "relation_mta_has_partner_project",
+          "relation_kind": "has_partner",
+          "relation_family": "partnership_engagement",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_116th_st_bus_priority_review_cb9_feb2025",
+          "object_local_observation_id": "entity_mta_cb9_feb2025",
+          "evidence_refs": [
+            {
+              "evidence_id": "116_st_morningside_ave_pleasant_ave_cb9_feb2025#p002_c0004",
+              "source_id": "116_st_morningside_ave_pleasant_ave_cb9_feb2025",
+              "source_path": "raw/sources/116_st_morningside_ave_pleasant_ave_cb9_feb2025/blocks.jsonl",
+              "block_id": "p002_c0004",
+              "page_number": 2,
+              "text_sha256": "sha256:6c04812f91d5e332112f51a74df6249a07443cac84d9408a4ee1e7c54c103658",
+              "evidence_excerpt": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+            }
+          ],
+          "disposition": "evidence_does_not_prove_project_partnership",
+          "action": "retire_relation_submission",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "Co-branding on a presentation cover does not by itself prove the stored has_partner relationship."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_463e14c50f4ec9bc"
+    },
+    {
+      "original_submission_id": "sub_5349270c43b264c0",
+      "source_id": "open_data_plan_2024_update",
+      "local_observation_id": "entity_mta_2024_open_data",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_63abfdafb5da4ff3",
+      "replacement_evidence_ids": [
+        "open_data_plan_2024_update#p001_c0002",
+        "open_data_plan_2024_update#p002_c0002",
+        "open_data_plan_2024_update#p002_c0004",
+        "open_data_plan_2024_update#p004_c0006"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_0c2729c636d1d0a3",
+          "local_observation_id": "rel_mta_publishes_open_data_plan",
+          "relation_kind": "publishes",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "source_open_data_plan_2024_update",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2024_update#p001_c0002",
+              "source_id": "open_data_plan_2024_update",
+              "source_path": "raw/sources/open_data_plan_2024_update/blocks.jsonl",
+              "block_id": "p001_c0002",
+              "page_number": 1,
+              "text_sha256": "sha256:53fba194a3413ad3363f1345f36512f7340b3031bc4e0183439818ee25ad03c6",
+              "evidence_excerpt": "THE METROPOLITAN TRANSPORTATION AUTHORITY OPEN DATA PLAN 2024 ANNUAL UPDATE"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        },
+        {
+          "relation_submission_id": "sub_38230dedf1bc5e3d",
+          "local_observation_id": "rel_mta_releases_hourly_ridership_datasets",
+          "relation_kind": "releases",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_hourly_subway_bus_ridership_release",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2024_update#p003_c0004",
+              "source_id": "open_data_plan_2024_update",
+              "source_path": "raw/sources/open_data_plan_2024_update/blocks.jsonl",
+              "block_id": "p003_c0004",
+              "page_number": 3,
+              "text_sha256": "sha256:53b6decef22cefd177100a69ec0496ebb0e2b24e4431d42a7f059d5463cd625a",
+              "evidence_excerpt": "Two of our biggest (literally and figuratively!) new dataset releases this year were about subway hourly ridership and bus hourly ridership. For the subway, hourly data is broken down by station-complex, payment method, and fare class. For the bus, hourly data is broken down by route, payment method, and fare class. Th"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        },
+        {
+          "relation_submission_id": "sub_43221cff326364b9",
+          "local_observation_id": "rel_mta_plans_operating_budget_release",
+          "relation_kind": "plans",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_operating_budget_data_planned_q1_2024",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2024_update#p006_c0005",
+              "source_id": "open_data_plan_2024_update",
+              "source_path": "raw/sources/open_data_plan_2024_update/blocks.jsonl",
+              "block_id": "p006_c0005",
+              "page_number": 6,
+              "text_sha256": "sha256:e123ca426aa1395a0ebb9aacfe5ae9ca41a97e4adb7c99da8cc1dafaa68dc279",
+              "evidence_excerpt": "At the end of Q1 2024, the MTA plans to publish the agency's operating budget data in machine-readable formats. Datasets will include the MTA's statement of operations, subsidy information, number of employees by agency and position function, and other critical elements of the operating budget. Currently, this data is "
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        },
+        {
+          "relation_submission_id": "sub_6cc411af8d0f419d",
+          "local_observation_id": "rel_mta_releases_20yr_needs_datasets",
+          "relation_kind": "releases",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_20_year_needs_assessment_datasets_release",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2024_update#p003_c0006",
+              "source_id": "open_data_plan_2024_update",
+              "source_path": "raw/sources/open_data_plan_2024_update/blocks.jsonl",
+              "block_id": "p003_c0006",
+              "page_number": 3,
+              "text_sha256": "sha256:f2b46ff35ba208c870fe941f1d9190411b4cd3d8c5f090344ee4d569e11ee48d",
+              "evidence_excerpt": "The MTA public five open datasets in conjunction with the release of the MTA's 20-Year Needs Assessment, a comprehensive blueprint that outlines the agency's long-term capital needs. This is the first time the MTA has publicly provided data on the condition of most of its assets and fleets. Additionally, part of the 20"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        },
+        {
+          "relation_submission_id": "sub_6f5079a6becb8635",
+          "local_observation_id": "rel_mta_launches_data_analytics_blog",
+          "relation_kind": "launches",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "entity_mta_data_analytics_blog",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2024_update#p004_c0006",
+              "source_id": "open_data_plan_2024_update",
+              "source_path": "raw/sources/open_data_plan_2024_update/blocks.jsonl",
+              "block_id": "p004_c0006",
+              "page_number": 4,
+              "text_sha256": "sha256:2f67a6f63538ba0cd8570c21afb855c7d6e1e77045fcfe63747cc59d5b7e1a23",
+              "evidence_excerpt": "At the end of the year, we launched the MTA Data & Analytics blog, offering a platform for sharing insights, updates and best practices related to MTA data. The blog features contributions from the broader Data & Analytics team and will cover a wide range of topics that provide further insight into data at the MTA. Thr"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        },
+        {
+          "relation_submission_id": "sub_72488dae7e6c1cea",
+          "local_observation_id": "rel_open_data_act_has_event_signing",
+          "relation_kind": "has_timeline_event",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_mta_open_data_act_signed",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2024_update#p002_c0002",
+              "source_id": "open_data_plan_2024_update",
+              "source_path": "raw/sources/open_data_plan_2024_update/blocks.jsonl",
+              "block_id": "p002_c0002",
+              "page_number": 2,
+              "text_sha256": "sha256:032c244210beda896ec352aa14dabef211b2e64e4974fe534269c54ced6a0f78",
+              "evidence_excerpt": "In October 2021, New York State Governor Hochul signed the MTA Open Data Act into law, prompting the MTA to renew our commitment to proactively sharing high quality, machine-readable data with the public through data.ny.gov."
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        },
+        {
+          "relation_submission_id": "sub_787c26f71540584d",
+          "local_observation_id": "rel_mta_publishes_user_personas",
+          "relation_kind": "releases",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_open_data_user_personas_published",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2024_update#p004_c0003",
+              "source_id": "open_data_plan_2024_update",
+              "source_path": "raw/sources/open_data_plan_2024_update/blocks.jsonl",
+              "block_id": "p004_c0003",
+              "page_number": 4,
+              "text_sha256": "sha256:1a7577b5f6ec48475e15e40e48f3bf06e3e1de76d9986ee772f18b7b6c9ca436",
+              "evidence_excerpt": "In early 2023, we published our Open Data User Personas, a human-centered design tool that facilitates the consideration of real data users with a variety of goals, needs, and technical abilities. We designed our user personas through multiple stakeholder workshops with our existing open data community and refer to the"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        },
+        {
+          "relation_submission_id": "sub_dfd525e9ab3f71e8",
+          "local_observation_id": "rel_mta_releases_sir_datasets",
+          "relation_kind": "releases",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_staten_island_railway_datasets_release",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2024_update#p003_c0008",
+              "source_id": "open_data_plan_2024_update",
+              "source_path": "raw/sources/open_data_plan_2024_update/blocks.jsonl",
+              "block_id": "p003_c0008",
+              "page_number": 3,
+              "text_sha256": "sha256:0bba46d0a954b2f0309565b7d75a9904949cec0691a7b43de58f29bfe3e73147",
+              "evidence_excerpt": "We published three datasets in the fall focused on Staten Island Railway for On-Time Performance, Scheduled Trips, and Mean Distance Between Failures. These are the first standalone datasets for the sole rail line on Staten Island and go back to 2006, farther than nearly all MTA datasets on Open NY. The Scheduled Trips"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        },
+        {
+          "relation_submission_id": "sub_e190aa9342d9ea63",
+          "local_observation_id": "rel_mta_operates_metrics_site",
+          "relation_kind": "operates",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "entity_metrics_mta_info",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2024_update#p004_c0007",
+              "source_id": "open_data_plan_2024_update",
+              "source_path": "raw/sources/open_data_plan_2024_update/blocks.jsonl",
+              "block_id": "p004_c0007",
+              "page_number": 4,
+              "text_sha256": "sha256:9e65672e5887ff8dd26d6ae405c7364c5b38e6ff373f2b7789e5fe9d63f0f004",
+              "evidence_excerpt": "And finally, throughout the year, we continued to build out our open data visualization site, metrics.mta.info, enhancing its functionality, performance, and user experience based on feedback from our stakeholders. We added new interactive features, expanded the range of available visualizations, and further implemente"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        },
+        {
+          "relation_submission_id": "sub_e72a4a716f97d2f4",
+          "local_observation_id": "rel_mta_plans_congestion_pricing_data",
+          "relation_kind": "plans",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_congestion_pricing_data_planned",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2024_update#p006_c0007",
+              "source_id": "open_data_plan_2024_update",
+              "source_path": "raw/sources/open_data_plan_2024_update/blocks.jsonl",
+              "block_id": "p006_c0007",
+              "page_number": 6,
+              "text_sha256": "sha256:224c07a353d00d63494dfcabf278cf6b8b87cc20559f2b5730f8a332eb55963e",
+              "evidence_excerpt": "Beginning with the launch of the Congestion Pricing program, which will charge drivers a toll for entering Manhattan below 60 Street, the MTA will begin publishing data related to program implementation. Datasets will be released in machine-readable format on a rolling basis and feature information including toll cross"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_5349270c43b264c0"
+    },
+    {
+      "original_submission_id": "sub_53ac8a523791c9a9",
+      "source_id": "busway_34thstreet",
+      "local_observation_id": "entity_mta_on_34th_busway",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_3fa8bdc6aa3b013c",
+      "replacement_evidence_ids": [
+        "busway_34thstreet#p001_b0001"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_53ac8a523791c9a9"
+    },
+    {
+      "original_submission_id": "sub_53b563dd01136d2d",
+      "source_id": "tsp_report_2017",
+      "local_observation_id": "entity_mta_tsp_2017",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_4a6d606d0bdcded7",
+      "replacement_evidence_ids": [
+        "tsp_report_2017#p003_c0002",
+        "tsp_report_2017#p003_c0003",
+        "tsp_report_2017#p004_c0004"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_28e1c630cb2220a0",
+          "local_observation_id": "rel_nycdot_mta_partnership_tsp",
+          "relation_kind": "partner",
+          "relation_family": null,
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "entity_nyc_dot_tsp_2017",
+          "object_local_observation_id": "entity_mta_tsp_2017",
+          "evidence_refs": [
+            {
+              "evidence_id": "tsp_report_2017#p003_c0002",
+              "source_id": "tsp_report_2017",
+              "source_path": "raw/sources/tsp_report_2017/blocks.jsonl",
+              "block_id": "p003_c0002",
+              "page_number": 3,
+              "text_sha256": "sha256:e4b3c758f3ce1c576549217a8c422533406ce69ddb63d8053328ffa7fcec7b6d",
+              "evidence_excerpt": "The New York City Department of Transportation (NYC DOT) and the Metropolitan Transportation Authority (MTA) are working to improve bus service in New York City. Transit Signal Priority (TSP) is a method used to coordinate transit vehicles and traffic signals to reduce the time buses are stopped at traffic lights along"
+            },
+            {
+              "evidence_id": "tsp_report_2017#p003_c0006",
+              "source_id": "tsp_report_2017",
+              "source_path": "raw/sources/tsp_report_2017/blocks.jsonl",
+              "block_id": "p003_c0006",
+              "page_number": 3,
+              "text_sha256": "sha256:1dc97fbdea35d209a3b9c5f71511d2c3cdbea066dea50396d5071d58342bb5c1",
+              "evidence_excerpt": "Transit Signal Priority (TSP) is a technology that is capable of enhancing traditional transit services by facilitating bus movements through intersections controlled by traffic signals. On busy bus routes in New York City, buses spend about 21 percent of their time stopped at traffic lights, which is a major contribut"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        },
+        {
+          "relation_submission_id": "sub_5611c5802216d795",
+          "local_observation_id": "rel_mta_partner_tsp_program",
+          "relation_kind": "partner_agency",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_tsp_2017",
+          "object_local_observation_id": "project_tsp_program_2017",
+          "evidence_refs": [
+            {
+              "evidence_id": "tsp_report_2017#p003_c0002",
+              "source_id": "tsp_report_2017",
+              "source_path": "raw/sources/tsp_report_2017/blocks.jsonl",
+              "block_id": "p003_c0002",
+              "page_number": 3,
+              "text_sha256": "sha256:e4b3c758f3ce1c576549217a8c422533406ce69ddb63d8053328ffa7fcec7b6d",
+              "evidence_excerpt": "The New York City Department of Transportation (NYC DOT) and the Metropolitan Transportation Authority (MTA) are working to improve bus service in New York City. Transit Signal Priority (TSP) is a method used to coordinate transit vehicles and traffic signals to reduce the time buses are stopped at traffic lights along"
+            },
+            {
+              "evidence_id": "tsp_report_2017#p003_c0006",
+              "source_id": "tsp_report_2017",
+              "source_path": "raw/sources/tsp_report_2017/blocks.jsonl",
+              "block_id": "p003_c0006",
+              "page_number": 3,
+              "text_sha256": "sha256:1dc97fbdea35d209a3b9c5f71511d2c3cdbea066dea50396d5071d58342bb5c1",
+              "evidence_excerpt": "Transit Signal Priority (TSP) is a technology that is capable of enhancing traditional transit services by facilitating bus movements through intersections controlled by traffic signals. On busy bus routes in New York City, buses spend about 21 percent of their time stopped at traffic lights, which is a major contribut"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_53b563dd01136d2d"
+    },
+    {
+      "original_submission_id": "sub_59553cf61b83d7fd",
+      "source_id": "brt_flushing_jamaica_oct2016",
+      "local_observation_id": "entity_brt_flushing_jamaica_oct2016_mta",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_812f16246238604c",
+      "replacement_evidence_ids": [
+        "brt_flushing_jamaica_oct2016#p003_c0002",
+        "brt_flushing_jamaica_oct2016#p003_c0003"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_59553cf61b83d7fd"
+    },
+    {
+      "original_submission_id": "sub_5b9e0118408d4b24",
+      "source_id": "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025",
+      "local_observation_id": "entity_mta_better_buses_cb1_marcy_jun2025",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_8f6e61a734a762ea",
+      "replacement_evidence_ids": [
+        "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p001_c0006",
+        "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p003_c0010",
+        "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p003_c0011",
+        "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p005_c0006",
+        "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p005_c0007",
+        "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p013_c0003"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_5b9e0118408d4b24"
+    },
+    {
+      "original_submission_id": "sub_604688b0c658ceb8",
+      "source_id": "brt_south_brooklyn_b82_dec2017",
+      "local_observation_id": "entity_metropolitan_transportation_authority_brt_south_brooklyn",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_572ac46be09c5f99",
+      "replacement_evidence_ids": [
+        "brt_south_brooklyn_b82_dec2017#p001_c0004",
+        "brt_south_brooklyn_b82_dec2017#p001_c0005",
+        "brt_south_brooklyn_b82_dec2017#p030_c0002"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_604688b0c658ceb8"
+    },
+    {
+      "original_submission_id": "sub_635920d1a9d0f975",
+      "source_id": "brt_woodhaven_newsletter2_spring2016",
+      "local_observation_id": "entity_mta_woodhaven_newsletter2",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_50a51b78c7fd03f0",
+      "replacement_evidence_ids": [
+        "brt_woodhaven_newsletter2_spring2016#p001_c0004"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_64497e813e8b4583",
+          "local_observation_id": "relation_mta_implements_project_spring2016",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_woodhaven_cross_bay_q52_q53_sbs_spring2016",
+          "object_local_observation_id": "entity_mta_woodhaven_newsletter2",
+          "evidence_refs": [
+            {
+              "evidence_id": "brt_woodhaven_newsletter2_spring2016#p001_c0004",
+              "source_id": "brt_woodhaven_newsletter2_spring2016",
+              "source_path": "raw/sources/brt_woodhaven_newsletter2_spring2016/blocks.jsonl",
+              "block_id": "p001_c0004",
+              "page_number": 1,
+              "text_sha256": "sha256:6e0a3559e60558cca95ac974797cad39cbba86011e831e618670e9a9cec6ff05",
+              "evidence_excerpt": "NYC DOT and the MTA have worked together to incorporate over two years of community feedback to present a redesigned plan for the Woodhaven / Cross Bay Boulevard Q52/Q53 Select Bus Service project that will bring high-quality transit service to Queens and a safer and more efficient street for all users. A new phased im"
+            }
+          ],
+          "disposition": "planned_collaboration_miscast_as_realized_implementation",
+          "action": "guarded_predicate_and_status_patch_or_retire",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The newsletter says DOT and MTA worked together on a redesigned and phased implementation plan; it does not establish completed implementation by MTA at publication time."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_635920d1a9d0f975"
+    },
+    {
+      "original_submission_id": "sub_639e28b4f49c9400",
+      "source_id": "brt_woodhaven_implementation_update_2017",
+      "local_observation_id": "entity_mta_woodhaven_2017",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_dc13d3ff1f2ee975",
+      "replacement_evidence_ids": [
+        "brt_woodhaven_implementation_update_2017#p001_c0010"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_639e28b4f49c9400"
+    },
+    {
+      "original_submission_id": "sub_65828cdedd1a7ecf",
+      "source_id": "broadway_157_st_220_st_cb12_mar2025",
+      "local_observation_id": "entity_mta_broadway_bus_safety_mar2025",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_15f6e49e8f3fe3ba",
+      "replacement_evidence_ids": [
+        "broadway_157_st_220_st_cb12_mar2025#p002_c0004",
+        "broadway_157_st_220_st_cb12_mar2025#p003_c0003",
+        "broadway_157_st_220_st_cb12_mar2025#p004_c0002",
+        "broadway_157_st_220_st_cb12_mar2025#p004_c0006",
+        "broadway_157_st_220_st_cb12_mar2025#p005_c0002"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_38e7ffb803184007",
+          "local_observation_id": "relation_project_partner_mta",
+          "relation_kind": "has_partner",
+          "relation_family": "partnership_engagement",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_broadway_bus_safety_157th_220th_mar2025",
+          "object_local_observation_id": "entity_mta_broadway_bus_safety_mar2025",
+          "evidence_refs": [
+            {
+              "evidence_id": "broadway_157_st_220_st_cb12_mar2025#p017_c0002",
+              "source_id": "broadway_157_st_220_st_cb12_mar2025",
+              "source_path": "raw/sources/broadway_157_st_220_st_cb12_mar2025/blocks.jsonl",
+              "block_id": "p017_c0002",
+              "page_number": 17,
+              "text_sha256": "sha256:3bed0a604597b62091278be6d42aa56aae5145ec84ab54c1cfb0359d6424743e",
+              "evidence_excerpt": "• NYC DOT seeks to improve bus service on this important uptown corridor by implementing: • Bus lanes - increase speeds and reliability. • Better bus stops - improve the rider experience. • Updated curb regulations and signal timing to better organize traffic flow. • Winter 2025: Present existing conditions to CB 12 • "
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_65828cdedd1a7ecf"
+    },
+    {
+      "original_submission_id": "sub_66b9bf0ed606fb7e",
+      "source_id": "flatbush_ave_cb9_sept2022",
+      "local_observation_id": "entity_mta_flatbush_cb9_sept2022",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_48acce1e29b24797",
+      "replacement_evidence_ids": [
+        "flatbush_ave_cb9_sept2022#p001_c0005",
+        "flatbush_ave_cb9_sept2022#p002_c0004",
+        "flatbush_ave_cb9_sept2022#p004_c0002"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_b4d2ec9337703cb4",
+          "local_observation_id": "relation_project_mta_partner",
+          "relation_kind": "has_partner",
+          "relation_family": "partnership_engagement",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_flatbush_ave_bus_priority_sept2022",
+          "object_local_observation_id": "entity_mta_flatbush_cb9_sept2022",
+          "evidence_refs": [
+            {
+              "evidence_id": "flatbush_ave_cb9_sept2022#p004_c0002",
+              "source_id": "flatbush_ave_cb9_sept2022",
+              "source_path": "raw/sources/flatbush_ave_cb9_sept2022/blocks.jsonl",
+              "block_id": "p004_c0002",
+              "page_number": 4,
+              "text_sha256": "sha256:fc73139edc0f41a18c3b82110ddd2cdeaa03a4303812c7d6f65e27217ce51b5d",
+              "evidence_excerpt": "On June 16 th , Mayor Eric Adams and MTA Chair and CEO Janno Lieber announced a new collaborative effort to improve transit service for New Yorkers, which will:"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_66b9bf0ed606fb7e"
+    },
+    {
+      "original_submission_id": "sub_672dfd10c84508c8",
+      "source_id": "open_data_plan_2025_update",
+      "local_observation_id": "entity_mta_2025_open_data_plan",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_dbb9d1270fa1168f",
+      "replacement_evidence_ids": [
+        "open_data_plan_2025_update#p001_c0002",
+        "open_data_plan_2025_update#p002_c0001",
+        "open_data_plan_2025_update#p002_c0002",
+        "open_data_plan_2025_update#p005_c0005"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_3697411fc409cc42",
+          "local_observation_id": "rel_mta_operates_open_data_program",
+          "relation_kind": "operates",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2025_open_data_plan",
+          "object_local_observation_id": "project_mta_open_data_program_2025",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2025_update#p002_c0001",
+              "source_id": "open_data_plan_2025_update",
+              "source_path": "raw/sources/open_data_plan_2025_update/blocks.jsonl",
+              "block_id": "p002_c0001",
+              "page_number": 2,
+              "text_sha256": "sha256:737c5730352f89d3d19cde8f88a3ddd977fc2082312c15667e4e8c8e301ca493",
+              "evidence_excerpt": "The Metropolitan Transportation Authority (MTA) and Open Data team is proud to present the third annual update to the Open Data Plan, reinforcing our commitment to transparency, accountability, civic engagement, and data-informed decision-making. Open data—information that is publicly accessible, in a machine-readable "
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_672dfd10c84508c8"
+    },
+    {
+      "original_submission_id": "sub_686ee217f7023e7b",
+      "source_id": "ace_routes_dataset_dictionary",
+      "local_observation_id": "entity_mta_ace_routes_dataset_publisher",
+      "review_decision": "retire_evidence_unsupported_observation",
+      "identity_resolution": "retire_evidence_unsupported_observation",
+      "reviewed_target_record_id": null,
+      "replacement_evidence_ids": [],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_686ee217f7023e7b"
+    },
+    {
+      "original_submission_id": "sub_69b520c8259fa6dd",
+      "source_id": "181st_street_jun2022",
+      "local_observation_id": "entity_mta",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_4f98e1e9b80c022d",
+      "replacement_evidence_ids": [
+        "181st_street_jun2022#p002_c0004",
+        "181st_street_jun2022#p003_c0003",
+        "181st_street_jun2022#p006_c0003"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_a7489def99990d67",
+          "local_observation_id": "relation_mta_partner_project",
+          "relation_kind": "has_partner_entity",
+          "relation_family": null,
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_181st_street_busway",
+          "object_local_observation_id": "entity_mta",
+          "evidence_refs": [
+            {
+              "evidence_id": "181st_street_jun2022#p002_c0004",
+              "source_id": "181st_street_jun2022",
+              "source_path": "raw/sources/181st_street_jun2022/blocks.jsonl",
+              "block_id": "p002_c0004",
+              "page_number": 2,
+              "text_sha256": "sha256:6c04812f91d5e332112f51a74df6249a07443cac84d9408a4ee1e7c54c103658",
+              "evidence_excerpt": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+            },
+            {
+              "evidence_id": "181st_street_jun2022#p009_c0004",
+              "source_id": "181st_street_jun2022",
+              "source_path": "raw/sources/181st_street_jun2022/blocks.jsonl",
+              "block_id": "p009_c0004",
+              "page_number": 9,
+              "text_sha256": "sha256:5536f2f4027d959fcd6703c003482fdabe04450023f9545aeb61fff2b4ac1268",
+              "evidence_excerpt": "Source: MTA"
+            }
+          ],
+          "disposition": "evidence_does_not_prove_project_partnership",
+          "action": "retire_relation_submission",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "A generic MTA logo and an unattributed Source: MTA label do not establish the exact has_partner role."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_69b520c8259fa6dd"
+    },
+    {
+      "original_submission_id": "sub_6f870616c839434b",
+      "source_id": "jay_street_pilot_overview",
+      "local_observation_id": "entity_mta_jay_street",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_d46cb7bd0ee0bde8",
+      "replacement_evidence_ids": [
+        "jay_street_pilot_overview#p001_c0010"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_06d5a8b4ec917364",
+          "local_observation_id": "rel_project_mta",
+          "relation_kind": "has_partner",
+          "relation_family": null,
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_jay_street_busway_pilot",
+          "object_local_observation_id": "entity_mta_jay_street",
+          "evidence_refs": [
+            {
+              "evidence_id": "jay_street_pilot_overview#p001_c0010",
+              "source_id": "jay_street_pilot_overview",
+              "source_path": "raw/sources/jay_street_pilot_overview/blocks.jsonl",
+              "block_id": "p001_c0010",
+              "page_number": 1,
+              "text_sha256": "sha256:4edb1957fdfa751e4560baba458ed2058da5390f5c248266a9df3ab827a0af5c",
+              "evidence_excerpt": "The MTA logo, which consists of the letters \"MTA\" in a stylized font inside a circle."
+            }
+          ],
+          "disposition": "evidence_does_not_prove_project_partnership",
+          "action": "retire_relation_submission",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The cited Jay Street block is only an MTA logo and does not support the stored partnership assertion."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_6f870616c839434b"
+    },
+    {
+      "original_submission_id": "sub_7490ae93abb46014",
+      "source_id": "bx_cb5_projects_dec032019",
+      "local_observation_id": "entity_mta_bx_cb5_dec032019",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_00d69a4d8f5a1c95",
+      "replacement_evidence_ids": [
+        "bx_cb5_projects_dec032019#p001_c0004",
+        "bx_cb5_projects_dec032019#p007_c0008",
+        "bx_cb5_projects_dec032019#p020_c0008"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_7490ae93abb46014"
+    },
+    {
+      "original_submission_id": "sub_8180dcbf25ec9056",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+      "local_observation_id": "entity_mta_better_buses_cb11_mar2025",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_0f6c1d6fac48e867",
+      "replacement_evidence_ids": [
+        "116_st_morningside_ave_pleasant_ave_cb11_mar2025#p002_c0004",
+        "116_st_morningside_ave_pleasant_ave_cb11_mar2025#p004_c0007",
+        "116_st_morningside_ave_pleasant_ave_cb11_mar2025#p019_c0014"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_8180dcbf25ec9056"
+    },
+    {
+      "original_submission_id": "sub_8676f3a81492109f",
+      "source_id": "fordham_rd_inwood_cb11_jun2023",
+      "local_observation_id": "entity_mta_fordham_rd",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_9b08da1dbf54d805",
+      "replacement_evidence_ids": [
+        "fordham_rd_inwood_cb11_jun2023#p002_c0006",
+        "fordham_rd_inwood_cb11_jun2023#p004_c0002",
+        "fordham_rd_inwood_cb11_jun2023#p008_c0002",
+        "fordham_rd_inwood_cb11_jun2023#p025_c0002"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_3a536a4767961544",
+          "local_observation_id": "relation_project_implemented_by_mta",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_fordham_rd_bus_priority",
+          "object_local_observation_id": "entity_mta_fordham_rd",
+          "evidence_refs": [
+            {
+              "evidence_id": "fordham_rd_inwood_cb11_jun2023#p002_c0006",
+              "source_id": "fordham_rd_inwood_cb11_jun2023",
+              "source_path": "raw/sources/fordham_rd_inwood_cb11_jun2023/blocks.jsonl",
+              "block_id": "p002_c0006",
+              "page_number": 2,
+              "text_sha256": "sha256:ad76ed03fda8e418aae1a70edad49621a390c270fdc92905386b5e93299c05e2",
+              "evidence_excerpt": "The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark circle."
+            },
+            {
+              "evidence_id": "fordham_rd_inwood_cb11_jun2023#p025_c0002",
+              "source_id": "fordham_rd_inwood_cb11_jun2023",
+              "source_path": "raw/sources/fordham_rd_inwood_cb11_jun2023/blocks.jsonl",
+              "block_id": "p025_c0002",
+              "page_number": 25,
+              "text_sha256": "sha256:647d875b4000967bc512fe438211beb4dc5ffdce718e7d45b09fa8a9e6e333bd",
+              "evidence_excerpt": "• Based on factors identified in the traffic analyses and listening to the community concerns, Alternative A – offset bus lanes along Fordham Rd – is the best treatment to improve overall bus speeds, reliability, and curb demand while minimizing the effects on buses on north/south corridors • Bus lanes are less likely "
+            }
+          ],
+          "disposition": "monitoring_collaboration_miscast_as_implemented_by",
+          "action": "guarded_predicate_and_status_patch_or_retire",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The source supports continued DOT/MTA monitoring and engagement, not an unqualified realized implemented_by role."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_8676f3a81492109f"
+    },
+    {
+      "original_submission_id": "sub_8e2092fd83def5ac",
+      "source_id": "brt_bx6_south_bronx_may2016",
+      "local_observation_id": "entity_mta_brt_bx6_may2016",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_4278dfe10ca96e62",
+      "replacement_evidence_ids": [
+        "brt_bx6_south_bronx_may2016#p001_c0004",
+        "brt_bx6_south_bronx_may2016#p022_c0002"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_8e2092fd83def5ac"
+    },
+    {
+      "original_submission_id": "sub_93432f9e83cec801",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025",
+      "local_observation_id": "entity_mta_nyct_may2025",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retain_nyct_with_exact_evidence",
+      "reviewed_target_record_id": "entity_mta-nyct",
+      "replacement_submission_id": "sub_e485f1130dbc43ec",
+      "replacement_evidence_ids": [
+        "116_st_morningside_ave_pleasant_ave_cb10_may2025#p008_c0003",
+        "116_st_morningside_ave_pleasant_ave_cb10_may2025#p035_c0003",
+        "116_st_morningside_ave_pleasant_ave_cb10_may2025#p036_c0003"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_496011087d7aca4d",
+          "local_observation_id": "relation_project_implemented_by_mta_may2025",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_116th_st_bus_pedestrian_priority_may2025",
+          "object_local_observation_id": "entity_mta_nyct_may2025",
+          "evidence_refs": [
+            {
+              "evidence_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025#p001_c0004",
+              "source_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025",
+              "source_path": "raw/sources/116_st_morningside_ave_pleasant_ave_cb10_may2025/blocks.jsonl",
+              "block_id": "p001_c0004",
+              "page_number": 1,
+              "text_sha256": "sha256:5c41829b84fc1f12a0a2921f9f1704d2b53024d2d7bdfa2e87b5aad19c76ecf5",
+              "evidence_excerpt": "BETTERBUSES"
+            },
+            {
+              "evidence_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025#p003_c0003",
+              "source_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025",
+              "source_path": "raw/sources/116_st_morningside_ave_pleasant_ave_cb10_may2025/blocks.jsonl",
+              "block_id": "p003_c0003",
+              "page_number": 3,
+              "text_sha256": "sha256:6c04812f91d5e332112f51a74df6249a07443cac84d9408a4ee1e7c54c103658",
+              "evidence_excerpt": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+            }
+          ],
+          "disposition": "evidence_does_not_prove_implemented_by",
+          "action": "retire_relation_submission",
+          "reviewed_target_record_id": "entity_mta-nyct",
+          "rationale": "Better Buses and MTA branding do not prove that NYCT implemented the project."
+        },
+        {
+          "relation_submission_id": "sub_9161f23f40a2b853",
+          "local_observation_id": "relation_source_published_by_mta_may2025",
+          "relation_kind": "published_by",
+          "relation_family": "publication_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "source_116_st_morningside_ave_pleasant_ave_cb10_may2025",
+          "object_local_observation_id": "entity_mta_nyct_may2025",
+          "evidence_refs": [
+            {
+              "evidence_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025#p001_c0004",
+              "source_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025",
+              "source_path": "raw/sources/116_st_morningside_ave_pleasant_ave_cb10_may2025/blocks.jsonl",
+              "block_id": "p001_c0004",
+              "page_number": 1,
+              "text_sha256": "sha256:5c41829b84fc1f12a0a2921f9f1704d2b53024d2d7bdfa2e87b5aad19c76ecf5",
+              "evidence_excerpt": "BETTERBUSES"
+            },
+            {
+              "evidence_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025#p003_c0005",
+              "source_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025",
+              "source_path": "raw/sources/116_st_morningside_ave_pleasant_ave_cb10_may2025/blocks.jsonl",
+              "block_id": "p003_c0005",
+              "page_number": 3,
+              "text_sha256": "sha256:2f12a3e76823dfd027f3f731af816f09ce0467d5f4800925083e58f25a79b752",
+              "evidence_excerpt": "The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized 'DOT' graphic."
+            }
+          ],
+          "disposition": "evidence_does_not_prove_publication_role",
+          "action": "retire_relation_submission",
+          "reviewed_target_record_id": "entity_mta-nyct",
+          "rationale": "MTA and NYC DOT logos establish joint branding, not the exact publisher asserted by the edge."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_93432f9e83cec801"
+    },
+    {
+      "original_submission_id": "sub_937a8c0854bd16b5",
+      "source_id": "2014_06_25_brt_woodhaven_publicworkshop2_summary",
+      "local_observation_id": "entity_mta_bus_woodhaven_workshop2",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_82bb9855f5622f03",
+      "replacement_evidence_ids": [
+        "2014_06_25_brt_woodhaven_publicworkshop2_summary#p002_c0001",
+        "2014_06_25_brt_woodhaven_publicworkshop2_summary#p003_c0003",
+        "2014_06_25_brt_woodhaven_publicworkshop2_summary#p007_c0011"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_b7d039f8fc871ca4",
+          "local_observation_id": "relation_mta_hosted_workshop",
+          "relation_kind": "organized_by",
+          "relation_family": "other",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "event_woodhaven_workshop2_20140625",
+          "object_local_observation_id": "entity_mta_bus_woodhaven_workshop2",
+          "evidence_refs": [
+            {
+              "evidence_id": "2014_06_25_brt_woodhaven_publicworkshop2_summary#p002_c0001",
+              "source_id": "2014_06_25_brt_woodhaven_publicworkshop2_summary",
+              "source_path": "raw/sources/2014_06_25_brt_woodhaven_publicworkshop2_summary/blocks.jsonl",
+              "block_id": "p002_c0001",
+              "page_number": 2,
+              "text_sha256": "sha256:40ab78ce73f38e37a72b6c87dba523d86efaac7f4031e2bd47e9a1c9bffd9a5b",
+              "evidence_excerpt": "The New York City Department of Transportation (NYCDOT) and the Metropolitan Transit Authority (MTA) hosted the second Woodhaven/ Cross Bay Boulevards Select Bus Service (SBS) public workshop on June 25, 2014 from 7 - 9 PM at P.S. 306 Queens. The goal of this workshop was to gather design input for the implementation o"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_937a8c0854bd16b5"
+    },
+    {
+      "original_submission_id": "sub_947cd8227babef81",
+      "source_id": "brt_woodhaven_faq",
+      "local_observation_id": "entity_mta_woodhaven_faq",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_1f95e9d344e6aa04",
+      "replacement_evidence_ids": [
+        "brt_woodhaven_faq#p006_c0006",
+        "brt_woodhaven_faq#p007_c0005",
+        "brt_woodhaven_faq#p010_c0005"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_88c401cee1a9b5c6",
+          "local_observation_id": "relation_project_has_partner_mta",
+          "relation_kind": "has_partner",
+          "relation_family": "partnership_engagement",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_woodhaven_cross_bay_sbs_faq",
+          "object_local_observation_id": "entity_mta_woodhaven_faq",
+          "evidence_refs": [
+            {
+              "evidence_id": "brt_woodhaven_faq#p010_c0005",
+              "source_id": "brt_woodhaven_faq",
+              "source_path": "raw/sources/brt_woodhaven_faq/blocks.jsonl",
+              "block_id": "p010_c0005",
+              "page_number": 10,
+              "text_sha256": "sha256:73044ebc56dfa57d8d314b40ab605088e3f41da674bc1bca562ad62f6b709664",
+              "evidence_excerpt": "The project is a joint effort of the New York City Department of Transportation (NYCDOT) and the Metropolitan Transportation Authority (MTA)."
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_947cd8227babef81"
+    },
+    {
+      "original_submission_id": "sub_95ac1db2b888b865",
+      "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026",
+      "local_observation_id": "entity_mta_fordham_rd_cb6",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_6998a7288d83fa76",
+      "replacement_evidence_ids": [
+        "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p002_c0002",
+        "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p002_c0005",
+        "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p005_c0005"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_e9ac4b22d4afd11f",
+          "local_observation_id": "relation_project_has_partner_mta",
+          "relation_kind": "has_partner",
+          "relation_family": "partnership_engagement",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_fordham_rd_bus_priority_cb6",
+          "object_local_observation_id": "entity_mta_fordham_rd_cb6",
+          "evidence_refs": [
+            {
+              "evidence_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p002_c0002",
+              "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026",
+              "source_path": "raw/sources/fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026/blocks.jsonl",
+              "block_id": "p002_c0002",
+              "page_number": 2,
+              "text_sha256": "sha256:6e94f7fb1b603c62f05010180124e239eba511f6650fff4a79bac7b8db5fd426",
+              "evidence_excerpt": "• On February 13th, Mayor Zohran Mamdani, Commissioner Mike Flynn, and MTA Chairman Janno Lieber announced the project restart • Critical project to deliver better and faster bus service for New Yorkers • Aiming to improve bus speeds by at least 20% on the corridor"
+            }
+          ],
+          "disposition": "announcement_does_not_prove_partner_role",
+          "action": "guarded_predicate_patch_or_retire",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The source says the MTA chair joined the project-restart announcement, but it does not state the exact has_partner role."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_95ac1db2b888b865"
+    },
+    {
+      "original_submission_id": "sub_96904c1925ca9909",
+      "source_id": "open_data_plan_2026_update",
+      "local_observation_id": "entity_metropolitan_transportation_authority",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_7a01d96c79e5e8f2",
+      "replacement_evidence_ids": [
+        "open_data_plan_2026_update#p001_c0001",
+        "open_data_plan_2026_update#p002_c0003",
+        "open_data_plan_2026_update#p004_c0001",
+        "open_data_plan_2026_update#p004_c0002"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_12b8b79f8c08ce6d",
+          "local_observation_id": "relation_publishes_to_portal",
+          "relation_kind": "publishes_to",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_metropolitan_transportation_authority",
+          "object_local_observation_id": "entity_new_york_state_open_data_portal",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2026_update#p002_c0003",
+              "source_id": "open_data_plan_2026_update",
+              "source_path": "raw/sources/open_data_plan_2026_update/blocks.jsonl",
+              "block_id": "p002_c0003",
+              "page_number": 2,
+              "text_sha256": "sha256:306d3808f2ea64739ebb4dd79b66802647879df3116564938aa9b461dd640b06",
+              "evidence_excerpt": "We've come a long way since the MTA Open Data Law was enacted in 2021. The team has successfully sustained the quantity of our output, all while improving the quality of our datasets, thanks to the resources the MTA has dedicated to this program. Just see for yourself – the MTA ended 2025 with 226 data assets published"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        },
+        {
+          "relation_submission_id": "sub_899640fc7e300b94",
+          "local_observation_id": "relation_mta_odt_part_of_mta",
+          "relation_kind": "part_of",
+          "relation_family": null,
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "entity_mta_open_data_team",
+          "object_local_observation_id": "entity_metropolitan_transportation_authority",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2026_update#p001_c0001",
+              "source_id": "open_data_plan_2026_update",
+              "source_path": "raw/sources/open_data_plan_2026_update/blocks.jsonl",
+              "block_id": "p001_c0001",
+              "page_number": 1,
+              "text_sha256": "sha256:926be3f840657be047e9f3663a6b377d506843e94ac7e64ea4c3f49b2d789d60",
+              "evidence_excerpt": "The Metropolitan Transportation Authority (MTA) logo, featuring the letters \"MTA\" in white inside a blue circle."
+            },
+            {
+              "evidence_id": "open_data_plan_2026_update#p002_c0002",
+              "source_id": "open_data_plan_2026_update",
+              "source_path": "raw/sources/open_data_plan_2026_update/blocks.jsonl",
+              "block_id": "p002_c0002",
+              "page_number": 2,
+              "text_sha256": "sha256:3ef78808feb54b4c75600dcfdaf01586c61cde41234140f814b65502c5895c26",
+              "evidence_excerpt": "This 2026 Annual Update from the Metropolitan Transportation Authority marks the fourth update to the Open Data Plan, and what an amazing four years it has been! In this annual update, we are thrilled to share our highlights from 2025 and our plans for the year ahead."
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_96904c1925ca9909"
+    },
+    {
+      "original_submission_id": "sub_97e92df543f549b3",
+      "source_id": "streets_plan_update_2026",
+      "local_observation_id": "entity_mta_nyct",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_10398b10cd5373f7",
+      "replacement_evidence_ids": [
+        "streets_plan_update_2026#p002_c0005",
+        "streets_plan_update_2026#p006_c0002",
+        "streets_plan_update_2026#p006_c0004"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_182b494a3d2bb5c2",
+          "local_observation_id": "relation_mta_congestion_relief_zone",
+          "relation_kind": "operator",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_nyct",
+          "object_local_observation_id": "metric_congestion_relief_traffic_reduction",
+          "evidence_refs": [
+            {
+              "evidence_id": "streets_plan_update_2026#p002_c0005",
+              "source_id": "streets_plan_update_2026",
+              "source_path": "raw/sources/streets_plan_update_2026/blocks.jsonl",
+              "block_id": "p002_c0005",
+              "page_number": 2,
+              "text_sha256": "sha256:10fe61d0a6d7c1b2a2bc3081926ea781cc0bba0f60486e73fccb991ef068b1c3",
+              "evidence_excerpt": "In Manhattan, the MTA's Congestion Relief Zone led to an 11 percent reduction in traffic, faster bridge and tunnel crossings of up to 50 percent, and increases in cycling, transit ridership and walking trips. NYC DOT complemented the Congestion Relief program with major street redesign projects to prioritize walking, t"
+            }
+          ],
+          "disposition": "operator_edge_targets_metric_instead_of_program",
+          "action": "retire_and_rebuild_with_distinct_congestion_relief_program_endpoint",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The source attributes an 11 percent metric to MTA's Congestion Relief Zone; a metric claim is not the program being operated."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_97e92df543f549b3"
+    },
+    {
+      "original_submission_id": "sub_9a8315008e682c95",
+      "source_id": "34th_st_enhanced_bus_priority_cb5_may2025",
+      "local_observation_id": "entity_mta_34th_cb5_may2025",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_04c2b5c1053f4030",
+      "replacement_evidence_ids": [
+        "34th_st_enhanced_bus_priority_cb5_may2025#p002_c0004",
+        "34th_st_enhanced_bus_priority_cb5_may2025#p003_c0003",
+        "34th_st_enhanced_bus_priority_cb5_may2025#p032_c0011"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_9a8315008e682c95"
+    },
+    {
+      "original_submission_id": "sub_9e5ff4a0de15bc23",
+      "source_id": "brt_woodhaven_cb9_jan2016",
+      "local_observation_id": "entity_mta_woodhaven_cb9_jan2016",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_4a6b9b895b3b57bf",
+      "replacement_evidence_ids": [
+        "brt_woodhaven_cb9_jan2016#p001_c0004",
+        "brt_woodhaven_cb9_jan2016#p006_c0002",
+        "brt_woodhaven_cb9_jan2016#p014_c0002",
+        "brt_woodhaven_cb9_jan2016#p022_c0003"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_bdaa4afd2d492ca5",
+          "local_observation_id": "relation_mta_implements_project",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_woodhaven_cross_bay_sbs_jan2016",
+          "object_local_observation_id": "entity_mta_woodhaven_cb9_jan2016",
+          "evidence_refs": [
+            {
+              "evidence_id": "brt_woodhaven_cb9_jan2016#p014_c0002",
+              "source_id": "brt_woodhaven_cb9_jan2016",
+              "source_path": "raw/sources/brt_woodhaven_cb9_jan2016/blocks.jsonl",
+              "block_id": "p014_c0002",
+              "page_number": 14,
+              "text_sha256": "sha256:1357ebbcaf66376d2afcaeac9c416b5ad78be4e3bddf4d2faf6460cd1405eec6",
+              "evidence_excerpt": "• DOT and MTA committed to addressing community needs and delivering Woodhaven / Cross Bay Blvd (Q52/Q53) SBS • Propose to implement a short-term project in 2017 followed by a long-term project • Evaluation of short-term improvements will inform the design of the long-term project • Builds on success of approach used f"
+            }
+          ],
+          "disposition": "future_commitment_miscast_as_realized_implementation",
+          "action": "guarded_predicate_and_status_patch_or_retire",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The cited block describes a commitment and proposed 2017 implementation, not a realized implemented_by claim at the source date."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_9e5ff4a0de15bc23"
+    },
+    {
+      "original_submission_id": "sub_a768d3f90ce81e87",
+      "source_id": "open_data_plan_2022",
+      "local_observation_id": "entity_mta_open_data_plan",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_5393556fcadccc4e",
+      "replacement_evidence_ids": [
+        "open_data_plan_2022#p001_c0002",
+        "open_data_plan_2022#p001_c0008",
+        "open_data_plan_2022#p002_c0005",
+        "open_data_plan_2022#p002_c0012"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_f88e0862d5c33405",
+          "local_observation_id": "relation_mta_publishes_open_data_plan",
+          "relation_kind": "publishes",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_open_data_plan",
+          "object_local_observation_id": "project_open_data_plan_2022",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_plan_2022#p001_c0008",
+              "source_id": "open_data_plan_2022",
+              "source_path": "raw/sources/open_data_plan_2022/blocks.jsonl",
+              "block_id": "p001_c0008",
+              "page_number": 1,
+              "text_sha256": "sha256:98637a4fb62f37e320f44ceb8260aec575f08e61ec5ed35b63140f6c4a1a498b",
+              "evidence_excerpt": "Enclosed please find the Metropolitan Transportation Authority (MTA) Open Data Plan (the \"Plan\") pursuant to Chapter 489 of the Laws of 2021."
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_a768d3f90ce81e87"
+    },
+    {
+      "original_submission_id": "sub_a7b8921cd8877640",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+      "local_observation_id": "entity_mta_nyct_cb11_jun2025",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_8548304dca11773b",
+      "replacement_evidence_ids": [
+        "116_st_morningside_ave_pleasant_ave_cb11_jun2025#p001_c0004",
+        "116_st_morningside_ave_pleasant_ave_cb11_jun2025#p001_c0005",
+        "116_st_morningside_ave_pleasant_ave_cb11_jun2025#p023_c0011"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_a7b8921cd8877640"
+    },
+    {
+      "original_submission_id": "sub_a7e180e3a7f03759",
+      "source_id": "meeting_doc_100341",
+      "local_observation_id": "entity_mta_nov2022",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_fa78eb6f1fff850f",
+      "replacement_evidence_ids": [
+        "meeting_doc_100341#p007_c0002",
+        "meeting_doc_100341#p015_c0011",
+        "meeting_doc_100341#p032_c0002"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_a7e180e3a7f03759"
+    },
+    {
+      "original_submission_id": "sub_b6d2d31bcb930aea",
+      "source_id": "brt_woodhaven_design_workshops",
+      "local_observation_id": "entity_mta_woodhaven_dw2015",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_a5ff1a7733de8154",
+      "replacement_evidence_ids": [
+        "brt_woodhaven_design_workshops#p002_c0002",
+        "brt_woodhaven_design_workshops#p003_c0002",
+        "brt_woodhaven_design_workshops#p008_c0008"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_dd733c59e40c5f8e",
+          "local_observation_id": "relation_project_implemented_by_mta",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_woodhaven_cross_bay_q52_q53_sbs",
+          "object_local_observation_id": "entity_mta_woodhaven_dw2015",
+          "evidence_refs": [
+            {
+              "evidence_id": "brt_woodhaven_design_workshops#p002_c0002",
+              "source_id": "brt_woodhaven_design_workshops",
+              "source_path": "raw/sources/brt_woodhaven_design_workshops/blocks.jsonl",
+              "block_id": "p002_c0002",
+              "page_number": 2,
+              "text_sha256": "sha256:8ccd696e313195f6726716c62a393ffcb4ebd2d4f0950cb7e000b889a76830dd",
+              "evidence_excerpt": "In April 2015, NYCDOT and the MTA held four design workshops to update the community on the Woodhaven / Cross Bay Boulevard (Q52/Q53) Select Bus Service (SBS) project and to gain feedback on proposed street designs for the corridor and proposed SBS bus stops. Meetings were conducted in workshop format, consisting of sm"
+            }
+          ],
+          "disposition": "workshop_organization_miscast_as_project_implementation",
+          "action": "guarded_predicate_patch_to_workshop_role_or_retire",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The evidence says DOT and MTA held design workshops; it does not say the project had been implemented by MTA."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_b6d2d31bcb930aea"
+    },
+    {
+      "original_submission_id": "sub_be9949bee9049ad5",
+      "source_id": "fresh_pond_rd_may2019",
+      "local_observation_id": "entity_mta_fresh_pond_rd_may2019",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_55454b904e8d38a3",
+      "replacement_evidence_ids": [
+        "fresh_pond_rd_may2019#p001_c0003",
+        "fresh_pond_rd_may2019#p001_c0004",
+        "fresh_pond_rd_may2019#p006_c0002"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_be9949bee9049ad5"
+    },
+    {
+      "original_submission_id": "sub_c59889fddffd046c",
+      "source_id": "bronx_bus_network_final_plan_addendum_2021",
+      "local_observation_id": "entity_mta_bronx_addendum",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_cd4fd9085b19d5df",
+      "replacement_evidence_ids": [
+        "bronx_bus_network_final_plan_addendum_2021#p001_c0001",
+        "bronx_bus_network_final_plan_addendum_2021#p002_c0003",
+        "bronx_bus_network_final_plan_addendum_2021#p003_c0002"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_c59889fddffd046c"
+    },
+    {
+      "original_submission_id": "sub_c73785884a91ec9d",
+      "source_id": "open_data_lessons_2026",
+      "local_observation_id": "entity_mta_open_data_program",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_cad6d8b585911b24",
+      "replacement_evidence_ids": [
+        "open_data_lessons_2026#p001_b0001"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_c73785884a91ec9d"
+    },
+    {
+      "original_submission_id": "sub_d286ad54e68796bd",
+      "source_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb9_apr2025",
+      "local_observation_id": "entity_mta_eastern_pkwy_cb9_apr2025",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_7011e14d342c3296",
+      "replacement_evidence_ids": [
+        "eastern_pkwy_schenectady_ave_ralph_ave_cb9_apr2025#p002_c0004",
+        "eastern_pkwy_schenectady_ave_ralph_ave_cb9_apr2025#p003_c0003",
+        "eastern_pkwy_schenectady_ave_ralph_ave_cb9_apr2025#p014_c0011"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_d286ad54e68796bd"
+    },
+    {
+      "original_submission_id": "sub_e24faf1dd8ded4dd",
+      "source_id": "brt_woodhaven_openhouses_boards_may2016",
+      "local_observation_id": "entity_mta_brt_woodhaven_may2016",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_268a249042820608",
+      "replacement_evidence_ids": [
+        "brt_woodhaven_openhouses_boards_may2016#p002_c0018",
+        "brt_woodhaven_openhouses_boards_may2016#p008_c0002",
+        "brt_woodhaven_openhouses_boards_may2016#p009_c0011",
+        "brt_woodhaven_openhouses_boards_may2016#p012_c0019"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_81b4ed17a440bdad",
+          "local_observation_id": "relation_project_implemented_by_mta",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_woodhaven_cross_bay_sbs_may2016",
+          "object_local_observation_id": "entity_mta_brt_woodhaven_may2016",
+          "evidence_refs": [
+            {
+              "evidence_id": "brt_woodhaven_openhouses_boards_may2016#p008_c0002",
+              "source_id": "brt_woodhaven_openhouses_boards_may2016",
+              "source_path": "raw/sources/brt_woodhaven_openhouses_boards_may2016/blocks.jsonl",
+              "block_id": "p008_c0002",
+              "page_number": 8,
+              "text_sha256": "sha256:3348e512ad06139ffd8643f07ef9d6f5c70693a29e889b599c8f276ffef87791",
+              "evidence_excerpt": "DOT and the MTA are committed to working with the community on this project to ensure the design takes into account the needs of street and sidewalk safety, bus riders, general traffic flow, and local businesses."
+            },
+            {
+              "evidence_id": "brt_woodhaven_openhouses_boards_may2016#p008_c0005",
+              "source_id": "brt_woodhaven_openhouses_boards_may2016",
+              "source_path": "raw/sources/brt_woodhaven_openhouses_boards_may2016/blocks.jsonl",
+              "block_id": "p008_c0005",
+              "page_number": 8,
+              "text_sha256": "sha256:08c8402565f3431a3a7a38f90870640b372c98b5099b27a3cf9a8122093d4a2a",
+              "evidence_excerpt": "In order to bring improvements to the corridor quickly, NYC DOT and the MTA will implement priority transit and street improvements in 2017, including:"
+            }
+          ],
+          "disposition": "future_plan_miscast_as_realized_implementation",
+          "action": "guarded_status_patch_to_planned_or_retire",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The source says DOT and MTA will implement improvements in 2017, so the unqualified realized edge overstates document-time status."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_e24faf1dd8ded4dd"
+    },
+    {
+      "original_submission_id": "sub_e4ab40f09101ab71",
+      "source_id": "2015_04_14_brt_125th_cb10_post_implementation_update",
+      "local_observation_id": "entity_mta_2015_04_14",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_678e4a303b8887f2",
+      "replacement_evidence_ids": [
+        "2015_04_14_brt_125th_cb10_post_implementation_update#p001_c0003",
+        "2015_04_14_brt_125th_cb10_post_implementation_update#p001_c0004"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_0c8356fcc3dc307b",
+          "local_observation_id": "relation_route_m60_operated_by_mta",
+          "relation_kind": "operated_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "route_m60_sbs_2015_04_14",
+          "object_local_observation_id": "entity_mta_2015_04_14",
+          "evidence_refs": [
+            {
+              "evidence_id": "2015_04_14_brt_125th_cb10_post_implementation_update#p001_c0001",
+              "source_id": "2015_04_14_brt_125th_cb10_post_implementation_update",
+              "source_path": "raw/sources/2015_04_14_brt_125th_cb10_post_implementation_update/blocks.jsonl",
+              "block_id": "p001_c0001",
+              "page_number": 1,
+              "text_sha256": "sha256:a4aa0011bf251ea05be6c1e2b8306665880c45f3838d24ae5676f256678883a1",
+              "evidence_excerpt": "M60 Select Bus Service on 125 th Street"
+            },
+            {
+              "evidence_id": "2015_04_14_brt_125th_cb10_post_implementation_update#p001_c0004",
+              "source_id": "2015_04_14_brt_125th_cb10_post_implementation_update",
+              "source_path": "raw/sources/2015_04_14_brt_125th_cb10_post_implementation_update/blocks.jsonl",
+              "block_id": "p001_c0004",
+              "page_number": 1,
+              "text_sha256": "sha256:36283e00b68d879ff09323675f0edc0311e950506a6b0686ed3c526c53b2688a",
+              "evidence_excerpt": "The MTA logo, consisting of the letters 'MTA' inside a circle."
+            }
+          ],
+          "disposition": "evidence_does_not_prove_route_operator",
+          "action": "retire_relation_submission_and_rebuild_only_with_exact_operator_evidence",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "An M60 title, bus photograph, and generic MTA logo do not identify the legal route operator."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_e4ab40f09101ab71"
+    },
+    {
+      "original_submission_id": "sub_ebaefc69a9d4bb0f",
+      "source_id": "2014_11_brt_utica_workshopsummary",
+      "local_observation_id": "entity_mta_2014_utica_workshop",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_042635b8e6364f78",
+      "replacement_evidence_ids": [
+        "2014_11_brt_utica_workshopsummary#p002_c0001",
+        "2014_11_brt_utica_workshopsummary#p002_c0004",
+        "2014_11_brt_utica_workshopsummary#p006_c0010"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_16fb6ae3b0633e81",
+          "local_observation_id": "relation_project_has_partner_mta",
+          "relation_kind": "has_partner",
+          "relation_family": "partnership_engagement",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_utica_ave_sbs_2014",
+          "object_local_observation_id": "entity_mta_2014_utica_workshop",
+          "evidence_refs": [
+            {
+              "evidence_id": "2014_11_brt_utica_workshopsummary#p002_c0001",
+              "source_id": "2014_11_brt_utica_workshopsummary",
+              "source_path": "raw/sources/2014_11_brt_utica_workshopsummary/blocks.jsonl",
+              "block_id": "p002_c0001",
+              "page_number": 2,
+              "text_sha256": "sha256:5ba5dc60ada201ca68131890ef31b667c020a099ad0da03e5e74c43003f6e1d7",
+              "evidence_excerpt": "On November 13, 2014, the New York City Department of Transportation (DOT) and the Metropolitan Transportation Authority (MTA) kicked off the public outreach process for the Utica Avenue Select Bus Service (SBS) project. The MTA and DOT hosted a public workshop at PS 167 on Eastern Parkway to gather initial feedback fr"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_ebaefc69a9d4bb0f"
+    },
+    {
+      "original_submission_id": "sub_ee8fddb0aa546ba9",
+      "source_id": "soundview_bus_priority_press_release_2021",
+      "local_observation_id": "entity_mta_soundview_2021",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_47da67da9ed6905d",
+      "replacement_evidence_ids": [
+        "soundview_bus_priority_press_release_2021#p001_b0001"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_ee8fddb0aa546ba9"
+    },
+    {
+      "original_submission_id": "sub_f7a9879295aca0fd",
+      "source_id": "meeting_doc_111751",
+      "local_observation_id": "entity_meeting_doc_111751_mta",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_eed17d4822759d0c",
+      "replacement_evidence_ids": [
+        "meeting_doc_111751#p001_c0001",
+        "meeting_doc_111751#p005_c0001",
+        "meeting_doc_111751#p005_c0003"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_78c188e472a58da9",
+          "local_observation_id": "relation_meeting_doc_111751_metro_north_mta_subsidies",
+          "relation_kind": "receives_funding_from",
+          "relation_family": "funding_award",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "entity_meeting_doc_111751_metro_north_railroad",
+          "object_local_observation_id": "entity_meeting_doc_111751_mta",
+          "evidence_refs": [
+            {
+              "evidence_id": "meeting_doc_111751#p007_c0003",
+              "source_id": "meeting_doc_111751",
+              "source_path": "raw/sources/meeting_doc_111751/blocks.jsonl",
+              "block_id": "p007_c0003",
+              "page_number": 7,
+              "text_sha256": "sha256:3b210a4dc5807c7490be645769fae10f75eab5f36126c9fd78a485e7a3d78f0c",
+              "evidence_excerpt": "APRIL 2023 Year-to-Date Adopted Favorable (Unfavorable) Adopted Favorable (Unfavorable) Budget Actual Variance Percent Budget Actual Variance Percent Receipts Farebox Revenue $41,015 $40,494 ($0,521) (1.3) $148,620 $159,769 $11,149 7.5 Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_f7a9879295aca0fd"
+    },
+    {
+      "original_submission_id": "sub_f8283a7c91f11a03",
+      "source_id": "tremont_ave_busway",
+      "local_observation_id": "entity_mta_partner_tremont_busway",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_c3f675b29cd92384",
+      "replacement_evidence_ids": [
+        "tremont_ave_busway#p001_c0013"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_f8283a7c91f11a03"
+    },
+    {
+      "original_submission_id": "sub_f8f7015136c63f10",
+      "source_id": "lexington_ave_60_st_52_st_sept2025",
+      "local_observation_id": "entity_mta_lex_ave_sept2025",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_8969e3e7f97478ca",
+      "replacement_evidence_ids": [
+        "lexington_ave_60_st_52_st_sept2025#p001_c0006",
+        "lexington_ave_60_st_52_st_sept2025#p002_c0004",
+        "lexington_ave_60_st_52_st_sept2025#p013_c0013"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_f8f7015136c63f10"
+    },
+    {
+      "original_submission_id": "sub_f97066494513adbc",
+      "source_id": "meeting_doc_85816",
+      "local_observation_id": "entity_mta_meeting_doc_85816",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_66fed54184d82904",
+      "replacement_evidence_ids": [
+        "meeting_doc_85816#p001_c0001",
+        "meeting_doc_85816#p001_c0015",
+        "meeting_doc_85816#p005_c0002",
+        "meeting_doc_85816#p012_c0001"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_f97066494513adbc"
+    },
+    {
+      "original_submission_id": "sub_fa43a8a5e4d7cd5b",
+      "source_id": "open_data_program",
+      "local_observation_id": "entity_mta_open_data_program",
+      "review_decision": "needs_relation_specific_remediation",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_1e92f3abf9614118",
+      "replacement_evidence_ids": [
+        "open_data_program#p001_b0001"
+      ],
+      "downstream_relation_decisions": [
+        {
+          "relation_submission_id": "sub_0948cf2544ce06bb",
+          "local_observation_id": "relation_mta_submits_data_to_nys_portal",
+          "relation_kind": "submits_data_to",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_open_data_program",
+          "object_local_observation_id": "entity_ny_state_open_data_portal",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_program#p001_b0001",
+              "source_id": "open_data_program",
+              "source_path": "raw/sources/open_data_program/blocks.jsonl",
+              "block_id": "p001_b0001",
+              "page_number": 1,
+              "text_sha256": "sha256:72a6fc8b5f0dc8d5478ebd6a7ecc6e7695620ce187a1fb5ece02bb4c252c35e3",
+              "evidence_excerpt": "MTA Open Data Program Skip to main content Menu Close Menu Schedules Maps Fares and tolls Planned Service Changes Travel Back Elevator & Escalator Status Accessibility Sign up for service alerts Guides Access-A-Ride Paratransit About Back About the MTA Transparency Projects Safety and Security Careers Agencies Back New"
+            }
+          ],
+          "disposition": "retarget_relation_local_endpoint_to_umbrella_mta",
+          "action": "follow_reviewed_local_identity_retarget",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The exact cited relation evidence supports the stored role, and the local endpoint may follow the independently reviewed entity identity."
+        },
+        {
+          "relation_submission_id": "sub_46237cb61b5879d5",
+          "local_observation_id": "relation_open_data_program_publishes_board_books",
+          "relation_kind": "publishes_data_from",
+          "relation_family": null,
+          "endpoint_roles": [
+            "object",
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_open_data_program",
+          "object_local_observation_id": "entity_mta_open_data_program",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_program#p001_b0001",
+              "source_id": "open_data_program",
+              "source_path": "raw/sources/open_data_program/blocks.jsonl",
+              "block_id": "p001_b0001",
+              "page_number": 1,
+              "text_sha256": "sha256:72a6fc8b5f0dc8d5478ebd6a7ecc6e7695620ce187a1fb5ece02bb4c252c35e3",
+              "evidence_excerpt": "MTA Open Data Program Skip to main content Menu Close Menu Schedules Maps Fares and tolls Planned Service Changes Travel Back Elevator & Escalator Status Accessibility Sign up for service alerts Guides Access-A-Ride Paratransit About Back About the MTA Transparency Projects Safety and Security Careers Agencies Back New"
+            }
+          ],
+          "disposition": "self_loop_conflates_mta_with_published_board_books",
+          "action": "retire_and_rebuild_with_distinct_board_books_or_dataset_endpoint",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The same local MTA observation occupies both endpoints; the source instead describes data released through Board and Committee books."
+        },
+        {
+          "relation_submission_id": "sub_6723fbc8525ef29a",
+          "local_observation_id": "relation_mta_has_open_data_program",
+          "relation_kind": "has_program",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_open_data_program",
+          "object_local_observation_id": "source_open_data_program_page",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_program#p001_b0001",
+              "source_id": "open_data_program",
+              "source_path": "raw/sources/open_data_program/blocks.jsonl",
+              "block_id": "p001_b0001",
+              "page_number": 1,
+              "text_sha256": "sha256:72a6fc8b5f0dc8d5478ebd6a7ecc6e7695620ce187a1fb5ece02bb4c252c35e3",
+              "evidence_excerpt": "MTA Open Data Program Skip to main content Menu Close Menu Schedules Maps Fares and tolls Planned Service Changes Travel Back Elevator & Escalator Status Accessibility Sign up for service alerts Guides Access-A-Ride Paratransit About Back About the MTA Transparency Projects Safety and Security Careers Agencies Back New"
+            }
+          ],
+          "disposition": "source_page_used_as_open_data_program_endpoint",
+          "action": "retire_and_rebuild_with_distinct_open_data_program_record",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "The relation points MTA has_program to a source page rather than to a canonical Open Data program identity."
+        },
+        {
+          "relation_submission_id": "sub_8f2787bda685c3be",
+          "local_observation_id": "relation_data_analytics_manages_open_data",
+          "relation_kind": "manages",
+          "relation_family": null,
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "entity_mta_data_analytics_team",
+          "object_local_observation_id": "entity_mta_open_data_program",
+          "evidence_refs": [
+            {
+              "evidence_id": "open_data_program#p001_b0001",
+              "source_id": "open_data_program",
+              "source_path": "raw/sources/open_data_program/blocks.jsonl",
+              "block_id": "p001_b0001",
+              "page_number": 1,
+              "text_sha256": "sha256:72a6fc8b5f0dc8d5478ebd6a7ecc6e7695620ce187a1fb5ece02bb4c252c35e3",
+              "evidence_excerpt": "MTA Open Data Program Skip to main content Menu Close Menu Schedules Maps Fares and tolls Planned Service Changes Travel Back Elevator & Escalator Status Accessibility Sign up for service alerts Guides Access-A-Ride Paratransit About Back About the MTA Transparency Projects Safety and Security Careers Agencies Back New"
+            }
+          ],
+          "disposition": "umbrella_mta_observation_used_as_open_data_program_endpoint",
+          "action": "retire_and_rebuild_with_distinct_open_data_program_record",
+          "reviewed_target_record_id": "entity_mta-entity-update-2025",
+          "rationale": "After resolving this observation to umbrella MTA, it cannot also serve as the Open Data program managed by Data & Analytics."
+        }
+      ],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_fa43a8a5e4d7cd5b"
+    },
+    {
+      "original_submission_id": "sub_fd4afd213ccd1e45",
+      "source_id": "busway_tremontavenue",
+      "local_observation_id": "entity_mta_tremont",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_bf08e64d413dfb2e",
+      "replacement_evidence_ids": [
+        "busway_tremontavenue#p001_b0001"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_fd4afd213ccd1e45"
+    },
+    {
+      "original_submission_id": "sub_ffadae6e6d6ad6e6",
+      "source_id": "brt_m23_cb5_mar2016",
+      "local_observation_id": "entity_brt_m23_cb5_mta",
+      "review_decision": "retarget_umbrella_mta",
+      "identity_resolution": "retarget_umbrella_mta",
+      "reviewed_target_record_id": "entity_mta-entity-update-2025",
+      "replacement_submission_id": "sub_4d1671bf71bf4e9d",
+      "replacement_evidence_ids": [
+        "brt_m23_cb5_mar2016#p001_c0003",
+        "brt_m23_cb5_mar2016#p001_c0005"
+      ],
+      "downstream_relation_decisions": [],
+      "source_decision": "data/quality/relationship-integrity/entity-identity/mta-nyct-target-reviewed-decisions.json#sub_ffadae6e6d6ad6e6"
+    }
+  ],
+  "reproduction_commands": [
+    "bun scripts/review-mta-nyct-target-identity.ts --check",
+    "bun scripts/remediate-mta-nyct-target-identity.ts --check",
+    "bun test packages/pipeline/test/quality/mta-nyct-target-reviewed-decisions.test.ts packages/pipeline/test/quality/mta-nyct-target-remediation.test.ts"
+  ]
+}
