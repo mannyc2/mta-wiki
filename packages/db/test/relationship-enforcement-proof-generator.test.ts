@@ -18,6 +18,7 @@ import {
   buildRelationshipEnforcementOutputs,
   assertRelationshipEnforcementRefreshPins,
   assertReleaseRecordIdsUniqueAndSorted,
+  compareReleaseRecordIds,
   deriveDeterminismConsumerSummary,
   materializationInventoryText,
   repositoryStateEvidenceText,
@@ -176,6 +177,9 @@ it("validates canonical release ids in exporter localeCompare order", () => {
     exporterOrdered[0]!.localeCompare(exporterOrdered[1]!),
   ).toBeLessThan(0);
   expect([...exporterOrdered].sort()).not.toEqual(exporterOrdered);
+  expect([...exporterOrdered].sort(compareReleaseRecordIds)).toEqual(
+    exporterOrdered,
+  );
   expect(() =>
     assertReleaseRecordIdsUniqueAndSorted(
       exporterOrdered,

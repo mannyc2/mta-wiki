@@ -327,11 +327,26 @@ export function assertReleaseRecordIdsUniqueAndSorted(
     new Set(ids).size === ids.length &&
       stableJson(ids as unknown as JsonValue) ===
         stableJson(
-          [...ids].sort((left, right) =>
-            left.localeCompare(right)
-          ) as unknown as JsonValue,
+          [...ids].sort(compareReleaseRecordIds) as unknown as JsonValue,
         ),
     `${label} record ids must be unique and sorted`,
+  );
+}
+
+export function compareReleaseRecordIds(
+  left: string,
+  right: string,
+): number {
+  return left.localeCompare(right);
+}
+
+function compareReleaseRecordIdentities(
+  left: SnapshotRecordIdentity,
+  right: SnapshotRecordIdentity,
+): number {
+  return (
+    left.record_kind.localeCompare(right.record_kind) ||
+    compareReleaseRecordIds(left.record_id, right.record_id)
   );
 }
 
@@ -2497,32 +2512,35 @@ function validateSnapshotSqlite(
       missingSealTriggers.length === 0,
       `${label} is missing sealed mutation triggers: ${missingSealTriggers.join(", ")}`,
     );
-    const recordIdentities = db.query(`
-      SELECT record_id, record_kind
-      FROM records
-      ORDER BY record_kind, record_id
-    `).all() as SnapshotRecordIdentity[];
+    const recordIdentities = (
+      db.query(`
+        SELECT record_id, record_kind
+        FROM records
+      `).all() as SnapshotRecordIdentity[]
+    ).sort(compareReleaseRecordIdentities);
     const relationIds = (
       db.query(`
         SELECT record_id
         FROM relations
-        ORDER BY record_id
       `).all() as Array<{ record_id: string }>
-    ).map((row) => row.record_id);
+    ).map((row) => row.record_id).sort(compareReleaseRecordIds);
     const relationRecordIds = recordIdentities
       .filter((record) => record.record_kind === "relation")
       .map((record) => record.record_id)
-      .sort();
+      .sort(compareReleaseRecordIds);
     assert(
       stableJson(relationIds as unknown as JsonValue) ===
         stableJson(relationRecordIds as unknown as JsonValue),
       `${label} relation edge identities do not match relation records`,
     );
-    const sqliteFindings = db.query(`
-      SELECT finding_id, code, record_id
-      FROM relationship_validation_findings
-      ORDER BY finding_id
-    `).all() as SnapshotFindingIdentity[];
+    const sqliteFindings = (
+      db.query(`
+        SELECT finding_id, code, record_id
+        FROM relationship_validation_findings
+      `).all() as SnapshotFindingIdentity[]
+    ).sort((left, right) =>
+      left.finding_id.localeCompare(right.finding_id)
+    );
     const sqliteFindingJson = stableJson(
       sqliteFindings as unknown as JsonValue,
     );
@@ -2726,14 +2744,12 @@ function validateSnapshotRelease(
     );
   }
   const sortedRecordIdentities = [...recordIdentities].sort(
-    (left, right) =>
-      left.record_kind.localeCompare(right.record_kind) ||
-      left.record_id.localeCompare(right.record_id),
+    compareReleaseRecordIdentities,
   );
   const relationIds = recordIdentities
     .filter((identity) => identity.record_kind === "relation")
     .map((identity) => identity.record_id)
-    .sort();
+    .sort(compareReleaseRecordIds);
   assert(
     stableJson(sortedRecordIdentities as unknown as JsonValue) ===
         stableJson(sqlite.record_identities as unknown as JsonValue) &&
