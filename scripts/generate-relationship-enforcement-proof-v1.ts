@@ -319,6 +319,22 @@ function assert(
   if (!condition) throw new Error(message);
 }
 
+export function assertReleaseRecordIdsUniqueAndSorted(
+  ids: string[],
+  label: string,
+): void {
+  assert(
+    new Set(ids).size === ids.length &&
+      stableJson(ids as unknown as JsonValue) ===
+        stableJson(
+          [...ids].sort((left, right) =>
+            left.localeCompare(right)
+          ) as unknown as JsonValue,
+        ),
+    `${label} record ids must be unique and sorted`,
+  );
+}
+
 function object(
   value: unknown,
   label: string,
@@ -2675,11 +2691,9 @@ function validateSnapshotRelease(
       };
     });
     const ids = identities.map((identity) => identity.record_id);
-    assert(
-      new Set(ids).size === ids.length &&
-        stableJson(ids as unknown as JsonValue) ===
-          stableJson([...ids].sort() as unknown as JsonValue),
-      `${label}/${fileName} record ids must be unique and sorted`,
+    assertReleaseRecordIdsUniqueAndSorted(
+      ids,
+      `${label}/${fileName}`,
     );
     recordIdentities.push(...identities);
     observedCounts[kind] = rows.length;

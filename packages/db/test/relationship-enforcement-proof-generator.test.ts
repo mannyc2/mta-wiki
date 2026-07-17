@@ -17,6 +17,7 @@ import { repoRoot } from "@mta-wiki/core/paths";
 import {
   buildRelationshipEnforcementOutputs,
   assertRelationshipEnforcementRefreshPins,
+  assertReleaseRecordIdsUniqueAndSorted,
   deriveDeterminismConsumerSummary,
   materializationInventoryText,
   repositoryStateEvidenceText,
@@ -165,6 +166,35 @@ const determinismValidationOptions = {
   currentRepoRoot: currentRepoFixture.root,
   trackerRoot: trackerRepoFixture,
 };
+
+it("validates canonical release ids in exporter localeCompare order", () => {
+  const exporterOrdered = [
+    "treatment_2017-bus-boarding-islands_2",
+    "treatment_2017-bus-boarding-islands-12-stops",
+  ];
+  expect(
+    exporterOrdered[0]!.localeCompare(exporterOrdered[1]!),
+  ).toBeLessThan(0);
+  expect([...exporterOrdered].sort()).not.toEqual(exporterOrdered);
+  expect(() =>
+    assertReleaseRecordIdsUniqueAndSorted(
+      exporterOrdered,
+      "fixture/treatment_components.jsonl",
+    )
+  ).not.toThrow();
+  expect(() =>
+    assertReleaseRecordIdsUniqueAndSorted(
+      [...exporterOrdered].reverse(),
+      "fixture/treatment_components.jsonl",
+    )
+  ).toThrow("record ids must be unique and sorted");
+  expect(() =>
+    assertReleaseRecordIdsUniqueAndSorted(
+      [exporterOrdered[0]!, exporterOrdered[0]!],
+      "fixture/treatment_components.jsonl",
+    )
+  ).toThrow("record ids must be unique and sorted");
+});
 
 function fixtureMatrix(): RelationshipFinalEndpointMatrix {
   return {
