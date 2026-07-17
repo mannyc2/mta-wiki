@@ -392,7 +392,13 @@ function relationshipGateSourceValues(
   };
 }
 
-function writeRelationshipBundleFixture(root: string) {
+function writeRelationshipBundleFixture(
+  root: string,
+  relationIds: string[] = ["relation_fixture"],
+) {
+  const sortedRelationIds = [...relationIds].sort((left, right) =>
+    left.localeCompare(right)
+  );
   const artifacts: Array<{
     role: string;
     source_path: string;
@@ -432,7 +438,7 @@ function writeRelationshipBundleFixture(root: string) {
     throw new Error("incomplete relationship bundle fixture");
   }
   const relationIdsSha256 = createHash("sha256")
-    .update(stableJson(["relation_fixture"] as unknown as JsonValue))
+    .update(stableJson(sortedRelationIds as unknown as JsonValue))
     .digest("hex");
   const tupleSetSha256 = createHash("sha256")
     .update(stableJson(["fixture_tuple"] as unknown as JsonValue))
@@ -440,8 +446,8 @@ function writeRelationshipBundleFixture(root: string) {
   const projectedRelationsPath =
     "data/contracts/test/projected-relations.jsonl";
   const projectedRelationsFile = join(root, projectedRelationsPath);
-  const projectedRelation = {
-    relation_id: "relation_fixture",
+  const projectedRelations = sortedRelationIds.map((relationId) => ({
+    relation_id: relationId,
     relation_family: "route_scope",
     relation_kind: "affects_route",
     subject_id: "project_fixture",
@@ -453,10 +459,12 @@ function writeRelationshipBundleFixture(root: string) {
     semantic_review_decision_ids: ["fixture-review"],
     semantic_remediation_decision_ids: [],
     mapping_status: "mapped",
-  };
+  }));
   writeFileSync(
     projectedRelationsFile,
-    `${stableJson(projectedRelation as unknown as JsonValue)}\n`,
+    `${projectedRelations.map((relation) =>
+      stableJson(relation as unknown as JsonValue)
+    ).join("\n")}\n`,
     "utf8",
   );
   const projectedRelationsBytes = readFileSync(
@@ -480,7 +488,7 @@ function writeRelationshipBundleFixture(root: string) {
       projected_relations_logical_sha256: createHash("sha256")
         .update(
           stableJson(
-            [projectedRelation] as unknown as JsonValue,
+            projectedRelations as unknown as JsonValue,
           ),
         )
         .digest("hex"),
@@ -494,7 +502,7 @@ function writeRelationshipBundleFixture(root: string) {
       unmapped_relation_count: 0,
     },
     relation_kind_rule_count: 1,
-    covered_relation_count: 1,
+    covered_relation_count: sortedRelationIds.length,
     allowed_family_shape_count: 1,
     relation_ids_sha256: relationIdsSha256,
     tuple_set_sha256: tupleSetSha256,
@@ -511,7 +519,7 @@ function writeRelationshipBundleFixture(root: string) {
         object_kind: "route",
         provenance: "reviewed_post_remediation",
         review_decision_ids: ["fixture-review"],
-        relation_count: 1,
+        relation_count: sortedRelationIds.length,
         relation_ids_sha256: relationIdsSha256,
       }],
       review_basis: "reviewed_post_remediation",
@@ -526,9 +534,11 @@ function writeRelationshipBundleFixture(root: string) {
   endpoint.bytes = readFileSync(endpointPath).length;
   endpoint.sha256 = sha256(endpointPath);
   const graphManifestPath = join(root, graphManifest.source_path);
-  const releaseRelationBytes = `${stableJson(
-    record("relation_fixture", "relation") as unknown as JsonValue,
-  )}\n`;
+  const releaseRelationBytes = `${sortedRelationIds.map((relationId) =>
+    stableJson(
+      record(relationId, "relation") as unknown as JsonValue,
+    )
+  ).join("\n")}\n`;
   writeFileSync(
     graphManifestPath,
     `${stableJson({
@@ -858,7 +868,7 @@ function writeRelationshipBundleFixture(root: string) {
     final_matrix: {
       path: endpoint.source_path,
       sha256: endpointLogicalSha256,
-      relation_count: 1,
+      relation_count: sortedRelationIds.length,
       tuple_count: 1,
       relation_ids_sha256: relationIdsSha256,
       tuple_set_sha256: tupleSetSha256,
@@ -962,7 +972,7 @@ function writeRelationshipBundleFixture(root: string) {
     final_matrix: {
       path: endpoint.source_path,
       sha256: endpointLogicalSha256,
-      relation_count: 1,
+      relation_count: sortedRelationIds.length,
       tuple_count: 1,
       relation_ids_sha256: relationIdsSha256,
       tuple_set_sha256: tupleSetSha256,
@@ -996,7 +1006,7 @@ function writeRelationshipBundleFixture(root: string) {
         path: endpoint.source_path,
         sha256: endpointLogicalSha256,
         matrix_kind: "post_remediation_reviewed",
-        relation_count: 1,
+        relation_count: sortedRelationIds.length,
         tuple_count: 1,
         relation_ids_sha256: relationIdsSha256,
         tuple_set_sha256: tupleSetSha256,
@@ -1191,6 +1201,40 @@ describe("exportRelease", () => {
       expect(existsSync(join(dir, entry.release_path))).toBe(true);
     }
     expect(() => parseReleaseManifest(manifest)).not.toThrow();
+  });
+
+  it("binds the final matrix relation hash in exporter localeCompare order", () => {
+    const root = join(work, "relationship-bundle-locale-order");
+    const relationIds = [
+      "relation_b44-sbs-operates-on-corridor-201011",
+      "relation_b44-sbs-operates-on-corridor_2",
+    ];
+    const exporterOrder = [...relationIds].sort((left, right) =>
+      left.localeCompare(right)
+    );
+    expect([...relationIds].sort()).not.toEqual(exporterOrder);
+    writeRelationshipBundleFixture(root, relationIds);
+
+    exportTestRelease("v4-locale-order", {
+      rootDir: root,
+      records: relationIds.map((relationId) =>
+        record(relationId, "relation")
+      ),
+    });
+
+    const exportedIds = readFileSync(
+      join(
+        releaseDir(root, "v4-locale-order"),
+        "relations.jsonl",
+      ),
+      "utf8",
+    )
+      .trimEnd()
+      .split(/\r?\n/u)
+      .map((line) =>
+        (JSON.parse(line) as { record_id: string }).record_id
+      );
+    expect(exportedIds).toEqual(exporterOrder);
   });
 
   it("forbids an enforcement bundle while post-promotion refresh is still required", () => {

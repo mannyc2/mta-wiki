@@ -486,7 +486,7 @@ function assertReleaseRelationSnapshot(
         "release relations.jsonl row.record_id",
       );
     })
-    .sort();
+    .sort((left, right) => left.localeCompare(right));
   const relationIdsSha256 = sha256(
     stableJson(relationIds as unknown as JsonValue),
   );
