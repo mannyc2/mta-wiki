@@ -594,11 +594,11 @@ describe("relationship completeness audit", () => {
     const loaded = loadOccurrenceTreatmentPhysicalityContract({
       rootDir: repoRoot,
       contractPath,
-      releaseId: "v1-rc20",
+      releaseId: "v1-rc21",
     });
     expect(loaded).toMatchObject({
-      contract_status: "warning_first",
-      final_post_semantic_release_guard_status: "pending",
+      contract_status: "reviewed_final",
+      final_post_semantic_release_guard_status: "verified",
     });
     expect(loaded.decisions).toHaveLength(276);
 
@@ -614,7 +614,7 @@ describe("relationship completeness audit", () => {
           "utf8",
         );
       }
-      const releaseDir = "data/exports/releases/v1-rc20";
+      const releaseDir = "data/exports/releases/v1-rc21";
       mkdirSync(join(work, releaseDir), { recursive: true });
       for (const name of [
         "manifest.json",
@@ -633,7 +633,7 @@ describe("relationship completeness audit", () => {
       expect(() => loadOccurrenceTreatmentPhysicalityContract({
         rootDir: work,
         contractPath,
-        releaseId: "v1-rc20",
+        releaseId: "v1-rc21",
       })).toThrow("review_ledger immutable pin mismatch");
     } finally {
       rmSync(work, { recursive: true, force: true });
@@ -988,18 +988,108 @@ describe("relationship completeness audit", () => {
     }
   });
 
+  it("reconstructs an SBS anchor from its canonical route id before a historical base-route variant alias", () => {
+    const input = fixtureInput();
+    const canonical = routeRecord("route_q52_sbs", "Q52-SBS");
+    canonical.payload.route_label = "Q52-SBS";
+    canonical.source_ids = ["fixture_source", "fixture_source_2"];
+    const historicalVariant = routeRecord("route_q52_ltd", "Q52");
+    input.routes = [historicalVariant, canonical];
+    input.routeAnchors = [{
+      gtfs_route_id: "Q52+",
+      canonical_route_record_id: canonical.record_id,
+      variant_record_ids: [historicalVariant.record_id],
+      aliases: ["Q52", "Q52-SBS"],
+      disposition: "true_route",
+      anchor_reason: "label_matches_gtfs_short_name",
+    }];
+    input.routeAnchorReview = routeReview(1);
+    input.occurrences = [];
+    input.treatments = [];
+    input.busLaneTreatmentScope = { decisions: [], inputPins: [] };
+    input.relationshipDispositions = [];
+    input.events = [];
+    input.projects = [];
+    input.corridors = [];
+    input.relations = [];
+    input.coverageGaps = [];
+
+    expect(buildRelationshipCompletenessAudit(input).routeRows.map((row) => [
+      row.route_record_id,
+      row.primary_disposition,
+      row.gtfs_route_id,
+    ])).toEqual([
+      ["route_q52_ltd", "canonical_gtfs_variant", "Q52+"],
+      ["route_q52_sbs", "canonical_gtfs_anchor", "Q52+"],
+    ]);
+  });
+
   it("requires an explicit default-boundary migration before replacing pinned rc20 disposition inputs", () => {
     const work = mkdtempSync(join(tmpdir(), "relationship-completeness-pin-migration-"));
     const defaultOutputDir = "data/quality/relationship-integrity/completeness";
+    const baselineOutputDir =
+      "data/quality/relationship-integrity/campaign-comparison/v1/pre-remediation-rc20/completeness";
     const dispositionReviewPaths = new Set([
       "data/relationship-integrity/dispositions/v1/bus-lane-treatments/review.jsonl",
       "data/relationship-integrity/dispositions/v1/operational-events/review.jsonl",
     ]);
     try {
       mkdirSync(join(work, "data"), { recursive: true });
-      for (const name of ["contracts", "exports", "relationship-integrity", "submissions"]) {
+      for (const name of ["exports", "relationship-integrity", "submissions"]) {
         symlinkSync(join(repoRoot, "data", name), join(work, "data", name), "dir");
       }
+      const physicalityDir = "data/contracts/occurrence-treatment-physicality/v1";
+      mkdirSync(join(work, physicalityDir), { recursive: true });
+      for (const name of ["policy.json", "review-ledger.jsonl"]) {
+        copyFileSync(join(repoRoot, physicalityDir, name), join(work, physicalityDir, name));
+      }
+      const finalPhysicalityContract = JSON.parse(
+        readFileSync(join(repoRoot, physicalityDir, "contract.json"), "utf8"),
+      ) as {
+        contract_status: string;
+        review_snapshot: Record<string, unknown>;
+        final_post_semantic_release_guard: Record<string, unknown>;
+        [key: string]: unknown;
+      };
+      const rc20ReleaseDir = "data/exports/releases/v1-rc20";
+      const rc20PhysicalityInputs = [
+        "manifest.json",
+        "operational_occurrences.jsonl",
+        "treatment_components.jsonl",
+        "relations.jsonl",
+        "corridors.jsonl",
+      ].map((name) => {
+        const path = `${rc20ReleaseDir}/${name}`;
+        const content = readFileSync(join(repoRoot, path), "utf8");
+        return {
+          path,
+          bytes: Buffer.byteLength(content),
+          sha256: sha256(content),
+          ...(name.endsWith(".jsonl")
+            ? { row_count: content.trimEnd().split(/\r?\n/gu).length }
+            : {}),
+        };
+      });
+      const provisionalPhysicalityContract = {
+        ...finalPhysicalityContract,
+        contract_status: "warning_first",
+        review_snapshot: {
+          ...finalPhysicalityContract.review_snapshot,
+          stage: "provisional_rc20",
+          release_id: "v1-rc20",
+          release_dir: rc20ReleaseDir,
+          input_pins: rc20PhysicalityInputs,
+        },
+        final_post_semantic_release_guard: {
+          ...finalPhysicalityContract.final_post_semantic_release_guard,
+          status: "pending",
+        },
+      };
+      writeFileSync(
+        join(work, physicalityDir, "contract.json"),
+        `${JSON.stringify(provisionalPhysicalityContract, null, 2)}\n`,
+        "utf8",
+      );
       mkdirSync(join(work, "data", "quality"), { recursive: true });
       symlinkSync(
         join(repoRoot, "data", "quality", "operational-coverage"),
@@ -1009,7 +1099,7 @@ describe("relationship completeness audit", () => {
       const outputDir = join(work, defaultOutputDir);
       mkdirSync(outputDir, { recursive: true });
       const staleManifest = JSON.parse(
-        readFileSync(join(repoRoot, defaultOutputDir, "manifest.json"), "utf8"),
+        readFileSync(join(repoRoot, baselineOutputDir, "manifest.json"), "utf8"),
       ) as {
         schema_version: number;
         mode: "warning";
@@ -1030,7 +1120,7 @@ describe("relationship completeness audit", () => {
         }>;
       };
       for (const name of Object.keys(staleManifest.files)) {
-        copyFileSync(join(repoRoot, defaultOutputDir, name), join(outputDir, name));
+        copyFileSync(join(repoRoot, baselineOutputDir, name), join(outputDir, name));
       }
       let replacedPinCount = 0;
       staleManifest.input_pins = staleManifest.input_pins.map((pin) => {
@@ -1128,20 +1218,25 @@ describe("relationship completeness audit", () => {
     }
   });
 
-  it("reproduces the pinned rc20 exact physicality denominator and provisional scope backlog", () => {
-    const build = loadRelationshipCompletenessArtifacts();
+  it("reproduces the pinned rc21 zero-warning completeness and final physicality migration", () => {
+    const rc21ManifestSha256 =
+      "e60606d177f5ab51bd7c11dc4972cc4b2f53b345d801bc2d27f93c931b162299";
+    const build = loadRelationshipCompletenessArtifacts({
+      releaseDir: "data/exports/releases/v1-rc21",
+      expectedReleaseManifestSha256: rc21ManifestSha256,
+    });
     expect(build.summary.occurrences).toMatchObject({
       release_occurrence_count: 135,
       eligible_occurrence_count: 134,
       audited_occurrence_count: 134,
       counts_by_primary_disposition: {
-        contract_roles_incomplete: 1,
-        contract_roles_complete_migration_required: 133,
-        contract_roles_complete: 0,
+        contract_roles_incomplete: 0,
+        contract_roles_complete_migration_required: 0,
+        contract_roles_complete: 134,
       },
       core_role_warning_occurrence_count: 0,
-      contract_warning_occurrence_count: 1,
-      schema_migration_warning_occurrence_count: 134,
+      contract_warning_occurrence_count: 0,
+      schema_migration_warning_occurrence_count: 0,
       physical_scope_required_occurrence_count: 1,
       physical_scope_not_applicable_occurrence_count: 133,
       physicality_review_required_occurrence_count: 0,
@@ -1170,40 +1265,38 @@ describe("relationship completeness audit", () => {
         review_required: 0,
       },
       occurrence_scope_disposition_counts: {
-        physical_scope_satisfied: 0,
-        physical_scope_missing: 1,
+        physical_scope_satisfied: 1,
+        physical_scope_missing: 0,
         physical_scope_relation_missing: 0,
         physical_scope_evidence_missing: 0,
         physical_scope_relation_invalid: 0,
         physicality_review_required: 0,
         physical_scope_not_applicable: 133,
       },
-      finding_counts: {
-        OTPHY_PHYSICAL_SCOPE_MISSING: 1,
-      },
+      finding_counts: {},
       policy_rule_count: 26,
       review_ledger_row_count: 276,
-      contract_status: "warning_first",
-      final_post_semantic_release_guard_status: "pending",
+      contract_status: "reviewed_final",
+      final_post_semantic_release_guard_status: "verified",
       review_ledger_complete: true,
-      physical_scope_complete: false,
+      physical_scope_complete: true,
     });
     expect(build.summary.bus_lane_treatments).toEqual({
-      denominator_count: 663,
-      audited_treatment_count: 663,
-      materialized_treatment_count: 662,
-      accepted_pending_addition_count: 1,
+      denominator_count: 669,
+      audited_treatment_count: 669,
+      materialized_treatment_count: 669,
+      accepted_pending_addition_count: 0,
       counts_by_primary_disposition: {
-        physical_scope_satisfied: 156,
+        physical_scope_satisfied: 163,
         non_physical_enforcement_or_control: 42,
         non_lane_supporting_feature: 17,
         aggregate_or_unbounded_treatment: 110,
-        reviewed_non_projectable_physical_scope_unproven: 338,
+        reviewed_non_projectable_physical_scope_unproven: 337,
         review_required: 0,
       },
-      physical_scope_satisfied_count: 156,
-      reviewed_non_projectable_count: 507,
-      exact_evidence_bound_count: 663,
+      physical_scope_satisfied_count: 163,
+      reviewed_non_projectable_count: 506,
+      exact_evidence_bound_count: 669,
       omitted_treatment_count: 0,
       warning_treatment_count: 0,
       review_complete: true,
@@ -1216,11 +1309,11 @@ describe("relationship completeness audit", () => {
         completeness_review_open: 0,
         versioned_non_projectable_disposition: 1231,
       },
-      coverage_gap_row_count: 2934,
+      coverage_gap_row_count: 2930,
       coverage_gap_counts_by_verdict: {
         absent_in_source: 3,
         not_applicable: 487,
-        unreviewed: 2444,
+        unreviewed: 2440,
       },
       events_with_unreviewed_gap_count: 1145,
       eligible_occurrence_coverage_conflict_count: 0,
@@ -1244,21 +1337,21 @@ describe("relationship completeness audit", () => {
       })),
     );
     expect(build.summary.route_identities).toEqual({
-      denominator_count: 376,
-      audited_route_count: 376,
+      denominator_count: 395,
+      audited_route_count: 395,
       counts_by_primary_disposition: {
-        canonical_gtfs_anchor: 264,
-        canonical_gtfs_variant: 17,
-        reviewed_non_projectable_disposition: 95,
+        canonical_gtfs_anchor: 279,
+        canonical_gtfs_variant: 20,
+        reviewed_non_projectable_disposition: 96,
         route_identity_review_required: 0,
       },
-      gtfs_bound_route_record_count: 281,
-      reviewed_non_projectable_route_record_count: 95,
+      gtfs_bound_route_record_count: 299,
+      reviewed_non_projectable_route_record_count: 96,
       disposition_counts: {
         aggregate_label: 9,
         corridor_service_label: 1,
         external_bus_service: 4,
-        historical_retired: 8,
+        historical_retired: 9,
         historical_service_identity: 8,
         non_bus_service: 47,
         proposal: 12,
@@ -1270,9 +1363,9 @@ describe("relationship completeness audit", () => {
       RC_OCCURRENCE_ROUTE_MISSING: 0,
       RC_OCCURRENCE_TREATMENT_MISSING: 0,
       RC_OCCURRENCE_ONSET_MISSING: 0,
-      RC_OCCURRENCE_PHASE_IDENTITY_MISSING: 134,
-      RC_OCCURRENCE_PHASE_RELATION_MISSING: 134,
-      RC_OCCURRENCE_PHYSICAL_SCOPE_MISSING: 1,
+      RC_OCCURRENCE_PHASE_IDENTITY_MISSING: 0,
+      RC_OCCURRENCE_PHASE_RELATION_MISSING: 0,
+      RC_OCCURRENCE_PHYSICAL_SCOPE_MISSING: 0,
       RC_OCCURRENCE_PHYSICALITY_REVIEW_REQUIRED: 0,
       RC_OCCURRENCE_PHYSICAL_SCOPE_RELATION_MISSING: 0,
       RC_OCCURRENCE_PHYSICAL_SCOPE_EVIDENCE_MISSING: 0,
@@ -1290,11 +1383,14 @@ describe("relationship completeness audit", () => {
     });
     expect(build.summary.enforcement_migration).toMatchObject({
       eligible_occurrence_core_roles_ready: true,
-      physical_scope_contract_ready: false,
+      phase_contract_ready: true,
+      physical_scope_contract_ready: true,
       treatment_physicality_contract_ready: true,
-      treatment_physicality_final_release_guard_ready: false,
+      treatment_physicality_final_release_guard_ready: true,
       bus_lane_treatment_completeness_ready: true,
-      hard_mode_ready: false,
+      operational_event_completeness_ready: true,
+      route_identity_completeness_ready: true,
+      hard_mode_ready: true,
     });
     const mirror = relationshipCompletenessDbMirror(build);
     const physicalitySubjects = mirror.subjects.filter((subject) =>
@@ -1313,13 +1409,13 @@ describe("relationship completeness audit", () => {
       selectorClass: "reviewed_full_denominator",
       expectedCount: 276,
       actualCount: 276,
-      enforcementEligible: false,
+      enforcementEligible: true,
       promotionCriterion:
         "RC_TREATMENT_PHYSICALITY_REVIEW_REQUIRED: Every eligible-occurrence treatment has one immutable exact evidence-bound physicality decision with no drift.",
     });
     const busLaneSubjects = mirror.subjects.filter((subject) =>
       subject.selector === "bus_lane_family_treatment");
-    expect(busLaneSubjects).toHaveLength(663);
+    expect(busLaneSubjects).toHaveLength(669);
     expect(busLaneSubjects.every((subject) =>
       subject.subjectKind === "treatment_component" &&
       subject.studyProjectable === false &&
@@ -1331,8 +1427,8 @@ describe("relationship completeness audit", () => {
         contractId: "relationship-completeness-v1",
         selector: "bus_lane_family_treatment",
         selectorClass: "reviewed_full_denominator",
-        expectedCount: 663,
-        actualCount: 663,
+        expectedCount: 669,
+        actualCount: 669,
         enforcementEligible: true,
         promotionCriterion:
           "RC_BUS_LANE_TREATMENT_SELECTOR_ACCOUNTING_REQUIRED: Every row in the immutable bus-lane treatment inventory is represented exactly once in the completeness selector. " +
@@ -1350,42 +1446,34 @@ describe("relationship completeness audit", () => {
     expect(occurrenceSubjects).toHaveLength(134);
     expect(occurrenceSubjects.filter((subject) =>
       subject.roles.some((role) => role.role === "physical_scope" && role.status === "missing")))
-      .toEqual([
-        expect.objectContaining({
-          subjectId: "occurrence:8c987704152b459014217d44",
-          warningCodes: expect.arrayContaining(["RC_OCCURRENCE_PHYSICAL_SCOPE_MISSING"]),
-        }),
-      ]);
+      .toEqual([]);
+    expect(occurrenceSubjects.filter((subject) =>
+      subject.roles.some((role) => role.role === "physical_scope" && role.status === "satisfied")))
+      .toHaveLength(1);
     expect(occurrenceSubjects.filter((subject) =>
       subject.roles.some((role) => role.role === "physical_scope" && role.status === "not_applicable")))
       .toHaveLength(133);
-    expect(mirror.findings.filter((finding) =>
-      finding.code === "RC_OCCURRENCE_PHYSICAL_SCOPE_MISSING")).toEqual([
-        expect.objectContaining({
-          selector: "eligible_operational_occurrence",
-          subjectId: "occurrence:8c987704152b459014217d44",
-          severity: "warning",
-        }),
-      ]);
+    expect(mirror.findings).toEqual([]);
     expect(mirror.enforcement).toMatchObject({
       mode: "warning",
-      hardModeReady: false,
+      hardModeReady: true,
       criteriaJson: {
         eligible_occurrence_core_roles_ready: true,
-        physical_scope_contract_ready: false,
+        phase_contract_ready: true,
+        physical_scope_contract_ready: true,
         treatment_physicality_contract_ready: true,
-        treatment_physicality_final_release_guard_ready: false,
+        treatment_physicality_final_release_guard_ready: true,
       },
     });
-    expect(build.summary.input_pins.find((pin) => pin.path.endsWith("v1-rc20/manifest.json"))?.sha256)
-      .toBe(DEFAULT_RELATIONSHIP_COMPLETENESS_RELEASE_MANIFEST_SHA256);
+    expect(build.summary.input_pins.find((pin) => pin.path.endsWith("v1-rc21/manifest.json"))?.sha256)
+      .toBe(rc21ManifestSha256);
     expect(build.summary.input_pins.filter((pin) =>
       pin.path.startsWith("data/contracts/occurrence-treatment-physicality/v1/")))
       .toEqual([
         {
           path: "data/contracts/occurrence-treatment-physicality/v1/contract.json",
-          bytes: 3365,
-          sha256: "d9decfbe225ecfa7224b64fb18ef27923966181e51da520c199984a8dba4b17b",
+          bytes: 3378,
+          sha256: "bd2c5e89e8c60bdbb5a76602f43cce3c84687dbaef56af050d2d80146200354a",
         },
         {
           path: "data/contracts/occurrence-treatment-physicality/v1/policy.json",

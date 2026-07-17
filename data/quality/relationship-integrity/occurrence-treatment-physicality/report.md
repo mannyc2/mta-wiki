@@ -1,15 +1,15 @@
 # Eligible occurrence treatment physicality review
 
-- Release snapshot: `v1-rc20` (`provisional_rc20`).
+- Release snapshot: `v1-rc21` (`final_post_semantic_release`).
 - Eligible operational occurrences: 134.
 - Unique reviewed treatment records: 276.
 - Treatment memberships: 276.
 - Classification counts: {"physical_corridor_or_segment_intervention":1,"nonphysical_service_operations_policy_control":275,"point_or_stop_physical_intervention":0,"review_required":0}.
-- Occurrence scope dispositions: {"physical_scope_satisfied":0,"physical_scope_missing":1,"physical_scope_relation_missing":0,"physical_scope_evidence_missing":0,"physical_scope_relation_invalid":0,"physicality_review_required":0,"physical_scope_not_applicable":133}.
+- Occurrence scope dispositions: {"physical_scope_satisfied":1,"physical_scope_missing":0,"physical_scope_relation_missing":0,"physical_scope_evidence_missing":0,"physical_scope_relation_invalid":0,"physicality_review_required":0,"physical_scope_not_applicable":133}.
 - Immutable review ledger complete: true.
-- Physical-scope role complete: false.
-- Final post-semantic release guard ready: false.
-- Hard-mode ready: false.
+- Physical-scope role complete: true.
+- Final post-semantic release guard ready: true.
+- Hard-mode ready: true.
 
 ## Exact family inventory
 
@@ -22,7 +22,7 @@
 
 ## Findings
 
-- `OTPHY_PHYSICAL_SCOPE_MISSING`: 1.
+- None.
 
 ## Interpretation
 

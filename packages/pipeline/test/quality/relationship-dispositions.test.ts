@@ -344,7 +344,7 @@ describe("relationship dispositions v1", () => {
     );
   });
 
-  it("keeps all 1,362 operational and 663 bus-treatment decisions valid in the replayed graph", () => {
+  it("keeps all 1,362 operational and 669 bus-treatment decisions valid in the replayed graph", () => {
     const corrected = withSemanticCorrections(
       entriesToRecords(readSubmissionEntries(), { retiredSubmissionIds: retiredSubmissionIds() }),
       readSemanticCorrections(),
@@ -354,7 +354,7 @@ describe("relationship dispositions v1", () => {
     const ledger = readRelationshipDispositionLedger();
     const decisions = ledger.decisions;
     expect(decisions.filter((entry) => entry.selector === "operational_event")).toHaveLength(1_362);
-    expect(decisions.filter((entry) => entry.selector === "bus_lane_family_treatment")).toHaveLength(663);
+    expect(decisions.filter((entry) => entry.selector === "bus_lane_family_treatment")).toHaveLength(669);
     expect(validateRelationshipDispositionLedger(corrected.records, ledger)).toEqual([]);
 
     const recordsById = new Map(corrected.records.map((record) => [record.record_id, record]));

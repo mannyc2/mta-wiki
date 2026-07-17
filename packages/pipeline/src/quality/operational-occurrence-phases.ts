@@ -175,6 +175,10 @@ function exactEvidence(refs: readonly MtaEvidenceRef[]): MtaEvidenceRef[] {
   return sortedEvidence(refs.filter((ref) => Boolean(ref.source_id && ref.evidence_id)));
 }
 
+function hasMissingExactEvidence(refs: readonly MtaEvidenceRef[]): boolean {
+  return refs.length === 0 || refs.some((ref) => !ref.source_id || !ref.evidence_id);
+}
+
 function relationSemanticKey(record: MtaCanonicalRecord): string {
   return [
     text(record.payload.relation_kind) ?? "",
@@ -396,7 +400,7 @@ export function buildOperationalOccurrencePhaseReview(input: {
         }));
       }
       const exact = exactEvidence(phase.evidence_refs);
-      if (exact.length !== phase.evidence_refs.length || exact.length === 0) {
+      if (hasMissingExactEvidence(phase.evidence_refs)) {
         findings.push(finding({
           code: "OOPHASE_PHASE_EVENT_EVIDENCE_MISSING",
           occurrenceId,
@@ -490,7 +494,7 @@ export function buildOperationalOccurrencePhaseReview(input: {
         }));
       }
       const exact = exactEvidence(relation.evidence_refs);
-      if (exact.length !== relation.evidence_refs.length || exact.length === 0) {
+      if (hasMissingExactEvidence(relation.evidence_refs)) {
         findings.push(finding({
           code: "OOPHASE_PHASE_RELATION_EVIDENCE_MISSING",
           occurrenceId,

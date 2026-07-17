@@ -1181,8 +1181,13 @@ function pinnedGtfsRouteIdentities(
         const routeId = record ? routePayloadId(record) : null;
         return routeId ? [routeId] : [];
       });
-    const shortName = row.aliases.find((alias) =>
-      boundRouteIds.some((routeId) => routeId.toLowerCase() === alias.toLowerCase()));
+    // The immutable row orders the canonical record before its variants, while aliases are
+    // lexicographically sorted. Prefer the canonical record's source-literal route id so an
+    // historical base-route alias (for example Q52) cannot displace the current SBS identity
+    // (Q52-SBS) merely because it sorts first.
+    const shortName = boundRouteIds
+      .map((routeId) => row.aliases.find((alias) => routeId.toLowerCase() === alias.toLowerCase()))
+      .find((alias): alias is string => Boolean(alias));
     return {
       route_id: row.gtfs_route_id!,
       ...(shortName ? { short_name: shortName } : {}),
