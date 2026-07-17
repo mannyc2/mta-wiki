@@ -9,19 +9,22 @@ source_id: "mta_automated_camera_enforcement"
 source_ids:
   - "better_buses_pdf_better_buses_broadway_improvements_cb8_2019"
   - "broadway_157_st_220_st_cb12_mar2025"
+  - "meeting_doc_186616"
   - "mta_automated_camera_enforcement"
 local_observation_id: "route_bx20_ace"
 local_observation_ids:
   - "route_bx20_ace"
   - "route_bx20_broadway_cb12_mar2025"
   - "route_bx20_broadway_improvements"
+  - "route_meeting_doc_186616_bx20_ace"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-23T13:24:42.990Z"
+generated_at: "2026-07-12T13:58:31.642Z"
 raw_text: "Bx20: 813 (2018 Weekday Route Ridership)"
 submission_ids:
   - "sub_0902686ae95c9650"
   - "sub_21c676d01764ee7e"
+  - "sub_37bdedf1754da528"
   - "sub_cf96ec41eedb3d94"
 payload:
   _merged_field_values:
@@ -31,6 +34,9 @@ payload:
     borough_normalized:
       - "bronx"
       - "manhattan"
+    route_type:
+      - "local"
+      - "bus"
     route_type_normalized:
       - "bus"
       - "local"
@@ -73,6 +79,16 @@ evidence_refs:
     source_id: "better_buses_pdf_better_buses_broadway_improvements_cb8_2019"
     source_path: "raw/sources/better_buses_pdf_better_buses_broadway_improvements_cb8_2019/blocks.jsonl"
     text_sha256: "sha256:11baa95149f023619e4e6c085567f22d1430167f215cf12a41aaddcbe3d18873"
+    text_source: "raw_text"
+  -
+    block_id: "p011_c0010"
+    evidence_id: "meeting_doc_186616#p011_c0010"
+    page_number: 11
+    role: "route_identity"
+    source_id: "meeting_doc_186616"
+    source_path: "raw/sources/meeting_doc_186616/blocks.jsonl"
+    source_quote: "Bx20"
+    text_sha256: "sha256:94f2bd4451ebb0cab2547064ae8c8f887aa47d99c673cd60f8aca040dbd13e54"
     text_source: "raw_text"
 ---
 

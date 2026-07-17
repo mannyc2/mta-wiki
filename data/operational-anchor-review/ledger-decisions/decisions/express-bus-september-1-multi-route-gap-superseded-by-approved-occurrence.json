@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "express-bus-september-1-multi-route-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:7d116dcba89a111d2bebe387",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T11:06:30.000Z",
+  "rationale": "The Fall readjustment is one six-route schedule package and cannot satisfy the broad ledger's single-route rule. Approved occurrence occurrence:1dddfb078a97dd148a4e123d evidence-binds the same six routes individually, preserving the shared September 1 schedule boundary without inventing six separate interventions.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

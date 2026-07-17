@@ -18,6 +18,7 @@ source_ids:
   - "flatbush_ave_cb14_jan2023"
   - "flatbush_ave_cb9_sept2022"
   - "meeting_doc_138456"
+  - "meeting_doc_146846"
   - "meeting_doc_160441"
 local_observation_id: "route_bm2_brt_south_brooklyn_2017"
 local_observation_ids:
@@ -25,6 +26,8 @@ local_observation_ids:
   - "route_bm2_brt_south_brooklyn_b82"
   - "route_bm2_brt_south_brooklyn_jan2018"
   - "route_bm2_express_cb18_jun2017"
+  - "route_bm2_express_fall_2024_discontinuation"
+  - "route_bm2_express_summer_2024_realized"
   - "route_bm2_flatbush"
   - "route_bm2_flatbush_ave"
   - "route_bm2_flatbush_ave_kickoff"
@@ -33,12 +36,14 @@ local_observation_ids:
   - "route_meeting_doc_160441_bm2"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-20T21:39:35.197Z"
+generated_at: "2026-07-13T10:40:25.893Z"
 raw_text: "BM2 express bus on Pennsylvania Ave"
 submission_ids:
   - "sub_03be97b274e0957e"
   - "sub_0e51e0ebc4c094f0"
   - "sub_20d95446e4b70ada"
+  - "sub_36f086053e03737b"
+  - "sub_4c007372d20490e8"
   - "sub_71c05284aaa1abdf"
   - "sub_721f51d4029cbaec"
   - "sub_adc315933a0fb313"
@@ -180,6 +185,26 @@ evidence_refs:
     page_number: 3
     source_id: "meeting_doc_160441"
     source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
+    text_sha256: "sha256:a1cb3550e548ba0e4cc902da5e264574b62e2318fcfe0a6f5418eb28d04373de"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0013"
+    evidence_id: "meeting_doc_146846#p002_c0013"
+    page_number: 2
+    role: "delivered_route_identity_and_trip_pattern"
+    source_id: "meeting_doc_146846"
+    source_path: "raw/sources/meeting_doc_146846/blocks.jsonl"
+    source_quote: "BM2"
+    text_sha256: "sha256:5f01e56329716c49b27e65e1edf1dbaf0ded2ee45f8a411a6dd0a7235b4905bb"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0005"
+    evidence_id: "meeting_doc_160441#p003_c0005"
+    page_number: 3
+    role: "retrospective_route_identity_and_trip_pattern"
+    source_id: "meeting_doc_160441"
+    source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
+    source_quote: "BM2"
     text_sha256: "sha256:a1cb3550e548ba0e4cc902da5e264574b62e2318fcfe0a6f5418eb28d04373de"
     text_source: "raw_text"
 ---

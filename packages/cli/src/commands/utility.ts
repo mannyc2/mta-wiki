@@ -23,9 +23,15 @@ Usage:
   bun run harness seed-pilot
   bun run harness materialize
   bun run harness export-jsonl [--verify]   On-demand JSONL dump of the live DB; --verify asserts DB == shadow JSONL
-  bun run harness export-release [--id <release-id>] [--force] [--quality-report <path>]   Versioned release snapshot under data/exports/releases/
+  bun run harness export-release [--id <release-id>] [--force] [--set-latest] [--quality-report <path>]   Versioned release snapshot; --set-latest explicitly promotes it
   bun run harness export-site                                      Build static HTML under dist/site and run Pagefind
   bun run harness quality-report [release-id]                    Write deterministic release quality checks under data/quality/
+  bun run harness operational-coverage [--output <dir>] [--decisions <dir>] [--search-receipts <dir>] [--start YYYY-MM-DD --end YYYY-MM-DD]   Write the deterministic completion ledger, priority queue, and honest coverage matrix
+  bun run harness coverage-matrix [same options]                 Alias for operational-coverage
+  bun run harness forecast-frontier --as-of YYYY-MM-DD --grace-days <n> [--coverage <dir>] [--output <dir>]   Write the deterministic forecast-to-realized acquisition target list
+  bun run harness operational-recovery-proposals                 Validate and summarize the reviewed recovery proposal tree
+  bun run harness qbnr-recovery-draft <reviewed-spec.json>       Strictly expand one QBNR batch into the proposed queue
+  bun run harness operational-recovery-apply <proposal-id> [--force]   Dry-run or apply one accepted proposal into an append-only journal
   bun run harness quality-seeded-defects --seed semqa-v1          Write deterministic seeded-defect fixtures
   bun run harness quality-judge-calibration --verdicts <jsonl>    Score judge verdicts against frozen calibration fixtures
   bun run harness semantic-sweep [--dry-run] [--limit <n>] [--kinds <k1,k2>] [--source <source-id>] [--batch-size <n>]   Judge evidence support into data/semantic-sweep/

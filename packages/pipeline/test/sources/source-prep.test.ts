@@ -6,6 +6,7 @@ import { repoRoot } from "@mta-wiki/core/paths";
 import {
   buildSourceBlocksFromText,
   canonicalizeSourceNormalizationMarkdown,
+  extractMtaDrupalDataTableText,
   pdfSourceEvidenceReadiness,
   readChandraSourceBlocks,
   rebuildSourceBlocks,
@@ -79,6 +80,33 @@ describe("buildSourceBlocksFromText", () => {
       block_kind: "heading",
       raw_source_path: "raw/sources/test_source/text.txt",
     });
+  });
+});
+
+describe("extractMtaDrupalDataTableText", () => {
+  it("recovers client-rendered route dates and changes as one citeable row", () => {
+    const settings = {
+      mtaDatatable: {
+        21: {
+          csvData: {
+            data: [
+              {
+                Route: { value: "B62" },
+                P1: { value: "<p><strong>Changes to the B62 took effect August 31, 2025.</strong></p>" },
+                P2: { value: "<p>The B62 will be extended along 21 St to Astoria Houses.</p>" },
+                P3: { value: "" },
+              },
+            ],
+          },
+        },
+      },
+    };
+    const escaped = JSON.stringify(settings).replace(/</gu, "\\u003C").replace(/>/gu, "\\u003E");
+    const html = `<script type="application/json" data-drupal-selector="drupal-settings-json">${escaped}</script>`;
+
+    expect(extractMtaDrupalDataTableText(html)).toEqual([
+      "B62 | Changes to the B62 took effect August 31, 2025. | The B62 will be extended along 21 St to Astoria Houses.",
+    ]);
   });
 });
 

@@ -4,6 +4,313 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-17
+
+### Relationship Integrity Enforcement and rc22
+
+- Promoted the versioned relationship contract to enforced mode after two clean deterministic
+  warning-mode captures and a seven-gate zero-violation migration proof. All `21,422` canonical
+  relations are covered by `704` typed rules and `1,008` reviewed endpoint-family shapes. SQL
+  foreign-key, endpoint, type, evidence, completeness-selector, and waiver violations are zero;
+  the graph retains only `45,983` orphan informational rows and three explicitly reviewed shape
+  advisories.
+- Completed the full completeness migration without granting eligibility through waivers: `134`
+  projectable occurrences satisfy every mandatory role, `1,231` other operational events have
+  reviewed versioned non-projectable dispositions, all `395` routes are GTFS-accounted or explicitly
+  disposed, and all `669` bus-lane treatments have exact evidence-bound physical scope or a reviewed
+  non-projectable disposition. Every completeness warning bucket is zero.
+- Exhausted the `321` registry-only bus-lane acquisition queue with four-channel search receipts and
+  exact exclusion artifacts for every row. Fifty-four authoritative route-treatment bindings are
+  materialized; one physical segment is proved, while no exact date/phase or operational
+  occurrence is manufactured. All `321` rows remain unresolved for Tracker projection pending
+  complete occurrence-grade authoritative evidence.
+- Cut immutable, unpromoted manifest-v4 release `v1-rc22` from generator commit `a874d93a`: manifest
+  SHA-256 `249ef6be1d927e44d405c11bcff643d18b2133e5407be37dc7612f935a1b53e4`.
+  Its `225`-artifact enforced relationship bundle is content-addressed; all `20` rc21 data files,
+  including relations and operational occurrences, remain byte-identical. Tracker replay was not
+  run because its read-only importer supports manifest v3 / occurrence contract v1, while rc22 is
+  manifest v4 / occurrence contract v2. `LATEST` intentionally remains `v1-rc5`.
+
+## 2026-07-14
+
+### Tracker rc19 Reject Reconciliation
+
+- Reconciled all `473` non-authorizing Tracker rc19 reject recommendations one-for-one against the
+  pinned candidate set, hard-gate triage, deep review, corrected reconciliation, and immutable MTA
+  Wiki `v1-rc19` manifest. The deterministic ledger reproduces the `434` mechanical rows (`219`
+  spine-only, `152` spine-plus-calendar, `63` calendar-only) and `39` deep-review rows. Every row
+  remains explicitly non-authorizing and carries its evidence hashes, owner, action, and blocker.
+- Repaired the two honestly source-fixable Gun Hill Road candidate identities with official NYC DOT
+  route/segment evidence for `BX28` and `BX38` and an MTA-stated October 31, 2023 completion phase.
+  The bounded 3.1-mile treatment folds both sources' provenance into one identity. Completion remains
+  a milestone rather than first operational onset, so no occurrence or study authorization is
+  fabricated; both rows still require an exact treated-lane outcome spine and a phase-preserving
+  downstream consumer.
+- After the source repair, all `473` rows remain blocked: exclusive dispositions are `321` MTA
+  route/treatment binding gaps, `2` MTA date/phase gaps, `2` Tracker exact-lane gaps, `112` Tracker
+  pattern-grouping gaps, `8` outcome-window gaps, `8` causal/confounder rejections, and `20`
+  intentionally non-independent later ACE phases. Exact non-exclusive Tracker work packets preserve
+  overlaps and require candidate-set-bound human approval; no gate, calendar, spine, or causal claim
+  was weakened.
+- Cut immutable, unpromoted release `v1-rc20` from generator commit `7b6b89ba`: manifest SHA-256
+  `a2e9147fbb3db3b27a48df27f9550a8b31ab28bc85e30b7166d75b46b54e1a08`. Two fresh exports
+  reproduced all `20` addressed files and the manifest byte-for-byte. The operational-occurrence and
+  route-anchor SHA-256 values remain unchanged from rc19 at
+  `424ee1ceed24bc8c8af77d49e328c0f6bb7859e88a619bbb79a0c13ac7ed5399` and
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`; the deterministic quality
+  report resolves all `134,586` evidence references. `LATEST` intentionally remains `v1-rc5`.
+
+## 2026-07-13
+
+### Queens Redesign Operational Corpus Completed
+
+- Completed the bounded official Queens Bus Network Redesign service-change corpus: all `127`
+  actionable change units now have either a reviewed, evidence-backed operational occurrence (`121`)
+  or a reviewed terminal service-end disposition (`6`); the three explicit no-change rows remain
+  separately terminal. The deterministic QBNR work ledger has zero remaining, projectable-pending,
+  or canonical-then-terminal units.
+- Promoted the final `52` source-complete route units as independent one-route occurrences: `15`
+  atomic treatments and `37` route-redesign bundles carrying all `116` literal canonical members.
+  The promotion is fail-closed over five hash-pinned accepted proposals, exact canonical evidence,
+  `220` scoped relations, and immutable `v1-rc8` route anchors. Q9 resolves to GTFS `Q09`; the reviewed
+  Q52 exception resolves only to `route_q52-sbs-queens` / GTFS `Q52+`; QM63/QM64/QM68 scope only their
+  successor identities.
+- The operational fixture and rc8-pinned coverage projection now contain `124` occurrences, `123`
+  study-eligible occurrences, and `126` eligible occurrence-route pairs (`39` atomic, `85` bundles).
+  Ninety-eight broad inherited QBNR route/treatment diagnostics are terminally superseded by the
+  route-scoped occurrences. The three route-rename events intentionally have no such diagnostics
+  because their canonical event family is outside the broad operational-family gap generator.
+- Cut immutable local audit release `v1-rc9` from generator commit `8fa94aac`: manifest SHA-256
+  `9be47d3294e08b64b103188ad2247b7c8f920507461a511ef5ae46ca3298ec80`, all `20`
+  addressed files independently reproduced byte-for-byte, and route anchors unchanged from
+  `v1-rc8` at SHA-256 `874d2233713d624e127f6f690a42088ee9473873fb8ebff3d8f21cfb88916dc4`.
+  The release carries the `124`/`123`/`126` occurrence totals above; its deterministic quality
+  report resolves all `134,143` evidence references and reports zero open semantic invariants.
+  `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
+- Reconciled the final `38` open QBNR completion-ledger diagnostics without changing the occurrence
+  fixture: `27` coarse phase/umbrella diagnostics are terminally superseded by the `121` reviewed
+  route-level occurrences; two false August 21 OCR events and their timeline relations were
+  receipt-backed and retracted, structurally removing eight more gaps. Three promotional-transfer
+  policy gaps remain intentionally open because route applicability and delivered status are not yet
+  evidenced. The rc8-pinned ledger now has `499` priority rows: `233` open and `266` terminal.
+- Recovered the official 2023–2024 Fare-Free Bus Pilot route scope from its retrospective MTA
+  evaluation. Four GTFS-addressable routes (`BX18A`, `BX18B`, `S46`, and `S96`) now remain distinct
+  from the report's `Bx18A/B` and `S46/S96` aggregate metric surfaces; all seven participant route ids
+  have delivered project scope, and fare resumption is a positive `fare_collection` treatment dated
+  September 1, 2024. Cut byte-reproducible internal anchor release `v1-rc10` from recovery commit
+  `2b1bf535`: manifest SHA-256 `e0a70e9af30035a6585d2f195366b389a6fe9bcceb0120763a461e581ab5551c`,
+  route-anchor SHA-256 `43805bea087746a3a7c518c72a1e7c6ea161b16d26fc691dca5c3a1f84061d8b`,
+  and deterministic quality-report SHA-256 `45202e375258c03a6c579630790f27a7252ae888edfe6c98591de04eb9b85ceb`.
+  Exactly four of `403` route-anchor rows changed from `v1-rc9`; all `134,171` evidence references
+  resolve. Occurrence totals intentionally remain unchanged until reviewed promotion, and `LATEST`
+  remains `v1-rc5`.
+- Promoted the retrospective pilot launch and fare-resumption events as two approved seven-route
+  atomic occurrences against immutable `v1-rc10` anchors. The launch uses the existing zero-fare
+  treatment; resumption uses the distinct positive fare-collection-resumption treatment. Aggregate
+  `Bx18A/B` and `S46/S96` performance facts remain unsplit. The fixture now contains `126`
+  occurrences, `125` study-eligible occurrences, and `140` eligible route pairs (`41` atomic, `85`
+  bundles, `3` multi-route). Ten duplicate, prospective, or broad diagnostics are terminally
+  superseded, reducing the `499`-row priority ledger from `233` to `223` open rows.
+- Recovered Broadway/Q70 delivery from two newly staged official city retrospectives while
+  preserving the May `Mid June` forecast as planned and the aggregate project scalar as proposed.
+  The separate installed-status event has direct `Q70+` route and center-running bus-lane scope;
+  June 10 remains only a status-as-of upper bound. An exhaustive six-source search terminally records
+  the exact onset as absent rather than fabricating a publication-date onset. Eight Fordham/Broadway
+  forecast diagnostics are also terminal `not_applicable`, leaving the `501`-row priority ledger at
+  `166` open and `335` terminal rows. Cut unpromoted audit release `v1-rc11`: manifest SHA-256
+  `b0f9323f22b0161da93a0839588deae6791d39cbe79a32750b2729e3b672aa0b`, route-anchor SHA-256
+  `27edf0a8cd219cf6281898fb30453942e044593712ed5e8f958958e8944e842f`; `LATEST` remains `v1-rc5`.
+  Publisher authority matching is now shared across export and coverage, and semantic supersedes
+  rewrite both canonical endpoints and their local-observation pointers.
+- Recovered the complete 2024 lifecycle of the six-route express-bus trip package. The April MTA
+  announcement and July retrospective now resolve one realized June 30 addition occurrence; a
+  hash-pinned official schedule query establishes the September 1 `2024Sep` bundle boundary, the
+  September 3 weekday counts reproduce all eight direction-specific trip removals, and the December
+  retrospective confirms delivery of the distinct Fall discontinuation treatment. The two approved
+  six-route atomic occurrences raise the projection to `128` occurrences, `127` eligible occurrences,
+  and `152` eligible route pairs. Five unavoidable broad multi-route/treatment/status diagnostics and
+  the duplicate month-only planning row are terminally superseded, leaving the `506`-row priority
+  ledger at `165` open and `341` terminal rows.
+  Cut byte-reproducible unpromoted release `v1-rc12`: manifest SHA-256
+  `c651829b74907af51956227f6e3700781a2c540bef8d319e98d281a84d0c02a3`, route-anchor SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`; `LATEST` remains
+  `v1-rc5`. The source-authority fix token-bounds bare `press`, preserves explicit press-release
+  precedence, and recognizes staff summaries as board material. Its audited corpus sweep intentionally
+  backfills `65` previously unset board-material tiers, corrects four existing `press`/`express`
+  false positives, and classifies the two new sources; the audit records `71` source transitions total.
+- Recovered the exact Bx36 Automated Camera Enforcement activation by repairing the already-canonical
+  Tremont Avenue event rather than creating a duplicate. A November 2024 NYC DOT presentation binds
+  Bx36, the source-scoped camera-enforcement treatment, and the realized June 20, 2024 activation in
+  one evidence block; the date is explicitly the camera/warning-period onset, not later violation
+  issuance. The earlier unnamed fourteen-route May plan remains prospective. One approved atomic
+  occurrence raises the projection to `129` occurrences, `128` eligible occurrences, and `153`
+  eligible route pairs. Five unsafe broad-project/plan diagnostics are terminally superseded, leaving
+  the `508`-row priority ledger at `162` open and `346` terminal rows. Cut byte-reproducible unpromoted
+  release `v1-rc13`: manifest SHA-256
+  `81ecfa2de1f2f52d9ef41617f49be7fab9f8a4b571a28c04a09e349c4c4f89bc`, route-anchor SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`; `LATEST` remains `v1-rc5`.
+- Recovered three additional study surfaces without weakening the evidence gates: delivered Summer 2024
+  DeKalb/Lafayette temporary bus lanes now have direct B38 scope while an exhaustive receipt preserves the
+  exact onset as absent; the eight-route express-bus weekday trip package is one realized March 2025
+  occurrence; and the B12 Route Improvement Initiative is one January 2024 program-level service-management
+  occurrence whose detailed tactics explicitly do not inherit that onset. Provenance-preserving semantic
+  supersession now retains both source/local identities, submissions, and evidence when reviewed
+  source-scoped treatment duplicates are folded. The projection contains `131` occurrences, `130`
+  study-eligible occurrences, and `162` eligible route pairs; the `510`-row priority ledger has `155` open
+  and `355` terminal rows.
+- Cut byte-reproducible unpromoted release `v1-rc14` from generator commit `4d28f1a8`: manifest SHA-256
+  `77f97af3523041f5f6ae9ed31ca3e38db0687e0d8efbe16ee81e36a108614994`. All `20` addressed files were
+  independently reproduced byte-for-byte and reverified against the manifest; route anchors remain unchanged
+  at SHA-256 `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
+  `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
+- Recovered the bounded Flatbush Avenue Phase 1 center-running bus-lane installation from an official
+  September 25, 2025 NYC DOT start announcement and the April 2026 delivery retrospective. One approved
+  month-precision occurrence carries only B41, B67, and the Livingston Street-to-State Street atomic
+  `bus_lane`; the separate Fall completion milestone and wider Phase 2 bundle remain non-duplicative history.
+  Seven duplicate planning events were provenance-folded, and all `21` residual Phase 1/planning diagnostics
+  are terminal. The projection now contains `132` occurrences, `131` eligible occurrences, and `164` eligible
+  route pairs; the `483`-row priority ledger has `107` open and `376` terminal rows.
+- Cut byte-reproducible unpromoted release `v1-rc15` from generator commit `44f0c888`: manifest SHA-256
+  `cb755c2a67460188d2286337dddc13c72e827ccebd2a2616bdc828111a2be83a`. All `20` addressed files were
+  independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
+- Recovered the May 2025 Automated Camera Enforcement expansion from a five-row official MTA Open Data
+  cut. The program took effect on M2/M4 on May 19 and BX5/M100/M42 on May 27, producing two exact-day,
+  atomic occurrences without treating the dates as later fine-bearing onsets. The earlier April forecast
+  remains planned, the malformed ACE-to-Jamaica edge is retracted, and seven residual diagnostics are
+  terminal. The projection now contains `134` occurrences, `133` eligible occurrences, and `169` eligible
+  route pairs; the `488`-row priority ledger has `105` open and `383` terminal rows.
+- Cut byte-reproducible unpromoted release `v1-rc16` from generator commit `6099c03b`: manifest SHA-256
+  `c6c3dd7c3f3636f13102ddefd85e91f72635cca686f8eb531f2f05529a17713c`. All `20` addressed files were
+  independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
+  `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
+- Corrected `26` source-time implementation forecasts to the prospective `planned` lifecycle without
+  changing their dates, identities, relations, or evidence. Evidence-bound decisions terminalized all
+  `104` resulting study diagnostics as not applicable; no forecast was promoted to an occurrence. The
+  `488`-row priority ledger now has one open row and `487` terminal rows. The sole open row is the real
+  Fall 2024 Tremont/Grand Concourse Bx36 queue-jump installation, retained for separate curation and
+  exact-onset adjudication.
+- Cut byte-reproducible unpromoted release `v1-rc17` from generator commit `b26fb86c`: manifest SHA-256
+  `70fe3d6279868eb25f180a34fe6d32c9786a5f7645d4a4cd904640b65cc1aa63`. All `20` addressed files were
+  independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239` and occurrence totals remain
+  `134` total, `133` eligible, and `169` eligible route pairs. `LATEST` intentionally remains `v1-rc5`.
+- Recovered the delivered Fall 2024 Grand Concourse/Tremont Avenue queue-jump signal with direct Bx36
+  route and signal-priority treatment scope from the official November NYC DOT deck. The source proves
+  installation but only at season precision; an exhaustive `24`-source, captured-registry, and official-web
+  search found no exact physical onset, so November 4 remains only a status-as-of bound. The final date gap
+  is terminal `absent_in_source`, bringing the `488`-row priority ledger to zero open and `488` terminal
+  rows. Occurrence totals remain `134`/`133`/`169` because the day/month study gate was not weakened.
+- Cut byte-reproducible unpromoted release `v1-rc18` from generator commit `af5133aa`: manifest SHA-256
+  `f5f2582270194ba49dc5ccbd2753e6019e00d23cdcb2a148c612b257c2eb9478`. All `20` addressed files were
+  independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
+  `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
+- Recovered the official December 8, 2025 ACE warning-phase activation as one bounded B60/B68/M57
+  occurrence with one atomic `automated_bus_lane_enforcement` treatment. The prior non-study decision
+  is preserved as retired history because it conflated warning-phase activation with the later,
+  unasserted fine-bearing onset. Both successor diagnostics are terminal, bringing the priority ledger
+  to `489`/`489` terminal; the projection now contains `135` occurrences, `134` eligible occurrences,
+  and `172` eligible route pairs without weakening the exact-date or scope gates.
+- Cut byte-reproducible unpromoted release `v1-rc19` from generator commit `35984e9d`: manifest SHA-256
+  `c5d4563d37815d330b37898774a027fb07563335163fcfccbaeebfc3da81720f`. All `20` addressed files were
+  independently regenerated and matched byte-for-byte; route anchors remain unchanged at SHA-256
+  `517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239`.
+  `LATEST` intentionally remains `v1-rc5` pending downstream cutover.
+- Added a deterministic forecast-to-realized acquisition frontier with explicit `as_of` and grace-period
+  inputs. Terminal operational diagnostics no longer hide future acquisition work: the July 13, 2026 cut
+  keeps `47` targets open even though all `148` associated study diagnostics are terminal, with `39` due,
+  `3` date-unresolved, and `21` same-subject realized candidates held for review rather than auto-closed.
+  The target-list JSON/Markdown SHA-256 values are `c314ce6c0e467e4c408e5aa5e89e97e8e04fbbf2a4e793942663a7e2c7d2825e`
+  and `0ed153ca57f552e17512f8869ea56a6f86b849f35bc7127374ab95ae42c3bb8b`.
+
+## 2026-07-12
+
+### Operational Corpus Completion Baseline
+
+- Split operational-anchor reporting into `633` broad rows, `7` reviewed overlays, and `633`
+  distinct timeline-linked event ids. The canonical operational-family denominator is `1,247`,
+  leaving `614` unlinked events; reviewed overlays no longer inflate event coverage. Added entry-gate
+  counters and made missing scope mutually exclusive with missing scope-evidence reasons.
+- Added a deterministic operational completion ledger and CLI. The first fingerprinted baseline has
+  `2,735` explicit gap rows and a bounded `275`-row priority feeder across route, treatment,
+  date-precision, delivered-status, and timeline-subject dimensions. The strict sequential
+  route-resolved treatment queue contains `15` rows. The matrix separately reports `5` reviewed
+  occurrences, `4` eligible occurrences, and `7` eligible occurrence-route pairs.
+- Added the reviewed recovery queue for strict relation and observation-bundle proposals. Accepted
+  proposals require owner/delegate attribution plus a passed adversarial verifier; apply writes a
+  new append-only submission journal with proposal provenance, materializes through the normal
+  pipeline, refreshes coverage, verifies the result, and is resumable and idempotent across late
+  failures. Corpus-wide record-id assignment is checked before journal creation, and one exact
+  proposal-derived journal validator gates both retry/apply and repository validation. The
+  repository validator now gates the complete proposed/applied/rejected tree.
+- First reviewed ledger pass closed `7` false-open route/treatment/status rows whose broad inherited
+  anchors are superseded by approved, study-eligible Q7, Q110, and September 2025 ACE occurrences.
+  Q110 now projects as exactly one June 29, 2025 `route_redesign` candidate. The bounded queue has
+  `268` open and `7` terminal priority rows. The ledger remains the work denominator, not a claim
+  that the remaining gaps are recoverable or absent; proposals, curation decisions, and exhaustive
+  search receipts remain the next pass.
+- Applied the first reviewed observation-bundle recovery journal against the official Queens service-change
+  table. Existing Q1, Q3, and Q8 routes gained exact row evidence; the canonical corpus gained `3` realized
+  events, `5` literal treatments, and `11` row-scoped relations. Approved occurrences preserve Q1 as one
+  three-member `route_redesign` bundle and Q3/Q8 as atomic `bus_stop_or_boarding` changes, producing one
+  route candidate apiece and no Q36 cross-product. Coverage now reports `8` occurrences, `7` eligible
+  occurrences, `10` eligible occurrence-route pairs, `268` open priority rows, and `13` terminal rows.
+  The official table contains `127` de-duplicated actionable change units. A strict all-cell audit found
+  and repaired omitted Hempstead/Q82 replacement and stop-removal treatments on Q110 while preserving its
+  stable occurrence identity. A second reviewed recovery promoted literal stop-removal changes on
+  Q19/Q29/Q50/Q54/Q59/Q72 as six independent, one-route atomic occurrences with no cross-products.
+  A third reviewed recovery promoted Q28/Q66/Q84/Q100/B57/QM1/QM7/QM16/QM17/QM18 as ten more
+  independent one-route occurrences. It preserves eight literal `bus_stop_or_boarding` treatments and
+  two `service_pattern` treatments without Q12/Q63/Q5 cross-products. A fourth reviewed recovery promoted
+  17 uniquely anchored route rows as exact two-member bundles, preserving one `bus_stop_or_boarding` and
+  one `service_pattern` member apiece while using project evidence only for the reviewed `route_redesign`
+  analysis family. No referenced-route cross-products were introduced. Coverage now reports `41`
+  occurrences. A fifth reviewed recovery promoted the `21` fully source-complete ordinary service-change
+  rows in its existing-anchor cohort as one-route bundles carrying every canonical row treatment (`2`–`6`
+  members). Literal member families
+  remain unchanged; only the project-backed analysis family is `route_redesign`, and alternative-route
+  treatment context does not become route scope. Coverage now reports `62` occurrences, `61` eligible
+  occurrences, `64` eligible occurrence-route pairs, `268` open priority rows, and `121` terminal rows.
+  A sixth reviewed recovery promoted eight new-route service starts: Q14/Q51/Q115/QM65 as atomic
+  `service_pattern` occurrences and Q61/Q80/Q82/Q89 as complete two-to-four-member bundles. Referenced
+  predecessor and replacement routes remain treatment context only. Coverage now reports `70` occurrences,
+  `69` eligible occurrences, `72` eligible occurrence-route pairs, `268` open priority rows, and `137`
+  terminal rows. A seventh reviewed recovery promoted Q25 as one two-member bundle on only the current
+  Q25 identity; the discontinued Limited service remains `service_pattern` context and does not create a
+  route identity or candidate. Coverage now reports `71` occurrences, `70` eligible occurrences, `73`
+  eligible occurrence-route pairs, `268` open priority rows, and `139` terminal rows. An eighth reviewed
+  recovery promoted only the current Q48 Glen Oaks service start as a two-member bundle; its retired
+  historical route remains null-GTFS `historical_retired` context and does not create an occurrence or
+  candidate. Coverage now reports `72` occurrences, `71` eligible occurrences, `74` eligible
+  occurrence-route pairs, `268` open priority rows, and `141` terminal rows. Sixty-nine QBNR change units
+  are clause-complete, leaving `58`: `51` create-route units, one identity exception, and six
+  canonical-then-terminal units. Three explicit no-change rows are tracked separately.
+
+## 2026-07-11
+
+### Operational Anchor Contract V1 Audit Canary
+
+- Added the evidence-safe `mta-wiki-operational-anchors/v1` release projection and manifest v2
+  content hashes. Operational changes retain raw date literals, normalized precision, independent
+  route/treatment scope, evidence coverage, authority, review state, conflicts, and reason-coded
+  exclusions; only realized, month-or-finer, fully evidenced, unambiguous official-source rows are
+  marked study-eligible.
+- Added append-only reviewed scope decisions for three source-backed treatment timelines without
+  mutating the frozen canonical JSONL corpus. Direct treatment-to-event extraction is now allowed
+  only when the source explicitly states the treatment date. Release exports fail closed when the
+  configured accepted-decision directory is missing and include the exact validated decision set
+  as a deterministic, manifest-addressed snapshot.
+- Cut local audit canary `v2-temporal-canary-5`: `633` anchor rows, `3` study-eligible rows, manifest
+  SHA-256 `eb08d0045be158c98d62df91d6baf601b75bad16bca8a157aafb67af11461af7`, and accepted-review
+  snapshot SHA-256 `07ac7fac34534a35977cff04d8d4f4b3bf175c2575d75f5b85b3d871722a9dfd`.
+  This is a manifest-pinned integration canary, not an external publication decision.
+- Active caveat: current eligibility is intentionally sparse; `599` rows lack treatment scope or
+  evidence, `582` lack route scope or evidence, and `304` have an ambiguous/non-realized lifecycle
+  phase. Consumers must retain exclusions and must not infer route-treatment cross-products or
+  promote ineligible rows.
+
 ## 2026-07-04
 
 ### Owner Direction: Defer V2 Track

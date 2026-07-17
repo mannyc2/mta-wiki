@@ -1,31 +1,61 @@
 ---
 managed_by: "mta-wiki-materializer"
-record_id: "source_meeting-doc-85841_2"
+record_id: "source_meeting-doc-85841"
 record_kind: "source"
-display_name: "Test submission"
+display_name: "Capital Program Committee Meeting Book - April 2022"
 source_id: "meeting_doc_85841"
 source_ids:
   - "meeting_doc_85841"
-local_observation_id: "source_meeting_doc_85841_b"
+local_observation_id: "source_meeting_doc_85841"
 local_observation_ids:
-  - "source_meeting_doc_85841_b"
+  - "source_meeting_doc_85841"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-23T13:33:35.173Z"
-raw_text: "test"
+generated_at: "2026-06-23T13:31:27.865Z"
+raw_text: "Capital Program Committee Meeting - April 2022. Metropolitan Transportation Authority. Includes minutes, CBTC project updates, safety reports, procurement actions, and capital program status."
 submission_ids:
-  - "sub_2348ce80a7d7d4a0"
+  - "sub_568930e31cdd3c06"
 payload:
-  content_type: "test"
-  title: "test"
+  authority_tier: "board_material"
+  content_type: "meeting_book"
+  date_text: "April 2022"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-04"
+    precision: "month"
+    raw_text: "April 2022"
+  description: "Capital Program Committee meeting materials including meeting minutes from March 28, 2022, Signals and Train Control projects update, safety summary, M/WBE/DBE/SDVOB participation, capital program commitments and completions, and procurement actions for April 2022."
+  published_date_normalized: "2022-04"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Capital Program Committee Meeting"
 evidence_refs:
   -
     block_id: "p001_c0002"
     evidence_id: "meeting_doc_85841#p001_c0002"
     page_number: 1
+    role: "title"
     source_id: "meeting_doc_85841"
     source_path: "raw/sources/meeting_doc_85841/blocks.jsonl"
     text_sha256: "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_85841#p001_c0003"
+    page_number: 1
+    role: "meeting_title"
+    source_id: "meeting_doc_85841"
+    source_path: "raw/sources/meeting_doc_85841/blocks.jsonl"
+    text_sha256: "sha256:80dba0324d80f52b33f3d19d63a02c2d720e350d8fe7f9a14b7effb1f982c93c"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_85841#p001_c0004"
+    page_number: 1
+    role: "date"
+    source_id: "meeting_doc_85841"
+    source_path: "raw/sources/meeting_doc_85841/blocks.jsonl"
+    text_sha256: "sha256:f2e554cd08cab84f095beac706aabd06972ea8501d1e6e17392e2ff3c8812802"
     text_source: "raw_text"
 ---
 

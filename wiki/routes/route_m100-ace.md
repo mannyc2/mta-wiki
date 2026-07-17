@@ -25,10 +25,12 @@ source_ids:
   - "2015_04_14_brt_125th_cb10_post_implementation_update"
   - "broadway_157_st_220_st_cb12_mar2025"
   - "m60_sbs_125th_street"
+  - "mta_ace_routes_may2025_cut"
   - "mta_automated_camera_enforcement"
 local_observation_id: "route_m100_ace"
 local_observation_ids:
   - "route_125th_st_m100"
+  - "route_ace_may2025_m100"
   - "route_m100_125th_workshop"
   - "route_m100_2012_09_125th_workshop"
   - "route_m100_2012_12_125th_workshop_2"
@@ -49,7 +51,7 @@ local_observation_ids:
   - "route_m60_sbs_125th_m100"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T18:54:41.101Z"
+generated_at: "2026-07-13T15:20:30.841Z"
 raw_text: "M100"
 submission_ids:
   - "sub_05f6fc8f5580208d"
@@ -69,6 +71,7 @@ submission_ids:
   - "sub_ab74f42b39f5900d"
   - "sub_b76f5f57f2b74c60"
   - "sub_c3c0aa4b9aa344d4"
+  - "sub_e18376bd6c81a6ba"
   - "sub_eb73cd7e43456ae2"
   - "sub_ff2a3575897fba3b"
 payload:
@@ -89,6 +92,7 @@ payload:
     route_type:
       - "local"
       - "Local"
+      - "bus"
     route_type_normalized:
       - "bus"
       - "local"
@@ -113,6 +117,7 @@ payload:
   route_type: "local"
   route_type_normalized: "bus"
   service_variant: "local"
+  source_literal: "M100"
   streets: "Broadway / Amsterdam Av"
 evidence_refs:
   -
@@ -351,6 +356,16 @@ evidence_refs:
     source_path: "raw/sources/m60_sbs_125th_street/blocks.jsonl"
     source_quote: "Bx15, M100 and M101 continue to stop on every block on 125 th Street"
     text_sha256: "sha256:ba8fca34927b736796eb06dc7fd35d4a051ff1f94ae85f5e10758b23366e17d9"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0005"
+    evidence_id: "mta_ace_routes_may2025_cut#p001_b0005"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_ace_routes_may2025_cut"
+    source_path: "raw/sources/mta_ace_routes_may2025_cut/blocks.jsonl"
+    source_quote: "\"route\":\"M100\""
+    text_sha256: "sha256:1ade6dcc0b19712835cb6da704c1adf3199af5fdffd3771615f9b11404b7e286"
     text_source: "raw_text"
 ---
 

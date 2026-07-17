@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "contract_id": "relationship-dispositions-v1",
+  "reviewed_at": "2026-07-15",
+  "reviewed_by": "codex-relationship-integrity-campaign",
+  "inputs": [
+    {
+      "path": "data/exports/releases/v1-rc20/operational_occurrences.jsonl",
+      "bytes": 826833,
+      "sha256": "424ee1ceed24bc8c8af77d49e328c0f6bb7859e88a619bbb79a0c13ac7ed5399",
+      "row_count": 135
+    },
+    {
+      "path": "data/quality/operational-coverage/recoverability-ledger.jsonl",
+      "bytes": 21818301,
+      "sha256": "f9bcecfa4706c43b5369759d456b9eeee35beeab0154c029ed9b527b4a9b6bac",
+      "row_count": 2934
+    }
+  ],
+  "input_aggregates": {
+    "submission_journals": {
+      "file_count": 2757,
+      "bytes": 138918468,
+      "sha256": "c7ef95717f0b588e0e184a227c7c182df13cae71455f85cfbc1f6695566eaa20",
+      "path_roots": [
+        "data/submissions/*.jsonl"
+      ]
+    },
+    "materialization_controls": {
+      "file_count": 5,
+      "bytes": 1183013,
+      "sha256": "a6e5ac01cc155d270402b4d95be9ad3a2fe5f6b33ee91d634e35fdb469d7a0a2",
+      "path_roots": [
+        "data/identity-overrides/*.json",
+        "data/semantic-corrections/*",
+        "data/submission-overrides/retired.json"
+      ]
+    }
+  },
+  "derived_inputs": {
+    "canonical_record_count": 85411,
+    "canonical_graph_sha256": "f4334924ea61b8007c7f6b7fdd77e30a2eb018138793c7331654685f76d4e7dd",
+    "operational_event_count": 1362
+  },
+  "artifacts": [
+    {
+      "path": "review.jsonl",
+      "bytes": 11123543,
+      "sha256": "0a10e057c15e7646c67d49fbe3632f6d4bbcd3c308fd41c6ef362ae1bf9a1951",
+      "row_count": 1362
+    },
+    {
+      "path": "summary.json",
+      "bytes": 590,
+      "sha256": "98aae2edbef4586506240bb86c5ff4a83875e94c1520fc9895c65d10c604bd80"
+    },
+    {
+      "path": "report.md",
+      "bytes": 800,
+      "sha256": "b9d335f492664420319774b3dcedc382b176cf851ec7619ffa030d7f84e4f1be"
+    }
+  ],
+  "manifest_payload_sha256": "0f8f2190326624511fca83bec014e6a06662c1180ee358340b97fd88f6b9439a"
+}

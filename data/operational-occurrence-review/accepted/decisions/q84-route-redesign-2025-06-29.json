@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "decision_id": "q84-route-redesign-2025-06-29",
+  "review_state": "approved",
+  "accepted_at": "2026-07-12T22:47:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-12",
+  "rationale": "The official MTA Q84 row binds a realized June 29, 2025 onset, the Q84 route, and one canonical limited-stop pattern treatment in the same evidence block. This occurrence preserves the literal bus_stop_or_boarding family and does not invent a broader atomic route_redesign treatment or inherit any other Queens route scope.",
+  "occurrence_id": "occurrence:9550bacedc3391a3365a6e95",
+  "founding_key": "event:event_q84-qbnr-service-change-2025-06-29",
+  "observation_event_record_ids": [
+    "event_q84-qbnr-service-change-2025-06-29"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-q84",
+    "relation_qbnr-2025-has-q84-limited-stops",
+    "relation_qbnr-has-q84-service-change-2025-06-29"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-06-29",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_q84-qbnr-service-change-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0081"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-q84-service-change-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0081"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_q84-queens-bus-redesign",
+      "gtfs_route_id": "Q84",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_q84-queens-bus-redesign",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0081"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-q84",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0081"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "atomic",
+  "treatment": {
+    "kind": "atomic",
+    "member": {
+      "treatment_record_id": "treatment_q84-limited-stops-2025",
+      "treatment_family": "bus_stop_or_boarding",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_q84-limited-stops-2025",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0081"
+        },
+        {
+          "role": "treatment_scope",
+          "record_id": "relation_qbnr-2025-has-q84-limited-stops",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0081"
+        }
+      ]
+    }
+  }
+}

@@ -6,6 +6,7 @@ import { ingestCommands } from "./commands/ingest.js";
 import { materializeCommands } from "./commands/materialize.js";
 import { messageValue, optionValue, type Command, type CommandHandler, type ParsedArgs } from "./commands/shared.js";
 import { ontologyCommands } from "./commands/ontology.js";
+import { qualityCommands } from "./commands/quality.js";
 import { replayCommands } from "./commands/replay.js";
 import { sourcesCommands } from "./commands/sources.js";
 import { utilityCommands } from "./commands/utility.js";
@@ -119,6 +120,14 @@ function parseCommand(argv: string[]): ParsedArgs {
     "quality-report",
     "quality-seeded-defects",
     "quality-judge-calibration",
+    "operational-coverage",
+    "coverage-matrix",
+    "forecast-frontier",
+    "operational-recovery-proposals",
+    "operational-recovery-apply",
+    "qbnr-recovery-draft",
+    "relationship-integrity",
+    "relationship-completeness",
     "semantic-sweep",
     "fact-dedup",
     "replay-eval",
@@ -215,6 +224,7 @@ const commandHandlers: Record<Command, CommandHandler> = {
   ...ingestCommands,
   ...askCommands,
   ...materializeCommands,
+  ...qualityCommands,
   ...identityCommands,
   ...ontologyCommands,
   ...campaignCommands,

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-07-15T21:00:00.000Z",
+  "supported_candidates": {
+    "path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/supported-linkage-candidates.jsonl",
+    "sha256": "71d39ca53c4816671da2cd0e6905bb359d81660ba14622c50e005c5595cfe2cc",
+    "row_count": 22
+  },
+  "canonical_before": {
+    "relations_jsonl_sha256": "c2480fb9da78b339a9381ff6e5756f6496f87791f79b5cf3f2bc8e2f6b99bbf7",
+    "relations_count": 21247,
+    "routes_jsonl_sha256": "f33105d99dda293f352d7caa17b0141523bd307b3cc8097106401d46e756e4ab",
+    "routes_count": 376,
+    "note": "Pinned audit inputs; these hashes intentionally describe canonical-before and are not rewritten after coordinated materialization."
+  },
+  "sources": [
+    {
+      "source_id": "better_buses_action_plan_2019",
+      "status": "staged_identical_to_acquisition",
+      "url": "https://www.nyc.gov/html/brt/downloads/pdf/better-buses-action-plan-2019.pdf",
+      "acquisition_sha256": "68ac9e1aaf17a033577688e241e586ac101581ef0e2ba0cc3854196f9323f1c1",
+      "staged_pdf_sha256": "68ac9e1aaf17a033577688e241e586ac101581ef0e2ba0cc3854196f9323f1c1",
+      "staged_pdf_byte_length": 8330907,
+      "staged_blocks_sha256": "f1d61e8f63cbd43f54aa35f85754108d6a526d76491aaeb7e76c55470597c9ec",
+      "staged_block_count": 2215,
+      "cited_block_ids": [
+        "p026_p0001",
+        "p026_p0011",
+        "p026_p0020",
+        "p026_p0021",
+        "p026_p0022",
+        "p028_p0003",
+        "p028_p0037",
+        "p028_p0038",
+        "p028_p0039",
+        "p028_p0040",
+        "p028_p0043"
+      ]
+    },
+    {
+      "source_id": "hylan_cb_july_2020",
+      "status": "staged_identical_to_acquisition",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/hylan-blvd-lincoln-ave-nelson-ave-cab-jul2020.pdf",
+      "acquisition_sha256": "dd1e1bb0dce3d7b956dcfc01d0c96c67ffe0b7e3cb19e017659fa78faa0e4296",
+      "staged_pdf_sha256": "dd1e1bb0dce3d7b956dcfc01d0c96c67ffe0b7e3cb19e017659fa78faa0e4296",
+      "staged_pdf_byte_length": 4075616,
+      "staged_blocks_sha256": "f046ca227f515ef68ec670413375985c27b952c0732bed6e863920f174d7061f",
+      "staged_block_count": 272,
+      "cited_block_ids": [
+        "p002_p0004",
+        "p022_p0002",
+        "p022_p0003",
+        "p022_p0004",
+        "p031_p0001",
+        "p031_p0002",
+        "p031_p0008",
+        "p031_p0009"
+      ]
+    }
+  ],
+  "coordinated_physical_scope_journal": {
+    "path": "data/submissions/2026-07-15T20-00-00-000Z_bus-lane-treatment-physical-scope-remediation.jsonl",
+    "sha256": "c4ea1ac8afcdd31c2499f00df4fdd32a6ad5909fd37aabad78084ff1c2b50983",
+    "relation_ids": [
+      "relation_bus-lane-treatment-scope-v1-bus-lanes-hylan-blvd-2012-03-on-hylan-boulevard-brt",
+      "relation_bus-lane-treatment-scope-v1-madison-ave-double-bus-lane-on-madison-avenue",
+      "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat"
+    ],
+    "note": "Read-only coordination dependency; these accepted treatment-to-corridor entries are not duplicated in this journal."
+  }
+}

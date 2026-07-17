@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-bus-only-signals-install-summer2024-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:e12864c57480bb1737284191",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "The Flatbush Avenue presentation gives a planned Summer 2024 installation milestone. It does not report that the bus-only signals became operational, so candidate routes and signal treatments must not be projected onto this planning record.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_bus-only-signals-install-summer2024",
+      "source_id": "flatbush_ave_cb8_jun2024",
+      "evidence_id": "flatbush_ave_cb8_jun2024#p008_c0003",
+      "block_id": "p008_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "receipt_id": "q20-historical-metric-scope-2014-2025",
+  "status": "semantic_scope_reviewed",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T04:05:00Z",
+  "acquisition_method": "recovered_existing_official_capture",
+  "question": "Do four 2014 metric claims abbreviated as Q20 describe the distinct Q20 route that began service in 2025?",
+  "historical_evidence": [
+    {
+      "source_id": "2014_10_07_brt_flushingjamaica_pw1_presentation",
+      "source_url": "https://www.nyc.gov/html/brt/downloads/pdf/2014-10-07-brt-flushingjamaica-pw1-presentation.pdf",
+      "evidence_id": "2014_10_07_brt_flushingjamaica_pw1_presentation#p014_c0003",
+      "source_block_sha256": "sha256:532d0f481c27713830e20b0108a93cd401e06b6c17364bedcab85c4f80cf3a7f",
+      "source_statement": "Q20A/B: Jamaica to College Point",
+      "role": "The deck defines the historical route identity before abbreviating the same bus line as Q20 in its metric table and chart."
+    },
+    {
+      "source_id": "2014_10_07_brt_flushingjamaica_pw1_presentation",
+      "source_url": "https://www.nyc.gov/html/brt/downloads/pdf/2014-10-07-brt-flushingjamaica-pw1-presentation.pdf",
+      "evidence_id": "2014_10_07_brt_flushingjamaica_pw1_presentation#p016_c0003",
+      "source_block_sha256": "sha256:160c9f1a33bae7cdeb29bdd9e5bb5f41a04b9e39219cf876191d2499518da42f",
+      "source_statement": "Route Weekday Ridership Peak Frequency Q20 13,609 12 minutes",
+      "role": "Source of the weekday-ridership and peak-frequency claims whose Q20 label is contextual shorthand for the deck's Q20A/B bus line."
+    },
+    {
+      "source_id": "2014_10_07_brt_flushingjamaica_pw1_presentation",
+      "source_url": "https://www.nyc.gov/html/brt/downloads/pdf/2014-10-07-brt-flushingjamaica-pw1-presentation.pdf",
+      "evidence_id": "2014_10_07_brt_flushingjamaica_pw1_presentation#p016_c0007",
+      "source_block_sha256": "sha256:fdcace4a8e6b2156be11efff4e7250b18e0c45668f1481c5e9409e25db24692c",
+      "source_statement": "Q20 20%",
+      "role": "Source of the corridor-ridership-share claim whose Q20 label is contextual shorthand for the historical Q20A/B bus line."
+    },
+    {
+      "source_id": "2014_brt_flushingjamaica_workshopsummary",
+      "source_url": "https://www.nyc.gov/html/brt/downloads/pdf/2014-brt-flushingjamaica-workshopsummary.pdf",
+      "evidence_id": "2014_brt_flushingjamaica_workshopsummary#p002_c0010",
+      "source_block_sha256": "sha256:2b44bd6bfe728d4f462a5c7b96be4d8ab5f6026df4da6dbd53f373e84e70b6f3",
+      "source_statement": "Bus trips on the Q20A/B and Q44LTD on Main Street ... were characterized ... as being very long and slow",
+      "role": "The workshop summary explicitly defines the historical combined Q20A/B bus line immediately before its abbreviated ridership table."
+    },
+    {
+      "source_id": "2014_brt_flushingjamaica_workshopsummary",
+      "source_url": "https://www.nyc.gov/html/brt/downloads/pdf/2014-brt-flushingjamaica-workshopsummary.pdf",
+      "evidence_id": "2014_brt_flushingjamaica_workshopsummary#p002_c0012",
+      "source_block_sha256": "sha256:e60da44c142c6faf48538e6616e67404febfee5e50adc0f03e81611d27691cfe",
+      "source_statement": "Bus Line Ridership Percentage ... Q20 13,609 20%",
+      "role": "Source of the daily-ridership claim; the preceding paragraph resolves the abbreviated Q20 label as historical Q20A/B."
+    }
+  ],
+  "current_lifecycle_evidence": {
+    "source_id": "mta_queens_bus_network_redesign_service_changes",
+    "source_url": "https://www.mta.info/project/queens-bus-network-redesign/service-changes",
+    "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+    "source_block_sha256": "sha256:0645ac27103cd691a5817a0808299e4993c7f7538210710f4c34244e748f4b1b",
+    "effective_date": "2025-06-29",
+    "source_statement": "Q20 service started June 29, 2025.",
+    "role": "The official lifecycle row proves that the current Q20 is a distinct route identity beginning more than a decade after the historical metrics."
+  },
+  "decision": {
+    "verdict": "retract_false_current_route_edges",
+    "current_route_record_id": "route_q20-qbnr-2025",
+    "historical_scope": "Q20A/B aggregate bus line",
+    "metric_record_ids": [
+      "metric_q20-corridor-ridership-share-2014",
+      "metric_q20-peak-frequency-2014",
+      "metric_q20-ridership-2014",
+      "metric_q20-weekday-ridership-2014"
+    ],
+    "derived_relation_record_ids": [
+      "relation_has-metric-route-q20-qbnr-2025-metric-q20-corridor-ridership-share-2014_c0d628ef61",
+      "relation_has-metric-route-q20-qbnr-2025-metric-q20-peak-frequency-2014_6494bb281a",
+      "relation_has-metric-route-q20-qbnr-2025-metric-q20-ridership-2014_80f3683630",
+      "relation_has-metric-route-q20-qbnr-2025-metric-q20-weekday-ridership-2014_6a0f824493"
+    ],
+    "semantic_correction_ids": [
+      "core-coverage-q20-historical-corridor-share-scope-20260713",
+      "core-coverage-q20-historical-peak-frequency-scope-20260713",
+      "core-coverage-q20-historical-ridership-scope-20260713",
+      "core-coverage-q20-historical-weekday-ridership-scope-20260713"
+    ],
+    "rationale": "Mechanical exact-label derivation cannot distinguish the 2014 Q20 shorthand from the new Q20 designation. The surrounding official 2014 evidence resolves all four metric claims to the historical Q20A/B aggregate, while official 2025 evidence starts the distinct current Q20 on June 29, 2025. The four derived edges are therefore lifecycle-mismatched and must not attach historical metrics to the current route."
+  },
+  "preservation_contract": [
+    "Preserve all four source-stated metric records, values, evidence references, and Q20 source literals.",
+    "Do not retarget the aggregate historical metrics to Q20A alone or Q20B alone.",
+    "Retract only the four exact deterministic derived relations to route_q20-qbnr-2025.",
+    "Preserve the 2025 Q20 route, service-start event, treatments, and project relations.",
+    "A future historical Q20A/B aggregate scope record may receive these metrics only through a separate evidence-backed review."
+  ]
+}

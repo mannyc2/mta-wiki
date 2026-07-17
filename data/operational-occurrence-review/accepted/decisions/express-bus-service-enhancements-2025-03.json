@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "decision_id": "express-bus-service-enhancements-2025-03",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T16:10:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official April 28, 2025 MTA retrospective says that eight express-bus route changes took effect in March. The dated report resolves the source's month literal to March 2025, while the earlier official approval table names BM2, BM5, SIM1C, SIM4C, SIM23, SIM24, X27, and QM15 and defines their added weekday peak trips. This decision preserves the earlier Spring 2025 planning event as a separate season-precision planning surface and approves one realized, atomic service_pattern occurrence without inventing a day.",
+  "occurrence_id": "occurrence:833f69866045c25967353373",
+  "founding_key": "event:event_express-bus-service-enhancements-took-effect-march-2025",
+  "observation_event_record_ids": [
+    "event_express-bus-service-enhancements-took-effect-march-2025"
+  ],
+  "observation_relation_record_ids": [
+    "relation_spring-2025-express-enhancements-affect-bm2",
+    "relation_spring-2025-express-enhancements-affect-bm5",
+    "relation_spring-2025-express-enhancements-affect-qm15",
+    "relation_spring-2025-express-enhancements-affect-sim1c",
+    "relation_spring-2025-express-enhancements-affect-sim23",
+    "relation_spring-2025-express-enhancements-affect-sim24",
+    "relation_spring-2025-express-enhancements-affect-sim4c",
+    "relation_spring-2025-express-enhancements-affect-x27",
+    "relation_spring-2025-express-enhancements-has-march-onset",
+    "relation_spring-2025-express-enhancements-has-weekday-trip-additions"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-03",
+    "precision": "month",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_express-bus-service-enhancements-took-effect-march-2025",
+        "source_id": "meeting_doc_171141",
+        "evidence_id": "meeting_doc_171141#p005_c0003"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_spring-2025-express-enhancements-has-march-onset",
+        "source_id": "meeting_doc_171141",
+        "evidence_id": "meeting_doc_171141#p005_c0003"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_bm2-brt-south-brooklyn-2017",
+      "gtfs_route_id": "BM2",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_bm2-brt-south-brooklyn-2017",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_spring-2025-express-enhancements-affect-bm2",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_bm5-brt-south-brooklyn-2017",
+      "gtfs_route_id": "BM5",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_bm5-brt-south-brooklyn-2017",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_spring-2025-express-enhancements-affect-bm5",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_sim1c-meeting-doc-138456",
+      "gtfs_route_id": "SIM1C",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_sim1c-meeting-doc-138456",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_spring-2025-express-enhancements-affect-sim1c",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_sim4c-meeting-doc-138456",
+      "gtfs_route_id": "SIM4C",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_sim4c-meeting-doc-138456",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_spring-2025-express-enhancements-affect-sim4c",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_sim23-madison-ave-cb6-jun2025",
+      "gtfs_route_id": "SIM23",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_sim23-madison-ave-cb6-jun2025",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_spring-2025-express-enhancements-affect-sim23",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_sim24-madison-ave-cb6-jun2025",
+      "gtfs_route_id": "SIM24",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_sim24-madison-ave-cb6-jun2025",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_spring-2025-express-enhancements-affect-sim24",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_meeting-doc-160441-x27",
+      "gtfs_route_id": "X27",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_meeting-doc-160441-x27",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_spring-2025-express-enhancements-affect-x27",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_qm15-qbb-study",
+      "gtfs_route_id": "QM15",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_qm15-qbb-study",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_spring-2025-express-enhancements-affect-qm15",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "atomic",
+  "treatment": {
+    "kind": "atomic",
+    "member": {
+      "treatment_record_id": "treatment_weekday-express-bus-trip-additions-spring-2025",
+      "treatment_family": "service_pattern",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_weekday-express-bus-trip-additions-spring-2025",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0004"
+        },
+        {
+          "role": "treatment_scope",
+          "record_id": "relation_spring-2025-express-enhancements-has-weekday-trip-additions",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0004"
+        }
+      ]
+    }
+  }
+}

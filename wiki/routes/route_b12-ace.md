@@ -21,11 +21,14 @@ local_observation_ids:
   - "route_b12_flatbush_ave_cb2"
   - "route_b12_flatbush_ave_cb8_jun2024"
   - "route_b12_transit_all_stars"
+  - "route_b12_transit_all_stars_b12_management"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-20T17:54:20.396Z"
+generated_at: "2026-07-13T12:43:05.919Z"
+raw_text: "The B12's 4.3-mile route runs from Prospect Lefferts Gardens to East New York and carries approximately 5,500 average weekday customers - a lifeline for many New Yorkers who rely on this service for school, work, medical care, and other needs. Since the program's inception in January 2024, service delivery on the B12 has improved by 4.1% and customers have benefited from a 10% improvement in their journey time. In addition, customers are waiting less, as indicated by an improved waiting time of 4.7%."
 submission_ids:
   - "sub_1cf09e927cc6253e"
+  - "sub_44b42265ffd26e04"
   - "sub_4989397c4b88a3a6"
   - "sub_6bc4377eb6f38cb4"
   - "sub_6f62c93c6db80279"
@@ -39,6 +42,7 @@ payload:
       - "Bus route that operates on Flatbush Ave, with a bus only signal planned at Parkside Ave"
       - "Operates on Flatbush Ave; planned Bus Only Signal at Parkside Ave for B41 and B12."
       - "The B12's 4.3-mile route runs from Prospect Lefferts Gardens to East New York and carries approximately 5,500 average weekday customers"
+      - "The 4.3-mile B12 runs from Prospect Lefferts Gardens to East New York."
     route_type_normalized:
       - "bus"
       - "local"
@@ -117,6 +121,26 @@ evidence_refs:
     role: "route_details"
     source_id: "meeting_doc_143341"
     source_path: "raw/sources/meeting_doc_143341/blocks.jsonl"
+    text_sha256: "sha256:e87e796834a61be41b21c38fbf6927232956bc72fc86b3270db2fe4fbb99a8da"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0005"
+    evidence_id: "meeting_doc_143341#p003_c0005"
+    page_number: 3
+    role: "delivered_route_identity"
+    source_id: "meeting_doc_143341"
+    source_path: "raw/sources/meeting_doc_143341/blocks.jsonl"
+    source_quote: "improving service on the B12"
+    text_sha256: "sha256:d4f212c84e28586aaa5c1efdf39ad1bd2e9bceefe59f3c41a65a8eb24a5ef308"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0006"
+    evidence_id: "meeting_doc_143341#p003_c0006"
+    page_number: 3
+    role: "delivered_route_description"
+    source_id: "meeting_doc_143341"
+    source_path: "raw/sources/meeting_doc_143341/blocks.jsonl"
+    source_quote: "The B12's 4.3-mile route runs from Prospect Lefferts Gardens to East New York"
     text_sha256: "sha256:e87e796834a61be41b21c38fbf6927232956bc72fc86b3270db2fe4fbb99a8da"
     text_source: "raw_text"
 ---

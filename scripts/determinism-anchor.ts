@@ -21,7 +21,7 @@ import {
   canonicalDbDump,
 } from "../packages/db/src/canonical-db.js";
 import { ftsContentChecksum } from "../packages/db/src/fts.js";
-import { readCanonicalRecordsFromJsonl } from "../packages/pipeline/src/materialize/materialize.js";
+import { readCanonicalRecordsFromJsonl } from "../packages/pipeline/src/materialize/canonical-read.js";
 import { readSubmissionEntries } from "../packages/pipeline/src/records/submissions.js";
 
 function masterHash(db: Database): string {

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "fare-free-pilot-prospective-start-treatment-not-applicable",
+  "gap_id": "operational-coverage:19a131a7c76f0ce1c37df525",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T06:45:30.000Z",
+  "rationale": "This pre-launch record states only an on-or-before September 25, 2023 upper bound and is not a realized onset. The later retrospective evaluation proves the September 24 launch and founds the approved atomic fare_collection occurrence, so treatment scope is not applicable to this prospective duplicate.",
+  "proposal_ids": [
+    "orp_fare_free_pilot_route_scope_and_resumption_2023_2024"
+  ],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

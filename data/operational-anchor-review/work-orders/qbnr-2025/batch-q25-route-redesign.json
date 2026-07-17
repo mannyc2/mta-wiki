@@ -1,0 +1,74 @@
+{
+  "proposal_id": "orp_qbnr_q25_route_redesign_2025",
+  "corpus_fingerprint": "95e8c09e988ab6cf977a954a086dce494bc5bf748aceb5d86e9f73309f722948",
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf",
+    "operational-coverage:45dd3045070322bc90d91414",
+    "operational-coverage:a9b2bf1ff109628219637775"
+  ],
+  "project_record_id": "project_queens-bus-network-redesign",
+  "project_label": "Queens Bus Network Redesign",
+  "drafted_by": "codex-corpus-completion-2026-07-13",
+  "drafted_at": "2026-07-13T00:53:20.000Z",
+  "rationale": "The exact official MTA Q25 row establishes a realized June 29, 2025 service-change date, the uniquely pinned current Q25 route, and two bounded treatment members: stop removal on the continuing route and discontinuation of the Limited service pattern. The reviewed v1-rc6 anchor treats the historical Limited pattern as lifecycle-compatible evidence on the current Q25 identity; it does not create a second Limited route identity. Full-list, detail, and timetable language remains navigation context. Only the current Q25 route receives an affects_route relation; the official Queens Bus Network Redesign project context can later support route_redesign as the reviewed bundle analysis family.",
+  "units": [
+    {
+      "source_block_ids": [
+        "p001_b0030"
+      ],
+      "source_block_sha256s": [
+        "sha256:c199bae69827a2356ac59e32b15bf085f8c279c2dea3ca8a8d6188bb2f79020f"
+      ],
+      "source_route_labels": [
+        "Q25"
+      ],
+      "route_label": "Q25",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q25-queens"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q25"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q25 stop removals",
+          "source_quote": "The Q25 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q25 retained its current routing while some stops were removed."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "limited_discontinuation",
+          "label": "Q25 Limited discontinuation",
+          "source_quote": "The Q25 Limited will be discontinued.",
+          "treatment_kind": "limited stop discontinuation",
+          "expected_treatment_family": "service_pattern",
+          "description": "The Q25 Limited service pattern was discontinued."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q25 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q25 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    }
+  ]
+}

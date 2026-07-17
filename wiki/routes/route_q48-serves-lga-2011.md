@@ -1,23 +1,25 @@
 ---
 managed_by: "mta-wiki-materializer"
 record_id: "route_q48-serves-lga-2011"
-record_aliases:
-  - "route_q48"
 record_kind: "route"
-display_name: "Q48"
+display_name: "Q48 historical service"
 source_id: "110622_lga_aa_slides"
 source_ids:
   - "110622_lga_aa_slides"
   - "2012_04_20_brt_lga_workshop_summary"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q48_serves_lga_2011"
 local_observation_ids:
+  - "route_q48_historical_qbnr_2025"
   - "route_q48_lga_2012"
   - "route_q48_serves_lga_2011"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-10T23:05:19.098Z"
+generated_at: "2026-07-13T01:21:01.000Z"
+raw_text: "The existing Q48 will be discontinued and replaced with the new Q90."
 submission_ids:
   - "sub_aa5ec1bd54bcede3"
+  - "sub_b226d002dd20cff1"
   - "sub_f4ba6b46cf8562e4"
 payload:
   _merged_field_values:
@@ -29,6 +31,7 @@ payload:
   description: "Bus route serving LaGuardia Airport as of June 2011"
   route_id: "Q48"
   route_label: "Q48"
+  route_name: "Q48"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "bus"
@@ -70,6 +73,16 @@ evidence_refs:
     source_id: "2012_04_20_brt_lga_workshop_summary"
     source_path: "raw/sources/2012_04_20_brt_lga_workshop_summary/blocks.jsonl"
     text_sha256: "sha256:698ac1bfe02b42111ff6ecef658f4ef4376b558ad0085be2567714856231470f"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0053"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0053"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "The existing Q48 will be discontinued and replaced with the new Q90."
+    text_sha256: "sha256:2d86bb2a28c2950f7d20c2914620b66ed3a177234eeab7a66616d68708e2977f"
     text_source: "raw_text"
 ---
 

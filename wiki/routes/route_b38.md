@@ -19,13 +19,15 @@ local_observation_ids:
   - "route_b38_grand_ave_2024"
   - "route_b38_grand_ave_nov2024"
   - "route_b38_proposed_draft"
+  - "route_b38_summer2024_temp_lanes"
   - "route_dekalb_lafayette_b38"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T18:50:17.824Z"
+generated_at: "2026-07-13T13:53:42.583Z"
 raw_text: "Operates 10 bus routes, including the B38"
 submission_ids:
   - "sub_06dd6f3b307e5e67"
+  - "sub_1408bdd12449551c"
   - "sub_2195c9833e7ad7c7"
   - "sub_2575d8ba6d2bb591"
   - "sub_3e08186564ca657d"
@@ -129,6 +131,16 @@ evidence_refs:
     source_path: "raw/sources/grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024/blocks.jsonl"
     source_quote: "Operates 10 bus routes, including the B38, B47, B57, B60, B62, and Q59"
     text_sha256: "sha256:297c690821d112808c984eb439fc65c979fa47f81d105fd7d3a0cbc55deff8b5"
+    text_source: "raw_text"
+  -
+    block_id: "p026_c0002"
+    evidence_id: "dekalb_lafayette_cb2_dec2024#p026_c0002"
+    page_number: 26
+    role: "delivered_route_identity"
+    source_id: "dekalb_lafayette_cb2_dec2024"
+    source_path: "raw/sources/dekalb_lafayette_cb2_dec2024/blocks.jsonl"
+    source_quote: "Bus lanes on the corridor also improved B38 service"
+    text_sha256: "sha256:c054459a74d1d0e28e1399d6a1e160f99ce9d454d90ce0c157b9d7a3cc2e8f19"
     text_source: "raw_text"
 ---
 

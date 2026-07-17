@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-planned-implementation-summer2025-route-not-applicable",
+  "gap_id": "operational-coverage:6d78bafbf794089507327fb3",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_planned-implementation-summer2025 is a prospective planning milestone, not a realized route-level occurrence. Its sole incoming has_timeline_event relation is explicitly planned or proposed. Project or corridor route candidates are context only; assigning them to this forecast would create unsupported operational scope, so route recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_planned-implementation-summer2025",
+      "source_id": "madison_ave_e23_st_e42_st_cb5_may2025",
+      "evidence_id": "madison_ave_e23_st_e42_st_cb5_may2025#p022_c0002",
+      "block_id": "p022_c0002"
+    },
+    {
+      "record_id": "relation_project-timeline-implementation",
+      "source_id": "madison_ave_e23_st_e42_st_cb5_may2025",
+      "evidence_id": "madison_ave_e23_st_e42_st_cb5_may2025#p022_c0002",
+      "block_id": "p022_c0002"
+    }
+  ],
+  "search_receipt_ids": []
+}

@@ -16,6 +16,7 @@ raw_text: "Subject MARCH 29, 2026 SCHEDULE CHANGE & SPRING/SUMMER PROGRAMS Depar
 submission_ids:
   - "sub_0b1a57b98a4c97e5"
 payload:
+  authority_tier: "board_material"
   content_type: "Staff Summary"
   date_text: "February 27, 2026"
   date_text_normalized:

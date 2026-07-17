@@ -1,0 +1,136 @@
+{
+  "receipt_version": 1,
+  "receipt_id": "gun-hill-road-bus-lanes-completion-2023",
+  "reviewed_at": "2026-07-14T22:50:00.000Z",
+  "reviewer": "codex-rc19-reconciliation-2026-07-14",
+  "purpose": "Resolve the MTA Wiki authoritative-source, route/treatment binding, and bounded-segment gaps for the two Gun Hill Road rows in the pinned Tracker rc19 reject reconciliation while keeping completion phase distinct from unknown first operational onset and preserving the outcome-spine gate.",
+  "source": {
+    "source_id": "nyc_dot_gun_hill_road_completion_2023",
+    "authority": "New York City Department of Transportation",
+    "url": "https://www.nyc.gov/html/dot/html/pr2023/east-gun-hill-road-redesign.shtml",
+    "retrieved_at": "2026-07-14T22:29:28Z",
+    "artifacts": {
+      "metadata.json": "bb26f2761fbdf79d94ae0df62e24551ce10391595e66f0da8066f216f9ff439c",
+      "source.html": "66d8005f4c919f2dc65edc8acc0d926c213df833486ee857e38586ecc3937a99",
+      "text.txt": "4f23cbc0937b5857b95b15e274379e1a4e2ec66f7b3dac75b2f6cebfcb66ee54",
+      "blocks.jsonl": "bbfd1504126dc2d83d47d6e1c4335e4fb98457b9785dadfaf6aa35d4a617e905"
+    },
+    "evidence": [
+      {
+        "evidence_id": "nyc_dot_gun_hill_road_completion_2023#p001_b0010",
+        "text_sha256": "sha256:7bae7d6be36d5f4483b724271d610c3c269daf05d14487e9e679a6979beff5b0",
+        "supports": ["publication_day", "completion_status_as_of"]
+      },
+      {
+        "evidence_id": "nyc_dot_gun_hill_road_completion_2023#p001_b0015",
+        "text_sha256": "sha256:5b2746623424ff7c40cc1ab19533e670e32b4a9ec5c4e498ff2e93ae1f267f37",
+        "supports": ["substantial_completion_status"]
+      },
+      {
+        "evidence_id": "nyc_dot_gun_hill_road_completion_2023#p001_b0021",
+        "text_sha256": "sha256:f2d50c0df7d117ee3f132cf6496b5e1c9f938e889b2a9f2b323178d6a1a77a86",
+        "supports": ["bx28_route_scope", "bx38_route_scope", "bus_lane_treatment"]
+      },
+      {
+        "evidence_id": "nyc_dot_gun_hill_road_completion_2023#p001_b0024",
+        "text_sha256": "sha256:568131f4328fad9b16fd248365b3b7c573f5e5a5a158fce4f112cb1bbe682834",
+        "supports": ["bainbridge_to_bartow_segment", "3.1_mile_scope", "lane_design_scope"]
+      }
+    ]
+  },
+  "completion_date_source": {
+    "source_id": "meeting_doc_127471",
+    "authority": "Metropolitan Transportation Authority",
+    "url": "https://www.mta.info/document/127471",
+    "artifacts": {
+      "metadata.json": "3abae4c00097503d301593a61dd79537542cb80fb66fbf4fb64cb28c0c1c1df2",
+      "source.pdf": "5d3a82851efed1316ff8b65540eaa7e33c7fe9d21221192740476002f50d51ce",
+      "blocks.jsonl": "e3ee6c7214ec37ea01ecfa906cc26e8ba62b7ea5da30f56fcb312f42ef2e959a"
+    },
+    "evidence": [
+      {
+        "evidence_id": "meeting_doc_127471#p015_c0011",
+        "text_sha256": "sha256:5d341caabe6b1c4265e38f291b8b527ffc02e724a0b5329fdf5167134f302cbf",
+        "supports": ["completion_phase", "october_31_completion_day", "3.1_mile_scope"]
+      },
+      {
+        "evidence_id": "meeting_doc_127471#p001_c0002",
+        "text_sha256": "sha256:e69c0d0941613a92d310b2b015f10809eea1561b1567a4752340b6747677fe1b",
+        "supports": ["2023_report_context"]
+      }
+    ]
+  },
+  "source_graph": {
+    "project_record_id": "project_gun-hill-road-bus-lanes",
+    "publication_event_record_id": "event_gun-hill-road-substantial-completion-announcement-2023-10-31",
+    "completion_event_record_id": "event_gun-hill-road-bus-lanes-completed-2023-10-31",
+    "completion_event_family": "milestone",
+    "treatment_record_id": "treatment_gun-hill-road-bus-lanes-bainbridge-bartow",
+    "treatment_family": "bus_lane",
+    "location": "East Gun Hill Road from Bainbridge Avenue to Bartow Avenue",
+    "document_status": "substantially complete",
+    "status_as_of": {
+      "date": "2023-10-31",
+      "precision": "day",
+      "role": "publication_and_status_as_of"
+    },
+    "routes": [
+      {
+        "route_record_id": "route_bx28-addendum-update",
+        "gtfs_route_id": "BX28"
+      },
+      {
+        "route_record_id": "route_bx38-ace",
+        "gtfs_route_id": "BX38"
+      }
+    ],
+    "direct_scope_relation_ids": [
+      "relation_gun-hill-completion-affects-bx28",
+      "relation_gun-hill-completion-affects-bx38",
+      "relation_gun-hill-bainbridge-bartow-lanes-has-completion-2023-10-31"
+    ],
+    "operational_occurrence": null,
+    "operational_projection_reason": "MTA proves an exact completion-phase date, but the v1 occurrence resolved_onset contract does not preserve completion phase separately from first operational onset. No standard occurrence is emitted until a phase-preserving consumer contract and human estimand decision exist."
+  },
+  "date_adjudication": {
+    "publication_date": "2023-10-31",
+    "completion_status_as_of": "2023-10-31",
+    "exact_completion_phase_date": "2023-10-31",
+    "exact_first_operational_onset": null,
+    "rejected_inference": "Do not reinterpret the exact completion-phase date as the first day any portion of the bus lanes became operational."
+  },
+  "rc19_reconciliation": {
+    "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
+    "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
+    "candidate_ids": [
+      "study-event-v2:06559cef3f03e1672b7dd685",
+      "study-event-v2:8759b24539a59fc715b1dff3"
+    ],
+    "source_fixed_dimensions": [
+      "authoritative_source_snapshot",
+      "exact_route_binding",
+      "exact_treatment_binding",
+      "bounded_street_segment",
+      "exact_completion_phase_identity"
+    ],
+    "source_fixed_candidate_count": 2,
+    "fully_unblocked_candidate_count": 0,
+    "remaining_blockers": [
+      "MTA Wiki v1 has no phase-preserving standard occurrence projection that distinguishes the exact October 31 completion phase from unknown first operational onset.",
+      "Tracker must construct and validate an exact treated-lane overlap spine against route patterns; the MTA evidence does not establish an outcome series.",
+      "The pinned rc19 recommendation remains non-authorizing until a pinned Tracker replay and candidate-set-bound human decision."
+    ],
+    "anticipated_tracker_effect": "Inference only: the two rows should no longer fail authoritative source, route, treatment, bounded-segment, or completion-phase identity after a consumer rebuild that recognizes the canonical graph. Their existing exact-date gate remains passing, but neither can pass the exact-lane-spine gate without Tracker work."
+  },
+  "explicit_exclusions": [
+    "No evidence was found binding BX16, BX25, or BX26 to this completed treatment, so their proximity-derived rows were not changed.",
+    "No exact lane geometry polyline or measured route-pattern overlap was fabricated.",
+    "No first operational-onset day, camera-enforcement date, outcome estimate, causal claim, or study approval was inferred."
+  ],
+  "reproduction": {
+    "acquire": "bun scripts/acquire-gun-hill-road-completion-2023.ts --apply",
+    "curate": "bun scripts/curate-gun-hill-road-completion-2023.ts --apply",
+    "materialize": "bun run materialize",
+    "focused_test": "bun test packages/pipeline/test/records/corpus-gun-hill-road-completion-2023.test.ts"
+  }
+}

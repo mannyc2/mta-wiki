@@ -20,6 +20,7 @@ source_ids:
   - "meeting_doc_113986"
   - "meeting_doc_205516"
   - "mta_automated_camera_enforcement"
+  - "nyc_dot_flatbush_installation_begins_2025"
 local_observation_id: "route_b41_ace"
 local_observation_ids:
   - "route_b41_ace"
@@ -32,12 +33,13 @@ local_observation_ids:
   - "route_b41_flatbush_ave_cb8_jun2024"
   - "route_b41_flatbush_ave_cb8_jun2025"
   - "route_b41_flatbush_ave_kickoff"
+  - "route_b41_flatbush_phase1_sep2025"
   - "route_b41_meeting_doc_205516"
   - "route_b41_proposed_draft"
   - "route_meeting_doc_113986_b41"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-21T22:25:23.207Z"
+generated_at: "2026-07-13T14:22:56.682Z"
 raw_text: "B41 is the primary route on Flatbush Ave operating local and limited service from Kings Plaza/Bergen Beach to downtown Brooklyn"
 submission_ids:
   - "sub_0b0479c536480283"
@@ -49,6 +51,7 @@ submission_ids:
   - "sub_6ef25174a8864fba"
   - "sub_7450ded3c16f9b00"
   - "sub_abb35f378e8a4984"
+  - "sub_b47edd4f8846b0b1"
   - "sub_b9b37b48ca932e1f"
   - "sub_c7a86e95c8dfefa1"
   - "sub_d5e6a2ff6cdf25a1"
@@ -272,6 +275,16 @@ evidence_refs:
     source_id: "meeting_doc_205516"
     source_path: "raw/sources/meeting_doc_205516/blocks.jsonl"
     text_sha256: "sha256:2f77e3c29789d0cdbb3044c5b4f7ddf309fdf8541ea6f6d0dc0c2d919f9ff6f9"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0021"
+    evidence_id: "nyc_dot_flatbush_installation_begins_2025#p001_b0021"
+    page_number: 1
+    role: "route_identity"
+    source_id: "nyc_dot_flatbush_installation_begins_2025"
+    source_path: "raw/sources/nyc_dot_flatbush_installation_begins_2025/blocks.jsonl"
+    source_quote: "the B41, which serves nearly the entire eight-mile Flatbush Avenue corridor"
+    text_sha256: "sha256:b1dba41e356e7d7c3c9b1c3de4a953e710a554b1445cd38d292406e96eada3ac"
     text_source: "raw_text"
 ---
 

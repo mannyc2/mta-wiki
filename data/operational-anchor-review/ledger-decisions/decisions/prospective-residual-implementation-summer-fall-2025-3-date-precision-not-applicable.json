@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-implementation-summer-fall-2025-3-date-precision-not-applicable",
+  "gap_id": "operational-coverage:2bd680d4533aa05b46882463",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_implementation-summer-fall-2025_3 records the prospective target \"Summer/Fall 2025\", not a realized physical or service onset. Its sole incoming has_timeline_event relation is explicitly planned or proposed. Refining that forecast into a study date would substitute a planning target for operational evidence, so date recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_implementation-summer-fall-2025_3",
+      "source_id": "34th_st_enhanced_bus_priority_cb5_may2025",
+      "evidence_id": "34th_st_enhanced_bus_priority_cb5_may2025#p032_c0008",
+      "block_id": "p032_c0008"
+    },
+    {
+      "record_id": "relation_project-has-event-implementation_4",
+      "source_id": "34th_st_enhanced_bus_priority_cb5_may2025",
+      "evidence_id": "34th_st_enhanced_bus_priority_cb5_may2025#p032_c0008",
+      "block_id": "p032_c0008"
+    }
+  ],
+  "search_receipt_ids": []
+}

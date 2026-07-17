@@ -4,7 +4,11 @@ import { join } from "node:path";
 import { afterAll, beforeAll, describe, expect, it } from "bun:test";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { evidenceId, readStagedSourceBlocks, sourceBlockById, sourceBlocksRelativePath } from "@mta-wiki/pipeline/sources/source-prep";
-import { createSubmissionEntry, relationEndpointIssues } from "@mta-wiki/pipeline/records/submissions";
+import {
+  createSubmissionEntry,
+  directCanonicalRelationEndpointIssues,
+  relationEndpointIssues,
+} from "@mta-wiki/pipeline/records/submissions";
 import type { MtaSubmitObservationInput, StagedSourceBlock } from "@mta-wiki/db/types";
 
 const sourceId = "test_submission_chandra_source";
@@ -313,6 +317,76 @@ describe("createSubmissionEntry", () => {
     expect(entry.tool_args.payload).toMatchObject({
       relation_kind: "affects_route",
     });
+  });
+
+  it("accepts direct canonical relation endpoints with an allowed typed shape", () => {
+    const issues = directCanonicalRelationEndpointIssues({
+      ...observationInput(),
+      observation_kind: "relation",
+      local_observation_id: "rel_qbnr_affects_b57",
+      payload: {
+        relation_kind: "affects_route",
+        relation_family: "route_scope",
+        subject_id: "project_queens-bus-network-redesign",
+        object_id: "route_b57-grand-ave-2024",
+      },
+    });
+
+    expect(issues).toEqual([]);
+  });
+
+  it("fails closed for dangling, alias, and wrong-type direct relation endpoints", () => {
+    const dangling = directCanonicalRelationEndpointIssues({
+      ...observationInput(),
+      observation_kind: "relation",
+      local_observation_id: "rel_dangling",
+      payload: {
+        relation_kind: "affects_route",
+        relation_family: "route_scope",
+        subject_id: "project_does_not_exist",
+        object_id: "route_b57-grand-ave-2024",
+      },
+    });
+    const alias = directCanonicalRelationEndpointIssues({
+      ...observationInput(),
+      observation_kind: "relation",
+      local_observation_id: "rel_ambiguous",
+      payload: {
+        relation_kind: "affects_route",
+        relation_family: "route_scope",
+        subject_id: "project_queens-bus-network-redesign",
+        object_id: "route_q48",
+      },
+    });
+    const wrongType = directCanonicalRelationEndpointIssues({
+      ...observationInput(),
+      observation_kind: "relation",
+      local_observation_id: "rel_wrong_type",
+      payload: {
+        relation_kind: "affects_route",
+        relation_family: "route_scope",
+        subject_id: "route_b57-grand-ave-2024",
+        object_id: "route_b57-grand-ave-2024",
+      },
+    });
+    const wrongFamilyTuple = directCanonicalRelationEndpointIssues({
+      ...observationInput(),
+      observation_kind: "relation",
+      local_observation_id: "rel_wrong_family_tuple",
+      payload: {
+        relation_kind: "affects_route",
+        relation_family: "agency_role",
+        subject_id: "project_queens-bus-network-redesign",
+        object_id: "route_b57-grand-ave-2024",
+      },
+    });
+
+    expect(dangling.join("\n")).toContain("missing canonical physical record project_does_not_exist");
+    expect(alias.join("\n")).toContain(
+      "alias id route_q48; rewrite it to canonical physical record route_q48-glen-oaks-2025",
+    );
+    expect(wrongType.join("\n")).toContain("family/endpoint tuple route_scope/route->route is not allowed");
+    expect(wrongFamilyTuple.join("\n")).toContain("family/endpoint tuple agency_role/project->route is not allowed");
   });
 
   it("normalizes metric string values into numeric payload fields", () => {

@@ -44,6 +44,7 @@ source_ids:
   - "meeting_doc_89896"
   - "meeting_doc_95176"
   - "meeting_doc_98296"
+  - "mta_queens_bus_network_redesign_service_changes"
   - "nyct_key_performance_metrics_june2025"
   - "queens_addendum_equity_evaluation_appendix_d"
   - "queens_proposed_final_plan_2023"
@@ -72,6 +73,7 @@ local_observation_ids:
   - "project_meeting_doc_98296_queens_bus_network_redesign"
   - "project_qbnr_2025_budget_vol2"
   - "project_qbnr_nov2024_finplan"
+  - "project_qbnr_q110_effective_2025"
   - "project_queens_bus_network_redesign"
   - "project_queens_bus_network_redesign_167241"
   - "project_queens_bus_network_redesign_189811"
@@ -97,7 +99,7 @@ local_observation_ids:
   - "project_queens_network_redesign_priority"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T22:20:10.562Z"
+generated_at: "2026-07-12T14:08:22.472Z"
 raw_text: "On June 29, we will officially begin Phase 1 of the Queens Bus Network Redesign. This is a momentous occasion. It marks the culmination of six years of research, planning, and outreach."
 submission_ids:
   - "sub_0708ecf572a11fbc"
@@ -116,6 +118,7 @@ submission_ids:
   - "sub_252c5c22efa27878"
   - "sub_2a94c39a13d4475c"
   - "sub_2bad2362878d22df"
+  - "sub_2bced525d4ad67d9"
   - "sub_37f814bca7d1d630"
   - "sub_47edb833e0c7b521"
   - "sub_52475b2ebae13014"
@@ -196,6 +199,7 @@ payload:
       - "Queens Bus Network Redesign Project overview presented at the May 25, 2022 Board meeting by NYCT President Richard Davey and Dorian Statom, Director, Bus Service Planning"
       - "The Queens Bus Network Redesign team hosted 40 events over the past five months to gather feedback on the new draft plan. Final plan expected to be published in 2023."
       - "The Queens Bus Network Redesign Team hosted 39 events to gather feedback, including 19 virtual events and 20 in-person."
+      - "Route-by-route Queens bus service changes took effect in summer 2025."
     document_time_status:
       - "planned"
       - "active"
@@ -1063,6 +1067,16 @@ evidence_refs:
     source_id: "meeting_doc_98296"
     source_path: "raw/sources/meeting_doc_98296/blocks.jsonl"
     text_sha256: "sha256:c126bac8329daa0d047e658dbcc9aded03d99635ae7ad4c29c6dbb4fa7395d9c"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0001"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0001"
+    page_number: 1
+    role: "project_context"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Changes were made to Queens bus service in summer 2025"
+    text_sha256: "sha256:e298ec216ad62d96267f9bf2ee4ffb6d4bafddc36d91cd58b6ee88972db08f73"
     text_source: "raw_text"
 ---
 

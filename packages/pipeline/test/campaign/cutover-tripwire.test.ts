@@ -11,10 +11,11 @@ import { repoRoot } from "@mta-wiki/core/paths";
 
 const SRC_DIRS = ["core", "db", "pipeline", "agents", "cli"].map((pkg) => join(repoRoot, "packages", pkg, "src"));
 
-// Sanctioned JSONL entry points: materialize.ts (defines the readers + shadow write),
-// export-jsonl.ts (the forensic export/verify), and the explicit public-clone SQLite rebuild
+// Sanctioned JSONL entry points: canonical-read.ts (defines the readers), materialize.ts
+// (the shadow write), export-jsonl.ts (the forensic export/verify), and the explicit public-clone SQLite rebuild
 // command. Every JSONL invariant below exempts exactly these.
 const FORENSIC_FILES = new Set([
+  "packages/pipeline/src/materialize/canonical-read.ts",
   "packages/pipeline/src/materialize/materialize.ts",
   "packages/pipeline/src/materialize/export-jsonl.ts",
   "packages/cli/src/commands/materialize.ts",
@@ -36,10 +37,10 @@ function sourceFiles(): Array<[string, string]> {
 
 describe("hard cutover: reads are DB-only", () => {
   it("the mtime-freshness JSONL fallback machinery is gone", () => {
-    const materialize = readFileSync(join(repoRoot, "packages", "pipeline", "src", "materialize", "materialize.ts"), "utf8");
-    expect(materialize).not.toContain("withFreshCanonicalDb");
-    expect(materialize).not.toContain("canonicalDbFresherThanJsonl");
-    expect(materialize).toContain("function withCanonicalDb");
+    const canonicalRead = readFileSync(join(repoRoot, "packages", "pipeline", "src", "materialize", "canonical-read.ts"), "utf8");
+    expect(canonicalRead).not.toContain("withFreshCanonicalDb");
+    expect(canonicalRead).not.toContain("canonicalDbFresherThanJsonl");
+    expect(canonicalRead).toContain("function withCanonicalDb");
   });
 
   it("no default reader falls back to canonical JSONL (no `?? readCanonicalRecordsFromJsonl`)", () => {
@@ -59,12 +60,23 @@ describe("hard cutover: reads are DB-only", () => {
   });
 
   it("no production code opens a data/canonical/*.jsonl path for reading outside the forensic helpers", () => {
-    // readCanonicalRecordsFromJsonl / readCanonicalRecordsFromDbFile are the only sanctioned JSONL
-    // entry points (both in materialize.ts). Nothing else should reference the canonical JSONL dir.
+    // canonical-read.ts owns the sanctioned JSONL readers; materialize.ts owns the shadow write.
     const offenders = sourceFiles()
       .filter(([path]) => !FORENSIC_FILES.has(path))
       .filter(([, text]) => /canonicalDir\s*\(/u.test(text))
       .map(([path]) => path);
     expect(offenders).toEqual([]);
+  });
+
+  it("validation does not rematerialize producer submissions", () => {
+    const validate = readFileSync(join(repoRoot, "packages", "pipeline", "src", "validate.ts"), "utf8");
+    expect(validate).not.toContain("entriesToRecords");
+    expect(validate).not.toContain("records/submissions");
+    expect(validate).toContain("materialize/canonical-read");
+  });
+
+  it("writer primitive parsing does not import the writer mutation gate", () => {
+    const primitives = readFileSync(join(repoRoot, "packages", "pipeline", "src", "materialize", "primitives.ts"), "utf8");
+    expect(primitives).not.toContain("writer-change-gate");
   });
 });

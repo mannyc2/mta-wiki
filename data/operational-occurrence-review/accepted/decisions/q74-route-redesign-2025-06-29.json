@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "decision_id": "q74-route-redesign-2025-06-29",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T05:00:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official MTA Q74 row binds a realized 2025-06-29 onset, the Q74 route, and one canonical service_pattern treatment in the same exact source block. This occurrence preserves the literal treatment family and does not inherit project-wide route or treatment scope.",
+  "occurrence_id": "occurrence:982bedeb1f2e852a5753bd14",
+  "founding_key": "event:event_q74-qbnr-start-2025-06-29",
+  "observation_event_record_ids": [
+    "event_q74-qbnr-start-2025-06-29"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-q74",
+    "relation_qbnr-2025-has-q74-college-forest-hills-connection",
+    "relation_qbnr-has-q74-start-2025-06-29"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-06-29",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_q74-qbnr-start-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0074"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-q74-start-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0074"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_q74-qbnr-2025",
+      "gtfs_route_id": "Q74",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_q74-qbnr-2025",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0074"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-q74",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0074"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "atomic",
+  "treatment": {
+    "kind": "atomic",
+    "member": {
+      "treatment_record_id": "treatment_q74-college-forest-hills-connection-2025",
+      "treatment_family": "service_pattern",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_q74-college-forest-hills-connection-2025",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0074"
+        },
+        {
+          "role": "treatment_scope",
+          "record_id": "relation_qbnr-2025-has-q74-college-forest-hills-connection",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0074"
+        }
+      ]
+    }
+  }
+}

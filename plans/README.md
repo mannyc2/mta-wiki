@@ -39,6 +39,15 @@ never modified, runner companions only; provider-backed LLM runs are owner-gated
 | 022 | Homepage research workbench: search hero, corpus stats, featured pages, provenance | P1 | M | 021 | DONE (executor `e8ee9f65`, same worktree; reviewer-verified) |
 | 023 | Record pages: compact metadata header, collapsible detail panels, related-pages navigation | P1 | M | 021 | DONE (executor `a402a22e`, same worktree; incl. breadcrumb double-plural fix + regression test) |
 | 024 | Source pages: anchored evidence viewer, cited-by, metadata card, original-document links | P1 | M–L | 021 | DONE (executor `192a6333`, same worktree; anchors preserved incl. `#p003_c0007`; 407 MB site, max HTML 1.5 MB) |
+| 026 | Repair tracked-state baseline: broken committed test import, NUL bytes, dirty LATEST, stale AGENTS.md | P1 | S | — | TODO |
+| 027 | Release pointer safety: opt-in LATEST writes, guarded reads, `release_pointer` lane, canary lifecycle docs | P1 | S–M | 026 | TODO |
+| 028 | Source-registry integrity: retire the junk 85841 observation, merge the 4 genuine duplicate pairs, backfill 5 missing rows, 3 permanent validate lanes | P1 | M | 026 (027 rec.) | TODO |
+| 029 | Honest anchor summary (broad vs reviewed vs distinct; entry-gate drop counters; exclusion de-dup; overlap-aware reporting) + three-layer coverage matrix reading the DOWNSTREAM PIN, not LATEST | P1 | M | 028 | IN PROGRESS (honest summary + deterministic three-layer matrix live; remaining plan cross-tabs/gates pending) |
+| 030 | PASS 1 — curate staged evidence and exhaust the priority gap ledger (18 route-resolved total / 15 treatment gaps; Queens post-launch observations; SBS components preserved as bundles) | P1 | L | 028, 029 | IN PROGRESS (2,735-row ledger / 275-row priority feeder, receipt replay, and reviewed proposal→journal→apply path live; Queens/treatment proposals and adjudication pending) |
+| 031 | Status reconciliation: accepted co-reference decisions + POST-EVENT-ONLY supersedence + version-safe eligibility reclassification | P1 | M–L | 028, 029, 030 Tier B (hard) | TODO |
+| 032 | Production occurrence contract: persistent enrichment-stable ids, reviewed clusters, atomic/bundle + multi-route semantics, manifest-v3 dual-publish, executable consumer fixture | P1 | L | 029, 030, 031 | TODO |
+| 033 | PASS 2 — execute official-source search → acquisition → intake → ingest → reviewed curation until ≥1 candidate-ready onset `>=2023-04-01` exists | P1 | L | 028–032 | TODO |
+| 034 | Cross-repo cutover: strict consumer manifest-v3/occurrence-v1 migration, cut `v3-operational-occurrences-1`, repin, and put ≥1 new in-window Wiki candidate into downstream review | P1 | L | 026–033 (all mandatory) | TODO |
 
 Status values: TODO | IN PROGRESS | DONE | BLOCKED (with one-line reason) | REJECTED (with
 one-line rationale).
@@ -130,6 +139,59 @@ one-line rationale).
   contradicts the plan-009 public-clone validation story and deserves its own follow-up
   plan if public reproducibility of `validate` still matters.
 
+- **Operational-anchor integrity track (026–034, planned 2026-07-12 at `d28b64c8` via
+  /improve; REVISED same day after contract and outcome reviews)**: responds to the downstream
+  consumer's operational-anchor report (bus-reliability-tracker pins
+  `v2-operational-anchors-1`, manifest SHA `b69bd945…`). The organizing principle after
+  revision: **the core job is evidence curation and reconciliation, not scaffolding** —
+  026–029 are integrity/reporting prerequisites; 030 is Pass 1 (curate staged evidence
+  into reviewed observations+relations, with REQUIRED outcomes and a durable row-level
+  recoverability ledger — 617 rows / 564 both / 1,181 overlapping dimension-instances;
+  the sequential funnel has 18 route-resolved rows total and 15 treatment gaps, not 18
+  treatment gaps. Plan 030 exhaustively adjudicates every priority in-window feeder
+  row so `absent_in_source` is receipt-backed and persistent. Plan 031 makes
+  reconciliation move eligibility only through accepted clusters and post-event
+  evidence while preserving the exact anchor-v1 serialization and meanings. Plan 032
+  productionizes a manifest-v3 occurrence-v1 contract with persistent ids, plural routes, and honest
+  atomic/bundle semantics; preview-only completion is forbidden. Plan 033 is Pass 2
+  and must actually search, acquire, stage, ingest, review, and materialize until an
+  onset `>=2023-04-01` is candidate-ready. Plan 034 implements the strict consumer
+  migration, cuts/reproduces the release, repins, and requires that candidate to reach
+  downstream review. Strict order 026 → 027 → 028 → 029 → 030 → 031 → 032 → 033 → 034; each plan
+  lands all four gates before the next starts. Key revision fixes (2026-07-12 review):
+  plan files are force-added in 026 (`.git/info/exclude` hides `plans/`, so worktree
+  executors otherwise lack their instructions); 026 verifies the COMMITTED state in a
+  throwaway worktree against the known fresh-context baseline; 028 retires the junk
+  `source_meeting-doc-85841_2` "test" observation instead of merging it (validate
+  arithmetic 15 → 13 → 5 → 0); 029's Layer C reads `data/quality/downstream-pin.json`,
+  never LATEST, and reports exclusions as overlapping, not attrition; 030's definition
+  of done REQUIRES the Queens post-launch delivered observations
+  (meeting_doc_179606/186616 blocks — currently ZERO canonical events) and stratum-1
+  component links to land, not just infrastructure (and never calls an SBS bundle a
+  single-treatment resolution); 031's supersedence accepts POST-EVENT
+  evidence only (meeting_doc_174141's past-tense "launched" events are `planned` as-of
+  2025-05-28 and MUST NOT resolve anything) and reclassifies the resolved seed's
+  effective temporal role/lifts effective temporal exclusions while anchor-v1 remains
+  document-time truth; every eligibility-changing cluster requires an accepted decision.
+  Plan 032's occurrence ids come from a
+  persistent identity registry and survive route, treatment, date, status, provenance,
+  and cluster growth; manifest-v3 export is a production path, not an owner-gated
+  prototype. Owner gates remain for 030 proposal/ledger acceptance, 031 cluster
+  acceptance, 033 provider spend and curation acceptance, and 034 cut+repin. An unavailable gate leaves the
+  plan IN PROGRESS, never DONE. Execution harness: one
+  executor session per plan — Codex CLI (`codex` in repo root; the Claude-plugin codex
+  bridge is currently broken — oversized `~/.codex/logs_2.sqlite`) or Claude Code,
+  dispatched into a worktree with an independent reviewer re-running gates before owner
+  merge (the proven 021–024 pattern); subagent fan-out only where the plans specify it
+  (030 adversarial verifiers + optional canaries, 031 cluster-precision hunts, 032
+  contract/identity review, 034 reproducibility recut). Downstream compatibility rule
+  binding every plan: existing release directories are immutable; strict decoders mean
+  extra fields/enum values are breaking, not "additive." Frozen anchor-v1 files remain
+  exact during dual-publish; rich resolution/bundle/multi-route data ships only in the
+  versioned occurrence-v1 resource (a new resource, therefore version 1). Plan 034
+  changes and tests the consumer before repinning; a CHANGES note alone is never a
+  migration.
+
 ## Companion tracks (not planned here)
 
 - `docs/writer-primitives-and-static-site-plan.md` — NOW PLANNED as plans 010 (Phases A+B),
@@ -159,6 +221,31 @@ one-line rationale).
 - **21 partial-OCR PDFs / 266 Excel-misnamed `.pdf` / 96% undated sources / ~50% orphan
   floor**: declared write-offs (v1-release-plan Phase 3f); recorded in the plan-007 closing LOG
   entry, then stop tracking.
+- **"Committed API credentials in `.env`" (2026-07-12 audit subagent claim)**: REFUTED.
+  `.env` is gitignored (`.gitignore:5`), has zero history in the fresh public repo
+  (`git log --all -- .env` empty), and `.env.example` exists. Live keys in a local,
+  ignored `.env` are the intended pattern. No rotation required. (If the retired
+  `.git-archive/` is ever published — don't — revisit.)
+- **"Legacy `b`-prefix block citations are broken" (2026-07-12)**: by design.
+  `data/evidence-block-index.jsonl` carries 2,928 `b`-id entries with
+  `resolved_block_id` mapping to live `c` blocks; `sourceBlockById` resolves aliases;
+  `validate` passes all refs. Residue: release consumers should be told to use
+  `resolved_block_id` — a docs line, folded into 029's matrix commentary, not a fix.
+- **"15 inverted has_timeline_event relations" (2026-07-12)**: not inverted — event→event
+  edges are legal per the declared endpoint shape (`relations.ts:833-836`) and surface
+  as `unsupported_subject_scope` in the projection. Optional reclassification to
+  `has_subsequent_event`/`held_meeting` is a 030-queue proposal batch at most.
+- **"canonical-db.test.ts is corrupted binary" (2026-07-12)**: overstated — 2 stray NUL
+  bytes in otherwise-valid UTF-8 TypeScript that tsc parses fine; fixed by plan 026.
+- **Lint/format tooling (ESLint/Prettier/husky)**: not worth doing for a batch pipeline
+  with strict tsc already enforced; revisit only on team onboarding.
+- **Exclusion-reason category/precedence refactor**: real but deferred INTO plan 032's
+  taxonomy-v2 design — a flat-array reshape today would break downstream consumers for
+  cosmetic gain.
+- **"Corpus is pre-2023" (consumer claim)**: false for the wiki — 1,323 of 2,085
+  publication-dated sources are 2023–2026 (verified 2026-07-12). The RESOLVED anchors
+  are old; that's a scope-resolution and reconciliation problem (plans 030–031), plus
+  targeted acquisition (033), not bulk re-acquisition.
 - **Refactor the `relations` edge table into "real" SQL relations (typed FK columns /
   per-kind join tables)**: assessed 2026-07-03 (commit `637e3a9`), rejected — the premise is
   wrong. The table already IS physical SQL: `subject_id`/`object_id` are enforced FKs to

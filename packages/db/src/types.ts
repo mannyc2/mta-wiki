@@ -64,6 +64,14 @@ export type MtaSubmissionEntry = {
     issues: string[];
     warnings?: string[] | undefined;
   };
+  /** Present only on owner-reviewed recovery entries produced from a durable proposal. */
+  recovery_provenance?: {
+    proposal_id: string;
+    proposal_kind: "relation" | "observation_bundle";
+    proposal_sha256: string;
+    accepted_by: string;
+    accepted_at: string;
+  } | undefined;
 };
 
 export type MtaCanonicalRecord = {
@@ -184,6 +192,7 @@ export type MtaValidationReport = {
   canonicalRecordCount: number;
   wikiPageCount: number;
   issues: MtaValidationIssue[];
+  warnings: MtaValidationIssue[];
 };
 
 export type MtaReviewNote = {

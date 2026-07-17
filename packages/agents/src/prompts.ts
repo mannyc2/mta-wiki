@@ -108,6 +108,10 @@ states among them. Submit relation records for important source-backed edges suc
 scope, affected or served routes, corridors used, treatments included, timeline events, lead or
 partner agencies, operators, and metrics or claims tied to a project. Do not infer edges only from
 real-world knowledge; cite the source block that states or strongly establishes the relationship.
+When a source explicitly dates the launch, installation, activation, or completion of one specific
+treatment component, link that treatment directly to the event with \`has_timeline_event\`. Do not
+pair every treatment in a project with every project event; leave the treatment-event scope absent
+when the source does not identify which component the date applies to.
 Submit tools may return possible relation candidates, and \`mta_find_relation_candidates\`
 can find existing or same-source candidate edges. These are advisory only; submit a relation only
 when source evidence supports it.

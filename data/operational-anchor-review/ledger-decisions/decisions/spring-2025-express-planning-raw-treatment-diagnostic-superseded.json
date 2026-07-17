@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "spring-2025-express-planning-raw-treatment-diagnostic-superseded",
+  "gap_id": "operational-coverage:2bff8ef1db2f15516d594e0e",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T16:10:30.000Z",
+  "rationale": "The planned project directly identifies treatment_weekday-express-bus-trip-additions-spring-2025, but the raw source-neighborhood diagnostic also sees unrelated treatments. Approved occurrence occurrence:833f69866045c25967353373 carries the exact atomic service_pattern scope; the prospective event must not become a second study occurrence, so this raw treatment diagnostic is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

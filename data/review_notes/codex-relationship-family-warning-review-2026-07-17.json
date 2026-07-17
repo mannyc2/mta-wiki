@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "review_id": "codex-relationship-family-warning-review-2026-07-17",
+  "contract_id": "relationship-contract-v1",
+  "reviewed_at": "2026-07-17T00:00:00.000Z",
+  "reviewed_by": "Codex relationship-integrity campaign adversarial review",
+  "scope": {
+    "finding_code": "REL_FAMILY_TYPE_SUSPECT",
+    "input_finding_count": 4,
+    "policy": "A family heuristic may remain advisory only when the exact relation is endpoint-valid, evidence-valid at stored precision, and covered by an explicit semantic decision. A tuple-level approval does not excuse an imprecise endpoint."
+  },
+  "decisions": [
+    {
+      "decision_id": "m86-route-succession-narrow-shape",
+      "record_id": "relation_rel-m86-local-replaced-by-m86-sbs",
+      "primary_disposition": "reviewed_valid_narrow_shape",
+      "relation_kind": "replaced_by",
+      "relation_family": "timeline_context",
+      "subject_id": "route_m86-local",
+      "object_id": "route_m86-sbs",
+      "subject_kind": "route",
+      "object_kind": "route",
+      "semantic_decision_id": "relationship-tuple-review-v1:0938",
+      "evidence_ids": [
+        "m86_sbs_progress_report_2017#p006_c0005",
+        "m86_sbs_progress_report_2017#p008_c0008"
+      ],
+      "reason": "The official progress report supports a route-to-route predecessor/successor assertion. The launch event remains separately canonical; forcing an event endpoint would erase the exact route succession claim."
+    },
+    {
+      "decision_id": "mets-willets-physical-rail-line-shape",
+      "record_id": "relation_mets-willets-on-flushing-line-208006",
+      "primary_disposition": "reviewed_valid_narrow_shape",
+      "relation_kind": "located_on",
+      "relation_family": "corridor_scope",
+      "subject_id": "project_mets-willets-station-sog-208006",
+      "object_id": "route_irt-flushing-line-7-208006",
+      "subject_kind": "project",
+      "object_kind": "route",
+      "semantic_decision_id": "relationship-tuple-review-v1:0653",
+      "evidence_ids": [
+        "meeting_doc_208006#p044_c0007"
+      ],
+      "reason": "The official LOCATION field places the station work on the named IRT Flushing Line. This route endpoint represents the physical rail line, an explicitly reviewed allowed endpoint class, rather than an inferred GTFS-only service."
+    },
+    {
+      "decision_id": "mta-launches-data-analytics-blog",
+      "record_id": "relation_rel-mta-launches-data-analytics-blog",
+      "primary_disposition": "reviewed_valid_after_identity_remediation",
+      "relation_kind": "launches",
+      "relation_family": "timeline_context",
+      "subject_id": "entity_mta-entity-update-2025",
+      "object_id": "entity_mta-data-analytics-blog",
+      "subject_kind": "entity",
+      "object_kind": "entity",
+      "semantic_decision_ids": [
+        "relationship-tuple-review-v1:0616",
+        "relationship-semantic-remediation-v1/part-1/relation_rel-mta-launches-data-analytics-blog"
+      ],
+      "evidence_ids": [
+        "open_data_plan_2024_update#p004_c0006"
+      ],
+      "reason": "The exact source states that the Metropolitan Transportation Authority launched its Data & Analytics blog. The semantic remediation corrected the contaminated NYCT subject to the umbrella MTA identity while retaining the source-backed entity-to-entity launch assertion."
+    },
+    {
+      "decision_id": "moodys-rating-event-precision",
+      "record_id": "relation_moodys-upgraded-mta-trb",
+      "primary_disposition": "endpoint_precision_remediation_required",
+      "relation_kind_before": "assigned_rating",
+      "relation_family_before": "metric_context",
+      "subject_id": "entity_meeting-doc-131661-moodys",
+      "object_id_before": "entity_mta-entity-update-2025",
+      "object_id_after": "event_moodys-upgrade-jun2025",
+      "relation_kind_after": "performed",
+      "relation_family_after": "timeline_context",
+      "semantic_decision_ids": [
+        "relationship-tuple-review-v1:0072",
+        "relationship-contract-v1/semantic-review/part-1/tuple-772"
+      ],
+      "evidence_ids": [
+        "meeting_doc_176491#p012_c0008"
+      ],
+      "evidence_text_sha256": "sha256:d51ff514407287e55c93fd00fd80ccfb588a58c645c0a872466b337b5a5bc9cd",
+      "precedent_relation_id": "relation_fitch-upgraded-mta-trb",
+      "reason": "The source rates MTA Transportation Revenue Bonds, not the umbrella MTA entity. The already-canonical Moody's rating-action event preserves the exact instrument, action, and date. Repointing the relation to that event matches the reviewed Fitch entity-to-rating-event pattern without inventing a bond entity or discarding provenance."
+    }
+  ],
+  "summary": {
+    "reviewed_valid_narrow_shape_count": 3,
+    "remediation_required_count": 1,
+    "silent_exception_count": 0,
+    "non_enforcement_policy_changed": false
+  }
+}

@@ -9,6 +9,8 @@ export type PrepareSourceOptions = {
   sourceId?: string | undefined;
 };
 
+const EMBEDDED_MTA_DATATABLE_MARKER = "# Embedded MTA data table";
+
 function readMetadata(sourceDir: string): StagedSourceMetadata {
   const metadataPath = join(sourceDir, "metadata.json");
   if (!existsSync(metadataPath)) {
@@ -40,14 +42,30 @@ function copyTopLevelFiles(fromDir: string, toDir: string) {
 
 function extractTextSurface(sourceDir: string) {
   const textPath = join(sourceDir, "text.txt");
-  if (existsSync(textPath) && statSync(textPath).size > 0) return textPath;
+  const existingText = existsSync(textPath) && statSync(textPath).size > 0 ? readFileSync(textPath, "utf8") : "";
+
+  const htmlPath = join(sourceDir, "source.html");
+  if (existsSync(htmlPath) && statSync(htmlPath).size > 0) {
+    const html = readFileSync(htmlPath, "utf8");
+    const embeddedTableLines = extractMtaDrupalDataTableText(html);
+    if (embeddedTableLines.length > 0) {
+      const baseText = (existingText || htmlToText(html)).split(`\n${EMBEDDED_MTA_DATATABLE_MARKER}\n`, 1)[0]?.trimEnd() ?? "";
+      writeFileSync(
+        textPath,
+        `${baseText}\n${EMBEDDED_MTA_DATATABLE_MARKER}\n${embeddedTableLines.join("\n")}\n`,
+        "utf8",
+      );
+      return textPath;
+    }
+  }
+
+  if (existingText) return textPath;
 
   const jsonPath = join(sourceDir, "source.json");
   if (existsSync(jsonPath) && statSync(jsonPath).size > 0) {
     const parsed = JSON.parse(readFileSync(jsonPath, "utf8")) as unknown;
     writeFileSync(textPath, `${JSON.stringify(parsed, null, 2)}\n`, "utf8");
   } else {
-    const htmlPath = join(sourceDir, "source.html");
     if (existsSync(htmlPath) && statSync(htmlPath).size > 0) {
       writeFileSync(textPath, `${htmlToText(readFileSync(htmlPath, "utf8"))}\n`, "utf8");
     }
@@ -70,6 +88,62 @@ function htmlToText(html: string) {
     .map((line) => normalizeOcrText(line))
     .filter(Boolean)
     .join("\n");
+}
+
+function recordValue(value: unknown): Record<string, unknown> | null {
+  return typeof value === "object" && value !== null && !Array.isArray(value)
+    ? (value as Record<string, unknown>)
+    : null;
+}
+
+function dataTableCellText(value: unknown): string | null {
+  const cell = recordValue(value);
+  const raw = cell?.value;
+  if (typeof raw !== "string" || !raw.trim()) return null;
+  const normalized = htmlToText(raw).replace(/\s+/gu, " ").trim();
+  return normalized || null;
+}
+
+/**
+ * Extract Drupal's client-rendered MTA data tables from the official page payload.
+ * Normal HTML-to-text extraction drops these rows because they live inside a JSON
+ * script tag. Each returned line is one complete source row so it becomes one
+ * citeable block instead of an inferred route/date cross-product.
+ */
+export function extractMtaDrupalDataTableText(html: string): string[] {
+  const lines: string[] = [];
+  const scripts = html.matchAll(
+    /<script\b[^>]*data-drupal-selector=["']drupal-settings-json["'][^>]*>([\s\S]*?)<\/script>/giu,
+  );
+  for (const match of scripts) {
+    let settings: Record<string, unknown> | null = null;
+    try {
+      settings = recordValue(JSON.parse(decodeXmlText(match[1] ?? "")) as unknown);
+    } catch {
+      continue;
+    }
+    const tables = recordValue(settings?.mtaDatatable);
+    if (!tables) continue;
+    for (const [, tableValue] of Object.entries(tables).sort(([left], [right]) => left.localeCompare(right, undefined, { numeric: true }))) {
+      const table = recordValue(tableValue);
+      const csvData = recordValue(table?.csvData);
+      if (!Array.isArray(csvData?.data)) continue;
+      for (const rowValue of csvData.data) {
+        const row = recordValue(rowValue);
+        if (!row) continue;
+        const orderedCells = Object.entries(row).sort(([left], [right]) => {
+          if (left === "Route") return -1;
+          if (right === "Route") return 1;
+          return left.localeCompare(right, undefined, { numeric: true });
+        });
+        const cells = orderedCells
+          .map(([, cell]) => dataTableCellText(cell))
+          .filter((cell): cell is string => cell !== null);
+        if (cells.length > 0) lines.push(cells.join(" | "));
+      }
+    }
+  }
+  return [...new Set(lines)];
 }
 
 function sha256(content: string) {

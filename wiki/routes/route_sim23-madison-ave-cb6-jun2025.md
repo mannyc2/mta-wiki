@@ -7,22 +7,27 @@ source_id: "madison_ave_e23_st_e42_st_cb6_jun2025"
 source_ids:
   - "madison_ave_e23_st_e42_st_cb6_jun2025"
   - "meeting_doc_138456"
+  - "meeting_doc_146846"
   - "meeting_doc_160441"
   - "meeting_doc_79331"
 local_observation_id: "route_sim23_madison_ave_cb6_jun2025"
 local_observation_ids:
   - "route_meeting_doc_160441_sim23"
   - "route_meeting_doc_79331_sim23"
+  - "route_sim23_express_fall_2024_discontinuation"
+  - "route_sim23_express_summer_2024_realized"
   - "route_sim23_madison_ave_cb6_jun2025"
   - "route_sim23_meeting_doc_138456"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T20:54:05.384Z"
+generated_at: "2026-07-13T10:40:27.992Z"
 raw_text: "SIM23 (NYCT): Staten Island: Annadale-Arden Av-Midtown"
 submission_ids:
   - "sub_0186cad1165541cf"
   - "sub_14478bea9c5fe55b"
   - "sub_9413a9b9b3a85507"
+  - "sub_d0341901c98aee20"
+  - "sub_e7ca753c8637ceb8"
   - "sub_ffda5afe39fd84f6"
 payload:
   _merged_field_values:
@@ -39,6 +44,7 @@ payload:
   description: "Express bus route on Madison Avenue in study area"
   operator: "NYCT"
   route_id: "SIM23"
+  route_label: "SIM23"
   route_name: "SIM23"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
@@ -91,6 +97,26 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_79331/blocks.jsonl"
     source_quote: "Starting 2022, the MTA took over operation of SIM23 and SIM24 routes. Its riders will be able to benefit of the features available to all other Staten Island express bus riders. The two routes transport daily to and from midtown Manhattan about 300 passengers."
     text_sha256: "sha256:d6f622e5d0703fc59d56235363a0196db4d0ecb7d9c22914dce4b4d36272a35f"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0004"
+    evidence_id: "meeting_doc_146846#p003_c0004"
+    page_number: 3
+    role: "delivered_route_identity_and_trip_pattern"
+    source_id: "meeting_doc_146846"
+    source_path: "raw/sources/meeting_doc_146846/blocks.jsonl"
+    source_quote: "SIM23"
+    text_sha256: "sha256:2d5b66f5689e30fff6dd3a72d0505bf2fa133db542c47e06fe21cc437bd3718c"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0005"
+    evidence_id: "meeting_doc_160441#p003_c0005"
+    page_number: 3
+    role: "retrospective_route_identity_and_trip_pattern"
+    source_id: "meeting_doc_160441"
+    source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
+    source_quote: "SIM23"
+    text_sha256: "sha256:a1cb3550e548ba0e4cc902da5e264574b62e2318fcfe0a6f5418eb28d04373de"
     text_source: "raw_text"
 ---
 

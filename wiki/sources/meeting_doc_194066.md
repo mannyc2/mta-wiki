@@ -16,6 +16,7 @@ raw_text: "Staff Summary, Metropolitan Transportation Authority, Subject: LEASE 
 submission_ids:
   - "sub_c45986108e1681f2"
 payload:
+  authority_tier: "board_material"
   content_type: "Staff Summary"
   date: "DECEMBER 17, 2025"
   date_normalized:

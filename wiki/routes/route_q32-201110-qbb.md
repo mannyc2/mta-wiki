@@ -10,16 +10,19 @@ source_ids:
   - "201110_qbb_approach_summary"
   - "madison_ave_e23_st_e42_st_cb5_may2025"
   - "madison_ave_e23_st_e42_st_cb6_jun2025"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q32_201110_qbb"
 local_observation_ids:
   - "route_q32_201110_qbb"
   - "route_q32_madison_ave_cb6_jun2025"
   - "route_q32_madison_ave_may2025"
+  - "route_q32_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T18:55:55.619Z"
+generated_at: "2026-07-12T23:02:57.000Z"
 raw_text: "Q32 (Eastbound) 2,290, Q32 (Westbound) 2,050, Q32 (Total) 4,340"
 submission_ids:
+  - "sub_2355ab0f46dde947"
   - "sub_9151ebabf12de17b"
   - "sub_d394580132a918e7"
   - "sub_f503dc494d278a65"
@@ -28,6 +31,9 @@ payload:
     description:
       - "Local bus route on Madison Avenue in study area"
       - "Q32 local bus on Madison Avenue study area"
+    route_type_normalized:
+      - "local"
+      - "bus"
   borough: "Queens"
   borough_normalized: "queens"
   boroughs:
@@ -37,7 +43,9 @@ payload:
     - "manhattan"
     - "queens"
   description: "Local bus route on Madison Avenue in study area"
+  gtfs_route_id: "Q32"
   route_id: "Q32"
+  route_name: "Q32"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "local"
@@ -69,6 +77,16 @@ evidence_refs:
     source_id: "madison_ave_e23_st_e42_st_cb5_may2025"
     source_path: "raw/sources/madison_ave_e23_st_e42_st_cb5_may2025/blocks.jsonl"
     text_sha256: "sha256:985f6a589f3d76798599bb44607ae29c8c1683910f86d1c8e0c824479e1c723b"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0037"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0037"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q32"
+    text_sha256: "sha256:6172a1aff591f38d6b2422266e6d9304b06fc26eb70a9a0feef10dcf55854ad9"
     text_source: "raw_text"
 ---
 

@@ -1,22 +1,25 @@
 ---
 managed_by: "mta-wiki-materializer"
-record_id: "source_meeting-doc-29966_2"
+record_id: "source_meeting-doc-29966"
 record_kind: "source"
 display_name: "January 2021 Overtime"
 source_id: "meeting_doc_29966"
 source_ids:
   - "meeting_doc_29966"
-local_observation_id: "source_meeting_doc_29966_jan2021_overtime"
+local_observation_id: "source_meeting_doc_29966"
 local_observation_ids:
+  - "source_meeting_doc_29966"
   - "source_meeting_doc_29966_jan2021_overtime"
 review_state: "unreviewed"
 truth_status: "source_stated"
 generated_at: "2026-06-21T23:04:18.639Z"
 submission_ids:
   - "sub_1428ed9bdcaa4e2d"
+  - "sub_a6478d4badd26296"
 payload:
   content_type: "application/pdf"
   description: "All Agencies – Non-Reimbursable Overtime Variance, Reimbursable Overtime Variance, and Total Overtime Variance for January 2021 and Adopted Budget vs. variance"
+  document_title: "January 2021 Overtime"
   publisher: "MTA"
   source_url: "https://www.mta.info/document/29966"
   title: "January 2021 Overtime"

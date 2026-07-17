@@ -1,0 +1,54 @@
+{
+  "authoritative_linkage_intake_gap_candidate_ids": [
+    "study-event-v2:17dced7b33f61eb49e6fff59",
+    "study-event-v2:2954b9c6483f74e7ca7ee209",
+    "study-event-v2:a863d72fae32caeacb91125d",
+    "study-event-v2:f113d0e26ca8e84dad903f4c"
+  ],
+  "authoritative_linkage_intake_gap_count": 4,
+  "authoritative_linkage_intake_gap_route_ids": [
+    "M101",
+    "M102",
+    "M103",
+    "M98"
+  ],
+  "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
+  "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
+  "date_and_phase_proved_count": 0,
+  "exact_route_binding_proved_candidate_ids": [
+    "study-event-v2:17dced7b33f61eb49e6fff59",
+    "study-event-v2:2954b9c6483f74e7ca7ee209",
+    "study-event-v2:36551be6cc4f3abae2c9ef45",
+    "study-event-v2:7387d0a52f633437de6fd4d7",
+    "study-event-v2:a863d72fae32caeacb91125d",
+    "study-event-v2:f113d0e26ca8e84dad903f4c"
+  ],
+  "exact_route_binding_proved_count": 6,
+  "exact_route_binding_proved_route_ids": [
+    "M101",
+    "M102",
+    "M103",
+    "M15+",
+    "M60+",
+    "M98"
+  ],
+  "exclusions_sha256": "7a62828e4f40a7a8097a89d3373f3447810cace5ca7babad8cf7981f77991531",
+  "exclusive_primary_disposition_counts": {
+    "completed_search_route_linkage_unresolved": 36,
+    "linkage_supported_phase_unresolved": 6
+  },
+  "existing_canonical_link_count": 4,
+  "explicitly_excluded_count": 42,
+  "operational_occurrence_added_or_updated_count": 0,
+  "receipts_sha256": "04870023cb526158eeba09faf097a30bbb1425afc0f1d3b2f8974a92ca153773",
+  "researched_count": 42,
+  "researched_on": "2026-07-15",
+  "schema_version": 1,
+  "segment_binding_proved_candidate_ids": [],
+  "segment_binding_proved_count": 0,
+  "shard": "manhattan",
+  "source_acquired_count": 42,
+  "still_unresolved_count": 42,
+  "study_projection_eligible_count": 0,
+  "warning": "A generic supported route-treatment linkage is not a projectable occurrence. All Manhattan rows remain excluded because exact segment, stable phase, onset precision, and canonical occurrence identity were not jointly proved."
+}

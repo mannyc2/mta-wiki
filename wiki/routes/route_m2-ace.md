@@ -10,21 +10,24 @@ source_ids:
   - "2012_09_19_125th_st_sbs_public_workshop_summary"
   - "madison_ave_e23_st_e42_st_cb5_may2025"
   - "madison_ave_e23_st_e42_st_cb6_jun2025"
+  - "mta_ace_routes_may2025_cut"
   - "mta_automated_camera_enforcement"
 local_observation_id: "route_m2_ace"
 local_observation_ids:
   - "route_125th_st_m2"
+  - "route_ace_may2025_m2"
   - "route_m2_ace"
   - "route_m2_madison_ave_cb6_jun2025"
   - "route_m2_madison_ave_may2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T18:55:48.665Z"
+generated_at: "2026-07-13T15:20:29.276Z"
 raw_text: "Slow boarding/disembarking of disabled/wheelchair and elderly passengers delay buses at stops (particularly a problem on the M2 around Adam Clayton Powell Boulevard)."
 submission_ids:
   - "sub_255a1bce1ad6d818"
   - "sub_3da2aeef9de6055a"
   - "sub_4abe60f4021a661d"
+  - "sub_4ff8106fa4be7a3a"
   - "sub_7acce0d10d40b68c"
 payload:
   _merged_field_values:
@@ -32,6 +35,9 @@ payload:
       - "Bus route; slow boarding/disembarking of disabled/wheelchair and elderly passengers is a problem on the M2 around Adam Clayton Powell Boulevard"
       - "Local bus route on Madison Avenue in study area"
       - "M2 local bus on Madison Avenue study area"
+    route_type:
+      - "local"
+      - "bus"
     route_type_normalized:
       - "bus"
       - "local"
@@ -45,6 +51,7 @@ payload:
   route_type: "local"
   route_type_normalized: "bus"
   service_variant: "local"
+  source_literal: "M2"
   streets: "5 Av / Madison Av / AC Powell Blvd"
 evidence_refs:
   -
@@ -82,6 +89,16 @@ evidence_refs:
     source_id: "madison_ave_e23_st_e42_st_cb5_may2025"
     source_path: "raw/sources/madison_ave_e23_st_e42_st_cb5_may2025/blocks.jsonl"
     text_sha256: "sha256:985f6a589f3d76798599bb44607ae29c8c1683910f86d1c8e0c824479e1c723b"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0002"
+    evidence_id: "mta_ace_routes_may2025_cut#p001_b0002"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_ace_routes_may2025_cut"
+    source_path: "raw/sources/mta_ace_routes_may2025_cut/blocks.jsonl"
+    source_quote: "\"route\":\"M2\""
+    text_sha256: "sha256:b951f90ce367f9751b5854ba1f3531ea26847dc790157c383068d99499243eb4"
     text_source: "raw_text"
 ---
 

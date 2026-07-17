@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "q48-new-start-treatment-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:6c48f9b20e963e6aafbbab44",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T01:39:00.000Z",
+  "rationale": "The broad inherited Queens redesign graph contains both historical and current-lifecycle Q48 treatments and is not a safe treatment-level study projection. Approved occurrence occurrence:29fc4436c22b58d52f231964 binds only the reviewed Glen Oaks branch and limited-stops members to the new-service-start event, so further recovery of this broad diagnostic treatment gap is not applicable.",
+  "proposal_ids": [
+    "orp_qbnr_q48_lifecycle_split_2025"
+  ],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

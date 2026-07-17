@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "decision_id": "express-bus-trip-additions-2024-06-30",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T10:40:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The dated official MTA announcement specifies a June 30, 2024 start for one six-route peak-period service package. The July 16 official retrospective confirms that the identical weekday trips were added, and the official 2024 schedule feed independently places the 2024Jun bundle in effect June 30. One atomic service_pattern treatment and six delivered route edges preserve the actual shared intervention without inventing route-treatment cross-products or treating the coarse April month-only event as another occurrence.",
+  "occurrence_id": "occurrence:8fd87e702db534906b401f11",
+  "founding_key": "event:event_express-bus-service-increases-begin-june-30-2024",
+  "observation_event_record_ids": [
+    "event_express-bus-service-increases-begin-june-30-2024"
+  ],
+  "observation_relation_record_ids": [
+    "relation_summer-2024-express-additions-affect-bm2",
+    "relation_summer-2024-express-additions-affect-bm5",
+    "relation_summer-2024-express-additions-affect-sim1c",
+    "relation_summer-2024-express-additions-affect-sim23",
+    "relation_summer-2024-express-additions-affect-sim24",
+    "relation_summer-2024-express-additions-affect-sim4c",
+    "relation_summer-2024-express-additions-has-june-30-start",
+    "relation_summer-2024-express-additions-has-weekday-trip-additions"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2024-06-30",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_express-bus-service-increases-begin-june-30-2024",
+        "source_id": "mta_express_bus_service_increases_june30_2024",
+        "evidence_id": "mta_express_bus_service_increases_june30_2024#p001_b0050"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_summer-2024-express-additions-has-june-30-start",
+        "source_id": "meeting_doc_146846",
+        "evidence_id": "meeting_doc_146846#p001_c0005"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_bm2-brt-south-brooklyn-2017",
+      "gtfs_route_id": "BM2",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_bm2-brt-south-brooklyn-2017",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p002_c0013"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_summer-2024-express-additions-affect-bm2",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p002_c0013"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_bm5-brt-south-brooklyn-2017",
+      "gtfs_route_id": "BM5",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_bm5-brt-south-brooklyn-2017",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p002_c0013"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_summer-2024-express-additions-affect-bm5",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p002_c0013"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_sim1c-meeting-doc-138456",
+      "gtfs_route_id": "SIM1C",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_sim1c-meeting-doc-138456",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p002_c0013"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_summer-2024-express-additions-affect-sim1c",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p002_c0013"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_sim4c-meeting-doc-138456",
+      "gtfs_route_id": "SIM4C",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_sim4c-meeting-doc-138456",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p002_c0013"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_summer-2024-express-additions-affect-sim4c",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p002_c0013"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_sim23-madison-ave-cb6-jun2025",
+      "gtfs_route_id": "SIM23",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_sim23-madison-ave-cb6-jun2025",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p003_c0004"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_summer-2024-express-additions-affect-sim23",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p003_c0004"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_sim24-madison-ave-cb6-jun2025",
+      "gtfs_route_id": "SIM24",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_sim24-madison-ave-cb6-jun2025",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p003_c0004"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_summer-2024-express-additions-affect-sim24",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p003_c0004"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "atomic",
+  "treatment": {
+    "kind": "atomic",
+    "member": {
+      "treatment_record_id": "treatment_weekday-express-bus-trip-additions-summer-2024",
+      "treatment_family": "service_pattern",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_weekday-express-bus-trip-additions-summer-2024",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p001_c0005"
+        },
+        {
+          "role": "treatment_scope",
+          "record_id": "relation_summer-2024-express-additions-has-weekday-trip-additions",
+          "source_id": "meeting_doc_146846",
+          "evidence_id": "meeting_doc_146846#p001_c0005"
+        }
+      ]
+    }
+  }
+}

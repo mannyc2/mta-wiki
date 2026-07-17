@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "q110-treatment-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:5c36e36846ab3cbcc34ea29a",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-12",
+  "decided_at": "2026-07-12T20:26:39.000Z",
+  "rationale": "The broad inherited Queens redesign anchor preserves project-level Q7 and Q110 treatment candidates and is not a safe treatment-level study projection. Approved occurrence occurrence:6a6f8f8e85979d872ba2bdd7 binds this event only to the canonical Q110 route-redesign treatment using official same-block evidence, so further recovery of the broad diagnostic treatment gap is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

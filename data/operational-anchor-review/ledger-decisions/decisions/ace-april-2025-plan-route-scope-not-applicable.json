@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "ace-april-2025-plan-route-scope-not-applicable",
+  "gap_id": "operational-coverage:92bf38fc65618c3fbcf12e46",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:20:00.000Z",
+  "rationale": "The March 24, 2025 forecast names only two future Manhattan routes and does not identify them. Retrospectively assigning M2 and M4 from the separately reviewed May 19 occurrence would turn a prospective diagnostic into an unsupported duplicate, so route-scope adjudication is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_ace-expansion-manhattan-apr2025",
+      "source_id": "meeting_doc_167241",
+      "evidence_id": "meeting_doc_167241#p005_c0003",
+      "block_id": "p005_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}

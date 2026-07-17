@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-meeting-151656-bus-fare-enforcement-launch-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:65b97f3119af3dae7300ad73",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "This is a fare-evasion enforcement initiative rather than a bus-priority or service-design treatment. It belongs in policy/confounder context and does not require study route-treatment scope.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_meeting-151656-bus-fare-enforcement-launch",
+      "source_id": "meeting_doc_151656",
+      "evidence_id": "meeting_doc_151656#p011_c0008",
+      "block_id": "p011_c0008"
+    }
+  ],
+  "search_receipt_ids": []
+}

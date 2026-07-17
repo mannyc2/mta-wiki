@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "q45-route-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:dcc6a900cb162a0d2e3daba7",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T05:00:30.000Z",
+  "rationale": "The broad inherited Queens redesign graph is intentionally multi-route and is not a safe route-level study projection. Approved occurrence occurrence:9256051973f8f7ff0847b5c1 binds this event only to Q45 using official same-block route identity and scope evidence, so further recovery of the broad diagnostic route gap is not applicable.",
+  "proposal_ids": [
+    "orp_qbnr_6_create_route_service_start_bundles_2025"
+  ],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

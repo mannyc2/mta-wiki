@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "decision_id": "flatbush-phase1-installation-start-sep2025-route-not-applicable",
+  "gap_id": "operational-coverage:e0c9c9b7b7c619e70aedbde6",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T18:50:00.000Z",
+  "rationale": "Approved occurrence occurrence:8c987704152b459014217d44 resolves the September 2025 Phase 1 installation start through the bounded project's delivered B41/B67 relations and its single atomic center-running-bus-lane relation. The broad raw route diagnostic is superseded and must not import scope from the umbrella Flatbush project.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_flatbush-phase1-installation-start-sep2025",
+      "source_id": "nyc_dot_flatbush_installation_begins_2025",
+      "evidence_id": "nyc_dot_flatbush_installation_begins_2025#p001_b0010",
+      "block_id": "p001_b0010"
+    },
+    {
+      "record_id": "event_flatbush-phase1-installation-start-sep2025",
+      "source_id": "nyc_dot_flatbush_installation_begins_2025",
+      "evidence_id": "nyc_dot_flatbush_installation_begins_2025#p001_b0016",
+      "block_id": "p001_b0016"
+    },
+    {
+      "record_id": "event_flatbush-phase1-installation-start-sep2025",
+      "source_id": "nyc_dot_flatbush_installation_begins_2025",
+      "evidence_id": "nyc_dot_flatbush_installation_begins_2025#p001_b0019",
+      "block_id": "p001_b0019"
+    }
+  ],
+  "search_receipt_ids": []
+}

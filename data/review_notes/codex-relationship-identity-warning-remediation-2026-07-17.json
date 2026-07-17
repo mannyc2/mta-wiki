@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "review_id": "codex-relationship-identity-warning-remediation-2026-07-17",
+  "created_at": "2026-07-17T00:00:00.000Z",
+  "scope": {
+    "relationship_findings": [
+      "REL_SOURCE_ID_AMBIGUOUS",
+      "REL_ALIAS_AMBIGUOUS",
+      "REL_DUPLICATE_IDENTITY"
+    ],
+    "validate_identity_conflict": "route_m16-mentioned<>route_m34a-sbs"
+  },
+  "decisions": [
+    {
+      "decision_id": "embedded-report-pseudo-sources",
+      "action": "retire_generated_pseudo_sources_and_dependent_relations",
+      "logical_source_ids": [
+        "meeting_doc_113946",
+        "meeting_doc_121276",
+        "meeting_doc_170981",
+        "meeting_doc_205556",
+        "meeting_doc_26831"
+      ],
+      "retained_physical_source_submission_ids": [
+        "sub_8880027ddc0e8794",
+        "sub_1a0a92e36dffe31e",
+        "sub_3786a84e3a051311",
+        "sub_1ce843465dfab245",
+        "sub_7f7c9c7765c28c54"
+      ],
+      "retired_pseudo_source_submission_ids": [
+        "sub_7ef8e80454f1c62e",
+        "sub_80d3ab843a8e37ba",
+        "sub_80c3f9672781b046",
+        "sub_524bbe1a2aabb4f3",
+        "sub_c43a00963ed7bf72",
+        "sub_b4eb4618080b6ddb",
+        "sub_f4770bc4ce071a6c",
+        "sub_8f9321a81e180367"
+      ],
+      "retired_dependent_relation_submission_ids": [
+        "sub_f817f1b21e000302",
+        "sub_ebd19ab73e34c996",
+        "sub_960d576071061a64",
+        "sub_af84f73845b39d74",
+        "sub_6a3b87e89d6f8dbd",
+        "sub_29951b4ef8398128",
+        "sub_98da12bdb65c632d",
+        "sub_441d731c782b5350"
+      ],
+      "reason": "Each staged source folder is one physical document. The retired semantic-remediation rows modeled an embedded agenda/report mention as another canonical source with the same logical source_id. Their presented/prepared edges cannot truthfully be rebound to the containing minutes or exhibit book, so the dependent edges retire with the pseudo-sources. The underlying statements and evidence blocks remain in the retained staged source and other domain observations.",
+      "endpoint_rebase": "The two retained physical-source relations for meeting_doc_121276 and meeting_doc_26831 use source-scoped local_observation_id endpoints in their accepted journals; projection deterministically resolves them to the retained unsuffixed source record after retirement."
+    },
+    {
+      "decision_id": "queens-semantic-remediation-duplicate",
+      "action": "retire_redundant_replacement_pair",
+      "retained_submission_ids": [
+        "sub_343f86ef704f5bc1",
+        "sub_e7f4c51d1db4ec3e"
+      ],
+      "retired_submission_ids": [
+        "sub_d256b1825a9130cb",
+        "sub_4136d1aadb36264b"
+      ],
+      "reason": "The later entity and located_in relation repeat the already reviewed Queens borough identity, Jamaica Bus Depot endpoint, source literal, date/status, and exact evidence block. Retiring the redundant pair preserves the earlier proof-backed entity and edge and removes the shared entity_queens alias ambiguity without an identity suppression."
+    },
+    {
+      "decision_id": "bt-distributable-income-exact-duplicate",
+      "action": "retire_parallel_duplicate",
+      "retained_submission_id": "sub_86a5676ccd28c686",
+      "retired_submission_id": "sub_e3708564e75e6501",
+      "retained_correction_ids": [
+        "semqa-000007",
+        "zz-relationship-semantic-v1-7c940c700fbbaf65"
+      ],
+      "reason": "Both records resolve to the same B&T-to-MTA distributes_income_to edge with the same assertion, date, and exact evidence identity. The retained record is the durable target of the existing review-state and endpoint corrections, so retiring the parallel row preserves correction provenance and the corrected canonical edge."
+    },
+    {
+      "decision_id": "m16-predecessor-payload-correction-proposal",
+      "action": "guarded_semantic_correction_proposal",
+      "record_id": "route_m16-mentioned",
+      "must_remain_distinct_from": "route_m34a-sbs",
+      "do_not_merge": true,
+      "review_basis": [
+        "data/quality/relationship-integrity/semantic-review/relation-remediation-decisions.jsonl#relation_m16-related-to-m34a-sbs",
+        "data/quality/relationship-integrity/semantic-review/relation-remediation-decisions.jsonl#relation_m16-renamed-to-m34a",
+        "data/quality/relationship-integrity/semantic-remediation/projected-relations.jsonl#relation_m16-related-to-m34a-sbs",
+        "data/quality/relationship-integrity/semantic-remediation/projected-relations.jsonl#relation_m16-renamed-to-m34a"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "201110_brt_34th_open_house_slides#p028_c0002",
+          "text_sha256": "sha256:920aa6d36d8f2342145bf4a81382ed68f4f7fa104814b5f6fbc566b31a421e64",
+          "supported_fact": "M16 was to be renamed M34A SBS on November 13, 2011; the source separately names predecessor and successor labels."
+        },
+        {
+          "evidence_id": "201110_brt_34th_cac5#p030_c0002",
+          "text_sha256": "sha256:920aa6d36d8f2342145bf4a81382ed68f4f7fa104814b5f6fbc566b31a421e64",
+          "supported_fact": "The same official transition statement supports the retained route_m16-renamed-to-m34a edge."
+        },
+        {
+          "evidence_id": "2011_brt_34th_cb6_slides#p023_c0002",
+          "text_sha256": "sha256:920aa6d36d8f2342145bf4a81382ed68f4f7fa104814b5f6fbc566b31a421e64",
+          "supported_fact": "The same official transition statement supports the retained route_m16-related-to-m34a-sbs edge."
+        }
+      ],
+      "proposed_correction": {
+        "correction_id": "zz-relationship-identity-m16-predecessor-payload-20260717",
+        "op": "patch_payload",
+        "record_id": "route_m16-mentioned",
+        "guards": {
+          "payload": {
+            "route_id": "M16",
+            "route_label": "M16",
+            "route_name": "M34A Select Bus Service",
+            "route_type": "SBS",
+            "route_type_normalized": "bus",
+            "service_variant": "sbs",
+            "route_record_scope": "split_candidate",
+            "route_record_scope_reason": "merged_service_variant_conflict",
+            "_merged_field_values": {
+              "route_label": [
+                "M16",
+                "M34A SBS"
+              ],
+              "route_type_normalized": [
+                "bus",
+                "select_bus_service",
+                "local"
+              ],
+              "route_type": [
+                "SBS",
+                "local",
+                "local bus",
+                "local_bus"
+              ],
+              "service_variant": [
+                "sbs",
+                "local"
+              ],
+              "description": [
+                "Formerly M16, renamed to M34A SBS for clearer passenger communication",
+                "M16 bus route operating on 34th Street",
+                "Renamed to M34A SBS",
+                "Bus route with stops on 34th Street corridor; Uptown stops between 35th St and 43rd St at 9th Ave and 8th Ave; Downtown stops between 24th St and 33rd St at 2nd Ave and 1st Ave",
+                "Existing route on 34th Street, to be renamed M34A SBS for the 34th Street SBS project.",
+                "Existing local bus route on 34th Street",
+                "Crosstown bus route operating between West 42nd Street and Ninth Avenue (Port Authority Bus Terminal) and the FDR Drive and 25th Street (Waterside Plaza), operating on 34th Street between Eighth/Ninth Avenues and FDR Drive/Second Avenues"
+              ],
+              "route_name": [
+                "M34A Select Bus Service",
+                "M16 Bus Route"
+              ]
+            }
+          }
+        },
+        "patch": {
+          "set": {
+            "route_name": "M16 Bus Route",
+            "route_type": "local bus",
+            "route_type_normalized": "local",
+            "service_variant": "local",
+            "description": "Existing route on 34th Street, to be renamed M34A SBS for the 34th Street SBS project.",
+            "_merged_field_values": {
+              "description": [
+                "Formerly M16, renamed to M34A SBS for clearer passenger communication",
+                "M16 bus route operating on 34th Street",
+                "Renamed to M34A SBS",
+                "Bus route with stops on 34th Street corridor; Uptown stops between 35th St and 43rd St at 9th Ave and 8th Ave; Downtown stops between 24th St and 33rd St at 2nd Ave and 1st Ave",
+                "Existing route on 34th Street, to be renamed M34A SBS for the 34th Street SBS project.",
+                "Existing local bus route on 34th Street",
+                "Crosstown bus route operating between West 42nd Street and Ninth Avenue (Port Authority Bus Terminal) and the FDR Drive and 25th Street (Waterside Plaza), operating on 34th Street between Eighth/Ninth Avenues and FDR Drive/Second Avenues"
+              ]
+            },
+            "route_record_scope": "true_route",
+            "route_record_scope_reason": "reviewed_m16_predecessor_distinct_from_m34a_successor"
+          }
+        },
+        "cascade": [],
+        "reason": "Preserve M16 as the reviewed historical predecessor and M34A SBS as the distinct successor. Remove successor-only route identity and service-variant surfaces from the M16 canonical payload while retaining transition descriptions and immutable accepted-journal provenance.",
+        "source_decision": "data/review_notes/codex-relationship-identity-warning-remediation-2026-07-17.json#m16-predecessor-payload-correction-proposal",
+        "reviewed_at": "2026-07-17T00:00:00.000Z",
+        "provenance": "human"
+      }
+    }
+  ],
+  "verification": {
+    "status": "projected_validation_passed",
+    "projection_mode": "in_memory_entriesToRecords_plus_existing_semantic_corrections_plus_proposed_m16_correction",
+    "submission_count": 99932,
+    "retired_submission_count": 373,
+    "accepted_observation_count": 94776,
+    "projected_raw_record_count": 85626,
+    "projected_corrected_record_count": 85392,
+    "submission_retirement_issue_count": 0,
+    "identity_override_issue_count": 0,
+    "semantic_correction_issue_count": 0,
+    "relationship_error_count": 0,
+    "target_finding_counts": {
+      "REL_SOURCE_ID_AMBIGUOUS": 0,
+      "REL_ALIAS_AMBIGUOUS": 0,
+      "REL_DUPLICATE_IDENTITY": 0
+    },
+    "remaining_relationship_findings": {
+      "REL_FAMILY_TYPE_SUSPECT": 4
+    },
+    "unsuppressed_global_identity_conflict_count": 0,
+    "m16_m34a_transition_relation_count": 2,
+    "m16_m34a_transition_self_loop_count": 0,
+    "m16_correction_written_to_corrections_jsonl": false,
+    "main_materialize_run": false,
+    "main_quality_run": false,
+    "release_run": false
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "grand-ave-planning-context-date-not-applicable",
+  "gap_id": "operational-coverage:28e64ed9e96647fd9769773f",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T07:25:00.000Z",
+  "rationale": "The source states only a prospective implementation target of late 2025 or 2026. It does not report a realized operational onset, and the exact project timeline relation is explicitly planned as of November 12, 2024. This planning milestone cannot found a study occurrence, so day/month onset refinement is not applicable to this record.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_project-implementation-late-2025-2026",
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024",
+      "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024#p022_c0002",
+      "block_id": "p022_c0002"
+    },
+    {
+      "record_id": "relation_project-timeline-implementation_2",
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024",
+      "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024#p022_c0002",
+      "block_id": "p022_c0002"
+    }
+  ],
+  "search_receipt_ids": []
+}

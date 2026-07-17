@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "express-bus-september-1-treatment-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:762c7be35b32ac3c4da942c2",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T11:06:40.000Z",
+  "rationale": "Approved occurrence occurrence:1dddfb078a97dd148a4e123d directly binds the delivered atomic service_pattern treatment treatment_weekday-express-bus-trip-discontinuation-fall-2024 and its delivered has_treatment relation. Further broad-row treatment recovery would duplicate the reviewed inverse treatment or cross it with the distinct Summer addition package.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

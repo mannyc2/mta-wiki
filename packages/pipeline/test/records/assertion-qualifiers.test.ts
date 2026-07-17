@@ -35,6 +35,43 @@ describe("withAssertionQualifiers", () => {
     expect(records[2]!.payload.assertion_status).toBe("delivered");
   });
 
+  it("qualifies treatment timeline events without promoting future launches", () => {
+    const records = [
+      rec("source_report", "source", { published_date_normalized: "2024-07" }, { source_id: "src" }),
+      rec("treatment_lane", "treatment_component", { treatment_family: "bus_lane" }),
+      rec("event_delivered", "event", {
+        event_family: "launch",
+        lifecycle_phase: "launched",
+        event_kind: "service_launch",
+        date_normalized: "2024-06-15",
+      }),
+      rec("event_future", "event", {
+        event_family: "launch",
+        lifecycle_phase: "launched",
+        event_kind: "service_launch",
+        date_normalized: "2024-09-01",
+      }),
+      rec("relation_delivered", "relation", {
+        relation_kind: "has_timeline_event",
+        relation_family: "timeline_context",
+        subject_id: "treatment_lane",
+        object_id: "event_delivered",
+        description: "The bus lane launched on June 15, 2024.",
+      }),
+      rec("relation_future", "relation", {
+        relation_kind: "has_timeline_event",
+        relation_family: "timeline_context",
+        subject_id: "treatment_lane",
+        object_id: "event_future",
+        description: "The bus lane is scheduled to launch on September 1, 2024.",
+      }),
+    ];
+
+    withAssertionQualifiers(records);
+    expect(records[4]?.payload.assertion_status).toBe("delivered");
+    expect(records[5]?.payload.assertion_status).toBe("planned");
+  });
+
   it("prefers an explicit relation status and defaults to unknown otherwise", () => {
     const records = [
       rec("a", "project", {}),

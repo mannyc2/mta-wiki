@@ -16,6 +16,7 @@ raw_text: "Bridges and Tunnels (\"B&T\"), in accordance with the All-Agency Serv
 submission_ids:
   - "sub_ea573b34994f7518"
 payload:
+  authority_tier: "board_material"
   content_type: "Staff Summary"
   description: "Miscellaneous Intelligent Transportation System & Operations Systems Consultant Design Services on an As-Needed Basis"
   document_type: "Staff Summary – Bridges and Tunnels"

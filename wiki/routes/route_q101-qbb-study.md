@@ -10,22 +10,28 @@ source_id: "201110_qbb_approach_summary"
 source_ids:
   - "201110_qbb_approach_summary"
   - "201110_qbb_summary_recommendations"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q101_201110_qbb"
 local_observation_ids:
   - "route_q101_201110_qbb"
   - "route_q101_qbb_study"
+  - "route_q101_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-10T23:01:32.319Z"
+generated_at: "2026-07-12T23:31:06.000Z"
 raw_text: "Q101 (Eastbound) 450, Q101 (Westbound)* 400, Q101 (Total) 850"
 submission_ids:
   - "sub_0ae62c830f7e3d2e"
+  - "sub_22d6ccb03d10bd4c"
   - "sub_f77ebd5d9fba58aa"
 payload:
   _merged_field_values:
     description:
       - "Provides direct service between Queens and Manhattan, key transit link for residents of Astoria and Long Island City"
       - "Local bus service between Manhattan and Queens using the Queensboro Bridge"
+    route_type_normalized:
+      - "local"
+      - "bus"
   borough: "Queens"
   borough_normalized: "queens"
   boroughs:
@@ -35,7 +41,9 @@ payload:
     - "manhattan"
     - "queens"
   description: "Provides direct service between Queens and Manhattan, key transit link for residents of Astoria and Long Island City"
+  gtfs_route_id: "Q101"
   route_id: "Q101"
+  route_name: "Q101"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "local"
@@ -78,6 +86,16 @@ evidence_refs:
     source_id: "201110_qbb_summary_recommendations"
     source_path: "raw/sources/201110_qbb_summary_recommendations/blocks.jsonl"
     text_sha256: "sha256:376dd6ffd9271866e95d6d960cf155b29506dad800b58c4c19260db1ec296430"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0090"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0090"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q101"
+    text_sha256: "sha256:24d82ef85bda008d49c478defd79b96f1d12e4e6f5200d6400df04ca8550d738"
     text_source: "raw_text"
 ---
 

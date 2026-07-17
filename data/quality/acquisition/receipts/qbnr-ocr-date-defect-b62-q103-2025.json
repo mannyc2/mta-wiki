@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "receipt_id": "qbnr-ocr-date-defect-b62-q103-2025",
+  "status": "ocr_defect_adjudicated",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T05:30:00.000Z",
+  "acquisition_method": "recovered_existing_official_capture",
+  "source": {
+    "source_id": "meeting_doc_187251",
+    "publisher": "MTA",
+    "title": "Chair's Presentation",
+    "source_url": "https://www.mta.info/document/187251",
+    "retrieved_at": "2026-06-07T01:15:00.249Z",
+    "artifact_path": "raw/sources/meeting_doc_187251/source.pdf",
+    "artifact_bytes": 6275543,
+    "artifact_sha256": "70d1bca820dde50ac82fa8c1e5021fe14f9c24bd64b0da59f607a7dc641b697a"
+  },
+  "visual_adjudication": {
+    "page_number": 5,
+    "render_command": "pdftoppm -f 5 -singlefile -png -r 200 raw/sources/meeting_doc_187251/source.pdf /tmp/meeting_doc_187251_p5",
+    "rendered_page_sha256": "d1bded3b6c16f52b3c718651b90418176281bfc13f7cfea83d15ec1991d34071",
+    "finding": "The photographed B62 and Q103 stop placards both visibly read 'Starting August 31'.",
+    "reviewers": [
+      "codex-corpus-completion-2026-07-13",
+      "codex-qbnr-residual-audit-2026-07-13"
+    ]
+  },
+  "ocr_defect": {
+    "evidence_id": "meeting_doc_187251#p005_c0003",
+    "block_path": "raw/sources/meeting_doc_187251/blocks.jsonl",
+    "blocks_file_sha256": "aceccc5cf62e984f512bdc129050e5995566c0e07e85fe25c32d0fc68b24fcb2",
+    "block_text_sha256": "sha256:94fec00c493f0cf77545ab66183d0e68f8e3e7d497e0127c5b376c87900aa7f9",
+    "ocr_engine": "chandra-ocr-2",
+    "incorrect_literal": "Starting August 21",
+    "correct_visual_literal": "Starting August 31",
+    "affected_event_record_ids": [
+      "event_b62-extension-aug2025",
+      "event_q103-reroute-aug2025"
+    ],
+    "affected_relation_record_ids": [
+      "relation_qbnr-timeline-b62-ext",
+      "relation_qbnr-timeline-q103-reroute"
+    ]
+  },
+  "independent_official_confirmation": [
+    {
+      "route": "B62",
+      "source_id": "mta_queens_bus_network_redesign_service_changes",
+      "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0101",
+      "evidence_sha256": "sha256:3df52b86890cf9e45ec23bfb96cb1f6d063bd0d96d5071980c49752c64349ea4",
+      "effective_date": "2025-08-31",
+      "approved_occurrence_id": "occurrence:18bf68576411afed0305dfed",
+      "founding_event_record_id": "event_b62-qbnr-service-change-2025-08-31"
+    },
+    {
+      "route": "Q103",
+      "source_id": "mta_queens_bus_network_redesign_service_changes",
+      "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0092",
+      "evidence_sha256": "sha256:8b4c022085bc8a49a79aaed4868a2e9393c54d29a73eab88a71a02d7dc287184",
+      "effective_date": "2025-08-31",
+      "approved_occurrence_id": "occurrence:c52f5ae327c2f0f315749440",
+      "founding_event_record_id": "event_q103-qbnr-service-change-2025-08-31"
+    }
+  ],
+  "decision": {
+    "verdict": "retract_false_ocr_duplicate_records",
+    "rationale": "The two canonical events and their project timeline relations were created solely from a demonstrably incorrect OCR reading. Correct, day-precise route-level records and approved occurrences already preserve the underlying official facts from an independently captured MTA service-change page. Retraction avoids publishing a false August 21 date or creating duplicate August 31 occurrences.",
+    "semantic_correction_ids": [
+      "core-coverage-qbnr-b62-ocr-date-retraction-20260713",
+      "core-coverage-qbnr-q103-ocr-date-retraction-20260713"
+    ],
+    "preservation_contract": [
+      "Do not alter the immutable source PDF or OCR evidence block.",
+      "Preserve the OCR defect in this durable adjudication receipt.",
+      "Preserve the clean B62 and Q103 canonical service-change events and approved occurrences.",
+      "Do not infer an August 21 service change from the Q103 route record's legacy internal identifier."
+    ],
+    "legacy_identifier_caveat": "route_q103-reroute-20250821 is a stable internal route-record identifier whose payload and approved occurrence resolve to Q103 and 2025-08-31; it is not date evidence and is not renamed by this correction."
+  },
+  "coverage_baseline": {
+    "manifest_sha256": "d2e6fc53a82fad57472542e9da9a1d8caa677af4d8a931e35de3965e60ef6f1f",
+    "priority_queue_sha256": "13da1445f26392652e11a5f7b1835f85b9c23408ccc4d3d306f468ed09c43902",
+    "removed_false_gap_ids": [
+      "operational-coverage:1bb3ab952238ba72daf229ea",
+      "operational-coverage:3767ea1ed7fb9feb849ce748",
+      "operational-coverage:4628780b06a452e40c49afb5",
+      "operational-coverage:8c06619d99742fb6b9bd62ed",
+      "operational-coverage:902fb6ea7983b2c78626f2d2",
+      "operational-coverage:985cd77483dc0d5241eab4c6",
+      "operational-coverage:a5acd32b8aaf2523e7dc5e8f",
+      "operational-coverage:e1f0efa1458301fad68d038b"
+    ]
+  }
+}

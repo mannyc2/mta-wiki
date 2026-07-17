@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "fare-free-pilot-unlinked-end-duplicate-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:56f7a91b984b49b88d27d1df",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T06:45:30.000Z",
+  "rationale": "This unlinked September 1 fare-resumption record duplicates the retrospective official evaluation end event that founds the approved occurrence. Adding a second timeline link would double-count the same resumption, so the diagnostic is not applicable.",
+  "proposal_ids": [
+    "orp_fare_free_pilot_route_scope_and_resumption_2023_2024"
+  ],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

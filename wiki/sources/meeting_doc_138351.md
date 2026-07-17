@@ -15,6 +15,7 @@ generated_at: "2026-06-20T16:23:00.296Z"
 submission_ids:
   - "sub_dbbfe40956e5746f"
 payload:
+  authority_tier: "board_material"
   content_type: "Staff Summary / Resolution / Public Hearing Transcript"
   date_text: "April 29, 2024 (Staff Summary); April 30, 2024 (Board Meeting); February 6, 2024 (Public Hearing)"
   date_text_normalized:

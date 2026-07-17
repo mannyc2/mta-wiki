@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "flatbush-av-phase1-installed-fall2025-date-precision-not-applicable",
+  "gap_id": "operational-coverage:41c398638898c7778fc112cc",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T18:50:00.000Z",
+  "rationale": "The April 2026 retrospective supports only Fall 2025 season precision for completion. Approved occurrence occurrence:8c987704152b459014217d44 already represents the same bounded two-block implementation at its source-backed September commencement month, so refining or projecting this completion milestone would double count one treatment delivery.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_flatbush-av-phase1-installed-fall2025",
+      "source_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026",
+      "evidence_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026#p004_c0002",
+      "block_id": "p004_c0002"
+    }
+  ],
+  "search_receipt_ids": []
+}

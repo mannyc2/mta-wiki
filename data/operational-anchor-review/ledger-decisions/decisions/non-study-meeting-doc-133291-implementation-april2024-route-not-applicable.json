@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-meeting-doc-133291-implementation-april2024-route-not-applicable",
+  "gap_id": "operational-coverage:56d27b4303f8c9caef318eb9",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "This record gives a proposed April 2024 implementation date for a multi-route schedule-change package. The source does not retrospectively confirm delivery or bind each candidate route to a treatment, so the coarse proposal cannot be promoted as an occurrence.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_meeting-doc-133291-implementation-april2024",
+      "source_id": "meeting_doc_133291",
+      "evidence_id": "meeting_doc_133291#p001_c0012",
+      "block_id": "p001_c0012"
+    }
+  ],
+  "search_receipt_ids": []
+}

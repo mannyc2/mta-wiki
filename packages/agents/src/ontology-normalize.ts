@@ -11,7 +11,7 @@ import { createWikiReactorSandboxTools, sandboxSystemPrompt } from "@mta-wiki/co
 import { createTranscript, type TranscriptWriter } from "@mta-wiki/core/transcript";
 import type { HarnessConfig, HarnessRunOptions } from "@mta-wiki/core/types";
 import { assistantText } from "@mta-wiki/core/usage";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import type { OntologyAgentId, OntologyReviewCandidate, OntologyReviewManifest } from "@mta-wiki/agents/ontology-review";
 import { ontologyAgentDefinitions } from "@mta-wiki/agents/ontology-review";
 import { RELATION_FAMILIES } from "@mta-wiki/pipeline/records/relations";

@@ -2,7 +2,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { join, relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { identityKeysForRecord, isGlobalRecordKind, type GlobalMtaRecordKind } from "@mta-wiki/db/identity";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { writeJsonFile } from "@mta-wiki/pipeline/identity/identity-override-writes";
 import type { JsonObject, JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
 

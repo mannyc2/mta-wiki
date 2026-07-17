@@ -15,7 +15,7 @@ generated_at: "2026-06-20T20:37:02.507Z"
 submission_ids:
   - "sub_3804133c1511b230"
 payload:
-  authority_tier: "press_release"
+  authority_tier: "board_material"
   content_type: "Staff Summary"
   description: "Staff summary to gain presidential approval for bus schedule changes to enhance service on eight express bus routes and 16 local bus routes/bus route combinations in support of Congestion Pricing"
   document_date: "December 10, 2024"

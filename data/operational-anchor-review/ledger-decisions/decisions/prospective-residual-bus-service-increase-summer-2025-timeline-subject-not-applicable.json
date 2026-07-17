@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-bus-service-increase-summer-2025-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:c9f6d63b832b05de1f4776d0",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_bus-service-increase-summer-2025 is retained as source-backed prospective history, but it has no incoming timeline subject and no reviewed occurrence. Its cited forecast must not be attached to a project merely to manufacture operational scope; timeline-subject recovery for the study queue is therefore not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_bus-service-increase-summer-2025",
+      "source_id": "meeting_doc_174141",
+      "evidence_id": "meeting_doc_174141#p006_c0004",
+      "block_id": "p006_c0004"
+    }
+  ],
+  "search_receipt_ids": []
+}

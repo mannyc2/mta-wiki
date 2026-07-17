@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "decision_id": "q98-route-redesign-2025-06-29",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T05:00:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official MTA Q98 row binds a realized 2025-06-29 onset, the Q98 route, and one canonical service_pattern treatment in the same exact source block. This occurrence preserves the literal treatment family and does not inherit project-wide route or treatment scope.",
+  "occurrence_id": "occurrence:a8dd6f3a8e3204d0eeb69c4e",
+  "founding_key": "event:event_q98-qbnr-start-2025-06-29",
+  "observation_event_record_ids": [
+    "event_q98-qbnr-start-2025-06-29"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-q98",
+    "relation_qbnr-2025-has-q98-flushing-ridgewood-connection",
+    "relation_qbnr-has-q98-start-2025-06-29"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-06-29",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_q98-qbnr-start-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0088"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-q98-start-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0088"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_q98-qbnr-2025",
+      "gtfs_route_id": "Q98",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_q98-qbnr-2025",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0088"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-q98",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0088"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "atomic",
+  "treatment": {
+    "kind": "atomic",
+    "member": {
+      "treatment_record_id": "treatment_q98-flushing-ridgewood-connection-2025",
+      "treatment_family": "service_pattern",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_q98-flushing-ridgewood-connection-2025",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0088"
+        },
+        {
+          "role": "treatment_scope",
+          "record_id": "relation_qbnr-2025-has-q98-flushing-ridgewood-connection",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0088"
+        }
+      ]
+    }
+  }
+}

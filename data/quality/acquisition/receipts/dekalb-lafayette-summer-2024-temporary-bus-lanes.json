@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "receipt_id": "dekalb-lafayette-summer-2024-temporary-bus-lanes",
+  "status": "delivered_scope_recovered_exact_onset_absent",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T14:10:00Z",
+  "scope": {
+    "project_record_id": "project_dekalb-lafayette-bus-safety-improvements",
+    "event_record_id": "event_dekalb-lafayette-summer2024-temp-lanes",
+    "route_record_id": "route_b38",
+    "gtfs_route_id": "B38",
+    "treatment_record_id": "treatment_temp-bus-lanes-summer2024",
+    "superseded_treatment_record_id": "treatment_summer2024-temp-bus-lanes"
+  },
+  "official_source_captures": [
+    {
+      "source_id": "dekalb_lafayette_cb2_dec2024",
+      "upstream_source_id": "nyc_dot_bus_priority_document_pdf_dekalb_lafayette_cb2_dec2024",
+      "publisher": "NYC DOT",
+      "document_date": "2024-12",
+      "source_url": "https://www.nyc.gov/html/dot/downloads/pdf/dekalb-lafayette-cb2-dec2024.pdf",
+      "artifacts": {
+        "metadata_json_sha256": "17cf5a663bd0aca3543e087e1ffe9c68798dd15bf414d4605da06ed373966ac8",
+        "source_pdf_sha256": "412db03c4b2a3391e9486ac2a092a82e52bf81854eb631369b1b618a37225540",
+        "blocks_jsonl_sha256": "51c9f53b970baab069da9ab3835ec3b44334bdb31d45d06ac465f0c1e93463c3"
+      },
+      "evidence_id": "dekalb_lafayette_cb2_dec2024#p026_c0002",
+      "evidence_sha256": "sha256:c054459a74d1d0e28e1399d6a1e160f99ce9d454d90ce0c157b9d7a3cc2e8f19"
+    },
+    {
+      "source_id": "dekalb_lafayette_cb3_dec2024",
+      "upstream_source_id": "nyc_dot_bus_priority_document_pdf_dekalb_lafayette_cb3_dec2024",
+      "publisher": "NYC DOT",
+      "document_date": "2024-12",
+      "source_url": "https://www.nyc.gov/html/dot/downloads/pdf/dekalb-lafayette-cb3-dec2024.pdf",
+      "artifacts": {
+        "metadata_json_sha256": "2d21a2e9ffe66e195a25cfd1fa3f1241cf37147aef9eab10614d83ceb43848ac",
+        "source_pdf_sha256": "a1219ffffbef3f5a1aaa6107413e462cdac07bd5063b689671eb15458d8be73f",
+        "blocks_jsonl_sha256": "c5be391a9ef7b79abfcea79e38939534b072a485fab88e4ab80430d7145b9284"
+      },
+      "evidence_id": "dekalb_lafayette_cb3_dec2024#p026_c0002",
+      "evidence_sha256": "sha256:4b9343a4a85b2b31eb91110870cc013d4bf78578c978d82c02f588ac97d7b4b4"
+    }
+  ],
+  "evidence_findings": {
+    "delivered_lifecycle": "The temporary bus lanes were installed during the Summer 2024 G Train shutdown.",
+    "route_scope": "The same block says the corridor bus lanes improved B38 service.",
+    "treatment_scope": "The installed treatment is explicitly identified as temporary bus lanes along portions of DeKalb and Lafayette Avenues.",
+    "date_precision": "The source states Summer 2024 and no day or month-level physical lane activation date. The canonical season precision is preserved."
+  },
+  "identity_adjudication": {
+    "disposition": "reuse_cb2_canonical_treatment",
+    "survivor_record_id": "treatment_temp-bus-lanes-summer2024",
+    "superseded_record_id": "treatment_summer2024-temp-bus-lanes",
+    "semantic_correction_id": "core-coverage-dekalb-lafayette-cb3-temp-lane-duplicate-20260713",
+    "basis": "The CB2 and CB3 presentations describe the same temporary lane installation with the same treatment kind, location, season, shutdown context, and B38 result. This is a guarded record-level supersession, not an ontology-wide merge."
+  },
+  "temporal_adjudication": {
+    "canonical_date_normalized": "2024-summer",
+    "canonical_date_precision": "season",
+    "lifecycle_phase": "installed",
+    "timeline_assertion_status": "delivered",
+    "exact_operational_onset": null,
+    "rejected_inference": "The August 12, 2024 start of a G Train shuttle-service phase does not state when the temporary bus lanes were physically activated and is not assigned to this event."
+  },
+  "corpus_search": {
+    "staged_source_ids_searched": [
+      "better_buses",
+      "brooklyn_bus_network_draft_plan_without_route_profiles",
+      "dekalb_lafayette_cb2_dec2024",
+      "dekalb_lafayette_cb3_dec2024",
+      "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024",
+      "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024",
+      "grand_ave_metropolitan_ave_queens_blvd_nov2024"
+    ],
+    "full_artifact_tree_root": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs",
+    "matched_upstream_source_ids": [
+      "nyc_dot_bus_priority_document_pdf_dekalb_lafayette_cb2_dec2024",
+      "nyc_dot_bus_priority_document_pdf_dekalb_lafayette_cb3_dec2024"
+    ],
+    "exact_lane_onset_found": false,
+    "nonqualifying_web_discovery_staged": false,
+    "disposition": "The full captured artifact tree yielded only the two already-staged NYC DOT decks for this project. MTA G Train shutdown pages state shuttle-service dates but do not explicitly state a temporary-lane activation date, so they were not staged as onset evidence."
+  },
+  "reproducibility": {
+    "observation_count": 4,
+    "semantic_correction_ids": [
+      "core-coverage-dekalb-lafayette-cb3-temp-lane-duplicate-20260713",
+      "core-coverage-dekalb-lafayette-delivered-scope-treatment-duplicate-20260713",
+      "core-coverage-dekalb-lafayette-summer2024-delivered-timeline-20260713",
+      "core-coverage-dekalb-lafayette-temp-lane-timeline-local-identity-20260713"
+    ],
+    "curation_script": "scripts/curate-dekalb-lafayette-summer-2024-temp-lanes.ts"
+  }
+}

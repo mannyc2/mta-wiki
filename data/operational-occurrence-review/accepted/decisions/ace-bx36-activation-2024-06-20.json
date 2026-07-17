@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "decision_id": "ace-bx36-activation-2024-06-20",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T13:25:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official November 2024 presentation retrospectively binds one exact Bx36 ACE activation to June 20, 2024 and to one source-scoped automated_bus_lane_enforcement treatment. June 20 is the realized camera activation and warning-period onset: the source says cameras issue warnings for the first 60 days after activation, so this occurrence does not mislabel the date as the later start of violation issuance. Project-wide route and treatment candidates are intentionally excluded.",
+  "occurrence_id": "occurrence:333a3d854315aa8fa6d90e93",
+  "founding_key": "event:event_tremont-ace-cameras-operative",
+  "observation_event_record_ids": [
+    "event_tremont-ace-cameras-operative"
+  ],
+  "observation_relation_record_ids": [
+    "relation_ace-bx36-activation-affects-bx36",
+    "relation_ace-bx36-activation-has-camera-enforcement",
+    "relation_ace-bx36-has-june-20-2024-activation"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2024-06-20",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_tremont-ace-cameras-operative",
+        "source_id": "tremont_ave_bus_priority_cb6_nov2024",
+        "evidence_id": "tremont_ave_bus_priority_cb6_nov2024#p026_c0002"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_ace-bx36-has-june-20-2024-activation",
+        "source_id": "tremont_ave_bus_priority_cb6_nov2024",
+        "evidence_id": "tremont_ave_bus_priority_cb6_nov2024#p026_c0002"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_bx36",
+      "gtfs_route_id": "BX36",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_bx36",
+          "source_id": "tremont_ave_bus_priority_cb6_nov2024",
+          "evidence_id": "tremont_ave_bus_priority_cb6_nov2024#p026_c0002"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_ace-bx36-activation-affects-bx36",
+          "source_id": "tremont_ave_bus_priority_cb6_nov2024",
+          "evidence_id": "tremont_ave_bus_priority_cb6_nov2024#p026_c0002"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "atomic",
+  "treatment": {
+    "kind": "atomic",
+    "member": {
+      "treatment_record_id": "treatment_bx36-ace-activation-tremont-avenue",
+      "treatment_family": "automated_bus_lane_enforcement",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_bx36-ace-activation-tremont-avenue",
+          "source_id": "tremont_ave_bus_priority_cb6_nov2024",
+          "evidence_id": "tremont_ave_bus_priority_cb6_nov2024#p026_c0002"
+        },
+        {
+          "role": "treatment_scope",
+          "record_id": "relation_ace-bx36-activation-has-camera-enforcement",
+          "source_id": "tremont_ave_bus_priority_cb6_nov2024",
+          "evidence_id": "tremont_ave_bus_priority_cb6_nov2024#p026_c0002"
+        }
+      ]
+    }
+  }
+}

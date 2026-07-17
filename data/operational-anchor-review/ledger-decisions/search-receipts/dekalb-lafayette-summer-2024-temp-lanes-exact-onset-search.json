@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "receipt_id": "dekalb-lafayette-summer-2024-temp-lanes-exact-onset-search",
+  "gap_id": "operational-coverage:c6cc3949e83530c9121f0b38",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "searched_at": "2026-07-13T14:20:00.000Z",
+  "rationale": "Revalidated every persisted DeKalb/Lafayette source search and registry match against the current corpus fingerprint for a day- or month-level physical lane activation date. The two official decks continue to state only Summer 2024; current corpus changes outside this event add no source-connected exact onset evidence, and G Train shuttle-service dates remain non-equivalent to lane activation. August 12 was not inferred as the physical lane activation date.",
+  "corpus_fingerprint": "80493f99f209adf11fdad7c3d6f86a5e2381595cab95c59cecf402c2efa099bf",
+  "source_searches": [
+    {
+      "source_id": "better_buses",
+      "queries": [
+        "DeKalb Lafayette B38 AND (exact installation date OR lane activation date)",
+        "temporary bus lanes AND (opened on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "brooklyn_bus_network_draft_plan_without_route_profiles",
+      "queries": [
+        "DeKalb Lafayette B38 AND (exact installation date OR lane activation date)",
+        "temporary bus lanes AND (opened on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "dekalb_lafayette_cb2_dec2024",
+      "queries": [
+        "DeKalb Lafayette B38 AND (exact installation date OR lane activation date)",
+        "temporary bus lanes AND (opened on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "dekalb_lafayette_cb3_dec2024",
+      "queries": [
+        "DeKalb Lafayette B38 AND (exact installation date OR lane activation date)",
+        "temporary bus lanes AND (opened on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024",
+      "queries": [
+        "DeKalb Lafayette B38 AND (exact installation date OR lane activation date)",
+        "temporary bus lanes AND (opened on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024",
+      "queries": [
+        "DeKalb Lafayette B38 AND (exact installation date OR lane activation date)",
+        "temporary bus lanes AND (opened on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    },
+    {
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024",
+      "queries": [
+        "DeKalb Lafayette B38 AND (exact installation date OR lane activation date)",
+        "temporary bus lanes AND (opened on OR activated on OR went into effect on)"
+      ],
+      "matching_block_ids": []
+    }
+  ],
+  "registry_search": {
+    "queries": [
+      "DeKalb Lafayette temporary bus lanes B38 exact opening activation date",
+      "Summer 2024 G Train shutdown temporary lane installation date"
+    ],
+    "title_filters": [
+      "B38",
+      "DeKalb",
+      "G Train shutdown",
+      "Lafayette"
+    ],
+    "publisher_filters": [
+      "Metropolitan Transportation Authority",
+      "NYC DOT"
+    ],
+    "matched_source_ids": [
+      "dekalb_lafayette_cb2_dec2024",
+      "dekalb_lafayette_cb3_dec2024"
+    ]
+  }
+}

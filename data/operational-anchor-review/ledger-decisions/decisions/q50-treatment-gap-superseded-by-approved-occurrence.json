@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "q50-treatment-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:93d5bf2bd65fd8dc602167da",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-12",
+  "decided_at": "2026-07-12T22:31:00.000Z",
+  "rationale": "The broad inherited Queens redesign graph contains treatment candidates from several routes and is not a safe treatment-level study projection. Approved occurrence occurrence:771f5f9c06cb706d0a867ecc binds this event only to the canonical Q50 stop-removal treatment using official same-block evidence, so further recovery of the broad diagnostic treatment gap is not applicable.",
+  "proposal_ids": [
+    "orp_qbnr_q19_q29_q50_q54_q59_q72_stop_removals_2025"
+  ],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

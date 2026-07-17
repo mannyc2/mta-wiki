@@ -10,26 +10,27 @@ import {
   pruneUnderSpecifiedIdentityKeys,
   recordBaseIdForInput,
 } from "@mta-wiki/db/identity";
-import type { Database } from "bun:sqlite";
-import {
-  canonicalDbPath,
-  openCanonicalDb,
-  readCanonicalRecordsFromDb,
-  readCanonicalRecordsOfKindFromDb,
-  rebuildCanonicalDb,
-  rowToRecord,
-} from "@mta-wiki/db/canonical-db";
+import { rebuildCanonicalDb } from "@mta-wiki/db/canonical-db";
+import { loadRelationshipContract, relationshipContractValidationMode } from "@mta-wiki/db/relationship-contract";
+import { canonicalDir, FILE_BY_KIND } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { withDerivedRelations } from "@mta-wiki/pipeline/records/derived-relations";
 import { withSourceDateBackfill } from "@mta-wiki/pipeline/sources/source-date-backfill";
 import { withAssertionQualifiers } from "@mta-wiki/pipeline/records/assertion-qualifiers";
 import { normalizeRelationPayload, type RelationEndpointKinds } from "@mta-wiki/pipeline/records/relations";
-import { readSemanticCorrections, withSemanticCorrections } from "@mta-wiki/pipeline/records/semantic-corrections";
+import { auditRelationshipGraph } from "@mta-wiki/pipeline/records/relationship-integrity";
+import { readSemanticCorrections, readSemanticCorrectionSupersessions, semanticSupersessionIdentities, withSemanticCorrections } from "@mta-wiki/pipeline/records/semantic-corrections";
 import { stableHash } from "@mta-wiki/db/stable-json";
 import { retiredSubmissionIds } from "@mta-wiki/pipeline/records/submission-overrides";
 import { normalizeSubmitInput, readSubmissionEntries, relationEndpointIssues, validateSubmitInput } from "@mta-wiki/pipeline/records/submissions";
 import { normalizeObservationPayload, type NormalizationContext } from "@mta-wiki/pipeline/ontology/normalizers";
 import { sourceDocumentMarkdown } from "@mta-wiki/pipeline/sources/source-packet";
 import { sourceBlocksPath } from "@mta-wiki/pipeline/sources/source-prep";
+import { relationshipCompletenessForMaterialization } from "@mta-wiki/pipeline/quality/relationship-completeness-boundary";
+import {
+  buildEvidenceBlockIndexEntries,
+  writeEvidenceBlockIndex,
+  type EvidenceBlockIndex,
+} from "@mta-wiki/pipeline/sources/evidence-block-index";
 import type { JsonObject, JsonValue, MaterializeResult, MtaCanonicalRecord, MtaEvidenceRef, MtaObservationKind, MtaSubmissionEntry, MtaSubmitObservationInput } from "@mta-wiki/db/types";
 
 const CANONICAL_KINDS = [
@@ -46,21 +47,6 @@ const CANONICAL_KINDS = [
   "source_gap",
   "relation",
 ] as const;
-
-export const FILE_BY_KIND = new Map<string, string>([
-  ["source", "sources.jsonl"],
-  ["entity", "entities.jsonl"],
-  ["project", "projects.jsonl"],
-  ["corridor", "corridors.jsonl"],
-  ["route", "routes.jsonl"],
-  ["treatment_component", "treatment_components.jsonl"],
-  ["event", "events.jsonl"],
-  ["claim", "claims.jsonl"],
-  ["metric_claim", "metric_claims.jsonl"],
-  ["table", "tables.jsonl"],
-  ["source_gap", "source_gaps.jsonl"],
-  ["relation", "relations.jsonl"],
-]);
 
 const PAGE_DIR_BY_KIND: Partial<Record<MtaCanonicalRecord["record_kind"], string>> = {
   source: "sources",
@@ -558,6 +544,31 @@ function assignRecordIds(entries: MtaSubmissionEntry[]) {
   }
 
   return ids;
+}
+
+/**
+ * Return the exact identity-to-record-id assignment the materializer would use
+ * for a submission set. Recovery apply uses this before creating a journal so
+ * a new observation cannot silently take an existing base id or acquire an
+ * unreviewed collision suffix.
+ */
+export function materializedRecordIdAssignments(
+  entries: MtaSubmissionEntry[],
+  options: MaterializeEntryOptions = {},
+): Map<string, string> {
+  const accepted = materializableEntries(entries, options);
+  return recordIdAssignmentsForMaterializableEntries(accepted);
+}
+
+/** Test/support seam for callers that already hold materializable entries. */
+export function recordIdAssignmentsForMaterializableEntries(
+  entries: MtaSubmissionEntry[],
+): Map<string, string> {
+  const byToolArgs = new Map<string, MtaSubmissionEntry>();
+  for (const entry of entries) {
+    byToolArgs.set(stableHash(entry.tool_args as unknown as JsonObject), entry);
+  }
+  return assignRecordIds([...byToolArgs.values()]);
 }
 
 function displayName(entry: MtaSubmissionEntry) {
@@ -1469,10 +1480,6 @@ function writeIndex(records: MtaCanonicalRecord[]) {
   writeFileSync(join(repoRoot, "wiki", "index.md"), content, "utf8");
 }
 
-function canonicalDir() {
-  return join(repoRoot, "data", "canonical");
-}
-
 function generatedWikiRoots() {
   return ["sources", "projects", "corridors", "routes", "gaps", "entities"].map((dir) => join(repoRoot, "wiki", dir));
 }
@@ -1512,10 +1519,47 @@ export function materializeWiki(): MaterializeResult {
   const submissions = readSubmissionEntries();
   const retiredIds = retiredSubmissionIds();
   const acceptedSubmissions = materializableEntries(submissions, { retiredSubmissionIds: retiredIds });
-  const semanticCorrectionResult = withSemanticCorrections(entriesToRecords(submissions, { retiredSubmissionIds: retiredIds }), readSemanticCorrections());
+  const semanticCorrections = readSemanticCorrections();
+  const semanticCorrectionResult = withSemanticCorrections(
+    entriesToRecords(submissions, { retiredSubmissionIds: retiredIds }),
+    semanticCorrections,
+    readSemanticCorrectionSupersessions(),
+  );
+  if (semanticCorrectionResult.issues.length > 0) {
+    throw new Error(
+      `semantic corrections rejected authoritative materialization (${semanticCorrectionResult.issues.length} issue(s)): ` +
+        semanticCorrectionResult.issues.slice(0, 8).map((issue) => `${issue.code} ${issue.recordId ?? issue.path ?? ""}: ${issue.message}`).join("; "),
+    );
+  }
   const records = semanticCorrectionResult.records;
   const counts: Record<string, number> = {};
 
+  // Authoritative JSONL is the source of truth, so the relationship contract must run over the
+  // final in-memory record set before *any* generated file is changed. SQLite repeats these
+  // invariants as a derived-store defense, but it cannot protect JSONL that was already written.
+  // Build the evidence registry from the same final record set in memory. Reading the previous
+  // generated index here would falsely reject newly staged, valid evidence (or accept a stale
+  // hash) before the index can be rebuilt.
+  const evidenceEntries = buildEvidenceBlockIndexEntries(records);
+  const evidenceIndex: EvidenceBlockIndex = {
+    byRef: new Map(evidenceEntries.map((entry) => [`${entry.source_id}\0${entry.block_id}`, entry])),
+    sourceIds: new Set(evidenceEntries.map((entry) => entry.source_id)),
+  };
+  const relationshipContract = loadRelationshipContract();
+  const relationshipAudit = auditRelationshipGraph(records, {
+    mode: relationshipContractValidationMode(relationshipContract),
+    contract: relationshipContract,
+    includeOrphans: false,
+    evidenceIndex,
+  });
+  const relationshipErrors = relationshipAudit.findings.filter((finding) => finding.severity === "error");
+  if (relationshipErrors.length > 0) {
+    const sample = relationshipErrors.slice(0, 8).map((finding) => `${finding.code} ${finding.record_id ?? finding.finding_id}`).join("; ");
+    throw new Error(`relationship contract rejected authoritative materialization (${relationshipErrors.length} error(s)): ${sample}`);
+  }
+  const relationshipCompleteness = relationshipCompletenessForMaterialization(records, relationshipContract);
+
+  writeEvidenceBlockIndex(records);
   mkdirSync(canonicalDir(), { recursive: true });
   for (const kind of CANONICAL_KINDS) {
     const kindRecords = records.filter((record) => record.record_kind === kind);
@@ -1532,7 +1576,12 @@ export function materializeWiki(): MaterializeResult {
 
   // Additive: rebuild the canonical SQLite materialization alongside the JSONL above. Runs last,
   // so a build failure surfaces loudly without affecting the already-written JSONL/indexes.
-  rebuildCanonicalDb(records, { submissions });
+  rebuildCanonicalDb(records, {
+    submissions,
+    identitySupersessions: semanticSupersessionIdentities(semanticCorrections),
+    relationshipFindings: relationshipAudit.findings,
+    relationshipCompleteness: relationshipCompleteness.mirror,
+  });
 
   return {
     submissionsRead: submissions.length,
@@ -1544,81 +1593,4 @@ export function materializeWiki(): MaterializeResult {
     canonicalDir: canonicalDir(),
     wikiDir: join(repoRoot, "wiki"),
   };
-}
-
-/** The JSONL write order: files sorted by name, records within a file in record_id order (the
- *  global record_id sort, filtered per kind). The DB reader re-sorts to this so swapping the read
- *  source is invisible to order-sensitive consumers (e.g. writer-tools' top-N slice). */
-function canonicalRecordOrder(a: MtaCanonicalRecord, b: MtaCanonicalRecord): number {
-  const fa = FILE_BY_KIND.get(a.record_kind) ?? a.record_kind;
-  const fb = FILE_BY_KIND.get(b.record_kind) ?? b.record_kind;
-  return fa.localeCompare(fb) || a.record_id.localeCompare(b.record_id);
-}
-
-/** Read canonical records straight from the JSONL files — the durable, append-only artifacts.
- *  Always available; used as the fallback whenever the DB is absent or its schema is out of date. */
-export function readCanonicalRecordsFromJsonl(): MtaCanonicalRecord[] {
-  const dir = canonicalDir();
-  if (!existsSync(dir)) return [];
-
-  const records: MtaCanonicalRecord[] = [];
-  for (const fileName of readdirSync(dir).filter((name) => name.endsWith(".jsonl")).sort()) {
-    const content = readFileSync(join(dir, fileName), "utf8");
-    for (const line of content.split(/\r?\n/u)) {
-      if (line.trim()) records.push(JSON.parse(line) as MtaCanonicalRecord);
-    }
-  }
-  return records;
-}
-
-/** Read canonical records from a specific canonical.db file, reproducing JSONL order exactly.
- *  Returns undefined when the file is absent or its schema version doesn't match the reader — the
- *  caller then falls back to JSONL, so a missing/stale DB degrades gracefully, never loses data. */
-export function readCanonicalRecordsFromDbFile(path: string = canonicalDbPath()): MtaCanonicalRecord[] | undefined {
-  if (!existsSync(path)) return undefined;
-  let db;
-  try {
-    db = openCanonicalDb(path, { readonly: true });
-  } catch {
-    return undefined; // version mismatch / unreadable → JSONL fallback
-  }
-  try {
-    return readCanonicalRecordsFromDb(db).sort(canonicalRecordOrder);
-  } finally {
-    db.close();
-  }
-}
-
-/** Open the live canonical DB read-only and run a reader. After the hard cutover the DB is the
- *  single canonical store: a missing or wrong-version DB is a LOUD error ("re-run materialize"),
- *  never a silent JSONL fallback (docs/sqlite-cutover-and-ontology-plan.md A2). openCanonicalDb
- *  throws on a schema-version mismatch; the canonical JSONL survives only as a frozen pre-cutover
- *  snapshot (backups/) and the on-demand export-jsonl artifact, both read by code only via the
- *  explicit forensic helpers (readCanonicalRecordsFromJsonl / readCanonicalRecordsFromDbFile),
- *  never by the default readers below. */
-function withCanonicalDb<T>(read: (db: Database) => T): T {
-  const dbPath = canonicalDbPath();
-  if (!existsSync(dbPath)) throw new Error(`canonical.db not found at ${dbPath}; re-run materialize`);
-  const db = openCanonicalDb(dbPath, { readonly: true });
-  try {
-    return read(db);
-  } finally {
-    db.close();
-  }
-}
-
-/** All canonical records, from the live SQLite store (indexed), in canonical JSONL order. */
-export function readCanonicalRecords(): MtaCanonicalRecord[] {
-  return withCanonicalDb((db) => readCanonicalRecordsFromDb(db).sort(canonicalRecordOrder));
-}
-
-/** Canonical records of a single kind, via the DB's kind index — the same-kind set the identity
- *  candidate resolver needs, without loading the whole corpus. */
-export function readCanonicalRecordsByKind(kind: string): MtaCanonicalRecord[] {
-  return withCanonicalDb((db) => readCanonicalRecordsOfKindFromDb(db, kind).sort(canonicalRecordOrder));
-}
-
-/** A single canonical record by id, via the DB primary key. Undefined when it does not exist. */
-export function readCanonicalRecordById(recordId: string): MtaCanonicalRecord | undefined {
-  return withCanonicalDb((db) => rowToRecord(db, recordId));
 }

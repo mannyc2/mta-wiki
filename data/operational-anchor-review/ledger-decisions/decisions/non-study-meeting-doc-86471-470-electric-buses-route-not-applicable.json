@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-meeting-doc-86471-470-electric-buses-route-not-applicable",
+  "gap_id": "operational-coverage:66155acb35dfb44684ee960f",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "This is a 2025-26 fleet procurement/deployment plan with no exact operational date, delivered confirmation, route assignment, or speed-treatment scope. Refining it into a study occurrence would require unsupported assumptions and is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_meeting-doc-86471-470-electric-buses",
+      "source_id": "meeting_doc_86471",
+      "evidence_id": "meeting_doc_86471#p003_c0006",
+      "block_id": "p003_c0006"
+    }
+  ],
+  "search_receipt_ids": []
+}

@@ -15,7 +15,7 @@ generated_at: "2026-06-19T18:41:46.534Z"
 submission_ids:
   - "sub_74f9907d03ae1d4a"
 payload:
-  authority_tier: "press_release"
+  authority_tier: "plan_document"
   content_type: "presentation"
   date_text: "June 2, 2021"
   date_text_normalized:

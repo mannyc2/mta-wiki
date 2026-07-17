@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "decision_id": "q101-route-redesign-2025-08-31",
+  "review_state": "approved",
+  "accepted_at": "2026-07-12T23:41:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-12",
+  "rationale": "The official MTA Q101 row binds a realized August 31, 2025 onset and one uniquely anchored route to all 3 canonical treatment members stated for that row. Each member retains its literal treatment family. The official Queens Bus Network Redesign project context separately supports route_redesign as the reviewed bundle analysis family. No alternative route scope is inherited.",
+  "occurrence_id": "occurrence:17599e5e02011a49dbf3a39e",
+  "founding_key": "event:event_q101-qbnr-service-change-2025-08-31",
+  "observation_event_record_ids": [
+    "event_q101-qbnr-service-change-2025-08-31"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-q101",
+    "relation_qbnr-2025-has-q101-northern-shortening",
+    "relation_qbnr-2025-has-q101-southern-hunters-point-reroute",
+    "relation_qbnr-2025-has-q101-stop-removal",
+    "relation_qbnr-has-q101-service-change-2025-08-31"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-08-31",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_q101-qbnr-service-change-2025-08-31",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0090"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-q101-service-change-2025-08-31",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0090"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_q101-qbb-study",
+      "gtfs_route_id": "Q101",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_q101-qbb-study",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0090"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-q101",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0090"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "bundle",
+  "treatment": {
+    "kind": "bundle",
+    "analysis_family": "route_redesign",
+    "analysis_family_evidence_bindings": [
+      {
+        "role": "bundle_analysis_family",
+        "record_id": "project_queens-bus-network-redesign",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0001"
+      }
+    ],
+    "members": [
+      {
+        "treatment_record_id": "treatment_q101-northern-shortening-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q101-northern-shortening-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0090"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q101-northern-shortening",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0090"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q101-southern-hunters-point-reroute-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q101-southern-hunters-point-reroute-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0090"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q101-southern-hunters-point-reroute",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0090"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q101-stop-removal-2025",
+        "treatment_family": "bus_stop_or_boarding",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q101-stop-removal-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0090"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q101-stop-removal",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0090"
+          }
+        ]
+      }
+    ]
+  }
+}

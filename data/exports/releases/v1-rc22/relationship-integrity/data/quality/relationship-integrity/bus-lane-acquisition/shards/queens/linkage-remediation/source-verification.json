@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-07-15T18:00:00.000Z",
+  "sources": [
+    {
+      "source_id": "nyc_dot_21st_street_bus_priority_completion_2022",
+      "status": "staged_dynamic_official_html_snapshot",
+      "url": "https://www.nyc.gov/html/dot/html/pr2022/buses-for-queens.shtml",
+      "receipt_acquisition_sha256": "d30b4bde2bb965c16542b28f0ce4a190202d55af99e5d43f9f89f215edf925f1",
+      "staged_byte_sha256": "14ec63bdbde8f5eedd1a7f301e0771ed84e54b1247dd74327c7dd309cf817b93",
+      "staged_byte_length": 32024,
+      "note": "The official HTML changes between retrievals; both hashes are retained. Canonical evidence is pinned to staged block hashes."
+    },
+    {
+      "source_id": "mta_q1_hillside_route_profile_2025",
+      "status": "staged_identical_to_acquisition",
+      "url": "https://www.mta.info/document/81901",
+      "receipt_acquisition_sha256": "8769e5d98be8b37f6961f1cd046bbfc16c6410a6813c3ef488e74e3b5afe92d6",
+      "staged_byte_sha256": "8769e5d98be8b37f6961f1cd046bbfc16c6410a6813c3ef488e74e3b5afe92d6",
+      "staged_byte_length": 324463
+    },
+    {
+      "source_id": "rockaway_beach_blvd_jun2019",
+      "status": "reused_existing_canonical_source_verified_against_official_bytes",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/rockaway-beach-blvd-jun2019.pdf",
+      "receipt_acquisition_sha256": "af9b8556af462f4fbe0c38737cb481f4359ca46268850d455ee8791ace4dacf2",
+      "verified_official_byte_sha256": "af9b8556af462f4fbe0c38737cb481f4359ca46268850d455ee8791ace4dacf2",
+      "verified_official_byte_length": 8525969
+    }
+  ]
+}

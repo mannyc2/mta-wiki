@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "grand-ave-planning-context-delivered-status-not-applicable",
+  "gap_id": "operational-coverage:d2ef6677e3c236f55705e11d",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T07:25:00.000Z",
+  "rationale": "The exact project timeline relation is explicitly planned as of November 12, 2024, and the event text is an implementation target rather than a delivery statement. Candidate project treatments are design options, not evidence that any treatment was delivered. This planning milestone is not a realized operational occurrence, so delivered-status recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_project-implementation-late-2025-2026",
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024",
+      "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024#p022_c0002",
+      "block_id": "p022_c0002"
+    },
+    {
+      "record_id": "relation_project-timeline-implementation_2",
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024",
+      "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024#p022_c0002",
+      "block_id": "p022_c0002"
+    }
+  ],
+  "search_receipt_ids": []
+}

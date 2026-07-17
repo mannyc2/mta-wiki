@@ -13,6 +13,7 @@ source_ids:
   - "meeting_doc_102836"
   - "meeting_doc_187251"
   - "mta_automated_camera_enforcement"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_b62"
 local_observation_ids:
   - "route_able_b62"
@@ -22,12 +23,14 @@ local_observation_ids:
   - "route_b62_extension_20250821"
   - "route_b62_grand_ave_2024"
   - "route_b62_grand_ave_nov2024"
+  - "route_b62_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-21T20:17:12.383Z"
+generated_at: "2026-07-12T23:31:06.000Z"
 raw_text: "B62 ABLE camera route through 2023"
 submission_ids:
   - "sub_028779615e2b7b0c"
+  - "sub_04232dd62936bcab"
   - "sub_13229be93035470a"
   - "sub_2cbab83c16da56d6"
   - "sub_3908583607ae7599"
@@ -53,6 +56,7 @@ payload:
   borough: "Brooklyn"
   borough_normalized: "brooklyn"
   description: "Bus route operating from Grand Av Bus Depot"
+  gtfs_route_id: "B62"
   note: "ABLE cameras operated on this route through 2023"
   program: "ABLE"
   route: "B62"
@@ -149,6 +153,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_187251/blocks.jsonl"
     source_quote: "QUEENS Q102 B62 Starting August 21 The B62 will be extended along 21 St to the Astoria Houses and will serve this stop."
     text_sha256: "sha256:94fec00c493f0cf77545ab66183d0e68f8e3e7d497e0127c5b376c87900aa7f9"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0101"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0101"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "B62"
+    text_sha256: "sha256:3df52b86890cf9e45ec23bfb96cb1f6d063bd0d96d5071980c49752c64349ea4"
     text_source: "raw_text"
 ---
 

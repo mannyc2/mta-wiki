@@ -1,0 +1,1311 @@
+{
+  "schema_version": 1,
+  "proposal_id": "orp_qbnr_6_create_route_service_start_bundles_2025",
+  "proposal_kind": "observation_bundle",
+  "corpus_fingerprint": "5d5ca34015a82999562d859203cec93d139fc74e9b45ff554e84a53115bf5bc9",
+  "route_anchor_pin": {
+    "path": "data/exports/releases/v1-rc7/route_anchors.jsonl",
+    "release_id": "v1-rc7",
+    "sha256": "0b8de93cb71bf45c009654beff918a1baea0db43a418c8469482570c87a2f1da"
+  },
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf",
+    "operational-coverage:45dd3045070322bc90d91414",
+    "operational-coverage:a9b2bf1ff109628219637775"
+  ],
+  "source_id": "mta_queens_bus_network_redesign_service_changes",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-13T03:57:59.000Z",
+  "provenance": {
+    "drafted_by": "codex-corpus-completion-2026-07-13",
+    "drafted_at": "2026-07-13T02:10:00.000Z",
+    "method": "qbnr_batch_spec_expansion",
+    "verifier": {
+      "reviewed_by": "codex-independent-qbnr-spec-review",
+      "reviewed_at": "2026-07-13T03:57:59.000Z",
+      "verdict": "passed",
+      "rationale": "All six official source rows, hashes, dates, GTFS identities, and clause partitions were independently checked. The exact expansion yields six routes, six events, thirteen treatments, and twenty-five same-unit project relations; all fifty deterministic ids are new and collision-free, treatment normalization yields nine service_pattern and four bus_stop_or_boarding members, Q20 remains distinct from historical Q20A, and rc7 has one no_wiki_coverage row for each target."
+    }
+  },
+  "rationale": "Six exact official MTA rows establish realized QBNR service-start dates and one new current route identity per row. Each row has multiple bounded treatment members and is reviewed as a Queens Bus Network Redesign route-redesign bundle; predecessor, replacement, alternative, and timetable references remain treatment text or reviewed context only.",
+  "observations": [
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_q20_qbnr_2025",
+      "label": "Q20",
+      "raw_text": "Q20",
+      "payload": {
+        "route_id": "Q20",
+        "route_name": "Q20",
+        "gtfs_route_id": "Q20"
+      },
+      "expected_record_id": "route_q20-qbnr-2025",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "Q20"
+        }
+      ]
+    },
+    {
+      "observation_kind": "event",
+      "local_observation_id": "event_q20_qbnr_start_2025_06_29",
+      "label": "Q20 start June 29, 2025",
+      "raw_text": "Q20 service started June 29, 2025.",
+      "payload": {
+        "event_kind": "route service start",
+        "date_text": "June 29, 2025",
+        "date_normalized": "2025-06-29",
+        "date_precision": "day",
+        "description": "Q20 service started June 29, 2025."
+      },
+      "expected_record_id": "event_q20-qbnr-start-2025-06-29",
+      "evidence_bindings": [
+        {
+          "role": "event_date",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "Q20 service started June 29, 2025."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q20_college_point_jamaica_connection_2025",
+      "label": "Q20 college point jamaica connection",
+      "raw_text": "The Q20 will connect College Point and Jamaica using the existing Q20A routing along 20 Av and Main St.",
+      "payload": {
+        "treatment_kind": "service expansion",
+        "description": "Source-stated Q20 college point jamaica connection treatment."
+      },
+      "expected_record_id": "treatment_q20-college-point-jamaica-connection-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "The Q20 will connect College Point and Jamaica using the existing Q20A routing along 20 Av and Main St."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q20_q20b_replacement_2025",
+      "label": "Q20 q20b replacement",
+      "raw_text": "Existing Q20B service on 14 Av will be discontinued and replaced by the Q76 .",
+      "payload": {
+        "treatment_kind": "route segment discontinuation and replacement",
+        "description": "Source-stated Q20 q20b replacement treatment."
+      },
+      "expected_record_id": "treatment_q20-q20b-replacement-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "Existing Q20B service on 14 Av will be discontinued and replaced by the Q76 ."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q20_jamaica_avenue_approach_2025",
+      "label": "Q20 jamaica avenue approach",
+      "raw_text": "To the south, the Q20 will approach Downtown Jamaica via Jamaica Av instead of Sutphin Blvd.",
+      "payload": {
+        "treatment_kind": "route change",
+        "description": "Source-stated Q20 jamaica avenue approach treatment."
+      },
+      "expected_record_id": "treatment_q20-jamaica-avenue-approach-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "To the south, the Q20 will approach Downtown Jamaica via Jamaica Av instead of Sutphin Blvd."
+        }
+      ]
+    },
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_q45_qbnr_2025",
+      "label": "Q45",
+      "raw_text": "Q45",
+      "payload": {
+        "route_id": "Q45",
+        "route_name": "Q45",
+        "gtfs_route_id": "Q45"
+      },
+      "expected_record_id": "route_q45-qbnr-2025",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0050",
+          "block_id": "p001_b0050",
+          "source_quote": "Q45"
+        }
+      ]
+    },
+    {
+      "observation_kind": "event",
+      "local_observation_id": "event_q45_qbnr_start_2025_06_29",
+      "label": "Q45 start June 29, 2025",
+      "raw_text": "New Q45 service started June 29, 2025.",
+      "payload": {
+        "event_kind": "route service start",
+        "date_text": "June 29, 2025",
+        "date_normalized": "2025-06-29",
+        "date_precision": "day",
+        "description": "New Q45 service started June 29, 2025."
+      },
+      "expected_record_id": "event_q45-qbnr-start-2025-06-29",
+      "evidence_bindings": [
+        {
+          "role": "event_date",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0050",
+          "block_id": "p001_b0050",
+          "source_quote": "New Q45 service started June 29, 2025."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q45_all_day_frequent_service_2025",
+      "label": "Q45 all day frequent service",
+      "raw_text": "The new Q45 will provide all-day frequent service along Union Tpke",
+      "payload": {
+        "treatment_kind": "service frequency and span adjustment",
+        "description": "Source-stated Q45 all day frequent service treatment."
+      },
+      "expected_record_id": "treatment_q45-all-day-frequent-service-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0050",
+          "block_id": "p001_b0050",
+          "source_quote": "The new Q45 will provide all-day frequent service along Union Tpke"
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q45_direct_connection_2025",
+      "label": "Q45 direct connection",
+      "raw_text": "and create a new direct connection between 188 St and Kew Gardens.",
+      "payload": {
+        "treatment_kind": "service expansion",
+        "description": "Source-stated Q45 direct connection treatment."
+      },
+      "expected_record_id": "treatment_q45-direct-connection-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0050",
+          "block_id": "p001_b0050",
+          "source_quote": "and create a new direct connection between 188 St and Kew Gardens."
+        }
+      ]
+    },
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_q63_qbnr_2025",
+      "label": "Q63",
+      "raw_text": "Q63",
+      "payload": {
+        "route_id": "Q63",
+        "route_name": "Q63",
+        "gtfs_route_id": "Q63"
+      },
+      "expected_record_id": "route_q63-qbnr-2025",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0066",
+          "block_id": "p001_b0066",
+          "source_quote": "Q63"
+        }
+      ]
+    },
+    {
+      "observation_kind": "event",
+      "local_observation_id": "event_q63_qbnr_start_2025_06_29",
+      "label": "Q63 start June 29, 2025",
+      "raw_text": "New Q63 service started June 29, 2025.",
+      "payload": {
+        "event_kind": "route service start",
+        "date_text": "June 29, 2025",
+        "date_normalized": "2025-06-29",
+        "date_precision": "day",
+        "description": "New Q63 service started June 29, 2025."
+      },
+      "expected_record_id": "event_q63-qbnr-start-2025-06-29",
+      "evidence_bindings": [
+        {
+          "role": "event_date",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0066",
+          "block_id": "p001_b0066",
+          "source_quote": "New Q63 service started June 29, 2025."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q63_northern_boulevard_connection_2025",
+      "label": "Q63 northern boulevard connection",
+      "raw_text": "The new Q63 will run the length of Northern Blvd between Flushing and Long Island City.",
+      "payload": {
+        "treatment_kind": "service expansion",
+        "description": "Source-stated Q63 northern boulevard connection treatment."
+      },
+      "expected_record_id": "treatment_q63-northern-boulevard-connection-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0066",
+          "block_id": "p001_b0066",
+          "source_quote": "The new Q63 will run the length of Northern Blvd between Flushing and Long Island City."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q63_limited_stops_2025",
+      "label": "Q63 limited stops",
+      "raw_text": "The new Q63 will make limited stops on Northern Blvd between Main St and 114 St and on Northern Blvd and Jackson Av between 49 St and Court Square.",
+      "payload": {
+        "treatment_kind": "limited stops",
+        "description": "Source-stated Q63 limited stops treatment."
+      },
+      "expected_record_id": "treatment_q63-limited-stops-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0066",
+          "block_id": "p001_b0066",
+          "source_quote": "The new Q63 will make limited stops on Northern Blvd between Main St and 114 St and on Northern Blvd and Jackson Av between 49 St and Court Square."
+        }
+      ]
+    },
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_q75_qbnr_2025",
+      "label": "Q75",
+      "raw_text": "Q75",
+      "payload": {
+        "route_id": "Q75",
+        "route_name": "Q75",
+        "gtfs_route_id": "Q75"
+      },
+      "expected_record_id": "route_q75-qbnr-2025",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0075",
+          "block_id": "p001_b0075",
+          "source_quote": "Q75"
+        }
+      ]
+    },
+    {
+      "observation_kind": "event",
+      "local_observation_id": "event_q75_qbnr_start_2025_06_30",
+      "label": "Q75 start June 30, 2025",
+      "raw_text": "New Q75 service started June 30, 2025.",
+      "payload": {
+        "event_kind": "route service start",
+        "date_text": "June 30, 2025",
+        "date_normalized": "2025-06-30",
+        "date_precision": "day",
+        "description": "New Q75 service started June 30, 2025."
+      },
+      "expected_record_id": "event_q75-qbnr-start-2025-06-30",
+      "evidence_bindings": [
+        {
+          "role": "event_date",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0075",
+          "block_id": "p001_b0075",
+          "source_quote": "New Q75 service started June 30, 2025."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q75_q30_short_trip_replacement_2025",
+      "label": "Q75 q30 short trip replacement",
+      "raw_text": "The new Q75 will replace existing Q30 short trips between Queensborough Community College and Jamaica.",
+      "payload": {
+        "treatment_kind": "route segment discontinuation and replacement",
+        "description": "Source-stated Q75 q30 short trip replacement treatment."
+      },
+      "expected_record_id": "treatment_q75-q30-short-trip-replacement-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0075",
+          "block_id": "p001_b0075",
+          "source_quote": "The new Q75 will replace existing Q30 short trips between Queensborough Community College and Jamaica."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q75_limited_stops_2025",
+      "label": "Q75 limited stops",
+      "raw_text": "The Q75 will make limited stops on Utopia Pkwy.",
+      "payload": {
+        "treatment_kind": "limited stops",
+        "description": "Source-stated Q75 limited stops treatment."
+      },
+      "expected_record_id": "treatment_q75-limited-stops-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0075",
+          "block_id": "p001_b0075",
+          "source_quote": "The Q75 will make limited stops on Utopia Pkwy."
+        }
+      ]
+    },
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_q86_qbnr_2025",
+      "label": "Q86",
+      "raw_text": "Q86",
+      "payload": {
+        "route_id": "Q86",
+        "route_name": "Q86",
+        "gtfs_route_id": "Q86"
+      },
+      "expected_record_id": "route_q86-qbnr-2025",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0083",
+          "block_id": "p001_b0083",
+          "source_quote": "Q86"
+        }
+      ]
+    },
+    {
+      "observation_kind": "event",
+      "local_observation_id": "event_q86_qbnr_start_2025_06_29",
+      "label": "Q86 start June 29, 2025",
+      "raw_text": "New Q86 service started June 29, 2025.",
+      "payload": {
+        "event_kind": "route service start",
+        "date_text": "June 29, 2025",
+        "date_normalized": "2025-06-29",
+        "date_precision": "day",
+        "description": "New Q86 service started June 29, 2025."
+      },
+      "expected_record_id": "event_q86-qbnr-start-2025-06-29",
+      "evidence_bindings": [
+        {
+          "role": "event_date",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0083",
+          "block_id": "p001_b0083",
+          "source_quote": "New Q86 service started June 29, 2025."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q86_q5_q85_branch_combination_2025",
+      "label": "Q86 q5 q85 branch combination",
+      "raw_text": "The new Q86 will combine the existing Q5 and Q85 Rosedale branches, creating new connections between Rosedale and Laurelton and bringing service further south.",
+      "payload": {
+        "treatment_kind": "route change",
+        "description": "Source-stated Q86 q5 q85 branch combination treatment."
+      },
+      "expected_record_id": "treatment_q86-q5-q85-branch-combination-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0083",
+          "block_id": "p001_b0083",
+          "source_quote": "The new Q86 will combine the existing Q5 and Q85 Rosedale branches, creating new connections between Rosedale and Laurelton and bringing service further south."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q86_limited_stops_2025",
+      "label": "Q86 limited stops",
+      "raw_text": "The Q86 will make limited stops on Merrick Blvd between Archer Av and Springfield Blvd.",
+      "payload": {
+        "treatment_kind": "limited stops",
+        "description": "Source-stated Q86 limited stops treatment."
+      },
+      "expected_record_id": "treatment_q86-limited-stops-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0083",
+          "block_id": "p001_b0083",
+          "source_quote": "The Q86 will make limited stops on Merrick Blvd between Archer Av and Springfield Blvd."
+        }
+      ]
+    },
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_q87_qbnr_2025",
+      "label": "Q87",
+      "raw_text": "Q87",
+      "payload": {
+        "route_id": "Q87",
+        "route_name": "Q87",
+        "gtfs_route_id": "Q87"
+      },
+      "expected_record_id": "route_q87-qbnr-2025",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084",
+          "block_id": "p001_b0084",
+          "source_quote": "Q87"
+        }
+      ]
+    },
+    {
+      "observation_kind": "event",
+      "local_observation_id": "event_q87_qbnr_start_2025_06_30",
+      "label": "Q87 start June 30, 2025",
+      "raw_text": "New Q87 service started June 30, 2025.",
+      "payload": {
+        "event_kind": "route service start",
+        "date_text": "June 30, 2025",
+        "date_normalized": "2025-06-30",
+        "date_precision": "day",
+        "description": "New Q87 service started June 30, 2025."
+      },
+      "expected_record_id": "event_q87-qbnr-start-2025-06-30",
+      "evidence_bindings": [
+        {
+          "role": "event_date",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084",
+          "block_id": "p001_b0084",
+          "source_quote": "New Q87 service started June 30, 2025."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q87_q5_green_acres_replacement_2025",
+      "label": "Q87 q5 green acres replacement",
+      "raw_text": "The new Q87 will replace the existing Q5 Green Acres branch.",
+      "payload": {
+        "treatment_kind": "route segment discontinuation and replacement",
+        "description": "Source-stated Q87 q5 green acres replacement treatment."
+      },
+      "expected_record_id": "treatment_q87-q5-green-acres-replacement-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084",
+          "block_id": "p001_b0084",
+          "source_quote": "The new Q87 will replace the existing Q5 Green Acres branch."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q87_limited_stops_2025",
+      "label": "Q87 limited stops",
+      "raw_text": "The Q87 will make limited stops on Merrick Blvd between Archer Av and Springfield Blvd.",
+      "payload": {
+        "treatment_kind": "limited stops",
+        "description": "Source-stated Q87 limited stops treatment."
+      },
+      "expected_record_id": "treatment_q87-limited-stops-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084",
+          "block_id": "p001_b0084",
+          "source_quote": "The Q87 will make limited stops on Merrick Blvd between Archer Av and Springfield Blvd."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "local_observation_id": "relation_qbnr_2025_affects_q20",
+      "label": "Queens Bus Network Redesign affects Q20",
+      "relation_kind": "affects_route",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "route_q20_qbnr_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Queens Bus Network Redesign changed Q20 service.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "Q20"
+        },
+        {
+          "role": "route_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "Q20"
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_has_q20_start_2025_06_29",
+      "label": "Queens Bus Network Redesign has Q20 start event",
+      "relation_kind": "has_timeline_event",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "event_q20_qbnr_start_2025_06_29"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Q20 service started June 29, 2025.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "Q20 service started June 29, 2025."
+        },
+        {
+          "role": "timeline_relation",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "Q20 service started June 29, 2025."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q20_college_point_jamaica_connection",
+      "label": "Queens Bus Network Redesign includes Q20 college point jamaica connection",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q20_college_point_jamaica_connection_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Source-stated Q20 college point jamaica connection treatment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "The Q20 will connect College Point and Jamaica using the existing Q20A routing along 20 Av and Main St."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "The Q20 will connect College Point and Jamaica using the existing Q20A routing along 20 Av and Main St."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q20_q20b_replacement",
+      "label": "Queens Bus Network Redesign includes Q20 q20b replacement",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q20_q20b_replacement_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Source-stated Q20 q20b replacement treatment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "Existing Q20B service on 14 Av will be discontinued and replaced by the Q76 ."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "Existing Q20B service on 14 Av will be discontinued and replaced by the Q76 ."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q20_jamaica_avenue_approach",
+      "label": "Queens Bus Network Redesign includes Q20 jamaica avenue approach",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q20_jamaica_avenue_approach_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Source-stated Q20 jamaica avenue approach treatment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "To the south, the Q20 will approach Downtown Jamaica via Jamaica Av instead of Sutphin Blvd."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "block_id": "p001_b0023",
+          "source_quote": "To the south, the Q20 will approach Downtown Jamaica via Jamaica Av instead of Sutphin Blvd."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_affects_q45",
+      "label": "Queens Bus Network Redesign affects Q45",
+      "relation_kind": "affects_route",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "route_q45_qbnr_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Queens Bus Network Redesign changed Q45 service.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0050",
+          "block_id": "p001_b0050",
+          "source_quote": "Q45"
+        },
+        {
+          "role": "route_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0050",
+          "block_id": "p001_b0050",
+          "source_quote": "Q45"
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_has_q45_start_2025_06_29",
+      "label": "Queens Bus Network Redesign has Q45 start event",
+      "relation_kind": "has_timeline_event",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "event_q45_qbnr_start_2025_06_29"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "New Q45 service started June 29, 2025.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0050",
+          "block_id": "p001_b0050",
+          "source_quote": "New Q45 service started June 29, 2025."
+        },
+        {
+          "role": "timeline_relation",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0050",
+          "block_id": "p001_b0050",
+          "source_quote": "New Q45 service started June 29, 2025."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q45_all_day_frequent_service",
+      "label": "Queens Bus Network Redesign includes Q45 all day frequent service",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q45_all_day_frequent_service_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Source-stated Q45 all day frequent service treatment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0050",
+          "block_id": "p001_b0050",
+          "source_quote": "The new Q45 will provide all-day frequent service along Union Tpke"
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0050",
+          "block_id": "p001_b0050",
+          "source_quote": "The new Q45 will provide all-day frequent service along Union Tpke"
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q45_direct_connection",
+      "label": "Queens Bus Network Redesign includes Q45 direct connection",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q45_direct_connection_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Source-stated Q45 direct connection treatment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0050",
+          "block_id": "p001_b0050",
+          "source_quote": "and create a new direct connection between 188 St and Kew Gardens."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0050",
+          "block_id": "p001_b0050",
+          "source_quote": "and create a new direct connection between 188 St and Kew Gardens."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_affects_q63",
+      "label": "Queens Bus Network Redesign affects Q63",
+      "relation_kind": "affects_route",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "route_q63_qbnr_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Queens Bus Network Redesign changed Q63 service.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0066",
+          "block_id": "p001_b0066",
+          "source_quote": "Q63"
+        },
+        {
+          "role": "route_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0066",
+          "block_id": "p001_b0066",
+          "source_quote": "Q63"
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_has_q63_start_2025_06_29",
+      "label": "Queens Bus Network Redesign has Q63 start event",
+      "relation_kind": "has_timeline_event",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "event_q63_qbnr_start_2025_06_29"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "New Q63 service started June 29, 2025.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0066",
+          "block_id": "p001_b0066",
+          "source_quote": "New Q63 service started June 29, 2025."
+        },
+        {
+          "role": "timeline_relation",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0066",
+          "block_id": "p001_b0066",
+          "source_quote": "New Q63 service started June 29, 2025."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q63_northern_boulevard_connection",
+      "label": "Queens Bus Network Redesign includes Q63 northern boulevard connection",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q63_northern_boulevard_connection_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Source-stated Q63 northern boulevard connection treatment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0066",
+          "block_id": "p001_b0066",
+          "source_quote": "The new Q63 will run the length of Northern Blvd between Flushing and Long Island City."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0066",
+          "block_id": "p001_b0066",
+          "source_quote": "The new Q63 will run the length of Northern Blvd between Flushing and Long Island City."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q63_limited_stops",
+      "label": "Queens Bus Network Redesign includes Q63 limited stops",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q63_limited_stops_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Source-stated Q63 limited stops treatment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0066",
+          "block_id": "p001_b0066",
+          "source_quote": "The new Q63 will make limited stops on Northern Blvd between Main St and 114 St and on Northern Blvd and Jackson Av between 49 St and Court Square."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0066",
+          "block_id": "p001_b0066",
+          "source_quote": "The new Q63 will make limited stops on Northern Blvd between Main St and 114 St and on Northern Blvd and Jackson Av between 49 St and Court Square."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_affects_q75",
+      "label": "Queens Bus Network Redesign affects Q75",
+      "relation_kind": "affects_route",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "route_q75_qbnr_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "Queens Bus Network Redesign changed Q75 service.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0075",
+          "block_id": "p001_b0075",
+          "source_quote": "Q75"
+        },
+        {
+          "role": "route_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0075",
+          "block_id": "p001_b0075",
+          "source_quote": "Q75"
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_has_q75_start_2025_06_30",
+      "label": "Queens Bus Network Redesign has Q75 start event",
+      "relation_kind": "has_timeline_event",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "event_q75_qbnr_start_2025_06_30"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "New Q75 service started June 30, 2025.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0075",
+          "block_id": "p001_b0075",
+          "source_quote": "New Q75 service started June 30, 2025."
+        },
+        {
+          "role": "timeline_relation",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0075",
+          "block_id": "p001_b0075",
+          "source_quote": "New Q75 service started June 30, 2025."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q75_q30_short_trip_replacement",
+      "label": "Queens Bus Network Redesign includes Q75 q30 short trip replacement",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q75_q30_short_trip_replacement_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "Source-stated Q75 q30 short trip replacement treatment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0075",
+          "block_id": "p001_b0075",
+          "source_quote": "The new Q75 will replace existing Q30 short trips between Queensborough Community College and Jamaica."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0075",
+          "block_id": "p001_b0075",
+          "source_quote": "The new Q75 will replace existing Q30 short trips between Queensborough Community College and Jamaica."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q75_limited_stops",
+      "label": "Queens Bus Network Redesign includes Q75 limited stops",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q75_limited_stops_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "Source-stated Q75 limited stops treatment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0075",
+          "block_id": "p001_b0075",
+          "source_quote": "The Q75 will make limited stops on Utopia Pkwy."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0075",
+          "block_id": "p001_b0075",
+          "source_quote": "The Q75 will make limited stops on Utopia Pkwy."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_affects_q86",
+      "label": "Queens Bus Network Redesign affects Q86",
+      "relation_kind": "affects_route",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "route_q86_qbnr_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Queens Bus Network Redesign changed Q86 service.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0083",
+          "block_id": "p001_b0083",
+          "source_quote": "Q86"
+        },
+        {
+          "role": "route_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0083",
+          "block_id": "p001_b0083",
+          "source_quote": "Q86"
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_has_q86_start_2025_06_29",
+      "label": "Queens Bus Network Redesign has Q86 start event",
+      "relation_kind": "has_timeline_event",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "event_q86_qbnr_start_2025_06_29"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "New Q86 service started June 29, 2025.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0083",
+          "block_id": "p001_b0083",
+          "source_quote": "New Q86 service started June 29, 2025."
+        },
+        {
+          "role": "timeline_relation",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0083",
+          "block_id": "p001_b0083",
+          "source_quote": "New Q86 service started June 29, 2025."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q86_q5_q85_branch_combination",
+      "label": "Queens Bus Network Redesign includes Q86 q5 q85 branch combination",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q86_q5_q85_branch_combination_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Source-stated Q86 q5 q85 branch combination treatment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0083",
+          "block_id": "p001_b0083",
+          "source_quote": "The new Q86 will combine the existing Q5 and Q85 Rosedale branches, creating new connections between Rosedale and Laurelton and bringing service further south."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0083",
+          "block_id": "p001_b0083",
+          "source_quote": "The new Q86 will combine the existing Q5 and Q85 Rosedale branches, creating new connections between Rosedale and Laurelton and bringing service further south."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q86_limited_stops",
+      "label": "Queens Bus Network Redesign includes Q86 limited stops",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q86_limited_stops_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Source-stated Q86 limited stops treatment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0083",
+          "block_id": "p001_b0083",
+          "source_quote": "The Q86 will make limited stops on Merrick Blvd between Archer Av and Springfield Blvd."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0083",
+          "block_id": "p001_b0083",
+          "source_quote": "The Q86 will make limited stops on Merrick Blvd between Archer Av and Springfield Blvd."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_affects_q87",
+      "label": "Queens Bus Network Redesign affects Q87",
+      "relation_kind": "affects_route",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "route_q87_qbnr_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "Queens Bus Network Redesign changed Q87 service.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084",
+          "block_id": "p001_b0084",
+          "source_quote": "Q87"
+        },
+        {
+          "role": "route_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084",
+          "block_id": "p001_b0084",
+          "source_quote": "Q87"
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_has_q87_start_2025_06_30",
+      "label": "Queens Bus Network Redesign has Q87 start event",
+      "relation_kind": "has_timeline_event",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "event_q87_qbnr_start_2025_06_30"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "New Q87 service started June 30, 2025.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084",
+          "block_id": "p001_b0084",
+          "source_quote": "New Q87 service started June 30, 2025."
+        },
+        {
+          "role": "timeline_relation",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084",
+          "block_id": "p001_b0084",
+          "source_quote": "New Q87 service started June 30, 2025."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q87_q5_green_acres_replacement",
+      "label": "Queens Bus Network Redesign includes Q87 q5 green acres replacement",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q87_q5_green_acres_replacement_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "Source-stated Q87 q5 green acres replacement treatment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084",
+          "block_id": "p001_b0084",
+          "source_quote": "The new Q87 will replace the existing Q5 Green Acres branch."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084",
+          "block_id": "p001_b0084",
+          "source_quote": "The new Q87 will replace the existing Q5 Green Acres branch."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q87_limited_stops",
+      "label": "Queens Bus Network Redesign includes Q87 limited stops",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q87_limited_stops_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-30",
+      "description": "Source-stated Q87 limited stops treatment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084",
+          "block_id": "p001_b0084",
+          "source_quote": "The Q87 will make limited stops on Merrick Blvd between Archer Av and Springfield Blvd."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084",
+          "block_id": "p001_b0084",
+          "source_quote": "The Q87 will make limited stops on Merrick Blvd between Archer Av and Springfield Blvd."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "candidate_ids_sha256": "21a012dcffc6dd6906f2088e7a7c7d9450e64bf729a261a43573dedac0ad5557",
+  "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
+  "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
+  "derived_on": "2026-07-15",
+  "exact_backlog_count": 321,
+  "exclusive_partition_rule": "exclusive_primary_disposition=mta_route_or_treatment_scope_binding_gap AND treatment_family=bus_lane AND route_id matches ^M[0-9] (QM excluded)",
+  "manhattan_count": 42,
+  "partition_sha256": "fe7b9c32d28fbb130e4ecd2a5640898d44a0bf9f95e51fe8adced2bfdde09410",
+  "reconciliation_ledger_path": "data/quality/rc19-reject-reconciliation/rc19-reject-ledger.jsonl",
+  "reconciliation_ledger_sha256": "d9b3b19bcc315a13d091831a46550ea457890f4cd9a73ea056645f8d8e5626f4",
+  "schema_version": 1,
+  "shard": "manhattan",
+  "unique_candidate_count": 42,
+  "unique_route_count": 42
+}

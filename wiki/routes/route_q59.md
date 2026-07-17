@@ -9,20 +9,23 @@ source_ids:
   - "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024"
   - "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024"
   - "grand_ave_metropolitan_ave_queens_blvd_nov2024"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q59"
 local_observation_ids:
   - "route_q59"
   - "route_q59_grand_ave_2024"
   - "route_q59_grand_ave_nov2024"
+  - "route_q59_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T18:50:12.305Z"
+generated_at: "2026-07-12T22:16:08.000Z"
 raw_text: "Over 51,000 daily bus passengers on the Q54, Q58, and Q59"
 submission_ids:
   - "sub_117dbaf796cec37c"
   - "sub_478928a7420d975e"
   - "sub_5d224fe5500bafde"
   - "sub_cc04a932a174304e"
+  - "sub_f049970ceb8f8141"
 payload:
   _merged_field_values:
     description:
@@ -34,7 +37,9 @@ payload:
   borough: "Queens"
   borough_normalized: "queens"
   description: "Bus route serving Grand Street/Grand Avenue corridor in Queens and Brooklyn"
+  gtfs_route_id: "Q59"
   route_id: "Q59"
+  route_name: "Q59"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "local"
@@ -76,6 +81,16 @@ evidence_refs:
     source_path: "raw/sources/grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024/blocks.jsonl"
     source_quote: "Over 51,000 daily bus passengers on the Q54, Q58, and Q59"
     text_sha256: "sha256:76c6f89adbcb2cf2d168a88a87a25053ed29155facebadd3f5bf84102728e523"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0063"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0063"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q59"
+    text_sha256: "sha256:446db84e6f100535c71cfe48383d26f223b2ffebe7b79374a8118540ceb24e53"
     text_source: "raw_text"
 ---
 

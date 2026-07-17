@@ -1,0 +1,18 @@
+{
+  "candidate_ids_sha256": "7249ecb52a9f2c563516687a4f65a10c21469a384a27ae36f5bb66acf2d2fa9b",
+  "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
+  "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
+  "derived_on": "2026-07-15",
+  "exact_backlog_count": 321,
+  "exclusive_partition_rule": "exclusive_primary_disposition=mta_route_or_treatment_scope_binding_gap AND treatment_family=bus_lane AND route_id matches ^(?:S\\d|SIM)",
+  "partition_sha256": "05e014c04ed52d252d4e32fad32d2fba8e5ab922dedcf8c4d039139ec07a9a28",
+  "reconciliation_ledger_path": "data/quality/rc19-reject-reconciliation/rc19-reject-ledger.jsonl",
+  "reconciliation_ledger_sha256": "d9b3b19bcc315a13d091831a46550ea457890f4cd9a73ea056645f8d8e5626f4",
+  "s_local_or_sbs_count": 27,
+  "schema_version": 1,
+  "shard": "staten-island",
+  "sim_express_count": 27,
+  "staten_island_count": 54,
+  "unique_candidate_count": 54,
+  "unique_route_count": 54
+}

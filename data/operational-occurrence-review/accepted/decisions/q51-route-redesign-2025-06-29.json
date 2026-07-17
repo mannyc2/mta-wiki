@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "decision_id": "q51-route-redesign-2025-06-29",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T00:15:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official MTA Q51 row binds a realized June 29, 2025 service start and one uniquely anchored route to its one canonical service_pattern treatment. This atomic occurrence preserves that literal family and does not inherit any referenced route as route scope.",
+  "occurrence_id": "occurrence:ce5829e0060fb3a0834fc99b",
+  "founding_key": "event:event_q51-qbnr-start-2025-06-29",
+  "observation_event_record_ids": [
+    "event_q51-qbnr-start-2025-06-29"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-q51",
+    "relation_qbnr-2025-has-q51-east-west-link",
+    "relation_qbnr-has-q51-start-2025-06-29"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-06-29",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_q51-qbnr-start-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0056"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-q51-start-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0056"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_q51-queens",
+      "gtfs_route_id": "Q51",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_q51-queens",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0056"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-q51",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0056"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "atomic",
+  "treatment": {
+    "kind": "atomic",
+    "member": {
+      "treatment_record_id": "treatment_q51-east-west-link-2025",
+      "treatment_family": "service_pattern",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_q51-east-west-link-2025",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0056"
+        },
+        {
+          "role": "treatment_scope",
+          "record_id": "relation_qbnr-2025-has-q51-east-west-link",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0056"
+        }
+      ]
+    }
+  }
+}

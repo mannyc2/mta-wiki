@@ -13,6 +13,7 @@ source_ids:
   - "2015_06_09_brt_flushing_jamaica_cb12"
   - "2015_06_15_brt_flushing_jamaica_cb8_presentation"
   - "brt_flushing_jamaica_oct2016"
+  - "mta_queens_bus_network_redesign_service_changes"
   - "queens_addendum_equity_evaluation_appendix_d"
 local_observation_id: "route_q34_queens"
 local_observation_ids:
@@ -22,10 +23,11 @@ local_observation_ids:
   - "route_q34_2015_06_09"
   - "route_q34_2015_06_15_cb8"
   - "route_q34_flushing_jamaica_cac1"
+  - "route_q34_qbnr_2025"
   - "route_q34_queens"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T18:13:38.509Z"
+generated_at: "2026-07-13T03:27:52.000Z"
 raw_text: "Q34 bus service on Kissena/Parsons Boulevards"
 submission_ids:
   - "sub_0454ea491f722421"
@@ -34,6 +36,7 @@ submission_ids:
   - "sub_607a69da01479ca0"
   - "sub_7849d833f5c51c8a"
   - "sub_c11e55d99718929a"
+  - "sub_c36ade95466d01d3"
   - "sub_d7394e05d96353dd"
 payload:
   _merged_field_values:
@@ -139,6 +142,16 @@ evidence_refs:
     source_id: "brt_flushing_jamaica_oct2016"
     source_path: "raw/sources/brt_flushing_jamaica_oct2016/blocks.jsonl"
     text_sha256: "sha256:ea1332aea10e1286011c4d43da00fa3ba071dce31c6034e8939470f4ddfc8ae5"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0039"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0039"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q34"
+    text_sha256: "sha256:d886d5ec5fa4e77f4d0351975f83d519fbd6483e4e6d565970be7f371f624904"
     text_source: "raw_text"
 ---
 

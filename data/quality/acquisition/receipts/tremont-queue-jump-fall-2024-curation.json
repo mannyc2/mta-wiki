@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "receipt_id": "tremont-queue-jump-fall-2024-curation",
+  "status": "reviewed_work_order_not_applied",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T20:15:00Z",
+  "acquisition_method": "existing_staged_official_source_only",
+  "source": {
+    "source_id": "tremont_ave_bus_priority_cb5_nov2024",
+    "publisher": "New York City Department of Transportation (NYC DOT)",
+    "document_date": "2024-11-04",
+    "artifact_sha256": {
+      "metadata.json": "1c016f83d36fbc4fc3a8261c4f27a204c74dd52a21e830641793b6421f044124",
+      "source.pdf": "0f16201c3c442d289fbbbdb3bae4846eb74e1829c6bafff9a9111a85ffa6c5b8",
+      "blocks.jsonl": "ff2b47fe400f12ae868c9c082a8b3bf71702aa0e3927215f09ed9913add48e59"
+    },
+    "evidence_blocks": [
+      {
+        "block_id": "p001_c0001",
+        "text_sha256": "sha256:18a3ed9f03eee93c2d4c85648707c46396fb26ad84165254a893d56677749bd0",
+        "role": "project_identity"
+      },
+      {
+        "block_id": "p001_c0003",
+        "text_sha256": "sha256:e1a5703d13805d830555a54e906af23dec630f8683b735a9118b9ded01902a6e",
+        "role": "document_date"
+      },
+      {
+        "block_id": "p004_c0002",
+        "text_sha256": "sha256:fa3355ea01e96cf64ae231e0168e561c5fc7c7caac2a948f5abe31dc8917483e",
+        "role": "bx36_corridor_scope"
+      },
+      {
+        "block_id": "p013_c0002",
+        "text_sha256": "sha256:89250d7256e1892cef2c0f1b1f565d889859e277a61dde9c56efd7a34c912f5f",
+        "role": "fall_2024_queue_jump_timeline"
+      },
+      {
+        "block_id": "p014_c0002",
+        "text_sha256": "sha256:0a4ec72360eebd23c2a834ffaa3db0af1de71fb2f58fa03265ca42c2feaf5bea",
+        "role": "installed_treatment_status"
+      }
+    ]
+  },
+  "decision": {
+    "project_record_id": "project_tremont-av-bus-priority",
+    "event_record_id": "event_queue-jump-implementation-fall2024",
+    "treatment_record_id": "treatment_queue-jump-grand-concourse",
+    "route_record_id": "route_bx36",
+    "gtfs_route_id": "BX36",
+    "relation_observation_count": 5,
+    "relation_kinds": [
+      "has_timeline_event",
+      "has_treatment",
+      "serves_route"
+    ],
+    "semantic_correction_id": "core-coverage-tremont-queue-jump-fall2024-installed-20260713",
+    "prior_lifecycle_phase": "other",
+    "corrected_lifecycle_phase": "installed",
+    "preserved_date_text": "Fall 2024",
+    "preserved_date_normalized": "2024-fall",
+    "preserved_date_precision": "season",
+    "projection_disposition": "realized_but_date_ineligible"
+  },
+  "ambiguity": {
+    "graph_subject_choice": "The source-specific project_tremont-av-bus-priority record preserves project context. Separate route-to-event and treatment-to-event timeline relations directly bind Bx36 and the Grand Concourse queue-jump signal to this event so broader Tremont project treatments do not leak into the event scope.",
+    "date_boundary": "The source proves installation by the November 4, 2024 presentation and labels the implementation only as Fall 2024. It does not establish an exact month or day of physical activation.",
+    "anti_inference": "Do not convert the document date, the season label, or the phrase installed into an exact operational onset date."
+  },
+  "reproducibility": {
+    "work_order_script": "scripts/curate-tremont-queue-jump-fall-2024.ts",
+    "semantic_corrections_path": "data/semantic-corrections/corrections.jsonl",
+    "apply_flag": "--apply",
+    "applied": false
+  }
+}

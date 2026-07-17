@@ -16,7 +16,7 @@ export { readCanonicalizeDecisions, readCanonicalizeVerdicts, type CanonicalizeV
 import { parseJsonResponse } from "@mta-wiki/agents/ontology-normalize";
 import type { CanonicalizeDecision } from "@mta-wiki/pipeline/records/canonicalize-packets";
 import { readIdentityDoNotMergeOverrides } from "@mta-wiki/db/identity";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { sourceBlockById } from "@mta-wiki/pipeline/sources/source-prep";
 import type { JsonObject, JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
 

@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "decision_id": "qm25-route-redesign-2025-09-02",
+  "review_state": "approved",
+  "accepted_at": "2026-07-12T23:41:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-12",
+  "rationale": "The official MTA QM25 row binds a realized September 2, 2025 onset and one uniquely anchored route to all 2 canonical treatment members stated for that row. Each member retains its literal treatment family. The official Queens Bus Network Redesign project context separately supports route_redesign as the reviewed bundle analysis family. No alternative route scope is inherited.",
+  "occurrence_id": "occurrence:9170c983a3c76974673a0ce6",
+  "founding_key": "event:event_qm25-qbnr-service-change-2025-09-02",
+  "observation_event_record_ids": [
+    "event_qm25-qbnr-service-change-2025-09-02"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-qm25",
+    "relation_qbnr-2025-has-qm25-stop-change",
+    "relation_qbnr-2025-has-qm25-frequency-span-adjustment",
+    "relation_qbnr-has-qm25-service-change-2025-09-02"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-09-02",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_qm25-qbnr-service-change-2025-09-02",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0120"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-qm25-service-change-2025-09-02",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0120"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_qm25-fresh-pond-rd",
+      "gtfs_route_id": "QM25",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_qm25-fresh-pond-rd",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0120"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-qm25",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0120"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "bundle",
+  "treatment": {
+    "kind": "bundle",
+    "analysis_family": "route_redesign",
+    "analysis_family_evidence_bindings": [
+      {
+        "role": "bundle_analysis_family",
+        "record_id": "project_queens-bus-network-redesign",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0001"
+      }
+    ],
+    "members": [
+      {
+        "treatment_record_id": "treatment_qm25-stop-change-2025",
+        "treatment_family": "bus_stop_or_boarding",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_qm25-stop-change-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0120"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-qm25-stop-change",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0120"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_qm25-frequency-span-adjustment-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_qm25-frequency-span-adjustment-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0120"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-qm25-frequency-span-adjustment",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0120"
+          }
+        ]
+      }
+    ]
+  }
+}

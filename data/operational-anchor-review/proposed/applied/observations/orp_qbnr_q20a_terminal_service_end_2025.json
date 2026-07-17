@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "proposal_id": "orp_qbnr_q20a_terminal_service_end_2025",
+  "proposal_kind": "observation_bundle",
+  "corpus_fingerprint": "3126620cd84fc79e6d00e4b9ba2cae5bdb3d3710f5c643894b4761814f891d7d",
+  "route_anchor_pin": {
+    "path": "data/exports/releases/v1-rc7/route_anchors.jsonl",
+    "release_id": "v1-rc7",
+    "sha256": "0b8de93cb71bf45c009654beff918a1baea0db43a418c8469482570c87a2f1da"
+  },
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf"
+  ],
+  "source_id": "mta_queens_bus_network_redesign_service_changes",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-independent-review",
+  "accepted_at": "2026-07-13T03:16:23.000Z",
+  "provenance": {
+    "drafted_by": "codex-corpus-completion-terminal-review",
+    "drafted_at": "2026-07-13T02:30:00.000Z",
+    "method": "qbnr_batch_spec_expansion",
+    "verifier": {
+      "reviewed_by": "codex-independent-qbnr-terminal-proposal-review",
+      "reviewed_at": "2026-07-13T03:16:23.000Z",
+      "verdict": "passed",
+      "rationale": "The exact official Q20A row and block hash, reviewed Q20A target identity and do-not-merge protections, v1-rc7 route-anchor pin, exhaustive clause partition, deterministic eight-row journal conversion, seven-record canonical delta, treatment-family normalization, relation endpoints, and non-operational service-end semantics were independently verified. Fresh strict expansion is byte-identical to this proposal."
+    }
+  },
+  "rationale": "The exact official MTA Q20A row establishes that Q20A service ended on June 29, 2025, was replaced by Q20 with a changed Downtown Jamaica approach, and had stops removed. The reviewed historical Q20A identity remains distinct from Q20B and the successor Q20. Navigation language is retained as context only. This terminal lifecycle event is intentionally excluded from study projection and must not produce an operational occurrence.",
+  "observations": [
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_q20a_qbnr_2025",
+      "label": "Q20A",
+      "raw_text": "Q20A",
+      "payload": {
+        "route_id": "Q20A",
+        "route_name": "Q20A"
+      },
+      "expected_record_id": "route_q20-2014-10-07-flushing-jamaica",
+      "target_record_id": "route_q20-2014-10-07-flushing-jamaica",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0024",
+          "block_id": "p001_b0024",
+          "source_quote": "Q20A"
+        }
+      ]
+    },
+    {
+      "observation_kind": "event",
+      "local_observation_id": "event_q20a_qbnr_end_2025_06_29",
+      "label": "Q20A end June 29, 2025",
+      "raw_text": "Q20A service ended June 29, 2025.",
+      "payload": {
+        "event_kind": "route service end",
+        "date_text": "June 29, 2025",
+        "date_normalized": "2025-06-29",
+        "date_precision": "day",
+        "description": "Q20A service ended June 29, 2025."
+      },
+      "expected_record_id": "event_q20a-qbnr-end-2025-06-29",
+      "evidence_bindings": [
+        {
+          "role": "event_date",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0024",
+          "block_id": "p001_b0024",
+          "source_quote": "Q20A service ended June 29, 2025."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q20a_service_discontinuation_replacement_2025",
+      "label": "Q20A discontinuation and Q20 replacement",
+      "raw_text": "The Q20A will be discontinued and replaced by the Q20, which mostly follows the same route. To the south, the Q20 will approach Downtown Jamaica via Jamaica Av instead of Sutphin Blvd.",
+      "payload": {
+        "treatment_kind": "route service discontinuation and replacement",
+        "description": "Q20A service was discontinued and replaced by Q20, whose southern approach uses Jamaica Avenue instead of Sutphin Boulevard."
+      },
+      "expected_record_id": "treatment_q20a-service-discontinuation-replacement-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0024",
+          "block_id": "p001_b0024",
+          "source_quote": "The Q20A will be discontinued and replaced by the Q20, which mostly follows the same route. To the south, the Q20 will approach Downtown Jamaica via Jamaica Av instead of Sutphin Blvd."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q20a_stop_removal_2025",
+      "label": "Q20A stop removals",
+      "raw_text": "Some stops have been removed.",
+      "payload": {
+        "treatment_kind": "stop removal",
+        "description": "Some Q20A stops were removed."
+      },
+      "expected_record_id": "treatment_q20a-stop-removal-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0024",
+          "block_id": "p001_b0024",
+          "source_quote": "Some stops have been removed."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "local_observation_id": "relation_qbnr_2025_affects_q20a",
+      "label": "Queens Bus Network Redesign affects Q20A",
+      "relation_kind": "affects_route",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "route_q20a_qbnr_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Queens Bus Network Redesign changed Q20A service.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0024",
+          "block_id": "p001_b0024",
+          "source_quote": "Q20A"
+        },
+        {
+          "role": "route_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0024",
+          "block_id": "p001_b0024",
+          "source_quote": "Q20A"
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_has_q20a_end_2025_06_29",
+      "label": "Queens Bus Network Redesign has Q20A end event",
+      "relation_kind": "has_timeline_event",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "event_q20a_qbnr_end_2025_06_29"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Q20A service ended June 29, 2025.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0024",
+          "block_id": "p001_b0024",
+          "source_quote": "Q20A service ended June 29, 2025."
+        },
+        {
+          "role": "timeline_relation",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0024",
+          "block_id": "p001_b0024",
+          "source_quote": "Q20A service ended June 29, 2025."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q20a_service_discontinuation_replacement",
+      "label": "Queens Bus Network Redesign includes Q20A discontinuation and Q20 replacement",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q20a_service_discontinuation_replacement_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Q20A service was discontinued and replaced by Q20, whose southern approach uses Jamaica Avenue instead of Sutphin Boulevard.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0024",
+          "block_id": "p001_b0024",
+          "source_quote": "The Q20A will be discontinued and replaced by the Q20, which mostly follows the same route. To the south, the Q20 will approach Downtown Jamaica via Jamaica Av instead of Sutphin Blvd."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0024",
+          "block_id": "p001_b0024",
+          "source_quote": "The Q20A will be discontinued and replaced by the Q20, which mostly follows the same route. To the south, the Q20 will approach Downtown Jamaica via Jamaica Av instead of Sutphin Blvd."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q20a_stop_removal",
+      "label": "Queens Bus Network Redesign includes Q20A stop removals",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q20a_stop_removal_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Some Q20A stops were removed.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0024",
+          "block_id": "p001_b0024",
+          "source_quote": "Some stops have been removed."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0024",
+          "block_id": "p001_b0024",
+          "source_quote": "Some stops have been removed."
+        }
+      ]
+    }
+  ]
+}

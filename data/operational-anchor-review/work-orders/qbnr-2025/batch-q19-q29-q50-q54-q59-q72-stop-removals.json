@@ -1,0 +1,281 @@
+{
+  "proposal_id": "orp_qbnr_q19_q29_q50_q54_q59_q72_stop_removals_2025",
+  "corpus_fingerprint": "703f3c0005a416d989e5635681bf40e8ee571e1aabb93a8984ef358fbb989ac0",
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf",
+    "operational-coverage:45dd3045070322bc90d91414",
+    "operational-coverage:a9b2bf1ff109628219637775"
+  ],
+  "project_record_id": "project_queens-bus-network-redesign",
+  "project_label": "Queens Bus Network Redesign",
+  "drafted_by": "codex-corpus-completion-2026-07-12",
+  "drafted_at": "2026-07-12T22:09:17.000Z",
+  "rationale": "Six exact official MTA route rows establish source-local route identity, realized effective dates, and one stop-removal treatment apiece. Each route retains exactly one reviewed current GTFS anchor; current-routing language constrains treatment scope and does not create a routing treatment; every navigation and timetable cell is explicitly accounted for as non-treatment context.",
+  "units": [
+    {
+      "source_block_ids": ["p001_b0022"],
+      "source_block_sha256s": ["sha256:0c631398edc5f7abeb2e5912d4c713be434b598172adb25d551ea881694228a2"],
+      "source_route_labels": ["Q19"],
+      "route_label": "Q19",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q19-2014-m60-flyer"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q19"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q19 stop removals",
+          "source_quote": "The Q19 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q19 retained its routing while some stops were removed.",
+          "relation_label": "Queens Bus Network Redesign includes Q19 stop removals",
+          "relation_description": "The implemented redesign removed some Q19 stops."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text is source context, not a treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q19 service.",
+          "review_rationale": "Navigation text is source context, not a treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q19 timetable.",
+          "review_rationale": "Timetable navigation is source context, not a treatment."
+        }
+      ]
+    },
+    {
+      "source_block_ids": ["p001_b0034"],
+      "source_block_sha256s": ["sha256:a3999f6056adb0da92168d39c280981accc4752c6388651fd5beb901c8b8b465"],
+      "source_route_labels": ["Q29"],
+      "route_label": "Q29",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_meeting-doc-133291-q29"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q29"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q29 stop removals",
+          "source_quote": "The Q29 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q29 retained its routing while some stops were removed.",
+          "relation_label": "Queens Bus Network Redesign includes Q29 stop removals",
+          "relation_description": "The implemented redesign removed some Q29 stops."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text is source context, not a treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q29 service.",
+          "review_rationale": "Navigation text is source context, not a treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q29 timetable.",
+          "review_rationale": "Timetable navigation is source context, not a treatment."
+        }
+      ]
+    },
+    {
+      "source_block_ids": ["p001_b0055"],
+      "source_block_sha256s": ["sha256:5f5f88efce3ea07c9469709136b34f548251fdd269f62309332b317b07567128"],
+      "source_route_labels": ["Q50"],
+      "route_label": "Q50",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q50-2014-brt-flushingjamaica-ws"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q50"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q50 stop removals",
+          "source_quote": "The Q50 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q50 retained its routing while some stops were removed.",
+          "relation_label": "Queens Bus Network Redesign includes Q50 stop removals",
+          "relation_description": "The implemented redesign removed some Q50 stops."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text is source context, not a treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q50 service.",
+          "review_rationale": "Navigation text is source context, not a treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q50 timetable.",
+          "review_rationale": "Timetable navigation is source context, not a treatment."
+        }
+      ]
+    },
+    {
+      "source_block_ids": ["p001_b0059"],
+      "source_block_sha256s": ["sha256:8316796c321ba0116f8f31f333b111e594b0fbe9bb2fdb8cee524e2b34d04e40"],
+      "source_route_labels": ["Q54"],
+      "route_label": "Q54",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q54"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q54"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q54 stop removals",
+          "source_quote": "The Q54 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q54 retained its routing while some stops were removed.",
+          "relation_label": "Queens Bus Network Redesign includes Q54 stop removals",
+          "relation_description": "The implemented redesign removed some Q54 stops."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text is source context, not a treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q54 service.",
+          "review_rationale": "Navigation text is source context, not a treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q54 timetable.",
+          "review_rationale": "Timetable navigation is source context, not a treatment."
+        }
+      ]
+    },
+    {
+      "source_block_ids": ["p001_b0063"],
+      "source_block_sha256s": ["sha256:446db84e6f100535c71cfe48383d26f223b2ffebe7b79374a8118540ceb24e53"],
+      "source_route_labels": ["Q59"],
+      "route_label": "Q59",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q59"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q59"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q59 stop removals",
+          "source_quote": "The Q59 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q59 retained its routing while some stops were removed.",
+          "relation_label": "Queens Bus Network Redesign includes Q59 stop removals",
+          "relation_description": "The implemented redesign removed some Q59 stops."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text is source context, not a treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q59 service.",
+          "review_rationale": "Navigation text is source context, not a treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q59 timetable.",
+          "review_rationale": "Timetable navigation is source context, not a treatment."
+        }
+      ]
+    },
+    {
+      "source_block_ids": ["p001_b0073"],
+      "source_block_sha256s": ["sha256:9cf5c127ac2733dc5d38249171e310dce8e5e32eeca10aa715335f128b25fb8f"],
+      "source_route_labels": ["Q72"],
+      "route_label": "Q72",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q72-serves-lga-2011"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q72"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q72 stop removals",
+          "source_quote": "The Q72 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q72 retained its routing while some stops were removed.",
+          "relation_label": "Queens Bus Network Redesign includes Q72 stop removals",
+          "relation_description": "The implemented redesign removed some Q72 stops."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text is source context, not a treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q72 service.",
+          "review_rationale": "Navigation text is source context, not a treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q72 timetable.",
+          "review_rationale": "Timetable navigation is source context, not a treatment."
+        }
+      ]
+    }
+  ]
+}

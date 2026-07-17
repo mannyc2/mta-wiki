@@ -9,7 +9,7 @@ import {
   readIdentityOverrides,
   type GlobalMtaRecordKind,
 } from "@mta-wiki/db/identity";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import {
   GLOBAL_KINDS,
   doNotMergePath,

@@ -15,6 +15,7 @@ generated_at: "2026-06-20T17:05:58.286Z"
 submission_ids:
   - "sub_76fe853067a4138b"
 payload:
+  authority_tier: "board_material"
   content_type: "Staff Summary"
   date_text: "May 3, 2024"
   date_text_normalized:

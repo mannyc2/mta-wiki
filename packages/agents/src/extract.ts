@@ -14,7 +14,7 @@ import { buildScopedAgent, modelSummary } from "@mta-wiki/agents/shared";
 import { readReleaseRecords, releaseDir } from "@mta-wiki/pipeline/quality/release-quality";
 import { ingestPromptSourcePacket } from "@mta-wiki/pipeline/sources/source-packet";
 import { readStagedSourceBlocks } from "@mta-wiki/pipeline/sources/source-prep";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import {
   defaultExtractEnumVocabulary,
   parseExtractAgentEnvelope,

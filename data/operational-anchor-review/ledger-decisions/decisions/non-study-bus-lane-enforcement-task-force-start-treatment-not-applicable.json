@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-bus-lane-enforcement-task-force-start-treatment-not-applicable",
+  "gap_id": "operational-coverage:a5a45bbca1dd0951d1a6e49a",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "This record marks the planned start of an organizational task force, not delivery of a bus-lane treatment on any route. Route, treatment, and delivered-status recovery are therefore not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_bus-lane-enforcement-task-force-start",
+      "source_id": "meeting_doc_128931",
+      "evidence_id": "meeting_doc_128931#p005_c0004",
+      "block_id": "p005_c0004"
+    }
+  ],
+  "search_receipt_ids": []
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "fare-free-pilot-launch-2023-treatment-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:13f7f170e80121ac0a7a09cf",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T06:45:30.000Z",
+  "rationale": "The retrospective official evaluation's pilot-start event now founds an approved atomic fare_collection occurrence. The broad event-level treatment diagnostic is therefore superseded and not independently applicable.",
+  "proposal_ids": [
+    "orp_fare_free_pilot_route_scope_and_resumption_2023_2024"
+  ],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

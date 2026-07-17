@@ -12,6 +12,7 @@ source_ids:
   - "meeting_doc_167241"
   - "meeting_doc_98311"
   - "mta_automated_camera_enforcement"
+  - "mta_queens_bus_network_redesign_service_changes"
   - "speeding_up_slowly_2025"
 local_observation_id: "route_q69_ace"
 local_observation_ids:
@@ -20,11 +21,13 @@ local_observation_ids:
   - "route_q69_21st_street"
   - "route_q69_ace"
   - "route_q69_oct2022"
+  - "route_q69_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T22:27:01.187Z"
+generated_at: "2026-07-12T23:02:57.000Z"
 raw_text: "the Q69 saw a 22% gain along Queens Plaza"
 submission_ids:
+  - "sub_1003eb50d9665e6d"
   - "sub_275b6776b645fcaa"
   - "sub_5a6e9d048ed44eb3"
   - "sub_5d1407372950e29e"
@@ -45,9 +48,11 @@ payload:
   borough: "Queens"
   borough_normalized: "queens"
   description: "Travels through the 21st Street Offset Bus Lane; increased average speed by nearly 8% between January 2019 and December 2024"
+  gtfs_route_id: "Q69"
   operator: "MTA Bus Company"
   route_id: "Q69"
   route_label: "Q69"
+  route_name: "Q69"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "Local"
@@ -98,6 +103,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_98311/blocks.jsonl"
     source_quote: "New bus lanes along 21st Street in western Queens, running from Long Island City to Astoria, will serve the Q66, Q69 and Q100 routes"
     text_sha256: "sha256:36fed67d156804114d3fabfd87f0b0fa1664a580fa825093718d217cbf91b1b6"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0071"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0071"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q69"
+    text_sha256: "sha256:0dd8201c5f8a8add45653ca95187bf36a87b60f664c4609e70bce936c94133db"
     text_source: "raw_text"
 ---
 

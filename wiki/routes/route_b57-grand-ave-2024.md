@@ -11,18 +11,21 @@ source_ids:
   - "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024"
   - "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024"
   - "grand_ave_metropolitan_ave_queens_blvd_nov2024"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_b57_grand_ave_2024"
 local_observation_ids:
   - "route_b57_grand_ave_2024"
   - "route_b57_grand_ave_nov2024"
+  - "route_b57_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T18:50:30.227Z"
+generated_at: "2026-07-12T22:39:53.000Z"
 raw_text: "Operates 10 bus routes, including the B57"
 submission_ids:
   - "sub_08aa5610c8850663"
   - "sub_77f97d5c4afc074d"
   - "sub_8222241d9a354bfb"
+  - "sub_d1520aa39f50fda5"
 payload:
   _merged_field_values:
     route_type_normalized:
@@ -31,7 +34,9 @@ payload:
   borough: "Brooklyn"
   borough_normalized: "brooklyn"
   description: "Bus route operating from Grand Av Bus Depot"
+  gtfs_route_id: "B57"
   route_id: "B57"
+  route_name: "B57"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "local"
@@ -64,6 +69,16 @@ evidence_refs:
     source_path: "raw/sources/grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024/blocks.jsonl"
     source_quote: "Operates 10 bus routes, including the B38, B47, B57, B60, B62, and Q59"
     text_sha256: "sha256:297c690821d112808c984eb439fc65c979fa47f81d105fd7d3a0cbc55deff8b5"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0100"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0100"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "B57"
+    text_sha256: "sha256:99d7fc50b65f47d0de7a1c4333d6309549e07119f0c878b1a5efe9bd50a25ae3"
     text_source: "raw_text"
 ---
 

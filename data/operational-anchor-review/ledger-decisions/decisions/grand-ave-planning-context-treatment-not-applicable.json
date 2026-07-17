@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "grand-ave-planning-context-treatment-not-applicable",
+  "gap_id": "operational-coverage:3b966f10af76524407fe2165",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T07:25:00.000Z",
+  "rationale": "The presentation documents Transit Signal Priority and several bus-lane configurations as candidate tools and design alternatives. It does not select, scope, or report delivery of TSP—or any other candidate treatment—for this prospective implementation target. The candidate is useful for coverage review but must not be promoted into treatment scope, so recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_project-implementation-late-2025-2026",
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024",
+      "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024#p022_c0002",
+      "block_id": "p022_c0002"
+    },
+    {
+      "record_id": "relation_project-timeline-implementation_2",
+      "source_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024",
+      "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024#p022_c0002",
+      "block_id": "p022_c0002"
+    }
+  ],
+  "search_receipt_ids": []
+}

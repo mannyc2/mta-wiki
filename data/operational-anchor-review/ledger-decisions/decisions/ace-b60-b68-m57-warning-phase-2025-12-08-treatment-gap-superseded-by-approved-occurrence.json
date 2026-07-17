@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "decision_id": "ace-b60-b68-m57-warning-phase-2025-12-08-treatment-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:64381715a1777d38c32034f4",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T22:45:00.000Z",
+  "rationale": "Approved exact-day occurrence occurrence:1ed365a241353614f72f025e binds the bounded December 8, 2025 ACE warning-phase cohort to one atomic automated_bus_lane_enforcement treatment. The broad raw treatment diagnostic is superseded by that reviewed occurrence. Warning-phase activation is the operational onset here, without inferring a later fine-bearing enforcement date.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_ace-program-expansion-dec2025",
+      "source_id": "nyct_key_performance_metrics_doc194001",
+      "evidence_id": "nyct_key_performance_metrics_doc194001#p001_c0002",
+      "block_id": "p001_c0002"
+    },
+    {
+      "record_id": "event_ace-program-expansion-dec2025",
+      "source_id": "nyct_key_performance_metrics_doc194001",
+      "evidence_id": "nyct_key_performance_metrics_doc194001#p003_c0003",
+      "block_id": "p003_c0003"
+    },
+    {
+      "record_id": "event_ace-program-expansion-dec2025",
+      "source_id": "nyct_key_performance_metrics_doc194001",
+      "evidence_id": "nyct_key_performance_metrics_doc194001#p010_c0011",
+      "block_id": "p010_c0011"
+    },
+    {
+      "record_id": "event_ace-program-expansion-dec2025",
+      "source_id": "nyct_key_performance_metrics_doc194001",
+      "evidence_id": "nyct_key_performance_metrics_doc194001#p011_c0009",
+      "block_id": "p011_c0009"
+    }
+  ],
+  "search_receipt_ids": []
+}

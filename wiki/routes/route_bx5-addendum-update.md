@@ -8,18 +8,22 @@ display_name: "Bx5"
 source_id: "bronx_bus_network_final_plan_addendum_2021"
 source_ids:
   - "bronx_bus_network_final_plan_addendum_2021"
+  - "mta_ace_routes_may2025_cut"
   - "mta_automated_camera_enforcement"
   - "soundview_bus_priority_press_release_2021"
 local_observation_id: "route_bx5_addendum_update"
 local_observation_ids:
+  - "route_ace_may2025_bx5"
   - "route_bx5_ace"
   - "route_bx5_addendum_update"
   - "route_bx5_soundview"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-09T01:50:23.140Z"
+generated_at: "2026-07-13T15:20:30.283Z"
+raw_text: "{\"row_id\":\"row-5mqc-82pi_cjgy\",\"route\":\"BX5\",\"program\":\"ACE\",\"implementation_date\":\"2025-05-27T00:00:00.000\"}"
 submission_ids:
   - "sub_0974655f72433cf2"
+  - "sub_5adf281854b895d8"
   - "sub_5d1f4eef5ca48015"
   - "sub_95a60b43e9572268"
 payload:
@@ -33,6 +37,7 @@ payload:
   route_record_scope_reason: "default_true_route"
   route_type: "bus"
   route_type_normalized: "bus"
+  source_literal: "BX5"
   streets: "Bruckner Blvd / Story Av"
 evidence_refs:
   -
@@ -71,6 +76,16 @@ evidence_refs:
     source_path: "raw/sources/soundview_bus_priority_press_release_2021/blocks.jsonl"
     source_quote: "MTA's Bx5, Bx36 and Bx39 routes"
     text_sha256: "sha256:c0220128a63c8e1f53136205cef2770e21c36fa62c15669aa65402052a3d0320"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0004"
+    evidence_id: "mta_ace_routes_may2025_cut#p001_b0004"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_ace_routes_may2025_cut"
+    source_path: "raw/sources/mta_ace_routes_may2025_cut/blocks.jsonl"
+    source_quote: "\"route\":\"BX5\""
+    text_sha256: "sha256:af11743f84deb37d80e5d34e45c25401e17a6496898cf7907adfe41e4c6899bf"
     text_source: "raw_text"
 ---
 

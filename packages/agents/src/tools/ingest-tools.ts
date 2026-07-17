@@ -12,7 +12,7 @@ import {
 import { readConfig } from "@mta-wiki/core/config";
 import { isGlobalRecordKind, resolveIdentityCandidates } from "@mta-wiki/db/identity";
 import { allKindSpecs, kindSpec, submitToolKinds } from "@mta-wiki/db/kind-registry";
-import { readCanonicalRecordById, readCanonicalRecords, readCanonicalRecordsByKind } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecordById, readCanonicalRecords, readCanonicalRecordsByKind } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { normalizedCompanionsAdded, ontologyGuide, ontologyGuideMarkdown } from "@mta-wiki/pipeline/ontology/ontology";
 import { payloadSchemaForKind, validatePayloadSchema } from "@mta-wiki/db/payload-schemas";
 import { findRelationCandidates, possibleRelationCandidatesForSource } from "@mta-wiki/pipeline/records/relations";

@@ -6,16 +6,21 @@ display_name: "SIM1C (NYCT)"
 source_id: "meeting_doc_138456"
 source_ids:
   - "meeting_doc_138456"
+  - "meeting_doc_146846"
   - "meeting_doc_160441"
 local_observation_id: "route_sim1c_meeting_doc_138456"
 local_observation_ids:
   - "route_meeting_doc_160441_sim1c"
+  - "route_sim1c_express_fall_2024_discontinuation"
+  - "route_sim1c_express_summer_2024_realized"
   - "route_sim1c_meeting_doc_138456"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-20T21:40:11.928Z"
+generated_at: "2026-07-13T10:40:26.982Z"
 raw_text: "SIM1C (NYCT): Staten Island: Eltingville-Hylan Blvd-Midtown/Downtown 1 Manhattan-bound trip in the weekday afternoon"
 submission_ids:
+  - "sub_06bc54f0ac5031dd"
+  - "sub_18f7075b47e966f4"
   - "sub_78d438978e5875d1"
   - "sub_f100a92b36eee76b"
 payload:
@@ -26,6 +31,7 @@ payload:
   description: "Staten Island: Eltingville-Hylan Blvd-Midtown/Downtown"
   operator: "NYCT"
   route_id: "SIM1C"
+  route_label: "SIM1C"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "express"
@@ -58,6 +64,26 @@ evidence_refs:
     page_number: 3
     source_id: "meeting_doc_160441"
     source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
+    text_sha256: "sha256:a1cb3550e548ba0e4cc902da5e264574b62e2318fcfe0a6f5418eb28d04373de"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0013"
+    evidence_id: "meeting_doc_146846#p002_c0013"
+    page_number: 2
+    role: "delivered_route_identity_and_trip_pattern"
+    source_id: "meeting_doc_146846"
+    source_path: "raw/sources/meeting_doc_146846/blocks.jsonl"
+    source_quote: "SIM1C"
+    text_sha256: "sha256:5f01e56329716c49b27e65e1edf1dbaf0ded2ee45f8a411a6dd0a7235b4905bb"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0005"
+    evidence_id: "meeting_doc_160441#p003_c0005"
+    page_number: 3
+    role: "retrospective_route_identity_and_trip_pattern"
+    source_id: "meeting_doc_160441"
+    source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
+    source_quote: "SIM1C"
     text_sha256: "sha256:a1cb3550e548ba0e4cc902da5e264574b62e2318fcfe0a6f5418eb28d04373de"
     text_source: "raw_text"
 ---

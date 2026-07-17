@@ -15,6 +15,7 @@ generated_at: "2026-06-20T13:59:36.844Z"
 submission_ids:
   - "sub_7a06f06dc8abbafd"
 payload:
+  authority_tier: "board_material"
   content_type: "staff summary"
   description: "NYCT procurement staff summary for contract to furnish and deliver 224 low-floor 60-foot diesel buses from New Flyer of America Inc."
   title: "Staff Summary"

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "q7-route-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:981aa870c22b0051aac3607a",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-12",
+  "decided_at": "2026-07-12T20:14:24.000Z",
+  "rationale": "The broad inherited anchor row remains intentionally multi-route and is not a safe route-level study projection. Approved occurrence occurrence:c5e9aba290ca2be1be6fb38e already binds the Q7 event to Q07 using same-block official evidence, so further recovery of this broad diagnostic route gap is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

@@ -1,0 +1,299 @@
+{
+  "proposal_id": "orp_qbnr_3_create_route_rename_bundles_2025",
+  "corpus_fingerprint": "ab6fa31d9190f0cf129a33342e2fa334fbccb0af1323e4a4a5becb1bcfc2a105",
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf",
+    "operational-coverage:45dd3045070322bc90d91414",
+    "operational-coverage:a9b2bf1ff109628219637775"
+  ],
+  "project_record_id": "project_queens-bus-network-redesign",
+  "project_label": "Queens Bus Network Redesign",
+  "drafted_by": "codex-corpus-completion-2026-07-13",
+  "drafted_at": "2026-07-13T02:10:00.000Z",
+  "rationale": "Three exact official MTA rows establish realized QBNR rename dates and one new QM successor route identity per row. Each rename is a bounded Queens Bus Network Redesign route-redesign bundle. X63, X64, and X68 remain distinct predecessor identities mentioned only in treatment evidence; later downstream crosswalk review may connect pre- and post-redesign series without merging canonical routes.",
+  "units": [
+    {
+      "source_block_ids": [
+        "p001_b0129",
+        "p001_b0130"
+      ],
+      "source_block_sha256s": [
+        "sha256:7e01bbbdf9d326756e6c5fb4fc13021f30a60d997f70436e1ed8ef186adb3d83",
+        "sha256:3c1b54fbce0dc5159cd90db0ee5cdf83d05f09d6ce6176f263409dd335b64382"
+      ],
+      "source_route_labels": [
+        "X63",
+        "QM63"
+      ],
+      "route_label": "QM63",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM63"
+      },
+      "event_kind": "rename",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "route_rename",
+          "label": "QM63 route rename",
+          "source_quote": "The X63 will be renamed the QM63.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated QM63 route rename treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "queens_reroute",
+          "label": "QM63 queens reroute",
+          "source_quote": "In Queens, the QM63 will be rerouted to use 249 St instead of Sunrise Hwy in both directions.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated QM63 queens reroute treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "midtown_stop_additions",
+          "label": "QM63 midtown stop additions",
+          "source_quote": "Midtown-bound QM63 trips will make stops on 23 St, Madison Av, and 57 St.",
+          "treatment_kind": "stop change",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated QM63 midtown stop additions treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "avenue_service_discontinuation",
+          "label": "QM63 avenue service discontinuation",
+          "source_quote": "Service on 3 and 5 Avs will be discontinued.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated QM63 avenue service discontinuation treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "The Queens-bound QM63 routing in Manhattan will not change.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "QM63 stop removal",
+          "source_quote": "Some stops have been removed from this route.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated QM63 stop removal treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Source context or continuity; no treatment or route edge."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "frequency_span_adjustment",
+          "label": "QM63 frequency span adjustment",
+          "source_quote": "Peak frequency will decrease slightly, and service spans will change.",
+          "treatment_kind": "service frequency and span adjustment",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated QM63 frequency span adjustment treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM63 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM63 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0131",
+        "p001_b0132"
+      ],
+      "source_block_sha256s": [
+        "sha256:79a2244c1c3411f21d4a4207c4f5d10c32abdf5c684bc9f43288d2756a633587",
+        "sha256:a7925b940cc91dffcf805f4d8540764970a9a4d8509471020b76a9e85cb55d9a"
+      ],
+      "source_route_labels": [
+        "X64",
+        "QM64"
+      ],
+      "route_label": "QM64",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM64"
+      },
+      "event_kind": "rename",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "route_rename",
+          "label": "QM64 route rename",
+          "source_quote": "The X64 will be renamed the QM64.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated QM64 route rename treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "elmont_extension",
+          "label": "QM64 elmont extension",
+          "source_quote": "The route will be extended into Elmont to a new stop at Elmont Rd/Dutch Broadway.",
+          "treatment_kind": "service expansion",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated QM64 elmont extension treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "midtown_stop_additions",
+          "label": "QM64 midtown stop additions",
+          "source_quote": "Midtown-bound QM64 trips will make stops on 23 St, Madison Av, and 57 St.",
+          "treatment_kind": "stop change",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated QM64 midtown stop additions treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "avenue_service_discontinuation",
+          "label": "QM64 avenue service discontinuation",
+          "source_quote": "Service on 3 and 5 Avs will be discontinued.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated QM64 avenue service discontinuation treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "The Queens-bound QM64 routing in Manhattan will not change.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "QM64 stop removal",
+          "source_quote": "Some stops have been removed from this route.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated QM64 stop removal treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Source context or continuity; no treatment or route edge."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "frequency_decrease",
+          "label": "QM64 frequency decrease",
+          "source_quote": "AM peak frequencies will decrease slightly.",
+          "treatment_kind": "service frequency adjustment",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated QM64 frequency decrease treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM64 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM64 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0134",
+        "p001_b0135"
+      ],
+      "source_block_sha256s": [
+        "sha256:a2eab60aa690c814e6aff21b59ab1af9155eed2417fc74b2d38a15333b49e5fb",
+        "sha256:a8da615041fe7295bf6dcca6e9cd0f3da1d34a9504c633fb64953e75d4d5e9a7"
+      ],
+      "source_route_labels": [
+        "X68",
+        "QM68"
+      ],
+      "route_label": "QM68",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM68"
+      },
+      "event_kind": "rename",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "route_rename",
+          "label": "QM68 route rename",
+          "source_quote": "The X68 will be renamed the QM68.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated QM68 route rename treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "midtown_stop_additions",
+          "label": "QM68 midtown stop additions",
+          "source_quote": "All Midtown-bound QM68 trips will make stops on 23 St, Madison Av, and 57 St.",
+          "treatment_kind": "stop change",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated QM68 midtown stop additions treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "avenue_service_discontinuation",
+          "label": "QM68 avenue service discontinuation",
+          "source_quote": "Service on 34 St, 42 St, 3 Av, and 5 Av will be discontinued.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated QM68 avenue service discontinuation treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "The Queens-bound QM68 routing in Manhattan will not change.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "QM68 stop removal",
+          "source_quote": "Some stops have been removed from this route.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated QM68 stop removal treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM68 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM68 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    }
+  ]
+}

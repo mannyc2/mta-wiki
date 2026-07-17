@@ -1,0 +1,717 @@
+{
+  "proposal_id": "orp_qbnr_15_create_route_atomic_2025",
+  "corpus_fingerprint": "a09c02983161144451725a433292313280557953fb901631ec336e61ad7e1cfe",
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf",
+    "operational-coverage:45dd3045070322bc90d91414",
+    "operational-coverage:a9b2bf1ff109628219637775"
+  ],
+  "project_record_id": "project_queens-bus-network-redesign",
+  "project_label": "Queens Bus Network Redesign",
+  "drafted_by": "codex-corpus-completion-2026-07-13",
+  "drafted_at": "2026-07-13T02:10:00.000Z",
+  "rationale": "Fifteen exact official MTA rows establish realized QBNR dates and one new current route identity per row. Each row has one bounded treatment member and therefore remains an atomic occurrence; predecessor, replacement, alternative, and timetable references remain treatment text or reviewed context only.",
+  "units": [
+    {
+      "source_block_ids": [
+        "p001_b0011"
+      ],
+      "source_block_sha256s": [
+        "sha256:2a032f2c6ca2c480619126a3af480f5abc43e992d523b465fe04d50b55121b9a"
+      ],
+      "source_route_labels": [
+        "Q9"
+      ],
+      "route_label": "Q9",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q09"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "limited_stops",
+          "label": "Q9 limited stops",
+          "source_quote": "The Q9 will keep its current routing but make limited stops along Liberty Av and Sutphin Blvd.",
+          "treatment_kind": "limited stops",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated Q9 limited stops treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For local service on Liberty Av, take the Q112 . For local service on Sutphin Blvd, take the Q41 or Q60 .",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q9 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q9 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0045"
+      ],
+      "source_block_sha256s": [
+        "sha256:4e6f5dd2421c75d02361c5080c04fc30e734f548a1225bd29f6b6649fced0c33"
+      ],
+      "source_route_labels": [
+        "Q40"
+      ],
+      "route_label": "Q40",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q40"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "limited_stops",
+          "label": "Q40 limited stops",
+          "source_quote": "The Q40 will keep its current routing, but will make limited stops along Lakewood Av and Sutphin Blvd.",
+          "treatment_kind": "limited stops",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated Q40 limited stops treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For local service, take the Q41 .",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q40 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q40 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0047"
+      ],
+      "source_block_sha256s": [
+        "sha256:53360e83d02859f2751febb6cee92783e165a4b515d20f5a8ea1b39fdf60f553"
+      ],
+      "source_route_labels": [
+        "Q42"
+      ],
+      "route_label": "Q42",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q42"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q42 stop removal",
+          "source_quote": "The Q42 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated Q42 stop removal treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q42 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q42 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0054"
+      ],
+      "source_block_sha256s": [
+        "sha256:9374f3906ad492f433b61d4866d8f531b1496222bb73ca2769e835c28e7b07c3"
+      ],
+      "source_route_labels": [
+        "Q49"
+      ],
+      "route_label": "Q49",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q49"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q49 stop removal",
+          "source_quote": "The Q49 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated Q49 stop removal treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q49 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q49 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0060"
+      ],
+      "source_block_sha256s": [
+        "sha256:eb595a6ba6cab62910346d1a7bc1eb266b2b97060d4a2d6ebf7e3b39c7dcbe47"
+      ],
+      "source_route_labels": [
+        "Q55"
+      ],
+      "route_label": "Q55",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q55"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q55 stop removal",
+          "source_quote": "The Q55 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated Q55 stop removal treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q55 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q55 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0061"
+      ],
+      "source_block_sha256s": [
+        "sha256:f51ed40bbbb4c3ee41c84ee7495df44b256388a9c1fd3c8849240e7c9f597763"
+      ],
+      "source_route_labels": [
+        "Q56"
+      ],
+      "route_label": "Q56",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q56"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q56 stop removal",
+          "source_quote": "The Q56 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated Q56 stop removal treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q56 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q56 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0067"
+      ],
+      "source_block_sha256s": [
+        "sha256:b48e89d462e86acd41518bdbf44d25e38b3c724d5ce7d8c9a0020d39cf376755"
+      ],
+      "source_route_labels": [
+        "Q64"
+      ],
+      "route_label": "Q64",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q64"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q64 stop removal",
+          "source_quote": "The Q64 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated Q64 stop removal treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "The new Q74 will also provide service on Jewel Av with new connections to Fresh Meadows and Queensborough Community College.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q64 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q64 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0074"
+      ],
+      "source_block_sha256s": [
+        "sha256:21769fdf067b083292505e1dfbcf26f9b78bb20c99b593821362afb9dad6267e"
+      ],
+      "source_route_labels": [
+        "Q74"
+      ],
+      "route_label": "Q74",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q74"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "college_forest_hills_connection",
+          "label": "Q74 college forest hills connection",
+          "source_quote": "The new Q74 will connect Queensborough Community College to Forest Hills via Horace Harding Expwy and Jewel Av.",
+          "treatment_kind": "service expansion",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated Q74 college forest hills connection treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q74 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q74 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0087"
+      ],
+      "source_block_sha256s": [
+        "sha256:c258de96ea5347965ae513f20fae6522e2474f9a9b89b8a44f90ebc3c3fa13bd"
+      ],
+      "source_route_labels": [
+        "Q90"
+      ],
+      "route_label": "Q90",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q90"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "q48_laguardia_replacement",
+          "label": "Q90 q48 laguardia replacement",
+          "source_quote": "The new Q90 will replace existing Q48 service between Flushing and LaGuardia Airport with a faster, more direct service through Willets Point.",
+          "treatment_kind": "route segment discontinuation and replacement",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated Q90 q48 laguardia replacement treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q90 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q90 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0088"
+      ],
+      "source_block_sha256s": [
+        "sha256:202cfdd832adb6e050a1a7192b2de6124a3ba754f326b12a8dd86cdca62daced"
+      ],
+      "source_route_labels": [
+        "Q98"
+      ],
+      "route_label": "Q98",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q98"
+      },
+      "event_kind": "start",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "flushing_ridgewood_connection",
+          "label": "Q98 flushing ridgewood connection",
+          "source_quote": "The new Q98 will provide a more direct alternative to the Q58 , connecting Flushing to Ridgewood via Horace Harding Expwy and Queens Blvd.",
+          "treatment_kind": "service expansion",
+          "expected_treatment_family": "service_pattern",
+          "description": "Source-stated Q98 flushing ridgewood connection treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q98 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q98 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0093"
+      ],
+      "source_block_sha256s": [
+        "sha256:11cd7e114a966cac42c32c25ec4890ce100772cb629200db5d2b49cfada40949"
+      ],
+      "source_route_labels": [
+        "Q104"
+      ],
+      "route_label": "Q104",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q104"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q104 stop removal",
+          "source_quote": "The Q104 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated Q104 stop removal treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q104 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q103 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0106"
+      ],
+      "source_block_sha256s": [
+        "sha256:508421d2838053f9fc8d23c0bafce52830f9fb132dcd7303eca3fa972e7fa342"
+      ],
+      "source_route_labels": [
+        "QM5"
+      ],
+      "route_label": "QM5",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM5"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "QM5 stop removal",
+          "source_quote": "The QM5 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated QM5 stop removal treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops. Existing super express trips from Midtown will be maintained.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM5 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM5 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0121"
+      ],
+      "source_block_sha256s": [
+        "sha256:fc01c475317b6a7448392e4fa13f6c117bd01786eac376fc1bb2f42816318dfe"
+      ],
+      "source_route_labels": [
+        "QM31"
+      ],
+      "route_label": "QM31",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM31"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_change",
+          "label": "QM31 stop change",
+          "source_quote": "The QM31 will keep its current routing, but some stops have been changed.",
+          "treatment_kind": "stop change",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated QM31 stop change treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM31 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM31 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0124"
+      ],
+      "source_block_sha256s": [
+        "sha256:5086748f4b393963810e45be185d95a4844d5a673347b1d9146d77349d79c413"
+      ],
+      "source_route_labels": [
+        "QM35"
+      ],
+      "route_label": "QM35",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM35"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "QM35 stop removal",
+          "source_quote": "The QM35 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated QM35 stop removal treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM35 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM35 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0126"
+      ],
+      "source_block_sha256s": [
+        "sha256:743d010725c44a5ca64298ce37f726e8b6ad0f916df3452802d0655bb5fe0d1f"
+      ],
+      "source_route_labels": [
+        "QM40"
+      ],
+      "route_label": "QM40",
+      "route_resolution": {
+        "mode": "create"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM40"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "atomic",
+      "clauses": [
+        {
+          "clause_kind": "context",
+          "source_quote": "The QM40 will keep its current routing.",
+          "review_rationale": "Source context or continuity; no treatment or route edge."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_pair_removal",
+          "label": "QM40 stop pair removal",
+          "source_quote": "The stop pair at 57 Av/97 Av has been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Source-stated QM40 stop pair removal treatment."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM40 service.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM40 timetable.",
+          "review_rationale": "Source context, continuity, navigation, or another route reference; no treatment or route edge."
+        }
+      ]
+    }
+  ]
+}

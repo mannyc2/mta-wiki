@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "proposal_id": "orp_fare_free_pilot_route_scope_and_resumption_2023_2024",
+  "proposal_kind": "observation_bundle",
+  "corpus_fingerprint": "6486c588e710ae1083c91c640cb983848a3a824d147d90dcbf44c243558e9d4b",
+  "route_anchor_pin": {
+    "path": "data/exports/releases/v1-rc8/route_anchors.jsonl",
+    "release_id": "v1-rc8",
+    "sha256": "874d2233713d624e127f6f690a42088ee9473873fb8ebff3d8f21cfb88916dc4"
+  },
+  "gap_ids": [
+    "operational-coverage:8b33da6e976e949ed5665fa9",
+    "operational-coverage:13f7f170e80121ac0a7a09cf",
+    "operational-coverage:e55b033cee2d4be945e53ad2",
+    "operational-coverage:6ae1f03dd9d673fed4153775"
+  ],
+  "source_id": "fare_free_bus_pilot_evaluation",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-13T06:34:19.000Z",
+  "provenance": {
+    "drafted_by": "codex-corpus-completion-2026-07-13",
+    "drafted_at": "2026-07-13T06:28:00.000Z",
+    "method": "official_evaluation_route_identity_split_and_scope_recovery",
+    "verifier": {
+      "reviewed_by": "codex-independent-fare-free-recovery-review",
+      "reviewed_at": "2026-07-13T06:34:19.000Z",
+      "verdict": "passed",
+      "rationale": "Every evidence block, quote, and hash resolves; all five deterministic record ids and four atomic route identities are collision-free; all eight relation triples are unique and absent canonically; the fare-resumption treatment normalizes to fare_collection on 2024-09-01; the four current gap ids, corpus fingerprint, and rc8 route-anchor pin are exact; the route-anchor simulation resolves only BX18A, BX18B, S46, and S96 while preserving B60, M116, and Q4; and every delivered route relation now carries retrospective start-status evidence."
+    }
+  },
+  "rationale": "The retrospective June 2025 official MTA evaluation supplies exact realized pilot and fare-resumption dates, the selected route set, and the fare-policy treatments. Four GTFS-addressable participants are currently trapped in the source-facing aggregate identities Bx18A/B and S46/S96. This recovery creates only the four atomic route identities, preserves both aggregate records for aggregate metrics, adds delivered project-to-route scope for all seven GTFS IDs, and represents fare resumption as a positive treatment distinct from the zero-fare treatment that ended. The seven-ID study projection is an addressability split of the report's five borough-level route selections; no aggregate metric is copied to an atomic route.",
+  "observations": [
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_bx18a",
+      "label": "Bx18A",
+      "raw_text": "Bx18A/B",
+      "payload": {
+        "route_id": "BX18A",
+        "route_name": "Bx18A",
+        "route_label": "Bx18A",
+        "gtfs_route_id": "BX18A",
+        "borough": "Bronx",
+        "route_type": "local",
+        "service_variant": "local",
+        "description": "GTFS-addressable Bx18A branch represented by the source's combined Bx18A/B surface."
+      },
+      "expected_record_id": "route_bx18a",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p020_c0003",
+          "block_id": "p020_c0003",
+          "source_quote": "To Morris Heights, Highbridge (Bx18A)"
+        },
+        {
+          "role": "route_scope_context",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006",
+          "block_id": "p002_c0006",
+          "source_quote": "In the Bronx, the Bx18A/B route is shown near Mt. Eden."
+        }
+      ]
+    },
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_bx18b",
+      "label": "Bx18B",
+      "raw_text": "Bx18A/B",
+      "payload": {
+        "route_id": "BX18B",
+        "route_name": "Bx18B",
+        "route_label": "Bx18B",
+        "gtfs_route_id": "BX18B",
+        "borough": "Bronx",
+        "route_type": "local",
+        "service_variant": "local",
+        "description": "GTFS-addressable Bx18B branch represented by the source's combined Bx18A/B surface."
+      },
+      "expected_record_id": "route_bx18b",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p020_c0003",
+          "block_id": "p020_c0003",
+          "source_quote": "To Morris Heights, Highbridge (Bx18B)"
+        },
+        {
+          "role": "route_scope_context",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006",
+          "block_id": "p002_c0006",
+          "source_quote": "In the Bronx, the Bx18A/B route is shown near Mt. Eden."
+        }
+      ]
+    },
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_s46",
+      "label": "S46",
+      "raw_text": "S46/96",
+      "payload": {
+        "route_id": "S46",
+        "route_name": "S46",
+        "route_label": "S46",
+        "gtfs_route_id": "S46",
+        "borough": "Staten Island",
+        "route_type": "local",
+        "service_variant": "local",
+        "description": "GTFS-addressable S46 local route represented by the source's combined S46/96 surface."
+      },
+      "expected_record_id": "route_s46",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p023_c0003",
+          "block_id": "p023_c0003",
+          "source_quote": "S46 Local"
+        },
+        {
+          "role": "route_scope_context",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006",
+          "block_id": "p002_c0006",
+          "source_quote": "In Staten Island, the S46/96 route is shown, passing through St. George."
+        }
+      ]
+    },
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_s96",
+      "label": "S96",
+      "raw_text": "S46/96",
+      "payload": {
+        "route_id": "S96",
+        "route_name": "S96",
+        "route_label": "S96",
+        "gtfs_route_id": "S96",
+        "borough": "Staten Island",
+        "route_type": "limited-stop",
+        "service_variant": "limited_stop",
+        "description": "GTFS-addressable S96 limited-stop route represented by the source's combined S46/96 surface."
+      },
+      "expected_record_id": "route_s96",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p023_c0003",
+          "block_id": "p023_c0003",
+          "source_quote": "S96 Limited"
+        },
+        {
+          "role": "route_scope_context",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006",
+          "block_id": "p002_c0006",
+          "source_quote": "In Staten Island, the S46/96 route is shown, passing through St. George."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_fare_collection_resumption_2024",
+      "label": "Fare collection resumption",
+      "raw_text": "fare collection resumed on September 1, 2024",
+      "payload": {
+        "treatment_kind": "fare collection resumption",
+        "treatment_type": "fare_policy",
+        "description": "Fare collection resumed on the selected fare-free pilot routes.",
+        "start_date": "2024-09-01",
+        "locations": [
+          "Bronx: Bx18A/B",
+          "Manhattan: M116",
+          "Brooklyn: B60",
+          "Queens: Q4",
+          "Staten Island: S46/S96"
+        ]
+      },
+      "expected_record_id": "treatment_fare-collection-resumption-2024",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005",
+          "block_id": "p002_c0005",
+          "source_quote": "fare collection resumed on September 1, 2024"
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "local_observation_id": "relation_fare_free_pilot_2023_affects_b60",
+      "label": "Fare-Free Bus Pilot affects B60",
+      "relation_kind": "affects_route",
+      "subject": { "record_id": "project_fare-free-bus-pilot" },
+      "object": { "record_id": "route_b60" },
+      "assertion_status": "delivered",
+      "as_of_date": "2023-09-24",
+      "description": "The Fare-Free Bus Pilot operated on B60.",
+      "evidence_bindings": [
+        { "role": "relationship", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In Brooklyn, the B60 route is shown, passing through Williamsburg and Canarsie." },
+        { "role": "route_scope", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In Brooklyn, the B60 route is shown, passing through Williamsburg and Canarsie." },
+        { "role": "operational_status", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005", "block_id": "p002_c0005", "source_quote": "The pilot began September 24, 2023" }
+      ]
+    },
+    {
+      "local_observation_id": "relation_fare_free_pilot_2023_affects_bx18a",
+      "label": "Fare-Free Bus Pilot affects Bx18A",
+      "relation_kind": "affects_route",
+      "subject": { "record_id": "project_fare-free-bus-pilot" },
+      "object": { "local_observation_id": "route_bx18a" },
+      "assertion_status": "delivered",
+      "as_of_date": "2023-09-24",
+      "description": "The Fare-Free Bus Pilot operated on the Bx18A branch represented by the report's Bx18A/B surface.",
+      "evidence_bindings": [
+        { "role": "relationship", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In the Bronx, the Bx18A/B route is shown near Mt. Eden." },
+        { "role": "route_scope", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In the Bronx, the Bx18A/B route is shown near Mt. Eden." },
+        { "role": "operational_status", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005", "block_id": "p002_c0005", "source_quote": "The pilot began September 24, 2023" }
+      ]
+    },
+    {
+      "local_observation_id": "relation_fare_free_pilot_2023_affects_bx18b",
+      "label": "Fare-Free Bus Pilot affects Bx18B",
+      "relation_kind": "affects_route",
+      "subject": { "record_id": "project_fare-free-bus-pilot" },
+      "object": { "local_observation_id": "route_bx18b" },
+      "assertion_status": "delivered",
+      "as_of_date": "2023-09-24",
+      "description": "The Fare-Free Bus Pilot operated on the Bx18B branch represented by the report's Bx18A/B surface.",
+      "evidence_bindings": [
+        { "role": "relationship", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In the Bronx, the Bx18A/B route is shown near Mt. Eden." },
+        { "role": "route_scope", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In the Bronx, the Bx18A/B route is shown near Mt. Eden." },
+        { "role": "operational_status", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005", "block_id": "p002_c0005", "source_quote": "The pilot began September 24, 2023" }
+      ]
+    },
+    {
+      "local_observation_id": "relation_fare_free_pilot_2023_affects_m116",
+      "label": "Fare-Free Bus Pilot affects M116",
+      "relation_kind": "affects_route",
+      "subject": { "record_id": "project_fare-free-bus-pilot" },
+      "object": { "record_id": "route_m116" },
+      "assertion_status": "delivered",
+      "as_of_date": "2023-09-24",
+      "description": "The Fare-Free Bus Pilot operated on M116.",
+      "evidence_bindings": [
+        { "role": "relationship", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In Manhattan, the M116 route is shown in Harlem." },
+        { "role": "route_scope", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In Manhattan, the M116 route is shown in Harlem." },
+        { "role": "operational_status", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005", "block_id": "p002_c0005", "source_quote": "The pilot began September 24, 2023" }
+      ]
+    },
+    {
+      "local_observation_id": "relation_fare_free_pilot_2023_affects_q4",
+      "label": "Fare-Free Bus Pilot affects Q4",
+      "relation_kind": "affects_route",
+      "subject": { "record_id": "project_fare-free-bus-pilot" },
+      "object": { "record_id": "route_q4-lcl-ltd" },
+      "assertion_status": "delivered",
+      "as_of_date": "2023-09-24",
+      "description": "The Fare-Free Bus Pilot operated on Q4.",
+      "evidence_bindings": [
+        { "role": "relationship", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In Queens, the Q4 route is shown, passing through Jamaica and Cambria Heights." },
+        { "role": "route_scope", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In Queens, the Q4 route is shown, passing through Jamaica and Cambria Heights." },
+        { "role": "operational_status", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005", "block_id": "p002_c0005", "source_quote": "The pilot began September 24, 2023" }
+      ]
+    },
+    {
+      "local_observation_id": "relation_fare_free_pilot_2023_affects_s46",
+      "label": "Fare-Free Bus Pilot affects S46",
+      "relation_kind": "affects_route",
+      "subject": { "record_id": "project_fare-free-bus-pilot" },
+      "object": { "local_observation_id": "route_s46" },
+      "assertion_status": "delivered",
+      "as_of_date": "2023-09-24",
+      "description": "The Fare-Free Bus Pilot operated on S46 within the report's S46/S96 surface.",
+      "evidence_bindings": [
+        { "role": "relationship", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In Staten Island, the S46/96 route is shown, passing through St. George." },
+        { "role": "route_scope", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In Staten Island, the S46/96 route is shown, passing through St. George." },
+        { "role": "operational_status", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005", "block_id": "p002_c0005", "source_quote": "The pilot began September 24, 2023" }
+      ]
+    },
+    {
+      "local_observation_id": "relation_fare_free_pilot_2023_affects_s96",
+      "label": "Fare-Free Bus Pilot affects S96",
+      "relation_kind": "affects_route",
+      "subject": { "record_id": "project_fare-free-bus-pilot" },
+      "object": { "local_observation_id": "route_s96" },
+      "assertion_status": "delivered",
+      "as_of_date": "2023-09-24",
+      "description": "The Fare-Free Bus Pilot operated on S96 within the report's S46/S96 surface.",
+      "evidence_bindings": [
+        { "role": "relationship", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In Staten Island, the S46/96 route is shown, passing through St. George." },
+        { "role": "route_scope", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006", "block_id": "p002_c0006", "source_quote": "In Staten Island, the S46/96 route is shown, passing through St. George." },
+        { "role": "operational_status", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005", "block_id": "p002_c0005", "source_quote": "The pilot began September 24, 2023" }
+      ]
+    },
+    {
+      "local_observation_id": "relation_fare_free_pilot_has_fare_collection_resumption_2024",
+      "label": "Fare-Free Bus Pilot has fare collection resumption",
+      "relation_kind": "has_treatment",
+      "subject": { "record_id": "project_fare-free-bus-pilot" },
+      "object": { "local_observation_id": "treatment_fare_collection_resumption_2024" },
+      "assertion_status": "delivered",
+      "as_of_date": "2024-09-01",
+      "description": "Fare collection resumed on the pilot routes on September 1, 2024.",
+      "evidence_bindings": [
+        { "role": "relationship", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005", "block_id": "p002_c0005", "source_quote": "fare collection resumed on September 1, 2024" },
+        { "role": "treatment_scope", "source_id": "fare_free_bus_pilot_evaluation", "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005", "block_id": "p002_c0005", "source_quote": "fare collection resumed on September 1, 2024" }
+      ]
+    }
+  ]
+}

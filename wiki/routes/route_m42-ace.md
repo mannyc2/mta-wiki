@@ -11,18 +11,22 @@ source_ids:
   - "42nd_st_cb5_jun242019"
   - "42nd_st_cb6_jun032019"
   - "42nd_st_cb6_sep042019"
+  - "mta_ace_routes_may2025_cut"
   - "mta_automated_camera_enforcement"
 local_observation_id: "route_m42_ace"
 local_observation_ids:
   - "route_42nd_st_m42"
+  - "route_ace_may2025_m42"
   - "route_m42_42nd_st"
   - "route_m42_42nd_st_cb4"
   - "route_m42_42nd_st_cb6"
   - "route_m42_ace"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T18:05:27.522Z"
+generated_at: "2026-07-13T15:20:31.328Z"
+raw_text: "{\"row_id\":\"row-4ih8.hhxj.srtp\",\"route\":\"M42\",\"program\":\"ACE\",\"implementation_date\":\"2025-05-27T00:00:00.000\"}"
 submission_ids:
+  - "sub_296d0274c61eae49"
   - "sub_4c4ff9571ba54a56"
   - "sub_9f4e972981a4f1dd"
   - "sub_a922ec6a706b9141"
@@ -35,6 +39,9 @@ payload:
       - "M42 Manhattan Route along 42nd Street"
       - "Crosstown bus route along 42nd Street"
       - "Crosstown bus route on 42nd Street, east-west service between the East River and Hudson River"
+    route_type:
+      - "local"
+      - "bus"
     route_type_normalized:
       - "bus"
       - "local"
@@ -49,6 +56,7 @@ payload:
   route_type: "local"
   route_type_normalized: "bus"
   service_variant: "local"
+  source_literal: "M42"
   streets: "42 St"
 evidence_refs:
   -
@@ -143,6 +151,16 @@ evidence_refs:
     source_id: "42nd_st_cb6_sep042019"
     source_path: "raw/sources/42nd_st_cb6_sep042019/blocks.jsonl"
     text_sha256: "sha256:6db2a9dbbf1db34fe389595f4722e67e1f513cae89f2194049886a4d635c3a6c"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0006"
+    evidence_id: "mta_ace_routes_may2025_cut#p001_b0006"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_ace_routes_may2025_cut"
+    source_path: "raw/sources/mta_ace_routes_may2025_cut/blocks.jsonl"
+    source_quote: "\"route\":\"M42\""
+    text_sha256: "sha256:08e698e15923feefac5848969f9d9ac96ee67c0d3f3ceb16f0eb6e02671a3f02"
     text_source: "raw_text"
 ---
 

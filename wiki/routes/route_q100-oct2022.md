@@ -8,19 +8,24 @@ display_name: "Q100"
 source_id: "meeting_doc_98311"
 source_ids:
   - "meeting_doc_98311"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q100_oct2022"
 local_observation_ids:
   - "route_q100_oct2022"
+  - "route_q100_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T22:27:24.153Z"
+generated_at: "2026-07-12T22:39:53.000Z"
 raw_text: "New bus lanes along 21st Street in western Queens, running from Long Island City to Astoria, will serve the Q66, Q69 and Q100 routes and improve service for 29,000 riders"
 submission_ids:
   - "sub_02f1c9231f71d1f3"
+  - "sub_492e56beb3e5fe59"
 payload:
   borough: "Queens"
   borough_normalized: "queens"
+  gtfs_route_id: "Q100"
   route_id: "Q100"
+  route_name: "Q100"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type_normalized: "bus"
@@ -33,6 +38,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_98311/blocks.jsonl"
     source_quote: "New bus lanes along 21st Street in western Queens, running from Long Island City to Astoria, will serve the Q66, Q69 and Q100 routes"
     text_sha256: "sha256:36fed67d156804114d3fabfd87f0b0fa1664a580fa825093718d217cbf91b1b6"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0089"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0089"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q100"
+    text_sha256: "sha256:b235a9bb34d840554f6d3636f853abdcc32cf358d6610873e0f6a7b4be3d986d"
     text_source: "raw_text"
 ---
 

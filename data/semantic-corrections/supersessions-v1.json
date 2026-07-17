@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "contract_id": "semantic-correction-supersessions-v1",
+  "reviewed_at": "2026-07-16",
+  "reviewed_by": "codex-relationship-integrity-campaign",
+  "source_decision": "data/quality/relationship-integrity/semantic-remediation/ledger.jsonl",
+  "entries": [
+    {
+      "correction_id": "core-coverage-q20-historical-corridor-share-scope-20260713",
+      "superseded_by": [],
+      "superseded_by_decisions": [
+        {
+          "decision_id": "relationship-reference-review-v1:692f49d5dbd6992a71ee23f4",
+          "source_path": "data/contracts/relationship-references/v1/review-decisions.jsonl",
+          "source_sha256": "c3f3545ced15c8f637469097eeb08db1ff8cd9c52a1c897d3b0ff8aadfa5f102"
+        }
+      ],
+      "reason": "The exact reviewed Q20 temporal-identity non-edge decision is now enforced before native metric-route derivation. The invalid current-Q20 to 2014 corridor-share edge is no longer created, so the earlier retract-after-derivation correction is obsolete."
+    },
+    {
+      "correction_id": "core-coverage-q20-historical-peak-frequency-scope-20260713",
+      "superseded_by": [],
+      "superseded_by_decisions": [
+        {
+          "decision_id": "relationship-reference-review-v1:692f49d5dbd6992a71ee23f4",
+          "source_path": "data/contracts/relationship-references/v1/review-decisions.jsonl",
+          "source_sha256": "c3f3545ced15c8f637469097eeb08db1ff8cd9c52a1c897d3b0ff8aadfa5f102"
+        }
+      ],
+      "reason": "The exact reviewed Q20 temporal-identity non-edge decision is now enforced before native metric-route derivation. The invalid current-Q20 to 2014 peak-frequency edge is no longer created, so the earlier retract-after-derivation correction is obsolete."
+    },
+    {
+      "correction_id": "core-coverage-q20-historical-ridership-scope-20260713",
+      "superseded_by": [],
+      "superseded_by_decisions": [
+        {
+          "decision_id": "relationship-reference-review-v1:692f49d5dbd6992a71ee23f4",
+          "source_path": "data/contracts/relationship-references/v1/review-decisions.jsonl",
+          "source_sha256": "c3f3545ced15c8f637469097eeb08db1ff8cd9c52a1c897d3b0ff8aadfa5f102"
+        }
+      ],
+      "reason": "The exact reviewed Q20 temporal-identity non-edge decision is now enforced before native metric-route derivation. The invalid current-Q20 to 2014 ridership edge is no longer created, so the earlier retract-after-derivation correction is obsolete."
+    },
+    {
+      "correction_id": "core-coverage-q20-historical-weekday-ridership-scope-20260713",
+      "superseded_by": [],
+      "superseded_by_decisions": [
+        {
+          "decision_id": "relationship-reference-review-v1:692f49d5dbd6992a71ee23f4",
+          "source_path": "data/contracts/relationship-references/v1/review-decisions.jsonl",
+          "source_sha256": "c3f3545ced15c8f637469097eeb08db1ff8cd9c52a1c897d3b0ff8aadfa5f102"
+        }
+      ],
+      "reason": "The exact reviewed Q20 temporal-identity non-edge decision is now enforced before native metric-route derivation. The invalid current-Q20 to 2014 weekday-ridership edge is no longer created, so the earlier retract-after-derivation correction is obsolete."
+    },
+    {
+      "correction_id": "relationship-integrity-legacy-0051-relation-mta-has-open-data-program",
+      "superseded_by": [
+        "zz-relationship-semantic-v1-ad21f06c71ac3b6a"
+      ],
+      "reason": "The MTA/NYCT identity remediation changed the canonical subject from NYCT to umbrella MTA; the replacement correction preserves the reviewed publication_role family with an exact current-identity guard."
+    },
+    {
+      "correction_id": "relationship-integrity-legacy-0215-relation-part-of-program-project-fuel-hedge-program-2022-project-fuel-hedge-program-2022-2362d3ba6a",
+      "superseded_by": [],
+      "superseded_by_decisions": [
+        {
+          "decision_id": "relationship-reference-review-v1:dc62818001cdceef68cf5cd5",
+          "source_path": "data/contracts/relationship-references/v1/review-decisions.jsonl",
+          "source_sha256": "c3f3545ced15c8f637469097eeb08db1ff8cd9c52a1c897d3b0ff8aadfa5f102"
+        }
+      ],
+      "reason": "The exact reviewed Fuel Hedge Program self-reference decision is now enforced by native project-program derivation before edge creation. The forbidden project self-edge is no longer created, so the earlier retract-after-derivation correction is obsolete."
+    },
+    {
+      "correction_id": "semqa-000013",
+      "superseded_by": [
+        "relationship-integrity-legacy-0163-relation-lirr-part-of-mta",
+        "relationship-integrity-legacy-0164-relation-lirr-part-of-mta"
+      ],
+      "reason": "The reviewed legacy remediation restores the distinct LIRR subject and source-stated review state, replacing the earlier collapsed-self-loop quarantine."
+    },
+    {
+      "correction_id": "semqa-000014",
+      "superseded_by": [
+        "zz-relationship-semantic-v1-6c6d7125762ec046"
+      ],
+      "reason": "The reviewed route identity split replaces the exact old route_m34a-sbs -> route_m34a-sbs self-loop guard with distinct physical route endpoints, so the deterministic quarantine is obsolete."
+    },
+    {
+      "correction_id": "semqa-000015",
+      "superseded_by": [
+        "zz-relationship-semantic-v1-ea5e23306df14ef7"
+      ],
+      "reason": "The reviewed route identity split replaces the exact old route_m34a-sbs -> route_m34a-sbs self-loop guard with distinct physical route endpoints, so the deterministic quarantine is obsolete."
+    },
+    {
+      "correction_id": "semqa-000023",
+      "superseded_by": [
+        "relationship-integrity-legacy-0160-relation-meeting-doc-133361-penn-station-access-bronx"
+      ],
+      "reason": "The reviewed legacy remediation retracts the malformed collapsed self-loop, so the earlier quarantine correction no longer has a target."
+    },
+    {
+      "correction_id": "semqa-000027",
+      "superseded_by": [
+        "relationship-integrity-legacy-0165-relation-metro-north-part-of-mta-4",
+        "relationship-integrity-legacy-0166-relation-metro-north-part-of-mta-4"
+      ],
+      "reason": "The reviewed legacy remediation restores the distinct Metro-North subject and source-stated review state, replacing the earlier collapsed-self-loop quarantine."
+    },
+    {
+      "correction_id": "semqa-000031",
+      "superseded_by": [
+        "zz-relationship-semantic-v1-f5b454bbc2697c74"
+      ],
+      "reason": "The complete semantic review retracts the malformed Board Books self-loop, replacing the earlier quarantine-only correction after the MTA identity remediation."
+    },
+    {
+      "correction_id": "semqa-000032",
+      "superseded_by": [],
+      "superseded_by_decisions": [
+        {
+          "decision_id": "relationship-reference-review-v1:b8744acf4521b57f274f56df",
+          "source_path": "data/contracts/relationship-references/v1/review-decisions.jsonl",
+          "source_sha256": "c3f3545ced15c8f637469097eeb08db1ff8cd9c52a1c897d3b0ff8aadfa5f102"
+        }
+      ],
+      "reason": "The exact reviewed East Side Access self-reference decision is now enforced by native project-program derivation before edge creation. The forbidden project self-edge is absent, making the earlier quarantine correction obsolete."
+    },
+    {
+      "correction_id": "semqa-000033",
+      "superseded_by": [
+        "relationship-integrity-legacy-0215-relation-part-of-program-project-fuel-hedge-program-2022-project-fuel-hedge-program-2022-2362d3ba6a"
+      ],
+      "reason": "The reviewed legacy remediation retracts the malformed collapsed self-loop, so the earlier quarantine correction no longer has a target."
+    },
+    {
+      "correction_id": "semqa-000036",
+      "superseded_by": [
+        "zz-relationship-semantic-v1-450f086fad92b913"
+      ],
+      "reason": "The reviewed route identity split replaces the exact old route_q52-sbs-queens -> route_q52-sbs-queens self-loop guard with distinct physical route endpoints, so the deterministic quarantine is obsolete."
+    },
+    {
+      "correction_id": "semqa-000037",
+      "superseded_by": [
+        "zz-relationship-semantic-v1-4f1fe89b13d4c616"
+      ],
+      "reason": "The reviewed route identity split replaces the exact old route_q53-sbs-ace -> route_q53-sbs-ace self-loop guard with distinct physical route endpoints, so the deterministic quarantine is obsolete."
+    },
+    {
+      "correction_id": "semqa-000038",
+      "superseded_by": [
+        "relationship-integrity-legacy-0158-relation-rel-ace-routes-expansion"
+      ],
+      "reason": "The reviewed legacy remediation retracts the malformed collapsed self-loop, so the earlier quarantine correction no longer has a target."
+    },
+    {
+      "correction_id": "semqa-000039",
+      "superseded_by": [
+        "relationship-integrity-legacy-0150-relation-rel-b44-sbs-tsp-route",
+        "relationship-integrity-legacy-0151-relation-rel-b44-sbs-tsp-route"
+      ],
+      "reason": "The reviewed legacy remediation restores the typed TSP treatment endpoint, replacing the earlier collapsed-route quarantine."
+    },
+    {
+      "correction_id": "semqa-000040",
+      "superseded_by": [
+        "relationship-integrity-legacy-0154-relation-rel-b46-sbs-tsp-route",
+        "relationship-integrity-legacy-0155-relation-rel-b46-sbs-tsp-route"
+      ],
+      "reason": "The reviewed legacy remediation restores the typed TSP treatment endpoint, replacing the earlier collapsed-route quarantine."
+    },
+    {
+      "correction_id": "semqa-000041",
+      "superseded_by": [
+        "relationship-integrity-legacy-0156-relation-rel-bx41-sbs-tsp-route",
+        "relationship-integrity-legacy-0157-relation-rel-bx41-sbs-tsp-route"
+      ],
+      "reason": "The reviewed legacy remediation restores the typed TSP treatment endpoint, replacing the earlier collapsed-route quarantine."
+    },
+    {
+      "correction_id": "semqa-000043",
+      "superseded_by": [
+        "relationship-integrity-legacy-0159-relation-rel-f-m-swap-improves-subway-reliability"
+      ],
+      "reason": "The reviewed legacy remediation retracts the malformed collapsed self-loop, so the earlier quarantine correction no longer has a target."
+    },
+    {
+      "correction_id": "semqa-000044",
+      "superseded_by": [
+        "relationship-integrity-legacy-0162-relation-rel-interim-terminal-serves-mta-nice-routes"
+      ],
+      "reason": "The reviewed legacy remediation retracts the malformed collapsed self-loop, so the earlier quarantine correction no longer has a target."
+    },
+    {
+      "correction_id": "semqa-000046",
+      "superseded_by": [
+        "relationship-integrity-legacy-0161-relation-rel-jamaica-terminal-old-new-locations"
+      ],
+      "reason": "The reviewed legacy remediation retracts the malformed collapsed self-loop, so the earlier quarantine correction no longer has a target."
+    },
+    {
+      "correction_id": "semqa-000047",
+      "superseded_by": [
+        "relationship-integrity-legacy-0152-relation-rel-m15-sbs-tsp-route",
+        "relationship-integrity-legacy-0153-relation-rel-m15-sbs-tsp-route"
+      ],
+      "reason": "The reviewed legacy remediation restores the typed TSP treatment endpoint, replacing the earlier collapsed-route quarantine."
+    },
+    {
+      "correction_id": "semqa-000049",
+      "superseded_by": [
+        "relationship-integrity-legacy-0148-relation-rel-s79-sbs-tsp-route",
+        "relationship-integrity-legacy-0149-relation-rel-s79-sbs-tsp-route"
+      ],
+      "reason": "The reviewed legacy remediation restores the typed TSP treatment endpoint, replacing the earlier collapsed-route quarantine."
+    },
+    {
+      "correction_id": "zz-relationship-semantic-v1-9de3c3338e693d9f",
+      "superseded_by": [],
+      "superseded_by_decisions": [
+        {
+          "decision_id": "relationship-reference-review-v1:b8744acf4521b57f274f56df",
+          "source_path": "data/contracts/relationship-references/v1/review-decisions.jsonl",
+          "source_sha256": "c3f3545ced15c8f637469097eeb08db1ff8cd9c52a1c897d3b0ff8aadfa5f102"
+        }
+      ],
+      "reason": "The exact reviewed East Side Access self-reference decision is now enforced by native project-program derivation before edge creation. The forbidden project self-edge is no longer created, so the later retract-after-derivation correction is obsolete."
+    }
+  ]
+}

@@ -8,20 +8,25 @@ display_name: "Q76"
 source_id: "2014_brt_flushingjamaica_workshopsummary"
 source_ids:
   - "2014_brt_flushingjamaica_workshopsummary"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q76_2014_brt_flushingjamaica_ws"
 local_observation_ids:
   - "route_q76_2014_brt_flushingjamaica_ws"
+  - "route_q76_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T17:58:55.030Z"
+generated_at: "2026-07-12T23:31:06.000Z"
 raw_text: "Q76 bus route from Jamaica to Flushing"
 submission_ids:
   - "sub_240f703b8404f996"
+  - "sub_af5a09df85bcf868"
 payload:
   borough: "Queens"
   borough_normalized: "queens"
   description: "Bus route from Jamaica to Flushing"
+  gtfs_route_id: "Q76"
   route_id: "Q76"
+  route_name: "Q76"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type_normalized: "bus"
@@ -34,6 +39,16 @@ evidence_refs:
     source_path: "raw/sources/2014_brt_flushingjamaica_workshopsummary/blocks.jsonl"
     source_quote: "Q76 is faster than Q44 from Jamaica to Flushing sometimes because it hits less traffic"
     text_sha256: "sha256:da6ceeea73a86266b2ad9ae122721e36fad10855b3d72706b818258c52c0ea61"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0076"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0076"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q76"
+    text_sha256: "sha256:845702009917132e10cd6a7cb5df89becdc36f7839bcb1d5eaea7973cfbdf8ea"
     text_source: "raw_text"
 ---
 

@@ -7,21 +7,30 @@ record_kind: "route"
 display_name: "Q89"
 source_id: "queens_proposed_final_plan_addendum_2024"
 source_ids:
+  - "mta_queens_bus_network_redesign_service_changes"
   - "queens_proposed_final_plan_addendum_2024"
 local_observation_id: "route_q89_proposed_new"
 local_observation_ids:
   - "route_q89_proposed_new"
+  - "route_q89_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-08T20:31:12.510Z"
+generated_at: "2026-07-13T00:07:37.000Z"
 raw_text: "New Q89 route will serve the discontinued segment of the Q85 Rush Route"
 submission_ids:
+  - "sub_337305eaf2ab3dd4"
   - "sub_62c5232ebe38d4ce"
 payload:
+  _merged_field_values:
+    route_type_normalized:
+      - "local"
+      - "bus"
   description: "New route replacing discontinued Q85 segment"
+  gtfs_route_id: "Q89"
   route: "Q89"
   route_id: "Q89"
   route_label: "Q89"
+  route_name: "Q89"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "Local"
@@ -38,6 +47,16 @@ evidence_refs:
     source_path: "raw/sources/queens_proposed_final_plan_addendum_2024/blocks.jsonl"
     source_quote: "Discontinued segment will be served by the new Q89"
     text_sha256: "sha256:183f297d4d7aa589ca639f7e5d953374f44484ad035f877420248208accd854d"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0086"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0086"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q89"
+    text_sha256: "sha256:0ce6db6806027c9aad26d3da3cd566c85b3986127ed6984db62927bb55a25eec"
     text_source: "raw_text"
 ---
 

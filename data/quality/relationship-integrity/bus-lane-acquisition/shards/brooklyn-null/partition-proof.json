@@ -1,0 +1,28 @@
+{
+  "borough_null_candidate_ids": [
+    "study-event-v2:40faf059c0562d9c833d1f61",
+    "study-event-v2:6803927dd89ac794281abdc2",
+    "study-event-v2:e2f62a46ac9f1b1a54f713bc",
+    "study-event-v2:ea0ab416262ceed4e7184116"
+  ],
+  "borough_null_count": 4,
+  "borough_null_route_ids": [
+    "X27",
+    "X28",
+    "X37",
+    "X38"
+  ],
+  "brooklyn_count": 56,
+  "candidate_ids_sha256": "5a171e3856bbadf03b2d6f89ebd058f49c105b58f22f4b2d20cce3e9eab9c6c2",
+  "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
+  "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
+  "derived_on": "2026-07-15",
+  "exact_backlog_count": 321,
+  "exclusive_partition_rule": "exclusive_primary_disposition=mta_route_or_treatment_scope_binding_gap AND treatment_family=bus_lane AND (route_id begins B but not BX OR route_id is X27/X28/X37/X38)",
+  "partition_sha256": "3063458f2223b4cd41003869cf2cf5dc922db1a6bb11ba3d304015971ee2c5d1",
+  "reconciliation_ledger_path": "data/quality/rc19-reject-reconciliation/rc19-reject-ledger.jsonl",
+  "reconciliation_ledger_sha256": "d9b3b19bcc315a13d091831a46550ea457890f4cd9a73ea056645f8d8e5626f4",
+  "schema_version": 1,
+  "shard": "brooklyn-null",
+  "unique_candidate_count": 60
+}

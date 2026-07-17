@@ -11,6 +11,56 @@ The v1 public data release is `v1-rc5`.
 
 The release manifest records per-kind counts, hashes, and pointers to companion release artifacts.
 
+### Operational coverage diagnostics
+
+`bun packages/cli/src/cli.ts operational-coverage` writes a deterministic completion ledger,
+priority queue, and coverage matrix under `data/quality/operational-coverage/`. The matrix keeps
+canonical operational events, broad anchor rows, reviewed overlays, resolved occurrences, and
+occurrence-route projections as separate populations. Reviewed overlays never increase the
+canonical-event or timeline-linked-event denominator, and bundles remain one occurrence regardless
+of member count.
+
+The priority queue is a bounded study-work feeder, not a completeness percentage. Its denominator
+includes every open route, treatment, date-precision, delivered-status, or timeline-subject gap for
+bus-relevant in-window events and the explicit route-redesign, TSP, and busway families. Durable
+decisions must retain exact evidence or receipt bindings; terminal `absent_in_source` decisions
+require a gap-bound search receipt covering every required source plus the staged-source registry.
+Receipts bind to the matrix's corpus fingerprint and replay from
+`data/operational-anchor-review/ledger-decisions/search-receipts/`; a missing, stale, incomplete,
+or match-bearing receipt fails closed.
+
+Missing records and relations are recovered only through the strict proposal tree at
+`data/operational-anchor-review/proposed/`. Relation proposals bind existing canonical endpoints
+and exact canonical evidence; observation bundles keep all new records and relations within one
+source and require shared block context for local observation links. Acceptance requires
+`accepted_by`, `accepted_at`, and a passed adversarial verifier. The force-gated apply command writes
+a new append-only journal whose every entry carries `recovery_provenance`, runs normal
+materialization, refreshes the operational matrix, verifies the resulting records and relations,
+and only then moves the unchanged proposal to `applied/`. A partial failure remains resumable and
+cannot silently duplicate a proposal or submission identity. Before journal creation, apply runs
+the materializer's record-id assignment across the complete unretired submission corpus and rejects
+any proposal that would shift an existing id or receive an undeclared collision suffix. Apply and
+repository validation share one exact proposal-derived validator for every persisted journal field.
+
+### Release pointer semantics
+
+`data/exports/releases/LATEST` names the current public release. Creating a release snapshot does
+not change that pointer by default. Promotion is a separate, explicit action:
+
+```bash
+bun packages/cli/src/cli.ts export-release --id <release-id> --set-latest
+```
+
+Omit `--set-latest` for draft, test, and internal canary cuts. The exporter updates the pointer only
+after the complete release and manifest have been written successfully.
+
+### Internal releases and canaries
+
+Internal releases such as temporal canaries may remain untracked and can be removed after their
+release id, generator commit, and manifest SHA-256 have been recorded for reproducibility. Removing
+release artifacts or promoting a canary is an owner action; neither happens as a side effect of an
+ordinary release export.
+
 ## License
 
 Code is licensed under the MIT License.
@@ -27,6 +77,7 @@ Tracked durable surfaces:
 - `data/submissions/`, the accepted and rejected observation journals.
 - `data/canonical/`, the canonical JSONL records.
 - `data/evidence-block-index.jsonl`, compact cited-block metadata used by public-clone validation.
+- `data/quality/operational-coverage/`, the deterministic operational completion ledger and matrix.
 - `data/reference/gtfs/`, the small GTFS route/agency reference input used by SQLite projections.
 - `wiki/`, the generated wiki pages and source context pages.
 - `data/exports/releases/v1-rc5/`, the current v1 release snapshot.

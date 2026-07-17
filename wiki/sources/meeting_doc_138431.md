@@ -16,6 +16,7 @@ raw_text: "Service Changes: Request for Public Hearing: Queens Bus Network Redes
 submission_ids:
   - "sub_435965a0a41b12e2"
 payload:
+  authority_tier: "board_material"
   content_type: "staff_summary"
   date: "April 4, 2024"
   date_normalized:

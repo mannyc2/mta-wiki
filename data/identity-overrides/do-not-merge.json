@@ -3259,12 +3259,48 @@
       },
       {
         "record_ids": [
+          "route_q15a-historical-2025",
+          "route_q15-qbnr-2025"
+        ],
+        "reason": "Official 2025 Queens Bus Network Redesign evidence ends Q15A while continuing Q15 over part of the former Q15A routing. Shared routing is lifecycle continuity, not authority to merge the discontinued Q15A route identity with the current Q15 route identity.",
+        "source_decision": "data/quality/acquisition/receipts/q15a-q20a-terminal-route-identity-2025.json#q15a_vs_q15",
+        "reviewed_at": "2026-07-13T12:00:00Z"
+      },
+      {
+        "record_ids": [
+          "route_q20-2014-10-07-flushing-jamaica",
+          "route_q20-qbnr-2025"
+        ],
+        "reason": "Official 2025 Queens Bus Network Redesign evidence says Q20A ended and was replaced by a newly started Q20 that mostly follows the same routing. Replacement and routing inheritance are lifecycle relations, not same-route identity.",
+        "source_decision": "data/quality/acquisition/receipts/q15a-q20a-terminal-route-identity-2025.json#q20a_vs_q20b_and_q20",
+        "reviewed_at": "2026-07-13T12:00:00Z"
+      },
+      {
+        "record_ids": [
+          "route_q20-2014-10-07-flushing-jamaica",
+          "route_q20b-cb12-2011"
+        ],
+        "reason": "Q20A and Q20B are separately named historical route branches with separate canonical route identities and distinct service-end rows in the official 2025 redesign source. Older Q20A/B bundle literals are context, not merge authority.",
+        "source_decision": "data/quality/acquisition/receipts/q15a-q20a-terminal-route-identity-2025.json#q20a_vs_q20b_and_q20",
+        "reviewed_at": "2026-07-13T12:00:00Z"
+      },
+      {
+        "record_ids": [
           "route_q26-lga-2012",
           "route_q48-serves-lga-2011"
         ],
         "reason": "Do not merge: the packet carries a route contradiction (different route_id, service variant, or source route context). A shared base-route string is not merge authority for distinct route records.",
         "source_decision": "data/identity-review/accepted/decisions/route_cluster_c30f25548f.json",
         "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_q48-serves-lga-2011",
+          "route_q48-glen-oaks-2025"
+        ],
+        "reason": "The official 2025 Queens Bus Network Redesign row explicitly distinguishes the existing Q48, which was discontinued and replaced by Q90, from the new Q48, which began serving the former Q46 Glen Oaks branch. Reuse of the Q48 designation across that discontinuation and replacement is a route-lifecycle discontinuity, not evidence that the historical LaGuardia route and new Glen Oaks route are one canonical route.",
+        "source_decision": "data/review_notes/codex-q48-lifecycle-split-identity-2026-07-13.json#q48-lifecycle-split-dnm",
+        "reviewed_at": "2026-07-13T00:55:07.000Z"
       },
       {
         "record_ids": [
@@ -3301,6 +3337,42 @@
         "reason": "SIM23 is an individual express route, while SIM23/SIM24 is a bundled express-route scope record. Shared SIM23 route number is insufficient for merging a branch with an aggregate bundle.",
         "source_decision": "data/review_notes/codex-route-normalization-phase3-adjacent-2026-06-24.json#identity-review-remaining14-2026-06-25",
         "reviewed_at": "2026-06-25T02:50:00Z"
+      },
+      {
+        "record_ids": [
+          "route_bx18a",
+          "route_bx18a-b"
+        ],
+        "reason": "Bx18A is a GTFS-addressable branch, while Bx18A/B is the official evaluation's aggregate reporting surface for both Bronx branches. Preserve the aggregate identity for aggregate pilot metrics and do not alias it to one branch.",
+        "source_decision": "data/operational-anchor-review/proposed/applied/observations/orp_fare_free_pilot_route_scope_and_resumption_2023_2024.json#route-identity-split",
+        "reviewed_at": "2026-07-13T06:34:19.000Z"
+      },
+      {
+        "record_ids": [
+          "route_bx18b",
+          "route_bx18a-b"
+        ],
+        "reason": "Bx18B is a GTFS-addressable branch, while Bx18A/B is the official evaluation's aggregate reporting surface for both Bronx branches. Preserve the aggregate identity for aggregate pilot metrics and do not alias it to one branch.",
+        "source_decision": "data/operational-anchor-review/proposed/applied/observations/orp_fare_free_pilot_route_scope_and_resumption_2023_2024.json#route-identity-split",
+        "reviewed_at": "2026-07-13T06:34:19.000Z"
+      },
+      {
+        "record_ids": [
+          "route_s46",
+          "route_s46-s96"
+        ],
+        "reason": "S46 is the GTFS-addressable local route, while S46/S96 is the official evaluation's aggregate reporting surface for the Staten Island local and limited services. Preserve the aggregate identity for aggregate pilot metrics and do not alias it to S46.",
+        "source_decision": "data/operational-anchor-review/proposed/applied/observations/orp_fare_free_pilot_route_scope_and_resumption_2023_2024.json#route-identity-split",
+        "reviewed_at": "2026-07-13T06:34:19.000Z"
+      },
+      {
+        "record_ids": [
+          "route_s96",
+          "route_s46-s96"
+        ],
+        "reason": "S96 is the GTFS-addressable limited route, while S46/S96 is the official evaluation's aggregate reporting surface for the Staten Island local and limited services. Preserve the aggregate identity for aggregate pilot metrics and do not alias it to S96.",
+        "source_decision": "data/operational-anchor-review/proposed/applied/observations/orp_fare_free_pilot_route_scope_and_resumption_2023_2024.json#route-identity-split",
+        "reviewed_at": "2026-07-13T06:34:19.000Z"
       }
     ]
   }

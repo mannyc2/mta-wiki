@@ -10,18 +10,21 @@ source_ids:
   - "201110_qbb_approach_summary"
   - "201110_qbb_summary_recommendations"
   - "meeting_doc_160441"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_qm15_qbb_study"
 local_observation_ids:
   - "route_meeting_doc_160441_qm15"
   - "route_qm15_201110_qbb"
   - "route_qm15_qbb_study"
+  - "route_qm15_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-20T21:42:32.830Z"
+generated_at: "2026-07-12T23:02:57.000Z"
 raw_text: "Bus Stop: QM 15 QM 16 QM 17 QM 18 QM 21"
 submission_ids:
   - "sub_368ee4685ade600f"
   - "sub_730643f578927219"
+  - "sub_b51604788f226099"
   - "sub_f0dab968aca74849"
 payload:
   _merged_field_values:
@@ -37,8 +40,10 @@ payload:
     - "manhattan"
     - "queens"
   description: "Express bus service between Manhattan and Queens"
+  gtfs_route_id: "QM15"
   operator: "MTA Bus Company"
   route_id: "QM15"
+  route_name: "QM15"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "express"
@@ -70,6 +75,16 @@ evidence_refs:
     source_id: "meeting_doc_160441"
     source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
     text_sha256: "sha256:a1cb3550e548ba0e4cc902da5e264574b62e2318fcfe0a6f5418eb28d04373de"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0113"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0113"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "QM15"
+    text_sha256: "sha256:f60d6f3110d5afceed9bb42780da61d93726de6863079c2c21c431e1582bd5aa"
     text_source: "raw_text"
 ---
 

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-switch-installation-jamaica-2023-route-not-applicable",
+  "gap_id": "operational-coverage:686db4efaef145f0a69d1f0b",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "This is LIRR track work with temporary replacement buses, not an NYCT bus-priority or route-redesign treatment. Its range-date parsing and bus-replacement details do not need recovery for the bounded study corpus.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_switch-installation-jamaica-2023",
+      "source_id": "meeting_doc_102751",
+      "evidence_id": "meeting_doc_102751#p002_c0005",
+      "block_id": "p002_c0005"
+    }
+  ],
+  "search_receipt_ids": []
+}

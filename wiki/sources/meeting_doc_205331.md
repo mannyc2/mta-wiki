@@ -1,18 +1,20 @@
 ---
 managed_by: "mta-wiki-materializer"
-record_id: "source_meeting-doc-205331_2"
+record_id: "source_meeting-doc-205331"
 record_kind: "source"
-display_name: "February Financial Plan - 2026 Adopted Budget Positions"
+display_name: "February Financial Plan - 2026 Adopted Budget"
 source_id: "meeting_doc_205331"
 source_ids:
   - "meeting_doc_205331"
-local_observation_id: "source_meeting_doc_205331_v2"
+local_observation_id: "source_meeting_doc_205331"
 local_observation_ids:
+  - "source_meeting_doc_205331"
   - "source_meeting_doc_205331_v2"
 review_state: "unreviewed"
 truth_status: "source_stated"
 generated_at: "2026-06-23T17:41:24.788Z"
 submission_ids:
+  - "sub_4ebad340343f2d5f"
   - "sub_c5169d58e012778a"
 payload:
   authority_tier: "plan_document"
@@ -23,12 +25,48 @@ payload:
     normalized_date: "2026-03"
     precision: "month"
     raw_text: "March 2026"
-  description: "Total Positions by Function and Agency - February Financial Plan 2026 Adopted Budget"
+  description: "Total Positions by Function and Agency, March 2026"
   published_date_normalized: "2026-03"
   published_date_precision: "month"
   publisher: "METROPOLITAN TRANSPORTATION AUTHORITY"
   title: "February Financial Plan - 2026 Adopted Budget"
 evidence_refs:
+  -
+    block_id: "p001_b0008"
+    evidence_id: "meeting_doc_205331#p001_b0008"
+    page_number: 1
+    source_id: "meeting_doc_205331"
+    source_path: "raw/sources/meeting_doc_205331/blocks.jsonl"
+    source_quote: "METROPOLITAN TRANSPORTATION AUTHORITY"
+    text_sha256: "sha256:a4f5688cecc50e676b82239a52ed942f4cb7fc395964667706e64ac1a3caa124"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0009"
+    evidence_id: "meeting_doc_205331#p001_b0009"
+    page_number: 1
+    source_id: "meeting_doc_205331"
+    source_path: "raw/sources/meeting_doc_205331/blocks.jsonl"
+    source_quote: "February Financial Plan - 2026 Adopted Budget"
+    text_sha256: "sha256:eae6d74a76e86ce21332d19554079d3567b7662f8c9aee5e10e1ebc9163e8659"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0010"
+    evidence_id: "meeting_doc_205331#p001_b0010"
+    page_number: 1
+    source_id: "meeting_doc_205331"
+    source_path: "raw/sources/meeting_doc_205331/blocks.jsonl"
+    source_quote: "Total Positions by Function and Agency"
+    text_sha256: "sha256:af192801664d427ffb565f56a21bf82ad23c11cfc086bb5ceff97a74e19c2cbc"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0011"
+    evidence_id: "meeting_doc_205331#p001_b0011"
+    page_number: 1
+    source_id: "meeting_doc_205331"
+    source_path: "raw/sources/meeting_doc_205331/blocks.jsonl"
+    source_quote: "March 2026"
+    text_sha256: "sha256:5e61b61bf1f95e10897cedf0326c76a0a1807b8f3e0c42c316b9693cd030c2ae"
+    text_source: "raw_text"
   -
     block_id: "p001_b0008"
     evidence_id: "meeting_doc_205331#p001_b0008"

@@ -1,7 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
-import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
 import type { JsonValue, MtaCanonicalRecord, MtaObservationKind } from "@mta-wiki/db/types";
 
 // Cross-source mention candidates: record B's name appears verbatim in record

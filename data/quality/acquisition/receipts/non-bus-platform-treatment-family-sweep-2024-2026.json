@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "receipt_id": "non-bus-platform-treatment-family-sweep-2024-2026",
+  "status": "ontology_scope_reviewed",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T09:00:00Z",
+  "acquisition_method": "recovered_existing_official_captures",
+  "scope": {
+    "query": "canonical treatment records whose treatment_kind contains platform and whose submitted treatment_family is bus_stop_or_boarding",
+    "reviewed_record_count": 21,
+    "preserved_bus_boarding_record_count": 6,
+    "corrected_non_bus_record_count": 15,
+    "excluded_already_reviewed_record_id": "treatment_platform-safety-barriers",
+    "pre_sweep_priority_queue_sha256": "e23363c300a7f8c022c07c1e0cec93b737437cc5731f134719669807cde6338e"
+  },
+  "preserved_bus_boarding_records": [
+    "treatment_bus-boarding-platforms",
+    "treatment_bus-boarding-platforms_2",
+    "treatment_bus-boarding-platforms-fall2019",
+    "treatment_bus-boarding-platforms-m101-limited",
+    "treatment_bus-boarding-platforms-m101-limited_2",
+    "treatment_concrete-boarding-islands"
+  ],
+  "decisions": [
+    {
+      "record_id": "treatment_lirr-platform-heating-3rd-track",
+      "source_id": "meeting_doc_127506",
+      "evidence_id": "meeting_doc_127506#p013_c0012",
+      "evidence_sha256": "sha256:5086bb08078a31577c1f593b70f37f121311d496fe4b5b88a9ffb5361c92ddd0",
+      "corrected_treatment_family": "capital_or_infrastructure",
+      "basis": "Installed LIRR platform-heating systems are 3rd Track station infrastructure, not bus boarding treatments."
+    },
+    {
+      "record_id": "treatment_meeting-doc-135421-platform-barriers-morgan-av-5th-ave",
+      "source_id": "meeting_doc_135421",
+      "evidence_id": "meeting_doc_135421#p006_c0002",
+      "evidence_sha256": "sha256:9b97a69e926c9673f5b167fc7621bd75665d260e0f7389f564c617176c6667c2",
+      "corrected_treatment_family": "safety",
+      "basis": "Subway platform barriers are explicitly installed for customer and employee safety."
+    },
+    {
+      "record_id": "treatment_meeting-doc-154976-platform-barrier-pilot",
+      "source_id": "meeting_doc_154976",
+      "evidence_id": "meeting_doc_154976#p004_c0012",
+      "evidence_sha256": "sha256:ce77da9da5601f52dd50a3f1849e2f19e845fa3d8f024f26b4509ffcde40fd17",
+      "corrected_treatment_family": "safety",
+      "basis": "The barrier pilot is documented in subway workplace and station-safety context."
+    },
+    {
+      "record_id": "treatment_meeting-doc-154976-platform-bollards",
+      "source_id": "meeting_doc_154976",
+      "evidence_id": "meeting_doc_154976#p030_c0006",
+      "evidence_sha256": "sha256:597813418b224b1e35195b7778d9a57cebf32ad26fcea65f068de2b1c5c344c6",
+      "corrected_treatment_family": "safety",
+      "basis": "The platform bollards are a workplace-violence reduction control."
+    },
+    {
+      "record_id": "treatment_meeting-doc-155001-full-platform-replacements",
+      "source_id": "meeting_doc_155001",
+      "evidence_id": "meeting_doc_155001#p001_c0009",
+      "evidence_sha256": "sha256:7fd07d36f10ae48abaf2a759094fd59eb8cb680c9f5edf2e1b13bd6653b45fe7",
+      "corrected_treatment_family": "capital_or_infrastructure",
+      "basis": "Full Metro-North station-platform replacements are physical capital work."
+    },
+    {
+      "record_id": "treatment_meeting-doc-177271-platform-barriers",
+      "source_id": "meeting_doc_177271",
+      "evidence_id": "meeting_doc_177271#p010_c0002",
+      "evidence_sha256": "sha256:84c02ae44fc8ee5cd7c95c9812b2fbcdf387c47e5bead62138ddccd0f63b4e51",
+      "corrected_treatment_family": "safety",
+      "basis": "The official slide labels the treatment Keeping Riders Safe – Platform Barriers."
+    },
+    {
+      "record_id": "treatment_mnr-elevated-signal-platform",
+      "source_id": "meeting_doc_124996",
+      "evidence_id": "meeting_doc_124996#p025_c0005",
+      "evidence_sha256": "sha256:8da3505c5ba7690885c7eceaa45db8993cf8777fe21943ab2de9fbd0302f0952",
+      "corrected_treatment_family": "capital_or_infrastructure",
+      "basis": "This is an elevated Metro-North signal case for flood resilience, not a passenger platform."
+    },
+    {
+      "record_id": "treatment_platform-barrier-pilot-2024",
+      "source_id": "meeting_doc_160446",
+      "evidence_id": "meeting_doc_160446#p030_c0006",
+      "evidence_sha256": "sha256:c6efc5fb8b3ac363d545db1f00137e44e445f117de865e6463be43829b851851",
+      "corrected_treatment_family": "safety",
+      "basis": "The scaled subway barrier pilot is explicitly described as improving safety."
+    },
+    {
+      "record_id": "treatment_platform-barriers",
+      "source_id": "meeting_doc_131981",
+      "evidence_id": "meeting_doc_131981#p012_c0003",
+      "evidence_sha256": "sha256:71e0d09b3e745105aa995b9953d2df4b899df4347343eae5082919ba93529875",
+      "supporting_evidence_id": "meeting_doc_131981#p012_c0001",
+      "supporting_evidence_sha256": "sha256:784d65e186dfe31b4096ab8deaa739f6916b8bd43904cbf83e76d51fb3932152",
+      "corrected_treatment_family": "safety",
+      "basis": "The platform-barrier treatment appears under the official Promote Safety & Respect heading."
+    },
+    {
+      "record_id": "treatment_platform-barriers-190506",
+      "source_id": "meeting_doc_190506",
+      "evidence_id": "meeting_doc_190506#p008_c0002",
+      "evidence_sha256": "sha256:3968785beb3b026d75e8105172ce12c3f4a0d38eeff28367dbc315f918416dbc",
+      "corrected_treatment_family": "safety",
+      "basis": "The source describes a metal safety barrier between platform and train."
+    },
+    {
+      "record_id": "treatment_platform-barriers-191st-clark-133231",
+      "source_id": "meeting_doc_133231",
+      "evidence_id": "meeting_doc_133231#p005_c0003",
+      "evidence_sha256": "sha256:5fc797616bc1df8a4f4a7208b97f3e589718b4be35bd38b196a0765038eb24d4",
+      "corrected_treatment_family": "safety",
+      "basis": "The subway platform-edge barriers prevent track intrusions."
+    },
+    {
+      "record_id": "treatment_platform-barriers-194506",
+      "source_id": "meeting_doc_194506",
+      "evidence_id": "meeting_doc_194506#p007_c0002",
+      "evidence_sha256": "sha256:6e4dd46045bd77c691ff2ebe8c88dfb9f2310202be77f30de8029775bba46f04",
+      "corrected_treatment_family": "safety",
+      "basis": "The source describes a metal safety barrier between a subway platform and train."
+    },
+    {
+      "record_id": "treatment_platform-edge-barriers",
+      "source_id": "meeting_doc_187251",
+      "evidence_id": "meeting_doc_187251#p011_c0003",
+      "evidence_sha256": "sha256:ec0c5d7455ffadfac1600c4ffc0740633b890f8e57afc685e37d062fe572ffb1",
+      "supporting_evidence_id": "meeting_doc_187251#p011_c0002",
+      "supporting_evidence_sha256": "sha256:019c060a35501c377f3fa6cb58da036e3064d3b8f898e50e0fbc429920f3e2ff",
+      "corrected_treatment_family": "safety",
+      "basis": "The cited completion label and adjacent official image block show a metal mesh platform-edge barrier separating riders from tracks."
+    },
+    {
+      "record_id": "treatment_tc-meeting-doc-108036-platform-barriers-pilot",
+      "source_id": "meeting_doc_108036",
+      "evidence_id": "meeting_doc_108036#p010_c0007",
+      "evidence_sha256": "sha256:19a0b44f7c311d24ceeb5b8f8bbc90bfbd8828be74343f646dd18b3062c608b1",
+      "corrected_treatment_family": "safety",
+      "basis": "The installed platform-barrier pilot is explicitly intended to help customers feel safe."
+    },
+    {
+      "record_id": "treatment_tc-meeting-doc-108036-platform-screen-doors",
+      "source_id": "meeting_doc_108036",
+      "evidence_id": "meeting_doc_108036#p012_c0007",
+      "evidence_sha256": "sha256:29e933f52357c084c6282b68bad40bea599e385c5a630cc66fd3856521b8726d",
+      "supporting_evidence_id": "meeting_doc_108036#p001_c0002",
+      "supporting_evidence_sha256": "sha256:d9ac606d4da3fe1021fe6d5864370b74e8eb4fc782f23868ce5d319925a183c5",
+      "corrected_treatment_family": "safety",
+      "basis": "The platform-screen-door procurement appears in an official right-of-way customer-safety report."
+    }
+  ],
+  "ontology_decision": {
+    "verdict": "reviewed_non_bus_platform_families",
+    "family_counts": {
+      "safety": 12,
+      "capital_or_infrastructure": 3
+    },
+    "normalizer_contract": {
+      "removed_generic_rule": "A platform substring alone no longer implies bus_stop_or_boarding.",
+      "preserved_bus_signals": [
+        "bus_stop",
+        "boarding",
+        "bus_bulb",
+        "boarder"
+      ],
+      "added_exact_safety_kinds": [
+        "platform_barrier",
+        "platform_barriers",
+        "platform_bollards",
+        "platform_edge_barrier",
+        "platform_safety_barrier",
+        "platform_screen_doors"
+      ],
+      "added_exact_capital_kinds": [
+        "platform_heating",
+        "platform_replacement"
+      ],
+      "context_only_kind": "elevated_platform"
+    },
+    "preservation_contract": [
+      "Patch only treatment_family on each reviewed canonical record.",
+      "Preserve source literals, descriptions, identities, submissions, and existing evidence refs.",
+      "Do not merge treatment identities or infer bus route scope from shared source documents."
+    ]
+  },
+  "expected_effect": {
+    "canonical_treatment_delta": 15,
+    "operational_anchor_delta": 0,
+    "operational_occurrence_delta": 0,
+    "priority_gap_delta": 0,
+    "priority_open_delta": 0,
+    "priority_terminal_delta": 0
+  }
+}

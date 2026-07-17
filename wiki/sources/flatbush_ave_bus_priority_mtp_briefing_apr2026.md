@@ -15,6 +15,7 @@ generated_at: "2026-06-19T18:34:02.475Z"
 submission_ids:
   - "sub_7575ae7722fb3e7d"
 payload:
+  authority_tier: "board_material"
   content_type: "briefing"
   date_text: "April 2026"
   date_text_normalized:
@@ -25,6 +26,8 @@ payload:
   description: "Construction Update and Major Transportation Project Notification for Flatbush Avenue Bus Priority project"
   published_date_normalized: "2026-04"
   published_date_precision: "month"
+  publisher: "NYC DOT"
+  source_url: "https://www.nyc.gov/html/dot/downloads/pdf/flatbush-ave-bus-priority-mtp-briefing-apr2026.pdf"
   title: "Flatbush Av Bus Priority – State St to Grand Army Plz"
 evidence_refs:
   -

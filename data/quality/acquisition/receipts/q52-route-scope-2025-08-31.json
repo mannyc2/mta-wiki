@@ -1,0 +1,405 @@
+{
+  "schema_version": 1,
+  "receipt_id": "q52-route-scope-2025-08-31",
+  "status": "identity_scope_reviewed",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T00:00:00Z",
+  "acquisition_method": "recovered_existing_official_capture",
+  "search": {
+    "target_family": "route_identity",
+    "route_or_area": "Q52 / Q53 / Woodhaven-Cross Bay / Queens",
+    "date_window": "2012-2026",
+    "exact_queries": [
+      "accepted submission inventory: canonical record route_q52-sbs-queens and predecessor alias route_q52-ltd-woodhaven-2014",
+      "current local GTFS reference: route ids Q52+ and Q53+",
+      "official MTA Queens Bus Network Redesign service changes: Q52",
+      "official NYC DOT Woodhaven/Cross Bay Q52/Q53 Limited to SBS lifecycle"
+    ],
+    "domains": [
+      "mta.info",
+      "nyc.gov"
+    ],
+    "urls_inspected": [
+      "https://www.mta.info/project/queens-bus-network-redesign/service-changes",
+      "https://new.mta.info/schedules/bus",
+      "https://www.nyc.gov/html/brt/downloads/pdf/brt-woodhaven-after-fall2018.pdf",
+      "https://www.nyc.gov/html/dot/downloads/pdf/woodhaven-blvd-capital-projects-cb10-dec2024.pdf"
+    ],
+    "disposition": "candidate_found",
+    "rationale": "The existing official evidence inventory is sufficient to decide the identity scope. Fifty-five accepted observations from 47 sources resolve to one Q52 canonical record across historical Limited and current SBS contexts; current GTFS contains separate Q52+ and Q53+ routes; and official lifecycle evidence describes conversion of Q52/Q53 Limited service into separately identified Q52 and Q53 SBS routes. The two slash-form observations describe the shared corridor and coordinated SBS program, not one merged route identity."
+  },
+  "canonical_inventory": {
+    "record_id": "route_q52-sbs-queens",
+    "record_aliases": [
+      "route_q52-ltd-woodhaven-2014",
+      "route_q52-sbs"
+    ],
+    "canonical_generated_at": "2026-06-22T22:53:47.764Z",
+    "submission_count": 55,
+    "source_count": 47,
+    "submission_ids": [
+      "sub_01102210c2db86fa",
+      "sub_01a112f974f2489d",
+      "sub_13731a077aba887f",
+      "sub_13aa192a1cb36ec3",
+      "sub_14125b66fb29b094",
+      "sub_21844f543640c11d",
+      "sub_2910e8104ff73a50",
+      "sub_2d185d3c972d79be",
+      "sub_2f9f05ef9151068b",
+      "sub_36bc750de3584da8",
+      "sub_3c08dca37472da44",
+      "sub_3f365bdb0cfec279",
+      "sub_419f990454942c43",
+      "sub_516da8e3fb9b3bb7",
+      "sub_52efec900d220fcd",
+      "sub_53f6ad084a33623c",
+      "sub_58777c222132d76d",
+      "sub_5bd3fb78b0e5d61e",
+      "sub_62374f4775b388ac",
+      "sub_659a8a7abb418a95",
+      "sub_667e0ef2694650b9",
+      "sub_691a2633f20e1209",
+      "sub_6a5cafc65978701b",
+      "sub_6b7f5e94c06b53de",
+      "sub_6bace2a398e15571",
+      "sub_7a9001e1f31ac381",
+      "sub_80831d75ba671630",
+      "sub_83e01563c51700f4",
+      "sub_8a65ee64074639fe",
+      "sub_8d600b2944f0ec85",
+      "sub_8f518dceaed18225",
+      "sub_98fdc872dad58a6d",
+      "sub_9a20d4147076e51f",
+      "sub_9c6c93ddbaa8baad",
+      "sub_a294fcf589af7995",
+      "sub_a2f3d52709585bd3",
+      "sub_a5a1d394113a739a",
+      "sub_b15a195c5a13ec64",
+      "sub_b1ceb06eb9443db8",
+      "sub_b7e3e7fad21a0afb",
+      "sub_c2a38e48706f1a04",
+      "sub_c76a4d3796e29f20",
+      "sub_c8d4877028dc78c8",
+      "sub_c8f68dc016baec79",
+      "sub_caaf022a78b1f7f1",
+      "sub_cb5b47bb5c52cc1d",
+      "sub_d381702a0310030d",
+      "sub_d4fda627725a8693",
+      "sub_db0b947ae691c141",
+      "sub_e39552bf49185587",
+      "sub_e4beb6a575404c1d",
+      "sub_eb2c6db8744fc151",
+      "sub_f2ba9f658b4d8574",
+      "sub_f61c55fb3685fe3c",
+      "sub_f97ee5e957925c94"
+    ],
+    "source_ids": [
+      "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+      "2014_06_25_brt_woodhaven_publicworkshop2_summary",
+      "2014_10_22_brt_woodhaven_cac2_presentation",
+      "2014_11_05_brt_woodhavenblvd_pw3_workshopsummary",
+      "2014_11_06_brt_woodhaven_pw3_boards",
+      "2014_woodhaven_crossbayblvd_public_workshop_summary",
+      "2015_01_brt_woodhaven_cb9",
+      "2015_03_woodhaven_sbs",
+      "2015_04_01_brt_woodhaven_newsletter_1_spring2015",
+      "2015_04_16_brt_woodhaven_dw1_discussionmaterials",
+      "2015_04_16_brt_woodhaven_dw1_draftplans",
+      "2015_04_16_brt_woodhaven_dw1_presentation",
+      "2015_04_23_brt_woodhaven_dw2_discussionmaterials",
+      "2015_04_23_brt_woodhaven_dw2_draftplans",
+      "2015_04_23_brt_woodhaven_dw2_presentation",
+      "2015_04_29_brt_woodhaven_dw3_discussionmaterials",
+      "2015_04_29_brt_woodhaven_dw3_draftplans",
+      "2015_04_29_brt_woodhaven_dw3_presentation",
+      "2015_04_30_brt_woodhaven_dw4_discussionmaterials",
+      "2015_04_30_brt_woodhaven_dw4_presentation",
+      "2015_05_13_brt_woodhaven_cb6_presentation",
+      "2015_06_01_brt_woodhaven_cb14_presentation",
+      "2015_06_09_brt_woodhaven_cb9",
+      "2015_06_24_brt_woodhaven_cac4_presentation",
+      "2015_12_01_brt_woodhaven_cb5",
+      "2015_12_15_brt_woodhaven_cac5_presentation",
+      "brt_broadway_roosevelt_ave_queens_blvd_apr2019",
+      "brt_woodhaven_after_fall2018",
+      "brt_woodhaven_cb14_jan2017",
+      "brt_woodhaven_cb6_handout_2016",
+      "brt_woodhaven_cb9_jan2016",
+      "brt_woodhaven_cb9_sept2016",
+      "brt_woodhaven_crossbay_blvd_sept_flyer",
+      "brt_woodhaven_design_workshops",
+      "brt_woodhaven_faq",
+      "brt_woodhaven_may2016",
+      "brt_woodhaven_newsletter2_spring2016",
+      "brt_woodhaven_openhouses_boards_may2016",
+      "brt_woodhaven_openhouses_streetdesignplans_may2016",
+      "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+      "capital_woodhaven_blvd_capital_projects_cb5_sept2024",
+      "capital_woodhaven_blvd_capital_projects_cb6_sept2024",
+      "capital_woodhaven_blvd_capital_projects_cb9_dec2024",
+      "queens_addendum_equity_evaluation_appendix_d",
+      "rockaway_beach_blvd_jun2019",
+      "routes_woodhaven_corridor_map_lg",
+      "tsp_status_2017"
+    ],
+    "route_id_counts": {
+      "Q52": 50,
+      "Q52 SBS": 3,
+      "Q52LTD": 1,
+      "Q52/Q53 SBS": 1
+    },
+    "target_record_id_counts": {
+      "route_q52-sbs-queens": 34,
+      "route_q52-ltd-woodhaven-2014": 19,
+      "canonical_identity_seed": 2
+    },
+    "slash_surface_observations": [
+      {
+        "submission_id": "sub_9c6c93ddbaa8baad",
+        "source_id": "brt_broadway_roosevelt_ave_queens_blvd_apr2019",
+        "local_observation_id": "route_q52_q53_sbs_woodhaven_apr2019",
+        "target_record_id": "route_q52-sbs-queens",
+        "route_id": "Q52/Q53 SBS",
+        "evidence": [
+          {
+            "evidence_id": "brt_broadway_roosevelt_ave_queens_blvd_apr2019#p004_c0001",
+            "evidence_sha256": "sha256:71ac96f4b0539dd3b60a8842ad44ca63be9d70721f2bb93c6354f8845acb1c8e"
+          },
+          {
+            "evidence_id": "brt_broadway_roosevelt_ave_queens_blvd_apr2019#p004_c0002",
+            "evidence_sha256": "sha256:eeaec176565e628c3ae03766969ba5d46f9e468e7889741bac19b07bb0d059d3"
+          }
+        ],
+        "interpretation": "Shared-corridor program surface; not a combined current route identity."
+      },
+      {
+        "submission_id": "sub_52efec900d220fcd",
+        "source_id": "brt_woodhaven_crossbay_blvd_sept_flyer",
+        "local_observation_id": "route_q52_q53_sbs_woodhaven_sept_flyer",
+        "target_record_id": "route_q52-sbs-queens",
+        "route_id": "Q52",
+        "route_label": "Q52/Q53 Select Bus Service",
+        "route_name": "Q52/Q53 Select Bus Service",
+        "evidence": [
+          {
+            "evidence_id": "brt_woodhaven_crossbay_blvd_sept_flyer#p001_c0004",
+            "evidence_sha256": "sha256:d237a388260d314c516fb456fa3d647851a3d2c7eff52d066525c320b50940eb"
+          },
+          {
+            "evidence_id": "brt_woodhaven_crossbay_blvd_sept_flyer#p001_c0007",
+            "evidence_sha256": "sha256:3f63754aca830854fa8941894fe0de187071298a682c54b00ef9c2412ad95969"
+          }
+        ],
+        "interpretation": "The structured route id remains Q52; the slash label names the coordinated SBS project."
+      }
+    ],
+    "primary_payload_before_review": {
+      "route_id": "Q52 SBS",
+      "route_name": "Q52 SBS",
+      "route_label": "Q52 SBS",
+      "routes": [
+        "Q52 SBS"
+      ],
+      "route_type": "Select Bus Service",
+      "route_type_normalized": "select_bus_service",
+      "service_variant": "sbs",
+      "route_record_scope": "split_candidate",
+      "route_record_scope_reason": "merged_slash_route_surface"
+    },
+    "merged_identity_literals": {
+      "route_id": [
+        "Q52 SBS",
+        "Q52",
+        "Q52LTD",
+        "Q52/Q53 SBS"
+      ],
+      "route_name": [
+        "Q52 SBS",
+        "Q52 Limited",
+        "Q52 Select Bus Service",
+        "Q52 LTD",
+        "Q52/Q53 Select Bus Service"
+      ],
+      "route_label": [
+        "Q52 SBS",
+        "Q52",
+        "Q52 LTD",
+        "Q52 Select Bus Service",
+        "Q52/Q53 Select Bus Service",
+        "Q52-SBS"
+      ],
+      "route_type": [
+        "Select Bus Service",
+        "Limited",
+        "limited",
+        "SBS",
+        "LTD",
+        "limited-stop",
+        "select bus service"
+      ],
+      "route_type_normalized": [
+        "select_bus_service",
+        "limited_stop",
+        "ltd"
+      ],
+      "service_variant": [
+        "sbs",
+        "limited_stop"
+      ]
+    }
+  },
+  "current_gtfs": {
+    "feed_date": "2026-03-19_mta_bus_all",
+    "manifest_path": "data/reference/gtfs/manifest.json",
+    "routes_path": "data/reference/gtfs/routes.txt",
+    "routes_sha256": "7b04d611eee9ad689eda88556e6934fe36c699342cf489c61dcdfef2c2670097",
+    "q52_matching_route_count": 1,
+    "q52_route": {
+      "route_id": "Q52+",
+      "agency_id": "MTABC",
+      "route_short_name": "Q52-SBS",
+      "route_long_name": "Elmhurst - Arverne Sbs Vis Woodhaven/Cross Bay",
+      "route_desc": "Via Woodhaven Bl. - Cross Bay Bl.",
+      "route_type": "3"
+    },
+    "q53_matching_route_count": 1,
+    "q53_route": {
+      "route_id": "Q53+",
+      "agency_id": "MTABC",
+      "route_short_name": "Q53-SBS",
+      "route_long_name": "Woodside - Rockaway Park",
+      "route_desc": "Via Broadway / Queens Blvd / Woodhaven Blvd / Cross Bay Blvd",
+      "route_type": "3"
+    }
+  },
+  "current_route_anchor_release": {
+    "release_id": "v1-rc7",
+    "path": "data/exports/releases/v1-rc7/route_anchors.jsonl",
+    "sha256": "0b8de93cb71bf45c009654beff918a1baea0db43a418c8469482570c87a2f1da",
+    "q52_anchor_before_review": {
+      "gtfs_route_id": "Q52+",
+      "canonical_route_record_id": null,
+      "variant_record_ids": [],
+      "aliases": [],
+      "disposition": "no_wiki_coverage",
+      "anchor_reason": null
+    },
+    "q53_preservation_anchor": {
+      "gtfs_route_id": "Q53+",
+      "canonical_route_record_id": "route_q53-sbs-ace",
+      "variant_record_ids": [],
+      "aliases": [
+        "Q53 SBS",
+        "Q53-SBS",
+        "route_q53-ltd-woodhaven-2014",
+        "route_q53-sbs"
+      ],
+      "disposition": "true_route",
+      "anchor_reason": "label_matches_gtfs_short_name"
+    }
+  },
+  "official_current_identity_evidence": {
+    "source_id": "mta_queens_bus_network_redesign_service_changes",
+    "publisher": "MTA",
+    "source_url": "https://www.mta.info/project/queens-bus-network-redesign/service-changes",
+    "retrieved_at": "2026-06-07T01:03:14.507Z",
+    "publication_date": null,
+    "publication_date_reason": "The page exposes no publication metadata; August 31, 2025 is the source-stated Q52 service-change effective date.",
+    "artifact_sha256": "sha256:4b5dc9ca398980a3803e076378acefd7ac3ec04343e0ac32db95a17c1d51226d",
+    "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0057",
+    "raw_text_sha256": "sha256:d48ee0cdc32f8fc8334dd298837fa2c9b5a89c5216561297939b23097338fffa",
+    "normalized_text_sha256": "sha256:d48ee0cdc32f8fc8334dd298837fa2c9b5a89c5216561297939b23097338fffa",
+    "effective_date": "2025-08-31",
+    "source_quote": "Q52 | Changes to the Q52 took effect August 31, 2025. | The Q52 will be extended further east to Beach 50 St in Edgemere. You must use OMNY to pay your fare if you board at Beach Channel Dr and Beach 51 St. | Get more details on Q52 service. | View the new Q52 timetable."
+  },
+  "official_lifecycle_evidence": [
+    {
+      "source_id": "brt_woodhaven_after_fall2018",
+      "publisher": "NYC DOT",
+      "source_url": "https://www.nyc.gov/html/brt/downloads/pdf/brt-woodhaven-after-fall2018.pdf",
+      "retrieved_at": "2026-05-24T20:18:48.108Z",
+      "artifact_sha256": "sha256:31d62565aa70a25bfcab243d36e1b115a56fb4cc8c3cec02990a78cf3bf623ad",
+      "evidence_id": "brt_woodhaven_after_fall2018#p008_c0002",
+      "evidence_sha256": "sha256:3539e5428e5895b720a4999be3009bc72d9d68cec2629d2a321e19a8ba1e1496",
+      "source_quote": "Converted to SBS on November 12 th , 2017: - Q52 extended further east in Rockaways to Beach 54 th St in April 2017 in anticipation of SBS launch",
+      "identity_use": "Establishes Q52 extension and LTD-to-SBS lifecycle continuity."
+    },
+    {
+      "source_id": "brt_woodhaven_after_fall2018",
+      "publisher": "NYC DOT",
+      "source_url": "https://www.nyc.gov/html/brt/downloads/pdf/brt-woodhaven-after-fall2018.pdf",
+      "retrieved_at": "2026-05-24T20:18:48.108Z",
+      "artifact_sha256": "sha256:31d62565aa70a25bfcab243d36e1b115a56fb4cc8c3cec02990a78cf3bf623ad",
+      "evidence_id": "brt_woodhaven_after_fall2018#p011_c0002",
+      "evidence_sha256": "sha256:0bd81282de628ef0bc1dc50f23ec912e382bc1f4ed57d14cb6eccc671b9f50e9",
+      "source_quote": "Q52/Q53 Select Bus Service launched on November 12 th , 2017",
+      "identity_use": "Dates the coordinated SBS launch while retaining the separately numbered Q52 and Q53 surfaces."
+    },
+    {
+      "source_id": "brt_woodhaven_after_fall2018",
+      "publisher": "NYC DOT",
+      "source_url": "https://www.nyc.gov/html/brt/downloads/pdf/brt-woodhaven-after-fall2018.pdf",
+      "retrieved_at": "2026-05-24T20:18:48.108Z",
+      "artifact_sha256": "sha256:31d62565aa70a25bfcab243d36e1b115a56fb4cc8c3cec02990a78cf3bf623ad",
+      "evidence_id": "brt_woodhaven_after_fall2018#p019_c0002",
+      "evidence_sha256": "sha256:340ae603cae43e5fc84df441651537778b53fb8da4d043914ad0a06948f01d88",
+      "source_quote": "82% to 87% of respondents believe the SBS is better than the Q52/Q53 Limited service it replaced.",
+      "identity_use": "Directly establishes Limited-to-SBS predecessor/successor lifecycle context."
+    },
+    {
+      "source_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+      "publisher": "NYC DOT",
+      "source_url": "https://www.nyc.gov/html/dot/downloads/pdf/woodhaven-blvd-capital-projects-cb10-dec2024.pdf",
+      "retrieved_at": "2026-05-24T20:18:48.108Z",
+      "artifact_sha256": "sha256:9571a3c12575de8e3856244debe887b28f08b2fbbfe60a4e4e1687775a792d39",
+      "evidence_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024#p005_c0002",
+      "evidence_sha256": "sha256:d35fe2df288ab34146c408ba44651a5e157f81a126c2866cea3f18d77c0840a4",
+      "source_quote": "6.85 miles of bus lanes installed on Woodhaven Blvd as part of Q52/Q53 Select Bus Service (SBS) launch in 2017",
+      "identity_use": "Confirms that the slash surface names the shared corridor program."
+    }
+  ],
+  "separate_q53_identity": {
+    "canonical_record_id": "route_q53-sbs-ace",
+    "record_aliases": [
+      "route_q53-ltd-woodhaven-2014",
+      "route_q53-sbs"
+    ],
+    "submission_count": 54,
+    "source_count": 46,
+    "primary_route_id": "Q53-SBS",
+    "primary_route_label": "Q53-SBS",
+    "route_record_scope": "true_route",
+    "route_record_scope_reason": "predecessor_successor_lifecycle_compatible",
+    "rationale": "Q53 has its own canonical predecessor/successor chain and its own current GTFS Q53+ identity. No Q52 correction, anchor, recovery observation, occurrence, variant list, or relation may target or absorb route_q53-sbs-ace."
+  },
+  "collapsed_relation_context": {
+    "record_id": "relation_q52-sbs-replaces-ltd",
+    "correction_id": "semqa-000036",
+    "review_state": "quarantined",
+    "reason": "The historical predecessor and successor aliases resolve to the same Q52 canonical record, so the resulting self-loop is quarantined rather than used as evidence for a split."
+  },
+  "identity_decision": {
+    "verdict": "current_umbrella_route_with_historical_limited_to_sbs_lifecycle",
+    "canonical_record_id": "route_q52-sbs-queens",
+    "canonical_route_id": "Q52-SBS",
+    "source_route_surface": "Q52",
+    "gtfs_route_id": "Q52+",
+    "route_record_scope": "true_route",
+    "route_record_scope_reason": "reviewed_q52_ltd_sbs_lifecycle_and_shared_corridor_slash_context_compatible",
+    "continuing_identity": "The current Q52 route, represented by the single current GTFS Q52+ identity and Q52-SBS short name, continues through the August 31, 2025 redesign change.",
+    "historical_pattern": "Q52 Limited and Q52LTD are historical predecessor/service-pattern surfaces preserved on the same route record; they are not second current route identities requiring a split.",
+    "shared_corridor_surface": "Q52/Q53 SBS wording identifies the coordinated Woodhaven/Cross Bay SBS program and shared corridor. Q53 remains a separate route identity.",
+    "rationale": "The canonical merge preserved source literals from planning, Limited, SBS, and current-route eras. Current GTFS independently identifies Q52+ and Q53+, the official Q52 redesign row uses the unambiguous Q52 surface, and official lifecycle evidence says the SBS service replaced the prior Q52/Q53 Limited service. The literals are therefore lifecycle-compatible context on separate Q52 and Q53 route records, not an unresolved merged identity.",
+    "preservation_contract": [
+      "Preserve all 55 Q52 submission ids, all 47 source ids, and all source/evidence references.",
+      "Preserve _merged_field_values, including Q52, Q52 SBS, Q52LTD, Q52-SBS, and Q52/Q53 program literals.",
+      "Patch only route_id, routes, route_record_scope, and route_record_scope_reason.",
+      "Keep routes as [Q52] so the exact official QBNR row surface can target the reviewed record through the existing recovery expander.",
+      "Do not create a second Q52 route record or restore the quarantined predecessor/successor self-loop.",
+      "Preserve route_q53-sbs-ace and the Q53+ true-route anchor as a separate identity with no Q52 variant or relation cross-product.",
+      "Cut a new immutable route-anchor release after materialization; do not mutate v1-rc7."
+    ],
+    "semantic_correction_id": "core-coverage-q52-route-scope-20260713"
+  }
+}

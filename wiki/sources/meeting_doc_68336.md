@@ -16,6 +16,7 @@ raw_text: "MTA 2020-2024 Capital Program Amendment Staff Summary dated December 
 submission_ids:
   - "sub_6834d625aad9ed34"
 payload:
+  authority_tier: "board_material"
   content_type: "Staff Summary"
   date: "December 15, 2021"
   date_normalized:

@@ -16,6 +16,7 @@ raw_text: "Staff Summary - MTA Metro-North Railroad - Subject: Connecticut New H
 submission_ids:
   - "sub_fe35c35746225d76"
 payload:
+  authority_tier: "board_material"
   content_type: "staff summary"
   date_text: "7/30/2025"
   date_text_normalized:

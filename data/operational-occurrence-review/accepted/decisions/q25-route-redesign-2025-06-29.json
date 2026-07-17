@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "decision_id": "q25-route-redesign-2025-06-29",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T01:12:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official MTA Q25 row binds a realized June 29, 2025 service change and only the current Q25 route to two canonical treatment members: stop removals on the continuing route and discontinuation of the Q25 Limited service pattern. The Limited reference is lifecycle-compatible treatment context and does not create a second route identity or candidate. The official Queens Bus Network Redesign project context separately supports route_redesign as the reviewed bundle analysis family.",
+  "occurrence_id": "occurrence:4a1a43f2512f477e5c68f917",
+  "founding_key": "event:event_q25-qbnr-service-change-2025-06-29",
+  "observation_event_record_ids": [
+    "event_q25-qbnr-service-change-2025-06-29"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-q25",
+    "relation_qbnr-2025-has-q25-stop-removal",
+    "relation_qbnr-2025-has-q25-limited-discontinuation",
+    "relation_qbnr-has-q25-service-change-2025-06-29"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-06-29",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_q25-qbnr-service-change-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0030"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-q25-service-change-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0030"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_q25-queens",
+      "gtfs_route_id": "Q25",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_q25-queens",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0030"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-q25",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0030"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "bundle",
+  "treatment": {
+    "kind": "bundle",
+    "analysis_family": "route_redesign",
+    "analysis_family_evidence_bindings": [
+      {
+        "role": "bundle_analysis_family",
+        "record_id": "project_queens-bus-network-redesign",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0001"
+      }
+    ],
+    "members": [
+      {
+        "treatment_record_id": "treatment_q25-stop-removal-2025",
+        "treatment_family": "bus_stop_or_boarding",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q25-stop-removal-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0030"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q25-stop-removal",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0030"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q25-limited-discontinuation-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q25-limited-discontinuation-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0030"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q25-limited-discontinuation",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0030"
+          }
+        ]
+      }
+    ]
+  }
+}

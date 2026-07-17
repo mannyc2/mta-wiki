@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "decision_id": "fare-free-bus-pilot-launch-2023-09-24",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T06:45:08.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The retrospective June 2025 official MTA evaluation establishes that the Fare-Free Bus Pilot began September 24, 2023 on seven GTFS-addressable route ids. BX18A/B and S46/S96 are addressability splits of five borough-level report surfaces; their aggregate metrics remain on aggregate records. Exact route identities, delivered route scope, timeline, and the atomic fare_collection treatment are all evidence-bound without route-treatment cross-products.",
+  "occurrence_id": "occurrence:7a2f12e7e5c483d946eea9f4",
+  "founding_key": "event:event_pilot-start_2",
+  "observation_event_record_ids": [
+    "event_pilot-start_2"
+  ],
+  "observation_relation_record_ids": [
+    "relation_fare-free-pilot-2023-affects-b60",
+    "relation_fare-free-pilot-2023-affects-bx18a",
+    "relation_fare-free-pilot-2023-affects-bx18b",
+    "relation_fare-free-pilot-2023-affects-m116",
+    "relation_fare-free-pilot-2023-affects-q4",
+    "relation_fare-free-pilot-2023-affects-s46",
+    "relation_fare-free-pilot-2023-affects-s96",
+    "relation_rel-project-to-event-start",
+    "relation_rel-project-to-treatment"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2023-09-24",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_pilot-start_2",
+        "source_id": "fare_free_bus_pilot_evaluation",
+        "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_rel-project-to-event-start",
+        "source_id": "fare_free_bus_pilot_evaluation",
+        "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_b60",
+      "gtfs_route_id": "B60",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_b60",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_fare-free-pilot-2023-affects-b60",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_bx18a",
+      "gtfs_route_id": "BX18A",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_bx18a",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p020_c0003"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_fare-free-pilot-2023-affects-bx18a",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_bx18b",
+      "gtfs_route_id": "BX18B",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_bx18b",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p020_c0003"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_fare-free-pilot-2023-affects-bx18b",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_m116",
+      "gtfs_route_id": "M116",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_m116",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_fare-free-pilot-2023-affects-m116",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_q4-lcl-ltd",
+      "gtfs_route_id": "Q4",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_q4-lcl-ltd",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0006"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_fare-free-pilot-2023-affects-q4",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_s46",
+      "gtfs_route_id": "S46",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_s46",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p023_c0003"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_fare-free-pilot-2023-affects-s46",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_s96",
+      "gtfs_route_id": "S96",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_s96",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p023_c0003"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_fare-free-pilot-2023-affects-s96",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0006"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "atomic",
+  "treatment": {
+    "kind": "atomic",
+    "member": {
+      "treatment_record_id": "treatment_fare-free-fare-collection",
+      "treatment_family": "fare_collection",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_fare-free-fare-collection",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005"
+        },
+        {
+          "role": "treatment_scope",
+          "record_id": "relation_rel-project-to-treatment",
+          "source_id": "fare_free_bus_pilot_evaluation",
+          "evidence_id": "fare_free_bus_pilot_evaluation#p002_c0005"
+        }
+      ]
+    }
+  }
+}

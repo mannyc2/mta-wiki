@@ -57,6 +57,84 @@ describe("event lifecycle_phase", () => {
     expect(event({ event_kind: "Feasibility study" }).lifecycle_phase).toBe("studied");
   });
 
+  it("uses exact prospective evidence when lifecycle is missing or other", () => {
+    expect(
+      event(
+        {
+          event_kind: "installation",
+          description: "Installation of 3 Bus Only Signals along Flatbush Ave",
+        },
+        { raw_text: "3 Bus Only Signals are planned for Summer 2024 installation along Flatbush Ave" },
+      ).lifecycle_phase,
+    ).toBe("planned");
+    expect(
+      event({
+        event_kind: "service launch",
+        lifecycle_phase: "other",
+        description: "Bus lanes expected to be operational",
+      }).lifecycle_phase,
+    ).toBe("planned");
+    expect(
+      event(
+        { event_kind: "launch", description: "Promotional transfer policy launch" },
+        { raw_text: "To obtain Board approval to launch a promotional transfer policy beginning on June 29, 2025" },
+      ).lifecycle_phase,
+    ).toBe("proposed");
+    expect(
+      event(
+        { event_kind: "launch", lifecycle_phase: "other", description: "Citywide Bus Lane Enforcement Task Force begins" },
+        { raw_text: "The Citywide Bus Lane Enforcement Task Force, which will begin on December 4, 2023." },
+      ).lifecycle_phase,
+    ).toBe("planned");
+    expect(
+      event(
+        {
+          event_kind: "service_expansion",
+          description: "Newburgh-Beacon Bridge Shuttle expansion",
+        },
+        { raw_text: "Beginning on Tuesday, January 2, the Newburgh-Beacon Bridge Shuttle will expand bus service." },
+      ).lifecycle_phase,
+    ).toBe("planned");
+  });
+
+  it("does not silently rewrite explicit lifecycle phases during replay", () => {
+    expect(
+      event(
+        {
+          event_kind: "installation",
+          lifecycle_phase: "installed",
+          description: "Installation of 3 Bus Only Signals along Flatbush Ave",
+        },
+        { raw_text: "3 Bus Only Signals are planned for Summer 2024 installation along Flatbush Ave" },
+      ).lifecycle_phase,
+    ).toBe("installed");
+    expect(
+      event({
+        event_kind: "service launch",
+        lifecycle_phase: "launched",
+        description: "Bus lanes expected to be operational",
+      }).lifecycle_phase,
+    ).toBe("launched");
+    expect(
+      event(
+        { event_kind: "launch", lifecycle_phase: "launched", description: "Promotional transfer policy launch" },
+        { raw_text: "To obtain Board approval to launch a promotional transfer policy beginning on June 29, 2025" },
+      ).lifecycle_phase,
+    ).toBe("launched");
+    expect(
+      event(
+        { event_kind: "service_expansion", lifecycle_phase: "expanded", description: "Newburgh-Beacon Bridge Shuttle expansion" },
+        { raw_text: "Beginning on Tuesday, January 2, the Newburgh-Beacon Bridge Shuttle will expand bus service." },
+      ).lifecycle_phase,
+    ).toBe("expanded");
+
+    expect(event({ event_kind: "installation", lifecycle_phase: "installed", description: "Bus Only Signals were installed in Summer 2024." }).lifecycle_phase).toBe(
+      "installed",
+    );
+    expect(event({ event_kind: "service launch", lifecycle_phase: "launched", description: "Bus lanes became operational." }).lifecycle_phase).toBe("launched");
+    expect(event({ event_kind: "launch", lifecycle_phase: "launched", description: "Transfer policy launched after Board approval." }).lifecycle_phase).toBe("launched");
+  });
+
   it("maps concrete opening events to the launch event family", () => {
     expect(event({ event_kind: "opening" }).event_family).toBe("launch");
     expect(event({ event_kind: "station_opening" }).event_family).toBe("launch");
@@ -5382,7 +5460,14 @@ describe("source authority_tier (C7)", () => {
   it("derives a tier from the document's own classification fields", () => {
     expect(source({ content_type: "monitoring report" }).authority_tier).toBe("official_evaluation");
     expect(source({ content_type: "presentation", title: "Board Committee Agenda" }).authority_tier).toBe("board_material");
+    expect(source({ content_type: "staff summary", title: "Express Bus Service Additions" }).authority_tier).toBe("board_material");
     expect(source({ content_type: "press release" }).authority_tier).toBe("press_release");
+    expect(source({ content_type: "press release", description: "Announces an open-data dataset" }).authority_tier).toBe(
+      "press_release",
+    );
+    expect(source({ content_type: "official structured dataset query", description: "weekday express trip counts" }).authority_tier).toBe(
+      "dataset_documentation",
+    );
     expect(source({ content_type: "brochure" }).authority_tier).toBe("plan_document");
   });
 
@@ -10952,6 +11037,21 @@ describe("treatment bus stop and boarding family", () => {
     expect(treatment({ treatment_kind: "revised station spacing" }).treatment_family).toBe("service_pattern");
   });
 
+  it("does not infer bus boarding scope from a generic platform literal", () => {
+    expect(treatment({ treatment_kind: "platform" }).treatment_family).toBe("other");
+    expect(treatment({ treatment_kind: "platform safety barrier" }).treatment_family).toBe("safety");
+    expect(treatment({ treatment_kind: "platform barrier" }).treatment_family).toBe("safety");
+    expect(treatment({ treatment_kind: "platform barriers" }).treatment_family).toBe("safety");
+    expect(treatment({ treatment_kind: "platform bollards" }).treatment_family).toBe("safety");
+    expect(treatment({ treatment_kind: "platform edge barrier" }).treatment_family).toBe("safety");
+    expect(treatment({ treatment_kind: "platform screen doors" }).treatment_family).toBe("safety");
+    expect(treatment({ treatment_kind: "platform heating" }).treatment_family).toBe("capital_or_infrastructure");
+    expect(treatment({ treatment_kind: "platform replacement" }).treatment_family).toBe("capital_or_infrastructure");
+    expect(treatment({ treatment_kind: "elevated platform" }).treatment_family).toBe("other");
+    expect(treatment({ treatment_kind: "bus boarding platform" }).treatment_family).toBe("bus_stop_or_boarding");
+    expect(treatment({ treatment_kind: "boarding platform" }).treatment_family).toBe("bus_stop_or_boarding");
+  });
+
   it("maps exact non-station treatment literals without widening ambiguous matches", () => {
     expect(treatment({ treatment_kind: "branding" }).treatment_family).toBe("customer_information");
     expect(treatment({ treatment_kind: "passenger information" }).treatment_family).toBe("customer_information");
@@ -10960,6 +11060,12 @@ describe("treatment bus stop and boarding family", () => {
     expect(treatment({ treatment_kind: "bus equipment" }).treatment_family).toBe("vehicle_or_fleet");
     expect(treatment({ treatment_kind: "route_reroute" }).treatment_family).toBe("service_pattern");
     expect(treatment({ treatment_kind: "Route re-alignment" }).treatment_family).toBe("service_pattern");
+    expect(treatment({ treatment_kind: "route rerouting" }).treatment_family).toBe("service_pattern");
+    expect(treatment({ treatment_kind: "route segment discontinuation and replacement" }).treatment_family).toBe(
+      "service_pattern",
+    );
+    expect(treatment({ treatment_kind: "route shortening" }).treatment_family).toBe("service_pattern");
+    expect(treatment({ treatment_kind: "route truncation" }).treatment_family).toBe("service_pattern");
     expect(treatment({ treatment_kind: "bus priority lane" }).treatment_family).toBe("bus_lane");
     expect(treatment({ treatment_kind: "bus tunnel" }).treatment_family).toBe("traffic_restriction");
     expect(treatment({ treatment_kind: "daylighting" }).treatment_family).toBe("pedestrian_or_accessibility");

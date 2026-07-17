@@ -831,7 +831,7 @@ export const RELATION_ENDPOINT_SHAPES: Record<string, { subject: MtaObservationK
     object: ["treatment_component"],
   },
   has_timeline_event: {
-    subject: ["project", "route", "corridor", "entity", "source", "event"],
+    subject: ["project", "route", "corridor", "entity", "source", "event", "treatment_component"],
     object: ["event"],
   },
   has_metric: {
@@ -1450,9 +1450,11 @@ export function normalizeRelationPayload(payload: JsonObject, endpointKinds?: Re
   const endpointFamily = family === "other" ? normalizeRelationFamilyForEndpointShape(normalized, payload, endpointKinds, context) : "other";
   const nextFamily = exactFamily ?? (family !== "other" ? family : endpointFamily);
   const next: JsonObject = { ...payload };
+  const suppliedFamily = stringValue(next.relation_family);
+  const suppliedFamilyIsValid = suppliedFamily !== undefined && RELATION_FAMILIES.includes(suppliedFamily as RelationFamily);
   if (exactFamily !== undefined) {
-    if (next.relation_family === undefined || next.relation_family === "other" || next.relation_family === family) next.relation_family = exactFamily;
-  } else if (next.relation_family === undefined || (next.relation_family === "other" && nextFamily !== "other")) {
+    if (!suppliedFamilyIsValid || next.relation_family === "other" || next.relation_family === family) next.relation_family = exactFamily;
+  } else if (!suppliedFamilyIsValid || (next.relation_family === "other" && nextFamily !== "other")) {
     next.relation_family = nextFamily;
   }
 

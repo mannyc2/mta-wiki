@@ -8,19 +8,29 @@ display_name: "Q19"
 source_id: "2014_m60_selectbusservice_launchflyer"
 source_ids:
   - "2014_m60_selectbusservice_launchflyer"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q19_2014_m60_flyer"
 local_observation_ids:
   - "route_q19_2014_m60_flyer"
+  - "route_q19_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T17:55:48.192Z"
+generated_at: "2026-07-12T22:16:08.000Z"
+raw_text: "Q19"
 submission_ids:
+  - "sub_259fa62a8f8bf59d"
   - "sub_9cc61fdd7bbe4bff"
 payload:
+  _merged_field_values:
+    route_type_normalized:
+      - "local"
+      - "bus"
   borough: "Queens"
   borough_normalized: "queens"
   description: "Makes all local stops on Astoria Blvd"
+  gtfs_route_id: "Q19"
   route_id: "Q19"
+  route_name: "Q19"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "local"
@@ -36,6 +46,16 @@ evidence_refs:
     source_path: "raw/sources/2014_m60_selectbusservice_launchflyer/blocks.jsonl"
     source_quote: "The Q19 makes all local stops on Astoria Blvd."
     text_sha256: "sha256:9e53c23a24ac7183f381be6a2246a1af3bd86a3399565dcd5379cca247dad9c8"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0022"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0022"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q19"
+    text_sha256: "sha256:0c631398edc5f7abeb2e5912d4c713be434b598172adb25d551ea881694228a2"
     text_source: "raw_text"
 ---
 

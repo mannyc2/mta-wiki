@@ -9,14 +9,18 @@ source_id: "mta_automated_camera_enforcement"
 source_ids:
   - "brt_flushing_jamaica_oct2016"
   - "mta_automated_camera_enforcement"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q17_ace"
 local_observation_ids:
   - "route_brt_flushing_jamaica_oct2016_q17"
   - "route_q17_ace"
+  - "route_q17_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-19T18:13:27.162Z"
+generated_at: "2026-07-12T23:02:57.000Z"
+raw_text: "Q17"
 submission_ids:
+  - "sub_04181b1d0437b6dd"
   - "sub_1593a50e50f68c0f"
   - "sub_d4e7e78025190798"
 payload:
@@ -30,8 +34,10 @@ payload:
     - "Queens"
   boroughs_normalized:
     - "queens"
+  gtfs_route_id: "Q17"
   route_id: "Q17"
   route_label: "Q17"
+  route_name: "Q17"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "local"
@@ -56,6 +62,16 @@ evidence_refs:
     source_id: "brt_flushing_jamaica_oct2016"
     source_path: "raw/sources/brt_flushing_jamaica_oct2016/blocks.jsonl"
     text_sha256: "sha256:ea1332aea10e1286011c4d43da00fa3ba071dce31c6034e8939470f4ddfc8ae5"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0020"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0020"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q17"
+    text_sha256: "sha256:50e078e456322f9d01dee26877cdd9b1914ba24eb053f54208e753539a8d1969"
     text_source: "raw_text"
 ---
 

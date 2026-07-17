@@ -2,9 +2,14 @@ import { describe, expect, it } from "bun:test";
 import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { rebuildCanonicalDb } from "@mta-wiki/db/canonical-db";
-import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
+import {
+  rebuildCanonicalDb,
+  type CanonicalEvidenceBlockRegistryEntry,
+} from "@mta-wiki/db/canonical-db";
+import type { MtaCanonicalRecord, MtaEvidenceRef } from "@mta-wiki/db/types";
 import { exportSite } from "@mta-wiki/pipeline/site/export-site";
+
+const FIXTURE_EVIDENCE_SHA256 = `sha256:${"a".repeat(64)}`;
 
 function record(id: string, kind: MtaCanonicalRecord["record_kind"], payload: MtaCanonicalRecord["payload"] = {}): MtaCanonicalRecord {
   return {
@@ -14,12 +19,61 @@ function record(id: string, kind: MtaCanonicalRecord["record_kind"], payload: Mt
     local_observation_id: id,
     display_name: id,
     payload,
-    evidence_refs: [],
+    evidence_refs: kind === "relation" ? [{
+      source_id: "source_a",
+      evidence_id: "source_a#p001_c0001",
+      source_path: "raw/sources/source_a/blocks.jsonl",
+      page_number: 1,
+      block_id: "p001_c0001",
+      text_sha256: FIXTURE_EVIDENCE_SHA256,
+      role: "fixture",
+    }] : [],
     submission_ids: [],
     truth_status: "source_stated",
     review_state: "unreviewed",
     generated_at: "2026-07-03T00:00:00.000Z",
   };
+}
+
+function rebuildFixtureCanonicalDb(records: readonly MtaCanonicalRecord[], path: string) {
+  const evidenceRegistry = new Map<string, CanonicalEvidenceBlockRegistryEntry>();
+  const normalizedRecords = records.map((fixtureRecord) => ({
+    ...fixtureRecord,
+    evidence_refs: fixtureRecord.evidence_refs.map((ref): MtaEvidenceRef => {
+      if (!ref.source_id || !ref.block_id) {
+        throw new Error(`Fixture evidence on ${fixtureRecord.record_id} must identify source_id and block_id`);
+      }
+      const normalized = {
+        ...ref,
+        evidence_id: `${ref.source_id}#${ref.block_id}`,
+        source_path: `raw/sources/${ref.source_id}/blocks.jsonl`,
+        page_number: ref.page_number ?? 1,
+        text_sha256: ref.text_sha256 ?? FIXTURE_EVIDENCE_SHA256,
+      };
+      const key = `${ref.source_id}\0${ref.block_id}`;
+      const entry: CanonicalEvidenceBlockRegistryEntry = {
+        source_id: ref.source_id,
+        block_id: ref.block_id,
+        resolved_block_id: ref.block_id,
+        page_number: normalized.page_number,
+        source_path: normalized.source_path,
+        raw_text_sha256: normalized.text_sha256,
+      };
+      const previous = evidenceRegistry.get(key);
+      if (previous && JSON.stringify(previous) !== JSON.stringify(entry)) {
+        throw new Error(`Conflicting fixture evidence registry entry ${ref.source_id}#${ref.block_id}`);
+      }
+      evidenceRegistry.set(key, entry);
+      return normalized;
+    }),
+  }));
+  return rebuildCanonicalDb(normalizedRecords, {
+    path,
+    evidenceRegistry: {
+      provenance: "test_fixture",
+      entries: [...evidenceRegistry.values()],
+    },
+  });
 }
 
 function writePage(root: string, path: string, body: string) {
@@ -53,7 +107,7 @@ describe("exportSite", () => {
       metric.evidence_refs = [{ source_id: "source_a", block_id: "p001_c0001" }];
       const corridor = record("corridor_a", "corridor");
       const project = record("project_a", "project");
-      rebuildCanonicalDb([source, route, metric, corridor, project], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source, route, metric, corridor, project], join(root, "data", "canonical.db"));
 
       writePage(root, "wiki/routes/route_m1.md", `---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\n# Route\nSee [[route:route_m1|M1]] and [[cite:source_a#p001_c0001|source]].\n\n\`\`\`mta:metric\n{"id":"metric_speed","value":999}\n\`\`\`\n\n${"x".repeat(2_100_000)}\n<!-- mta-wiki:writer:end -->\n`);
       writePage(root, "wiki/corridors/corridor_a.md", "---\nrecord_id: corridor_a\n---\n<!-- mta-wiki:writer:start -->\n[[wiki/routes/route_m1|Legacy route]]\n<!-- mta-wiki:writer:end -->\n");
@@ -102,7 +156,7 @@ describe("exportSite", () => {
       const source = record("source_a", "source", { title: "Source A" });
       const route = record("route_m1", "route", { route_id: "M1" });
       route.evidence_refs = [{ source_id: "source_a", block_id: "p001_c0001" }];
-      rebuildCanonicalDb([source, route], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source, route], join(root, "data", "canonical.db"));
       writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute prose.\n<!-- mta-wiki:writer:end -->\n");
       writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\n[p001_c0001] source text\n");
 
@@ -127,7 +181,7 @@ describe("exportSite", () => {
     const root = fixtureRoot();
     try {
       const source = record("source_a", "source");
-      rebuildCanonicalDb([source], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source], join(root, "data", "canonical.db"));
       writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
 
       exportSite({ rootDir: root });
@@ -146,7 +200,7 @@ describe("exportSite", () => {
     try {
       const source = record("source_a", "source");
       const route = record("route_m1", "route", { route_id: "M1" });
-      rebuildCanonicalDb([source, route], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source, route], join(root, "data", "canonical.db"));
       writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute.\n<!-- mta-wiki:writer:end -->\n");
       writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
 
@@ -168,7 +222,7 @@ describe("exportSite", () => {
     try {
       const source = record("source_a", "source");
       const route = record("route_m1", "route", { route_id: "M1" });
-      rebuildCanonicalDb([source, route], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source, route], join(root, "data", "canonical.db"));
       writePage(
         root,
         "wiki/routes/route_m1.md",
@@ -208,7 +262,7 @@ describe("exportSite", () => {
         { source_id: "source_a", block_id: "p001_c0021" },
       ];
       const source = record("source_a", "source");
-      rebuildCanonicalDb([source, routeTop, routeZzz, routeAaa], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source, routeTop, routeZzz, routeAaa], join(root, "data", "canonical.db"));
       writePage(root, "wiki/routes/route_top.md", "---\nrecord_id: route_top\n---\n<!-- mta-wiki:writer:start -->\nTop.\n<!-- mta-wiki:writer:end -->\n");
       writePage(root, "wiki/routes/route_zzz.md", "---\nrecord_id: route_zzz\n---\n<!-- mta-wiki:writer:start -->\nZzz.\n<!-- mta-wiki:writer:end -->\n");
       writePage(root, "wiki/routes/route_aaa.md", "---\nrecord_id: route_aaa\n---\n<!-- mta-wiki:writer:start -->\nAaa.\n<!-- mta-wiki:writer:end -->\n");
@@ -242,7 +296,7 @@ describe("exportSite", () => {
         block_id: `p001_c${String((index % 9999) + 1).padStart(4, "0")}`,
       }));
       const metric = record("metric_speed", "metric_claim", { metric_name: "bus_speed", value: 10, unit: "mph" });
-      rebuildCanonicalDb([source, route, metric], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source, route, metric], join(root, "data", "canonical.db"));
       writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute.\n<!-- mta-wiki:writer:end -->\n");
       writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
 
@@ -261,7 +315,7 @@ describe("exportSite", () => {
     const root = fixtureRoot();
     try {
       const source = record("source_a", "source");
-      rebuildCanonicalDb([source], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source], join(root, "data", "canonical.db"));
       writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
 
       exportSite({ rootDir: root });
@@ -289,7 +343,7 @@ describe("exportSite", () => {
       const longDescription = (descriptionBase + descriptionBase).slice(0, 400);
       const source = record("source_a", "source");
       const route = record("route_m1", "route", { route_id: "M1", description: longDescription });
-      rebuildCanonicalDb([source, route], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source, route], join(root, "data", "canonical.db"));
       writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute.\n<!-- mta-wiki:writer:end -->\n");
       writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
 
@@ -316,7 +370,7 @@ describe("exportSite", () => {
         { source_id: "source_a", block_id: "p001_c0002" },
         { source_id: "source_a", block_id: "p001_c0003" },
       ];
-      rebuildCanonicalDb([source, route], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source, route], join(root, "data", "canonical.db"));
       writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute.\n<!-- mta-wiki:writer:end -->\n");
       writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
 
@@ -338,8 +392,13 @@ describe("exportSite", () => {
       const source = record("source_a", "source");
       const route = record("route_m1", "route", { route_id: "M1" });
       const corridor = record("corridor_a", "corridor");
-      const relation = record("rel_1", "relation", { subject_id: "route_m1", object_id: "corridor_a", relation_kind: "operates_on_corridor" });
-      rebuildCanonicalDb([source, route, corridor, relation], { path: join(root, "data", "canonical.db") });
+      const relation = record("rel_1", "relation", {
+        subject_id: "route_m1",
+        object_id: "corridor_a",
+        relation_kind: "operates_on_corridor",
+        relation_family: "corridor_scope",
+      });
+      rebuildFixtureCanonicalDb([source, route, corridor, relation], join(root, "data", "canonical.db"));
       writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute.\n<!-- mta-wiki:writer:end -->\n");
       writePage(root, "wiki/corridors/corridor_a.md", "---\nrecord_id: corridor_a\n---\n<!-- mta-wiki:writer:start -->\nCorridor.\n<!-- mta-wiki:writer:end -->\n");
       writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
@@ -363,8 +422,13 @@ describe("exportSite", () => {
       const source = record("source_a", "source");
       const route = record("route_m1", "route", { route_id: "M1" });
       const metric = record("metric_speed", "metric_claim", { metric_name: "bus_speed", value: 10, unit: "mph" });
-      const relation = record("rel_2", "relation", { subject_id: "route_m1", object_id: "metric_speed", relation_kind: "has_metric" });
-      rebuildCanonicalDb([source, route, metric, relation], { path: join(root, "data", "canonical.db") });
+      const relation = record("rel_2", "relation", {
+        subject_id: "route_m1",
+        object_id: "metric_speed",
+        relation_kind: "has_metric",
+        relation_family: "metric_context",
+      });
+      rebuildFixtureCanonicalDb([source, route, metric, relation], join(root, "data", "canonical.db"));
       writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute.\n<!-- mta-wiki:writer:end -->\n");
       writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
 
@@ -384,7 +448,7 @@ describe("exportSite", () => {
       const source = record("source_a", "source", { title: "Source A" });
       const route = record("route_m1", "route", { route_id: "M1" });
       route.evidence_refs = [{ source_id: "source_a", block_id: "p001_c0001" }];
-      rebuildCanonicalDb([source, route], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source, route], join(root, "data", "canonical.db"));
       writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute.\n<!-- mta-wiki:writer:end -->\n");
       writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
 
@@ -404,7 +468,7 @@ describe("exportSite", () => {
       const source = record("source_a", "source");
       const route = record("route_m1", "route", { route_id: "M1" });
       route.evidence_refs = [{ source_id: "source_a", block_id: "p001_c0001" }];
-      rebuildCanonicalDb([source, route], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source, route], join(root, "data", "canonical.db"));
       writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute.\n<!-- mta-wiki:writer:end -->\n");
       writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\ntext\n");
 
@@ -432,7 +496,7 @@ describe("exportSite", () => {
         source_url: "https://example.com/doc.pdf",
       });
       const sourceC = record("source_c", "source", { title: "Source C", source_url: "javascript:alert(1)" });
-      rebuildCanonicalDb([sourceB, sourceC], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([sourceB, sourceC], join(root, "data", "canonical.db"));
       writePage(
         root,
         "wiki/sources/source_b.md",
@@ -480,7 +544,7 @@ describe("exportSite", () => {
       route.evidence_refs = [{ source_id: "source_a", block_id: "p001_c0001" }];
       const metric = record("metric_speed", "metric_claim", { metric_name: "bus_speed", value: 10, unit: "mph" });
       metric.evidence_refs = [{ source_id: "source_a", block_id: "p001_c0001" }];
-      rebuildCanonicalDb([source, route, metric], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source, route, metric], join(root, "data", "canonical.db"));
       writePage(root, "wiki/routes/route_m1.md", "---\nrecord_id: route_m1\n---\n<!-- mta-wiki:writer:start -->\nRoute.\n<!-- mta-wiki:writer:end -->\n");
       writePage(root, "wiki/sources/source_a.md", "---\nsource_id: source_a\n---\n[p001_c0001] block text\n");
 
@@ -499,7 +563,7 @@ describe("exportSite", () => {
     const root = fixtureRoot();
     try {
       const source = record("source_d", "source", { title: "Source D" });
-      rebuildCanonicalDb([source], { path: join(root, "data", "canonical.db") });
+      rebuildFixtureCanonicalDb([source], join(root, "data", "canonical.db"));
       writePage(root, "wiki/sources/source_d.md", "---\nsource_id: source_d\n---\nplain text with no block markers at all.\n");
 
       exportSite({ rootDir: root });

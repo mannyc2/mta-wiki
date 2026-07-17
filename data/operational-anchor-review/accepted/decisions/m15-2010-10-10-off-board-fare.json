@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "decision_id": "m15-2010-10-10-off-board-fare",
+  "review_state": "accepted",
+  "accepted_at": "2026-07-11T00:00:00.000Z",
+  "reviewer": "codex-temporal-audit-2026-07-11",
+  "rationale": "The official progress report states that M15 SBS was implemented on October 10, 2010, identifies proof-of-payment fare collection as an implemented M15 SBS feature, and the canonical project, route, treatment, and delivered relations all resolve to that same source-backed project. This decision confirms only the atomic off-board-fare onset; it does not transfer the date to later camera or infrastructure work.",
+  "source_id": "201111_1st2nd_progress_report",
+  "event_record_id": "event_m15-sbs-launch-20101010",
+  "timeline_relation_record_id": "relation_project-has-timeline-event-launch_2",
+  "route_record_id": "route_m15-sbs",
+  "route_scope_relation_record_id": "relation_project-serves-route-m15-sbs_2",
+  "treatment_record_id": "treatment_off-board-fare-collection-m15-sbs",
+  "treatment_scope_relation_record_id": "relation_project-has-treatment-off-board-fare_9",
+  "treatment_family": "fare_collection",
+  "expected_operational_date": "2010-10-10",
+  "expected_date_precision": "day",
+  "evidence_bindings": [
+    {
+      "role": "event_date",
+      "record_id": "event_m15-sbs-launch-20101010",
+      "source_id": "201111_1st2nd_progress_report",
+      "evidence_id": "201111_1st2nd_progress_report#p003_c0003"
+    },
+    {
+      "role": "timeline_relation",
+      "record_id": "relation_project-has-timeline-event-launch_2",
+      "source_id": "201111_1st2nd_progress_report",
+      "evidence_id": "201111_1st2nd_progress_report#p003_c0003"
+    },
+    {
+      "role": "route_identity",
+      "record_id": "route_m15-sbs",
+      "source_id": "201111_1st2nd_progress_report",
+      "evidence_id": "201111_1st2nd_progress_report#p003_c0003"
+    },
+    {
+      "role": "route_scope",
+      "record_id": "relation_project-serves-route-m15-sbs_2",
+      "source_id": "201111_1st2nd_progress_report",
+      "evidence_id": "201111_1st2nd_progress_report#p003_c0003"
+    },
+    {
+      "role": "treatment_definition",
+      "record_id": "treatment_off-board-fare-collection-m15-sbs",
+      "source_id": "201111_1st2nd_progress_report",
+      "evidence_id": "201111_1st2nd_progress_report#p009_c0004"
+    },
+    {
+      "role": "treatment_scope",
+      "record_id": "relation_project-has-treatment-off-board-fare_9",
+      "source_id": "201111_1st2nd_progress_report",
+      "evidence_id": "201111_1st2nd_progress_report#p003_c0004"
+    },
+    {
+      "role": "route_treatment_event_bridge",
+      "record_id": "project_m15-sbs-first-second-aves",
+      "source_id": "201111_1st2nd_progress_report",
+      "evidence_id": "201111_1st2nd_progress_report#p003_c0003"
+    },
+    {
+      "role": "route_treatment_event_bridge",
+      "record_id": "project_m15-sbs-first-second-aves",
+      "source_id": "201111_1st2nd_progress_report",
+      "evidence_id": "201111_1st2nd_progress_report#p003_c0004"
+    }
+  ]
+}

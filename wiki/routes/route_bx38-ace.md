@@ -12,19 +12,22 @@ source_ids:
   - "meeting_doc_160441"
   - "meeting_doc_79331"
   - "mta_automated_camera_enforcement"
+  - "nyc_dot_gun_hill_road_completion_2023"
 local_observation_id: "route_bx38_ace"
 local_observation_ids:
   - "route_bx38_ace"
+  - "route_bx38_gun_hill_completion_2023"
   - "route_meeting_doc_127471_bx38"
   - "route_meeting_doc_160441_bx38"
   - "route_meeting_doc_79331_bx38"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T20:55:54.327Z"
+generated_at: "2026-07-14T22:59:35.627Z"
 raw_text: "Bx38 route"
 submission_ids:
   - "sub_1577ea8919280544"
   - "sub_687ef99ace5f3a30"
+  - "sub_7b5053ea43134503"
   - "sub_e61817493b86526e"
   - "sub_f4491b60e2599eed"
 payload:
@@ -83,6 +86,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_79331/blocks.jsonl"
     source_quote: "newly-installed panels for the new Bx25 route, which will connect northern Co-op City and the Bay Plaza shopping center with Allerton Ave and Bedford Park Boulevard"
     text_sha256: "sha256:d520a2d4664b56994ecf151b87892495ef0ca03b323f75a1fd9b073dc81776a8"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0021"
+    evidence_id: "nyc_dot_gun_hill_road_completion_2023#p001_b0021"
+    page_number: 1
+    role: "route_identity"
+    source_id: "nyc_dot_gun_hill_road_completion_2023"
+    source_path: "raw/sources/nyc_dot_gun_hill_road_completion_2023/blocks.jsonl"
+    source_quote: "Bx28 and Bx38 routes"
+    text_sha256: "sha256:f2d50c0df7d117ee3f132cf6496b5e1c9f938e889b2a9f2b323178d6a1a77a86"
     text_source: "raw_text"
 ---
 

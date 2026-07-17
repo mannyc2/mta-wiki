@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "receipt_id": "q15a-q20a-terminal-route-identity-2025",
+  "status": "identity_scope_reviewed_pre_apply",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T12:00:00Z",
+  "acquisition_method": "recovered_existing_official_capture",
+  "source": {
+    "source_id": "mta_queens_bus_network_redesign_service_changes",
+    "publisher": "MTA",
+    "source_url": "https://www.mta.info/project/queens-bus-network-redesign/service-changes",
+    "retrieved_at": "2026-06-07T01:03:14.507Z",
+    "publication_date": null,
+    "publication_date_reason": "The page exposes no publication metadata; the dates below are source-stated route-change effective dates.",
+    "artifact_sha256": "sha256:4b5dc9ca398980a3803e076378acefd7ac3ec04343e0ac32db95a17c1d51226d"
+  },
+  "reviews": {
+    "q15a_vs_q15": {
+      "decision": "do_not_merge",
+      "historical_record_id": "route_q15a-historical-2025",
+      "historical_record_state": "future_recovery_target",
+      "current_record_id": "route_q15-qbnr-2025",
+      "current_record_state": "future_recovery_target",
+      "evidence": [
+        {
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0017",
+          "source_block_sha256": "sha256:1aad597feeab3b8424914a99d10c29243fa70463c2983e3083a987e85510b98c",
+          "effective_date": "2025-06-29",
+          "route_label": "Q15",
+          "source_statement": "The Q15 will still serve 150 St between Beechhurst and Flushing via the existing Q15A routing."
+        },
+        {
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0018",
+          "source_block_sha256": "sha256:ba39621ef17d246365ed71d45fe4fed9ea27b6c327e80bad5de6024844260c7c",
+          "effective_date": "2025-06-29",
+          "route_label": "Q15A",
+          "source_statement": "Q15A service ended June 29, 2025. The Q15A will be discontinued."
+        }
+      ],
+      "deterministic_identity_inputs": [
+        {
+          "observation_kind": "route",
+          "local_observation_id": "route_q15a_historical_2025",
+          "create_new": true,
+          "expected_record_id": "route_q15a-historical-2025"
+        },
+        {
+          "observation_kind": "route",
+          "local_observation_id": "route_q15_qbnr_2025",
+          "create_new": true,
+          "expected_record_id": "route_q15-qbnr-2025"
+        }
+      ],
+      "rationale": "The redesign preserves part of the former Q15A routing in Q15 while explicitly ending the Q15A designation and service. Routing continuity is lifecycle context, not authority to merge the discontinued Q15A route identity into the continuing Q15 identity."
+    },
+    "q20a_vs_q20b_and_q20": {
+      "decision": "do_not_merge",
+      "historical_q20a_record_id": "route_q20-2014-10-07-flushing-jamaica",
+      "historical_q20b_record_id": "route_q20b-cb12-2011",
+      "current_q20_record_id": "route_q20-qbnr-2025",
+      "current_q20_record_state": "future_recovery_target",
+      "evidence": [
+        {
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0023",
+          "source_block_sha256": "sha256:0645ac27103cd691a5817a0808299e4993c7f7538210710f4c34244e748f4b1b",
+          "effective_date": "2025-06-29",
+          "route_label": "Q20",
+          "source_statement": "Q20 service started June 29, 2025. The Q20 will connect College Point and Jamaica using the existing Q20A routing along 20 Av and Main St. Existing Q20B service on 14 Av will be discontinued and replaced by the Q76."
+        },
+        {
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0024",
+          "source_block_sha256": "sha256:c7babc46e91c8d0982c7183093a134c084df0b711752fac30dc2d19ae135e670",
+          "effective_date": "2025-06-29",
+          "route_label": "Q20A",
+          "source_statement": "Q20A service ended June 29, 2025. The Q20A will be discontinued and replaced by the Q20, which mostly follows the same route."
+        },
+        {
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0025",
+          "source_block_sha256": "sha256:8b59f2194f59bcd49542bd27ff62da6d2549cd895b2d2f52f84c9de379cc9c7d",
+          "effective_date": "2025-06-27",
+          "route_label": "Q20B",
+          "source_statement": "Q20B service ended June 27, 2025. The Q20B will be discontinued."
+        }
+      ],
+      "canonical_inventory": {
+        "q20a_record_id": "route_q20-2014-10-07-flushing-jamaica",
+        "q20a_primary_route_id": "Q20A",
+        "q20a_display_name": "Q20A bus route",
+        "q20a_pre_review_scope": "aggregate_list_context",
+        "q20a_pre_review_scope_reason": "slash_route_surface",
+        "q20b_record_id": "route_q20b-cb12-2011",
+        "q20b_primary_route_id": "Q20B",
+        "q20b_scope": "true_route"
+      },
+      "current_q20_deterministic_identity_input": {
+        "observation_kind": "route",
+        "local_observation_id": "route_q20_qbnr_2025",
+        "create_new": true,
+        "expected_record_id": "route_q20-qbnr-2025"
+      },
+      "scope_decision": {
+        "record_id": "route_q20-2014-10-07-flushing-jamaica",
+        "route_record_scope": "true_route",
+        "route_record_scope_reason": "reviewed_historical_q20a_lifecycle_distinct_from_q20b_and_current_q20",
+        "semantic_correction_id": "core-coverage-q20a-route-scope-20260713",
+        "rationale": "The record's primary identity is Q20A, Q20B already has a separate canonical route record, and the official lifecycle rows independently name Q20A, Q20B, and the newly started Q20. Older Q20A/B and Q20AB literals are retained as source evidence but are not merge authority across these route identities."
+      },
+      "preservation_contract": [
+        "Preserve every historical submission id, source id, evidence reference, alias, and _merged_field_values literal on the Q20A record.",
+        "Patch only route_record_scope and route_record_scope_reason.",
+        "Represent replacement and inherited routing as lifecycle relations during later recovery, not as route identity merges."
+      ]
+    }
+  },
+  "sequencing_guards": [
+    "Install the do-not-merge pairs and guarded Q20A scope correction before recovery proposal application.",
+    "Do not mark any QBNR service-end work unit terminal until its evidence-backed canonical recovery has applied.",
+    "Do not activate historical_retired anchor dispositions before recovery applies.",
+    "This receipt does not propose, accept, or apply recovery observations and does not cut a release."
+  ]
+}

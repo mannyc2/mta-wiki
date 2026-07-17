@@ -12,17 +12,20 @@ source_ids:
   - "brt_south_brooklyn_b82_dec2017"
   - "brt_south_brooklyn_b82_jan2018"
   - "meeting_doc_138456"
+  - "meeting_doc_146846"
   - "meeting_doc_160441"
 local_observation_id: "route_bm5_brt_south_brooklyn_2017"
 local_observation_ids:
   - "route_bm5_brt_south_brooklyn_2017"
   - "route_bm5_brt_south_brooklyn_b82"
   - "route_bm5_brt_south_brooklyn_jan2018"
+  - "route_bm5_express_fall_2024_discontinuation"
+  - "route_bm5_express_summer_2024_realized"
   - "route_bm5_meeting_doc_138456"
   - "route_meeting_doc_160441_bm5"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-20T21:39:42.996Z"
+generated_at: "2026-07-13T10:40:26.458Z"
 raw_text: "BM5 express bus on Pennsylvania Ave"
 submission_ids:
   - "sub_2a01ed178ff2eddd"
@@ -30,6 +33,8 @@ submission_ids:
   - "sub_5fc734f9c0995658"
   - "sub_b66a7ed7e00c2ad5"
   - "sub_bed092e471b8097c"
+  - "sub_cb7405dfe2d3f757"
+  - "sub_f122b69d02d9f066"
 payload:
   _merged_field_values:
     description:
@@ -48,6 +53,7 @@ payload:
   description: "Express bus route serving Pennsylvania Ave"
   operator: "MTA Bus"
   route_id: "BM5"
+  route_label: "BM5"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "Express"
@@ -97,6 +103,26 @@ evidence_refs:
     page_number: 3
     source_id: "meeting_doc_160441"
     source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
+    text_sha256: "sha256:a1cb3550e548ba0e4cc902da5e264574b62e2318fcfe0a6f5418eb28d04373de"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0013"
+    evidence_id: "meeting_doc_146846#p002_c0013"
+    page_number: 2
+    role: "delivered_route_identity_and_trip_pattern"
+    source_id: "meeting_doc_146846"
+    source_path: "raw/sources/meeting_doc_146846/blocks.jsonl"
+    source_quote: "BM5"
+    text_sha256: "sha256:5f01e56329716c49b27e65e1edf1dbaf0ded2ee45f8a411a6dd0a7235b4905bb"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0005"
+    evidence_id: "meeting_doc_160441#p003_c0005"
+    page_number: 3
+    role: "retrospective_route_identity_and_trip_pattern"
+    source_id: "meeting_doc_160441"
+    source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
+    source_quote: "BM5"
     text_sha256: "sha256:a1cb3550e548ba0e4cc902da5e264574b62e2318fcfe0a6f5418eb28d04373de"
     text_source: "raw_text"
 ---

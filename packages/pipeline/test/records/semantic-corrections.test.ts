@@ -55,9 +55,15 @@ describe("semantic corrections", () => {
 
   it("replaces relation endpoints only when the target exists", () => {
     const records = [
-      rec("entity_a", "entity", {}),
-      rec("entity_b", "entity", {}),
-      rec("relation_ab", "relation", { relation_kind: "related_to", subject_id: "entity_a", object_id: "entity_b" }),
+      rec("entity_a", "entity", {}, { local_observation_id: "entity_a_local" }),
+      rec("entity_b", "entity", {}, { local_observation_id: "entity_b_local" }),
+      rec("relation_ab", "relation", {
+        relation_kind: "related_to",
+        subject_id: "entity_a",
+        subject_local_observation_id: "entity_a_local",
+        object_id: "entity_b",
+        object_local_observation_id: "entity_b_local",
+      }),
     ];
     const result = withSemanticCorrections(records, [
       correction({
@@ -68,7 +74,9 @@ describe("semantic corrections", () => {
         patch: { field: "subject_id", to: "entity_b" },
       }),
     ]);
-    expect(result.records.find((record) => record.record_id === "relation_ab")!.payload.subject_id).toBe("entity_b");
+    const corrected = result.records.find((record) => record.record_id === "relation_ab")!;
+    expect(corrected.payload.subject_id).toBe("entity_b");
+    expect(corrected.payload.subject_local_observation_id).toBe("entity_b_local");
 
     const skipped = withSemanticCorrections(records, [
       correction({
@@ -81,6 +89,108 @@ describe("semantic corrections", () => {
     ]);
     expect(skipped.summary.skipped).toBe(1);
     expect(skipped.issues[0]!.code).toBe("semantic_correction_skipped");
+  });
+
+  it("synchronizes endpoint-changing payload patches while preserving an explicit reviewed local pointer", () => {
+    const records = [
+      rec("entity_old", "entity", {}, { local_observation_id: "entity_old_local" }),
+      rec("entity_new", "entity", {}, { local_observation_id: "entity_new_primary" }),
+      rec("relation_endpoint", "relation", {
+        relation_kind: "related_to",
+        subject_id: "entity_old",
+        subject_local_observation_id: "entity_old_local",
+        object_id: "entity_old",
+        object_local_observation_id: "entity_old_local",
+      }),
+    ];
+    const result = withSemanticCorrections(records, [
+      correction({
+        correction_id: "semqa-local-sync-1",
+        op: "patch_payload",
+        record_id: "relation_endpoint",
+        patch: { set: { subject_id: "entity_new" } },
+      }),
+      correction({
+        correction_id: "semqa-local-sync-2",
+        op: "patch_payload",
+        record_id: "relation_endpoint",
+        guards: { payload: { object_id: "entity_old" } },
+        patch: {
+          set: {
+            object_id: "entity_new",
+            object_local_observation_id: "entity_new_reviewed_source_local",
+          },
+        },
+      }),
+    ]);
+    const relation = result.records.find((record) => record.record_id === "relation_endpoint")!;
+    expect(relation.payload).toMatchObject({
+      subject_id: "entity_new",
+      subject_local_observation_id: "entity_new_primary",
+      object_id: "entity_new",
+      object_local_observation_id: "entity_new_reviewed_source_local",
+    });
+  });
+
+  it("defers endpoint-local synchronization across reviewed null cleanup guards and treats blank as absent", () => {
+    const records = [
+      rec("entity_old", "entity", {}, { local_observation_id: "entity_old_local" }),
+      rec("entity_new", "entity", {}, { local_observation_id: "entity_new_primary" }),
+      rec("relation_null_cleanup", "relation", {
+        relation_kind: "department_head",
+        subject_id: "entity_old",
+        subject_local_observation_id: "entity_old_local",
+        object_id: "entity_old",
+        object_local_observation_id: "entity_old_local",
+        description: "Old description",
+      }),
+      rec("relation_blank_cleanup", "relation", {
+        relation_kind: "related_to",
+        subject_id: "entity_old",
+        subject_local_observation_id: "entity_old_local",
+        object_id: "entity_old",
+        object_local_observation_id: "entity_old_local",
+      }),
+    ];
+    const result = withSemanticCorrections(records, [
+      correction({
+        correction_id: "semqa-blank-1",
+        op: "patch_payload",
+        record_id: "relation_blank_cleanup",
+        guards: { payload: { subject_id: "entity_old" } },
+        patch: { set: { subject_id: "entity_new", subject_local_observation_id: "   " } },
+      }),
+      correction({
+        correction_id: "semqa-null-1",
+        op: "replace_endpoint",
+        record_id: "relation_null_cleanup",
+        guards: { payload: { object_id: "entity_old" } },
+        patch: { field: "object_id", to: "entity_new" },
+      }),
+      correction({
+        correction_id: "semqa-null-2",
+        op: "patch_payload",
+        record_id: "relation_null_cleanup",
+        guards: {
+          payload: {
+            object_local_observation_id: "entity_old_local",
+            description: "Old description",
+          },
+        },
+        patch: { set: { object_local_observation_id: null, description: "Reviewed description" } },
+      }),
+    ]);
+    expect(result.issues).toEqual([]);
+    expect(result.summary).toMatchObject({ applied: 3, skipped: 0 });
+    expect(result.records.find((record) => record.record_id === "relation_null_cleanup")?.payload).toMatchObject({
+      object_id: "entity_new",
+      object_local_observation_id: "entity_new_primary",
+      description: "Reviewed description",
+    });
+    expect(result.records.find((record) => record.record_id === "relation_blank_cleanup")?.payload).toMatchObject({
+      subject_id: "entity_new",
+      subject_local_observation_id: "entity_new_primary",
+    });
   });
 
   it("replaces evidence refs", () => {
@@ -129,13 +239,226 @@ describe("semantic corrections", () => {
     const records = [
       rec("entity_old", "entity", {}),
       rec("entity_new", "entity", {}),
-      rec("relation_old", "relation", { relation_kind: "related_to", subject_id: "entity_old", object_id: "entity_new" }),
+      rec("relation_old", "relation", {
+        relation_kind: "related_to",
+        subject_id: "entity_old",
+        subject_local_observation_id: "entity_old",
+        object_id: "entity_new",
+        object_local_observation_id: "entity_new",
+      }),
     ];
     const result = withSemanticCorrections(records, [
       correction({ correction_id: "semqa-000001", op: "supersede_record", record_id: "entity_old", patch: { survivor_record_id: "entity_new" } }),
     ]);
     expect(result.records.some((record) => record.record_id === "entity_old")).toBe(false);
-    expect(result.records.find((record) => record.record_id === "relation_old")!.payload.subject_id).toBe("entity_new");
+    const relation = result.records.find((record) => record.record_id === "relation_old")!;
+    expect(relation.payload.subject_id).toBe("entity_new");
+    expect(relation.payload.subject_local_observation_id).toBe("entity_new");
+    expect(relation.payload.object_local_observation_id).toBe("entity_new");
+  });
+
+  it("rejects cross-kind supersession instead of folding incompatible physical identities", () => {
+    expect(() => withSemanticCorrections([
+      rec("route_old", "route", {}),
+      rec("corridor_new", "corridor", {}),
+    ], [correction({
+      correction_id: "semqa-cross-kind",
+      op: "supersede_record",
+      record_id: "route_old",
+      patch: { survivor_record_id: "corridor_new" },
+    })])).toThrow("cannot supersede route route_old with corridor corridor_new");
+  });
+
+  it("applies a versioned correction supersession only after its reviewed replacement makes the old guard obsolete", () => {
+    const old = correction({
+      correction_id: "semqa-old-quarantine",
+      op: "set_review_state",
+      record_id: "relation_scope",
+      guards: { payload: { object_id: "route_old" } },
+      patch: { review_state: "quarantined" },
+    });
+    const replacement = correction({
+      correction_id: "relationship-integrity-replacement",
+      op: "replace_endpoint",
+      record_id: "relation_scope",
+      guards: { payload: { object_id: "route_old" } },
+      patch: { field: "object_id", to: "treatment_new" },
+    });
+    const records = [
+      rec("route_old", "route", {}),
+      rec("treatment_new", "treatment_component", {}),
+      rec("relation_scope", "relation", { subject_id: "route_old", object_id: "route_old" }),
+    ];
+    const result = withSemanticCorrections(records, [old, replacement], [{
+      correction_id: old.correction_id,
+      superseded_by: [replacement.correction_id],
+      reason: "Typed endpoint replacement supersedes quarantine.",
+    }]);
+    expect(result.issues).toEqual([]);
+    expect(result.summary).toMatchObject({ applied: 1, superseded: 1, skipped: 0 });
+    expect(result.records.find((record) => record.record_id === "relation_scope")?.payload.object_id).toBe("treatment_new");
+    expect(() => withSemanticCorrections(records, [old], [{
+      correction_id: old.correction_id,
+      superseded_by: ["missing-replacement"],
+      reason: "Invalid fixture.",
+    }])).toThrow("references missing replacement");
+  });
+
+  it("content-addresses an external reviewed decision when native derivation makes a correction obsolete", () => {
+    const stale = correction({
+      correction_id: "stale-native-derivation-retraction",
+      op: "retract_record",
+      record_id: "relation_no_longer_derived",
+    });
+    const decision = {
+      decision_id:
+        "relationship-reference-review-v1:692f49d5dbd6992a71ee23f4",
+      source_path:
+        "data/contracts/relationship-references/v1/review-decisions.jsonl",
+      source_sha256:
+        "c3f3545ced15c8f637469097eeb08db1ff8cd9c52a1c897d3b0ff8aadfa5f102",
+    };
+    const result = withSemanticCorrections([], [stale], [{
+      correction_id: stale.correction_id,
+      superseded_by: [],
+      superseded_by_decisions: [decision],
+      reason:
+        "The reviewed native non-edge decision prevents this relation from being derived.",
+    }]);
+    expect(result.issues).toEqual([]);
+    expect(result.summary).toMatchObject({
+      applied: 0,
+      superseded: 1,
+      skipped: 0,
+    });
+
+    expect(() => withSemanticCorrections([], [stale], [{
+      correction_id: stale.correction_id,
+      superseded_by: [],
+      superseded_by_decisions: [{
+        ...decision,
+        source_sha256: "0".repeat(64),
+      }],
+      reason: "Invalid hash fixture.",
+    }])).toThrow("decision source hash mismatch");
+  });
+
+  it("assigns canonical alias ownership with a guarded top-level correction", () => {
+    const historical = rec("route_historical", "route", {});
+    historical.record_aliases = ["route_shared"];
+    const result = withSemanticCorrections([historical], [correction({
+      correction_id: "alias-owner-review",
+      op: "set_record_aliases",
+      record_id: historical.record_id,
+      guards: { record_aliases: ["route_shared"] },
+      patch: { record_aliases: [] },
+    })]);
+    expect(result.issues).toEqual([]);
+    expect(result.records[0]?.record_aliases).toBeUndefined();
+
+    const stale = withSemanticCorrections([historical], [correction({
+      correction_id: "stale-alias-owner-review",
+      op: "set_record_aliases",
+      record_id: historical.record_id,
+      guards: { record_aliases: ["route_other"] },
+      patch: { record_aliases: [] },
+    })]);
+    expect(stale.summary.skipped).toBe(1);
+    expect(stale.issues[0]?.message).toContain("guard mismatch on record_aliases");
+
+    const fullRebuild = rec("route_historical", "route", {});
+    fullRebuild.record_aliases = ["route_current", "route_shared"];
+    const acceptedRebuildStates = withSemanticCorrections([fullRebuild], [correction({
+      correction_id: "alias-owner-full-rebuild-review",
+      op: "set_record_aliases",
+      record_id: fullRebuild.record_id,
+      guards: { record_aliases_one_of: [["route_shared"], ["route_shared", "route_current"]] },
+      patch: { record_aliases: [] },
+    })]);
+    expect(acceptedRebuildStates.issues).toEqual([]);
+    expect(acceptedRebuildStates.records[0]?.record_aliases).toBeUndefined();
+  });
+
+  it("folds cross-source treatment provenance into the survivor without replacing its semantics", () => {
+    const sharedEvidence = { source_id: "source_shared", block_id: "p001_c0001", source_quote: "Shared evidence" };
+    const survivor = rec(
+      "treatment_survivor",
+      "treatment_component",
+      { treatment_kind: "service_pattern", description: "Survivor description" },
+      {
+        source_id: "source_retrospective",
+        source_ids: ["source_retrospective"],
+        local_observation_id: "treatment_retrospective",
+        local_observation_ids: ["treatment_retrospective", "treatment_fall2026"],
+        display_name: "Weekday express-bus trip additions",
+        evidence_refs: [
+          { source_id: "source_retrospective", block_id: "p002_c0001", source_quote: "Trips were added" },
+          sharedEvidence,
+        ],
+        submission_ids: ["submission_retrospective"],
+        generated_at: "2026-07-12T09:00:00.000Z",
+      },
+    );
+    const duplicate = rec(
+      "treatment_duplicate",
+      "treatment_component",
+      { treatment_kind: "service_pattern", description: "Duplicate description" },
+      {
+        source_id: "source_planning",
+        source_ids: ["source_planning"],
+        local_observation_id: "treatment_planning",
+        local_observation_ids: ["treatment_planning", "treatment_fall_2026"],
+        display_name: "Planned weekday express-bus trip additions",
+        evidence_refs: [
+          { source_id: "source_planning", block_id: "p003_c0004", source_quote: "Trips will be added" },
+          sharedEvidence,
+        ],
+        submission_ids: ["submission_planning"],
+        generated_at: "2026-07-13T10:30:00.000Z",
+      },
+    );
+    const relation = rec("relation_project_treatment", "relation", {
+      relation_kind: "has_treatment",
+      subject_id: "project_express_bus",
+      subject_local_observation_id: "project_express_bus",
+      object_id: "treatment_duplicate",
+      object_local_observation_id: "treatment_planning",
+    });
+    const project = rec("project_express_bus", "project", {});
+
+    const result = withSemanticCorrections([survivor, duplicate, project, relation], [
+      correction({
+        correction_id: "semqa-000001",
+        op: "supersede_record",
+        record_id: "treatment_duplicate",
+        patch: { survivor_record_id: "treatment_survivor" },
+      }),
+    ]);
+
+    expect(result.records.some((record) => record.record_id === "treatment_duplicate")).toBe(false);
+    const folded = result.records.find((record) => record.record_id === "treatment_survivor")!;
+    expect(folded.source_id).toBe("source_retrospective");
+    expect(folded.local_observation_id).toBe("treatment_retrospective");
+    expect(folded.display_name).toBe("Weekday express-bus trip additions");
+    expect(folded.payload).toEqual({ treatment_kind: "service_pattern", description: "Survivor description" });
+    expect(folded.source_ids).toEqual(["source_planning", "source_retrospective"]);
+    expect(folded.local_observation_ids).toEqual([
+      "treatment_fall2026",
+      "treatment_fall_2026",
+      "treatment_planning",
+      "treatment_retrospective",
+    ]);
+    expect(folded.submission_ids).toEqual(["submission_planning", "submission_retrospective"]);
+    expect(folded.evidence_refs).toEqual([
+      { source_id: "source_retrospective", block_id: "p002_c0001", source_quote: "Trips were added" },
+      sharedEvidence,
+      { source_id: "source_planning", block_id: "p003_c0004", source_quote: "Trips will be added" },
+    ]);
+    expect(folded.generated_at).toBe("2026-07-13T10:30:00.000Z");
+
+    const rewritten = result.records.find((record) => record.record_id === "relation_project_treatment")!;
+    expect(rewritten.payload.object_id).toBe("treatment_survivor");
+    expect(rewritten.payload.object_local_observation_id).toBe("treatment_retrospective");
   });
 
   it("skips stale guards and is idempotent for guarded corrections", () => {

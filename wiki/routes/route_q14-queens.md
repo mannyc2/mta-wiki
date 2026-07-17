@@ -9,17 +9,20 @@ display_name: "Q14 bus route"
 source_id: "queens_addendum_equity_evaluation_appendix_d"
 source_ids:
   - "meeting_doc_87961"
+  - "mta_queens_bus_network_redesign_service_changes"
   - "queens_addendum_equity_evaluation_appendix_d"
 local_observation_id: "route_q14_queens"
 local_observation_ids:
   - "route_q14_proposed_queens_redesign"
+  - "route_q14_qbnr_2025"
   - "route_q14_queens"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T21:10:56.938Z"
+generated_at: "2026-07-13T00:07:37.000Z"
 raw_text: "Discontinued segment would be served by the proposed Q14."
 submission_ids:
   - "sub_0d95d011247300d0"
+  - "sub_27984584b537ba25"
   - "sub_8c894a4ad8e0633c"
 payload:
   _merged_field_values:
@@ -29,6 +32,7 @@ payload:
   borough: "Queens"
   borough_normalized: "queens"
   description: "Proposed route to serve discontinued Q23 segment"
+  gtfs_route_id: "Q14"
   note: "Proposed in New Draft Plan (Mar 2022)"
   route_id: "Q14"
   route_label: "Q14"
@@ -58,6 +62,16 @@ evidence_refs:
     source_path: "raw/sources/meeting_doc_87961/blocks.jsonl"
     source_quote: "Discontinued segment would be served by the proposed Q14."
     text_sha256: "sha256:dcf4388ef05cf1b9c0ced90d2306eea56c289a1593a32437c991f6500d46585b"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0016"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0016"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q14"
+    text_sha256: "sha256:de85a4b4e6b29093b7ec8eb0b7ea0e5722465e9ffb023b049e59621da2aeea8f"
     text_source: "raw_text"
 ---
 

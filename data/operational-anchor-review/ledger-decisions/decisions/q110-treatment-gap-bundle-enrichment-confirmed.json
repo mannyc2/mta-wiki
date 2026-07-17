@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "q110-treatment-gap-bundle-enrichment-confirmed",
+  "gap_id": "operational-coverage:5c36e36846ab3cbcc34ea29a",
+  "prior_verdict": "not_applicable",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-12",
+  "decided_at": "2026-07-12T21:51:17.000Z",
+  "rationale": "The earlier diagnostic closure remains correct, but the stable Q110 occurrence has now been enriched after an all-cell audit. It binds the event only to the reviewed three-member Q110 bundle: reroute/extension, Hempstead Avenue discontinuation and Q82 replacement, and stop removals. Q36 and Q82 remain treatment context rather than occurrence routes.",
+  "proposal_ids": [
+    "orp_qbnr_q110_stop_removal_enrichment_2025"
+  ],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

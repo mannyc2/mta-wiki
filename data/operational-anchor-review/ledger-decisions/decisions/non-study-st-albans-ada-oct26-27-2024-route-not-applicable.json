@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-st-albans-ada-oct26-27-2024-route-not-applicable",
+  "gap_id": "operational-coverage:da7a22411e94dd6ec100b134",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "This is temporary LIRR track work and replacement-bus service for a rail-station rehabilitation, not a route-level NYCT bus treatment. Operational-anchor recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_st-albans-ada-oct26-27-2024",
+      "source_id": "meeting_doc_151821",
+      "evidence_id": "meeting_doc_151821#p002_c0001",
+      "block_id": "p002_c0001"
+    }
+  ],
+  "search_receipt_ids": []
+}

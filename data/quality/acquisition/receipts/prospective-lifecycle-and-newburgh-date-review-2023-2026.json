@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "receipt_id": "prospective-lifecycle-and-newburgh-date-review-2023-2026",
+  "status": "temporal_semantics_reviewed",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T10:30:00Z",
+  "acquisition_method": "recovered_existing_official_captures_plus_staged_official_primary_corroboration",
+  "scope": {
+    "reviewed_event_count": 7,
+    "corrected_lifecycle_count": 7,
+    "corrected_raw_source_literal_count": 1,
+    "verified_normalized_scalar_count": 1,
+    "trigger": "Independent review of operational-coverage records found action-shaped event kinds whose canonical lifecycle overstated source-time delivery, plus a normalized date whose scalar was correct but whose submitted raw literal was not verbatim."
+  },
+  "lifecycle_decisions": [
+    {
+      "record_id": "event_bus-only-signals-install-summer2024",
+      "source_id": "flatbush_ave_cb8_jun2024",
+      "evidence_id": "flatbush_ave_cb8_jun2024#p008_c0003",
+      "evidence_sha256": "sha256:6de405704b1b391ff7c9c606dcf2e096205b96b50e19bf6c6d4acae4d39783cf",
+      "source_date": "2024-06-25",
+      "prior_lifecycle_phase": "installed",
+      "corrected_lifecycle_phase": "planned",
+      "expected_queue_status": "terminal",
+      "corroborating_relation_id": "relation_batch023-bus-only-signals-related-to-summer2024-installation",
+      "corroborating_relation_status": "deferred",
+      "basis": "The official presentation says the three bus-only signals are planned for Summer 2024 installation. It does not report completed installation."
+    },
+    {
+      "record_id": "event_late-summer-fall2026-bus-lanes-operational",
+      "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026",
+      "evidence_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026#p011_c0003",
+      "evidence_sha256": "sha256:42e3289fa8f030fe8494748b812c8c8b433fb4887f088bc652f9109284d73a47",
+      "source_date": "2026-05-07",
+      "prior_lifecycle_phase": "launched",
+      "corrected_lifecycle_phase": "planned",
+      "expected_queue_status": "terminal",
+      "basis": "The official CB7 implementation timeline says the bus lanes are expected to be operational in late Summer/Fall. It is prospective, not a launch confirmation."
+    },
+    {
+      "record_id": "event_meeting-doc-174076-transfer-policy-launch",
+      "source_id": "meeting_doc_174076",
+      "evidence_id": "meeting_doc_174076#p001_c0005",
+      "evidence_sha256": "sha256:74156ebf82f0d0a7fd6fde182a2a141168dd4bc3e7699405d90023de57aa9efd",
+      "source_date": "2025-05-28",
+      "prior_lifecycle_phase": "launched",
+      "corrected_lifecycle_phase": "proposed",
+      "expected_queue_status": "terminal",
+      "corroborating_relation_id": "relation_meeting-doc-174076-qbnr-phase1-launch",
+      "corroborating_relation_status": "planned",
+      "basis": "The staff summary seeks Board approval to launch the promotional policy on June 29. The cited document is a proposal, not retrospective delivery evidence."
+    },
+    {
+      "record_id": "event_bus-lane-enforcement-task-force-start",
+      "source_id": "meeting_doc_128931",
+      "evidence_id": "meeting_doc_128931#p005_c0004",
+      "evidence_sha256": "sha256:2be0baf9f9382ed84f9fe9f3ab0f38c3be9bcaadf48d862f56f2c63ec546bd0c",
+      "supporting_evidence_id": "meeting_doc_128931#p005_c0003",
+      "supporting_evidence_sha256": "sha256:07a16c9720162cd78d93d18d2a421fbc79cc54790fc9a4f2932adb3b5d587bef",
+      "source_date": "2023-11-29",
+      "prior_lifecycle_phase": "launched",
+      "corrected_lifecycle_phase": "planned",
+      "expected_queue_status": "terminal",
+      "corroborating_relation_id": "relation_bus-lane-task-force-has-timeline-event",
+      "corroborating_relation_status": "planned",
+      "basis": "The November 29 minutes say the task force will begin on December 4. At the cited source time this is a planned organizational milestone."
+    },
+    {
+      "record_id": "event_bus-lanes-operational-latesummer2026",
+      "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026",
+      "evidence_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026#p011_c0003",
+      "evidence_sha256": "sha256:42e3289fa8f030fe8494748b812c8c8b433fb4887f088bc652f9109284d73a47",
+      "source_date": "2026-05-07",
+      "prior_lifecycle_phase": "launched",
+      "corrected_lifecycle_phase": "planned",
+      "expected_queue_status": "terminal",
+      "basis": "The official CB5 implementation timeline says the bus lanes are expected to be operational in late Summer/Fall. It is prospective, not a launch confirmation."
+    },
+    {
+      "record_id": "event_bus-lanes-operational-mid-june-2026",
+      "source_id": "broadway_69_st_roosevelt_ave_may2026",
+      "evidence_id": "broadway_69_st_roosevelt_ave_may2026#p012_c0003",
+      "evidence_sha256": "sha256:45b58037c13ab29042f75b92be7029df8d016c8f98d275ba737e24932023e046",
+      "source_date": "2026-05-19",
+      "prior_lifecycle_phase": "launched",
+      "corrected_lifecycle_phase": "planned",
+      "expected_queue_status": "terminal",
+      "basis": "The official Broadway/69th Street/Roosevelt Avenue implementation timeline says the bus lanes are expected to be operational in mid-June. It is prospective, not a launch confirmation."
+    },
+    {
+      "record_id": "event_newburgh-beacon-shuttle-expansion",
+      "source_id": "meeting_doc_194096",
+      "evidence_id": "meeting_doc_194096#p015_c0008",
+      "evidence_sha256": "sha256:a92f77d953822b671c9f7f0b25a3a512fa7e550271e2167b05c8efd7ea596736",
+      "supporting_evidence_id": "meeting_doc_194096#p001_c0002",
+      "supporting_evidence_sha256": "sha256:1c2e7d7242d4937bffeb7ae2ac5b4071b084298424eb1637e9c216f6f292d64f",
+      "source_date": "2025-12",
+      "prior_lifecycle_phase": "expanded",
+      "corrected_lifecycle_phase": "planned",
+      "expected_queue_status": "terminal",
+      "basis": "The December 2025 MTA slide says the shuttle will expand beginning on January 2. It is prospective at source time, not an already expanded service."
+    }
+  ],
+  "newburgh_date_validation": {
+    "record_id": "event_newburgh-beacon-shuttle-expansion",
+    "verdict": "verified_scalar_date_and_corrected_raw_literal",
+    "canonical_date": "2026-01-02",
+    "canonical_date_precision": "day",
+    "prior_date_text": "January 2, 2026",
+    "corrected_date_text": "Tuesday, January 2",
+    "corrected_date_text_normalized": {
+      "raw_text": "Tuesday, January 2",
+      "precision": "unknown",
+      "confidence": "unparsed"
+    },
+    "local_source_id": "meeting_doc_194096",
+    "local_source_date_evidence_id": "meeting_doc_194096#p001_c0002",
+    "local_source_date_evidence_sha256": "sha256:1c2e7d7242d4937bffeb7ae2ac5b4071b084298424eb1637e9c216f6f292d64f",
+    "local_event_evidence_id": "meeting_doc_194096#p015_c0008",
+    "local_event_evidence_sha256": "sha256:a92f77d953822b671c9f7f0b25a3a512fa7e550271e2167b05c8efd7ea596736",
+    "local_document_date": "2025-12",
+    "local_weekday_literal": "Tuesday",
+    "staged_official_primary_source": {
+      "publisher": "Metropolitan Transportation Authority",
+      "source_id": "newburgh_beacon_changes_january_2026",
+      "url": "https://www.mta.info/article/changes-newburgh-beacon-connecting-service-january-2026",
+      "title": "Changes to Newburgh-Beacon connecting service in January 2026",
+      "updated_at": "2025-12-12T11:00:00-05:00",
+      "confirmed_onset": "2026-01-02",
+      "evidence_id": "newburgh_beacon_changes_january_2026#p001_b0048",
+      "evidence_sha256": "sha256:7f520b16a965cced9b4847b22912db8ba71a0235a15db471211bd2474a79ab32",
+      "capture": {
+        "retrieved_at": "2026-07-13T08:36:52.827Z",
+        "source_html_sha256": "sha256:6ee0bfac7aac02899c6361c5491adde1ea1edeb2bec4b9c8052349d248bfd1d5",
+        "source_html_bytes": 46926,
+        "text_sha256": "sha256:1deb6347c8c17c1898f67d847c1ac2fd2f1b0ea64bc900dba319e44b0da30523",
+        "blocks_sha256": "sha256:c711767578da4fdef830cccb9fb3ec9d760697f3bcdb79448d8b95aa737687d8"
+      }
+    },
+    "supporting_government_source": {
+      "publisher": "Office of Governor Kathy Hochul",
+      "url": "https://www.governor.ny.gov/news/better-transit-hudson-valley-governor-hochul-announces-enhanced-newburgh-beacon-bridge-shuttle",
+      "title": "Better Transit in the Hudson Valley: Governor Hochul Announces Enhanced Newburgh-Beacon Bridge Shuttle to Commence in 2026",
+      "published_at": "2025-12-12T11:36:00-05:00",
+      "confirmed_onset": "2026-01-02",
+      "weekday_literal": "Friday"
+    },
+    "basis": "The December 2025 MTA slide literally says Tuesday, January 2 and omits the year. The submitted record silently changed that literal to January 2, 2026. A separately staged contemporaneous MTA announcement explicitly says January 2, 2026, so the normalized scalar is retained while the raw source literal is restored verbatim with an unparsed companion. The Governor announcement independently corroborates the year and calendar-correct Friday weekday."
+  },
+  "normalizer_contract": {
+    "rule": "Compound source-shaped prospective evidence may supply a missing or legacy-other lifecycle, but replay must not silently overwrite an existing concrete phase; guarded semantic corrections own those mutations.",
+    "prospective_gates": [
+      "Flatbush bus-only signals planned for Summer 2024 installation",
+      "Bus lanes expected to be operational",
+      "Board approval requested to launch the promotional transfer policy",
+      "November minutes stating the task force will begin December 4",
+      "Newburgh-Beacon Bridge Shuttle will expand bus service"
+    ],
+    "anti_broadening": [
+      "Do not treat the word planned, expected, will, or approval alone as sufficient to override lifecycle.",
+      "Do not silently overwrite an explicit concrete lifecycle during normalization replay.",
+      "Do not change event_family, descriptions, identities, evidence refs, occurrences, or relations.",
+      "Keep the verified Newburgh-Beacon 2026-01-02 normalized scalar while preserving the cited slide's verbatim raw date literal."
+    ]
+  },
+  "expected_effect": {
+    "canonical_event_delta": 7,
+    "canonical_relation_delta": 0,
+    "operational_occurrence_delta": 0,
+    "priority_gap_delta": 0,
+    "priority_open_delta": 0,
+    "priority_terminal_delta": 0
+  }
+}

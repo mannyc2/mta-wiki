@@ -16,6 +16,7 @@ raw_text: "Temporary Fare Promotions during the Rockaway Line Rehabilitation & R
 submission_ids:
   - "sub_6f0debe50d59484f"
 payload:
+  authority_tier: "board_material"
   content_type: "Staff Summary"
   date: "2024-12-18"
   date_normalized:

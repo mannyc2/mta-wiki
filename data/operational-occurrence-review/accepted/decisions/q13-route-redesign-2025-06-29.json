@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "decision_id": "q13-route-redesign-2025-06-29",
+  "review_state": "approved",
+  "accepted_at": "2026-07-12T23:41:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-12",
+  "rationale": "The official MTA Q13 row binds a realized June 29, 2025 onset and one uniquely anchored route to all 2 canonical treatment members stated for that row. Each member retains its literal treatment family. The official Queens Bus Network Redesign project context separately supports route_redesign as the reviewed bundle analysis family. No alternative route scope is inherited.",
+  "occurrence_id": "occurrence:de25867eefd234ee717d5477",
+  "founding_key": "event:event_q13-qbnr-service-change-2025-06-29",
+  "observation_event_record_ids": [
+    "event_q13-qbnr-service-change-2025-06-29"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-q13",
+    "relation_qbnr-2025-has-q13-sanford-avenue-reroute",
+    "relation_qbnr-2025-has-q13-limited-stops",
+    "relation_qbnr-has-q13-service-change-2025-06-29"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-06-29",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_q13-qbnr-service-change-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0015"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-q13-service-change-2025-06-29",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0015"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_meeting-doc-160441-q13",
+      "gtfs_route_id": "Q13",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_meeting-doc-160441-q13",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0015"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-q13",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0015"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "bundle",
+  "treatment": {
+    "kind": "bundle",
+    "analysis_family": "route_redesign",
+    "analysis_family_evidence_bindings": [
+      {
+        "role": "bundle_analysis_family",
+        "record_id": "project_queens-bus-network-redesign",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0001"
+      }
+    ],
+    "members": [
+      {
+        "treatment_record_id": "treatment_q13-sanford-avenue-reroute-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q13-sanford-avenue-reroute-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0015"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q13-sanford-avenue-reroute",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0015"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q13-limited-stops-2025",
+        "treatment_family": "bus_stop_or_boarding",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q13-limited-stops-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0015"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q13-limited-stops",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0015"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,20 +1,21 @@
 ---
 managed_by: "mta-wiki-materializer"
-record_id: "source_meeting-doc-170871_2"
+record_id: "source_meeting-doc-170871"
 record_kind: "source"
 display_name: "Bridges and Tunnels Committee Meeting April 2025"
 source_id: "meeting_doc_170871"
 source_ids:
   - "meeting_doc_170871"
-local_observation_id: "source_170871_meeting"
+local_observation_id: "source_meeting_doc_170871"
 local_observation_ids:
   - "source_170871_meeting"
+  - "source_meeting_doc_170871"
 review_state: "unreviewed"
 truth_status: "source_stated"
 generated_at: "2026-06-21T17:16:57.426Z"
-raw_text: "Bridges and Tunnels Committee Meeting April 2025"
 submission_ids:
   - "sub_87fa6d35d29c8b94"
+  - "sub_ed62645edb423c8e"
 payload:
   authority_tier: "board_material"
   content_type: "committee meeting book"

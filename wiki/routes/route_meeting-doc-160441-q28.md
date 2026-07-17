@@ -8,18 +8,28 @@ display_name: "Q28 (NYCT)"
 source_id: "meeting_doc_160441"
 source_ids:
   - "meeting_doc_160441"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_meeting_doc_160441_q28"
 local_observation_ids:
   - "route_meeting_doc_160441_q28"
+  - "route_q28_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-20T22:12:26.712Z"
+generated_at: "2026-07-12T22:39:53.000Z"
+raw_text: "Q28"
 submission_ids:
   - "sub_903125f33da622b2"
+  - "sub_fe23efc11355139d"
 payload:
+  _merged_field_values:
+    route_type_normalized:
+      - "local"
+      - "bus"
   description: "Bayside-Flushing • Running time adjustments"
+  gtfs_route_id: "Q28"
   operator: "NYCT"
   route_id: "Q28"
+  route_name: "Q28"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "local"
@@ -33,6 +43,16 @@ evidence_refs:
     source_id: "meeting_doc_160441"
     source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
     text_sha256: "sha256:385178108f7be74ba367420569e47119d97e73e0fdd68dc1ff9610a748e6587a"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0033"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0033"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q28"
+    text_sha256: "sha256:7f653e7f39a96161a721f68397691f398ef1e7b3139c374f39c10d9b9033bf15"
     text_source: "raw_text"
 ---
 

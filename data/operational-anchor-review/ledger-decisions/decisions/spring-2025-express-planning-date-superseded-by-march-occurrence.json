@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "spring-2025-express-planning-date-superseded-by-march-occurrence",
+  "gap_id": "operational-coverage:6aab3b03b1a97ab76aee0282",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T16:10:30.000Z",
+  "rationale": "The December staff summary states only the prospective Spring 2025 schedule window. The separate official retrospective establishes the realized March 2025 onset used by approved occurrence occurrence:833f69866045c25967353373; refining the planning record itself would overwrite its source-time precision, so this study-date diagnostic is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

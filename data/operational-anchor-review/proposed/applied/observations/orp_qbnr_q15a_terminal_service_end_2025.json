@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "proposal_id": "orp_qbnr_q15a_terminal_service_end_2025",
+  "proposal_kind": "observation_bundle",
+  "corpus_fingerprint": "e89b9f9120cf2dc4894027de4eae4d497ac9a7ef475820d732f3f67b79aa40ad",
+  "route_anchor_pin": {
+    "path": "data/exports/releases/v1-rc7/route_anchors.jsonl",
+    "release_id": "v1-rc7",
+    "sha256": "0b8de93cb71bf45c009654beff918a1baea0db43a418c8469482570c87a2f1da"
+  },
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf"
+  ],
+  "source_id": "mta_queens_bus_network_redesign_service_changes",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-independent-review",
+  "accepted_at": "2026-07-13T03:03:29.000Z",
+  "provenance": {
+    "drafted_by": "codex-corpus-completion-terminal-review",
+    "drafted_at": "2026-07-13T02:30:00.000Z",
+    "method": "qbnr_batch_spec_expansion",
+    "verifier": {
+      "reviewed_by": "codex-independent-qbnr-terminal-proposal-review",
+      "reviewed_at": "2026-07-13T03:03:29.000Z",
+      "verdict": "passed",
+      "rationale": "The exact official Q15A row and block hash, reviewed historical Q15A identity, v1-rc7 route-anchor pin, exhaustive clause partition, deterministic six-row journal conversion, collision-free canonical IDs, and non-operational service-end semantics were independently verified. Fresh strict expansion is byte-identical to this proposal."
+    }
+  },
+  "rationale": "The exact official MTA Q15A row establishes that the historical Q15A route ended on June 29, 2025 and was discontinued. The row requires a distinct historical Q15A canonical route because no current canonical route safely identifies Q15A. Alternative-service and navigation language is retained as context only. The terminal lifecycle event is intentionally excluded from study projection and must not produce an operational occurrence.",
+  "observations": [
+    {
+      "observation_kind": "route",
+      "local_observation_id": "route_q15a_historical_2025",
+      "label": "Q15A",
+      "raw_text": "Q15A",
+      "payload": {
+        "route_id": "Q15A",
+        "route_name": "Q15A"
+      },
+      "expected_record_id": "route_q15a-historical-2025",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0018",
+          "block_id": "p001_b0018",
+          "source_quote": "Q15A"
+        }
+      ]
+    },
+    {
+      "observation_kind": "event",
+      "local_observation_id": "event_q15a_qbnr_end_2025_06_29",
+      "label": "Q15A end June 29, 2025",
+      "raw_text": "Q15A service ended June 29, 2025.",
+      "payload": {
+        "event_kind": "route service end",
+        "date_text": "June 29, 2025",
+        "date_normalized": "2025-06-29",
+        "date_precision": "day",
+        "description": "Q15A service ended June 29, 2025."
+      },
+      "expected_record_id": "event_q15a-qbnr-end-2025-06-29",
+      "evidence_bindings": [
+        {
+          "role": "event_date",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0018",
+          "block_id": "p001_b0018",
+          "source_quote": "Q15A service ended June 29, 2025."
+        }
+      ]
+    },
+    {
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q15a_service_discontinuation_2025",
+      "label": "Q15A service discontinuation",
+      "raw_text": "The Q15A will be discontinued.",
+      "payload": {
+        "treatment_kind": "route service discontinuation",
+        "description": "Q15A route service was discontinued."
+      },
+      "expected_record_id": "treatment_q15a-service-discontinuation-2025",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0018",
+          "block_id": "p001_b0018",
+          "source_quote": "The Q15A will be discontinued."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "local_observation_id": "relation_qbnr_2025_affects_q15a",
+      "label": "Queens Bus Network Redesign affects Q15A",
+      "relation_kind": "affects_route",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "route_q15a_historical_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Queens Bus Network Redesign changed Q15A service.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0018",
+          "block_id": "p001_b0018",
+          "source_quote": "Q15A"
+        },
+        {
+          "role": "route_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0018",
+          "block_id": "p001_b0018",
+          "source_quote": "Q15A"
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_has_q15a_end_2025_06_29",
+      "label": "Queens Bus Network Redesign has Q15A end event",
+      "relation_kind": "has_timeline_event",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "event_q15a_qbnr_end_2025_06_29"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Q15A service ended June 29, 2025.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0018",
+          "block_id": "p001_b0018",
+          "source_quote": "Q15A service ended June 29, 2025."
+        },
+        {
+          "role": "timeline_relation",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0018",
+          "block_id": "p001_b0018",
+          "source_quote": "Q15A service ended June 29, 2025."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q15a_service_discontinuation",
+      "label": "Queens Bus Network Redesign includes Q15A service discontinuation",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q15a_service_discontinuation_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Q15A route service was discontinued.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0018",
+          "block_id": "p001_b0018",
+          "source_quote": "The Q15A will be discontinued."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0018",
+          "block_id": "p001_b0018",
+          "source_quote": "The Q15A will be discontinued."
+        }
+      ]
+    }
+  ]
+}

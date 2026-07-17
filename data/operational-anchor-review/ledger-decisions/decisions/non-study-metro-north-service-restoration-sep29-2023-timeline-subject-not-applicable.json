@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "non-study-metro-north-service-restoration-sep29-2023-timeline-subject-not-applicable",
+  "gap_id": "operational-coverage:365dec2206a0a147f9a82e4a",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T08:20:00.000Z",
+  "rationale": "This is an emergency Metro-North rail-service restoration with temporary bus bridging. It is outside the NYCT bus operational-treatment universe and should remain contextual rather than become a bus study anchor.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_metro-north-service-restoration-sep29-2023",
+      "source_id": "meeting_doc_124996",
+      "evidence_id": "meeting_doc_124996#p012_c0004",
+      "block_id": "p012_c0004"
+    },
+    {
+      "record_id": "event_metro-north-service-restoration-sep29-2023",
+      "source_id": "meeting_doc_124996",
+      "evidence_id": "meeting_doc_124996#p012_c0005",
+      "block_id": "p012_c0005"
+    }
+  ],
+  "search_receipt_ids": []
+}

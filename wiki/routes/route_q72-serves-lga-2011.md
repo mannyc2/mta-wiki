@@ -9,16 +9,20 @@ source_id: "110622_lga_aa_slides"
 source_ids:
   - "110622_lga_aa_slides"
   - "2012_04_20_brt_lga_workshop_summary"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q72_serves_lga_2011"
 local_observation_ids:
   - "route_q72_lga_2012"
+  - "route_q72_qbnr_2025"
   - "route_q72_serves_lga_2011"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-10T23:05:19.297Z"
+generated_at: "2026-07-12T22:16:08.000Z"
+raw_text: "Q72"
 submission_ids:
   - "sub_1936d2bc367312dc"
   - "sub_cbca95166d87b6f7"
+  - "sub_e8a4fa54f764d9b4"
 payload:
   _merged_field_values:
     description:
@@ -27,8 +31,10 @@ payload:
   borough: "Queens"
   borough_normalized: "queens"
   description: "Bus route serving LaGuardia Airport as of June 2011"
+  gtfs_route_id: "Q72"
   route_id: "Q72"
   route_label: "Q72"
+  route_name: "Q72"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "bus"
@@ -70,6 +76,16 @@ evidence_refs:
     source_id: "2012_04_20_brt_lga_workshop_summary"
     source_path: "raw/sources/2012_04_20_brt_lga_workshop_summary/blocks.jsonl"
     text_sha256: "sha256:698ac1bfe02b42111ff6ecef658f4ef4376b558ad0085be2567714856231470f"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0073"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0073"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q72"
+    text_sha256: "sha256:9cf5c127ac2733dc5d38249171e310dce8e5e32eeca10aa715335f128b25fb8f"
     text_source: "raw_text"
 ---
 

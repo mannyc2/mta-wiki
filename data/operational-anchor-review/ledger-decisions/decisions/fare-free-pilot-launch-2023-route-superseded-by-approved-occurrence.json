@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "decision_id": "fare-free-pilot-launch-2023-route-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:8b33da6e976e949ed5665fa9",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T06:45:30.000Z",
+  "rationale": "The retrospective official evaluation's pilot-start event now founds one approved seven-route occurrence with exact rc10 route identities and delivered route scope. The broad event-level route diagnostic is therefore superseded and not independently applicable.",
+  "proposal_ids": [
+    "orp_fare_free_pilot_route_scope_and_resumption_2023_2024"
+  ],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

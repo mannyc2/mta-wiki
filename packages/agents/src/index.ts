@@ -75,13 +75,13 @@ export type {
 } from "@mta-wiki/pipeline/quality/release-quality";
 
 export {
-  materializeWiki,
   readCanonicalRecordById,
   readCanonicalRecords,
   readCanonicalRecordsByKind,
   readCanonicalRecordsFromDbFile,
   readCanonicalRecordsFromJsonl,
-} from "@mta-wiki/pipeline/materialize/materialize";
+} from "@mta-wiki/pipeline/materialize/canonical-read";
+export { materializeWiki } from "@mta-wiki/pipeline/materialize/materialize";
 export {
   CANONICAL_DB_VERSION,
   canonicalDbDump,

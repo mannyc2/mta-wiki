@@ -10589,6 +10589,57 @@ function normalizeLifecyclePhase(eventKind: string, eventFamily: string | undefi
   return { phase: "other", passthrough: eventKind.trim() };
 }
 
+/**
+ * Correct a small class of source-time lifecycle overclaims where a concrete action noun
+ * (installation, launch) obscures explicit prospective language in the same evidence.
+ * These gates are intentionally compound and source-shaped: generic words such as
+ * "expected" or "planned" are too broad to override a submitted concrete phase safely.
+ */
+function prospectiveLifecyclePhase(payload: JsonObject, context?: NormalizationContext): "planned" | "proposed" | undefined {
+  const eventKind = stringValue(payload.event_kind);
+  if (!eventKind) return undefined;
+  const eventKindKey = normalizedToken(eventKind);
+  const evidenceHaystack = [
+    normalizedHaystack(payload, ["event_kind", "event_name", "description", "date_text"]),
+    normalizedContextHaystack(context),
+  ].filter(Boolean).join(" ");
+
+  if (
+    eventKindKey === "installation" &&
+    evidenceHaystack.includes("bus_only_signals") &&
+    evidenceHaystack.includes("are_planned_for_summer_2024_installation")
+  ) {
+    return "planned";
+  }
+  if (
+    eventKindKey === "service_launch" &&
+    evidenceHaystack.includes("bus_lanes_expected_to_be_operational")
+  ) {
+    return "planned";
+  }
+  if (
+    eventKindKey === "launch" &&
+    evidenceHaystack.includes("to_obtain_board_approval_to_launch_a_promotional_transfer_policy")
+  ) {
+    return "proposed";
+  }
+  if (
+    eventKindKey === "launch" &&
+    evidenceHaystack.includes("citywide_bus_lane_enforcement_task_force") &&
+    evidenceHaystack.includes("which_will_begin_on_december_4_2023")
+  ) {
+    return "planned";
+  }
+  if (
+    eventKindKey === "service_expansion" &&
+    evidenceHaystack.includes("newburgh_beacon_bridge_shuttle") &&
+    evidenceHaystack.includes("will_expand_bus_service")
+  ) {
+    return "planned";
+  }
+  return undefined;
+}
+
 function normalizeEventPayload(payload: JsonObject, context?: NormalizationContext): JsonObject {
   const next: JsonObject = { ...payload };
   const existingEventFamily = stringValue(payload.event_family);
@@ -10608,7 +10659,11 @@ function normalizeEventPayload(payload: JsonObject, context?: NormalizationConte
       addIfMissingOrOther(next, "event_family", payloadEventFamily);
     }
     const { phase, passthrough } = normalizeLifecyclePhase(eventKind, stringValue(next.event_family));
-    addIfMissingOrOther(next, "lifecycle_phase", phase);
+    const prospectivePhase = prospectiveLifecyclePhase(payload, context);
+    // Evidence-shaped prospective gates are safe defaults for new/legacy-`other` records, but
+    // they must not silently rewrite a submitted concrete phase during replay. Existing semantic
+    // defects are corrected through the guarded correction journal, where the mutation is visible.
+    addIfMissingOrOther(next, "lifecycle_phase", prospectivePhase ?? phase);
     if (passthrough && (next.lifecycle_phase_other === undefined || next.lifecycle_phase_other === eventKind)) addIfMissing(next, "lifecycle_phase_other", passthrough);
     if (!passthrough && next.lifecycle_phase_other === eventKind) delete next.lifecycle_phase_other;
   }
@@ -10767,6 +10822,14 @@ function normalizeTreatmentKind(value: string) {
     ["paint_removal", "capital_or_infrastructure"],
     ["physical_separation", "bus_lane"],
     ["physical_protection", "bus_lane"],
+    ["platform_barrier", "safety"],
+    ["platform_barriers", "safety"],
+    ["platform_bollards", "safety"],
+    ["platform_edge_barrier", "safety"],
+    ["platform_heating", "capital_or_infrastructure"],
+    ["platform_replacement", "capital_or_infrastructure"],
+    ["platform_safety_barrier", "safety"],
+    ["platform_screen_doors", "safety"],
     ["police_deployment", "safety"],
     ["power_system_upgrade", "capital_or_infrastructure"],
     ["pre_payment", "fare_collection"],
@@ -10810,6 +10873,10 @@ function normalizeTreatmentKind(value: string) {
     ["route_re_alignment", "service_pattern"],
     ["route_optimization", "service_pattern"],
     ["route_reroute", "service_pattern"],
+    ["route_rerouting", "service_pattern"],
+    ["route_segment_discontinuation_and_replacement", "service_pattern"],
+    ["route_shortening", "service_pattern"],
+    ["route_truncation", "service_pattern"],
     ["routing_change", "service_pattern"],
     ["selective_milling", "capital_or_infrastructure"],
     ["sewer_cleaning", "capital_or_infrastructure"],
@@ -10943,7 +11010,7 @@ function normalizeTreatmentKind(value: string) {
   if (key.includes("enforcement") || key.includes("camera")) return "enforcement";
   if (key.includes("curb") || key.includes("loading") || key.includes("parking")) return "curb_management";
   if (key.includes("turn") || key.includes("restriction") || key.includes("access") || key.includes("through_trip") || key.includes("traffic")) return "traffic_restriction";
-  if (key.includes("bus_stop") || key.includes("boarding") || key.includes("platform") || key.includes("bus_bulb") || key.includes("boarder")) return "bus_stop_or_boarding";
+  if (key.includes("bus_stop") || key.includes("boarding") || key.includes("bus_bulb") || key.includes("boarder")) return "bus_stop_or_boarding";
   if (key.includes("signal") || key.includes("queue_jump") || key.includes("tsp")) return "signal_priority";
   if (key.includes("pedestrian") || key.includes("neckdown") || key.includes("ada")) return "pedestrian_or_accessibility";
   if (key.includes("signage") || key.includes("marking")) return "signage_and_markings";
@@ -11519,13 +11586,14 @@ function normalizeSourceGapPayload(payload: JsonObject): JsonObject {
 const SOURCE_DATE_FIELDS = ["publication_date", "date", "document_date", "date_text", "year"] as const;
 
 /** Authority tier from the document's own classification fields (C7). Returns undefined when no
- *  signal — S2.7 enriches this with publisher heuristics and builds the corroboration view on top. */
+ *  signal — S2.7 enriches this with publisher heuristics and builds the corroboration view on top.
+ *  Bare-word signals must use token boundaries: substring matching `press` also matches `express`. */
 function normalizeAuthorityTier(payload: JsonObject): string | undefined {
   const hay = normalizedHaystack(payload, ["content_type", "source_type", "document_type", "document_kind", "publisher", "title", "description"]);
   if (!hay) return undefined;
   if (hasAny(hay, ["evaluation", "monitoring_report", "monitoring", "assessment", "audit", "before_and_after"])) return "official_evaluation";
-  if (hasAny(hay, ["board", "committee", "agenda", "minutes", "board_book"])) return "board_material";
-  if (hasAny(hay, ["press_release", "press", "announcement", "newsroom"])) return "press_release";
+  if (hasAny(hay, ["board", "committee", "agenda", "minutes", "board_book", "staff_summary"])) return "board_material";
+  if (hasAny(hay, ["press_release", "announcement", "newsroom"]) || hasAnyToken(hay, ["press"])) return "press_release";
   if (hasAny(hay, ["data_dictionary", "dataset", "open_data", "metadata", "data_documentation"])) return "dataset_documentation";
   if (hasAny(hay, ["plan", "report", "study", "proposal", "presentation", "brochure", "factsheet", "fact_sheet"])) return "plan_document";
   return undefined;

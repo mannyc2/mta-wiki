@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "retirement_id": "retire-ace-dec2025-warning-cohort-non-study-decision-20260713",
+  "retired_decision_id": "non-study-ace-program-expansion-dec2025-timeline-subject-not-applicable",
+  "retired_decision_sha256": "c89594a8ccb5896cfc1798b336aa64b45de04c966817beea8edd45627aa4fe70",
+  "retired_at": "2026-07-13T22:30:00Z",
+  "reason": "The prior decision treated warning-phase activation as non-study. The existing accepted September 2025 ACE occurrence and the bounded December source establish warning-phase activation as the operational treatment onset, while still forbidding inference of later fine-bearing enforcement. Linking the exact B60/B68/M57 cohort structurally removes the old timeline-subject gap, so the now-unknown decision is retired rather than silently dropped.",
+  "replacement_context": {
+    "event_record_id": "event_ace-program-expansion-dec2025",
+    "event_date": "2025-12-08",
+    "route_record_ids": [
+      "route_b60",
+      "route_b68-nyct-2025",
+      "route_m57-nyct-2025"
+    ],
+    "treatment_record_id": "treatment_ace-b60-b68-m57-warning-phase-2025-12-08",
+    "timeline_relation_record_id": "relation_ace-b60-b68-m57-warning-has-activation-2025-12-08",
+    "occurrence_id": "occurrence:1ed365a241353614f72f025e",
+    "successor_gap_ids": [
+      "operational-coverage:cb81df5ab159c18671171291",
+      "operational-coverage:64381715a1777d38c32034f4"
+    ],
+    "successor_decision_ids": [
+      "ace-b60-b68-m57-warning-phase-2025-12-08-route-gap-superseded-by-approved-occurrence",
+      "ace-b60-b68-m57-warning-phase-2025-12-08-treatment-gap-superseded-by-approved-occurrence"
+    ],
+    "explicit_non_claim": "No fine-bearing enforcement onset is inferred."
+  },
+  "original_decision": {
+    "schema_version": 1,
+    "decision_id": "non-study-ace-program-expansion-dec2025-timeline-subject-not-applicable",
+    "gap_id": "operational-coverage:ee9721813dc1e45e440d0589",
+    "prior_verdict": "unreviewed",
+    "verdict": "not_applicable",
+    "reviewer": "codex-corpus-completion-2026-07-13",
+    "decided_at": "2026-07-13T08:20:00.000Z",
+    "rationale": "This record describes routes entering ACE warning periods, not the later start of violation issuance. A warning-period program expansion is not a realized enforcement onset for the speed study; any later activation must be recovered as a separate route-atomic occurrence from retrospective evidence.",
+    "proposal_ids": [],
+    "evidence_refs": [
+      {
+        "record_id": "event_ace-program-expansion-dec2025",
+        "source_id": "nyct_key_performance_metrics_doc194001",
+        "evidence_id": "nyct_key_performance_metrics_doc194001#p010_c0011",
+        "block_id": "p010_c0011"
+      }
+    ],
+    "search_receipt_ids": []
+  }
+}

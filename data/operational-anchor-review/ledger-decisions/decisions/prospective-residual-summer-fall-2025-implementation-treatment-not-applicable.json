@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-summer-fall-2025-implementation-treatment-not-applicable",
+  "gap_id": "operational-coverage:676f779df57dbe063df0a4e8",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_summer-fall-2025-implementation is a prospective planning milestone, not a realized treatment occurrence. Its sole incoming has_timeline_event relation is explicitly planned or proposed. Proposed project components cannot be cross-joined into delivered treatment scope, so treatment recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_summer-fall-2025-implementation",
+      "source_id": "dekalb_lafayette_cb3_dec2024",
+      "evidence_id": "dekalb_lafayette_cb3_dec2024#p027_c0002",
+      "block_id": "p027_c0002"
+    },
+    {
+      "record_id": "relation_project-has-event-implementation_6",
+      "source_id": "dekalb_lafayette_cb3_dec2024",
+      "evidence_id": "dekalb_lafayette_cb3_dec2024#p027_c0002",
+      "block_id": "p027_c0002"
+    }
+  ],
+  "search_receipt_ids": []
+}

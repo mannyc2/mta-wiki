@@ -15,7 +15,8 @@ import {
   type AliasAddition,
   type DoNotMergeAddition,
 } from "@mta-wiki/pipeline/identity/identity-override-writes";
-import { materializeWiki, readCanonicalRecords } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
+import { materializeWiki } from "@mta-wiki/pipeline/materialize/materialize";
 import { createSubmissionEntry, submissionPath } from "@mta-wiki/pipeline/records/submissions";
 import type { JsonObject, MtaCanonicalRecord, MtaSubmissionEntry, MtaSubmitObservationInput } from "@mta-wiki/db/types";
 

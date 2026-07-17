@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "q7-treatment-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:207ee1adeeeae30390128ff6",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-12",
+  "decided_at": "2026-07-12T20:14:24.000Z",
+  "rationale": "The broad inherited anchor row intentionally preserves several project-level treatment candidates and is not a safe treatment-level study projection. Approved occurrence occurrence:c5e9aba290ca2be1be6fb38e already binds the Q7 event to its reviewed three-member route-redesign bundle using same-block official evidence, so further recovery of this broad diagnostic treatment gap is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

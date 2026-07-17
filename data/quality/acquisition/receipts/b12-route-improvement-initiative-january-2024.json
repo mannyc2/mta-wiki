@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "receipt_id": "b12-route-improvement-initiative-january-2024",
+  "status": "staged_official_program_onset_and_management_scope_reconciled",
+  "operator": "codex-corpus-completion-2026-07-13",
+  "reviewed_at": "2026-07-13T16:40:00Z",
+  "scope": {
+    "project_record_id": "project_dob-route-improvement-initiative",
+    "event_record_id": "event_route-improvement-initiative-start",
+    "route_record_id": "route_b12-ace",
+    "gtfs_route_id": "B12",
+    "treatment_record_id": "treatment_b12-deliberate-proactive-service-management"
+  },
+  "official_source_capture": {
+    "source_id": "meeting_doc_143341",
+    "publisher": "Metropolitan Transportation Authority",
+    "document_date": "2024-06",
+    "artifacts": {
+      "metadata_json_sha256": "feccd263adc23b6ffe733936c178c25615f2cfa8d47fda17da6abef9b7409ac2",
+      "source_pdf_sha256": "1695a37fe9c8aa7990bc0c52db0ffbe600e90e828a2aa12f8fe58559d07a24d5",
+      "blocks_jsonl_sha256": "c9fec17bd49d215cb61d46f046e3514dd7405e4cc1bc6ff225bf5451c769be71"
+    },
+    "evidence": [
+      {
+        "evidence_id": "meeting_doc_143341#p003_c0005",
+        "evidence_sha256": "sha256:d4f212c84e28586aaa5c1efdf39ad1bd2e9bceefe59f3c41a65a8eb24a5ef308",
+        "finding": "The official report identifies the Department of Buses Route Improvement Initiative on the B12."
+      },
+      {
+        "evidence_id": "meeting_doc_143341#p003_c0006",
+        "evidence_sha256": "sha256:e87e796834a61be41b21c38fbf6927232956bc72fc86b3270db2fe4fbb99a8da",
+        "finding": "The report explicitly dates the program's inception to January 2024 and identifies B12."
+      },
+      {
+        "evidence_id": "meeting_doc_143341#p003_c0007",
+        "evidence_sha256": "sha256:d0b1bda9e8de2057087c8ee8d95f01c7b7088e4c55757309ee79dbbead030441",
+        "finding": "By the June report, deliberate and proactive service management is stated to be a key contributor to the program's improvements."
+      },
+      {
+        "evidence_id": "meeting_doc_143341#p003_c0011",
+        "evidence_sha256": "sha256:70c9b0ecb1b5799d9ed3a74181d6dac9d5039c044bc900136a8a0c0f87b1ee30",
+        "finding": "The report documents terminal-management examples without assigning each example a January onset."
+      },
+      {
+        "evidence_id": "meeting_doc_143341#p004_c0011",
+        "evidence_sha256": "sha256:1c29eca33f75f2e5d6dda24095e2605d4b4787abf300943c611a099e502ce9ca",
+        "finding": "The report documents route-management examples without assigning each example a January onset."
+      }
+    ]
+  },
+  "temporal_adjudication": {
+    "occurrence_onset": "2024-01",
+    "occurrence_precision": "month",
+    "onset_applies_to": "The program-level B12 Route Improvement Initiative service-management package.",
+    "component_onset_disposition": "Unknown. The June retrospective documents individual management tactics but does not state that every tactic began in January 2024.",
+    "prohibited_inference": "Do not project the January program onset onto each enumerated terminal or route-management tactic."
+  },
+  "treatment_adjudication": {
+    "scope_kind": "atomic",
+    "treatment_family": "service_pattern",
+    "canonical_abstraction": "Route Improvement Initiative service-management program",
+    "basis": "The study treatment is the one program-level management package. The detailed tactics are supporting descriptions with unresolved individual onset dates, not separately dated interventions."
+  },
+  "contamination_control": {
+    "excluded_record_id": "treatment_platform-safety-barriers",
+    "reason": "The platform-barrier material is a separate subway story later in the same document and is not part of the B12 program."
+  },
+  "reproducibility": {
+    "curation_script": "scripts/curate-b12-route-improvement-initiative-january-2024.ts",
+    "promotion_script": "scripts/promote-b12-route-improvement-initiative-2024.ts",
+    "focused_test": "packages/pipeline/test/records/corpus-b12-route-improvement-initiative-lifecycle.test.ts"
+  }
+}

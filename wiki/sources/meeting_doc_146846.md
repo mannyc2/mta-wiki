@@ -15,7 +15,7 @@ generated_at: "2026-06-20T18:05:43.532Z"
 submission_ids:
   - "sub_852250c7f836995c"
 payload:
-  authority_tier: "press_release"
+  authority_tier: "board_material"
   content_type: "staff summary"
   date_text: "July 16, 2024"
   date_text_normalized:

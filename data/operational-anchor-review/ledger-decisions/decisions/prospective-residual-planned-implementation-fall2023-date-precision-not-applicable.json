@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "decision_id": "prospective-residual-planned-implementation-fall2023-date-precision-not-applicable",
+  "gap_id": "operational-coverage:0e6a838de09e3609672377bd",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T20:40:00.000Z",
+  "rationale": "event_planned-implementation-fall2023 records the prospective target \"Fall 2023\", not a realized physical or service onset. Its sole incoming has_timeline_event relation is explicitly planned or proposed. Refining that forecast into a study date would substitute a planning target for operational evidence, so date recovery is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_planned-implementation-fall2023",
+      "source_id": "fordham_rd_inwood_cab_may2023",
+      "evidence_id": "fordham_rd_inwood_cab_may2023#p046_c0005",
+      "block_id": "p046_c0005"
+    },
+    {
+      "record_id": "relation_project-event-implementation",
+      "source_id": "fordham_rd_inwood_cab_may2023",
+      "evidence_id": "fordham_rd_inwood_cab_may2023#p046_c0002",
+      "block_id": "p046_c0002"
+    },
+    {
+      "record_id": "relation_project-event-implementation",
+      "source_id": "fordham_rd_inwood_cab_may2023",
+      "evidence_id": "fordham_rd_inwood_cab_may2023#p046_c0005",
+      "block_id": "p046_c0005"
+    }
+  ],
+  "search_receipt_ids": []
+}

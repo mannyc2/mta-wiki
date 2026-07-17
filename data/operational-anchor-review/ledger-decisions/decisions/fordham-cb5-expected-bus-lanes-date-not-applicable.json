@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "fordham-cb5-expected-bus-lanes-date-not-applicable",
+  "gap_id": "operational-coverage:f0cde4b6c6605307b280fd71",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T09:25:00.000Z",
+  "rationale": "The CB5 timeline says only 'Late Summer/Fall' and explicitly describes the bus lanes as expected to be operational. This is an imprecise future forecast, not a realized onset whose day or month can be refined.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_bus-lanes-operational-latesummer2026",
+      "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026",
+      "evidence_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026#p011_c0003",
+      "block_id": "p011_c0003"
+    }
+  ],
+  "search_receipt_ids": []
+}

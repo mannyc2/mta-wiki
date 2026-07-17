@@ -1,18 +1,20 @@
 ---
 managed_by: "mta-wiki-materializer"
-record_id: "source_meeting-doc-160631_2"
+record_id: "source_meeting-doc-160631"
 record_kind: "source"
 display_name: "MTA Board Action Items - December 2024"
 source_id: "meeting_doc_160631"
 source_ids:
   - "meeting_doc_160631"
-local_observation_id: "source_meeting_doc_160631_board_book"
+local_observation_id: "source_meeting_doc_160631"
 local_observation_ids:
+  - "source_meeting_doc_160631"
   - "source_meeting_doc_160631_board_book"
 review_state: "unreviewed"
 truth_status: "source_stated"
 generated_at: "2026-06-20T22:30:49.936Z"
 submission_ids:
+  - "sub_310cf21e75744a31"
   - "sub_d8e919eb217528ce"
 payload:
   authority_tier: "board_material"
@@ -44,6 +46,14 @@ evidence_refs:
     source_id: "meeting_doc_160631"
     source_path: "raw/sources/meeting_doc_160631/blocks.jsonl"
     text_sha256: "sha256:5f9cd9ce531d6511df2421ee46214de32e778d30511a3e4407e407cd96421065"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_160631#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_160631"
+    source_path: "raw/sources/meeting_doc_160631/blocks.jsonl"
+    text_sha256: "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4"
     text_source: "raw_text"
   -
     block_id: "p002_c0002"

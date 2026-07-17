@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "decision_id": "express-bus-trip-discontinuation-2024-09-01",
+  "review_state": "approved",
+  "accepted_at": "2026-07-13T10:50:00.000Z",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "rationale": "The official schedule-query capture establishes September 1, 2024 as the formal 2024Sep bundle boundary. The later official retrospective confirms that the identical six-route weekday trip package added in summer was removed in fall. September 3 is the first affected regular weekday after the Sunday boundary and Labor Day, not a competing onset date; the occurrence therefore uses the formal September 1 schedule-effective boundary while preserving that operating-day distinction in review rationale.",
+  "occurrence_id": "occurrence:1dddfb078a97dd148a4e123d",
+  "founding_key": "event:event_express-bus-schedule-readjustment-effective-2024-09-01",
+  "observation_event_record_ids": [
+    "event_express-bus-schedule-readjustment-effective-2024-09-01"
+  ],
+  "observation_relation_record_ids": [
+    "relation_fall-2024-express-readjustment-affect-bm2",
+    "relation_fall-2024-express-readjustment-affect-bm5",
+    "relation_fall-2024-express-readjustment-affect-sim1c",
+    "relation_fall-2024-express-readjustment-affect-sim23",
+    "relation_fall-2024-express-readjustment-affect-sim24",
+    "relation_fall-2024-express-readjustment-affect-sim4c",
+    "relation_fall-2024-express-readjustment-has-september-1-schedule-adjustment",
+    "relation_fall-2024-express-readjustment-has-weekday-trip-discontinuation"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2024-09-01",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_express-bus-schedule-readjustment-effective-2024-09-01",
+        "source_id": "ny_open_data_mta_bus_schedule_boundaries_2024",
+        "evidence_id": "ny_open_data_mta_bus_schedule_boundaries_2024#p001_b0016"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_fall-2024-express-readjustment-has-september-1-schedule-adjustment",
+        "source_id": "meeting_doc_160441",
+        "evidence_id": "meeting_doc_160441#p003_c0004"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_bm2-brt-south-brooklyn-2017",
+      "gtfs_route_id": "BM2",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_bm2-brt-south-brooklyn-2017",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_fall-2024-express-readjustment-affect-bm2",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_bm5-brt-south-brooklyn-2017",
+      "gtfs_route_id": "BM5",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_bm5-brt-south-brooklyn-2017",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_fall-2024-express-readjustment-affect-bm5",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_sim1c-meeting-doc-138456",
+      "gtfs_route_id": "SIM1C",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_sim1c-meeting-doc-138456",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_fall-2024-express-readjustment-affect-sim1c",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_sim4c-meeting-doc-138456",
+      "gtfs_route_id": "SIM4C",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_sim4c-meeting-doc-138456",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_fall-2024-express-readjustment-affect-sim4c",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_sim23-madison-ave-cb6-jun2025",
+      "gtfs_route_id": "SIM23",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_sim23-madison-ave-cb6-jun2025",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_fall-2024-express-readjustment-affect-sim23",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    },
+    {
+      "route_record_id": "route_sim24-madison-ave-cb6-jun2025",
+      "gtfs_route_id": "SIM24",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_sim24-madison-ave-cb6-jun2025",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_fall-2024-express-readjustment-affect-sim24",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0005"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "atomic",
+  "treatment": {
+    "kind": "atomic",
+    "member": {
+      "treatment_record_id": "treatment_weekday-express-bus-trip-discontinuation-fall-2024",
+      "treatment_family": "service_pattern",
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "record_id": "treatment_weekday-express-bus-trip-discontinuation-fall-2024",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0004"
+        },
+        {
+          "role": "treatment_scope",
+          "record_id": "relation_fall-2024-express-readjustment-has-weekday-trip-discontinuation",
+          "source_id": "meeting_doc_160441",
+          "evidence_id": "meeting_doc_160441#p003_c0004"
+        }
+      ]
+    }
+  }
+}

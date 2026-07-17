@@ -1,0 +1,590 @@
+{
+  "schema_version": 1,
+  "proposal_id": "orp_qbnr_q1_q3_q8_service_changes_2025",
+  "proposal_kind": "observation_bundle",
+  "corpus_fingerprint": "c0d9797b3165d7ca42d3e0f7cbfaea5a80e24ef00d6554b0cdedf160f8f102bd",
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf",
+    "operational-coverage:45dd3045070322bc90d91414",
+    "operational-coverage:a9b2bf1ff109628219637775"
+  ],
+  "source_id": "mta_queens_bus_network_redesign_service_changes",
+  "review_state": "accepted",
+  "accepted_by": "codex-corpus-completion-root-review",
+  "accepted_at": "2026-07-12T21:09:20.000Z",
+  "provenance": {
+    "drafted_by": "codex-corpus-completion-2026-07-12",
+    "drafted_at": "2026-07-12T21:01:16.000Z",
+    "method": "manual_row_scoped_curation",
+    "verifier": {
+      "reviewed_by": "codex-independent-source-review",
+      "reviewed_at": "2026-07-12T21:09:19.000Z",
+      "verdict": "passed",
+      "rationale": "Every observation and relation was checked against the resolved official source blocks and current canonical identities. Q1 is one three-member treatment bundle, Q3 and Q8 are atomic stop-removal changes, and Q36 is never modeled as an occurrence route. All 22 generated journal entries preview as accepted."
+    }
+  },
+  "rationale": "Three exact official MTA route rows establish source-local route identity, realized effective dates, and bounded treatment scope for Q1, Q3, and Q8. Q1 is preserved as one occurrence-sized three-member bundle; Q3 and Q8 each contain only an atomic stop-removal intervention. Q36 is retained only inside the Q1 replacement-treatment description and is never projected as a Q1 occurrence route.",
+  "observations": [
+    {
+      "expected_record_id": "route_q1-queens",
+      "target_record_id": "route_q1-queens",
+      "observation_kind": "route",
+      "local_observation_id": "route_q1_qbnr_effective_2025",
+      "label": "Q1",
+      "raw_text": "Q1",
+      "payload": {
+        "route_id": "Q1",
+        "route_name": "Q1"
+      },
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "Q1"
+        }
+      ]
+    },
+    {
+      "expected_record_id": "event_q1-route-redesign-effective-2025-06-29",
+      "observation_kind": "event",
+      "local_observation_id": "event_q1_route_redesign_effective_2025_06_29",
+      "label": "Q1 changes took effect June 29, 2025",
+      "raw_text": "Changes to the Q1 took effect June 29, 2025.",
+      "payload": {
+        "event_kind": "route redesign service change",
+        "date_text": "June 29, 2025",
+        "description": "The official Q1 service changes took effect June 29, 2025."
+      },
+      "evidence_bindings": [
+        {
+          "role": "event_date",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "Changes to the Q1 took effect June 29, 2025."
+        }
+      ]
+    },
+    {
+      "expected_record_id": "treatment_q1-western-extension-2025",
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q1_western_extension_2025",
+      "label": "Q1 western extension",
+      "raw_text": "The Q1 will be extended west along Hillside Av to Sutphin Blvd.",
+      "payload": {
+        "treatment_kind": "service expansion",
+        "description": "Q1 was extended west along Hillside Avenue to Sutphin Boulevard.",
+        "location_text": "Hillside Avenue to Sutphin Boulevard"
+      },
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "The Q1 will be extended west along Hillside Av to Sutphin Blvd."
+        }
+      ]
+    },
+    {
+      "expected_record_id": "treatment_q1-stop-removal-2025",
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q1_stop_removal_2025",
+      "label": "Q1 stop removals",
+      "raw_text": "Some stops have been removed.",
+      "payload": {
+        "treatment_kind": "stop removal",
+        "description": "Some Q1 stops were removed."
+      },
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "Some stops have been removed."
+        }
+      ]
+    },
+    {
+      "expected_record_id": "treatment_q1-springfield-service-replacement-2025",
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q1_springfield_service_replacement_2025",
+      "label": "Q1 Springfield Boulevard service replacement",
+      "raw_text": "The Q36 will replace existing Springfield Blvd service.",
+      "payload": {
+        "treatment_kind": "route segment discontinuation and replacement",
+        "description": "Existing Q1 Springfield Boulevard service was replaced by Q36 service.",
+        "location_text": "Springfield Boulevard"
+      },
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "The Q36 will replace existing Springfield Blvd service."
+        }
+      ]
+    },
+    {
+      "expected_record_id": "route_meeting-doc-133291-q3",
+      "target_record_id": "route_meeting-doc-133291-q3",
+      "observation_kind": "route",
+      "local_observation_id": "route_q3_qbnr_effective_2025",
+      "label": "Q3",
+      "raw_text": "Q3",
+      "payload": {
+        "route_id": "Q3",
+        "route_name": "Q3"
+      },
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0005",
+          "block_id": "p001_b0005",
+          "source_quote": "Q3"
+        }
+      ]
+    },
+    {
+      "expected_record_id": "event_q3-route-redesign-effective-2025-06-29",
+      "observation_kind": "event",
+      "local_observation_id": "event_q3_route_redesign_effective_2025_06_29",
+      "label": "Q3 changes took effect June 29, 2025",
+      "raw_text": "Changes to the Q3 took effect June 29, 2025.",
+      "payload": {
+        "event_kind": "route redesign service change",
+        "date_text": "June 29, 2025",
+        "description": "The official Q3 service changes took effect June 29, 2025."
+      },
+      "evidence_bindings": [
+        {
+          "role": "event_date",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0005",
+          "block_id": "p001_b0005",
+          "source_quote": "Changes to the Q3 took effect June 29, 2025."
+        }
+      ]
+    },
+    {
+      "expected_record_id": "treatment_q3-stop-removal-2025",
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q3_stop_removal_2025",
+      "label": "Q3 stop-removal change",
+      "raw_text": "The Q3 will keep its current routing, but some stops have been removed.",
+      "payload": {
+        "treatment_kind": "stop removal",
+        "description": "Q3 retained its routing while some stops were removed."
+      },
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0005",
+          "block_id": "p001_b0005",
+          "source_quote": "The Q3 will keep its current routing, but some stops have been removed."
+        }
+      ]
+    },
+    {
+      "expected_record_id": "route_q8-woodhaven-2014",
+      "target_record_id": "route_q8-woodhaven-2014",
+      "observation_kind": "route",
+      "local_observation_id": "route_q8_qbnr_effective_2025",
+      "label": "Q8",
+      "raw_text": "Q8",
+      "payload": {
+        "route_id": "Q8",
+        "route_name": "Q8"
+      },
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0010",
+          "block_id": "p001_b0010",
+          "source_quote": "Q8"
+        }
+      ]
+    },
+    {
+      "expected_record_id": "event_q8-route-redesign-effective-2025-08-31",
+      "observation_kind": "event",
+      "local_observation_id": "event_q8_route_redesign_effective_2025_08_31",
+      "label": "Q8 changes took effect August 31, 2025",
+      "raw_text": "Changes to the Q8 took effect August 31, 2025.",
+      "payload": {
+        "event_kind": "route redesign service change",
+        "date_text": "August 31, 2025",
+        "description": "The official Q8 service changes took effect August 31, 2025."
+      },
+      "evidence_bindings": [
+        {
+          "role": "event_date",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0010",
+          "block_id": "p001_b0010",
+          "source_quote": "Changes to the Q8 took effect August 31, 2025."
+        }
+      ]
+    },
+    {
+      "expected_record_id": "treatment_q8-stop-removal-2025",
+      "observation_kind": "treatment_component",
+      "local_observation_id": "treatment_q8_stop_removal_2025",
+      "label": "Q8 stop-removal change",
+      "raw_text": "The Q8 will keep its current routing, but some stops have been removed.",
+      "payload": {
+        "treatment_kind": "stop removal",
+        "description": "Q8 retained its routing while some stops were removed."
+      },
+      "evidence_bindings": [
+        {
+          "role": "treatment_definition",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0010",
+          "block_id": "p001_b0010",
+          "source_quote": "The Q8 will keep its current routing, but some stops have been removed."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "local_observation_id": "relation_qbnr_2025_affects_q1",
+      "label": "Queens redesign affects Q1",
+      "relation_kind": "affects_route",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "route_q1_qbnr_effective_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "The implemented Queens redesign changed Q1 service.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "Q1"
+        },
+        {
+          "role": "route_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "Q1"
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_has_q1_2025_effective_event",
+      "label": "Queens redesign has Q1 effective-date event",
+      "relation_kind": "has_timeline_event",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "event_q1_route_redesign_effective_2025_06_29"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "The official Q1 changes took effect June 29, 2025.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "Changes to the Q1 took effect June 29, 2025."
+        },
+        {
+          "role": "timeline_relation",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "Changes to the Q1 took effect June 29, 2025."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q1_western_extension",
+      "label": "Queens redesign includes Q1 western extension",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q1_western_extension_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "The Q1 redesign extended service west along Hillside Avenue.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "The Q1 will be extended west along Hillside Av to Sutphin Blvd."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "The Q1 will be extended west along Hillside Av to Sutphin Blvd."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q1_stop_removal",
+      "label": "Queens redesign includes Q1 stop removals",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q1_stop_removal_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "The Q1 redesign removed some stops.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "Some stops have been removed."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "Some stops have been removed."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q1_springfield_replacement",
+      "label": "Queens redesign includes Q1 Springfield Boulevard service replacement",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q1_springfield_service_replacement_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "Q36 replaced the prior Q1 Springfield Boulevard service segment.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "The Q36 will replace existing Springfield Blvd service."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0003",
+          "block_id": "p001_b0003",
+          "source_quote": "The Q36 will replace existing Springfield Blvd service."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_affects_q3",
+      "label": "Queens redesign affects Q3",
+      "relation_kind": "affects_route",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "route_q3_qbnr_effective_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "The implemented Queens redesign changed Q3 stops.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0005",
+          "block_id": "p001_b0005",
+          "source_quote": "Q3"
+        },
+        {
+          "role": "route_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0005",
+          "block_id": "p001_b0005",
+          "source_quote": "Q3"
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_has_q3_2025_effective_event",
+      "label": "Queens redesign has Q3 effective-date event",
+      "relation_kind": "has_timeline_event",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "event_q3_route_redesign_effective_2025_06_29"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "The official Q3 changes took effect June 29, 2025.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0005",
+          "block_id": "p001_b0005",
+          "source_quote": "Changes to the Q3 took effect June 29, 2025."
+        },
+        {
+          "role": "timeline_relation",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0005",
+          "block_id": "p001_b0005",
+          "source_quote": "Changes to the Q3 took effect June 29, 2025."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q3_stop_removal",
+      "label": "Queens redesign includes Q3 stop removals",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q3_stop_removal_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-06-29",
+      "description": "The Q3 redesign retained current routing and removed some stops.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0005",
+          "block_id": "p001_b0005",
+          "source_quote": "The Q3 will keep its current routing, but some stops have been removed."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0005",
+          "block_id": "p001_b0005",
+          "source_quote": "The Q3 will keep its current routing, but some stops have been removed."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_affects_q8",
+      "label": "Queens redesign affects Q8",
+      "relation_kind": "affects_route",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "route_q8_qbnr_effective_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-08-31",
+      "description": "The implemented Queens redesign changed Q8 stops.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0010",
+          "block_id": "p001_b0010",
+          "source_quote": "Q8"
+        },
+        {
+          "role": "route_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0010",
+          "block_id": "p001_b0010",
+          "source_quote": "Q8"
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_has_q8_2025_effective_event",
+      "label": "Queens redesign has Q8 effective-date event",
+      "relation_kind": "has_timeline_event",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "event_q8_route_redesign_effective_2025_08_31"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-08-31",
+      "description": "The official Q8 changes took effect August 31, 2025.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0010",
+          "block_id": "p001_b0010",
+          "source_quote": "Changes to the Q8 took effect August 31, 2025."
+        },
+        {
+          "role": "timeline_relation",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0010",
+          "block_id": "p001_b0010",
+          "source_quote": "Changes to the Q8 took effect August 31, 2025."
+        }
+      ]
+    },
+    {
+      "local_observation_id": "relation_qbnr_2025_has_q8_stop_removal",
+      "label": "Queens redesign includes Q8 stop removals",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "project_queens-bus-network-redesign"
+      },
+      "object": {
+        "local_observation_id": "treatment_q8_stop_removal_2025"
+      },
+      "assertion_status": "delivered",
+      "as_of_date": "2025-08-31",
+      "description": "The Q8 redesign retained current routing and removed some stops.",
+      "evidence_bindings": [
+        {
+          "role": "relationship",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0010",
+          "block_id": "p001_b0010",
+          "source_quote": "The Q8 will keep its current routing, but some stops have been removed."
+        },
+        {
+          "role": "treatment_scope",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0010",
+          "block_id": "p001_b0010",
+          "source_quote": "The Q8 will keep its current routing, but some stops have been removed."
+        }
+      ]
+    }
+  ]
+}

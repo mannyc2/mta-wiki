@@ -33,6 +33,45 @@ wiki pages, release exports, tests, and the pipeline code that produced them.
 - `data/canonical.db`: deterministic SQLite build output. It is ignored because it can be rebuilt
   from tracked canonical JSONL with `bun run rebuild-db` and is too large for ordinary Git history.
 
+## Relationship Integrity Boundary
+
+Canonical JSONL remains authoritative. SQLite is a deterministic, sealed projection and is not
+treated as protection for records that have not passed the repository materializer. Relationship
+invariants therefore run before canonical JSONL is installed, are repeated by normal validation and
+quality commands, and are mirrored in SQLite for query-time diagnostics and defense in depth.
+
+The versioned v1 contract lives under `data/contracts/relationships/v1/`. It pins:
+
+- every canonical relation identity and reviewed subject/object type tuple;
+- the allowed endpoint-type matrix and alias/supersession policy;
+- stable referential, type, evidence, duplicate, and completeness finding codes;
+- objective warning-to-enforcement criteria and their proof artifacts.
+
+Relationship-like payload fields have a separate versioned contract under
+`data/contracts/relationship-references/v1/`. Exact resolutions become evidence-bound derived
+edges. Ambiguous, unresolved, contextual, temporal-mismatch, and self-reference values must match
+an immutable reviewed decision; an unseen equivalent fails closed in enforcement mode.
+
+Completeness is selector-based rather than inferred from the absence of dangling edges. The
+materializer evaluates the route, operational-event, eligible-occurrence, occurrence-treatment
+physicality, and bus-lane-treatment populations. Each in-scope row must satisfy its required roles
+or carry an evidence-linked reviewed non-projectable disposition. Waivers use an exact versioned
+role vocabulary, always set `study_projectable=false`, and cannot manufacture route, segment,
+phase, onset, or operational claims.
+
+The SQLite v8 projection mirrors canonical identities, typed relations, evidence bindings,
+selector contracts, role status, and exact waiver scope. Foreign keys, typed edge triggers,
+JSON/normalized-column parity triggers, enforcement-state guards, and seal-time diagnostic checks
+prevent an alternate database writer from representing a graph that the authoritative validator
+would reject.
+
+The contract begins in `warning_first` mode so legacy diagnostics are visible in ordinary
+`validate` and quality commands. Promotion to `enforced` requires hash-pinned zero-violation
+artifacts, complete reviewed dispositions, two independent deterministic materialization/export
+captures, and a sealed SQL mirror. An enforced release uses manifest v4 and embeds the complete
+relationship-integrity bundle. Internal release cuts never change `LATEST` unless the owner invokes
+the separate explicit promotion command.
+
 ## Source Ownership
 
 Structured facts belong in submissions, canonical records, release JSONL, and database projections.

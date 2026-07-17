@@ -16,6 +16,7 @@ raw_text: "Staff Summary - Subject: LICENSE AGREEMENT WITH MONSEY DEVELOPERS AND
 submission_ids:
   - "sub_6f51ed4f0c29679e"
 payload:
+  authority_tier: "board_material"
   content_type: "staff summary"
   date_text: "MARCH 26, 2025"
   date_text_normalized:

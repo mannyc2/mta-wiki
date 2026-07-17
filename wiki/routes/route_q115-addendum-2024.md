@@ -7,21 +7,30 @@ record_kind: "route"
 display_name: "Q115"
 source_id: "queens_proposed_final_plan_addendum_2024"
 source_ids:
+  - "mta_queens_bus_network_redesign_service_changes"
   - "queens_proposed_final_plan_addendum_2024"
 local_observation_id: "route_q115_addendum_2024"
 local_observation_ids:
   - "route_q115_addendum_2024"
+  - "route_q115_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-08T20:31:12.603Z"
+generated_at: "2026-07-13T00:07:37.000Z"
 raw_text: "Underlying local service provided by the Q115"
 submission_ids:
+  - "sub_2d843a7bf82d5da8"
   - "sub_dcc80f7595266654"
 payload:
+  _merged_field_values:
+    route_type_normalized:
+      - "local"
+      - "bus"
   description: "Underlying local service for Q111 Rush Route"
+  gtfs_route_id: "Q115"
   route: "Q115"
   route_id: "Q115"
   route_label: "Q115"
+  route_name: "Q115"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
   route_type: "Local"
@@ -37,6 +46,16 @@ evidence_refs:
     source_path: "raw/sources/queens_proposed_final_plan_addendum_2024/blocks.jsonl"
     source_quote: "Underlying local service provided by the Q115"
     text_sha256: "sha256:fe17c79126cb522d76cc1b9b043806d67c73cb27537abb1e054a312445943576"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0099"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0099"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q115"
+    text_sha256: "sha256:18b96215314925733e491dae6e4db6949ec2fd01425bda6e7133f112f9a46deb"
     text_source: "raw_text"
 ---
 

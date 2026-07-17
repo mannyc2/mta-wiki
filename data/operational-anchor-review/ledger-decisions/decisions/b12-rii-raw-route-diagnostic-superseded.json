@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "decision_id": "b12-rii-raw-route-diagnostic-superseded",
+  "gap_id": "operational-coverage:260343c95fe8f8701ac4659f",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T14:30:00.000Z",
+  "rationale": "The raw diagnostic did not recognize the already source-backed B12 route relation as a fully reviewed occurrence binding. Accepted anchor review b12-route-improvement-initiative-2024-01 and approved occurrence occurrence:5110ac089234f4641e170f5e bind this exact January 2024 launch only to canonical route route_b12-ace/GTFS B12. The raw route gap is therefore superseded and not applicable rather than a reason to mutate the wider project graph.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "relation_rii-serves-b12",
+      "source_id": "meeting_doc_143341",
+      "evidence_id": "meeting_doc_143341#p003_c0005",
+      "block_id": "p003_c0005"
+    }
+  ],
+  "search_receipt_ids": []
+}

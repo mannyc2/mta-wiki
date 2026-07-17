@@ -20,6 +20,7 @@ source_ids:
   - "nyct_key_performance_metrics_doc194001"
 local_observation_id: "route_b60"
 local_observation_ids:
+  - "route_ace_dec2025_b60"
   - "route_b60"
   - "route_b60_ace"
   - "route_b60_cb18_jun2017"
@@ -32,12 +33,13 @@ local_observation_ids:
   - "route_b60_update"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-21T15:54:12.768Z"
+generated_at: "2026-07-13T17:11:48.420Z"
 raw_text: "B60 route in Brooklyn, passing through Williamsburg and Canarsie"
 submission_ids:
   - "sub_01e281bf4f8ed581"
   - "sub_37f0c4ec0875706b"
   - "sub_42e163da1d439e97"
+  - "sub_5ead4bf143baa739"
   - "sub_69688d222e47b340"
   - "sub_6c4d97f628a6575e"
   - "sub_95006467533b4db4"
@@ -59,6 +61,7 @@ payload:
     route_type:
       - "local"
       - "Local"
+      - "bus"
     route_type_normalized:
       - "bus"
       - "local"
@@ -188,6 +191,16 @@ evidence_refs:
     source_id: "meeting_doc_147096"
     source_path: "raw/sources/meeting_doc_147096/blocks.jsonl"
     text_sha256: "sha256:7ccdf280627a9bf48056fdb6fff90dbeaec67a217628f4ffa4b9dc60bda81917"
+    text_source: "raw_text"
+  -
+    block_id: "p010_c0011"
+    evidence_id: "nyct_key_performance_metrics_doc194001#p010_c0011"
+    page_number: 10
+    role: "route_identity"
+    source_id: "nyct_key_performance_metrics_doc194001"
+    source_path: "raw/sources/nyct_key_performance_metrics_doc194001/blocks.jsonl"
+    source_quote: "B60"
+    text_sha256: "sha256:e147dfa103fac9d1499e269c62864619e13cdfd4b3540e71e98ebfb706cd1a42"
     text_source: "raw_text"
 ---
 

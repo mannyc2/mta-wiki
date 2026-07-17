@@ -6,21 +6,31 @@ display_name: "Q4"
 source_id: "meeting_doc_147096"
 source_ids:
   - "meeting_doc_147096"
+  - "mta_queens_bus_network_redesign_service_changes"
 local_observation_id: "route_q4_eval"
 local_observation_ids:
   - "route_q4_eval"
+  - "route_q4_qbnr_2025"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-21T15:54:49.654Z"
+generated_at: "2026-07-12T23:02:57.000Z"
+raw_text: "Q4"
 submission_ids:
+  - "sub_39a368776202f316"
   - "sub_6a2b18d6da5919ac"
 payload:
+  _merged_field_values:
+    route_type_normalized:
+      - "local_and_limited"
+      - "bus"
   borough: "Queens"
   borough_normalized: "queens"
   description: "Fare-Free Bus Pilot route in Queens, connecting Jamaica to Cambria Heights"
+  gtfs_route_id: "Q4"
   route_id: "Q4"
+  route_name: "Q4"
   route_record_scope: "true_route"
-  route_record_scope_reason: "default_true_route"
+  route_record_scope_reason: "local_limited_bundle_compatible"
   route_type: "local and limited"
   route_type_normalized: "local_and_limited"
   service_variant: "local_limited"
@@ -48,6 +58,16 @@ evidence_refs:
     source_id: "meeting_doc_147096"
     source_path: "raw/sources/meeting_doc_147096/blocks.jsonl"
     text_sha256: "sha256:4f3637194e06ab0aa90863ee1c39e59992c090a17f538047361ffbf4fbda9620"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0006"
+    evidence_id: "mta_queens_bus_network_redesign_service_changes#p001_b0006"
+    page_number: 1
+    role: "route_identity"
+    source_id: "mta_queens_bus_network_redesign_service_changes"
+    source_path: "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl"
+    source_quote: "Q4"
+    text_sha256: "sha256:72194ebbea0466aa785cdd5680fb5cdd28c82c6666a7402f962e0f5341840f40"
     text_source: "raw_text"
 ---
 

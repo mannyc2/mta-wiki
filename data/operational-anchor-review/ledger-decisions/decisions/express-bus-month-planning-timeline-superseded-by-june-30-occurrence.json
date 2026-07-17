@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "express-bus-month-planning-timeline-superseded-by-june-30-occurrence",
+  "gap_id": "operational-coverage:d49fc1e3fd06d8f668fb5d27",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T10:40:30.000Z",
+  "rationale": "The April 26 month-only event is a coarse prospective surface for the same six-route package represented by approved occurrence occurrence:8fd87e702db534906b401f11, whose official exact June 30 announcement and later delivered status are separately evidence-bound. Adding a second timeline link would double-count the intervention.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

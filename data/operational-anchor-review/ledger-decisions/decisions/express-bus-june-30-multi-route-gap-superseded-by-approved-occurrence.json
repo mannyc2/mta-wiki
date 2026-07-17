@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "express-bus-june-30-multi-route-gap-superseded-by-approved-occurrence",
+  "gap_id": "operational-coverage:37a1a0fad061078fa6d558ec",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T11:06:00.000Z",
+  "rationale": "The broad event is intentionally scoped to a six-route service package and therefore cannot satisfy the broad ledger's single-route completeness rule. Approved occurrence occurrence:8fd87e702db534906b401f11 evidence-binds BM2, BM5, SIM1C, SIM4C, SIM23, and SIM24 individually; further broad-row route recovery would duplicate or narrow the delivered package incorrectly.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

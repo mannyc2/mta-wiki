@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "qbnr-residual-170921-queens-bus-phase2-launch-route-superseded-by-approved-occurrences",
+  "gap_id": "operational-coverage:5c56a663aa66c28eb0216c9c",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T05:45:00.000Z",
+  "rationale": "This project-level Phase 2 description is not an independent route-level occurrence. The accepted occurrence fixture already contains 38 source-complete QBNR route occurrences on August 31 or September 2, 2025, each with exact route, treatment, date, and delivered scope. Recovering scope on the coarse duplicate would risk route-treatment cross-products, so this diagnostic is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

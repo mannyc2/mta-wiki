@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "audit_id": "temporal-ontology-baseline-and-remediation-2026-07-11",
+  "audit_date": "2026-07-11",
+  "method": {
+    "baseline": "Compute operational anchors from the existing canonical ontology with the accepted review-decision set disabled.",
+    "reviewed": "Recompute from the same canonical records after the narrowly scoped treatment-to-event relation support and the validated accepted review decisions.",
+    "missing_date_queue": "Select reviewed rows with missing_operational_date and a delivered or in_progress assertion status. Keep them unresolved unless an authoritative operational-date assertion and atomic route/treatment scope are both evidenced."
+  },
+  "baseline": {
+    "schema_version": 1,
+    "row_count": 630,
+    "study_eligible_count": 0,
+    "counts_by_temporal_role": {
+      "planned_operational": 305,
+      "realized_operational": 150,
+      "status_as_of": 175
+    },
+    "counts_by_scope_resolution": {
+      "ambiguous": 12,
+      "missing": 618
+    },
+    "counts_by_exclusion_reason": {
+      "ambiguous_lifecycle_phase": 304,
+      "ambiguous_route_scope": 6,
+      "ambiguous_treatment_scope": 21,
+      "conflicting_status_evidence": 8,
+      "future_delivered_status": 19,
+      "imprecise_operational_date": 208,
+      "missing_operational_date": 127,
+      "missing_route_scope": 582,
+      "missing_route_scope_evidence": 582,
+      "missing_treatment_scope": 599,
+      "missing_treatment_scope_evidence": 599,
+      "non_realized_operational_date": 305,
+      "partially_unmatched_gtfs_route": 9,
+      "status_as_of_only": 175,
+      "unmatched_gtfs_route": 17,
+      "unsupported_subject_scope": 37,
+      "untrusted_source_authority": 88
+    },
+    "funnel": {
+      "canonical_events": 7945,
+      "timeline_linked_operational_events": 630,
+      "candidate_operational_date_present": 503,
+      "realized_operational": 150,
+      "realized_day_or_month": 128,
+      "resolved_route_scope": 15,
+      "resolved_treatment_scope": 0,
+      "evidence_complete": 0,
+      "conflict_free": 0,
+      "study_eligible": 0
+    }
+  },
+  "remediation": {
+    "ontology_change": "Permit has_timeline_event from treatment_component to event; retain existing relation validation and do not infer cross-products.",
+    "accepted_review_decision_ids": [
+      "m15-2010-10-10-off-board-fare",
+      "m86-2015-07-13-off-board-fare",
+      "m86-2015-07-13-real-time-information"
+    ],
+    "decision_policy": "Each accepted tuple binds one official-source date, one event, one route, one treatment, and exact evidence. Dates are not propagated to sibling treatments.",
+    "delta": {
+      "rows": 3,
+      "resolved_route_scope": 3,
+      "resolved_treatment_scope": 3,
+      "evidence_complete": 3,
+      "study_eligible": 3
+    }
+  },
+  "reviewed": {
+    "schema_version": 1,
+    "row_count": 633,
+    "study_eligible_count": 3,
+    "funnel": {
+      "canonical_events": 7945,
+      "timeline_linked_operational_events": 633,
+      "candidate_operational_date_present": 506,
+      "realized_operational": 153,
+      "realized_day_or_month": 131,
+      "resolved_route_scope": 18,
+      "resolved_treatment_scope": 3,
+      "evidence_complete": 3,
+      "conflict_free": 3,
+      "study_eligible": 3
+    }
+  },
+  "missing_date_queue": {
+    "row_count": 35,
+    "status_counts": {
+      "delivered": 21,
+      "in_progress": 14
+    },
+    "resolved_in_this_pass": 0,
+    "unresolved_count": 35,
+    "disposition": "queued_for_authoritative_cross_source_review",
+    "safety_note": "These rows remain documentation or coverage findings. A source publication date, meeting date, status-as-of date, proposal date, or status label alone is never substituted for operational onset.",
+    "anchor_ids": [
+      "operational:event_14th-st-elevator-opening-nov2024",
+      "operational:event_163121-r211s-introduction",
+      "operational:event_199066-ronkonkoma-greenport-bus-replacement-start",
+      "operational:event_39th-ave-two-way-conversion",
+      "operational:event_additional-improvements-2011-2013",
+      "operational:event_autogate-omny-nov2021",
+      "operational:event_brt-phase2-study-initiated-fall2008",
+      "operational:event_cbdtp-tolling-commencement-2024",
+      "operational:event_fulton-st-launch",
+      "operational:event_harrison-garage-opening",
+      "operational:event_holiday-lights-trains-launch-192301",
+      "operational:event_hylan-implementation-target",
+      "operational:event_implementation-2013-2014",
+      "operational:event_lirr-mnr-promotions-effective",
+      "operational:event_m86-sbs-step4-implementation",
+      "operational:event_main-line-track-surfacing-switch-jan2026",
+      "operational:event_meeting-doc-108036-track-trespassing-task-force-launch",
+      "operational:event_meeting-doc-109341-cherry-valley-bridge-waterproofing",
+      "operational:event_meeting-doc-109341-long-beach-far-rockaway-work-weekends",
+      "operational:event_meeting-doc-127701-congestion-pricing",
+      "operational:event_meeting-doc-128921-wide-aisle-gates-sutphin-dec4",
+      "operational:event_meeting-doc-86471-10-bus-pilot",
+      "operational:event_meeting-doc-86471-15-electric-buses",
+      "operational:event_meeting-doc-86471-470-electric-buses",
+      "operational:event_meeting-doc-86471-60-new-buses",
+      "operational:event_mfg-continued-installation",
+      "operational:event_mfg-install-20-more",
+      "operational:event_mfg-testing-eval",
+      "operational:event_omny-card-introduced-oct2021",
+      "operational:event_omny-fare-capping-effective",
+      "operational:event_q44-sbs-launch",
+      "operational:event_ronkonkoma-relief-train-start-192301",
+      "operational:event_sbto-start",
+      "operational:event_scout-expansion-2024",
+      "operational:event_station-agent-new-role-early-2023"
+    ]
+  }
+}

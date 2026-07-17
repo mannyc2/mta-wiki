@@ -1,0 +1,1043 @@
+{
+  "proposal_id": "orp_qbnr_17_two_member_bundles_2025",
+  "corpus_fingerprint": "8c18ab525b98074d6181f8ccd99c5255feec4296f5049b27573ed1fa737e07a1",
+  "gap_ids": [
+    "operational-coverage:d8593973ef422f01aef70d81",
+    "operational-coverage:d9967b59043b66904e64a4cf",
+    "operational-coverage:45dd3045070322bc90d91414",
+    "operational-coverage:a9b2bf1ff109628219637775"
+  ],
+  "project_record_id": "project_queens-bus-network-redesign",
+  "project_label": "Queens Bus Network Redesign",
+  "drafted_by": "codex-corpus-completion-2026-07-12",
+  "drafted_at": "2026-07-12T22:56:32.000Z",
+  "rationale": "Seventeen exact official MTA route rows each bind one current route, one realized effective date, and exactly two source-stated treatment members. Every non-treatment sentence is exhaustively classified as route qualifier, alternative-service context, separate-route context, navigation, or timetable context. Q5, Q80, Q98, and Q47 remain context-only and create no route edge. The excluded Q76 row is not included because strict clause accounting yields more than two treatment members.",
+  "units": [
+    {
+      "source_block_ids": [
+        "p001_b0006"
+      ],
+      "source_block_sha256s": [
+        "sha256:72194ebbea0466aa785cdd5680fb5cdd28c82c6666a7402f962e0f5341840f40"
+      ],
+      "source_route_labels": [
+        "Q4"
+      ],
+      "route_label": "Q4",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q4-lcl-ltd"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q4"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "limited_stops",
+          "label": "Q4 limited stops",
+          "source_quote": "The Q4 will keep its current routing but make limited stops on Merrick Blvd.",
+          "treatment_kind": "limited stops",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q4 retained its routing while making limited stops on Merrick Blvd.",
+          "location_text": "Merrick Blvd"
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "limited_discontinuation",
+          "label": "Q4 Limited discontinuation",
+          "source_quote": "The Q4 Limited will be discontinued.",
+          "treatment_kind": "limited stop discontinuation",
+          "expected_treatment_family": "service_pattern",
+          "description": "The Q4 Limited variant was discontinued."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For local service on Merrick Blvd, take the Q5 .",
+          "review_rationale": "Alternative-service guidance for riders; no Q5 route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q4 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q4 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0008"
+      ],
+      "source_block_sha256s": [
+        "sha256:b0f14ad1100d6dc5e7429efda031606d18ef7c3434d3af5c186a0fbbf3a1b297"
+      ],
+      "source_route_labels": [
+        "Q6"
+      ],
+      "route_label": "Q6",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q6-ace"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q06"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q6 stop removals",
+          "source_quote": "The Q6 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q6 retained its routing while some stops were removed."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "limited_discontinuation",
+          "label": "Q6 Limited discontinuation",
+          "source_quote": "The Q6 Limited will be discontinued.",
+          "treatment_kind": "limited stop discontinuation",
+          "expected_treatment_family": "service_pattern",
+          "description": "The Q6 Limited variant was discontinued."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Learn more about Q6 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q6 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0012"
+      ],
+      "source_block_sha256s": [
+        "sha256:ba5df003f86f287dc26c7bced27847bf3a3f141813941f15cee176e7794fe263"
+      ],
+      "source_route_labels": [
+        "Q10"
+      ],
+      "route_label": "Q10",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q10"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q10"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "limited_stops",
+          "label": "Q10 limited stops",
+          "source_quote": "The Q10 will keep its current routing but make limited stops along Lefferts Blvd.",
+          "treatment_kind": "limited stops",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q10 retained its routing while making limited stops along Lefferts Blvd.",
+          "location_text": "Lefferts Blvd"
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "limited_discontinuation",
+          "label": "Q10 Limited discontinuation",
+          "source_quote": "The Q10 Limited will be discontinued.",
+          "treatment_kind": "limited stop discontinuation",
+          "expected_treatment_family": "service_pattern",
+          "description": "The Q10 Limited variant was discontinued."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For local service on Lefferts Blvd from Kew Gardens to JFK Airport, take the new Q80 .",
+          "review_rationale": "Alternative-service guidance for riders; no Q80 route edge."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q10 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q10 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0020"
+      ],
+      "source_block_sha256s": [
+        "sha256:50e078e456322f9d01dee26877cdd9b1914ba24eb053f54208e753539a8d1969"
+      ],
+      "source_route_labels": [
+        "Q17"
+      ],
+      "route_label": "Q17",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q17-ace"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q17"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q17 stop removals",
+          "source_quote": "The Q17 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q17 retained its routing while some stops were removed."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "limited_discontinuation",
+          "label": "Q17 Limited discontinuation",
+          "source_quote": "The Q17 Limited will be discontinued.",
+          "treatment_kind": "limited stop discontinuation",
+          "expected_treatment_family": "service_pattern",
+          "description": "The Q17 Limited variant was discontinued."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q17 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q17 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0062"
+      ],
+      "source_block_sha256s": [
+        "sha256:0064feb6a1fb25e90db099ee09e6956776771e659f3b129a1b6bb640e490eb35"
+      ],
+      "source_route_labels": [
+        "Q58"
+      ],
+      "route_label": "Q58",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q58"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q58"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q58 stop removals",
+          "source_quote": "The Q58 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Q58 retained its routing while some stops were removed."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "The new Q98 will provide a more direct connection between Flushing and Ridgewood via Horace Harding Expwy.¬†",
+          "review_rationale": "Separate Q98 service context and OCR spacing artifact; no Q98 route edge."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "limited_discontinuation",
+          "label": "Q58 Limited discontinuation",
+          "source_quote": "The Q58 Limited will be discontinued.",
+          "treatment_kind": "limited stop discontinuation",
+          "expected_treatment_family": "service_pattern",
+          "description": "The Q58 Limited variant was discontinued."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q58 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q58 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0037"
+      ],
+      "source_block_sha256s": [
+        "sha256:6172a1aff591f38d6b2422266e6d9304b06fc26eb70a9a0feef10dcf55854ad9"
+      ],
+      "source_route_labels": [
+        "Q32"
+      ],
+      "route_label": "Q32",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q32-201110-qbb"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q32"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "queensboro_bridge_routing_change",
+          "label": "Q32 Queensboro Bridge routing change",
+          "source_quote": "The Q32 will mostly keep its current routing except for a minor change approaching the Queensboro Bridge in Queens.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q32 received a minor routing change approaching the Queensboro Bridge in Queens.",
+          "location_text": "Queensboro Bridge, Queens"
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q32 stop removals",
+          "source_quote": "Some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Some Q32 stops were removed."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q32 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q32 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0038"
+      ],
+      "source_block_sha256s": [
+        "sha256:8ce7620b9feb1050d1f28b989ed532f857df144771efab39a5515193520fffa9"
+      ],
+      "source_route_labels": [
+        "Q33"
+      ],
+      "route_label": "Q33",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q33-serves-lga-2011"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q33"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "laguardia_terminal_a_reroute",
+          "label": "Q33 LaGuardia Terminal A reroute",
+          "source_quote": "The Q33 will continue to serve 82 and 83 Sts but will be rerouted on its northern end to serve LaGuardia Airport Terminal A instead of 23 Av.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q33 was rerouted on its northern end to LaGuardia Airport Terminal A instead of 23 Av.",
+          "location_text": "LaGuardia Airport Terminal A"
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "For service along 23 Av, take the Q47 .",
+          "review_rationale": "Alternative-service guidance for riders; no Q47 route edge."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q33 stop removals",
+          "source_quote": "Some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Some Q33 stops were removed."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q33 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q33 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0064"
+      ],
+      "source_block_sha256s": [
+        "sha256:238e88e2438d5588214e505de395e4f3e7c4d78b833ed96cb8398fefecea8eda"
+      ],
+      "source_route_labels": [
+        "Q60"
+      ],
+      "route_label": "Q60",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q60-ace"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q60"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "queensboro_bridge_routing_change",
+          "label": "Q60 Queensboro Bridge routing change",
+          "source_quote": "The Q60 will keep its current routing except for a minor change approaching the Queensboro Bridge in Queens.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q60 received a minor routing change approaching the Queensboro Bridge in Queens.",
+          "location_text": "Queensboro Bridge, Queens"
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q60 stop removals",
+          "source_quote": "Some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Some Q60 stops were removed."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q60 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q60 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0071"
+      ],
+      "source_block_sha256s": [
+        "sha256:0dd8201c5f8a8add45653ca95187bf36a87b60f664c4609e70bce936c94133db"
+      ],
+      "source_route_labels": [
+        "Q69"
+      ],
+      "route_label": "Q69",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q69-ace"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q69"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "queens_plaza_termination_change",
+          "label": "Q69 Queens Plaza termination change",
+          "source_quote": "The Q69 will keep most of its current routing but will terminate near Queens Plaza instead of Court Square.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q69 was changed to terminate near Queens Plaza instead of Court Square.",
+          "location_text": "Queens Plaza"
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q69 stop removals",
+          "source_quote": "Some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Some Q69 stops were removed."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q69 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q69 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0092"
+      ],
+      "source_block_sha256s": [
+        "sha256:8b4c022085bc8a49a79aaed4868a2e9393c54d29a73eab88a71a02d7dc287184"
+      ],
+      "source_route_labels": [
+        "Q103"
+      ],
+      "route_label": "Q103",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_q103-reroute-20250821"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "Q103"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "queensbridge_waterfront_reroute_extension",
+          "label": "Q103 Queensbridge waterfront reroute and extension",
+          "source_quote": "The Q103 will be rerouted south of Queensbridge and extended west to the waterfront.",
+          "treatment_kind": "route change",
+          "expected_treatment_family": "service_pattern",
+          "description": "Q103 was rerouted south of Queensbridge and extended west to the waterfront.",
+          "location_text": "Queensbridge to the waterfront"
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "Q103 stop removals",
+          "source_quote": "Some stops have been removed from this route.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Some Q103 stops were removed."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on Q103 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new Q103 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0103"
+      ],
+      "source_block_sha256s": [
+        "sha256:0d939206b55a81c3fd958ac25fd0654daf01dd1fa900bc66683bc92afeb0f46f"
+      ],
+      "source_route_labels": [
+        "QM2"
+      ],
+      "route_label": "QM2",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_qm2-201110-qbb"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM2"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "context",
+          "source_quote": "The QM2 will keep its current routing, including existing weekend trips through Linden Hill.",
+          "review_rationale": "Current-routing qualifier, not a treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "QM2 stop removals",
+          "source_quote": "Three stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Three QM2 stops were removed."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "frequency_decrease",
+          "label": "QM2 frequency decrease",
+          "source_quote": "Some frequencies will decrease due to low ridership.",
+          "treatment_kind": "service frequency adjustment",
+          "expected_treatment_family": "service_pattern",
+          "description": "Some QM2 frequencies decreased due to low ridership."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM2 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM2 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0105"
+      ],
+      "source_block_sha256s": [
+        "sha256:2cac74b8f2aa7d96f5ecb112745f58af367b9b86a2c691e4abb61e8dba1e8d7b"
+      ],
+      "source_route_labels": [
+        "QM4"
+      ],
+      "route_label": "QM4",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_qm4-qbb-study"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM4"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "QM4 stop removals",
+          "source_quote": "The QM4 will keep its current routing, but some stops have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "QM4 retained its routing while some stops were removed."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "frequency_span_adjustment",
+          "label": "QM4 frequency and service-span adjustments",
+          "source_quote": "Weekday AM peak frequencies will decrease and service spans will be adjusted.",
+          "treatment_kind": "service frequency and span adjustment",
+          "expected_treatment_family": "service_pattern",
+          "description": "QM4 weekday AM peak frequencies decreased and service spans were adjusted."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM4 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM4 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0110"
+      ],
+      "source_block_sha256s": [
+        "sha256:7f96eed4f0d3e9970e923b3a9d8e4ecf6cba59978082a7da886dd8176e9ccf2c"
+      ],
+      "source_route_labels": [
+        "QM10"
+      ],
+      "route_label": "QM10",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_qm10-qbb-study"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM10"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "context",
+          "source_quote": "The QM10 will keep its current routing.",
+          "review_rationale": "Current-routing qualifier, not a treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_pair_removal",
+          "label": "QM10 stop-pair removal",
+          "source_quote": "One stop pair has been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "One QM10 stop pair was removed."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "frequency_span_adjustment",
+          "label": "QM10 frequency and service-span adjustments",
+          "source_quote": "PM peak frequencies will decrease and service spans will be adjusted.",
+          "treatment_kind": "service frequency and span adjustment",
+          "expected_treatment_family": "service_pattern",
+          "description": "QM10 PM peak frequencies decreased and service spans were adjusted."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM10 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM10 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0113"
+      ],
+      "source_block_sha256s": [
+        "sha256:f60d6f3110d5afceed9bb42780da61d93726de6863079c2c21c431e1582bd5aa"
+      ],
+      "source_route_labels": [
+        "QM15"
+      ],
+      "route_label": "QM15",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_qm15-qbb-study"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM15"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "context",
+          "source_quote": "The QM15 will keep its current routing.",
+          "review_rationale": "Current-routing qualifier, not a treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "QM15 Queens-bound stop removal",
+          "source_quote": "The Queens-bound stop at 153 Av/151 Av has been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "The QM15 Queens-bound stop at 153 Av/151 Av was removed.",
+          "location_text": "153 Av/151 Av"
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "frequency_adjustment",
+          "label": "QM15 weekday frequency adjustment",
+          "source_quote": "Weekday frequencies will change slightly.",
+          "treatment_kind": "service frequency adjustment",
+          "expected_treatment_family": "service_pattern",
+          "description": "QM15 weekday frequencies changed slightly."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM15 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM15 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0118"
+      ],
+      "source_block_sha256s": [
+        "sha256:0a1c39fcc0bda42355ec2b437608a5c61ce3b4f3cf4504cd73709204afa7a1e4"
+      ],
+      "source_route_labels": [
+        "QM21"
+      ],
+      "route_label": "QM21",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_qm21-qbb-study"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM21"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "context",
+          "source_quote": "The QM21 will keep its current routing.",
+          "review_rationale": "Current-routing qualifier, not a treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "QM21 Manhattan stop removals",
+          "source_quote": "Two stops in Manhattan have been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "Two QM21 stops in Manhattan were removed.",
+          "location_text": "Manhattan"
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "frequency_decrease",
+          "label": "QM21 peak frequency decrease",
+          "source_quote": "Peak frequencies will decrease slightly.",
+          "treatment_kind": "service frequency adjustment",
+          "expected_treatment_family": "service_pattern",
+          "description": "QM21 peak frequencies decreased slightly."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM21 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM21 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0119"
+      ],
+      "source_block_sha256s": [
+        "sha256:2722d55940f77e1f1e474a4364a88bda99a0afb2d9a45f5c3a4a715da8990b8c"
+      ],
+      "source_route_labels": [
+        "QM24"
+      ],
+      "route_label": "QM24",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_qm24-qbb-study"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM24"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "context",
+          "source_quote": "The QM24 will keep its current routing.",
+          "review_rationale": "Current-routing qualifier, not a treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "QM24 Queens-bound stop removal",
+          "source_quote": "The Queens-bound stop at Fresh Pond Rd/Eliot Av has been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "The QM24 Queens-bound stop at Fresh Pond Rd/Eliot Av was removed.",
+          "location_text": "Fresh Pond Rd/Eliot Av"
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "frequency_span_adjustment",
+          "label": "QM24 frequency and service-span adjustments",
+          "source_quote": "Frequencies and service spans will change slightly.",
+          "treatment_kind": "service frequency and span adjustment",
+          "expected_treatment_family": "service_pattern",
+          "description": "QM24 frequencies and service spans changed slightly."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM24 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM24 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    },
+    {
+      "source_block_ids": [
+        "p001_b0123"
+      ],
+      "source_block_sha256s": [
+        "sha256:9faa66d678b6ca1b14efe518b38e71a093e8a7e41ba501bfa06095d7a2d4c409"
+      ],
+      "source_route_labels": [
+        "QM34"
+      ],
+      "route_label": "QM34",
+      "route_resolution": {
+        "mode": "target",
+        "target_record_id": "route_qm34-fresh-pond-rd"
+      },
+      "study_disposition": {
+        "status": "projectable",
+        "gtfs_route_id": "QM34"
+      },
+      "event_kind": "service_change",
+      "occurrence_shape": "bundle",
+      "clauses": [
+        {
+          "clause_kind": "context",
+          "source_quote": "The QM34 will keep its current routing.",
+          "review_rationale": "Current-routing qualifier, not a treatment."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "stop_removal",
+          "label": "QM34 Queens-bound stop removal",
+          "source_quote": "The Queens-bound stop at Fresh Pond Rd/Eliot Av has been removed.",
+          "treatment_kind": "stop removal",
+          "expected_treatment_family": "bus_stop_or_boarding",
+          "description": "The QM34 Queens-bound stop at Fresh Pond Rd/Eliot Av was removed.",
+          "location_text": "Fresh Pond Rd/Eliot Av"
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the full list of stops.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "treatment",
+          "id": "frequency_decrease",
+          "label": "QM34 peak frequency decrease",
+          "source_quote": "Peak frequencies will decrease slightly.",
+          "treatment_kind": "service frequency adjustment",
+          "expected_treatment_family": "service_pattern",
+          "description": "QM34 peak frequencies decreased slightly."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "Get more details on QM34 service.",
+          "review_rationale": "Navigation text."
+        },
+        {
+          "clause_kind": "context",
+          "source_quote": "View the new QM34 timetable.",
+          "review_rationale": "Timetable navigation."
+        }
+      ]
+    }
+  ]
+}
+

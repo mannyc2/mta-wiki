@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "spring-2025-express-planning-status-remains-prospective",
+  "gap_id": "operational-coverage:02c71a8d29f201953736bc0b",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-corpus-completion-2026-07-13",
+  "decided_at": "2026-07-13T16:10:30.000Z",
+  "rationale": "This event and its project relation intentionally preserve the December 2024 prospective plan. Delivery is represented separately by approved March occurrence occurrence:833f69866045c25967353373; changing the planning surface to delivered would collapse source-time status, so this raw delivered-status diagnostic is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

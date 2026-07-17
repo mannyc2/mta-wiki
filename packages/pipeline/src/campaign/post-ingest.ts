@@ -2,7 +2,8 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 
 import { isAbsolute, join, relative, resolve } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableHash } from "@mta-wiki/db/stable-json";
-import { readCanonicalRecords, pageRelativePathForCanonicalRecord } from "@mta-wiki/pipeline/materialize/materialize";
+import { readCanonicalRecords } from "@mta-wiki/pipeline/materialize/canonical-read";
+import { pageRelativePathForCanonicalRecord } from "@mta-wiki/pipeline/materialize/materialize";
 import { retiredSubmissionIds } from "@mta-wiki/pipeline/records/submission-overrides";
 import { readSubmissionEntries } from "@mta-wiki/pipeline/records/submissions";
 import {

@@ -7,6 +7,7 @@ source_id: "181st_street_jun2022"
 source_ids:
   - "181st_street_jun2022"
   - "bx_cb5_projects_dec032019"
+  - "meeting_doc_186616"
   - "meeting_doc_37081"
   - "mta_automated_camera_enforcement"
 local_observation_id: "route_bx3"
@@ -15,14 +16,16 @@ local_observation_ids:
   - "route_bx3_37081"
   - "route_bx3_ace"
   - "route_bx3_bx_cb5"
+  - "route_meeting_doc_186616_bx3_ace"
 review_state: "unreviewed"
 truth_status: "source_stated"
-generated_at: "2026-06-22T20:21:15.596Z"
+generated_at: "2026-07-12T13:58:32.119Z"
 raw_text: "five MTA bus routes (Bx3, Bx11, Bx13, Bx35, and Bx36)"
 submission_ids:
   - "sub_0e41c2c7767cd951"
   - "sub_5bef1200f9007346"
   - "sub_863e08cd8be802df"
+  - "sub_96eb837291c8d77e"
   - "sub_9a0ee6c6ab5e5615"
 payload:
   _merged_field_values:
@@ -38,6 +41,7 @@ payload:
   route_label: "Bx3"
   route_record_scope: "true_route"
   route_record_scope_reason: "default_true_route"
+  route_type: "bus"
   route_type_normalized: "bus"
   streets: "Sedgwick Av / University Av / W 181 St"
 evidence_refs:
@@ -85,6 +89,16 @@ evidence_refs:
     source_id: "meeting_doc_37081"
     source_path: "raw/sources/meeting_doc_37081/blocks.jsonl"
     text_sha256: "sha256:b7d7d29f319d32042be91932edff608f71bb2171a763b59707977e955a17b0e0"
+    text_source: "raw_text"
+  -
+    block_id: "p011_c0010"
+    evidence_id: "meeting_doc_186616#p011_c0010"
+    page_number: 11
+    role: "route_identity"
+    source_id: "meeting_doc_186616"
+    source_path: "raw/sources/meeting_doc_186616/blocks.jsonl"
+    source_quote: "Bx3"
+    text_sha256: "sha256:94f2bd4451ebb0cab2547064ae8c8f887aa47d99c673cd60f8aca040dbd13e54"
     text_source: "raw_text"
 ---
 
