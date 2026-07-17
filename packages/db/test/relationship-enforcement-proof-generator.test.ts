@@ -844,6 +844,30 @@ function installInternallyPinnedRelationMismatch(
 }
 
 describe("relationship enforcement proof generator", () => {
+  it("inventories current materialization roots when the retired data/materialized directory is absent", () => {
+    const root = join(work, "materialization-with-retired-root-absent");
+    write(join(root, "data/canonical/routes.jsonl"), "{}\n");
+    write(join(root, "wiki/index.md"), "# Fixture\n");
+
+    const inventory = JSON.parse(materializationInventoryText(root)) as {
+      roots: string[];
+      retired_roots: Array<{ path: string; status: string; replacement: string }>;
+      file_count: number;
+      files: Array<{ path: string }>;
+    };
+    expect(inventory.roots).toEqual(["data/canonical", "wiki"]);
+    expect(inventory.retired_roots).toEqual([{
+      path: "data/materialized",
+      status: "retired",
+      replacement: "data/canonical.db plus direct generated-wiki root scan",
+    }]);
+    expect(inventory.file_count).toBe(2);
+    expect(inventory.files.map((file) => file.path)).toEqual([
+      "data/canonical/routes.jsonl",
+      "wiki/index.md",
+    ]);
+  });
+
   it("deterministically derives all seven parsed gates and refuses a count-attested backlog", () => {
     const matrix = fixtureMatrix();
     const contract = fixtureContract(matrix);

@@ -1966,7 +1966,15 @@ function recursiveRegularFiles(path: string): string[] {
 }
 
 export function materializationInventoryText(root: string): string {
-  const roots = ["data/canonical", "data/materialized", "wiki"];
+  // record-index.json and page-index.json under data/materialized were retired at the DB-only
+  // cutover. Inventory the two current deterministic filesystem products and record the retired
+  // root explicitly so an absent legacy directory is not mistaken for a missing current output.
+  const roots = ["data/canonical", "wiki"];
+  const retiredRoots = [{
+    path: "data/materialized",
+    status: "retired",
+    replacement: "data/canonical.db plus direct generated-wiki root scan",
+  }];
   const files = roots
     .flatMap((path) => recursiveRegularFiles(repositoryPath(root, path)))
     .filter((path) => !path.endsWith("canonical.db"))
@@ -1983,6 +1991,7 @@ export function materializationInventoryText(root: string): string {
     schema_version: 1,
     inventory_id: "relationship-materialization-determinism-v1",
     roots,
+    retired_roots: retiredRoots,
     file_count: files.length,
     files,
   } as unknown as JsonValue);
