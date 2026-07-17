@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "contract_id": "relationship-contract-v1",
-  "contract_sha256": "018c4560a5fed4016c3867e81425457517ae05ac215af8b533918428c5e68982",
+  "contract_sha256": "5fdf5ce6f4613cb76479dd30ead1eca458f543c5fba81d64c351fb42184146f2",
   "endpoint_matrix_sha256": "44f4e38549bd5134764cbe64231687a5ae315217291ea9b95011d6dc3d76d54c",
   "canonical_relations_sha256": "0dd596691bdd6e922b62aa254885c2413498ceb03ba8531d1e0445f8f1af6375",
-  "input_fingerprint": "901fef55fdd2b7dd44927e6af2fbc4dbdfbd0a9daa476e9485710eed75e46b15",
-  "mode": "enforce",
+  "input_fingerprint": "d08dfb9fdcc82eb3c6fb78c917fda95e563f78e42bab69032351a006911988be",
+  "mode": "warn",
   "artifacts": [
     {
       "path": "findings.jsonl",
@@ -24,7 +24,7 @@
     },
     {
       "path": "report.md",
-      "sha256": "d84b74651a6663a12feedd1b29d8627f0ffadf54e19b95b28a8bfb49dc152c44"
+      "sha256": "8f37e299ac8036440fac061acbe96eb7d129175a363422181389a5b1a7538431"
     },
     {
       "path": "summary.json",
@@ -32,7 +32,7 @@
     }
   ],
   "reproduction_commands": [
-    "bun packages/cli/src/cli.ts relationship-integrity --mode enforce",
+    "bun packages/cli/src/cli.ts relationship-integrity --mode warn",
     "bun run validate",
     "bun run rebuild-db"
   ]

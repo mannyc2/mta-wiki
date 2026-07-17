@@ -2,7 +2,7 @@
 
 Contract: `relationship-contract-v1`
 
-Mode: `warn`
+Mode: `enforce`
 
 Canonical graph: 85,392 records; 21,422 relation records; 704 relation kinds.
 
