@@ -8,6 +8,7 @@ export { validateRepo } from "@mta-wiki/pipeline/validate";
 
 export { exportCanonicalJsonl, verifyCanonicalJsonlParity } from "@mta-wiki/pipeline/materialize/export-jsonl";
 export { exportRelease } from "@mta-wiki/pipeline/materialize/export-release";
+export { verifyReleaseDirectory } from "@mta-wiki/pipeline/materialize/release-verifier";
 export {
   THRESHOLDS,
   correctionsLedgerStats,

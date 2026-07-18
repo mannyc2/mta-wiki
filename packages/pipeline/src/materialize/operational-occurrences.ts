@@ -1135,7 +1135,9 @@ export function summarizeOperationalOccurrences(rows: readonly OperationalOccurr
 }
 
 export function operationalOccurrencesJsonl(rows: readonly OperationalOccurrenceRow[]): string {
-  return rows.map((row) => stableJson(row as unknown as JsonValue)).join("\n") + (rows.length > 0 ? "\n" : "");
+  const json = rows.map((row) => stableJson(row as unknown as JsonValue)).join("\n") + (rows.length > 0 ? "\n" : "");
+  parseOperationalOccurrencesJsonl(json);
+  return json;
 }
 
 export function writeOperationalOccurrencesJsonl(path: string, rows: readonly OperationalOccurrenceRow[]): void {
@@ -1143,7 +1145,9 @@ export function writeOperationalOccurrencesJsonl(path: string, rows: readonly Op
 }
 
 export function operationalOccurrenceSummaryJson(summary: OperationalOccurrenceSummary): string {
-  return `${stableJson(summary as unknown as JsonValue)}\n`;
+  const json = `${stableJson(summary as unknown as JsonValue)}\n`;
+  parseOperationalOccurrenceSummary(JSON.parse(json) as unknown);
+  return json;
 }
 
 const occurrenceFields = new Set([

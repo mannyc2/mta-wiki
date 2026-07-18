@@ -407,7 +407,29 @@ export function computeRouteAnchors(
 }
 
 export function routeAnchorsJsonl(rows: RouteAnchorRow[]) {
-  return rows.map((row) => stableJson(row as unknown as JsonValue)).join("\n") + (rows.length > 0 ? "\n" : "");
+  const json = rows.map((row) => stableJson(row as unknown as JsonValue)).join("\n") + (rows.length > 0 ? "\n" : "");
+  parseRouteAnchorsJsonl(json);
+  return json;
+}
+
+const ROUTE_ANCHOR_FIELDS = ["gtfs_route_id", "canonical_route_record_id", "variant_record_ids", "aliases", "disposition", "anchor_reason"] as const;
+export function parseRouteAnchorsJsonl(value: string, artifactPath = "route_anchors.jsonl"): RouteAnchorRow[] {
+  return value.split(/\r?\n/u).filter(Boolean).map((line, index) => {
+    const path = `${artifactPath}:${index + 1}`;
+    let parsed: unknown;
+    try { parsed = JSON.parse(line) as unknown; } catch (error) { throw new Error(`${path}: invalid JSON: ${error instanceof Error ? error.message : String(error)}`); }
+    if (!isJsonObject(parsed)) throw new Error(`${path}: expected object`);
+    const extras = Object.keys(parsed).filter((key) => !ROUTE_ANCHOR_FIELDS.includes(key as typeof ROUTE_ANCHOR_FIELDS[number]));
+    const missing = ROUTE_ANCHOR_FIELDS.filter((key) => !(key in parsed));
+    if (extras.length || missing.length) throw new Error(`${path}: keys must be exactly ${ROUTE_ANCHOR_FIELDS.join(", ")}`);
+    for (const field of ["gtfs_route_id", "canonical_route_record_id", "anchor_reason"] as const) if (parsed[field] !== null && (typeof parsed[field] !== "string" || !parsed[field]!.trim())) throw new Error(`${path}.${field}: expected non-empty string or null`);
+    if (typeof parsed.disposition !== "string" || !parsed.disposition.trim()) throw new Error(`${path}.disposition: expected non-empty string`);
+    for (const field of ["variant_record_ids", "aliases"] as const) {
+      if (!Array.isArray(parsed[field]) || parsed[field].some((item) => typeof item !== "string" || !item.trim())) throw new Error(`${path}.${field}: expected array of non-empty strings`);
+      if (new Set(parsed[field] as string[]).size !== parsed[field].length) throw new Error(`${path}.${field}: duplicate values`);
+    }
+    return parsed as unknown as RouteAnchorRow;
+  });
 }
 
 export function writeRouteAnchorsJsonl(path: string, rows: RouteAnchorRow[]) {

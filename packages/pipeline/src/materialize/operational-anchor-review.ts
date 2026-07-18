@@ -258,6 +258,33 @@ export function operationalAnchorReviewSnapshotJson(
   return `${stableJson(operationalAnchorReviewSnapshot(decisions) as unknown as JsonValue)}\n`;
 }
 
+export function parseOperationalAnchorReviewSnapshot(value: unknown): OperationalAnchorReviewSnapshot {
+  if (!isObject(value)) throw new Error("operational anchor review snapshot must be an object");
+  const snapshotFields = new Set(["snapshot_version", "decision_schema_version", "decision_count", "decisions"]);
+  rejectUnknownFields(value, snapshotFields, "operational anchor review snapshot");
+  if (value.snapshot_version !== 1 || value.decision_schema_version !== 1) throw new Error("operational anchor review snapshot versions must be 1");
+  if (!Array.isArray(value.decisions)) throw new Error("operational anchor review snapshot.decisions must be an array");
+  if (!Number.isInteger(value.decision_count) || value.decision_count !== value.decisions.length) throw new Error("operational anchor review snapshot.decision_count must equal decisions length");
+  const decisions = value.decisions.map((entry, index): OperationalAnchorReviewSnapshotDecision => {
+    const path = `operational anchor review snapshot.decisions[${index}]`;
+    if (!isObject(entry)) throw new Error(`${path} must be an object`);
+    rejectUnknownFields(entry, topLevelFields, path);
+    const missing = [...topLevelFields].filter((field) => !(field in entry));
+    if (missing.length) throw new Error(`${path}: missing field(s): ${missing.sort().join(", ")}`);
+    if (entry.schema_version !== 1 || entry.review_state !== "accepted") throw new Error(`${path}: schema_version must be 1 and review_state accepted`);
+    const acceptedAt = requiredString(entry, "accepted_at", path);
+    if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/u.test(acceptedAt) || Number.isNaN(Date.parse(acceptedAt))) throw new Error(`${path}: accepted_at must be an ISO-8601 UTC timestamp`);
+    const sourceId = requiredString(entry, "source_id", path);
+    const precision = requiredString(entry, "expected_date_precision", path);
+    if (precision !== "day" && precision !== "month") throw new Error(`${path}: expected_date_precision must be day or month`);
+    const date = requiredString(entry, "expected_operational_date", path);
+    if (!(precision === "day" ? /^\d{4}-\d{2}-\d{2}$/u : /^\d{4}-\d{2}$/u).test(date)) throw new Error(`${path}: expected_operational_date does not match ${precision} precision`);
+    return { schema_version: 1, decision_id: requiredString(entry, "decision_id", path), review_state: "accepted", accepted_at: acceptedAt, reviewer: requiredString(entry, "reviewer", path), rationale: requiredString(entry, "rationale", path), source_id: sourceId, event_record_id: requiredString(entry, "event_record_id", path), timeline_relation_record_id: requiredString(entry, "timeline_relation_record_id", path), route_record_id: requiredString(entry, "route_record_id", path), route_scope_relation_record_id: requiredString(entry, "route_scope_relation_record_id", path), treatment_record_id: requiredString(entry, "treatment_record_id", path), treatment_scope_relation_record_id: requiredString(entry, "treatment_scope_relation_record_id", path), treatment_family: requiredString(entry, "treatment_family", path), expected_operational_date: date, expected_date_precision: precision, evidence_bindings: parseEvidenceBindings(entry.evidence_bindings, sourceId, path) };
+  });
+  if (new Set(decisions.map((decision) => decision.decision_id)).size !== decisions.length) throw new Error("operational anchor review snapshot has duplicate decision_id");
+  return { snapshot_version: 1, decision_schema_version: 1, decision_count: decisions.length, decisions };
+}
+
 type RelationShape = {
   kind: string | null;
   subjectId: string | null;

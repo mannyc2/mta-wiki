@@ -16,6 +16,7 @@ export type Command =
   | "rebuild-evidence-index"
   | "export-jsonl"
   | "export-release"
+  | "verify-release"
   | "export-site"
   | "quality-report"
   | "quality-seeded-defects"

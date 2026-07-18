@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "contract_id": "relationship-contract-v1",
+  "contract_sha256": "5fdf5ce6f4613cb76479dd30ead1eca458f543c5fba81d64c351fb42184146f2",
+  "endpoint_matrix_sha256": "44f4e38549bd5134764cbe64231687a5ae315217291ea9b95011d6dc3d76d54c",
+  "canonical_relations_sha256": "0dd596691bdd6e922b62aa254885c2413498ceb03ba8531d1e0445f8f1af6375",
+  "input_fingerprint": "d08dfb9fdcc82eb3c6fb78c917fda95e563f78e42bab69032351a006911988be",
+  "mode": "warn",
+  "artifacts": [
+    {
+      "path": "findings.jsonl",
+      "sha256": "3ffc9dd3cff2500eed8fd60ad779fe03746a28e0380e4d7c733f1f970a16a564",
+      "rows": 3
+    },
+    {
+      "path": "orphan-records.jsonl",
+      "sha256": "dc20cff0e892e51fc75cc66b14ece028387d7a79b265870a1ebf84d09d62e107",
+      "rows": 45983
+    },
+    {
+      "path": "relation-audit.jsonl",
+      "sha256": "9a509ab48c5628564c5959543f486ec1059598b9735a6df640cc1fa859942cca",
+      "rows": 21422
+    },
+    {
+      "path": "report.md",
+      "sha256": "8f37e299ac8036440fac061acbe96eb7d129175a363422181389a5b1a7538431"
+    },
+    {
+      "path": "summary.json",
+      "sha256": "7b77d742fc5cac8e3b3497d254591db0a3381bd694195b013f09252d70672e91"
+    }
+  ],
+  "reproduction_commands": [
+    "bun packages/cli/src/cli.ts relationship-integrity --mode warn",
+    "bun run validate",
+    "bun run rebuild-db"
+  ]
+}

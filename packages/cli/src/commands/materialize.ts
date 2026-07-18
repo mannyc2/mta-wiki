@@ -8,6 +8,7 @@ import {
   exportCanonicalJsonl,
   exportSite,
   exportRelease,
+  verifyReleaseDirectory,
   generatePostIngestPlan,
   generateWriterBacklogDispatchPlan,
   generateWriterBacklogPacketSetManifest,
@@ -274,6 +275,15 @@ export const materializeCommands = {
     console.log(
       `Exported release ${result.releaseId}: ${result.recordCount} records across ${result.files} file(s) to ${relative(repoRoot, result.dir)} ` +
         `(manifest ${result.manifestSha256.slice(0, 12)}; ${setLatest ? "promoted to LATEST" : "LATEST unchanged"})`,
+    );
+  },
+
+  "verify-release": (args) => {
+    const releaseId = requireSubject(args.command, args.subject, "release id");
+    const result = verifyReleaseDirectory(join(repoRoot, "data", "exports", "releases", releaseId));
+    console.log(
+      `Verified release ${result.release_id}: manifest-v${result.manifest_version}, ${result.verified_file_count} files, ` +
+        `${result.verified_record_count} canonical records (manifest ${result.manifest_sha256.slice(0, 12)}).`,
     );
   },
 
