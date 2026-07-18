@@ -6,6 +6,25 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-17
 
+### Fail-closed Release Contracts and rc23
+
+- Quarantined immutable `v1-rc22` outside its release directory after its review-v1 snapshot
+  failed the repository's strict decoder on the v2-only `physical_scope` role. Review-v1 now uses
+  version-specific evidence types and an exhaustive, canonically proved occurrence-v2 projection;
+  deterministic phase and physical-scope relationships remain in occurrence-v2 and the relationship
+  bundle without being attributed to a reviewer.
+- Added self-decoding versioned serializers and a full-directory contract registry/verifier that
+  enforces addressed paths, bytes, hashes, strict payload decoding, raw version binding, counts,
+  occurrence/review parity, canonical alternate provenance, and relationship graph doctrine before
+  atomic installation. Normal validation verifies `LATEST` and replays quarantined defects.
+- Cut immutable, unpromoted `v1-rc23` from generator commit `443e6e34`: manifest SHA-256
+  `e412b0b7a3e98e87e43c8b59375f335c1c0bd84ab4024171ec6c45203f1da83b`.
+  Operational-occurrence bytes remain identical to rc22 at SHA-256
+  `d2fff454cc82c9a74f9f4ea9bb0b0334a12af385f53d0e7fbde126ea9e33f98f`; corrected review-v1
+  SHA-256 is `69eec1a5fd919eab4ac5743e492a036f0aae05349121195e68630f2fff54032c`.
+  The relationship bundle remains `2a4fa7fd0e3b2345b236c06a4e0fc7640db106c959ab65ef6110d30ed6a0641f`.
+  `LATEST` intentionally remains `v1-rc5`.
+
 ### Relationship Integrity Enforcement and rc22
 
 - Promoted the versioned relationship contract to enforced mode after two clean deterministic

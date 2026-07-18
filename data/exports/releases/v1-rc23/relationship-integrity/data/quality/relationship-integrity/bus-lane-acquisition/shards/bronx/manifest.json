@@ -1,0 +1,55 @@
+{
+  "artifacts": [
+    {
+      "bytes": 63930,
+      "path": "partition.jsonl",
+      "sha256": "695d16a85e6177a71776e3b54c7b7f644479b41e4899fb293cdbf6f034ddd566"
+    },
+    {
+      "bytes": 949,
+      "path": "partition-proof.json",
+      "sha256": "74d366a8d23fc702dc56a16c3be72021c02c0d9fabe1808e38f6a7587d117684"
+    },
+    {
+      "bytes": 46066,
+      "path": "acquired-source-checks.json",
+      "sha256": "bd74c2999020a5ca957f8e7c02c581725bfcddc5080bbd3b72f467ff73b86405"
+    },
+    {
+      "bytes": 1133722,
+      "path": "official-lane-evidence.jsonl",
+      "sha256": "b52eb94e48d82f31c6c32b1dd0d3bff1a5ee4a1ab9b9a3715493467b73afed69"
+    },
+    {
+      "bytes": 396017,
+      "path": "receipts.jsonl",
+      "sha256": "be1d20ccabd2a24bea7837ad1e1e9bf62d43ff6faa4df53c09cd656b2fff4fb8"
+    },
+    {
+      "bytes": 36647,
+      "path": "registry-projection-exclusions.jsonl",
+      "sha256": "b3b138487cc37bd4933525e750c6111059fd4dad2608a529b72f6345d441b951"
+    },
+    {
+      "bytes": 15641,
+      "path": "supported-linkage-candidates.jsonl",
+      "sha256": "86e6f394d302e0f0e5d10bd68900d1bc62881ea976c5746974a4cd6b1598ff35"
+    },
+    {
+      "bytes": 3322,
+      "path": "summary.json",
+      "sha256": "aa2bf4e0c0841e1ebaa7ca5e786f48f9e2c808afff3fc37c85325715d4a62076"
+    },
+    {
+      "bytes": 2062,
+      "path": "report.md",
+      "sha256": "23515ffbbeec03e836b37e9b464bcbcf990ca2245f96b69c049017dc55639a6d"
+    }
+  ],
+  "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
+  "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
+  "generated_on": "2026-07-15",
+  "manifest_payload_sha256": "96a591989666030f8ced228bad5816fded81f4fb848ceb4aae2ea2c232f1796b",
+  "schema_version": 1,
+  "shard": "bronx"
+}

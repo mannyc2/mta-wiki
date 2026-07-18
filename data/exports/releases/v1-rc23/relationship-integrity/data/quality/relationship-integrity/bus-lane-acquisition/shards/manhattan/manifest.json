@@ -1,0 +1,50 @@
+{
+  "artifacts": [
+    {
+      "bytes": 50562,
+      "path": "partition.jsonl",
+      "sha256": "fe7b9c32d28fbb130e4ecd2a5640898d44a0bf9f95e51fe8adced2bfdde09410"
+    },
+    {
+      "bytes": 919,
+      "path": "partition-proof.json",
+      "sha256": "055af0c1051bb2aaeae2c35dba74c6d6b6f5c3d373921c6bddff397a900a3fdb"
+    },
+    {
+      "bytes": 38386,
+      "path": "acquired-source-checks.json",
+      "sha256": "3caff351c730ebcfc843f74cdea20fa5eecce40fa188e99733c6bc7cdf3bf79a"
+    },
+    {
+      "bytes": 502925,
+      "path": "official-lane-evidence.jsonl",
+      "sha256": "45de046ef966167f6d7da68dc70cea36deefd87e65926f7b475430a45abee1d8"
+    },
+    {
+      "bytes": 312257,
+      "path": "receipts.jsonl",
+      "sha256": "04870023cb526158eeba09faf097a30bbb1425afc0f1d3b2f8974a92ca153773"
+    },
+    {
+      "bytes": 30726,
+      "path": "registry-projection-exclusions.jsonl",
+      "sha256": "7a62828e4f40a7a8097a89d3373f3447810cace5ca7babad8cf7981f77991531"
+    },
+    {
+      "bytes": 2074,
+      "path": "summary.json",
+      "sha256": "96a0e11cca2aedc16cccd195787059b967d22233547e927a15f443da6a95a75e"
+    },
+    {
+      "bytes": 1478,
+      "path": "report.md",
+      "sha256": "464870b7909edd8fc8f0a6fbda447bbc00948d4340c8826679f0ecf02dc070b7"
+    }
+  ],
+  "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
+  "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
+  "generated_on": "2026-07-15",
+  "manifest_payload_sha256": "454b85d6a398a705fd4a45457ccfef43f8918d0d3093358561083d79fb39c813",
+  "schema_version": 1,
+  "shard": "manhattan"
+}

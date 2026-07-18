@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "contract_id": "route-identity-dispositions-v1",
+  "inputs": {
+    "canonical_route_count": 395,
+    "gtfs_route_count": 386,
+    "legacy_route_anchor_row_count": 403,
+    "canonical_routes_sha256": "8ea0278c7acae7585cbe0c85e3fa9407d8ca49b1ca12327b60318b676122a5c0",
+    "legacy_route_anchors_sha256": "517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239",
+    "gtfs_routes_sha256": "7b04d611eee9ad689eda88556e6934fe36c699342cf489c61dcdfef2c2670097"
+  },
+  "before": {
+    "unaccounted_route_records": 109
+  },
+  "remediation": {
+    "unique_sbs_plus_successor_bindings": 13,
+    "reviewed_variant_bindings": 1,
+    "post_rc20_exact_gtfs_bindings": 16,
+    "reviewed_non_projectable_dispositions": 79,
+    "disposition_counts": {
+      "aggregate_label": 8,
+      "corridor_service_label": 1,
+      "external_bus_service": 3,
+      "historical_retired": 2,
+      "historical_service_identity": 8,
+      "non_bus_service": 44,
+      "proposal": 11,
+      "temporary_service": 2
+    }
+  },
+  "after": {
+    "unaccounted_route_records": 0,
+    "canonical_route_records_accounted": 395,
+    "gtfs_bound_route_records": 299,
+    "reviewed_non_projectable_route_records": 96,
+    "route_anchor_rows": 482,
+    "gtfs_rows_with_wiki_coverage": 279,
+    "gtfs_rows_without_wiki_coverage": 107,
+    "variant_route_records": 20,
+    "all_disposition_counts": {
+      "aggregate_label": 9,
+      "corridor_service_label": 1,
+      "external_bus_service": 4,
+      "historical_retired": 9,
+      "historical_service_identity": 8,
+      "non_bus_service": 47,
+      "proposal": 12,
+      "sbs_corridor_service_label": 4,
+      "temporary_service": 2
+    }
+  }
+}
