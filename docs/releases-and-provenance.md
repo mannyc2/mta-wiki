@@ -54,6 +54,12 @@ bun packages/cli/src/cli.ts export-release --id <release-id> --set-latest
 Omit `--set-latest` for draft, test, and internal canary cuts. The exporter updates the pointer only
 after the complete release and manifest have been written successfully.
 
+Immutable candidates later found contract-invalid are quarantined without modifying their named
+release directory or `LATEST`. Machine-readable status records live under
+`data/exports/release-status/`; the release verifier and consumers consult its deterministic index.
+Each quarantine record binds the affected manifest and artifact hashes, exact decoder failure,
+affected identity, discovery date, and replacement release when known.
+
 ### Internal releases and canaries
 
 Internal releases such as temporal canaries may remain untracked and can be removed after their

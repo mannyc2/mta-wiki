@@ -13,7 +13,9 @@ import type { OperationalOccurrenceAcceptedDecision } from "@mta-wiki/pipeline/m
 import {
   assertOperationalOccurrenceReviewDecisions,
   operationalOccurrenceReviewDecisions,
+  operationalOccurrenceReviewSnapshotJson,
   parseOperationalOccurrenceReviewSnapshot,
+  proveOperationalOccurrenceV2ReviewProjection,
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
 import {
   computeOperationalOccurrences,
@@ -603,7 +605,35 @@ describe("operational occurrences v2 with immutable v1 compatibility", () => {
       source_id: sourceId,
       evidence_id: evidenceId,
     });
+    expect(() => operationalOccurrenceReviewDecisions(rows, [], [decision])).toThrow("without verified alternate provenance");
+    const proof = proveOperationalOccurrenceV2ReviewProjection(rows, input.records);
+    const reviews = operationalOccurrenceReviewDecisions(rows, [], [decision], proof);
+    expect(reviews[0]!.evidence_bindings.some((binding) => binding.role === "physical_scope" as never)).toBeFalse();
+    expect(() => assertOperationalOccurrenceReviewDecisions(reviews, rows)).toThrow("without verified alternate provenance");
+    expect(() => assertOperationalOccurrenceReviewDecisions(reviews, rows, proof)).not.toThrow();
+    const postProofTamper = structuredClone(rows);
+    postProofTamper[0]!.physical_scope_evidence_bindings[0]!.evidence_id = `${sourceId}#post-proof-tamper`;
+    postProofTamper[0]!.evidence_bindings.find((binding) => binding.role === "physical_scope")!.evidence_id = `${sourceId}#post-proof-tamper`;
+    expect(() => operationalOccurrenceReviewDecisions(postProofTamper, [], [decision], proof)).toThrow("without verified alternate provenance");
+    const reviewJson = operationalOccurrenceReviewSnapshotJson(reviews);
+    expect(parseOperationalOccurrenceReviewSnapshot(JSON.parse(reviewJson))).toEqual({
+      snapshot_version: 1,
+      decision_schema_version: 1,
+      decision_count: 1,
+      decisions: reviews,
+    });
+    for (const role of ["physical_scope", "phase_relation"] as const) {
+      const invalid = JSON.parse(reviewJson) as { decisions: Array<{ evidence_bindings: Array<{ role: string }> }> };
+      invalid.decisions[0]!.evidence_bindings[0]!.role = role;
+      expect(() => parseOperationalOccurrenceReviewSnapshot(invalid)).toThrow(`role is unsupported: ${role}`);
+    }
     expect(parseOperationalOccurrencesJsonl(operationalOccurrencesJsonl(rows), input.records)).toEqual(rows);
+    expect(reviews[0]!.evidence_bindings.some((binding) => binding.role === "phase_relation" as never)).toBeFalse();
+
+    const unknownRole = structuredClone(rows);
+    unknownRole[0]!.routes[0]!.evidence_bindings[0]!.role = "future_role" as never;
+    expect(() => operationalOccurrenceReviewDecisions(unknownRole, [], [decision]))
+      .toThrow("cannot project unsupported occurrence evidence role future_role");
 
     const wrongCanonicalEvidence = structuredClone(rows[0]!);
     wrongCanonicalEvidence.physical_scope_evidence_bindings[0]!.evidence_id = `${sourceId}#wrong-scope`;

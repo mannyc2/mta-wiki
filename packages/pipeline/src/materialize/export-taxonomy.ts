@@ -44,5 +44,13 @@ export function buildTaxonomy(): TaxonomyDoc {
 }
 
 export function taxonomyJson(doc = buildTaxonomy()) {
-  return `${stableJson(doc as unknown as JsonValue)}\n`;
+  const json = `${stableJson(doc as unknown as JsonValue)}\n`;
+  parseTaxonomy(JSON.parse(json) as unknown);
+  return json;
+}
+
+export function parseTaxonomy(value: unknown, artifactPath = "taxonomy.json"): TaxonomyDoc {
+  const expected = buildTaxonomy();
+  if (stableJson(value as JsonValue) !== stableJson(expected as unknown as JsonValue)) throw new Error(`${artifactPath}: does not match the supported taxonomy contract`);
+  return value as TaxonomyDoc;
 }

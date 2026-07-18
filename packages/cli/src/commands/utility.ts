@@ -24,6 +24,7 @@ Usage:
   bun run harness materialize
   bun run harness export-jsonl [--verify]   On-demand JSONL dump of the live DB; --verify asserts DB == shadow JSONL
   bun run harness export-release [--id <release-id>] [--force] [--set-latest] [--quality-report <path>]   Versioned release snapshot; --set-latest explicitly promotes it
+  bun run harness verify-release <release-id>   Strictly verify an existing named release directory
   bun run harness export-site                                      Build static HTML under dist/site and run Pagefind
   bun run harness quality-report [release-id]                    Write deterministic release quality checks under data/quality/
   bun run harness operational-coverage [--output <dir>] [--decisions <dir>] [--search-receipts <dir>] [--start YYYY-MM-DD --end YYYY-MM-DD]   Write the deterministic completion ledger, priority queue, and honest coverage matrix

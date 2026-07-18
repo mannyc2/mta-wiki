@@ -50,12 +50,14 @@ import {
   operationalOccurrenceReviewDecisions,
   operationalOccurrenceReviewAcceptedDir,
   operationalOccurrenceReviewSnapshotJson,
+  proveOperationalOccurrenceV2ReviewProjection,
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
 import {
   RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION,
   relationshipReleaseBundleDescriptorPath,
   stageRelationshipReleaseBundle,
 } from "@mta-wiki/pipeline/materialize/relationship-release-bundle";
+import { verifyReleaseDirectory } from "@mta-wiki/pipeline/materialize/release-verifier";
 
 export type ReleaseManifestFile = {
   bytes: number;
@@ -562,13 +564,16 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   );
   fileEntries.push(["operational_occurrences_summary.json", fileMetadata(operationalOccurrenceSummaryPath)]);
 
+  const occurrenceV2ReviewProjectionProof = proveOperationalOccurrenceV2ReviewProjection(operationalOccurrences, records);
   const occurrenceReviewDecisions = assertOperationalOccurrenceReviewDecisions(
     operationalOccurrenceReviewDecisions(
       operationalOccurrences,
       acceptedReviewDecisions,
       acceptedOccurrenceReviewDecisions,
+      occurrenceV2ReviewProjectionProof,
     ),
     operationalOccurrences,
+    occurrenceV2ReviewProjectionProof,
   );
   const operationalOccurrenceReviewDecisionsPath = join(dir, "operational_occurrence_review_decisions.json");
   writeFileSync(
@@ -673,6 +678,8 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   const manifestBytes = `${stableJson(manifest as unknown as JsonValue)}\n`;
   writeFileSync(manifestPath, manifestBytes, "utf8");
   const manifestSha256 = sha256(manifestBytes);
+
+  verifyReleaseDirectory(dir, releaseId);
 
   installReleaseDirectory(dir, targetDir, Boolean(opts.force));
 

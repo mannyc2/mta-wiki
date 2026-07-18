@@ -697,6 +697,16 @@ function assertCompletenessReleaseSnapshot(
   }
 }
 
+export function verifyStagedRelationshipReleaseBundle(
+  releaseDir: string,
+  descriptor: RelationshipReleaseBundleDescriptor,
+): void {
+  const stagedRoot = join(releaseDir, "relationship-integrity");
+  assertContractMode(stagedRoot, descriptor);
+  assertReleaseRelationSnapshot(stagedRoot, releaseDir, descriptor);
+  assertCompletenessReleaseSnapshot(stagedRoot, releaseDir, descriptor);
+}
+
 export function stageRelationshipReleaseBundle(
   rootDir: string,
   releaseDir: string,

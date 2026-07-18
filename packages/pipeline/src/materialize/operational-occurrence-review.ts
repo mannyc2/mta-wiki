@@ -2,16 +2,37 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { basename, join, relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
-import type { JsonValue } from "@mta-wiki/db/types";
+import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
 import type { OperationalAnchorReviewDecision } from "@mta-wiki/pipeline/materialize/operational-anchor-review";
 import {
   parseOperationalOccurrence,
+  assertOperationalOccurrenceCanonicalIntegrity,
   type OperationalOccurrenceEvidenceBinding,
   type OperationalOccurrenceRow,
 } from "@mta-wiki/pipeline/materialize/operational-occurrences";
 
+declare const projectionProofBrand: unique symbol;
+export type OperationalOccurrenceV2ReviewProjectionProof = { readonly [projectionProofBrand]: true };
+const authenticProjectionProofs = new WeakMap<object, ReadonlyMap<string, string>>();
+export function proveOperationalOccurrenceV2ReviewProjection(rows: readonly OperationalOccurrenceRow[], records: readonly MtaCanonicalRecord[]): OperationalOccurrenceV2ReviewProjectionProof {
+  const validated = assertOperationalOccurrenceCanonicalIntegrity(rows.map((row, index) => parseOperationalOccurrence(row, `review-v1 provenance row[${index}]`)), records);
+  const proof = Object.freeze({}) as OperationalOccurrenceV2ReviewProjectionProof;
+  authenticProjectionProofs.set(proof, new Map(validated.map((row) => [row.occurrence_id, stableJson(row as unknown as JsonValue)])));
+  return proof;
+}
+function hasProjectionProof(proof: OperationalOccurrenceV2ReviewProjectionProof | undefined, row: OperationalOccurrenceRow): boolean { return Boolean(proof && authenticProjectionProofs.get(proof)?.get(row.occurrence_id) === stableJson(row as unknown as JsonValue)); }
+
 export const OPERATIONAL_OCCURRENCE_REVIEW_SCHEMA_VERSION = 1 as const;
 export const OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION = 1 as const;
+
+export const OPERATIONAL_OCCURRENCE_REVIEW_V1_EVIDENCE_ROLES = [
+  "bundle_analysis_family", "event_date", "route_identity", "route_scope",
+  "route_treatment_event_bridge", "timeline_relation", "treatment_definition", "treatment_scope",
+] as const;
+export type OperationalOccurrenceReviewV1EvidenceRole =
+  (typeof OPERATIONAL_OCCURRENCE_REVIEW_V1_EVIDENCE_ROLES)[number];
+export type OperationalOccurrenceReviewV1EvidenceBinding =
+  Omit<OperationalOccurrenceEvidenceBinding, "role"> & { role: OperationalOccurrenceReviewV1EvidenceRole };
 
 export type OperationalOccurrenceAcceptedTreatment =
   | {
@@ -19,17 +40,17 @@ export type OperationalOccurrenceAcceptedTreatment =
       member: {
         treatment_record_id: string;
         treatment_family: string;
-        evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+        evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
       };
     }
   | {
       kind: "bundle";
       analysis_family: string;
-      analysis_family_evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+      analysis_family_evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
       members: Array<{
         treatment_record_id: string;
         treatment_family: string;
-        evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+        evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
       }>;
     };
 
@@ -49,12 +70,12 @@ export type OperationalOccurrenceAcceptedDecision = {
   resolved_onset: {
     date: string;
     precision: "day" | "month";
-    evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+    evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
   };
   routes: Array<{
     route_record_id: string;
     gtfs_route_id: string;
-    evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+    evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
   }>;
   treatment_scope_kind: "atomic" | "bundle";
   treatment: OperationalOccurrenceAcceptedTreatment;
@@ -66,17 +87,17 @@ export type OperationalOccurrenceReviewTreatment =
       member: {
         treatment_record_id: string;
         treatment_family: string;
-        evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+        evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
       };
     }
   | {
       kind: "bundle";
       bundle_family: string | null;
-      bundle_family_evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+      bundle_family_evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
       members: Array<{
         treatment_record_id: string;
         treatment_family: string;
-        evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+        evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
       }>;
     };
 
@@ -90,15 +111,15 @@ export type OperationalOccurrenceReviewDecision = {
   resolved_onset: {
     date: string;
     precision: "day" | "month";
-    evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+    evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
   };
   routes: Array<{
     route_record_id: string;
     gtfs_route_id: string;
-    evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+    evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
   }>;
   treatment: OperationalOccurrenceReviewTreatment;
-  evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+  evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
   reviewers: string[];
   accepted_at: string;
   rationale: string;
@@ -139,16 +160,9 @@ const acceptedBundleFields = new Set([
   "members",
 ]);
 const acceptedMemberFields = new Set(["evidence_bindings", "treatment_family", "treatment_record_id"]);
-const acceptedEvidenceRoles = new Set([
-  "bundle_analysis_family",
-  "event_date",
-  "route_identity",
-  "route_scope",
-  "route_treatment_event_bridge",
-  "timeline_relation",
-  "treatment_definition",
-  "treatment_scope",
-]);
+const acceptedEvidenceRoles = new Set<OperationalOccurrenceReviewV1EvidenceRole>(
+  OPERATIONAL_OCCURRENCE_REVIEW_V1_EVIDENCE_ROLES,
+);
 const snapshotDecisionFields = new Set([
   "accepted_at",
   "anchor_review_decision_ids",
@@ -199,20 +213,22 @@ function acceptedPossiblyEmptyStringArray(value: unknown, path: string): string[
   return values;
 }
 
-function acceptedBinding(value: unknown, path: string): OperationalOccurrenceEvidenceBinding {
+function acceptedBinding(value: unknown, path: string): OperationalOccurrenceReviewV1EvidenceBinding {
   const object = acceptedObject(value, path);
   acceptedKeys(object, acceptedBindingFields, path);
   const role = acceptedString(object.role, `${path}.role`);
-  if (!acceptedEvidenceRoles.has(role)) throw new Error(`${path}.role is unsupported: ${role}`);
+  if (!acceptedEvidenceRoles.has(role as OperationalOccurrenceReviewV1EvidenceRole)) {
+    throw new Error(`${path}.role is unsupported: ${role}`);
+  }
   return {
-    role: role as OperationalOccurrenceEvidenceBinding["role"],
+    role: role as OperationalOccurrenceReviewV1EvidenceRole,
     record_id: acceptedString(object.record_id, `${path}.record_id`),
     source_id: acceptedString(object.source_id, `${path}.source_id`),
     evidence_id: acceptedString(object.evidence_id, `${path}.evidence_id`),
   };
 }
 
-function acceptedBindings(value: unknown, path: string): OperationalOccurrenceEvidenceBinding[] {
+function acceptedBindings(value: unknown, path: string): OperationalOccurrenceReviewV1EvidenceBinding[] {
   if (!Array.isArray(value) || value.length === 0) throw new Error(`${path} must be a non-empty array`);
   const bindings = value.map((entry, index) => acceptedBinding(entry, `${path}[${index}]`));
   const keys = bindings.map((binding) => [binding.role, binding.record_id, binding.source_id, binding.evidence_id].join("|"));
@@ -220,7 +236,7 @@ function acceptedBindings(value: unknown, path: string): OperationalOccurrenceEv
   return bindings;
 }
 
-function acceptedPossiblyEmptyBindings(value: unknown, path: string): OperationalOccurrenceEvidenceBinding[] {
+function acceptedPossiblyEmptyBindings(value: unknown, path: string): OperationalOccurrenceReviewV1EvidenceBinding[] {
   if (!Array.isArray(value)) throw new Error(`${path} must be an array`);
   if (value.length === 0) return [];
   return acceptedBindings(value, path);
@@ -364,6 +380,33 @@ export function loadOperationalOccurrenceAcceptedDecisions(
     });
 }
 
+function projectReviewV1Binding(binding: OperationalOccurrenceEvidenceBinding, path: string, omitV2 = false): OperationalOccurrenceReviewV1EvidenceBinding | null {
+  switch (binding.role) {
+    case "bundle_analysis_family": case "event_date": case "route_identity": case "route_scope":
+    case "route_treatment_event_bridge": case "timeline_relation": case "treatment_definition": case "treatment_scope":
+      return {
+        role: binding.role,
+        record_id: binding.record_id,
+        source_id: binding.source_id,
+        evidence_id: binding.evidence_id,
+      };
+    case "phase_relation": case "physical_scope":
+      if (!omitV2) throw new Error(`${path} cannot omit occurrence-v2 role ${binding.role} from review-v1 without verified alternate provenance`);
+      return null;
+    default: {
+      const unsupported: never = binding.role;
+      throw new Error(`${path} cannot project unsupported occurrence evidence role ${String(unsupported)}`);
+    }
+  }
+}
+
+function projectReviewV1Bindings(bindings: readonly OperationalOccurrenceEvidenceBinding[], path: string, omitV2 = false): OperationalOccurrenceReviewV1EvidenceBinding[] {
+  return bindings.flatMap((binding, index) => {
+    const projected = projectReviewV1Binding(binding, `${path}[${index}]`, omitV2);
+    return projected ? [projected] : [];
+  });
+}
+
 function treatmentBinding(row: OperationalOccurrenceRow): OperationalOccurrenceReviewTreatment {
   if (row.treatment.kind === "atomic") {
     return {
@@ -371,18 +414,18 @@ function treatmentBinding(row: OperationalOccurrenceRow): OperationalOccurrenceR
       member: {
         treatment_record_id: row.treatment.member.treatment_record_id,
         treatment_family: row.treatment.member.treatment_family,
-        evidence_bindings: row.treatment.member.evidence_bindings.map((binding) => ({ ...binding })),
+        evidence_bindings: projectReviewV1Bindings(row.treatment.member.evidence_bindings, "review-v1 treatment.member.evidence_bindings"),
       },
     };
   }
   return {
     kind: "bundle",
     bundle_family: row.treatment.bundle_family,
-    bundle_family_evidence_bindings: row.treatment.bundle_family_evidence_bindings.map((binding) => ({ ...binding })),
+    bundle_family_evidence_bindings: projectReviewV1Bindings(row.treatment.bundle_family_evidence_bindings, "review-v1 treatment.bundle_family_evidence_bindings"),
     members: row.treatment.members.map((member) => ({
       treatment_record_id: member.treatment_record_id,
       treatment_family: member.treatment_family,
-      evidence_bindings: member.evidence_bindings.map((binding) => ({ ...binding })),
+      evidence_bindings: projectReviewV1Bindings(member.evidence_bindings, "review-v1 treatment.members[].evidence_bindings"),
     })),
   };
 }
@@ -391,6 +434,7 @@ function decisionForRow(
   row: OperationalOccurrenceRow,
   anchorDecisionsById: ReadonlyMap<string, OperationalAnchorReviewDecision>,
   acceptedOccurrenceDecisionsById: ReadonlyMap<string, OperationalOccurrenceAcceptedDecision>,
+  proof?: OperationalOccurrenceV2ReviewProjectionProof,
 ): OperationalOccurrenceReviewDecision {
   const acceptedOccurrenceDecision = acceptedOccurrenceDecisionsById.get(row.occurrence_review_decision_id);
   const anchors = row.provenance.anchor_review_decision_ids.map((decisionId) => {
@@ -410,15 +454,15 @@ function decisionForRow(
     resolved_onset: {
       date: row.resolved_onset.date,
       precision: row.resolved_onset.precision,
-      evidence_bindings: row.resolved_onset.evidence_bindings.map((binding) => ({ ...binding })),
+      evidence_bindings: projectReviewV1Bindings(row.resolved_onset.evidence_bindings, "review-v1 resolved_onset.evidence_bindings"),
     },
     routes: row.routes.map((route) => ({
       route_record_id: route.route_record_id,
       gtfs_route_id: route.gtfs_route_id,
-      evidence_bindings: route.evidence_bindings.map((binding) => ({ ...binding })),
+      evidence_bindings: projectReviewV1Bindings(route.evidence_bindings, "review-v1 routes[].evidence_bindings"),
     })),
     treatment: treatmentBinding(row),
-    evidence_bindings: row.evidence_bindings.map((binding) => ({ ...binding })),
+    evidence_bindings: projectReviewV1Bindings(row.evidence_bindings, "review-v1 evidence_bindings", hasProjectionProof(proof, row)),
     reviewers: acceptedOccurrenceDecision
       ? [acceptedOccurrenceDecision.reviewer]
       : [...new Set(anchors.map((decision) => decision.reviewer))].sort(),
@@ -436,6 +480,7 @@ export function operationalOccurrenceReviewDecisions(
   rows: readonly OperationalOccurrenceRow[],
   anchorReviewDecisions: readonly OperationalAnchorReviewDecision[],
   acceptedOccurrenceDecisions: readonly OperationalOccurrenceAcceptedDecision[] = [],
+  proof?: OperationalOccurrenceV2ReviewProjectionProof,
 ): OperationalOccurrenceReviewDecision[] {
   const anchorsById = new Map(anchorReviewDecisions.map((decision) => [decision.decision_id, decision]));
   const acceptedOccurrencesById = new Map(
@@ -443,7 +488,7 @@ export function operationalOccurrenceReviewDecisions(
   );
   return [...rows]
     .sort((left, right) => left.occurrence_id.localeCompare(right.occurrence_id))
-    .map((row) => decisionForRow(row, anchorsById, acceptedOccurrencesById));
+    .map((row) => decisionForRow(row, anchorsById, acceptedOccurrencesById, proof));
 }
 
 function projectionBinding(value: OperationalOccurrenceReviewDecision): unknown {
@@ -459,7 +504,7 @@ function projectionBinding(value: OperationalOccurrenceReviewDecision): unknown 
   };
 }
 
-function rowBinding(value: OperationalOccurrenceRow): unknown {
+function rowBinding(value: OperationalOccurrenceRow, proof?: OperationalOccurrenceV2ReviewProjectionProof): unknown {
   return {
     decision_id: value.occurrence_review_decision_id,
     occurrence_id: value.occurrence_id,
@@ -476,13 +521,14 @@ function rowBinding(value: OperationalOccurrenceRow): unknown {
       evidence_bindings: route.evidence_bindings,
     })),
     treatment: treatmentBinding(value),
-    evidence_bindings: value.evidence_bindings,
+    evidence_bindings: projectReviewV1Bindings(value.evidence_bindings, "review-v1 parity evidence_bindings", hasProjectionProof(proof, value)),
   };
 }
 
 export function assertOperationalOccurrenceReviewDecisions(
   decisions: readonly OperationalOccurrenceReviewDecision[],
   rows: readonly OperationalOccurrenceRow[],
+  proof?: OperationalOccurrenceV2ReviewProjectionProof,
 ): OperationalOccurrenceReviewDecision[] {
   const parsedRows = rows.map((row, index) => parseOperationalOccurrence(row, `occurrence review row[${index}]`));
   const rowsById = new Map(parsedRows.map((row) => [row.occurrence_id, row]));
@@ -500,7 +546,7 @@ export function assertOperationalOccurrenceReviewDecisions(
     occurrenceIds.add(decision.occurrence_id);
     const row = rowsById.get(decision.occurrence_id);
     if (!row) throw new Error(`occurrence review ${decision.decision_id} references missing occurrence ${decision.occurrence_id}`);
-    if (stableJson(projectionBinding(decision) as JsonValue) !== stableJson(rowBinding(row) as JsonValue)) {
+    if (stableJson(projectionBinding(decision) as JsonValue) !== stableJson(rowBinding(row, proof) as JsonValue)) {
       throw new Error(`occurrence review ${decision.decision_id} is stale for occurrence ${decision.occurrence_id}`);
     }
   }
@@ -523,7 +569,13 @@ export function operationalOccurrenceReviewSnapshot(
 export function operationalOccurrenceReviewSnapshotJson(
   decisions: readonly OperationalOccurrenceReviewDecision[],
 ): string {
-  return `${stableJson(operationalOccurrenceReviewSnapshot(decisions) as unknown as JsonValue)}\n`;
+  const json = `${stableJson(operationalOccurrenceReviewSnapshot(decisions) as unknown as JsonValue)}\n`;
+  try {
+    parseOperationalOccurrenceReviewSnapshot(JSON.parse(json) as unknown);
+  } catch (error) {
+    throw new Error(`operational occurrence review snapshot v${OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION} encode/decode failed: ${error instanceof Error ? error.message : String(error)}`);
+  }
+  return json;
 }
 
 export function parseOperationalOccurrenceReviewSnapshot(value: unknown): OperationalOccurrenceReviewSnapshot {
@@ -646,7 +698,7 @@ export function parseOperationalOccurrenceReviewSnapshot(value: unknown): Operat
   };
 }
 
-// Review decisions remain v1: occurrence contract v2 adds a deterministic phase projection from
-// already-reviewed event/relation ids and does not broaden the accepted decision surface.
+// Review-v1 contains only evidence explicitly present on the human-approved decision surface.
+// Occurrence-v2 phase and physical-scope relationships remain separately evidenced projections.
 const _occurrenceContractSupportsReviewV1: 1 = OPERATIONAL_OCCURRENCE_REVIEW_SCHEMA_VERSION;
 void _occurrenceContractSupportsReviewV1;
