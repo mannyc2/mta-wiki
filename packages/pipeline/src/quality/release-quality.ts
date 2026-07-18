@@ -140,6 +140,10 @@ export type QualityReportWriteResult = {
   deterministic: DeterministicQualityReport;
 };
 
+export type QualityReportCheckResult = QualityReportWriteResult & {
+  checked: true;
+};
+
 export type SampleGroup = keyof typeof SAMPLE_TARGETS;
 
 export type EvidenceBlockText = {
@@ -190,7 +194,14 @@ function releasesRoot(rootDir: string) {
 }
 
 export function latestReleaseId(rootDir = repoRoot) {
-  return readFileSync(join(releasesRoot(rootDir), "LATEST"), "utf8").trim();
+  const pointerPath = join(releasesRoot(rootDir), "LATEST");
+  if (!existsSync(pointerPath)) throw new Error("data/exports/releases/LATEST is missing");
+  const releaseId = readFileSync(pointerPath, "utf8").trim();
+  const manifestPath = join(releasesRoot(rootDir), releaseId, "manifest.json");
+  if (!existsSync(manifestPath)) {
+    throw new Error(`Release ${releaseId} (from LATEST) has no manifest on disk; LATEST may point at an untracked internal release — pass an explicit --id or re-point LATEST`);
+  }
+  return releaseId;
 }
 
 export function releaseDir(releaseId: string, rootDir = repoRoot) {
@@ -206,7 +217,9 @@ function readJsonl<T>(path: string): T[] {
 }
 
 export function readReleaseManifest(releaseId: string, rootDir = repoRoot): ReleaseManifest {
-  return parseReleaseManifest(JSON.parse(readFileSync(join(releaseDir(releaseId, rootDir), "manifest.json"), "utf8")));
+  const manifestPath = join(releaseDir(releaseId, rootDir), "manifest.json");
+  if (!existsSync(manifestPath)) throw new Error(`Release ${releaseId} has no manifest on disk`);
+  return parseReleaseManifest(JSON.parse(readFileSync(manifestPath, "utf8")));
 }
 
 export function readReleaseRecords(releaseId: string, rootDir = repoRoot): MtaCanonicalRecord[] {
@@ -795,4 +808,24 @@ export function writeDeterministicQualityReport(releaseId = latestReleaseId(), r
   const deterministicPath = join(dir, "deterministic.json");
   writeFileSync(deterministicPath, `${stableJson(deterministic as unknown as JsonValue)}\n`, "utf8");
   return { releaseId, dir, deterministicPath, deterministic };
+}
+
+export function checkDeterministicQualityReport(releaseId = latestReleaseId(), rootDir = repoRoot): QualityReportCheckResult {
+  const deterministic = deterministicQualityReport(releaseId, rootDir);
+  const dir = qualityDir(releaseId, rootDir);
+  const deterministicPath = join(dir, "deterministic.json");
+  if (!existsSync(deterministicPath)) {
+    throw new Error(`Tracked deterministic quality report is missing: ${relative(rootDir, deterministicPath)}`);
+  }
+  const expected = `${stableJson(deterministic as unknown as JsonValue)}\n`;
+  const actual = readFileSync(deterministicPath, "utf8");
+  if (actual !== expected) {
+    const actualSha = createHash("sha256").update(actual).digest("hex");
+    const expectedSha = createHash("sha256").update(expected).digest("hex");
+    throw new Error(
+      `Tracked deterministic quality report differs: ${relative(rootDir, deterministicPath)} ` +
+        `(actual sha256:${actualSha}; expected sha256:${expectedSha})`,
+    );
+  }
+  return { releaseId, dir, deterministicPath, deterministic, checked: true };
 }

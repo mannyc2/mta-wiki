@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "contract_id": "relationship-contract-v1",
-  "contract_sha256": "018c4560a5fed4016c3867e81425457517ae05ac215af8b533918428c5e68982",
+  "contract_sha256": "c42c838e230e6f924536a32ac5583db06a0d3068c6a1c4d6523530bdfcc9aafd",
   "endpoint_matrix_sha256": "44f4e38549bd5134764cbe64231687a5ae315217291ea9b95011d6dc3d76d54c",
   "canonical_relations_sha256": "0dd596691bdd6e922b62aa254885c2413498ceb03ba8531d1e0445f8f1af6375",
-  "input_fingerprint": "901fef55fdd2b7dd44927e6af2fbc4dbdfbd0a9daa476e9485710eed75e46b15",
+  "input_fingerprint": "f71aca4d8be43b9b549148db924ba69ec1e8f8701f73cc151b841a0bb7bcf607",
   "mode": "enforce",
   "artifacts": [
     {

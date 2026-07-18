@@ -371,7 +371,10 @@ function routeAnchorIndex(
 ): ReadonlyMap<string, string[]> {
   const index = new Map<string, Set<string>>();
   for (const anchor of routeAnchors) {
-    if (!anchor.gtfs_route_id || anchor.disposition !== "true_route") continue;
+    if (
+      !anchor.gtfs_route_id ||
+      (anchor.disposition !== "true_route" && anchor.disposition !== "exact_service")
+    ) continue;
     for (const recordId of [anchor.canonical_route_record_id, ...anchor.variant_record_ids]) {
       if (!recordId) continue;
       if (

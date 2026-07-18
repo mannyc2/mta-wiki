@@ -20,7 +20,9 @@ import {
   relationship_completeness_subjects, relationship_completeness_roles,
   relationship_completeness_findings, relationship_selector_contracts,
   relationship_enforcement_state,
-  ref_gtfs_routes, ref_agencies, CANONICAL_VIEWS,
+  ref_gtfs_routes, ref_agencies, ref_gtfs_snapshots, ref_gtfs_route_inventory,
+  ref_gtfs_route_activity, ref_current_bus_route_catalog, ref_gtfs_catalog_disagreements,
+  CANONICAL_VIEWS,
 } from "./schema.js";
 import {
   RELATIONSHIP_COMPLETENESS_REQUIRED_SELECTORS,
@@ -125,6 +127,54 @@ const CHECK_BODIES: Record<string, Record<string, string>> = {
     state_key: "state_key = 'canonical'",
     sealed: "sealed IN (0,1)",
   },
+  ref_gtfs_snapshots: {
+    manifest_sha256: "length(manifest_sha256) = 64 AND manifest_sha256 NOT GLOB '*[^0-9a-f]*'",
+    schema_version: "schema_version = 2",
+    route_identity_count: "route_identity_count >= 0",
+    route_activity_count: "route_activity_count >= 0",
+    catalog_identity_count: "catalog_identity_count >= 0",
+    catalog_only_count: "catalog_only_count >= 0",
+    gtfs_only_count: "gtfs_only_count >= 0",
+  },
+  ref_gtfs_route_inventory: {
+    dataset_id: "dataset_id IN ('mta-nyct-bus','mta-bus-company')",
+    gtfs_route_id: "gtfs_route_id = source_route_id",
+    component_feed_ids_json: "json_valid(component_feed_ids_json) = 1 AND json_type(component_feed_ids_json) = 'array'",
+    declared_in_feed: "declared_in_feed = 1",
+    catalog_in_effect: "catalog_in_effect IN ('yes','no','indeterminate')",
+    reliable_interval_derivation: "reliable_interval_derivation = 'component_feed_bounds_intersection_v1'",
+    reliability_status: "reliability_status IN ('reliable','indeterminate')",
+    scheduled_in_window: "scheduled_in_window IN ('yes','no','indeterminate')",
+    scheduled_service_dates_json: "json_valid(scheduled_service_dates_json) = 1 AND json_type(scheduled_service_dates_json) = 'array'",
+    scheduled_trip_template_date_count: "scheduled_trip_template_date_count >= 0",
+    frequencies_present: "frequencies_present IN (0,1)",
+    designation_literals_json: "json_valid(designation_literals_json) = 1 AND json_type(designation_literals_json) = 'array'",
+    normalized_service_modes_json: "json_valid(normalized_service_modes_json) = 1 AND json_type(normalized_service_modes_json) = 'array'",
+    display_label_source: "display_label_source IN ('current_bus_routes','gtfs','source_route_id')",
+    label_fallback: "label_fallback IS NULL OR label_fallback = 'source_route_id'",
+    label_diff_json: "label_diff_json IS NULL OR (json_valid(label_diff_json) = 1 AND json_type(label_diff_json) = 'object')",
+  },
+  ref_gtfs_route_activity: {
+    dataset_id: "dataset_id IN ('mta-nyct-bus','mta-bus-company')",
+    gtfs_route_id: "gtfs_route_id = source_route_id",
+    component_feed_ids_json: "json_valid(component_feed_ids_json) = 1 AND json_type(component_feed_ids_json) = 'array'",
+    scheduled_service_dates_json: "json_valid(scheduled_service_dates_json) = 1 AND json_type(scheduled_service_dates_json) = 'array'",
+    scheduled_trip_template_date_count: "scheduled_trip_template_date_count >= 0",
+    scheduled_in_window: "scheduled_in_window IN ('yes','no','indeterminate')",
+    reliability_status: "reliability_status IN ('reliable','indeterminate')",
+    frequencies_present: "frequencies_present IN (0,1)",
+  },
+  ref_current_bus_route_catalog: {
+    schema_version: "schema_version = 1",
+    in_effect: "in_effect = 'yes'",
+    designation_literals_json: "json_valid(designation_literals_json) = 1 AND json_type(designation_literals_json) = 'array'",
+    normalized_service_modes_json: "json_valid(normalized_service_modes_json) = 1 AND json_type(normalized_service_modes_json) = 'array'",
+    source_row_count: "source_row_count > 0",
+  },
+  ref_gtfs_catalog_disagreements: {
+    disagreement_type: "disagreement_type IN ('catalog_only','gtfs_only')",
+    equality_claim: "equality_claim = 0",
+  },
 };
 
 type IndexSpec = { name: string; table: string; columns: string[]; quoted: boolean };
@@ -182,6 +232,11 @@ const RELATIONSHIP_COMPLETENESS_INDEXES: IndexSpec[] = [
   { name: "idx_relationship_completeness_subject", table: "relationship_completeness_subjects", columns: ["selector", "subject_id"], quoted: false },
   { name: "idx_relationship_completeness_role", table: "relationship_completeness_roles", columns: ["selector", "role", "role_status"], quoted: false },
   { name: "idx_relationship_completeness_findings_code", table: "relationship_completeness_findings", columns: ["code", "selector"], quoted: false },
+];
+
+const GTFS_SNAPSHOT_INDEXES: IndexSpec[] = [
+  { name: "idx_ref_gtfs_inventory_exact_id", table: "ref_gtfs_route_inventory", columns: ["snapshot_id", "gtfs_route_id"], quoted: false },
+  { name: "idx_ref_gtfs_disagreements_exact_id", table: "ref_gtfs_catalog_disagreements", columns: ["snapshot_id", "exact_route_id"], quoted: false },
 ];
 
 const COMPLETENESS_SELECTOR_SQL = RELATIONSHIP_COMPLETENESS_REQUIRED_SELECTORS
@@ -833,6 +888,14 @@ export function schemaDdlStatements(): string[] {
     renderCreateTable(payload_value_conflicts),
   );
   out.push(renderCreateTable(ref_gtfs_routes), renderCreateTable(ref_agencies));
+  out.push(
+    renderCreateTable(ref_gtfs_snapshots),
+    renderCreateTable(ref_gtfs_route_inventory),
+    renderCreateTable(ref_gtfs_route_activity),
+    renderCreateTable(ref_current_bus_route_catalog),
+    renderCreateTable(ref_gtfs_catalog_disagreements),
+    ...GTFS_SNAPSHOT_INDEXES.map(renderIndex),
+  );
   out.push(...RELATIONSHIP_TRIGGERS);
   out.push(...FTS_TABLES.map(renderFtsDdl));
   out.push(...CANONICAL_VIEWS.map(renderView));

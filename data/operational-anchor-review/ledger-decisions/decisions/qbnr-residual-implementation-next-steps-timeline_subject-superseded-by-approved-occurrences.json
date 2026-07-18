@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "qbnr-residual-implementation-next-steps-timeline_subject-superseded-by-approved-occurrences",
+  "gap_id": "operational-coverage:875c476479ec773d50da93e2",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-operational-integrity-2026-07-18",
+  "decided_at": "2026-07-18T18:28:45Z",
+  "rationale": "This addendum heading and activity summary describes umbrella implementation preparation, not an independent route-level onset. The accepted occurrence fixture already contains 83 source-complete QBNR Phase 1 route occurrences and 38 source-complete Phase 2 route occurrences with exact route, treatment, date, and delivered scope. Linking this coarse summary would add no distinct studyable fact and could create route-treatment cross-products, so this timeline-subject diagnostic is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_implementation-next-steps",
+      "source_id": "queens_proposed_final_plan_addendum_2024",
+      "evidence_id": "queens_proposed_final_plan_addendum_2024#p009_c0007",
+      "block_id": "p009_c0007"
+    },
+    {
+      "record_id": "event_implementation-next-steps",
+      "source_id": "queens_proposed_final_plan_addendum_2024",
+      "evidence_id": "queens_proposed_final_plan_addendum_2024#p009_c0008",
+      "block_id": "p009_c0008"
+    }
+  ],
+  "search_receipt_ids": []
+}

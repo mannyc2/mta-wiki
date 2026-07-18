@@ -1,11 +1,12 @@
 import { createHash } from "node:crypto";
 import { afterAll, describe, expect, it } from "bun:test";
-import { mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord, StagedSourceBlock } from "@mta-wiki/db/types";
 import {
+  checkDeterministicQualityReport,
   correctionsLedgerStats,
   crossFieldSanity,
   deterministicQualityReport,
@@ -134,7 +135,18 @@ describe("release quality checks", () => {
     const report = deterministicQualityReport("det", root);
     expect(report.record_count).toBe(1);
     expect(report.evidence_ref_resolution.resolved_refs).toBe(1);
-    expect(writeDeterministicQualityReport("det", root).deterministic).toEqual(report);
+    const written = writeDeterministicQualityReport("det", root);
+    expect(written.deterministic).toEqual(report);
+    const beforeBytes = readFileSync(written.deterministicPath, "utf8");
+    const beforeMtime = statSync(written.deterministicPath).mtimeMs;
+    expect(checkDeterministicQualityReport("det", root).checked).toBe(true);
+    expect(readFileSync(written.deterministicPath, "utf8")).toBe(beforeBytes);
+    expect(statSync(written.deterministicPath).mtimeMs).toBe(beforeMtime);
+
+    writeFileSync(written.deterministicPath, `${beforeBytes} `, "utf8");
+    expect(() => checkDeterministicQualityReport("det", root)).toThrow(
+      "Tracked deterministic quality report differs",
+    );
   });
 
   it("reports semantic invariant, duplication, threshold, and correction-ledger metrics", () => {

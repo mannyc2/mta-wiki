@@ -3,7 +3,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSy
 import { dirname, join, relative } from "node:path";
 import { stableHash, stableJson } from "../../../../../packages/db/src/stable-json.ts";
 import type { JsonValue, MtaCanonicalRecord } from "../../../../../packages/db/src/types.ts";
-import { entriesToRecords } from "../../../../../packages/pipeline/src/materialize/materialize.ts";
+import { readCanonicalRecordsFromDbFile } from "../../../../../packages/pipeline/src/materialize/canonical-read.ts";
 import {
   parseOperationalOccurrencesJsonl,
   type OperationalOccurrenceRow,
@@ -15,13 +15,6 @@ import {
   type RelationshipDispositionDecision,
 } from "../../../../../packages/pipeline/src/quality/relationship-dispositions.ts";
 import type { OperationalCoverageGap } from "../../../../../packages/pipeline/src/quality/operational-coverage.ts";
-import { retiredSubmissionIds } from "../../../../../packages/pipeline/src/records/submission-overrides.ts";
-import {
-  readSemanticCorrections,
-  readSemanticCorrectionSupersessions,
-  withSemanticCorrections,
-} from "../../../../../packages/pipeline/src/records/semantic-corrections.ts";
-import { readSubmissionEntries } from "../../../../../packages/pipeline/src/records/submissions.ts";
 
 const root = process.cwd();
 const outputDir = join(root, "data/relationship-integrity/dispositions/v1/operational-events");
@@ -95,23 +88,10 @@ function aggregatePin(paths: readonly string[], pathRoots: readonly string[]): A
 }
 
 function currentCanonicalRecords(): MtaCanonicalRecord[] {
-  const baseRecords = entriesToRecords(readSubmissionEntries(), {
-    retiredSubmissionIds: retiredSubmissionIds(),
-  });
-  const corrected = withSemanticCorrections(
-    baseRecords,
-    readSemanticCorrections(),
-    readSemanticCorrectionSupersessions(),
-  );
-  if (corrected.issues.length > 0) {
-    throw new Error(
-      `Current canonical materialization has ${corrected.issues.length} semantic-correction issue(s): ` +
-        corrected.issues.slice(0, 8).map((issue) =>
-          `${issue.code} ${issue.recordId ?? issue.path ?? ""}: ${issue.message}`
-        ).join("; "),
-    );
-  }
-  return corrected.records;
+  const path = join(root, "data", "canonical.db");
+  const records = readCanonicalRecordsFromDbFile(path);
+  if (!records) throw new Error(`Current sealed canonical database is missing or unreadable: ${path}`);
+  return records;
 }
 
 function unique(values: Iterable<string>): string[] {

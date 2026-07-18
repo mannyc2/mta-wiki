@@ -45,6 +45,52 @@ describe("schema row validators (B2)", () => {
     expect(validateRow("routes", { record_id: "r1", not_a_column: "x" }).length).toBeGreaterThan(0);
   });
 
+  it("validates the complete exact route-inventory SQL projection", () => {
+    const row = {
+      snapshot_id: "mta-bus-2026-07-18",
+      dataset_id: "mta-nyct-bus",
+      source_route_id: "B44+",
+      gtfs_route_id: "B44+",
+      component_feed_ids_json: '["nyct-brooklyn"]',
+      agency_id: "MTA NYCT",
+      raw_route_type: "3",
+      route_family_id: "B44",
+      route_short_name: "B44-SBS",
+      route_long_name: "Sheepshead Bay - Williamsburg",
+      route_desc: null,
+      declared_in_feed: 1,
+      catalog_in_effect: "yes",
+      catalog_effective_as_of_date: "2026-07-18",
+      reliable_interval_start: "2026-06-27",
+      reliable_interval_end: "2026-09-05",
+      reliable_interval_derivation: "component_feed_bounds_intersection_v1",
+      reliability_status: "reliable",
+      scheduled_in_window: "yes",
+      scheduled_service_dates_json: '["2026-07-18"]',
+      scheduled_trip_template_date_count: 10,
+      frequencies_present: 0,
+      designation_literals_json: '["route_type:SBS","trip_type:14"]',
+      normalized_service_modes_json: '["sbs"]',
+      display_label: "B44-SBS",
+      display_label_source: "current_bus_routes",
+      label_fallback: null,
+      label_diff_json: null,
+    };
+    expect(validateRow("ref_gtfs_route_inventory", row)).toEqual([]);
+    expect(requiredColumns("ref_gtfs_route_inventory")).toEqual(expect.arrayContaining([
+      "snapshot_id",
+      "dataset_id",
+      "source_route_id",
+      "gtfs_route_id",
+      "catalog_in_effect",
+      "scheduled_in_window",
+      "display_label",
+    ]));
+    const { snapshot_id, ...missingSnapshot } = row;
+    expect(validateRow("ref_gtfs_route_inventory", missingSnapshot).length).toBeGreaterThan(0);
+    expect(validateRow("ref_gtfs_route_inventory", { ...row, extra: "drift" }).length).toBeGreaterThan(0);
+  });
+
   it("returns [] for unknown tables (no validator) rather than throwing", () => {
     expect(validateRow("nonexistent_table", { a: 1 })).toEqual([]);
   });

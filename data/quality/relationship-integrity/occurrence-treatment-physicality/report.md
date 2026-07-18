@@ -1,11 +1,11 @@
 # Eligible occurrence treatment physicality review
 
-- Release snapshot: `v1-rc21` (`final_post_semantic_release`).
-- Eligible operational occurrences: 134.
-- Unique reviewed treatment records: 276.
-- Treatment memberships: 276.
-- Classification counts: {"physical_corridor_or_segment_intervention":1,"nonphysical_service_operations_policy_control":275,"point_or_stop_physical_intervention":0,"review_required":0}.
-- Occurrence scope dispositions: {"physical_scope_satisfied":1,"physical_scope_missing":0,"physical_scope_relation_missing":0,"physical_scope_evidence_missing":0,"physical_scope_relation_invalid":0,"physicality_review_required":0,"physical_scope_not_applicable":133}.
+- Release snapshot: `v1-rc24` (`final_post_semantic_release`).
+- Eligible operational occurrences: 130.
+- Unique reviewed treatment records: 269.
+- Treatment memberships: 269.
+- Classification counts: {"physical_corridor_or_segment_intervention":1,"nonphysical_service_operations_policy_control":268,"point_or_stop_physical_intervention":0,"review_required":0}.
+- Occurrence scope dispositions: {"physical_scope_satisfied":1,"physical_scope_missing":0,"physical_scope_relation_missing":0,"physical_scope_evidence_missing":0,"physical_scope_relation_invalid":0,"physicality_review_required":0,"physical_scope_not_applicable":129}.
 - Immutable review ledger complete: true.
 - Physical-scope role complete: true.
 - Final post-semantic release guard ready: true.
@@ -15,10 +15,10 @@
 
 - `automated_bus_lane_enforcement`: {"unique_treatment_count":5,"occurrence_membership_count":5,"classifications":{"nonphysical_service_operations_policy_control":5}}.
 - `bus_lane`: {"unique_treatment_count":1,"occurrence_membership_count":1,"classifications":{"physical_corridor_or_segment_intervention":1}}.
-- `bus_stop_or_boarding`: {"unique_treatment_count":116,"occurrence_membership_count":116,"classifications":{"nonphysical_service_operations_policy_control":116}}.
+- `bus_stop_or_boarding`: {"unique_treatment_count":113,"occurrence_membership_count":113,"classifications":{"nonphysical_service_operations_policy_control":113}}.
 - `fare_collection`: {"unique_treatment_count":4,"occurrence_membership_count":4,"classifications":{"nonphysical_service_operations_policy_control":4}}.
 - `route_redesign`: {"unique_treatment_count":1,"occurrence_membership_count":1,"classifications":{"nonphysical_service_operations_policy_control":1}}.
-- `service_pattern`: {"unique_treatment_count":149,"occurrence_membership_count":149,"classifications":{"nonphysical_service_operations_policy_control":149}}.
+- `service_pattern`: {"unique_treatment_count":145,"occurrence_membership_count":145,"classifications":{"nonphysical_service_operations_policy_control":145}}.
 
 ## Findings
 

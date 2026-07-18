@@ -2468,6 +2468,11 @@ export function relationshipEnforcementTransitionFingerprint(
     delete value.graph_manifest_sha256;
     delete value.graph_summary_sha256;
     delete value.enforcement_mode;
+    // Canonical DB v9 adds only the independently verified Plan 035 GTFS/Current Bus Routes
+    // reference tables. Preserve the already content-addressed v8 relationship transition
+    // fingerprint while still rejecting every other SQL-integrity field drift and every later,
+    // unreviewed schema version. The raw summary and canonical DB remain separately SHA-pinned.
+    if (value.canonical_db_version === 9) value.canonical_db_version = 8;
   } else if (role === "linkage_materialization_summary") {
     delete value.canonical_db_sha256;
   } else {

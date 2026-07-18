@@ -1,4 +1,8 @@
-import { relative } from "node:path";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { join, relative } from "node:path";
+import { parseGtfsSnapshotManifestV2, verifyGtfsSnapshotDirectory } from "@mta-wiki/db/gtfs-snapshot";
+import { parseRouteInventoryJsonl } from "@mta-wiki/pipeline/materialize/route-identity-contract";
+import { buildRouteIdentityAudit, routeIdentityAuditBytes, routeIdentityAuditSha256, routeIdentityReviewMarkdown } from "@mta-wiki/pipeline/materialize/route-identities";
 import {
   listModels,
   listProfiles,
@@ -26,7 +30,7 @@ Usage:
   bun run harness export-release [--id <release-id>] [--force] [--set-latest] [--quality-report <path>]   Versioned release snapshot; --set-latest explicitly promotes it
   bun run harness verify-release <release-id>   Strictly verify an existing named release directory
   bun run harness export-site                                      Build static HTML under dist/site and run Pagefind
-  bun run harness quality-report [release-id]                    Write deterministic release quality checks under data/quality/
+  bun run harness quality-report [release-id] [--check]          Write or byte-check deterministic release quality under data/quality/
   bun run harness operational-coverage [--output <dir>] [--decisions <dir>] [--search-receipts <dir>] [--start YYYY-MM-DD --end YYYY-MM-DD]   Write the deterministic completion ledger, priority queue, and honest coverage matrix
   bun run harness coverage-matrix [same options]                 Alias for operational-coverage
   bun run harness forecast-frontier --as-of YYYY-MM-DD --grace-days <n> [--coverage <dir>] [--output <dir>]   Write the deterministic forecast-to-realized acquisition target list
@@ -204,7 +208,36 @@ export const utilityCommands = {
     console.log(renderTranscript(args.subject, { full: args.full }));
   },
 
+  "verify-gtfs-reference": (args) => { verifyGtfsReference(args.snapshot ?? args.subject ?? ""); },
+
+  "route-identity-diff": (args) => { if (!args.fromSnapshot || !args.toSnapshot) throw new Error("route-identity-diff requires --from and --to"); routeIdentityDiff(args.fromSnapshot, args.toSnapshot); },
+
+  "route-identity-audit": (args) => { routeIdentityAudit(args.snapshot ?? args.subject ?? ""); },
+
   usage: (args) => {
     printUsage(writeTranscriptUsageArtifacts(args.subject));
   },
 } satisfies Record<string, CommandHandler>;
+
+const SAFE_SNAPSHOT_ID = /^[A-Za-z0-9][A-Za-z0-9._-]*$/u;
+function snapshotDir(snapshotId: string) {
+  if (!SAFE_SNAPSHOT_ID.test(snapshotId)) throw new Error(`${snapshotId || "(empty)"}: expected a safe snapshot id`);
+  return join(repoRoot, "data", "reference", "gtfs", "snapshots", snapshotId);
+}
+function readSnapshot(snapshotId: string) {
+  const dir = snapshotDir(snapshotId);
+  const verified = verifyGtfsSnapshotDirectory(dir);
+  const manifestBytes = readFileSync(join(dir, "manifest.json"));
+  const manifest = parseGtfsSnapshotManifestV2(JSON.parse(manifestBytes.toString("utf8")));
+  if (manifest.snapshot_id !== snapshotId || verified.snapshot_id !== snapshotId) throw new Error(`${snapshotId}: snapshot manifest identity mismatch`);
+  const inventory = parseRouteInventoryJsonl(readFileSync(join(dir, "route_inventory.jsonl"), "utf8"));
+  return { dir, manifest, manifest_sha256: verified.manifest_sha256, inventory };
+}
+function verifyGtfsReference(snapshotId: string) {
+  const value = readSnapshot(snapshotId);
+  const selectedPath = join(repoRoot, "data", "reference", "gtfs", "SELECTED");
+  const selected = existsSync(selectedPath) && readFileSync(selectedPath, "utf8") === `${snapshotId}\n`;
+  console.log(JSON.stringify({ snapshot_id: snapshotId, manifest_sha256: value.manifest_sha256, route_count: value.inventory.length, selected }));
+}
+function routeIdentityDiff(from: string, to: string) { const a=readSnapshot(from), b=readSnapshot(to); const left=new Map(a.inventory.map(r=>[`${r.dataset_id}\0${r.source_route_id}`,r])), right=new Map(b.inventory.map(r=>[`${r.dataset_id}\0${r.source_route_id}`,r])); const keys=[...new Set([...left.keys(),...right.keys()])].sort(); const changes=keys.filter(k=>JSON.stringify(left.get(k))!==JSON.stringify(right.get(k))).map(k=>({identity:k.replace("\0","/"),before:left.get(k)??null,after:right.get(k)??null})); console.log(JSON.stringify({from,to,change_count:changes.length,changes})); }
+function routeIdentityAudit(snapshotId: string) { const snapshot=readSnapshot(snapshotId); const records=readFileSync(join(repoRoot,"data","canonical","routes.jsonl"),"utf8").split(/\r?\n/u).filter(Boolean).map(line=>JSON.parse(line)); const audit=buildRouteIdentityAudit(snapshotId,records,snapshot.inventory); const out=join(repoRoot,"data","quality","route-identity",snapshotId); mkdirSync(out,{recursive:true}); writeFileSync(join(out,"proposed-bindings.json"),routeIdentityAuditBytes(audit)); writeFileSync(join(out,"review-packet.md"),routeIdentityReviewMarkdown(audit)); const digest={schema_version:1,snapshot_id:snapshotId,proposal_sha256:routeIdentityAuditSha256(audit),route_record_count:audit.route_record_count,exact_binding_count:audit.exact_binding_count,review_required_count:audit.review_required_count,approval_status:"unapproved"}; writeFileSync(join(out,"proposal-digest.json"),`${JSON.stringify(digest,null,2)}\n`); console.log(JSON.stringify(digest)); }

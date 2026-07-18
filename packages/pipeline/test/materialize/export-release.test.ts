@@ -394,6 +394,7 @@ function relationshipGateSourceValues(
 
 function writeRelationshipBundleFixture(
   root: string,
+  releaseId: string,
   relationIds: string[] = ["relation_fixture"],
 ) {
   const sortedRelationIds = [...relationIds].sort((left, right) =>
@@ -561,18 +562,27 @@ function writeRelationshipBundleFixture(
     completenessManifestPath,
     `${stableJson({
       schema_version: 1,
+      release_id: releaseId,
       input_pins: [
+        "claims.jsonl",
         "corridors.jsonl",
+        "entities.jsonl",
         "events.jsonl",
+        "metric_claims.jsonl",
         "operational_occurrences.jsonl",
+        "projects.jsonl",
+        "route_anchors.jsonl",
         "routes.jsonl",
+        "source_gaps.jsonl",
+        "sources.jsonl",
+        "tables.jsonl",
         "treatment_components.jsonl",
       ].map((name) => ({
-        path: `data/exports/releases/v-fixture/${name}`,
+        path: `data/exports/releases/${releaseId}/${name}`,
         bytes: 0,
         sha256: emptySha256,
       })).concat([{
-        path: "data/exports/releases/v-fixture/relations.jsonl",
+        path: `data/exports/releases/${releaseId}/relations.jsonl`,
         bytes: Buffer.byteLength(releaseRelationBytes),
         sha256: createHash("sha256")
           .update(releaseRelationBytes)
@@ -1170,7 +1180,7 @@ describe("exportRelease", () => {
 
   it("cuts manifest v4 with a content-addressed relationship-integrity bundle", () => {
     const root = join(work, "relationship-bundle");
-    const fixture = writeRelationshipBundleFixture(root);
+    const fixture = writeRelationshipBundleFixture(root, "v4-bundle");
     const result = exportTestRelease("v4-bundle", {
       rootDir: root,
       records: [record("relation_fixture", "relation")],
@@ -1213,7 +1223,7 @@ describe("exportRelease", () => {
       left.localeCompare(right)
     );
     expect([...relationIds].sort()).not.toEqual(exporterOrder);
-    writeRelationshipBundleFixture(root, relationIds);
+    writeRelationshipBundleFixture(root, "v4-locale-order", relationIds);
 
     exportTestRelease("v4-locale-order", {
       rootDir: root,
@@ -1239,7 +1249,7 @@ describe("exportRelease", () => {
 
   it("forbids an enforcement bundle while post-promotion refresh is still required", () => {
     const root = join(work, "relationship-bundle-refresh-required");
-    const fixture = writeRelationshipBundleFixture(root);
+    const fixture = writeRelationshipBundleFixture(root, "refresh-required");
     const contractEntry = fixture.artifacts.find(
       (entry) => entry.role === "relationship_contract",
     )!;
@@ -1277,7 +1287,7 @@ describe("exportRelease", () => {
 
   it("fails a release cut when a pinned relationship-integrity artifact changes", () => {
     const root = join(work, "relationship-bundle-tamper");
-    const fixture = writeRelationshipBundleFixture(root);
+    const fixture = writeRelationshipBundleFixture(root, "tampered");
     const artifact = fixture.artifacts.find((entry) => entry.role === "graph_audit_summary");
     if (!artifact) throw new Error("missing fixture artifact");
     writeFileSync(join(root, artifact.source_path), "{\"changed\":true}\n", "utf8");
@@ -1293,7 +1303,7 @@ describe("exportRelease", () => {
 
   it("rejects an enforcement bundle whose matrix belongs to another relation snapshot", () => {
     const root = join(work, "relationship-bundle-snapshot-mismatch");
-    writeRelationshipBundleFixture(root);
+    writeRelationshipBundleFixture(root, "snapshot-mismatch");
     expect(() =>
       exportTestRelease("snapshot-mismatch", {
         rootDir: root,
@@ -1309,7 +1319,7 @@ describe("exportRelease", () => {
 
   it("requires every enforcement gate artifact to be included in the release bundle", () => {
     const root = join(work, "relationship-bundle-gate-closure");
-    const fixture = writeRelationshipBundleFixture(root);
+    const fixture = writeRelationshipBundleFixture(root, "missing-gate");
     const descriptor = JSON.parse(
       readFileSync(fixture.descriptorPath, "utf8"),
     ) as { artifacts: Array<{ role: string }> };
@@ -1334,7 +1344,7 @@ describe("exportRelease", () => {
 
   it("requires the graph findings ledger as a first-class release artifact", () => {
     const root = join(work, "relationship-bundle-graph-findings");
-    const fixture = writeRelationshipBundleFixture(root);
+    const fixture = writeRelationshipBundleFixture(root, "missing-graph-findings");
     const descriptor = JSON.parse(
       readFileSync(fixture.descriptorPath, "utf8"),
     ) as { artifacts: Array<{ role: string }> };
@@ -1360,7 +1370,7 @@ describe("exportRelease", () => {
 
   it("rejects relationship bundle artifacts that resolve through symlinks", () => {
     const root = join(work, "relationship-bundle-symlink");
-    const fixture = writeRelationshipBundleFixture(root);
+    const fixture = writeRelationshipBundleFixture(root, "symlinked");
     const graph = fixture.artifacts.find(
       (entry) => entry.role === "graph_audit_summary",
     );
@@ -1380,7 +1390,7 @@ describe("exportRelease", () => {
 
   it("does not downgrade an enforced contract to manifest v3 when the bundle is disabled", () => {
     const root = join(work, "relationship-bundle-downgrade");
-    const fixture = writeRelationshipBundleFixture(root);
+    const fixture = writeRelationshipBundleFixture(root, "downgraded");
     const contract = fixture.artifacts.find(
       (entry) => entry.role === "relationship_contract",
     );
@@ -1511,7 +1521,7 @@ describe("exportRelease", () => {
     const missingPointer = structuredClone(manifest);
     delete (missingPointer.pointers as Partial<typeof missingPointer.pointers>).operational_anchor_review_decisions;
     expect(() => parseReleaseManifest(missingPointer)).toThrow("pointers.operational_anchor_review_decisions");
-    expect(() => parseReleaseManifest({ manifest_version: 5 })).toThrow("expected 1, 2, 3, or 4");
+    expect(() => parseReleaseManifest({ manifest_version: 6 })).toThrow("expected 1, 2, 3, 4, or 5");
   });
 
   it("requires all manifest-v3 occurrence pointers to be addressed", () => {
@@ -1573,12 +1583,27 @@ describe("exportRelease", () => {
     expect(fileTree(releaseDir(rootA, "same-id"))).toEqual(fileTree(releaseDir(rootB, "same-id")));
   });
 
-  it("keeps releases immutable unless force is set", () => {
+  it("writes replay output under output-root without touching repository releases or LATEST", () => {
+    const root = join(work, "output-root-source");
+    const outputRoot = join(work, "output-root-destination");
+    mkdirSync(join(root, "data", "exports", "releases"), { recursive: true });
+    writeFileSync(join(root, "data", "exports", "releases", "LATEST"), "v1-rc5\n", "utf8");
+    exportTestRelease("replay", { rootDir: root, outputRoot, records: [] });
+    expect(existsSync(join(outputRoot, "replay", "manifest.json"))).toBe(true);
+    expect(existsSync(releaseDir(root, "replay"))).toBe(false);
+    expect(readFileSync(join(root, "data", "exports", "releases", "LATEST"), "utf8")).toBe("v1-rc5\n");
+    expect(() => exportTestRelease("replay", { rootDir: root, outputRoot, records: [] })).toThrow("already exists");
+    expect(() => exportTestRelease("promote", { rootDir: root, outputRoot, setLatest: true, records: [] })).toThrow("cannot update LATEST");
+    expect(existsSync(join(outputRoot, "promote"))).toBe(false);
+  });
+
+  it("keeps releases immutable and rejects force replacement", () => {
     const root = join(work, "immutable");
     exportTestRelease("once", { rootDir: root, records: [record("route_b1", "route")] });
-    expect(() => exportTestRelease("once", { rootDir: root, records: [record("route_b2", "route")] })).toThrow(/already exists/u);
-    exportTestRelease("once", { rootDir: root, force: true, records: [record("route_b2", "route")] });
-    expect(readFileSync(join(releaseDir(root, "once"), "routes.jsonl"), "utf8")).toContain("route_b2");
+    const before = fileTree(releaseDir(root, "once"));
+    expect(() => exportTestRelease("once", { rootDir: root, records: [record("route_b2", "route")] })).toThrow("already exists");
+    expect(() => exportTestRelease("once", { rootDir: root, force: true, records: [record("route_b2", "route")] })).toThrow("Force replacement");
+    expect(fileTree(releaseDir(root, "once"))).toEqual(before);
   });
 
   it("rejects unsafe release ids before any join, removal, or write", () => {
@@ -1597,31 +1622,13 @@ describe("exportRelease", () => {
     expect(existsSync(releases)).toBe(false);
   });
 
-  it("keeps a prior cut byte-identical when a forced replacement fails after writing its temp tree", () => {
+  it("rejects force before touching a prior cut", () => {
     const root = join(work, "atomic-force-failure");
     exportTestRelease("stable", { rootDir: root, records: [record("route_b1", "route")] });
     const before = fileTree(releaseDir(root, "stable"));
-    const badReviewDecisionDir = join(root, "bad-force-review");
-    mkdirSync(badReviewDecisionDir, { recursive: true });
-    writeFileSync(join(badReviewDecisionDir, "invalid.json"), "{\n", "utf8");
-
-    expect(() =>
-      exportRelease("stable", {
-        rootDir: root,
-        force: true,
-        records: [record("route_b2", "route")],
-        gtfsRoutes: [{ route_id: "B2", short_name: "B2" }],
-        routeAnchorOverrides: {},
-        reviewedNonGtfsRouteDispositions: {},
-        operationalAnchorReviewDecisionDir: badReviewDecisionDir,
-      }),
-    ).toThrow("invalid JSON");
+    expect(() => exportTestRelease("stable", { rootDir: root, force: true, records: [record("route_b2", "route")] })).toThrow("Force replacement");
     expect(fileTree(releaseDir(root, "stable"))).toEqual(before);
-    expect(
-      readdirSync(join(root, "data", "exports", "releases")).some(
-        (name) => name.startsWith(".stable.tmp-") || name.includes(".previous-"),
-      ),
-    ).toBe(false);
+    expect(readdirSync(join(root, "data", "exports", "releases")).some((name) => name.startsWith(".stable.tmp-") || name.includes(".previous-"))).toBe(false);
   });
 
   it("can fill the quality report manifest pointer", () => {

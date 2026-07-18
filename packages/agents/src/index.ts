@@ -11,6 +11,7 @@ export { exportRelease } from "@mta-wiki/pipeline/materialize/export-release";
 export { verifyReleaseDirectory } from "@mta-wiki/pipeline/materialize/release-verifier";
 export {
   THRESHOLDS,
+  checkDeterministicQualityReport,
   correctionsLedgerStats,
   deterministicQualityReport,
   latestReleaseId,
@@ -59,6 +60,19 @@ export {
 } from "@mta-wiki/pipeline/quality/fact-dedup";
 export { exportSite, siteOutDir, type SiteExportResult } from "@mta-wiki/pipeline/site/export-site";
 export { importGtfs, readGtfsManifest, type GtfsManifest } from "@mta-wiki/db/import-gtfs";
+export {
+  directoryTree,
+  installGtfsSnapshot,
+  parseGtfsAcquisitionReceiptV1,
+  parseGtfsSnapshotManifestV2,
+  serializeGtfsAcquisitionReceiptV1,
+  serializeGtfsSnapshotManifestV2,
+  verifyGtfsSnapshotDirectory,
+  type GtfsAcquisitionReceiptV1,
+  type GtfsSnapshotManifestV2,
+  type InstallGtfsSnapshotOptions,
+  type InstallGtfsSnapshotResult,
+} from "@mta-wiki/db/gtfs-snapshot";
 export { buildDossier, dossierMarkdown, writeDossier, type Dossier } from "@mta-wiki/pipeline/identity/dossier";
 export { generateGapReport, collectGaps, gapCountsByClass, type GapRow } from "@mta-wiki/pipeline/materialize/gap-report";
 export type { JsonlExportResult, JsonlParityResult } from "@mta-wiki/pipeline/materialize/export-jsonl";
@@ -67,6 +81,7 @@ export type {
   CrossFieldSanitySummary,
   DeterministicQualityReport,
   EvidenceResolutionSummary,
+  QualityReportCheckResult,
   QualityReportWriteResult,
   QuoteContainsValueSummary,
   SampleAuditSeedRow,

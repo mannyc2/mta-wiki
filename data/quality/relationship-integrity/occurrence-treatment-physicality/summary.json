@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "eligible_occurrence_count": 134,
-  "unique_treatment_count": 276,
-  "treatment_membership_count": 276,
+  "eligible_occurrence_count": 130,
+  "unique_treatment_count": 269,
+  "treatment_membership_count": 269,
   "classification_counts": {
     "physical_corridor_or_segment_intervention": 1,
-    "nonphysical_service_operations_policy_control": 275,
+    "nonphysical_service_operations_policy_control": 268,
     "point_or_stop_physical_intervention": 0,
     "review_required": 0
   },
   "scope_requirement_counts": {
     "corridor_or_segment_required": 1,
-    "not_applicable": 275,
+    "not_applicable": 268,
     "point_or_stop_required": 0,
     "review_required": 0
   },
@@ -22,18 +22,18 @@
     "physical_scope_evidence_missing": 0,
     "physical_scope_relation_invalid": 0,
     "physicality_review_required": 0,
-    "physical_scope_not_applicable": 133
+    "physical_scope_not_applicable": 129
   },
   "finding_counts": {},
   "review_ledger_complete": true,
   "physical_scope_complete": true,
   "hard_mode_ready": true,
-  "release_id": "v1-rc21",
+  "release_id": "v1-rc24",
   "review_stage": "final_post_semantic_release",
-  "release_manifest_sha256": "e60606d177f5ab51bd7c11dc4972cc4b2f53b345d801bc2d27f93c931b162299",
-  "review_ledger_sha256": "bf05e73a7f39f363d5687747c085aad60cac270127411c70c8ae842315253704",
+  "release_input_fingerprint": "7a1dc44afa8d0e32b960eb349fd03bf82f00267ce821c3267e40116a34718602",
+  "review_ledger_sha256": "937259630ea1aa981b84f1cb1cc709bd897753774580f2bb128575d78b84b433",
   "policy_sha256": "4b664726e353e7b1d823409b054fe3ecd931bf87da63eb8ffcd9c0ecda913ed5",
-  "contract_sha256": "bd2c5e89e8c60bdbb5a76602f43cce3c84687dbaef56af050d2d80146200354a",
+  "contract_sha256": "54890e120c0e17c254808ff26af58cb81c2c715a00895de62ee9cbeb1008655a",
   "by_treatment_family": {
     "automated_bus_lane_enforcement": {
       "unique_treatment_count": 5,
@@ -50,10 +50,10 @@
       }
     },
     "bus_stop_or_boarding": {
-      "unique_treatment_count": 116,
-      "occurrence_membership_count": 116,
+      "unique_treatment_count": 113,
+      "occurrence_membership_count": 113,
       "classifications": {
-        "nonphysical_service_operations_policy_control": 116
+        "nonphysical_service_operations_policy_control": 113
       }
     },
     "fare_collection": {
@@ -71,10 +71,10 @@
       }
     },
     "service_pattern": {
-      "unique_treatment_count": 149,
-      "occurrence_membership_count": 149,
+      "unique_treatment_count": 145,
+      "occurrence_membership_count": 145,
       "classifications": {
-        "nonphysical_service_operations_policy_control": 149
+        "nonphysical_service_operations_policy_control": 145
       }
     }
   },

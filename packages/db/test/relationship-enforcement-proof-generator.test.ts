@@ -20,6 +20,7 @@ import {
   assertReleaseRecordIdsUniqueAndSorted,
   compareReleaseRecordIds,
   deriveDeterminismConsumerSummary,
+  isPlan035ReviewedSourceRefresh,
   materializationInventoryText,
   repositoryStateEvidenceText,
   RELATIONSHIP_ENFORCEMENT_GATE_SOURCES,
@@ -506,6 +507,7 @@ function sourceValues(
         schema_version: 1,
         summary_id: "relationship-integrity-sql-v1",
         contract_id: "relationship-contract-v1",
+        canonical_db_version: 8,
         repository_sql_finding_identity_match: true,
         repository_sql_finding_code_counts_match: true,
         graph_summary_finding_counts_match: true,
@@ -1147,6 +1149,7 @@ describe("relationship enforcement proof generator", () => {
       refreshed.get(sqlSource.path)!,
     ) as Record<string, unknown>;
     sql.enforcement_mode = "enforce";
+    sql.canonical_db_version = 9;
     refreshed.set(
       sqlSource.path,
       `${stableJson(sql as unknown as JsonValue)}\n`,
@@ -1200,6 +1203,24 @@ describe("relationship enforcement proof generator", () => {
       })
     ).toThrow("changed non-mode source content");
 
+    const unsupportedSchemaDrift = new Map(refreshed);
+    const unsupportedSql = JSON.parse(
+      unsupportedSchemaDrift.get(sqlSource.path)!,
+    ) as Record<string, unknown>;
+    unsupportedSql.canonical_db_version = 10;
+    unsupportedSchemaDrift.set(
+      sqlSource.path,
+      `${stableJson(unsupportedSql as unknown as JsonValue)}\n`,
+    );
+    expect(() =>
+      assertRelationshipEnforcementRefreshPins({
+        receipt,
+        sourceTexts: unsupportedSchemaDrift,
+        invariantSha256ByRole,
+        canonicalDbSha256: "b".repeat(64),
+      })
+    ).toThrow("changed non-mode source content");
+
     const driftedInvariants = new Map(invariantSha256ByRole);
     driftedInvariants.set("reviewed_release_manifest", "c".repeat(64));
     expect(() =>
@@ -1218,6 +1239,55 @@ describe("relationship enforcement proof generator", () => {
         canonicalDbSha256: digest,
       })
     ).toThrow("did not rebuild the canonical DB");
+  });
+
+  it("admits only the three exact content-addressed Plan 035 reviewed source refreshes", () => {
+    const receipt = JSON.parse(readFileSync(join(
+      repoRoot,
+      "data/contracts/relationships/v1/enforcement-transition-receipts/1b2012de59e75f4ad1b89c9c379e018f042428193ded401eb3c033cf6de413e7.json",
+    ), "utf8")) as RelationshipEnforcementTransitionReceipt;
+    const refreshes = [
+      {
+        role: "occurrence_treatment_physicality_summary",
+        path: "data/quality/relationship-integrity/occurrence-treatment-physicality/summary.json",
+        sha256: "0f2dd1ebeb6fd5d1b39225cd8b9b8148c416d988debd5a87c1786a5de00df5c9",
+      },
+      {
+        role: "phase_review_summary",
+        path: "data/quality/relationship-integrity/operational-occurrence-phases/summary.json",
+        sha256: "540c25e36819a3ffb88a3194a36cf5e2ef058ca6abb6b1c7284387edac7f9abd",
+      },
+      {
+        role: "relationship_completeness_summary",
+        path: "data/quality/relationship-integrity/completeness/summary.json",
+        sha256: "c52f20d9302a0c312a0b10c237f1ea5c1fee7a3460c76aba23f79cc3f7d7c98b",
+      },
+    ] as const;
+    for (const refresh of refreshes) {
+      const pin = receipt.pre_promotion_sources.find(
+        (source) => source.role === refresh.role,
+      )!;
+      const currentText = readFileSync(join(repoRoot, refresh.path), "utf8");
+      expect(byteSha256(currentText)).toBe(refresh.sha256);
+      expect(isPlan035ReviewedSourceRefresh({ receipt, pin, currentText })).toBe(true);
+      expect(isPlan035ReviewedSourceRefresh({
+        receipt,
+        pin,
+        currentText: `${currentText} `,
+      })).toBe(false);
+    }
+    const completeness = refreshes[2];
+    const completenessPin = receipt.pre_promotion_sources.find(
+      (source) => source.role === completeness.role,
+    )!;
+    const completenessText = readFileSync(join(repoRoot, completeness.path), "utf8");
+    expect(isPlan035ReviewedSourceRefresh({
+      receipt: {
+        previous_proof: { ...receipt.previous_proof, sha256: "f".repeat(64) },
+      },
+      pin: completenessPin,
+      currentText: completenessText,
+    })).toBe(false);
   });
 
   it("rejects an enforcement-eligible graph row even when every summary and hash pin self-attests readiness", () => {
@@ -1400,7 +1470,7 @@ describe("relationship enforcement proof generator", () => {
         currentRepoRoot: textRepo.root,
         trackerRoot: trackerRepoFixture,
       })
-    ).toThrow("is not a real sealed canonical.db v8");
+    ).toThrow(`is not a real sealed canonical.db v${CANONICAL_DB_VERSION}`);
   });
 
   it("rejects an internally re-pinned release whose record identities diverge from SQLite", () => {

@@ -1,23 +1,23 @@
 # Relationship completeness audit
 
-Schema version: 1. Mode: **warning**. Release: **v1-rc21**.
+Schema version: 1. Mode: **warning**. Release: **v1-rc24**.
 
 This report uses the immutable occurrence-treatment physicality policy and exact per-treatment review ledger. Family names and location literals are not physicality evidence, and a nonphysical decision is neither a waiver nor a source of study eligibility. No generic all-record non-projectable coverage is claimed: project, corridor, entity, claim, metric, and source classes remain outside the reviewed route/event/treatment full-denominator selectors.
 
 ## Eligible operational occurrences
 
-- Release rows: 135; eligible: 134.
+- Release rows: 131; eligible: 130.
 - Core identity/route/treatment/onset role failures: 0 occurrence(s).
 - All enforcement-candidate contract-role failures: 0 occurrence(s).
 - Phase/schema migration warnings: 0 occurrence(s).
-- Physical scope required: 1; not applicable: 133; physicality review required: 0.
-- Eligible event identities inside the implementation/launch denominator: 134; outside: 0.
+- Physical scope required: 1; not applicable: 129; physicality review required: 0.
+- Eligible event identities inside the implementation/launch denominator: 130; outside: 0.
 
 ## Eligible-occurrence treatment physicality denominator
 
-- Exact treatment records: 276; occurrence memberships: 276; policy rules: 26.
-- Classifications: {"nonphysical_service_operations_policy_control":275,"physical_corridor_or_segment_intervention":1,"point_or_stop_physical_intervention":0,"review_required":0}.
-- Scope requirements: {"corridor_or_segment_required":1,"not_applicable":275,"point_or_stop_required":0,"review_required":0}.
+- Exact treatment records: 269; occurrence memberships: 269; policy rules: 26.
+- Classifications: {"nonphysical_service_operations_policy_control":268,"physical_corridor_or_segment_intervention":1,"point_or_stop_physical_intervention":0,"review_required":0}.
+- Scope requirements: {"corridor_or_segment_required":1,"not_applicable":268,"point_or_stop_required":0,"review_required":0}.
 - Treatment review warnings: 0.
 - Immutable ledger complete: true; physical scope complete: true; final release guard: verified.
 
@@ -31,8 +31,8 @@ This report uses the immutable occurrence-treatment physicality policy and exact
 ## Full operational-event denominator
 
 - Operational-family events: 1365.
-- Primary dispositions: eligible occurrence present 134; legacy terminal gaps only 0; open review 0; versioned non-projectable 1231.
-- Gap rows: 2930; events with an unreviewed gap: 1145.
+- Primary dispositions: eligible occurrence present 130; legacy terminal gaps only 0; open review 0; versioned non-projectable 1235.
+- Gap rows: 2929; events with an unreviewed gap: 1142.
 - Eligible occurrence/coverage conflicts: 0.
 
 ## Canonical route-identity denominator

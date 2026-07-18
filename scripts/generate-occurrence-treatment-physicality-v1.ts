@@ -5,10 +5,14 @@ import {
   readFileSync,
   writeFileSync,
 } from "node:fs";
-import { basename, dirname, isAbsolute, join, relative, resolve } from "node:path";
+import { dirname, isAbsolute, join, relative, resolve, sep } from "node:path";
 import { repoRoot } from "../packages/core/src/paths";
 import { sha256, stableHash, stableJson } from "../packages/db/src/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "../packages/db/src/types";
+import {
+  loadOperationalProjectionRetirements,
+  type LoadedOperationalProjectionRetirementV1,
+} from "../packages/pipeline/src/materialize/operational-projection-retirements";
 import {
   auditOccurrenceTreatmentPhysicality,
   buildOccurrenceTreatmentPhysicalityReview,
@@ -42,6 +46,8 @@ const QUALITY_DIR = join(
   "occurrence-treatment-physicality",
 );
 const REVIEW_LEDGER_PATH = join(CONTRACT_DIR, "review-ledger.jsonl");
+const RETIRED_REVIEW_LEDGER_PATH = join(CONTRACT_DIR, "retired-review-ledger.jsonl");
+const RETIREMENT_RECEIPT_PATH = join(CONTRACT_DIR, "review-retirement-receipt.json");
 const RC20_MANIFEST_SHA256 =
   "a2e9147fbb3db3b27a48df27f9550a8b31ab28bc85e30b7166d75b46b54e1a08";
 
@@ -77,6 +83,7 @@ type Arguments = {
   check: boolean;
   stage: Stage;
   releaseDir: string;
+  logicalReleaseDir: string;
   completenessDir: string;
 };
 
@@ -84,6 +91,7 @@ function parseArguments(argv: readonly string[]): Arguments {
   let check = false;
   let stage: Stage = "provisional_rc20";
   let releaseDir = DEFAULT_RELEASE_DIR;
+  let logicalReleaseDir: string | undefined;
   let completenessDir = DEFAULT_COMPLETENESS_DIR;
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index]!;
@@ -107,6 +115,13 @@ function parseArguments(argv: readonly string[]): Arguments {
       index += 1;
       continue;
     }
+    if (arg === "--logical-release-dir") {
+      const value = argv[index + 1];
+      if (!value) throw new Error("--logical-release-dir requires a path");
+      logicalReleaseDir = isAbsolute(value) ? value : resolve(repoRoot, value);
+      index += 1;
+      continue;
+    }
     if (arg === "--completeness-dir") {
       const value = argv[index + 1];
       if (!value) throw new Error("--completeness-dir requires a path");
@@ -116,7 +131,13 @@ function parseArguments(argv: readonly string[]): Arguments {
     }
     throw new Error(`Unknown argument: ${arg}`);
   }
-  return { check, stage, releaseDir, completenessDir };
+  return {
+    check,
+    stage,
+    releaseDir,
+    logicalReleaseDir: logicalReleaseDir ?? releaseDir,
+    completenessDir,
+  };
 }
 
 function fileSha(path: string): string {
@@ -127,14 +148,23 @@ function lineCount(content: string): number {
   return content.trim() ? content.trimEnd().split(/\r?\n/u).length : 0;
 }
 
-function pin(path: string, content?: string): FilePin {
+function repositoryRelativePath(path: string, label: string): string {
+  const absolute = resolve(path);
+  const rootPrefix = repoRoot.endsWith(sep) ? repoRoot : `${repoRoot}${sep}`;
+  if (!absolute.startsWith(rootPrefix)) {
+    throw new Error(`${label} must be inside the repository root: ${path}`);
+  }
+  return relative(repoRoot, absolute).split("\\").join("/");
+}
+
+function pin(path: string, content?: string, logicalPath = path): FilePin {
   const value = content ?? readFileSync(path, "utf8");
   const result: FilePin = {
-    path: relative(repoRoot, path),
+    path: repositoryRelativePath(logicalPath, "logical release pin"),
     bytes: Buffer.byteLength(value),
     sha256: sha256(value),
   };
-  if (path.endsWith(".jsonl")) result.row_count = lineCount(value);
+  if (logicalPath.endsWith(".jsonl")) result.row_count = lineCount(value);
   return result;
 }
 
@@ -226,31 +256,78 @@ function assertCompletenessReconciliation(input: {
   }
 }
 
-function assertImmutableFinalLedger(
+function reconcileImmutableFinalLedger(
   candidate: readonly OccurrenceTreatmentPhysicalityDecision[],
-): void {
+  retirements: readonly LoadedOperationalProjectionRetirementV1[],
+): OccurrenceTreatmentPhysicalityDecision[] {
   if (!existsSync(REVIEW_LEDGER_PATH)) {
     throw new Error(
       "Final post-semantic verification requires the checked-in provisional immutable review ledger",
     );
   }
   const existing = readJsonl<OccurrenceTreatmentPhysicalityDecision>(REVIEW_LEDGER_PATH);
-  const expectedContent = jsonl(candidate);
-  const existingContent = jsonl(existing);
-  if (existingContent !== expectedContent) {
-    const existingById = new Map(existing.map((row) => [row.treatment_record_id, row]));
-    const candidateById = new Map(candidate.map((row) => [row.treatment_record_id, row]));
-    const drift = [...new Set([...existingById.keys(), ...candidateById.keys()])]
-      .filter((id) =>
-        stableJson(existingById.get(id) as unknown as JsonValue) !==
-        stableJson(candidateById.get(id) as unknown as JsonValue))
-      .sort();
+  const previouslyRetired = existsSync(RETIRED_REVIEW_LEDGER_PATH)
+    ? readJsonl<OccurrenceTreatmentPhysicalityDecision>(RETIRED_REVIEW_LEDGER_PATH)
+    : [];
+  const existingById = new Map(existing.map((row) => [row.treatment_record_id, row]));
+  const candidateById = new Map(candidate.map((row) => [row.treatment_record_id, row]));
+  const sharedDrift = candidate
+    .filter((row) => {
+      const prior = existingById.get(row.treatment_record_id);
+      return !prior || stableJson(prior as unknown as JsonValue) !== stableJson(row as unknown as JsonValue);
+    })
+    .map((row) => row.treatment_record_id)
+    .sort();
+  if (sharedDrift.length > 0) {
     throw new Error(
-      `Final release changed ${drift.length} immutable treatment review row(s); explicit re-review required: ${
-        drift.slice(0, 20).join(", ")
+      `Final release added or changed ${sharedDrift.length} immutable treatment review row(s); explicit re-review required: ${
+        sharedDrift.slice(0, 20).join(", ")
       }`,
     );
   }
+  const newlyRetired = existing.filter((row) => !candidateById.has(row.treatment_record_id));
+  const archivedById = new Map(
+    [...previouslyRetired, ...newlyRetired].map((row) => [row.treatment_record_id, row]),
+  );
+  if (archivedById.size !== previouslyRetired.length + newlyRetired.length) {
+    throw new Error("Retired physicality review archive contains duplicate treatment identities");
+  }
+  const activeArchiveOverlap = candidate
+    .filter((row) => archivedById.has(row.treatment_record_id))
+    .map((row) => row.treatment_record_id)
+    .sort();
+  if (activeArchiveOverlap.length > 0) {
+    throw new Error(
+      `Active and retired physicality review ledgers overlap: ${activeArchiveOverlap.join(", ")}`,
+    );
+  }
+  const retiredOccurrenceIds = new Set(
+    retirements.flatMap((retirement) =>
+      retirement.occurrence_review_decisions.map((target) => target.occurrence_id)),
+  );
+  const invalidRetirements = [...archivedById.values()]
+    .filter((row) =>
+      row.occurrence_ids.length === 0 ||
+      row.occurrence_ids.some((occurrenceId) => !retiredOccurrenceIds.has(occurrenceId)))
+    .map((row) => row.treatment_record_id)
+    .sort();
+  if (invalidRetirements.length > 0) {
+    throw new Error(
+      `Physicality review retirement lacks an accepted operational-occurrence retirement basis: ${invalidRetirements.join(", ")}`,
+    );
+  }
+  const archived = [...archivedById.values()].sort((left, right) =>
+    left.treatment_record_id.localeCompare(right.treatment_record_id));
+  const priorReviewHistory = [...existing, ...previouslyRetired].sort((left, right) =>
+    left.treatment_record_id.localeCompare(right.treatment_record_id));
+  const nextReviewHistory = [...candidate, ...archived].sort((left, right) =>
+    left.treatment_record_id.localeCompare(right.treatment_record_id));
+  if (jsonl(priorReviewHistory) !== jsonl(nextReviewHistory)) {
+    throw new Error(
+      "Physicality review history changed instead of moving byte-identical rows into the accepted retirement archive",
+    );
+  }
+  return archived;
 }
 
 function compareOrWrite(path: string, content: string, check: boolean): void {
@@ -368,6 +445,16 @@ function main(): void {
   } else if (manifest.release_id === "v1-rc20") {
     throw new Error("Final post-semantic physicality verification cannot reuse v1-rc20");
   }
+  const logicalReleasePath = repositoryRelativePath(
+    args.logicalReleaseDir,
+    "logical release directory",
+  );
+  const expectedLogicalReleasePath = `data/exports/releases/${manifest.release_id}`;
+  if (logicalReleasePath !== expectedLogicalReleasePath) {
+    throw new Error(
+      `Logical release directory must be ${expectedLogicalReleasePath}, found ${logicalReleasePath}`,
+    );
+  }
 
   const occurrenceContent = assertReleaseFile(
     args.releaseDir,
@@ -420,9 +507,10 @@ function main(): void {
       }`,
     );
   }
-  if (args.stage === "final_post_semantic_release") {
-    assertImmutableFinalLedger(review.decisions);
-  }
+  const operationalRetirements = loadOperationalProjectionRetirements(repoRoot);
+  const retiredReviewDecisions = args.stage === "final_post_semantic_release"
+    ? reconcileImmutableFinalLedger(review.decisions, operationalRetirements)
+    : [];
   const audit = auditOccurrenceTreatmentPhysicality({
     occurrences,
     treatments,
@@ -433,15 +521,91 @@ function main(): void {
 
   const policyContent = json(OCCURRENCE_TREATMENT_PHYSICALITY_POLICY_V1);
   const reviewLedgerContent = jsonl(review.decisions);
+  const retiredReviewLedgerContent = jsonl(retiredReviewDecisions);
+  const reviewHistoryDecisions = [...review.decisions, ...retiredReviewDecisions]
+    .sort((left, right) => left.treatment_record_id.localeCompare(right.treatment_record_id));
+  const reviewHistoryContent = jsonl(reviewHistoryDecisions);
   const policyPath = join(CONTRACT_DIR, "policy.json");
   const contractPath = join(CONTRACT_DIR, "contract.json");
   const releasePins = [
-    pin(manifestPath, manifestContent),
-    pin(join(args.releaseDir, "operational_occurrences.jsonl"), occurrenceContent),
-    pin(join(args.releaseDir, "treatment_components.jsonl"), treatmentContent),
-    pin(join(args.releaseDir, "relations.jsonl"), relationContent),
-    pin(join(args.releaseDir, "corridors.jsonl"), corridorContent),
+    pin(
+      join(args.releaseDir, "operational_occurrences.jsonl"),
+      occurrenceContent,
+      join(args.logicalReleaseDir, "operational_occurrences.jsonl"),
+    ),
+    pin(
+      join(args.releaseDir, "treatment_components.jsonl"),
+      treatmentContent,
+      join(args.logicalReleaseDir, "treatment_components.jsonl"),
+    ),
+    pin(
+      join(args.releaseDir, "relations.jsonl"),
+      relationContent,
+      join(args.logicalReleaseDir, "relations.jsonl"),
+    ),
+    pin(
+      join(args.releaseDir, "corridors.jsonl"),
+      corridorContent,
+      join(args.logicalReleaseDir, "corridors.jsonl"),
+    ),
   ];
+  const retiredOccurrenceIds = [...new Set(
+    retiredReviewDecisions.flatMap((decision) => decision.occurrence_ids),
+  )].sort();
+  const relevantOperationalRetirements = operationalRetirements
+    .filter((retirement) => retirement.occurrence_review_decisions.some((target) =>
+      retiredOccurrenceIds.includes(target.occurrence_id)))
+    .sort((left, right) => left.retirement_id.localeCompare(right.retirement_id));
+  const operationalRetirementPins = relevantOperationalRetirements.map((retirement) => {
+    const releasePath = `review-retirements/source/${retirement.retirement_id}.json`;
+    const content = assertReleaseFile(args.releaseDir, manifest, releasePath);
+    if (
+      Buffer.byteLength(content) !== retirement.source_bytes ||
+      sha256(content) !== retirement.source_sha256
+    ) {
+      throw new Error(
+        `${releasePath}: candidate retirement source does not match the authenticated accepted retirement`,
+      );
+    }
+    return {
+      retirement_id: retirement.retirement_id,
+      accepted_by: retirement.accepted_by,
+      accepted_at: retirement.accepted_at,
+      ...pin(
+        join(args.releaseDir, releasePath),
+        content,
+        join(args.logicalReleaseDir, releasePath),
+      ),
+    };
+  });
+  const retirementReceipt = retiredReviewDecisions.length > 0
+    ? {
+      schema_version: 1,
+      contract_id: "occurrence-treatment-physicality-review-retirement-v1",
+      retirement_id: `occurrence-treatment-physicality-review-retirement-v1:${manifest.release_id}`,
+      derived_by: "mta-wiki deterministic physicality retirement projector",
+      derived_at: operationalRetirementPins
+        .map((entry) => entry.accepted_at)
+        .sort()
+        .at(-1),
+      release_id: manifest.release_id,
+      authority: "accepted operational-occurrence review retirements remove denominator membership without changing treatment classification",
+      active_review_ledger: pin(REVIEW_LEDGER_PATH, reviewLedgerContent),
+      retired_review_ledger: pin(RETIRED_REVIEW_LEDGER_PATH, retiredReviewLedgerContent),
+      review_history: {
+        reconstruction: "active_plus_retired_sorted_by_treatment_record_id",
+        bytes: Buffer.byteLength(reviewHistoryContent),
+        sha256: sha256(reviewHistoryContent),
+        row_count: reviewHistoryDecisions.length,
+        logical_sha256: stableHash(reviewHistoryDecisions as unknown as JsonValue),
+      },
+      operational_retirement_receipts: operationalRetirementPins,
+      retired_occurrence_ids: retiredOccurrenceIds,
+      retired_treatment_record_ids: retiredReviewDecisions.map((decision) => decision.treatment_record_id),
+      classification_change_count: 0,
+    }
+    : null;
+  const retirementReceiptContent = retirementReceipt ? json(retirementReceipt) : "";
   // Completeness is a mandatory reconciliation input, but it must not be content-addressed by the
   // physicality contract: completeness itself pins this contract. Keeping those pins in the
   // separate quality manifest preserves provenance without creating an unsatisfiable hash cycle.
@@ -469,10 +633,25 @@ function main(): void {
       ledger_id: "occurrence-treatment-physicality-review-v1",
       immutable_after_review: true,
     },
+    ...(retirementReceipt
+      ? {
+        review_retirements: {
+          schema_version: 1,
+          contract_id: "occurrence-treatment-physicality-review-retirement-v1",
+          receipt: pin(RETIREMENT_RECEIPT_PATH, retirementReceiptContent),
+          archived_review_ledger: pin(
+            RETIRED_REVIEW_LEDGER_PATH,
+            retiredReviewLedgerContent,
+          ),
+          active_review_count: review.decisions.length,
+          retired_review_count: retiredReviewDecisions.length,
+        },
+      }
+      : {}),
     review_snapshot: {
       stage: args.stage,
       release_id: manifest.release_id,
-      release_dir: relative(repoRoot, args.releaseDir),
+      release_dir: logicalReleasePath,
       input_pins: releasePins,
       eligible_occurrence_count: audit.summary.eligible_occurrence_count,
       unique_treatment_count: audit.summary.unique_treatment_count,
@@ -493,7 +672,7 @@ function main(): void {
     final_post_semantic_release_guard: {
       required: true,
       status: finalGuardReady ? "verified" : "pending",
-      immutable_review_ledger_must_remain_byte_identical: true,
+      immutable_review_history_must_reconstruct_byte_identically: true,
       matching_release_and_completeness_bundle_required: true,
       zero_review_findings_required: true,
       zero_physical_scope_findings_required: true,
@@ -509,7 +688,7 @@ function main(): void {
     ...audit.summary,
     release_id: manifest.release_id,
     review_stage: args.stage,
-    release_manifest_sha256: sha256(manifestContent),
+    release_input_fingerprint: stableHash(releasePins as unknown as JsonValue),
     review_ledger_sha256: sha256(reviewLedgerContent),
     policy_sha256: sha256(policyContent),
     contract_sha256: sha256(contractContent),
@@ -542,6 +721,13 @@ function main(): void {
       ...completenessPins,
       pin(policyPath, policyContent),
       pin(REVIEW_LEDGER_PATH, reviewLedgerContent),
+      ...(retirementReceipt
+        ? [
+          pin(RETIRED_REVIEW_LEDGER_PATH, retiredReviewLedgerContent),
+          pin(RETIREMENT_RECEIPT_PATH, retirementReceiptContent),
+          ...operationalRetirementPins,
+        ]
+        : []),
       pin(contractPath, contractContent),
     ],
     files: qualityFiles,
@@ -554,6 +740,13 @@ function main(): void {
         ...completenessPins,
         pin(policyPath, policyContent),
         pin(REVIEW_LEDGER_PATH, reviewLedgerContent),
+        ...(retirementReceipt
+          ? [
+            pin(RETIRED_REVIEW_LEDGER_PATH, retiredReviewLedgerContent),
+            pin(RETIREMENT_RECEIPT_PATH, retirementReceiptContent),
+            ...operationalRetirementPins,
+          ]
+          : []),
         pin(contractPath, contractContent),
       ],
       files: qualityFiles,
@@ -563,6 +756,12 @@ function main(): void {
   const outputs = new Map<string, string>([
     [policyPath, policyContent],
     [REVIEW_LEDGER_PATH, reviewLedgerContent],
+    ...(retirementReceipt
+      ? [
+        [RETIRED_REVIEW_LEDGER_PATH, retiredReviewLedgerContent] as const,
+        [RETIREMENT_RECEIPT_PATH, retirementReceiptContent] as const,
+      ]
+      : []),
     [contractPath, contractContent],
     [join(QUALITY_DIR, "treatment-audit.jsonl"), treatmentAuditContent],
     [join(QUALITY_DIR, "occurrence-audit.jsonl"), occurrenceAuditContent],

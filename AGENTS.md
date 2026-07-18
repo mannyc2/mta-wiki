@@ -27,10 +27,10 @@ frontmatter and a full-source Markdown body.
   not source evidence or agent-readable context.
 - `wiki/`: generated wiki pages. `wiki/sources/` contains source pages with YAML frontmatter and
   full-source Markdown bodies; other wiki pages use YAML frontmatter plus writer regions.
-- `packages/harness/src/mta/`: MTA domain logic — source prep, submissions, materialization, ontology, identity, relations, validation.
-- `packages/harness/src/agent.ts`, `session.ts`, `models.ts`, `transcript.ts`, `usage.ts`, `sandbox.ts`, `config.ts`: harness lib (reusable runtime over pi-agent-core/pi-ai).
-- `packages/harness/src/agents/`: one file per agent type. `ingest.ts`/`write.ts`/`ask.ts` (with `shared.ts` envelope + `run.ts` dispatch/resume), plus `identity-review.ts`, `ontology-normalize.ts`, `schema-proposal.ts`, `ontology-review.ts`. Agent prompts in `agents/prompts.ts`; scoped tool factories in `agents/tools/`.
-- `packages/harness/src/transcript.ts`: compact transcript renderer.
+- `packages/pipeline/src/` and `packages/db/src/`: MTA domain logic — source prep, submissions, materialization, ontology, identity, relations, validation.
+- `packages/core/src/` runtime and provider modules: harness lib (reusable runtime over pi-agent-core/pi-ai).
+- `packages/agents/src/`: one file per agent type. `ingest.ts`/`write.ts`/`ask.ts` (with `shared.ts` envelope + `run.ts` dispatch/resume), plus `identity-review.ts`, `ontology-normalize.ts`, `schema-proposal.ts`, `ontology-review.ts`. Agent prompts in `agents/prompts.ts`; scoped tool factories in `agents/tools/`.
+- `packages/core/src/transcript.ts`: compact transcript renderer.
 - `packages/cli/src/cli.ts`: CLI entrypoint.
 - `docs/mta-llm-wiki-spec.md`: working product/spec notes.
 - `docs/immutable-mta-llm-wiki-spec.md`: stable north-star spec. Read it, but do not edit it unless
@@ -119,7 +119,7 @@ Useful current profiles:
 - `pioneer-deepseek-pro`
 
 Pioneer uses `PIONEER_API_KEY`. The provider implementation is in
-`packages/harness/src/models.ts`.
+`packages/core/src/models.ts`.
 
 ## Current Prototype Sources
 

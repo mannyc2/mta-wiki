@@ -4,7 +4,7 @@ import { campaignCommands } from "./commands/campaign.js";
 import { identityCommands } from "./commands/identity.js";
 import { ingestCommands } from "./commands/ingest.js";
 import { materializeCommands } from "./commands/materialize.js";
-import { messageValue, optionValue, type Command, type CommandHandler, type ParsedArgs } from "./commands/shared.js";
+import { messageValue, optionValue, optionValues, type Command, type CommandHandler, type ParsedArgs } from "./commands/shared.js";
 import { ontologyCommands } from "./commands/ontology.js";
 import { qualityCommands } from "./commands/quality.js";
 import { replayCommands } from "./commands/replay.js";
@@ -28,6 +28,12 @@ function parseCommand(argv: string[]): ParsedArgs {
   const force = argv.includes("--force");
   const kindFilter = optionValue(argv, "--kind");
   const safeWriter = argv.includes("--safe-writer");
+  const snapshot = optionValue(argv, "--snapshot");
+  const fromSnapshot = optionValue(argv, "--from");
+  const toSnapshot = optionValue(argv, "--to");
+  const receipt = optionValue(argv, "--receipt");
+  const feedInputs = optionValues(argv, "--feed");
+  const currentBusRoutes = optionValue(argv, "--current-bus-routes");
   const rawMaxPages = optionValue(argv, "--max-pages");
   let maxPages: number | undefined;
   if (rawMaxPages !== undefined) {
@@ -95,6 +101,12 @@ function parseCommand(argv: string[]): ParsedArgs {
       message,
       kindFilter,
       safeWriter,
+      snapshot,
+      fromSnapshot,
+      toSnapshot,
+      receipt,
+      feedInputs,
+      currentBusRoutes,
     };
   }
 
@@ -143,6 +155,9 @@ function parseCommand(argv: string[]): ParsedArgs {
     "canonicalize-wave",
     "cross-source-candidates",
     "import-gtfs",
+    "verify-gtfs-reference",
+    "route-identity-diff",
+    "route-identity-audit",
     "dossier",
     "gap-report",
     "campaign",
@@ -217,6 +232,12 @@ function parseCommand(argv: string[]): ParsedArgs {
     message,
     kindFilter,
     safeWriter,
+    snapshot,
+    fromSnapshot,
+    toSnapshot,
+    receipt,
+    feedInputs,
+    currentBusRoutes,
   };
 }
 

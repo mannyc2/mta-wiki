@@ -18,6 +18,11 @@ import {
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
 import type { OperationalOccurrenceRow } from "@mta-wiki/pipeline/materialize/operational-occurrences";
+import { parseOperationalProjectionRetirementV1 } from "@mta-wiki/pipeline/materialize/operational-projection-retirements";
+import {
+  parseRouteIdentitySnapshotV1,
+  type RouteIdentitySnapshotV1,
+} from "@mta-wiki/pipeline/materialize/route-identity-contract";
 import {
   computeRouteAnchors,
   readRouteAnchorReview,
@@ -660,6 +665,7 @@ export type BuildRelationshipCompletenessAuditInput = {
   routes: readonly MtaCanonicalRecord[];
   routeAnchors: readonly RouteAnchorRow[];
   routeAnchorReview: RouteAnchorReview;
+  routeIdentitySnapshot?: RouteIdentitySnapshotV1 | undefined;
   /**
    * Project reviewed route decisions onto an immutable release denominator. Decisions whose
    * complete target set was introduced after that release are excluded; partially present
@@ -672,6 +678,7 @@ export type BuildRelationshipCompletenessAuditInput = {
   treatmentPhysicality?: {
     policy: OccurrenceTreatmentPhysicalityPolicy;
     decisions: readonly OccurrenceTreatmentPhysicalityDecision[];
+    retiredOperationalOccurrenceIds?: readonly string[] | undefined;
     contract_status: "warning_first" | "reviewed_final";
     final_post_semantic_release_guard_status: "pending" | "verified";
     inputPins?: readonly RelationshipCompletenessInputPin[] | undefined;
@@ -701,7 +708,10 @@ export type LoadedRelationshipCompletenessArtifacts = RelationshipCompletenessAr
 
 export type WriteRelationshipCompletenessArtifactsOptions = {
   rootDir?: string | undefined;
+  /** Logical immutable release path serialized into deterministic input pins. */
   releaseDir?: string | undefined;
+  /** Optional pre-cut directory read in place of releaseDir; never serialized. */
+  releaseSourceDir?: string | undefined;
   coverageDir?: string | undefined;
   outputDir?: string | undefined;
   expectedReleaseManifestSha256?: string | undefined;
@@ -1013,6 +1023,7 @@ function auditOperationalEvents(input: {
   occurrences: readonly OperationalOccurrenceRow[];
   coverageGaps: readonly OperationalCoverageGap[];
   relationshipDispositions?: readonly RelationshipDispositionDecision[] | undefined;
+  retiredOperationalOccurrenceIds?: readonly string[] | undefined;
 }): OperationalEventCompletenessRow[] {
   const occurrencesByEvent = new Map<string, OperationalOccurrenceRow[]>();
   for (const occurrence of input.occurrences) {
@@ -1033,6 +1044,7 @@ function auditOperationalEvents(input: {
       .filter((decision) => decision.selector === "operational_event")
       .map((decision) => [decision.record_id, decision]),
   );
+  const retiredOperationalOccurrenceIds = new Set(input.retiredOperationalOccurrenceIds ?? []);
   const eventsById = new Map(input.events.map((event) => [event.record_id, event]));
   const denominatorIds = operationalEventDenominatorIds(input);
   const missingEventIds = [...denominatorIds].filter((eventId) => !eventsById.has(eventId)).sort();
@@ -1081,6 +1093,14 @@ function auditOperationalEvents(input: {
           ? ineligibleOccurrenceIds
           : [],
       );
+    const acceptedOccurrenceRetirementProjection = Boolean(disposition) &&
+      disposition?.study_projectable === true &&
+      disposition?.waiver === false &&
+      disposition?.primary_disposition === "eligible_occurrence_present" &&
+      eligibleOccurrenceIds.length === 0 &&
+      (disposition?.occurrence_ids.length ?? 0) > 0 &&
+      disposition?.occurrence_ids.every((occurrenceId) =>
+        retiredOperationalOccurrenceIds.has(occurrenceId)) === true;
     const warningCodes = new Set<RelationshipCompletenessWarningCode>();
     const reasons = new Set<string>();
     let primaryDisposition: OperationalEventCompletenessDisposition;
@@ -1105,9 +1125,11 @@ function auditOperationalEvents(input: {
       } else if (!disposition) {
         reasons.add("eligible_realized_occurrence_is_projectable_basis_no_waiver");
       }
-    } else if (validNonProjectableDisposition) {
+    } else if (validNonProjectableDisposition || acceptedOccurrenceRetirementProjection) {
       primaryDisposition = "versioned_non_projectable_disposition";
-      reasons.add(`versioned_disposition:${disposition?.primary_disposition}`);
+      reasons.add(acceptedOccurrenceRetirementProjection
+        ? "accepted_operational_occurrence_retirement_projects_prior_event_disposition_nonprojectable"
+        : `versioned_disposition:${disposition?.primary_disposition}`);
       reasons.add("waiver_cannot_confer_study_eligibility");
     } else if (gaps.length > 0 && !hasNonTerminalGap) {
       primaryDisposition = "legacy_terminal_gap_dispositions_only";
@@ -1238,6 +1260,88 @@ function auditRouteIdentities(input: BuildRelationshipCompletenessAuditInput): R
   }
   if (new Set(routes.map((route) => route.record_id)).size !== routes.length) {
     throw new Error("route-identity completeness denominator contains duplicate canonical record ids");
+  }
+  if (input.routeIdentitySnapshot) {
+    const recordsById = new Map(routes.map((route) => [route.record_id, route]));
+    const anchorsByRecordId = new Map<string, RouteAnchorRow>();
+    for (const anchor of input.routeAnchors) {
+      for (const recordId of [
+        ...(anchor.canonical_route_record_id ? [anchor.canonical_route_record_id] : []),
+        ...anchor.variant_record_ids,
+      ]) {
+        if (anchorsByRecordId.has(recordId)) {
+          throw new Error(`route-identity completeness compatibility projection duplicates ${recordId}`);
+        }
+        anchorsByRecordId.set(recordId, anchor);
+      }
+    }
+    if (input.routeIdentitySnapshot.record_bindings.length !== routes.length) {
+      throw new Error(
+        `route-identity completeness binding denominator drift: snapshot=${input.routeIdentitySnapshot.record_bindings.length}, routes=${routes.length}`,
+      );
+    }
+    const rows = input.routeIdentitySnapshot.record_bindings.map((binding): RouteIdentityCompletenessRow => {
+      const record = recordsById.get(binding.route_record_id);
+      if (!record) {
+        throw new Error(`route-identity completeness binding references missing route ${binding.route_record_id}`);
+      }
+      const anchor = anchorsByRecordId.get(binding.route_record_id);
+      const warningCodes = new Set<RelationshipCompletenessWarningCode>();
+      const recordEvidenceIds = uniqueSorted(
+        record.evidence_refs.map((ref) => ref.evidence_id).filter((id): id is string => Boolean(id)),
+      );
+      if (
+        binding.evidence_ids.length === 0 ||
+        binding.evidence_ids.some((evidenceId) => !recordEvidenceIds.includes(evidenceId))
+      ) {
+        warningCodes.add("RC_ROUTE_IDENTITY_EVIDENCE_MISSING");
+      }
+      if (
+        !anchor ||
+        (binding.projectable
+          ? anchor.gtfs_route_id !== binding.gtfs_route_id
+          : anchor.gtfs_route_id !== null)
+      ) {
+        warningCodes.add("RC_ROUTE_IDENTITY_ACCOUNTING_REQUIRED");
+      }
+      const reviewed = "decision_id" in binding;
+      const primaryDisposition: RouteIdentityCompletenessDisposition = binding.gtfs_route_id
+        ? binding.presentation_primary
+          ? "canonical_gtfs_anchor"
+          : "canonical_gtfs_variant"
+        : reviewed
+          ? "reviewed_non_projectable_disposition"
+          : "route_identity_review_required";
+      return {
+        schema_version: RELATIONSHIP_COMPLETENESS_SCHEMA_VERSION,
+        selector: "route_identity",
+        selector_class: "reviewed_full_denominator",
+        route_record_id: binding.route_record_id,
+        primary_disposition: primaryDisposition,
+        warning_codes: [...warningCodes].sort((left, right) => left.localeCompare(right)),
+        reasons: uniqueSorted([
+          `route_identity_basis:${binding.identity_basis}`,
+          `route_identity_decision_kind:${binding.decision_kind}`,
+          binding.projectable
+            ? "exact_route_identity_is_operationally_projectable"
+            : "route_identity_is_not_operationally_projectable",
+        ]),
+        study_projectable: binding.projectable,
+        gtfs_route_id: binding.gtfs_route_id,
+        route_anchor_disposition: anchor?.disposition ?? null,
+        disposition_decision_id: reviewed ? binding.decision_id ?? null : null,
+        reviewed_non_projectable_disposition: binding.gtfs_route_id === null
+          ? binding.decision_kind
+          : null,
+        disposition_evidence_ids: [...binding.evidence_ids],
+        disposition_reviewed_at: reviewed ? binding.accepted_at ?? null : null,
+        disposition_reason: reviewed ? binding.rationale ?? null : binding.derivation,
+      };
+    });
+    if (new Set(rows.map((row) => row.route_record_id)).size !== routes.length) {
+      throw new Error("route-identity completeness rich binding coverage is not exactly once");
+    }
+    return rows.sort((left, right) => left.route_record_id.localeCompare(right.route_record_id));
   }
   const routeReview = input.releaseScopedRouteReview
     ? releaseScopedRouteAnchorReview(input.routeAnchorReview, routes)
@@ -1710,7 +1814,11 @@ export function buildRelationshipCompletenessAudit(
   );
   const treatmentRows = physicalityCompletenessRows(physicalityAudit);
   const busLaneTreatmentRows = busLaneTreatmentCompletenessRows(input);
-  const eventRows = auditOperationalEvents(input);
+  const eventRows = auditOperationalEvents({
+    ...input,
+    retiredOperationalOccurrenceIds:
+      input.treatmentPhysicality?.retiredOperationalOccurrenceIds ?? [],
+  });
   const routeRows = auditRouteIdentities(input);
   const rawPins = [
     ...(input.inputPins ?? []),
@@ -2238,6 +2346,7 @@ function pinnedContractFile(input: {
   label: string;
   raw: unknown;
   expectJsonl: boolean;
+  absolutePathOverride?: string | undefined;
 }): { path: string; absolutePath: string; content: string; pin: RelationshipCompletenessInputPin } {
   if (!input.raw || typeof input.raw !== "object" || Array.isArray(input.raw)) {
     throw new Error(`${input.contractPath}: ${input.label} pin must be an object`);
@@ -2254,7 +2363,7 @@ function pinnedContractFile(input: {
     throw new Error(`${input.contractPath}: ${input.label} pin is invalid`);
   }
   const normalized = normalizedRepositoryPath(path, `${input.label}.path`);
-  const absolutePath = resolve(input.rootDir, normalized);
+  const absolutePath = resolve(input.absolutePathOverride ?? resolve(input.rootDir, normalized));
   const rootPrefix = input.rootDir.endsWith(sep) ? input.rootDir : `${input.rootDir}${sep}`;
   if (!absolutePath.startsWith(rootPrefix)) {
     throw new Error(`${input.contractPath}: ${input.label} path escapes repository root`);
@@ -2273,6 +2382,42 @@ function pinnedContractFile(input: {
 
 function lineCount(content: string): number {
   return content.trim() ? content.trimEnd().split(/\r?\n/gu).length : 0;
+}
+
+function assertExactObjectKeys(
+  value: Record<string, unknown>,
+  expected: readonly string[],
+  path: string,
+): void {
+  const missing = expected.filter((key) => !Object.hasOwn(value, key));
+  const unexpected = Object.keys(value).filter((key) => !expected.includes(key));
+  if (missing.length > 0 || unexpected.length > 0) {
+    throw new Error(
+      `${path}: strict keys mismatch; missing=[${missing.sort().join(", ")}] ` +
+        `unexpected=[${unexpected.sort().join(", ")}]`,
+    );
+  }
+}
+
+function parseCanonicalJsonl<T>(content: string, path: string): T[] {
+  if (content.includes("\r")) throw new Error(`${path}: canonical JSONL must use LF line endings`);
+  const rows = content.split("\n").flatMap((line, index) => {
+    if (!line) return [];
+    try {
+      return [JSON.parse(line) as T];
+    } catch (error) {
+      throw new Error(`${path}:${index + 1}: invalid JSON: ${
+        error instanceof Error ? error.message : String(error)
+      }`);
+    }
+  });
+  const canonical = rows.length > 0
+    ? `${rows.map((row) => stableJson(row as unknown as JsonValue)).join("\n")}\n`
+    : "";
+  if (content !== canonical) {
+    throw new Error(`${path}: JSONL bytes are not canonical stable JSON with one trailing LF`);
+  }
+  return rows;
 }
 
 function parseBusLaneTreatmentScopeInventoryDecision(
@@ -2468,6 +2613,7 @@ export function loadOccurrenceTreatmentPhysicalityContract(input: {
   rootDir: string;
   contractPath: string;
   releaseId: string;
+  releaseSnapshotSourceDir?: string | undefined;
 }): NonNullable<BuildRelationshipCompletenessAuditInput["treatmentPhysicality"]> {
   const contractRelativePath = normalizedRepositoryPath(input.contractPath, "treatmentPhysicalityContractPath");
   const contractPath = resolve(input.rootDir, contractRelativePath);
@@ -2494,7 +2640,6 @@ export function loadOccurrenceTreatmentPhysicalityContract(input: {
   }
   for (const key of [
     "required",
-    "immutable_review_ledger_must_remain_byte_identical",
     "matching_release_and_completeness_bundle_required",
     "zero_review_findings_required",
     "zero_physical_scope_findings_required",
@@ -2503,6 +2648,16 @@ export function loadOccurrenceTreatmentPhysicalityContract(input: {
     if (finalGuardRecord[key] !== true) {
       throw new Error(`${contractPath}: final release guard ${key} must fail closed`);
     }
+  }
+  const hasReviewRetirements = contract.review_retirements !== undefined;
+  if (
+    hasReviewRetirements
+      ? finalGuardRecord.immutable_review_history_must_reconstruct_byte_identically !== true ||
+        finalGuardRecord.immutable_review_ledger_must_remain_byte_identical !== undefined
+      : finalGuardRecord.immutable_review_history_must_reconstruct_byte_identically !== true &&
+        finalGuardRecord.immutable_review_ledger_must_remain_byte_identical !== true
+  ) {
+    throw new Error(`${contractPath}: final release guard must preserve immutable review history`);
   }
   if (
     (contractStatus === "reviewed_final") !== (finalGuardStatus === "verified")
@@ -2536,12 +2691,20 @@ export function loadOccurrenceTreatmentPhysicalityContract(input: {
     reviewedReleaseDir,
     "review_snapshot.release_dir",
   );
+  const expectedReviewedReleaseDir = `data/exports/releases/${input.releaseId}`;
+  if (
+    contractStatus === "reviewed_final" &&
+    normalizedReviewedReleaseDir !== expectedReviewedReleaseDir
+  ) {
+    throw new Error(
+      `${contractPath}: reviewed final physicality snapshot must use ${expectedReviewedReleaseDir}`,
+    );
+  }
   const snapshotPins = reviewSnapshotRecord.input_pins;
   if (!Array.isArray(snapshotPins)) {
     throw new Error(`${contractPath}: review_snapshot.input_pins must be an array`);
   }
   const expectedSnapshotPaths = [
-    `${normalizedReviewedReleaseDir}/manifest.json`,
     `${normalizedReviewedReleaseDir}/operational_occurrences.jsonl`,
     `${normalizedReviewedReleaseDir}/treatment_components.jsonl`,
     `${normalizedReviewedReleaseDir}/relations.jsonl`,
@@ -2555,9 +2718,30 @@ export function loadOccurrenceTreatmentPhysicalityContract(input: {
     expectJsonl:
       Boolean(raw && typeof raw === "object" && !Array.isArray(raw) &&
         text((raw as Record<string, unknown>).path)?.endsWith(".jsonl")),
+    ...(input.releaseSnapshotSourceDir &&
+        reviewedReleaseId === input.releaseId &&
+        normalizedReviewedReleaseDir === expectedReviewedReleaseDir &&
+        raw && typeof raw === "object" && !Array.isArray(raw)
+      ? {
+        absolutePathOverride: join(
+          input.releaseSnapshotSourceDir,
+          basename(text((raw as Record<string, unknown>).path) ?? ""),
+        ),
+      }
+      : {}),
   }));
   const snapshotPaths = snapshotFiles.map((file) => file.path).sort();
-  if (stableJson(snapshotPaths) !== stableJson(expectedSnapshotPaths)) {
+  const legacyWarningSnapshotPaths = [
+    ...expectedSnapshotPaths,
+    `${normalizedReviewedReleaseDir}/manifest.json`,
+  ].sort();
+  if (
+    stableJson(snapshotPaths) !== stableJson(expectedSnapshotPaths) &&
+    !(
+      contractStatus === "warning_first" &&
+      stableJson(snapshotPaths) === stableJson(legacyWarningSnapshotPaths)
+    )
+  ) {
     throw new Error(`${contractPath}: review snapshot must pin exactly the immutable release physicality inputs`);
   }
   if (
@@ -2611,16 +2795,10 @@ export function loadOccurrenceTreatmentPhysicalityContract(input: {
     raw: contract.review_ledger,
     expectJsonl: true,
   });
-  const decisions = ledgerFile.content.split(/\r?\n/gu).flatMap((line, index) => {
-    if (!line.trim()) return [];
-    try {
-      return [JSON.parse(line) as OccurrenceTreatmentPhysicalityDecision];
-    } catch (error) {
-      throw new Error(`${ledgerFile.absolutePath}:${index + 1}: invalid JSON: ${
-        error instanceof Error ? error.message : String(error)
-      }`);
-    }
-  });
+  const decisions = parseCanonicalJsonl<OccurrenceTreatmentPhysicalityDecision>(
+    ledgerFile.content,
+    ledgerFile.absolutePath,
+  );
   const ledgerPin = contract.review_ledger as Record<string, unknown>;
   if (
     ledgerPin.ledger_id !== OCCURRENCE_TREATMENT_PHYSICALITY_LEDGER_ID ||
@@ -2638,6 +2816,245 @@ export function loadOccurrenceTreatmentPhysicalityContract(input: {
   ) {
     throw new Error(`${contractPath}: immutable review ledger contains duplicate or invalid rows`);
   }
+  if (
+    decisions.map((decision) => decision.treatment_record_id).join("\n") !==
+      [...decisions]
+        .sort((left, right) => left.treatment_record_id.localeCompare(right.treatment_record_id))
+        .map((decision) => decision.treatment_record_id)
+        .join("\n")
+  ) {
+    throw new Error(`${contractPath}: immutable review ledger must be sorted by treatment_record_id`);
+  }
+
+  const retirementInputPins: RelationshipCompletenessInputPin[] = [];
+  let retiredOperationalOccurrenceIds: string[] = [];
+  if (contract.review_retirements !== undefined) {
+    if (
+      !contract.review_retirements ||
+      typeof contract.review_retirements !== "object" ||
+      Array.isArray(contract.review_retirements)
+    ) {
+      throw new Error(`${contractPath}: review_retirements must be an object`);
+    }
+    const retirementContract = contract.review_retirements as Record<string, unknown>;
+    assertExactObjectKeys(
+      retirementContract,
+      [
+        "schema_version",
+        "contract_id",
+        "receipt",
+        "archived_review_ledger",
+        "active_review_count",
+        "retired_review_count",
+      ],
+      `${contractPath}.review_retirements`,
+    );
+    if (
+      retirementContract.schema_version !== 1 ||
+      retirementContract.contract_id !== "occurrence-treatment-physicality-review-retirement-v1" ||
+      retirementContract.active_review_count !== decisions.length
+    ) {
+      throw new Error(`${contractPath}: review retirement contract identity/count is invalid`);
+    }
+    const contractDir = contractRelativePath.slice(0, contractRelativePath.lastIndexOf("/"));
+    const archiveFile = pinnedContractFile({
+      rootDir: input.rootDir,
+      contractPath,
+      label: "review_retirements.archived_review_ledger",
+      raw: retirementContract.archived_review_ledger,
+      expectJsonl: true,
+    });
+    if (archiveFile.path !== `${contractDir}/retired-review-ledger.jsonl`) {
+      throw new Error(`${contractPath}: retired review ledger uses an unexpected path`);
+    }
+    const retiredDecisions = parseCanonicalJsonl<OccurrenceTreatmentPhysicalityDecision>(
+      archiveFile.content,
+      archiveFile.absolutePath,
+    );
+    if (
+      retirementContract.retired_review_count !== retiredDecisions.length ||
+      retiredDecisions.length === 0 ||
+      new Set(retiredDecisions.map((decision) => decision.decision_id)).size !== retiredDecisions.length ||
+      new Set(retiredDecisions.map((decision) => decision.treatment_record_id)).size !== retiredDecisions.length ||
+      retiredDecisions.some((decision) =>
+        decision.schema_version !== OCCURRENCE_TREATMENT_PHYSICALITY_SCHEMA_VERSION ||
+        decision.ledger_id !== OCCURRENCE_TREATMENT_PHYSICALITY_LEDGER_ID)
+    ) {
+      throw new Error(`${contractPath}: retired review ledger contains duplicate or invalid rows`);
+    }
+    const retiredTreatmentIds = retiredDecisions.map((decision) => decision.treatment_record_id);
+    if (retiredTreatmentIds.join("\n") !== [...retiredTreatmentIds].sort().join("\n")) {
+      throw new Error(`${contractPath}: retired review ledger must be sorted by treatment_record_id`);
+    }
+    const activeTreatmentIds = new Set(decisions.map((decision) => decision.treatment_record_id));
+    const activeDecisionIds = new Set(decisions.map((decision) => decision.decision_id));
+    if (retiredDecisions.some((decision) =>
+      activeTreatmentIds.has(decision.treatment_record_id) || activeDecisionIds.has(decision.decision_id))) {
+      throw new Error(`${contractPath}: active and retired physicality review ledgers overlap`);
+    }
+
+    const receiptFile = pinnedContractFile({
+      rootDir: input.rootDir,
+      contractPath,
+      label: "review_retirements.receipt",
+      raw: retirementContract.receipt,
+      expectJsonl: false,
+    });
+    if (receiptFile.path !== `${contractDir}/review-retirement-receipt.json`) {
+      throw new Error(`${contractPath}: review retirement receipt uses an unexpected path`);
+    }
+    const receiptValue = JSON.parse(receiptFile.content) as unknown;
+    if (!receiptValue || typeof receiptValue !== "object" || Array.isArray(receiptValue)) {
+      throw new Error(`${receiptFile.absolutePath}: expected an object`);
+    }
+    const receipt = receiptValue as Record<string, unknown>;
+    assertExactObjectKeys(
+      receipt,
+      [
+        "schema_version",
+        "contract_id",
+        "retirement_id",
+        "derived_by",
+        "derived_at",
+        "release_id",
+        "authority",
+        "active_review_ledger",
+        "retired_review_ledger",
+        "review_history",
+        "operational_retirement_receipts",
+        "retired_occurrence_ids",
+        "retired_treatment_record_ids",
+        "classification_change_count",
+      ],
+      receiptFile.absolutePath,
+    );
+    if (
+      receipt.schema_version !== 1 ||
+      receipt.contract_id !== "occurrence-treatment-physicality-review-retirement-v1" ||
+      receipt.retirement_id !==
+        `occurrence-treatment-physicality-review-retirement-v1:${reviewedReleaseId}` ||
+      receipt.release_id !== reviewedReleaseId ||
+      receipt.derived_by !== "mta-wiki deterministic physicality retirement projector" ||
+      receipt.authority !==
+        "accepted operational-occurrence review retirements remove denominator membership without changing treatment classification" ||
+      receipt.classification_change_count !== 0
+    ) {
+      throw new Error(`${receiptFile.absolutePath}: retirement identity/authority is invalid`);
+    }
+    if (
+      stableJson(receipt.active_review_ledger as JsonValue) !==
+        stableJson(ledgerFile.pin as unknown as JsonValue) ||
+      stableJson(receipt.retired_review_ledger as JsonValue) !==
+        stableJson(archiveFile.pin as unknown as JsonValue)
+    ) {
+      throw new Error(`${receiptFile.absolutePath}: active/retired ledger pins do not reconcile`);
+    }
+    if (!receipt.review_history || typeof receipt.review_history !== "object" || Array.isArray(receipt.review_history)) {
+      throw new Error(`${receiptFile.absolutePath}: review_history must be an object`);
+    }
+    const reviewHistory = receipt.review_history as Record<string, unknown>;
+    assertExactObjectKeys(
+      reviewHistory,
+      ["reconstruction", "bytes", "sha256", "row_count", "logical_sha256"],
+      `${receiptFile.absolutePath}.review_history`,
+    );
+    const reviewHistoryRows = [...decisions, ...retiredDecisions].sort((left, right) =>
+      left.treatment_record_id.localeCompare(right.treatment_record_id));
+    const reviewHistoryContent = reviewHistoryRows.length > 0
+      ? `${reviewHistoryRows.map((row) => stableJson(row as unknown as JsonValue)).join("\n")}\n`
+      : "";
+    if (
+      reviewHistory.reconstruction !== "active_plus_retired_sorted_by_treatment_record_id" ||
+      reviewHistory.bytes !== Buffer.byteLength(reviewHistoryContent) ||
+      reviewHistory.sha256 !== sha256(reviewHistoryContent) ||
+      reviewHistory.row_count !== reviewHistoryRows.length ||
+      reviewHistory.logical_sha256 !== sha256(stableJson(reviewHistoryRows as unknown as JsonValue))
+    ) {
+      throw new Error(`${receiptFile.absolutePath}: immutable review history does not reconstruct`);
+    }
+
+    if (!Array.isArray(receipt.operational_retirement_receipts) ||
+        receipt.operational_retirement_receipts.length === 0) {
+      throw new Error(`${receiptFile.absolutePath}: operational retirement receipts are required`);
+    }
+    const sourceRetirements = receipt.operational_retirement_receipts.map((raw, index) => {
+      if (!raw || typeof raw !== "object" || Array.isArray(raw)) {
+        throw new Error(`${receiptFile.absolutePath}.operational_retirement_receipts[${index}] must be an object`);
+      }
+      const entry = raw as Record<string, unknown>;
+      assertExactObjectKeys(
+        entry,
+        ["retirement_id", "accepted_by", "accepted_at", "path", "bytes", "sha256"],
+        `${receiptFile.absolutePath}.operational_retirement_receipts[${index}]`,
+      );
+      const retirementId = text(entry.retirement_id);
+      const entryPath = text(entry.path);
+      if (
+        !retirementId ||
+        entryPath !== `${normalizedReviewedReleaseDir}/review-retirements/source/${retirementId}.json`
+      ) {
+        throw new Error(`${receiptFile.absolutePath}: operational retirement receipt path/identity is invalid`);
+      }
+      const releaseRelativePath = entryPath.slice(`${normalizedReviewedReleaseDir}/`.length);
+      const sourceFile = pinnedContractFile({
+        rootDir: input.rootDir,
+        contractPath,
+        label: `review retirement source ${retirementId}`,
+        raw: entry,
+        expectJsonl: false,
+        ...(input.releaseSnapshotSourceDir
+          ? { absolutePathOverride: join(input.releaseSnapshotSourceDir, ...releaseRelativePath.split("/")) }
+          : {}),
+      });
+      const parsed = parseOperationalProjectionRetirementV1(
+        JSON.parse(sourceFile.content) as unknown,
+        sourceFile.absolutePath,
+      );
+      if (
+        parsed.retirement_id !== retirementId ||
+        parsed.accepted_by !== entry.accepted_by ||
+        parsed.accepted_at !== entry.accepted_at
+      ) {
+        throw new Error(`${sourceFile.absolutePath}: source retirement metadata does not match receipt`);
+      }
+      retirementInputPins.push(sourceFile.pin);
+      return parsed;
+    });
+    const sourceRetirementIds = sourceRetirements.map((entry) => entry.retirement_id);
+    if (
+      new Set(sourceRetirementIds).size !== sourceRetirementIds.length ||
+      sourceRetirementIds.join("\n") !== [...sourceRetirementIds].sort().join("\n")
+    ) {
+      throw new Error(`${receiptFile.absolutePath}: source retirement receipts must be sorted and unique`);
+    }
+    const sourceOccurrenceIds = uniqueSorted(sourceRetirements.flatMap((entry) =>
+      entry.occurrence_review_decisions.map((target) => target.occurrence_id)));
+    const archivedOccurrenceIds = uniqueSorted(retiredDecisions.flatMap((decision) => decision.occurrence_ids));
+    const receiptOccurrenceIds = Array.isArray(receipt.retired_occurrence_ids)
+      ? receipt.retired_occurrence_ids.map((entry) => text(entry))
+      : [];
+    const receiptTreatmentIds = Array.isArray(receipt.retired_treatment_record_ids)
+      ? receipt.retired_treatment_record_ids.map((entry) => text(entry))
+      : [];
+    if (
+      receiptOccurrenceIds.some((entry) => !entry) ||
+      receiptTreatmentIds.some((entry) => !entry) ||
+      stableJson(receiptOccurrenceIds as unknown as JsonValue) !==
+        stableJson(sourceOccurrenceIds as unknown as JsonValue) ||
+      stableJson(receiptOccurrenceIds as unknown as JsonValue) !==
+        stableJson(archivedOccurrenceIds as unknown as JsonValue) ||
+      stableJson(receiptTreatmentIds as unknown as JsonValue) !==
+        stableJson(retiredTreatmentIds as unknown as JsonValue) ||
+      receipt.derived_at !== [...sourceRetirements]
+        .map((entry) => entry.accepted_at)
+        .sort()
+        .at(-1)
+    ) {
+      throw new Error(`${receiptFile.absolutePath}: retired identities/timestamp do not reconcile`);
+    }
+    retiredOperationalOccurrenceIds = sourceOccurrenceIds;
+    retirementInputPins.push(archiveFile.pin, receiptFile.pin);
+  }
   const reviewedOccurrenceIds = new Set(decisions.flatMap((decision) => decision.occurrence_ids));
   const reviewedMembershipCount = decisions.reduce(
     (sum, decision) => sum + decision.occurrence_ids.length,
@@ -2654,12 +3071,14 @@ export function loadOccurrenceTreatmentPhysicalityContract(input: {
   return {
     policy,
     decisions,
+    retiredOperationalOccurrenceIds,
     contract_status: contractStatus,
     final_post_semantic_release_guard_status: finalGuardStatus,
     inputPins: [
       pinFile(contractRelativePath, contractContent),
       policyFile.pin,
       ledgerFile.pin,
+      ...retirementInputPins,
     ],
   };
 }
@@ -2671,6 +3090,10 @@ export function loadRelationshipCompletenessArtifacts(
   const releaseDirPath = normalizedRepositoryPath(
     options.releaseDir ?? DEFAULT_RELATIONSHIP_COMPLETENESS_RELEASE_DIR,
     "releaseDir",
+  );
+  const releaseSourceDirPath = normalizedRepositoryPath(
+    options.releaseSourceDir ?? releaseDirPath,
+    "releaseSourceDir",
   );
   const coverageDirPath = normalizedRepositoryPath(
     options.coverageDir ?? DEFAULT_RELATIONSHIP_COMPLETENESS_COVERAGE_DIR,
@@ -2684,6 +3107,7 @@ export function loadRelationshipCompletenessArtifacts(
   if (
     reviewedCurrentCorpusMigration &&
     (releaseDirPath !== DEFAULT_RELATIONSHIP_COMPLETENESS_RELEASE_DIR ||
+      releaseSourceDirPath !== DEFAULT_RELATIONSHIP_COMPLETENESS_RELEASE_DIR ||
       outputDirPath !== DEFAULT_RELATIONSHIP_COMPLETENESS_OUTPUT_DIR)
   ) {
     throw new Error(
@@ -2691,18 +3115,20 @@ export function loadRelationshipCompletenessArtifacts(
     );
   }
   const releaseDir = resolve(rootDir, releaseDirPath);
+  const releaseSourceDir = resolve(rootDir, releaseSourceDirPath);
   const coverageDir = resolve(rootDir, coverageDirPath);
   const outputDir = resolve(rootDir, outputDirPath);
   const rootPrefix = rootDir.endsWith(sep) ? rootDir : `${rootDir}${sep}`;
   for (const { label, path } of [
     { label: "releaseDir", path: releaseDir },
+    { label: "releaseSourceDir", path: releaseSourceDir },
     { label: "coverageDir", path: coverageDir },
     { label: "outputDir", path: outputDir },
   ]) {
     if (path !== rootDir && !path.startsWith(rootPrefix)) throw new Error(`${label} escapes repository root: ${path}`);
   }
 
-  const releaseManifestPath = join(releaseDir, "manifest.json");
+  const releaseManifestPath = join(releaseSourceDir, "manifest.json");
   const releaseManifestContent = readFileSync(releaseManifestPath, "utf8");
   const releaseManifestSha256 = sha256(releaseManifestContent);
   const expectedManifestSha256 = options.expectedReleaseManifestSha256 ??
@@ -2717,8 +3143,14 @@ export function loadRelationshipCompletenessArtifacts(
   const releaseManifest = readJsonObject(releaseManifestPath);
   const releaseId = text(releaseManifest.release_id);
   if (!releaseId) throw new Error(`${releaseManifestPath}: release_id must be a non-empty string`);
+  const expectedLogicalReleaseDir = `data/exports/releases/${releaseId}`;
+  if (releaseDirPath !== expectedLogicalReleaseDir) {
+    throw new Error(
+      `Logical release directory must be ${expectedLogicalReleaseDir}, found ${releaseDirPath}`,
+    );
+  }
 
-  const releaseInputs = [
+  const legacyReleaseInputs = [
     "claims.jsonl",
     "corridors.jsonl",
     "entities.jsonl",
@@ -2734,19 +3166,40 @@ export function loadRelationshipCompletenessArtifacts(
     "tables.jsonl",
     "treatment_components.jsonl",
   ] as const;
+  const declaredManifestVersion = releaseManifest.manifest_version;
+  const stagedCandidateWithoutVersion =
+    releaseSourceDirPath !== releaseDirPath && declaredManifestVersion === undefined;
+  if (
+    !stagedCandidateWithoutVersion &&
+    (!Number.isInteger(declaredManifestVersion) || (declaredManifestVersion as number) < 1)
+  ) {
+    throw new Error(`${releaseManifestPath}: manifest_version must be a positive integer`);
+  }
+  const manifestVersion = stagedCandidateWithoutVersion
+    ? (existsSync(join(releaseSourceDir, "route_identity_snapshot.json")) ? 5 : 4)
+    : declaredManifestVersion as number;
+  const releaseInputs: readonly (
+    typeof legacyReleaseInputs[number] | "route_identity_snapshot.json"
+  )[] = manifestVersion >= 5
+    ? [
+        ...legacyReleaseInputs.slice(0, 9),
+        "route_identity_snapshot.json",
+        ...legacyReleaseInputs.slice(9),
+      ]
+    : legacyReleaseInputs;
   const releaseContents = new Map<string, string>();
   const releasePins: RelationshipCompletenessInputPin[] = [];
   for (const name of releaseInputs) {
-    const path = join(releaseDir, name);
+    const path = join(releaseSourceDir, name);
     const content = readFileSync(path, "utf8");
     releaseContents.set(name, content);
-    const rowCount = content.trim() ? content.trimEnd().split(/\r?\n/gu).length : 0;
+    const rowCount = name.endsWith(".jsonl")
+      ? content.trim() ? content.trimEnd().split(/\r?\n/gu).length : 0
+      : undefined;
     const pin = pinFile(`${releaseDirPath}/${name}`, content, rowCount);
     assertManifestPin(pin, manifestFileEntry(releaseManifest, name, releaseManifestPath), releaseManifestPath);
     releasePins.push(pin);
   }
-  const releaseManifestPin = pinFile(`${releaseDirPath}/manifest.json`, releaseManifestContent);
-
   const coverageManifestPath = join(coverageDir, "manifest.json");
   const coverageManifestContent = readFileSync(coverageManifestPath, "utf8");
   const coverageManifest = readJsonObject(coverageManifestPath);
@@ -2895,7 +3348,7 @@ export function loadRelationshipCompletenessArtifacts(
         return [JSON.parse(line) as T];
       } catch (error) {
         throw new Error(
-          `${join(releaseDir, name)}:${index + 1}: invalid JSON: ${error instanceof Error ? error.message : String(error)}`,
+          `${join(releaseSourceDir, name)}:${index + 1}: invalid JSON: ${error instanceof Error ? error.message : String(error)}`,
         );
       }
     });
@@ -2906,7 +3359,12 @@ export function loadRelationshipCompletenessArtifacts(
       options.treatmentPhysicalityContractPath ??
       DEFAULT_OCCURRENCE_TREATMENT_PHYSICALITY_CONTRACT_PATH,
     releaseId,
+    ...(options.releaseSourceDir ? { releaseSnapshotSourceDir: releaseSourceDir } : {}),
   });
+  const routeIdentitySnapshotContent = releaseContents.get("route_identity_snapshot.json");
+  const routeIdentitySnapshot = routeIdentitySnapshotContent === undefined
+    ? undefined
+    : parseRouteIdentitySnapshotV1(JSON.parse(routeIdentitySnapshotContent) as unknown);
   const busLaneTreatmentScope = loadBusLaneTreatmentScopeContract({
     rootDir,
     contractDir:
@@ -2926,6 +3384,7 @@ export function loadRelationshipCompletenessArtifacts(
     routes: parseReleaseJsonl<MtaCanonicalRecord>("routes.jsonl"),
     routeAnchors: parseReleaseJsonl<RouteAnchorRow>("route_anchors.jsonl"),
     routeAnchorReview,
+    routeIdentitySnapshot,
     releaseScopedRouteReview: true,
     relations: parseReleaseJsonl<MtaCanonicalRecord>("relations.jsonl"),
     coverageGaps,
@@ -2933,16 +3392,18 @@ export function loadRelationshipCompletenessArtifacts(
     treatmentPhysicality,
     busLaneTreatmentScope,
     inputPins: [
-      releaseManifestPin,
       ...releasePins,
       coverageManifestPin,
       coverageLedgerPin,
       ...dispositionPins,
-      routeReviewPin,
+      ...(!routeIdentitySnapshot ? [routeReviewPin] : []),
     ],
   });
   const canonicalRecords = releaseInputs
-    .filter((name) => name !== "operational_occurrences.jsonl" && name !== "route_anchors.jsonl")
+    .filter((name) =>
+      name !== "operational_occurrences.jsonl" &&
+      name !== "route_anchors.jsonl" &&
+      name !== "route_identity_snapshot.json")
     .flatMap((name) => parseReleaseJsonl<MtaCanonicalRecord>(name));
   const dispositionIssues = validateRelationshipDispositionLedgerForRelease(
     canonicalRecords,

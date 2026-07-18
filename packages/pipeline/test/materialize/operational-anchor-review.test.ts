@@ -34,6 +34,9 @@ describe("accepted operational-anchor review corpus", () => {
   it("validates every exact binding and produces only complete, official, eligible reviewed rows", () => {
     const records = readCanonicalRecordsFromJsonl();
     const decisions = loadOperationalAnchorReviewDecisions();
+    const allAcceptedDecisionIds = loadOperationalAnchorReviewDecisions(undefined, {
+      includeRetired: true,
+    }).map((decision) => decision.decision_id);
     const validation = validateOperationalAnchorReviewDecisions(decisions, records);
     const rows = computeOperationalAnchors(records, frozenRouteAnchors(), { reviewDecisions: decisions });
     const reviewedRows = rows.filter((row) => row.anchor_id.startsWith("operational-reviewed:"));
@@ -44,12 +47,13 @@ describe("accepted operational-anchor review corpus", () => {
       "ace-2025-09-15-bx20",
       "ace-2025-09-15-bx3",
       "ace-2025-09-15-bx7",
-      "ace-2025-09-15-q6",
       "b12-route-improvement-initiative-2024-01",
       "m15-2010-10-10-off-board-fare",
       "m86-2015-07-13-off-board-fare",
       "m86-2015-07-13-real-time-information",
     ]);
+    expect(allAcceptedDecisionIds).toContain("ace-2025-09-15-q6");
+    expect(validation.accepted.map((decision) => decision.decision_id)).not.toContain("ace-2025-09-15-q6");
     expect(reviewedRows).toHaveLength(validation.accepted.length);
     expect(reviewedRows.every((row) => row.study_eligible)).toBe(true);
     expect(reviewedRows.every((row) => row.source_authority === "official_public_agency")).toBe(true);
@@ -59,7 +63,6 @@ describe("accepted operational-anchor review corpus", () => {
       [["BX20"], ["automated_bus_lane_enforcement"], "2025-09-15"],
       [["BX3"], ["automated_bus_lane_enforcement"], "2025-09-15"],
       [["BX7"], ["automated_bus_lane_enforcement"], "2025-09-15"],
-      [["Q06"], ["automated_bus_lane_enforcement"], "2025-09-15"],
       [["B12"], ["service_pattern"], "2024-01"],
       [["M15+"], ["fare_collection"], "2010-10-10"],
       [["M86+"], ["fare_collection"], "2015-07-13"],

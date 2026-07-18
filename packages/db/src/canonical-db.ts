@@ -32,6 +32,7 @@ import { SCHEMA_DDL } from "./schema-ddl.js";
 import { ftsTableNames } from "./schema-ddl.js";
 import { populateFts } from "./fts.js";
 import { loadGtfsRefTables } from "./import-gtfs.js";
+import { loadSelectedGtfsSnapshotTables } from "./gtfs-snapshot-db.js";
 import { validateRow } from "./schema-validators.js";
 import { sha256, stableJson } from "./stable-json.js";
 import type { JsonObject, JsonValue, MtaCanonicalRecord, MtaEvidenceRef, MtaSubmissionEntry } from "./types.js";
@@ -48,8 +49,10 @@ import type { JsonObject, JsonValue, MtaCanonicalRecord, MtaEvidenceRef, MtaSubm
  *  v7 (relationship-evidence-registry-v1): normalized content-addressed evidence registry,
  *  exact evidence-ref matching, readonly-by-default opens, and a one-way post-build seal.
  *  v8 (relationship-enforcement-hardening-v1): exact role-scoped completeness waivers,
- *  exact selector eligibility in enforce mode, and payload/normalized-column parity guards. */
-export const CANONICAL_DB_VERSION = 8;
+ *  exact selector eligibility in enforce mode, and payload/normalized-column parity guards.
+ *  v9 (gtfs-route-reference-snapshot-v2): verified exact route inventory/activity, point-in-time
+ *  Current Bus Routes catalog, and typed catalog/GTFS disagreement mirrors. */
+export const CANONICAL_DB_VERSION = 9;
 
 const RELATION_PROVENANCE = ["authored", "derived", "canonicalizer"] as const;
 type RelationProvenance = (typeof RELATION_PROVENANCE)[number];
@@ -771,6 +774,10 @@ export function rebuildCanonicalDb(
 
     // C1/S2.5: load the GTFS reference registries from the staged feed (no feed → empty tables).
     loadGtfsRefTables(db);
+    // Plan 035: preserve the legacy fuzzy registry above, then independently load the exact,
+    // receipt-bound snapshot only when its reviewed SELECTED pointer exists.
+    loadSelectedGtfsSnapshotTables(db);
+
 
     // This is the only allowed state transition. All relationship enforcement mirrors (including
     // records/edges and exact evidence) become immutable before the atomic file is published.

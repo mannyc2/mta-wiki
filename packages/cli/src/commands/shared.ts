@@ -43,6 +43,9 @@ export type Command =
   | "canonicalize-wave"
   | "cross-source-candidates"
   | "import-gtfs"
+  | "verify-gtfs-reference"
+  | "route-identity-diff"
+  | "route-identity-audit"
   | "dossier"
   | "gap-report"
   | "campaign"
@@ -113,6 +116,12 @@ export type ParsedArgs = {
   message: string | undefined;
   kindFilter: string | undefined;
   safeWriter: boolean;
+  snapshot: string | undefined;
+  fromSnapshot: string | undefined;
+  toSnapshot: string | undefined;
+  receipt: string | undefined;
+  feedInputs: string[];
+  currentBusRoutes: string | undefined;
 };
 
 export type CommandHandler = (args: ParsedArgs) => void | Promise<void>;
@@ -127,6 +136,17 @@ export function optionValue(argv: string[], name: string): string | undefined {
   }
 
   return value;
+}
+
+export function optionValues(argv: string[], name: string): string[] {
+  const values: string[] = [];
+  for (let index = 0; index < argv.length; index += 1) {
+    if (argv[index] !== name) continue;
+    const value = argv[index + 1];
+    if (!value || value.startsWith("--")) throw new Error(`Missing value for ${name}`);
+    values.push(value);
+  }
+  return values;
 }
 
 export function messageValue(argv: string[]): string | undefined {
