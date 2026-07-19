@@ -54,7 +54,7 @@ describe("release status", () => {
     const rc22 = readReleaseStatus(repoRoot, "v1-rc22");
     const rc23 = readReleaseStatus(repoRoot, "v1-rc23");
     expect(rc22?.schema_version).toBe(1);
-    expect(rc23).toMatchObject({ schema_version: 2, reason_code: "ROUTE_IDENTITY_RC23_B44_PLUS_UNCOVERED", replacement_release_id: null, failing_artifact: { path: "route_anchors.jsonl", declared_contract_version: null, detected_by_contract: "route-identity-snapshot-v1" } });
+    expect(rc23).toMatchObject({ schema_version: 2, reason_code: "ROUTE_IDENTITY_RC23_B44_PLUS_UNCOVERED", replacement_release_id: "v1-rc24", failing_artifact: { path: "route_anchors.jsonl", declared_contract_version: null, detected_by_contract: "route-identity-snapshot-v1" } });
     expect(rc23?.schema_version === 2 ? rc23.affected_identities.map((identity) => identity.gtfs_route_id) : []).toEqual(["B44+", "B82+", "BX6+"]);
     const directory = join(repoRoot, "data", "exports", "releases", "v1-rc23");
     expect(() => verifyReleaseDirectory(directory)).toThrow("ROUTE_IDENTITY_RC23_B44_PLUS_UNCOVERED");

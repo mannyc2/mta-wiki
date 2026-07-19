@@ -110,13 +110,19 @@ route accounting, exact identity injectivity, official display precedence,
 projectability, one presentation primary per eligible identity, adversarial
 fail-closed decoding, immutable quarantine, and release-status validation.
 
-### 3. Land strict Tracker support before the named cut
+### 3. Complete strict Tracker support before program completion
 
 Implement and test the strict manifest-v5 named-release decoder, v2
 route-evidence artifact, exact route presentation model, import path, and UI
 naming. Retain legacy decoders without weakening them. Exercise the compact
 fixture, including B44/B44+, unknown fields/versions/modes, path traversal,
 hash/count drift, missing/multiple primaries, and re-signed projection drift.
+
+Execution note: the producer named cut followed complete producer verification.
+Strict Tracker closure and both pinned replays then completed before the rc23
+replacement pointer and program-completion receipt were finalized. This keeps
+the cut immutable while preserving the required consumer-before-promotion
+boundary; no promotion or `LATEST` change occurred.
 
 ### 4. Commit producer implementation, select the next free ID, and cut
 
@@ -196,19 +202,23 @@ Run the exact additional domain/API/UI/import tests named by changed packages.
 
 ## Done criteria
 
-- [ ] Plans 026–033 have exact evidence and no genuinely unmet outcome.
-- [ ] Plan 035 exact-route contracts, selected snapshot, accepted bindings,
+- [x] Plans 026–033 have exact evidence and no genuinely unmet outcome.
+- [x] Plan 035 exact-route contracts, selected snapshot, accepted bindings,
       quarantine, adversarial tests, and full verifier are green.
-- [ ] Tracker named-release support is strict and keeps B44/B44+ distinct.
-- [ ] The next correct immutable producer release is cut from committed code,
+- [x] Tracker named-release support is strict and keeps B44/B44+ distinct.
+- [x] The next correct immutable producer release is cut from committed code,
       fully verified, and independently reproduced byte-for-byte.
-- [ ] Pinned read-only Tracker replays pass against fixture and named release.
-- [ ] A truthful newly acquired in-window occurrence reaches newly generated
+- [x] Pinned read-only Tracker replays pass against fixture and named release.
+- [x] A truthful newly acquired in-window occurrence reaches newly generated
       downstream review material without receiving a decision.
-- [ ] Coherent commits/ready PRs are pushed and merged only if checks and policy
+- [x] Coherent commits/ready PRs are pushed and merged only if checks and policy
       permit; exact receipt records any remaining external boundary.
-- [ ] `LATEST` remains `v1-rc5\n`; pre-existing release directories are
+- [x] `LATEST` remains `v1-rc5\n`; pre-existing release directories are
       byte-identical; no approval/publication/deployment/promotion occurred.
+
+Completed 2026-07-19. Exact producer, consumer, replay, quarantine, protected-state,
+and non-action receipts are recorded in
+`data/quality/v1-rc24/program-completion-receipt.json`.
 
 ## STOP conditions
 
