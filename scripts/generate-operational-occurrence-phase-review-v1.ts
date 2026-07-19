@@ -1,9 +1,9 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
-import { dirname, isAbsolute, join, relative, resolve } from "node:path";
+import { dirname, isAbsolute, join, relative, resolve, sep } from "node:path";
 import { repoRoot } from "../packages/core/src/paths";
 import { sha256, stableHash, stableJson } from "../packages/db/src/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "../packages/db/src/types";
-import { entriesToRecords } from "../packages/pipeline/src/materialize/materialize";
+import { readCanonicalRecordsFromDbFile } from "../packages/pipeline/src/materialize/canonical-read";
 import { loadOperationalAnchorReviewDecisions } from "../packages/pipeline/src/materialize/operational-anchor-review";
 import { loadOperationalOccurrenceIdentityRegistry } from "../packages/pipeline/src/materialize/operational-occurrence-identity";
 import { loadOperationalOccurrenceAcceptedDecisions } from "../packages/pipeline/src/materialize/operational-occurrence-review";
@@ -20,13 +20,6 @@ import {
   OPERATIONAL_OCCURRENCE_PHASE_REVIEWED_AT,
   OPERATIONAL_OCCURRENCE_PHASE_REVIEWED_BY,
 } from "../packages/pipeline/src/quality/operational-occurrence-phases";
-import { retiredSubmissionIds } from "../packages/pipeline/src/records/submission-overrides";
-import {
-  readSemanticCorrections,
-  readSemanticCorrectionSupersessions,
-  withSemanticCorrections,
-} from "../packages/pipeline/src/records/semantic-corrections";
-import { readSubmissionEntries } from "../packages/pipeline/src/records/submissions";
 
 const RC20_MANIFEST_SHA256 =
   "a2e9147fbb3db3b27a48df27f9550a8b31ab28bc85e30b7166d75b46b54e1a08";
@@ -43,6 +36,7 @@ const QUALITY_DIR = join(
 type Arguments = {
   check: boolean;
   routeAnchorReleaseDir: string;
+  logicalReleaseDir: string;
 };
 
 type FilePin = {
@@ -67,6 +61,7 @@ type ReleaseManifest = {
 function parseArguments(argv: readonly string[]): Arguments {
   let check = false;
   let routeAnchorReleaseDir = DEFAULT_ROUTE_ANCHOR_RELEASE_DIR;
+  let logicalReleaseDir: string | undefined;
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index]!;
     if (arg === "--check") {
@@ -80,9 +75,20 @@ function parseArguments(argv: readonly string[]): Arguments {
       index += 1;
       continue;
     }
+    if (arg === "--logical-release-dir") {
+      const value = argv[index + 1];
+      if (!value) throw new Error("--logical-release-dir requires a path");
+      logicalReleaseDir = isAbsolute(value) ? value : resolve(repoRoot, value);
+      index += 1;
+      continue;
+    }
     throw new Error(`Unknown argument: ${arg}`);
   }
-  return { check, routeAnchorReleaseDir };
+  return {
+    check,
+    routeAnchorReleaseDir,
+    logicalReleaseDir: logicalReleaseDir ?? routeAnchorReleaseDir,
+  };
 }
 
 function json(value: unknown): string {
@@ -98,18 +104,27 @@ function lineCount(content: string): number {
   return content.trim() ? content.trimEnd().split(/\r?\n/u).length : 0;
 }
 
-function pinContent(path: string, content: string): FilePin {
+function repositoryRelativePath(path: string, label: string): string {
+  const absolute = resolve(path);
+  const rootPrefix = repoRoot.endsWith(sep) ? repoRoot : `${repoRoot}${sep}`;
+  if (!absolute.startsWith(rootPrefix)) {
+    throw new Error(`${label} must be inside the repository root: ${path}`);
+  }
+  return relative(repoRoot, absolute).split("\\").join("/");
+}
+
+function pinContent(path: string, content: string, logicalPath = path): FilePin {
   const result: FilePin = {
-    path: relative(repoRoot, path).split("\\").join("/"),
+    path: repositoryRelativePath(logicalPath, "logical release pin"),
     bytes: Buffer.byteLength(content),
     sha256: sha256(content),
   };
-  if (path.endsWith(".jsonl")) result.row_count = lineCount(content);
+  if (logicalPath.endsWith(".jsonl")) result.row_count = lineCount(content);
   return result;
 }
 
-function pinFile(path: string): FilePin {
-  return pinContent(path, readFileSync(path, "utf8"));
+function pinFile(path: string, logicalPath = path): FilePin {
+  return pinContent(path, readFileSync(path, "utf8"), logicalPath);
 }
 
 function compareOrWrite(path: string, content: string, check: boolean): void {
@@ -134,7 +149,9 @@ function filesIn(dir: string, suffix: string): string[] {
 }
 
 function aggregatePin(paths: readonly string[], pathRoots: readonly string[]): AggregatePin {
-  const pins = [...new Set(paths)].sort((left, right) => left.localeCompare(right)).map(pinFile);
+  const pins = [...new Set(paths)]
+    .sort((left, right) => left.localeCompare(right))
+    .map((path) => pinFile(path));
   return {
     file_count: pins.length,
     bytes: pins.reduce((total, pin) => total + pin.bytes, 0),
@@ -143,10 +160,9 @@ function aggregatePin(paths: readonly string[], pathRoots: readonly string[]): A
   };
 }
 
-function readVerifiedRouteAnchors(releaseDir: string): {
+function readVerifiedRouteAnchors(releaseDir: string, logicalReleaseDir: string): {
   rows: RouteAnchorRow[];
   manifest: ReleaseManifest;
-  manifestPin: FilePin;
   routeAnchorsPin: FilePin;
   operationalOccurrences: JsonValue[];
   operationalOccurrencesPin: FilePin;
@@ -154,14 +170,27 @@ function readVerifiedRouteAnchors(releaseDir: string): {
   const manifestPath = join(releaseDir, "manifest.json");
   const routeAnchorsPath = join(releaseDir, "route_anchors.jsonl");
   const operationalOccurrencesPath = join(releaseDir, "operational_occurrences.jsonl");
-  const manifestPin = pinFile(manifestPath);
-  if (releaseDir === DEFAULT_ROUTE_ANCHOR_RELEASE_DIR && manifestPin.sha256 !== RC20_MANIFEST_SHA256) {
+  const sourceManifestPin = pinFile(manifestPath);
+  if (releaseDir === DEFAULT_ROUTE_ANCHOR_RELEASE_DIR && sourceManifestPin.sha256 !== RC20_MANIFEST_SHA256) {
     throw new Error(
-      `v1-rc20 manifest hash mismatch: expected ${RC20_MANIFEST_SHA256}, got ${manifestPin.sha256}`,
+      `v1-rc20 manifest hash mismatch: expected ${RC20_MANIFEST_SHA256}, got ${sourceManifestPin.sha256}`,
     );
   }
   const manifest = JSON.parse(readFileSync(manifestPath, "utf8")) as ReleaseManifest;
-  const routeAnchorsPin = pinFile(routeAnchorsPath);
+  const logicalReleasePath = repositoryRelativePath(
+    logicalReleaseDir,
+    "logical release directory",
+  );
+  const expectedLogicalReleasePath = `data/exports/releases/${manifest.release_id}`;
+  if (logicalReleasePath !== expectedLogicalReleasePath) {
+    throw new Error(
+      `Logical release directory must be ${expectedLogicalReleasePath}, found ${logicalReleasePath}`,
+    );
+  }
+  const routeAnchorsPin = pinFile(
+    routeAnchorsPath,
+    join(logicalReleaseDir, "route_anchors.jsonl"),
+  );
   const expected = manifest.files["route_anchors.jsonl"];
   if (!expected || expected.bytes !== routeAnchorsPin.bytes || expected.sha256 !== routeAnchorsPin.sha256) {
     throw new Error(`${relative(repoRoot, routeAnchorsPath)} does not match its immutable release manifest`);
@@ -176,7 +205,10 @@ function readVerifiedRouteAnchors(releaseDir: string): {
         throw new Error(`${routeAnchorsPath}:${index + 1}: ${error instanceof Error ? error.message : String(error)}`);
       }
     });
-  const operationalOccurrencesPin = pinFile(operationalOccurrencesPath);
+  const operationalOccurrencesPin = pinFile(
+    operationalOccurrencesPath,
+    join(logicalReleaseDir, "operational_occurrences.jsonl"),
+  );
   const expectedOperationalOccurrences = manifest.files["operational_occurrences.jsonl"];
   if (
     !expectedOperationalOccurrences ||
@@ -202,7 +234,6 @@ function readVerifiedRouteAnchors(releaseDir: string): {
   return {
     rows,
     manifest,
-    manifestPin,
     routeAnchorsPin,
     operationalOccurrences,
     operationalOccurrencesPin,
@@ -210,21 +241,10 @@ function readVerifiedRouteAnchors(releaseDir: string): {
 }
 
 function currentCanonicalRecords(): MtaCanonicalRecord[] {
-  const records = entriesToRecords(readSubmissionEntries(), {
-    retiredSubmissionIds: retiredSubmissionIds(),
-  });
-  const corrected = withSemanticCorrections(
-    records,
-    readSemanticCorrections(),
-    readSemanticCorrectionSupersessions(),
-  );
-  if (corrected.issues.length > 0) {
-    throw new Error(
-      `Current canonical materialization has ${corrected.issues.length} semantic-correction issue(s): ` +
-        corrected.issues.slice(0, 8).map((issue) => `${issue.code} ${issue.recordId ?? issue.path ?? ""}: ${issue.message}`).join("; "),
-    );
-  }
-  return corrected.records;
+  const path = join(repoRoot, "data", "canonical.db");
+  const records = readCanonicalRecordsFromDbFile(path);
+  if (!records) throw new Error(`Current sealed canonical database is missing or unreadable: ${path}`);
+  return records;
 }
 
 function canonicalPhaseProjection(records: readonly MtaCanonicalRecord[], recordIds: ReadonlySet<string>): JsonValue[] {
@@ -318,7 +338,7 @@ function reportMarkdown(input: {
   summary: ReturnType<typeof buildOperationalOccurrencePhaseReview>["summary"];
   releaseId: string;
   canonicalRecordCount: number;
-  manifestSha256: string;
+  releaseInputFingerprint: string;
   operationalOccurrencesSha256: string;
   canonicalPhaseProjectionSha256: string;
   reproductionCommand: string;
@@ -344,7 +364,7 @@ function reportMarkdown(input: {
     `The single-phase disposition means only that the accepted occurrence review selected one evidenced event and asserted no earlier/later edge inside that occurrence. It is not a claim that the broader project has no other phases.\n\n` +
     `## Reproduction pins\n\n` +
     `- Route-anchor release: ${input.releaseId}\n` +
-    `- Route-anchor release manifest SHA-256: \`${input.manifestSha256}\`\n` +
+    `- Route-anchor release input fingerprint: \`${input.releaseInputFingerprint}\`\n` +
     `- Current canonical record count: ${input.canonicalRecordCount}\n` +
     `- Schema-v2 occurrence projection SHA-256: \`${input.operationalOccurrencesSha256}\`\n` +
     `- Canonical phase/event-relation projection SHA-256: \`${input.canonicalPhaseProjectionSha256}\`\n\n` +
@@ -357,8 +377,14 @@ function reportMarkdown(input: {
 
 function main(): void {
   const args = parseArguments(process.argv.slice(2));
-  const routeAnchorInput = readVerifiedRouteAnchors(args.routeAnchorReleaseDir);
-  const routeAnchorReleasePath = relative(repoRoot, args.routeAnchorReleaseDir).split("\\").join("/");
+  const routeAnchorInput = readVerifiedRouteAnchors(
+    args.routeAnchorReleaseDir,
+    args.logicalReleaseDir,
+  );
+  const routeAnchorReleasePath = repositoryRelativePath(
+    args.logicalReleaseDir,
+    "logical release directory",
+  );
   const reproductionCommand =
     `bun scripts/generate-operational-occurrence-phase-review-v1.ts --check --route-anchor-release-dir ${routeAnchorReleasePath}`;
   const records = currentCanonicalRecords();
@@ -438,7 +464,10 @@ function main(): void {
     summary: build.summary,
     releaseId: routeAnchorInput.manifest.release_id,
     canonicalRecordCount: records.length,
-    manifestSha256: routeAnchorInput.manifestPin.sha256,
+    releaseInputFingerprint: stableHash([
+      routeAnchorInput.routeAnchorsPin,
+      routeAnchorInput.operationalOccurrencesPin,
+    ] as unknown as JsonValue),
     operationalOccurrencesSha256,
     canonicalPhaseProjectionSha256,
     reproductionCommand,
@@ -479,7 +508,6 @@ function main(): void {
     generated_by: OPERATIONAL_OCCURRENCE_PHASE_REVIEWED_BY,
     route_anchor_release: {
       release_id: routeAnchorInput.manifest.release_id,
-      manifest: routeAnchorInput.manifestPin,
       route_anchors: routeAnchorInput.routeAnchorsPin,
       operational_occurrences: routeAnchorInput.operationalOccurrencesPin,
     },

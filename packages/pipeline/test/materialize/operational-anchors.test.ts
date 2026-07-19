@@ -303,6 +303,26 @@ describe("operational anchor export", () => {
     expect(fixture.records).toEqual(recordsBefore);
   });
 
+  it("treats rich exact_service route anchors as trusted while unknown dispositions stay closed", () => {
+    const fixture = projectAnchorFixture();
+    fixture.routeAnchors[0] = {
+      ...fixture.routeAnchors[0]!,
+      disposition: "exact_service",
+    };
+    const reviewed = computeOperationalAnchors(fixture.records, fixture.routeAnchors, {
+      reviewDecisions: [reviewedProjectDecision()],
+    }).find((row) => row.anchor_id === "operational-reviewed:reviewed-project");
+    expect(reviewed?.gtfs_route_ids).toEqual(["B1"]);
+
+    fixture.routeAnchors[0] = {
+      ...fixture.routeAnchors[0]!,
+      disposition: "unreviewed_future_disposition",
+    };
+    expect(() => computeOperationalAnchors(fixture.records, fixture.routeAnchors, {
+      reviewDecisions: [reviewedProjectDecision()],
+    })).toThrow("requires exactly one trusted GTFS route");
+  });
+
   it("quarantines a reviewed decision when an evidence binding is not exact", () => {
     const fixture = projectAnchorFixture();
     const decision = reviewedProjectDecision({

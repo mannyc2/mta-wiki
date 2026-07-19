@@ -70,6 +70,91 @@ function validateRequiredPaths(issues: MtaValidationIssue[]) {
   return requiredPaths.length;
 }
 
+export function validateReleasePointer(
+  issues: MtaValidationIssue[],
+  rootDir = repoRoot,
+): void {
+  const releasesDir = join(rootDir, "data", "exports", "releases");
+  const latestPath = join(releasesDir, "LATEST");
+  if (!existsSync(latestPath)) return;
+
+  const releaseId = readFileSync(latestPath, "utf8").trim();
+  const safeReleaseId = (
+    releaseId.length > 0 &&
+    releaseId !== "." &&
+    releaseId !== ".." &&
+    !releaseId.includes("/") &&
+    !releaseId.includes("\\")
+  );
+  const manifestPath = safeReleaseId
+    ? join(releasesDir, releaseId, "manifest.json")
+    : "";
+  if (safeReleaseId && existsSync(manifestPath)) return;
+
+  // This intentionally checks filesystem existence, not git trackedness. A fresh
+  // checkout gate is what catches a committed pointer to an untracked canary.
+  issues.push({
+    code: "dangling_release_pointer",
+    path: "data/exports/releases/LATEST",
+    message: `LATEST names ${releaseId || "(empty)"}, but data/exports/releases/${releaseId || "(empty)"}/manifest.json does not exist.`,
+  });
+}
+
+export function validateSourceRegistryForRecords(
+  records: readonly MtaCanonicalRecord[],
+  issues: MtaValidationIssue[],
+): void {
+  const sourceRecords = records
+    .filter((record) => record.record_kind === "source")
+    .sort((left, right) => left.record_id.localeCompare(right.record_id));
+  const sourceRecordsById = new Map<string, MtaCanonicalRecord[]>();
+  for (const record of sourceRecords) {
+    const matches = sourceRecordsById.get(record.source_id) ?? [];
+    matches.push(record);
+    sourceRecordsById.set(record.source_id, matches);
+    if (/_\d+$/u.test(record.record_id)) {
+      issues.push({
+        code: "source_record_collision_suffix",
+        path: "data/canonical/sources.jsonl",
+        recordId: record.record_id,
+        message: `Source record ${record.record_id} has a generated collision suffix; one source_id must materialize to one stable source record.`,
+      });
+    }
+  }
+
+  for (const [sourceId, matchingRecords] of [...sourceRecordsById].sort(([left], [right]) => left.localeCompare(right))) {
+    if (matchingRecords.length < 2) continue;
+    issues.push({
+      code: "duplicate_source_id",
+      path: "data/canonical/sources.jsonl",
+      message: `Source id ${sourceId} is claimed by ${matchingRecords.length} source records: ${matchingRecords.map((record) => record.record_id).join(", ")}.`,
+    });
+  }
+
+  const sourceIds = new Set(sourceRecordsById.keys());
+  const citingRecordsByMissingSource = new Map<string, Set<string>>();
+  for (const record of records) {
+    const referencedSourceIds = new Set([
+      record.source_id,
+      ...(record.source_ids ?? []),
+    ]);
+    for (const sourceId of referencedSourceIds) {
+      if (sourceIds.has(sourceId)) continue;
+      const citingRecords = citingRecordsByMissingSource.get(sourceId) ?? new Set<string>();
+      citingRecords.add(record.record_id);
+      citingRecordsByMissingSource.set(sourceId, citingRecords);
+    }
+  }
+
+  for (const [sourceId, citingRecords] of [...citingRecordsByMissingSource].sort(([left], [right]) => left.localeCompare(right))) {
+    issues.push({
+      code: "unresolved_source_reference",
+      path: "data/canonical/sources.jsonl",
+      message: `Source id ${sourceId} has no source registry row and is referenced by ${citingRecords.size} citing record${citingRecords.size === 1 ? "" : "s"}.`,
+    });
+  }
+}
+
 function validatePages(pagePaths: string[], issues: MtaValidationIssue[]) {
   for (const path of pagePaths) {
     if (path === join(repoRoot, "wiki", "index.md")) continue;
@@ -678,6 +763,7 @@ export function validateRepo(options: {
   }
   const relationshipMode = contractRelationshipMode;
   const requiredPathCount = validateRequiredPaths(issues);
+  validateReleasePointer(issues);
   const dbRecords = readCanonicalRecordsFromDbFile();
   if (!dbRecords) {
     issues.push({
@@ -690,6 +776,7 @@ export function validateRepo(options: {
   const submissionIds = [...new Set(records.flatMap((record) => record.submission_ids))].sort();
   const pagePaths = walkMarkdown(join(repoRoot, "wiki"));
 
+  validateSourceRegistryForRecords(records, issues);
   validatePages(pagePaths, issues);
   validateStagedSourceBlocks(issues);
   validateEvidence(records, issues);

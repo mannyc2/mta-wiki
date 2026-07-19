@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "mta-bus-2026-07-18-route-provenance-v1",
+  "proposal_sha256": "6192662308c2b9b32585b21148c756ba2c47d861500aeaaf24b27f2bcec6f8fa",
+  "route_record_count": 395,
+  "exact_binding_count": 249,
+  "review_required_count": 146,
+  "approval_status": "unapproved"
+}

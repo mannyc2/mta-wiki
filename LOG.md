@@ -4,6 +4,28 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-19
+
+### Exact Route Identity Contract and rc24
+
+- Added the immutable official GTFS/Current Bus Routes route snapshot and strict
+  manifest-v5 route-identity contracts. Exact service identity is the dataset
+  namespace plus case-sensitive source route ID: base and plus services such as
+  `B44` and `B44+` remain distinct, while route family is grouping context only.
+  The reviewed snapshot contains 399 service identities, 395 complete canonical
+  route bindings, and 520 compatibility anchors.
+- Quarantined immutable `v1-rc23` outside its release directory for its exact-route
+  collapse and recorded `v1-rc24` as its replacement. The new unpromoted release
+  has manifest SHA-256
+  `fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d`;
+  all 258 addressed files and the 259-file directory were independently reproduced
+  byte-for-byte. `LATEST` intentionally remains `v1-rc5`.
+- Completed the strict Bus Reliability Tracker migration and pinned read-only
+  fixture/named-release replay. Route, occurrence, candidate, and decision-free
+  review artifacts reproduced byte-for-byte; Tracker PRs #65 and #66 merged with
+  green checks and skipped deployment. No candidate approval, publication,
+  deployment, Pages change, or production promotion occurred.
+
 ## 2026-07-17
 
 ### Fail-closed Release Contracts and rc23

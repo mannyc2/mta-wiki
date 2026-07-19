@@ -4,6 +4,7 @@ import { join, relative } from "node:path";
 import {
   auditPostIngestCoverage,
   auditSubmissionSourceIdDrift,
+  checkDeterministicQualityReport,
   claimWriterBacklogDispatchShards,
   exportCanonicalJsonl,
   exportSite,
@@ -16,6 +17,7 @@ import {
   generateWriterBacklogQueue,
   generateGapReport,
   generatePipelineReport,
+  latestReleaseId,
   materializeWiki,
   readCanonicalRecordsFromJsonl,
   repoRoot,
@@ -271,6 +273,8 @@ export const materializeCommands = {
       force: args.force,
       setLatest,
       qualityReport: optionValue(process.argv, "--quality-report"),
+      gtfsSnapshotId: optionValue(process.argv, "--gtfs-snapshot"),
+      outputRoot: optionValue(process.argv, "--output-root"),
     });
     console.log(
       `Exported release ${result.releaseId}: ${result.recordCount} records across ${result.files} file(s) to ${relative(repoRoot, result.dir)} ` +
@@ -280,7 +284,11 @@ export const materializeCommands = {
 
   "verify-release": (args) => {
     const releaseId = requireSubject(args.command, args.subject, "release id");
-    const result = verifyReleaseDirectory(join(repoRoot, "data", "exports", "releases", releaseId));
+    const result = verifyReleaseDirectory(
+      join(repoRoot, "data", "exports", "releases", releaseId),
+      releaseId,
+      { sourceRootDir: repoRoot },
+    );
     console.log(
       `Verified release ${result.release_id}: manifest-v${result.manifest_version}, ${result.verified_file_count} files, ` +
         `${result.verified_record_count} canonical records (manifest ${result.manifest_sha256.slice(0, 12)}).`,
@@ -310,7 +318,16 @@ export const materializeCommands = {
 
   "quality-report": (args) => {
     const releaseId = args.subject ?? optionValue(process.argv, "--id");
-    const result = writeDeterministicQualityReport(releaseId);
+    const resolvedReleaseId = releaseId ?? latestReleaseId();
+    verifyReleaseDirectory(
+      join(repoRoot, "data", "exports", "releases", resolvedReleaseId),
+      resolvedReleaseId,
+      { sourceRootDir: repoRoot },
+    );
+    const check = process.argv.includes("--check");
+    const result = check
+      ? checkDeterministicQualityReport(resolvedReleaseId)
+      : writeDeterministicQualityReport(resolvedReleaseId);
     const evidence = result.deterministic.evidence_ref_resolution;
     const eventFlags = result.deterministic.cross_field_sanity.event_date_window.flagged;
     const routeFlags = result.deterministic.cross_field_sanity.route_id_sanity.flagged;
@@ -319,7 +336,7 @@ export const materializeCommands = {
         `(${(evidence.resolution_rate * 100).toFixed(2)}%) resolved.`,
     );
     console.log(`Cross-field flags: events=${eventFlags}, routes=${routeFlags}.`);
-    console.log(`Wrote ${relative(repoRoot, result.deterministicPath)}`);
+    console.log(`${check ? "Verified" : "Wrote"} ${relative(repoRoot, result.deterministicPath)}`);
   },
 
   "quality-seeded-defects": () => {

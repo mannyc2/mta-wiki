@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "qbnr-residual-implementation-phases-timeline_subject-superseded-by-approved-occurrences",
+  "gap_id": "operational-coverage:11b749581f7002d511afef2d",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-operational-integrity-2026-07-18",
+  "decided_at": "2026-07-18T18:28:45Z",
+  "rationale": "This addendum phase label is an umbrella table-of-contents description, not an independent route-level onset. The accepted occurrence fixture already contains 83 source-complete QBNR Phase 1 route occurrences and 38 source-complete Phase 2 route occurrences with exact route, treatment, date, and delivered scope. Linking this coarse phase label would add no distinct studyable fact and could create route-treatment cross-products, so this timeline-subject diagnostic is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_implementation-phases",
+      "source_id": "queens_proposed_final_plan_addendum_2024",
+      "evidence_id": "queens_proposed_final_plan_addendum_2024#p003_c0014",
+      "block_id": "p003_c0014"
+    },
+    {
+      "record_id": "event_implementation-phases",
+      "source_id": "queens_proposed_final_plan_addendum_2024",
+      "evidence_id": "queens_proposed_final_plan_addendum_2024#p003_c0015",
+      "block_id": "p003_c0015"
+    }
+  ],
+  "search_receipt_ids": []
+}

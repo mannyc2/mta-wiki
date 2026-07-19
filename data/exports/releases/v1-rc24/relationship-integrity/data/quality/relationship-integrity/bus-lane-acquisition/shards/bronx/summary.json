@@ -1,0 +1,76 @@
+{
+  "acquired_source_hash_count": 75,
+  "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
+  "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
+  "corridor_group_count": 19,
+  "date_and_phase_proved_count": 0,
+  "exact_route_binding_proved_by_corridor": {
+    "149th Street / E 149 Street": 1,
+    "E 149 Street": 2,
+    "Pelham Parkway / University Avenue": 1,
+    "University Avenue / Washington Bridge": 2,
+    "W 178 Street": 1,
+    "Washington Bridge": 3,
+    "Westchester Avenue / Wilkinson Avenue": 3
+  },
+  "exact_route_binding_proved_by_source": {
+    "bronx_cb5_priority_2019": 5,
+    "e149_cb1": 3,
+    "pelham_bay_completion": 3,
+    "pelham_parkway_completion": 1,
+    "w178_cb12": 1
+  },
+  "exact_route_binding_proved_candidate_ids": [
+    "study-event-v2:2dd76c9b799ab1165b237330",
+    "study-event-v2:3134629ede9faeff4c6f54b5",
+    "study-event-v2:37447319d0697677f54ec0db",
+    "study-event-v2:3a7457be7847b8857c79fc68",
+    "study-event-v2:3f2f3824ccf3987f4fac2f73",
+    "study-event-v2:452901b4951f8fd3f5105e3e",
+    "study-event-v2:531b37f7c6e156178c51707a",
+    "study-event-v2:62d9b1d8b5d7ede06fa8ba6a",
+    "study-event-v2:74303954f2450436e58eadaf",
+    "study-event-v2:90af3c526dedca40f0e7fb28",
+    "study-event-v2:aa65fa96dffcaf26e7f07c85",
+    "study-event-v2:b8621d718aca1a1bf4d5b0d6",
+    "study-event-v2:c725655aeb19bb344c1ce990"
+  ],
+  "exact_route_binding_proved_count": 13,
+  "exclusions_sha256": "b3b138487cc37bd4933525e750c6111059fd4dad2608a529b72f6345d441b951",
+  "exclusive_primary_disposition_counts": {
+    "completed_search_route_linkage_unresolved": 39,
+    "linkage_supported_phase_unresolved": 13
+  },
+  "explicitly_excluded_count": 52,
+  "operational_occurrence_added_or_updated_count": 0,
+  "receipts_sha256": "be1d20ccabd2a24bea7837ad1e1e9bf62d43ff6faa4df53c09cd656b2fff4fb8",
+  "reconciliation_correction": {
+    "candidate_id": "study-event-v2:4f20a93956a3af9db4bad8c1",
+    "corrected_exact_route_treatment_binding_proved": false,
+    "exclusive_primary_disposition": "completed_search_route_linkage_unresolved",
+    "prior_exact_route_treatment_binding_proved": true,
+    "prior_supported_linkages_sha256": "79e478d383e917ae0583ebd3a4d8af04935304e6f38e43b76a8c98359bc7ec90",
+    "reason": "The official source says BX12 Select Bus Service (BX12+); exact route-variant matching rejects promotion to the distinct BX12 local candidate."
+  },
+  "researched_count": 52,
+  "researched_on": "2026-07-15",
+  "route_prefix_counts": {
+    "BX": 41,
+    "BXM": 11
+  },
+  "route_specific_mta_fetch_count": 52,
+  "route_variant_precision_rejected_candidate_ids": [
+    "study-event-v2:4f20a93956a3af9db4bad8c1"
+  ],
+  "route_variant_precision_rejected_count": 1,
+  "schema_version": 1,
+  "segment_binding_proved_candidate_ids": [],
+  "segment_binding_proved_count": 0,
+  "shard": "bronx",
+  "shared_official_source_fetch_count": 23,
+  "source_acquired_count": 52,
+  "still_unresolved_count": 52,
+  "study_projection_eligible_count": 0,
+  "supported_linkages_sha256": "86e6f394d302e0f0e5d10bd68900d1bc62881ea976c5746974a4cd6b1598ff35",
+  "warning": "Supported route-treatment evidence is not a projectable occurrence. All Bronx rows remain excluded pending exact segment, stable phase, onset, and canonical occurrence identity."
+}

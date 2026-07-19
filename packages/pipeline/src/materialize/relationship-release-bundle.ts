@@ -594,14 +594,31 @@ function assertReleaseRelationSnapshot(
   }
 }
 
-const COMPLETENESS_RELEASE_INPUT_FILES = [
+const LEGACY_COMPLETENESS_RELEASE_INPUT_FILES = [
+  "claims.jsonl",
   "corridors.jsonl",
+  "entities.jsonl",
   "events.jsonl",
+  "metric_claims.jsonl",
   "operational_occurrences.jsonl",
+  "projects.jsonl",
   "relations.jsonl",
+  "route_anchors.jsonl",
   "routes.jsonl",
+  "source_gaps.jsonl",
+  "sources.jsonl",
+  "tables.jsonl",
   "treatment_components.jsonl",
 ] as const;
+
+const ROUTE_IDENTITY_COMPLETENESS_RELEASE_INPUT_FILES = [
+  ...LEGACY_COMPLETENESS_RELEASE_INPUT_FILES,
+  "route_identity_snapshot.json",
+].sort((left, right) => left.localeCompare(right));
+
+const COMPLETENESS_RELEASE_INPUT_FILE_NAMES = new Set<string>(
+  ROUTE_IDENTITY_COMPLETENESS_RELEASE_INPUT_FILES,
+);
 
 function assertCompletenessReleaseSnapshot(
   rootDir: string,
@@ -631,6 +648,7 @@ function assertCompletenessReleaseSnapshot(
   );
   if (
     manifest.schema_version !== 1 ||
+    typeof manifest.release_id !== "string" ||
     !Array.isArray(manifest.input_pins)
   ) {
     throw new Error(
@@ -651,11 +669,27 @@ function assertCompletenessReleaseSnapshot(
       `relationship_completeness_manifest.input_pins[${index}].path`,
     );
     const match =
-      /^data\/exports\/releases\/[^/]+\/([^/]+)$/u.exec(
+      /^data\/exports\/releases\/([^/]+)\/([^/]+)$/u.exec(
         sourcePath,
       );
-    if (!match || match[1] === "manifest.json") continue;
-    const name = match[1]!;
+    if (!match) continue;
+    const pinnedReleaseId = match[1]!;
+    const name = match[2]!;
+    if (name === "manifest.json") {
+      throw new Error(
+        "Relationship completeness manifest must not pin its containing release manifest",
+      );
+    }
+    if (pinnedReleaseId !== manifest.release_id) {
+      throw new Error(
+        `Relationship completeness input ${name} is pinned under the wrong release ID`,
+      );
+    }
+    if (!COMPLETENESS_RELEASE_INPUT_FILE_NAMES.has(name)) {
+      throw new Error(
+        `Relationship completeness manifest has unexpected release input ${name}`,
+      );
+    }
     if (releasePins.has(name)) {
       throw new Error(
         `Relationship completeness manifest has duplicate release input ${name}`,
@@ -672,7 +706,29 @@ function assertCompletenessReleaseSnapshot(
       ),
     });
   }
-  for (const name of COMPLETENESS_RELEASE_INPUT_FILES) {
+  const expectedReleaseInputFiles = existsSync(
+    join(releaseDir, "route_identity_snapshot.json"),
+  )
+    ? ROUTE_IDENTITY_COMPLETENESS_RELEASE_INPUT_FILES
+    : LEGACY_COMPLETENESS_RELEASE_INPUT_FILES;
+  if (releasePins.size !== expectedReleaseInputFiles.length) {
+    throw new Error(
+      "Relationship completeness manifest does not pin the exact producer input file set",
+    );
+  }
+  const finalManifestPath = join(releaseDir, "manifest.json");
+  const finalManifest = existsSync(finalManifestPath)
+    ? object(JSON.parse(readFileSync(finalManifestPath, "utf8")) as unknown, "release_manifest")
+    : undefined;
+  if (finalManifest && finalManifest.release_id !== manifest.release_id) {
+    throw new Error(
+      "Relationship completeness release ID does not match the final release manifest",
+    );
+  }
+  const finalManifestFiles = finalManifest
+    ? object(finalManifest.files, "release_manifest.files")
+    : undefined;
+  for (const name of expectedReleaseInputFiles) {
     const pin = releasePins.get(name);
     if (!pin) {
       throw new Error(
@@ -693,6 +749,14 @@ function assertCompletenessReleaseSnapshot(
       throw new Error(
         `Relationship completeness input ${name} does not match the exported release snapshot`,
       );
+    }
+    if (finalManifestFiles) {
+      const manifestPin = object(finalManifestFiles[name], `release_manifest.files.${name}`);
+      if (manifestPin.bytes !== pin.bytes || manifestPin.sha256 !== pin.sha256) {
+        throw new Error(
+          `Relationship completeness input ${name} does not match the final release manifest`,
+        );
+      }
     }
   }
 }

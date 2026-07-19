@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "contract_id": "relationship-reference-contract-v1",
+  "generated_at": "2026-07-16",
+  "generated_by": "codex-payload-reference-integrity-campaign",
+  "projected_corpus_sha256": "f481d671857f536941ca32fb0f06526684fd71ed007f6c5703e902259e357619",
+  "projected_record_count": 85411,
+  "evidence_block_index_sha256": "d6f1f4ad222fc0f7a7b3147d52d89b923f9ce3fef4ffc6caddc8a810e0cc219f",
+  "evidence_block_index_entry_count": 55187,
+  "contract_sha256": "dcf8c5559598dc7e1a8f6b71f9baf1c3d1dc43e53904d48421a3fc22a1fac789",
+  "review_ledger_sha256": "c3f3545ced15c8f637469097eeb08db1ff8cd9c52a1c897d3b0ff8aadfa5f102",
+  "review_ledger_row_count": 883,
+  "warning_summary_sha256": "30e203701d3bd96dd0e891e9ab2b417d84f19d0922bce36d5bc51b1a834d1611",
+  "enforcement_summary_sha256": "30e203701d3bd96dd0e891e9ab2b417d84f19d0922bce36d5bc51b1a834d1611",
+  "artifacts": [
+    {
+      "path": "data/quality/relationship-integrity/payload-references/coverage.json",
+      "sha256": "13ed126a693b79f769fc19496d285c2715a3d3c1cbc099c1c652f79639d488d4"
+    },
+    {
+      "path": "data/quality/relationship-integrity/payload-references/findings-enforcement.jsonl",
+      "sha256": "f1caa0f55eb073c9b1b2c244d29a563f8069274acb0db352fae0d98a60113f80",
+      "rows": 8558
+    },
+    {
+      "path": "data/quality/relationship-integrity/payload-references/findings-warning.jsonl",
+      "sha256": "f1caa0f55eb073c9b1b2c244d29a563f8069274acb0db352fae0d98a60113f80",
+      "rows": 8558
+    },
+    {
+      "path": "data/quality/relationship-integrity/payload-references/group-inventory.jsonl",
+      "sha256": "244daec3094a1accbc94b896b9a31acb89d950a397dbe1c5a3debf34d3653506",
+      "rows": 883
+    },
+    {
+      "path": "data/quality/relationship-integrity/payload-references/investigations.jsonl",
+      "sha256": "eed6c023fc04a341b9ad7716693c08cc35687748744991b0a6e32b94042dec40",
+      "rows": 883
+    },
+    {
+      "path": "data/quality/relationship-integrity/payload-references/proposed-remediations.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 0
+    },
+    {
+      "path": "data/quality/relationship-integrity/payload-references/reference-audit.jsonl",
+      "sha256": "5a25d4224ccf985f4eb480f8b1f60273b89f76dac064efda2253108e0e187ec3",
+      "rows": 14670
+    },
+    {
+      "path": "data/quality/relationship-integrity/payload-references/report.md",
+      "sha256": "2e27c0cd0a459a081332a08a6e23dcd7461d58bb24a09727c0b3f557e3f88cbe"
+    },
+    {
+      "path": "data/quality/relationship-integrity/payload-references/reviewed-unsupported.jsonl",
+      "sha256": "3bf06626df5461308928075d6e80a65f1a34bd57e7511ee99088a0c246800c7d",
+      "rows": 873
+    },
+    {
+      "path": "data/quality/relationship-integrity/payload-references/summary.json",
+      "sha256": "546122fd4f09035b4fe9b2dbe5e8fff81028d355a1f1f35aba0536d172cb2234"
+    }
+  ],
+  "reproduction_commands": [
+    "bun scripts/audit-relationship-payload-references-v1.ts --check",
+    "bun run typecheck",
+    "bun test packages/pipeline/test/quality/relationship-reference-audit.test.ts"
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "artifact_kind": "mta_wiki_operational_integrity_exact_route_completion_receipt",
+  "schema_version": 1,
+  "release_date": "2026-07-18",
+  "completion_date": "2026-07-19",
+  "authorization": {
+    "hash_semantics": "integrity_receipts_not_approval_gates",
+    "route_namespace_policy": "shared-nyct-route-namespace-v1",
+    "shared_nyct_route_namespace_model": "owner_accepted",
+    "service_identity": "immutable dataset namespace plus exact case-sensitive source_route_id",
+    "proposal_digest_semantics": "unapproved_at_generation; separate owner acceptance is authoritative and no SHA approval gate exists"
+  },
+  "runbooks": {
+    "plan_034_external_sha256": "836f4c9817b2fbbf07f7e0e4b5b70b3e032266c2dec17e45163e90da8cfe192e",
+    "plan_035_external_sha256": "8eb7547d10fc0a21f2f8769d1e0d6f00059364f732fafaa1a2e5e42c9939396f",
+    "plan_035_planning_audit_commit": "d40ee4b62c069f2d8df131a18fe1a71bab9cdbbf",
+    "plans_026_033_evidence": "docs/operational-integrity-plan-reconciliation.md"
+  },
+  "producer": {
+    "base_commit": "299752f2e9c7696296b29b1bcefbb5f454cb1699",
+    "branch": "codex/exact-current-route-identities",
+    "implementation_commit": "4cc70eca9eabed988be551767ea1fb8864ba3856",
+    "release_artifact_commit": "858ae014f48ee29d63cbbaa8118ed42f8f7c0c33",
+    "pull_request": {
+      "number": 3,
+      "url": "https://github.com/mannyc2/mta-wiki/pull/3",
+      "draft": false,
+      "initial_head_commit": "858ae014f48ee29d63cbbaa8118ed42f8f7c0c33",
+      "state_at_receipt_generation": "open",
+      "merge_status_at_receipt_generation": "not_merged_pending_final_completion_commit_and_required_checks"
+    },
+    "release": {
+      "addressed_file_count": 258,
+      "complete_file_count": 259,
+      "generator_commit": "4cc70eca9eabed988be551767ea1fb8864ba3856",
+      "manifest_sha256": "fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d",
+      "manifest_version": 5,
+      "path": "data/exports/releases/v1-rc24",
+      "record_count": 85392,
+      "release_id": "v1-rc24"
+    },
+    "deterministic_reproduction": {
+      "byte_comparison": "identical",
+      "complete_sha_tree_path": "data/quality/v1-rc24/release-tree.sha256",
+      "complete_sha_tree_sha256": "8f0179ed513c2f9f000b9b06ee7018a305ccb44846aecb4190e0899d4c2ec5af",
+      "file_sha_row_count": 259,
+      "independent_output_root_export": "verified",
+      "recursive_diff": "identical",
+      "topology_entry_count": 323,
+      "topology_path": "data/quality/v1-rc24/release-topology.txt",
+      "topology_sha256": "b8e104765bb53a9b542d21cba8e08c38c31b412db144a7edace51f32bb16306e"
+    },
+    "route_identity": {
+      "acceptance_receipt_sha256": "2655022038d6f72c44ce8c76ac75887a880510f34779835ca0ee6d4c98d376e6",
+      "acquisition_receipt_path": "data/reference/gtfs/snapshots/mta-bus-2026-07-18-route-provenance-v1/receipt.json",
+      "acquisition_receipt_sha256": "1f2413e23d58a2c630a3dcff33e049c831e24a41133b5966a1375e0109e8b9ac",
+      "captured_at": "2026-07-18T18:05:27Z",
+      "catalog_effective_as_of_date": "2026-07-18",
+      "catalog_identity_count": 386,
+      "catalog_only_count": 11,
+      "component_feed_count": 6,
+      "current_bus_routes_artifact_sha256": "d0147d9bb26dd142fb2cb325c32d30284bc5207853be2638e77723ef695b69d4",
+      "gtfs_only_count": 24,
+      "gtfs_snapshot_manifest_sha256": "aee23d3178f1ae6040b5687a76d156f01f89530b807f8b9865f22fca1c9c09c9",
+      "gtfs_snapshot_output_count": 8,
+      "proposal_digest_approval_status": "unapproved_at_generation",
+      "proposal_digest_exact_binding_count": 249,
+      "proposal_digest_review_required_count": 146,
+      "proposal_digest_sha256": "778bb163f9fdf2c807112503d8f7b4361081fd884f442296cb3b95e9e668e3de",
+      "proposed_bindings_sha256": "6192662308c2b9b32585b21148c756ba2c47d861500aeaaf24b27f2bcec6f8fa",
+      "record_binding_count": 395,
+      "record_binding_closure": {
+        "aggregate_context_count": 10,
+        "current_description_exact_service_nonprojectable_count": 8,
+        "current_ineligible_decision_kind_count": 6,
+        "exact_service_count": 299,
+        "explicit_reviewed_unresolved_disposition_count": 81,
+        "family_context_count": 5,
+        "nonprojectable_count": 121,
+        "presentation_primary_cardinality_error_count": 0,
+        "presentation_primary_count": 274,
+        "projectable_count": 274,
+        "source_collision_count": 0,
+        "undetermined_service_class_count": 0,
+        "undetermined_temporal_scope_count": 0,
+        "undisposed_or_unreviewed_count": 0
+      },
+      "record_bindings_canonical_sha256": "b56a34f156a46b3dee9fff7e0bd802fc90d9674f94a5b11d25b0f137af9aefb5",
+      "record_bindings_file_sha256": "7529ffb50f3ce9556114b3f0022208f8c3bd1eea0c4849f926bea4d5a1480610",
+      "reviewed_decision_count": 156,
+      "reviewed_decision_file_sha256": "20f7b5cfec53a8d1d3213273e3239a02197c50adeb99511ab741d6f694b670c6",
+      "review_packet_sha256": "ec55350be1aa506ba04ccd25b4f411d78f02fcb117de50fcaa6364c6920fa1c5",
+      "route_anchor_count": 520,
+      "route_anchors_sha256": "aaf8bb1532587c2aea188a7f7cc84a358b5a0a49106a07282fd6c5d05cfdc222",
+      "route_identity_snapshot_sha256": "47d5976ce87cc00069e68909df38a2bfeffa1374edb3991f038b483fb013b586",
+      "service_window_end": "2026-07-18",
+      "service_window_start": "2026-07-12",
+      "service_identity_count": 399,
+      "service_identities_sha256": "53d2007cdedd0f2468f34dddd932b4f9b8bda75daa42b7b2d00ab2a5b625d215",
+      "snapshot_id": "mta-bus-2026-07-18-route-provenance-v1",
+      "reliable_intervals": {
+        "mta-bus-company": "2026-06-28/2026-09-05",
+        "nyct-bronx": "2026-06-27/2026-09-05",
+        "nyct-brooklyn": "2026-06-27/2026-09-05",
+        "nyct-manhattan": "2026-06-27/2026-09-05",
+        "nyct-queens": "2026-06-27/2026-09-05",
+        "nyct-staten-island": "2026-06-28/2026-09-05"
+      }
+    },
+    "contracts": {
+      "operational_anchor_review_decisions": 2,
+      "operational_anchors": 1,
+      "operational_occurrence_review_decisions": 2,
+      "operational_occurrences": 2,
+      "relationship_integrity_bundle": 1,
+      "route_anchors": 1,
+      "route_identity_snapshot": 1
+    },
+    "payloads": {
+      "canonical_events_sha256": "a75c58f9c72c1e43b0ed69fe36e3e06b7ff7a1abc4890fa796321590b4b667c0",
+      "canonical_relations_sha256": "0dd596691bdd6e922b62aa254885c2413498ceb03ba8531d1e0445f8f1af6375",
+      "canonical_routes_sha256": "692dff6b8542bc92a01e75f4f2ec4ccd42149bff0d336f2597bf5bd9505e47ab",
+      "operational_anchor_count": 759,
+      "operational_anchor_review_sha256": "96b3c7f75769cb079e932ae9d7bf723dc2283b7a35c1b5d15b94a7e7b8009536",
+      "operational_anchors_sha256": "2a65e13ed16132b3f592008b1f31ba398f8a642390bdbea23778d942b8b3a256",
+      "operational_occurrence_count": 131,
+      "operational_occurrence_review_sha256": "9ffd29bfa76474cb5d931a9859b0115430dcc5b59099c84127f8797293004ec7",
+      "operational_occurrences_sha256": "1650ca9ef02e723c694baaf4685596a36ed0eb9e1447b46313397d92adcd8bcc",
+      "occurrence_identity_registry_sha256": "f0a63cb5a068857c7c6c5e02b01577431f9b537a12ef3754919e4ffdb2167d80",
+      "relationship_completeness_input_fingerprint": "6ca4277b7e6d5db990f0ebba3eaf1c298f546f879326ec0c4dbdd1aa43806a8c",
+      "relationship_completeness_summary_sha256": "c52f20d9302a0c312a0b10c237f1ea5c1fee7a3460c76aba23f79cc3f7d7c98b",
+      "relationship_contract_enforcement_proof_digest": "71717781b0a65dbfc810496778a80fb729b81228616aded2c65e47d40e12ca21",
+      "relationship_enforcement_proof_file_sha256": "aa8ae84e42629708838df73ae01535d0a801ff97f7d51f19c611f3910eb9b09b",
+      "relationship_bundle_artifact_count": 227,
+      "relationship_integrity_bundle_sha256": "3557e8ae0255ea26c94473837d0409c9e43260af3a60680bb6ed946e6d154cb7",
+      "relationship_release_bundle_sources_sha256": "09240a09058c9e7ad6d26cd43e57f2333da51a1a3075576163af4a7d02b3e175",
+      "study_projection_eligible_count": 130
+    },
+    "materialization": {
+      "canonical_record_count": 85392,
+      "determinism_combined_sha256": "7ecb0f8f6cf6369c8ea214fa18288025bb3796866c46772614bf6564314dd288",
+      "determinism_dump_sha256": "512bdf3326b3530cea8ed9a399ecfae56668814aba84b43d87b00cbbbb988f6f",
+      "determinism_fts_sha256": "17ce8b6f281614e690f1c154d0fc00d6280ef3bb1bd2d04de2709701aa7b66ef",
+      "determinism_master_sha256": "f99ff2cd3004d2f6a1203e6ba03f0be439a25884019ca204684f9e3b6fe3cd5d",
+      "relation_edge_count": 21422,
+      "skipped_record_count": 0
+    },
+    "quality": {
+      "evidence_reference_count": 134070,
+      "evidence_reference_resolved_count": 134070,
+      "path": "data/quality/v1-rc24/deterministic.json",
+      "sha256": "3e6b48f571bc2da4c7f24ba6e3687998219e0e32b5a745a8a429f2794934b573",
+      "validation_issues": 0
+    },
+    "gates": {
+      "full_test": {
+        "failed": 0,
+        "passed": 1560,
+        "skipped": 1,
+        "status": "passed"
+      },
+      "materialize": "passed",
+      "named_release_verifier": "passed",
+      "quality_report_check": "passed",
+      "selected_snapshot_verifier": "passed_399_routes",
+      "typecheck": "passed",
+      "validate": "passed_issues_0"
+    }
+  },
+  "release_delta": {
+    "canonical_events_changed_from_v1_rc23": false,
+    "canonical_relations_changed_from_v1_rc23": false,
+    "canonical_routes_changed_from_v1_rc23": false,
+    "operational_occurrence_bytes_changed_from_v1_rc23": true,
+    "operational_occurrence_changed_id": "occurrence:09a7c0cfcac97e1a2651695b",
+    "operational_occurrence_removed_ids": [
+      "occurrence:934b8066ac790c3820f764d1",
+      "occurrence:9d9f23af3933cda5d4dc1abd",
+      "occurrence:c5e9aba290ca2be1be6fb38e",
+      "occurrence:ddb7be06c9eb2b6292ef86c9"
+    ]
+  },
+  "quarantine": {
+    "v1_rc22": {
+      "manifest_sha256": "249ef6be1d927e44d405c11bcff643d18b2133e5407be37dc7612f935a1b53e4",
+      "reason_code": "contract_payload_strict_decode_failed",
+      "replacement_release_id": "v1-rc23",
+      "status": "quarantined"
+    },
+    "v1_rc23": {
+      "manifest_sha256": "e412b0b7a3e98e87e43c8b59375f335c1c0bd84ab4024171ec6c45203f1da83b",
+      "reason_code": "ROUTE_IDENTITY_RC23_B44_PLUS_UNCOVERED",
+      "replacement_release_id": "v1-rc24",
+      "status": "quarantined"
+    }
+  },
+  "tracker": {
+    "status": "complete",
+    "repository": "mannyc2/bus-priority-impact-studio",
+    "worktree": "/home/cjpher/.codex/visualizations/2026/07/18/019f7640-fd5c-7be2-8a40-a7c264284c0f/tracker-plan035",
+    "initial_branch": "codex/mta-wiki-route-identity-v1",
+    "initial_commits": [
+      "7f53631f2b4e50f3432b544cdecd37414508b38a",
+      "d3ca818ddb5adef575fbe883b2cf854e6ae5c187",
+      "f0498dc4bd61a887719742776077c89bd45d47a1",
+      "bcd3f0e47f0239cd28a3ce88622f7a834dd2e024"
+    ],
+    "feature_tree_sha": "8463be3478d281946abf1a4e049bd90ee289ad7c",
+    "initial_pull_request": {
+      "number": 65,
+      "url": "https://github.com/mannyc2/bus-priority-impact-studio/pull/65",
+      "draft": false,
+      "head_sha": "bcd3f0e47f0239cd28a3ce88622f7a834dd2e024",
+      "state": "merged",
+      "merge_method": "merge_commit",
+      "merge_commit": "c9c92c20479ba52d21d24fcfb1e5c68e37c82b49",
+      "merged_at": "2026-07-19T00:38:01Z"
+    },
+    "closure": {
+      "branch": "codex/mta-wiki-route-identity-closure",
+      "base_commit": "c9c92c20479ba52d21d24fcfb1e5c68e37c82b49",
+      "commits": [
+        "4d0988e7dab0163e0a0f0758979327526ce94112",
+        "83a6a7441ef78ff3aa884f312f8593a84c7a3e6a",
+        "1741cf2f86a522d0c423ae57c9481b74c1438636",
+        "2f662aa8410f1faabd7c1ce24b3c973396790640",
+        "0095126a0558dcafc121d1cc2f4a05c43bff2927",
+        "a02f94480edb6200cf568154a201f741dc93adeb",
+        "cc865ca17b614de680f70fa94cf13255f0e52e58"
+      ],
+      "head_commit": "cc865ca17b614de680f70fa94cf13255f0e52e58",
+      "pull_request": {
+        "number": 66,
+        "url": "https://github.com/mannyc2/bus-priority-impact-studio/pull/66",
+        "draft": false,
+        "state": "merged",
+        "merge_method": "merge_commit",
+        "merge_commit": "12acf2787737bc65c331ce098614e585a20c9d05",
+        "merged_at": "2026-07-19T02:21:50Z"
+      },
+      "fixture_generation": {
+        "generator_commit": "0095126a0558dcafc121d1cc2f4a05c43bff2927",
+        "receipt_path": "docs/research/artifacts/mta-wiki-v1-rc24-route-fixture-receipt.json",
+        "receipt_bytes": 4402,
+        "receipt_sha256": "df0041567fe883e2f2e7ff38dd3e32313a25f266da4d0dfe19a32e5a132c8dde",
+        "output_bytes": 425573,
+        "output_count": 375,
+        "output_sha256": "4994963c748a27283b837c1ec08b82ffae7fa2099ae360c611d9a7be32002290",
+        "fresh_generation_count": 2,
+        "fresh_generation_comparison": "byte_exact",
+        "verified_addressed_manifest_file_count": 258,
+        "verified_complete_release_file_count": 259,
+        "verified_service_identity_count": 399,
+        "verified_record_binding_count": 395,
+        "verified_projectable_binding_count": 274,
+        "verified_nonprojectable_binding_count": 121,
+        "verified_route_anchor_count": 520,
+        "legacy_contrast_used_as_input": false
+      },
+      "independent_audit": {
+        "status": "clean",
+        "prior_finding_count": 5,
+        "remaining_finding_count": 0,
+        "audited_head": "cc865ca17b614de680f70fa94cf13255f0e52e58"
+      },
+      "gates": {
+        "targeted": "passed_83_tests_369_assertions_7_files",
+        "independent_targeted": "passed_76_tests_0_failures",
+        "check_types": "passed",
+        "check_style": "passed_0_errors_22_warnings_468_infos",
+        "check_architecture": "passed_22_tests",
+        "check_doctrine": "passed_5_tests",
+        "check_claude_config": "passed_7_required_files",
+        "full_check_unit": "passed_777_tests_17084_assertions_167_files",
+        "full_check_web": "passed_207_tests_660_assertions_37_files",
+        "full_check_worker": "passed_22_tests_3_files",
+        "github_ci_run": 29670024444,
+        "github_ci_job": "verify_success",
+        "github_deploy_job": "skipped",
+        "git_diff_check": "passed",
+        "worktree": "clean",
+        "local_remote_head_match": true
+      }
+    },
+    "contracts": {
+      "manifest": 5,
+      "operational_anchor_review": 2,
+      "operational_occurrence_review": 2,
+      "operational_occurrences": 2,
+      "route_identity_snapshot": 1,
+      "route_anchors": 1,
+      "route_evidence": 2,
+      "candidate_set": 3,
+      "review_worksheet": 3,
+      "route_index": 3
+    },
+    "inputs": {
+      "final_replay_root": "/tmp/tracker-rc24-final-replay.PadOJj",
+      "producer_release_path": "/home/cjpher/.codex/worktrees/8afe/mta-wiki/data/exports/releases/v1-rc24",
+      "producer_manifest_sha256": "fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d",
+      "current_bus_routes_path": "/tmp/plan035-inputs/current_bus_routes.json",
+      "current_bus_routes_sha256": "d0147d9bb26dd142fb2cb325c32d30284bc5207853be2638e77723ef695b69d4",
+      "current_bus_routes_effective_as_of_date": "2026-07-18",
+      "tracker_route_source_path": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/studio/v1/routes.json",
+      "tracker_route_source_sha256": "8fa238d0b5d813244ef1fcf64ade28051d11eb4b3e8c55fec9500ce0a614e56f",
+      "tracker_route_source_used_as_input": false,
+      "durable_fixture_receipt_path": "docs/research/artifacts/mta-wiki-v1-rc24-route-fixture-receipt.json",
+      "durable_fixture_receipt_sha256": "df0041567fe883e2f2e7ff38dd3e32313a25f266da4d0dfe19a32e5a132c8dde",
+      "exact_route_fixture_path": "/tmp/tracker-rc24-final-replay.PadOJj/routes.json",
+      "exact_route_fixture_sha256": "4994963c748a27283b837c1ec08b82ffae7fa2099ae360c611d9a7be32002290",
+      "exact_route_fixture_count": 375,
+      "read_only_database_path": "/mnt/models/dev/bus-reliability-tracker/data/local/pipeline.sqlite",
+      "read_only_database_bytes": 181824405504,
+      "read_only_database_mtime_epoch": 1783866285,
+      "read_only_database_ctime_epoch": 1783866285,
+      "read_only_database_stat_comparison": "unchanged"
+    },
+    "route_replay": {
+      "named_command": "bun run pipeline studio import-mta-wiki-route-evidence --mta-wiki-root /home/cjpher/.codex/worktrees/8afe/mta-wiki --wiki-release v1-rc24 --wiki-manifest-sha256 fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d --current-bus-routes-path /tmp/plan035-inputs/current_bus_routes.json --current-bus-routes-sha256 d0147d9bb26dd142fb2cb325c32d30284bc5207853be2638e77723ef695b69d4 --current-bus-routes-effective-as-of-date 2026-07-18 --routes-path /tmp/tracker-rc24-final-replay.PadOJj/routes.json --routes-sha256 4994963c748a27283b837c1ec08b82ffae7fa2099ae360c611d9a7be32002290 --output /tmp/tracker-rc24-final-replay.PadOJj/named/route-evidence.json --serving-output-dir /tmp/tracker-rc24-final-replay.PadOJj/named/serving --generated-at 2026-07-18T18:05:27.000Z --write-serving-artifacts --min-matched-routes 274 --json",
+      "repeat_command": "bun run pipeline studio import-mta-wiki-route-evidence --mta-wiki-root /home/cjpher/.codex/worktrees/8afe/mta-wiki --wiki-release v1-rc24 --wiki-manifest-sha256 fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d --current-bus-routes-path /tmp/plan035-inputs/current_bus_routes.json --current-bus-routes-sha256 d0147d9bb26dd142fb2cb325c32d30284bc5207853be2638e77723ef695b69d4 --current-bus-routes-effective-as-of-date 2026-07-18 --routes-path /tmp/tracker-rc24-final-replay.PadOJj/routes.json --routes-sha256 4994963c748a27283b837c1ec08b82ffae7fa2099ae360c611d9a7be32002290 --output /tmp/tracker-rc24-final-replay.PadOJj/repeat/route-evidence.json --serving-output-dir /tmp/tracker-rc24-final-replay.PadOJj/repeat/serving --generated-at 2026-07-18T18:05:27.000Z --write-serving-artifacts --min-matched-routes 274 --json",
+      "route_count": 375,
+      "matched_wiki_route_count": 274,
+      "unmatched_wiki_record_count": 121,
+      "citation_count": 42210,
+      "omitted_ambiguous_record_count": 0,
+      "route_evidence_sha256": "896586cdbbe701ad7b8fe66f463bc91a4db64753b8472df9411abcaeaf73fe02",
+      "serving_index_sha256": "3740882ccff8ecc4685d0bc073b48088ffe4bf84fc672e6a01e1b3d9b297f9d1",
+      "file_count": 377,
+      "complete_sorted_sha_tree_sha256": "66c4e122a6ee7fabdd0b3a8d0dd6603b0cc9ba67e4db024dce272fe27b0296ed",
+      "named_repeat_comparison": "byte_exact"
+    },
+    "operational_replay": {
+      "named_anchor_command": "bun run pipeline studio import-mta-wiki-operational-anchors --mta-wiki-root /home/cjpher/.codex/worktrees/8afe/mta-wiki --wiki-release v1-rc24 --wiki-manifest-sha256 fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d --output /tmp/tracker-rc24-final-replay.PadOJj/operational-named/anchors.json --json",
+      "named_occurrence_command": "bun run pipeline studio import-mta-wiki-operational-occurrences --mta-wiki-root /home/cjpher/.codex/worktrees/8afe/mta-wiki --wiki-release v1-rc24 --wiki-manifest-sha256 fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d --output /tmp/tracker-rc24-final-replay.PadOJj/operational-named/occurrences.json --json",
+      "repeat_anchor_command": "bun run pipeline studio import-mta-wiki-operational-anchors --mta-wiki-root /home/cjpher/.codex/worktrees/8afe/mta-wiki --wiki-release v1-rc24 --wiki-manifest-sha256 fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d --output /tmp/tracker-rc24-final-replay.PadOJj/operational-repeat/anchors.json --json",
+      "repeat_occurrence_command": "bun run pipeline studio import-mta-wiki-operational-occurrences --mta-wiki-root /home/cjpher/.codex/worktrees/8afe/mta-wiki --wiki-release v1-rc24 --wiki-manifest-sha256 fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d --output /tmp/tracker-rc24-final-replay.PadOJj/operational-repeat/occurrences.json --json",
+      "anchor_import_sha256": "5a2c2e3fb8c1ee1194c6fb2d81dc5d8f54e9829f477c6af4d6bd1cd222989116",
+      "occurrence_import_sha256": "da472edfb2946499ca4238af48da8ffac138734bd97b4cd26f4d4fc80e812b53",
+      "combined_sorted_sha_tree_sha256": "34125a0b2f453a92828e92b871443f08ef91652595e03ef08d79cc8f09afe5d6",
+      "named_repeat_comparison": "byte_exact",
+      "anchor_source_count": 759,
+      "anchor_assertion_count": 746,
+      "anchor_eligible_count": 8,
+      "anchor_rejected_count": 738,
+      "anchor_conflict_count": 20,
+      "anchor_retired_count": 1,
+      "occurrence_source_count": 131,
+      "occurrence_eligible_count": 130,
+      "occurrence_route_projection_count": 167,
+      "occurrence_rejected_count": 1,
+      "relationship_artifacts_verified": "227/227"
+    },
+    "read_only_candidate_replay": {
+      "named_command": "bun run pipeline study merge-events --db /mnt/models/dev/bus-reliability-tracker/data/local/pipeline.sqlite --wiki-import /tmp/tracker-rc24-final-replay.PadOJj/operational-named/occurrences.json --output /tmp/tracker-rc24-final-replay.PadOJj/real-db-named/candidates.json --json",
+      "repeat_command": "bun run pipeline study merge-events --db /mnt/models/dev/bus-reliability-tracker/data/local/pipeline.sqlite --wiki-import /tmp/tracker-rc24-final-replay.PadOJj/operational-repeat/occurrences.json --output /tmp/tracker-rc24-final-replay.PadOJj/real-db-repeat/candidates.json --json",
+      "candidate_set_id": "candidate-set-v3:625f56d3154de06934c14aab",
+      "candidate_bytes_sha256": "581d02650a3a7a0df527bd52f3ecf1106562bd9483bd750da5e2d082cb9518c7",
+      "candidate_count": 486,
+      "source_rejection_count": 382,
+      "conflict_count": 0,
+      "exact_deduplication_count": 12,
+      "wiki_provenance_candidate_count": 97,
+      "wiki_only_candidate_count": 85,
+      "approval_state": "awaiting_approval",
+      "approval": null,
+      "approved_count": 0,
+      "named_repeat_comparison": "byte_exact"
+    },
+    "review_worksheet": {
+      "named_command": "bun run pipeline study prepare-review-worksheet --input /tmp/tracker-rc24-final-replay.PadOJj/real-db-named/candidates.json --output /tmp/tracker-rc24-final-replay.PadOJj/real-db-named/candidate-set-v3-625f56d3154de06934c14aab.review-worksheet.json --focus-occurrence-id occurrence:012a7db8f83a7369d830cfbe --focus-route-id Q27 --json",
+      "repeat_command": "bun run pipeline study prepare-review-worksheet --input /tmp/tracker-rc24-final-replay.PadOJj/real-db-repeat/candidates.json --output /tmp/tracker-rc24-final-replay.PadOJj/real-db-repeat/candidate-set-v3-625f56d3154de06934c14aab.review-worksheet.json --focus-occurrence-id occurrence:012a7db8f83a7369d830cfbe --focus-route-id Q27 --json",
+      "sha256": "22243d66f5c38f97608d059ad14b2b1763d7849c33077ad7b37f1b1b78026c96",
+      "generated_from": "<isolated-input>/candidates.json",
+      "named_repeat_comparison": "byte_exact",
+      "operator_decision_count": 0,
+      "review_state": "awaiting_review",
+      "approval": null,
+      "focus": {
+        "occurrence_id": "occurrence:012a7db8f83a7369d830cfbe",
+        "candidate_id": "study-event-v2:705b4a5bd5b25bc43976e676",
+        "route_id": "Q27",
+        "wiki_route_record_id": "route_q27-ace",
+        "implementation_date": "2025-06-29",
+        "decision": "REVIEW_REQUIRED",
+        "reviewer": "",
+        "rationale": ""
+      }
+    },
+    "identity_assertions": {
+      "exact_identity": "dataset namespace plus exact case-sensitive source_route_id",
+      "b44": {
+        "source_route_id": "B44",
+        "slug": "b44",
+        "display_label": "B44",
+        "route_family_id": "B44"
+      },
+      "b44_plus": {
+        "source_route_id": "B44+",
+        "slug": "b44-sbs",
+        "display_label": "B44-SBS",
+        "display_label_source": "current_bus_routes",
+        "route_family_id": "B44"
+      },
+      "identity_join_collapsed": false,
+      "display_label_synthesized": false
+    },
+    "gates": {
+      "focused_migration": "passed_222_tests_814_assertions_21_files",
+      "additional_serving_regressions": "passed_41_tests_197_assertions",
+      "check_types": "passed",
+      "check_architecture": "passed",
+      "check_knowledge": "passed",
+      "check_style": "passed_0_errors_22_warnings_466_infos",
+      "build": "passed_bundle_budget_green",
+      "full_check_unit": "passed_753_tests_16940_assertions_165_files",
+      "full_check_web": "passed_207_tests_660_assertions_37_files",
+      "full_check_worker": "passed_22_tests_3_files",
+      "github_ci_run": 29667215656,
+      "github_ci_job": "verify_success",
+      "github_deploy_job": "skipped",
+      "git_diff_check": "passed"
+    }
+  },
+  "execution_order_reconciliation": "v1-rc24 was cut only after producer verification; strict Tracker closure and pinned replays completed before rc23 replacement and program completion",
+  "protected_state": {
+    "immutable_spec_sha256": "3dcaff1f08287c58a069584029cb156f7f57ecc7af2f0e2715776aef0de52d99",
+    "latest_bytes": "v1-rc5\n",
+    "latest_hex": "76312d7263350a",
+    "latest_sha256": "d44b4b97597938d1953f7707b8d576a13537aaebafd0af19ad4d0e5365040d72",
+    "preexisting_immutable_file_count": 845,
+    "preexisting_immutable_sha_tree_sha256": "2f13a3178de70c4e2fabf299537d3c844f1b28ef4e9c0e2029d05b3a0662fec1",
+    "preexisting_immutable_tree_comparison": "identical"
+  },
+  "non_actions": {
+    "deployment_performed": false,
+    "latest_changed": false,
+    "pages_changed": false,
+    "production_promoted": false,
+    "release_publication_performed": false,
+    "tracker_candidate_approvals_changed": false
+  }
+}

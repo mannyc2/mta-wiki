@@ -1,9 +1,18 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
-import { basename, join, relative } from "node:path";
+import { basename, join, relative, resolve } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
 import type { OperationalAnchorReviewDecision } from "@mta-wiki/pipeline/materialize/operational-anchor-review";
+import {
+  applyOperationalOccurrenceReviewRetirements,
+  loadOperationalProjectionRetirements,
+  parseOperationalOccurrenceReviewRetirementProjectionV1,
+  projectOperationalOccurrenceReviewRetirements,
+  type LoadedOperationalProjectionRetirementV1,
+  type OperationalOccurrenceReviewRetirementProjectionV1,
+  type OperationalProjectionRetirementV1,
+} from "@mta-wiki/pipeline/materialize/operational-projection-retirements";
 import {
   parseOperationalOccurrence,
   assertOperationalOccurrenceCanonicalIntegrity,
@@ -24,6 +33,7 @@ function hasProjectionProof(proof: OperationalOccurrenceV2ReviewProjectionProof 
 
 export const OPERATIONAL_OCCURRENCE_REVIEW_SCHEMA_VERSION = 1 as const;
 export const OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION = 1 as const;
+export const OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_V2_VERSION = 2 as const;
 
 export const OPERATIONAL_OCCURRENCE_REVIEW_V1_EVIDENCE_ROLES = [
   "bundle_analysis_family", "event_date", "route_identity", "route_scope",
@@ -125,12 +135,27 @@ export type OperationalOccurrenceReviewDecision = {
   rationale: string;
 };
 
-export type OperationalOccurrenceReviewSnapshot = {
+export type OperationalOccurrenceReviewSnapshotV1 = {
   snapshot_version: typeof OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION;
   decision_schema_version: typeof OPERATIONAL_OCCURRENCE_REVIEW_SCHEMA_VERSION;
   decision_count: number;
   decisions: OperationalOccurrenceReviewDecision[];
 };
+
+export type OperationalOccurrenceReviewSnapshotV2 = {
+  snapshot_version: typeof OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_V2_VERSION;
+  decision_schema_version: typeof OPERATIONAL_OCCURRENCE_REVIEW_SCHEMA_VERSION;
+  source_decision_count: number;
+  decision_count: number;
+  decisions: OperationalOccurrenceReviewDecision[];
+  retirement_schema_version: 1;
+  retirement_count: number;
+  retirements: OperationalOccurrenceReviewRetirementProjectionV1[];
+};
+
+export type OperationalOccurrenceReviewSnapshot =
+  | OperationalOccurrenceReviewSnapshotV1
+  | OperationalOccurrenceReviewSnapshotV2;
 
 const acceptedDecisionFields = new Set([
   "accepted_at",
@@ -358,14 +383,20 @@ export function operationalOccurrenceReviewAcceptedDir(rootDir = repoRoot): stri
 
 export function loadOperationalOccurrenceAcceptedDecisions(
   dir = operationalOccurrenceReviewAcceptedDir(),
+  options: {
+    rootDir?: string | undefined;
+    includeRetired?: boolean | undefined;
+    retirements?: readonly OperationalProjectionRetirementV1[] | undefined;
+  } = {},
 ): OperationalOccurrenceAcceptedDecision[] {
   if (!existsSync(dir)) return [];
-  return readdirSync(dir)
+  const rootDir = options.rootDir ?? repoRoot;
+  const decisions = readdirSync(dir)
     .filter((name) => name.endsWith(".json"))
     .sort((left, right) => left.localeCompare(right))
     .map((name) => {
       const path = join(dir, name);
-      const artifactPath = relative(repoRoot, path).split("/").join("/");
+      const artifactPath = relative(rootDir, path).split("/").join("/");
       let value: unknown;
       try {
         value = JSON.parse(readFileSync(path, "utf8")) as unknown;
@@ -378,6 +409,12 @@ export function loadOperationalOccurrenceAcceptedDecisions(
       }
       return { ...decision, artifact_path: artifactPath };
     });
+  if (options.includeRetired) return decisions;
+  const shouldApplyDefaultRetirements =
+    resolve(dir) === resolve(operationalOccurrenceReviewAcceptedDir(rootDir));
+  if (!shouldApplyDefaultRetirements && options.retirements === undefined) return decisions;
+  const retirements = options.retirements ?? loadOperationalProjectionRetirements(rootDir);
+  return applyOperationalOccurrenceReviewRetirements(decisions, retirements);
 }
 
 function projectReviewV1Binding(binding: OperationalOccurrenceEvidenceBinding, path: string, omitV2 = false): OperationalOccurrenceReviewV1EvidenceBinding | null {
@@ -556,24 +593,40 @@ export function assertOperationalOccurrenceReviewDecisions(
 
 export function operationalOccurrenceReviewSnapshot(
   decisions: readonly OperationalOccurrenceReviewDecision[],
+  retirements: readonly LoadedOperationalProjectionRetirementV1[] = [],
 ): OperationalOccurrenceReviewSnapshot {
   const sorted = [...decisions].sort((left, right) => left.decision_id.localeCompare(right.decision_id));
-  return {
+  if (retirements.length === 0) return {
     snapshot_version: OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION,
     decision_schema_version: OPERATIONAL_OCCURRENCE_REVIEW_SCHEMA_VERSION,
     decision_count: sorted.length,
     decisions: sorted,
   };
+  const projectedRetirements = projectOperationalOccurrenceReviewRetirements(retirements);
+  return {
+    snapshot_version: OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_V2_VERSION,
+    decision_schema_version: OPERATIONAL_OCCURRENCE_REVIEW_SCHEMA_VERSION,
+    source_decision_count: sorted.length + projectedRetirements.length,
+    decision_count: sorted.length,
+    decisions: sorted,
+    retirement_schema_version: 1,
+    retirement_count: projectedRetirements.length,
+    retirements: projectedRetirements,
+  };
 }
 
 export function operationalOccurrenceReviewSnapshotJson(
   decisions: readonly OperationalOccurrenceReviewDecision[],
+  retirements: readonly LoadedOperationalProjectionRetirementV1[] = [],
 ): string {
-  const json = `${stableJson(operationalOccurrenceReviewSnapshot(decisions) as unknown as JsonValue)}\n`;
+  const json = `${stableJson(operationalOccurrenceReviewSnapshot(decisions, retirements) as unknown as JsonValue)}\n`;
   try {
     parseOperationalOccurrenceReviewSnapshot(JSON.parse(json) as unknown);
   } catch (error) {
-    throw new Error(`operational occurrence review snapshot v${OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION} encode/decode failed: ${error instanceof Error ? error.message : String(error)}`);
+    const version = retirements.length === 0
+      ? OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION
+      : OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_V2_VERSION;
+    throw new Error(`operational occurrence review snapshot v${version} encode/decode failed: ${error instanceof Error ? error.message : String(error)}`);
   }
   return json;
 }
@@ -583,13 +636,19 @@ export function parseOperationalOccurrenceReviewSnapshot(value: unknown): Operat
     throw new Error("operational occurrence review snapshot must be an object");
   }
   const object = value as Record<string, unknown>;
+  const snapshotVersion = object.snapshot_version;
+  if (snapshotVersion !== 1 && snapshotVersion !== 2) {
+    throw new Error("operational occurrence review snapshot.snapshot_version must be 1 or 2");
+  }
   const extras = Object.keys(object)
-    .filter((field) => !new Set(["decision_count", "decision_schema_version", "decisions", "snapshot_version"]).has(field))
+    .filter((field) => !new Set(snapshotVersion === 1
+      ? ["decision_count", "decision_schema_version", "decisions", "snapshot_version"]
+      : [
+          "decision_count", "decision_schema_version", "decisions", "retirement_count",
+          "retirement_schema_version", "retirements", "snapshot_version", "source_decision_count",
+        ]).has(field))
     .sort();
   if (extras.length > 0) throw new Error(`operational occurrence review snapshot has unknown field(s): ${extras.join(", ")}`);
-  if (object.snapshot_version !== OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION) {
-    throw new Error("operational occurrence review snapshot.snapshot_version must be 1");
-  }
   if (object.decision_schema_version !== OPERATIONAL_OCCURRENCE_REVIEW_SCHEMA_VERSION) {
     throw new Error("operational occurrence review snapshot.decision_schema_version must be 1");
   }
@@ -690,11 +749,60 @@ export function parseOperationalOccurrenceReviewSnapshot(value: unknown): Operat
       rationale: acceptedString(decision.rationale, `${path}.rationale`),
     };
   });
+  const decisionIds = decisions.map((decision) => decision.decision_id);
+  if (new Set(decisionIds).size !== decisions.length) {
+    throw new Error("operational occurrence review snapshot has duplicate decision_id");
+  }
+  if (decisionIds.join("\n") !== [...decisionIds].sort().join("\n")) {
+    throw new Error("operational occurrence review snapshot decisions must be sorted by decision_id");
+  }
+  if (snapshotVersion === 1) {
+    return {
+      snapshot_version: OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION,
+      decision_schema_version: OPERATIONAL_OCCURRENCE_REVIEW_SCHEMA_VERSION,
+      decision_count: decisions.length,
+      decisions,
+    };
+  }
+  if (object.retirement_schema_version !== 1) {
+    throw new Error("operational occurrence review snapshot.retirement_schema_version must be 1");
+  }
+  if (!Array.isArray(object.retirements)) {
+    throw new Error("operational occurrence review snapshot.retirements must be an array");
+  }
+  if (!Number.isInteger(object.retirement_count) || object.retirement_count !== object.retirements.length) {
+    throw new Error("operational occurrence review snapshot.retirement_count must equal retirements length");
+  }
+  const retirements = object.retirements.map((entry, index) =>
+    parseOperationalOccurrenceReviewRetirementProjectionV1(
+      entry,
+      `operational occurrence review snapshot.retirements[${index}]`,
+    ));
+  const retiredDecisionIds = retirements.map((entry) => entry.target.decision_id);
+  if (
+    new Set(retiredDecisionIds).size !== retiredDecisionIds.length ||
+    retiredDecisionIds.join("\n") !== [...retiredDecisionIds].sort().join("\n")
+  ) {
+    throw new Error("operational occurrence review snapshot retirements must be sorted and unique by decision_id");
+  }
+  if (retiredDecisionIds.some((decisionId) => decisions.some((decision) => decision.decision_id === decisionId))) {
+    throw new Error("operational occurrence review snapshot active and retired decisions must be disjoint");
+  }
+  if (
+    !Number.isInteger(object.source_decision_count) ||
+    object.source_decision_count !== decisions.length + retirements.length
+  ) {
+    throw new Error("operational occurrence review snapshot.source_decision_count must equal active plus retired decisions");
+  }
   return {
-    snapshot_version: OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION,
-    decision_schema_version: OPERATIONAL_OCCURRENCE_REVIEW_SCHEMA_VERSION,
+    snapshot_version: 2,
+    decision_schema_version: 1,
+    source_decision_count: decisions.length + retirements.length,
     decision_count: decisions.length,
     decisions,
+    retirement_schema_version: 1,
+    retirement_count: retirements.length,
+    retirements,
   };
 }
 

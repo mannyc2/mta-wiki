@@ -1,11 +1,21 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
-import { basename, join, relative } from "node:path";
+import { basename, join, relative, resolve } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
+import {
+  applyOperationalAnchorReviewRetirements,
+  loadOperationalProjectionRetirements,
+  parseOperationalAnchorReviewRetirementProjectionV1,
+  projectOperationalAnchorReviewRetirements,
+  type LoadedOperationalProjectionRetirementV1,
+  type OperationalAnchorReviewRetirementProjectionV1,
+  type OperationalProjectionRetirementV1,
+} from "@mta-wiki/pipeline/materialize/operational-projection-retirements";
 
 export const OPERATIONAL_ANCHOR_REVIEW_SCHEMA_VERSION = 1 as const;
 export const OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION = 1 as const;
+export const OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_V2_VERSION = 2 as const;
 
 export type OperationalAnchorReviewEvidenceRole =
   | "event_date"
@@ -46,12 +56,27 @@ export type OperationalAnchorReviewDecision = {
 
 export type OperationalAnchorReviewSnapshotDecision = Omit<OperationalAnchorReviewDecision, "artifact_path">;
 
-export type OperationalAnchorReviewSnapshot = {
+export type OperationalAnchorReviewSnapshotV1 = {
   snapshot_version: typeof OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION;
   decision_schema_version: typeof OPERATIONAL_ANCHOR_REVIEW_SCHEMA_VERSION;
   decision_count: number;
   decisions: OperationalAnchorReviewSnapshotDecision[];
 };
+
+export type OperationalAnchorReviewSnapshotV2 = {
+  snapshot_version: typeof OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_V2_VERSION;
+  decision_schema_version: typeof OPERATIONAL_ANCHOR_REVIEW_SCHEMA_VERSION;
+  source_decision_count: number;
+  decision_count: number;
+  decisions: OperationalAnchorReviewSnapshotDecision[];
+  retirement_schema_version: 1;
+  retirement_count: number;
+  retirements: OperationalAnchorReviewRetirementProjectionV1[];
+};
+
+export type OperationalAnchorReviewSnapshot =
+  | OperationalAnchorReviewSnapshotV1
+  | OperationalAnchorReviewSnapshotV2;
 
 export type OperationalAnchorReviewQuarantine = {
   decision_id: string;
@@ -148,14 +173,14 @@ function parseEvidenceBindings(value: unknown, sourceId: string, path: string): 
   return bindings;
 }
 
-function parseDecision(path: string): OperationalAnchorReviewDecision {
+function parseDecision(path: string, rootDir = repoRoot): OperationalAnchorReviewDecision {
   let parsed: unknown;
   try {
     parsed = JSON.parse(readFileSync(path, "utf8")) as unknown;
   } catch (error) {
     throw new Error(`${relative(repoRoot, path)}: invalid JSON: ${error instanceof Error ? error.message : String(error)}`);
   }
-  const artifactPath = relative(repoRoot, path).split("/").join("/");
+  const artifactPath = relative(rootDir, path).split("/").join("/");
   if (!isObject(parsed)) throw new Error(`${artifactPath}: decision must be an object`);
   rejectUnknownFields(parsed, topLevelFields, artifactPath);
   if (parsed.schema_version !== OPERATIONAL_ANCHOR_REVIEW_SCHEMA_VERSION) {
@@ -202,18 +227,30 @@ function parseDecision(path: string): OperationalAnchorReviewDecision {
   };
 }
 
-export function operationalAnchorReviewAcceptedDir(): string {
-  return join(repoRoot, "data", "operational-anchor-review", "accepted", "decisions");
+export function operationalAnchorReviewAcceptedDir(rootDir = repoRoot): string {
+  return join(rootDir, "data", "operational-anchor-review", "accepted", "decisions");
 }
 
 export function loadOperationalAnchorReviewDecisions(
   dir = operationalAnchorReviewAcceptedDir(),
+  options: {
+    rootDir?: string | undefined;
+    includeRetired?: boolean | undefined;
+    retirements?: readonly OperationalProjectionRetirementV1[] | undefined;
+  } = {},
 ): OperationalAnchorReviewDecision[] {
   if (!existsSync(dir)) return [];
-  return readdirSync(dir)
+  const rootDir = options.rootDir ?? repoRoot;
+  const decisions = readdirSync(dir)
     .filter((name) => name.endsWith(".json"))
     .sort((left, right) => left.localeCompare(right))
-    .map((name) => parseDecision(join(dir, name)));
+    .map((name) => parseDecision(join(dir, name), rootDir));
+  if (options.includeRetired) return decisions;
+  const shouldApplyDefaultRetirements =
+    resolve(dir) === resolve(operationalAnchorReviewAcceptedDir(rootDir));
+  if (!shouldApplyDefaultRetirements && options.retirements === undefined) return decisions;
+  const retirements = options.retirements ?? loadOperationalProjectionRetirements(rootDir);
+  return applyOperationalAnchorReviewRetirements(decisions, retirements);
 }
 
 function snapshotDecision(decision: OperationalAnchorReviewDecision): OperationalAnchorReviewSnapshotDecision {
@@ -240,29 +277,53 @@ function snapshotDecision(decision: OperationalAnchorReviewDecision): Operationa
 
 export function operationalAnchorReviewSnapshot(
   decisions: readonly OperationalAnchorReviewDecision[],
+  retirements: readonly LoadedOperationalProjectionRetirementV1[] = [],
 ): OperationalAnchorReviewSnapshot {
   const snapshotDecisions = [...decisions]
     .sort((left, right) => left.decision_id.localeCompare(right.decision_id))
     .map(snapshotDecision);
-  return {
+  if (retirements.length === 0) return {
     snapshot_version: OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION,
     decision_schema_version: OPERATIONAL_ANCHOR_REVIEW_SCHEMA_VERSION,
     decision_count: snapshotDecisions.length,
     decisions: snapshotDecisions,
   };
+  const projectedRetirements = projectOperationalAnchorReviewRetirements(retirements);
+  return {
+    snapshot_version: OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_V2_VERSION,
+    decision_schema_version: OPERATIONAL_ANCHOR_REVIEW_SCHEMA_VERSION,
+    source_decision_count: snapshotDecisions.length + projectedRetirements.length,
+    decision_count: snapshotDecisions.length,
+    decisions: snapshotDecisions,
+    retirement_schema_version: 1,
+    retirement_count: projectedRetirements.length,
+    retirements: projectedRetirements,
+  };
 }
 
 export function operationalAnchorReviewSnapshotJson(
   decisions: readonly OperationalAnchorReviewDecision[],
+  retirements: readonly LoadedOperationalProjectionRetirementV1[] = [],
 ): string {
-  return `${stableJson(operationalAnchorReviewSnapshot(decisions) as unknown as JsonValue)}\n`;
+  const json = `${stableJson(operationalAnchorReviewSnapshot(decisions, retirements) as unknown as JsonValue)}\n`;
+  parseOperationalAnchorReviewSnapshot(JSON.parse(json) as unknown);
+  return json;
 }
 
 export function parseOperationalAnchorReviewSnapshot(value: unknown): OperationalAnchorReviewSnapshot {
   if (!isObject(value)) throw new Error("operational anchor review snapshot must be an object");
-  const snapshotFields = new Set(["snapshot_version", "decision_schema_version", "decision_count", "decisions"]);
+  const snapshotVersion = value.snapshot_version;
+  if (snapshotVersion !== 1 && snapshotVersion !== 2) {
+    throw new Error("operational anchor review snapshot.snapshot_version must be 1 or 2");
+  }
+  const snapshotFields = new Set(snapshotVersion === 1
+    ? ["snapshot_version", "decision_schema_version", "decision_count", "decisions"]
+    : [
+        "snapshot_version", "decision_schema_version", "source_decision_count", "decision_count",
+        "decisions", "retirement_schema_version", "retirement_count", "retirements",
+      ]);
   rejectUnknownFields(value, snapshotFields, "operational anchor review snapshot");
-  if (value.snapshot_version !== 1 || value.decision_schema_version !== 1) throw new Error("operational anchor review snapshot versions must be 1");
+  if (value.decision_schema_version !== 1) throw new Error("operational anchor review decision schema version must be 1");
   if (!Array.isArray(value.decisions)) throw new Error("operational anchor review snapshot.decisions must be an array");
   if (!Number.isInteger(value.decision_count) || value.decision_count !== value.decisions.length) throw new Error("operational anchor review snapshot.decision_count must equal decisions length");
   const decisions = value.decisions.map((entry, index): OperationalAnchorReviewSnapshotDecision => {
@@ -281,8 +342,54 @@ export function parseOperationalAnchorReviewSnapshot(value: unknown): Operationa
     if (!(precision === "day" ? /^\d{4}-\d{2}-\d{2}$/u : /^\d{4}-\d{2}$/u).test(date)) throw new Error(`${path}: expected_operational_date does not match ${precision} precision`);
     return { schema_version: 1, decision_id: requiredString(entry, "decision_id", path), review_state: "accepted", accepted_at: acceptedAt, reviewer: requiredString(entry, "reviewer", path), rationale: requiredString(entry, "rationale", path), source_id: sourceId, event_record_id: requiredString(entry, "event_record_id", path), timeline_relation_record_id: requiredString(entry, "timeline_relation_record_id", path), route_record_id: requiredString(entry, "route_record_id", path), route_scope_relation_record_id: requiredString(entry, "route_scope_relation_record_id", path), treatment_record_id: requiredString(entry, "treatment_record_id", path), treatment_scope_relation_record_id: requiredString(entry, "treatment_scope_relation_record_id", path), treatment_family: requiredString(entry, "treatment_family", path), expected_operational_date: date, expected_date_precision: precision, evidence_bindings: parseEvidenceBindings(entry.evidence_bindings, sourceId, path) };
   });
-  if (new Set(decisions.map((decision) => decision.decision_id)).size !== decisions.length) throw new Error("operational anchor review snapshot has duplicate decision_id");
-  return { snapshot_version: 1, decision_schema_version: 1, decision_count: decisions.length, decisions };
+  const decisionIds = decisions.map((decision) => decision.decision_id);
+  if (new Set(decisionIds).size !== decisions.length) throw new Error("operational anchor review snapshot has duplicate decision_id");
+  if (decisionIds.join("\n") !== [...decisionIds].sort().join("\n")) {
+    throw new Error("operational anchor review snapshot decisions must be sorted by decision_id");
+  }
+  if (snapshotVersion === 1) {
+    return { snapshot_version: 1, decision_schema_version: 1, decision_count: decisions.length, decisions };
+  }
+  if (value.retirement_schema_version !== 1) {
+    throw new Error("operational anchor review snapshot.retirement_schema_version must be 1");
+  }
+  if (!Array.isArray(value.retirements)) {
+    throw new Error("operational anchor review snapshot.retirements must be an array");
+  }
+  if (!Number.isInteger(value.retirement_count) || value.retirement_count !== value.retirements.length) {
+    throw new Error("operational anchor review snapshot.retirement_count must equal retirements length");
+  }
+  const retirements = value.retirements.map((entry, index) =>
+    parseOperationalAnchorReviewRetirementProjectionV1(
+      entry,
+      `operational anchor review snapshot.retirements[${index}]`,
+    ));
+  const retiredDecisionIds = retirements.map((entry) => entry.target.decision_id);
+  if (
+    new Set(retiredDecisionIds).size !== retiredDecisionIds.length ||
+    retiredDecisionIds.join("\n") !== [...retiredDecisionIds].sort().join("\n")
+  ) {
+    throw new Error("operational anchor review snapshot retirements must be sorted and unique by decision_id");
+  }
+  if (retiredDecisionIds.some((decisionId) => decisions.some((decision) => decision.decision_id === decisionId))) {
+    throw new Error("operational anchor review snapshot active and retired decisions must be disjoint");
+  }
+  if (
+    !Number.isInteger(value.source_decision_count) ||
+    value.source_decision_count !== decisions.length + retirements.length
+  ) {
+    throw new Error("operational anchor review snapshot.source_decision_count must equal active plus retired decisions");
+  }
+  return {
+    snapshot_version: 2,
+    decision_schema_version: 1,
+    source_decision_count: decisions.length + retirements.length,
+    decision_count: decisions.length,
+    decisions,
+    retirement_schema_version: 1,
+    retirement_count: retirements.length,
+    retirements,
+  };
 }
 
 type RelationShape = {

@@ -152,6 +152,7 @@ const relationshipCompleteness: CommandHandler = () => {
   }
   const options = {
     releaseDir: optionValue(process.argv, "--release"),
+    releaseSourceDir: optionValue(process.argv, "--release-source"),
     coverageDir: optionValue(process.argv, "--coverage"),
     outputDir: optionValue(process.argv, "--output") ?? optionValue(process.argv, "-o"),
     expectedReleaseManifestSha256: optionValue(process.argv, "--manifest-sha256"),

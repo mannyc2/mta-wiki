@@ -39,15 +39,16 @@ never modified, runner companions only; provider-backed LLM runs are owner-gated
 | 022 | Homepage research workbench: search hero, corpus stats, featured pages, provenance | P1 | M | 021 | DONE (executor `e8ee9f65`, same worktree; reviewer-verified) |
 | 023 | Record pages: compact metadata header, collapsible detail panels, related-pages navigation | P1 | M | 021 | DONE (executor `a402a22e`, same worktree; incl. breadcrumb double-plural fix + regression test) |
 | 024 | Source pages: anchored evidence viewer, cited-by, metadata card, original-document links | P1 | M–L | 021 | DONE (executor `192a6333`, same worktree; anchors preserved incl. `#p003_c0007`; 407 MB site, max HTML 1.5 MB) |
-| 026 | Repair tracked-state baseline: broken committed test import, NUL bytes, dirty LATEST, stale AGENTS.md | P1 | S | — | TODO |
-| 027 | Release pointer safety: opt-in LATEST writes, guarded reads, `release_pointer` lane, canary lifecycle docs | P1 | S–M | 026 | TODO |
-| 028 | Source-registry integrity: retire the junk 85841 observation, merge the 4 genuine duplicate pairs, backfill 5 missing rows, 3 permanent validate lanes | P1 | M | 026 (027 rec.) | TODO |
-| 029 | Honest anchor summary (broad vs reviewed vs distinct; entry-gate drop counters; exclusion de-dup; overlap-aware reporting) + three-layer coverage matrix reading the DOWNSTREAM PIN, not LATEST | P1 | M | 028 | IN PROGRESS (honest summary + deterministic three-layer matrix live; remaining plan cross-tabs/gates pending) |
-| 030 | PASS 1 — curate staged evidence and exhaust the priority gap ledger (18 route-resolved total / 15 treatment gaps; Queens post-launch observations; SBS components preserved as bundles) | P1 | L | 028, 029 | IN PROGRESS (2,735-row ledger / 275-row priority feeder, receipt replay, and reviewed proposal→journal→apply path live; Queens/treatment proposals and adjudication pending) |
-| 031 | Status reconciliation: accepted co-reference decisions + POST-EVENT-ONLY supersedence + version-safe eligibility reclassification | P1 | M–L | 028, 029, 030 Tier B (hard) | TODO |
-| 032 | Production occurrence contract: persistent enrichment-stable ids, reviewed clusters, atomic/bundle + multi-route semantics, manifest-v3 dual-publish, executable consumer fixture | P1 | L | 029, 030, 031 | TODO |
-| 033 | PASS 2 — execute official-source search → acquisition → intake → ingest → reviewed curation until ≥1 candidate-ready onset `>=2023-04-01` exists | P1 | L | 028–032 | TODO |
-| 034 | Cross-repo cutover: strict consumer manifest-v3/occurrence-v1 migration, cut `v3-operational-occurrences-1`, repin, and put ≥1 new in-window Wiki candidate into downstream review | P1 | L | 026–033 (all mandatory) | TODO |
+| 026 | Repair tracked-state baseline: broken committed test import, NUL bytes, dirty LATEST, stale AGENTS.md | P1 | S | — | DONE (required tracked-state outcome verified on merged main; see reconciliation evidence) |
+| 027 | Release pointer safety: opt-in LATEST writes, guarded reads, `release_pointer` lane, canary lifecycle docs | P1 | S–M | 026 | DONE (opt-in writes and normal-validation pointer regression verified) |
+| 028 | Source-registry integrity: retire the junk 85841 observation, merge the 4 genuine duplicate pairs, backfill 5 missing rows, 3 permanent validate lanes | P1 | M | 026 (027 rec.) | DONE (2,584 unique sources; all three permanent lanes green) |
+| 029 | Honest anchor summary (broad vs reviewed vs distinct; entry-gate drop counters; exclusion de-dup; overlap-aware reporting) + three-layer coverage matrix reading the DOWNSTREAM PIN, not LATEST | P1 | M | 028 | DONE (honest funnel and explicit-pin matrix are deterministic and current) |
+| 030 | PASS 1 — curate staged evidence and exhaust the priority gap ledger (18 route-resolved total / 15 treatment gaps; Queens post-launch observations; SBS components preserved as bundles) | P1 | L | 028, 029 | DONE (2,930 gaps / 492 priority rows / 0 open / 492 terminal; no new provider spend) |
+| 031 | Status reconciliation: accepted co-reference decisions + POST-EVENT-ONLY supersedence + version-safe eligibility reclassification | P1 | M–L | 028, 029, 030 Tier B (hard) | DONE (required outcome satisfied by accepted occurrence decisions and persistent identity registry) |
+| 032 | Production occurrence contract: persistent enrichment-stable ids, reviewed clusters, atomic/bundle + multi-route semantics, manifest-v3 dual-publish, executable consumer fixture | P1 | L | 029, 030, 031 | DONE (manifest-v3 outcome landed and is superseded compatibly by strict manifest-v5) |
+| 033 | PASS 2 — execute official-source search → acquisition → intake → ingest → reviewed curation until ≥1 candidate-ready onset `>=2023-04-01` exists | P1 | L | 028–032 | DONE (multiple official in-window accepted occurrences exist on merged main) |
+| 034 | Reconciled cross-repo cutover: strict manifest-v5 consumer, immutable producer cut, pinned replay, and truthful in-window review material | P1 | L | 026–033, 035 | DONE (`v1-rc24` reproduced; strict fixture/named-release replays byte-identical; truthful Q27 occurrence reached decision-free review; Tracker PRs #65/#66 green and merged) |
+| 035 | Official exact-route identity: immutable GTFS/catalog snapshot, complete bindings, manifest-v5 verifier, quarantine, and Tracker migration | P1 | L | 026–033 | DONE (399 service identities, 395 complete route-record bindings, and 520 anchors verified; strict manifest-v5 consumer green; rc23 replacement `v1-rc24` recorded) |
 
 Status values: TODO | IN PROGRESS | DONE | BLOCKED (with one-line reason) | REJECTED (with
 one-line rationale).
@@ -139,58 +140,18 @@ one-line rationale).
   contradicts the plan-009 public-clone validation story and deserves its own follow-up
   plan if public reproducibility of `validate` still matters.
 
-- **Operational-anchor integrity track (026–034, planned 2026-07-12 at `d28b64c8` via
-  /improve; REVISED same day after contract and outcome reviews)**: responds to the downstream
-  consumer's operational-anchor report (bus-reliability-tracker pins
-  `v2-operational-anchors-1`, manifest SHA `b69bd945…`). The organizing principle after
-  revision: **the core job is evidence curation and reconciliation, not scaffolding** —
-  026–029 are integrity/reporting prerequisites; 030 is Pass 1 (curate staged evidence
-  into reviewed observations+relations, with REQUIRED outcomes and a durable row-level
-  recoverability ledger — 617 rows / 564 both / 1,181 overlapping dimension-instances;
-  the sequential funnel has 18 route-resolved rows total and 15 treatment gaps, not 18
-  treatment gaps. Plan 030 exhaustively adjudicates every priority in-window feeder
-  row so `absent_in_source` is receipt-backed and persistent. Plan 031 makes
-  reconciliation move eligibility only through accepted clusters and post-event
-  evidence while preserving the exact anchor-v1 serialization and meanings. Plan 032
-  productionizes a manifest-v3 occurrence-v1 contract with persistent ids, plural routes, and honest
-  atomic/bundle semantics; preview-only completion is forbidden. Plan 033 is Pass 2
-  and must actually search, acquire, stage, ingest, review, and materialize until an
-  onset `>=2023-04-01` is candidate-ready. Plan 034 implements the strict consumer
-  migration, cuts/reproduces the release, repins, and requires that candidate to reach
-  downstream review. Strict order 026 → 027 → 028 → 029 → 030 → 031 → 032 → 033 → 034; each plan
-  lands all four gates before the next starts. Key revision fixes (2026-07-12 review):
-  plan files are force-added in 026 (`.git/info/exclude` hides `plans/`, so worktree
-  executors otherwise lack their instructions); 026 verifies the COMMITTED state in a
-  throwaway worktree against the known fresh-context baseline; 028 retires the junk
-  `source_meeting-doc-85841_2` "test" observation instead of merging it (validate
-  arithmetic 15 → 13 → 5 → 0); 029's Layer C reads `data/quality/downstream-pin.json`,
-  never LATEST, and reports exclusions as overlapping, not attrition; 030's definition
-  of done REQUIRES the Queens post-launch delivered observations
-  (meeting_doc_179606/186616 blocks — currently ZERO canonical events) and stratum-1
-  component links to land, not just infrastructure (and never calls an SBS bundle a
-  single-treatment resolution); 031's supersedence accepts POST-EVENT
-  evidence only (meeting_doc_174141's past-tense "launched" events are `planned` as-of
-  2025-05-28 and MUST NOT resolve anything) and reclassifies the resolved seed's
-  effective temporal role/lifts effective temporal exclusions while anchor-v1 remains
-  document-time truth; every eligibility-changing cluster requires an accepted decision.
-  Plan 032's occurrence ids come from a
-  persistent identity registry and survive route, treatment, date, status, provenance,
-  and cluster growth; manifest-v3 export is a production path, not an owner-gated
-  prototype. Owner gates remain for 030 proposal/ledger acceptance, 031 cluster
-  acceptance, 033 provider spend and curation acceptance, and 034 cut+repin. An unavailable gate leaves the
-  plan IN PROGRESS, never DONE. Execution harness: one
-  executor session per plan — Codex CLI (`codex` in repo root; the Claude-plugin codex
-  bridge is currently broken — oversized `~/.codex/logs_2.sqlite`) or Claude Code,
-  dispatched into a worktree with an independent reviewer re-running gates before owner
-  merge (the proven 021–024 pattern); subagent fan-out only where the plans specify it
-  (030 adversarial verifiers + optional canaries, 031 cluster-precision hunts, 032
-  contract/identity review, 034 reproducibility recut). Downstream compatibility rule
-  binding every plan: existing release directories are immutable; strict decoders mean
-  extra fields/enum values are breaking, not "additive." Frozen anchor-v1 files remain
-  exact during dual-publish; rich resolution/bundle/multi-route data ships only in the
-  versioned occurrence-v1 resource (a new resource, therefore version 1). Plan 034
-  changes and tests the consumer before repinning; a CHANGES note alone is never a
-  migration.
+- **Operational-integrity and exact-route track (026–035, reconciled 2026-07-18)**:
+  `docs/operational-integrity-plan-reconciliation.md` is the evidence table for the
+  required outcomes. Plans 026–033 were re-audited against merged main and are satisfied;
+  stale mechanics and labels were not replayed. Plan 035 adds the immutable official
+  GTFS/Current Bus Routes snapshot, complete reviewed route bindings, exact case-sensitive
+  service identities, manifest-v5/full-directory verification, and external immutable
+  quarantine. Plan 034 now means the strict Tracker manifest-v5 migration, deterministic
+  producer cut, pinned read-only fixture and named-release replay, and truthful downstream
+  review material. `B44` and `B44+` remain distinct; route family is grouping context only.
+  Existing release directories and `LATEST` are immutable, hashes are integrity receipts
+  rather than approval gates, and no candidate approval, publication, deployment, Pages
+  change, or production promotion is part of this track.
 
 ## Companion tracks (not planned here)
 

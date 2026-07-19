@@ -80,6 +80,7 @@ import {
   operationalOccurrenceIdentityRegistryPath,
 } from "../packages/pipeline/src/materialize/operational-occurrence-identity";
 import { operationalOccurrenceReviewAcceptedDir } from "../packages/pipeline/src/materialize/operational-occurrence-review";
+import { parseOperationalProjectionRetirementV1 } from "../packages/pipeline/src/materialize/operational-projection-retirements";
 import {
   readRouteAnchorReview,
   routeAnchorOverridesPath,
@@ -143,7 +144,7 @@ import { auditRelationshipGraph } from "../packages/pipeline/src/records/relatio
  *      --apply --reviewed-enforcement --refresh-after-promotion
  *
  * Capture and derive require the same clean MTA Wiki HEAD/index/worktree and
- * content-addressed untracked inventory. They verify a real sealed v8 SQLite
+ * content-addressed untracked inventory. They verify a real sealed current-version SQLite
  * database, every schema-v3 rc21 release file, graph finding identities, the
  * pinned generator/command contract, and a read-only Tracker state whose
  * importer compatibility source and untracked contents are content-addressed.
@@ -247,6 +248,34 @@ const GENERATOR_SOURCE_PATH =
 const TRACKER_IMPORTER_SOURCE_PATH =
   "tools/pipeline-v2/src/lib/mta-wiki-operational-occurrences.ts";
 const DETERMINISM_RELEASE_ID = "v1-rc21";
+const PLAN035_REVIEWED_SOURCE_REFRESHES = [
+  {
+    role: "occurrence_treatment_physicality_summary",
+    path: "data/quality/relationship-integrity/occurrence-treatment-physicality/summary.json",
+    previous_sha256:
+      "02926881a698f6825b5aa638e347208ea6b8597c04032dd86a37c11ef0a19dc2",
+    reconciled_sha256:
+      "0f2dd1ebeb6fd5d1b39225cd8b9b8148c416d988debd5a87c1786a5de00df5c9",
+  },
+  {
+    role: "phase_review_summary",
+    path: "data/quality/relationship-integrity/operational-occurrence-phases/summary.json",
+    previous_sha256:
+      "ba37da3aa10ec9bfd6945506711defe10aa80a1e1367eae263262cb42a0f8da1",
+    reconciled_sha256:
+      "540c25e36819a3ffb88a3194a36cf5e2ef058ca6abb6b1c7284387edac7f9abd",
+  },
+  {
+    role: "relationship_completeness_summary",
+    path: "data/quality/relationship-integrity/completeness/summary.json",
+    previous_sha256:
+      "46b5d5c35b0f3d0562303064c9fbe4234fde5d9c9d3e85c96a6443ca78154717",
+    reconciled_sha256:
+      "c52f20d9302a0c312a0b10c237f1ea5c1fee7a3460c76aba23f79cc3f7d7c98b",
+  },
+] as const;
+const PLAN035_PREVIOUS_ENFORCEMENT_PROOF_SHA256 =
+  "db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a";
 const REQUIRED_COMMAND_IDS = [
   "architecture",
   "export",
@@ -441,6 +470,65 @@ type FilePin = {
   row_count?: number;
 };
 
+type CandidateReleasePinSource = {
+  actualDir: string;
+  logicalPrefix: string;
+  manifestFiles: Record<string, unknown>;
+};
+
+function loadCandidateReleasePinSource(
+  root: string,
+  candidateReleaseDir: string,
+): CandidateReleasePinSource {
+  const rootAbsolute = resolve(root);
+  const absolute = isAbsolute(candidateReleaseDir)
+    ? resolve(candidateReleaseDir)
+    : resolve(rootAbsolute, candidateReleaseDir);
+  const rootPrefix = rootAbsolute.endsWith(sep)
+    ? rootAbsolute
+    : `${rootAbsolute}${sep}`;
+  assert(
+    absolute.startsWith(rootPrefix),
+    "--candidate-release-dir must be inside the repository root",
+  );
+  const candidateStat = lstatSync(absolute);
+  assert(
+    candidateStat.isDirectory() && !candidateStat.isSymbolicLink(),
+    "--candidate-release-dir must be a real directory",
+  );
+  const manifestPath = join(absolute, "manifest.json");
+  const manifestStat = lstatSync(manifestPath);
+  assert(
+    manifestStat.isFile() && !manifestStat.isSymbolicLink(),
+    "--candidate-release-dir manifest must be a regular file",
+  );
+  const manifest = object(
+    parseJson<unknown>(readFileSync(manifestPath, "utf8"), manifestPath),
+    "candidate release input manifest",
+  );
+  const releaseId = manifest.release_id;
+  assert(
+    typeof releaseId === "string" &&
+      /^[a-zA-Z0-9][a-zA-Z0-9._-]*$/u.test(releaseId),
+    "--candidate-release-dir manifest must declare a safe release_id",
+  );
+  const manifestFiles = object(manifest.files, "candidate release input manifest files");
+  const logicalPrefix = `data/exports/releases/${releaseId}`;
+  const candidateRelative = relative(rootAbsolute, absolute).split("\\").join("/");
+  const candidateName = candidateRelative.slice("data/exports/releases/".length);
+  assert(
+    candidateRelative.startsWith("data/exports/releases/") &&
+      (candidateName.startsWith(`.${releaseId}-`) ||
+        candidateName.startsWith(`.${releaseId}.`)),
+    "--candidate-release-dir must be a hidden pre-cut directory for its declared release ID",
+  );
+  assert(
+    !existsSync(repositoryPath(rootAbsolute, logicalPrefix)),
+    `Named release ${releaseId} already exists; verify it without --candidate-release-dir`,
+  );
+  return { actualDir: absolute, logicalPrefix, manifestFiles };
+}
+
 function filePin(value: unknown, label: string): FilePin {
   const pin = object(value, label);
   assert(
@@ -466,9 +554,36 @@ function verifyRepositoryFilePin(
   root: string,
   value: unknown,
   label: string,
+  candidateRelease?: CandidateReleasePinSource | undefined,
 ): Buffer {
   const pin = filePin(value, label);
-  const bytes = readRepositoryBytes(root, pin.path);
+  let bytes: Buffer;
+  if (
+    candidateRelease &&
+    (pin.path === candidateRelease.logicalPrefix ||
+      pin.path.startsWith(`${candidateRelease.logicalPrefix}/`))
+  ) {
+    const suffix = pin.path.slice(candidateRelease.logicalPrefix.length).replace(/^\//u, "");
+    assert(suffix.length > 0, `${label} cannot pin a release directory`);
+    const actual = resolve(candidateRelease.actualDir, suffix);
+    const candidatePrefix = candidateRelease.actualDir.endsWith(sep)
+      ? candidateRelease.actualDir
+      : `${candidateRelease.actualDir}${sep}`;
+    assert(actual.startsWith(candidatePrefix), `${label} escapes the candidate release directory`);
+    const stat = lstatSync(actual);
+    assert(stat.isFile() && !stat.isSymbolicLink(), `${label} candidate source is not a regular file`);
+    bytes = readFileSync(actual);
+    const manifestPin = object(
+      candidateRelease.manifestFiles[suffix],
+      `candidate release input manifest files.${suffix}`,
+    );
+    assert(
+      manifestPin.bytes === bytes.length && manifestPin.sha256 === byteSha256(bytes),
+      `${label} candidate source does not match its candidate manifest entry`,
+    );
+  } else {
+    bytes = readRepositoryBytes(root, pin.path);
+  }
   assert(
     byteSha256(bytes) === pin.sha256,
     `${label} SHA-256 mismatch: ${pin.path}`,
@@ -1323,7 +1438,10 @@ function pinnedInputByPath(
   return match;
 }
 
-function assertPhysicalityPins(root: string): Record<string, unknown> {
+function assertPhysicalityPins(
+  root: string,
+  candidateRelease?: CandidateReleasePinSource | undefined,
+): Record<string, unknown> {
   const summaryText = readRepositoryText(
     root,
     PHYSICALITY_SUMMARY_PATH,
@@ -1367,6 +1485,7 @@ function assertPhysicalityPins(root: string): Record<string, unknown> {
       root,
       inputPins[index],
       `physicality input ${index}`,
+      candidateRelease,
     );
   }
   const summaryPin = filePin(
@@ -1437,6 +1556,8 @@ function assertPhysicalityPins(root: string): Record<string, unknown> {
       reviewSnapshot.stage === "final_post_semantic_release" &&
       reviewSnapshot.release_id === summary.release_id &&
       finalGuard.status === "verified" &&
+      finalGuard.immutable_review_history_must_reconstruct_byte_identically === true &&
+      finalGuard.immutable_review_ledger_must_remain_byte_identical === undefined &&
       contractPolicyPin.path === policyPath &&
       contractPolicyPin.sha256 === policyPin.sha256 &&
       contractLedgerPin.path === ledgerPath &&
@@ -1453,8 +1574,21 @@ function assertPhysicalityPins(root: string): Record<string, unknown> {
   const snapshotPins = Array.isArray(reviewSnapshot.input_pins)
     ? reviewSnapshot.input_pins
     : [];
+  const expectedReleaseDir = `data/exports/releases/${String(summary.release_id)}`;
+  const expectedSnapshotPaths = [
+    `${expectedReleaseDir}/corridors.jsonl`,
+    `${expectedReleaseDir}/operational_occurrences.jsonl`,
+    `${expectedReleaseDir}/relations.jsonl`,
+    `${expectedReleaseDir}/treatment_components.jsonl`,
+  ];
+  const snapshotPinPaths = snapshotPins
+    .map((pin, index) => filePin(pin, `physicality contract snapshot pin ${index}`).path)
+    .sort();
   assert(
-    snapshotPins.length >= 5 &&
+    reviewSnapshot.release_dir === expectedReleaseDir &&
+      snapshotPins.length === 4 &&
+      stableJson(snapshotPinPaths as unknown as JsonValue) ===
+        stableJson(expectedSnapshotPaths as unknown as JsonValue) &&
       snapshotPins.every((pin, index) => {
         const parsed = filePin(
           pin,
@@ -1478,19 +1612,13 @@ function assertPhysicalityPins(root: string): Record<string, unknown> {
         summary.treatment_membership_count,
     "Physicality contract review snapshot does not reconcile with the quality manifest and summary",
   );
-  const releaseManifestPin = inputPins
-    .map((pin, index) =>
-      filePin(pin, `physicality release input ${index}`)
-    )
-    .find(
-      (pin) =>
-        pin.path ===
-        `data/exports/releases/${String(summary.release_id)}/manifest.json`,
-    );
+  const releaseSnapshotPins = snapshotPins.map((pin, index) =>
+    filePin(pin, `physicality release input ${index}`)
+  );
   assert(
-    releaseManifestPin?.sha256 ===
-      summary.release_manifest_sha256,
-    "Physicality summary is not bound to its final release manifest",
+    stableHash(releaseSnapshotPins as unknown as JsonValue) ===
+      summary.release_input_fingerprint,
+    "Physicality summary is not bound to its exact release input snapshot",
   );
   const ledgerRows = parseJsonl<Record<string, unknown>>(
     readRepositoryText(root, ledgerPath),
@@ -1512,6 +1640,229 @@ function assertPhysicalityPins(root: string): Record<string, unknown> {
       ),
     "Physicality review ledger does not exactly cover the final treatment denominator",
   );
+  const activeLedgerText = readRepositoryText(root, ledgerPath);
+  const canonicalActiveLedger = ledgerRows.length > 0
+    ? `${ledgerRows.map((row) => stableJson(row as unknown as JsonValue)).join("\n")}\n`
+    : "";
+  assert(
+    activeLedgerText === canonicalActiveLedger,
+    "Physicality active review ledger is not canonical stable JSONL with one trailing LF",
+  );
+
+  const retiredLedgerPath =
+    "data/contracts/occurrence-treatment-physicality/v1/retired-review-ledger.jsonl";
+  const retirementReceiptPath =
+    "data/contracts/occurrence-treatment-physicality/v1/review-retirement-receipt.json";
+  const retirementContract = object(
+    contract.review_retirements,
+    "physicality contract review_retirements",
+  );
+  const contractRetiredLedgerPin = filePin(
+    retirementContract.archived_review_ledger,
+    "physicality contract retired review ledger pin",
+  );
+  const contractRetirementReceiptPin = filePin(
+    retirementContract.receipt,
+    "physicality contract retirement receipt pin",
+  );
+  const retiredLedgerPin = pinnedInputByPath(
+    inputPins,
+    retiredLedgerPath,
+    "physicality manifest",
+  );
+  const retirementReceiptPin = pinnedInputByPath(
+    inputPins,
+    retirementReceiptPath,
+    "physicality manifest",
+  );
+  assert(
+    retirementContract.schema_version === 1 &&
+      retirementContract.contract_id ===
+        "occurrence-treatment-physicality-review-retirement-v1" &&
+      retirementContract.active_review_count === ledgerRows.length &&
+      contractRetiredLedgerPin.path === retiredLedgerPath &&
+      contractRetiredLedgerPin.sha256 === retiredLedgerPin.sha256 &&
+      contractRetirementReceiptPin.path === retirementReceiptPath &&
+      contractRetirementReceiptPin.sha256 === retirementReceiptPin.sha256,
+    "Physicality review retirement contract does not address its exact archive/receipt",
+  );
+  const retiredLedgerText = readRepositoryText(root, retiredLedgerPath);
+  const retiredLedgerRows = parseJsonl<Record<string, unknown>>(
+    retiredLedgerText,
+    retiredLedgerPath,
+  );
+  const canonicalRetiredLedger = retiredLedgerRows.length > 0
+    ? `${retiredLedgerRows.map((row) => stableJson(row as unknown as JsonValue)).join("\n")}\n`
+    : "";
+  const activeDecisionIds = new Set(ledgerRows.map((row) => String(row.decision_id ?? "")));
+  const retiredDecisionIds = retiredLedgerRows.map((row) => String(row.decision_id ?? ""));
+  const activeTreatmentIds = new Set(treatmentIds);
+  const retiredTreatmentIds = retiredLedgerRows.map((row) =>
+    String(row.treatment_record_id ?? "")
+  );
+  assert(
+    retiredLedgerRows.length > 0 &&
+      retirementContract.retired_review_count === retiredLedgerRows.length &&
+      retiredLedgerText === canonicalRetiredLedger &&
+      new Set(retiredDecisionIds).size === retiredDecisionIds.length &&
+      new Set(retiredTreatmentIds).size === retiredTreatmentIds.length &&
+      retiredDecisionIds.every((id) => id.length > 0 && !activeDecisionIds.has(id)) &&
+      retiredTreatmentIds.every((id) => id.length > 0 && !activeTreatmentIds.has(id)) &&
+      stableJson(retiredTreatmentIds as unknown as JsonValue) ===
+        stableJson([...retiredTreatmentIds].sort() as unknown as JsonValue),
+    "Physicality retired ledger is noncanonical, duplicated, or overlaps the active denominator",
+  );
+
+  const retirementReceiptText = readRepositoryText(root, retirementReceiptPath);
+  const retirementReceipt = object(
+    parseJson<unknown>(retirementReceiptText, retirementReceiptPath),
+    "physicality review retirement receipt",
+  );
+  const receiptActivePin = filePin(
+    retirementReceipt.active_review_ledger,
+    "physicality retirement receipt active ledger pin",
+  );
+  const receiptRetiredPin = filePin(
+    retirementReceipt.retired_review_ledger,
+    "physicality retirement receipt retired ledger pin",
+  );
+  const reviewHistory = object(
+    retirementReceipt.review_history,
+    "physicality retirement receipt review history",
+  );
+  const reviewHistoryRows = [...ledgerRows, ...retiredLedgerRows].sort((left, right) =>
+    String(left.treatment_record_id).localeCompare(String(right.treatment_record_id))
+  );
+  const reviewHistoryText = reviewHistoryRows.length > 0
+    ? `${reviewHistoryRows.map((row) => stableJson(row as unknown as JsonValue)).join("\n")}\n`
+    : "";
+  assert(
+    retirementReceipt.schema_version === 1 &&
+      retirementReceipt.contract_id ===
+        "occurrence-treatment-physicality-review-retirement-v1" &&
+      retirementReceipt.retirement_id ===
+        `occurrence-treatment-physicality-review-retirement-v1:${String(summary.release_id)}` &&
+      retirementReceipt.release_id === summary.release_id &&
+      retirementReceipt.derived_by ===
+        "mta-wiki deterministic physicality retirement projector" &&
+      retirementReceipt.authority ===
+        "accepted operational-occurrence review retirements remove denominator membership without changing treatment classification" &&
+      retirementReceipt.classification_change_count === 0 &&
+      receiptActivePin.path === ledgerPin.path &&
+      receiptActivePin.sha256 === ledgerPin.sha256 &&
+      receiptActivePin.bytes === ledgerPin.bytes &&
+      receiptActivePin.row_count === ledgerPin.row_count &&
+      receiptRetiredPin.path === retiredLedgerPin.path &&
+      receiptRetiredPin.sha256 === retiredLedgerPin.sha256 &&
+      receiptRetiredPin.bytes === retiredLedgerPin.bytes &&
+      receiptRetiredPin.row_count === retiredLedgerPin.row_count &&
+      reviewHistory.reconstruction ===
+        "active_plus_retired_sorted_by_treatment_record_id" &&
+      reviewHistory.bytes === Buffer.byteLength(reviewHistoryText) &&
+      reviewHistory.sha256 === sha256(reviewHistoryText) &&
+      reviewHistory.row_count === reviewHistoryRows.length &&
+      reviewHistory.logical_sha256 ===
+        stableHash(reviewHistoryRows as unknown as JsonValue),
+    "Physicality retirement receipt does not reconstruct immutable review history",
+  );
+  const sourceReceiptValues = Array.isArray(
+    retirementReceipt.operational_retirement_receipts,
+  )
+    ? retirementReceipt.operational_retirement_receipts
+    : [];
+  assert(
+    sourceReceiptValues.length > 0,
+    "Physicality retirement receipt has no operational retirement sources",
+  );
+  const sourceRetirements = sourceReceiptValues.map((value, index) => {
+    const entry = object(
+      value,
+      `physicality operational retirement receipt ${index}`,
+    );
+    const pin = filePin(entry, `physicality operational retirement receipt ${index}`);
+    const retirementId = String(entry.retirement_id ?? "");
+    assert(
+      retirementId.length > 0 &&
+        pin.path ===
+          `${expectedReleaseDir}/review-retirements/source/${retirementId}.json` &&
+        entry.accepted_by !== undefined &&
+        entry.accepted_at !== undefined,
+      `Physicality operational retirement receipt ${index} has invalid identity/path`,
+    );
+    const bytes = verifyRepositoryFilePin(
+      root,
+      entry,
+      `physicality operational retirement receipt ${retirementId}`,
+      candidateRelease,
+    );
+    const parsed = parseOperationalProjectionRetirementV1(
+      parseJson<unknown>(bytes.toString("utf8"), pin.path),
+      pin.path,
+    );
+    assert(
+      parsed.retirement_id === retirementId &&
+        parsed.accepted_by === entry.accepted_by &&
+        parsed.accepted_at === entry.accepted_at,
+      `Physicality operational retirement receipt ${retirementId} metadata drifted`,
+    );
+    return { pin, parsed };
+  });
+  const sourceRetirementIds = sourceRetirements.map((entry) =>
+    entry.parsed.retirement_id
+  );
+  const sourceOccurrenceIds = sortedUnique(sourceRetirements.flatMap((entry) =>
+    entry.parsed.occurrence_review_decisions.map((target) => target.occurrence_id)
+  ));
+  const archivedOccurrenceIds = sortedUnique(retiredLedgerRows.flatMap((row) => {
+    assert(
+      Array.isArray(row.occurrence_ids) &&
+        row.occurrence_ids.every((id) => typeof id === "string" && id.length > 0),
+      "Physicality retired ledger row has invalid occurrence_ids",
+    );
+    return row.occurrence_ids as string[];
+  }));
+  const receiptOccurrenceIds = Array.isArray(retirementReceipt.retired_occurrence_ids)
+    ? retirementReceipt.retired_occurrence_ids
+    : [];
+  const receiptTreatmentIds = Array.isArray(retirementReceipt.retired_treatment_record_ids)
+    ? retirementReceipt.retired_treatment_record_ids
+    : [];
+  assert(
+    new Set(sourceRetirementIds).size === sourceRetirementIds.length &&
+      stableJson(sourceRetirementIds as unknown as JsonValue) ===
+        stableJson([...sourceRetirementIds].sort() as unknown as JsonValue) &&
+      stableJson(receiptOccurrenceIds as unknown as JsonValue) ===
+        stableJson(sourceOccurrenceIds as unknown as JsonValue) &&
+      stableJson(receiptOccurrenceIds as unknown as JsonValue) ===
+        stableJson(archivedOccurrenceIds as unknown as JsonValue) &&
+      stableJson(receiptTreatmentIds as unknown as JsonValue) ===
+        stableJson(retiredTreatmentIds as unknown as JsonValue) &&
+      retirementReceipt.derived_at === sourceRetirements
+        .map((entry) => entry.parsed.accepted_at)
+        .sort()
+        .at(-1),
+    "Physicality retirement receipt source/identity closure does not reconcile",
+  );
+  const expectedInputPaths = [
+    ...expectedSnapshotPaths,
+    "data/quality/relationship-integrity/completeness/manifest.json",
+    "data/quality/relationship-integrity/completeness/occurrence-completeness.jsonl",
+    contractPath,
+    policyPath,
+    ledgerPath,
+    retiredLedgerPath,
+    retirementReceiptPath,
+    ...sourceRetirements.map((entry) => entry.pin.path),
+  ].sort();
+  const actualInputPaths = inputPins.map((pin, index) =>
+    filePin(pin, `physicality manifest exact input ${index}`).path
+  ).sort();
+  assert(
+    new Set(actualInputPaths).size === actualInputPaths.length &&
+      stableJson(actualInputPaths as unknown as JsonValue) ===
+        stableJson(expectedInputPaths as unknown as JsonValue),
+    "Physicality quality manifest input-pin set is incomplete or contains unexpected inputs",
+  );
   const expectedFingerprint = stableHash({
     schema_version: manifest.schema_version as JsonValue,
     release_id: manifest.release_id as JsonValue,
@@ -1526,7 +1877,10 @@ function assertPhysicalityPins(root: string): Record<string, unknown> {
   return summary;
 }
 
-function assertPhasePins(root: string): Record<string, unknown> {
+function assertPhasePins(
+  root: string,
+  candidateRelease?: CandidateReleasePinSource | undefined,
+): Record<string, unknown> {
   const summaryText = readRepositoryText(root, PHASE_SUMMARY_PATH);
   const summary = object(
     parseJson<unknown>(summaryText, PHASE_SUMMARY_PATH),
@@ -1607,15 +1961,33 @@ function assertPhasePins(root: string): Record<string, unknown> {
     manifest.route_anchor_release,
     "phase route-anchor release",
   );
-  verifyRepositoryFilePin(
-    root,
-    routeAnchorRelease.manifest,
-    "phase route-anchor manifest",
+  const expectedReleaseDir = `data/exports/releases/${String(summary.release_id)}`;
+  const routeAnchorPin = filePin(
+    routeAnchorRelease.route_anchors,
+    "phase route-anchor rows",
+  );
+  const occurrencePin = filePin(
+    routeAnchorRelease.operational_occurrences,
+    "phase operational-occurrence rows",
+  );
+  assert(
+    stableJson(Object.keys(routeAnchorRelease).sort() as unknown as JsonValue) ===
+      stableJson(["operational_occurrences", "release_id", "route_anchors"] as unknown as JsonValue) &&
+      routeAnchorPin.path === `${expectedReleaseDir}/route_anchors.jsonl` &&
+      occurrencePin.path === `${expectedReleaseDir}/operational_occurrences.jsonl`,
+    "Phase route-anchor release pins are not the exact logical release input set",
   );
   verifyRepositoryFilePin(
     root,
     routeAnchorRelease.route_anchors,
     "phase route-anchor rows",
+    candidateRelease,
+  );
+  verifyRepositoryFilePin(
+    root,
+    routeAnchorRelease.operational_occurrences,
+    "phase operational-occurrence rows",
+    candidateRelease,
   );
   assert(
     routeAnchorRelease.release_id === summary.release_id,
@@ -1701,9 +2073,12 @@ function assertPhasePins(root: string): Record<string, unknown> {
   return summary;
 }
 
-function assertPhysicalityAndPhasePins(root: string): void {
-  const physicality = assertPhysicalityPins(root);
-  const phase = assertPhasePins(root);
+function assertPhysicalityAndPhasePins(
+  root: string,
+  candidateRelease?: CandidateReleasePinSource | undefined,
+): void {
+  const physicality = assertPhysicalityPins(root, candidateRelease);
+  const phase = assertPhasePins(root, candidateRelease);
   assert(
     physicality.release_id === phase.release_id &&
       physicality.review_stage === "final_post_semantic_release",
@@ -1946,19 +2321,60 @@ function trackerImporterSupport(
     );
     return Number(matches[0]![1]);
   };
+  const legacyManifestVersionPattern =
+    /\bconst\s+MANIFEST_VERSION\s*=\s*\d+\s*;/gu;
+  if ([...sourceText.matchAll(legacyManifestVersionPattern)].length === 1) {
+    return {
+      manifest_version: literal("MANIFEST_VERSION"),
+      operational_anchors: literal(
+        "OPERATIONAL_ANCHOR_CONTRACT_VERSION",
+      ),
+      operational_anchor_review_decisions: literal(
+        "OPERATIONAL_ANCHOR_REVIEW_CONTRACT_VERSION",
+      ),
+      operational_occurrences: literal(
+        "OPERATIONAL_OCCURRENCE_CONTRACT_VERSION",
+      ),
+      operational_occurrence_review_decisions: literal(
+        "OPERATIONAL_OCCURRENCE_REVIEW_CONTRACT_VERSION",
+      ),
+    };
+  }
+
+  const schemaMatches = [...sourceText.matchAll(
+    /\bconst\s+ReleaseManifestV3Schema\s*=\s*Schema\.Struct\(\{([\s\S]*?)\n\}\);\s*\ntype\s+ReleaseManifestV3\b/gu,
+  )];
+  assert(
+    schemaMatches.length === 1,
+    "Tracker importer must define exactly one ReleaseManifestV3Schema",
+  );
+  const schemaText = schemaMatches[0]![1]!;
+  const schemaLiteral = (field: string): number => {
+    const fieldPattern = new RegExp(
+      `\\b${field}\\s*:\\s*Schema\\.Literal\\(\\s*([A-Z][A-Z0-9_]*)\\s*,?\\s*\\)`,
+      "gu",
+    );
+    const matches = [...schemaText.matchAll(fieldPattern)];
+    assert(
+      matches.length === 1,
+      `Tracker ReleaseManifestV3Schema must define exactly one ${field} literal`,
+    );
+    return literal(matches[0]![1]!);
+  };
+  const manifestVersion = schemaLiteral("manifest_version");
+  assert(
+    manifestVersion === 3,
+    "Tracker ReleaseManifestV3Schema must address manifest version 3",
+  );
   return {
-    manifest_version: literal("MANIFEST_VERSION"),
-    operational_anchors: literal(
-      "OPERATIONAL_ANCHOR_CONTRACT_VERSION",
+    manifest_version: manifestVersion,
+    operational_anchors: schemaLiteral("operational_anchors"),
+    operational_anchor_review_decisions: schemaLiteral(
+      "operational_anchor_review_decisions",
     ),
-    operational_anchor_review_decisions: literal(
-      "OPERATIONAL_ANCHOR_REVIEW_CONTRACT_VERSION",
-    ),
-    operational_occurrences: literal(
-      "OPERATIONAL_OCCURRENCE_CONTRACT_VERSION",
-    ),
-    operational_occurrence_review_decisions: literal(
-      "OPERATIONAL_OCCURRENCE_REVIEW_CONTRACT_VERSION",
+    operational_occurrences: schemaLiteral("operational_occurrences"),
+    operational_occurrence_review_decisions: schemaLiteral(
+      "operational_occurrence_review_decisions",
     ),
   };
 }
@@ -2669,6 +3085,7 @@ function validateSnapshotRelease(
     taxonomy: "taxonomy.json",
     quality_report: null,
     relationship_integrity_bundle: null,
+    route_identity_snapshot: null,
   };
   assert(
     stableJson(manifest.pointers as unknown as JsonValue) ===
@@ -3696,13 +4113,42 @@ export function assertRelationshipEnforcementRefreshPins(input: {
         `Relationship enforcement refresh changed non-mode source content: ${pin.role}`,
       );
     } else {
+      const reviewedPlan035Refresh = isPlan035ReviewedSourceRefresh({
+        receipt,
+        pin,
+        currentText: text,
+      });
       assert(
-        sha256(text) === pin.sha256,
+        sha256(text) === pin.sha256 || reviewedPlan035Refresh,
         `Relationship enforcement refresh changed forbidden source artifact: ${pin.role}`,
       );
     }
   }
 }
+
+/** One-time, content-addressed refresh for the Plan 035 phase, physicality, and completeness
+ * migrations. This does not authorize a class of source changes: the previous proof, every source
+ * role/path, prior bytes, and reconciled bytes are exact. The generator independently parses and
+ * validates each new summary before it can reach this transition check. */
+export function isPlan035ReviewedSourceRefresh(input: {
+  receipt: Pick<RelationshipEnforcementTransitionReceipt, "previous_proof">;
+  pin: { role: string; path: string; sha256: string };
+  currentText: string;
+}): boolean {
+  if (
+    input.receipt.previous_proof?.sha256 !==
+      PLAN035_PREVIOUS_ENFORCEMENT_PROOF_SHA256
+  ) return false;
+  const refresh = PLAN035_REVIEWED_SOURCE_REFRESHES.find((candidate) =>
+    candidate.role === input.pin.role && candidate.path === input.pin.path
+  );
+  return refresh !== undefined &&
+    input.pin.sha256 === refresh.previous_sha256 &&
+    sha256(input.currentText) === refresh.reconciled_sha256;
+}
+
+/** Backward-compatible export name retained for the focused transition tests. */
+export const isPlan035CompletenessRefresh = isPlan035ReviewedSourceRefresh;
 
 function assertPostPromotionRefreshDrift(
   root: string,
@@ -3839,7 +4285,11 @@ function compareOrWrite(
 export function generateRelationshipEnforcementProofV1(
   mode: "check" | "apply",
   root = repoRoot,
+  options: { candidateReleaseDir?: string | undefined } = {},
 ): BuiltEnforcementOutputs {
+  const candidateRelease = options.candidateReleaseDir
+    ? loadCandidateReleasePinSource(root, options.candidateReleaseDir)
+    : undefined;
   const contractText = readRepositoryText(root, CONTRACT_PATH);
   const contract = parseJson<RelationshipContract>(
     contractText,
@@ -3896,7 +4346,7 @@ export function generateRelationshipEnforcementProofV1(
   } finally {
     db.close();
   }
-  assertPhysicalityAndPhasePins(root);
+  assertPhysicalityAndPhasePins(root, candidateRelease);
 
   const generatedSources = new Map<string, string>([
     [
@@ -4019,6 +4469,7 @@ if (import.meta.main) {
   const refreshAfterPromotion = args.includes(
     "--refresh-after-promotion",
   );
+  const candidateReleaseDir = optionValue(args, "--candidate-release-dir");
 
   if (capturePath !== undefined) {
     assertKnownArguments(
@@ -4115,7 +4566,7 @@ if (import.meta.main) {
   } else {
     assertKnownArguments(
       args,
-      [],
+      ["--candidate-release-dir"],
       [
         "--apply",
         "--check",
@@ -4148,6 +4599,8 @@ if (import.meta.main) {
     );
     const built = generateRelationshipEnforcementProofV1(
       apply ? "apply" : "check",
+      repoRoot,
+      candidateReleaseDir ? { candidateReleaseDir } : {},
     );
     console.log(
       JSON.stringify(

@@ -5,6 +5,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { exportRelease } from "@mta-wiki/pipeline/materialize/export-release";
 import { RELEASE_CONTRACT_REGISTRY, verifyReleaseDirectory } from "@mta-wiki/pipeline/materialize/release-verifier";
+import { loadRouteIdentityReleaseProjection } from "@mta-wiki/pipeline/materialize/route-identity-release";
 
 const root = mkdtempSync(join(tmpdir(), "release-verifier-"));
 const decisions = join(root, "decisions");
@@ -28,6 +29,16 @@ describe("release directory verifier tamper matrix", () => {
   it("rejects full-directory cross-artifact identity mismatch after valid repinning", () => { const path = legacyClone("identity-mismatch"); const name = "operational_occurrence_review_decisions.json"; const snapshot = JSON.parse(readFileSync(join(path, name), "utf8")); snapshot.decisions[0].occurrence_id = "occurrence:missing"; rmSync(join(path, name)); writeFileSync(join(path, name), `${JSON.stringify(snapshot)}\n`); repin(path, name); expect(() => verifyReleaseDirectory(path)).toThrow("references missing occurrence"); });
   it("rejects full-directory stale review projection after valid repinning", () => { const path = legacyClone("stale-projection"); const name = "operational_occurrence_review_decisions.json"; const snapshot = JSON.parse(readFileSync(join(path, name), "utf8")); snapshot.decisions[0].founding_key = `${snapshot.decisions[0].founding_key}:stale`; rmSync(join(path, name)); writeFileSync(join(path, name), `${JSON.stringify(snapshot)}\n`); repin(path, name); expect(() => verifyReleaseDirectory(path)).toThrow("is stale for occurrence"); });
   it("rejects manifest-addressed symlinks even when their bytes and hashes match", () => { const path = clone("symlink-escape"); const name = "routes.jsonl"; const outside = join(root, "outside-routes.jsonl"); writeFileSync(outside, readFileSync(join(path, name))); rmSync(join(path, name)); symlinkSync(outside, join(path, name)); expect(() => verifyReleaseDirectory(path)).toThrow("symbolic link"); });
+  it("registers strict manifest-v5 route contracts", () => {
+    const routeRecords = readFileSync(join(process.cwd(), "data/canonical/routes.jsonl"), "utf8").split(/\r?\n/u).filter(Boolean).map((line) => JSON.parse(line));
+    const projection = loadRouteIdentityReleaseProjection({ rootDir: process.cwd(), records: routeRecords });
+    if (!projection) throw new Error("selected route identity projection missing");
+    const snapshot = JSON.parse(projection.snapshotBytes);
+    expect(() => RELEASE_CONTRACT_REGISTRY.route_identity_snapshot![1]!(Buffer.from(projection.snapshotBytes), "route_identity_snapshot.json")).not.toThrow();
+    expect(() => RELEASE_CONTRACT_REGISTRY.route_anchors![1]!(Buffer.from(""), "route_anchors.jsonl")).not.toThrow();
+    expect(() => RELEASE_CONTRACT_REGISTRY.route_identity_snapshot![1]!(Buffer.from(JSON.stringify({ ...snapshot, unexpected: true })), "route_identity_snapshot.json")).toThrow("strict keys mismatch");
+  });
+
   it("binds quarantine metadata to the actual named release before honoring it", () => {
     const path = clone("forged-status");
     const manifestBytes = readFileSync(join(path, "manifest.json"));

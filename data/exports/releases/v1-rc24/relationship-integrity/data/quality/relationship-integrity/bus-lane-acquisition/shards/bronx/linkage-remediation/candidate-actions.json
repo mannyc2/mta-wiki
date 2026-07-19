@@ -1,0 +1,511 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-07-15T22-00-00-000Z_bronx-acquisition-linkage-remediation",
+  "candidates": [
+    {
+      "candidate_id": "study-event-v2:2dd76c9b799ab1165b237330",
+      "registry_route_id": "BX2",
+      "canonical_gtfs_route_id": "BX2",
+      "canonical_route_record_id": "route_bx2-ace",
+      "corridor_group": "East 149th Street",
+      "project_id": "project_east-149th-street-bus-priority-improvements-2020",
+      "treatment_ids": [
+        "treatment_east-149th-street-bus-lanes-2020-proposal"
+      ],
+      "corridor_id": "corridor_east-149-st",
+      "route_corridor_action": "verified_existing",
+      "generic_linkage_reconciled": true,
+      "canonical_links_added": [
+        "relation_bronx-e149-bus-lanes-located-on-corridor",
+        "relation_bronx-e149-project-has-bus-lanes",
+        "relation_bronx-e149-project-serves-bx2",
+        "relation_bronx-e149-project-uses-corridor"
+      ],
+      "canonical_links_verified_existing": [
+        "relation_operates-on-corridor-route-bx2-ace-corridor-east-149-st_c8733902ce"
+      ],
+      "coordinated_physical_scope_relation_ids": [],
+      "canonical_records_added": [
+        "project_east-149th-street-bus-priority-improvements-2020",
+        "source_e149-cb1",
+        "treatment_east-149th-street-bus-lanes-2020-proposal"
+      ],
+      "staged_source_ids": [
+        "e149_cb1"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:3134629ede9faeff4c6f54b5",
+      "registry_route_id": "BX35",
+      "canonical_gtfs_route_id": "BX35",
+      "canonical_route_record_id": "route_bx35",
+      "corridor_group": "CB5 Washington Bridge",
+      "project_id": "project_better-buses-action-plan",
+      "treatment_ids": [
+        "treatment_washington-bridge-bus-lanes"
+      ],
+      "corridor_id": "corridor_washington-bridge",
+      "route_corridor_action": "added",
+      "generic_linkage_reconciled": true,
+      "canonical_links_added": [
+        "relation_bronx-bx35-operates-washington-bridge",
+        "relation_bronx-cb5-project-has-washington-bridge-bus-lanes",
+        "relation_bronx-cb5-project-serves-bx35"
+      ],
+      "canonical_links_verified_existing": [
+        "relation_project-has-corridor-washington-bridge"
+      ],
+      "coordinated_physical_scope_relation_ids": [
+        "relation_bus-lane-treatment-scope-v1-washington-bridge-bus-lanes-on-washington-bridge"
+      ],
+      "canonical_records_added": [],
+      "staged_source_ids": [
+        "bx_cb5_projects_dec032019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:37447319d0697677f54ec0db",
+      "registry_route_id": "BX13",
+      "canonical_gtfs_route_id": "BX13",
+      "canonical_route_record_id": "route_bx13",
+      "corridor_group": "CB5 Washington Bridge",
+      "project_id": "project_better-buses-action-plan",
+      "treatment_ids": [
+        "treatment_washington-bridge-bus-lanes"
+      ],
+      "corridor_id": "corridor_washington-bridge",
+      "route_corridor_action": "verified_existing",
+      "generic_linkage_reconciled": true,
+      "canonical_links_added": [
+        "relation_bronx-cb5-project-has-washington-bridge-bus-lanes",
+        "relation_bronx-cb5-project-serves-bx13"
+      ],
+      "canonical_links_verified_existing": [
+        "relation_operates-on-corridor-route-bx13-corridor-washington-bridge_2d306086af",
+        "relation_project-has-corridor-washington-bridge"
+      ],
+      "coordinated_physical_scope_relation_ids": [
+        "relation_bus-lane-treatment-scope-v1-washington-bridge-bus-lanes-on-washington-bridge"
+      ],
+      "canonical_records_added": [],
+      "staged_source_ids": [
+        "bx_cb5_projects_dec032019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:3a7457be7847b8857c79fc68",
+      "registry_route_id": "BX4",
+      "canonical_gtfs_route_id": "BX4",
+      "canonical_route_record_id": "route_bx4",
+      "corridor_group": "East 149th Street",
+      "project_id": "project_east-149th-street-bus-priority-improvements-2020",
+      "treatment_ids": [
+        "treatment_east-149th-street-bus-lanes-2020-proposal"
+      ],
+      "corridor_id": "corridor_east-149-st",
+      "route_corridor_action": "added",
+      "generic_linkage_reconciled": true,
+      "canonical_links_added": [
+        "relation_bronx-bx4-operates-e149",
+        "relation_bronx-e149-bus-lanes-located-on-corridor",
+        "relation_bronx-e149-project-has-bus-lanes",
+        "relation_bronx-e149-project-serves-bx4",
+        "relation_bronx-e149-project-uses-corridor"
+      ],
+      "canonical_links_verified_existing": [],
+      "coordinated_physical_scope_relation_ids": [],
+      "canonical_records_added": [
+        "project_east-149th-street-bus-priority-improvements-2020",
+        "route_bx4",
+        "source_e149-cb1",
+        "treatment_east-149th-street-bus-lanes-2020-proposal"
+      ],
+      "staged_source_ids": [
+        "e149_cb1"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:3f2f3824ccf3987f4fac2f73",
+      "registry_route_id": "BX11",
+      "canonical_gtfs_route_id": "BX11",
+      "canonical_route_record_id": "route_bx11",
+      "corridor_group": "CB5 Washington Bridge",
+      "project_id": "project_better-buses-action-plan",
+      "treatment_ids": [
+        "treatment_washington-bridge-bus-lanes"
+      ],
+      "corridor_id": "corridor_washington-bridge",
+      "route_corridor_action": "verified_existing",
+      "generic_linkage_reconciled": true,
+      "canonical_links_added": [
+        "relation_bronx-cb5-project-has-washington-bridge-bus-lanes",
+        "relation_bronx-cb5-project-serves-bx11"
+      ],
+      "canonical_links_verified_existing": [
+        "relation_operates-on-corridor-route-bx11-corridor-washington-bridge_a66cb89fa5",
+        "relation_project-has-corridor-washington-bridge"
+      ],
+      "coordinated_physical_scope_relation_ids": [
+        "relation_bus-lane-treatment-scope-v1-washington-bridge-bus-lanes-on-washington-bridge"
+      ],
+      "canonical_records_added": [],
+      "staged_source_ids": [
+        "bx_cb5_projects_dec032019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:452901b4951f8fd3f5105e3e",
+      "registry_route_id": "BX12+",
+      "canonical_gtfs_route_id": "BX12+",
+      "canonical_route_record_id": "route_bx12-plus",
+      "corridor_group": "Pelham Parkway",
+      "project_id": "project_pelham-parkway-reconstruction-boston-road-stillwell-avenue",
+      "treatment_ids": [
+        "treatment_pelham-parkway-dedicated-bus-lanes-2023"
+      ],
+      "corridor_id": "corridor_pelham-parkway-boston-road-stillwell-avenue",
+      "route_corridor_action": "added",
+      "generic_linkage_reconciled": true,
+      "canonical_links_added": [
+        "relation_bronx-bx12-sbs-operates-pelham-parkway-reconstruction-corridor",
+        "relation_bronx-pelham-parkway-bus-lanes-located-on-corridor",
+        "relation_bronx-pelham-parkway-project-has-bus-lanes",
+        "relation_bronx-pelham-parkway-project-serves-bx12-sbs",
+        "relation_bronx-pelham-parkway-project-uses-corridor"
+      ],
+      "canonical_links_verified_existing": [],
+      "coordinated_physical_scope_relation_ids": [],
+      "canonical_records_added": [
+        "corridor_pelham-parkway-boston-road-stillwell-avenue",
+        "project_pelham-parkway-reconstruction-boston-road-stillwell-avenue",
+        "source_pelham-parkway-completion",
+        "treatment_pelham-parkway-dedicated-bus-lanes-2023"
+      ],
+      "staged_source_ids": [
+        "pelham_parkway_completion"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:531b37f7c6e156178c51707a",
+      "registry_route_id": "BX3",
+      "canonical_gtfs_route_id": "BX3",
+      "canonical_route_record_id": "route_bx3",
+      "corridor_group": "CB5 University Avenue",
+      "project_id": "project_better-buses-action-plan",
+      "treatment_ids": [
+        "treatment_university-north-tremont",
+        "treatment_university-south-tremont"
+      ],
+      "corridor_id": "corridor_university-ave",
+      "route_corridor_action": "verified_existing",
+      "generic_linkage_reconciled": true,
+      "canonical_links_added": [
+        "relation_bronx-cb5-project-has-university-north-bus-lane",
+        "relation_bronx-cb5-project-has-university-south-bus-lane",
+        "relation_bronx-cb5-project-serves-bx3"
+      ],
+      "canonical_links_verified_existing": [
+        "relation_operates-on-corridor-route-bx3-corridor-university-ave_d112da0c95",
+        "relation_project-has-corridor-university"
+      ],
+      "coordinated_physical_scope_relation_ids": [
+        "relation_bus-lane-treatment-scope-v1-university-north-tremont-on-university-ave",
+        "relation_bus-lane-treatment-scope-v1-university-south-tremont-on-university-ave"
+      ],
+      "canonical_records_added": [],
+      "staged_source_ids": [
+        "bx_cb5_projects_dec032019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:62d9b1d8b5d7ede06fa8ba6a",
+      "registry_route_id": "BX29",
+      "canonical_gtfs_route_id": "BX29",
+      "canonical_route_record_id": "route_bx29",
+      "corridor_group": "Pelham Bay",
+      "project_id": "project_pelham-bay-park-station-improvements-2023",
+      "treatment_ids": [
+        "treatment_pelham-bay-bus-contraflow-lane",
+        "treatment_wilkinson-avenue-bus-lane-pelham-bay-2023"
+      ],
+      "corridor_id": "corridor_pelham-bay-station",
+      "route_corridor_action": "added",
+      "generic_linkage_reconciled": true,
+      "canonical_links_added": [
+        "relation_bronx-bx29-operates-pelham-bay-station",
+        "relation_bronx-pelham-bay-project-has-westchester-contraflow-lane",
+        "relation_bronx-pelham-bay-project-has-wilkinson-bus-lane",
+        "relation_bronx-pelham-bay-project-serves-bx29",
+        "relation_bronx-pelham-bay-project-uses-station-corridor",
+        "relation_bronx-pelham-bay-westchester-lane-located-on-station-corridor",
+        "relation_bronx-pelham-bay-wilkinson-lane-located-on-station-corridor"
+      ],
+      "canonical_links_verified_existing": [],
+      "coordinated_physical_scope_relation_ids": [],
+      "canonical_records_added": [
+        "project_pelham-bay-park-station-improvements-2023",
+        "route_bx29",
+        "source_pelham-bay-completion",
+        "treatment_wilkinson-avenue-bus-lane-pelham-bay-2023"
+      ],
+      "staged_source_ids": [
+        "pelham_bay_completion"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:74303954f2450436e58eadaf",
+      "registry_route_id": "BX17",
+      "canonical_gtfs_route_id": "BX17",
+      "canonical_route_record_id": "route_bx17",
+      "corridor_group": "East 149th Street",
+      "project_id": "project_east-149th-street-bus-priority-improvements-2020",
+      "treatment_ids": [
+        "treatment_east-149th-street-bus-lanes-2020-proposal"
+      ],
+      "corridor_id": "corridor_east-149-st",
+      "route_corridor_action": "added",
+      "generic_linkage_reconciled": true,
+      "canonical_links_added": [
+        "relation_bronx-bx17-operates-e149",
+        "relation_bronx-e149-bus-lanes-located-on-corridor",
+        "relation_bronx-e149-project-has-bus-lanes",
+        "relation_bronx-e149-project-serves-bx17",
+        "relation_bronx-e149-project-uses-corridor"
+      ],
+      "canonical_links_verified_existing": [],
+      "coordinated_physical_scope_relation_ids": [],
+      "canonical_records_added": [
+        "project_east-149th-street-bus-priority-improvements-2020",
+        "source_e149-cb1",
+        "treatment_east-149th-street-bus-lanes-2020-proposal"
+      ],
+      "staged_source_ids": [
+        "e149_cb1"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:90af3c526dedca40f0e7fb28",
+      "registry_route_id": "BX7",
+      "canonical_gtfs_route_id": "BX7",
+      "canonical_route_record_id": "route_bx7-ace",
+      "corridor_group": "West 178th Street",
+      "project_id": "project_west-178th-street-improvements-2020",
+      "treatment_ids": [
+        "treatment_west-178th-street-bus-only-lane-2020-proposal"
+      ],
+      "corridor_id": "corridor_west-178th-street-fort-washington-wadsworth",
+      "route_corridor_action": "added",
+      "generic_linkage_reconciled": true,
+      "canonical_links_added": [
+        "relation_bronx-bx7-operates-west-178th",
+        "relation_bronx-west-178th-bus-only-lane-located-on-corridor",
+        "relation_bronx-west-178th-project-has-bus-only-lane",
+        "relation_bronx-west-178th-project-serves-bx7",
+        "relation_bronx-west-178th-project-uses-corridor"
+      ],
+      "canonical_links_verified_existing": [],
+      "coordinated_physical_scope_relation_ids": [],
+      "canonical_records_added": [
+        "corridor_west-178th-street-fort-washington-wadsworth",
+        "project_west-178th-street-improvements-2020",
+        "source_w178-cb12",
+        "treatment_west-178th-street-bus-only-lane-2020-proposal"
+      ],
+      "staged_source_ids": [
+        "w178_cb12"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:aa65fa96dffcaf26e7f07c85",
+      "registry_route_id": "BX24",
+      "canonical_gtfs_route_id": "BX24",
+      "canonical_route_record_id": "route_bx24-oct2022",
+      "corridor_group": "Pelham Bay",
+      "project_id": "project_pelham-bay-park-station-improvements-2023",
+      "treatment_ids": [
+        "treatment_pelham-bay-bus-contraflow-lane",
+        "treatment_wilkinson-avenue-bus-lane-pelham-bay-2023"
+      ],
+      "corridor_id": "corridor_pelham-bay-station",
+      "route_corridor_action": "verified_existing",
+      "generic_linkage_reconciled": true,
+      "canonical_links_added": [
+        "relation_bronx-pelham-bay-project-has-westchester-contraflow-lane",
+        "relation_bronx-pelham-bay-project-has-wilkinson-bus-lane",
+        "relation_bronx-pelham-bay-project-serves-bx24",
+        "relation_bronx-pelham-bay-project-uses-station-corridor",
+        "relation_bronx-pelham-bay-westchester-lane-located-on-station-corridor",
+        "relation_bronx-pelham-bay-wilkinson-lane-located-on-station-corridor"
+      ],
+      "canonical_links_verified_existing": [
+        "relation_operates-on-corridor-route-bx24-oct2022-corridor-pelham-bay-station_d3b0dea51b"
+      ],
+      "coordinated_physical_scope_relation_ids": [],
+      "canonical_records_added": [
+        "project_pelham-bay-park-station-improvements-2023",
+        "source_pelham-bay-completion",
+        "treatment_wilkinson-avenue-bus-lane-pelham-bay-2023"
+      ],
+      "staged_source_ids": [
+        "pelham_bay_completion"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:b8621d718aca1a1bf4d5b0d6",
+      "registry_route_id": "BX23",
+      "canonical_gtfs_route_id": "BX23",
+      "canonical_route_record_id": "route_meeting-doc-129371-bx23",
+      "corridor_group": "Pelham Bay",
+      "project_id": "project_pelham-bay-park-station-improvements-2023",
+      "treatment_ids": [
+        "treatment_pelham-bay-bus-contraflow-lane",
+        "treatment_wilkinson-avenue-bus-lane-pelham-bay-2023"
+      ],
+      "corridor_id": "corridor_pelham-bay-station",
+      "route_corridor_action": "added",
+      "generic_linkage_reconciled": true,
+      "canonical_links_added": [
+        "relation_bronx-bx23-operates-pelham-bay-station",
+        "relation_bronx-pelham-bay-project-has-westchester-contraflow-lane",
+        "relation_bronx-pelham-bay-project-has-wilkinson-bus-lane",
+        "relation_bronx-pelham-bay-project-serves-bx23",
+        "relation_bronx-pelham-bay-project-uses-station-corridor",
+        "relation_bronx-pelham-bay-westchester-lane-located-on-station-corridor",
+        "relation_bronx-pelham-bay-wilkinson-lane-located-on-station-corridor"
+      ],
+      "canonical_links_verified_existing": [],
+      "coordinated_physical_scope_relation_ids": [],
+      "canonical_records_added": [
+        "project_pelham-bay-park-station-improvements-2023",
+        "source_pelham-bay-completion",
+        "treatment_wilkinson-avenue-bus-lane-pelham-bay-2023"
+      ],
+      "staged_source_ids": [
+        "pelham_bay_completion"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:c725655aeb19bb344c1ce990",
+      "registry_route_id": "BX36",
+      "canonical_gtfs_route_id": "BX36",
+      "canonical_route_record_id": "route_bx36",
+      "corridor_group": "CB5 University Avenue",
+      "project_id": "project_better-buses-action-plan",
+      "treatment_ids": [
+        "treatment_university-north-tremont",
+        "treatment_university-south-tremont"
+      ],
+      "corridor_id": "corridor_university-ave",
+      "route_corridor_action": "verified_existing",
+      "generic_linkage_reconciled": true,
+      "canonical_links_added": [
+        "relation_bronx-cb5-project-has-university-north-bus-lane",
+        "relation_bronx-cb5-project-has-university-south-bus-lane",
+        "relation_bronx-cb5-project-serves-bx36"
+      ],
+      "canonical_links_verified_existing": [
+        "relation_bx36-operates-university",
+        "relation_project-has-corridor-university"
+      ],
+      "coordinated_physical_scope_relation_ids": [
+        "relation_bus-lane-treatment-scope-v1-university-north-tremont-on-university-ave",
+        "relation_bus-lane-treatment-scope-v1-university-south-tremont-on-university-ave"
+      ],
+      "canonical_records_added": [],
+      "staged_source_ids": [
+        "bx_cb5_projects_dec032019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    }
+  ]
+}

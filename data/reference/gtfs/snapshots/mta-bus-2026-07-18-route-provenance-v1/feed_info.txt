@@ -1,0 +1,7 @@
+component_feed_id,feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version,feed_contact_url
+mta-bus-company,MTA New York City Transit,https://www.mta.info/,EN,20260628,20260905,gtfs_busco_20260611T155311Z,https://groups.google.com/forum/#!forum/mtadeveloperresources
+nyct-bronx,MTA New York City Transit,https://www.mta.info/,EN,20260627,20260905,gtfs_bx_20260611T155333Z,https://groups.google.com/forum/#!forum/mtadeveloperresources
+nyct-brooklyn,MTA New York City Transit,https://www.mta.info/,EN,20260627,20260905,gtfs_b_20260611T155327Z,https://groups.google.com/forum/#!forum/mtadeveloperresources
+nyct-manhattan,MTA New York City Transit,https://www.mta.info/,EN,20260627,20260905,gtfs_m_20260611T155328Z,https://groups.google.com/forum/#!forum/mtadeveloperresources
+nyct-queens,MTA New York City Transit,https://www.mta.info/,EN,20260627,20260905,gtfs_q_20260611T155317Z,https://groups.google.com/forum/#!forum/mtadeveloperresources
+nyct-staten-island,MTA New York City Transit,https://www.mta.info/,EN,20260628,20260905,gtfs_si_20260611T155316Z,https://groups.google.com/forum/#!forum/mtadeveloperresources

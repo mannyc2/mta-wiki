@@ -30,7 +30,7 @@ function validateReleaseContracts(): string[] {
   const releasesDir = join(repoRoot, "data", "exports", "releases");
   const latest = readFileSync(join(releasesDir, "LATEST"), "utf8").trim();
   try {
-    verifyReleaseDirectory(join(releasesDir, latest), latest);
+    verifyReleaseDirectory(join(releasesDir, latest), latest, { sourceRootDir: repoRoot });
   } catch (error) {
     issues.push(`LATEST ${latest}: ${error instanceof Error ? error.message : String(error)}`);
   }
@@ -48,11 +48,17 @@ function validateReleaseContracts(): string[] {
       continue;
     }
     try {
-      verifyReleaseDirectory(join(releasesDir, entry.release_id), entry.release_id, { allowQuarantined: true });
+      verifyReleaseDirectory(join(releasesDir, entry.release_id), entry.release_id, {
+        allowQuarantined: true,
+        sourceRootDir: repoRoot,
+      });
       issues.push(`quarantined release ${entry.release_id} unexpectedly passes strict verification`);
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
-      if (!message.includes(status.failing_artifact.decoder_error)) {
+      const recordedVerifierError = status.schema_version === 1
+        ? status.failing_artifact.decoder_error
+        : status.failing_artifact.verifier_error;
+      if (!message.includes(recordedVerifierError)) {
         issues.push(`quarantined release ${entry.release_id} fails differently than recorded: ${message}`);
       }
     }

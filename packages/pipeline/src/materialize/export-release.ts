@@ -13,6 +13,7 @@ import {
   routeAnchorOverridesPath,
   writeRouteAnchorsJsonl,
   type GtfsRoute,
+  type RouteAnchorRow,
   type RouteAnchorOverrides,
   type ReviewedNonGtfsRouteDispositions,
 } from "@mta-wiki/pipeline/materialize/route-anchors";
@@ -27,6 +28,7 @@ import {
 } from "@mta-wiki/pipeline/materialize/operational-anchors";
 import {
   OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION,
+  OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_V2_VERSION,
   assertOperationalAnchorReviewDecisions,
   loadOperationalAnchorReviewDecisions,
   operationalAnchorReviewSnapshotJson,
@@ -45,6 +47,7 @@ import {
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-identity";
 import {
   OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION,
+  OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_V2_VERSION,
   assertOperationalOccurrenceReviewDecisions,
   loadOperationalOccurrenceAcceptedDecisions,
   operationalOccurrenceReviewDecisions,
@@ -57,7 +60,13 @@ import {
   relationshipReleaseBundleDescriptorPath,
   stageRelationshipReleaseBundle,
 } from "@mta-wiki/pipeline/materialize/relationship-release-bundle";
+import {
+  assertOperationalProjectionRetirementsAgainstRouteIdentity,
+  loadOperationalProjectionRetirements,
+  stageOperationalReviewRetirementArtifacts,
+} from "@mta-wiki/pipeline/materialize/operational-projection-retirements";
 import { verifyReleaseDirectory } from "@mta-wiki/pipeline/materialize/release-verifier";
+import { loadRouteIdentityReleaseProjection } from "@mta-wiki/pipeline/materialize/route-identity-release";
 
 export type ReleaseManifestFile = {
   bytes: number;
@@ -65,15 +74,17 @@ export type ReleaseManifestFile = {
 };
 
 export type ReleaseManifest = {
-  manifest_version: 1 | 2 | 3 | 4;
+  manifest_version: 1 | 2 | 3 | 4 | 5;
   release_id: string;
   generator_commit: string;
   contract_versions: {
     operational_anchors?: typeof OPERATIONAL_ANCHOR_SCHEMA_VERSION | undefined;
-    operational_anchor_review_decisions?: typeof OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION | undefined;
+    operational_anchor_review_decisions?: 1 | 2 | undefined;
     operational_occurrences?: 1 | typeof OPERATIONAL_OCCURRENCE_SCHEMA_VERSION | undefined;
-    operational_occurrence_review_decisions?: typeof OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION | undefined;
+    operational_occurrence_review_decisions?: 1 | 2 | undefined;
     relationship_integrity_bundle?: typeof RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION | undefined;
+    route_anchors?: 1 | undefined;
+    route_identity_snapshot?: 1 | undefined;
   };
   record_counts: Record<string, number>;
   files: Record<string, ReleaseManifestFile>;
@@ -88,6 +99,7 @@ export type ReleaseManifest = {
     taxonomy: string | null;
     quality_report: string | null;
     relationship_integrity_bundle?: string | null | undefined;
+    route_identity_snapshot?: string | null | undefined;
   };
 };
 
@@ -145,8 +157,8 @@ function assertManifestKeys(object: Record<string, unknown>, allowed: readonly s
 export function parseReleaseManifest(value: unknown): ReleaseManifest {
   const root = manifestObject(value, "$root");
   const version = root.manifest_version === undefined ? 1 : root.manifest_version;
-  if (version !== 1 && version !== 2 && version !== 3 && version !== 4) {
-    throw new Error("Invalid release manifest manifest_version: expected 1, 2, 3, or 4");
+  if (version !== 1 && version !== 2 && version !== 3 && version !== 4 && version !== 5) {
+    throw new Error("Invalid release manifest manifest_version: expected 1, 2, 3, 4, or 5");
   }
   assertManifestKeys(
     root,
@@ -216,6 +228,7 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
               "taxonomy",
               "quality_report",
               "relationship_integrity_bundle",
+              ...(version === 5 ? ["route_identity_snapshot"] : []),
             ],
     "pointers",
   );
@@ -279,6 +292,7 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
               "operational_occurrences",
               "operational_occurrence_review_decisions",
               "relationship_integrity_bundle",
+              ...(version === 5 ? ["route_anchors", "route_identity_snapshot"] : []),
             ],
       "contract_versions",
     );
@@ -286,12 +300,15 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
       throw new Error(`Invalid release manifest contract_versions.operational_anchors: expected ${OPERATIONAL_ANCHOR_SCHEMA_VERSION}`);
     }
     contracts.operational_anchors = OPERATIONAL_ANCHOR_SCHEMA_VERSION;
-    if (input.operational_anchor_review_decisions !== OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION) {
+    if (
+      input.operational_anchor_review_decisions !== OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION &&
+      (version !== 5 || input.operational_anchor_review_decisions !== OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_V2_VERSION)
+    ) {
       throw new Error(
-        `Invalid release manifest contract_versions.operational_anchor_review_decisions: expected ${OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION}`,
+        `Invalid release manifest contract_versions.operational_anchor_review_decisions: expected 1${version === 5 ? " or 2" : ""}`,
       );
     }
-    contracts.operational_anchor_review_decisions = OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION;
+    contracts.operational_anchor_review_decisions = input.operational_anchor_review_decisions;
     if (version >= 3) {
       if (input.operational_occurrences !== 1 && input.operational_occurrences !== OPERATIONAL_OCCURRENCE_SCHEMA_VERSION) {
         throw new Error(
@@ -299,19 +316,35 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
         );
       }
       contracts.operational_occurrences = input.operational_occurrences;
-      if (input.operational_occurrence_review_decisions !== OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION) {
+      if (
+        input.operational_occurrence_review_decisions !== OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION &&
+        (version !== 5 || input.operational_occurrence_review_decisions !== OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_V2_VERSION)
+      ) {
         throw new Error(
-          `Invalid release manifest contract_versions.operational_occurrence_review_decisions: expected ${OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION}`,
+          `Invalid release manifest contract_versions.operational_occurrence_review_decisions: expected 1${version === 5 ? " or 2" : ""}`,
         );
       }
-      contracts.operational_occurrence_review_decisions = OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION;
-      if (version === 4) {
+      contracts.operational_occurrence_review_decisions = input.operational_occurrence_review_decisions;
+      if (
+        version === 5 &&
+        contracts.operational_anchor_review_decisions !==
+          contracts.operational_occurrence_review_decisions
+      ) {
+        throw new Error(
+          "Invalid release manifest operational review contract versions: manifest-v5 requires both review snapshots at v1 or both at v2",
+        );
+      }
+      if (version >= 4) {
         if (input.relationship_integrity_bundle !== RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION) {
           throw new Error(
             `Invalid release manifest contract_versions.relationship_integrity_bundle: expected ${RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION}`,
           );
         }
         contracts.relationship_integrity_bundle = RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION;
+      }
+      if (version === 5) {
+        if (input.route_anchors !== 1 || input.route_identity_snapshot !== 1) throw new Error("Invalid release manifest route contract versions: expected route_anchors and route_identity_snapshot");
+        contracts.route_anchors = 1; contracts.route_identity_snapshot = 1;
       }
     }
   }
@@ -334,13 +367,14 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
       taxonomy: manifestPointer(pointersInput.taxonomy, "pointers.taxonomy"),
       quality_report: manifestPointer(pointersInput.quality_report, "pointers.quality_report"),
       relationship_integrity_bundle:
-        version === 4
+        version >= 4
           ? manifestAddressedPointer(
               pointersInput.relationship_integrity_bundle,
               "pointers.relationship_integrity_bundle",
               files,
             )
           : null,
+      route_identity_snapshot: version === 5 ? manifestAddressedPointer(pointersInput.route_identity_snapshot, "pointers.route_identity_snapshot", files) : null,
     },
   };
 }
@@ -365,6 +399,8 @@ export type ReleaseExportOptions = {
   operationalAnchorReviewDecisionDir?: string | undefined;
   operationalOccurrenceReviewDecisionDir?: string | undefined;
   operationalOccurrenceIdentityRegistry?: readonly OperationalOccurrenceIdentityEntry[] | undefined;
+  gtfsSnapshotId?: string | undefined;
+  outputRoot?: string | undefined;
   qualityReport?: string | null | undefined;
   relationshipIntegrityBundleDescriptor?: string | null | undefined;
 };
@@ -456,10 +492,12 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
 
   const rootDir = opts.rootDir ?? repoRoot;
   const reviewDecisionDir = requiredOperationalAnchorReviewDecisionDir(rootDir, opts.operationalAnchorReviewDecisionDir);
-  const releasesDir = releaseRoot(rootDir);
+  if (opts.force) throw new Error("Force replacement of release candidate IDs is forbidden");
+  if (opts.setLatest && opts.outputRoot) throw new Error("Replay output-root export cannot update LATEST");
+  const releasesDir = opts.outputRoot ?? releaseRoot(rootDir);
   const targetDir = join(releasesDir, releaseId);
   if (existsSync(targetDir)) {
-    if (!opts.force) throw new Error(`Release ${releaseId} already exists. Use --force to re-cut before publication.`);
+    throw new Error("Release " + releaseId + " already exists; choose a new immutable ID");
   }
 
   const records = opts.records ?? readCanonicalRecords();
@@ -490,20 +528,54 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   }
 
   const routeAnchorPath = join(dir, "route_anchors.jsonl");
-  const gtfsRoutes = opts.gtfsRoutes ?? (opts.records ? [] : readGtfsRoutesFromDb());
-  const routeAnchorReview =
-    opts.routeAnchorOverrides === undefined || opts.reviewedNonGtfsRouteDispositions === undefined
-      ? readRouteAnchorReview(routeAnchorOverridesPath(rootDir))
-      : undefined;
-  const routeAnchorOverrides = opts.routeAnchorOverrides ?? routeAnchorReview?.overrides ?? {};
-  const reviewedNonGtfsRouteDispositions =
-    opts.reviewedNonGtfsRouteDispositions ?? routeAnchorReview?.non_gtfs_dispositions ?? {};
-  const routeAnchors = computeRouteAnchors(records, gtfsRoutes, routeAnchorOverrides, reviewedNonGtfsRouteDispositions);
-  writeRouteAnchorsJsonl(routeAnchorPath, routeAnchors);
+  const routeIdentityRelease = loadRouteIdentityReleaseProjection({
+    rootDir,
+    records,
+    ...(opts.gtfsSnapshotId ? { snapshotId: opts.gtfsSnapshotId } : {}),
+  });
+  let routeAnchors: RouteAnchorRow[];
+  if (routeIdentityRelease) {
+    routeAnchors = routeIdentityRelease.routeAnchors;
+    writeFileSync(routeAnchorPath, routeIdentityRelease.routeAnchorsBytes, "utf8");
+  } else {
+    const gtfsRoutes = opts.gtfsRoutes ?? (opts.records ? [] : readGtfsRoutesFromDb());
+    const routeAnchorReview =
+      opts.routeAnchorOverrides === undefined || opts.reviewedNonGtfsRouteDispositions === undefined
+        ? readRouteAnchorReview(routeAnchorOverridesPath(rootDir))
+        : undefined;
+    const routeAnchorOverrides = opts.routeAnchorOverrides ?? routeAnchorReview?.overrides ?? {};
+    const reviewedNonGtfsRouteDispositions =
+      opts.reviewedNonGtfsRouteDispositions ?? routeAnchorReview?.non_gtfs_dispositions ?? {};
+    routeAnchors = computeRouteAnchors(records, gtfsRoutes, routeAnchorOverrides, reviewedNonGtfsRouteDispositions);
+    writeRouteAnchorsJsonl(routeAnchorPath, routeAnchors);
+  }
   fileEntries.push(["route_anchors.jsonl", fileMetadata(routeAnchorPath)]);
+  let routeIdentitySnapshotPath: string | null = null;
+  if (routeIdentityRelease) {
+    const routeAnchorMetadata = fileMetadata(routeAnchorPath);
+    if (routeIdentityRelease.snapshot.expected_route_anchors_count !== routeAnchors.length || routeIdentityRelease.snapshot.expected_route_anchors_sha256 !== routeAnchorMetadata.sha256) throw new Error("Route identity snapshot does not bind the generated route_anchors compatibility projection");
+    routeIdentitySnapshotPath = join(dir, "route_identity_snapshot.json");
+    writeFileSync(routeIdentitySnapshotPath, routeIdentityRelease.snapshotBytes, "utf8");
+    fileEntries.push(["route_identity_snapshot.json", fileMetadata(routeIdentitySnapshotPath)]);
+  }
+
+  const operationalProjectionRetirements = loadOperationalProjectionRetirements(rootDir);
+  if (operationalProjectionRetirements.length > 0 && !routeIdentityRelease) {
+    throw new Error("Operational projection retirements require an exact route-identity snapshot");
+  }
+  for (const artifact of stageOperationalReviewRetirementArtifacts(
+    rootDir,
+    dir,
+    operationalProjectionRetirements,
+  )) {
+    fileEntries.push([artifact.release_path, { bytes: artifact.bytes, sha256: artifact.sha256 }]);
+  }
 
   const acceptedReviewDecisions = assertOperationalAnchorReviewDecisions(
-    loadOperationalAnchorReviewDecisions(reviewDecisionDir),
+    loadOperationalAnchorReviewDecisions(reviewDecisionDir, {
+      rootDir,
+      retirements: operationalProjectionRetirements,
+    }),
     records,
   );
   const operationalAnchorProjection = computeOperationalAnchorProjection(records, routeAnchors, {
@@ -533,7 +605,7 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   const operationalAnchorReviewDecisionsPath = join(dir, "operational_anchor_review_decisions.json");
   writeFileSync(
     operationalAnchorReviewDecisionsPath,
-    operationalAnchorReviewSnapshotJson(acceptedReviewDecisions),
+    operationalAnchorReviewSnapshotJson(acceptedReviewDecisions, operationalProjectionRetirements),
     "utf8",
   );
   fileEntries.push([
@@ -544,8 +616,15 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   const occurrenceIdentityRegistry =
     opts.operationalOccurrenceIdentityRegistry ??
     loadOperationalOccurrenceIdentityRegistry(operationalOccurrenceIdentityRegistryPath(rootDir));
+  if (routeIdentityRelease) {
+    assertOperationalProjectionRetirementsAgainstRouteIdentity(
+      operationalProjectionRetirements,
+      routeIdentityRelease.snapshot,
+    );
+  }
   const acceptedOccurrenceReviewDecisions = loadOperationalOccurrenceAcceptedDecisions(
     opts.operationalOccurrenceReviewDecisionDir ?? operationalOccurrenceReviewAcceptedDir(rootDir),
+    { rootDir, retirements: operationalProjectionRetirements },
   );
   const operationalOccurrences = computeOperationalOccurrences(records, routeAnchors, {
     reviewDecisions: acceptedReviewDecisions,
@@ -578,7 +657,7 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   const operationalOccurrenceReviewDecisionsPath = join(dir, "operational_occurrence_review_decisions.json");
   writeFileSync(
     operationalOccurrenceReviewDecisionsPath,
-    operationalOccurrenceReviewSnapshotJson(occurrenceReviewDecisions),
+    operationalOccurrenceReviewSnapshotJson(occurrenceReviewDecisions, operationalProjectionRetirements),
     "utf8",
   );
   fileEntries.push([
@@ -642,16 +721,21 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
     }
   }
 
-  const manifestVersion = relationshipBundle ? 4 : 3;
+  const manifestVersion = routeIdentitySnapshotPath ? 5 : relationshipBundle ? 4 : 3;
   const manifest: ReleaseManifest = {
     manifest_version: manifestVersion,
     release_id: releaseId,
     generator_commit: gitHeadCommit(),
     contract_versions: {
       operational_anchors: OPERATIONAL_ANCHOR_SCHEMA_VERSION,
-      operational_anchor_review_decisions: OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION,
+      operational_anchor_review_decisions: operationalProjectionRetirements.length > 0
+        ? OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_V2_VERSION
+        : OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION,
       operational_occurrences: OPERATIONAL_OCCURRENCE_SCHEMA_VERSION,
-      operational_occurrence_review_decisions: OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION,
+      operational_occurrence_review_decisions: operationalProjectionRetirements.length > 0
+        ? OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_V2_VERSION
+        : OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION,
+      ...(routeIdentitySnapshotPath ? { route_anchors: 1 as const, route_identity_snapshot: 1 as const } : {}),
       ...(relationshipBundle
         ? { relationship_integrity_bundle: RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION }
         : {}),
@@ -668,6 +752,7 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
       route_anchors: "route_anchors.jsonl",
       taxonomy: "taxonomy.json",
       quality_report: opts.qualityReport ?? null,
+      ...(routeIdentitySnapshotPath ? { route_identity_snapshot: "route_identity_snapshot.json" } : {}),
       ...(relationshipBundle
         ? { relationship_integrity_bundle: relationshipBundle.manifest_path }
         : {}),
@@ -679,9 +764,9 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   writeFileSync(manifestPath, manifestBytes, "utf8");
   const manifestSha256 = sha256(manifestBytes);
 
-  verifyReleaseDirectory(dir, releaseId);
+  verifyReleaseDirectory(dir, releaseId, { sourceRootDir: rootDir });
 
-  installReleaseDirectory(dir, targetDir, Boolean(opts.force));
+  installReleaseDirectory(dir, targetDir, false);
 
   // LATEST is the public-release pointer, not a record of the most recent
   // internal cut. Promotion is explicit and happens only after every release

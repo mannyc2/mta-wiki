@@ -87,6 +87,47 @@ describe("rebuilt schema structure", () => {
     }
   });
 
+  it("carries exact snapshot identities, activity, catalog, and disagreements under composite keys", () => {
+    const db = buildSchemaOnly();
+    try {
+      const tables = new Map(schemaMaster(db)
+        .filter((entry) => entry.type === "table")
+        .map((entry) => [entry.name, entry.sql]));
+      expect([...tables.keys()]).toEqual(expect.arrayContaining([
+        "ref_gtfs_snapshots",
+        "ref_gtfs_route_inventory",
+        "ref_gtfs_route_activity",
+        "ref_current_bus_route_catalog",
+        "ref_gtfs_catalog_disagreements",
+      ]));
+      const primaryKey = (table: string) =>
+        (db.query(`PRAGMA table_info('${table}')`).all() as Array<{ name: string; pk: number }>)
+          .filter((column) => column.pk > 0)
+          .sort((left, right) => left.pk - right.pk)
+          .map((column) => column.name);
+      expect(primaryKey("ref_gtfs_route_inventory")).toEqual([
+        "snapshot_id",
+        "dataset_id",
+        "source_route_id",
+      ]);
+      expect(primaryKey("ref_gtfs_route_activity")).toEqual([
+        "snapshot_id",
+        "dataset_id",
+        "source_route_id",
+      ]);
+      expect(primaryKey("ref_current_bus_route_catalog")).toEqual(["snapshot_id", "exact_route_id"]);
+      expect(primaryKey("ref_gtfs_catalog_disagreements")).toEqual([
+        "snapshot_id",
+        "disagreement_type",
+        "exact_route_id",
+      ]);
+      expect(tables.get("ref_gtfs_route_inventory")).toContain("CHECK (gtfs_route_id = source_route_id)");
+      expect(tables.get("ref_gtfs_catalog_disagreements")).toContain("CHECK (equality_claim = 0)");
+    } finally {
+      db.close();
+    }
+  });
+
   it("is deterministic: two builds from SCHEMA_DDL produce identical sqlite_master text", () => {
     const hashOf = () => {
       const db = buildSchemaOnly();

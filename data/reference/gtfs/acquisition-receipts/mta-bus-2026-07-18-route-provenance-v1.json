@@ -1,0 +1,426 @@
+{
+  "schema_version": 1,
+  "contract_id": "gtfs-acquisition-receipt-v1",
+  "snapshot_id": "mta-bus-2026-07-18-route-provenance-v1",
+  "as_of_date": "2026-07-18",
+  "service_window_start": "2026-07-12",
+  "service_window_end": "2026-07-18",
+  "captured_at": "2026-07-18T18:05:27Z",
+  "accepted_by": "MTA Wiki owner (Codex task 019f7640-fd5c-7be2-8a40-a7c264284c0f)",
+  "accepted_at": "2026-07-18T18:05:27Z",
+  "acceptance_scope": "immutable_external_inputs_only_not_route_binding_decisions",
+  "acceptance_rationale": "The owner explicitly authorized acquisition and deterministic pinning of the official immutable GTFS and MTA Current Bus Routes inputs required by Plan 035, and explicitly authorized the shared NYCT route namespace model: five borough archives are schedule partitions of one mta-nyct-bus route namespace; shared identical routes catalog is one identity set; retain per-archive trip/service/stop provenance; MTA Bus Company separate; non-identical duplicate route definitions and exported cross-namespace collisions fail closed; source_route_id===gtfs_route_id.",
+  "merge_policy": "shared-nyct-route-namespace-v1",
+  "components": [
+    {
+      "component_feed_id": "nyct-brooklyn",
+      "dataset_id": "mta-nyct-bus",
+      "official_url": "https://rrgtfsfeeds.s3.amazonaws.com/gtfs_b.zip",
+      "local_artifact_name": "gtfs_b.zip",
+      "archive_sha256": "2dec79e490ede975dfbcb7b356c698509654db72eb27936eb57e5167a38e3fb5",
+      "feed_version": "gtfs_b_20260611T155327Z",
+      "feed_start_date": "2026-06-27",
+      "feed_end_date": "2026-09-05",
+      "reliable_interval_start": "2026-06-27",
+      "reliable_interval_end": "2026-09-05",
+      "agency_timezone": "America/New_York",
+      "routes_sha256": "ea37ca83d30f9a3e0f802ae87826c62761ae3d7a5e5b7d56cbb87344070cc431",
+      "files": {
+        "routes.txt": {
+          "path": "routes.txt",
+          "sha256": "ea37ca83d30f9a3e0f802ae87826c62761ae3d7a5e5b7d56cbb87344070cc431",
+          "bytes": 29513,
+          "rows": 307
+        },
+        "trips.txt": {
+          "path": "trips.txt",
+          "sha256": "0d34e4ccd58d3ba00138f6e3e9a81a09bf26ae3fa7b70a17783a6b6a4c063078",
+          "bytes": 4492534,
+          "rows": 46115
+        },
+        "calendar.txt": {
+          "path": "calendar.txt",
+          "sha256": "08a81bc374f7a45dd72906701a6c068633af8669707606655cd5686b1deabbb0",
+          "bytes": 1503,
+          "rows": 29
+        },
+        "calendar_dates.txt": {
+          "path": "calendar_dates.txt",
+          "sha256": "cb6db40d5b77a245022a8fdbbcddba083082cf64c4f8b99c6e2baa420414ed60",
+          "bytes": 7134,
+          "rows": 267
+        },
+        "stops.txt": {
+          "path": "stops.txt",
+          "sha256": "4c1300990f23dddfb194602ecbe0fc46dbaa1dad3b54de2c01e4130f84e09583",
+          "bytes": 275529,
+          "rows": 4558
+        },
+        "stop_times.txt": {
+          "path": "stop_times.txt",
+          "sha256": "ea2bc7c73d0731e7e95b1a39bdc0d97fd0d4fa2f0b694cdf9e063ed279f966dc",
+          "bytes": 123606655,
+          "rows": 1901457
+        },
+        "agency.txt": {
+          "path": "agency.txt",
+          "sha256": "feac9f16efb328f585bf24b3ebb21039fc2755a13d136feed4a7257345faf9c0",
+          "bytes": 165,
+          "rows": 1
+        },
+        "feed_info.txt": {
+          "path": "feed_info.txt",
+          "sha256": "2237726332bad5e60383dc223e3940efc4c4ec95baf3b5cae0ea6e079c90e31f",
+          "bytes": 266,
+          "rows": 1
+        }
+      },
+      "frequencies_present": false,
+      "conditional_location_files_present": false
+    },
+    {
+      "component_feed_id": "nyct-bronx",
+      "dataset_id": "mta-nyct-bus",
+      "official_url": "https://rrgtfsfeeds.s3.amazonaws.com/gtfs_bx.zip",
+      "local_artifact_name": "gtfs_bx.zip",
+      "archive_sha256": "e47c7bd67749048c0c34802084d26d1937f123f2e63bfb94ec8b1395e34bc75d",
+      "feed_version": "gtfs_bx_20260611T155333Z",
+      "feed_start_date": "2026-06-27",
+      "feed_end_date": "2026-09-05",
+      "reliable_interval_start": "2026-06-27",
+      "reliable_interval_end": "2026-09-05",
+      "agency_timezone": "America/New_York",
+      "routes_sha256": "ea37ca83d30f9a3e0f802ae87826c62761ae3d7a5e5b7d56cbb87344070cc431",
+      "files": {
+        "routes.txt": {
+          "path": "routes.txt",
+          "sha256": "ea37ca83d30f9a3e0f802ae87826c62761ae3d7a5e5b7d56cbb87344070cc431",
+          "bytes": 29513,
+          "rows": 307
+        },
+        "trips.txt": {
+          "path": "trips.txt",
+          "sha256": "79c670e2ed846ec4c987745e2e290e8af1b8a73a981bad236165c34bb70914f9",
+          "bytes": 3338903,
+          "rows": 33107
+        },
+        "calendar.txt": {
+          "path": "calendar.txt",
+          "sha256": "097d1339351d0e0bea65187d313a69fae17f07951cad8fc1c9fcf7c77399dfaf",
+          "bytes": 631,
+          "rows": 11
+        },
+        "calendar_dates.txt": {
+          "path": "calendar_dates.txt",
+          "sha256": "039e14b0f69995296ab92f5ecb9246e9c53b85ebfe7946a61f4029bc73f739a0",
+          "bytes": 3516,
+          "rows": 119
+        },
+        "stops.txt": {
+          "path": "stops.txt",
+          "sha256": "5b2d20c00dc46453bdf8e8f8bb10b8331f739fa716160f5ff0ce1da9b0b0fc38",
+          "bytes": 120927,
+          "rows": 1884
+        },
+        "stop_times.txt": {
+          "path": "stop_times.txt",
+          "sha256": "5c2236cfd2a4d084d6cbdcf5415af0cfb759cfb48bf774f4766cfe616beb1a5b",
+          "bytes": 61559153,
+          "rows": 933227
+        },
+        "agency.txt": {
+          "path": "agency.txt",
+          "sha256": "feac9f16efb328f585bf24b3ebb21039fc2755a13d136feed4a7257345faf9c0",
+          "bytes": 165,
+          "rows": 1
+        },
+        "feed_info.txt": {
+          "path": "feed_info.txt",
+          "sha256": "45c99366ed9aecb62e65e0b202a974956169a0471500bf68711679c8b03dd8f5",
+          "bytes": 267,
+          "rows": 1
+        }
+      },
+      "frequencies_present": false,
+      "conditional_location_files_present": false
+    },
+    {
+      "component_feed_id": "nyct-manhattan",
+      "dataset_id": "mta-nyct-bus",
+      "official_url": "https://rrgtfsfeeds.s3.amazonaws.com/gtfs_m.zip",
+      "local_artifact_name": "gtfs_m.zip",
+      "archive_sha256": "e020b620469140033feb17691c38e97042a42c0956437333b4c03a8361cfaa36",
+      "feed_version": "gtfs_m_20260611T155328Z",
+      "feed_start_date": "2026-06-27",
+      "feed_end_date": "2026-09-05",
+      "reliable_interval_start": "2026-06-27",
+      "reliable_interval_end": "2026-09-05",
+      "agency_timezone": "America/New_York",
+      "routes_sha256": "ea37ca83d30f9a3e0f802ae87826c62761ae3d7a5e5b7d56cbb87344070cc431",
+      "files": {
+        "routes.txt": {
+          "path": "routes.txt",
+          "sha256": "ea37ca83d30f9a3e0f802ae87826c62761ae3d7a5e5b7d56cbb87344070cc431",
+          "bytes": 29513,
+          "rows": 307
+        },
+        "trips.txt": {
+          "path": "trips.txt",
+          "sha256": "b786225cdc4bbb156895b85d4040503e5250fb33e2591e4403efb2dae7d9de7d",
+          "bytes": 3135371,
+          "rows": 30285
+        },
+        "calendar.txt": {
+          "path": "calendar.txt",
+          "sha256": "85fbe9d8d87d6e2a5b2960fd4ca26f032c9b18f269b4e7657f03ddab48d99d3e",
+          "bytes": 879,
+          "rows": 16
+        },
+        "calendar_dates.txt": {
+          "path": "calendar_dates.txt",
+          "sha256": "92c7b85061a412a3efe41c77893c484d76a1234304ffbf56c10d395e8dcb8629",
+          "bytes": 4432,
+          "rows": 151
+        },
+        "stops.txt": {
+          "path": "stops.txt",
+          "sha256": "97752054fde0e28f92e4d182bcf18ed9935917a87c9acbd01e87818db173a865",
+          "bytes": 108659,
+          "rows": 1825
+        },
+        "stop_times.txt": {
+          "path": "stop_times.txt",
+          "sha256": "6ab3ff43a4b7043189e63f6c95c10dc1746097f02891e171fab6913c62f2396d",
+          "bytes": 61631560,
+          "rows": 946079
+        },
+        "agency.txt": {
+          "path": "agency.txt",
+          "sha256": "feac9f16efb328f585bf24b3ebb21039fc2755a13d136feed4a7257345faf9c0",
+          "bytes": 165,
+          "rows": 1
+        },
+        "feed_info.txt": {
+          "path": "feed_info.txt",
+          "sha256": "491a7ea02e01d5d7b3def77c43fd3b0896eba44094d3c99ac5b09801b224fd93",
+          "bytes": 266,
+          "rows": 1
+        }
+      },
+      "frequencies_present": false,
+      "conditional_location_files_present": false
+    },
+    {
+      "component_feed_id": "nyct-queens",
+      "dataset_id": "mta-nyct-bus",
+      "official_url": "https://rrgtfsfeeds.s3.amazonaws.com/gtfs_q.zip",
+      "local_artifact_name": "gtfs_q.zip",
+      "archive_sha256": "d721863ae22c512ac494e2d341c4c087791ae925dd3c87a985084b40277e4189",
+      "feed_version": "gtfs_q_20260611T155317Z",
+      "feed_start_date": "2026-06-27",
+      "feed_end_date": "2026-09-05",
+      "reliable_interval_start": "2026-06-27",
+      "reliable_interval_end": "2026-09-05",
+      "agency_timezone": "America/New_York",
+      "routes_sha256": "ea37ca83d30f9a3e0f802ae87826c62761ae3d7a5e5b7d56cbb87344070cc431",
+      "files": {
+        "routes.txt": {
+          "path": "routes.txt",
+          "sha256": "ea37ca83d30f9a3e0f802ae87826c62761ae3d7a5e5b7d56cbb87344070cc431",
+          "bytes": 29513,
+          "rows": 307
+        },
+        "trips.txt": {
+          "path": "trips.txt",
+          "sha256": "a35a32aa76b3228f1753f03f78ba29a0bfae72c41788e206fe88aa118a04a1fe",
+          "bytes": 2385800,
+          "rows": 24723
+        },
+        "calendar.txt": {
+          "path": "calendar.txt",
+          "sha256": "0423205a521179635f3988f9e0e17cfe0b80207e03bf377e199f46776df5025b",
+          "bytes": 837,
+          "rows": 15
+        },
+        "calendar_dates.txt": {
+          "path": "calendar_dates.txt",
+          "sha256": "1f17f28c78c361464b217f2bd0d58eafa9fdb60ebd45b98fdc1c19203550fd00",
+          "bytes": 4492,
+          "rows": 150
+        },
+        "stops.txt": {
+          "path": "stops.txt",
+          "sha256": "66ad9a930baeccf356e160da365fcfad89e40d7e797fa19b0a2b2eb9a34f2063",
+          "bytes": 86583,
+          "rows": 1398
+        },
+        "stop_times.txt": {
+          "path": "stop_times.txt",
+          "sha256": "c9732df0867d79d7f375256c1795db1b6580da4ec76ba273bcb0f91dafe44380",
+          "bytes": 42606624,
+          "rows": 647928
+        },
+        "agency.txt": {
+          "path": "agency.txt",
+          "sha256": "feac9f16efb328f585bf24b3ebb21039fc2755a13d136feed4a7257345faf9c0",
+          "bytes": 165,
+          "rows": 1
+        },
+        "feed_info.txt": {
+          "path": "feed_info.txt",
+          "sha256": "fa95e71f8a48cfbc695a8569835e27d5ca107c6b1d377ca77c2abb6cfe6cd3c2",
+          "bytes": 266,
+          "rows": 1
+        }
+      },
+      "frequencies_present": false,
+      "conditional_location_files_present": false
+    },
+    {
+      "component_feed_id": "nyct-staten-island",
+      "dataset_id": "mta-nyct-bus",
+      "official_url": "https://rrgtfsfeeds.s3.amazonaws.com/gtfs_si.zip",
+      "local_artifact_name": "gtfs_si.zip",
+      "archive_sha256": "3a7e64f6b851f6aee796801c78c274b933974f161c255a668c83851172f38ef8",
+      "feed_version": "gtfs_si_20260611T155316Z",
+      "feed_start_date": "2026-06-28",
+      "feed_end_date": "2026-09-05",
+      "reliable_interval_start": "2026-06-28",
+      "reliable_interval_end": "2026-09-05",
+      "agency_timezone": "America/New_York",
+      "routes_sha256": "ea37ca83d30f9a3e0f802ae87826c62761ae3d7a5e5b7d56cbb87344070cc431",
+      "files": {
+        "routes.txt": {
+          "path": "routes.txt",
+          "sha256": "ea37ca83d30f9a3e0f802ae87826c62761ae3d7a5e5b7d56cbb87344070cc431",
+          "bytes": 29513,
+          "rows": 307
+        },
+        "trips.txt": {
+          "path": "trips.txt",
+          "sha256": "8c38f8dd8547fc8bad6072b0dec721f21a8305ed83882f889c97604884beb8e2",
+          "bytes": 1299705,
+          "rows": 12944
+        },
+        "calendar.txt": {
+          "path": "calendar.txt",
+          "sha256": "71680cd1b0807524e1a5766fb97e7955633aa086e906a77af37bdf2a5ada4e0c",
+          "bytes": 527,
+          "rows": 9
+        },
+        "calendar_dates.txt": {
+          "path": "calendar_dates.txt",
+          "sha256": "016614808ad52cde90f34738bc0af406a01145aa22c93d072b29b37b31543bc3",
+          "bytes": 2600,
+          "rows": 90
+        },
+        "stops.txt": {
+          "path": "stops.txt",
+          "sha256": "4df9a25a3e9c52682391c81eb8ea16eba54a29781a5ce44c35f643f49c0c1b60",
+          "bytes": 122943,
+          "rows": 1940
+        },
+        "stop_times.txt": {
+          "path": "stop_times.txt",
+          "sha256": "e2a4c9d69f2b16337ee3a36adce15af3e59f0cffd137eb5792c2ecaee1b05444",
+          "bytes": 41852262,
+          "rows": 629427
+        },
+        "agency.txt": {
+          "path": "agency.txt",
+          "sha256": "feac9f16efb328f585bf24b3ebb21039fc2755a13d136feed4a7257345faf9c0",
+          "bytes": 165,
+          "rows": 1
+        },
+        "feed_info.txt": {
+          "path": "feed_info.txt",
+          "sha256": "7fe5eb822cbd9b99aba407dae8108c129993d2151c53b6ef004309a58e3eed00",
+          "bytes": 267,
+          "rows": 1
+        }
+      },
+      "frequencies_present": false,
+      "conditional_location_files_present": false
+    },
+    {
+      "component_feed_id": "mta-bus-company",
+      "dataset_id": "mta-bus-company",
+      "official_url": "https://rrgtfsfeeds.s3.amazonaws.com/gtfs_busco.zip",
+      "local_artifact_name": "gtfs_busco.zip",
+      "archive_sha256": "94933c1af1f182b3cf20a7e11881f14b9afd4a3c75ea310ee5f368b55a62c636",
+      "feed_version": "gtfs_busco_20260611T155311Z",
+      "feed_start_date": "2026-06-28",
+      "feed_end_date": "2026-09-05",
+      "reliable_interval_start": "2026-06-28",
+      "reliable_interval_end": "2026-09-05",
+      "agency_timezone": "America/New_York",
+      "routes_sha256": "3a52783984c68daf2625f4828d436e23122767a340e8bb8719c16c17dd65c1d1",
+      "files": {
+        "routes.txt": {
+          "path": "routes.txt",
+          "sha256": "3a52783984c68daf2625f4828d436e23122767a340e8bb8719c16c17dd65c1d1",
+          "bytes": 11903,
+          "rows": 92
+        },
+        "trips.txt": {
+          "path": "trips.txt",
+          "sha256": "8ba0c6891cc3666e5ea6069f53f8a018ededf9af164c47448693f5d7b7d26dc2",
+          "bytes": 3207797,
+          "rows": 28845
+        },
+        "calendar.txt": {
+          "path": "calendar.txt",
+          "sha256": "29ec1da73732863dbf67028c7a089ba58798c8d1d56e36b6be56d787a88dca66",
+          "bytes": 1443,
+          "rows": 24
+        },
+        "calendar_dates.txt": {
+          "path": "calendar_dates.txt",
+          "sha256": "4f6948cd83153ac66e30f9c4ce5bea67680af5518c7b4ac9109f21b55dc5bfdb",
+          "bytes": 2710,
+          "rows": 72
+        },
+        "stops.txt": {
+          "path": "stops.txt",
+          "sha256": "53df2a4ae343d5bd0be912c293359d34d566a5d872557a2bfef7bb791d73b790",
+          "bytes": 219513,
+          "rows": 2732
+        },
+        "stop_times.txt": {
+          "path": "stop_times.txt",
+          "sha256": "a8dedb530bb6ac510348b0c42ecdf072ea3ab9396c76440819a95b61e1fb7853",
+          "bytes": 46246231,
+          "rows": 687957
+        },
+        "agency.txt": {
+          "path": "agency.txt",
+          "sha256": "99d2446ddd1345fefc3253c3385e55df8413a3ae5a52ffda1374f0d99bb37c5c",
+          "bytes": 125,
+          "rows": 1
+        },
+        "feed_info.txt": {
+          "path": "feed_info.txt",
+          "sha256": "7c5a6078ac8756e7b378735730c0ee67e39f7726aa12b62a49a33a05ef74966f",
+          "bytes": 270,
+          "rows": 1
+        }
+      },
+      "frequencies_present": false,
+      "conditional_location_files_present": false
+    }
+  ],
+  "current_bus_routes": {
+    "dataset_id": "h2wf-afav",
+    "official_url": "https://data.ny.gov/resource/h2wf-afav.json",
+    "local_artifact_name": "current_bus_routes.json",
+    "sha256": "d0147d9bb26dd142fb2cb325c32d30284bc5207853be2638e77723ef695b69d4",
+    "captured_at": "2026-07-18T18:05:27Z",
+    "effective_as_of_date": "2026-07-18",
+    "valid_from": "2026-06-28",
+    "valid_to": "2026-09-05",
+    "row_count": 1290,
+    "exact_route_id_count": 386,
+    "complete_universe": true,
+    "freshness_rule": "effective_as_of_date must lie within every selected row's inclusive valid_from/valid_to bounds"
+  }
+}

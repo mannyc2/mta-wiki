@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "decision_id": "qbnr-residual-implementation-phases-summer-fall-2025-timeline_subject-superseded-by-approved-occurrences",
+  "gap_id": "operational-coverage:e8aeaeec48424aed705c89ba",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-operational-integrity-2026-07-18",
+  "decided_at": "2026-07-18T18:28:45Z",
+  "rationale": "This board-item sentence is a coarse prospective two-phase schedule, not an independent route-level onset. The accepted occurrence fixture already contains 83 source-complete QBNR Phase 1 route occurrences and 38 source-complete Phase 2 route occurrences with exact route, treatment, date, and delivered scope. Linking this planning summary would add no distinct studyable fact and could create route-treatment cross-products, so this timeline-subject diagnostic is not applicable.",
+  "proposal_ids": [],
+  "evidence_refs": [
+    {
+      "record_id": "event_implementation-phases-summer-fall-2025",
+      "source_id": "queens_service_change_board_item_2025",
+      "evidence_id": "queens_service_change_board_item_2025#p001_c0012",
+      "block_id": "p001_c0012"
+    },
+    {
+      "record_id": "event_implementation-phases-summer-fall-2025",
+      "source_id": "queens_service_change_board_item_2025",
+      "evidence_id": "queens_service_change_board_item_2025#p006_c0009",
+      "block_id": "p006_c0009"
+    }
+  ],
+  "search_receipt_ids": []
+}

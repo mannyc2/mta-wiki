@@ -404,6 +404,118 @@ export const ref_agencies = sqliteTable("ref_agencies", {
   source: text("source"),
 });
 
+/** Selected immutable GTFS/Current Bus Routes snapshot loaded into canonical.db. The tracked
+ * snapshot directory remains authoritative; this row binds every normalized reference row below
+ * to its verified manifest bytes and preserves the four universe/parity counts. */
+export const ref_gtfs_snapshots = sqliteTable("ref_gtfs_snapshots", {
+  snapshot_id: text("snapshot_id").primaryKey(),
+  manifest_sha256: text("manifest_sha256").notNull(),
+  contract_id: text("contract_id").notNull(),
+  schema_version: integer("schema_version").notNull(),
+  dataset_id: text("dataset_id").notNull(),
+  captured_at: text("captured_at").notNull(),
+  as_of_date: text("as_of_date").notNull(),
+  service_window_start: text("service_window_start").notNull(),
+  service_window_end: text("service_window_end").notNull(),
+  merge_policy: text("merge_policy").notNull(),
+  id_remapping_policy: text("id_remapping_policy").notNull(),
+  catalog_dataset_id: text("catalog_dataset_id").notNull(),
+  catalog_artifact_sha256: text("catalog_artifact_sha256").notNull(),
+  catalog_effective_as_of_date: text("catalog_effective_as_of_date").notNull(),
+  route_identity_count: integer("route_identity_count").notNull(),
+  route_activity_count: integer("route_activity_count").notNull(),
+  catalog_identity_count: integer("catalog_identity_count").notNull(),
+  catalog_only_count: integer("catalog_only_count").notNull(),
+  gtfs_only_count: integer("gtfs_only_count").notNull(),
+});
+
+/** Lossless normalized mirror of route_inventory.jsonl. Exact service identity is the composite
+ * (snapshot_id, dataset_id, case-sensitive source_route_id); gtfs_route_id is required to equal
+ * source_route_id by the route-identity contract. Array-valued source facts use stable JSON. */
+export const ref_gtfs_route_inventory = sqliteTable("ref_gtfs_route_inventory", {
+  snapshot_id: text("snapshot_id").notNull().references(() => ref_gtfs_snapshots.snapshot_id),
+  dataset_id: text("dataset_id").notNull(),
+  source_route_id: text("source_route_id").notNull(),
+  gtfs_route_id: text("gtfs_route_id").notNull(),
+  component_feed_ids_json: text("component_feed_ids_json").notNull(),
+  agency_id: text("agency_id"),
+  raw_route_type: text("raw_route_type").notNull(),
+  route_family_id: text("route_family_id").notNull(),
+  route_short_name: text("route_short_name"),
+  route_long_name: text("route_long_name"),
+  route_desc: text("route_desc"),
+  declared_in_feed: integer("declared_in_feed").notNull(),
+  catalog_in_effect: text("catalog_in_effect").notNull(),
+  catalog_effective_as_of_date: text("catalog_effective_as_of_date").notNull(),
+  reliable_interval_start: text("reliable_interval_start").notNull(),
+  reliable_interval_end: text("reliable_interval_end").notNull(),
+  reliable_interval_derivation: text("reliable_interval_derivation").notNull(),
+  reliability_status: text("reliability_status").notNull(),
+  scheduled_in_window: text("scheduled_in_window").notNull(),
+  scheduled_service_dates_json: text("scheduled_service_dates_json").notNull(),
+  scheduled_trip_template_date_count: integer("scheduled_trip_template_date_count").notNull(),
+  frequencies_present: integer("frequencies_present").notNull(),
+  designation_literals_json: text("designation_literals_json").notNull(),
+  normalized_service_modes_json: text("normalized_service_modes_json").notNull(),
+  display_label: text("display_label").notNull(),
+  display_label_source: text("display_label_source").notNull(),
+  label_fallback: text("label_fallback"),
+  label_diff_json: text("label_diff_json"),
+}, (t) => [primaryKey({ columns: [t.snapshot_id, t.dataset_id, t.source_route_id] })]);
+
+/** Lossless normalized mirror of route_activity.jsonl. It deliberately remains separate from
+ * inventory so the loader/verifier can prove the two declared artifacts agree field-for-field. */
+export const ref_gtfs_route_activity = sqliteTable("ref_gtfs_route_activity", {
+  snapshot_id: text("snapshot_id").notNull().references(() => ref_gtfs_snapshots.snapshot_id),
+  dataset_id: text("dataset_id").notNull(),
+  source_route_id: text("source_route_id").notNull(),
+  gtfs_route_id: text("gtfs_route_id").notNull(),
+  component_feed_ids_json: text("component_feed_ids_json").notNull(),
+  scheduled_service_dates_json: text("scheduled_service_dates_json").notNull(),
+  scheduled_trip_template_date_count: integer("scheduled_trip_template_date_count").notNull(),
+  scheduled_in_window: text("scheduled_in_window").notNull(),
+  reliability_status: text("reliability_status").notNull(),
+  frequencies_present: integer("frequencies_present").notNull(),
+}, (t) => [primaryKey({ columns: [t.snapshot_id, t.dataset_id, t.source_route_id] })]);
+
+/** Complete point-in-time Current Bus Routes universe, distinct from GTFS declaration/activity. */
+export const ref_current_bus_route_catalog = sqliteTable("ref_current_bus_route_catalog", {
+  snapshot_id: text("snapshot_id").notNull().references(() => ref_gtfs_snapshots.snapshot_id),
+  exact_route_id: text("exact_route_id").notNull(),
+  schema_version: integer("schema_version").notNull(),
+  contract_id: text("contract_id").notNull(),
+  dataset_id: text("dataset_id").notNull(),
+  artifact_sha256: text("artifact_sha256").notNull(),
+  route_short_name: text("route_short_name"),
+  route_long_name: text("route_long_name"),
+  route_description: text("route_description"),
+  effective_as_of_date: text("effective_as_of_date").notNull(),
+  valid_from: text("valid_from").notNull(),
+  valid_to: text("valid_to").notNull(),
+  in_effect: text("in_effect").notNull(),
+  designation_literals_json: text("designation_literals_json").notNull(),
+  normalized_service_modes_json: text("normalized_service_modes_json").notNull(),
+  source_row_count: integer("source_row_count").notNull(),
+}, (t) => [primaryKey({ columns: [t.snapshot_id, t.exact_route_id] })]);
+
+/** Exact symmetric-difference ledger between the two source-defined identity universes. */
+export const ref_gtfs_catalog_disagreements = sqliteTable("ref_gtfs_catalog_disagreements", {
+  snapshot_id: text("snapshot_id").notNull().references(() => ref_gtfs_snapshots.snapshot_id),
+  disagreement_type: text("disagreement_type").notNull(),
+  exact_route_id: text("exact_route_id").notNull(),
+  schema_version: integer("schema_version").notNull(),
+  contract_id: text("contract_id").notNull(),
+  comparison_basis: text("comparison_basis").notNull(),
+  equality_claim: integer("equality_claim").notNull(),
+  catalog_dataset_id: text("catalog_dataset_id").notNull(),
+  catalog_effective_as_of_date: text("catalog_effective_as_of_date").notNull(),
+  catalog_route_id: text("catalog_route_id"),
+  gtfs_snapshot_id: text("gtfs_snapshot_id").notNull(),
+  gtfs_as_of_date: text("gtfs_as_of_date").notNull(),
+  gtfs_dataset_id: text("gtfs_dataset_id"),
+  gtfs_source_route_id: text("gtfs_source_route_id"),
+}, (t) => [primaryKey({ columns: [t.snapshot_id, t.disagreement_type, t.exact_route_id] })]);
+
 
 import type { SQLiteTable, SQLiteView } from "drizzle-orm/sqlite-core";
 
@@ -418,7 +530,9 @@ export const tablesByName: Record<string, SQLiteTable> = {
   relationship_completeness_subjects, relationship_completeness_roles,
   relationship_completeness_findings, relationship_selector_contracts,
   relationship_enforcement_state,
-  payload_value_conflicts, ref_gtfs_routes, ref_agencies,
+  payload_value_conflicts, ref_gtfs_routes, ref_agencies, ref_gtfs_snapshots,
+  ref_gtfs_route_inventory, ref_gtfs_route_activity, ref_current_bus_route_catalog,
+  ref_gtfs_catalog_disagreements,
 };
 
 // ---- Views (S3.4): authored here as the single surface; bodies are the exact prior SELECTs
