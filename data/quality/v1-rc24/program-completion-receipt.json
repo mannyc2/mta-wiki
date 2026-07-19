@@ -315,7 +315,25 @@
       "read_only_database_ctime_epoch": 1783866285,
       "read_only_database_stat_comparison": "unchanged"
     },
+    "replay_durability": {
+      "historical_execution_commands_are_exact": true,
+      "original_ephemeral_routes_fixture_path": "/tmp/tracker-rc24-final-replay.PadOJj/routes.json",
+      "ephemeral_fixture_presence_checked_at_utc_date": "2026-07-19",
+      "ephemeral_fixture_present": false,
+      "direct_route_replay_requires_fixture_rebuild": true,
+      "required_pre_step": "Rebuild routes.json with generator.command from the durable Tracker fixture receipt, substituting the MTA Wiki root, a pinned Current Bus Routes artifact whose SHA-256 equals the recorded input hash, and fresh isolated output and receipt paths. Before route replay, verify the rebuilt fixture has the recorded byte length, SHA-256, and route count.",
+      "durable_fixture_recipe_repository": "mannyc2/bus-priority-impact-studio",
+      "durable_fixture_recipe_path": "docs/research/artifacts/mta-wiki-v1-rc24-route-fixture-receipt.json",
+      "durable_fixture_recipe_sha256": "df0041567fe883e2f2e7ff38dd3e32313a25f266da4d0dfe19a32e5a132c8dde",
+      "fixture_generator_commit": "0095126a0558dcafc121d1cc2f4a05c43bff2927",
+      "expected_rebuilt_fixture_bytes": 425573,
+      "expected_rebuilt_fixture_sha256": "4994963c748a27283b837c1ec08b82ffae7fa2099ae360c611d9a7be32002290",
+      "expected_rebuilt_fixture_route_count": 375,
+      "surviving_downstream_outputs_match_recorded_hashes": true,
+      "integrity_classification": "durability_wording_clarification_not_release_or_consumer_defect"
+    },
     "route_replay": {
+      "command_interpretation": "These are the exact historical execution commands. For a new run, first satisfy tracker.replay_durability.required_pre_step and replace the historical temporary paths with the corresponding fresh isolated paths.",
       "named_command": "bun run pipeline studio import-mta-wiki-route-evidence --mta-wiki-root /home/cjpher/.codex/worktrees/8afe/mta-wiki --wiki-release v1-rc24 --wiki-manifest-sha256 fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d --current-bus-routes-path /tmp/plan035-inputs/current_bus_routes.json --current-bus-routes-sha256 d0147d9bb26dd142fb2cb325c32d30284bc5207853be2638e77723ef695b69d4 --current-bus-routes-effective-as-of-date 2026-07-18 --routes-path /tmp/tracker-rc24-final-replay.PadOJj/routes.json --routes-sha256 4994963c748a27283b837c1ec08b82ffae7fa2099ae360c611d9a7be32002290 --output /tmp/tracker-rc24-final-replay.PadOJj/named/route-evidence.json --serving-output-dir /tmp/tracker-rc24-final-replay.PadOJj/named/serving --generated-at 2026-07-18T18:05:27.000Z --write-serving-artifacts --min-matched-routes 274 --json",
       "repeat_command": "bun run pipeline studio import-mta-wiki-route-evidence --mta-wiki-root /home/cjpher/.codex/worktrees/8afe/mta-wiki --wiki-release v1-rc24 --wiki-manifest-sha256 fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d --current-bus-routes-path /tmp/plan035-inputs/current_bus_routes.json --current-bus-routes-sha256 d0147d9bb26dd142fb2cb325c32d30284bc5207853be2638e77723ef695b69d4 --current-bus-routes-effective-as-of-date 2026-07-18 --routes-path /tmp/tracker-rc24-final-replay.PadOJj/routes.json --routes-sha256 4994963c748a27283b837c1ec08b82ffae7fa2099ae360c611d9a7be32002290 --output /tmp/tracker-rc24-final-replay.PadOJj/repeat/route-evidence.json --serving-output-dir /tmp/tracker-rc24-final-replay.PadOJj/repeat/serving --generated-at 2026-07-18T18:05:27.000Z --write-serving-artifacts --min-matched-routes 274 --json",
       "route_count": 375,
