@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "contract_id": "operational-occurrence-phase-review-v1",
+  "generated_at": "2026-07-16T06:00:00.000Z",
+  "generated_by": "codex-operational-occurrence-phase-integrity-review",
+  "route_anchor_release": {
+    "release_id": "v1-rc24",
+    "route_anchors": {
+      "path": "data/exports/releases/v1-rc24/route_anchors.jsonl",
+      "bytes": 101876,
+      "sha256": "aaf8bb1532587c2aea188a7f7cc84a358b5a0a49106a07282fd6c5d05cfdc222",
+      "row_count": 520
+    },
+    "operational_occurrences": {
+      "path": "data/exports/releases/v1-rc24/operational_occurrences.jsonl",
+      "bytes": 842732,
+      "sha256": "1650ca9ef02e723c694baaf4685596a36ed0eb9e1447b46313397d92adcd8bcc",
+      "row_count": 131
+    }
+  },
+  "input_aggregates": {
+    "submission_journals": {
+      "file_count": 2757,
+      "bytes": 138918468,
+      "sha256": "c7ef95717f0b588e0e184a227c7c182df13cae71455f85cfbc1f6695566eaa20",
+      "path_roots": [
+        "data/submissions/*.jsonl"
+      ]
+    },
+    "materialization_controls": {
+      "file_count": 5,
+      "bytes": 1055511,
+      "sha256": "6b36de9d592b414f13ee13f03e86ce29c11deede78ab6dd666d808769e2c9a21",
+      "path_roots": [
+        "data/identity-overrides/merges.json",
+        "data/operational-occurrence-identities/registry.jsonl",
+        "data/semantic-corrections/*",
+        "data/submission-overrides/retired.json"
+      ]
+    },
+    "occurrence_review_decisions": {
+      "file_count": 132,
+      "bytes": 599256,
+      "sha256": "570cb942eb99eaf13934a566a5c87d07df21e5c03c03f655d1b85ccecb65cc59",
+      "path_roots": [
+        "data/operational-occurrence-review/accepted/decisions/*.json"
+      ]
+    },
+    "anchor_review_decisions": {
+      "file_count": 9,
+      "bytes": 27083,
+      "sha256": "a134ea91c651ab27e368c77bb4f2c94b31e3fcdd05b29ce73629dc797ac2001a",
+      "path_roots": [
+        "data/operational-anchor-review/accepted/decisions/*.json"
+      ]
+    },
+    "exact_source_evidence_files": {
+      "file_count": 0,
+      "bytes": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "path_roots": [
+        "canonical phase-event and event-event relation evidence source_path values"
+      ]
+    }
+  },
+  "derived_inputs": {
+    "canonical_record_count": 85392,
+    "operational_occurrence_count": 131,
+    "operational_occurrences_sha256": "9c751b39912d25a3d72ac0c94a1b45a253bc087cad4c7b20d07014cc572111a1",
+    "relevant_canonical_record_count": 131,
+    "canonical_phase_projection_sha256": "5326bb2f7b2e01a5d78efc4ef78da5743e53ae72833e016c48ef1c81d74f0e52"
+  },
+  "outputs": {
+    "data/contracts/operational-occurrence-phases/v1/contract.json": {
+      "path": "data/contracts/operational-occurrence-phases/v1/contract.json",
+      "bytes": 3780,
+      "sha256": "67c3ec201fc173b79c014d45ebc6ca01c50a58916e04ca0506bc16d5929a3cd7"
+    },
+    "data/contracts/operational-occurrence-phases/v1/review-ledger.jsonl": {
+      "path": "data/contracts/operational-occurrence-phases/v1/review-ledger.jsonl",
+      "bytes": 251125,
+      "sha256": "582329c815a632d82e4bddffba665aa6594ed66299818fb8ac4d7b958953026a",
+      "row_count": 131
+    },
+    "data/quality/relationship-integrity/operational-occurrence-phases/event-event-candidates.jsonl": {
+      "path": "data/quality/relationship-integrity/operational-occurrence-phases/event-event-candidates.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "row_count": 0
+    },
+    "data/quality/relationship-integrity/operational-occurrence-phases/findings.jsonl": {
+      "path": "data/quality/relationship-integrity/operational-occurrence-phases/findings.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "row_count": 0
+    },
+    "data/quality/relationship-integrity/operational-occurrence-phases/summary.json": {
+      "path": "data/quality/relationship-integrity/operational-occurrence-phases/summary.json",
+      "bytes": 1806,
+      "sha256": "540c25e36819a3ffb88a3194a36cf5e2ef058ca6abb6b1c7284387edac7f9abd"
+    },
+    "data/quality/relationship-integrity/operational-occurrence-phases/report.md": {
+      "path": "data/quality/relationship-integrity/operational-occurrence-phases/report.md",
+      "bytes": 1888,
+      "sha256": "efc61b8d4fc2add1c858c167fe7d6dca302d6a9302259cc64bcbfba5cd4685d0"
+    }
+  },
+  "reproduction_command": "bun scripts/generate-operational-occurrence-phase-review-v1.ts --check --route-anchor-release-dir data/exports/releases/v1-rc24"
+}

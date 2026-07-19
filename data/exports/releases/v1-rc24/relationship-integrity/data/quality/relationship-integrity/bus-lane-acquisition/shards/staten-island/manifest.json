@@ -1,0 +1,55 @@
+{
+  "artifacts": [
+    {
+      "bytes": 63112,
+      "path": "partition.jsonl",
+      "sha256": "05e014c04ed52d252d4e32fad32d2fba8e5ab922dedcf8c4d039139ec07a9a28"
+    },
+    {
+      "bytes": 976,
+      "path": "partition-proof.json",
+      "sha256": "b8474cc25a39bc92837f79b07c260a9155b4741cf73a4b641e45ee8f1d4b33ff"
+    },
+    {
+      "bytes": 45908,
+      "path": "acquired-source-checks.json",
+      "sha256": "9d7a61be83f54c8d431f588976af06d86c0dedff5300511d1bd4ac4ed5e6c32a"
+    },
+    {
+      "bytes": 978144,
+      "path": "official-lane-evidence.jsonl",
+      "sha256": "63ea476669831077c02cae625518b14c9aa1acb4f2cf2692978a313014bdc64e"
+    },
+    {
+      "bytes": 483303,
+      "path": "receipts.jsonl",
+      "sha256": "c511783ce9f86b65fa5ffc087fe1d1753beb92caa37064976da67748ca182593"
+    },
+    {
+      "bytes": 39045,
+      "path": "registry-projection-exclusions.jsonl",
+      "sha256": "b8f68745c298ce500dc6556b27539de1bc2024f5ef11828b8e2e1050944be5ae"
+    },
+    {
+      "bytes": 70230,
+      "path": "supported-linkage-candidates.jsonl",
+      "sha256": "71d39ca53c4816671da2cd0e6905bb359d81660ba14622c50e005c5595cfe2cc"
+    },
+    {
+      "bytes": 2828,
+      "path": "summary.json",
+      "sha256": "3208d78e3de15e52bbc5b36782234516e9dfc59ba04719e5e07ccfeed0fe0ebc"
+    },
+    {
+      "bytes": 1805,
+      "path": "report.md",
+      "sha256": "fe4b3106c831ac7537e0b13f972b16689e23bcd1052c5dd682f91c334c318329"
+    }
+  ],
+  "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
+  "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
+  "generated_on": "2026-07-15",
+  "manifest_payload_sha256": "0de3a9701062fb8b4c081404fc44ea006e44c0e49ad3a5a85e30d3cd8ce37980",
+  "schema_version": 1,
+  "shard": "staten-island"
+}

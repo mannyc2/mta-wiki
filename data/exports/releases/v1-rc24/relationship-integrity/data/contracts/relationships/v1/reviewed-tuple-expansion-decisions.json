@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "decision_set_id": "relationship-contract-v1-legacy-remediation-expansions-2026-07-15",
+  "contract_id": "relationship-contract-v1",
+  "review_status": "approved",
+  "reviewed_at": "2026-07-15T12:00:00.000Z",
+  "reviewed_by": "codex-relationship-integrity-campaign",
+  "approval_scope": "Only the exact endpoint tuples and exact legacy-remediation relation records enumerated by the pinned, human-reviewed correction and evidence ledger may expand the frozen baseline. This decision set is not permission to learn types from current or future observations.",
+  "pinned_baseline": {
+    "canonical_relations_path": "data/canonical/relations.jsonl",
+    "canonical_relations_sha256": "c2480fb9da78b339a9381ff6e5756f6496f87791f79b5cf3f2bc8e2f6b99bbf7",
+    "endpoint_matrix_stable_sha256": "9438de4890e31406e07167a14e1c98da7da6294bf3b86f3c551e30ac27cd517e",
+    "relation_count": 21247,
+    "tuple_count": 1136
+  },
+  "pinned_review_sources": {
+    "semantic_corrections_path": "data/semantic-corrections/corrections.jsonl",
+    "legacy_remediation_ledger_path": "data/quality/relationship-integrity/legacy-remediation/ledger.jsonl",
+    "legacy_remediation_ledger_sha256": "15a1762960ef1075f20b698cbb00756c5092a03ce3e76c4a39755c35dcb82a98",
+    "legacy_remediation_summary_path": "data/quality/relationship-integrity/legacy-remediation/summary.json",
+    "legacy_remediation_summary_sha256": "ac97d5c7b47eba4090da166833e60574afa20f4c21bde08b50d9bbca3648b422"
+  },
+  "expected_expansion_tuple_count": 29,
+  "expected_affected_relation_count": 142,
+  "decisions": [
+    {
+      "decision_id": "legacy-expansion-0001-presented-to-project-entity",
+      "relation_kind": "presented_to",
+      "relation_family": "partnership_engagement",
+      "subject_kind": "project",
+      "object_kind": "entity",
+      "expected_affected_relation_count": 38
+    },
+    {
+      "decision_id": "legacy-expansion-0002-presented-to-source-entity",
+      "relation_kind": "presented_to",
+      "relation_family": "partnership_engagement",
+      "subject_kind": "source",
+      "object_kind": "entity",
+      "expected_affected_relation_count": 14
+    },
+    {
+      "decision_id": "legacy-expansion-0003-presented-to-entity-entity",
+      "relation_kind": "presented_to",
+      "relation_family": "partnership_engagement",
+      "subject_kind": "entity",
+      "object_kind": "entity",
+      "expected_affected_relation_count": 13
+    },
+    {
+      "decision_id": "legacy-expansion-0004-presented-to-event-entity",
+      "relation_kind": "presented_to",
+      "relation_family": "partnership_engagement",
+      "subject_kind": "event",
+      "object_kind": "entity",
+      "expected_affected_relation_count": 8
+    },
+    {
+      "decision_id": "legacy-expansion-0005-in-development-for-project-route",
+      "relation_kind": "in_development_for",
+      "relation_family": "route_scope",
+      "subject_kind": "project",
+      "object_kind": "route",
+      "expected_affected_relation_count": 8
+    },
+    {
+      "decision_id": "legacy-expansion-0006-has-initiative-entity-claim",
+      "relation_kind": "has_initiative",
+      "relation_family": "claim_context",
+      "subject_kind": "entity",
+      "object_kind": "claim",
+      "expected_affected_relation_count": 7
+    },
+    {
+      "decision_id": "legacy-expansion-0007-part-of-event-source-publication",
+      "relation_kind": "part_of",
+      "relation_family": "publication_role",
+      "subject_kind": "event",
+      "object_kind": "source",
+      "expected_affected_relation_count": 6
+    },
+    {
+      "decision_id": "legacy-expansion-0008-part-of-entity-source-publication",
+      "relation_kind": "part_of",
+      "relation_family": "publication_role",
+      "subject_kind": "entity",
+      "object_kind": "source",
+      "expected_affected_relation_count": 6
+    },
+    {
+      "decision_id": "legacy-expansion-0009-has-tsp-route-treatment",
+      "relation_kind": "has_tsp",
+      "relation_family": "treatment_context",
+      "subject_kind": "route",
+      "object_kind": "treatment_component",
+      "expected_affected_relation_count": 5
+    },
+    {
+      "decision_id": "legacy-expansion-0010-part-of-project-entity-agency",
+      "relation_kind": "part_of",
+      "relation_family": "agency_role",
+      "subject_kind": "project",
+      "object_kind": "entity",
+      "expected_affected_relation_count": 4
+    },
+    {
+      "decision_id": "legacy-expansion-0011-has-agenda-topic-event-entity",
+      "relation_kind": "has_agenda_topic",
+      "relation_family": "agency_role",
+      "subject_kind": "event",
+      "object_kind": "entity",
+      "expected_affected_relation_count": 4
+    },
+    {
+      "decision_id": "legacy-expansion-0012-operates-program-entity-claim",
+      "relation_kind": "operates_program",
+      "relation_family": "claim_context",
+      "subject_kind": "entity",
+      "object_kind": "claim",
+      "expected_affected_relation_count": 3
+    },
+    {
+      "decision_id": "legacy-expansion-0013-part-of-project-project-program",
+      "relation_kind": "part_of",
+      "relation_family": "program_project_scope",
+      "subject_kind": "project",
+      "object_kind": "project",
+      "expected_affected_relation_count": 3
+    },
+    {
+      "decision_id": "legacy-expansion-0014-belongs-to-entity-source",
+      "relation_kind": "belongs_to",
+      "relation_family": "publication_role",
+      "subject_kind": "entity",
+      "object_kind": "source",
+      "expected_affected_relation_count": 3
+    },
+    {
+      "decision_id": "legacy-expansion-0015-reports-on-source-project",
+      "relation_kind": "reports_on",
+      "relation_family": "data_reporting",
+      "subject_kind": "source",
+      "object_kind": "project",
+      "expected_affected_relation_count": 2
+    },
+    {
+      "decision_id": "legacy-expansion-0016-part-of-project-claim",
+      "relation_kind": "part_of",
+      "relation_family": "claim_context",
+      "subject_kind": "project",
+      "object_kind": "claim",
+      "expected_affected_relation_count": 2
+    },
+    {
+      "decision_id": "legacy-expansion-0017-has-program-entity-claim",
+      "relation_kind": "has_program",
+      "relation_family": "claim_context",
+      "subject_kind": "entity",
+      "object_kind": "claim",
+      "expected_affected_relation_count": 2
+    },
+    {
+      "decision_id": "legacy-expansion-0018-has-agency-project-entity",
+      "relation_kind": "has_agency",
+      "relation_family": "agency_role",
+      "subject_kind": "project",
+      "object_kind": "entity",
+      "expected_affected_relation_count": 2
+    },
+    {
+      "decision_id": "legacy-expansion-0019-has-component-project-event",
+      "relation_kind": "has_component",
+      "relation_family": "timeline_context",
+      "subject_kind": "project",
+      "object_kind": "event",
+      "expected_affected_relation_count": 2
+    },
+    {
+      "decision_id": "legacy-expansion-0020-has-priority-entity-claim",
+      "relation_kind": "has_priority",
+      "relation_family": "claim_context",
+      "subject_kind": "entity",
+      "object_kind": "claim",
+      "expected_affected_relation_count": 1
+    },
+    {
+      "decision_id": "legacy-expansion-0021-part-of-event-project-timeline",
+      "relation_kind": "part_of",
+      "relation_family": "timeline_context",
+      "subject_kind": "event",
+      "object_kind": "project",
+      "expected_affected_relation_count": 1
+    },
+    {
+      "decision_id": "legacy-expansion-0022-presents-event-source",
+      "relation_kind": "presents",
+      "relation_family": "publication_role",
+      "subject_kind": "event",
+      "object_kind": "source",
+      "expected_affected_relation_count": 1
+    },
+    {
+      "decision_id": "legacy-expansion-0023-part-of-source-entity-publication",
+      "relation_kind": "part_of",
+      "relation_family": "publication_role",
+      "subject_kind": "source",
+      "object_kind": "entity",
+      "expected_affected_relation_count": 1
+    },
+    {
+      "decision_id": "legacy-expansion-0024-has-program-entity-source-publication",
+      "relation_kind": "has_program",
+      "relation_family": "publication_role",
+      "subject_kind": "entity",
+      "object_kind": "source",
+      "expected_affected_relation_count": 1
+    },
+    {
+      "decision_id": "legacy-expansion-0025-contributes-to-entity-metric",
+      "relation_kind": "contributes_to",
+      "relation_family": "metric_context",
+      "subject_kind": "entity",
+      "object_kind": "metric_claim",
+      "expected_affected_relation_count": 1
+    },
+    {
+      "decision_id": "legacy-expansion-0026-complementary-program-entity-metric",
+      "relation_kind": "complementary_program",
+      "relation_family": "metric_context",
+      "subject_kind": "entity",
+      "object_kind": "metric_claim",
+      "expected_affected_relation_count": 1
+    },
+    {
+      "decision_id": "legacy-expansion-0027-exhibits-property-event-claim",
+      "relation_kind": "exhibits_property",
+      "relation_family": "claim_context",
+      "subject_kind": "event",
+      "object_kind": "claim",
+      "expected_affected_relation_count": 1
+    },
+    {
+      "decision_id": "legacy-expansion-0028-joint-program-entity-entity",
+      "relation_kind": "joint_program",
+      "relation_family": "partnership_engagement",
+      "subject_kind": "entity",
+      "object_kind": "entity",
+      "expected_affected_relation_count": 1
+    },
+    {
+      "decision_id": "legacy-expansion-0029-has-member-entity-claim",
+      "relation_kind": "has_member",
+      "relation_family": "claim_context",
+      "subject_kind": "entity",
+      "object_kind": "claim",
+      "expected_affected_relation_count": 1
+    }
+  ]
+}

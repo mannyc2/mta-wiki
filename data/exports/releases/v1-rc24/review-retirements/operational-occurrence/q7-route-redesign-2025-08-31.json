@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "decision_id": "q7-route-redesign-2025-08-31",
+  "review_state": "approved",
+  "accepted_at": "2026-07-12T15:15:00.000Z",
+  "reviewer": "codex-core-coverage-2026-07-12",
+  "rationale": "The official MTA Q7 row binds one realized onset and route to a three-member routing package: a western reroute, discontinuation and replacement of the Sutter/Pitkin segment, and eastern shortening with replacement JFK Cargo service. Canonical members retain the source-level service_pattern family. The official Queens Bus Network Redesign project context separately supports route_redesign as the reviewed bundle analysis family. This decision does not atomize members, inherit scope from another route, or treat the aggregate bundle-container record as an atomic treatment.",
+  "occurrence_id": "occurrence:c5e9aba290ca2be1be6fb38e",
+  "founding_key": "event:event_q7-route-redesign-effective-2025-08-31",
+  "observation_event_record_ids": [
+    "event_q7-route-redesign-effective-2025-08-31"
+  ],
+  "observation_relation_record_ids": [
+    "relation_qbnr-2025-affects-q7",
+    "relation_qbnr-2025-has-q7-jfk-shortening",
+    "relation_qbnr-2025-has-q7-sutter-pitkin-discontinuation",
+    "relation_qbnr-2025-has-q7-western-reroute",
+    "relation_qbnr-has-q7-2025-effective-event"
+  ],
+  "resolved_status": "realized",
+  "resolved_onset": {
+    "date": "2025-08-31",
+    "precision": "day",
+    "evidence_bindings": [
+      {
+        "role": "event_date",
+        "record_id": "event_q7-route-redesign-effective-2025-08-31",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0009"
+      },
+      {
+        "role": "timeline_relation",
+        "record_id": "relation_qbnr-has-q7-2025-effective-event",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0009"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_record_id": "route_q7-queens",
+      "gtfs_route_id": "Q07",
+      "evidence_bindings": [
+        {
+          "role": "route_identity",
+          "record_id": "route_q7-queens",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0009"
+        },
+        {
+          "role": "route_scope",
+          "record_id": "relation_qbnr-2025-affects-q7",
+          "source_id": "mta_queens_bus_network_redesign_service_changes",
+          "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0009"
+        }
+      ]
+    }
+  ],
+  "treatment_scope_kind": "bundle",
+  "treatment": {
+    "kind": "bundle",
+    "analysis_family": "route_redesign",
+    "analysis_family_evidence_bindings": [
+      {
+        "role": "bundle_analysis_family",
+        "record_id": "project_queens-bus-network-redesign",
+        "source_id": "mta_queens_bus_network_redesign_service_changes",
+        "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0001"
+      }
+    ],
+    "members": [
+      {
+        "treatment_record_id": "treatment_q7-jfk-shortening-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q7-jfk-shortening-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0009"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q7-jfk-shortening",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0009"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q7-sutter-pitkin-discontinuation-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q7-sutter-pitkin-discontinuation-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0009"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q7-sutter-pitkin-discontinuation",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0009"
+          }
+        ]
+      },
+      {
+        "treatment_record_id": "treatment_q7-western-reroute-2025",
+        "treatment_family": "service_pattern",
+        "evidence_bindings": [
+          {
+            "role": "treatment_definition",
+            "record_id": "treatment_q7-western-reroute-2025",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0009"
+          },
+          {
+            "role": "treatment_scope",
+            "record_id": "relation_qbnr-2025-has-q7-western-reroute",
+            "source_id": "mta_queens_bus_network_redesign_service_changes",
+            "evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0009"
+          }
+        ]
+      }
+    ]
+  }
+}

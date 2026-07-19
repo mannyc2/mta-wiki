@@ -1,0 +1,3 @@
+# Immutable release payloads and generated topology receipts are byte-verified artifacts.
+data/exports/releases/** -whitespace
+data/quality/*/release-topology.txt -whitespace
