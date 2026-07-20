@@ -571,6 +571,6 @@ describe("computeRouteAnchors", () => {
     expect(createHash("sha256").update(readFileSync(rc20Path)).digest("hex")).toBe(
       "517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239",
     );
-    expect(readFileSync(join(repoRoot, "data/exports/releases/LATEST"), "utf8").trim()).toBe("v1-rc5");
+    expect(readFileSync(join(repoRoot, "data/exports/releases/LATEST"), "utf8").trim()).toBe("v1-rc25");
   });
 });
