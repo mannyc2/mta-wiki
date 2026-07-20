@@ -25,7 +25,7 @@
   "exact_evidence_complete": true,
   "hard_mode_ready": true,
   "ledger_id": "operational-occurrence-phase-review-ledger-v1",
-  "release_id": "v1-rc24",
+  "release_id": "v1-rc25",
   "reviewed_occurrence_count": 131,
   "single_observed_phase_count": 131,
   "related_phase_count": 0,

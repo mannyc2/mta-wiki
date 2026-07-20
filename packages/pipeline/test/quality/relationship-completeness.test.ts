@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import {
   copyFileSync,
+  existsSync,
   mkdirSync,
   mkdtempSync,
   readFileSync,
@@ -591,9 +592,11 @@ describe("relationship completeness audit", () => {
 
   it("fails closed when the immutable physicality contract or review-ledger pin drifts", () => {
     const contractPath = "data/contracts/occurrence-treatment-physicality/v1/contract.json";
-    const releaseId = "v1-rc24";
-    const candidateReleaseDir =
-      "data/exports/releases/.v1-rc24-completeness-input.AxyeSX";
+    const releaseId = "v1-rc25";
+    const namedReleaseDir = "data/exports/releases/v1-rc25";
+    const candidateReleaseDir = existsSync(join(repoRoot, namedReleaseDir))
+      ? namedReleaseDir
+      : "data/exports/releases/.v1-rc25-completeness-input.treatment-semantics-v1/v1-rc25";
     const loaded = loadOccurrenceTreatmentPhysicalityContract({
       rootDir: repoRoot,
       contractPath,
@@ -605,6 +608,19 @@ describe("relationship completeness audit", () => {
       final_post_semantic_release_guard_status: "verified",
     });
     expect(loaded.decisions).toHaveLength(269);
+    expect(() => loadOccurrenceTreatmentPhysicalityContract({
+      rootDir: repoRoot,
+      contractPath,
+      releaseId: "v1-rc26",
+      releaseSnapshotSourceDir: join(repoRoot, candidateReleaseDir),
+    })).toThrow("does not match completeness release v1-rc26");
+    expect(loadOccurrenceTreatmentPhysicalityContract({
+      rootDir: repoRoot,
+      contractPath,
+      releaseId: "v1-rc26",
+      releaseSnapshotSourceDir: join(repoRoot, candidateReleaseDir),
+      allowByteIdenticalReviewedReleaseAlias: true,
+    })).toMatchObject({ contract_status: "reviewed_final" });
 
     const work = mkdtempSync(join(tmpdir(), "occurrence-treatment-physicality-contract-"));
     const relativeDir = "data/contracts/occurrence-treatment-physicality/v1";
@@ -1273,10 +1289,14 @@ describe("relationship completeness audit", () => {
     }
   });
 
-  it("reproduces the staged rc24 zero-warning completeness and retirement-closed physicality review", () => {
+  it("reproduces the rc25 zero-warning completeness and retirement-closed physicality review", () => {
+    const namedReleaseDir = "data/exports/releases/v1-rc25";
+    const releaseSourceDir = existsSync(join(repoRoot, namedReleaseDir))
+      ? namedReleaseDir
+      : "data/exports/releases/.v1-rc25-completeness-input.treatment-semantics-v1/v1-rc25";
     const build = loadRelationshipCompletenessArtifacts({
-      releaseDir: "data/exports/releases/v1-rc24",
-      releaseSourceDir: "data/exports/releases/.v1-rc24-completeness-input.AxyeSX",
+      releaseDir: namedReleaseDir,
+      ...(releaseSourceDir === namedReleaseDir ? {} : { releaseSourceDir }),
     });
     expect(build.summary.occurrences).toMatchObject({
       release_occurrence_count: 131,
@@ -1517,14 +1537,14 @@ describe("relationship completeness audit", () => {
       },
     });
     expect(build.summary.input_pins.some((pin) =>
-      pin.path === "data/exports/releases/v1-rc24/manifest.json")).toBe(false);
+      pin.path === "data/exports/releases/v1-rc25/manifest.json")).toBe(false);
     expect(build.summary.input_pins.filter((pin) =>
       pin.path.startsWith("data/contracts/occurrence-treatment-physicality/v1/")))
       .toEqual([
         {
           path: "data/contracts/occurrence-treatment-physicality/v1/contract.json",
           bytes: 3881,
-          sha256: "54890e120c0e17c254808ff26af58cb81c2c715a00895de62ee9cbeb1008655a",
+          sha256: "9d950128fb8326fd22427db67f428bda438ff740eeaf728d4c6dcc4d5ef50381",
         },
         {
           path: "data/contracts/occurrence-treatment-physicality/v1/policy.json",
@@ -1546,7 +1566,7 @@ describe("relationship completeness audit", () => {
         {
           path: "data/contracts/occurrence-treatment-physicality/v1/review-retirement-receipt.json",
           bytes: 3616,
-          sha256: "0732d8f0c5f2c20f5ff8280d0998da4d4f6f8d095b26132e27521f6d7f53675b",
+          sha256: "11c7e5f4b6b65a7f7ff3ed90dddda47bfadf1bf39be1dde5eba9fdd9605557cd",
         },
       ]);
     for (const [name, metadata] of Object.entries(build.manifest.files)) {

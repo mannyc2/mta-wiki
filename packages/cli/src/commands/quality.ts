@@ -157,6 +157,8 @@ const relationshipCompleteness: CommandHandler = () => {
     outputDir: optionValue(process.argv, "--output") ?? optionValue(process.argv, "-o"),
     expectedReleaseManifestSha256: optionValue(process.argv, "--manifest-sha256"),
     reviewedCurrentCorpusMigration: process.argv.includes("--reviewed-current-corpus-migration"),
+    allowByteIdenticalPhysicalityBootstrap:
+      process.argv.includes("--allow-byte-identical-physicality-bootstrap"),
   };
   const result = writeRelationshipCompletenessArtifacts(options);
   const summary = result.summary;

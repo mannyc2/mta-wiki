@@ -28,12 +28,12 @@
   "review_ledger_complete": true,
   "physical_scope_complete": true,
   "hard_mode_ready": true,
-  "release_id": "v1-rc24",
+  "release_id": "v1-rc25",
   "review_stage": "final_post_semantic_release",
-  "release_input_fingerprint": "7a1dc44afa8d0e32b960eb349fd03bf82f00267ce821c3267e40116a34718602",
+  "release_input_fingerprint": "667389d3978a9d479c9001d7dffec9ddab7e16c38efaa06cf9d0d952207a67f9",
   "review_ledger_sha256": "937259630ea1aa981b84f1cb1cc709bd897753774580f2bb128575d78b84b433",
   "policy_sha256": "4b664726e353e7b1d823409b054fe3ecd931bf87da63eb8ffcd9c0ecda913ed5",
-  "contract_sha256": "54890e120c0e17c254808ff26af58cb81c2c715a00895de62ee9cbeb1008655a",
+  "contract_sha256": "9d950128fb8326fd22427db67f428bda438ff740eeaf728d4c6dcc4d5ef50381",
   "by_treatment_family": {
     "automated_bus_lane_enforcement": {
       "unique_treatment_count": 5,
