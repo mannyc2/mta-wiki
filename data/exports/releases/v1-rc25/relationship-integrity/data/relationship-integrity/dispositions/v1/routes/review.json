@@ -1,0 +1,1202 @@
+{
+  "_doc": "Immutable reviewed route-anchor decisions for the route-identity-dispositions-v1 migration. Every non-projectable disposition is evidence-linked and sets study_projectable=false. The pinned GTFS absence is classification context, never proof of a fabricated alias.",
+  "schema_version": 1,
+  "contract_id": "route-identity-dispositions-v1",
+  "gtfs_feed": {
+    "feed_date": "2026-03-19_mta_bus_all",
+    "route_count": 386,
+    "routes_sha256": "7b04d611eee9ad689eda88556e6934fe36c699342cf489c61dcdfef2c2670097"
+  },
+  "sbs_plus_successor_rule": {
+    "rule_id": "unique-sbs-plus-successor-v1",
+    "description": "Only when a canonical route has no exact GTFS id/short-name match, bind its source-literal route_id to the sole current terminal-+ GTFS id that becomes identical after removing only +. Do not strip Local/LTD/E, split branch labels, punctuation, or arbitrary SBS text."
+  },
+  "overrides": {
+    "BX6": {
+      "decision_id": "route-anchor-override-v1:BX6-local-variant",
+      "evidence_ids": [
+        "161st_bx6_capital_project_2026#p001_b0001",
+        "bronx_bus_network_final_plan_addendum_2021#p003_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "canonical_route_record_id": "route_bx6-sbs",
+      "additional_variant_record_ids": [
+        "route_bx6-local"
+      ],
+      "expected_route_ids": {
+        "route_bx6-local": "Bx6 Local",
+        "route_bx6-sbs": "Bx6"
+      },
+      "reason": "Official evidence identifies Bx6 Local and Bx6 SBS as service variants under the current BX6 GTFS route; retain the existing SBS anchor and add the local record as a reviewed variant."
+    },
+    "Q48": {
+      "decision_id": "route-anchor-override-v1:Q48-current-number-reuse",
+      "evidence_ids": [
+        "mta_queens_bus_network_redesign_service_changes#p001_b0053"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "canonical_route_record_id": "route_q48-glen-oaks-2025",
+      "additional_variant_record_ids": [],
+      "expected_route_ids": {
+        "route_q48-glen-oaks-2025": "Q48"
+      },
+      "reason": "Official Queens redesign evidence proves that the current Q48 is the Glen Oaks service; the separately disposed LaGuardia record is historical number reuse."
+    }
+  },
+  "non_gtfs_dispositions": {
+    "route_15-express-bus-battery-pl": {
+      "decision_id": "route-disposition-v1:route_15-express-bus-battery-pl",
+      "evidence_ids": [
+        "battery_pl_oct2019#p004_c0004"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "aggregate_label",
+      "reason": "Source evidence uses \"15 Express bus routes\" as an aggregate label spanning multiple services; it cannot identify one current GTFS route.",
+      "expected_route_id": "15 Express bus routes",
+      "study_projectable": false
+    },
+    "route_34th-st-sbs": {
+      "decision_id": "route-disposition-v1:route_34th-st-sbs",
+      "evidence_ids": [
+        "brt_route_index#p001_b0001"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "sbs_corridor_service_label",
+      "reason": "Official route-index evidence names a 34th Street SBS corridor/service label but supplies no single GTFS route id; the label must not compete with M34+ or M34A+.",
+      "expected_route_id": null,
+      "study_projectable": false
+    },
+    "route_5-subway-flatbush": {
+      "decision_id": "route-disposition-v1:route_5-subway-flatbush",
+      "evidence_ids": [
+        "meeting_doc_196866#p001_c0005"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies 5 Subway as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "5",
+      "study_projectable": false
+    },
+    "route_b-subway-nyct-2025": {
+      "decision_id": "route-disposition-v1:route_b-subway-nyct-2025",
+      "evidence_ids": [
+        "nyct_key_performance_metrics_doc194001#p008_c0010"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies B Subway Line as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "B",
+      "study_projectable": false
+    },
+    "route_b103-ltd-proposed-draft": {
+      "decision_id": "route-disposition-v1:route_b103-ltd-proposed-draft",
+      "evidence_ids": [
+        "brooklyn_bus_network_draft_plan_without_route_profiles#p041_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "proposal",
+      "reason": "Source evidence describes Proposed B103 LTD as a proposal, draft-plan row, or participant-suggested concept rather than an adopted current MTA bus route.",
+      "expected_route_id": "B103 LTD",
+      "study_projectable": false
+    },
+    "route_b103e-express-cb18-jun2017": {
+      "decision_id": "route-disposition-v1:route_b103e-express-cb18-jun2017",
+      "evidence_ids": [
+        "brt_south_brooklyn_b82_cb18_jun2017#p037_c0004"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_service_identity",
+      "reason": "Dated official evidence establishes B103 Express as a service identity at source time, but the pinned 2026-03-19 MTA bus GTFS has no exact id and repository evidence does not prove a current canonical alias.",
+      "expected_route_id": "B103E",
+      "study_projectable": false
+    },
+    "route_b110-brooklyn": {
+      "decision_id": "route-disposition-v1:route_b110-brooklyn",
+      "evidence_ids": [
+        "meeting_doc_201776#p286_c0001"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "proposal",
+      "reason": "Source evidence describes B110 Bus Route as a proposal, draft-plan row, or participant-suggested concept rather than an adopted current MTA bus route.",
+      "expected_route_id": "B110",
+      "study_projectable": false
+    },
+    "route_b3-draft-plan": {
+      "decision_id": "route-disposition-v1:route_b3-draft-plan",
+      "evidence_ids": [
+        "brooklyn_bus_network_draft_plan_with_route_profiles#p071_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "proposal",
+      "reason": "The official Brooklyn draft-plan evidence describes a proposed B3 planning record rather than an adopted current operating-route identity.",
+      "expected_route_id": null,
+      "study_projectable": false
+    },
+    "route_b82e-express-cb18-jun2017": {
+      "decision_id": "route-disposition-v1:route_b82e-express-cb18-jun2017",
+      "evidence_ids": [
+        "brt_south_brooklyn_b82_cb18_jun2017#p037_c0002"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_service_identity",
+      "reason": "Dated official evidence establishes B82 Express (B82E) as a service identity at source time, but the pinned 2026-03-19 MTA bus GTFS has no exact id and repository evidence does not prove a current canonical alias.",
+      "expected_route_id": "B82E",
+      "study_projectable": false
+    },
+    "route_b98v-meeting-doc-33236": {
+      "decision_id": "route-disposition-v1:route_b98v-meeting-doc-33236",
+      "evidence_ids": [
+        "meeting_doc_33236#p041_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "temporary_service",
+      "reason": "Official 2021 evidence identifies B98V as a temporary vaccination-shuttle pilot; it is not a current study-projectable route identity.",
+      "expected_route_id": "B98V",
+      "study_projectable": false
+    },
+    "route_bee-line-60": {
+      "decision_id": "route-disposition-v1:route_bee-line-60",
+      "evidence_ids": [
+        "better_buses#p001_b0001"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "external_bus_service",
+      "reason": "Source evidence identifies Bee-Line 60 as Bee-Line service outside the pinned MTA NYCT/MTABC bus GTFS route universe.",
+      "expected_route_id": "Bee-Line 60",
+      "study_projectable": false
+    },
+    "route_bee-line-61-fordham-rd-workshop": {
+      "decision_id": "route-disposition-v1:route_bee-line-61-fordham-rd-workshop",
+      "evidence_ids": [
+        "fordham_rd_major_deegan_expwy_boston_rd_jun2021#p028_c0002"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "external_bus_service",
+      "reason": "Source evidence identifies Bee-Line 61 as Bee-Line service outside the pinned MTA NYCT/MTABC bus GTFS route universe.",
+      "expected_route_id": "Bee-Line 61",
+      "study_projectable": false
+    },
+    "route_bee-line-62": {
+      "decision_id": "route-disposition-v1:route_bee-line-62",
+      "evidence_ids": [
+        "better_buses#p001_b0001"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "external_bus_service",
+      "reason": "Source evidence identifies Bee-Line 62 as Bee-Line service outside the pinned MTA NYCT/MTABC bus GTFS route universe.",
+      "expected_route_id": "Bee-Line 62",
+      "study_projectable": false
+    },
+    "route_bx18a-b": {
+      "decision_id": "route-disposition-v1:route_bx18a-b",
+      "evidence_ids": [
+        "fare_free_bus_pilot_evaluation#p002_c0006"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "aggregate_label",
+      "reason": "Source evidence uses \"Bx18A/B\" as an aggregate label spanning multiple services; it cannot identify one current GTFS route.",
+      "expected_route_id": "Bx18A/B",
+      "study_projectable": false
+    },
+    "route_bx40-bx42-tremont-cb5-2024": {
+      "decision_id": "route-disposition-v1:route_bx40-bx42-tremont-cb5-2024",
+      "evidence_ids": [
+        "2013_03_sbs_webster_bx_cb5#p033_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "aggregate_label",
+      "reason": "Source evidence uses \"Bx40/42\" as an aggregate label spanning multiple services; it cannot identify one current GTFS route.",
+      "expected_route_id": "Bx40/42",
+      "study_projectable": false
+    },
+    "route_bx55-2012": {
+      "decision_id": "route-disposition-v1:route_bx55-2012",
+      "evidence_ids": [
+        "2012_11_sbs_webster_cac4_summary#p001_c0008"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_retired",
+      "reason": "Official Webster Avenue SBS evidence states that Bx55 Limited would be renamed Bx15 Limited; the Bx55 predecessor identity must not compete for a current GTFS anchor.",
+      "expected_route_id": "Bx55",
+      "study_projectable": false
+    },
+    "route_bx55-lga-2012": {
+      "decision_id": "route-disposition-v1:route_bx55-lga-2012",
+      "evidence_ids": [
+        "2012_04_20_brt_lga_workshop_summary#p003_c0006"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "proposal",
+      "reason": "Source evidence describes Bx55 as a proposal, draft-plan row, or participant-suggested concept rather than an adopted current MTA bus route.",
+      "expected_route_id": "Bx55",
+      "study_projectable": false
+    },
+    "route_c-subway-nyct-2025": {
+      "decision_id": "route-disposition-v1:route_c-subway-nyct-2025",
+      "evidence_ids": [
+        "nyct_key_performance_metrics_doc194001#p008_c0010"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies C Subway Line as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "C",
+      "study_projectable": false
+    },
+    "route_e-nyct-2025": {
+      "decision_id": "route-disposition-v1:route_e-nyct-2025",
+      "evidence_ids": [
+        "nyct_key_performance_metrics_doc194001#p009_c0011"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies E Subway Line as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "E",
+      "study_projectable": false
+    },
+    "route_express-routes-madison-ave-may2025": {
+      "decision_id": "route-disposition-v1:route_express-routes-madison-ave-may2025",
+      "evidence_ids": [
+        "madison_ave_e23_st_e42_st_cb5_may2025#p004_c0002"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "aggregate_label",
+      "reason": "Source evidence uses \"Madison Avenue Express Routes\" as an aggregate label spanning multiple services; it cannot identify one current GTFS route.",
+      "expected_route_id": "Madison Avenue Express Routes",
+      "study_projectable": false
+    },
+    "route_f-nyct-2025": {
+      "decision_id": "route-disposition-v1:route_f-nyct-2025",
+      "evidence_ids": [
+        "nyct_key_performance_metrics_doc194001#p004_c0007"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies F Subway Line as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "F",
+      "study_projectable": false
+    },
+    "route_fordham-pelham-pkwy-sbs": {
+      "decision_id": "route-disposition-v1:route_fordham-pelham-pkwy-sbs",
+      "evidence_ids": [
+        "brt_route_index#p001_b0001"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "sbs_corridor_service_label",
+      "reason": "Official route-index evidence names a Fordham/Pelham Parkway SBS corridor/service label without a single GTFS route id.",
+      "expected_route_id": null,
+      "study_projectable": false
+    },
+    "route_hudson-rail-link": {
+      "decision_id": "route-disposition-v1:route_hudson-rail-link",
+      "evidence_ids": [
+        "meeting_doc_121156#p006_c0008"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "external_bus_service",
+      "reason": "Source evidence identifies the Hudson Rail Link as a Metro-North feeder service outside the pinned MTA NYCT/MTABC bus GTFS route universe.",
+      "expected_route_id": null,
+      "study_projectable": false
+    },
+    "route_hylan-blvd-sbs": {
+      "decision_id": "route-disposition-v1:route_hylan-blvd-sbs",
+      "evidence_ids": [
+        "brt_route_index#p001_b0001"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "sbs_corridor_service_label",
+      "reason": "Official route-index evidence names a Hylan Boulevard SBS corridor/service label without a single GTFS route id.",
+      "expected_route_id": null,
+      "study_projectable": false
+    },
+    "route_hylan-richmond-av-sbs-proposed": {
+      "decision_id": "route-disposition-v1:route_hylan-richmond-av-sbs-proposed",
+      "evidence_ids": [
+        "201106_hylan_slides#p022_c0007"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "proposal",
+      "reason": "Source evidence describes Hylan Boulevard/Richmond Avenue Select Bus Service (proposed) as a proposal, draft-plan row, or participant-suggested concept rather than an adopted current MTA bus route.",
+      "expected_route_id": "proposed Hylan/Richmond SBS",
+      "study_projectable": false
+    },
+    "route_irt-flushing-line-7-208006": {
+      "decision_id": "route-disposition-v1:route_irt-flushing-line-7-208006",
+      "evidence_ids": [
+        "meeting_doc_208006#p044_c0007"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies IRT Flushing Line (7) as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "7",
+      "study_projectable": false
+    },
+    "route_lirr-atlantic-branch-2023": {
+      "decision_id": "route-disposition-v1:route_lirr-atlantic-branch-2023",
+      "evidence_ids": [
+        "meeting_doc_133321#p003_c0004"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Atlantic Branch as lirr_branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Atlantic Branch",
+      "study_projectable": false
+    },
+    "route_lirr-babylon-branch-2023": {
+      "decision_id": "route-disposition-v1:route_lirr-babylon-branch-2023",
+      "evidence_ids": [
+        "meeting_doc_100336#p001_c0008"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Babylon Branch as rail_branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Babylon Branch",
+      "study_projectable": false
+    },
+    "route_lirr-far-rockaway-branch-2023": {
+      "decision_id": "route-disposition-v1:route_lirr-far-rockaway-branch-2023",
+      "evidence_ids": [
+        "meeting_doc_127546#p001_c0008"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Far Rockaway Branch as branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Far Rockaway Branch",
+      "study_projectable": false
+    },
+    "route_lirr-hempstead-branch-2023": {
+      "decision_id": "route-disposition-v1:route_lirr-hempstead-branch-2023",
+      "evidence_ids": [
+        "meeting_doc_107636#p001_c0007"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Hempstead Branch as commuter_rail_branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Hempstead Branch",
+      "study_projectable": false
+    },
+    "route_lirr-huntington-branch-2023": {
+      "decision_id": "route-disposition-v1:route_lirr-huntington-branch-2023",
+      "evidence_ids": [
+        "meeting_doc_107636#p001_c0007"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Huntington Branch as commuter_rail_branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Huntington Branch",
+      "study_projectable": false
+    },
+    "route_lirr-long-beach-branch-2023": {
+      "decision_id": "route-disposition-v1:route_lirr-long-beach-branch-2023",
+      "evidence_ids": [
+        "meeting_doc_104751#p001_c0004"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Long Beach Branch as rail_branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Long Beach Branch",
+      "study_projectable": false
+    },
+    "route_lirr-montauk-branch-2023": {
+      "decision_id": "route-disposition-v1:route_lirr-montauk-branch-2023",
+      "evidence_ids": [
+        "meeting_doc_100336#p001_c0008"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Montauk Branch as rail_branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Montauk Branch",
+      "study_projectable": false
+    },
+    "route_lirr-oyster-bay-branch-2023": {
+      "decision_id": "route-disposition-v1:route_lirr-oyster-bay-branch-2023",
+      "evidence_ids": [
+        "meeting_doc_133321#p004_c0001"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Official evidence identifies an LIRR rail branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": null,
+      "study_projectable": false
+    },
+    "route_lirr-port-jefferson-branch-2023": {
+      "decision_id": "route-disposition-v1:route_lirr-port-jefferson-branch-2023",
+      "evidence_ids": [
+        "meeting_doc_113926#p001_c0008"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Port Jefferson Branch as branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Port Jefferson Branch",
+      "study_projectable": false
+    },
+    "route_lirr-port-washington-branch-2023": {
+      "decision_id": "route-disposition-v1:route_lirr-port-washington-branch-2023",
+      "evidence_ids": [
+        "meeting_doc_113926#p001_c0008"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Port Washington Branch as branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Port Washington Branch",
+      "study_projectable": false
+    },
+    "route_lirr-ronkonkoma-branch-2023": {
+      "decision_id": "route-disposition-v1:route_lirr-ronkonkoma-branch-2023",
+      "evidence_ids": [
+        "meeting_doc_133321#p004_c0001"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Ronkonkoma Branch as lirr_branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Ronkonkoma Branch",
+      "study_projectable": false
+    },
+    "route_lirr-west-hempstead-branch-2023": {
+      "decision_id": "route-disposition-v1:route_lirr-west-hempstead-branch-2023",
+      "evidence_ids": [
+        "meeting_doc_100336#p001_c0008"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies West Hempstead Branch as rail_branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "West Hempstead Branch",
+      "study_projectable": false
+    },
+    "route_m-nyct-2025": {
+      "decision_id": "route-disposition-v1:route_m-nyct-2025",
+      "evidence_ids": [
+        "nyct_key_performance_metrics_doc194001#p004_c0007"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies M Subway Line as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "M",
+      "study_projectable": false
+    },
+    "route_m14-ad-sbs": {
+      "decision_id": "route-disposition-v1:route_m14-ad-sbs",
+      "evidence_ids": [
+        "14th_street_winter2020_monitoring#p002_c0006"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "aggregate_label",
+      "reason": "Source evidence uses \"M14 A SBS\" as an aggregate label spanning multiple services; it cannot identify one current GTFS route.",
+      "expected_route_id": "M14 A SBS",
+      "study_projectable": false
+    },
+    "route_m14-brt-phase2": {
+      "decision_id": "route-disposition-v1:route_m14-brt-phase2",
+      "evidence_ids": [
+        "brt_intro_to_phase2#p034_c0004"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "corridor_service_label",
+      "reason": "The source uses generic M14 as a pre-SBS 14th Street corridor/service label; current GTFS has distinct M14A+ and M14D+ branches, so the generic record cannot bind to one route.",
+      "expected_route_id": "M14",
+      "study_projectable": false
+    },
+    "route_m16-mentioned": {
+      "decision_id": "route-disposition-v1:route_m16-mentioned",
+      "evidence_ids": [
+        "201110_brt_34th_open_house_slides#p028_c0002"
+      ],
+      "reviewed_at": "2026-07-17",
+      "review_state": "approved",
+      "disposition": "historical_retired",
+      "reason": "Official NYC DOT evidence states that the SBS start date was November 13, 2011 and M16 would be renamed M34A SBS while service levels and the route remained the same; the M16 predecessor identity must not compete for a current GTFS anchor.",
+      "expected_route_id": "M16",
+      "study_projectable": false
+    },
+    "route_m186726-danbury-branch": {
+      "decision_id": "route-disposition-v1:route_m186726-danbury-branch",
+      "evidence_ids": [
+        "meeting_doc_186726#p004_c0008"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Danbury Branch as commuter_rail_branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Danbury Branch",
+      "study_projectable": false
+    },
+    "route_m186726-new-canaan-branch": {
+      "decision_id": "route-disposition-v1:route_m186726-new-canaan-branch",
+      "evidence_ids": [
+        "meeting_doc_186726#p004_c0008"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies New Canaan Branch as commuter_rail_branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "New Canaan Branch",
+      "study_projectable": false
+    },
+    "route_m186726-wassaic-branch": {
+      "decision_id": "route-disposition-v1:route_m186726-wassaic-branch",
+      "evidence_ids": [
+        "meeting_doc_186726#p004_c0008"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Wassaic Branch as commuter_rail_branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Wassaic Branch",
+      "study_projectable": false
+    },
+    "route_m186726-waterbury-branch": {
+      "decision_id": "route-disposition-v1:route_m186726-waterbury-branch",
+      "evidence_ids": [
+        "meeting_doc_186726#p004_c0008"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Waterbury Branch as commuter_rail_branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Waterbury Branch",
+      "study_projectable": false
+    },
+    "route_meeting-doc-106021-harlem-line": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-106021-harlem-line",
+      "evidence_ids": [
+        "meeting_doc_106021#p010_c0002"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Harlem Line as commuter_rail, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Harlem Line",
+      "study_projectable": false
+    },
+    "route_meeting-doc-106021-hudson-line": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-106021-hudson-line",
+      "evidence_ids": [
+        "meeting_doc_106021#p010_c0002"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Hudson Line as commuter_rail, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Hudson Line",
+      "study_projectable": false
+    },
+    "route_meeting-doc-106021-new-haven-line": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-106021-new-haven-line",
+      "evidence_ids": [
+        "meeting_doc_106021#p010_c0002"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies New Haven Line as commuter_rail, outside the MTA bus GTFS route class.",
+      "expected_route_id": "New Haven Line",
+      "study_projectable": false
+    },
+    "route_meeting-doc-115256-g-subway": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-115256-g-subway",
+      "evidence_ids": [
+        "meeting_doc_115256#p002_c0004"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies G Subway Line as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "G",
+      "study_projectable": false
+    },
+    "route_meeting-doc-115256-j-subway": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-115256-j-subway",
+      "evidence_ids": [
+        "meeting_doc_115256#p002_c0004"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies J Subway Line as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "J",
+      "study_projectable": false
+    },
+    "route_meeting-doc-135451-a-line": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-135451-a-line",
+      "evidence_ids": [
+        "meeting_doc_135451#p003_c0004"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies A subway line as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "A",
+      "study_projectable": false
+    },
+    "route_meeting-doc-152171-42-st-shuttle": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-152171-42-st-shuttle",
+      "evidence_ids": [
+        "meeting_doc_152171#p007_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies 42 St Shuttle as shuttle, outside the MTA bus GTFS route class.",
+      "expected_route_id": "S",
+      "study_projectable": false
+    },
+    "route_meeting-doc-152171-l-subway": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-152171-l-subway",
+      "evidence_ids": [
+        "meeting_doc_152171#p005_c0006"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies L Subway Line as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "L",
+      "study_projectable": false
+    },
+    "route_meeting-doc-160136-newburgh-beacon-ferry": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-160136-newburgh-beacon-ferry",
+      "evidence_ids": [
+        "meeting_doc_160136#p001_c0009"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Newburgh-Beacon Ferry as ferry, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Newburgh-Beacon Ferry",
+      "study_projectable": false
+    },
+    "route_meeting-doc-160271-s-shuttle": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-160271-s-shuttle",
+      "evidence_ids": [
+        "meeting_doc_160271#p002_c0001"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies S Shuttle (Rockaway Park Shuttle) as shuttle, outside the MTA bus GTFS route class.",
+      "expected_route_id": "S",
+      "study_projectable": false
+    },
+    "route_meeting-doc-160311-haverstraw-ossining-ferry": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-160311-haverstraw-ossining-ferry",
+      "evidence_ids": [
+        "meeting_doc_160311#p009_c0007"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Haverstraw-Ossining Ferry Route as ferry, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Haverstraw-Ossining",
+      "study_projectable": false
+    },
+    "route_meeting-doc-160311-newburgh-beacon-ferry": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-160311-newburgh-beacon-ferry",
+      "evidence_ids": [
+        "meeting_doc_160311#p009_c0007"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Official evidence identifies a commuter-ferry service, outside the MTA bus GTFS route class.",
+      "expected_route_id": null,
+      "study_projectable": false
+    },
+    "route_meeting-doc-164866-greenport-branch": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-164866-greenport-branch",
+      "evidence_ids": [
+        "meeting_doc_164866#p002_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Greenport Branch as lirr_branch, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Greenport Branch",
+      "study_projectable": false
+    },
+    "route_meeting-doc-196866-2-line": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-196866-2-line",
+      "evidence_ids": [
+        "meeting_doc_196866#p001_c0005"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies 2 line as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "2",
+      "study_projectable": false
+    },
+    "route_meeting-doc-196866-3-line": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-196866-3-line",
+      "evidence_ids": [
+        "meeting_doc_196866#p001_c0005"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies 3 line as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "3",
+      "study_projectable": false
+    },
+    "route_meeting-doc-196866-4-line": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-196866-4-line",
+      "evidence_ids": [
+        "meeting_doc_196866#p001_c0005"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies 4 Line (subway) as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "4",
+      "study_projectable": false
+    },
+    "route_meeting-doc-42866-n-subway": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-42866-n-subway",
+      "evidence_ids": [
+        "meeting_doc_42866#p004_c0002"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies N Subway as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "N",
+      "study_projectable": false
+    },
+    "route_meeting-doc-42866-w-subway": {
+      "decision_id": "route-disposition-v1:route_meeting-doc-42866-w-subway",
+      "evidence_ids": [
+        "meeting_doc_42866#p004_c0002"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies W Subway as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "W",
+      "study_projectable": false
+    },
+    "route_pascack-valley-line-2023-ridership": {
+      "decision_id": "route-disposition-v1:route_pascack-valley-line-2023-ridership",
+      "evidence_ids": [
+        "meeting_doc_138236#p002_c0006"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Pascack Valley Line as commuter_rail, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Pascack Valley Line",
+      "study_projectable": false
+    },
+    "route_penn-station-access-line-160111": {
+      "decision_id": "route-disposition-v1:route_penn-station-access-line-160111",
+      "evidence_ids": [
+        "meeting_doc_160111#p008_c0002"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Penn Station Access Line as commuter_rail, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Penn Station Access Line",
+      "study_projectable": false
+    },
+    "route_port-jervis-line-2023-ridership": {
+      "decision_id": "route-disposition-v1:route_port-jervis-line-2023-ridership",
+      "evidence_ids": [
+        "meeting_doc_138236#p002_c0006"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Port Jervis Line as commuter_rail, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Port Jervis Line",
+      "study_projectable": false
+    },
+    "route_proposed-bronx-sbs-lga-2012": {
+      "decision_id": "route-disposition-v1:route_proposed-bronx-sbs-lga-2012",
+      "evidence_ids": [
+        "2012_10_lga_plan_one_pager#p001_c0013"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "proposal",
+      "reason": "Source evidence describes Proposed Bronx SBS route to LGA as a proposal, draft-plan row, or participant-suggested concept rather than an adopted current MTA bus route.",
+      "expected_route_id": "Proposed Bronx SBS",
+      "study_projectable": false
+    },
+    "route_proposed-queens-sbs-lga-2012": {
+      "decision_id": "route-disposition-v1:route_proposed-queens-sbs-lga-2012",
+      "evidence_ids": [
+        "2012_10_lga_plan_one_pager#p001_c0021"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "proposal",
+      "reason": "Source evidence describes Proposed Queens SBS route to LGA as a proposal, draft-plan row, or participant-suggested concept rather than an adopted current MTA bus route.",
+      "expected_route_id": "Proposed Queens SBS",
+      "study_projectable": false
+    },
+    "route_q-subway-nyct-2025": {
+      "decision_id": "route-disposition-v1:route_q-subway-nyct-2025",
+      "evidence_ids": [
+        "nyct_key_performance_metrics_doc194001#p024_c0004"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies Q Subway Line as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "Q",
+      "study_projectable": false
+    },
+    "route_q105-lga-2012": {
+      "decision_id": "route-disposition-v1:route_q105-lga-2012",
+      "evidence_ids": [
+        "2012_04_20_brt_lga_workshop_summary#p003_c0006"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "proposal",
+      "reason": "Source evidence describes Q105 as a proposal, draft-plan row, or participant-suggested concept rather than an adopted current MTA bus route.",
+      "expected_route_id": "Q105",
+      "study_projectable": false
+    },
+    "route_q15a-historical-2025": {
+      "decision_id": "route-disposition-v1:route_q15a-historical-2025",
+      "evidence_ids": [
+        "mta_queens_bus_network_redesign_service_changes#p001_b0018"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_retired",
+      "reason": "Official Queens redesign evidence states that Q15A service ended June 29, 2025; this historical identity must not compete for a current anchor.",
+      "expected_route_id": "Q15A",
+      "study_projectable": false
+    },
+    "route_q20-2014-10-07-flushing-jamaica": {
+      "decision_id": "route-disposition-v1:route_q20-2014-10-07-flushing-jamaica",
+      "evidence_ids": [
+        "mta_queens_bus_network_redesign_service_changes#p001_b0024"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_retired",
+      "reason": "Official Queens redesign evidence states that Q20A service ended June 29, 2025 and was replaced by the distinct current Q20 identity.",
+      "expected_route_id": "Q20A",
+      "study_projectable": false
+    },
+    "route_q20b-cb12-2011": {
+      "decision_id": "route-disposition-v1:route_q20b-cb12-2011",
+      "evidence_ids": [
+        "mta_queens_bus_network_redesign_service_changes#p001_b0025"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_retired",
+      "reason": "Official Queens redesign evidence states that Q20B service ended June 27, 2025.",
+      "expected_route_id": "Q20B",
+      "study_projectable": false
+    },
+    "route_q21-local-woodhaven-2014": {
+      "decision_id": "route-disposition-v1:route_q21-local-woodhaven-2014",
+      "evidence_ids": [
+        "mta_queens_bus_network_redesign_service_changes#p001_b0026"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_retired",
+      "reason": "Official Queens redesign evidence states that Q21 service ended August 31, 2025.",
+      "expected_route_id": "Q21",
+      "study_projectable": false
+    },
+    "route_q34-queens": {
+      "decision_id": "route-disposition-v1:route_q34-queens",
+      "evidence_ids": [
+        "mta_queens_bus_network_redesign_service_changes#p001_b0039"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_retired",
+      "reason": "Official Queens redesign evidence states that Q34 service ended June 27, 2025.",
+      "expected_route_id": "Q34",
+      "study_projectable": false
+    },
+    "route_q48-serves-lga-2011": {
+      "decision_id": "route-disposition-v1:route_q48-serves-lga-2011",
+      "evidence_ids": [
+        "mta_queens_bus_network_redesign_service_changes#p001_b0053"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_retired",
+      "reason": "Official Queens redesign evidence distinguishes the discontinued historical LaGuardia Q48 from the current Glen Oaks Q48 number reuse.",
+      "expected_route_id": "Q48",
+      "study_projectable": false
+    },
+    "route_q52-q53-sbs-proposed-2015-05": {
+      "decision_id": "route-disposition-v1:route_q52-q53-sbs-proposed-2015-05",
+      "evidence_ids": [
+        "2015_06_09_brt_woodhaven_cb9#p033_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "aggregate_label",
+      "reason": "Source evidence uses \"Q52/Q53\" as an aggregate label spanning multiple services; it cannot identify one current GTFS route.",
+      "expected_route_id": "Q52/Q53",
+      "study_projectable": false
+    },
+    "route_q53-lga-2012": {
+      "decision_id": "route-disposition-v1:route_q53-lga-2012",
+      "evidence_ids": [
+        "2012_04_20_brt_lga_workshop_summary#p003_c0006"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "proposal",
+      "reason": "Source evidence describes Q53 as a proposal, draft-plan row, or participant-suggested concept rather than an adopted current MTA bus route.",
+      "expected_route_id": "Q53",
+      "study_projectable": false
+    },
+    "route_q73-proposed-queens-redesign": {
+      "decision_id": "route-disposition-v1:route_q73-proposed-queens-redesign",
+      "evidence_ids": [
+        "meeting_doc_87961#p007_c0002"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "proposal",
+      "reason": "Source evidence describes Q73 (proposed) as a proposal, draft-plan row, or participant-suggested concept rather than an adopted current MTA bus route.",
+      "expected_route_id": "Q73",
+      "study_projectable": false
+    },
+    "route_q78-queens": {
+      "decision_id": "route-disposition-v1:route_q78-queens",
+      "evidence_ids": [
+        "queens_addendum_equity_evaluation_appendix_d#p017_c0007"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "proposal",
+      "reason": "Source evidence describes Q78 bus route as a proposal, draft-plan row, or participant-suggested concept rather than an adopted current MTA bus route.",
+      "expected_route_id": "Q78",
+      "study_projectable": false
+    },
+    "route_q98v-meeting-doc-33236": {
+      "decision_id": "route-disposition-v1:route_q98v-meeting-doc-33236",
+      "evidence_ids": [
+        "meeting_doc_33236#p041_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "temporary_service",
+      "reason": "Official 2021 evidence identifies Q98V as a temporary vaccination-shuttle pilot; it is not a current study-projectable route identity.",
+      "expected_route_id": "Q98V",
+      "study_projectable": false
+    },
+    "route_qm1a-201110-qbb": {
+      "decision_id": "route-disposition-v1:route_qm1a-201110-qbb",
+      "evidence_ids": [
+        "201110_qbb_approach_summary#p008_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_service_identity",
+      "reason": "Dated official evidence establishes QM1A Express Bus Route as a service identity at source time, but the pinned 2026-03-19 MTA bus GTFS has no exact id and repository evidence does not prove a current canonical alias.",
+      "expected_route_id": "QM1A",
+      "study_projectable": false
+    },
+    "route_qm2a-201110-qbb": {
+      "decision_id": "route-disposition-v1:route_qm2a-201110-qbb",
+      "evidence_ids": [
+        "201110_qbb_approach_summary#p008_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_service_identity",
+      "reason": "Dated official evidence establishes QM2A Express Bus Route as a service identity at source time, but the pinned 2026-03-19 MTA bus GTFS has no exact id and repository evidence does not prove a current canonical alias.",
+      "expected_route_id": "QM2A",
+      "study_projectable": false
+    },
+    "route_qm3-201110-qbb": {
+      "decision_id": "route-disposition-v1:route_qm3-201110-qbb",
+      "evidence_ids": [
+        "mta_queens_bus_network_redesign_service_changes#p001_b0104"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_retired",
+      "reason": "Official Queens redesign evidence states that QM3 service ended June 27, 2025.",
+      "expected_route_id": "QM3",
+      "study_projectable": false
+    },
+    "route_r-nyct-2025": {
+      "decision_id": "route-disposition-v1:route_r-nyct-2025",
+      "evidence_ids": [
+        "nyct_key_performance_metrics_doc194001#p009_c0011"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Source evidence identifies R Subway Line as subway, outside the MTA bus GTFS route class.",
+      "expected_route_id": "R",
+      "study_projectable": false
+    },
+    "route_rockaway-shuttle-167241": {
+      "decision_id": "route-disposition-v1:route_rockaway-shuttle-167241",
+      "evidence_ids": [
+        "meeting_doc_167241#p009_c0009"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "non_bus_service",
+      "reason": "Official evidence identifies a subway shuttle, outside the MTA bus GTFS route class.",
+      "expected_route_id": null,
+      "study_projectable": false
+    },
+    "route_sbs-to-laguardia-2012": {
+      "decision_id": "route-disposition-v1:route_sbs-to-laguardia-2012",
+      "evidence_ids": [
+        "2012_11_sbs_webster_cac4#p030_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "proposal",
+      "reason": "Source evidence describes SBS to LaGuardia Airport as a proposal, draft-plan row, or participant-suggested concept rather than an adopted current MTA bus route.",
+      "expected_route_id": "SBS to LGA",
+      "study_projectable": false
+    },
+    "route_si-express-bus-routes": {
+      "decision_id": "route-disposition-v1:route_si-express-bus-routes",
+      "evidence_ids": [
+        "42nd_st_cb5_jun242019#p006_c0001"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "aggregate_label",
+      "reason": "Source evidence uses \"SIM8/8X/22/25/26/30\" as an aggregate label spanning multiple services; it cannot identify one current GTFS route.",
+      "expected_route_id": "SIM8/8X/22/25/26/30",
+      "study_projectable": false
+    },
+    "route_sim23-sim24-express-bus": {
+      "decision_id": "route-disposition-v1:route_sim23-sim24-express-bus",
+      "evidence_ids": [
+        "meeting_doc_91711#p016_c0014"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "aggregate_label",
+      "reason": "Source evidence uses a combined SIM23/SIM24 route-list label rather than one physical operating-route identity.",
+      "expected_route_id": null,
+      "study_projectable": false
+    },
+    "route_woodhaven-crossbay-sbs": {
+      "decision_id": "route-disposition-v1:route_woodhaven-crossbay-sbs",
+      "evidence_ids": [
+        "brt_route_index#p001_b0001"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "sbs_corridor_service_label",
+      "reason": "Official route-index evidence names a Woodhaven/Cross Bay SBS corridor/service label without a single GTFS route id.",
+      "expected_route_id": null,
+      "study_projectable": false
+    },
+    "route_x28-x38-bay-pkwy": {
+      "decision_id": "route-disposition-v1:route_x28-x38-bay-pkwy",
+      "evidence_ids": [
+        "bay_pkwy_cropsey_ave_jan2025#p004_c0002"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "aggregate_label",
+      "reason": "Source evidence uses \"X28/X38\" as an aggregate label spanning multiple services; it cannot identify one current GTFS route.",
+      "expected_route_id": "X28/X38",
+      "study_projectable": false
+    },
+    "route_x51-201110-qbb": {
+      "decision_id": "route-disposition-v1:route_x51-201110-qbb",
+      "evidence_ids": [
+        "201110_qbb_approach_summary#p008_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_service_identity",
+      "reason": "Dated official evidence establishes X51 Express Bus Route as a service identity at source time, but the pinned 2026-03-19 MTA bus GTFS has no exact id and repository evidence does not prove a current canonical alias.",
+      "expected_route_id": "X51",
+      "study_projectable": false
+    },
+    "route_x63-201110-qbb": {
+      "decision_id": "route-disposition-v1:route_x63-201110-qbb",
+      "evidence_ids": [
+        "201110_qbb_approach_summary#p008_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_service_identity",
+      "reason": "Dated official evidence establishes X63 Express Bus Route as a service identity at source time, but the pinned 2026-03-19 MTA bus GTFS has no exact id and repository evidence does not prove a current canonical alias.",
+      "expected_route_id": "X63",
+      "study_projectable": false
+    },
+    "route_x64-201110-qbb": {
+      "decision_id": "route-disposition-v1:route_x64-201110-qbb",
+      "evidence_ids": [
+        "201110_qbb_approach_summary#p008_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_service_identity",
+      "reason": "Dated official evidence establishes X64 Express Bus Route as a service identity at source time, but the pinned 2026-03-19 MTA bus GTFS has no exact id and repository evidence does not prove a current canonical alias.",
+      "expected_route_id": "X64",
+      "study_projectable": false
+    },
+    "route_x68-201110-qbb": {
+      "decision_id": "route-disposition-v1:route_x68-201110-qbb",
+      "evidence_ids": [
+        "201110_qbb_approach_summary#p008_c0003"
+      ],
+      "reviewed_at": "2026-07-15",
+      "review_state": "approved",
+      "disposition": "historical_service_identity",
+      "reason": "Dated official evidence establishes X68 Express Bus Route as a service identity at source time, but the pinned 2026-03-19 MTA bus GTFS has no exact id and repository evidence does not prove a current canonical alias.",
+      "expected_route_id": "X68",
+      "study_projectable": false
+    }
+  }
+}

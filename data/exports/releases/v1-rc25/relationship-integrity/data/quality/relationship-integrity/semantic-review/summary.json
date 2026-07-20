@@ -1,0 +1,28 @@
+{
+  "contract_id": "relationship-contract-v1",
+  "review_id": "relationship-contract-v1-baseline-semantic-review",
+  "review_status": "complete",
+  "enforcement_eligible": false,
+  "enforcement_gate": "apply exact remediation plan and review every surviving post-remediation tuple",
+  "tuple_count": 1136,
+  "baseline_relation_assignment_count": 21247,
+  "tuple_decision_counts": {
+    "approved": 913,
+    "needs_remediation": 180,
+    "rejected": 43
+  },
+  "semantic_remediation_relation_count": 399,
+  "semantic_remediation_relation_ids_sha256": "d4ec4b9d8a339a57a57f7134b6fd064fde55bfa43416c45ec0277f597e5978cd",
+  "terminal_action_counts": {
+    "patch_relation": 106,
+    "replace_endpoint": 83,
+    "replace_with_submissions": 58,
+    "resolved_by_generator_fix": 33,
+    "resolved_by_identity_campaign": 16,
+    "retract_unsupported": 103
+  },
+  "reviewed_remediation_evidence_id_count": 1488,
+  "reviewed_remediation_evidence_ids_sha256": "7b702b332bff5e486c47a87fbb6cc43eaaa0ac6fc9018a15c4f985fa1495ad01",
+  "zero_unreviewed_tuples": true,
+  "zero_unplanned_suspect_relations": true
+}

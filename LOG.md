@@ -4,6 +4,28 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-20
+
+### Fail-closed Treatment Semantics and rc25
+
+- Added a record-scoped treatment semantics contract that preserves all `2,938` raw treatment
+  records and `1,038` exact literals while separating `27` reviewed atomic literals, `5`
+  source-backed compound bundles, and `1,006` unresolved literals with concrete review reasons.
+  The exact LF-terminated vocabulary SHA-256 is
+  `e825336ba8b7bff606ac9cfa3ae3fbf0b7c0dccf8c1e54d8cbed4f1109cecc4a`;
+  missing, stale, duplicate, or unreviewed record scopes fail closed.
+- Replaced project-membership route fan-out with an exact route-treatment companion projection.
+  Direct evidence-bound relations and approved occurrences authorize `327` route/treatment pairs
+  over `278` treatment records; the other `2,660` records are explicitly reconciled, with zero
+  unexplained loss. The Q27 Holly/Kissena reroute scopes only to `Q27`, the B57 stop removal only
+  to `B57`, and exact identities such as `B44` and `B44+` remain distinct.
+- Cut immutable, unpromoted manifest-v5 release candidate `v1-rc25` from generator commit
+  `36271d15`: manifest SHA-256
+  `77e518a5de39e9fc982d09b7677d44059d26de69b04d9fe10841d6c478516f0f`.
+  All `265` addressed files and `85,392` canonical records reproduced byte-for-byte. Immutable
+  `v1-rc24` remains valid at `fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d`,
+  and `LATEST` intentionally remains `v1-rc5`.
+
 ## 2026-07-19
 
 ### Exact Route Identity Contract and rc24

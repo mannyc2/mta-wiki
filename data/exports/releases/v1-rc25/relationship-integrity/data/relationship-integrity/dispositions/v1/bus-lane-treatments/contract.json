@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "contract_id": "bus-lane-treatment-physical-scope-v1",
+  "contract_status": "reviewed_warning_migration_disposition",
+  "reviewed_at": "2026-07-15T20:00:00.000Z",
+  "reviewed_by": "codex-corpus-physical-scope-audit",
+  "immutable_after_review": true,
+  "amendment_policy": "Publish a new version or a superseding decision; never mutate a reviewed row silently.",
+  "inventory_rule": "Every materialized treatment_component with effective payload.treatment_family=bus_lane after the explicitly pinned reviewed semantic reclassification, plus explicitly reviewed accepted pending additions required by coordinated materialization.",
+  "exclusive_decisions": {
+    "physical_scope_satisfied": "A physical lane component has an evidence-backed canonical corridor or bounded-segment relationship.",
+    "non_physical_enforcement_or_control": "Enforcement, camera, hours, operations, or designation-control record; never study-eligible as a physical lane treatment.",
+    "non_lane_supporting_feature": "Paint, markings, bollards, separation, maintenance, or another supporting feature rather than the physical lane row.",
+    "aggregate_or_unbounded_treatment": "Aggregate bundle or lane record lacking bounded physical scope at record precision.",
+    "reviewed_non_projectable_physical_scope_unproven": "Physical lane candidate reviewed without a unique exact authoritative scope identity."
+  },
+  "classification_precedence": [
+    "non_physical_enforcement_or_control",
+    "non_lane_supporting_feature",
+    "aggregate_kind",
+    "evidence_backed_scope_binding",
+    "aggregate_or_unbounded_location",
+    "reviewed_non_projectable_physical_scope_unproven"
+  ],
+  "physical_scope_evidence_rule": {
+    "method_id": "same-source-exact-facility-and-treatment-evidence-v1",
+    "requirements": [
+      "treatment and corridor share the authoritative source_id",
+      "an exact facility/location or extent evidence block is available in the staged authoritative source",
+      "an exact physical-lane treatment assertion is present on the same source page",
+      "every cited evidence-block SHA-256 equals the staged authoritative block hash",
+      "the normalized canonical corridor literal occurs in exact facility evidence",
+      "the treatment identity text identifies that literal as the facility, not merely an endpoint",
+      "reviewed adjacent co-citations are treatment/corridor/source specific and cannot generalize by name similarity",
+      "exactly one canonical corridor identity passes all checks"
+    ],
+    "prohibited_inferences": [
+      "route binding from street-name similarity",
+      "route binding from proximity or geometry",
+      "physical scope from an ambiguous endpoint name"
+    ]
+  },
+  "study_policy": {
+    "non_satisfied_decisions_are_study_eligible": false,
+    "physical_scope_satisfied_does_not_imply_study_eligibility": true,
+    "waiver_policy": "A non-satisfied reviewed row waives only the missing physical-scope role and always remains non-projectable; a satisfied row creates no waiver."
+  },
+  "reviewed_pending_journals": [
+    "data/submissions/2026-07-15T12-00-00-000Z_legacy-relationship-integrity-remediation.jsonl",
+    "data/submissions/2026-07-15T18-00-00-000Z_queens-acquisition-linkage-remediation.jsonl"
+  ],
+  "inputs": [
+    {
+      "path": "data/canonical/treatment_components.jsonl",
+      "sha256": "a9b76c3b7121fc87d0f190a44fb00f182229d8d309968d3ba00a8c27a1492bae",
+      "bytes": 4484742
+    },
+    {
+      "path": "data/canonical/corridors.jsonl",
+      "sha256": "3c6167688db1a7a86603973aefc9025678d029c9dba0b0788eb5f41b3e9428ad",
+      "bytes": 793111
+    },
+    {
+      "path": "data/canonical/relations.jsonl",
+      "sha256": "0a76df68d2025e9f44524bb0e7650409302ea2c7cc31a359e74798e0896ba033",
+      "bytes": 35100097
+    },
+    {
+      "path": "data/submissions/2026-07-15T12-00-00-000Z_legacy-relationship-integrity-remediation.jsonl",
+      "sha256": "69486f2f3f6358b9b34565eebfcb8490306f2b4eafba04030d3a361fdd9ee7f5",
+      "bytes": 34115
+    },
+    {
+      "path": "data/submissions/2026-07-15T18-00-00-000Z_queens-acquisition-linkage-remediation.jsonl",
+      "sha256": "29fe25ec1f5cc87af99686ca825eb226fbacb391c947a3fe0fed610b8fdb5196",
+      "bytes": 47099
+    },
+    {
+      "path": "data/semantic-corrections/corrections.jsonl",
+      "sha256": "d1cfcd40f0c23764d854ff749beee800f25ee316036ff891407255be17fdf050",
+      "bytes": 644123
+    }
+  ]
+}
