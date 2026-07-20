@@ -766,6 +766,27 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
     throw new Error(`Treatment semantic contract is required for release export: ${treatmentContractPath}`);
   }
 
+  if (opts.relationshipCompletenessStaging) {
+    const stagingManifest = {
+      release_id: releaseId,
+      generator_commit: gitHeadCommit(),
+      files: sortedObject(fileEntries),
+    };
+    const manifestPath = join(dir, "manifest.json");
+    const manifestBytes = `${stableJson(stagingManifest as unknown as JsonValue)}\n`;
+    writeFileSync(manifestPath, manifestBytes, "utf8");
+    const manifestSha256 = sha256(manifestBytes);
+    installReleaseDirectory(dir, targetDir, false);
+    return {
+      dir: targetDir,
+      releaseId,
+      recordCount,
+      files: fileEntries.length,
+      manifestPath: join(targetDir, "manifest.json"),
+      manifestSha256,
+    };
+  }
+
   const taxonomyPath = join(dir, "taxonomy.json");
   writeFileSync(taxonomyPath, taxonomyJson(), "utf8");
   fileEntries.push(["taxonomy.json", fileMetadata(taxonomyPath)]);

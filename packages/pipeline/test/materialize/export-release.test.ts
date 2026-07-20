@@ -1434,7 +1434,10 @@ describe("exportRelease", () => {
     expect(staged.dir).toBe(join(stagingRoot, "downgraded"));
     expect(
       JSON.parse(readFileSync(join(staged.dir, "manifest.json"), "utf8")),
-    ).toMatchObject({ release_id: "downgraded", manifest_version: 3 });
+    ).toMatchObject({ release_id: "downgraded" });
+    expect(
+      JSON.parse(readFileSync(join(staged.dir, "manifest.json"), "utf8")),
+    ).not.toHaveProperty("manifest_version");
   });
 
   it("does not promote a release whose export fails", () => {
