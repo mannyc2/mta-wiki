@@ -1,0 +1,86 @@
+{
+  "contract_id": "mta-wiki-treatment-semantics-v1",
+  "schema_version": 1,
+  "source_release": {
+    "release_id": "v1-rc24",
+    "manifest_sha256": "fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d",
+    "record_path": "treatment_components.jsonl",
+    "record_count": 2938
+  },
+  "vocabulary": {
+    "exact_literal_count": 1038,
+    "serialization": "unique exact UTF-8 literals sorted by codepoint with an LF after every literal",
+    "lf_terminated_sha256": "e825336ba8b7bff606ac9cfa3ae3fbf0b7c0dccf8c1e54d8cbed4f1109cecc4a",
+    "lf_unterminated_sha256": "3e43cc1f07227af243a80b597a6932ad3774f8299c6ae41a220e7dc36e38cee5",
+    "source_count": 514
+  },
+  "reconciliation": {
+    "exact": true,
+    "disposition_count": 1038,
+    "atomic_count": 27,
+    "bundle_count": 5,
+    "unresolved_count": 1006,
+    "record_scope_counts": {
+      "atomic": 650,
+      "bundle": 5,
+      "unresolved": 2283
+    },
+    "unresolved_reason_counts": {
+      "compound wording supports a bus-lane member but does not identify the atomic semantics of signal improvements": 1,
+      "exact raw treatment literal has not received a source-backed canonical atomic or bundle mapping": 995,
+      "literal_context_varies: canonical records carry different normalized families (bus_lane, bus_priority, bus_stop_or_boarding, signal_priority, traffic_restriction)": 1,
+      "literal_context_varies: canonical records carry different normalized families (bus_lane, bus_stop_or_boarding, capital_or_infrastructure)": 1,
+      "literal_context_varies: canonical records carry different normalized families (bus_stop_or_boarding, capital_or_infrastructure)": 1,
+      "literal_context_varies: canonical records carry different normalized families (capital_or_infrastructure, signage_and_markings)": 1,
+      "normalized family label is not an atomic treatment kind": 1,
+      "source wording does not establish whether the semantic kind is busway, access restriction, or capital tunnel treatment": 1,
+      "umbrella label does not enumerate source-supported atomic members": 3,
+      "umbrella label does not identify a single atomic treatment or lossless bundle members": 1
+    },
+    "missing_literal_count": 0,
+    "stale_disposition_count": 0,
+    "missing_record_scope_count": 0,
+    "stale_record_scope_count": 0,
+    "duplicate_record_scope_count": 0
+  },
+  "safety": {
+    "raw_literal_preserved": true,
+    "new_or_removed_literals_fail_closed": true,
+    "arbitrary_prose_never_becomes_a_semantic_kind": true,
+    "bundle_members_require_manual_source_bound_review": true,
+    "unresolved_is_not_an_atomic_other_bucket": true
+  },
+  "downstream_reconciliation": {
+    "asserted_sorted_union_literal_count": 681,
+    "asserted_sorted_union_sha256": "ac2e8bf069d2d4aed9bc483499a290da52e11446dc02f290c39a5e26ac5d255e",
+    "status": "downstream_assertion_not_reproduced_from_full_input_set_here",
+    "explanation": "The downstream sorted union also includes Tracker reviewed-corpus custom treatments and trusted local-registry literals. It is not the full producer treatment-component vocabulary.",
+    "reproduced_rc24_route_evidence": {
+      "intervention_row_count": 35817,
+      "title_equals_treatment_kind_count": 35817,
+      "unique_treatment_kind_count": 497,
+      "exact_literal_lf_terminated_sha256": "de01151be14beba80379550c17294f1f711f645a353aae43b44ac10300e63f75",
+      "exact_literal_lf_unterminated_sha256": "5e662b40d050a841029618fa75b5cd27dfb0cb54ffae9b86ee1de7b30294e437",
+      "tracker_route_input_sha256": "8fa238d0b5d813244ef1fcf64ade28051d11eb4b3e8c55fec9500ce0a614e56f"
+    }
+  },
+  "artifacts": {
+    "contract": {
+      "path": "data/contracts/treatments/v1/contract.json",
+      "bytes": 330756,
+      "sha256": "cef852fbf2922c8e5f839bff5ae67ce530f797f5a3bc8628eefe39e40de9c554"
+    },
+    "decisions": {
+      "path": "data/contracts/treatments/v1/decisions.jsonl",
+      "rows": 1038,
+      "bytes": 330718,
+      "sha256": "80398356a914541d74f5b62ac4b11f57acac5780f8e2aeed7014a64e3a0b42f3"
+    },
+    "inventory": {
+      "path": "data/contracts/treatments/v1/inventory.jsonl",
+      "rows": 1038,
+      "bytes": 2716129,
+      "sha256": "74d7d5969b0013477ea37e09cfb142b4d35a4c4976a8793e07455746c8e04945"
+    }
+  }
+}
