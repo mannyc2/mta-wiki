@@ -1,7 +1,7 @@
 import { spawnSync } from "node:child_process";
 import { createHash, randomUUID } from "node:crypto";
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from "node:fs";
-import { isAbsolute, join } from "node:path";
+import { basename, isAbsolute, join, resolve, sep } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
@@ -419,6 +419,7 @@ export type ReleaseExportOptions = {
   qualityReport?: string | null | undefined;
   relationshipIntegrityBundleDescriptor?: string | null | undefined;
   treatmentSemanticContractPath?: string | null | undefined;
+  relationshipCompletenessStaging?: boolean | undefined;
 };
 
 function recordJson(record: MtaCanonicalRecord): string {
@@ -482,6 +483,30 @@ function assertSafeReleaseId(releaseId: string): void {
   }
 }
 
+function assertRelationshipCompletenessStaging(
+  releaseId: string,
+  rootDir: string,
+  opts: ReleaseExportOptions,
+): void {
+  if (!opts.relationshipCompletenessStaging) return;
+  if (!opts.outputRoot || opts.setLatest || opts.relationshipIntegrityBundleDescriptor !== null) {
+    throw new Error(
+      "Relationship-completeness staging requires --output-root, forbids promotion, and must explicitly omit the prior relationship bundle",
+    );
+  }
+  const productionRoot = resolve(releaseRoot(rootDir));
+  const stagingRoot = resolve(opts.outputRoot);
+  const stagingName = basename(stagingRoot);
+  if (
+    !stagingRoot.startsWith(`${productionRoot}${sep}`) ||
+    !(stagingName.startsWith(`.${releaseId}-`) || stagingName.startsWith(`.${releaseId}.`))
+  ) {
+    throw new Error(
+      `Relationship-completeness staging output must be a hidden ${releaseId} pre-cut directory inside ${productionRoot}`,
+    );
+  }
+}
+
 function installReleaseDirectory(tempDir: string, targetDir: string, force: boolean): void {
   if (!existsSync(targetDir)) {
     renameSync(tempDir, targetDir);
@@ -515,6 +540,7 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   assertSafeReleaseId(releaseId);
 
   const rootDir = opts.rootDir ?? repoRoot;
+  assertRelationshipCompletenessStaging(releaseId, rootDir, opts);
   const reviewDecisionDir = requiredOperationalAnchorReviewDecisionDir(rootDir, opts.operationalAnchorReviewDecisionDir);
   if (opts.force) throw new Error("Force replacement of release candidate IDs is forbidden");
   if (opts.setLatest && opts.outputRoot) throw new Error("Replay output-root export cannot update LATEST");
@@ -766,7 +792,8 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
     ) as { contract_status?: unknown };
     if (
       relationshipContract.contract_status === "enforced" &&
-      !relationshipBundle
+      !relationshipBundle &&
+      !opts.relationshipCompletenessStaging
     ) {
       throw new Error(
         "An enforced relationship contract requires a manifest-v4 content-addressed relationship-integrity bundle",
