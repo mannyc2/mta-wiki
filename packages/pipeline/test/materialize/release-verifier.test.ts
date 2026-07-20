@@ -21,6 +21,13 @@ function legacyClone(id: string): string { const source = join(process.cwd(), "d
 describe("release directory verifier tamper matrix", () => {
   it("accepts a valid current manifest-v3 occurrence-v2 release", () => { expect(verifyReleaseDirectory(release("baseline")).manifest_version).toBe(3); });
   it("rejects wrong bytes and SHA-256", () => { const path = clone("wrong-hash"); writeFileSync(join(path, "routes.jsonl"), "{}\n"); expect(() => verifyReleaseDirectory(path)).toThrow(/bytes mismatch|SHA-256 mismatch/u); });
+  it("rejects a partially addressed treatment semantic artifact set", () => {
+    const path = clone("partial-treatment-contract");
+    const name = "treatment_semantics.json";
+    writeFileSync(join(path, name), '{"dispositions":[],"schema_version":1}\n');
+    repin(path, name);
+    expect(() => verifyReleaseDirectory(path)).toThrow("release treatment contract artifact set is incomplete");
+  });
   it("rejects a canonical row-count mismatch even when bytes are repinned", () => { const path = clone("wrong-count"); editManifest(path, (manifest) => { manifest.record_counts.route = 1; }); expect(() => verifyReleaseDirectory(path)).toThrow("row-count mismatch"); });
   it("rejects wrong declared versions and dangling pointers", () => { const version = clone("wrong-version"); editManifest(version, (manifest) => { manifest.contract_versions.operational_occurrences = 99; }); expect(() => verifyReleaseDirectory(version)).toThrow("contract_versions.operational_occurrences"); const pointer = clone("dangling-pointer"); editManifest(pointer, (manifest) => { manifest.pointers.operational_occurrences = "missing.jsonl"; }); expect(() => verifyReleaseDirectory(pointer)).toThrow("no file metadata"); });
   it("strict-decodes addressed payload types after valid repinning", () => { const path = clone("wrong-type"); writeFileSync(join(path, "operational_anchors.jsonl"), "{}\n"); repin(path, "operational_anchors.jsonl"); expect(() => verifyReleaseDirectory(path)).toThrow("keys must be exactly"); });

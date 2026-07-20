@@ -489,6 +489,28 @@ export function treatmentSemanticContractSha256(contract: TreatmentSemanticContr
   return createHash("sha256").update(treatmentSemanticContractBytes(contract)).digest("hex");
 }
 
+export function treatmentVocabularyInventoryJson(inventory: TreatmentVocabularyInventory): string {
+  return `${stableJson(inventory as unknown as JsonValue)}\n`;
+}
+
+export function treatmentVocabularyReconciliationJson(
+  reconciliation: TreatmentVocabularyReconciliation,
+): string {
+  return `${stableJson(reconciliation as unknown as JsonValue)}\n`;
+}
+
+export function treatmentSemanticReviewQueueJsonl(contract: TreatmentSemanticContract): string {
+  const unresolved = contract.dispositions
+    .filter((disposition) => disposition.disposition === "unresolved")
+    .sort((left, right) => compareText(
+      [left.raw_treatment_kind, ...left.record_ids].join("\0"),
+      [right.raw_treatment_kind, ...right.record_ids].join("\0"),
+    ));
+  return unresolved.length === 0
+    ? ""
+    : `${unresolved.map((row) => stableJson(row as unknown as JsonValue)).join("\n")}\n`;
+}
+
 export const TREATMENT_ROUTE_DIRECT_RELATION_ALLOWLIST = [
   { relation_kind: "applies_to_route", relation_family: "route_scope", subject_kind: "treatment_component", object_kind: "route" },
   { relation_kind: "enforces_on_route", relation_family: "route_scope", subject_kind: "treatment_component", object_kind: "route" },

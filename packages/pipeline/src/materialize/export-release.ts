@@ -67,6 +67,21 @@ import {
 } from "@mta-wiki/pipeline/materialize/operational-projection-retirements";
 import { verifyReleaseDirectory } from "@mta-wiki/pipeline/materialize/release-verifier";
 import { loadRouteIdentityReleaseProjection } from "@mta-wiki/pipeline/materialize/route-identity-release";
+import {
+  assertTreatmentVocabularyReconciled,
+  collectTreatmentVocabulary,
+  parseTreatmentSemanticContract,
+  treatmentSemanticContractBytes,
+  treatmentSemanticReviewQueueJsonl,
+  treatmentVocabularyInventoryJson,
+  treatmentVocabularyReconciliationJson,
+} from "@mta-wiki/pipeline/materialize/treatment-semantics";
+import {
+  buildRouteTreatmentScopeProjection,
+  routeTreatmentScopeReconciliationJsonl,
+  routeTreatmentScopesJsonl,
+  routeTreatmentScopeSummaryJson,
+} from "@mta-wiki/pipeline/materialize/route-treatment-scopes";
 
 export type ReleaseManifestFile = {
   bytes: number;
@@ -403,6 +418,7 @@ export type ReleaseExportOptions = {
   outputRoot?: string | undefined;
   qualityReport?: string | null | undefined;
   relationshipIntegrityBundleDescriptor?: string | null | undefined;
+  treatmentSemanticContractPath?: string | null | undefined;
 };
 
 function recordJson(record: MtaCanonicalRecord): string {
@@ -445,6 +461,14 @@ function requiredOperationalAnchorReviewDecisionDir(rootDir: string, configuredD
     throw new Error(`Operational-anchor review decision path must be a directory: ${dir}`);
   }
   return dir;
+}
+
+function configuredTreatmentSemanticContractPath(
+  rootDir: string,
+  configured: string | null | undefined,
+): string | null {
+  if (configured === null) return null;
+  return configured ?? join(rootDir, "data", "contracts", "treatments", "v1", "contract.json");
 }
 
 function assertSafeReleaseId(releaseId: string): void {
@@ -664,6 +688,57 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
     "operational_occurrence_review_decisions.json",
     fileMetadata(operationalOccurrenceReviewDecisionsPath),
   ]);
+
+  const treatmentContractPath = configuredTreatmentSemanticContractPath(
+    rootDir,
+    opts.treatmentSemanticContractPath,
+  );
+  if (treatmentContractPath && existsSync(treatmentContractPath)) {
+    if (!routeIdentityRelease) {
+      throw new Error("Treatment semantic releases require the exact manifest-v5 route identity snapshot");
+    }
+    let treatmentContractInput: unknown;
+    try {
+      treatmentContractInput = JSON.parse(readFileSync(treatmentContractPath, "utf8")) as unknown;
+    } catch (error) {
+      throw new Error(
+        `Unable to parse treatment semantic contract ${treatmentContractPath}: ${error instanceof Error ? error.message : String(error)}`,
+      );
+    }
+    const treatmentContract = parseTreatmentSemanticContract(
+      treatmentContractInput,
+      treatmentContractPath,
+    );
+    const treatmentInventory = collectTreatmentVocabulary(records);
+    const treatmentReconciliation = assertTreatmentVocabularyReconciled(
+      treatmentInventory,
+      treatmentContract,
+    );
+    const routeTreatmentProjection = buildRouteTreatmentScopeProjection(
+      records,
+      routeIdentityRelease.snapshot,
+      operationalOccurrences,
+    );
+    const treatmentArtifacts = [
+      ["treatment_semantics.json", treatmentSemanticContractBytes(treatmentContract)],
+      ["treatment_vocabulary_inventory.json", treatmentVocabularyInventoryJson(treatmentInventory)],
+      ["treatment_vocabulary_reconciliation.json", treatmentVocabularyReconciliationJson(treatmentReconciliation)],
+      ["treatment_semantic_review_queue.jsonl", treatmentSemanticReviewQueueJsonl(treatmentContract)],
+      ["route_treatment_scopes.jsonl", routeTreatmentScopesJsonl(routeTreatmentProjection.scopes)],
+      [
+        "route_treatment_scope_reconciliation.jsonl",
+        routeTreatmentScopeReconciliationJsonl(routeTreatmentProjection.reconciliation),
+      ],
+      ["route_treatment_scope_summary.json", routeTreatmentScopeSummaryJson(routeTreatmentProjection.summary)],
+    ] as const;
+    for (const [name, content] of treatmentArtifacts) {
+      const path = join(dir, name);
+      writeFileSync(path, content, "utf8");
+      fileEntries.push([name, fileMetadata(path)]);
+    }
+  } else if (treatmentContractPath && opts.records === undefined) {
+    throw new Error(`Treatment semantic contract is required for release export: ${treatmentContractPath}`);
+  }
 
   const taxonomyPath = join(dir, "taxonomy.json");
   writeFileSync(taxonomyPath, taxonomyJson(), "utf8");
