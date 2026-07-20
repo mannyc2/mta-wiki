@@ -164,8 +164,16 @@ beforeAll(() => {
     copyFileSync(join(sourceReleaseDir, fileName), destination);
   }
 
-  copyRepoFile(`${COMPLETENESS_RELATIVE_DIR}/manifest.json`);
-  copyRepoFile(`${COMPLETENESS_RELATIVE_DIR}/occurrence-completeness.jsonl`);
+  // The sandbox intentionally replays rc24. Read its release-bound completeness inputs from the
+  // immutable relationship bundle instead of borrowing the repository's current (now rc25)
+  // completeness snapshot.
+  for (const name of ["manifest.json", "occurrence-completeness.jsonl"] as const) {
+    mkdirSync(completenessDir, { recursive: true });
+    copyFileSync(
+      join(sourceReleaseDir, "relationship-integrity", COMPLETENESS_RELATIVE_DIR, name),
+      join(completenessDir, name),
+    );
+  }
   copyRepoFile(`${CONTRACT_RELATIVE_DIR}/review-ledger.jsonl`);
   copyRepoFile(`${CONTRACT_RELATIVE_DIR}/retired-review-ledger.jsonl`);
   copyRepoFile("data/route-identity/accepted/v1/decisions.jsonl");
