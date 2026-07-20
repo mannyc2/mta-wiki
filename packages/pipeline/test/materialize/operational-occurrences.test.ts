@@ -19,6 +19,7 @@ import {
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
 import {
   computeOperationalOccurrences,
+  OPERATIONAL_OCCURRENCE_TREATMENT_FAMILIES,
   operationalOccurrencesJsonl,
   parseOperationalOccurrencesJsonl,
   parseOperationalOccurrenceSummary,
@@ -248,6 +249,12 @@ describe("operational occurrences v2 with immutable v1 compatibility", () => {
       }>;
     };
     expect(rows).toHaveLength(135);
+    const emittedTreatmentFamilies = new Set(rows.flatMap((row) =>
+      row.treatment.kind === "atomic"
+        ? [row.treatment.member.treatment_family]
+        : row.treatment.members.map((member) => member.treatment_family)));
+    expect([...emittedTreatmentFamilies].every((family) =>
+      OPERATIONAL_OCCURRENCE_TREATMENT_FAMILIES.includes(family))).toBeTrue();
     expect(summary).toEqual({
       schema_version: 2,
       occurrence_count: 135,
@@ -304,6 +311,29 @@ describe("operational occurrences v2 with immutable v1 compatibility", () => {
       expect(occurrence?.routes.map((route) => route.gtfs_route_id)).toEqual(expectedFareFreeRoutes);
     }
     expect(JSON.stringify(q48Occurrence)).not.toContain("historical");
+    const b57Occurrence = rows.find((row) => row.occurrence_id === "occurrence:00027f5ec1ea65794a3ae5cf");
+    const q27Occurrence = rows.find((row) => row.occurrence_id === "occurrence:012a7db8f83a7369d830cfbe");
+    expect(b57Occurrence).toMatchObject({
+      routes: [{ route_record_id: "route_b57-grand-ave-2024", gtfs_route_id: "B57" }],
+      treatment: {
+        kind: "atomic",
+        member: { treatment_record_id: "treatment_b57-stop-removal-2025" },
+      },
+    });
+    expect(q27Occurrence).toMatchObject({
+      routes: [{ route_record_id: "route_q27-ace", gtfs_route_id: "Q27" }],
+      treatment: { kind: "bundle" },
+    });
+    expect(q27Occurrence?.treatment.kind === "bundle"
+      ? q27Occurrence.treatment.members.map((member) => member.treatment_record_id)
+      : []).toEqual([
+      "treatment_q27-holly-kissena-reroute-2025",
+      "treatment_q27-limited-discontinuation-2025",
+      "treatment_q27-limited-stops-2025",
+      "treatment_q27-stop-removal-2025",
+    ]);
+    expect(JSON.stringify(b57Occurrence)).not.toContain("treatment_q27-");
+    expect(JSON.stringify(q27Occurrence)).not.toContain("treatment_b57-");
     expect(
       expectedCandidates.candidates.filter(
         (candidate) => candidate.occurrence_id === "occurrence:29fc4436c22b58d52f231964",
@@ -988,5 +1018,67 @@ describe("operational occurrences v2 with immutable v1 compatibility", () => {
     const tamperedRow = structuredClone(rows);
     tamperedRow[0]!.resolved_onset.evidence_bindings[0]!.evidence_id = `${sourceId}#tampered-row-onset`;
     expect(() => assertOperationalOccurrenceReviewDecisions(reviews, tamperedRow)).toThrow(/stale|missing from the top-level evidence ledger/u);
+  });
+
+  it("fails closed on open treatment families and structurally ambiguous bundles", () => {
+    const input = fixture();
+    const atomicRows = computeOperationalOccurrences(input.records, input.routeAnchors, {
+      reviewDecisions: [anchorDecision({ id: "x1-a", routeId: "route_x1", treatmentId: "treatment_a" })],
+      identityRegistry: [input.identity],
+    });
+    const openFamily = structuredClone(atomicRows[0]!);
+    if (openFamily.treatment.kind !== "atomic") throw new Error("fixture drift");
+    openFamily.treatment.member.treatment_family = "signal improvements and targeted bus lanes" as never;
+    expect(() => parseOperationalOccurrencesJsonl(`${JSON.stringify(openFamily)}\n`))
+      .toThrow("is not a supported operational occurrence treatment family");
+
+    const falseExclusion = structuredClone(atomicRows[0]!);
+    falseExclusion.exclusion_reasons = ["unsupported_bundle_analysis_family"];
+    falseExclusion.study_projection_eligible = false;
+    expect(() => parseOperationalOccurrencesJsonl(`${JSON.stringify(falseExclusion)}\n`))
+      .toThrow("exclusion_reasons must exactly describe treatment semantic support; expected none");
+
+    const decision = explicitBundleDecision();
+    const bundleRows = computeOperationalOccurrences(input.records, input.routeAnchors, {
+      reviewDecisions: [],
+      occurrenceReviewDecisions: [decision],
+      identityRegistry: [{ ...input.identity, decision_id: decision.decision_id }],
+    });
+    const documentedUnresolvedDecision = structuredClone(decision);
+    if (documentedUnresolvedDecision.treatment.kind !== "bundle") throw new Error("fixture drift");
+    documentedUnresolvedDecision.treatment.analysis_family = "documented_future_bundle";
+    const documentedUnresolvedRows = computeOperationalOccurrences(input.records, input.routeAnchors, {
+      reviewDecisions: [],
+      occurrenceReviewDecisions: [documentedUnresolvedDecision],
+      identityRegistry: [{ ...input.identity, decision_id: decision.decision_id }],
+    });
+    expect(documentedUnresolvedRows[0]).toMatchObject({
+      treatment: { kind: "bundle", bundle_family: "documented_future_bundle" },
+      exclusion_reasons: ["unsupported_bundle_analysis_family"],
+      study_projection_eligible: false,
+    });
+    expect(parseOperationalOccurrencesJsonl(operationalOccurrencesJsonl(documentedUnresolvedRows)))
+      .toEqual(documentedUnresolvedRows);
+
+    const duplicateMember = structuredClone(bundleRows[0]!);
+    if (duplicateMember.treatment.kind !== "bundle") throw new Error("fixture drift");
+    duplicateMember.treatment.members.push(structuredClone(duplicateMember.treatment.members[0]!));
+    expect(() => parseOperationalOccurrencesJsonl(`${JSON.stringify(duplicateMember)}\n`))
+      .toThrow("members must have distinct treatment_record_id values");
+
+    const unsupportedWithoutEvidence = structuredClone(bundleRows[0]!);
+    if (unsupportedWithoutEvidence.treatment.kind !== "bundle") throw new Error("fixture drift");
+    unsupportedWithoutEvidence.treatment.bundle_family = "documented_future_bundle";
+    unsupportedWithoutEvidence.treatment.bundle_family_evidence_bindings = [];
+    expect(() => parseOperationalOccurrencesJsonl(`${JSON.stringify(unsupportedWithoutEvidence)}\n`))
+      .toThrow("bundle_family and its evidence must be present or absent together");
+
+    const canonicalMismatch = structuredClone(atomicRows[0]!);
+    const mismatchedRecords = structuredClone(input.records);
+    mismatchedRecords.find((item) => item.record_id === "treatment_a")!.payload.treatment_family = "signage_and_markings";
+    expect(() => parseOperationalOccurrencesJsonl(
+      `${JSON.stringify(canonicalMismatch)}\n`,
+      mismatchedRecords,
+    )).toThrow("does not match canonical signage_and_markings");
   });
 });
