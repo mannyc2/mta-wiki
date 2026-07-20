@@ -41,6 +41,21 @@ import { parseRouteIdentitySnapshotV1 } from "./route-identity-contract.js";
 import { canonicalRouteRecordFingerprint, projectRouteAnchorsFromIdentitySnapshot } from "./route-identities.js";
 import { loadRouteIdentityReleaseProjection } from "./route-identity-release.js";
 import { parseTaxonomy } from "./export-taxonomy.js";
+import {
+  assertTreatmentVocabularyReconciled,
+  collectTreatmentVocabulary,
+  parseTreatmentSemanticContract,
+  treatmentSemanticContractBytes,
+  treatmentSemanticReviewQueueJsonl,
+  treatmentVocabularyInventoryJson,
+  treatmentVocabularyReconciliationJson,
+} from "./treatment-semantics.js";
+import {
+  buildRouteTreatmentScopeProjection,
+  routeTreatmentScopeReconciliationJsonl,
+  routeTreatmentScopesJsonl,
+  routeTreatmentScopeSummaryJson,
+} from "./route-treatment-scopes.js";
 
 export type ReleaseVerificationResult = { release_id: string; manifest_version: number; manifest_sha256: string; verified_file_count: number; verified_record_count: number; contract_versions: ReleaseManifest["contract_versions"] };
 type Decoder = (bytes: Buffer, path: string) => unknown;
@@ -104,6 +119,27 @@ function safeFile(dir: string, relativePath: string): string {
   return path;
 }
 const rows = (bytes: Buffer) => bytes.toString("utf8").split(/\r?\n/u).filter(Boolean);
+const TREATMENT_RELEASE_ARTIFACTS = [
+  "treatment_semantics.json",
+  "treatment_vocabulary_inventory.json",
+  "treatment_vocabulary_reconciliation.json",
+  "treatment_semantic_review_queue.jsonl",
+  "route_treatment_scopes.jsonl",
+  "route_treatment_scope_reconciliation.jsonl",
+  "route_treatment_scope_summary.json",
+] as const;
+
+function assertReleaseArtifactBytes(
+  files: ReadonlyMap<string, Buffer>,
+  path: string,
+  expected: string,
+): void {
+  const actual = files.get(path);
+  if (!actual) throw new Error(`release treatment contract artifact is missing: ${path}`);
+  if (actual.toString("utf8") !== expected) {
+    throw new Error(`${path}: deterministic treatment contract bytes differ from canonical inputs`);
+  }
+}
 
 export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = basename(resolve(releaseDir)), options: { allowQuarantined?: boolean; sourceRootDir?: string } = {}): ReleaseVerificationResult {
   const manifestPath = safeFile(releaseDir, "manifest.json");
@@ -178,6 +214,53 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
   const occurrences = decoded.get("operational_occurrences"); const review = decoded.get("operational_occurrence_review_decisions");
   if (Array.isArray(occurrences) && review && typeof review === "object" && Array.isArray((review as { decisions?: unknown }).decisions)) { const proof = manifest.contract_versions.operational_occurrences === 2 ? proveOperationalOccurrenceV2ReviewProjection(occurrences as Parameters<typeof assertOperationalOccurrenceReviewDecisions>[1], canonicalRecords) : undefined; assertOperationalOccurrenceReviewDecisions((review as { decisions: Parameters<typeof assertOperationalOccurrenceReviewDecisions>[0] }).decisions, occurrences as Parameters<typeof assertOperationalOccurrenceReviewDecisions>[1], proof); const pointer = manifest.pointers.operational_occurrence_summary; if (pointer) { const bytes = files.get(pointer); if (!bytes) throw new Error(`occurrence summary is not addressed: ${pointer}`); const summary = parseOperationalOccurrenceSummary(json(bytes, pointer)); if (summary.occurrence_count !== occurrences.length) throw new Error(`${pointer}: occurrence_count mismatch; expected ${occurrences.length}, got ${summary.occurrence_count}`); } }
   const routeSnapshot = decoded.get("route_identity_snapshot") as ReturnType<typeof parseRouteIdentitySnapshotV1> | undefined;
+  const treatmentArtifactPresence = TREATMENT_RELEASE_ARTIFACTS.filter((path) => files.has(path));
+  if (treatmentArtifactPresence.length !== 0 && treatmentArtifactPresence.length !== TREATMENT_RELEASE_ARTIFACTS.length) {
+    const missing = TREATMENT_RELEASE_ARTIFACTS.filter((path) => !files.has(path));
+    throw new Error(`release treatment contract artifact set is incomplete: ${missing.join(", ")}`);
+  }
+  if (treatmentArtifactPresence.length === TREATMENT_RELEASE_ARTIFACTS.length) {
+    if (!routeSnapshot || !Array.isArray(occurrences)) {
+      throw new Error("release treatment contract requires decoded manifest-v5 route identities and occurrences");
+    }
+    const treatmentContract = parseTreatmentSemanticContract(
+      json(files.get("treatment_semantics.json")!, "treatment_semantics.json"),
+      "treatment_semantics.json",
+    );
+    const treatmentInventory = collectTreatmentVocabulary(canonicalRecords);
+    const treatmentReconciliation = assertTreatmentVocabularyReconciled(
+      treatmentInventory,
+      treatmentContract,
+    );
+    const routeTreatmentProjection = buildRouteTreatmentScopeProjection(
+      canonicalRecords,
+      routeSnapshot,
+      occurrences as Parameters<typeof buildRouteTreatmentScopeProjection>[2],
+    );
+    assertReleaseArtifactBytes(files, "treatment_semantics.json", treatmentSemanticContractBytes(treatmentContract));
+    assertReleaseArtifactBytes(files, "treatment_vocabulary_inventory.json", treatmentVocabularyInventoryJson(treatmentInventory));
+    assertReleaseArtifactBytes(
+      files,
+      "treatment_vocabulary_reconciliation.json",
+      treatmentVocabularyReconciliationJson(treatmentReconciliation),
+    );
+    assertReleaseArtifactBytes(
+      files,
+      "treatment_semantic_review_queue.jsonl",
+      treatmentSemanticReviewQueueJsonl(treatmentContract),
+    );
+    assertReleaseArtifactBytes(files, "route_treatment_scopes.jsonl", routeTreatmentScopesJsonl(routeTreatmentProjection.scopes));
+    assertReleaseArtifactBytes(
+      files,
+      "route_treatment_scope_reconciliation.jsonl",
+      routeTreatmentScopeReconciliationJsonl(routeTreatmentProjection.reconciliation),
+    );
+    assertReleaseArtifactBytes(
+      files,
+      "route_treatment_scope_summary.json",
+      routeTreatmentScopeSummaryJson(routeTreatmentProjection.summary),
+    );
+  }
   if (routeSnapshot) {
     const routeAnchorBytes = files.get(manifest.pointers.route_anchors!);
     if (!routeAnchorBytes) throw new Error("manifest-v5 route_anchors payload is missing");

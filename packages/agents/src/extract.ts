@@ -26,7 +26,7 @@ import {
 } from "@mta-wiki/pipeline/extract/boundary";
 import { anchorMatchExtractResult, type AnchorDoNotMergePair } from "@mta-wiki/pipeline/identity/anchor-match";
 
-export const DEFAULT_EXTRACT_RELEASE_ID = "v1-rc5";
+export const DEFAULT_EXTRACT_RELEASE_ID = "v1-rc25";
 export const DEFAULT_EXTRACT_RUN_ID = "v2-extract-dev";
 
 export type ExtractRunOptions = HarnessRunOptions & {

@@ -22,6 +22,41 @@ import type { RouteAnchorRow } from "@mta-wiki/pipeline/materialize/route-anchor
 
 export const OPERATIONAL_OCCURRENCE_SCHEMA_VERSION = 2 as const;
 
+/**
+ * Operational occurrences expose a closed producer semantic, not the treatment's display label.
+ * Raw source wording remains on the canonical treatment component addressed by
+ * `treatment_record_id`. Adding a family therefore requires an explicit contract change instead
+ * of allowing an arbitrary canonical payload string to become a release-facing semantic value.
+ */
+export const OPERATIONAL_OCCURRENCE_TREATMENT_FAMILIES = [
+  "amenity_or_public_art",
+  "automated_bus_lane_enforcement",
+  "bike_facility",
+  "bus_lane",
+  "bus_priority",
+  "bus_stop_or_boarding",
+  "busway",
+  "capital_or_infrastructure",
+  "curb_management",
+  "customer_information",
+  "enforcement",
+  "fare_collection",
+  "monitoring",
+  "pedestrian_or_accessibility",
+  "route_redesign",
+  "safety",
+  "service_pattern",
+  "signage_and_markings",
+  "signal_priority",
+  "traffic_restriction",
+  "vehicle_or_fleet",
+] as const;
+
+export type OperationalOccurrenceTreatmentFamily =
+  (typeof OPERATIONAL_OCCURRENCE_TREATMENT_FAMILIES)[number];
+
+const supportedTreatmentFamilies = new Set<string>(OPERATIONAL_OCCURRENCE_TREATMENT_FAMILIES);
+
 export type OperationalOccurrenceEvidenceRole =
   | OperationalAnchorReviewEvidenceRole
   | "bundle_analysis_family"
@@ -64,7 +99,7 @@ export type OperationalOccurrenceRoute = {
 
 export type OperationalOccurrenceTreatmentMember = {
   treatment_record_id: string;
-  treatment_family: string;
+  treatment_family: OperationalOccurrenceTreatmentFamily;
   evidence_bindings: OperationalOccurrenceEvidenceBinding[];
 };
 
@@ -134,7 +169,7 @@ export type ComputeOperationalOccurrencesOptions = {
   identityRegistry: readonly OperationalOccurrenceIdentityEntry[];
 };
 
-const supportedBundleAnalysisFamilies = new Set([
+export const OPERATIONAL_OCCURRENCE_BUNDLE_FAMILIES = [
   "all_door_boarding",
   "automated_bus_lane_enforcement",
   "bus_lane",
@@ -147,7 +182,9 @@ const supportedBundleAnalysisFamilies = new Set([
   "stop_change",
   // Legacy decision decoder alias. New decisions use canonical signal_priority.
   "transit_signal_priority",
-]);
+] as const;
+
+const supportedBundleAnalysisFamilies = new Set<string>(OPERATIONAL_OCCURRENCE_BUNDLE_FAMILIES);
 
 /**
  * Multi-phase occurrence projection is deliberately narrower than the general relation ontology.
@@ -236,6 +273,16 @@ function text(value: JsonValue | undefined): string | null {
   if (typeof value === "string" && value.trim()) return value.trim();
   if (typeof value === "number") return String(value);
   return null;
+}
+
+function operationalTreatmentFamily(
+  value: string,
+  path: string,
+): OperationalOccurrenceTreatmentFamily {
+  if (!supportedTreatmentFamilies.has(value)) {
+    throw new Error(`${path} is not a supported operational occurrence treatment family: ${value}`);
+  }
+  return value as OperationalOccurrenceTreatmentFamily;
 }
 
 function uniqueSorted(values: Iterable<string>): string[] {
@@ -354,7 +401,10 @@ function treatmentMembers(decisions: readonly OperationalAnchorReviewDecision[])
       }
       return {
         treatment_record_id: treatmentRecordId,
-        treatment_family: families[0]!,
+        treatment_family: operationalTreatmentFamily(
+          families[0]!,
+          `reviewed occurrence treatment ${treatmentRecordId} family`,
+        ),
         evidence_bindings: uniqueBindings(
           treatmentDecisions.flatMap((decision) =>
             decision.evidence_bindings.filter(
@@ -912,7 +962,10 @@ function explicitOccurrence(input: {
     }
     return {
       treatment_record_id: member.treatment_record_id,
-      treatment_family: member.treatment_family,
+      treatment_family: operationalTreatmentFamily(
+        member.treatment_family,
+        `occurrence review ${decision.decision_id} treatment ${member.treatment_record_id} family`,
+      ),
       evidence_bindings: uniqueBindings(member.evidence_bindings),
     };
   };
@@ -1316,10 +1369,25 @@ function parseObservation(value: unknown, path: string): OperationalOccurrenceOb
 function parseMember(value: unknown, path: string): OperationalOccurrenceTreatmentMember {
   const object = contractObject(value, path);
   contractKeys(object, memberFields, path);
+  const treatmentRecordId = contractString(object.treatment_record_id, `${path}.treatment_record_id`);
+  const evidenceBindings = parseOccurrenceBindings(object.evidence_bindings, `${path}.evidence_bindings`, true);
+  if (evidenceBindings.some((binding) =>
+    binding.role !== "treatment_definition" && binding.role !== "treatment_scope")) {
+    throw new Error(`${path}.evidence_bindings may only use treatment_definition or treatment_scope`);
+  }
+  requireBindingRoles(evidenceBindings, ["treatment_definition", "treatment_scope"], path);
+  if (evidenceBindings
+    .filter((binding) => binding.role === "treatment_definition")
+    .some((binding) => binding.record_id !== treatmentRecordId)) {
+    throw new Error(`${path}.treatment_definition must bind ${treatmentRecordId}`);
+  }
   return {
-    treatment_record_id: contractString(object.treatment_record_id, `${path}.treatment_record_id`),
-    treatment_family: contractString(object.treatment_family, `${path}.treatment_family`),
-    evidence_bindings: parseOccurrenceBindings(object.evidence_bindings, `${path}.evidence_bindings`, true),
+    treatment_record_id: treatmentRecordId,
+    treatment_family: operationalTreatmentFamily(
+      contractString(object.treatment_family, `${path}.treatment_family`),
+      `${path}.treatment_family`,
+    ),
+    evidence_bindings: evidenceBindings,
   };
 }
 
@@ -1332,6 +1400,7 @@ function parseTreatment(value: unknown, path: string): OperationalOccurrenceTrea
   if (object.kind === "bundle") {
     contractKeys(object, bundleTreatmentFields, path);
     if (!Array.isArray(object.members) || object.members.length < 2) throw new Error(`${path}.members must contain at least two members`);
+    const bundleFamily = contractNullableString(object.bundle_family, `${path}.bundle_family`);
     const familyBindings = parseOccurrenceBindings(
       object.bundle_family_evidence_bindings,
       `${path}.bundle_family_evidence_bindings`,
@@ -1339,11 +1408,18 @@ function parseTreatment(value: unknown, path: string): OperationalOccurrenceTrea
     if (familyBindings.some((binding) => binding.role !== "bundle_analysis_family")) {
       throw new Error(`${path}.bundle_family_evidence_bindings must all use bundle_analysis_family`);
     }
+    if ((bundleFamily === null) !== (familyBindings.length === 0)) {
+      throw new Error(`${path}.bundle_family and its evidence must be present or absent together`);
+    }
+    const members = object.members.map((entry, index) => parseMember(entry, `${path}.members[${index}]`));
+    if (new Set(members.map((member) => member.treatment_record_id)).size !== members.length) {
+      throw new Error(`${path}.members must have distinct treatment_record_id values`);
+    }
     return {
       kind: "bundle",
-      bundle_family: contractNullableString(object.bundle_family, `${path}.bundle_family`),
+      bundle_family: bundleFamily,
       bundle_family_evidence_bindings: familyBindings,
-      members: object.members.map((entry, index) => parseMember(entry, `${path}.members[${index}]`)),
+      members,
     };
   }
   throw new Error(`${path}.kind must be atomic or bundle`);
@@ -1410,14 +1486,25 @@ export function parseOperationalOccurrence(value: unknown, path = "operational o
     if (reason !== "unsupported_bundle_analysis_family") throw new Error(`${path}.exclusion_reasons[${index}] is unsupported: ${reason}`);
     return reason as OperationalOccurrenceExclusionReason;
   });
+  if (new Set(exclusionReasons).size !== exclusionReasons.length) {
+    throw new Error(`${path}.exclusion_reasons must not contain duplicates`);
+  }
   const eligible = contractBoolean(object.study_projection_eligible, `${path}.study_projection_eligible`);
   const bundleSupported =
     treatment.kind === "bundle" &&
     treatment.bundle_family !== null &&
     supportedBundleAnalysisFamilies.has(treatment.bundle_family) &&
     treatment.bundle_family_evidence_bindings.length > 0;
-  if (treatment.kind === "bundle" && !bundleSupported && !exclusionReasons.includes("unsupported_bundle_analysis_family")) {
-    throw new Error(`${path} bundle requires unsupported_bundle_analysis_family`);
+  const expectedExclusionReasons: OperationalOccurrenceExclusionReason[] =
+    treatment.kind === "bundle" && !bundleSupported ? ["unsupported_bundle_analysis_family"] : [];
+  if (
+    stableJson(exclusionReasons as unknown as JsonValue) !==
+    stableJson(expectedExclusionReasons as unknown as JsonValue)
+  ) {
+    throw new Error(
+      `${path}.exclusion_reasons must exactly describe treatment semantic support; expected ` +
+        `${expectedExclusionReasons.join(", ") || "none"}`,
+    );
   }
   if (eligible !== (exclusionReasons.length === 0)) {
     throw new Error(`${path}.study_projection_eligible must equal an empty exclusion set`);
@@ -1798,6 +1885,43 @@ export function assertOperationalOccurrenceCanonicalIntegrity(
       ? [row.treatment.member.treatment_record_id]
       : row.treatment.members.map((member) => member.treatment_record_id);
     const treatmentRecordIdSet = new Set(treatmentRecordIds);
+    const treatmentMembers = row.treatment.kind === "atomic"
+      ? [row.treatment.member]
+      : row.treatment.members;
+    for (const member of treatmentMembers) {
+      const treatment = recordsById.get(member.treatment_record_id);
+      if (!treatment || treatment.record_kind !== "treatment_component") {
+        throw new Error(`${path} treatment member ${member.treatment_record_id} must resolve to a canonical treatment component`);
+      }
+      if (treatment.truth_status !== "source_stated" || treatment.review_state === "quarantined") {
+        throw new Error(`${path} treatment member ${member.treatment_record_id} must be source_stated and non-quarantined`);
+      }
+      const canonicalFamily = text(treatment.payload.treatment_family);
+      if (canonicalFamily !== member.treatment_family) {
+        throw new Error(
+          `${path} treatment member ${member.treatment_record_id} family ${member.treatment_family} ` +
+            `does not match canonical ${canonicalFamily ?? "missing"}`,
+        );
+      }
+      operationalTreatmentFamily(member.treatment_family, `${path} treatment member ${member.treatment_record_id} family`);
+      for (const binding of member.evidence_bindings) {
+        const evidenceRecord = bindingRecord(binding, recordsById, path);
+        if (binding.role === "treatment_definition" && evidenceRecord.record_id !== member.treatment_record_id) {
+          throw new Error(`${path} treatment_definition must bind ${member.treatment_record_id}`);
+        }
+        if (
+          binding.role === "treatment_scope" &&
+          (
+            evidenceRecord.record_kind !== "relation" ||
+            text(evidenceRecord.payload.relation_kind) !== "has_treatment" ||
+            text(evidenceRecord.payload.assertion_status) !== "delivered" ||
+            relationEndpoint(evidenceRecord, "object_id") !== member.treatment_record_id
+          )
+        ) {
+          throw new Error(`${path} treatment-scope evidence does not bind ${member.treatment_record_id}`);
+        }
+      }
+    }
     const observedPhysicalScopes = observedRelations.flatMap((relation) => {
       const endpoints = directPhysicalScopeEndpoints({
         relation,

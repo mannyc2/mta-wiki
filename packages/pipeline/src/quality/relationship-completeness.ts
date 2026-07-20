@@ -723,6 +723,12 @@ export type WriteRelationshipCompletenessArtifactsOptions = {
   reviewedCurrentCorpusMigration?: boolean | undefined;
   dispositionRootDir?: string | undefined;
   treatmentPhysicalityContractPath?: string | undefined;
+  /**
+   * Bootstrap a new immutable release only when its four physicality inputs are byte-identical
+   * to the prior reviewed-final snapshot. The resulting completeness bundle is transitional and
+   * must be regenerated normally after the physicality contract is rebound to the new release.
+   */
+  allowByteIdenticalPhysicalityBootstrap?: boolean | undefined;
   busLaneTreatmentScopeContractDir?: string | undefined;
 };
 
@@ -2614,6 +2620,7 @@ export function loadOccurrenceTreatmentPhysicalityContract(input: {
   contractPath: string;
   releaseId: string;
   releaseSnapshotSourceDir?: string | undefined;
+  allowByteIdenticalReviewedReleaseAlias?: boolean | undefined;
 }): NonNullable<BuildRelationshipCompletenessAuditInput["treatmentPhysicality"]> {
   const contractRelativePath = normalizedRepositoryPath(input.contractPath, "treatmentPhysicalityContractPath");
   const contractPath = resolve(input.rootDir, contractRelativePath);
@@ -2681,7 +2688,23 @@ export function loadOccurrenceTreatmentPhysicalityContract(input: {
   if (!reviewedReleaseId || !reviewedReleaseDir) {
     throw new Error(`${contractPath}: review snapshot release identity is incomplete`);
   }
-  if (contractStatus === "reviewed_final" && reviewedReleaseId !== input.releaseId) {
+  const byteIdenticalReleaseAlias =
+    contractStatus === "reviewed_final" &&
+    reviewedReleaseId !== input.releaseId &&
+    input.allowByteIdenticalReviewedReleaseAlias === true;
+  if (
+    byteIdenticalReleaseAlias &&
+    !input.releaseSnapshotSourceDir
+  ) {
+    throw new Error(
+      `${contractPath}: byte-identical physicality bootstrap requires a pre-cut release source directory`,
+    );
+  }
+  if (
+    contractStatus === "reviewed_final" &&
+    reviewedReleaseId !== input.releaseId &&
+    !byteIdenticalReleaseAlias
+  ) {
     throw new Error(
       `${contractPath}: reviewed final physicality release ${reviewedReleaseId ?? "<missing>"} ` +
         `does not match completeness release ${input.releaseId}`,
@@ -2691,7 +2714,7 @@ export function loadOccurrenceTreatmentPhysicalityContract(input: {
     reviewedReleaseDir,
     "review_snapshot.release_dir",
   );
-  const expectedReviewedReleaseDir = `data/exports/releases/${input.releaseId}`;
+  const expectedReviewedReleaseDir = `data/exports/releases/${reviewedReleaseId}`;
   if (
     contractStatus === "reviewed_final" &&
     normalizedReviewedReleaseDir !== expectedReviewedReleaseDir
@@ -2719,7 +2742,7 @@ export function loadOccurrenceTreatmentPhysicalityContract(input: {
       Boolean(raw && typeof raw === "object" && !Array.isArray(raw) &&
         text((raw as Record<string, unknown>).path)?.endsWith(".jsonl")),
     ...(input.releaseSnapshotSourceDir &&
-        reviewedReleaseId === input.releaseId &&
+        (reviewedReleaseId === input.releaseId || byteIdenticalReleaseAlias) &&
         normalizedReviewedReleaseDir === expectedReviewedReleaseDir &&
         raw && typeof raw === "object" && !Array.isArray(raw)
       ? {
@@ -2730,6 +2753,20 @@ export function loadOccurrenceTreatmentPhysicalityContract(input: {
       }
       : {}),
   }));
+  if (byteIdenticalReleaseAlias) {
+    for (const snapshotFile of snapshotFiles) {
+      const candidatePath = join(
+        input.releaseSnapshotSourceDir!,
+        basename(snapshotFile.path),
+      );
+      const candidateContent = readFileSync(candidatePath, "utf8");
+      if (candidateContent !== snapshotFile.content) {
+        throw new Error(
+          `${contractPath}: candidate ${basename(snapshotFile.path)} is not byte-identical to reviewed final release ${reviewedReleaseId}`,
+        );
+      }
+    }
+  }
   const snapshotPaths = snapshotFiles.map((file) => file.path).sort();
   const legacyWarningSnapshotPaths = [
     ...expectedSnapshotPaths,
@@ -3360,6 +3397,9 @@ export function loadRelationshipCompletenessArtifacts(
       DEFAULT_OCCURRENCE_TREATMENT_PHYSICALITY_CONTRACT_PATH,
     releaseId,
     ...(options.releaseSourceDir ? { releaseSnapshotSourceDir: releaseSourceDir } : {}),
+    ...(options.allowByteIdenticalPhysicalityBootstrap
+      ? { allowByteIdenticalReviewedReleaseAlias: true }
+      : {}),
   });
   const routeIdentitySnapshotContent = releaseContents.get("route_identity_snapshot.json");
   const routeIdentitySnapshot = routeIdentitySnapshotContent === undefined

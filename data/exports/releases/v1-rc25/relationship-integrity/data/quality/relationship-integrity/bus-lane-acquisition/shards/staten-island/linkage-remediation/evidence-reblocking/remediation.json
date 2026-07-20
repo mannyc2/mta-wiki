@@ -1,0 +1,420 @@
+{
+  "schema_version": 1,
+  "remediation_id": "staten-island-evidence-reblocking-remediation-v1",
+  "status": "applied",
+  "reviewed_at": "2026-07-16T01:30:00.000Z",
+  "reviewed_by": "Codex canonical relationship-integrity campaign",
+  "statement": "The official source PDF is byte-identical to the acquisition receipt. Only the staged block surface changed. The prior accepted rows are retired and replaced append-only with exact current primary-block evidence; no route, project, treatment, corridor, date, phase, status, or operational claim was added.",
+  "pinned_inputs": {
+    "original_journal_path": "data/submissions/2026-07-15T21-00-00-000Z_staten-island-acquisition-linkage-remediation.jsonl",
+    "original_journal_sha256": "9e0ade44c8f28f6684bbe6b57d496730d0ce360a4a84e6d9fc541ef8b0458a4b",
+    "prior_source_verification_path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/source-verification.json",
+    "prior_source_verification_sha256": "f021df74d570b644fb6c6a43529adf79d87db8a24d3bdcd20788eff34c7df272",
+    "official_source_pdf_path": "raw/sources/better_buses_action_plan_2019/source.pdf",
+    "official_source_pdf_sha256": "68ac9e1aaf17a033577688e241e586ac101581ef0e2ba0cc3854196f9323f1c1",
+    "current_primary_blocks_path": "raw/sources/better_buses_action_plan_2019/blocks.jsonl",
+    "current_primary_blocks_sha256": "487b4b779b210ed48c836b10a647567cc20f4ea18c95a58abc4334744e262a28",
+    "base_retirement_count": 333
+  },
+  "block_mapping": [
+    {
+      "legacy_block_id": "p026_p0001",
+      "current_block_id": "p026_c0001",
+      "current_text_sha256": "sha256:41c9826dadbdbf3882113122d95e78948dc6e42f42d5b78d8485064c98841d90"
+    },
+    {
+      "legacy_block_id": "p026_p0011",
+      "current_block_id": "p026_c0005",
+      "current_text_sha256": "sha256:08b340c3dc47d98bede28b288c5e0c66741c8ad8909a64d9f90b9116d665c3c1"
+    },
+    {
+      "legacy_block_id": "p026_p0020",
+      "current_block_id": "p026_c0005",
+      "current_text_sha256": "sha256:08b340c3dc47d98bede28b288c5e0c66741c8ad8909a64d9f90b9116d665c3c1"
+    },
+    {
+      "legacy_block_id": "p026_p0021",
+      "current_block_id": "p026_c0005",
+      "current_text_sha256": "sha256:08b340c3dc47d98bede28b288c5e0c66741c8ad8909a64d9f90b9116d665c3c1"
+    },
+    {
+      "legacy_block_id": "p026_p0022",
+      "current_block_id": "p026_c0006",
+      "current_text_sha256": "sha256:138a126314507a47e49f66253f4953103d1714602bea70b5cb2d095cff1a7caf"
+    },
+    {
+      "legacy_block_id": "p028_p0003",
+      "current_block_id": "p028_c0001",
+      "current_text_sha256": "sha256:fa759ff460cb2eee55935c1f50d3088e439225325b553b2d435bbbb2f689c3b8"
+    },
+    {
+      "legacy_block_id": "p028_p0037",
+      "current_block_id": "p028_c0007",
+      "current_text_sha256": "sha256:08df05f86926b4e46f0f0b6c5fe3ff2f5bb5323ef986b285a115c5b7e682914c"
+    },
+    {
+      "legacy_block_id": "p028_p0038",
+      "current_block_id": "p028_c0007",
+      "current_text_sha256": "sha256:08df05f86926b4e46f0f0b6c5fe3ff2f5bb5323ef986b285a115c5b7e682914c"
+    },
+    {
+      "legacy_block_id": "p028_p0039",
+      "current_block_id": "p028_c0007",
+      "current_text_sha256": "sha256:08df05f86926b4e46f0f0b6c5fe3ff2f5bb5323ef986b285a115c5b7e682914c"
+    },
+    {
+      "legacy_block_id": "p028_p0040",
+      "current_block_id": "p028_c0007",
+      "current_text_sha256": "sha256:08df05f86926b4e46f0f0b6c5fe3ff2f5bb5323ef986b285a115c5b7e682914c"
+    },
+    {
+      "legacy_block_id": "p028_p0043",
+      "current_block_id": "p028_c0007",
+      "current_text_sha256": "sha256:08df05f86926b4e46f0f0b6c5fe3ff2f5bb5323ef986b285a115c5b7e682914c"
+    }
+  ],
+  "summary": {
+    "affected_submission_count": 20,
+    "replacement_submission_count": 20,
+    "retired_original_submission_count": 20,
+    "affected_observation_kind_counts": {
+      "route": 9,
+      "relation": 11
+    },
+    "legacy_block_id_count": 11,
+    "current_block_id_count": 5,
+    "projected_record_count": 27,
+    "projected_record_kind_counts": {
+      "relation": 14,
+      "route": 12,
+      "source": 1
+    },
+    "original_submission_ids_sha256": "68f3263dfb59dab41c920d5a561a34ae3aa94d93146c1ad95d86e11ea00008bf",
+    "replacement_submission_ids_sha256": "fb13b04e698d58873c22a5bcf3f37f7b2e6d5877b1158fd3137c7d3cdffe4a3f",
+    "projected_record_ids_sha256": "912259d52b437e6c25b9a9e51c588fc492e2b524b8723e42ba80a041f099e5a9",
+    "unresolved_reblocked_submission_count": 0
+  },
+  "decisions": [
+    {
+      "original_submission_id": "sub_1d99e31817d6f887",
+      "replacement_submission_id": "sub_8cf276a61775fcd8",
+      "observation_kind": "route",
+      "local_observation_id": "route_sim1",
+      "canonical_claim_identity_sha256": "a44cd88eafea3e8fed1b0e59fab4dfd1ae2e75ff71ad3a9ac51325b0f0daec2e",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0038"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_1d99e31817d6f887"
+    },
+    {
+      "original_submission_id": "sub_27a198f4e701327d",
+      "replacement_submission_id": "sub_561b413271134f6b",
+      "observation_kind": "route",
+      "local_observation_id": "route_sim2",
+      "canonical_claim_identity_sha256": "dccfb455b7e0be0c67334bd2eb6f51da8e1c9b6c5b623e7e0e79b5eb927db916",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0038"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_27a198f4e701327d"
+    },
+    {
+      "original_submission_id": "sub_27f66b2c5c2db1d6",
+      "replacement_submission_id": "sub_7fc0a48c558ccdfa",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_battery_place_project_serves_sim35_2019",
+      "canonical_claim_identity_sha256": "c4c9fd2d4cdb399b39afa464708ea55cafcc797938cf11a07140744957f989f1",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0003",
+        "better_buses_action_plan_2019#p028_p0037",
+        "better_buses_action_plan_2019#p028_p0043"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0001",
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_27f66b2c5c2db1d6"
+    },
+    {
+      "original_submission_id": "sub_2af27de45dff820a",
+      "replacement_submission_id": "sub_ecaf665bc7a45ebf",
+      "observation_kind": "route",
+      "local_observation_id": "route_sim33c",
+      "canonical_claim_identity_sha256": "7f7cc224b740266d9c57edd380ef1c3c55a85e40fdff13b55050b7fb36c7c79b",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0040"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_2af27de45dff820a"
+    },
+    {
+      "original_submission_id": "sub_3624fbe09caf186f",
+      "replacement_submission_id": "sub_5586e9f03c0d91b5",
+      "observation_kind": "route",
+      "local_observation_id": "route_sim32",
+      "canonical_claim_identity_sha256": "ddf19568d7fa492727350af98638bf76c2f86282b67959078e2492c053ed3c82",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0039"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_3624fbe09caf186f"
+    },
+    {
+      "original_submission_id": "sub_421e4e76e6c367cc",
+      "replacement_submission_id": "sub_202e2110eb76342e",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_battery_place_project_serves_sim5_2019",
+      "canonical_claim_identity_sha256": "23d9d6c8b46b098baa4ccea2ae730eafea6fd34c8adb943cc7a6460d073ccd0a",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0003",
+        "better_buses_action_plan_2019#p028_p0037",
+        "better_buses_action_plan_2019#p028_p0039"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0001",
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_421e4e76e6c367cc"
+    },
+    {
+      "original_submission_id": "sub_6d6f862a79c8834b",
+      "replacement_submission_id": "sub_865ce99822fc851b",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_battery_place_project_serves_sim32_2019",
+      "canonical_claim_identity_sha256": "6748623fddb24ab01125c1025b27c78c184ad1ef7915e6c6f7cd46c64841e41f",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0003",
+        "better_buses_action_plan_2019#p028_p0037",
+        "better_buses_action_plan_2019#p028_p0039"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0001",
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_6d6f862a79c8834b"
+    },
+    {
+      "original_submission_id": "sub_76b0ef1dde1938bf",
+      "replacement_submission_id": "sub_d101ce3ea92c0746",
+      "observation_kind": "route",
+      "local_observation_id": "route_sim5",
+      "canonical_claim_identity_sha256": "34d71b86df0bfdd8c50a228d67610d62c923698142b94d91ebb4e9905bcd67a7",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0039"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_76b0ef1dde1938bf"
+    },
+    {
+      "original_submission_id": "sub_77dc4ac16e69c211",
+      "replacement_submission_id": "sub_449c950abbe51108",
+      "observation_kind": "route",
+      "local_observation_id": "route_sim3c",
+      "canonical_claim_identity_sha256": "06dc4f9d6db71af33e02e7eb452dac530804dc116da1d46c372bd2743b9d88ad",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0038"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_77dc4ac16e69c211"
+    },
+    {
+      "original_submission_id": "sub_8060076bb0a12d3a",
+      "replacement_submission_id": "sub_6d28c328dbe96478",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_staten_acquisition_madison_project_uses_corridor_2019",
+      "canonical_claim_identity_sha256": "b4cfcad373f45f29720c441aa5b2f667c9f87126e0bacc6633f8c49d769ecb40",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p026_p0001",
+        "better_buses_action_plan_2019#p026_p0022"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p026_c0001",
+        "better_buses_action_plan_2019#p026_c0006"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_8060076bb0a12d3a"
+    },
+    {
+      "original_submission_id": "sub_85587caa7b9e8e3c",
+      "replacement_submission_id": "sub_d212f9841da76c1c",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_battery_place_project_serves_sim15_2019",
+      "canonical_claim_identity_sha256": "f0d4f09bb7eae39e725c81b7bcf6678ba8e24460b61a9db08be88f11b38dfc36",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0003",
+        "better_buses_action_plan_2019#p028_p0037",
+        "better_buses_action_plan_2019#p028_p0039"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0001",
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_85587caa7b9e8e3c"
+    },
+    {
+      "original_submission_id": "sub_890e7d730d2452af",
+      "replacement_submission_id": "sub_98acbe9c646bee06",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_battery_place_project_serves_sim33c_2019",
+      "canonical_claim_identity_sha256": "1d0c14ddb7bf720154261ab90e51ac75298133c664f5a6552e2354b980c86760",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0003",
+        "better_buses_action_plan_2019#p028_p0037",
+        "better_buses_action_plan_2019#p028_p0040"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0001",
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_890e7d730d2452af"
+    },
+    {
+      "original_submission_id": "sub_a38d6f8ec9f054ec",
+      "replacement_submission_id": "sub_c7287747bb9b3c4a",
+      "observation_kind": "route",
+      "local_observation_id": "route_sim35",
+      "canonical_claim_identity_sha256": "c28f05a570c76e910a3b465ab1c995813ec48a6ce0851b390f981fd7c4f04589",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0043"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_a38d6f8ec9f054ec"
+    },
+    {
+      "original_submission_id": "sub_b42c8cc1ed4242c9",
+      "replacement_submission_id": "sub_15ea91329afe239d",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_battery_place_project_serves_sim34_2019",
+      "canonical_claim_identity_sha256": "844298a97b2a5a1a22779262015faf0f5b431125b864fd4ce924b1cf74ceb4f4",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0003",
+        "better_buses_action_plan_2019#p028_p0037",
+        "better_buses_action_plan_2019#p028_p0043"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0001",
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_b42c8cc1ed4242c9"
+    },
+    {
+      "original_submission_id": "sub_b83f5c008f20bac2",
+      "replacement_submission_id": "sub_eade7830e0e8a6cf",
+      "observation_kind": "route",
+      "local_observation_id": "route_sim15",
+      "canonical_claim_identity_sha256": "567c006ac69cdd6a46850273ea80ec70a93c93f253c541098651bd4478e9e57a",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0039"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_b83f5c008f20bac2"
+    },
+    {
+      "original_submission_id": "sub_bde839f19c429ed1",
+      "replacement_submission_id": "sub_12a6d1a59f89bd5e",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_battery_place_project_serves_sim1_2019",
+      "canonical_claim_identity_sha256": "750df79ce05d8c16fd4cb28eae3c8ce06b400ea169647f1dd8b5dd6b8b79a52b",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0003",
+        "better_buses_action_plan_2019#p028_p0037",
+        "better_buses_action_plan_2019#p028_p0038"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0001",
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_bde839f19c429ed1"
+    },
+    {
+      "original_submission_id": "sub_d867e060e4745281",
+      "replacement_submission_id": "sub_22fc8e08faf8e21c",
+      "observation_kind": "route",
+      "local_observation_id": "route_sim34",
+      "canonical_claim_identity_sha256": "f8c9c0da1138b9d7c9d559b1d6421c904b76a98eacec6b0217845102e0145fe7",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0043"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_d867e060e4745281"
+    },
+    {
+      "original_submission_id": "sub_d9cdde3e64d8cf36",
+      "replacement_submission_id": "sub_6a901a6f487c1a9f",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_staten_acquisition_madison_project_has_double_bus_lane_2019",
+      "canonical_claim_identity_sha256": "da344fd862ded54a48586c192fb23185c127b4a1c5cdc902e15d8bf6b113f097",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p026_p0001",
+        "better_buses_action_plan_2019#p026_p0011",
+        "better_buses_action_plan_2019#p026_p0020",
+        "better_buses_action_plan_2019#p026_p0021"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p026_c0001",
+        "better_buses_action_plan_2019#p026_c0005"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_d9cdde3e64d8cf36"
+    },
+    {
+      "original_submission_id": "sub_f9173fe14787d671",
+      "replacement_submission_id": "sub_5062c1dde65cb3b2",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_battery_place_project_serves_sim3c_2019",
+      "canonical_claim_identity_sha256": "7f6da5b2d775b588380976f30d059d1fc95b5fbf3f734419435b8dea5665861b",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0003",
+        "better_buses_action_plan_2019#p028_p0037",
+        "better_buses_action_plan_2019#p028_p0038"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0001",
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_f9173fe14787d671"
+    },
+    {
+      "original_submission_id": "sub_f9dd074301edd7dc",
+      "replacement_submission_id": "sub_fe69ed174c5eae12",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_battery_place_project_serves_sim2_2019",
+      "canonical_claim_identity_sha256": "1b57cd27c867dfe9ca5ba55ef412b8731607cd1b73739e3d1a2c1e8a8b80d9a9",
+      "old_evidence_ids": [
+        "better_buses_action_plan_2019#p028_p0003",
+        "better_buses_action_plan_2019#p028_p0037",
+        "better_buses_action_plan_2019#p028_p0038"
+      ],
+      "new_evidence_ids": [
+        "better_buses_action_plan_2019#p028_c0001",
+        "better_buses_action_plan_2019#p028_c0007"
+      ],
+      "source_decision": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json#sub_f9dd074301edd7dc"
+    }
+  ],
+  "outputs": {
+    "replacement_journal_path": "data/submissions/2026-07-16T01-30-00-000Z_staten-island-evidence-reblocking-remediation.jsonl",
+    "retirement_override_path": "data/submission-overrides/retired.json"
+  },
+  "reproduction_commands": [
+    "bun scripts/remediate-staten-island-evidence-reblocking.ts --check",
+    "bun test packages/pipeline/test/records/staten-island-acquisition-linkage-remediation.test.ts"
+  ]
+}

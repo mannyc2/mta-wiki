@@ -269,12 +269,17 @@ export const materializeCommands = {
   "export-release": (args) => {
     const releaseId = optionValue(process.argv, "--id") ?? new Date().toISOString().slice(0, 10);
     const setLatest = process.argv.includes("--set-latest");
+    const relationshipCompletenessStaging = process.argv.includes("--relationship-completeness-staging");
     const result = exportRelease(releaseId, {
       force: args.force,
       setLatest,
       qualityReport: optionValue(process.argv, "--quality-report"),
       gtfsSnapshotId: optionValue(process.argv, "--gtfs-snapshot"),
       outputRoot: optionValue(process.argv, "--output-root"),
+      relationshipCompletenessStaging,
+      ...(relationshipCompletenessStaging
+        ? { relationshipIntegrityBundleDescriptor: null }
+        : {}),
     });
     console.log(
       `Exported release ${result.releaseId}: ${result.recordCount} records across ${result.files} file(s) to ${relative(repoRoot, result.dir)} ` +

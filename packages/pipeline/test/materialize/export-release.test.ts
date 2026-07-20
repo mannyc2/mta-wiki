@@ -1416,6 +1416,28 @@ describe("exportRelease", () => {
       "An enforced relationship contract requires a manifest-v4",
     );
     expect(existsSync(releaseDir(root, "downgraded"))).toBe(false);
+
+    const stagingRoot = join(
+      root,
+      "data",
+      "exports",
+      "releases",
+      ".downgraded-staging-test",
+    );
+    const staged = exportTestRelease("downgraded", {
+      rootDir: root,
+      records: [],
+      outputRoot: stagingRoot,
+      relationshipIntegrityBundleDescriptor: null,
+      relationshipCompletenessStaging: true,
+    });
+    expect(staged.dir).toBe(join(stagingRoot, "downgraded"));
+    expect(
+      JSON.parse(readFileSync(join(staged.dir, "manifest.json"), "utf8")),
+    ).toMatchObject({ release_id: "downgraded" });
+    expect(
+      JSON.parse(readFileSync(join(staged.dir, "manifest.json"), "utf8")),
+    ).not.toHaveProperty("manifest_version");
   });
 
   it("does not promote a release whose export fails", () => {

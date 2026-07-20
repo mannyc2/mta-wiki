@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-07-15T18-00-00-000Z_queens-acquisition-linkage-remediation",
+  "candidates": [
+    {
+      "candidate_id": "study-event-v2:2903c93577f1e07b34fa218c",
+      "canonical_links_added": [
+        "relation_21st-bus-lane-treatment-located-on-corridor-2022",
+        "relation_21st-project-has-bus-lane-treatment-completion-2022",
+        "relation_21st-project-serves-q103-2022",
+        "relation_q103-operates-on-21st-street-corridor-2022"
+      ],
+      "canonical_records_added": [
+        "source_nyc-dot-21st-street-bus-priority-completion-2022"
+      ],
+      "canonical_records_updated": [
+        "project_21st-street-bus-priority"
+      ],
+      "staged_source_ids": [
+        "nyc_dot_21st_street_bus_priority_completion_2022"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's historical matched-segment identifiers remain unpinned.",
+        "No stable candidate phase identity or onset-versus-extension resolution was proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:8483f8b099d292e9d6883859",
+      "canonical_links_added": [
+        "relation_q22-operates-on-rockaway-beach-corridor-2019",
+        "relation_rockaway-bus-lane-b102-b94-located-on-corridor-2019",
+        "relation_rockaway-bus-lane-b108-b102-located-on-corridor-2019",
+        "relation_rockaway-bus-lane-b59-located-on-corridor-2019",
+        "relation_rockaway-bus-lane-b73-b67-located-on-corridor-2019",
+        "relation_rockaway-project-has-bus-lane-b102-b94-2019",
+        "relation_rockaway-project-has-bus-lane-b108-b102-2019",
+        "relation_rockaway-project-has-bus-lane-b59-2019",
+        "relation_rockaway-project-has-bus-lane-b73-b67-2019",
+        "relation_rockaway-project-uses-rockaway-beach-corridor-2019"
+      ],
+      "canonical_records_added": [],
+      "canonical_records_updated": [],
+      "staged_source_ids": [
+        "rockaway_beach_blvd_jun2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's historical matched-segment identifiers remain unpinned.",
+        "No stable candidate phase identity or onset-versus-extension resolution was proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:a1e55641545033df387b70b1",
+      "canonical_links_added": [
+        "relation_q53-operates-on-rockaway-beach-corridor-2019",
+        "relation_rockaway-bus-lane-b102-b94-located-on-corridor-2019",
+        "relation_rockaway-bus-lane-b108-b102-located-on-corridor-2019",
+        "relation_rockaway-bus-lane-b59-located-on-corridor-2019",
+        "relation_rockaway-bus-lane-b73-b67-located-on-corridor-2019",
+        "relation_rockaway-project-has-bus-lane-b102-b94-2019",
+        "relation_rockaway-project-has-bus-lane-b108-b102-2019",
+        "relation_rockaway-project-has-bus-lane-b59-2019",
+        "relation_rockaway-project-has-bus-lane-b73-b67-2019",
+        "relation_rockaway-project-serves-q53-2019",
+        "relation_rockaway-project-uses-rockaway-beach-corridor-2019"
+      ],
+      "canonical_records_added": [],
+      "canonical_records_updated": [],
+      "staged_source_ids": [
+        "rockaway_beach_blvd_jun2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's historical matched-segment identifiers remain unpinned.",
+        "No stable candidate phase identity or onset-versus-extension resolution was proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:d1cc616281e5031091c4b8e9",
+      "canonical_links_added": [
+        "relation_hillside-bus-lane-treatment-located-on-corridor-2025",
+        "relation_hillside-project-has-bus-lane-treatment-2025",
+        "relation_q1-operates-on-hillside-corridor-2025"
+      ],
+      "canonical_records_added": [
+        "source_mta-q1-hillside-route-profile-2025",
+        "treatment_hillside-avenue-bus-lanes-2025"
+      ],
+      "canonical_records_updated": [
+        "route_q1-queens"
+      ],
+      "staged_source_ids": [
+        "mta_q1_hillside_route_profile_2025",
+        "streets_plan_update_2026"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's historical matched-segment identifiers remain unpinned.",
+        "No stable candidate phase identity or onset-versus-extension resolution was proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:df8bb7f9438c48166f1ff8b9",
+      "canonical_links_added": [
+        "relation_q52-operates-on-rockaway-beach-corridor-2019",
+        "relation_rockaway-bus-lane-b102-b94-located-on-corridor-2019",
+        "relation_rockaway-bus-lane-b108-b102-located-on-corridor-2019",
+        "relation_rockaway-bus-lane-b59-located-on-corridor-2019",
+        "relation_rockaway-bus-lane-b73-b67-located-on-corridor-2019",
+        "relation_rockaway-project-has-bus-lane-b102-b94-2019",
+        "relation_rockaway-project-has-bus-lane-b108-b102-2019",
+        "relation_rockaway-project-has-bus-lane-b59-2019",
+        "relation_rockaway-project-has-bus-lane-b73-b67-2019",
+        "relation_rockaway-project-serves-q52-2019",
+        "relation_rockaway-project-uses-rockaway-beach-corridor-2019"
+      ],
+      "canonical_records_added": [],
+      "canonical_records_updated": [],
+      "staged_source_ids": [
+        "rockaway_beach_blvd_jun2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's historical matched-segment identifiers remain unpinned.",
+        "No stable candidate phase identity or onset-versus-extension resolution was proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    }
+  ]
+}

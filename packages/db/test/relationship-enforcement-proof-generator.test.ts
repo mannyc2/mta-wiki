@@ -1241,7 +1241,7 @@ describe("relationship enforcement proof generator", () => {
     ).toThrow("did not rebuild the canonical DB");
   });
 
-  it("admits only the three exact content-addressed Plan 035 reviewed source refreshes", () => {
+  it("admits only the exact content-addressed reviewed source refreshes", () => {
     const receipt = JSON.parse(readFileSync(join(
       repoRoot,
       "data/contracts/relationships/v1/enforcement-transition-receipts/1b2012de59e75f4ad1b89c9c379e018f042428193ded401eb3c033cf6de413e7.json",
@@ -1250,17 +1250,17 @@ describe("relationship enforcement proof generator", () => {
       {
         role: "occurrence_treatment_physicality_summary",
         path: "data/quality/relationship-integrity/occurrence-treatment-physicality/summary.json",
-        sha256: "0f2dd1ebeb6fd5d1b39225cd8b9b8148c416d988debd5a87c1786a5de00df5c9",
+        sha256: "856f936a293f05e039d6ce9ca97bdfafeda87e1b6cc0d09f8a413af8a1e12c37",
       },
       {
         role: "phase_review_summary",
         path: "data/quality/relationship-integrity/operational-occurrence-phases/summary.json",
-        sha256: "540c25e36819a3ffb88a3194a36cf5e2ef058ca6abb6b1c7284387edac7f9abd",
+        sha256: "7c6518cd287d69d4c446636770083296cae264330d3da20231eb729043cca9a7",
       },
       {
         role: "relationship_completeness_summary",
         path: "data/quality/relationship-integrity/completeness/summary.json",
-        sha256: "c52f20d9302a0c312a0b10c237f1ea5c1fee7a3460c76aba23f79cc3f7d7c98b",
+        sha256: "9c17220e99c882f60cf9a00443787a3bd5f92043d67141d99e39d1aa65c3f7f5",
       },
     ] as const;
     for (const refresh of refreshes) {

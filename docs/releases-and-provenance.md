@@ -2,14 +2,36 @@
 
 ## Current Release
 
-The v1 public data release is `v1-rc5`.
+The v1 public data release is `v1-rc25`.
 
-- Git tag: `v1`
+- Git tag: `v1-rc25`
 - Release pointer: `data/exports/releases/LATEST`
-- Release directory: `data/exports/releases/v1-rc5/`
+- Release directory: `data/exports/releases/v1-rc25/`
 - Public repository: `https://github.com/mannyc2/mta-wiki`
 
 The release manifest records per-kind counts, hashes, and pointers to companion release artifacts.
+
+### Treatment semantic companions
+
+Manifest-v5 candidates may address a complete seven-file treatment companion set without changing
+the manifest schema or rewriting canonical treatment records. The semantic contract retains every
+exact `payload.treatment_kind` literal and assigns each record scope to one of three dispositions:
+canonical atomic treatment, explicit source-backed bundle with lossless members, or documented but
+unresolved with a review reason. The release verifier reconstructs the vocabulary inventory,
+reconciliation, unresolved queue, and route-scope projection from the addressed canonical records
+and rejects missing, stale, duplicate, or byte-divergent artifacts.
+
+`route_treatment_scopes.jsonl` authorizes a route/treatment pair only from a direct allowlisted,
+evidence-bound treatment-to-route relation or an approved operational occurrence. A shared
+`projectRef` is context, never route scope: project membership cannot fan every project treatment
+out to every project route. Unscoped or ambiguous records remain losslessly represented in
+`route_treatment_scope_reconciliation.jsonl` instead of being guessed into route evidence.
+
+Regenerate and verify the reviewed source vocabulary with:
+
+```bash
+bun run treatment-semantics:check
+```
 
 ### Operational coverage diagnostics
 
@@ -86,7 +108,7 @@ Tracked durable surfaces:
 - `data/quality/operational-coverage/`, the deterministic operational completion ledger and matrix.
 - `data/reference/gtfs/`, the small GTFS route/agency reference input used by SQLite projections.
 - `wiki/`, the generated wiki pages and source context pages.
-- `data/exports/releases/v1-rc5/`, the current v1 release snapshot.
+- `data/exports/releases/v1-rc25/`, the current v1 release snapshot.
 - Documentation in `docs/`.
 
 Ignored local or build surfaces:

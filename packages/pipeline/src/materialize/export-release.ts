@@ -1,7 +1,7 @@
 import { spawnSync } from "node:child_process";
 import { createHash, randomUUID } from "node:crypto";
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from "node:fs";
-import { isAbsolute, join } from "node:path";
+import { basename, isAbsolute, join, resolve, sep } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
@@ -67,6 +67,21 @@ import {
 } from "@mta-wiki/pipeline/materialize/operational-projection-retirements";
 import { verifyReleaseDirectory } from "@mta-wiki/pipeline/materialize/release-verifier";
 import { loadRouteIdentityReleaseProjection } from "@mta-wiki/pipeline/materialize/route-identity-release";
+import {
+  assertTreatmentVocabularyReconciled,
+  collectTreatmentVocabulary,
+  parseTreatmentSemanticContract,
+  treatmentSemanticContractBytes,
+  treatmentSemanticReviewQueueJsonl,
+  treatmentVocabularyInventoryJson,
+  treatmentVocabularyReconciliationJson,
+} from "@mta-wiki/pipeline/materialize/treatment-semantics";
+import {
+  buildRouteTreatmentScopeProjection,
+  routeTreatmentScopeReconciliationJsonl,
+  routeTreatmentScopesJsonl,
+  routeTreatmentScopeSummaryJson,
+} from "@mta-wiki/pipeline/materialize/route-treatment-scopes";
 
 export type ReleaseManifestFile = {
   bytes: number;
@@ -403,6 +418,8 @@ export type ReleaseExportOptions = {
   outputRoot?: string | undefined;
   qualityReport?: string | null | undefined;
   relationshipIntegrityBundleDescriptor?: string | null | undefined;
+  treatmentSemanticContractPath?: string | null | undefined;
+  relationshipCompletenessStaging?: boolean | undefined;
 };
 
 function recordJson(record: MtaCanonicalRecord): string {
@@ -447,6 +464,14 @@ function requiredOperationalAnchorReviewDecisionDir(rootDir: string, configuredD
   return dir;
 }
 
+function configuredTreatmentSemanticContractPath(
+  rootDir: string,
+  configured: string | null | undefined,
+): string | null {
+  if (configured === null) return null;
+  return configured ?? join(rootDir, "data", "contracts", "treatments", "v1", "contract.json");
+}
+
 function assertSafeReleaseId(releaseId: string): void {
   if (
     releaseId !== releaseId.trim() ||
@@ -455,6 +480,30 @@ function assertSafeReleaseId(releaseId: string): void {
     !/^[a-zA-Z0-9][a-zA-Z0-9._-]*$/u.test(releaseId)
   ) {
     throw new Error("releaseId must be a safe single path segment");
+  }
+}
+
+function assertRelationshipCompletenessStaging(
+  releaseId: string,
+  rootDir: string,
+  opts: ReleaseExportOptions,
+): void {
+  if (!opts.relationshipCompletenessStaging) return;
+  if (!opts.outputRoot || opts.setLatest || opts.relationshipIntegrityBundleDescriptor !== null) {
+    throw new Error(
+      "Relationship-completeness staging requires --output-root, forbids promotion, and must explicitly omit the prior relationship bundle",
+    );
+  }
+  const productionRoot = resolve(releaseRoot(rootDir));
+  const stagingRoot = resolve(opts.outputRoot);
+  const stagingName = basename(stagingRoot);
+  if (
+    !stagingRoot.startsWith(`${productionRoot}${sep}`) ||
+    !(stagingName.startsWith(`.${releaseId}-`) || stagingName.startsWith(`.${releaseId}.`))
+  ) {
+    throw new Error(
+      `Relationship-completeness staging output must be a hidden ${releaseId} pre-cut directory inside ${productionRoot}`,
+    );
   }
 }
 
@@ -491,6 +540,7 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   assertSafeReleaseId(releaseId);
 
   const rootDir = opts.rootDir ?? repoRoot;
+  assertRelationshipCompletenessStaging(releaseId, rootDir, opts);
   const reviewDecisionDir = requiredOperationalAnchorReviewDecisionDir(rootDir, opts.operationalAnchorReviewDecisionDir);
   if (opts.force) throw new Error("Force replacement of release candidate IDs is forbidden");
   if (opts.setLatest && opts.outputRoot) throw new Error("Replay output-root export cannot update LATEST");
@@ -665,6 +715,78 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
     fileMetadata(operationalOccurrenceReviewDecisionsPath),
   ]);
 
+  const treatmentContractPath = configuredTreatmentSemanticContractPath(
+    rootDir,
+    opts.treatmentSemanticContractPath,
+  );
+  if (treatmentContractPath && existsSync(treatmentContractPath)) {
+    if (!routeIdentityRelease) {
+      throw new Error("Treatment semantic releases require the exact manifest-v5 route identity snapshot");
+    }
+    let treatmentContractInput: unknown;
+    try {
+      treatmentContractInput = JSON.parse(readFileSync(treatmentContractPath, "utf8")) as unknown;
+    } catch (error) {
+      throw new Error(
+        `Unable to parse treatment semantic contract ${treatmentContractPath}: ${error instanceof Error ? error.message : String(error)}`,
+      );
+    }
+    const treatmentContract = parseTreatmentSemanticContract(
+      treatmentContractInput,
+      treatmentContractPath,
+    );
+    const treatmentInventory = collectTreatmentVocabulary(records);
+    const treatmentReconciliation = assertTreatmentVocabularyReconciled(
+      treatmentInventory,
+      treatmentContract,
+    );
+    const routeTreatmentProjection = buildRouteTreatmentScopeProjection(
+      records,
+      routeIdentityRelease.snapshot,
+      operationalOccurrences,
+    );
+    const treatmentArtifacts = [
+      ["treatment_semantics.json", treatmentSemanticContractBytes(treatmentContract)],
+      ["treatment_vocabulary_inventory.json", treatmentVocabularyInventoryJson(treatmentInventory)],
+      ["treatment_vocabulary_reconciliation.json", treatmentVocabularyReconciliationJson(treatmentReconciliation)],
+      ["treatment_semantic_review_queue.jsonl", treatmentSemanticReviewQueueJsonl(treatmentContract)],
+      ["route_treatment_scopes.jsonl", routeTreatmentScopesJsonl(routeTreatmentProjection.scopes)],
+      [
+        "route_treatment_scope_reconciliation.jsonl",
+        routeTreatmentScopeReconciliationJsonl(routeTreatmentProjection.reconciliation),
+      ],
+      ["route_treatment_scope_summary.json", routeTreatmentScopeSummaryJson(routeTreatmentProjection.summary)],
+    ] as const;
+    for (const [name, content] of treatmentArtifacts) {
+      const path = join(dir, name);
+      writeFileSync(path, content, "utf8");
+      fileEntries.push([name, fileMetadata(path)]);
+    }
+  } else if (treatmentContractPath && opts.records === undefined) {
+    throw new Error(`Treatment semantic contract is required for release export: ${treatmentContractPath}`);
+  }
+
+  if (opts.relationshipCompletenessStaging) {
+    const stagingManifest = {
+      release_id: releaseId,
+      generator_commit: gitHeadCommit(),
+      files: sortedObject(fileEntries),
+    };
+    const manifestPath = join(dir, "manifest.json");
+    const manifestBytes = `${stableJson(stagingManifest as unknown as JsonValue)}\n`;
+    writeFileSync(manifestPath, manifestBytes, "utf8");
+    const manifestSha256 = sha256(manifestBytes);
+    installReleaseDirectory(dir, targetDir, false);
+    return {
+      dir: targetDir,
+      releaseId,
+      recordCount,
+      files: fileEntries.length,
+      manifestPath: join(targetDir, "manifest.json"),
+      manifestSha256,
+    };
+  }
+
   const taxonomyPath = join(dir, "taxonomy.json");
   writeFileSync(taxonomyPath, taxonomyJson(), "utf8");
   fileEntries.push(["taxonomy.json", fileMetadata(taxonomyPath)]);
@@ -691,7 +813,8 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
     ) as { contract_status?: unknown };
     if (
       relationshipContract.contract_status === "enforced" &&
-      !relationshipBundle
+      !relationshipBundle &&
+      !opts.relationshipCompletenessStaging
     ) {
       throw new Error(
         "An enforced relationship contract requires a manifest-v4 content-addressed relationship-integrity bundle",

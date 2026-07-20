@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-07-15T21-00-00-000Z_staten-island-acquisition-linkage-remediation",
+  "reviewed_at": "2026-07-15T21:00:00.000Z",
+  "candidate_count": 22,
+  "candidate_counts_by_corridor": {
+    "Battery Place": 12,
+    "Hylan Boulevard": 5,
+    "Madison Avenue": 5
+  },
+  "route_binding_counts": {
+    "verified_existing": 10,
+    "added": 12,
+    "after_reconciliation": 22
+  },
+  "submission_count": 27,
+  "source_record_additions": 1,
+  "source_record_ids_added": [
+    "source_hylan-cb-july-2020"
+  ],
+  "route_record_additions": 12,
+  "route_record_ids_added": [
+    "route_s57",
+    "route_sim1",
+    "route_sim15",
+    "route_sim2",
+    "route_sim32",
+    "route_sim33c",
+    "route_sim34",
+    "route_sim35",
+    "route_sim3c",
+    "route_sim5",
+    "route_sim7",
+    "route_sim9"
+  ],
+  "relation_additions": 14,
+  "route_relation_additions": 12,
+  "shared_scope_relation_additions": 2,
+  "canonical_relation_ids_added": [
+    "relation_battery-place-project-serves-sim1-2019",
+    "relation_battery-place-project-serves-sim15-2019",
+    "relation_battery-place-project-serves-sim2-2019",
+    "relation_battery-place-project-serves-sim32-2019",
+    "relation_battery-place-project-serves-sim33c-2019",
+    "relation_battery-place-project-serves-sim34-2019",
+    "relation_battery-place-project-serves-sim35-2019",
+    "relation_battery-place-project-serves-sim3c-2019",
+    "relation_battery-place-project-serves-sim5-2019",
+    "relation_hylan-project-serves-s57-2020",
+    "relation_hylan-project-serves-sim7-2020",
+    "relation_hylan-project-serves-sim9-2020",
+    "relation_staten-acquisition-madison-project-has-double-bus-lane-2019",
+    "relation_staten-acquisition-madison-project-uses-corridor-2019"
+  ],
+  "canonical_relation_ids_verified_existing": [
+    "relation_battery-pl-project-uses-corridor",
+    "relation_hylan-study-has-bus-lane-hylan",
+    "relation_hylan-study-on-corridor",
+    "relation_hylan-study-serves-s78",
+    "relation_project-has-treatment-proposed-design",
+    "relation_project-serves-s79-sbs-winter-2012",
+    "relation_serves-route-project-03-madison-ave-route-sim22-42nd-st_ab04281425",
+    "relation_serves-route-project-03-madison-ave-route-sim25-42nd-st_097dcbb41f",
+    "relation_serves-route-project-03-madison-ave-route-sim26-42nd-st_e500e37c2d",
+    "relation_serves-route-project-03-madison-ave-route-sim30-42nd-st_7f869c0db8",
+    "relation_serves-route-project-03-madison-ave-route-sim8-42nd-st_ef772633d0",
+    "relation_serves-route-project-05-battery-pl-route-sim1c-meeting-doc-138456_03f16bc090",
+    "relation_serves-route-project-05-battery-pl-route-sim4-meeting-doc-176441_38a98eebd7",
+    "relation_serves-route-project-05-battery-pl-route-sim4c-meeting-doc-138456_a2d0a85b97"
+  ],
+  "coordinated_physical_scope_relation_count": 3,
+  "coordinated_physical_scope_relation_ids": [
+    "relation_bus-lane-treatment-scope-v1-bus-lanes-hylan-blvd-2012-03-on-hylan-boulevard-brt",
+    "relation_bus-lane-treatment-scope-v1-madison-ave-double-bus-lane-on-madison-avenue",
+    "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat"
+  ],
+  "operational_occurrence_additions": 0,
+  "candidate_segment_bindings_added": 0,
+  "candidate_phase_additions": 0,
+  "candidate_onset_additions": 0,
+  "all_candidates_study_projection_eligible": false,
+  "journal_sha256": "9e0ade44c8f28f6684bbe6b57d496730d0ce360a4a84e6d9fc541ef8b0458a4b"
+}

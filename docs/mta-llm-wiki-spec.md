@@ -23,7 +23,7 @@ The public repository publishes:
 - Canonical JSONL records under `data/canonical/`.
 - Compact cited-block evidence metadata under `data/evidence-block-index.jsonl`.
 - Generated wiki pages under `wiki/`.
-- The current v1 release under `data/exports/releases/v1-rc5/`.
+- The current v1 release under `data/exports/releases/v1-rc25/`.
 - Code, tests, validation tools, and durable documentation.
 
 The public repository does not publish:
@@ -54,7 +54,7 @@ relation family, assertion posture, and provenance.
 ## Release Contract
 
 Release exports are immutable snapshots of the canonical JSONL surface plus release metadata. The
-current v1 release is `v1-rc5`, and `data/exports/releases/LATEST` points to that id.
+current v1 release is `v1-rc25`, and `data/exports/releases/LATEST` points to that id.
 
 Downstream consumers should pin a release id instead of assuming `main` is stable.
 

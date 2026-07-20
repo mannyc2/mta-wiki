@@ -273,6 +273,42 @@ const PLAN035_REVIEWED_SOURCE_REFRESHES = [
     reconciled_sha256:
       "c52f20d9302a0c312a0b10c237f1ea5c1fee7a3460c76aba23f79cc3f7d7c98b",
   },
+  // Plan 091 rebinds the same zero-warning 130-occurrence/269-membership
+  // physicality, phase, and completeness populations to rc25. These exact
+  // hashes are the only additional reviewed transition accepted; counts,
+  // canonical relations, route identities, and review ledgers remain fixed.
+  {
+    role: "occurrence_treatment_physicality_summary",
+    path: "data/quality/relationship-integrity/occurrence-treatment-physicality/summary.json",
+    previous_sha256:
+      "02926881a698f6825b5aa638e347208ea6b8597c04032dd86a37c11ef0a19dc2",
+    reconciled_sha256:
+      "856f936a293f05e039d6ce9ca97bdfafeda87e1b6cc0d09f8a413af8a1e12c37",
+  },
+  {
+    role: "phase_review_summary",
+    path: "data/quality/relationship-integrity/operational-occurrence-phases/summary.json",
+    previous_sha256:
+      "ba37da3aa10ec9bfd6945506711defe10aa80a1e1367eae263262cb42a0f8da1",
+    reconciled_sha256:
+      "7c6518cd287d69d4c446636770083296cae264330d3da20231eb729043cca9a7",
+  },
+  {
+    role: "relationship_completeness_summary",
+    path: "data/quality/relationship-integrity/completeness/summary.json",
+    previous_sha256:
+      "46b5d5c35b0f3d0562303064c9fbe4234fde5d9c9d3e85c96a6443ca78154717",
+    reconciled_sha256:
+      "7e2db1884cfaad25a1fc3bad794fb5dc3d2ef115b8d158482561afdd7eb465e6",
+  },
+  {
+    role: "relationship_completeness_summary",
+    path: "data/quality/relationship-integrity/completeness/summary.json",
+    previous_sha256:
+      "46b5d5c35b0f3d0562303064c9fbe4234fde5d9c9d3e85c96a6443ca78154717",
+    reconciled_sha256:
+      "9c17220e99c882f60cf9a00443787a3bd5f92043d67141d99e39d1aa65c3f7f5",
+  },
 ] as const;
 const PLAN035_PREVIOUS_ENFORCEMENT_PROOF_SHA256 =
   "db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a";
@@ -4139,12 +4175,12 @@ export function isPlan035ReviewedSourceRefresh(input: {
     input.receipt.previous_proof?.sha256 !==
       PLAN035_PREVIOUS_ENFORCEMENT_PROOF_SHA256
   ) return false;
-  const refresh = PLAN035_REVIEWED_SOURCE_REFRESHES.find((candidate) =>
-    candidate.role === input.pin.role && candidate.path === input.pin.path
-  );
-  return refresh !== undefined &&
+  return PLAN035_REVIEWED_SOURCE_REFRESHES.some((refresh) =>
+    refresh.role === input.pin.role &&
+    refresh.path === input.pin.path &&
     input.pin.sha256 === refresh.previous_sha256 &&
-    sha256(input.currentText) === refresh.reconciled_sha256;
+    sha256(input.currentText) === refresh.reconciled_sha256
+  );
 }
 
 /** Backward-compatible export name retained for the focused transition tests. */
