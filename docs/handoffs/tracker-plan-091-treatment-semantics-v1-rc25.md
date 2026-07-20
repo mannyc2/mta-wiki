@@ -1,10 +1,10 @@
 # Tracker Plan 091: MTA Wiki treatment semantics v1 / rc25
 
-Use the immutable, unpromoted producer candidate at
+Use the immutable producer release at
 `data/exports/releases/v1-rc25/`. Its manifest-v5 SHA-256 is
 `77e518a5de39e9fc982d09b7677d44059d26de69b04d9fe10841d6c478516f0f`.
 The generator commit recorded by the manifest is
-`36271d1516987759012fa6f9b08bcd838fadaafb`. `LATEST` remains `v1-rc5`.
+`36271d1516987759012fa6f9b08bcd838fadaafb`. `LATEST` points to `v1-rc25`.
 
 ## Consumer contract
 
@@ -42,7 +42,7 @@ The generator commit recorded by the manifest is
 | Missing / stale / duplicate record scopes | 0 / 0 / 0 |
 | Route/treatment scopes | 327 over 278 treatment records |
 | Direct-relation / occurrence-authorized scopes | 19 / 308 |
-| Explicitly reconciled unscoped treatments | 2,660 |
+| Route-scope reconciliation rows | 2,660: 2,659 with no exact scope; 1 partially scoped |
 | Project-membership-authorized scopes | 0 |
 | Operational occurrences | 131: 48 atomic / 83 bundle |
 | Study-eligible / excluded occurrences | 130 / 1 unsupported bundle family |

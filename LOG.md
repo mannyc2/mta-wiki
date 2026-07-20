@@ -16,15 +16,16 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   missing, stale, duplicate, or unreviewed record scopes fail closed.
 - Replaced project-membership route fan-out with an exact route-treatment companion projection.
   Direct evidence-bound relations and approved occurrences authorize `327` route/treatment pairs
-  over `278` treatment records; the other `2,660` records are explicitly reconciled, with zero
-  unexplained loss. The Q27 Holly/Kissena reroute scopes only to `Q27`, the B57 stop removal only
+  over `278` treatment records. The `2,660` route-scope reconciliation rows cover `2,659` records
+  with no exact route scope and one partially scoped record; zero records are lost or explained by
+  project membership. The Q27 Holly/Kissena reroute scopes only to `Q27`, the B57 stop removal only
   to `B57`, and exact identities such as `B44` and `B44+` remain distinct.
-- Cut immutable, unpromoted manifest-v5 release candidate `v1-rc25` from generator commit
+- Cut immutable manifest-v5 release `v1-rc25` from generator commit
   `36271d15`: manifest SHA-256
   `77e518a5de39e9fc982d09b7677d44059d26de69b04d9fe10841d6c478516f0f`.
   All `265` addressed files and `85,392` canonical records reproduced byte-for-byte. Immutable
   `v1-rc24` remains valid at `fb068fbd7cb72afab26cadf79526ed00edfc348e680f2289b2616e5cc0f37b2d`,
-  and `LATEST` intentionally remains `v1-rc5`.
+  and `LATEST` now promotes `v1-rc25` as the current public release.
 
 ## 2026-07-19
 

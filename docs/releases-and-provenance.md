@@ -2,11 +2,11 @@
 
 ## Current Release
 
-The v1 public data release is `v1-rc5`.
+The v1 public data release is `v1-rc25`.
 
-- Git tag: `v1`
+- Git tag: `v1-rc25`
 - Release pointer: `data/exports/releases/LATEST`
-- Release directory: `data/exports/releases/v1-rc5/`
+- Release directory: `data/exports/releases/v1-rc25/`
 - Public repository: `https://github.com/mannyc2/mta-wiki`
 
 The release manifest records per-kind counts, hashes, and pointers to companion release artifacts.
@@ -108,7 +108,7 @@ Tracked durable surfaces:
 - `data/quality/operational-coverage/`, the deterministic operational completion ledger and matrix.
 - `data/reference/gtfs/`, the small GTFS route/agency reference input used by SQLite projections.
 - `wiki/`, the generated wiki pages and source context pages.
-- `data/exports/releases/v1-rc5/`, the current v1 release snapshot.
+- `data/exports/releases/v1-rc25/`, the current v1 release snapshot.
 - Documentation in `docs/`.
 
 Ignored local or build surfaces:

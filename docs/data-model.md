@@ -67,4 +67,4 @@ guaranteed by code. Do not close source vocabularies based on model confidence a
 ## Releases
 
 Release exports copy canonical records plus release metadata under `data/exports/releases/<id>/`.
-The v1 tag corresponds to release `v1-rc5`; the `LATEST` file points to the current release id.
+The `v1-rc25` tag corresponds to the current v1 release; the `LATEST` file points to that release id.
