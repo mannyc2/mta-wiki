@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "contract_id": "relationship-reference-contract-v1",
+  "contract_status": "warning",
+  "description": "Versioned policy for every relationship-like payload field consumed by deterministic derived-relation materialization. Exact canonical resolutions may become evidence-bound edges; unresolved or ambiguous legacy values require immutable group review; unseen values fail closed in enforcement mode.",
+  "rules": [
+    {
+      "rule_id": "metric-route-has-metric",
+      "origin_kind": "metric_claim",
+      "fields": [
+        "route_label",
+        "route"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "route"
+      ],
+      "relation_kind": "has_metric",
+      "direction": "target_to_origin",
+      "skip_self": false,
+      "unresolved_review_strategy": "bus_route_reference_or_context_literal"
+    },
+    {
+      "rule_id": "metric-source-system-has-metric",
+      "origin_kind": "metric_claim",
+      "fields": [
+        "source_system",
+        "entity"
+      ],
+      "context_literal_fields": [
+        "source_system"
+      ],
+      "target_kinds": [
+        "entity",
+        "project"
+      ],
+      "relation_kind": "has_metric",
+      "direction": "target_to_origin",
+      "skip_self": false,
+      "unresolved_review_strategy": "reference_claim"
+    },
+    {
+      "rule_id": "claim-route-has-claim",
+      "origin_kind": "claim",
+      "fields": [
+        "route",
+        "routes"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "route"
+      ],
+      "relation_kind": "has_claim",
+      "direction": "target_to_origin",
+      "skip_self": false,
+      "unresolved_review_strategy": "bus_route_reference_or_context_literal"
+    },
+    {
+      "rule_id": "project-routes-served",
+      "origin_kind": "project",
+      "fields": [
+        "routes_served",
+        "routes"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "route"
+      ],
+      "relation_kind": "serves_route",
+      "direction": "origin_to_target",
+      "skip_self": false,
+      "unresolved_review_strategy": "bus_route_reference_or_context_literal"
+    },
+    {
+      "rule_id": "corridor-routes-served",
+      "origin_kind": "corridor",
+      "fields": [
+        "routes",
+        "routes_served"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "route"
+      ],
+      "relation_kind": "operates_on_corridor",
+      "direction": "target_to_origin",
+      "skip_self": false,
+      "unresolved_review_strategy": "bus_route_reference_or_context_literal"
+    },
+    {
+      "rule_id": "route-corridors",
+      "origin_kind": "route",
+      "fields": [
+        "corridors"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "corridor"
+      ],
+      "relation_kind": "operates_on_corridor",
+      "direction": "origin_to_target",
+      "skip_self": false,
+      "unresolved_review_strategy": "reference_claim"
+    },
+    {
+      "rule_id": "route-related-routes",
+      "origin_kind": "route",
+      "fields": [
+        "routes",
+        "related_existing_routes"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "route"
+      ],
+      "relation_kind": "related_route",
+      "direction": "origin_to_target",
+      "skip_self": true,
+      "unresolved_review_strategy": "reference_claim"
+    },
+    {
+      "rule_id": "route-program",
+      "origin_kind": "route",
+      "fields": [
+        "program"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "entity",
+        "project"
+      ],
+      "relation_kind": "part_of_program",
+      "direction": "origin_to_target",
+      "skip_self": false,
+      "unresolved_review_strategy": "reference_claim"
+    },
+    {
+      "rule_id": "project-program",
+      "origin_kind": "project",
+      "fields": [
+        "program"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "entity",
+        "project"
+      ],
+      "relation_kind": "part_of_program",
+      "direction": "origin_to_target",
+      "skip_self": true,
+      "unresolved_review_strategy": "reference_claim"
+    },
+    {
+      "rule_id": "route-operator",
+      "origin_kind": "route",
+      "fields": [
+        "operator",
+        "agency"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "entity"
+      ],
+      "relation_kind": "operated_by",
+      "direction": "origin_to_target",
+      "skip_self": false,
+      "unresolved_review_strategy": "reference_claim"
+    },
+    {
+      "rule_id": "project-owner",
+      "origin_kind": "project",
+      "fields": [
+        "owner"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "entity"
+      ],
+      "relation_kind": "owned_by",
+      "direction": "origin_to_target",
+      "skip_self": false,
+      "unresolved_review_strategy": "reference_claim"
+    },
+    {
+      "rule_id": "project-publisher",
+      "origin_kind": "project",
+      "fields": [
+        "publisher"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "entity"
+      ],
+      "relation_kind": "published_by",
+      "direction": "origin_to_target",
+      "skip_self": false,
+      "unresolved_review_strategy": "reference_claim"
+    },
+    {
+      "rule_id": "source-publisher",
+      "origin_kind": "source",
+      "fields": [
+        "publisher"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "entity"
+      ],
+      "relation_kind": "published_by",
+      "direction": "origin_to_target",
+      "skip_self": false,
+      "unresolved_review_strategy": "reference_claim"
+    },
+    {
+      "rule_id": "entity-organization",
+      "origin_kind": "entity",
+      "fields": [
+        "organization",
+        "agency",
+        "office",
+        "parent_organization",
+        "parent_entity"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "entity"
+      ],
+      "relation_kind": "part_of_agency",
+      "direction": "origin_to_target",
+      "skip_self": true,
+      "unresolved_review_strategy": "reference_claim"
+    },
+    {
+      "rule_id": "entity-owner",
+      "origin_kind": "entity",
+      "fields": [
+        "owner"
+      ],
+      "context_literal_fields": [],
+      "target_kinds": [
+        "entity"
+      ],
+      "relation_kind": "owned_by",
+      "direction": "origin_to_target",
+      "skip_self": true,
+      "unresolved_review_strategy": "reference_claim"
+    }
+  ],
+  "review_ledger": {
+    "path": "data/contracts/relationship-references/v1/review-decisions.jsonl",
+    "sha256": "c3f3545ced15c8f637469097eeb08db1ff8cd9c52a1c897d3b0ff8aadfa5f102",
+    "row_count": 883
+  },
+  "enforcement_criteria": {
+    "unreviewed_reference_count": 0,
+    "invalid_value_count": 0,
+    "evidence_invalid_count": 0,
+    "supportable_resolution_pending_count": 0,
+    "policy_rule_drift_count": 0,
+    "native_coverage_mismatch_count": 0
+  }
+}

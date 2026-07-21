@@ -1428,7 +1428,7 @@ function pagePath(record: MtaCanonicalRecord) {
   return relativePath ? join(repoRoot, relativePath) : undefined;
 }
 
-function writePage(record: MtaCanonicalRecord) {
+export function writeCanonicalRecordPage(record: MtaCanonicalRecord) {
   const path = pagePath(record);
   if (!path) return undefined;
 
@@ -1567,7 +1567,7 @@ export function materializeWiki(): MaterializeResult {
     writeJsonl(join(canonicalDir(), FILE_BY_KIND.get(kind)!), kindRecords);
   }
 
-  const pagePaths = records.map(writePage).filter((path): path is string => typeof path === "string");
+  const pagePaths = records.map(writeCanonicalRecordPage).filter((path): path is string => typeof path === "string");
   removeStaleGeneratedPages(pagePaths);
   writeIndex(records);
 

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "contract_id": "operational-occurrence-phase-review-v1",
+  "ledger_id": "operational-occurrence-phase-review-ledger-v1",
+  "reviewed_at": "2026-07-16T06:00:00.000Z",
+  "reviewed_by": "codex-operational-occurrence-phase-integrity-review",
+  "authority": {
+    "phase_identity": "canonical source_stated event records selected by accepted operational-occurrence or operational-anchor review",
+    "phase_relation": "canonical source_stated event-to-event relations explicitly selected by accepted occurrence review",
+    "evidence": "exact canonical evidence_id tuples on the selected event or relation"
+  },
+  "endpoint_type_matrix": [
+    {
+      "role": "earlier_or_later_phase",
+      "subject_kind": "event",
+      "object_kind": "event",
+      "distinct_endpoints_required": true,
+      "both_endpoints_must_be_occurrence_phases": true
+    }
+  ],
+  "allowed_phase_relation_semantics": [
+    {
+      "relation_kind": "follows",
+      "relation_family": "timeline_context",
+      "assertion_status": "delivered"
+    },
+    {
+      "relation_kind": "has_subsequent_event",
+      "relation_family": "timeline_context",
+      "assertion_status": "delivered"
+    },
+    {
+      "relation_kind": "precedes",
+      "relation_family": "dependency_or_reference",
+      "assertion_status": "delivered"
+    },
+    {
+      "relation_kind": "precedes_event",
+      "relation_family": "timeline_context",
+      "assertion_status": "delivered"
+    },
+    {
+      "relation_kind": "predecessor_of",
+      "relation_family": "dependency_or_reference",
+      "assertion_status": "delivered"
+    }
+  ],
+  "dispositions": {
+    "single_observed_phase_no_related_phase_asserted": {
+      "occurrence_schema_value": "single_phase",
+      "requirements": [
+        "exactly_one_source_stated_canonical_event",
+        "exact_event_evidence_ids",
+        "zero_projected_phase_relations",
+        "accepted_review_basis"
+      ],
+      "semantic_limit": "No earlier/later relation is asserted inside this occurrence; this does not assert that the parent project has no other phases."
+    },
+    "evidence_bound_related_phases": {
+      "occurrence_schema_value": "related_phases",
+      "requirements": [
+        "at_least_two_source_stated_canonical_events",
+        "connected_allowlisted_event_relation_graph",
+        "exact_event_and_relation_evidence_ids",
+        "accepted_occurrence_review_selected_every_projected_relation"
+      ]
+    },
+    "review_required": {
+      "study_eligibility_effect": "must_not_be_used_to_satisfy_phase_completeness_enforcement"
+    }
+  },
+  "candidate_inventory": {
+    "universe": "every canonical relation whose endpoints both resolve to events and at least one endpoint is a reviewed occurrence phase",
+    "external_event_policy": "inventory_only_unless_the_accepted_occurrence_review_selects_the_other_event_and_exact_relation",
+    "non_allowlisted_policy": "inventory_as_non_phase_semantics_and_never_infer_temporal_order",
+    "same_occurrence_unselected_temporal_policy": "review_required"
+  },
+  "prohibited_inferences": [
+    "chronological_order_from_event_dates_alone",
+    "shared_project_or_source_as_phase_membership",
+    "street_name_or_route_similarity_as_phase_membership",
+    "external_event_relation_as_cross_occurrence_phase_membership_without_accepted_review"
+  ],
+  "enforcement_criteria": {
+    "endpoint_and_type_hard_error": "zero phase identity/relation endpoint, type, review-state, or exact-evidence findings",
+    "completeness_hard_error": "every occurrence has one reviewed no-related-phase disposition or a connected evidence-bound related-phase graph",
+    "candidate_reconciliation": "zero unprojected allowlisted temporal relations between events already selected in the same occurrence"
+  }
+}

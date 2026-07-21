@@ -22,6 +22,10 @@ import {
   type OperationalOccurrenceEvidenceBinding,
 } from "../packages/pipeline/src/materialize/operational-occurrences.js";
 import type { RouteAnchorRow } from "../packages/pipeline/src/materialize/route-anchors.js";
+import {
+  parseOperationalCoverageAcceptedDecision,
+  type OperationalCoverageAcceptedDecision,
+} from "../packages/pipeline/src/quality/operational-coverage.js";
 
 const DECISION_ID = "flatbush-phase1-center-running-bus-lanes-2025-09";
 const PROJECT_ID = "project_flatbush-phase1-center-running-bus-lanes-livingston-state";
@@ -49,6 +53,10 @@ const ACCEPTED_AT = "2026-07-16T08:30:00.000Z";
 const IDENTITY_ISSUED_AT = "2026-07-13T18:45:00.000Z";
 const PREVIOUS_DECISION_SHA256 =
   "292c0fc951ae2942c1fce4ec3cc9c34ac3bc1ab41e8e23d60ee8ff26d51b5be6";
+const OPENING_ROUTE_GAP_ID = "operational-coverage:63a4d9494102f5c272809cc6";
+const OPENING_TREATMENT_GAP_ID = "operational-coverage:46e9eb46b742c9a76a0241f3";
+const GAP_REVIEWER = "codex-flatbush-phase1-onset-2026-07-21";
+const GAP_DECIDED_AT = "2026-07-21T04:00:00.000Z";
 
 const evidencePins = {
   publicationDate: {
@@ -87,6 +95,15 @@ type EvidencePin = {
   sourceId: string;
   evidenceId: string;
   sha256: string;
+};
+
+type QueueRow = {
+  gap_id: string;
+  event_record_id: string;
+  dimension: string;
+  status: string;
+  verdict: string;
+  decision_ids: string[];
 };
 
 const routeSpecs = [
@@ -397,21 +414,97 @@ function identityRegistry(decision: OperationalOccurrenceAcceptedDecision): Oper
   return assertOperationalOccurrenceIdentityRegistry([...existing, expected]);
 }
 
+function ledgerDecisions(
+  queue: readonly QueueRow[],
+  occurrenceId: string,
+): OperationalCoverageAcceptedDecision[] {
+  const openingGaps = queue.filter((candidate) => candidate.event_record_id === OPENING_EVENT_ID);
+  const expected = new Map([
+    [OPENING_ROUTE_GAP_ID, "route"],
+    [OPENING_TREATMENT_GAP_ID, "treatment"],
+  ]);
+  assert(
+    openingGaps.length === expected.size &&
+      openingGaps.every((row) => expected.get(row.gap_id) === row.dimension),
+    `Unexpected raw gaps for ${OPENING_EVENT_ID}: ${openingGaps.map((row) => `${row.dimension}:${row.gap_id}`).join(", ") || "none"}`,
+  );
+
+  const specs = [
+    {
+      decisionId: "flatbush-phase1-opening-route-diagnostic-superseded-by-occurrence",
+      gapId: OPENING_ROUTE_GAP_ID,
+      dimension: "route",
+      rationale: `The raw event-neighborhood diagnostic sees additional Flatbush route candidates, but approved occurrence ${occurrenceId} binds the October 2 opening to exactly B41 and B67 through the existing evidence-backed Phase 1 project relations. The raw route diagnostic is therefore superseded and must not widen the occurrence scope.`,
+    },
+    {
+      decisionId: "flatbush-phase1-opening-treatment-diagnostic-superseded-by-occurrence",
+      gapId: OPENING_TREATMENT_GAP_ID,
+      dimension: "treatment",
+      rationale: `The raw event-neighborhood diagnostic sees other Flatbush treatments from later phases and the broader program, but approved occurrence ${occurrenceId} binds the October 2 opening to the single bounded center-running bus-lane treatment between Livingston Street and State Street. The raw treatment diagnostic is therefore superseded and must not broaden Phase 1.`,
+    },
+  ] as const;
+
+  return specs.map((spec) => {
+    const row = queue.find((candidate) => candidate.gap_id === spec.gapId);
+    assert(row?.event_record_id === OPENING_EVENT_ID, `${spec.gapId} event changed`);
+    assert(row.dimension === spec.dimension, `${spec.gapId} dimension changed`);
+    if (row.status === "terminal") {
+      assert(row.decision_ids.includes(spec.decisionId), `${spec.gapId} terminal decision changed`);
+    } else {
+      assert(row.status === "open" && row.verdict === "unreviewed", `${spec.gapId} is no longer open/unreviewed`);
+    }
+    return parseOperationalCoverageAcceptedDecision({
+      schema_version: 1,
+      decision_id: spec.decisionId,
+      gap_id: spec.gapId,
+      prior_verdict: "unreviewed",
+      verdict: "not_applicable",
+      reviewer: GAP_REVIEWER,
+      decided_at: GAP_DECIDED_AT,
+      rationale: spec.rationale,
+      proposal_ids: [],
+      evidence_refs: [],
+      search_receipt_ids: [],
+    }, spec.decisionId);
+  });
+}
+
 function writeArtifacts(
   decision: OperationalOccurrenceAcceptedDecision,
   identities: readonly OperationalOccurrenceIdentityEntry[],
+  gapDecisions: readonly OperationalCoverageAcceptedDecision[],
 ): void {
-  const path = join(repoRoot, "data/operational-occurrence-review/accepted/decisions", `${decision.decision_id}.json`);
-  const bytes = `${JSON.stringify(decision, null, 2)}\n`;
-  if (existsSync(path)) {
-    const current = readFileSync(path);
+  const occurrencePath = join(
+    repoRoot,
+    "data/operational-occurrence-review/accepted/decisions",
+    `${decision.decision_id}.json`,
+  );
+  const occurrenceBytes = `${JSON.stringify(decision, null, 2)}\n`;
+  if (existsSync(occurrencePath)) {
+    const current = readFileSync(occurrencePath);
     assert(
-      current.toString("utf8") === bytes || sha256(current) === PREVIOUS_DECISION_SHA256,
-      `Refusing to overwrite non-equivalent ${path}`,
+      current.toString("utf8") === occurrenceBytes || sha256(current) === PREVIOUS_DECISION_SHA256,
+      `Refusing to overwrite non-equivalent ${occurrencePath}`,
     );
   }
-  mkdirSync(dirname(path), { recursive: true });
-  if (!existsSync(path) || readFileSync(path, "utf8") !== bytes) writeFileSync(path, bytes, "utf8");
+  mkdirSync(dirname(occurrencePath), { recursive: true });
+  if (!existsSync(occurrencePath) || readFileSync(occurrencePath, "utf8") !== occurrenceBytes) {
+    writeFileSync(occurrencePath, occurrenceBytes, "utf8");
+  }
+  for (const gapDecision of gapDecisions) {
+    const gapPath = join(
+      repoRoot,
+      "data/operational-anchor-review/ledger-decisions/decisions",
+      `${gapDecision.decision_id}.json`,
+    );
+    const gapBytes = `${JSON.stringify(gapDecision, null, 2)}\n`;
+    if (existsSync(gapPath)) {
+      assert(readFileSync(gapPath, "utf8") === gapBytes, `Refusing to overwrite non-equivalent ${gapPath}`);
+    } else {
+      mkdirSync(dirname(gapPath), { recursive: true });
+      writeFileSync(gapPath, gapBytes, "utf8");
+    }
+  }
   writeFileSync(
     join(repoRoot, "data/operational-occurrence-identities/registry.jsonl"),
     `${identities.map((entry) => stableJson(entry as unknown as JsonValue)).join("\n")}\n`,
@@ -426,6 +519,8 @@ const records = readCanonicalRecordsFromJsonl();
 const recordsById = new Map(records.map((record) => [record.record_id, record]));
 const decision = occurrenceDecision(records, recordsById);
 const identities = identityRegistry(decision);
+const queue = readJsonl<QueueRow>(join(repoRoot, "data/quality/operational-coverage/priority-queue.jsonl"));
+const gapDecisions = ledgerDecisions(queue, decision.occurrence_id);
 const existingOccurrenceReviews = loadOperationalOccurrenceAcceptedDecisions().filter(
   (candidate) => candidate.decision_id !== DECISION_ID,
 );
@@ -477,7 +572,7 @@ assert(
 );
 
 const apply = process.argv.includes("--apply");
-if (apply) writeArtifacts(decision, identities);
+if (apply) writeArtifacts(decision, identities, gapDecisions);
 console.log(JSON.stringify({
   mode: apply ? "applied" : "dry-run",
   decision_id: decision.decision_id,
@@ -494,5 +589,6 @@ console.log(JSON.stringify({
   projected_eligible_route_pairs: rows
     .filter((candidate) => candidate.study_projection_eligible)
     .reduce((sum, candidate) => sum + candidate.routes.length, 0),
+  ledger_decision_ids: gapDecisions.map((gapDecision) => gapDecision.decision_id),
   route_anchor_sha256: ROUTE_ANCHOR_SHA256,
 }, null, 2));

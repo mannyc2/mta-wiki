@@ -29,8 +29,8 @@ describe("current forecast-realization acquisition frontier", () => {
   it("recomputes byte-identically and keeps acquisition state independent from terminal study diagnostics", () => {
     const jsonBytes = readFileSync(jsonPath, "utf8");
     const markdownBytes = readFileSync(markdownPath, "utf8");
-    expect(sha256(jsonBytes)).toBe("8b4bd514e89860e963386b53bb43401215556b6736cfe343394a13b049fb16ba");
-    expect(sha256(markdownBytes)).toBe("1fca37bdaf248a524aadfd7d8f71de03c17fbb3529c95cb9660142f9c2c7a8cb");
+    expect(sha256(jsonBytes)).toBe("a94ef3c24448e50e46954fef13d9665cd7f16a81dd4799679ea2c743a9f6e85b");
+    expect(sha256(markdownBytes)).toBe("4701d377247baef8ac6a06f25f395cbe673c777dc5b03726a94e433201be4506");
 
     const targetList = JSON.parse(jsonBytes) as ForecastRealizationTargetList;
     const records = readCanonicalRecordsFromDbFile(join(repoRoot, "data/canonical.db"));

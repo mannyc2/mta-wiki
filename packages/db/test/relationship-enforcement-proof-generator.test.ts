@@ -1250,16 +1250,19 @@ describe("relationship enforcement proof generator", () => {
       {
         role: "occurrence_treatment_physicality_summary",
         path: "data/quality/relationship-integrity/occurrence-treatment-physicality/summary.json",
+        fixturePath: "data/exports/releases/v1-rc25/relationship-integrity/data/quality/relationship-integrity/occurrence-treatment-physicality/summary.json",
         sha256: "856f936a293f05e039d6ce9ca97bdfafeda87e1b6cc0d09f8a413af8a1e12c37",
       },
       {
         role: "phase_review_summary",
         path: "data/quality/relationship-integrity/operational-occurrence-phases/summary.json",
+        fixturePath: "data/exports/releases/v1-rc25/relationship-integrity/data/quality/relationship-integrity/operational-occurrence-phases/summary.json",
         sha256: "7c6518cd287d69d4c446636770083296cae264330d3da20231eb729043cca9a7",
       },
       {
         role: "relationship_completeness_summary",
         path: "data/quality/relationship-integrity/completeness/summary.json",
+        fixturePath: "data/exports/releases/v1-rc25/relationship-integrity/data/quality/relationship-integrity/completeness/summary.json",
         sha256: "9c17220e99c882f60cf9a00443787a3bd5f92043d67141d99e39d1aa65c3f7f5",
       },
     ] as const;
@@ -1267,7 +1270,9 @@ describe("relationship enforcement proof generator", () => {
       const pin = receipt.pre_promotion_sources.find(
         (source) => source.role === refresh.role,
       )!;
-      const currentText = readFileSync(join(repoRoot, refresh.path), "utf8");
+      // This is a one-time rc25 transition test. Read its immutable release fixture rather than
+      // coupling the proof to whichever later release currently owns the active quality paths.
+      const currentText = readFileSync(join(repoRoot, refresh.fixturePath), "utf8");
       expect(byteSha256(currentText)).toBe(refresh.sha256);
       expect(isPlan035ReviewedSourceRefresh({ receipt, pin, currentText })).toBe(true);
       expect(isPlan035ReviewedSourceRefresh({
@@ -1280,7 +1285,7 @@ describe("relationship enforcement proof generator", () => {
     const completenessPin = receipt.pre_promotion_sources.find(
       (source) => source.role === completeness.role,
     )!;
-    const completenessText = readFileSync(join(repoRoot, completeness.path), "utf8");
+    const completenessText = readFileSync(join(repoRoot, completeness.fixturePath), "utf8");
     expect(isPlan035ReviewedSourceRefresh({
       receipt: {
         previous_proof: { ...receipt.previous_proof, sha256: "f".repeat(64) },

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "contract_id": "occurrence-treatment-physicality-review-retirement-v1",
+  "retirement_id": "occurrence-treatment-physicality-review-retirement-v1:v1-rc26",
+  "derived_by": "mta-wiki deterministic physicality retirement projector",
+  "derived_at": "2026-07-18T21:14:54Z",
+  "release_id": "v1-rc26",
+  "authority": "accepted operational-occurrence review retirements remove denominator membership without changing treatment classification",
+  "active_review_ledger": {
+    "path": "data/contracts/occurrence-treatment-physicality/v1/review-ledger.jsonl",
+    "bytes": 492080,
+    "sha256": "937259630ea1aa981b84f1cb1cc709bd897753774580f2bb128575d78b84b433",
+    "row_count": 269
+  },
+  "retired_review_ledger": {
+    "path": "data/contracts/occurrence-treatment-physicality/v1/retired-review-ledger.jsonl",
+    "bytes": 12721,
+    "sha256": "d8c5be24a0d68e2ec6b0b3b33b0c18bb8d83c0d55a98ed3f10b126988fd9a54a",
+    "row_count": 7
+  },
+  "review_history": {
+    "reconstruction": "active_plus_retired_sorted_by_treatment_record_id",
+    "bytes": 504801,
+    "sha256": "bf05e73a7f39f363d5687747c085aad60cac270127411c70c8ae842315253704",
+    "row_count": 276,
+    "logical_sha256": "869f24e0d7f38ddd004ff72b996c913fe348413aa87f52735dd9a18cee85533d"
+  },
+  "operational_retirement_receipts": [
+    {
+      "retirement_id": "q6-q06-current-ineligible-2026-07-18",
+      "accepted_by": "MTA Wiki owner (Codex task 019f7640-fd5c-7be2-8a40-a7c264284c0f)",
+      "accepted_at": "2026-07-18T21:14:54Z",
+      "path": "data/exports/releases/v1-rc26/review-retirements/source/q6-q06-current-ineligible-2026-07-18.json",
+      "bytes": 2297,
+      "sha256": "b05146bc8a7ad2d75692f457402fe435c6918a1e022b8e4d0abc0530720487bb"
+    },
+    {
+      "retirement_id": "q7-q07-current-ineligible-2026-07-18",
+      "accepted_by": "MTA Wiki owner (Codex task 019f7640-fd5c-7be2-8a40-a7c264284c0f)",
+      "accepted_at": "2026-07-18T21:14:54Z",
+      "path": "data/exports/releases/v1-rc26/review-retirements/source/q7-q07-current-ineligible-2026-07-18.json",
+      "bytes": 1928,
+      "sha256": "e661f065ab60bf44ac2dbe3f65b46cb50c6c9548b5e6e61a3fb91e361869681a"
+    },
+    {
+      "retirement_id": "q8-q08-current-ineligible-2026-07-18",
+      "accepted_by": "MTA Wiki owner (Codex task 019f7640-fd5c-7be2-8a40-a7c264284c0f)",
+      "accepted_at": "2026-07-18T21:14:54Z",
+      "path": "data/exports/releases/v1-rc26/review-retirements/source/q8-q08-current-ineligible-2026-07-18.json",
+      "bytes": 1944,
+      "sha256": "f4fdfcead32256bf9b49ec02f6c8a35a223724cf47673525a9104b998d7910f2"
+    },
+    {
+      "retirement_id": "q9-q09-current-ineligible-2026-07-18",
+      "accepted_by": "MTA Wiki owner (Codex task 019f7640-fd5c-7be2-8a40-a7c264284c0f)",
+      "accepted_at": "2026-07-18T21:14:54Z",
+      "path": "data/exports/releases/v1-rc26/review-retirements/source/q9-q09-current-ineligible-2026-07-18.json",
+      "bytes": 1929,
+      "sha256": "6293121b708d8956ab0fc254cfd86dd4e88f8fac5f8ae5c5879064092cd4b114"
+    }
+  ],
+  "retired_occurrence_ids": [
+    "occurrence:934b8066ac790c3820f764d1",
+    "occurrence:9d9f23af3933cda5d4dc1abd",
+    "occurrence:c5e9aba290ca2be1be6fb38e",
+    "occurrence:ddb7be06c9eb2b6292ef86c9"
+  ],
+  "retired_treatment_record_ids": [
+    "treatment_q6-limited-discontinuation-2025",
+    "treatment_q6-stop-removal-2025",
+    "treatment_q7-jfk-shortening-2025",
+    "treatment_q7-sutter-pitkin-discontinuation-2025",
+    "treatment_q7-western-reroute-2025",
+    "treatment_q8-stop-removal-2025",
+    "treatment_q9-limited-stops-2025"
+  ],
+  "classification_change_count": 0
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "flatbush-phase1-opening-route-diagnostic-superseded-by-occurrence",
+  "gap_id": "operational-coverage:63a4d9494102f5c272809cc6",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-flatbush-phase1-onset-2026-07-21",
+  "decided_at": "2026-07-21T04:00:00.000Z",
+  "rationale": "The raw event-neighborhood diagnostic sees additional Flatbush route candidates, but approved occurrence occurrence:8c987704152b459014217d44 binds the October 2 opening to exactly B41 and B67 through the existing evidence-backed Phase 1 project relations. The raw route diagnostic is therefore superseded and must not widen the occurrence scope.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

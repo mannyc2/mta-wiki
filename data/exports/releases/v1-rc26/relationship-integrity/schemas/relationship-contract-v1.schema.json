@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mta-wiki.local/schemas/relationship-contract-v1.schema.json",
+  "title": "MTA Wiki relationship contract v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "contract_id",
+    "contract_status",
+    "reviewed_at",
+    "reviewed_by",
+    "endpoint_matrix",
+    "identity_policy",
+    "evidence_policy",
+    "finding_codes",
+    "completeness_roles",
+    "migration_criteria"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": { "contract_status": { "const": "enforced" } },
+        "required": ["contract_status"]
+      },
+      "then": {
+        "required": ["enforcement_state", "enforcement_proof"],
+        "properties": {
+          "enforcement_state": {
+            "enum": ["enforced_refresh_required", "enforced_ready"]
+          },
+          "enforcement_proof": {
+            "required": ["transition_receipt"]
+          },
+          "endpoint_matrix": {
+            "required": [
+              "matrix_kind",
+              "relation_count",
+              "tuple_count",
+              "relation_ids_sha256",
+              "tuple_set_sha256",
+              "obsolete_baseline_tuple_policy"
+            ],
+            "properties": {
+              "matrix_kind": { "const": "post_remediation_reviewed" }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "contract_id": { "const": "relationship-contract-v1" },
+    "contract_status": { "enum": ["warning_first", "enforced"] },
+    "enforcement_state": {
+      "enum": ["warning_ready", "enforced_refresh_required", "enforced_ready"]
+    },
+    "reviewed_at": { "type": "string", "format": "date-time" },
+    "reviewed_by": { "type": "string", "minLength": 1 },
+    "endpoint_matrix": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "unlisted_relation_policy", "new_shape_policy"],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "matrix_kind": { "const": "post_remediation_reviewed" }
+            },
+            "required": ["matrix_kind"]
+          },
+          "then": {
+            "required": [
+              "relation_count",
+              "tuple_count",
+              "relation_ids_sha256",
+              "tuple_set_sha256",
+              "obsolete_baseline_tuple_policy"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "matrix_kind": {
+          "enum": ["legacy_warning_baseline", "post_remediation_reviewed"]
+        },
+        "relation_count": { "type": "integer", "minimum": 1 },
+        "tuple_count": { "type": "integer", "minimum": 1 },
+        "relation_ids_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "tuple_set_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "obsolete_baseline_tuple_policy": { "const": "reject" },
+        "unlisted_relation_policy": { "const": "error" },
+        "new_shape_policy": { "const": "error" }
+      }
+    },
+    "enforcement_proof": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "required_gate_ids"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "required_gate_ids": {
+          "type": "array",
+          "minItems": 7,
+          "maxItems": 7,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "bus_lane_acquisition_linkage",
+              "determinism_and_consumer_proof",
+              "occurrence_treatment_physicality",
+              "payload_reference_integrity",
+              "referential_type_evidence_integrity",
+              "relationship_completeness",
+              "semantic_remediation"
+            ]
+          }
+        },
+        "transition_receipt": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "sha256"],
+          "properties": {
+            "path": { "type": "string", "minLength": 1 },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        }
+      }
+    },
+    "identity_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical_endpoint_required", "ambiguous_alias_resolution", "superseded_endpoint_resolution", "local_id_scope"],
+      "properties": {
+        "canonical_endpoint_required": { "const": true },
+        "ambiguous_alias_resolution": { "const": "reject" },
+        "superseded_endpoint_resolution": { "const": "rewrite_to_survivor" },
+        "local_id_scope": { "const": "source" }
+      }
+    },
+    "evidence_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["minimum_refs_per_relation", "block_identity_required", "hash_required", "broad_same_page_block_threshold"],
+      "properties": {
+        "minimum_refs_per_relation": { "type": "integer", "minimum": 1 },
+        "block_identity_required": { "const": true },
+        "hash_required": { "const": true },
+        "broad_same_page_block_threshold": { "type": "integer", "minimum": 2 }
+      }
+    },
+    "finding_codes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["default_severity", "enforcement_eligible"],
+        "properties": {
+          "default_severity": { "enum": ["info", "warning", "error"] },
+          "enforcement_eligible": { "type": "boolean" }
+        }
+      }
+    },
+    "completeness_roles": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["required_roles", "disposition_allowed"],
+        "properties": {
+          "required_roles": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "uniqueItems": true
+          },
+          "disposition_allowed": { "type": "boolean" }
+        }
+      }
+    },
+    "migration_criteria": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["referential_and_evidence", "completeness", "candidate_acquisition", "determinism"],
+      "properties": {
+        "referential_and_evidence": { "$ref": "#/$defs/criteria" },
+        "completeness": { "$ref": "#/$defs/criteria" },
+        "candidate_acquisition": { "$ref": "#/$defs/criteria" },
+        "determinism": { "$ref": "#/$defs/criteria" }
+      }
+    }
+  },
+  "$defs": {
+    "criteria": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

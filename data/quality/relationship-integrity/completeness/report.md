@@ -32,7 +32,7 @@ This report uses the immutable occurrence-treatment physicality policy and exact
 
 - Operational-family events: 1366.
 - Primary dispositions: eligible occurrence present 131; legacy terminal gaps only 0; open review 0; versioned non-projectable 1235.
-- Gap rows: 2929; events with an unreviewed gap: 1142.
+- Gap rows: 2931; events with an unreviewed gap: 1142.
 - Eligible occurrence/coverage conflicts: 0.
 
 ## Canonical route-identity denominator

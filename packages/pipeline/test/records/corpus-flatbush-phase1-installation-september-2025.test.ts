@@ -831,10 +831,11 @@ describe("Flatbush Phase 1 September 2025 occurrence promotion and coverage", ()
     )).toBe(true);
   });
 
-  it("terminalizes bounded remaining diagnostics and removes folded event diagnostics from the queue", () => {
+  it("terminalizes bounded phase diagnostics and removes folded event diagnostics from the queue", () => {
     const queue = readJsonl<CoverageQueueRow>("data/quality/operational-coverage/priority-queue.jsonl");
     const correctedEventIds = new Set([
       startEventId,
+      openingEventId,
       completionEventId,
       ...foldClusters.map((fold) => fold.eventId),
       markingsEventId,

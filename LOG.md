@@ -4,6 +4,26 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-21
+
+### Flatbush Phase 1 Operational Onset and rc26
+
+- Resolved the Flatbush Avenue Phase 1 lifecycle without changing occurrence identity:
+  `occurrence:8c987704152b459014217d44` remains founded on the September 2025
+  installation-commencement event, while its exact operational onset is now `2025-10-02` at day
+  precision. An evidence-bound `precedes_event` edge explicitly relates the installation and
+  opening phases for the same Livingston Street-to-State Street scope; route scope remains exactly
+  `B41` and `B67`.
+- Added a pinned NYC DOT Bus Lanes - Local Streets capture plus DCP LION topology anchors. All five
+  selected segment ids (`0022938`, `0022942`, `0028973`, `0118635`, and `0118636`) carry the same
+  `10/2/2025` opening date, and the LION node chain terminates at Livingston Street and State
+  Street. The September announcement remains an installation-start source, not a causal-onset
+  substitute.
+- Cut and promoted immutable manifest-v5 release `v1-rc26` from generator commit `474ed08a`:
+  manifest SHA-256 `c1792d1cbfdf498ea0481fa2374202b634dc2deea532f87a600390c6da382dc0`.
+  The release contains `314` addressed files and `85,396` canonical records; `v1-rc25` remains
+  unchanged and `LATEST` now points to `v1-rc26`.
+
 ## 2026-07-20
 
 ### Fail-closed Treatment Semantics and rc25
