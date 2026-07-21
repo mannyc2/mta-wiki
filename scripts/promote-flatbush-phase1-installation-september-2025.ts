@@ -22,19 +22,29 @@ import {
   type OperationalOccurrenceEvidenceBinding,
 } from "../packages/pipeline/src/materialize/operational-occurrences.js";
 import type { RouteAnchorRow } from "../packages/pipeline/src/materialize/route-anchors.js";
+import {
+  parseOperationalCoverageAcceptedDecision,
+  type OperationalCoverageAcceptedDecision,
+} from "../packages/pipeline/src/quality/operational-coverage.js";
 
 const DECISION_ID = "flatbush-phase1-center-running-bus-lanes-2025-09";
 const PROJECT_ID = "project_flatbush-phase1-center-running-bus-lanes-livingston-state";
 const EVENT_ID = "event_flatbush-phase1-installation-start-sep2025";
+const OPENING_EVENT_ID = "event_flatbush-phase1-operational-opening-2025-10-02";
 const COMPLETION_EVENT_ID = "event_flatbush-av-phase1-installed-fall2025";
 const TREATMENT_ID = "treatment_flatbush-phase1-center-running-bus-lanes-livingston-state";
 const CORRIDOR_ID = "corridor_flatbush-phase1-livingston-state";
 const TIMELINE_RELATION_ID = "relation_flatbush-phase1-has-start-event-sep2025";
+const OPENING_TIMELINE_RELATION_ID =
+  "relation_flatbush-phase1-has-operational-opening-2025-10-02";
+const PHASE_RELATION_ID =
+  "relation_flatbush-phase1-installation-precedes-opening-2025-10-02";
 const COMPLETION_RELATION_ID = "relation_flatbush-phase1-has-completion-event-fall2025";
 const TREATMENT_RELATION_ID = "relation_flatbush-phase1-has-center-running-bus-lanes";
 const PHYSICAL_SCOPE_RELATION_ID =
   "relation_flatbush-phase1-treatment-on-bounded-corridor-livingston-state-20260715";
 const START_SOURCE_ID = "nyc_dot_flatbush_installation_begins_2025";
+const OPENING_SOURCE_ID = "nyc_dot_bus_lanes_flatbush_phase1_opening_2025";
 const RETROSPECTIVE_SOURCE_ID = "flatbush_ave_bus_priority_mtp_briefing_apr2026";
 const ROUTE_ANCHOR_PATH = "data/exports/releases/v1-rc14/route_anchors.jsonl";
 const ROUTE_ANCHOR_SHA256 = "517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239";
@@ -42,7 +52,11 @@ const REVIEWER = "codex-relationship-integrity-2026-07-16";
 const ACCEPTED_AT = "2026-07-16T08:30:00.000Z";
 const IDENTITY_ISSUED_AT = "2026-07-13T18:45:00.000Z";
 const PREVIOUS_DECISION_SHA256 =
-  "c2ec62a5042fadf094e12a9c02411d3a43ea787ad338d4934668c51141870159";
+  "292c0fc951ae2942c1fce4ec3cc9c34ac3bc1ab41e8e23d60ee8ff26d51b5be6";
+const OPENING_ROUTE_GAP_ID = "operational-coverage:63a4d9494102f5c272809cc6";
+const OPENING_TREATMENT_GAP_ID = "operational-coverage:46e9eb46b742c9a76a0241f3";
+const GAP_REVIEWER = "codex-flatbush-phase1-onset-2026-07-21";
+const GAP_DECIDED_AT = "2026-07-21T04:00:00.000Z";
 
 const evidencePins = {
   publicationDate: {
@@ -77,7 +91,20 @@ const evidencePins = {
   },
 } as const;
 
-type EvidencePin = (typeof evidencePins)[keyof typeof evidencePins];
+type EvidencePin = {
+  sourceId: string;
+  evidenceId: string;
+  sha256: string;
+};
+
+type QueueRow = {
+  gap_id: string;
+  event_record_id: string;
+  dimension: string;
+  status: string;
+  verdict: string;
+  decision_ids: string[];
+};
 
 const routeSpecs = [
   {
@@ -139,6 +166,34 @@ function binding(
   return { role, record_id: recordId, source_id: pin.sourceId, evidence_id: pin.evidenceId };
 }
 
+function canonicalBindings(
+  recordsById: ReadonlyMap<string, MtaCanonicalRecord>,
+  role: OperationalOccurrenceEvidenceBinding["role"],
+  recordId: string,
+  sourceId?: string,
+): OperationalOccurrenceEvidenceBinding[] {
+  const record = requiredRecord(recordsById, recordId);
+  const refs = [...new Map(record.evidence_refs
+    .filter((ref) => (!sourceId || ref.source_id === sourceId) && ref.evidence_id)
+    .map((ref) => [`${ref.source_id}|${ref.evidence_id!}`, ref])).values()]
+    .sort((left, right) =>
+      `${left.source_id}|${left.evidence_id!}`.localeCompare(`${right.source_id}|${right.evidence_id!}`)
+    );
+  assert(
+    refs.length > 0,
+    `${recordId} lacks exact canonical evidence${sourceId ? ` from ${sourceId}` : ""}`,
+  );
+  for (const ref of refs) {
+    assert(ref.text_sha256?.startsWith("sha256:"), `${recordId}/${ref.evidence_id} lacks a pinned text hash`);
+  }
+  return refs.map((ref) => ({
+    role,
+    record_id: recordId,
+    source_id: ref.source_id,
+    evidence_id: ref.evidence_id!,
+  }));
+}
+
 function assertRelation(
   recordsById: ReadonlyMap<string, MtaCanonicalRecord>,
   recordId: string,
@@ -158,7 +213,8 @@ function assertPhysicalScopeRelation(
 ): void {
   const corridor = requiredRecord(recordsById, CORRIDOR_ID, "corridor");
   assert(
-    corridor.payload.location_text === "Flatbush Avenue between Livingston Street and State Street",
+    corridor.payload.corridor_name === "Flatbush Avenue between Livingston Street and State Street" &&
+      corridor.payload.limits === "Livingston Street to State Street",
     `${CORRIDOR_ID} bounded location changed`,
   );
   const relation = requiredRecord(recordsById, PHYSICAL_SCOPE_RELATION_ID, "relation");
@@ -194,10 +250,35 @@ function assertBoundedPhaseGraph(
       normalizedDate.precision === "month",
     `${EVENT_ID} nested normalized date conflicts with the month-level onset`,
   );
+  binding(recordsById, "event_date", EVENT_ID, evidencePins.publicationDate);
+  binding(recordsById, "event_date", EVENT_ID, evidencePins.installationStart);
 
   const completion = requiredRecord(recordsById, COMPLETION_EVENT_ID, "event");
   assert(completion.payload.date_normalized === "2025-fall", `${COMPLETION_EVENT_ID} date changed`);
   assert(completion.payload.date_precision === "season", `${COMPLETION_EVENT_ID} precision changed`);
+
+  const opening = requiredRecord(recordsById, OPENING_EVENT_ID, "event");
+  assert(opening.payload.event_family === "launch", `${OPENING_EVENT_ID} family changed`);
+  assert(opening.payload.lifecycle_phase === "launched", `${OPENING_EVENT_ID} lifecycle changed`);
+  assert(opening.payload.date_normalized === "2025-10-02", `${OPENING_EVENT_ID} date changed`);
+  assert(opening.payload.date_precision === "day", `${OPENING_EVENT_ID} precision changed`);
+  canonicalBindings(recordsById, "event_date", OPENING_EVENT_ID, OPENING_SOURCE_ID);
+
+  const openingTimeline = requiredRecord(recordsById, OPENING_TIMELINE_RELATION_ID, "relation");
+  assert(openingTimeline.payload.relation_kind === "has_timeline_event", `${OPENING_TIMELINE_RELATION_ID} kind changed`);
+  assert(openingTimeline.payload.relation_family === "timeline_context", `${OPENING_TIMELINE_RELATION_ID} family changed`);
+  assert(openingTimeline.payload.subject_id === PROJECT_ID, `${OPENING_TIMELINE_RELATION_ID} subject changed`);
+  assert(openingTimeline.payload.object_id === OPENING_EVENT_ID, `${OPENING_TIMELINE_RELATION_ID} object changed`);
+  assert(openingTimeline.payload.assertion_status === "delivered", `${OPENING_TIMELINE_RELATION_ID} is not delivered`);
+  canonicalBindings(recordsById, "timeline_relation", OPENING_TIMELINE_RELATION_ID, OPENING_SOURCE_ID);
+
+  const phaseRelation = requiredRecord(recordsById, PHASE_RELATION_ID, "relation");
+  assert(phaseRelation.payload.relation_kind === "precedes_event", `${PHASE_RELATION_ID} kind changed`);
+  assert(phaseRelation.payload.relation_family === "timeline_context", `${PHASE_RELATION_ID} family changed`);
+  assert(phaseRelation.payload.subject_id === EVENT_ID, `${PHASE_RELATION_ID} subject changed`);
+  assert(phaseRelation.payload.object_id === OPENING_EVENT_ID, `${PHASE_RELATION_ID} object changed`);
+  assert(phaseRelation.payload.assertion_status === "delivered", `${PHASE_RELATION_ID} is not delivered`);
+  canonicalBindings(recordsById, "phase_relation", PHASE_RELATION_ID);
 
   const treatment = requiredRecord(recordsById, TREATMENT_ID, "treatment_component");
   assert(treatment.payload.treatment_family === "bus_lane", `${TREATMENT_ID} family changed`);
@@ -231,7 +312,9 @@ function assertBoundedPhaseGraph(
       .sort();
   assert(
     stableJson(relationIds("has_timeline_event") as unknown as JsonValue) ===
-      stableJson([COMPLETION_RELATION_ID, TIMELINE_RELATION_ID].sort() as unknown as JsonValue),
+      stableJson(
+        [COMPLETION_RELATION_ID, OPENING_TIMELINE_RELATION_ID, TIMELINE_RELATION_ID].sort() as unknown as JsonValue,
+      ),
     `${PROJECT_ID} timeline graph changed`,
   );
   assert(
@@ -263,24 +346,30 @@ function occurrenceDecision(
     review_state: "approved",
     accepted_at: ACCEPTED_AT,
     reviewer: REVIEWER,
-    rationale: "The September 25, 2025 official NYC DOT announcement establishes that installation of the bounded Livingston Street-to-State Street Phase 1 center-running bus lanes began during September 2025, and the April 2026 official retrospective confirms that this same two-block phase was installed during Fall 2025. This decision uses September only as a month-level installation-commencement onset: it does not invent an exact work-start day, fine-bearing day, or operational-completion day. It binds only B41 and B67 and one atomic bus_lane treatment, while preserving the separate season-precision completion event and excluding Phase 2 islands, pedestrian-space, curb-management, signal-priority, camera-enforcement, and reroute scope. The July 16 relationship-integrity review also selects the source-stated delivered treatment-to-corridor relation for the exact Livingston Street-to-State Street segment; this is a direct canonical edge supported by the same April 2026 NYC DOT block, not a geometry, proximity, or street-name inference.",
+    rationale: "The September 25, 2025 official NYC DOT announcement establishes month-level installation commencement for the bounded Livingston Street-to-State Street Phase 1 center-running bus lanes. NYC DOT's official bus-lane data then establishes October 2, 2025 as the exact operational opening of that same bounded segment, and the April 2026 official retrospective independently confirms its Fall 2025 delivery. This decision therefore retains September installation commencement and October 2 operational opening as two source-backed related phases, resolves operational onset to the opening day, and preserves the separate season-precision completion milestone as related history outside the occurrence. It binds only B41 and B67 and one atomic bus_lane treatment while excluding Phase 2 islands, pedestrian-space, curb-management, signal-priority, camera-enforcement, and reroute scope. The stable occurrence identity remains founded on the previously registered September event; the exact-day enrichment does not re-found or replace that identity.",
     occurrence_id: identity.occurrence_id,
     founding_key: identity.founding_key,
-    observation_event_record_ids: [EVENT_ID],
+    observation_event_record_ids: [EVENT_ID, OPENING_EVENT_ID],
     observation_relation_record_ids: [
       TIMELINE_RELATION_ID,
+      OPENING_TIMELINE_RELATION_ID,
+      PHASE_RELATION_ID,
       ...routeSpecs.map((route) => route.relationId),
       TREATMENT_RELATION_ID,
       PHYSICAL_SCOPE_RELATION_ID,
     ].sort(),
     resolved_status: "realized",
     resolved_onset: {
-      date: "2025-09",
-      precision: "month",
+      date: "2025-10-02",
+      precision: "day",
       evidence_bindings: [
-        binding(recordsById, "event_date", EVENT_ID, evidencePins.publicationDate),
-        binding(recordsById, "event_date", EVENT_ID, evidencePins.installationStart),
-        binding(recordsById, "timeline_relation", TIMELINE_RELATION_ID, evidencePins.deliveredPhase),
+        ...canonicalBindings(recordsById, "event_date", OPENING_EVENT_ID, OPENING_SOURCE_ID),
+        ...canonicalBindings(
+          recordsById,
+          "timeline_relation",
+          OPENING_TIMELINE_RELATION_ID,
+          OPENING_SOURCE_ID,
+        ),
       ],
     },
     routes: routeSpecs.map((route) => ({
@@ -310,7 +399,7 @@ function identityRegistry(decision: OperationalOccurrenceAcceptedDecision): Oper
   const existing = loadOperationalOccurrenceIdentityRegistry();
   const expected = newOperationalOccurrenceIdentityEntry({
     foundingKey: decision.founding_key,
-    foundingEventRecordIds: decision.observation_event_record_ids,
+    foundingEventRecordIds: [EVENT_ID],
     decisionId: decision.decision_id,
     issuedAt: IDENTITY_ISSUED_AT,
   });
@@ -325,21 +414,97 @@ function identityRegistry(decision: OperationalOccurrenceAcceptedDecision): Oper
   return assertOperationalOccurrenceIdentityRegistry([...existing, expected]);
 }
 
+function ledgerDecisions(
+  queue: readonly QueueRow[],
+  occurrenceId: string,
+): OperationalCoverageAcceptedDecision[] {
+  const openingGaps = queue.filter((candidate) => candidate.event_record_id === OPENING_EVENT_ID);
+  const expected = new Map([
+    [OPENING_ROUTE_GAP_ID, "route"],
+    [OPENING_TREATMENT_GAP_ID, "treatment"],
+  ]);
+  assert(
+    openingGaps.length === expected.size &&
+      openingGaps.every((row) => expected.get(row.gap_id) === row.dimension),
+    `Unexpected raw gaps for ${OPENING_EVENT_ID}: ${openingGaps.map((row) => `${row.dimension}:${row.gap_id}`).join(", ") || "none"}`,
+  );
+
+  const specs = [
+    {
+      decisionId: "flatbush-phase1-opening-route-diagnostic-superseded-by-occurrence",
+      gapId: OPENING_ROUTE_GAP_ID,
+      dimension: "route",
+      rationale: `The raw event-neighborhood diagnostic sees additional Flatbush route candidates, but approved occurrence ${occurrenceId} binds the October 2 opening to exactly B41 and B67 through the existing evidence-backed Phase 1 project relations. The raw route diagnostic is therefore superseded and must not widen the occurrence scope.`,
+    },
+    {
+      decisionId: "flatbush-phase1-opening-treatment-diagnostic-superseded-by-occurrence",
+      gapId: OPENING_TREATMENT_GAP_ID,
+      dimension: "treatment",
+      rationale: `The raw event-neighborhood diagnostic sees other Flatbush treatments from later phases and the broader program, but approved occurrence ${occurrenceId} binds the October 2 opening to the single bounded center-running bus-lane treatment between Livingston Street and State Street. The raw treatment diagnostic is therefore superseded and must not broaden Phase 1.`,
+    },
+  ] as const;
+
+  return specs.map((spec) => {
+    const row = queue.find((candidate) => candidate.gap_id === spec.gapId);
+    assert(row?.event_record_id === OPENING_EVENT_ID, `${spec.gapId} event changed`);
+    assert(row.dimension === spec.dimension, `${spec.gapId} dimension changed`);
+    if (row.status === "terminal") {
+      assert(row.decision_ids.includes(spec.decisionId), `${spec.gapId} terminal decision changed`);
+    } else {
+      assert(row.status === "open" && row.verdict === "unreviewed", `${spec.gapId} is no longer open/unreviewed`);
+    }
+    return parseOperationalCoverageAcceptedDecision({
+      schema_version: 1,
+      decision_id: spec.decisionId,
+      gap_id: spec.gapId,
+      prior_verdict: "unreviewed",
+      verdict: "not_applicable",
+      reviewer: GAP_REVIEWER,
+      decided_at: GAP_DECIDED_AT,
+      rationale: spec.rationale,
+      proposal_ids: [],
+      evidence_refs: [],
+      search_receipt_ids: [],
+    }, spec.decisionId);
+  });
+}
+
 function writeArtifacts(
   decision: OperationalOccurrenceAcceptedDecision,
   identities: readonly OperationalOccurrenceIdentityEntry[],
+  gapDecisions: readonly OperationalCoverageAcceptedDecision[],
 ): void {
-  const path = join(repoRoot, "data/operational-occurrence-review/accepted/decisions", `${decision.decision_id}.json`);
-  const bytes = `${JSON.stringify(decision, null, 2)}\n`;
-  if (existsSync(path)) {
-    const current = readFileSync(path);
+  const occurrencePath = join(
+    repoRoot,
+    "data/operational-occurrence-review/accepted/decisions",
+    `${decision.decision_id}.json`,
+  );
+  const occurrenceBytes = `${JSON.stringify(decision, null, 2)}\n`;
+  if (existsSync(occurrencePath)) {
+    const current = readFileSync(occurrencePath);
     assert(
-      current.toString("utf8") === bytes || sha256(current) === PREVIOUS_DECISION_SHA256,
-      `Refusing to overwrite non-equivalent ${path}`,
+      current.toString("utf8") === occurrenceBytes || sha256(current) === PREVIOUS_DECISION_SHA256,
+      `Refusing to overwrite non-equivalent ${occurrencePath}`,
     );
   }
-  mkdirSync(dirname(path), { recursive: true });
-  if (!existsSync(path) || readFileSync(path, "utf8") !== bytes) writeFileSync(path, bytes, "utf8");
+  mkdirSync(dirname(occurrencePath), { recursive: true });
+  if (!existsSync(occurrencePath) || readFileSync(occurrencePath, "utf8") !== occurrenceBytes) {
+    writeFileSync(occurrencePath, occurrenceBytes, "utf8");
+  }
+  for (const gapDecision of gapDecisions) {
+    const gapPath = join(
+      repoRoot,
+      "data/operational-anchor-review/ledger-decisions/decisions",
+      `${gapDecision.decision_id}.json`,
+    );
+    const gapBytes = `${JSON.stringify(gapDecision, null, 2)}\n`;
+    if (existsSync(gapPath)) {
+      assert(readFileSync(gapPath, "utf8") === gapBytes, `Refusing to overwrite non-equivalent ${gapPath}`);
+    } else {
+      mkdirSync(dirname(gapPath), { recursive: true });
+      writeFileSync(gapPath, gapBytes, "utf8");
+    }
+  }
   writeFileSync(
     join(repoRoot, "data/operational-occurrence-identities/registry.jsonl"),
     `${identities.map((entry) => stableJson(entry as unknown as JsonValue)).join("\n")}\n`,
@@ -354,6 +519,8 @@ const records = readCanonicalRecordsFromJsonl();
 const recordsById = new Map(records.map((record) => [record.record_id, record]));
 const decision = occurrenceDecision(records, recordsById);
 const identities = identityRegistry(decision);
+const queue = readJsonl<QueueRow>(join(repoRoot, "data/quality/operational-coverage/priority-queue.jsonl"));
+const gapDecisions = ledgerDecisions(queue, decision.occurrence_id);
 const existingOccurrenceReviews = loadOperationalOccurrenceAcceptedDecisions().filter(
   (candidate) => candidate.decision_id !== DECISION_ID,
 );
@@ -367,6 +534,18 @@ assert(row?.study_projection_eligible, "Flatbush Phase 1 occurrence is not study
 assert(
   rows.filter((candidate) => candidate.occurrence_id === decision.occurrence_id).length === 1,
   "Flatbush Phase 1 occurrence projected more than once",
+);
+assert(
+  row.resolved_onset.date === "2025-10-02" && row.resolved_onset.precision === "day",
+  "Flatbush Phase 1 operational onset did not resolve to October 2, 2025",
+);
+assert(
+  stableJson(row.phase_record_ids as unknown as JsonValue) ===
+    stableJson([EVENT_ID, OPENING_EVENT_ID].sort() as unknown as JsonValue) &&
+    stableJson(row.phase_relation_record_ids as unknown as JsonValue) ===
+      stableJson([PHASE_RELATION_ID] as unknown as JsonValue) &&
+    row.phase_relation_disposition === "related_phases",
+  "Flatbush Phase 1 installation and opening did not project as related phases",
 );
 assert(
   stableJson(row.routes.map((route) => route.gtfs_route_id).sort() as unknown as JsonValue) ===
@@ -389,16 +568,18 @@ assert(
 assert(
   !row.provenance.event_record_ids.includes(COMPLETION_EVENT_ID) &&
     !row.provenance.relation_record_ids.includes(COMPLETION_RELATION_ID),
-  "The separate Fall 2025 completion milestone leaked into the September installation-start occurrence",
+  "The separate Fall 2025 completion milestone leaked into the related installation/opening occurrence",
 );
 
 const apply = process.argv.includes("--apply");
-if (apply) writeArtifacts(decision, identities);
+if (apply) writeArtifacts(decision, identities, gapDecisions);
 console.log(JSON.stringify({
   mode: apply ? "applied" : "dry-run",
   decision_id: decision.decision_id,
   occurrence_id: decision.occurrence_id,
   onset: row.resolved_onset,
+  phase_record_ids: row.phase_record_ids,
+  phase_relation_record_ids: row.phase_relation_record_ids,
   route_count: row.routes.length,
   gtfs_route_ids: row.routes.map((route) => route.gtfs_route_id),
   treatment_record_id: row.treatment.kind === "atomic" ? row.treatment.member.treatment_record_id : null,
@@ -408,5 +589,6 @@ console.log(JSON.stringify({
   projected_eligible_route_pairs: rows
     .filter((candidate) => candidate.study_projection_eligible)
     .reduce((sum, candidate) => sum + candidate.routes.length, 0),
+  ledger_decision_ids: gapDecisions.map((gapDecision) => gapDecision.decision_id),
   route_anchor_sha256: ROUTE_ANCHOR_SHA256,
 }, null, 2));

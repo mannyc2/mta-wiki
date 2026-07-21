@@ -4,6 +4,12 @@ import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
 import { repoRoot } from "@mta-wiki/core/paths";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
+import { readCanonicalRecordsFromJsonl } from "../../src/materialize/canonical-read";
+import { loadOperationalAnchorReviewDecisions } from "../../src/materialize/operational-anchor-review";
+import { loadOperationalOccurrenceIdentityRegistry } from "../../src/materialize/operational-occurrence-identity";
+import { loadOperationalOccurrenceAcceptedDecisions } from "../../src/materialize/operational-occurrence-review";
+import { computeOperationalOccurrences } from "../../src/materialize/operational-occurrences";
+import type { RouteAnchorRow } from "../../src/materialize/route-anchors";
 
 type SourceBlock = {
   block_id: string;
@@ -68,6 +74,10 @@ type ProjectedOccurrence = {
   };
   routes: ScopedRoute[];
   treatment: AtomicTreatment;
+  phase_record_ids: string[];
+  phase_relation_record_ids: string[];
+  phase_relation_evidence_bindings: EvidenceBinding[];
+  phase_relation_disposition: string;
   source_ids: string[];
   exclusion_reasons: string[];
   provenance: {
@@ -157,7 +167,7 @@ type AcquisitionReceipt = {
     installation_start_date_precision: string;
     installation_start_lifecycle_phase: string;
     exact_physical_start_date: null;
-    exact_operational_activation_date: null;
+    exact_operational_activation_date: string | null;
     installation_completion_date_normalized: string;
     installation_completion_date_precision: string;
     installation_completion_event_disposition: string;
@@ -180,10 +190,12 @@ type AcquisitionReceipt = {
 };
 
 const startSourceId = "nyc_dot_flatbush_installation_begins_2025";
+const openingSourceId = "nyc_dot_bus_lanes_flatbush_phase1_opening_2025";
 const retrospectiveSourceId = "flatbush_ave_bus_priority_mtp_briefing_apr2026";
 const umbrellaProjectId = "project_flatbush-avenue-bus-priority-brooklyn";
 const phaseProjectId = "project_flatbush-phase1-center-running-bus-lanes-livingston-state";
 const startEventId = "event_flatbush-phase1-installation-start-sep2025";
+const openingEventId = "event_flatbush-phase1-operational-opening-2025-10-02";
 const completionEventId = "event_flatbush-av-phase1-installed-fall2025";
 const treatmentId = "treatment_flatbush-phase1-center-running-bus-lanes-livingston-state";
 const b41RouteId = "route_b41-ace";
@@ -204,6 +216,10 @@ const relationIds = {
 } as const;
 const physicalScopeRelationId =
   "relation_flatbush-phase1-treatment-on-bounded-corridor-livingston-state-20260715";
+const openingTimelineRelationId =
+  "relation_flatbush-phase1-has-operational-opening-2025-10-02";
+const phaseRelationId =
+  "relation_flatbush-phase1-installation-precedes-opening-2025-10-02";
 
 const sourcePins = [
   {
@@ -336,6 +352,14 @@ function byRecordId(records: readonly MtaCanonicalRecord[], recordId: string): M
   return record;
 }
 
+function bySourceId(records: readonly MtaCanonicalRecord[], sourceId: string): MtaCanonicalRecord {
+  const record = records.find((candidate) =>
+    candidate.source_id === sourceId || candidate.source_ids.includes(sourceId)
+  );
+  if (!record) throw new Error(`missing canonical source ${sourceId}`);
+  return record;
+}
+
 function evidenceIds(record: MtaCanonicalRecord): string[] {
   return record.evidence_refs.map((ref) => ref.evidence_id);
 }
@@ -348,6 +372,20 @@ function sortedRoutePairs(routes: readonly ScopedRoute[]): Array<[string, string
 
 function simplifiedBindings(bindings: readonly EvidenceBinding[]): Array<Pick<EvidenceBinding, "role" | "record_id" | "evidence_id">> {
   return bindings.map(({ role, record_id, evidence_id }) => ({ role, record_id, evidence_id }));
+}
+
+function canonicalBindingExpectations(
+  record: MtaCanonicalRecord,
+  role: string,
+  sourceId?: string,
+): Array<Pick<EvidenceBinding, "role" | "record_id" | "evidence_id">> {
+  return [...new Map(record.evidence_refs
+    .filter((ref) => (!sourceId || ref.source_id === sourceId) && ref.evidence_id)
+    .map((ref) => [`${ref.source_id}|${ref.evidence_id!}`, ref])).values()]
+    .sort((left, right) =>
+      `${left.source_id}|${left.evidence_id!}`.localeCompare(`${right.source_id}|${right.evidence_id!}`)
+    )
+    .map((ref) => ({ role, record_id: record.record_id, evidence_id: ref.evidence_id! }));
 }
 
 describe("Flatbush Phase 1 September 2025 source and canonical lifecycle", () => {
@@ -371,7 +409,7 @@ describe("Flatbush Phase 1 September 2025 source and canonical lifecycle", () =>
     }
   });
 
-  it("keeps the publication day separate from the month-level realized installation start and Fall completion", () => {
+  it("keeps installation start, exact operational opening, and Fall completion as distinct milestones", () => {
     const sources = readJsonl<MtaCanonicalRecord>("data/canonical/sources.jsonl");
     const projects = readJsonl<MtaCanonicalRecord>("data/canonical/projects.jsonl");
     const events = readJsonl<MtaCanonicalRecord>("data/canonical/events.jsonl");
@@ -389,6 +427,9 @@ describe("Flatbush Phase 1 September 2025 source and canonical lifecycle", () =>
       source_url: "https://www.nyc.gov/html/dot/downloads/pdf/flatbush-ave-bus-priority-mtp-briefing-apr2026.pdf",
       published_date_normalized: "2026-04",
       published_date_precision: "month",
+    });
+    expect(bySourceId(sources, openingSourceId).payload).toMatchObject({
+      publisher: expect.stringMatching(/NYC DOT|New York City Department of Transportation/u),
     });
 
     const phaseProject = byRecordId(projects, phaseProjectId);
@@ -424,6 +465,22 @@ describe("Flatbush Phase 1 September 2025 source and canonical lifecycle", () =>
       `${startSourceId}#p001_b0019`,
     ]);
 
+    const opening = byRecordId(events, openingEventId);
+    expect(opening.payload).toMatchObject({
+      event_family: "launch",
+      lifecycle_phase: "launched",
+      date_normalized: "2025-10-02",
+      date_precision: "day",
+    });
+    expect(opening.source_ids).toContain(openingSourceId);
+    expect(evidenceIds(opening).length).toBeGreaterThan(0);
+    expect(opening.evidence_refs.every((ref) =>
+      ref.source_id === openingSourceId &&
+      Boolean(ref.evidence_id) &&
+      ref.text_sha256.startsWith("sha256:")
+    )).toBe(true);
+    expect(opening.record_id).not.toBe(start.record_id);
+
     const completion = byRecordId(events, completionEventId);
     expect(completion.payload).toMatchObject({
       event_kind: "installation",
@@ -440,6 +497,21 @@ describe("Flatbush Phase 1 September 2025 source and canonical lifecycle", () =>
     expect(byRecordId(relations, "relation_project-has-event-phase1-installed").payload).toMatchObject({
       subject_id: umbrellaProjectId,
       object_id: completionEventId,
+      assertion_status: "delivered",
+    });
+
+    expect(byRecordId(relations, openingTimelineRelationId).payload).toMatchObject({
+      relation_kind: "has_timeline_event",
+      relation_family: "timeline_context",
+      subject_id: phaseProjectId,
+      object_id: openingEventId,
+      assertion_status: "delivered",
+    });
+    expect(byRecordId(relations, phaseRelationId).payload).toMatchObject({
+      relation_kind: "precedes_event",
+      relation_family: "timeline_context",
+      subject_id: startEventId,
+      object_id: openingEventId,
       assertion_status: "delivered",
     });
   });
@@ -467,11 +539,12 @@ describe("Flatbush Phase 1 September 2025 source and canonical lifecycle", () =>
       (relation) => relation.payload.subject_id === phaseProjectId && scopedKinds.has(String(relation.payload.relation_kind)),
     );
     expect(scopedRelations.map((relation) => relation.record_id).sort()).toEqual(
-      Object.values(relationIds).sort(),
+      [...Object.values(relationIds), openingTimelineRelationId].sort(),
     );
     expect(scopedRelations.every((relation) => relation.payload.assertion_status === "delivered")).toBe(true);
 
     expect(byRecordId(relations, relationIds.start).payload.object_id).toBe(startEventId);
+    expect(byRecordId(relations, openingTimelineRelationId).payload.object_id).toBe(openingEventId);
     expect(byRecordId(relations, relationIds.completion).payload.object_id).toBe(completionEventId);
     expect(byRecordId(relations, relationIds.hierarchy).payload.object_id).toBe(umbrellaProjectId);
     expect(byRecordId(relations, physicalScopeRelationId).payload).toMatchObject({
@@ -541,6 +614,7 @@ describe("Flatbush Phase 1 September 2025 source and canonical lifecycle", () =>
       umbrella_project_record_id: umbrellaProjectId,
       bounded_project_record_id: phaseProjectId,
       installation_start_event_record_id: startEventId,
+      operational_opening_event_record_id: openingEventId,
       installation_completion_event_record_id: completionEventId,
       treatment_record_id: treatmentId,
       route_record_ids: [b41RouteId, b67RouteId],
@@ -551,7 +625,7 @@ describe("Flatbush Phase 1 September 2025 source and canonical lifecycle", () =>
       installation_start_date_precision: "month",
       installation_start_lifecycle_phase: "installed",
       exact_physical_start_date: null,
-      exact_operational_activation_date: null,
+      exact_operational_activation_date: "2025-10-02",
       installation_completion_date_normalized: "2025-fall",
       installation_completion_date_precision: "season",
     });
@@ -588,9 +662,13 @@ describe("Flatbush Phase 1 September 2025 source and canonical lifecycle", () =>
 });
 
 describe("Flatbush Phase 1 September 2025 occurrence promotion and coverage", () => {
-  it("promotes one direct two-route atomic occurrence and registers its persistent identity", () => {
+  it("promotes one related-phase two-route atomic occurrence and preserves its persistent founding identity", () => {
     expect(existsSync(join(repoRoot, decisionPath))).toBe(true);
     const decision = readJson<AcceptedOccurrenceDecision>(decisionPath);
+    const events = readJsonl<MtaCanonicalRecord>("data/canonical/events.jsonl");
+    const relations = readJsonl<MtaCanonicalRecord>("data/canonical/relations.jsonl");
+    const opening = byRecordId(events, openingEventId);
+    const openingTimeline = byRecordId(relations, openingTimelineRelationId);
     expect(decision).toMatchObject({
       schema_version: 1,
       decision_id: decisionId,
@@ -599,9 +677,9 @@ describe("Flatbush Phase 1 September 2025 occurrence promotion and coverage", ()
       reviewer: "codex-relationship-integrity-2026-07-16",
       occurrence_id: occurrenceId,
       founding_key: foundingKey,
-      observation_event_record_ids: [startEventId],
+      observation_event_record_ids: [startEventId, openingEventId],
       resolved_status: "realized",
-      resolved_onset: { date: "2025-09", precision: "month" },
+      resolved_onset: { date: "2025-10-02", precision: "day" },
       treatment_scope_kind: "atomic",
       treatment: {
         kind: "atomic",
@@ -610,6 +688,8 @@ describe("Flatbush Phase 1 September 2025 occurrence promotion and coverage", ()
     });
     expect(decision.observation_relation_record_ids.sort()).toEqual([
       relationIds.start,
+      openingTimelineRelationId,
+      phaseRelationId,
       relationIds.b41,
       relationIds.b67,
       relationIds.treatment,
@@ -624,9 +704,8 @@ describe("Flatbush Phase 1 September 2025 occurrence promotion and coverage", ()
     ]);
 
     expect(simplifiedBindings(decision.resolved_onset.evidence_bindings)).toEqual([
-      { role: "event_date", record_id: startEventId, evidence_id: `${startSourceId}#p001_b0010` },
-      { role: "event_date", record_id: startEventId, evidence_id: `${startSourceId}#p001_b0016` },
-      { role: "timeline_relation", record_id: relationIds.start, evidence_id: `${retrospectiveSourceId}#p004_c0002` },
+      ...canonicalBindingExpectations(opening, "event_date", openingSourceId),
+      ...canonicalBindingExpectations(openingTimeline, "timeline_relation", openingSourceId),
     ]);
     expect(simplifiedBindings(decision.routes.find((route) => route.gtfs_route_id === "B41")!.evidence_bindings)).toEqual([
       { role: "route_identity", record_id: b41RouteId, evidence_id: `${startSourceId}#p001_b0021` },
@@ -671,9 +750,15 @@ describe("Flatbush Phase 1 September 2025 occurrence promotion and coverage", ()
   });
 
   it("projects exactly one eligible Flatbush occurrence and exactly two route-treatment pairs", () => {
-    const projected = readJsonl<ProjectedOccurrence>(
-      "data/contract-fixtures/operational-occurrences-v1/operational_occurrences.jsonl",
-    );
+    const projected = computeOperationalOccurrences(
+      readCanonicalRecordsFromJsonl(),
+      readJsonl<RouteAnchorRow>("data/exports/releases/v1-rc14/route_anchors.jsonl"),
+      {
+        reviewDecisions: loadOperationalAnchorReviewDecisions(),
+        occurrenceReviewDecisions: loadOperationalOccurrenceAcceptedDecisions(),
+        identityRegistry: loadOperationalOccurrenceIdentityRegistry(),
+      },
+    ) as ProjectedOccurrence[];
     const flatbushOccurrences = projected.filter(
       (candidate) =>
         candidate.founding_key === foundingKey ||
@@ -682,19 +767,32 @@ describe("Flatbush Phase 1 September 2025 occurrence promotion and coverage", ()
     );
     expect(flatbushOccurrences).toHaveLength(1);
     const occurrence = flatbushOccurrences[0]!;
+    const relations = readJsonl<MtaCanonicalRecord>("data/canonical/relations.jsonl");
+    const phaseRelation = byRecordId(relations, phaseRelationId);
     expect(occurrence).toMatchObject({
       occurrence_id: occurrenceId,
       occurrence_review_decision_id: decisionId,
       founding_key: foundingKey,
       review_state: "approved",
       resolved_status: "realized",
-      resolved_onset: { date: "2025-09", precision: "month" },
-      source_ids: [retrospectiveSourceId, startSourceId],
+      resolved_onset: { date: "2025-10-02", precision: "day" },
+      phase_record_ids: [startEventId, openingEventId].sort(),
+      phase_relation_record_ids: [phaseRelationId],
+      phase_relation_disposition: "related_phases",
+      source_ids: [retrospectiveSourceId, openingSourceId, startSourceId].sort(),
       exclusion_reasons: [],
       provenance: {
         anchor_review_decision_ids: [],
-        event_record_ids: [startEventId],
-        relation_record_ids: [relationIds.treatment, relationIds.start, relationIds.b41, relationIds.b67].sort(),
+        event_record_ids: [startEventId, openingEventId].sort(),
+        relation_record_ids: [
+          relationIds.treatment,
+          relationIds.start,
+          openingTimelineRelationId,
+          phaseRelationId,
+          relationIds.b41,
+          relationIds.b67,
+          physicalScopeRelationId,
+        ].sort(),
         route_record_ids: [b41RouteId, b67RouteId],
         treatment_record_ids: [treatmentId],
       },
@@ -708,6 +806,9 @@ describe("Flatbush Phase 1 September 2025 occurrence promotion and coverage", ()
       [b41RouteId, "B41"],
       [b67RouteId, "B67"],
     ]);
+    expect(simplifiedBindings(occurrence.phase_relation_evidence_bindings)).toEqual(
+      canonicalBindingExpectations(phaseRelation, "phase_relation"),
+    );
 
     const nonFounderEventIds = new Set([
       completionEventId,
@@ -730,10 +831,11 @@ describe("Flatbush Phase 1 September 2025 occurrence promotion and coverage", ()
     )).toBe(true);
   });
 
-  it("terminalizes bounded remaining diagnostics and removes folded event diagnostics from the queue", () => {
+  it("terminalizes bounded phase diagnostics and removes folded event diagnostics from the queue", () => {
     const queue = readJsonl<CoverageQueueRow>("data/quality/operational-coverage/priority-queue.jsonl");
     const correctedEventIds = new Set([
       startEventId,
+      openingEventId,
       completionEventId,
       ...foldClusters.map((fold) => fold.eventId),
       markingsEventId,

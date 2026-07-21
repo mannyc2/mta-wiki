@@ -1,6 +1,6 @@
 # Relationship completeness audit
 
-Schema version: 1. Mode: **warning**. Release: **v1-rc25**.
+Schema version: 1. Mode: **warning**. Release: **v1-rc26**.
 
 This report uses the immutable occurrence-treatment physicality policy and exact per-treatment review ledger. Family names and location literals are not physicality evidence, and a nonphysical decision is neither a waiver nor a source of study eligibility. No generic all-record non-projectable coverage is claimed: project, corridor, entity, claim, metric, and source classes remain outside the reviewed route/event/treatment full-denominator selectors.
 
@@ -11,7 +11,7 @@ This report uses the immutable occurrence-treatment physicality policy and exact
 - All enforcement-candidate contract-role failures: 0 occurrence(s).
 - Phase/schema migration warnings: 0 occurrence(s).
 - Physical scope required: 1; not applicable: 129; physicality review required: 0.
-- Eligible event identities inside the implementation/launch denominator: 130; outside: 0.
+- Eligible event identities inside the implementation/launch denominator: 131; outside: 0.
 
 ## Eligible-occurrence treatment physicality denominator
 
@@ -30,9 +30,9 @@ This report uses the immutable occurrence-treatment physicality policy and exact
 
 ## Full operational-event denominator
 
-- Operational-family events: 1365.
-- Primary dispositions: eligible occurrence present 130; legacy terminal gaps only 0; open review 0; versioned non-projectable 1235.
-- Gap rows: 2929; events with an unreviewed gap: 1142.
+- Operational-family events: 1366.
+- Primary dispositions: eligible occurrence present 131; legacy terminal gaps only 0; open review 0; versioned non-projectable 1235.
+- Gap rows: 2931; events with an unreviewed gap: 1142.
 - Eligible occurrence/coverage conflicts: 0.
 
 ## Canonical route-identity denominator

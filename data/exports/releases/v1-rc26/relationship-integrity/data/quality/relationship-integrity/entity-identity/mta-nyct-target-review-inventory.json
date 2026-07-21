@@ -1,0 +1,2652 @@
+{
+  "schema_version": 1,
+  "inventory_id": "mta-nyct-target-identity-review-v1",
+  "generated_at": "2026-07-16T00:00:00.000Z",
+  "current_target_record_id": "entity_mta-nyct",
+  "statement": "Lexical buckets identify review candidates only. No row is retargeted without exact staged authoritative evidence review.",
+  "decision_policy": {
+    "umbrella_target_record_id": "entity_mta-entity-update-2025",
+    "nyct_target_record_id": "entity_mta-nyct",
+    "mta_only_requires_evidence_review": true,
+    "unsupported_entity_assertion_must_be_retired": true,
+    "downstream_local_endpoint_relations_follow_the_reviewed_local_identity": true
+  },
+  "pinned_inputs": {
+    "submission_directory": "data/submissions",
+    "active_target_submission_ids_sha256": "8785148ce2606f4cad3efcf0c9584a20a682e6edc8a8c35ede53704f455b6faf",
+    "retirement_path": "data/submission-overrides/retired.json",
+    "retirement_sha256": "8083dc7d4be15d288734eafc20a38149561cd14ec3d2ad0d6ebfe67121f91be5"
+  },
+  "counts": {
+    "active_target_submissions": 701,
+    "explicit_nyct_name": 640,
+    "explicit_umbrella_name": 50,
+    "mta_only": 11,
+    "requires_review": 61,
+    "downstream_local_relation_submissions": 44
+  },
+  "suspicious_submission_ids_sha256": "82e9679986d72444ae98f056743b3342a71dcfe7e74fcebbbe164632f1a2bb53",
+  "downstream_local_relation_submission_ids_sha256": "f7b8ff2b097ba8df0e395d6c6dcd29af172be688b024b5bdf13496b4c0cb544f",
+  "rows": [
+    {
+      "submission_id": "sub_0242ca79d0a6f47d",
+      "source_id": "meeting_doc_205546",
+      "local_observation_id": "entity_meeting_doc_205546_mta",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency",
+        "description": "North America's largest transportation network, serving a population of 15.3 million people across a 5,000-square-mile travel area"
+      },
+      "evidence": [
+        {
+          "evidence_id": "meeting_doc_205546#p031_c0002",
+          "text_sha256": "sha256:be4c03373e5f87db95666f0e3f37eab1896ae94cfba0f68d9689facecf6a9c72",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The Metropolitan Transportation Authority is North America's largest transportation network, serving a population of 15.3 million people across a 5,000-square-mile travel area surrounding New York City through Long Island, southeastern New York State, and Connecticut."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_02847ecf0dfc521f",
+      "source_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb8_mar2025",
+      "local_observation_id": "entity_mta_eastern_pkwy_cb8_mar2025",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMetropolitan Transportation Authority (MTA)",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority (MTA)",
+        "entity_type": "agency",
+        "description": "Partner agency on the Eastern Parkway Transit Priority Proposal."
+      },
+      "evidence": [
+        {
+          "evidence_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb8_mar2025#p002_c0004",
+          "text_sha256": "sha256:6c04812f91d5e332112f51a74df6249a07443cac84d9408a4ee1e7c54c103658",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+        },
+        {
+          "evidence_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb8_mar2025#p005_c0006",
+          "text_sha256": "sha256:d52219caa1922666e5054e7ab101e994df6ecebe7816a3713f283c2f0e33fe99",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, featuring the letters \"MTA\" in a bold, sans-serif font inside a dark circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_0c2727e40e4e0fdc",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+      "local_observation_id": "entity_mta_cb9_jun2025",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "mta_only",
+      "identifying_text": "MTA \nThe MTA logo, consisting of the letters 'MTA' in white inside a black circle. \nMTA",
+      "label": "MTA",
+      "raw_text": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle.",
+      "payload": {
+        "entity_name": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025#p001_c0005",
+          "text_sha256": "sha256:6c04812f91d5e332112f51a74df6249a07443cac84d9408a4ee1e7c54c103658",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_1603d762bd29b5d9",
+      "source_id": "meeting_doc_164756",
+      "local_observation_id": "entity_meeting_doc_164756_mta",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority \nMetropolitan Transportation Authority",
+      "label": "Metropolitan Transportation Authority",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "entity_type": "agency",
+        "description": "North America's largest transportation network, serving a population of 15.3 million people across a 5,000-square-mile travel area"
+      },
+      "evidence": [
+        {
+          "evidence_id": "meeting_doc_164756#p032_c0002",
+          "text_sha256": "sha256:be4c03373e5f87db95666f0e3f37eab1896ae94cfba0f68d9689facecf6a9c72",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The Metropolitan Transportation Authority is North America's largest transportation network, serving a population of 15.3 million people across a 5,000-square-mile travel area surrounding New York City through Long Island, southeastern New York State, and Connecticut."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_197290ab432de0f3",
+      "source_id": "brt_bx6_cb9_may2022",
+      "local_observation_id": "entity_brt_bx6_cb9_mta",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority \nMTA",
+      "label": null,
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "brt_bx6_cb9_may2022#p001_c0005",
+          "text_sha256": "sha256:391ccae1265bd1fe7c5aa0edde7379059752507e601d9e622cf00f4324459461",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, which consists of the letters 'MTA' in a bold, sans-serif font inside a black circle."
+        },
+        {
+          "evidence_id": "brt_bx6_cb9_may2022#p001_c0001",
+          "text_sha256": "sha256:036c7d8d9b536dd4635d0fe171eee26bc9f78b9c12201a1d62dcf105b964b779",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "Bx6 Select Bus Service Project Update"
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_472e4c99ad8a5087",
+          "local_observation_id": "relation_brt_bx6_cb9_published_by_mta",
+          "relation_kind": "published_by",
+          "relation_family": "publication_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "source_brt_bx6_cb9_may2022",
+          "object_local_observation_id": "entity_brt_bx6_cb9_mta",
+          "evidence_ids": [
+            "brt_bx6_cb9_may2022#p001_c0005"
+          ]
+        },
+        {
+          "submission_id": "sub_9eabbf2f92024473",
+          "local_observation_id": "relation_brt_bx6_cb9_implemented_by_mta",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_brt_bx6_cb9_capital_improvements",
+          "object_local_observation_id": "entity_brt_bx6_cb9_mta",
+          "evidence_ids": [
+            "brt_bx6_cb9_may2022#p001_c0001",
+            "brt_bx6_cb9_may2022#p001_c0005"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_19cf97947d32f35f",
+      "source_id": "meeting_doc_40161",
+      "local_observation_id": "entity_mta_meeting_doc_40161",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "mta_only",
+      "identifying_text": "MTA \nMTA logo on podium sign and hoodie, MTA Honoring Garrett Goble \nMTA",
+      "label": "MTA",
+      "raw_text": "MTA logo on podium sign and hoodie, MTA Honoring Garrett Goble",
+      "payload": {
+        "entity_name": "MTA",
+        "entity_type": "agency",
+        "description": "Metropolitan Transportation Authority, organizer of the Garrett Goble memorial event"
+      },
+      "evidence": [
+        {
+          "evidence_id": "meeting_doc_40161#p001_c0001",
+          "text_sha256": "sha256:40cd4c929eade8b8919d1d6744da620af78c24bf2d66e77bdf5ea244d901b0f4",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "A group of people are gathered outdoors in front of a subway entrance. On the left, a large framed portrait of a smiling man, Garrett Goble, is displayed on an easel. The portrait includes the text \"G GOBLE\" and \"HERO\". A woman in a black blazer and jeans stands at a podium on the right, speaking into a microphone. The podium features a blue sign with the MTA logo and the text \"Honoring Garrett Goble\". Behind her, a green subway sign reads \"Flatbush Avenue\" and \"Elevator across Nostrand Av\". To the left of the speaker, a group of people stands, some wearing face masks. One man wears a blue tracksuit, another a black jacket, and a woman wears a black hoodie with \"MTA\" and a red \"2\" on it. A man in a black t-shirt with \"PRAY OBEY LOVE REPEAT\" is also visible. On the far right, a police officer in a blue uniform and face mask stands near the subway entrance. The background shows a city street with buildings and a cloudy sky."
+        },
+        {
+          "evidence_id": "meeting_doc_40161#p001_c0007",
+          "text_sha256": "sha256:c96cc546d7317404b2912a834149ec2cecd5e17b732323f445fc8e858651091b",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "MTA Honoring Garrett Goble"
+        },
+        {
+          "evidence_id": "meeting_doc_40161#p004_c0001",
+          "text_sha256": "sha256:014ebd2178d4650433d2ea667de0240482913e4f6914b3b6ec339d0d63bd933b",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "A group of approximately 12 people are gathered on a sidewalk for a commemorative event. In the foreground, a framed portrait of a smiling man with a beard and mustache, identified as Garrett Goble, is displayed on a wooden easel. The portrait includes the text 'G GOBLE' and 'HERO'. To the right of the easel, a blue sign on a stand reads 'MTA Honoring Garrett Goble'. The group consists of men and women of various ages, some wearing face masks and others not. They are standing in front of a building with large windows that reflect a repeating pattern of 'Welcome to HSBC Bank' signs. To the right, a green subway station sign for 'Flatbush Avenue Station' is visible, featuring the MTA logo, the numbers '2' and '5' in red and green circles respectively, and the text 'Elevator across N'. The scene is outdoors on a paved sidewalk under an overcast sky."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_216b6a838277e29f",
+      "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026",
+      "local_observation_id": "entity_mta_fordham",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMetropolitan Transportation Authority",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "entity_type": "agency",
+        "short_name": "MTA"
+      },
+      "evidence": [
+        {
+          "evidence_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026#p002_c0002",
+          "text_sha256": "sha256:6e94f7fb1b603c62f05010180124e239eba511f6650fff4a79bac7b8db5fd426",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "• On February 13th, Mayor Zohran Mamdani, Commissioner Mike Flynn, and MTA Chairman Janno Lieber announced the project restart • Critical project to deliver better and faster bus service for New Yorkers • Aiming to improve bus speeds by at least 20% on the corridor"
+        },
+        {
+          "evidence_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026#p002_c0005",
+          "text_sha256": "sha256:96ef14b99ba1c789e0020dcf1370c5b25f5abcbf68b68ca3e7afa455746ec5ef",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters \"MTA\" in a bold, sans-serif font inside a dark circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_24405db04d716bd0",
+      "source_id": "queens_proposed_final_plan_addendum_2024",
+      "local_observation_id": "entity_mta_publisher_addendum_2024",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "mta_only",
+      "identifying_text": "MTA \nMTA published the Queens Bus Network Redesign Proposed Final Plan Addendum \nMTA",
+      "label": "MTA",
+      "raw_text": "MTA published the Queens Bus Network Redesign Proposed Final Plan Addendum",
+      "payload": {
+        "agency_name": "MTA",
+        "entity_type": "transit_agency",
+        "publisher": true
+      },
+      "evidence": [
+        {
+          "evidence_id": "queens_proposed_final_plan_addendum_2024#p001_c0001",
+          "text_sha256": "sha256:74e916f626220b5f701189a05b4c5320635242f66285ae5a12a3df49423fba06",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters \"MTA\" in a bold, sans-serif font inside a white circle, is positioned in the top right corner of the image."
+        },
+        {
+          "evidence_id": "queens_proposed_final_plan_addendum_2024#p001_c0002",
+          "text_sha256": "sha256:7ea39be99b4e870b91328201898942019aa6351e49cc571acd03863afa302a95",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "Queens Bus Network Redesign"
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_275160bbef4aadee",
+      "source_id": "brt_bx6_cb2_edc_may2022",
+      "local_observation_id": "entity_mta_brt_bx6_cb2_edc_may2022",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "brt_bx6_cb2_edc_may2022#p001_c0005",
+          "text_sha256": "sha256:6c04812f91d5e332112f51a74df6249a07443cac84d9408a4ee1e7c54c103658",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_2c7d5f637c436025",
+      "source_id": "m60_sbs_125th_street",
+      "local_observation_id": "entity_m60_sbs_125th_mta",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nThe MTA logo, consisting of the letters 'MTA' inside a circle. \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA",
+      "raw_text": "The MTA logo, consisting of the letters 'MTA' inside a circle.",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "entity_type": "agency",
+        "acronym": "MTA"
+      },
+      "evidence": [
+        {
+          "evidence_id": "m60_sbs_125th_street#p001_c0004",
+          "text_sha256": "sha256:36283e00b68d879ff09323675f0edc0311e950506a6b0686ed3c526c53b2688a",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' inside a circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_2da0f940a801db3d",
+      "source_id": "jamaica_busway_monitoring_update_2022",
+      "local_observation_id": "entity_mta_source_2022",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMTA \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": "MTA",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "agency_name": "MTA",
+        "entity_type": "transit_authority",
+        "data_source": true
+      },
+      "evidence": [
+        {
+          "evidence_id": "jamaica_busway_monitoring_update_2022#p003_c0006",
+          "text_sha256": "sha256:5536f2f4027d959fcd6703c003482fdabe04450023f9545aeb61fff2b4ac1268",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "Source: MTA"
+        },
+        {
+          "evidence_id": "jamaica_busway_monitoring_update_2022#p004_c0004",
+          "text_sha256": "sha256:6c04812f91d5e332112f51a74df6249a07443cac84d9408a4ee1e7c54c103658",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_331e52d4ced22596",
+      "source_id": "2012_01_24_sbs_utica_merchants",
+      "local_observation_id": "entity_mta_2012_01_24",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA (Metropolitan Transportation Authority) \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA (Metropolitan Transportation Authority)",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency",
+        "description": "Operator of B46 bus route referenced in the Utica Avenue study"
+      },
+      "evidence": [
+        {
+          "evidence_id": "2012_01_24_sbs_utica_merchants#p004_c0001",
+          "text_sha256": "sha256:616a540c79b877e1c0652744d5ab050837e6d60e7a59d27a512bc10f6fe7bed0",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "B46 Bus Service"
+        },
+        {
+          "evidence_id": "2012_01_24_sbs_utica_merchants#p010_c0003",
+          "text_sha256": "sha256:4a57f5e46e751af4e568a298e90025c3687d5a1f4e04c41794b0baa18051df3b",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The diagram shows a blue and white bus with the MTA logo on its side. A yellow traffic light is positioned above the bus. A yellow cone-shaped beam of light originates from the bus and points towards the traffic light. Inside the cone, there is a red arrow pointing downwards, indicating the bus's priority. In the top left corner of the diagram, there is a white box with the text 'TSP' in black."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_6b3342274762b25f",
+          "local_observation_id": "relation_b46_local_operated_by_mta",
+          "relation_kind": "operated_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "route_b46_local_2012",
+          "object_local_observation_id": "entity_mta_2012_01_24",
+          "evidence_ids": [
+            "2012_01_24_sbs_utica_merchants#p004_c0003",
+            "2012_01_24_sbs_utica_merchants#p010_c0003"
+          ]
+        },
+        {
+          "submission_id": "sub_ab8dd398bd65a24d",
+          "local_observation_id": "relation_b46_limited_operated_by_mta",
+          "relation_kind": "operated_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "route_b46_limited_2012",
+          "object_local_observation_id": "entity_mta_2012_01_24",
+          "evidence_ids": [
+            "2012_01_24_sbs_utica_merchants#p004_c0003"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_392a96ce7a13e3c9",
+      "source_id": "buslane_enforcement_brochure",
+      "local_observation_id": "entity_buslane_brochure_mta",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "mta_only",
+      "identifying_text": "MTA \nThe City or MTA may operate bus lane cameras on any bus lanes to catch violators. \nMTA",
+      "label": "MTA",
+      "raw_text": "The City or MTA may operate bus lane cameras on any bus lanes to catch violators.",
+      "payload": {
+        "entity_name": "MTA",
+        "entity_type": "agency",
+        "description": "Metropolitan Transportation Authority; may operate bus lane cameras"
+      },
+      "evidence": [
+        {
+          "evidence_id": "buslane_enforcement_brochure#p002_c0014",
+          "text_sha256": "sha256:1e9e47bca67de2475a059ea5f918e4c7cdde69024a0da62dae71ba818afe02c7",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The City or MTA may operate bus lane cameras on any bus lanes to catch violators. NYC DOT posts signs along routes that have bus lane cameras as a warning for drivers. There is a 60-day grace period after bus lane cameras are first installed. After the grace period ends, motorists who block bus lanes will be subject to a fine of $50 for the first violation ."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_0a682863dbb8a3f7",
+          "local_observation_id": "relation_mta_operates_bus_lane_cameras",
+          "relation_kind": "operates",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_buslane_brochure_mta",
+          "object_local_observation_id": "claim_bus_lane_enforcement_methods",
+          "evidence_ids": [
+            "buslane_enforcement_brochure#p002_c0014"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_3c4044add1828d1c",
+      "source_id": "better_buses",
+      "local_observation_id": "entity_mta",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA)",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": null,
+      "payload": {
+        "entity_type": "transit_authority"
+      },
+      "evidence": [
+        {
+          "evidence_id": "better_buses#p001_b0001",
+          "text_sha256": "sha256:2e61bfba4267992a965aaf383369bd9841b3023373066892ad4931fe86c9e0d0",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "Better Buses Skip to main content NYC NYC Resources 311 Office of the Mayor Better Buses NYC DOT is committed to working with the MTA and NYPD to improve buses citywide, ensuring that New Yorkers have service that they can depend on. The Better Buses Action Plan is focused on improving bus speeds citywide by 25% and reversing downward bus ridership trends. This will be accomplished through NYC DOT projects using our bus priority toolkit, increased camera and NYPD enforcement of bus lanes, and service management initiatives and bus network redesigns by MTA. Download the Better Buses Action Plan (pdf) Better Buses Goals NYC DOT’s Bus Priority Toolkit Current Better Buses Projects Implemented Better Buses Projects Better Buses Goals The Better Buses Action Plan includes the following goals: Bus Priority Improve 5 miles of existing bus lanes each year Install 10–15 miles of new bus lanes each year Pilot up to 2 miles of physically separated bus lanes Implement NYC DOT street design projects that benefit 600,000 daily riders each year Technology Add 300 Transit Signal Priority (TSP) intersections per year Enforcement Expand bus lane camera enforcement Increased NYPD bus lane enforcement with seven dedicated tow truck teams Bus Stops Evaluate and improve bus stops Working with the MTA Support MTA Bus Network Redesign efforts with borough bus priority plans Press for all-door boarding, restarting the SBS program, and other improvements to bus operations NYC DOT’s Bus Priority Toolkit: New Bus Lane Bus lanes separate buses from general traffic, improving speed and reliability. They are typically located along the curb or “offset” from the curb, allowing the curb lane to be utilized for other purposes. Ensuring that bus lanes are not used by others is a challenge in New York City, so enforcement is crucial. Upgraded Bus Lane NYC DOT sometimes considers improving bus lanes to make them more effective. This may include extending hours, painting the lanes red, changing curbside lanes to offset lanes, or other measures. Potential Protected Bus Lane Surrounding a bus lane with a physical barrier makes it more difficult for other vehicles to illegally use the lane. This may improve the effectiveness of a bus lane where violations are rampant, but must be accompanied by measures that allow access to the curb for emergency vehicles. Bus Boarders Bus bulbs are permanent sidewalk extensions at bus stops that provide more space for waiting passengers and allow buses to save time by pulling up to the curb without leaving the travel lane. Durable recycled plastic “bus boarders” serve the same purpose, but do not require capital construction. Bus Queue Jump Signal In addition to corridor-wide Transit Signal Priority (TSP) treatments, dedicated bus signal phases are another way to use traffic signals to give buses priority through an intersection. These bus queue jump signals provide buses with a dedicated signal phase that allows them to bypass congested general traffic and get a head start. Traffic Flow Improvement Improving the general flow of traffic with signal timing adjustments or improved lane markings can also benefit buses. Curb Management Adequate and appropriate truck loading, passenger drop-off, and parking regulations can benefit bus operations by reducing double parking and the illegal use of bus lanes. Effective enforcement is also critical to curb management success. Pedestrian Safety Under Vision Zero, the City uses every tool at its disposal to improve the safety of our streets. Bus priority projects such as bus bulbs shorten pedestrian crossings and improve bus operations, and new crosswalks and median refuge islands can improve safety for all pedestrians, including bus riders accessing stops. Bus Stop Accessibility In addition to creating safer crossings, bus stops need to be accessible to everyone. This means that nearby sidewalks and pedestrian ramps should be present and in good condition. NYC DOT reviews and updates sidewalks and pedestrians ramps during bus priority projects. Turn Restrictions Limiting certain turns is another way that the City can increase safety for all users. In certain projects doing so also allows buses to avoid conflicts and move faster. Turn restrictions also benefit traffic flow. Busway Busways prioritize travel for buses and often trucks, with other motorized vehicles limited to local access. This treatment significantly reduces traffic volumes and congestion, improving bus speeds and reliability, while improving safety for all roadway users. Current Better Buses Projects Broadway, 69th Street to Roosevelt Avenue, Queens NYC DOT, in coordination with the MTA and the Port Authority of New York and New Jersey, is proposing an eastbound center-running bus lane on Broadway in Queens between 69th Street and Roosevelt Avenue. The bus lane will speed up bus service for approximately 9,000 daily riders on the Q70 SBS and provide improved transportation from LaGuardia Airport to the Jackson Heights – Roosevelt Avenue subway station and bus terminal. Broadway, 69th Street to Roosevelt Avenue - presented to Queens Community Board 3 in May 2026 (pdf) Lexington Avenue, 60th Street to 52nd Street, Manhattan NYC DOT proposes converting the existing curbside bus lane into an offset bus lane on this eight-block stretch. Moving the bus lane away from the curb, will reduce conflict between buses and other vehicles trying to access the curb, and improve bus operations. Lexington Avenue, 60th Street to 52nd Street - presented to Manhattan Community Board 8 in October 2025 (pdf) Lexington Avenue, 60th Street to 52nd Street - presented to Manhattan Community Board 6 in October 2025 (pdf) Lexington Avenue, 60th Street to 52nd Street - presented to Manhattan Community Board 5 in September 2025 (pdf) Marcy Avenue, Borinquen Place to Broadway, Brooklyn NYC DOT is proposing to install a bus priority lane along the three blocks of Marcy Avenue between Borinquen Place and Broadway. These three blocks host a confluence of three Williamsburg Bridge/Washington Plaza-bound bus routes: the B24, B60, and Q54, and each route experiences delays and slower speeds along this tail end stretch. These delays compound on top of delays earlier in the routes' journeys and result in buses arriving late to their terminal, delaying the next scheduled run. NYC DOT is proposing to install a bus priority lane along these three blocks of Marcy Avenue to help alleviate these delays. Marcy Avenue, Borinquen Place to Broadway - presented to Brooklyn Community Board 1 in September 2025 (pdf) Marcy Avenue, Borinquen Place to Broadway - presented to Brooklyn Community Board 1 in June 2025 (pdf) Madison Avenue Bus Improvement Project, Manhattan NYC DOT, in collaboration with MTA, is proposing bus priority improvements on Madison Avenue from East 23rd Street to East 42nd Street. The proposal aims to improve bus speeds and reliability for 92,000 daily bus riders on 34 local and express bus routes that traverse the corridor. Improvements include extending the existing double bus lanes on Madison Avenue north of East 42nd Street south to East 23rd Street, left turn bays at select cross streets, and curb regulation changes. Madison Avenue, East 23rd Street to East 42nd Street Bus Improvements - presented to Manhattan Community Board 6 in June 2025 (pdf) Madison Avenue, East 23rd Street to East 42nd Street Bus Improvements - presented to Manhattan Community Board 5 in May 2025 (pdf) Eastern Parkway from Schenectady Avenue to Ralph Avenue, Brooklyn NYC DOT, in collaboration with MTA, is proposing accessibility improvements along Eastern Parkway, from Schenectady Avenue to Ralph Avenue. The proposal aims to create ADA-accessible ramps and bus stops, as well as improve B14 reliability along Eastern Parkway. Eastern Parkway, Schenectady Avenue to Ralph Avenue - presented to Brooklyn Community Board 8 in April 2025 (pdf) Eastern Parkway, Schenectady Avenue to Ralph Avenue - presented to Brooklyn Community Board 9 in April 2025 (pdf) Eastern Parkway, Schenectady Avenue to Ralph Avenue - presented to Brooklyn Community Board 8 in March 2025 (pdf) 79th Street, Riverside Drive to FDR Drive, Manhattan NYC DOT is planning to install transit and pedestrian safety improvements along 79th Street from Riverside Drive to the FDR Drive as part of the 79th Street SBS Capital Project. This capital project follows up on NYC DOT's 2017 Street Improvement Project (SIP) that was implemented as part of the launch of the M79 Select Bus Service. Improvements made by this capital projects will include bus bulbs, upgraded bus stops, new bus pads, updated ADA elements, curb extensions, improved median pedestrian refuges, refurbished sidewalks, stormwater infiltration basins, and new landscaping. The safety benefits of the project will include increased pedestrian visibility and accessibility, shorter and safer pedestrian crossings, and slower and safer vehicle turns. The transit benefits of the projects include the provision for faster boarding and alighting times, improved bus reliability, and new bus stop amenities. 79th Street, Riverside Drive to FDR Drive - presented to Manhattan Community Board 7 in April 2025 (pdf) 79th Street, Riverside Drive to FDR Drive - presented to Manhattan Community Board 8 in April 2025 (pdf) Victory Boulevard from Bay Street to Wild Avenue, Staten Island NYC DOT and MTA seek to improve bus service and safety for all mode users on Victory Boulevard on Staten Island. Various treatments will be studied to find the best balance of all modes on these important connections across Staten Island. Victory Boulevard, Wild Avenue to Willowbrook Avenue - presented to Staten Island Community Board 2 in June 2025 (pdf) Victory Boulevard, Bay Street to Little Clove Road - presented to Staten Island Community Board 1 in May 2025 (pdf) Victory Boulevard, Bay Street to Wild Avenue - presented to Staten Island Community Board 1 in March 2025 (pdf) Broadway, 157th Steet to 220th Street, Manhattan NYC DOT is exploring a potential project on Broadway between 157th and 220th St in cooperation with MTA. This section of Broadway has been identified by the NYC Streets Plan. The study will identify ways to improve bus speeds and reliability on the corridor, as well as general safety and traffic flow improvements. Broadway, 157th Steet to 220th Street - presented to Manhattan Community Board 12 in March 2025 (pdf) 116th Street, Morningside Avenue to Pleasant Avenue, Manhattan NYC DOT is studying bus priority and pedestrian safety improvements on 116th Street, Manhattan Avenue, Morningside Avenue and Pleasant Avenue in Manhattan. The 116th Street Study Area serves 10 bus routes (M3, M7, M102, M116, BxM1, BxM6, BxM7, BxM8, BxM9, BxM11), which carry 65,000+ daily riders, with connections to the 2, 3, 6, B, C trains and seven perpendicular bus routes. The study area experiences slow bus speeds, with buses traveling less than 4 mph in some segments. Weekday congestion causes 785 hours of delay to M116 passengers daily. 116th Street is a Vision Zero Priority Corridor, within a Priority Youth Injury Area and Senior Area. NYC DOT aims to improve safety through organizing the roadway, improving visibility and predictability, slowing turning vehicles, and creating safer crossings. 116th Street, Morningside Avenue to Pleasant Avenue - presented to Manhattan Community Board 11 in June 2025 (pdf) 116th Street, Morningside Avenue to Pleasant Avenue - presented to Manhattan Community Board 10 in June 2025 (pdf) 116th Street, Morningside Avenue to Pleasant Avenue - presented to Manhattan Community Board 9 in June 2025 (pdf) 116th Street, Morningside Avenue to Pleasant Avenue - presented to Manhattan Community Board 11 in May 2025 (pdf) 116th Street, Morningside Avenue to Pleasant Avenue - presented to Manhattan Community Board 10 in May 2025 (pdf) 116th Street, Morningside Avenue to Pleasant Avenue - presented to Manhattan Community Board 11 in March 2025 (pdf) 116th Street, Morningside Avenue to Pleasant Avenue - presented to Manhattan Community Board 10 in February 2025 (pdf) 116th Street, Morningside Avenue to Pleasant Avenue - presented to Manhattan Community Board 9 in February 2025 (pdf) Linden Boulevard, Fountain Avenue to Conduit Avenue, Brooklyn NYC DOT is proposing bus priority and traffic safety improvements on Linden Boulevard in Brooklyn and Queens from Fountain Avenue to Conduit Avenue. This project seeks to improve bus service for 38,000 bus passengers using four bus routes on this Vision Zero corridor. Linden Boulevard, Fountain Avenue to Conduit Avenue - presented to Brooklyn Community Board 5 in April 2026 (pdf) Linden Boulevard, Fountain Avenue to Conduit Avenue - presented to Brooklyn Community Board 5 in January 2025 (pdf) 34th Street Enhanced Bus Priority, Manhattan NYC DOT, in collaboration with MTA, is exploring bus and pedestrian safety enhancements on 34th Street. Located within the Congestion Pricing tolling zone, 34th Street has been identified as an important corridor for facilitating safe and easy travel within the Central Business District. The project aims to improve bus speeds and reliability, and safety for the corridor's thousands of daily bus riders and pedestrians. Learn more about the 34th Street Busway at nyc.gov/34Busway . 34th Street Enhanced Bus Priority - presented to Manhattan Community Board 6 in June 2025 (pdf) 34th Street Enhanced Bus Priority - presented to Manhattan Community Board 4 in May 2025 (pdf) 34th Street Enhanced Bus Priority - presented to Manhattan Community Board 5 in May 2025 (pdf) 34th Street Enhanced Bus Priority - presented to Manhattan Community Board 6 in February 2025 (pdf) 34th Street Enhanced Bus Priority - presented to Manhattan Community Board 5 in January 2025 (pdf) 34th Street Enhanced Bus Priority - presented to Manhattan Community Board 4 in January 2025 (pdf) Dekalb & Lafayette Avenues, Brooklyn NYC DOT and MTA seek to improve B38 bus service and pedestrian and cyclist safety on Dekalb and Lafayette Avenues. Various treatments will be studied to find the best balance of all modes on these important connections across Brooklyn and into Queens. Dekalb & Lafayette Avenues - presented to Brooklyn Community Board 2 in December 2024 (pdf) Dekalb & Lafayette Avenues - presented to Brooklyn Community Board 3 in December 2024 (pdf) Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements, Brooklyn NYC DOT, in collaboration with the MTA, is proposing bus priority and safety improvements on Bay Parkway from Avenue J to Shore Parkway as well as Cropsey Avenue from Bay Parkway to 26th Avenue. This project aims to improve bus service and reliability for 35,000 daily bus riders on bus routes along the two corridors. These corridors were identified as a priority in the NYC Streets Plan and Brooklyn Bus Network Redesign, and Bay Parkway is a Vision Zero priority corridor. Bay Parkway and Cropsey Avenue - presented to Brooklyn Community Board 12 in June 2025 (pdf) Bay Parkway and Cropsey Avenue - presented to Brooklyn Community Board 11 in June 2025 (pdf) Bay Parkway and Cropsey Avenue - presented to Brooklyn Community Board 12 in January 2025 (pdf) Bay Parkway and Cropsey Avenue - presented to Brooklyn Community Board 11 in November 2024 (pdf) Grand Street/Grand Avenue, Metropolitan Avenue to Queens Boulevard, Queens NYC DOT, in collaboration with MTA, is proposing safety and bus priority improvements on Grand Street/Grand Avenue between Metropolitan Avenue and Queens Boulevard. Grand Street/Grand Avenue is a Vision Zero priority corridor that serves over 51,000 daily bus riders on the Q54, Q58, and Q59 bus routes. Grand Street/Grand Avenue, Metropolitan Avenue to Queens Boulevard - presented to Queens Community Board 5 in December 2024 (pdf) Grand Street/Grand Avenue, Metropolitan Avenue to Queens Boulevard - presented to Queens Community Board 4 in November 2024 (pdf) Grand Street/Grand Avenue, Metropolitan Avenue to Queens Boulevard - presented to Brooklyn Community Board 1 in November 2024 (pdf) Woodhaven Boulevard, Queens Boulevard to 107th Avenue, Queens NYC DOT is proposing transit and pedestrian safety improvements along Woodhaven Boulevard in Queens, from Queens Boulevard to 107th Avenue. The proposed improvements would be installed as part of three separate capital projects, beginning with the Woodhaven Boulevard Phase B capital project (from Union Turnpike to 107th Avenue), which is estimated to start construction in 2026. Improvements made by these capital projects will include curb extensions, median widenings, raised crosswalks, and new landscaping. The safety benefits of the projects include increased pedestrian visibility and accessibility, shorter and safer pedestrian crossings, and slower and safer vehicle turns. The transit benefits of the projects include the provision for faster boarding and alighting times, improved bus reliability, and new bus stop amenities. Woodhaven Boulevard, Queens Boulevard to 107th Avenue - presented to Queens Community Board 9 in December 2024 (pdf) Woodhaven Boulevard, Queens Boulevard to 107th Avenue - presented to Queens Community Board 10 in December 2024 (pdf) Woodhaven Boulevard, Queens Boulevard to 107th Avenue - presented to Queens Community Board 5 in September 2024 (pdf) Woodhaven Boulevard, Queens Boulevard to 107th Avenue - presented to Queens Community Board 6 in September 2024 (pdf) Tremont Avenue Bus Priority Project, the Bronx NYC DOT, in cooperation with MTA, is proposing bus priority improvements on Tremont Avenue in the Bronx to improve travel speed and reliability for nearly 34,000 daily bus riders on the Bronx's 5th busiest bus route. Learn more about the Tremont Avenue Busway at nyc.gov/TremontBusway . Tremont Avenue, University Avenue to Bronx River Parkway - Community Advisory Board Meeting in March 2025 (pdf) Tremont Avenue, University Avenue to Bronx River Parkway - presented to Bronx Community Board 6 in February 2025 (pdf) Tremont Avenue, University Avenue to Bronx River Parkway - presented to Bronx Community Board 6 in November 2024 (pdf) Tremont Avenue, University Avenue to Bronx River Parkway - presented to Bronx Community Board 5 in November 2024 (pdf) Tremont Avenue, University Avenue to Bronx River Parkway - Community Advisory Board Meeting in July 2024 (pdf) Tremont Avenue, University Avenue to Bronx River Parkway - presented to Bronx Community Board 6 in June 2024 (pdf) Tremont Avenue, University Avenue to Bronx River Parkway - presented to Bronx Community Board 5 in June 2024 (pdf) Tremont Avenue, University Avenue to Bronx River Parkway - presented to Bronx Community Board 5 in March 2024 (pdf) Tremont Avenue, University Avenue to Bronx River Parkway - presented to Bronx Community Board 6 in February 2024 (pdf) Tremont Avenue, University Avenue to Boston Road - Community Advisory Board Meeting 1 in December 2022 (pdf) Flatbush Avenue Bus Priority, Brooklyn NYC DOT, in cooperation with MTA, is investigating bus priority and pedestrian safety improvements on Flatbush Avenue between Tillary Street and Avenue V. Flatbush Avenue is one of the future bus priority corridors identified at the NYC/MTA Transit Improvement Summit and is a priority corridor in the NYC Streets Plan, as well as a Vision Zero priority corridor for safety improvements. Informed by a robust community outreach process, the project will explore and implement solutions to improve bus speeds and pedestrian safety. Flatbush Avenue, State Street to Grand Army Plaza - Street Design Checklist (pdf) Flatbush Avenue Bus Priority - Major Transportation Project Briefing - April 2026 (pdf) Flatbush Avenue Bus Priority - presented to Brooklyn Community Board 6 in October 2025 (pdf) Flatbush Avenue Bus Priority - presented to Brooklyn Community Board 8 in October 2025 (pdf) Flatbush Avenue Bus Priority - presented to Brooklyn Community Board 2 in September 2025 (pdf) Flatbush Avenue Bus Priority - Community Advisory Board Meeting in July 2025 (pdf) Flatbush Avenue Bus Priority - presented to Brooklyn Community Board 8 in June 2025 (pdf) Flatbush Avenue Bus Priority - presented to Brooklyn Community Board 6's Transportation Committee in June 2025 (pdf) Flatbush Avenue Bus Priority - presented to Brooklyn Community Board 2 in June 2025 (pdf) Flatbush Avenue Bus Priority - presented to Brooklyn Community Board 6 in June 2024 (pdf) Flatbush Avenue Bus Priority - presented to Brooklyn Community Board 8 in June 2024 (pdf) Flatbush Avenue Bus Priority - presented to Brooklyn Community Board 2 in June 2024 (pdf) Flatbush Avenue Bus Priority - Community Advisory Board Meeting in June 2024 (pdf) Flatbush Avenue Bus Priority - presented to Brooklyn Community Board 14 Transportation Committee in January 2023 (pdf) Flatbush Avenue Bus Priority - Community Advisory Board Meeting in November 2022 (pdf) Flatbush Avenue Bus Priority - presented to Brooklyn Community Board 9 Transportation Committee in September 2022 (pdf) Flatbush Avenue Bus Priority - June 2022 Kickoff Meeting (pdf) Fordham Road, Major Deegan Expressway to Boston Road, the Bronx NYC DOT is investigating transit improvements along Fordham Road between the Major Deegan Expressway and Boston Road. Fordham Road is a vital crosstown Bronx corridor. Nine bus routes (Bx9, Bx12 SBS/Local, Bx17, Bx22, Bx34, Bee-Line 60-62 buses) carry 93,700 daily riders, with connections to the A, B/D, 1, 2/5, 4, and 6 subways, and Metro North Harlem, Hudson, & New Haven Lines. In 2008, NYC DOT and MTA launched the first Select Bus Service (SBS) route on the Bx12, which included curbside bus lanes and off board fare payment. Between 2008 and 2014, Bx12 bus speeds and ridership increased. In recent years, bus speeds have declined, which has led to long, unreliable commutes and declining ridership. NYC DOT will evaluate a range of potential design improvements to improve bus speeds and reliability, while also improving curb management and traffic safety. Fordham Road, Sedgwick Avenue to Bronx River Parkway - presented to Bronx Community Board 6 in May 2026 (pdf) Fordham Road, Sedgwick Avenue to Bronx River Parkway - presented to Bronx Community Board 7 in May 2026 (pdf) Fordham Road, Sedgwick Avenue to Bronx River Parkway - presented to Bronx Community Board 5 in May 2026 (pdf) Fordham Road, Inwood Bus Priority - presented to Bronx Community Board 6 in June 2023 (pdf) Fordham Road, Inwood Bus Priority - presented to Bronx Community Board 5 in June 2023 (pdf) Fordham Road, Inwood Bus Priority - presented to Bronx Community Board 11 in June 2023 (pdf) Fordham Road, Inwood Bus Priority - presented to Bronx Community Board 7 in June 2023 (pdf) Fordham Road, Inwood Bus Priority - presented to Fordham Road Community Advisory Board in May 2023 (pdf) Fordham Road, Inwood Bus Priority - presented to Fordham Road Community Advisory Board in March 2022 (pdf) Fordham Road, Major Deegan Expressway to Boston Road – presented at a public workshop in June 2021 (pdf) Fordham Road, Major Deegan Expressway to Boston Road – presented to Fordham Road Community Advisory Board in February 2021 (pdf) Fordham Road, Major Deegan Expressway to Boston Road - presented to Fordham Road Community Advisory Board in January 2021 (pdf) Home Better Buses Busways About Select Bus Service Select Bus Service Features Paying Your Fare Bus Lane Rules Select Bus Service Routes 125th Street–LaGuardia Airport 14th Street 23rd Street 34th Street 79th Street 86th Street First & Second Avenues Fordham Road & Pelham Parkway Hylan Boulevard Nostrand Avenue & Rogers Avenues South Bronx Southern Brooklyn The Bronx-Flushing-Jamaica Utica Avenue Webster Avenue Woodhaven & Cross Bay Boulevards Woodside–Jackson Heights Airport Connector Studies Contact Us Translate Page Copyright The City of New York Contact Us Privacy Policy Terms of Use"
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_416bfd9959e38421",
+      "source_id": "flatbush_ave_cb6_jun2025",
+      "local_observation_id": "entity_flatbush_ave_cb6_mta",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "flatbush_ave_cb6_jun2025#p001_c0005",
+          "text_sha256": "sha256:3c08beb384e4c34462aa3b88819c6736acfdfab90774fe909ccd63c260502a5d",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in a stylized font inside a circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_463e14c50f4ec9bc",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb9_feb2025",
+      "local_observation_id": "entity_mta_cb9_feb2025",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMTA logo - The MTA logo, consisting of the letters 'MTA' in white inside a black circle. \nMetropolitan Transportation Authority (MTA) \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": "MTA logo - The MTA logo, consisting of the letters 'MTA' in white inside a black circle.",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority (MTA)",
+        "entity_type": "agency",
+        "acronym": "MTA",
+        "description": "Transit authority referenced as a partner in the Bus Priority Review presentation"
+      },
+      "evidence": [
+        {
+          "evidence_id": "116_st_morningside_ave_pleasant_ave_cb9_feb2025#p002_c0004",
+          "text_sha256": "sha256:6c04812f91d5e332112f51a74df6249a07443cac84d9408a4ee1e7c54c103658",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_5ae17d62145d7e3d",
+          "local_observation_id": "relation_mta_has_partner_project",
+          "relation_kind": "has_partner",
+          "relation_family": "partnership_engagement",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_116th_st_bus_priority_review_cb9_feb2025",
+          "object_local_observation_id": "entity_mta_cb9_feb2025",
+          "evidence_ids": [
+            "116_st_morningside_ave_pleasant_ave_cb9_feb2025#p002_c0004"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_5349270c43b264c0",
+      "source_id": "open_data_plan_2024_update",
+      "local_observation_id": "entity_mta_2024_open_data",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nTHE METROPOLITAN TRANSPORTATION AUTHORITY OPEN DATA PLAN 2024 ANNUAL UPDATE \nMetropolitan Transportation Authority",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": "THE METROPOLITAN TRANSPORTATION AUTHORITY OPEN DATA PLAN 2024 ANNUAL UPDATE",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "short_name": "MTA",
+        "entity_type": "agency",
+        "description": "Public transportation authority for New York State, publisher of the Open Data Plan 2024 Annual Update"
+      },
+      "evidence": [
+        {
+          "evidence_id": "open_data_plan_2024_update#p001_c0002",
+          "text_sha256": "sha256:53fba194a3413ad3363f1345f36512f7340b3031bc4e0183439818ee25ad03c6",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "THE METROPOLITAN TRANSPORTATION AUTHORITY OPEN DATA PLAN 2024 ANNUAL UPDATE"
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_0c2729c636d1d0a3",
+          "local_observation_id": "rel_mta_publishes_open_data_plan",
+          "relation_kind": "publishes",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "source_open_data_plan_2024_update",
+          "evidence_ids": [
+            "open_data_plan_2024_update#p001_c0002"
+          ]
+        },
+        {
+          "submission_id": "sub_38230dedf1bc5e3d",
+          "local_observation_id": "rel_mta_releases_hourly_ridership_datasets",
+          "relation_kind": "releases",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_hourly_subway_bus_ridership_release",
+          "evidence_ids": [
+            "open_data_plan_2024_update#p003_c0004"
+          ]
+        },
+        {
+          "submission_id": "sub_43221cff326364b9",
+          "local_observation_id": "rel_mta_plans_operating_budget_release",
+          "relation_kind": "plans",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_operating_budget_data_planned_q1_2024",
+          "evidence_ids": [
+            "open_data_plan_2024_update#p006_c0005"
+          ]
+        },
+        {
+          "submission_id": "sub_6cc411af8d0f419d",
+          "local_observation_id": "rel_mta_releases_20yr_needs_datasets",
+          "relation_kind": "releases",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_20_year_needs_assessment_datasets_release",
+          "evidence_ids": [
+            "open_data_plan_2024_update#p003_c0006"
+          ]
+        },
+        {
+          "submission_id": "sub_6f5079a6becb8635",
+          "local_observation_id": "rel_mta_launches_data_analytics_blog",
+          "relation_kind": "launches",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "entity_mta_data_analytics_blog",
+          "evidence_ids": [
+            "open_data_plan_2024_update#p004_c0006"
+          ]
+        },
+        {
+          "submission_id": "sub_72488dae7e6c1cea",
+          "local_observation_id": "rel_open_data_act_has_event_signing",
+          "relation_kind": "has_timeline_event",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_mta_open_data_act_signed",
+          "evidence_ids": [
+            "open_data_plan_2024_update#p002_c0002"
+          ]
+        },
+        {
+          "submission_id": "sub_787c26f71540584d",
+          "local_observation_id": "rel_mta_publishes_user_personas",
+          "relation_kind": "releases",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_open_data_user_personas_published",
+          "evidence_ids": [
+            "open_data_plan_2024_update#p004_c0003"
+          ]
+        },
+        {
+          "submission_id": "sub_dfd525e9ab3f71e8",
+          "local_observation_id": "rel_mta_releases_sir_datasets",
+          "relation_kind": "releases",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_staten_island_railway_datasets_release",
+          "evidence_ids": [
+            "open_data_plan_2024_update#p003_c0008"
+          ]
+        },
+        {
+          "submission_id": "sub_e190aa9342d9ea63",
+          "local_observation_id": "rel_mta_operates_metrics_site",
+          "relation_kind": "operates",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "entity_metrics_mta_info",
+          "evidence_ids": [
+            "open_data_plan_2024_update#p004_c0007"
+          ]
+        },
+        {
+          "submission_id": "sub_e72a4a716f97d2f4",
+          "local_observation_id": "rel_mta_plans_congestion_pricing_data",
+          "relation_kind": "plans",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2024_open_data",
+          "object_local_observation_id": "event_congestion_pricing_data_planned",
+          "evidence_ids": [
+            "open_data_plan_2024_update#p006_c0007"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_53ac8a523791c9a9",
+      "source_id": "busway_34thstreet",
+      "local_observation_id": "entity_mta_on_34th_busway",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA on 34th Street Busway \nMTA bus schedules, fare collection machines, fare enforcement, or general MTA issues (e.g., MetroCard, OMNY, subway service) please contact the MTA online or call 511 \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA on 34th Street Busway",
+      "raw_text": "MTA bus schedules, fare collection machines, fare enforcement, or general MTA issues (e.g., MetroCard, OMNY, subway service) please contact the MTA online or call 511",
+      "payload": {
+        "agency_name": "MTA",
+        "entity_name": "Metropolitan Transportation Authority",
+        "entity_type": "transit_authority",
+        "role": "partner_agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "busway_34thstreet#p001_b0001",
+          "text_sha256": "sha256:40a9d2ad1b4631acd137fef0f12587838a77df969f8ba35c77ab6c5970296569",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "34th Street Busway Skip to main content NYC NYC Resources 311 Office of the Mayor Busways 34th Street Busway How to Use the Busway | FAQ | Community Outreach | MTA Bus Schedule The 34th Street Busway in Manhattan aims to increase bus speeds and reliability for over 28,000 daily bus riders on the M34/M34A and numerous express buses, improve truck movement and deliveries to local businesses, and make the street safer for pedestrians. Busways in NYC have improved bus speeds by up to 60% and decreased pedestrian and cyclist injuries by up to 45%. The 34th Street Busway will be 1.1 miles in both directions between Ninth Avenue and Third Avenue. Video description: Clips and animations of busways and bus lanes in New York City. How to Use the 34th Street Busway The busway will be in effect every day from 6am to 10pm. Download the How to Use the 34th Street Busway brochure (pdf) Every day from 6am to 10pm: Only buses, trucks with more than two axles or six or more wheels, Access-A-Ride vans, and emergency vehicles may travel all the way through, eastbound from Ninth Avenue to Third Avenue, and westbound from Third Avenue to Ninth Avenue. Passenger vehicles, including for-hire vehicles, may turn onto the busway from a side street but must make the next available right turn to leave the busway. Passenger vehicles, including for-hire vehicles, may drop off and pick up all along the busway according to posted parking regulations. No vehicles may turn left from the busway, except for authorized vehicles. Curb access will be allowed along the entire busway. Follow rules on parking signs. Overnight from 10pm to 6am: Busway regulations are not in effect. All vehicles may drive all the way through 34th Street and may make left and right turns unless otherwise posted. Curb access will be allowed along the entire busway. Follow rules on parking signs. How to Reach Your Block Along the Busway The maps below show drivers how to reach their desired block when the 34th Street Busway is in effect. Green arrows show permitted route to enter and turn onto. Blue arrows indicate when drivers must turn to exit. Driving Eastbound: If you enter 34th Street from Ninth or Eighth Avenue, you must turn right to exit on Fifth Avenue If you enter 34th Street from Fifth or Madison Avenue, you must turn right to exit on Park Avenue If you enter 34th Street from Park Avenue, you must turn right to exit on Lexington Avenue Driving Westbound: If you enter 34th Street from Third or Lexington Avenue, you must turn right to exit on Park Avenue If you enter 34th Street from Park Avenue, you must turn right to exit on Madison Avenue If you enter 34th Street from Madison or Fifth Avenue, you must turn right to exit on Eighth Avenue Busway Signage and Street Markings Where applicable, the beginning and end of busway blocks will be painted red with \"BUS TRUCK ONLY\" white markings, so drivers know when they are turning onto the busway. Signage will mark the beginning and entrances to the busway, and signage will direct local access drivers to the appropriate right turns off of the busway. Busway markings on 181st Street Frequently Asked Questions Will passenger vehicles, including for-hire vehicles, be allowed on the busway? Yes, all passenger and for-hire vehicles will be allowed to enter the 34th Street Busway to access any block. Vehicles may turn onto the busway from a side street, then must make the next available right turn. How will I know the busway rules when I am driving on 34th Street? There will be red paint on the street whenever you turn onto the busway. There will also be signage posted along 34th Street and intersecting streets that explain the required turns and regulations. Will parking be allowed on the busway? Yes, parking will be allowed on the busway. Follow the posted parking regulations. Where can I be dropped off or picked up? Pickups, drop-offs, truck loading and parking will be allowed throughout 34th Street. Drivers are responsible for following traffic rules and all posted signage. If I cannot drive all the way down 34th Street, what other routes may I use? If you are traveling westbound, you can drive on 31st Street, 35th Street, 37th Street, or other routes. If you are traveling eastbound, you can drive on 30th Street, 36th Street, 38th Street, or other routes. Which vehicles are considered trucks? A truck is any vehicle designed to transport property that has more than two axles or six or more tires. Why will trucks be allowed? 34th Street is a designated truck route. Allowing trucks on the busway helps to limit through truck traffic on side streets. Where will trucks be allowed to load and unload on the busway? Curb access will be allowed throughout the busway. Review a map of loading zones for commercial deliveries How is a busway enforced? NYPD traffic agents and automated cameras enforce regulations by giving warnings and summonses. Camera violations incur a $50 fine for a first violation and up to $250 for the fifth or subsequent violation. NYPD bus lane moving violations are $150. Community Outreach NYC DOT and MTA conducted numerous meetings and events with elected officials, community boards, local businesses, shoppers, community stakeholders, bus riders, and members of the public. Feedback from these engagements helped shape the final busway. 34th Street community board presentations Contact If you have questions or comments about MTA bus schedules , fare collection machines, fare enforcement, or general MTA issues (e.g., MetroCard, OMNY, subway service) please contact the MTA online or call 511. If you have a transportation-related problem, comment, or question about the 34th Street Busway, contact the NYC DOT Commissioner online . Home Better Buses Busways About Select Bus Service Select Bus Service Features Paying Your Fare Bus Lane Rules Select Bus Service Routes 125th Street–LaGuardia Airport 14th Street 23rd Street 34th Street 79th Street 86th Street First & Second Avenues Fordham Road & Pelham Parkway Hylan Boulevard Nostrand Avenue & Rogers Avenues South Bronx Southern Brooklyn The Bronx-Flushing-Jamaica Utica Avenue Webster Avenue Woodhaven & Cross Bay Boulevards Woodside–Jackson Heights Airport Connector Studies Contact Us Translate Page Copyright The City of New York Contact Us Privacy Policy Terms of Use"
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_53b563dd01136d2d",
+      "source_id": "tsp_report_2017",
+      "local_observation_id": "entity_mta_tsp_2017",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority",
+      "label": null,
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "short_name": "MTA",
+        "entity_type": "transit authority"
+      },
+      "evidence": [
+        {
+          "evidence_id": "tsp_report_2017#p003_c0002",
+          "text_sha256": "sha256:e4b3c758f3ce1c576549217a8c422533406ce69ddb63d8053328ffa7fcec7b6d",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The New York City Department of Transportation (NYC DOT) and the Metropolitan Transportation Authority (MTA) are working to improve bus service in New York City. Transit Signal Priority (TSP) is a method used to coordinate transit vehicles and traffic signals to reduce the time buses are stopped at traffic lights along a corridor and therefore improve bus travel times."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_28e1c630cb2220a0",
+          "local_observation_id": "rel_nycdot_mta_partnership_tsp",
+          "relation_kind": "partner",
+          "relation_family": null,
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "entity_nyc_dot_tsp_2017",
+          "object_local_observation_id": "entity_mta_tsp_2017",
+          "evidence_ids": [
+            "tsp_report_2017#p003_c0002",
+            "tsp_report_2017#p003_c0006"
+          ]
+        },
+        {
+          "submission_id": "sub_5611c5802216d795",
+          "local_observation_id": "rel_mta_partner_tsp_program",
+          "relation_kind": "partner_agency",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_tsp_2017",
+          "object_local_observation_id": "project_tsp_program_2017",
+          "evidence_ids": [
+            "tsp_report_2017#p003_c0002",
+            "tsp_report_2017#p003_c0006"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_59553cf61b83d7fd",
+      "source_id": "brt_flushing_jamaica_oct2016",
+      "local_observation_id": "entity_brt_flushing_jamaica_oct2016_mta",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMetropolitan Transportation Authority",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "entity_type": "agency",
+        "description": "13 MTA bus routes use Main Street near Roosevelt Avenue"
+      },
+      "evidence": [
+        {
+          "evidence_id": "brt_flushing_jamaica_oct2016#p003_c0002",
+          "text_sha256": "sha256:ea1332aea10e1286011c4d43da00fa3ba071dce31c6034e8939470f4ddfc8ae5",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "• 13 MTA bus routes use Main Street near Roosevelt Avenue • More than 35,000 bus to subway transfers from these buses to 7 train – largest volume of bus to subway transfers of any station in the city"
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_5b9e0118408d4b24",
+      "source_id": "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025",
+      "local_observation_id": "entity_mta_better_buses_cb1_marcy_jun2025",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) - Better Buses \nMetropolitan Transportation Authority",
+      "label": "Metropolitan Transportation Authority (MTA) - Better Buses",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "short_name": "MTA",
+        "entity_type": "agency",
+        "description": "Presenting agency (Better Buses program) for the Marcy Avenue Bus Priority Street Improvement Project to Brooklyn Community Board 1, June 2025"
+      },
+      "evidence": [
+        {
+          "evidence_id": "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p001_c0006",
+          "text_sha256": "sha256:5c41829b84fc1f12a0a2921f9f1704d2b53024d2d7bdfa2e87b5aad19c76ecf5",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "BETTERBUSES"
+        },
+        {
+          "evidence_id": "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p003_c0010",
+          "text_sha256": "sha256:3c08beb384e4c34462aa3b88819c6736acfdfab90774fe909ccd63c260502a5d",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in a stylized font inside a circle."
+        },
+        {
+          "evidence_id": "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p003_c0011",
+          "text_sha256": "sha256:cbe3880cc0fd283a4ddd6452d41da518db2a00d5dd421c5c2dd7f92f34be54ce",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green."
+        },
+        {
+          "evidence_id": "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p005_c0006",
+          "text_sha256": "sha256:e532d060809a661bd36cb3f39e656ecb16e2edfcfe51c75abafd581dac1801ab",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The logo for the Metropolitan Transportation Authority (MTA), featuring the letters 'MTA' in a bold, sans-serif font inside a dark circle."
+        },
+        {
+          "evidence_id": "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p005_c0007",
+          "text_sha256": "sha256:f880284ac4a861799515150774f2d9abcef4eaecb1c64a0052b86f7025bf80f5",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The logo for 'BETTERBUSES', with the word 'BETTER' in blue and 'BUSES' in green, separated by a stylized graphic of a bus."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_604688b0c658ceb8",
+      "source_id": "brt_south_brooklyn_b82_dec2017",
+      "local_observation_id": "entity_metropolitan_transportation_authority_brt_south_brooklyn",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMTA logo \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": "MTA logo",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "entity_type": "agency",
+        "acronym": "MTA"
+      },
+      "evidence": [
+        {
+          "evidence_id": "brt_south_brooklyn_b82_dec2017#p001_c0004",
+          "text_sha256": "sha256:844b6ae9bf94ef63fe4bcc835e04205e11de920abaf2208ab04578962ed2521b",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The logo for the Metropolitan Transportation Authority (MTA), featuring the letters \"MTA\" inside a circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_635920d1a9d0f975",
+      "source_id": "brt_woodhaven_newsletter2_spring2016",
+      "local_observation_id": "entity_mta_woodhaven_newsletter2",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "mta_only",
+      "identifying_text": "MTA \nMTA",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "brt_woodhaven_newsletter2_spring2016#p001_c0004",
+          "text_sha256": "sha256:6e0a3559e60558cca95ac974797cad39cbba86011e831e618670e9a9cec6ff05",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "NYC DOT and the MTA have worked together to incorporate over two years of community feedback to present a redesigned plan for the Woodhaven / Cross Bay Boulevard Q52/Q53 Select Bus Service project that will bring high-quality transit service to Queens and a safer and more efficient street for all users. A new phased implementation plan that brings the benefits of SBS sooner with updated street and intersection designs followed by a longer-term capital project, will greatly improve the pedestrian, bus riding, and driving experience along the corridor."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_64497e813e8b4583",
+          "local_observation_id": "relation_mta_implements_project_spring2016",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_woodhaven_cross_bay_q52_q53_sbs_spring2016",
+          "object_local_observation_id": "entity_mta_woodhaven_newsletter2",
+          "evidence_ids": [
+            "brt_woodhaven_newsletter2_spring2016#p001_c0004"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_639e28b4f49c9400",
+      "source_id": "brt_woodhaven_implementation_update_2017",
+      "local_observation_id": "entity_mta_woodhaven_2017",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "mta_only",
+      "identifying_text": "MTA",
+      "label": null,
+      "raw_text": null,
+      "payload": {
+        "entity_name": "MTA",
+        "entity_type": "agency",
+        "description": "MTA buses use the bus lane"
+      },
+      "evidence": [
+        {
+          "evidence_id": "brt_woodhaven_implementation_update_2017#p001_c0010",
+          "text_sha256": "sha256:c3f7b10b6ae8e5d09dd2507e23df28052ee3e9136efbc96237b0d349abc4a767",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "• Only emergency vehicles and buses (MTA, school, charter) can drive in bus lanes when in effect. All vehicles may drive in them at other times. • Unless otherwise restricted, all vehicles may enter a bus lane at all times to: » Make a right turn at the next intersection » Access a driveway within 200 feet of entering the bus lane » Enter a curbside parking space across the bus lane » Quickly pick up or drop off passengers, but not goods • Enforcement: » If you drive, park, or stand in a bus lane during its posted hours of operation, you may face fines ranging from $115 to $150 » Enforced by NYPD and by bus lane cameras"
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_65828cdedd1a7ecf",
+      "source_id": "broadway_157_st_220_st_cb12_mar2025",
+      "local_observation_id": "entity_mta_broadway_bus_safety_mar2025",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency",
+        "description": "MTA bus routes operate on Broadway corridor"
+      },
+      "evidence": [
+        {
+          "evidence_id": "broadway_157_st_220_st_cb12_mar2025#p004_c0002",
+          "text_sha256": "sha256:78e3b8b1140990eb4472602eb306e38ce3d6fa8f13c8e478f13b88fe96947e39",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "• 30,000 riders on 5 MTA bus routes (May 2024) • Slow bus speeds between 4 and 7 mph for most of the corridor throughout day • NYC Streets Plan – Bus Priority corridor – Tier 1 Priority Investment Area • Transit-dependent population: – 76% of households do not have access to a vehicle (ACS 2021) – 71% commute by public transit and only 14% commute by car (ACS 2022)"
+        },
+        {
+          "evidence_id": "broadway_157_st_220_st_cb12_mar2025#p005_c0002",
+          "text_sha256": "sha256:e13e193c7f876e486ce14e918abab23e88cfb35b9f38bbd59dc9979a5f291b7e",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "• DOT is currently looking at bus and safety improvements on Broadway from 157 th St to 220 th St • The following MTA bus routes that utilize this corridor • Bx7, Bx20, M5, M4, M100 • These bus routes connect to the 1 A C and Metro North • Broadway is a vital transportation corridor that connects to many key destinations including: • George Washington Bridge PABT • Marble Hill Metro North Station • Schools • Columbia Presbyterian Hospital, and New York Presbyterian Allen Hospital"
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_38e7ffb803184007",
+          "local_observation_id": "relation_project_partner_mta",
+          "relation_kind": "has_partner",
+          "relation_family": "partnership_engagement",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_broadway_bus_safety_157th_220th_mar2025",
+          "object_local_observation_id": "entity_mta_broadway_bus_safety_mar2025",
+          "evidence_ids": [
+            "broadway_157_st_220_st_cb12_mar2025#p017_c0002"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_66b9bf0ed606fb7e",
+      "source_id": "flatbush_ave_cb9_sept2022",
+      "local_observation_id": "entity_mta_flatbush_cb9_sept2022",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "flatbush_ave_cb9_sept2022#p001_c0005",
+          "text_sha256": "sha256:33213e1e0d84db94e0ac6466d8c5d865b78b24d3ba6f2af20289937fd177c3e2",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The logo for the Metropolitan Transportation Authority (MTA), featuring the letters \"MTA\" in a stylized font inside a circle."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_b4d2ec9337703cb4",
+          "local_observation_id": "relation_project_mta_partner",
+          "relation_kind": "has_partner",
+          "relation_family": "partnership_engagement",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_flatbush_ave_bus_priority_sept2022",
+          "object_local_observation_id": "entity_mta_flatbush_cb9_sept2022",
+          "evidence_ids": [
+            "flatbush_ave_cb9_sept2022#p004_c0002"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_672dfd10c84508c8",
+      "source_id": "open_data_plan_2025_update",
+      "local_observation_id": "entity_mta_2025_open_data_plan",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMTA",
+      "label": null,
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority (MTA)",
+        "agency_name": "MTA",
+        "entity_type": "transit agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "open_data_plan_2025_update#p001_c0002",
+          "text_sha256": "sha256:9d75b12da33c85ee80e6d577e4bc3cc6a69d7d523032c121ec9193d92d74c17a",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "METROPOLITAN TRANSPORTATION AUTHORITY OPEN DATA PLAN 2025 ANNUAL UPDATE"
+        },
+        {
+          "evidence_id": "open_data_plan_2025_update#p002_c0001",
+          "text_sha256": "sha256:737c5730352f89d3d19cde8f88a3ddd977fc2082312c15667e4e8c8e301ca493",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The Metropolitan Transportation Authority (MTA) and Open Data team is proud to present the third annual update to the Open Data Plan, reinforcing our commitment to transparency, accountability, civic engagement, and data-informed decision-making. Open data—information that is publicly accessible, in a machine-readable format, and can be freely used and shared—plays a critical role in fostering trust and collaboration with researchers, developers, policymakers, advocates, and riders."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_3697411fc409cc42",
+          "local_observation_id": "rel_mta_operates_open_data_program",
+          "relation_kind": "operates",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_2025_open_data_plan",
+          "object_local_observation_id": "project_mta_open_data_program_2025",
+          "evidence_ids": [
+            "open_data_plan_2025_update#p002_c0001"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_686ee217f7023e7b",
+      "source_id": "ace_routes_dataset_dictionary",
+      "local_observation_id": "entity_mta_ace_routes_dataset_publisher",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMTA \nMetropolitan Transportation Authority",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "MTA",
+        "agency_name": "Metropolitan Transportation Authority",
+        "entity_type": "transit_agency",
+        "role": "publisher"
+      },
+      "evidence": [
+        {
+          "evidence_id": "ace_routes_dataset_dictionary#p001_b0003",
+          "text_sha256": "sha256:a970e4f18ccf6ca53dfbae466bc6df690e982fd0370fae556d5a302825af68cf",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "\"id\": 602859365,"
+        },
+        {
+          "evidence_id": "ace_routes_dataset_dictionary#p001_b0004",
+          "text_sha256": "sha256:bacfd3605729694f8cdf6b2812d939acb7ef3eef96d717a5827cdeac3bfb72e1",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "\"name\": \"Route\","
+        },
+        {
+          "evidence_id": "ace_routes_dataset_dictionary#p001_b0006",
+          "text_sha256": "sha256:230b6e305204ab8227d315f854b7da6592bd44101f557dd361132010183c144e",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "\"description\": \"Identifies each individual bus route.\","
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_69b520c8259fa6dd",
+      "source_id": "181st_street_jun2022",
+      "local_observation_id": "entity_mta",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "agency_name": "MTA",
+        "entity_type": "transit authority"
+      },
+      "evidence": [
+        {
+          "evidence_id": "181st_street_jun2022#p002_c0004",
+          "text_sha256": "sha256:6c04812f91d5e332112f51a74df6249a07443cac84d9408a4ee1e7c54c103658",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_a7489def99990d67",
+          "local_observation_id": "relation_mta_partner_project",
+          "relation_kind": "has_partner_entity",
+          "relation_family": null,
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_181st_street_busway",
+          "object_local_observation_id": "entity_mta",
+          "evidence_ids": [
+            "181st_street_jun2022#p009_c0004",
+            "181st_street_jun2022#p002_c0004"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_6f870616c839434b",
+      "source_id": "jay_street_pilot_overview",
+      "local_observation_id": "entity_mta_jay_street",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMTA \nMetropolitan Transportation Authority",
+      "label": "MTA",
+      "raw_text": "MTA",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "entity_type": "transit_agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "jay_street_pilot_overview#p001_c0010",
+          "text_sha256": "sha256:4edb1957fdfa751e4560baba458ed2058da5390f5c248266a9df3ab827a0af5c",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, which consists of the letters \"MTA\" in a stylized font inside a circle."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_06d5a8b4ec917364",
+          "local_observation_id": "rel_project_mta",
+          "relation_kind": "has_partner",
+          "relation_family": null,
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_jay_street_busway_pilot",
+          "object_local_observation_id": "entity_mta_jay_street",
+          "evidence_ids": [
+            "jay_street_pilot_overview#p001_c0010"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_7490ae93abb46014",
+      "source_id": "bx_cb5_projects_dec032019",
+      "local_observation_id": "entity_mta_bx_cb5_dec032019",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "bx_cb5_projects_dec032019#p001_c0004",
+          "text_sha256": "sha256:aa4285ea506bf725831ca1350992963db3f1f47113c5c8827535bc3fc1193b0c",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The logo for the Metropolitan Transportation Authority (MTA), featuring the letters \"MTA\" in white on a dark blue circular background."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_8180dcbf25ec9056",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+      "local_observation_id": "entity_mta_better_buses_cb11_mar2025",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nThe MTA logo, consisting of the letters 'MTA' in white inside a black circle. \nMetropolitan Transportation Authority (MTA) \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle.",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority (MTA)",
+        "entity_type": "agency",
+        "acronym": "MTA"
+      },
+      "evidence": [
+        {
+          "evidence_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025#p002_c0004",
+          "text_sha256": "sha256:6c04812f91d5e332112f51a74df6249a07443cac84d9408a4ee1e7c54c103658",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_8676f3a81492109f",
+      "source_id": "fordham_rd_inwood_cb11_jun2023",
+      "local_observation_id": "entity_mta_fordham_rd",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "fordham_rd_inwood_cb11_jun2023#p002_c0006",
+          "text_sha256": "sha256:ad76ed03fda8e418aae1a70edad49621a390c270fdc92905386b5e93299c05e2",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark circle."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_3a536a4767961544",
+          "local_observation_id": "relation_project_implemented_by_mta",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_fordham_rd_bus_priority",
+          "object_local_observation_id": "entity_mta_fordham_rd",
+          "evidence_ids": [
+            "fordham_rd_inwood_cb11_jun2023#p002_c0006",
+            "fordham_rd_inwood_cb11_jun2023#p025_c0002"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_8e2092fd83def5ac",
+      "source_id": "brt_bx6_south_bronx_may2016",
+      "local_observation_id": "entity_mta_brt_bx6_may2016",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nThe logo for the Metropolitan Transportation Authority (MTA) \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA",
+      "raw_text": "The logo for the Metropolitan Transportation Authority (MTA)",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "entity_type": "agency",
+        "acronym": "MTA"
+      },
+      "evidence": [
+        {
+          "evidence_id": "brt_bx6_south_bronx_may2016#p001_c0004",
+          "text_sha256": "sha256:1e04955884c6ccec66fc45a1f70dad64c452a8f0f6233e7fe8106205f0cf5ade",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The logo for the Metropolitan Transportation Authority (MTA), featuring the letters 'MTA' in a stylized font inside a circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_93432f9e83cec801",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025",
+      "local_observation_id": "entity_mta_nyct_may2025",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "mta_only",
+      "identifying_text": "MTA \nMTA logo on presentation slides \nMTA",
+      "label": "MTA",
+      "raw_text": "MTA logo on presentation slides",
+      "payload": {
+        "entity_name": "MTA",
+        "entity_type": "agency",
+        "description": "Presenting agency for the 116th Street Bus and Pedestrian Priority Project"
+      },
+      "evidence": [
+        {
+          "evidence_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025#p001_c0004",
+          "text_sha256": "sha256:5c41829b84fc1f12a0a2921f9f1704d2b53024d2d7bdfa2e87b5aad19c76ecf5",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "BETTERBUSES"
+        },
+        {
+          "evidence_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025#p003_c0003",
+          "text_sha256": "sha256:6c04812f91d5e332112f51a74df6249a07443cac84d9408a4ee1e7c54c103658",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_496011087d7aca4d",
+          "local_observation_id": "relation_project_implemented_by_mta_may2025",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_116th_st_bus_pedestrian_priority_may2025",
+          "object_local_observation_id": "entity_mta_nyct_may2025",
+          "evidence_ids": [
+            "116_st_morningside_ave_pleasant_ave_cb10_may2025#p001_c0004",
+            "116_st_morningside_ave_pleasant_ave_cb10_may2025#p003_c0003"
+          ]
+        },
+        {
+          "submission_id": "sub_9161f23f40a2b853",
+          "local_observation_id": "relation_source_published_by_mta_may2025",
+          "relation_kind": "published_by",
+          "relation_family": "publication_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "source_116_st_morningside_ave_pleasant_ave_cb10_may2025",
+          "object_local_observation_id": "entity_mta_nyct_may2025",
+          "evidence_ids": [
+            "116_st_morningside_ave_pleasant_ave_cb10_may2025#p001_c0004",
+            "116_st_morningside_ave_pleasant_ave_cb10_may2025#p003_c0005"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_937a8c0854bd16b5",
+      "source_id": "2014_06_25_brt_woodhaven_publicworkshop2_summary",
+      "local_observation_id": "entity_mta_bus_woodhaven_workshop2",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "mta_only",
+      "identifying_text": "Metropolitan Transit Authority (MTA) \nMetropolitan Transit Authority \nMTA",
+      "label": "Metropolitan Transit Authority (MTA)",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transit Authority",
+        "entity_type": "agency",
+        "acronym": "MTA"
+      },
+      "evidence": [
+        {
+          "evidence_id": "2014_06_25_brt_woodhaven_publicworkshop2_summary#p002_c0001",
+          "text_sha256": "sha256:40ab78ce73f38e37a72b6c87dba523d86efaac7f4031e2bd47e9a1c9bffd9a5b",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The New York City Department of Transportation (NYCDOT) and the Metropolitan Transit Authority (MTA) hosted the second Woodhaven/ Cross Bay Boulevards Select Bus Service (SBS) public workshop on June 25, 2014 from 7 - 9 PM at P.S. 306 Queens. The goal of this workshop was to gather design input for the implementation of SBS along the corridor. 54 participants attended the workshop which included a presentation, an interactive break-out session about street designs and bus stops, and a question and answer session."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_b7d039f8fc871ca4",
+          "local_observation_id": "relation_mta_hosted_workshop",
+          "relation_kind": "organized_by",
+          "relation_family": "other",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "event_woodhaven_workshop2_20140625",
+          "object_local_observation_id": "entity_mta_bus_woodhaven_workshop2",
+          "evidence_ids": [
+            "2014_06_25_brt_woodhaven_publicworkshop2_summary#p002_c0001"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_947cd8227babef81",
+      "source_id": "brt_woodhaven_faq",
+      "local_observation_id": "entity_mta_woodhaven_faq",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMetropolitan Transportation Authority (MTA) \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority (MTA)",
+        "entity_type": "agency",
+        "acronym": "MTA",
+        "description": "Joint lead for the Woodhaven/Cross Bay Boulevard Select Bus Service project"
+      },
+      "evidence": [
+        {
+          "evidence_id": "brt_woodhaven_faq#p010_c0005",
+          "text_sha256": "sha256:73044ebc56dfa57d8d314b40ab605088e3f41da674bc1bca562ad62f6b709664",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The project is a joint effort of the New York City Department of Transportation (NYCDOT) and the Metropolitan Transportation Authority (MTA)."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_88c401cee1a9b5c6",
+          "local_observation_id": "relation_project_has_partner_mta",
+          "relation_kind": "has_partner",
+          "relation_family": "partnership_engagement",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_woodhaven_cross_bay_sbs_faq",
+          "object_local_observation_id": "entity_mta_woodhaven_faq",
+          "evidence_ids": [
+            "brt_woodhaven_faq#p010_c0005"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_95ac1db2b888b865",
+      "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026",
+      "local_observation_id": "entity_mta_fordham_rd_cb6",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency",
+        "description": "Partner agency on Fordham Road Bus Priority project"
+      },
+      "evidence": [
+        {
+          "evidence_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p002_c0002",
+          "text_sha256": "sha256:6e94f7fb1b603c62f05010180124e239eba511f6650fff4a79bac7b8db5fd426",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "• On February 13th, Mayor Zohran Mamdani, Commissioner Mike Flynn, and MTA Chairman Janno Lieber announced the project restart • Critical project to deliver better and faster bus service for New Yorkers • Aiming to improve bus speeds by at least 20% on the corridor"
+        },
+        {
+          "evidence_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p002_c0005",
+          "text_sha256": "sha256:96ef14b99ba1c789e0020dcf1370c5b25f5abcbf68b68ca3e7afa455746ec5ef",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters \"MTA\" in a bold, sans-serif font inside a dark circle."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_e9ac4b22d4afd11f",
+          "local_observation_id": "relation_project_has_partner_mta",
+          "relation_kind": "has_partner",
+          "relation_family": "partnership_engagement",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_fordham_rd_bus_priority_cb6",
+          "object_local_observation_id": "entity_mta_fordham_rd_cb6",
+          "evidence_ids": [
+            "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p002_c0002"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_96904c1925ca9909",
+      "source_id": "open_data_plan_2026_update",
+      "local_observation_id": "entity_metropolitan_transportation_authority",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nThe Metropolitan Transportation Authority (MTA) logo \nMetropolitan Transportation Authority (MTA) \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": "The Metropolitan Transportation Authority (MTA) logo",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority (MTA)",
+        "agency_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "transit authority"
+      },
+      "evidence": [
+        {
+          "evidence_id": "open_data_plan_2026_update#p001_c0001",
+          "text_sha256": "sha256:926be3f840657be047e9f3663a6b377d506843e94ac7e64ea4c3f49b2d789d60",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The Metropolitan Transportation Authority (MTA) logo, featuring the letters \"MTA\" in white inside a blue circle."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_12b8b79f8c08ce6d",
+          "local_observation_id": "relation_publishes_to_portal",
+          "relation_kind": "publishes_to",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_metropolitan_transportation_authority",
+          "object_local_observation_id": "entity_new_york_state_open_data_portal",
+          "evidence_ids": [
+            "open_data_plan_2026_update#p002_c0003"
+          ]
+        },
+        {
+          "submission_id": "sub_899640fc7e300b94",
+          "local_observation_id": "relation_mta_odt_part_of_mta",
+          "relation_kind": "part_of",
+          "relation_family": null,
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "entity_mta_open_data_team",
+          "object_local_observation_id": "entity_metropolitan_transportation_authority",
+          "evidence_ids": [
+            "open_data_plan_2026_update#p001_c0001",
+            "open_data_plan_2026_update#p002_c0002"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_97e92df543f549b3",
+      "source_id": "streets_plan_update_2026",
+      "local_observation_id": "entity_mta_nyct",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "entity_type": "transit authority",
+        "short_name": "MTA",
+        "acronym": "MTA",
+        "description": "The MTA operates the Congestion Relief Zone in Manhattan and provides subway and bus service referenced in the NYC Streets Plan Update 2026."
+      },
+      "evidence": [
+        {
+          "evidence_id": "streets_plan_update_2026#p002_c0005",
+          "text_sha256": "sha256:10fe61d0a6d7c1b2a2bc3081926ea781cc0bba0f60486e73fccb991ef068b1c3",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "In Manhattan, the MTA's Congestion Relief Zone led to an 11 percent reduction in traffic, faster bridge and tunnel crossings of up to 50 percent, and increases in cycling, transit ridership and walking trips. NYC DOT complemented the Congestion Relief program with major street redesign projects to prioritize walking, transit, and cycling, like new protected bus and bike lanes and expanded pedestrian space on 2nd and 3rd Avenues in Manhattan, a protected bike lane on Court Street in Brooklyn, new bike and pedestrian paths over the Queensboro Bridge, and a new section of the Harlem River Greenway on Bailey Avenue in the Bronx."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_182b494a3d2bb5c2",
+          "local_observation_id": "relation_mta_congestion_relief_zone",
+          "relation_kind": "operator",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_nyct",
+          "object_local_observation_id": "metric_congestion_relief_traffic_reduction",
+          "evidence_ids": [
+            "streets_plan_update_2026#p002_c0005"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_9a8315008e682c95",
+      "source_id": "34th_st_enhanced_bus_priority_cb5_may2025",
+      "local_observation_id": "entity_mta_34th_cb5_may2025",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA (Metropolitan Transportation Authority) \nMTA Metropolitan Transportation Authority \nMTA",
+      "label": "MTA (Metropolitan Transportation Authority)",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "MTA Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "34th_st_enhanced_bus_priority_cb5_may2025#p002_c0004",
+          "text_sha256": "sha256:6c04812f91d5e332112f51a74df6249a07443cac84d9408a4ee1e7c54c103658",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_9e5ff4a0de15bc23",
+      "source_id": "brt_woodhaven_cb9_jan2016",
+      "local_observation_id": "entity_mta_woodhaven_cb9_jan2016",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "mta_only",
+      "identifying_text": "MTA \nMTA",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "brt_woodhaven_cb9_jan2016#p001_c0004",
+          "text_sha256": "sha256:69ddce6781727bb7afd709af67b74182ae99ac4ce2656406c5ef05698cc2d61f",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, which consists of the letters \"MTA\" inside a circle."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_bdaa4afd2d492ca5",
+          "local_observation_id": "relation_mta_implements_project",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_woodhaven_cross_bay_sbs_jan2016",
+          "object_local_observation_id": "entity_mta_woodhaven_cb9_jan2016",
+          "evidence_ids": [
+            "brt_woodhaven_cb9_jan2016#p014_c0002"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_a768d3f90ce81e87",
+      "source_id": "open_data_plan_2022",
+      "local_observation_id": "entity_mta_open_data_plan",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMetropolitan Transportation Authority (MTA) - publisher of the Open Data Plan \nMetropolitan Transportation Authority \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": "Metropolitan Transportation Authority (MTA) - publisher of the Open Data Plan",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "agency_name": "Metropolitan Transportation Authority",
+        "entity_type": "public authority",
+        "acronym": "MTA",
+        "jurisdiction": "New York State"
+      },
+      "evidence": [
+        {
+          "evidence_id": "open_data_plan_2022#p001_c0002",
+          "text_sha256": "sha256:66aa30a32eb414175e7ba5ec50b09aa24bc7773bfba8ce15e3f20cf6c5b57b3a",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The logo for the Metropolitan Transportation Authority (MTA) features a blue circle with the white letters \"MTA\" inside. To the right of the circle, the words \"Metropolitan Transportation Authority\" are written in a bold, blue, sans-serif font. Below this, the words \"State of New York\" are written in a smaller, blue, sans-serif font."
+        },
+        {
+          "evidence_id": "open_data_plan_2022#p001_c0008",
+          "text_sha256": "sha256:98637a4fb62f37e320f44ceb8260aec575f08e61ec5ed35b63140f6c4a1a498b",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "Enclosed please find the Metropolitan Transportation Authority (MTA) Open Data Plan (the \"Plan\") pursuant to Chapter 489 of the Laws of 2021."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_f88e0862d5c33405",
+          "local_observation_id": "relation_mta_publishes_open_data_plan",
+          "relation_kind": "publishes",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_open_data_plan",
+          "object_local_observation_id": "project_open_data_plan_2022",
+          "evidence_ids": [
+            "open_data_plan_2022#p001_c0008"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_a7b8921cd8877640",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+      "local_observation_id": "entity_mta_nyct_cb11_jun2025",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA (Metropolitan Transportation Authority) \nThe MTA logo, consisting of the letters 'MTA' in a stylized font inside a circle. \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA (Metropolitan Transportation Authority)",
+      "raw_text": "The MTA logo, consisting of the letters 'MTA' in a stylized font inside a circle.",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "entity_type": "agency",
+        "acronym": "MTA",
+        "short_name": "MTA"
+      },
+      "evidence": [
+        {
+          "evidence_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025#p001_c0005",
+          "text_sha256": "sha256:3c08beb384e4c34462aa3b88819c6736acfdfab90774fe909ccd63c260502a5d",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in a stylized font inside a circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_a7e180e3a7f03759",
+      "source_id": "meeting_doc_100341",
+      "local_observation_id": "entity_mta_nov2022",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "transportation authority"
+      },
+      "evidence": [
+        {
+          "evidence_id": "meeting_doc_100341#p032_c0002",
+          "text_sha256": "sha256:be4c03373e5f87db95666f0e3f37eab1896ae94cfba0f68d9689facecf6a9c72",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The Metropolitan Transportation Authority is North America's largest transportation network, serving a population of 15.3 million people across a 5,000-square-mile travel area surrounding New York City through Long Island, southeastern New York State, and Connecticut."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_b6d2d31bcb930aea",
+      "source_id": "brt_woodhaven_design_workshops",
+      "local_observation_id": "entity_mta_woodhaven_dw2015",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "brt_woodhaven_design_workshops#p002_c0002",
+          "text_sha256": "sha256:8ccd696e313195f6726716c62a393ffcb4ebd2d4f0950cb7e000b889a76830dd",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "In April 2015, NYCDOT and the MTA held four design workshops to update the community on the Woodhaven / Cross Bay Boulevard (Q52/Q53) Select Bus Service (SBS) project and to gain feedback on proposed street designs for the corridor and proposed SBS bus stops. Meetings were conducted in workshop format, consisting of small group presentations at tables followed by interactive exercises to gather feedback about the proposed street designs and SBS bus stops. In total, more than 200 members of the community attended the design workshops."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_dd733c59e40c5f8e",
+          "local_observation_id": "relation_project_implemented_by_mta",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_woodhaven_cross_bay_q52_q53_sbs",
+          "object_local_observation_id": "entity_mta_woodhaven_dw2015",
+          "evidence_ids": [
+            "brt_woodhaven_design_workshops#p002_c0002"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_be9949bee9049ad5",
+      "source_id": "fresh_pond_rd_may2019",
+      "local_observation_id": "entity_mta_fresh_pond_rd_may2019",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency",
+        "description": "Operates bus routes Q58, QM24, QM25, QM34 on Fresh Pond Rd corridor"
+      },
+      "evidence": [
+        {
+          "evidence_id": "fresh_pond_rd_may2019#p001_c0004",
+          "text_sha256": "sha256:3981507d46e76c1488ff0a801f42b63997e66301434401badcf2f5ddda605c09",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, which consists of the letters 'MTA' in a bold, sans-serif font, with a stylized 'M' that incorporates a train or bus icon."
+        },
+        {
+          "evidence_id": "fresh_pond_rd_may2019#p006_c0002",
+          "text_sha256": "sha256:ba708d386724df4ba3c5e4ad9843b959ef33db75382bf890a4b8a1e95efbe282",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "A map of Queens, New York, highlighting several bus routes. The map includes major streets like Grand Ave, Eliot Ave, Fresh Pond Rd, and Myrtle Ave, as well as parks like Liberty Park and Forest Park. Three callout boxes provide details for specific routes: Q58: Ridgewood, Maspeth, Elmhurst, Corona & Flushing Queens' Busiest Bus Route QM24/25/34: Middle Village, Ridgewood & Glendale Express to Midtown/Downtown via LIE Fresh Pond Rd: Q58, QM24/25/34 + other routes returning to depot The map also shows bus stops marked with letters: M (orange), R (yellow), L (grey), and M (orange). Major highways like I-495, I-678, and I-77 are also visible."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_c59889fddffd046c",
+      "source_id": "bronx_bus_network_final_plan_addendum_2021",
+      "local_observation_id": "entity_mta_bronx_addendum",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority \nMTA",
+      "label": null,
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "agency_name": "MTA",
+        "entity_type": "transit_agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "bronx_bus_network_final_plan_addendum_2021#p002_c0003",
+          "text_sha256": "sha256:6a7ea75e2d6c81034d6cf14595c0163fa18eefb6509802f49a246edb035bc26d",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "• In February 2020, the MTA held a public hearing on the Bronx Bus Network Redesign proposed Final Plan, wrapping up a multi-year planning effort that incorporated customer needs and feedback from every corner of the Bronx. • The redesign work is focused on improving Local, Limited and Select Bus Service routes. There are currently no changes to express routes at this time. • The next step would have been to take the proposed Final Plan to the MTA’s Board of Directors for a vote. Due to the COVID-19 Pandemic, we made the difficult decision in March 2020 to pause the bus network redesign initiative to ensure that resources were concentrated where needed most, specifically moving our essential workers as quickly and safely as possible. The project remained paused for approximately 18 months. • In August 2021, Acting MTA Chair and CEO Janno Lieber and Interim New York City Transit President Craig Cipriano joined New York City Department of Transportation (NYCDOT) Commissioner Henry Gutman to announce many exciting bus initiatives, including the restart of the Bronx Bus Network Redesign. • Bus network redesigns are among the most crucial efforts the MTA can undertake to ensure New Yorkers receive appropriate bus service. The MTA is excited to restart its Bus Network Redesign program this fall, beginning with the resumption of the Bronx Local Bus Network Redesign, planned for implementation next summer. • Following implementation, the MTA will continue to monitor ridership patterns and incorporate necessary changes in the bus network to better match bus service with current and future travel demands. • This document will outline changes to the proposed Final Plan as published in October 2019. These changes are based on the input of our customers and community stakeholders."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_c73785884a91ec9d",
+      "source_id": "open_data_lessons_2026",
+      "local_observation_id": "entity_mta_open_data_program",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA - Metropolitan Transportation Authority \nLessons learned in the MTA’s Open Data program \nMetropolitan Transportation Authority (MTA) \nMTA",
+      "label": "MTA - Metropolitan Transportation Authority",
+      "raw_text": "Lessons learned in the MTA’s Open Data program",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority (MTA)",
+        "agency_name": "MTA",
+        "entity_type": "government agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "open_data_lessons_2026#p001_b0001",
+          "text_sha256": "sha256:3241776e0a7f86f9d99e8aa1f1b60f2f66d902556388bc8be0b78acf8fe38fe9",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "Lessons learned in the MTA’s Open Data program Skip to main content Menu Close Menu Schedules Maps Fares and tolls Planned Service Changes Travel Back Elevator & Escalator Status Accessibility Sign up for service alerts Guides Access-A-Ride Paratransit About Back About the MTA Transparency Projects Safety and Security Careers Agencies Back New York City Transit Bridges & Tunnels Long Island Rail Road Metro-North Railroad Other agencies and departments Contact us Back Give feedback Contact the MTA Media Relations Procurement and solicitations Schedules Maps Fares & Tolls Planned Work We have detected you are using an out-of-date browser. We no longer support this browser, so parts of the site might not work as you expect them to. We recommend updating your browser to the latest version. Home Articles Lessons learned in managing the MTA’s Open Data program Lessons learned in managing the MTA’s Open Data program MTA Updated March 10, 2026 4:00 p.m. The MTA has a vast library of data covering a wide range of topics including service performance, budget, capital assets, workforce, and more—all of which is valuable to the public. But it wasn’t always this way. Before 2021, most MTA data was only released in non-open formats, such as PDFs, and through Freedom of Information Law (FOIL) requests (except for real-time vehicle arrival data feeds, which we have published in open format since 2012). Ever since Governor Kathy Hochul and New York State Legislature enacted the MTA Open Data Law in 2021, the MTA’s open data program has grown rapidly. In fact, it’s now an award-winning program that can serve as a model for other government agencies standing up their own open data programs. Good open data programs improve government transparency and accountability by making data easier to understand and work with for riders, researchers, and curious customers. Equally important, open data is crucial for making data easier to work with internally. You can read more about the tangible, organizational benefits to better managed and more accessible data in this previous lessons learned blog post . In this next lessons learned post, we offer a guide on how to launch an open data program in government, using best practices we learned in the first years of establishing our program. The MTA’s open data program has come a long way in five years, and we hope this resource helps other government agencies across the United States follow suit! Why we’re qualified 2021 was a turning point for MTA open data. Before then, data was regularly shared publicly in PDF or static Excel files. We only had 21 published open data sets available to the public. The passage of the MTA Open Data Law in 2021 officially mandated the MTA to publish its data in open, machine-readable formats. Since then, our offerings have increased, with over 230 open data assets available to the public today. And we’ve conquered some technically complex and high-profile topics too, like the operating budget (the first transit agency in the United States to do so!), subway rider origin-destination ridership, and traffic counts in the Manhattan congestion relief zone. The role of an open data mandate As mentioned above, the governor and state legislature passed the MTA Open Data Law in 2021, officially requiring the MTA to publish information in an open format. For the MTA, this mandate was the catalyst for establishing a formal program and freeing up the resources needed to get the program off the ground. The MTA’s open data law contains language that is common across many open data policies and statutes. A few pieces of the legislation were particularly helpful in establishing how the program would work: Designate a data coordinator, who is responsible for managing the program and complying with the law. Create a three-year plan to release all publishable data. This established a firm time-bound goal to keep things moving. Define a portal to contribute to, which in our case, was New York State’s open data portal at data.ny.gov. While some agencies may need to create a portal from scratch, we could plug into a data hub that already existed, allowing us to focus more effort on other key parts of the program. A mandated annual report to document progress is common in other open data statutes. While not included in our statutory requirements, we still publish an annual update on our program page , which we have found incredibly valuable in memorializing our success. Key players Identifying who needs to be part of the immediate team, and who needs to be engaged in the surrounding circle, is one of the first steps to starting a successful open data program. Below is a description of each contributor: Program manager The program manager leads the program’s day-to-day operations and is the principal technical liaison between data owners and data users. They set the direction for what datasets will be published and manage the work it takes to make a dataset open. Data scientist(s) Data scientists write the code that produces datasets for public consumption. Some datasets require complex transformations from raw data sources before they have any analytical value; data scientists are the experts in the codebase that leads to these products. Data engineer(s) Data engineers architect the tooling required to automate the creation of the datasets from source systems, as well as the push (or pull) of the data to a publicly accessible portal. You can read more about the tooling we use in this blog post . Internal leadership Executive level buy-in and active sponsorship from someone at the deputy or assistant executive level is crucial. They can help prioritize datasets for release to ensure alignment with the organization’s strategic goals. A champion at the executive level also helps move things along when they get stuck, especially if open data is new to your organization. Leadership in legal and communications offices is helpful as well. Legal serves as an important safeguard in the review process before anything is released and can connect the dots between datasets published to open data and information frequently FOILed. On the communications side, they can support the program by directing the press to open data in order to self-serve, and they can make sure that messaging in dataset documentation and accompanying resources aligns with other agency communications. Internal users Internal users are analysts within the organization that use datasets on the open data portal. It is more than likely, especially at the beginning stages of an open data program, that the open data portal will be the most efficient tool for cross-departmental data sharing that your organization will have. External users and advocates External users and advocates are people outside of the organization that use datasets on the open data portal. The technical skill range of these users varies widely, and it is important to consider how users of different analytic levels will engage with your program. Identifying and preparing your first datasets for release When identifying and preparing your first datasets for release, we recommend prioritizing easy wins, such as data that is already made public (but not open) in some form or data that is frequently requested through the FOIL process. For us, we focused primarily on data that was already made public on a regular basis via PDFs. For example, monthly performance metrics for MTA board and committee materials were only shared in PDFs, but the open data program allowed us to automate and share that data in an open format to supplement the monthly PDF releases. A small but critical benefit of focusing open data efforts on data that is already public in some form is that it allows for progress in the absence of a formalized data governance policy. Getting your first datasets in a machine-readable format up on a portal will reveal the gaps in your technical processes. Being able to figure out the technical details and process, without simultaneously having the complicated conversations of whether the data is okay to release in the first place, is an approach that worked well for us. Engaging the community The importance of engaging the open data community by building relationships with key stakeholders and advocates cannot be understated! These organizations will be your biggest champions while also holding your organization accountable in a way that sustains momentum. Advocates are important external validators, and if they can provide positive feedback on your first open data releases, it will help build momentum internally for your open data program. If open data advocates don’t exist in your space, you could take the initiative to generate excitement and communicate your work. To start, you could participate in or host public-facing events about open data, partner with an existing local civic tech group, or work with the press office to generate positive coverage on your first open data release. You should not expect all advocates to have the desire to work directly with open datasets you publish; doing some work to invest in data visualizations tools (built off open data, of course!) will go a long way. Accompanying visualizations increase the visibility of your program and secure advocates who operate more in the policy and communications sphere. We put quite a bit of work into building our data visualization tool metrics.mta.info early on, which visualizes open datasets in a way that is easily digestible for people of all technical skill levels. Finally, let data users connect directly with the person and/or team managing your program. A team inbox ( opendata@mtahq.org ) has worked well for us. Improvements after a successful first year By the end of year one, you should have a few key datasets published to an open data portal, proved the value of open data to your organizations, and built relationships with a few key stakeholders both internal and external to your agency. After our first year of the program, we were still manually uploading every single open dataset to the open data portal. We desperately needed the expertise of a data engineer to scale the program in a sustainable way. But we needed to take those first steps of sharing data openly to know what exactly we needed. All that’s to say, don’t let a lack of technical skills inhibit you from seeing what you can accomplish. We were still able to publish a lot of datasets in our first year of the program – and now we can publish even more. We hope this post has given some concrete ideas on where to start when it comes to spinning up an open data program at your agency or organization. And for those reading because you hope to see a public agency in your city publish more open data, we encourage you to approach your advocacy efforts with understanding and optimism as the organization builds its capacity and resources to change the status quo. About the author Lisa Mae Fiedler manages MTA’s Open Data program. She is thrilled to celebrate NYC Open Data Week later this month—you can check out the calendar of events here . Data and Analytics Blog THE MTA About the MTA Contact Us Careers Transparency INFORMATION Doing Business With Us Press Releases Arts & Design NY Transit Museum & Shop Other Terms & Conditions Privacy Policy Facebook Social Network Link Twitter Social Network Link Youtube Social Network Link Instagram Social Network Link Powered by Translate"
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_d286ad54e68796bd",
+      "source_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb9_apr2025",
+      "local_observation_id": "entity_mta_eastern_pkwy_cb9_apr2025",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMetropolitan Transportation Authority (MTA) \nMTA",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority (MTA)",
+        "entity_type": "agency",
+        "acronym": "MTA"
+      },
+      "evidence": [
+        {
+          "evidence_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb9_apr2025#p002_c0004",
+          "text_sha256": "sha256:6c04812f91d5e332112f51a74df6249a07443cac84d9408a4ee1e7c54c103658",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_e24faf1dd8ded4dd",
+      "source_id": "brt_woodhaven_openhouses_boards_may2016",
+      "local_observation_id": "entity_mta_brt_woodhaven_may2016",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "brt_woodhaven_openhouses_boards_may2016#p002_c0018",
+          "text_sha256": "sha256:69ddce6781727bb7afd709af67b74182ae99ac4ce2656406c5ef05698cc2d61f",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, which consists of the letters \"MTA\" inside a circle."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_81b4ed17a440bdad",
+          "local_observation_id": "relation_project_implemented_by_mta",
+          "relation_kind": "implemented_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_woodhaven_cross_bay_sbs_may2016",
+          "object_local_observation_id": "entity_mta_brt_woodhaven_may2016",
+          "evidence_ids": [
+            "brt_woodhaven_openhouses_boards_may2016#p008_c0002",
+            "brt_woodhaven_openhouses_boards_may2016#p008_c0005"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_e4ab40f09101ab71",
+      "source_id": "2015_04_14_brt_125th_cb10_post_implementation_update",
+      "local_observation_id": "entity_mta_2015_04_14",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "mta_only",
+      "identifying_text": "MTA",
+      "label": null,
+      "raw_text": null,
+      "payload": {
+        "entity_name": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "2015_04_14_brt_125th_cb10_post_implementation_update#p001_c0004",
+          "text_sha256": "sha256:36283e00b68d879ff09323675f0edc0311e950506a6b0686ed3c526c53b2688a",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' inside a circle."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_0c8356fcc3dc307b",
+          "local_observation_id": "relation_route_m60_operated_by_mta",
+          "relation_kind": "operated_by",
+          "relation_family": "agency_role",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "route_m60_sbs_2015_04_14",
+          "object_local_observation_id": "entity_mta_2015_04_14",
+          "evidence_ids": [
+            "2015_04_14_brt_125th_cb10_post_implementation_update#p001_c0004",
+            "2015_04_14_brt_125th_cb10_post_implementation_update#p001_c0001"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_ebaefc69a9d4bb0f",
+      "source_id": "2014_11_brt_utica_workshopsummary",
+      "local_observation_id": "entity_mta_2014_utica_workshop",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency",
+        "description": "Co-hosted the Utica Avenue SBS public workshop"
+      },
+      "evidence": [
+        {
+          "evidence_id": "2014_11_brt_utica_workshopsummary#p002_c0001",
+          "text_sha256": "sha256:5ba5dc60ada201ca68131890ef31b667c020a099ad0da03e5e74c43003f6e1d7",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "On November 13, 2014, the New York City Department of Transportation (DOT) and the Metropolitan Transportation Authority (MTA) kicked off the public outreach process for the Utica Avenue Select Bus Service (SBS) project. The MTA and DOT hosted a public workshop at PS 167 on Eastern Parkway to gather initial feedback from community members on plans to upgrade the B46 limited bus to Select Bus Service. The project aims to improve bus service while maintaining traffic flow and curb access and to increase safety for all users along the Utica Avenue corridor in Brooklyn."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_16fb6ae3b0633e81",
+          "local_observation_id": "relation_project_has_partner_mta",
+          "relation_kind": "has_partner",
+          "relation_family": "partnership_engagement",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "project_utica_ave_sbs_2014",
+          "object_local_observation_id": "entity_mta_2014_utica_workshop",
+          "evidence_ids": [
+            "2014_11_brt_utica_workshopsummary#p002_c0001"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_ee8fddb0aa546ba9",
+      "source_id": "soundview_bus_priority_press_release_2021",
+      "local_observation_id": "entity_mta_soundview_2021",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "mta_only",
+      "identifying_text": "MTA \nMTA",
+      "label": null,
+      "raw_text": null,
+      "payload": {
+        "entity_name": "MTA",
+        "agency_name": "MTA",
+        "entity_type": "transit authority"
+      },
+      "evidence": [
+        {
+          "evidence_id": "soundview_bus_priority_press_release_2021#p001_b0001",
+          "text_sha256": "sha256:c0220128a63c8e1f53136205cef2770e21c36fa62c15669aa65402052a3d0320",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "DOT Press Releases - First Dedicated Bus Lanes in Soundview to Begin Serving 45,000 Daily Riders Skip to main content NYC NYC Resources 311 Office of the Mayor About DOT Press Releases IMMEDIATE RELEASE Friday, December 3, 2021 Contact: (212) 839-4850, press@dot.nyc.gov First Dedicated Bus Lanes in Soundview to Begin Serving 45,000 Daily Riders Three miles of new bus lanes now giving priority to MTA buses serving 45,000 riders; Project also includes major pedestrian safety improvements and transit-signal priority Images of the new bus lane are available DOT’s Flikr page THE BRONX -- The New York City Department of Transportation (DOT) announced today that it has completed the conversion of major thoroughfares in the Soundview neighborhood of the South Bronx into bus-priority corridors. New bus lanes and other improvements along three miles of major Soundview streets -- including Story Avenue, Bronx River Avenue and White Plains Road – will speed 45,000 daily riders on MTA buses. Prior to this conversion, service on these streets was notoriously unreliable and slow, with average peak-period speeds at about 5 MPH. The conversion comes with other major improvements, including the addition of Vision Zero pedestrian safety changes as well as transit-signal priority technology to speed buses through traffic lights. All told, bus lanes and busways installed this year are speeding up the commutes of over half a million daily riders. \"We're giving the Bronx a win-win: faster buses and safer streets,\" said DOT Commissioner Hank Gutman . \"These new bus lanes and street safety improvements are the result of close consultation with the community, from bus-rider surveys to community-board meetings. Working with the MTA and across the entire de Blasio Administration, we're delivering results as we aim to improve bus service citywide.\" \"New Yorkers depend on safe, reliable public transportation travel to home, work, school and other destinations and busways are vital in this mission,\" said NYPD Chief of Transportation Kim Royster . \"Buses have always been an important component of Vision Zero. The NYPD will continue to keep our buses, as well as overall traffic, moving safely while protecting pedestrians and cyclist who use our city streets.\" \"The completion of these major bus lanes in the Bronx will undoubtedly improve bus speeds for thousands of commuters across the borough,\" said New York City Transit Interim President Craig Cipriano . \"The riders who use these routes will benefit from dedicated bus lanes that will help people get to their destination at a much quicker pace, with improved traffic signaling and increased safety measures along the way. Residents of the Bronx can depend on MTA New York City Transit buses to get them where they need to go more seamlessly than ever before, and the MTA is excited to continue partnering with the DOT to improve transportation and quality of life for Bronx residents.\" \"Thousands of Soundview residents will now be able to take advantage of the MTA's vast bus network at much faster speeds than before with the introduction of these new bus lanes,\" said MTA Bus Company President Acting President and New York City Transit Department of Buses Senior Vice President Frank Annicaro . \"The MTA is committed to continuing the work to improve our transit system by increasing bus speeds with dedicated lanes, promoting public transportation ridership, and bringing New Yorkers back to the system. Our riders rely on safety and efficiency and these bus lanes help work towards that mission.\" DOT has added seven new bus lane miles in the Bronx since 2020, which includes this project along with 149th Street, Edward L Grant Hwy. and University Avenue. DOT has worked cooperatively with the MTA for its planned Bronx Bus Network Redesign. The redesign had identified these major Soundview corridors serving the MTA's Bx5, Bx36 and Bx39 routes as especially congested, with slow and unreliable service – with previous daytime bus speeds averaging as low as 5 MPH. The new curbside bus lanes on Story Avenue and White Plains Road are now in effect Monday-Friday, 7am and 7pm. The new bus lane in the traffic lane along Bronx River Avenue is in effect at all times. The Vision Zero pedestrian improvements that are part of this project are also expected to reduce crashes. Major improvements include: Painted curb extensions to calm traffic and improve safety for pedestrians at five intersections. Transit Signal Priority, a smart-signal system that speeds up bus service by holding green lights and making red lights shorter when a bus is approaching. Updated daytime parking regulations to accommodate bus lanes, which reduced parking along the bus routes during daytime hours on weekdays. Angled parking was added on adjacent side streets at community request, including along Boynton, Soundview and Taylor Avenues. The bus lanes will be enforced by the NYPD, alongside DOT automated enforcement cameras. Bus lane cameras will be activated beginning today with warnings being issued for the first 60-days. After the 60-day warning period, bus lane cameras will issue fines starting at $50 and progressively increasing to $250 for subsequent violations within a one-year period. \"I applaud the DOT and MTA for working together to ensure that riders have access to faster buses by implementing bus-priority corridors across my district,\" said State Senator Luis R. Sepulveda . \"As a representative with a high concentration of riders, I understand the need for constituents to be able to rely on dependable bus service, which this plan aims to do.\" \"The conversion of major thoroughfares in Soundview into bus-priority lanes is a game-changer for the Bronx, providing tens of thousands of Bronxites access to the efficient, reliable, and safe public transportation that they deserve,\" said State Senator Alessandra Biaggi . \"I am grateful to the Department of Transportation for their commitment to improving public transit in the Bronx, and their dedication to efficiency and pedestrian safety. We must continue to make such improvements, and I look forward to working with the DOT and the community to better the lives of hundreds of thousands of riders in the Bronx.\" \"My constituents in the Soundview neighborhood of my Bronx district rely on public transportation each day for their commutes. The addition of these new bus lanes and Vision Zero pedestrian improvements will go a long way towards providing safety and reliability for these residents. I applaud the NYC DOT for their tireless work in making the lives of my constituents much easier and safer,\" said Assembly Member Kenny Burgos. \"Bronx riders stood up and demanded better buses and our leaders in City Hall listened,\" said Riders Alliance Senior Organizer Jolyse Race. \"These new bus lanes will restore precious time in the lives of tens of thousands of New Yorkers, time to devote to family, work, education, and more. Bus lanes bring our city together and make it work more effectively for everybody. Thanks as always to the hardworking folks at NYC DOT, who did the heavy lifting and stuck it out in the face of NIMBY opposition, and to the elected officials who came around and supported their constituents who have been left behind, stuck in stalled traffic, for far too long.\" \"NYCDOT's addition of bus priority treatments along Story Avenue, Bronx River Avenue and White Plains Road will have significant impact for Bronx riders who depend on buses to get where they need to go. The Soundview treatments also represent a win for cooperation between the MTA and NYCDOT in bus network redesign planning. We look forward to further expansion of these bus priority treatments across the city, bringing faster, more dependable trips to all New Yorkers,\" said Ashley Pryce, Senior Advocacy Associate, TransitCenter. \"The new bus priority corridors in Soundview will ease the commutes of thousands of daily bus riders, and we are thrilled that DOT has added 7 miles of dedicated bus lanes in the Bronx since 2020,\" said Liam Blank, Policy & Communications Manager for Tri-State Transportation Campaign . \"With traffic congestion on the rise, and average bus speeds cratering as a result, targeted investments, including bus lanes and transit signal priority, will produce significant benefits for bus riders. We truly applaud Mayor de Blasio and DOT Commissioner Gutman for continuing to prioritize sustainable and equitable transit on the city's streets, particularly in bus-dependent communities.\" \"The Bronx Bus Network Redesign is a critical step to reduce commute times for tens of thousands of residents and support the reduction of transportation-related emissions, the largest source of greenhouse gas emissions in New York. We need efficient, reliable, clean transportation options, and we applaud the MTA and Department of Transportation for implementing this conversion in a major corridor that needs it,\" said Julie Tighe, President of the New York League of Conservation Voters . Home About NYC DOT Accessibility Current Projects Doing Business with DOT DOT Library Employment Language Access NYC Council Testimony NYC Streets Plan Open Data Podcast Press Releases Safety Education Street Design Manual Vision Zero Website Accessibility Statement Pedestrians Dining Out NYC Mobility Management NYC DOT Art Open Streets Pedestrian Mobility Plan Pedestrian Ramps Plazas Safe Streets for Seniors Summer Streets WalkNYC Bicyclists Bike Events Bike Maps Bike Network & Ridership Bike Parking Bike Safety Bikes in Buildings E-Bikes in NYC Greenways Ferries & Buses Better Buses Private Ferries Staten Island Ferry Motorists & Parking Alternate Side Parking Deliveries in NYC Municipal Parking Lots Parking Rates Parking Regulations Real Time Traffic Cameras Trucks Weekly Traffic Advisories Infrastructure Bridges Revocable Consents Sidewalk Repair Sign Shop Street Construction Streetlights Street Work Permits Traffic Signals Contact NYC DOT Customer Service Check Case Status Email Updates Social Media Go Copyright The City of New York Contact Us Privacy Policy Terms of Use Accessibility"
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_f7a9879295aca0fd",
+      "source_id": "meeting_doc_111751",
+      "local_observation_id": "entity_meeting_doc_111751_mta",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nThe logo for the Metropolitan Transportation Authority (MTA) \nMetropolitan Transportation Authority (MTA) \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": "The logo for the Metropolitan Transportation Authority (MTA)",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority (MTA)",
+        "acronym": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "meeting_doc_111751#p001_c0001",
+          "text_sha256": "sha256:7c3bd65ec416ff0ebead1f4ade0677c72338b118429883fd7ed7166dbf29fc63",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The logo for the Metropolitan Transportation Authority (MTA) is a dark blue circle containing the white letters \"MTA\" in a bold, sans-serif font."
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_78c188e472a58da9",
+          "local_observation_id": "relation_meeting_doc_111751_metro_north_mta_subsidies",
+          "relation_kind": "receives_funding_from",
+          "relation_family": "funding_award",
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "entity_meeting_doc_111751_metro_north_railroad",
+          "object_local_observation_id": "entity_meeting_doc_111751_mta",
+          "evidence_ids": [
+            "meeting_doc_111751#p007_c0003"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_f8283a7c91f11a03",
+      "source_id": "tremont_ave_busway",
+      "local_observation_id": "entity_mta_partner_tremont_busway",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA - Partner on Tremont Ave Busway \nMTA \nMetropolitan Transportation Authority",
+      "label": "MTA - Partner on Tremont Ave Busway",
+      "raw_text": "MTA",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "entity_type": "transit_authority",
+        "short_name": "MTA"
+      },
+      "evidence": [
+        {
+          "evidence_id": "tremont_ave_busway#p001_c0013",
+          "text_sha256": "sha256:80fe80b6c3b50611c2d28db18b14ddb6d3f028fe3f5a39de827225083f434295",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "MTA"
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_f8f7015136c63f10",
+      "source_id": "lexington_ave_60_st_52_st_sept2025",
+      "local_observation_id": "entity_mta_lex_ave_sept2025",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency",
+        "description": "Metropolitan Transportation Authority, co-presenter of Lexington Avenue bus lane upgrades proposal"
+      },
+      "evidence": [
+        {
+          "evidence_id": "lexington_ave_60_st_52_st_sept2025#p001_c0006",
+          "text_sha256": "sha256:d3850ba194d341ba57d5bbd70cf92209545e58d077354afa6e1c319dbbf5656d",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a black circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_f97066494513adbc",
+      "source_id": "meeting_doc_85816",
+      "local_observation_id": "entity_mta_meeting_doc_85816",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nThe logo for the Metropolitan Transportation Authority (MTA), featuring the letters \"MTA\" in white inside a blue circle. \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": "The logo for the Metropolitan Transportation Authority (MTA), featuring the letters \"MTA\" in white inside a blue circle.",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency"
+      },
+      "evidence": [
+        {
+          "evidence_id": "meeting_doc_85816#p001_c0001",
+          "text_sha256": "sha256:c39a3db686cf12e4402d3f1cb3df129a9cb5edacd9d543690c2f15a9964db180",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The logo for the Metropolitan Transportation Authority (MTA), featuring the letters \"MTA\" in white inside a blue circle."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_fa43a8a5e4d7cd5b",
+      "source_id": "open_data_program",
+      "local_observation_id": "entity_mta_open_data_program",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA - Metropolitan Transportation Authority \nMetropolitan Transportation Authority (MTA) \nMTA",
+      "label": "MTA - Metropolitan Transportation Authority",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority (MTA)",
+        "agency_name": "MTA",
+        "entity_type": "transit_authority",
+        "description": "The MTA moves millions of people every day and manages the Open Data Program to share data publicly"
+      },
+      "evidence": [
+        {
+          "evidence_id": "open_data_program#p001_b0001",
+          "text_sha256": "sha256:72a6fc8b5f0dc8d5478ebd6a7ecc6e7695620ce187a1fb5ece02bb4c252c35e3",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "MTA Open Data Program Skip to main content Menu Close Menu Schedules Maps Fares and tolls Planned Service Changes Travel Back Elevator & Escalator Status Accessibility Sign up for service alerts Guides Access-A-Ride Paratransit About Back About the MTA Transparency Projects Safety and Security Careers Agencies Back New York City Transit Bridges & Tunnels Long Island Rail Road Metro-North Railroad Other agencies and departments Contact us Back Give feedback Contact the MTA Media Relations Procurement and solicitations Schedules Maps Fares & Tolls Planned Work We have detected you are using an out-of-date browser. We no longer support this browser, so parts of the site might not work as you expect them to. We recommend updating your browser to the latest version. Home MTA Open Data Program MTA Open Data Program We have renewed our commitment to transparency and to our obligation to share our data publicly. Read about our Open Data Program. Updated January 27, 2026 Our open data plan The MTA moves millions of people every day, and we work hard to build trust and confidence in MTA services. It’s critical that public transit is safe, reliable, and fast — and that the public has input on our ongoing efforts to improve. We aim to share as much data that is in the public interest as we can, and to work with the community to understand their priorities. Read the 2026 Open Data Plan Update Read the 2025 Open Data Plan Update Read the 2024 Open Data Plan Update Read the 2023 Open Data Plan Update Read the 2022 Open Data Plan Our commitment The MTA is committed to being open and accountable to the public, and today has a robust program to share a wide array of information. We welcome external review and validation of our work, and value the increased trust in our work that will bring. We also value third-party use of our data in innovative ways: to provide better customer information and service, and to propose new analytical approaches our teams can consider and use. You can read more about what we’re doing beyond Open Data to further our transparency in our Annual Open Data Plan Update. Under our renewed Open Data Program, we have begun to share substantially more data and make it easier to find and use. We promise to: Submit all data that we already make public on this website to the NYS Open Data Portal. Publish the data that we release via our monthly Board and Committee books. Publish our plan and schedule for sharing to the NYS Open Data Portal all publishable agency data (completed in April 2022). Implement our plan over the next two years. MTA Open Data User Personas MTA Open Data Act Assembly Bill A1442B MTA data on the NYS Open Data Portal data.ny.gov Our team The MTA Open Data program is managed by the Data & Analytics team, the MTA's center of excellence in the management, usage and sharing of data. Our three main functions are to aggregate the MTA’s many diverse data sources, to devise and automate creative analyses that uncover the valuable insights in that data, and to share these products and skills. We do this work for all levels of the MTA, from the board and senior executives to front-line managers and the public. Our work includes building data pipelines to automate processes, calculating performance metrics for subway and bus service, maintaining critical datasets for internal and external use, and providing analytic support for executive leadership, as well as managing the MTA’s Open Data program. We share the data that our team maintains to all who need to query it so they can build their own reports from it. An important goal of our team is to facilitate the work of others analyzing MTA data. We do all this by combining new approaches and algorithms with a deep knowledge of our operations to deliver deeper insights into issues affecting MTA’s performance. You’ll find our team’s work in lots of places: the MTA’s board and committee books, the New York State Open Data portal , the MTA’s metrics site , numerous internal datasets, the occasional news article, and the MTA Data & Analytics blog . We’d love to hear from you! Get in touch with us by emailing opendata@mtahq.org or by filling out this form . Our blog April 23, 2026 1:00 pm Curious customers, cool tools, and open data March 20, 2026 3:45 pm Mapping movement: Exploring NYC bus route shapes through segment-level speed data March 10, 2026 4:00 pm Lessons learned in managing the MTA’s Open Data program Other related resources Developer resources Performance metrics Capital program dashboard Additional transparency resources MTA Transparency Plan THE MTA About the MTA Contact Us Careers Transparency INFORMATION Doing Business With Us Press Releases Arts & Design NY Transit Museum & Shop Other Terms & Conditions Privacy Policy Facebook Social Network Link Twitter Social Network Link Youtube Social Network Link Instagram Social Network Link Powered by Translate"
+        }
+      ],
+      "downstream_local_relations": [
+        {
+          "submission_id": "sub_0948cf2544ce06bb",
+          "local_observation_id": "relation_mta_submits_data_to_nys_portal",
+          "relation_kind": "submits_data_to",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_open_data_program",
+          "object_local_observation_id": "entity_ny_state_open_data_portal",
+          "evidence_ids": [
+            "open_data_program#p001_b0001"
+          ]
+        },
+        {
+          "submission_id": "sub_46237cb61b5879d5",
+          "local_observation_id": "relation_open_data_program_publishes_board_books",
+          "relation_kind": "publishes_data_from",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject",
+            "object"
+          ],
+          "subject_local_observation_id": "entity_mta_open_data_program",
+          "object_local_observation_id": "entity_mta_open_data_program",
+          "evidence_ids": [
+            "open_data_program#p001_b0001"
+          ]
+        },
+        {
+          "submission_id": "sub_6723fbc8525ef29a",
+          "local_observation_id": "relation_mta_has_open_data_program",
+          "relation_kind": "has_program",
+          "relation_family": null,
+          "endpoint_roles": [
+            "subject"
+          ],
+          "subject_local_observation_id": "entity_mta_open_data_program",
+          "object_local_observation_id": "source_open_data_program_page",
+          "evidence_ids": [
+            "open_data_program#p001_b0001"
+          ]
+        },
+        {
+          "submission_id": "sub_8f2787bda685c3be",
+          "local_observation_id": "relation_data_analytics_manages_open_data",
+          "relation_kind": "manages",
+          "relation_family": null,
+          "endpoint_roles": [
+            "object"
+          ],
+          "subject_local_observation_id": "entity_mta_data_analytics_team",
+          "object_local_observation_id": "entity_mta_open_data_program",
+          "evidence_ids": [
+            "open_data_program#p001_b0001"
+          ]
+        }
+      ],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_fd4afd213ccd1e45",
+      "source_id": "busway_tremontavenue",
+      "local_observation_id": "entity_mta_tremont",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "MTA (partner on Tremont Avenue Busway) \nMetropolitan Transportation Authority \nMTA",
+      "label": "MTA (partner on Tremont Avenue Busway)",
+      "raw_text": null,
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "entity_type": "transit_agency",
+        "agency_name": "MTA"
+      },
+      "evidence": [
+        {
+          "evidence_id": "busway_tremontavenue#p001_b0001",
+          "text_sha256": "sha256:0ef429d84ee86eaa8aa6e96c04598e1413b81e55f9fc609972a861bfdfc4a031",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "Tremont Avenue Busway Skip to main content NYC NYC Resources 311 Office of the Mayor Busways Tremont Avenue Busway How to Use the Busway | FAQ | Community Outreach | MTA Bus Schedule The Tremont Avenue Busway in the Bronx aims to increase bus speeds and reliability for over 39,000 daily bus riders on the Bx36, improve truck movement and deliveries to local businesses, and make the street safer for pedestrians and cyclists. Busways in NYC have improved bus speeds by up to 60% and decreased pedestrian and cyclist injuries by up to 45%. The Tremont Avenue Busway will be a half mile long: eastbound from Third Avenue to Southern Boulevard, and westbound from Southern Boulevard to Belmont Avenue. Video description: Clips and animations of busways and bus lanes in New York City. How to Use the Tremont Avenue Busway The busway will be in effect every day from 6am to 8pm. Download the How to Use the Tremont Avenue Busway brochure (pdf) Descargue un folleto sobre cómo usar el carril de buses en Tremont Avenue (Spanish pdf) Every day from 6am to 8pm: Only buses, trucks with over six wheels, Access-A-Ride vans, emergency vehicles, and bicycles may travel all the way through, eastbound from Third Avenue to Southern Boulevard and westbound from Southern Boulevard to Belmont Avenue. Passenger vehicles, including for-hire vehicles, may turn onto the busway from a side street but must make the next available right turn to leave the busway. Passenger vehicles may drop off and pick up all along the busway. No vehicles may turn left from the busway, except trucks may turn left at Third Avenue. Parking will be allowed along the entire busway. Follow rules on parking signs. Overnight from 8pm to 6am: Busway regulations are not in effect. All vehicles may drive all the way through Tremont Avenue and may make left and right turns unless otherwise posted. Parking will be allowed along the entire busway. Follow rules on parking signs. How to Reach Your Block Along the Busway The maps below show drivers how to reach their desired block when the Tremont Avenue Busway is in effect. Green arrows show permitted route to enter and turn onto. Blue arrows indicate when drivers must turn to exit. Driving Eastbound: If you enter Tremont Avenue from Third and Lafontaine Avenue, you must turn right to exit on Arthur Avenue If you enter Tremont Avenue from Belmont and Hughes Avenues, you must turn right to exit on Crotona Avenue If you enter Tremont Avenue from Crotona Avenue, you must turn right to exit on Clinton Avenue If you enter Tremont Avenue from Clinton, Prospect, and Mapes Avenues, you must turn right to exit on Marmion Avenue If you enter Tremont Avenue from Marmion Avenue, you must turn right to exit on Southern Boulevard Driving Westbound: If you enter Tremont Avenue from Southern Boulevard and Marmion Avenues, you must turn right to exit on Mapes Avenue If you enter Tremont Avenue from Mapes Avenue, you must turn right to exit on Prospect Avenue If you enter Tremont Avenue from Prospect and Clinton Avenues, you must turn right to exit on Crotona Avenue If you enter Tremont Avenue from Crotona Avenue, you must turn right to exit on Belmont Avenue Busway Signage and Street Markings Signs alerting travelers that they are approaching the busway: Signs informing passenger vehicles when they must turn right to exit the busway: The beginning and end of every block of the busway will be painted red with \"BUS TRUCK ONLY\" white markings, so drivers know when they are turning onto the busway. Busway markings on 181st Street Frequently Asked Questions Will passenger vehicles, including for-hire vehicles, be allowed on the busway? Yes, all passenger and for-hire vehicles will be allowed to enter the Tremont Avenue Busway to access any block. Vehicles may turn onto the busway from a side street, then must make the next available right turn. How will I know the busway rules when I am driving on Tremont Avenue? There will be red paint on the street whenever you turn onto the busway. There will also be signage posted on Tremont Avenue and intersecting streets that explain the required turns and regulations. Will parking be allowed on the busway? Yes, parking will be allowed on the busway. Follow the posted parking regulations. Why will left turns not be allowed from the busway? Left turn bans prevent traffic from getting stuck behind turning vehicles. These restrictions also improve pedestrian safety, as left turns are associated with high rates of pedestrian injuries. Tremont Avenue already has numerous left turn bans. Where will I be able to be dropped off or picked up? Pickups, drop-offs, truck loading and parking will be allowed throughout Tremont Avenue. Any vehicle will be able to expeditiously pick up or drop off a passenger along the busway. Drivers are responsible for following traffic rules and posted signage. If I cannot drive all the way down Tremont Avenue, what other routes may I use? If you are traveling westbound, you may drive on 180th Street, 179th Street, 175th Street, the Cross Bronx Expressway, or other routes. If you are traveling eastbound, you may drive on 180th Street, Crotona Park North, the Cross Bronx Expressway, or other routes. Which vehicles are considered trucks? A truck is any vehicle designed to transport property that has more than two axles or six or more tires. Why will trucks be allowed? Tremont Avenue is a designated truck route. Allowing trucks on the busway helps to limit through truck traffic on side streets. Where will trucks be allowed to load and unload on the busway? There are designated truck loading zones. Check posted signage for exact locations. Review a map of loading zones for commercial deliveries How is a busway enforced? NYPD traffic agents and automated cameras enforce regulations by giving warnings and summonses. Violating bus lane rules may result in a $50 to $250 fine. Can cyclists use the busway? Cyclists will be able to ride in the Tremont Avenue bike lane for the full length of the busway. Cyclists do not need to make any of the required turns. Community Outreach NYC DOT and MTA conducted more than 40 outreach meetings and events with elected officials, community boards, local businesses, shoppers, community stakeholders, bus riders, and members of the public. Feedback from these engagements helped shape the final busway. Tremont Avenue community board presentations Contact If you have questions or comments about MTA bus schedules , fare collection machines, fare enforcement, or general MTA issues (e.g., MetroCard, OMNY, subway service) please contact the MTA online or call 511. If you have a transportation-related problem, comment, or question about the Tremont Avenue Busway, contact the NYC DOT Commissioner online . Home Better Buses Busways About Select Bus Service Select Bus Service Features Paying Your Fare Bus Lane Rules Select Bus Service Routes 125th Street–LaGuardia Airport 14th Street 23rd Street 34th Street 79th Street 86th Street First & Second Avenues Fordham Road & Pelham Parkway Hylan Boulevard Nostrand Avenue & Rogers Avenues South Bronx Southern Brooklyn The Bronx-Flushing-Jamaica Utica Avenue Webster Avenue Woodhaven & Cross Bay Boulevards Woodside–Jackson Heights Airport Connector Studies Contact Us Translate Page Copyright The City of New York Contact Us Privacy Policy Terms of Use"
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    },
+    {
+      "submission_id": "sub_ffadae6e6d6ad6e6",
+      "source_id": "brt_m23_cb5_mar2016",
+      "local_observation_id": "entity_brt_m23_cb5_mta",
+      "current_target_record_id": "entity_mta-nyct",
+      "lexical_review_bucket": "explicit_umbrella_name",
+      "identifying_text": "Metropolitan Transportation Authority (MTA) \nThe MTA logo is a circular emblem with the letters 'MTA' in a bold, white, sans-serif font \nMetropolitan Transportation Authority \nMTA",
+      "label": "Metropolitan Transportation Authority (MTA)",
+      "raw_text": "The MTA logo is a circular emblem with the letters 'MTA' in a bold, white, sans-serif font",
+      "payload": {
+        "entity_name": "Metropolitan Transportation Authority",
+        "acronym": "MTA",
+        "entity_type": "agency",
+        "description": "Presented the M23 Select Bus Service draft plan alongside NYC DOT."
+      },
+      "evidence": [
+        {
+          "evidence_id": "brt_m23_cb5_mar2016#p001_c0005",
+          "text_sha256": "sha256:f4f375da7c4df69575652d9a18d3c769c2d572dde6a7c22623fd5fda660d3c99",
+          "retrieval_status": "staged_block_retrieved",
+          "raw_text": "The MTA logo is a circular emblem with the letters 'MTA' in a bold, white, sans-serif font, set against a dark blue background."
+        }
+      ],
+      "downstream_local_relations": [],
+      "review_status": "requires_authoritative_evidence_review",
+      "permitted_decisions": [
+        "retain_nyct_target",
+        "retarget_umbrella_mta",
+        "retire_evidence_unsupported_observation"
+      ]
+    }
+  ]
+}

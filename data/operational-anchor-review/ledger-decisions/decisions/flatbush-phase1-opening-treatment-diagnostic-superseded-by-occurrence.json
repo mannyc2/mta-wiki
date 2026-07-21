@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "decision_id": "flatbush-phase1-opening-treatment-diagnostic-superseded-by-occurrence",
+  "gap_id": "operational-coverage:46e9eb46b742c9a76a0241f3",
+  "prior_verdict": "unreviewed",
+  "verdict": "not_applicable",
+  "reviewer": "codex-flatbush-phase1-onset-2026-07-21",
+  "decided_at": "2026-07-21T04:00:00.000Z",
+  "rationale": "The raw event-neighborhood diagnostic sees other Flatbush treatments from later phases and the broader program, but approved occurrence occurrence:8c987704152b459014217d44 binds the October 2 opening to the single bounded center-running bus-lane treatment between Livingston Street and State Street. The raw treatment diagnostic is therefore superseded and must not broaden Phase 1.",
+  "proposal_ids": [],
+  "evidence_refs": [],
+  "search_receipt_ids": []
+}

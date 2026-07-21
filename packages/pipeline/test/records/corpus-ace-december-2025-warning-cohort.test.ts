@@ -382,9 +382,9 @@ describe("December 2025 B60/B68/M57 ACE warning-phase cohort", () => {
 
   it("terminalizes both successor diagnostics and keeps all search receipts on the final corpus", () => {
     const queue = readJsonl<CoverageQueueRow>("data/quality/operational-coverage/priority-queue.jsonl");
-    expect(queue).toHaveLength(492);
+    expect(queue).toHaveLength(494);
     expect(queue.filter((row) => row.status === "open")).toHaveLength(0);
-    expect(queue.filter((row) => row.status === "terminal")).toHaveLength(492);
+    expect(queue.filter((row) => row.status === "terminal")).toHaveLength(494);
     const eventRows = queue.filter((row) => row.event_record_id === eventId);
     expect(eventRows).toHaveLength(2);
     for (const gap of successorGaps) {

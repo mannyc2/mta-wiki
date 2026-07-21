@@ -734,7 +734,7 @@ describe("relationship-contract-v1 SQLite mirror", () => {
       expect(loaded.matrix.obsolete_baseline_tuple_policy).toBe(
         "reject",
       );
-      expect(loaded.matrix.covered_relation_count).toBe(21_422);
+      expect(loaded.matrix.covered_relation_count).toBe(21_424);
       expect(loaded.matrix.allowed_family_shape_count).toBe(1_008);
       expect(tuples).toHaveLength(1_008);
       expect(

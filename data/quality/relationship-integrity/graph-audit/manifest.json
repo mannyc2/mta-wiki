@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "contract_id": "relationship-contract-v1",
-  "contract_sha256": "c42c838e230e6f924536a32ac5583db06a0d3068c6a1c4d6523530bdfcc9aafd",
-  "endpoint_matrix_sha256": "44f4e38549bd5134764cbe64231687a5ae315217291ea9b95011d6dc3d76d54c",
-  "canonical_relations_sha256": "0dd596691bdd6e922b62aa254885c2413498ceb03ba8531d1e0445f8f1af6375",
-  "input_fingerprint": "f71aca4d8be43b9b549148db924ba69ec1e8f8701f73cc151b841a0bb7bcf607",
+  "contract_sha256": "a7278086536d4511ee22bd60380b8da68b19e262d43c8c5c9084213f15dd9d32",
+  "endpoint_matrix_sha256": "1ab60a2651a1791d84f3194546888864e4ae2ae5daf40b848ef8c9aa6bba1509",
+  "canonical_relations_sha256": "93459fd3c0c1660a85eac1b1e26fe1cfbd7085dc1d3dce4494a8f667b9a7bc06",
+  "input_fingerprint": "ddcf693f4b9ec98a2f9f96921b43e9b149e9b30b19c6cf89c6ec306123239614",
   "mode": "enforce",
   "artifacts": [
     {
@@ -19,16 +19,16 @@
     },
     {
       "path": "relation-audit.jsonl",
-      "sha256": "9a509ab48c5628564c5959543f486ec1059598b9735a6df640cc1fa859942cca",
-      "rows": 21422
+      "sha256": "3a1a8834c2acc41868899dba57e51e8fd29e35a5d8c9e31cc06b1f9cfc8e1816",
+      "rows": 21424
     },
     {
       "path": "report.md",
-      "sha256": "d84b74651a6663a12feedd1b29d8627f0ffadf54e19b95b28a8bfb49dc152c44"
+      "sha256": "22152027a339993ff3b395e46b0a5039aaab845625e9d02367d4a94a559d5830"
     },
     {
       "path": "summary.json",
-      "sha256": "7b77d742fc5cac8e3b3497d254591db0a3381bd694195b013f09252d70672e91"
+      "sha256": "a9dbd8bcd880c5ef1dff3f0daffb0794d13e9082cf03e44c7b5558e48b17d84d"
     }
   ],
   "reproduction_commands": [

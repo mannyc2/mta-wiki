@@ -98,7 +98,11 @@ const apply = args.includes("--apply");
 
 const manifestPath = join(repoRoot, "data", "quality", "operational-coverage", "manifest.json");
 const manifest = readJson<CoverageManifest>(manifestPath);
-assert(manifest.route_anchor_path.startsWith("data/exports/releases/"), "Coverage route-anchor pin changed");
+assert(
+  manifest.route_anchor_path.startsWith("data/exports/releases/") ||
+    manifest.route_anchor_path.startsWith("data/quality/route-identity/"),
+  "Coverage route-anchor pin changed",
+);
 const routeAnchors = readJsonl<RouteAnchorRow>(join(repoRoot, manifest.route_anchor_path)).sort((left, right) =>
   `${left.gtfs_route_id ?? ""}|${left.canonical_route_record_id ?? ""}`.localeCompare(
     `${right.gtfs_route_id ?? ""}|${right.canonical_route_record_id ?? ""}`,

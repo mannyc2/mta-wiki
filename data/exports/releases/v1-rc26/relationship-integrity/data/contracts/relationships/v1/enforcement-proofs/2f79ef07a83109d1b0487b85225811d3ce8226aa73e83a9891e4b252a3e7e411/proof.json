@@ -1,0 +1,95 @@
+{
+  "all_gates_ready": true,
+  "contract_id": "relationship-contract-v1",
+  "final_matrix": {
+    "path": "data/contracts/relationships/v1/post-remediation-endpoint-matrix.json",
+    "relation_count": 21424,
+    "relation_ids_sha256": "34fed6f5677dd91cd2ab3d3533fa827f65b82ed1586c19e82bb9053a4d8cd73b",
+    "sha256": "1ab60a2651a1791d84f3194546888864e4ae2ae5daf40b848ef8c9aa6bba1509",
+    "tuple_count": 1008,
+    "tuple_set_sha256": "8278320f178d7e221aaa0dfedfa28d853bbe2852bbcf438631e9501c1a22005e"
+  },
+  "gate_count": 7,
+  "gates": [
+    {
+      "artifact_path": "data/contracts/relationships/v1/enforcement-gates/bus_lane_acquisition_linkage.json",
+      "artifact_sha256": "b9d8275877e8316dd9c3642b7452f8e9f752ee8cb7c8cf43271726f9e32d1f63",
+      "criteria": [
+        "The pinned 321-candidate acquisition set is researched, receipted, and exclusively accounted.",
+        "All 54 evidence-supported linkage relation identities are live canonical relations with exact endpoints and evidence."
+      ],
+      "gate_id": "bus_lane_acquisition_linkage",
+      "status": "ready",
+      "violation_count": 0
+    },
+    {
+      "artifact_path": "data/contracts/relationships/v1/enforcement-gates/determinism_and_consumer_proof.json",
+      "artifact_sha256": "a2390bfe8a6319573dbb142cc7175f64f32108d0b48238159d38c9cfb5024865",
+      "criteria": [
+        "Two clean materializations, SQLite rebuilds, and release exports reproduce byte hashes.",
+        "The complete command suite passes while LATEST, rc20, and Tracker state remain immutable."
+      ],
+      "gate_id": "determinism_and_consumer_proof",
+      "status": "ready",
+      "violation_count": 0
+    },
+    {
+      "artifact_path": "data/contracts/relationships/v1/enforcement-gates/occurrence_treatment_physicality.json",
+      "artifact_sha256": "467e20d308af6c8d06db68afc17139239d85fa78df3f4e65a4b4cab8d7a398f5",
+      "criteria": [
+        "Every eligible occurrence has reviewed phase identity and every physical treatment has supported physical scope."
+      ],
+      "gate_id": "occurrence_treatment_physicality",
+      "status": "ready",
+      "violation_count": 0
+    },
+    {
+      "artifact_path": "data/contracts/relationships/v1/enforcement-gates/payload_reference_integrity.json",
+      "artifact_sha256": "8667cb0715134021dd6aa4ea2b0c0f9ba2e0c23275fac3e93b0cd9af8a66d8df",
+      "criteria": [
+        "Every enforceable payload reference resolves uniquely or is covered by an exact reviewed decision."
+      ],
+      "gate_id": "payload_reference_integrity",
+      "status": "ready",
+      "violation_count": 0
+    },
+    {
+      "artifact_path": "data/contracts/relationships/v1/enforcement-gates/referential_type_evidence_integrity.json",
+      "artifact_sha256": "2738f258a6c2aa3732d79e04db047561478c3dbe8cd8f6425c10f9cb9f390c3d",
+      "criteria": [
+        "Repository and sealed SQLite diagnostics prove zero endpoint, type, evidence, parity, selector, waiver, and foreign-key violations."
+      ],
+      "gate_id": "referential_type_evidence_integrity",
+      "status": "ready",
+      "violation_count": 0
+    },
+    {
+      "artifact_path": "data/contracts/relationships/v1/enforcement-gates/relationship_completeness.json",
+      "artifact_sha256": "c96ab528b0e35ec73dbcf851c5f3226f60a792129ddd36052f68c8d851246db0",
+      "criteria": [
+        "Every versioned completeness selector has zero warnings and its complete denominator is reconciled."
+      ],
+      "gate_id": "relationship_completeness",
+      "status": "ready",
+      "violation_count": 0
+    },
+    {
+      "artifact_path": "data/contracts/relationships/v1/enforcement-gates/semantic_remediation.json",
+      "artifact_sha256": "3c59c96f2f9f188176b8f7f1e7503383b4db31ad20b4d6f9d998ee8368fff7e5",
+      "criteria": [
+        "Every reviewed semantic decision is reconciled with zero skipped corrections and zero unmapped relations."
+      ],
+      "gate_id": "semantic_remediation",
+      "status": "ready",
+      "violation_count": 0
+    }
+  ],
+  "proof_id": "relationship-contract-v1-enforcement-proof",
+  "proof_stage": "pre_promotion_warning",
+  "proof_status": "ready",
+  "reviewed_at": "2026-07-21T04:00:00.000Z",
+  "reviewed_by": "codex-flatbush-onset-2026-07-21",
+  "schema_version": 2,
+  "total_violation_count": 0,
+  "validation_mode": "warn"
+}
