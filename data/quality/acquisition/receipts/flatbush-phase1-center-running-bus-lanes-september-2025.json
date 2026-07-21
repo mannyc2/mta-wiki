@@ -1,13 +1,14 @@
 {
   "schema_version": 1,
   "receipt_id": "flatbush-phase1-center-running-bus-lanes-september-2025",
-  "status": "new_official_start_evidence_and_staged_retrospective_delivery_reconciled",
-  "operator": "codex-corpus-completion-2026-07-13",
-  "reviewed_at": "2026-07-13T18:45:00Z",
+  "status": "authoritative_installation_and_operational_opening_phases_reconciled",
+  "operator": "codex-flatbush-onset-2026-07-21",
+  "reviewed_at": "2026-07-21T02:50:00Z",
   "scope": {
     "umbrella_project_record_id": "project_flatbush-avenue-bus-priority-brooklyn",
     "bounded_project_record_id": "project_flatbush-phase1-center-running-bus-lanes-livingston-state",
     "installation_start_event_record_id": "event_flatbush-phase1-installation-start-sep2025",
+    "operational_opening_event_record_id": "event_flatbush-phase1-operational-opening-2025-10-02",
     "installation_completion_event_record_id": "event_flatbush-av-phase1-installed-fall2025",
     "treatment_record_id": "treatment_flatbush-phase1-center-running-bus-lanes-livingston-state",
     "route_record_ids": [
@@ -20,9 +21,10 @@
     ]
   },
   "acquisition_outcome": {
-    "result": "A newly captured official NYC DOT release supplies month-bounded installation-start evidence. An already-staged official NYC DOT retrospective independently confirms delivery of the identical two-block Phase 1 during Fall 2025 and supplies the direct B41/B67 bus-lane context.",
+    "result": "The September release supplies month-bounded installation-commencement evidence. Pinned official NYC DOT bus-lane rows identify October 2, 2025 as the opening date, and DCP LION nodes prove that their five SegmentIDs form the identical Livingston Street-to-State Street Phase 1 chain. The April retrospective independently confirms delivery and the direct B41/B67 bus-lane context.",
     "new_acquisition_required": true,
     "new_source_id": "nyc_dot_flatbush_installation_begins_2025",
+    "operational_opening_source_id": "nyc_dot_bus_lanes_flatbush_phase1_opening_2025",
     "retrospective_source_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026"
   },
   "official_source_captures": [
@@ -68,6 +70,51 @@
       ]
     },
     {
+      "source_id": "nyc_dot_bus_lanes_flatbush_phase1_opening_2025",
+      "title": "Bus Lanes - Local Streets: Flatbush Avenue Phase 1 opening rows",
+      "publisher": "NYC Department of Transportation, with NYC Department of City Planning LION segment context",
+      "document_date": "2026-04-06",
+      "retrieved_at": "2026-07-21T02:08:00Z",
+      "source_url": "https://data.cityofnewyork.us/Transportation/Bus-Lanes-Local-Streets/ycrg-ses3",
+      "artifacts": {
+        "metadata_json_sha256": "1b1fc88b7222827c1548e2059239bac0ca4b7f1b3157285c6bcc2a991a59f33d",
+        "text_txt_sha256": "9e5bb13ddc9b8bc1bf680544d1b1224ccd9ecc4a9aeed5c97bc172d6c5eeb7d6",
+        "blocks_jsonl_sha256": "7c1b6f0059e114795a3e62a2175fff32d001e4d016790c39fbabe45fcc0e4ad8",
+        "bus_lanes_view_metadata_json_sha256": "33cd64b3ac584603a66e52375bf7ceb7e6c6db49d40202ecf9940f89ee92e2ea",
+        "bus_lanes_columns_json_sha256": "f495f728925b7b807dec228987cfbcb4e9e55279dd1d4edda79c20f3baa7cefe",
+        "bus_lanes_selected_json_sha256": "a741b434f60f0fbb85a582c44c0c166133f9188386c6000f61d4df2a93f2297d",
+        "lion_selected_segments_json_sha256": "46c7fd07197f5cf30fa1f9f77b3970c357dc7b2f77f36a22ad1764dcec10beff",
+        "lion_adjoining_nodes_json_sha256": "7e3f301a6b4a39a6be8efe1ab440a855c819f9be897ef16e82697b7c0bbb50e7"
+      },
+      "evidence": [
+        {
+          "evidence_id": "nyc_dot_bus_lanes_flatbush_phase1_opening_2025#p001_b0021",
+          "evidence_sha256": "sha256:53c56e6b944ea96baa1fdfdb1271b00e16d340971a9e38670073a6f3bd1133f8",
+          "finding": "The NYC DOT schema defines Open_dates as the year bus lane opened."
+        },
+        {
+          "evidence_id": "nyc_dot_bus_lanes_flatbush_phase1_opening_2025#p001_b0024",
+          "evidence_sha256": "sha256:beeb03436da20f7c7f9599a09d6348d4a73870a16d658a4da0f522d2a153d36a",
+          "finding": "The NYC DOT schema defines Year1 as the year the bus lanes went into effect."
+        },
+        {
+          "evidence_id": "nyc_dot_bus_lanes_flatbush_phase1_opening_2025#p001_b0026",
+          "evidence_sha256": "sha256:a9efa305f871209c2dfd30b9ae08c9087d8f90613481f9f5902c0bdb6cfff993",
+          "finding": "The pinned selected response contains nine directional rows over five distinct Flatbush Avenue SegmentIDs, all with Open_dates 10/2/2025."
+        },
+        {
+          "evidence_id": "nyc_dot_bus_lanes_flatbush_phase1_opening_2025#p001_b0042",
+          "evidence_sha256": "sha256:411346e11e8811c49f567f474ccfb9ac463038e97f7c48079e6697bc2318490d",
+          "finding": "DCP LION identifies Livingston Street at the outer node of the selected segment chain."
+        },
+        {
+          "evidence_id": "nyc_dot_bus_lanes_flatbush_phase1_opening_2025#p001_b0043",
+          "evidence_sha256": "sha256:a5c8fb8f547553c4f64890270b8dff1d160ef9efbfb375eb3ff76c90e0b40a67",
+          "finding": "DCP LION identifies State Street at the other outer node of the selected segment chain."
+        }
+      ]
+    },
+    {
       "source_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026",
       "upstream_source_id": "nyc_dot_bus_priority_document_pdf_flatbush_ave_bus_priority_mtp_briefing_apr2026",
       "title": "Flatbush Avenue Bus Priority - Major Transportation Project Briefing - April 2026",
@@ -100,14 +147,20 @@
     "installation_start_lifecycle_phase": "installed",
     "installation_start_basis": "The September 25 release says work will start that week; the April 2026 retrospective confirms that the identical bounded phase was installed during Fall 2025.",
     "exact_physical_start_date": null,
-    "exact_operational_activation_date": null,
+    "operational_opening_event_record_id": "event_flatbush-phase1-operational-opening-2025-10-02",
+    "operational_opening_date_normalized": "2025-10-02",
+    "operational_opening_date_precision": "day",
+    "operational_opening_lifecycle_phase": "launched",
+    "operational_opening_basis": "NYC DOT's Open_dates field records 10/2/2025 for every selected Flatbush segment, its schema defines that field as the bus-lane opening, and DCP LION proves the selected segments are the same Livingston Street-to-State Street chain.",
+    "exact_operational_activation_date": "2025-10-02",
     "installation_completion_date_normalized": "2025-fall",
     "installation_completion_date_precision": "season",
     "installation_completion_event_disposition": "Retain the official Fall 2025 completion milestone as a separate canonical event, but do not project it as a second operational occurrence for the same two-block treatment.",
     "rejected_inferences": [
       "The September 25 publication date is not an exact physical installation or operational activation day.",
       "The weather-dependent two-week completion forecast is not evidence of an exact realized completion date.",
-      "The April 2026 retrospective's 'last fall' wording does not support finer than season precision for completion."
+      "The April 2026 retrospective's 'last fall' wording does not support finer than season precision for physical completion.",
+      "The September installation commencement and October 2 operational opening are not competing dates or separate occurrences; they are explicitly related phases of the same bounded intervention."
     ]
   },
   "route_scope_adjudication": {
@@ -195,16 +248,30 @@
   },
   "double_count_control": {
     "occurrence_founder_event_record_id": "event_flatbush-phase1-installation-start-sep2025",
-    "single_occurrence_rule": "Project one operational occurrence at 2025-09 month precision for the bounded two-block Phase 1 installation start, with exactly B41 and B67 and exactly one atomic center-running-bus-lane treatment.",
+    "operational_onset_event_record_id": "event_flatbush-phase1-operational-opening-2025-10-02",
+    "single_occurrence_rule": "Project one operational occurrence at 2025-10-02 day precision for the bounded two-block Phase 1 opening, with exactly B41 and B67 and exactly one atomic center-running-bus-lane treatment. Preserve the stable occurrence ID and its historical September founder event.",
+    "installation_commencement_rule": "The September 2025 event remains canonical construction history and is related to the October opening by relation_flatbush-phase1-installation-precedes-opening-2025-10-02; it is not the causal operational onset.",
     "completion_milestone_rule": "The Fall 2025 completion event remains canonical timeline history for the same implementation unit and is not a second occurrence.",
     "planning_milestone_rule": "The 2025 goal, Spring/Summer 2025 proposal, Fall 2025 markings forecast, and Late Fall 2026 opening forecast remain planned and cannot found realized occurrences.",
     "scope_inheritance_rule": "Do not infer routes or treatments from the umbrella Flatbush Avenue project; only the bounded project's delivered route and treatment relations are projectable.",
     "phase_boundary_rule": "Do not mix Phase 2 or wider-corridor elements into the Phase 1 treatment bundle."
   },
   "reproducibility": {
-    "curation_script": "scripts/curate-flatbush-phase1-installation-september-2025.ts",
-    "submission_journal": "data/submissions/2026-07-13_codex_flatbush-phase1-installation-september-2025.jsonl",
-    "observation_count": 11,
+    "curation_scripts": [
+      "scripts/curate-flatbush-phase1-installation-september-2025.ts",
+      "scripts/curate-flatbush-phase1-operational-opening-2025-10-02.ts"
+    ],
+    "submission_journals": [
+      "data/submissions/2026-07-13_codex_flatbush-phase1-installation-september-2025.jsonl",
+      "data/submissions/2026-07-21_codex_flatbush-phase1-operational-opening-2025-10-02.jsonl"
+    ],
+    "observation_count": 15,
+    "operational_opening_submission_ids": [
+      "sub_875db57fd53214d0",
+      "sub_c27e3c28035fe01a",
+      "sub_314eb0cfc86b732f",
+      "sub_cfe653a00a99089c"
+    ],
     "semantic_correction_ids": [
       "core-coverage-flatbush-01-phase1-september-start-realized-20260713",
       "core-coverage-flatbush-02-phase1-project-resolved-status-20260713",

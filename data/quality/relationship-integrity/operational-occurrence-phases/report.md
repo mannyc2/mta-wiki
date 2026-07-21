@@ -4,22 +4,22 @@ This deterministic review covers all 131 current schema-v2 operational occurrenc
 
 ## Result
 
-- Phase identity memberships: 131
-- Unique canonical phase events: 131
-- Projected evidence-backed phase relations: 0
-- Event-to-event candidates explicitly checked: 0
+- Phase identity memberships: 132
+- Unique canonical phase events: 132
+- Projected evidence-backed phase relations: 1
+- Event-to-event candidates explicitly checked: 1
 - Findings requiring review: 0
 - Phase hard-mode ready: true
 
 | Primary disposition | Count |
 | --- | ---: |
-| single_observed_phase_no_related_phase_asserted | 131 |
-| evidence_bound_related_phases | 0 |
+| single_observed_phase_no_related_phase_asserted | 130 |
+| evidence_bound_related_phases | 1 |
 | review_required | 0 |
 
 | Candidate disposition | Count |
 | --- | ---: |
-| projected_reviewed_phase_relation | 0 |
+| projected_reviewed_phase_relation | 1 |
 | not_projected_external_event_not_selected | 0 |
 | not_projected_non_phase_semantics | 0 |
 | review_required_unprojected_same_occurrence_temporal_relation | 0 |
@@ -28,15 +28,15 @@ The single-phase disposition means only that the accepted occurrence review sele
 
 ## Reproduction pins
 
-- Route-anchor release: v1-rc25
-- Route-anchor release input fingerprint: `6cc677584bb144479d183543aa562931a27604cfdcfa9d5f56125693261eb686`
-- Current canonical record count: 85392
-- Schema-v2 occurrence projection SHA-256: `9c751b39912d25a3d72ac0c94a1b45a253bc087cad4c7b20d07014cc572111a1`
-- Canonical phase/event-relation projection SHA-256: `5326bb2f7b2e01a5d78efc4ef78da5743e53ae72833e016c48ef1c81d74f0e52`
+- Route-anchor release: v1-rc26
+- Route-anchor release input fingerprint: `150d9c97266525adb25dd1b910e7fc278f274151216593e48c6500efe23e1d6b`
+- Current canonical record count: 85396
+- Schema-v2 occurrence projection SHA-256: `4d556489b096d11a040aaad446b25432f3d88e6c8b9a3b3f41a842aede391e22`
+- Canonical phase/event-relation projection SHA-256: `0829cf2b044c31f32b0899540bb7586be77e891b9ec759a103e22bcdf3d43d69`
 
 Reproduce or verify with:
 
 ```bash
-bun scripts/generate-operational-occurrence-phase-review-v1.ts --check --route-anchor-release-dir data/exports/releases/v1-rc25
+bun scripts/generate-operational-occurrence-phase-review-v1.ts --check --route-anchor-release-dir data/exports/releases/v1-rc26
 bun test packages/pipeline/test/quality/operational-occurrence-phases.test.ts
 ```

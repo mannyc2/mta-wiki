@@ -5,7 +5,7 @@
   "reviewer": "codex-corpus-completion-2026-07-13",
   "searched_at": "2026-07-13T21:10:00.000Z",
   "rationale": "Searched every source required by the event gap, both duplicate November 2024 NYC DOT decks, the full captured artifact-tree registry, and the official NYC DOT/MTA web surfaces for a day- or month-level physical activation date. The November decks say only Fall 2024 and installed; earlier project materials are prospective, while later materials do not backfill an exact queue-jump onset. November 4 is the presentation/status-as-of date and was not inferred as activation.",
-  "corpus_fingerprint": "cff72c44869e330666a9e90a3612d95c0dea7a99cdaf5653b404bb6931a5b493",
+  "corpus_fingerprint": "d608a3372f188808fa45d12a53790ceaaeae4b892a3a340e0124883b6305f589",
   "source_searches": [
     {
       "source_id": "2012_10_brt_webster_cac3_meeting_summary",

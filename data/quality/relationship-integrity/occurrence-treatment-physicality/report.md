@@ -1,6 +1,6 @@
 # Eligible occurrence treatment physicality review
 
-- Release snapshot: `v1-rc25` (`final_post_semantic_release`).
+- Release snapshot: `v1-rc26` (`final_post_semantic_release`).
 - Eligible operational occurrences: 130.
 - Unique reviewed treatment records: 269.
 - Treatment memberships: 269.

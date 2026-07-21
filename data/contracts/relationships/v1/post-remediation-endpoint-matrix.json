@@ -6,22 +6,22 @@
   "obsolete_baseline_tuple_policy": "reject",
   "generated_from": {
     "projected_relations_path": "data/quality/relationship-integrity/semantic-remediation/projected-relations.jsonl",
-    "projected_relations_sha256": "f8d5d6088f03495e62b68f747484bf963bb985a9d3bdf50e8a18e1e0540d635e",
-    "projected_relations_logical_sha256": "584e59d4b9359d4901e6061d3697f8b2fe5f0015037f286804d09568700e5715",
+    "projected_relations_sha256": "1d7eb621f15620e9b24f5ca023f65c20383f3d26b4c6eaa4094f6c5adaeef03d",
+    "projected_relations_logical_sha256": "be26c053bd2f51aadecc1369be88d39b4644b9fbb27a6e0e3f901812609c3d0e",
     "projected_tuples_path": "data/quality/relationship-integrity/semantic-remediation/projected-tuples.json",
-    "projected_tuples_sha256": "63ba1e301abdbfe23ee1d54a030fb71f4482e6248d01666673061f9381ff1701",
-    "projected_tuples_logical_sha256": "9a5ba7e0fa811ec72fcc2eb6539f095c4df26c946e0854d34a18a25957253907",
+    "projected_tuples_sha256": "c7a18628e490fd8da3ce0be01960ed03180a67817bf7e9e270c6e43859244055",
+    "projected_tuples_logical_sha256": "461aea6213aeb4afe15f8c8efc82f82ce609fa1060c1149d0bfe5eeb87f83f38",
     "semantic_remediation_summary_path": "data/quality/relationship-integrity/semantic-remediation/summary.json",
-    "semantic_remediation_summary_sha256": "f19cdd61c0c57049adab0d2abf08c5cf01d2e64b85d66a960b6816b1164a2b66",
+    "semantic_remediation_summary_sha256": "39b26f24c82a067b2dc7b3bd10324a81c9e8b790d927feafc84c513069136f23",
     "campaign_id": "relationship-semantic-remediation-v1",
     "skipped_correction_count": 0,
     "unmapped_relation_count": 0
   },
   "relation_kind_rule_count": 704,
-  "covered_relation_count": 21422,
+  "covered_relation_count": 21424,
   "allowed_family_shape_count": 1008,
-  "relation_ids_sha256": "39b313412f097585ae8359b9aa479212e184bb4d763c7cc06d78d4c7406139d1",
-  "tuple_set_sha256": "629f15b36de36b57c4724d6790b22acc24ff245ec7457ec9f9b3dbe002aab58f",
+  "relation_ids_sha256": "34fed6f5677dd91cd2ab3d3533fa827f65b82ed1586c19e82bb9053a4d8cd73b",
+  "tuple_set_sha256": "8278320f178d7e221aaa0dfedfa28d853bbe2852bbcf438631e9501c1a22005e",
   "rules": [
     {
       "relation_kind": "about",
@@ -10533,8 +10533,8 @@
             "semantic-correction/relationship-integrity-legacy-0212-relation-security-grant-july-meeting",
             "semantic-correction/relationship-integrity-legacy-0213-relation-spruce-up-2025-event"
           ],
-          "relation_count": 2940,
-          "relation_ids_sha256": "1af92777f0792a7bd211aa0104004a4c302085153a64ea7995f64d3c4e939b3f"
+          "relation_count": 2941,
+          "relation_ids_sha256": "36556a4373bfd64474aa07e1ba2eded22aab889e5e2d4d8d8c2510557548f7bc"
         },
         {
           "relation_family": "timeline_context",
@@ -16487,8 +16487,8 @@
           "review_decision_ids": [
             "relationship-contract-v1/semantic-review/part-0/tuple-789"
           ],
-          "relation_count": 1,
-          "relation_ids_sha256": "eac5c69dd0848a8bdf40a1aa2a8ff461a4ab493664d886db7445204392530e4e"
+          "relation_count": 2,
+          "relation_ids_sha256": "9a45335961e5d63afec2849a0b0e41a917cdc44454bb63762410fe75592fb111"
         }
       ],
       "review_basis": "reviewed_post_remediation"

@@ -81,25 +81,25 @@ const PROJECTED_TUPLES_PATH = join(
 );
 const SEMANTIC_SUMMARY_PATH = join(SEMANTIC_ROOT, "summary.json");
 
-const REVIEWED_AT = "2026-07-17T00:00:00.000Z";
-const REVIEWED_BY = "codex-relationship-integrity-campaign";
-const EXPECTED_RELATION_COUNT = 21_422;
+const REVIEWED_AT = "2026-07-21T04:00:00.000Z";
+const REVIEWED_BY = "codex-flatbush-onset-2026-07-21";
+const EXPECTED_RELATION_COUNT = 21_424;
 const EXPECTED_TUPLE_COUNT = 1_008;
 const EXPECTED_RELATION_KIND_COUNT = 704;
 const EXPECTED_PROJECTED_RELATIONS_SHA256 =
-  "f8d5d6088f03495e62b68f747484bf963bb985a9d3bdf50e8a18e1e0540d635e";
+  "1d7eb621f15620e9b24f5ca023f65c20383f3d26b4c6eaa4094f6c5adaeef03d";
 const EXPECTED_PROJECTED_RELATIONS_LOGICAL_SHA256 =
-  "584e59d4b9359d4901e6061d3697f8b2fe5f0015037f286804d09568700e5715";
+  "be26c053bd2f51aadecc1369be88d39b4644b9fbb27a6e0e3f901812609c3d0e";
 const EXPECTED_PROJECTED_TUPLES_SHA256 =
-  "63ba1e301abdbfe23ee1d54a030fb71f4482e6248d01666673061f9381ff1701";
+  "c7a18628e490fd8da3ce0be01960ed03180a67817bf7e9e270c6e43859244055";
 const EXPECTED_PROJECTED_TUPLES_LOGICAL_SHA256 =
-  "9a5ba7e0fa811ec72fcc2eb6539f095c4df26c946e0854d34a18a25957253907";
+  "461aea6213aeb4afe15f8c8efc82f82ce609fa1060c1149d0bfe5eeb87f83f38";
 const EXPECTED_SEMANTIC_SUMMARY_SHA256 =
-  "f19cdd61c0c57049adab0d2abf08c5cf01d2e64b85d66a960b6816b1164a2b66";
+  "39b26f24c82a067b2dc7b3bd10324a81c9e8b790d927feafc84c513069136f23";
 const EXPECTED_RELATION_IDS_SHA256 =
-  "39b313412f097585ae8359b9aa479212e184bb4d763c7cc06d78d4c7406139d1";
+  "34fed6f5677dd91cd2ab3d3533fa827f65b82ed1586c19e82bb9053a4d8cd73b";
 const EXPECTED_TUPLE_SET_SHA256 =
-  "629f15b36de36b57c4724d6790b22acc24ff245ec7457ec9f9b3dbe002aab58f";
+  "8278320f178d7e221aaa0dfedfa28d853bbe2852bbcf438631e9501c1a22005e";
 const EXPECTED_PAYLOAD_REMEDIATION_LEDGER_SHA256 =
   "db2a04b5a54f6e7982849fa101c0c72338000ef06d493f40565b2b168f5b6de1";
 const EXPECTED_PAYLOAD_REMEDIATION_JOURNAL_SHA256 =
@@ -503,19 +503,29 @@ function finalMatrixPointer(
 function finalizedWarningContract(
   previous: RelationshipContract,
   matrix: RelationshipFinalEndpointMatrix,
+  allowEnforcedReopen = false,
 ): RelationshipContract {
-  assert(
-    previous.contract_status === "warning_first",
-    "Final matrix installation must occur before enforcement promotion",
-  );
-  assert(
-    !previous.enforcement_proof,
-    "Final matrix installation refuses to discard an existing enforcement proof",
-  );
+  if (allowEnforcedReopen) {
+    assert(
+      previous.contract_status === "enforced" && Boolean(previous.enforcement_proof),
+      "Reviewed relationship migration can reopen only an enforced contract with a preserved proof",
+    );
+  } else {
+    assert(
+      previous.contract_status === "warning_first",
+      "Final matrix installation must occur before enforcement promotion",
+    );
+    assert(
+      !previous.enforcement_proof,
+      "Final matrix installation refuses to discard an existing enforcement proof",
+    );
+  }
   return {
     ...previous,
     ...structuredClone(RELATIONSHIP_CONTRACT_POLICY_V1),
     contract_status: "warning_first",
+    enforcement_state: undefined,
+    enforcement_proof: undefined,
     reviewed_at: REVIEWED_AT,
     reviewed_by: REVIEWED_BY,
     endpoint_matrix: finalMatrixPointer(matrix),
@@ -804,6 +814,7 @@ export function finalizeRelationshipContractV1(
   mode:
     | "check"
     | "apply_warning_final"
+    | "reopen_warning_final"
     | "promote_enforced",
 ): void {
   const { relations, inventory, sourcePins } =
@@ -821,9 +832,9 @@ export function finalizeRelationshipContractV1(
     "Final relationship matrix reviewed counts drifted",
   );
 
-  if (mode === "apply_warning_final") {
+  if (mode === "apply_warning_final" || mode === "reopen_warning_final") {
     const previous = readJson<RelationshipContract>(CONTRACT_PATH);
-    const contract = finalizedWarningContract(previous, matrix);
+    const contract = finalizedWarningContract(previous, matrix, mode === "reopen_warning_final");
     writeJson(
       FINAL_MATRIX_PATH,
       matrix as unknown as JsonValue,
@@ -885,6 +896,9 @@ if (import.meta.main) {
   const reviewedFinalization = process.argv.includes(
     "--reviewed-finalization",
   );
+  const reopenReviewedMigration = process.argv.includes(
+    "--reopen-reviewed-migration",
+  );
   const promote = process.argv.includes("--promote");
   const reviewedEnforcement = process.argv.includes(
     "--reviewed-enforcement",
@@ -899,14 +913,18 @@ if (import.meta.main) {
       reviewedFinalization,
       "Final matrix installation requires --reviewed-finalization",
     );
-    finalizeRelationshipContractV1("apply_warning_final");
+    finalizeRelationshipContractV1(
+      reopenReviewedMigration ? "reopen_warning_final" : "apply_warning_final",
+    );
   } else if (promote) {
+    assert(!reopenReviewedMigration, "--reopen-reviewed-migration is valid only with --apply");
     assert(
       reviewedEnforcement,
       "Enforcement promotion requires --reviewed-enforcement",
     );
     finalizeRelationshipContractV1("promote_enforced");
   } else {
+    assert(!reopenReviewedMigration, "--reopen-reviewed-migration is valid only with --apply");
     finalizeRelationshipContractV1("check");
   }
 }

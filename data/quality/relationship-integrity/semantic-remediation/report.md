@@ -21,10 +21,10 @@ Status: applied and fully reconciled.
 - Total submission retirements replayed: 373
 - Live invalid derivations removed: 15
 - Accepted invalid relation observations retracted exactly: 18
-- Post-remediation canonical relations: 21422
+- Post-remediation canonical relations: 21424
 - Post-remediation endpoint tuples: 1008
-- Derived reference values audited: 14670
-- Unresolved derived references: 2572
+- Derived reference values audited: 14671
+- Unresolved derived references: 2573
 - Ambiguous derived references: 6073
 - Staten Island reblocking relations: 11
 - Staten Island / semantic remediation overlap: 0
@@ -54,8 +54,8 @@ narrow shapes; no silent exception is admitted.
 ## Derived reference diagnostics
 
 The post-remediation replay contains
-8645 unresolved or ambiguous
-relationship-like references (2572
+8646 unresolved or ambiguous
+relationship-like references (2573
 unresolved; 6073 ambiguous). Exact
 coverage rows and the top 25 deterministic groups are embedded in
 `data/quality/relationship-integrity/semantic-remediation/summary.json`.
@@ -68,7 +68,7 @@ bun test packages/pipeline/test/records/derived-relations-semantic-integrity.tes
 ```
 
 The projected tuple inventory is `data/quality/relationship-integrity/semantic-remediation/projected-tuples.json`
-(SHA-256 `63ba1e301abdbfe23ee1d54a030fb71f4482e6248d01666673061f9381ff1701`). The relation-level inventory is
+(SHA-256 `c7a18628e490fd8da3ce0be01960ed03180a67817bf7e9e270c6e43859244055`). The relation-level inventory is
 `data/quality/relationship-integrity/semantic-remediation/projected-relations.jsonl` (SHA-256
-`f8d5d6088f03495e62b68f747484bf963bb985a9d3bdf50e8a18e1e0540d635e`). Every projected relation maps to a
+`1d7eb621f15620e9b24f5ca023f65c20383f3d26b4c6eaa4094f6c5adaeef03d`). Every projected relation maps to a
 baseline semantic-review tuple decision, an exact remediation decision, or both.

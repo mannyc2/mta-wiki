@@ -4,9 +4,9 @@ Contract: `relationship-contract-v1`
 
 Mode: `enforce`
 
-Canonical graph: 85,392 records; 21,422 relation records; 704 relation kinds.
+Canonical graph: 85,396 records; 21,424 relation records; 704 relation kinds.
 
-Frozen matrix coverage: 21,422/21,422 relations across 704 exact relation-kind rules.
+Frozen matrix coverage: 21,424/21,424 relations across 704 exact relation-kind rules.
 
 ## Findings
 
@@ -36,7 +36,7 @@ Frozen matrix coverage: 21,422/21,422 relations across 704 exact relation-kind r
 
 | Disposition | Relation records |
 |---|---:|
-| `clean` | 18,683 |
+| `clean` | 18,685 |
 | `endpoint_invalid` | 0 |
 | `exact_duplicate` | 0 |
 | `local_endpoint_inconsistent` | 0 |

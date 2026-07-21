@@ -26,15 +26,21 @@ import type { RouteAnchorRow } from "../packages/pipeline/src/materialize/route-
 const DECISION_ID = "flatbush-phase1-center-running-bus-lanes-2025-09";
 const PROJECT_ID = "project_flatbush-phase1-center-running-bus-lanes-livingston-state";
 const EVENT_ID = "event_flatbush-phase1-installation-start-sep2025";
+const OPENING_EVENT_ID = "event_flatbush-phase1-operational-opening-2025-10-02";
 const COMPLETION_EVENT_ID = "event_flatbush-av-phase1-installed-fall2025";
 const TREATMENT_ID = "treatment_flatbush-phase1-center-running-bus-lanes-livingston-state";
 const CORRIDOR_ID = "corridor_flatbush-phase1-livingston-state";
 const TIMELINE_RELATION_ID = "relation_flatbush-phase1-has-start-event-sep2025";
+const OPENING_TIMELINE_RELATION_ID =
+  "relation_flatbush-phase1-has-operational-opening-2025-10-02";
+const PHASE_RELATION_ID =
+  "relation_flatbush-phase1-installation-precedes-opening-2025-10-02";
 const COMPLETION_RELATION_ID = "relation_flatbush-phase1-has-completion-event-fall2025";
 const TREATMENT_RELATION_ID = "relation_flatbush-phase1-has-center-running-bus-lanes";
 const PHYSICAL_SCOPE_RELATION_ID =
   "relation_flatbush-phase1-treatment-on-bounded-corridor-livingston-state-20260715";
 const START_SOURCE_ID = "nyc_dot_flatbush_installation_begins_2025";
+const OPENING_SOURCE_ID = "nyc_dot_bus_lanes_flatbush_phase1_opening_2025";
 const RETROSPECTIVE_SOURCE_ID = "flatbush_ave_bus_priority_mtp_briefing_apr2026";
 const ROUTE_ANCHOR_PATH = "data/exports/releases/v1-rc14/route_anchors.jsonl";
 const ROUTE_ANCHOR_SHA256 = "517b8f74a89e70ec4791d0bf327da6224bb9a6b2ea44eaf8162d704721659239";
@@ -42,7 +48,7 @@ const REVIEWER = "codex-relationship-integrity-2026-07-16";
 const ACCEPTED_AT = "2026-07-16T08:30:00.000Z";
 const IDENTITY_ISSUED_AT = "2026-07-13T18:45:00.000Z";
 const PREVIOUS_DECISION_SHA256 =
-  "c2ec62a5042fadf094e12a9c02411d3a43ea787ad338d4934668c51141870159";
+  "292c0fc951ae2942c1fce4ec3cc9c34ac3bc1ab41e8e23d60ee8ff26d51b5be6";
 
 const evidencePins = {
   publicationDate: {
@@ -77,7 +83,11 @@ const evidencePins = {
   },
 } as const;
 
-type EvidencePin = (typeof evidencePins)[keyof typeof evidencePins];
+type EvidencePin = {
+  sourceId: string;
+  evidenceId: string;
+  sha256: string;
+};
 
 const routeSpecs = [
   {
@@ -139,6 +149,34 @@ function binding(
   return { role, record_id: recordId, source_id: pin.sourceId, evidence_id: pin.evidenceId };
 }
 
+function canonicalBindings(
+  recordsById: ReadonlyMap<string, MtaCanonicalRecord>,
+  role: OperationalOccurrenceEvidenceBinding["role"],
+  recordId: string,
+  sourceId?: string,
+): OperationalOccurrenceEvidenceBinding[] {
+  const record = requiredRecord(recordsById, recordId);
+  const refs = [...new Map(record.evidence_refs
+    .filter((ref) => (!sourceId || ref.source_id === sourceId) && ref.evidence_id)
+    .map((ref) => [`${ref.source_id}|${ref.evidence_id!}`, ref])).values()]
+    .sort((left, right) =>
+      `${left.source_id}|${left.evidence_id!}`.localeCompare(`${right.source_id}|${right.evidence_id!}`)
+    );
+  assert(
+    refs.length > 0,
+    `${recordId} lacks exact canonical evidence${sourceId ? ` from ${sourceId}` : ""}`,
+  );
+  for (const ref of refs) {
+    assert(ref.text_sha256?.startsWith("sha256:"), `${recordId}/${ref.evidence_id} lacks a pinned text hash`);
+  }
+  return refs.map((ref) => ({
+    role,
+    record_id: recordId,
+    source_id: ref.source_id,
+    evidence_id: ref.evidence_id!,
+  }));
+}
+
 function assertRelation(
   recordsById: ReadonlyMap<string, MtaCanonicalRecord>,
   recordId: string,
@@ -158,7 +196,8 @@ function assertPhysicalScopeRelation(
 ): void {
   const corridor = requiredRecord(recordsById, CORRIDOR_ID, "corridor");
   assert(
-    corridor.payload.location_text === "Flatbush Avenue between Livingston Street and State Street",
+    corridor.payload.corridor_name === "Flatbush Avenue between Livingston Street and State Street" &&
+      corridor.payload.limits === "Livingston Street to State Street",
     `${CORRIDOR_ID} bounded location changed`,
   );
   const relation = requiredRecord(recordsById, PHYSICAL_SCOPE_RELATION_ID, "relation");
@@ -194,10 +233,35 @@ function assertBoundedPhaseGraph(
       normalizedDate.precision === "month",
     `${EVENT_ID} nested normalized date conflicts with the month-level onset`,
   );
+  binding(recordsById, "event_date", EVENT_ID, evidencePins.publicationDate);
+  binding(recordsById, "event_date", EVENT_ID, evidencePins.installationStart);
 
   const completion = requiredRecord(recordsById, COMPLETION_EVENT_ID, "event");
   assert(completion.payload.date_normalized === "2025-fall", `${COMPLETION_EVENT_ID} date changed`);
   assert(completion.payload.date_precision === "season", `${COMPLETION_EVENT_ID} precision changed`);
+
+  const opening = requiredRecord(recordsById, OPENING_EVENT_ID, "event");
+  assert(opening.payload.event_family === "launch", `${OPENING_EVENT_ID} family changed`);
+  assert(opening.payload.lifecycle_phase === "launched", `${OPENING_EVENT_ID} lifecycle changed`);
+  assert(opening.payload.date_normalized === "2025-10-02", `${OPENING_EVENT_ID} date changed`);
+  assert(opening.payload.date_precision === "day", `${OPENING_EVENT_ID} precision changed`);
+  canonicalBindings(recordsById, "event_date", OPENING_EVENT_ID, OPENING_SOURCE_ID);
+
+  const openingTimeline = requiredRecord(recordsById, OPENING_TIMELINE_RELATION_ID, "relation");
+  assert(openingTimeline.payload.relation_kind === "has_timeline_event", `${OPENING_TIMELINE_RELATION_ID} kind changed`);
+  assert(openingTimeline.payload.relation_family === "timeline_context", `${OPENING_TIMELINE_RELATION_ID} family changed`);
+  assert(openingTimeline.payload.subject_id === PROJECT_ID, `${OPENING_TIMELINE_RELATION_ID} subject changed`);
+  assert(openingTimeline.payload.object_id === OPENING_EVENT_ID, `${OPENING_TIMELINE_RELATION_ID} object changed`);
+  assert(openingTimeline.payload.assertion_status === "delivered", `${OPENING_TIMELINE_RELATION_ID} is not delivered`);
+  canonicalBindings(recordsById, "timeline_relation", OPENING_TIMELINE_RELATION_ID, OPENING_SOURCE_ID);
+
+  const phaseRelation = requiredRecord(recordsById, PHASE_RELATION_ID, "relation");
+  assert(phaseRelation.payload.relation_kind === "precedes_event", `${PHASE_RELATION_ID} kind changed`);
+  assert(phaseRelation.payload.relation_family === "timeline_context", `${PHASE_RELATION_ID} family changed`);
+  assert(phaseRelation.payload.subject_id === EVENT_ID, `${PHASE_RELATION_ID} subject changed`);
+  assert(phaseRelation.payload.object_id === OPENING_EVENT_ID, `${PHASE_RELATION_ID} object changed`);
+  assert(phaseRelation.payload.assertion_status === "delivered", `${PHASE_RELATION_ID} is not delivered`);
+  canonicalBindings(recordsById, "phase_relation", PHASE_RELATION_ID);
 
   const treatment = requiredRecord(recordsById, TREATMENT_ID, "treatment_component");
   assert(treatment.payload.treatment_family === "bus_lane", `${TREATMENT_ID} family changed`);
@@ -231,7 +295,9 @@ function assertBoundedPhaseGraph(
       .sort();
   assert(
     stableJson(relationIds("has_timeline_event") as unknown as JsonValue) ===
-      stableJson([COMPLETION_RELATION_ID, TIMELINE_RELATION_ID].sort() as unknown as JsonValue),
+      stableJson(
+        [COMPLETION_RELATION_ID, OPENING_TIMELINE_RELATION_ID, TIMELINE_RELATION_ID].sort() as unknown as JsonValue,
+      ),
     `${PROJECT_ID} timeline graph changed`,
   );
   assert(
@@ -263,24 +329,30 @@ function occurrenceDecision(
     review_state: "approved",
     accepted_at: ACCEPTED_AT,
     reviewer: REVIEWER,
-    rationale: "The September 25, 2025 official NYC DOT announcement establishes that installation of the bounded Livingston Street-to-State Street Phase 1 center-running bus lanes began during September 2025, and the April 2026 official retrospective confirms that this same two-block phase was installed during Fall 2025. This decision uses September only as a month-level installation-commencement onset: it does not invent an exact work-start day, fine-bearing day, or operational-completion day. It binds only B41 and B67 and one atomic bus_lane treatment, while preserving the separate season-precision completion event and excluding Phase 2 islands, pedestrian-space, curb-management, signal-priority, camera-enforcement, and reroute scope. The July 16 relationship-integrity review also selects the source-stated delivered treatment-to-corridor relation for the exact Livingston Street-to-State Street segment; this is a direct canonical edge supported by the same April 2026 NYC DOT block, not a geometry, proximity, or street-name inference.",
+    rationale: "The September 25, 2025 official NYC DOT announcement establishes month-level installation commencement for the bounded Livingston Street-to-State Street Phase 1 center-running bus lanes. NYC DOT's official bus-lane data then establishes October 2, 2025 as the exact operational opening of that same bounded segment, and the April 2026 official retrospective independently confirms its Fall 2025 delivery. This decision therefore retains September installation commencement and October 2 operational opening as two source-backed related phases, resolves operational onset to the opening day, and preserves the separate season-precision completion milestone as related history outside the occurrence. It binds only B41 and B67 and one atomic bus_lane treatment while excluding Phase 2 islands, pedestrian-space, curb-management, signal-priority, camera-enforcement, and reroute scope. The stable occurrence identity remains founded on the previously registered September event; the exact-day enrichment does not re-found or replace that identity.",
     occurrence_id: identity.occurrence_id,
     founding_key: identity.founding_key,
-    observation_event_record_ids: [EVENT_ID],
+    observation_event_record_ids: [EVENT_ID, OPENING_EVENT_ID],
     observation_relation_record_ids: [
       TIMELINE_RELATION_ID,
+      OPENING_TIMELINE_RELATION_ID,
+      PHASE_RELATION_ID,
       ...routeSpecs.map((route) => route.relationId),
       TREATMENT_RELATION_ID,
       PHYSICAL_SCOPE_RELATION_ID,
     ].sort(),
     resolved_status: "realized",
     resolved_onset: {
-      date: "2025-09",
-      precision: "month",
+      date: "2025-10-02",
+      precision: "day",
       evidence_bindings: [
-        binding(recordsById, "event_date", EVENT_ID, evidencePins.publicationDate),
-        binding(recordsById, "event_date", EVENT_ID, evidencePins.installationStart),
-        binding(recordsById, "timeline_relation", TIMELINE_RELATION_ID, evidencePins.deliveredPhase),
+        ...canonicalBindings(recordsById, "event_date", OPENING_EVENT_ID, OPENING_SOURCE_ID),
+        ...canonicalBindings(
+          recordsById,
+          "timeline_relation",
+          OPENING_TIMELINE_RELATION_ID,
+          OPENING_SOURCE_ID,
+        ),
       ],
     },
     routes: routeSpecs.map((route) => ({
@@ -310,7 +382,7 @@ function identityRegistry(decision: OperationalOccurrenceAcceptedDecision): Oper
   const existing = loadOperationalOccurrenceIdentityRegistry();
   const expected = newOperationalOccurrenceIdentityEntry({
     foundingKey: decision.founding_key,
-    foundingEventRecordIds: decision.observation_event_record_ids,
+    foundingEventRecordIds: [EVENT_ID],
     decisionId: decision.decision_id,
     issuedAt: IDENTITY_ISSUED_AT,
   });
@@ -369,6 +441,18 @@ assert(
   "Flatbush Phase 1 occurrence projected more than once",
 );
 assert(
+  row.resolved_onset.date === "2025-10-02" && row.resolved_onset.precision === "day",
+  "Flatbush Phase 1 operational onset did not resolve to October 2, 2025",
+);
+assert(
+  stableJson(row.phase_record_ids as unknown as JsonValue) ===
+    stableJson([EVENT_ID, OPENING_EVENT_ID].sort() as unknown as JsonValue) &&
+    stableJson(row.phase_relation_record_ids as unknown as JsonValue) ===
+      stableJson([PHASE_RELATION_ID] as unknown as JsonValue) &&
+    row.phase_relation_disposition === "related_phases",
+  "Flatbush Phase 1 installation and opening did not project as related phases",
+);
+assert(
   stableJson(row.routes.map((route) => route.gtfs_route_id).sort() as unknown as JsonValue) ===
     stableJson(["B41", "B67"] as unknown as JsonValue),
   "Flatbush Phase 1 route scope changed",
@@ -389,7 +473,7 @@ assert(
 assert(
   !row.provenance.event_record_ids.includes(COMPLETION_EVENT_ID) &&
     !row.provenance.relation_record_ids.includes(COMPLETION_RELATION_ID),
-  "The separate Fall 2025 completion milestone leaked into the September installation-start occurrence",
+  "The separate Fall 2025 completion milestone leaked into the related installation/opening occurrence",
 );
 
 const apply = process.argv.includes("--apply");
@@ -399,6 +483,8 @@ console.log(JSON.stringify({
   decision_id: decision.decision_id,
   occurrence_id: decision.occurrence_id,
   onset: row.resolved_onset,
+  phase_record_ids: row.phase_record_ids,
+  phase_relation_record_ids: row.phase_relation_record_ids,
   route_count: row.routes.length,
   gtfs_route_ids: row.routes.map((route) => route.gtfs_route_id),
   treatment_record_id: row.treatment.kind === "atomic" ? row.treatment.member.treatment_record_id : null,
