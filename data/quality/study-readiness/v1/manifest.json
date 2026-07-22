@@ -30,9 +30,14 @@
       "sha256": "4942692197828512e80d0de304bf28227bf9be0a923156e7ff50a07b6ebc0183"
     },
     {
+      "path": "data/quality/acquisition/manifests/q45-q86-q87-member-extents-2025.json",
+      "bytes": 5235,
+      "sha256": "fffa92bba9524e6ee5ea861a2dd19dfe64125ab9066f223a2ab46b6568b8315e"
+    },
+    {
       "path": "data/contracts/operational-occurrence-member-extent/v1/manifest.json",
-      "bytes": 1850,
-      "sha256": "5dae6e97be423333cd1877b52e8a671254b4637640581fde1fc41d61fa05c460"
+      "bytes": 2056,
+      "sha256": "46f7ad9a3ec5cc470ff0d041c18d0ce75fe628890999516ad1b43efe26fefa68"
     }
   ],
   "files": [
@@ -60,8 +65,8 @@
     },
     {
       "path": "data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl",
-      "bytes": 78872,
-      "sha256": "dcb5b8e81528a12a51d6a239bd0385ea426bab50af842acf146ecfbf1de9cbb7",
+      "bytes": 80764,
+      "sha256": "bec024529abde322a5947e62e2893453509c67448b18dc2b4558b950c79e97d5",
       "row_count": 11
     },
     {

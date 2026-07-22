@@ -46,7 +46,7 @@ Primary artifacts:
 | `bridge-ledger.jsonl` | 484 | `9182be5be213b66f4c34ec17a409f66a4b6b9711e2b97b764c9795c7894d36f6` |
 | `consumer-priority-manifest.json` | 404 historical / 399 open targets | `276f3edf8c63ee03a37477286d507d73b3ff5f8f2670dfff1f2c1cf4869aea26` |
 | `consumer-owned-quarantine.jsonl` | 73 | `e9a32eb8cdafcdb6b69d6f8410e7503e8a33029e5df20153b03cd571d390a491` |
-| study-readiness `manifest.json` | 6 outputs | `78cb8d2a6df2e89b3be20e4317e5758aca96b1c8b7f112a4574c335ba96760f9` |
+| study-readiness `manifest.json` | 6 outputs | `ca48397d94b959981e0a045a9a534763798abdc728066134d1387986d6f67c7d` |
 
 ## Reviewed official-source batch
 
@@ -67,7 +67,7 @@ members, and exact evidence in the official MTA Queens service-change source. Re
   physicality `not_applicable` never establish whole-route extent.
 
 Reviewed packet SHA-256 is
-`dcb5b8e81528a12a51d6a239bd0385ea426bab50af842acf146ecfbf1de9cbb7`.
+`bec024529abde322a5947e62e2893453509c67448b18dc2b4558b950c79e97d5`.
 These packets require a new Tracker import/candidate set and approval receipt before any admission.
 
 The bounded follow-up uses the hash-pinned acquisition receipt
@@ -83,6 +83,18 @@ from Queens Boulevard to 188 Street; Q86 is bounded from Jamaica Center/Bay A to
 Avenue; Q87 is bounded from Jamaica Center/Bay A to Green Acres Mall. Every reviewed text capture
 and evidence block has its own SHA-256. The Q5/Q85 predecessor statements prevent successor route
 membership or a post-change map from standing in for treatment-to-endpoint evidence.
+
+The repository's retention contract intentionally excludes full raw source artifacts from Git.
+The receipt is therefore the durable clean-clone evidence fixture: it embeds the minimal exact
+reviewed `normalized_text` blocks. The companion durable-source manifest
+`data/quality/acquisition/manifests/q45-q86-q87-member-extents-2025.json` pins all seven fetchable
+full official responses by URL, archive timestamp/digest, content type, byte count, and SHA-256.
+Its SHA-256 is `fffa92bba9524e6ee5ea861a2dd19dfe64125ab9066f223a2ab46b6568b8315e`.
+`bun run queens-member-extents:sources`
+verifies the fixture and any locally hydrated bytes without requiring network access. Run
+`bun run queens-member-extents:hydrate` to restore the seven full artifacts under ignored
+`raw/sources/`; hydration refuses any response that differs from the committed byte/hash pin.
+Contract regeneration reads the tracked fixture, not an ambient `/tmp` or `raw/` directory.
 
 ## Member-level producer contract
 
@@ -107,7 +119,7 @@ The two Flatbush rows are B41 and B67 only, both bound to
 `2025-10-02`, and the installation/opening phase relation. Contract projection SHA-256 is
 `da1af6ef9b96c5b92dce22d7708bad5b661c6761ac4562bd9d3fe46f7bd735dc`; reviewed ledger SHA-256 is
 `547b392d169e4b8327a480482de50d9ac7d9ccc65d949e9a27ea0a32edc2a7f6`; contract manifest SHA-256
-is `5dae6e97be423333cd1877b52e8a671254b4637640581fde1fc41d61fa05c460`.
+is `46f7ad9a3ec5cc470ff0d041c18d0ce75fe628890999516ad1b43efe26fefa68`.
 
 ## Frozen acquisition-receipt overlay
 
@@ -157,6 +169,7 @@ Migration target:
 ```bash
 bun scripts/import-tracker-rc26-study-readiness-input.ts --check
 bun scripts/generate-study-readiness-v1.ts --check
+bun run queens-member-extents:sources
 bun test packages/pipeline/test/quality/study-readiness-v1.test.ts
 bun run typecheck
 bun run validate

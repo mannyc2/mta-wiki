@@ -48,6 +48,10 @@ const QUEENS_EXTENT_RECEIPT_PATH = join(
   repoRoot,
   "data/quality/acquisition/receipts/q45-q86-q87-member-extents-2025.json",
 );
+const QUEENS_EXTENT_DURABILITY_PATH = join(
+  repoRoot,
+  "data/quality/acquisition/manifests/q45-q86-q87-member-extents-2025.json",
+);
 const BROOKLYN_RECEIPTS_PATH = join(
   repoRoot,
   "data/quality/relationship-integrity/bus-lane-acquisition/shards/brooklyn-null/receipts.jsonl",
@@ -928,6 +932,7 @@ function buildStudyArtifacts(input: JsonObject, occurrences: JsonObject[], exten
         filePin(TREATMENTS_PATH),
         filePin(SOURCE_PAGE_PATH),
         filePin(QUEENS_EXTENT_RECEIPT_PATH),
+        filePin(QUEENS_EXTENT_DURABILITY_PATH),
       ],
     };
   }).sort((left, right) => left.candidate_id.localeCompare(right.candidate_id));
@@ -1149,6 +1154,7 @@ function main(): void {
         filePin(OCCURRENCES_PATH),
         filePin(TREATMENTS_PATH),
         filePin(QUEENS_EXTENT_RECEIPT_PATH),
+        filePin(QUEENS_EXTENT_DURABILITY_PATH),
       ],
     })],
   ]);
@@ -1161,6 +1167,7 @@ function main(): void {
       filePin(TREATMENTS_PATH),
       filePin(SOURCE_PAGE_PATH),
       filePin(QUEENS_EXTENT_RECEIPT_PATH),
+      filePin(QUEENS_EXTENT_DURABILITY_PATH),
     ],
     files: [...extentFiles.entries()].map(([path, content]) => filePin(path, content))
       .sort((left, right) => left.path.localeCompare(right.path)),
@@ -1185,6 +1192,7 @@ function main(): void {
       filePin(TREATMENTS_PATH),
       filePin(SOURCE_PAGE_PATH),
       filePin(QUEENS_EXTENT_RECEIPT_PATH),
+      filePin(QUEENS_EXTENT_DURABILITY_PATH),
       filePin(join(EXTENT_DIR, "manifest.json"), extentManifest),
     ],
     files: [...studyFiles.entries()].map(([path, content]) => filePin(path, content))

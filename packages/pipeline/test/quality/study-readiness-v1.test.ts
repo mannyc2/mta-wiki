@@ -279,7 +279,66 @@ describe("study-readiness v1 Tracker bridge", () => {
       repoRoot,
       "data/quality/acquisition/receipts/q45-q86-q87-member-extents-2025.json",
     ));
+    const durable = readJson<{
+      tracked_full_artifacts: boolean;
+      offline_fixture: {
+        path: string;
+        byte_length: number;
+        sha256: string;
+        evidence_block_count: number;
+      };
+      verification_command: string;
+      hydration_command: string;
+      clean_clone_requires_network: boolean;
+      sources: Array<{
+        source_id: string;
+        source_url: string;
+        capture_url: string;
+        archive_timestamp: string;
+        archive_digest: string;
+        content_type: string;
+        byte_length: number;
+        sha256: string;
+        hydration_path: string;
+      }>;
+    }>(join(
+      repoRoot,
+      "data/quality/acquisition/manifests/q45-q86-q87-member-extents-2025.json",
+    ));
     expect(receipt.sources).toHaveLength(7);
+    expect(durable).toMatchObject({
+      tracked_full_artifacts: false,
+      offline_fixture: {
+        path: "data/quality/acquisition/receipts/q45-q86-q87-member-extents-2025.json",
+        byte_length: 24161,
+        sha256: "4942692197828512e80d0de304bf28227bf9be0a923156e7ff50a07b6ebc0183",
+        evidence_block_count: 23,
+      },
+      verification_command: "bun run queens-member-extents:sources",
+      hydration_command: "bun run queens-member-extents:hydrate",
+      clean_clone_requires_network: false,
+    });
+    expect(durable.sources.map((source) => [
+      source.source_id,
+      source.source_url,
+      source.capture_url,
+      source.archive_timestamp,
+      source.archive_digest,
+      source.byte_length,
+      source.sha256,
+      source.hydration_path,
+    ])).toEqual(receipt.sources.map((source) => [
+      source.source_id,
+      source.source_url,
+      source.artifact.capture_url,
+      source.artifact.archive_timestamp,
+      source.artifact.archive_digest,
+      source.artifact.byte_length,
+      source.artifact.sha256,
+      source.artifact.path,
+    ]));
+    expect(durable.sources.filter((source) => source.content_type === "application/pdf")).toHaveLength(2);
+    expect(durable.sources.filter((source) => source.content_type === "text/html; charset=UTF-8")).toHaveLength(5);
     expect(receipt.sources.map((source) => source.source_url).sort()).toEqual([
       "https://www.mta.info/document/176896",
       "https://www.mta.info/document/177056",

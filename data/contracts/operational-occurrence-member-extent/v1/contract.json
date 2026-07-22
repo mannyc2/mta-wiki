@@ -42,6 +42,11 @@
       "path": "data/quality/acquisition/receipts/q45-q86-q87-member-extents-2025.json",
       "bytes": 24161,
       "sha256": "4942692197828512e80d0de304bf28227bf9be0a923156e7ff50a07b6ebc0183"
+    },
+    {
+      "path": "data/quality/acquisition/manifests/q45-q86-q87-member-extents-2025.json",
+      "bytes": 5235,
+      "sha256": "fffa92bba9524e6ee5ea861a2dd19dfe64125ab9066f223a2ab46b6568b8315e"
     }
   ]
 }
