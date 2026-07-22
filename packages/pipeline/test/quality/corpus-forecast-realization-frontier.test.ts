@@ -29,10 +29,12 @@ describe("current forecast-realization acquisition frontier", () => {
   it("recomputes byte-identically and keeps acquisition state independent from terminal study diagnostics", () => {
     const jsonBytes = readFileSync(jsonPath, "utf8");
     const markdownBytes = readFileSync(markdownPath, "utf8");
-    expect(sha256(jsonBytes)).toBe("a94ef3c24448e50e46954fef13d9665cd7f16a81dd4799679ea2c743a9f6e85b");
-    expect(sha256(markdownBytes)).toBe("4701d377247baef8ac6a06f25f395cbe673c777dc5b03726a94e433201be4506");
+    expect(sha256(jsonBytes)).toBe("5178b2a9e7e5db2a8a5c247226d2c7a6c935e0edd69ec0902c3bc07be29a4627");
+    expect(sha256(markdownBytes)).toBe("51126d9ed84d5aa5adb80e604a5705530f11bbd4fc2168dfe39dc81df1720604");
 
     const targetList = JSON.parse(jsonBytes) as ForecastRealizationTargetList;
+    expect(targetList.as_of).toBe("2026-07-22");
+    expect(targetList.grace_days).toBe(90);
     const records = readCanonicalRecordsFromDbFile(join(repoRoot, "data/canonical.db"));
     expect(records).not.toBeNull();
     const coverage = loadPinnedOperationalCoverageArtifacts({

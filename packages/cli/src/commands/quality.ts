@@ -5,6 +5,7 @@ import {
   relationshipContractValidationMode,
 } from "@mta-wiki/db/relationship-contract";
 import { writeForecastRealizationArtifacts } from "@mta-wiki/pipeline/quality/forecast-realization-artifacts";
+import { writeForecastRealizationReviewArtifacts } from "@mta-wiki/pipeline/quality/forecast-realization-review-artifacts";
 import { writeOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
 import {
   loadRelationshipCompletenessArtifacts,
@@ -81,6 +82,28 @@ const forecastFrontier: CommandHandler = () => {
     `Realized candidates requiring review: ${summary.targets_with_realized_candidates_count}; ` +
       `terminal operational diagnostics remain separate: ${summary.operational_terminal_diagnostic_row_count}/` +
       `${summary.operational_diagnostic_row_count}`,
+  );
+};
+
+const forecastReviewOverlay: CommandHandler = () => {
+  const result = writeForecastRealizationReviewArtifacts({
+    targetListPath: optionValue(process.argv, "--frontier"),
+    reviewDir:
+      optionValue(process.argv, "--reviews") ??
+      optionValue(process.argv, "--output") ??
+      optionValue(process.argv, "-o"),
+  });
+  const summary = result.overlay.summary;
+  console.log(`Forecast-realization reviewed overlay: ${relative(repoRoot, result.outputDir)}`);
+  console.log(
+    `Reviewed ${summary.reviewed_target_count}/${summary.candidate_bearing_target_denominator} candidate-bearing targets; ` +
+      `${summary.reviewed_candidate_pair_count} candidate pair(s); missing ${summary.missing_target_ids.length}`,
+  );
+  console.log(
+    `Dispositions: exact realization ${summary.counts_by_disposition.exact_realization}; ` +
+      `later-plan replacement ${summary.counts_by_disposition.later_plan_replacement}; ` +
+      `reviewed nonmatch ${summary.counts_by_disposition.reviewed_nonmatch}; ` +
+      `still open ${summary.counts_by_disposition.still_open}`,
   );
 };
 
@@ -191,6 +214,7 @@ export const qualityCommands = {
   "operational-coverage": operationalCoverage,
   "coverage-matrix": operationalCoverage,
   "forecast-frontier": forecastFrontier,
+  "forecast-review-overlay": forecastReviewOverlay,
   "operational-recovery-proposals": recoveryProposals,
   "operational-recovery-apply": recoveryApply,
   "qbnr-recovery-draft": qbnrRecoveryDraft,
