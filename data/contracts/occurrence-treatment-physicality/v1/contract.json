@@ -25,7 +25,7 @@
     "receipt": {
       "path": "data/contracts/occurrence-treatment-physicality/v1/review-retirement-receipt.json",
       "bytes": 3616,
-      "sha256": "ef3368a87d3dde231137543ac77da6c94b5b1e3578917c0f6b38f0b6033ee0dc"
+      "sha256": "cee8560fafd0cdffba24e73976303e8dc1a0a1bd2255c7a4ed05b9aa1718709b"
     },
     "archived_review_ledger": {
       "path": "data/contracts/occurrence-treatment-physicality/v1/retired-review-ledger.jsonl",
@@ -38,29 +38,29 @@
   },
   "review_snapshot": {
     "stage": "final_post_semantic_release",
-    "release_id": "v1-rc26",
-    "release_dir": "data/exports/releases/v1-rc26",
+    "release_id": "v1-rc27",
+    "release_dir": "data/exports/releases/v1-rc27",
     "input_pins": [
       {
-        "path": "data/exports/releases/v1-rc26/operational_occurrences.jsonl",
+        "path": "data/exports/releases/v1-rc27/operational_occurrences.jsonl",
         "bytes": 865769,
         "sha256": "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
         "row_count": 131
       },
       {
-        "path": "data/exports/releases/v1-rc26/treatment_components.jsonl",
+        "path": "data/exports/releases/v1-rc27/treatment_components.jsonl",
         "bytes": 4484742,
         "sha256": "7a766ba1abbbcec88c3151cd2a4e6342ce433e70dbcd5e71dc53fd397e93ecf0",
         "row_count": 2938
       },
       {
-        "path": "data/exports/releases/v1-rc26/relations.jsonl",
+        "path": "data/exports/releases/v1-rc27/relations.jsonl",
         "bytes": 35117554,
         "sha256": "93459fd3c0c1660a85eac1b1e26fe1cfbd7085dc1d3dce4494a8f667b9a7bc06",
         "row_count": 21424
       },
       {
-        "path": "data/exports/releases/v1-rc26/corridors.jsonl",
+        "path": "data/exports/releases/v1-rc27/corridors.jsonl",
         "bytes": 793111,
         "sha256": "03abdeba78a962bf735e6edf937c624cf2c2fe04bcb403822fdd80684152135d",
         "row_count": 227

@@ -82,6 +82,10 @@ import {
   routeTreatmentScopesJsonl,
   routeTreatmentScopeSummaryJson,
 } from "@mta-wiki/pipeline/materialize/route-treatment-scopes";
+import {
+  OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION,
+  stageReleaseCompanions,
+} from "@mta-wiki/pipeline/materialize/release-companions";
 
 export type ReleaseManifestFile = {
   bytes: number;
@@ -98,6 +102,7 @@ export type ReleaseManifest = {
     operational_occurrences?: 1 | typeof OPERATIONAL_OCCURRENCE_SCHEMA_VERSION | undefined;
     operational_occurrence_review_decisions?: 1 | 2 | undefined;
     relationship_integrity_bundle?: typeof RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION | undefined;
+    operational_occurrence_member_extents?: typeof OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION | undefined;
     route_anchors?: 1 | undefined;
     route_identity_snapshot?: 1 | undefined;
   };
@@ -114,6 +119,8 @@ export type ReleaseManifest = {
     taxonomy: string | null;
     quality_report: string | null;
     relationship_integrity_bundle?: string | null | undefined;
+    operational_occurrence_member_extents?: string | null | undefined;
+    quality_provenance?: string | null | undefined;
     route_identity_snapshot?: string | null | undefined;
   };
 };
@@ -243,7 +250,9 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
               "taxonomy",
               "quality_report",
               "relationship_integrity_bundle",
-              ...(version === 5 ? ["route_identity_snapshot"] : []),
+              ...(version === 5
+                ? ["route_identity_snapshot", "operational_occurrence_member_extents", "quality_provenance"]
+                : []),
             ],
     "pointers",
   );
@@ -307,7 +316,9 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
               "operational_occurrences",
               "operational_occurrence_review_decisions",
               "relationship_integrity_bundle",
-              ...(version === 5 ? ["route_anchors", "route_identity_snapshot"] : []),
+              ...(version === 5
+                ? ["route_anchors", "route_identity_snapshot", "operational_occurrence_member_extents"]
+                : []),
             ],
       "contract_versions",
     );
@@ -360,6 +371,17 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
       if (version === 5) {
         if (input.route_anchors !== 1 || input.route_identity_snapshot !== 1) throw new Error("Invalid release manifest route contract versions: expected route_anchors and route_identity_snapshot");
         contracts.route_anchors = 1; contracts.route_identity_snapshot = 1;
+        if (
+          input.operational_occurrence_member_extents !== undefined &&
+          input.operational_occurrence_member_extents !== OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION
+        ) {
+          throw new Error(
+            `Invalid release manifest contract_versions.operational_occurrence_member_extents: expected ${OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION}`,
+          );
+        }
+        if (input.operational_occurrence_member_extents === OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION) {
+          contracts.operational_occurrence_member_extents = OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION;
+        }
       }
     }
   }
@@ -386,6 +408,24 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
           ? manifestAddressedPointer(
               pointersInput.relationship_integrity_bundle,
               "pointers.relationship_integrity_bundle",
+              files,
+            )
+          : null,
+      operational_occurrence_member_extents:
+        version === 5 && contracts.operational_occurrence_member_extents !== undefined
+          ? manifestAddressedPointer(
+              pointersInput.operational_occurrence_member_extents,
+              "pointers.operational_occurrence_member_extents",
+              files,
+            )
+          : pointersInput.operational_occurrence_member_extents === undefined
+            ? null
+            : (() => { throw new Error("Invalid release manifest pointers.operational_occurrence_member_extents: contract version is missing"); })(),
+      quality_provenance:
+        version === 5 && pointersInput.quality_provenance !== undefined
+          ? manifestAddressedPointer(
+              pointersInput.quality_provenance,
+              "pointers.quality_provenance",
               files,
             )
           : null,
@@ -551,6 +591,7 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   }
 
   const records = opts.records ?? readCanonicalRecords();
+  const generatorCommit = gitHeadCommit();
   const byKind = new Map<string, MtaCanonicalRecord[]>();
   for (const record of records) {
     const filename = FILE_BY_KIND.get(record.record_kind);
@@ -769,7 +810,7 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   if (opts.relationshipCompletenessStaging) {
     const stagingManifest = {
       release_id: releaseId,
-      generator_commit: gitHeadCommit(),
+      generator_commit: generatorCommit,
       files: sortedObject(fileEntries),
     };
     const manifestPath = join(dir, "manifest.json");
@@ -844,11 +885,22 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
     }
   }
 
+  const companions = stageReleaseCompanions(rootDir, dir, releaseId, generatorCommit);
+  for (const file of companions.files) {
+    fileEntries.push([file.path, { bytes: file.bytes, sha256: file.sha256 }]);
+  }
+
   const manifestVersion = routeIdentitySnapshotPath ? 5 : relationshipBundle ? 4 : 3;
+  if (
+    manifestVersion !== 5 &&
+    (companions.member_extent_manifest_path !== null || companions.quality_provenance_path !== null)
+  ) {
+    throw new Error("Release companions require a manifest-v5 route identity snapshot");
+  }
   const manifest: ReleaseManifest = {
     manifest_version: manifestVersion,
     release_id: releaseId,
-    generator_commit: gitHeadCommit(),
+    generator_commit: generatorCommit,
     contract_versions: {
       operational_anchors: OPERATIONAL_ANCHOR_SCHEMA_VERSION,
       operational_anchor_review_decisions: operationalProjectionRetirements.length > 0
@@ -861,6 +913,9 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
       ...(routeIdentitySnapshotPath ? { route_anchors: 1 as const, route_identity_snapshot: 1 as const } : {}),
       ...(relationshipBundle
         ? { relationship_integrity_bundle: RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION }
+        : {}),
+      ...(companions.member_extent_manifest_path
+        ? { operational_occurrence_member_extents: OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION }
         : {}),
     },
     record_counts: sortedObject(countEntries),
@@ -878,6 +933,12 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
       ...(routeIdentitySnapshotPath ? { route_identity_snapshot: "route_identity_snapshot.json" } : {}),
       ...(relationshipBundle
         ? { relationship_integrity_bundle: relationshipBundle.manifest_path }
+        : {}),
+      ...(companions.member_extent_manifest_path
+        ? { operational_occurrence_member_extents: companions.member_extent_manifest_path }
+        : {}),
+      ...(companions.quality_provenance_path
+        ? { quality_provenance: companions.quality_provenance_path }
         : {}),
     },
   };

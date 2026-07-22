@@ -1,6 +1,6 @@
 # Relationship completeness audit
 
-Schema version: 1. Mode: **warning**. Release: **v1-rc26**.
+Schema version: 1. Mode: **warning**. Release: **v1-rc27**.
 
 This report uses the immutable occurrence-treatment physicality policy and exact per-treatment review ledger. Family names and location literals are not physicality evidence, and a nonphysical decision is neither a waiver nor a source of study eligibility. No generic all-record non-projectable coverage is claimed: project, corridor, entity, claim, metric, and source classes remain outside the reviewed route/event/treatment full-denominator selectors.
 

@@ -4,15 +4,15 @@
   "generated_at": "2026-07-16T06:00:00.000Z",
   "generated_by": "codex-operational-occurrence-phase-integrity-review",
   "route_anchor_release": {
-    "release_id": "v1-rc26",
+    "release_id": "v1-rc27",
     "route_anchors": {
-      "path": "data/exports/releases/v1-rc26/route_anchors.jsonl",
+      "path": "data/exports/releases/v1-rc27/route_anchors.jsonl",
       "bytes": 101876,
       "sha256": "aaf8bb1532587c2aea188a7f7cc84a358b5a0a49106a07282fd6c5d05cfdc222",
       "row_count": 520
     },
     "operational_occurrences": {
-      "path": "data/exports/releases/v1-rc26/operational_occurrences.jsonl",
+      "path": "data/exports/releases/v1-rc27/operational_occurrences.jsonl",
       "bytes": 865769,
       "sha256": "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
       "row_count": 131
@@ -55,9 +55,9 @@
       ]
     },
     "exact_source_evidence_files": {
-      "file_count": 17,
-      "bytes": 2659027,
-      "sha256": "d628446f911647a49b42a25ced5ed8aebe0d03e57d7bbe3e72f27d0a1c17f3e7",
+      "file_count": 0,
+      "bytes": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "path_roots": [
         "canonical phase-event and event-event relation evidence source_path values"
       ]
@@ -97,13 +97,13 @@
     "data/quality/relationship-integrity/operational-occurrence-phases/summary.json": {
       "path": "data/quality/relationship-integrity/operational-occurrence-phases/summary.json",
       "bytes": 1806,
-      "sha256": "53c33806f17338945863e6798eb584107d631a78bcd5b9fc87640191f2f5fc05"
+      "sha256": "fa68438f7b1fa0fdef74d12f749ef1c9a8a82f4c7c02e8af1d1125c6d2825d1e"
     },
     "data/quality/relationship-integrity/operational-occurrence-phases/report.md": {
       "path": "data/quality/relationship-integrity/operational-occurrence-phases/report.md",
       "bytes": 1888,
-      "sha256": "debd3ee9db649aa399ff01d6323b6fb1a91d41869b6103c4dbc31b9e7a62aad4"
+      "sha256": "1144846df5ebba1ca76cd541a64ea232d798e3ba71aaa1aeaf7bf3354b77f12a"
     }
   },
-  "reproduction_command": "bun scripts/generate-operational-occurrence-phase-review-v1.ts --check --route-anchor-release-dir data/exports/releases/v1-rc26"
+  "reproduction_command": "bun scripts/generate-operational-occurrence-phase-review-v1.ts --check --route-anchor-release-dir data/exports/releases/v1-rc27"
 }

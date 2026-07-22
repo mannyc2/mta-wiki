@@ -28,8 +28,8 @@ The single-phase disposition means only that the accepted occurrence review sele
 
 ## Reproduction pins
 
-- Route-anchor release: v1-rc26
-- Route-anchor release input fingerprint: `150d9c97266525adb25dd1b910e7fc278f274151216593e48c6500efe23e1d6b`
+- Route-anchor release: v1-rc27
+- Route-anchor release input fingerprint: `a586a5479500b8543f287a6081e021dc2061e37488701265bac196c045ff811a`
 - Current canonical record count: 85396
 - Schema-v2 occurrence projection SHA-256: `4d556489b096d11a040aaad446b25432f3d88e6c8b9a3b3f41a842aede391e22`
 - Canonical phase/event-relation projection SHA-256: `0829cf2b044c31f32b0899540bb7586be77e891b9ec759a103e22bcdf3d43d69`
@@ -37,6 +37,6 @@ The single-phase disposition means only that the accepted occurrence review sele
 Reproduce or verify with:
 
 ```bash
-bun scripts/generate-operational-occurrence-phase-review-v1.ts --check --route-anchor-release-dir data/exports/releases/v1-rc26
+bun scripts/generate-operational-occurrence-phase-review-v1.ts --check --route-anchor-release-dir data/exports/releases/v1-rc27
 bun test packages/pipeline/test/quality/operational-occurrence-phases.test.ts
 ```
