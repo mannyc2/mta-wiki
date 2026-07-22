@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "manifest_id": "relationship-semantic-review-manifest-v1",
+  "contract_id": "relationship-contract-v1",
+  "input_fingerprint": "82b6ebd7cf7dc6202ca65c2f3295b4549822d59baf9aafca755ea45ccf3fc02f",
+  "artifacts": [
+    {
+      "path": "data/contracts/relationships/v1/baseline-tuple-semantic-review.json",
+      "sha256": "912ae02cab8ab017d9f4288d2357f9fb1cf3e18142514324ae1c5db42d12a242",
+      "bytes": 1205274
+    },
+    {
+      "path": "data/contracts/relationships/v1/semantic-remediation-plan.json",
+      "sha256": "6051f28a832a7213c1a3ecb5ac1d213b4bbe81f74e57dcb0a866f2df71b16c60",
+      "bytes": 1739201
+    },
+    {
+      "path": "data/quality/relationship-integrity/semantic-review/relation-remediation-decisions.jsonl",
+      "sha256": "5ccf7c44965c5e8bd26791036fe576d5b4e0a251df419f9f118aade5c171e96f",
+      "bytes": 1372379,
+      "rows": 399
+    },
+    {
+      "path": "data/quality/relationship-integrity/semantic-review/report.md",
+      "sha256": "6900e235176df1b247b7531ec09c1cc28a664c320904847a3f6fc42ebd66af98",
+      "bytes": 1488
+    },
+    {
+      "path": "data/quality/relationship-integrity/semantic-review/summary.json",
+      "sha256": "8c1be5358c03bbf07d8e7db0312bc11d08afb4801ff4cc0cbe4b9fe6b0def2a9",
+      "bytes": 1095
+    },
+    {
+      "path": "data/quality/relationship-integrity/semantic-review/tuple-decisions.jsonl",
+      "sha256": "f73f76f3cff527fb162f14e588403c71a1893fbdbcff481f34cfcc1c1a2880a2",
+      "bytes": 1046935,
+      "rows": 1136
+    }
+  ],
+  "reproduction_commands": [
+    "bun scripts/aggregate-relationship-semantic-review-v1.ts --check",
+    "bun test packages/pipeline/test/quality/relationship-semantic-review.test.ts"
+  ]
+}

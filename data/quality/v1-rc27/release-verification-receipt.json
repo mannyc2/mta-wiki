@@ -1,0 +1,154 @@
+{
+  "artifact_kind": "mta_wiki_unpromoted_release_candidate_verification_receipt",
+  "schema_version": 1,
+  "verification_date": "2026-07-22",
+  "authorization": {
+    "release_candidate_landed": true,
+    "stable_promotion_authorized": false,
+    "latest_mutation_authorized": false,
+    "authorizes_study": false,
+    "authorizes_cross_product": false
+  },
+  "repository": {
+    "baseline_main_commit": "5e3afdf0983e592c8bc4e8821ab12c2a3eed53f7",
+    "generator_commit": "939b66078b2faec2b5edbf87ead8df3d967bda82",
+    "release_byte_commit": "3ad61a369931157b87655ff96a2fd66c926c986b",
+    "verified_merge_candidate_commit": "23e98a606f1df2f2f1fa7841e068c1ddeba96325",
+    "release_tree_git_oid": "a0984e81443b2824afc3b61087f9c480427a1d53",
+    "excluded_unpublished_defective_commit": "ca6bca6f728051cfa8ad2eae5900c83883d670b9"
+  },
+  "release": {
+    "release_id": "v1-rc27",
+    "path": "data/exports/releases/v1-rc27",
+    "manifest_version": 5,
+    "manifest_path": "data/exports/releases/v1-rc27/manifest.json",
+    "manifest_bytes": 76157,
+    "manifest_sha256": "ed2332e653c7c9b5e37faee52198ff9f4c17d725c539831a4010471be5de622a",
+    "addressed_file_count": 355,
+    "complete_file_count": 356,
+    "addressed_bytes": 343304720,
+    "canonical_record_count": 85396,
+    "operational_occurrence_count": 131,
+    "operational_occurrences_bytes": 865769,
+    "operational_occurrences_sha256": "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef"
+  },
+  "baseline": {
+    "release_id": "v1-rc26",
+    "manifest_sha256": "c1792d1cbfdf498ea0481fa2374202b634dc2deea532f87a600390c6da382dc0",
+    "latest_bytes": 8,
+    "latest_sha256_before_and_after": "00f90525dc3e75ab1580eb678d65c15d46eb1227710c8196ba560b52b1d00eba",
+    "latest_text_lf_terminated": "v1-rc26\n"
+  },
+  "member_extent": {
+    "contract_version": 1,
+    "contract_id": "operational-occurrence-member-extent-v1",
+    "pointer": "member-extent/data/contracts/operational-occurrence-member-extent/v1/manifest.json",
+    "manifest_bytes": 2056,
+    "manifest_sha256": "46f7ad9a3ec5cc470ff0d041c18d0ce75fe628890999516ad1b43efe26fefa68",
+    "contract_path": "member-extent/data/contracts/operational-occurrence-member-extent/v1/contract.json",
+    "contract_bytes": 2059,
+    "contract_sha256": "82df80b7c04689cd047d9f07c267248618b50666296a0e49e9219b21ed32facf",
+    "projection_path": "member-extent/data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl",
+    "projection_bytes": 254849,
+    "projection_sha256": "da1af6ef9b96c5b92dce22d7708bad5b661c6761ac4562bd9d3fe46f7bd735dc",
+    "row_count": 308,
+    "eligible_row_count": 306,
+    "reviewed_decision_count": 31,
+    "extent_counts": {
+      "route_wide": 2,
+      "bounded_segment": 12,
+      "stop_set": 0,
+      "mixed": 0,
+      "unresolved": 294
+    },
+    "queens_acquisition_receipt_sha256": "4942692197828512e80d0de304bf28227bf9be0a923156e7ff50a07b6ebc0183",
+    "queens_durable_source_manifest_sha256": "fffa92bba9524e6ee5ea861a2dd19dfe64125ab9066f223a2ab46b6568b8315e"
+  },
+  "quality_provenance": {
+    "pointer": "quality-provenance/manifest.json",
+    "schema_version": 1,
+    "bytes": 6929,
+    "sha256": "b367a627410dc3f1e26e63aaf90eaecef7fcab884028399cbae265e5fc8cee9c",
+    "authorizes_study": false,
+    "authorizes_cross_product": false,
+    "forecast_overlay_sha256": "ebbec691ffd5cdadaf7fbbbad6aa3b070b219a190bcdfafcc3fd164e75f36609",
+    "forecast_review_manifest_sha256": "3d5d59fe236b0e9226f9c9a7fef5c60d0cf0ba12060233ab1a6f8f906daf742b",
+    "frontier_as_of": "2026-07-22",
+    "grace_days": 90,
+    "open_target_count": 47,
+    "due_target_count": 39,
+    "candidate_bearing_target_count": 21,
+    "reviewed_target_count": 21,
+    "reviewed_candidate_pair_count": 57,
+    "dispositions": {
+      "exact_realization": 4,
+      "later_plan_replacement": 2,
+      "reviewed_nonmatch": 13,
+      "still_open": 2
+    }
+  },
+  "semantic_delta_from_v1_rc26": {
+    "canonical_payloads_byte_identical": true,
+    "operational_occurrences_byte_identical": true,
+    "member_extent_companion_added": true,
+    "forecast_overlay_added_only_to_quality_provenance": true,
+    "prior_release_bytes_mutated": false,
+    "latest_mutated": false
+  },
+  "deterministic_regeneration": {
+    "generator_commit": "939b66078b2faec2b5edbf87ead8df3d967bda82",
+    "fresh_output_root": "/tmp/mta-v1-rc27-final-replay.5fclG7",
+    "recursive_byte_comparison": "identical",
+    "replayed_manifest_sha256": "ed2332e653c7c9b5e37faee52198ff9f4c17d725c539831a4010471be5de622a"
+  },
+  "clean_clone_verification": {
+    "verified_commit": "23e98a606f1df2f2f1fa7841e068c1ddeba96325",
+    "offline_install": "passed",
+    "materialize": {
+      "status": "passed",
+      "canonical_record_count": 85396,
+      "relation_edge_count": 21424,
+      "skipped_record_count": 0,
+      "sqlite_quick_check": "ok"
+    },
+    "queens_source_fixture": {
+      "status": "passed",
+      "source_count": 7,
+      "evidence_block_count": 23,
+      "hydrated_artifact_count": 0,
+      "network_required": false
+    },
+    "study_readiness": {
+      "status": "passed",
+      "bridge_row_count": 484,
+      "member_extent_row_count": 308
+    },
+    "forecast_regeneration": "byte_identical",
+    "typecheck": "passed",
+    "validate": {
+      "status": "passed",
+      "issue_count": 0,
+      "release_contract_issue_count": 0,
+      "reviewed_advisory_count": 3
+    },
+    "named_release_verifier": "passed_manifest_v5_355_files_85396_records",
+    "focused_tests": {
+      "status": "passed",
+      "passed": 106,
+      "failed": 0,
+      "file_count": 11
+    },
+    "full_public_clone_suite": {
+      "passed": 1549,
+      "skipped": 1,
+      "failed": 35,
+      "errors": 3,
+      "test_count": 1585,
+      "file_count": 133,
+      "classification": "all failures and setup errors require intentionally untracked raw source blocks or binaries absent from a clean public clone; no rc27 product or expectation drift remained",
+      "tests_weakened_or_skipped_to_hide_environmental_failures": false
+    },
+    "worktree_status": "clean",
+    "latest_sha256": "00f90525dc3e75ab1580eb678d65c15d46eb1227710c8196ba560b52b1d00eba"
+  }
+}

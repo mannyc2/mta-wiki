@@ -46,6 +46,18 @@ describe("release directory verifier tamper matrix", () => {
     expect(() => RELEASE_CONTRACT_REGISTRY.route_identity_snapshot![1]!(Buffer.from(JSON.stringify({ ...snapshot, unexpected: true })), "route_identity_snapshot.json")).toThrow("strict keys mismatch");
   });
 
+  it("strict-decodes the member-extent companion manifest", () => {
+    const bytes = readFileSync(
+      join(process.cwd(), "data/contracts/operational-occurrence-member-extent/v1/manifest.json"),
+    );
+    expect(() => RELEASE_CONTRACT_REGISTRY.operational_occurrence_member_extents![1]!(bytes, "member-extents.json")).not.toThrow();
+    const value = JSON.parse(bytes.toString("utf8"));
+    expect(() => RELEASE_CONTRACT_REGISTRY.operational_occurrence_member_extents![1]!(
+      Buffer.from(JSON.stringify({ ...value, authorizes_study: true })),
+      "member-extents.json",
+    )).toThrow("unexpected authorizes_study");
+  });
+
   it("binds quarantine metadata to the actual named release before honoring it", () => {
     const path = clone("forged-status");
     const manifestBytes = readFileSync(join(path, "manifest.json"));

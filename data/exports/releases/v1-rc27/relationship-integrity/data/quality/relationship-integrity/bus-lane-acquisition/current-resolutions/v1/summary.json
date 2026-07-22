@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "overlay_id": "bus-lane-acquisition-current-resolutions-v1",
+  "append_only_resolution_count": 2,
+  "current_receipt_count": 2,
+  "exact_identity_resolution_count": 2,
+  "historical_receipts_rewritten": 0,
+  "authorizes_study": false,
+  "authorizes_cross_product": false
+}

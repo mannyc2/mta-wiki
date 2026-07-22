@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "receipt_id": "relationship-contract-v1-enforcement-transition",
+  "contract_id": "relationship-contract-v1",
+  "transition": {
+    "from_state": "warning_ready",
+    "to_state": "enforced_refresh_required"
+  },
+  "promoted_at": "2026-07-17T00:00:00.000Z",
+  "promoted_by": "codex-relationship-integrity-campaign",
+  "previous_proof": {
+    "path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/proof.json",
+    "sha256": "db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a",
+    "proof_stage": "pre_promotion_warning"
+  },
+  "final_matrix": {
+    "path": "data/contracts/relationships/v1/post-remediation-endpoint-matrix.json",
+    "sha256": "44f4e38549bd5134764cbe64231687a5ae315217291ea9b95011d6dc3d76d54c",
+    "relation_count": 21422,
+    "tuple_count": 1008,
+    "relation_ids_sha256": "39b313412f097585ae8359b9aa479212e184bb4d763c7cc06d78d4c7406139d1",
+    "tuple_set_sha256": "629f15b36de36b57c4724d6790b22acc24ff245ec7457ec9f9b3dbe002aab58f"
+  },
+  "previous_gates": [
+    {
+      "gate_id": "bus_lane_acquisition_linkage",
+      "path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/gates/bus_lane_acquisition_linkage.json",
+      "sha256": "f3292a864cd0cc5d1c25d577c754d96d00a5f7b882599627a6bf4eca283bf24f"
+    },
+    {
+      "gate_id": "determinism_and_consumer_proof",
+      "path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/gates/determinism_and_consumer_proof.json",
+      "sha256": "7a9eeb59d5d3b0051fcb836cc7793bb2fd056a3b71d470c301cf71c1391c2367"
+    },
+    {
+      "gate_id": "occurrence_treatment_physicality",
+      "path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/gates/occurrence_treatment_physicality.json",
+      "sha256": "4c5430329cffe0a8871fe074d81de6e6a126010837d11132e3f9d36d0c761f04"
+    },
+    {
+      "gate_id": "payload_reference_integrity",
+      "path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/gates/payload_reference_integrity.json",
+      "sha256": "bb4cdbf9c01feef4fdbbaa19f6b257e1d0d9d71be5a80bde1b70afe313444662"
+    },
+    {
+      "gate_id": "referential_type_evidence_integrity",
+      "path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/gates/referential_type_evidence_integrity.json",
+      "sha256": "2675ac14b2a9b80ffbca8996a2369e2e1095379173f578eab1c75fc1c9f5a498"
+    },
+    {
+      "gate_id": "relationship_completeness",
+      "path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/gates/relationship_completeness.json",
+      "sha256": "936d7fab9a0730260671d194a8b0e094858c6aadabd5b9e71b86f5d22622436b"
+    },
+    {
+      "gate_id": "semantic_remediation",
+      "path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/gates/semantic_remediation.json",
+      "sha256": "c39fb0b88301959c24056ecdf144354a55c83600d964c349f8781a76cda5be5b"
+    }
+  ],
+  "pre_promotion_sources": [
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/summary.json",
+      "role": "acquisition_summary",
+      "sha256": "30c84f4f3e19755459fe600768a540814a9a7fadfd9cb7d7b0d0ff48c8134bdb",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/acquisition_summary.json"
+    },
+    {
+      "path": "data/quality/relationship-integrity/determinism-consumer/summary.json",
+      "role": "determinism_consumer_summary",
+      "sha256": "c69beeee73c262989d2d9fb43881ccdd001e0ae6cb6198cba42d319b9ae60b55",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/determinism_consumer_summary.json"
+    },
+    {
+      "path": "data/quality/relationship-integrity/graph-audit/findings.jsonl",
+      "role": "graph_audit_findings",
+      "sha256": "3ffc9dd3cff2500eed8fd60ad779fe03746a28e0380e4d7c733f1f970a16a564",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/graph_audit_findings.jsonl",
+      "transition_fingerprint": "b1d5b2b61695b366f89d89c0153a3a512593d991aeaeb2c0cf06521397aa800e"
+    },
+    {
+      "path": "data/quality/relationship-integrity/graph-audit/manifest.json",
+      "role": "graph_audit_manifest",
+      "sha256": "f365a690f821706b0172d6e11f6b85fe74dcb0ea985908e102ae9f095381e098",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/graph_audit_manifest.json",
+      "transition_fingerprint": "6278d990c5aad6a6f9413374060b4bade68ec318bdbb5ae95ac4802410f70e0d"
+    },
+    {
+      "path": "data/quality/relationship-integrity/graph-audit/summary.json",
+      "role": "graph_audit_summary",
+      "sha256": "7b77d742fc5cac8e3b3497d254591db0a3381bd694195b013f09252d70672e91",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/graph_audit_summary.json",
+      "transition_fingerprint": "e50f62617919df379039067d353df5f5fea571bcbe2cfed17172d33558cf5b09"
+    },
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/linkage-materialization/summary.json",
+      "role": "linkage_materialization_summary",
+      "sha256": "b4c7c61a3374d1995c276a7a4acbe26b0b91ceb4d18b4aef68602a2768217854",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/linkage_materialization_summary.json",
+      "transition_fingerprint": "921dc49e86b75ad60a72d425b1757b3f04146dc6e7f1d35aaab610bb3b7bed39"
+    },
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/linkage-reconciliation/summary.json",
+      "role": "linkage_reconciliation_summary",
+      "sha256": "64150d0b30aa6f1888358a3bfe45bb6ac2afd99a80101a347e198cec0ebd1104",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/linkage_reconciliation_summary.json"
+    },
+    {
+      "path": "data/quality/relationship-integrity/occurrence-treatment-physicality/summary.json",
+      "role": "occurrence_treatment_physicality_summary",
+      "sha256": "02926881a698f6825b5aa638e347208ea6b8597c04032dd86a37c11ef0a19dc2",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/occurrence_treatment_physicality_summary.json"
+    },
+    {
+      "path": "data/quality/relationship-integrity/payload-references/summary.json",
+      "role": "payload_reference_summary",
+      "sha256": "546122fd4f09035b4fe9b2dbe5e8fff81028d355a1f1f35aba0536d172cb2234",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/payload_reference_summary.json"
+    },
+    {
+      "path": "data/quality/relationship-integrity/operational-occurrence-phases/summary.json",
+      "role": "phase_review_summary",
+      "sha256": "ba37da3aa10ec9bfd6945506711defe10aa80a1e1367eae263262cb42a0f8da1",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/phase_review_summary.json"
+    },
+    {
+      "path": "data/quality/relationship-integrity/completeness/summary.json",
+      "role": "relationship_completeness_summary",
+      "sha256": "46b5d5c35b0f3d0562303064c9fbe4234fde5d9c9d3e85c96a6443ca78154717",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/relationship_completeness_summary.json"
+    },
+    {
+      "path": "data/quality/relationship-integrity/semantic-remediation/summary.json",
+      "role": "semantic_remediation_summary",
+      "sha256": "f19cdd61c0c57049adab0d2abf08c5cf01d2e64b85d66a960b6816b1164a2b66",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/semantic_remediation_summary.json"
+    },
+    {
+      "path": "data/quality/relationship-integrity/sql-integrity/summary.json",
+      "role": "sql_integrity_summary",
+      "sha256": "7f7cd044f161a65327c86fd462992c171457e5c6ecdda082934002eec3cb00af",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/sql_integrity_summary.json",
+      "transition_fingerprint": "a74c9247dcbac058f659c9a4afdae998d06d2c2de78214fe839e6fe0e0bf0a28"
+    }
+  ],
+  "invariant_artifacts": [
+    {
+      "role": "canonical_relations",
+      "path": "data/canonical/relations.jsonl",
+      "sha256": "0a76df68d2025e9f44524bb0e7650409302ea2c7cc31a359e74798e0896ba033"
+    },
+    {
+      "role": "determinism_consumer_summary",
+      "path": "data/quality/relationship-integrity/determinism-consumer/summary.json",
+      "sha256": "c69beeee73c262989d2d9fb43881ccdd001e0ae6cb6198cba42d319b9ae60b55"
+    },
+    {
+      "role": "final_endpoint_matrix",
+      "path": "data/contracts/relationships/v1/post-remediation-endpoint-matrix.json",
+      "sha256": "44f4e38549bd5134764cbe64231687a5ae315217291ea9b95011d6dc3d76d54c"
+    },
+    {
+      "role": "reviewed_release_manifest",
+      "path": "data/exports/releases/v1-rc21/manifest.json",
+      "sha256": "e60606d177f5ab51bd7c11dc4972cc4b2f53b345d801bc2d27f93c931b162299"
+    }
+  ],
+  "refresh_artifacts": [
+    {
+      "role": "canonical_db",
+      "path": "data/canonical.db",
+      "sha256": "b6cdf69173e25b27ca83a20ef5316ff54d74a5f39d9b2901325f53216641e55e"
+    },
+    {
+      "path": "data/quality/relationship-integrity/graph-audit/findings.jsonl",
+      "role": "graph_audit_findings",
+      "sha256": "3ffc9dd3cff2500eed8fd60ad779fe03746a28e0380e4d7c733f1f970a16a564",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/graph_audit_findings.jsonl",
+      "transition_fingerprint": "b1d5b2b61695b366f89d89c0153a3a512593d991aeaeb2c0cf06521397aa800e"
+    },
+    {
+      "path": "data/quality/relationship-integrity/graph-audit/manifest.json",
+      "role": "graph_audit_manifest",
+      "sha256": "f365a690f821706b0172d6e11f6b85fe74dcb0ea985908e102ae9f095381e098",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/graph_audit_manifest.json",
+      "transition_fingerprint": "6278d990c5aad6a6f9413374060b4bade68ec318bdbb5ae95ac4802410f70e0d"
+    },
+    {
+      "path": "data/quality/relationship-integrity/graph-audit/summary.json",
+      "role": "graph_audit_summary",
+      "sha256": "7b77d742fc5cac8e3b3497d254591db0a3381bd694195b013f09252d70672e91",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/graph_audit_summary.json",
+      "transition_fingerprint": "e50f62617919df379039067d353df5f5fea571bcbe2cfed17172d33558cf5b09"
+    },
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/linkage-materialization/summary.json",
+      "role": "linkage_materialization_summary",
+      "sha256": "b4c7c61a3374d1995c276a7a4acbe26b0b91ceb4d18b4aef68602a2768217854",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/linkage_materialization_summary.json",
+      "transition_fingerprint": "921dc49e86b75ad60a72d425b1757b3f04146dc6e7f1d35aaab610bb3b7bed39"
+    },
+    {
+      "path": "data/quality/relationship-integrity/sql-integrity/summary.json",
+      "role": "sql_integrity_summary",
+      "sha256": "7f7cd044f161a65327c86fd462992c171457e5c6ecdda082934002eec3cb00af",
+      "archive_path": "data/contracts/relationships/v1/enforcement-proofs/db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a/sources/sql_integrity_summary.json",
+      "transition_fingerprint": "a74c9247dcbac058f659c9a4afdae998d06d2c2de78214fe839e6fe0e0bf0a28"
+    }
+  ]
+}

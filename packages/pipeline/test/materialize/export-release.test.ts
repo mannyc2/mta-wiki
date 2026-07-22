@@ -1502,6 +1502,34 @@ describe("exportRelease", () => {
     expect(manifest.contract_versions.operational_occurrences).toBeUndefined();
   });
 
+  it("parses optional manifest-v5 member-extent and quality-provenance pointers without weakening older v5 manifests", () => {
+    const source = JSON.parse(
+      readFileSync(join(process.cwd(), "data/exports/releases/v1-rc26/manifest.json"), "utf8"),
+    ) as ReleaseManifest;
+    expect(() => parseReleaseManifest(source)).not.toThrow();
+
+    const extended = structuredClone(source);
+    const memberPath = "member-extent/data/contracts/operational-occurrence-member-extent/v1/manifest.json";
+    const qualityPath = "quality-provenance/manifest.json";
+    extended.files[memberPath] = { bytes: 1, sha256: "a".repeat(64) };
+    extended.files[qualityPath] = { bytes: 1, sha256: "b".repeat(64) };
+    extended.contract_versions.operational_occurrence_member_extents = 1;
+    extended.pointers.operational_occurrence_member_extents = memberPath;
+    extended.pointers.quality_provenance = qualityPath;
+    const parsed = parseReleaseManifest(extended);
+    expect(parsed.manifest_version).toBe(5);
+    expect(parsed.contract_versions.operational_occurrence_member_extents).toBe(1);
+    expect(parsed.pointers.operational_occurrence_member_extents).toBe(memberPath);
+    expect(parsed.pointers.quality_provenance).toBe(qualityPath);
+
+    const missingPointer = structuredClone(extended);
+    delete missingPointer.pointers.operational_occurrence_member_extents;
+    expect(() => parseReleaseManifest(missingPointer)).toThrow("pointers.operational_occurrence_member_extents");
+    const unversionedPointer = structuredClone(extended);
+    delete unversionedPointer.contract_versions.operational_occurrence_member_extents;
+    expect(() => parseReleaseManifest(unversionedPointer)).toThrow("contract version is missing");
+  });
+
   it("rejects malformed or unsupported release manifests", () => {
     expect(() =>
       parseReleaseManifest({

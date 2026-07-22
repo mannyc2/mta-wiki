@@ -312,6 +312,37 @@ const PLAN035_REVIEWED_SOURCE_REFRESHES = [
 ] as const;
 const PLAN035_PREVIOUS_ENFORCEMENT_PROOF_SHA256 =
   "db2326d4eac5c717e1331089c3d8108b652a8f50f8bf04733d6ea5048b392a3a";
+const RC27_REBIND_PREVIOUS_ENFORCEMENT_PROOF_SHA256 =
+  "b0c1aa7c99c67b2d4efb39a5fd56777efc570b7c4cc018c4573e5503649fb303";
+const RC27_REVIEWED_SOURCE_REFRESHES = [
+  // v1-rc27 preserves the rc26 canonical and operational occurrence bytes.
+  // These reviewed hashes only rebind the same zero-warning denominators to
+  // the new immutable candidate; member extents remain a separate companion.
+  {
+    role: "occurrence_treatment_physicality_summary",
+    path: "data/quality/relationship-integrity/occurrence-treatment-physicality/summary.json",
+    previous_sha256:
+      "976959ba8fd399d50d76d2289affb71a1511d69afcab32f3ca05233fc0f33444",
+    reconciled_sha256:
+      "378a8ab99533ecc5222fb26f5e6b9ad6ccd00e0042a39e343bb4c1fd9b42cee1",
+  },
+  {
+    role: "phase_review_summary",
+    path: "data/quality/relationship-integrity/operational-occurrence-phases/summary.json",
+    previous_sha256:
+      "53c33806f17338945863e6798eb584107d631a78bcd5b9fc87640191f2f5fc05",
+    reconciled_sha256:
+      "fa68438f7b1fa0fdef74d12f749ef1c9a8a82f4c7c02e8af1d1125c6d2825d1e",
+  },
+  {
+    role: "relationship_completeness_summary",
+    path: "data/quality/relationship-integrity/completeness/summary.json",
+    previous_sha256:
+      "898ce9417d5c2c8e631224fd29dcd5071792e51e182205710ff1831245340cd8",
+    reconciled_sha256:
+      "336406b0da1b6ecd5a4baf5006c7e85e933219c038467b8aa4835e8887aec01b",
+  },
+] as const;
 const REQUIRED_COMMAND_IDS = [
   "architecture",
   "export",
@@ -3121,6 +3152,8 @@ function validateSnapshotRelease(
     taxonomy: "taxonomy.json",
     quality_report: null,
     relationship_integrity_bundle: null,
+    operational_occurrence_member_extents: null,
+    quality_provenance: null,
     route_identity_snapshot: null,
   };
   assert(
@@ -4171,11 +4204,13 @@ export function isPlan035ReviewedSourceRefresh(input: {
   pin: { role: string; path: string; sha256: string };
   currentText: string;
 }): boolean {
-  if (
-    input.receipt.previous_proof?.sha256 !==
-      PLAN035_PREVIOUS_ENFORCEMENT_PROOF_SHA256
-  ) return false;
-  return PLAN035_REVIEWED_SOURCE_REFRESHES.some((refresh) =>
+  const previousProofSha256 = input.receipt.previous_proof?.sha256;
+  const reviewedRefreshes = previousProofSha256 === PLAN035_PREVIOUS_ENFORCEMENT_PROOF_SHA256
+    ? PLAN035_REVIEWED_SOURCE_REFRESHES
+    : previousProofSha256 === RC27_REBIND_PREVIOUS_ENFORCEMENT_PROOF_SHA256
+      ? RC27_REVIEWED_SOURCE_REFRESHES
+      : [];
+  return reviewedRefreshes.some((refresh) =>
     refresh.role === input.pin.role &&
     refresh.path === input.pin.path &&
     input.pin.sha256 === refresh.previous_sha256 &&

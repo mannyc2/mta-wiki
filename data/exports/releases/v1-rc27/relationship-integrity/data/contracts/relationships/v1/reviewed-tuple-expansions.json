@@ -1,0 +1,3514 @@
+{
+  "schema_version": 1,
+  "ledger_id": "relationship-contract-v1-reviewed-legacy-tuple-expansions",
+  "contract_id": "relationship-contract-v1",
+  "review_status": "approved",
+  "reviewed_at": "2026-07-15T12:00:00.000Z",
+  "reviewed_by": "codex-relationship-integrity-campaign",
+  "approval_scope": "Only the exact endpoint tuples and exact legacy-remediation relation records enumerated by the pinned, human-reviewed correction and evidence ledger may expand the frozen baseline. This decision set is not permission to learn types from current or future observations.",
+  "pinned_sources": {
+    "decision_set_path": "data/contracts/relationships/v1/reviewed-tuple-expansion-decisions.json",
+    "decision_set_sha256": "2d077f4c9a7c4bbeb768c9c0cfb7dd67eebcff9009a258e1081758f6d2e6787d",
+    "baseline_canonical_relations_path": "data/canonical/relations.jsonl",
+    "baseline_canonical_relations_sha256": "c2480fb9da78b339a9381ff6e5756f6496f87791f79b5cf3f2bc8e2f6b99bbf7",
+    "semantic_corrections_path": "data/semantic-corrections/corrections.jsonl",
+    "selected_semantic_correction_count": 147,
+    "selected_semantic_corrections_sha256": "f047be1e6b5aa7241ac7f667a10980cffa4467adc2164d7b9207fb7f6a2ad0ab",
+    "legacy_remediation_ledger_path": "data/quality/relationship-integrity/legacy-remediation/ledger.jsonl",
+    "legacy_remediation_ledger_sha256": "15a1762960ef1075f20b698cbb00756c5092a03ce3e76c4a39755c35dcb82a98",
+    "selected_legacy_ledger_item_count": 142,
+    "selected_legacy_ledger_items_sha256": "e28e873f43aa00b3d5b4500beca37784cd8355f1c998c84bd001dc6fa66a89a5",
+    "legacy_remediation_summary_path": "data/quality/relationship-integrity/legacy-remediation/summary.json",
+    "legacy_remediation_summary_sha256": "ac97d5c7b47eba4090da166833e60574afa20f4c21bde08b50d9bbca3648b422"
+  },
+  "expansion_tuple_count": 29,
+  "affected_relation_count": 142,
+  "selected_correction_count": 147,
+  "expansions": [
+    {
+      "decision_id": "legacy-expansion-0001-presented-to-project-entity",
+      "relation_kind": "presented_to",
+      "relation_family": "partnership_engagement",
+      "subject_kind": "project",
+      "object_kind": "entity",
+      "affected_relation_count": 38,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_bx41-sbs-presented-to-cb6",
+          "correction_ids": [
+            "relationship-integrity-legacy-0005-relation-bx41-sbs-presented-to-cb6"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_bx41-sbs-presented-to-cb6"
+          ],
+          "evidence_ids": [
+            "2014_03_06_brt_webster_cb6#p001_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_cb9-presented-125th-sbs",
+          "correction_ids": [
+            "relationship-integrity-legacy-0007-relation-cb9-presented-125th-sbs"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_cb9-presented-125th-sbs"
+          ],
+          "evidence_ids": [
+            "2013_03_07_sbs_125th_cb9#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_marcy-project-presented-to-cb1",
+          "correction_ids": [
+            "relationship-integrity-legacy-0030-relation-marcy-project-presented-to-cb1"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_marcy-project-presented-to-cb1"
+          ],
+          "evidence_ids": [
+            "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_sept2025#p001_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_presentation-to-qns-cb4",
+          "correction_ids": [
+            "relationship-integrity-legacy-0073-relation-presentation-to-qns-cb4"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_presentation-to-qns-cb4"
+          ],
+          "evidence_ids": [
+            "brt_broadway_roosevelt_ave_queens_blvd_apr2019#p001_c0003",
+            "brt_broadway_roosevelt_ave_queens_blvd_apr2019#p001_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_presented-to-cb5-webster",
+          "correction_ids": [
+            "relationship-integrity-legacy-0075-relation-presented-to-cb5-webster"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_presented-to-cb5-webster"
+          ],
+          "evidence_ids": [
+            "2013_03_sbs_webster_bx_cb5#p001_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_presented-to-community-board-4",
+          "correction_ids": [
+            "relationship-integrity-legacy-0077-relation-presented-to-community-board-4"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_presented-to-community-board-4"
+          ],
+          "evidence_ids": [
+            "brt_bx6_cb4_may2022#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_presented-to-manhattan-cb5",
+          "correction_ids": [
+            "relationship-integrity-legacy-0078-relation-presented-to-manhattan-cb5"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_presented-to-manhattan-cb5"
+          ],
+          "evidence_ids": [
+            "brt_m23_cb5_jun2016#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb10",
+          "correction_ids": [
+            "relationship-integrity-legacy-0080-relation-project-presented-to-cb10"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb10"
+          ],
+          "evidence_ids": [
+            "2015_01_13_brt_125th_cb10_post_implementation_update#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb10_2",
+          "correction_ids": [
+            "relationship-integrity-legacy-0081-relation-project-presented-to-cb10-2"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb10_2"
+          ],
+          "evidence_ids": [
+            "2014_woodhaven_cb10_060514#p001_c0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb12_2",
+          "correction_ids": [
+            "relationship-integrity-legacy-0082-relation-project-presented-to-cb12-2"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb12_2"
+          ],
+          "evidence_ids": [
+            "broadway_157_st_220_st_cb12_mar2025#p001_c0002",
+            "broadway_157_st_220_st_cb12_mar2025#p017_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb14",
+          "correction_ids": [
+            "relationship-integrity-legacy-0083-relation-project-presented-to-cb14"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb14"
+          ],
+          "evidence_ids": [
+            "2015_06_01_brt_woodhaven_cb14_presentation#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb15",
+          "correction_ids": [
+            "relationship-integrity-legacy-0084-relation-project-presented-to-cb15"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb15"
+          ],
+          "evidence_ids": [
+            "201110_nostrand_cb15_slides#p001_c0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb18-b82-cb18-jun2017",
+          "correction_ids": [
+            "relationship-integrity-legacy-0085-relation-project-presented-to-cb18-b82-cb18-jun2017"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb18-b82-cb18-jun2017"
+          ],
+          "evidence_ids": [
+            "brt_south_brooklyn_b82_cb18_jun2017#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb2",
+          "correction_ids": [
+            "relationship-integrity-legacy-0086-relation-project-presented-to-cb2"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb2"
+          ],
+          "evidence_ids": [
+            "dekalb_lafayette_cb2_dec2024#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb3",
+          "correction_ids": [
+            "relationship-integrity-legacy-0087-relation-project-presented-to-cb3"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb3"
+          ],
+          "evidence_ids": [
+            "malcolm_x_blvd_utica_ave_mar2020#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb3_2",
+          "correction_ids": [
+            "relationship-integrity-legacy-0088-relation-project-presented-to-cb3-2"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb3_2"
+          ],
+          "evidence_ids": [
+            "2011_03_07_brt_nostrand_cb3#p001_c0004",
+            "2011_03_07_brt_nostrand_cb3#p001_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb3_3",
+          "correction_ids": [
+            "relationship-integrity-legacy-0089-relation-project-presented-to-cb3-3"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb3_3"
+          ],
+          "evidence_ids": [
+            "2015_05_11_brt_uticaave_cb3_town_hall_presentation#p001_c0002",
+            "2015_05_11_brt_uticaave_cb3_town_hall_presentation#p014_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb3_4",
+          "correction_ids": [
+            "relationship-integrity-legacy-0090-relation-project-presented-to-cb3-4"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb3_4"
+          ],
+          "evidence_ids": [
+            "brt_bx6_cb3_feb2017#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb3-2013",
+          "correction_ids": [
+            "relationship-integrity-legacy-0091-relation-project-presented-to-cb3-2013"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb3-2013"
+          ],
+          "evidence_ids": [
+            "2013_02_sbs_webster_bx_cb3#p001_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb4-2013",
+          "correction_ids": [
+            "relationship-integrity-legacy-0092-relation-project-presented-to-cb4-2013"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb4-2013"
+          ],
+          "evidence_ids": [
+            "2013_02_sbs_webster_bx_cb4#p001_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb5_2",
+          "correction_ids": [
+            "relationship-integrity-legacy-0093-relation-project-presented-to-cb5-2"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb5_2"
+          ],
+          "evidence_ids": [
+            "fresh_pond_rd_tc_jun2019#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb6",
+          "correction_ids": [
+            "relationship-integrity-legacy-0094-relation-project-presented-to-cb6"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb6"
+          ],
+          "evidence_ids": [
+            "2013_10_second_ave_bicycle_upgrade_mn_cb6#p001_c0002",
+            "2013_10_second_ave_bicycle_upgrade_mn_cb6#p003_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb6_2",
+          "correction_ids": [
+            "relationship-integrity-legacy-0095-relation-project-presented-to-cb6-2"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb6_2"
+          ],
+          "evidence_ids": [
+            "20100607_1st2nd_cb6_slides#p001_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb8",
+          "correction_ids": [
+            "relationship-integrity-legacy-0096-relation-project-presented-to-cb8"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb8"
+          ],
+          "evidence_ids": [
+            "2010_03_11_brt_1st2nd_cb8#p001_c0004",
+            "2010_03_11_brt_1st2nd_cb8#p027_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb8_2",
+          "correction_ids": [
+            "relationship-integrity-legacy-0097-relation-project-presented-to-cb8-2"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb8_2"
+          ],
+          "evidence_ids": [
+            "better_buses_pdf_better_buses_broadway_improvements_cb8_2019#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb9_2",
+          "correction_ids": [
+            "relationship-integrity-legacy-0098-relation-project-presented-to-cb9-2"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb9_2"
+          ],
+          "evidence_ids": [
+            "201109_nostrand_cb9_slides#p001_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-cb9-sept2016",
+          "correction_ids": [
+            "relationship-integrity-legacy-0099-relation-project-presented-to-cb9-sept2016"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-cb9-sept2016"
+          ],
+          "evidence_ids": [
+            "brt_woodhaven_cb9_sept2016#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_project-presented-to-nycha-sept2017",
+          "correction_ids": [
+            "relationship-integrity-legacy-0100-relation-project-presented-to-nycha-sept2017"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_project-presented-to-nycha-sept2017"
+          ],
+          "evidence_ids": [
+            "brt_south_brooklyn_b82_sept2017#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_projects-informed-to-li-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0101-relation-projects-informed-to-li-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_projects-informed-to-li-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_186721#p001_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-presented-to-cb10",
+          "correction_ids": [
+            "relationship-integrity-legacy-0108-relation-rel-presented-to-cb10"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-presented-to-cb10"
+          ],
+          "evidence_ids": [
+            "116_st_morningside_ave_pleasant_ave_cb10_feb2025#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-project-has-entity-cb12",
+          "correction_ids": [
+            "relationship-integrity-legacy-0109-relation-rel-project-has-entity-cb12"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-project-has-entity-cb12"
+          ],
+          "evidence_ids": [
+            "jamaica#p001_b0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-project-presented-to-cb1-201111",
+          "correction_ids": [
+            "relationship-integrity-legacy-0110-relation-rel-project-presented-to-cb1-201111"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-project-presented-to-cb1-201111"
+          ],
+          "evidence_ids": [
+            "201111_nostrand_cb1_slides#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-project-presented-to-cb10",
+          "correction_ids": [
+            "relationship-integrity-legacy-0111-relation-rel-project-presented-to-cb10"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-project-presented-to-cb10"
+          ],
+          "evidence_ids": [
+            "116_st_morningside_ave_pleasant_ave_cb10_jun2025#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-project-presented-to-cb5",
+          "correction_ids": [
+            "relationship-integrity-legacy-0112-relation-rel-project-presented-to-cb5"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-project-presented-to-cb5"
+          ],
+          "evidence_ids": [
+            "linden_blvd_fountain_ave_conduit_ave_bkcb5_apr2026#p001_c0002",
+            "linden_blvd_fountain_ave_conduit_ave_bkcb5_apr2026#p001_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-project-presented-to-cb6",
+          "correction_ids": [
+            "relationship-integrity-legacy-0113-relation-rel-project-presented-to-cb6"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-project-presented-to-cb6"
+          ],
+          "evidence_ids": [
+            "flatbush_ave_bus_priority_cb6_oct2025#p001_c0002",
+            "flatbush_ave_bus_priority_cb6_oct2025#p001_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-project-presented-to-cb6_2",
+          "correction_ids": [
+            "relationship-integrity-legacy-0114-relation-rel-project-presented-to-cb6-2"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-project-presented-to-cb6_2"
+          ],
+          "evidence_ids": [
+            "brt_m23_cb6_apr2016#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-project-q44-sbs-presented-to-cb9",
+          "correction_ids": [
+            "relationship-integrity-legacy-0115-relation-rel-project-q44-sbs-presented-to-cb9"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-project-q44-sbs-presented-to-cb9"
+          ],
+          "evidence_ids": [
+            "2015_04_02_brt_flushing_jamaica_cb9_presentation#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_ronkonkoma-presented-to-li-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0127-relation-ronkonkoma-presented-to-li-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_ronkonkoma-presented-to-li-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_186721#p001_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0002-presented-to-source-entity",
+      "relation_kind": "presented_to",
+      "relation_family": "partnership_engagement",
+      "subject_kind": "source",
+      "object_kind": "entity",
+      "affected_relation_count": 14,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_cb10-presentation-organized-by",
+          "correction_ids": [
+            "relationship-integrity-legacy-0006-relation-cb10-presentation-organized-by"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_cb10-presentation-organized-by"
+          ],
+          "evidence_ids": [
+            "capital_woodhaven_blvd_capital_projects_cb10_dec2024#p001_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_document-presented-to-li-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0012-relation-document-presented-to-li-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_document-presented-to-li-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_194056#p001_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_document-presented-to-long-island-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0013-relation-document-presented-to-long-island-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_document-presented-to-long-island-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_176351#p001_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_finance-committee-presented-to",
+          "correction_ids": [
+            "relationship-integrity-legacy-0018-relation-finance-committee-presented-to"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_finance-committee-presented-to"
+          ],
+          "evidence_ids": [
+            "meeting_doc_157691#p001_c0002",
+            "meeting_doc_157691#p001_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_m79-sbs-presented-to-cb8",
+          "correction_ids": [
+            "relationship-integrity-legacy-0027-relation-m79-sbs-presented-to-cb8"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_m79-sbs-presented-to-cb8"
+          ],
+          "evidence_ids": [
+            "brt_m79_cb8_nov2018#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_mdoc164971-report-to-finance-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0032-relation-mdoc164971-report-to-finance-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_mdoc164971-report-to-finance-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_164971#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_presentation-to-finance-committee_2",
+          "correction_ids": [
+            "relationship-integrity-legacy-0071-relation-presentation-to-finance-committee-2"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_presentation-to-finance-committee_2"
+          ],
+          "evidence_ids": [
+            "meeting_doc_112226#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_presentation-to-mta-board",
+          "correction_ids": [
+            "relationship-integrity-legacy-0072-relation-presentation-to-mta-board"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_presentation-to-mta-board"
+          ],
+          "evidence_ids": [
+            "meeting_doc_171491#p001_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_presented-to-cb8",
+          "correction_ids": [
+            "relationship-integrity-legacy-0076-relation-presented-to-cb8"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_presented-to-cb8"
+          ],
+          "evidence_ids": [
+            "lexington_ave_60_st_52_st_cb8_oct2025#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-presentation-to-community-board-5",
+          "correction_ids": [
+            "relationship-integrity-legacy-0107-relation-rel-presentation-to-community-board-5"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-presentation-to-community-board-5"
+          ],
+          "evidence_ids": [
+            "080421_brt_cb5_34th_street_fullboardpresentation#p001_c0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_report-presented-to-finance-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0124-relation-report-presented-to-finance-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_report-presented-to-finance-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_135371#p001_c0002",
+            "meeting_doc_135371#p001_c0003",
+            "meeting_doc_135371#p001_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_source-meeting-doc-133371-presented-to-finance-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0132-relation-source-meeting-doc-133371-presented-to-finance-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_source-meeting-doc-133371-presented-to-finance-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_133371#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_source-presented-to-cb8",
+          "correction_ids": [
+            "relationship-integrity-legacy-0133-relation-source-presented-to-cb8"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_source-presented-to-cb8"
+          ],
+          "evidence_ids": [
+            "201110_nostrand_cb8_slides#p001_c0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_source-to-finance-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0134-relation-source-to-finance-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_source-to-finance-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_201506#p001_c0002",
+            "meeting_doc_201506#p001_c0003",
+            "meeting_doc_201506#p001_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0003-presented-to-entity-entity",
+      "relation_kind": "presented_to",
+      "relation_family": "partnership_engagement",
+      "subject_kind": "entity",
+      "object_kind": "entity",
+      "affected_relation_count": 13,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_cd-published-to-board",
+          "correction_ids": [
+            "relationship-integrity-legacy-0010-relation-cd-published-to-board"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_cd-published-to-board"
+          ],
+          "evidence_ids": [
+            "meeting_doc_53036#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_jrc-presentation-meeting",
+          "correction_ids": [
+            "relationship-integrity-legacy-0025-relation-jrc-presentation-meeting"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_jrc-presentation-meeting"
+          ],
+          "evidence_ids": [
+            "meeting_doc_186706#p001_c0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_lirr-presented-to-li-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0026-relation-lirr-presented-to-li-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_lirr-presented-to-li-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_186721#p001_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_meeting-doc-144141-mtacd-presented-to-mta-board",
+          "correction_ids": [
+            "relationship-integrity-legacy-0033-relation-meeting-doc-144141-mtacd-presented-to-mta-board"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-144141-mtacd-presented-to-mta-board"
+          ],
+          "evidence_ids": [
+            "meeting_doc_144141#p001_c0002",
+            "meeting_doc_144141#p001_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_meeting-doc-33881-oig-presented-to-board",
+          "correction_ids": [
+            "relationship-integrity-legacy-0046-relation-meeting-doc-33881-oig-presented-to-board"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-33881-oig-presented-to-board"
+          ],
+          "evidence_ids": [
+            "meeting_doc_33881#p001_c0003",
+            "meeting_doc_33881#p001_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_mta-presented-to-cb18",
+          "correction_ids": [
+            "relationship-integrity-legacy-0052-relation-mta-presented-to-cb18"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_mta-presented-to-cb18"
+          ],
+          "evidence_ids": [
+            "2016_01_20_brt_southbrooklyn_cb18#p001_c0002",
+            "2016_01_20_brt_southbrooklyn_cb18#p001_c0004",
+            "2016_01_20_brt_southbrooklyn_cb18#p001_c0006"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_nycdot-presented-to-cb18",
+          "correction_ids": [
+            "relationship-integrity-legacy-0058-relation-nycdot-presented-to-cb18"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_nycdot-presented-to-cb18"
+          ],
+          "evidence_ids": [
+            "2016_01_20_brt_southbrooklyn_cb18#p001_c0002",
+            "2016_01_20_brt_southbrooklyn_cb18#p001_c0006"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_nyct-presented-to-cb17-2016",
+          "correction_ids": [
+            "relationship-integrity-legacy-0063-relation-nyct-presented-to-cb17-2016"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_nyct-presented-to-cb17-2016"
+          ],
+          "evidence_ids": [
+            "brt_uticaave_cb17_transportation_committee_2016#p001_c0002",
+            "brt_uticaave_cb17_transportation_committee_2016#p001_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_nyct-presented-to-cb18",
+          "correction_ids": [
+            "relationship-integrity-legacy-0064-relation-nyct-presented-to-cb18"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_nyct-presented-to-cb18"
+          ],
+          "evidence_ids": [
+            "brt_uticaave_cb18_transportation_committee_2016#p001_c0002",
+            "brt_uticaave_cb18_transportation_committee_2016#p001_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_nyct-presented-to-cb18_2",
+          "correction_ids": [
+            "relationship-integrity-legacy-0065-relation-nyct-presented-to-cb18-2"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_nyct-presented-to-cb18_2"
+          ],
+          "evidence_ids": [
+            "2015_04_15_brt_uticaave_cb18_presentation#p001_c0002",
+            "2015_04_15_brt_uticaave_cb18_presentation#p010_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_nyct-presented-to-cb7",
+          "correction_ids": [
+            "relationship-integrity-legacy-0066-relation-nyct-presented-to-cb7"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_nyct-presented-to-cb7"
+          ],
+          "evidence_ids": [
+            "2014_10_14_brt_86thstreet_cb7_presentation#p001_c0002",
+            "2014_10_14_brt_86thstreet_cb7_presentation#p001_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_presented-by-mta-nyct-to-cb7-2014-04-10",
+          "correction_ids": [
+            "relationship-integrity-legacy-0074-relation-presented-by-mta-nyct-to-cb7-2014-04-10"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_presented-by-mta-nyct-to-cb7-2014-04-10"
+          ],
+          "evidence_ids": [
+            "2014_04_10_brt_webster_cb7#p001_c0001",
+            "2014_04_10_brt_webster_cb7#p001_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-nyct-presented-to-cb8-2015-04-09",
+          "correction_ids": [
+            "relationship-integrity-legacy-0106-relation-rel-nyct-presented-to-cb8-2015-04-09"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-nyct-presented-to-cb8-2015-04-09"
+          ],
+          "evidence_ids": [
+            "2015_04_09_brt_uticaave_cb8_presentation#p001_c0001",
+            "2015_04_09_brt_uticaave_cb8_presentation#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0004-presented-to-event-entity",
+      "relation_kind": "presented_to",
+      "relation_family": "partnership_engagement",
+      "subject_kind": "event",
+      "object_kind": "entity",
+      "affected_relation_count": 8,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_finance-report-to-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0019-relation-finance-report-to-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_finance-report-to-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_115206#p002_c0002",
+            "meeting_doc_115206#p003_c0007"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_operations-report-to-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0067-relation-operations-report-to-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_operations-report-to-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_115206#p002_c0002",
+            "meeting_doc_115206#p003_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_police-report-to-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0068-relation-police-report-to-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_police-report-to-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_115206#p002_c0002",
+            "meeting_doc_115206#p002_c0015",
+            "meeting_doc_115206#p002_c0016"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_presentation-presented-to-cb1",
+          "correction_ids": [
+            "relationship-integrity-legacy-0069-relation-presentation-presented-to-cb1"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_presentation-presented-to-cb1"
+          ],
+          "evidence_ids": [
+            "battery_pl_oct2019#p001_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_presentation-presented-to-cb6",
+          "correction_ids": [
+            "relationship-integrity-legacy-0070-relation-presentation-presented-to-cb6"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_presentation-presented-to-cb6"
+          ],
+          "evidence_ids": [
+            "2014_12_01_brt_thirdave_cb6_presentation#p001_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_president-report-to-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0079-relation-president-report-to-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_president-report-to-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_115206#p002_c0002",
+            "meeting_doc_115206#p002_c0012"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_ridership-report-to-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0125-relation-ridership-report-to-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_ridership-report-to-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_115206#p002_c0002",
+            "meeting_doc_115206#p003_c0009"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_safety-report-to-committee",
+          "correction_ids": [
+            "relationship-integrity-legacy-0128-relation-safety-report-to-committee"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_safety-report-to-committee"
+          ],
+          "evidence_ids": [
+            "meeting_doc_115206#p002_c0002",
+            "meeting_doc_115206#p002_c0014"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presented_to in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0005-in-development-for-project-route",
+      "relation_kind": "in_development_for",
+      "relation_family": "route_scope",
+      "subject_kind": "project",
+      "object_kind": "route",
+      "affected_relation_count": 8,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place in_development_for in route_scope; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support route_scope; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_rel-tsp-project-developing-bx12-sbs",
+          "correction_ids": [
+            "relationship-integrity-legacy-0116-relation-rel-tsp-project-developing-bx12-sbs"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-tsp-project-developing-bx12-sbs"
+          ],
+          "evidence_ids": [
+            "tsp_status_2017#p001_b0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place in_development_for in route_scope; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support route_scope; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-tsp-project-developing-q25",
+          "correction_ids": [
+            "relationship-integrity-legacy-0117-relation-rel-tsp-project-developing-q25"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-tsp-project-developing-q25"
+          ],
+          "evidence_ids": [
+            "tsp_status_2017#p001_b0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place in_development_for in route_scope; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support route_scope; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-tsp-project-developing-q43",
+          "correction_ids": [
+            "relationship-integrity-legacy-0118-relation-rel-tsp-project-developing-q43"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-tsp-project-developing-q43"
+          ],
+          "evidence_ids": [
+            "tsp_status_2017#p001_b0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place in_development_for in route_scope; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support route_scope; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-tsp-project-developing-q5",
+          "correction_ids": [
+            "relationship-integrity-legacy-0119-relation-rel-tsp-project-developing-q5"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-tsp-project-developing-q5"
+          ],
+          "evidence_ids": [
+            "tsp_status_2017#p001_b0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place in_development_for in route_scope; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support route_scope; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-tsp-project-developing-q52-sbs",
+          "correction_ids": [
+            "relationship-integrity-legacy-0120-relation-rel-tsp-project-developing-q52-sbs"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-tsp-project-developing-q52-sbs"
+          ],
+          "evidence_ids": [
+            "tsp_status_2017#p001_b0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place in_development_for in route_scope; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support route_scope; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-tsp-project-developing-q53-sbs",
+          "correction_ids": [
+            "relationship-integrity-legacy-0121-relation-rel-tsp-project-developing-q53-sbs"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-tsp-project-developing-q53-sbs"
+          ],
+          "evidence_ids": [
+            "tsp_status_2017#p001_b0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place in_development_for in route_scope; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support route_scope; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-tsp-project-developing-s62",
+          "correction_ids": [
+            "relationship-integrity-legacy-0122-relation-rel-tsp-project-developing-s62"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-tsp-project-developing-s62"
+          ],
+          "evidence_ids": [
+            "tsp_status_2017#p001_b0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place in_development_for in route_scope; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support route_scope; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-tsp-project-developing-s92",
+          "correction_ids": [
+            "relationship-integrity-legacy-0123-relation-rel-tsp-project-developing-s92"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-tsp-project-developing-s92"
+          ],
+          "evidence_ids": [
+            "tsp_status_2017#p001_b0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place in_development_for in route_scope; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support route_scope; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0006-has-initiative-entity-claim",
+      "relation_kind": "has_initiative",
+      "relation_family": "claim_context",
+      "subject_kind": "entity",
+      "object_kind": "claim",
+      "affected_relation_count": 7,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place has_initiative in claim_context; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_meeting-doc-199146-bt-initiatives",
+          "correction_ids": [
+            "relationship-integrity-legacy-0039-relation-meeting-doc-199146-bt-initiatives"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-199146-bt-initiatives"
+          ],
+          "evidence_ids": [
+            "meeting_doc_199146#p005_c0007",
+            "meeting_doc_199146#p005_c0008"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_initiative in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_meeting-doc-199146-cd-initiatives",
+          "correction_ids": [
+            "relationship-integrity-legacy-0040-relation-meeting-doc-199146-cd-initiatives"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-199146-cd-initiatives"
+          ],
+          "evidence_ids": [
+            "meeting_doc_199146#p005_c0005",
+            "meeting_doc_199146#p005_c0006"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_initiative in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_meeting-doc-199146-mnr-lirr-initiatives",
+          "correction_ids": [
+            "relationship-integrity-legacy-0041-relation-meeting-doc-199146-mnr-lirr-initiatives"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-199146-mnr-lirr-initiatives"
+          ],
+          "evidence_ids": [
+            "meeting_doc_199146#p005_c0003",
+            "meeting_doc_199146#p005_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_initiative in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_meeting-doc-199146-mta-agency-initiatives",
+          "correction_ids": [
+            "relationship-integrity-legacy-0042-relation-meeting-doc-199146-mta-agency-initiatives"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-199146-mta-agency-initiatives"
+          ],
+          "evidence_ids": [
+            "meeting_doc_199146#p003_c0003",
+            "meeting_doc_199146#p003_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_initiative in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_meeting-doc-199146-mtapd-initiatives",
+          "correction_ids": [
+            "relationship-integrity-legacy-0043-relation-meeting-doc-199146-mtapd-initiatives"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-199146-mtapd-initiatives"
+          ],
+          "evidence_ids": [
+            "meeting_doc_199146#p007_c0003",
+            "meeting_doc_199146#p007_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_initiative in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_meeting-doc-199146-nyct-buses-initiatives",
+          "correction_ids": [
+            "relationship-integrity-legacy-0044-relation-meeting-doc-199146-nyct-buses-initiatives"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-199146-nyct-buses-initiatives"
+          ],
+          "evidence_ids": [
+            "meeting_doc_199146#p006_c0003",
+            "meeting_doc_199146#p006_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_initiative in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_meeting-doc-199146-nyct-subway-initiatives",
+          "correction_ids": [
+            "relationship-integrity-legacy-0045-relation-meeting-doc-199146-nyct-subway-initiatives"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-199146-nyct-subway-initiatives"
+          ],
+          "evidence_ids": [
+            "meeting_doc_199146#p006_c0006",
+            "meeting_doc_199146#p006_c0007"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_initiative in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0007-part-of-event-source-publication",
+      "relation_kind": "part_of",
+      "relation_family": "publication_role",
+      "subject_kind": "event",
+      "object_kind": "source",
+      "affected_relation_count": 6,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_cbdtp-in-plan",
+          "correction_ids": [
+            "relationship-integrity-legacy-0009-relation-cbdtp-in-plan"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_cbdtp-in-plan"
+          ],
+          "evidence_ids": [
+            "meeting_doc_157941#p005_c0009"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_customer-satisfaction-part-of-workplan",
+          "correction_ids": [
+            "relationship-integrity-legacy-0011-relation-customer-satisfaction-part-of-workplan"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_customer-satisfaction-part-of-workplan"
+          ],
+          "evidence_ids": [
+            "meeting_doc_95196#p005_c0002",
+            "meeting_doc_95196#p005_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_fare-toll-aug2025-in-plan",
+          "correction_ids": [
+            "relationship-integrity-legacy-0015-relation-fare-toll-aug2025-in-plan"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_fare-toll-aug2025-in-plan"
+          ],
+          "evidence_ids": [
+            "meeting_doc_157941#p021_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_fare-toll-mar2027-in-plan",
+          "correction_ids": [
+            "relationship-integrity-legacy-0016-relation-fare-toll-mar2027-in-plan"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_fare-toll-mar2027-in-plan"
+          ],
+          "evidence_ids": [
+            "meeting_doc_157941#p021_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_jan2025-action-is-part-of-workplan",
+          "correction_ids": [
+            "relationship-integrity-legacy-0023-relation-jan2025-action-is-part-of-workplan"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_jan2025-action-is-part-of-workplan"
+          ],
+          "evidence_ids": [
+            "meeting_doc_170861#p001_c0025",
+            "meeting_doc_170861#p003_c0016"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_nyct-midyear-part-of-workplan",
+          "correction_ids": [
+            "relationship-integrity-legacy-0060-relation-nyct-midyear-part-of-workplan"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_nyct-midyear-part-of-workplan"
+          ],
+          "evidence_ids": [
+            "meeting_doc_95196#p001_c0005",
+            "meeting_doc_95196#p004_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0008-part-of-entity-source-publication",
+      "relation_kind": "part_of",
+      "relation_family": "publication_role",
+      "subject_kind": "entity",
+      "object_kind": "source",
+      "affected_relation_count": 6,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_fema-reimbursement-in-plan",
+          "correction_ids": [
+            "relationship-integrity-legacy-0017-relation-fema-reimbursement-in-plan"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_fema-reimbursement-in-plan"
+          ],
+          "evidence_ids": [
+            "meeting_doc_157941#p023_c0008"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_hctf-part-of-report",
+          "correction_ids": [
+            "relationship-integrity-legacy-0021-relation-hctf-part-of-report"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_hctf-part-of-report"
+          ],
+          "evidence_ids": [
+            "meeting_doc_173956#p005_c0001",
+            "meeting_doc_173956#p005_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_mtabus-part-of-mta_2",
+          "correction_ids": [
+            "relationship-integrity-legacy-0053-relation-mtabus-part-of-mta-2"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_mtabus-part-of-mta_2"
+          ],
+          "evidence_ids": [
+            "meeting_doc_151671#p030_c0001",
+            "meeting_doc_151671#p030_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_nyct-budget-amendment2",
+          "correction_ids": [
+            "relationship-integrity-legacy-0059-relation-nyct-budget-amendment2"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_nyct-budget-amendment2"
+          ],
+          "evidence_ids": [
+            "meeting_doc_91711#p021_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_nyct-part-of-mta_14",
+          "correction_ids": [
+            "relationship-integrity-legacy-0061-relation-nyct-part-of-mta-14"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_nyct-part-of-mta_14"
+          ],
+          "evidence_ids": [
+            "meeting_doc_151671#p001_c0003",
+            "meeting_doc_151671#p005_c0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_sir-part-of-mta_10",
+          "correction_ids": [
+            "relationship-integrity-legacy-0130-relation-sir-part-of-mta-10"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_sir-part-of-mta_10"
+          ],
+          "evidence_ids": [
+            "meeting_doc_151671#p016_c0001",
+            "meeting_doc_151671#p016_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0009-has-tsp-route-treatment",
+      "relation_kind": "has_tsp",
+      "relation_family": "treatment_context",
+      "subject_kind": "route",
+      "object_kind": "treatment_component",
+      "affected_relation_count": 5,
+      "rationales": [
+        "Align local endpoint provenance with the canonical Transit Signal Priority component.",
+        "The authoritative TSP report proves that the route had Transit Signal Priority; replace the route self-loop with the canonical TSP treatment component.",
+        "The exact cited claim resolves to an already canonical airport or TSP endpoint; both record and local endpoint references are corrected.",
+        "proved_existing_canonical_endpoint"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_rel-b44-sbs-tsp-route",
+          "correction_ids": [
+            "relationship-integrity-legacy-0150-relation-rel-b44-sbs-tsp-route",
+            "relationship-integrity-legacy-0151-relation-rel-b44-sbs-tsp-route"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-b44-sbs-tsp-route"
+          ],
+          "evidence_ids": [
+            "tsp_report_2017#p005_c0007",
+            "tsp_report_2017#p009_c0001"
+          ],
+          "correction_reasons": [
+            "Align local endpoint provenance with the canonical Transit Signal Priority component.",
+            "The authoritative TSP report proves that the route had Transit Signal Priority; replace the route self-loop with the canonical TSP treatment component."
+          ],
+          "legacy_investigations": [
+            "The exact cited claim resolves to an already canonical airport or TSP endpoint; both record and local endpoint references are corrected."
+          ],
+          "legacy_reasons": [
+            "proved_existing_canonical_endpoint"
+          ]
+        },
+        {
+          "record_id": "relation_rel-b46-sbs-tsp-route",
+          "correction_ids": [
+            "relationship-integrity-legacy-0154-relation-rel-b46-sbs-tsp-route",
+            "relationship-integrity-legacy-0155-relation-rel-b46-sbs-tsp-route"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-b46-sbs-tsp-route"
+          ],
+          "evidence_ids": [
+            "tsp_report_2017#p005_c0007"
+          ],
+          "correction_reasons": [
+            "Align local endpoint provenance with the canonical Transit Signal Priority component.",
+            "The authoritative TSP report proves that the route had Transit Signal Priority; replace the route self-loop with the canonical TSP treatment component."
+          ],
+          "legacy_investigations": [
+            "The exact cited claim resolves to an already canonical airport or TSP endpoint; both record and local endpoint references are corrected."
+          ],
+          "legacy_reasons": [
+            "proved_existing_canonical_endpoint"
+          ]
+        },
+        {
+          "record_id": "relation_rel-bx41-sbs-tsp-route",
+          "correction_ids": [
+            "relationship-integrity-legacy-0156-relation-rel-bx41-sbs-tsp-route",
+            "relationship-integrity-legacy-0157-relation-rel-bx41-sbs-tsp-route"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-bx41-sbs-tsp-route"
+          ],
+          "evidence_ids": [
+            "tsp_report_2017#p005_c0007",
+            "tsp_report_2017#p010_c0001"
+          ],
+          "correction_reasons": [
+            "Align local endpoint provenance with the canonical Transit Signal Priority component.",
+            "The authoritative TSP report proves that the route had Transit Signal Priority; replace the route self-loop with the canonical TSP treatment component."
+          ],
+          "legacy_investigations": [
+            "The exact cited claim resolves to an already canonical airport or TSP endpoint; both record and local endpoint references are corrected."
+          ],
+          "legacy_reasons": [
+            "proved_existing_canonical_endpoint"
+          ]
+        },
+        {
+          "record_id": "relation_rel-m15-sbs-tsp-route",
+          "correction_ids": [
+            "relationship-integrity-legacy-0152-relation-rel-m15-sbs-tsp-route",
+            "relationship-integrity-legacy-0153-relation-rel-m15-sbs-tsp-route"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-m15-sbs-tsp-route"
+          ],
+          "evidence_ids": [
+            "tsp_report_2017#p005_c0007",
+            "tsp_report_2017#p007_c0004"
+          ],
+          "correction_reasons": [
+            "Align local endpoint provenance with the canonical Transit Signal Priority component.",
+            "The authoritative TSP report proves that the route had Transit Signal Priority; replace the route self-loop with the canonical TSP treatment component."
+          ],
+          "legacy_investigations": [
+            "The exact cited claim resolves to an already canonical airport or TSP endpoint; both record and local endpoint references are corrected."
+          ],
+          "legacy_reasons": [
+            "proved_existing_canonical_endpoint"
+          ]
+        },
+        {
+          "record_id": "relation_rel-s79-sbs-tsp-route",
+          "correction_ids": [
+            "relationship-integrity-legacy-0148-relation-rel-s79-sbs-tsp-route",
+            "relationship-integrity-legacy-0149-relation-rel-s79-sbs-tsp-route"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-s79-sbs-tsp-route"
+          ],
+          "evidence_ids": [
+            "tsp_report_2017#p005_c0007",
+            "tsp_report_2017#p008_c0001"
+          ],
+          "correction_reasons": [
+            "Align local endpoint provenance with the canonical Transit Signal Priority component.",
+            "The authoritative TSP report proves that the route had Transit Signal Priority; replace the route self-loop with the canonical TSP treatment component."
+          ],
+          "legacy_investigations": [
+            "The exact cited claim resolves to an already canonical airport or TSP endpoint; both record and local endpoint references are corrected."
+          ],
+          "legacy_reasons": [
+            "proved_existing_canonical_endpoint"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0010-part-of-project-entity-agency",
+      "relation_kind": "part_of",
+      "relation_family": "agency_role",
+      "subject_kind": "project",
+      "object_kind": "entity",
+      "affected_relation_count": 4,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place part_of in agency_role; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support agency_role; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_87681-cbdtp-part-of-operations",
+          "correction_ids": [
+            "relationship-integrity-legacy-0004-relation-87681-cbdtp-part-of-operations"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_87681-cbdtp-part-of-operations"
+          ],
+          "evidence_ids": [
+            "meeting_doc_87681#p041_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in agency_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support agency_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_east-side-access-readiness-supports-summer-track-work",
+          "correction_ids": [
+            "relationship-integrity-legacy-0014-relation-east-side-access-readiness-supports-summer-track-work"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_east-side-access-readiness-supports-summer-track-work"
+          ],
+          "evidence_ids": [
+            "meeting_doc_160086#p005_c0009"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in agency_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support agency_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_main-line-second-track-supports-summer-track-work",
+          "correction_ids": [
+            "relationship-integrity-legacy-0028-relation-main-line-second-track-supports-summer-track-work"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_main-line-second-track-supports-summer-track-work"
+          ],
+          "evidence_ids": [
+            "meeting_doc_160086#p005_c0009"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in agency_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support agency_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-meeting-doc-177266-tech-project-part-of-aar",
+          "correction_ids": [
+            "relationship-integrity-legacy-0103-relation-rel-meeting-doc-177266-tech-project-part-of-aar"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-meeting-doc-177266-tech-project-part-of-aar"
+          ],
+          "evidence_ids": [
+            "meeting_doc_177266#p005_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in agency_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support agency_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0011-has-agenda-topic-event-entity",
+      "relation_kind": "has_agenda_topic",
+      "relation_family": "agency_role",
+      "subject_kind": "event",
+      "object_kind": "entity",
+      "affected_relation_count": 4,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place has_agenda_topic in agency_role; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support agency_role; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_meeting-doc-170906-feb25-involves-nyct",
+          "correction_ids": [
+            "relationship-integrity-legacy-0035-relation-meeting-doc-170906-feb25-involves-nyct"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-170906-feb25-involves-nyct"
+          ],
+          "evidence_ids": [
+            "meeting_doc_170906#p001_c0006"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_agenda_topic in agency_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support agency_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_meeting-doc-170906-jan25-involves-mta-bus",
+          "correction_ids": [
+            "relationship-integrity-legacy-0036-relation-meeting-doc-170906-jan25-involves-mta-bus"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-170906-jan25-involves-mta-bus"
+          ],
+          "evidence_ids": [
+            "meeting_doc_170906#p001_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_agenda_topic in agency_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support agency_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_meeting-doc-170906-jan25-involves-nyct",
+          "correction_ids": [
+            "relationship-integrity-legacy-0037-relation-meeting-doc-170906-jan25-involves-nyct"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-170906-jan25-involves-nyct"
+          ],
+          "evidence_ids": [
+            "meeting_doc_170906#p001_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_agenda_topic in agency_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support agency_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_meeting-doc-170906-jan25-involves-sir",
+          "correction_ids": [
+            "relationship-integrity-legacy-0038-relation-meeting-doc-170906-jan25-involves-sir"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-170906-jan25-involves-sir"
+          ],
+          "evidence_ids": [
+            "meeting_doc_170906#p001_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_agenda_topic in agency_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support agency_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0012-operates-program-entity-claim",
+      "relation_kind": "operates_program",
+      "relation_family": "claim_context",
+      "subject_kind": "entity",
+      "object_kind": "claim",
+      "affected_relation_count": 3,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place operates_program in claim_context; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_170436-mta-fuel-hedge-program",
+          "correction_ids": [
+            "relationship-integrity-legacy-0001-relation-170436-mta-fuel-hedge-program"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_170436-mta-fuel-hedge-program"
+          ],
+          "evidence_ids": [
+            "meeting_doc_170436#p001_b0033"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place operates_program in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_mta-fuel-hedge-program_5",
+          "correction_ids": [
+            "relationship-integrity-legacy-0048-relation-mta-fuel-hedge-program-5"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_mta-fuel-hedge-program_5"
+          ],
+          "evidence_ids": [
+            "meeting_doc_154886#p001_b0033"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place operates_program in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_mta-has-fuel-hedge-program",
+          "correction_ids": [
+            "relationship-integrity-legacy-0050-relation-mta-has-fuel-hedge-program"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_mta-has-fuel-hedge-program"
+          ],
+          "evidence_ids": [
+            "meeting_doc_131711#p002_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place operates_program in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0013-part-of-project-project-program",
+      "relation_kind": "part_of",
+      "relation_family": "program_project_scope",
+      "subject_kind": "project",
+      "object_kind": "project",
+      "affected_relation_count": 3,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place part_of in program_project_scope; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support program_project_scope; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_hall-interlocking-part-of-jci",
+          "correction_ids": [
+            "relationship-integrity-legacy-0020-relation-hall-interlocking-part-of-jci"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_hall-interlocking-part-of-jci"
+          ],
+          "evidence_ids": [
+            "meeting_doc_170831#p014_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in program_project_scope; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support program_project_scope; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_jci-phase2-hall",
+          "correction_ids": [
+            "relationship-integrity-legacy-0024-relation-jci-phase2-hall"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_jci-phase2-hall"
+          ],
+          "evidence_ids": [
+            "meeting_doc_104746#p006_c0006",
+            "meeting_doc_104746#p006_c0009"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in program_project_scope; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support program_project_scope; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_transparency-initiative-includes-open-data-plan",
+          "correction_ids": [
+            "relationship-integrity-legacy-0137-relation-transparency-initiative-includes-open-data-plan"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_transparency-initiative-includes-open-data-plan"
+          ],
+          "evidence_ids": [
+            "open_data_plan_2022#p002_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in program_project_scope; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support program_project_scope; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0014-belongs-to-entity-source",
+      "relation_kind": "belongs_to",
+      "relation_family": "publication_role",
+      "subject_kind": "entity",
+      "object_kind": "source",
+      "affected_relation_count": 3,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place belongs_to in publication_role; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_mtabus-part-of-mta_3",
+          "correction_ids": [
+            "relationship-integrity-legacy-0054-relation-mtabus-part-of-mta-3"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_mtabus-part-of-mta_3"
+          ],
+          "evidence_ids": [
+            "meeting_doc_160386#p030_c0001",
+            "meeting_doc_160386#p030_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place belongs_to in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_nyct-part-of-mta_6",
+          "correction_ids": [
+            "relationship-integrity-legacy-0062-relation-nyct-part-of-mta-6"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_nyct-part-of-mta_6"
+          ],
+          "evidence_ids": [
+            "meeting_doc_160386#p001_c0002",
+            "meeting_doc_160386#p001_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place belongs_to in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_sir-part-of-mta_8",
+          "correction_ids": [
+            "relationship-integrity-legacy-0131-relation-sir-part-of-mta-8"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_sir-part-of-mta_8"
+          ],
+          "evidence_ids": [
+            "meeting_doc_160386#p016_c0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place belongs_to in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0015-reports-on-source-project",
+      "relation_kind": "reports_on",
+      "relation_family": "data_reporting",
+      "subject_kind": "source",
+      "object_kind": "project",
+      "affected_relation_count": 2,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place reports_on in data_reporting; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support data_reporting; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_206076-source-reports-on-cbdtp",
+          "correction_ids": [
+            "relationship-integrity-legacy-0003-relation-206076-source-reports-on-cbdtp"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_206076-source-reports-on-cbdtp"
+          ],
+          "evidence_ids": [
+            "meeting_doc_206076#p010_c0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place reports_on in data_reporting; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support data_reporting; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_cbdtp-finplan-has-project",
+          "correction_ids": [
+            "relationship-integrity-legacy-0008-relation-cbdtp-finplan-has-project"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_cbdtp-finplan-has-project"
+          ],
+          "evidence_ids": [
+            "meeting_doc_199601#p001_c0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place reports_on in data_reporting; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support data_reporting; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0016-part-of-project-claim",
+      "relation_kind": "part_of",
+      "relation_family": "claim_context",
+      "subject_kind": "project",
+      "object_kind": "claim",
+      "affected_relation_count": 2,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place part_of in claim_context; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_jamaica-station-strengthen-expand",
+          "correction_ids": [
+            "relationship-integrity-legacy-0022-relation-jamaica-station-strengthen-expand"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_jamaica-station-strengthen-expand"
+          ],
+          "evidence_ids": [
+            "meeting_doc_198151#p012_c0002",
+            "meeting_doc_198151#p012_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_sas-westward-strengthen-expand",
+          "correction_ids": [
+            "relationship-integrity-legacy-0129-relation-sas-westward-strengthen-expand"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_sas-westward-strengthen-expand"
+          ],
+          "evidence_ids": [
+            "meeting_doc_198151#p011_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0017-has-program-entity-claim",
+      "relation_kind": "has_program",
+      "relation_family": "claim_context",
+      "subject_kind": "entity",
+      "object_kind": "claim",
+      "affected_relation_count": 2,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place has_program in claim_context; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_mdoc164741-mta-has-fuel-hedge-program",
+          "correction_ids": [
+            "relationship-integrity-legacy-0031-relation-mdoc164741-mta-has-fuel-hedge-program"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_mdoc164741-mta-has-fuel-hedge-program"
+          ],
+          "evidence_ids": [
+            "meeting_doc_164741#p001_b0008",
+            "meeting_doc_164741#p001_b0033"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_program in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_mta-fuel-hedging-program",
+          "correction_ids": [
+            "relationship-integrity-legacy-0049-relation-mta-fuel-hedging-program"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_mta-fuel-hedging-program"
+          ],
+          "evidence_ids": [
+            "meeting_doc_197011#p002_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_program in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0018-has-agency-project-entity",
+      "relation_kind": "has_agency",
+      "relation_family": "agency_role",
+      "subject_kind": "project",
+      "object_kind": "entity",
+      "affected_relation_count": 2,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place has_agency in agency_role; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support agency_role; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_nhp-grade-separation-lirr",
+          "correction_ids": [
+            "relationship-integrity-legacy-0056-relation-nhp-grade-separation-lirr"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_nhp-grade-separation-lirr"
+          ],
+          "evidence_ids": [
+            "meeting_doc_124996#p026_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_agency in agency_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support agency_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_rel-mta-partner-project",
+          "correction_ids": [
+            "relationship-integrity-legacy-0104-relation-rel-mta-partner-project"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-mta-partner-project"
+          ],
+          "evidence_ids": [
+            "116_st_morningside_ave_pleasant_ave_cb10_jun2025#p003_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_agency in agency_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support agency_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0019-has-component-project-event",
+      "relation_kind": "has_component",
+      "relation_family": "timeline_context",
+      "subject_kind": "project",
+      "object_kind": "event",
+      "affected_relation_count": 2,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place has_component in timeline_context; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support timeline_context; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_trackwork-includes-concrete-tie",
+          "correction_ids": [
+            "relationship-integrity-legacy-0135-relation-trackwork-includes-concrete-tie"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_trackwork-includes-concrete-tie"
+          ],
+          "evidence_ids": [
+            "meeting_doc_170846#p001_c0005",
+            "meeting_doc_170846#p002_c0006"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_component in timeline_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support timeline_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        },
+        {
+          "record_id": "relation_trackwork-includes-signal-testing",
+          "correction_ids": [
+            "relationship-integrity-legacy-0136-relation-trackwork-includes-signal-testing"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_trackwork-includes-signal-testing"
+          ],
+          "evidence_ids": [
+            "meeting_doc_170846#p001_c0005",
+            "meeting_doc_170846#p002_c0006"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_component in timeline_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support timeline_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0020-has-priority-entity-claim",
+      "relation_kind": "has_priority",
+      "relation_family": "claim_context",
+      "subject_kind": "entity",
+      "object_kind": "claim",
+      "affected_relation_count": 1,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place has_priority in claim_context; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_2026-priorities",
+          "correction_ids": [
+            "relationship-integrity-legacy-0002-relation-2026-priorities"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_2026-priorities"
+          ],
+          "evidence_ids": [
+            "open_data_plan_2026_update#p004_c0003",
+            "open_data_plan_2026_update#p004_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_priority in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0021-part-of-event-project-timeline",
+      "relation_kind": "part_of",
+      "relation_family": "timeline_context",
+      "subject_kind": "event",
+      "object_kind": "project",
+      "affected_relation_count": 1,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place part_of in timeline_context; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support timeline_context; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_main-line-work-part-of-queens-interlocking",
+          "correction_ids": [
+            "relationship-integrity-legacy-0029-relation-main-line-work-part-of-queens-interlocking"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_main-line-work-part-of-queens-interlocking"
+          ],
+          "evidence_ids": [
+            "meeting_doc_194056#p002_c0007"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in timeline_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support timeline_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0022-presents-event-source",
+      "relation_kind": "presents",
+      "relation_family": "publication_role",
+      "subject_kind": "event",
+      "object_kind": "source",
+      "affected_relation_count": 1,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place presents in publication_role; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_meeting-doc-163326-presents-financials",
+          "correction_ids": [
+            "relationship-integrity-legacy-0034-relation-meeting-doc-163326-presents-financials"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_meeting-doc-163326-presents-financials"
+          ],
+          "evidence_ids": [
+            "meeting_doc_163326#p001_c0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place presents in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0023-part-of-source-entity-publication",
+      "relation_kind": "part_of",
+      "relation_family": "publication_role",
+      "subject_kind": "source",
+      "object_kind": "entity",
+      "affected_relation_count": 1,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_mta-budget-contains-bt-budget",
+          "correction_ids": [
+            "relationship-integrity-legacy-0047-relation-mta-budget-contains-bt-budget"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_mta-budget-contains-bt-budget"
+          ],
+          "evidence_ids": [
+            "meeting_doc_160281#p002_c0002"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place part_of in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0024-has-program-entity-source-publication",
+      "relation_kind": "has_program",
+      "relation_family": "publication_role",
+      "subject_kind": "entity",
+      "object_kind": "source",
+      "affected_relation_count": 1,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place has_program in publication_role; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_mta-has-open-data-program",
+          "correction_ids": [
+            "relationship-integrity-legacy-0051-relation-mta-has-open-data-program"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_mta-has-open-data-program"
+          ],
+          "evidence_ids": [
+            "open_data_program#p001_b0001"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_program in publication_role; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support publication_role; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0025-contributes-to-entity-metric",
+      "relation_kind": "contributes_to",
+      "relation_family": "metric_context",
+      "subject_kind": "entity",
+      "object_kind": "metric_claim",
+      "affected_relation_count": 1,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place contributes_to in metric_context; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support metric_context; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_mtahq-non-reimb-mta-pd",
+          "correction_ids": [
+            "relationship-integrity-legacy-0055-relation-mtahq-non-reimb-mta-pd"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_mtahq-non-reimb-mta-pd"
+          ],
+          "evidence_ids": [
+            "meeting_doc_189811#p001_c0008"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place contributes_to in metric_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support metric_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0026-complementary-program-entity-metric",
+      "relation_kind": "complementary_program",
+      "relation_family": "metric_context",
+      "subject_kind": "entity",
+      "object_kind": "metric_claim",
+      "affected_relation_count": 1,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place complementary_program in metric_context; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support metric_context; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_nycdot-complemented-congestion-relief",
+          "correction_ids": [
+            "relationship-integrity-legacy-0057-relation-nycdot-complemented-congestion-relief"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_nycdot-complemented-congestion-relief"
+          ],
+          "evidence_ids": [
+            "streets_plan_update_2026#p002_c0005"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place complementary_program in metric_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support metric_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0027-exhibits-property-event-claim",
+      "relation_kind": "exhibits_property",
+      "relation_family": "claim_context",
+      "subject_kind": "event",
+      "object_kind": "claim",
+      "affected_relation_count": 1,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place exhibits_property in claim_context; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_rel-hourly-ridership-new-granularity",
+          "correction_ids": [
+            "relationship-integrity-legacy-0102-relation-rel-hourly-ridership-new-granularity"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-hourly-ridership-new-granularity"
+          ],
+          "evidence_ids": [
+            "open_data_plan_2024_update#p003_c0004"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place exhibits_property in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0028-joint-program-entity-entity",
+      "relation_kind": "joint_program",
+      "relation_family": "partnership_engagement",
+      "subject_kind": "entity",
+      "object_kind": "entity",
+      "affected_relation_count": 1,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place joint_program in partnership_engagement; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_rel-nycdot-nyct-joint-program",
+          "correction_ids": [
+            "relationship-integrity-legacy-0105-relation-rel-nycdot-nyct-joint-program"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rel-nycdot-nyct-joint-program"
+          ],
+          "evidence_ids": [
+            "m86_sbs_progress_report_2017#p003_c0003"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place joint_program in partnership_engagement; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support partnership_engagement; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    },
+    {
+      "decision_id": "legacy-expansion-0029-has-member-entity-claim",
+      "relation_kind": "has_member",
+      "relation_family": "claim_context",
+      "subject_kind": "entity",
+      "object_kind": "claim",
+      "affected_relation_count": 1,
+      "rationales": [
+        "Endpoint semantics and authoritative relation wording place has_member in claim_context; the prior family was a shape-incompatible broad bucket.",
+        "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names.",
+        "source_semantics_support_family_change"
+      ],
+      "affected_relations": [
+        {
+          "record_id": "relation_rockland-county-joined-taskforce",
+          "correction_ids": [
+            "relationship-integrity-legacy-0126-relation-rockland-county-joined-taskforce"
+          ],
+          "legacy_ledger_item_ids": [
+            "family-shape:relation_rockland-county-joined-taskforce"
+          ],
+          "evidence_ids": [
+            "meeting_doc_192201#p003_c0012"
+          ],
+          "correction_reasons": [
+            "Endpoint semantics and authoritative relation wording place has_member in claim_context; the prior family was a shape-incompatible broad bucket."
+          ],
+          "legacy_investigations": [
+            "Relation wording and endpoint roles support claim_context; no endpoint identity was inferred from proximity or names."
+          ],
+          "legacy_reasons": [
+            "source_semantics_support_family_change"
+          ]
+        }
+      ]
+    }
+  ]
+}

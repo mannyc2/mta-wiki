@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "contract_id": "operational-occurrence-member-extent-v1",
+  "release_id": "v1-rc26",
+  "occurrence_count": 131,
+  "member_extent_row_count": 308,
+  "eligible_member_extent_row_count": 306,
+  "reviewed_decision_count": 31,
+  "extent_counts": {
+    "route_wide": 2,
+    "bounded_segment": 12,
+    "stop_set": 0,
+    "mixed": 0,
+    "unresolved": 294
+  },
+  "evidence_complete_row_count": 14,
+  "unresolved_row_count": 294,
+  "doctrine": {
+    "empty_scope_is_unresolved": true,
+    "route_membership_is_not_route_wide_evidence": true,
+    "physicality_not_applicable_is_not_route_wide_evidence": true,
+    "authorizes_study": false,
+    "authorizes_cross_product": false
+  }
+}

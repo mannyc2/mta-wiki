@@ -56,6 +56,12 @@ import {
   routeTreatmentScopesJsonl,
   routeTreatmentScopeSummaryJson,
 } from "./route-treatment-scopes.js";
+import {
+  MEMBER_EXTENT_MANIFEST,
+  OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION,
+  RELEASE_QUALITY_PROVENANCE_SCHEMA_VERSION,
+  memberExtentReleasePath,
+} from "./release-companions.js";
 
 export type ReleaseVerificationResult = { release_id: string; manifest_version: number; manifest_sha256: string; verified_file_count: number; verified_record_count: number; contract_versions: ReleaseManifest["contract_versions"] };
 type Decoder = (bytes: Buffer, path: string) => unknown;
@@ -70,6 +76,45 @@ function relationshipBundleV1(bytes: Buffer, path: string): ReturnType<typeof pa
   if (!Array.isArray(value.artifacts) || value.artifact_count !== value.artifacts.length) throw new Error(`${path}: artifact_count must equal artifacts length`);
   const artifacts = value.artifacts.map((entry, index) => { const artifact = object(entry, `${path}.artifacts[${index}]`); const releasePath = artifact.release_path; if (releasePath !== `relationship-integrity/${String(artifact.source_path)}`) throw new Error(`${path}.artifacts[${index}].release_path does not match source_path`); const { release_path: _, ...descriptorArtifact } = artifact; return descriptorArtifact; });
   return parseRelationshipReleaseBundleDescriptor({ schema_version: value.schema_version, bundle_id: value.bundle_id, contract_id: value.contract_id, validation_mode: value.validation_mode, artifacts });
+}
+type AddressedArtifact = { path: string; bytes: number; sha256: string; row_count?: number };
+type MemberExtentManifestV1 = {
+  schema_version: 1;
+  contract_id: string;
+  input_pins: AddressedArtifact[];
+  files: AddressedArtifact[];
+};
+function addressedArtifacts(value: unknown, path: string): AddressedArtifact[] {
+  if (!Array.isArray(value)) throw new Error(`${path}: expected array`);
+  return value.map((entry, index) => {
+    const artifact = object(entry, `${path}[${index}]`);
+    const allowed = ["path", "bytes", "sha256", "row_count"];
+    const extras = Object.keys(artifact).filter((key) => !allowed.includes(key));
+    if (extras.length) throw new Error(`${path}[${index}]: unexpected ${extras.sort().join(", ")}`);
+    if (typeof artifact.path !== "string" || !artifact.path) throw new Error(`${path}[${index}].path: expected string`);
+    if (typeof artifact.bytes !== "number" || !Number.isInteger(artifact.bytes) || artifact.bytes < 0) throw new Error(`${path}[${index}].bytes: expected non-negative integer`);
+    if (typeof artifact.sha256 !== "string" || !/^[a-f0-9]{64}$/u.test(artifact.sha256)) throw new Error(`${path}[${index}].sha256: expected SHA-256`);
+    if (artifact.row_count !== undefined && (typeof artifact.row_count !== "number" || !Number.isInteger(artifact.row_count) || artifact.row_count < 0)) throw new Error(`${path}[${index}].row_count: expected non-negative integer`);
+    return {
+      path: artifact.path,
+      bytes: artifact.bytes,
+      sha256: artifact.sha256,
+      ...(artifact.row_count === undefined ? {} : { row_count: artifact.row_count }),
+    };
+  });
+}
+function memberExtentManifestV1(bytes: Buffer, path: string): MemberExtentManifestV1 {
+  const value = object(json(bytes, path), path);
+  const extras = Object.keys(value).filter((key) => !["schema_version", "contract_id", "input_pins", "files"].includes(key));
+  if (extras.length) throw new Error(`${path}: unexpected ${extras.sort().join(", ")}`);
+  if (value.schema_version !== OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION) throw new Error(`${path}.schema_version: expected 1`);
+  if (value.contract_id !== "operational-occurrence-member-extent-v1") throw new Error(`${path}.contract_id: unexpected contract`);
+  return {
+    schema_version: 1,
+    contract_id: value.contract_id,
+    input_pins: addressedArtifacts(value.input_pins, `${path}.input_pins`),
+    files: addressedArtifacts(value.files, `${path}.files`),
+  };
 }
 function occurrencesAtVersion(bytes: Buffer, path: string, version: 1 | 2): unknown {
   rows(bytes).forEach((line, index) => { const raw = object(json(Buffer.from(line), `${path}:${index + 1}`), `${path}:${index + 1}`); if (raw.schema_version !== version) throw new Error(`${path}:${index + 1}.schema_version: declared contract requires ${version}`); });
@@ -97,11 +142,12 @@ export const RELEASE_CONTRACT_REGISTRY: Readonly<Record<string, Readonly<Record<
     1: (bytes, path) => occurrenceReviewAtVersion(bytes, path, 1),
     2: (bytes, path) => occurrenceReviewAtVersion(bytes, path, 2),
   },
+  operational_occurrence_member_extents: { 1: memberExtentManifestV1 },
   relationship_integrity_bundle: { 1: relationshipBundleV1 },
   route_anchors: { 1: (bytes, path) => parseRouteAnchorsJsonl(bytes.toString("utf8"), path) },
   route_identity_snapshot: { 1: (bytes, path) => parseRouteIdentitySnapshotV1(json(bytes, path)) },
 };
-const pointers: Readonly<Record<string, keyof ReleaseManifest["pointers"]>> = { operational_anchors: "operational_anchors", operational_anchor_review_decisions: "operational_anchor_review_decisions", operational_occurrences: "operational_occurrences", operational_occurrence_review_decisions: "operational_occurrence_review_decisions", relationship_integrity_bundle: "relationship_integrity_bundle", route_anchors: "route_anchors", route_identity_snapshot: "route_identity_snapshot" };
+const pointers: Readonly<Record<string, keyof ReleaseManifest["pointers"]>> = { operational_anchors: "operational_anchors", operational_anchor_review_decisions: "operational_anchor_review_decisions", operational_occurrences: "operational_occurrences", operational_occurrence_review_decisions: "operational_occurrence_review_decisions", operational_occurrence_member_extents: "operational_occurrence_member_extents", relationship_integrity_bundle: "relationship_integrity_bundle", route_anchors: "route_anchors", route_identity_snapshot: "route_identity_snapshot" };
 const sha256 = (bytes: Buffer) => createHash("sha256").update(bytes).digest("hex");
 function safeFile(dir: string, relativePath: string): string {
   const root = realpathSync(resolve(dir));
@@ -139,6 +185,198 @@ function assertReleaseArtifactBytes(
   if (actual.toString("utf8") !== expected) {
     throw new Error(`${path}: deterministic treatment contract bytes differ from canonical inputs`);
   }
+}
+
+function assertPinnedBytes(
+  files: ReadonlyMap<string, Buffer>,
+  releasePath: string,
+  artifact: AddressedArtifact,
+): Buffer {
+  const bytes = files.get(releasePath);
+  if (!bytes) throw new Error(`release companion artifact is missing: ${releasePath}`);
+  if (bytes.length !== artifact.bytes || sha256(bytes) !== artifact.sha256) {
+    throw new Error(`${releasePath}: release companion pin mismatch`);
+  }
+  if (artifact.row_count !== undefined && rows(bytes).length !== artifact.row_count) {
+    throw new Error(`${releasePath}: row_count mismatch; expected ${artifact.row_count}, got ${rows(bytes).length}`);
+  }
+  return bytes;
+}
+
+function occurrenceMemberKeys(rawOccurrences: unknown[]): {
+  all: Set<string>;
+  eligible: Set<string>;
+  occurrenceIds: Set<string>;
+  routeRecordIds: Set<string>;
+  treatmentRecordIds: Set<string>;
+} {
+  const all = new Set<string>();
+  const eligible = new Set<string>();
+  const occurrenceIds = new Set<string>();
+  const routeRecordIds = new Set<string>();
+  const treatmentRecordIds = new Set<string>();
+  for (const [index, raw] of rawOccurrences.entries()) {
+    const occurrence = object(raw, `operational_occurrences[${index}]`);
+    if (typeof occurrence.occurrence_id !== "string" || !Array.isArray(occurrence.routes)) {
+      throw new Error(`operational_occurrences[${index}]: member-extent identity fields are missing`);
+    }
+    occurrenceIds.add(occurrence.occurrence_id);
+    const treatment = object(occurrence.treatment, `operational_occurrences[${index}].treatment`);
+    const rawMembers = treatment.kind === "atomic" ? [treatment.member] : treatment.members;
+    if (!Array.isArray(rawMembers)) throw new Error(`operational_occurrences[${index}].treatment: expected members`);
+    const members = rawMembers.map((rawMember, memberIndex) => {
+      const member = object(rawMember, `operational_occurrences[${index}].treatment.members[${memberIndex}]`);
+      if (typeof member.treatment_record_id !== "string") throw new Error(`operational_occurrences[${index}].treatment member id is missing`);
+      treatmentRecordIds.add(member.treatment_record_id);
+      return member.treatment_record_id;
+    });
+    for (const [routeIndex, rawRoute] of occurrence.routes.entries()) {
+      const route = object(rawRoute, `operational_occurrences[${index}].routes[${routeIndex}]`);
+      if (typeof route.route_record_id !== "string") throw new Error(`operational_occurrences[${index}].route id is missing`);
+      routeRecordIds.add(route.route_record_id);
+      for (const treatmentRecordId of members) {
+        const key = `${occurrence.occurrence_id}\0${route.route_record_id}\0${treatmentRecordId}`;
+        all.add(key);
+        if (occurrence.study_projection_eligible === true) eligible.add(key);
+      }
+    }
+  }
+  return { all, eligible, occurrenceIds, routeRecordIds, treatmentRecordIds };
+}
+
+function assertMemberExtentCompanion(
+  files: ReadonlyMap<string, Buffer>,
+  manifest: MemberExtentManifestV1,
+  rawOccurrences: unknown[],
+): void {
+  const expectedMemberPaths = new Set<string>([memberExtentReleasePath(MEMBER_EXTENT_MANIFEST)]);
+  for (const artifact of manifest.files) {
+    const releasePath = memberExtentReleasePath(artifact.path);
+    expectedMemberPaths.add(releasePath);
+    assertPinnedBytes(files, releasePath, artifact);
+  }
+  for (const artifact of manifest.input_pins) {
+    const releasePath = artifact.path.endsWith("/operational_occurrences.jsonl")
+      ? "operational_occurrences.jsonl"
+      : memberExtentReleasePath(artifact.path);
+    if (releasePath.startsWith("member-extent/")) expectedMemberPaths.add(releasePath);
+    assertPinnedBytes(files, releasePath, artifact);
+  }
+  const actualMemberPaths = [...files.keys()].filter((path) => path.startsWith("member-extent/")).sort();
+  if (actualMemberPaths.join("\n") !== [...expectedMemberPaths].sort().join("\n")) {
+    throw new Error("member-extent release artifacts must exactly match the companion manifest and input pins");
+  }
+
+  const rowArtifact = manifest.files.find((artifact) => artifact.path.endsWith("operational_occurrence_member_extents.jsonl"));
+  const summaryArtifact = manifest.files.find((artifact) => artifact.path.endsWith("summary.json"));
+  const ledgerArtifact = manifest.files.find((artifact) => artifact.path.endsWith("review-ledger.jsonl"));
+  if (!rowArtifact || !summaryArtifact || !ledgerArtifact) throw new Error("member-extent companion manifest is incomplete");
+  const extentRows = jsonlV1(
+    files.get(memberExtentReleasePath(rowArtifact.path))!,
+    memberExtentReleasePath(rowArtifact.path),
+  );
+  const expected = occurrenceMemberKeys(rawOccurrences);
+  const seen = new Set<string>();
+  const extentCounts: Record<string, number> = {};
+  let evidenceComplete = 0;
+  for (const [index, raw] of extentRows.entries()) {
+    const row = object(raw, `member-extents[${index}]`);
+    if (row.contract_id !== manifest.contract_id) throw new Error(`member-extents[${index}].contract_id mismatch`);
+    if (row.authorizes_study !== false || row.authorizes_cross_product !== false) throw new Error(`member-extents[${index}] must deny study and cross-product authority`);
+    if (typeof row.occurrence_id !== "string" || typeof row.route_record_id !== "string" || typeof row.treatment_record_id !== "string") throw new Error(`member-extents[${index}]: invalid grain`);
+    const key = `${row.occurrence_id}\0${row.route_record_id}\0${row.treatment_record_id}`;
+    if (seen.has(key)) throw new Error(`member-extents[${index}]: duplicate occurrence/route/treatment grain`);
+    seen.add(key);
+    if (!expected.all.has(key)) throw new Error(`member-extents[${index}]: grain does not exist in operational occurrences`);
+    if (typeof row.extent !== "string" || !["route_wide", "bounded_segment", "stop_set", "mixed", "unresolved"].includes(row.extent)) throw new Error(`member-extents[${index}].extent: invalid disposition`);
+    extentCounts[row.extent] = (extentCounts[row.extent] ?? 0) + 1;
+    if (row.extent !== "unresolved") evidenceComplete += 1;
+  }
+  if (seen.size !== expected.all.size || [...expected.all].some((key) => !seen.has(key))) {
+    throw new Error("member-extents do not cover every operational occurrence/route/treatment member exactly once");
+  }
+  const summaryPath = memberExtentReleasePath(summaryArtifact.path);
+  const summary = object(json(files.get(summaryPath)!, summaryPath), summaryPath);
+  const doctrine = object(summary.doctrine, `${summaryPath}.doctrine`);
+  if (doctrine.authorizes_study !== false || doctrine.authorizes_cross_product !== false) throw new Error(`${summaryPath}: doctrine must deny study and cross-product authority`);
+  if (summary.occurrence_count !== rawOccurrences.length || summary.member_extent_row_count !== extentRows.length || summary.eligible_member_extent_row_count !== expected.eligible.size || summary.evidence_complete_row_count !== evidenceComplete || summary.unresolved_row_count !== (extentCounts.unresolved ?? 0)) throw new Error(`${summaryPath}: member-extent summary counts do not match verified rows`);
+  const declaredCounts = object(summary.extent_counts, `${summaryPath}.extent_counts`);
+  for (const extent of ["route_wide", "bounded_segment", "stop_set", "mixed", "unresolved"]) {
+    if (declaredCounts[extent] !== (extentCounts[extent] ?? 0)) throw new Error(`${summaryPath}.extent_counts.${extent}: mismatch`);
+  }
+  if (rows(files.get(memberExtentReleasePath(ledgerArtifact.path))!).length !== summary.reviewed_decision_count) {
+    throw new Error(`${summaryPath}: reviewed decision count does not match review ledger`);
+  }
+}
+
+function assertQualityProvenance(
+  files: ReadonlyMap<string, Buffer>,
+  pointer: string,
+  releaseId: string,
+  generatorCommit: string,
+  canonicalRecords: MtaCanonicalRecord[],
+  rawOccurrences: unknown[],
+): void {
+  const value = object(json(files.get(pointer)!, pointer), pointer);
+  if (value.schema_version !== RELEASE_QUALITY_PROVENANCE_SCHEMA_VERSION || value.release_id !== releaseId || value.generator_commit !== generatorCommit) throw new Error(`${pointer}: release identity or generator pin mismatch`);
+  if (value.layer !== "quality_provenance" || value.authorizes_study !== false || value.authorizes_cross_product !== false) throw new Error(`${pointer}: must be a non-authorizing quality/provenance layer`);
+  if (!Array.isArray(value.artifacts)) throw new Error(`${pointer}.artifacts: expected array`);
+  const addressed = new Set<string>([pointer]);
+  for (const [index, rawArtifact] of value.artifacts.entries()) {
+    const artifact = object(rawArtifact, `${pointer}.artifacts[${index}]`);
+    if (typeof artifact.source_path !== "string" || typeof artifact.release_path !== "string" || typeof artifact.bytes !== "number" || typeof artifact.sha256 !== "string") throw new Error(`${pointer}.artifacts[${index}]: invalid pin`);
+    const expectedPath = artifact.source_path.startsWith("data/quality/acquisition/target-list") || artifact.source_path.startsWith("data/quality/acquisition/reviews/")
+      ? `quality-provenance/${artifact.source_path}`
+      : memberExtentReleasePath(artifact.source_path);
+    if (artifact.release_path !== expectedPath) throw new Error(`${pointer}.artifacts[${index}]: source/release path mapping mismatch`);
+    const pin: AddressedArtifact = { path: artifact.source_path, bytes: artifact.bytes, sha256: artifact.sha256 };
+    if (typeof artifact.row_count === "number") pin.row_count = artifact.row_count;
+    assertPinnedBytes(files, artifact.release_path, pin);
+    addressed.add(artifact.release_path);
+  }
+  const actualQualityPaths = [...files.keys()].filter((path) => path.startsWith("quality-provenance/")).sort();
+  const expectedQualityPaths = [...addressed].filter((path) => path.startsWith("quality-provenance/")).sort();
+  if (actualQualityPaths.join("\n") !== expectedQualityPaths.join("\n")) throw new Error("quality-provenance artifacts are not represented exactly once by its manifest");
+
+  const semanticDelta = object(value.semantic_delta, `${pointer}.semantic_delta`);
+  if (semanticDelta.canonical_record_count !== canonicalRecords.length) throw new Error(`${pointer}: canonical record count mismatch`);
+  const occurrenceDelta = object(semanticDelta.operational_occurrences, `${pointer}.semantic_delta.operational_occurrences`);
+  const currentOccurrence = object(occurrenceDelta.current, `${pointer}.semantic_delta.operational_occurrences.current`);
+  const occurrenceBytes = files.get("operational_occurrences.jsonl")!;
+  if (currentOccurrence.bytes !== occurrenceBytes.length || currentOccurrence.sha256 !== sha256(occurrenceBytes) || currentOccurrence.row_count !== rawOccurrences.length) throw new Error(`${pointer}: operational occurrence delta pin mismatch`);
+
+  const overlayManifestPath = "quality-provenance/data/quality/acquisition/reviews/v1/manifest.json";
+  const overlayPath = "quality-provenance/data/quality/acquisition/reviews/v1/reviewed-overlay.jsonl";
+  const overlayManifest = object(json(files.get(overlayManifestPath)!, overlayManifestPath), overlayManifestPath);
+  if (overlayManifest.authorizes_study !== false || overlayManifest.authorizes_cross_product !== false) throw new Error(`${overlayManifestPath}: overlay must deny study and cross-product authority`);
+  const overlayRows = jsonlV1(files.get(overlayPath)!, overlayPath);
+  const eventIds = new Set(canonicalRecords.filter((record) => record.record_kind === "event").map((record) => record.record_id));
+  const targetIds = new Set<string>();
+  const dispositionCounts: Record<string, number> = {};
+  let candidatePairCount = 0;
+  for (const [index, raw] of overlayRows.entries()) {
+    const row = object(raw, `${overlayPath}:${index + 1}`);
+    if (row.authorizes_study !== false || row.authorizes_cross_product !== false) throw new Error(`${overlayPath}:${index + 1}: must deny study and cross-product authority`);
+    if (typeof row.target_id !== "string" || targetIds.has(row.target_id)) throw new Error(`${overlayPath}:${index + 1}: duplicate or missing target identity`);
+    targetIds.add(row.target_id);
+    if (typeof row.forecast_event_record_id !== "string" || !eventIds.has(row.forecast_event_record_id)) throw new Error(`${overlayPath}:${index + 1}: forecast event is not canonical`);
+    if (row.bound_realized_event_id !== null && (typeof row.bound_realized_event_id !== "string" || !eventIds.has(row.bound_realized_event_id))) throw new Error(`${overlayPath}:${index + 1}: bound realized event is not canonical`);
+    if (typeof row.disposition !== "string") throw new Error(`${overlayPath}:${index + 1}: disposition is missing`);
+    dispositionCounts[row.disposition] = (dispositionCounts[row.disposition] ?? 0) + 1;
+    if (!Array.isArray(row.candidate_reviews)) throw new Error(`${overlayPath}:${index + 1}: candidate reviews are missing`);
+    for (const candidateReview of row.candidate_reviews) {
+      const review = object(candidateReview, `${overlayPath}:${index + 1}.candidate_reviews`);
+      if (!Array.isArray(review.candidate_event_record_ids)) throw new Error(`${overlayPath}:${index + 1}: candidate event ids are missing`);
+      candidatePairCount += review.candidate_event_record_ids.length;
+    }
+  }
+  const summary = object(overlayManifest.summary, `${overlayManifestPath}.summary`);
+  const declaredDispositions = object(summary.counts_by_disposition, `${overlayManifestPath}.summary.counts_by_disposition`);
+  if (summary.reviewed_target_count !== overlayRows.length || summary.candidate_bearing_target_denominator !== overlayRows.length || summary.reviewed_candidate_pair_count !== candidatePairCount) throw new Error(`${overlayManifestPath}: overlay denominator mismatch`);
+  for (const disposition of ["exact_realization", "later_plan_replacement", "reviewed_nonmatch", "still_open"]) {
+    if (declaredDispositions[disposition] !== (dispositionCounts[disposition] ?? 0)) throw new Error(`${overlayManifestPath}: ${disposition} count mismatch`);
+  }
+  if (overlayManifest.overlay_sha256 !== sha256(files.get(overlayPath)!)) throw new Error(`${overlayManifestPath}: overlay SHA-256 mismatch`);
 }
 
 export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = basename(resolve(releaseDir)), options: { allowQuarantined?: boolean; sourceRootDir?: string } = {}): ReleaseVerificationResult {
@@ -563,6 +801,25 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
       const snapshotBytes = files.get(snapshotPointer)!;
       if (!rebuilt || rebuilt.snapshotBytes !== snapshotBytes.toString("utf8")) throw new Error("route identity snapshot is not the exact rebuilt projection of the verified GTFS snapshot and accepted decision files");
     }
+  }
+  const memberExtentManifest = decoded.get("operational_occurrence_member_extents") as MemberExtentManifestV1 | undefined;
+  if (memberExtentManifest) {
+    if (!Array.isArray(occurrences)) throw new Error("member-extent companion requires decoded operational occurrences");
+    if (manifest.pointers.operational_occurrence_member_extents !== memberExtentReleasePath(MEMBER_EXTENT_MANIFEST)) {
+      throw new Error("member-extent companion pointer must address the versioned source manifest");
+    }
+    assertMemberExtentCompanion(files, memberExtentManifest, occurrences);
+  }
+  if (manifest.pointers.quality_provenance) {
+    if (!Array.isArray(occurrences)) throw new Error("quality provenance requires decoded operational occurrences");
+    assertQualityProvenance(
+      files,
+      manifest.pointers.quality_provenance,
+      manifest.release_id,
+      manifest.generator_commit,
+      canonicalRecords,
+      occurrences,
+    );
   }
   const bundle = decoded.get("relationship_integrity_bundle") as ReturnType<typeof parseRelationshipReleaseBundleDescriptor> | undefined;
   if (bundle) for (const artifact of bundle.artifacts) { const path = `relationship-integrity/${artifact.source_path}`; const bytes = files.get(path); if (!bytes) throw new Error(`relationship bundle artifact is not content-addressed by manifest: ${path}`); if (bytes.length !== artifact.bytes || sha256(bytes) !== artifact.sha256) throw new Error(`relationship bundle artifact metadata mismatch: ${path}`); }
