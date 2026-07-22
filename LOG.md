@@ -4,6 +4,18 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-22
+
+### Reviewed forecast-to-realized overlay
+
+- Refreshed the deterministic forecast frontier at an explicit `2026-07-22` as-of date and a
+  `90`-day grace period: all `47` targets remain open in the historical frontier, `39` are due, and
+  `21` have same-subject realized candidates requiring review.
+- Added an append-only, hash-pinned review for the complete `21`-target / `57`-candidate-pair
+  denominator: `4` exact realizations, `2` later-plan replacements, `13` reviewed nonmatches, and
+  `2` explicitly still open. The overlay grants neither study nor cross-product authority and does
+  not mutate planned events, occurrences, receipts, releases, or canonical records.
+
 ## 2026-07-21
 
 ### Study-readiness bridge and member extent contract

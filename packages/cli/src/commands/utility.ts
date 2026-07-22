@@ -34,6 +34,7 @@ Usage:
   bun run harness operational-coverage [--output <dir>] [--decisions <dir>] [--search-receipts <dir>] [--start YYYY-MM-DD --end YYYY-MM-DD]   Write the deterministic completion ledger, priority queue, and honest coverage matrix
   bun run harness coverage-matrix [same options]                 Alias for operational-coverage
   bun run harness forecast-frontier --as-of YYYY-MM-DD --grace-days <n> [--coverage <dir>] [--output <dir>]   Write the deterministic forecast-to-realized acquisition target list
+  bun run harness forecast-review-overlay [--frontier <target-list.json>] [--reviews <dir>]   Validate the append-only reviewed overlay and regenerate its manifest/follow-up
   bun run harness operational-recovery-proposals                 Validate and summarize the reviewed recovery proposal tree
   bun run harness qbnr-recovery-draft <reviewed-spec.json>       Strictly expand one QBNR batch into the proposed queue
   bun run harness operational-recovery-apply <proposal-id> [--force]   Dry-run or apply one accepted proposal into an append-only journal
