@@ -44,6 +44,10 @@ const SOURCE_PAGE_PATH = join(
   repoRoot,
   "wiki/sources/mta_queens_bus_network_redesign_service_changes.md",
 );
+const QUEENS_EXTENT_RECEIPT_PATH = join(
+  repoRoot,
+  "data/quality/acquisition/receipts/q45-q86-q87-member-extents-2025.json",
+);
 const BROOKLYN_RECEIPTS_PATH = join(
   repoRoot,
   "data/quality/relationship-integrity/bus-lane-acquisition/shards/brooklyn-null/receipts.jsonl",
@@ -58,6 +62,9 @@ type ResearchResolution = {
   components: MemberExtentComponent[];
   missing_roles: MemberExtentMissingRole[];
   rationale: string;
+  evidence_bindings?: ExactEvidenceBinding[];
+  reviewed_at?: string;
+  reviewed_by?: string;
 };
 
 function sha256(value: string | Buffer): string {
@@ -296,6 +303,200 @@ const RESEARCH_RESOLUTIONS: Record<string, ResearchResolution> = {
   ),
 };
 
+function loadReviewedQueensExtentResolutions(): Map<string, ResearchResolution> {
+  const receipt = readJson<JsonObject>(QUEENS_EXTENT_RECEIPT_PATH);
+  if (
+    receipt.schema_version !== 1 ||
+    receipt.receipt_id !== "q45-q86-q87-member-extents-2025" ||
+    receipt.status !== "reviewed_extent_evidence_complete" ||
+    receipt.doctrine?.preserves_occurrence_identity !== true ||
+    receipt.doctrine?.infers_route_wide_scope !== false ||
+    receipt.doctrine?.revises_first_onset !== false ||
+    receipt.doctrine?.authorizes_study !== false ||
+    receipt.doctrine?.authorizes_cross_product !== false
+  ) {
+    throw new Error("Q45/Q86/Q87 extent receipt doctrine changed; review required");
+  }
+
+  const expectedUrls = [
+    "https://www.mta.info/document/176896",
+    "https://www.mta.info/document/177056",
+    "https://www.mta.info/project/queens-bus-network-redesign/routes/q45-local",
+    "https://www.mta.info/project/queens-bus-network-redesign/routes/q5-local",
+    "https://www.mta.info/project/queens-bus-network-redesign/routes/q85-rush",
+    "https://www.mta.info/project/queens-bus-network-redesign/routes/q86-rush",
+    "https://www.mta.info/project/queens-bus-network-redesign/routes/q87-rush",
+  ];
+  const sources = receipt.sources as JsonObject[];
+  const actualUrls = sources.map((source) => source.source_url as string).sort();
+  if (stableJson(actualUrls as JsonValue) !== stableJson(expectedUrls as JsonValue)) {
+    throw new Error("Q45/Q86/Q87 extent source inventory changed; review required");
+  }
+  const expectedArtifacts = new Map<string, JsonObject>([
+    ["mta_qbnr_q45_route_detail_2025", {
+      path: "raw/sources/mta_qbnr_q45_route_detail_2025/source.html",
+      byte_length: 62666,
+      sha256: "366f65f08e0a2d45eeec73a1f3bbe7ec6fb97c310f4ed3d2c3587b21d2d5e883",
+      capture_url: "https://web.archive.org/web/20260518012428id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q45-local",
+      archive_timestamp: "20260518012428",
+      archive_digest: "B2R7LJASS457K2MJLNCOCGZ7BBB2VWTP",
+    }],
+    ["mta_q45_timetable_2025_06_29", {
+      path: "raw/sources/mta_q45_timetable_2025_06_29/source.pdf",
+      byte_length: 305922,
+      sha256: "a6de73fb74e98441bbfd5f2030de9e8c079eba9eeb9adc8a5ff4f611a22339d6",
+      capture_url: "https://web.archive.org/web/20250628193652id_/https://www.mta.info/document/176896",
+      archive_timestamp: "20250628193652",
+      archive_digest: "Z7OT7L25I4NNWZ25RGV4LZEO6S5BZRVD",
+    }],
+    ["mta_qbnr_q5_route_detail_2025", {
+      path: "raw/sources/mta_qbnr_q5_route_detail_2025/source.html",
+      byte_length: 68060,
+      sha256: "2016eba052f848b7ad2c0859705d69b0f910091933cc067398fe71ff584785d1",
+      capture_url: "https://web.archive.org/web/20260518012418id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q5-local",
+      archive_timestamp: "20260518012418",
+      archive_digest: "AXZCN6YK3GGN72EFCGFNKREMVK6P553F",
+    }],
+    ["mta_qbnr_q85_route_detail_2025", {
+      path: "raw/sources/mta_qbnr_q85_route_detail_2025/source.html",
+      byte_length: 66680,
+      sha256: "60ad197c0bc15334ca35640b2b769412dcbbc108b7cb4653e4daa11ee902fc3d",
+      capture_url: "https://web.archive.org/web/20260518012435id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q85-rush",
+      archive_timestamp: "20260518012435",
+      archive_digest: "RJSOV64IZCLR2L7FS7TE5KDAT3CBR5W5",
+    }],
+    ["mta_qbnr_q86_route_detail_2025", {
+      path: "raw/sources/mta_qbnr_q86_route_detail_2025/source.html",
+      byte_length: 64552,
+      sha256: "0aed4c0431cbfada403ea688f50c014aad3c266399eff4b232ed9659c221e048",
+      capture_url: "https://web.archive.org/web/20260518012426id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q86-rush",
+      archive_timestamp: "20260518012426",
+      archive_digest: "24JTXZTWGLSMKOHMY65BWBB36VCMVJ7A",
+    }],
+    ["mta_qbnr_q87_route_detail_2025", {
+      path: "raw/sources/mta_qbnr_q87_route_detail_2025/source.html",
+      byte_length: 68445,
+      sha256: "19557a67d075d201e973bb626ec706eb7dfa31da3b0cbdda1e03cb1ca8a16581",
+      capture_url: "https://web.archive.org/web/20260518012422id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q87-rush",
+      archive_timestamp: "20260518012422",
+      archive_digest: "5VLNZI5WKDQ54XX5YDXRD7GUKBJRWYSK",
+    }],
+    ["mta_q86_q87_timetable_2025_06_29", {
+      path: "raw/sources/mta_q86_q87_timetable_2025_06_29/source.pdf",
+      byte_length: 862072,
+      sha256: "c228aad87a505cafc0104cab5995b2e1d33e9357e68ef66a1d536d7d55902e5f",
+      capture_url: "https://web.archive.org/web/20250624233431id_/https://www.mta.info/document/177056",
+      archive_timestamp: "20250624233431",
+      archive_digest: "XE4QO3BVFEKGUSZN7OLQD7N5TVMU7OFF",
+    }],
+  ]);
+
+  const evidenceById = new Map<string, { source_id: string; evidence_id: string }>();
+  const stagedEvidenceIds = new Set<string>();
+  for (const source of sources) {
+    const expectedArtifact = expectedArtifacts.get(source.source_id);
+    if (!expectedArtifact || stableJson(source.artifact as JsonValue) !== stableJson(expectedArtifact as JsonValue)) {
+      throw new Error(`${source.source_id}: full official artifact pin changed; review required`);
+    }
+    const blocks = source.evidence_blocks as JsonObject[];
+    const capture = `${blocks.map((block) => block.raw_text as string).join("\n")}\n`;
+    if (sha256(capture) !== source.reviewed_capture_sha256) {
+      throw new Error(`${source.source_id}: reviewed capture hash mismatch`);
+    }
+    for (const block of blocks) {
+      if (`sha256:${sha256(block.raw_text as string)}` !== block.raw_text_sha256) {
+        throw new Error(`${block.evidence_id}: reviewed evidence hash mismatch`);
+      }
+      if (evidenceById.has(block.evidence_id)) {
+        throw new Error(`${block.evidence_id}: duplicate reviewed evidence id`);
+      }
+      if (block.staged_text_surface !== "normalized_text") {
+        throw new Error(`${block.evidence_id}: reviewed evidence must pin staged normalized_text`);
+      }
+      if (!/^p\d{3,}_[bp]\d{4,}$/u.test(block.staged_block_id)) {
+        throw new Error(`${block.evidence_id}: invalid staged block id ${block.staged_block_id}`);
+      }
+      const stagedEvidenceId = `${source.source_id}#${block.staged_block_id}`;
+      if (stagedEvidenceIds.has(stagedEvidenceId)) {
+        throw new Error(`${block.evidence_id}: duplicate staged evidence id ${stagedEvidenceId}`);
+      }
+      stagedEvidenceIds.add(stagedEvidenceId);
+      evidenceById.set(block.evidence_id, {
+        source_id: source.source_id,
+        evidence_id: stagedEvidenceId,
+      });
+    }
+  }
+
+  const expectedDecisionKeys = new Map([
+    ["treatment_q45-all-day-frequent-service-2025", {
+      route_id: "Q45",
+      occurrence_id: "occurrence:9256051973f8f7ff0847b5c1",
+      route_record_id: "route_q45-qbnr-2025",
+    }],
+    ["treatment_q86-q5-q85-branch-combination-2025", {
+      route_id: "Q86",
+      occurrence_id: "occurrence:d30e60bf0a04874c1ae7d40b",
+      route_record_id: "route_q86-qbnr-2025",
+    }],
+    ["treatment_q87-q5-green-acres-replacement-2025", {
+      route_id: "Q87",
+      occurrence_id: "occurrence:a04ec993d0faee78af481311",
+      route_record_id: "route_q87-qbnr-2025",
+    }],
+  ]);
+  const decisions = receipt.decisions as JsonObject[];
+  if (decisions.length !== expectedDecisionKeys.size) {
+    throw new Error(`Expected ${expectedDecisionKeys.size} Q45/Q86/Q87 decisions, received ${decisions.length}`);
+  }
+  const resolutions = new Map<string, ResearchResolution>();
+  for (const decision of decisions) {
+    const expected = expectedDecisionKeys.get(decision.treatment_record_id);
+    if (
+      !expected ||
+      decision.route_id !== expected.route_id ||
+      decision.occurrence_id !== expected.occurrence_id ||
+      decision.route_record_id !== expected.route_record_id ||
+      decision.resolution !== "bounded_segment"
+    ) {
+      throw new Error(`${decision.treatment_record_id}: reviewed decision identity changed`);
+    }
+    const evidenceIds = decision.evidence_ids as string[];
+    if (evidenceIds.length === 0 || new Set(evidenceIds).size !== evidenceIds.length) {
+      throw new Error(`${decision.treatment_record_id}: exact evidence ids must be nonempty and unique`);
+    }
+    const evidenceBindings = evidenceIds.map((evidenceId) => {
+      const evidence = evidenceById.get(evidenceId);
+      if (!evidence) throw new Error(`${decision.treatment_record_id}: unknown evidence ${evidenceId}`);
+      const role = evidenceId.includes("timetable")
+        ? "extent_timetable_corroboration"
+        : evidenceId.includes("_q5_route_detail_") || evidenceId.includes("_q85_route_detail_")
+        ? "extent_predecessor_binding"
+        : evidenceId.endsWith("#about-route")
+        ? "extent_classification"
+        : "extent_scope";
+      return {
+        role,
+        record_id: decision.treatment_record_id,
+        source_id: evidence.source_id,
+        evidence_id: evidence.evidence_id,
+      };
+    });
+    resolutions.set(decision.treatment_record_id, {
+      resolution: "bounded_segment",
+      components: [decision.component as MemberExtentComponent],
+      missing_roles: [],
+      rationale: decision.rationale,
+      evidence_bindings: sortedEvidence(evidenceBindings),
+      reviewed_at: receipt.reviewed_at,
+      reviewed_by: receipt.operator,
+    });
+  }
+  return resolutions;
+}
+
+const REVIEWED_QUEENS_EXTENT_RESOLUTIONS = loadReviewedQueensExtentResolutions();
+
 function occurrenceMembers(occurrence: JsonObject): JsonObject[] {
   if (occurrence.treatment.kind === "atomic") return [occurrence.treatment.member];
   return occurrence.treatment.members;
@@ -318,6 +519,7 @@ function buildDecision(input: {
   const evidence = sortedEvidence([
     ...routeEvidence(input.occurrence, input.route.route_record_id),
     ...sourceEvidence(input.treatmentRecord),
+    ...(input.resolution.evidence_bindings ?? []),
   ]);
   const identity = {
     occurrence_id: input.occurrence.occurrence_id,
@@ -335,8 +537,8 @@ function buildDecision(input: {
     evidence_bindings: evidence,
     missing_roles: input.resolution.missing_roles,
     rationale: input.resolution.rationale,
-    reviewed_at: REVIEWED_AT,
-    reviewed_by: REVIEWED_BY,
+    reviewed_at: input.resolution.reviewed_at ?? REVIEWED_AT,
+    reviewed_by: input.resolution.reviewed_by ?? REVIEWED_BY,
   };
   validateMemberExtentDecision(decision);
   return decision;
@@ -398,7 +600,8 @@ function buildExtentArtifacts(occurrences: JsonObject[], treatmentRecords: JsonO
           continue;
         }
         if (!researchRoutes.has(route.gtfs_route_id)) continue;
-        const resolution = RESEARCH_RESOLUTIONS[member.treatment_record_id];
+        const resolution = REVIEWED_QUEENS_EXTENT_RESOLUTIONS.get(member.treatment_record_id) ??
+          RESEARCH_RESOLUTIONS[member.treatment_record_id];
         if (!resolution) {
           throw new Error(`${route.gtfs_route_id}/${member.treatment_record_id}: missing research resolution`);
         }
@@ -594,6 +797,18 @@ function buildStudyArtifacts(input: JsonObject, occurrences: JsonObject[], exten
     const top = disposition === "source_fixable_member_treatment_extent" &&
       spine?.readiness === "series_ready" && calendarSufficient &&
       firstOnset === "no_earlier_same_family_candidate_in_pinned_set";
+    const currentOccurrence = candidate.occurrence_id
+      ? occurrenceById.get(candidate.occurrence_id) ?? null
+      : null;
+    const currentMemberExtents = currentOccurrence
+      ? extentByOccurrenceRoute.get(`${currentOccurrence.occurrence_id}\u0000${candidate.route_id}`) ?? []
+      : [];
+    const producerResolved = disposition === "source_fixable_member_treatment_extent" &&
+      currentMemberExtents.length > 0 &&
+      currentMemberExtents.every((row) => row.extent !== "unresolved");
+    const producerMissingRoles = [...new Set(
+      currentMemberExtents.flatMap((row) => row.missing_roles),
+    )].sort();
     return [{
       candidate_id: candidate.candidate_id,
       identity: candidate.identity,
@@ -612,7 +827,17 @@ function buildStudyArtifacts(input: JsonObject, occurrences: JsonObject[], exten
       post_month_count: outcome?.post_month_count ?? null,
       first_onset_status: firstOnset,
       downstream_rejection_reason: disposition,
-      priority_tier: top
+      ...(top ? { review_batch_eligible: true } : {}),
+      ...(producerResolved
+        ? {
+          current_producer_status: "resolved_requires_downstream_replay",
+          current_producer_missing_roles: producerMissingRoles,
+          downstream_replay_required: true,
+        }
+        : {}),
+      priority_tier: producerResolved
+        ? "resolved_producer_extent_requires_downstream_replay"
+        : top
         ? "priority_1_extent_only_consumer_ready"
         : disposition === "source_fixable_bus_lane_occurrence_identity"
         ? "deferred_completed_broad_sweep_requires_exact_identity_source"
@@ -629,8 +854,16 @@ function buildStudyArtifacts(input: JsonObject, occurrences: JsonObject[], exten
     }];
   }).sort((left, right) => left.candidate_id.localeCompare(right.candidate_id));
   if (targets.length !== 404) throw new Error(`Expected 404 source-fixable targets, received ${targets.length}`);
-  const topTargets = targets.filter((row) => row.priority_tier === "priority_1_extent_only_consumer_ready");
-  if (topTargets.length !== 11) throw new Error(`Expected 11 top targets, received ${topTargets.length}`);
+  const reviewedPriorityTargets = targets.filter((row) => row.review_batch_eligible);
+  const openPriorityTargets = targets.filter((row) =>
+    row.priority_tier === "priority_1_extent_only_consumer_ready");
+  const resolvedTargets = targets.filter((row) =>
+    row.current_producer_status === "resolved_requires_downstream_replay");
+  if (reviewedPriorityTargets.length !== 11 || openPriorityTargets.length !== 6 || resolvedTargets.length !== 5) {
+    throw new Error(
+      `Expected 11 reviewed / 6 open priority / 5 replay targets, received ${reviewedPriorityTargets.length}/${openPriorityTargets.length}/${resolvedTargets.length}`,
+    );
+  }
 
   const quarantine = rows.flatMap((candidate) => {
     const disposition = classifyDownstreamDisposition(candidate as {
@@ -655,7 +888,7 @@ function buildStudyArtifacts(input: JsonObject, occurrences: JsonObject[], exten
   }).sort((left, right) => left.candidate_id.localeCompare(right.candidate_id));
   if (quarantine.length !== 73) throw new Error(`Expected 73 quarantine rows, received ${quarantine.length}`);
 
-  const targetByRoute = new Map(topTargets.map((target) => [target.route_id, target]));
+  const targetByRoute = new Map(reviewedPriorityTargets.map((target) => [target.route_id, target]));
   const researchPackets = [...targetByRoute.values()].map((target) => {
     const occurrence = occurrenceById.get(target.occurrence_id);
     if (!occurrence) throw new Error(`${target.candidate_id}: occurrence missing`);
@@ -694,13 +927,14 @@ function buildStudyArtifacts(input: JsonObject, occurrences: JsonObject[], exten
         filePin(OCCURRENCES_PATH),
         filePin(TREATMENTS_PATH),
         filePin(SOURCE_PAGE_PATH),
+        filePin(QUEENS_EXTENT_RECEIPT_PATH),
       ],
     };
   }).sort((left, right) => left.candidate_id.localeCompare(right.candidate_id));
   const completeCount = researchPackets.filter((row) =>
     row.review_disposition === "reviewed_candidate_packet_evidence_complete").length;
-  if (researchPackets.length !== 11 || completeCount !== 2) {
-    throw new Error(`Expected 11 research packets / 2 complete, received ${researchPackets.length}/${completeCount}`);
+  if (researchPackets.length !== 11 || completeCount !== 5) {
+    throw new Error(`Expected 11 research packets / 5 complete, received ${researchPackets.length}/${completeCount}`);
   }
   return {
     bridge,
@@ -718,7 +952,12 @@ function buildStudyArtifacts(input: JsonObject, occurrences: JsonObject[], exten
       manifest_id: "tracker-rc26-source-fixable-targets-v1",
       candidate_set_id: input.tracker_baseline.candidate_set_id,
       target_count: targets.length,
-      priority_1_count: topTargets.length,
+      historical_source_fixable_target_count: targets.length,
+      current_open_target_count: targets.length - resolvedTargets.length,
+      resolved_requires_downstream_replay_count: resolvedTargets.length,
+      omitted_current_producer_status: "open_source_fixable_target",
+      reviewed_priority_batch_count: reviewedPriorityTargets.length,
+      priority_1_count: openPriorityTargets.length,
       exhausted_bus_lane_sweep_count: targets.filter((row) =>
         row.priority_tier === "deferred_completed_broad_sweep_requires_exact_identity_source").length,
       global_input_pins: [
@@ -906,14 +1145,23 @@ function main(): void {
         "A physicality classification of nonphysical or not_applicable does not prove route-wide extent.",
         "No row authorizes a route/treatment cross-product or a study.",
       ],
-      baseline_pins: [filePin(OCCURRENCES_PATH), filePin(TREATMENTS_PATH)],
+      baseline_pins: [
+        filePin(OCCURRENCES_PATH),
+        filePin(TREATMENTS_PATH),
+        filePin(QUEENS_EXTENT_RECEIPT_PATH),
+      ],
     })],
   ]);
   for (const [path, content] of extentFiles) writeOrCheck(path, content, check);
   const extentManifest = json({
     schema_version: 1,
     contract_id: MEMBER_EXTENT_CONTRACT_ID,
-    input_pins: [filePin(OCCURRENCES_PATH), filePin(TREATMENTS_PATH), filePin(SOURCE_PAGE_PATH)],
+    input_pins: [
+      filePin(OCCURRENCES_PATH),
+      filePin(TREATMENTS_PATH),
+      filePin(SOURCE_PAGE_PATH),
+      filePin(QUEENS_EXTENT_RECEIPT_PATH),
+    ],
     files: [...extentFiles.entries()].map(([path, content]) => filePin(path, content))
       .sort((left, right) => left.path.localeCompare(right.path)),
   });
@@ -936,6 +1184,7 @@ function main(): void {
       filePin(OCCURRENCES_PATH),
       filePin(TREATMENTS_PATH),
       filePin(SOURCE_PAGE_PATH),
+      filePin(QUEENS_EXTENT_RECEIPT_PATH),
       filePin(join(EXTENT_DIR, "manifest.json"), extentManifest),
     ],
     files: [...studyFiles.entries()].map(([path, content]) => filePin(path, content))

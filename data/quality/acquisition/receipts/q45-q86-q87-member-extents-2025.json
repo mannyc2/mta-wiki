@@ -1,0 +1,459 @@
+{
+  "schema_version": 1,
+  "receipt_id": "q45-q86-q87-member-extents-2025",
+  "status": "reviewed_extent_evidence_complete",
+  "operator": "codex-study-readiness-member-extent-v1",
+  "reviewed_at": "2026-07-22T00:00:00.000Z",
+  "acquisition_method": "full_official_artifact_capture_with_reviewed_block_selection",
+  "capture_hash_method": "SHA-256 of evidence_blocks.raw_text (the cited staged block normalized_text) joined in listed order with LF delimiters and one final LF",
+  "scope": {
+    "route_ids": [
+      "Q45",
+      "Q86",
+      "Q87"
+    ],
+    "target_treatment_record_ids": [
+      "treatment_q45-all-day-frequent-service-2025",
+      "treatment_q86-q5-q85-branch-combination-2025",
+      "treatment_q87-q5-green-acres-replacement-2025"
+    ],
+    "predecessor_capture_required": true,
+    "predecessor_capture_rationale": "Q5 directly assigns its former weekday Green Acres and Rosedale-LIRR service to Q87 and Q86; Q85 identifies its retained Rosedale routing. Those predecessor statements are required to bind the named branch treatment to the successor stop-list endpoints rather than relying on successor route membership alone.",
+    "excluded": [
+      "route-wide inference",
+      "cross-products",
+      "first-onset revision",
+      "study authority"
+    ]
+  },
+  "source_locator": {
+    "source_id": "mta_queens_bus_network_redesign_service_changes",
+    "source_url": "https://www.mta.info/project/queens-bus-network-redesign/service-changes",
+    "captured_html_sha256": "4b5dc9ca398980a3803e076378acefd7ac3ec04343e0ac32db95a17c1d51226d",
+    "q45_evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0050",
+    "q86_evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0083",
+    "q87_evidence_id": "mta_queens_bus_network_redesign_service_changes#p001_b0084"
+  },
+  "sources": [
+    {
+      "source_id": "mta_qbnr_q45_route_detail_2025",
+      "publisher": "MTA",
+      "content_kind": "route_detail_page",
+      "source_url": "https://www.mta.info/project/queens-bus-network-redesign/routes/q45-local",
+      "linked_from_route_id": "Q45",
+      "retrieved_at": "2026-07-22T00:00:00.000Z",
+      "artifact": {
+        "path": "raw/sources/mta_qbnr_q45_route_detail_2025/source.html",
+        "byte_length": 62666,
+        "sha256": "366f65f08e0a2d45eeec73a1f3bbe7ec6fb97c310f4ed3d2c3587b21d2d5e883",
+        "capture_url": "https://web.archive.org/web/20260518012428id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q45-local",
+        "archive_timestamp": "20260518012428",
+        "archive_digest": "B2R7LJASS457K2MJLNCOCGZ7BBB2VWTP"
+      },
+      "capture_scope": "reviewed text required for the member-extent decision",
+      "reviewed_capture_sha256": "b1de95012f2f9abc35d8899a037c3115c3c07c2e8e09ec2c1a1f0184e8ac394b",
+      "evidence_blocks": [
+        {
+          "evidence_id": "mta_qbnr_q45_route_detail_2025#about-route",
+          "staged_block_id": "p001_b0056",
+          "staged_text_surface": "normalized_text",
+          "locator": "About the route",
+          "raw_text": "The new Q45 will provide all-day frequent service along Union Tpke and create a new direct connection between 188 St and Kew Gardens.",
+          "raw_text_sha256": "sha256:dcd368208d44702fc520c59eb46be4c9fc911bb0ad2339931d616bbee728ed43"
+        },
+        {
+          "evidence_id": "mta_qbnr_q45_route_detail_2025#union-turnpike-east-endpoint",
+          "staged_block_id": "p001_b0118",
+          "staged_text_surface": "normalized_text",
+          "locator": "New stop list, eastbound stop 12",
+          "raw_text": "188 St/Union Tpke (New stop)",
+          "raw_text_sha256": "sha256:7a505d4e55285bfa46aa8d242f72c67e3fbcd523334b2bc74c2cf48364f1f2fa"
+        },
+        {
+          "evidence_id": "mta_qbnr_q45_route_detail_2025#union-turnpike-west-endpoint",
+          "staged_block_id": "p001_b0108",
+          "staged_text_surface": "normalized_text",
+          "locator": "New stop list, eastbound stop 2",
+          "raw_text": "Union Tpke/Queens Blvd (Added at existing bus stop)",
+          "raw_text_sha256": "sha256:93d4aa82b52ec5ec12759e5ed92eafda8879f12263bd0669b61ee6dd94295059"
+        }
+      ]
+    },
+    {
+      "source_id": "mta_q45_timetable_2025_06_29",
+      "publisher": "MTA",
+      "content_kind": "timetable_pdf",
+      "source_url": "https://www.mta.info/document/176896",
+      "linked_from_route_id": "Q45",
+      "retrieved_at": "2026-07-22T00:00:00.000Z",
+      "artifact": {
+        "path": "raw/sources/mta_q45_timetable_2025_06_29/source.pdf",
+        "byte_length": 305922,
+        "sha256": "a6de73fb74e98441bbfd5f2030de9e8c079eba9eeb9adc8a5ff4f611a22339d6",
+        "capture_url": "https://web.archive.org/web/20250628193652id_/https://www.mta.info/document/176896",
+        "archive_timestamp": "20250628193652",
+        "archive_digest": "Z7OT7L25I4NNWZ25RGV4LZEO6S5BZRVD"
+      },
+      "capture_scope": "route title and effective-date header",
+      "reviewed_capture_sha256": "119c7670647b6888682223976e355d881adebe81af115c635a56ed6a42f562f6",
+      "evidence_blocks": [
+        {
+          "evidence_id": "mta_q45_timetable_2025_06_29#route-number",
+          "staged_block_id": "p001_p0001",
+          "staged_text_surface": "normalized_text",
+          "locator": "PDF page 1 route header",
+          "raw_text": "Q45",
+          "raw_text_sha256": "sha256:6e210b7fda05648a3755142abc406deeb96a386a5ace7ef34e84cfd8ff7618db"
+        },
+        {
+          "evidence_id": "mta_q45_timetable_2025_06_29#route-subtitle",
+          "staged_block_id": "p001_p0002",
+          "staged_text_surface": "normalized_text",
+          "locator": "PDF page 1 route header",
+          "raw_text": "Fresh Meadows - Kew Gardens via Union Turnpike",
+          "raw_text_sha256": "sha256:7f9ad7ba6c04364732664c3be45f61c9926ed0c394ea0ef1125ffe3772b27324"
+        },
+        {
+          "evidence_id": "mta_q45_timetable_2025_06_29#effective-date",
+          "staged_block_id": "p001_p0004",
+          "staged_text_surface": "normalized_text",
+          "locator": "PDF page 1 effective-date header",
+          "raw_text": "Effective June 29, 2025",
+          "raw_text_sha256": "sha256:cee6fb2527a0e75c161e8764e9e5c68e50cfec28b5e1ea1eb6a35322ae1b2ce4"
+        }
+      ]
+    },
+    {
+      "source_id": "mta_qbnr_q5_route_detail_2025",
+      "publisher": "MTA",
+      "content_kind": "predecessor_route_detail_page",
+      "source_url": "https://www.mta.info/project/queens-bus-network-redesign/routes/q5-local",
+      "linked_from_route_ids": [
+        "Q86",
+        "Q87"
+      ],
+      "retrieved_at": "2026-07-22T00:00:00.000Z",
+      "artifact": {
+        "path": "raw/sources/mta_qbnr_q5_route_detail_2025/source.html",
+        "byte_length": 68060,
+        "sha256": "2016eba052f848b7ad2c0859705d69b0f910091933cc067398fe71ff584785d1",
+        "capture_url": "https://web.archive.org/web/20260518012418id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q5-local",
+        "archive_timestamp": "20260518012418",
+        "archive_digest": "AXZCN6YK3GGN72EFCGFNKREMVK6P553F"
+      },
+      "capture_scope": "reviewed predecessor text required to bind Q5 branch changes to Q86 and Q87",
+      "reviewed_capture_sha256": "900ca886e21c252841d13cfe1b855cd0a909c45774fb17c7c99af6abce7279a4",
+      "evidence_blocks": [
+        {
+          "evidence_id": "mta_qbnr_q5_route_detail_2025#branch-transfer",
+          "staged_block_id": "p001_b0056",
+          "staged_text_surface": "normalized_text",
+          "locator": "About the route",
+          "raw_text": "The Q5 will provide all-day frequent service along Merrick Blvd between Jamaica and Laurelton. The route will no longer serve Green Acres Mall or Rosedale LIRR on weekdays. Weekday service to Green Acres Mall will be provided by the new Q87 and service to Rosedale LIRR will be provided by the new Q86 . On weekends, the Q5 will follow existing service patterns, terminating at Green Acres Mall during the day and at Rosedale LIRR overnight.",
+          "raw_text_sha256": "sha256:9d3c50d27830e5e613dae22e24a47c64ae0932f978bf0e6a94eee268dc35e082"
+        },
+        {
+          "evidence_id": "mta_qbnr_q5_route_detail_2025#existing-branch-patterns",
+          "staged_block_id": "p001_b0099",
+          "staged_text_surface": "normalized_text",
+          "locator": "Frequency of service: Existing",
+          "raw_text": "Existing frequencies reflect terminations in Laurelton on weekdays, Rosedale at all times, and at Green Acres Mall on weekends.",
+          "raw_text_sha256": "sha256:9d6c6009f6942789ef432ad810ae119e2ddbe43149cee2c5d75f02b05fd17bef"
+        },
+        {
+          "evidence_id": "mta_qbnr_q5_route_detail_2025#green-acres-endpoint",
+          "staged_block_id": "p001_b0166",
+          "staged_text_surface": "normalized_text",
+          "locator": "New stop list, eastbound stop 31, weekend-only predecessor service",
+          "raw_text": "Green Acres Rd/Green Acres Mall (Stop only served on the weekend)",
+          "raw_text_sha256": "sha256:c26b9e39f85004520d5ed2ddba41ce440fd381d0c1befd31b5ed9a54d5547bd1"
+        },
+        {
+          "evidence_id": "mta_qbnr_q5_route_detail_2025#jamaica-endpoint",
+          "staged_block_id": "p001_b0136",
+          "staged_text_surface": "normalized_text",
+          "locator": "New stop list, eastbound stop 1",
+          "raw_text": "Jamaica Center/Bay A",
+          "raw_text_sha256": "sha256:d9198e981e19ca25ef24b23b3d0bb021dcd7ee572688d4ff398254ee557b0a5f"
+        }
+      ]
+    },
+    {
+      "source_id": "mta_qbnr_q85_route_detail_2025",
+      "publisher": "MTA",
+      "content_kind": "predecessor_route_detail_page",
+      "source_url": "https://www.mta.info/project/queens-bus-network-redesign/routes/q85-rush",
+      "linked_from_route_id": "Q86",
+      "retrieved_at": "2026-07-22T00:00:00.000Z",
+      "artifact": {
+        "path": "raw/sources/mta_qbnr_q85_route_detail_2025/source.html",
+        "byte_length": 66680,
+        "sha256": "60ad197c0bc15334ca35640b2b769412dcbbc108b7cb4653e4daa11ee902fc3d",
+        "capture_url": "https://web.archive.org/web/20260518012435id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q85-rush",
+        "archive_timestamp": "20260518012435",
+        "archive_digest": "RJSOV64IZCLR2L7FS7TE5KDAT3CBR5W5"
+      },
+      "capture_scope": "reviewed predecessor text required to bind the existing Q85 Rosedale branch",
+      "reviewed_capture_sha256": "bc77f1e8fa6a58fa7aa908e14896982da0836bef96fd40fd63eb18b678f158bc",
+      "evidence_blocks": [
+        {
+          "evidence_id": "mta_qbnr_q85_route_detail_2025#existing-rosedale-routing",
+          "staged_block_id": "p001_b0056",
+          "staged_text_surface": "normalized_text",
+          "locator": "About the route",
+          "raw_text": "The Q85 will maintain its existing Rosedale routing on 243 St. The new Q89 will replace service on the existing Green Acres branch. The Q85 will have limited-stop Rush service along Merrick Blvd, where the Q5 will serve local stops.",
+          "raw_text_sha256": "sha256:b6b8c703648c929085ba4bca546ef946368365dfef72bdbf8ad606dab4b732d6"
+        },
+        {
+          "evidence_id": "mta_qbnr_q85_route_detail_2025#jamaica-endpoint",
+          "staged_block_id": "p001_b0136",
+          "staged_text_surface": "normalized_text",
+          "locator": "New stop list, eastbound stop 1",
+          "raw_text": "Jamaica Center/Bay B",
+          "raw_text_sha256": "sha256:e7e3bd8cc215c5448c892791bf626c9dbe79cb269e1b16729e14b87a9d86a2d5"
+        },
+        {
+          "evidence_id": "mta_qbnr_q85_route_detail_2025#rosedale-endpoint",
+          "staged_block_id": "p001_b0163",
+          "staged_text_surface": "normalized_text",
+          "locator": "New stop list, westbound stop 1",
+          "raw_text": "243 St/147 Av",
+          "raw_text_sha256": "sha256:e24d659c467b678351c79b9228f0debdc99a02b0bfb47de914736472d2e4e161"
+        }
+      ]
+    },
+    {
+      "source_id": "mta_qbnr_q86_route_detail_2025",
+      "publisher": "MTA",
+      "content_kind": "route_detail_page",
+      "source_url": "https://www.mta.info/project/queens-bus-network-redesign/routes/q86-rush",
+      "linked_from_route_id": "Q86",
+      "retrieved_at": "2026-07-22T00:00:00.000Z",
+      "artifact": {
+        "path": "raw/sources/mta_qbnr_q86_route_detail_2025/source.html",
+        "byte_length": 64552,
+        "sha256": "0aed4c0431cbfada403ea688f50c014aad3c266399eff4b232ed9659c221e048",
+        "capture_url": "https://web.archive.org/web/20260518012426id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q86-rush",
+        "archive_timestamp": "20260518012426",
+        "archive_digest": "24JTXZTWGLSMKOHMY65BWBB36VCMVJ7A"
+      },
+      "capture_scope": "reviewed text required for the member-extent decision",
+      "reviewed_capture_sha256": "6abd8dc6daf800ab00972cd0ccd755e2432da7c3bbabf8b5694020e6e70a76b5",
+      "evidence_blocks": [
+        {
+          "evidence_id": "mta_qbnr_q86_route_detail_2025#about-route",
+          "staged_block_id": "p001_b0056",
+          "staged_text_surface": "normalized_text",
+          "locator": "About the route",
+          "raw_text": "The new Q86 will combine the existing Q5 and Q85 Rosedale branches, creating new connections between Rosedale and Laurelton and bringing service further south. The route will have limited-stop Rush service along Merrick Blvd between Archer Av and Springfield Blvd, where the Q5 will serve local stops.",
+          "raw_text_sha256": "sha256:1df671281d6674a14b023281608b7801505a6e1302078c0a99d24a4533dd0fe4"
+        },
+        {
+          "evidence_id": "mta_qbnr_q86_route_detail_2025#jamaica-endpoint",
+          "staged_block_id": "p001_b0108",
+          "staged_text_surface": "normalized_text",
+          "locator": "New stop list, eastbound stop 1",
+          "raw_text": "Jamaica Center/Bay A (Added at existing bus stop)",
+          "raw_text_sha256": "sha256:dc1527be4f8f8a33af58920fa79be9211d705a487132d7d2e8d71202251d1368"
+        },
+        {
+          "evidence_id": "mta_qbnr_q86_route_detail_2025#rosedale-endpoint",
+          "staged_block_id": "p001_b0132",
+          "staged_text_surface": "normalized_text",
+          "locator": "New stop list, eastbound stop 25",
+          "raw_text": "253 St/149 Av (Added at existing bus stop)",
+          "raw_text_sha256": "sha256:0f63df2d9cd3a2b361f2fc926f17d28a27d2db1c4684e57fd93e8dfa8e610a93"
+        }
+      ]
+    },
+    {
+      "source_id": "mta_qbnr_q87_route_detail_2025",
+      "publisher": "MTA",
+      "content_kind": "route_detail_page",
+      "source_url": "https://www.mta.info/project/queens-bus-network-redesign/routes/q87-rush",
+      "linked_from_route_id": "Q87",
+      "retrieved_at": "2026-07-22T00:00:00.000Z",
+      "artifact": {
+        "path": "raw/sources/mta_qbnr_q87_route_detail_2025/source.html",
+        "byte_length": 68445,
+        "sha256": "19557a67d075d201e973bb626ec706eb7dfa31da3b0cbdda1e03cb1ca8a16581",
+        "capture_url": "https://web.archive.org/web/20260518012422id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q87-rush",
+        "archive_timestamp": "20260518012422",
+        "archive_digest": "5VLNZI5WKDQ54XX5YDXRD7GUKBJRWYSK"
+      },
+      "capture_scope": "reviewed text required for the member-extent decision",
+      "reviewed_capture_sha256": "31cbfa5ebd0216f0356b34815069f2e340f9825014f3651b751e6490748a10e3",
+      "evidence_blocks": [
+        {
+          "evidence_id": "mta_qbnr_q87_route_detail_2025#about-route",
+          "staged_block_id": "p001_b0056",
+          "staged_text_surface": "normalized_text",
+          "locator": "About the route",
+          "raw_text": "The new Q87 will replace the existing Q5 Green Acres branch. The route will have limited-stop Rush service along Merrick Blvd between Archer Av and Springfield Blvd, where the Q5 will serve local stops.",
+          "raw_text_sha256": "sha256:441f89e0962e070306b1526348411c493aa27a24a803402972e6a3d839c24b36"
+        },
+        {
+          "evidence_id": "mta_qbnr_q87_route_detail_2025#green-acres-endpoint",
+          "staged_block_id": "p001_b0166",
+          "staged_text_surface": "normalized_text",
+          "locator": "New stop list, eastbound stop 22",
+          "raw_text": "Green Acres Rd/Green Acres Mall (Added at existing bus stop)",
+          "raw_text_sha256": "sha256:34a5798e5c5a0d70c9c25db11bb4a0267ec57fdf6de04c5f2a6f883f06ae58ad"
+        },
+        {
+          "evidence_id": "mta_qbnr_q87_route_detail_2025#jamaica-endpoint",
+          "staged_block_id": "p001_b0145",
+          "staged_text_surface": "normalized_text",
+          "locator": "New stop list, eastbound stop 1",
+          "raw_text": "Jamaica Center/Bay A (Added at existing bus stop)",
+          "raw_text_sha256": "sha256:dc1527be4f8f8a33af58920fa79be9211d705a487132d7d2e8d71202251d1368"
+        }
+      ]
+    },
+    {
+      "source_id": "mta_q86_q87_timetable_2025_06_29",
+      "publisher": "MTA",
+      "content_kind": "timetable_pdf",
+      "source_url": "https://www.mta.info/document/177056",
+      "linked_from_route_ids": [
+        "Q86",
+        "Q87"
+      ],
+      "retrieved_at": "2026-07-22T00:00:00.000Z",
+      "artifact": {
+        "path": "raw/sources/mta_q86_q87_timetable_2025_06_29/source.pdf",
+        "byte_length": 862072,
+        "sha256": "c228aad87a505cafc0104cab5995b2e1d33e9357e68ef66a1d536d7d55902e5f",
+        "capture_url": "https://web.archive.org/web/20250624233431id_/https://www.mta.info/document/177056",
+        "archive_timestamp": "20250624233431",
+        "archive_digest": "XE4QO3BVFEKGUSZN7OLQD7N5TVMU7OFF"
+      },
+      "capture_scope": "route header, effective date, and route-distinguishing reference notes",
+      "reviewed_capture_sha256": "82736a61c5708d48759ab6d07c141a21cc10926d539e4898ff02ae4e1d2092b3",
+      "evidence_blocks": [
+        {
+          "evidence_id": "mta_q86_q87_timetable_2025_06_29#route-header",
+          "staged_block_id": "p001_p0001",
+          "staged_text_surface": "normalized_text",
+          "locator": "PDF page 1 route header",
+          "raw_text": "Q86/Q87",
+          "raw_text_sha256": "sha256:80e2352c509b6e2141b9811070b5df4ce8f0c628206edb00e6f8dbee28329d55"
+        },
+        {
+          "evidence_id": "mta_q86_q87_timetable_2025_06_29#effective-date",
+          "staged_block_id": "p001_p0004",
+          "staged_text_surface": "normalized_text",
+          "locator": "PDF page 1 effective-date header",
+          "raw_text": "Effective June 29, 2025",
+          "raw_text_sha256": "sha256:cee6fb2527a0e75c161e8764e9e5c68e50cfec28b5e1ea1eb6a35322ae1b2ce4"
+        },
+        {
+          "evidence_id": "mta_q86_q87_timetable_2025_06_29#q86-route-legend",
+          "staged_block_id": "p001_p0010",
+          "staged_text_surface": "normalized_text",
+          "locator": "PDF page 1 reference notes",
+          "raw_text": "• 86: Q86 service.",
+          "raw_text_sha256": "sha256:e475cd4c2e5bfe35e9b47a2a17f3d8b2e787741b63fb1dcf52a9f1b684aa56dd"
+        },
+        {
+          "evidence_id": "mta_q86_q87_timetable_2025_06_29#q87-route-legend",
+          "staged_block_id": "p001_p0011",
+          "staged_text_surface": "normalized_text",
+          "locator": "PDF page 1 reference notes",
+          "raw_text": "• 87: Q87 service.",
+          "raw_text_sha256": "sha256:4a116a0ed850688afb2478861ce51d2928e290c3928047235e02977db329f07b"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "route_id": "Q45",
+      "occurrence_id": "occurrence:9256051973f8f7ff0847b5c1",
+      "route_record_id": "route_q45-qbnr-2025",
+      "treatment_record_id": "treatment_q45-all-day-frequent-service-2025",
+      "resolution": "bounded_segment",
+      "component": {
+        "component_kind": "segment",
+        "identity_namespace": "source_literal_v1",
+        "identifiers": [
+          "source-literal-v1:mta_qbnr_q45_route_detail_2025:union-tpke-queens-blvd--188-st"
+        ],
+        "description": "Q45 all-day frequent-service segment on Union Turnpike between Queens Boulevard and 188 Street."
+      },
+      "evidence_ids": [
+        "mta_qbnr_q45_route_detail_2025#about-route",
+        "mta_qbnr_q45_route_detail_2025#union-turnpike-east-endpoint",
+        "mta_qbnr_q45_route_detail_2025#union-turnpike-west-endpoint",
+        "mta_q45_timetable_2025_06_29#route-number",
+        "mta_q45_timetable_2025_06_29#route-subtitle",
+        "mta_q45_timetable_2025_06_29#effective-date"
+      ],
+      "rationale": "The official route-detail page states the Union Turnpike frequency treatment and its directional stop lists bound that corridor from Queens Boulevard to 188 Street; the implementation-effective timetable independently carries Union Turnpike timepoints within those bounds."
+    },
+    {
+      "route_id": "Q86",
+      "occurrence_id": "occurrence:d30e60bf0a04874c1ae7d40b",
+      "route_record_id": "route_q86-qbnr-2025",
+      "treatment_record_id": "treatment_q86-q5-q85-branch-combination-2025",
+      "resolution": "bounded_segment",
+      "component": {
+        "component_kind": "segment",
+        "identity_namespace": "source_literal_v1",
+        "identifiers": [
+          "source-literal-v1:mta_qbnr_q86_route_detail_2025:jamaica-center-bay-a--253-st-149-av"
+        ],
+        "description": "Q86 combined Q5/Q85 Rosedale-branch service between Jamaica Center/Bay A and 253 Street/149 Avenue."
+      },
+      "evidence_ids": [
+        "mta_q86_q87_timetable_2025_06_29#route-header",
+        "mta_q86_q87_timetable_2025_06_29#effective-date",
+        "mta_q86_q87_timetable_2025_06_29#q86-route-legend",
+        "mta_qbnr_q5_route_detail_2025#branch-transfer",
+        "mta_qbnr_q5_route_detail_2025#existing-branch-patterns",
+        "mta_qbnr_q85_route_detail_2025#existing-rosedale-routing",
+        "mta_qbnr_q85_route_detail_2025#jamaica-endpoint",
+        "mta_qbnr_q85_route_detail_2025#rosedale-endpoint",
+        "mta_qbnr_q86_route_detail_2025#about-route",
+        "mta_qbnr_q86_route_detail_2025#jamaica-endpoint",
+        "mta_qbnr_q86_route_detail_2025#rosedale-endpoint"
+      ],
+      "rationale": "The official Q5 and Q85 pages identify the predecessor Rosedale branches, and the Q86 page directly states their combination before binding the resulting service to Jamaica Center/Bay A and 253 Street/149 Avenue; the effective timetable distinguishes Q86 from Q87."
+    },
+    {
+      "route_id": "Q87",
+      "occurrence_id": "occurrence:a04ec993d0faee78af481311",
+      "route_record_id": "route_q87-qbnr-2025",
+      "treatment_record_id": "treatment_q87-q5-green-acres-replacement-2025",
+      "resolution": "bounded_segment",
+      "component": {
+        "component_kind": "segment",
+        "identity_namespace": "source_literal_v1",
+        "identifiers": [
+          "source-literal-v1:mta_qbnr_q87_route_detail_2025:jamaica-center-bay-a--green-acres-mall"
+        ],
+        "description": "Q87 replacement of the Q5 Green Acres branch between Jamaica Center/Bay A and Green Acres Mall."
+      },
+      "evidence_ids": [
+        "mta_q86_q87_timetable_2025_06_29#route-header",
+        "mta_q86_q87_timetable_2025_06_29#effective-date",
+        "mta_q86_q87_timetable_2025_06_29#q87-route-legend",
+        "mta_qbnr_q5_route_detail_2025#branch-transfer",
+        "mta_qbnr_q5_route_detail_2025#green-acres-endpoint",
+        "mta_qbnr_q5_route_detail_2025#jamaica-endpoint",
+        "mta_qbnr_q87_route_detail_2025#about-route",
+        "mta_qbnr_q87_route_detail_2025#green-acres-endpoint",
+        "mta_qbnr_q87_route_detail_2025#jamaica-endpoint"
+      ],
+      "rationale": "The official Q5 page transfers the weekday Green Acres branch to Q87 and preserves its exact Jamaica/Green Acres endpoints; the Q87 page directly states the replacement and carries those endpoints, while the effective timetable distinguishes Q87 from Q86."
+    }
+  ],
+  "doctrine": {
+    "preserves_occurrence_identity": true,
+    "infers_route_wide_scope": false,
+    "revises_first_onset": false,
+    "authorizes_study": false,
+    "authorizes_cross_product": false,
+    "requires_downstream_replay_and_new_approval_receipt": true
+  }
+}

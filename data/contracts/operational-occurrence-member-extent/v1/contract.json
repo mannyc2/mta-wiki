@@ -37,6 +37,11 @@
       "bytes": 4484742,
       "sha256": "a9b76c3b7121fc87d0f190a44fb00f182229d8d309968d3ba00a8c27a1492bae",
       "row_count": 2938
+    },
+    {
+      "path": "data/quality/acquisition/receipts/q45-q86-q87-member-extents-2025.json",
+      "bytes": 24161,
+      "sha256": "4942692197828512e80d0de304bf28227bf9be0a923156e7ff50a07b6ebc0183"
     }
   ]
 }

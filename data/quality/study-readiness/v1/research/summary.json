@@ -2,11 +2,11 @@
   "schema_version": 1,
   "batch_id": "queens-redesign-extent-priority-v1",
   "target_count": 11,
-  "evidence_complete_existing_occurrence_count": 2,
-  "negative_disposition_count": 9,
+  "evidence_complete_existing_occurrence_count": 5,
+  "negative_disposition_count": 6,
   "new_occurrence_count": 0,
   "exact_missing_role_counts": {
-    "bounded_scope_identity": 7,
+    "bounded_scope_identity": 4,
     "scope_modality": 3,
     "stop_identity": 4
   },

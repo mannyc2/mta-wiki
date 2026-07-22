@@ -32,7 +32,10 @@ missing-role list. Candidate or registry fields are never upgraded to producer e
 
 The source-fixable manifest contains exactly `404` rows and the quarantine contains exactly `73`.
 Every target includes spine readiness, calendar sufficiency, conservative first-onset status,
-downstream rejection reason, and artifact hashes. The `321` exhausted bus-lane rows are labeled
+downstream rejection reason, and artifact hashes. Five member-extent rows (Q45, Q63, Q80, Q86,
+and Q87) now carry an explicit current producer-resolution status and are separated as
+`resolved_producer_extent_requires_downstream_replay`; `399` source-fixable targets remain open and
+the current priority-1 queue is `6`. The `321` exhausted bus-lane rows are labeled
 `deferred_completed_broad_sweep_requires_exact_identity_source`; generic route-treatment evidence
 must not create an occurrence.
 
@@ -40,10 +43,10 @@ Primary artifacts:
 
 | Artifact | Rows/count | SHA-256 |
 |---|---:|---|
-| `bridge-ledger.jsonl` | 484 | `948d920ad0eb570a130cba155935e66848a78460b5d3b83223eed2fdac810012` |
-| `consumer-priority-manifest.json` | 404 targets | `18347cb4ccac3e0c91a45fca6771e0d8b338ca8695b9a91aca6e2a7fe4ac028c` |
+| `bridge-ledger.jsonl` | 484 | `9182be5be213b66f4c34ec17a409f66a4b6b9711e2b97b764c9795c7894d36f6` |
+| `consumer-priority-manifest.json` | 404 historical / 399 open targets | `276f3edf8c63ee03a37477286d507d73b3ff5f8f2670dfff1f2c1cf4869aea26` |
 | `consumer-owned-quarantine.jsonl` | 73 | `e9a32eb8cdafcdb6b69d6f8410e7503e8a33029e5df20153b03cd571d390a491` |
-| study-readiness `manifest.json` | 6 outputs | `0b07f6e9b134ba9b8ec15278ab07a4ff2cb5fec27669b01208a911d8469b9192` |
+| study-readiness `manifest.json` | 6 outputs | `78cb8d2a6df2e89b3be20e4317e5758aca96b1c8b7f112a4574c335ba96760f9` |
 
 ## Reviewed official-source batch
 
@@ -55,25 +58,39 @@ QM44, QM64, and QM68.
 All packets preserve the existing exact occurrence, route, day onset, `single_phase` role, canonical
 members, and exact evidence in the official MTA Queens service-change source. Results:
 
-- Q63 and Q80 are evidence-complete at member grain. Both occurrences already existed; new
-  occurrence count is `0`.
-- Nine packets are receipt-backed negatives because at least one member remains unresolved.
-- Negative missing roles are `bounded_scope_identity` on 7 packets, `scope_modality` on 3, and
+- Q45, Q63, Q80, Q86, and Q87 are evidence-complete at member grain. All occurrences already
+  existed; new occurrence count is `0`.
+- Six packets are receipt-backed negatives because at least one member remains unresolved.
+- Negative missing roles are `bounded_scope_identity` on 4 packets, `scope_modality` on 3, and
   `stop_identity` on 4. Counts overlap because a packet can have multiple unresolved members.
 - Named routes, named prior branches, “some stops,” street lists without pinned stop identities, and
   physicality `not_applicable` never establish whole-route extent.
 
 Reviewed packet SHA-256 is
-`1c28f4845592e95ef4fee7776d2f4b38d3bf80fe81e1e21218484b771fe7f0eb`.
+`dcb5b8e81528a12a51d6a239bd0385ea426bab50af842acf146ecfbf1de9cbb7`.
 These packets require a new Tracker import/candidate set and approval receipt before any admission.
+
+The bounded follow-up uses the hash-pinned acquisition receipt
+`data/quality/acquisition/receipts/q45-q86-q87-member-extents-2025.json` (SHA-256
+`4942692197828512e80d0de304bf28227bf9be0a923156e7ff50a07b6ebc0183`). It captures only the
+official Q45/Q86/Q87 route-detail pages, their implementation-effective timetables, and the Q5/Q85
+predecessor pages directly needed to bind the branch treatments. Because live nonbrowser requests
+were blocked by MTA's Akamai interstitial, each full official HTML/PDF response was recovered from
+the latest pre-audit Internet Archive `id_` capture and pinned by original byte length, SHA-256,
+archive timestamp, and archive digest; reviewed evidence separately pins exact staged block ids and
+normalized-text hashes. Q45 is bounded on Union Turnpike
+from Queens Boulevard to 188 Street; Q86 is bounded from Jamaica Center/Bay A to 253 Street/149
+Avenue; Q87 is bounded from Jamaica Center/Bay A to Green Acres Mall. Every reviewed text capture
+and evidence block has its own SHA-256. The Q5/Q85 predecessor statements prevent successor route
+membership or a post-change map from standing in for treatment-to-endpoint evidence.
 
 ## Member-level producer contract
 
 `operational-occurrence-member-extent-v1` is a companion contract pinned to rc26, not a mutation of
 occurrence-v2 or the immutable rc26 release. Its exact grain is
 `(occurrence_id, route_record_id, treatment_record_id)`. It enumerates all `308` occurrence × route ×
-member keys (`306` eligible) with no loss: `2 route_wide`, `9 bounded_segment`, `0 stop_set`,
-`0 mixed`, and `297 unresolved`.
+member keys (`306` eligible) with no loss: `2 route_wide`, `12 bounded_segment`, `0 stop_set`,
+`0 mixed`, and `294 unresolved`.
 
 The closed extent vocabulary is:
 
@@ -88,9 +105,9 @@ The closed extent vocabulary is:
 The two Flatbush rows are B41 and B67 only, both bound to
 `occurrence:8c987704152b459014217d44`, the exact Livingston-to-State corridor, operational onset
 `2025-10-02`, and the installation/opening phase relation. Contract projection SHA-256 is
-`311c768a5b15cc8262d0d2445fdd6099317d7742245516b92b107eef3d4771f7`; reviewed ledger SHA-256 is
-`50815d86fcc950c43da2034bca84d603889790b9c9072c58b713a56c6ecaaa48`; contract manifest SHA-256
-is `bfc505e3233b4cedfa8964dbfdcbf11a3d0bd984ed78048bfc456c3a737375b2`.
+`da1af6ef9b96c5b92dce22d7708bad5b661c6761ac4562bd9d3fe46f7bd735dc`; reviewed ledger SHA-256 is
+`547b392d169e4b8327a480482de50d9ac7d9ccc65d949e9a27ea0a32edc2a7f6`; contract manifest SHA-256
+is `5dae6e97be423333cd1877b52e8a671254b4637640581fde1fc41d61fa05c460`.
 
 ## Frozen acquisition-receipt overlay
 

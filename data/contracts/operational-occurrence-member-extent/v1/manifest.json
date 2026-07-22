@@ -18,30 +18,35 @@
       "path": "wiki/sources/mta_queens_bus_network_redesign_service_changes.md",
       "bytes": 50119,
       "sha256": "e7f75e375d984d6f06c4147d072392ad8d8a02012d5d03147d3cee2ee220e418"
+    },
+    {
+      "path": "data/quality/acquisition/receipts/q45-q86-q87-member-extents-2025.json",
+      "bytes": 24161,
+      "sha256": "4942692197828512e80d0de304bf28227bf9be0a923156e7ff50a07b6ebc0183"
     }
   ],
   "files": [
     {
       "path": "data/contracts/operational-occurrence-member-extent/v1/contract.json",
-      "bytes": 1647,
-      "sha256": "f870e28ced340f1f02a09f2a93e5d465a23a0eb0222b0d84a36e655303dd3825"
+      "bytes": 1853,
+      "sha256": "a6213928f803b32a3a486eb8d9b73a87e5cee624c047c96d5ee8cbe720e4a898"
     },
     {
       "path": "data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl",
-      "bytes": 248483,
-      "sha256": "311c768a5b15cc8262d0d2445fdd6099317d7742245516b92b107eef3d4771f7",
+      "bytes": 254849,
+      "sha256": "da1af6ef9b96c5b92dce22d7708bad5b661c6761ac4562bd9d3fe46f7bd735dc",
       "row_count": 308
     },
     {
       "path": "data/contracts/operational-occurrence-member-extent/v1/review-ledger.jsonl",
-      "bytes": 40175,
-      "sha256": "50815d86fcc950c43da2034bca84d603889790b9c9072c58b713a56c6ecaaa48",
+      "bytes": 46541,
+      "sha256": "547b392d169e4b8327a480482de50d9ac7d9ccc65d949e9a27ea0a32edc2a7f6",
       "row_count": 31
     },
     {
       "path": "data/contracts/operational-occurrence-member-extent/v1/summary.json",
-      "bytes": 701,
-      "sha256": "7e7aa70d16b23bdeca5e0793c306e570a6b169eebbea3f85f1fbc78f4ce84c2e"
+      "bytes": 702,
+      "sha256": "cc1284f449206c90e57c043eb24822c95a41a6323235c6decbaeba16e075335a"
     }
   ]
 }
