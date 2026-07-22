@@ -121,6 +121,94 @@ The two Flatbush rows are B41 and B67 only, both bound to
 `547b392d169e4b8327a480482de50d9ac7d9ccc65d949e9a27ea0a32edc2a7f6`; contract manifest SHA-256
 is `46f7ad9a3ec5cc470ff0d041c18d0ce75fe628890999516ad1b43efe26fefa68`.
 
+## Unpromoted v1-rc27 packaging and strict decoder shape
+
+Immutable candidate `v1-rc27` packages this companion without modifying occurrence-v2 or any
+`v1-rc26` byte. Its generator commit is
+`939b66078b2faec2b5edbf87ead8df3d967bda82`, its release-byte commit is
+`3ad61a369931157b87655ff96a2fd66c926c986b`, and its manifest SHA-256 is
+`ed2332e653c7c9b5e37faee52198ff9f4c17d725c539831a4010471be5de622a`. The manifest has `355`
+addressed files and `85,396` canonical records. `LATEST` remains exact `v1-rc26\n`, SHA-256
+`00f90525dc3e75ab1580eb678d65c15d46eb1227710c8196ba560b52b1d00eba`; the candidate is not a
+stable promotion.
+
+The release manifest discriminator remains `manifest_version: 5`. The smallest strict consumer
+extension is exactly:
+
+```json
+{
+  "contract_versions": {
+    "operational_occurrence_member_extents": 1
+  },
+  "pointers": {
+    "operational_occurrence_member_extents": "member-extent/data/contracts/operational-occurrence-member-extent/v1/manifest.json",
+    "quality_provenance": "quality-provenance/manifest.json"
+  },
+  "files": {
+    "member-extent/data/contracts/operational-occurrence-member-extent/v1/manifest.json": {
+      "bytes": 2056,
+      "sha256": "46f7ad9a3ec5cc470ff0d041c18d0ce75fe628890999516ad1b43efe26fefa68"
+    },
+    "quality-provenance/manifest.json": {
+      "bytes": 6929,
+      "sha256": "b367a627410dc3f1e26e63aaf90eaecef7fcab884028399cbae265e5fc8cee9c"
+    }
+  }
+}
+```
+
+These are additions to the existing manifest-v5 objects, not replacements for the other contract
+versions, pointers, or addressed files. Tracker Phase A needs only the member pointer. The quality
+pointer is schema-v1 advisory provenance, carries literal `authorizes_study=false` and
+`authorizes_cross_product=false`, and must not be imported as an occurrence contract.
+
+The member pointer decodes to `schema_version: 1` and
+`contract_id: operational-occurrence-member-extent-v1`. Its `files[]` entry for the projection is:
+
+```json
+{
+  "path": "data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl",
+  "bytes": 254849,
+  "sha256": "da1af6ef9b96c5b92dce22d7708bad5b661c6761ac4562bd9d3fe46f7bd735dc",
+  "row_count": 308
+}
+```
+
+Resolve member-manifest `files[].path` values under the release's `member-extent/` root. Thus the
+exact projection release path is
+`member-extent/data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl`.
+The separately addressed contract definition is
+`member-extent/data/contracts/operational-occurrence-member-extent/v1/contract.json`, `2059` bytes,
+SHA-256 `82df80b7c04689cd047d9f07c267248618b50666296a0e49e9219b21ed32facf`.
+
+Each projection JSONL row has these exact fields:
+
+```text
+authorizes_cross_product: false
+authorizes_study: false
+components: Array<{ component_kind, description, identifiers: string[], identity_namespace }>
+contract_id: "operational-occurrence-member-extent-v1"
+decision_id: string | null
+evidence_bindings: Array<{ evidence_id, record_id, role, source_id }>
+extent: "route_wide" | "bounded_segment" | "stop_set" | "mixed" | "unresolved"
+extent_id: string
+gtfs_route_id: string
+missing_roles: string[]
+occurrence_id: string
+occurrence_review_decision_id: string
+rationale: string
+route_record_id: string
+schema_version: 1
+treatment_family: string
+treatment_record_id: string
+```
+
+The strict grain is the exact `occurrence_id` × `route_record_id` × `treatment_record_id` triple.
+Positive extents require positive components and exact evidence; unresolved rows fail closed with a
+nonempty missing-role list. The candidate contains `308` rows (`306` eligible): `2` route-wide,
+`12` bounded segment, and `294` unresolved. Operational occurrences remain `131` rows at SHA-256
+`6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef`.
+
 ## Frozen acquisition-receipt overlay
 
 The append-only overlay links exactly the prior B41 and B67 acquisition receipts to the later exact

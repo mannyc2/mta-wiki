@@ -221,7 +221,7 @@ describe("operational occurrence phase review v1", () => {
       schema_version: 1,
       contract_id: "operational-occurrence-phase-review-v1",
       ledger_id: "operational-occurrence-phase-review-ledger-v1",
-      release_id: "v1-rc26",
+      release_id: "v1-rc27",
       occurrence_count: 131,
       eligible_occurrence_count: 130,
       ineligible_occurrence_count: 1,
@@ -255,12 +255,12 @@ describe("operational occurrence phase review v1", () => {
     expect(candidates).toHaveLength(summary.checked_event_event_candidate_count as number);
     expect(manifest).toMatchObject({
       reproduction_command:
-        "bun scripts/generate-operational-occurrence-phase-review-v1.ts --check --route-anchor-release-dir data/exports/releases/v1-rc26",
+        "bun scripts/generate-operational-occurrence-phase-review-v1.ts --check --route-anchor-release-dir data/exports/releases/v1-rc27",
       route_anchor_release: {
-        release_id: "v1-rc26",
-        route_anchors: { path: "data/exports/releases/v1-rc26/route_anchors.jsonl" },
+        release_id: "v1-rc27",
+        route_anchors: { path: "data/exports/releases/v1-rc27/route_anchors.jsonl" },
         operational_occurrences: {
-          path: "data/exports/releases/v1-rc26/operational_occurrences.jsonl",
+          path: "data/exports/releases/v1-rc27/operational_occurrences.jsonl",
         },
       },
     });

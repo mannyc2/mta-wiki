@@ -6,6 +6,17 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-22
 
+### Unpromoted v1-rc27 release candidate
+
+- Cut immutable manifest-v5 candidate `v1-rc27` from generator commit `939b6607`: manifest
+  SHA-256 `ed2332e653c7c9b5e37faee52198ff9f4c17d725c539831a4010471be5de622a`.
+  Its `355` addressed files preserve all `85,396` canonical records and all `131` operational
+  occurrence rows byte-for-byte from `v1-rc26` while adding the addressed member-extent companion
+  and non-authorizing forecast-review quality layer.
+- `LATEST` remains byte-identical at `v1-rc26`; this candidate is landed for pinned consumption but
+  is not promoted or published as stable. The member companion grants neither study nor
+  route/treatment cross-product authority, and the forecast overlay remains quality/provenance only.
+
 ### Reviewed forecast-to-realized overlay
 
 - Refreshed the deterministic forecast frontier at an explicit `2026-07-22` as-of date and a
