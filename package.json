@@ -48,6 +48,8 @@
     "relationship-identity-remediation": "bun scripts/remediate-mta-nyct-target-identity.ts --check",
     "relationship-evidence-reblocking": "bun scripts/remediate-staten-island-evidence-reblocking.ts --check",
     "treatment-semantics:check": "bun scripts/generate-treatment-semantics-contract-v1.ts --check",
+    "study-readiness:import": "bun scripts/import-tracker-rc26-study-readiness-input.ts",
+    "study-readiness:check": "bun scripts/import-tracker-rc26-study-readiness-input.ts --check && bun scripts/generate-study-readiness-v1.ts --check",
     "relationship-integrity": "bun packages/cli/src/cli.ts relationship-integrity",
     "relationship-completeness": "bun packages/cli/src/cli.ts relationship-completeness",
     "export:release": "bun packages/cli/src/cli.ts export-release",
