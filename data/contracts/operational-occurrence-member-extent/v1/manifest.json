@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "contract_id": "operational-occurrence-member-extent-v1",
+  "input_pins": [
+    {
+      "path": "data/exports/releases/v1-rc26/operational_occurrences.jsonl",
+      "bytes": 865769,
+      "sha256": "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
+      "row_count": 131
+    },
+    {
+      "path": "data/canonical/treatment_components.jsonl",
+      "bytes": 4484742,
+      "sha256": "a9b76c3b7121fc87d0f190a44fb00f182229d8d309968d3ba00a8c27a1492bae",
+      "row_count": 2938
+    },
+    {
+      "path": "wiki/sources/mta_queens_bus_network_redesign_service_changes.md",
+      "bytes": 50119,
+      "sha256": "e7f75e375d984d6f06c4147d072392ad8d8a02012d5d03147d3cee2ee220e418"
+    }
+  ],
+  "files": [
+    {
+      "path": "data/contracts/operational-occurrence-member-extent/v1/contract.json",
+      "bytes": 1647,
+      "sha256": "f870e28ced340f1f02a09f2a93e5d465a23a0eb0222b0d84a36e655303dd3825"
+    },
+    {
+      "path": "data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl",
+      "bytes": 248483,
+      "sha256": "311c768a5b15cc8262d0d2445fdd6099317d7742245516b92b107eef3d4771f7",
+      "row_count": 308
+    },
+    {
+      "path": "data/contracts/operational-occurrence-member-extent/v1/review-ledger.jsonl",
+      "bytes": 40175,
+      "sha256": "50815d86fcc950c43da2034bca84d603889790b9c9072c58b713a56c6ecaaa48",
+      "row_count": 31
+    },
+    {
+      "path": "data/contracts/operational-occurrence-member-extent/v1/summary.json",
+      "bytes": 701,
+      "sha256": "7e7aa70d16b23bdeca5e0793c306e570a6b169eebbea3f85f1fbc78f4ce84c2e"
+    }
+  ]
+}

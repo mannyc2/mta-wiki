@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "ledger_id": "study-readiness-bridge-v1",
+  "row_count": 484,
+  "disposition_counts": {
+    "approved_rc26": 7,
+    "quarantined_later_ace_phase": 20,
+    "source_fixable_bus_lane_occurrence_identity": 321,
+    "source_fixable_member_treatment_extent": 83,
+    "tracker_owned_outcome_calendar": 8,
+    "tracker_owned_spine_or_pattern": 45
+  },
+  "rows_with_no_missing_roles": 4,
+  "authorizes_study": false,
+  "authorizes_cross_product": false
+}

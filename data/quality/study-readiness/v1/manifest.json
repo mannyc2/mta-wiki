@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "manifest_id": "study-readiness-v1",
+  "input_pins": [
+    {
+      "path": "data/quality/study-readiness/v1/tracker-rc26-input.json",
+      "bytes": 1442487,
+      "sha256": "1d96eda711a30f651628b64adf8ae4f71cd7acd99bff09d6735bfeea265965cf"
+    },
+    {
+      "path": "data/exports/releases/v1-rc26/operational_occurrences.jsonl",
+      "bytes": 865769,
+      "sha256": "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
+      "row_count": 131
+    },
+    {
+      "path": "data/canonical/treatment_components.jsonl",
+      "bytes": 4484742,
+      "sha256": "a9b76c3b7121fc87d0f190a44fb00f182229d8d309968d3ba00a8c27a1492bae",
+      "row_count": 2938
+    },
+    {
+      "path": "wiki/sources/mta_queens_bus_network_redesign_service_changes.md",
+      "bytes": 50119,
+      "sha256": "e7f75e375d984d6f06c4147d072392ad8d8a02012d5d03147d3cee2ee220e418"
+    },
+    {
+      "path": "data/contracts/operational-occurrence-member-extent/v1/manifest.json",
+      "bytes": 1644,
+      "sha256": "bfc505e3233b4cedfa8964dbfdcbf11a3d0bd984ed78048bfc456c3a737375b2"
+    }
+  ],
+  "files": [
+    {
+      "path": "data/quality/study-readiness/v1/bridge-ledger.jsonl",
+      "bytes": 892166,
+      "sha256": "948d920ad0eb570a130cba155935e66848a78460b5d3b83223eed2fdac810012",
+      "row_count": 484
+    },
+    {
+      "path": "data/quality/study-readiness/v1/bridge-summary.json",
+      "bytes": 473,
+      "sha256": "de6ccc193d444dcb9f7e63398197c6a320627fa334efe24833952f624930c3b9"
+    },
+    {
+      "path": "data/quality/study-readiness/v1/consumer-owned-quarantine.jsonl",
+      "bytes": 25287,
+      "sha256": "e9a32eb8cdafcdb6b69d6f8410e7503e8a33029e5df20153b03cd571d390a491",
+      "row_count": 73
+    },
+    {
+      "path": "data/quality/study-readiness/v1/consumer-priority-manifest.json",
+      "bytes": 572186,
+      "sha256": "18347cb4ccac3e0c91a45fca6771e0d8b338ca8695b9a91aca6e2a7fe4ac028c"
+    },
+    {
+      "path": "data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl",
+      "bytes": 70692,
+      "sha256": "1c28f4845592e95ef4fee7776d2f4b38d3bf80fe81e1e21218484b771fe7f0eb",
+      "row_count": 11
+    },
+    {
+      "path": "data/quality/study-readiness/v1/research/summary.json",
+      "bytes": 577,
+      "sha256": "30e150d7f33e97cbfbdc003e82d32171eae5865c7afdecb3b255ed39a5f30731"
+    }
+  ],
+  "doctrine": {
+    "authorizes_study": false,
+    "authorizes_cross_product": false,
+    "requires_new_tracker_candidate_set_and_receipt": true
+  }
+}

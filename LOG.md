@@ -6,6 +6,21 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-21
 
+### Study-readiness bridge and member extent contract
+
+- Added a hash-pinned, non-authorizing bridge for all `484` Tracker rc26 candidates: `404` are
+  source-fixable, `73` are explicitly consumer-owned or later-phase quarantines, and `7` retain
+  their frozen approval. The completed `321`-row bus-lane sweep remains deferred rather than being
+  repeated or promoted through generic route/treatment linkage.
+- Added the fail-closed `operational-occurrence-member-extent-v1` companion at exact occurrence ×
+  route × member grain. It enumerates all `308` rc26 keys, with `11` evidence-complete extent rows
+  and `297` explicit unresolved rows; empty scope, route membership, and nonphysicality never imply
+  route-wide extent.
+- Reviewed an official-source batch of `11` high-priority Queens redesign occurrences: Q63 and Q80
+  are extent-complete existing occurrences, nine have receipt-backed missing-role dispositions, and
+  zero occurrence identities were created. Added an append-only overlay linking only the exact B41
+  and B67 acquisition receipts to their later rc26 resolution without modifying historical receipts.
+
 ### Flatbush Phase 1 Operational Onset and rc26
 
 - Resolved the Flatbush Avenue Phase 1 lifecycle without changing occurrence identity:
