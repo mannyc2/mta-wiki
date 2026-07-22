@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-07-15T21-00-00-000Z_manhattan-third-avenue-linkage-remediation",
+  "reviewed_at": "2026-07-15T21:00:00.000Z",
+  "candidate_count": 4,
+  "candidate_ids": [
+    "study-event-v2:17dced7b33f61eb49e6fff59",
+    "study-event-v2:2954b9c6483f74e7ca7ee209",
+    "study-event-v2:a863d72fae32caeacb91125d",
+    "study-event-v2:f113d0e26ca8e84dad903f4c"
+  ],
+  "route_ids": [
+    "M101",
+    "M102",
+    "M103",
+    "M98"
+  ],
+  "submission_count": 22,
+  "source_record_additions": 2,
+  "project_record_additions": 2,
+  "corridor_record_additions": 2,
+  "treatment_record_additions": 2,
+  "canonical_record_updates": 0,
+  "relation_additions": 14,
+  "unique_candidate_relevant_relation_additions": 14,
+  "canonical_relation_ids": [
+    "relation_m101-operates-on-third-avenue-midtown-corridor-2025",
+    "relation_m102-operates-on-third-avenue-midtown-corridor-2025",
+    "relation_m103-operates-on-third-avenue-midtown-corridor-2025",
+    "relation_m98-operates-on-third-avenue-upper-corridor-2025",
+    "relation_third-avenue-midtown-2025-bus-lane-located-on-corridor",
+    "relation_third-avenue-midtown-2025-project-has-bus-lane",
+    "relation_third-avenue-midtown-2025-project-uses-corridor",
+    "relation_third-avenue-midtown-project-serves-m101-2025",
+    "relation_third-avenue-midtown-project-serves-m102-2025",
+    "relation_third-avenue-midtown-project-serves-m103-2025",
+    "relation_third-avenue-upper-2025-bus-lane-located-on-corridor",
+    "relation_third-avenue-upper-2025-project-has-bus-lane",
+    "relation_third-avenue-upper-2025-project-uses-corridor",
+    "relation_third-avenue-upper-project-serves-m98-2025"
+  ],
+  "generic_route_bindings_implemented": 4,
+  "all_candidates_study_projection_eligible": false,
+  "operational_occurrence_additions": 0,
+  "explicit_phase_additions": 0,
+  "candidate_onset_bindings_added": 0,
+  "candidate_segment_bindings_added": 0,
+  "journal_sha256": "db34de768ba5bb9b034449c2fdf07faaa4d662a25d0c042435635cba7b2b6469"
+}

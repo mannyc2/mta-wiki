@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mta-wiki.local/schemas/relationship-enforcement-gate-v1.schema.json",
+  "title": "MTA Wiki relationship enforcement gate artifact v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "artifact_id",
+    "contract_id",
+    "gate_id",
+    "reviewed_at",
+    "reviewed_by",
+    "source_count",
+    "source_artifacts",
+    "derived_violation_count"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "artifact_id": {
+      "type": "string",
+      "pattern": "^relationship-contract-v1-enforcement-gate:"
+    },
+    "contract_id": {
+      "const": "relationship-contract-v1"
+    },
+    "gate_id": {
+      "enum": [
+        "bus_lane_acquisition_linkage",
+        "determinism_and_consumer_proof",
+        "occurrence_treatment_physicality",
+        "payload_reference_integrity",
+        "referential_type_evidence_integrity",
+        "relationship_completeness",
+        "semantic_remediation"
+      ]
+    },
+    "reviewed_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewed_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    },
+    "derived_violation_count": {
+      "const": 0
+    }
+  }
+}
