@@ -25,22 +25,32 @@
       "sha256": "e7f75e375d984d6f06c4147d072392ad8d8a02012d5d03147d3cee2ee220e418"
     },
     {
+      "path": "data/quality/acquisition/receipts/q45-q86-q87-member-extents-2025.json",
+      "bytes": 24161,
+      "sha256": "4942692197828512e80d0de304bf28227bf9be0a923156e7ff50a07b6ebc0183"
+    },
+    {
+      "path": "data/quality/acquisition/manifests/q45-q86-q87-member-extents-2025.json",
+      "bytes": 5235,
+      "sha256": "fffa92bba9524e6ee5ea861a2dd19dfe64125ab9066f223a2ab46b6568b8315e"
+    },
+    {
       "path": "data/contracts/operational-occurrence-member-extent/v1/manifest.json",
-      "bytes": 1644,
-      "sha256": "bfc505e3233b4cedfa8964dbfdcbf11a3d0bd984ed78048bfc456c3a737375b2"
+      "bytes": 2056,
+      "sha256": "46f7ad9a3ec5cc470ff0d041c18d0ce75fe628890999516ad1b43efe26fefa68"
     }
   ],
   "files": [
     {
       "path": "data/quality/study-readiness/v1/bridge-ledger.jsonl",
-      "bytes": 892166,
-      "sha256": "948d920ad0eb570a130cba155935e66848a78460b5d3b83223eed2fdac810012",
+      "bytes": 903518,
+      "sha256": "9182be5be213b66f4c34ec17a409f66a4b6b9711e2b97b764c9795c7894d36f6",
       "row_count": 484
     },
     {
       "path": "data/quality/study-readiness/v1/bridge-summary.json",
       "bytes": 473,
-      "sha256": "de6ccc193d444dcb9f7e63398197c6a320627fa334efe24833952f624930c3b9"
+      "sha256": "3788fa2ecf78f0d65adfb4db059a58fb6f57e06bd95331324410ae707f369e99"
     },
     {
       "path": "data/quality/study-readiness/v1/consumer-owned-quarantine.jsonl",
@@ -50,19 +60,19 @@
     },
     {
       "path": "data/quality/study-readiness/v1/consumer-priority-manifest.json",
-      "bytes": 572186,
-      "sha256": "18347cb4ccac3e0c91a45fca6771e0d8b338ca8695b9a91aca6e2a7fe4ac028c"
+      "bytes": 573693,
+      "sha256": "276f3edf8c63ee03a37477286d507d73b3ff5f8f2670dfff1f2c1cf4869aea26"
     },
     {
       "path": "data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl",
-      "bytes": 70692,
-      "sha256": "1c28f4845592e95ef4fee7776d2f4b38d3bf80fe81e1e21218484b771fe7f0eb",
+      "bytes": 80764,
+      "sha256": "bec024529abde322a5947e62e2893453509c67448b18dc2b4558b950c79e97d5",
       "row_count": 11
     },
     {
       "path": "data/quality/study-readiness/v1/research/summary.json",
       "bytes": 577,
-      "sha256": "30e150d7f33e97cbfbdc003e82d32171eae5865c7afdecb3b255ed39a5f30731"
+      "sha256": "9ebd87fc12b3664c511e1cf47afc6759533ca71d1f33100e3b8bb459c24974db"
     }
   ],
   "doctrine": {

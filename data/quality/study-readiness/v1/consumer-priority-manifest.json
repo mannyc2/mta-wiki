@@ -3,7 +3,12 @@
   "manifest_id": "tracker-rc26-source-fixable-targets-v1",
   "candidate_set_id": "candidate-set-v3:80050ed598f3b2ab0d0a1e99",
   "target_count": 404,
-  "priority_1_count": 11,
+  "historical_source_fixable_target_count": 404,
+  "current_open_target_count": 399,
+  "resolved_requires_downstream_replay_count": 5,
+  "omitted_current_producer_status": "open_source_fixable_target",
+  "reviewed_priority_batch_count": 11,
+  "priority_1_count": 6,
   "exhausted_bus_lane_sweep_count": 321,
   "global_input_pins": [
     {
@@ -158,6 +163,7 @@
       "post_month_count": 6,
       "first_onset_status": "no_earlier_same_family_candidate_in_pinned_set",
       "downstream_rejection_reason": "source_fixable_member_treatment_extent",
+      "review_batch_eligible": true,
       "priority_tier": "priority_1_extent_only_consumer_ready",
       "input_hashes": {
         "tracker_candidate_set_sha256": "fe4d3ce9fa9f73f660256034afa497a8a8935f3471c083358a171f5f719e5363",
@@ -1330,7 +1336,11 @@
       "post_month_count": 6,
       "first_onset_status": "no_earlier_same_family_candidate_in_pinned_set",
       "downstream_rejection_reason": "source_fixable_member_treatment_extent",
-      "priority_tier": "priority_1_extent_only_consumer_ready",
+      "review_batch_eligible": true,
+      "current_producer_status": "resolved_requires_downstream_replay",
+      "current_producer_missing_roles": [],
+      "downstream_replay_required": true,
+      "priority_tier": "resolved_producer_extent_requires_downstream_replay",
       "input_hashes": {
         "tracker_candidate_set_sha256": "fe4d3ce9fa9f73f660256034afa497a8a8935f3471c083358a171f5f719e5363",
         "tracker_approval_receipt_sha256": "00f2fb5e97969a986c9b07a30c9e9b3920066c80356404cfddbdcefba14d89de",
@@ -1408,7 +1418,11 @@
       "post_month_count": 6,
       "first_onset_status": "no_earlier_same_family_candidate_in_pinned_set",
       "downstream_rejection_reason": "source_fixable_member_treatment_extent",
-      "priority_tier": "priority_1_extent_only_consumer_ready",
+      "review_batch_eligible": true,
+      "current_producer_status": "resolved_requires_downstream_replay",
+      "current_producer_missing_roles": [],
+      "downstream_replay_required": true,
+      "priority_tier": "resolved_producer_extent_requires_downstream_replay",
       "input_hashes": {
         "tracker_candidate_set_sha256": "fe4d3ce9fa9f73f660256034afa497a8a8935f3471c083358a171f5f719e5363",
         "tracker_approval_receipt_sha256": "00f2fb5e97969a986c9b07a30c9e9b3920066c80356404cfddbdcefba14d89de",
@@ -3716,7 +3730,11 @@
       "post_month_count": 6,
       "first_onset_status": "no_earlier_same_family_candidate_in_pinned_set",
       "downstream_rejection_reason": "source_fixable_member_treatment_extent",
-      "priority_tier": "priority_1_extent_only_consumer_ready",
+      "review_batch_eligible": true,
+      "current_producer_status": "resolved_requires_downstream_replay",
+      "current_producer_missing_roles": [],
+      "downstream_replay_required": true,
+      "priority_tier": "resolved_producer_extent_requires_downstream_replay",
       "input_hashes": {
         "tracker_candidate_set_sha256": "fe4d3ce9fa9f73f660256034afa497a8a8935f3471c083358a171f5f719e5363",
         "tracker_approval_receipt_sha256": "00f2fb5e97969a986c9b07a30c9e9b3920066c80356404cfddbdcefba14d89de",
@@ -3769,6 +3787,7 @@
       "post_month_count": 6,
       "first_onset_status": "no_earlier_same_family_candidate_in_pinned_set",
       "downstream_rejection_reason": "source_fixable_member_treatment_extent",
+      "review_batch_eligible": true,
       "priority_tier": "priority_1_extent_only_consumer_ready",
       "input_hashes": {
         "tracker_candidate_set_sha256": "fe4d3ce9fa9f73f660256034afa497a8a8935f3471c083358a171f5f719e5363",
@@ -4431,7 +4450,11 @@
       "post_month_count": 6,
       "first_onset_status": "no_earlier_same_family_candidate_in_pinned_set",
       "downstream_rejection_reason": "source_fixable_member_treatment_extent",
-      "priority_tier": "priority_1_extent_only_consumer_ready",
+      "review_batch_eligible": true,
+      "current_producer_status": "resolved_requires_downstream_replay",
+      "current_producer_missing_roles": [],
+      "downstream_replay_required": true,
+      "priority_tier": "resolved_producer_extent_requires_downstream_replay",
       "input_hashes": {
         "tracker_candidate_set_sha256": "fe4d3ce9fa9f73f660256034afa497a8a8935f3471c083358a171f5f719e5363",
         "tracker_approval_receipt_sha256": "00f2fb5e97969a986c9b07a30c9e9b3920066c80356404cfddbdcefba14d89de",
@@ -5602,7 +5625,11 @@
       "post_month_count": 6,
       "first_onset_status": "no_earlier_same_family_candidate_in_pinned_set",
       "downstream_rejection_reason": "source_fixable_member_treatment_extent",
-      "priority_tier": "priority_1_extent_only_consumer_ready",
+      "review_batch_eligible": true,
+      "current_producer_status": "resolved_requires_downstream_replay",
+      "current_producer_missing_roles": [],
+      "downstream_replay_required": true,
+      "priority_tier": "resolved_producer_extent_requires_downstream_replay",
       "input_hashes": {
         "tracker_candidate_set_sha256": "fe4d3ce9fa9f73f660256034afa497a8a8935f3471c083358a171f5f719e5363",
         "tracker_approval_receipt_sha256": "00f2fb5e97969a986c9b07a30c9e9b3920066c80356404cfddbdcefba14d89de",
@@ -7797,6 +7824,7 @@
       "post_month_count": 6,
       "first_onset_status": "no_earlier_same_family_candidate_in_pinned_set",
       "downstream_rejection_reason": "source_fixable_member_treatment_extent",
+      "review_batch_eligible": true,
       "priority_tier": "priority_1_extent_only_consumer_ready",
       "input_hashes": {
         "tracker_candidate_set_sha256": "fe4d3ce9fa9f73f660256034afa497a8a8935f3471c083358a171f5f719e5363",
@@ -7981,6 +8009,7 @@
       "post_month_count": 6,
       "first_onset_status": "no_earlier_same_family_candidate_in_pinned_set",
       "downstream_rejection_reason": "source_fixable_member_treatment_extent",
+      "review_batch_eligible": true,
       "priority_tier": "priority_1_extent_only_consumer_ready",
       "input_hashes": {
         "tracker_candidate_set_sha256": "fe4d3ce9fa9f73f660256034afa497a8a8935f3471c083358a171f5f719e5363",
@@ -9281,6 +9310,7 @@
       "post_month_count": 6,
       "first_onset_status": "no_earlier_same_family_candidate_in_pinned_set",
       "downstream_rejection_reason": "source_fixable_member_treatment_extent",
+      "review_batch_eligible": true,
       "priority_tier": "priority_1_extent_only_consumer_ready",
       "input_hashes": {
         "tracker_candidate_set_sha256": "fe4d3ce9fa9f73f660256034afa497a8a8935f3471c083358a171f5f719e5363",
@@ -10396,6 +10426,7 @@
       "post_month_count": 6,
       "first_onset_status": "no_earlier_same_family_candidate_in_pinned_set",
       "downstream_rejection_reason": "source_fixable_member_treatment_extent",
+      "review_batch_eligible": true,
       "priority_tier": "priority_1_extent_only_consumer_ready",
       "input_hashes": {
         "tracker_candidate_set_sha256": "fe4d3ce9fa9f73f660256034afa497a8a8935f3471c083358a171f5f719e5363",

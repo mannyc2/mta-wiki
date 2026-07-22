@@ -70,3 +70,18 @@ bun run validate
 The public-clone materialize path refuses to create an empty database from an empty canonical
 snapshot and does not rewrite `data/canonical/*.jsonl` or `wiki/`. `validate` uses
 `data/evidence-block-index.jsonl` for evidence-page/hash checks when local source blocks are absent.
+
+The reviewed Q45/Q86/Q87 member-extent batch follows the same retention boundary. Its tracked
+evidence receipt embeds the 23 minimal reviewed normalized-text blocks; a separate durable-source
+manifest pins all seven official archived responses by original URL, archive timestamp/digest,
+content type, byte count, SHA-256, and ignored hydration target. Verify the offline fixture in a
+clean clone without `raw/`:
+
+```bash
+bun run queens-member-extents:sources
+bun run study-readiness:check
+```
+
+Network hydration is optional and never part of deterministic contract regeneration. To restore
+the full exact bytes locally, run `bun run queens-member-extents:hydrate`; the hydrator rejects any
+archive response that differs from the committed byte/hash pins.
