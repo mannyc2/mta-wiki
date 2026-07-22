@@ -31,7 +31,7 @@
     {
       "path": "data/quality/relationship-integrity/completeness/manifest.json",
       "bytes": 7314,
-      "sha256": "60fd4a136e3a503561fcc20d720af1f00110c75a3a9c22801f0f082e738c8e77"
+      "sha256": "a923b0223a3d894673e5a99366b318fa251ec8fc08b3b0b16fb559611cde93f0"
     },
     {
       "path": "data/quality/relationship-integrity/completeness/occurrence-completeness.jsonl",
@@ -129,5 +129,5 @@
       "row_count": 269
     }
   },
-  "audit_fingerprint": "6681ef0726fb681dae2c7798583b00f50b6af42b1a500aed1c42c3edcd0cd0c0"
+  "audit_fingerprint": "6ce1bf61562512944983b9d3db0735fd2eadbfde73d574159f6ecb36b8ca2a46"
 }

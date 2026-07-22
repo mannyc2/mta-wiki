@@ -340,7 +340,7 @@ const RC27_REVIEWED_SOURCE_REFRESHES = [
     previous_sha256:
       "898ce9417d5c2c8e631224fd29dcd5071792e51e182205710ff1831245340cd8",
     reconciled_sha256:
-      "daefc18786b2eeddd34b142cfd49589b295e19c17639fede9e0a7f134e21b145",
+      "336406b0da1b6ecd5a4baf5006c7e85e933219c038467b8aa4835e8887aec01b",
   },
 ] as const;
 const REQUIRED_COMMAND_IDS = [
