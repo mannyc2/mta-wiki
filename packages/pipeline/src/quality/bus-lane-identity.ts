@@ -248,6 +248,21 @@ function stringArray(value: unknown, path: string, allowEmpty = true): string[] 
   return output;
 }
 
+function routeTokensMatchCandidate(blockTokens: readonly string[], routeId: string): boolean {
+  const candidateRouteToken = routeId.toUpperCase();
+  if (blockTokens.includes(candidateRouteToken)) return true;
+  if (!candidateRouteToken.endsWith("+")) return false;
+  const baseRouteToken = candidateRouteToken.slice(0, -1);
+  return blockTokens.some((token, tokenIndex) => {
+    if (token !== baseRouteToken) return false;
+    if (blockTokens[tokenIndex + 1] === "SBS") return true;
+    return blockTokens[tokenIndex + 1] === "LOCAL" &&
+      blockTokens[tokenIndex + 2] === "AND" &&
+      blockTokens[tokenIndex + 3] === "SBS" &&
+      (blockTokens[tokenIndex + 4] === "ROUTE" || blockTokens[tokenIndex + 4] === "ROUTES");
+  });
+}
+
 function isoReviewTime(value: unknown, path: string): string {
   const timestamp = nonempty(value, path);
   const day = /^\d{4}-\d{2}-\d{2}$/u.test(timestamp);
@@ -1328,10 +1343,7 @@ export function validateBindingReceiptDrafts(
             .split(/[^A-Z0-9+]+/u).filter(Boolean);
           const pageNumber = Number(block.page_number);
           const position = blockIndexById.get(blockId)!;
-          const candidateRouteToken = row.gtfs_route_id.toUpperCase();
-          const route = blockTokens.includes(candidateRouteToken) ||
-            (candidateRouteToken.endsWith("+") && blockTokens.some((token, tokenIndex) =>
-              token === candidateRouteToken.slice(0, -1) && blockTokens[tokenIndex + 1] === "SBS"));
+          const route = routeTokensMatchCandidate(blockTokens, row.gtfs_route_id);
           const pageWindow = citedPageWindows.get(pageNumber) ?? {
             blocks: [], positions: [], route: false, tokens: new Set<string>(),
           };
@@ -1387,6 +1399,32 @@ export function validateBindingReceiptDrafts(
               Math.abs(routeBlock.position - servedBlock.position) <= 1 &&
               !routeBlock.tokens.has("CONNECTIONS") &&
               !servedBlock.tokens.has("CONNECTIONS"))));
+        const boundedSecondAvenueServiceWindow =
+          [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+            block.tokens.has("SECOND") &&
+            block.tokens.has("AVENUE") &&
+            block.tokens.has("REDESIGN") &&
+            block.tokens.has("BUS") &&
+            block.tokens.has("LANE"))) &&
+          [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+            block.tokens.has("59") &&
+            block.tokens.has("HOUSTON") &&
+            block.tokens.has("SECOND") &&
+            block.tokens.has("AVENUE") &&
+            block.tokens.has("BUS") &&
+            block.tokens.has("LANE"))) &&
+          [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+            block.route &&
+            block.tokens.has("SECOND") &&
+            block.tokens.has("AVENUE") &&
+            block.tokens.has("SERVES") &&
+            block.tokens.has("M15") &&
+            block.tokens.has("LOCAL") &&
+            block.tokens.has("SBS") &&
+            block.tokens.has("ROUTE") &&
+            block.tokens.has("OFFSET") &&
+            block.tokens.has("BUS") &&
+            block.tokens.has("LANE")));
         const correctedFinding = object(correction.corrected_finding, `${correctionPath}.corrected_finding`);
         exactKeys(correctedFinding, new Set([
           "candidate_route_id", "finding_kind", "finding_summary", "supported_scope", "unsupported_bindings",
@@ -1409,7 +1447,9 @@ export function validateBindingReceiptDrafts(
           correctedFinding.supported_scope === "project_corridor_service_only";
         if ((isIntersectionAttribution && !boundedProjectIntersectionWindow) ||
             (isProjectConnection && !boundedProjectConnectionWindow) ||
-            (isProjectCorridorService && !boundedUpperCorridorServiceWindow) ||
+            (isProjectCorridorService &&
+              !boundedUpperCorridorServiceWindow &&
+              !boundedSecondAvenueServiceWindow) ||
             (!isIntersectionAttribution && !isProjectConnection && !isProjectCorridorService)) {
           throw new Error(`${correctionPath}: staged source-block evidence does not bind the exact route to its typed project context`);
         }
@@ -1428,22 +1468,43 @@ export function validateBindingReceiptDrafts(
         for (const [index, value] of supplemental.positive_context_findings.entries()) {
           const contextPath = `${receiptPath}.supplemental_search.positive_context_findings[${index}]`;
           const context = object(value, contextPath);
+          const hasLegacyPdfHash = context.source_pdf_sha256 !== undefined;
+          const hasContentHash = context.source_content_sha256 !== undefined;
+          if (hasLegacyPdfHash === hasContentHash) {
+            throw new Error(`${contextPath}: positive context requires exactly one source content hash`);
+          }
           exactKeys(context, new Set([
             "authorizes_cross_product", "authorizes_study", "context_finding", "evidence_refs",
-            "remaining_unresolved_bindings", "source_id", "source_pdf_sha256", "source_url",
+            "remaining_unresolved_bindings", "source_id",
+            ...(hasLegacyPdfHash
+              ? ["source_pdf_sha256"]
+              : ["source_artifact", "source_content_sha256"]),
+            "source_url",
           ]), contextPath);
           const sourceId = nonempty(context.source_id, `${contextPath}.source_id`);
           const sourceUrl = nonempty(context.source_url, `${contextPath}.source_url`);
-          const sourcePdfSha256 = nonempty(context.source_pdf_sha256, `${contextPath}.source_pdf_sha256`);
-          if (!/^[a-z0-9][a-z0-9_-]*$/u.test(sourceId) || !/^[a-f0-9]{64}$/u.test(sourcePdfSha256)) {
+          const sourceContentSha256 = nonempty(
+            hasLegacyPdfHash ? context.source_pdf_sha256 : context.source_content_sha256,
+            hasLegacyPdfHash
+              ? `${contextPath}.source_pdf_sha256`
+              : `${contextPath}.source_content_sha256`,
+          );
+          if (!/^[a-z0-9][a-z0-9_-]*$/u.test(sourceId) || !/^[a-f0-9]{64}$/u.test(sourceContentSha256)) {
             throw new Error(`${contextPath}: positive-context source identity is invalid`);
+          }
+          const sourceArtifact = hasLegacyPdfHash
+            ? "source.pdf"
+            : nonempty(context.source_artifact, `${contextPath}.source_artifact`);
+          if ((hasLegacyPdfHash && context.source_artifact !== undefined) ||
+              (!hasLegacyPdfHash && sourceArtifact !== "source.html")) {
+            throw new Error(`${contextPath}: positive-context source artifact does not match its hash field`);
           }
           const stagedSourceDir = resolve(rootDir, "raw", "sources", sourceId);
           const metadataPath = join(stagedSourceDir, "metadata.json");
-          const sourcePdfPath = join(stagedSourceDir, "source.pdf");
+          const sourceArtifactPath = join(stagedSourceDir, sourceArtifact);
           const sourceBlocksPath = join(stagedSourceDir, "blocks.jsonl");
-          if (![metadataPath, sourcePdfPath, sourceBlocksPath].every(existsSync)) {
-            throw new Error(`${contextPath}: positive-context source is not a fully staged PDF source`);
+          if (![metadataPath, sourceArtifactPath, sourceBlocksPath].every(existsSync)) {
+            throw new Error(`${contextPath}: positive-context source is not fully staged`);
           }
           const metadata = object(JSON.parse(readFileSync(metadataPath, "utf8")), metadataPath);
           const metadataSha = typeof metadata.sha256 === "string" ? metadata.sha256.replace(/^sha256:/u, "") : null;
@@ -1456,13 +1517,19 @@ export function validateBindingReceiptDrafts(
             titleTokens.includes("128TH") &&
             titleTokens.includes("EXISTING") &&
             titleTokens.includes("CONDITIONS");
+          const secondAvenueRedesignTitle =
+            titleTokens.includes("REDESIGN") &&
+            titleTokens.includes("SECOND") &&
+            titleTokens.includes("AVENUE") &&
+            titleTokens.includes("BUS") &&
+            titleTokens.includes("LANE");
           if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
-              metadataSha !== sourcePdfSha256 || hash(readFileSync(sourcePdfPath)) !== sourcePdfSha256 ||
-              (!proposalSourceTitle && !upperCorridorExistingConditionsTitle) ||
+              metadataSha !== sourceContentSha256 || hash(readFileSync(sourceArtifactPath)) !== sourceContentSha256 ||
+              (!proposalSourceTitle && !upperCorridorExistingConditionsTitle && !secondAvenueRedesignTitle) ||
               !supplementalUrls.includes(sourceUrl) ||
               !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
-                retrieval.sha256 === sourcePdfSha256)) {
-            throw new Error(`${contextPath}: positive-context staged source metadata, URL, or PDF hash does not resolve`);
+                retrieval.sha256 === sourceContentSha256)) {
+            throw new Error(`${contextPath}: positive-context staged source metadata, URL, or content hash does not resolve`);
           }
           const stagedBlocks = readFileSync(sourceBlocksPath, "utf8").split(/\r?\n/u).filter(Boolean)
             .map((line, blockIndex) => object(JSON.parse(line), `${sourceBlocksPath}:${blockIndex + 1}`));
@@ -1495,10 +1562,7 @@ export function validateBindingReceiptDrafts(
               .split(/[^A-Z0-9+]+/u).filter(Boolean);
             const pageNumber = Number(block.page_number);
             const position = blockIndexById.get(blockId)!;
-            const candidateRouteToken = row.gtfs_route_id.toUpperCase();
-            const route = blockTokens.includes(candidateRouteToken) ||
-              (candidateRouteToken.endsWith("+") && blockTokens.some((token, tokenIndex) =>
-                token === candidateRouteToken.slice(0, -1) && blockTokens[tokenIndex + 1] === "SBS"));
+            const route = routeTokensMatchCandidate(blockTokens, row.gtfs_route_id);
             const pageWindow = citedPageWindows.get(pageNumber) ?? {
               blocks: [], positions: [], route: false, tokens: new Set<string>(),
             };
@@ -1510,7 +1574,7 @@ export function validateBindingReceiptDrafts(
           }
           const boundedServiceContext = [...citedPageWindows.values()].some((window) =>
             window.blocks.some((routeBlock) => routeBlock.route && window.blocks.some((servedBlock) =>
-              servedBlock.tokens.has("SERVED") &&
+              (servedBlock.tokens.has("SERVED") || servedBlock.tokens.has("SERVES")) &&
               (servedBlock.tokens.has("ROUTE") || servedBlock.tokens.has("ROUTES")) &&
               Math.abs(routeBlock.position - servedBlock.position) <= 2 &&
               !routeBlock.tokens.has("CONNECTIONS") &&
@@ -1526,6 +1590,26 @@ export function validateBindingReceiptDrafts(
               window.tokens.has("128TH") &&
               window.tokens.has("REVIEW") &&
               Math.max(...window.positions) - Math.min(...window.positions) <= 4);
+          const exactSecondAvenueProjectWindow = secondAvenueRedesignTitle &&
+            [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+              block.tokens.has("59") &&
+              block.tokens.has("HOUSTON") &&
+              block.tokens.has("SECOND") &&
+              block.tokens.has("AVENUE") &&
+              block.tokens.has("BUS") &&
+              block.tokens.has("LANE"))) &&
+            [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+              block.route &&
+              block.tokens.has("SECOND") &&
+              block.tokens.has("AVENUE") &&
+              block.tokens.has("SERVES") &&
+              block.tokens.has("M15") &&
+              block.tokens.has("LOCAL") &&
+              block.tokens.has("SBS") &&
+              block.tokens.has("ROUTE") &&
+              block.tokens.has("OFFSET") &&
+              block.tokens.has("BUS") &&
+              block.tokens.has("LANE")));
           const finding = object(context.context_finding, `${contextPath}.context_finding`);
           exactKeys(finding, new Set([
             "candidate_route_id", "finding_kind", "finding_summary", "supported_scope", "unsupported_bindings",
@@ -1549,7 +1633,8 @@ export function validateBindingReceiptDrafts(
             throw new Error(`${contextPath}: positive context exceeds its nonauthorizing other-extent scope`);
           }
           if (isProjectCorridorServiceContext &&
-              (!commonContextScopeValid || !exactUpperCorridorReviewWindow ||
+              (!commonContextScopeValid ||
+                (!exactUpperCorridorReviewWindow && !exactSecondAvenueProjectWindow) ||
                 object(prior.source_findings, `${contextPath}.prior.source_findings`)
                   .exact_project_route_statement_found !== true)) {
             throw new Error(`${contextPath}: positive context exceeds its nonauthorizing project-corridor scope`);

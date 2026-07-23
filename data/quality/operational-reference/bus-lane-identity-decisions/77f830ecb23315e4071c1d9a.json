@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:77f830ecb23315e4071c1d9a",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:7ac6647d260f2caefaff149c",
+  "candidate_id": "study-event-v2:f2ea930e019165d9925dc176",
+  "candidate_fingerprint": "60fb09fcd22f28fa5f5cd0937c516753f5c552198712123d2d829da4af73e1cd",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "direction",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental official NYC DOT and public-board searches found no statement binding M15 to the exact four southbound mixed-date feature rows, their 2025-07-01 onset, implementation phase, direction, traversal, or exact feature extent. The staged release corrects the prior false claim only at broader-corridor service scope. The receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:77f830ecb23315e4071c1d9a"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T05:54:29Z"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:a996f2527f4352fc40bc6760",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:a47e475d13e161e662402eed",
+  "candidate_id": "study-event-v2:cf96fd9a2b62820f7af0e172",
+  "candidate_fingerprint": "eaacc50a7202f9d735aa35bd48746ef063cb86207c765b5c3588e2a2e4b543d9",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental official NYC DOT and public-board searches found no statement binding M9 to the exact four southbound mixed-date feature rows, their 2025-07-01 onset, implementation phase, direction, traversal, or exact feature extent. The project sources name M15 local/SBS service, not M9; this distinction is not an exclusive-use or non-traversal finding. The receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:a996f2527f4352fc40bc6760"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T05:54:29Z"
+}

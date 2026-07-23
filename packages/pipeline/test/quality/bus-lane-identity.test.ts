@@ -1054,6 +1054,244 @@ describe("bus-lane identity exact-date targeting", () => {
       } as unknown as JsonValue));
       expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
         .toThrow("does not bind the exact route to its typed project context");
+      const secondAvenueSourceDir = join(rootDir, "raw", "sources", "official-second-avenue-source");
+      mkdirSync(secondAvenueSourceDir, { recursive: true });
+      const secondAvenueSourceBytes = Buffer.from("<html>fixture official Second Avenue redesign page</html>");
+      const secondAvenueSourceHash = createHash("sha256").update(secondAvenueSourceBytes).digest("hex");
+      const secondAvenueTitleText =
+        "NYC DOT Begins Redesign of Manhattan's Second Avenue With Wider Bike Lane and Upgraded Bus Lane";
+      const secondAvenueRangeText =
+        "Construction has begun to redesign 59 blocks of Second Avenue from 59 Street to Houston Street with an upgraded bus lane.";
+      const secondAvenueServiceText =
+        "Second Avenue serves the M15 local and SBS route. NYC DOT will move the curbside bus lane one lane over as an offset bus lane.";
+      const secondAvenueTitleHash =
+        `sha256:${createHash("sha256").update(secondAvenueTitleText).digest("hex")}`;
+      const secondAvenueRangeHash =
+        `sha256:${createHash("sha256").update(secondAvenueRangeText).digest("hex")}`;
+      const secondAvenueServiceHash =
+        `sha256:${createHash("sha256").update(secondAvenueServiceText).digest("hex")}`;
+      writeFileSync(join(secondAvenueSourceDir, "source.html"), secondAvenueSourceBytes);
+      writeFileSync(join(secondAvenueSourceDir, "metadata.json"), JSON.stringify({
+        sourceId: "official-second-avenue-source",
+        sourceUrl: "https://www.nyc.gov/second-avenue-source",
+        sha256: `sha256:${secondAvenueSourceHash}`,
+        title: secondAvenueTitleText,
+      }));
+      const writeSecondAvenueBlocks = (serviceText: string, serviceHash: string) => writeFileSync(
+        join(secondAvenueSourceDir, "blocks.jsonl"),
+        [
+          {
+            source_id: "official-second-avenue-source",
+            block_id: "p001_b0001",
+            page_number: 1,
+            raw_text: secondAvenueTitleText,
+            normalized_text: secondAvenueTitleText,
+            raw_text_sha256: secondAvenueTitleHash,
+          },
+          {
+            source_id: "official-second-avenue-source",
+            block_id: "p001_b0013",
+            page_number: 1,
+            raw_text: secondAvenueRangeText,
+            normalized_text: secondAvenueRangeText,
+            raw_text_sha256: secondAvenueRangeHash,
+          },
+          {
+            source_id: "official-second-avenue-source",
+            block_id: "p001_b0019",
+            page_number: 1,
+            raw_text: serviceText,
+            normalized_text: serviceText,
+            raw_text_sha256: serviceHash,
+          },
+        ].map((block) => JSON.stringify(block)).join("\n") + "\n",
+      );
+      writeSecondAvenueBlocks(secondAvenueServiceText, secondAvenueServiceHash);
+      writeFileSync(join(acquiredChecksDir, "acquired-source-checks.json"), JSON.stringify({
+        sources: [
+          ...acquiredSources,
+          {
+            url: "https://www.nyc.gov/correction-source",
+            content_sha256: correctionSourceHash,
+            retrieval_status: "acquired",
+          },
+          {
+            url: "https://www.nyc.gov/project-connection-source",
+            content_sha256: connectionSourceHash,
+            retrieval_status: "acquired",
+          },
+          {
+            url: "https://www.nyc.gov/upper-corridor-source",
+            content_sha256: corridorSourceHash,
+            retrieval_status: "acquired",
+          },
+          {
+            url: "https://www.nyc.gov/second-avenue-source",
+            content_sha256: secondAvenueSourceHash,
+            retrieval_status: "acquired",
+          },
+        ],
+      }));
+      const secondAvenueEvidenceRefs = [
+        { block_id: "p001_b0001", page_number: 1, text_sha256: secondAvenueTitleHash },
+        { block_id: "p001_b0013", page_number: 1, text_sha256: secondAvenueRangeHash },
+        { block_id: "p001_b0019", page_number: 1, text_sha256: secondAvenueServiceHash },
+      ];
+      const secondAvenueSupplementalSearch = (routeId: string) => ({
+        ...corridorSupplementalSearch,
+        exact_queries: corridorSupplementalSearch.exact_queries.map((query) => ({
+          ...query,
+          query: query.query.replace("Q1", routeId),
+        })),
+        urls_inspected: [
+          ...corridorSupplementalSearch.urls_inspected,
+          "https://www.nyc.gov/second-avenue-source",
+        ].sort(),
+        retrievals: [...corridorSupplementalSearch.retrievals, {
+          category: "official_nyc_dot_lane_project",
+          url: "https://www.nyc.gov/second-avenue-source",
+          retrieved_on: "2026-07-23",
+          status: "acquired",
+          sha256: secondAvenueSourceHash,
+        }],
+      });
+      const m15Row = { ...row, gtfs_route_id: "M15" };
+      const m15Packet = buildBusLaneResearchPackets([m15Row]).packets[0]!;
+      const m15Receipt = {
+        ...receipt,
+        gtfs_route_id: "M15",
+        supplemental_search: {
+          ...secondAvenueSupplementalSearch("M15"),
+          finding_corrections: [{
+            prior_claim_path: "source_findings.exact_project_route_statement_found",
+            prior_claim_value: false,
+            supersedes_prior_finding: true,
+            source_id: "official-second-avenue-source",
+            source_url: "https://www.nyc.gov/second-avenue-source",
+            source_content_sha256: secondAvenueSourceHash,
+            source_artifact: "source.html",
+            evidence_refs: secondAvenueEvidenceRefs,
+            corrected_finding: {
+              candidate_route_id: "M15",
+              finding_kind: "positive_project_corridor_service_nonterminal",
+              supported_scope: "project_corridor_service_only",
+              unsupported_bindings: m15Packet.unresolved_bindings,
+              finding_summary:
+                "The local route serves the broader redesign corridor, without exact feature-row binding.",
+            },
+            remaining_unresolved_bindings: m15Packet.unresolved_bindings,
+            authorizes_study: false,
+            authorizes_cross_product: false,
+          }],
+        },
+      };
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(m15Receipt as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([m15Row], [m15Packet], receiptDir, rootDir)).not.toThrow();
+      const m15AliasRow = { ...positiveRow, gtfs_route_id: "M15+" };
+      const m15AliasPacket = buildBusLaneResearchPackets([m15AliasRow]).packets[0]!;
+      const m15AliasContext = {
+        source_id: "official-second-avenue-source",
+        source_url: "https://www.nyc.gov/second-avenue-source",
+        source_content_sha256: secondAvenueSourceHash,
+        source_artifact: "source.html",
+        evidence_refs: secondAvenueEvidenceRefs,
+        context_finding: {
+          candidate_route_id: "M15+",
+          finding_kind: "positive_project_corridor_service_nonterminal",
+          supported_scope: "project_corridor_service_only",
+          unsupported_bindings: m15AliasPacket.unresolved_bindings,
+          finding_summary:
+            "The source's M15 SBS name proves this alias serves the broader corridor, not the exact rows.",
+        },
+        remaining_unresolved_bindings: m15AliasPacket.unresolved_bindings,
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      const m15AliasReceipt = {
+        ...receipt,
+        gtfs_route_id: "M15+",
+        prior_receipt: {
+          receipt_id: "positive-prior-receipt",
+          artifact: "positive-prior.jsonl",
+          row_sha256: positiveRow.prior_acquisition_receipt.row_sha256,
+        },
+        supplemental_search: {
+          ...secondAvenueSupplementalSearch("M15+"),
+          finding_corrections: [],
+          positive_context_findings: [m15AliasContext],
+        },
+      };
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(m15AliasReceipt as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts(
+        [m15AliasRow], [m15AliasPacket], receiptDir, rootDir,
+      )).not.toThrow();
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...m15AliasReceipt,
+        supplemental_search: {
+          ...m15AliasReceipt.supplemental_search,
+          positive_context_findings: [{
+            ...m15AliasContext,
+            context_finding: {
+              ...m15AliasContext.context_finding,
+              supported_scope: "exact_feature_traversal",
+            },
+          }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts(
+        [m15AliasRow], [m15AliasPacket], receiptDir, rootDir,
+      )).toThrow("unsupported typed scope");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...m15AliasReceipt,
+        supplemental_search: {
+          ...m15AliasReceipt.supplemental_search,
+          positive_context_findings: [{
+            ...m15AliasContext,
+            remaining_unresolved_bindings: m15AliasPacket.unresolved_bindings.filter(
+              (binding) => binding !== "traversal",
+            ),
+          }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts(
+        [m15AliasRow], [m15AliasPacket], receiptDir, rootDir,
+      )).toThrow("exceeds its nonauthorizing project-corridor scope");
+      const noSbsServiceText =
+        "Second Avenue serves the M15 local route. NYC DOT will move the curbside bus lane one lane over as an offset bus lane.";
+      const noSbsServiceHash = `sha256:${createHash("sha256").update(noSbsServiceText).digest("hex")}`;
+      writeSecondAvenueBlocks(noSbsServiceText, noSbsServiceHash);
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...m15AliasReceipt,
+        supplemental_search: {
+          ...m15AliasReceipt.supplemental_search,
+          positive_context_findings: [{
+            ...m15AliasContext,
+            evidence_refs: secondAvenueEvidenceRefs.map((ref) => ref.block_id === "p001_b0019"
+              ? { ...ref, text_sha256: noSbsServiceHash }
+              : ref),
+          }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts(
+        [m15AliasRow], [m15AliasPacket], receiptDir, rootDir,
+      )).toThrow("does not bind the exact route to bounded corridor-service context");
+      writeSecondAvenueBlocks(secondAvenueServiceText, secondAvenueServiceHash);
+      const m9Row = { ...row, gtfs_route_id: "M9" };
+      const m9Packet = buildBusLaneResearchPackets([m9Row]).packets[0]!;
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...m15Receipt,
+        gtfs_route_id: "M9",
+        supplemental_search: {
+          ...secondAvenueSupplementalSearch("M9"),
+          finding_corrections: m15Receipt.supplemental_search.finding_corrections.map((correction) => ({
+            ...correction,
+            corrected_finding: { ...correction.corrected_finding, candidate_route_id: "M9" },
+            remaining_unresolved_bindings: m9Packet.unresolved_bindings,
+          })),
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([m9Row], [m9Packet], receiptDir, rootDir))
+        .toThrow("does not bind the exact route to its typed project context");
       const otherExtentContextText = "Served by Q1 express bus routes in the separate corridor.";
       const otherExtentContextHash = `sha256:${createHash("sha256").update(otherExtentContextText).digest("hex")}`;
       writeFileSync(join(stagedSourceDir, "metadata.json"), JSON.stringify({
