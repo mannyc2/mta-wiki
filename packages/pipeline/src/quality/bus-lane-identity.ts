@@ -1093,6 +1093,8 @@ export function writeBusLaneIdentityArtifacts(options: {
     packet_count: packetBuild.packets.length,
     open_packet_count: packetBuild.packets.filter((packet) => packet.disposition === "open").length,
     target_corridor_key_count: packetBuild.corridorKeyCount,
+    batch_ownership_key_count: new Set(packetBuild.batches.map((batch) => batch.corridor_key)).size,
+    // Compatibility alias retained for consumers of the first Plan039 artifact cut.
     owning_batch_key_count: new Set(packetBuild.batches.map((batch) => batch.corridor_key)).size,
     counts_by_batch_kind: recordCounts(packetBuild.batches.map((batch) => batch.batch_kind)),
     batch_count: packetBuild.batches.length,
