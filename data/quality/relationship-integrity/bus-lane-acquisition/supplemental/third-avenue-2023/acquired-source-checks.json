@@ -1,0 +1,22 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "third-avenue-2023-bus-lane-identity-supplement",
+  "sources": [
+    {
+      "byte_length": 32170,
+      "category": "dot_lane_project",
+      "content_sha256": "07e3f23df5b3aa70ec1400ec1948ed48cfb96397df404961e9defed7941c91d0",
+      "http_status": 200,
+      "id": "third_avenue_completion_current_staged_copy",
+      "media_type": "text/html; charset=utf-8",
+      "note": "Current immutable staged copy used only to prove exact same-project connection statements; it does not establish lane service, traversal, extent, direction, onset, phase, or study eligibility.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.html",
+      "source_id": "nyc_dot_third_avenue_completion_dec2023",
+      "url": "https://www.nyc.gov/html/dot/html/pr2023/completion-safety-project-third-ave.shtml"
+    }
+  ]
+}

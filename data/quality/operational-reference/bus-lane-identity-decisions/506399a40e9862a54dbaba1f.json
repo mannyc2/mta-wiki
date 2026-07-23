@@ -1,0 +1,24 @@
+{
+  "authorizes_cross_product": false,
+  "authorizes_study": false,
+  "candidate_fingerprint": "5fb85527fa1b1e60b1312f05e1f96f9d6d06eb03f5e4a9ec8fa3aff2898d6492",
+  "candidate_id": "study-event-v2:f5ba325266f6518ff4d6f17e",
+  "contract_id": "bus-lane-identity-v1",
+  "decision_id": "bus-lane-identity-decision:506399a40e9862a54dbaba1f",
+  "ledger_id": "bus-lane-identity:28ea3af5682047aa9005e7b6",
+  "occurrence_id": null,
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches found an exact same-project connection statement for M66, but no evidence binding the route to the 36 exact northbound feature rows, their 2023-12-08 onset, implementation phase, direction-specific traversal, or exact feature extent. The separately listed lane-served routes are not transferred to this candidate. This receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:506399a40e9862a54dbaba1f"
+  ],
+  "reviewed_at": "2026-07-23T04:41:04Z",
+  "reviewed_by": "codex-owner-delegate",
+  "schema_version": 1,
+  "unresolved_bindings": [
+    "attribution",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "verdict": "binding_absent_after_search"
+}

@@ -1,0 +1,24 @@
+{
+  "authorizes_cross_product": false,
+  "authorizes_study": false,
+  "candidate_fingerprint": "9e3997d2eaa2cd206bfdb7c8dc91ce6ab97d3feb20f159a62068ee54c7a22f8b",
+  "candidate_id": "study-event-v2:13b8223c9ef18ac540bb3818",
+  "contract_id": "bus-lane-identity-v1",
+  "decision_id": "bus-lane-identity-decision:d868fe3253ab6566a639a4c2",
+  "ledger_id": "bus-lane-identity:8647d793b84193389a271c2b",
+  "occurrence_id": null,
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches found an exact same-project connection statement for M79+, but no evidence binding the route to the 36 exact northbound feature rows, their 2023-12-08 onset, implementation phase, direction-specific traversal, or exact feature extent. The separately listed lane-served routes are not transferred to this candidate. This receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:d868fe3253ab6566a639a4c2"
+  ],
+  "reviewed_at": "2026-07-23T04:41:04Z",
+  "reviewed_by": "codex-owner-delegate",
+  "schema_version": 1,
+  "unresolved_bindings": [
+    "attribution",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "verdict": "binding_absent_after_search"
+}

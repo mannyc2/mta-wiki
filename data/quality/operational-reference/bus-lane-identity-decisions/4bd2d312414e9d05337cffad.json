@@ -1,0 +1,24 @@
+{
+  "authorizes_cross_product": false,
+  "authorizes_study": false,
+  "candidate_fingerprint": "d8847eeeae1b8acafb02d7e09115402a40afba83fe3a0a405925a9ca8eb6c4d3",
+  "candidate_id": "study-event-v2:1745cd54f25a19684bbf9621",
+  "contract_id": "bus-lane-identity-v1",
+  "decision_id": "bus-lane-identity-decision:4bd2d312414e9d05337cffad",
+  "ledger_id": "bus-lane-identity:890114f0873716104c12845d",
+  "occurrence_id": null,
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches found an exact same-project connection statement for M72, but no evidence binding the route to the 36 exact northbound feature rows, their 2023-12-08 onset, implementation phase, direction-specific traversal, or exact feature extent. The separately listed lane-served routes are not transferred to this candidate. This receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:4bd2d312414e9d05337cffad"
+  ],
+  "reviewed_at": "2026-07-23T04:41:04Z",
+  "reviewed_by": "codex-owner-delegate",
+  "schema_version": 1,
+  "unresolved_bindings": [
+    "attribution",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "verdict": "binding_absent_after_search"
+}

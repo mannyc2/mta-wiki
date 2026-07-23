@@ -638,6 +638,158 @@ describe("bus-lane identity exact-date targeting", () => {
         supplemental_search: { ...correctionSupplementalSearch, finding_corrections: [findingCorrection] },
       } as unknown as JsonValue));
       expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir)).not.toThrow();
+      const connectionSourceDir = join(rootDir, "raw", "sources", "official-project-connection-source");
+      mkdirSync(connectionSourceDir, { recursive: true });
+      const connectionSourceBytes = Buffer.from("<html>fixture official project connection page</html>");
+      const connectionSourceHash = createHash("sha256").update(connectionSourceBytes).digest("hex");
+      const servedContextText =
+        "Third Avenue serves the Q1 bus routes. The project also added an offset bus lane to Third Avenue.";
+      const connectionSentenceText =
+        "The offset bus lane will provide connections to the Q1 services.";
+      const servedScopeText =
+        "The new bus lane will benefit the Q9 routes that travel along Third Avenue.";
+      const servedContextHash =
+        `sha256:${createHash("sha256").update(servedContextText).digest("hex")}`;
+      const connectionSentenceHash =
+        `sha256:${createHash("sha256").update(connectionSentenceText).digest("hex")}`;
+      const servedScopeHash =
+        `sha256:${createHash("sha256").update(servedScopeText).digest("hex")}`;
+      writeFileSync(join(connectionSourceDir, "source.html"), connectionSourceBytes);
+      writeFileSync(join(connectionSourceDir, "metadata.json"), JSON.stringify({
+        sourceId: "official-project-connection-source",
+        sourceUrl: "https://www.nyc.gov/project-connection-source",
+        sha256: `sha256:${connectionSourceHash}`,
+      }));
+      writeFileSync(join(connectionSourceDir, "blocks.jsonl"), [
+        JSON.stringify({
+          source_id: "official-project-connection-source",
+          block_id: "p001_b0001",
+          page_number: 1,
+          raw_text: servedContextText,
+          normalized_text: servedContextText,
+          raw_text_sha256: servedContextHash,
+        }),
+        JSON.stringify({
+          source_id: "official-project-connection-source",
+          block_id: "p001_b0002",
+          page_number: 1,
+          raw_text: connectionSentenceText,
+          normalized_text: connectionSentenceText,
+          raw_text_sha256: connectionSentenceHash,
+        }),
+        JSON.stringify({
+          source_id: "official-project-connection-source",
+          block_id: "p001_b0003",
+          page_number: 1,
+          raw_text: servedScopeText,
+          normalized_text: servedScopeText,
+          raw_text_sha256: servedScopeHash,
+        }),
+      ].join("\n") + "\n");
+      const connectionCorrection = {
+        prior_claim_path: "source_findings.exact_project_route_statement_found",
+        prior_claim_value: false,
+        supersedes_prior_finding: true,
+        source_id: "official-project-connection-source",
+        source_url: "https://www.nyc.gov/project-connection-source",
+        source_artifact: "source.html",
+        source_content_sha256: connectionSourceHash,
+        evidence_refs: [
+          { block_id: "p001_b0001", page_number: 1, text_sha256: servedContextHash },
+          { block_id: "p001_b0002", page_number: 1, text_sha256: connectionSentenceHash },
+          { block_id: "p001_b0003", page_number: 1, text_sha256: servedScopeHash },
+        ],
+        corrected_finding: {
+          candidate_route_id: "Q1",
+          finding_kind: "positive_project_connection_nonterminal",
+          supported_scope: "project_connection_service_only",
+          unsupported_bindings: packet.unresolved_bindings,
+          finding_summary:
+            "The route is named only as a connection to the project, not as a route served by the lane.",
+        },
+        remaining_unresolved_bindings: packet.unresolved_bindings,
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      writeFileSync(join(acquiredChecksDir, "acquired-source-checks.json"), JSON.stringify({
+        sources: [
+          ...acquiredSources,
+          {
+            url: "https://www.nyc.gov/correction-source",
+            content_sha256: correctionSourceHash,
+            retrieval_status: "acquired",
+          },
+          {
+            url: "https://www.nyc.gov/project-connection-source",
+            content_sha256: connectionSourceHash,
+            retrieval_status: "acquired",
+          },
+        ],
+      }));
+      const connectionSupplementalSearch = {
+        ...correctionSupplementalSearch,
+        urls_inspected: [
+          ...correctionSupplementalSearch.urls_inspected,
+          "https://www.nyc.gov/project-connection-source",
+        ].sort(),
+        retrievals: [...correctionSupplementalSearch.retrievals, {
+          category: "official_nyc_dot_lane_project",
+          url: "https://www.nyc.gov/project-connection-source",
+          retrieved_on: "2026-07-23",
+          status: "acquired",
+          sha256: connectionSourceHash,
+        }],
+      };
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...connectionSupplementalSearch,
+          finding_corrections: [connectionCorrection],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir)).not.toThrow();
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...connectionSupplementalSearch,
+          finding_corrections: [{
+            ...connectionCorrection,
+            evidence_refs: [
+              { block_id: "p001_b0001", page_number: 1, text_sha256: servedContextHash },
+              { block_id: "p001_b0003", page_number: 1, text_sha256: servedScopeHash },
+            ],
+          }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("does not bind the exact route to its typed project context");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...connectionSupplementalSearch,
+          finding_corrections: [{
+            ...connectionCorrection,
+            corrected_finding: {
+              ...connectionCorrection.corrected_finding,
+              finding_kind: "positive_project_intersection_attribution_nonterminal",
+            },
+          }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("does not bind the exact route to its typed project context");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...connectionSupplementalSearch,
+          finding_corrections: [{
+            ...connectionCorrection,
+            source_artifact: "source.pdf",
+          }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("source artifact does not match its hash field");
       const otherExtentContextText = "Served by Q1 express bus routes in the separate corridor.";
       const otherExtentContextHash = `sha256:${createHash("sha256").update(otherExtentContextText).digest("hex")}`;
       writeFileSync(join(stagedSourceDir, "metadata.json"), JSON.stringify({
@@ -737,7 +889,7 @@ describe("bus-lane identity exact-date targeting", () => {
         },
       } as unknown as JsonValue));
       expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
-        .toThrow("does not bind the exact route to project-intersection context");
+        .toThrow("does not bind the exact route to its typed project context");
       writeFileSync(join(stagedSourceDir, "blocks.jsonl"), `${JSON.stringify({
         source_id: "official-project-source",
         block_id: "p010_p0001",
@@ -763,7 +915,7 @@ describe("bus-lane identity exact-date targeting", () => {
         },
       } as unknown as JsonValue));
       expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
-        .toThrow("staged source metadata, URL, or PDF hash does not resolve");
+        .toThrow("staged source metadata, URL, or content hash does not resolve");
       writeFileSync(join(receiptDir, "draft.json"), stableJson({
         ...receipt,
         supplemental_search: {

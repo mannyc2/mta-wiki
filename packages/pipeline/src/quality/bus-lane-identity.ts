@@ -1233,10 +1233,19 @@ export function validateBindingReceiptDrafts(
       for (const [index, value] of supplemental.finding_corrections.entries()) {
         const correctionPath = `${receiptPath}.supplemental_search.finding_corrections[${index}]`;
         const correction = object(value, correctionPath);
+        const hasLegacyPdfHash = correction.source_pdf_sha256 !== undefined;
+        const hasContentHash = correction.source_content_sha256 !== undefined;
+        if (hasLegacyPdfHash === hasContentHash) {
+          throw new Error(`${correctionPath}: correction requires exactly one source content hash`);
+        }
         exactKeys(correction, new Set([
           "authorizes_cross_product", "authorizes_study", "corrected_finding", "evidence_refs",
           "prior_claim_path", "prior_claim_value", "remaining_unresolved_bindings", "source_id",
-          "source_pdf_sha256", "source_url", "supersedes_prior_finding",
+          ...(hasLegacyPdfHash
+            ? ["source_pdf_sha256"]
+            : ["source_artifact", "source_content_sha256"]),
+          "source_url",
+          "supersedes_prior_finding",
         ]), correctionPath);
         const priorClaimPath = nonempty(correction.prior_claim_path, `${correctionPath}.prior_claim_path`);
         const priorClaim = priorClaimPath.split(".").reduce<unknown>((current, segment) => {
@@ -1253,26 +1262,37 @@ export function validateBindingReceiptDrafts(
           throw new Error(`${correctionPath}: correction source id is not a compact staged-source id`);
         }
         const sourceUrl = nonempty(correction.source_url, `${correctionPath}.source_url`);
-        const sourcePdfSha256 = nonempty(correction.source_pdf_sha256,
-          `${correctionPath}.source_pdf_sha256`);
-        if (!/^[a-f0-9]{64}$/u.test(sourcePdfSha256)) {
-          throw new Error(`${correctionPath}: correction source PDF hash is invalid`);
+        const sourceContentSha256 = nonempty(
+          hasLegacyPdfHash ? correction.source_pdf_sha256 : correction.source_content_sha256,
+          hasLegacyPdfHash
+            ? `${correctionPath}.source_pdf_sha256`
+            : `${correctionPath}.source_content_sha256`,
+        );
+        if (!/^[a-f0-9]{64}$/u.test(sourceContentSha256)) {
+          throw new Error(`${correctionPath}: correction source content hash is invalid`);
+        }
+        const sourceArtifact = hasLegacyPdfHash
+          ? "source.pdf"
+          : nonempty(correction.source_artifact, `${correctionPath}.source_artifact`);
+        if ((hasLegacyPdfHash && correction.source_artifact !== undefined) ||
+            (!hasLegacyPdfHash && sourceArtifact !== "source.html")) {
+          throw new Error(`${correctionPath}: correction source artifact does not match its hash field`);
         }
         const stagedSourceDir = resolve(rootDir, "raw", "sources", sourceId);
         const metadataPath = join(stagedSourceDir, "metadata.json");
-        const sourcePdfPath = join(stagedSourceDir, "source.pdf");
+        const sourceArtifactPath = join(stagedSourceDir, sourceArtifact);
         const sourceBlocksPath = join(stagedSourceDir, "blocks.jsonl");
-        if (![metadataPath, sourcePdfPath, sourceBlocksPath].every(existsSync)) {
-          throw new Error(`${correctionPath}: correction source is not a fully staged PDF source`);
+        if (![metadataPath, sourceArtifactPath, sourceBlocksPath].every(existsSync)) {
+          throw new Error(`${correctionPath}: correction source is not fully staged`);
         }
         const metadata = object(JSON.parse(readFileSync(metadataPath, "utf8")), metadataPath);
         const metadataSha = typeof metadata.sha256 === "string" ? metadata.sha256.replace(/^sha256:/u, "") : null;
         if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
-            metadataSha !== sourcePdfSha256 || hash(readFileSync(sourcePdfPath)) !== sourcePdfSha256 ||
+            metadataSha !== sourceContentSha256 || hash(readFileSync(sourceArtifactPath)) !== sourceContentSha256 ||
             !supplementalUrls.includes(sourceUrl) ||
             !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
-              retrieval.sha256 === sourcePdfSha256)) {
-          throw new Error(`${correctionPath}: staged source metadata, URL, or PDF hash does not resolve`);
+              retrieval.sha256 === sourceContentSha256)) {
+          throw new Error(`${correctionPath}: staged source metadata, URL, or content hash does not resolve`);
         }
         const stagedBlocks = readFileSync(sourceBlocksPath, "utf8").split(/\r?\n/u).filter(Boolean)
           .map((line, blockIndex) => object(JSON.parse(line), `${sourceBlocksPath}:${blockIndex + 1}`));
@@ -1285,7 +1305,12 @@ export function validateBindingReceiptDrafts(
           throw new Error(`${correctionPath}: correction requires staged source-block evidence`);
         }
         const citedBlockIds = new Set<string>();
-        const citedPageWindows = new Map<number, { positions: number[]; route: boolean; tokens: Set<string> }>();
+        const citedPageWindows = new Map<number, {
+          blocks: { position: number; route: boolean; tokens: Set<string> }[];
+          positions: number[];
+          route: boolean;
+          tokens: Set<string>;
+        }>();
         for (const [refIndex, refValue] of correction.evidence_refs.entries()) {
           const refPath = `${correctionPath}.evidence_refs[${refIndex}]`;
           const ref = object(refValue, refPath);
@@ -1302,18 +1327,38 @@ export function validateBindingReceiptDrafts(
           const blockTokens = String(block.raw_text ?? "").toUpperCase()
             .split(/[^A-Z0-9+]+/u).filter(Boolean);
           const pageNumber = Number(block.page_number);
-          const pageWindow = citedPageWindows.get(pageNumber) ?? { positions: [], route: false, tokens: new Set<string>() };
-          pageWindow.positions.push(blockIndexById.get(blockId)!);
+          const position = blockIndexById.get(blockId)!;
+          const candidateRouteToken = row.gtfs_route_id.toUpperCase();
+          const route = blockTokens.includes(candidateRouteToken) ||
+            (candidateRouteToken.endsWith("+") && blockTokens.some((token, tokenIndex) =>
+              token === candidateRouteToken.slice(0, -1) && blockTokens[tokenIndex + 1] === "SBS"));
+          const pageWindow = citedPageWindows.get(pageNumber) ?? {
+            blocks: [], positions: [], route: false, tokens: new Set<string>(),
+          };
+          pageWindow.blocks.push({ position, route, tokens: new Set(blockTokens) });
+          pageWindow.positions.push(position);
           for (const token of blockTokens) pageWindow.tokens.add(token);
-          if (blockTokens.includes(row.gtfs_route_id.toUpperCase())) pageWindow.route = true;
+          if (route) pageWindow.route = true;
           citedPageWindows.set(pageNumber, pageWindow);
         }
         const boundedProjectIntersectionWindow = [...citedPageWindows.values()].some((window) =>
           window.route && window.tokens.has("PROJECT") && window.tokens.has("INTERSECTION") &&
           Math.max(...window.positions) - Math.min(...window.positions) <= 8);
-        if (!boundedProjectIntersectionWindow) {
-          throw new Error(`${correctionPath}: staged source-block evidence does not bind the exact route to project-intersection context`);
-        }
+        const boundedProjectConnectionWindow = [...citedPageWindows.values()].some((window) => {
+          const literalConnectionSentence = window.blocks.some((block) =>
+            block.route &&
+            block.tokens.has("OFFSET") &&
+            block.tokens.has("BUS") &&
+            block.tokens.has("LANE") &&
+            block.tokens.has("PROVIDE") &&
+            block.tokens.has("CONNECTIONS") &&
+            block.tokens.has("SERVICES"));
+          return literalConnectionSentence &&
+            window.tokens.has("PROJECT") &&
+            window.tokens.has("SERVES") &&
+            window.tokens.has("ROUTES") &&
+            Math.max(...window.positions) - Math.min(...window.positions) <= 8;
+        });
         const correctedFinding = object(correction.corrected_finding, `${correctionPath}.corrected_finding`);
         exactKeys(correctedFinding, new Set([
           "candidate_route_id", "finding_kind", "finding_summary", "supported_scope", "unsupported_bindings",
@@ -1325,9 +1370,18 @@ export function validateBindingReceiptDrafts(
         const remainingUnresolved = stringArray(correction.remaining_unresolved_bindings,
           `${correctionPath}.remaining_unresolved_bindings`, false).sort();
         nonempty(correctedFinding.finding_summary, `${correctionPath}.corrected_finding.finding_summary`);
+        const isIntersectionAttribution =
+          correctedFinding.finding_kind === "positive_project_intersection_attribution_nonterminal" &&
+          correctedFinding.supported_scope === "project_intersection_attribution_only";
+        const isProjectConnection =
+          correctedFinding.finding_kind === "positive_project_connection_nonterminal" &&
+          correctedFinding.supported_scope === "project_connection_service_only";
+        if ((isIntersectionAttribution && !boundedProjectIntersectionWindow) ||
+            (isProjectConnection && !boundedProjectConnectionWindow) ||
+            (!isIntersectionAttribution && !isProjectConnection)) {
+          throw new Error(`${correctionPath}: staged source-block evidence does not bind the exact route to its typed project context`);
+        }
         if (correctedRoute !== row.gtfs_route_id ||
-            correctedFinding.finding_kind !== "positive_project_intersection_attribution_nonterminal" ||
-            correctedFinding.supported_scope !== "project_intersection_attribution_only" ||
             stableJson(correctedUnsupported) !== stableJson([...receiptUnresolved].sort()) ||
             stableJson(remainingUnresolved) !== stableJson([...receiptUnresolved].sort()) ||
             correction.authorizes_study !== false || correction.authorizes_cross_product !== false ||
