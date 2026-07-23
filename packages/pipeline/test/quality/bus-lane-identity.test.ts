@@ -1,6 +1,6 @@
 import { describe, expect, it } from "bun:test";
 import { createHash } from "node:crypto";
-import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { stableJson } from "@mta-wiki/db/stable-json";
@@ -15,6 +15,8 @@ import {
   validateOccurrenceCreatedRows,
   validateReviewedReceiptRefs,
   type BusLaneIdentityDecision,
+  type BusLaneIdentityRow,
+  type BusLaneResearchPacket,
 } from "../../src/quality/bus-lane-identity";
 import type { BusLaneFeature } from "../../src/reference/bus-lanes";
 import {
@@ -5674,6 +5676,301 @@ describe("bus-lane identity exact-date targeting", () => {
       } finally {
         rmSync(rootDir, { recursive: true, force: true });
       }
+    }
+  });
+
+  it("closes Archer/Jamaica only with corrected ordered two-group nonauthorizing targets", () => {
+    const repoRoot = join(import.meta.dir, "../../../..");
+    const packetPath = join(repoRoot,
+      "data/quality/acquisition/packets/bus-lane/packets/150b4ac6b440ebc511b5c83f.json");
+    const ledgerPath = join(repoRoot, "data/quality/operational-reference/bus-lane-identity-ledger.jsonl");
+    const priorArtifact =
+      "data/quality/relationship-integrity/bus-lane-acquisition/shards/queens/receipts.jsonl";
+    const priorReceiptId = "queens-acquisition:aa191b2e97cfc50662d1d46a";
+    const priorJournalPath = join(repoRoot, priorArtifact);
+    const row = readFileSync(ledgerPath, "utf8").split(/\r?\n/u).filter(Boolean)
+      .map((line) => JSON.parse(line) as BusLaneIdentityRow)
+      .find((candidateRow) => candidateRow.candidate_id === "study-event-v2:42a27ad7049ad2db9beea833")!;
+    const packet = JSON.parse(readFileSync(packetPath, "utf8")) as BusLaneResearchPacket;
+    const priorLine = readFileSync(priorJournalPath, "utf8").split(/\r?\n/u).filter(Boolean)
+      .find((line) => (JSON.parse(line) as { receipt_id?: string }).receipt_id === priorReceiptId)!;
+    type PriorAttempt = {
+      category: string;
+      query: string;
+      query_status: string;
+      urls_checked: string[];
+      retrievals: { id: string; retrieved_on: string; sha256: string; status: string }[];
+    };
+    const prior = JSON.parse(priorLine) as {
+      researched_on: string;
+      acquisition_attempts: PriorAttempt[];
+      claim_results: Record<string, unknown>;
+    };
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-archer-jamaica-"));
+    const receiptDir = join(rootDir, "receipts");
+    const tempPriorPath = join(rootDir, priorArtifact);
+    const sourceRoot = join(rootDir, "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22");
+    const acquiredChecksPath = join(rootDir,
+      "data/quality/relationship-integrity/bus-lane-acquisition/shards/queens/acquired-source-checks.json");
+    mkdirSync(receiptDir, { recursive: true });
+    mkdirSync(join(rootDir, priorArtifact, ".."), { recursive: true });
+    mkdirSync(sourceRoot, { recursive: true });
+    mkdirSync(join(acquiredChecksPath, ".."), { recursive: true });
+    writeFileSync(tempPriorPath, `${priorLine}\n`);
+    copyFileSync(join(repoRoot,
+      "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/metadata.json"),
+    join(sourceRoot, "metadata.json"));
+    copyFileSync(join(repoRoot,
+      "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/source.geojson"),
+    join(sourceRoot, "source.geojson"));
+    writeFileSync(acquiredChecksPath, JSON.stringify({ sources: [{
+      id: "jamaica_archer_start_press",
+      url: "https://www.nyc.gov/html/dot/html/pr2021/pr21-035.shtml",
+      content_sha256: "02cedeec3dda3e9dd29a068af770b8d7bdd032423dceff8a0977971e24a44781",
+      retrieval_status: "acquired",
+      note: "NYC DOT identifies the Jamaica and Archer busway extents and installation timing but not an exhaustive route list.",
+    }] }));
+    const groupAccounting = (candidatePacket: BusLaneResearchPacket, candidateRow: BusLaneIdentityRow) =>
+      candidatePacket.what_is_known.target_groups.map((group) => ({
+        lane_group_id: group.lane_group_id,
+        geometry_scope: group.geometry_scope,
+        feature_row_count: group.feature_matches.length,
+        feature_key_count: new Set(group.feature_matches.map((match) => match.feature_key)).size,
+        feature_id_count: new Set(group.feature_matches.map((match) => match.feature_id)).size,
+        directions: [...new Set(group.feature_matches.map((match) => match.direction))].sort(),
+        matched_dates: [...new Set(group.feature_matches.map((match) => match.matched_date))].sort(),
+        matched_token_literals:
+          [...new Set(group.feature_matches.map((match) => match.matched_token_literal))].sort(),
+        open_dates_literals: [...new Set(group.feature_matches.map((match) => match.open_dates_literal))].sort(),
+        named_sbs_routes: [...new Set(group.feature_matches.flatMap((match) => match.sbs_routes))].sort(),
+        candidate_route_named_feature_rows: group.feature_matches.flatMap((match) =>
+          match.sbs_routes.includes(candidateRow.gtfs_route_id)
+            ? [{ feature_key: match.feature_key, feature_id: match.feature_id, direction: match.direction }]
+            : []),
+        feature_rows: group.feature_matches.map((match) => ({
+          feature_key: match.feature_key,
+          feature_id: match.feature_id,
+          direction: match.direction,
+          matched_date: match.matched_date,
+          matched_token_literal: match.matched_token_literal,
+          open_dates_literal: match.open_dates_literal,
+          sbs_routes: match.sbs_routes,
+        })),
+      }));
+    const targetFor = (candidatePacket: BusLaneResearchPacket, candidateRow: BusLaneIdentityRow) => {
+      const groups = candidatePacket.what_is_known.target_groups;
+      const matches = groups.flatMap((group) => group.feature_matches);
+      return {
+        directions: [...new Set(matches.map((match) => match.direction))].sort(),
+        feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+        feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+        feature_row_count: matches.length,
+        feature_rows: matches.map((match) => ({
+          feature_key: match.feature_key, feature_id: match.feature_id, direction: match.direction,
+        })),
+        geometry_scopes: [...new Set(groups.map((group) => group.geometry_scope))].sort(),
+        lane_group_ids: groups.map((group) => group.lane_group_id),
+        matched_date: candidateRow.implementation_date,
+        named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+        open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+        lane_groups: groupAccounting(candidatePacket, candidateRow),
+      };
+    };
+    const correctionFor = (candidatePacket: BusLaneResearchPacket, candidateRow: BusLaneIdentityRow) => ({
+      correction_kind: "prior_jamaica_only_accounting_superseded_by_current_two_group_target",
+      prior_claim_path: "source_findings.official_lane_matching_record_count",
+      prior_claim_value: 31,
+      supersedes_prior_finding: true,
+      corrected_finding: {
+        finding_summary: "The prior 31-row finding accounts only for Jamaica Avenue and is not exhaustive of the current target, which adds the separate seven-row Archer Avenue exact-date group.",
+        prior_accounted_lane_group_ids: ["QNS|JAMAICA AVENUE"],
+        prior_feature_row_count: 31,
+        current_lane_group_ids: ["QNS|ARCHER AVENUE", "QNS|JAMAICA AVENUE"],
+        current_feature_row_count: 38,
+        added_lane_group_id: "QNS|ARCHER AVENUE",
+        added_feature_row_count: 7,
+        current_target_groups_sha256: createHash("sha256")
+          .update(stableJson(candidateRow.onset_evidence.target_groups)).digest("hex"),
+      },
+      evidence: {
+        candidate_fingerprint: candidateRow.candidate_fingerprint,
+        ledger_id: candidateRow.ledger_id,
+        packet_id: candidatePacket.packet_id,
+        lane_snapshot_id: candidateRow.onset_evidence.lane_snapshot_id,
+        source_id: "nyc_dot_bus_lanes_local_streets_2026_07_22",
+        source_artifact: "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/source.geojson",
+        source_sha256: "e09e001191c53799936884f4e8311873a03bf9ff4f38e1f0b86af4ba465b6ef5",
+      },
+      remaining_unresolved_bindings: ["attribution", "direction", "feature_extent", "phase", "traversal"],
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    const projectContext = {
+      finding_kind: "paired_corridor_extent_and_launch_context_nonterminal",
+      source_id: "jamaica_archer_start_press",
+      source_url: "https://www.nyc.gov/html/dot/html/pr2021/pr21-035.shtml",
+      source_content_sha256: "02cedeec3dda3e9dd29a068af770b8d7bdd032423dceff8a0977971e24a44781",
+      supported_lane_group_ids: ["QNS|ARCHER AVENUE", "QNS|JAMAICA AVENUE"],
+      supported_launch_date: "2021-10-24",
+      route_inventory_exhaustive: false,
+      candidate_route_bound: false,
+      registry_named_sbs_routes: ["Q25", "Q44"],
+      candidate_route_named_sbs_intersection: [],
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    };
+    const rationale = "The immutable Queens acquisition search preserved a 31-row Jamaica Avenue-only accounting and found no authoritative exact Q86 route-treatment binding. Current deterministic target reconstruction corrects that accounting to the exact paired 38-row target: seven ordered eastbound Archer Avenue rows (seven keys and IDs, mixed-date feature union) and 31 ordered Jamaica Avenue rows (31 keys, 21 IDs, eastbound and westbound, coextensive lane group), all on 2021-10-24. The acquired NYC DOT launch source supports the paired corridor extents and launch timing but explicitly does not provide an exhaustive route list. Registry SBS fields name Q25/Q44 on Archer Avenue and Q44 on Jamaica Avenue; none names Q86. The historical schedule dossier is unavailable. Attribution, direction, feature extent, phase, and traversal remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.";
+    const urls = [...new Set(prior.acquisition_attempts.flatMap((attempt) => attempt.urls_checked))].sort();
+    const receiptFor = (candidateRow: BusLaneIdentityRow, candidatePacket: BusLaneResearchPacket) => ({
+      schema_version: 1,
+      receipt_id: "binding-archer-jamaica-q86",
+      receipt_kind: "binding_absent_after_search",
+      candidate_id: candidateRow.candidate_id,
+      candidate_fingerprint: candidateRow.candidate_fingerprint,
+      gtfs_route_id: candidateRow.gtfs_route_id,
+      implementation_date: candidateRow.implementation_date,
+      gap_ids: [candidateRow.ledger_id],
+      searched_at: prior.researched_on,
+      operator: "fixture-reviewer",
+      candidate_urls: [],
+      disposition: "binding_absent_after_search",
+      missing_binding: candidatePacket.missing_binding,
+      unresolved_bindings: candidatePacket.unresolved_bindings,
+      target: targetFor(candidatePacket, candidateRow),
+      prior_receipt: candidatePacket.what_is_known.prior_acquisition_receipt,
+      finding_corrections: [correctionFor(candidatePacket, candidateRow)],
+      project_context: projectContext,
+      rationale,
+      search: {
+        exact_queries: prior.acquisition_attempts.map(({ category, query, query_status }) =>
+          ({ category, query, query_status })),
+        domains: [...new Set(urls.map((url) => new URL(url).hostname))].sort(),
+        urls_inspected: urls,
+        retrievals: prior.acquisition_attempts.flatMap((attempt) => attempt.retrievals.map((retrieval) =>
+          ({ category: attempt.category, ...retrieval }))),
+        disposition: "binding_absent_after_search",
+      },
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    const validate = (
+      draft: Record<string, unknown>,
+      candidateRow: BusLaneIdentityRow = row,
+      candidatePacket: BusLaneResearchPacket = packet,
+    ) => {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+      return () => validateBindingReceiptDrafts([candidateRow], [candidatePacket], receiptDir, rootDir);
+    };
+    const withGroups = (groups: BusLaneResearchPacket["what_is_known"]["target_groups"]) => {
+      const candidateRow = { ...row, onset_evidence: { ...row.onset_evidence, target_groups: groups } };
+      const candidatePacket = {
+        ...packet,
+        what_is_known: { ...packet.what_is_known, target_groups: groups },
+      };
+      return { candidateRow, candidatePacket, receipt: receiptFor(candidateRow, candidatePacket) };
+    };
+    try {
+      const receipt = receiptFor(row, packet);
+      expect(receipt.target).toMatchObject({
+        lane_group_ids: ["QNS|ARCHER AVENUE", "QNS|JAMAICA AVENUE"],
+        feature_row_count: 38,
+        directions: ["EB", "WB"],
+        named_sbs_routes: ["Q25", "Q44"],
+      });
+      expect(receipt.target.feature_keys).toHaveLength(38);
+      expect(receipt.target.feature_ids).toHaveLength(28);
+      expect(receipt.target.lane_groups.map((group) => [
+        group.lane_group_id, group.feature_row_count, group.feature_key_count, group.feature_id_count,
+        group.candidate_route_named_feature_rows.length,
+      ])).toEqual([
+        ["QNS|ARCHER AVENUE", 7, 7, 7, 0],
+        ["QNS|JAMAICA AVENUE", 31, 31, 21, 0],
+      ]);
+      expect(validate(receipt)).not.toThrow();
+      expect(validate({ ...receipt, finding_corrections: [] }))
+        .toThrow("Archer/Jamaica absence contract does not match the exact candidate");
+      expect(validate({ ...receipt, project_context: { ...projectContext, candidate_route_bound: true } }))
+        .toThrow("Archer/Jamaica absence contract does not match the exact candidate");
+      expect(validate({ ...receipt, target: { ...receipt.target,
+        lane_groups: [...receipt.target.lane_groups].reverse() } }))
+        .toThrow("Archer/Jamaica absence contract does not match the exact candidate");
+
+      const swapped = withGroups([
+        packet.what_is_known.target_groups[1]!, packet.what_is_known.target_groups[0]!,
+      ]);
+      expect(validate(swapped.receipt, swapped.candidateRow, swapped.candidatePacket))
+        .toThrow("Archer/Jamaica absence contract does not match the exact candidate");
+      const removed = withGroups([packet.what_is_known.target_groups[1]!]);
+      expect(validate(removed.receipt, removed.candidateRow, removed.candidatePacket))
+        .toThrow("Archer/Jamaica absence contract does not match the exact candidate");
+      const reorderedArcher = {
+        ...packet.what_is_known.target_groups[0]!,
+        feature_matches: [
+          packet.what_is_known.target_groups[0]!.feature_matches[1]!,
+          packet.what_is_known.target_groups[0]!.feature_matches[0]!,
+          ...packet.what_is_known.target_groups[0]!.feature_matches.slice(2),
+        ],
+      };
+      const reordered = withGroups([reorderedArcher, packet.what_is_known.target_groups[1]!]);
+      expect(validate(reordered.receipt, reordered.candidateRow, reordered.candidatePacket))
+        .toThrow("Archer/Jamaica absence contract does not match the exact candidate");
+      const retokenedArcher = {
+        ...packet.what_is_known.target_groups[0]!,
+        feature_matches: packet.what_is_known.target_groups[0]!.feature_matches.map((match, index) =>
+          index === 0 ? { ...match, matched_token_literal: "10/25/2021" } : match),
+      };
+      const retokened = withGroups([retokenedArcher, packet.what_is_known.target_groups[1]!]);
+      expect(validate(retokened.receipt, retokened.candidateRow, retokened.candidatePacket))
+        .toThrow("Archer/Jamaica absence contract does not match the exact candidate");
+      const injectedArcher = {
+        ...packet.what_is_known.target_groups[0]!,
+        feature_matches: packet.what_is_known.target_groups[0]!.feature_matches.map((match, index) =>
+          index === 0 ? { ...match, sbs_routes: [...match.sbs_routes, "Q86"] } : match),
+      };
+      const injected = withGroups([injectedArcher, packet.what_is_known.target_groups[1]!]);
+      expect(validate(injected.receipt, injected.candidateRow, injected.candidatePacket))
+        .toThrow("Archer/Jamaica absence contract does not match the exact candidate");
+
+      const noTraversalRefs = packet.what_is_known.dossier_refs.map((ref) => ({
+        ...ref, path_source: "gtfs_shape" as const, verdict_class: "no_traversal" as const,
+      }));
+      const dossierRow = { ...row, dossier_refs: noTraversalRefs };
+      const dossierPacket = {
+        ...packet,
+        what_is_known: {
+          ...packet.what_is_known,
+          dossier_refs: noTraversalRefs,
+          dossier_summary: {
+            counts_by_path_source: { gtfs_shape: 1, historical_schedule_timepoint_pattern: 0, unavailable: 0 },
+            counts_by_reason: { historical_schedule_unavailable_pre_2023: 1 },
+            counts_by_verdict: {
+              geometry_ambiguous: 0, no_traversal: 1, traversal_confirmed: 0, traversal_marginal: 0,
+            },
+            row_count: 1,
+            target_row_count: 0,
+          },
+        },
+      };
+      expect(validate(receiptFor(dossierRow, dossierPacket), dossierRow, dossierPacket))
+        .toThrow("Archer/Jamaica absence contract does not match the exact candidate");
+
+      const tamperedPrior = {
+        ...prior,
+        claim_results: { ...prior.claim_results, operational_occurrence_identity_proved: true },
+      };
+      const tamperedPriorLine = stableJson(tamperedPrior as unknown as JsonValue);
+      const tamperedPriorSha = createHash("sha256").update(tamperedPriorLine).digest("hex");
+      writeFileSync(tempPriorPath, `${tamperedPriorLine}\n`);
+      const tamperedPointer = { ...row.prior_acquisition_receipt, row_sha256: tamperedPriorSha };
+      const tamperedRow = { ...row, prior_acquisition_receipt: tamperedPointer };
+      const tamperedPacket = { ...packet, what_is_known: {
+        ...packet.what_is_known, prior_acquisition_receipt: tamperedPointer,
+      } };
+      expect(validate(receiptFor(tamperedRow, tamperedPacket), tamperedRow, tamperedPacket))
+        .toThrow("Archer/Jamaica absence contract does not match the exact candidate");
+      writeFileSync(tempPriorPath, `${priorLine}\n`);
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
     }
   });
 

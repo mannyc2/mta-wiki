@@ -586,6 +586,119 @@ const BATTERY_PLACE_CROSS_SHARD_CONTEXT_RECEIPT = {
   sourceId: "better_buses_action_plan_2019",
   sourceSha256: "68ac9e1aaf17a033577688e241e586ac101581ef0e2ba0cc3854196f9323f1c1",
 };
+const ARCHER_JAMAICA_PRIOR_RECEIPTS = new Map([
+  ["Q20", {
+    receiptId: "queens-acquisition:b5f3291ab3709664296762e9",
+    rowSha256: "2b0cafee143fae6e9b9d11221bafd3e5bab73f57c0a5f59b62303f8850e83c94",
+    routePageSha256: "9940e19d66151a84e228be63f2363c138fccbb5eceb3784ad804461ecb1fd9cc",
+  }],
+  ["Q4", {
+    receiptId: "queens-acquisition:9fa5470c7a3a9b8a29adf771",
+    rowSha256: "839ae849200c822081b7a289ef6f898d3821a3e1cdcad75955eaf0930a416a11",
+    routePageSha256: "7fc78e28e22268305a2eb180d4b93c04d61571b91419bea97eb503e02c78fab8",
+  }],
+  ["Q41", {
+    receiptId: "queens-acquisition:a6038f83ce0dc03bb9f41d63",
+    rowSha256: "91ec4643200ab64d42f0e22062c0ff2c84369ea64b15427d963743681a7cc653",
+    routePageSha256: "ecd48270a32883fb21d9a665929ad6f72cf30735e78fc8fa29be0a60c3c3e104",
+  }],
+  ["Q42", {
+    receiptId: "queens-acquisition:4564672720a0709a0dee5b76",
+    rowSha256: "e15e29d831834c94af3c562f0d4e189cc0d99491787881341fe8990ebd2721d4",
+    routePageSha256: "f2ce90db208fc87a71a962a140816703767e811d169997689982c57bf9bf5e14",
+  }],
+  ["Q5", {
+    receiptId: "queens-acquisition:0bfda271c4529309d8b20aea",
+    rowSha256: "18c71c663579585b24b59a2a78e2a9c0eb5b4e7ae04183d5f356b5905e7ac3b5",
+    routePageSha256: "33e21ac5b74473a3bde5e801a9508c146935facaa40220fdaba15e96120ae251",
+  }],
+  ["Q54", {
+    receiptId: "queens-acquisition:09ca6ca6a01d3522f6f191f8",
+    rowSha256: "c3ed5ace75b30b9d1ce14a78149df38de154869b66713b7eaa3fe0b46c2f6c21",
+    routePageSha256: "92ac33c29081dbdf26c2810a339e7be6527f9e98b3e3e7d684acc0f69f76bfc7",
+  }],
+  ["Q56", {
+    receiptId: "queens-acquisition:465dbfea1c5927a69c25c9f7",
+    rowSha256: "3f6d4672d85f98307cb80a047e3c889a38078369beb29f5982b062984474ee36",
+    routePageSha256: "1f7ce7b0384d170da775f3cee3e059c3d32fe3606892668ea87d55f21b92f00f",
+  }],
+  ["Q84", {
+    receiptId: "queens-acquisition:bfd0f30a688161d8eaaf3a18",
+    rowSha256: "71f5849092904c0e7b3fa00feeeeb9e4282c63e051be0cb015c8a43d95eee7f5",
+    routePageSha256: "d3a28890a23fc02cdd1d7008840bf13cd961f6ce679d3b9ce1848325202e35b6",
+  }],
+  ["Q85", {
+    receiptId: "queens-acquisition:c3f7d2500dabf5538c1d8b0a",
+    rowSha256: "f014284931b49ab41740c41260d99d45bacc1479c1128c78344197f5b6f5329c",
+    routePageSha256: "12e655ef82ca4c60c76f2d2cc7096e781f5ceb90f5ad347c96aed25c3772badb",
+  }],
+  ["Q86", {
+    receiptId: "queens-acquisition:aa191b2e97cfc50662d1d46a",
+    rowSha256: "f9e592d6c330c45e3db497052812ea3ff46a2c880352dcf31f0cba0231e39d75",
+    routePageSha256: "9d4ac395559bf66f2a6377cabcb62eb8acdee114174ad94e1f9f51707bf2df0a",
+  }],
+  ["Q87", {
+    receiptId: "queens-acquisition:5ce358199cdfdc43eeeb294c",
+    rowSha256: "850a8613b1c16c9ea63a5ff8fdeec7b79a96889741ff654cb98a2f4d292e5472",
+    routePageSha256: "3fe8578ea5f99905ac84327b3fffdf36ffc2f74f0e68661e4c1eaebbebaace37",
+  }],
+  ["Q89", {
+    receiptId: "queens-acquisition:1356ea30f4b41b642f4dfced",
+    rowSha256: "4cec78549b0cfec424885aad7afdcd8bd1dbe0e67d745fccc2dee0ff54f3bfe3",
+    routePageSha256: "dc3662f7adc2c795a02c3902972a66e5327e36b1ceff094c04084175ff79cd90",
+  }],
+]);
+const ARCHER_JAMAICA_FEATURE_ROWS = [
+  ["QNS|ARCHER AVENUE", "mixed_date_feature_union", "dot-lane-feature:195359f8c38040a67e8f23aa", "0057431", "EB", ["Q25", "Q44"]],
+  ["QNS|ARCHER AVENUE", "mixed_date_feature_union", "dot-lane-feature:6ef97942139e0d64bd4729ae", "0057428", "EB", ["Q25", "Q44"]],
+  ["QNS|ARCHER AVENUE", "mixed_date_feature_union", "dot-lane-feature:8d4500bf50b85609e7477057", "0057438", "EB", ["Q44"]],
+  ["QNS|ARCHER AVENUE", "mixed_date_feature_union", "dot-lane-feature:c39e9fb002e6b0eda9899d21", "0288673", "EB", ["Q25", "Q44"]],
+  ["QNS|ARCHER AVENUE", "mixed_date_feature_union", "dot-lane-feature:dbb00bdba23a3909a0fcc676", "0057434", "EB", ["Q44"]],
+  ["QNS|ARCHER AVENUE", "mixed_date_feature_union", "dot-lane-feature:f7158ac41603ccb2f6f30ec4", "0288410", "EB", ["Q25", "Q44"]],
+  ["QNS|ARCHER AVENUE", "mixed_date_feature_union", "dot-lane-feature:fcebf08ca24a4840e2a11226", "0288674", "EB", ["Q25", "Q44"]],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:069ca4d161e2090eaaf575a6", "0057433", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:0c2f7697f5f14c4d33efa026", "0112927", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:143e74909b737258f47318a3", "0060077", "EB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:1c844bc864c69a505bb5634e", "0060226", "EB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:1feb16cfbfd9eb7b0791100a", "0057065", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:32f9dd39680ee25d04be3511", "0112925", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:34b8afa56c1cb7d04c07e36f", "0060232", "WB", ["Q44"]],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:3aafd9c701bd9ab1c25054b4", "0060097", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:41c5a8bb7200dfe790fd72f7", "0057259", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:4733c488a7ac15dfa96941cb", "0060082", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:5374fda104a1087162fe04ae", "0060096", "EB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:6a98cdb1df814a37578f7cb6", "0057433", "EB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:70ccd21d7281f795e1080c58", "0060080", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:71d71ff5e3926e2c8f2279ec", "0060080", "EB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:76bdb7ad3275837b142b44f9", "0057440", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:7b0fea0802c368c85b7253f6", "0057059", "EB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:8d830acbb7d75bd15532a952", "0060097", "EB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:8de7eba6a34ce784d7aad909", "0060232", "EB", ["Q44"]],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:a4f612d62e4fd946db57c01f", "0060082", "EB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:a58037dcd3187f9f460eba3e", "0057075", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:b58961803e5915ee3c14f2d1", "0060077", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:bb99e00eb408c66e650fe184", "0057440", "EB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:bc413df3e366e86d95c9f307", "0057254", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:c8b89ad188a4cff3c213fe97", "0057257", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:ce73f2d7750577b375a9a31c", "0060096", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:d37af8951a907a6d28d02456", "0060095", "EB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:d6fffe38bc635315cb68a932", "0057071", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:efa943802bb8fba6334b3e47", "0060226", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:efe93b604f0ebec556c8a601", "0060095", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:f0edc39b1370e05cec749e2a", "0057077", "WB", []],
+  ["QNS|JAMAICA AVENUE", "coextensive_with_lane_group", "dot-lane-feature:f9c58feb2eb2c32b37433260", "0112926", "WB", []],
+];
+const ARCHER_JAMAICA_PROJECT_CONTEXT = {
+  sourceId: "jamaica_archer_start_press",
+  url: "https://www.nyc.gov/html/dot/html/pr2021/pr21-035.shtml",
+  sha256: "02cedeec3dda3e9dd29a068af770b8d7bdd032423dceff8a0977971e24a44781",
+  note: "NYC DOT identifies the Jamaica and Archer busway extents and installation timing but not an exhaustive route list.",
+};
+const ARCHER_JAMAICA_CURRENT_SOURCE = {
+  sourceId: "nyc_dot_bus_lanes_local_streets_2026_07_22",
+  artifact: "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/source.geojson",
+  sha256: "e09e001191c53799936884f4e8311873a03bf9ff4f38e1f0b86af4ba465b6ef5",
+};
 
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
@@ -731,6 +844,92 @@ function isExactBatteryPlacePacketTarget(
       match.matched_token_literal === "06/10/2021" && match.open_dates_literal === "06/10/2021" &&
       match.sbs_routes.length === 0) &&
     stableJson(packet.unresolved_bindings) === stableJson(["attribution", "traversal"]);
+}
+
+function archerJamaicaGroupAccounting(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): Record<string, JsonValue>[] {
+  return packet.what_is_known.target_groups.map((group) => ({
+    lane_group_id: group.lane_group_id,
+    geometry_scope: group.geometry_scope,
+    feature_row_count: group.feature_matches.length,
+    feature_key_count: new Set(group.feature_matches.map((match) => match.feature_key)).size,
+    feature_id_count: new Set(group.feature_matches.map((match) => match.feature_id)).size,
+    directions: [...new Set(group.feature_matches.map((match) => match.direction))].sort(),
+    matched_dates: [...new Set(group.feature_matches.map((match) => match.matched_date))].sort(),
+    matched_token_literals: [...new Set(group.feature_matches.map((match) => match.matched_token_literal))].sort(),
+    open_dates_literals: [...new Set(group.feature_matches.map((match) => match.open_dates_literal))].sort(),
+    named_sbs_routes: [...new Set(group.feature_matches.flatMap((match) => match.sbs_routes))].sort(),
+    candidate_route_named_feature_rows: group.feature_matches.flatMap((match) =>
+      match.sbs_routes.includes(row.gtfs_route_id)
+        ? [{
+          feature_key: match.feature_key,
+          feature_id: match.feature_id,
+          direction: match.direction,
+        }]
+        : []),
+    feature_rows: group.feature_matches.map((match) => ({
+      feature_key: match.feature_key,
+      feature_id: match.feature_id,
+      direction: match.direction,
+      matched_date: match.matched_date,
+      matched_token_literal: match.matched_token_literal,
+      open_dates_literal: match.open_dates_literal,
+      sbs_routes: match.sbs_routes,
+    })),
+  }));
+}
+
+function isExactArcherJamaicaPacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const archerGroup = packet.what_is_known.target_groups[0];
+  const jamaicaGroup = packet.what_is_known.target_groups[1];
+  const dossierRef = packet.what_is_known.dossier_refs[0];
+  const featureRows = packet.what_is_known.target_groups.flatMap((group) =>
+    group.feature_matches.map((match) => [
+      group.lane_group_id,
+      group.geometry_scope,
+      match.feature_key,
+      match.feature_id,
+      match.direction,
+      match.sbs_routes,
+    ]));
+  if (!archerGroup || !jamaicaGroup || !dossierRef) return false;
+  return ARCHER_JAMAICA_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
+    row.implementation_date === "2021-10-24" &&
+    packet.missing_binding === "feature_extent" &&
+    packet.what_is_known.target_groups.length === 2 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    archerGroup.lane_group_id === "QNS|ARCHER AVENUE" &&
+    archerGroup.borough === "QNS" && archerGroup.facility === "Archer Avenue" &&
+    archerGroup.street === "ARCHER AVENUE" && archerGroup.geometry_scope === "mixed_date_feature_union" &&
+    jamaicaGroup.lane_group_id === "QNS|JAMAICA AVENUE" &&
+    jamaicaGroup.borough === "QNS" && jamaicaGroup.facility === "Jamaica Avenue" &&
+    jamaicaGroup.street === "JAMAICA AVENUE" && jamaicaGroup.geometry_scope === "coextensive_with_lane_group" &&
+    packet.what_is_known.target_groups.flatMap((group) => group.feature_matches).every((match) =>
+      match.matched_date === "2021-10-24" && match.matched_token_literal === "10/24/2021" &&
+      match.open_dates_literal === "10/24/2021" && !match.sbs_routes.includes(row.gtfs_route_id)) &&
+    stableJson(featureRows as JsonValue) === stableJson(ARCHER_JAMAICA_FEATURE_ROWS as JsonValue) &&
+    stableJson(packet.what_is_known.dossier_refs) === stableJson(row.dossier_refs) &&
+    packet.what_is_known.dossier_refs.length === 1 &&
+    dossierRef.candidate_target_match === false &&
+    dossierRef.direction === null && dossierRef.lane_group_id === null && dossierRef.path_identity === null &&
+    dossierRef.path_source === "unavailable" && dossierRef.reason === "historical_schedule_unavailable_pre_2023" &&
+    dossierRef.service_date === null && dossierRef.temporal_lag_days === null &&
+    dossierRef.verdict_class === "geometry_ambiguous" && dossierRef.stop_coordinate_coverage === 0 &&
+    dossierRef.overlap_miles === 0 && dossierRef.overlap_share === 0 && dossierRef.span_stop_ids.length === 0 &&
+    stableJson(packet.what_is_known.dossier_summary) === stableJson({
+      counts_by_path_source: { gtfs_shape: 0, historical_schedule_timepoint_pattern: 0, unavailable: 1 },
+      counts_by_reason: { historical_schedule_unavailable_pre_2023: 1 },
+      counts_by_verdict: { geometry_ambiguous: 1, no_traversal: 0, traversal_confirmed: 0, traversal_marginal: 0 },
+      row_count: 1,
+      target_row_count: 0,
+    }) &&
+    stableJson(packet.unresolved_bindings) ===
+      stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"]);
 }
 
 function isoReviewTime(value: unknown, path: string): string {
@@ -1579,6 +1778,16 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs)) {
       throw new Error(`${receiptPath}: Battery Place packet dossier does not preserve exact ledger evidence parity`);
     }
+    const archerJamaicaLedgerTarget = row.implementation_date === "2021-10-24" &&
+      ARCHER_JAMAICA_PRIOR_RECEIPTS.has(row.gtfs_route_id);
+    if (archerJamaicaLedgerTarget &&
+        stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
+      throw new Error(`${receiptPath}: Archer/Jamaica packet target does not preserve exact ledger occurrence parity`);
+    }
+    if (archerJamaicaLedgerTarget &&
+        stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs)) {
+      throw new Error(`${receiptPath}: Archer/Jamaica packet dossier does not preserve exact ledger evidence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -2034,6 +2243,152 @@ export function validateBindingReceiptDrafts(
           !exactCandidateQuery || receipt.authorizes_study !== false ||
           receipt.authorizes_cross_product !== false) {
         throw new Error(`${receiptPath}: Battery Place absence contract does not match the exact candidate`);
+      }
+    }
+    if (archerJamaicaLedgerTarget) {
+      const priorContract = ARCHER_JAMAICA_PRIOR_RECEIPTS.get(row.gtfs_route_id)!;
+      const priorCandidate = object(prior.candidate, `${receiptPath}.prior.candidate`);
+      const sourceFindings = object(prior.source_findings, `${receiptPath}.prior.source_findings`);
+      const priorOutcome = object(prior.outcome, `${receiptPath}.prior.outcome`);
+      const priorClaims = object(prior.claim_results, `${receiptPath}.prior.claim_results`);
+      const canonicalActions = object(prior.canonical_actions, `${receiptPath}.prior.canonical_actions`);
+      const routePage = object(sourceFindings.mta_route_page,
+        `${receiptPath}.prior.source_findings.mta_route_page`);
+      const expectedGroupAccounting = archerJamaicaGroupAccounting(packet, row);
+      const currentTargetGroupsSha256 = hash(stableJson(row.onset_evidence.target_groups));
+      const expectedCorrection = {
+        correction_kind: "prior_jamaica_only_accounting_superseded_by_current_two_group_target",
+        prior_claim_path: "source_findings.official_lane_matching_record_count",
+        prior_claim_value: 31,
+        supersedes_prior_finding: true,
+        corrected_finding: {
+          finding_summary: "The prior 31-row finding accounts only for Jamaica Avenue and is not exhaustive of the current target, which adds the separate seven-row Archer Avenue exact-date group.",
+          prior_accounted_lane_group_ids: ["QNS|JAMAICA AVENUE"],
+          prior_feature_row_count: 31,
+          current_lane_group_ids: ["QNS|ARCHER AVENUE", "QNS|JAMAICA AVENUE"],
+          current_feature_row_count: 38,
+          added_lane_group_id: "QNS|ARCHER AVENUE",
+          added_feature_row_count: 7,
+          current_target_groups_sha256: currentTargetGroupsSha256,
+        },
+        evidence: {
+          candidate_fingerprint: row.candidate_fingerprint,
+          ledger_id: row.ledger_id,
+          packet_id: packet.packet_id,
+          lane_snapshot_id: row.onset_evidence.lane_snapshot_id,
+          source_id: ARCHER_JAMAICA_CURRENT_SOURCE.sourceId,
+          source_artifact: ARCHER_JAMAICA_CURRENT_SOURCE.artifact,
+          source_sha256: ARCHER_JAMAICA_CURRENT_SOURCE.sha256,
+        },
+        remaining_unresolved_bindings: ["attribution", "direction", "feature_extent", "phase", "traversal"],
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      const expectedProjectContext = {
+        finding_kind: "paired_corridor_extent_and_launch_context_nonterminal",
+        source_id: ARCHER_JAMAICA_PROJECT_CONTEXT.sourceId,
+        source_url: ARCHER_JAMAICA_PROJECT_CONTEXT.url,
+        source_content_sha256: ARCHER_JAMAICA_PROJECT_CONTEXT.sha256,
+        supported_lane_group_ids: ["QNS|ARCHER AVENUE", "QNS|JAMAICA AVENUE"],
+        supported_launch_date: "2021-10-24",
+        route_inventory_exhaustive: false,
+        candidate_route_bound: false,
+        registry_named_sbs_routes: ["Q25", "Q44"],
+        candidate_route_named_sbs_intersection: [],
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      const expectedRationale = `The immutable Queens acquisition search preserved a 31-row Jamaica Avenue-only accounting and found no authoritative exact ${row.gtfs_route_id} route-treatment binding. Current deterministic target reconstruction corrects that accounting to the exact paired 38-row target: seven ordered eastbound Archer Avenue rows (seven keys and IDs, mixed-date feature union) and 31 ordered Jamaica Avenue rows (31 keys, 21 IDs, eastbound and westbound, coextensive lane group), all on 2021-10-24. The acquired NYC DOT launch source supports the paired corridor extents and launch timing but explicitly does not provide an exhaustive route list. Registry SBS fields name Q25/Q44 on Archer Avenue and Q44 on Jamaica Avenue; none names ${row.gtfs_route_id}. The historical schedule dossier is unavailable. Attribution, direction, feature extent, phase, and traversal remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`;
+      const exactCandidateQuery = exactQueries.some((query) => {
+        if (query.category !== "official_mta_route_project") return false;
+        const tokens = query.query.toUpperCase().split(/[^A-Z0-9+]+/u).filter(Boolean);
+        return [row.gtfs_route_id, "JAMAICA", "AVENUE"].every((token) => tokens.includes(token));
+      });
+      const pressRetrieval = retrievals.some((retrieval) => {
+        const record = retrieval as Record<string, unknown>;
+        return retrieval.category === "official_nyc_dot_lane_project" &&
+          record.id === ARCHER_JAMAICA_PROJECT_CONTEXT.sourceId &&
+          record.sha256 === ARCHER_JAMAICA_PROJECT_CONTEXT.sha256 &&
+          record.status === "acquired";
+      });
+      const projectSource = acquiredSourceRecords.find((source) =>
+        source.id === ARCHER_JAMAICA_PROJECT_CONTEXT.sourceId);
+      const currentSourcePath = resolve(rootDir, ARCHER_JAMAICA_CURRENT_SOURCE.artifact);
+      const currentSourceMetadataPath = resolve(rootDir, "raw", "sources",
+        ARCHER_JAMAICA_CURRENT_SOURCE.sourceId, "metadata.json");
+      const currentSourceMetadata = existsSync(currentSourceMetadataPath)
+        ? object(JSON.parse(readFileSync(currentSourceMetadataPath, "utf8")), currentSourceMetadataPath)
+        : {};
+      const currentSourceMetadataSha = typeof currentSourceMetadata.sha256 === "string"
+        ? currentSourceMetadata.sha256.replace(/^sha256:/u, "")
+        : null;
+      const exactJamaicaIds = [
+        "0057059", "0057065", "0057071", "0057075", "0057077", "0057254", "0057257", "0057259",
+        "0057433", "0057440", "0060077", "0060080", "0060082", "0060095", "0060096", "0060097",
+        "0060226", "0060232", "0112925", "0112926", "0112927",
+      ];
+      if (!isExactArcherJamaicaPacketTarget(packet, row) ||
+          priorPointer.receipt_id !== priorContract.receiptId ||
+          priorPointer.row_sha256 !== priorContract.rowSha256 ||
+          priorPointer.artifact !==
+            "data/quality/relationship-integrity/bus-lane-acquisition/shards/queens/receipts.jsonl" ||
+          priorCandidate.candidate_id !== row.candidate_id ||
+          priorCandidate.normalized_route_id !== row.gtfs_route_id ||
+          priorCandidate.route_id !== row.gtfs_route_id ||
+          priorCandidate.corridor !== "Jamaica Avenue" ||
+          priorCandidate.implementation_date !== row.implementation_date ||
+          priorCandidate.identity !== `${row.gtfs_route_id}|bus_lane|2021-10-24|day` ||
+          target.feature_row_count !== 38 ||
+          !Array.isArray(target.feature_keys) || target.feature_keys.length !== 38 ||
+          !Array.isArray(target.feature_ids) || target.feature_ids.length !== 28 ||
+          !Array.isArray(target.feature_rows) || target.feature_rows.length !== 38 ||
+          stableJson(target.lane_groups as JsonValue) !== stableJson(expectedGroupAccounting as JsonValue) ||
+          stableJson(receipt.finding_corrections as JsonValue) !== stableJson([expectedCorrection] as JsonValue) ||
+          stableJson(receipt.project_context as JsonValue) !== stableJson(expectedProjectContext as JsonValue) ||
+          receipt.rationale !== expectedRationale ||
+          receipt.supplemental_search !== undefined || receipt.occurrence_context !== undefined ||
+          receipt.context_receipt !== undefined ||
+          sourceFindings.acquired_for_candidate !== true ||
+          sourceFindings.candidate_named_lane_record_count !== 0 ||
+          sourceFindings.official_lane_matching_record_count !== 31 ||
+          stableJson(sourceFindings.official_lane_matching_segment_ids as JsonValue) !== stableJson(exactJamaicaIds) ||
+          stableJson(sourceFindings.official_lane_named_routes as JsonValue) !== stableJson(["Q44"]) ||
+          stableJson(sourceFindings.official_route_named_segment_ids as JsonValue) !== stableJson([]) ||
+          sourceFindings.exact_project_route_statement_found !== false ||
+          sourceFindings.exact_project_route_source_id !== null ||
+          routePage.content_sha256 !== priorContract.routePageSha256 ||
+          routePage.exact_route_title_found !== true || routePage.current_corridor_token_found !== false ||
+          routePage.retrieval_status !== "acquired" ||
+          typeof routePage.temporal_limitation !== "string" || !routePage.temporal_limitation ||
+          priorOutcome.exclusive_primary_disposition !== "completed_search_route_linkage_unresolved" ||
+          priorOutcome.registry_projection_excluded !== true || priorOutcome.still_unresolved !== true ||
+          priorOutcome.study_projection_eligible !== false ||
+          priorClaims.candidate_date_supported_at_day_precision !== false ||
+          priorClaims.candidate_segment_ids_pinned !== false ||
+          priorClaims.date_and_phase_proved !== false ||
+          priorClaims.exact_route_treatment_binding_proved !== false ||
+          priorClaims.exact_segment_binding_proved !== false ||
+          priorClaims.explicit_phase_identity_proved !== false ||
+          priorClaims.operational_occurrence_identity_proved !== false ||
+          priorClaims.physical_bus_lane_record_acquired !== true ||
+          stableJson(priorClaims.exact_route_binding_evidence as JsonValue) !== stableJson([]) ||
+          stableJson(priorClaims.exact_segment_ids as JsonValue) !== stableJson([]) ||
+          stableJson(canonicalActions.canonical_links_added as JsonValue) !== stableJson([]) ||
+          stableJson(canonicalActions.canonical_records_added as JsonValue) !== stableJson([]) ||
+          stableJson(canonicalActions.canonical_records_updated as JsonValue) !== stableJson([]) ||
+          canonicalActions.operational_occurrence_added_or_updated !== false ||
+          !exactCandidateQuery || !pressRetrieval ||
+          !projectSource || projectSource.url !== ARCHER_JAMAICA_PROJECT_CONTEXT.url ||
+          projectSource.content_sha256 !== ARCHER_JAMAICA_PROJECT_CONTEXT.sha256 ||
+          projectSource.retrieval_status !== "acquired" ||
+          projectSource.note !== ARCHER_JAMAICA_PROJECT_CONTEXT.note ||
+          row.onset_evidence.lane_snapshot_id !== "nyc-dot-bus-lanes-local-streets-2026-07-22" ||
+          row.onset_evidence.lane_source_id !== ARCHER_JAMAICA_CURRENT_SOURCE.sourceId ||
+          currentSourceMetadata.sourceId !== ARCHER_JAMAICA_CURRENT_SOURCE.sourceId ||
+          currentSourceMetadataSha !== ARCHER_JAMAICA_CURRENT_SOURCE.sha256 ||
+          !existsSync(currentSourcePath) || hash(readFileSync(currentSourcePath)) !== ARCHER_JAMAICA_CURRENT_SOURCE.sha256 ||
+          receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
+        throw new Error(`${receiptPath}: Archer/Jamaica absence contract does not match the exact candidate`);
       }
     }
     if (receipt.supplemental_search !== undefined) {
