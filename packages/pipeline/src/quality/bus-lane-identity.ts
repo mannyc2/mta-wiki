@@ -308,10 +308,17 @@ function isExactUticaAvenuePacketTarget(
   const matches = group.feature_matches;
   const targetContract = row.implementation_date === "2014-08-25" &&
       (row.gtfs_route_id === "B12" || row.gtfs_route_id === "B14")
-    ? { featureRowCount: 26, featureIdCount: 16, dateLiteral: "8/25/2014" }
+    ? { featureRowCount: 26, featureIdCount: 16, dateLiteral: "8/25/2014",
+      directions: ["NB", "SB"],
+      unresolvedBindings: ["attribution", "direction", "feature_extent", "phase", "traversal"] }
     : row.implementation_date === "2015-10-16" && row.gtfs_route_id === "B8"
-      ? { featureRowCount: 48, featureIdCount: 26, dateLiteral: "10/16/2015" }
-      : null;
+      ? { featureRowCount: 48, featureIdCount: 26, dateLiteral: "10/16/2015",
+        directions: ["NB", "SB"],
+        unresolvedBindings: ["attribution", "direction", "feature_extent", "phase", "traversal"] }
+      : row.implementation_date === "2016-06-03" && row.gtfs_route_id === "B15"
+        ? { featureRowCount: 3, featureIdCount: 3, dateLiteral: "6/3/2016",
+          directions: ["NB"], unresolvedBindings: ["attribution", "feature_extent", "phase", "traversal"] }
+        : null;
   if (!targetContract) return false;
   return packet.what_is_known.target_groups.length === 1 &&
     stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
@@ -326,9 +333,8 @@ function isExactUticaAvenuePacketTarget(
       match.open_dates_literal === targetContract.dateLiteral &&
       stableJson(match.sbs_routes) === stableJson(["B46"])) &&
     stableJson([...new Set(matches.map((match) => match.direction))].sort()) ===
-      stableJson(["NB", "SB"]) &&
-    stableJson(packet.unresolved_bindings) ===
-      stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"]);
+      stableJson(targetContract.directions) &&
+    stableJson(packet.unresolved_bindings) === stableJson(targetContract.unresolvedBindings);
 }
 
 function isoReviewTime(value: unknown, path: string): string {
@@ -1104,7 +1110,8 @@ export function validateBindingReceiptDrafts(
       row.onset_evidence.target_groups[0]?.lane_group_id === "BK|UTICA AVENUE" &&
       ((row.implementation_date === "2014-08-25" &&
         (row.gtfs_route_id === "B12" || row.gtfs_route_id === "B14")) ||
-        (row.implementation_date === "2015-10-16" && row.gtfs_route_id === "B8"));
+        (row.implementation_date === "2015-10-16" && row.gtfs_route_id === "B8") ||
+        (row.implementation_date === "2016-06-03" && row.gtfs_route_id === "B15"));
     if (uticaAvenueLedgerTarget &&
         stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
       throw new Error(`${receiptPath}: Utica Avenue packet target does not preserve exact ledger occurrence parity`);
@@ -1956,7 +1963,7 @@ export function validateBindingReceiptDrafts(
                 ? block.tokens.has("B12") && block.tokens.has("EMPIRE") && block.tokens.has("LEFFERTS")
                 : block.tokens.has("B14") && block.tokens.has("EASTERN") && block.tokens.has("PKWY"))));
           const exactUticaHistoricalOutsideProjectIntersectionWindow = uticaAvenueSeptember2013StudySource &&
-            row.gtfs_route_id === "B8" &&
+            (row.gtfs_route_id === "B8" || row.gtfs_route_id === "B15") &&
             isExactUticaAvenuePacketTarget(packet, row) &&
             [...citedPageWindows.values()].some((window) =>
               window.tokens.has("PROJECT") &&
@@ -1970,10 +1977,11 @@ export function validateBindingReceiptDrafts(
               block.route &&
               block.tokens.has("B46") &&
               block.tokens.has("UTICA") &&
-              block.tokens.has("CHURCH") &&
-              block.tokens.has("B8") &&
-              block.tokens.has("AVENUE") &&
-              block.tokens.has("D")));
+              (row.gtfs_route_id === "B8"
+                ? block.tokens.has("CHURCH") && block.tokens.has("B8") &&
+                  block.tokens.has("AVENUE") && block.tokens.has("D")
+                : block.tokens.has("ST") && block.tokens.has("JOHNS") &&
+                  block.tokens.has("B15") && block.tokens.has("DEAN") && block.tokens.has("BERGEN"))));
           if (!boundedServiceContext && !boundedExplicitSbsRouteContext &&
               !exactWest178CorridorServiceWindow && !exactChurchAvenueProjectWindow &&
               !exactChurchAvenueHistoricalTraversalWindow &&
@@ -2140,11 +2148,9 @@ export function validateBindingReceiptDrafts(
               (!commonContextScopeValid || !exactUticaHistoricalOutsideProjectIntersectionWindow ||
                 object(prior.source_findings, `${contextPath}.prior.source_findings`)
                   .exact_project_route_statement_found !== false ||
-                !receiptUnresolved.includes("attribution") ||
-                !receiptUnresolved.includes("direction") ||
-                !receiptUnresolved.includes("feature_extent") ||
-                !receiptUnresolved.includes("phase") ||
-                !receiptUnresolved.includes("traversal") ||
+                stableJson(receiptUnresolved) !== stableJson(row.gtfs_route_id === "B15"
+                  ? ["attribution", "feature_extent", "phase", "traversal"]
+                  : ["attribution", "direction", "feature_extent", "phase", "traversal"]) ||
                 candidateDateTraversalConfirmed)) {
             throw new Error(`${contextPath}: outside-project-extent intersection context transferred to Utica Avenue lane service or traversal`);
           }
