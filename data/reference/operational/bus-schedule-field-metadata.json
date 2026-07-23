@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "retrieved_at": "2026-07-23T00:26:49Z",
+  "semantics": {
+    "row_grain": "one scheduled timepoint-stop row",
+    "path_group_key": ["direction", "shape_id"],
+    "service_id_note": "service/day code; not a trip id",
+    "block_id_note": "vehicle-work context; not a trip id"
+  },
+  "columns": [
+    {"field_name":"schedule_date","data_type":"calendar_date"},
+    {"field_name":"day_type","data_type":"text"},
+    {"field_name":"borough","data_type":"text"},
+    {"field_name":"operator","data_type":"text"},
+    {"field_name":"service_id","data_type":"text"},
+    {"field_name":"direction","data_type":"text"},
+    {"field_name":"shape_id","data_type":"text"},
+    {"field_name":"trip_type","data_type":"text"},
+    {"field_name":"route_id","data_type":"text"},
+    {"field_name":"stop_sequence","data_type":"number"},
+    {"field_name":"stop_id","data_type":"text"},
+    {"field_name":"stop_name","data_type":"text"},
+    {"field_name":"schedule_time","data_type":"calendar_date"},
+    {"field_name":"origin","data_type":"text"},
+    {"field_name":"destination","data_type":"text"},
+    {"field_name":"school","data_type":"text"},
+    {"field_name":"revenue_stop","data_type":"text"},
+    {"field_name":"timepoint","data_type":"text"},
+    {"field_name":"boarding","data_type":"text"},
+    {"field_name":"alighting","data_type":"text"},
+    {"field_name":"distance_from_start","data_type":"number"},
+    {"field_name":"trip_headsign","data_type":"text"},
+    {"field_name":"block_id","data_type":"text"},
+    {"field_name":"depot_code","data_type":"text"},
+    {"field_name":"bundle","data_type":"text"}
+  ],
+  "datasets": [
+    {"year":2023,"dataset_id":"x5mx-4rfs","schema_url":"https://data.ny.gov/api/views/x5mx-4rfs","schema_response_sha256":"39c9b006c0622286c1651e03dd49627ff5fa40885668f3b8f402f9c283c142b1","schema_response_bytes":39435,"rows_updated_at_epoch":1755646386},
+    {"year":2024,"dataset_id":"udt9-hvjq","schema_url":"https://data.ny.gov/api/views/udt9-hvjq","schema_response_sha256":"15568a88856c16edaa95180ccf59d7177b51bc8ea474893793d396a535152bf0","schema_response_bytes":39294,"rows_updated_at_epoch":1755725032},
+    {"year":2025,"dataset_id":"t4bz-xqa9","schema_url":"https://data.ny.gov/api/views/t4bz-xqa9","schema_response_sha256":"38d9d900435e48953511f25125ebefdb76228b5f8c58d2f10d8b207142fb1de9","schema_response_bytes":39423,"rows_updated_at_epoch":1772248233},
+    {"year":2026,"dataset_id":"4fnn-qsea","schema_url":"https://data.ny.gov/api/views/4fnn-qsea","schema_response_sha256":"58fc7e2f20735afd3b029768f5d37b383e3cd96ed8c6fa00c920bf3f80af9725","schema_response_bytes":39044,"rows_updated_at_epoch":1784747590}
+  ]
+}
