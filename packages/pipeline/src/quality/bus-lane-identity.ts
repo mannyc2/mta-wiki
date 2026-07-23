@@ -271,6 +271,34 @@ function routeTokensMatchCandidate(blockTokens: readonly string[], routeId: stri
   });
 }
 
+function isExactKingsHighwayPacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const group = packet.what_is_known.target_groups[0];
+  if (!group) return false;
+  const matches = group.feature_matches;
+  const expectedBindings = row.gtfs_route_id === "B82"
+    ? ["direction", "traversal"]
+    : ["attribution", "direction", "traversal"];
+  return packet.what_is_known.target_groups.length === 1 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    group.lane_group_id === "BK|KINGS HIGHWAY" &&
+    group.geometry_scope === "coextensive_with_lane_group" &&
+    row.implementation_date === "2018-10-05" &&
+    matches.length === 67 &&
+    new Set(matches.map((match) => match.feature_key)).size === 67 &&
+    new Set(matches.map((match) => match.feature_id)).size === 36 &&
+    matches.every((match) =>
+      match.matched_date === "2018-10-05" &&
+      match.matched_token_literal === "10/05/2018" &&
+      match.open_dates_literal === "10/05/2018" &&
+      stableJson(match.sbs_routes) === stableJson(["B82"])) &&
+    stableJson([...new Set(matches.map((match) => match.direction))].sort()) ===
+      stableJson(["EB", "WB"]) &&
+    stableJson(packet.unresolved_bindings) === stableJson(expectedBindings);
+}
+
 function isoReviewTime(value: unknown, path: string): string {
   const timestamp = nonempty(value, path);
   const day = /^\d{4}-\d{2}-\d{2}$/u.test(timestamp);
@@ -1033,6 +1061,13 @@ export function validateBindingReceiptDrafts(
         stableJson(receipt.unresolved_bindings as JsonValue) !== stableJson(packet.unresolved_bindings)) {
       throw new Error(`${receiptPath}: binding receipt candidate or unresolved-binding parity failed`);
     }
+    const kingsHighwayLedgerTarget = row.implementation_date === "2018-10-05" &&
+      row.onset_evidence.target_groups.length === 1 &&
+      row.onset_evidence.target_groups[0]?.lane_group_id === "BK|KINGS HIGHWAY";
+    if (kingsHighwayLedgerTarget &&
+        stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
+      throw new Error(`${receiptPath}: Kings Highway packet target does not preserve exact ledger occurrence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -1317,6 +1352,10 @@ export function validateBindingReceiptDrafts(
           correctionTitleTokens.includes("FT") &&
           correctionTitleTokens.includes("WASHINGTON") &&
           correctionTitleTokens.includes("WADSWORTH");
+        const southernBrooklynB82March2018Source =
+          sourceId === "brt_south_brooklyn_b82_mar2018" &&
+          metadata.documentDate === "2018-03" &&
+          metadata.sourceGroup === "bus_priority_document";
         if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
             metadataSha !== sourceContentSha256 || hash(readFileSync(sourceArtifactPath)) !== sourceContentSha256 ||
             !supplementalUrls.includes(sourceUrl) ||
@@ -1461,6 +1500,32 @@ export function validateBindingReceiptDrafts(
             block.tokens.has("OFFSET") &&
             block.tokens.has("BUS") &&
             block.tokens.has("LANE")));
+        const exactKingsHighwayLocalServiceWindow = southernBrooklynB82March2018Source &&
+          isExactKingsHighwayPacketTarget(packet, row) &&
+          (row.gtfs_route_id === "B82" || row.gtfs_route_id === "B7") &&
+          [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+            block.route &&
+            block.tokens.has("KINGS") &&
+            block.tokens.has("HIGHWAY") &&
+            block.tokens.has("LOCAL") &&
+            (row.gtfs_route_id === "B82"
+              ? block.tokens.has("B82") && block.tokens.has("LIMITED")
+              : block.tokens.has("B7")))) &&
+          [...citedPageWindows.values()].some((window) =>
+            window.tokens.has("KINGS") &&
+            (window.tokens.has("HIGHWAY") || window.tokens.has("HWY")) &&
+            window.tokens.has("2018") &&
+            window.tokens.has("TRANSIT") &&
+            window.tokens.has("IMPROVEMENTS") &&
+            window.tokens.has("BUS") &&
+            window.tokens.has("LANES") &&
+            window.tokens.has("LOCAL") &&
+            window.tokens.has("SBS") &&
+            Math.max(...window.positions) - Math.min(...window.positions) <= 3);
+        const correctionCandidateDateTraversalConfirmed = row.dossier_refs.some((ref) =>
+          ref.candidate_target_match === true &&
+          ref.verdict_class === "traversal_confirmed" &&
+          ref.service_date === row.implementation_date);
         const correctedFinding = object(correction.corrected_finding, `${correctionPath}.corrected_finding`);
         exactKeys(correctedFinding, new Set([
           "candidate_route_id", "finding_kind", "finding_summary", "supported_scope", "unsupported_bindings",
@@ -1486,9 +1551,14 @@ export function validateBindingReceiptDrafts(
             (isProjectCorridorService &&
               !boundedUpperCorridorServiceWindow &&
               !boundedSecondAvenueServiceWindow &&
-              !boundedWest178CorridorServiceWindow) ||
+              !boundedWest178CorridorServiceWindow &&
+              !exactKingsHighwayLocalServiceWindow) ||
             (!isIntersectionAttribution && !isProjectConnection && !isProjectCorridorService)) {
           throw new Error(`${correctionPath}: staged source-block evidence does not bind the exact route to its typed project context`);
+        }
+        if (exactKingsHighwayLocalServiceWindow &&
+            (!receiptUnresolved.includes("traversal") || correctionCandidateDateTraversalConfirmed)) {
+          throw new Error(`${correctionPath}: Kings Highway project context transferred to candidate-date traversal`);
         }
         if (correctedRoute !== row.gtfs_route_id ||
             stableJson(correctedUnsupported) !== stableJson([...receiptUnresolved].sort()) ||
@@ -1607,12 +1677,16 @@ export function validateBindingReceiptDrafts(
             titleTokens.includes("STUDY") &&
             titleTokens.includes("FINAL") &&
             titleTokens.includes("REPORT");
+          const southernBrooklynB82March2018Source =
+            sourceId === "brt_south_brooklyn_b82_mar2018" &&
+            metadata.documentDate === "2018-03" &&
+            metadata.sourceGroup === "bus_priority_document";
           if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
               metadataSha !== sourceContentSha256 || hash(readFileSync(sourceArtifactPath)) !== sourceContentSha256 ||
               (!proposalSourceTitle && !upperCorridorExistingConditionsTitle && !secondAvenueRedesignTitle &&
                 !west125SbsEnforcementTitle && !west178CorridorTitle && !churchAvenueTransitProjectTitle &&
                 !churchAvenueCorridorStudyTitle && !vanderbiltClermontSafetyMobilityTitle &&
-                !coneyIslandGravesendTransportationStudyTitle) ||
+                !coneyIslandGravesendTransportationStudyTitle && !southernBrooklynB82March2018Source) ||
               !supplementalUrls.includes(sourceUrl) ||
               !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
                 retrieval.sha256 === sourceContentSha256)) {
@@ -1792,11 +1866,33 @@ export function validateBindingReceiptDrafts(
               window.tokens.has("ROAD") &&
               window.tokens.has("NOSTRAND") &&
               Math.max(...window.positions) - Math.min(...window.positions) <= 3);
+          const exactKingsHighwayB82SbsProjectWindow = southernBrooklynB82March2018Source &&
+            row.gtfs_route_id === "B82+" &&
+            isExactKingsHighwayPacketTarget(packet, row) &&
+            [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+              block.route &&
+              block.tokens.has("B82") &&
+              block.tokens.has("SBS") &&
+              block.tokens.has("2018") &&
+              block.tokens.has("STREET") &&
+              block.tokens.has("CHANGES"))) &&
+            [...citedPageWindows.values()].some((window) =>
+              window.tokens.has("KINGS") &&
+              (window.tokens.has("HIGHWAY") || window.tokens.has("HWY")) &&
+              window.tokens.has("2018") &&
+              window.tokens.has("TRANSIT") &&
+              window.tokens.has("IMPROVEMENTS") &&
+              window.tokens.has("BUS") &&
+              window.tokens.has("LANES") &&
+              window.tokens.has("LOCAL") &&
+              window.tokens.has("SBS") &&
+              Math.max(...window.positions) - Math.min(...window.positions) <= 3);
           if (!boundedServiceContext && !boundedExplicitSbsRouteContext &&
               !exactWest178CorridorServiceWindow && !exactChurchAvenueProjectWindow &&
               !exactChurchAvenueHistoricalTraversalWindow &&
               !exactFultonAdjacentProjectEndpointWindow &&
-              !exactGlenwoodHistoricalIntersectionWindow) {
+              !exactGlenwoodHistoricalIntersectionWindow &&
+              !exactKingsHighwayB82SbsProjectWindow) {
             throw new Error(`${contextPath}: staged source-block evidence does not bind the exact route to bounded corridor-service context`);
           }
           const exactUpperCorridorReviewWindow = upperCorridorExistingConditionsTitle &&
@@ -1890,9 +1986,15 @@ export function validateBindingReceiptDrafts(
                   !exactSecondAvenueProjectWindow &&
                   !exactWest125ExtensionWindow &&
                   !exactWest178CorridorServiceWindow &&
-                  !exactChurchAvenueProjectWindow) ||
+                  !exactChurchAvenueProjectWindow &&
+                  !exactKingsHighwayB82SbsProjectWindow) ||
                 (exactChurchAvenueProjectWindow &&
                   (!receiptUnresolved.includes("traversal") || candidateDateTraversalConfirmed)) ||
+                (exactKingsHighwayB82SbsProjectWindow &&
+                  (!receiptUnresolved.includes("attribution") ||
+                    !receiptUnresolved.includes("direction") ||
+                    !receiptUnresolved.includes("traversal") ||
+                    candidateDateTraversalConfirmed)) ||
                 object(prior.source_findings, `${contextPath}.prior.source_findings`)
                   .exact_project_route_statement_found !== true)) {
             throw new Error(`${contextPath}: positive context exceeds its nonauthorizing project-corridor scope`);
@@ -1932,6 +2034,17 @@ export function validateBindingReceiptDrafts(
             throw new Error(`${contextPath}: positive context has an unsupported typed scope`);
           }
           nonempty(finding.finding_summary, `${contextPath}.context_finding.finding_summary`);
+        }
+      }
+      if (isExactKingsHighwayPacketTarget(packet, row)) {
+        const correctionCount = supplemental.finding_corrections.length;
+        const contextCount = Array.isArray(supplemental.positive_context_findings)
+          ? supplemental.positive_context_findings.length
+          : 0;
+        const expectedCorrectionCount = row.gtfs_route_id === "B82" || row.gtfs_route_id === "B7" ? 1 : 0;
+        const expectedContextCount = row.gtfs_route_id === "B82+" ? 1 : 0;
+        if (correctionCount !== expectedCorrectionCount || contextCount !== expectedContextCount) {
+          throw new Error(`${receiptPath}: Kings Highway correction/context cardinality does not match the exact candidate route`);
         }
       }
     }
