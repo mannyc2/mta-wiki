@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:9b6305938d408a8a99614a9d",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:d69355557b8f07042bf5f29a",
+  "candidate_id": "study-event-v2:17f22e6cfca6e8a99bdc1eda",
+  "candidate_fingerprint": "838b46b683f0b360760021c47eb431e7fe29634260c89d25a72e8aa4389acdb0",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "direction",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental official NYC DOT and public-board searches found no source binding M10 to the three exact northbound Frederick Douglass Boulevard queue-jump rows, their 2024-12-26 onset, or candidate-date traversal. Older official planning documents describe general M10 service on Frederick Douglass Boulevard, including both directions, but do not identify this 2024 queue-jump treatment or its exact rows and are not promoted as candidate-date traversal evidence. The receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:9b6305938d408a8a99614a9d"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T06:05:10Z"
+}
