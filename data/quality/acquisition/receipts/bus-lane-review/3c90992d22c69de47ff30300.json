@@ -1,0 +1,339 @@
+{
+  "authorizes_cross_product": false,
+  "authorizes_study": false,
+  "candidate_fingerprint": "d32028c7582a55729911cbe0c371193ff6833e27e0bca86f12c0cf2df9d0399a",
+  "candidate_id": "study-event-v2:95776842de338f18b22e697a",
+  "candidate_urls": [],
+  "disposition": "binding_absent_after_search",
+  "gap_ids": [
+    "bus-lane-identity:ea6435005bf5d55f21ac9128"
+  ],
+  "gtfs_route_id": "B68",
+  "implementation_date": "2019-10-23",
+  "missing_binding": "traversal",
+  "operator": "plan039-corridor-adjudicator",
+  "prior_receipt": {
+    "artifact": "data/quality/relationship-integrity/bus-lane-acquisition/shards/brooklyn-null/receipts.jsonl",
+    "receipt_id": "brooklyn-null-acquisition:4d9a3cc33cb9a1e0cc77df4a",
+    "row_sha256": "f189ba9798be254ff15ce09c1d98b6d43bb7c940b099e3875a9be2d97a67bf38"
+  },
+  "rationale": "Candidate-exact supplemental official NYC DOT review finds historical same-corridor context for B68: a 2013 corridor report lists B68 among routes that traverse Church Avenue. That statement predates and does not bind B68 to the October 23, 2019 bus-lane project, either direction, or any of the 18 exact feature rows. The prior finding that no exact 2019 project-route statement was found remains unchanged, and no occurrence, study, or cross-product projection is authorized.",
+  "receipt_id": "bus-lane-binding-search:3c90992d22c69de47ff30300",
+  "receipt_kind": "binding_absent_after_search",
+  "schema_version": 1,
+  "search": {
+    "exact_queries": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "query": "site:nyc.gov/html/dot Church Avenue bus lane B35 2019 official community board",
+        "query_status": "performed_2026-07-15"
+      },
+      {
+        "category": "official_mta_route_project",
+        "query": "site:mta.info \"B68\" \"Church Avenue\" bus route project",
+        "query_status": "performed_by_official_route_fetch_and_project_document_search_2026-07-15"
+      },
+      {
+        "category": "official_public_board_committee",
+        "query": "site:nyc.gov/html/dot Church Avenue bus lane B35 2019 official community board community board committee MTA Board",
+        "query_status": "performed_2026-07-15"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "query": "NYC DOT Open Data ycrg-ses3 facility=Church Avenue open_dates contains 2019-10-23",
+        "query_status": "executed_against_acquired_snapshot_2026-07-15"
+      }
+    ],
+    "domains": [
+      "bustime-classic.mta.info",
+      "data.cityofnewyork.us",
+      "www.mta.info",
+      "www.nyc.gov"
+    ],
+    "urls_inspected": [
+      "https://bustime-classic.mta.info/m/?q=B68",
+      "https://data.cityofnewyork.us/api/views/ycrg-ses3",
+      "https://data.cityofnewyork.us/resource/ycrg-ses3.json?$limit=5000",
+      "https://www.mta.info/document/12041",
+      "https://www.nyc.gov/html/dot/html/about/datafeeds.shtml",
+      "https://www.nyc.gov/html/dot/html/about/projects-2019.shtml"
+    ],
+    "retrievals": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "id": "dot_bus_lanes_snapshot",
+        "retrieved_on": "2026-07-15",
+        "sha256": "1b3a990a75abc472d5f68d683aeb7d1deafa2eca4a239e4914b12db6a9927a5a",
+        "status": "acquired"
+      },
+      {
+        "category": "official_nyc_dot_lane_project",
+        "id": "church_projects",
+        "retrieved_on": "2026-07-15",
+        "sha256": "2b00bcc4c3880ea34b8b9edfe3c142745b66038e403f6f30211eb5a52c60e1bd",
+        "status": "acquired"
+      },
+      {
+        "category": "official_mta_route_project",
+        "id": "mta_bustime_B68",
+        "retrieved_on": "2026-07-15",
+        "sha256": "179a52c26920761b50c6989eb2bc11ee73d38d98655b87c69d6ed7498c1a05bf",
+        "status": "acquired"
+      },
+      {
+        "category": "official_mta_route_project",
+        "id": "mta_brooklyn_bus_map",
+        "retrieved_on": "2026-07-15",
+        "sha256": null,
+        "status": "not_retrieved"
+      },
+      {
+        "category": "official_public_board_committee",
+        "id": "dot_projects_2019",
+        "retrieved_on": "2026-07-15",
+        "sha256": "d859a604632bf27a2352ce54f2ca4c81232f1fa0920480bef71b89987b592c99",
+        "status": "acquired"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "id": "dot_bus_lanes_metadata",
+        "retrieved_on": "2026-07-15",
+        "sha256": "fa943cd885628155d489ffb991e464ce8d914736b9c29ab97dd2094ecd877340",
+        "status": "acquired"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "id": "dot_datafeeds",
+        "retrieved_on": "2026-07-15",
+        "sha256": "f3f7c9e4919139a8765518bf7dbd4c05c1644395f77cfa1e4bad5287beb8c81a",
+        "status": "acquired"
+      }
+    ],
+    "disposition": "binding_absent_after_search"
+  },
+  "searched_at": "2026-07-15",
+  "supplemental_search": {
+    "domains": [
+      "www.nyc.gov"
+    ],
+    "exact_queries": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "query": "site:nyc.gov Church Avenue B68 bus lane October 23 2019 NYC DOT",
+        "query_status": "performed_2026-07-23_reviewed_results"
+      },
+      {
+        "category": "official_public_board_committee",
+        "query": "site:nyc.gov Church Avenue B68 community board transportation bus lane",
+        "query_status": "performed_2026-07-23_reviewed_results"
+      }
+    ],
+    "finding_corrections": [],
+    "operator": "codex_web.search_query",
+    "positive_context_findings": [
+      {
+        "authorizes_cross_product": false,
+        "authorizes_study": false,
+        "context_finding": {
+          "candidate_route_id": "B68",
+          "finding_kind": "positive_historical_same_corridor_traversal_nonterminal",
+          "finding_summary": "The official 2013 Church Avenue corridor report lists B68 among six routes that traverse Church Avenue; it does not associate B68 with the October 2019 bus-lane project, its date, directions, or exact feature rows.",
+          "supported_scope": "historical_same_corridor_traversal_only",
+          "unsupported_bindings": [
+            "attribution",
+            "direction",
+            "traversal"
+          ]
+        },
+        "evidence_refs": [
+          {
+            "block_id": "p017_p0007",
+            "page_number": 17,
+            "text_sha256": "sha256:3dc1573f2b4ad5fdd706e75cdffaadddbfb87c84db0cf92e07a02fcd1f335877"
+          },
+          {
+            "block_id": "p017_p0008",
+            "page_number": 17,
+            "text_sha256": "sha256:7b99d223b6724f30abe01bf41bcb40304be71b9f87c31a233ac6c1145be5ff32"
+          }
+        ],
+        "remaining_unresolved_bindings": [
+          "attribution",
+          "direction",
+          "traversal"
+        ],
+        "source_id": "nyc_dot_church_avenue_congested_corridor_report_2013",
+        "source_pdf_sha256": "b3a3ff66cafa8dafa1584a2529a1aa0b192996aac737148ce965d096beb299cd",
+        "source_url": "https://www.nyc.gov/html/dot/downloads/pdf/church-ave.pdf"
+      }
+    ],
+    "retrievals": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "retrieved_on": "2026-07-23",
+        "sha256": "da8f9875fac24277e861f0691c1ff973d0ee47d571370180925b3ad8df3ab0a0",
+        "status": "acquired",
+        "url": "https://www.nyc.gov/html/brt/downloads/pdf/church-ave-project-update-oct2019.pdf"
+      },
+      {
+        "category": "official_public_board_committee",
+        "retrieved_on": "2026-07-23",
+        "sha256": "b3a3ff66cafa8dafa1584a2529a1aa0b192996aac737148ce965d096beb299cd",
+        "status": "acquired",
+        "url": "https://www.nyc.gov/html/dot/downloads/pdf/church-ave.pdf"
+      }
+    ],
+    "searched_at": "2026-07-23T07:00:00Z",
+    "urls_inspected": [
+      "https://www.nyc.gov/html/brt/downloads/pdf/church-ave-project-update-oct2019.pdf",
+      "https://www.nyc.gov/html/dot/downloads/pdf/church-ave.pdf"
+    ]
+  },
+  "target": {
+    "directions": [
+      "EB",
+      "WB"
+    ],
+    "feature_ids": [
+      "0027864",
+      "0027866",
+      "0027996",
+      "0028000",
+      "0028005",
+      "0028007",
+      "0028099",
+      "0028103",
+      "0028105"
+    ],
+    "feature_keys": [
+      "dot-lane-feature:1211de510eb71c3534aa7f10",
+      "dot-lane-feature:14e78b904ac3c20bfdce2b19",
+      "dot-lane-feature:16fba1bba627fb1d8512dc36",
+      "dot-lane-feature:1b43e5a4c0951b46745f14e7",
+      "dot-lane-feature:23f0ef642d4459ca7f3d1ba9",
+      "dot-lane-feature:44f7888404283e8ef382c9de",
+      "dot-lane-feature:75bf3d339a67b2e38e23529d",
+      "dot-lane-feature:7f7429f2b08a95220066677f",
+      "dot-lane-feature:8b451b819bb11b0e0e0eb455",
+      "dot-lane-feature:a45fe474b28216fefacff450",
+      "dot-lane-feature:ac4071272e39f622a1ca8a83",
+      "dot-lane-feature:b58202d4fe99168592e28e0d",
+      "dot-lane-feature:c66b33641e6a23f04e281e33",
+      "dot-lane-feature:cb20f57abf58ba8232929811",
+      "dot-lane-feature:cf4ba760ac5f9faa29f4a0c3",
+      "dot-lane-feature:e00bcdb5be0823b3d21128f1",
+      "dot-lane-feature:e986f52f45fa3c208e11b7ab",
+      "dot-lane-feature:ee5cbda68028b4fc5d5018ce"
+    ],
+    "feature_row_count": 18,
+    "feature_rows": [
+      {
+        "direction": "WB",
+        "feature_id": "0028105",
+        "feature_key": "dot-lane-feature:1211de510eb71c3534aa7f10"
+      },
+      {
+        "direction": "EB",
+        "feature_id": "0028099",
+        "feature_key": "dot-lane-feature:14e78b904ac3c20bfdce2b19"
+      },
+      {
+        "direction": "EB",
+        "feature_id": "0028105",
+        "feature_key": "dot-lane-feature:16fba1bba627fb1d8512dc36"
+      },
+      {
+        "direction": "EB",
+        "feature_id": "0028007",
+        "feature_key": "dot-lane-feature:1b43e5a4c0951b46745f14e7"
+      },
+      {
+        "direction": "EB",
+        "feature_id": "0027996",
+        "feature_key": "dot-lane-feature:23f0ef642d4459ca7f3d1ba9"
+      },
+      {
+        "direction": "EB",
+        "feature_id": "0028005",
+        "feature_key": "dot-lane-feature:44f7888404283e8ef382c9de"
+      },
+      {
+        "direction": "WB",
+        "feature_id": "0028000",
+        "feature_key": "dot-lane-feature:75bf3d339a67b2e38e23529d"
+      },
+      {
+        "direction": "WB",
+        "feature_id": "0027866",
+        "feature_key": "dot-lane-feature:7f7429f2b08a95220066677f"
+      },
+      {
+        "direction": "WB",
+        "feature_id": "0028099",
+        "feature_key": "dot-lane-feature:8b451b819bb11b0e0e0eb455"
+      },
+      {
+        "direction": "EB",
+        "feature_id": "0027866",
+        "feature_key": "dot-lane-feature:a45fe474b28216fefacff450"
+      },
+      {
+        "direction": "WB",
+        "feature_id": "0028103",
+        "feature_key": "dot-lane-feature:ac4071272e39f622a1ca8a83"
+      },
+      {
+        "direction": "WB",
+        "feature_id": "0027996",
+        "feature_key": "dot-lane-feature:b58202d4fe99168592e28e0d"
+      },
+      {
+        "direction": "EB",
+        "feature_id": "0027864",
+        "feature_key": "dot-lane-feature:c66b33641e6a23f04e281e33"
+      },
+      {
+        "direction": "WB",
+        "feature_id": "0028007",
+        "feature_key": "dot-lane-feature:cb20f57abf58ba8232929811"
+      },
+      {
+        "direction": "EB",
+        "feature_id": "0028000",
+        "feature_key": "dot-lane-feature:cf4ba760ac5f9faa29f4a0c3"
+      },
+      {
+        "direction": "EB",
+        "feature_id": "0028103",
+        "feature_key": "dot-lane-feature:e00bcdb5be0823b3d21128f1"
+      },
+      {
+        "direction": "WB",
+        "feature_id": "0028005",
+        "feature_key": "dot-lane-feature:e986f52f45fa3c208e11b7ab"
+      },
+      {
+        "direction": "WB",
+        "feature_id": "0027864",
+        "feature_key": "dot-lane-feature:ee5cbda68028b4fc5d5018ce"
+      }
+    ],
+    "geometry_scopes": [
+      "coextensive_with_lane_group"
+    ],
+    "lane_group_ids": [
+      "BK|CHURCH AVENUE"
+    ],
+    "matched_date": "2019-10-23",
+    "named_sbs_routes": [],
+    "open_dates_literals": [
+      "10/23/2019"
+    ]
+  },
+  "unresolved_bindings": [
+    "attribution",
+    "direction",
+    "traversal"
+  ]
+}
+

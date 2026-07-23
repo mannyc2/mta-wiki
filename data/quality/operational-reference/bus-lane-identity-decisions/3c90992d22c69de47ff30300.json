@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:3c90992d22c69de47ff30300",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:ea6435005bf5d55f21ac9128",
+  "candidate_id": "study-event-v2:95776842de338f18b22e697a",
+  "candidate_fingerprint": "d32028c7582a55729911cbe0c371193ff6833e27e0bca86f12c0cf2df9d0399a",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "direction",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental official NYC DOT review finds historical same-corridor context for B68: a 2013 corridor report lists B68 among routes that traverse Church Avenue. That statement predates and does not bind B68 to the October 23, 2019 bus-lane project, either direction, or any of the 18 exact feature rows. The prior finding that no exact 2019 project-route statement was found remains unchanged, and no occurrence, study, or cross-product projection is authorized.",
+  "receipt_ids": [
+    "bus-lane-binding-search:3c90992d22c69de47ff30300"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T07:14:57Z"
+}

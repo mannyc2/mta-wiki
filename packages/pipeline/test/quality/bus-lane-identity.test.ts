@@ -1791,4 +1791,356 @@ describe("bus-lane identity exact-date targeting", () => {
       rmSync(rootDir, { recursive: true, force: true });
     }
   });
+
+  it("keeps Church Avenue project and historical traversal context candidate-exact and nonterminal", () => {
+    const date = "2019-10-23";
+    const laneFeatures = [
+      lane({ feature_id: "church-eb", lane_group_id: "BK|CHURCH AVENUE", opened: "10/23/2019", direction: "EB" }),
+      lane({ feature_id: "church-wb", lane_group_id: "BK|CHURCH AVENUE", opened: "10/23/2019", direction: "WB" }),
+    ];
+    const makeRow = (routeId: string, suffix: string) => {
+      const entry = candidate(`church-${suffix}`, routeId, date);
+      return buildBusLaneIdentityLedger({
+        bridgeCandidates: [entry.bridge],
+        trackerCandidates: [entry.tracker],
+        routeAnchors: [anchor(routeId)],
+        dossierRows: [dossier({
+          candidateId: entry.bridge.candidate_id,
+          routeId,
+          date,
+          laneGroupId: null,
+          pathSource: "unavailable",
+          pathIdentity: null,
+          reason: "historical_schedule_unavailable_pre_2023",
+        })],
+        dossierArtifact: "dossier.jsonl",
+        laneFeatures,
+        laneSnapshotId: "lanes",
+        laneSourceId: "lane_source",
+        gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+      })[0]!;
+    };
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-church-context-"));
+    const receiptDir = join(rootDir, "receipts");
+    const acquiredChecksDir = join(rootDir,
+      "data/quality/relationship-integrity/bus-lane-acquisition/shards/church-fixture");
+    mkdirSync(receiptDir, { recursive: true });
+    mkdirSync(acquiredChecksDir, { recursive: true });
+    const projectUrl = "https://www.nyc.gov/church-project.pdf";
+    const studyUrl = "https://www.nyc.gov/church-study.pdf";
+    const stageSource = (input: {
+      sourceId: string;
+      sourceUrl: string;
+      title: string;
+      publishedDate: string;
+      bytes: Buffer;
+      blocks: { block_id: string; page_number: number; raw_text: string }[];
+    }) => {
+      const sourceDir = join(rootDir, "raw", "sources", input.sourceId);
+      mkdirSync(sourceDir, { recursive: true });
+      const contentHash = createHash("sha256").update(input.bytes).digest("hex");
+      writeFileSync(join(sourceDir, "source.pdf"), input.bytes);
+      writeFileSync(join(sourceDir, "metadata.json"), JSON.stringify({
+        sourceId: input.sourceId,
+        sourceUrl: input.sourceUrl,
+        sha256: contentHash,
+        title: input.title,
+        publishedDate: input.publishedDate,
+      }));
+      const blocks = input.blocks.map((block) => ({
+        source_id: input.sourceId,
+        ...block,
+        normalized_text: block.raw_text,
+        raw_text_sha256: `sha256:${createHash("sha256").update(block.raw_text).digest("hex")}`,
+      }));
+      writeFileSync(join(sourceDir, "blocks.jsonl"), `${blocks.map((block) => JSON.stringify(block)).join("\n")}\n`);
+      return { contentHash, blocks };
+    };
+    const project = stageSource({
+      sourceId: "church-project-source",
+      sourceUrl: projectUrl,
+      title: "Church Ave Transit & Traffic Improvements: Project Update Implementation Plan",
+      publishedDate: "2019-10-01",
+      bytes: Buffer.from("fixture Church Avenue October 2019 project PDF"),
+      blocks: [
+        { block_id: "p007_b0001", page_number: 7, raw_text: "B35: 29,000 daily riders" },
+        { block_id: "p028_b0001", page_number: 28,
+          raw_text: "Curbside bus lanes, both directions from Marlborough Rd to E 7 St" },
+        { block_id: "p030_b0001", page_number: 30,
+          raw_text: "Bus lanes will be activated on October 23, 2019" },
+      ],
+    });
+    const study = stageSource({
+      sourceId: "church-study-source",
+      sourceUrl: studyUrl,
+      title: "The Citywide Congested Corridor Project: Church Avenue from McDonald Avenue to Utica Avenue Final Report",
+      publishedDate: "2013-02-01",
+      bytes: Buffer.from("fixture Church Avenue February 2013 corridor PDF"),
+      blocks: [
+        { block_id: "p017_b0001", page_number: 17, raw_text: "In additions, six bus lines traverse Church" },
+        { block_id: "p017_b0002", page_number: 17, raw_text: "Avenue: B67, B68, B41, B44, B46 & B49." },
+      ],
+    });
+    writeFileSync(join(acquiredChecksDir, "acquired-source-checks.json"), JSON.stringify({
+      sources: [
+        { url: projectUrl, content_sha256: project.contentHash, retrieval_status: "acquired" },
+        { url: studyUrl, content_sha256: study.contentHash, retrieval_status: "acquired" },
+      ],
+    }));
+    const bindPrior = (row: ReturnType<typeof makeRow>, routeId: string, exactProject: boolean) => {
+      const prior = {
+        receipt_id: `prior-${routeId}`,
+        researched_on: "2026-07-15",
+        source_findings: { exact_project_route_statement_found: exactProject },
+        acquisition_attempts: [{
+          category: "official_nyc_dot_lane_project",
+          query: `site:nyc.gov Church Avenue ${routeId}`,
+          query_status: "performed_2026-07-15",
+          urls_checked: [projectUrl],
+          retrievals: [{ id: "church-project", retrieved_on: "2026-07-15",
+            sha256: project.contentHash, status: "acquired" }],
+        }],
+      };
+      const priorLine = stableJson(prior as unknown as JsonValue);
+      const artifact = `prior-${routeId}.jsonl`;
+      writeFileSync(join(rootDir, artifact), `${priorLine}\n`);
+      return {
+        ...row,
+        prior_acquisition_receipt: {
+          receipt_id: prior.receipt_id,
+          artifact,
+          row_sha256: createHash("sha256").update(priorLine).digest("hex"),
+          disposition: exactProject ? "linkage_supported_phase_unresolved" : "completed_search_route_linkage_unresolved",
+          next_action: "Retain as nonterminal context only.",
+        },
+      };
+    };
+    const b35Row = bindPrior(makeRow("B35", "b35"), "B35", true);
+    const b68Row = bindPrior(makeRow("B68", "b68"), "B68", false);
+    const b35Packet = buildBusLaneResearchPackets([b35Row]).packets[0]!;
+    const b68Packet = buildBusLaneResearchPackets([b68Row]).packets[0]!;
+    expect(b35Packet.unresolved_bindings).toEqual(["attribution", "direction", "traversal"]);
+    expect(b68Packet.unresolved_bindings).toEqual(["attribution", "direction", "traversal"]);
+    const evidenceRefs = (source: typeof project) => source.blocks.map((block) => ({
+      block_id: block.block_id,
+      page_number: block.page_number,
+      text_sha256: block.raw_text_sha256,
+    }));
+    const supplementalSearch = (routeId: string, finding: Record<string, unknown>) => ({
+      domains: ["www.nyc.gov"],
+      exact_queries: [
+        { category: "official_nyc_dot_lane_project", query: `site:nyc.gov Church Avenue ${routeId} bus lane`,
+          query_status: "performed_2026-07-23" },
+        { category: "official_public_board_committee", query: `site:nyc.gov Church Avenue ${routeId} board`,
+          query_status: "performed_2026-07-23" },
+      ],
+      finding_corrections: [],
+      operator: "fixture-reviewer",
+      positive_context_findings: [finding],
+      retrievals: [
+        { category: "official_nyc_dot_lane_project", retrieved_on: "2026-07-23",
+          sha256: project.contentHash, status: "acquired", url: projectUrl },
+        { category: "official_public_board_committee", retrieved_on: "2026-07-23",
+          sha256: study.contentHash, status: "acquired", url: studyUrl },
+      ],
+      searched_at: "2026-07-23",
+      urls_inspected: [projectUrl, studyUrl].sort(),
+    });
+    const makeReceipt = (row: typeof b35Row, packet: typeof b35Packet, routeId: string) => {
+      const matches = packet.what_is_known.target_groups.flatMap((group) => group.feature_matches);
+      return {
+        schema_version: 1,
+        receipt_id: `binding-${routeId}`,
+        receipt_kind: "binding_absent_after_search",
+        candidate_id: row.candidate_id,
+        candidate_fingerprint: row.candidate_fingerprint,
+        gtfs_route_id: routeId,
+        implementation_date: date,
+        gap_ids: [row.ledger_id],
+        searched_at: "2026-07-15",
+        operator: "fixture-reviewer",
+        candidate_urls: [],
+        disposition: "binding_absent_after_search",
+        missing_binding: packet.missing_binding,
+        unresolved_bindings: packet.unresolved_bindings,
+        target: {
+          lane_group_ids: ["BK|CHURCH AVENUE"],
+          feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+          geometry_scopes: ["coextensive_with_lane_group"],
+          matched_date: date,
+          directions: ["EB", "WB"],
+          open_dates_literals: ["10/23/2019"],
+          named_sbs_routes: [],
+        },
+        prior_receipt: {
+          receipt_id: row.prior_acquisition_receipt!.receipt_id,
+          artifact: row.prior_acquisition_receipt!.artifact,
+          row_sha256: row.prior_acquisition_receipt!.row_sha256,
+        },
+        search: {
+          exact_queries: [{ category: "official_nyc_dot_lane_project",
+            query: `site:nyc.gov Church Avenue ${routeId}`, query_status: "performed_2026-07-15" }],
+          domains: ["www.nyc.gov"],
+          urls_inspected: [projectUrl],
+          retrievals: [{ category: "official_nyc_dot_lane_project", id: "church-project",
+            retrieved_on: "2026-07-15", sha256: project.contentHash, status: "acquired" }],
+          disposition: "binding_absent_after_search",
+        },
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+    };
+    const b35Finding = {
+      source_id: "church-project-source",
+      source_url: projectUrl,
+      source_pdf_sha256: project.contentHash,
+      evidence_refs: evidenceRefs(project),
+      context_finding: {
+        candidate_route_id: "B35",
+        finding_kind: "positive_project_corridor_service_nonterminal",
+        supported_scope: "project_corridor_service_only",
+        unsupported_bindings: b35Packet.unresolved_bindings,
+        finding_summary: "B35 is named with project date, bidirectional lanes, and limits, not exact traversal rows.",
+      },
+      remaining_unresolved_bindings: b35Packet.unresolved_bindings,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    };
+    const b68Finding = {
+      source_id: "church-study-source",
+      source_url: studyUrl,
+      source_pdf_sha256: study.contentHash,
+      evidence_refs: evidenceRefs(study),
+      context_finding: {
+        candidate_route_id: "B68",
+        finding_kind: "positive_historical_same_corridor_traversal_nonterminal",
+        supported_scope: "historical_same_corridor_traversal_only",
+        unsupported_bindings: b68Packet.unresolved_bindings,
+        finding_summary: "B68 historically traverses Church Avenue, without a 2019 project/date/feature binding.",
+      },
+      remaining_unresolved_bindings: b68Packet.unresolved_bindings,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    };
+    const b35Receipt = { ...makeReceipt(b35Row, b35Packet, "B35"),
+      supplemental_search: supplementalSearch("B35", b35Finding) };
+    const b68Receipt = { ...makeReceipt(b68Row, b68Packet, "B68"),
+      supplemental_search: supplementalSearch("B68", b68Finding) };
+    try {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(b35Receipt as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([b35Row], [b35Packet], receiptDir, rootDir)).not.toThrow();
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...b35Receipt,
+        supplemental_search: {
+          ...b35Receipt.supplemental_search,
+          positive_context_findings: [{ ...b35Finding, evidence_refs: evidenceRefs(project).slice(0, 2) }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([b35Row], [b35Packet], receiptDir, rootDir))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+      const traversalConfirmedRow = {
+        ...b35Row,
+        dossier_refs: [{
+          ...b35Row.dossier_refs[0]!,
+          candidate_target_match: true,
+          verdict_class: "traversal_confirmed" as const,
+          service_date: date,
+        }],
+      };
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(b35Receipt as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts(
+        [traversalConfirmedRow], [b35Packet], receiptDir, rootDir,
+      )).toThrow("exceeds its nonauthorizing project-corridor scope");
+      const crossDate = "2020-01-15";
+      const crossDateRow = { ...b35Row, implementation_date: crossDate };
+      const crossDatePacket = {
+        ...b35Packet,
+        implementation_date: crossDate,
+        what_is_known: {
+          ...b35Packet.what_is_known,
+          target_groups: b35Packet.what_is_known.target_groups.map((group) => ({
+            ...group,
+            feature_matches: group.feature_matches.map((match) => ({
+              ...match,
+              matched_date: crossDate,
+              matched_token_literal: "01/15/2020",
+              open_dates_literal: "01/15/2020",
+            })),
+          })),
+        },
+      };
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...b35Receipt,
+        implementation_date: crossDate,
+        target: {
+          ...b35Receipt.target,
+          matched_date: crossDate,
+          open_dates_literals: ["01/15/2020"],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts(
+        [crossDateRow], [crossDatePacket], receiptDir, rootDir,
+      )).toThrow("does not bind the exact route to bounded corridor-service context");
+      const cloneTarget = <Packet extends typeof b35Packet>(packet: Packet) => ({
+        ...packet,
+        what_is_known: {
+          ...packet.what_is_known,
+          target_groups: packet.what_is_known.target_groups.map((group) => ({
+            ...group,
+            facility: "Flatbush Avenue",
+            lane_group_id: "BK|FLATBUSH AVENUE",
+            street: "FLATBUSH AVENUE",
+          })),
+        },
+      });
+      const b35FlatbushPacket = cloneTarget(b35Packet);
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...b35Receipt,
+        target: { ...b35Receipt.target, lane_group_ids: ["BK|FLATBUSH AVENUE"] },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts(
+        [b35Row], [b35FlatbushPacket], receiptDir, rootDir,
+      )).toThrow("does not bind the exact route to bounded corridor-service context");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(b68Receipt as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([b68Row], [b68Packet], receiptDir, rootDir)).not.toThrow();
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...b68Receipt,
+        supplemental_search: {
+          ...b68Receipt.supplemental_search,
+          positive_context_findings: [{
+            ...b68Finding,
+            context_finding: {
+              ...b68Finding.context_finding,
+              finding_kind: "positive_project_corridor_service_nonterminal",
+              supported_scope: "project_corridor_service_only",
+            },
+          }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([b68Row], [b68Packet], receiptDir, rootDir))
+        .toThrow("positive context exceeds its nonauthorizing project-corridor scope");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...b68Receipt,
+        supplemental_search: {
+          ...b68Receipt.supplemental_search,
+          positive_context_findings: [{ ...b68Finding, evidence_refs: evidenceRefs(study).slice(1) }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([b68Row], [b68Packet], receiptDir, rootDir))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+      const b68FlatbushPacket = cloneTarget(b68Packet);
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...b68Receipt,
+        target: { ...b68Receipt.target, lane_group_ids: ["BK|FLATBUSH AVENUE"] },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts(
+        [b68Row], [b68FlatbushPacket], receiptDir, rootDir,
+      )).toThrow("does not bind the exact route to bounded corridor-service context");
+      expect(b35Receipt.authorizes_study).toBeFalse();
+      expect(b35Receipt.authorizes_cross_product).toBeFalse();
+      expect(b35Receipt.unresolved_bindings).toEqual(["attribution", "direction", "traversal"]);
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
 });

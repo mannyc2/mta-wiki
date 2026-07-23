@@ -1,0 +1,37 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "church-avenue-2019-route-context-supplement",
+  "sources": [
+    {
+      "byte_length": 4549606,
+      "category": "official_nyc_dot_lane_project",
+      "content_sha256": "da8f9875fac24277e861f0691c1ff973d0ee47d571370180925b3ad8df3ab0a0",
+      "http_status": 200,
+      "id": "church_avenue_transit_project_update_oct2019",
+      "media_type": "application/pdf",
+      "note": "Official NYC DOT project update used only for nonterminal B35 project-corridor context. It names B35 and states the October 23, 2019 activation plus bidirectional lane limits, but it does not prove that B35 traversed all 18 exact feature rows on the candidate date or authorize an occurrence.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "nyc_dot_church_avenue_transit_update_oct2019",
+      "url": "https://www.nyc.gov/html/brt/downloads/pdf/church-ave-project-update-oct2019.pdf"
+    },
+    {
+      "byte_length": 3891538,
+      "category": "official_public_board_committee",
+      "content_sha256": "b3a3ff66cafa8dafa1584a2529a1aa0b192996aac737148ce965d096beb299cd",
+      "http_status": 200,
+      "id": "church_avenue_congested_corridor_report_2013",
+      "media_type": "application/pdf",
+      "note": "Official NYC DOT historical corridor report used only for nonterminal B68 same-corridor context. It says B68 is one of six routes that traverse Church Avenue, but it predates and does not bind B68 to the October 23, 2019 bus-lane project, exact feature rows, directions, or onset.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "nyc_dot_church_avenue_congested_corridor_report_2013",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/church-ave.pdf"
+    }
+  ]
+}

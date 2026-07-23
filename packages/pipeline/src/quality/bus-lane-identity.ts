@@ -1571,10 +1571,30 @@ export function validateBindingReceiptDrafts(
             titleTokens.includes("FT") &&
             titleTokens.includes("WASHINGTON") &&
             titleTokens.includes("WADSWORTH");
+          const churchAvenueTransitProjectTitle =
+            titleTokens.includes("CHURCH") &&
+            (titleTokens.includes("AVE") || titleTokens.includes("AVENUE")) &&
+            titleTokens.includes("TRANSIT") &&
+            titleTokens.includes("TRAFFIC") &&
+            titleTokens.includes("IMPROVEMENTS") &&
+            titleTokens.includes("PROJECT") &&
+            titleTokens.includes("UPDATE") &&
+            titleTokens.includes("IMPLEMENTATION");
+          const churchAvenueCorridorStudyTitle =
+            titleTokens.includes("CITYWIDE") &&
+            titleTokens.includes("CONGESTED") &&
+            titleTokens.includes("CORRIDOR") &&
+            titleTokens.includes("CHURCH") &&
+            titleTokens.includes("AVENUE") &&
+            titleTokens.includes("MCDONALD") &&
+            titleTokens.includes("UTICA") &&
+            titleTokens.includes("FINAL") &&
+            titleTokens.includes("REPORT");
           if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
               metadataSha !== sourceContentSha256 || hash(readFileSync(sourceArtifactPath)) !== sourceContentSha256 ||
               (!proposalSourceTitle && !upperCorridorExistingConditionsTitle && !secondAvenueRedesignTitle &&
-                !west125SbsEnforcementTitle && !west178CorridorTitle) ||
+                !west125SbsEnforcementTitle && !west178CorridorTitle && !churchAvenueTransitProjectTitle &&
+                !churchAvenueCorridorStudyTitle) ||
               !supplementalUrls.includes(sourceUrl) ||
               !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
                 retrieval.sha256 === sourceContentSha256)) {
@@ -1656,8 +1676,49 @@ export function validateBindingReceiptDrafts(
               window.tokens.has("WASHINGTON") &&
               window.tokens.has("WADSWORTH") &&
               Math.max(...window.positions) - Math.min(...window.positions) <= 6);
+          const exactChurchAvenuePacketTarget =
+            packet.what_is_known.target_groups.length === 1 &&
+            packet.what_is_known.target_groups[0]?.lane_group_id === "BK|CHURCH AVENUE";
+          const exactChurchAvenueProjectWindow = churchAvenueTransitProjectTitle &&
+            exactChurchAvenuePacketTarget &&
+            row.implementation_date === "2019-10-23" &&
+            [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+              block.route &&
+              block.tokens.has("B35") &&
+              block.tokens.has("DAILY") &&
+              block.tokens.has("RIDERS"))) &&
+            [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+              block.tokens.has("CURBSIDE") &&
+              block.tokens.has("BUS") &&
+              block.tokens.has("LANES") &&
+              block.tokens.has("BOTH") &&
+              block.tokens.has("DIRECTIONS") &&
+              block.tokens.has("MARLBOROUGH") &&
+              block.tokens.has("7") &&
+              block.tokens.has("ST"))) &&
+            [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+              block.tokens.has("BUS") &&
+              block.tokens.has("LANES") &&
+              block.tokens.has("ACTIVATED") &&
+              block.tokens.has("OCTOBER") &&
+              block.tokens.has("23") &&
+              block.tokens.has("2019")));
+          const exactChurchAvenueHistoricalTraversalWindow = churchAvenueCorridorStudyTitle &&
+            exactChurchAvenuePacketTarget &&
+            metadata.publishedDate === "2013-02-01" &&
+            [...citedPageWindows.values()].some((window) => window.blocks.some((routeBlock) =>
+              routeBlock.route &&
+              routeBlock.tokens.has("AVENUE") &&
+              window.blocks.some((traverseBlock) =>
+                traverseBlock.tokens.has("SIX") &&
+                traverseBlock.tokens.has("BUS") &&
+                traverseBlock.tokens.has("LINES") &&
+                traverseBlock.tokens.has("TRAVERSE") &&
+                traverseBlock.tokens.has("CHURCH") &&
+                Math.abs(routeBlock.position - traverseBlock.position) <= 1)));
           if (!boundedServiceContext && !boundedExplicitSbsRouteContext &&
-              !exactWest178CorridorServiceWindow) {
+              !exactWest178CorridorServiceWindow && !exactChurchAvenueProjectWindow &&
+              !exactChurchAvenueHistoricalTraversalWindow) {
             throw new Error(`${contextPath}: staged source-block evidence does not bind the exact route to bounded corridor-service context`);
           }
           const exactUpperCorridorReviewWindow = upperCorridorExistingConditionsTitle &&
@@ -1710,6 +1771,10 @@ export function validateBindingReceiptDrafts(
               block.tokens.has("MORNINGSIDE") &&
               block.tokens.has("FALL") &&
               block.tokens.has("2015")));
+          const candidateDateTraversalConfirmed = row.dossier_refs.some((ref) =>
+            ref.candidate_target_match === true &&
+            ref.verdict_class === "traversal_confirmed" &&
+            ref.service_date === row.implementation_date);
           const finding = object(context.context_finding, `${contextPath}.context_finding`);
           exactKeys(finding, new Set([
             "candidate_route_id", "finding_kind", "finding_summary", "supported_scope", "unsupported_bindings",
@@ -1729,6 +1794,9 @@ export function validateBindingReceiptDrafts(
           const isProjectCorridorServiceContext =
             finding.finding_kind === "positive_project_corridor_service_nonterminal" &&
             finding.supported_scope === "project_corridor_service_only";
+          const isHistoricalSameCorridorTraversalContext =
+            finding.finding_kind === "positive_historical_same_corridor_traversal_nonterminal" &&
+            finding.supported_scope === "historical_same_corridor_traversal_only";
           if (isOtherExtentContext && (!commonContextScopeValid || !proposalSourceTitle)) {
             throw new Error(`${contextPath}: positive context exceeds its nonauthorizing other-extent scope`);
           }
@@ -1737,12 +1805,23 @@ export function validateBindingReceiptDrafts(
                 (!exactUpperCorridorReviewWindow &&
                   !exactSecondAvenueProjectWindow &&
                   !exactWest125ExtensionWindow &&
-                  !exactWest178CorridorServiceWindow) ||
+                  !exactWest178CorridorServiceWindow &&
+                  !exactChurchAvenueProjectWindow) ||
+                (exactChurchAvenueProjectWindow &&
+                  (!receiptUnresolved.includes("traversal") || candidateDateTraversalConfirmed)) ||
                 object(prior.source_findings, `${contextPath}.prior.source_findings`)
                   .exact_project_route_statement_found !== true)) {
             throw new Error(`${contextPath}: positive context exceeds its nonauthorizing project-corridor scope`);
           }
-          if (!isOtherExtentContext && !isProjectCorridorServiceContext) {
+          if (isHistoricalSameCorridorTraversalContext &&
+              (!commonContextScopeValid || !exactChurchAvenueHistoricalTraversalWindow ||
+                object(prior.source_findings, `${contextPath}.prior.source_findings`)
+                  .exact_project_route_statement_found !== false ||
+                !receiptUnresolved.includes("traversal") || candidateDateTraversalConfirmed)) {
+            throw new Error(`${contextPath}: historical same-corridor context transferred to the candidate-date project`);
+          }
+          if (!isOtherExtentContext && !isProjectCorridorServiceContext &&
+              !isHistoricalSameCorridorTraversalContext) {
             throw new Error(`${contextPath}: positive context has an unsupported typed scope`);
           }
           nonempty(finding.finding_summary, `${contextPath}.context_finding.finding_summary`);
