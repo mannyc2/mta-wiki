@@ -3990,4 +3990,231 @@ describe("bus-lane identity exact-date targeting", () => {
       rmSync(rootDir, { recursive: true, force: true });
     }
   });
+
+  it("keeps the B83 Pennsylvania Avenue review exact despite B82 lane-row attribution", () => {
+    const date = "2018-06-30";
+    const entry = candidate("pennsylvania-b83", "B83", date);
+    const featureRows = [
+      ["0046968", "SB", "6/30/2018", "B82"], ["0046980", "NB", "6/30/2018", "B82"],
+      ["9009290", "SB", "6/30/2018", "B82"], ["0046977", "NB", "6/30/2018", "B82"],
+      ["9009291", "SB", "6/30/2018", "B82"], ["9009265", "NB", "6/30/2018", "B82"],
+      ["0046972", "NB", "6/30/2018", "B82"], ["0168096", "NB", "6/30/2018", "B82"],
+      ["0046977", "SB", "6/30/2018", "B82"], ["9009290", "NB", "6/30/2018", "B82"],
+      ["0046974", "SB", "6/30/2018", "B82"], ["9009291", "NB", "6/30/2018", "B82"],
+      ["0046980", "SB", "6/30/2018", "B82"], ["0046916", "SB", "6/30/2018", "B82"],
+      ["0046922", "SB", "6/30/2018", "B82"], ["0046968", "NB", "6/30/2018", "B82"],
+      ["0292895", "NB", "6/30/2018", "B82"], ["0046912", "SB", "6/30/2018", "B82"],
+      ["0046912", "NB", "6/30/2018", "B82"], ["9009248", "NB", "6/30/2018", "B82"],
+      ["0292895", "SB", "6/30/2018", "B82"], ["0046914", "NB", "6/30/2018", "B82"],
+      ["9009249", "NB", "6/30/2018", "B82"], ["9009266", "SB", "6/30/2018", "B82"],
+      ["0046974", "NB", "6/30/2018", "B82"], ["0046922", "NB", "6/30/2018", "B82"],
+      ["0046969", "SB", "6/30/2018", "B82"], ["9009265", "SB", "6/30/2018", "B82"],
+      ["0292894", "SB", "06/30/2018", null], ["0292894", "NB", "06/30/2018", null],
+      ["0168096", "SB", "6/30/2018", "B82"], ["0046916", "NB", "6/30/2018", "B82"],
+      ["0046914", "SB", "6/30/2018", "B82"], ["9009266", "NB", "6/30/2018", "B82"],
+      ["0046969", "NB", "6/30/2018", "B82"], ["0046972", "SB", "6/30/2018", "B82"],
+    ] as const;
+    const [baseRow] = buildBusLaneIdentityLedger({
+      bridgeCandidates: [entry.bridge],
+      trackerCandidates: [entry.tracker],
+      routeAnchors: [anchor("B83")],
+      dossierRows: [dossier({
+        candidateId: entry.bridge.candidate_id,
+        routeId: "B83",
+        date,
+        laneGroupId: null,
+        pathSource: "unavailable",
+        pathIdentity: null,
+        reason: "historical_schedule_unavailable_pre_2023",
+      })],
+      dossierArtifact: "dossier.jsonl",
+      laneFeatures: featureRows.map(([featureId, direction, literal, sbsRoute]) => lane({
+        feature_id: featureId,
+        lane_group_id: "BK|PENNSYLVANIA AVENUE",
+        opened: literal,
+        direction,
+        attributes: {
+          open_dates: literal,
+          segmentid: featureId,
+          ...(sbsRoute ? { sbs_route1: sbsRoute } : {}),
+        },
+      })),
+      laneSnapshotId: "lanes",
+      laneSourceId: "lane_source",
+      gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+    });
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-pennsylvania-"));
+    const receiptDir = join(rootDir, "receipts");
+    const acquiredDir = join(rootDir,
+      "data/quality/relationship-integrity/bus-lane-acquisition/supplemental/pennsylvania-fixture");
+    mkdirSync(receiptDir, { recursive: true });
+    mkdirSync(acquiredDir, { recursive: true });
+    const laneUrl = "https://www.nyc.gov/bus-lane-camera-report.pdf";
+    const boardUrl = "https://www.nyc.gov/b82-project-board.pdf";
+    const laneHash = createHash("sha256").update("lane report").digest("hex");
+    const boardHash = createHash("sha256").update("board report").digest("hex");
+    writeFileSync(join(acquiredDir, "acquired-source-checks.json"), JSON.stringify({ sources: [
+      { url: laneUrl, content_sha256: laneHash, retrieval_status: "acquired" },
+      { url: boardUrl, content_sha256: boardHash, retrieval_status: "acquired" },
+    ] }));
+    const attempts = [
+      { category: "official_nyc_dot_lane_project",
+        query: "site:nyc.gov B83 Pennsylvania Avenue 2018-06-30 lane project",
+        query_status: "performed_2026-07-15", urls_checked: [laneUrl],
+        retrievals: [{ id: "lane", retrieved_on: "2026-07-15", sha256: laneHash, status: "acquired" }] },
+      { category: "official_public_board_committee",
+        query: "site:nyc.gov B83 Pennsylvania Avenue 2018-06-30 public board",
+        query_status: "performed_2026-07-15", urls_checked: [boardUrl],
+        retrievals: [{ id: "board", retrieved_on: "2026-07-15", sha256: boardHash, status: "acquired" }] },
+    ];
+    const prior = {
+      receipt_id: "prior-pennsylvania",
+      researched_on: "2026-07-15",
+      source_findings: { exact_project_route_statement_found: false },
+      outcome: { still_unresolved: true },
+      claim_results: { exact_route_treatment_binding_proved: false, exact_route_binding_evidence: [] },
+      acquisition_attempts: attempts,
+    };
+    const priorLine = stableJson(prior as unknown as JsonValue);
+    writeFileSync(join(rootDir, "prior.jsonl"), `${priorLine}\n`);
+    const row = { ...baseRow!, prior_acquisition_receipt: {
+      receipt_id: prior.receipt_id,
+      artifact: "prior.jsonl",
+      row_sha256: createHash("sha256").update(priorLine).digest("hex"),
+      disposition: "completed_search_route_linkage_unresolved",
+      next_action: "Retain pure absence.",
+    } };
+    const packet = buildBusLaneResearchPackets([row]).packets[0]!;
+    const targetFor = (candidatePacket = packet) => {
+      const groups = candidatePacket.what_is_known.target_groups;
+      const matches = groups.flatMap((group) => group.feature_matches);
+      return {
+        directions: [...new Set(matches.map((match) => match.direction))].sort(),
+        feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+        feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+        feature_row_count: matches.length,
+        feature_rows: matches.map((match) => ({
+          feature_key: match.feature_key, feature_id: match.feature_id, direction: match.direction,
+        })),
+        geometry_scopes: [...new Set(groups.map((group) => group.geometry_scope))].sort(),
+        lane_group_ids: groups.map((group) => group.lane_group_id),
+        matched_date: date,
+        named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+        open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+      };
+    };
+    const supplemental = {
+      domains: ["www.nyc.gov"],
+      exact_queries: [
+        { category: "official_nyc_dot_lane_project",
+          query: "site:nyc.gov B83 Pennsylvania Avenue 2018-06-30 lane project",
+          query_status: "performed_2026-07-23_reviewed_results" },
+        { category: "official_public_board_committee",
+          query: "site:nyc.gov B83 Pennsylvania Avenue 2018-06-30 public board",
+          query_status: "performed_2026-07-23_reviewed_results" },
+      ],
+      finding_corrections: [],
+      operator: "fixture-reviewer",
+      retrievals: [
+        { category: "official_nyc_dot_lane_project", retrieved_on: "2026-07-23",
+          sha256: laneHash, status: "acquired", url: laneUrl },
+        { category: "official_public_board_committee", retrieved_on: "2026-07-23",
+          sha256: boardHash, status: "acquired", url: boardUrl },
+      ],
+      searched_at: "2026-07-23T12:00:00Z",
+      urls_inspected: [laneUrl, boardUrl].sort(),
+    };
+    const receipt = {
+      schema_version: 1, receipt_id: "binding-pennsylvania", receipt_kind: "binding_absent_after_search",
+      candidate_id: row.candidate_id, candidate_fingerprint: row.candidate_fingerprint,
+      gtfs_route_id: "B83", implementation_date: date, gap_ids: [row.ledger_id], searched_at: "2026-07-15",
+      operator: "fixture-reviewer", candidate_urls: [], disposition: "binding_absent_after_search",
+      missing_binding: "traversal", unresolved_bindings: ["attribution", "direction", "traversal"],
+      target: targetFor(),
+      prior_receipt: { receipt_id: prior.receipt_id, artifact: "prior.jsonl",
+        row_sha256: row.prior_acquisition_receipt.row_sha256 },
+      search: {
+        exact_queries: attempts.map(({ category, query, query_status }) => ({ category, query, query_status })),
+        domains: ["www.nyc.gov"],
+        urls_inspected: [laneUrl, boardUrl].sort(),
+        retrievals: attempts.flatMap((attempt) => attempt.retrievals.map((retrieval) =>
+          ({ category: attempt.category, ...retrieval }))),
+        disposition: "binding_absent_after_search",
+      },
+      supplemental_search: supplemental,
+      authorizes_study: false, authorizes_cross_product: false,
+    };
+    const validate = (draft: Record<string, unknown>, candidateRow = row, candidatePacket = packet) => {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+      return () => validateBindingReceiptDrafts([candidateRow], [candidatePacket], receiptDir, rootDir);
+    };
+    const drift = (transform: (match: typeof packet.what_is_known.target_groups[0]["feature_matches"][number],
+      index: number) => typeof packet.what_is_known.target_groups[0]["feature_matches"][number]) => {
+      const targetGroups = packet.what_is_known.target_groups.map((group) => ({
+        ...group, feature_matches: group.feature_matches.map(transform),
+      }));
+      const candidatePacket = { ...packet, what_is_known: { ...packet.what_is_known, target_groups: targetGroups } };
+      const candidateRow = { ...row, onset_evidence: { ...row.onset_evidence, target_groups: targetGroups } };
+      return { candidatePacket, candidateRow, draft: { ...receipt, target: targetFor(candidatePacket) } };
+    };
+    try {
+      expect(packet.missing_binding).toBe("traversal");
+      expect(packet.unresolved_bindings).toEqual(["attribution", "direction", "traversal"]);
+      expect(targetFor()).toMatchObject({
+        feature_row_count: 36, directions: ["NB", "SB"], named_sbs_routes: ["B82"],
+        open_dates_literals: ["06/30/2018", "6/30/2018"],
+      });
+      expect(targetFor().feature_ids).toHaveLength(19);
+      expect(packet.what_is_known.target_groups[0]!.feature_matches.filter((match) =>
+        stableJson(match.sbs_routes) === stableJson(["B82"]))).toHaveLength(34);
+      expect(packet.what_is_known.target_groups[0]!.feature_matches.filter((match) =>
+        match.sbs_routes.length === 0)).toHaveLength(2);
+      expect(validate(receipt)).not.toThrow();
+
+      const routeTransferRow = { ...row, gtfs_route_id: "B82" };
+      const routeTransferPacket = { ...packet, gtfs_route_id: "B82" };
+      expect(validate({ ...receipt, gtfs_route_id: "B82", supplemental_search: { ...supplemental,
+        exact_queries: supplemental.exact_queries.map((query) => ({
+          ...query, query: query.query.replace("B83", "B82"),
+        })),
+      } }, routeTransferRow, routeTransferPacket))
+        .toThrow("Pennsylvania Avenue B83 pure-absence review contract does not match the exact candidate");
+      const homogenized = drift((match) => ({ ...match, sbs_routes: ["B82"] }));
+      expect(validate(homogenized.draft, homogenized.candidateRow, homogenized.candidatePacket))
+        .toThrow("Pennsylvania Avenue B83 pure-absence review contract does not match the exact candidate");
+      for (const altered of [
+        drift((match, index) => index === 0 ? { ...match, feature_key: `${match.feature_key}-drift` } : match),
+        drift((match, index) => index === 0 ? { ...match, feature_id: "9999999" } : match),
+        drift((match, index) => index === 0 ? { ...match, direction: "NB" } : match),
+        drift((match, index) => index === 0 ? { ...match, matched_date: "2018-07-01" } : match),
+        drift((match, index) => index === 28 ? { ...match, open_dates_literal: "6/30/2018",
+          matched_token_literal: "6/30/2018" } : match),
+      ]) {
+        expect(validate(altered.draft, altered.candidateRow, altered.candidatePacket))
+          .toThrow("Pennsylvania Avenue B83 pure-absence review contract does not match the exact candidate");
+      }
+      const reversedGroups = packet.what_is_known.target_groups.map((group) => ({
+        ...group, feature_matches: [...group.feature_matches].reverse(),
+      }));
+      const reversedPacket = { ...packet, what_is_known: { ...packet.what_is_known, target_groups: reversedGroups } };
+      const reversedRow = { ...row, onset_evidence: { ...row.onset_evidence, target_groups: reversedGroups } };
+      expect(validate({ ...receipt, target: targetFor(reversedPacket) }, reversedRow, reversedPacket))
+        .toThrow("Pennsylvania Avenue B83 pure-absence review contract does not match the exact candidate");
+      expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+        exact_queries: supplemental.exact_queries.map((query) => ({ ...query,
+          query: `${query.query} B82` })) } }))
+        .toThrow("Pennsylvania Avenue B83 pure-absence review contract does not match the exact candidate");
+      expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+        positive_context_findings: [{}] } })).toThrow();
+      expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+        finding_corrections: [{}] } })).toThrow();
+      expect(validate({ ...receipt,
+        occurrence_context: { occurrence_id: "occurrence_fake", accepted_decision_id: "decision_fake" } }))
+        .toThrow("occurrence context is not bound to an accepted occurrence decision");
+      expect(validate({ ...receipt, authorizes_study: true }))
+        .toThrow("binding receipt search preservation or authorization guard failed");
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
 });

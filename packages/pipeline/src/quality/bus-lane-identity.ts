@@ -361,6 +361,78 @@ function isExactVanSinderenPacketTarget(
     stableJson(packet.unresolved_bindings) === stableJson(["attribution", "traversal"]);
 }
 
+const PENNSYLVANIA_AVENUE_B83_EXPECTED_OCCURRENCES = [
+  ["dot-lane-feature:088dbfd098bee30421a58be0", "0046968", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:0aebefbb9df01b1b03063864", "0046980", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:0f7adea56913d963e5d197f8", "9009290", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:0fb22348e0a249fd809fddd2", "0046977", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:1224729d1c38c972236e39cd", "9009291", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:2f5a4d690b95c0e5d3232a55", "9009265", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:3b46470b480dcb432c1d1556", "0046972", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:5e336f3a7965551e4f6af2d7", "0168096", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:627cc2225ffc7c283709b86c", "0046977", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:65907c81b1999c7f52f5a5e3", "9009290", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:65d474260b33f82c64a54779", "0046974", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:71f6229c72ecc4726ab3b819", "9009291", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:77b18291feda731598b9137d", "0046980", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:7e7db264e5def1b81d508728", "0046916", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:877106b961c9d6ee1668966e", "0046922", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:97cb3338e05c4bbae531b3bf", "0046968", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:9a0c4fc09a9b7fd29e28269f", "0292895", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:9fe1e0985ddec6330ecc4f70", "0046912", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:af4ca2d6e644e169906fd052", "0046912", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:afcf5232cdbb3bc32291db7a", "9009248", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:b309f717fd810a40eaad2c8c", "0292895", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:b4d58471b6880ade47f12653", "0046914", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:b88a244257690b3ef89d69b0", "9009249", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:c6eee6d0d01d6b523ebc60e4", "9009266", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:c861f2636b602ada25369cab", "0046974", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:ca62fd89a0aa98f4572c2752", "0046922", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:d2ff505f424de2b3b5e91fa0", "0046969", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:da73e1c82a74c36f9ce90655", "9009265", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:dd675f67fcc798acef9e379c", "0292894", "SB", "06/30/2018", []],
+  ["dot-lane-feature:e7b607bf9ad4081fc6e32b03", "0292894", "NB", "06/30/2018", []],
+  ["dot-lane-feature:e9c402317f0073174dc1484a", "0168096", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:ede2d4043541fe11903b95f6", "0046916", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:f4962935967fa5191a6f6aca", "0046914", "SB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:f4b48f5d91b983d04e9edb68", "9009266", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:f801175c9a278dd6cf9df67c", "0046969", "NB", "6/30/2018", ["B82"]],
+  ["dot-lane-feature:fd5ec6f189ef25e3fe57be60", "0046972", "SB", "6/30/2018", ["B82"]],
+] as const;
+
+function isExactPennsylvaniaAvenuePacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const group = packet.what_is_known.target_groups[0];
+  if (!group) return false;
+  const matches = group.feature_matches;
+  const actualOccurrences = matches.map((match) => [
+    match.feature_key,
+    match.feature_id,
+    match.direction,
+    match.open_dates_literal,
+    match.sbs_routes,
+  ]);
+  return row.gtfs_route_id === "B83" && row.implementation_date === "2018-06-30" &&
+    packet.missing_binding === "traversal" &&
+    packet.what_is_known.target_groups.length === 1 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    group.lane_group_id === "BK|PENNSYLVANIA AVENUE" &&
+    group.geometry_scope === "coextensive_with_lane_group" &&
+    stableJson(actualOccurrences) ===
+      stableJson(PENNSYLVANIA_AVENUE_B83_EXPECTED_OCCURRENCES as unknown as JsonValue) &&
+    matches.every((match) => match.matched_date === "2018-06-30" &&
+      match.matched_token_literal === match.open_dates_literal) &&
+    stableJson([...new Set(matches.map((match) => match.feature_id))].sort()) === stableJson([
+      "0046912", "0046914", "0046916", "0046922", "0046968", "0046969", "0046972", "0046974",
+      "0046977", "0046980", "0168096", "0292894", "0292895", "9009248", "9009249", "9009265",
+      "9009266", "9009290", "9009291",
+    ]) &&
+    stableJson([...new Set(matches.map((match) => match.direction))].sort()) === stableJson(["NB", "SB"]) &&
+    stableJson(packet.unresolved_bindings) === stableJson(["attribution", "direction", "traversal"]);
+}
+
 function isoReviewTime(value: unknown, path: string): string {
   const timestamp = nonempty(value, path);
   const day = /^\d{4}-\d{2}-\d{2}$/u.test(timestamp);
@@ -1147,6 +1219,13 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
       throw new Error(`${receiptPath}: Van Sinderen packet target does not preserve exact ledger occurrence parity`);
     }
+    const pennsylvaniaAvenueLedgerTarget = row.implementation_date === "2018-06-30" &&
+      row.onset_evidence.target_groups.length === 1 &&
+      row.onset_evidence.target_groups[0]?.lane_group_id === "BK|PENNSYLVANIA AVENUE";
+    if (pennsylvaniaAvenueLedgerTarget &&
+        stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
+      throw new Error(`${receiptPath}: Pennsylvania Avenue packet target does not preserve exact ledger occurrence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -1280,6 +1359,9 @@ export function validateBindingReceiptDrafts(
     if (stableJson(search as JsonValue) !== stableJson(expectedSearch) ||
         receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
       throw new Error(`${receiptPath}: binding receipt search preservation or authorization guard failed`);
+    }
+    if (pennsylvaniaAvenueLedgerTarget && receipt.supplemental_search === undefined) {
+      throw new Error(`${receiptPath}: Pennsylvania Avenue review requires candidate-exact supplemental search`);
     }
     if (receipt.supplemental_search !== undefined) {
       const supplemental = object(receipt.supplemental_search, `${receiptPath}.supplemental_search`);
@@ -2236,6 +2318,39 @@ export function validateBindingReceiptDrafts(
             !hasExactQuery("official_nyc_dot_lane_project") ||
             !hasExactQuery("official_public_board_committee")) {
           throw new Error(`${receiptPath}: Van Sinderen pure-absence review contract does not match the exact candidate`);
+        }
+      }
+      if (pennsylvaniaAvenueLedgerTarget) {
+        const correctionCount = supplemental.finding_corrections.length;
+        const contextCount = Array.isArray(supplemental.positive_context_findings)
+          ? supplemental.positive_context_findings.length
+          : 0;
+        const supplementalQueries = supplemental.exact_queries.map((value, index) =>
+          object(value, `${receiptPath}.supplemental_search.exact_queries[${index}]`));
+        const hasExactQuery = (category: string) => supplementalQueries.some((query) => {
+          if (query.category !== category) return false;
+          const literal = String(query.query).toUpperCase();
+          const tokens = literal.split(/[^A-Z0-9+]+/u).filter(Boolean);
+          return ["B83", "PENNSYLVANIA", "AVENUE"].every((token) => tokens.includes(token)) &&
+            !tokens.includes("B82") && literal.includes("2018-06-30");
+        });
+        const sourceFindings = object(prior.source_findings,
+          `${receiptPath}.prior.source_findings`);
+        const priorOutcome = object(prior.outcome, `${receiptPath}.prior.outcome`);
+        const priorClaims = object(prior.claim_results, `${receiptPath}.prior.claim_results`);
+        if (!isExactPennsylvaniaAvenuePacketTarget(packet, row) ||
+            receipt.missing_binding !== "traversal" ||
+            stableJson(receiptUnresolved) !== stableJson(["attribution", "direction", "traversal"]) ||
+            correctionCount !== 0 || contextCount !== 0 ||
+            sourceFindings.exact_project_route_statement_found !== false ||
+            priorOutcome.still_unresolved !== true ||
+            priorClaims.exact_route_treatment_binding_proved !== false ||
+            !Array.isArray(priorClaims.exact_route_binding_evidence) ||
+            priorClaims.exact_route_binding_evidence.length !== 0 ||
+            !hasExactQuery("official_nyc_dot_lane_project") ||
+            !hasExactQuery("official_public_board_committee") ||
+            receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
+          throw new Error(`${receiptPath}: Pennsylvania Avenue B83 pure-absence review contract does not match the exact candidate`);
         }
       }
     }
