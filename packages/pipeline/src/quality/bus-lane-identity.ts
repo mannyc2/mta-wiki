@@ -512,6 +512,11 @@ const QUEENS_PLAZA_CONTEXT_SOURCES = new Map([
     url: "https://www.mta.info/document/163136",
   }],
 ]);
+const UNATTRIBUTED_SIM_ROUTES = new Set(["SIM23", "SIM24"]);
+const UNATTRIBUTED_SIM_PRIOR_RECEIPTS = new Map([
+  ["SIM23", "staten-island-acquisition:4f8c82427f9fa4ff9cb39112"],
+  ["SIM24", "staten-island-acquisition:a5a0f4514158f16261378001"],
+]);
 
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
@@ -547,6 +552,24 @@ function isExactQueensPlazaPacketTarget(
       ["dot-lane-feature:958069d9209c6e495439a1dd", "9024007", "WB", "2025-12-13", "12/13/2025", "12/13/2025", []],
     ]) &&
     stableJson(packet.unresolved_bindings) === stableJson(expectedUnresolvedBindings);
+}
+
+function isExactUnattributedSimPacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  return UNATTRIBUTED_SIM_ROUTES.has(row.gtfs_route_id) &&
+    row.implementation_date === "2015-05-27" &&
+    row.detector_verdict === "unreviewed" &&
+    packet.missing_binding === "attribution" &&
+    packet.what_is_known.target_groups.length === 0 &&
+    row.onset_evidence.target_groups.length === 0 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    row.onset_evidence.dataset_fields_present === false &&
+    stableJson(packet.what_is_known.detector_reason_codes) ===
+      stableJson(["no_dot_feature_open_date_token_matches_candidate_date"]) &&
+    stableJson(packet.unresolved_bindings) ===
+      stableJson(["attribution", "onset", "phase", "traversal"]);
 }
 
 function isoReviewTime(value: unknown, path: string): string {
@@ -1364,6 +1387,13 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
       throw new Error(`${receiptPath}: Queens Plaza packet target does not preserve exact ledger occurrence parity`);
     }
+    const unattributedSimLedgerTarget = row.implementation_date === "2015-05-27" &&
+      row.onset_evidence.target_groups.length === 0 &&
+      UNATTRIBUTED_SIM_ROUTES.has(row.gtfs_route_id);
+    if (unattributedSimLedgerTarget &&
+        stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
+      throw new Error(`${receiptPath}: unattributed SIM packet target does not preserve exact zero-target parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -1509,6 +1539,65 @@ export function validateBindingReceiptDrafts(
     }
     if (queensPlazaLedgerTarget && receipt.supplemental_search === undefined) {
       throw new Error(`${receiptPath}: Queens Plaza review requires candidate-exact supplemental search`);
+    }
+    if (unattributedSimLedgerTarget) {
+      const priorCandidate = object(prior.candidate, `${receiptPath}.prior.candidate`);
+      const sourceFindings = object(prior.source_findings, `${receiptPath}.prior.source_findings`);
+      const priorOutcome = object(prior.outcome, `${receiptPath}.prior.outcome`);
+      const priorClaims = object(prior.claim_results, `${receiptPath}.prior.claim_results`);
+      const canonicalActions = object(prior.canonical_actions, `${receiptPath}.prior.canonical_actions`);
+      const routePage = object(sourceFindings.mta_route_page,
+        `${receiptPath}.prior.source_findings.mta_route_page`);
+      const exactCandidateQuery = exactQueries.some((query) => {
+        if (query.category !== "official_mta_route_project") return false;
+        const tokens = query.query.toUpperCase().split(/[^A-Z0-9+]+/u).filter(Boolean);
+        return [row.gtfs_route_id, "34TH", "STREET"].every((token) => tokens.includes(token));
+      });
+      const expectedRationale = `Completed candidate-exact Staten Island acquisition searches found official 34th Street lane material, but it names M34/M34A rather than ${row.gtfs_route_id} and does not preserve exact historical candidate segment identifiers or bind the route to an onset, stable phase, or candidate-date traversal. No exact target group can be constructed. Attribution, onset, phase, and traversal remain unresolved. This is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`;
+      if (!isExactUnattributedSimPacketTarget(packet, row) ||
+          priorPointer.receipt_id !== UNATTRIBUTED_SIM_PRIOR_RECEIPTS.get(row.gtfs_route_id) ||
+          priorPointer.artifact !==
+            "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/receipts.jsonl" ||
+          priorCandidate.candidate_id !== row.candidate_id ||
+          priorCandidate.normalized_route_id !== row.gtfs_route_id ||
+          priorCandidate.route_id !== row.gtfs_route_id ||
+          priorCandidate.implementation_date !== row.implementation_date ||
+          priorCandidate.identity !== `${row.gtfs_route_id}|bus_lane|2015-05-27|day` ||
+          receipt.missing_binding !== "attribution" ||
+          stableJson(receiptUnresolved) !==
+            stableJson(["attribution", "onset", "phase", "traversal"]) ||
+          target.feature_row_count !== 0 ||
+          stableJson(target.feature_keys as JsonValue) !== stableJson([]) ||
+          stableJson(target.feature_rows as JsonValue) !== stableJson([]) ||
+          receipt.rationale !== expectedRationale ||
+          receipt.supplemental_search !== undefined || receipt.occurrence_context !== undefined ||
+          sourceFindings.exact_project_route_statement_found !== false ||
+          sourceFindings.candidate_named_lane_record_count !== 0 ||
+          sourceFindings.broader_corridor_route_inventory_match !== false ||
+          stableJson(sourceFindings.official_lane_named_routes as JsonValue) !== stableJson(["M34", "M34A"]) ||
+          stableJson(sourceFindings.official_route_named_segment_ids as JsonValue) !== stableJson([]) ||
+          routePage.exact_route_title_found !== true || routePage.current_corridor_token_found !== true ||
+          routePage.retrieval_status !== "acquired" ||
+          typeof routePage.temporal_limitation !== "string" || !routePage.temporal_limitation ||
+          priorOutcome.exclusive_primary_disposition !== "completed_search_route_linkage_unresolved" ||
+          priorOutcome.registry_projection_excluded !== true || priorOutcome.still_unresolved !== true ||
+          priorOutcome.study_projection_eligible !== false ||
+          priorClaims.candidate_segment_ids_pinned !== false ||
+          priorClaims.date_and_phase_proved !== false ||
+          priorClaims.exact_route_treatment_binding_proved !== false ||
+          priorClaims.exact_segment_binding_proved !== false ||
+          priorClaims.explicit_phase_identity_proved !== false ||
+          priorClaims.operational_occurrence_identity_proved !== false ||
+          !Array.isArray(priorClaims.exact_route_binding_evidence) ||
+          priorClaims.exact_route_binding_evidence.length !== 0 ||
+          !Array.isArray(priorClaims.exact_segment_ids) || priorClaims.exact_segment_ids.length !== 0 ||
+          canonicalActions.operational_occurrence_added_or_updated !== false ||
+          !Array.isArray(canonicalActions.canonical_links_added) ||
+          canonicalActions.canonical_links_added.length !== 0 ||
+          !exactCandidateQuery || receipt.authorizes_study !== false ||
+          receipt.authorizes_cross_product !== false) {
+        throw new Error(`${receiptPath}: SIM23/SIM24 zero-target absence contract does not match the exact candidate`);
+      }
     }
     if (receipt.supplemental_search !== undefined) {
       const supplemental = object(receipt.supplemental_search, `${receiptPath}.supplemental_search`);

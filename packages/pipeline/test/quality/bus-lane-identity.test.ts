@@ -5013,4 +5013,189 @@ describe("bus-lane identity exact-date targeting", () => {
       }
     }
   });
+
+  it("closes SIM23 and SIM24 only as zero-target nonrefutational absences", () => {
+    const date = "2015-05-27";
+    const priorReceiptIds = new Map([
+      ["SIM23", "staten-island-acquisition:4f8c82427f9fa4ff9cb39112"],
+      ["SIM24", "staten-island-acquisition:a5a0f4514158f16261378001"],
+    ]);
+    for (const routeId of ["SIM23", "SIM24"]) {
+      const entry = candidate(`unattributed-${routeId.toLowerCase()}`, routeId, date);
+      const [baseRow] = buildBusLaneIdentityLedger({
+        bridgeCandidates: [entry.bridge],
+        trackerCandidates: [entry.tracker],
+        routeAnchors: [anchor(routeId)],
+        dossierRows: [dossier({
+          candidateId: entry.bridge.candidate_id,
+          routeId,
+          date,
+          laneGroupId: null,
+          pathSource: "unavailable",
+          pathIdentity: null,
+          reason: "historical_schedule_unavailable_pre_2023",
+        })],
+        dossierArtifact: "dossier.jsonl",
+        laneFeatures: [],
+        laneSnapshotId: "lanes",
+        laneSourceId: "lane_source",
+        gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+      });
+      const rootDir = mkdtempSync(join(tmpdir(), `bus-lane-unattributed-${routeId.toLowerCase()}-`));
+      const receiptDir = join(rootDir, "receipts");
+      const priorArtifact =
+        "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/receipts.jsonl";
+      mkdirSync(receiptDir, { recursive: true });
+      mkdirSync(join(rootDir,
+        "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island"), { recursive: true });
+      const attempts = [
+        {
+          category: "official_nyc_dot_lane_project",
+          query: "site:nyc.gov 34th Street bus lane 2015 M34 M34A SIM23 SIM24",
+          query_status: "performed_2026-07-15",
+          urls_checked: ["https://www.nyc.gov/34th-street"],
+          retrievals: [{ id: "dot-project", retrieved_on: "2026-07-15",
+            sha256: "1".repeat(64), status: "acquired" }],
+        },
+        {
+          category: "official_mta_route_project",
+          query: `site:mta.info "${routeId}" "34th Street" bus route project`,
+          query_status: "performed_2026-07-15",
+          urls_checked: [`https://bustime-classic.mta.info/m/?q=${routeId}`],
+          retrievals: [{ id: `mta-${routeId}`, retrieved_on: "2026-07-15",
+            sha256: "2".repeat(64), status: "acquired" }],
+        },
+        {
+          category: "official_public_board_committee",
+          query: "site:nyc.gov 34th Street bus lane 2015 M34 M34A SIM23 SIM24 community board",
+          query_status: "performed_2026-07-15",
+          urls_checked: ["https://www.nyc.gov/34th-street-board"],
+          retrievals: [{ id: "board", retrieved_on: "2026-07-15",
+            sha256: "3".repeat(64), status: "acquired" }],
+        },
+        {
+          category: "other_repository_approved_primary",
+          query: "NYC DOT Open Data 34th Street open_dates contains 2015-05-27",
+          query_status: "performed_2026-07-15",
+          urls_checked: ["https://data.cityofnewyork.us/34th-street"],
+          retrievals: [{ id: "open-data", retrieved_on: "2026-07-15",
+            sha256: "4".repeat(64), status: "acquired" }],
+        },
+      ];
+      const prior = {
+        receipt_id: priorReceiptIds.get(routeId),
+        researched_on: "2026-07-15",
+        candidate: {
+          candidate_id: entry.bridge.candidate_id,
+          normalized_route_id: routeId,
+          route_id: routeId,
+          implementation_date: date,
+          identity: `${routeId}|bus_lane|2015-05-27|day`,
+        },
+        source_findings: {
+          exact_project_route_statement_found: false,
+          candidate_named_lane_record_count: 0,
+          broader_corridor_route_inventory_match: false,
+          official_lane_named_routes: ["M34", "M34A"],
+          official_route_named_segment_ids: [],
+          mta_route_page: {
+            exact_route_title_found: true,
+            current_corridor_token_found: true,
+            retrieval_status: "acquired",
+            temporal_limitation: "The live route page is not historical candidate-date proof.",
+          },
+        },
+        outcome: {
+          exclusive_primary_disposition: "completed_search_route_linkage_unresolved",
+          registry_projection_excluded: true,
+          still_unresolved: true,
+          study_projection_eligible: false,
+        },
+        claim_results: {
+          candidate_segment_ids_pinned: false,
+          date_and_phase_proved: false,
+          exact_route_treatment_binding_proved: false,
+          exact_segment_binding_proved: false,
+          explicit_phase_identity_proved: false,
+          operational_occurrence_identity_proved: false,
+          exact_route_binding_evidence: [],
+          exact_segment_ids: [],
+        },
+        canonical_actions: { canonical_links_added: [], operational_occurrence_added_or_updated: false },
+        acquisition_attempts: attempts,
+      };
+      const priorLine = stableJson(prior as unknown as JsonValue);
+      writeFileSync(join(rootDir, priorArtifact), `${priorLine}\n`);
+      const row = { ...baseRow!, prior_acquisition_receipt: {
+        receipt_id: prior.receipt_id!,
+        artifact: priorArtifact,
+        row_sha256: createHash("sha256").update(priorLine).digest("hex"),
+        disposition: "completed_search_route_linkage_unresolved",
+        next_action: "Retain exact zero-target absence.",
+      } };
+      const packet = buildBusLaneResearchPackets([row]).packets[0]!;
+      const urls = [...new Set(attempts.flatMap((attempt) => attempt.urls_checked))].sort();
+      const rationale = `Completed candidate-exact Staten Island acquisition searches found official 34th Street lane material, but it names M34/M34A rather than ${routeId} and does not preserve exact historical candidate segment identifiers or bind the route to an onset, stable phase, or candidate-date traversal. No exact target group can be constructed. Attribution, onset, phase, and traversal remain unresolved. This is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`;
+      const receipt = {
+        schema_version: 1,
+        receipt_id: `binding-unattributed-${routeId.toLowerCase()}`,
+        receipt_kind: "binding_absent_after_search",
+        candidate_id: row.candidate_id,
+        candidate_fingerprint: row.candidate_fingerprint,
+        gtfs_route_id: routeId,
+        implementation_date: date,
+        gap_ids: [row.ledger_id],
+        searched_at: "2026-07-15",
+        operator: "fixture-reviewer",
+        candidate_urls: [],
+        disposition: "binding_absent_after_search",
+        missing_binding: "attribution",
+        unresolved_bindings: ["attribution", "onset", "phase", "traversal"],
+        target: {
+          directions: [], feature_ids: [], feature_keys: [], feature_row_count: 0, feature_rows: [],
+          geometry_scopes: [], lane_group_ids: [], matched_date: date, named_sbs_routes: [],
+          open_dates_literals: [],
+        },
+        prior_receipt: {
+          receipt_id: prior.receipt_id,
+          artifact: priorArtifact,
+          row_sha256: row.prior_acquisition_receipt.row_sha256,
+        },
+        rationale,
+        search: {
+          exact_queries: attempts.map(({ category, query, query_status }) => ({ category, query, query_status })),
+          domains: [...new Set(urls.map((url) => new URL(url).hostname))].sort(),
+          urls_inspected: urls,
+          retrievals: attempts.flatMap((attempt) => attempt.retrievals.map((retrieval) =>
+            ({ category: attempt.category, ...retrieval }))),
+          disposition: "binding_absent_after_search",
+        },
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      const validate = (draft: Record<string, unknown>, candidateRow = row, candidatePacket = packet) => {
+        writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+        return () => validateBindingReceiptDrafts([candidateRow], [candidatePacket], receiptDir, rootDir);
+      };
+      try {
+        expect(packet.missing_binding).toBe("attribution");
+        expect(packet.unresolved_bindings).toEqual(["attribution", "onset", "phase", "traversal"]);
+        expect(packet.what_is_known.target_groups).toEqual([]);
+        expect(validate(receipt)).not.toThrow();
+        expect(validate({ ...receipt, rationale: `${rationale} Traversal refuted.` }))
+          .toThrow("SIM23/SIM24 zero-target absence contract does not match the exact candidate");
+        expect(validate({ ...receipt, target: { ...receipt.target, feature_row_count: 1 } }))
+          .toThrow("binding receipt feature-row accounting parity failed");
+        expect(validate({ ...receipt, supplemental_search: {} }))
+          .toThrow("SIM23/SIM24 zero-target absence contract does not match the exact candidate");
+        expect(validate({ ...receipt,
+          occurrence_context: { occurrence_id: "occurrence_fake", accepted_decision_id: "decision_fake" } }))
+          .toThrow("occurrence context is not bound to an accepted occurrence decision");
+        expect(validate({ ...receipt, authorizes_study: true }))
+          .toThrow("binding receipt search preservation or authorization guard failed");
+      } finally {
+        rmSync(rootDir, { recursive: true, force: true });
+      }
+    }
+  });
 });
