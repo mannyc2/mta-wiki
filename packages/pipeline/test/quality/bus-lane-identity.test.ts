@@ -5014,6 +5014,301 @@ describe("bus-lane identity exact-date targeting", () => {
     }
   });
 
+  it("closes Hillside Avenue part one only with exact 195-row nonrefutational targets", () => {
+    const date = "2025-09-15";
+    const priorReceiptIds = new Map([
+      ["Q1", "queens-acquisition:ada385860a650d3218a38705"],
+      ["Q110", "queens-acquisition:5e146d100dff2cc2f758c879"],
+      ["Q44+", "queens-acquisition:f06f6aee8e250a15de1f5971"],
+    ]);
+    const uniqueFeatures = Array.from({ length: 190 }, (_, index) => {
+      const featureId = String(1_000_000 + (index % 97));
+      const direction = index < 97 ? "EB" : "WB";
+      return lane({
+        feature_id: featureId,
+        lane_group_id: "QNS|HILLSIDE AVENUE",
+        opened: "9/15/2025",
+        direction,
+        attributes: { open_dates: "9/15/2025", segmentid: featureId, direction },
+      });
+    });
+    const features = [
+      ...uniqueFeatures,
+      ...uniqueFeatures.slice(0, 5),
+      lane({
+        feature_id: "other-phase",
+        lane_group_id: "QNS|HILLSIDE AVENUE",
+        opened: "1/1/2024",
+        direction: "EB",
+      }),
+    ];
+    for (const routeId of ["Q1", "Q110", "Q44+"]) {
+      const entry = candidate(`hillside-${routeId.toLowerCase()}`, routeId, date);
+      const directionGap = routeId === "Q110";
+      const hasTargetDossierContext = routeId === "Q1";
+      const [baseRow] = buildBusLaneIdentityLedger({
+        bridgeCandidates: [entry.bridge],
+        trackerCandidates: [entry.tracker],
+        routeAnchors: [anchor(routeId)],
+        dossierRows: [dossier({
+          candidateId: entry.bridge.candidate_id,
+          routeId,
+          date,
+          laneGroupId: hasTargetDossierContext ? "QNS|HILLSIDE AVENUE" : null,
+          pathSource: "historical_schedule_timepoint_pattern",
+          pathIdentity: `${routeId}-pattern`,
+          reason: directionGap ? "direction_unknown" : "insufficient_path_points",
+        })],
+        dossierArtifact: "dossier.jsonl",
+        laneFeatures: features,
+        laneSnapshotId: "lanes",
+        laneSourceId: "lane_source",
+        gtfsServiceWindows: [{ start: "2025-01-01", end: "2026-12-31" }],
+      });
+      const rootDir = mkdtempSync(join(tmpdir(), `bus-lane-hillside-${routeId.toLowerCase()}-`));
+      const receiptDir = join(rootDir, "receipts");
+      const priorArtifact =
+        "data/quality/relationship-integrity/bus-lane-acquisition/shards/queens/receipts.jsonl";
+      mkdirSync(receiptDir, { recursive: true });
+      mkdirSync(join(rootDir,
+        "data/quality/relationship-integrity/bus-lane-acquisition/shards/queens"), { recursive: true });
+      const attempts = [
+        {
+          category: "official_nyc_dot_lane_project",
+          query: "site:nyc.gov/html/dot Hillside Avenue bus lanes 2025 routes community board PDF",
+          query_status: "performed_2026-07-15",
+          urls_checked: ["https://www.nyc.gov/hillside-project"],
+          retrievals: [{ id: "hillside-project", retrieved_on: "2026-07-15",
+            sha256: "1".repeat(64), status: "acquired" }],
+        },
+        {
+          category: "official_mta_route_project",
+          query: `site:mta.info "${routeId}" "Hillside Avenue" bus route project`,
+          query_status: "performed_2026-07-15",
+          urls_checked: [`https://bustime-classic.mta.info/m/?q=${routeId}`],
+          retrievals: [{ id: `mta-${routeId}`, retrieved_on: "2026-07-15",
+            sha256: "2".repeat(64), status: "acquired" }],
+        },
+        {
+          category: "official_public_board_committee",
+          query: "site:nyc.gov Hillside Avenue bus lanes 2025 community board",
+          query_status: "performed_2026-07-15",
+          urls_checked: ["https://www.nyc.gov/hillside-board"],
+          retrievals: [{ id: "hillside-board", retrieved_on: "2026-07-15",
+            sha256: "3".repeat(64), status: "acquired" }],
+        },
+        {
+          category: "other_repository_approved_primary",
+          query: "NYC DOT Open Data ycrg-ses3 facility=Hillside Avenue open_dates contains 2025-09-15",
+          query_status: "executed_2026-07-15",
+          urls_checked: ["https://data.cityofnewyork.us/hillside"],
+          retrievals: [{ id: "open-data", retrieved_on: "2026-07-15",
+            sha256: "4".repeat(64), status: "acquired" }],
+        },
+      ];
+      const isQ1 = routeId === "Q1";
+      const prior = {
+        receipt_id: priorReceiptIds.get(routeId),
+        researched_on: "2026-07-15",
+        candidate: {
+          candidate_id: entry.bridge.candidate_id,
+          normalized_route_id: routeId === "Q44+" ? "Q44" : routeId,
+          route_id: routeId,
+          implementation_date: date,
+          identity: `${routeId}|bus_lane|2025-09-15|day`,
+        },
+        source_findings: {
+          candidate_named_lane_record_count: 0,
+          official_lane_matching_record_count: 195,
+          official_lane_matching_segment_ids: Array.from({ length: 97 }, (_, index) => String(index)),
+          official_lane_named_routes: [],
+          official_route_named_segment_ids: [],
+          exact_project_route_statement_found: isQ1,
+          exact_project_route_source_id: isQ1 ? "mta_q1_hillside_profile" : null,
+          mta_route_page: {
+            exact_route_title_found: true,
+            current_corridor_token_found: false,
+            retrieval_status: "acquired",
+            temporal_limitation: "The live route page is not candidate-date traversal proof.",
+          },
+        },
+        outcome: {
+          exclusive_primary_disposition: isQ1
+            ? "linkage_supported_phase_unresolved"
+            : "completed_search_route_linkage_unresolved",
+          registry_projection_excluded: true,
+          still_unresolved: true,
+          study_projection_eligible: false,
+        },
+        claim_results: {
+          candidate_date_supported_at_day_precision: isQ1,
+          physical_bus_lane_record_acquired: true,
+          candidate_segment_ids_pinned: false,
+          date_and_phase_proved: false,
+          exact_route_treatment_binding_proved: isQ1,
+          exact_segment_binding_proved: false,
+          explicit_phase_identity_proved: false,
+          operational_occurrence_identity_proved: false,
+          exact_route_binding_evidence: isQ1 ? [{ source_id: "mta_q1_hillside_profile" }] : [],
+          exact_segment_ids: [],
+        },
+        canonical_actions: {
+          canonical_links_added: isQ1 ? ["link-1", "link-2", "link-3"] : [],
+          canonical_records_added: isQ1 ? ["record-1", "record-2"] : [],
+          canonical_records_updated: isQ1 ? ["route-q1"] : [],
+          operational_occurrence_added_or_updated: false,
+        },
+        acquisition_attempts: attempts,
+      };
+      const priorLine = stableJson(prior as unknown as JsonValue);
+      writeFileSync(join(rootDir, priorArtifact), `${priorLine}\n`);
+      const row = { ...baseRow!, prior_acquisition_receipt: {
+        receipt_id: prior.receipt_id!,
+        artifact: priorArtifact,
+        row_sha256: createHash("sha256").update(priorLine).digest("hex"),
+        disposition: prior.outcome.exclusive_primary_disposition,
+        next_action: "Retain exact nonrefutational absence.",
+      } };
+      const packet = buildBusLaneResearchPackets([row]).packets[0]!;
+      const groups = packet.what_is_known.target_groups;
+      const matches = groups.flatMap((group) => group.feature_matches);
+      const urls = [...new Set(attempts.flatMap((attempt) => attempt.urls_checked))].sort();
+      const target = {
+        directions: [...new Set(matches.map((match) => match.direction))].sort(),
+        feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+        feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+        feature_row_count: matches.length,
+        feature_rows: matches.map((match) => ({
+          feature_key: match.feature_key, feature_id: match.feature_id, direction: match.direction,
+        })),
+        geometry_scopes: [...new Set(groups.map((group) => group.geometry_scope))].sort(),
+        lane_group_ids: groups.map((group) => group.lane_group_id),
+        matched_date: date,
+        named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+        open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+      };
+      const unresolvedLead = packet.unresolved_bindings.includes("attribution")
+        ? "Attribution, direction, feature extent, phase, and traversal"
+        : "Direction, feature extent, phase, and traversal";
+      const rationale = isQ1
+        ? "Completed candidate-exact Queens acquisition searches preserve an evidence-backed Q1 route, treatment, and corridor context for the Hillside Avenue project, but do not bind Q1 to all 195 candidate-date feature-row occurrences, their full eastbound and westbound direction scope, a stable onset-versus-extension phase, or candidate-date traversal. The candidate and reconciliation artifacts retain no exact historical matched-segment identifiers, and the registry rows name no SBS route. Direction, feature extent, phase, and traversal remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection."
+        : routeId === "Q44+"
+          ? "Completed candidate-exact Queens acquisition searches retained all 195 Hillside Avenue candidate-date feature-row occurrences, 190 unique feature keys, 97 feature IDs, both eastbound and westbound directions, and the exact 2025-09-15 registry day. The prior acquisition normalizes the route to Q44 while preserving this ledger row's Q44+ SBS identity, the registry rows name no SBS route, candidate-dated historical schedule patterns cannot prove full direction-specific traversal or exclusion, and the pinned candidate provenance does not identify the exact matched subset or stable onset-versus-extension phase. Attribution, direction, feature extent, phase, and traversal remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection."
+          : `Completed candidate-exact Queens acquisition searches retained all 195 Hillside Avenue candidate-date feature-row occurrences, 190 unique feature keys, 97 feature IDs, both eastbound and westbound directions, and the exact 2025-09-15 registry day. The registry rows name no SBS route, candidate-dated historical schedule patterns cannot prove full direction-specific traversal or exclusion, and the pinned candidate provenance does not identify the exact matched subset or stable onset-versus-extension phase. ${unresolvedLead} remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`;
+      const receipt = {
+        schema_version: 1,
+        receipt_id: `binding-hillside-${routeId.toLowerCase()}`,
+        receipt_kind: "binding_absent_after_search",
+        candidate_id: row.candidate_id,
+        candidate_fingerprint: row.candidate_fingerprint,
+        gtfs_route_id: routeId,
+        implementation_date: date,
+        gap_ids: [row.ledger_id],
+        searched_at: "2026-07-15",
+        operator: "fixture-reviewer",
+        candidate_urls: [],
+        disposition: "binding_absent_after_search",
+        missing_binding: packet.missing_binding,
+        unresolved_bindings: packet.unresolved_bindings,
+        target,
+        prior_receipt: {
+          receipt_id: prior.receipt_id,
+          artifact: priorArtifact,
+          row_sha256: row.prior_acquisition_receipt.row_sha256,
+        },
+        rationale,
+        search: {
+          exact_queries: attempts.map(({ category, query, query_status }) => ({ category, query, query_status })),
+          domains: [...new Set(urls.map((url) => new URL(url).hostname))].sort(),
+          urls_inspected: urls,
+          retrievals: attempts.flatMap((attempt) => attempt.retrievals.map((retrieval) =>
+            ({ category: attempt.category, ...retrieval }))),
+          disposition: "binding_absent_after_search",
+        },
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      const validate = (draft: Record<string, unknown>, candidateRow = row, candidatePacket = packet) => {
+        writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+        return () => validateBindingReceiptDrafts([candidateRow], [candidatePacket], receiptDir, rootDir);
+      };
+      const packetWithDossier = (dossierRefs: typeof packet.what_is_known.dossier_refs) => {
+        const verdictCount = (verdict: typeof dossierRefs[number]["verdict_class"]) =>
+          dossierRefs.filter((ref) => ref.verdict_class === verdict).length;
+        const sourceCount = (source: typeof dossierRefs[number]["path_source"]) =>
+          dossierRefs.filter((ref) => ref.path_source === source).length;
+        const reasons = Object.fromEntries([...new Set(dossierRefs.map((ref) => ref.reason))].sort()
+          .map((reason) => [reason, dossierRefs.filter((ref) => ref.reason === reason).length]));
+        return {
+          ...packet,
+          what_is_known: {
+            ...packet.what_is_known,
+            dossier_refs: dossierRefs,
+            dossier_summary: {
+              row_count: dossierRefs.length,
+              target_row_count: dossierRefs.filter((ref) => ref.candidate_target_match).length,
+              counts_by_verdict: {
+                traversal_confirmed: verdictCount("traversal_confirmed"),
+                traversal_marginal: verdictCount("traversal_marginal"),
+                no_traversal: verdictCount("no_traversal"),
+                geometry_ambiguous: verdictCount("geometry_ambiguous"),
+              },
+              counts_by_reason: reasons,
+              counts_by_path_source: {
+                gtfs_shape: sourceCount("gtfs_shape"),
+                historical_schedule_timepoint_pattern: sourceCount("historical_schedule_timepoint_pattern"),
+                unavailable: sourceCount("unavailable"),
+              },
+            },
+          },
+        };
+      };
+      try {
+        expect(packet.missing_binding).toBe(directionGap ? "direction" : "feature_extent");
+        expect(packet.unresolved_bindings).toEqual(routeId === "Q1"
+          ? ["direction", "feature_extent", "phase", "traversal"]
+          : ["attribution", "direction", "feature_extent", "phase", "traversal"]);
+        expect(target).toMatchObject({
+          feature_row_count: 195,
+          directions: ["EB", "WB"],
+          named_sbs_routes: [],
+          open_dates_literals: ["9/15/2025"],
+        });
+        expect(target.feature_keys).toHaveLength(190);
+        expect(target.feature_ids).toHaveLength(97);
+        expect(validate(receipt)).not.toThrow();
+        expect(validate({ ...receipt, rationale: `${rationale} Traversal refuted.` }))
+          .toThrow("Hillside Avenue part-one absence contract does not match the exact candidate");
+        expect(validate({ ...receipt, target: { ...target, feature_row_count: 194 } }))
+          .toThrow("binding receipt feature-row accounting parity failed");
+        expect(validate({ ...receipt, supplemental_search: {} }))
+          .toThrow("Hillside Avenue part-one absence contract does not match the exact candidate");
+        expect(validate({ ...receipt, authorizes_study: true }))
+          .toThrow("binding receipt search preservation or authorization guard failed");
+        const currentGtfsNoTraversalRefs = packet.what_is_known.dossier_refs.map((ref) => ({
+          ...ref,
+          path_source: "gtfs_shape" as const,
+          verdict_class: "no_traversal" as const,
+        }));
+        const currentGtfsNoTraversalPacket = packetWithDossier(currentGtfsNoTraversalRefs);
+        expect(validate(receipt, row, currentGtfsNoTraversalPacket))
+          .toThrow("Hillside Avenue packet dossier does not preserve exact ledger evidence parity");
+        expect(validate(receipt, { ...row, dossier_refs: currentGtfsNoTraversalRefs },
+          currentGtfsNoTraversalPacket))
+          .toThrow("Hillside Avenue part-one absence contract does not match the exact candidate");
+        const traversalConfirmedRefs = packet.what_is_known.dossier_refs.map((ref) => ({
+          ...ref,
+          verdict_class: "traversal_confirmed" as const,
+        }));
+        expect(validate(receipt, { ...row, dossier_refs: traversalConfirmedRefs },
+          packetWithDossier(traversalConfirmedRefs)))
+          .toThrow("Hillside Avenue part-one absence contract does not match the exact candidate");
+      } finally {
+        rmSync(rootDir, { recursive: true, force: true });
+      }
+    }
+  });
+
   it("closes SIM23 and SIM24 only as zero-target nonrefutational absences", () => {
     const date = "2015-05-27";
     const priorReceiptIds = new Map([

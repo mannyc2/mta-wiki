@@ -517,6 +517,39 @@ const UNATTRIBUTED_SIM_PRIOR_RECEIPTS = new Map([
   ["SIM23", "staten-island-acquisition:4f8c82427f9fa4ff9cb39112"],
   ["SIM24", "staten-island-acquisition:a5a0f4514158f16261378001"],
 ]);
+const HILLSIDE_PART_ONE_PRIOR_RECEIPTS = new Map([
+  ["Q1", "queens-acquisition:ada385860a650d3218a38705"],
+  ["Q110", "queens-acquisition:5e146d100dff2cc2f758c879"],
+  ["Q111", "queens-acquisition:345ffb76baf84e47b6d86ae6"],
+  ["Q112", "queens-acquisition:9c7e954011a220e48a521f88"],
+  ["Q113", "queens-acquisition:13c19be0a4c83a7edd8f1a3f"],
+  ["Q114", "queens-acquisition:70dfff7a22d1dddb116656a6"],
+  ["Q115", "queens-acquisition:8c732e0dbf518cb06f6337ed"],
+  ["Q17", "queens-acquisition:f76f0f7549a18aa4f1ea7385"],
+  ["Q2", "queens-acquisition:186c22b126041c4ceebf827a"],
+  ["Q25", "queens-acquisition:0df523d96dae8c9df0779c24"],
+  ["Q27", "queens-acquisition:d5a721785af7855eb75ff96e"],
+  ["Q3", "queens-acquisition:dc3c0c23858129601fb8bad5"],
+  ["Q30", "queens-acquisition:a3faf21a7c2426fd9aa2b7f7"],
+  ["Q31", "queens-acquisition:855d926a966078e3d5c403ae"],
+  ["Q36", "queens-acquisition:0fdbcb2037985386379b1f86"],
+  ["Q40", "queens-acquisition:c53045ffcd858ac21a3d9e4c"],
+  ["Q43", "queens-acquisition:d3d4f56ee5cf21ec612cddc0"],
+  ["Q44+", "queens-acquisition:f06f6aee8e250a15de1f5971"],
+  ["Q65", "queens-acquisition:0df7ccd7216567ad5fb02c94"],
+  ["Q75", "queens-acquisition:16839b81b9fb0c07a4e55ea3"],
+  ["Q77", "queens-acquisition:277b080e045e0030682bd23d"],
+  ["Q82", "queens-acquisition:9002ee0419a1d7122ac977be"],
+  ["Q83", "queens-acquisition:f7903e60daf8ef888ca3e2e8"],
+  ["Q88", "queens-acquisition:0282f53d35044f644a2cd8a2"],
+  ["QM68", "queens-acquisition:de82ca72aa3dba4c99411b4e"],
+]);
+const HILLSIDE_DIRECTION_GAP_ROUTES = new Set([
+  "Q110", "Q111", "Q113", "Q114", "Q115", "Q25", "Q40", "Q65",
+]);
+const HILLSIDE_ATTRIBUTION_GAP_ROUTES = new Set([
+  "Q110", "Q111", "Q112", "Q113", "Q114", "Q115", "Q25", "Q27", "Q44+", "Q65", "Q83",
+]);
 
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
@@ -570,6 +603,61 @@ function isExactUnattributedSimPacketTarget(
       stableJson(["no_dot_feature_open_date_token_matches_candidate_date"]) &&
     stableJson(packet.unresolved_bindings) ===
       stableJson(["attribution", "onset", "phase", "traversal"]);
+}
+
+function isExactHillsidePartOnePacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const group = packet.what_is_known.target_groups[0];
+  if (!group) return false;
+  const matches = group.feature_matches;
+  const dossierRefs = packet.what_is_known.dossier_refs;
+  const dossierSummary = packet.what_is_known.dossier_summary;
+  const dossierVerdicts: LaneTraversalVerdict[] = [
+    "traversal_confirmed", "traversal_marginal", "no_traversal", "geometry_ambiguous",
+  ];
+  const dossierSources: LaneTraversalRow["path_source"][] = [
+    "gtfs_shape", "historical_schedule_timepoint_pattern", "unavailable",
+  ];
+  const expectedDossierSummary = {
+    row_count: dossierRefs.length,
+    target_row_count: dossierRefs.filter((ref) => ref.candidate_target_match).length,
+    counts_by_verdict: countBy(dossierRefs.map((ref) => ref.verdict_class), dossierVerdicts),
+    counts_by_reason: recordCounts(dossierRefs.map((ref) => ref.reason)),
+    counts_by_path_source: countBy(dossierRefs.map((ref) => ref.path_source), dossierSources),
+  };
+  const expectedMissingBinding = HILLSIDE_DIRECTION_GAP_ROUTES.has(row.gtfs_route_id)
+    ? "direction"
+    : "feature_extent";
+  const expectedUnresolvedBindings = HILLSIDE_ATTRIBUTION_GAP_ROUTES.has(row.gtfs_route_id)
+    ? ["attribution", "direction", "feature_extent", "phase", "traversal"]
+    : ["direction", "feature_extent", "phase", "traversal"];
+  return HILLSIDE_PART_ONE_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
+    row.implementation_date === "2025-09-15" &&
+    packet.missing_binding === expectedMissingBinding &&
+    packet.what_is_known.target_groups.length === 1 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    stableJson(dossierRefs) === stableJson(row.dossier_refs) &&
+    dossierRefs.length > 0 &&
+    dossierRefs.every((ref) =>
+      ref.service_date === row.implementation_date &&
+      ref.temporal_lag_days === 0 &&
+      ref.path_source === "historical_schedule_timepoint_pattern" &&
+      (ref.verdict_class === "geometry_ambiguous" || ref.verdict_class === "traversal_marginal")) &&
+    stableJson(dossierSummary) === stableJson(expectedDossierSummary) &&
+    group.lane_group_id === "QNS|HILLSIDE AVENUE" &&
+    group.geometry_scope === "mixed_date_feature_union" &&
+    matches.length === 195 &&
+    new Set(matches.map((match) => match.feature_key)).size === 190 &&
+    new Set(matches.map((match) => match.feature_id)).size === 97 &&
+    matches.every((match) =>
+      match.matched_date === "2025-09-15" &&
+      match.matched_token_literal === "9/15/2025" &&
+      match.open_dates_literal === "9/15/2025" &&
+      match.sbs_routes.length === 0) &&
+    stableJson([...new Set(matches.map((match) => match.direction))].sort()) === stableJson(["EB", "WB"]) &&
+    stableJson(packet.unresolved_bindings) === stableJson(expectedUnresolvedBindings);
 }
 
 function isoReviewTime(value: unknown, path: string): string {
@@ -1394,6 +1482,18 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
       throw new Error(`${receiptPath}: unattributed SIM packet target does not preserve exact zero-target parity`);
     }
+    const hillsidePartOneLedgerTarget = row.implementation_date === "2025-09-15" &&
+      row.onset_evidence.target_groups.length === 1 &&
+      row.onset_evidence.target_groups[0]?.lane_group_id === "QNS|HILLSIDE AVENUE" &&
+      HILLSIDE_PART_ONE_PRIOR_RECEIPTS.has(row.gtfs_route_id);
+    if (hillsidePartOneLedgerTarget &&
+        stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
+      throw new Error(`${receiptPath}: Hillside Avenue packet target does not preserve exact ledger occurrence parity`);
+    }
+    if (hillsidePartOneLedgerTarget &&
+        stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs)) {
+      throw new Error(`${receiptPath}: Hillside Avenue packet dossier does not preserve exact ledger evidence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -1597,6 +1697,85 @@ export function validateBindingReceiptDrafts(
           !exactCandidateQuery || receipt.authorizes_study !== false ||
           receipt.authorizes_cross_product !== false) {
         throw new Error(`${receiptPath}: SIM23/SIM24 zero-target absence contract does not match the exact candidate`);
+      }
+    }
+    if (hillsidePartOneLedgerTarget) {
+      const priorCandidate = object(prior.candidate, `${receiptPath}.prior.candidate`);
+      const sourceFindings = object(prior.source_findings, `${receiptPath}.prior.source_findings`);
+      const priorOutcome = object(prior.outcome, `${receiptPath}.prior.outcome`);
+      const priorClaims = object(prior.claim_results, `${receiptPath}.prior.claim_results`);
+      const canonicalActions = object(prior.canonical_actions, `${receiptPath}.prior.canonical_actions`);
+      const routePage = object(sourceFindings.mta_route_page,
+        `${receiptPath}.prior.source_findings.mta_route_page`);
+      const isQ1 = row.gtfs_route_id === "Q1";
+      const isQ44Sbs = row.gtfs_route_id === "Q44+";
+      const expectedRationale = isQ1
+        ? "Completed candidate-exact Queens acquisition searches preserve an evidence-backed Q1 route, treatment, and corridor context for the Hillside Avenue project, but do not bind Q1 to all 195 candidate-date feature-row occurrences, their full eastbound and westbound direction scope, a stable onset-versus-extension phase, or candidate-date traversal. The candidate and reconciliation artifacts retain no exact historical matched-segment identifiers, and the registry rows name no SBS route. Direction, feature extent, phase, and traversal remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection."
+        : isQ44Sbs
+          ? "Completed candidate-exact Queens acquisition searches retained all 195 Hillside Avenue candidate-date feature-row occurrences, 190 unique feature keys, 97 feature IDs, both eastbound and westbound directions, and the exact 2025-09-15 registry day. The prior acquisition normalizes the route to Q44 while preserving this ledger row's Q44+ SBS identity, the registry rows name no SBS route, candidate-dated historical schedule patterns cannot prove full direction-specific traversal or exclusion, and the pinned candidate provenance does not identify the exact matched subset or stable onset-versus-extension phase. Attribution, direction, feature extent, phase, and traversal remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection."
+          : `Completed candidate-exact Queens acquisition searches retained all 195 Hillside Avenue candidate-date feature-row occurrences, 190 unique feature keys, 97 feature IDs, both eastbound and westbound directions, and the exact 2025-09-15 registry day. The registry rows name no SBS route, candidate-dated historical schedule patterns cannot prove full direction-specific traversal or exclusion, and the pinned candidate provenance does not identify the exact matched subset or stable onset-versus-extension phase. ${HILLSIDE_ATTRIBUTION_GAP_ROUTES.has(row.gtfs_route_id) ? "Attribution, direction, feature extent, phase, and traversal" : "Direction, feature extent, phase, and traversal"} remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`;
+      const exactCandidateQuery = exactQueries.some((query) => {
+        if (query.category !== "official_mta_route_project") return false;
+        const tokens = query.query.toUpperCase().split(/[^A-Z0-9+]+/u).filter(Boolean);
+        return [row.gtfs_route_id, "HILLSIDE", "AVENUE"].every((token) => tokens.includes(token));
+      });
+      const canonicalLinks = Array.isArray(canonicalActions.canonical_links_added)
+        ? canonicalActions.canonical_links_added
+        : null;
+      const canonicalRecordsAdded = Array.isArray(canonicalActions.canonical_records_added)
+        ? canonicalActions.canonical_records_added
+        : null;
+      const canonicalRecordsUpdated = Array.isArray(canonicalActions.canonical_records_updated)
+        ? canonicalActions.canonical_records_updated
+        : null;
+      const exactRouteEvidence = Array.isArray(priorClaims.exact_route_binding_evidence)
+        ? priorClaims.exact_route_binding_evidence
+        : null;
+      if (!isExactHillsidePartOnePacketTarget(packet, row) ||
+          priorPointer.receipt_id !== HILLSIDE_PART_ONE_PRIOR_RECEIPTS.get(row.gtfs_route_id) ||
+          priorPointer.artifact !==
+            "data/quality/relationship-integrity/bus-lane-acquisition/shards/queens/receipts.jsonl" ||
+          priorCandidate.candidate_id !== row.candidate_id ||
+          priorCandidate.normalized_route_id !== (isQ44Sbs ? "Q44" : row.gtfs_route_id) ||
+          priorCandidate.route_id !== row.gtfs_route_id ||
+          priorCandidate.implementation_date !== row.implementation_date ||
+          priorCandidate.identity !== `${row.gtfs_route_id}|bus_lane|2025-09-15|day` ||
+          target.feature_row_count !== 195 ||
+          !Array.isArray(target.feature_keys) || target.feature_keys.length !== 190 ||
+          !Array.isArray(target.feature_rows) || target.feature_rows.length !== 195 ||
+          receipt.rationale !== expectedRationale ||
+          receipt.supplemental_search !== undefined || receipt.occurrence_context !== undefined ||
+          sourceFindings.candidate_named_lane_record_count !== 0 ||
+          sourceFindings.official_lane_matching_record_count !== 195 ||
+          !Array.isArray(sourceFindings.official_lane_matching_segment_ids) ||
+          new Set(sourceFindings.official_lane_matching_segment_ids).size !== 97 ||
+          stableJson(sourceFindings.official_lane_named_routes as JsonValue) !== stableJson([]) ||
+          stableJson(sourceFindings.official_route_named_segment_ids as JsonValue) !== stableJson([]) ||
+          sourceFindings.exact_project_route_statement_found !== isQ1 ||
+          sourceFindings.exact_project_route_source_id !== (isQ1 ? "mta_q1_hillside_profile" : null) ||
+          routePage.exact_route_title_found !== true || routePage.current_corridor_token_found !== false ||
+          routePage.retrieval_status !== "acquired" ||
+          typeof routePage.temporal_limitation !== "string" || !routePage.temporal_limitation ||
+          priorOutcome.exclusive_primary_disposition !==
+            (isQ1 ? "linkage_supported_phase_unresolved" : "completed_search_route_linkage_unresolved") ||
+          priorOutcome.registry_projection_excluded !== true || priorOutcome.still_unresolved !== true ||
+          priorOutcome.study_projection_eligible !== false ||
+          priorClaims.candidate_date_supported_at_day_precision !== isQ1 ||
+          priorClaims.physical_bus_lane_record_acquired !== true ||
+          priorClaims.candidate_segment_ids_pinned !== false || priorClaims.date_and_phase_proved !== false ||
+          priorClaims.exact_route_treatment_binding_proved !== isQ1 ||
+          priorClaims.exact_segment_binding_proved !== false ||
+          priorClaims.explicit_phase_identity_proved !== false ||
+          priorClaims.operational_occurrence_identity_proved !== false ||
+          !exactRouteEvidence || exactRouteEvidence.length !== (isQ1 ? 1 : 0) ||
+          stableJson(priorClaims.exact_segment_ids as JsonValue) !== stableJson([]) ||
+          canonicalActions.operational_occurrence_added_or_updated !== false ||
+          !canonicalLinks || canonicalLinks.length !== (isQ1 ? 3 : 0) ||
+          !canonicalRecordsAdded || canonicalRecordsAdded.length !== (isQ1 ? 2 : 0) ||
+          !canonicalRecordsUpdated || canonicalRecordsUpdated.length !== (isQ1 ? 1 : 0) ||
+          !exactCandidateQuery || receipt.authorizes_study !== false ||
+          receipt.authorizes_cross_product !== false) {
+        throw new Error(`${receiptPath}: Hillside Avenue part-one absence contract does not match the exact candidate`);
       }
     }
     if (receipt.supplemental_search !== undefined) {
