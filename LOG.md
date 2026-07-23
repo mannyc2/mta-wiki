@@ -4,6 +4,29 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-23
+
+### Bus-lane identity ledger closure
+
+- Closed the complete `321`-candidate bus-lane identity denominator with `321`
+  receipt-backed `binding_absent_after_search` decisions, zero unreviewed rows,
+  and zero open packets. All decisions are non-authorizing and preserve their
+  unresolved attribution, extent, phase, direction, and traversal bindings;
+  another named route is retained as context rather than treated as an
+  exclusion.
+- Issued and closed `321` research packets with `321` resolvable search
+  receipts. This sweep created no canonical occurrences or submission journals,
+  changed route coverage by zero, and used `$0` of provider spend. The existing
+  evidence-bound multi-route bus-lane occurrence
+  `occurrence:8c987704152b459014217d44` remains scoped to B41 and B67.
+- Repeated ledger/packet replay was byte-identical at SHA-256
+  `f138a984882205d493ac316b9be9864603c7cbb6635d952a5de87bd04f8b6724`.
+  Typecheck and validation pass, the determinism anchor is
+  `33777f3cb1b600ec7b839fff47fe8370c7e6c5da97d277896e57618ec7a4a87a`,
+  and the full suite matches its pinned public-clone baseline exactly:
+  `1,650` pass, `1` skip, `9` known failures, and `1` known missing-source
+  error, with no new failures.
+
 ## 2026-07-22
 
 ### Operational reference substrate and extent engines

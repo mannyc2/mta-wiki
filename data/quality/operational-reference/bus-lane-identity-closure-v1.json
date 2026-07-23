@@ -1,0 +1,130 @@
+{
+  "closed_at": "2026-07-23T23:22:57Z",
+  "closed_by": "codex-plan039-executor",
+  "closure_id": "bus-lane-identity-closure-v1",
+  "contract_id": "bus-lane-identity-v1",
+  "denominator": 321,
+  "determinism": {
+    "anchor": {
+      "combined_sha256": "33777f3cb1b600ec7b839fff47fe8370c7e6c5da97d277896e57618ec7a4a87a",
+      "dump_sha256": "c24ba21771857ecc24286b01c5349ca9b2bbd387129b743b9e39469532ce827d",
+      "fts_sha256": "bb8f1525d4622068e79ca616c654c8bd32ea2227c1766541af6c52dc3f2c04d9",
+      "master_sha256": "f99ff2cd3004d2f6a1203e6ba03f0be439a25884019ca204684f9e3b6fe3cd5d",
+      "records": 85396,
+      "status": "pass"
+    },
+    "ledger_packet_replay": {
+      "byte_identical": true,
+      "runs": 2,
+      "sha256": "f138a984882205d493ac316b9be9864603c7cbb6635d952a5de87bd04f8b6724"
+    }
+  },
+  "gates": {
+    "focused_test": {
+      "assertions": 2037,
+      "fail": 0,
+      "pass": 36
+    },
+    "full_suite": {
+      "actual": {
+        "error": 1,
+        "fail": 9,
+        "pass": 1650,
+        "skip": 1
+      },
+      "baseline_difference": {
+        "error": 0,
+        "fail": 0,
+        "skip": 0
+      },
+      "known_public_clone_failures": 9,
+      "known_public_clone_unhandled_errors": 1,
+      "new_failures": 0,
+      "status": "matches_pinned_public_clone_baseline"
+    },
+    "typecheck": "pass",
+    "validate": {
+      "issues": 0,
+      "release_contract_issues": 0,
+      "warnings": 3
+    }
+  },
+  "ledger": {
+    "authorizes_cross_product_count": 0,
+    "authorizes_study_count": 0,
+    "decision_count": 321,
+    "ledger_sha256": "3c04eec451bf478aebeeb06b5d1982699f786b517977b4a789654a6995e28e09",
+    "open_count": 0,
+    "receipt_reference_count": 321,
+    "unique_receipt_count": 321,
+    "unreviewed_count": 0,
+    "verdict_distribution": {
+      "binding_absent_after_search": 321
+    }
+  },
+  "occurrence_accounting": {
+    "created_count": 0,
+    "created_ids": [],
+    "current_occurrence_count": 131,
+    "current_occurrence_sha256": "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
+    "multi_route_bus_lane_witness": {
+      "occurrence_id": "occurrence:8c987704152b459014217d44",
+      "route_evidence_binding_counts": {
+        "B41": 2,
+        "B67": 2
+      },
+      "routes": [
+        "B41",
+        "B67"
+      ],
+      "treatment_family": "bus_lane"
+    },
+    "preview_command": {
+      "command": "bun packages/cli/src/cli.ts occurrences --dry-run",
+      "status": "unavailable_unknown_command"
+    },
+    "route_coverage_delta": 0,
+    "substitute_before_after_proof": {
+      "after_sha256": "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
+      "before_sha256": "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
+      "source": "ledger summary input pin and current immutable v1-rc27 occurrence bytes"
+    }
+  },
+  "packet_accounting": {
+    "absent": 321,
+    "closed": 321,
+    "issued": 321,
+    "open": 0
+  },
+  "proposal_accounting": {
+    "accepted_proposal_ids": [],
+    "journal_files_created": 0,
+    "unaccepted_proposal_ids": 0
+  },
+  "provider_spend_usd": 0,
+  "qm64_attribution_audit": {
+    "candidate_id": "study-event-v2:6c4295f8aa70c21d378ad2a3",
+    "implementation_date": "2024-12-05",
+    "named_other_route_context": [
+      "M15"
+    ],
+    "receipt_id": "bus-lane-binding-search:91c8c9eed3a208847aed96cf",
+    "route": "QM64",
+    "unresolved_bindings": [
+      "attribution",
+      "feature_extent",
+      "phase",
+      "traversal"
+    ],
+    "verdict": "binding_absent_after_search",
+    "wrong_route_refutation": false
+  },
+  "receipt_accounting": {
+    "effective_urls_nonempty_count": 321,
+    "refutation_count": 0,
+    "resolvable_count": 321,
+    "total": 321,
+    "wrong_route_refutations_based_only_on_other_named_routes": 0
+  },
+  "schema_version": 1
+}

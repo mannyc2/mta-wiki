@@ -1,0 +1,77 @@
+{
+  "acceptance_id": "bus-lane-package-owner-acceptance:rockaway-unresolved-attribution-v1",
+  "accepted_at": "2026-07-23T23:08:13Z",
+  "accepted_by": "codex-owner-delegate",
+  "authorizes_cross_product": false,
+  "authorizes_occurrence": false,
+  "authorizes_study": false,
+  "candidate_count": 3,
+  "candidate_join_count_reproduced": 3,
+  "decision_ids": [
+    "bus-lane-identity-decision:4534bb28f2284d45af566fe2",
+    "bus-lane-identity-decision:d89cd0bbdfa7864b532a3162",
+    "bus-lane-identity-decision:e33cc32b7e5824b31ceadabd"
+  ],
+  "frozen_file_count_reproduced": 11,
+  "independent_evidence_review": "approve",
+  "independent_validator_review": "approve",
+  "materialization": {
+    "decided_after": 321,
+    "decided_before": 318,
+    "deterministic_replay_after_sha256": "f138a984882205d493ac316b9be9864603c7cbb6635d952a5de87bd04f8b6724",
+    "deterministic_replay_before_sha256": "f138a984882205d493ac316b9be9864603c7cbb6635d952a5de87bd04f8b6724",
+    "deterministic_replay_byte_identical": true,
+    "ledger_denominator": 321,
+    "open_after": 0,
+    "open_before": 3
+  },
+  "package_artifact": "data/quality/operational-reference/bus-lane-identity-packages/rockaway-unresolved-attribution-v1.json",
+  "package_sha256": "ece088cd5712f44e962e8c8a8c7f462714d0bfcc6f4121fd2a418f8aac3b069c",
+  "predecision_artifact": "data/quality/operational-reference/bus-lane-identity-packages/rockaway-unresolved-attribution-v1-acceptance.json",
+  "predecision_sha256": "8b450d37f60b1fe6adc4a9dfa003b2247dc3270305cabbc91cdaa9a993463cca",
+  "receipt_ids": [
+    "bus-lane-binding-search:4534bb28f2284d45af566fe2",
+    "bus-lane-binding-search:d89cd0bbdfa7864b532a3162",
+    "bus-lane-binding-search:e33cc32b7e5824b31ceadabd"
+  ],
+  "schema_version": 1,
+  "verdict_distribution": {
+    "binding_absent_after_search": 3
+  },
+  "verification": {
+    "determinism_anchor": {
+      "combined_sha256": "33777f3cb1b600ec7b839fff47fe8370c7e6c5da97d277896e57618ec7a4a87a",
+      "dump_sha256": "c24ba21771857ecc24286b01c5349ca9b2bbd387129b743b9e39469532ce827d",
+      "fts_sha256": "bb8f1525d4622068e79ca616c654c8bd32ea2227c1766541af6c52dc3f2c04d9",
+      "master_sha256": "f99ff2cd3004d2f6a1203e6ba03f0be439a25884019ca204684f9e3b6fe3cd5d",
+      "status": "pass"
+    },
+    "focused_test": {
+      "assertions": 2037,
+      "fail": 0,
+      "pass": 36
+    },
+    "full_suite": {
+      "actual": {
+        "error": 1,
+        "fail": 9,
+        "pass": 1650,
+        "skip": 1
+      },
+      "expected_after_two_added_tests": {
+        "error": 1,
+        "fail": 9,
+        "pass": 1650,
+        "skip": 1
+      },
+      "new_failures": 0,
+      "status": "matches_pinned_public_clone_baseline"
+    },
+    "typecheck": "pass",
+    "validate": {
+      "issues": 0,
+      "release_contract_issues": 0,
+      "warnings": 3
+    }
+  }
+}
