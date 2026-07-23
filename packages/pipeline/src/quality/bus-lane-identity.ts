@@ -517,7 +517,7 @@ const UNATTRIBUTED_SIM_PRIOR_RECEIPTS = new Map([
   ["SIM23", "staten-island-acquisition:4f8c82427f9fa4ff9cb39112"],
   ["SIM24", "staten-island-acquisition:a5a0f4514158f16261378001"],
 ]);
-const HILLSIDE_PART_ONE_PRIOR_RECEIPTS = new Map([
+const HILLSIDE_PRIOR_RECEIPTS = new Map([
   ["Q1", "queens-acquisition:ada385860a650d3218a38705"],
   ["Q110", "queens-acquisition:5e146d100dff2cc2f758c879"],
   ["Q111", "queens-acquisition:345ffb76baf84e47b6d86ae6"],
@@ -527,6 +527,7 @@ const HILLSIDE_PART_ONE_PRIOR_RECEIPTS = new Map([
   ["Q115", "queens-acquisition:8c732e0dbf518cb06f6337ed"],
   ["Q17", "queens-acquisition:f76f0f7549a18aa4f1ea7385"],
   ["Q2", "queens-acquisition:186c22b126041c4ceebf827a"],
+  ["Q24", "queens-acquisition:4b26047a7ca7458882edf69a"],
   ["Q25", "queens-acquisition:0df523d96dae8c9df0779c24"],
   ["Q27", "queens-acquisition:d5a721785af7855eb75ff96e"],
   ["Q3", "queens-acquisition:dc3c0c23858129601fb8bad5"],
@@ -538,6 +539,7 @@ const HILLSIDE_PART_ONE_PRIOR_RECEIPTS = new Map([
   ["Q44+", "queens-acquisition:f06f6aee8e250a15de1f5971"],
   ["Q65", "queens-acquisition:0df7ccd7216567ad5fb02c94"],
   ["Q75", "queens-acquisition:16839b81b9fb0c07a4e55ea3"],
+  ["Q76", "queens-acquisition:d48a5a764e865cf9acf7aff4"],
   ["Q77", "queens-acquisition:277b080e045e0030682bd23d"],
   ["Q82", "queens-acquisition:9002ee0419a1d7122ac977be"],
   ["Q83", "queens-acquisition:f7903e60daf8ef888ca3e2e8"],
@@ -548,7 +550,7 @@ const HILLSIDE_DIRECTION_GAP_ROUTES = new Set([
   "Q110", "Q111", "Q113", "Q114", "Q115", "Q25", "Q40", "Q65",
 ]);
 const HILLSIDE_ATTRIBUTION_GAP_ROUTES = new Set([
-  "Q110", "Q111", "Q112", "Q113", "Q114", "Q115", "Q25", "Q27", "Q44+", "Q65", "Q83",
+  "Q110", "Q111", "Q112", "Q113", "Q114", "Q115", "Q24", "Q25", "Q27", "Q44+", "Q65", "Q83",
 ]);
 
 function isExactQueensPlazaPacketTarget(
@@ -605,7 +607,7 @@ function isExactUnattributedSimPacketTarget(
       stableJson(["attribution", "onset", "phase", "traversal"]);
 }
 
-function isExactHillsidePartOnePacketTarget(
+function isExactHillsidePacketTarget(
   packet: BusLaneResearchPacket,
   row: BusLaneIdentityRow,
 ): boolean {
@@ -633,7 +635,7 @@ function isExactHillsidePartOnePacketTarget(
   const expectedUnresolvedBindings = HILLSIDE_ATTRIBUTION_GAP_ROUTES.has(row.gtfs_route_id)
     ? ["attribution", "direction", "feature_extent", "phase", "traversal"]
     : ["direction", "feature_extent", "phase", "traversal"];
-  return HILLSIDE_PART_ONE_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
+  return HILLSIDE_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
     row.implementation_date === "2025-09-15" &&
     packet.missing_binding === expectedMissingBinding &&
     packet.what_is_known.target_groups.length === 1 &&
@@ -1482,15 +1484,15 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
       throw new Error(`${receiptPath}: unattributed SIM packet target does not preserve exact zero-target parity`);
     }
-    const hillsidePartOneLedgerTarget = row.implementation_date === "2025-09-15" &&
+    const hillsideLedgerTarget = row.implementation_date === "2025-09-15" &&
       row.onset_evidence.target_groups.length === 1 &&
       row.onset_evidence.target_groups[0]?.lane_group_id === "QNS|HILLSIDE AVENUE" &&
-      HILLSIDE_PART_ONE_PRIOR_RECEIPTS.has(row.gtfs_route_id);
-    if (hillsidePartOneLedgerTarget &&
+      HILLSIDE_PRIOR_RECEIPTS.has(row.gtfs_route_id);
+    if (hillsideLedgerTarget &&
         stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
       throw new Error(`${receiptPath}: Hillside Avenue packet target does not preserve exact ledger occurrence parity`);
     }
-    if (hillsidePartOneLedgerTarget &&
+    if (hillsideLedgerTarget &&
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs)) {
       throw new Error(`${receiptPath}: Hillside Avenue packet dossier does not preserve exact ledger evidence parity`);
     }
@@ -1699,7 +1701,7 @@ export function validateBindingReceiptDrafts(
         throw new Error(`${receiptPath}: SIM23/SIM24 zero-target absence contract does not match the exact candidate`);
       }
     }
-    if (hillsidePartOneLedgerTarget) {
+    if (hillsideLedgerTarget) {
       const priorCandidate = object(prior.candidate, `${receiptPath}.prior.candidate`);
       const sourceFindings = object(prior.source_findings, `${receiptPath}.prior.source_findings`);
       const priorOutcome = object(prior.outcome, `${receiptPath}.prior.outcome`);
@@ -1731,8 +1733,8 @@ export function validateBindingReceiptDrafts(
       const exactRouteEvidence = Array.isArray(priorClaims.exact_route_binding_evidence)
         ? priorClaims.exact_route_binding_evidence
         : null;
-      if (!isExactHillsidePartOnePacketTarget(packet, row) ||
-          priorPointer.receipt_id !== HILLSIDE_PART_ONE_PRIOR_RECEIPTS.get(row.gtfs_route_id) ||
+      if (!isExactHillsidePacketTarget(packet, row) ||
+          priorPointer.receipt_id !== HILLSIDE_PRIOR_RECEIPTS.get(row.gtfs_route_id) ||
           priorPointer.artifact !==
             "data/quality/relationship-integrity/bus-lane-acquisition/shards/queens/receipts.jsonl" ||
           priorCandidate.candidate_id !== row.candidate_id ||
@@ -1775,7 +1777,7 @@ export function validateBindingReceiptDrafts(
           !canonicalRecordsUpdated || canonicalRecordsUpdated.length !== (isQ1 ? 1 : 0) ||
           !exactCandidateQuery || receipt.authorizes_study !== false ||
           receipt.authorizes_cross_product !== false) {
-        throw new Error(`${receiptPath}: Hillside Avenue part-one absence contract does not match the exact candidate`);
+        throw new Error(`${receiptPath}: Hillside Avenue absence contract does not match the exact candidate`);
       }
     }
     if (receipt.supplemental_search !== undefined) {

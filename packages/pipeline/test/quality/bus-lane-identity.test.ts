@@ -5014,12 +5014,14 @@ describe("bus-lane identity exact-date targeting", () => {
     }
   });
 
-  it("closes Hillside Avenue part one only with exact 195-row nonrefutational targets", () => {
+  it("closes Hillside Avenue batches only with exact 195-row nonrefutational targets", () => {
     const date = "2025-09-15";
     const priorReceiptIds = new Map([
       ["Q1", "queens-acquisition:ada385860a650d3218a38705"],
       ["Q110", "queens-acquisition:5e146d100dff2cc2f758c879"],
+      ["Q24", "queens-acquisition:4b26047a7ca7458882edf69a"],
       ["Q44+", "queens-acquisition:f06f6aee8e250a15de1f5971"],
+      ["Q76", "queens-acquisition:d48a5a764e865cf9acf7aff4"],
     ]);
     const uniqueFeatures = Array.from({ length: 190 }, (_, index) => {
       const featureId = String(1_000_000 + (index % 97));
@@ -5042,10 +5044,11 @@ describe("bus-lane identity exact-date targeting", () => {
         direction: "EB",
       }),
     ];
-    for (const routeId of ["Q1", "Q110", "Q44+"]) {
+    for (const routeId of ["Q1", "Q110", "Q24", "Q44+", "Q76"]) {
       const entry = candidate(`hillside-${routeId.toLowerCase()}`, routeId, date);
       const directionGap = routeId === "Q110";
-      const hasTargetDossierContext = routeId === "Q1";
+      const attributionGap = ["Q110", "Q24", "Q44+"].includes(routeId);
+      const hasTargetDossierContext = routeId === "Q1" || routeId === "Q76";
       const [baseRow] = buildBusLaneIdentityLedger({
         bridgeCandidates: [entry.bridge],
         trackerCandidates: [entry.tracker],
@@ -5265,9 +5268,9 @@ describe("bus-lane identity exact-date targeting", () => {
       };
       try {
         expect(packet.missing_binding).toBe(directionGap ? "direction" : "feature_extent");
-        expect(packet.unresolved_bindings).toEqual(routeId === "Q1"
-          ? ["direction", "feature_extent", "phase", "traversal"]
-          : ["attribution", "direction", "feature_extent", "phase", "traversal"]);
+        expect(packet.unresolved_bindings).toEqual(attributionGap
+          ? ["attribution", "direction", "feature_extent", "phase", "traversal"]
+          : ["direction", "feature_extent", "phase", "traversal"]);
         expect(target).toMatchObject({
           feature_row_count: 195,
           directions: ["EB", "WB"],
@@ -5278,11 +5281,11 @@ describe("bus-lane identity exact-date targeting", () => {
         expect(target.feature_ids).toHaveLength(97);
         expect(validate(receipt)).not.toThrow();
         expect(validate({ ...receipt, rationale: `${rationale} Traversal refuted.` }))
-          .toThrow("Hillside Avenue part-one absence contract does not match the exact candidate");
+          .toThrow("Hillside Avenue absence contract does not match the exact candidate");
         expect(validate({ ...receipt, target: { ...target, feature_row_count: 194 } }))
           .toThrow("binding receipt feature-row accounting parity failed");
         expect(validate({ ...receipt, supplemental_search: {} }))
-          .toThrow("Hillside Avenue part-one absence contract does not match the exact candidate");
+          .toThrow("Hillside Avenue absence contract does not match the exact candidate");
         expect(validate({ ...receipt, authorizes_study: true }))
           .toThrow("binding receipt search preservation or authorization guard failed");
         const currentGtfsNoTraversalRefs = packet.what_is_known.dossier_refs.map((ref) => ({
@@ -5295,14 +5298,14 @@ describe("bus-lane identity exact-date targeting", () => {
           .toThrow("Hillside Avenue packet dossier does not preserve exact ledger evidence parity");
         expect(validate(receipt, { ...row, dossier_refs: currentGtfsNoTraversalRefs },
           currentGtfsNoTraversalPacket))
-          .toThrow("Hillside Avenue part-one absence contract does not match the exact candidate");
+          .toThrow("Hillside Avenue absence contract does not match the exact candidate");
         const traversalConfirmedRefs = packet.what_is_known.dossier_refs.map((ref) => ({
           ...ref,
           verdict_class: "traversal_confirmed" as const,
         }));
         expect(validate(receipt, { ...row, dossier_refs: traversalConfirmedRefs },
           packetWithDossier(traversalConfirmedRefs)))
-          .toThrow("Hillside Avenue part-one absence contract does not match the exact candidate");
+          .toThrow("Hillside Avenue absence contract does not match the exact candidate");
       } finally {
         rmSync(rootDir, { recursive: true, force: true });
       }
