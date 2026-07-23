@@ -490,6 +490,65 @@ function isExactNassauAvenuePacketTarget(
     stableJson(packet.unresolved_bindings) === stableJson(["attribution", "traversal"]);
 }
 
+const QUEENS_PLAZA_DIRECTION_GAP_ROUTES = new Set(["Q100", "Q60", "Q69"]);
+const QUEENS_PLAZA_ROUTES = new Set([
+  "Q100", "Q101", "Q102", "Q32", "Q39", "Q60", "Q63", "Q66", "Q69",
+]);
+const QUEENS_PLAZA_CONTEXT_SOURCES = new Map([
+  ["Q39", {
+    sourceId: "mta_queens_bus_network_redesign_service_changes",
+    url: "https://www.mta.info/project/queens-bus-network-redesign/service-changes",
+  }],
+  ["Q69", {
+    sourceId: "meeting_doc_167241",
+    url: "https://www.mta.info/document/167241",
+  }],
+  ["Q101", {
+    sourceId: "queens_service_change_board_item_2025",
+    url: "https://www.mta.info/document/163136",
+  }],
+  ["Q102", {
+    sourceId: "queens_service_change_board_item_2025",
+    url: "https://www.mta.info/document/163136",
+  }],
+]);
+
+function isExactQueensPlazaPacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const group = packet.what_is_known.target_groups[0];
+  if (!group) return false;
+  const expectedMissingBinding = QUEENS_PLAZA_DIRECTION_GAP_ROUTES.has(row.gtfs_route_id)
+    ? "direction"
+    : "traversal";
+  const expectedUnresolvedBindings = expectedMissingBinding === "direction"
+    ? ["attribution", "direction", "traversal"]
+    : ["attribution", "traversal"];
+  return QUEENS_PLAZA_ROUTES.has(row.gtfs_route_id) &&
+    row.implementation_date === "2025-12-13" &&
+    packet.missing_binding === expectedMissingBinding &&
+    packet.what_is_known.target_groups.length === 1 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    group.lane_group_id === "QNS|QUEENS PLAZA" &&
+    group.geometry_scope === "coextensive_with_lane_group" &&
+    stableJson(group.feature_matches.map((match) => [
+      match.feature_key,
+      match.feature_id,
+      match.direction,
+      match.matched_date,
+      match.matched_token_literal,
+      match.open_dates_literal,
+      match.sbs_routes,
+    ])) === stableJson([
+      ["dot-lane-feature:0a841b3197297a23c0825dd6", "0138068", "WB", "2025-12-13", "12/13/2025", "12/13/2025", []],
+      ["dot-lane-feature:23b276021ce449a1c880901a", "9024008", "WB", "2025-12-13", "12/13/2025", "12/13/2025", []],
+      ["dot-lane-feature:41933a8350a61a1d9d146731", "9009907", "WB", "2025-12-13", "12/13/2025", "12/13/2025", []],
+      ["dot-lane-feature:958069d9209c6e495439a1dd", "9024007", "WB", "2025-12-13", "12/13/2025", "12/13/2025", []],
+    ]) &&
+    stableJson(packet.unresolved_bindings) === stableJson(expectedUnresolvedBindings);
+}
+
 function isoReviewTime(value: unknown, path: string): string {
   const timestamp = nonempty(value, path);
   const day = /^\d{4}-\d{2}-\d{2}$/u.test(timestamp);
@@ -1297,6 +1356,14 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
       throw new Error(`${receiptPath}: Nassau Avenue packet target does not preserve exact ledger occurrence parity`);
     }
+    const queensPlazaLedgerTarget = row.implementation_date === "2025-12-13" &&
+      row.onset_evidence.target_groups.length === 1 &&
+      row.onset_evidence.target_groups[0]?.lane_group_id === "QNS|QUEENS PLAZA" &&
+      QUEENS_PLAZA_ROUTES.has(row.gtfs_route_id);
+    if (queensPlazaLedgerTarget &&
+        stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
+      throw new Error(`${receiptPath}: Queens Plaza packet target does not preserve exact ledger occurrence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -1440,6 +1507,9 @@ export function validateBindingReceiptDrafts(
     if (nassauAvenueLedgerTarget && receipt.supplemental_search === undefined) {
       throw new Error(`${receiptPath}: Nassau Avenue review requires candidate-exact supplemental search`);
     }
+    if (queensPlazaLedgerTarget && receipt.supplemental_search === undefined) {
+      throw new Error(`${receiptPath}: Queens Plaza review requires candidate-exact supplemental search`);
+    }
     if (receipt.supplemental_search !== undefined) {
       const supplemental = object(receipt.supplemental_search, `${receiptPath}.supplemental_search`);
       const supplementalCore = Object.fromEntries(Object.entries(supplemental)
@@ -1484,8 +1554,10 @@ export function validateBindingReceiptDrafts(
         `${receiptPath}.supplemental_search.domains`, false).sort();
       const derivedDomains = [...new Set(supplementalUrls.map((url) => new URL(url).hostname))].sort();
       if (stableJson(supplementalDomains) !== stableJson(derivedDomains) ||
-          derivedDomains.some((domain) => domain !== "nyc.gov" && !domain.endsWith(".nyc.gov"))) {
-        throw new Error(`${receiptPath}: supplemental search URLs must resolve to the recorded official NYC domains`);
+          derivedDomains.some((domain) =>
+            domain !== "nyc.gov" && !domain.endsWith(".nyc.gov") &&
+            domain !== "mta.info" && !domain.endsWith(".mta.info"))) {
+        throw new Error(`${receiptPath}: supplemental search URLs must resolve to recorded official NYC or MTA domains`);
       }
       if (!Array.isArray(supplemental.retrievals) || supplemental.retrievals.length === 0) {
         throw new Error(`${receiptPath}: supplemental search requires retrieval records`);
@@ -1927,13 +1999,26 @@ export function validateBindingReceiptDrafts(
             sourceId === "malcolm_x_blvd_utica_ave_mar2020" &&
             metadata.documentDate === "2020-03" &&
             metadata.sourceGroup === "bus_priority_document";
+          const queensRedesignServiceChangesSource =
+            sourceId === "mta_queens_bus_network_redesign_service_changes" &&
+            metadata.documentDate === "2025-06-29" &&
+            metadata.sourceGroup === "route_redesign";
+          const queensServiceChangeBoardItemSource =
+            sourceId === "queens_service_change_board_item_2025" &&
+            metadata.documentDate === "2025-01" &&
+            metadata.sourceGroup === "board_books";
+          const q69AcePerformanceSource =
+            sourceId === "meeting_doc_167241" &&
+            metadata.sourceGroup === "mta_board_meeting";
           if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
               metadataSha !== sourceContentSha256 || hash(readFileSync(sourceArtifactPath)) !== sourceContentSha256 ||
               (!proposalSourceTitle && !upperCorridorExistingConditionsTitle && !secondAvenueRedesignTitle &&
                 !west125SbsEnforcementTitle && !west178CorridorTitle && !churchAvenueTransitProjectTitle &&
                 !churchAvenueCorridorStudyTitle && !vanderbiltClermontSafetyMobilityTitle &&
                 !coneyIslandGravesendTransportationStudyTitle && !southernBrooklynB82March2018Source &&
-                !uticaAvenueSeptember2013StudySource && !malcolmXMarch2020Source) ||
+                !uticaAvenueSeptember2013StudySource && !malcolmXMarch2020Source &&
+                !queensRedesignServiceChangesSource && !queensServiceChangeBoardItemSource &&
+                !q69AcePerformanceSource) ||
               !supplementalUrls.includes(sourceUrl) ||
               !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
                 retrieval.sha256 === sourceContentSha256)) {
@@ -2204,6 +2289,12 @@ export function validateBindingReceiptDrafts(
                   block.tokens.has("AVENUE") && block.tokens.has("D")
                 : block.tokens.has("ST") && block.tokens.has("JOHNS") &&
                   block.tokens.has("B15") && block.tokens.has("DEAN") && block.tokens.has("BERGEN"))));
+          const exactQueensPlazaRouteCorridorWindow =
+            isExactQueensPlazaPacketTarget(packet, row) &&
+            (queensRedesignServiceChangesSource || queensServiceChangeBoardItemSource ||
+              q69AcePerformanceSource) &&
+            [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+              block.route && block.tokens.has("QUEENS") && block.tokens.has("PLAZA")));
           if (!boundedServiceContext && !boundedExplicitSbsRouteContext &&
               !exactWest178CorridorServiceWindow && !exactChurchAvenueProjectWindow &&
               !exactChurchAvenueHistoricalTraversalWindow &&
@@ -2212,7 +2303,8 @@ export function validateBindingReceiptDrafts(
               !exactKingsHighwayB82SbsProjectWindow &&
               !exactMalcolmXProjectWindow &&
               !exactUticaHistoricalProjectIntersectionWindow &&
-              !exactUticaHistoricalOutsideProjectIntersectionWindow) {
+              !exactUticaHistoricalOutsideProjectIntersectionWindow &&
+              !exactQueensPlazaRouteCorridorWindow) {
             throw new Error(`${contextPath}: staged source-block evidence does not bind the exact route to bounded corridor-service context`);
           }
           const exactUpperCorridorReviewWindow = upperCorridorExistingConditionsTitle &&
@@ -2305,6 +2397,9 @@ export function validateBindingReceiptDrafts(
               "positive_historical_outside_project_extent_intersection_connection_nonterminal" &&
             finding.supported_scope ===
               "historical_outside_project_extent_intersection_connection_only";
+          const isRouteCorridorContext =
+            finding.finding_kind === "positive_route_corridor_context_nonterminal" &&
+            finding.supported_scope === "route_corridor_context_only";
           if (isOtherExtentContext && (!commonContextScopeValid || !proposalSourceTitle)) {
             throw new Error(`${contextPath}: positive context exceeds its nonauthorizing other-extent scope`);
           }
@@ -2381,12 +2476,21 @@ export function validateBindingReceiptDrafts(
                 candidateDateTraversalConfirmed)) {
             throw new Error(`${contextPath}: outside-project-extent intersection context transferred to Utica Avenue lane service or traversal`);
           }
+          if (isRouteCorridorContext &&
+              (!commonContextScopeValid || !exactQueensPlazaRouteCorridorWindow ||
+                object(prior.source_findings, `${contextPath}.prior.source_findings`)
+                  .exact_project_route_statement_found !== false ||
+                !receiptUnresolved.includes("attribution") ||
+                !receiptUnresolved.includes("traversal") || candidateDateTraversalConfirmed)) {
+            throw new Error(`${contextPath}: route/corridor context transferred to exact Queens Plaza lane rows or traversal`);
+          }
           if (!isOtherExtentContext && !isProjectCorridorServiceContext &&
               !isHistoricalSameCorridorTraversalContext &&
               !isAdjacentProjectIntersectionEndpointContext &&
               !isHistoricalSameCorridorIntersectionContext &&
               !isHistoricalProjectIntersectionConnectionContext &&
-              !isHistoricalOutsideProjectExtentIntersectionConnectionContext) {
+              !isHistoricalOutsideProjectExtentIntersectionConnectionContext &&
+              !isRouteCorridorContext) {
             throw new Error(`${contextPath}: positive context has an unsupported typed scope`);
           }
           nonempty(finding.finding_summary, `${contextPath}.context_finding.finding_summary`);
@@ -2612,6 +2716,108 @@ export function validateBindingReceiptDrafts(
             !stagedSourcesValid || receipt.occurrence_context !== undefined ||
             receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
           throw new Error(`${receiptPath}: Nassau Avenue B43/B48 pure-absence review contract does not match the exact candidate`);
+        }
+      }
+      if (queensPlazaLedgerTarget) {
+        const correctionCount = supplemental.finding_corrections.length;
+        const contextCount = Array.isArray(supplemental.positive_context_findings)
+          ? supplemental.positive_context_findings.length
+          : 0;
+        const supplementalQueries = supplemental.exact_queries.map((value, index) =>
+          object(value, `${receiptPath}.supplemental_search.exact_queries[${index}]`));
+        const hasExactQuery = (category: string) => supplementalQueries.some((query) => {
+          if (query.category !== category) return false;
+          const literal = String(query.query).toUpperCase();
+          const tokens = literal.split(/[^A-Z0-9+]+/u).filter(Boolean);
+          return [row.gtfs_route_id, "QUEENS", "PLAZA"].every((token) => tokens.includes(token)) &&
+            literal.includes("2025-12-13");
+        });
+        const hasRouteCorridorQuery = supplementalQueries.some((query) => {
+          if (query.category !== "official_mta_route_project") return false;
+          const tokens = String(query.query).toUpperCase().split(/[^A-Z0-9+]+/u).filter(Boolean);
+          return [row.gtfs_route_id, "QUEENS", "PLAZA", "2025"].every((token) => tokens.includes(token));
+        });
+        const sourceFindings = object(prior.source_findings,
+          `${receiptPath}.prior.source_findings`);
+        const priorOutcome = object(prior.outcome, `${receiptPath}.prior.outcome`);
+        const priorClaims = object(prior.claim_results, `${receiptPath}.prior.claim_results`);
+        const canonicalActions = object(prior.canonical_actions,
+          `${receiptPath}.prior.canonical_actions`);
+        const expectedMissingBinding = QUEENS_PLAZA_DIRECTION_GAP_ROUTES.has(row.gtfs_route_id)
+          ? "direction"
+          : "traversal";
+        const expectedUnresolvedBindings = expectedMissingBinding === "direction"
+          ? ["attribution", "direction", "traversal"]
+          : ["attribution", "traversal"];
+        const exactNycSources = [
+          {
+            category: "official_nyc_dot_lane_project",
+            url: "https://www.nyc.gov/html/dot/html/about/current-projects.shtml",
+            sha256: "497d1f9358c5b4864a0bf1d30b1157d431a3d1a6645aad55dbad0b3090ae0f8f",
+          },
+          {
+            category: "official_public_board_committee",
+            url: "https://www.nyc.gov/html/dot/html/about/projects-2025.shtml",
+            sha256: "17d7f3288adc17c84af872c7452aa99420bc1252dd714b7c55972e3b1164f7ce",
+          },
+        ];
+        const expectedContextSource = QUEENS_PLAZA_CONTEXT_SOURCES.get(row.gtfs_route_id);
+        const expectedSupplementalUrls = [
+          ...exactNycSources.map((source) => source.url),
+          ...(expectedContextSource ? [expectedContextSource.url] : []),
+        ].sort();
+        const supplementalRetrievals = Array.isArray(supplemental.retrievals)
+          ? supplemental.retrievals
+          : [];
+        const nycSourcesExact = exactNycSources.every((expected) =>
+          acquiredRetrievals.some((retrieval) => retrieval.url === expected.url &&
+            retrieval.sha256 === expected.sha256) &&
+          supplementalRetrievals.some((value, index) => {
+            const retrieval = object(value,
+              `${receiptPath}.supplemental_search.retrievals[${index}]`);
+            return retrieval.category === expected.category && retrieval.url === expected.url &&
+              retrieval.sha256 === expected.sha256 && retrieval.status === "acquired";
+          }));
+        const expectedContext = expectedContextSource && Array.isArray(supplemental.positive_context_findings)
+          ? supplemental.positive_context_findings.find((value) => {
+            const context = object(value, `${receiptPath}.supplemental_search.positive_context_findings`);
+            return context.source_id === expectedContextSource.sourceId &&
+              context.source_url === expectedContextSource.url;
+          })
+          : undefined;
+        const mtaSourceExact = expectedContextSource
+          ? acquiredRetrievals.some((retrieval) => retrieval.url === expectedContextSource.url) &&
+            supplementalRetrievals.some((value, index) => {
+              const retrieval = object(value,
+                `${receiptPath}.supplemental_search.retrievals[${index}]`);
+              return retrieval.category === "official_mta_route_project" &&
+                retrieval.url === expectedContextSource.url && retrieval.status === "acquired";
+            }) && expectedContext !== undefined && hasRouteCorridorQuery
+          : !hasRouteCorridorQuery;
+        const supplementalSourcesExact = nycSourcesExact && mtaSourceExact &&
+          stableJson(supplementalUrls) === stableJson(expectedSupplementalUrls) &&
+          supplementalRetrievals.length === expectedSupplementalUrls.length &&
+          supplementalQueries.length === expectedSupplementalUrls.length;
+        if (!isExactQueensPlazaPacketTarget(packet, row) ||
+            receipt.missing_binding !== expectedMissingBinding ||
+            stableJson(receiptUnresolved) !== stableJson(expectedUnresolvedBindings) ||
+            correctionCount !== 0 || contextCount !== (expectedContextSource ? 1 : 0) ||
+            sourceFindings.exact_project_route_statement_found !== false ||
+            priorOutcome.still_unresolved !== true ||
+            priorClaims.exact_route_treatment_binding_proved !== false ||
+            priorClaims.exact_segment_binding_proved !== false ||
+            priorClaims.date_and_phase_proved !== false ||
+            priorClaims.operational_occurrence_identity_proved !== false ||
+            !Array.isArray(priorClaims.exact_route_binding_evidence) ||
+            priorClaims.exact_route_binding_evidence.length !== 0 ||
+            canonicalActions.operational_occurrence_added_or_updated !== false ||
+            !Array.isArray(canonicalActions.canonical_links_added) ||
+            canonicalActions.canonical_links_added.length !== 0 ||
+            !hasExactQuery("official_nyc_dot_lane_project") ||
+            !hasExactQuery("official_public_board_committee") ||
+            !supplementalSourcesExact || receipt.occurrence_context !== undefined ||
+            receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
+          throw new Error(`${receiptPath}: Queens Plaza nine-route nonterminal-context review contract does not match the exact candidate`);
         }
       }
     }

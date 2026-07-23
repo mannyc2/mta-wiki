@@ -1,0 +1,78 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "queens-plaza-2025-nine-route-nonterminal-context-supplement",
+  "sources": [
+    {
+      "byte_length": 231988,
+      "category": "official_nyc_dot_lane_project",
+      "content_sha256": "497d1f9358c5b4864a0bf1d30b1157d431a3d1a6645aad55dbad0b3090ae0f8f",
+      "http_status": 200,
+      "id": "dot_current_projects_queens_plaza_candidate_check",
+      "media_type": "text/html; charset=utf-8",
+      "note": "Frozen NYC DOT current-project index bytes were checked by exact candidate-route searches for the four westbound Queens Plaza rows dated 2025-12-13. The index does not bind any of Q100, Q101, Q102, Q32, Q39, Q60, Q63, Q66, or Q69 to those exact rows, that registry day, a stable phase, or candidate-date traversal.",
+      "raw_content_retained": false,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-15",
+      "url": "https://www.nyc.gov/html/dot/html/about/current-projects.shtml"
+    },
+    {
+      "byte_length": 83693,
+      "category": "official_public_board_committee",
+      "content_sha256": "17d7f3288adc17c84af872c7452aa99420bc1252dd714b7c55972e3b1164f7ce",
+      "http_status": 200,
+      "id": "dot_projects_2025_queens_plaza_candidate_check",
+      "media_type": "text/html; charset=utf-8",
+      "note": "Frozen NYC DOT 2025 project-index bytes were checked by exact candidate-route and public-board searches. They do not provide an exact route-treatment-row binding for any candidate in this Queens Plaza batch.",
+      "raw_content_retained": false,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-15",
+      "url": "https://www.nyc.gov/html/dot/html/about/projects-2025.shtml"
+    },
+    {
+      "byte_length": 317531,
+      "category": "official_mta_route_project",
+      "content_sha256": "4b5dc9ca398980a3803e076378acefd7ac3ec04343e0ac32db95a17c1d51226d",
+      "http_status": 200,
+      "id": "mta_queens_redesign_service_changes_candidate_context",
+      "media_type": "text/html; charset=UTF-8",
+      "note": "The staged official service-change page says Q39 terminates at Queens Plaza. This is useful route/corridor context but does not identify the four exact lane rows, bind the 2025-12-13 registry day to a stable phase, or prove lane traversal.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.html",
+      "source_id": "mta_queens_bus_network_redesign_service_changes",
+      "url": "https://www.mta.info/project/queens-bus-network-redesign/service-changes"
+    },
+    {
+      "byte_length": 461309,
+      "category": "official_mta_route_project",
+      "content_sha256": "f26c1d8af9eea107b9933d09877fadc430afba5f5c1d3f6aa5594264c5eb169e",
+      "http_status": 200,
+      "id": "mta_queens_service_change_board_item_candidate_context",
+      "media_type": "application/pdf",
+      "note": "The staged official board item describes Q101 transfer context at Queens Plaza and Q102 service between Roosevelt Island and Queens Plaza. These are route/corridor contexts only, not exact row, phase, direction, or traversal bindings.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "queens_service_change_board_item_2025",
+      "url": "https://www.mta.info/document/163136"
+    },
+    {
+      "byte_length": 1874169,
+      "category": "official_mta_route_project",
+      "content_sha256": "2cb671fc907a5f6bd476354b9e0a280a65f9cee15291494b0b2aa34711a4e0e2",
+      "http_status": 200,
+      "id": "mta_q69_queens_plaza_ace_context",
+      "media_type": "application/pdf",
+      "note": "The staged official MTA performance document reports a Q69 speed gain along Queens Plaza. This is positive route/corridor operating context, but it does not identify the four exact feature rows or prove their candidate-date lane traversal.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "meeting_doc_167241",
+      "url": "https://www.mta.info/document/167241"
+    }
+  ]
+}

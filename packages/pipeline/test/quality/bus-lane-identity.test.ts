@@ -4705,4 +4705,312 @@ describe("bus-lane identity exact-date targeting", () => {
       }
     }
   });
+
+  it("keeps all nine Queens Plaza candidates separate from the four exact westbound rows", () => {
+    const date = "2025-12-13";
+    const routes = ["Q100", "Q101", "Q102", "Q32", "Q39", "Q60", "Q63", "Q66", "Q69"];
+    const directionGapRoutes = new Set(["Q100", "Q60", "Q69"]);
+    const currentProjectsUrl = "https://www.nyc.gov/html/dot/html/about/current-projects.shtml";
+    const currentProjectsHash = "497d1f9358c5b4864a0bf1d30b1157d431a3d1a6645aad55dbad0b3090ae0f8f";
+    const projects2025Url = "https://www.nyc.gov/html/dot/html/about/projects-2025.shtml";
+    const projects2025Hash = "17d7f3288adc17c84af872c7452aa99420bc1252dd714b7c55972e3b1164f7ce";
+    const contextSources = new Map([
+      ["Q39", {
+        sourceId: "mta_queens_bus_network_redesign_service_changes",
+        sourceUrl: "https://www.mta.info/project/queens-bus-network-redesign/service-changes",
+        sourceArtifact: "source.html",
+        documentDate: "2025-06-29",
+        sourceGroup: "route_redesign",
+        blockId: "p001_b0044",
+        pageNumber: 1,
+        rawText: "Q39: The northern turnaround will be revised so the route terminates at Queens Plaza.",
+      }],
+      ["Q69", {
+        sourceId: "meeting_doc_167241",
+        sourceUrl: "https://www.mta.info/document/167241",
+        sourceArtifact: "source.pdf",
+        documentDate: "2025-01",
+        sourceGroup: "mta_board_meeting",
+        blockId: "p028_c0009",
+        pageNumber: 28,
+        rawText: "Q69 saw a 22% speed gain along Queens Plaza.",
+      }],
+      ["Q101", {
+        sourceId: "queens_service_change_board_item_2025",
+        sourceUrl: "https://www.mta.info/document/163136",
+        sourceArtifact: "source.pdf",
+        documentDate: "2025-01",
+        sourceGroup: "board_books",
+        blockId: "p030_c0003",
+        pageNumber: 30,
+        rawText: "Q101 improves transfers at Queens Plaza and Court Square.",
+      }],
+      ["Q102", {
+        sourceId: "queens_service_change_board_item_2025",
+        sourceUrl: "https://www.mta.info/document/163136",
+        sourceArtifact: "source.pdf",
+        documentDate: "2025-01",
+        sourceGroup: "board_books",
+        blockId: "p030_c0008",
+        pageNumber: 30,
+        rawText: "Q102 provides more direct service between Roosevelt Island and Queens Plaza.",
+      }],
+    ]);
+    const features = [
+      ["0138068", "WB"], ["9024008", "WB"], ["9009907", "WB"], ["9024007", "WB"],
+    ].map(([featureId, direction]) => lane({
+      feature_id: featureId!, lane_group_id: "QNS|QUEENS PLAZA", opened: "12/13/2025",
+      direction: direction!, attributes: { open_dates: "12/13/2025", segmentid: featureId! },
+    }));
+    for (const routeId of routes) {
+      const entry = candidate(`queens-plaza-${routeId.toLowerCase()}`, routeId, date);
+      const reason = directionGapRoutes.has(routeId) ? "direction_unknown" : "insufficient_path_points";
+      const [baseRow] = buildBusLaneIdentityLedger({
+        bridgeCandidates: [entry.bridge], trackerCandidates: [entry.tracker], routeAnchors: [anchor(routeId)],
+        dossierRows: [dossier({ candidateId: entry.bridge.candidate_id, routeId, date, laneGroupId: null,
+          pathSource: "historical_schedule_timepoint_pattern", pathIdentity: `${routeId}-pattern`, reason })],
+        dossierArtifact: "dossier.jsonl", laneFeatures: features, laneSnapshotId: "lanes",
+        laneSourceId: "lane_source", gtfsServiceWindows: [{ start: "2025-01-01", end: "2026-12-31" }],
+      });
+      const rootDir = mkdtempSync(join(tmpdir(), `bus-lane-queens-plaza-${routeId.toLowerCase()}-`));
+      const receiptDir = join(rootDir, "receipts");
+      const acquiredDir = join(rootDir,
+        "data/quality/relationship-integrity/bus-lane-acquisition/supplemental/queens-plaza-fixture");
+      mkdirSync(receiptDir, { recursive: true });
+      mkdirSync(acquiredDir, { recursive: true });
+      const contextSource = contextSources.get(routeId);
+      const contextSourceBytes = contextSource
+        ? Buffer.from(`fixture official ${contextSource.sourceId} source`)
+        : undefined;
+      const contextSourceHash = contextSourceBytes
+        ? createHash("sha256").update(contextSourceBytes).digest("hex")
+        : undefined;
+      const contextTextHash = contextSource
+        ? `sha256:${createHash("sha256").update(contextSource.rawText).digest("hex")}`
+        : undefined;
+      if (contextSource && contextSourceBytes && contextSourceHash && contextTextHash) {
+        const sourceDir = join(rootDir, "raw", "sources", contextSource.sourceId);
+        mkdirSync(sourceDir, { recursive: true });
+        writeFileSync(join(sourceDir, contextSource.sourceArtifact), contextSourceBytes);
+        writeFileSync(join(sourceDir, "metadata.json"), JSON.stringify({
+          sourceId: contextSource.sourceId,
+          sourceUrl: contextSource.sourceUrl,
+          sha256: `sha256:${contextSourceHash}`,
+          title: `Official MTA ${routeId} Queens Plaza context`,
+          documentDate: contextSource.documentDate,
+          sourceGroup: contextSource.sourceGroup,
+        }));
+        writeFileSync(join(sourceDir, "blocks.jsonl"), `${JSON.stringify({
+          source_id: contextSource.sourceId,
+          block_id: contextSource.blockId,
+          page_number: contextSource.pageNumber,
+          raw_text: contextSource.rawText,
+          normalized_text: contextSource.rawText,
+          raw_text_sha256: contextTextHash,
+        })}\n`);
+      }
+      writeFileSync(join(acquiredDir, "acquired-source-checks.json"), JSON.stringify({ sources: [
+        { url: currentProjectsUrl, content_sha256: currentProjectsHash, retrieval_status: "acquired" },
+        { url: projects2025Url, content_sha256: projects2025Hash, retrieval_status: "acquired" },
+        ...(contextSource && contextSourceHash
+          ? [{ url: contextSource.sourceUrl, content_sha256: contextSourceHash, retrieval_status: "acquired" }]
+          : []),
+      ] }));
+      const attempts = [
+        { category: "official_nyc_dot_lane_project",
+          query: `site:nyc.gov ${routeId} Queens Plaza 2025-12-13 lane project`,
+          query_status: "performed_2026-07-15", urls_checked: [currentProjectsUrl],
+          retrievals: [{ id: "current-projects", retrieved_on: "2026-07-15",
+            sha256: currentProjectsHash, status: "acquired" }] },
+        { category: "official_public_board_committee",
+          query: `site:nyc.gov ${routeId} Queens Plaza 2025-12-13 public board`,
+          query_status: "performed_2026-07-15", urls_checked: [projects2025Url],
+          retrievals: [{ id: "projects-2025", retrieved_on: "2026-07-15",
+            sha256: projects2025Hash, status: "acquired" }] },
+      ];
+      const prior = {
+        receipt_id: `prior-queens-plaza-${routeId.toLowerCase()}`, researched_on: "2026-07-15",
+        source_findings: { exact_project_route_statement_found: false },
+        outcome: { still_unresolved: true },
+        canonical_actions: { canonical_links_added: [], operational_occurrence_added_or_updated: false },
+        claim_results: {
+          date_and_phase_proved: false, exact_route_treatment_binding_proved: false,
+          exact_segment_binding_proved: false, operational_occurrence_identity_proved: false,
+          exact_route_binding_evidence: [],
+        },
+        acquisition_attempts: attempts,
+      };
+      const priorLine = stableJson(prior as unknown as JsonValue);
+      writeFileSync(join(rootDir, "prior.jsonl"), `${priorLine}\n`);
+      const row = { ...baseRow!, prior_acquisition_receipt: {
+        receipt_id: prior.receipt_id, artifact: "prior.jsonl",
+        row_sha256: createHash("sha256").update(priorLine).digest("hex"),
+        disposition: "completed_search_route_linkage_unresolved", next_action: "Retain pure absence.",
+      } };
+      const packet = buildBusLaneResearchPackets([row]).packets[0]!;
+      const targetFor = (candidatePacket = packet) => {
+        const groups = candidatePacket.what_is_known.target_groups;
+        const matches = groups.flatMap((group) => group.feature_matches);
+        return {
+          directions: [...new Set(matches.map((match) => match.direction))].sort(),
+          feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+          feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+          feature_row_count: matches.length,
+          feature_rows: matches.map((match) => ({
+            feature_key: match.feature_key, feature_id: match.feature_id, direction: match.direction,
+          })),
+          geometry_scopes: [...new Set(groups.map((group) => group.geometry_scope))].sort(),
+          lane_group_ids: groups.map((group) => group.lane_group_id), matched_date: date,
+          named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+          open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+        };
+      };
+      const positiveContext = contextSource && contextSourceHash && contextTextHash
+        ? {
+          source_id: contextSource.sourceId,
+          source_url: contextSource.sourceUrl,
+          ...(contextSource.sourceArtifact === "source.pdf"
+            ? { source_pdf_sha256: contextSourceHash }
+            : { source_artifact: "source.html", source_content_sha256: contextSourceHash }),
+          evidence_refs: [{
+            block_id: contextSource.blockId,
+            page_number: contextSource.pageNumber,
+            text_sha256: contextTextHash,
+          }],
+          context_finding: {
+            candidate_route_id: routeId,
+            finding_kind: "positive_route_corridor_context_nonterminal",
+            supported_scope: "route_corridor_context_only",
+            unsupported_bindings: packet.unresolved_bindings,
+            finding_summary:
+              `The official MTA source places ${routeId} at or along Queens Plaza, without binding the exact lane rows, registry day, phase, direction, or traversal.`,
+          },
+          remaining_unresolved_bindings: packet.unresolved_bindings,
+          authorizes_study: false,
+          authorizes_cross_product: false,
+        }
+        : undefined;
+      const supplemental = {
+        domains: [...new Set(["www.nyc.gov", ...(contextSource ? ["www.mta.info"] : [])])].sort(),
+        exact_queries: [
+          { category: "official_nyc_dot_lane_project",
+            query: `site:nyc.gov ${routeId} Queens Plaza 2025-12-13 lane project`,
+            query_status: "performed_2026-07-23_reviewed_results" },
+          { category: "official_public_board_committee",
+            query: `site:nyc.gov ${routeId} Queens Plaza 2025-12-13 public board`,
+            query_status: "performed_2026-07-23_reviewed_results" },
+          ...(contextSource ? [{
+            category: "official_mta_route_project",
+            query: `site:mta.info ${routeId} Queens Plaza route service 2025`,
+            query_status: "performed_2026-07-23_reviewed_results",
+          }] : []),
+        ],
+        finding_corrections: [], positive_context_findings: positiveContext ? [positiveContext] : [],
+        operator: "fixture-reviewer",
+        retrievals: [
+          { category: "official_nyc_dot_lane_project", retrieved_on: "2026-07-23",
+            sha256: currentProjectsHash, status: "acquired", url: currentProjectsUrl },
+          { category: "official_public_board_committee", retrieved_on: "2026-07-23",
+            sha256: projects2025Hash, status: "acquired", url: projects2025Url },
+          ...(contextSource && contextSourceHash ? [{
+            category: "official_mta_route_project", retrieved_on: "2026-07-23",
+            sha256: contextSourceHash, status: "acquired", url: contextSource.sourceUrl,
+          }] : []),
+        ],
+        searched_at: "2026-07-23T12:00:00Z",
+        urls_inspected: [currentProjectsUrl, projects2025Url,
+          ...(contextSource ? [contextSource.sourceUrl] : [])].sort(),
+      };
+      const expectedMissingBinding = directionGapRoutes.has(routeId) ? "direction" : "traversal";
+      const expectedUnresolved = directionGapRoutes.has(routeId)
+        ? ["attribution", "direction", "traversal"]
+        : ["attribution", "traversal"];
+      const receipt = {
+        schema_version: 1, receipt_id: `binding-queens-plaza-${routeId.toLowerCase()}`,
+        receipt_kind: "binding_absent_after_search", candidate_id: row.candidate_id,
+        candidate_fingerprint: row.candidate_fingerprint, gtfs_route_id: routeId, implementation_date: date,
+        gap_ids: [row.ledger_id], searched_at: "2026-07-15", operator: "fixture-reviewer",
+        candidate_urls: [], disposition: "binding_absent_after_search", missing_binding: expectedMissingBinding,
+        unresolved_bindings: expectedUnresolved, target: targetFor(), prior_receipt: {
+          receipt_id: prior.receipt_id, artifact: "prior.jsonl", row_sha256: row.prior_acquisition_receipt.row_sha256,
+        },
+        search: {
+          exact_queries: attempts.map(({ category, query, query_status }) => ({ category, query, query_status })),
+          domains: ["www.nyc.gov"], urls_inspected: [currentProjectsUrl, projects2025Url].sort(),
+          retrievals: attempts.flatMap((attempt) => attempt.retrievals.map((retrieval) =>
+            ({ category: attempt.category, ...retrieval }))), disposition: "binding_absent_after_search",
+        },
+        supplemental_search: supplemental, authorizes_study: false, authorizes_cross_product: false,
+      };
+      const validate = (draft: Record<string, unknown>, candidateRow = row, candidatePacket = packet) => {
+        writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+        return () => validateBindingReceiptDrafts([candidateRow], [candidatePacket], receiptDir, rootDir);
+      };
+      const drift = (changes: Record<string, unknown>) => {
+        const targetGroups = packet.what_is_known.target_groups.map((group) => ({ ...group,
+          feature_matches: group.feature_matches.map((match, index) => index === 0 ? { ...match, ...changes } : match),
+        }));
+        const candidatePacket = { ...packet, what_is_known: { ...packet.what_is_known, target_groups: targetGroups } };
+        const candidateRow = { ...row, onset_evidence: { ...row.onset_evidence, target_groups: targetGroups } };
+        return { candidatePacket, candidateRow, draft: { ...receipt, target: targetFor(candidatePacket) } };
+      };
+      try {
+        expect(packet.missing_binding).toBe(expectedMissingBinding);
+        expect(packet.unresolved_bindings).toEqual(expectedUnresolved);
+        expect(targetFor()).toMatchObject({
+          feature_row_count: 4, feature_ids: ["0138068", "9009907", "9024007", "9024008"],
+          directions: ["WB"], named_sbs_routes: [], open_dates_literals: ["12/13/2025"],
+        });
+        expect(supplemental.positive_context_findings).toHaveLength(contextSource ? 1 : 0);
+        expect(validate(receipt)).not.toThrow();
+        if (routeId === "Q100") {
+          for (const altered of [
+            drift({ feature_key: "dot-lane-feature:drift" }), drift({ feature_id: "9999999" }),
+            drift({ direction: "EB" }), drift({ matched_date: "2025-12-14" }),
+            drift({ matched_token_literal: "12/13/25", open_dates_literal: "12/13/25" }),
+            drift({ sbs_routes: ["Q100"] }),
+          ]) {
+            expect(validate(altered.draft, altered.candidateRow, altered.candidatePacket))
+              .toThrow("Queens Plaza nine-route nonterminal-context review contract does not match the exact candidate");
+          }
+          expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+            exact_queries: supplemental.exact_queries.map((query) => ({ ...query,
+              query: query.query.replace("2025-12-13", "2025-12-14"),
+            })) } })).toThrow("Queens Plaza nine-route nonterminal-context review contract does not match the exact candidate");
+          expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+            positive_context_findings: [{}] } })).toThrow();
+          expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+            finding_corrections: [{}] } })).toThrow();
+          expect(validate({ ...receipt,
+            occurrence_context: { occurrence_id: "occurrence_fake", accepted_decision_id: "decision_fake" } }))
+            .toThrow("occurrence context is not bound to an accepted occurrence decision");
+          expect(validate({ ...receipt, authorizes_study: true }))
+            .toThrow("binding receipt search preservation or authorization guard failed");
+        }
+        if (positiveContext) {
+          expect(validate({ ...receipt, supplemental_search: {
+            ...supplemental,
+            positive_context_findings: [{ ...positiveContext, evidence_refs: [{
+              ...positiveContext.evidence_refs[0], text_sha256: `sha256:${"f".repeat(64)}`,
+            }] }],
+          } })).toThrow("positive-context source-block id, page, or text hash does not resolve");
+          expect(validate({ ...receipt, supplemental_search: {
+            ...supplemental,
+            positive_context_findings: [{
+              ...positiveContext,
+              remaining_unresolved_bindings: packet.unresolved_bindings.filter(
+                (binding) => binding !== "traversal",
+              ),
+            }],
+          } })).toThrow("route/corridor context transferred to exact Queens Plaza lane rows or traversal");
+          expect(validate({ ...receipt, supplemental_search: {
+            ...supplemental,
+            positive_context_findings: [{ ...positiveContext, authorizes_study: true }],
+          } })).toThrow("route/corridor context transferred to exact Queens Plaza lane rows or traversal");
+        }
+      } finally {
+        rmSync(rootDir, { recursive: true, force: true });
+      }
+    }
+  });
 });
