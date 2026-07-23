@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:36d6bc725c1039d4f4daeeab",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:bf2e5bb6f67df828e7e8b417",
+  "candidate_id": "study-event-v2:51117c7d92f61b3b9f1b804f",
+  "candidate_fingerprint": "ce859b6c508fa268d6e9b426d0493b3cbff609bcd6bd6a2e2fcafc3869acc988",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "direction",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches, together with inspection of the official Second Avenue redesign sources, found no statement binding M50 to the 17 exact southbound feature rows, their 2024-09-05 onset, implementation phase, route traversal, or exact feature extent. The project sources identify M15 local/SBS service, not M50; that distinction is not treated as proof of non-traversal or exclusive use. This receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:36d6bc725c1039d4f4daeeab"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T05:20:00Z"
+}

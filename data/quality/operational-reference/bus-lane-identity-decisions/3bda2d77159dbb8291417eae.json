@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:3bda2d77159dbb8291417eae",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:158cf9c2699bf2a01e1e23e6",
+  "candidate_id": "study-event-v2:8264d5d6662b29f9257b9bad",
+  "candidate_fingerprint": "b1fc2489904910c15072b1357effaaf7d5382ca0f66e10d72c0c06fc9e302ec0",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches, together with inspection of the official Second Avenue redesign sources, found no statement binding M31 to the 17 exact southbound feature rows, their 2024-09-05 onset, implementation phase, route traversal, or exact feature extent. The project sources identify M15 local/SBS service, not M31; that distinction is not treated as proof of non-traversal or exclusive use. This receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:3bda2d77159dbb8291417eae"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T05:20:00Z"
+}
