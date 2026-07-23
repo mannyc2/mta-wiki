@@ -255,6 +255,71 @@ describe("bus-lane identity exact-date targeting", () => {
     expect(packet.unresolved_bindings).toEqual(["attribution", "feature_extent", "phase", "traversal"]);
   });
 
+  it("fails closed on direction and attribution when a bidirectional target has no target-specific path row", () => {
+    const entry = candidate("bidirectional-gap", "B1", "2025-10-02");
+    const rows = buildBusLaneIdentityLedger({
+      bridgeCandidates: [entry.bridge],
+      trackerCandidates: [entry.tracker],
+      routeAnchors: [anchor("B1")],
+      dossierRows: [dossier({
+        candidateId: entry.bridge.candidate_id,
+        routeId: "B1",
+        date: "2025-10-02",
+        laneGroupId: null,
+        pathSource: "unavailable",
+      })],
+      dossierArtifact: "dossier.jsonl",
+      laneFeatures: [
+        lane({ feature_id: "north", lane_group_id: "BK|FLATBUSH AVENUE", opened: "10/2/2025", direction: "NB" }),
+        lane({ feature_id: "south", lane_group_id: "BK|FLATBUSH AVENUE", opened: "10/2/2025", direction: "SB" }),
+        lane({ feature_id: "older", lane_group_id: "BK|FLATBUSH AVENUE", opened: "1/1/2020", direction: "SB" }),
+      ],
+      laneSnapshotId: "lanes",
+      laneSourceId: "lane_source",
+      gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+    });
+    const packet = buildBusLaneResearchPackets(rows).packets[0]!;
+    expect(packet.missing_binding).toBe("feature_extent");
+    expect(packet.unresolved_bindings).toEqual([
+      "attribution", "direction", "feature_extent", "phase", "traversal",
+    ]);
+  });
+
+  it("resolves attribution only when exact target features positively name the candidate route", () => {
+    const packetFor = (candidateId: string, namedRoute?: string) => {
+      const entry = candidate(candidateId, "Q1", "2025-05-01");
+      const attributes: Record<string, string | null> = { open_dates: "5/1/25" };
+      if (namedRoute) attributes.sbs_route1 = namedRoute;
+      const rows = buildBusLaneIdentityLedger({
+        bridgeCandidates: [entry.bridge],
+        trackerCandidates: [entry.tracker],
+        routeAnchors: [anchor("Q1")],
+        dossierRows: [dossier({
+          candidateId: entry.bridge.candidate_id,
+          routeId: "Q1",
+          date: "2025-05-01",
+          laneGroupId: null,
+          pathSource: "unavailable",
+        })],
+        dossierArtifact: "dossier.jsonl",
+        laneFeatures: [lane({
+          feature_id: "target",
+          lane_group_id: "QNS|TEST STREET",
+          opened: "5/1/25",
+          direction: "NB",
+          attributes,
+        })],
+        laneSnapshotId: "lanes",
+        laneSourceId: "lane_source",
+        gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+      });
+      return buildBusLaneResearchPackets(rows).packets[0]!;
+    };
+    expect(packetFor("unnamed-target").unresolved_bindings).toEqual(["attribution", "traversal"]);
+    expect(packetFor("candidate-named", "Q1").unresolved_bindings).toEqual(["traversal"]);
+    expect(packetFor("different-route-named", "Q2").unresolved_bindings).toEqual(["attribution", "traversal"]);
+  });
+
   it("never uses a current shape for a historical positive or negative and rejects low-coverage negatives", () => {
     const positive = candidate("historical-positive", "Q1", "2020-05-01");
     const negative = candidate("historical-negative", "Q2", "2020-05-01");

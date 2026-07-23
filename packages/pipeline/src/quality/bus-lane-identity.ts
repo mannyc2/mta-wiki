@@ -248,12 +248,14 @@ function stringArray(value: unknown, path: string, allowEmpty = true): string[] 
   return output;
 }
 
-function isoDay(value: unknown, path: string): string {
-  const day = nonempty(value, path);
-  if (!/^\d{4}-\d{2}-\d{2}$/u.test(day) || Number.isNaN(Date.parse(`${day}T00:00:00Z`))) {
-    throw new Error(`${path}: expected ISO day`);
+function isoReviewTime(value: unknown, path: string): string {
+  const timestamp = nonempty(value, path);
+  const day = /^\d{4}-\d{2}-\d{2}$/u.test(timestamp);
+  const instant = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/u.test(timestamp);
+  if ((!day && !instant) || Number.isNaN(Date.parse(day ? `${timestamp}T00:00:00Z` : timestamp))) {
+    throw new Error(`${path}: expected ISO day or UTC instant`);
   }
-  return day;
+  return timestamp;
 }
 
 function readJsonl<T>(path: string): T[] {
@@ -554,7 +556,7 @@ export function parseBusLaneIdentityDecision(value: unknown, path = "bus-lane id
     occurrence_id: occurrenceId,
     receipt_ids: receiptIds.sort(),
     unresolved_bindings: unresolvedBindings,
-    reviewed_at: isoDay(parsed.reviewed_at, `${path}.reviewed_at`),
+    reviewed_at: isoReviewTime(parsed.reviewed_at, `${path}.reviewed_at`),
     reviewed_by: nonempty(parsed.reviewed_by, `${path}.reviewed_by`),
     rationale: nonempty(parsed.rationale, `${path}.rationale`),
     authorizes_study: false,
@@ -761,12 +763,18 @@ function packetUnresolvedBindings(row: BusLaneIdentityRow): BusLaneMissingBindin
     bindings.add("phase");
   }
   const targetDirections = new Set(targets.flatMap((target) => target.feature_matches.map((feature) => feature.direction)));
+  const targetRefs = row.dossier_refs.filter((ref) => ref.candidate_target_match);
+  if (targetDirections.size > 1 && targetRefs.length === 0) {
+    bindings.add("direction");
+  }
   if (row.dossier_refs.some((ref) => ref.candidate_target_match && ref.direction && !targetDirections.has(ref.direction))) {
     bindings.add("direction");
   }
   const attributedRoutes = new Set(targets.flatMap((target) =>
     target.feature_matches.flatMap((feature) => feature.sbs_routes)));
-  if (attributedRoutes.size > 0 && !attributedRoutes.has(row.gtfs_route_id)) bindings.add("attribution");
+  if (!attributedRoutes.has(row.gtfs_route_id) && (targetRefs.length === 0 || attributedRoutes.size > 0)) {
+    bindings.add("attribution");
+  }
   return [...bindings].sort();
 }
 
@@ -976,6 +984,8 @@ export function validateBindingReceiptDrafts(
   packets: readonly BusLaneResearchPacket[],
   receiptDir: string,
   rootDir: string,
+  occurrences: readonly Record<string, unknown>[] = [],
+  acceptedOccurrenceReviewDecisions: readonly Record<string, unknown>[] = [],
 ): void {
   const rowByCandidate = new Map(rows.map((row) => [row.candidate_id, row]));
   const packetByCandidate = new Map(packets.map((packet) => [packet.candidate_id, packet]));
@@ -1008,8 +1018,24 @@ export function validateBindingReceiptDrafts(
       open_dates_literals: [...new Set(featureMatches.map((feature) => feature.open_dates_literal))].sort(),
       named_sbs_routes: [...new Set(featureMatches.flatMap((feature) => feature.sbs_routes))].sort(),
     };
-    if (stableJson(target as JsonValue) !== stableJson(expectedTarget)) {
+    const targetCore = Object.fromEntries(Object.keys(expectedTarget).map((key) => [key, target[key]]));
+    if (stableJson(targetCore as JsonValue) !== stableJson(expectedTarget)) {
       throw new Error(`${receiptPath}: binding receipt exact target parity failed`);
+    }
+    if (["feature_row_count", "feature_keys", "feature_rows"].some((key) => key in target)) {
+      const expectedAccounting = {
+        feature_row_count: featureMatches.length,
+        feature_keys: [...new Set(featureMatches.map((feature) => feature.feature_key))].sort(),
+        feature_rows: featureMatches.map((feature) => ({
+          feature_key: feature.feature_key,
+          feature_id: feature.feature_id,
+          direction: feature.direction,
+        })),
+      };
+      const actualAccounting = Object.fromEntries(Object.keys(expectedAccounting).map((key) => [key, target[key]]));
+      if (stableJson(actualAccounting as JsonValue) !== stableJson(expectedAccounting)) {
+        throw new Error(`${receiptPath}: binding receipt feature-row accounting parity failed`);
+      }
     }
     const priorPointer = object(receipt.prior_receipt, `${receiptPath}.prior_receipt`);
     const expectedPrior = packet.what_is_known.prior_acquisition_receipt;
@@ -1029,6 +1055,49 @@ export function validateBindingReceiptDrafts(
     const prior = object(JSON.parse(priorLine), `${journalPath}:${expectedPrior.receipt_id}`);
     if (receipt.searched_at !== prior.researched_on) {
       throw new Error(`${receiptPath}: normalized receipt changed the source campaign search date`);
+    }
+    if (receipt.occurrence_context !== undefined) {
+      const context = object(receipt.occurrence_context, `${receiptPath}.occurrence_context`);
+      const occurrenceId = nonempty(context.occurrence_id, `${receiptPath}.occurrence_context.occurrence_id`);
+      const acceptedDecisionId = nonempty(context.accepted_decision_id,
+        `${receiptPath}.occurrence_context.accepted_decision_id`);
+      const occurrence = occurrences.find((value) => value.occurrence_id === occurrenceId);
+      const acceptedDecision = acceptedOccurrenceReviewDecisions.find((value) =>
+        value.occurrence_id === occurrenceId && value.decision_id === acceptedDecisionId);
+      if (!occurrence || occurrence.review_state !== "approved" || !acceptedDecision ||
+          acceptedDecision.review_state !== "approved" ||
+          occurrence.occurrence_review_decision_id !== acceptedDecisionId) {
+        throw new Error(`${receiptPath}: occurrence context is not bound to an accepted occurrence decision`);
+      }
+      const occurrenceRoutes = Array.isArray(occurrence.routes)
+        ? occurrence.routes.map((value, index) => object(value, `${occurrenceId}.routes[${index}]`))
+        : [];
+      const evidenceBoundRoutes = occurrenceRoutes.map((route) => nonempty(route.gtfs_route_id,
+        `${occurrenceId}.routes.gtfs_route_id`)).sort();
+      const onset = object(occurrence.resolved_onset, `${occurrenceId}.resolved_onset`);
+      const onsetDate = nonempty(onset.date, `${occurrenceId}.resolved_onset.date`);
+      const treatment = object(occurrence.treatment, `${occurrenceId}.treatment`);
+      const members = treatment.kind === "atomic" ? [object(treatment.member, `${occurrenceId}.treatment.member`)] :
+        treatment.kind === "bundle" && Array.isArray(treatment.members)
+          ? treatment.members.map((value, index) => object(value, `${occurrenceId}.treatment.members[${index}]`))
+          : [];
+      const expectedContext = {
+        occurrence_id: occurrenceId,
+        accepted_decision_id: acceptedDecisionId,
+        shared_onset_date: onsetDate,
+        shared_treatment_family: members.some((member) => member.treatment_family === "bus_lane") ? "bus_lane" : null,
+        shared_corridor_record_ids: occurrence.physical_scope_record_ids === undefined ? [] :
+          stringArray(occurrence.physical_scope_record_ids, `${occurrenceId}.physical_scope_record_ids`).sort(),
+        evidence_bound_routes: evidenceBoundRoutes,
+        candidate_route_bound: evidenceBoundRoutes.includes(row.gtfs_route_id),
+        structural_feature_parity: false,
+        context_only: true,
+      };
+      if (onsetDate !== row.implementation_date || expectedContext.shared_treatment_family !== "bus_lane" ||
+          expectedContext.candidate_route_bound !== false ||
+          stableJson(context as JsonValue) !== stableJson(expectedContext)) {
+        throw new Error(`${receiptPath}: occurrence context exceeds its non-authorizing shared-corridor bounds`);
+      }
     }
     if (!Array.isArray(prior.acquisition_attempts)) {
       throw new Error(`${receiptPath}: prior receipt lacks acquisition attempts`);
@@ -1197,10 +1266,12 @@ export function writeBusLaneIdentityArtifacts(options: {
     priorAcquisitionRows: priorAcquisitionRows(join(rootDir, "data/quality/relationship-integrity/bus-lane-acquisition/campaign.jsonl")),
   });
   validateReviewedReceiptRefs(rows, join(rootDir, "data/quality/acquisition/receipts"));
+  const occurrences = readJsonl<Record<string, unknown>>(occurrencePath);
+  const occurrenceReviewDecisions = acceptedOccurrenceDecisions(acceptedOccurrenceDecisionDir);
   validateOccurrenceCreatedRows(
     rows,
-    readJsonl<Record<string, unknown>>(occurrencePath),
-    acceptedOccurrenceDecisions(acceptedOccurrenceDecisionDir),
+    occurrences,
+    occurrenceReviewDecisions,
   );
   const ledgerBytes = rows.map((row) => stableJson(row as unknown as JsonValue)).join("\n") + (rows.length ? "\n" : "");
   parseBusLaneIdentityLedger(ledgerBytes, outputPath);
@@ -1234,6 +1305,8 @@ export function writeBusLaneIdentityArtifacts(options: {
     packetBuild.packets,
     bindingReceiptDraftDir,
     rootDir,
+    occurrences,
+    occurrenceReviewDecisions,
   );
   mkdirSync(join(packetDir, "packets"), { recursive: true });
   mkdirSync(join(packetDir, "batches"), { recursive: true });
