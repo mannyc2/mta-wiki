@@ -299,6 +299,32 @@ function isExactKingsHighwayPacketTarget(
     stableJson(packet.unresolved_bindings) === stableJson(expectedBindings);
 }
 
+function isExactUticaAvenuePacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const group = packet.what_is_known.target_groups[0];
+  if (!group) return false;
+  const matches = group.feature_matches;
+  return packet.what_is_known.target_groups.length === 1 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    group.lane_group_id === "BK|UTICA AVENUE" &&
+    group.geometry_scope === "mixed_date_feature_union" &&
+    row.implementation_date === "2014-08-25" &&
+    matches.length === 26 &&
+    new Set(matches.map((match) => match.feature_key)).size === 26 &&
+    new Set(matches.map((match) => match.feature_id)).size === 16 &&
+    matches.every((match) =>
+      match.matched_date === "2014-08-25" &&
+      match.matched_token_literal === "8/25/2014" &&
+      match.open_dates_literal === "8/25/2014" &&
+      stableJson(match.sbs_routes) === stableJson(["B46"])) &&
+    stableJson([...new Set(matches.map((match) => match.direction))].sort()) ===
+      stableJson(["NB", "SB"]) &&
+    stableJson(packet.unresolved_bindings) ===
+      stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"]);
+}
+
 function isoReviewTime(value: unknown, path: string): string {
   const timestamp = nonempty(value, path);
   const day = /^\d{4}-\d{2}-\d{2}$/u.test(timestamp);
@@ -1068,6 +1094,13 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
       throw new Error(`${receiptPath}: Kings Highway packet target does not preserve exact ledger occurrence parity`);
     }
+    const uticaAvenueLedgerTarget = row.implementation_date === "2014-08-25" &&
+      row.onset_evidence.target_groups.length === 1 &&
+      row.onset_evidence.target_groups[0]?.lane_group_id === "BK|UTICA AVENUE";
+    if (uticaAvenueLedgerTarget &&
+        stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
+      throw new Error(`${receiptPath}: Utica Avenue packet target does not preserve exact ledger occurrence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -1681,12 +1714,17 @@ export function validateBindingReceiptDrafts(
             sourceId === "brt_south_brooklyn_b82_mar2018" &&
             metadata.documentDate === "2018-03" &&
             metadata.sourceGroup === "bus_priority_document";
+          const uticaAvenueSeptember2013StudySource =
+            sourceId === "2013_09_24_sbs_utica_cb9" &&
+            metadata.documentDate === "2013" &&
+            metadata.sourceGroup === "select_bus_service";
           if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
               metadataSha !== sourceContentSha256 || hash(readFileSync(sourceArtifactPath)) !== sourceContentSha256 ||
               (!proposalSourceTitle && !upperCorridorExistingConditionsTitle && !secondAvenueRedesignTitle &&
                 !west125SbsEnforcementTitle && !west178CorridorTitle && !churchAvenueTransitProjectTitle &&
                 !churchAvenueCorridorStudyTitle && !vanderbiltClermontSafetyMobilityTitle &&
-                !coneyIslandGravesendTransportationStudyTitle && !southernBrooklynB82March2018Source) ||
+                !coneyIslandGravesendTransportationStudyTitle && !southernBrooklynB82March2018Source &&
+                !uticaAvenueSeptember2013StudySource) ||
               !supplementalUrls.includes(sourceUrl) ||
               !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
                 retrieval.sha256 === sourceContentSha256)) {
@@ -1887,12 +1925,35 @@ export function validateBindingReceiptDrafts(
               window.tokens.has("LOCAL") &&
               window.tokens.has("SBS") &&
               Math.max(...window.positions) - Math.min(...window.positions) <= 3);
+          const exactUticaHistoricalProjectIntersectionWindow = uticaAvenueSeptember2013StudySource &&
+            (row.gtfs_route_id === "B12" || row.gtfs_route_id === "B14") &&
+            isExactUticaAvenuePacketTarget(packet, row) &&
+            [...citedPageWindows.values()].some((window) =>
+              window.tokens.has("PROJECT") &&
+              window.tokens.has("UTICA") &&
+              window.tokens.has("AVENUE") &&
+              window.tokens.has("ST") &&
+              window.tokens.has("JOHNS") &&
+              window.tokens.has("CHURCH") &&
+              window.tokens.has("INTERSECTIONS") &&
+              window.tokens.has("EASTERN") &&
+              window.tokens.has("EMPIRE") &&
+              window.tokens.has("LEFFERTS") &&
+              Math.max(...window.positions) - Math.min(...window.positions) <= 3) &&
+            [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+              block.route &&
+              block.tokens.has("B46") &&
+              block.tokens.has("UTICA") &&
+              (row.gtfs_route_id === "B12"
+                ? block.tokens.has("B12") && block.tokens.has("EMPIRE") && block.tokens.has("LEFFERTS")
+                : block.tokens.has("B14") && block.tokens.has("EASTERN") && block.tokens.has("PKWY"))));
           if (!boundedServiceContext && !boundedExplicitSbsRouteContext &&
               !exactWest178CorridorServiceWindow && !exactChurchAvenueProjectWindow &&
               !exactChurchAvenueHistoricalTraversalWindow &&
               !exactFultonAdjacentProjectEndpointWindow &&
               !exactGlenwoodHistoricalIntersectionWindow &&
-              !exactKingsHighwayB82SbsProjectWindow) {
+              !exactKingsHighwayB82SbsProjectWindow &&
+              !exactUticaHistoricalProjectIntersectionWindow) {
             throw new Error(`${contextPath}: staged source-block evidence does not bind the exact route to bounded corridor-service context`);
           }
           const exactUpperCorridorReviewWindow = upperCorridorExistingConditionsTitle &&
@@ -1977,6 +2038,9 @@ export function validateBindingReceiptDrafts(
           const isHistoricalSameCorridorIntersectionContext =
             finding.finding_kind === "positive_historical_same_corridor_intersection_nonterminal" &&
             finding.supported_scope === "historical_same_corridor_intersection_only";
+          const isHistoricalProjectIntersectionConnectionContext =
+            finding.finding_kind === "positive_historical_project_intersection_connection_nonterminal" &&
+            finding.supported_scope === "historical_project_intersection_connection_only";
           if (isOtherExtentContext && (!commonContextScopeValid || !proposalSourceTitle)) {
             throw new Error(`${contextPath}: positive context exceeds its nonauthorizing other-extent scope`);
           }
@@ -2027,10 +2091,23 @@ export function validateBindingReceiptDrafts(
                 candidateDateTraversalConfirmed)) {
             throw new Error(`${contextPath}: historical intersection context transferred to 2018 Glenwood Road lane service or traversal`);
           }
+          if (isHistoricalProjectIntersectionConnectionContext &&
+              (!commonContextScopeValid || !exactUticaHistoricalProjectIntersectionWindow ||
+                object(prior.source_findings, `${contextPath}.prior.source_findings`)
+                  .exact_project_route_statement_found !== false ||
+                !receiptUnresolved.includes("attribution") ||
+                !receiptUnresolved.includes("direction") ||
+                !receiptUnresolved.includes("feature_extent") ||
+                !receiptUnresolved.includes("phase") ||
+                !receiptUnresolved.includes("traversal") ||
+                candidateDateTraversalConfirmed)) {
+            throw new Error(`${contextPath}: historical project-intersection context transferred to Utica Avenue project service or traversal`);
+          }
           if (!isOtherExtentContext && !isProjectCorridorServiceContext &&
               !isHistoricalSameCorridorTraversalContext &&
               !isAdjacentProjectIntersectionEndpointContext &&
-              !isHistoricalSameCorridorIntersectionContext) {
+              !isHistoricalSameCorridorIntersectionContext &&
+              !isHistoricalProjectIntersectionConnectionContext) {
             throw new Error(`${contextPath}: positive context has an unsupported typed scope`);
           }
           nonempty(finding.finding_summary, `${contextPath}.context_finding.finding_summary`);
@@ -2045,6 +2122,15 @@ export function validateBindingReceiptDrafts(
         const expectedContextCount = row.gtfs_route_id === "B82+" ? 1 : 0;
         if (correctionCount !== expectedCorrectionCount || contextCount !== expectedContextCount) {
           throw new Error(`${receiptPath}: Kings Highway correction/context cardinality does not match the exact candidate route`);
+        }
+      }
+      if (isExactUticaAvenuePacketTarget(packet, row)) {
+        const correctionCount = supplemental.finding_corrections.length;
+        const contextCount = Array.isArray(supplemental.positive_context_findings)
+          ? supplemental.positive_context_findings.length
+          : 0;
+        if (correctionCount !== 0 || contextCount !== 1) {
+          throw new Error(`${receiptPath}: Utica Avenue correction/context cardinality does not match the exact candidate route`);
         }
       }
     }

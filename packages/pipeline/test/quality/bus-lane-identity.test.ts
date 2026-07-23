@@ -3307,4 +3307,376 @@ describe("bus-lane identity exact-date targeting", () => {
       rmSync(rootDir, { recursive: true, force: true });
     }
   });
+
+  it("keeps historical Utica project-intersection connections separate from exact 2014 lane rows", () => {
+    const date = "2014-08-25";
+    const routeIds = ["B12", "B14"];
+    const entries = routeIds.map((routeId) => candidate(`utica-${routeId}`, routeId, date));
+    const laneFeatures = [
+      ...Array.from({ length: 26 }, (_, index) => lane({
+        feature_id: `utica-${index % 16}`,
+        lane_group_id: "BK|UTICA AVENUE",
+        opened: "8/25/2014",
+        direction: index < 16 ? "NB" : "SB",
+        attributes: { open_dates: "8/25/2014", sbs_route1: "B46", segmentid: `utica-${index}` },
+      })),
+      lane({
+        feature_id: "utica-older",
+        lane_group_id: "BK|UTICA AVENUE",
+        opened: "11/17/2013",
+        direction: "SB",
+        attributes: { open_dates: "11/17/2013", sbs_route1: "B46", segmentid: "utica-older" },
+      }),
+    ];
+    const baseRows = buildBusLaneIdentityLedger({
+      bridgeCandidates: entries.map((entry) => entry.bridge),
+      trackerCandidates: entries.map((entry) => entry.tracker),
+      routeAnchors: routeIds.map(anchor),
+      dossierRows: entries.map((entry) => dossier({
+        candidateId: entry.bridge.candidate_id,
+        routeId: entry.tracker.route_id,
+        date,
+        laneGroupId: null,
+        pathSource: "unavailable",
+        pathIdentity: null,
+        reason: "historical_schedule_unavailable_pre_2023",
+      })),
+      dossierArtifact: "dossier.jsonl",
+      laneFeatures,
+      laneSnapshotId: "lanes",
+      laneSourceId: "lane_source",
+      gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+    });
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-utica-intersections-"));
+    const receiptDir = join(rootDir, "receipts");
+    const acquiredChecksDir = join(rootDir,
+      "data/quality/relationship-integrity/bus-lane-acquisition/supplemental/utica-fixture");
+    mkdirSync(receiptDir, { recursive: true });
+    mkdirSync(acquiredChecksDir, { recursive: true });
+    const studyUrl = "https://www.nyc.gov/html/brt/downloads/pdf/2013-09-24-sbs-utica-cb9.pdf";
+    const cameraUrl = "https://www.nyc.gov/bus-lane-camera-report.pdf";
+    const studyBytes = Buffer.from("fixture official 2013 Utica Avenue study PDF");
+    const cameraBytes = Buffer.from("fixture official bus-lane report PDF");
+    const studyHash = createHash("sha256").update(studyBytes).digest("hex");
+    const cameraHash = createHash("sha256").update(cameraBytes).digest("hex");
+    const sourceDir = join(rootDir, "raw", "sources", "2013_09_24_sbs_utica_cb9");
+    mkdirSync(sourceDir, { recursive: true });
+    writeFileSync(join(sourceDir, "source.pdf"), studyBytes);
+    writeFileSync(join(sourceDir, "metadata.json"), JSON.stringify({
+      sourceId: "2013_09_24_sbs_utica_cb9",
+      sourceUrl: studyUrl,
+      sha256: `sha256:${studyHash}`,
+      title: "Download the slideshow (pdf)",
+      documentDate: "2013",
+      sourceGroup: "select_bus_service",
+    }));
+    const sourceBlocks = [
+      { block_id: "p002_c0002", page_number: 2, raw_text: "Project Overview" },
+      { block_id: "p002_c0003", page_number: 2,
+        raw_text: "The Utica Avenue project runs from St Johns Place to Church Avenue." },
+      { block_id: "p002_c0004", page_number: 2,
+        raw_text: "Key intersections at Eastern Parkway, Empire and Lefferts, and Church Avenue." },
+      { block_id: "p003_c0001", page_number: 3, raw_text: "Transit Needs: B46 Bus Service" },
+      { block_id: "p003_c0003", page_number: 3,
+        raw_text: "The B46 route follows Utica Avenue; Eastern Pkwy (B14), Empire Blvd (B12), Lefferts Av (B12)." },
+    ].map((block) => ({
+      source_id: "2013_09_24_sbs_utica_cb9",
+      ...block,
+      normalized_text: block.raw_text,
+      raw_text_sha256: `sha256:${createHash("sha256").update(block.raw_text).digest("hex")}`,
+    }));
+    writeFileSync(join(sourceDir, "blocks.jsonl"),
+      `${sourceBlocks.map((block) => JSON.stringify(block)).join("\n")}\n`);
+    writeFileSync(join(acquiredChecksDir, "acquired-source-checks.json"), JSON.stringify({
+      sources: [
+        { url: cameraUrl, content_sha256: cameraHash, retrieval_status: "acquired" },
+        { url: studyUrl, content_sha256: studyHash, retrieval_status: "acquired" },
+      ],
+    }));
+    const priorRecords = routeIds.map((routeId) => ({
+      receipt_id: `prior-utica-${routeId}`,
+      researched_on: "2026-07-15",
+      source_findings: { exact_project_route_statement_found: false },
+      acquisition_attempts: [
+        {
+          category: "official_nyc_dot_lane_project",
+          query: `site:nyc.gov Utica Avenue ${routeId} bus lane`,
+          query_status: "performed_2026-07-15",
+          urls_checked: [cameraUrl],
+          retrievals: [{ id: "camera", retrieved_on: "2026-07-15", sha256: cameraHash,
+            status: "acquired" }],
+        },
+        {
+          category: "official_public_board_committee",
+          query: `site:nyc.gov Utica Avenue ${routeId} project map`,
+          query_status: "performed_2026-07-15",
+          urls_checked: [studyUrl],
+          retrievals: [{ id: "utica-study", retrieved_on: "2026-07-15", sha256: studyHash,
+            status: "acquired" }],
+        },
+      ],
+    }));
+    const priorLines = priorRecords.map((prior) => stableJson(prior as unknown as JsonValue));
+    writeFileSync(join(rootDir, "prior.jsonl"), `${priorLines.join("\n")}\n`);
+    const rows = baseRows.map((row) => {
+      const index = routeIds.indexOf(row.gtfs_route_id);
+      return {
+        ...row,
+        prior_acquisition_receipt: {
+          receipt_id: priorRecords[index]!.receipt_id,
+          artifact: "prior.jsonl",
+          row_sha256: createHash("sha256").update(priorLines[index]!).digest("hex"),
+          disposition: "completed_search_route_linkage_unresolved",
+          next_action: "Retain only historical project-intersection context.",
+        },
+      };
+    });
+    const packets = buildBusLaneResearchPackets(rows).packets;
+    const rowFor = (routeId: string) => rows.find((row) => row.gtfs_route_id === routeId)!;
+    const packetFor = (routeId: string) => packets.find((packet) => packet.gtfs_route_id === routeId)!;
+    const targetFor = (candidatePacket: typeof packets[number]) => {
+      const matches = candidatePacket.what_is_known.target_groups.flatMap((group) => group.feature_matches);
+      return {
+        lane_group_ids: candidatePacket.what_is_known.target_groups.map((group) => group.lane_group_id),
+        feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+        geometry_scopes: [...new Set(candidatePacket.what_is_known.target_groups
+          .map((group) => group.geometry_scope))].sort(),
+        matched_date: candidatePacket.implementation_date,
+        directions: [...new Set(matches.map((match) => match.direction))].sort(),
+        open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+        named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+        feature_row_count: matches.length,
+        feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+        feature_rows: matches.map((match) => ({
+          feature_key: match.feature_key,
+          feature_id: match.feature_id,
+          direction: match.direction,
+        })),
+      };
+    };
+    for (const routeId of routeIds) {
+      expect(packetFor(routeId).unresolved_bindings).toEqual([
+        "attribution", "direction", "feature_extent", "phase", "traversal",
+      ]);
+      expect(targetFor(packetFor(routeId))).toMatchObject({
+        lane_group_ids: ["BK|UTICA AVENUE"],
+        geometry_scopes: ["mixed_date_feature_union"],
+        feature_row_count: 26,
+        directions: ["NB", "SB"],
+        open_dates_literals: ["8/25/2014"],
+        named_sbs_routes: ["B46"],
+      });
+      expect(targetFor(packetFor(routeId)).feature_keys).toHaveLength(26);
+      expect(targetFor(packetFor(routeId)).feature_ids).toHaveLength(16);
+    }
+    const evidenceRefs = () => sourceBlocks.map((block) => ({
+      block_id: block.block_id,
+      page_number: block.page_number,
+      text_sha256: block.raw_text_sha256,
+    }));
+    const positiveContext = (routeId: string) => ({
+      source_id: "2013_09_24_sbs_utica_cb9",
+      source_url: studyUrl,
+      source_pdf_sha256: studyHash,
+      evidence_refs: evidenceRefs(),
+      context_finding: {
+        candidate_route_id: routeId,
+        finding_kind: "positive_historical_project_intersection_connection_nonterminal",
+        supported_scope: "historical_project_intersection_connection_only",
+        unsupported_bindings: packetFor(routeId).unresolved_bindings,
+        finding_summary: `${routeId} appears only as a connecting route at a named Utica project intersection.`,
+      },
+      remaining_unresolved_bindings: packetFor(routeId).unresolved_bindings,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    const supplementalSearch = (routeId: string) => ({
+      domains: ["www.nyc.gov"],
+      exact_queries: [
+        { category: "official_nyc_dot_lane_project", query: `site:nyc.gov Utica Avenue ${routeId} bus lane`,
+          query_status: "performed_2026-07-23_reviewed_results" },
+        { category: "official_public_board_committee", query: `site:nyc.gov Utica Avenue ${routeId} project map`,
+          query_status: "performed_2026-07-23_reviewed_results" },
+      ],
+      finding_corrections: [],
+      positive_context_findings: [positiveContext(routeId)],
+      operator: "fixture-reviewer",
+      retrievals: [
+        { category: "official_nyc_dot_lane_project", retrieved_on: "2026-07-23", sha256: cameraHash,
+          status: "acquired", url: cameraUrl },
+        { category: "official_public_board_committee", retrieved_on: "2026-07-23", sha256: studyHash,
+          status: "acquired", url: studyUrl },
+      ],
+      searched_at: "2026-07-23T10:00:00Z",
+      urls_inspected: [cameraUrl, studyUrl].sort(),
+    });
+    const receiptFor = (routeId: string) => {
+      const row = rowFor(routeId);
+      const packet = packetFor(routeId);
+      const index = routeIds.indexOf(routeId);
+      return {
+        schema_version: 1,
+        receipt_id: `binding-utica-${routeId}`,
+        receipt_kind: "binding_absent_after_search",
+        candidate_id: row.candidate_id,
+        candidate_fingerprint: row.candidate_fingerprint,
+        gtfs_route_id: routeId,
+        implementation_date: date,
+        gap_ids: [row.ledger_id],
+        searched_at: "2026-07-15",
+        operator: "fixture-reviewer",
+        candidate_urls: [],
+        disposition: "binding_absent_after_search",
+        missing_binding: packet.missing_binding,
+        unresolved_bindings: packet.unresolved_bindings,
+        target: targetFor(packet),
+        prior_receipt: {
+          receipt_id: priorRecords[index]!.receipt_id,
+          artifact: "prior.jsonl",
+          row_sha256: createHash("sha256").update(priorLines[index]!).digest("hex"),
+        },
+        search: {
+          exact_queries: priorRecords[index]!.acquisition_attempts.map((attempt) => ({
+            category: attempt.category, query: attempt.query, query_status: attempt.query_status,
+          })),
+          domains: ["www.nyc.gov"],
+          urls_inspected: [cameraUrl, studyUrl].sort(),
+          retrievals: priorRecords[index]!.acquisition_attempts.flatMap((attempt) =>
+            attempt.retrievals.map((retrieval) => ({ category: attempt.category, ...retrieval }))),
+          disposition: "binding_absent_after_search",
+        },
+        supplemental_search: supplementalSearch(routeId),
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+    };
+    const validate = (draft: Record<string, unknown>, candidateRow: typeof rows[number],
+      candidatePacket: typeof packets[number]) => {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+      return () => validateBindingReceiptDrafts([candidateRow], [candidatePacket], receiptDir, rootDir);
+    };
+    const mutatePacketFor = (routeId: string,
+      mutate: (matches: typeof packets[number]["what_is_known"]["target_groups"][number]["feature_matches"]) =>
+      typeof packets[number]["what_is_known"]["target_groups"][number]["feature_matches"]) => ({
+      ...packetFor(routeId),
+      what_is_known: {
+        ...packetFor(routeId).what_is_known,
+        target_groups: packetFor(routeId).what_is_known.target_groups.map((group) => ({
+          ...group,
+          feature_matches: mutate(group.feature_matches),
+        })),
+      },
+    });
+    try {
+      for (const routeId of routeIds) {
+        expect(validate(receiptFor(routeId), rowFor(routeId), packetFor(routeId))).not.toThrow();
+      }
+
+      for (const routeId of routeIds) {
+        const receipt = receiptFor(routeId);
+        const mutations = [
+          mutatePacketFor(routeId, (matches) => matches.map((match, index) =>
+            index === 0 ? { ...match, feature_key: "dot-lane-feature:dddddddddddddddddddddddd" } : match)),
+          mutatePacketFor(routeId, (matches) => matches.map((match, index) =>
+            index === 0 ? { ...match, feature_id: matches[1]!.feature_id } : match)),
+          mutatePacketFor(routeId, (matches) => matches.map((match, index) =>
+            index === 0 ? { ...match, direction: match.direction === "NB" ? "SB" : "NB" } : match)),
+          mutatePacketFor(routeId, (matches) => matches.map((match, index) =>
+            index === 0 ? { ...match, matched_date: "2014-08-26" } : match)),
+          mutatePacketFor(routeId, (matches) => matches.map((match, index) =>
+            index === 0 ? { ...match, sbs_routes: ["B12"] } : match)),
+        ];
+        for (const packet of mutations) {
+          expect(validate({ ...receipt, target: targetFor(packet) }, rowFor(routeId), packet))
+            .toThrow("Utica Avenue packet target does not preserve exact ledger occurrence parity");
+        }
+      }
+
+      const b12Receipt = receiptFor("B12");
+      const b14Context = positiveContext("B14");
+      expect(validate({
+        ...b12Receipt,
+        supplemental_search: {
+          ...supplementalSearch("B12"),
+          positive_context_findings: [b14Context],
+        },
+      }, rowFor("B12"), packetFor("B12")))
+        .toThrow("historical project-intersection context transferred to Utica Avenue project service or traversal");
+
+      const b12Context = positiveContext("B12");
+      expect(validate({
+        ...b12Receipt,
+        supplemental_search: {
+          ...supplementalSearch("B12"),
+          positive_context_findings: [b12Context, b12Context],
+        },
+      }, rowFor("B12"), packetFor("B12")))
+        .toThrow("Utica Avenue correction/context cardinality does not match the exact candidate route");
+      expect(validate({
+        ...b12Receipt,
+        supplemental_search: {
+          ...supplementalSearch("B12"),
+          positive_context_findings: [],
+        },
+      }, rowFor("B12"), packetFor("B12")))
+        .toThrow("Utica Avenue correction/context cardinality does not match the exact candidate route");
+
+      const b46Row = { ...rowFor("B12"), gtfs_route_id: "B46" };
+      const b46Packet = { ...packetFor("B12"), gtfs_route_id: "B46" };
+      expect(validate({
+        ...b12Receipt,
+        gtfs_route_id: "B46",
+        supplemental_search: {
+          ...supplementalSearch("B12"),
+          exact_queries: supplementalSearch("B12").exact_queries.map((query) => ({
+            ...query, query: query.query.replace("B12", "B46"),
+          })),
+          positive_context_findings: [{
+            ...b12Context,
+            context_finding: { ...b12Context.context_finding, candidate_route_id: "B46" },
+          }],
+        },
+      }, b46Row, b46Packet)).toThrow("does not bind the exact route to bounded corridor-service context");
+
+      const reduced = packetFor("B12").unresolved_bindings.filter((binding) => binding !== "phase");
+      const reducedPacket = { ...packetFor("B12"), unresolved_bindings: reduced };
+      expect(validate({
+        ...b12Receipt,
+        unresolved_bindings: reduced,
+        supplemental_search: {
+          ...supplementalSearch("B12"),
+          positive_context_findings: [{
+            ...b12Context,
+            context_finding: { ...b12Context.context_finding, unsupported_bindings: reduced },
+            remaining_unresolved_bindings: reduced,
+          }],
+        },
+      }, rowFor("B12"), reducedPacket))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+
+      expect(validate({
+        ...b12Receipt,
+        supplemental_search: {
+          ...supplementalSearch("B12"),
+          positive_context_findings: [{ ...b12Context, authorizes_study: true }],
+        },
+      }, rowFor("B12"), packetFor("B12")))
+        .toThrow("historical project-intersection context transferred to Utica Avenue project service or traversal");
+
+      const traversalConfirmedRow = {
+        ...rowFor("B12"),
+        dossier_refs: [{
+          ...rowFor("B12").dossier_refs[0]!,
+          candidate_target_match: true,
+          lane_group_id: "BK|UTICA AVENUE",
+          verdict_class: "traversal_confirmed" as const,
+          service_date: date,
+        }],
+      };
+      expect(validate(b12Receipt, traversalConfirmedRow, packetFor("B12")))
+        .toThrow("historical project-intersection context transferred to Utica Avenue project service or traversal");
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
 });

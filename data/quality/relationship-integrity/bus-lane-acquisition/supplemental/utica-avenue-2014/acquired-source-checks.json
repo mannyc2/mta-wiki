@@ -1,0 +1,22 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "utica-avenue-2014-historical-project-intersection-context-supplement",
+  "sources": [
+    {
+      "byte_length": 1666553,
+      "category": "official_public_board_committee",
+      "content_sha256": "55ce4356a1483202b331e91fedf1ac99eee97919410f1d14b2a0d42503160c1b",
+      "http_status": 200,
+      "id": "utica_avenue_bus_priority_safety_study_cb9_2013",
+      "media_type": "application/pdf",
+      "note": "Official NYC DOT September 2013 study used only for nonterminal historical project-intersection/connection context. Its B46 route map labels B14 at Eastern Parkway and B12 at Empire Boulevard and Lefferts Avenue; it does not establish B12 or B14 service on the exact 2014-08-25 Utica Avenue lane rows, feature extent, phase, direction, or candidate-date traversal.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "2013_09_24_sbs_utica_cb9",
+      "url": "https://www.nyc.gov/html/brt/downloads/pdf/2013-09-24-sbs-utica-cb9.pdf"
+    }
+  ]
+}
