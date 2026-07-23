@@ -8,6 +8,7 @@ import { writeForecastRealizationArtifacts } from "@mta-wiki/pipeline/quality/fo
 import { writeForecastRealizationReviewArtifacts } from "@mta-wiki/pipeline/quality/forecast-realization-review-artifacts";
 import { writeOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
 import { writeBusLaneIdentityArtifacts } from "@mta-wiki/pipeline/quality/bus-lane-identity";
+import { writeMemberExtentLedgerArtifacts } from "@mta-wiki/pipeline/quality/member-extent-ledger";
 import {
   loadRelationshipCompletenessArtifacts,
   syncRelationshipCompletenessToCanonicalDb,
@@ -20,7 +21,37 @@ import {
 import { applyOperationalRecoveryProposal } from "@mta-wiki/pipeline/records/operational-recovery-apply";
 import { validateOperationalRecoveryProposalTree } from "@mta-wiki/pipeline/records/operational-recovery-proposals";
 import { draftQbnrRecoveryProposalFromFile } from "@mta-wiki/pipeline/records/qbnr-recovery-draft";
-import { optionValue, requireSubject, type CommandHandler } from "./shared.js";
+import { optionValue, optionValues, requireSubject, type CommandHandler } from "./shared.js";
+
+const memberExtentLedger: CommandHandler = () => {
+  const extentDecisionDirs = optionValues(process.argv, "--extent-decisions");
+  const grainDecisionDirs = optionValues(process.argv, "--grain-decisions");
+  const absenceReceiptDirs = optionValues(process.argv, "--absence-receipts");
+  const companionPath = optionValue(process.argv, "--companion");
+  const dossierDir = optionValue(process.argv, "--dossiers");
+  const packetPath = optionValue(process.argv, "--packets");
+  const extentOutputPath = optionValue(process.argv, "--output") ?? optionValue(process.argv, "-o");
+  const grainOutputPath = optionValue(process.argv, "--grain-output");
+  const result = writeMemberExtentLedgerArtifacts({
+    ...(companionPath ? { companionPath } : {}),
+    ...(extentDecisionDirs.length > 0 ? { extentDecisionDirs } : {}),
+    ...(grainDecisionDirs.length > 0 ? { grainDecisionDirs } : {}),
+    ...(absenceReceiptDirs.length > 0 ? { absenceReceiptDirs } : {}),
+    ...(dossierDir ? { dossierDir } : {}),
+    ...(packetPath ? { packetPath } : {}),
+    ...(extentOutputPath ? { extentOutputPath } : {}),
+    ...(grainOutputPath ? { grainOutputPath } : {}),
+  });
+  const extentCounts = Object.fromEntries([...new Set(result.extentRows.map((row) => row.verdict))]
+    .sort().map((verdict) => [verdict, result.extentRows.filter((row) => row.verdict === verdict).length]));
+  const grainCounts = Object.fromEntries([...new Set(result.grainRows.map((row) => row.verdict))]
+    .sort().map((verdict) => [verdict, result.grainRows.filter((row) => row.verdict === verdict).length]));
+  console.log(`Member extent ledger: ${relative(repoRoot, result.extentOutputPath)}`);
+  console.log(`Member grain ledger: ${relative(repoRoot, result.grainOutputPath)}`);
+  console.log(`Rows: extent=${result.extentRows.length}; grain=${result.grainRows.length}`);
+  console.log(`Extent verdicts: ${Object.entries(extentCounts).map(([key, value]) => `${key}=${value}`).join(", ")}`);
+  console.log(`Grain verdicts: ${Object.entries(grainCounts).map(([key, value]) => `${key}=${value}`).join(", ")}`);
+};
 
 const busLaneIdentityLedger: CommandHandler = () => {
   const bridgePath = optionValue(process.argv, "--bridge");
@@ -240,6 +271,7 @@ const relationshipCompleteness: CommandHandler = () => {
 
 export const qualityCommands = {
   "bus-lane-identity-ledger": busLaneIdentityLedger,
+  "member-extent-ledger": memberExtentLedger,
   "operational-coverage": operationalCoverage,
   "coverage-matrix": operationalCoverage,
   "forecast-frontier": forecastFrontier,
