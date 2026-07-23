@@ -1427,6 +1427,37 @@ const POSITIVE_CONTEXT_PACKAGE_CANDIDATE_IDS = new Set([
   "study-event-v2:aa65fa96dffcaf26e7f07c85",
   "study-event-v2:d7958c3a07e9ba179ab9ac61",
 ]);
+const PURE_TARGET_ABSENCE_PACKAGE_ARTIFACT =
+  "data/quality/operational-reference/bus-lane-identity-packages/pure-target-absence-v1.json";
+const PURE_TARGET_ABSENCE_PACKAGE_SHA256 =
+  "6cdacc6a94e78b408213e7d744826b859b181452c4acf867d26233d67a7fb161";
+const PURE_TARGET_ABSENCE_PACKAGE_CANDIDATE_IDS = new Set([
+  "study-event-v2:4aab43f538f559e0bfd4efdb",
+  "study-event-v2:e49661d76cdbce9bf0c162fe",
+  "study-event-v2:d45b5610a73354928a389a7c",
+  "study-event-v2:5331ed99732b4d74b237d022",
+  "study-event-v2:dae83bfa92a5550f4a4fc9cd",
+  "study-event-v2:9223fc80cc2c813f94b778a8",
+  "study-event-v2:47ceb9d8f3e10afeb1e04b52",
+  "study-event-v2:acf5ca34e27da6dc6162143f",
+  "study-event-v2:a32e78ad09fe9cc626a5e8b9",
+  "study-event-v2:c348a740d31b66a7c53a2839",
+  "study-event-v2:98f2bbe3d91b8bbc6ca2c32f",
+  "study-event-v2:668f7befc7dcc1cbb152f137",
+  "study-event-v2:b6145c7811b986e1da846cd2",
+  "study-event-v2:95e1f301c142905e07845471",
+  "study-event-v2:9a7ed2c992613da8d52d6414",
+  "study-event-v2:56a8541d9b025aa2d1fbecea",
+  "study-event-v2:9f551e9b9ac7bda20ed43bbc",
+  "study-event-v2:1044e4c6d59116028fb39324",
+  "study-event-v2:883562db8e8d93a5ad246153",
+  "study-event-v2:ecae412bd3cd73835de6ccc9",
+  "study-event-v2:d9e063cbda6635db4518929f",
+  "study-event-v2:cf137585878f47cdd1ae7b23",
+  "study-event-v2:2aec14448b2a52a3db312a05",
+  "study-event-v2:479ca90ec5ec9eef7d7420b1",
+  "study-event-v2:2d64abb517461dd62bc20aba",
+]);
 
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
@@ -1971,6 +2002,10 @@ function isMadisonAvenueLedgerTarget(row: BusLaneIdentityRow): boolean {
 
 function isPositiveContextPackageTarget(row: BusLaneIdentityRow): boolean {
   return POSITIVE_CONTEXT_PACKAGE_CANDIDATE_IDS.has(row.candidate_id);
+}
+
+function isPureTargetAbsencePackageTarget(row: BusLaneIdentityRow): boolean {
+  return PURE_TARGET_ABSENCE_PACKAGE_CANDIDATE_IDS.has(row.candidate_id);
 }
 
 function isExactMadisonAvenuePacketTarget(
@@ -2524,6 +2559,7 @@ function isOpenVerdict(verdict: BusLaneIdentityVerdict): boolean {
 function packetMissingBinding(row: BusLaneIdentityRow): BusLaneResearchPacket["missing_binding"] {
   if (row.onset_evidence.target_groups.length === 0) return "attribution";
   if (row.detector_verdict === "onset_unresolved") return "onset";
+  if (isPureTargetAbsencePackageTarget(row)) return "feature_extent";
   if (row.detector_reason_codes.some((reason) => reason.includes("direction_unknown"))) return "direction";
   if (isFrCapodannoLedgerTarget(row)) return "feature_extent";
   if (isTwentyFirstStreetLedgerTarget(row)) return "feature_extent";
@@ -2566,6 +2602,13 @@ function packetUnresolvedBindings(row: BusLaneIdentityRow): BusLaneMissingBindin
     bindings.add("traversal");
   }
   if (isPositiveContextPackageTarget(row)) {
+    bindings.add("attribution");
+    bindings.add("direction");
+    bindings.add("feature_extent");
+    bindings.add("phase");
+    bindings.add("traversal");
+  }
+  if (isPureTargetAbsencePackageTarget(row)) {
     bindings.add("attribution");
     bindings.add("direction");
     bindings.add("feature_extent");
@@ -3975,21 +4018,28 @@ export function buildPositiveContextBindingReceiptDraft(
   const priorPath = resolve(rootDir, priorArtifact);
   const priorLine = readFileSync(priorPath, "utf8").split(/\r?\n/u).filter(Boolean).find((line) =>
     object(JSON.parse(line), priorPath).receipt_id === priorReceiptId) ?? fail();
-  if (hash(priorLine) !== priorRowSha256 ||
-      contract.prior_row_sha256_verified !== priorRowSha256 ||
-      priorPointer.artifact !== priorArtifact || priorPointer.receipt_id !== priorReceiptId ||
-      priorPointer.row_sha256 !== priorRowSha256 ||
-      contract.candidate_id !== row.candidate_id ||
-      contract.candidate_fingerprint !== row.candidate_fingerprint ||
-      contract.ledger_id !== row.ledger_id || contract.route !== row.gtfs_route_id ||
-      contract.date !== row.implementation_date ||
-      hash(stableJson(row.onset_evidence.target_groups)) !== contract.target_groups_sha256 ||
-      hash(stableJson(row.dossier_refs)) !== contract.dossier_refs_sha256 ||
-      stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups) ||
-      stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs) ||
-      packet.missing_binding !== "feature_extent" ||
-      stableJson(packet.unresolved_bindings) !==
-        stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"])) fail();
+  const freezeChecks = {
+    prior_line_hash: hash(priorLine) === priorRowSha256,
+    prior_verified_hash: contract.prior_row_sha256_verified === priorRowSha256,
+    prior_artifact: priorPointer.artifact === priorArtifact,
+    prior_receipt_id: priorPointer.receipt_id === priorReceiptId,
+    prior_row_hash: priorPointer.row_sha256 === priorRowSha256,
+    candidate_id: contract.candidate_id === row.candidate_id,
+    candidate_fingerprint: contract.candidate_fingerprint === row.candidate_fingerprint,
+    ledger_id: contract.ledger_id === row.ledger_id,
+    route: contract.route === row.gtfs_route_id,
+    date: contract.date === row.implementation_date,
+    target_hash: hash(stableJson(row.onset_evidence.target_groups)) === contract.target_groups_sha256,
+    dossier_hash: hash(stableJson(row.dossier_refs)) === contract.dossier_refs_sha256,
+    packet_target_parity:
+      stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups),
+    packet_dossier_parity: stableJson(packet.what_is_known.dossier_refs) === stableJson(row.dossier_refs),
+    missing_binding: packet.missing_binding === "feature_extent",
+    unresolved_bindings: stableJson(packet.unresolved_bindings) ===
+      stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"]),
+  };
+  const failedFreezeCheck = Object.entries(freezeChecks).find(([, valid]) => !valid)?.[0];
+  if (failedFreezeCheck) throw new Error(`${exactError}: ${failedFreezeCheck}`);
 
   const prior = object(JSON.parse(priorLine), `${priorPath}:${priorReceiptId}`);
   const candidate = object(prior.candidate, `${priorPath}.candidate`);
@@ -4191,6 +4241,255 @@ function validatePositiveContextBindingReceipt(
   }
 }
 
+function pureTargetAbsencePackageContract(
+  rootDir: string,
+  candidateId: string,
+): {
+  manifest: Record<string, unknown>;
+  contract: Record<string, unknown>;
+} {
+  const path = resolve(rootDir, PURE_TARGET_ABSENCE_PACKAGE_ARTIFACT);
+  const manifest = object(JSON.parse(readFileSync(path, "utf8")), path);
+  const packageSha256 = nonempty(manifest.package_sha256, `${path}.package_sha256`);
+  const { package_sha256: _packageSha256, ...payload } = manifest;
+  if (packageSha256 !== PURE_TARGET_ABSENCE_PACKAGE_SHA256 ||
+      hash(stableJson(payload as JsonValue)) !== PURE_TARGET_ABSENCE_PACKAGE_SHA256 ||
+      manifest.package_id !== "bus-lane-pure-target-absence-v1" ||
+      manifest.contract_kind !== "pure_nonauthorizing_absence" ||
+      manifest.count !== 25 || manifest.verdict !== "binding_absent_after_search" ||
+      manifest.authorizes_study !== false || manifest.authorizes_cross_product !== false ||
+      !Array.isArray(manifest.contracts) || manifest.contracts.length !== 25) {
+    throw new Error(`${path}: invalid pure-target-absence package freeze`);
+  }
+  const contract = manifest.contracts.map((value, index) =>
+    object(value, `${path}.contracts[${index}]`))
+    .find((value) => value.candidate_id === candidateId);
+  if (!contract || !PURE_TARGET_ABSENCE_PACKAGE_CANDIDATE_IDS.has(candidateId)) {
+    throw new Error(`${path}: candidate is outside the pure-target-absence package`);
+  }
+  return { manifest, contract };
+}
+
+export function buildPureTargetAbsenceBindingReceiptDraft(
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): Record<string, unknown> {
+  const exactError = "pure-target-absence package contract does not match the exact candidate";
+  const fail = (): never => {
+    throw new Error(exactError);
+  };
+  const { manifest, contract } = pureTargetAbsencePackageContract(rootDir, row.candidate_id);
+  const targetGroups = packet.what_is_known.target_groups;
+  const dossierRefs = packet.what_is_known.dossier_refs;
+  const features = targetGroups.flatMap((group) => group.feature_matches);
+  const priorPointer = packet.what_is_known.prior_acquisition_receipt ?? fail();
+  const priorArtifact = nonempty(contract.prior_artifact, "pure absence contract.prior_artifact");
+  const priorReceiptId = nonempty(contract.prior_receipt_id,
+    "pure absence contract.prior_receipt_id");
+  const priorRowSha256 = nonempty(contract.prior_row_sha256,
+    "pure absence contract.prior_row_sha256");
+  const priorPath = resolve(rootDir, priorArtifact);
+  const priorLine = readFileSync(priorPath, "utf8").split(/\r?\n/u).filter(Boolean).find((line) =>
+    object(JSON.parse(line), priorPath).receipt_id === priorReceiptId) ?? fail();
+  const freezeChecks: Record<string, boolean> = {
+    prior_row_hash: hash(priorLine) === priorRowSha256,
+    verified_prior_row_hash: contract.prior_row_sha256_verified === priorRowSha256,
+    prior_artifact: priorPointer.artifact === priorArtifact,
+    prior_receipt_id: priorPointer.receipt_id === priorReceiptId,
+    prior_pointer_row_hash: priorPointer.row_sha256 === priorRowSha256,
+    candidate_id: contract.candidate_id === row.candidate_id,
+    candidate_fingerprint: contract.candidate_fingerprint === row.candidate_fingerprint,
+    ledger_id: contract.ledger_id === row.ledger_id,
+    route: contract.route === row.gtfs_route_id,
+    date: contract.date === row.implementation_date,
+    target_groups_hash:
+      hash(stableJson(row.onset_evidence.target_groups)) === contract.target_groups_sha256,
+    dossier_refs_hash: hash(stableJson(row.dossier_refs)) === contract.dossier_refs_sha256,
+    packet_target_groups:
+      stableJson(packet.what_is_known.target_groups) ===
+      stableJson(row.onset_evidence.target_groups),
+    packet_dossier_refs:
+      stableJson(packet.what_is_known.dossier_refs) === stableJson(row.dossier_refs),
+    missing_binding: packet.missing_binding === "feature_extent",
+    unresolved_bindings:
+      stableJson(packet.unresolved_bindings) ===
+      stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"]),
+  };
+  const failedFreezeCheck = Object.entries(freezeChecks).find(([, valid]) => !valid)?.[0];
+  if (failedFreezeCheck) {
+    throw new Error(`${exactError}: ${failedFreezeCheck}`);
+  }
+
+  const prior = object(JSON.parse(priorLine), `${priorPath}:${priorReceiptId}`);
+  const candidate = object(prior.candidate, `${priorPath}.candidate`);
+  const findings = object(prior.source_findings, `${priorPath}.source_findings`);
+  const claims = object(prior.claim_results, `${priorPath}.claim_results`);
+  const outcome = object(prior.outcome, `${priorPath}.outcome`);
+  const actions = object(prior.canonical_actions, `${priorPath}.canonical_actions`);
+  const routePage = object(findings.mta_route_page, `${priorPath}.source_findings.mta_route_page`);
+  const exactRouteEvidence = Array.isArray(claims.exact_route_binding_evidence)
+    ? claims.exact_route_binding_evidence
+    : fail();
+  const attempts = Array.isArray(prior.acquisition_attempts)
+    ? prior.acquisition_attempts.map((value, index) =>
+      object(value, `${priorPath}.acquisition_attempts[${index}]`))
+    : fail();
+  const exactQueries = attempts.map((attempt, index) => ({
+    category: nonempty(attempt.category, `${priorPath}.acquisition_attempts[${index}].category`),
+    query: nonempty(attempt.query, `${priorPath}.acquisition_attempts[${index}].query`),
+    query_status: nonempty(attempt.query_status,
+      `${priorPath}.acquisition_attempts[${index}].query_status`),
+  }));
+  const urls = [...new Set(attempts.flatMap((attempt, index) =>
+    stringArray(attempt.urls_checked, `${priorPath}.acquisition_attempts[${index}].urls_checked`)))].sort();
+  const retrievals = attempts.flatMap((attempt, attemptIndex) => {
+    const attemptRetrievals = Array.isArray(attempt.retrievals) ? attempt.retrievals : fail();
+    const category = nonempty(attempt.category,
+      `${priorPath}.acquisition_attempts[${attemptIndex}].category`);
+    return attemptRetrievals.map((value, retrievalIndex) => ({
+      category,
+      ...object(value, `${priorPath}.acquisition_attempts[${attemptIndex}].retrievals[${retrievalIndex}]`),
+    }));
+  });
+  const namedSbsRoutes = [...new Set(features.flatMap((feature) => feature.sbs_routes))].sort();
+  const directions = [...new Set(features.map((feature) => feature.direction))].sort();
+  const normalizedCandidate = row.gtfs_route_id.endsWith("+")
+    ? row.gtfs_route_id.slice(0, -1)
+    : row.gtfs_route_id;
+  const exactCandidateQuery = exactQueries.some((query) => {
+    if (query.category !== "official_mta_route_project") return false;
+    const tokens = query.query.toUpperCase().split(/[^A-Z0-9+]+/u).filter(Boolean);
+    return tokens.includes(row.gtfs_route_id) || tokens.includes(normalizedCandidate);
+  });
+  if (candidate.candidate_id !== row.candidate_id || candidate.route_id !== row.gtfs_route_id ||
+      candidate.implementation_date !== row.implementation_date ||
+      candidate.identity !== `${row.gtfs_route_id}|bus_lane|${row.implementation_date}|day` ||
+      contract.target_group_count !== targetGroups.length ||
+      contract.feature_row_count !== features.length ||
+      contract.feature_key_count !== new Set(features.map((feature) => feature.feature_key)).size ||
+      contract.feature_id_count !== new Set(features.map((feature) => feature.feature_id)).size ||
+      stableJson(contract.directions as JsonValue) !== stableJson(directions) ||
+      stableJson(contract.named_sbs_routes as JsonValue) !== stableJson(namedSbsRoutes) ||
+      namedSbsRoutes.includes(row.gtfs_route_id) || namedSbsRoutes.includes(normalizedCandidate) ||
+      contract.dossier_row_count !== dossierRefs.length ||
+      contract.dossier_target_count !== 0 ||
+      dossierRefs.some((ref) => ref.candidate_target_match) ||
+      contract.prior_route_supported !== false ||
+      contract.prior_disposition !== "completed_search_route_linkage_unresolved" ||
+      outcome.exclusive_primary_disposition !== "completed_search_route_linkage_unresolved" ||
+      priorPointer.disposition !== "completed_search_route_linkage_unresolved" ||
+      findings.candidate_named_lane_record_count !== 0 ||
+      findings.exact_project_route_statement_found !== false ||
+      claims.exact_route_treatment_binding_proved !== false ||
+      claims.exact_segment_binding_proved !== false ||
+      claims.explicit_phase_identity_proved !== false ||
+      claims.operational_occurrence_identity_proved !== false ||
+      actions.operational_occurrence_added_or_updated !== false ||
+      routePage.content_sha256 !== contract.route_page_sha256 ||
+      hash(stableJson(exactRouteEvidence as JsonValue)) !== contract.exact_route_evidence_sha256 ||
+      exactRouteEvidence.length !== 0 ||
+      !Array.isArray(contract.evidence_sources) || contract.evidence_sources.length !== 0 ||
+      !exactCandidateQuery) fail();
+
+  const rationale = `The frozen ${String(contract.corridor_key)} target preserves ${targetGroups.length} lane group(s), ${features.length} ordered feature row(s), ${new Set(features.map((feature) => feature.feature_key)).size} unique feature key(s), ${new Set(features.map((feature) => feature.feature_id)).size} feature ID(s), directions ${directions.join("/")}, and no candidate or SBS-equivalent route named by the target features. The immutable candidate-exact prior acquisition found no authoritative ${row.gtfs_route_id} route-treatment statement for this exact dated target, and proved no exact segment, phase, or operational occurrence. The candidate dossier has ${dossierRefs.length} row(s) and zero exact-target rows, so it proves neither traversal nor exclusion. Attribution, direction, feature extent, phase, and traversal remain unresolved. This is not a no-traversal or wrong-route refutation and authorizes no occurrence, study, or cross-product projection.`;
+  const receiptId = `bus-lane-binding-search:${fingerprint({
+    package_id: manifest.package_id,
+    candidate_id: row.candidate_id,
+    candidate_fingerprint: row.candidate_fingerprint,
+    verdict: "binding_absent_after_search",
+  }).slice(0, 24)}`;
+  return {
+    schema_version: BUS_LANE_IDENTITY_SCHEMA_VERSION,
+    receipt_id: receiptId,
+    receipt_kind: "binding_absent_after_search",
+    package: {
+      artifact: PURE_TARGET_ABSENCE_PACKAGE_ARTIFACT,
+      package_id: manifest.package_id,
+      package_sha256: manifest.package_sha256,
+      frozen_at: manifest.frozen_at,
+    },
+    candidate_id: row.candidate_id,
+    candidate_fingerprint: row.candidate_fingerprint,
+    gap_ids: [row.ledger_id],
+    gtfs_route_id: row.gtfs_route_id,
+    implementation_date: row.implementation_date,
+    missing_binding: "feature_extent",
+    unresolved_bindings: ["attribution", "direction", "feature_extent", "phase", "traversal"],
+    searched_at: prior.researched_on,
+    operator: "codex-plan039-pure-target-absence-package",
+    target: {
+      lane_group_ids: targetGroups.map((group) => group.lane_group_id),
+      feature_ids: [...new Set(features.map((feature) => feature.feature_id))].sort(),
+      geometry_scopes: [...new Set(targetGroups.map((group) => group.geometry_scope))].sort(),
+      matched_date: row.implementation_date,
+      directions,
+      open_dates_literals: [...new Set(features.map((feature) => feature.open_dates_literal))].sort(),
+      named_sbs_routes: namedSbsRoutes,
+      feature_row_count: features.length,
+      feature_keys: [...new Set(features.map((feature) => feature.feature_key))].sort(),
+      feature_rows: features.map((feature) => ({
+        feature_key: feature.feature_key,
+        feature_id: feature.feature_id,
+        direction: feature.direction,
+      })),
+    },
+    prior_receipt: {
+      artifact: priorArtifact,
+      receipt_id: priorReceiptId,
+      row_sha256: priorRowSha256,
+    },
+    search: {
+      exact_queries: exactQueries,
+      domains: [...new Set(urls.map((url) => new URL(url).hostname))].sort(),
+      urls_inspected: urls,
+      retrievals,
+      disposition: "binding_absent_after_search",
+    },
+    absence_contract: {
+      prior_route_treatment_supported: false,
+      exact_route_binding_evidence: [],
+      candidate_named_target: false,
+      candidate_exact_target_bound: false,
+      candidate_direction_bound: false,
+      candidate_feature_extent_bound: false,
+      candidate_phase_bound: false,
+      candidate_traversal_bound: false,
+      candidate_occurrence_bound: false,
+      nonexclusive_search_result: true,
+      not_a_refutation: true,
+    },
+    source_gap: {
+      candidate_authorization_uses_only_receipt_pins: true,
+      candidate_exact_target_dossier_row_count: 0,
+      raw_source_content_used_to_authorize: false,
+      source_gap_authorizes_occurrence: false,
+    },
+    candidate_urls: [],
+    disposition: "binding_absent_after_search",
+    rationale,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+  };
+}
+
+function validatePureTargetAbsenceBindingReceipt(
+  receipt: Record<string, unknown>,
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): void {
+  let expected: Record<string, unknown>;
+  try {
+    expected = buildPureTargetAbsenceBindingReceiptDraft(row, packet, rootDir);
+  } catch {
+    throw new Error("pure-target-absence package contract does not match the exact candidate");
+  }
+  if (stableJson(receipt as JsonValue) !== stableJson(expected as JsonValue)) {
+    throw new Error("pure-target-absence package contract does not match the exact candidate");
+  }
+}
+
 export function validateBindingReceiptDrafts(
   rows: readonly BusLaneIdentityRow[],
   packets: readonly BusLaneResearchPacket[],
@@ -4369,6 +4668,12 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
       throw new Error(`${receiptPath}: positive-context package does not preserve exact ledger evidence parity`);
     }
+    const pureTargetAbsencePackageTarget = isPureTargetAbsencePackageTarget(row);
+    if (pureTargetAbsencePackageTarget &&
+        (stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups) ||
+        stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
+      throw new Error(`${receiptPath}: pure-target-absence package does not preserve exact ledger evidence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -4425,6 +4730,10 @@ export function validateBindingReceiptDrafts(
     }
     if (positiveContextPackageTarget) {
       validatePositiveContextBindingReceipt(receipt, row, packet, rootDir);
+      continue;
+    }
+    if (pureTargetAbsencePackageTarget) {
+      validatePureTargetAbsenceBindingReceipt(receipt, row, packet, rootDir);
       continue;
     }
     const priorPointer = object(receipt.prior_receipt, `${receiptPath}.prior_receipt`);
