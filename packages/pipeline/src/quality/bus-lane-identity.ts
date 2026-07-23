@@ -1265,6 +1265,148 @@ const TWENTY_FIRST_STREET_ACQUIRED_CHECKS = {
   ],
 };
 
+const MADISON_AVENUE_PRIOR_ARTIFACT =
+  "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/receipts.jsonl";
+const MADISON_AVENUE_PRIOR_ARTIFACT_SHA256 =
+  "c511783ce9f86b65fa5ffc087fe1d1753beb92caa37064976da67748ca182593";
+const MADISON_AVENUE_PRIORS = new Map([
+  ["SIM8", {
+    receiptId: "staten-island-acquisition:26a648388ad9f5f733555770",
+    rowSha256: "65bde5e67345c26d59c47d39019efe92f0ec8fd95cec2ccbacb9a9434a1b83a2",
+    routePageSha256: "3ca58649dd03f4988f85e31b2184363e0a9f01563f9353b757f5700370cfff89",
+    dossierSha256: "bc528bf833850aed36cb9f429c8b03769a126833aa47896069e06cf41a9d6d02",
+    receiptSuffix: "1543a64113ffea1f5457442b",
+    historicalPhrase: "19 matched segment(s)",
+    currentCorridorTokenFound: false,
+  }],
+  ["SIM22", {
+    receiptId: "staten-island-acquisition:3c57f02cfc8a0db53a9a8633",
+    rowSha256: "83d9fad88b49b84272a1a0f5708953ef6e550de59bbbb41c5f2c80cf7d894950",
+    routePageSha256: "aec7297b735399bfb8665b122d547aa6d20fb4a47ec8565bd877478acf7b8a44",
+    dossierSha256: "aa4e20eaef8179803ea6d3f852a168e18ba1e213a2efee1996e35fe2697ec37c",
+    receiptSuffix: "ac7944b75fe4d56b71b95791",
+    historicalPhrase: "19 candidate-date lane piece(s)",
+    currentCorridorTokenFound: true,
+  }],
+  ["SIM25", {
+    receiptId: "staten-island-acquisition:16256714ec7a7838f026f077",
+    rowSha256: "a48d282d19fd91294b5413238c82f287b4b5fed97d75a046b34946ebb0a1fb7a",
+    routePageSha256: "db00e24a4c84a258c1adfa4de0efe834b9cbd67c29d6d8ea66d141fa15c87547",
+    dossierSha256: "a4aeaf1c82f96cda045bab56514a8c441004a5b8faa95e45ea36d00a5f3e2560",
+    receiptSuffix: "c1a0554defbce36dc2b71b6b",
+    historicalPhrase: "19 candidate-date lane piece(s)",
+    currentCorridorTokenFound: false,
+  }],
+  ["SIM26", {
+    receiptId: "staten-island-acquisition:f0d728ee7e7b11fb86cdb007",
+    rowSha256: "c5d6842c1990496538573e3a2a02ab28c4b11d0ef3628ea05403d2b136ebe549",
+    routePageSha256: "4a1916323eb0c168e4eec83d524f2d9f3d2d463ac63ac20c8c3ba3e3ac296bd7",
+    dossierSha256: "44a8ad8e0e588236b80758e23dc01e7c3aefb4bfd027605e0365dcf2e918bd25",
+    receiptSuffix: "684de7743d2d789b4e273abc",
+    historicalPhrase: "19 matched segment(s)",
+    currentCorridorTokenFound: true,
+  }],
+  ["SIM30", {
+    receiptId: "staten-island-acquisition:46efe67f53dba7a39e33ed45",
+    rowSha256: "a6ee9ed4399609bb5dc6c6fef4349d9948b3738d3d1a70fc5e1bd8d4e87e1e22",
+    routePageSha256: "4abd07520557990c0a1a1286d8a7329ff131e562e7319bde3779516efdb245ca",
+    dossierSha256: "64025a262b991dc27d9bf1927e9d6743c7c8f7a62975b4136a998ecd0754d275",
+    receiptSuffix: "b17ebb5255832261d25c9d70",
+    historicalPhrase: "19 candidate-date lane piece(s)",
+    currentCorridorTokenFound: false,
+  }],
+]);
+const MADISON_AVENUE_FEATURE_ROWS_SHA256 =
+  "27a0c0834906677b67d6cdeefe6e593d91cb24bcc3a74ceb4af284c2747f2397";
+const MADISON_AVENUE_SEGMENT_IDS_SHA256 =
+  "b776f30be72900bb6556bd254cd9e40aa566c51f57d730dceca6276080f31a5f";
+const MADISON_AVENUE_ROUTE_INVENTORY = [
+  "M1", "M2", "M3", "M4", "Q32", "SIM4C", "SIM6", "SIM8", "SIM8X", "SIM11", "SIM22",
+  "SIM25", "SIM26", "SIM30", "SIM31", "SIM33C",
+];
+const MADISON_AVENUE_ROUTE_INVENTORY_SHA256 =
+  "b687d4737196997f3d723b8e828e166e57a126d29321d059343c63a3c9f3a224";
+const MADISON_AVENUE_STAGED_CONTEXT = {
+  sourceId: "better_buses_action_plan_2019",
+  sourceUrl: "https://www.nyc.gov/html/brt/downloads/pdf/better-buses-action-plan-2019.pdf",
+  artifact: "raw/sources/better_buses_action_plan_2019/source.pdf",
+  sourceSha256: "68ac9e1aaf17a033577688e241e586ac101581ef0e2ba0cc3854196f9323f1c1",
+  metadataSha256: "ac401be3bee7e15f58f7e59cd5f87732611e0ba285b6428513948c5770c2face",
+  blocksArtifact: "raw/sources/better_buses_action_plan_2019/blocks.jsonl",
+  blocksSha256: "487b4b779b210ed48c836b10a647567cc20f4ea18c95a58abc4334744e262a28",
+  blocks: [
+    {
+      blockId: "p026_c0005",
+      textSha256: "sha256:08b340c3dc47d98bede28b288c5e0c66741c8ad8909a64d9f90b9116d665c3c1",
+      textMarker: "continues 2018 work",
+    },
+    {
+      blockId: "p026_c0006",
+      textSha256: "sha256:138a126314507a47e49f66253f4953103d1714602bea70b5cb2d095cff1a7caf",
+      textMarker: "Routes served:",
+    },
+    {
+      blockId: "p026_c0011",
+      textSha256: "sha256:c6fb230c92cfe724b255156a10683fe005f7c6a9ad3f779ba5ce8d9a411e42d6",
+      textMarker: "Upgrade existing double bus lanes",
+    },
+  ],
+};
+const MADISON_AVENUE_ACQUIRED_CHECKS = {
+  artifact: "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/acquired-source-checks.json",
+  sha256: "9d7a61be83f54c8d431f588976af06d86c0dedff5300511d1bd4ac4ed5e6c32a",
+  nonretainedSources: [
+    {
+      id: "dot_bus_lanes_snapshot", byteLength: 2_979_323,
+      sha256: "1b3a990a75abc472d5f68d683aeb7d1deafa2eca4a239e4914b12db6a9927a5a",
+      url: "https://data.cityofnewyork.us/resource/ycrg-ses3.json?$limit=5000",
+      classification: "superseded_registry_snapshot_context",
+    },
+    {
+      id: "better_buses_action_plan_2019", byteLength: 8_330_907,
+      sha256: "68ac9e1aaf17a033577688e241e586ac101581ef0e2ba0cc3854196f9323f1c1",
+      url: "https://www.nyc.gov/html/brt/downloads/pdf/better-buses-action-plan-2019.pdf",
+      classification: "later_route_inventory_and_lane_upgrade_context",
+    },
+    {
+      id: "bus_lane_camera_release_2021", byteLength: 23_377,
+      sha256: "ec97d7acc41ddea25aa370ef5aa044bd63e7d4cf06766ecac0a5923f20556fec",
+      url: "https://www.nyc.gov/html/dot/html/pr2021/pr21-019.shtml",
+      classification: "later_madison_local_route_context",
+    },
+    {
+      id: "mta_staten_express_map", byteLength: 454_842,
+      sha256: "fc4935e5cd27fabb4d085002dd536f9aef43c0217b4db256e721d494ececcd28",
+      url: "https://files.mta.info/s3fs-public/pdf/bussi-express_0.pdf",
+      classification: "current_express_network_context",
+    },
+    {
+      id: "dot_projects_2025", byteLength: 83_689,
+      sha256: "2c45ebf89a32f279950bda076ea50527ee062e650968b656df8422f71eb055db",
+      url: "https://www.nyc.gov/html/dot/html/about/projects-2025.shtml",
+      classification: "project_index_search_context",
+    },
+    {
+      id: "dot_current_projects", byteLength: 231_988,
+      sha256: "497d1f9358c5b4864a0bf1d30b1157d431a3d1a6645aad55dbad0b3090ae0f8f",
+      url: "https://www.nyc.gov/html/dot/html/about/current-projects.shtml",
+      classification: "project_index_search_context",
+    },
+    {
+      id: "dot_bus_lanes_metadata", byteLength: 37_887,
+      sha256: "37d620df045dfefee4b0a52b7489a7059c4af77aac40a3f0ca6caa99ac45f75f",
+      url: "https://data.cityofnewyork.us/api/views/ycrg-ses3",
+      classification: "dataset_metadata_context",
+    },
+    {
+      id: "dot_datafeeds", byteLength: 50_137,
+      sha256: "978825efcdee1f4819c3f8e114343502950390acdda7b0d9515af1b31ccc9bc6",
+      url: "https://www.nyc.gov/html/dot/html/about/datafeeds.shtml",
+      classification: "dataset_catalog_context",
+    },
+  ],
+};
+
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
   row: BusLaneIdentityRow,
@@ -1799,6 +1941,72 @@ function isExactTwentyFirstStreetPacketTarget(
     prior.disposition === priorContract.disposition;
 }
 
+function isMadisonAvenueLedgerTarget(row: BusLaneIdentityRow): boolean {
+  return MADISON_AVENUE_PRIORS.has(row.gtfs_route_id) &&
+    row.implementation_date === "2012-12-11" &&
+    row.onset_evidence.target_groups.length === 1 &&
+    row.onset_evidence.target_groups[0]?.lane_group_id === "MAN|MADISON AVENUE";
+}
+
+function isExactMadisonAvenuePacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const group = packet.what_is_known.target_groups[0];
+  const dossierRef = packet.what_is_known.dossier_refs[0];
+  const prior = packet.what_is_known.prior_acquisition_receipt;
+  const priorContract = MADISON_AVENUE_PRIORS.get(row.gtfs_route_id);
+  if (!group || !dossierRef || !prior || !priorContract || !isMadisonAvenueLedgerTarget(row)) return false;
+  const featureRows = group.feature_matches.map((match) => [
+    match.feature_key,
+    match.feature_id,
+    match.direction,
+    match.matched_date,
+    match.matched_token_literal,
+    match.open_dates_literal,
+    match.sbs_routes,
+  ]);
+  return packet.missing_binding === "feature_extent" &&
+    stableJson(packet.unresolved_bindings) ===
+      stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"]) &&
+    packet.what_is_known.target_groups.length === 1 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    stableJson(packet.what_is_known.dossier_refs) === stableJson(row.dossier_refs) &&
+    group.lane_group_id === "MAN|MADISON AVENUE" && group.borough === "MAN" &&
+    group.facility === "Madison Avenue" && group.street === "MADISON AVENUE" &&
+    group.geometry_scope === "mixed_date_feature_union" &&
+    group.feature_matches.length === 19 &&
+    new Set(group.feature_matches.map((match) => match.feature_key)).size === 19 &&
+    new Set(group.feature_matches.map((match) => match.feature_id)).size === 19 &&
+    group.feature_matches.every((match) =>
+      match.direction === "NB" && match.matched_date === "2012-12-11" &&
+      match.matched_token_literal === "12/11/12" &&
+      match.open_dates_literal === "5/26/81,1/82, 12/11/12" && match.sbs_routes.length === 0) &&
+    hash(stableJson(featureRows as JsonValue)) === MADISON_AVENUE_FEATURE_ROWS_SHA256 &&
+    packet.what_is_known.dossier_refs.length === 1 &&
+    hash(stableJson(packet.what_is_known.dossier_refs)) === priorContract.dossierSha256 &&
+    dossierRef.candidate_target_match === false && dossierRef.direction === null &&
+    dossierRef.lane_group_id === null && dossierRef.path_identity === null &&
+    dossierRef.path_source === "unavailable" &&
+    dossierRef.reason === "historical_schedule_unavailable_pre_2023" &&
+    dossierRef.service_date === null && dossierRef.temporal_lag_days === null &&
+    dossierRef.verdict_class === "geometry_ambiguous" && dossierRef.overlap_miles === 0 &&
+    dossierRef.overlap_share === 0 && dossierRef.stop_coordinate_coverage === 0 &&
+    dossierRef.span_stop_ids.length === 0 &&
+    stableJson(packet.what_is_known.dossier_summary) === stableJson({
+      counts_by_path_source: { gtfs_shape: 0, historical_schedule_timepoint_pattern: 0, unavailable: 1 },
+      counts_by_reason: { historical_schedule_unavailable_pre_2023: 1 },
+      counts_by_verdict: {
+        geometry_ambiguous: 1, no_traversal: 0, traversal_confirmed: 0, traversal_marginal: 0,
+      },
+      row_count: 1,
+      target_row_count: 0,
+    }) &&
+    prior.artifact === MADISON_AVENUE_PRIOR_ARTIFACT &&
+    prior.receipt_id === priorContract.receiptId && prior.row_sha256 === priorContract.rowSha256 &&
+    prior.disposition === "linkage_supported_phase_unresolved";
+}
+
 function isoReviewTime(value: unknown, path: string): string {
   const timestamp = nonempty(value, path);
   const day = /^\d{4}-\d{2}-\d{2}$/u.test(timestamp);
@@ -2294,6 +2502,7 @@ function packetMissingBinding(row: BusLaneIdentityRow): BusLaneResearchPacket["m
   if (row.detector_reason_codes.some((reason) => reason.includes("direction_unknown"))) return "direction";
   if (isFrCapodannoLedgerTarget(row)) return "feature_extent";
   if (isTwentyFirstStreetLedgerTarget(row)) return "feature_extent";
+  if (isMadisonAvenueLedgerTarget(row)) return "feature_extent";
   if (row.implementation_date === "2023-10-31" && EAST_GUN_HILL_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
       row.onset_evidence.target_groups.length === 1 &&
       row.onset_evidence.target_groups[0]?.lane_group_id === "BX|EAST GUN HILL ROAD") {
@@ -2317,6 +2526,13 @@ function packetUnresolvedBindings(row: BusLaneIdentityRow): BusLaneMissingBindin
     bindings.add("traversal");
   }
   if (isTwentyFirstStreetLedgerTarget(row)) {
+    bindings.add("attribution");
+    bindings.add("direction");
+    bindings.add("feature_extent");
+    bindings.add("phase");
+    bindings.add("traversal");
+  }
+  if (isMadisonAvenueLedgerTarget(row)) {
     bindings.add("attribution");
     bindings.add("direction");
     bindings.add("feature_extent");
@@ -3384,6 +3600,298 @@ function validateTwentyFirstStreetBindingReceipt(
       priorRouteRetrieval.status !== "acquired") fail();
 }
 
+function madisonAvenueRationale(row: BusLaneIdentityRow): string {
+  return `The exact current registry target is the ordered 19-row, 19-key, 19-ID northbound Madison Avenue lane group dated 2012-12-11, with literal 12/11/12, preserved open_dates literal 5/26/81,1/82, 12/11/12, and no named routes. The immutable Staten Island acquisition receipt retained 19 current matching segment ids but did not preserve the historical candidate's exact segment identity. The staged 2019 Better Buses plan names ${row.gtfs_route_id} among routes served by existing double bus lanes, says the project continues 2018 work, and describes an upgrade to red paint and signage. That later generic corridor/route treatment context proves neither the candidate's 2012 onset nor its exact feature extent, phase, traversal, occurrence, or route-specific historical direction. A one-way corridor signal and the current target's northbound rows do not independently bind candidate-specific historical route direction. The candidate-dated pre-2023 dossier is unavailable and supplies no route path or target match. Attribution, direction, feature extent, phase, and traversal remain unresolved. This authorizes no occurrence, study, or cross-product projection.`;
+}
+
+export function buildMadisonAvenueBindingReceiptDraft(
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+): Record<string, unknown> {
+  if (!isExactMadisonAvenuePacketTarget(packet, row)) {
+    throw new Error("Madison Avenue packet does not match the exact candidate");
+  }
+  const priorContract = MADISON_AVENUE_PRIORS.get(row.gtfs_route_id)!;
+  const matches = packet.what_is_known.target_groups.flatMap((group) => group.feature_matches);
+  const urlsInspected = [
+    ...MADISON_AVENUE_ACQUIRED_CHECKS.nonretainedSources.map((source) => source.url),
+    `https://bustime-classic.mta.info/m/?q=${row.gtfs_route_id}`,
+  ].sort();
+  return {
+    authorizes_cross_product: false,
+    authorizes_study: false,
+    candidate_fingerprint: row.candidate_fingerprint,
+    candidate_id: row.candidate_id,
+    candidate_urls: [],
+    context_evidence: [
+      {
+        authorizes_cross_product: false,
+        authorizes_study: false,
+        candidate_date_bound: false,
+        candidate_direction_bound: false,
+        candidate_exact_target_bound: false,
+        candidate_feature_extent_bound: false,
+        candidate_onset_bound: false,
+        candidate_occurrence_bound: false,
+        candidate_phase_bound: false,
+        candidate_route_inventory_match: true,
+        candidate_traversal_bound: false,
+        classification: "later_existing_lane_upgrade_and_route_inventory_context",
+        context_only: true,
+        document_date: "2019",
+        evidence_blocks: MADISON_AVENUE_STAGED_CONTEXT.blocks.map((block) => ({
+          block_id: block.blockId,
+          text_sha256: block.textSha256,
+        })),
+        generic_route_treatment_context: true,
+        not_occurrence_evidence: true,
+        route_inventory: MADISON_AVENUE_ROUTE_INVENTORY,
+        source_artifact: MADISON_AVENUE_STAGED_CONTEXT.artifact,
+        source_blocks_artifact: MADISON_AVENUE_STAGED_CONTEXT.blocksArtifact,
+        source_blocks_sha256: MADISON_AVENUE_STAGED_CONTEXT.blocksSha256,
+        source_id: MADISON_AVENUE_STAGED_CONTEXT.sourceId,
+        source_sha256: MADISON_AVENUE_STAGED_CONTEXT.sourceSha256,
+        source_url: MADISON_AVENUE_STAGED_CONTEXT.sourceUrl,
+      },
+    ],
+    disposition: "binding_absent_after_search",
+    gap_ids: [row.ledger_id],
+    gtfs_route_id: row.gtfs_route_id,
+    implementation_date: row.implementation_date,
+    missing_binding: "feature_extent",
+    operator: "plan039-corridor-adjudicator",
+    prior_receipt: packet.what_is_known.prior_acquisition_receipt,
+    rationale: madisonAvenueRationale(row),
+    receipt_id: `bus-lane-binding-search:${priorContract.receiptSuffix}`,
+    receipt_kind: "binding_absent_after_search",
+    schema_version: 1,
+    search: {
+      disposition: "binding_absent_after_search",
+      immutable_prior_receipt_id: priorContract.receiptId,
+      repository_context_source_ids: [MADISON_AVENUE_STAGED_CONTEXT.sourceId],
+      retrieval_classifications: MADISON_AVENUE_ACQUIRED_CHECKS.nonretainedSources.map((source) => ({
+        classification: source.classification,
+        id: source.id,
+        raw_content_retained_in_acquisition_check: false,
+        staged_source_available_now: source.id === MADISON_AVENUE_STAGED_CONTEXT.sourceId,
+      })),
+      urls_inspected: urlsInspected,
+    },
+    searched_at: "2026-07-15",
+    source_gap: {
+      authorizes_cross_product: false,
+      authorizes_study: false,
+      candidate_specific_historical_raw_source_available: false,
+      candidate_specific_historical_schedule_available: false,
+      later_context_source_available: true,
+      later_context_source_proves_candidate_binding: false,
+      nonretained_acquisition_records: MADISON_AVENUE_ACQUIRED_CHECKS.nonretainedSources.map((source) => ({
+        byte_length: source.byteLength,
+        classification: source.classification,
+        content_sha256: source.sha256,
+        id: source.id,
+        raw_content_retained_in_acquisition_check: false,
+        staged_source_available_now: source.id === MADISON_AVENUE_STAGED_CONTEXT.sourceId,
+        url: source.url,
+      })),
+      prior_only_route_page_retrieval: {
+        acquired_check_record_available: false,
+        content_sha256: priorContract.routePageSha256,
+        id: `mta_bustime_${row.gtfs_route_id}`,
+        raw_content_retention_independently_verified: false,
+        used_as_source_evidence: false,
+      },
+      resolution_rule: `Reopen only with independently retained, verifiable, citeable source bytes that bind ${row.gtfs_route_id} to the 2012-12-11 candidate's route-specific historical direction, exact feature extent, phase, and traversal.`,
+      staged_later_context_used_as_candidate_onset_evidence: false,
+      staged_later_context_used_as_occurrence_evidence: false,
+    },
+    target: {
+      directions: [...new Set(matches.map((match) => match.direction))].sort(),
+      feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+      feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+      feature_row_count: matches.length,
+      feature_rows: matches.map((match) => ({
+        direction: match.direction,
+        feature_id: match.feature_id,
+        feature_key: match.feature_key,
+      })),
+      geometry_scopes: [...new Set(packet.what_is_known.target_groups.map((group) => group.geometry_scope))].sort(),
+      lane_group_ids: packet.what_is_known.target_groups.map((group) => group.lane_group_id),
+      matched_date: row.implementation_date,
+      named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+      open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+    },
+    unresolved_bindings: ["attribution", "direction", "feature_extent", "phase", "traversal"],
+  };
+}
+
+function validateMadisonAvenueBindingReceipt(
+  receipt: Record<string, unknown>,
+  receiptPath: string,
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): void {
+  let stage = "draft";
+  const fail = (): never => {
+    throw new Error(`${receiptPath}: Madison Avenue absence contract does not match the exact candidate (${row.gtfs_route_id}; ${stage})`);
+  };
+  let expected: Record<string, unknown>;
+  try {
+    expected = buildMadisonAvenueBindingReceiptDraft(row, packet);
+  } catch {
+    return fail();
+  }
+  if (stableJson(receipt as JsonValue) !== stableJson(expected as JsonValue)) fail();
+  const priorContract = MADISON_AVENUE_PRIORS.get(row.gtfs_route_id);
+  if (!priorContract) return fail();
+
+  stage = "artifact pins";
+  const currentSourcePath = resolve(rootDir, UNIVERSITY_AVENUE_CURRENT_SOURCE.artifact);
+  const currentMetadataPath = resolve(rootDir, "raw/sources",
+    UNIVERSITY_AVENUE_CURRENT_SOURCE.sourceId, "metadata.json");
+  const priorPath = resolve(rootDir, MADISON_AVENUE_PRIOR_ARTIFACT);
+  const acquiredChecksPath = resolve(rootDir, MADISON_AVENUE_ACQUIRED_CHECKS.artifact);
+  const stagedArtifactPath = resolve(rootDir, MADISON_AVENUE_STAGED_CONTEXT.artifact);
+  const stagedBlocksPath = resolve(rootDir, MADISON_AVENUE_STAGED_CONTEXT.blocksArtifact);
+  const stagedMetadataPath = resolve(rootDir, "raw/sources",
+    MADISON_AVENUE_STAGED_CONTEXT.sourceId, "metadata.json");
+  if (![currentSourcePath, currentMetadataPath, priorPath, acquiredChecksPath, stagedArtifactPath,
+    stagedBlocksPath, stagedMetadataPath].every(existsSync) ||
+      hash(readFileSync(currentSourcePath)) !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sha256 ||
+      hash(readFileSync(priorPath)) !== MADISON_AVENUE_PRIOR_ARTIFACT_SHA256 ||
+      hash(readFileSync(acquiredChecksPath)) !== MADISON_AVENUE_ACQUIRED_CHECKS.sha256 ||
+      hash(readFileSync(stagedArtifactPath)) !== MADISON_AVENUE_STAGED_CONTEXT.sourceSha256 ||
+      hash(readFileSync(stagedBlocksPath)) !== MADISON_AVENUE_STAGED_CONTEXT.blocksSha256 ||
+      hash(readFileSync(stagedMetadataPath)) !== MADISON_AVENUE_STAGED_CONTEXT.metadataSha256) fail();
+
+  stage = "metadata";
+  const currentMetadata = object(JSON.parse(readFileSync(currentMetadataPath, "utf8")), currentMetadataPath);
+  const stagedMetadata = object(JSON.parse(readFileSync(stagedMetadataPath, "utf8")), stagedMetadataPath);
+  if (currentMetadata.sourceId !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sourceId ||
+      String(currentMetadata.sha256).replace(/^sha256:/u, "") !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sha256 ||
+      stagedMetadata.sourceId !== MADISON_AVENUE_STAGED_CONTEXT.sourceId ||
+      stagedMetadata.sourceUrl !== MADISON_AVENUE_STAGED_CONTEXT.sourceUrl ||
+      stagedMetadata.documentDate !== "2019" ||
+      String(stagedMetadata.sha256).replace(/^sha256:/u, "") !== MADISON_AVENUE_STAGED_CONTEXT.sourceSha256) fail();
+
+  stage = "context blocks";
+  const stagedBlocks = readFileSync(stagedBlocksPath, "utf8").split(/\r?\n/u).filter(Boolean)
+    .map((line) => object(JSON.parse(line), stagedBlocksPath));
+  for (const expectedBlock of MADISON_AVENUE_STAGED_CONTEXT.blocks) {
+    const block = stagedBlocks.find((value) => value.block_id === expectedBlock.blockId);
+    if (!block || block.raw_text_sha256 !== expectedBlock.textSha256 ||
+        typeof block.raw_text !== "string" || !block.raw_text.includes(expectedBlock.textMarker)) fail();
+  }
+
+  stage = "acquired checks";
+  const acquiredChecks = object(JSON.parse(readFileSync(acquiredChecksPath, "utf8")), acquiredChecksPath);
+  const acquiredSourceValues = acquiredChecks.sources;
+  const acquiredSources = (Array.isArray(acquiredSourceValues) ? acquiredSourceValues : fail())
+    .map((source, index) => object(source, `${acquiredChecksPath}.sources[${index}]`));
+  for (const expectedSource of MADISON_AVENUE_ACQUIRED_CHECKS.nonretainedSources) {
+    const source = acquiredSources.find((value) => value.id === expectedSource.id);
+    if (!source || source.url !== expectedSource.url || source.content_sha256 !== expectedSource.sha256 ||
+        source.byte_length !== expectedSource.byteLength || source.retrieval_status !== "acquired" ||
+        source.raw_content_retained !== false) fail();
+  }
+  if (acquiredSources.some((source) => source.id === `mta_bustime_${row.gtfs_route_id}`)) fail();
+
+  stage = "prior pointer";
+  const priorPointer = packet.what_is_known.prior_acquisition_receipt;
+  if (!priorPointer || priorPointer.artifact !== MADISON_AVENUE_PRIOR_ARTIFACT ||
+      priorPointer.receipt_id !== priorContract.receiptId || priorPointer.row_sha256 !== priorContract.rowSha256 ||
+      priorPointer.disposition !== "linkage_supported_phase_unresolved") fail();
+  stage = "prior row";
+  const priorLine = readFileSync(priorPath, "utf8").split(/\r?\n/u).filter(Boolean).find((line) =>
+    object(JSON.parse(line), priorPath).receipt_id === priorContract.receiptId);
+  const resolvedPriorLine = priorLine ?? fail();
+  if (hash(resolvedPriorLine) !== priorContract.rowSha256) fail();
+  const prior = object(JSON.parse(resolvedPriorLine), `${priorPath}:${priorContract.receiptId}`);
+  const candidate = object(prior.candidate, `${priorPath}.candidate`);
+  const findings = object(prior.source_findings, `${priorPath}.source_findings`);
+  const routePage = object(findings.mta_route_page, `${priorPath}.source_findings.mta_route_page`);
+  const claims = object(prior.claim_results, `${priorPath}.claim_results`);
+  const outcome = object(prior.outcome, `${priorPath}.outcome`);
+  const actions = object(prior.canonical_actions, `${priorPath}.canonical_actions`);
+  const attempts = Array.isArray(prior.acquisition_attempts) ? prior.acquisition_attempts.map((attempt, index) =>
+    object(attempt, `${priorPath}.acquisition_attempts[${index}]`)) : [];
+  const retrievals = attempts.flatMap((attempt, index) => Array.isArray(attempt.retrievals)
+    ? attempt.retrievals.map((retrieval, retrievalIndex) =>
+      object(retrieval, `${priorPath}.acquisition_attempts[${index}].retrievals[${retrievalIndex}]`))
+    : []);
+  const urlsChecked = attempts.flatMap((attempt) =>
+    Array.isArray(attempt.urls_checked) ? attempt.urls_checked.map(String) : []).sort();
+  const exactRouteEvidence = Array.isArray(claims.exact_route_binding_evidence)
+    ? claims.exact_route_binding_evidence.map((value, index) =>
+      object(value, `${priorPath}.claim_results.exact_route_binding_evidence[${index}]`))
+    : [];
+  const officialIds = Array.isArray(findings.official_lane_matching_segment_ids)
+    ? findings.official_lane_matching_segment_ids.map(String)
+    : [];
+  const officialInventory = Array.isArray(findings.official_project_route_inventory)
+    ? findings.official_project_route_inventory.map(String)
+    : [];
+  const expectedUrls = [
+    ...MADISON_AVENUE_ACQUIRED_CHECKS.nonretainedSources.map((source) => source.url),
+    `https://bustime-classic.mta.info/m/?q=${row.gtfs_route_id}`,
+  ].sort();
+  const priorRouteRetrieval = retrievals.find((retrieval) =>
+    retrieval.id === `mta_bustime_${row.gtfs_route_id}`);
+  const contextRetrieval = retrievals.find((retrieval) =>
+    retrieval.id === MADISON_AVENUE_STAGED_CONTEXT.sourceId);
+  stage = "prior candidate and findings";
+  if (candidate.candidate_id !== row.candidate_id || candidate.route_id !== row.gtfs_route_id ||
+      candidate.normalized_route_id !== row.gtfs_route_id ||
+      candidate.identity !== `${row.gtfs_route_id}|bus_lane|2012-12-11|day` ||
+      candidate.implementation_date !== "2012-12-11" || candidate.corridor !== "Madison Avenue" ||
+      findings.candidate_named_lane_record_count !== 0 ||
+      findings.exact_project_route_statement_found !== true ||
+      findings.exact_project_route_source_id !== MADISON_AVENUE_STAGED_CONTEXT.sourceId ||
+      findings.official_lane_matching_record_count !== 19 || officialIds.length !== 19 ||
+      hash(stableJson(officialIds as JsonValue)) !== MADISON_AVENUE_SEGMENT_IDS_SHA256 ||
+      stableJson(findings.official_lane_named_routes as JsonValue) !== stableJson([]) ||
+      stableJson(findings.official_route_named_segment_ids as JsonValue) !== stableJson([]) ||
+      stableJson(officialInventory) !== stableJson(MADISON_AVENUE_ROUTE_INVENTORY) ||
+      hash(stableJson(officialInventory as JsonValue)) !== MADISON_AVENUE_ROUTE_INVENTORY_SHA256 ||
+      typeof findings.historical_review_rationale !== "string" ||
+      !findings.historical_review_rationale.includes(priorContract.historicalPhrase)) fail();
+  stage = "prior route page";
+  if (routePage.content_sha256 !== priorContract.routePageSha256 ||
+      routePage.exact_route_title_found !== true ||
+      routePage.current_corridor_token_found !== priorContract.currentCorridorTokenFound ||
+      routePage.retrieval_status !== "acquired" || typeof routePage.temporal_limitation !== "string" ||
+      !routePage.temporal_limitation.includes("captured in 2026")) fail();
+  stage = "prior claims";
+  if (claims.candidate_segment_ids_pinned !== false || claims.date_and_phase_proved !== false ||
+      claims.exact_route_treatment_binding_proved !== true ||
+      claims.exact_segment_binding_proved !== false || claims.explicit_phase_identity_proved !== false ||
+      claims.operational_occurrence_identity_proved !== false ||
+      !Array.isArray(claims.exact_segment_ids) || claims.exact_segment_ids.length !== 0 ||
+      exactRouteEvidence.length !== 1 ||
+      exactRouteEvidence[0]?.evidence_kind !== "official_project_route_statement" ||
+      exactRouteEvidence[0]?.source_id !== MADISON_AVENUE_STAGED_CONTEXT.sourceId ||
+      exactRouteEvidence[0]?.source_sha256 !== MADISON_AVENUE_STAGED_CONTEXT.sourceSha256 ||
+      exactRouteEvidence[0]?.open_dates !== null || exactRouteEvidence[0]?.segment_id !== null ||
+      stableJson(exactRouteEvidence[0]?.official_routes as JsonValue) !==
+        stableJson(MADISON_AVENUE_ROUTE_INVENTORY) ||
+      typeof exactRouteEvidence[0]?.support_note !== "string" ||
+      !exactRouteEvidence[0].support_note.includes(
+        "does not prove the registry's 2012 phase/date identity")) fail();
+  stage = "prior outcome and actions";
+  if (outcome.exclusive_primary_disposition !== "linkage_supported_phase_unresolved" ||
+      outcome.registry_projection_excluded !== true || outcome.still_unresolved !== true ||
+      outcome.study_projection_eligible !== false ||
+      actions.operational_occurrence_added_or_updated !== false ||
+      stableJson(actions.canonical_links_added as JsonValue) !== stableJson([])) fail();
+  stage = "prior URL and retrieval coverage";
+  if (stableJson(urlsChecked) !== stableJson(expectedUrls) ||
+      !priorRouteRetrieval || priorRouteRetrieval.sha256 !== priorContract.routePageSha256 ||
+      priorRouteRetrieval.status !== "acquired" ||
+      !contextRetrieval || contextRetrieval.sha256 !== MADISON_AVENUE_STAGED_CONTEXT.sourceSha256 ||
+      contextRetrieval.status !== "acquired") fail();
+}
+
 export function validateBindingReceiptDrafts(
   rows: readonly BusLaneIdentityRow[],
   packets: readonly BusLaneResearchPacket[],
@@ -3550,6 +4058,12 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
       throw new Error(`${receiptPath}: 21 Street packet does not preserve exact ledger evidence parity`);
     }
+    const madisonAvenueLedgerTarget = isMadisonAvenueLedgerTarget(row);
+    if (madisonAvenueLedgerTarget &&
+        (stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups) ||
+        stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
+      throw new Error(`${receiptPath}: Madison Avenue packet does not preserve exact ledger evidence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -3598,6 +4112,10 @@ export function validateBindingReceiptDrafts(
     }
     if (twentyFirstStreetLedgerTarget) {
       validateTwentyFirstStreetBindingReceipt(receipt, receiptPath, row, packet, rootDir);
+      continue;
+    }
+    if (madisonAvenueLedgerTarget) {
+      validateMadisonAvenueBindingReceipt(receipt, receiptPath, row, packet, rootDir);
       continue;
     }
     const priorPointer = object(receipt.prior_receipt, `${receiptPath}.prior_receipt`);

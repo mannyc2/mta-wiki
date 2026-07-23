@@ -1,0 +1,25 @@
+{
+  "authorizes_cross_product": false,
+  "authorizes_study": false,
+  "candidate_fingerprint": "464115642a820989a0bd8e92574e354a4fc394b8b4ce3c3c34c567cf1910ff59",
+  "candidate_id": "study-event-v2:c4c39b0f3c90371b46c73fa6",
+  "contract_id": "bus-lane-identity-v1",
+  "decision_id": "bus-lane-identity-decision:c1a0554defbce36dc2b71b6b",
+  "ledger_id": "bus-lane-identity:93e1ebe6d951a5eebad5f4fb",
+  "occurrence_id": null,
+  "rationale": "The exact current registry target is the ordered 19-row, 19-key, 19-ID northbound Madison Avenue lane group dated 2012-12-11, with literal 12/11/12, preserved open_dates literal 5/26/81,1/82, 12/11/12, and no named routes. The immutable Staten Island acquisition receipt retained 19 current matching segment ids but did not preserve the historical candidate's exact segment identity. The staged 2019 Better Buses plan names SIM25 among routes served by existing double bus lanes, says the project continues 2018 work, and describes an upgrade to red paint and signage. That later generic corridor/route treatment context proves neither the candidate's 2012 onset nor its exact feature extent, phase, traversal, occurrence, or route-specific historical direction. A one-way corridor signal and the current target's northbound rows do not independently bind candidate-specific historical route direction. The candidate-dated pre-2023 dossier is unavailable and supplies no route path or target match. Attribution, direction, feature extent, phase, and traversal remain unresolved. This authorizes no occurrence, study, or cross-product projection.",
+  "receipt_ids": [
+    "bus-lane-binding-search:c1a0554defbce36dc2b71b6b"
+  ],
+  "reviewed_at": "2026-07-23T20:06:11Z",
+  "reviewed_by": "codex-owner-delegate",
+  "schema_version": 1,
+  "unresolved_bindings": [
+    "attribution",
+    "direction",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "verdict": "binding_absent_after_search"
+}
