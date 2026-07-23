@@ -337,6 +337,30 @@ function isExactUticaAvenuePacketTarget(
     stableJson(packet.unresolved_bindings) === stableJson(targetContract.unresolvedBindings);
 }
 
+function isExactVanSinderenPacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const group = packet.what_is_known.target_groups[0];
+  if (!group) return false;
+  const matches = group.feature_matches;
+  return row.gtfs_route_id === "B111" && row.implementation_date === "2016-01-01" &&
+    packet.what_is_known.target_groups.length === 1 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    group.lane_group_id === "BK|VAN SINDEREN AVENUE" &&
+    group.geometry_scope === "coextensive_with_lane_group" &&
+    matches.length === 4 &&
+    new Set(matches.map((match) => match.feature_key)).size === 4 &&
+    new Set(matches.map((match) => match.feature_id)).size === 4 &&
+    matches.every((match) =>
+      match.direction === "SB" &&
+      match.matched_date === "2016-01-01" &&
+      match.matched_token_literal === "1/1/2016" &&
+      match.open_dates_literal === "1/1/2016" &&
+      match.sbs_routes.length === 0) &&
+    stableJson(packet.unresolved_bindings) === stableJson(["attribution", "traversal"]);
+}
+
 function isoReviewTime(value: unknown, path: string): string {
   const timestamp = nonempty(value, path);
   const day = /^\d{4}-\d{2}-\d{2}$/u.test(timestamp);
@@ -1115,6 +1139,13 @@ export function validateBindingReceiptDrafts(
     if (uticaAvenueLedgerTarget &&
         stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
       throw new Error(`${receiptPath}: Utica Avenue packet target does not preserve exact ledger occurrence parity`);
+    }
+    const vanSinderenLedgerTarget = row.gtfs_route_id === "B111" && row.implementation_date === "2016-01-01" &&
+      row.onset_evidence.target_groups.length === 1 &&
+      row.onset_evidence.target_groups[0]?.lane_group_id === "BK|VAN SINDEREN AVENUE";
+    if (vanSinderenLedgerTarget &&
+        stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
+      throw new Error(`${receiptPath}: Van Sinderen packet target does not preserve exact ledger occurrence parity`);
     }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
@@ -2183,6 +2214,28 @@ export function validateBindingReceiptDrafts(
           : 0;
         if (correctionCount !== 0 || contextCount !== 1) {
           throw new Error(`${receiptPath}: Utica Avenue correction/context cardinality does not match the exact candidate route`);
+        }
+      }
+      if (isExactVanSinderenPacketTarget(packet, row)) {
+        const correctionCount = supplemental.finding_corrections.length;
+        const contextCount = Array.isArray(supplemental.positive_context_findings)
+          ? supplemental.positive_context_findings.length
+          : 0;
+        const supplementalQueries = supplemental.exact_queries.map((value, index) =>
+          object(value, `${receiptPath}.supplemental_search.exact_queries[${index}]`));
+        const hasExactQuery = (category: string) => supplementalQueries.some((query) => {
+          if (query.category !== category) return false;
+          const literal = String(query.query).toUpperCase();
+          const tokens = literal.split(/[^A-Z0-9+]+/u).filter(Boolean);
+          return ["B111", "VAN", "SINDEREN", "AVENUE"].every((token) => tokens.includes(token)) &&
+            literal.includes("2016-01-01");
+        });
+        if (correctionCount !== 0 || contextCount !== 0 ||
+            object(prior.source_findings, `${receiptPath}.prior.source_findings`)
+              .exact_project_route_statement_found !== false ||
+            !hasExactQuery("official_nyc_dot_lane_project") ||
+            !hasExactQuery("official_public_board_committee")) {
+          throw new Error(`${receiptPath}: Van Sinderen pure-absence review contract does not match the exact candidate`);
         }
       }
     }

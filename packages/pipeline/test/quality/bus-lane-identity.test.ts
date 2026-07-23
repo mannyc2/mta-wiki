@@ -3838,4 +3838,156 @@ describe("bus-lane identity exact-date targeting", () => {
       rmSync(rootDir, { recursive: true, force: true });
     }
   });
+
+  it("keeps the B111 Van Sinderen review exact and purely absent", () => {
+    const date = "2016-01-01";
+    const entry = candidate("van-sinderen-b111", "B111", date);
+    const [baseRow] = buildBusLaneIdentityLedger({
+      bridgeCandidates: [entry.bridge],
+      trackerCandidates: [entry.tracker],
+      routeAnchors: [anchor("B111")],
+      dossierRows: [dossier({
+        candidateId: entry.bridge.candidate_id,
+        routeId: "B111",
+        date,
+        laneGroupId: null,
+        pathSource: "unavailable",
+        pathIdentity: null,
+        reason: "historical_schedule_unavailable_pre_2023",
+      })],
+      dossierArtifact: "dossier.jsonl",
+      laneFeatures: Array.from({ length: 4 }, (_, index) => lane({
+        feature_id: `van-sinderen-${index}`,
+        lane_group_id: "BK|VAN SINDEREN AVENUE",
+        opened: "1/1/2016",
+        direction: "SB",
+        attributes: { open_dates: "1/1/2016", segmentid: `van-sinderen-${index}` },
+      })),
+      laneSnapshotId: "lanes",
+      laneSourceId: "lane_source",
+      gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+    });
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-van-sinderen-"));
+    const receiptDir = join(rootDir, "receipts");
+    const acquiredDir = join(rootDir,
+      "data/quality/relationship-integrity/bus-lane-acquisition/supplemental/van-sinderen-fixture");
+    mkdirSync(receiptDir, { recursive: true });
+    mkdirSync(acquiredDir, { recursive: true });
+    const laneUrl = "https://www.nyc.gov/bus-lane-camera-report.pdf";
+    const boardUrl = "https://www.nyc.gov/projects-2019.shtml";
+    const laneHash = createHash("sha256").update("lane report").digest("hex");
+    const boardHash = createHash("sha256").update("board page").digest("hex");
+    writeFileSync(join(acquiredDir, "acquired-source-checks.json"), JSON.stringify({ sources: [
+      { url: laneUrl, content_sha256: laneHash, retrieval_status: "acquired" },
+      { url: boardUrl, content_sha256: boardHash, retrieval_status: "acquired" },
+    ] }));
+    const attempts = [
+      { category: "official_nyc_dot_lane_project",
+        query: "site:nyc.gov B111 Van Sinderen Avenue 2016-01-01 lane project",
+        query_status: "performed_2026-07-15", urls_checked: [laneUrl],
+        retrievals: [{ id: "lane", retrieved_on: "2026-07-15", sha256: laneHash, status: "acquired" }] },
+      { category: "official_public_board_committee",
+        query: "site:nyc.gov B111 Van Sinderen Avenue 2016-01-01 public board",
+        query_status: "performed_2026-07-15", urls_checked: [boardUrl],
+        retrievals: [{ id: "board", retrieved_on: "2026-07-15", sha256: boardHash, status: "acquired" }] },
+    ];
+    const prior = { receipt_id: "prior-van-sinderen", researched_on: "2026-07-15",
+      source_findings: { exact_project_route_statement_found: false }, acquisition_attempts: attempts };
+    const priorLine = stableJson(prior as unknown as JsonValue);
+    writeFileSync(join(rootDir, "prior.jsonl"), `${priorLine}\n`);
+    const row = { ...baseRow!, prior_acquisition_receipt: {
+      receipt_id: prior.receipt_id,
+      artifact: "prior.jsonl",
+      row_sha256: createHash("sha256").update(priorLine).digest("hex"),
+      disposition: "completed_search_route_linkage_unresolved",
+      next_action: "Retain pure absence.",
+    } };
+    const packet = buildBusLaneResearchPackets([row]).packets[0]!;
+    const matches = packet.what_is_known.target_groups[0]!.feature_matches;
+    const target = {
+      directions: ["SB"],
+      feature_ids: matches.map((match) => match.feature_id).sort(),
+      feature_keys: matches.map((match) => match.feature_key).sort(),
+      feature_row_count: 4,
+      feature_rows: matches.map((match) => ({
+        feature_key: match.feature_key, feature_id: match.feature_id, direction: match.direction,
+      })),
+      geometry_scopes: ["coextensive_with_lane_group"],
+      lane_group_ids: ["BK|VAN SINDEREN AVENUE"],
+      matched_date: date,
+      named_sbs_routes: [],
+      open_dates_literals: ["1/1/2016"],
+    };
+    const supplemental = {
+      domains: ["www.nyc.gov"],
+      exact_queries: [
+        { category: "official_nyc_dot_lane_project",
+          query: "site:nyc.gov B111 Van Sinderen Avenue 2016-01-01 lane project",
+          query_status: "performed_2026-07-23_reviewed_results" },
+        { category: "official_public_board_committee",
+          query: "site:nyc.gov B111 Van Sinderen Avenue 2016-01-01 public board",
+          query_status: "performed_2026-07-23_reviewed_results" },
+      ],
+      finding_corrections: [],
+      operator: "fixture-reviewer",
+      retrievals: [
+        { category: "official_nyc_dot_lane_project", retrieved_on: "2026-07-23",
+          sha256: laneHash, status: "acquired", url: laneUrl },
+        { category: "official_public_board_committee", retrieved_on: "2026-07-23",
+          sha256: boardHash, status: "acquired", url: boardUrl },
+      ],
+      searched_at: "2026-07-23T11:00:00Z",
+      urls_inspected: [laneUrl, boardUrl].sort(),
+    };
+    const receipt = {
+      schema_version: 1, receipt_id: "binding-van-sinderen", receipt_kind: "binding_absent_after_search",
+      candidate_id: row.candidate_id, candidate_fingerprint: row.candidate_fingerprint,
+      gtfs_route_id: "B111", implementation_date: date, gap_ids: [row.ledger_id], searched_at: "2026-07-15",
+      operator: "fixture-reviewer", candidate_urls: [], disposition: "binding_absent_after_search",
+      missing_binding: packet.missing_binding, unresolved_bindings: packet.unresolved_bindings, target,
+      prior_receipt: { receipt_id: prior.receipt_id, artifact: "prior.jsonl",
+        row_sha256: row.prior_acquisition_receipt.row_sha256 },
+      search: {
+        exact_queries: attempts.map(({ category, query, query_status }) => ({ category, query, query_status })),
+        domains: ["www.nyc.gov"],
+        urls_inspected: [laneUrl, boardUrl].sort(),
+        retrievals: attempts.flatMap((attempt) => attempt.retrievals.map((retrieval) =>
+          ({ category: attempt.category, ...retrieval }))),
+        disposition: "binding_absent_after_search",
+      },
+      supplemental_search: supplemental,
+      authorizes_study: false, authorizes_cross_product: false,
+    };
+    const validate = (draft: Record<string, unknown>, candidateRow = row, candidatePacket = packet) => {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+      return () => validateBindingReceiptDrafts([candidateRow], [candidatePacket], receiptDir, rootDir);
+    };
+    try {
+      expect(packet.unresolved_bindings).toEqual(["attribution", "traversal"]);
+      expect(target).toMatchObject({ feature_row_count: 4, directions: ["SB"], named_sbs_routes: [] });
+      expect(validate(receipt)).not.toThrow();
+      expect(validate({ ...receipt, missing_binding: "feature_extent" }))
+        .toThrow("binding receipt candidate or unresolved-binding parity failed");
+      const driftPacket = { ...packet, what_is_known: { ...packet.what_is_known,
+        target_groups: packet.what_is_known.target_groups.map((group) => ({ ...group,
+          feature_matches: group.feature_matches.map((match, index) =>
+            index === 0 ? { ...match, matched_date: "2016-01-02" } : match),
+        })) } };
+      expect(validate({ ...receipt, target: { ...target, matched_date: "2016-01-02" } }, row, driftPacket))
+        .toThrow("Van Sinderen packet target does not preserve exact ledger occurrence parity");
+      expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+        exact_queries: supplemental.exact_queries.map((query) => ({ ...query,
+          query: query.query.replace("2016-01-01", "2016-01-02") })) } }))
+        .toThrow("Van Sinderen pure-absence review contract does not match the exact candidate");
+      expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+        positive_context_findings: [{}] } })).toThrow();
+      expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+        finding_corrections: [{}] } })).toThrow();
+      expect(validate({ ...receipt,
+        occurrence_context: { occurrence_id: "occurrence_fake", accepted_decision_id: "decision_fake" } }))
+        .toThrow("occurrence context is not bound to an accepted occurrence decision");
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
 });
