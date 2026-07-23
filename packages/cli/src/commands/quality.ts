@@ -7,6 +7,7 @@ import {
 import { writeForecastRealizationArtifacts } from "@mta-wiki/pipeline/quality/forecast-realization-artifacts";
 import { writeForecastRealizationReviewArtifacts } from "@mta-wiki/pipeline/quality/forecast-realization-review-artifacts";
 import { writeOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
+import { writeBusLaneIdentityArtifacts } from "@mta-wiki/pipeline/quality/bus-lane-identity";
 import {
   loadRelationshipCompletenessArtifacts,
   syncRelationshipCompletenessToCanonicalDb,
@@ -20,6 +21,29 @@ import { applyOperationalRecoveryProposal } from "@mta-wiki/pipeline/records/ope
 import { validateOperationalRecoveryProposalTree } from "@mta-wiki/pipeline/records/operational-recovery-proposals";
 import { draftQbnrRecoveryProposalFromFile } from "@mta-wiki/pipeline/records/qbnr-recovery-draft";
 import { optionValue, requireSubject, type CommandHandler } from "./shared.js";
+
+const busLaneIdentityLedger: CommandHandler = () => {
+  const bridgePath = optionValue(process.argv, "--bridge");
+  const trackerPath = optionValue(process.argv, "--tracker");
+  const routeAnchorsPath = optionValue(process.argv, "--route-anchors");
+  const dossierPath = optionValue(process.argv, "--dossier");
+  const decisionDir = optionValue(process.argv, "--decisions");
+  const outputPath = optionValue(process.argv, "--output") ?? optionValue(process.argv, "-o");
+  const packetDir = optionValue(process.argv, "--packets");
+  const result = writeBusLaneIdentityArtifacts({
+    ...(bridgePath ? { bridgePath } : {}),
+    ...(trackerPath ? { trackerPath } : {}),
+    ...(routeAnchorsPath ? { routeAnchorsPath } : {}),
+    ...(dossierPath ? { dossierPath } : {}),
+    ...(decisionDir ? { decisionDir } : {}),
+    ...(outputPath ? { outputPath } : {}),
+    ...(packetDir ? { packetDir } : {}),
+  });
+  console.log(`Bus-lane identity ledger: ${relative(repoRoot, result.outputPath)}`);
+  console.log(`Rows: ${result.rows.length}; packets: ${result.packets.length}; batches: ${result.batches.length}`);
+  console.log(`Verdicts: ${Object.entries(result.summary.counts_by_verdict as Record<string, number>)
+    .map(([verdict, count]) => `${verdict}=${count}`).join(", ")}`);
+};
 
 const operationalCoverage: CommandHandler = () => {
   const start = optionValue(process.argv, "--start");
@@ -211,6 +235,7 @@ const relationshipCompleteness: CommandHandler = () => {
 };
 
 export const qualityCommands = {
+  "bus-lane-identity-ledger": busLaneIdentityLedger,
   "operational-coverage": operationalCoverage,
   "coverage-matrix": operationalCoverage,
   "forecast-frontier": forecastFrontier,
