@@ -1407,6 +1407,27 @@ const MADISON_AVENUE_ACQUIRED_CHECKS = {
   ],
 };
 
+const POSITIVE_CONTEXT_PACKAGE_ARTIFACT =
+  "data/quality/operational-reference/bus-lane-identity-packages/positive-context-nonauthorizing-v1.json";
+const POSITIVE_CONTEXT_PACKAGE_SHA256 =
+  "fc8ccc93d352b2b1d2c77691073c77bd3d0c40aa6db8804fe698a57bb406e4cc";
+const POSITIVE_CONTEXT_PACKAGE_CANDIDATE_IDS = new Set([
+  "study-event-v2:2dd76c9b799ab1165b237330",
+  "study-event-v2:3a7457be7847b8857c79fc68",
+  "study-event-v2:74303954f2450436e58eadaf",
+  "study-event-v2:751b0a44a2fa5aac47e461b2",
+  "study-event-v2:c3998bd7a0da78ccf7e04bf1",
+  "study-event-v2:787135b022207cc15861fd16",
+  "study-event-v2:37447319d0697677f54ec0db",
+  "study-event-v2:3134629ede9faeff4c6f54b5",
+  "study-event-v2:3f2f3824ccf3987f4fac2f73",
+  "study-event-v2:b8621d718aca1a1bf4d5b0d6",
+  "study-event-v2:ed6e836b8fdfca92faa57918",
+  "study-event-v2:62d9b1d8b5d7ede06fa8ba6a",
+  "study-event-v2:aa65fa96dffcaf26e7f07c85",
+  "study-event-v2:d7958c3a07e9ba179ab9ac61",
+]);
+
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
   row: BusLaneIdentityRow,
@@ -1946,6 +1967,10 @@ function isMadisonAvenueLedgerTarget(row: BusLaneIdentityRow): boolean {
     row.implementation_date === "2012-12-11" &&
     row.onset_evidence.target_groups.length === 1 &&
     row.onset_evidence.target_groups[0]?.lane_group_id === "MAN|MADISON AVENUE";
+}
+
+function isPositiveContextPackageTarget(row: BusLaneIdentityRow): boolean {
+  return POSITIVE_CONTEXT_PACKAGE_CANDIDATE_IDS.has(row.candidate_id);
 }
 
 function isExactMadisonAvenuePacketTarget(
@@ -2503,6 +2528,7 @@ function packetMissingBinding(row: BusLaneIdentityRow): BusLaneResearchPacket["m
   if (isFrCapodannoLedgerTarget(row)) return "feature_extent";
   if (isTwentyFirstStreetLedgerTarget(row)) return "feature_extent";
   if (isMadisonAvenueLedgerTarget(row)) return "feature_extent";
+  if (isPositiveContextPackageTarget(row)) return "feature_extent";
   if (row.implementation_date === "2023-10-31" && EAST_GUN_HILL_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
       row.onset_evidence.target_groups.length === 1 &&
       row.onset_evidence.target_groups[0]?.lane_group_id === "BX|EAST GUN HILL ROAD") {
@@ -2533,6 +2559,13 @@ function packetUnresolvedBindings(row: BusLaneIdentityRow): BusLaneMissingBindin
     bindings.add("traversal");
   }
   if (isMadisonAvenueLedgerTarget(row)) {
+    bindings.add("attribution");
+    bindings.add("direction");
+    bindings.add("feature_extent");
+    bindings.add("phase");
+    bindings.add("traversal");
+  }
+  if (isPositiveContextPackageTarget(row)) {
     bindings.add("attribution");
     bindings.add("direction");
     bindings.add("feature_extent");
@@ -3892,6 +3925,272 @@ function validateMadisonAvenueBindingReceipt(
       contextRetrieval.status !== "acquired") fail();
 }
 
+function positiveContextPackageContract(
+  rootDir: string,
+  candidateId: string,
+): {
+  manifest: Record<string, unknown>;
+  contract: Record<string, unknown>;
+} {
+  const path = resolve(rootDir, POSITIVE_CONTEXT_PACKAGE_ARTIFACT);
+  const manifest = object(JSON.parse(readFileSync(path, "utf8")), path);
+  const packageSha256 = nonempty(manifest.package_sha256, `${path}.package_sha256`);
+  const { package_sha256: _packageSha256, ...payload } = manifest;
+  if (packageSha256 !== POSITIVE_CONTEXT_PACKAGE_SHA256 ||
+      hash(stableJson(payload as JsonValue)) !== POSITIVE_CONTEXT_PACKAGE_SHA256 ||
+      manifest.package_id !== "bus-lane-positive-context-nonauthorizing-v1" ||
+      manifest.count !== 14 || manifest.verdict !== "binding_absent_after_search" ||
+      manifest.authorizes_study !== false || manifest.authorizes_cross_product !== false ||
+      !Array.isArray(manifest.contracts) || manifest.contracts.length !== 14) {
+    throw new Error(`${path}: invalid positive-context package freeze`);
+  }
+  const contract = manifest.contracts.map((value, index) =>
+    object(value, `${path}.contracts[${index}]`))
+    .find((value) => value.candidate_id === candidateId);
+  if (!contract || !POSITIVE_CONTEXT_PACKAGE_CANDIDATE_IDS.has(candidateId)) {
+    throw new Error(`${path}: candidate is outside the positive-context package`);
+  }
+  return { manifest, contract };
+}
+
+export function buildPositiveContextBindingReceiptDraft(
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): Record<string, unknown> {
+  const exactError = "positive-context package contract does not match the exact candidate";
+  const fail = (): never => {
+    throw new Error(exactError);
+  };
+  const { manifest, contract } = positiveContextPackageContract(rootDir, row.candidate_id);
+  const targetGroups = packet.what_is_known.target_groups;
+  const dossierRefs = packet.what_is_known.dossier_refs;
+  const features = targetGroups.flatMap((group) => group.feature_matches);
+  const priorPointer = packet.what_is_known.prior_acquisition_receipt ?? fail();
+  const priorArtifact = nonempty(contract.prior_artifact, "positive-context contract.prior_artifact");
+  const priorReceiptId = nonempty(contract.prior_receipt_id,
+    "positive-context contract.prior_receipt_id");
+  const priorRowSha256 = nonempty(contract.prior_row_sha256,
+    "positive-context contract.prior_row_sha256");
+  const priorPath = resolve(rootDir, priorArtifact);
+  const priorLine = readFileSync(priorPath, "utf8").split(/\r?\n/u).filter(Boolean).find((line) =>
+    object(JSON.parse(line), priorPath).receipt_id === priorReceiptId) ?? fail();
+  if (hash(priorLine) !== priorRowSha256 ||
+      contract.prior_row_sha256_verified !== priorRowSha256 ||
+      priorPointer.artifact !== priorArtifact || priorPointer.receipt_id !== priorReceiptId ||
+      priorPointer.row_sha256 !== priorRowSha256 ||
+      contract.candidate_id !== row.candidate_id ||
+      contract.candidate_fingerprint !== row.candidate_fingerprint ||
+      contract.ledger_id !== row.ledger_id || contract.route !== row.gtfs_route_id ||
+      contract.date !== row.implementation_date ||
+      hash(stableJson(row.onset_evidence.target_groups)) !== contract.target_groups_sha256 ||
+      hash(stableJson(row.dossier_refs)) !== contract.dossier_refs_sha256 ||
+      stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups) ||
+      stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs) ||
+      packet.missing_binding !== "feature_extent" ||
+      stableJson(packet.unresolved_bindings) !==
+        stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"])) fail();
+
+  const prior = object(JSON.parse(priorLine), `${priorPath}:${priorReceiptId}`);
+  const candidate = object(prior.candidate, `${priorPath}.candidate`);
+  const findings = object(prior.source_findings, `${priorPath}.source_findings`);
+  const claims = object(prior.claim_results, `${priorPath}.claim_results`);
+  const outcome = object(prior.outcome, `${priorPath}.outcome`);
+  const actions = object(prior.canonical_actions, `${priorPath}.canonical_actions`);
+  const routePage = object(findings.mta_route_page, `${priorPath}.source_findings.mta_route_page`);
+  const exactRouteEvidence = Array.isArray(claims.exact_route_binding_evidence)
+    ? claims.exact_route_binding_evidence
+    : fail();
+  const attempts = Array.isArray(prior.acquisition_attempts)
+    ? prior.acquisition_attempts.map((value, index) =>
+      object(value, `${priorPath}.acquisition_attempts[${index}]`))
+    : fail();
+  const exactQueries = attempts.map((attempt, index) => ({
+    category: nonempty(attempt.category, `${priorPath}.acquisition_attempts[${index}].category`),
+    query: nonempty(attempt.query, `${priorPath}.acquisition_attempts[${index}].query`),
+    query_status: nonempty(attempt.query_status,
+      `${priorPath}.acquisition_attempts[${index}].query_status`),
+  }));
+  const urls = [...new Set(attempts.flatMap((attempt, index) =>
+    stringArray(attempt.urls_checked, `${priorPath}.acquisition_attempts[${index}].urls_checked`)))].sort();
+  const retrievals = attempts.flatMap((attempt, attemptIndex) => {
+    const attemptRetrievals = Array.isArray(attempt.retrievals) ? attempt.retrievals : fail();
+    const category = nonempty(attempt.category,
+      `${priorPath}.acquisition_attempts[${attemptIndex}].category`);
+    return attemptRetrievals.map((value, retrievalIndex) => ({
+      category,
+      ...object(value, `${priorPath}.acquisition_attempts[${attemptIndex}].retrievals[${retrievalIndex}]`),
+    }));
+  });
+  const sourceRecords = Array.isArray(contract.evidence_sources)
+    ? contract.evidence_sources.map((value, index) =>
+      object(value, `positive-context contract.evidence_sources[${index}]`))
+    : fail();
+  const namedSbsRoutes = [...new Set(features.flatMap((feature) => feature.sbs_routes))].sort();
+  const directions = [...new Set(features.map((feature) => feature.direction))].sort();
+  const routeSupported = contract.prior_route_supported === true;
+  const exactCandidateQuery = exactQueries.some((query) => {
+    if (query.category !== "official_mta_route_project") return false;
+    const tokens = query.query.toUpperCase().split(/[^A-Z0-9+]+/u).filter(Boolean);
+    return tokens.includes(row.gtfs_route_id);
+  });
+  if (candidate.candidate_id !== row.candidate_id || candidate.route_id !== row.gtfs_route_id ||
+      candidate.implementation_date !== row.implementation_date ||
+      candidate.identity !== `${row.gtfs_route_id}|bus_lane|${row.implementation_date}|day` ||
+      contract.target_group_count !== targetGroups.length ||
+      contract.feature_row_count !== features.length ||
+      contract.feature_key_count !== new Set(features.map((feature) => feature.feature_key)).size ||
+      contract.feature_id_count !== new Set(features.map((feature) => feature.feature_id)).size ||
+      stableJson(contract.directions as JsonValue) !== stableJson(directions) ||
+      stableJson(contract.named_sbs_routes as JsonValue) !== stableJson(namedSbsRoutes) ||
+      namedSbsRoutes.includes(row.gtfs_route_id) ||
+      contract.dossier_row_count !== dossierRefs.length ||
+      contract.dossier_target_count !== dossierRefs.filter((ref) => ref.candidate_target_match).length ||
+      dossierRefs.some((ref) => ref.candidate_target_match) ||
+      contract.prior_disposition !== outcome.exclusive_primary_disposition ||
+      priorPointer.disposition !== outcome.exclusive_primary_disposition ||
+      findings.candidate_named_lane_record_count !== 0 ||
+      claims.exact_route_treatment_binding_proved !== routeSupported ||
+      claims.exact_segment_binding_proved !== false ||
+      claims.explicit_phase_identity_proved !== false ||
+      claims.operational_occurrence_identity_proved !== false ||
+      actions.operational_occurrence_added_or_updated !== false ||
+      routePage.content_sha256 !== contract.route_page_sha256 ||
+      hash(stableJson(exactRouteEvidence as JsonValue)) !== contract.exact_route_evidence_sha256 ||
+      exactRouteEvidence.length !== (routeSupported ? 1 : 0) ||
+      sourceRecords.length !== exactRouteEvidence.length || !exactCandidateQuery) fail();
+
+  for (const sourceRecord of sourceRecords) {
+    if (sourceRecord.staged_now !== false) fail();
+    const sourceId = nonempty(sourceRecord.source_id, "positive-context source_id");
+    const sourceSha256 = nonempty(sourceRecord.source_sha256, "positive-context source_sha256");
+    const evidence = exactRouteEvidence.find((value) => {
+      const parsed = object(value, `${priorPath}.exact_route_binding_evidence`);
+      return parsed.source_id === sourceId && parsed.source_sha256 === sourceSha256;
+    });
+    const acquiredRecords = Array.isArray(sourceRecord.acquired_records)
+      ? sourceRecord.acquired_records
+      : fail();
+    if (!evidence || hash(stableJson(evidence as JsonValue)) !== sourceRecord.evidence_sha256 ||
+        acquiredRecords.length === 0) fail();
+    for (const value of acquiredRecords) {
+      const acquired = object(value, "positive-context source acquired record");
+      const artifact = nonempty(acquired.artifact, "positive-context source acquired artifact");
+      const checksPath = resolve(rootDir, artifact);
+      const checks = object(JSON.parse(readFileSync(checksPath, "utf8")), checksPath);
+      const sources = Array.isArray(checks.sources)
+        ? checks.sources.map((source, index) => object(source, `${checksPath}.sources[${index}]`))
+        : fail();
+      const actual = sources.find((source) => source.id === sourceId);
+      if (!actual || actual.url !== acquired.url || actual.content_sha256 !== sourceSha256 ||
+          actual.retrieval_status !== "acquired" ||
+          acquired.content_sha256 !== sourceSha256 || acquired.retrieval_status !== "acquired") fail();
+    }
+  }
+
+  const supportSentence = routeSupported
+    ? `The immutable prior acquisition preserves official ${row.gtfs_route_id} route-treatment context, but that context does not identify which exact dated feature rows belong to the candidate occurrence.`
+    : `The immutable prior acquisition found no official ${row.gtfs_route_id} route-treatment binding to the exact dated target.`;
+  const sourceGapSentence = sourceRecords.length > 0
+    ? ` Its ${sourceRecords.length} official positive-context source record(s) were receipt-pinned but not staged at package freeze, so they remain context-only source gaps.`
+    : "";
+  const rationale = `The frozen ${String(contract.corridor_key)} target preserves ${targetGroups.length} lane group(s), ${features.length} ordered feature row(s), ${new Set(features.map((feature) => feature.feature_key)).size} unique feature key(s), ${new Set(features.map((feature) => feature.feature_id)).size} feature ID(s), directions ${directions.join("/")}, and no candidate route named by the target features. ${supportSentence}${sourceGapSentence} The candidate dossier has ${dossierRefs.length} row(s) and zero exact-target rows; no exact segment, phase, traversal, or operational occurrence is proved. Attribution, direction, feature extent, phase, and traversal remain unresolved. This is not a no-traversal or wrong-route refutation and authorizes no occurrence, study, or cross-product projection.`;
+  const receiptId = `bus-lane-binding-search:${fingerprint({
+    package_id: manifest.package_id,
+    candidate_id: row.candidate_id,
+    candidate_fingerprint: row.candidate_fingerprint,
+    verdict: "binding_absent_after_search",
+  }).slice(0, 24)}`;
+  return {
+    schema_version: BUS_LANE_IDENTITY_SCHEMA_VERSION,
+    receipt_id: receiptId,
+    receipt_kind: "binding_absent_after_search",
+    package: {
+      artifact: POSITIVE_CONTEXT_PACKAGE_ARTIFACT,
+      package_id: manifest.package_id,
+      package_sha256: manifest.package_sha256,
+      frozen_at: manifest.frozen_at,
+    },
+    candidate_id: row.candidate_id,
+    candidate_fingerprint: row.candidate_fingerprint,
+    gap_ids: [row.ledger_id],
+    gtfs_route_id: row.gtfs_route_id,
+    implementation_date: row.implementation_date,
+    missing_binding: "feature_extent",
+    unresolved_bindings: ["attribution", "direction", "feature_extent", "phase", "traversal"],
+    searched_at: prior.researched_on,
+    operator: "codex-plan039-positive-context-package",
+    target: {
+      lane_group_ids: targetGroups.map((group) => group.lane_group_id),
+      feature_ids: [...new Set(features.map((feature) => feature.feature_id))].sort(),
+      geometry_scopes: [...new Set(targetGroups.map((group) => group.geometry_scope))].sort(),
+      matched_date: row.implementation_date,
+      directions,
+      open_dates_literals: [...new Set(features.map((feature) => feature.open_dates_literal))].sort(),
+      named_sbs_routes: namedSbsRoutes,
+      feature_row_count: features.length,
+      feature_keys: [...new Set(features.map((feature) => feature.feature_key))].sort(),
+      feature_rows: features.map((feature) => ({
+        feature_key: feature.feature_key,
+        feature_id: feature.feature_id,
+        direction: feature.direction,
+      })),
+    },
+    prior_receipt: {
+      artifact: priorArtifact,
+      receipt_id: priorReceiptId,
+      row_sha256: priorRowSha256,
+    },
+    search: {
+      exact_queries: exactQueries,
+      domains: [...new Set(urls.map((url) => new URL(url).hostname))].sort(),
+      urls_inspected: urls,
+      retrievals,
+      disposition: "binding_absent_after_search",
+    },
+    positive_context: {
+      prior_route_treatment_supported: routeSupported,
+      exact_route_binding_evidence: exactRouteEvidence,
+      candidate_exact_target_bound: false,
+      candidate_direction_bound: false,
+      candidate_feature_extent_bound: false,
+      candidate_phase_bound: false,
+      candidate_traversal_bound: false,
+      candidate_occurrence_bound: false,
+      context_only: true,
+    },
+    source_gap: {
+      frozen_source_records: sourceRecords,
+      unstaged_official_context_source_count:
+        sourceRecords.filter((source) => source.staged_now === false).length,
+      candidate_exact_target_dossier_row_count: 0,
+      source_gap_authorizes_occurrence: false,
+    },
+    candidate_urls: [],
+    disposition: "binding_absent_after_search",
+    rationale,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+  };
+}
+
+function validatePositiveContextBindingReceipt(
+  receipt: Record<string, unknown>,
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): void {
+  let expected: Record<string, unknown>;
+  try {
+    expected = buildPositiveContextBindingReceiptDraft(row, packet, rootDir);
+  } catch {
+    throw new Error("positive-context package contract does not match the exact candidate");
+  }
+  if (stableJson(receipt as JsonValue) !== stableJson(expected as JsonValue)) {
+    throw new Error("positive-context package contract does not match the exact candidate");
+  }
+}
+
 export function validateBindingReceiptDrafts(
   rows: readonly BusLaneIdentityRow[],
   packets: readonly BusLaneResearchPacket[],
@@ -4064,6 +4363,12 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
       throw new Error(`${receiptPath}: Madison Avenue packet does not preserve exact ledger evidence parity`);
     }
+    const positiveContextPackageTarget = isPositiveContextPackageTarget(row);
+    if (positiveContextPackageTarget &&
+        (stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups) ||
+        stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
+      throw new Error(`${receiptPath}: positive-context package does not preserve exact ledger evidence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -4116,6 +4421,10 @@ export function validateBindingReceiptDrafts(
     }
     if (madisonAvenueLedgerTarget) {
       validateMadisonAvenueBindingReceipt(receipt, receiptPath, row, packet, rootDir);
+      continue;
+    }
+    if (positiveContextPackageTarget) {
+      validatePositiveContextBindingReceipt(receipt, row, packet, rootDir);
       continue;
     }
     const priorPointer = object(receipt.prior_receipt, `${receiptPath}.prior_receipt`);

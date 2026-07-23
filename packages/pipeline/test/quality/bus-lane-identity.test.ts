@@ -11,6 +11,7 @@ import {
   buildEastGunHillBindingReceiptDraft,
   buildFrCapodannoBindingReceiptDraft,
   buildMadisonAvenueBindingReceiptDraft,
+  buildPositiveContextBindingReceiptDraft,
   buildTwentyFirstStreetBindingReceiptDraft,
   candidateLaneTargets,
   normalizeOpenDateToken,
@@ -7637,6 +7638,189 @@ describe("bus-lane identity exact-date targeting", () => {
           : line;
       }).join("\n")}\n`);
       expect(validate(receiptByRoute.get("SIM8")!, sim8Row, sim8Packet)).toThrow(exactError);
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
+
+  it("freezes the 14-candidate positive-context package without promoting source gaps or target-free dossiers", () => {
+    const repoRoot = join(import.meta.dir, "../../../..");
+    const manifestArtifact =
+      "data/quality/operational-reference/bus-lane-identity-packages/positive-context-nonauthorizing-v1.json";
+    const manifest = JSON.parse(readFileSync(join(repoRoot, manifestArtifact), "utf8")) as {
+      package_id: string;
+      package_sha256: string;
+      count: number;
+      contracts: Array<{
+        candidate_id: string;
+        prior_artifact: string;
+        evidence_sources: Array<{ acquired_records: Array<{ artifact: string }> }>;
+      }>;
+    };
+    expect(manifest).toMatchObject({
+      package_id: "bus-lane-positive-context-nonauthorizing-v1",
+      package_sha256: "fc8ccc93d352b2b1d2c77691073c77bd3d0c40aa6db8804fe698a57bb406e4cc",
+      count: 14,
+    });
+    const ledgerRows = readFileSync(join(repoRoot,
+      "data/quality/operational-reference/bus-lane-identity-ledger.jsonl"), "utf8")
+      .split(/\r?\n/u).filter(Boolean).map((line) => JSON.parse(line) as BusLaneIdentityRow);
+    const packetFiles = new Map(
+      (manifest.contracts.map((contract) => contract.candidate_id)).map((candidateId) => {
+        const row = ledgerRows.find((value) => value.candidate_id === candidateId)!;
+        const packetId = createHash("sha256").update(stableJson({ ledger_id: row.ledger_id } as JsonValue))
+          .digest("hex").slice(0, 24);
+        return [candidateId, JSON.parse(readFileSync(join(repoRoot,
+          `data/quality/acquisition/packets/bus-lane/packets/${packetId}.json`), "utf8")) as BusLaneResearchPacket];
+      }),
+    );
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-positive-context-"));
+    const receiptDir = join(rootDir, "receipts");
+    mkdirSync(receiptDir, { recursive: true });
+    const artifacts = new Set([
+      manifestArtifact,
+      ...manifest.contracts.map((contract) => contract.prior_artifact),
+      ...manifest.contracts.flatMap((contract) =>
+        contract.evidence_sources.flatMap((source) =>
+          source.acquired_records.map((record) => record.artifact))),
+    ]);
+    for (const artifact of artifacts) {
+      const destination = join(rootDir, artifact);
+      mkdirSync(join(destination, ".."), { recursive: true });
+      copyFileSync(join(repoRoot, artifact), destination);
+    }
+    const validate = (
+      draft: Record<string, unknown>,
+      row: BusLaneIdentityRow,
+      packet: BusLaneResearchPacket,
+    ) => {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as JsonValue));
+      return () => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir);
+    };
+    const exactError = "positive-context package contract does not match the exact candidate";
+    const receipts: Record<string, unknown>[] = [];
+    try {
+      for (const contract of manifest.contracts) {
+        const row = ledgerRows.find((value) => value.candidate_id === contract.candidate_id)!;
+        const packet = packetFiles.get(contract.candidate_id)!;
+        const expected = buildPositiveContextBindingReceiptDraft(row, packet, rootDir);
+        const suffix = String(expected.receipt_id).split(":")[1];
+        const receipt = JSON.parse(readFileSync(join(repoRoot,
+          `data/quality/acquisition/receipts/bus-lane-review/${suffix}.json`), "utf8")) as Record<string, any>;
+        receipts.push(receipt);
+        expect(receipt).toEqual(expected);
+        expect(packet.missing_binding).toBe("feature_extent");
+        expect(packet.unresolved_bindings).toEqual([
+          "attribution", "direction", "feature_extent", "phase", "traversal",
+        ]);
+        expect(packet.what_is_known.dossier_summary.target_row_count).toBe(0);
+        expect(receipt).toMatchObject({
+          authorizes_study: false,
+          authorizes_cross_product: false,
+          disposition: "binding_absent_after_search",
+          positive_context: {
+            candidate_exact_target_bound: false,
+            candidate_direction_bound: false,
+            candidate_feature_extent_bound: false,
+            candidate_phase_bound: false,
+            candidate_traversal_bound: false,
+            candidate_occurrence_bound: false,
+            context_only: true,
+          },
+          source_gap: {
+            candidate_exact_target_dossier_row_count: 0,
+            source_gap_authorizes_occurrence: false,
+          },
+          target: { named_sbs_routes: [] },
+        });
+        expect(validate(receipt, row, packet)).not.toThrow();
+        expect(validate({ ...receipt, authorizes_study: true }, row, packet)).toThrow(exactError);
+        expect(validate({
+          ...receipt,
+          positive_context: {
+            ...receipt.positive_context,
+            candidate_occurrence_bound: true,
+          },
+        }, row, packet)).toThrow(exactError);
+        expect(validate({
+          ...receipt,
+          source_gap: {
+            ...receipt.source_gap,
+            source_gap_authorizes_occurrence: true,
+          },
+        }, row, packet)).toThrow(exactError);
+
+        const targetGroups = packet.what_is_known.target_groups;
+        const firstGroup = targetGroups[0]!;
+        const firstFeature = firstGroup.feature_matches[0]!;
+        const attributedGroups = [{
+          ...firstGroup,
+          feature_matches: [{ ...firstFeature, sbs_routes: [row.gtfs_route_id] },
+            ...firstGroup.feature_matches.slice(1)],
+        }, ...targetGroups.slice(1)];
+        const attributedRow = { ...row, onset_evidence: {
+          ...row.onset_evidence, target_groups: attributedGroups,
+        } };
+        const attributedPacket = { ...packet, what_is_known: {
+          ...packet.what_is_known, target_groups: attributedGroups,
+        } };
+        expect(validate(receipt, attributedRow, attributedPacket)).toThrow();
+
+        const targetDossier = row.dossier_refs.map((ref, index) =>
+          index === 0 ? { ...ref, candidate_target_match: true } : ref);
+        const dossierRow = { ...row, dossier_refs: targetDossier };
+        const dossierPacket = { ...packet, what_is_known: {
+          ...packet.what_is_known,
+          dossier_refs: targetDossier,
+          dossier_summary: { ...packet.what_is_known.dossier_summary, target_row_count: 1 },
+        } };
+        expect(validate(receipt, dossierRow, dossierPacket)).toThrow();
+      }
+
+      expect(receipts.filter((receipt: any) =>
+        receipt.positive_context.prior_route_treatment_supported)).toHaveLength(10);
+      expect(receipts.reduce((sum, receipt: any) =>
+        sum + receipt.source_gap.unstaged_official_context_source_count, 0)).toBe(10);
+      expect(manifest.contracts.some((contract) =>
+        ["study-event-v2:8483f8b099d292e9d6883859",
+          "study-event-v2:a1e55641545033df387b70b1",
+          "study-event-v2:df8bb7f9438c48166f1ff8b9"].includes(contract.candidate_id))).toBe(false);
+
+      const firstContract = manifest.contracts[0]!;
+      const firstRow = ledgerRows.find((value) => value.candidate_id === firstContract.candidate_id)!;
+      const firstPacket = packetFiles.get(firstContract.candidate_id)!;
+      const firstReceipt = receipts[0]!;
+      const reviewedRow = {
+        ...firstRow,
+        decision_id: `bus-lane-identity-decision:${String(firstReceipt.receipt_id).split(":")[1]}`,
+        receipt_ids: [String(firstReceipt.receipt_id)],
+        unresolved_bindings: ["attribution", "direction", "feature_extent", "phase", "traversal"],
+        updated_at: "2026-07-23T23:00:00Z",
+        verdict: "binding_absent_after_search",
+        verdict_basis: `review:bus-lane-identity-decision:${String(firstReceipt.receipt_id).split(":")[1]}`,
+      } as BusLaneIdentityRow;
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(firstReceipt as JsonValue));
+      expect(() => validateReviewedReceiptRefs([reviewedRow], receiptDir)).not.toThrow();
+      expect(validate(receipts[1]!, firstRow, firstPacket)).toThrow();
+
+      const manifestPath = join(rootDir, manifestArtifact);
+      writeFileSync(manifestPath, stableJson({
+        ...manifest, count: 15,
+      } as unknown as JsonValue));
+      expect(validate(firstReceipt, firstRow, firstPacket)).toThrow(exactError);
+      copyFileSync(join(repoRoot, manifestArtifact), manifestPath);
+
+      const acquiredArtifact = firstContract.evidence_sources[0]!.acquired_records[0]!.artifact;
+      const acquiredPath = join(rootDir, acquiredArtifact);
+      const acquiredChecks = JSON.parse(readFileSync(acquiredPath, "utf8")) as {
+        sources: Record<string, unknown>[];
+      };
+      writeFileSync(acquiredPath, stableJson({
+        ...acquiredChecks,
+        sources: acquiredChecks.sources.map((source) =>
+          source.id === "e149_cb1" ? { ...source, retrieval_status: "not_retrieved" } : source),
+      } as JsonValue));
+      expect(validate(firstReceipt, firstRow, firstPacket)).toThrow(exactError);
     } finally {
       rmSync(rootDir, { recursive: true, force: true });
     }
