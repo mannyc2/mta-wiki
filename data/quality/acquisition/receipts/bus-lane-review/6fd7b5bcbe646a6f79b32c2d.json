@@ -1,0 +1,256 @@
+{
+  "authorizes_cross_product": false,
+  "authorizes_study": false,
+  "candidate_fingerprint": "0f63edae5c4b483512f122d3eb98930c5362a36494a2910c57a1a8b3ca0a9b60",
+  "candidate_id": "study-event-v2:6803927dd89ac794281abdc2",
+  "candidate_urls": [],
+  "disposition": "binding_absent_after_search",
+  "gap_ids": [
+    "bus-lane-identity:21c47de21f043debeba36e82"
+  ],
+  "gtfs_route_id": "X38",
+  "implementation_date": "2025-12-16",
+  "missing_binding": "feature_extent",
+  "operator": "plan039-corridor-adjudicator",
+  "prior_receipt": {
+    "artifact": "data/quality/relationship-integrity/bus-lane-acquisition/shards/brooklyn-null/receipts.jsonl",
+    "receipt_id": "brooklyn-null-acquisition:eaf215816926c4e4f10ec131",
+    "row_sha256": "efc75378da4a959147adef886e8b74d87ad4b9ef77e062941a2c3a9ac3782d48"
+  },
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches, together with inspection of the official Third Avenue project sources, found no statement binding X38 to the nine exact northbound feature rows, their 2025-12-16 onset, implementation phase, direction-specific traversal, or exact feature extent. Search results that named the route concerned a different crosstown or borough project and were not treated as evidence for this longitudinal Third Avenue target. This non-authorizing receipt does not infer no traversal from missing or zero-overlap historical timepoint rows and does not assert exclusive use by another route.",
+  "receipt_id": "bus-lane-binding-search:6fd7b5bcbe646a6f79b32c2d",
+  "receipt_kind": "binding_absent_after_search",
+  "schema_version": 1,
+  "search": {
+    "disposition": "binding_absent_after_search",
+    "domains": [
+      "bustime-classic.mta.info",
+      "data.cityofnewyork.us",
+      "www.mta.info",
+      "www.nyc.gov"
+    ],
+    "exact_queries": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "query": "site:nyc.gov/html/dot 3rd Avenue bus lane Brooklyn express BM1 X37 December 2025 official",
+        "query_status": "performed_2026-07-15"
+      },
+      {
+        "category": "official_mta_route_project",
+        "query": "site:mta.info \"X38\" \"3rd Avenue\" bus route project",
+        "query_status": "performed_by_official_route_fetch_and_project_document_search_2026-07-15"
+      },
+      {
+        "category": "official_public_board_committee",
+        "query": "site:nyc.gov/html/dot 3rd Avenue bus lane Brooklyn express BM1 X37 December 2025 official community board committee MTA Board",
+        "query_status": "performed_2026-07-15"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "query": "NYC DOT Open Data ycrg-ses3 facility=3rd Avenue open_dates contains 2025-12-16",
+        "query_status": "executed_against_acquired_snapshot_2026-07-15"
+      }
+    ],
+    "retrievals": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "id": "dot_bus_lanes_snapshot",
+        "retrieved_on": "2026-07-15",
+        "sha256": "1b3a990a75abc472d5f68d683aeb7d1deafa2eca4a239e4914b12db6a9927a5a",
+        "status": "acquired"
+      },
+      {
+        "category": "official_nyc_dot_lane_project",
+        "id": "third_avenue_start_press",
+        "retrieved_on": "2026-07-15",
+        "sha256": "5a55fc9b21c94f2e9f7f1661bdf0e6686788d1eee58961cb1189cd3b1a563d91",
+        "status": "acquired"
+      },
+      {
+        "category": "official_mta_route_project",
+        "id": "mta_bustime_X38",
+        "retrieved_on": "2026-07-15",
+        "sha256": "9fd61692d9bff2845987cd434d5dc1d29be37075d7b5a388b2cf30e75f242b31",
+        "status": "acquired"
+      },
+      {
+        "category": "official_mta_route_project",
+        "id": "mta_brooklyn_bus_map",
+        "retrieved_on": "2026-07-15",
+        "sha256": null,
+        "status": "not_retrieved"
+      },
+      {
+        "category": "official_public_board_committee",
+        "id": "dot_projects_2023",
+        "retrieved_on": "2026-07-15",
+        "sha256": "07516904adc5de6078455f68bbee203bfc380c3aead615bb47418c10fc9466a3",
+        "status": "acquired"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "id": "dot_bus_lanes_metadata",
+        "retrieved_on": "2026-07-15",
+        "sha256": "fa943cd885628155d489ffb991e464ce8d914736b9c29ab97dd2094ecd877340",
+        "status": "acquired"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "id": "dot_datafeeds",
+        "retrieved_on": "2026-07-15",
+        "sha256": "f3f7c9e4919139a8765518bf7dbd4c05c1644395f77cfa1e4bad5287beb8c81a",
+        "status": "acquired"
+      }
+    ],
+    "urls_inspected": [
+      "https://bustime-classic.mta.info/m/?q=X38",
+      "https://data.cityofnewyork.us/api/views/ycrg-ses3",
+      "https://data.cityofnewyork.us/resource/ycrg-ses3.json?$limit=5000",
+      "https://www.mta.info/document/12041",
+      "https://www.nyc.gov/html/dot/html/about/datafeeds.shtml",
+      "https://www.nyc.gov/html/dot/html/about/projects-2023.shtml",
+      "https://www.nyc.gov/html/dot/html/pr2023/3rd-ave-redesign.shtml"
+    ]
+  },
+  "searched_at": "2026-07-15",
+  "supplemental_search": {
+    "domains": [
+      "www.nyc.gov"
+    ],
+    "exact_queries": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "query": "site:nyc.gov \"3rd Avenue\" \"X38\" bus lane 2025 NYC DOT project",
+        "query_status": "performed_2026-07-23_reviewed_results"
+      },
+      {
+        "category": "official_public_board_committee",
+        "query": "site:nyc.gov \"3rd Avenue\" \"X38\" bus lane 2025 community board committee",
+        "query_status": "performed_2026-07-23_reviewed_results"
+      }
+    ],
+    "finding_corrections": [],
+    "operator": "codex_web.search_query",
+    "retrievals": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "retrieved_on": "2026-07-15",
+        "sha256": "b66a6f11a87eae1fed1672cb3b841bc8141d7312d44e50197098d8121140e1bf",
+        "status": "acquired",
+        "url": "https://www.nyc.gov/html/dot/html/pr2023/completion-safety-project-third-ave.shtml"
+      },
+      {
+        "category": "official_public_board_committee",
+        "retrieved_on": "2026-07-15",
+        "sha256": "a7233db02e759f66397c0700f1b7d3a50fc4a80fe918ea62603de9e9a6eb5105",
+        "status": "acquired",
+        "url": "https://www.nyc.gov/html/dot/downloads/pdf/3rd-ave-24-st-59-st-jun2025.pdf"
+      },
+      {
+        "category": "official_public_board_committee",
+        "retrieved_on": "2026-07-15",
+        "sha256": "c2666b453a8fb4f040640571198cfd13e834a511a58a88af925ea0d7febd6e7f",
+        "status": "acquired",
+        "url": "https://www.nyc.gov/html/dot/downloads/pdf/3rd-ave-96-st-128-st-jan2025.pdf"
+      }
+    ],
+    "searched_at": "2026-07-23T04:30:00Z",
+    "urls_inspected": [
+      "https://www.nyc.gov/html/dot/downloads/pdf/3rd-ave-24-st-59-st-jun2025.pdf",
+      "https://www.nyc.gov/html/dot/downloads/pdf/3rd-ave-96-st-128-st-jan2025.pdf",
+      "https://www.nyc.gov/html/dot/html/pr2023/completion-safety-project-third-ave.shtml"
+    ]
+  },
+  "target": {
+    "directions": [
+      "NB"
+    ],
+    "feature_ids": [
+      "0033286",
+      "0033289",
+      "0033303",
+      "0033305",
+      "0033307",
+      "0033309",
+      "0034139",
+      "0034142",
+      "0035736"
+    ],
+    "feature_keys": [
+      "dot-lane-feature:0475f2ee0244b66fb1039910",
+      "dot-lane-feature:304912099267524162a8fbc6",
+      "dot-lane-feature:44ebcac79fc566f1bf8de330",
+      "dot-lane-feature:5e17ae5fd5aa02167afe972e",
+      "dot-lane-feature:744f91a43fd8d9727cdfded4",
+      "dot-lane-feature:97369144c1f22061aad29573",
+      "dot-lane-feature:993bed08bbd93d78ce75e758",
+      "dot-lane-feature:b58e39f9b2cf07620da8bc40",
+      "dot-lane-feature:e4b67b2bdebedd9cc3a8b828"
+    ],
+    "feature_row_count": 9,
+    "feature_rows": [
+      {
+        "direction": "NB",
+        "feature_id": "0034142",
+        "feature_key": "dot-lane-feature:0475f2ee0244b66fb1039910"
+      },
+      {
+        "direction": "NB",
+        "feature_id": "0033307",
+        "feature_key": "dot-lane-feature:304912099267524162a8fbc6"
+      },
+      {
+        "direction": "NB",
+        "feature_id": "0035736",
+        "feature_key": "dot-lane-feature:44ebcac79fc566f1bf8de330"
+      },
+      {
+        "direction": "NB",
+        "feature_id": "0033305",
+        "feature_key": "dot-lane-feature:5e17ae5fd5aa02167afe972e"
+      },
+      {
+        "direction": "NB",
+        "feature_id": "0033286",
+        "feature_key": "dot-lane-feature:744f91a43fd8d9727cdfded4"
+      },
+      {
+        "direction": "NB",
+        "feature_id": "0034139",
+        "feature_key": "dot-lane-feature:97369144c1f22061aad29573"
+      },
+      {
+        "direction": "NB",
+        "feature_id": "0033309",
+        "feature_key": "dot-lane-feature:993bed08bbd93d78ce75e758"
+      },
+      {
+        "direction": "NB",
+        "feature_id": "0033303",
+        "feature_key": "dot-lane-feature:b58e39f9b2cf07620da8bc40"
+      },
+      {
+        "direction": "NB",
+        "feature_id": "0033289",
+        "feature_key": "dot-lane-feature:e4b67b2bdebedd9cc3a8b828"
+      }
+    ],
+    "geometry_scopes": [
+      "mixed_date_feature_union"
+    ],
+    "lane_group_ids": [
+      "MAN|3 AVENUE"
+    ],
+    "matched_date": "2025-12-16",
+    "named_sbs_routes": [],
+    "open_dates_literals": [
+      "12/16/2025"
+    ]
+  },
+  "unresolved_bindings": [
+    "attribution",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ]
+}
