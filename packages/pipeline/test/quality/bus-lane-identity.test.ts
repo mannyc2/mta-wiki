@@ -2488,4 +2488,382 @@ describe("bus-lane identity exact-date targeting", () => {
       rmSync(rootDir, { recursive: true, force: true });
     }
   });
+
+  it("keeps historical B6 Glenwood intersection context route-exact and separate from 2018 lane service", () => {
+    const date = "2018-09-30";
+    const routeIds = ["B6", "B17", "B42", "B60"];
+    const entries = routeIds.map((routeId) => candidate(`glenwood-${routeId}`, routeId, date));
+    const laneFeatures = Array.from({ length: 5 }, (_, index) => lane({
+      feature_id: `glenwood-${index}`,
+      lane_group_id: "BK|GLENWOOD ROAD",
+      opened: "09/30/2018",
+      direction: "WB",
+    }));
+    const baseRows = buildBusLaneIdentityLedger({
+      bridgeCandidates: entries.map((entry) => entry.bridge),
+      trackerCandidates: entries.map((entry) => entry.tracker),
+      routeAnchors: routeIds.map(anchor),
+      dossierRows: entries.map((entry) => dossier({
+        candidateId: entry.bridge.candidate_id,
+        routeId: entry.tracker.route_id,
+        date,
+        laneGroupId: null,
+        pathSource: "unavailable",
+        pathIdentity: null,
+        reason: "historical_schedule_unavailable_pre_2023",
+      })),
+      dossierArtifact: "dossier.jsonl",
+      laneFeatures,
+      laneSnapshotId: "lanes",
+      laneSourceId: "lane_source",
+      gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+    });
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-glenwood-intersection-"));
+    const receiptDir = join(rootDir, "receipts");
+    const acquiredChecksDir = join(rootDir,
+      "data/quality/relationship-integrity/bus-lane-acquisition/supplemental/glenwood-fixture");
+    mkdirSync(receiptDir, { recursive: true });
+    mkdirSync(acquiredChecksDir, { recursive: true });
+    const studyUrl = "https://www.nyc.gov/existing-and-future-2015.pdf";
+    const cameraUrl = "https://www.nyc.gov/bus-lane-camera-report.pdf";
+    const studyBytes = Buffer.from("fixture Coney Island Gravesend transportation study PDF");
+    const cameraBytes = Buffer.from("fixture 2024 bus lane camera report PDF");
+    const studyHash = createHash("sha256").update(studyBytes).digest("hex");
+    const cameraHash = createHash("sha256").update(cameraBytes).digest("hex");
+    const sourceDir = join(rootDir, "raw", "sources", "coney-gravesend-study");
+    mkdirSync(sourceDir, { recursive: true });
+    writeFileSync(join(sourceDir, "source.pdf"), studyBytes);
+    writeFileSync(join(sourceDir, "metadata.json"), JSON.stringify({
+      sourceId: "coney-gravesend-study",
+      sourceUrl: studyUrl,
+      sha256: studyHash,
+      title: "Coney Island/Gravesend Sustainable Development Transportation Study — Final Report",
+      publishedDate: "2010-06-01",
+    }));
+    const sourceBlocks = [
+      { block_id: "p179_p0019", page_number: 179, raw_text: "Glenwood Road & Nostrand" },
+      { block_id: "p179_p0020", page_number: 179, raw_text: "B6 WB Ave. 10 352 700 35 348" },
+    ].map((block) => ({
+      source_id: "coney-gravesend-study",
+      ...block,
+      normalized_text: block.raw_text,
+      raw_text_sha256: `sha256:${createHash("sha256").update(block.raw_text).digest("hex")}`,
+    }));
+    writeFileSync(join(sourceDir, "blocks.jsonl"),
+      `${sourceBlocks.map((block) => JSON.stringify(block)).join("\n")}\n`);
+    writeFileSync(join(acquiredChecksDir, "acquired-source-checks.json"), JSON.stringify({
+      sources: [
+        { url: cameraUrl, content_sha256: cameraHash, retrieval_status: "acquired" },
+        { url: studyUrl, content_sha256: studyHash, retrieval_status: "acquired" },
+      ],
+    }));
+    const priorRecords = routeIds.map((routeId) => ({
+      receipt_id: `prior-${routeId}`,
+      researched_on: "2026-07-15",
+      source_findings: { exact_project_route_statement_found: false },
+      acquisition_attempts: [
+        {
+          category: "official_nyc_dot_lane_project",
+          query: `site:nyc.gov Glenwood Road ${routeId} bus lane`,
+          query_status: "performed_2026-07-15",
+          urls_checked: [cameraUrl],
+          retrievals: [{ id: "camera-report", retrieved_on: "2026-07-15", sha256: cameraHash,
+            status: "acquired" }],
+        },
+        {
+          category: "official_public_board_committee",
+          query: `site:nyc.gov Glenwood Road ${routeId} transportation study`,
+          query_status: "performed_2026-07-15",
+          urls_checked: [studyUrl],
+          retrievals: [{ id: "coney-study", retrieved_on: "2026-07-15", sha256: studyHash,
+            status: "acquired" }],
+        },
+      ],
+    }));
+    const priorLines = priorRecords.map((prior) => stableJson(prior as unknown as JsonValue));
+    writeFileSync(join(rootDir, "prior.jsonl"), `${priorLines.join("\n")}\n`);
+    const rows = baseRows.map((row) => {
+      const priorIndex = routeIds.indexOf(row.gtfs_route_id);
+      return {
+        ...row,
+        prior_acquisition_receipt: {
+          receipt_id: priorRecords[priorIndex]!.receipt_id,
+          artifact: "prior.jsonl",
+          row_sha256: createHash("sha256").update(priorLines[priorIndex]!).digest("hex"),
+          disposition: "completed_search_route_linkage_unresolved",
+          next_action: "Retain only candidate-exact nonterminal context.",
+        },
+      };
+    });
+    const packets = buildBusLaneResearchPackets(rows).packets;
+    const rowFor = (routeId: string) => rows.find((row) => row.gtfs_route_id === routeId)!;
+    const packetFor = (routeId: string) => packets.find((packet) => packet.gtfs_route_id === routeId)!;
+    const targetFor = (candidatePacket: typeof packets[number]) => {
+      const matches = candidatePacket.what_is_known.target_groups.flatMap((group) => group.feature_matches);
+      return {
+        lane_group_ids: candidatePacket.what_is_known.target_groups.map((group) => group.lane_group_id),
+        feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+        geometry_scopes: [...new Set(candidatePacket.what_is_known.target_groups
+          .map((group) => group.geometry_scope))].sort(),
+        matched_date: candidatePacket.implementation_date,
+        directions: [...new Set(matches.map((match) => match.direction))].sort(),
+        open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+        named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+        feature_row_count: matches.length,
+        feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+        feature_rows: matches.map((match) => ({
+          feature_key: match.feature_key,
+          feature_id: match.feature_id,
+          direction: match.direction,
+        })),
+      };
+    };
+    for (const packet of packets) {
+      expect(packet.unresolved_bindings).toEqual(["attribution", "traversal"]);
+      expect(targetFor(packet)).toMatchObject({
+        lane_group_ids: ["BK|GLENWOOD ROAD"],
+        geometry_scopes: ["coextensive_with_lane_group"],
+        feature_row_count: 5,
+        directions: ["WB"],
+        open_dates_literals: ["09/30/2018"],
+      });
+    }
+    const evidenceRefs = () => sourceBlocks.map((block) => ({
+      block_id: block.block_id,
+      page_number: block.page_number,
+      text_sha256: block.raw_text_sha256,
+    }));
+    const supplementalSearch = (routeId: string, includePositive: boolean) => ({
+      domains: ["www.nyc.gov"],
+      exact_queries: [
+        { category: "official_nyc_dot_lane_project", query: `site:nyc.gov Glenwood Road ${routeId} bus lane`,
+          query_status: "performed_2026-07-23_reviewed_results" },
+        { category: "official_public_board_committee",
+          query: `site:nyc.gov Glenwood Road ${routeId} transportation study`,
+          query_status: "performed_2026-07-23_reviewed_results" },
+      ],
+      finding_corrections: [],
+      operator: "fixture-reviewer",
+      ...(includePositive ? {
+        positive_context_findings: [{
+          source_id: "coney-gravesend-study",
+          source_url: studyUrl,
+          source_pdf_sha256: studyHash,
+          evidence_refs: evidenceRefs(),
+          context_finding: {
+            candidate_route_id: routeId,
+            finding_kind: "positive_historical_same_corridor_intersection_nonterminal",
+            supported_scope: "historical_same_corridor_intersection_only",
+            unsupported_bindings: packetFor(routeId).unresolved_bindings,
+            finding_summary: "The 2010 table gives B6 WB at Glenwood Road and Nostrand only as historical intersection context.",
+          },
+          remaining_unresolved_bindings: packetFor(routeId).unresolved_bindings,
+          authorizes_study: false,
+          authorizes_cross_product: false,
+        }],
+      } : {}),
+      retrievals: [
+        { category: "official_nyc_dot_lane_project", retrieved_on: "2026-07-23", sha256: cameraHash,
+          status: "acquired", url: cameraUrl },
+        { category: "official_public_board_committee", retrieved_on: "2026-07-23", sha256: studyHash,
+          status: "acquired", url: studyUrl },
+      ],
+      searched_at: "2026-07-23T08:00:00Z",
+      urls_inspected: [cameraUrl, studyUrl].sort(),
+    });
+    const receiptFor = (routeId: string, includePositive: boolean) => {
+      const row = rowFor(routeId);
+      const packet = packetFor(routeId);
+      const priorIndex = routeIds.indexOf(routeId);
+      return {
+        schema_version: 1,
+        receipt_id: `binding-${routeId}`,
+        receipt_kind: "binding_absent_after_search",
+        candidate_id: row.candidate_id,
+        candidate_fingerprint: row.candidate_fingerprint,
+        gtfs_route_id: routeId,
+        implementation_date: date,
+        gap_ids: [row.ledger_id],
+        searched_at: "2026-07-15",
+        operator: "fixture-reviewer",
+        candidate_urls: [],
+        disposition: "binding_absent_after_search",
+        missing_binding: packet.missing_binding,
+        unresolved_bindings: packet.unresolved_bindings,
+        target: targetFor(packet),
+        prior_receipt: {
+          receipt_id: priorRecords[priorIndex]!.receipt_id,
+          artifact: "prior.jsonl",
+          row_sha256: createHash("sha256").update(priorLines[priorIndex]!).digest("hex"),
+        },
+        search: {
+          exact_queries: priorRecords[priorIndex]!.acquisition_attempts.map((attempt) => ({
+            category: attempt.category,
+            query: attempt.query,
+            query_status: attempt.query_status,
+          })),
+          domains: ["www.nyc.gov"],
+          urls_inspected: [cameraUrl, studyUrl].sort(),
+          retrievals: priorRecords[priorIndex]!.acquisition_attempts.flatMap((attempt) =>
+            attempt.retrievals.map((retrieval) => ({ category: attempt.category, ...retrieval }))),
+          disposition: "binding_absent_after_search",
+        },
+        supplemental_search: supplementalSearch(routeId, includePositive),
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+    };
+    const validate = (draft: Record<string, unknown>, candidateRow = rowFor("B6"),
+      candidatePacket = packetFor("B6")) => {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+      return () => validateBindingReceiptDrafts([candidateRow], [candidatePacket], receiptDir, rootDir);
+    };
+    try {
+      const b6Receipt = receiptFor("B6", true);
+      expect(validate(b6Receipt)).not.toThrow();
+
+      for (const routeId of ["B17", "B42", "B60"]) {
+        const absenceReceipt = receiptFor(routeId, false);
+        expect(validate(absenceReceipt, rowFor(routeId), packetFor(routeId))).not.toThrow();
+        expect(validate({
+          ...absenceReceipt,
+          supplemental_search: supplementalSearch(routeId, true),
+        }, rowFor(routeId), packetFor(routeId)))
+          .toThrow("does not bind the exact route to bounded corridor-service context");
+      }
+
+      const wrongTargetPacket = {
+        ...packetFor("B6"),
+        what_is_known: {
+          ...packetFor("B6").what_is_known,
+          target_groups: packetFor("B6").what_is_known.target_groups.map((group) => ({
+            ...group,
+            facility: "Flatlands Avenue",
+            lane_group_id: "BK|FLATLANDS AVENUE",
+            street: "FLATLANDS AVENUE",
+          })),
+        },
+      };
+      expect(validate({ ...b6Receipt, target: targetFor(wrongTargetPacket) }, rowFor("B6"), wrongTargetPacket))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+
+      const crossDate = "2018-10-01";
+      const crossDateRow = { ...rowFor("B6"), implementation_date: crossDate };
+      const crossDatePacket = {
+        ...packetFor("B6"),
+        implementation_date: crossDate,
+        what_is_known: {
+          ...packetFor("B6").what_is_known,
+          target_groups: packetFor("B6").what_is_known.target_groups.map((group) => ({
+            ...group,
+            feature_matches: group.feature_matches.map((match) => ({
+              ...match,
+              matched_date: crossDate,
+              matched_token_literal: "10/01/2018",
+              open_dates_literal: "10/01/2018",
+            })),
+          })),
+        },
+      };
+      expect(validate({ ...b6Receipt, implementation_date: crossDate, target: targetFor(crossDatePacket) },
+        crossDateRow, crossDatePacket))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+
+      const mismatchedFeatureDatePacket = {
+        ...packetFor("B6"),
+        what_is_known: {
+          ...packetFor("B6").what_is_known,
+          target_groups: packetFor("B6").what_is_known.target_groups.map((group) => ({
+            ...group,
+            feature_matches: group.feature_matches.map((match) => ({ ...match, matched_date: crossDate })),
+          })),
+        },
+      };
+      expect(validate(b6Receipt, rowFor("B6"), mismatchedFeatureDatePacket))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+
+      const fourRowPacket = {
+        ...packetFor("B6"),
+        what_is_known: {
+          ...packetFor("B6").what_is_known,
+          target_groups: packetFor("B6").what_is_known.target_groups.map((group) => ({
+            ...group,
+            feature_matches: group.feature_matches.slice(1),
+          })),
+        },
+      };
+      expect(validate({ ...b6Receipt, target: targetFor(fourRowPacket) }, rowFor("B6"), fourRowPacket))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+
+      expect(validate({
+        ...b6Receipt,
+        supplemental_search: {
+          ...supplementalSearch("B6", true),
+          positive_context_findings: [{
+            ...supplementalSearch("B6", true).positive_context_findings![0]!,
+            context_finding: {
+              ...supplementalSearch("B6", true).positive_context_findings![0]!.context_finding,
+              finding_kind: "positive_project_corridor_service_nonterminal",
+              supported_scope: "project_corridor_service_only",
+            },
+          }],
+        },
+      })).toThrow("positive context exceeds its nonauthorizing project-corridor scope");
+
+      expect(validate({
+        ...b6Receipt,
+        supplemental_search: {
+          ...supplementalSearch("B6", true),
+          positive_context_findings: [{
+            ...supplementalSearch("B6", true).positive_context_findings![0]!,
+            evidence_refs: evidenceRefs().slice(1),
+          }],
+        },
+      })).toThrow("does not bind the exact route to bounded corridor-service context");
+
+      for (const missingBinding of ["attribution", "traversal"]) {
+        const reduced = packetFor("B6").unresolved_bindings.filter((binding) => binding !== missingBinding);
+        const reducedPacket = { ...packetFor("B6"), unresolved_bindings: reduced };
+        const positive = supplementalSearch("B6", true).positive_context_findings![0]!;
+        expect(validate({
+          ...b6Receipt,
+          unresolved_bindings: reduced,
+          supplemental_search: {
+            ...supplementalSearch("B6", true),
+            positive_context_findings: [{
+              ...positive,
+              context_finding: { ...positive.context_finding, unsupported_bindings: reduced },
+              remaining_unresolved_bindings: reduced,
+            }],
+          },
+        }, rowFor("B6"), reducedPacket))
+          .toThrow("does not bind the exact route to bounded corridor-service context");
+      }
+
+      expect(validate({
+        ...b6Receipt,
+        supplemental_search: {
+          ...supplementalSearch("B6", true),
+          positive_context_findings: [{
+            ...supplementalSearch("B6", true).positive_context_findings![0]!,
+            authorizes_study: true,
+          }],
+        },
+      })).toThrow("historical intersection context transferred to 2018 Glenwood Road lane service or traversal");
+
+      const traversalConfirmedRow = {
+        ...rowFor("B6"),
+        dossier_refs: [{
+          ...rowFor("B6").dossier_refs[0]!,
+          candidate_target_match: true,
+          verdict_class: "traversal_confirmed" as const,
+          service_date: date,
+        }],
+      };
+      expect(validate(b6Receipt, traversalConfirmedRow, packetFor("B6")))
+        .toThrow("historical intersection context transferred to 2018 Glenwood Road lane service or traversal");
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
 });

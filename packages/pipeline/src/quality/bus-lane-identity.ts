@@ -1597,11 +1597,22 @@ export function validateBindingReceiptDrafts(
             titleTokens.includes("SAFETY") &&
             titleTokens.includes("MOBILITY") &&
             titleTokens.includes("IMPROVEMENTS");
+          const coneyIslandGravesendTransportationStudyTitle =
+            titleTokens.includes("CONEY") &&
+            titleTokens.includes("ISLAND") &&
+            titleTokens.includes("GRAVESEND") &&
+            titleTokens.includes("SUSTAINABLE") &&
+            titleTokens.includes("DEVELOPMENT") &&
+            titleTokens.includes("TRANSPORTATION") &&
+            titleTokens.includes("STUDY") &&
+            titleTokens.includes("FINAL") &&
+            titleTokens.includes("REPORT");
           if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
               metadataSha !== sourceContentSha256 || hash(readFileSync(sourceArtifactPath)) !== sourceContentSha256 ||
               (!proposalSourceTitle && !upperCorridorExistingConditionsTitle && !secondAvenueRedesignTitle &&
                 !west125SbsEnforcementTitle && !west178CorridorTitle && !churchAvenueTransitProjectTitle &&
-                !churchAvenueCorridorStudyTitle && !vanderbiltClermontSafetyMobilityTitle) ||
+                !churchAvenueCorridorStudyTitle && !vanderbiltClermontSafetyMobilityTitle &&
+                !coneyIslandGravesendTransportationStudyTitle) ||
               !supplementalUrls.includes(sourceUrl) ||
               !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
                 retrieval.sha256 === sourceContentSha256)) {
@@ -1754,10 +1765,38 @@ export function validateBindingReceiptDrafts(
               window.tokens.has("FULTON") &&
               window.tokens.has("FLUSHING") &&
               Math.max(...window.positions) - Math.min(...window.positions) <= 14);
+          const glenwoodFeatureMatches = packet.what_is_known.target_groups
+            .flatMap((group) => group.feature_matches);
+          const exactGlenwoodRoadPacketTarget =
+            packet.what_is_known.target_groups.length === 1 &&
+            packet.what_is_known.target_groups[0]?.lane_group_id === "BK|GLENWOOD ROAD" &&
+            packet.what_is_known.target_groups[0]?.geometry_scope === "coextensive_with_lane_group" &&
+            glenwoodFeatureMatches.length === 5 &&
+            new Set(glenwoodFeatureMatches.map((match) => match.feature_key)).size === 5 &&
+            new Set(glenwoodFeatureMatches.map((match) => match.feature_id)).size === 5 &&
+            glenwoodFeatureMatches.every((match) =>
+              match.matched_date === row.implementation_date &&
+              match.matched_token_literal === "09/30/2018" &&
+              match.open_dates_literal === "09/30/2018" &&
+              match.direction === "WB") &&
+            stableJson(packet.unresolved_bindings) === stableJson(["attribution", "traversal"]);
+          const exactGlenwoodHistoricalIntersectionWindow = coneyIslandGravesendTransportationStudyTitle &&
+            exactGlenwoodRoadPacketTarget &&
+            row.implementation_date === "2018-09-30" &&
+            metadata.publishedDate === "2010-06-01" &&
+            [...citedPageWindows.values()].some((window) =>
+              window.route &&
+              window.tokens.has("B6") &&
+              window.tokens.has("WB") &&
+              window.tokens.has("GLENWOOD") &&
+              window.tokens.has("ROAD") &&
+              window.tokens.has("NOSTRAND") &&
+              Math.max(...window.positions) - Math.min(...window.positions) <= 3);
           if (!boundedServiceContext && !boundedExplicitSbsRouteContext &&
               !exactWest178CorridorServiceWindow && !exactChurchAvenueProjectWindow &&
               !exactChurchAvenueHistoricalTraversalWindow &&
-              !exactFultonAdjacentProjectEndpointWindow) {
+              !exactFultonAdjacentProjectEndpointWindow &&
+              !exactGlenwoodHistoricalIntersectionWindow) {
             throw new Error(`${contextPath}: staged source-block evidence does not bind the exact route to bounded corridor-service context`);
           }
           const exactUpperCorridorReviewWindow = upperCorridorExistingConditionsTitle &&
@@ -1839,6 +1878,9 @@ export function validateBindingReceiptDrafts(
           const isAdjacentProjectIntersectionEndpointContext =
             finding.finding_kind === "positive_adjacent_project_intersection_endpoint_nonterminal" &&
             finding.supported_scope === "adjacent_project_intersection_endpoint_only";
+          const isHistoricalSameCorridorIntersectionContext =
+            finding.finding_kind === "positive_historical_same_corridor_intersection_nonterminal" &&
+            finding.supported_scope === "historical_same_corridor_intersection_only";
           if (isOtherExtentContext && (!commonContextScopeValid || !proposalSourceTitle)) {
             throw new Error(`${contextPath}: positive context exceeds its nonauthorizing other-extent scope`);
           }
@@ -1874,9 +1916,19 @@ export function validateBindingReceiptDrafts(
                 candidateDateTraversalConfirmed)) {
             throw new Error(`${contextPath}: adjacent-project endpoint context transferred to Fulton Street lane service or traversal`);
           }
+          if (isHistoricalSameCorridorIntersectionContext &&
+              (!commonContextScopeValid || !exactGlenwoodHistoricalIntersectionWindow ||
+                object(prior.source_findings, `${contextPath}.prior.source_findings`)
+                  .exact_project_route_statement_found !== false ||
+                !receiptUnresolved.includes("attribution") ||
+                !receiptUnresolved.includes("traversal") ||
+                candidateDateTraversalConfirmed)) {
+            throw new Error(`${contextPath}: historical intersection context transferred to 2018 Glenwood Road lane service or traversal`);
+          }
           if (!isOtherExtentContext && !isProjectCorridorServiceContext &&
               !isHistoricalSameCorridorTraversalContext &&
-              !isAdjacentProjectIntersectionEndpointContext) {
+              !isAdjacentProjectIntersectionEndpointContext &&
+              !isHistoricalSameCorridorIntersectionContext) {
             throw new Error(`${contextPath}: positive context has an unsupported typed scope`);
           }
           nonempty(finding.finding_summary, `${contextPath}.context_finding.finding_summary`);

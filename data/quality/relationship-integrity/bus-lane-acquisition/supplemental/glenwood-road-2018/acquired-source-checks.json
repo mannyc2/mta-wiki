@@ -1,0 +1,37 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "glenwood-road-2018-historical-intersection-context-supplement",
+  "sources": [
+    {
+      "byte_length": 4949452,
+      "category": "official_nyc_dot_lane_project",
+      "content_sha256": "48b7b14d48202cda38a9b06e24a5b227449abf39fcf174defc9ef50a2a7d1775",
+      "http_status": 200,
+      "id": "bus_lane_camera_report_2024",
+      "media_type": "application/pdf",
+      "note": "Official NYC DOT enforcement report whose Brooklyn lane inventory includes Glenwood Road. It postdates the 2018 candidate date and names no candidate route, so it does not establish route attribution, traversal, or any exact feature-row binding.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "bus_lane_camera_report_2024",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/bus-lane-camera-report.pdf"
+    },
+    {
+      "byte_length": 20650375,
+      "category": "official_public_board_committee",
+      "content_sha256": "19fd204690a0c916612850f960d2d01e0b35e2f11174425251a465ca883448ab",
+      "http_status": 200,
+      "id": "coney_island_gravesend_transportation_study_2010",
+      "media_type": "application/pdf",
+      "note": "Official NYC DOT 2010 study used only for nonterminal historical B6 same-corridor/intersection context. Its existing-conditions bus-service table gives the B6 westbound maximum-load point at Glenwood Road and Nostrand Avenue; it does not establish 2018 Glenwood Road lane service or traversal, route attribution to the exact five feature rows, or their candidate-date onset.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "nyc_dot_coney_island_gravesend_transportation_study_2010",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/existing-and-future-2015.pdf"
+    }
+  ]
+}
