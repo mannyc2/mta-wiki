@@ -638,6 +638,59 @@ describe("bus-lane identity exact-date targeting", () => {
         supplemental_search: { ...correctionSupplementalSearch, finding_corrections: [findingCorrection] },
       } as unknown as JsonValue));
       expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir)).not.toThrow();
+      const otherExtentContextText = "Served by Q1 express bus routes in the separate corridor.";
+      const otherExtentContextHash = `sha256:${createHash("sha256").update(otherExtentContextText).digest("hex")}`;
+      writeFileSync(join(stagedSourceDir, "metadata.json"), JSON.stringify({
+        sourceId: "official-project-source",
+        sourceUrl: "https://www.nyc.gov/correction-source",
+        sha256: `sha256:${correctionSourceHash}`,
+        title: "Other Avenue Complete Street Proposal",
+      }));
+      writeFileSync(join(stagedSourceDir, "blocks.jsonl"), `${JSON.stringify({
+        source_id: "official-project-source",
+        block_id: "p004_p0001",
+        page_number: 4,
+        raw_text: otherExtentContextText,
+        normalized_text: otherExtentContextText,
+        raw_text_sha256: otherExtentContextHash,
+      })}\n`);
+      const positiveContextFinding = {
+        source_id: "official-project-source",
+        source_url: "https://www.nyc.gov/correction-source",
+        source_pdf_sha256: correctionSourceHash,
+        evidence_refs: [
+          { block_id: "p004_p0001", page_number: 4, text_sha256: otherExtentContextHash },
+        ],
+        context_finding: {
+          candidate_route_id: "Q1",
+          finding_kind: "positive_other_extent_context_nonterminal",
+          supported_scope: "other_extent_corridor_service_only",
+          unsupported_bindings: packet.unresolved_bindings,
+          finding_summary: "The route serves a separately bounded proposal corridor, not the candidate feature extent.",
+        },
+        remaining_unresolved_bindings: packet.unresolved_bindings,
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...correctionSupplementalSearch,
+          finding_corrections: [],
+          positive_context_findings: [positiveContextFinding],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir)).not.toThrow();
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...correctionSupplementalSearch,
+          finding_corrections: [],
+          positive_context_findings: [{ ...positiveContextFinding, authorizes_study: true }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("positive context exceeds its nonauthorizing other-extent scope");
       writeFileSync(join(stagedSourceDir, "blocks.jsonl"), `${JSON.stringify({
         source_id: "official-project-source",
         block_id: "p010_p0001",

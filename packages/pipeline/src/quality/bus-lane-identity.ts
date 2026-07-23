@@ -1146,7 +1146,9 @@ export function validateBindingReceiptDrafts(
     }
     if (receipt.supplemental_search !== undefined) {
       const supplemental = object(receipt.supplemental_search, `${receiptPath}.supplemental_search`);
-      exactKeys(supplemental, new Set([
+      const supplementalCore = Object.fromEntries(Object.entries(supplemental)
+        .filter(([field]) => field !== "positive_context_findings"));
+      exactKeys(supplementalCore, new Set([
         "domains", "exact_queries", "finding_corrections", "operator", "retrievals", "searched_at", "urls_inspected",
       ]), `${receiptPath}.supplemental_search`);
       nonempty(supplemental.operator, `${receiptPath}.supplemental_search.operator`);
@@ -1331,6 +1333,98 @@ export function validateBindingReceiptDrafts(
             correction.authorizes_study !== false || correction.authorizes_cross_product !== false ||
             receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
           throw new Error(`${correctionPath}: correction exceeds its nonauthorizing unresolved-binding scope`);
+        }
+      }
+      if (supplemental.positive_context_findings !== undefined) {
+        if (!Array.isArray(supplemental.positive_context_findings)) {
+          throw new Error(`${receiptPath}: supplemental positive_context_findings must be an array`);
+        }
+        for (const [index, value] of supplemental.positive_context_findings.entries()) {
+          const contextPath = `${receiptPath}.supplemental_search.positive_context_findings[${index}]`;
+          const context = object(value, contextPath);
+          exactKeys(context, new Set([
+            "authorizes_cross_product", "authorizes_study", "context_finding", "evidence_refs",
+            "remaining_unresolved_bindings", "source_id", "source_pdf_sha256", "source_url",
+          ]), contextPath);
+          const sourceId = nonempty(context.source_id, `${contextPath}.source_id`);
+          const sourceUrl = nonempty(context.source_url, `${contextPath}.source_url`);
+          const sourcePdfSha256 = nonempty(context.source_pdf_sha256, `${contextPath}.source_pdf_sha256`);
+          if (!/^[a-z0-9][a-z0-9_-]*$/u.test(sourceId) || !/^[a-f0-9]{64}$/u.test(sourcePdfSha256)) {
+            throw new Error(`${contextPath}: positive-context source identity is invalid`);
+          }
+          const stagedSourceDir = resolve(rootDir, "raw", "sources", sourceId);
+          const metadataPath = join(stagedSourceDir, "metadata.json");
+          const sourcePdfPath = join(stagedSourceDir, "source.pdf");
+          const sourceBlocksPath = join(stagedSourceDir, "blocks.jsonl");
+          if (![metadataPath, sourcePdfPath, sourceBlocksPath].every(existsSync)) {
+            throw new Error(`${contextPath}: positive-context source is not a fully staged PDF source`);
+          }
+          const metadata = object(JSON.parse(readFileSync(metadataPath, "utf8")), metadataPath);
+          const metadataSha = typeof metadata.sha256 === "string" ? metadata.sha256.replace(/^sha256:/u, "") : null;
+          const titleTokens = String(metadata.title ?? "").toUpperCase().split(/[^A-Z0-9+]+/u).filter(Boolean);
+          if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
+              metadataSha !== sourcePdfSha256 || hash(readFileSync(sourcePdfPath)) !== sourcePdfSha256 ||
+              !titleTokens.includes("PROPOSAL") || !supplementalUrls.includes(sourceUrl) ||
+              !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
+                retrieval.sha256 === sourcePdfSha256)) {
+            throw new Error(`${contextPath}: positive-context staged source metadata, URL, or PDF hash does not resolve`);
+          }
+          const stagedBlocks = readFileSync(sourceBlocksPath, "utf8").split(/\r?\n/u).filter(Boolean)
+            .map((line, blockIndex) => object(JSON.parse(line), `${sourceBlocksPath}:${blockIndex + 1}`));
+          const blockById = new Map(stagedBlocks.map((block) => [String(block.block_id), block]));
+          const blockIndexById = new Map(stagedBlocks.map((block, blockIndex) => [String(block.block_id), blockIndex]));
+          if (!Array.isArray(context.evidence_refs) || context.evidence_refs.length === 0) {
+            throw new Error(`${contextPath}: positive context requires staged source-block evidence`);
+          }
+          const citedBlockIds = new Set<string>();
+          const citedPageWindows = new Map<number, { positions: number[]; route: boolean; tokens: Set<string> }>();
+          for (const [refIndex, refValue] of context.evidence_refs.entries()) {
+            const refPath = `${contextPath}.evidence_refs[${refIndex}]`;
+            const ref = object(refValue, refPath);
+            exactKeys(ref, new Set(["block_id", "page_number", "text_sha256"]), refPath);
+            const blockId = nonempty(ref.block_id, `${refPath}.block_id`);
+            const textSha256 = nonempty(ref.text_sha256, `${refPath}.text_sha256`);
+            const block = blockById.get(blockId);
+            if (!block || citedBlockIds.has(blockId) || block.source_id !== sourceId ||
+                block.page_number !== ref.page_number || block.raw_text_sha256 !== textSha256 ||
+                block.raw_text_sha256 !== `sha256:${hash(String(block.raw_text ?? ""))}`) {
+              throw new Error(`${refPath}: positive-context source-block id, page, or text hash does not resolve`);
+            }
+            citedBlockIds.add(blockId);
+            const blockTokens = String(block.raw_text ?? "").toUpperCase()
+              .split(/[^A-Z0-9+]+/u).filter(Boolean);
+            const pageNumber = Number(block.page_number);
+            const pageWindow = citedPageWindows.get(pageNumber) ?? { positions: [], route: false, tokens: new Set<string>() };
+            pageWindow.positions.push(blockIndexById.get(blockId)!);
+            for (const token of blockTokens) pageWindow.tokens.add(token);
+            if (blockTokens.includes(row.gtfs_route_id.toUpperCase())) pageWindow.route = true;
+            citedPageWindows.set(pageNumber, pageWindow);
+          }
+          const boundedServiceContext = [...citedPageWindows.values()].some((window) =>
+            window.route && window.tokens.has("SERVED") && window.tokens.has("BUS") &&
+            (window.tokens.has("ROUTE") || window.tokens.has("ROUTES")) &&
+            Math.max(...window.positions) - Math.min(...window.positions) <= 8);
+          if (!boundedServiceContext) {
+            throw new Error(`${contextPath}: staged source-block evidence does not bind the exact route to bounded corridor-service context`);
+          }
+          const finding = object(context.context_finding, `${contextPath}.context_finding`);
+          exactKeys(finding, new Set([
+            "candidate_route_id", "finding_kind", "finding_summary", "supported_scope", "unsupported_bindings",
+          ]), `${contextPath}.context_finding`);
+          const unsupported = stringArray(finding.unsupported_bindings,
+            `${contextPath}.context_finding.unsupported_bindings`, false).sort();
+          const remaining = stringArray(context.remaining_unresolved_bindings,
+            `${contextPath}.remaining_unresolved_bindings`, false).sort();
+          if (finding.candidate_route_id !== row.gtfs_route_id ||
+              finding.finding_kind !== "positive_other_extent_context_nonterminal" ||
+              finding.supported_scope !== "other_extent_corridor_service_only" ||
+              stableJson(unsupported) !== stableJson([...receiptUnresolved].sort()) ||
+              stableJson(remaining) !== stableJson([...receiptUnresolved].sort()) ||
+              context.authorizes_study !== false || context.authorizes_cross_product !== false ||
+              receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
+            throw new Error(`${contextPath}: positive context exceeds its nonauthorizing other-extent scope`);
+          }
+          nonempty(finding.finding_summary, `${contextPath}.context_finding.finding_summary`);
         }
       }
     }
