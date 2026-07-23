@@ -28,12 +28,14 @@ const memberExtentLedger: CommandHandler = () => {
   const grainDecisionDirs = optionValues(process.argv, "--grain-decisions");
   const absenceReceiptDirs = optionValues(process.argv, "--absence-receipts");
   const companionPath = optionValue(process.argv, "--companion");
+  const occurrencesPath = optionValue(process.argv, "--occurrences");
   const dossierDir = optionValue(process.argv, "--dossiers");
   const packetPath = optionValue(process.argv, "--packets");
   const extentOutputPath = optionValue(process.argv, "--output") ?? optionValue(process.argv, "-o");
   const grainOutputPath = optionValue(process.argv, "--grain-output");
   const result = writeMemberExtentLedgerArtifacts({
     ...(companionPath ? { companionPath } : {}),
+    ...(occurrencesPath ? { occurrencesPath } : {}),
     ...(extentDecisionDirs.length > 0 ? { extentDecisionDirs } : {}),
     ...(grainDecisionDirs.length > 0 ? { grainDecisionDirs } : {}),
     ...(absenceReceiptDirs.length > 0 ? { absenceReceiptDirs } : {}),

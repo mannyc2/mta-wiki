@@ -28,6 +28,8 @@ export const MEMBER_GRAIN_LEDGER_CONTRACT_ID = "member-grain-ledger-v1" as const
 export const MEMBER_EXTENT_ABSENCE_CONTRACT_ID = "member-extent-absence-receipt-v1" as const;
 export const DEFAULT_MEMBER_EXTENT_COMPANION =
   "data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl";
+export const DEFAULT_MEMBER_EXTENT_OCCURRENCES =
+  "data/exports/releases/v1-rc26/operational_occurrences.jsonl";
 export const DEFAULT_MEMBER_EXTENT_LEDGER =
   "data/quality/operational-reference/member-extent-ledger.jsonl";
 export const DEFAULT_MEMBER_GRAIN_LEDGER =
@@ -71,6 +73,14 @@ export type MemberExtentDossierRef = {
   change: "added" | "removed" | "boundary" | "remainder" | "period_delta";
   identifiers: string[];
   receipt_refs: { snapshot_id: string; path: string; sha256: string }[];
+  evidence_scope: "route_context_only_nonexclusive";
+  satisfies_missing_role: false;
+  limitations: (
+    | "may_include_non_revenue_trips"
+    | "nonexclusive_route_context"
+    | "not_treatment_aligned"
+    | "timepoint_only_nonexhaustive"
+  )[];
 };
 
 export type MemberExtentLedgerVerdict =
@@ -340,6 +350,46 @@ function readCompanion(path: string): MemberExtentRow[] {
   return rows.sort((left, right) => extentDecisionKey(left).localeCompare(extentDecisionKey(right)));
 }
 
+function readOccurrenceMemberKeys(path: string): MemberExtentKey[] {
+  const keys = readFileSync(path, "utf8").split(/\r?\n/u).flatMap((line, index) => {
+    if (!line.trim()) return [];
+    const itemPath = `${path}:${index + 1}`;
+    const occurrence = object(JSON.parse(line) as unknown, itemPath);
+    const occurrenceId = nonempty(occurrence.occurrence_id, `${itemPath}.occurrence_id`);
+    if (!Array.isArray(occurrence.routes) || occurrence.routes.length === 0) {
+      throw new Error(`${itemPath}.routes: expected non-empty array`);
+    }
+    const routes = occurrence.routes.map((value, routeIndex) => {
+      const route = object(value, `${itemPath}.routes[${routeIndex}]`);
+      return nonempty(route.route_record_id, `${itemPath}.routes[${routeIndex}].route_record_id`);
+    });
+    const treatment = object(occurrence.treatment, `${itemPath}.treatment`);
+    const kind = nonempty(treatment.kind, `${itemPath}.treatment.kind`);
+    const members = kind === "atomic"
+      ? [object(treatment.member, `${itemPath}.treatment.member`)]
+      : kind === "bundle" && Array.isArray(treatment.members) && treatment.members.length > 0
+        ? treatment.members.map((value, memberIndex) =>
+          object(value, `${itemPath}.treatment.members[${memberIndex}]`))
+        : (() => {
+          throw new Error(`${itemPath}.treatment: expected atomic member or non-empty bundle members`);
+        })();
+    const treatmentIds = members.map((member, memberIndex) =>
+      nonempty(
+        member.treatment_record_id,
+        `${itemPath}.treatment.members[${memberIndex}].treatment_record_id`,
+      ));
+    return routes.flatMap((routeRecordId) => treatmentIds.map((treatmentRecordId) => ({
+      occurrence_id: occurrenceId,
+      route_record_id: routeRecordId,
+      treatment_record_id: treatmentRecordId,
+    })));
+  }).sort((left, right) => extentDecisionKey(left).localeCompare(extentDecisionKey(right)));
+  if (new Set(keys.map(extentDecisionKey)).size !== keys.length) {
+    throw new Error(`${path}: duplicate occurrence/route/treatment member key`);
+  }
+  return keys;
+}
+
 function packetIndex(path: string | undefined): Map<string, string> {
   const output = new Map<string, string>();
   if (!path || !existsSync(path)) return output;
@@ -379,6 +429,13 @@ function dossierRefs(artifacts: readonly ScheduleDossierArtifact[]): Map<string,
           change,
           identifiers: [stop.stop_id],
           receipt_refs: receiptRefs,
+          evidence_scope: "route_context_only_nonexclusive",
+          satisfies_missing_role: false,
+          limitations: [
+            "nonexclusive_route_context",
+            "not_treatment_aligned",
+            "timepoint_only_nonexhaustive",
+          ],
         });
       }
       for (const before of diff.trips_per_period_before) {
@@ -393,6 +450,13 @@ function dossierRefs(artifacts: readonly ScheduleDossierArtifact[]): Map<string,
             `after:${after.trip_count}`, `before:${before.trip_count}`, `period:${before.period}`,
           ].sort(),
           receipt_refs: receiptRefs,
+          evidence_scope: "route_context_only_nonexclusive",
+          satisfies_missing_role: false,
+          limitations: [
+            "may_include_non_revenue_trips",
+            "nonexclusive_route_context",
+            "not_treatment_aligned",
+          ],
         });
       }
     }
@@ -405,6 +469,13 @@ function dossierRefs(artifacts: readonly ScheduleDossierArtifact[]): Map<string,
         change: "boundary",
         identifiers,
         receipt_refs: receiptRefs,
+        evidence_scope: "route_context_only_nonexclusive",
+        satisfies_missing_role: false,
+        limitations: [
+          "nonexclusive_route_context",
+          "not_treatment_aligned",
+          "timepoint_only_nonexhaustive",
+        ],
       });
     }
     for (const remainder of dossier.new_route_remainder) {
@@ -416,6 +487,13 @@ function dossierRefs(artifacts: readonly ScheduleDossierArtifact[]): Map<string,
         change: "remainder",
         identifiers,
         receipt_refs: receiptRefs,
+        evidence_scope: "route_context_only_nonexclusive",
+        satisfies_missing_role: false,
+        limitations: [
+          "nonexclusive_route_context",
+          "not_treatment_aligned",
+          "timepoint_only_nonexhaustive",
+        ],
       });
     }
     const deduped = [...new Map(refs.map((ref) =>
@@ -464,11 +542,26 @@ export function buildMemberExtentLedgers(input: {
   absenceReceipts?: readonly MemberExtentAbsenceReceipt[];
   dossierArtifacts?: readonly ScheduleDossierArtifact[];
   packetIds?: ReadonlyMap<string, string>;
+  expectedMemberKeys?: readonly MemberExtentKey[];
 }): { extentRows: MemberExtentLedgerRow[]; grainRows: MemberGrainLedgerRow[] } {
   const companion = [...input.companionRows].sort((left, right) =>
     extentDecisionKey(left).localeCompare(extentDecisionKey(right)));
   const denominator = new Set(companion.map(extentDecisionKey));
   if (denominator.size !== companion.length) throw new Error("duplicate companion denominator key");
+  if (input.expectedMemberKeys) {
+    const expected = new Set(input.expectedMemberKeys.map(extentDecisionKey));
+    if (expected.size !== input.expectedMemberKeys.length) {
+      throw new Error("duplicate current occurrence denominator key");
+    }
+    const missing = [...expected].filter((key) => !denominator.has(key)).sort();
+    const unexpected = [...denominator].filter((key) => !expected.has(key)).sort();
+    if (missing.length > 0 || unexpected.length > 0) {
+      throw new Error(
+        `companion denominator does not match current occurrence denominator: ` +
+        `missing=${missing.length}, unexpected=${unexpected.length}`,
+      );
+    }
+  }
   for (const row of companion) {
     if (row.authorizes_study !== false || row.authorizes_cross_product !== false) {
       throw new Error(`${extentDecisionKey(row)}: companion rows cannot carry authority`);
@@ -554,6 +647,16 @@ export function buildMemberExtentLedgers(input: {
     const absence = absences.get(`member_grain\0${key}`);
     if (decision && absence) throw new Error(`${key}: grain decision conflicts with absence receipt`);
     const effectiveExtentDecisionId = extentDecisions.get(key)?.decision_id ?? current.decision_id;
+    const terminalGrain = decision && decision.service_scope.kind !== "unresolved";
+    if (terminalGrain &&
+        (spatial.current_extent_kind === "unresolved" ||
+          !spatial.verdict.startsWith("resolved:") ||
+          !effectiveExtentDecisionId)) {
+      throw new Error(`${decision.decision_id}: terminal grain requires a positive spatial decision`);
+    }
+    if (terminalGrain && !decision.member_extent_decision_id) {
+      throw new Error(`${decision.decision_id}: terminal grain must name its positive spatial decision`);
+    }
     if (decision?.member_extent_decision_id &&
         decision.member_extent_decision_id !== effectiveExtentDecisionId) {
       throw new Error(`${decision.decision_id}: member_extent_decision_id does not match spatial row`);
@@ -615,6 +718,7 @@ function jsonl(rows: readonly unknown[]): string {
 export function writeMemberExtentLedgerArtifacts(options: {
   rootDir?: string;
   companionPath?: string;
+  occurrencesPath?: string;
   extentDecisionDirs?: string[];
   grainDecisionDirs?: string[];
   absenceReceiptDirs?: string[];
@@ -631,6 +735,7 @@ export function writeMemberExtentLedgerArtifacts(options: {
   const rootDir = resolve(options.rootDir ?? repoRoot);
   const absolute = (path: string): string => resolve(rootDir, path);
   const companionPath = absolute(options.companionPath ?? DEFAULT_MEMBER_EXTENT_COMPANION);
+  const occurrencesPath = absolute(options.occurrencesPath ?? DEFAULT_MEMBER_EXTENT_OCCURRENCES);
   const extentDecisionDirs = (options.extentDecisionDirs ?? [DEFAULT_MEMBER_EXTENT_DECISION_DIR]).map(absolute);
   const grainDecisionDirs = (options.grainDecisionDirs ?? [DEFAULT_MEMBER_GRAIN_DECISION_DIR]).map(absolute);
   const absenceReceiptDirs = (options.absenceReceiptDirs ?? [DEFAULT_MEMBER_EXTENT_ABSENCE_DIR]).map(absolute);
@@ -641,6 +746,7 @@ export function writeMemberExtentLedgerArtifacts(options: {
   const grainOutputPath = absolute(options.grainOutputPath ?? DEFAULT_MEMBER_GRAIN_LEDGER);
   const result = buildMemberExtentLedgers({
     companionRows: readCompanion(companionPath),
+    expectedMemberKeys: readOccurrenceMemberKeys(occurrencesPath),
     extentDecisions: loadMemberExtentDecisions(extentDecisionDirs),
     grainDecisions: loadMemberGrainDecisions(grainDecisionDirs),
     absenceReceipts: loadMemberExtentAbsenceReceipts(absenceReceiptDirs),

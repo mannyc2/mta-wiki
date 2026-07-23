@@ -127,6 +127,17 @@ function grainDecision(target: MemberExtentRow, extentDecisionId: string | null 
   };
 }
 
+function occurrence(target: MemberExtentRow) {
+  return {
+    occurrence_id: target.occurrence_id,
+    routes: [{ route_record_id: target.route_record_id }],
+    treatment: {
+      kind: "atomic",
+      member: { treatment_record_id: target.treatment_record_id },
+    },
+  };
+}
+
 describe("member extent and grain ledgers", () => {
   it("preserves the exact companion denominator and overlays only reviewed terminal evidence", () => {
     const unresolved = row("atomic");
@@ -212,7 +223,58 @@ describe("member extent and grain ledgers", () => {
     })).toThrow("require exact evidence");
   });
 
-  it("prefills Q61, QM44, and QM64 missing roles from deterministic dossier facts", () => {
+  it("requires terminal grain decisions to name a matching positive spatial decision", () => {
+    const unresolved = row("grain-unresolved");
+    expect(() => buildMemberExtentLedgers({
+      companionRows: [unresolved],
+      grainDecisions: [parseMemberGrainDecision(grainDecision(unresolved))],
+    })).toThrow("requires a positive spatial decision");
+
+    const existing = row("grain-existing", "Q4", "route_wide");
+    expect(() => buildMemberExtentLedgers({
+      companionRows: [existing],
+      grainDecisions: [parseMemberGrainDecision(grainDecision(existing))],
+    })).toThrow("must name its positive spatial decision");
+    expect(() => buildMemberExtentLedgers({
+      companionRows: [existing],
+      grainDecisions: [parseMemberGrainDecision({
+        ...grainDecision(existing),
+        service_scope: { kind: "not_applicable" },
+        rationale: "This member has no separate service-grain selector.",
+      })],
+    })).toThrow("must name its positive spatial decision");
+    expect(buildMemberExtentLedgers({
+      companionRows: [existing],
+      grainDecisions: [
+        parseMemberGrainDecision(grainDecision(existing, existing.decision_id)),
+      ],
+    }).grainRows[0]?.verdict).toBe("resolved");
+
+    const blocked = parseMemberGrainDecision({
+      ...grainDecision(unresolved),
+      service_scope: { kind: "unresolved", missing_roles: ["pattern_identity"] },
+      rationale: "The exact structured grain is not yet evidence-bound.",
+    });
+    expect(buildMemberExtentLedgers({
+      companionRows: [unresolved],
+      grainDecisions: [blocked],
+    }).grainRows[0]?.verdict).toBe("blocked_upstream:pattern_identity");
+  });
+
+  it("rejects a stale companion that omits a current occurrence member", () => {
+    const existing = row("denominator-existing");
+    const generated = row("denominator-generated", "Q99");
+    expect(() => buildMemberExtentLedgers({
+      companionRows: [existing],
+      expectedMemberKeys: [existing, generated],
+    })).toThrow("does not match current occurrence denominator");
+    expect(buildMemberExtentLedgers({
+      companionRows: [existing, generated],
+      expectedMemberKeys: [generated, existing],
+    }).extentRows).toHaveLength(2);
+  });
+
+  it("attaches Q61, QM44, and QM64 dossier facts only as nonexclusive route context", () => {
     const q61 = { ...row("q61", "Q61"), missing_roles: ["bounded_scope_identity"] } as MemberExtentRow;
     const qm44 = { ...row("qm44", "QM44"), missing_roles: ["stop_identity"] } as MemberExtentRow;
     const qm64 = { ...row("qm64", "QM64"), missing_roles: ["scope_modality"] } as MemberExtentRow;
@@ -245,23 +307,49 @@ describe("member extent and grain ledgers", () => {
         dossier: dossier(routeId),
       })),
     });
-    expect(result.extentRows.find((entry) => entry.gtfs_route_id === "Q61")?.dossier_refs[0]?.fact_kind)
-      .toBe("bounded_scope_identity");
+    expect(result.extentRows.find((entry) => entry.gtfs_route_id === "Q61")?.dossier_refs[0])
+      .toMatchObject({
+        fact_kind: "bounded_scope_identity",
+        evidence_scope: "route_context_only_nonexclusive",
+        satisfies_missing_role: false,
+        limitations: [
+          "nonexclusive_route_context",
+          "not_treatment_aligned",
+          "timepoint_only_nonexhaustive",
+        ],
+      });
     expect(result.extentRows.find((entry) => entry.gtfs_route_id === "QM44")?.dossier_refs
-      .every((ref) => ref.fact_kind === "stop_identity")).toBe(true);
-    expect(result.extentRows.find((entry) => entry.gtfs_route_id === "QM64")?.dossier_refs[0]?.fact_kind)
-      .toBe("scope_modality");
+      .every((ref) =>
+        ref.fact_kind === "stop_identity" &&
+        ref.satisfies_missing_role === false &&
+        ref.limitations.includes("timepoint_only_nonexhaustive"))).toBe(true);
+    expect(result.extentRows.find((entry) => entry.gtfs_route_id === "QM64")?.dossier_refs[0])
+      .toMatchObject({
+        fact_kind: "scope_modality",
+        satisfies_missing_role: false,
+        limitations: [
+          "may_include_non_revenue_trips",
+          "nonexclusive_route_context",
+          "not_treatment_aligned",
+        ],
+      });
   });
 
   it("writes byte-stable outputs on replay", () => {
     const root = mkdtempSync(join(tmpdir(), "member-ledger-"));
     const companion = join(root, "companion.jsonl");
+    const occurrences = join(root, "occurrences.jsonl");
     const dossierDir = join(root, "dossiers");
     mkdirSync(dossierDir);
     writeFileSync(companion, `${stableJson(row("stable") as unknown as JsonValue)}\n`);
+    writeFileSync(
+      occurrences,
+      `${stableJson(occurrence(row("stable")) as unknown as JsonValue)}\n`,
+    );
     const options = {
       rootDir: root,
       companionPath: companion,
+      occurrencesPath: occurrences,
       extentDecisionDirs: [join(root, "extent-decisions")],
       grainDecisionDirs: [join(root, "grain-decisions")],
       absenceReceiptDirs: [join(root, "receipts")],
