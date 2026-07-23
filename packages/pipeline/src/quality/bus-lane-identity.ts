@@ -989,6 +989,15 @@ export function validateBindingReceiptDrafts(
 ): void {
   const rowByCandidate = new Map(rows.map((row) => [row.candidate_id, row]));
   const packetByCandidate = new Map(packets.map((packet) => [packet.candidate_id, packet]));
+  const acquiredSourceRecords = receiptFiles(join(rootDir,
+    "data/quality/relationship-integrity/bus-lane-acquisition"))
+    .filter((path) => path.endsWith("/acquired-source-checks.json"))
+    .flatMap((path) => {
+      const record = object(JSON.parse(readFileSync(path, "utf8")), path);
+      return Array.isArray(record.sources)
+        ? record.sources.map((source, index) => object(source, `${path}.sources[${index}]`))
+        : [];
+    });
   for (const receiptPath of receiptFiles(receiptDir)) {
     const receipt = object(JSON.parse(readFileSync(receiptPath, "utf8")), receiptPath);
     if (receipt.receipt_kind !== "binding_absent_after_search") continue;
@@ -1001,6 +1010,8 @@ export function validateBindingReceiptDrafts(
         stableJson(receipt.unresolved_bindings as JsonValue) !== stableJson(packet.unresolved_bindings)) {
       throw new Error(`${receiptPath}: binding receipt candidate or unresolved-binding parity failed`);
     }
+    const receiptUnresolved = stringArray(receipt.unresolved_bindings,
+      `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
         receipt.disposition !== "binding_absent_after_search" ||
         !Array.isArray(receipt.candidate_urls) || receipt.candidate_urls.length !== 0 ||
@@ -1132,6 +1143,196 @@ export function validateBindingReceiptDrafts(
     if (stableJson(search as JsonValue) !== stableJson(expectedSearch) ||
         receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
       throw new Error(`${receiptPath}: binding receipt search preservation or authorization guard failed`);
+    }
+    if (receipt.supplemental_search !== undefined) {
+      const supplemental = object(receipt.supplemental_search, `${receiptPath}.supplemental_search`);
+      exactKeys(supplemental, new Set([
+        "domains", "exact_queries", "finding_corrections", "operator", "retrievals", "searched_at", "urls_inspected",
+      ]), `${receiptPath}.supplemental_search`);
+      nonempty(supplemental.operator, `${receiptPath}.supplemental_search.operator`);
+      const supplementalSearchedAt = isoReviewTime(supplemental.searched_at,
+        `${receiptPath}.supplemental_search.searched_at`);
+      const supplementalSearchDay = supplementalSearchedAt.slice(0, 10);
+      if (!Array.isArray(supplemental.exact_queries) || supplemental.exact_queries.length === 0) {
+        throw new Error(`${receiptPath}: supplemental search requires exact queries`);
+      }
+      const queryCategories = new Set<string>();
+      for (const [index, value] of supplemental.exact_queries.entries()) {
+        const query = object(value, `${receiptPath}.supplemental_search.exact_queries[${index}]`);
+        exactKeys(query, new Set(["category", "query", "query_status"]),
+          `${receiptPath}.supplemental_search.exact_queries[${index}]`);
+        const category = nonempty(query.category, `${receiptPath}.supplemental_search.exact_queries[${index}].category`);
+        const literal = nonempty(query.query, `${receiptPath}.supplemental_search.exact_queries[${index}].query`);
+        const queryStatus = nonempty(query.query_status,
+          `${receiptPath}.supplemental_search.exact_queries[${index}].query_status`);
+        if (queryStatus !== `performed_${supplementalSearchDay}` &&
+            !queryStatus.startsWith(`performed_${supplementalSearchDay}_`)) {
+          throw new Error(`${receiptPath}: supplemental query status does not prove execution on the recorded search day`);
+        }
+        const tokens = literal.toUpperCase().split(/[^A-Z0-9+]+/u).filter(Boolean);
+        if (!tokens.includes(row.gtfs_route_id.toUpperCase())) {
+          throw new Error(`${receiptPath}: supplemental query does not name the exact candidate route`);
+        }
+        queryCategories.add(category);
+      }
+      for (const category of ["official_nyc_dot_lane_project", "official_public_board_committee"]) {
+        if (!queryCategories.has(category)) {
+          throw new Error(`${receiptPath}: supplemental search is missing ${category}`);
+        }
+      }
+      const supplementalUrls = stringArray(supplemental.urls_inspected,
+        `${receiptPath}.supplemental_search.urls_inspected`, false).sort();
+      const supplementalDomains = stringArray(supplemental.domains,
+        `${receiptPath}.supplemental_search.domains`, false).sort();
+      const derivedDomains = [...new Set(supplementalUrls.map((url) => new URL(url).hostname))].sort();
+      if (stableJson(supplementalDomains) !== stableJson(derivedDomains) ||
+          derivedDomains.some((domain) => domain !== "nyc.gov" && !domain.endsWith(".nyc.gov"))) {
+        throw new Error(`${receiptPath}: supplemental search URLs must resolve to the recorded official NYC domains`);
+      }
+      if (!Array.isArray(supplemental.retrievals) || supplemental.retrievals.length === 0) {
+        throw new Error(`${receiptPath}: supplemental search requires retrieval records`);
+      }
+      const retrievalCategories = new Set<string>();
+      const acquiredRetrievals: { url: string; sha256: string }[] = [];
+      const allowedStatuses = new Set(["acquired", "not_retrieved", "not_found", "blocked"]);
+      for (const [index, value] of supplemental.retrievals.entries()) {
+        const retrieval = object(value, `${receiptPath}.supplemental_search.retrievals[${index}]`);
+        exactKeys(retrieval, new Set(["category", "retrieved_on", "sha256", "status", "url"]),
+          `${receiptPath}.supplemental_search.retrievals[${index}]`);
+        const category = nonempty(retrieval.category,
+          `${receiptPath}.supplemental_search.retrievals[${index}].category`);
+        const url = nonempty(retrieval.url, `${receiptPath}.supplemental_search.retrievals[${index}].url`);
+        const status = nonempty(retrieval.status, `${receiptPath}.supplemental_search.retrievals[${index}].status`);
+        isoReviewTime(retrieval.retrieved_on, `${receiptPath}.supplemental_search.retrievals[${index}].retrieved_on`);
+        if (!allowedStatuses.has(status) || !queryCategories.has(category) || !supplementalUrls.includes(url) ||
+            (status === "acquired"
+              ? typeof retrieval.sha256 !== "string" || !/^[a-f0-9]{64}$/u.test(retrieval.sha256)
+              : retrieval.sha256 !== null)) {
+          throw new Error(`${receiptPath}: supplemental retrieval does not bind query, URL, status, and hash`);
+        }
+        if (status === "acquired") {
+          const retrievalSha256 = String(retrieval.sha256);
+          if (!acquiredSourceRecords.some((source) => source.url === url &&
+              source.content_sha256 === retrievalSha256 && source.retrieval_status === "acquired")) {
+            throw new Error(`${receiptPath}: supplemental acquired retrieval does not resolve in immutable acquisition metadata: ${url} sha256=${retrievalSha256}`);
+          }
+          acquiredRetrievals.push({ url, sha256: retrievalSha256 });
+        }
+        retrievalCategories.add(category);
+      }
+      for (const category of ["official_nyc_dot_lane_project", "official_public_board_committee"]) {
+        if (!retrievalCategories.has(category)) {
+          throw new Error(`${receiptPath}: supplemental retrievals are missing ${category}`);
+        }
+      }
+      if (!Array.isArray(supplemental.finding_corrections)) {
+        throw new Error(`${receiptPath}: supplemental finding_corrections must be an array`);
+      }
+      for (const [index, value] of supplemental.finding_corrections.entries()) {
+        const correctionPath = `${receiptPath}.supplemental_search.finding_corrections[${index}]`;
+        const correction = object(value, correctionPath);
+        exactKeys(correction, new Set([
+          "authorizes_cross_product", "authorizes_study", "corrected_finding", "evidence_refs",
+          "prior_claim_path", "prior_claim_value", "remaining_unresolved_bindings", "source_id",
+          "source_pdf_sha256", "source_url", "supersedes_prior_finding",
+        ]), correctionPath);
+        const priorClaimPath = nonempty(correction.prior_claim_path, `${correctionPath}.prior_claim_path`);
+        const priorClaim = priorClaimPath.split(".").reduce<unknown>((current, segment) => {
+          if (!current || typeof current !== "object" || Array.isArray(current)) return undefined;
+          return (current as Record<string, unknown>)[segment];
+        }, prior);
+        if (priorClaimPath !== "source_findings.exact_project_route_statement_found" ||
+            priorClaim !== correction.prior_claim_value || correction.prior_claim_value !== false ||
+            correction.supersedes_prior_finding !== true) {
+          throw new Error(`${correctionPath}: correction does not resolve and supersede the recorded false prior claim`);
+        }
+        const sourceId = nonempty(correction.source_id, `${correctionPath}.source_id`);
+        if (!/^[a-z0-9][a-z0-9_-]*$/u.test(sourceId)) {
+          throw new Error(`${correctionPath}: correction source id is not a compact staged-source id`);
+        }
+        const sourceUrl = nonempty(correction.source_url, `${correctionPath}.source_url`);
+        const sourcePdfSha256 = nonempty(correction.source_pdf_sha256,
+          `${correctionPath}.source_pdf_sha256`);
+        if (!/^[a-f0-9]{64}$/u.test(sourcePdfSha256)) {
+          throw new Error(`${correctionPath}: correction source PDF hash is invalid`);
+        }
+        const stagedSourceDir = resolve(rootDir, "raw", "sources", sourceId);
+        const metadataPath = join(stagedSourceDir, "metadata.json");
+        const sourcePdfPath = join(stagedSourceDir, "source.pdf");
+        const sourceBlocksPath = join(stagedSourceDir, "blocks.jsonl");
+        if (![metadataPath, sourcePdfPath, sourceBlocksPath].every(existsSync)) {
+          throw new Error(`${correctionPath}: correction source is not a fully staged PDF source`);
+        }
+        const metadata = object(JSON.parse(readFileSync(metadataPath, "utf8")), metadataPath);
+        const metadataSha = typeof metadata.sha256 === "string" ? metadata.sha256.replace(/^sha256:/u, "") : null;
+        if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
+            metadataSha !== sourcePdfSha256 || hash(readFileSync(sourcePdfPath)) !== sourcePdfSha256 ||
+            !supplementalUrls.includes(sourceUrl) ||
+            !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
+              retrieval.sha256 === sourcePdfSha256)) {
+          throw new Error(`${correctionPath}: staged source metadata, URL, or PDF hash does not resolve`);
+        }
+        const stagedBlocks = readFileSync(sourceBlocksPath, "utf8").split(/\r?\n/u).filter(Boolean)
+          .map((line, blockIndex) => object(JSON.parse(line), `${sourceBlocksPath}:${blockIndex + 1}`));
+        const blockById = new Map(stagedBlocks.map((block) => [String(block.block_id), block]));
+        const blockIndexById = new Map(stagedBlocks.map((block, blockIndex) => [String(block.block_id), blockIndex]));
+        if (blockById.size !== stagedBlocks.length || stagedBlocks.length === 0) {
+          throw new Error(`${correctionPath}: staged source blocks are empty or duplicate`);
+        }
+        if (!Array.isArray(correction.evidence_refs) || correction.evidence_refs.length === 0) {
+          throw new Error(`${correctionPath}: correction requires staged source-block evidence`);
+        }
+        const citedBlockIds = new Set<string>();
+        const citedPageWindows = new Map<number, { positions: number[]; route: boolean; tokens: Set<string> }>();
+        for (const [refIndex, refValue] of correction.evidence_refs.entries()) {
+          const refPath = `${correctionPath}.evidence_refs[${refIndex}]`;
+          const ref = object(refValue, refPath);
+          exactKeys(ref, new Set(["block_id", "page_number", "text_sha256"]), refPath);
+          const blockId = nonempty(ref.block_id, `${refPath}.block_id`);
+          const textSha256 = nonempty(ref.text_sha256, `${refPath}.text_sha256`);
+          const block = blockById.get(blockId);
+          if (!block || citedBlockIds.has(blockId) || block.source_id !== sourceId ||
+              block.page_number !== ref.page_number || block.raw_text_sha256 !== textSha256 ||
+              block.raw_text_sha256 !== `sha256:${hash(String(block.raw_text ?? ""))}`) {
+            throw new Error(`${refPath}: source-block id, page, or text hash does not resolve`);
+          }
+          citedBlockIds.add(blockId);
+          const blockTokens = String(block.raw_text ?? "").toUpperCase()
+            .split(/[^A-Z0-9+]+/u).filter(Boolean);
+          const pageNumber = Number(block.page_number);
+          const pageWindow = citedPageWindows.get(pageNumber) ?? { positions: [], route: false, tokens: new Set<string>() };
+          pageWindow.positions.push(blockIndexById.get(blockId)!);
+          for (const token of blockTokens) pageWindow.tokens.add(token);
+          if (blockTokens.includes(row.gtfs_route_id.toUpperCase())) pageWindow.route = true;
+          citedPageWindows.set(pageNumber, pageWindow);
+        }
+        const boundedProjectIntersectionWindow = [...citedPageWindows.values()].some((window) =>
+          window.route && window.tokens.has("PROJECT") && window.tokens.has("INTERSECTION") &&
+          Math.max(...window.positions) - Math.min(...window.positions) <= 8);
+        if (!boundedProjectIntersectionWindow) {
+          throw new Error(`${correctionPath}: staged source-block evidence does not bind the exact route to project-intersection context`);
+        }
+        const correctedFinding = object(correction.corrected_finding, `${correctionPath}.corrected_finding`);
+        exactKeys(correctedFinding, new Set([
+          "candidate_route_id", "finding_kind", "finding_summary", "supported_scope", "unsupported_bindings",
+        ]), `${correctionPath}.corrected_finding`);
+        const correctedRoute = nonempty(correctedFinding.candidate_route_id,
+          `${correctionPath}.corrected_finding.candidate_route_id`);
+        const correctedUnsupported = stringArray(correctedFinding.unsupported_bindings,
+          `${correctionPath}.corrected_finding.unsupported_bindings`, false).sort();
+        const remainingUnresolved = stringArray(correction.remaining_unresolved_bindings,
+          `${correctionPath}.remaining_unresolved_bindings`, false).sort();
+        nonempty(correctedFinding.finding_summary, `${correctionPath}.corrected_finding.finding_summary`);
+        if (correctedRoute !== row.gtfs_route_id ||
+            correctedFinding.finding_kind !== "positive_project_intersection_attribution_nonterminal" ||
+            correctedFinding.supported_scope !== "project_intersection_attribution_only" ||
+            stableJson(correctedUnsupported) !== stableJson([...receiptUnresolved].sort()) ||
+            stableJson(remainingUnresolved) !== stableJson([...receiptUnresolved].sort()) ||
+            correction.authorizes_study !== false || correction.authorizes_cross_product !== false ||
+            receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
+          throw new Error(`${correctionPath}: correction exceeds its nonauthorizing unresolved-binding scope`);
+        }
+      }
     }
   }
 }

@@ -479,6 +479,7 @@ describe("bus-lane identity exact-date targeting", () => {
     const prior = {
       receipt_id: "prior-receipt",
       researched_on: "2026-07-15",
+      source_findings: { exact_project_route_statement_found: false },
       acquisition_attempts: [{
         category: "official_nyc_dot_lane_project",
         query: "exact test query",
@@ -542,6 +543,227 @@ describe("bus-lane identity exact-date targeting", () => {
     try {
       writeFileSync(join(receiptDir, "draft.json"), stableJson(receipt as unknown as JsonValue));
       expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir)).not.toThrow();
+      const supplementalSearch = {
+        operator: "fixture-reviewer",
+        searched_at: "2026-07-23",
+        finding_corrections: [],
+        exact_queries: [
+          { category: "official_nyc_dot_lane_project", query: "site:nyc.gov Q1 exact lane project",
+            query_status: "performed_2026-07-23" },
+          { category: "official_public_board_committee", query: "site:nyc.gov Q1 exact board committee",
+            query_status: "performed_2026-07-23" },
+        ],
+        domains: ["www.nyc.gov"],
+        urls_inspected: ["https://www.nyc.gov/board-example", "https://www.nyc.gov/example"],
+        retrievals: [
+          { category: "official_nyc_dot_lane_project", url: "https://www.nyc.gov/example",
+            retrieved_on: "2026-07-23", status: "acquired", sha256: "b".repeat(64) },
+          { category: "official_public_board_committee", url: "https://www.nyc.gov/board-example",
+            retrieved_on: "2026-07-23", status: "acquired", sha256: "c".repeat(64) },
+        ],
+      };
+      const acquiredChecksDir = join(rootDir,
+        "data/quality/relationship-integrity/bus-lane-acquisition/shards/fixture");
+      mkdirSync(acquiredChecksDir, { recursive: true });
+      const acquiredSources = [
+        { url: "https://www.nyc.gov/example", content_sha256: "b".repeat(64), retrieval_status: "acquired" },
+        { url: "https://www.nyc.gov/board-example", content_sha256: "c".repeat(64), retrieval_status: "acquired" },
+      ];
+      writeFileSync(join(acquiredChecksDir, "acquired-source-checks.json"), JSON.stringify({ sources: acquiredSources }));
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt, supplemental_search: supplementalSearch,
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir)).not.toThrow();
+      const stagedSourceDir = join(rootDir, "raw", "sources", "official-project-source");
+      mkdirSync(stagedSourceDir, { recursive: true });
+      const sourcePdfBytes = Buffer.from("fixture official PDF bytes");
+      const correctionSourceHash = createHash("sha256").update(sourcePdfBytes).digest("hex");
+      const routeBlockText = "The Q1 route travels through the project intersection.";
+      const routeBlockHash = `sha256:${createHash("sha256").update(routeBlockText).digest("hex")}`;
+      writeFileSync(join(stagedSourceDir, "source.pdf"), sourcePdfBytes);
+      writeFileSync(join(stagedSourceDir, "metadata.json"), JSON.stringify({
+        sourceId: "official-project-source",
+        sourceUrl: "https://www.nyc.gov/correction-source",
+        sha256: `sha256:${correctionSourceHash}`,
+      }));
+      writeFileSync(join(stagedSourceDir, "blocks.jsonl"), `${JSON.stringify({
+        source_id: "official-project-source",
+        block_id: "p010_p0001",
+        page_number: 10,
+        raw_text: routeBlockText,
+        normalized_text: routeBlockText,
+        raw_text_sha256: routeBlockHash,
+      })}\n`);
+      const findingCorrection = {
+        prior_claim_path: "source_findings.exact_project_route_statement_found",
+        prior_claim_value: false,
+        supersedes_prior_finding: true,
+        source_id: "official-project-source",
+        source_url: "https://www.nyc.gov/correction-source",
+        source_pdf_sha256: correctionSourceHash,
+        evidence_refs: [
+          { block_id: "p010_p0001", page_number: 10, text_sha256: routeBlockHash },
+        ],
+        corrected_finding: {
+          candidate_route_id: "Q1",
+          finding_kind: "positive_project_intersection_attribution_nonterminal",
+          supported_scope: "project_intersection_attribution_only",
+          unsupported_bindings: packet.unresolved_bindings,
+          finding_summary: "The route is named at the project intersection, without exact feature binding.",
+        },
+        remaining_unresolved_bindings: packet.unresolved_bindings,
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      writeFileSync(join(acquiredChecksDir, "acquired-source-checks.json"), JSON.stringify({
+        sources: [...acquiredSources, {
+          url: "https://www.nyc.gov/correction-source",
+          content_sha256: correctionSourceHash,
+          retrieval_status: "acquired",
+        }],
+      }));
+      const correctionSupplementalSearch = {
+        ...supplementalSearch,
+        urls_inspected: [...supplementalSearch.urls_inspected, "https://www.nyc.gov/correction-source"].sort(),
+        retrievals: [...supplementalSearch.retrievals, {
+          category: "official_public_board_committee",
+          url: "https://www.nyc.gov/correction-source",
+          retrieved_on: "2026-07-23",
+          status: "acquired",
+          sha256: correctionSourceHash,
+        }],
+      };
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: { ...correctionSupplementalSearch, finding_corrections: [findingCorrection] },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir)).not.toThrow();
+      writeFileSync(join(stagedSourceDir, "blocks.jsonl"), `${JSON.stringify({
+        source_id: "official-project-source",
+        block_id: "p010_p0001",
+        page_number: 10,
+        raw_text: "tampered source text",
+        normalized_text: routeBlockText,
+        raw_text_sha256: routeBlockHash,
+      })}\n`);
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("source-block id, page, or text hash does not resolve");
+      writeFileSync(join(stagedSourceDir, "blocks.jsonl"), `${JSON.stringify({
+        source_id: "official-project-source",
+        block_id: "p010_p0001",
+        page_number: 10,
+        raw_text: routeBlockText,
+        normalized_text: routeBlockText,
+        raw_text_sha256: routeBlockHash,
+      })}\n`);
+      const routeOnlyText = "Q1";
+      const routeOnlyHash = `sha256:${createHash("sha256").update(routeOnlyText).digest("hex")}`;
+      const contextOnlyText = "project intersection";
+      const contextOnlyHash = `sha256:${createHash("sha256").update(contextOnlyText).digest("hex")}`;
+      writeFileSync(join(stagedSourceDir, "blocks.jsonl"), [
+        JSON.stringify({
+          source_id: "official-project-source", block_id: "p010_p0001", page_number: 10,
+          raw_text: routeOnlyText, normalized_text: routeOnlyText, raw_text_sha256: routeOnlyHash,
+        }),
+        JSON.stringify({
+          source_id: "official-project-source", block_id: "p011_p0001", page_number: 11,
+          raw_text: contextOnlyText, normalized_text: contextOnlyText, raw_text_sha256: contextOnlyHash,
+        }),
+      ].join("\n") + "\n");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...correctionSupplementalSearch,
+          finding_corrections: [{
+            ...findingCorrection,
+            evidence_refs: [
+              { block_id: "p010_p0001", page_number: 10, text_sha256: routeOnlyHash },
+              { block_id: "p011_p0001", page_number: 11, text_sha256: contextOnlyHash },
+            ],
+          }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("does not bind the exact route to project-intersection context");
+      writeFileSync(join(stagedSourceDir, "blocks.jsonl"), `${JSON.stringify({
+        source_id: "official-project-source",
+        block_id: "p010_p0001",
+        page_number: 10,
+        raw_text: routeBlockText,
+        normalized_text: routeBlockText,
+        raw_text_sha256: routeBlockHash,
+      })}\n`);
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...correctionSupplementalSearch,
+          finding_corrections: [{ ...findingCorrection, authorizes_study: true }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("correction exceeds its nonauthorizing unresolved-binding scope");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...correctionSupplementalSearch,
+          finding_corrections: [{ ...findingCorrection, source_pdf_sha256: "e".repeat(64) }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("staged source metadata, URL, or PDF hash does not resolve");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...supplementalSearch,
+          exact_queries: supplementalSearch.exact_queries.map((query, index) =>
+            index === 0 ? { ...query, query_status: "not_performed" } : query),
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("supplemental query status does not prove execution on the recorded search day");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...supplementalSearch,
+          retrievals: supplementalSearch.retrievals.map((retrieval, index) =>
+            index === 0 ? { ...retrieval, sha256: "f".repeat(64) } : retrieval),
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("supplemental acquired retrieval does not resolve in immutable acquisition metadata");
+      const notFoundSearch = {
+        ...supplementalSearch,
+        retrievals: supplementalSearch.retrievals.map((retrieval) => retrieval.category === "official_public_board_committee"
+          ? { ...retrieval, status: "not_found", sha256: null }
+          : retrieval),
+      };
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt, supplemental_search: notFoundSearch,
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir)).not.toThrow();
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: { ...notFoundSearch, retrievals: notFoundSearch.retrievals
+          .filter((retrieval) => retrieval.category !== "official_public_board_committee") },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("supplemental retrievals are missing official_public_board_committee");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: { ...notFoundSearch, retrievals: notFoundSearch.retrievals.map((retrieval) =>
+          retrieval.category === "official_public_board_committee" ? { ...retrieval, sha256: "c".repeat(64) } : retrieval) },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("does not bind query, URL, status, and hash");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...supplementalSearch,
+          exact_queries: supplementalSearch.exact_queries.map((query) => ({ ...query, query: query.query.replace("Q1", "B46") })),
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("does not name the exact candidate route");
       writeFileSync(join(receiptDir, "draft.json"), stableJson({
         ...receipt, target: { ...receipt.target, directions: ["SB"] },
       } as unknown as JsonValue));
