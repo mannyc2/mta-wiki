@@ -9,6 +9,7 @@ import {
   buildBusLaneIdentityLedger,
   buildBusLaneResearchPackets,
   buildEastGunHillBindingReceiptDraft,
+  buildFrCapodannoBindingReceiptDraft,
   candidateLaneTargets,
   normalizeOpenDateToken,
   parseBusLaneIdentityDecision,
@@ -6909,6 +6910,208 @@ describe("bus-lane identity exact-date targeting", () => {
       writeFileSync(tempPriorPath, `${selectedPriorLines.map((line) => line === priorLine
         ? stableJson(tamperedPrior as JsonValue) : line).join("\n")}\n`);
       expect(validate(receipt, row, packet)).toThrow(exactError);
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
+
+  it("closes S52 Father Capodanno only with candidate-exact uncertainty and nonterminal context", () => {
+    const repoRoot = join(import.meta.dir, "../../../..");
+    const packetPath = join(repoRoot,
+      "data/quality/acquisition/packets/bus-lane/packets/b40f1b64f8c80552a5dd73e9.json");
+    const packet = JSON.parse(readFileSync(packetPath, "utf8")) as BusLaneResearchPacket;
+    const row = readFileSync(join(repoRoot,
+      "data/quality/operational-reference/bus-lane-identity-ledger.jsonl"), "utf8")
+      .split(/\r?\n/u).filter(Boolean).map((line) => JSON.parse(line) as BusLaneIdentityRow)
+      .find((candidate) => candidate.candidate_id === packet.candidate_id)!;
+    const expected = buildFrCapodannoBindingReceiptDraft(row, packet);
+    const suffix = String(expected.receipt_id).split(":")[1];
+    const receipt = JSON.parse(readFileSync(join(repoRoot,
+      `data/quality/acquisition/receipts/bus-lane-review/${suffix}.json`), "utf8")) as Record<string, any>;
+    const priorArtifact =
+      "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/receipts.jsonl";
+    const acquiredArtifact =
+      "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/acquired-source-checks.json";
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-fr-capodanno-"));
+    const receiptDir = join(rootDir, "receipts");
+    const currentSourceRoot = join(rootDir, "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22");
+    mkdirSync(receiptDir, { recursive: true });
+    mkdirSync(currentSourceRoot, { recursive: true });
+    for (const file of ["metadata.json", "source.geojson"]) {
+      copyFileSync(join(repoRoot, "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22", file),
+        join(currentSourceRoot, file));
+    }
+    for (const sourceId of ["2012_03_15_brt_hylan_meeting_slides", "2014_hylan_blvd_final_report"]) {
+      const sourceRoot = join(rootDir, "raw/sources", sourceId);
+      mkdirSync(sourceRoot, { recursive: true });
+      for (const file of ["metadata.json", "source.pdf", "blocks.jsonl"]) {
+        copyFileSync(join(repoRoot, "raw/sources", sourceId, file), join(sourceRoot, file));
+      }
+    }
+    for (const artifact of [priorArtifact, acquiredArtifact]) {
+      const destination = join(rootDir, artifact);
+      mkdirSync(join(destination, ".."), { recursive: true });
+      copyFileSync(join(repoRoot, artifact), destination);
+    }
+    const validate = (
+      draft: Record<string, unknown>,
+      candidateRow: BusLaneIdentityRow = row,
+      candidatePacket: BusLaneResearchPacket = packet,
+    ) => {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+      return () => validateBindingReceiptDrafts([candidateRow], [candidatePacket], receiptDir, rootDir);
+    };
+    const targetFor = (candidatePacket: BusLaneResearchPacket, candidateRow: BusLaneIdentityRow) => {
+      const groups = candidatePacket.what_is_known.target_groups;
+      const matches = groups.flatMap((group) => group.feature_matches);
+      return {
+        directions: [...new Set(matches.map((match) => match.direction))].sort(),
+        feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+        feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+        feature_row_count: matches.length,
+        feature_rows: matches.map((match) => ({
+          direction: match.direction, feature_id: match.feature_id, feature_key: match.feature_key,
+        })),
+        geometry_scopes: [...new Set(groups.map((group) => group.geometry_scope))].sort(),
+        lane_group_ids: groups.map((group) => group.lane_group_id),
+        matched_date: candidateRow.implementation_date,
+        named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+        open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+      };
+    };
+    try {
+      expect(packet.gtfs_route_id).toBe("S52");
+      expect(packet.missing_binding).toBe("feature_extent");
+      expect(packet.unresolved_bindings).toEqual([
+        "attribution", "direction", "feature_extent", "phase", "traversal",
+      ]);
+      expect(receipt.target).toMatchObject({
+        lane_group_ids: ["SI|FR CAPODANNO BOULEVARD"], feature_row_count: 42,
+        directions: ["NB"], named_sbs_routes: [], open_dates_literals: ["11/10/10"],
+      });
+      expect(receipt.target.feature_keys).toHaveLength(42);
+      expect(receipt.target.feature_ids).toHaveLength(42);
+      expect(receipt.context_evidence.map((context: Record<string, unknown>) => context.classification)).toEqual([
+        "later_hylan_project_parallel_corridor_context",
+        "later_hylan_project_unchanged_comparison_corridor_context",
+      ]);
+      expect(receipt.context_evidence.every((context: Record<string, unknown>) =>
+        context.context_only === true && context.candidate_direction_bound === false &&
+        context.not_candidate_refutation === true)).toBe(true);
+      expect(receipt.source_gap).toMatchObject({
+        candidate_specific_authoritative_raw_source_available: false,
+        derived_release_records_used_as_source_evidence: false,
+        staged_candidate_binding_source_available: false,
+        prior_only_retrieval: {
+          id: "mta_bustime_S52", acquired_check_record_available: false,
+          raw_content_retention_independently_verified: false, used_as_source_evidence: false,
+        },
+      });
+      expect(receipt.source_gap.nonretained_acquisition_records).toHaveLength(7);
+      expect(validate(receipt)).not.toThrow();
+      expect(receipt.search.urls_inspected).toEqual([
+        "https://bustime-classic.mta.info/m/?q=S52",
+        "https://data.cityofnewyork.us/api/views/ycrg-ses3",
+        "https://data.cityofnewyork.us/resource/ycrg-ses3.json?$limit=5000",
+        "https://files.mta.info/s3fs-public/pdf/bussi-express_0.pdf",
+        "https://www.nyc.gov/html/brt/downloads/pdf/2012-03-15_brt_hylan_meeting-slides.pdf",
+        "https://www.nyc.gov/html/brt/downloads/pdf/2014-hylan-blvd-final-report.pdf",
+        "https://www.nyc.gov/html/dot/downloads/pdf/lincoln-ave-father-capodanno-blvd-railroad-ave-april-2023.pdf",
+        "https://www.nyc.gov/html/dot/downloads/pdf/nyc-dot-select-bus-service-report.pdf",
+        "https://www.nyc.gov/html/dot/html/about/current-projects.shtml",
+        "https://www.nyc.gov/html/dot/html/about/datafeeds.shtml",
+      ]);
+      const reviewedRow = {
+        ...row,
+        decision_id: `bus-lane-identity-decision:${suffix}`,
+        receipt_ids: [String(receipt.receipt_id)],
+        unresolved_bindings: [...packet.unresolved_bindings],
+        updated_at: "2026-07-23T18:40:32Z",
+        verdict: "binding_absent_after_search",
+        verdict_basis: `review:bus-lane-identity-decision:${suffix}`,
+      } as BusLaneIdentityRow;
+      expect(() => validateReviewedReceiptRefs([reviewedRow], receiptDir)).not.toThrow();
+      expect(validate({ ...receipt, search: { ...receipt.search, urls_inspected: [] } })).toThrow();
+
+      expect(validate(receipt, row, { ...packet, missing_binding: "traversal",
+        unresolved_bindings: ["attribution", "traversal"] })).toThrow();
+      for (const binding of ["attribution", "direction", "feature_extent", "phase"] as const) {
+        expect(validate(receipt, row, { ...packet,
+          unresolved_bindings: packet.unresolved_bindings.filter((value) => value !== binding),
+        })).toThrow();
+        expect(validate({ ...receipt,
+          unresolved_bindings: receipt.unresolved_bindings.filter((value: string) => value !== binding),
+        })).toThrow();
+      }
+
+      const group = packet.what_is_known.target_groups[0]!;
+      const withGroup = (candidateGroup: typeof group) => {
+        const candidateRow = { ...row, onset_evidence: { ...row.onset_evidence,
+          target_groups: [candidateGroup] } };
+        const candidatePacket = { ...packet, what_is_known: { ...packet.what_is_known,
+          target_groups: [candidateGroup] } };
+        return { candidateRow, candidatePacket,
+          draft: { ...receipt, target: targetFor(candidatePacket, candidateRow) } };
+      };
+      const reordered = withGroup({ ...group, feature_matches: [
+        group.feature_matches[1]!, group.feature_matches[0]!, ...group.feature_matches.slice(2),
+      ] });
+      expect(validate(reordered.draft, reordered.candidateRow, reordered.candidatePacket)).toThrow();
+      const removed = withGroup({ ...group, feature_matches: group.feature_matches.slice(1) });
+      expect(validate(removed.draft, removed.candidateRow, removed.candidatePacket)).toThrow();
+      const southbound = withGroup({ ...group, feature_matches: group.feature_matches.map((match, index) =>
+        index === 0 ? { ...match, direction: "SB" } : match) });
+      expect(validate(southbound.draft, southbound.candidateRow, southbound.candidatePacket)).toThrow();
+      const retokened = withGroup({ ...group, feature_matches: group.feature_matches.map((match, index) =>
+        index === 0 ? { ...match, matched_token_literal: "11/10/2010" } : match) });
+      expect(validate(retokened.draft, retokened.candidateRow, retokened.candidatePacket)).toThrow();
+      const attributed = withGroup({ ...group, feature_matches: group.feature_matches.map((match, index) =>
+        index === 0 ? { ...match, sbs_routes: ["S52"] } : match) });
+      expect(validate(attributed.draft, attributed.candidateRow, attributed.candidatePacket)).toThrow();
+
+      const dossierRefs = packet.what_is_known.dossier_refs.map((ref) => ({
+        ...ref, candidate_target_match: true, direction: "NB", lane_group_id: "SI|FR CAPODANNO BOULEVARD",
+      }));
+      const dossierRow = { ...row, dossier_refs: dossierRefs };
+      const dossierPacket = { ...packet, what_is_known: { ...packet.what_is_known,
+        dossier_refs: dossierRefs,
+        dossier_summary: { ...packet.what_is_known.dossier_summary, target_row_count: 1 },
+      } };
+      expect(validate(receipt, dossierRow, dossierPacket)).toThrow();
+      expect(validate({ ...receipt, context_evidence: receipt.context_evidence.map(
+        (context: Record<string, unknown>, index: number) => index === 0
+          ? { ...context, candidate_direction_bound: true } : context) })).toThrow();
+      expect(validate({ ...receipt, source_gap: { ...receipt.source_gap,
+        candidate_specific_authoritative_raw_source_available: true } })).toThrow();
+      expect(validate({ ...receipt, source_gap: { ...receipt.source_gap,
+        prior_only_retrieval: { ...receipt.source_gap.prior_only_retrieval,
+          used_as_source_evidence: true } } })).toThrow();
+      expect(validate({ ...receipt, authorizes_study: true })).toThrow();
+
+      const slidePath = join(rootDir, "raw/sources/2012_03_15_brt_hylan_meeting_slides/source.pdf");
+      writeFileSync(slidePath, "fabricated\n");
+      expect(validate(receipt)).toThrow();
+      copyFileSync(join(repoRoot, "raw/sources/2012_03_15_brt_hylan_meeting_slides/source.pdf"), slidePath);
+
+      const acquiredChecksPath = join(rootDir, acquiredArtifact);
+      const acquiredChecks = JSON.parse(readFileSync(acquiredChecksPath, "utf8")) as {
+        sources: Record<string, unknown>[];
+      };
+      writeFileSync(acquiredChecksPath, JSON.stringify({ sources: acquiredChecks.sources.map((source) =>
+        source.id === "father_capodanno_safety_2023" ? { ...source, raw_content_retained: true } : source) }));
+      expect(validate(receipt)).toThrow();
+      copyFileSync(join(repoRoot, acquiredArtifact), acquiredChecksPath);
+
+      const priorPath = join(rootDir, priorArtifact);
+      const priorLines = readFileSync(priorPath, "utf8").split(/\r?\n/u).filter(Boolean);
+      writeFileSync(priorPath, `${priorLines.map((line) => {
+        const prior = JSON.parse(line);
+        return prior.receipt_id === "staten-island-acquisition:07078ada9c8ef7de3afe7e2a"
+          ? stableJson({ ...prior, claim_results: { ...prior.claim_results,
+            candidate_segment_ids_pinned: true } } as JsonValue)
+          : line;
+      }).join("\n")}\n`);
+      expect(validate(receipt)).toThrow();
     } finally {
       rmSync(rootDir, { recursive: true, force: true });
     }

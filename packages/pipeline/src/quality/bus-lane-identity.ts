@@ -1073,6 +1073,90 @@ const EAST_GUN_HILL_MISSING_SOURCE = {
   expectedPath: "raw/sources/nyc_dot_gun_hill_road_completion_2023",
 };
 
+const FR_CAPODANNO_PRIOR = {
+  artifact: "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/receipts.jsonl",
+  artifactSha256: "c511783ce9f86b65fa5ffc087fe1d1753beb92caa37064976da67748ca182593",
+  receiptId: "staten-island-acquisition:07078ada9c8ef7de3afe7e2a",
+  rowSha256: "1d3dcb80f8b3d8364660c78944d5bf59dda4dd0531d6dc7478b6e092a07043cd",
+  routePageSha256: "833146db10bcb1764c968dda29c0ed3b0c183ce43fd65493e095ef0d4e4cb147",
+};
+const FR_CAPODANNO_FEATURE_ROWS_SHA256 =
+  "d8a734d9e26aa0d825a7653a1c8de5acce7fcd4df1efa6b2b4434e86cfbe583c";
+const FR_CAPODANNO_DOSSIER_SHA256 =
+  "f84bf8c354f92182ec473c8d63a70b1c68cbed348e2decee5597f82a72ac95cd";
+const FR_CAPODANNO_RECEIPT_SUFFIX = "a270c81744d619db7f6f7beb";
+const FR_CAPODANNO_CONTEXT_SOURCES = [
+  {
+    sourceId: "2012_03_15_brt_hylan_meeting_slides",
+    sourceUrl: "https://www.nyc.gov/html/brt/downloads/pdf/2012-03-15_brt_hylan_meeting-slides.pdf",
+    artifact: "raw/sources/2012_03_15_brt_hylan_meeting_slides/source.pdf",
+    sourceSha256: "0ef8aef7cfa68eccf0513303ef1aed52556f6b6a442a94f802a8cf9613b69332",
+    metadataSha256: "a6ccca40e6174318ec13a9e7fef3f2e877f097f6a1a5a318bd2dd953ee3f4d12",
+    blocksArtifact: "raw/sources/2012_03_15_brt_hylan_meeting_slides/blocks.jsonl",
+    blocksSha256: "dd0c02f014c9d3a0f651ff9a6cc1d5e4ed6eef4c485981a70d2ba3af53c587c4",
+    blockId: "p012_c0005",
+    blockTextSha256: "sha256:4854b012eff1904866d138b35ee69716effef8539ceb7b02d6bde1895bdbe761",
+    classification: "later_hylan_project_parallel_corridor_context",
+  },
+  {
+    sourceId: "2014_hylan_blvd_final_report",
+    sourceUrl: "https://www.nyc.gov/html/brt/downloads/pdf/2014-hylan-blvd-final-report.pdf",
+    artifact: "raw/sources/2014_hylan_blvd_final_report/source.pdf",
+    sourceSha256: "3e106b77495dcace4815c8e5294957baad516020de6ff735acdc3f0aff92400e",
+    metadataSha256: "a9ebe681d66d9dc08667b4c67259663368cf6dc0b0634a5fb6d8ddc4192786d7",
+    blocksArtifact: "raw/sources/2014_hylan_blvd_final_report/blocks.jsonl",
+    blocksSha256: "c661395358b2235783b6c43c7c5dfd2bf3cfc22f5512053e7e85c16ff2255286",
+    blockId: "p018_c0005",
+    blockTextSha256: "sha256:41fabb65bb2a624482ea19e51c9aa95f865ab753c9d64ca7f766d8fd928cb08b",
+    classification: "later_hylan_project_unchanged_comparison_corridor_context",
+  },
+];
+const FR_CAPODANNO_ACQUIRED_CHECKS = {
+  artifact: "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/acquired-source-checks.json",
+  sha256: "9d7a61be83f54c8d431f588976af06d86c0dedff5300511d1bd4ac4ed5e6c32a",
+  nonretainedSources: [
+    {
+      id: "dot_bus_lanes_snapshot", byteLength: 2_979_323,
+      sha256: "1b3a990a75abc472d5f68d683aeb7d1deafa2eca4a239e4914b12db6a9927a5a",
+      classification: "superseded_registry_snapshot_context",
+    },
+    {
+      id: "select_bus_service_report", byteLength: 1_871_180,
+      sha256: "3ee8f645b91b0c96f4c05725edb2c8d52bcdccdc742da59bf2f653781ecafdc8",
+      classification: "other_route_hylan_richmond_s79_context",
+    },
+    {
+      id: "mta_staten_express_map", byteLength: 454_842,
+      sha256: "fc4935e5cd27fabb4d085002dd536f9aef43c0217b4db256e721d494ececcd28",
+      classification: "current_express_network_context_not_s52_binding",
+    },
+    {
+      id: "father_capodanno_safety_2023", byteLength: 3_321_624,
+      sha256: "e1dbf2355ee9a9c75f99a38736bfecff6d038f98da7736de006fcf0b1bc84145",
+      classification: "later_corridor_safety_context_not_2010_s52_binding",
+    },
+    {
+      id: "dot_current_projects", byteLength: 231_988,
+      sha256: "497d1f9358c5b4864a0bf1d30b1157d431a3d1a6645aad55dbad0b3090ae0f8f",
+      classification: "project_index_search_context",
+    },
+    {
+      id: "dot_bus_lanes_metadata", byteLength: 37_887,
+      sha256: "37d620df045dfefee4b0a52b7489a7059c4af77aac40a3f0ca6caa99ac45f75f",
+      classification: "dataset_metadata_context",
+    },
+    {
+      id: "dot_datafeeds", byteLength: 50_137,
+      sha256: "978825efcdee1f4819c3f8e114343502950390acdda7b0d9515af1b31ccc9bc6",
+      classification: "dataset_catalog_context",
+    },
+  ],
+  priorOnlyRetrieval: {
+    id: "mta_bustime_S52",
+    sha256: "833146db10bcb1764c968dda29c0ed3b0c183ce43fd65493e095ef0d4e4cb147",
+  },
+};
+
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
   row: BusLaneIdentityRow,
@@ -1476,6 +1560,67 @@ function isExactEastGunHillRoadPacketTarget(
       ref.path_source === "historical_schedule_timepoint_pattern" &&
       ref.verdict_class === "geometry_ambiguous") &&
     stableJson(packet.what_is_known.dossier_summary) === stableJson(expectedDossierSummary);
+}
+
+function isFrCapodannoLedgerTarget(row: BusLaneIdentityRow): boolean {
+  return row.gtfs_route_id === "S52" && row.implementation_date === "2010-11-10" &&
+    row.onset_evidence.target_groups.length === 1 &&
+    row.onset_evidence.target_groups[0]?.lane_group_id === "SI|FR CAPODANNO BOULEVARD";
+}
+
+function isExactFrCapodannoPacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const group = packet.what_is_known.target_groups[0];
+  const dossierRef = packet.what_is_known.dossier_refs[0];
+  const prior = packet.what_is_known.prior_acquisition_receipt;
+  if (!group || !dossierRef || !prior || !isFrCapodannoLedgerTarget(row)) return false;
+  const featureRows = group.feature_matches.map((match) => [
+    match.feature_key,
+    match.feature_id,
+    match.direction,
+    match.matched_date,
+    match.matched_token_literal,
+    match.open_dates_literal,
+    match.sbs_routes,
+  ]);
+  return packet.missing_binding === "feature_extent" &&
+    stableJson(packet.unresolved_bindings) ===
+      stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"]) &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    stableJson(packet.what_is_known.dossier_refs) === stableJson(row.dossier_refs) &&
+    group.borough === "SI" && group.facility === "Father Capodanno Bl" &&
+    group.street === "FR CAPODANNO BOULEVARD" && group.geometry_scope === "coextensive_with_lane_group" &&
+    group.feature_matches.length === 42 &&
+    new Set(group.feature_matches.map((match) => match.feature_key)).size === 42 &&
+    new Set(group.feature_matches.map((match) => match.feature_id)).size === 42 &&
+    group.feature_matches.every((match) => match.direction === "NB" &&
+      match.matched_date === "2010-11-10" && match.matched_token_literal === "11/10/10" &&
+      match.open_dates_literal === "11/10/10" && match.sbs_routes.length === 0) &&
+    hash(stableJson(featureRows as JsonValue)) === FR_CAPODANNO_FEATURE_ROWS_SHA256 &&
+    packet.what_is_known.dossier_refs.length === 1 &&
+    hash(stableJson(packet.what_is_known.dossier_refs)) === FR_CAPODANNO_DOSSIER_SHA256 &&
+    dossierRef.candidate_target_match === false && dossierRef.direction === null &&
+    dossierRef.lane_group_id === null && dossierRef.path_identity === null &&
+    dossierRef.path_source === "unavailable" &&
+    dossierRef.reason === "historical_schedule_unavailable_pre_2023" &&
+    dossierRef.service_date === null && dossierRef.temporal_lag_days === null &&
+    dossierRef.verdict_class === "geometry_ambiguous" && dossierRef.overlap_miles === 0 &&
+    dossierRef.overlap_share === 0 && dossierRef.stop_coordinate_coverage === 0 &&
+    dossierRef.span_stop_ids.length === 0 &&
+    stableJson(packet.what_is_known.dossier_summary) === stableJson({
+      counts_by_path_source: { gtfs_shape: 0, historical_schedule_timepoint_pattern: 0, unavailable: 1 },
+      counts_by_reason: { historical_schedule_unavailable_pre_2023: 1 },
+      counts_by_verdict: {
+        geometry_ambiguous: 1, no_traversal: 0, traversal_confirmed: 0, traversal_marginal: 0,
+      },
+      row_count: 1,
+      target_row_count: 0,
+    }) &&
+    prior.artifact === FR_CAPODANNO_PRIOR.artifact && prior.receipt_id === FR_CAPODANNO_PRIOR.receiptId &&
+    prior.row_sha256 === FR_CAPODANNO_PRIOR.rowSha256 &&
+    prior.disposition === "completed_search_route_linkage_unresolved";
 }
 
 function isoReviewTime(value: unknown, path: string): string {
@@ -1971,6 +2116,7 @@ function packetMissingBinding(row: BusLaneIdentityRow): BusLaneResearchPacket["m
   if (row.onset_evidence.target_groups.length === 0) return "attribution";
   if (row.detector_verdict === "onset_unresolved") return "onset";
   if (row.detector_reason_codes.some((reason) => reason.includes("direction_unknown"))) return "direction";
+  if (isFrCapodannoLedgerTarget(row)) return "feature_extent";
   if (row.implementation_date === "2023-10-31" && EAST_GUN_HILL_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
       row.onset_evidence.target_groups.length === 1 &&
       row.onset_evidence.target_groups[0]?.lane_group_id === "BX|EAST GUN HILL ROAD") {
@@ -1986,6 +2132,13 @@ function packetUnresolvedBindings(row: BusLaneIdentityRow): BusLaneMissingBindin
   if (row.unresolved_bindings.length > 0) return row.unresolved_bindings;
   const bindings = new Set<BusLaneMissingBinding>([packetMissingBinding(row)]);
   const targets = row.onset_evidence.target_groups;
+  if (isFrCapodannoLedgerTarget(row)) {
+    bindings.add("attribution");
+    bindings.add("direction");
+    bindings.add("feature_extent");
+    bindings.add("phase");
+    bindings.add("traversal");
+  }
   if (row.implementation_date === "2023-10-31" && EAST_GUN_HILL_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
       targets.length === 1 && targets[0]?.lane_group_id === "BX|EAST GUN HILL ROAD") {
     bindings.add("attribution");
@@ -2510,6 +2663,230 @@ function validateEastGunHillBindingReceipt(
       !Array.isArray(actions.canonical_links_added) || actions.canonical_links_added.length !== 0) fail();
 }
 
+function frCapodannoRationale(): string {
+  return "The exact current registry target is the ordered 42-row, 42-key, 42-ID northbound Father Capodanno Boulevard lane group dated 2010-11-10, with literal 11/10/10 and no named routes. The immutable Staten Island acquisition receipt found no authoritative S52 route-treatment binding, retained no historical candidate segment identifiers, and proved neither exact feature extent nor onset-versus-later-phase identity. Its live S52 route-page lookup is explicitly current-only. The target rows are northbound, but without a candidate-specific route/segment binding that group direction is not bound to the historical S52 candidate. The pre-2023 dossier is unavailable and supplies no candidate-target direction or traversal. Staged 2012 and 2014 Hylan-project sources use Father Capodanno only as a parallel or unchanged comparison corridor; they neither prove nor refute the distinct 2010 S52 candidate. Other candidate-search retrievals are nonretained metadata, and the prior-only Bustime retrieval is not independently present in acquired-source checks, so none is promoted as source evidence. Attribution, direction, feature extent, phase, and traversal remain unresolved. This authorizes no occurrence, study, or cross-product projection.";
+}
+
+export function buildFrCapodannoBindingReceiptDraft(
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+): Record<string, unknown> {
+  if (!isExactFrCapodannoPacketTarget(packet, row)) {
+    throw new Error("Father Capodanno Boulevard packet does not match the exact candidate");
+  }
+  const matches = packet.what_is_known.target_groups.flatMap((group) => group.feature_matches);
+  return {
+    authorizes_cross_product: false,
+    authorizes_study: false,
+    candidate_fingerprint: row.candidate_fingerprint,
+    candidate_id: row.candidate_id,
+    candidate_urls: [],
+    context_evidence: FR_CAPODANNO_CONTEXT_SOURCES.map((source) => ({
+      authorizes_cross_product: false,
+      authorizes_study: false,
+      candidate_date_bound: false,
+      candidate_direction_bound: false,
+      candidate_route_bound: false,
+      candidate_target_bound: false,
+      classification: source.classification,
+      context_only: true,
+      evidence_block_id: source.blockId,
+      evidence_text_sha256: source.blockTextSha256,
+      not_candidate_refutation: true,
+      source_artifact: source.artifact,
+      source_blocks_artifact: source.blocksArtifact,
+      source_blocks_sha256: source.blocksSha256,
+      source_id: source.sourceId,
+      source_sha256: source.sourceSha256,
+      source_url: source.sourceUrl,
+    })),
+    disposition: "binding_absent_after_search",
+    gap_ids: [row.ledger_id],
+    gtfs_route_id: row.gtfs_route_id,
+    implementation_date: row.implementation_date,
+    missing_binding: "feature_extent",
+    operator: "plan039-corridor-adjudicator",
+    prior_receipt: packet.what_is_known.prior_acquisition_receipt,
+    rationale: frCapodannoRationale(),
+    receipt_id: `bus-lane-binding-search:${FR_CAPODANNO_RECEIPT_SUFFIX}`,
+    receipt_kind: "binding_absent_after_search",
+    schema_version: 1,
+    search: {
+      disposition: "binding_absent_after_search",
+      immutable_prior_receipt_id: FR_CAPODANNO_PRIOR.receiptId,
+      repository_context_source_ids: FR_CAPODANNO_CONTEXT_SOURCES.map((source) => source.sourceId),
+      staged_current_registry_source_id: UNIVERSITY_AVENUE_CURRENT_SOURCE.sourceId,
+      retrieval_classifications: FR_CAPODANNO_ACQUIRED_CHECKS.nonretainedSources.map((source) => ({
+        classification: source.classification,
+        id: source.id,
+        raw_content_retained: false,
+      })),
+      urls_inspected: [
+        "https://bustime-classic.mta.info/m/?q=S52",
+        "https://data.cityofnewyork.us/api/views/ycrg-ses3",
+        "https://data.cityofnewyork.us/resource/ycrg-ses3.json?$limit=5000",
+        "https://files.mta.info/s3fs-public/pdf/bussi-express_0.pdf",
+        "https://www.nyc.gov/html/brt/downloads/pdf/2012-03-15_brt_hylan_meeting-slides.pdf",
+        "https://www.nyc.gov/html/brt/downloads/pdf/2014-hylan-blvd-final-report.pdf",
+        "https://www.nyc.gov/html/dot/downloads/pdf/lincoln-ave-father-capodanno-blvd-railroad-ave-april-2023.pdf",
+        "https://www.nyc.gov/html/dot/downloads/pdf/nyc-dot-select-bus-service-report.pdf",
+        "https://www.nyc.gov/html/dot/html/about/current-projects.shtml",
+        "https://www.nyc.gov/html/dot/html/about/datafeeds.shtml",
+      ],
+    },
+    searched_at: "2026-07-15",
+    source_gap: {
+      authorizes_cross_product: false,
+      authorizes_study: false,
+      candidate_specific_authoritative_raw_source_available: false,
+      derived_release_records_used_as_source_evidence: false,
+      nonretained_acquisition_records: FR_CAPODANNO_ACQUIRED_CHECKS.nonretainedSources.map((source) => ({
+        byte_length: source.byteLength,
+        classification: source.classification,
+        content_sha256: source.sha256,
+        id: source.id,
+        raw_content_retained: false,
+      })),
+      prior_only_retrieval: {
+        acquired_check_record_available: false,
+        content_sha256: FR_CAPODANNO_ACQUIRED_CHECKS.priorOnlyRetrieval.sha256,
+        id: FR_CAPODANNO_ACQUIRED_CHECKS.priorOnlyRetrieval.id,
+        raw_content_retention_independently_verified: false,
+        used_as_source_evidence: false,
+      },
+      resolution_rule: "Reopen only with independently retained, verifiable, citeable source bytes that bind S52 to the 2010 candidate's route-specific direction, extent, phase, and traversal.",
+      staged_candidate_binding_source_available: false,
+    },
+    target: {
+      directions: [...new Set(matches.map((match) => match.direction))].sort(),
+      feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+      feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+      feature_row_count: matches.length,
+      feature_rows: matches.map((match) => ({
+        direction: match.direction,
+        feature_id: match.feature_id,
+        feature_key: match.feature_key,
+      })),
+      geometry_scopes: [...new Set(packet.what_is_known.target_groups.map((group) => group.geometry_scope))].sort(),
+      lane_group_ids: packet.what_is_known.target_groups.map((group) => group.lane_group_id),
+      matched_date: row.implementation_date,
+      named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+      open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+    },
+    unresolved_bindings: ["attribution", "direction", "feature_extent", "phase", "traversal"],
+  };
+}
+
+function validateFrCapodannoBindingReceipt(
+  receipt: Record<string, unknown>,
+  receiptPath: string,
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): void {
+  const fail = (): never => {
+    throw new Error(`${receiptPath}: Father Capodanno Boulevard absence contract does not match the exact candidate`);
+  };
+  let expected: Record<string, unknown>;
+  try {
+    expected = buildFrCapodannoBindingReceiptDraft(row, packet);
+  } catch {
+    return fail();
+  }
+  if (stableJson(receipt as JsonValue) !== stableJson(expected as JsonValue)) fail();
+
+  const currentSourcePath = resolve(rootDir, UNIVERSITY_AVENUE_CURRENT_SOURCE.artifact);
+  const currentMetadataPath = resolve(rootDir, "raw/sources",
+    UNIVERSITY_AVENUE_CURRENT_SOURCE.sourceId, "metadata.json");
+  const priorPath = resolve(rootDir, FR_CAPODANNO_PRIOR.artifact);
+  const acquiredChecksPath = resolve(rootDir, FR_CAPODANNO_ACQUIRED_CHECKS.artifact);
+  if (![currentSourcePath, currentMetadataPath, priorPath, acquiredChecksPath].every(existsSync) ||
+      hash(readFileSync(currentSourcePath)) !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sha256 ||
+      hash(readFileSync(priorPath)) !== FR_CAPODANNO_PRIOR.artifactSha256 ||
+      hash(readFileSync(acquiredChecksPath)) !== FR_CAPODANNO_ACQUIRED_CHECKS.sha256) fail();
+  const currentMetadata = object(JSON.parse(readFileSync(currentMetadataPath, "utf8")), currentMetadataPath);
+  if (currentMetadata.sourceId !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sourceId ||
+      String(currentMetadata.sha256).replace(/^sha256:/u, "") !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sha256) fail();
+
+  for (const context of FR_CAPODANNO_CONTEXT_SOURCES) {
+    const artifactPath = resolve(rootDir, context.artifact);
+    const blocksPath = resolve(rootDir, context.blocksArtifact);
+    const metadataPath = resolve(rootDir, "raw/sources", context.sourceId, "metadata.json");
+    if (![artifactPath, blocksPath, metadataPath].every(existsSync) ||
+        hash(readFileSync(artifactPath)) !== context.sourceSha256 ||
+        hash(readFileSync(blocksPath)) !== context.blocksSha256 ||
+        hash(readFileSync(metadataPath)) !== context.metadataSha256) fail();
+    const metadata = object(JSON.parse(readFileSync(metadataPath, "utf8")), metadataPath);
+    const block = readFileSync(blocksPath, "utf8").split(/\r?\n/u).filter(Boolean)
+      .map((line) => object(JSON.parse(line), blocksPath))
+      .find((value) => value.block_id === context.blockId);
+    if (metadata.sourceId !== context.sourceId || metadata.sourceUrl !== context.sourceUrl ||
+        String(metadata.sha256).replace(/^sha256:/u, "") !== context.sourceSha256 ||
+        !block || block.raw_text_sha256 !== context.blockTextSha256) fail();
+  }
+
+  const acquiredChecks = object(JSON.parse(readFileSync(acquiredChecksPath, "utf8")), acquiredChecksPath);
+  const acquiredSourceValues = acquiredChecks.sources;
+  if (!Array.isArray(acquiredSourceValues)) return fail();
+  const acquiredSources = acquiredSourceValues.map((source, index) =>
+    object(source, `${acquiredChecksPath}.sources[${index}]`));
+  for (const expectedSource of FR_CAPODANNO_ACQUIRED_CHECKS.nonretainedSources) {
+    const source = acquiredSources.find((value) => value.id === expectedSource.id);
+    if (!source || source.content_sha256 !== expectedSource.sha256 ||
+        source.byte_length !== expectedSource.byteLength || source.retrieval_status !== "acquired" ||
+        source.raw_content_retained !== false) fail();
+  }
+  if (acquiredSources.some((source) => source.id === FR_CAPODANNO_ACQUIRED_CHECKS.priorOnlyRetrieval.id)) fail();
+
+  const priorLine = readFileSync(priorPath, "utf8").split(/\r?\n/u).filter(Boolean).find((line) =>
+    object(JSON.parse(line), priorPath).receipt_id === FR_CAPODANNO_PRIOR.receiptId);
+  const resolvedPriorLine = priorLine ?? fail();
+  if (hash(resolvedPriorLine) !== FR_CAPODANNO_PRIOR.rowSha256) fail();
+  const prior = object(JSON.parse(resolvedPriorLine), `${priorPath}:${FR_CAPODANNO_PRIOR.receiptId}`);
+  const candidate = object(prior.candidate, `${priorPath}.candidate`);
+  const findings = object(prior.source_findings, `${priorPath}.source_findings`);
+  const routePage = object(findings.mta_route_page, `${priorPath}.source_findings.mta_route_page`);
+  const claims = object(prior.claim_results, `${priorPath}.claim_results`);
+  const outcome = object(prior.outcome, `${priorPath}.outcome`);
+  const actions = object(prior.canonical_actions, `${priorPath}.canonical_actions`);
+  const attempts = Array.isArray(prior.acquisition_attempts) ? prior.acquisition_attempts.map((attempt, index) =>
+    object(attempt, `${priorPath}.acquisition_attempts[${index}]`)) : [];
+  const retrievals = attempts.flatMap((attempt, index) => Array.isArray(attempt.retrievals)
+    ? attempt.retrievals.map((retrieval, retrievalIndex) =>
+      object(retrieval, `${priorPath}.acquisition_attempts[${index}].retrievals[${retrievalIndex}]`))
+    : []);
+  const priorOnlyRetrieval = retrievals.find((retrieval) =>
+    retrieval.id === FR_CAPODANNO_ACQUIRED_CHECKS.priorOnlyRetrieval.id);
+  if (candidate.candidate_id !== row.candidate_id || candidate.route_id !== "S52" ||
+      candidate.normalized_route_id !== "S52" || candidate.identity !== "S52|bus_lane|2010-11-10|day" ||
+      candidate.implementation_date !== "2010-11-10" || candidate.corridor !== "Father Capodanno Bl" ||
+      findings.candidate_named_lane_record_count !== 0 ||
+      findings.exact_project_route_statement_found !== false || findings.exact_project_route_source_id !== null ||
+      findings.official_lane_matching_record_count !== 42 ||
+      !Array.isArray(findings.official_lane_matching_segment_ids) ||
+      new Set(findings.official_lane_matching_segment_ids).size !== 42 ||
+      stableJson(findings.official_lane_named_routes as JsonValue) !== stableJson([]) ||
+      stableJson(findings.official_route_named_segment_ids as JsonValue) !== stableJson([]) ||
+      typeof findings.historical_review_rationale !== "string" ||
+      !findings.historical_review_rationale.includes("18 candidate-date lane piece(s)") ||
+      !findings.historical_review_rationale.includes("2 parsed opening phases") ||
+      routePage.content_sha256 !== FR_CAPODANNO_PRIOR.routePageSha256 ||
+      routePage.exact_route_title_found !== true || routePage.current_corridor_token_found !== true ||
+      routePage.retrieval_status !== "acquired" || typeof routePage.temporal_limitation !== "string" ||
+      !routePage.temporal_limitation.includes("captured in 2026") ||
+      claims.candidate_segment_ids_pinned !== false || claims.date_and_phase_proved !== false ||
+      claims.exact_route_treatment_binding_proved !== false || claims.exact_segment_binding_proved !== false ||
+      claims.explicit_phase_identity_proved !== false || claims.operational_occurrence_identity_proved !== false ||
+      !Array.isArray(claims.exact_route_binding_evidence) || claims.exact_route_binding_evidence.length !== 0 ||
+      !Array.isArray(claims.exact_segment_ids) || claims.exact_segment_ids.length !== 0 ||
+      outcome.exclusive_primary_disposition !== "completed_search_route_linkage_unresolved" ||
+      outcome.registry_projection_excluded !== true || outcome.still_unresolved !== true ||
+      outcome.study_projection_eligible !== false || actions.operational_occurrence_added_or_updated !== false ||
+      !Array.isArray(actions.canonical_links_added) || actions.canonical_links_added.length !== 0 ||
+      !priorOnlyRetrieval || priorOnlyRetrieval.sha256 !== FR_CAPODANNO_ACQUIRED_CHECKS.priorOnlyRetrieval.sha256 ||
+      priorOnlyRetrieval.status !== "acquired") fail();
+}
+
 export function validateBindingReceiptDrafts(
   rows: readonly BusLaneIdentityRow[],
   packets: readonly BusLaneResearchPacket[],
@@ -2664,6 +3041,12 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
       throw new Error(`${receiptPath}: East Gun Hill Road packet does not preserve exact ledger evidence parity`);
     }
+    const frCapodannoLedgerTarget = isFrCapodannoLedgerTarget(row);
+    if (frCapodannoLedgerTarget &&
+        (stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups) ||
+        stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
+      throw new Error(`${receiptPath}: Father Capodanno Boulevard packet does not preserve exact ledger evidence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -2704,6 +3087,10 @@ export function validateBindingReceiptDrafts(
     }
     if (eastGunHillLedgerTarget) {
       validateEastGunHillBindingReceipt(receipt, receiptPath, row, packet, rootDir, acquiredSourceRecords);
+      continue;
+    }
+    if (frCapodannoLedgerTarget) {
+      validateFrCapodannoBindingReceipt(receipt, receiptPath, row, packet, rootDir);
       continue;
     }
     const priorPointer = object(receipt.prior_receipt, `${receiptPath}.prior_receipt`);
