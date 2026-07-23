@@ -462,6 +462,34 @@ function isExactMalcolmXPacketTarget(
     stableJson(packet.unresolved_bindings) === stableJson(["attribution", "traversal"]);
 }
 
+function isExactNassauAvenuePacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const group = packet.what_is_known.target_groups[0];
+  if (!group) return false;
+  const matches = group.feature_matches;
+  return (row.gtfs_route_id === "B43" || row.gtfs_route_id === "B48") &&
+    row.implementation_date === "2018-08-24" &&
+    packet.missing_binding === "traversal" &&
+    packet.what_is_known.target_groups.length === 1 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    group.lane_group_id === "BK|NASSAU AVENUE" &&
+    group.geometry_scope === "coextensive_with_lane_group" &&
+    stableJson(matches.map((match) => [
+      match.feature_key,
+      match.feature_id,
+      match.direction,
+      match.matched_date,
+      match.matched_token_literal,
+      match.open_dates_literal,
+      match.sbs_routes,
+    ])) === stableJson([
+      ["dot-lane-feature:39ed47bda006298451c0d8f5", "0035256", "WB", "2018-08-24", "8/24/2018", "8/24/2018", []],
+    ]) &&
+    stableJson(packet.unresolved_bindings) === stableJson(["attribution", "traversal"]);
+}
+
 function isoReviewTime(value: unknown, path: string): string {
   const timestamp = nonempty(value, path);
   const day = /^\d{4}-\d{2}-\d{2}$/u.test(timestamp);
@@ -1262,6 +1290,13 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
       throw new Error(`${receiptPath}: Malcolm X packet target does not preserve exact ledger occurrence parity`);
     }
+    const nassauAvenueLedgerTarget = row.implementation_date === "2018-08-24" &&
+      row.onset_evidence.target_groups.length === 1 &&
+      row.onset_evidence.target_groups[0]?.lane_group_id === "BK|NASSAU AVENUE";
+    if (nassauAvenueLedgerTarget &&
+        stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
+      throw new Error(`${receiptPath}: Nassau Avenue packet target does not preserve exact ledger occurrence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -1401,6 +1436,9 @@ export function validateBindingReceiptDrafts(
     }
     if (malcolmXLedgerTarget && receipt.supplemental_search === undefined) {
       throw new Error(`${receiptPath}: Malcolm X review requires candidate-exact supplemental search`);
+    }
+    if (nassauAvenueLedgerTarget && receipt.supplemental_search === undefined) {
+      throw new Error(`${receiptPath}: Nassau Avenue review requires candidate-exact supplemental search`);
     }
     if (receipt.supplemental_search !== undefined) {
       const supplemental = object(receipt.supplemental_search, `${receiptPath}.supplemental_search`);
@@ -2478,6 +2516,102 @@ export function validateBindingReceiptDrafts(
             !hasExactQuery("official_public_board_committee") ||
             receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
           throw new Error(`${receiptPath}: Malcolm X B46+ nonterminal project-context contract does not match the exact candidate`);
+        }
+      }
+      if (nassauAvenueLedgerTarget) {
+        const correctionCount = supplemental.finding_corrections.length;
+        const contextCount = Array.isArray(supplemental.positive_context_findings)
+          ? supplemental.positive_context_findings.length
+          : 0;
+        const supplementalQueries = supplemental.exact_queries.map((value, index) =>
+          object(value, `${receiptPath}.supplemental_search.exact_queries[${index}]`));
+        const hasExactQuery = (category: string) => supplementalQueries.some((query) => {
+          if (query.category !== category) return false;
+          const literal = String(query.query).toUpperCase();
+          const tokens = literal.split(/[^A-Z0-9+]+/u).filter(Boolean);
+          return [row.gtfs_route_id, "NASSAU", "AVENUE"].every((token) => tokens.includes(token)) &&
+            literal.includes("2018-08-24");
+        });
+        const sourceFindings = object(prior.source_findings,
+          `${receiptPath}.prior.source_findings`);
+        const priorOutcome = object(prior.outcome, `${receiptPath}.prior.outcome`);
+        const priorClaims = object(prior.claim_results, `${receiptPath}.prior.claim_results`);
+        const canonicalActions = object(prior.canonical_actions,
+          `${receiptPath}.prior.canonical_actions`);
+        const stagedSourceContract = [
+          {
+            sourceId: "bedford_nassau_aves_june2018",
+            sourceUrl: "https://www.nyc.gov/html/dot/downloads/pdf/bedford-nassau-aves-june2018-2.pdf",
+            documentDate: "2018-06-18",
+            requiredWindows: [
+              ["B62", "BUS", "STOPS", "CLOSE", "PROXIMITY"],
+              ["CONSOLIDATE", "B62", "STOPS", "NASSAU", "BUS-ONLY", "MANHATTAN"],
+              ["PAINT", "EXISTING", "BUS", "ONLY", "LANE", "NASSAU", "LEONARD", "MANHATTAN", "RED"],
+            ],
+          },
+          {
+            sourceId: "bedford_nassau_nov2018",
+            sourceUrl: "https://www.nyc.gov/html/dot/downloads/pdf/bedford-nassau-nov2018.pdf",
+            documentDate: "2018-11-19",
+            requiredWindows: [
+              ["BUS", "REROUTE", "JULY", "1ST"],
+              ["MAJORITY", "MARKINGS", "FINISHED", "AUGUST", "24TH"],
+            ],
+          },
+        ];
+        const stagedSourcesValid = stagedSourceContract.every((expected) => {
+          const acquiredSource = acquiredSourceRecords.find((source) =>
+            source.source_id === expected.sourceId && source.url === expected.sourceUrl &&
+            source.retrieval_status === "acquired");
+          const sourceSha256 = String(acquiredSource?.content_sha256 ?? "");
+          const sourceDir = resolve(rootDir, "raw", "sources", expected.sourceId);
+          const metadataPath = join(sourceDir, "metadata.json");
+          const artifactPath = join(sourceDir, "source.pdf");
+          const blocksPath = join(sourceDir, "blocks.jsonl");
+          if (![metadataPath, artifactPath, blocksPath].every(existsSync)) return false;
+          const metadata = object(JSON.parse(readFileSync(metadataPath, "utf8")), metadataPath);
+          const metadataSha = String(metadata.sha256 ?? "").replace(/^sha256:/u, "");
+          const blocks = readFileSync(blocksPath, "utf8").split(/\r?\n/u).filter(Boolean)
+            .map((line) => object(JSON.parse(line), blocksPath));
+          const blockTokenSets = blocks.map((block) => new Set(String(block.raw_text ?? "").toUpperCase()
+            .split(/[^A-Z0-9+-]+/u).filter(Boolean)));
+          const sourceMentionsCandidate = blockTokenSets.some((tokens) => tokens.has(row.gtfs_route_id));
+          const hasRequiredWindows = expected.requiredWindows.every((requiredTokens) => {
+            const union = new Set<string>();
+            for (const tokens of blockTokenSets) for (const token of tokens) union.add(token);
+            return requiredTokens.every((token) => union.has(token));
+          });
+          return metadata.sourceId === expected.sourceId &&
+            (metadata.sourceUrl === expected.sourceUrl || metadata.finalUrl === expected.sourceUrl) &&
+            metadata.documentDate === expected.documentDate &&
+            metadata.sourceGroup === "bus_priority_document" &&
+            /^[a-f0-9]{64}$/u.test(sourceSha256) &&
+            metadataSha === sourceSha256 && hash(readFileSync(artifactPath)) === sourceSha256 &&
+            supplementalUrls.includes(expected.sourceUrl) &&
+            acquiredRetrievals.some((retrieval) => retrieval.url === expected.sourceUrl &&
+              retrieval.sha256 === sourceSha256) &&
+            !sourceMentionsCandidate && hasRequiredWindows;
+        });
+        if (!isExactNassauAvenuePacketTarget(packet, row) ||
+            receipt.missing_binding !== "traversal" ||
+            stableJson(receiptUnresolved) !== stableJson(["attribution", "traversal"]) ||
+            correctionCount !== 0 || contextCount !== 0 ||
+            sourceFindings.exact_project_route_statement_found !== false ||
+            priorOutcome.still_unresolved !== true ||
+            priorClaims.exact_route_treatment_binding_proved !== false ||
+            priorClaims.exact_segment_binding_proved !== false ||
+            priorClaims.date_and_phase_proved !== false ||
+            priorClaims.operational_occurrence_identity_proved !== false ||
+            !Array.isArray(priorClaims.exact_route_binding_evidence) ||
+            priorClaims.exact_route_binding_evidence.length !== 0 ||
+            canonicalActions.operational_occurrence_added_or_updated !== false ||
+            !Array.isArray(canonicalActions.canonical_links_added) ||
+            canonicalActions.canonical_links_added.length !== 0 ||
+            !hasExactQuery("official_nyc_dot_lane_project") ||
+            !hasExactQuery("official_public_board_committee") ||
+            !stagedSourcesValid || receipt.occurrence_context !== undefined ||
+            receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
+          throw new Error(`${receiptPath}: Nassau Avenue B43/B48 pure-absence review contract does not match the exact candidate`);
         }
       }
     }

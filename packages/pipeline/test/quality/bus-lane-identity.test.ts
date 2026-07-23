@@ -4471,4 +4471,238 @@ describe("bus-lane identity exact-date targeting", () => {
       rmSync(rootDir, { recursive: true, force: true });
     }
   });
+
+  it("keeps B43 and B48 separate from the exact B62 Nassau Avenue lane project", () => {
+    const date = "2018-08-24";
+    for (const routeId of ["B43", "B48"]) {
+      const entry = candidate(`nassau-${routeId.toLowerCase()}`, routeId, date);
+      const [baseRow] = buildBusLaneIdentityLedger({
+        bridgeCandidates: [entry.bridge],
+        trackerCandidates: [entry.tracker],
+        routeAnchors: [anchor(routeId)],
+        dossierRows: [dossier({
+          candidateId: entry.bridge.candidate_id,
+          routeId,
+          date,
+          laneGroupId: null,
+          pathSource: "unavailable",
+          pathIdentity: null,
+          reason: "historical_schedule_unavailable_pre_2023",
+        })],
+        dossierArtifact: "dossier.jsonl",
+        laneFeatures: [lane({
+          feature_id: "0035256",
+          lane_group_id: "BK|NASSAU AVENUE",
+          opened: "8/24/2018",
+          direction: "WB",
+          attributes: { open_dates: "8/24/2018", segmentid: "0035256" },
+        })],
+        laneSnapshotId: "lanes",
+        laneSourceId: "lane_source",
+        gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+      });
+      const rootDir = mkdtempSync(join(tmpdir(), `bus-lane-nassau-${routeId.toLowerCase()}-`));
+      const receiptDir = join(rootDir, "receipts");
+      const acquiredDir = join(rootDir,
+        "data/quality/relationship-integrity/bus-lane-acquisition/supplemental/nassau-fixture");
+      const juneSourceId = "bedford_nassau_aves_june2018";
+      const juneUrl = "https://www.nyc.gov/html/dot/downloads/pdf/bedford-nassau-aves-june2018-2.pdf";
+      const novemberSourceId = "bedford_nassau_nov2018";
+      const novemberUrl = "https://www.nyc.gov/html/dot/downloads/pdf/bedford-nassau-nov2018.pdf";
+      const juneBytes = Buffer.from("fixture Bedford Nassau June 2018 PDF");
+      const novemberBytes = Buffer.from("fixture Bedford Nassau November 2018 PDF");
+      const juneHash = createHash("sha256").update(juneBytes).digest("hex");
+      const novemberHash = createHash("sha256").update(novemberBytes).digest("hex");
+      const juneBlocks = [
+        "2 B62 bus stops in close proximity",
+        "Consolidate B62 stops at Lorimer St and Manhattan Ave to single stop on Nassau Ave, with bus-only left turn",
+        "Paint existing bus only lane of Nassau Ave between Leonard St and Manhattan Ave red",
+      ].map((rawText, index) => ({
+        source_id: juneSourceId,
+        block_id: `p014_p000${index + 1}`,
+        page_number: 14 + index,
+        raw_text: rawText,
+      }));
+      const novemberBlocks = [
+        "Bus reroute occurred on July 1st",
+        "Majority of markings were finished on August 24th",
+      ].map((rawText, index) => ({
+        source_id: novemberSourceId,
+        block_id: `p007_p000${index + 1}`,
+        page_number: 7,
+        raw_text: rawText,
+      }));
+      const stageSource = (sourceId: string, sourceUrl: string, documentDate: string,
+        bytes: Buffer, contentHash: string, blocks: typeof juneBlocks) => {
+        const sourceDir = join(rootDir, "raw", "sources", sourceId);
+        mkdirSync(sourceDir, { recursive: true });
+        writeFileSync(join(sourceDir, "source.pdf"), bytes);
+        writeFileSync(join(sourceDir, "metadata.json"), JSON.stringify({
+          sourceId, sourceUrl, finalUrl: sourceUrl, documentDate,
+          sourceGroup: "bus_priority_document", sha256: `sha256:${contentHash}`,
+        }));
+        writeFileSync(join(sourceDir, "blocks.jsonl"),
+          `${blocks.map((block) => JSON.stringify(block)).join("\n")}\n`);
+      };
+      mkdirSync(receiptDir, { recursive: true });
+      mkdirSync(acquiredDir, { recursive: true });
+      stageSource(juneSourceId, juneUrl, "2018-06-18", juneBytes, juneHash, juneBlocks);
+      stageSource(novemberSourceId, novemberUrl, "2018-11-19", novemberBytes, novemberHash, novemberBlocks);
+      writeFileSync(join(acquiredDir, "acquired-source-checks.json"), JSON.stringify({ sources: [
+        { source_id: juneSourceId, url: juneUrl, content_sha256: juneHash, retrieval_status: "acquired" },
+        { source_id: novemberSourceId, url: novemberUrl,
+          content_sha256: novemberHash, retrieval_status: "acquired" },
+      ] }));
+      const attempts = [
+        { category: "official_nyc_dot_lane_project",
+          query: `site:nyc.gov ${routeId} Nassau Avenue 2018-08-24 lane project`,
+          query_status: "performed_2026-07-15", urls_checked: [juneUrl],
+          retrievals: [{ id: "june", retrieved_on: "2026-07-15", sha256: juneHash, status: "acquired" }] },
+        { category: "official_public_board_committee",
+          query: `site:nyc.gov ${routeId} Nassau Avenue 2018-08-24 public board`,
+          query_status: "performed_2026-07-15", urls_checked: [novemberUrl],
+          retrievals: [{ id: "november", retrieved_on: "2026-07-15",
+            sha256: novemberHash, status: "acquired" }] },
+      ];
+      const prior = {
+        receipt_id: `prior-nassau-${routeId.toLowerCase()}`,
+        researched_on: "2026-07-15",
+        source_findings: { exact_project_route_statement_found: false },
+        outcome: { still_unresolved: true },
+        canonical_actions: { canonical_links_added: [], operational_occurrence_added_or_updated: false },
+        claim_results: {
+          date_and_phase_proved: false,
+          exact_route_treatment_binding_proved: false,
+          exact_segment_binding_proved: false,
+          operational_occurrence_identity_proved: false,
+          exact_route_binding_evidence: [],
+        },
+        acquisition_attempts: attempts,
+      };
+      const priorLine = stableJson(prior as unknown as JsonValue);
+      writeFileSync(join(rootDir, "prior.jsonl"), `${priorLine}\n`);
+      const row = { ...baseRow!, prior_acquisition_receipt: {
+        receipt_id: prior.receipt_id,
+        artifact: "prior.jsonl",
+        row_sha256: createHash("sha256").update(priorLine).digest("hex"),
+        disposition: "completed_search_route_linkage_unresolved",
+        next_action: "Retain pure absence.",
+      } };
+      const packet = buildBusLaneResearchPackets([row]).packets[0]!;
+      const targetFor = (candidatePacket = packet) => {
+        const groups = candidatePacket.what_is_known.target_groups;
+        const matches = groups.flatMap((group) => group.feature_matches);
+        return {
+          directions: [...new Set(matches.map((match) => match.direction))].sort(),
+          feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+          feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+          feature_row_count: matches.length,
+          feature_rows: matches.map((match) => ({
+            feature_key: match.feature_key, feature_id: match.feature_id, direction: match.direction,
+          })),
+          geometry_scopes: [...new Set(groups.map((group) => group.geometry_scope))].sort(),
+          lane_group_ids: groups.map((group) => group.lane_group_id),
+          matched_date: date,
+          named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+          open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+        };
+      };
+      const supplemental = {
+        domains: ["www.nyc.gov"],
+        exact_queries: [
+          { category: "official_nyc_dot_lane_project",
+            query: `site:nyc.gov ${routeId} Nassau Avenue 2018-08-24 lane project`,
+            query_status: "performed_2026-07-23_reviewed_results" },
+          { category: "official_public_board_committee",
+            query: `site:nyc.gov ${routeId} Nassau Avenue 2018-08-24 public board`,
+            query_status: "performed_2026-07-23_reviewed_results" },
+        ],
+        finding_corrections: [],
+        positive_context_findings: [],
+        operator: "fixture-reviewer",
+        retrievals: [
+          { category: "official_nyc_dot_lane_project", retrieved_on: "2026-07-23",
+            sha256: juneHash, status: "acquired", url: juneUrl },
+          { category: "official_public_board_committee", retrieved_on: "2026-07-23",
+            sha256: novemberHash, status: "acquired", url: novemberUrl },
+        ],
+        searched_at: "2026-07-23T10:55:00Z",
+        urls_inspected: [juneUrl, novemberUrl].sort(),
+      };
+      const receipt = {
+        schema_version: 1, receipt_id: `binding-nassau-${routeId.toLowerCase()}`,
+        receipt_kind: "binding_absent_after_search",
+        candidate_id: row.candidate_id, candidate_fingerprint: row.candidate_fingerprint,
+        gtfs_route_id: routeId, implementation_date: date, gap_ids: [row.ledger_id], searched_at: "2026-07-15",
+        operator: "fixture-reviewer", candidate_urls: [], disposition: "binding_absent_after_search",
+        missing_binding: "traversal", unresolved_bindings: ["attribution", "traversal"], target: targetFor(),
+        prior_receipt: { receipt_id: prior.receipt_id, artifact: "prior.jsonl",
+          row_sha256: row.prior_acquisition_receipt.row_sha256 },
+        search: {
+          exact_queries: attempts.map(({ category, query, query_status }) => ({ category, query, query_status })),
+          domains: ["www.nyc.gov"],
+          urls_inspected: [juneUrl, novemberUrl].sort(),
+          retrievals: attempts.flatMap((attempt) => attempt.retrievals.map((retrieval) =>
+            ({ category: attempt.category, ...retrieval }))),
+          disposition: "binding_absent_after_search",
+        },
+        supplemental_search: supplemental,
+        authorizes_study: false, authorizes_cross_product: false,
+      };
+      const validate = (draft: Record<string, unknown>, candidateRow = row, candidatePacket = packet) => {
+        writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+        return () => validateBindingReceiptDrafts([candidateRow], [candidatePacket], receiptDir, rootDir);
+      };
+      const drift = (changes: Record<string, unknown>) => {
+        const targetGroups = packet.what_is_known.target_groups.map((group) => ({
+          ...group, feature_matches: group.feature_matches.map((match) => ({ ...match, ...changes })),
+        }));
+        const candidatePacket = { ...packet, what_is_known: { ...packet.what_is_known, target_groups: targetGroups } };
+        const candidateRow = { ...row, onset_evidence: { ...row.onset_evidence, target_groups: targetGroups } };
+        return { candidatePacket, candidateRow, draft: { ...receipt, target: targetFor(candidatePacket) } };
+      };
+      try {
+        expect(packet.missing_binding).toBe("traversal");
+        expect(packet.unresolved_bindings).toEqual(["attribution", "traversal"]);
+        expect(targetFor()).toMatchObject({
+          feature_row_count: 1, feature_ids: ["0035256"], directions: ["WB"],
+          named_sbs_routes: [], open_dates_literals: ["8/24/2018"],
+        });
+        expect(validate(receipt)).not.toThrow();
+        for (const altered of [
+          drift({ feature_key: "dot-lane-feature:drift" }),
+          drift({ feature_id: "9999999" }),
+          drift({ direction: "EB" }),
+          drift({ matched_date: "2018-08-25" }),
+          drift({ matched_token_literal: "08/24/2018", open_dates_literal: "08/24/2018" }),
+          drift({ sbs_routes: ["B62"] }),
+        ]) {
+          expect(validate(altered.draft, altered.candidateRow, altered.candidatePacket))
+            .toThrow("Nassau Avenue B43/B48 pure-absence review contract does not match the exact candidate");
+        }
+        expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+          exact_queries: supplemental.exact_queries.map((query) => ({ ...query,
+            query: query.query.replace("2018-08-24", "2018-08-25"),
+          })) } })).toThrow("Nassau Avenue B43/B48 pure-absence review contract does not match the exact candidate");
+        expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+          positive_context_findings: [{}] } })).toThrow();
+        expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+          finding_corrections: [{}] } })).toThrow();
+        expect(validate({ ...receipt,
+          occurrence_context: { occurrence_id: "occurrence_fake", accepted_decision_id: "decision_fake" } }))
+          .toThrow("occurrence context is not bound to an accepted occurrence decision");
+        expect(validate({ ...receipt, authorizes_study: true }))
+          .toThrow("binding receipt search preservation or authorization guard failed");
+        const juneBlocksPath = join(rootDir, "raw", "sources", juneSourceId, "blocks.jsonl");
+        writeFileSync(juneBlocksPath,
+          `${juneBlocks.map((block, index) => JSON.stringify(index === 0
+            ? { ...block, raw_text: `${routeId} bus stops in close proximity` }
+            : block)).join("\n")}\n`);
+        expect(validate(receipt))
+          .toThrow("Nassau Avenue B43/B48 pure-absence review contract does not match the exact candidate");
+      } finally {
+        rmSync(rootDir, { recursive: true, force: true });
+      }
+    }
+  });
 });
