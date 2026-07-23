@@ -1,0 +1,90 @@
+{
+  "acceptance_id": "bus-lane-package-owner-acceptance:target-row-route-variant-v1",
+  "accepted_at": "2026-07-23T22:25:13Z",
+  "accepted_by": "codex-owner-delegate",
+  "authorizes_cross_product": false,
+  "authorizes_occurrence": false,
+  "authorizes_study": false,
+  "candidate_count": 16,
+  "candidate_join_count_reproduced": 16,
+  "decision_ids": [
+    "bus-lane-identity-decision:19d6bd6f636130c9bcbcc1dd",
+    "bus-lane-identity-decision:1c5dc4445a538b26ac9fa4b6",
+    "bus-lane-identity-decision:2362216f05cb446b495f4930",
+    "bus-lane-identity-decision:281a95346a50353a333bc7a8",
+    "bus-lane-identity-decision:28aac48154eb623aeecb4af6",
+    "bus-lane-identity-decision:3d626fa2874955ad980ce977",
+    "bus-lane-identity-decision:75239ec1dd117a0f6974e1f0",
+    "bus-lane-identity-decision:8864ac3141458f23a6d23011",
+    "bus-lane-identity-decision:9699c4f4ee969b7c519c96c9",
+    "bus-lane-identity-decision:a46d9fb01f0d46e7c5dafee3",
+    "bus-lane-identity-decision:b76c228d0d60d6741edb1c2d",
+    "bus-lane-identity-decision:c29aaeafe0a82524b17a21a2",
+    "bus-lane-identity-decision:c74a882d4588c289ad1e6eaa",
+    "bus-lane-identity-decision:c87f95d9dbf35562c156ad32",
+    "bus-lane-identity-decision:c8e02c66883608a0cdfe3d38",
+    "bus-lane-identity-decision:de6a6be1be2ecf765fa331c1"
+  ],
+  "excluded_occurrence_potential_batch_id": "bus-lane-multi-corridor-2019-09-16-part-01",
+  "frozen_file_count_reproduced": 36,
+  "independent_evidence_review": "approve",
+  "independent_validator_review": "approve",
+  "materialization": {
+    "decided_after": 315,
+    "decided_before": 299,
+    "deterministic_replay_after_sha256": "21b8ff2f360036b8b20f5c99a5582c6e34585b4196d19d75b6ad5f1e2086d853",
+    "deterministic_replay_before_sha256": "21b8ff2f360036b8b20f5c99a5582c6e34585b4196d19d75b6ad5f1e2086d853",
+    "deterministic_replay_byte_identical": true,
+    "ledger_denominator": 321,
+    "open_after": 6,
+    "open_before": 22
+  },
+  "package_artifact": "data/quality/operational-reference/bus-lane-identity-packages/target-row-route-variant-v1.json",
+  "package_sha256": "e830aafbf0bdfaaabbd9ae52ac5fa733985494b7cc19f99df1722ef32b251660",
+  "predecision_artifact": "data/quality/operational-reference/bus-lane-identity-packages/target-row-route-variant-v1-acceptance.json",
+  "predecision_sha256": "f4afe0e356367351f0ff1a1149ee9cae9a84af7ebb1fdf1bc51dd470ad37eff9",
+  "receipt_ids": [
+    "bus-lane-binding-search:19d6bd6f636130c9bcbcc1dd",
+    "bus-lane-binding-search:1c5dc4445a538b26ac9fa4b6",
+    "bus-lane-binding-search:2362216f05cb446b495f4930",
+    "bus-lane-binding-search:281a95346a50353a333bc7a8",
+    "bus-lane-binding-search:28aac48154eb623aeecb4af6",
+    "bus-lane-binding-search:3d626fa2874955ad980ce977",
+    "bus-lane-binding-search:75239ec1dd117a0f6974e1f0",
+    "bus-lane-binding-search:8864ac3141458f23a6d23011",
+    "bus-lane-binding-search:9699c4f4ee969b7c519c96c9",
+    "bus-lane-binding-search:a46d9fb01f0d46e7c5dafee3",
+    "bus-lane-binding-search:b76c228d0d60d6741edb1c2d",
+    "bus-lane-binding-search:c29aaeafe0a82524b17a21a2",
+    "bus-lane-binding-search:c74a882d4588c289ad1e6eaa",
+    "bus-lane-binding-search:c87f95d9dbf35562c156ad32",
+    "bus-lane-binding-search:c8e02c66883608a0cdfe3d38",
+    "bus-lane-binding-search:de6a6be1be2ecf765fa331c1"
+  ],
+  "schema_version": 1,
+  "verdict_distribution": {
+    "binding_absent_after_search": 16
+  },
+  "verification": {
+    "focused_test": {
+      "assertions": 1970,
+      "fail": 0,
+      "pass": 34
+    },
+    "full_suite": {
+      "pinned_prepackage_checkpoint": {
+        "error": 1,
+        "fail": 9,
+        "pass": 1647,
+        "skip": 1
+      },
+      "status": "deferred_until_both_final_e3_packages_close"
+    },
+    "typecheck": "pass",
+    "validate": {
+      "issues": 0,
+      "release_contract_issues": 0,
+      "warnings": 3
+    }
+  }
+}

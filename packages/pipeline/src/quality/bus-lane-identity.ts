@@ -1504,6 +1504,28 @@ const MULTI_CORRIDOR_ABSENCE_PACKAGE_CANDIDATE_IDS = new Set([
   "study-event-v2:c9d838bf8f0c536de5bcd8ea",
   "study-event-v2:a0587402538edde0179fa26e",
 ]);
+const TARGET_ROW_ROUTE_VARIANT_PACKAGE_ARTIFACT =
+  "data/quality/operational-reference/bus-lane-identity-packages/target-row-route-variant-v1.json";
+const TARGET_ROW_ROUTE_VARIANT_PACKAGE_SHA256 =
+  "e830aafbf0bdfaaabbd9ae52ac5fa733985494b7cc19f99df1722ef32b251660";
+const TARGET_ROW_ROUTE_VARIANT_PACKAGE_CANDIDATE_IDS = new Set([
+  "study-event-v2:7174383592202aa47780a0e3",
+  "study-event-v2:794f5ac6b4101f882d246ce4",
+  "study-event-v2:d6924fa45cd3748c1515c1b3",
+  "study-event-v2:1beacfade6ff9eb087f32cfa",
+  "study-event-v2:2a6f3a01c4c04d271848eb22",
+  "study-event-v2:d3141a847218ae4631863086",
+  "study-event-v2:0a47645a8678230dafc2b998",
+  "study-event-v2:c973280f3a11b94dc81327e9",
+  "study-event-v2:59b7bf7b9d561923dd7972ee",
+  "study-event-v2:efd0585cf55c6717727d0867",
+  "study-event-v2:79f3c061db4ed9ab2edcb657",
+  "study-event-v2:1487a86f8b875536010f08f7",
+  "study-event-v2:319c777098c8f55d6f179794",
+  "study-event-v2:93ee917ce0c38bc1a4d5d67d",
+  "study-event-v2:5a31e938dbbf2847b2ad65db",
+  "study-event-v2:8bb8e6001a05b996c1f5e22e",
+]);
 
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
@@ -2056,6 +2078,10 @@ function isPureTargetAbsencePackageTarget(row: BusLaneIdentityRow): boolean {
 
 function isMultiCorridorAbsencePackageTarget(row: BusLaneIdentityRow): boolean {
   return MULTI_CORRIDOR_ABSENCE_PACKAGE_CANDIDATE_IDS.has(row.candidate_id);
+}
+
+function isTargetRowRouteVariantPackageTarget(row: BusLaneIdentityRow): boolean {
+  return TARGET_ROW_ROUTE_VARIANT_PACKAGE_CANDIDATE_IDS.has(row.candidate_id);
 }
 
 function isExactMadisonAvenuePacketTarget(
@@ -4304,6 +4330,7 @@ interface PureAbsencePackageSpec {
   candidateIds: ReadonlySet<string>;
   contractKind: string;
   count: number;
+  dossierMode: "zero_target" | "ambiguous_target";
   exactError: string;
   operator: string;
   packageId: string;
@@ -4315,6 +4342,7 @@ const PURE_TARGET_ABSENCE_PACKAGE_SPEC: PureAbsencePackageSpec = {
   candidateIds: PURE_TARGET_ABSENCE_PACKAGE_CANDIDATE_IDS,
   contractKind: "pure_nonauthorizing_absence",
   count: 25,
+  dossierMode: "zero_target",
   exactError: "pure-target-absence package contract does not match the exact candidate",
   operator: "codex-plan039-pure-target-absence-package",
   packageId: "bus-lane-pure-target-absence-v1",
@@ -4326,10 +4354,23 @@ const MULTI_CORRIDOR_ABSENCE_PACKAGE_SPEC: PureAbsencePackageSpec = {
   candidateIds: MULTI_CORRIDOR_ABSENCE_PACKAGE_CANDIDATE_IDS,
   contractKind: "multi_corridor_nonauthorizing_absence",
   count: 40,
+  dossierMode: "zero_target",
   exactError: "multi-corridor-absence package contract does not match the exact candidate",
   operator: "codex-plan039-multi-corridor-absence-package",
   packageId: "bus-lane-multi-corridor-absence-v1",
   packageSha256: MULTI_CORRIDOR_ABSENCE_PACKAGE_SHA256,
+};
+
+const TARGET_ROW_ROUTE_VARIANT_PACKAGE_SPEC: PureAbsencePackageSpec = {
+  artifact: TARGET_ROW_ROUTE_VARIANT_PACKAGE_ARTIFACT,
+  candidateIds: TARGET_ROW_ROUTE_VARIANT_PACKAGE_CANDIDATE_IDS,
+  contractKind: "target_row_route_variant_nonauthorizing_absence",
+  count: 16,
+  dossierMode: "ambiguous_target",
+  exactError: "target-row-route-variant package contract does not match the exact candidate",
+  operator: "codex-plan039-target-row-route-variant-package",
+  packageId: "bus-lane-target-row-route-variant-v1",
+  packageSha256: TARGET_ROW_ROUTE_VARIANT_PACKAGE_SHA256,
 };
 
 function pureAbsencePackageContract(
@@ -4376,6 +4417,14 @@ function buildPureAbsenceBindingReceiptDraft(
   const targetGroups = packet.what_is_known.target_groups;
   const dossierRefs = packet.what_is_known.dossier_refs;
   const features = targetGroups.flatMap((group) => group.feature_matches);
+  const targetDossierRefs = dossierRefs.filter((ref) => ref.candidate_target_match);
+  const expectedMissingBinding = spec.dossierMode === "zero_target"
+    ? "feature_extent"
+    : nonempty(contract.missing_binding, "absence contract.missing_binding");
+  const expectedUnresolvedBindings = spec.dossierMode === "zero_target"
+    ? ["attribution", "direction", "feature_extent", "phase", "traversal"]
+    : stringArray(contract.unresolved_bindings,
+      "absence contract.unresolved_bindings", false);
   const priorPointer = packet.what_is_known.prior_acquisition_receipt ?? fail();
   const priorArtifact = nonempty(contract.prior_artifact, "pure absence contract.prior_artifact");
   const priorReceiptId = nonempty(contract.prior_receipt_id,
@@ -4404,10 +4453,10 @@ function buildPureAbsenceBindingReceiptDraft(
       stableJson(row.onset_evidence.target_groups),
     packet_dossier_refs:
       stableJson(packet.what_is_known.dossier_refs) === stableJson(row.dossier_refs),
-    missing_binding: packet.missing_binding === "feature_extent",
+    missing_binding: packet.missing_binding === expectedMissingBinding,
     unresolved_bindings:
       stableJson(packet.unresolved_bindings) ===
-      stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"]),
+      stableJson(expectedUnresolvedBindings),
   };
   const failedFreezeCheck = Object.entries(freezeChecks).find(([, valid]) => !valid)?.[0];
   if (failedFreezeCheck) {
@@ -4450,11 +4499,42 @@ function buildPureAbsenceBindingReceiptDraft(
   const normalizedCandidate = row.gtfs_route_id.endsWith("+")
     ? row.gtfs_route_id.slice(0, -1)
     : row.gtfs_route_id;
-  const exactCandidateQuery = exactQueries.some((query) => {
+  const exactCandidateQuery = exactQueries.find((query) => {
     if (query.category !== "official_mta_route_project") return false;
     const tokens = query.query.toUpperCase().split(/[^A-Z0-9+]+/u).filter(Boolean);
-    return tokens.includes(row.gtfs_route_id) || tokens.includes(normalizedCandidate);
+    return spec.dossierMode === "ambiguous_target"
+      ? tokens.includes(row.gtfs_route_id)
+      : tokens.includes(row.gtfs_route_id) || tokens.includes(normalizedCandidate);
   });
+  const targetDossierRowsValid = spec.dossierMode === "zero_target"
+    ? contract.dossier_target_count === 0 && targetDossierRefs.length === 0
+    : contract.dossier_target_count === targetDossierRefs.length &&
+      hash(stableJson(targetDossierRefs)) === contract.target_dossier_rows_sha256 &&
+      contract.target_dossier_reason === "partial_lane_alignment_cannot_establish_traversal" &&
+      contract.target_dossier_verdict === "geometry_ambiguous" &&
+      targetDossierRefs.every((ref) =>
+        ref.verdict_class === "geometry_ambiguous" &&
+        ref.reason === "partial_lane_alignment_cannot_establish_traversal" &&
+        ref.path_source === "historical_schedule_timepoint_pattern" &&
+        ref.overlap_miles === 0 && ref.overlap_share === 0 &&
+        ref.stop_coordinate_coverage === 1 && ref.span_stop_ids.length === 0 &&
+        targetGroups.some((group) => group.lane_group_id === ref.lane_group_id));
+  const expectedVariantPeers = row.candidate_id === "study-event-v2:0a47645a8678230dafc2b998"
+    ? [{ candidate_id: "study-event-v2:c973280f3a11b94dc81327e9", route: "BX6+" }]
+    : row.candidate_id === "study-event-v2:c973280f3a11b94dc81327e9"
+      ? [{ candidate_id: "study-event-v2:0a47645a8678230dafc2b998", route: "BX6" }]
+      : [];
+  const ambiguousContextValid = spec.dossierMode === "zero_target" ||
+    (contract.normalized_route === normalizedCandidate &&
+      contract.exact_candidate_route_query === exactCandidateQuery?.query &&
+      stableJson(contract.route_variant_peers as JsonValue) ===
+        stableJson(expectedVariantPeers) &&
+      routePage.current_corridor_token_found ===
+        contract.route_page_current_corridor_token_found &&
+      routePage.temporal_limitation === contract.route_page_temporal_limitation &&
+      hash(nonempty(findings.historical_review_rationale,
+        `${priorPath}.source_findings.historical_review_rationale`)) ===
+        contract.historical_review_rationale_sha256);
   if (candidate.candidate_id !== row.candidate_id || candidate.route_id !== row.gtfs_route_id ||
       candidate.implementation_date !== row.implementation_date ||
       candidate.identity !== `${row.gtfs_route_id}|bus_lane|${row.implementation_date}|day` ||
@@ -4466,8 +4546,7 @@ function buildPureAbsenceBindingReceiptDraft(
       stableJson(contract.named_sbs_routes as JsonValue) !== stableJson(namedSbsRoutes) ||
       namedSbsRoutes.includes(row.gtfs_route_id) || namedSbsRoutes.includes(normalizedCandidate) ||
       contract.dossier_row_count !== dossierRefs.length ||
-      contract.dossier_target_count !== 0 ||
-      dossierRefs.some((ref) => ref.candidate_target_match) ||
+      !targetDossierRowsValid || !ambiguousContextValid ||
       contract.prior_route_supported !== false ||
       contract.prior_disposition !== "completed_search_route_linkage_unresolved" ||
       outcome.exclusive_primary_disposition !== "completed_search_route_linkage_unresolved" ||
@@ -4479,13 +4558,16 @@ function buildPureAbsenceBindingReceiptDraft(
       claims.explicit_phase_identity_proved !== false ||
       claims.operational_occurrence_identity_proved !== false ||
       actions.operational_occurrence_added_or_updated !== false ||
+      stableJson(actions.canonical_links_added as JsonValue) !== stableJson([]) ||
       routePage.content_sha256 !== contract.route_page_sha256 ||
       hash(stableJson(exactRouteEvidence as JsonValue)) !== contract.exact_route_evidence_sha256 ||
       exactRouteEvidence.length !== 0 ||
       !Array.isArray(contract.evidence_sources) || contract.evidence_sources.length !== 0 ||
       !exactCandidateQuery) fail();
 
-  const rationale = `The frozen ${String(contract.corridor_key)} target preserves ${targetGroups.length} lane group(s), ${features.length} ordered feature row(s), ${new Set(features.map((feature) => feature.feature_key)).size} unique feature key(s), ${new Set(features.map((feature) => feature.feature_id)).size} feature ID(s), directions ${directions.join("/")}, and no candidate or SBS-equivalent route named by the target features. The immutable candidate-exact prior acquisition found no authoritative ${row.gtfs_route_id} route-treatment statement for this exact dated target, and proved no exact segment, phase, or operational occurrence. The candidate dossier has ${dossierRefs.length} row(s) and zero exact-target rows, so it proves neither traversal nor exclusion. Attribution, direction, feature extent, phase, and traversal remain unresolved. This is not a no-traversal or wrong-route refutation and authorizes no occurrence, study, or cross-product projection.`;
+  const rationale = spec.dossierMode === "zero_target"
+    ? `The frozen ${String(contract.corridor_key)} target preserves ${targetGroups.length} lane group(s), ${features.length} ordered feature row(s), ${new Set(features.map((feature) => feature.feature_key)).size} unique feature key(s), ${new Set(features.map((feature) => feature.feature_id)).size} feature ID(s), directions ${directions.join("/")}, and no candidate or SBS-equivalent route named by the target features. The immutable candidate-exact prior acquisition found no authoritative ${row.gtfs_route_id} route-treatment statement for this exact dated target, and proved no exact segment, phase, or operational occurrence. The candidate dossier has ${dossierRefs.length} row(s) and zero exact-target rows, so it proves neither traversal nor exclusion. Attribution, direction, feature extent, phase, and traversal remain unresolved. This is not a no-traversal or wrong-route refutation and authorizes no occurrence, study, or cross-product projection.`
+    : `The frozen ${String(contract.corridor_key)} target preserves ${targetGroups.length} lane group(s), ${features.length} ordered feature row(s), ${new Set(features.map((feature) => feature.feature_key)).size} unique feature key(s), ${new Set(features.map((feature) => feature.feature_id)).size} feature ID(s), directions ${directions.join("/")}, and no candidate or SBS-equivalent route named by the target features. The candidate dossier has ${dossierRefs.length} row(s), including ${targetDossierRefs.length} exact-target row(s); every exact-target row is geometry-ambiguous, has zero measured overlap, and expressly cannot establish traversal. The current route page's corridor token is preserved as 2026 context only, under its frozen temporal limitation. The immutable candidate-exact prior acquisition found no authoritative ${row.gtfs_route_id} route-treatment statement and proved no exact segment, phase, or operational occurrence. ${expectedUnresolvedBindings.join(", ")} remain unresolved${expectedVariantPeers.length > 0 ? `, and the ${row.gtfs_route_id}/${expectedVariantPeers[0]?.route} same-date route variants remain separate` : ""}. This is not a no-traversal or wrong-route refutation and authorizes no occurrence, study, or cross-product projection.`;
   const receiptId = `bus-lane-binding-search:${fingerprint({
     package_id: manifest.package_id,
     candidate_id: row.candidate_id,
@@ -4507,8 +4589,8 @@ function buildPureAbsenceBindingReceiptDraft(
     gap_ids: [row.ledger_id],
     gtfs_route_id: row.gtfs_route_id,
     implementation_date: row.implementation_date,
-    missing_binding: "feature_extent",
-    unresolved_bindings: ["attribution", "direction", "feature_extent", "phase", "traversal"],
+    missing_binding: expectedMissingBinding,
+    unresolved_bindings: expectedUnresolvedBindings,
     searched_at: prior.researched_on,
     operator: spec.operator,
     target: {
@@ -4539,6 +4621,32 @@ function buildPureAbsenceBindingReceiptDraft(
       retrievals,
       disposition: "binding_absent_after_search",
     },
+    ...(spec.dossierMode === "ambiguous_target"
+      ? {
+          dossier_context: {
+            candidate_exact_target_row_count: targetDossierRefs.length,
+            candidate_exact_target_rows: targetDossierRefs,
+            all_target_rows_geometry_ambiguous: true,
+            all_target_rows_zero_overlap: true,
+            establishes_traversal: false,
+            establishes_exclusion: false,
+          },
+          positive_context: {
+            current_route_page_corridor_token_found:
+              routePage.current_corridor_token_found,
+            current_route_page_temporal_limitation:
+              routePage.temporal_limitation,
+            context_only: true,
+            authorizes_candidate_date_binding: false,
+          },
+          route_variant_context: {
+            normalized_candidate_route_id: normalizedCandidate,
+            exact_candidate_route_query: exactCandidateQuery?.query,
+            same_date_variant_peers: expectedVariantPeers,
+            variants_kept_separate: true,
+          },
+        }
+      : {}),
     absence_contract: {
       prior_route_treatment_supported: false,
       exact_route_binding_evidence: [],
@@ -4554,7 +4662,7 @@ function buildPureAbsenceBindingReceiptDraft(
     },
     source_gap: {
       candidate_authorization_uses_only_receipt_pins: true,
-      candidate_exact_target_dossier_row_count: 0,
+      candidate_exact_target_dossier_row_count: targetDossierRefs.length,
       raw_source_content_used_to_authorize: false,
       source_gap_authorizes_occurrence: false,
     },
@@ -4583,6 +4691,16 @@ export function buildMultiCorridorAbsenceBindingReceiptDraft(
 ): Record<string, unknown> {
   return buildPureAbsenceBindingReceiptDraft(
     row, packet, rootDir, MULTI_CORRIDOR_ABSENCE_PACKAGE_SPEC,
+  );
+}
+
+export function buildTargetRowRouteVariantBindingReceiptDraft(
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): Record<string, unknown> {
+  return buildPureAbsenceBindingReceiptDraft(
+    row, packet, rootDir, TARGET_ROW_ROUTE_VARIANT_PACKAGE_SPEC,
   );
 }
 
@@ -4617,6 +4735,23 @@ function validateMultiCorridorAbsenceBindingReceipt(
   }
   if (stableJson(receipt as JsonValue) !== stableJson(expected as JsonValue)) {
     throw new Error("multi-corridor-absence package contract does not match the exact candidate");
+  }
+}
+
+function validateTargetRowRouteVariantBindingReceipt(
+  receipt: Record<string, unknown>,
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): void {
+  let expected: Record<string, unknown>;
+  try {
+    expected = buildTargetRowRouteVariantBindingReceiptDraft(row, packet, rootDir);
+  } catch {
+    throw new Error("target-row-route-variant package contract does not match the exact candidate");
+  }
+  if (stableJson(receipt as JsonValue) !== stableJson(expected as JsonValue)) {
+    throw new Error("target-row-route-variant package contract does not match the exact candidate");
   }
 }
 
@@ -4810,6 +4945,12 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
       throw new Error(`${receiptPath}: multi-corridor-absence package does not preserve exact ledger evidence parity`);
     }
+    const targetRowRouteVariantPackageTarget = isTargetRowRouteVariantPackageTarget(row);
+    if (targetRowRouteVariantPackageTarget &&
+        (stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups) ||
+        stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
+      throw new Error(`${receiptPath}: target-row-route-variant package does not preserve exact ledger evidence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -4874,6 +5015,10 @@ export function validateBindingReceiptDrafts(
     }
     if (multiCorridorAbsencePackageTarget) {
       validateMultiCorridorAbsenceBindingReceipt(receipt, row, packet, rootDir);
+      continue;
+    }
+    if (targetRowRouteVariantPackageTarget) {
+      validateTargetRowRouteVariantBindingReceipt(receipt, row, packet, rootDir);
       continue;
     }
     const priorPointer = object(receipt.prior_receipt, `${receiptPath}.prior_receipt`);
