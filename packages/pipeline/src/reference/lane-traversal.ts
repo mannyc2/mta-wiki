@@ -9,6 +9,7 @@ import {
   loadBusSchedulePatternSnapshot,
   nearestScheduleDate,
   scheduleStopChains,
+  type BusScheduleRow,
   type ScheduleRowWindow,
   type ScheduleStopChain,
 } from "./bus-schedules.js";
@@ -94,6 +95,46 @@ export type CurrentLaneProbeRow = {
   overlap_share: number;
   verdict_class: "traversal_confirmed" | "traversal_marginal" | "geometry_ambiguous";
 };
+
+type VariantLaneVerdictRow = {
+  candidate_id: string;
+  direction: string | null;
+  path_source: LaneTraversalRow["path_source"];
+  path_identity: string | null;
+  lane_group_id: string | null;
+  verdict_class: LaneTraversalVerdict;
+  reason: string;
+};
+
+export function reconcileSameDirectionShapeVariantVerdicts<T extends VariantLaneVerdictRow>(
+  rows: readonly T[],
+): T[] {
+  const output = rows.map((row) => ({ ...row }));
+  const variantsByGroup = new Map<string, Set<string>>();
+  const groupKey = (row: VariantLaneVerdictRow) =>
+    [row.candidate_id, row.direction ?? "", row.path_source].join("\0");
+  for (const row of output) {
+    if (row.path_source === "unavailable" || row.path_identity === null) continue;
+    const variants = variantsByGroup.get(groupKey(row)) ?? new Set<string>();
+    variants.add(row.path_identity);
+    variantsByGroup.set(groupKey(row), variants);
+  }
+  const isPositive = (row: VariantLaneVerdictRow) =>
+    row.verdict_class === "traversal_confirmed" || row.verdict_class === "traversal_marginal";
+  const supported = new Set(output.filter((row) =>
+    isPositive(row) && row.path_identity !== null && row.lane_group_id !== null).map((row) =>
+    [groupKey(row), row.path_identity!, row.lane_group_id!].join("\0")));
+  for (const row of output) {
+    if (!isPositive(row) || row.path_identity === null || row.lane_group_id === null) continue;
+    const variants = variantsByGroup.get(groupKey(row)) ?? new Set<string>();
+    if (variants.size > 1 && [...variants].some((variant) =>
+      !supported.has([groupKey(row), variant, row.lane_group_id!].join("\0")))) {
+      row.verdict_class = "geometry_ambiguous";
+      row.reason = "same_direction_shape_variants_disagree_on_lane_identity";
+    }
+  }
+  return output;
+}
 
 function readBridge(path: string, rootDir: string): BridgeRow[] {
   return readFileSync(join(rootDir, path), "utf8")
@@ -366,8 +407,24 @@ function baseAmbiguous(input: {
   };
 }
 
-function yearSnapshot(snapshots: readonly OperationalSnapshot[], year: number): OperationalSnapshot | undefined {
-  return snapshots.find((snapshot) => snapshot.dataset_id !== undefined && snapshot.label.startsWith(String(year)));
+export function composeScheduleRowsForYear(
+  snapshots: readonly OperationalSnapshot[],
+  rowsBySnapshot: ReadonlyMap<string, readonly BusScheduleRow[]>,
+  year: number,
+): { snapshotIds: string[]; rows: BusScheduleRow[] } {
+  const selected = snapshots.filter((snapshot) =>
+    snapshot.dataset_id !== undefined && snapshot.label.startsWith(String(year)))
+    .sort((left, right) => left.snapshot_id.localeCompare(right.snapshot_id));
+  const byExactRow = new Map<string, BusScheduleRow>();
+  for (const snapshot of selected) {
+    for (const row of rowsBySnapshot.get(snapshot.snapshot_id) ?? []) {
+      byExactRow.set(stableJson(row as unknown as JsonValue), row);
+    }
+  }
+  return {
+    snapshotIds: selected.map((snapshot) => snapshot.snapshot_id),
+    rows: [...byExactRow.entries()].sort(([left], [right]) => left.localeCompare(right)).map(([, row]) => row),
+  };
 }
 
 function shiftedDate(value: string, days: number): string {
@@ -481,6 +538,10 @@ export function buildLaneTraversalRows(selection: {
     const year = Number(snapshot.label.slice(0, 4));
     return [snapshot.snapshot_id, loadBusSchedulePatternSnapshot(snapshot, scheduleWindowsByYear.get(year) ?? [], rootDir)] as const;
   }));
+  const scheduleRowsByYear = new Map([2023, 2024, 2025, 2026].map((year) => [
+    year,
+    composeScheduleRowsForYear(scheduleSnapshots, scheduleRows, year),
+  ]));
   const output: LaneTraversalRow[] = [];
   for (const candidate of candidates) {
     const tracker = trackerById.get(candidate.candidate_id);
@@ -502,12 +563,12 @@ export function buildLaneTraversalRows(selection: {
       paths = usableGtfs.flatMap((snapshot) => currentGtfsPaths(tracker.route_id, gtfsIndexes.get(snapshot.snapshot_id)!, snapshot.snapshot_id));
       pathSnapshotIds = [...new Set(paths.map((path) => path.snapshotId).filter((value): value is string => value !== undefined))];
     } else if (year >= 2023 && year <= 2026) {
-      const scheduleSnapshot = yearSnapshot(scheduleSnapshots, year);
-      if (!scheduleSnapshot) {
+      const composed = scheduleRowsByYear.get(year)!;
+      if (composed.snapshotIds.length === 0) {
         output.push(baseAmbiguous({ candidateId: candidate.candidate_id, date, routeId: tracker.route_id, reason: "no_historical_schedule_snapshot", registrySha, inputs }));
         continue;
       }
-      const rows = scheduleRows.get(scheduleSnapshot.snapshot_id) ?? [];
+      const rows = composed.rows;
       const nearest = nearestScheduleDate(rows, tracker.route_id, date, LANE_TRAVERSAL_PARAMS.maximum_schedule_lag_days);
       if (!nearest) {
         output.push(baseAmbiguous({
@@ -516,7 +577,7 @@ export function buildLaneTraversalRows(selection: {
           routeId: tracker.route_id,
           reason: "no_dated_schedule_within_7_days",
           registrySha,
-          snapshotIds: [scheduleSnapshot.snapshot_id],
+          snapshotIds: composed.snapshotIds,
           inputs,
         }));
         continue;
@@ -524,7 +585,7 @@ export function buildLaneTraversalRows(selection: {
       serviceDate = nearest.date;
       lag = nearest.lag_days;
       paths = scheduleStopChains(rows, tracker.route_id, nearest.date).map((chain) => pathFromChain(chain, historicalGtfsIndex));
-      pathSnapshotIds = [scheduleSnapshot.snapshot_id, ...gtfsSnapshots.map((snapshot) => snapshot.snapshot_id)];
+      pathSnapshotIds = [...composed.snapshotIds, ...gtfsSnapshots.map((snapshot) => snapshot.snapshot_id)];
     } else {
       // This explicit row is the critical fail-closed boundary: current GTFS never substitutes for historical service.
       output.push(baseAmbiguous({
@@ -625,12 +686,10 @@ export function buildLaneTraversalRows(selection: {
       }
     }
   }
-  // Historical rows remain shape-specific. A candidate may therefore retain
-  // both confirmed and ambiguous variants without collapsing branch identity;
-  // consumers must use path_identity + lane_group_id + span as the proof grain.
-  const covered = new Set(output.map((row) => row.candidate_id));
+  const reconciled = reconcileSameDirectionShapeVariantVerdicts(output);
+  const covered = new Set(reconciled.map((row) => row.candidate_id));
   if (covered.size !== candidates.length) throw new Error(`Lane traversal denominator mismatch: ${covered.size}/${candidates.length}`);
-  return output.sort((left, right) => left.candidate_id.localeCompare(right.candidate_id) ||
+  return reconciled.sort((left, right) => left.candidate_id.localeCompare(right.candidate_id) ||
     (left.direction ?? "").localeCompare(right.direction ?? "") ||
     (left.path_identity ?? "").localeCompare(right.path_identity ?? "") ||
     (left.lane_group_id ?? "").localeCompare(right.lane_group_id ?? ""));

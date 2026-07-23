@@ -24,10 +24,12 @@ import {
 } from "../../src/reference/bus-schedules";
 import {
   classifyTraversalOverlap,
+  composeScheduleRowsForYear,
   negativeTraversalVerdictForPathSource,
   overlapWithLane,
   orientedSegmentCompatible,
   pointToSegmentMeters,
+  reconcileSameDirectionShapeVariantVerdicts,
   writeLaneTraversalDossier,
 } from "../../src/reference/lane-traversal";
 import { buildGtfsCoordinateIndex, loadGtfsStaticSnapshot, type GtfsStaticSnapshot } from "../../src/reference/gtfs-static";
@@ -38,6 +40,7 @@ import {
   OPERATIONAL_REFERENCE_SCHEMA_VERSION,
   loadOperationalSnapshotRegistryIfPresent,
   mergeOperationalSnapshots,
+  operationalResponseHeaderReceipt,
   selectOperationalSnapshots,
   validateOperationalReferenceRegistry,
   type OperationalSnapshot,
@@ -90,6 +93,17 @@ function scheduleRow(overrides: Partial<BusScheduleRow> = {}): BusScheduleRow {
 }
 
 describe("operational snapshot registry", () => {
+  it("extracts response receipt fields without dropping weak ETags", () => {
+    expect(operationalResponseHeaderReceipt([
+      "HTTP/1.1 200 OK", "Date: Wed, 22 Jul 2026 23:49:01 GMT", 'ETag: W/"fixture"',
+      "Last-Modified: Mon, 06 Apr 2026 15:44:01 GMT", "",
+    ].join("\r\n"))).toEqual({
+      response_date: "Wed, 22 Jul 2026 23:49:01 GMT",
+      etag: 'W/"fixture"',
+      last_modified: "Mon, 06 Apr 2026 15:44:01 GMT",
+    });
+  });
+
   it("treats only an absent registry as first-capture state", () => {
     const root = mkdtempSync(join(tmpdir(), "operational-registry-presence-test-"));
     const registryPath = join(root, "snapshots.json");
@@ -246,6 +260,23 @@ describe("GTFS feed-local identifiers", () => {
 });
 
 describe("scheduled timepoint pattern contract", () => {
+  it("composes all same-year schedule slices independent of selection order", () => {
+    const base = snapshot({ snapshot_id: "2025-base", kind: "bus_schedules_year", source_id: "base", label: "2025-base", dataset_id: "dataset" });
+    const supplement = snapshot({ snapshot_id: "2025-supplement", kind: "bus_schedules_year", source_id: "supplement", label: "2025-supplement", dataset_id: "dataset" });
+    const baseRow = scheduleRow({ route_id: "Q1", shape_id: "base" });
+    const supplementRow = scheduleRow({ route_id: "X64", shape_id: "supplement" });
+    const rows = new Map<string, BusScheduleRow[]>([
+      [base.snapshot_id, [baseRow]],
+      [supplement.snapshot_id, [supplementRow, baseRow]],
+    ]);
+    const first = composeScheduleRowsForYear([supplement, base], rows, 2025);
+    const second = composeScheduleRowsForYear([base, supplement], rows, 2025);
+    expect(first).toEqual(second);
+    expect(first.snapshotIds).toEqual(["2025-base", "2025-supplement"]);
+    expect(first.rows.filter((row) => row.route_id === "Q1")).toHaveLength(1);
+    expect(first.rows.some((row) => row.route_id === "X64" && row.shape_id === "supplement")).toBe(true);
+  });
+
   it("streams only requested route/date windows and excludes unrelated rows", () => {
     const root = mkdtempSync(join(tmpdir(), "schedule-stream-test-"));
     const path = join(root, "source.csv");
@@ -380,6 +411,30 @@ describe("scheduled timepoint pattern contract", () => {
 });
 
 describe("lane and schedule computation boundaries", () => {
+  it("downgrades cherry-pickable shape positives while preserving every pattern row", () => {
+    const rows = [
+      { candidate_id: "candidate", direction: "N", path_source: "historical_schedule_timepoint_pattern" as const, path_identity: "a", lane_group_id: "Q|Main", verdict_class: "traversal_confirmed" as const, reason: "overlap_threshold_met" },
+      { candidate_id: "candidate", direction: "N", path_source: "historical_schedule_timepoint_pattern" as const, path_identity: "b", lane_group_id: "Q|Other", verdict_class: "traversal_marginal" as const, reason: "overlap_below_confirmation_threshold" },
+      { candidate_id: "candidate", direction: "N", path_source: "historical_schedule_timepoint_pattern" as const, path_identity: "c", lane_group_id: null, verdict_class: "geometry_ambiguous" as const, reason: "insufficient_path_points" },
+    ];
+    const reconciled = reconcileSameDirectionShapeVariantVerdicts(rows);
+    expect(reconciled.map((row) => row.path_identity)).toEqual(["a", "b", "c"]);
+    expect(reconciled.slice(0, 2).map((row) => [row.verdict_class, row.reason])).toEqual([
+      ["geometry_ambiguous", "same_direction_shape_variants_disagree_on_lane_identity"],
+      ["geometry_ambiguous", "same_direction_shape_variants_disagree_on_lane_identity"],
+    ]);
+  });
+
+  it("retains a lane positive when every same-direction shape supports that identity", () => {
+    const rows = [
+      { candidate_id: "candidate", direction: "N", path_source: "historical_schedule_timepoint_pattern" as const, path_identity: "a", lane_group_id: "Q|Main", verdict_class: "traversal_confirmed" as const, reason: "overlap_threshold_met" },
+      { candidate_id: "candidate", direction: "N", path_source: "historical_schedule_timepoint_pattern" as const, path_identity: "b", lane_group_id: "Q|Main", verdict_class: "traversal_marginal" as const, reason: "overlap_below_confirmation_threshold" },
+    ];
+    expect(reconcileSameDirectionShapeVariantVerdicts(rows).map((row) => row.verdict_class)).toEqual([
+      "traversal_confirmed", "traversal_marginal",
+    ]);
+  });
+
   it("groups lane identity by raw street+borough while retaining divergent facility", () => {
     const root = mkdtempSync(join(tmpdir(), "lane-street-test-"));
     const sourceDir = join(root, "raw/sources/lanes");

@@ -1,1 +1,1 @@
-{"candidate_count":321,"counts_by_verdict":{"geometry_ambiguous":2857,"no_traversal":0,"traversal_confirmed":85,"traversal_marginal":33},"output_sha256":"2d961b71a6aeb90a1d24fd6bfbd5f367778ffec4f92b2e58d31c660f383163fa","row_count":2975,"schema_version":1}
+{"candidate_count":321,"counts_by_verdict":{"geometry_ambiguous":2975,"no_traversal":0,"traversal_confirmed":0,"traversal_marginal":0},"output_sha256":"a9a3ad743a5335c2b6f4f49ecd8fae85538779429c66918cd99acb08f0540e70","row_count":2975,"schema_version":1}

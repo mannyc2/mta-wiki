@@ -9,7 +9,7 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 ### Operational reference substrate and extent engines
 
 - Staged an immutable 13-snapshot registry (SHA-256
-  `bbae76cd15eff33b66f10555aa38a539dc75870bde07d7c93419ee08bfa9be8a`): six
+  `552215e50e0cb2eb061a2b962c65421e90e3ba42535388a63956e7b0f4b5b347`): six
   `gtfs-static-20260531-*` feeds, the 2026-07-11 and 2026-07-22 NYC DOT local-street bus-lane
   captures, four `mta-bus-schedules-2023..2026-candidate-windows` captures, and the supplemental
   `mta-bus-schedules-2025-x64-predecessor-2026-07-23` slice. Registered bytes, hashes, request
@@ -17,10 +17,13 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   and skip cleanly in a public clone where the ignored operational raw corpus is absent.
 - Added offline, deterministic `lane-traversal` and `schedule-diff` engines without changing the
   canonical or review surfaces. The complete 321-candidate lane denominator produces 2,975
-  shape-specific rows: 85 confirmed rows across 39 candidates, 33 marginal rows across eight, and
-  explicit branch/source ambiguities elsewhere; pre-2023 candidates never borrow current GTFS.
+  shape-specific rows; 118 initially positive lane alignments fail closed because another
+  same-direction schedule shape does not independently establish that lane identity. The split is
+  59 with only unassessed sibling geometry and 59 with assessed non-support, partial alignment, or
+  another lane identity, leaving every row geometry-ambiguous at candidate/shape/lane grain.
+  Pre-2023 candidates never borrow current GTFS.
   Repeated lane output is byte-identical at SHA-256
-  `2d961b71a6aeb90a1d24fd6bfbd5f367778ffec4f92b2e58d31c660f383163fa`.
+  `a9a3ad743a5335c2b6f4f49ecd8fae85538779429c66918cd99acb08f0540e70`.
 - Pinned byte-identical June 2025 exemplars. Q61 has exact Q15 boundaries at scheduled timepoints
   including `804030`/`501184` (166 St/Powells Cove Blvd), while Q34 is explicitly recorded as
   examined with no exact shared timepoint id. QM44 removes timepoints `450030` and `991015` across

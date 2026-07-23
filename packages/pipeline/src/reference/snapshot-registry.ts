@@ -263,6 +263,18 @@ function headerValue(headers: string, name: string): string | undefined {
   return match?.[1]?.trim();
 }
 
+export function operationalResponseHeaderReceipt(headers: string): {
+  response_date: string | null;
+  etag: string | null;
+  last_modified: string | null;
+} {
+  return {
+    response_date: headerValue(headers, "Date") ?? null,
+    etag: headerValue(headers, "ETag") ?? null,
+    last_modified: headerValue(headers, "Last-Modified") ?? null,
+  };
+}
+
 export function stageLocalGtfsSnapshots(): OperationalSnapshot[] {
   if (!existsSync(LOCAL_GTFS_ROOT)) throw new Error(`Missing local GTFS capture: ${LOCAL_GTFS_ROOT}`);
   const snapshots: OperationalSnapshot[] = [];
@@ -427,6 +439,7 @@ export function stageDownloadedDotSnapshot(input: {
   mkdirSync(sourceDir, { recursive: true });
   copyImmutable(input.geojsonPath, join(sourceDir, "source.geojson"));
   copyImmutable(input.responseHeadersPath, join(sourceDir, "headers.txt"));
+  const headers = readFileSync(input.responseHeadersPath, "utf8");
   const parsed = JSON.parse(readFileSync(input.geojsonPath, "utf8")) as { features?: unknown[] };
   if (!Array.isArray(parsed.features)) throw new Error("Fresh DOT capture is not a GeoJSON FeatureCollection");
   const receipt = {
@@ -437,6 +450,9 @@ export function stageDownloadedDotSnapshot(input: {
     feature_count: parsed.features.length,
     geojson_sha256: fileSha256(input.geojsonPath),
     geojson_bytes: statSync(input.geojsonPath).size,
+    headers_sha256: fileSha256(input.responseHeadersPath),
+    headers_bytes: statSync(input.responseHeadersPath).size,
+    ...operationalResponseHeaderReceipt(headers),
   };
   writeImmutable(join(sourceDir, "receipt.json"), `${stableJson(receipt as unknown as JsonValue)}\n`);
   const receiptText = [
@@ -468,6 +484,7 @@ export function stageDownloadedDotSnapshot(input: {
     dataset_id: "ycrg-ses3",
     artifacts: [
       artifact(`${base}/source.geojson`, parsed.features.length),
+      artifact(`${base}/headers.txt`),
       artifact(`${base}/receipt.json`),
     ],
   };
