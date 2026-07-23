@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:fea998d26731c9fe7baf6e7c",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:2588cb08533d3dc792895c4d",
+  "candidate_id": "study-event-v2:587458d9d25ef68f629c8a60",
+  "candidate_fingerprint": "703c1258f49f710e815a55fb9f09217512627226373049d70ad5d12850bd6da0",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "direction",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches establish that BXM7 is served on the broader East 96th-to-128th Street section, but no source binds it to all 51 exact northbound feature rows, the 2025-08-04 onset, phase, direction-specific traversal, or exact feature extent. Broader-section service and connection roles are nonterminal context only. This receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:fea998d26731c9fe7baf6e7c"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T05:06:07Z"
+}

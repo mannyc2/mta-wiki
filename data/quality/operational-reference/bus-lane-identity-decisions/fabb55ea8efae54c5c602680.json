@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:fabb55ea8efae54c5c602680",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:4e6128a6d55181b8ffe94bba",
+  "candidate_id": "study-event-v2:7424ef82d17f902a83e43c8f",
+  "candidate_fingerprint": "1ab390ecdd97db5825656ffff0247fc375f08d10e6df6eae8da8c44ac7d2ed36",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches establish that M35 is named only as a connection to that broader section, but no source binds it to all 51 exact northbound feature rows, the 2025-08-04 onset, phase, direction-specific traversal, or exact feature extent. Broader-section service and connection roles are nonterminal context only. This receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:fabb55ea8efae54c5c602680"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T05:06:07Z"
+}

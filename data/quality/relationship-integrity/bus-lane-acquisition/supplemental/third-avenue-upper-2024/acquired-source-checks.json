@@ -1,0 +1,22 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "third-avenue-upper-existing-conditions-supplement",
+  "sources": [
+    {
+      "byte_length": 3340291,
+      "category": "board_committee",
+      "content_sha256": "465ac757271cceb0d0c04ec2e0744907f2514f4dd791d19c62134783069fa110",
+      "http_status": 200,
+      "id": "third_avenue_upper_existing_conditions_current_staged_copy",
+      "media_type": "application/pdf",
+      "note": "Official CB11 existing-conditions presentation used only for broader-corridor served-route and connection context; it does not establish exact feature identity, onset, phase, direction, traversal, or study eligibility.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "nyc_dot_third_avenue_upper_existing_conditions_cb11_jun2024",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/3rd-ave-96-st-128-st-jun2024.pdf"
+    }
+  ]
+}

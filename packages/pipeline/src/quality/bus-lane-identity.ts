@@ -1344,7 +1344,14 @@ export function validateBindingReceiptDrafts(
         const boundedProjectIntersectionWindow = [...citedPageWindows.values()].some((window) =>
           window.route && window.tokens.has("PROJECT") && window.tokens.has("INTERSECTION") &&
           Math.max(...window.positions) - Math.min(...window.positions) <= 8);
-        const boundedProjectConnectionWindow = [...citedPageWindows.values()].some((window) => {
+        const exactUpperCorridorProposalWindow = [...citedPageWindows.values()].some((window) =>
+          window.tokens.has("3RD") &&
+          window.tokens.has("AVE") &&
+          window.tokens.has("96TH") &&
+          window.tokens.has("128TH") &&
+          (window.tokens.has("PROPOSAL") || window.tokens.has("REVIEW")) &&
+          Math.max(...window.positions) - Math.min(...window.positions) <= 4);
+        const boundedLegacyProjectConnectionWindow = [...citedPageWindows.values()].some((window) => {
           const literalConnectionSentence = window.blocks.some((block) =>
             block.route &&
             block.tokens.has("OFFSET") &&
@@ -1359,6 +1366,27 @@ export function validateBindingReceiptDrafts(
             window.tokens.has("ROUTES") &&
             Math.max(...window.positions) - Math.min(...window.positions) <= 8;
         });
+        const boundedUpperCorridorConnectionWindow = exactUpperCorridorProposalWindow &&
+          [...citedPageWindows.values()].some((window) => {
+            const literalConnectionSentence = window.blocks.some((block) =>
+              block.route &&
+              block.tokens.has("CONNECTIONS") &&
+              (block.tokens.has("SERVICE") || block.tokens.has("SERVICES")));
+            return literalConnectionSentence &&
+              window.tokens.has("SERVED") &&
+              window.tokens.has("ROUTES") &&
+              Math.max(...window.positions) - Math.min(...window.positions) <= 8;
+          });
+        const boundedProjectConnectionWindow =
+          boundedLegacyProjectConnectionWindow || boundedUpperCorridorConnectionWindow;
+        const boundedUpperCorridorServiceWindow = exactUpperCorridorProposalWindow &&
+          [...citedPageWindows.values()].some((window) => window.blocks.some((routeBlock) =>
+            routeBlock.route && window.blocks.some((servedBlock) =>
+              servedBlock.tokens.has("SERVED") &&
+              servedBlock.tokens.has("ROUTES") &&
+              Math.abs(routeBlock.position - servedBlock.position) <= 1 &&
+              !routeBlock.tokens.has("CONNECTIONS") &&
+              !servedBlock.tokens.has("CONNECTIONS"))));
         const correctedFinding = object(correction.corrected_finding, `${correctionPath}.corrected_finding`);
         exactKeys(correctedFinding, new Set([
           "candidate_route_id", "finding_kind", "finding_summary", "supported_scope", "unsupported_bindings",
@@ -1376,9 +1404,13 @@ export function validateBindingReceiptDrafts(
         const isProjectConnection =
           correctedFinding.finding_kind === "positive_project_connection_nonterminal" &&
           correctedFinding.supported_scope === "project_connection_service_only";
+        const isProjectCorridorService =
+          correctedFinding.finding_kind === "positive_project_corridor_service_nonterminal" &&
+          correctedFinding.supported_scope === "project_corridor_service_only";
         if ((isIntersectionAttribution && !boundedProjectIntersectionWindow) ||
             (isProjectConnection && !boundedProjectConnectionWindow) ||
-            (!isIntersectionAttribution && !isProjectConnection)) {
+            (isProjectCorridorService && !boundedUpperCorridorServiceWindow) ||
+            (!isIntersectionAttribution && !isProjectConnection && !isProjectCorridorService)) {
           throw new Error(`${correctionPath}: staged source-block evidence does not bind the exact route to its typed project context`);
         }
         if (correctedRoute !== row.gtfs_route_id ||
@@ -1416,9 +1448,18 @@ export function validateBindingReceiptDrafts(
           const metadata = object(JSON.parse(readFileSync(metadataPath, "utf8")), metadataPath);
           const metadataSha = typeof metadata.sha256 === "string" ? metadata.sha256.replace(/^sha256:/u, "") : null;
           const titleTokens = String(metadata.title ?? "").toUpperCase().split(/[^A-Z0-9+]+/u).filter(Boolean);
+          const proposalSourceTitle = titleTokens.includes("PROPOSAL");
+          const upperCorridorExistingConditionsTitle =
+            titleTokens.includes("3RD") &&
+            (titleTokens.includes("AVE") || titleTokens.includes("AVENUE")) &&
+            titleTokens.includes("96TH") &&
+            titleTokens.includes("128TH") &&
+            titleTokens.includes("EXISTING") &&
+            titleTokens.includes("CONDITIONS");
           if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
               metadataSha !== sourcePdfSha256 || hash(readFileSync(sourcePdfPath)) !== sourcePdfSha256 ||
-              !titleTokens.includes("PROPOSAL") || !supplementalUrls.includes(sourceUrl) ||
+              (!proposalSourceTitle && !upperCorridorExistingConditionsTitle) ||
+              !supplementalUrls.includes(sourceUrl) ||
               !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
                 retrieval.sha256 === sourcePdfSha256)) {
             throw new Error(`${contextPath}: positive-context staged source metadata, URL, or PDF hash does not resolve`);
@@ -1431,7 +1472,12 @@ export function validateBindingReceiptDrafts(
             throw new Error(`${contextPath}: positive context requires staged source-block evidence`);
           }
           const citedBlockIds = new Set<string>();
-          const citedPageWindows = new Map<number, { positions: number[]; route: boolean; tokens: Set<string> }>();
+          const citedPageWindows = new Map<number, {
+            blocks: { position: number; route: boolean; tokens: Set<string> }[];
+            positions: number[];
+            route: boolean;
+            tokens: Set<string>;
+          }>();
           for (const [refIndex, refValue] of context.evidence_refs.entries()) {
             const refPath = `${contextPath}.evidence_refs[${refIndex}]`;
             const ref = object(refValue, refPath);
@@ -1448,19 +1494,38 @@ export function validateBindingReceiptDrafts(
             const blockTokens = String(block.raw_text ?? "").toUpperCase()
               .split(/[^A-Z0-9+]+/u).filter(Boolean);
             const pageNumber = Number(block.page_number);
-            const pageWindow = citedPageWindows.get(pageNumber) ?? { positions: [], route: false, tokens: new Set<string>() };
-            pageWindow.positions.push(blockIndexById.get(blockId)!);
+            const position = blockIndexById.get(blockId)!;
+            const candidateRouteToken = row.gtfs_route_id.toUpperCase();
+            const route = blockTokens.includes(candidateRouteToken) ||
+              (candidateRouteToken.endsWith("+") && blockTokens.some((token, tokenIndex) =>
+                token === candidateRouteToken.slice(0, -1) && blockTokens[tokenIndex + 1] === "SBS"));
+            const pageWindow = citedPageWindows.get(pageNumber) ?? {
+              blocks: [], positions: [], route: false, tokens: new Set<string>(),
+            };
+            pageWindow.blocks.push({ position, route, tokens: new Set(blockTokens) });
+            pageWindow.positions.push(position);
             for (const token of blockTokens) pageWindow.tokens.add(token);
-            if (blockTokens.includes(row.gtfs_route_id.toUpperCase())) pageWindow.route = true;
+            if (route) pageWindow.route = true;
             citedPageWindows.set(pageNumber, pageWindow);
           }
           const boundedServiceContext = [...citedPageWindows.values()].some((window) =>
-            window.route && window.tokens.has("SERVED") && window.tokens.has("BUS") &&
-            (window.tokens.has("ROUTE") || window.tokens.has("ROUTES")) &&
-            Math.max(...window.positions) - Math.min(...window.positions) <= 8);
+            window.blocks.some((routeBlock) => routeBlock.route && window.blocks.some((servedBlock) =>
+              servedBlock.tokens.has("SERVED") &&
+              (servedBlock.tokens.has("ROUTE") || servedBlock.tokens.has("ROUTES")) &&
+              Math.abs(routeBlock.position - servedBlock.position) <= 2 &&
+              !routeBlock.tokens.has("CONNECTIONS") &&
+              !servedBlock.tokens.has("CONNECTIONS"))));
           if (!boundedServiceContext) {
             throw new Error(`${contextPath}: staged source-block evidence does not bind the exact route to bounded corridor-service context`);
           }
+          const exactUpperCorridorReviewWindow = upperCorridorExistingConditionsTitle &&
+            [...citedPageWindows.values()].some((window) =>
+              window.tokens.has("3RD") &&
+              window.tokens.has("AVE") &&
+              window.tokens.has("96TH") &&
+              window.tokens.has("128TH") &&
+              window.tokens.has("REVIEW") &&
+              Math.max(...window.positions) - Math.min(...window.positions) <= 4);
           const finding = object(context.context_finding, `${contextPath}.context_finding`);
           exactKeys(finding, new Set([
             "candidate_route_id", "finding_kind", "finding_summary", "supported_scope", "unsupported_bindings",
@@ -1469,14 +1534,28 @@ export function validateBindingReceiptDrafts(
             `${contextPath}.context_finding.unsupported_bindings`, false).sort();
           const remaining = stringArray(context.remaining_unresolved_bindings,
             `${contextPath}.remaining_unresolved_bindings`, false).sort();
-          if (finding.candidate_route_id !== row.gtfs_route_id ||
-              finding.finding_kind !== "positive_other_extent_context_nonterminal" ||
-              finding.supported_scope !== "other_extent_corridor_service_only" ||
-              stableJson(unsupported) !== stableJson([...receiptUnresolved].sort()) ||
-              stableJson(remaining) !== stableJson([...receiptUnresolved].sort()) ||
-              context.authorizes_study !== false || context.authorizes_cross_product !== false ||
-              receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
+          const commonContextScopeValid = finding.candidate_route_id === row.gtfs_route_id &&
+              stableJson(unsupported) === stableJson([...receiptUnresolved].sort()) &&
+              stableJson(remaining) === stableJson([...receiptUnresolved].sort()) &&
+              context.authorizes_study === false && context.authorizes_cross_product === false &&
+              receipt.authorizes_study === false && receipt.authorizes_cross_product === false;
+          const isOtherExtentContext =
+            finding.finding_kind === "positive_other_extent_context_nonterminal" &&
+            finding.supported_scope === "other_extent_corridor_service_only";
+          const isProjectCorridorServiceContext =
+            finding.finding_kind === "positive_project_corridor_service_nonterminal" &&
+            finding.supported_scope === "project_corridor_service_only";
+          if (isOtherExtentContext && (!commonContextScopeValid || !proposalSourceTitle)) {
             throw new Error(`${contextPath}: positive context exceeds its nonauthorizing other-extent scope`);
+          }
+          if (isProjectCorridorServiceContext &&
+              (!commonContextScopeValid || !exactUpperCorridorReviewWindow ||
+                object(prior.source_findings, `${contextPath}.prior.source_findings`)
+                  .exact_project_route_statement_found !== true)) {
+            throw new Error(`${contextPath}: positive context exceeds its nonauthorizing project-corridor scope`);
+          }
+          if (!isOtherExtentContext && !isProjectCorridorServiceContext) {
+            throw new Error(`${contextPath}: positive context has an unsupported typed scope`);
           }
           nonempty(finding.finding_summary, `${contextPath}.context_finding.finding_summary`);
         }

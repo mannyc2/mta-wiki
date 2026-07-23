@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:eaa9928db402b55f6e6cd9f8",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:5a6c6525f234e101e72f6883",
+  "candidate_id": "study-event-v2:fd2d7f51ea2c01130d647e5d",
+  "candidate_fingerprint": "0453f855637a8a2007d5be4165da71e124698aa7208c923da14f27f27170fee3",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches establish that M96 is named only as a connection to that broader section, but no source binds it to all 51 exact northbound feature rows, the 2025-08-04 onset, phase, direction-specific traversal, or exact feature extent. Broader-section service and connection roles are nonterminal context only. This receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:eaa9928db402b55f6e6cd9f8"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T05:06:07Z"
+}

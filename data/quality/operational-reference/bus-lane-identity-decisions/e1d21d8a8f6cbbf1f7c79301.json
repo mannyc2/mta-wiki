@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:e1d21d8a8f6cbbf1f7c79301",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:178ffe4a2239287e808ef516",
+  "candidate_id": "study-event-v2:52440d738f767e43efad10be",
+  "candidate_fingerprint": "9124a1be262bd1cbf7f0c41ce217541e260c98fbea0e19ac4ff9aaee45301576",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches establish that M125 is named only as a connection to that broader section, but no source binds it to all 51 exact northbound feature rows, the 2025-08-04 onset, phase, direction-specific traversal, or exact feature extent. Broader-section service and connection roles are nonterminal context only. This receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:e1d21d8a8f6cbbf1f7c79301"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T05:06:07Z"
+}

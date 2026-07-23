@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:121b2668ca16e3076c8763cf",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:33157158149950fb34fe5bf8",
+  "candidate_id": "study-event-v2:2954b9c6483f74e7ca7ee209",
+  "candidate_fingerprint": "ccd1f4ffdf7bdf71ecd3e6290ead4dde85123315ee7faf07b708580fca4491d9",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "direction",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches establish that M98 is already recorded by the prior receipt as an exact-project route statement on the broader section, but no source binds it to all 51 exact northbound feature rows, the 2025-08-04 onset, phase, direction-specific traversal, or exact feature extent. Broader-section service and connection roles are nonterminal context only. This receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:121b2668ca16e3076c8763cf"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T05:06:07Z"
+}

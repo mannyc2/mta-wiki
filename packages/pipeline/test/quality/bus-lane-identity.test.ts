@@ -790,6 +790,270 @@ describe("bus-lane identity exact-date targeting", () => {
       } as unknown as JsonValue));
       expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
         .toThrow("source artifact does not match its hash field");
+      const corridorSourceDir = join(rootDir, "raw", "sources", "official-upper-corridor-source");
+      mkdirSync(corridorSourceDir, { recursive: true });
+      const corridorSourceBytes = Buffer.from("fixture official upper-corridor PDF bytes");
+      const corridorSourceHash = createHash("sha256").update(corridorSourceBytes).digest("hex");
+      const corridorTitleText = "3rd Ave, E 96th St to E 128th St";
+      const corridorProposalText = "Complete Street Review";
+      const corridorServedText = "Served by Q1 local bus routes as well as Q2,";
+      const corridorServedContinuationText = "Q3 express bus routes";
+      const corridorConnectionText = "Critical northbound service with connections to Q1, Q4";
+      const corridorTitleHash =
+        `sha256:${createHash("sha256").update(corridorTitleText).digest("hex")}`;
+      const corridorProposalHash =
+        `sha256:${createHash("sha256").update(corridorProposalText).digest("hex")}`;
+      const corridorServedHash =
+        `sha256:${createHash("sha256").update(corridorServedText).digest("hex")}`;
+      const corridorServedContinuationHash =
+        `sha256:${createHash("sha256").update(corridorServedContinuationText).digest("hex")}`;
+      const corridorConnectionHash =
+        `sha256:${createHash("sha256").update(corridorConnectionText).digest("hex")}`;
+      writeFileSync(join(corridorSourceDir, "source.pdf"), corridorSourceBytes);
+      writeFileSync(join(corridorSourceDir, "metadata.json"), JSON.stringify({
+        sourceId: "official-upper-corridor-source",
+        sourceUrl: "https://www.nyc.gov/upper-corridor-source",
+        sha256: `sha256:${corridorSourceHash}`,
+        title: "3rd Avenue, East 96th Street to East 128th Street Existing Conditions",
+      }));
+      writeFileSync(join(corridorSourceDir, "blocks.jsonl"), [
+        {
+          source_id: "official-upper-corridor-source",
+          block_id: "p001_b0001",
+          page_number: 1,
+          raw_text: corridorTitleText,
+          normalized_text: corridorTitleText,
+          raw_text_sha256: corridorTitleHash,
+        },
+        {
+          source_id: "official-upper-corridor-source",
+          block_id: "p001_b0002",
+          page_number: 1,
+          raw_text: corridorProposalText,
+          normalized_text: corridorProposalText,
+          raw_text_sha256: corridorProposalHash,
+        },
+        {
+          source_id: "official-upper-corridor-source",
+          block_id: "p004_b0001",
+          page_number: 4,
+          raw_text: corridorServedText,
+          normalized_text: corridorServedText,
+          raw_text_sha256: corridorServedHash,
+        },
+        {
+          source_id: "official-upper-corridor-source",
+          block_id: "p004_b0002",
+          page_number: 4,
+          raw_text: corridorServedContinuationText,
+          normalized_text: corridorServedContinuationText,
+          raw_text_sha256: corridorServedContinuationHash,
+        },
+        {
+          source_id: "official-upper-corridor-source",
+          block_id: "p004_b0003",
+          page_number: 4,
+          raw_text: corridorConnectionText,
+          normalized_text: corridorConnectionText,
+          raw_text_sha256: corridorConnectionHash,
+        },
+      ].map((block) => JSON.stringify(block)).join("\n") + "\n");
+      const corridorEvidenceRefs = [
+        { block_id: "p001_b0001", page_number: 1, text_sha256: corridorTitleHash },
+        { block_id: "p001_b0002", page_number: 1, text_sha256: corridorProposalHash },
+        { block_id: "p004_b0001", page_number: 4, text_sha256: corridorServedHash },
+        {
+          block_id: "p004_b0002",
+          page_number: 4,
+          text_sha256: corridorServedContinuationHash,
+        },
+        { block_id: "p004_b0003", page_number: 4, text_sha256: corridorConnectionHash },
+      ];
+      const corridorServiceCorrection = {
+        prior_claim_path: "source_findings.exact_project_route_statement_found",
+        prior_claim_value: false,
+        supersedes_prior_finding: true,
+        source_id: "official-upper-corridor-source",
+        source_url: "https://www.nyc.gov/upper-corridor-source",
+        source_pdf_sha256: corridorSourceHash,
+        evidence_refs: corridorEvidenceRefs,
+        corrected_finding: {
+          candidate_route_id: "Q1",
+          finding_kind: "positive_project_corridor_service_nonterminal",
+          supported_scope: "project_corridor_service_only",
+          unsupported_bindings: packet.unresolved_bindings,
+          finding_summary:
+            "The route is named among services on the broader corridor, not exact candidate feature rows.",
+        },
+        remaining_unresolved_bindings: packet.unresolved_bindings,
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      writeFileSync(join(acquiredChecksDir, "acquired-source-checks.json"), JSON.stringify({
+        sources: [
+          ...acquiredSources,
+          {
+            url: "https://www.nyc.gov/correction-source",
+            content_sha256: correctionSourceHash,
+            retrieval_status: "acquired",
+          },
+          {
+            url: "https://www.nyc.gov/project-connection-source",
+            content_sha256: connectionSourceHash,
+            retrieval_status: "acquired",
+          },
+          {
+            url: "https://www.nyc.gov/upper-corridor-source",
+            content_sha256: corridorSourceHash,
+            retrieval_status: "acquired",
+          },
+        ],
+      }));
+      const corridorSupplementalSearch = {
+        ...connectionSupplementalSearch,
+        urls_inspected: [
+          ...connectionSupplementalSearch.urls_inspected,
+          "https://www.nyc.gov/upper-corridor-source",
+        ].sort(),
+        retrievals: [...connectionSupplementalSearch.retrievals, {
+          category: "official_public_board_committee",
+          url: "https://www.nyc.gov/upper-corridor-source",
+          retrieved_on: "2026-07-23",
+          status: "acquired",
+          sha256: corridorSourceHash,
+        }],
+      };
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...corridorSupplementalSearch,
+          finding_corrections: [corridorServiceCorrection],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir)).not.toThrow();
+      const positivePrior = {
+        ...prior,
+        receipt_id: "positive-prior-receipt",
+        source_findings: { exact_project_route_statement_found: true },
+      };
+      const positivePriorLine = stableJson(positivePrior as unknown as JsonValue);
+      writeFileSync(join(rootDir, "positive-prior.jsonl"), `${positivePriorLine}\n`);
+      const positiveRow = {
+        ...row,
+        prior_acquisition_receipt: {
+          ...row.prior_acquisition_receipt,
+          receipt_id: "positive-prior-receipt",
+          artifact: "positive-prior.jsonl",
+          row_sha256: createHash("sha256").update(positivePriorLine).digest("hex"),
+        },
+      };
+      const positivePacket = buildBusLaneResearchPackets([positiveRow]).packets[0]!;
+      const projectCorridorPositiveContext = {
+        source_id: "official-upper-corridor-source",
+        source_url: "https://www.nyc.gov/upper-corridor-source",
+        source_pdf_sha256: corridorSourceHash,
+        evidence_refs: corridorEvidenceRefs,
+        context_finding: {
+          candidate_route_id: "Q1",
+          finding_kind: "positive_project_corridor_service_nonterminal",
+          supported_scope: "project_corridor_service_only",
+          unsupported_bindings: positivePacket.unresolved_bindings,
+          finding_summary:
+            "The route is already recorded as serving the broader project corridor, not exact feature rows.",
+        },
+        remaining_unresolved_bindings: positivePacket.unresolved_bindings,
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      const positiveReceipt = {
+        ...receipt,
+        prior_receipt: {
+          receipt_id: "positive-prior-receipt",
+          artifact: "positive-prior.jsonl",
+          row_sha256: positiveRow.prior_acquisition_receipt.row_sha256,
+        },
+        supplemental_search: {
+          ...corridorSupplementalSearch,
+          finding_corrections: [],
+          positive_context_findings: [projectCorridorPositiveContext],
+        },
+      };
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(positiveReceipt as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts(
+        [positiveRow], [positivePacket], receiptDir, rootDir,
+      )).not.toThrow();
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...positiveReceipt,
+        supplemental_search: {
+          ...positiveReceipt.supplemental_search,
+          positive_context_findings: [{ ...projectCorridorPositiveContext, authorizes_study: true }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts(
+        [positiveRow], [positivePacket], receiptDir, rootDir,
+      )).toThrow("positive context exceeds its nonauthorizing project-corridor scope");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...corridorSupplementalSearch,
+          finding_corrections: [],
+          positive_context_findings: [projectCorridorPositiveContext],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("positive context exceeds its nonauthorizing project-corridor scope");
+      const corridorConnectionCorrection = {
+        ...corridorServiceCorrection,
+        corrected_finding: {
+          ...corridorServiceCorrection.corrected_finding,
+          finding_kind: "positive_project_connection_nonterminal",
+          supported_scope: "project_connection_service_only",
+          finding_summary:
+            "The route is named only as a connection to the broader project corridor.",
+        },
+      };
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...corridorSupplementalSearch,
+          finding_corrections: [corridorConnectionCorrection],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir)).not.toThrow();
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...corridorSupplementalSearch,
+          finding_corrections: [{
+            ...corridorServiceCorrection,
+            evidence_refs: [
+              { block_id: "p001_b0001", page_number: 1, text_sha256: corridorTitleHash },
+              { block_id: "p001_b0002", page_number: 1, text_sha256: corridorProposalHash },
+              { block_id: "p004_b0003", page_number: 4, text_sha256: corridorConnectionHash },
+            ],
+          }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("does not bind the exact route to its typed project context");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...corridorSupplementalSearch,
+          finding_corrections: [{
+            ...corridorServiceCorrection,
+            corrected_finding: {
+              ...corridorServiceCorrection.corrected_finding,
+              supported_scope: "exact_feature_traversal",
+              unsupported_bindings: packet.unresolved_bindings.filter(
+                (binding) => binding !== "traversal",
+              ),
+            },
+          }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("does not bind the exact route to its typed project context");
       const otherExtentContextText = "Served by Q1 express bus routes in the separate corridor.";
       const otherExtentContextHash = `sha256:${createHash("sha256").update(otherExtentContextText).digest("hex")}`;
       writeFileSync(join(stagedSourceDir, "metadata.json"), JSON.stringify({

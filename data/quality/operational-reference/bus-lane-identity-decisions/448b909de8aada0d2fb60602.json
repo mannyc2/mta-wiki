@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:448b909de8aada0d2fb60602",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:9e8ec3bdfc11b403b10743ad",
+  "candidate_id": "study-event-v2:7dd30657efcf2092e3979d8b",
+  "candidate_fingerprint": "1ad960a34cec987a96a12a32c5b40debbb63cb16f4d853ec56b75dd4348e405b",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches establish that M106 is named only as a connection to that broader section, but no source binds it to all 51 exact northbound feature rows, the 2025-08-04 onset, phase, direction-specific traversal, or exact feature extent. Broader-section service and connection roles are nonterminal context only. This receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:448b909de8aada0d2fb60602"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T05:06:07Z"
+}
