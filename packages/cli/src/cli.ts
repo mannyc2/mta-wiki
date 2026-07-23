@@ -7,6 +7,7 @@ import { materializeCommands } from "./commands/materialize.js";
 import { messageValue, optionValue, optionValues, type Command, type CommandHandler, type ParsedArgs } from "./commands/shared.js";
 import { ontologyCommands } from "./commands/ontology.js";
 import { qualityCommands } from "./commands/quality.js";
+import { referenceCommands } from "./commands/reference.js";
 import { replayCommands } from "./commands/replay.js";
 import { sourcesCommands } from "./commands/sources.js";
 import { utilityCommands } from "./commands/utility.js";
@@ -144,6 +145,10 @@ function parseCommand(argv: string[]): ParsedArgs {
     "relationship-completeness",
     "semantic-sweep",
     "fact-dedup",
+    "reference-snapshots",
+    "lane-traversal",
+    "lane-traversal-probe",
+    "schedule-diff",
     "replay-eval",
     "extract",
     "identity-review",
@@ -248,6 +253,7 @@ const commandHandlers: Record<Command, CommandHandler> = {
   ...askCommands,
   ...materializeCommands,
   ...qualityCommands,
+  ...referenceCommands,
   ...identityCommands,
   ...ontologyCommands,
   ...campaignCommands,

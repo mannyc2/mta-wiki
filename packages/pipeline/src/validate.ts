@@ -30,6 +30,7 @@ import { evidenceId, readStagedSourceBlocks, sourceBlockById, sourceBlocksRelati
 import { validateSubmissionRetirementOverrides } from "@mta-wiki/pipeline/records/submission-overrides";
 import { validateSemanticCorrections } from "@mta-wiki/pipeline/records/semantic-corrections";
 import { validateOperationalRecoveryProposalTree } from "@mta-wiki/pipeline/records/operational-recovery-proposals";
+import { validateOperationalReferenceRegistry } from "@mta-wiki/pipeline/reference/snapshot-registry";
 import { auditRelationshipGraph } from "@mta-wiki/pipeline/records/relationship-integrity";
 import type { RelationshipGraphAudit } from "@mta-wiki/pipeline/records/relationship-integrity";
 import {
@@ -800,6 +801,10 @@ export function validateRepo(options: {
   issues.push(...validateSubmissionRetirementOverrides());
   issues.push(...validateSemanticCorrections());
   issues.push(...validateOperationalRecoveryProposalTree({ records }).issues);
+  // The registry is tracked while its large raw snapshots may be absent from a
+  // public clone. Missing source directories are therefore informational; any
+  // present registered artifact must match its pinned byte length and digest.
+  issues.push(...validateOperationalReferenceRegistry().issues);
 
   const relationshipAudit = auditRelationshipGraph(records, {
     mode: relationshipMode,
