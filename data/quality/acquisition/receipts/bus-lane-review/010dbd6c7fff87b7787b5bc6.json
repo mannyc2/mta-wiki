@@ -1,0 +1,271 @@
+{
+  "authorizes_cross_product": false,
+  "authorizes_study": false,
+  "candidate_fingerprint": "56bd5b1eb6cf6c0fd6e5b089c3334e22ef7cc2d3accac5aca769e926f1cc7198",
+  "candidate_id": "study-event-v2:c295205a5c894d724b9dd6c6",
+  "candidate_urls": [],
+  "disposition": "binding_absent_after_search",
+  "gap_ids": [
+    "bus-lane-identity:d236879c1a9b9aa105044f8c"
+  ],
+  "gtfs_route_id": "M5",
+  "implementation_date": "2021-06-28",
+  "missing_binding": "traversal",
+  "operator": "plan039-corridor-adjudicator",
+  "prior_receipt": {
+    "artifact": "data/quality/relationship-integrity/bus-lane-acquisition/shards/manhattan/receipts.jsonl",
+    "receipt_id": "manhattan-acquisition:8155e3dba2cee0c77d78c693",
+    "row_sha256": "95d7cea91b876e7bfa9e31b04a5606d57a64376ed6bda8c449e07b5d101007d9"
+  },
+  "rationale": "Candidate-exact supplemental official NYC DOT and public-board review corrects the prior receipt's false exact-project-route finding for M5: the staged CB12 presentation names the route within the exact project limits and describes the corridor Bus Only Lane. It still does not bind M5 to either exact eastbound feature row, the 2021-06-28 onset, or direction-specific traversal. The correction remains nonterminal and non-authorizing.",
+  "receipt_id": "bus-lane-binding-search:010dbd6c7fff87b7787b5bc6",
+  "receipt_kind": "binding_absent_after_search",
+  "schema_version": 1,
+  "search": {
+    "exact_queries": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "query": "site:nyc.gov/html/dot West 178 Street bus lane M100 June 2021 official",
+        "query_status": "performed_2026-07-15"
+      },
+      {
+        "category": "official_mta_route_project",
+        "query": "site:mta.info \"M5\" \"W 178 Street\" bus route project",
+        "query_status": "performed_by_official_route_fetch_and_service_guide_search_2026-07-15"
+      },
+      {
+        "category": "official_public_board_committee",
+        "query": "site:nyc.gov/html/dot West 178 Street bus lane M100 June 2021 official community board committee",
+        "query_status": "performed_2026-07-15"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "query": "NYC DOT Open Data ycrg-ses3 facility=W 178 Street open_dates contains 2021-06-28",
+        "query_status": "executed_against_acquired_snapshot_2026-07-15"
+      }
+    ],
+    "domains": [
+      "bustime-classic.mta.info",
+      "data.cityofnewyork.us",
+      "www.mta.info",
+      "www.nyc.gov"
+    ],
+    "urls_inspected": [
+      "https://bustime-classic.mta.info/m/?q=M5",
+      "https://data.cityofnewyork.us/api/views/ycrg-ses3",
+      "https://data.cityofnewyork.us/resource/ycrg-ses3.json?$limit=5000",
+      "https://www.mta.info/document/8331",
+      "https://www.nyc.gov/html/dot/html/about/datafeeds.shtml",
+      "https://www.nyc.gov/html/dot/html/about/projects-2021.shtml"
+    ],
+    "retrievals": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "id": "dot_bus_lanes_snapshot",
+        "retrieved_on": "2026-07-15",
+        "sha256": "1b3a990a75abc472d5f68d683aeb7d1deafa2eca4a239e4914b12db6a9927a5a",
+        "status": "acquired"
+      },
+      {
+        "category": "official_mta_route_project",
+        "id": "mta_bustime_M5",
+        "retrieved_on": "2026-07-15",
+        "sha256": "59f4116ba926570e3af98988318da4f918b9b01a0f5afe90241a247addb36404",
+        "status": "acquired"
+      },
+      {
+        "category": "official_mta_route_project",
+        "id": "mta_manhattan_bus_service",
+        "retrieved_on": "2026-07-15",
+        "sha256": null,
+        "status": "not_retrieved"
+      },
+      {
+        "category": "official_public_board_committee",
+        "id": "dot_projects_2021",
+        "retrieved_on": "2026-07-15",
+        "sha256": "bb5ff29716fb92f20c946ec05c3fe135842da14fd0441da1359397cfbd9a22f3",
+        "status": "acquired"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "id": "dot_bus_lanes_metadata",
+        "retrieved_on": "2026-07-15",
+        "sha256": "fa943cd885628155d489ffb991e464ce8d914736b9c29ab97dd2094ecd877340",
+        "status": "acquired"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "id": "dot_datafeeds",
+        "retrieved_on": "2026-07-15",
+        "sha256": "8c2116df71bd500be0f346f96f5bd3947f725c0374ebe49a2a1f7e75280f5bbd",
+        "status": "acquired"
+      }
+    ],
+    "disposition": "binding_absent_after_search"
+  },
+  "searched_at": "2026-07-15",
+  "supplemental_search": {
+    "domains": [
+      "www.nyc.gov"
+    ],
+    "exact_queries": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "query": "site:nyc.gov \"West 178th Street\" \"M5\" \"Bus Only Lane\" NYC DOT",
+        "query_status": "performed_2026-07-23_reviewed_results"
+      },
+      {
+        "category": "official_public_board_committee",
+        "query": "site:nyc.gov \"W 178th Street\" \"M5\" community board bus lane",
+        "query_status": "performed_2026-07-23_reviewed_results"
+      }
+    ],
+    "finding_corrections": [
+      {
+        "authorizes_cross_product": false,
+        "authorizes_study": false,
+        "evidence_refs": [
+          {
+            "block_id": "p002_p0002",
+            "page_number": 2,
+            "text_sha256": "sha256:cf9c8f89df3ea74bdc93d77eefc69fa3ceb14b5fcdb8c11819475b1eb801e21e"
+          },
+          {
+            "block_id": "p002_p0003",
+            "page_number": 2,
+            "text_sha256": "sha256:fa0468aabf5cf67367b3386379f0e47371af65f696a1232e4f93f2f6e1d9c227"
+          },
+          {
+            "block_id": "p002_p0004",
+            "page_number": 2,
+            "text_sha256": "sha256:636f48d76f0551e98bf00221150914dba1a458e0b25d507e6e016d13cf260714"
+          },
+          {
+            "block_id": "p002_p0013",
+            "page_number": 2,
+            "text_sha256": "sha256:21d9c37d02ddb6550ad31cbace933d7d656b09b5e18fa7484c63bed74c76aae2"
+          },
+          {
+            "block_id": "p002_p0014",
+            "page_number": 2,
+            "text_sha256": "sha256:f3b185ca070e177236c0b482aa213c6590081d5781ec0ccb9683e06c875a1bd9"
+          },
+          {
+            "block_id": "p009_p0016",
+            "page_number": 9,
+            "text_sha256": "sha256:45a030570ece5d661069663b15a3f332698eccf7dfd439ff252f0c909265ba28"
+          },
+          {
+            "block_id": "p009_p0017",
+            "page_number": 9,
+            "text_sha256": "sha256:b4ba3cb26ef63fd4ac660adecdb277b7222f7656ac330c65c468de60fbcca8f1"
+          },
+          {
+            "block_id": "p009_p0019",
+            "page_number": 9,
+            "text_sha256": "sha256:53a4dfee6fe9c196576772249f677602de3434f06222c9878513fcc5a8268b55"
+          },
+          {
+            "block_id": "p009_p0020",
+            "page_number": 9,
+            "text_sha256": "sha256:2c809fc183be96f86c9d040594acc2527759b4d16c34ecea3eea63b19ca90a52"
+          },
+          {
+            "block_id": "p009_p0021",
+            "page_number": 9,
+            "text_sha256": "sha256:dbe31ef0f521367024df1631a6d21e0d0e3a681038ea70817a4f9749fce81197"
+          },
+          {
+            "block_id": "p009_p0022",
+            "page_number": 9,
+            "text_sha256": "sha256:21465ccc17755d22fe249af6fe9c39e3325a85d78510bd8e174db72af14839ba"
+          }
+        ],
+        "remaining_unresolved_bindings": [
+          "attribution",
+          "traversal"
+        ],
+        "source_id": "nyc_dot_w178_street_safety_cb12_mar2020",
+        "source_pdf_sha256": "431fe0b4105561eb4ce0c241245a276ee56b07c6bf810be5cd7a6eee36a94209",
+        "source_url": "https://www.nyc.gov/html/dot/downloads/pdf/w178-st-ft-washington-ave-wadsworth-ave-cb12-mar2020.pdf",
+        "corrected_finding": {
+          "candidate_route_id": "M5",
+          "finding_kind": "positive_project_corridor_service_nonterminal",
+          "finding_summary": "The official CB12 presentation names M5 among bus routes within the exact West 178th Street project limits and describes the corridor Bus Only Lane; it does not bind the route to either exact eastbound feature row or the June 28, 2021 onset.",
+          "supported_scope": "project_corridor_service_only",
+          "unsupported_bindings": [
+            "attribution",
+            "traversal"
+          ]
+        },
+        "prior_claim_path": "source_findings.exact_project_route_statement_found",
+        "prior_claim_value": false,
+        "supersedes_prior_finding": true
+      }
+    ],
+    "operator": "codex_web.search_query",
+    "retrievals": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "retrieved_on": "2026-07-23",
+        "sha256": "bb5ff29716fb92f20c946ec05c3fe135842da14fd0441da1359397cfbd9a22f3",
+        "status": "acquired",
+        "url": "https://www.nyc.gov/html/dot/html/about/projects-2021.shtml"
+      },
+      {
+        "category": "official_public_board_committee",
+        "retrieved_on": "2026-07-23",
+        "sha256": "431fe0b4105561eb4ce0c241245a276ee56b07c6bf810be5cd7a6eee36a94209",
+        "status": "acquired",
+        "url": "https://www.nyc.gov/html/dot/downloads/pdf/w178-st-ft-washington-ave-wadsworth-ave-cb12-mar2020.pdf"
+      }
+    ],
+    "searched_at": "2026-07-23T06:30:00Z",
+    "urls_inspected": [
+      "https://www.nyc.gov/html/dot/downloads/pdf/w178-st-ft-washington-ave-wadsworth-ave-cb12-mar2020.pdf",
+      "https://www.nyc.gov/html/dot/html/about/projects-2021.shtml"
+    ]
+  },
+  "target": {
+    "directions": [
+      "EB"
+    ],
+    "feature_ids": [
+      "0070969",
+      "0070975"
+    ],
+    "feature_keys": [
+      "dot-lane-feature:113589f8fb54f06d2c5863ed",
+      "dot-lane-feature:237a6903126fd570cf7189f9"
+    ],
+    "feature_row_count": 2,
+    "feature_rows": [
+      {
+        "direction": "EB",
+        "feature_id": "0070975",
+        "feature_key": "dot-lane-feature:113589f8fb54f06d2c5863ed"
+      },
+      {
+        "direction": "EB",
+        "feature_id": "0070969",
+        "feature_key": "dot-lane-feature:237a6903126fd570cf7189f9"
+      }
+    ],
+    "geometry_scopes": [
+      "coextensive_with_lane_group"
+    ],
+    "lane_group_ids": [
+      "MAN|WEST 178 STREET"
+    ],
+    "matched_date": "2021-06-28",
+    "named_sbs_routes": [],
+    "open_dates_literals": [
+      "06/28/2021"
+    ]
+  },
+  "unresolved_bindings": [
+    "attribution",
+    "traversal"
+  ]
+}

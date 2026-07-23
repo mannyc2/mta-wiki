@@ -1002,6 +1002,160 @@ describe("bus-lane identity exact-date targeting", () => {
       } as unknown as JsonValue));
       expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
         .toThrow("positive context exceeds its nonauthorizing project-corridor scope");
+      const west178SourceDir = join(rootDir, "raw", "sources", "official-west-178-corridor-source");
+      mkdirSync(west178SourceDir, { recursive: true });
+      const west178SourceBytes = Buffer.from("fixture official West 178 corridor PDF bytes");
+      const west178SourceHash = createHash("sha256").update(west178SourceBytes).digest("hex");
+      const west178Blocks = [
+        { block_id: "p002_b0001", page_number: 2, raw_text: "Project Location" },
+        { block_id: "p002_b0002", page_number: 2, raw_text: "Project limits: W 178th St, from" },
+        { block_id: "p002_b0003", page_number: 2, raw_text: "Ft Washington Ave to" },
+        { block_id: "p002_b0004", page_number: 2, raw_text: "Wadsworth Ave; 0.2 miles" },
+        { block_id: "p002_b0005", page_number: 2, raw_text: "Q1, Q2 bus routes" },
+        { block_id: "p002_b0006", page_number: 2, raw_text: "Q10 bus routes" },
+        { block_id: "p009_b0001", page_number: 9, raw_text: "Bus Only Lane on W 178th" },
+        { block_id: "p009_b0002", page_number: 9, raw_text: "St between Ft Washington" },
+        { block_id: "p009_b0003", page_number: 9, raw_text: "Ave to Wadsworth Ave" },
+      ].map((block) => ({
+        source_id: "official-west-178-corridor-source",
+        normalized_text: block.raw_text,
+        raw_text_sha256: `sha256:${createHash("sha256").update(block.raw_text).digest("hex")}`,
+        ...block,
+      }));
+      writeFileSync(join(west178SourceDir, "source.pdf"), west178SourceBytes);
+      writeFileSync(join(west178SourceDir, "metadata.json"), JSON.stringify({
+        sourceId: "official-west-178-corridor-source",
+        sourceUrl: "https://www.nyc.gov/west-178-corridor-source",
+        sha256: `sha256:${west178SourceHash}`,
+        title: "W 178 St (Ft Washington Ave to Wadsworth Ave)",
+      }));
+      writeFileSync(join(west178SourceDir, "blocks.jsonl"),
+        west178Blocks.map((block) => JSON.stringify(block)).join("\n") + "\n");
+      const west178EvidenceRefs = west178Blocks
+        .filter((block) => block.block_id !== "p002_b0006")
+        .map((block) => ({
+          block_id: block.block_id,
+          page_number: block.page_number,
+          text_sha256: block.raw_text_sha256,
+        }));
+      const west178Correction = {
+        ...corridorServiceCorrection,
+        source_id: "official-west-178-corridor-source",
+        source_url: "https://www.nyc.gov/west-178-corridor-source",
+        source_pdf_sha256: west178SourceHash,
+        evidence_refs: west178EvidenceRefs,
+        corrected_finding: {
+          ...corridorServiceCorrection.corrected_finding,
+          finding_summary:
+            "The route is named among bus routes in the exact project area, without row or direction traversal proof.",
+        },
+      };
+      const west178SupplementalSearch = {
+        ...supplementalSearch,
+        urls_inspected: [
+          ...supplementalSearch.urls_inspected,
+          "https://www.nyc.gov/west-178-corridor-source",
+        ].sort(),
+        retrievals: [...supplementalSearch.retrievals, {
+          category: "official_public_board_committee",
+          url: "https://www.nyc.gov/west-178-corridor-source",
+          retrieved_on: "2026-07-23",
+          status: "acquired",
+          sha256: west178SourceHash,
+        }],
+      };
+      writeFileSync(join(acquiredChecksDir, "acquired-source-checks.json"), JSON.stringify({
+        sources: [
+          ...acquiredSources,
+          {
+            url: "https://www.nyc.gov/correction-source",
+            content_sha256: correctionSourceHash,
+            retrieval_status: "acquired",
+          },
+          {
+            url: "https://www.nyc.gov/project-connection-source",
+            content_sha256: connectionSourceHash,
+            retrieval_status: "acquired",
+          },
+          {
+            url: "https://www.nyc.gov/upper-corridor-source",
+            content_sha256: corridorSourceHash,
+            retrieval_status: "acquired",
+          },
+          {
+            url: "https://www.nyc.gov/west-178-corridor-source",
+            content_sha256: west178SourceHash,
+            retrieval_status: "acquired",
+          },
+        ],
+      }));
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...west178SupplementalSearch,
+          finding_corrections: [west178Correction],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir)).not.toThrow();
+      const west178PositiveContext = {
+        source_id: "official-west-178-corridor-source",
+        source_url: "https://www.nyc.gov/west-178-corridor-source",
+        source_pdf_sha256: west178SourceHash,
+        evidence_refs: west178EvidenceRefs,
+        context_finding: {
+          candidate_route_id: "Q1",
+          finding_kind: "positive_project_corridor_service_nonterminal",
+          supported_scope: "project_corridor_service_only",
+          unsupported_bindings: positivePacket.unresolved_bindings,
+          finding_summary:
+            "The route is already recorded among bus routes in the exact project area, without row traversal proof.",
+        },
+        remaining_unresolved_bindings: positivePacket.unresolved_bindings,
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...positiveReceipt,
+        supplemental_search: {
+          ...west178SupplementalSearch,
+          finding_corrections: [],
+          positive_context_findings: [west178PositiveContext],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts(
+        [positiveRow], [positivePacket], receiptDir, rootDir,
+      )).not.toThrow();
+      const west178AliasEvidenceRefs = west178Blocks
+        .filter((block) => block.block_id !== "p002_b0005")
+        .map((block) => ({
+          block_id: block.block_id,
+          page_number: block.page_number,
+          text_sha256: block.raw_text_sha256,
+        }));
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...west178SupplementalSearch,
+          finding_corrections: [{
+            ...west178Correction,
+            evidence_refs: west178AliasEvidenceRefs,
+          }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("does not bind the exact route to its typed project context");
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt,
+        supplemental_search: {
+          ...west178SupplementalSearch,
+          finding_corrections: [{
+            ...west178Correction,
+            evidence_refs: west178EvidenceRefs.filter((ref) => ref.page_number !== 9),
+          }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("does not bind the exact route to its typed project context");
       const corridorConnectionCorrection = {
         ...corridorServiceCorrection,
         corrected_finding: {

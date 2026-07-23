@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:010dbd6c7fff87b7787b5bc6",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:d236879c1a9b9aa105044f8c",
+  "candidate_id": "study-event-v2:c295205a5c894d724b9dd6c6",
+  "candidate_fingerprint": "56bd5b1eb6cf6c0fd6e5b089c3334e22ef7cc2d3accac5aca769e926f1cc7198",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental official NYC DOT and public-board review corrects the prior receipt's false exact-project-route finding for M5: the staged CB12 presentation names the route within the exact project limits and describes the corridor Bus Only Lane. It still does not bind M5 to either exact eastbound feature row, the 2021-06-28 onset, or direction-specific traversal. The correction remains nonterminal and non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:010dbd6c7fff87b7787b5bc6"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T06:38:04Z"
+}

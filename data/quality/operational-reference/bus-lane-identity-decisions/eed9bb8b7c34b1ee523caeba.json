@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:eed9bb8b7c34b1ee523caeba",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:36ec1eb9250a3da22cc6b9d3",
+  "candidate_id": "study-event-v2:90af3c526dedca40f0e7fb28",
+  "candidate_fingerprint": "87e79e2604cb03d189aefda84d509911611cda13826a17e05163b93cfe94bd3d",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental official NYC DOT and public-board review confirms the prior receipt's broader exact-project route statement for BX7, but no source binds it to either exact eastbound feature row, the 2021-06-28 onset, or direction-specific traversal. The staged presentation is retained only as nonterminal project-corridor service context; this receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:eed9bb8b7c34b1ee523caeba"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T06:38:04Z"
+}

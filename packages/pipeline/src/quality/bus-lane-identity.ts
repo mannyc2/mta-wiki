@@ -1310,6 +1310,13 @@ export function validateBindingReceiptDrafts(
         }
         const metadata = object(JSON.parse(readFileSync(metadataPath, "utf8")), metadataPath);
         const metadataSha = typeof metadata.sha256 === "string" ? metadata.sha256.replace(/^sha256:/u, "") : null;
+        const correctionTitleTokens = String(metadata.title ?? "").toUpperCase()
+          .split(/[^A-Z0-9+]+/u).filter(Boolean);
+        const west178CorridorTitle =
+          correctionTitleTokens.includes("178") &&
+          correctionTitleTokens.includes("FT") &&
+          correctionTitleTokens.includes("WASHINGTON") &&
+          correctionTitleTokens.includes("WADSWORTH");
         if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
             metadataSha !== sourceContentSha256 || hash(readFileSync(sourceArtifactPath)) !== sourceContentSha256 ||
             !supplementalUrls.includes(sourceUrl) ||
@@ -1407,6 +1414,27 @@ export function validateBindingReceiptDrafts(
               Math.abs(routeBlock.position - servedBlock.position) <= 1 &&
               !routeBlock.tokens.has("CONNECTIONS") &&
               !servedBlock.tokens.has("CONNECTIONS"))));
+        const boundedWest178CorridorServiceWindow = west178CorridorTitle &&
+          [...citedPageWindows.values()].some((window) =>
+            window.route &&
+            window.tokens.has("PROJECT") &&
+            window.tokens.has("LIMITS") &&
+            window.tokens.has("178TH") &&
+            window.tokens.has("FT") &&
+            window.tokens.has("WASHINGTON") &&
+            window.tokens.has("WADSWORTH") &&
+            window.tokens.has("BUS") &&
+            window.tokens.has("ROUTES") &&
+            Math.max(...window.positions) - Math.min(...window.positions) <= 12) &&
+          [...citedPageWindows.values()].some((window) =>
+            window.tokens.has("BUS") &&
+            window.tokens.has("ONLY") &&
+            window.tokens.has("LANE") &&
+            window.tokens.has("178TH") &&
+            window.tokens.has("FT") &&
+            window.tokens.has("WASHINGTON") &&
+            window.tokens.has("WADSWORTH") &&
+            Math.max(...window.positions) - Math.min(...window.positions) <= 6);
         const boundedSecondAvenueServiceWindow =
           [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
             block.tokens.has("SECOND") &&
@@ -1457,7 +1485,8 @@ export function validateBindingReceiptDrafts(
             (isProjectConnection && !boundedProjectConnectionWindow) ||
             (isProjectCorridorService &&
               !boundedUpperCorridorServiceWindow &&
-              !boundedSecondAvenueServiceWindow) ||
+              !boundedSecondAvenueServiceWindow &&
+              !boundedWest178CorridorServiceWindow) ||
             (!isIntersectionAttribution && !isProjectConnection && !isProjectCorridorService)) {
           throw new Error(`${correctionPath}: staged source-block evidence does not bind the exact route to its typed project context`);
         }
@@ -1537,10 +1566,15 @@ export function validateBindingReceiptDrafts(
             titleTokens.includes("SBS") &&
             titleTokens.includes("ROUTE") &&
             titleTokens.includes("ENFORCEMENT");
+          const west178CorridorTitle =
+            titleTokens.includes("178") &&
+            titleTokens.includes("FT") &&
+            titleTokens.includes("WASHINGTON") &&
+            titleTokens.includes("WADSWORTH");
           if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
               metadataSha !== sourceContentSha256 || hash(readFileSync(sourceArtifactPath)) !== sourceContentSha256 ||
               (!proposalSourceTitle && !upperCorridorExistingConditionsTitle && !secondAvenueRedesignTitle &&
-                !west125SbsEnforcementTitle) ||
+                !west125SbsEnforcementTitle && !west178CorridorTitle) ||
               !supplementalUrls.includes(sourceUrl) ||
               !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
                 retrieval.sha256 === sourceContentSha256)) {
@@ -1601,7 +1635,29 @@ export function validateBindingReceiptDrafts(
               block.tokens.has("SERVICE") &&
               block.tokens.has("SBS") &&
               block.tokens.has("ROUTE")));
-          if (!boundedServiceContext && !boundedExplicitSbsRouteContext) {
+          const exactWest178CorridorServiceWindow = west178CorridorTitle &&
+            [...citedPageWindows.values()].some((window) =>
+              window.route &&
+              window.tokens.has("PROJECT") &&
+              window.tokens.has("LIMITS") &&
+              window.tokens.has("178TH") &&
+              window.tokens.has("FT") &&
+              window.tokens.has("WASHINGTON") &&
+              window.tokens.has("WADSWORTH") &&
+              window.tokens.has("BUS") &&
+              window.tokens.has("ROUTES") &&
+              Math.max(...window.positions) - Math.min(...window.positions) <= 12) &&
+            [...citedPageWindows.values()].some((window) =>
+              window.tokens.has("BUS") &&
+              window.tokens.has("ONLY") &&
+              window.tokens.has("LANE") &&
+              window.tokens.has("178TH") &&
+              window.tokens.has("FT") &&
+              window.tokens.has("WASHINGTON") &&
+              window.tokens.has("WADSWORTH") &&
+              Math.max(...window.positions) - Math.min(...window.positions) <= 6);
+          if (!boundedServiceContext && !boundedExplicitSbsRouteContext &&
+              !exactWest178CorridorServiceWindow) {
             throw new Error(`${contextPath}: staged source-block evidence does not bind the exact route to bounded corridor-service context`);
           }
           const exactUpperCorridorReviewWindow = upperCorridorExistingConditionsTitle &&
@@ -1680,7 +1736,8 @@ export function validateBindingReceiptDrafts(
               (!commonContextScopeValid ||
                 (!exactUpperCorridorReviewWindow &&
                   !exactSecondAvenueProjectWindow &&
-                  !exactWest125ExtensionWindow) ||
+                  !exactWest125ExtensionWindow &&
+                  !exactWest178CorridorServiceWindow) ||
                 object(prior.source_findings, `${contextPath}.prior.source_findings`)
                   .exact_project_route_statement_found !== true)) {
             throw new Error(`${contextPath}: positive context exceeds its nonauthorizing project-corridor scope`);
