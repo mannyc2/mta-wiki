@@ -3308,10 +3308,12 @@ describe("bus-lane identity exact-date targeting", () => {
     }
   });
 
-  it("keeps historical Utica project-intersection connections separate from exact 2014 lane rows", () => {
+  it("keeps historical Utica intersections separate from exact 2014 and 2015 lane rows", () => {
     const date = "2014-08-25";
-    const routeIds = ["B12", "B14"];
-    const entries = routeIds.map((routeId) => candidate(`utica-${routeId}`, routeId, date));
+    const b8Date = "2015-10-16";
+    const routeIds = ["B12", "B14", "B8"];
+    const entries = routeIds.map((routeId) =>
+      candidate(`utica-${routeId}`, routeId, routeId === "B8" ? b8Date : date));
     const laneFeatures = [
       ...Array.from({ length: 26 }, (_, index) => lane({
         feature_id: `utica-${index % 16}`,
@@ -3319,6 +3321,15 @@ describe("bus-lane identity exact-date targeting", () => {
         opened: "8/25/2014",
         direction: index < 16 ? "NB" : "SB",
         attributes: { open_dates: "8/25/2014", sbs_route1: "B46", segmentid: `utica-${index}` },
+      })),
+      ...Array.from({ length: 48 }, (_, index) => lane({
+        feature_id: `utica-2015-${index % 26}`,
+        lane_group_id: "BK|UTICA AVENUE",
+        opened: "10/16/2015",
+        direction: index < 26 ? "NB" : "SB",
+        attributes: {
+          open_dates: "10/16/2015", sbs_route1: "B46", segmentid: `utica-2015-${index}`,
+        },
       })),
       lane({
         feature_id: "utica-older",
@@ -3335,7 +3346,7 @@ describe("bus-lane identity exact-date targeting", () => {
       dossierRows: entries.map((entry) => dossier({
         candidateId: entry.bridge.candidate_id,
         routeId: entry.tracker.route_id,
-        date,
+        date: entry.tracker.implementation_date,
         laneGroupId: null,
         pathSource: "unavailable",
         pathIdentity: null,
@@ -3378,7 +3389,8 @@ describe("bus-lane identity exact-date targeting", () => {
         raw_text: "Key intersections at Eastern Parkway, Empire and Lefferts, and Church Avenue." },
       { block_id: "p003_c0001", page_number: 3, raw_text: "Transit Needs: B46 Bus Service" },
       { block_id: "p003_c0003", page_number: 3,
-        raw_text: "The B46 route follows Utica Avenue; Eastern Pkwy (B14), Empire Blvd (B12), Lefferts Av (B12)." },
+        raw_text: "The B46 route follows Utica Avenue; Eastern Pkwy (B14), Empire Blvd (B12), " +
+          "Lefferts Av (B12), Church Av, Avenue D (B8)." },
     ].map((block) => ({
       source_id: "2013_09_24_sbs_utica_cb9",
       ...block,
@@ -3461,13 +3473,13 @@ describe("bus-lane identity exact-date targeting", () => {
       expect(targetFor(packetFor(routeId))).toMatchObject({
         lane_group_ids: ["BK|UTICA AVENUE"],
         geometry_scopes: ["mixed_date_feature_union"],
-        feature_row_count: 26,
+        feature_row_count: routeId === "B8" ? 48 : 26,
         directions: ["NB", "SB"],
-        open_dates_literals: ["8/25/2014"],
+        open_dates_literals: [routeId === "B8" ? "10/16/2015" : "8/25/2014"],
         named_sbs_routes: ["B46"],
       });
-      expect(targetFor(packetFor(routeId)).feature_keys).toHaveLength(26);
-      expect(targetFor(packetFor(routeId)).feature_ids).toHaveLength(16);
+      expect(targetFor(packetFor(routeId)).feature_keys).toHaveLength(routeId === "B8" ? 48 : 26);
+      expect(targetFor(packetFor(routeId)).feature_ids).toHaveLength(routeId === "B8" ? 26 : 16);
     }
     const evidenceRefs = () => sourceBlocks.map((block) => ({
       block_id: block.block_id,
@@ -3481,10 +3493,16 @@ describe("bus-lane identity exact-date targeting", () => {
       evidence_refs: evidenceRefs(),
       context_finding: {
         candidate_route_id: routeId,
-        finding_kind: "positive_historical_project_intersection_connection_nonterminal",
-        supported_scope: "historical_project_intersection_connection_only",
+        finding_kind: routeId === "B8"
+          ? "positive_historical_outside_project_extent_intersection_connection_nonterminal"
+          : "positive_historical_project_intersection_connection_nonterminal",
+        supported_scope: routeId === "B8"
+          ? "historical_outside_project_extent_intersection_connection_only"
+          : "historical_project_intersection_connection_only",
         unsupported_bindings: packetFor(routeId).unresolved_bindings,
-        finding_summary: `${routeId} appears only as a connecting route at a named Utica project intersection.`,
+        finding_summary: routeId === "B8"
+          ? "B8 appears only at Avenue D, beyond the historical project's Church Avenue endpoint."
+          : `${routeId} appears only as a connecting route at a named Utica project intersection.`,
       },
       remaining_unresolved_bindings: packetFor(routeId).unresolved_bindings,
       authorizes_study: false,
@@ -3521,7 +3539,7 @@ describe("bus-lane identity exact-date targeting", () => {
         candidate_id: row.candidate_id,
         candidate_fingerprint: row.candidate_fingerprint,
         gtfs_route_id: routeId,
-        implementation_date: date,
+        implementation_date: row.implementation_date,
         gap_ids: [row.ledger_id],
         searched_at: "2026-07-15",
         operator: "fixture-reviewer",
@@ -3582,7 +3600,7 @@ describe("bus-lane identity exact-date targeting", () => {
           mutatePacketFor(routeId, (matches) => matches.map((match, index) =>
             index === 0 ? { ...match, direction: match.direction === "NB" ? "SB" : "NB" } : match)),
           mutatePacketFor(routeId, (matches) => matches.map((match, index) =>
-            index === 0 ? { ...match, matched_date: "2014-08-26" } : match)),
+            index === 0 ? { ...match, matched_date: "2099-01-01" } : match)),
           mutatePacketFor(routeId, (matches) => matches.map((match, index) =>
             index === 0 ? { ...match, sbs_routes: ["B12"] } : match)),
         ];
@@ -3621,22 +3639,91 @@ describe("bus-lane identity exact-date targeting", () => {
       }, rowFor("B12"), packetFor("B12")))
         .toThrow("Utica Avenue correction/context cardinality does not match the exact candidate route");
 
-      const b46Row = { ...rowFor("B12"), gtfs_route_id: "B46" };
-      const b46Packet = { ...packetFor("B12"), gtfs_route_id: "B46" };
+      const b8Receipt = receiptFor("B8");
+      const b8Context = positiveContext("B8");
       expect(validate({
-        ...b12Receipt,
+        ...b8Receipt,
+        supplemental_search: {
+          ...supplementalSearch("B8"),
+          positive_context_findings: [{
+            ...b8Context,
+            evidence_refs: b8Context.evidence_refs.filter((ref) => ref.page_number === 3),
+          }],
+        },
+      }, rowFor("B8"), packetFor("B8")))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+
+      expect(validate({
+        ...b8Receipt,
+        supplemental_search: {
+          ...supplementalSearch("B8"),
+          positive_context_findings: [{
+            ...b8Context,
+            context_finding: {
+              ...b8Context.context_finding,
+              supported_scope: "historical_project_intersection_connection_only",
+            },
+          }],
+        },
+      }, rowFor("B8"), packetFor("B8")))
+        .toThrow("positive context has an unsupported typed scope");
+
+      expect(validate({
+        ...b8Receipt,
+        supplemental_search: {
+          ...supplementalSearch("B8"),
+          positive_context_findings: [b8Context, b8Context],
+        },
+      }, rowFor("B8"), packetFor("B8")))
+        .toThrow("Utica Avenue correction/context cardinality does not match the exact candidate route");
+
+      const b46Row = { ...rowFor("B8"), gtfs_route_id: "B46" };
+      const b46Packet = { ...packetFor("B8"), gtfs_route_id: "B46" };
+      expect(validate({
+        ...b8Receipt,
         gtfs_route_id: "B46",
         supplemental_search: {
-          ...supplementalSearch("B12"),
-          exact_queries: supplementalSearch("B12").exact_queries.map((query) => ({
-            ...query, query: query.query.replace("B12", "B46"),
+          ...supplementalSearch("B8"),
+          exact_queries: supplementalSearch("B8").exact_queries.map((query) => ({
+            ...query, query: query.query.replace("B8", "B46"),
           })),
           positive_context_findings: [{
-            ...b12Context,
-            context_finding: { ...b12Context.context_finding, candidate_route_id: "B46" },
+            ...b8Context,
+            context_finding: { ...b8Context.context_finding, candidate_route_id: "B46" },
           }],
         },
       }, b46Row, b46Packet)).toThrow("does not bind the exact route to bounded corridor-service context");
+
+      const reducedB8 = packetFor("B8").unresolved_bindings.filter((binding) => binding !== "phase");
+      const reducedB8Packet = { ...packetFor("B8"), unresolved_bindings: reducedB8 };
+      expect(validate({
+        ...b8Receipt,
+        unresolved_bindings: reducedB8,
+        supplemental_search: {
+          ...supplementalSearch("B8"),
+          positive_context_findings: [{
+            ...b8Context,
+            context_finding: { ...b8Context.context_finding, unsupported_bindings: reducedB8 },
+            remaining_unresolved_bindings: reducedB8,
+          }],
+        },
+      }, rowFor("B8"), reducedB8Packet))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+
+      expect(validate({
+        ...b8Receipt,
+        supplemental_search: {
+          ...supplementalSearch("B8"),
+          positive_context_findings: [{ ...b8Context, authorizes_study: true }],
+        },
+      }, rowFor("B8"), packetFor("B8")))
+        .toThrow("outside-project-extent intersection context transferred to Utica Avenue lane service or traversal");
+
+      expect(validate({
+        ...b8Receipt,
+        occurrence_context: { occurrence_id: "occurrence_fake", accepted_decision_id: "decision_fake" },
+      }, rowFor("B8"), packetFor("B8")))
+        .toThrow("occurrence context is not bound to an accepted occurrence decision");
 
       const reduced = packetFor("B12").unresolved_bindings.filter((binding) => binding !== "phase");
       const reducedPacket = { ...packetFor("B12"), unresolved_bindings: reduced };
@@ -3675,6 +3762,19 @@ describe("bus-lane identity exact-date targeting", () => {
       };
       expect(validate(b12Receipt, traversalConfirmedRow, packetFor("B12")))
         .toThrow("historical project-intersection context transferred to Utica Avenue project service or traversal");
+
+      const b8TraversalConfirmedRow = {
+        ...rowFor("B8"),
+        dossier_refs: [{
+          ...rowFor("B8").dossier_refs[0]!,
+          candidate_target_match: true,
+          lane_group_id: "BK|UTICA AVENUE",
+          verdict_class: "traversal_confirmed" as const,
+          service_date: b8Date,
+        }],
+      };
+      expect(validate(b8Receipt, b8TraversalConfirmedRow, packetFor("B8")))
+        .toThrow("outside-project-extent intersection context transferred to Utica Avenue lane service or traversal");
     } finally {
       rmSync(rootDir, { recursive: true, force: true });
     }
