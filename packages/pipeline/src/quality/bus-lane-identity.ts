@@ -433,6 +433,35 @@ function isExactPennsylvaniaAvenuePacketTarget(
     stableJson(packet.unresolved_bindings) === stableJson(["attribution", "direction", "traversal"]);
 }
 
+function isExactMalcolmXPacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const group = packet.what_is_known.target_groups[0];
+  if (!group) return false;
+  const matches = group.feature_matches;
+  return row.gtfs_route_id === "B46+" && row.implementation_date === "2020-07-23" &&
+    packet.missing_binding === "traversal" &&
+    packet.what_is_known.target_groups.length === 1 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    group.lane_group_id === "BK|MALCOLM X BOULEVARD" &&
+    group.geometry_scope === "coextensive_with_lane_group" &&
+    stableJson(matches.map((match) => [
+      match.feature_key,
+      match.feature_id,
+      match.direction,
+      match.matched_date,
+      match.matched_token_literal,
+      match.open_dates_literal,
+      match.sbs_routes,
+    ])) === stableJson([
+      ["dot-lane-feature:3d68daf8efafa9f17294e4af", "0167508", "SB", "2020-07-23", "7/23/2020", "7/23/2020", []],
+      ["dot-lane-feature:ddb0d1878314da8126519bf8", "0167509", "SB", "2020-07-23", "7/23/2020", "7/23/2020", []],
+      ["dot-lane-feature:f0730cb4a0e5a70a3d333f36", "0043423", "SB", "2020-07-23", "7/23/2020", "7/23/2020", []],
+    ]) &&
+    stableJson(packet.unresolved_bindings) === stableJson(["attribution", "traversal"]);
+}
+
 function isoReviewTime(value: unknown, path: string): string {
   const timestamp = nonempty(value, path);
   const day = /^\d{4}-\d{2}-\d{2}$/u.test(timestamp);
@@ -1226,6 +1255,13 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
       throw new Error(`${receiptPath}: Pennsylvania Avenue packet target does not preserve exact ledger occurrence parity`);
     }
+    const malcolmXLedgerTarget = row.implementation_date === "2020-07-23" &&
+      row.onset_evidence.target_groups.length === 1 &&
+      row.onset_evidence.target_groups[0]?.lane_group_id === "BK|MALCOLM X BOULEVARD";
+    if (malcolmXLedgerTarget &&
+        stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
+      throw new Error(`${receiptPath}: Malcolm X packet target does not preserve exact ledger occurrence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -1362,6 +1398,9 @@ export function validateBindingReceiptDrafts(
     }
     if (pennsylvaniaAvenueLedgerTarget && receipt.supplemental_search === undefined) {
       throw new Error(`${receiptPath}: Pennsylvania Avenue review requires candidate-exact supplemental search`);
+    }
+    if (malcolmXLedgerTarget && receipt.supplemental_search === undefined) {
+      throw new Error(`${receiptPath}: Malcolm X review requires candidate-exact supplemental search`);
     }
     if (receipt.supplemental_search !== undefined) {
       const supplemental = object(receipt.supplemental_search, `${receiptPath}.supplemental_search`);
@@ -1846,13 +1885,17 @@ export function validateBindingReceiptDrafts(
             sourceId === "2013_09_24_sbs_utica_cb9" &&
             metadata.documentDate === "2013" &&
             metadata.sourceGroup === "select_bus_service";
+          const malcolmXMarch2020Source =
+            sourceId === "malcolm_x_blvd_utica_ave_mar2020" &&
+            metadata.documentDate === "2020-03" &&
+            metadata.sourceGroup === "bus_priority_document";
           if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
               metadataSha !== sourceContentSha256 || hash(readFileSync(sourceArtifactPath)) !== sourceContentSha256 ||
               (!proposalSourceTitle && !upperCorridorExistingConditionsTitle && !secondAvenueRedesignTitle &&
                 !west125SbsEnforcementTitle && !west178CorridorTitle && !churchAvenueTransitProjectTitle &&
                 !churchAvenueCorridorStudyTitle && !vanderbiltClermontSafetyMobilityTitle &&
                 !coneyIslandGravesendTransportationStudyTitle && !southernBrooklynB82March2018Source &&
-                !uticaAvenueSeptember2013StudySource) ||
+                !uticaAvenueSeptember2013StudySource && !malcolmXMarch2020Source) ||
               !supplementalUrls.includes(sourceUrl) ||
               !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
                 retrieval.sha256 === sourceContentSha256)) {
@@ -2053,6 +2096,34 @@ export function validateBindingReceiptDrafts(
               window.tokens.has("LOCAL") &&
               window.tokens.has("SBS") &&
               Math.max(...window.positions) - Math.min(...window.positions) <= 3);
+          const exactMalcolmXProjectWindow = malcolmXMarch2020Source &&
+            isExactMalcolmXPacketTarget(packet, row) &&
+            [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+              block.route &&
+              block.tokens.has("B46") &&
+              block.tokens.has("LOCAL") &&
+              block.tokens.has("SBS") &&
+              block.tokens.has("SELECT") &&
+              block.tokens.has("BUS") &&
+              block.tokens.has("SERVICE"))) &&
+            [...citedPageWindows.values()].some((window) =>
+              window.tokens.has("CURBSIDE") &&
+              window.tokens.has("BUS") &&
+              window.tokens.has("LANE") &&
+              window.tokens.has("CHAUNCEY") &&
+              window.tokens.has("FULTON") &&
+              window.tokens.has("SOUTHBOUND") &&
+              Math.max(...window.positions) - Math.min(...window.positions) <= 2) &&
+            [...citedPageWindows.values()].some((window) =>
+              window.tokens.has("MALCOLM") &&
+              window.tokens.has("X") &&
+              window.tokens.has("B46") &&
+              window.tokens.has("SPRING") &&
+              window.tokens.has("2020") &&
+              window.tokens.has("IMPLEMENT") &&
+              window.tokens.has("CHAUNCEY") &&
+              window.tokens.has("FULTON") &&
+              Math.max(...window.positions) - Math.min(...window.positions) <= 2);
           const exactUticaHistoricalProjectIntersectionWindow = uticaAvenueSeptember2013StudySource &&
             (row.gtfs_route_id === "B12" || row.gtfs_route_id === "B14") &&
             isExactUticaAvenuePacketTarget(packet, row) &&
@@ -2101,6 +2172,7 @@ export function validateBindingReceiptDrafts(
               !exactFultonAdjacentProjectEndpointWindow &&
               !exactGlenwoodHistoricalIntersectionWindow &&
               !exactKingsHighwayB82SbsProjectWindow &&
+              !exactMalcolmXProjectWindow &&
               !exactUticaHistoricalProjectIntersectionWindow &&
               !exactUticaHistoricalOutsideProjectIntersectionWindow) {
             throw new Error(`${contextPath}: staged source-block evidence does not bind the exact route to bounded corridor-service context`);
@@ -2205,13 +2277,17 @@ export function validateBindingReceiptDrafts(
                   !exactWest125ExtensionWindow &&
                   !exactWest178CorridorServiceWindow &&
                   !exactChurchAvenueProjectWindow &&
-                  !exactKingsHighwayB82SbsProjectWindow) ||
+                  !exactKingsHighwayB82SbsProjectWindow &&
+                  !exactMalcolmXProjectWindow) ||
                 (exactChurchAvenueProjectWindow &&
                   (!receiptUnresolved.includes("traversal") || candidateDateTraversalConfirmed)) ||
                 (exactKingsHighwayB82SbsProjectWindow &&
                   (!receiptUnresolved.includes("attribution") ||
                     !receiptUnresolved.includes("direction") ||
                     !receiptUnresolved.includes("traversal") ||
+                    candidateDateTraversalConfirmed)) ||
+                (exactMalcolmXProjectWindow &&
+                  (stableJson(receiptUnresolved) !== stableJson(["attribution", "traversal"]) ||
                     candidateDateTraversalConfirmed)) ||
                 object(prior.source_findings, `${contextPath}.prior.source_findings`)
                   .exact_project_route_statement_found !== true)) {
@@ -2351,6 +2427,57 @@ export function validateBindingReceiptDrafts(
             !hasExactQuery("official_public_board_committee") ||
             receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
           throw new Error(`${receiptPath}: Pennsylvania Avenue B83 pure-absence review contract does not match the exact candidate`);
+        }
+      }
+      if (malcolmXLedgerTarget) {
+        const correctionCount = supplemental.finding_corrections.length;
+        const contextCount = Array.isArray(supplemental.positive_context_findings)
+          ? supplemental.positive_context_findings.length
+          : 0;
+        const supplementalQueries = supplemental.exact_queries.map((value, index) =>
+          object(value, `${receiptPath}.supplemental_search.exact_queries[${index}]`));
+        const hasExactQuery = (category: string) => supplementalQueries.some((query) => {
+          if (query.category !== category) return false;
+          const literal = String(query.query).toUpperCase();
+          const tokens = literal.split(/[^A-Z0-9+]+/u).filter(Boolean);
+          return ["B46+", "MALCOLM", "X", "BOULEVARD"].every((token) => tokens.includes(token)) &&
+            literal.includes("2020-07-23");
+        });
+        const sourceFindings = object(prior.source_findings,
+          `${receiptPath}.prior.source_findings`);
+        const priorOutcome = object(prior.outcome, `${receiptPath}.prior.outcome`);
+        const priorClaims = object(prior.claim_results, `${receiptPath}.prior.claim_results`);
+        const canonicalActions = object(prior.canonical_actions,
+          `${receiptPath}.prior.canonical_actions`);
+        const bindingEvidence = Array.isArray(priorClaims.exact_route_binding_evidence)
+          ? priorClaims.exact_route_binding_evidence.map((value, index) =>
+            object(value, `${receiptPath}.prior.claim_results.exact_route_binding_evidence[${index}]`))
+          : [];
+        const exactAliasEvidence = bindingEvidence.length === 1 && bindingEvidence.every((evidence) => {
+          const officialRoutes = stringArray(evidence.official_routes,
+            `${receiptPath}.prior.claim_results.exact_route_binding_evidence.official_routes`, false);
+          const supportedClaim = String(evidence.supported_claim).toUpperCase();
+          return stableJson(officialRoutes) === stableJson(["B46+"]) &&
+            ["B46", "LOCAL", "SELECT", "BUS", "SERVICE"].every((token) => supportedClaim.includes(token));
+        });
+        if (!isExactMalcolmXPacketTarget(packet, row) ||
+            receipt.missing_binding !== "traversal" ||
+            stableJson(receiptUnresolved) !== stableJson(["attribution", "traversal"]) ||
+            correctionCount !== 0 || contextCount !== 1 ||
+            sourceFindings.exact_project_route_statement_found !== true ||
+            priorClaims.exact_route_treatment_binding_proved !== true ||
+            priorClaims.date_and_phase_proved !== false ||
+            priorClaims.exact_segment_binding_proved !== false ||
+            priorClaims.operational_occurrence_identity_proved !== false ||
+            priorOutcome.still_unresolved !== true ||
+            canonicalActions.operational_occurrence_added_or_updated !== false ||
+            stableJson(canonicalActions.existing_canonical_links_verified as JsonValue) !==
+              stableJson(["relation_b46-sbs-operates-on-malcolm-x"]) ||
+            !exactAliasEvidence || receipt.occurrence_context !== undefined ||
+            !hasExactQuery("official_nyc_dot_lane_project") ||
+            !hasExactQuery("official_public_board_committee") ||
+            receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
+          throw new Error(`${receiptPath}: Malcolm X B46+ nonterminal project-context contract does not match the exact candidate`);
         }
       }
     }

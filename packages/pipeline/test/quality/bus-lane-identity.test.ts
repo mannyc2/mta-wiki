@@ -4217,4 +4217,258 @@ describe("bus-lane identity exact-date targeting", () => {
       rmSync(rootDir, { recursive: true, force: true });
     }
   });
+
+  it("keeps B46+ Malcolm X project context nonterminal and separate from the exact lane rows", () => {
+    const date = "2020-07-23";
+    const entry = candidate("malcolm-b46-sbs", "B46+", date);
+    const [baseRow] = buildBusLaneIdentityLedger({
+      bridgeCandidates: [entry.bridge],
+      trackerCandidates: [entry.tracker],
+      routeAnchors: [anchor("B46+")],
+      dossierRows: [dossier({
+        candidateId: entry.bridge.candidate_id,
+        routeId: "B46+",
+        date,
+        laneGroupId: null,
+        pathSource: "unavailable",
+        pathIdentity: null,
+        reason: "historical_schedule_unavailable_pre_2023",
+      })],
+      dossierArtifact: "dossier.jsonl",
+      laneFeatures: ["0167508", "0167509", "0043423"].map((featureId) => lane({
+        feature_id: featureId,
+        lane_group_id: "BK|MALCOLM X BOULEVARD",
+        opened: "7/23/2020",
+        direction: "SB",
+        attributes: { open_dates: "7/23/2020", segmentid: featureId },
+      })),
+      laneSnapshotId: "lanes",
+      laneSourceId: "lane_source",
+      gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+    });
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-malcolm-x-"));
+    const receiptDir = join(rootDir, "receipts");
+    const acquiredDir = join(rootDir,
+      "data/quality/relationship-integrity/bus-lane-acquisition/supplemental/malcolm-fixture");
+    const sourceId = "malcolm_x_blvd_utica_ave_mar2020";
+    const sourceDir = join(rootDir, "raw", "sources", sourceId);
+    mkdirSync(receiptDir, { recursive: true });
+    mkdirSync(acquiredDir, { recursive: true });
+    mkdirSync(sourceDir, { recursive: true });
+    const projectUrl = "https://www.nyc.gov/html/brt/downloads/pdf/malcolm-x-blvd-utica-ave-mar2020.pdf";
+    const indexUrl = "https://www.nyc.gov/html/dot/html/about/projects-2020.shtml";
+    const projectBytes = Buffer.from("fixture Malcolm X March 2020 project PDF");
+    const projectHash = createHash("sha256").update(projectBytes).digest("hex");
+    const indexHash = createHash("sha256").update("fixture project index").digest("hex");
+    writeFileSync(join(sourceDir, "source.pdf"), projectBytes);
+    writeFileSync(join(sourceDir, "metadata.json"), JSON.stringify({
+      sourceId,
+      sourceUrl: projectUrl,
+      sha256: `sha256:${projectHash}`,
+      title: "Malcolm X Blvd / Utica Ave Transit Improvements – presented to Brooklyn Community Board 3 in March 2020 (pdf)",
+      documentDate: "2020-03",
+      sourceGroup: "bus_priority_document",
+    }));
+    const sourceBlocks = [
+      { block_id: "p004_c0001", page_number: 4,
+        raw_text: "BACKGROUND: B46 SELECT BUS SERVICE (SBS) ROUTE. Proposed B46 Local and B46 SBS." },
+      { block_id: "p014_c0002", page_number: 14,
+        raw_text: "Curbside bus lane, Chauncey St to Fulton St, southbound only." },
+      { block_id: "p016_c0002", page_number: 16,
+        raw_text: "Malcolm X Blvd B46 project timeline: Spring 2020 implement Chauncey St to Fulton St." },
+    ].map((block) => ({
+      source_id: sourceId,
+      ...block,
+      normalized_text: block.raw_text,
+      raw_text_sha256: `sha256:${createHash("sha256").update(block.raw_text).digest("hex")}`,
+    }));
+    writeFileSync(join(sourceDir, "blocks.jsonl"),
+      `${sourceBlocks.map((block) => JSON.stringify(block)).join("\n")}\n`);
+    writeFileSync(join(acquiredDir, "acquired-source-checks.json"), JSON.stringify({ sources: [
+      { url: projectUrl, content_sha256: projectHash, retrieval_status: "acquired" },
+      { url: indexUrl, content_sha256: indexHash, retrieval_status: "acquired" },
+    ] }));
+    const attempts = [
+      { category: "official_nyc_dot_lane_project",
+        query: "site:nyc.gov B46+ Malcolm X Boulevard 2020-07-23 lane project",
+        query_status: "performed_2026-07-15", urls_checked: [indexUrl],
+        retrievals: [{ id: "index", retrieved_on: "2026-07-15", sha256: indexHash, status: "acquired" }] },
+      { category: "official_public_board_committee",
+        query: "site:nyc.gov B46+ Malcolm X Boulevard 2020-07-23 public board",
+        query_status: "performed_2026-07-15", urls_checked: [projectUrl],
+        retrievals: [{ id: "project", retrieved_on: "2026-07-15", sha256: projectHash, status: "acquired" }] },
+    ];
+    const prior = {
+      receipt_id: "prior-malcolm",
+      researched_on: "2026-07-15",
+      source_findings: { exact_project_route_statement_found: true },
+      outcome: { still_unresolved: true },
+      canonical_actions: {
+        existing_canonical_links_verified: ["relation_b46-sbs-operates-on-malcolm-x"],
+        operational_occurrence_added_or_updated: false,
+      },
+      claim_results: {
+        date_and_phase_proved: false,
+        exact_route_treatment_binding_proved: true,
+        exact_segment_binding_proved: false,
+        operational_occurrence_identity_proved: false,
+        exact_route_binding_evidence: [{
+          official_routes: ["B46+"],
+          supported_claim: "The project identifies B46 Local and Select Bus Service as beneficiaries of the bus lane.",
+        }],
+      },
+      acquisition_attempts: attempts,
+    };
+    const priorLine = stableJson(prior as unknown as JsonValue);
+    writeFileSync(join(rootDir, "prior.jsonl"), `${priorLine}\n`);
+    const row = { ...baseRow!, prior_acquisition_receipt: {
+      receipt_id: prior.receipt_id,
+      artifact: "prior.jsonl",
+      row_sha256: createHash("sha256").update(priorLine).digest("hex"),
+      disposition: "linkage_supported_phase_unresolved",
+      next_action: "Retain only nonterminal project-corridor context.",
+    } };
+    const packet = buildBusLaneResearchPackets([row]).packets[0]!;
+    const targetFor = (candidatePacket = packet) => {
+      const groups = candidatePacket.what_is_known.target_groups;
+      const matches = groups.flatMap((group) => group.feature_matches);
+      return {
+        directions: [...new Set(matches.map((match) => match.direction))].sort(),
+        feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+        feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+        feature_row_count: matches.length,
+        feature_rows: matches.map((match) => ({
+          feature_key: match.feature_key, feature_id: match.feature_id, direction: match.direction,
+        })),
+        geometry_scopes: [...new Set(groups.map((group) => group.geometry_scope))].sort(),
+        lane_group_ids: groups.map((group) => group.lane_group_id),
+        matched_date: date,
+        named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+        open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+      };
+    };
+    const evidenceRefs = sourceBlocks.map((block) => ({
+      block_id: block.block_id, page_number: block.page_number, text_sha256: block.raw_text_sha256,
+    }));
+    const positiveContext = {
+      source_id: sourceId,
+      source_url: projectUrl,
+      source_pdf_sha256: projectHash,
+      evidence_refs: evidenceRefs,
+      context_finding: {
+        candidate_route_id: "B46+",
+        finding_kind: "positive_project_corridor_service_nonterminal",
+        supported_scope: "project_corridor_service_only",
+        unsupported_bindings: packet.unresolved_bindings,
+        finding_summary: "The source binds B46 Local and SBS to the Malcolm X project corridor, not the exact candidate rows, day, phase, or traversal.",
+      },
+      remaining_unresolved_bindings: packet.unresolved_bindings,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    };
+    const supplemental = {
+      domains: ["www.nyc.gov"],
+      exact_queries: [
+        { category: "official_nyc_dot_lane_project",
+          query: "site:nyc.gov B46+ Malcolm X Boulevard 2020-07-23 lane project",
+          query_status: "performed_2026-07-23_reviewed_results" },
+        { category: "official_public_board_committee",
+          query: "site:nyc.gov B46+ Malcolm X Boulevard 2020-07-23 public board",
+          query_status: "performed_2026-07-23_reviewed_results" },
+      ],
+      finding_corrections: [],
+      positive_context_findings: [positiveContext],
+      operator: "fixture-reviewer",
+      retrievals: [
+        { category: "official_nyc_dot_lane_project", retrieved_on: "2026-07-23",
+          sha256: indexHash, status: "acquired", url: indexUrl },
+        { category: "official_public_board_committee", retrieved_on: "2026-07-23",
+          sha256: projectHash, status: "acquired", url: projectUrl },
+      ],
+      searched_at: "2026-07-23T13:00:00Z",
+      urls_inspected: [indexUrl, projectUrl].sort(),
+    };
+    const receipt = {
+      schema_version: 1, receipt_id: "binding-malcolm", receipt_kind: "binding_absent_after_search",
+      candidate_id: row.candidate_id, candidate_fingerprint: row.candidate_fingerprint,
+      gtfs_route_id: "B46+", implementation_date: date, gap_ids: [row.ledger_id], searched_at: "2026-07-15",
+      operator: "fixture-reviewer", candidate_urls: [], disposition: "binding_absent_after_search",
+      missing_binding: "traversal", unresolved_bindings: ["attribution", "traversal"], target: targetFor(),
+      prior_receipt: { receipt_id: prior.receipt_id, artifact: "prior.jsonl",
+        row_sha256: row.prior_acquisition_receipt.row_sha256 },
+      search: {
+        exact_queries: attempts.map(({ category, query, query_status }) => ({ category, query, query_status })),
+        domains: ["www.nyc.gov"],
+        urls_inspected: [indexUrl, projectUrl].sort(),
+        retrievals: attempts.flatMap((attempt) => attempt.retrievals.map((retrieval) =>
+          ({ category: attempt.category, ...retrieval }))),
+        disposition: "binding_absent_after_search",
+      },
+      supplemental_search: supplemental,
+      authorizes_study: false, authorizes_cross_product: false,
+    };
+    const validate = (draft: Record<string, unknown>, candidateRow = row, candidatePacket = packet) => {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+      return () => validateBindingReceiptDrafts([candidateRow], [candidatePacket], receiptDir, rootDir);
+    };
+    const drift = (transform: (match: typeof packet.what_is_known.target_groups[0]["feature_matches"][number],
+      index: number) => typeof packet.what_is_known.target_groups[0]["feature_matches"][number]) => {
+      const targetGroups = packet.what_is_known.target_groups.map((group) => ({
+        ...group, feature_matches: group.feature_matches.map(transform),
+      }));
+      const candidatePacket = { ...packet, what_is_known: { ...packet.what_is_known, target_groups: targetGroups } };
+      const candidateRow = { ...row, onset_evidence: { ...row.onset_evidence, target_groups: targetGroups } };
+      return { candidatePacket, candidateRow, draft: { ...receipt, target: targetFor(candidatePacket) } };
+    };
+    try {
+      expect(packet.missing_binding).toBe("traversal");
+      expect(packet.unresolved_bindings).toEqual(["attribution", "traversal"]);
+      expect(targetFor()).toMatchObject({
+        feature_row_count: 3, feature_ids: ["0043423", "0167508", "0167509"], directions: ["SB"],
+        named_sbs_routes: [], open_dates_literals: ["7/23/2020"],
+      });
+      expect(validate(receipt)).not.toThrow();
+      for (const altered of [
+        drift((match, index) => index === 0 ? { ...match, feature_key: `${match.feature_key}-drift` } : match),
+        drift((match, index) => index === 0 ? { ...match, feature_id: "9999999" } : match),
+        drift((match, index) => index === 0 ? { ...match, direction: "NB" } : match),
+        drift((match, index) => index === 0 ? { ...match, matched_date: "2020-07-24" } : match),
+        drift((match, index) => index === 0 ? { ...match, sbs_routes: ["B46"] } : match),
+      ]) {
+        expect(validate(altered.draft, altered.candidateRow, altered.candidatePacket)).toThrow();
+      }
+      const reversedGroups = packet.what_is_known.target_groups.map((group) => ({
+        ...group, feature_matches: [...group.feature_matches].reverse(),
+      }));
+      const reversedPacket = { ...packet, what_is_known: { ...packet.what_is_known, target_groups: reversedGroups } };
+      const reversedRow = { ...row, onset_evidence: { ...row.onset_evidence, target_groups: reversedGroups } };
+      expect(validate({ ...receipt, target: targetFor(reversedPacket) }, reversedRow, reversedPacket)).toThrow();
+      expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+        positive_context_findings: [] } }))
+        .toThrow("Malcolm X B46+ nonterminal project-context contract does not match the exact candidate");
+      expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+        positive_context_findings: [positiveContext, positiveContext] } }))
+        .toThrow("Malcolm X B46+ nonterminal project-context contract does not match the exact candidate");
+      expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+        positive_context_findings: [{ ...positiveContext, context_finding: {
+          ...positiveContext.context_finding, supported_scope: "other_extent_corridor_service_only",
+        } }] } })).toThrow();
+      expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+        positive_context_findings: [{ ...positiveContext, remaining_unresolved_bindings: ["traversal"] }] } }))
+        .toThrow("positive context exceeds its nonauthorizing project-corridor scope");
+      expect(validate({ ...receipt, supplemental_search: { ...supplemental,
+        positive_context_findings: [{ ...positiveContext, authorizes_study: true }] } })).toThrow();
+      expect(validate({ ...receipt,
+        occurrence_context: { occurrence_id: "occurrence_fake", accepted_decision_id: "decision_fake" } }))
+        .toThrow("occurrence context is not bound to an accepted occurrence decision");
+      const traversalRow = { ...row, dossier_refs: [{ ...row.dossier_refs[0]!,
+        candidate_target_match: true, lane_group_id: "BK|MALCOLM X BOULEVARD",
+        verdict_class: "traversal_confirmed" as const, service_date: date,
+      }] };
+      expect(validate(receipt, traversalRow, packet))
+        .toThrow("positive context exceeds its nonauthorizing project-corridor scope");
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
 });
