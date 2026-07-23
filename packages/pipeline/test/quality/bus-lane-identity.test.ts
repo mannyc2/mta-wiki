@@ -6270,6 +6270,253 @@ describe("bus-lane identity exact-date targeting", () => {
     }
   });
 
+  it("closes Hylan Boulevard only with exact row multiset, route variants, corrections, and context guards", () => {
+    const repoRoot = join(import.meta.dir, "../../../..");
+    const batch = JSON.parse(readFileSync(join(repoRoot,
+      "data/quality/acquisition/packets/bus-lane/batches/bus-lane-si-hylan-boulevard-2020-09-12-part-01.json"),
+    "utf8")) as { packet_paths: string[] };
+    const packets = batch.packet_paths.map((path) => JSON.parse(readFileSync(join(repoRoot,
+      "data/quality/acquisition/packets/bus-lane", path), "utf8")) as BusLaneResearchPacket);
+    const candidateIds = new Set(packets.map((packet) => packet.candidate_id));
+    const rows = readFileSync(join(repoRoot,
+      "data/quality/operational-reference/bus-lane-identity-ledger.jsonl"), "utf8")
+      .split(/\r?\n/u).filter(Boolean).map((line) => JSON.parse(line) as BusLaneIdentityRow)
+      .filter((row) => candidateIds.has(row.candidate_id));
+    const rowByRoute = new Map(rows.map((row) => [row.gtfs_route_id, row]));
+    const packetByRoute = new Map(packets.map((packet) => [packet.gtfs_route_id, packet]));
+    const receiptSuffixByRoute = new Map([
+      ["S76", "16e0e60f8e880dc597230f7a"], ["S54", "c8862d0897cd8139b5dba145"],
+      ["S51", "1bfb6a0873a9a5ef6820dbd3"], ["S57", "74271321ca59023588d6b781"],
+      ["S86", "e9c2ea7af1339e9e4bb13a3b"], ["S79+", "a752f6f8238320181e5620eb"],
+      ["S81", "bca279e86a4d58eb5c677788"], ["S78", "4cf493edf20b1d1aeb3a4873"],
+      ["SIM9", "c09954b9260f7c2f6415aa18"], ["SIM7", "425c315d65b09fb2167aa15f"],
+    ]);
+    const receiptByRoute = new Map([...receiptSuffixByRoute].map(([routeId, suffix]) => [routeId,
+      JSON.parse(readFileSync(join(repoRoot,
+        `data/quality/acquisition/receipts/bus-lane-review/${suffix}.json`), "utf8")) as Record<string, any>,
+    ]));
+    const correctionRoutes = new Set(["S54", "S57", "S76", "S86"]);
+    const supportedRoutes = new Set(["S57", "S78", "S79+", "SIM7", "SIM9"]);
+    const priorArtifact =
+      "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/receipts.jsonl";
+    const priorLines = readFileSync(join(repoRoot, priorArtifact), "utf8").split(/\r?\n/u).filter(Boolean);
+    const priorLineById = new Map(priorLines.map((line) => {
+      const parsed = JSON.parse(line) as { receipt_id: string };
+      return [parsed.receipt_id, line];
+    }));
+    const selectedPriorLines = rows.map((row) => priorLineById.get(
+      row.prior_acquisition_receipt!.receipt_id)!).filter(Boolean);
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-hylan-boulevard-"));
+    const receiptDir = join(rootDir, "receipts");
+    const tempPriorPath = join(rootDir, priorArtifact);
+    const sourceRoot = join(rootDir, "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22");
+    const acquiredChecksPath = join(rootDir,
+      "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/acquired-source-checks.json");
+    mkdirSync(receiptDir, { recursive: true });
+    mkdirSync(join(tempPriorPath, ".."), { recursive: true });
+    mkdirSync(sourceRoot, { recursive: true });
+    mkdirSync(join(acquiredChecksPath, ".."), { recursive: true });
+    writeFileSync(tempPriorPath, `${selectedPriorLines.join("\n")}\n`);
+    copyFileSync(join(repoRoot,
+      "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/metadata.json"),
+    join(sourceRoot, "metadata.json"));
+    copyFileSync(join(repoRoot,
+      "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/source.geojson"),
+    join(sourceRoot, "source.geojson"));
+    copyFileSync(join(repoRoot,
+      "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/acquired-source-checks.json"),
+    acquiredChecksPath);
+    const targetFor = (packet: BusLaneResearchPacket, row: BusLaneIdentityRow) => {
+      const groups = packet.what_is_known.target_groups;
+      const matches = groups.flatMap((group) => group.feature_matches);
+      return {
+        directions: [...new Set(matches.map((match) => match.direction))].sort(),
+        feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+        feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+        feature_row_count: matches.length,
+        feature_rows: matches.map((match) => ({
+          feature_key: match.feature_key, feature_id: match.feature_id, direction: match.direction,
+        })),
+        geometry_scopes: [...new Set(groups.map((group) => group.geometry_scope))].sort(),
+        lane_group_ids: groups.map((group) => group.lane_group_id),
+        matched_date: row.implementation_date,
+        named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+        open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+      };
+    };
+    const validate = (
+      draft: Record<string, unknown>,
+      row: BusLaneIdentityRow,
+      packet: BusLaneResearchPacket,
+    ) => {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+      return () => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir);
+    };
+    const withGroup = (
+      routeId: string,
+      group: BusLaneResearchPacket["what_is_known"]["target_groups"][number],
+    ) => {
+      const baseRow = rowByRoute.get(routeId)!;
+      const basePacket = packetByRoute.get(routeId)!;
+      const candidateRow = { ...baseRow, onset_evidence: { ...baseRow.onset_evidence, target_groups: [group] } };
+      const candidatePacket = { ...basePacket, what_is_known: {
+        ...basePacket.what_is_known, target_groups: [group],
+      } };
+      const receipt = { ...receiptByRoute.get(routeId)!, target: targetFor(candidatePacket, candidateRow) };
+      return { candidateRow, candidatePacket, receipt };
+    };
+    try {
+      expect(rows).toHaveLength(10);
+      expect(receiptByRoute.size).toBe(10);
+      expect([...receiptByRoute.values()].filter((receipt) => receipt.finding_corrections)).toHaveLength(4);
+      expect([...receiptByRoute.values()].filter((receipt) =>
+        receipt.project_context.candidate_route_inventory_match)).toHaveLength(5);
+      for (const packet of packets) {
+        const row = rowByRoute.get(packet.gtfs_route_id)!;
+        const receipt = receiptByRoute.get(packet.gtfs_route_id)!;
+        expect(receipt.target).toMatchObject({
+          lane_group_ids: ["SI|HYLAN BOULEVARD"], feature_row_count: 95,
+          directions: ["NB", "SB"], named_sbs_routes: ["S79"],
+          open_dates_literals: ["9/12/20", "9/12/2020"],
+        });
+        expect(receipt.target.feature_keys).toHaveLength(93);
+        expect(receipt.target.feature_ids).toHaveLength(93);
+        expect(receipt.target.feature_rows).toHaveLength(95);
+        expect(Boolean(receipt.finding_corrections)).toBe(correctionRoutes.has(row.gtfs_route_id));
+        expect(receipt.project_context.candidate_route_inventory_match)
+          .toBe(supportedRoutes.has(row.gtfs_route_id));
+        expect(receipt.project_context.better_buses_context_only).toBe(true);
+        expect(receipt.project_context.better_buses_candidate_route_binding_promoted).toBe(false);
+        expect(validate(receipt, row, packet)).not.toThrow();
+      }
+
+      const routeId = "S76";
+      const row = rowByRoute.get(routeId)!;
+      const packet = packetByRoute.get(routeId)!;
+      const receipt = receiptByRoute.get(routeId)!;
+      const group = packet.what_is_known.target_groups[0]!;
+      const reordered = withGroup(routeId, { ...group, feature_matches: [
+        group.feature_matches[1]!, group.feature_matches[0]!, ...group.feature_matches.slice(2),
+      ] });
+      expect(validate(reordered.receipt, reordered.candidateRow, reordered.candidatePacket))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      const removed = withGroup(routeId, { ...group, feature_matches: group.feature_matches.slice(1) });
+      expect(validate(removed.receipt, removed.candidateRow, removed.candidatePacket))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      const deduplicated = withGroup(routeId, { ...group, feature_matches: group.feature_matches.filter(
+        (match, index) => match.feature_key !== "dot-lane-feature:ca472df22407614bd0b3418f" ||
+          group.feature_matches.findIndex((candidate) => candidate.feature_key === match.feature_key) === index),
+      });
+      expect(validate(deduplicated.receipt, deduplicated.candidateRow, deduplicated.candidatePacket))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      const retokened = withGroup(routeId, { ...group, feature_matches: group.feature_matches.map((match) =>
+        match.open_dates_literal === "9/12/20"
+          ? { ...match, matched_token_literal: "9/12/2020", open_dates_literal: "9/12/2020" }
+          : match),
+      });
+      expect(validate(retokened.receipt, retokened.candidateRow, retokened.candidatePacket))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      const namedUnnamedRow = withGroup(routeId, { ...group, feature_matches: group.feature_matches.map((match) =>
+        match.feature_id === "0155447" ? { ...match, sbs_routes: ["S79"] } : match),
+      });
+      expect(validate(namedUnnamedRow.receipt, namedUnnamedRow.candidateRow, namedUnnamedRow.candidatePacket))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      const removedSbs = withGroup(routeId, { ...group, feature_matches: group.feature_matches.map((match, index) =>
+        index === 0 ? { ...match, sbs_routes: [] } : match),
+      });
+      expect(validate(removedSbs.receipt, removedSbs.candidateRow, removedSbs.candidatePacket))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      const redirected = withGroup(routeId, { ...group, feature_matches: group.feature_matches.map((match, index) =>
+        index === 0 ? { ...match, direction: "NB" } : match),
+      });
+      expect(validate(redirected.receipt, redirected.candidateRow, redirected.candidatePacket))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      const renamedGroup = withGroup(routeId, { ...group, facility: "Hylan Blvd" });
+      expect(validate(renamedGroup.receipt, renamedGroup.candidateRow, renamedGroup.candidatePacket))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+
+      const dossierRefs = packet.what_is_known.dossier_refs.map((ref) => ({
+        ...ref, candidate_target_match: true,
+      }));
+      const dossierRow = { ...row, dossier_refs: dossierRefs };
+      const dossierPacket = { ...packet, what_is_known: {
+        ...packet.what_is_known, dossier_refs: dossierRefs,
+        dossier_summary: { ...packet.what_is_known.dossier_summary, target_row_count: 1 },
+      } };
+      expect(validate(receipt, dossierRow, dossierPacket))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+
+      expect(validate({ ...receipt, finding_corrections: undefined }, row, packet))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      const correction = receipt.finding_corrections[0];
+      expect(validate({ ...receipt, finding_corrections: [{ ...correction, corrected_finding: {
+        ...correction.corrected_finding, current_feature_row_count: 93,
+      } }] }, row, packet)).toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      const s51Row = rowByRoute.get("S51")!;
+      const s51Packet = packetByRoute.get("S51")!;
+      const s51Receipt = receiptByRoute.get("S51")!;
+      expect(validate({ ...s51Receipt, finding_corrections: [] }, s51Row, s51Packet))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      expect(validate({ ...receipt, project_context: {
+        ...receipt.project_context, better_buses_context_only: false,
+      } }, row, packet)).toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      expect(validate({ ...receipt, project_context: {
+        ...receipt.project_context, better_buses_candidate_route_binding_promoted: true,
+      } }, row, packet)).toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      expect(validate({ ...receipt, project_context: {
+        ...receipt.project_context, exact_current_target_bound: true,
+      } }, row, packet)).toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+
+      const s79Row = rowByRoute.get("S79+")!;
+      const s79Packet = packetByRoute.get("S79+")!;
+      const s79Receipt = receiptByRoute.get("S79+")!;
+      expect(s79Receipt.project_context).toMatchObject({
+        normalized_candidate_route_id: "S79",
+        candidate_route_named_sbs_intersection: ["S79"],
+      });
+      expect(validate({ ...s79Receipt, project_context: {
+        ...s79Receipt.project_context, normalized_candidate_route_id: "S79+",
+      } }, s79Row, s79Packet)).toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      expect(validate({ ...s79Receipt, project_context: {
+        ...s79Receipt.project_context, candidate_route_named_sbs_intersection: [],
+      } }, s79Row, s79Packet)).toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+
+      const priorLine = priorLineById.get(row.prior_acquisition_receipt!.receipt_id)!;
+      const prior = JSON.parse(priorLine) as Record<string, any>;
+      const tamperedPriorLine = stableJson({ ...prior, source_findings: {
+        ...prior.source_findings, official_lane_matching_record_count: 95,
+      } } as JsonValue);
+      const tamperedPriorSha = createHash("sha256").update(tamperedPriorLine).digest("hex");
+      writeFileSync(tempPriorPath, `${selectedPriorLines.map((line) =>
+        line === priorLine ? tamperedPriorLine : line).join("\n")}\n`);
+      const tamperedPointer = { ...row.prior_acquisition_receipt!, row_sha256: tamperedPriorSha };
+      const tamperedRow = { ...row, prior_acquisition_receipt: tamperedPointer };
+      const tamperedPacket = { ...packet, what_is_known: {
+        ...packet.what_is_known, prior_acquisition_receipt: tamperedPointer,
+      } };
+      expect(validate({ ...receipt, prior_receipt: tamperedPointer }, tamperedRow, tamperedPacket))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      writeFileSync(tempPriorPath, `${selectedPriorLines.join("\n")}\n`);
+
+      writeFileSync(join(sourceRoot, "source.geojson"), "{}\n");
+      expect(validate(receipt, row, packet))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+      copyFileSync(join(repoRoot,
+        "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/source.geojson"),
+      join(sourceRoot, "source.geojson"));
+      const acquiredChecks = JSON.parse(readFileSync(acquiredChecksPath, "utf8")) as {
+        sources: Record<string, unknown>[];
+      };
+      writeFileSync(acquiredChecksPath, JSON.stringify({ sources: acquiredChecks.sources.map((source) =>
+        source.id === "hylan_completion" ? { ...source, note: `${String(source.note)} Tampered.` } : source),
+      }));
+      expect(validate(receipt, row, packet))
+        .toThrow("Hylan Boulevard absence contract does not match the exact candidate");
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
+
   it("closes SIM23 and SIM24 only as zero-target nonrefutational absences", () => {
     const date = "2015-05-27";
     const priorReceiptIds = new Map([

@@ -846,6 +846,108 @@ const UNIVERSITY_AVENUE_CURRENT_SOURCE = {
   artifact: "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/source.geojson",
   sha256: "e09e001191c53799936884f4e8311873a03bf9ff4f38e1f0b86af4ba465b6ef5",
 };
+const HYLAN_BOULEVARD_PROJECT_ROUTES = [
+  "S57", "S78", "S79", "SIM1", "SIM5", "SIM6", "SIM7", "SIM9", "SIM10", "SIM11",
+];
+const HYLAN_BOULEVARD_PRIOR_RECEIPTS = new Map([
+  ["S76", {
+    receiptId: "staten-island-acquisition:791cd1a5390b2690a606434e",
+    rowSha256: "eb7b342b515beb081cbf1e075ada2dfdfe6a9ef38528fcf49f40da63e71793c6",
+    dossierSha256: "7282dfd32f592605b2089cca9221c58e3de07a8975338bfc56f818b0557f2856",
+    routePageSha256: "027f8002a5ff95e1d8f7acdeb9cb114e9be1c972b8b7b388a4d1762f2fed100d",
+    corridor: "Hylan Boulevard", normalizedRouteId: "S76", supported: false,
+    priorRowCount: 93, priorIdCount: 91, requiresCorrection: true,
+  }],
+  ["S54", {
+    receiptId: "staten-island-acquisition:839f2982191afb3f77096421",
+    rowSha256: "a65a3d2d4e03d569eee85e82a8fa734600ab0dc9e33d084c0857cc705672d06b",
+    dossierSha256: "2a25b1140bfffc180fabd0208ec3099739b6f58dd6f8452faf5ef812a53966f1",
+    routePageSha256: "75e6be16124274861ba9f91997ea9df2e815415032f3b6579d531e3483c2c95c",
+    corridor: "Hylan Boulevard", normalizedRouteId: "S54", supported: false,
+    priorRowCount: 93, priorIdCount: 91, requiresCorrection: true,
+  }],
+  ["S51", {
+    receiptId: "staten-island-acquisition:b861e5881bd1c982c55d676d",
+    rowSha256: "ee314409a59a2f51d7b6f9eb238def02e5db98b74a34ca74a59eba1fd2cfc377",
+    dossierSha256: "2e641568f3e96dcea6d70bdc07258824793b444b49b8f4e410956691253b6027",
+    routePageSha256: "4b138199ec01617df223db5c86c437cb43d8ee6c969fb25a5ea26c899fb5ff9f",
+    corridor: "Hylan Bl / Hylan Boulevard", normalizedRouteId: "S51", supported: false,
+    priorRowCount: 95, priorIdCount: 93, requiresCorrection: false,
+  }],
+  ["S57", {
+    receiptId: "staten-island-acquisition:c564b98820920821657e6d80",
+    rowSha256: "1cd548fa867e069d109bd708f5f985dae259506bf628028735633743c83aada2",
+    dossierSha256: "c4792f26a2803ee317d0aa363dbd2e44301eb8077cd077b01351c99643ddb135",
+    routePageSha256: "cb0f15cf87b5433362627405a167b2e9e752a1f0bbf9df32a1db50b375ef8c39",
+    corridor: "Hylan Boulevard", normalizedRouteId: "S57", supported: true,
+    priorRowCount: 93, priorIdCount: 91, requiresCorrection: true,
+  }],
+  ["S86", {
+    receiptId: "staten-island-acquisition:d1a0a747537f3f030e39aef9",
+    rowSha256: "1fa2d90de619d314b61763b16389f45da7c878f10e5378e028686dfbb9aaa004",
+    dossierSha256: "ea3c0ce4d4931deb596557881c5ffa7c85f2d84b7cabec1cf8e4924a4aaddab5",
+    routePageSha256: "dd97d5c3e74762d052338e458e462fbaaceef965833e907b22c886bbe9add82c",
+    corridor: "Hylan Boulevard", normalizedRouteId: "S86", supported: false,
+    priorRowCount: 93, priorIdCount: 91, requiresCorrection: true,
+  }],
+  ["S79+", {
+    receiptId: "staten-island-acquisition:bc6b9f7f68086e41c193a4f9",
+    rowSha256: "d8b9e6c96fe11f31e88d8224e7b42838aa23dcbda418213bc8c6c075f7f8a6d5",
+    dossierSha256: "ed31821400dc637e024823b33fff02aa36ed02d57759e62a1e3f2f5d8a1892d4",
+    routePageSha256: "6923c820fed035569b002371168f288b3406e3e397c0e2fb78e2c550580f02ee",
+    corridor: "Hylan Bl / Hylan Boulevard", normalizedRouteId: "S79", supported: true,
+    priorRowCount: 95, priorIdCount: 93, requiresCorrection: false,
+  }],
+  ["S81", {
+    receiptId: "staten-island-acquisition:65535c503df5068ef84717b8",
+    rowSha256: "35dd2f21027e9252d4c945150c3bf9b924246c165449747c40af0dce202c55f3",
+    dossierSha256: "dc0c6db13d3b8f0efdc67fc311b3b59750a50c78eadfc961e1a36405493cd76e",
+    routePageSha256: "3edc01ba78d894cbe1d8f58956c5433e5f22fbbef2af5cfb801211d8bdb0b85f",
+    corridor: "Hylan Bl / Hylan Boulevard", normalizedRouteId: "S81", supported: false,
+    priorRowCount: 95, priorIdCount: 93, requiresCorrection: false,
+  }],
+  ["S78", {
+    receiptId: "staten-island-acquisition:d0de3d5be89d77a091788fb4",
+    rowSha256: "0e00c186f4ce862d0ad34d7a99001bfa34d979daeb26ab196dd1e7f5c9e5a14d",
+    dossierSha256: "fb680fc3a2e08a1bc6cbf182fb32b63d189b9e669ae939ecb8dbcc4eb8575ccb",
+    routePageSha256: "ad6a08d1982e91821d3f77ee48b6546b476d6e01e3cca81ea87cf2bfd751747b",
+    corridor: "Hylan Bl / Hylan Boulevard", normalizedRouteId: "S78", supported: true,
+    priorRowCount: 95, priorIdCount: 93, requiresCorrection: false,
+  }],
+  ["SIM9", {
+    receiptId: "staten-island-acquisition:949dd12809ad59ff8d747c7f",
+    rowSha256: "62be7fe175bfdd73a851db6352ad96f19727eb6e9cb28217db1fd8203fa5f7ee",
+    dossierSha256: "1f3157c0a90fb51d98c0391eedbbaccfeb44376cde6109296de00009e705e4c5",
+    routePageSha256: "a8558dcf53970d2a1371a9c1f71db490b1d0d803c18c13d3cf362b5874b2f9b2",
+    corridor: "Hylan Bl / Hylan Boulevard", normalizedRouteId: "SIM9", supported: true,
+    priorRowCount: 95, priorIdCount: 93, requiresCorrection: false,
+  }],
+  ["SIM7", {
+    receiptId: "staten-island-acquisition:2e5e06c451778eb002a219dd",
+    rowSha256: "0bf94d5ab336dab4dd8c02088289be49eb60e6b8e05d747c40a3a6f75210f12a",
+    dossierSha256: "aec190b7c9da0b2457d5f501493fa256947850d5d4b7ec2e98f226cae30b7d8b",
+    routePageSha256: "d80659e0f4c5fae76319fe2a8d420e5ce7045350c98d23eb5377c6f5175e8e7e",
+    corridor: "Hylan Bl / Hylan Boulevard", normalizedRouteId: "SIM7", supported: true,
+    priorRowCount: 95, priorIdCount: 93, requiresCorrection: false,
+  }],
+]);
+const HYLAN_BOULEVARD_FEATURE_ROWS_SHA256 =
+  "8b01c2acf7e5328510bb3f69e8753c492d4d796cbd8c6e53afce31397c78d2c0";
+const HYLAN_BOULEVARD_CONTEXT_SOURCES = {
+  cab: {
+    sourceId: "hylan_cb_july_2020",
+    url: "https://www.nyc.gov/html/dot/downloads/pdf/hylan-blvd-lincoln-ave-nelson-ave-cab-jul2020.pdf",
+    sha256: "dd1e1bb0dce3d7b956dcfc01d0c96c67ffe0b7e3cb19e017659fa78faa0e4296",
+    note: "Official Hylan Boulevard CAB presentation defines the 2020 lane extension and inventories the routes in its project analysis.",
+  },
+  completion: {
+    sourceId: "hylan_completion",
+    url: "https://www.nyc.gov/html/dot/html/pr2021/better-buses-mid-island-hylan-blvd-complete.shtml",
+    sha256: "885e45aaf202ab5e566516926af9f80b826aeeb0cd55d33f8d5c2aaa544df1c9",
+    note: "NYC DOT completion release documents the Hylan Boulevard extension and eleven-route corridor context.",
+  },
+};
+const HYLAN_BOULEVARD_CURRENT_SOURCE = UNIVERSITY_AVENUE_CURRENT_SOURCE;
 
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
@@ -1128,6 +1230,72 @@ function isExactUniversityAvenuePacketTarget(
       ref.verdict_class === "geometry_ambiguous") &&
     stableJson(packet.what_is_known.dossier_summary) === stableJson(expectedDossierSummary) &&
     stableJson(packet.unresolved_bindings) === stableJson(expectedUnresolvedBindings);
+}
+
+function isExactHylanBoulevardPacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const priorContract = HYLAN_BOULEVARD_PRIOR_RECEIPTS.get(row.gtfs_route_id);
+  const group = packet.what_is_known.target_groups[0];
+  const dossierRef = packet.what_is_known.dossier_refs[0];
+  if (!priorContract || !group || !dossierRef) return false;
+  const featureRows = group.feature_matches.map((match) => [
+    match.feature_key,
+    match.feature_id,
+    match.direction,
+    match.matched_date,
+    match.matched_token_literal,
+    match.open_dates_literal,
+    match.sbs_routes,
+  ]);
+  const featureKeys = [...new Set(group.feature_matches.map((match) => match.feature_key))];
+  const featureIds = [...new Set(group.feature_matches.map((match) => match.feature_id))];
+  const duplicateRows = group.feature_matches.filter((match) =>
+    match.feature_key === "dot-lane-feature:ca472df22407614bd0b3418f");
+  const shortLiteralRows = group.feature_matches.filter((match) =>
+    match.matched_token_literal === "9/12/20" && match.open_dates_literal === "9/12/20");
+  return row.implementation_date === "2020-09-12" &&
+    packet.missing_binding === "feature_extent" &&
+    packet.what_is_known.target_groups.length === 1 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    group.lane_group_id === "SI|HYLAN BOULEVARD" && group.borough === "SI" &&
+    group.facility === "Hylan Boulevard" && group.street === "HYLAN BOULEVARD" &&
+    group.geometry_scope === "mixed_date_feature_union" &&
+    group.feature_matches.length === 95 && featureKeys.length === 93 && featureIds.length === 93 &&
+    hash(stableJson(featureRows as JsonValue)) === HYLAN_BOULEVARD_FEATURE_ROWS_SHA256 &&
+    stableJson([...new Set(group.feature_matches.map((match) => match.direction))].sort()) ===
+      stableJson(["NB", "SB"]) &&
+    group.feature_matches.filter((match) => match.direction === "NB").length === 65 &&
+    group.feature_matches.filter((match) => match.direction === "SB").length === 30 &&
+    shortLiteralRows.length === 2 &&
+    stableJson(shortLiteralRows.map((match) => match.feature_id).sort()) ===
+      stableJson(["0152288", "0155475"]) &&
+    group.feature_matches.filter((match) => match.matched_token_literal === "9/12/2020" &&
+      match.open_dates_literal === "9/12/2020").length === 93 &&
+    group.feature_matches.filter((match) => stableJson(match.sbs_routes) === stableJson(["S79"])).length === 94 &&
+    group.feature_matches.filter((match) => match.sbs_routes.length === 0).length === 1 &&
+    group.feature_matches.some((match) => match.feature_key === "dot-lane-feature:4e7c18c39d8ce3861c9bd160" &&
+      match.feature_id === "0155447" && match.direction === "SB" && match.sbs_routes.length === 0) &&
+    duplicateRows.length === 3 && duplicateRows.every((match) => match.feature_id === "0155364" &&
+      match.direction === "NB" && stableJson(match.sbs_routes) === stableJson(["S79"])) &&
+    stableJson(packet.what_is_known.dossier_refs) === stableJson(row.dossier_refs) &&
+    hash(stableJson(packet.what_is_known.dossier_refs)) === priorContract.dossierSha256 &&
+    packet.what_is_known.dossier_refs.length === 1 && dossierRef.candidate_target_match === false &&
+    dossierRef.path_source === "unavailable" && dossierRef.reason === "historical_schedule_unavailable_pre_2023" &&
+    dossierRef.verdict_class === "geometry_ambiguous" && dossierRef.service_date === null &&
+    dossierRef.temporal_lag_days === null && dossierRef.direction === null && dossierRef.path_identity === null &&
+    dossierRef.lane_group_id === null && dossierRef.stop_coordinate_coverage === 0 &&
+    dossierRef.overlap_miles === 0 && dossierRef.overlap_share === 0 && dossierRef.span_stop_ids.length === 0 &&
+    stableJson(packet.what_is_known.dossier_summary) === stableJson({
+      counts_by_path_source: { gtfs_shape: 0, historical_schedule_timepoint_pattern: 0, unavailable: 1 },
+      counts_by_reason: { historical_schedule_unavailable_pre_2023: 1 },
+      counts_by_verdict: { geometry_ambiguous: 1, no_traversal: 0, traversal_confirmed: 0, traversal_marginal: 0 },
+      row_count: 1,
+      target_row_count: 0,
+    }) &&
+    stableJson(packet.unresolved_bindings) ===
+      stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"]);
 }
 
 function isoReviewTime(value: unknown, path: string): string {
@@ -1996,6 +2164,16 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs)) {
       throw new Error(`${receiptPath}: University Avenue packet dossier does not preserve exact ledger evidence parity`);
     }
+    const hylanBoulevardLedgerTarget = row.implementation_date === "2020-09-12" &&
+      HYLAN_BOULEVARD_PRIOR_RECEIPTS.has(row.gtfs_route_id);
+    if (hylanBoulevardLedgerTarget &&
+        stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
+      throw new Error(`${receiptPath}: Hylan Boulevard packet target does not preserve exact ledger occurrence parity`);
+    }
+    if (hylanBoulevardLedgerTarget &&
+        stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs)) {
+      throw new Error(`${receiptPath}: Hylan Boulevard packet dossier does not preserve exact ledger evidence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -2778,6 +2956,214 @@ export function validateBindingReceiptDrafts(
           hash(readFileSync(currentSourcePath)) !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sha256 ||
           receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
         throw new Error(`${receiptPath}: University Avenue absence contract does not match the exact candidate`);
+      }
+    }
+    if (hylanBoulevardLedgerTarget) {
+      const priorContract = HYLAN_BOULEVARD_PRIOR_RECEIPTS.get(row.gtfs_route_id)!;
+      const priorCandidate = object(prior.candidate, `${receiptPath}.prior.candidate`);
+      const sourceFindings = object(prior.source_findings, `${receiptPath}.prior.source_findings`);
+      const priorOutcome = object(prior.outcome, `${receiptPath}.prior.outcome`);
+      const priorClaims = object(prior.claim_results, `${receiptPath}.prior.claim_results`);
+      const canonicalActions = object(prior.canonical_actions, `${receiptPath}.prior.canonical_actions`);
+      const routePage = object(sourceFindings.mta_route_page,
+        `${receiptPath}.prior.source_findings.mta_route_page`);
+      const exactRouteEvidence = Array.isArray(priorClaims.exact_route_binding_evidence)
+        ? priorClaims.exact_route_binding_evidence.map((value, index) =>
+          object(value, `${receiptPath}.prior.claim_results.exact_route_binding_evidence[${index}]`))
+        : null;
+      const priorSegmentIds = Array.isArray(sourceFindings.official_lane_matching_segment_ids)
+        ? sourceFindings.official_lane_matching_segment_ids
+        : null;
+      const routeNamedSegmentIds = Array.isArray(sourceFindings.official_route_named_segment_ids)
+        ? sourceFindings.official_route_named_segment_ids
+        : null;
+      const supported = priorContract.supported;
+      const normalizedSbsVariant = row.gtfs_route_id === "S79+";
+      const currentTargetGroupsSha256 = hash(stableJson(row.onset_evidence.target_groups));
+      const expectedCorrection = {
+        correction_kind: "prior_hylan_short_year_literals_omitted_from_accounting",
+        prior_claim_paths: [
+          "source_findings.official_lane_matching_record_count",
+          "source_findings.official_lane_matching_segment_ids",
+        ],
+        prior_claim_value: {
+          feature_row_count: priorContract.priorRowCount,
+          distinct_feature_id_count: priorContract.priorIdCount,
+        },
+        supersedes_prior_finding: true,
+        corrected_finding: {
+          finding_summary: "The immutable prior accounting omitted the two current target rows whose exact source literal uses a two-digit year; the prior row remains immutable while this receipt records the corrected complete target.",
+          current_feature_row_count: 95,
+          current_feature_key_count: 93,
+          current_feature_id_count: 93,
+          restored_features: [
+            {
+              feature_key: "dot-lane-feature:2cae9c880cf555e51af7f9cb",
+              feature_id: "0152288",
+              direction: "NB",
+              open_dates_literal: "9/12/20",
+              named_sbs_routes: ["S79"],
+            },
+            {
+              feature_key: "dot-lane-feature:d320e2075200f9257ad08392",
+              feature_id: "0155475",
+              direction: "NB",
+              open_dates_literal: "9/12/20",
+              named_sbs_routes: ["S79"],
+            },
+          ],
+          current_feature_rows_sha256: HYLAN_BOULEVARD_FEATURE_ROWS_SHA256,
+          current_target_groups_sha256: currentTargetGroupsSha256,
+        },
+        evidence: {
+          candidate_fingerprint: row.candidate_fingerprint,
+          ledger_id: row.ledger_id,
+          packet_id: packet.packet_id,
+          lane_snapshot_id: row.onset_evidence.lane_snapshot_id,
+          source_id: HYLAN_BOULEVARD_CURRENT_SOURCE.sourceId,
+          source_artifact: HYLAN_BOULEVARD_CURRENT_SOURCE.artifact,
+          source_sha256: HYLAN_BOULEVARD_CURRENT_SOURCE.sha256,
+        },
+        remaining_unresolved_bindings: [
+          "attribution", "direction", "feature_extent", "phase", "traversal",
+        ],
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      const expectedProjectContext = {
+        finding_kind: "hylan_extension_and_route_context_nonterminal",
+        cab_source_id: HYLAN_BOULEVARD_CONTEXT_SOURCES.cab.sourceId,
+        cab_source_url: HYLAN_BOULEVARD_CONTEXT_SOURCES.cab.url,
+        cab_source_content_sha256: HYLAN_BOULEVARD_CONTEXT_SOURCES.cab.sha256,
+        cab_project_route_ids: HYLAN_BOULEVARD_PROJECT_ROUTES,
+        candidate_route_id: row.gtfs_route_id,
+        normalized_candidate_route_id: priorContract.normalizedRouteId,
+        candidate_route_inventory_match: supported,
+        better_buses_source_id: HYLAN_BOULEVARD_CONTEXT_SOURCES.completion.sourceId,
+        better_buses_source_url: HYLAN_BOULEVARD_CONTEXT_SOURCES.completion.url,
+        better_buses_source_content_sha256: HYLAN_BOULEVARD_CONTEXT_SOURCES.completion.sha256,
+        better_buses_context_only: true,
+        better_buses_candidate_route_binding_promoted: false,
+        registry_named_sbs_routes: ["S79"],
+        candidate_route_named_sbs_intersection: normalizedSbsVariant ? ["S79"] : [],
+        exact_current_target_bound: false,
+        candidate_date_or_phase_bound: false,
+        traversal_bound: false,
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      const correctionSentence = priorContract.requiresCorrection
+        ? " The prior 93-row/91-ID accounting omitted the two current rows with exact 9/12/20 literals; this receipt corrects the complete current target to 95 ordered rows, 93 keys, and 93 IDs without mutating the prior row."
+        : "";
+      const rationalePrefix = normalizedSbsVariant
+        ? "The immutable Staten Island acquisition preserves the distinct S79+ ledger identity while normalizing the route to S79, and it records 94 registry rows whose SBS field names S79 plus official CAB route-treatment context; neither source binds every row of the exact current target to a stable candidate phase."
+        : supported
+          ? `The immutable Staten Island acquisition acquired official CAB route-treatment context naming ${row.gtfs_route_id}, but it does not bind ${row.gtfs_route_id} to every row of the exact current target or to a stable candidate phase.`
+          : `The immutable Staten Island acquisition found no authoritative exact ${row.gtfs_route_id} route-treatment binding to the current Hylan Boulevard target.`;
+      const expectedRationale = `${rationalePrefix}${correctionSentence} The exact target is the ordered 95-row, 93-key, 93-ID mixed-date feature union on Hylan Boulevard: 65 northbound and 30 southbound rows, with 93 exact 9/12/2020 literals and two exact 9/12/20 literals. Registry SBS fields name S79 on 94 rows, leave one row unnamed, and preserve one identical feature row three times. The acquired Better Buses completion release is corridor-extension context only and does not prove this candidate's exact target, date-versus-phase identity, or traversal. The historical schedule dossier is unavailable before 2023 (one geometry-ambiguous row, zero target-tagged). Attribution, direction, feature extent, phase, and traversal remain unresolved. This is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`;
+      const exactCandidateQuery = exactQueries.some((query) => {
+        if (query.category !== "official_mta_route_project") return false;
+        const tokens = query.query.toUpperCase().split(/[^A-Z0-9+]+/u).filter(Boolean);
+        return [row.gtfs_route_id, "HYLAN", "BOULEVARD"].every((token) => tokens.includes(token));
+      });
+      const cabRetrieval = retrievals.some((retrieval) => {
+        const record = retrieval as Record<string, unknown>;
+        return retrieval.category === "official_public_board_committee" &&
+          record.id === HYLAN_BOULEVARD_CONTEXT_SOURCES.cab.sourceId &&
+          record.sha256 === HYLAN_BOULEVARD_CONTEXT_SOURCES.cab.sha256 && record.status === "acquired";
+      });
+      const completionRetrieval = retrievals.some((retrieval) => {
+        const record = retrieval as Record<string, unknown>;
+        return retrieval.category === "official_nyc_dot_lane_project" &&
+          record.id === HYLAN_BOULEVARD_CONTEXT_SOURCES.completion.sourceId &&
+          record.sha256 === HYLAN_BOULEVARD_CONTEXT_SOURCES.completion.sha256 && record.status === "acquired";
+      });
+      const acquiredCabSource = acquiredSourceRecords.find((source) =>
+        source.id === HYLAN_BOULEVARD_CONTEXT_SOURCES.cab.sourceId);
+      const acquiredCompletionSource = acquiredSourceRecords.find((source) =>
+        source.id === HYLAN_BOULEVARD_CONTEXT_SOURCES.completion.sourceId);
+      const currentSourcePath = resolve(rootDir, HYLAN_BOULEVARD_CURRENT_SOURCE.artifact);
+      const currentSourceMetadataPath = resolve(rootDir, "raw", "sources",
+        HYLAN_BOULEVARD_CURRENT_SOURCE.sourceId, "metadata.json");
+      const currentSourceMetadata = existsSync(currentSourceMetadataPath)
+        ? object(JSON.parse(readFileSync(currentSourceMetadataPath, "utf8")), currentSourceMetadataPath)
+        : {};
+      const currentSourceMetadataSha = typeof currentSourceMetadata.sha256 === "string"
+        ? currentSourceMetadata.sha256.replace(/^sha256:/u, "")
+        : null;
+      const projectRouteEvidence = exactRouteEvidence?.filter((evidence) =>
+        evidence.evidence_kind === "official_project_route_statement");
+      const registryRouteEvidence = exactRouteEvidence?.filter((evidence) =>
+        evidence.evidence_kind === "official_dot_lane_registry_row");
+      if (!isExactHylanBoulevardPacketTarget(packet, row) ||
+          priorPointer.receipt_id !== priorContract.receiptId ||
+          priorPointer.row_sha256 !== priorContract.rowSha256 ||
+          priorPointer.artifact !==
+            "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/receipts.jsonl" ||
+          priorPointer.disposition !== priorOutcome.exclusive_primary_disposition ||
+          priorPointer.next_action !== priorOutcome.next_action ||
+          priorCandidate.candidate_id !== row.candidate_id ||
+          priorCandidate.normalized_route_id !== priorContract.normalizedRouteId ||
+          priorCandidate.route_id !== row.gtfs_route_id || priorCandidate.corridor !== priorContract.corridor ||
+          priorCandidate.implementation_date !== row.implementation_date ||
+          priorCandidate.identity !== `${row.gtfs_route_id}|bus_lane|2020-09-12|day` ||
+          receipt.missing_binding !== "feature_extent" || target.feature_row_count !== 95 ||
+          !Array.isArray(target.feature_keys) || target.feature_keys.length !== 93 ||
+          !Array.isArray(target.feature_ids) || target.feature_ids.length !== 93 ||
+          !Array.isArray(target.feature_rows) || target.feature_rows.length !== 95 ||
+          receipt.rationale !== expectedRationale ||
+          (priorContract.requiresCorrection
+            ? stableJson(receipt.finding_corrections as JsonValue) !==
+              stableJson([expectedCorrection] as unknown as JsonValue)
+            : receipt.finding_corrections !== undefined) ||
+          stableJson(receipt.project_context as JsonValue) !==
+            stableJson(expectedProjectContext as unknown as JsonValue) ||
+          receipt.supplemental_search !== undefined || receipt.occurrence_context !== undefined ||
+          receipt.context_receipt !== undefined || sourceFindings.acquired_for_candidate !== true ||
+          sourceFindings.candidate_named_lane_record_count !== (normalizedSbsVariant ? 94 : 0) ||
+          sourceFindings.official_lane_matching_record_count !== priorContract.priorRowCount ||
+          !priorSegmentIds || priorSegmentIds.length !== priorContract.priorIdCount ||
+          new Set(priorSegmentIds).size !== priorContract.priorIdCount ||
+          stableJson(sourceFindings.official_lane_named_routes as JsonValue) !== stableJson(["S79"]) ||
+          stableJson(sourceFindings.official_project_route_inventory as JsonValue) !==
+            stableJson(HYLAN_BOULEVARD_PROJECT_ROUTES) ||
+          !routeNamedSegmentIds || routeNamedSegmentIds.length !== (normalizedSbsVariant ? 92 : 0) ||
+          sourceFindings.exact_project_route_statement_found !== supported ||
+          sourceFindings.exact_project_route_source_id !== (supported ? "hylan_cb_july_2020" : null) ||
+          sourceFindings.broader_corridor_route_inventory_match !== supported ||
+          routePage.content_sha256 !== priorContract.routePageSha256 ||
+          routePage.exact_route_title_found !== true || routePage.current_corridor_token_found !== true ||
+          routePage.retrieval_status !== "acquired" ||
+          typeof routePage.temporal_limitation !== "string" || !routePage.temporal_limitation ||
+          priorOutcome.exclusive_primary_disposition !==
+            (supported ? "linkage_supported_phase_unresolved" : "completed_search_route_linkage_unresolved") ||
+          priorOutcome.registry_projection_excluded !== true || priorOutcome.still_unresolved !== true ||
+          priorOutcome.study_projection_eligible !== false || priorClaims.physical_bus_lane_record_acquired !== true ||
+          priorClaims.candidate_segment_ids_pinned !== false || priorClaims.date_and_phase_proved !== false ||
+          priorClaims.exact_route_treatment_binding_proved !== supported ||
+          priorClaims.exact_segment_binding_proved !== false || priorClaims.explicit_phase_identity_proved !== false ||
+          priorClaims.operational_occurrence_identity_proved !== false || !exactRouteEvidence ||
+          projectRouteEvidence?.length !== (supported ? 1 : 0) ||
+          registryRouteEvidence?.length !== (normalizedSbsVariant ? 94 : 0) ||
+          stableJson(priorClaims.exact_segment_ids as JsonValue) !== stableJson([]) ||
+          stableJson(canonicalActions.canonical_links_added as JsonValue) !== stableJson([]) ||
+          canonicalActions.operational_occurrence_added_or_updated !== false ||
+          !exactCandidateQuery || !cabRetrieval || !completionRetrieval ||
+          !acquiredCabSource || acquiredCabSource.url !== HYLAN_BOULEVARD_CONTEXT_SOURCES.cab.url ||
+          acquiredCabSource.content_sha256 !== HYLAN_BOULEVARD_CONTEXT_SOURCES.cab.sha256 ||
+          acquiredCabSource.retrieval_status !== "acquired" ||
+          acquiredCabSource.note !== HYLAN_BOULEVARD_CONTEXT_SOURCES.cab.note ||
+          !acquiredCompletionSource || acquiredCompletionSource.url !== HYLAN_BOULEVARD_CONTEXT_SOURCES.completion.url ||
+          acquiredCompletionSource.content_sha256 !== HYLAN_BOULEVARD_CONTEXT_SOURCES.completion.sha256 ||
+          acquiredCompletionSource.retrieval_status !== "acquired" ||
+          acquiredCompletionSource.note !== HYLAN_BOULEVARD_CONTEXT_SOURCES.completion.note ||
+          row.onset_evidence.lane_snapshot_id !== "nyc-dot-bus-lanes-local-streets-2026-07-22" ||
+          row.onset_evidence.lane_source_id !== HYLAN_BOULEVARD_CURRENT_SOURCE.sourceId ||
+          currentSourceMetadata.sourceId !== HYLAN_BOULEVARD_CURRENT_SOURCE.sourceId ||
+          currentSourceMetadataSha !== HYLAN_BOULEVARD_CURRENT_SOURCE.sha256 ||
+          !existsSync(currentSourcePath) || hash(readFileSync(currentSourcePath)) !== HYLAN_BOULEVARD_CURRENT_SOURCE.sha256 ||
+          receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
+        throw new Error(`${receiptPath}: Hylan Boulevard absence contract does not match the exact candidate (${row.gtfs_route_id})`);
       }
     }
     if (receipt.supplemental_search !== undefined) {
