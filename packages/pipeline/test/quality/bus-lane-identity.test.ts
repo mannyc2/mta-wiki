@@ -10,6 +10,7 @@ import {
   buildBusLaneResearchPackets,
   buildEastGunHillBindingReceiptDraft,
   buildFrCapodannoBindingReceiptDraft,
+  buildTwentyFirstStreetBindingReceiptDraft,
   candidateLaneTargets,
   normalizeOpenDateToken,
   parseBusLaneIdentityDecision,
@@ -7112,6 +7113,275 @@ describe("bus-lane identity exact-date targeting", () => {
           : line;
       }).join("\n")}\n`);
       expect(validate(receipt)).toThrow();
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
+
+  it("closes Q103 and Q104 on 21 Street only with the exact mixed-direction target and explicit source gap", () => {
+    const repoRoot = join(import.meta.dir, "../../../..");
+    const packetPaths = [
+      join(repoRoot, "data/quality/acquisition/packets/bus-lane/packets/734bee5255654fbd9e1f06b4.json"),
+      join(repoRoot, "data/quality/acquisition/packets/bus-lane/packets/43d8d4908a15ceff1c34fee9.json"),
+    ];
+    const packets = packetPaths.map((path) =>
+      JSON.parse(readFileSync(path, "utf8")) as BusLaneResearchPacket);
+    const ledgerRows = readFileSync(join(repoRoot,
+      "data/quality/operational-reference/bus-lane-identity-ledger.jsonl"), "utf8")
+      .split(/\r?\n/u).filter(Boolean).map((line) => JSON.parse(line) as BusLaneIdentityRow);
+    const rowByRoute = new Map(packets.map((packet) => [
+      packet.gtfs_route_id,
+      ledgerRows.find((row) => row.candidate_id === packet.candidate_id)!,
+    ]));
+    const packetByRoute = new Map(packets.map((packet) => [packet.gtfs_route_id, packet]));
+    const expectedByRoute = new Map(packets.map((packet) => {
+      const row = rowByRoute.get(packet.gtfs_route_id)!;
+      return [packet.gtfs_route_id, buildTwentyFirstStreetBindingReceiptDraft(row, packet)];
+    }));
+    const receiptByRoute = new Map([...expectedByRoute].map(([routeId, expected]) => {
+      const suffix = String(expected.receipt_id).split(":")[1];
+      const receipt = JSON.parse(readFileSync(join(repoRoot,
+        `data/quality/acquisition/receipts/bus-lane-review/${suffix}.json`), "utf8")) as Record<string, any>;
+      return [routeId, receipt];
+    }));
+    const priorArtifact =
+      "data/quality/relationship-integrity/bus-lane-acquisition/shards/queens/receipts.jsonl";
+    const acquiredArtifact =
+      "data/quality/relationship-integrity/bus-lane-acquisition/shards/queens/acquired-source-checks.json";
+    const sourcePageArtifact = "wiki/sources/nyc_dot_21st_street_bus_priority_completion_2022.md";
+    const journalArtifact =
+      "data/submissions/2026-07-15T18-00-00-000Z_queens-acquisition-linkage-remediation.jsonl";
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-21-street-"));
+    const receiptDir = join(rootDir, "receipts");
+    const currentSourceRoot = join(rootDir, "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22");
+    const stagedSourceRoot = join(rootDir, "raw/sources/meeting_doc_85816");
+    mkdirSync(receiptDir, { recursive: true });
+    mkdirSync(currentSourceRoot, { recursive: true });
+    mkdirSync(stagedSourceRoot, { recursive: true });
+    for (const file of ["metadata.json", "source.geojson"]) {
+      copyFileSync(join(repoRoot, "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22", file),
+        join(currentSourceRoot, file));
+    }
+    for (const file of ["metadata.json", "source.pdf", "blocks.jsonl"]) {
+      copyFileSync(join(repoRoot, "raw/sources/meeting_doc_85816", file), join(stagedSourceRoot, file));
+    }
+    for (const artifact of [priorArtifact, acquiredArtifact, sourcePageArtifact, journalArtifact]) {
+      const destination = join(rootDir, artifact);
+      mkdirSync(join(destination, ".."), { recursive: true });
+      copyFileSync(join(repoRoot, artifact), destination);
+    }
+    const validate = (
+      draft: Record<string, unknown>,
+      row: BusLaneIdentityRow,
+      packet: BusLaneResearchPacket,
+    ) => {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+      return () => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir);
+    };
+    const targetFor = (packet: BusLaneResearchPacket, row: BusLaneIdentityRow) => {
+      const groups = packet.what_is_known.target_groups;
+      const matches = groups.flatMap((group) => group.feature_matches);
+      return {
+        directions: [...new Set(matches.map((match) => match.direction))].sort(),
+        feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+        feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+        feature_row_count: matches.length,
+        feature_rows: matches.map((match) => ({
+          direction: match.direction, feature_id: match.feature_id, feature_key: match.feature_key,
+        })),
+        geometry_scopes: [...new Set(groups.map((group) => group.geometry_scope))].sort(),
+        lane_group_ids: groups.map((group) => group.lane_group_id),
+        matched_date: row.implementation_date,
+        named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+        open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+      };
+    };
+    const exactError = "21 Street absence contract does not match the exact candidate";
+    try {
+      for (const routeId of ["Q103", "Q104"]) {
+        const row = rowByRoute.get(routeId)!;
+        const packet = packetByRoute.get(routeId)!;
+        const receipt = receiptByRoute.get(routeId)!;
+        expect(receipt).toEqual(expectedByRoute.get(routeId)!);
+        expect(packet.missing_binding).toBe("feature_extent");
+        expect(packet.unresolved_bindings).toEqual([
+          "attribution", "direction", "feature_extent", "phase", "traversal",
+        ]);
+        expect(receipt.target).toMatchObject({
+          lane_group_ids: ["QNS|21 STREET"],
+          feature_row_count: 100,
+          directions: ["NB", "SB"],
+          named_sbs_routes: [],
+          open_dates_literals: ["8/15/2022"],
+        });
+        expect(receipt.target.feature_keys).toHaveLength(100);
+        expect(receipt.target.feature_ids).toHaveLength(51);
+        expect(receipt.context_evidence[0]).toMatchObject({
+          candidate_date_bound: false,
+          candidate_direction_bound: false,
+          candidate_exact_target_bound: false,
+          candidate_phase_bound: false,
+          candidate_route_named: routeId === "Q103",
+          candidate_traversal_bound: false,
+          context_only: true,
+          derived_materialization_used_as_source_evidence: false,
+          generic_project_route_context: routeId === "Q103",
+          not_candidate_refutation: true,
+          raw_source_available: false,
+          route_scope: routeId === "Q103" ? "one_block_unspecified" : null,
+        });
+        expect(receipt.source_gap).toMatchObject({
+          accepted_journal_available: true,
+          candidate_specific_authoritative_raw_source_available: false,
+          derived_release_records_used_as_source_evidence: false,
+          generated_source_page_available: true,
+          prior_only_route_page_retrieval: {
+            id: `mta_bustime_${routeId}`,
+            acquired_check_record_available: false,
+            raw_content_retention_independently_verified: false,
+            used_as_source_evidence: false,
+          },
+          prior_staged_source_claim_resolves: false,
+          staged_context_source_available: true,
+          staged_context_source_proves_candidate_binding: false,
+        });
+        expect(receipt.source_gap.nonretained_acquisition_records).toHaveLength(6);
+        expect(receipt.search.urls_inspected).toHaveLength(8);
+        expect(validate(receipt, row, packet)).not.toThrow();
+
+        const suffix = String(receipt.receipt_id).split(":")[1];
+        const reviewedRow = {
+          ...row,
+          decision_id: `bus-lane-identity-decision:${suffix}`,
+          receipt_ids: [String(receipt.receipt_id)],
+          unresolved_bindings: [...packet.unresolved_bindings],
+          updated_at: "2026-07-23T20:00:00Z",
+          verdict: "binding_absent_after_search",
+          verdict_basis: `review:bus-lane-identity-decision:${suffix}`,
+        } as BusLaneIdentityRow;
+        writeFileSync(join(receiptDir, "draft.json"), stableJson(receipt as JsonValue));
+        expect(() => validateReviewedReceiptRefs([reviewedRow], receiptDir)).not.toThrow();
+        writeFileSync(join(receiptDir, "draft.json"), stableJson({
+          ...receipt, search: { ...receipt.search, urls_inspected: [] },
+        } as JsonValue));
+        expect(() => validateReviewedReceiptRefs([reviewedRow], receiptDir))
+          .toThrow("absent-after-search receipt requires non-empty urls_inspected");
+
+        expect(validate(receipt, row, {
+          ...packet, missing_binding: "phase", unresolved_bindings: ["phase"],
+        })).toThrow();
+        for (const binding of ["attribution", "direction", "feature_extent", "phase", "traversal"] as const) {
+          expect(validate(receipt, row, {
+            ...packet,
+            unresolved_bindings: packet.unresolved_bindings.filter((value) => value !== binding),
+          })).toThrow();
+          expect(validate({
+            ...receipt,
+            unresolved_bindings: receipt.unresolved_bindings.filter((value: string) => value !== binding),
+          }, row, packet)).toThrow();
+        }
+
+        const group = packet.what_is_known.target_groups[0]!;
+        const withGroup = (candidateGroup: typeof group) => {
+          const candidateRow = { ...row, onset_evidence: {
+            ...row.onset_evidence, target_groups: [candidateGroup],
+          } };
+          const candidatePacket = { ...packet, what_is_known: {
+            ...packet.what_is_known, target_groups: [candidateGroup],
+          } };
+          return {
+            candidateRow,
+            candidatePacket,
+            draft: { ...receipt, target: targetFor(candidatePacket, candidateRow) },
+          };
+        };
+        const reordered = withGroup({ ...group, feature_matches: [
+          group.feature_matches[1]!, group.feature_matches[0]!, ...group.feature_matches.slice(2),
+        ] });
+        expect(validate(reordered.draft, reordered.candidateRow, reordered.candidatePacket)).toThrow(exactError);
+        const removed = withGroup({ ...group, feature_matches: group.feature_matches.slice(1) });
+        expect(validate(removed.draft, removed.candidateRow, removed.candidatePacket)).toThrow(exactError);
+        const redirected = withGroup({ ...group, feature_matches: group.feature_matches.map((match, index) =>
+          index === 0 ? { ...match, direction: match.direction === "NB" ? "SB" : "NB" } : match) });
+        expect(validate(redirected.draft, redirected.candidateRow, redirected.candidatePacket)).toThrow(exactError);
+        const retokened = withGroup({ ...group, feature_matches: group.feature_matches.map((match, index) =>
+          index === 0 ? { ...match, matched_token_literal: "08/15/2022" } : match) });
+        expect(validate(retokened.draft, retokened.candidateRow, retokened.candidatePacket)).toThrow(exactError);
+        const attributed = withGroup({ ...group, feature_matches: group.feature_matches.map((match, index) =>
+          index === 0 ? { ...match, sbs_routes: [routeId] } : match) });
+        expect(validate(attributed.draft, attributed.candidateRow, attributed.candidatePacket)).toThrow(exactError);
+
+        const dossierRefs = packet.what_is_known.dossier_refs.map((ref) => ({
+          ...ref, candidate_target_match: true, direction: "NB", lane_group_id: "QNS|21 STREET",
+        }));
+        const dossierRow = { ...row, dossier_refs: dossierRefs };
+        const dossierPacket = { ...packet, what_is_known: {
+          ...packet.what_is_known,
+          dossier_refs: dossierRefs,
+          dossier_summary: { ...packet.what_is_known.dossier_summary, target_row_count: 1 },
+        } };
+        expect(validate(receipt, dossierRow, dossierPacket)).toThrow();
+        expect(validate({
+          ...receipt,
+          context_evidence: receipt.context_evidence.map(
+            (context: Record<string, unknown>, index: number) => index === 0
+              ? { ...context, candidate_direction_bound: true } : context),
+        }, row, packet)).toThrow(exactError);
+        expect(validate({
+          ...receipt,
+          source_gap: { ...receipt.source_gap, derived_release_records_used_as_source_evidence: true },
+        }, row, packet)).toThrow(exactError);
+        expect(validate({ ...receipt, authorizes_study: true }, row, packet)).toThrow(exactError);
+      }
+
+      const q103Row = rowByRoute.get("Q103")!;
+      const q103Packet = packetByRoute.get("Q103")!;
+      const q103Receipt = receiptByRoute.get("Q103")!;
+      const q104Receipt = receiptByRoute.get("Q104")!;
+      expect(validate(q104Receipt, q103Row, q103Packet)).toThrow();
+
+      const missingRawRoot = join(rootDir,
+        "raw/sources/nyc_dot_21st_street_bus_priority_completion_2022");
+      mkdirSync(missingRawRoot, { recursive: true });
+      expect(validate(q103Receipt, q103Row, q103Packet)).toThrow(exactError);
+      rmSync(missingRawRoot, { recursive: true, force: true });
+
+      const stagedSourcePath = join(stagedSourceRoot, "source.pdf");
+      writeFileSync(stagedSourcePath, "fabricated\n");
+      expect(validate(q103Receipt, q103Row, q103Packet)).toThrow(exactError);
+      copyFileSync(join(repoRoot, "raw/sources/meeting_doc_85816/source.pdf"), stagedSourcePath);
+
+      const acquiredChecksPath = join(rootDir, acquiredArtifact);
+      const acquiredChecks = JSON.parse(readFileSync(acquiredChecksPath, "utf8")) as {
+        sources: Record<string, unknown>[];
+      };
+      writeFileSync(acquiredChecksPath, JSON.stringify({ sources: acquiredChecks.sources.map((source) =>
+        source.id === "twenty_first_completion_press"
+          ? { ...source, raw_content_retained: true } : source) }));
+      expect(validate(q103Receipt, q103Row, q103Packet)).toThrow(exactError);
+      copyFileSync(join(repoRoot, acquiredArtifact), acquiredChecksPath);
+
+      const priorPath = join(rootDir, priorArtifact);
+      const priorLines = readFileSync(priorPath, "utf8").split(/\r?\n/u).filter(Boolean);
+      writeFileSync(priorPath, `${priorLines.map((line) => {
+        const prior = JSON.parse(line);
+        return prior.receipt_id === "queens-acquisition:af4b7b3e814f442db262a1fc"
+          ? stableJson({ ...prior, canonical_actions: {
+            ...prior.canonical_actions, operational_occurrence_added_or_updated: true,
+          } } as JsonValue)
+          : line;
+      }).join("\n")}\n`);
+      expect(validate(q103Receipt, q103Row, q103Packet)).toThrow(exactError);
+      copyFileSync(join(repoRoot, priorArtifact), priorPath);
+
+      const sourcePagePath = join(rootDir, sourcePageArtifact);
+      writeFileSync(sourcePagePath, `${readFileSync(sourcePagePath, "utf8")}\n`);
+      expect(validate(q103Receipt, q103Row, q103Packet)).toThrow(exactError);
+      copyFileSync(join(repoRoot, sourcePageArtifact), sourcePagePath);
+
+      const journalPath = join(rootDir, journalArtifact);
+      writeFileSync(journalPath, `${readFileSync(journalPath, "utf8")}\n`);
+      expect(validate(q103Receipt, q103Row, q103Packet)).toThrow(exactError);
     } finally {
       rmSync(rootDir, { recursive: true, force: true });
     }

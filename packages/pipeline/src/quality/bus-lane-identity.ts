@@ -1157,6 +1157,114 @@ const FR_CAPODANNO_ACQUIRED_CHECKS = {
   },
 };
 
+const TWENTY_FIRST_STREET_PRIOR_ARTIFACT =
+  "data/quality/relationship-integrity/bus-lane-acquisition/shards/queens/receipts.jsonl";
+const TWENTY_FIRST_STREET_PRIOR_ARTIFACT_SHA256 =
+  "950c9c7844027edf6607fba3f957bb4a6252e9dbc0f2dcddf5aac2162b9c9e41";
+const TWENTY_FIRST_STREET_PRIORS = new Map([
+  ["Q103", {
+    receiptId: "queens-acquisition:af4b7b3e814f442db262a1fc",
+    rowSha256: "f7be172947d698703d954f0c024f6be1aaf382163d191f5931d4955155d1939d",
+    routePageSha256: "6c330282481861eb8fd407a082f2eee7dbc744dffaa84182c4a63a464900884a",
+    routeSupported: true,
+    historicalPieceCount: 7,
+    historicalPiecePhrase: "7 matched segment(s)",
+    disposition: "linkage_supported_phase_unresolved",
+  }],
+  ["Q104", {
+    receiptId: "queens-acquisition:7b1a77736c8fc78b02f399c5",
+    rowSha256: "e4cf4a64dcc7a0d076a8b5278168a782327d58da2c880cd5646aececefb35cc1",
+    routePageSha256: "a6f26a9d33e126cfe61b8d07d1bb04b5a893b3ffbb738ea37297f76f21834a6a",
+    routeSupported: false,
+    historicalPieceCount: 6,
+    historicalPiecePhrase: "6 candidate-date lane piece(s)",
+    disposition: "completed_search_route_linkage_unresolved",
+  }],
+]);
+const TWENTY_FIRST_STREET_RECEIPT_SUFFIXES = new Map([
+  ["Q103", "f0caf947f0e1a0ff295e6db1"],
+  ["Q104", "011903e10d750237cdf1b24b"],
+]);
+const TWENTY_FIRST_STREET_DOSSIER_SHA256 = new Map([
+  ["Q103", "28685a54370a17e94f506d60f7326d9c74ee0f0d5763e43a25729f1d03c0994a"],
+  ["Q104", "aaae04326b1a6af8d718ddba8ebe757bb296d7598d061d748edc36d394f3514d"],
+]);
+const TWENTY_FIRST_STREET_FEATURE_ROWS_SHA256 =
+  "b483d61d970e8fc4959239475ef7ac6375ea4a812772cc14d7735f91e1a1eb6a";
+const TWENTY_FIRST_STREET_COMPLETION_CONTEXT = {
+  sourceId: "nyc_dot_21st_street_bus_priority_completion_2022",
+  acquiredId: "twenty_first_completion_press",
+  url: "https://www.nyc.gov/html/dot/html/pr2022/buses-for-queens.shtml",
+  acquiredSha256: "d30b4bde2bb965c16542b28f0ce4a190202d55af99e5d43f9f89f215edf925f1",
+  sourcePage: "wiki/sources/nyc_dot_21st_street_bus_priority_completion_2022.md",
+  sourcePageSha256: "a57e68426e55a6aff5bf09984e5b93d00f15063891db383bbb6c22e790b70ec3",
+  expectedRawPath: "raw/sources/nyc_dot_21st_street_bus_priority_completion_2022",
+  journal: "data/submissions/2026-07-15T18-00-00-000Z_queens-acquisition-linkage-remediation.jsonl",
+  journalSha256: "29fe25ec1f5cc87af99686ca825eb226fbacb391c947a3fe0fed610b8fdb5196",
+  routeInventory: ["Q66", "Q69", "Q100", "Q102", "Q103"],
+};
+const TWENTY_FIRST_STREET_STAGED_CONTEXT = {
+  sourceId: "meeting_doc_85816",
+  sourceUrl: "https://www.mta.info/document/85816",
+  artifact: "raw/sources/meeting_doc_85816/source.pdf",
+  sourceSha256: "a83e62444fd24e3d157f94be44eebb12be290ff84025b2d1afcb0b3b328babaf",
+  metadataSha256: "e230f8fc5c15fc970c68de737aaf278c7b6e6bcca0fa5731c8b4ea557de8f816",
+  blocksArtifact: "raw/sources/meeting_doc_85816/blocks.jsonl",
+  blocksSha256: "6c2f3f809d0f34a5d88533efe0713d23f17f737ca1a8e003e791a424fb0c069d",
+  blocks: [
+    {
+      blockId: "p229_c0005",
+      textSha256: "sha256:e573ffdf9d11c298536d3171de4f2af632ac8e4673f7c46e0924ca226d7e33cd",
+    },
+    {
+      blockId: "p229_c0007",
+      textSha256: "sha256:8f5c42262a13c37eff0033f4833a3dbc0a271d50c1bc7be2d594185944a99b0e",
+    },
+  ],
+};
+const TWENTY_FIRST_STREET_ACQUIRED_CHECKS = {
+  artifact: "data/quality/relationship-integrity/bus-lane-acquisition/shards/queens/acquired-source-checks.json",
+  sha256: "9a7689a3b180dd6a9f372956ca96e21178fb8a778a2e06f938986ddacf958fbe",
+  nonretainedSources: [
+    {
+      id: "dot_bus_lanes_snapshot", byteLength: 2_979_323,
+      sha256: "1b3a990a75abc472d5f68d683aeb7d1deafa2eca4a239e4914b12db6a9927a5a",
+      url: "https://data.cityofnewyork.us/resource/ycrg-ses3.json?$limit=5000",
+      classification: "superseded_registry_snapshot_context",
+    },
+    {
+      id: "twenty_first_completion_press", byteLength: 32_036,
+      sha256: "d30b4bde2bb965c16542b28f0ce4a190202d55af99e5d43f9f89f215edf925f1",
+      url: "https://www.nyc.gov/html/dot/html/pr2022/buses-for-queens.shtml",
+      classification: "later_completion_route_inventory_context",
+    },
+    {
+      id: "mta_qbnr_addendum", byteLength: 2_338_173,
+      sha256: "f2390c4c05592b155cb368c086aaea8f45b44532db3223a981c34147ebe87ead",
+      url: "https://www.mta.info/document/160976",
+      classification: "later_network_redesign_context",
+    },
+    {
+      id: "mta_board_staff_summary", byteLength: 105_216,
+      sha256: "171fe9f2aae98f6638c3785a18040438172f0ebc9244735aacad30efcb13f764",
+      url: "https://www.mta.info/document/174076",
+      classification: "later_network_implementation_context",
+    },
+    {
+      id: "dot_bus_lanes_metadata", byteLength: 37_887,
+      sha256: "fa943cd885628155d489ffb991e464ce8d914736b9c29ab97dd2094ecd877340",
+      url: "https://data.cityofnewyork.us/api/views/ycrg-ses3",
+      classification: "dataset_metadata_context",
+    },
+    {
+      id: "dot_datafeeds", byteLength: 50_140,
+      sha256: "58ac642581b74c95fda7b9949b08e3d28f7fec1e36f486c430170d2aba791487",
+      url: "https://www.nyc.gov/html/dot/html/about/datafeeds.shtml",
+      classification: "dataset_catalog_context",
+    },
+  ],
+};
+
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
   row: BusLaneIdentityRow,
@@ -1609,7 +1717,7 @@ function isExactFrCapodannoPacketTarget(
     dossierRef.verdict_class === "geometry_ambiguous" && dossierRef.overlap_miles === 0 &&
     dossierRef.overlap_share === 0 && dossierRef.stop_coordinate_coverage === 0 &&
     dossierRef.span_stop_ids.length === 0 &&
-    stableJson(packet.what_is_known.dossier_summary) === stableJson({
+      stableJson(packet.what_is_known.dossier_summary) === stableJson({
       counts_by_path_source: { gtfs_shape: 0, historical_schedule_timepoint_pattern: 0, unavailable: 1 },
       counts_by_reason: { historical_schedule_unavailable_pre_2023: 1 },
       counts_by_verdict: {
@@ -1621,6 +1729,74 @@ function isExactFrCapodannoPacketTarget(
     prior.artifact === FR_CAPODANNO_PRIOR.artifact && prior.receipt_id === FR_CAPODANNO_PRIOR.receiptId &&
     prior.row_sha256 === FR_CAPODANNO_PRIOR.rowSha256 &&
     prior.disposition === "completed_search_route_linkage_unresolved";
+}
+
+function isTwentyFirstStreetLedgerTarget(row: BusLaneIdentityRow): boolean {
+  return TWENTY_FIRST_STREET_PRIORS.has(row.gtfs_route_id) &&
+    row.implementation_date === "2022-08-15" &&
+    row.onset_evidence.target_groups.length === 1 &&
+    row.onset_evidence.target_groups[0]?.lane_group_id === "QNS|21 STREET";
+}
+
+function isExactTwentyFirstStreetPacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const group = packet.what_is_known.target_groups[0];
+  const dossierRef = packet.what_is_known.dossier_refs[0];
+  const prior = packet.what_is_known.prior_acquisition_receipt;
+  const priorContract = TWENTY_FIRST_STREET_PRIORS.get(row.gtfs_route_id);
+  const dossierSha256 = TWENTY_FIRST_STREET_DOSSIER_SHA256.get(row.gtfs_route_id);
+  if (!group || !dossierRef || !prior || !priorContract || !dossierSha256 ||
+      !isTwentyFirstStreetLedgerTarget(row)) return false;
+  const featureRows = group.feature_matches.map((match) => [
+    match.feature_key,
+    match.feature_id,
+    match.direction,
+    match.matched_date,
+    match.matched_token_literal,
+    match.open_dates_literal,
+    match.sbs_routes,
+  ]);
+  return packet.missing_binding === "feature_extent" &&
+    stableJson(packet.unresolved_bindings) ===
+      stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"]) &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    stableJson(packet.what_is_known.dossier_refs) === stableJson(row.dossier_refs) &&
+    group.borough === "QNS" && group.facility === "21st" && group.street === "21 STREET" &&
+    group.geometry_scope === "coextensive_with_lane_group" &&
+    group.feature_matches.length === 100 &&
+    new Set(group.feature_matches.map((match) => match.feature_key)).size === 100 &&
+    new Set(group.feature_matches.map((match) => match.feature_id)).size === 51 &&
+    group.feature_matches.filter((match) => match.direction === "NB").length === 51 &&
+    group.feature_matches.filter((match) => match.direction === "SB").length === 49 &&
+    group.feature_matches.every((match) =>
+      (match.direction === "NB" || match.direction === "SB") &&
+      match.matched_date === "2022-08-15" && match.matched_token_literal === "8/15/2022" &&
+      match.open_dates_literal === "8/15/2022" && match.sbs_routes.length === 0) &&
+    hash(stableJson(featureRows as JsonValue)) === TWENTY_FIRST_STREET_FEATURE_ROWS_SHA256 &&
+    packet.what_is_known.dossier_refs.length === 1 &&
+    hash(stableJson(packet.what_is_known.dossier_refs)) === dossierSha256 &&
+    dossierRef.candidate_target_match === false && dossierRef.direction === null &&
+    dossierRef.lane_group_id === null && dossierRef.path_identity === null &&
+    dossierRef.path_source === "unavailable" &&
+    dossierRef.reason === "historical_schedule_unavailable_pre_2023" &&
+    dossierRef.service_date === null && dossierRef.temporal_lag_days === null &&
+    dossierRef.verdict_class === "geometry_ambiguous" && dossierRef.overlap_miles === 0 &&
+    dossierRef.overlap_share === 0 && dossierRef.stop_coordinate_coverage === 0 &&
+    dossierRef.span_stop_ids.length === 0 &&
+    stableJson(packet.what_is_known.dossier_summary) === stableJson({
+      counts_by_path_source: { gtfs_shape: 0, historical_schedule_timepoint_pattern: 0, unavailable: 1 },
+      counts_by_reason: { historical_schedule_unavailable_pre_2023: 1 },
+      counts_by_verdict: {
+        geometry_ambiguous: 1, no_traversal: 0, traversal_confirmed: 0, traversal_marginal: 0,
+      },
+      row_count: 1,
+      target_row_count: 0,
+    }) &&
+    prior.artifact === TWENTY_FIRST_STREET_PRIOR_ARTIFACT &&
+    prior.receipt_id === priorContract.receiptId && prior.row_sha256 === priorContract.rowSha256 &&
+    prior.disposition === priorContract.disposition;
 }
 
 function isoReviewTime(value: unknown, path: string): string {
@@ -2117,6 +2293,7 @@ function packetMissingBinding(row: BusLaneIdentityRow): BusLaneResearchPacket["m
   if (row.detector_verdict === "onset_unresolved") return "onset";
   if (row.detector_reason_codes.some((reason) => reason.includes("direction_unknown"))) return "direction";
   if (isFrCapodannoLedgerTarget(row)) return "feature_extent";
+  if (isTwentyFirstStreetLedgerTarget(row)) return "feature_extent";
   if (row.implementation_date === "2023-10-31" && EAST_GUN_HILL_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
       row.onset_evidence.target_groups.length === 1 &&
       row.onset_evidence.target_groups[0]?.lane_group_id === "BX|EAST GUN HILL ROAD") {
@@ -2133,6 +2310,13 @@ function packetUnresolvedBindings(row: BusLaneIdentityRow): BusLaneMissingBindin
   const bindings = new Set<BusLaneMissingBinding>([packetMissingBinding(row)]);
   const targets = row.onset_evidence.target_groups;
   if (isFrCapodannoLedgerTarget(row)) {
+    bindings.add("attribution");
+    bindings.add("direction");
+    bindings.add("feature_extent");
+    bindings.add("phase");
+    bindings.add("traversal");
+  }
+  if (isTwentyFirstStreetLedgerTarget(row)) {
     bindings.add("attribution");
     bindings.add("direction");
     bindings.add("feature_extent");
@@ -2887,6 +3071,319 @@ function validateFrCapodannoBindingReceipt(
       priorOnlyRetrieval.status !== "acquired") fail();
 }
 
+function twentyFirstStreetRationale(row: BusLaneIdentityRow): string {
+  const routeContext = row.gtfs_route_id === "Q103"
+    ? "The later NYC DOT completion release says Q103 uses one block of the 3.4-mile 21 Street corridor, and the accepted journal preserves generic project, treatment, route, and corridor links. That statement does not identify the candidate's historical seven-piece selection, any exact current feature row, its direction, the 2022-08-15 day, or a stable onset phase; no operational occurrence was materialized."
+    : "The later NYC DOT completion release names Q66, Q69, and Q100 as the primary corridor routes and Q102 and Q103 as one-block users, but does not name Q104. This nonexclusive inventory is context only: Q104's omission is not evidence that it did not share a lane, and it supplies no route binding to the historical six-piece candidate.";
+  return `The exact current registry target is the ordered 100-row, 100-key, 51-ID 21 Street lane group dated 2022-08-15, with 51 northbound and 49 southbound rows, literal 8/15/2022, and no named routes. The immutable Queens acquisition receipt recorded a ${TWENTY_FIRST_STREET_PRIORS.get(row.gtfs_route_id)!.historicalPieceCount}-piece historical candidate, while the current group contains 100 rows and therefore cannot be substituted as its exact extent. ${routeContext} The completion release was published on 2022-09-29, after the candidate day, and its raw staged source folder is absent; the generated source page and accepted journal are retained only as materialized context and are not promoted to fresh source evidence. A staged MTA planning document discusses 21st Street bus priority for Q102 and says Q102 would use Q103 stops on 40th Avenue, but does not bind ${row.gtfs_route_id} to this candidate's exact date, direction, feature extent, phase, or traversal. The candidate-dated pre-2023 dossier is unavailable and supplies no route path or target match. Attribution, direction, feature extent, phase, and traversal remain unresolved. This authorizes no occurrence, study, or cross-product projection.`;
+}
+
+export function buildTwentyFirstStreetBindingReceiptDraft(
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+): Record<string, unknown> {
+  if (!isExactTwentyFirstStreetPacketTarget(packet, row)) {
+    throw new Error("21 Street packet does not match the exact candidate");
+  }
+  const priorContract = TWENTY_FIRST_STREET_PRIORS.get(row.gtfs_route_id)!;
+  const receiptSuffix = TWENTY_FIRST_STREET_RECEIPT_SUFFIXES.get(row.gtfs_route_id)!;
+  const matches = packet.what_is_known.target_groups.flatMap((group) => group.feature_matches);
+  const q103 = row.gtfs_route_id === "Q103";
+  const urlsInspected = [
+    ...TWENTY_FIRST_STREET_ACQUIRED_CHECKS.nonretainedSources.map((source) => source.url),
+    `https://bustime-classic.mta.info/m/?q=${row.gtfs_route_id}`,
+    TWENTY_FIRST_STREET_STAGED_CONTEXT.sourceUrl,
+  ].sort();
+  return {
+    authorizes_cross_product: false,
+    authorizes_study: false,
+    candidate_fingerprint: row.candidate_fingerprint,
+    candidate_id: row.candidate_id,
+    candidate_urls: [],
+    context_evidence: [
+      {
+        accepted_journal: TWENTY_FIRST_STREET_COMPLETION_CONTEXT.journal,
+        accepted_journal_sha256: TWENTY_FIRST_STREET_COMPLETION_CONTEXT.journalSha256,
+        authorizes_cross_product: false,
+        authorizes_study: false,
+        candidate_date_bound: false,
+        candidate_direction_bound: false,
+        candidate_exact_target_bound: false,
+        candidate_phase_bound: false,
+        candidate_route_named: q103,
+        candidate_traversal_bound: false,
+        classification: "later_completion_project_route_inventory_context",
+        context_only: true,
+        derived_materialization_used_as_source_evidence: false,
+        evidence_blocks: [
+          {
+            block_id: "p001_b0015",
+            text_sha256: "sha256:dfce3ecbded1f6f6e2d867a249ab7e2b4934d11af78573c0dfd336107726915a",
+          },
+          {
+            block_id: "p001_b0023",
+            text_sha256: "sha256:5fcb4d234fb2c2800d79288005a7073dd5fbe3b4182ee29ec036bbff9bea08e1",
+          },
+        ],
+        generic_project_route_context: q103,
+        not_candidate_refutation: true,
+        published_on: "2022-09-29",
+        raw_source_available: false,
+        route_inventory: TWENTY_FIRST_STREET_COMPLETION_CONTEXT.routeInventory,
+        route_scope: q103 ? "one_block_unspecified" : null,
+        source_id: TWENTY_FIRST_STREET_COMPLETION_CONTEXT.sourceId,
+        source_page: TWENTY_FIRST_STREET_COMPLETION_CONTEXT.sourcePage,
+        source_page_sha256: TWENTY_FIRST_STREET_COMPLETION_CONTEXT.sourcePageSha256,
+        source_url: TWENTY_FIRST_STREET_COMPLETION_CONTEXT.url,
+      },
+      {
+        authorizes_cross_product: false,
+        authorizes_study: false,
+        candidate_date_bound: false,
+        candidate_direction_bound: false,
+        candidate_exact_target_bound: false,
+        candidate_phase_bound: false,
+        candidate_route_mentioned: q103,
+        candidate_traversal_bound: false,
+        classification: "preimplementation_q102_planning_and_q103_stop_context",
+        context_only: true,
+        evidence_blocks: TWENTY_FIRST_STREET_STAGED_CONTEXT.blocks.map((block) => ({
+          block_id: block.blockId,
+          text_sha256: block.textSha256,
+        })),
+        not_candidate_refutation: true,
+        source_artifact: TWENTY_FIRST_STREET_STAGED_CONTEXT.artifact,
+        source_blocks_artifact: TWENTY_FIRST_STREET_STAGED_CONTEXT.blocksArtifact,
+        source_blocks_sha256: TWENTY_FIRST_STREET_STAGED_CONTEXT.blocksSha256,
+        source_id: TWENTY_FIRST_STREET_STAGED_CONTEXT.sourceId,
+        source_sha256: TWENTY_FIRST_STREET_STAGED_CONTEXT.sourceSha256,
+        source_url: TWENTY_FIRST_STREET_STAGED_CONTEXT.sourceUrl,
+      },
+    ],
+    disposition: "binding_absent_after_search",
+    gap_ids: [row.ledger_id],
+    gtfs_route_id: row.gtfs_route_id,
+    implementation_date: row.implementation_date,
+    missing_binding: "feature_extent",
+    operator: "plan039-corridor-adjudicator",
+    prior_receipt: packet.what_is_known.prior_acquisition_receipt,
+    rationale: twentyFirstStreetRationale(row),
+    receipt_id: `bus-lane-binding-search:${receiptSuffix}`,
+    receipt_kind: "binding_absent_after_search",
+    schema_version: 1,
+    search: {
+      disposition: "binding_absent_after_search",
+      immutable_prior_receipt_id: priorContract.receiptId,
+      repository_context_source_ids: [
+        TWENTY_FIRST_STREET_COMPLETION_CONTEXT.sourceId,
+        TWENTY_FIRST_STREET_STAGED_CONTEXT.sourceId,
+      ],
+      retrieval_classifications: TWENTY_FIRST_STREET_ACQUIRED_CHECKS.nonretainedSources.map((source) => ({
+        classification: source.classification,
+        id: source.id,
+        raw_content_retained: false,
+      })),
+      urls_inspected: urlsInspected,
+    },
+    searched_at: "2026-07-15",
+    source_gap: {
+      accepted_journal_available: true,
+      authorizes_cross_product: false,
+      authorizes_study: false,
+      candidate_specific_authoritative_raw_source_available: false,
+      derived_release_records_used_as_source_evidence: false,
+      expected_completion_raw_path: TWENTY_FIRST_STREET_COMPLETION_CONTEXT.expectedRawPath,
+      generated_source_page_available: true,
+      missing_completion_raw_source_id: TWENTY_FIRST_STREET_COMPLETION_CONTEXT.sourceId,
+      nonretained_acquisition_records: TWENTY_FIRST_STREET_ACQUIRED_CHECKS.nonretainedSources.map((source) => ({
+        byte_length: source.byteLength,
+        classification: source.classification,
+        content_sha256: source.sha256,
+        id: source.id,
+        raw_content_retained: false,
+        url: source.url,
+      })),
+      prior_only_route_page_retrieval: {
+        acquired_check_record_available: false,
+        content_sha256: priorContract.routePageSha256,
+        id: `mta_bustime_${row.gtfs_route_id}`,
+        raw_content_retention_independently_verified: false,
+        used_as_source_evidence: false,
+      },
+      prior_staged_source_claim_resolves: false,
+      resolution_rule: `Reopen only with independently retained, verifiable, citeable source bytes that bind ${row.gtfs_route_id} to the 2022-08-15 candidate's route-specific direction, exact feature extent, phase, and traversal.`,
+      staged_context_source_available: true,
+      staged_context_source_proves_candidate_binding: false,
+    },
+    target: {
+      directions: [...new Set(matches.map((match) => match.direction))].sort(),
+      feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+      feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+      feature_row_count: matches.length,
+      feature_rows: matches.map((match) => ({
+        direction: match.direction,
+        feature_id: match.feature_id,
+        feature_key: match.feature_key,
+      })),
+      geometry_scopes: [...new Set(packet.what_is_known.target_groups.map((group) => group.geometry_scope))].sort(),
+      lane_group_ids: packet.what_is_known.target_groups.map((group) => group.lane_group_id),
+      matched_date: row.implementation_date,
+      named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+      open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+    },
+    unresolved_bindings: ["attribution", "direction", "feature_extent", "phase", "traversal"],
+  };
+}
+
+function validateTwentyFirstStreetBindingReceipt(
+  receipt: Record<string, unknown>,
+  receiptPath: string,
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): void {
+  const fail = (): never => {
+    throw new Error(`${receiptPath}: 21 Street absence contract does not match the exact candidate`);
+  };
+  let expected: Record<string, unknown>;
+  try {
+    expected = buildTwentyFirstStreetBindingReceiptDraft(row, packet);
+  } catch {
+    return fail();
+  }
+  if (stableJson(receipt as JsonValue) !== stableJson(expected as JsonValue)) fail();
+  const priorContract = TWENTY_FIRST_STREET_PRIORS.get(row.gtfs_route_id);
+  if (!priorContract) return fail();
+
+  const currentSourcePath = resolve(rootDir, UNIVERSITY_AVENUE_CURRENT_SOURCE.artifact);
+  const currentMetadataPath = resolve(rootDir, "raw/sources",
+    UNIVERSITY_AVENUE_CURRENT_SOURCE.sourceId, "metadata.json");
+  const priorPath = resolve(rootDir, TWENTY_FIRST_STREET_PRIOR_ARTIFACT);
+  const acquiredChecksPath = resolve(rootDir, TWENTY_FIRST_STREET_ACQUIRED_CHECKS.artifact);
+  const completionSourcePagePath = resolve(rootDir, TWENTY_FIRST_STREET_COMPLETION_CONTEXT.sourcePage);
+  const completionJournalPath = resolve(rootDir, TWENTY_FIRST_STREET_COMPLETION_CONTEXT.journal);
+  const stagedArtifactPath = resolve(rootDir, TWENTY_FIRST_STREET_STAGED_CONTEXT.artifact);
+  const stagedBlocksPath = resolve(rootDir, TWENTY_FIRST_STREET_STAGED_CONTEXT.blocksArtifact);
+  const stagedMetadataPath = resolve(rootDir, "raw/sources",
+    TWENTY_FIRST_STREET_STAGED_CONTEXT.sourceId, "metadata.json");
+  if (![currentSourcePath, currentMetadataPath, priorPath, acquiredChecksPath, completionSourcePagePath,
+    completionJournalPath, stagedArtifactPath, stagedBlocksPath, stagedMetadataPath].every(existsSync) ||
+      existsSync(resolve(rootDir, TWENTY_FIRST_STREET_COMPLETION_CONTEXT.expectedRawPath)) ||
+      hash(readFileSync(currentSourcePath)) !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sha256 ||
+      hash(readFileSync(priorPath)) !== TWENTY_FIRST_STREET_PRIOR_ARTIFACT_SHA256 ||
+      hash(readFileSync(acquiredChecksPath)) !== TWENTY_FIRST_STREET_ACQUIRED_CHECKS.sha256 ||
+      hash(readFileSync(completionSourcePagePath)) !== TWENTY_FIRST_STREET_COMPLETION_CONTEXT.sourcePageSha256 ||
+      hash(readFileSync(completionJournalPath)) !== TWENTY_FIRST_STREET_COMPLETION_CONTEXT.journalSha256 ||
+      hash(readFileSync(stagedArtifactPath)) !== TWENTY_FIRST_STREET_STAGED_CONTEXT.sourceSha256 ||
+      hash(readFileSync(stagedBlocksPath)) !== TWENTY_FIRST_STREET_STAGED_CONTEXT.blocksSha256 ||
+      hash(readFileSync(stagedMetadataPath)) !== TWENTY_FIRST_STREET_STAGED_CONTEXT.metadataSha256) fail();
+
+  const currentMetadata = object(JSON.parse(readFileSync(currentMetadataPath, "utf8")), currentMetadataPath);
+  const stagedMetadata = object(JSON.parse(readFileSync(stagedMetadataPath, "utf8")), stagedMetadataPath);
+  if (currentMetadata.sourceId !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sourceId ||
+      String(currentMetadata.sha256).replace(/^sha256:/u, "") !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sha256 ||
+      stagedMetadata.sourceId !== TWENTY_FIRST_STREET_STAGED_CONTEXT.sourceId ||
+      stagedMetadata.sourceUrl !== TWENTY_FIRST_STREET_STAGED_CONTEXT.sourceUrl ||
+      String(stagedMetadata.sha256).replace(/^sha256:/u, "") !== TWENTY_FIRST_STREET_STAGED_CONTEXT.sourceSha256) {
+    fail();
+  }
+  const stagedBlocks = readFileSync(stagedBlocksPath, "utf8").split(/\r?\n/u).filter(Boolean)
+    .map((line) => object(JSON.parse(line), stagedBlocksPath));
+  for (const expectedBlock of TWENTY_FIRST_STREET_STAGED_CONTEXT.blocks) {
+    const block = stagedBlocks.find((value) => value.block_id === expectedBlock.blockId);
+    if (!block || block.raw_text_sha256 !== expectedBlock.textSha256) fail();
+  }
+
+  const acquiredChecks = object(JSON.parse(readFileSync(acquiredChecksPath, "utf8")), acquiredChecksPath);
+  const acquiredSourceValues = acquiredChecks.sources;
+  const acquiredSources = (Array.isArray(acquiredSourceValues) ? acquiredSourceValues : fail())
+    .map((source, index) =>
+    object(source, `${acquiredChecksPath}.sources[${index}]`));
+  for (const expectedSource of TWENTY_FIRST_STREET_ACQUIRED_CHECKS.nonretainedSources) {
+    const source = acquiredSources.find((value) => value.id === expectedSource.id);
+    if (!source || source.url !== expectedSource.url || source.content_sha256 !== expectedSource.sha256 ||
+        source.byte_length !== expectedSource.byteLength || source.retrieval_status !== "acquired" ||
+        source.raw_content_retained !== false) fail();
+  }
+  if (acquiredSources.some((source) => source.id === `mta_bustime_${row.gtfs_route_id}`)) fail();
+
+  const priorPointer = packet.what_is_known.prior_acquisition_receipt;
+  if (!priorPointer || priorPointer.artifact !== TWENTY_FIRST_STREET_PRIOR_ARTIFACT ||
+      priorPointer.receipt_id !== priorContract.receiptId || priorPointer.row_sha256 !== priorContract.rowSha256 ||
+      priorPointer.disposition !== priorContract.disposition) fail();
+  const priorLine = readFileSync(priorPath, "utf8").split(/\r?\n/u).filter(Boolean).find((line) =>
+    object(JSON.parse(line), priorPath).receipt_id === priorContract.receiptId);
+  const resolvedPriorLine = priorLine ?? fail();
+  if (hash(resolvedPriorLine) !== priorContract.rowSha256) fail();
+  const prior = object(JSON.parse(resolvedPriorLine), `${priorPath}:${priorContract.receiptId}`);
+  const candidate = object(prior.candidate, `${priorPath}.candidate`);
+  const findings = object(prior.source_findings, `${priorPath}.source_findings`);
+  const routePage = object(findings.mta_route_page, `${priorPath}.source_findings.mta_route_page`);
+  const claims = object(prior.claim_results, `${priorPath}.claim_results`);
+  const outcome = object(prior.outcome, `${priorPath}.outcome`);
+  const actions = object(prior.canonical_actions, `${priorPath}.canonical_actions`);
+  const attempts = Array.isArray(prior.acquisition_attempts) ? prior.acquisition_attempts.map((attempt, index) =>
+    object(attempt, `${priorPath}.acquisition_attempts[${index}]`)) : [];
+  const retrievals = attempts.flatMap((attempt, index) => Array.isArray(attempt.retrievals)
+    ? attempt.retrievals.map((retrieval, retrievalIndex) =>
+      object(retrieval, `${priorPath}.acquisition_attempts[${index}].retrievals[${retrievalIndex}]`))
+    : []);
+  const priorRouteRetrieval = retrievals.find((retrieval) =>
+    retrieval.id === `mta_bustime_${row.gtfs_route_id}`);
+  const exactRouteEvidence = Array.isArray(claims.exact_route_binding_evidence)
+    ? claims.exact_route_binding_evidence.map((value, index) =>
+      object(value, `${priorPath}.claim_results.exact_route_binding_evidence[${index}]`))
+    : [];
+  const expectedLinks = row.gtfs_route_id === "Q103"
+    ? [
+      "relation_21st-bus-lane-treatment-located-on-corridor-2022",
+      "relation_21st-project-has-bus-lane-treatment-completion-2022",
+      "relation_21st-project-serves-q103-2022",
+      "relation_q103-operates-on-21st-street-corridor-2022",
+    ]
+    : [];
+  if (candidate.candidate_id !== row.candidate_id || candidate.route_id !== row.gtfs_route_id ||
+      candidate.normalized_route_id !== row.gtfs_route_id ||
+      candidate.identity !== `${row.gtfs_route_id}|bus_lane|2022-08-15|day` ||
+      candidate.implementation_date !== "2022-08-15" || candidate.corridor !== "21st" ||
+      findings.candidate_named_lane_record_count !== 0 ||
+      findings.exact_project_route_statement_found !== priorContract.routeSupported ||
+      findings.exact_project_route_source_id !==
+        (priorContract.routeSupported ? TWENTY_FIRST_STREET_COMPLETION_CONTEXT.acquiredId : null) ||
+      findings.official_lane_matching_record_count !== 100 ||
+      !Array.isArray(findings.official_lane_matching_segment_ids) ||
+      new Set(findings.official_lane_matching_segment_ids).size !== 51 ||
+      stableJson(findings.official_lane_named_routes as JsonValue) !== stableJson([]) ||
+      stableJson(findings.official_route_named_segment_ids as JsonValue) !== stableJson([]) ||
+      typeof findings.historical_review_rationale !== "string" ||
+      !findings.historical_review_rationale.includes(priorContract.historicalPiecePhrase) ||
+      routePage.content_sha256 !== priorContract.routePageSha256 ||
+      routePage.exact_route_title_found !== true || routePage.current_corridor_token_found !== false ||
+      routePage.retrieval_status !== "acquired" || typeof routePage.temporal_limitation !== "string" ||
+      !routePage.temporal_limitation.includes("captured in 2026") ||
+      claims.candidate_segment_ids_pinned !== false || claims.date_and_phase_proved !== false ||
+      claims.exact_route_treatment_binding_proved !== priorContract.routeSupported ||
+      claims.exact_segment_binding_proved !== false || claims.explicit_phase_identity_proved !== false ||
+      claims.operational_occurrence_identity_proved !== false ||
+      !Array.isArray(claims.exact_segment_ids) || claims.exact_segment_ids.length !== 0 ||
+      exactRouteEvidence.length !== (priorContract.routeSupported ? 1 : 0) ||
+      (priorContract.routeSupported && (
+        exactRouteEvidence[0]?.evidence_kind !== "official_project_route_statement" ||
+        exactRouteEvidence[0]?.source_id !== TWENTY_FIRST_STREET_COMPLETION_CONTEXT.acquiredId ||
+        exactRouteEvidence[0]?.source_sha256 !== TWENTY_FIRST_STREET_COMPLETION_CONTEXT.acquiredSha256 ||
+        stableJson(exactRouteEvidence[0]?.official_routes as JsonValue) !==
+          stableJson(TWENTY_FIRST_STREET_COMPLETION_CONTEXT.routeInventory))) ||
+      outcome.exclusive_primary_disposition !== priorContract.disposition ||
+      outcome.registry_projection_excluded !== true || outcome.still_unresolved !== true ||
+      outcome.study_projection_eligible !== false ||
+      actions.operational_occurrence_added_or_updated !== false ||
+      stableJson(actions.canonical_links_added as JsonValue) !== stableJson(expectedLinks) ||
+      actions.journal_path !==
+        (priorContract.routeSupported ? TWENTY_FIRST_STREET_COMPLETION_CONTEXT.journal : null) ||
+      !priorRouteRetrieval || priorRouteRetrieval.sha256 !== priorContract.routePageSha256 ||
+      priorRouteRetrieval.status !== "acquired") fail();
+}
+
 export function validateBindingReceiptDrafts(
   rows: readonly BusLaneIdentityRow[],
   packets: readonly BusLaneResearchPacket[],
@@ -3047,6 +3544,12 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
       throw new Error(`${receiptPath}: Father Capodanno Boulevard packet does not preserve exact ledger evidence parity`);
     }
+    const twentyFirstStreetLedgerTarget = isTwentyFirstStreetLedgerTarget(row);
+    if (twentyFirstStreetLedgerTarget &&
+        (stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups) ||
+        stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
+      throw new Error(`${receiptPath}: 21 Street packet does not preserve exact ledger evidence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -3091,6 +3594,10 @@ export function validateBindingReceiptDrafts(
     }
     if (frCapodannoLedgerTarget) {
       validateFrCapodannoBindingReceipt(receipt, receiptPath, row, packet, rootDir);
+      continue;
+    }
+    if (twentyFirstStreetLedgerTarget) {
+      validateTwentyFirstStreetBindingReceipt(receipt, receiptPath, row, packet, rootDir);
       continue;
     }
     const priorPointer = object(receipt.prior_receipt, `${receiptPath}.prior_receipt`);
