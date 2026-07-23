@@ -1,0 +1,63 @@
+{
+  "acceptance_id": "bus-lane-package-owner-acceptance:rockaway-positive-linkage-v1",
+  "accepted_at": "2026-07-23T22:46:27Z",
+  "accepted_by": "codex-owner-delegate",
+  "authorizes_cross_product": false,
+  "authorizes_occurrence": false,
+  "authorizes_study": false,
+  "candidate_count": 3,
+  "candidate_join_count_reproduced": 3,
+  "decision_ids": [
+    "bus-lane-identity-decision:487a4bdd4c6cf85c547aa91a",
+    "bus-lane-identity-decision:8e48c83b0f2a2ac84d01a625",
+    "bus-lane-identity-decision:fff45eee114812e97b6108e5"
+  ],
+  "frozen_file_count_reproduced": 13,
+  "independent_evidence_review": "approve",
+  "independent_validator_review": "approve",
+  "materialization": {
+    "decided_after": 318,
+    "decided_before": 315,
+    "deterministic_replay_after_sha256": "39355f1db5b358fb55188a149d97afa93f08a057cd80b6dce1a2501f851c32e1",
+    "deterministic_replay_before_sha256": "39355f1db5b358fb55188a149d97afa93f08a057cd80b6dce1a2501f851c32e1",
+    "deterministic_replay_byte_identical": true,
+    "ledger_denominator": 321,
+    "open_after": 3,
+    "open_before": 6
+  },
+  "package_artifact": "data/quality/operational-reference/bus-lane-identity-packages/rockaway-positive-linkage-v1.json",
+  "package_sha256": "207ea09023839d01e40530704a621b9f15690c74f33818b77ebe03b3f2ba06db",
+  "predecision_artifact": "data/quality/operational-reference/bus-lane-identity-packages/rockaway-positive-linkage-v1-acceptance.json",
+  "predecision_sha256": "d786876dc0ad0aff21c3c20cd33c3e658b9fc9a4cd4850314ace10ecd4a6aedf",
+  "receipt_ids": [
+    "bus-lane-binding-search:487a4bdd4c6cf85c547aa91a",
+    "bus-lane-binding-search:8e48c83b0f2a2ac84d01a625",
+    "bus-lane-binding-search:fff45eee114812e97b6108e5"
+  ],
+  "schema_version": 1,
+  "verdict_distribution": {
+    "binding_absent_after_search": 3
+  },
+  "verification": {
+    "focused_test": {
+      "assertions": 2003,
+      "fail": 0,
+      "pass": 35
+    },
+    "full_suite": {
+      "pinned_prepackage_checkpoint": {
+        "error": 1,
+        "fail": 9,
+        "pass": 1647,
+        "skip": 1
+      },
+      "status": "deferred_until_final_e3_unsupported_package_closes"
+    },
+    "typecheck": "pass",
+    "validate": {
+      "issues": 0,
+      "release_contract_issues": 0,
+      "warnings": 3
+    }
+  }
+}

@@ -14,6 +14,7 @@ import {
   buildMultiCorridorAbsenceBindingReceiptDraft,
   buildPositiveContextBindingReceiptDraft,
   buildPureTargetAbsenceBindingReceiptDraft,
+  buildRockawayPositiveLinkageBindingReceiptDraft,
   buildTargetRowRouteVariantBindingReceiptDraft,
   buildTwentyFirstStreetBindingReceiptDraft,
   candidateLaneTargets,
@@ -8433,6 +8434,239 @@ describe("bus-lane identity exact-date targeting", () => {
         stableJson(firstReceipt as JsonValue));
       expect(() => validateReviewedReceiptRefs([reviewedRow], receiptDir))
         .not.toThrow();
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
+
+  it("preserves Rockaway positive linkage without promoting historical extent or occurrence", () => {
+    const repoRoot = join(import.meta.dir, "../../../..");
+    const manifestArtifact =
+      "data/quality/operational-reference/bus-lane-identity-packages/rockaway-positive-linkage-v1.json";
+    const manifest = JSON.parse(
+      readFileSync(join(repoRoot, manifestArtifact), "utf8"),
+    ) as {
+      package_id: string;
+      package_sha256: string;
+      count: number;
+      batch_id: string;
+      contracts: Array<{
+        candidate_id: string;
+        canonical_journal_path: string;
+        canonical_links_added: string[];
+        exact_route_evidence_count: number;
+        prior_artifact: string;
+        route: string;
+        candidate_or_normalized_route_named_by_target: boolean;
+      }>;
+    };
+    expect(manifest).toMatchObject({
+      package_id: "bus-lane-rockaway-positive-linkage-v1",
+      package_sha256:
+        "207ea09023839d01e40530704a621b9f15690c74f33818b77ebe03b3f2ba06db",
+      count: 3,
+      batch_id: "bus-lane-multi-corridor-2019-09-16-part-01",
+    });
+    expect(manifest.contracts.map((contract) => contract.route).sort())
+      .toEqual(["Q22", "Q52+", "Q53+"]);
+    expect(manifest.contracts.map((contract) =>
+      contract.exact_route_evidence_count).sort((left, right) => left - right))
+      .toEqual([1, 17, 45]);
+    expect(new Set(manifest.contracts.flatMap((contract) =>
+      contract.canonical_links_added)).size).toBe(14);
+
+    const ledgerRows = readFileSync(
+      join(
+        repoRoot,
+        "data/quality/operational-reference/bus-lane-identity-ledger.jsonl",
+      ),
+      "utf8",
+    )
+      .split(/\r?\n/u)
+      .filter(Boolean)
+      .map((line) => JSON.parse(line) as BusLaneIdentityRow);
+    const packetFiles = new Map(
+      manifest.contracts.map((contract) => {
+        const row = ledgerRows.find((value) =>
+          value.candidate_id === contract.candidate_id)!;
+        const packetId = createHash("sha256")
+          .update(stableJson({ ledger_id: row.ledger_id } as JsonValue))
+          .digest("hex")
+          .slice(0, 24);
+        return [
+          contract.candidate_id,
+          JSON.parse(
+            readFileSync(
+              join(
+                repoRoot,
+                `data/quality/acquisition/packets/bus-lane/packets/${packetId}.json`,
+              ),
+              "utf8",
+            ),
+          ) as BusLaneResearchPacket,
+        ];
+      }),
+    );
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-rockaway-positive-"));
+    const receiptDir = join(rootDir, "receipts");
+    mkdirSync(receiptDir, { recursive: true });
+    for (const artifact of new Set([
+      manifestArtifact,
+      "data/canonical/relations.jsonl",
+      ...manifest.contracts.map((contract) => contract.prior_artifact),
+      ...manifest.contracts.map((contract) => contract.canonical_journal_path),
+    ])) {
+      const destination = join(rootDir, artifact);
+      mkdirSync(join(destination, ".."), { recursive: true });
+      copyFileSync(join(repoRoot, artifact), destination);
+    }
+    const validate = (
+      draft: Record<string, unknown>,
+      row: BusLaneIdentityRow,
+      packet: BusLaneResearchPacket,
+    ) => {
+      writeFileSync(
+        join(receiptDir, "draft.json"),
+        stableJson(draft as JsonValue),
+      );
+      return () =>
+        validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir);
+    };
+    const exactError =
+      "rockaway-positive-linkage package contract does not match the exact candidate";
+    const receipts: Record<string, any>[] = [];
+    try {
+      for (const contract of manifest.contracts) {
+        const row = ledgerRows.find((value) =>
+          value.candidate_id === contract.candidate_id)!;
+        const packet = packetFiles.get(contract.candidate_id)!;
+        const expected = buildRockawayPositiveLinkageBindingReceiptDraft(
+          row,
+          packet,
+          rootDir,
+        );
+        const suffix = String(expected.receipt_id).split(":")[1];
+        const receipt = JSON.parse(
+          readFileSync(
+            join(
+              repoRoot,
+              `data/quality/acquisition/receipts/bus-lane-review/${suffix}.json`,
+            ),
+            "utf8",
+          ),
+        ) as Record<string, any>;
+        receipts.push(receipt);
+        expect(receipt).toEqual(expected);
+        expect(packet.missing_binding).toBe("feature_extent");
+        expect(packet.unresolved_bindings).toEqual([
+          "direction",
+          "feature_extent",
+          "phase",
+          "traversal",
+        ]);
+        expect(receipt).toMatchObject({
+          authorizes_study: false,
+          authorizes_cross_product: false,
+          disposition: "binding_absent_after_search",
+          dossier_context: {
+            candidate_exact_target_row_count: 0,
+            historical_schedule_available: false,
+            path_source: "unavailable",
+            establishes_traversal: false,
+            establishes_exclusion: false,
+          },
+          positive_linkage_context: {
+            prior_route_treatment_supported: true,
+            candidate_date_supported_at_day_precision: true,
+            exact_segment_binding_proved: false,
+            explicit_phase_identity_proved: false,
+            operational_occurrence_identity_proved: false,
+            canonical_relation_submission_count:
+              contract.canonical_links_added.length,
+            context_only: true,
+            authorizes_occurrence: false,
+          },
+          absence_contract: {
+            candidate_attribution_bound: true,
+            candidate_route_treatment_bound: true,
+            candidate_date_bound: true,
+            candidate_named_target:
+              contract.candidate_or_normalized_route_named_by_target,
+            candidate_direction_bound: false,
+            candidate_feature_extent_bound: false,
+            candidate_phase_bound: false,
+            candidate_traversal_bound: false,
+            candidate_occurrence_bound: false,
+            nonexclusive_search_result: true,
+            not_a_refutation: true,
+          },
+          source_gap: {
+            historical_schedule_unavailable: true,
+            canonical_relations_authorize_occurrence: false,
+            current_registry_rows_substitute_for_historical_segment: false,
+            source_gap_authorizes_occurrence: false,
+          },
+        });
+        expect(receipt.target.feature_row_count).toBe(62);
+        expect(receipt.target.lane_group_ids).toEqual([
+          "QNS|BEACH 59 STREET",
+          "QNS|BROADWAY",
+          "QNS|ROCKAWAY BEACH BOULEVARD",
+        ]);
+        expect(receipt.positive_linkage_context.exact_route_binding_evidence)
+          .toHaveLength(contract.exact_route_evidence_count);
+        expect(validate(receipt, row, packet)).not.toThrow();
+      }
+
+      const q22Contract = manifest.contracts.find((contract) =>
+        contract.route === "Q22")!;
+      const q22Row = ledgerRows.find((value) =>
+        value.candidate_id === q22Contract.candidate_id)!;
+      const q22Packet = packetFiles.get(q22Contract.candidate_id)!;
+      const q22Receipt = receipts[manifest.contracts.indexOf(q22Contract)]!;
+      expect(q22Receipt.absence_contract.candidate_named_target).toBe(false);
+      expect(q22Receipt.absence_contract.candidate_attribution_bound).toBe(true);
+      expect(validate({
+        ...q22Receipt,
+        positive_linkage_context: {
+          ...q22Receipt.positive_linkage_context,
+          authorizes_occurrence: true,
+        },
+      }, q22Row, q22Packet)).toThrow(exactError);
+      expect(validate({
+        ...q22Receipt,
+        absence_contract: {
+          ...q22Receipt.absence_contract,
+          candidate_feature_extent_bound: true,
+        },
+      }, q22Row, q22Packet)).toThrow(exactError);
+
+      const journalPath = join(rootDir, q22Contract.canonical_journal_path);
+      const relationPath = join(rootDir, "data/canonical/relations.jsonl");
+      const q22Relation = readFileSync(relationPath, "utf8")
+        .split(/\r?\n/u)
+        .filter(Boolean)
+        .map((line) => JSON.parse(line))
+        .find((relation) =>
+          relation.record_id === q22Contract.canonical_links_added[0]);
+      const submissionId = q22Relation.submission_ids[0];
+      const journalLines = readFileSync(journalPath, "utf8")
+        .split(/\r?\n/u)
+        .filter(Boolean);
+      writeFileSync(journalPath, `${journalLines.map((line) => {
+        const submission = JSON.parse(line);
+        return submission.submission_id === submissionId
+          ? JSON.stringify({
+              ...submission,
+              validation: { ...submission.validation, state: "rejected" },
+            })
+          : line;
+      }).join("\n")}\n`);
+      expect(() => buildRockawayPositiveLinkageBindingReceiptDraft(
+        q22Row,
+        q22Packet,
+        rootDir,
+      )).toThrow(exactError);
     } finally {
       rmSync(rootDir, { recursive: true, force: true });
     }

@@ -1526,6 +1526,15 @@ const TARGET_ROW_ROUTE_VARIANT_PACKAGE_CANDIDATE_IDS = new Set([
   "study-event-v2:5a31e938dbbf2847b2ad65db",
   "study-event-v2:8bb8e6001a05b996c1f5e22e",
 ]);
+const ROCKAWAY_POSITIVE_LINKAGE_PACKAGE_ARTIFACT =
+  "data/quality/operational-reference/bus-lane-identity-packages/rockaway-positive-linkage-v1.json";
+const ROCKAWAY_POSITIVE_LINKAGE_PACKAGE_SHA256 =
+  "207ea09023839d01e40530704a621b9f15690c74f33818b77ebe03b3f2ba06db";
+const ROCKAWAY_POSITIVE_LINKAGE_PACKAGE_CANDIDATE_IDS = new Set([
+  "study-event-v2:8483f8b099d292e9d6883859",
+  "study-event-v2:a1e55641545033df387b70b1",
+  "study-event-v2:df8bb7f9438c48166f1ff8b9",
+]);
 
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
@@ -2084,6 +2093,12 @@ function isTargetRowRouteVariantPackageTarget(row: BusLaneIdentityRow): boolean 
   return TARGET_ROW_ROUTE_VARIANT_PACKAGE_CANDIDATE_IDS.has(row.candidate_id);
 }
 
+function isRockawayPositiveLinkagePackageTarget(
+  row: BusLaneIdentityRow,
+): boolean {
+  return ROCKAWAY_POSITIVE_LINKAGE_PACKAGE_CANDIDATE_IDS.has(row.candidate_id);
+}
+
 function isExactMadisonAvenuePacketTarget(
   packet: BusLaneResearchPacket,
   row: BusLaneIdentityRow,
@@ -2637,6 +2652,7 @@ function packetMissingBinding(row: BusLaneIdentityRow): BusLaneResearchPacket["m
   if (row.detector_verdict === "onset_unresolved") return "onset";
   if (isPureTargetAbsencePackageTarget(row)) return "feature_extent";
   if (isMultiCorridorAbsencePackageTarget(row)) return "feature_extent";
+  if (isRockawayPositiveLinkagePackageTarget(row)) return "feature_extent";
   if (row.detector_reason_codes.some((reason) => reason.includes("direction_unknown"))) return "direction";
   if (isFrCapodannoLedgerTarget(row)) return "feature_extent";
   if (isTwentyFirstStreetLedgerTarget(row)) return "feature_extent";
@@ -2699,6 +2715,13 @@ function packetUnresolvedBindings(row: BusLaneIdentityRow): BusLaneMissingBindin
     bindings.add("phase");
     bindings.add("traversal");
   }
+  if (isRockawayPositiveLinkagePackageTarget(row)) {
+    bindings.delete("attribution");
+    bindings.add("direction");
+    bindings.add("feature_extent");
+    bindings.add("phase");
+    bindings.add("traversal");
+  }
   if (row.implementation_date === "2023-10-31" && EAST_GUN_HILL_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
       targets.length === 1 && targets[0]?.lane_group_id === "BX|EAST GUN HILL ROAD") {
     bindings.add("attribution");
@@ -2728,7 +2751,9 @@ function packetUnresolvedBindings(row: BusLaneIdentityRow): BusLaneMissingBindin
   }
   const attributedRoutes = new Set(targets.flatMap((target) =>
     target.feature_matches.flatMap((feature) => feature.sbs_routes)));
-  if (!attributedRoutes.has(row.gtfs_route_id) && (targetRefs.length === 0 || attributedRoutes.size > 0)) {
+  if (!isRockawayPositiveLinkagePackageTarget(row) &&
+      !attributedRoutes.has(row.gtfs_route_id) &&
+      (targetRefs.length === 0 || attributedRoutes.size > 0)) {
     bindings.add("attribution");
   }
   return [...bindings].sort();
@@ -4755,6 +4780,522 @@ function validateTargetRowRouteVariantBindingReceipt(
   }
 }
 
+function rockawayPositiveLinkagePackageContract(
+  rootDir: string,
+  candidateId: string,
+): {
+  manifest: Record<string, unknown>;
+  contract: Record<string, unknown>;
+} {
+  const path = resolve(rootDir, ROCKAWAY_POSITIVE_LINKAGE_PACKAGE_ARTIFACT);
+  const manifest = object(JSON.parse(readFileSync(path, "utf8")), path);
+  const packageSha256 = nonempty(
+    manifest.package_sha256,
+    `${path}.package_sha256`,
+  );
+  const { package_sha256: _packageSha256, ...payload } = manifest;
+  if (
+    packageSha256 !== ROCKAWAY_POSITIVE_LINKAGE_PACKAGE_SHA256 ||
+    hash(stableJson(payload as JsonValue)) !==
+      ROCKAWAY_POSITIVE_LINKAGE_PACKAGE_SHA256 ||
+    manifest.package_id !== "bus-lane-rockaway-positive-linkage-v1" ||
+    manifest.contract_kind !==
+      "rockaway_positive_linkage_phase_unresolved_nonauthorizing_absence" ||
+    manifest.batch_id !==
+      "bus-lane-multi-corridor-2019-09-16-part-01" ||
+    manifest.count !== 3 ||
+    manifest.verdict !== "binding_absent_after_search" ||
+    manifest.authorizes_study !== false ||
+    manifest.authorizes_cross_product !== false ||
+    !Array.isArray(manifest.contracts) ||
+    manifest.contracts.length !== 3
+  ) {
+    throw new Error(`${path}: invalid Rockaway positive-linkage package freeze`);
+  }
+  const contract = manifest.contracts
+    .map((value, index) => object(value, `${path}.contracts[${index}]`))
+    .find((value) => value.candidate_id === candidateId);
+  if (
+    !contract ||
+    !ROCKAWAY_POSITIVE_LINKAGE_PACKAGE_CANDIDATE_IDS.has(candidateId)
+  ) {
+    throw new Error(`${path}: candidate is outside the Rockaway package`);
+  }
+  return { manifest, contract };
+}
+
+export function buildRockawayPositiveLinkageBindingReceiptDraft(
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): Record<string, unknown> {
+  const exactError =
+    "rockaway-positive-linkage package contract does not match the exact candidate";
+  const fail = (): never => {
+    throw new Error(exactError);
+  };
+  const { manifest, contract } = rockawayPositiveLinkagePackageContract(
+    rootDir,
+    row.candidate_id,
+  );
+  const targetGroups = packet.what_is_known.target_groups;
+  const features = targetGroups.flatMap((group) => group.feature_matches);
+  const dossierRefs = packet.what_is_known.dossier_refs;
+  const priorPointer = packet.what_is_known.prior_acquisition_receipt ?? fail();
+  const priorArtifact = nonempty(
+    contract.prior_artifact,
+    "Rockaway contract.prior_artifact",
+  );
+  const priorReceiptId = nonempty(
+    contract.prior_receipt_id,
+    "Rockaway contract.prior_receipt_id",
+  );
+  const priorRowSha256 = nonempty(
+    contract.prior_row_sha256,
+    "Rockaway contract.prior_row_sha256",
+  );
+  const priorPath = resolve(rootDir, priorArtifact);
+  const priorLine =
+    readFileSync(priorPath, "utf8")
+      .split(/\r?\n/u)
+      .filter(Boolean)
+      .find(
+        (line) =>
+          object(JSON.parse(line), priorPath).receipt_id === priorReceiptId,
+      ) ?? fail();
+  const prior = object(JSON.parse(priorLine), `${priorPath}:${priorReceiptId}`);
+  const candidate = object(prior.candidate, `${priorPath}.candidate`);
+  const findings = object(
+    prior.source_findings,
+    `${priorPath}.source_findings`,
+  );
+  const routePage = object(
+    findings.mta_route_page,
+    `${priorPath}.source_findings.mta_route_page`,
+  );
+  const claims = object(prior.claim_results, `${priorPath}.claim_results`);
+  const outcome = object(prior.outcome, `${priorPath}.outcome`);
+  const actions = object(prior.canonical_actions, `${priorPath}.canonical_actions`);
+  const exactRouteEvidence = Array.isArray(claims.exact_route_binding_evidence)
+    ? claims.exact_route_binding_evidence
+    : fail();
+  const canonicalLinks = stringArray(
+    actions.canonical_links_added,
+    `${priorPath}.canonical_actions.canonical_links_added`,
+  );
+  const stagedSourceIds = stringArray(
+    actions.staged_source_ids,
+    `${priorPath}.canonical_actions.staged_source_ids`,
+  );
+  const expectedUnresolvedBindings = [
+    "direction",
+    "feature_extent",
+    "phase",
+    "traversal",
+  ];
+  const attempts = Array.isArray(prior.acquisition_attempts)
+    ? prior.acquisition_attempts.map((value, index) =>
+        object(value, `${priorPath}.acquisition_attempts[${index}]`),
+      )
+    : fail();
+  const exactQueries = attempts.map((attempt, index) => ({
+    category: nonempty(
+      attempt.category,
+      `${priorPath}.acquisition_attempts[${index}].category`,
+    ),
+    query: nonempty(
+      attempt.query,
+      `${priorPath}.acquisition_attempts[${index}].query`,
+    ),
+    query_status: nonempty(
+      attempt.query_status,
+      `${priorPath}.acquisition_attempts[${index}].query_status`,
+    ),
+  }));
+  const exactCandidateQuery = exactQueries.find(
+    (query) =>
+      query.category === "official_mta_route_project" &&
+      query.query === contract.exact_candidate_route_query,
+  );
+  const urls = [
+    ...new Set(
+      attempts.flatMap((attempt, index) =>
+        stringArray(
+          attempt.urls_checked,
+          `${priorPath}.acquisition_attempts[${index}].urls_checked`,
+        ),
+      ),
+    ),
+  ].sort();
+  const retrievals = attempts.flatMap((attempt, attemptIndex) => {
+    const values = Array.isArray(attempt.retrievals)
+      ? attempt.retrievals
+      : fail();
+    const category = nonempty(
+      attempt.category,
+      `${priorPath}.acquisition_attempts[${attemptIndex}].category`,
+    );
+    return values.map((value, retrievalIndex) => ({
+      category,
+      ...object(
+        value,
+        `${priorPath}.acquisition_attempts[${attemptIndex}].retrievals[${retrievalIndex}]`,
+      ),
+    }));
+  });
+  const targetGroupContracts = targetGroups.map((group) => {
+    const groupFeatures = group.feature_matches;
+    return {
+      directions: [
+        ...new Set(groupFeatures.map((feature) => feature.direction)),
+      ].sort(),
+      feature_id_count: new Set(
+        groupFeatures.map((feature) => feature.feature_id),
+      ).size,
+      feature_key_count: new Set(
+        groupFeatures.map((feature) => feature.feature_key),
+      ).size,
+      feature_row_count: groupFeatures.length,
+      geometry_scope: group.geometry_scope,
+      lane_group_id: group.lane_group_id,
+      named_sbs_routes: [
+        ...new Set(groupFeatures.flatMap((feature) => feature.sbs_routes)),
+      ].sort(),
+      open_dates_literals: [
+        ...new Set(
+          groupFeatures.map((feature) => feature.open_dates_literal),
+        ),
+      ].sort(),
+    };
+  });
+  const dossierRef = dossierRefs[0];
+  const normalizedCandidate = row.gtfs_route_id.endsWith("+")
+    ? row.gtfs_route_id.slice(0, -1)
+    : row.gtfs_route_id;
+  const namedSbsRoutes = [
+    ...new Set(features.flatMap((feature) => feature.sbs_routes)),
+  ].sort();
+  const candidateNamedByTarget =
+    namedSbsRoutes.includes(row.gtfs_route_id) ||
+    namedSbsRoutes.includes(normalizedCandidate);
+  const freezeChecks: Record<string, boolean> = {
+    prior_row_hash: hash(priorLine) === priorRowSha256,
+    verified_prior_row_hash:
+      contract.prior_row_sha256_verified === priorRowSha256,
+    prior_pointer:
+      priorPointer.artifact === priorArtifact &&
+      priorPointer.receipt_id === priorReceiptId &&
+      priorPointer.row_sha256 === priorRowSha256 &&
+      priorPointer.disposition === "linkage_supported_phase_unresolved",
+    candidate:
+      candidate.candidate_id === row.candidate_id &&
+      candidate.route_id === row.gtfs_route_id &&
+      candidate.implementation_date === row.implementation_date &&
+      candidate.identity ===
+        `${row.gtfs_route_id}|bus_lane|${row.implementation_date}|day`,
+    row:
+      contract.candidate_fingerprint === row.candidate_fingerprint &&
+      contract.ledger_id === row.ledger_id &&
+      contract.route === row.gtfs_route_id &&
+      contract.date === row.implementation_date,
+    packet:
+      packet.missing_binding === "feature_extent" &&
+      stableJson(packet.unresolved_bindings) ===
+        stableJson(expectedUnresolvedBindings) &&
+      stableJson(targetGroups) ===
+        stableJson(row.onset_evidence.target_groups) &&
+      stableJson(dossierRefs) === stableJson(row.dossier_refs),
+    target:
+      hash(stableJson(targetGroups)) === contract.target_groups_sha256 &&
+      stableJson(targetGroupContracts as JsonValue) ===
+        stableJson(contract.target_group_contracts as JsonValue) &&
+      contract.feature_row_count === features.length &&
+      contract.feature_key_count ===
+        new Set(features.map((feature) => feature.feature_key)).size &&
+      contract.feature_id_count ===
+        new Set(features.map((feature) => feature.feature_id)).size &&
+      stableJson(contract.target_named_sbs_routes as JsonValue) ===
+        stableJson(namedSbsRoutes) &&
+      contract.candidate_or_normalized_route_named_by_target ===
+        candidateNamedByTarget,
+    dossier:
+      dossierRefs.length === 1 &&
+      contract.dossier_row_count === 1 &&
+      contract.dossier_target_count === 0 &&
+      hash(stableJson(dossierRefs)) === contract.dossier_refs_sha256 &&
+      dossierRef?.candidate_target_match === false &&
+      dossierRef.path_source === "unavailable" &&
+      dossierRef.reason === "historical_schedule_unavailable_pre_2023" &&
+      dossierRef.verdict_class === "geometry_ambiguous" &&
+      dossierRef.overlap_miles === 0 &&
+      dossierRef.overlap_share === 0 &&
+      dossierRef.stop_coordinate_coverage === 0 &&
+      dossierRef.span_stop_ids.length === 0,
+    prior_claims:
+      contract.prior_route_supported === true &&
+      contract.prior_candidate_date_supported === true &&
+      contract.prior_exact_segment_supported === false &&
+      contract.prior_phase_supported === false &&
+      contract.prior_occurrence_supported === false &&
+      contract.prior_disposition ===
+        "linkage_supported_phase_unresolved" &&
+      outcome.exclusive_primary_disposition ===
+        "linkage_supported_phase_unresolved" &&
+      findings.exact_project_route_statement_found === true &&
+      claims.exact_route_treatment_binding_proved === true &&
+      claims.candidate_date_supported_at_day_precision === true &&
+      claims.exact_segment_binding_proved === false &&
+      claims.explicit_phase_identity_proved === false &&
+      claims.operational_occurrence_identity_proved === false &&
+      actions.operational_occurrence_added_or_updated === false,
+    exact_route_evidence:
+      exactRouteEvidence.length === contract.exact_route_evidence_count &&
+      hash(stableJson(exactRouteEvidence as JsonValue)) ===
+        contract.exact_route_evidence_sha256 &&
+      stableJson(
+        [
+          ...new Set(
+            exactRouteEvidence.map((value, index) =>
+              nonempty(
+                object(value, `${priorPath}.exact_route_evidence[${index}]`)
+                  .source_id,
+                `${priorPath}.exact_route_evidence[${index}].source_id`,
+              ),
+            ),
+          ),
+        ].sort(),
+      ) === stableJson(contract.exact_route_evidence_sources as JsonValue),
+    canonical_actions:
+      stableJson(canonicalLinks) ===
+        stableJson(contract.canonical_links_added as JsonValue) &&
+      hash(stableJson(canonicalLinks)) ===
+        contract.canonical_links_added_sha256 &&
+      actions.journal_path === contract.canonical_journal_path &&
+      stableJson(stagedSourceIds) ===
+        stableJson(contract.staged_source_ids as JsonValue),
+    route_context:
+      routePage.content_sha256 === contract.route_page_sha256 &&
+      routePage.current_corridor_token_found ===
+        contract.route_page_current_corridor_token_found &&
+      routePage.temporal_limitation ===
+        contract.route_page_temporal_limitation,
+    query: Boolean(exactCandidateQuery),
+  };
+  const failedFreezeCheck = Object.entries(freezeChecks).find(
+    ([, valid]) => !valid,
+  )?.[0];
+  if (failedFreezeCheck) {
+    throw new Error(`${exactError}: ${failedFreezeCheck}`);
+  }
+
+  const relationPath = resolve(rootDir, "data/canonical/relations.jsonl");
+  const relationById = new Map(
+    readFileSync(relationPath, "utf8")
+      .split(/\r?\n/u)
+      .filter(Boolean)
+      .map((line) => JSON.parse(line) as Record<string, unknown>)
+      .map((relation) => [relation.record_id, relation]),
+  );
+  const journalPath = resolve(
+    rootDir,
+    nonempty(contract.canonical_journal_path, "canonical_journal_path"),
+  );
+  const journalBySubmissionId = new Map(
+    readFileSync(journalPath, "utf8")
+      .split(/\r?\n/u)
+      .filter(Boolean)
+      .map((line) => JSON.parse(line) as Record<string, unknown>)
+      .map((submission) => [submission.submission_id, submission]),
+  );
+  for (const relationId of canonicalLinks) {
+    const relation = relationById.get(relationId) ?? fail();
+    const evidenceRefs = Array.isArray(relation.evidence_refs)
+      ? relation.evidence_refs
+      : fail();
+    const submissionIds = stringArray(
+      relation.submission_ids,
+      `${relationPath}:${relationId}.submission_ids`,
+    );
+    if (
+      relation.record_kind !== "relation" ||
+      relation.source_id !== "rockaway_beach_blvd_jun2019" ||
+      evidenceRefs.length !== 2 ||
+      evidenceRefs.some(
+        (value, index) =>
+          object(value, `${relationPath}:${relationId}.evidence_refs[${index}]`)
+            .source_id !== "rockaway_beach_blvd_jun2019",
+      ) ||
+      submissionIds.length !== 1
+    ) {
+      fail();
+    }
+    const submission =
+      journalBySubmissionId.get(submissionIds[0]!) ?? fail();
+    const validation = object(
+      submission.validation,
+      `${journalPath}:${submissionIds[0]}.validation`,
+    );
+    const toolArgs = object(
+      submission.tool_args,
+      `${journalPath}:${submissionIds[0]}.tool_args`,
+    );
+    if (
+      validation.state !== "accepted" ||
+      toolArgs.observation_kind !== "relation" ||
+      toolArgs.source_id !== "rockaway_beach_blvd_jun2019" ||
+      toolArgs.local_observation_id !== relation.local_observation_id
+    ) {
+      fail();
+    }
+  }
+
+  const directions = [
+    ...new Set(features.map((feature) => feature.direction)),
+  ].sort();
+  const receiptId = `bus-lane-binding-search:${fingerprint({
+    package_id: manifest.package_id,
+    candidate_id: row.candidate_id,
+    candidate_fingerprint: row.candidate_fingerprint,
+    verdict: "binding_absent_after_search",
+  }).slice(0, 24)}`;
+  return {
+    schema_version: BUS_LANE_IDENTITY_SCHEMA_VERSION,
+    receipt_id: receiptId,
+    receipt_kind: "binding_absent_after_search",
+    package: {
+      artifact: ROCKAWAY_POSITIVE_LINKAGE_PACKAGE_ARTIFACT,
+      package_id: manifest.package_id,
+      package_sha256: manifest.package_sha256,
+      frozen_at: manifest.frozen_at,
+    },
+    candidate_id: row.candidate_id,
+    candidate_fingerprint: row.candidate_fingerprint,
+    gap_ids: [row.ledger_id],
+    gtfs_route_id: row.gtfs_route_id,
+    implementation_date: row.implementation_date,
+    missing_binding: "feature_extent",
+    unresolved_bindings: expectedUnresolvedBindings,
+    searched_at: prior.researched_on,
+    operator: "codex-plan039-rockaway-positive-linkage-package",
+    target: {
+      lane_group_ids: targetGroups.map((group) => group.lane_group_id),
+      feature_ids: [
+        ...new Set(features.map((feature) => feature.feature_id)),
+      ].sort(),
+      geometry_scopes: [
+        ...new Set(targetGroups.map((group) => group.geometry_scope)),
+      ].sort(),
+      matched_date: row.implementation_date,
+      directions,
+      open_dates_literals: [
+        ...new Set(features.map((feature) => feature.open_dates_literal)),
+      ].sort(),
+      named_sbs_routes: namedSbsRoutes,
+      feature_row_count: features.length,
+      feature_keys: [
+        ...new Set(features.map((feature) => feature.feature_key)),
+      ].sort(),
+      feature_rows: features.map((feature) => ({
+        feature_key: feature.feature_key,
+        feature_id: feature.feature_id,
+        direction: feature.direction,
+      })),
+    },
+    prior_receipt: {
+      artifact: priorArtifact,
+      receipt_id: priorReceiptId,
+      row_sha256: priorRowSha256,
+    },
+    search: {
+      exact_queries: exactQueries,
+      domains: [...new Set(urls.map((url) => new URL(url).hostname))].sort(),
+      urls_inspected: urls,
+      retrievals,
+      disposition: "binding_absent_after_search",
+    },
+    dossier_context: {
+      candidate_exact_target_row_count: 0,
+      historical_schedule_available: false,
+      path_source: "unavailable",
+      reason: "historical_schedule_unavailable_pre_2023",
+      establishes_traversal: false,
+      establishes_exclusion: false,
+    },
+    positive_linkage_context: {
+      prior_route_treatment_supported: true,
+      candidate_date_supported_at_day_precision: true,
+      exact_route_binding_evidence: exactRouteEvidence,
+      exact_segment_binding_proved: false,
+      explicit_phase_identity_proved: false,
+      operational_occurrence_identity_proved: false,
+      canonical_links_added: canonicalLinks,
+      canonical_journal_path: contract.canonical_journal_path,
+      canonical_relation_submission_count: canonicalLinks.length,
+      staged_source_ids: stagedSourceIds,
+      context_only: true,
+      authorizes_occurrence: false,
+    },
+    route_context: {
+      current_route_page_corridor_token_found:
+        routePage.current_corridor_token_found,
+      current_route_page_temporal_limitation: routePage.temporal_limitation,
+      exact_candidate_route_query: exactCandidateQuery?.query,
+      normalized_candidate_route_id: normalizedCandidate,
+    },
+    absence_contract: {
+      candidate_attribution_bound: true,
+      candidate_route_treatment_bound: true,
+      candidate_date_bound: true,
+      candidate_named_target: candidateNamedByTarget,
+      candidate_direction_bound: false,
+      candidate_feature_extent_bound: false,
+      candidate_phase_bound: false,
+      candidate_traversal_bound: false,
+      candidate_occurrence_bound: false,
+      nonexclusive_search_result: true,
+      not_a_refutation: true,
+    },
+    source_gap: {
+      historical_schedule_unavailable: true,
+      canonical_relations_authorize_occurrence: false,
+      current_registry_rows_substitute_for_historical_segment: false,
+      raw_source_content_used_to_authorize: false,
+      source_gap_authorizes_occurrence: false,
+    },
+    candidate_urls: [],
+    disposition: "binding_absent_after_search",
+    rationale:
+      `The immutable prior acquisition proves ${row.gtfs_route_id} route-treatment linkage at day precision with ${exactRouteEvidence.length} exact route evidence record(s), and ${canonicalLinks.length} accepted canonical relations preserve that linkage context. The exact-date target is still a 62-row union across Beach 59 Street, Broadway, and Rockaway Beach Boulevard, while the historical schedule path is unavailable. No evidence pins the candidate's exact historical segment, direction, phase, traversal, or operational occurrence. The canonical relations remain context only and cannot promote a registry projection. Direction, feature extent, phase, and traversal remain unresolved. This is not a traversal or wrong-route refutation and authorizes no occurrence, study, or cross-product projection.`,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+  };
+}
+
+function validateRockawayPositiveLinkageBindingReceipt(
+  receipt: Record<string, unknown>,
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): void {
+  let expected: Record<string, unknown>;
+  try {
+    expected = buildRockawayPositiveLinkageBindingReceiptDraft(
+      row,
+      packet,
+      rootDir,
+    );
+  } catch {
+    throw new Error(
+      "rockaway-positive-linkage package contract does not match the exact candidate",
+    );
+  }
+  if (stableJson(receipt as JsonValue) !== stableJson(expected as JsonValue)) {
+    throw new Error(
+      "rockaway-positive-linkage package contract does not match the exact candidate",
+    );
+  }
+}
+
 export function validateBindingReceiptDrafts(
   rows: readonly BusLaneIdentityRow[],
   packets: readonly BusLaneResearchPacket[],
@@ -4951,6 +5492,17 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
       throw new Error(`${receiptPath}: target-row-route-variant package does not preserve exact ledger evidence parity`);
     }
+    const rockawayPositiveLinkagePackageTarget =
+      isRockawayPositiveLinkagePackageTarget(row);
+    if (rockawayPositiveLinkagePackageTarget &&
+        (stableJson(packet.what_is_known.target_groups) !==
+          stableJson(row.onset_evidence.target_groups) ||
+        stableJson(packet.what_is_known.dossier_refs) !==
+          stableJson(row.dossier_refs))) {
+      throw new Error(
+        `${receiptPath}: Rockaway positive-linkage package does not preserve exact ledger evidence parity`,
+      );
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -5019,6 +5571,15 @@ export function validateBindingReceiptDrafts(
     }
     if (targetRowRouteVariantPackageTarget) {
       validateTargetRowRouteVariantBindingReceipt(receipt, row, packet, rootDir);
+      continue;
+    }
+    if (rockawayPositiveLinkagePackageTarget) {
+      validateRockawayPositiveLinkageBindingReceipt(
+        receipt,
+        row,
+        packet,
+        rootDir,
+      );
       continue;
     }
     const priorPointer = object(receipt.prior_receipt, `${receiptPath}.prior_receipt`);
