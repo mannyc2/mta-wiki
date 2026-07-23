@@ -1458,6 +1458,52 @@ const PURE_TARGET_ABSENCE_PACKAGE_CANDIDATE_IDS = new Set([
   "study-event-v2:479ca90ec5ec9eef7d7420b1",
   "study-event-v2:2d64abb517461dd62bc20aba",
 ]);
+const MULTI_CORRIDOR_ABSENCE_PACKAGE_ARTIFACT =
+  "data/quality/operational-reference/bus-lane-identity-packages/multi-corridor-absence-v1.json";
+const MULTI_CORRIDOR_ABSENCE_PACKAGE_SHA256 =
+  "85ed09e9e578ecf4596e4737a92250804596d281cd0b29e51f354f231fdef6f6";
+const MULTI_CORRIDOR_ABSENCE_PACKAGE_CANDIDATE_IDS = new Set([
+  "study-event-v2:9b6ba020e56049fc7ad2c891",
+  "study-event-v2:5e9524e62499cac2421befaa",
+  "study-event-v2:8a3559ef0bf5e0fc17d9965c",
+  "study-event-v2:3551add51fde883be224a663",
+  "study-event-v2:8637a971c6873d83aaa860e3",
+  "study-event-v2:c331a0993ca0b6048a9a1bbb",
+  "study-event-v2:5d10395a3af9366c8b206948",
+  "study-event-v2:58c2eb3ed4f88148dee522dc",
+  "study-event-v2:61f47e40bbeecaf4f7535ad4",
+  "study-event-v2:8d2f539b6eb6b4f043bf3679",
+  "study-event-v2:c86aa8ed486774309d910a38",
+  "study-event-v2:989bf8500931e7abc9222435",
+  "study-event-v2:a5e4135e14d52cdc67ef9b1d",
+  "study-event-v2:6b841176dc6abd0b3f856dc4",
+  "study-event-v2:37ab712782bdc5f4cf2dc7c5",
+  "study-event-v2:81f32921ea80aa9c88189ec8",
+  "study-event-v2:a456ca1a880470c9c8d59094",
+  "study-event-v2:95efc188542ec4fc9a3c3040",
+  "study-event-v2:47e50a2f42b62168f5cb97ba",
+  "study-event-v2:ae2b2ae93f4a99d66cbd8836",
+  "study-event-v2:8ce8f933316f9d0dea350c73",
+  "study-event-v2:919f6580e91bc865ff117b7c",
+  "study-event-v2:73e7374e7ba51fdcae1ea65b",
+  "study-event-v2:8daee206cb324c5ab2e7dab0",
+  "study-event-v2:bc95d2a555eee1db50a30acb",
+  "study-event-v2:4f4f2025b408914e8a75af2a",
+  "study-event-v2:d1336c31bf929341a67ca9f8",
+  "study-event-v2:8b0559a01bc7e862ed7a357b",
+  "study-event-v2:99e56151a9a85348d83a55a8",
+  "study-event-v2:1cbaaf7452f0b9e42fa76a47",
+  "study-event-v2:17dbbc23921e97072199fddc",
+  "study-event-v2:bf1457eba917f778391f40ed",
+  "study-event-v2:f3aebb63c67836aaa4d55653",
+  "study-event-v2:416b59adb9fdb0e32870e04f",
+  "study-event-v2:9fe7fb9e16f02734822c094e",
+  "study-event-v2:6a4a443af9804abc265ae501",
+  "study-event-v2:1444c6a77bd32667d77f1515",
+  "study-event-v2:aaff16dfafb41f2467b00a0e",
+  "study-event-v2:c9d838bf8f0c536de5bcd8ea",
+  "study-event-v2:a0587402538edde0179fa26e",
+]);
 
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
@@ -2006,6 +2052,10 @@ function isPositiveContextPackageTarget(row: BusLaneIdentityRow): boolean {
 
 function isPureTargetAbsencePackageTarget(row: BusLaneIdentityRow): boolean {
   return PURE_TARGET_ABSENCE_PACKAGE_CANDIDATE_IDS.has(row.candidate_id);
+}
+
+function isMultiCorridorAbsencePackageTarget(row: BusLaneIdentityRow): boolean {
+  return MULTI_CORRIDOR_ABSENCE_PACKAGE_CANDIDATE_IDS.has(row.candidate_id);
 }
 
 function isExactMadisonAvenuePacketTarget(
@@ -2560,6 +2610,7 @@ function packetMissingBinding(row: BusLaneIdentityRow): BusLaneResearchPacket["m
   if (row.onset_evidence.target_groups.length === 0) return "attribution";
   if (row.detector_verdict === "onset_unresolved") return "onset";
   if (isPureTargetAbsencePackageTarget(row)) return "feature_extent";
+  if (isMultiCorridorAbsencePackageTarget(row)) return "feature_extent";
   if (row.detector_reason_codes.some((reason) => reason.includes("direction_unknown"))) return "direction";
   if (isFrCapodannoLedgerTarget(row)) return "feature_extent";
   if (isTwentyFirstStreetLedgerTarget(row)) return "feature_extent";
@@ -2609,6 +2660,13 @@ function packetUnresolvedBindings(row: BusLaneIdentityRow): BusLaneMissingBindin
     bindings.add("traversal");
   }
   if (isPureTargetAbsencePackageTarget(row)) {
+    bindings.add("attribution");
+    bindings.add("direction");
+    bindings.add("feature_extent");
+    bindings.add("phase");
+    bindings.add("traversal");
+  }
+  if (isMultiCorridorAbsencePackageTarget(row)) {
     bindings.add("attribution");
     bindings.add("direction");
     bindings.add("feature_extent");
@@ -4241,45 +4299,80 @@ function validatePositiveContextBindingReceipt(
   }
 }
 
-function pureTargetAbsencePackageContract(
+interface PureAbsencePackageSpec {
+  artifact: string;
+  candidateIds: ReadonlySet<string>;
+  contractKind: string;
+  count: number;
+  exactError: string;
+  operator: string;
+  packageId: string;
+  packageSha256: string;
+}
+
+const PURE_TARGET_ABSENCE_PACKAGE_SPEC: PureAbsencePackageSpec = {
+  artifact: PURE_TARGET_ABSENCE_PACKAGE_ARTIFACT,
+  candidateIds: PURE_TARGET_ABSENCE_PACKAGE_CANDIDATE_IDS,
+  contractKind: "pure_nonauthorizing_absence",
+  count: 25,
+  exactError: "pure-target-absence package contract does not match the exact candidate",
+  operator: "codex-plan039-pure-target-absence-package",
+  packageId: "bus-lane-pure-target-absence-v1",
+  packageSha256: PURE_TARGET_ABSENCE_PACKAGE_SHA256,
+};
+
+const MULTI_CORRIDOR_ABSENCE_PACKAGE_SPEC: PureAbsencePackageSpec = {
+  artifact: MULTI_CORRIDOR_ABSENCE_PACKAGE_ARTIFACT,
+  candidateIds: MULTI_CORRIDOR_ABSENCE_PACKAGE_CANDIDATE_IDS,
+  contractKind: "multi_corridor_nonauthorizing_absence",
+  count: 40,
+  exactError: "multi-corridor-absence package contract does not match the exact candidate",
+  operator: "codex-plan039-multi-corridor-absence-package",
+  packageId: "bus-lane-multi-corridor-absence-v1",
+  packageSha256: MULTI_CORRIDOR_ABSENCE_PACKAGE_SHA256,
+};
+
+function pureAbsencePackageContract(
   rootDir: string,
   candidateId: string,
+  spec: PureAbsencePackageSpec,
 ): {
   manifest: Record<string, unknown>;
   contract: Record<string, unknown>;
 } {
-  const path = resolve(rootDir, PURE_TARGET_ABSENCE_PACKAGE_ARTIFACT);
+  const path = resolve(rootDir, spec.artifact);
   const manifest = object(JSON.parse(readFileSync(path, "utf8")), path);
   const packageSha256 = nonempty(manifest.package_sha256, `${path}.package_sha256`);
   const { package_sha256: _packageSha256, ...payload } = manifest;
-  if (packageSha256 !== PURE_TARGET_ABSENCE_PACKAGE_SHA256 ||
-      hash(stableJson(payload as JsonValue)) !== PURE_TARGET_ABSENCE_PACKAGE_SHA256 ||
-      manifest.package_id !== "bus-lane-pure-target-absence-v1" ||
-      manifest.contract_kind !== "pure_nonauthorizing_absence" ||
-      manifest.count !== 25 || manifest.verdict !== "binding_absent_after_search" ||
+  if (packageSha256 !== spec.packageSha256 ||
+      hash(stableJson(payload as JsonValue)) !== spec.packageSha256 ||
+      manifest.package_id !== spec.packageId ||
+      manifest.contract_kind !== spec.contractKind ||
+      manifest.count !== spec.count || manifest.verdict !== "binding_absent_after_search" ||
       manifest.authorizes_study !== false || manifest.authorizes_cross_product !== false ||
-      !Array.isArray(manifest.contracts) || manifest.contracts.length !== 25) {
-    throw new Error(`${path}: invalid pure-target-absence package freeze`);
+      !Array.isArray(manifest.contracts) || manifest.contracts.length !== spec.count) {
+    throw new Error(`${path}: invalid ${spec.contractKind} package freeze`);
   }
   const contract = manifest.contracts.map((value, index) =>
     object(value, `${path}.contracts[${index}]`))
     .find((value) => value.candidate_id === candidateId);
-  if (!contract || !PURE_TARGET_ABSENCE_PACKAGE_CANDIDATE_IDS.has(candidateId)) {
-    throw new Error(`${path}: candidate is outside the pure-target-absence package`);
+  if (!contract || !spec.candidateIds.has(candidateId)) {
+    throw new Error(`${path}: candidate is outside the ${spec.contractKind} package`);
   }
   return { manifest, contract };
 }
 
-export function buildPureTargetAbsenceBindingReceiptDraft(
+function buildPureAbsenceBindingReceiptDraft(
   row: BusLaneIdentityRow,
   packet: BusLaneResearchPacket,
   rootDir: string,
+  spec: PureAbsencePackageSpec,
 ): Record<string, unknown> {
-  const exactError = "pure-target-absence package contract does not match the exact candidate";
+  const exactError = spec.exactError;
   const fail = (): never => {
     throw new Error(exactError);
   };
-  const { manifest, contract } = pureTargetAbsencePackageContract(rootDir, row.candidate_id);
+  const { manifest, contract } = pureAbsencePackageContract(rootDir, row.candidate_id, spec);
   const targetGroups = packet.what_is_known.target_groups;
   const dossierRefs = packet.what_is_known.dossier_refs;
   const features = targetGroups.flatMap((group) => group.feature_matches);
@@ -4404,7 +4497,7 @@ export function buildPureTargetAbsenceBindingReceiptDraft(
     receipt_id: receiptId,
     receipt_kind: "binding_absent_after_search",
     package: {
-      artifact: PURE_TARGET_ABSENCE_PACKAGE_ARTIFACT,
+      artifact: spec.artifact,
       package_id: manifest.package_id,
       package_sha256: manifest.package_sha256,
       frozen_at: manifest.frozen_at,
@@ -4417,7 +4510,7 @@ export function buildPureTargetAbsenceBindingReceiptDraft(
     missing_binding: "feature_extent",
     unresolved_bindings: ["attribution", "direction", "feature_extent", "phase", "traversal"],
     searched_at: prior.researched_on,
-    operator: "codex-plan039-pure-target-absence-package",
+    operator: spec.operator,
     target: {
       lane_group_ids: targetGroups.map((group) => group.lane_group_id),
       feature_ids: [...new Set(features.map((feature) => feature.feature_id))].sort(),
@@ -4473,6 +4566,26 @@ export function buildPureTargetAbsenceBindingReceiptDraft(
   };
 }
 
+export function buildPureTargetAbsenceBindingReceiptDraft(
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): Record<string, unknown> {
+  return buildPureAbsenceBindingReceiptDraft(
+    row, packet, rootDir, PURE_TARGET_ABSENCE_PACKAGE_SPEC,
+  );
+}
+
+export function buildMultiCorridorAbsenceBindingReceiptDraft(
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): Record<string, unknown> {
+  return buildPureAbsenceBindingReceiptDraft(
+    row, packet, rootDir, MULTI_CORRIDOR_ABSENCE_PACKAGE_SPEC,
+  );
+}
+
 function validatePureTargetAbsenceBindingReceipt(
   receipt: Record<string, unknown>,
   row: BusLaneIdentityRow,
@@ -4487,6 +4600,23 @@ function validatePureTargetAbsenceBindingReceipt(
   }
   if (stableJson(receipt as JsonValue) !== stableJson(expected as JsonValue)) {
     throw new Error("pure-target-absence package contract does not match the exact candidate");
+  }
+}
+
+function validateMultiCorridorAbsenceBindingReceipt(
+  receipt: Record<string, unknown>,
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+): void {
+  let expected: Record<string, unknown>;
+  try {
+    expected = buildMultiCorridorAbsenceBindingReceiptDraft(row, packet, rootDir);
+  } catch {
+    throw new Error("multi-corridor-absence package contract does not match the exact candidate");
+  }
+  if (stableJson(receipt as JsonValue) !== stableJson(expected as JsonValue)) {
+    throw new Error("multi-corridor-absence package contract does not match the exact candidate");
   }
 }
 
@@ -4674,6 +4804,12 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
       throw new Error(`${receiptPath}: pure-target-absence package does not preserve exact ledger evidence parity`);
     }
+    const multiCorridorAbsencePackageTarget = isMultiCorridorAbsencePackageTarget(row);
+    if (multiCorridorAbsencePackageTarget &&
+        (stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups) ||
+        stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
+      throw new Error(`${receiptPath}: multi-corridor-absence package does not preserve exact ledger evidence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -4734,6 +4870,10 @@ export function validateBindingReceiptDrafts(
     }
     if (pureTargetAbsencePackageTarget) {
       validatePureTargetAbsenceBindingReceipt(receipt, row, packet, rootDir);
+      continue;
+    }
+    if (multiCorridorAbsencePackageTarget) {
+      validateMultiCorridorAbsenceBindingReceipt(receipt, row, packet, rootDir);
       continue;
     }
     const priorPointer = object(receipt.prior_receipt, `${receiptPath}.prior_receipt`);

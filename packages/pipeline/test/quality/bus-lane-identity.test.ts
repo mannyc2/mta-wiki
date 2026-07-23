@@ -11,6 +11,7 @@ import {
   buildEastGunHillBindingReceiptDraft,
   buildFrCapodannoBindingReceiptDraft,
   buildMadisonAvenueBindingReceiptDraft,
+  buildMultiCorridorAbsenceBindingReceiptDraft,
   buildPositiveContextBindingReceiptDraft,
   buildPureTargetAbsenceBindingReceiptDraft,
   buildTwentyFirstStreetBindingReceiptDraft,
@@ -7999,6 +8000,194 @@ describe("bus-lane identity exact-date targeting", () => {
           : line;
       }).join("\n")}\n`);
       expect(validate(firstReceipt, firstRow, firstPacket)).toThrow(exactError);
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
+
+  it("freezes 40 cross-corridor candidates without absorbing the occurrence-potential batch", () => {
+    const repoRoot = join(import.meta.dir, "../../../..");
+    const manifestArtifact =
+      "data/quality/operational-reference/bus-lane-identity-packages/multi-corridor-absence-v1.json";
+    const manifest = JSON.parse(readFileSync(join(repoRoot, manifestArtifact), "utf8")) as {
+      package_id: string;
+      package_sha256: string;
+      count: number;
+      excluded_occurrence_potential_batch_id: string;
+      contracts: Array<{
+        batch_id: string;
+        candidate_id: string;
+        prior_artifact: string;
+      }>;
+    };
+    expect(manifest).toMatchObject({
+      package_id: "bus-lane-multi-corridor-absence-v1",
+      package_sha256: "85ed09e9e578ecf4596e4737a92250804596d281cd0b29e51f354f231fdef6f6",
+      excluded_occurrence_potential_batch_id:
+        "bus-lane-multi-corridor-2019-09-16-part-01",
+      count: 40,
+    });
+    expect(manifest.contracts.some((contract) =>
+      contract.batch_id === manifest.excluded_occurrence_potential_batch_id)).toBe(false);
+    const excludedCandidateIds = new Set([
+      "study-event-v2:80a03a343ddc8022ecb8a9c1",
+      "study-event-v2:8483f8b099d292e9d6883859",
+      "study-event-v2:a1e55641545033df387b70b1",
+      "study-event-v2:3d294e2558b6464db48e92e8",
+      "study-event-v2:df8bb7f9438c48166f1ff8b9",
+      "study-event-v2:a77578d2722643ec0f1ece2d",
+    ]);
+    expect(manifest.contracts.some((contract) =>
+      excludedCandidateIds.has(contract.candidate_id))).toBe(false);
+    const ledgerRows = readFileSync(join(repoRoot,
+      "data/quality/operational-reference/bus-lane-identity-ledger.jsonl"), "utf8")
+      .split(/\r?\n/u).filter(Boolean).map((line) => JSON.parse(line) as BusLaneIdentityRow);
+    const packetFiles = new Map(
+      manifest.contracts.map((contract) => {
+        const row = ledgerRows.find((value) => value.candidate_id === contract.candidate_id)!;
+        const packetId = createHash("sha256").update(stableJson({ ledger_id: row.ledger_id } as JsonValue))
+          .digest("hex").slice(0, 24);
+        return [contract.candidate_id, JSON.parse(readFileSync(join(repoRoot,
+          `data/quality/acquisition/packets/bus-lane/packets/${packetId}.json`), "utf8")) as BusLaneResearchPacket];
+      }),
+    );
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-multi-corridor-absence-"));
+    const receiptDir = join(rootDir, "receipts");
+    mkdirSync(receiptDir, { recursive: true });
+    for (const artifact of new Set([
+      manifestArtifact,
+      ...manifest.contracts.map((contract) => contract.prior_artifact),
+    ])) {
+      const destination = join(rootDir, artifact);
+      mkdirSync(join(destination, ".."), { recursive: true });
+      copyFileSync(join(repoRoot, artifact), destination);
+    }
+    const validate = (
+      draft: Record<string, unknown>,
+      row: BusLaneIdentityRow,
+      packet: BusLaneResearchPacket,
+    ) => {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as JsonValue));
+      return () => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir);
+    };
+    const exactError = "multi-corridor-absence package contract does not match the exact candidate";
+    const receipts: Record<string, any>[] = [];
+    try {
+      for (const contract of manifest.contracts) {
+        const row = ledgerRows.find((value) => value.candidate_id === contract.candidate_id)!;
+        const packet = packetFiles.get(contract.candidate_id)!;
+        const expected = buildMultiCorridorAbsenceBindingReceiptDraft(row, packet, rootDir);
+        const suffix = String(expected.receipt_id).split(":")[1];
+        const receipt = JSON.parse(readFileSync(join(repoRoot,
+          `data/quality/acquisition/receipts/bus-lane-review/${suffix}.json`), "utf8")) as Record<string, any>;
+        receipts.push(receipt);
+        expect(receipt).toEqual(expected);
+        expect(packet.missing_binding).toBe("feature_extent");
+        expect(packet.unresolved_bindings).toEqual([
+          "attribution", "direction", "feature_extent", "phase", "traversal",
+        ]);
+        expect(packet.what_is_known.dossier_summary.target_row_count).toBe(0);
+        expect(receipt).toMatchObject({
+          authorizes_study: false,
+          authorizes_cross_product: false,
+          disposition: "binding_absent_after_search",
+          absence_contract: {
+            candidate_exact_target_bound: false,
+            candidate_direction_bound: false,
+            candidate_feature_extent_bound: false,
+            candidate_phase_bound: false,
+            candidate_traversal_bound: false,
+            candidate_occurrence_bound: false,
+            candidate_named_target: false,
+            prior_route_treatment_supported: false,
+            nonexclusive_search_result: true,
+            not_a_refutation: true,
+          },
+          source_gap: {
+            candidate_exact_target_dossier_row_count: 0,
+            raw_source_content_used_to_authorize: false,
+            source_gap_authorizes_occurrence: false,
+          },
+        });
+        const normalizedCandidate = row.gtfs_route_id.endsWith("+")
+          ? row.gtfs_route_id.slice(0, -1)
+          : row.gtfs_route_id;
+        expect(receipt.target.named_sbs_routes).not.toContain(row.gtfs_route_id);
+        expect(receipt.target.named_sbs_routes).not.toContain(normalizedCandidate);
+        expect(validate(receipt, row, packet)).not.toThrow();
+      }
+
+      expect(receipts).toHaveLength(40);
+      expect(receipts.filter((receipt) =>
+        receipt.absence_contract.prior_route_treatment_supported)).toHaveLength(0);
+      const firstContract = manifest.contracts[0]!;
+      const firstRow = ledgerRows.find((value) => value.candidate_id === firstContract.candidate_id)!;
+      const firstPacket = packetFiles.get(firstContract.candidate_id)!;
+      const firstReceipt = receipts[0]!;
+      expect(validate({ ...firstReceipt, authorizes_study: true },
+        firstRow, firstPacket)).toThrow(exactError);
+      expect(validate({
+        ...firstReceipt,
+        absence_contract: {
+          ...firstReceipt.absence_contract,
+          candidate_occurrence_bound: true,
+        },
+      }, firstRow, firstPacket)).toThrow(exactError);
+      expect(validate({
+        ...firstReceipt,
+        source_gap: {
+          ...firstReceipt.source_gap,
+          source_gap_authorizes_occurrence: true,
+        },
+      }, firstRow, firstPacket)).toThrow(exactError);
+      expect(validate(receipts[1]!, firstRow, firstPacket)).toThrow();
+
+      const targetGroups = firstPacket.what_is_known.target_groups;
+      const firstGroup = targetGroups[0]!;
+      const firstFeature = firstGroup.feature_matches[0]!;
+      const attributedGroups = [{
+        ...firstGroup,
+        feature_matches: [{ ...firstFeature, sbs_routes: [firstRow.gtfs_route_id] },
+          ...firstGroup.feature_matches.slice(1)],
+      }, ...targetGroups.slice(1)];
+      const attributedRow = { ...firstRow, onset_evidence: {
+        ...firstRow.onset_evidence, target_groups: attributedGroups,
+      } };
+      const attributedPacket = { ...firstPacket, what_is_known: {
+        ...firstPacket.what_is_known, target_groups: attributedGroups,
+      } };
+      expect(validate(firstReceipt, attributedRow, attributedPacket)).toThrow();
+
+      const manifestPath = join(rootDir, manifestArtifact);
+      writeFileSync(manifestPath, stableJson({
+        ...manifest, count: 41,
+      } as unknown as JsonValue));
+      expect(validate(firstReceipt, firstRow, firstPacket)).toThrow(exactError);
+      copyFileSync(join(repoRoot, manifestArtifact), manifestPath);
+
+      const priorPath = join(rootDir, firstContract.prior_artifact);
+      const priorLines = readFileSync(priorPath, "utf8").split(/\r?\n/u).filter(Boolean);
+      writeFileSync(priorPath, `${priorLines.map((line) => {
+        const prior = JSON.parse(line);
+        return prior.receipt_id === firstReceipt.prior_receipt.receipt_id
+          ? stableJson({ ...prior, claim_results: {
+            ...prior.claim_results, exact_route_treatment_binding_proved: true,
+          } } as JsonValue)
+          : line;
+      }).join("\n")}\n`);
+      expect(validate(firstReceipt, firstRow, firstPacket)).toThrow(exactError);
+
+      const reviewedRow = {
+        ...firstRow,
+        decision_id: `bus-lane-identity-decision:${String(firstReceipt.receipt_id).split(":")[1]}`,
+        receipt_ids: [String(firstReceipt.receipt_id)],
+        unresolved_bindings: ["attribution", "direction", "feature_extent", "phase", "traversal"],
+        updated_at: "2026-07-23T23:00:00Z",
+        verdict: "binding_absent_after_search",
+        verdict_basis: `review:bus-lane-identity-decision:${String(firstReceipt.receipt_id).split(":")[1]}`,
+      } as BusLaneIdentityRow;
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(firstReceipt as JsonValue));
+      expect(() => validateReviewedReceiptRefs([reviewedRow], receiptDir)).not.toThrow();
     } finally {
       rmSync(rootDir, { recursive: true, force: true });
     }
