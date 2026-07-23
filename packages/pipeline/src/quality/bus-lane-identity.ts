@@ -699,6 +699,153 @@ const ARCHER_JAMAICA_CURRENT_SOURCE = {
   artifact: "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/source.geojson",
   sha256: "e09e001191c53799936884f4e8311873a03bf9ff4f38e1f0b86af4ba465b6ef5",
 };
+const UNIVERSITY_AVENUE_ATTRIBUTION_GAP_ROUTES = new Set([
+  "BX12", "BX12+", "BX22", "BX36", "BX40", "BX42", "BX9",
+]);
+const UNIVERSITY_AVENUE_PRIOR_RECEIPTS = new Map([
+  ["BX22", {
+    receiptId: "bronx-acquisition:bf8da6161cc4a6f559831abe",
+    rowSha256: "8f2a033ec6154be709c8cd1887147edd6c4e1ee5fdbbeec9a1416d85b9a6a903",
+    dossierSha256: "af11a1a1a16223c1580a1c51087d44770b91aa671f5fbc0795bb6b1af0f24ab5",
+    routePageSha256: "8750bb6674a385ad6da15307181e6ffda5d6a1dd175f804c4c63041fe3f59182",
+    corridor: "Pelham Parkway / University Avenue", currentCorridorTokenFound: false,
+    contextSourceId: null, routeVariantPrecisionMismatch: false,
+  }],
+  ["BX36", {
+    receiptId: "bronx-acquisition:134d63d4e543aededc3b0e01",
+    rowSha256: "90cfe23861ad3170eabe8c3c4163a914753c3c20ada7d33bd18c279f97c34e3c",
+    dossierSha256: "1e1568be85f84257d8f955b92ee0df97236858430d57c4df19a133f3110b8cef",
+    routePageSha256: "c88baeef342e8dd069029628f01091b8f15a3b76fee912eb4efe3bce23fb616b",
+    corridor: "University Avenue / Washington Bridge", currentCorridorTokenFound: true,
+    contextSourceId: "bronx_cb5_priority_2019", routeVariantPrecisionMismatch: false,
+  }],
+  ["BX32", {
+    receiptId: "bronx-acquisition:f61ffa7732dec944500e09f0",
+    rowSha256: "95143679698438bbfa0229d1253e8251cdccc8f5238af93d4a602578b589746c",
+    dossierSha256: "44787cb5f301ee60b3cfd694f593a95d5b7345d65296545abf8009ca219ea873",
+    routePageSha256: "c67a1556b74c0978637ecf00af855ddcc28e9e86a3bfe65a65ed5a609405ba80",
+    corridor: "University Avenue", currentCorridorTokenFound: false,
+    contextSourceId: null, routeVariantPrecisionMismatch: false,
+  }],
+  ["BX18A", {
+    receiptId: "bronx-acquisition:37c5e2ba569d679ab6fa0c95",
+    rowSha256: "98147328570fc3f9c26ec21e42909a95c11eccb3c1153eda9ba732b245b6b591",
+    dossierSha256: "c69cef69ec2f9fa1c6e8393275d1fb620a3fee4fdd2142e38abb719c2a6045a4",
+    routePageSha256: "8f42934137c31ef2abde071426cff563c36202fb34ae4ee46e1d605e411fc1b8",
+    corridor: "University Avenue / Washington Bridge", currentCorridorTokenFound: false,
+    contextSourceId: null, routeVariantPrecisionMismatch: false,
+  }],
+  ["BX18B", {
+    receiptId: "bronx-acquisition:bebb9c4bcf98d2210bb4eebe",
+    rowSha256: "58400d1f07df9ed2beb3dff823fda82ab2a9fa5682aba5f5d89716e2c1b7e645",
+    dossierSha256: "5313c3487b746d132ecf4d291530fc2a263fdc1d9d160e2f395438386fcdbea4",
+    routePageSha256: "ac7bfbce4bf07c66a03784167f7aaaf24ced78f67d5a9147077f0c9cdeb3d225",
+    corridor: "University Avenue / Washington Bridge", currentCorridorTokenFound: false,
+    contextSourceId: null, routeVariantPrecisionMismatch: false,
+  }],
+  ["BX42", {
+    receiptId: "bronx-acquisition:50f31d5855d01b7fb6b482dc",
+    rowSha256: "30b579570de665d81f7954576ea3b1afe8a7edc6856a12403f8f2f59ed590c6f",
+    dossierSha256: "a23fb73ff764f533d8b9b4a9446cb35362984030bccbd534b470c1529d24d28f",
+    routePageSha256: "de5aeb272266cca1009fe7a7fd093871dd3195b7c8c6005225ab454a2af51d5e",
+    corridor: "University Avenue", currentCorridorTokenFound: false,
+    contextSourceId: null, routeVariantPrecisionMismatch: false,
+  }],
+  ["BX9", {
+    receiptId: "bronx-acquisition:945a5cee672fa78c7f10015c",
+    rowSha256: "9c46ad20d788f99efcc4af03e997f7ca38fed13e884afe375a352fdc45a06ea5",
+    dossierSha256: "b454f9c94faaf4efc440e040d5902cd6e6c084a0143face3a580da76994a65d9",
+    routePageSha256: "34fa88ecdd9f8f5f1f683d6da38220ff2758e743cfa7210993d3ba108f7db3a9",
+    corridor: "University Avenue", currentCorridorTokenFound: false,
+    contextSourceId: null, routeVariantPrecisionMismatch: false,
+  }],
+  ["BX12+", {
+    receiptId: "bronx-acquisition:ec7bc5d055efe63898ee7e00",
+    rowSha256: "999636a9261bac650b2a55793130e81d7ee41119bca0cc12dc171c88c7f6bc46",
+    dossierSha256: "f997320138fd89a69f1368ae3f506d6d3e480605ea544b64f7ca500f553ad612",
+    routePageSha256: "a070fef3986f5ecb360f1eb5f50710056d30da4ff83f211f36102f3212ce88e6",
+    corridor: "Pelham Parkway / University Avenue", currentCorridorTokenFound: false,
+    contextSourceId: "pelham_parkway_completion", routeVariantPrecisionMismatch: false,
+  }],
+  ["BX12", {
+    receiptId: "bronx-acquisition:37a36c4cc11bf3a13f42cec4",
+    rowSha256: "22ced13f845eb34b6ef89ec58b1970f9768772bf600287e9fc1625db210c6bbc",
+    dossierSha256: "f670ef02e1c964204fba8cb847a2803511e6f4f73f76a4cd0eb50577dae91861",
+    routePageSha256: "ba55861de25546859586c7e478b1da1fa0e6727beb1dd6170112f4164377c449",
+    corridor: "Pelham Parkway / University Avenue", currentCorridorTokenFound: false,
+    contextSourceId: null, routeVariantPrecisionMismatch: true,
+  }],
+  ["BX40", {
+    receiptId: "bronx-acquisition:a616a33628d760f809f88d2d",
+    rowSha256: "f9ca0dbaab1eca62ca1f076b90c1cbf4012a1ff7038ee34d4a495a912e40b391",
+    dossierSha256: "cd21b16419f4e6d7b24c5f234743a8a6512de70c40ce6262bd78b8c317b3b008",
+    routePageSha256: "9869796c570a534a74771237f4c1935999057444b5a3232b80465d5c059452a6",
+    corridor: "University Avenue", currentCorridorTokenFound: false,
+    contextSourceId: null, routeVariantPrecisionMismatch: false,
+  }],
+  ["BX3", {
+    receiptId: "bronx-acquisition:49de5d2b8d9170c3cee71a3a",
+    rowSha256: "50b5261b6ffcad6dd871271cb301074ba34dc31e87dfd6ae6dbcce8941b92952",
+    dossierSha256: "602a1d18c6bc68a99e0dad91073bf5c5e31460e790fe8a12fc47872ceb7a1a6f",
+    routePageSha256: "ba8c812fa004264f8aab38c89d3c534ace64e7c98dbb112bf904426535c0642b",
+    corridor: "University Avenue / Washington Bridge", currentCorridorTokenFound: true,
+    contextSourceId: "bronx_cb5_priority_2019", routeVariantPrecisionMismatch: false,
+  }],
+]);
+const UNIVERSITY_AVENUE_FEATURE_ROWS = [
+  ["dot-lane-feature:043d4734f489db847de2fd5c", "0174517", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:08fd915eabe0e86dd4395b5a", "0111555", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:0b7c97128c2f7f7a6dcdbb0d", "0079627", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:0fb930b5895b263c0adcdd0e", "0266053", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:1382919906b0ef92d03a72ac", "0111555", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:13b6cef932379f32af3a40ad", "0174518", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:1b9b4f49af86c6adeace9dad", "0188605", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:26d299ffa2499b0ee91e8f87", "0174516", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:36a7a53f36e78d08cfaa7176", "0073096", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:370999c0f05392a6231f9512", "0174519", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:38cb314550d18b2881026fb1", "0113543", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:3944da6f8bf187a0260f93ad", "0193554", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:398b45c02c59c3aeb18d12bb", "0079795", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:42f6b49230c474bea9e1621e", "0174516", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:4428e7b9d0a88b0c8606f472", "0174517", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:4c1a5434e041ad507c9a7370", "0072965", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:50d60967dee4a5fa47bee319", "0072965", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:5fb7b461c557b18e57e53a5f", "0113543", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:6d5ff6960cb91f0cb777a670", "0266053", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:72cb687a6189e886cb2464ef", "0193553", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:8203f66094189533b5595051", "0174518", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:83121fb2c7c3ba4b48c330b0", "0174519", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:8779346d610e2d4cfa7ba04e", "0188605", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:8931974cad68dafbc619364f", "0174349", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:8b1b5489d70a1090cb0be920", "0111554", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:920f109e06bb925feed06879", "0079627", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:b2b1148508d6cede749f157a", "0113544", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:bf046c269f20bee9b12c9c8a", "0111554", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:cba3bb8092b04c8289c78370", "0073073", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:d582c0e1148d624df7f61b89", "0113544", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:dda3181170b08774cbe8feb7", "0174348", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:e61776b3216c890555bb172b", "0193553", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:ec8eae265190c335cc3ff3e5", "0073073", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:f4285e2dd4d7aa277165055e", "0193554", "SB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+  ["dot-lane-feature:f8a7b5de7d4b67816743fc26", "0073096", "NB", "2023-12-01", "12/1/2023", "12/1/2023", []],
+];
+const UNIVERSITY_AVENUE_CONTEXT_SOURCES = new Map([
+  ["bronx_cb5_priority_2019", {
+    url: "https://www.nyc.gov/html/brt/downloads/pdf/bx-cb5-projects-dec032019.pdf",
+    sha256: "0e43255dc5a37106de9c7805e7eb1db80289141bb3937870a3d31264fcb552bc",
+    note: "Official Bronx CB5 presentation names Bx3/Bx36 on University Avenue and Bx3/Bx11/Bx13/Bx35/Bx36 on the proposed Washington Bridge bus lanes.",
+  }],
+  ["pelham_parkway_completion", {
+    url: "https://www.nyc.gov/site/ddc/about/press-releases/2023/pr-122723-Pelham.page",
+    sha256: "9a0811b58f4755a8638e8cb3e1bf5531e488f5fc05ef157ef16d7fee1246943e",
+    note: "NYC DDC/DOT/DEP release documents final Pelham Parkway reconstruction completion and 1.7 miles of bus lanes.",
+  }],
+]);
+const UNIVERSITY_AVENUE_CURRENT_SOURCE = {
+  sourceId: "nyc_dot_bus_lanes_local_streets_2026_07_22",
+  artifact: "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/source.geojson",
+  sha256: "e09e001191c53799936884f4e8311873a03bf9ff4f38e1f0b86af4ba465b6ef5",
+};
 
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
@@ -930,6 +1077,57 @@ function isExactArcherJamaicaPacketTarget(
     }) &&
     stableJson(packet.unresolved_bindings) ===
       stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"]);
+}
+
+function isExactUniversityAvenuePacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const priorContract = UNIVERSITY_AVENUE_PRIOR_RECEIPTS.get(row.gtfs_route_id);
+  const group = packet.what_is_known.target_groups[0];
+  if (!priorContract || !group) return false;
+  const dossierRefs = packet.what_is_known.dossier_refs;
+  const dossierVerdicts: LaneTraversalVerdict[] = [
+    "traversal_confirmed", "traversal_marginal", "no_traversal", "geometry_ambiguous",
+  ];
+  const dossierSources: LaneTraversalRow["path_source"][] = [
+    "gtfs_shape", "historical_schedule_timepoint_pattern", "unavailable",
+  ];
+  const expectedDossierSummary = {
+    row_count: dossierRefs.length,
+    target_row_count: dossierRefs.filter((ref) => ref.candidate_target_match).length,
+    counts_by_verdict: countBy(dossierRefs.map((ref) => ref.verdict_class), dossierVerdicts),
+    counts_by_reason: recordCounts(dossierRefs.map((ref) => ref.reason)),
+    counts_by_path_source: countBy(dossierRefs.map((ref) => ref.path_source), dossierSources),
+  };
+  const expectedUnresolvedBindings = UNIVERSITY_AVENUE_ATTRIBUTION_GAP_ROUTES.has(row.gtfs_route_id)
+    ? ["attribution", "direction", "feature_extent", "phase", "traversal"]
+    : ["direction", "feature_extent", "phase", "traversal"];
+  return row.implementation_date === "2023-12-01" &&
+    packet.missing_binding === "feature_extent" &&
+    packet.what_is_known.target_groups.length === 1 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    group.lane_group_id === "BX|UNIVERSITY AVENUE" && group.borough === "BX" &&
+    group.facility === "University Avenue" && group.street === "UNIVERSITY AVENUE" &&
+    group.geometry_scope === "mixed_date_feature_union" &&
+    stableJson(group.feature_matches.map((match) => [
+      match.feature_key,
+      match.feature_id,
+      match.direction,
+      match.matched_date,
+      match.matched_token_literal,
+      match.open_dates_literal,
+      match.sbs_routes,
+    ]) as JsonValue) === stableJson(UNIVERSITY_AVENUE_FEATURE_ROWS as JsonValue) &&
+    stableJson(dossierRefs) === stableJson(row.dossier_refs) &&
+    hash(stableJson(dossierRefs)) === priorContract.dossierSha256 &&
+    dossierRefs.length > 0 &&
+    dossierRefs.every((ref) =>
+      ref.service_date === "2023-12-01" && ref.temporal_lag_days === 0 &&
+      ref.path_source === "historical_schedule_timepoint_pattern" &&
+      ref.verdict_class === "geometry_ambiguous") &&
+    stableJson(packet.what_is_known.dossier_summary) === stableJson(expectedDossierSummary) &&
+    stableJson(packet.unresolved_bindings) === stableJson(expectedUnresolvedBindings);
 }
 
 function isoReviewTime(value: unknown, path: string): string {
@@ -1788,6 +1986,16 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs)) {
       throw new Error(`${receiptPath}: Archer/Jamaica packet dossier does not preserve exact ledger evidence parity`);
     }
+    const universityAvenueLedgerTarget = row.implementation_date === "2023-12-01" &&
+      UNIVERSITY_AVENUE_PRIOR_RECEIPTS.has(row.gtfs_route_id);
+    if (universityAvenueLedgerTarget &&
+        stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
+      throw new Error(`${receiptPath}: University Avenue packet target does not preserve exact ledger occurrence parity`);
+    }
+    if (universityAvenueLedgerTarget &&
+        stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs)) {
+      throw new Error(`${receiptPath}: University Avenue packet dossier does not preserve exact ledger evidence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -2389,6 +2597,187 @@ export function validateBindingReceiptDrafts(
           !existsSync(currentSourcePath) || hash(readFileSync(currentSourcePath)) !== ARCHER_JAMAICA_CURRENT_SOURCE.sha256 ||
           receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
         throw new Error(`${receiptPath}: Archer/Jamaica absence contract does not match the exact candidate`);
+      }
+    }
+    if (universityAvenueLedgerTarget) {
+      const priorContract = UNIVERSITY_AVENUE_PRIOR_RECEIPTS.get(row.gtfs_route_id)!;
+      const priorCandidate = object(prior.candidate, `${receiptPath}.prior.candidate`);
+      const sourceFindings = object(prior.source_findings, `${receiptPath}.prior.source_findings`);
+      const priorOutcome = object(prior.outcome, `${receiptPath}.prior.outcome`);
+      const priorClaims = object(prior.claim_results, `${receiptPath}.prior.claim_results`);
+      const canonicalActions = object(prior.canonical_actions, `${receiptPath}.prior.canonical_actions`);
+      const routePage = object(sourceFindings.mta_route_page,
+        `${receiptPath}.prior.source_findings.mta_route_page`);
+      const supported = priorContract.contextSourceId !== null;
+      const variantMismatch = priorContract.routeVariantPrecisionMismatch;
+      const contextSourceId = priorContract.contextSourceId ??
+        (variantMismatch ? "pelham_parkway_completion" : null);
+      const contextSource = contextSourceId
+        ? UNIVERSITY_AVENUE_CONTEXT_SOURCES.get(contextSourceId)
+        : null;
+      const expectedRouteEvidence = priorContract.contextSourceId === "bronx_cb5_priority_2019"
+        ? [{
+          evidence_kind: "official_project_route_statement",
+          official_routes: ["BX3", "BX36"],
+          open_dates: null,
+          segment_id: null,
+          source_id: "bronx_cb5_priority_2019",
+          source_row_sha256: null,
+          source_sha256: "0e43255dc5a37106de9c7805e7eb1db80289141bb3937870a3d31264fcb552bc",
+          support_note: "The official CB5 presentation explicitly identifies Bx3/Bx36 on University Avenue; no generic Bx18 statement is promoted to Bx18A or Bx18B.",
+        }]
+        : priorContract.contextSourceId === "pelham_parkway_completion"
+          ? [{
+            evidence_kind: "official_project_route_statement",
+            official_routes: ["BX12+"],
+            open_dates: null,
+            segment_id: null,
+            source_id: "pelham_parkway_completion",
+            source_row_sha256: null,
+            source_sha256: "9a0811b58f4755a8638e8cb3e1bf5531e488f5fc05ef157ef16d7fee1246943e",
+            support_note: "The official DDC/DOT/DEP completion release says the new Pelham Parkway lanes primarily serve BX12 Select Bus Service (BX12+), without supporting BX12 local or candidate-day phase identity.",
+          }]
+          : [];
+      const routeVariantLimitation = variantMismatch
+        ? "The official Pelham Parkway source names BX12 Select Bus Service (BX12+); it does not prove that the distinct BX12 local route used the treatment."
+        : null;
+      const expectedProjectContext = contextSourceId && contextSource
+        ? {
+          finding_kind: variantMismatch
+            ? "distinct_route_variant_context_nonterminal"
+            : "official_route_treatment_context_nonterminal",
+          source_id: contextSourceId,
+          source_url: contextSource.url,
+          source_content_sha256: contextSource.sha256,
+          supported_route_ids: contextSourceId === "bronx_cb5_priority_2019"
+            ? ["BX3", "BX36"]
+            : ["BX12+"],
+          supported_corridor: contextSourceId === "bronx_cb5_priority_2019"
+            ? "University Avenue"
+            : "Pelham Parkway",
+          candidate_route_id: row.gtfs_route_id,
+          candidate_route_treatment_context: supported,
+          exact_current_target_bound: false,
+          candidate_date_or_phase_bound: false,
+          traversal_bound: false,
+          route_variant_limitation: routeVariantLimitation,
+          authorizes_study: false,
+          authorizes_cross_product: false,
+        }
+        : undefined;
+      const dossierRowCount = packet.what_is_known.dossier_refs.length;
+      const dossierTargetCount = packet.what_is_known.dossier_refs
+        .filter((ref) => ref.candidate_target_match).length;
+      const rationalePrefix = priorContract.contextSourceId === "bronx_cb5_priority_2019"
+        ? `The immutable Bronx acquisition search acquired official route-treatment context naming BX3/BX36 on University Avenue, but it does not bind ${row.gtfs_route_id} to the exact current target.`
+        : priorContract.contextSourceId === "pelham_parkway_completion"
+          ? "The immutable Bronx acquisition search acquired official Pelham Parkway route-treatment context naming BX12+, but it does not bind BX12+ to the exact current University Avenue target."
+          : variantMismatch
+            ? "The immutable Bronx acquisition correctly preserves that the official Pelham Parkway source names BX12 Select Bus Service (BX12+), not the distinct BX12 local route; route-family normalization cannot transfer that context to BX12."
+            : `The immutable Bronx acquisition search found no authoritative exact ${row.gtfs_route_id} route-treatment binding to the current University Avenue target.`;
+      const unresolvedSentence = UNIVERSITY_AVENUE_ATTRIBUTION_GAP_ROUTES.has(row.gtfs_route_id)
+        ? "Attribution, direction, feature extent, phase, and traversal remain unresolved."
+        : "Direction, feature extent, phase, and traversal remain unresolved.";
+      const expectedRationale = `${rationalePrefix} The target is the ordered 35-row, 35-key, 19-ID mixed-date feature union on University Avenue in both northbound and southbound directions, with exact registry date 2023-12-01 and no named SBS route. The historical schedule timepoint dossier remains geometry-ambiguous (${dossierRowCount} rows, ${dossierTargetCount} target-tagged) and cannot prove traversal. ${unresolvedSentence} This is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`;
+      const exactCandidateQuery = exactQueries.some((query) => {
+        if (query.category !== "official_mta_route_project") return false;
+        const tokens = query.query.toUpperCase().split(/[^A-Z0-9+]+/u).filter(Boolean);
+        return [row.gtfs_route_id, "UNIVERSITY"].every((token) => tokens.includes(token));
+      });
+      const contextRetrieval = contextSourceId && contextSource
+        ? retrievals.some((retrieval) => {
+          const record = retrieval as Record<string, unknown>;
+          return record.id === contextSourceId && record.sha256 === contextSource.sha256 &&
+            record.status === "acquired";
+        })
+        : true;
+      const acquiredContextSource = contextSourceId
+        ? acquiredSourceRecords.find((source) => source.id === contextSourceId)
+        : null;
+      const currentSourcePath = resolve(rootDir, UNIVERSITY_AVENUE_CURRENT_SOURCE.artifact);
+      const currentSourceMetadataPath = resolve(rootDir, "raw", "sources",
+        UNIVERSITY_AVENUE_CURRENT_SOURCE.sourceId, "metadata.json");
+      const currentSourceMetadata = existsSync(currentSourceMetadataPath)
+        ? object(JSON.parse(readFileSync(currentSourceMetadataPath, "utf8")), currentSourceMetadataPath)
+        : {};
+      const currentSourceMetadataSha = typeof currentSourceMetadata.sha256 === "string"
+        ? currentSourceMetadata.sha256.replace(/^sha256:/u, "")
+        : null;
+      const exactSegmentIds = [
+        "0072965", "0073073", "0073096", "0079627", "0079795", "0111554", "0111555",
+        "0113543", "0113544", "0174348", "0174349", "0174516", "0174517", "0174518",
+        "0174519", "0188605", "0193553", "0193554", "0266053",
+      ];
+      if (!isExactUniversityAvenuePacketTarget(packet, row) ||
+          priorPointer.receipt_id !== priorContract.receiptId ||
+          priorPointer.row_sha256 !== priorContract.rowSha256 ||
+          priorPointer.artifact !==
+            "data/quality/relationship-integrity/bus-lane-acquisition/shards/bronx/receipts.jsonl" ||
+          priorCandidate.candidate_id !== row.candidate_id ||
+          priorCandidate.normalized_route_id !== (row.gtfs_route_id === "BX12+" ? "BX12" : row.gtfs_route_id) ||
+          priorCandidate.route_id !== row.gtfs_route_id ||
+          priorCandidate.corridor !== priorContract.corridor ||
+          priorCandidate.implementation_date !== row.implementation_date ||
+          priorCandidate.identity !== `${row.gtfs_route_id}|bus_lane|2023-12-01|day` ||
+          receipt.missing_binding !== "feature_extent" ||
+          target.feature_row_count !== 35 ||
+          !Array.isArray(target.feature_keys) || target.feature_keys.length !== 35 ||
+          !Array.isArray(target.feature_ids) || target.feature_ids.length !== 19 ||
+          !Array.isArray(target.feature_rows) || target.feature_rows.length !== 35 ||
+          receipt.rationale !== expectedRationale ||
+          receipt.finding_corrections !== undefined ||
+          (expectedProjectContext === undefined
+            ? receipt.project_context !== undefined
+            : stableJson(receipt.project_context as JsonValue) !==
+              stableJson(expectedProjectContext as unknown as JsonValue)) ||
+          receipt.supplemental_search !== undefined || receipt.occurrence_context !== undefined ||
+          receipt.context_receipt !== undefined ||
+          sourceFindings.acquired_for_candidate !== true ||
+          sourceFindings.candidate_named_lane_record_count !== 0 ||
+          sourceFindings.official_lane_matching_record_count !== 35 ||
+          stableJson(sourceFindings.official_lane_matching_segment_ids as JsonValue) !==
+            stableJson(exactSegmentIds) ||
+          stableJson(sourceFindings.official_lane_named_routes as JsonValue) !== stableJson([]) ||
+          stableJson(sourceFindings.official_route_named_segment_ids as JsonValue) !== stableJson([]) ||
+          sourceFindings.exact_project_route_statement_found !== supported ||
+          sourceFindings.exact_project_route_source_id !== priorContract.contextSourceId ||
+          sourceFindings.route_variant_precision_mismatch !== variantMismatch ||
+          sourceFindings.route_variant_precision_limitation !== routeVariantLimitation ||
+          routePage.content_sha256 !== priorContract.routePageSha256 ||
+          routePage.exact_route_title_found !== true ||
+          routePage.current_corridor_token_found !== priorContract.currentCorridorTokenFound ||
+          routePage.retrieval_status !== "acquired" ||
+          typeof routePage.temporal_limitation !== "string" || !routePage.temporal_limitation ||
+          priorOutcome.exclusive_primary_disposition !==
+            (supported ? "linkage_supported_phase_unresolved" : "completed_search_route_linkage_unresolved") ||
+          priorOutcome.registry_projection_excluded !== true || priorOutcome.still_unresolved !== true ||
+          priorOutcome.study_projection_eligible !== false ||
+          priorClaims.physical_bus_lane_record_acquired !== true ||
+          priorClaims.candidate_segment_ids_pinned !== false ||
+          priorClaims.date_and_phase_proved !== false ||
+          priorClaims.exact_route_treatment_binding_proved !== supported ||
+          priorClaims.exact_segment_binding_proved !== false ||
+          priorClaims.explicit_phase_identity_proved !== false ||
+          priorClaims.operational_occurrence_identity_proved !== false ||
+          stableJson(priorClaims.exact_route_binding_evidence as JsonValue) !==
+            stableJson(expectedRouteEvidence as JsonValue) ||
+          stableJson(priorClaims.exact_segment_ids as JsonValue) !== stableJson([]) ||
+          stableJson(canonicalActions.canonical_links_added as JsonValue) !== stableJson([]) ||
+          canonicalActions.operational_occurrence_added_or_updated !== false ||
+          !exactCandidateQuery || !contextRetrieval ||
+          (contextSource && (!acquiredContextSource ||
+            acquiredContextSource.url !== contextSource.url ||
+            acquiredContextSource.content_sha256 !== contextSource.sha256 ||
+            acquiredContextSource.retrieval_status !== "acquired" ||
+            acquiredContextSource.note !== contextSource.note)) ||
+          row.onset_evidence.lane_snapshot_id !== "nyc-dot-bus-lanes-local-streets-2026-07-22" ||
+          row.onset_evidence.lane_source_id !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sourceId ||
+          currentSourceMetadata.sourceId !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sourceId ||
+          currentSourceMetadataSha !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sha256 ||
+          !existsSync(currentSourcePath) ||
+          hash(readFileSync(currentSourcePath)) !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sha256 ||
+          receipt.authorizes_study !== false || receipt.authorizes_cross_product !== false) {
+        throw new Error(`${receiptPath}: University Avenue absence contract does not match the exact candidate`);
       }
     }
     if (receipt.supplemental_search !== undefined) {

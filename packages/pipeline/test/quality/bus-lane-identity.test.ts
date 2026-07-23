@@ -5974,6 +5974,302 @@ describe("bus-lane identity exact-date targeting", () => {
     }
   });
 
+  it("closes University Avenue only with exact route, target, dossier, variant, and context guards", () => {
+    const repoRoot = join(import.meta.dir, "../../../..");
+    const batch = JSON.parse(readFileSync(join(repoRoot,
+      "data/quality/acquisition/packets/bus-lane/batches/bus-lane-bx-university-avenue-2023-12-01-part-01.json"),
+    "utf8")) as { packet_paths: string[] };
+    const packets = batch.packet_paths.map((path) => JSON.parse(readFileSync(join(repoRoot,
+      "data/quality/acquisition/packets/bus-lane", path), "utf8")) as BusLaneResearchPacket);
+    const candidateIds = new Set(packets.map((packet) => packet.candidate_id));
+    const rows = readFileSync(join(repoRoot,
+      "data/quality/operational-reference/bus-lane-identity-ledger.jsonl"), "utf8")
+      .split(/\r?\n/u).filter(Boolean).map((line) => JSON.parse(line) as BusLaneIdentityRow)
+      .filter((row) => candidateIds.has(row.candidate_id));
+    const rowByRoute = new Map(rows.map((row) => [row.gtfs_route_id, row]));
+    const packetByRoute = new Map(packets.map((packet) => [packet.gtfs_route_id, packet]));
+    const priorArtifact =
+      "data/quality/relationship-integrity/bus-lane-acquisition/shards/bronx/receipts.jsonl";
+    const priorLines = readFileSync(join(repoRoot, priorArtifact), "utf8").split(/\r?\n/u).filter(Boolean);
+    const priorLineById = new Map(priorLines.map((line) => {
+      const parsed = JSON.parse(line) as { receipt_id: string };
+      return [parsed.receipt_id, line];
+    }));
+    const selectedPriorLines = rows.map((row) => priorLineById.get(
+      row.prior_acquisition_receipt!.receipt_id)!).filter(Boolean);
+    const priorByRoute = new Map(rows.map((row) => [row.gtfs_route_id,
+      JSON.parse(priorLineById.get(row.prior_acquisition_receipt!.receipt_id)!) as {
+        researched_on: string;
+        acquisition_attempts: {
+          category: string;
+          query: string;
+          query_status: string;
+          urls_checked: string[];
+          retrievals: { id: string; retrieved_on: string; sha256: string; status: string }[];
+        }[];
+      }]));
+    const contextSources = {
+      bronx_cb5_priority_2019: {
+        url: "https://www.nyc.gov/html/brt/downloads/pdf/bx-cb5-projects-dec032019.pdf",
+        content_sha256: "0e43255dc5a37106de9c7805e7eb1db80289141bb3937870a3d31264fcb552bc",
+        retrieval_status: "acquired",
+        note: "Official Bronx CB5 presentation names Bx3/Bx36 on University Avenue and Bx3/Bx11/Bx13/Bx35/Bx36 on the proposed Washington Bridge bus lanes.",
+      },
+      pelham_parkway_completion: {
+        url: "https://www.nyc.gov/site/ddc/about/press-releases/2023/pr-122723-Pelham.page",
+        content_sha256: "9a0811b58f4755a8638e8cb3e1bf5531e488f5fc05ef157ef16d7fee1246943e",
+        retrieval_status: "acquired",
+        note: "NYC DDC/DOT/DEP release documents final Pelham Parkway reconstruction completion and 1.7 miles of bus lanes.",
+      },
+    };
+    const supportedSourceByRoute = new Map([
+      ["BX3", "bronx_cb5_priority_2019"],
+      ["BX36", "bronx_cb5_priority_2019"],
+      ["BX12+", "pelham_parkway_completion"],
+    ]);
+    const attributionGapRoutes = new Set(["BX12", "BX12+", "BX22", "BX36", "BX40", "BX42", "BX9"]);
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-university-avenue-"));
+    const receiptDir = join(rootDir, "receipts");
+    const tempPriorPath = join(rootDir, priorArtifact);
+    const sourceRoot = join(rootDir, "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22");
+    const acquiredChecksPath = join(rootDir,
+      "data/quality/relationship-integrity/bus-lane-acquisition/shards/bronx/acquired-source-checks.json");
+    mkdirSync(receiptDir, { recursive: true });
+    mkdirSync(join(tempPriorPath, ".."), { recursive: true });
+    mkdirSync(sourceRoot, { recursive: true });
+    mkdirSync(join(acquiredChecksPath, ".."), { recursive: true });
+    writeFileSync(tempPriorPath, `${selectedPriorLines.join("\n")}\n`);
+    copyFileSync(join(repoRoot,
+      "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/metadata.json"),
+    join(sourceRoot, "metadata.json"));
+    copyFileSync(join(repoRoot,
+      "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/source.geojson"),
+    join(sourceRoot, "source.geojson"));
+    const writeAcquiredChecks = (sources: Record<string, unknown>[] = Object.entries(contextSources)
+      .map(([id, source]) => ({ id, ...source }))) => {
+      writeFileSync(acquiredChecksPath, JSON.stringify({ sources }));
+    };
+    writeAcquiredChecks();
+    const targetFor = (packet: BusLaneResearchPacket, row: BusLaneIdentityRow) => {
+      const groups = packet.what_is_known.target_groups;
+      const matches = groups.flatMap((group) => group.feature_matches);
+      return {
+        directions: [...new Set(matches.map((match) => match.direction))].sort(),
+        feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+        feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+        feature_row_count: matches.length,
+        feature_rows: matches.map((match) => ({
+          feature_key: match.feature_key, feature_id: match.feature_id, direction: match.direction,
+        })),
+        geometry_scopes: [...new Set(groups.map((group) => group.geometry_scope))].sort(),
+        lane_group_ids: groups.map((group) => group.lane_group_id),
+        matched_date: row.implementation_date,
+        named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+        open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+      };
+    };
+    const projectContextFor = (routeId: string) => {
+      const variantMismatch = routeId === "BX12";
+      const sourceId = supportedSourceByRoute.get(routeId) ??
+        (variantMismatch ? "pelham_parkway_completion" : null);
+      if (!sourceId) return undefined;
+      const source = contextSources[sourceId as keyof typeof contextSources];
+      return {
+        finding_kind: variantMismatch
+          ? "distinct_route_variant_context_nonterminal"
+          : "official_route_treatment_context_nonterminal",
+        source_id: sourceId,
+        source_url: source.url,
+        source_content_sha256: source.content_sha256,
+        supported_route_ids: sourceId === "bronx_cb5_priority_2019" ? ["BX3", "BX36"] : ["BX12+"],
+        supported_corridor: sourceId === "bronx_cb5_priority_2019" ? "University Avenue" : "Pelham Parkway",
+        candidate_route_id: routeId,
+        candidate_route_treatment_context: !variantMismatch,
+        exact_current_target_bound: false,
+        candidate_date_or_phase_bound: false,
+        traversal_bound: false,
+        route_variant_limitation: variantMismatch
+          ? "The official Pelham Parkway source names BX12 Select Bus Service (BX12+); it does not prove that the distinct BX12 local route used the treatment."
+          : null,
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+    };
+    const rationaleFor = (row: BusLaneIdentityRow, packet: BusLaneResearchPacket) => {
+      const routeId = row.gtfs_route_id;
+      const prefix = supportedSourceByRoute.get(routeId) === "bronx_cb5_priority_2019"
+        ? `The immutable Bronx acquisition search acquired official route-treatment context naming BX3/BX36 on University Avenue, but it does not bind ${routeId} to the exact current target.`
+        : supportedSourceByRoute.get(routeId) === "pelham_parkway_completion"
+          ? "The immutable Bronx acquisition search acquired official Pelham Parkway route-treatment context naming BX12+, but it does not bind BX12+ to the exact current University Avenue target."
+          : routeId === "BX12"
+            ? "The immutable Bronx acquisition correctly preserves that the official Pelham Parkway source names BX12 Select Bus Service (BX12+), not the distinct BX12 local route; route-family normalization cannot transfer that context to BX12."
+            : `The immutable Bronx acquisition search found no authoritative exact ${routeId} route-treatment binding to the current University Avenue target.`;
+      const targetCount = packet.what_is_known.dossier_refs.filter((ref) => ref.candidate_target_match).length;
+      const unresolvedSentence = attributionGapRoutes.has(routeId)
+        ? "Attribution, direction, feature extent, phase, and traversal remain unresolved."
+        : "Direction, feature extent, phase, and traversal remain unresolved.";
+      return `${prefix} The target is the ordered 35-row, 35-key, 19-ID mixed-date feature union on University Avenue in both northbound and southbound directions, with exact registry date 2023-12-01 and no named SBS route. The historical schedule timepoint dossier remains geometry-ambiguous (${packet.what_is_known.dossier_refs.length} rows, ${targetCount} target-tagged) and cannot prove traversal. ${unresolvedSentence} This is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`;
+    };
+    const receiptFor = (row: BusLaneIdentityRow, packet: BusLaneResearchPacket) => {
+      const prior = priorByRoute.get(row.gtfs_route_id)!;
+      const urls = [...new Set(prior.acquisition_attempts.flatMap((attempt) => attempt.urls_checked))].sort();
+      const projectContext = projectContextFor(row.gtfs_route_id);
+      return {
+        schema_version: 1,
+        receipt_id: `binding-university-${row.gtfs_route_id.toLowerCase()}`,
+        receipt_kind: "binding_absent_after_search",
+        candidate_id: row.candidate_id,
+        candidate_fingerprint: row.candidate_fingerprint,
+        gtfs_route_id: row.gtfs_route_id,
+        implementation_date: row.implementation_date,
+        gap_ids: [row.ledger_id],
+        searched_at: prior.researched_on,
+        operator: "fixture-reviewer",
+        candidate_urls: [],
+        disposition: "binding_absent_after_search",
+        missing_binding: packet.missing_binding,
+        unresolved_bindings: packet.unresolved_bindings,
+        target: targetFor(packet, row),
+        prior_receipt: packet.what_is_known.prior_acquisition_receipt,
+        ...(projectContext ? { project_context: projectContext } : {}),
+        rationale: rationaleFor(row, packet),
+        search: {
+          exact_queries: prior.acquisition_attempts.map(({ category, query, query_status }) =>
+            ({ category, query, query_status })),
+          domains: [...new Set(urls.map((url) => new URL(url).hostname))].sort(),
+          urls_inspected: urls,
+          retrievals: prior.acquisition_attempts.flatMap((attempt) => attempt.retrievals.map((retrieval) =>
+            ({ category: attempt.category, ...retrieval }))),
+          disposition: "binding_absent_after_search",
+        },
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+    };
+    const validate = (
+      draft: Record<string, unknown>,
+      row: BusLaneIdentityRow,
+      packet: BusLaneResearchPacket,
+    ) => {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+      return () => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir);
+    };
+    const withGroup = (
+      baseRow: BusLaneIdentityRow,
+      basePacket: BusLaneResearchPacket,
+      group: BusLaneResearchPacket["what_is_known"]["target_groups"][number],
+    ) => {
+      const candidateRow = { ...baseRow, onset_evidence: { ...baseRow.onset_evidence, target_groups: [group] } };
+      const candidatePacket = { ...basePacket, what_is_known: {
+        ...basePacket.what_is_known, target_groups: [group],
+      } };
+      return { candidateRow, candidatePacket, receipt: receiptFor(candidateRow, candidatePacket) };
+    };
+    try {
+      expect(rows).toHaveLength(11);
+      for (const packet of packets) {
+        const row = rowByRoute.get(packet.gtfs_route_id)!;
+        const receipt = receiptFor(row, packet);
+        expect(receipt.target).toMatchObject({
+          lane_group_ids: ["BX|UNIVERSITY AVENUE"],
+          feature_row_count: 35,
+          directions: ["NB", "SB"],
+          named_sbs_routes: [],
+        });
+        expect(receipt.target.feature_keys).toHaveLength(35);
+        expect(receipt.target.feature_ids).toHaveLength(19);
+        expect(validate(receipt, row, packet)).not.toThrow();
+      }
+
+      const bx3Row = rowByRoute.get("BX3")!;
+      const bx3Packet = packetByRoute.get("BX3")!;
+      const bx3Receipt = receiptFor(bx3Row, bx3Packet);
+      expect(validate({ ...bx3Receipt, project_context: {
+        ...bx3Receipt.project_context, exact_current_target_bound: true,
+      } }, bx3Row, bx3Packet)).toThrow("University Avenue absence contract does not match the exact candidate");
+      const originalGroup = bx3Packet.what_is_known.target_groups[0]!;
+      const reordered = withGroup(bx3Row, bx3Packet, { ...originalGroup, feature_matches: [
+        originalGroup.feature_matches[1]!, originalGroup.feature_matches[0]!,
+        ...originalGroup.feature_matches.slice(2),
+      ] });
+      expect(validate(reordered.receipt, reordered.candidateRow, reordered.candidatePacket))
+        .toThrow("University Avenue absence contract does not match the exact candidate");
+      const removed = withGroup(bx3Row, bx3Packet, {
+        ...originalGroup, feature_matches: originalGroup.feature_matches.slice(1),
+      });
+      expect(validate(removed.receipt, removed.candidateRow, removed.candidatePacket))
+        .toThrow("University Avenue absence contract does not match the exact candidate");
+      const retokened = withGroup(bx3Row, bx3Packet, { ...originalGroup,
+        feature_matches: originalGroup.feature_matches.map((match, index) =>
+          index === 0 ? { ...match, matched_token_literal: "12/2/2023" } : match),
+      });
+      expect(validate(retokened.receipt, retokened.candidateRow, retokened.candidatePacket))
+        .toThrow("University Avenue absence contract does not match the exact candidate");
+      const injectedSbs = withGroup(bx3Row, bx3Packet, { ...originalGroup,
+        feature_matches: originalGroup.feature_matches.map((match, index) =>
+          index === 0 ? { ...match, sbs_routes: ["BX3"] } : match),
+      });
+      expect(validate(injectedSbs.receipt, injectedSbs.candidateRow, injectedSbs.candidatePacket))
+        .toThrow("University Avenue absence contract does not match the exact candidate");
+
+      const dossierRefs = bx3Packet.what_is_known.dossier_refs.map((ref, index) =>
+        index === 0 ? { ...ref, candidate_target_match: !ref.candidate_target_match } : ref);
+      const dossierRow = { ...bx3Row, dossier_refs: dossierRefs };
+      const dossierPacket = { ...bx3Packet, what_is_known: {
+        ...bx3Packet.what_is_known,
+        dossier_refs: dossierRefs,
+        dossier_summary: { ...bx3Packet.what_is_known.dossier_summary,
+          target_row_count: dossierRefs.filter((ref) => ref.candidate_target_match).length,
+        },
+      } };
+      expect(validate(receiptFor(dossierRow, dossierPacket), dossierRow, dossierPacket))
+        .toThrow("University Avenue absence contract does not match the exact candidate");
+
+      const bx3Prior = priorByRoute.get("BX3")!;
+      const bx3PriorLine = priorLineById.get(bx3Row.prior_acquisition_receipt!.receipt_id)!;
+      const tamperedPrior = { ...bx3Prior, claim_results: {
+        ...(bx3Prior as unknown as { claim_results: Record<string, unknown> }).claim_results,
+        operational_occurrence_identity_proved: true,
+      } };
+      const tamperedPriorLine = stableJson(tamperedPrior as unknown as JsonValue);
+      const tamperedPriorSha = createHash("sha256").update(tamperedPriorLine).digest("hex");
+      const tamperedJournal = selectedPriorLines.map((line) => line === bx3PriorLine ? tamperedPriorLine : line);
+      writeFileSync(tempPriorPath, `${tamperedJournal.join("\n")}\n`);
+      const tamperedPointer = { ...bx3Row.prior_acquisition_receipt!, row_sha256: tamperedPriorSha };
+      const tamperedRow = { ...bx3Row, prior_acquisition_receipt: tamperedPointer };
+      const tamperedPacket = { ...bx3Packet, what_is_known: {
+        ...bx3Packet.what_is_known, prior_acquisition_receipt: tamperedPointer,
+      } };
+      expect(validate(receiptFor(tamperedRow, tamperedPacket), tamperedRow, tamperedPacket))
+        .toThrow("University Avenue absence contract does not match the exact candidate");
+      writeFileSync(tempPriorPath, `${selectedPriorLines.join("\n")}\n`);
+
+      const bx12Row = rowByRoute.get("BX12")!;
+      const bx12Packet = packetByRoute.get("BX12")!;
+      const bx12Receipt = receiptFor(bx12Row, bx12Packet);
+      expect(validate({ ...bx12Receipt, project_context: {
+        ...bx12Receipt.project_context, candidate_route_treatment_context: true,
+      } }, bx12Row, bx12Packet)).toThrow("University Avenue absence contract does not match the exact candidate");
+      expect(validate({ ...bx12Receipt, finding_corrections: [] }, bx12Row, bx12Packet))
+        .toThrow("University Avenue absence contract does not match the exact candidate");
+
+      writeFileSync(join(sourceRoot, "source.geojson"), "{}\n");
+      expect(validate(bx3Receipt, bx3Row, bx3Packet))
+        .toThrow("University Avenue absence contract does not match the exact candidate");
+      copyFileSync(join(repoRoot,
+        "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/source.geojson"),
+      join(sourceRoot, "source.geojson"));
+      writeAcquiredChecks(Object.entries(contextSources).map(([id, source]) => ({
+        id, ...source, note: `${source.note} Tampered.`,
+      })));
+      expect(validate(bx3Receipt, bx3Row, bx3Packet))
+        .toThrow("University Avenue absence contract does not match the exact candidate");
+      writeAcquiredChecks();
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
+
   it("closes SIM23 and SIM24 only as zero-target nonrefutational absences", () => {
     const date = "2015-05-27";
     const priorReceiptIds = new Map([
