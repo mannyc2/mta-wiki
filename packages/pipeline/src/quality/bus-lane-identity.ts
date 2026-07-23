@@ -949,6 +949,130 @@ const HYLAN_BOULEVARD_CONTEXT_SOURCES = {
 };
 const HYLAN_BOULEVARD_CURRENT_SOURCE = UNIVERSITY_AVENUE_CURRENT_SOURCE;
 
+const EAST_GUN_HILL_CONTEXT_ROUTES = ["BX28", "BX38", "BX41", "BX41+"];
+const EAST_GUN_HILL_PRIOR_RECEIPTS = new Map<string, {
+  receiptId: string;
+  rowSha256: string;
+  dossierSha256: string;
+  routePageSha256: string;
+} | null>([
+  ["BX26", {
+    receiptId: "bronx-acquisition:60c9a397f7d352fdb0a6e7a9",
+    rowSha256: "ea2ceccb40bb64809bbc90ad6c6c43a7a312ef36a90233a2194eade2ef6464ed",
+    dossierSha256: "152901893330525303e274e58ac4a9482627e850e880d1d6010591b828ed31cb",
+    routePageSha256: "e50ccf371d4b181c5bf3bd93bdddde323513094211d5e112f4dc2fe2f3f02880",
+  }],
+  ["BX16", {
+    receiptId: "bronx-acquisition:226180025d158f8411196599",
+    rowSha256: "75325f2580dc842553660c08c214ebe97f15920a6377112e310e57e1f9751634",
+    dossierSha256: "d0f2e596d285dc67f094a0d2a2b93976db4b678d7cad9e65b523899345c21c18",
+    routePageSha256: "30b1b9f9ac780a8bec072175564ab9c0b2849658a04543ba3a6974a423b7fc5e",
+  }],
+  ["BX34", {
+    receiptId: "bronx-acquisition:901e4ae28a5d4bda5a2859de",
+    rowSha256: "b5425a200ba2455eb904047aecb2cc680c93c1acae292779991f3a4a2f48209e",
+    dossierSha256: "717e62cd5da051b71757c20fc20b6907a7086b0615ad96fe4dd632838fde9511",
+    routePageSha256: "cd2c8f5473bc7ad1bd678a9810b3c9569dd860eff949d0dea146250cad9dddb6",
+  }],
+  ["BX41+", {
+    receiptId: "bronx-acquisition:43a582a43c9fade900fa11f3",
+    rowSha256: "e0e259282021628ee73f5be66936abd235f5cf8003eac8be4b8804f8bd173bf4",
+    dossierSha256: "05766cfe453d53c66bf157c202fe1e7748c379b88be659687815d343c378ab41",
+    routePageSha256: "0fb8d6663bdbbfdc2c15cc09d47679acfc0ede1219f635698cf2ea7ea15aed40",
+  }],
+  ["BX25", {
+    receiptId: "bronx-acquisition:57e785a6bc58898cc20e97fa",
+    rowSha256: "7728b5f94239f93b00aa3d57ab809e0503f2ebd82d0593576568e5c8722fd4f2",
+    dossierSha256: "cc71dabead0a8d9178ea09d4ba6ff762f3082c290de08f85cf591fff6b7633f6",
+    routePageSha256: "cbb9e05c7b372c8ee470dc4139f17a2af78e2771c60c42317ed765e7c4136650",
+  }],
+  ["BX38", null],
+  ["BX41", {
+    receiptId: "bronx-acquisition:30614a340438c5b5f10eb94e",
+    rowSha256: "573de725bd99db64656e6c6cc8e4ccbbcad7ba0a563e95438a6cfe846174626f",
+    dossierSha256: "7988a35f2aa825c612ab8c7c05a275c093ca4c36bf162c3e0c49639c99caf026",
+    routePageSha256: "5842a8138eadeffba8ba9e1ebe3f674fc9fa057514c768c39efda85d99212de2",
+  }],
+  ["BX28", null],
+  ["BX10", {
+    receiptId: "bronx-acquisition:4e3d6fd8e2d0fae207154c37",
+    rowSha256: "71ccc5f3848449d03f8f6bb3dbfb4c619139a5eb08859bda1acbd619990740b1",
+    dossierSha256: "a65c7508c1063e3852fb10bf820c174425d22e681ae2dddd794da74c81f4468b",
+    routePageSha256: "a3c6e3cd187e70e0271e49ad51d6a71d0ee2b226635a9f6b3138fa69eb9b889b",
+  }],
+]);
+const EAST_GUN_HILL_DOSSIER_CONTRACTS = new Map([
+  ["BX26", { rowCount: 10, targetRowCount: 2 }],
+  ["BX16", { rowCount: 12, targetRowCount: 0 }],
+  ["BX34", { rowCount: 6, targetRowCount: 0 }],
+  ["BX41+", { rowCount: 8, targetRowCount: 0 }],
+  ["BX25", { rowCount: 4, targetRowCount: 1 }],
+  ["BX38", { rowCount: 4, targetRowCount: 2 }],
+  ["BX41", { rowCount: 16, targetRowCount: 3 }],
+  ["BX28", { rowCount: 18, targetRowCount: 10 }],
+  ["BX10", { rowCount: 18, targetRowCount: 0 }],
+]);
+const EAST_GUN_HILL_DOSSIER_SHA256 = new Map([
+  ["BX26", "152901893330525303e274e58ac4a9482627e850e880d1d6010591b828ed31cb"],
+  ["BX16", "d0f2e596d285dc67f094a0d2a2b93976db4b678d7cad9e65b523899345c21c18"],
+  ["BX34", "717e62cd5da051b71757c20fc20b6907a7086b0615ad96fe4dd632838fde9511"],
+  ["BX41+", "05766cfe453d53c66bf157c202fe1e7748c379b88be659687815d343c378ab41"],
+  ["BX25", "cc71dabead0a8d9178ea09d4ba6ff762f3082c290de08f85cf591fff6b7633f6"],
+  ["BX38", "3503ddb20a849ec50694c1356e038f5c5b46df3d24195b16acd099f8d353f61b"],
+  ["BX41", "7988a35f2aa825c612ab8c7c05a275c093ca4c36bf162c3e0c49639c99caf026"],
+  ["BX28", "9164af234204188a6e02af9ec44e753beb4f86c075985c2143503fe95be8a952"],
+  ["BX10", "a65c7508c1063e3852fb10bf820c174425d22e681ae2dddd794da74c81f4468b"],
+]);
+const EAST_GUN_HILL_RECEIPT_SUFFIXES = new Map([
+  ["BX26", "f39dd4700a23d99ee30b05e0"],
+  ["BX16", "37c172cb9b1098e3d26b6c47"],
+  ["BX34", "fee03e2178baab40fc664004"],
+  ["BX41+", "75c6b26e78e297fa79f812db"],
+  ["BX25", "d789a0442dc5be580aa9d5ea"],
+  ["BX38", "68d75b1ac3817de97b5462ba"],
+  ["BX41", "625e8321d6f13dfe29873767"],
+  ["BX28", "dedb831e99c0aecc552a3931"],
+  ["BX10", "9bfc18d8c0c31c6721559a31"],
+]);
+const EAST_GUN_HILL_FEATURE_ROWS_SHA256 =
+  "25540cd9134aa59596c76d11616f3a784585c056b7c7ec32b35aa20839a3425a";
+const EAST_GUN_HILL_PRIOR_ARTIFACT =
+  "data/quality/relationship-integrity/bus-lane-acquisition/shards/bronx/receipts.jsonl";
+const EAST_GUN_HILL_ACQUIRED_CHECKS = {
+  artifact: "data/quality/relationship-integrity/bus-lane-acquisition/shards/bronx/acquired-source-checks.json",
+  sha256: "bd74c2999020a5ca957f8e7c02c581725bfcddc5080bbd3b72f467ff73b86405",
+  unavailableSources: [
+    {
+      id: "gun_hill_completion",
+      url: "https://www.nyc.gov/html/dot/html/pr2023/east-gun-hill-road-redesign.shtml",
+      sha256: "a14b1c862e7f8043ad80768d62ad12add041e96cfd4ab1d94496d4cda0a8e607",
+      byteLength: 30117,
+    },
+    {
+      id: "gun_hill_cb7",
+      url: "https://www.nyc.gov/html/dot/downloads/pdf/gun-hill-rd-cb7-mar2023.pdf",
+      sha256: "2929ef44e252c737afb169fd5bf6d1dab23731983f15cd82810f2554011ca167",
+      byteLength: 4366821,
+    },
+  ],
+};
+const EAST_GUN_HILL_CONTEXT_SOURCE = {
+  sourceId: "meeting_doc_127471",
+  sourceUrl: "https://www.mta.info/document/127471",
+  artifact: "raw/sources/meeting_doc_127471/source.pdf",
+  sourceSha256: "5d3a82851efed1316ff8b65540eaa7e33c7fe9d21221192740476002f50d51ce",
+  metadataSha256: "3abae4c00097503d301593a61dd79537542cb80fb66fbf4fb64cb28c0c1c1df2",
+  blocksArtifact: "raw/sources/meeting_doc_127471/blocks.jsonl",
+  blocksSha256: "e3ee6c7214ec37ea01ecfa906cc26e8ba62b7ea5da30f56fcb312f42ef2e959a",
+  blockId: "p005_c0007",
+  blockTextSha256: "sha256:6e5848bc8ae69431f30848ba261b693d97209eda123ef09685cd61672648946b",
+  namedRouteLiterals: ["BX28", "BX38", "BX41", "BX41-SBS"],
+};
+const EAST_GUN_HILL_MISSING_SOURCE = {
+  sourceId: "nyc_dot_gun_hill_road_completion_2023",
+  expectedPath: "raw/sources/nyc_dot_gun_hill_road_completion_2023",
+};
+
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
   row: BusLaneIdentityRow,
@@ -1296,6 +1420,62 @@ function isExactHylanBoulevardPacketTarget(
     }) &&
     stableJson(packet.unresolved_bindings) ===
       stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"]);
+}
+
+function isExactEastGunHillRoadPacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const group = packet.what_is_known.target_groups[0];
+  const dossierContract = EAST_GUN_HILL_DOSSIER_CONTRACTS.get(row.gtfs_route_id);
+  const dossierSha256 = EAST_GUN_HILL_DOSSIER_SHA256.get(row.gtfs_route_id);
+  if (!group || !dossierContract || !dossierSha256) return false;
+  const dossierRefs = packet.what_is_known.dossier_refs;
+  const featureRows = group.feature_matches.map((match) => [
+    match.feature_key,
+    match.feature_id,
+    match.direction,
+    match.matched_date,
+    match.matched_token_literal,
+    match.open_dates_literal,
+    match.sbs_routes,
+  ]);
+  const expectedDossierSummary = {
+    row_count: dossierRefs.length,
+    target_row_count: dossierRefs.filter((ref) => ref.candidate_target_match).length,
+    counts_by_verdict: countBy(dossierRefs.map((ref) => ref.verdict_class), [
+      "traversal_confirmed", "traversal_marginal", "no_traversal", "geometry_ambiguous",
+    ] satisfies LaneTraversalVerdict[]),
+    counts_by_reason: recordCounts(dossierRefs.map((ref) => ref.reason)),
+    counts_by_path_source: countBy(dossierRefs.map((ref) => ref.path_source), [
+      "gtfs_shape", "historical_schedule_timepoint_pattern", "unavailable",
+    ] satisfies LaneTraversalRow["path_source"][]),
+  };
+  return row.implementation_date === "2023-10-31" &&
+    packet.missing_binding === "feature_extent" &&
+    stableJson(packet.unresolved_bindings) ===
+      stableJson(["attribution", "direction", "feature_extent", "phase", "traversal"]) &&
+    packet.what_is_known.target_groups.length === 1 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    group.lane_group_id === "BX|EAST GUN HILL ROAD" && group.borough === "BX" &&
+    group.facility === "Gun Hill Road" && group.street === "EAST GUN HILL ROAD" &&
+    group.geometry_scope === "coextensive_with_lane_group" &&
+    group.feature_matches.length === 109 &&
+    new Set(group.feature_matches.map((match) => match.feature_key)).size === 109 &&
+    new Set(group.feature_matches.map((match) => match.feature_id)).size === 61 &&
+    group.feature_matches.filter((match) => match.direction === "EB").length === 48 &&
+    group.feature_matches.filter((match) => match.direction === "WB").length === 61 &&
+    group.feature_matches.every((match) => match.matched_date === "2023-10-31" &&
+      match.matched_token_literal === "10/31/2023" && match.open_dates_literal === "10/31/2023" &&
+      match.sbs_routes.length === 0) &&
+    hash(stableJson(featureRows as JsonValue)) === EAST_GUN_HILL_FEATURE_ROWS_SHA256 &&
+    stableJson(dossierRefs) === stableJson(row.dossier_refs) && hash(stableJson(dossierRefs)) === dossierSha256 &&
+    dossierRefs.length === dossierContract.rowCount &&
+    dossierRefs.filter((ref) => ref.candidate_target_match).length === dossierContract.targetRowCount &&
+    dossierRefs.every((ref) => ref.service_date === "2023-10-31" && ref.temporal_lag_days === 0 &&
+      ref.path_source === "historical_schedule_timepoint_pattern" &&
+      ref.verdict_class === "geometry_ambiguous") &&
+    stableJson(packet.what_is_known.dossier_summary) === stableJson(expectedDossierSummary);
 }
 
 function isoReviewTime(value: unknown, path: string): string {
@@ -1791,6 +1971,11 @@ function packetMissingBinding(row: BusLaneIdentityRow): BusLaneResearchPacket["m
   if (row.onset_evidence.target_groups.length === 0) return "attribution";
   if (row.detector_verdict === "onset_unresolved") return "onset";
   if (row.detector_reason_codes.some((reason) => reason.includes("direction_unknown"))) return "direction";
+  if (row.implementation_date === "2023-10-31" && EAST_GUN_HILL_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
+      row.onset_evidence.target_groups.length === 1 &&
+      row.onset_evidence.target_groups[0]?.lane_group_id === "BX|EAST GUN HILL ROAD") {
+    return "feature_extent";
+  }
   if (row.onset_evidence.target_groups.some((target) => target.geometry_scope === "mixed_date_feature_union")) {
     return "feature_extent";
   }
@@ -1801,6 +1986,14 @@ function packetUnresolvedBindings(row: BusLaneIdentityRow): BusLaneMissingBindin
   if (row.unresolved_bindings.length > 0) return row.unresolved_bindings;
   const bindings = new Set<BusLaneMissingBinding>([packetMissingBinding(row)]);
   const targets = row.onset_evidence.target_groups;
+  if (row.implementation_date === "2023-10-31" && EAST_GUN_HILL_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
+      targets.length === 1 && targets[0]?.lane_group_id === "BX|EAST GUN HILL ROAD") {
+    bindings.add("attribution");
+    bindings.add("direction");
+    bindings.add("feature_extent");
+    bindings.add("phase");
+    bindings.add("traversal");
+  }
   if (targets.length === 0) {
     bindings.add("onset");
     bindings.add("phase");
@@ -2029,6 +2222,294 @@ export function validateReviewedReceiptRefs(rows: readonly BusLaneIdentityRow[],
   }
 }
 
+function eastGunHillSearch(routeId: string): Record<string, unknown> {
+  const queryStatus = "executed_against_pinned_repository_evidence_2026-07-23";
+  return {
+    disposition: "binding_absent_after_search",
+    domains: ["data.cityofnewyork.us", "www.mta.info", "www.nyc.gov"],
+    exact_queries: [
+      {
+        category: "official_nyc_dot_lane_project",
+        query: `repository evidence search \"${routeId}\" \"East Gun Hill Road\" bus lanes 2023-10-31`,
+        query_status: queryStatus,
+      },
+      {
+        category: "official_mta_route_project",
+        query: `repository evidence search \"${routeId}\" \"East Gun Hill Road\" bus route project 2023-10-31`,
+        query_status: queryStatus,
+      },
+      {
+        category: "official_public_board_committee",
+        query: `repository evidence search \"${routeId}\" \"East Gun Hill Road\" community board 2023-10-31`,
+        query_status: queryStatus,
+      },
+      {
+        category: "other_repository_approved_primary",
+        query: `NYC DOT Open Data ycrg-ses3 route=${routeId} facility=Gun Hill Road open_dates contains 2023-10-31`,
+        query_status: queryStatus,
+      },
+    ],
+    retrievals: [
+      {
+        category: "official_nyc_dot_lane_project",
+        id: "gun_hill_completion",
+        sha256: EAST_GUN_HILL_ACQUIRED_CHECKS.unavailableSources[0]!.sha256,
+        status: "pinned_metadata_only_raw_content_unavailable",
+        url: EAST_GUN_HILL_ACQUIRED_CHECKS.unavailableSources[0]!.url,
+      },
+      {
+        category: "official_mta_route_project",
+        id: EAST_GUN_HILL_CONTEXT_SOURCE.sourceId,
+        sha256: EAST_GUN_HILL_CONTEXT_SOURCE.sourceSha256,
+        status: "acquired_staged_and_hash_verified",
+        url: EAST_GUN_HILL_CONTEXT_SOURCE.sourceUrl,
+      },
+      {
+        category: "official_public_board_committee",
+        id: "gun_hill_cb7",
+        sha256: EAST_GUN_HILL_ACQUIRED_CHECKS.unavailableSources[1]!.sha256,
+        status: "pinned_metadata_only_raw_content_unavailable",
+        url: EAST_GUN_HILL_ACQUIRED_CHECKS.unavailableSources[1]!.url,
+      },
+      {
+        category: "other_repository_approved_primary",
+        id: UNIVERSITY_AVENUE_CURRENT_SOURCE.sourceId,
+        sha256: UNIVERSITY_AVENUE_CURRENT_SOURCE.sha256,
+        status: "acquired_staged_and_hash_verified",
+        url: "https://data.cityofnewyork.us/resource/ycrg-ses3.json?$limit=5000",
+      },
+    ],
+    urls_inspected: [
+      "https://data.cityofnewyork.us/resource/ycrg-ses3.json?$limit=5000",
+      EAST_GUN_HILL_CONTEXT_SOURCE.sourceUrl,
+      ...EAST_GUN_HILL_ACQUIRED_CHECKS.unavailableSources.map((source) => source.url),
+    ].sort(),
+  };
+}
+
+function eastGunHillRationale(row: BusLaneIdentityRow, packet: BusLaneResearchPacket): string {
+  const dossierContract = EAST_GUN_HILL_DOSSIER_CONTRACTS.get(row.gtfs_route_id)!;
+  const priorAvailable = EAST_GUN_HILL_PRIOR_RECEIPTS.get(row.gtfs_route_id) !== null;
+  const named = EAST_GUN_HILL_CONTEXT_ROUTES.includes(row.gtfs_route_id);
+  const priorSentence = priorAvailable
+    ? "The immutable Bronx acquisition receipt remains byte-preserved and found no exact candidate feature or occurrence identity."
+    : "The current ledger and packet contain no candidate-specific prior acquisition receipt; this closure records that absence and does not fabricate a prior row.";
+  const contextSentence = named
+    ? `The staged MTA performance report names ${row.gtfs_route_id === "BX41+" ? "Bx41-SBS" : row.gtfs_route_id} among four routes expected to benefit from the completed 3.1-mile Gun Hill Road lanes, but it does not identify the candidate's ordered 109-row feature target, direction-specific extent, or historical traversal.`
+    : "The staged MTA performance report names four other routes for the completed 3.1-mile Gun Hill Road lanes; that nonexclusive route inventory is context only and is not a wrong-route refutation.";
+  return `The exact current target is the ordered 109-row, 109-key, 61-ID East Gun Hill Road lane group dated 2023-10-31, with 48 eastbound and 61 westbound rows and no registry route names. ${priorSentence} ${contextSentence} The candidate-dated historical schedule dossier contains ${dossierContract.rowCount} geometry-ambiguous rows, including ${dossierContract.targetRowCount} target-tagged rows, and proves neither full traversal nor exclusion. The group-level lane target and date do not prove the route-specific feature extent or whether this candidate represents onset versus a later phase. The stronger NYC DOT completion source is not present in the staged corpus; its acquired-source check retained only metadata and explicitly did not retain raw content, so derived export references to that missing source are not used as evidence. Attribution, direction, feature extent, phase, and traversal remain unresolved. This is not a no-traversal or wrong-route refutation and authorizes no occurrence, study, or cross-product projection.`;
+}
+
+export function buildEastGunHillBindingReceiptDraft(
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+): Record<string, unknown> {
+  if (!isExactEastGunHillRoadPacketTarget(packet, row)) {
+    throw new Error("East Gun Hill Road packet does not match the exact candidate");
+  }
+  const priorContract = EAST_GUN_HILL_PRIOR_RECEIPTS.get(row.gtfs_route_id);
+  const receiptSuffix = EAST_GUN_HILL_RECEIPT_SUFFIXES.get(row.gtfs_route_id)!;
+  const matches = packet.what_is_known.target_groups.flatMap((group) => group.feature_matches);
+  const contextRouteMatch = EAST_GUN_HILL_CONTEXT_ROUTES.includes(row.gtfs_route_id);
+  return {
+    authorizes_cross_product: false,
+    authorizes_study: false,
+    candidate_fingerprint: row.candidate_fingerprint,
+    candidate_id: row.candidate_id,
+    candidate_urls: [],
+    disposition: "binding_absent_after_search",
+    gap_ids: [row.ledger_id],
+    gtfs_route_id: row.gtfs_route_id,
+    implementation_date: row.implementation_date,
+    missing_binding: "feature_extent",
+    operator: "plan039-corridor-adjudicator",
+    prior_receipt: priorContract === null ? null : packet.what_is_known.prior_acquisition_receipt,
+    prior_search_status: priorContract === null
+      ? {
+        prior_candidate_receipt_available: false,
+        prior_receipt_preserved: false,
+        reason: "No candidate-specific prior acquisition receipt is attached to the current ledger or packet; none is synthesized by this closure.",
+      }
+      : {
+        prior_candidate_receipt_available: true,
+        prior_receipt_preserved: true,
+        reason: "The current packet resolves an immutable Bronx acquisition receipt whose exact row hash is preserved by this closure.",
+      },
+    project_context: {
+      authorizes_cross_product: false,
+      authorizes_study: false,
+      candidate_completion_date_bound: false,
+      candidate_exact_target_bound: false,
+      candidate_route_id: row.gtfs_route_id,
+      candidate_route_inventory_match: contextRouteMatch,
+      completion_day_literal: "October 31",
+      completion_year_bound_from_block: false,
+      context_only: true,
+      direction_bound: false,
+      evidence_block_id: EAST_GUN_HILL_CONTEXT_SOURCE.blockId,
+      evidence_text_sha256: EAST_GUN_HILL_CONTEXT_SOURCE.blockTextSha256,
+      finding_kind: "east_gun_hill_completion_route_context_nonterminal",
+      named_route_literals: EAST_GUN_HILL_CONTEXT_SOURCE.namedRouteLiterals,
+      normalized_context_route_ids: EAST_GUN_HILL_CONTEXT_ROUTES,
+      not_named_is_not_refutation: true,
+      source_artifact: EAST_GUN_HILL_CONTEXT_SOURCE.artifact,
+      source_blocks_artifact: EAST_GUN_HILL_CONTEXT_SOURCE.blocksArtifact,
+      source_blocks_sha256: EAST_GUN_HILL_CONTEXT_SOURCE.blocksSha256,
+      source_id: EAST_GUN_HILL_CONTEXT_SOURCE.sourceId,
+      source_sha256: EAST_GUN_HILL_CONTEXT_SOURCE.sourceSha256,
+      source_url: EAST_GUN_HILL_CONTEXT_SOURCE.sourceUrl,
+      traversal_bound: false,
+    },
+    rationale: eastGunHillRationale(row, packet),
+    receipt_id: `bus-lane-binding-search:${receiptSuffix}`,
+    receipt_kind: "binding_absent_after_search",
+    schema_version: 1,
+    search: eastGunHillSearch(row.gtfs_route_id),
+    searched_at: "2026-07-23",
+    source_gap: {
+      authorizes_cross_product: false,
+      authorizes_study: false,
+      derived_release_records_used_as_source_evidence: false,
+      expected_path: EAST_GUN_HILL_MISSING_SOURCE.expectedPath,
+      missing_source_id: EAST_GUN_HILL_MISSING_SOURCE.sourceId,
+      raw_evidence_available: false,
+      resolution_rule: "Reopen this closure if the missing source is staged with independently verifiable bytes and citeable blocks; do not infer its content from derived exports.",
+      staged_source_available: false,
+      unavailable_acquisition_records: EAST_GUN_HILL_ACQUIRED_CHECKS.unavailableSources.map((source) => ({
+        byte_length: source.byteLength,
+        content_sha256: source.sha256,
+        id: source.id,
+        raw_content_retained: false,
+        retrieval_status: "acquired",
+        url: source.url,
+      })),
+    },
+    target: {
+      directions: [...new Set(matches.map((match) => match.direction))].sort(),
+      feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+      feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+      feature_row_count: matches.length,
+      feature_rows: matches.map((match) => ({
+        direction: match.direction,
+        feature_id: match.feature_id,
+        feature_key: match.feature_key,
+      })),
+      geometry_scopes: [...new Set(packet.what_is_known.target_groups.map((group) => group.geometry_scope))].sort(),
+      lane_group_ids: packet.what_is_known.target_groups.map((group) => group.lane_group_id),
+      matched_date: row.implementation_date,
+      named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+      open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+    },
+    unresolved_bindings: ["attribution", "direction", "feature_extent", "phase", "traversal"],
+  };
+}
+
+function validateEastGunHillBindingReceipt(
+  receipt: Record<string, unknown>,
+  receiptPath: string,
+  row: BusLaneIdentityRow,
+  packet: BusLaneResearchPacket,
+  rootDir: string,
+  acquiredSourceRecords: readonly Record<string, unknown>[],
+): void {
+  const fail = (): never => {
+    throw new Error(`${receiptPath}: East Gun Hill Road absence contract does not match the exact candidate`);
+  };
+  let expected: Record<string, unknown>;
+  try {
+    expected = buildEastGunHillBindingReceiptDraft(row, packet);
+  } catch {
+    return fail();
+  }
+  if (stableJson(receipt as JsonValue) !== stableJson(expected as JsonValue)) fail();
+
+  const currentSourcePath = resolve(rootDir, UNIVERSITY_AVENUE_CURRENT_SOURCE.artifact);
+  const currentMetadataPath = resolve(rootDir, "raw/sources",
+    UNIVERSITY_AVENUE_CURRENT_SOURCE.sourceId, "metadata.json");
+  const contextArtifactPath = resolve(rootDir, EAST_GUN_HILL_CONTEXT_SOURCE.artifact);
+  const contextBlocksPath = resolve(rootDir, EAST_GUN_HILL_CONTEXT_SOURCE.blocksArtifact);
+  const contextMetadataPath = resolve(rootDir, "raw/sources",
+    EAST_GUN_HILL_CONTEXT_SOURCE.sourceId, "metadata.json");
+  const acquiredChecksPath = resolve(rootDir, EAST_GUN_HILL_ACQUIRED_CHECKS.artifact);
+  if (![currentSourcePath, currentMetadataPath, contextArtifactPath, contextBlocksPath,
+    contextMetadataPath, acquiredChecksPath].every(existsSync) ||
+      existsSync(resolve(rootDir, EAST_GUN_HILL_MISSING_SOURCE.expectedPath)) ||
+      hash(readFileSync(currentSourcePath)) !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sha256 ||
+      hash(readFileSync(contextArtifactPath)) !== EAST_GUN_HILL_CONTEXT_SOURCE.sourceSha256 ||
+      hash(readFileSync(contextBlocksPath)) !== EAST_GUN_HILL_CONTEXT_SOURCE.blocksSha256 ||
+      hash(readFileSync(contextMetadataPath)) !== EAST_GUN_HILL_CONTEXT_SOURCE.metadataSha256 ||
+      hash(readFileSync(acquiredChecksPath)) !== EAST_GUN_HILL_ACQUIRED_CHECKS.sha256) fail();
+
+  const currentMetadata = object(JSON.parse(readFileSync(currentMetadataPath, "utf8")), currentMetadataPath);
+  const contextMetadata = object(JSON.parse(readFileSync(contextMetadataPath, "utf8")), contextMetadataPath);
+  const contextBlock = readFileSync(contextBlocksPath, "utf8").split(/\r?\n/u).filter(Boolean)
+    .map((line) => object(JSON.parse(line), contextBlocksPath))
+    .find((block) => block.block_id === EAST_GUN_HILL_CONTEXT_SOURCE.blockId);
+  if (currentMetadata.sourceId !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sourceId ||
+      String(currentMetadata.sha256).replace(/^sha256:/u, "") !== UNIVERSITY_AVENUE_CURRENT_SOURCE.sha256 ||
+      contextMetadata.sourceId !== EAST_GUN_HILL_CONTEXT_SOURCE.sourceId ||
+      contextMetadata.sourceUrl !== EAST_GUN_HILL_CONTEXT_SOURCE.sourceUrl ||
+      String(contextMetadata.sha256).replace(/^sha256:/u, "") !== EAST_GUN_HILL_CONTEXT_SOURCE.sourceSha256 ||
+      !contextBlock || contextBlock.raw_text_sha256 !== EAST_GUN_HILL_CONTEXT_SOURCE.blockTextSha256 ||
+      !EAST_GUN_HILL_CONTEXT_SOURCE.namedRouteLiterals.every((literal) =>
+        String(contextBlock.raw_text).toUpperCase().includes(literal))) fail();
+
+  for (const expectedSource of EAST_GUN_HILL_ACQUIRED_CHECKS.unavailableSources) {
+    const source = acquiredSourceRecords.find((record) => record.id === expectedSource.id);
+    if (!source || source.url !== expectedSource.url || source.content_sha256 !== expectedSource.sha256 ||
+        source.byte_length !== expectedSource.byteLength || source.retrieval_status !== "acquired" ||
+        source.raw_content_retained !== false) fail();
+  }
+
+  const priorContract = EAST_GUN_HILL_PRIOR_RECEIPTS.get(row.gtfs_route_id);
+  if (priorContract === null) {
+    if (packet.what_is_known.prior_acquisition_receipt !== null || receipt.prior_receipt !== null) fail();
+    return;
+  }
+  if (!priorContract) return fail();
+  const priorPointer = packet.what_is_known.prior_acquisition_receipt;
+  if (!priorPointer || priorPointer.artifact !== EAST_GUN_HILL_PRIOR_ARTIFACT ||
+      priorPointer.receipt_id !== priorContract.receiptId || priorPointer.row_sha256 !== priorContract.rowSha256) fail();
+  const priorPath = resolve(rootDir, EAST_GUN_HILL_PRIOR_ARTIFACT);
+  if (!existsSync(priorPath)) fail();
+  const priorLine = readFileSync(priorPath, "utf8").split(/\r?\n/u).find((line) => {
+    if (!line) return false;
+    return object(JSON.parse(line), priorPath).receipt_id === priorContract.receiptId;
+  });
+  const resolvedPriorLine = priorLine ?? fail();
+  if (hash(resolvedPriorLine) !== priorContract.rowSha256) fail();
+  const prior = object(JSON.parse(resolvedPriorLine), `${priorPath}:${priorContract.receiptId}`);
+  const candidate = object(prior.candidate, `${priorPath}.candidate`);
+  const findings = object(prior.source_findings, `${priorPath}.source_findings`);
+  const routePage = object(findings.mta_route_page, `${priorPath}.source_findings.mta_route_page`);
+  const claims = object(prior.claim_results, `${priorPath}.claim_results`);
+  const outcome = object(prior.outcome, `${priorPath}.outcome`);
+  const actions = object(prior.canonical_actions, `${priorPath}.canonical_actions`);
+  const expectedNormalizedRoute = row.gtfs_route_id === "BX41+" ? "BX41" : row.gtfs_route_id;
+  if (candidate.candidate_id !== row.candidate_id || candidate.route_id !== row.gtfs_route_id ||
+      candidate.normalized_route_id !== expectedNormalizedRoute ||
+      candidate.identity !== `${row.gtfs_route_id}|bus_lane|2023-10-31|day` ||
+      candidate.implementation_date !== "2023-10-31" || candidate.corridor !== "Gun Hill Road" ||
+      findings.candidate_named_lane_record_count !== 0 ||
+      findings.exact_project_route_statement_found !== false || findings.exact_project_route_source_id !== null ||
+      findings.official_lane_matching_record_count !== 109 ||
+      !Array.isArray(findings.official_lane_matching_segment_ids) ||
+      new Set(findings.official_lane_matching_segment_ids).size !== 61 ||
+      stableJson(findings.official_lane_named_routes as JsonValue) !== stableJson([]) ||
+      stableJson(findings.official_route_named_segment_ids as JsonValue) !== stableJson([]) ||
+      routePage.content_sha256 !== priorContract.routePageSha256 ||
+      routePage.exact_route_title_found !== true || routePage.current_corridor_token_found !== false ||
+      routePage.retrieval_status !== "acquired" || claims.candidate_segment_ids_pinned !== false ||
+      claims.date_and_phase_proved !== false || claims.exact_route_treatment_binding_proved !== false ||
+      claims.exact_segment_binding_proved !== false || claims.explicit_phase_identity_proved !== false ||
+      claims.operational_occurrence_identity_proved !== false ||
+      !Array.isArray(claims.exact_route_binding_evidence) || claims.exact_route_binding_evidence.length !== 0 ||
+      outcome.exclusive_primary_disposition !== "completed_search_route_linkage_unresolved" ||
+      outcome.registry_projection_excluded !== true || outcome.still_unresolved !== true ||
+      outcome.study_projection_eligible !== false || actions.operational_occurrence_added_or_updated !== false ||
+      !Array.isArray(actions.canonical_links_added) || actions.canonical_links_added.length !== 0) fail();
+}
+
 export function validateBindingReceiptDrafts(
   rows: readonly BusLaneIdentityRow[],
   packets: readonly BusLaneResearchPacket[],
@@ -2174,6 +2655,15 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs)) {
       throw new Error(`${receiptPath}: Hylan Boulevard packet dossier does not preserve exact ledger evidence parity`);
     }
+    const eastGunHillLedgerTarget = row.implementation_date === "2023-10-31" &&
+      EAST_GUN_HILL_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
+      row.onset_evidence.target_groups.length === 1 &&
+      row.onset_evidence.target_groups[0]?.lane_group_id === "BX|EAST GUN HILL ROAD";
+    if (eastGunHillLedgerTarget &&
+        (stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups) ||
+        stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs))) {
+      throw new Error(`${receiptPath}: East Gun Hill Road packet does not preserve exact ledger evidence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -2211,6 +2701,10 @@ export function validateBindingReceiptDrafts(
       if (stableJson(actualAccounting as JsonValue) !== stableJson(expectedAccounting)) {
         throw new Error(`${receiptPath}: binding receipt feature-row accounting parity failed`);
       }
+    }
+    if (eastGunHillLedgerTarget) {
+      validateEastGunHillBindingReceipt(receipt, receiptPath, row, packet, rootDir, acquiredSourceRecords);
+      continue;
     }
     const priorPointer = object(receipt.prior_receipt, `${receiptPath}.prior_receipt`);
     const expectedPrior = packet.what_is_known.prior_acquisition_receipt;
