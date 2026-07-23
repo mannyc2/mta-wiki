@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:25585e116d8c53ae18d178fc",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:0d3cd8f7020699ccaeb1c942",
+  "candidate_id": "study-event-v2:36551be6cc4f3abae2c9ef45",
+  "candidate_fingerprint": "482807968aa8115ce208861d45d7f772664a61b5afe6efedfcd4a15ffefbeaa2",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "direction",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental official NYC DOT and public-board searches found broader project evidence but no source binding M60+ to the exact 18 eastbound/westbound mixed-date feature rows, their 2015-11-17 onset, exact feature extent, direction-specific traversal, or stable implementation phase. The staged NYC DOT release explicitly names the M60 125th Street Select Bus Service (SBS) route and says additional bus lanes from Lenox Avenue to Morningside Avenue were installed in fall 2015; this is retained only as nonterminal broader-corridor service context. The receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:25585e116d8c53ae18d178fc"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T06:18:11Z"
+}

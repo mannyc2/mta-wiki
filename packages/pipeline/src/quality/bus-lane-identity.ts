@@ -256,10 +256,18 @@ function routeTokensMatchCandidate(blockTokens: readonly string[], routeId: stri
   return blockTokens.some((token, tokenIndex) => {
     if (token !== baseRouteToken) return false;
     if (blockTokens[tokenIndex + 1] === "SBS") return true;
-    return blockTokens[tokenIndex + 1] === "LOCAL" &&
+    const localAndSbsRoute = blockTokens[tokenIndex + 1] === "LOCAL" &&
       blockTokens[tokenIndex + 2] === "AND" &&
       blockTokens[tokenIndex + 3] === "SBS" &&
       (blockTokens[tokenIndex + 4] === "ROUTE" || blockTokens[tokenIndex + 4] === "ROUTES");
+    const selectBusServiceSbsRoute = blockTokens.slice(tokenIndex + 1, tokenIndex + 8)
+      .some((suffixToken, suffixIndex, suffixTokens) =>
+        suffixToken === "SELECT" &&
+        suffixTokens[suffixIndex + 1] === "BUS" &&
+        suffixTokens[suffixIndex + 2] === "SERVICE" &&
+        suffixTokens[suffixIndex + 3] === "SBS" &&
+        (suffixTokens[suffixIndex + 4] === "ROUTE" || suffixTokens[suffixIndex + 4] === "ROUTES"));
+    return localAndSbsRoute || selectBusServiceSbsRoute;
   });
 }
 
@@ -1523,9 +1531,16 @@ export function validateBindingReceiptDrafts(
             titleTokens.includes("AVENUE") &&
             titleTokens.includes("BUS") &&
             titleTokens.includes("LANE");
+          const west125SbsEnforcementTitle =
+            titleTokens.includes("125TH") &&
+            titleTokens.includes("STREET") &&
+            titleTokens.includes("SBS") &&
+            titleTokens.includes("ROUTE") &&
+            titleTokens.includes("ENFORCEMENT");
           if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
               metadataSha !== sourceContentSha256 || hash(readFileSync(sourceArtifactPath)) !== sourceContentSha256 ||
-              (!proposalSourceTitle && !upperCorridorExistingConditionsTitle && !secondAvenueRedesignTitle) ||
+              (!proposalSourceTitle && !upperCorridorExistingConditionsTitle && !secondAvenueRedesignTitle &&
+                !west125SbsEnforcementTitle) ||
               !supplementalUrls.includes(sourceUrl) ||
               !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
                 retrieval.sha256 === sourceContentSha256)) {
@@ -1579,7 +1594,14 @@ export function validateBindingReceiptDrafts(
               Math.abs(routeBlock.position - servedBlock.position) <= 2 &&
               !routeBlock.tokens.has("CONNECTIONS") &&
               !servedBlock.tokens.has("CONNECTIONS"))));
-          if (!boundedServiceContext) {
+          const boundedExplicitSbsRouteContext = [...citedPageWindows.values()].some((window) =>
+            window.blocks.some((block) => block.route &&
+              block.tokens.has("SELECT") &&
+              block.tokens.has("BUS") &&
+              block.tokens.has("SERVICE") &&
+              block.tokens.has("SBS") &&
+              block.tokens.has("ROUTE")));
+          if (!boundedServiceContext && !boundedExplicitSbsRouteContext) {
             throw new Error(`${contextPath}: staged source-block evidence does not bind the exact route to bounded corridor-service context`);
           }
           const exactUpperCorridorReviewWindow = upperCorridorExistingConditionsTitle &&
@@ -1610,6 +1632,28 @@ export function validateBindingReceiptDrafts(
               block.tokens.has("OFFSET") &&
               block.tokens.has("BUS") &&
               block.tokens.has("LANE")));
+          const exactWest125ExtensionWindow = west125SbsEnforcementTitle &&
+            [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+              block.route &&
+              block.tokens.has("M60") &&
+              block.tokens.has("125TH") &&
+              block.tokens.has("STREET") &&
+              block.tokens.has("SELECT") &&
+              block.tokens.has("BUS") &&
+              block.tokens.has("SERVICE") &&
+              block.tokens.has("SBS") &&
+              block.tokens.has("ROUTE"))) &&
+            [...citedPageWindows.values()].some((window) => window.blocks.some((block) =>
+              block.tokens.has("INSTALLED") &&
+              block.tokens.has("ADDITIONAL") &&
+              block.tokens.has("BUS") &&
+              block.tokens.has("LANES") &&
+              block.tokens.has("125TH") &&
+              block.tokens.has("STREET") &&
+              block.tokens.has("LENOX") &&
+              block.tokens.has("MORNINGSIDE") &&
+              block.tokens.has("FALL") &&
+              block.tokens.has("2015")));
           const finding = object(context.context_finding, `${contextPath}.context_finding`);
           exactKeys(finding, new Set([
             "candidate_route_id", "finding_kind", "finding_summary", "supported_scope", "unsupported_bindings",
@@ -1634,7 +1678,9 @@ export function validateBindingReceiptDrafts(
           }
           if (isProjectCorridorServiceContext &&
               (!commonContextScopeValid ||
-                (!exactUpperCorridorReviewWindow && !exactSecondAvenueProjectWindow) ||
+                (!exactUpperCorridorReviewWindow &&
+                  !exactSecondAvenueProjectWindow &&
+                  !exactWest125ExtensionWindow) ||
                 object(prior.source_findings, `${contextPath}.prior.source_findings`)
                   .exact_project_route_statement_found !== true)) {
             throw new Error(`${contextPath}: positive context exceeds its nonauthorizing project-corridor scope`);

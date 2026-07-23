@@ -1292,6 +1292,163 @@ describe("bus-lane identity exact-date targeting", () => {
       } as unknown as JsonValue));
       expect(() => validateBindingReceiptDrafts([m9Row], [m9Packet], receiptDir, rootDir))
         .toThrow("does not bind the exact route to its typed project context");
+      const west125SourceDir = join(rootDir, "raw", "sources", "official-west-125-source");
+      mkdirSync(west125SourceDir, { recursive: true });
+      const west125SourceBytes = Buffer.from("<html>fixture official West 125th Street SBS page</html>");
+      const west125SourceHash = createHash("sha256").update(west125SourceBytes).digest("hex");
+      const west125TitleText = "NYC DOT Begins Camera Enforcement Along 125th Street SBS Route";
+      const west125RouteText =
+        "DOT will issue bus lane camera violations along the M60 125th Street Select Bus Service SBS route.";
+      const west125ExtensionText =
+        "DOT installed additional bus lanes along 125th Street from Lenox Avenue to Morningside Avenue in fall 2015.";
+      const west125TitleHash = `sha256:${createHash("sha256").update(west125TitleText).digest("hex")}`;
+      const west125RouteHash = `sha256:${createHash("sha256").update(west125RouteText).digest("hex")}`;
+      const west125ExtensionHash =
+        `sha256:${createHash("sha256").update(west125ExtensionText).digest("hex")}`;
+      writeFileSync(join(west125SourceDir, "source.html"), west125SourceBytes);
+      writeFileSync(join(west125SourceDir, "metadata.json"), JSON.stringify({
+        sourceId: "official-west-125-source",
+        sourceUrl: "https://www.nyc.gov/west-125-source",
+        sha256: `sha256:${west125SourceHash}`,
+        title: west125TitleText,
+      }));
+      const writeWest125Blocks = (routeText: string, routeHash: string) => writeFileSync(
+        join(west125SourceDir, "blocks.jsonl"),
+        [
+          {
+            source_id: "official-west-125-source",
+            block_id: "p001_b0001",
+            page_number: 1,
+            raw_text: west125TitleText,
+            normalized_text: west125TitleText,
+            raw_text_sha256: west125TitleHash,
+          },
+          {
+            source_id: "official-west-125-source",
+            block_id: "p001_b0015",
+            page_number: 1,
+            raw_text: routeText,
+            normalized_text: routeText,
+            raw_text_sha256: routeHash,
+          },
+          {
+            source_id: "official-west-125-source",
+            block_id: "p001_b0017",
+            page_number: 1,
+            raw_text: west125ExtensionText,
+            normalized_text: west125ExtensionText,
+            raw_text_sha256: west125ExtensionHash,
+          },
+        ].map((block) => JSON.stringify(block)).join("\n") + "\n",
+      );
+      writeWest125Blocks(west125RouteText, west125RouteHash);
+      writeFileSync(join(acquiredChecksDir, "acquired-source-checks.json"), JSON.stringify({
+        sources: [
+          ...acquiredSources,
+          {
+            url: "https://www.nyc.gov/correction-source",
+            content_sha256: correctionSourceHash,
+            retrieval_status: "acquired",
+          },
+          {
+            url: "https://www.nyc.gov/project-connection-source",
+            content_sha256: connectionSourceHash,
+            retrieval_status: "acquired",
+          },
+          {
+            url: "https://www.nyc.gov/upper-corridor-source",
+            content_sha256: corridorSourceHash,
+            retrieval_status: "acquired",
+          },
+          {
+            url: "https://www.nyc.gov/second-avenue-source",
+            content_sha256: secondAvenueSourceHash,
+            retrieval_status: "acquired",
+          },
+          {
+            url: "https://www.nyc.gov/west-125-source",
+            content_sha256: west125SourceHash,
+            retrieval_status: "acquired",
+          },
+        ],
+      }));
+      const west125EvidenceRefs = [
+        { block_id: "p001_b0001", page_number: 1, text_sha256: west125TitleHash },
+        { block_id: "p001_b0015", page_number: 1, text_sha256: west125RouteHash },
+        { block_id: "p001_b0017", page_number: 1, text_sha256: west125ExtensionHash },
+      ];
+      const m60AliasRow = { ...positiveRow, gtfs_route_id: "M60+" };
+      const m60AliasPacket = buildBusLaneResearchPackets([m60AliasRow]).packets[0]!;
+      const m60SupplementalSearch = {
+        ...secondAvenueSupplementalSearch("M60+"),
+        urls_inspected: [
+          ...secondAvenueSupplementalSearch("M60+").urls_inspected,
+          "https://www.nyc.gov/west-125-source",
+        ].sort(),
+        retrievals: [...secondAvenueSupplementalSearch("M60+").retrievals, {
+          category: "official_nyc_dot_lane_project",
+          url: "https://www.nyc.gov/west-125-source",
+          retrieved_on: "2026-07-23",
+          status: "acquired",
+          sha256: west125SourceHash,
+        }],
+      };
+      const m60Context = {
+        source_id: "official-west-125-source",
+        source_url: "https://www.nyc.gov/west-125-source",
+        source_content_sha256: west125SourceHash,
+        source_artifact: "source.html",
+        evidence_refs: west125EvidenceRefs,
+        context_finding: {
+          candidate_route_id: "M60+",
+          finding_kind: "positive_project_corridor_service_nonterminal",
+          supported_scope: "project_corridor_service_only",
+          unsupported_bindings: m60AliasPacket.unresolved_bindings,
+          finding_summary:
+            "The M60 SBS route is named with the fall-2015 corridor extension, not exact feature rows.",
+        },
+        remaining_unresolved_bindings: m60AliasPacket.unresolved_bindings,
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      const m60Receipt = {
+        ...receipt,
+        gtfs_route_id: "M60+",
+        prior_receipt: {
+          receipt_id: "positive-prior-receipt",
+          artifact: "positive-prior.jsonl",
+          row_sha256: positiveRow.prior_acquisition_receipt.row_sha256,
+        },
+        supplemental_search: {
+          ...m60SupplementalSearch,
+          finding_corrections: [],
+          positive_context_findings: [m60Context],
+        },
+      };
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(m60Receipt as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts(
+        [m60AliasRow], [m60AliasPacket], receiptDir, rootDir,
+      )).not.toThrow();
+      const noSbsM60Text =
+        "DOT will issue bus lane camera violations along the M60 125th Street Select Bus Service route.";
+      const noSbsM60Hash = `sha256:${createHash("sha256").update(noSbsM60Text).digest("hex")}`;
+      writeWest125Blocks(noSbsM60Text, noSbsM60Hash);
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...m60Receipt,
+        supplemental_search: {
+          ...m60Receipt.supplemental_search,
+          positive_context_findings: [{
+            ...m60Context,
+            evidence_refs: west125EvidenceRefs.map((ref) => ref.block_id === "p001_b0015"
+              ? { ...ref, text_sha256: noSbsM60Hash }
+              : ref),
+          }],
+        },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts(
+        [m60AliasRow], [m60AliasPacket], receiptDir, rootDir,
+      )).toThrow("does not bind the exact route to bounded corridor-service context");
+      writeWest125Blocks(west125RouteText, west125RouteHash);
       const otherExtentContextText = "Served by Q1 express bus routes in the separate corridor.";
       const otherExtentContextHash = `sha256:${createHash("sha256").update(otherExtentContextText).digest("hex")}`;
       writeFileSync(join(stagedSourceDir, "metadata.json"), JSON.stringify({

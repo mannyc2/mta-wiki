@@ -1,0 +1,22 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "west-125-street-2015-m60-supplement",
+  "sources": [
+    {
+      "byte_length": 22360,
+      "category": "dot_lane_project",
+      "content_sha256": "1b3379a7b475c7e531f373623bef2ef672313fa0a9d18084f600219c35d7bd78",
+      "http_status": 200,
+      "id": "west_125_street_m60_camera_enforcement_release",
+      "media_type": "text/html; charset=utf-8",
+      "note": "Official NYC DOT release used only for broader M60 SBS and fall-2015 West 125th Street bus-lane extension context; it does not establish the exact 18 feature rows, November 17 onset, direction, traversal, phase, or study eligibility.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.html",
+      "source_id": "nyc_dot_125th_street_camera_enforcement_jan2016",
+      "url": "https://www.nyc.gov/html/dot/html/pr2016/pr16-010.shtml"
+    }
+  ]
+}
