@@ -7,6 +7,7 @@ import {
   candidateLaneTargets,
   normalizeOpenDateToken,
   parseBusLaneIdentityDecision,
+  validateOccurrenceCreatedRows,
   type BusLaneIdentityDecision,
 } from "../../src/quality/bus-lane-identity";
 import type { BusLaneFeature } from "../../src/reference/bus-lanes";
@@ -179,6 +180,12 @@ describe("bus-lane identity exact-date targeting", () => {
       .toBe("closed:refuted_wrong_route_attribution");
     expect(stableJson(buildBusLaneResearchPackets(replayed) as unknown as JsonValue))
       .toBe(stableJson(closed as unknown as JsonValue));
+    const created = [{ ...row, verdict: "occurrence_created:occurrence-ok" as const }];
+    const occurrence = { occurrence_id: "occurrence-ok", review_state: "approved", occurrence_review_decision_id: "review-ok" };
+    const occurrenceDecision = { occurrence_id: "occurrence-ok", review_state: "approved", decision_id: "review-ok" };
+    expect(() => validateOccurrenceCreatedRows(created, [occurrence], [occurrenceDecision])).not.toThrow();
+    expect(() => validateOccurrenceCreatedRows(created, [], [occurrenceDecision])).toThrow("missing occurrence");
+    expect(() => validateOccurrenceCreatedRows(created, [occurrence], [])).toThrow("no accepted occurrence-review decision");
   });
 
   it("never uses a current shape for a historical positive or negative and rejects low-coverage negatives", () => {

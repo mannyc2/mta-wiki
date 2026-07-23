@@ -30,6 +30,8 @@ const busLaneIdentityLedger: CommandHandler = () => {
   const decisionDir = optionValue(process.argv, "--decisions");
   const outputPath = optionValue(process.argv, "--output") ?? optionValue(process.argv, "-o");
   const packetDir = optionValue(process.argv, "--packets");
+  const occurrencePath = optionValue(process.argv, "--occurrences");
+  const acceptedOccurrenceDecisionDir = optionValue(process.argv, "--accepted-occurrence-decisions");
   const result = writeBusLaneIdentityArtifacts({
     ...(bridgePath ? { bridgePath } : {}),
     ...(trackerPath ? { trackerPath } : {}),
@@ -38,6 +40,8 @@ const busLaneIdentityLedger: CommandHandler = () => {
     ...(decisionDir ? { decisionDir } : {}),
     ...(outputPath ? { outputPath } : {}),
     ...(packetDir ? { packetDir } : {}),
+    ...(occurrencePath ? { occurrencePath } : {}),
+    ...(acceptedOccurrenceDecisionDir ? { acceptedOccurrenceDecisionDir } : {}),
   });
   console.log(`Bus-lane identity ledger: ${relative(repoRoot, result.outputPath)}`);
   console.log(`Rows: ${result.rows.length}; packets: ${result.packets.length}; batches: ${result.batches.length}`);

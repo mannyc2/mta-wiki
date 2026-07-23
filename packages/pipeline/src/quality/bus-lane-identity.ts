@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
-import { basename, dirname, extname, join, relative, resolve } from "node:path";
+import { dirname, extname, join, relative, resolve } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
@@ -57,7 +57,7 @@ type RouteAnchor = {
   aliases: string[];
   canonical_route_record_id: string | null;
   disposition: string;
-  gtfs_route_id: string;
+  gtfs_route_id: string | null;
 };
 
 type PriorAcquisitionRow = {
@@ -344,7 +344,10 @@ export function candidateLaneTargets(features: readonly BusLaneFeature[], implem
 
 function routeAnchorFor(candidateRouteId: string, anchors: readonly RouteAnchor[]): RouteAnchor {
   const normalized = /^Q0[1-9]$/u.test(candidateRouteId) ? `Q${Number(candidateRouteId.slice(1))}` : candidateRouteId;
-  const matches = anchors.filter((anchor) => anchor.gtfs_route_id === normalized || anchor.aliases.includes(candidateRouteId));
+  const exact = anchors.filter((anchor) => anchor.gtfs_route_id === normalized);
+  if (exact.length === 1) return exact[0]!;
+  if (exact.length > 1) throw new Error(`${candidateRouteId}: duplicate exact GTFS route anchors`);
+  const matches = anchors.filter((anchor) => anchor.gtfs_route_id !== null && anchor.aliases.includes(candidateRouteId));
   if (matches.length !== 1) throw new Error(`${candidateRouteId}: expected one route anchor, found ${matches.length}`);
   return matches[0]!;
 }
@@ -591,6 +594,7 @@ export function buildBusLaneIdentityLedger(input: {
       throw new Error(`${candidate.candidate_id}: bridge/tracker identity mismatch`);
     }
     const anchor = routeAnchorFor(candidate.candidate_route_id, input.routeAnchors);
+    if (!anchor.gtfs_route_id) throw new Error(`${candidate.candidate_route_id}: route anchor has no GTFS identity`);
     const dossierRows = dossierByCandidate.get(candidate.candidate_id) ?? [];
     if (dossierRows.length === 0) throw new Error(`${candidate.candidate_id}: missing dossier rows`);
     if (dossierRows.some((row) => row.route_id !== tracker.route_id || row.candidate_date !== tracker.implementation_date)) {
@@ -877,6 +881,39 @@ function validateReviewedReceiptRefs(rows: readonly BusLaneIdentityRow[], receip
   }
 }
 
+export function validateOccurrenceCreatedRows(
+  rows: readonly BusLaneIdentityRow[],
+  occurrences: readonly Record<string, unknown>[],
+  acceptedDecisions: readonly Record<string, unknown>[],
+): void {
+  const occurrenceById = new Map(occurrences.map((occurrence) => [String(occurrence.occurrence_id), occurrence]));
+  const decisionByOccurrence = new Map(acceptedDecisions.map((decision) => [String(decision.occurrence_id), decision]));
+  for (const row of rows) {
+    if (!row.verdict.startsWith("occurrence_created:")) continue;
+    const occurrenceId = row.verdict.slice("occurrence_created:".length);
+    const occurrence = occurrenceById.get(occurrenceId);
+    if (!occurrence) throw new Error(`${row.ledger_id}: occurrence_created references missing occurrence ${occurrenceId}`);
+    const decision = decisionByOccurrence.get(occurrenceId);
+    if (!decision || decision.review_state !== "approved") {
+      throw new Error(`${row.ledger_id}: ${occurrenceId} has no accepted occurrence-review decision`);
+    }
+    if (occurrence.review_state !== "approved" ||
+        occurrence.occurrence_review_decision_id !== decision.decision_id) {
+      throw new Error(`${row.ledger_id}: ${occurrenceId} is not bound to its accepted occurrence-review decision`);
+    }
+  }
+}
+
+function acceptedOccurrenceDecisions(path: string): Record<string, unknown>[] {
+  if (!existsSync(path)) return [];
+  return readdirSync(path).filter((name) => extname(name) === ".json").sort().map((name) => {
+    const decision = object(JSON.parse(readFileSync(join(path, name), "utf8")), join(path, name));
+    if (decision.review_state !== "approved" || typeof decision.occurrence_id !== "string" ||
+        typeof decision.decision_id !== "string") throw new Error(`${join(path, name)}: malformed accepted occurrence review`);
+    return decision;
+  });
+}
+
 function selectedDossierPath(rootDir: string, requested?: string): string {
   if (requested) return resolve(rootDir, requested);
   const directory = join(rootDir, "data/quality/operational-reference/lane-traversal");
@@ -910,6 +947,8 @@ export function writeBusLaneIdentityArtifacts(options: {
   decisionDir?: string;
   outputPath?: string;
   packetDir?: string;
+  occurrencePath?: string;
+  acceptedOccurrenceDecisionDir?: string;
 } = {}): {
   rows: BusLaneIdentityRow[];
   packets: BusLaneResearchPacket[];
@@ -926,6 +965,9 @@ export function writeBusLaneIdentityArtifacts(options: {
   const decisionDir = resolve(rootDir, options.decisionDir ?? DEFAULT_BUS_LANE_IDENTITY_DECISION_DIR);
   const outputPath = resolve(rootDir, options.outputPath ?? DEFAULT_BUS_LANE_IDENTITY_LEDGER_PATH);
   const packetDir = resolve(rootDir, options.packetDir ?? DEFAULT_BUS_LANE_PACKET_DIR);
+  const occurrencePath = resolve(rootDir, options.occurrencePath ?? "data/exports/releases/v1-rc27/operational_occurrences.jsonl");
+  const acceptedOccurrenceDecisionDir = resolve(rootDir,
+    options.acceptedOccurrenceDecisionDir ?? "data/operational-occurrence-review/accepted/decisions");
   const dossierRows = readJsonl<LaneTraversalRow>(dossierPath);
   if (dossierRows.length === 0) throw new Error(`${dossierPath}: empty dossier`);
   const laneSnapshotIds = new Set(dossierRows.map((row) => row.inputs.lane_snapshot_id));
@@ -949,6 +991,11 @@ export function writeBusLaneIdentityArtifacts(options: {
     priorAcquisitionRows: priorAcquisitionRows(join(rootDir, "data/quality/relationship-integrity/bus-lane-acquisition/campaign.jsonl")),
   });
   validateReviewedReceiptRefs(rows, join(rootDir, "data/quality/acquisition/receipts"));
+  validateOccurrenceCreatedRows(
+    rows,
+    readJsonl<Record<string, unknown>>(occurrencePath),
+    acceptedOccurrenceDecisions(acceptedOccurrenceDecisionDir),
+  );
   const ledgerBytes = rows.map((row) => stableJson(row as unknown as JsonValue)).join("\n") + (rows.length ? "\n" : "");
   parseBusLaneIdentityLedger(ledgerBytes, outputPath);
   mkdirSync(dirname(outputPath), { recursive: true });
@@ -1018,7 +1065,9 @@ export function writeBusLaneIdentityArtifacts(options: {
     candidate_without_exact_date_target_count: rows.filter((row) => row.onset_evidence.target_groups.length === 0).length,
     packet_count: packetBuild.packets.length,
     open_packet_count: packetBuild.packets.filter((packet) => packet.disposition === "open").length,
-    corridor_key_count: packetBuild.corridorKeyCount,
+    target_corridor_key_count: packetBuild.corridorKeyCount,
+    owning_batch_key_count: new Set(packetBuild.batches.map((batch) => batch.corridor_key)).size,
+    counts_by_batch_kind: recordCounts(packetBuild.batches.map((batch) => batch.batch_kind)),
     batch_count: packetBuild.batches.length,
     maximum_batch_size: Math.max(0, ...packetBuild.batches.map((batch) => batch.packet_ids.length)),
     decision_count: decisions.length,

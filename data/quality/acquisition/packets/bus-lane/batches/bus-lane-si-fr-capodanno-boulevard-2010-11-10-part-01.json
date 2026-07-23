@@ -1,0 +1,1 @@
+{"authorizes_cross_product":false,"authorizes_study":false,"batch_id":"bus-lane-si-fr-capodanno-boulevard-2010-11-10-part-01","batch_kind":"corridor","corridor_key":"SI|FR CAPODANNO BOULEVARD|2010-11-10","packet_ids":["bus-lane-packet:b40f1b64f8c80552a5dd73e9"],"packet_paths":["packets/b40f1b64f8c80552a5dd73e9.json"],"part":1,"schema_version":1}
