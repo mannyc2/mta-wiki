@@ -181,11 +181,42 @@ describe("bus-lane identity exact-date targeting", () => {
     expect(stableJson(buildBusLaneResearchPackets(replayed) as unknown as JsonValue))
       .toBe(stableJson(closed as unknown as JsonValue));
     const created = [{ ...row, verdict: "occurrence_created:occurrence-ok" as const }];
-    const occurrence = { occurrence_id: "occurrence-ok", review_state: "approved", occurrence_review_decision_id: "review-ok" };
+    const occurrence = {
+      occurrence_id: "occurrence-ok",
+      review_state: "approved",
+      occurrence_review_decision_id: "review-ok",
+      routes: [{
+        gtfs_route_id: row.gtfs_route_id,
+        route_record_id: row.route_record_id,
+        evidence_bindings: [{ source_id: "route-source", block_id: "route-block" }],
+      }],
+      resolved_onset: {
+        date: row.implementation_date,
+        precision: "day",
+        evidence_bindings: [{ source_id: "date-source", block_id: "date-block" }],
+      },
+      treatment: {
+        kind: "atomic",
+        member: {
+          treatment_family: "bus_lane",
+          evidence_bindings: [{ source_id: "treatment-source", block_id: "treatment-block" }],
+        },
+      },
+    };
     const occurrenceDecision = { occurrence_id: "occurrence-ok", review_state: "approved", decision_id: "review-ok" };
     expect(() => validateOccurrenceCreatedRows(created, [occurrence], [occurrenceDecision])).not.toThrow();
     expect(() => validateOccurrenceCreatedRows(created, [], [occurrenceDecision])).toThrow("missing occurrence");
     expect(() => validateOccurrenceCreatedRows(created, [occurrence], [])).toThrow("no accepted occurrence-review decision");
+    expect(() => validateOccurrenceCreatedRows(created, [{ ...occurrence, routes: [] }], [occurrenceDecision]))
+      .toThrow("lacks this evidence-bound route identity");
+    expect(() => validateOccurrenceCreatedRows(created, [{ ...occurrence, resolved_onset: {
+      ...occurrence.resolved_onset,
+      precision: "month",
+    } }], [occurrenceDecision])).toThrow("lacks the exact evidence-bound candidate onset");
+    expect(() => validateOccurrenceCreatedRows(created, [{ ...occurrence, treatment: {
+      kind: "atomic",
+      member: { treatment_family: "bus_lane", evidence_bindings: [] },
+    } }], [occurrenceDecision])).toThrow("lacks an evidence-bound bus_lane treatment member");
   });
 
   it("never uses a current shape for a historical positive or negative and rejects low-coverage negatives", () => {

@@ -901,6 +901,26 @@ export function validateOccurrenceCreatedRows(
         occurrence.occurrence_review_decision_id !== decision.decision_id) {
       throw new Error(`${row.ledger_id}: ${occurrenceId} is not bound to its accepted occurrence-review decision`);
     }
+    const routes = Array.isArray(occurrence.routes) ? occurrence.routes : [];
+    const route = routes.map((value, index) => object(value, `${occurrenceId}.routes[${index}]`)).find((value) =>
+      value.gtfs_route_id === row.gtfs_route_id && value.route_record_id === row.route_record_id);
+    if (!row.route_record_id || !route || !Array.isArray(route.evidence_bindings) || route.evidence_bindings.length === 0) {
+      throw new Error(`${row.ledger_id}: ${occurrenceId} lacks this evidence-bound route identity`);
+    }
+    const onset = object(occurrence.resolved_onset, `${occurrenceId}.resolved_onset`);
+    if (onset.date !== row.implementation_date || onset.precision !== "day" ||
+        !Array.isArray(onset.evidence_bindings) || onset.evidence_bindings.length === 0) {
+      throw new Error(`${row.ledger_id}: ${occurrenceId} lacks the exact evidence-bound candidate onset`);
+    }
+    const treatment = object(occurrence.treatment, `${occurrenceId}.treatment`);
+    const members = treatment.kind === "atomic" ? [object(treatment.member, `${occurrenceId}.treatment.member`)] :
+      treatment.kind === "bundle" && Array.isArray(treatment.members)
+        ? treatment.members.map((value, index) => object(value, `${occurrenceId}.treatment.members[${index}]`))
+        : [];
+    if (!members.some((member) => member.treatment_family === "bus_lane" &&
+      Array.isArray(member.evidence_bindings) && member.evidence_bindings.length > 0)) {
+      throw new Error(`${row.ledger_id}: ${occurrenceId} lacks an evidence-bound bus_lane treatment member`);
+    }
   }
 }
 
@@ -1054,6 +1074,13 @@ export function writeBusLaneIdentityArtifacts(options: {
     route_anchors: { path: relative(rootDir, routeAnchorsPath), sha256: hash(readFileSync(routeAnchorsPath)) },
     dossier: { path: relative(rootDir, dossierPath), sha256: hash(readFileSync(dossierPath)) },
     registry: { path: "data/reference/operational/snapshots.json", sha256: hash(readFileSync(join(rootDir, "data/reference/operational/snapshots.json"))) },
+    occurrences: { path: relative(rootDir, occurrencePath), sha256: hash(readFileSync(occurrencePath)) },
+    accepted_occurrence_decisions: {
+      path: relative(rootDir, acceptedOccurrenceDecisionDir),
+      sha256: fingerprint(receiptFiles(acceptedOccurrenceDecisionDir).map((path) => ({
+        path: relative(acceptedOccurrenceDecisionDir, path), sha256: hash(readFileSync(path)),
+      }))),
+    },
   };
   const summary = {
     schema_version: BUS_LANE_IDENTITY_SCHEMA_VERSION,
