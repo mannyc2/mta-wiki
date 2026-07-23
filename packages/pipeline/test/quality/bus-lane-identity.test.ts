@@ -5312,6 +5312,371 @@ describe("bus-lane identity exact-date targeting", () => {
     }
   });
 
+  it("closes Battery Place only with exact 16-row nonrefutational targets", () => {
+    const date = "2021-06-10";
+    const routeContracts = [
+      {
+        routeId: "M20", receiptId: "manhattan-acquisition:1fd68dccc2283be0d3603643",
+        shard: "manhattan", supported: false,
+      },
+      {
+        routeId: "QM7", receiptId: "queens-acquisition:26bc7bef1a16dea6b4dc596a",
+        shard: "queens", supported: false, crossShardContext: true,
+      },
+      {
+        routeId: "SIM1", receiptId: "staten-island-acquisition:b16431603d8b738210f3ba79",
+        shard: "staten-island", supported: true,
+      },
+      {
+        routeId: "X27", receiptId: "brooklyn-null-acquisition:894f74a1372188c7d3658ba9",
+        shard: "brooklyn-null", supported: true,
+      },
+    ];
+    const uniqueFeatures = Array.from({ length: 11 }, (_, index) => {
+      const featureId = String(2_000_000 + index);
+      return lane({
+        feature_id: featureId,
+        lane_group_id: "MAN|BATTERY PLACE",
+        opened: "06/10/2021",
+        direction: "WB",
+        attributes: { open_dates: "06/10/2021", segmentid: featureId, direction: "WB" },
+      });
+    });
+    const features = [...uniqueFeatures, ...uniqueFeatures.slice(0, 5)];
+    for (const contract of routeContracts) {
+      const { routeId, receiptId, shard, supported } = contract;
+      const compactLaneField = shard === "manhattan" || shard === "brooklyn-null";
+      const crossShardContext = "crossShardContext" in contract && contract.crossShardContext === true;
+      const entry = candidate(`battery-place-${routeId.toLowerCase()}`, routeId, date);
+      const unavailableDossier = {
+        ...dossier({
+          candidateId: entry.bridge.candidate_id,
+          routeId,
+          date,
+          laneGroupId: null,
+          pathSource: "unavailable",
+          pathIdentity: null,
+          reason: "historical_schedule_unavailable_pre_2023",
+          coverage: 0,
+        }),
+        service_date: null,
+        direction: null,
+        temporal_lag_days: null,
+        route_miles: 0,
+        span: { first_stop_id: null, last_stop_id: null, stop_ids: [] },
+      } satisfies LaneTraversalRow;
+      const [baseRow] = buildBusLaneIdentityLedger({
+        bridgeCandidates: [entry.bridge],
+        trackerCandidates: [entry.tracker],
+        routeAnchors: [anchor(routeId)],
+        dossierRows: [unavailableDossier],
+        dossierArtifact: "dossier.jsonl",
+        laneFeatures: features,
+        laneSnapshotId: "lanes",
+        laneSourceId: "lane_source",
+        gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+      });
+      const rootDir = mkdtempSync(join(tmpdir(), `bus-lane-battery-${routeId.toLowerCase()}-`));
+      const receiptDir = join(rootDir, "receipts");
+      const priorArtifact =
+        `data/quality/relationship-integrity/bus-lane-acquisition/shards/${shard}/receipts.jsonl`;
+      mkdirSync(receiptDir, { recursive: true });
+      mkdirSync(join(rootDir,
+        `data/quality/relationship-integrity/bus-lane-acquisition/shards/${shard}`), { recursive: true });
+      const attempts = [
+        {
+          category: "official_nyc_dot_lane_project",
+          query: `site:nyc.gov Battery Place bus lane 2021 ${routeId}`,
+          query_status: "performed_2026-07-15",
+          urls_checked: ["https://www.nyc.gov/battery-place"],
+          retrievals: [{ id: "battery-project", retrieved_on: "2026-07-15",
+            sha256: "1".repeat(64), status: "acquired" }],
+        },
+        {
+          category: "official_mta_route_project",
+          query: `site:mta.info "${routeId}" "Battery Pl" bus route project`,
+          query_status: "performed_2026-07-15",
+          urls_checked: [`https://bustime-classic.mta.info/m/?q=${routeId}`],
+          retrievals: [{ id: `mta-${routeId}`, retrieved_on: "2026-07-15",
+            sha256: "2".repeat(64), status: "acquired" }],
+        },
+        {
+          category: "official_public_board_committee",
+          query: `site:nyc.gov Battery Place bus lane 2021 ${routeId} community board`,
+          query_status: "performed_2026-07-15",
+          urls_checked: ["https://www.nyc.gov/battery-place-board"],
+          retrievals: [{ id: "battery-board", retrieved_on: "2026-07-15",
+            sha256: "3".repeat(64), status: "acquired" }],
+        },
+        {
+          category: "other_repository_approved_primary",
+          query: "NYC DOT Open Data Battery Place open_dates contains 2021-06-10",
+          query_status: "executed_2026-07-15",
+          urls_checked: ["https://data.cityofnewyork.us/battery-place"],
+          retrievals: [{ id: "open-data", retrieved_on: "2026-07-15",
+            sha256: "4".repeat(64), status: "acquired" }],
+        },
+      ];
+      const prior = {
+        receipt_id: receiptId,
+        researched_on: "2026-07-15",
+        candidate: {
+          candidate_id: entry.bridge.candidate_id,
+          normalized_route_id: routeId,
+          route_id: routeId,
+          implementation_date: date,
+          identity: `${routeId}|bus_lane|2021-06-10|day`,
+        },
+        source_findings: {
+          candidate_named_lane_record_count: 0,
+          official_lane_matching_record_count: 16,
+          official_lane_matching_segment_ids: Array.from({ length: 11 }, (_, index) => String(index)),
+          ...(compactLaneField
+            ? { official_lane_named_sbs_routes: [] }
+            : { official_lane_named_routes: [], official_route_named_segment_ids: [] }),
+          exact_project_route_statement_found: supported,
+          exact_project_route_source_id: supported ? "better_buses_action_plan_2019" : null,
+          mta_route_page: {
+            exact_route_title_found: true,
+            current_corridor_token_found: supported,
+            retrieval_status: "acquired",
+            temporal_limitation: "The live route page is not candidate-date traversal proof.",
+          },
+        },
+        outcome: {
+          exclusive_primary_disposition: supported
+            ? "linkage_supported_phase_unresolved"
+            : "completed_search_route_linkage_unresolved",
+          registry_projection_excluded: true,
+          still_unresolved: true,
+          study_projection_eligible: false,
+        },
+        claim_results: {
+          ...(["manhattan", "queens", "brooklyn-null"].includes(shard)
+            ? { candidate_date_supported_at_day_precision: false }
+            : {}),
+          physical_bus_lane_record_acquired: true,
+          ...(shard === "brooklyn-null" ? {} : { candidate_segment_ids_pinned: false }),
+          date_and_phase_proved: false,
+          exact_route_treatment_binding_proved: supported,
+          exact_segment_binding_proved: false,
+          explicit_phase_identity_proved: false,
+          operational_occurrence_identity_proved: false,
+          exact_route_binding_evidence: supported ? [{ source_id: "better_buses_action_plan_2019" }] : [],
+          exact_segment_ids: [],
+        },
+        canonical_actions: {
+          canonical_links_added: [],
+          ...(shard === "queens" ? { canonical_records_added: [], canonical_records_updated: [] } : {}),
+          operational_occurrence_added_or_updated: false,
+        },
+        acquisition_attempts: attempts,
+      };
+      const priorLine = stableJson(prior as unknown as JsonValue);
+      writeFileSync(join(rootDir, priorArtifact), `${priorLine}\n`);
+      const contextArtifact =
+        "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/receipts.jsonl";
+      const contextPrior = {
+        receipt_id: "staten-island-acquisition:b16431603d8b738210f3ba79",
+        candidate: { route_id: "SIM1", implementation_date: date },
+        source_findings: {
+          exact_project_route_statement_found: true,
+          exact_project_route_source_id: "better_buses_action_plan_2019",
+          official_project_route_inventory: [
+            "BM1", "BM2", "BM3", "BM4", "QM7", "QM8", "QM11", "QM25", "SIM1", "SIM1C", "SIM2", "SIM3C",
+            "SIM4", "SIM4C", "SIM4X", "SIM5", "SIM15", "SIM32", "SIM33C", "SIM34", "SIM35", "X27", "X28",
+          ],
+        },
+        claim_results: {
+          candidate_segment_ids_pinned: false,
+          date_and_phase_proved: false,
+          exact_route_treatment_binding_proved: true,
+          exact_segment_binding_proved: false,
+          exact_segment_ids: [],
+          explicit_phase_identity_proved: false,
+          operational_occurrence_identity_proved: false,
+          physical_bus_lane_record_acquired: true,
+          exact_route_binding_evidence: [{
+            evidence_kind: "official_project_route_statement",
+            source_id: "better_buses_action_plan_2019",
+            source_sha256: "68ac9e1aaf17a033577688e241e586ac101581ef0e2ba0cc3854196f9323f1c1",
+            official_routes: [
+              "BM1", "BM2", "BM3", "BM4", "QM7", "QM8", "QM11", "QM25", "SIM1", "SIM1C", "SIM2", "SIM3C",
+              "SIM4", "SIM4C", "SIM4X", "SIM5", "SIM15", "SIM32", "SIM33C", "SIM34", "SIM35", "X27", "X28",
+            ],
+          }],
+        },
+        outcome: {
+          exclusive_primary_disposition: "linkage_supported_phase_unresolved",
+          registry_projection_excluded: true,
+          still_unresolved: true,
+          study_projection_eligible: false,
+        },
+        canonical_actions: { canonical_links_added: [], operational_occurrence_added_or_updated: false },
+      };
+      const contextLine = stableJson(contextPrior as unknown as JsonValue);
+      if (crossShardContext) {
+        mkdirSync(join(rootDir,
+          "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island"), { recursive: true });
+        writeFileSync(join(rootDir, contextArtifact), `${contextLine}\n`);
+      }
+      const row = { ...baseRow!, prior_acquisition_receipt: {
+        receipt_id: receiptId,
+        artifact: priorArtifact,
+        row_sha256: createHash("sha256").update(priorLine).digest("hex"),
+        disposition: prior.outcome.exclusive_primary_disposition,
+        next_action: "Retain exact nonrefutational Battery Place absence.",
+      } };
+      const packet = buildBusLaneResearchPackets([row]).packets[0]!;
+      const groups = packet.what_is_known.target_groups;
+      const matches = groups.flatMap((group) => group.feature_matches);
+      const urls = [...new Set(attempts.flatMap((attempt) => attempt.urls_checked))].sort();
+      const target = {
+        directions: [...new Set(matches.map((match) => match.direction))].sort(),
+        feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+        feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+        feature_row_count: matches.length,
+        feature_rows: matches.map((match) => ({
+          feature_key: match.feature_key, feature_id: match.feature_id, direction: match.direction,
+        })),
+        geometry_scopes: [...new Set(groups.map((group) => group.geometry_scope))].sort(),
+        lane_group_ids: groups.map((group) => group.lane_group_id),
+        matched_date: date,
+        named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+        open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+      };
+      const rationale = crossShardContext
+        ? `Pinned cross-shard official project evidence preserves an evidence-backed ${routeId} route, treatment, and Battery Place corridor context, but candidate-exact acquisition does not bind ${routeId} to all 16 candidate-date feature-row occurrences, the exact 2021-06-10 onset, or candidate-date traversal. The registry rows name no SBS route, the retained historical schedule dossier is unavailable, and the pinned candidate provenance does not identify the exact matched subset. Attribution and traversal remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`
+        : supported
+        ? `Completed candidate-exact acquisition searches preserve an evidence-backed ${routeId} route, treatment, and Battery Place corridor context, but do not bind ${routeId} to all 16 candidate-date feature-row occurrences, the exact 2021-06-10 onset, or candidate-date traversal. The registry rows name no SBS route, the retained historical schedule dossier is unavailable, and the pinned candidate provenance does not identify the exact matched subset. Attribution and traversal remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`
+        : `Completed candidate-exact acquisition searches retained all 16 Battery Place candidate-date feature-row occurrences, 11 unique feature keys and feature IDs, the westbound direction, and the exact 2021-06-10 registry day, but found no authoritative statement binding ${routeId} to the candidate-date feature subset. The registry rows name no SBS route, the retained historical schedule dossier is unavailable, and the pinned candidate provenance does not identify candidate-date traversal. Attribution and traversal remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`;
+      const receipt = {
+        schema_version: 1,
+        receipt_id: `binding-battery-${routeId.toLowerCase()}`,
+        receipt_kind: "binding_absent_after_search",
+        candidate_id: row.candidate_id,
+        candidate_fingerprint: row.candidate_fingerprint,
+        gtfs_route_id: routeId,
+        implementation_date: date,
+        gap_ids: [row.ledger_id],
+        searched_at: "2026-07-15",
+        operator: "fixture-reviewer",
+        candidate_urls: [],
+        disposition: "binding_absent_after_search",
+        missing_binding: packet.missing_binding,
+        unresolved_bindings: packet.unresolved_bindings,
+        target,
+        prior_receipt: {
+          receipt_id: receiptId,
+          artifact: priorArtifact,
+          row_sha256: row.prior_acquisition_receipt.row_sha256,
+        },
+        ...(crossShardContext ? { context_receipt: {
+          receipt_id: contextPrior.receipt_id,
+          artifact: contextArtifact,
+          row_sha256: createHash("sha256").update(contextLine).digest("hex"),
+        } } : {}),
+        rationale,
+        search: {
+          exact_queries: attempts.map(({ category, query, query_status }) => ({ category, query, query_status })),
+          domains: [...new Set(urls.map((url) => new URL(url).hostname))].sort(),
+          urls_inspected: urls,
+          retrievals: attempts.flatMap((attempt) => attempt.retrievals.map((retrieval) =>
+            ({ category: attempt.category, ...retrieval }))),
+          disposition: "binding_absent_after_search",
+        },
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+      const validate = (draft: Record<string, unknown>, candidateRow = row, candidatePacket = packet) => {
+        writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+        return () => validateBindingReceiptDrafts([candidateRow], [candidatePacket], receiptDir, rootDir);
+      };
+      const packetWithDossier = (dossierRefs: typeof packet.what_is_known.dossier_refs) => ({
+        ...packet,
+        what_is_known: {
+          ...packet.what_is_known,
+          dossier_refs: dossierRefs,
+          dossier_summary: {
+            row_count: dossierRefs.length,
+            target_row_count: dossierRefs.filter((ref) => ref.candidate_target_match).length,
+            counts_by_verdict: {
+              traversal_confirmed: dossierRefs.filter((ref) => ref.verdict_class === "traversal_confirmed").length,
+              traversal_marginal: dossierRefs.filter((ref) => ref.verdict_class === "traversal_marginal").length,
+              no_traversal: dossierRefs.filter((ref) => ref.verdict_class === "no_traversal").length,
+              geometry_ambiguous: dossierRefs.filter((ref) => ref.verdict_class === "geometry_ambiguous").length,
+            },
+            counts_by_reason: Object.fromEntries([...new Set(dossierRefs.map((ref) => ref.reason))].sort()
+              .map((reason) => [reason, dossierRefs.filter((ref) => ref.reason === reason).length])),
+            counts_by_path_source: {
+              gtfs_shape: dossierRefs.filter((ref) => ref.path_source === "gtfs_shape").length,
+              historical_schedule_timepoint_pattern:
+                dossierRefs.filter((ref) => ref.path_source === "historical_schedule_timepoint_pattern").length,
+              unavailable: dossierRefs.filter((ref) => ref.path_source === "unavailable").length,
+            },
+          },
+        },
+      });
+      try {
+        expect(packet.missing_binding).toBe("traversal");
+        expect(packet.unresolved_bindings).toEqual(["attribution", "traversal"]);
+        expect(target).toMatchObject({
+          feature_row_count: 16,
+          directions: ["WB"],
+          named_sbs_routes: [],
+          open_dates_literals: ["06/10/2021"],
+        });
+        expect(target.feature_keys).toHaveLength(11);
+        expect(target.feature_ids).toHaveLength(11);
+        expect(validate(receipt)).not.toThrow();
+        expect(validate({ ...receipt, rationale: `${rationale} Traversal refuted.` }))
+          .toThrow("Battery Place absence contract does not match the exact candidate");
+        expect(validate({ ...receipt, target: { ...target, feature_row_count: 15 } }))
+          .toThrow("binding receipt feature-row accounting parity failed");
+        expect(validate({ ...receipt, supplemental_search: {} }))
+          .toThrow("Battery Place absence contract does not match the exact candidate");
+        expect(validate({ ...receipt,
+          occurrence_context: { occurrence_id: "occurrence_fake", accepted_decision_id: "decision_fake" } }))
+          .toThrow("occurrence context is not bound to an accepted occurrence decision");
+        if (crossShardContext) {
+          expect(validate({ ...receipt, context_receipt: {
+            ...receipt.context_receipt,
+            row_sha256: "0".repeat(64),
+          } })).toThrow();
+          const coordinatedTamper = {
+            ...contextPrior,
+            claim_results: {
+              ...contextPrior.claim_results,
+              operational_occurrence_identity_proved: true,
+            },
+            outcome: { ...contextPrior.outcome, study_projection_eligible: true },
+          };
+          const coordinatedTamperLine = stableJson(coordinatedTamper as unknown as JsonValue);
+          writeFileSync(join(rootDir, contextArtifact), `${coordinatedTamperLine}\n`);
+          expect(validate({ ...receipt, context_receipt: {
+            ...receipt.context_receipt,
+            row_sha256: createHash("sha256").update(coordinatedTamperLine).digest("hex"),
+          } })).toThrow("Battery Place absence contract does not match the exact candidate");
+          writeFileSync(join(rootDir, contextArtifact), `${contextLine}\n`);
+        }
+        expect(validate({ ...receipt, authorizes_study: true }))
+          .toThrow("binding receipt search preservation or authorization guard failed");
+        const gtfsNoTraversalRefs = packet.what_is_known.dossier_refs.map((ref) => ({
+          ...ref,
+          path_source: "gtfs_shape" as const,
+          verdict_class: "no_traversal" as const,
+        }));
+        const gtfsNoTraversalPacket = packetWithDossier(gtfsNoTraversalRefs);
+        expect(validate(receipt, row, gtfsNoTraversalPacket))
+          .toThrow("Battery Place packet dossier does not preserve exact ledger evidence parity");
+        expect(validate(receipt, { ...row, dossier_refs: gtfsNoTraversalRefs }, gtfsNoTraversalPacket))
+          .toThrow("Battery Place absence contract does not match the exact candidate");
+      } finally {
+        rmSync(rootDir, { recursive: true, force: true });
+      }
+    }
+  });
+
   it("closes SIM23 and SIM24 only as zero-target nonrefutational absences", () => {
     const date = "2015-05-27";
     const priorReceiptIds = new Map([

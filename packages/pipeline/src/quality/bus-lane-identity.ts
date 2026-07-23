@@ -552,6 +552,40 @@ const HILLSIDE_DIRECTION_GAP_ROUTES = new Set([
 const HILLSIDE_ATTRIBUTION_GAP_ROUTES = new Set([
   "Q110", "Q111", "Q112", "Q113", "Q114", "Q115", "Q24", "Q25", "Q27", "Q44+", "Q65", "Q83",
 ]);
+const BATTERY_PLACE_PRIOR_RECEIPTS = new Map([
+  ["BXM18", { receiptId: "bronx-acquisition:296182e8fc59c5ab3abd197f", shard: "bronx", supported: false }],
+  ["M20", { receiptId: "manhattan-acquisition:1fd68dccc2283be0d3603643", shard: "manhattan", supported: false }],
+  ["M55", { receiptId: "manhattan-acquisition:2b67ec8cefc7c93a6b7fdec5", shard: "manhattan", supported: false }],
+  ["QM11", { receiptId: "queens-acquisition:72654f73ef94db84291bc5ab", shard: "queens", supported: false }],
+  ["QM25", { receiptId: "queens-acquisition:5b9ae239e1edd902423e684f", shard: "queens", supported: false }],
+  ["QM7", { receiptId: "queens-acquisition:26bc7bef1a16dea6b4dc596a", shard: "queens", supported: false }],
+  ["QM8", { receiptId: "queens-acquisition:20df9841c85bc5f3a0119e31", shard: "queens", supported: false }],
+  ["SIM1", { receiptId: "staten-island-acquisition:b16431603d8b738210f3ba79", shard: "staten-island", supported: true }],
+  ["SIM15", { receiptId: "staten-island-acquisition:7050839b4004dd39b7ce6257", shard: "staten-island", supported: true }],
+  ["SIM1C", { receiptId: "staten-island-acquisition:e9c84dc2e91b556c8fb7c5df", shard: "staten-island", supported: true }],
+  ["SIM2", { receiptId: "staten-island-acquisition:0178ad78a70796eb91fedacc", shard: "staten-island", supported: true }],
+  ["SIM32", { receiptId: "staten-island-acquisition:85f899926dd90d47d157ef0b", shard: "staten-island", supported: true }],
+  ["SIM33C", { receiptId: "staten-island-acquisition:2271a8547d2270d09821b24f", shard: "staten-island", supported: true }],
+  ["SIM34", { receiptId: "staten-island-acquisition:ffa3ec03eda763cdc213fd29", shard: "staten-island", supported: true }],
+  ["SIM35", { receiptId: "staten-island-acquisition:4ddbd32b5dc40a19af66f63d", shard: "staten-island", supported: true }],
+  ["SIM3C", { receiptId: "staten-island-acquisition:50f4a3144f1cc880d3f21057", shard: "staten-island", supported: true }],
+  ["SIM4", { receiptId: "staten-island-acquisition:f21bbb4522e79ec28127f3cf", shard: "staten-island", supported: true }],
+  ["SIM4C", { receiptId: "staten-island-acquisition:9e607770c86b43d4f2138d95", shard: "staten-island", supported: true }],
+  ["SIM5", { receiptId: "staten-island-acquisition:fb2adc19f945d6d367defdb8", shard: "staten-island", supported: true }],
+  ["X27", { receiptId: "brooklyn-null-acquisition:894f74a1372188c7d3658ba9", shard: "brooklyn-null", supported: true }],
+  ["X28", { receiptId: "brooklyn-null-acquisition:7eb9a7e1261ded7a9c24cc65", shard: "brooklyn-null", supported: true }],
+]);
+const BATTERY_PLACE_CROSS_SHARD_CONTEXT_ROUTES = new Set(["QM7", "QM8", "QM11", "QM25"]);
+const BATTERY_PLACE_PROJECT_ROUTE_INVENTORY = [
+  "BM1", "BM2", "BM3", "BM4", "QM7", "QM8", "QM11", "QM25", "SIM1", "SIM1C", "SIM2", "SIM3C",
+  "SIM4", "SIM4C", "SIM4X", "SIM5", "SIM15", "SIM32", "SIM33C", "SIM34", "SIM35", "X27", "X28",
+];
+const BATTERY_PLACE_CROSS_SHARD_CONTEXT_RECEIPT = {
+  receiptId: "staten-island-acquisition:b16431603d8b738210f3ba79",
+  artifact: "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/receipts.jsonl",
+  sourceId: "better_buses_action_plan_2019",
+  sourceSha256: "68ac9e1aaf17a033577688e241e586ac101581ef0e2ba0cc3854196f9323f1c1",
+};
 
 function isExactQueensPlazaPacketTarget(
   packet: BusLaneResearchPacket,
@@ -660,6 +694,43 @@ function isExactHillsidePacketTarget(
       match.sbs_routes.length === 0) &&
     stableJson([...new Set(matches.map((match) => match.direction))].sort()) === stableJson(["EB", "WB"]) &&
     stableJson(packet.unresolved_bindings) === stableJson(expectedUnresolvedBindings);
+}
+
+function isExactBatteryPlacePacketTarget(
+  packet: BusLaneResearchPacket,
+  row: BusLaneIdentityRow,
+): boolean {
+  const group = packet.what_is_known.target_groups[0];
+  const dossierRef = packet.what_is_known.dossier_refs[0];
+  if (!group || !dossierRef) return false;
+  const matches = group.feature_matches;
+  return BATTERY_PLACE_PRIOR_RECEIPTS.has(row.gtfs_route_id) &&
+    row.implementation_date === "2021-06-10" &&
+    packet.missing_binding === "traversal" &&
+    packet.what_is_known.target_groups.length === 1 &&
+    stableJson(packet.what_is_known.target_groups) === stableJson(row.onset_evidence.target_groups) &&
+    stableJson(packet.what_is_known.dossier_refs) === stableJson(row.dossier_refs) &&
+    packet.what_is_known.dossier_refs.length === 1 &&
+    dossierRef.candidate_target_match === false &&
+    dossierRef.direction === null && dossierRef.lane_group_id === null && dossierRef.path_identity === null &&
+    dossierRef.path_source === "unavailable" && dossierRef.reason === "historical_schedule_unavailable_pre_2023" &&
+    dossierRef.service_date === null && dossierRef.temporal_lag_days === null &&
+    dossierRef.verdict_class === "geometry_ambiguous" && dossierRef.stop_coordinate_coverage === 0 &&
+    dossierRef.overlap_miles === 0 && dossierRef.overlap_share === 0 && dossierRef.span_stop_ids.length === 0 &&
+    stableJson(packet.what_is_known.dossier_summary) === stableJson({
+      counts_by_path_source: { gtfs_shape: 0, historical_schedule_timepoint_pattern: 0, unavailable: 1 },
+      counts_by_reason: { historical_schedule_unavailable_pre_2023: 1 },
+      counts_by_verdict: { geometry_ambiguous: 1, no_traversal: 0, traversal_confirmed: 0, traversal_marginal: 0 },
+      row_count: 1,
+      target_row_count: 0,
+    }) &&
+    group.lane_group_id === "MAN|BATTERY PLACE" && group.geometry_scope === "coextensive_with_lane_group" &&
+    matches.length === 16 && new Set(matches.map((match) => match.feature_key)).size === 11 &&
+    new Set(matches.map((match) => match.feature_id)).size === 11 &&
+    matches.every((match) => match.direction === "WB" && match.matched_date === "2021-06-10" &&
+      match.matched_token_literal === "06/10/2021" && match.open_dates_literal === "06/10/2021" &&
+      match.sbs_routes.length === 0) &&
+    stableJson(packet.unresolved_bindings) === stableJson(["attribution", "traversal"]);
 }
 
 function isoReviewTime(value: unknown, path: string): string {
@@ -1496,6 +1567,18 @@ export function validateBindingReceiptDrafts(
         stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs)) {
       throw new Error(`${receiptPath}: Hillside Avenue packet dossier does not preserve exact ledger evidence parity`);
     }
+    const batteryPlaceLedgerTarget = row.implementation_date === "2021-06-10" &&
+      row.onset_evidence.target_groups.length === 1 &&
+      row.onset_evidence.target_groups[0]?.lane_group_id === "MAN|BATTERY PLACE" &&
+      BATTERY_PLACE_PRIOR_RECEIPTS.has(row.gtfs_route_id);
+    if (batteryPlaceLedgerTarget &&
+        stableJson(packet.what_is_known.target_groups) !== stableJson(row.onset_evidence.target_groups)) {
+      throw new Error(`${receiptPath}: Battery Place packet target does not preserve exact ledger occurrence parity`);
+    }
+    if (batteryPlaceLedgerTarget &&
+        stableJson(packet.what_is_known.dossier_refs) !== stableJson(row.dossier_refs)) {
+      throw new Error(`${receiptPath}: Battery Place packet dossier does not preserve exact ledger evidence parity`);
+    }
     const receiptUnresolved = stringArray(receipt.unresolved_bindings,
       `${receiptPath}.unresolved_bindings`, false);
     if (stableJson(receipt.gap_ids as JsonValue) !== stableJson([row.ledger_id]) ||
@@ -1778,6 +1861,179 @@ export function validateBindingReceiptDrafts(
           !exactCandidateQuery || receipt.authorizes_study !== false ||
           receipt.authorizes_cross_product !== false) {
         throw new Error(`${receiptPath}: Hillside Avenue absence contract does not match the exact candidate`);
+      }
+    }
+    if (batteryPlaceLedgerTarget) {
+      const priorContract = BATTERY_PLACE_PRIOR_RECEIPTS.get(row.gtfs_route_id)!;
+      const priorCandidate = object(prior.candidate, `${receiptPath}.prior.candidate`);
+      const sourceFindings = object(prior.source_findings, `${receiptPath}.prior.source_findings`);
+      const priorOutcome = object(prior.outcome, `${receiptPath}.prior.outcome`);
+      const priorClaims = object(prior.claim_results, `${receiptPath}.prior.claim_results`);
+      const canonicalActions = object(prior.canonical_actions, `${receiptPath}.prior.canonical_actions`);
+      const routePage = object(sourceFindings.mta_route_page,
+        `${receiptPath}.prior.source_findings.mta_route_page`);
+      const supported = priorContract.supported;
+      const crossShardContext = BATTERY_PLACE_CROSS_SHARD_CONTEXT_ROUTES.has(row.gtfs_route_id);
+      const retainsContext = supported || crossShardContext;
+      const expectedRationale = crossShardContext
+        ? `Pinned cross-shard official project evidence preserves an evidence-backed ${row.gtfs_route_id} route, treatment, and Battery Place corridor context, but candidate-exact acquisition does not bind ${row.gtfs_route_id} to all 16 candidate-date feature-row occurrences, the exact 2021-06-10 onset, or candidate-date traversal. The registry rows name no SBS route, the retained historical schedule dossier is unavailable, and the pinned candidate provenance does not identify the exact matched subset. Attribution and traversal remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`
+        : retainsContext
+        ? `Completed candidate-exact acquisition searches preserve an evidence-backed ${row.gtfs_route_id} route, treatment, and Battery Place corridor context, but do not bind ${row.gtfs_route_id} to all 16 candidate-date feature-row occurrences, the exact 2021-06-10 onset, or candidate-date traversal. The registry rows name no SBS route, the retained historical schedule dossier is unavailable, and the pinned candidate provenance does not identify the exact matched subset. Attribution and traversal remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`
+        : `Completed candidate-exact acquisition searches retained all 16 Battery Place candidate-date feature-row occurrences, 11 unique feature keys and feature IDs, the westbound direction, and the exact 2021-06-10 registry day, but found no authoritative statement binding ${row.gtfs_route_id} to the candidate-date feature subset. The registry rows name no SBS route, the retained historical schedule dossier is unavailable, and the pinned candidate provenance does not identify candidate-date traversal. Attribution and traversal remain unresolved; this is not a no-traversal refutation and authorizes no occurrence, study, or cross-product projection.`;
+      let crossShardContextValid = !crossShardContext;
+      if (crossShardContext) {
+        const contextPointer = object(receipt.context_receipt, `${receiptPath}.context_receipt`);
+        const contextArtifact = BATTERY_PLACE_CROSS_SHARD_CONTEXT_RECEIPT.artifact;
+        const contextJournalPath = resolve(rootDir, contextArtifact);
+        const contextLine = readFileSync(contextJournalPath, "utf8").split(/\r?\n/u).filter(Boolean).find((line) => {
+          const parsed = object(JSON.parse(line), contextJournalPath);
+          return parsed.receipt_id === BATTERY_PLACE_CROSS_SHARD_CONTEXT_RECEIPT.receiptId;
+        });
+        if (contextLine && contextPointer.receipt_id === BATTERY_PLACE_CROSS_SHARD_CONTEXT_RECEIPT.receiptId &&
+            contextPointer.artifact === contextArtifact && contextPointer.row_sha256 === hash(contextLine)) {
+          const contextPrior = object(JSON.parse(contextLine), `${contextJournalPath}:cross-shard-context`);
+          const contextCandidate = object(contextPrior.candidate, `${contextJournalPath}.candidate`);
+          const contextSource = object(contextPrior.source_findings, `${contextJournalPath}.source_findings`);
+          const contextClaims = object(contextPrior.claim_results, `${contextJournalPath}.claim_results`);
+          const contextOutcome = object(contextPrior.outcome, `${contextJournalPath}.outcome`);
+          const contextActions = object(contextPrior.canonical_actions, `${contextJournalPath}.canonical_actions`);
+          const contextEvidence = Array.isArray(contextClaims.exact_route_binding_evidence)
+            ? contextClaims.exact_route_binding_evidence
+            : [];
+          const evidence = contextEvidence.length === 1
+            ? object(contextEvidence[0], `${contextJournalPath}.claim_results.exact_route_binding_evidence[0]`)
+            : null;
+          crossShardContextValid = contextCandidate.route_id === "SIM1" &&
+            contextCandidate.implementation_date === "2021-06-10" &&
+            contextSource.exact_project_route_statement_found === true &&
+            contextSource.exact_project_route_source_id === BATTERY_PLACE_CROSS_SHARD_CONTEXT_RECEIPT.sourceId &&
+            stableJson(contextSource.official_project_route_inventory as JsonValue) ===
+              stableJson(BATTERY_PLACE_PROJECT_ROUTE_INVENTORY) &&
+            contextClaims.exact_route_treatment_binding_proved === true && evidence !== null &&
+            contextClaims.candidate_segment_ids_pinned === false &&
+            contextClaims.date_and_phase_proved === false &&
+            contextClaims.exact_segment_binding_proved === false &&
+            stableJson(contextClaims.exact_segment_ids as JsonValue) === stableJson([]) &&
+            contextClaims.explicit_phase_identity_proved === false &&
+            contextClaims.operational_occurrence_identity_proved === false &&
+            contextClaims.physical_bus_lane_record_acquired === true &&
+            evidence.evidence_kind === "official_project_route_statement" &&
+            evidence.source_id === BATTERY_PLACE_CROSS_SHARD_CONTEXT_RECEIPT.sourceId &&
+            evidence.source_sha256 === BATTERY_PLACE_CROSS_SHARD_CONTEXT_RECEIPT.sourceSha256 &&
+            stableJson(evidence.official_routes as JsonValue) === stableJson(BATTERY_PLACE_PROJECT_ROUTE_INVENTORY) &&
+            contextOutcome.exclusive_primary_disposition === "linkage_supported_phase_unresolved" &&
+            contextOutcome.registry_projection_excluded === true &&
+            contextOutcome.still_unresolved === true &&
+            contextOutcome.study_projection_eligible === false &&
+            stableJson(contextActions.canonical_links_added as JsonValue) === stableJson([]) &&
+            contextActions.operational_occurrence_added_or_updated === false &&
+            BATTERY_PLACE_PROJECT_ROUTE_INVENTORY.includes(row.gtfs_route_id);
+        }
+      }
+      const exactCandidateQuery = exactQueries.some((query) => {
+        if (query.category !== "official_mta_route_project") return false;
+        const tokens = query.query.toUpperCase().split(/[^A-Z0-9+]+/u).filter(Boolean);
+        return tokens.includes(row.gtfs_route_id) && tokens.includes("BATTERY") &&
+          (tokens.includes("PL") || tokens.includes("PLACE"));
+      });
+      const canonicalLinks = Array.isArray(canonicalActions.canonical_links_added)
+        ? canonicalActions.canonical_links_added
+        : null;
+      const canonicalRecordsAdded = Array.isArray(canonicalActions.canonical_records_added)
+        ? canonicalActions.canonical_records_added
+        : null;
+      const canonicalRecordsUpdated = Array.isArray(canonicalActions.canonical_records_updated)
+        ? canonicalActions.canonical_records_updated
+        : null;
+      const exactRouteEvidence = Array.isArray(priorClaims.exact_route_binding_evidence)
+        ? priorClaims.exact_route_binding_evidence
+        : null;
+      const compactLaneField = priorContract.shard === "manhattan" ||
+        priorContract.shard === "brooklyn-null";
+      const hasNamedRoutes = Object.prototype.hasOwnProperty.call(
+        sourceFindings, compactLaneField ? "official_lane_named_sbs_routes" : "official_lane_named_routes",
+      );
+      const namedRoutes = compactLaneField
+        ? sourceFindings.official_lane_named_sbs_routes
+        : sourceFindings.official_lane_named_routes;
+      const hasUnexpectedNamedRoutes = Object.prototype.hasOwnProperty.call(
+        sourceFindings, compactLaneField ? "official_lane_named_routes" : "official_lane_named_sbs_routes",
+      );
+      const expectsRouteNamedSegmentIds = !compactLaneField;
+      const hasRouteNamedSegmentIds = Object.prototype.hasOwnProperty.call(
+        sourceFindings, "official_route_named_segment_ids",
+      );
+      const expectsCandidateDateClaim = ["manhattan", "queens", "brooklyn-null"].includes(priorContract.shard);
+      const hasCandidateDateClaim = Object.prototype.hasOwnProperty.call(
+        priorClaims, "candidate_date_supported_at_day_precision",
+      );
+      const expectsCandidateSegmentClaim = priorContract.shard !== "brooklyn-null";
+      const hasCandidateSegmentClaim = Object.prototype.hasOwnProperty.call(
+        priorClaims, "candidate_segment_ids_pinned",
+      );
+      const expectsCanonicalRecordArrays = priorContract.shard === "queens";
+      const hasCanonicalRecordsAdded = Object.prototype.hasOwnProperty.call(
+        canonicalActions, "canonical_records_added",
+      );
+      const hasCanonicalRecordsUpdated = Object.prototype.hasOwnProperty.call(
+        canonicalActions, "canonical_records_updated",
+      );
+      if (!isExactBatteryPlacePacketTarget(packet, row) ||
+          priorPointer.receipt_id !== priorContract.receiptId ||
+          priorPointer.artifact !==
+            `data/quality/relationship-integrity/bus-lane-acquisition/shards/${priorContract.shard}/receipts.jsonl` ||
+          priorCandidate.candidate_id !== row.candidate_id ||
+          priorCandidate.normalized_route_id !== row.gtfs_route_id ||
+          priorCandidate.route_id !== row.gtfs_route_id ||
+          priorCandidate.implementation_date !== row.implementation_date ||
+          priorCandidate.identity !== `${row.gtfs_route_id}|bus_lane|2021-06-10|day` ||
+          target.feature_row_count !== 16 ||
+          !Array.isArray(target.feature_keys) || target.feature_keys.length !== 11 ||
+          !Array.isArray(target.feature_rows) || target.feature_rows.length !== 16 ||
+          receipt.rationale !== expectedRationale ||
+          crossShardContextValid !== true ||
+          (!crossShardContext && receipt.context_receipt !== undefined) ||
+          receipt.supplemental_search !== undefined || receipt.occurrence_context !== undefined ||
+          sourceFindings.candidate_named_lane_record_count !== 0 ||
+          sourceFindings.official_lane_matching_record_count !== 16 ||
+          !Array.isArray(sourceFindings.official_lane_matching_segment_ids) ||
+          new Set(sourceFindings.official_lane_matching_segment_ids).size !== 11 ||
+          !hasNamedRoutes || hasUnexpectedNamedRoutes ||
+          stableJson(namedRoutes as JsonValue) !== stableJson([]) ||
+          hasRouteNamedSegmentIds !== expectsRouteNamedSegmentIds ||
+          (expectsRouteNamedSegmentIds &&
+            stableJson(sourceFindings.official_route_named_segment_ids as JsonValue) !== stableJson([])) ||
+          sourceFindings.exact_project_route_statement_found !== supported ||
+          (supported
+            ? sourceFindings.exact_project_route_source_id !== "better_buses_action_plan_2019"
+            : sourceFindings.exact_project_route_source_id != null) ||
+          routePage.exact_route_title_found !== true || routePage.retrieval_status !== "acquired" ||
+          typeof routePage.temporal_limitation !== "string" || !routePage.temporal_limitation ||
+          priorOutcome.exclusive_primary_disposition !==
+            (supported ? "linkage_supported_phase_unresolved" : "completed_search_route_linkage_unresolved") ||
+          priorOutcome.registry_projection_excluded !== true || priorOutcome.still_unresolved !== true ||
+          priorOutcome.study_projection_eligible !== false ||
+          hasCandidateDateClaim !== expectsCandidateDateClaim ||
+          (expectsCandidateDateClaim && priorClaims.candidate_date_supported_at_day_precision !== false) ||
+          priorClaims.physical_bus_lane_record_acquired !== true ||
+          hasCandidateSegmentClaim !== expectsCandidateSegmentClaim ||
+          (expectsCandidateSegmentClaim && priorClaims.candidate_segment_ids_pinned !== false) ||
+          priorClaims.date_and_phase_proved !== false ||
+          priorClaims.exact_route_treatment_binding_proved !== supported ||
+          priorClaims.exact_segment_binding_proved !== false ||
+          priorClaims.explicit_phase_identity_proved !== false ||
+          priorClaims.operational_occurrence_identity_proved !== false ||
+          !exactRouteEvidence || exactRouteEvidence.length !== (supported ? 1 : 0) ||
+          stableJson(priorClaims.exact_segment_ids as JsonValue) !== stableJson([]) ||
+          canonicalActions.operational_occurrence_added_or_updated !== false ||
+          !canonicalLinks || canonicalLinks.length !== 0 ||
+          hasCanonicalRecordsAdded !== expectsCanonicalRecordArrays ||
+          hasCanonicalRecordsUpdated !== expectsCanonicalRecordArrays ||
+          (expectsCanonicalRecordArrays && (!canonicalRecordsAdded || canonicalRecordsAdded.length !== 0)) ||
+          (expectsCanonicalRecordArrays && (!canonicalRecordsUpdated || canonicalRecordsUpdated.length !== 0)) ||
+          !exactCandidateQuery || receipt.authorizes_study !== false ||
+          receipt.authorizes_cross_product !== false) {
+        throw new Error(`${receiptPath}: Battery Place absence contract does not match the exact candidate`);
       }
     }
     if (receipt.supplemental_search !== undefined) {
