@@ -1590,11 +1590,18 @@ export function validateBindingReceiptDrafts(
             titleTokens.includes("UTICA") &&
             titleTokens.includes("FINAL") &&
             titleTokens.includes("REPORT");
+          const vanderbiltClermontSafetyMobilityTitle =
+            titleTokens.includes("VANDERBILT") &&
+            titleTokens.includes("AVENUE") &&
+            titleTokens.includes("CLERMONT") &&
+            titleTokens.includes("SAFETY") &&
+            titleTokens.includes("MOBILITY") &&
+            titleTokens.includes("IMPROVEMENTS");
           if (metadata.sourceId !== sourceId || (metadata.sourceUrl !== sourceUrl && metadata.finalUrl !== sourceUrl) ||
               metadataSha !== sourceContentSha256 || hash(readFileSync(sourceArtifactPath)) !== sourceContentSha256 ||
               (!proposalSourceTitle && !upperCorridorExistingConditionsTitle && !secondAvenueRedesignTitle &&
                 !west125SbsEnforcementTitle && !west178CorridorTitle && !churchAvenueTransitProjectTitle &&
-                !churchAvenueCorridorStudyTitle) ||
+                !churchAvenueCorridorStudyTitle && !vanderbiltClermontSafetyMobilityTitle) ||
               !supplementalUrls.includes(sourceUrl) ||
               !acquiredRetrievals.some((retrieval) => retrieval.url === sourceUrl &&
                 retrieval.sha256 === sourceContentSha256)) {
@@ -1716,9 +1723,41 @@ export function validateBindingReceiptDrafts(
                 traverseBlock.tokens.has("TRAVERSE") &&
                 traverseBlock.tokens.has("CHURCH") &&
                 Math.abs(routeBlock.position - traverseBlock.position) <= 1)));
+          const fultonFeatureMatches = packet.what_is_known.target_groups
+            .flatMap((group) => group.feature_matches);
+          const exactFultonStreetPacketTarget =
+            packet.what_is_known.target_groups.length === 1 &&
+            packet.what_is_known.target_groups[0]?.lane_group_id === "BK|FULTON STREET" &&
+            packet.what_is_known.target_groups[0]?.geometry_scope === "mixed_date_feature_union" &&
+            fultonFeatureMatches.length === 33 &&
+            new Set(fultonFeatureMatches.map((match) => match.feature_key)).size === 27 &&
+            new Set(fultonFeatureMatches.map((match) => match.feature_id)).size === 15 &&
+            fultonFeatureMatches.every((match) => match.matched_date === row.implementation_date) &&
+            stableJson([...new Set(fultonFeatureMatches.map((match) => match.direction))].sort()) ===
+              stableJson(["EB", "WB"]);
+          const exactFultonAdjacentProjectEndpointWindow = vanderbiltClermontSafetyMobilityTitle &&
+            exactFultonStreetPacketTarget &&
+            row.implementation_date === "2018-06-01" &&
+            [...citedPageWindows.values()].some((window) =>
+              window.route &&
+              window.tokens.has("VANDERBILT") &&
+              window.tokens.has("AVENUE") &&
+              window.tokens.has("B69") &&
+              window.tokens.has("BUS") &&
+              window.tokens.has("ROUTE") &&
+              Math.max(...window.positions) - Math.min(...window.positions) <= 14) &&
+            [...citedPageWindows.values()].some((window) =>
+              window.tokens.has("PROPOSAL") &&
+              window.tokens.has("OVERVIEW") &&
+              window.tokens.has("VANDERBILT") &&
+              window.tokens.has("CLERMONT") &&
+              window.tokens.has("FULTON") &&
+              window.tokens.has("FLUSHING") &&
+              Math.max(...window.positions) - Math.min(...window.positions) <= 14);
           if (!boundedServiceContext && !boundedExplicitSbsRouteContext &&
               !exactWest178CorridorServiceWindow && !exactChurchAvenueProjectWindow &&
-              !exactChurchAvenueHistoricalTraversalWindow) {
+              !exactChurchAvenueHistoricalTraversalWindow &&
+              !exactFultonAdjacentProjectEndpointWindow) {
             throw new Error(`${contextPath}: staged source-block evidence does not bind the exact route to bounded corridor-service context`);
           }
           const exactUpperCorridorReviewWindow = upperCorridorExistingConditionsTitle &&
@@ -1797,6 +1836,9 @@ export function validateBindingReceiptDrafts(
           const isHistoricalSameCorridorTraversalContext =
             finding.finding_kind === "positive_historical_same_corridor_traversal_nonterminal" &&
             finding.supported_scope === "historical_same_corridor_traversal_only";
+          const isAdjacentProjectIntersectionEndpointContext =
+            finding.finding_kind === "positive_adjacent_project_intersection_endpoint_nonterminal" &&
+            finding.supported_scope === "adjacent_project_intersection_endpoint_only";
           if (isOtherExtentContext && (!commonContextScopeValid || !proposalSourceTitle)) {
             throw new Error(`${contextPath}: positive context exceeds its nonauthorizing other-extent scope`);
           }
@@ -1820,8 +1862,21 @@ export function validateBindingReceiptDrafts(
                 !receiptUnresolved.includes("traversal") || candidateDateTraversalConfirmed)) {
             throw new Error(`${contextPath}: historical same-corridor context transferred to the candidate-date project`);
           }
+          if (isAdjacentProjectIntersectionEndpointContext &&
+              (!commonContextScopeValid || !exactFultonAdjacentProjectEndpointWindow ||
+                object(prior.source_findings, `${contextPath}.prior.source_findings`)
+                  .exact_project_route_statement_found !== false ||
+                !receiptUnresolved.includes("attribution") ||
+                !receiptUnresolved.includes("direction") ||
+                !receiptUnresolved.includes("feature_extent") ||
+                !receiptUnresolved.includes("phase") ||
+                !receiptUnresolved.includes("traversal") ||
+                candidateDateTraversalConfirmed)) {
+            throw new Error(`${contextPath}: adjacent-project endpoint context transferred to Fulton Street lane service or traversal`);
+          }
           if (!isOtherExtentContext && !isProjectCorridorServiceContext &&
-              !isHistoricalSameCorridorTraversalContext) {
+              !isHistoricalSameCorridorTraversalContext &&
+              !isAdjacentProjectIntersectionEndpointContext) {
             throw new Error(`${contextPath}: positive context has an unsupported typed scope`);
           }
           nonempty(finding.finding_summary, `${contextPath}.context_finding.finding_summary`);

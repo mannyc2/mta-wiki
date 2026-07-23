@@ -2143,4 +2143,349 @@ describe("bus-lane identity exact-date targeting", () => {
       rmSync(rootDir, { recursive: true, force: true });
     }
   });
+
+  it("keeps B69 Vanderbilt/Clermont endpoint context separate from Fulton Street lane service", () => {
+    const date = "2018-06-01";
+    const uniqueFeatures = [
+      ...Array.from({ length: 15 }, (_, index) => lane({
+        feature_id: `fulton-${index}`,
+        lane_group_id: "BK|FULTON STREET",
+        opened: "06/01/2018",
+        direction: "EB",
+      })),
+      ...Array.from({ length: 12 }, (_, index) => lane({
+        feature_id: `fulton-${index}`,
+        lane_group_id: "BK|FULTON STREET",
+        opened: index === 0 ? "10/05/2004, 06/01/2018" : "06/01/2018",
+        direction: "WB",
+      })),
+    ];
+    const laneFeatures = [...uniqueFeatures, ...uniqueFeatures.slice(0, 6)];
+    const entry = candidate("fulton-b69", "B69", date);
+    const baseRow = buildBusLaneIdentityLedger({
+      bridgeCandidates: [entry.bridge],
+      trackerCandidates: [entry.tracker],
+      routeAnchors: [anchor("B69")],
+      dossierRows: [dossier({
+        candidateId: entry.bridge.candidate_id,
+        routeId: "B69",
+        date,
+        laneGroupId: null,
+        pathSource: "unavailable",
+        pathIdentity: null,
+        reason: "historical_schedule_unavailable_pre_2023",
+      })],
+      dossierArtifact: "dossier.jsonl",
+      laneFeatures,
+      laneSnapshotId: "lanes",
+      laneSourceId: "lane_source",
+      gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+    })[0]!;
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-fulton-endpoint-"));
+    const receiptDir = join(rootDir, "receipts");
+    const acquiredChecksDir = join(rootDir,
+      "data/quality/relationship-integrity/bus-lane-acquisition/shards/fulton-fixture");
+    mkdirSync(receiptDir, { recursive: true });
+    mkdirSync(acquiredChecksDir, { recursive: true });
+    const adjacentUrl = "https://www.nyc.gov/vanderbilt-clermont-june2018.pdf";
+    const fultonUrl = "https://www.nyc.gov/fulton-street-june2017.pdf";
+    const adjacentBytes = Buffer.from("fixture Vanderbilt Clermont June 2018 PDF");
+    const adjacentHash = createHash("sha256").update(adjacentBytes).digest("hex");
+    const fultonHash = createHash("sha256").update("fixture Fulton Street B25 B26 PDF").digest("hex");
+    const sourceDir = join(rootDir, "raw", "sources", "vanderbilt-clermont-source");
+    mkdirSync(sourceDir, { recursive: true });
+    writeFileSync(join(sourceDir, "source.pdf"), adjacentBytes);
+    writeFileSync(join(sourceDir, "metadata.json"), JSON.stringify({
+      sourceId: "vanderbilt-clermont-source",
+      sourceUrl: adjacentUrl,
+      sha256: adjacentHash,
+      title: "Vanderbilt Avenue, Clermont Avenue Safety and Mobility Improvements",
+      publishedDate: "2018-06-21",
+    }));
+    const sourceBlocks = (routeText = "B69 Bus route") => [
+      { block_id: "p004_b0001", page_number: 4, raw_text: "VANDERBILT AVENUE" },
+      { block_id: "p004_b0002", page_number: 4, raw_text: routeText },
+      { block_id: "p005_b0001", page_number: 5, raw_text: "PROPOSAL OVERVIEW" },
+      { block_id: "p005_b0002", page_number: 5, raw_text: "Vanderbilt Ave" },
+      { block_id: "p005_b0003", page_number: 5, raw_text: "Fulton St to Flushing Ave" },
+      { block_id: "p005_b0004", page_number: 5, raw_text: "Clermont Ave" },
+      { block_id: "p005_b0005", page_number: 5, raw_text: "Flushing Ave to Fulton St" },
+    ].map((block) => ({
+      source_id: "vanderbilt-clermont-source",
+      ...block,
+      normalized_text: block.raw_text,
+      raw_text_sha256: `sha256:${createHash("sha256").update(block.raw_text).digest("hex")}`,
+    }));
+    const writeBlocks = (routeText = "B69 Bus route") => {
+      const blocks = sourceBlocks(routeText);
+      writeFileSync(join(sourceDir, "blocks.jsonl"), `${blocks.map((block) => JSON.stringify(block)).join("\n")}\n`);
+      return blocks;
+    };
+    let blocks = writeBlocks();
+    writeFileSync(join(acquiredChecksDir, "acquired-source-checks.json"), JSON.stringify({
+      sources: [
+        { url: adjacentUrl, content_sha256: adjacentHash, retrieval_status: "acquired" },
+        { url: fultonUrl, content_sha256: fultonHash, retrieval_status: "acquired" },
+      ],
+    }));
+    const prior = {
+      receipt_id: "prior-B69",
+      researched_on: "2026-07-15",
+      source_findings: { exact_project_route_statement_found: false },
+      acquisition_attempts: [{
+        category: "official_nyc_dot_lane_project",
+        query: "site:nyc.gov Fulton Street B69 bus lane",
+        query_status: "performed_2026-07-15",
+        urls_checked: [fultonUrl],
+        retrievals: [{ id: "fulton-project", retrieved_on: "2026-07-15", sha256: fultonHash, status: "acquired" }],
+      }],
+    };
+    const priorLine = stableJson(prior as unknown as JsonValue);
+    writeFileSync(join(rootDir, "prior-B69.jsonl"), `${priorLine}\n`);
+    const row = {
+      ...baseRow,
+      prior_acquisition_receipt: {
+        receipt_id: prior.receipt_id,
+        artifact: "prior-B69.jsonl",
+        row_sha256: createHash("sha256").update(priorLine).digest("hex"),
+        disposition: "completed_search_route_linkage_unresolved",
+        next_action: "Retain as nonterminal context only.",
+      },
+    };
+    const packet = buildBusLaneResearchPackets([row]).packets[0]!;
+    const targetFor = (candidatePacket: typeof packet) => {
+      const matches = candidatePacket.what_is_known.target_groups.flatMap((group) => group.feature_matches);
+      return {
+        lane_group_ids: candidatePacket.what_is_known.target_groups.map((group) => group.lane_group_id),
+        feature_ids: [...new Set(matches.map((match) => match.feature_id))].sort(),
+        geometry_scopes: [...new Set(candidatePacket.what_is_known.target_groups.map((group) => group.geometry_scope))].sort(),
+        matched_date: candidatePacket.implementation_date,
+        directions: [...new Set(matches.map((match) => match.direction))].sort(),
+        open_dates_literals: [...new Set(matches.map((match) => match.open_dates_literal))].sort(),
+        named_sbs_routes: [...new Set(matches.flatMap((match) => match.sbs_routes))].sort(),
+        feature_row_count: matches.length,
+        feature_keys: [...new Set(matches.map((match) => match.feature_key))].sort(),
+        feature_rows: matches.map((match) => ({
+          feature_key: match.feature_key,
+          feature_id: match.feature_id,
+          direction: match.direction,
+        })),
+      };
+    };
+    expect(targetFor(packet)).toMatchObject({
+      feature_row_count: 33,
+      matched_date: date,
+      directions: ["EB", "WB"],
+      geometry_scopes: ["mixed_date_feature_union"],
+      lane_group_ids: ["BK|FULTON STREET"],
+    });
+    expect(targetFor(packet).feature_keys).toHaveLength(27);
+    expect(targetFor(packet).feature_ids).toHaveLength(15);
+    expect(packet.unresolved_bindings).toEqual(["attribution", "direction", "feature_extent", "phase", "traversal"]);
+    const evidenceRefs = () => blocks.map((block) => ({
+      block_id: block.block_id,
+      page_number: block.page_number,
+      text_sha256: block.raw_text_sha256,
+    }));
+    const finding = () => ({
+      source_id: "vanderbilt-clermont-source",
+      source_url: adjacentUrl,
+      source_pdf_sha256: adjacentHash,
+      evidence_refs: evidenceRefs(),
+      context_finding: {
+        candidate_route_id: "B69",
+        finding_kind: "positive_adjacent_project_intersection_endpoint_nonterminal",
+        supported_scope: "adjacent_project_intersection_endpoint_only",
+        unsupported_bindings: packet.unresolved_bindings,
+        finding_summary: "B69 is named on Vanderbilt Avenue and the adjacent project ends at Fulton Street; no Fulton lane service transfers.",
+      },
+      remaining_unresolved_bindings: packet.unresolved_bindings,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    const supplementalSearch = () => ({
+      domains: ["www.nyc.gov"],
+      exact_queries: [
+        { category: "official_nyc_dot_lane_project", query: "site:nyc.gov Fulton Street B69 bus lane",
+          query_status: "performed_2026-07-23" },
+        { category: "official_public_board_committee", query: "site:nyc.gov Vanderbilt Clermont B69 Fulton Street",
+          query_status: "performed_2026-07-23" },
+      ],
+      finding_corrections: [],
+      operator: "fixture-reviewer",
+      positive_context_findings: [finding()],
+      retrievals: [
+        { category: "official_nyc_dot_lane_project", retrieved_on: "2026-07-23", sha256: fultonHash,
+          status: "acquired", url: fultonUrl },
+        { category: "official_public_board_committee", retrieved_on: "2026-07-23", sha256: adjacentHash,
+          status: "acquired", url: adjacentUrl },
+      ],
+      searched_at: "2026-07-23",
+      urls_inspected: [adjacentUrl, fultonUrl].sort(),
+    });
+    const receipt = {
+      schema_version: 1,
+      receipt_id: "binding-B69",
+      receipt_kind: "binding_absent_after_search",
+      candidate_id: row.candidate_id,
+      candidate_fingerprint: row.candidate_fingerprint,
+      gtfs_route_id: "B69",
+      implementation_date: date,
+      gap_ids: [row.ledger_id],
+      searched_at: "2026-07-15",
+      operator: "fixture-reviewer",
+      candidate_urls: [],
+      disposition: "binding_absent_after_search",
+      missing_binding: packet.missing_binding,
+      unresolved_bindings: packet.unresolved_bindings,
+      target: targetFor(packet),
+      prior_receipt: {
+        receipt_id: row.prior_acquisition_receipt.receipt_id,
+        artifact: row.prior_acquisition_receipt.artifact,
+        row_sha256: row.prior_acquisition_receipt.row_sha256,
+      },
+      search: {
+        exact_queries: [{ category: "official_nyc_dot_lane_project",
+          query: "site:nyc.gov Fulton Street B69 bus lane", query_status: "performed_2026-07-15" }],
+        domains: ["www.nyc.gov"],
+        urls_inspected: [fultonUrl],
+        retrievals: [{ category: "official_nyc_dot_lane_project", id: "fulton-project",
+          retrieved_on: "2026-07-15", sha256: fultonHash, status: "acquired" }],
+        disposition: "binding_absent_after_search",
+      },
+      supplemental_search: supplementalSearch(),
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    };
+    const validate = (draft: Record<string, unknown>, candidateRow = row, candidatePacket = packet) => {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(draft as unknown as JsonValue));
+      return () => validateBindingReceiptDrafts([candidateRow], [candidatePacket], receiptDir, rootDir);
+    };
+    try {
+      expect(validate(receipt)).not.toThrow();
+
+      blocks = writeBlocks("B25/B26 Bus routes");
+      expect(validate({ ...receipt, supplemental_search: supplementalSearch() }))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+      blocks = writeBlocks();
+
+      const wrongTargetPacket = {
+        ...packet,
+        what_is_known: {
+          ...packet.what_is_known,
+          target_groups: packet.what_is_known.target_groups.map((group) => ({
+            ...group,
+            facility: "Atlantic Avenue",
+            lane_group_id: "BK|ATLANTIC AVENUE",
+            street: "ATLANTIC AVENUE",
+          })),
+        },
+      };
+      expect(validate({ ...receipt, target: targetFor(wrongTargetPacket) }, row, wrongTargetPacket))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+
+      const crossDate = "2018-06-02";
+      const crossDateRow = { ...row, implementation_date: crossDate };
+      const crossDatePacket = {
+        ...packet,
+        implementation_date: crossDate,
+        what_is_known: {
+          ...packet.what_is_known,
+          target_groups: packet.what_is_known.target_groups.map((group) => ({
+            ...group,
+            feature_matches: group.feature_matches.map((match) => ({ ...match, matched_date: crossDate })),
+          })),
+        },
+      };
+      expect(validate({ ...receipt, implementation_date: crossDate, target: targetFor(crossDatePacket) },
+        crossDateRow, crossDatePacket))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+
+      const mismatchedFeatureDatePacket = {
+        ...packet,
+        what_is_known: {
+          ...packet.what_is_known,
+          target_groups: packet.what_is_known.target_groups.map((group) => ({
+            ...group,
+            feature_matches: group.feature_matches.map((match) => ({ ...match, matched_date: crossDate })),
+          })),
+        },
+      };
+      expect(validate(receipt, row, mismatchedFeatureDatePacket))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+
+      const dedupedPacket = {
+        ...packet,
+        what_is_known: {
+          ...packet.what_is_known,
+          target_groups: packet.what_is_known.target_groups.map((group) => ({
+            ...group,
+            feature_matches: [...new Map(group.feature_matches.map((match) => [match.feature_key, match])).values()],
+          })),
+        },
+      };
+      expect(targetFor(dedupedPacket).feature_row_count).toBe(27);
+      expect(validate({ ...receipt, target: targetFor(dedupedPacket) }, row, dedupedPacket))
+        .toThrow("does not bind the exact route to bounded corridor-service context");
+
+      expect(validate({
+        ...receipt,
+        supplemental_search: {
+          ...supplementalSearch(),
+          positive_context_findings: [{
+            ...finding(),
+            context_finding: {
+              ...finding().context_finding,
+              finding_kind: "positive_project_corridor_service_nonterminal",
+              supported_scope: "project_corridor_service_only",
+            },
+          }],
+        },
+      })).toThrow("positive context exceeds its nonauthorizing project-corridor scope");
+
+      expect(validate({
+        ...receipt,
+        supplemental_search: {
+          ...supplementalSearch(),
+          positive_context_findings: [{ ...finding(), evidence_refs: evidenceRefs().slice(0, 2) }],
+        },
+      })).toThrow("does not bind the exact route to bounded corridor-service context");
+
+      expect(validate({
+        ...receipt,
+        supplemental_search: {
+          ...supplementalSearch(),
+          positive_context_findings: [{
+            ...finding(),
+            context_finding: {
+              ...finding().context_finding,
+              unsupported_bindings: packet.unresolved_bindings.filter((binding) => binding !== "traversal"),
+            },
+          }],
+        },
+      })).toThrow("adjacent-project endpoint context transferred to Fulton Street lane service or traversal");
+
+      expect(validate({
+        ...receipt,
+        supplemental_search: {
+          ...supplementalSearch(),
+          positive_context_findings: [{ ...finding(), authorizes_study: true }],
+        },
+      })).toThrow("adjacent-project endpoint context transferred to Fulton Street lane service or traversal");
+
+      const traversalConfirmedRow = {
+        ...row,
+        dossier_refs: [{
+          ...row.dossier_refs[0]!,
+          candidate_target_match: true,
+          verdict_class: "traversal_confirmed" as const,
+          service_date: date,
+        }],
+      };
+      expect(validate(receipt, traversalConfirmedRow, packet))
+        .toThrow("adjacent-project endpoint context transferred to Fulton Street lane service or traversal");
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
+  });
 });

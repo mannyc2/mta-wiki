@@ -1,0 +1,37 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "fulton-street-2018-adjacent-project-context-supplement",
+  "sources": [
+    {
+      "byte_length": 5986543,
+      "category": "official_nyc_dot_lane_project",
+      "content_sha256": "25cb65f71b83069505003257eb8f11972b2094bec4e4e446fe945a36673cd75f",
+      "http_status": 200,
+      "id": "fulton_street_bus_pedestrian_cb2_jun2017",
+      "media_type": "application/pdf",
+      "note": "Official NYC DOT Fulton Street bus and pedestrian project source. It identifies B25/B26 with Fulton Street bus-lane proposals, but it does not name B69 and therefore cannot transfer Fulton lane service or traversal to the candidate route.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "nyc_dot_fulton_street_bus_pedestrian_cb2_jun2017",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/fulton-street-cb2-jun2017.pdf"
+    },
+    {
+      "byte_length": 1500107,
+      "category": "official_public_board_committee",
+      "content_sha256": "e94dd4e6ffcc1cceb71e1ef289dee7932c8e02685f2ffb890fc2753fde7cf9a2",
+      "http_status": 200,
+      "id": "vanderbilt_clermont_safety_mobility_cb2_jun2018",
+      "media_type": "application/pdf",
+      "note": "Official NYC DOT adjacent-project presentation used only for nonterminal B69 intersection-endpoint context. It names the B69 on Vanderbilt Avenue and gives Fulton Street as the endpoint of the Vanderbilt/Clermont proposal; it does not state that B69 served or traversed the Fulton Street bus lanes, the exact 33 feature-row occurrences, their directions, phase, extent, or June 1 onset.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "nyc_dot_vanderbilt_clermont_safety_mobility_cb2_jun2018",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/vanderbilt-clermont-ave-june2018.pdf"
+    }
+  ]
+}

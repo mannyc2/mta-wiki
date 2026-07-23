@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:4590de96402546b98cc3736f",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:a622c8a0d5e0c3657c6ea29c",
+  "candidate_id": "study-event-v2:593b7e0a28ed6d74e442d44d",
+  "candidate_fingerprint": "4dc5a4183ed367127aca6dde6f611059b049f021c760a7370f3c6a7fa5dbad94",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "direction",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental official NYC DOT review found B69 only in the adjacent Vanderbilt/Clermont safety and mobility project, whose proposed Vanderbilt and Clermont extents terminate at or intersect Fulton Street. The official Fulton Street bus-lane project source names B25/B26, not B69. The endpoint context does not bind B69 to Fulton Street lane service, traversal, either direction, the exact 33 feature-row occurrences, their June 1 onset, feature extent, or phase; all five bindings remain unresolved and no occurrence, study, or cross-product projection is authorized.",
+  "receipt_ids": [
+    "bus-lane-binding-search:4590de96402546b98cc3736f"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T07:44:01Z"
+}
