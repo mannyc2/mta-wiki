@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:b20b8e02eb15c061f83a6882",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:a8569fca4882c94f558decf5",
+  "candidate_id": "study-event-v2:8f8899b29347e265e2308b45",
+  "candidate_fingerprint": "f9575ec3e69792e8ef8a67d3e8d358d42333fa0c8ab7c8a6ff4678e7741823d3",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches, together with inspection of the official Second Avenue redesign sources, found no statement binding M21 to the 14 exact southbound feature rows, their 2024-11-25 onset, implementation phase, route traversal, or exact feature extent. Search results that place M21 near Second Avenue concern unrelated neighborhood or service context, not the bus-lane project; the project sources identify M15 local/SBS service. Neither distinction is treated as proof of non-traversal or exclusive use. This receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:b20b8e02eb15c061f83a6882"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T05:30:35Z"
+}

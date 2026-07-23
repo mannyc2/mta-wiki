@@ -1,0 +1,301 @@
+{
+  "authorizes_cross_product": false,
+  "authorizes_study": false,
+  "candidate_fingerprint": "f9575ec3e69792e8ef8a67d3e8d358d42333fa0c8ab7c8a6ff4678e7741823d3",
+  "candidate_id": "study-event-v2:8f8899b29347e265e2308b45",
+  "candidate_urls": [],
+  "disposition": "binding_absent_after_search",
+  "gap_ids": [
+    "bus-lane-identity:a8569fca4882c94f558decf5"
+  ],
+  "gtfs_route_id": "M21",
+  "implementation_date": "2024-11-25",
+  "missing_binding": "feature_extent",
+  "operator": "plan039-corridor-adjudicator",
+  "prior_receipt": {
+    "artifact": "data/quality/relationship-integrity/bus-lane-acquisition/shards/manhattan/receipts.jsonl",
+    "receipt_id": "manhattan-acquisition:5aa12c18647cf26aad1af4e5",
+    "row_sha256": "ac0c911699e39641e37f49c009737a920a126cf089dffa2c8c72646c3c4e1e4b"
+  },
+  "rationale": "Candidate-exact supplemental NYC DOT project and public-board searches, together with inspection of the official Second Avenue redesign sources, found no statement binding M21 to the 14 exact southbound feature rows, their 2024-11-25 onset, implementation phase, route traversal, or exact feature extent. Search results that place M21 near Second Avenue concern unrelated neighborhood or service context, not the bus-lane project; the project sources identify M15 local/SBS service. Neither distinction is treated as proof of non-traversal or exclusive use. This receipt remains non-authorizing.",
+  "receipt_id": "bus-lane-binding-search:b20b8e02eb15c061f83a6882",
+  "receipt_kind": "binding_absent_after_search",
+  "schema_version": 1,
+  "search": {
+    "disposition": "binding_absent_after_search",
+    "domains": [
+      "bustime-classic.mta.info",
+      "data.cityofnewyork.us",
+      "www.mta.info",
+      "www.nyc.gov"
+    ],
+    "exact_queries": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "query": "site:nyc.gov/html/dot 2nd Avenue Manhattan bus lane M15 SBS 2024 2025 official",
+        "query_status": "performed_2026-07-15"
+      },
+      {
+        "category": "official_mta_route_project",
+        "query": "site:mta.info \"M21\" \"2nd Avenue\" bus route project",
+        "query_status": "performed_by_official_route_fetch_and_service_guide_search_2026-07-15"
+      },
+      {
+        "category": "official_public_board_committee",
+        "query": "site:nyc.gov/html/dot 2nd Avenue Manhattan bus lane M15 SBS 2024 2025 official community board committee",
+        "query_status": "performed_2026-07-15"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "query": "NYC DOT Open Data ycrg-ses3 facility=2nd Avenue open_dates contains 2024-11-25",
+        "query_status": "executed_against_acquired_snapshot_2026-07-15"
+      }
+    ],
+    "retrievals": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "id": "dot_bus_lanes_snapshot",
+        "retrieved_on": "2026-07-15",
+        "sha256": "1b3a990a75abc472d5f68d683aeb7d1deafa2eca4a239e4914b12db6a9927a5a",
+        "status": "acquired"
+      },
+      {
+        "category": "official_nyc_dot_lane_project",
+        "id": "second_avenue_press",
+        "retrieved_on": "2026-07-15",
+        "sha256": "6ccb367f01cbf4beb87cdc4041e9eb1a4ff148dac1c2721ae34d4dff6700c5f6",
+        "status": "acquired"
+      },
+      {
+        "category": "official_mta_route_project",
+        "id": "mta_bustime_M21",
+        "retrieved_on": "2026-07-15",
+        "sha256": "72ed23eed003f7f55dd5f40332f7a000749654ef7cae2826a56826723321c5df",
+        "status": "acquired"
+      },
+      {
+        "category": "official_mta_route_project",
+        "id": "mta_manhattan_bus_service",
+        "retrieved_on": "2026-07-15",
+        "sha256": null,
+        "status": "not_retrieved"
+      },
+      {
+        "category": "official_public_board_committee",
+        "id": "second_avenue_cb6",
+        "retrieved_on": "2026-07-15",
+        "sha256": "7ed831d0217c04521e9b10f5b0f298f1d1e7c7d9a4712a9fc15da0bcb1fc7c80",
+        "status": "acquired"
+      },
+      {
+        "category": "official_public_board_committee",
+        "id": "dot_projects_2024",
+        "retrieved_on": "2026-07-15",
+        "sha256": "d129ab0da891b0cc45a35071df46b18b42afb4681f9fa8af0a1721f70413b5b2",
+        "status": "acquired"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "id": "dot_bus_lanes_metadata",
+        "retrieved_on": "2026-07-15",
+        "sha256": "fa943cd885628155d489ffb991e464ce8d914736b9c29ab97dd2094ecd877340",
+        "status": "acquired"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "id": "dot_datafeeds",
+        "retrieved_on": "2026-07-15",
+        "sha256": "8c2116df71bd500be0f346f96f5bd3947f725c0374ebe49a2a1f7e75280f5bbd",
+        "status": "acquired"
+      }
+    ],
+    "urls_inspected": [
+      "https://bustime-classic.mta.info/m/?q=M21",
+      "https://data.cityofnewyork.us/api/views/ycrg-ses3",
+      "https://data.cityofnewyork.us/resource/ycrg-ses3.json?$limit=5000",
+      "https://www.mta.info/document/8331",
+      "https://www.nyc.gov/html/dot/downloads/pdf/2nd-ave-e59-st-houston-st-mar2024.pdf",
+      "https://www.nyc.gov/html/dot/html/about/datafeeds.shtml",
+      "https://www.nyc.gov/html/dot/html/about/projects-2024.shtml",
+      "https://www.nyc.gov/html/dot/html/pr2024/redesign-manhattan-second-ave.shtml"
+    ]
+  },
+  "searched_at": "2026-07-15",
+  "supplemental_search": {
+    "domains": [
+      "www.nyc.gov"
+    ],
+    "exact_queries": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "query": "site:nyc.gov \"2nd Avenue\" \"M21\" bus lane 2024 NYC DOT project",
+        "query_status": "performed_2026-07-23_reviewed_results"
+      },
+      {
+        "category": "official_public_board_committee",
+        "query": "site:nyc.gov \"2nd Avenue\" \"M21\" bus lane 2024 community board committee",
+        "query_status": "performed_2026-07-23_reviewed_results"
+      }
+    ],
+    "finding_corrections": [],
+    "operator": "codex_web.search_query",
+    "retrievals": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "retrieved_on": "2026-07-15",
+        "sha256": "6ccb367f01cbf4beb87cdc4041e9eb1a4ff148dac1c2721ae34d4dff6700c5f6",
+        "status": "acquired",
+        "url": "https://www.nyc.gov/html/dot/html/pr2024/redesign-manhattan-second-ave.shtml"
+      },
+      {
+        "category": "official_public_board_committee",
+        "retrieved_on": "2026-07-15",
+        "sha256": "7ed831d0217c04521e9b10f5b0f298f1d1e7c7d9a4712a9fc15da0bcb1fc7c80",
+        "status": "acquired",
+        "url": "https://www.nyc.gov/html/dot/downloads/pdf/2nd-ave-e59-st-houston-st-mar2024.pdf"
+      },
+      {
+        "category": "official_public_board_committee",
+        "retrieved_on": "2026-07-15",
+        "sha256": "d129ab0da891b0cc45a35071df46b18b42afb4681f9fa8af0a1721f70413b5b2",
+        "status": "acquired",
+        "url": "https://www.nyc.gov/html/dot/html/about/projects-2024.shtml"
+      }
+    ],
+    "searched_at": "2026-07-23T05:55:00Z",
+    "urls_inspected": [
+      "https://www.nyc.gov/html/dot/downloads/pdf/2nd-ave-e59-st-houston-st-mar2024.pdf",
+      "https://www.nyc.gov/html/dot/html/about/projects-2024.shtml",
+      "https://www.nyc.gov/html/dot/html/pr2024/redesign-manhattan-second-ave.shtml"
+    ]
+  },
+  "target": {
+    "directions": [
+      "SB"
+    ],
+    "feature_ids": [
+      "0032893",
+      "0032896",
+      "0032906",
+      "0032907",
+      "0032909",
+      "0032911",
+      "0032913",
+      "0033113",
+      "0033115",
+      "0033118",
+      "0110579",
+      "0115221",
+      "0115222",
+      "0115223"
+    ],
+    "feature_keys": [
+      "dot-lane-feature:046b6f336ee91e084a270832",
+      "dot-lane-feature:0d92608959de8b434fe65871",
+      "dot-lane-feature:21e07b10df2fd604e5db2e16",
+      "dot-lane-feature:4168a6ae23cb8886d0e2d294",
+      "dot-lane-feature:44bafc088ff50a0debf00993",
+      "dot-lane-feature:4be77fe7f62ac9971327ccc5",
+      "dot-lane-feature:509d4144cdbeac76525b0204",
+      "dot-lane-feature:510335bab049a18946f0e2df",
+      "dot-lane-feature:536518407eaf6e5db8bb82cf",
+      "dot-lane-feature:6c31d7a9677ce7a822b67e16",
+      "dot-lane-feature:70b4ab759c1922eeeb0748f7",
+      "dot-lane-feature:c30cd130058bb0a928656394",
+      "dot-lane-feature:d5bc2367c68044f725d5e1fc",
+      "dot-lane-feature:ecc0c98ad342b75e1885c6f7"
+    ],
+    "feature_row_count": 14,
+    "feature_rows": [
+      {
+        "direction": "SB",
+        "feature_id": "0115222",
+        "feature_key": "dot-lane-feature:046b6f336ee91e084a270832"
+      },
+      {
+        "direction": "SB",
+        "feature_id": "0032911",
+        "feature_key": "dot-lane-feature:0d92608959de8b434fe65871"
+      },
+      {
+        "direction": "SB",
+        "feature_id": "0032896",
+        "feature_key": "dot-lane-feature:21e07b10df2fd604e5db2e16"
+      },
+      {
+        "direction": "SB",
+        "feature_id": "0032907",
+        "feature_key": "dot-lane-feature:4168a6ae23cb8886d0e2d294"
+      },
+      {
+        "direction": "SB",
+        "feature_id": "0033118",
+        "feature_key": "dot-lane-feature:44bafc088ff50a0debf00993"
+      },
+      {
+        "direction": "SB",
+        "feature_id": "0032906",
+        "feature_key": "dot-lane-feature:4be77fe7f62ac9971327ccc5"
+      },
+      {
+        "direction": "SB",
+        "feature_id": "0032909",
+        "feature_key": "dot-lane-feature:509d4144cdbeac76525b0204"
+      },
+      {
+        "direction": "SB",
+        "feature_id": "0110579",
+        "feature_key": "dot-lane-feature:510335bab049a18946f0e2df"
+      },
+      {
+        "direction": "SB",
+        "feature_id": "0115223",
+        "feature_key": "dot-lane-feature:536518407eaf6e5db8bb82cf"
+      },
+      {
+        "direction": "SB",
+        "feature_id": "0033113",
+        "feature_key": "dot-lane-feature:6c31d7a9677ce7a822b67e16"
+      },
+      {
+        "direction": "SB",
+        "feature_id": "0115221",
+        "feature_key": "dot-lane-feature:70b4ab759c1922eeeb0748f7"
+      },
+      {
+        "direction": "SB",
+        "feature_id": "0032913",
+        "feature_key": "dot-lane-feature:c30cd130058bb0a928656394"
+      },
+      {
+        "direction": "SB",
+        "feature_id": "0032893",
+        "feature_key": "dot-lane-feature:d5bc2367c68044f725d5e1fc"
+      },
+      {
+        "direction": "SB",
+        "feature_id": "0033115",
+        "feature_key": "dot-lane-feature:ecc0c98ad342b75e1885c6f7"
+      }
+    ],
+    "geometry_scopes": [
+      "mixed_date_feature_union"
+    ],
+    "lane_group_ids": [
+      "MAN|2 AVENUE"
+    ],
+    "matched_date": "2024-11-25",
+    "named_sbs_routes": [
+      "M15"
+    ],
+    "open_dates_literals": [
+      "7/28/82,10/10/10, 11/25/24"
+    ]
+  },
+  "unresolved_bindings": [
+    "attribution",
+    "feature_extent",
+    "phase",
+    "traversal"
+  ]
+}
