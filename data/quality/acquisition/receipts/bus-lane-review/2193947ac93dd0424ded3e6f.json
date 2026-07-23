@@ -1,0 +1,196 @@
+{
+  "authorizes_cross_product": false,
+  "authorizes_study": false,
+  "candidate_fingerprint": "e3d3c4519d3f5dad51b4635ee4519428b99be9afbe929b60f9c036213b0f307b",
+  "candidate_id": "study-event-v2:e369e8baf57e9d09861c8734",
+  "candidate_urls": [],
+  "disposition": "binding_absent_after_search",
+  "gap_ids": [
+    "bus-lane-identity:2ff38a92746a8f6fb023ea6d"
+  ],
+  "gtfs_route_id": "B47",
+  "implementation_date": "2018-07-15",
+  "missing_binding": "traversal",
+  "operator": "plan039-corridor-adjudicator",
+  "prior_receipt": {
+    "artifact": "data/quality/relationship-integrity/bus-lane-acquisition/shards/brooklyn-null/receipts.jsonl",
+    "receipt_id": "brooklyn-null-acquisition:e2be611509e524b913ec33a0",
+    "row_sha256": "e9e58e413e02d7ec45fd427d899434ad7434e665e478400bcca6b639a41fb63d"
+  },
+  "rationale": "Candidate-exact supplemental official NYC DOT and public-board searches found the 2018 B82 Flatlands Avenue bus-priority project but no project statement naming B47. The current MTA route page places a B47 stop at Ralph Avenue and Flatlands Avenue, not on the three exact eastbound Flatlands Avenue feature rows. No authoritative source binds B47 to those rows, their 2018-07-15 onset, or direction-specific traversal. Intersection proximity and current route geography remain nonterminal and are not promoted. The receipt remains non-authorizing.",
+  "receipt_id": "bus-lane-binding-search:2193947ac93dd0424ded3e6f",
+  "receipt_kind": "binding_absent_after_search",
+  "schema_version": 1,
+  "search": {
+    "exact_queries": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "query": "site:nyc.gov/html/dot Flatlands Avenue bus lane B47 B82 official Brooklyn",
+        "query_status": "performed_2026-07-15"
+      },
+      {
+        "category": "official_mta_route_project",
+        "query": "site:mta.info \"B47\" \"Flatlands Avenue\" bus route project",
+        "query_status": "performed_by_official_route_fetch_and_project_document_search_2026-07-15"
+      },
+      {
+        "category": "official_public_board_committee",
+        "query": "site:nyc.gov/html/dot Flatlands Avenue bus lane B47 B82 official Brooklyn community board committee MTA Board",
+        "query_status": "performed_2026-07-15"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "query": "NYC DOT Open Data ycrg-ses3 facility=Flatlands Avenue open_dates contains 2018-07-15",
+        "query_status": "executed_against_acquired_snapshot_2026-07-15"
+      }
+    ],
+    "domains": [
+      "bustime-classic.mta.info",
+      "data.cityofnewyork.us",
+      "www.mta.info",
+      "www.nyc.gov"
+    ],
+    "urls_inspected": [
+      "https://bustime-classic.mta.info/m/?q=B47",
+      "https://data.cityofnewyork.us/api/views/ycrg-ses3",
+      "https://data.cityofnewyork.us/resource/ycrg-ses3.json?$limit=5000",
+      "https://www.mta.info/document/12041",
+      "https://www.nyc.gov/html/brt/downloads/pdf/brt-south-brooklyn-b82-mar2018.pdf",
+      "https://www.nyc.gov/html/dot/html/about/datafeeds.shtml"
+    ],
+    "retrievals": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "id": "dot_bus_lanes_snapshot",
+        "retrieved_on": "2026-07-15",
+        "sha256": "1b3a990a75abc472d5f68d683aeb7d1deafa2eca4a239e4914b12db6a9927a5a",
+        "status": "acquired"
+      },
+      {
+        "category": "official_mta_route_project",
+        "id": "mta_bustime_B47",
+        "retrieved_on": "2026-07-15",
+        "sha256": "b9f1bbb2fb7bcc9c87466a4406d19ec34a00523918f3ca6634639d2c76ee7ac4",
+        "status": "acquired"
+      },
+      {
+        "category": "official_mta_route_project",
+        "id": "mta_brooklyn_bus_map",
+        "retrieved_on": "2026-07-15",
+        "sha256": null,
+        "status": "not_retrieved"
+      },
+      {
+        "category": "official_public_board_committee",
+        "id": "b82_kings_highway_cb15_2018",
+        "retrieved_on": "2026-07-15",
+        "sha256": "fdcf18d432221c0cb7474496189fd0914fc04090032d9e3616d40a469e004d1b",
+        "status": "acquired"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "id": "dot_bus_lanes_metadata",
+        "retrieved_on": "2026-07-15",
+        "sha256": "fa943cd885628155d489ffb991e464ce8d914736b9c29ab97dd2094ecd877340",
+        "status": "acquired"
+      },
+      {
+        "category": "other_repository_approved_primary",
+        "id": "dot_datafeeds",
+        "retrieved_on": "2026-07-15",
+        "sha256": "f3f7c9e4919139a8765518bf7dbd4c05c1644395f77cfa1e4bad5287beb8c81a",
+        "status": "acquired"
+      }
+    ],
+    "disposition": "binding_absent_after_search"
+  },
+  "searched_at": "2026-07-15",
+  "supplemental_search": {
+    "domains": [
+      "www.nyc.gov"
+    ],
+    "exact_queries": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "query": "site:nyc.gov Flatlands Avenue B47 bus lane 2018 NYC DOT",
+        "query_status": "performed_2026-07-23_reviewed_results"
+      },
+      {
+        "category": "official_public_board_committee",
+        "query": "site:nyc.gov Flatlands Avenue B47 community board transportation bus lane",
+        "query_status": "performed_2026-07-23_reviewed_results"
+      }
+    ],
+    "finding_corrections": [],
+    "operator": "codex_web.search_query",
+    "retrievals": [
+      {
+        "category": "official_nyc_dot_lane_project",
+        "retrieved_on": "2026-07-23",
+        "sha256": "306b97ce9b0a92f4b2336c530dd1c27ab05f57ce1851918bbe5b393f04cc1e73",
+        "status": "acquired",
+        "url": "https://www.nyc.gov/html/dot/html/about/projects-2018.shtml"
+      },
+      {
+        "category": "official_public_board_committee",
+        "retrieved_on": "2026-07-23",
+        "sha256": "fdcf18d432221c0cb7474496189fd0914fc04090032d9e3616d40a469e004d1b",
+        "status": "acquired",
+        "url": "https://www.nyc.gov/html/brt/downloads/pdf/brt-south-brooklyn-b82-mar2018.pdf"
+      }
+    ],
+    "searched_at": "2026-07-23T06:45:00Z",
+    "urls_inspected": [
+      "https://www.nyc.gov/html/brt/downloads/pdf/brt-south-brooklyn-b82-mar2018.pdf",
+      "https://www.nyc.gov/html/dot/html/about/projects-2018.shtml"
+    ]
+  },
+  "target": {
+    "directions": [
+      "EB"
+    ],
+    "feature_ids": [
+      "0041370",
+      "0041387",
+      "0041389"
+    ],
+    "feature_keys": [
+      "dot-lane-feature:972976baed07660217dc0c61",
+      "dot-lane-feature:b6ffa4f8b8ac5c8e409a39cf",
+      "dot-lane-feature:c28ba568f203c6de5044bc59"
+    ],
+    "feature_row_count": 3,
+    "feature_rows": [
+      {
+        "direction": "EB",
+        "feature_id": "0041389",
+        "feature_key": "dot-lane-feature:972976baed07660217dc0c61"
+      },
+      {
+        "direction": "EB",
+        "feature_id": "0041387",
+        "feature_key": "dot-lane-feature:b6ffa4f8b8ac5c8e409a39cf"
+      },
+      {
+        "direction": "EB",
+        "feature_id": "0041370",
+        "feature_key": "dot-lane-feature:c28ba568f203c6de5044bc59"
+      }
+    ],
+    "geometry_scopes": [
+      "coextensive_with_lane_group"
+    ],
+    "lane_group_ids": [
+      "BK|FLATLANDS AVENUE"
+    ],
+    "matched_date": "2018-07-15",
+    "named_sbs_routes": [],
+    "open_dates_literals": [
+      "07/15/2018"
+    ]
+  },
+  "unresolved_bindings": [
+    "attribution",
+    "traversal"
+  ]
+}

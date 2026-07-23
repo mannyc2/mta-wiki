@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "decision_id": "bus-lane-identity-decision:2193947ac93dd0424ded3e6f",
+  "contract_id": "bus-lane-identity-v1",
+  "ledger_id": "bus-lane-identity:2ff38a92746a8f6fb023ea6d",
+  "candidate_id": "study-event-v2:e369e8baf57e9d09861c8734",
+  "candidate_fingerprint": "e3d3c4519d3f5dad51b4635ee4519428b99be9afbe929b60f9c036213b0f307b",
+  "verdict": "binding_absent_after_search",
+  "occurrence_id": null,
+  "unresolved_bindings": [
+    "attribution",
+    "traversal"
+  ],
+  "rationale": "Candidate-exact supplemental official NYC DOT and public-board searches found the 2018 B82 Flatlands Avenue bus-priority project but no project statement naming B47. The current MTA route page places a B47 stop at Ralph Avenue and Flatlands Avenue, not on the three exact eastbound Flatlands Avenue feature rows. No authoritative source binds B47 to those rows, their 2018-07-15 onset, or direction-specific traversal. Intersection proximity and current route geography remain nonterminal and are not promoted. The receipt remains non-authorizing.",
+  "receipt_ids": [
+    "bus-lane-binding-search:2193947ac93dd0424ded3e6f"
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "reviewed_by": "codex-owner-delegate",
+  "reviewed_at": "2026-07-23T06:49:13Z"
+}
