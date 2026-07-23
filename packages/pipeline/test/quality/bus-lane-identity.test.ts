@@ -1,4 +1,8 @@
 import { describe, expect, it } from "bun:test";
+import { createHash } from "node:crypto";
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
 import {
@@ -7,7 +11,9 @@ import {
   candidateLaneTargets,
   normalizeOpenDateToken,
   parseBusLaneIdentityDecision,
+  validateBindingReceiptDrafts,
   validateOccurrenceCreatedRows,
+  validateReviewedReceiptRefs,
   type BusLaneIdentityDecision,
 } from "../../src/quality/bus-lane-identity";
 import type { BusLaneFeature } from "../../src/reference/bus-lanes";
@@ -160,6 +166,7 @@ describe("bus-lane identity exact-date targeting", () => {
       verdict: "refuted_wrong_route_attribution",
       occurrence_id: null,
       receipt_ids: ["receipt-q3"],
+      unresolved_bindings: [],
       reviewed_at: "2026-07-23",
       reviewed_by: "fixture-reviewer",
       rationale: "Exact official evidence binds a different service identity.",
@@ -217,6 +224,35 @@ describe("bus-lane identity exact-date targeting", () => {
       kind: "atomic",
       member: { treatment_family: "bus_lane", evidence_bindings: [] },
     } }], [occurrenceDecision])).toThrow("lacks an evidence-bound bus_lane treatment member");
+  });
+
+  it("projects mixed chronologies as feature-extent and phase binding gaps", () => {
+    const entry = candidate("mixed-chronology", "Q1", "2024-12-05");
+    const rows = buildBusLaneIdentityLedger({
+      bridgeCandidates: [entry.bridge],
+      trackerCandidates: [entry.tracker],
+      routeAnchors: [anchor("Q1")],
+      dossierRows: [dossier({
+        candidateId: entry.bridge.candidate_id,
+        routeId: "Q1",
+        date: "2024-12-05",
+        laneGroupId: "MAN|2 AVENUE",
+      })],
+      dossierArtifact: "dossier.jsonl",
+      laneFeatures: [lane({
+        feature_id: "mixed-target",
+        lane_group_id: "MAN|2 AVENUE",
+        opened: "7/28/82,10/10/10, 12/05/24",
+        direction: "N",
+        attributes: { open_dates: "7/28/82,10/10/10, 12/05/24", sbs_route1: "M15" },
+      })],
+      laneSnapshotId: "lanes",
+      laneSourceId: "lane_source",
+      gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+    });
+    const packet = buildBusLaneResearchPackets(rows).packets[0]!;
+    expect(packet.missing_binding).toBe("feature_extent");
+    expect(packet.unresolved_bindings).toEqual(["attribution", "feature_extent", "phase", "traversal"]);
   });
 
   it("never uses a current shape for a historical positive or negative and rejects low-coverage negatives", () => {
@@ -278,6 +314,8 @@ describe("bus-lane identity exact-date targeting", () => {
     expect(packets.corridorKeyCount).toBe(2);
     expect(packets.batches.every((batch) => batch.batch_kind === "multi_corridor")).toBe(true);
     expect(packets.packets.every((packet) => packet.batch_ids.length === 1)).toBe(true);
+    expect(packets.packets.every((packet) => packet.missing_binding === "traversal")).toBe(true);
+    expect(packets.packets.every((packet) => packet.unresolved_bindings.includes("traversal"))).toBe(true);
     expect(new Set(packets.batches.flatMap((batch) => batch.packet_ids)).size).toBe(27);
   });
 
@@ -285,8 +323,167 @@ describe("bus-lane identity exact-date targeting", () => {
     expect(() => parseBusLaneIdentityDecision({
       schema_version: 1, contract_id: "bus-lane-identity-v1", decision_id: "bad", ledger_id: "row",
       candidate_id: "candidate", candidate_fingerprint: "f".repeat(64), verdict: "onset_absent_after_search",
-      occurrence_id: null, receipt_ids: [], reviewed_at: "2026-07-23", reviewed_by: "reviewer",
+      occurrence_id: null, receipt_ids: [], unresolved_bindings: ["onset"],
+      reviewed_at: "2026-07-23", reviewed_by: "reviewer",
       rationale: "No source found.", authorizes_study: false, authorizes_cross_product: false,
     })).toThrow("requires at least one receipt");
+  });
+
+  it("requires receipt-bound unresolved bindings and preserves the packet primary binding", () => {
+    const entry = candidate("binding-absent", "Q1", "2025-05-01");
+    const input = {
+      bridgeCandidates: [entry.bridge],
+      trackerCandidates: [entry.tracker],
+      routeAnchors: [anchor("Q1")],
+      dossierRows: [dossier({ candidateId: entry.bridge.candidate_id, routeId: "Q1", date: "2025-05-01" })],
+      dossierArtifact: "dossier.jsonl",
+      laneFeatures: [lane({ feature_id: "target", lane_group_id: "QNS|TEST STREET", opened: "5/1/25" })],
+      laneSnapshotId: "lanes",
+      laneSourceId: "lane_source",
+      gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+    };
+    const base = buildBusLaneIdentityLedger(input)[0]!;
+    const decision = parseBusLaneIdentityDecision({
+      schema_version: 1,
+      contract_id: "bus-lane-identity-v1",
+      decision_id: "binding-review",
+      ledger_id: base.ledger_id,
+      candidate_id: base.candidate_id,
+      candidate_fingerprint: base.candidate_fingerprint,
+      verdict: "binding_absent_after_search",
+      occurrence_id: null,
+      receipt_ids: ["binding-receipt"],
+      unresolved_bindings: ["phase", "traversal"],
+      reviewed_at: "2026-07-23",
+      reviewed_by: "reviewer",
+      rationale: "Exhaustive official-source search left the path and phase unresolved.",
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    const reviewed = buildBusLaneIdentityLedger({ ...input, decisions: [decision] })[0]!;
+    const receiptDir = mkdtempSync(join(tmpdir(), "bus-lane-binding-receipt-"));
+    try {
+      writeFileSync(join(receiptDir, "receipt.json"), JSON.stringify({
+        receipt_id: "binding-receipt",
+        candidate_id: reviewed.candidate_id,
+        candidate_fingerprint: reviewed.candidate_fingerprint,
+        implementation_date: reviewed.implementation_date,
+        missing_binding: "traversal",
+        unresolved_bindings: ["phase", "traversal"],
+        search: { urls_inspected: ["https://www.nyc.gov/example"] },
+      }));
+      expect(() => validateReviewedReceiptRefs([reviewed], receiptDir)).not.toThrow();
+      expect(() => validateReviewedReceiptRefs([{ ...reviewed,
+        verdict: "refuted_wrong_route_attribution", unresolved_bindings: [],
+      }], receiptDir)).toThrow("lacks exclusive exact-date route evidence");
+      const missingPrimary = { ...reviewed, unresolved_bindings: ["phase"] as const };
+      writeFileSync(join(receiptDir, "receipt.json"), JSON.stringify({
+        receipt_id: "binding-receipt",
+        candidate_id: reviewed.candidate_id,
+        candidate_fingerprint: reviewed.candidate_fingerprint,
+        implementation_date: reviewed.implementation_date,
+        missing_binding: "phase",
+        unresolved_bindings: ["phase"],
+        search: { urls_inspected: ["https://www.nyc.gov/example"] },
+      }));
+      expect(() => validateReviewedReceiptRefs([missingPrimary], receiptDir))
+        .toThrow("packet primary missing_binding is not preserved");
+    } finally {
+      rmSync(receiptDir, { recursive: true, force: true });
+    }
+    expect(() => parseBusLaneIdentityDecision({ ...decision, decision_id: "bad-binding", unresolved_bindings: ["onset"] }))
+      .toThrow("at least one non-onset unresolved binding");
+    expect(() => parseBusLaneIdentityDecision({ ...decision, decision_id: "bad-onset",
+      verdict: "onset_absent_after_search", unresolved_bindings: ["onset", "traversal"] }))
+      .toThrow("requires exactly unresolved_bindings");
+  });
+
+  it("rejects a normalized binding receipt whose self-contained target was tampered", () => {
+    const entry = candidate("receipt-target", "Q1", "2025-05-01");
+    const base = buildBusLaneIdentityLedger({
+      bridgeCandidates: [entry.bridge],
+      trackerCandidates: [entry.tracker],
+      routeAnchors: [anchor("Q1")],
+      dossierRows: [dossier({ candidateId: entry.bridge.candidate_id, routeId: "Q1", date: "2025-05-01" })],
+      dossierArtifact: "dossier.jsonl",
+      laneFeatures: [lane({ feature_id: "target", lane_group_id: "QNS|TEST STREET", opened: "5/1/25" })],
+      laneSnapshotId: "lanes",
+      laneSourceId: "lane_source",
+      gtfsServiceWindows: [{ start: "2026-04-01", end: "2026-06-30" }],
+    })[0]!;
+    const prior = {
+      receipt_id: "prior-receipt",
+      researched_on: "2026-07-15",
+      acquisition_attempts: [{
+        category: "official_nyc_dot_lane_project",
+        query: "exact test query",
+        query_status: "performed_2026-07-15",
+        urls_checked: ["https://www.nyc.gov/example"],
+        retrievals: [{ id: "example", retrieved_on: "2026-07-15", sha256: "a".repeat(64), status: "acquired" }],
+      }],
+    };
+    const priorLine = stableJson(prior as unknown as JsonValue);
+    const rootDir = mkdtempSync(join(tmpdir(), "bus-lane-binding-draft-"));
+    const receiptDir = join(rootDir, "receipts");
+    mkdirSync(receiptDir);
+    writeFileSync(join(rootDir, "prior.jsonl"), `${priorLine}\n`);
+    const row = {
+      ...base,
+      prior_acquisition_receipt: {
+        receipt_id: "prior-receipt",
+        artifact: "prior.jsonl",
+        row_sha256: createHash("sha256").update(priorLine).digest("hex"),
+        disposition: "completed_search_route_linkage_unresolved",
+        next_action: "Reconsider only if authoritative evidence is found.",
+      },
+    };
+    const packet = buildBusLaneResearchPackets([row]).packets[0]!;
+    const receipt = {
+      schema_version: 1,
+      receipt_id: "binding-draft",
+      receipt_kind: "binding_absent_after_search",
+      candidate_id: row.candidate_id,
+      candidate_fingerprint: row.candidate_fingerprint,
+      gtfs_route_id: row.gtfs_route_id,
+      implementation_date: row.implementation_date,
+      gap_ids: [row.ledger_id],
+      searched_at: "2026-07-15",
+      operator: "fixture-reviewer",
+      candidate_urls: [],
+      disposition: "binding_absent_after_search",
+      missing_binding: packet.missing_binding,
+      unresolved_bindings: packet.unresolved_bindings,
+      target: {
+        lane_group_ids: ["QNS|TEST STREET"],
+        feature_ids: ["target"],
+        geometry_scopes: ["coextensive_with_lane_group"],
+        matched_date: "2025-05-01",
+        directions: ["NB"],
+        open_dates_literals: ["5/1/25"],
+        named_sbs_routes: [],
+      },
+      prior_receipt: { receipt_id: "prior-receipt", artifact: "prior.jsonl", row_sha256: row.prior_acquisition_receipt.row_sha256 },
+      search: {
+        exact_queries: [{ category: "official_nyc_dot_lane_project", query: "exact test query", query_status: "performed_2026-07-15" }],
+        domains: ["www.nyc.gov"],
+        urls_inspected: ["https://www.nyc.gov/example"],
+        retrievals: [{ category: "official_nyc_dot_lane_project", id: "example", retrieved_on: "2026-07-15",
+          sha256: "a".repeat(64), status: "acquired" }],
+        disposition: "binding_absent_after_search",
+      },
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    };
+    try {
+      writeFileSync(join(receiptDir, "draft.json"), stableJson(receipt as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir)).not.toThrow();
+      writeFileSync(join(receiptDir, "draft.json"), stableJson({
+        ...receipt, target: { ...receipt.target, directions: ["SB"] },
+      } as unknown as JsonValue));
+      expect(() => validateBindingReceiptDrafts([row], [packet], receiptDir, rootDir))
+        .toThrow("exact target parity failed");
+    } finally {
+      rmSync(rootDir, { recursive: true, force: true });
+    }
   });
 });
