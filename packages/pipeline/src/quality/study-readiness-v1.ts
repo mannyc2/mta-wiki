@@ -199,6 +199,71 @@ export function projectMemberExtent(input: {
   };
 }
 
+export function mergeAcceptedMemberExtentDecisions(input: {
+  baseDecisions: readonly MemberExtentDecision[];
+  acceptedDecisions: readonly MemberExtentDecision[];
+  denominatorKeys: readonly {
+    occurrence_id: string;
+    route_record_id: string;
+    treatment_record_id: string;
+  }[];
+}): MemberExtentDecision[] {
+  const denominator = new Set(input.denominatorKeys.map(extentDecisionKey));
+  if (denominator.size !== input.denominatorKeys.length) {
+    throw new Error("Duplicate member-extent denominator key");
+  }
+  const byKey = new Map<string, MemberExtentDecision>();
+  const baseIds = new Set<string>();
+  for (const decision of input.baseDecisions) {
+    validateMemberExtentDecision(decision);
+    const key = extentDecisionKey(decision);
+    if (!denominator.has(key)) throw new Error(`${decision.decision_id}: orphan base extent decision`);
+    if (byKey.has(key) || baseIds.has(decision.decision_id)) {
+      throw new Error(`${decision.decision_id}: duplicate base extent decision`);
+    }
+    byKey.set(key, decision);
+    baseIds.add(decision.decision_id);
+  }
+  const acceptedKeys = new Set<string>();
+  const acceptedIds = new Set<string>();
+  let additions = 0;
+  for (const decision of input.acceptedDecisions) {
+    validateMemberExtentDecision(decision);
+    if (decision.resolution === "unresolved") {
+      throw new Error(`${decision.decision_id}: accepted overlays must be positive`);
+    }
+    const key = extentDecisionKey(decision);
+    if (!denominator.has(key)) throw new Error(`${decision.decision_id}: orphan accepted extent decision`);
+    if (acceptedKeys.has(key) || acceptedIds.has(decision.decision_id)) {
+      throw new Error(`${decision.decision_id}: duplicate accepted extent decision`);
+    }
+    const prior = byKey.get(key);
+    if (prior && prior.resolution !== "unresolved") {
+      throw new Error(`${decision.decision_id}: accepted decision conflicts with an existing positive decision`);
+    }
+    if (baseIds.has(decision.decision_id) && prior?.decision_id !== decision.decision_id) {
+      throw new Error(`${decision.decision_id}: accepted decision id conflicts with another base key`);
+    }
+    if (!prior) additions += 1;
+    acceptedKeys.add(key);
+    acceptedIds.add(decision.decision_id);
+    byKey.set(key, decision);
+  }
+  const effective = [...byKey.values()]
+    .sort((left, right) => extentDecisionKey(left).localeCompare(extentDecisionKey(right)));
+  const expectedCount = input.baseDecisions.length + additions;
+  if (effective.length !== expectedCount) {
+    throw new Error(
+      `Accepted extent decision accounting mismatch: expected=${expectedCount}, actual=${effective.length}`,
+    );
+  }
+  const effectiveIds = effective.map((decision) => decision.decision_id);
+  if (new Set(effectiveIds).size !== effectiveIds.length) {
+    throw new Error("Duplicate effective member-extent decision id");
+  }
+  return effective;
+}
+
 export function classifyDownstreamDisposition(input: {
   candidate_id?: string;
   treatment_family: string;

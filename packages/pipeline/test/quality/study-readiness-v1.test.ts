@@ -8,6 +8,7 @@ import { repoRoot } from "../../../core/src/paths";
 import {
   classifyDownstreamDisposition,
   extentDecisionKey,
+  mergeAcceptedMemberExtentDecisions,
   projectMemberExtent,
   validateMemberExtentDecision,
   type MemberExtentDecision,
@@ -119,6 +120,79 @@ describe("study-readiness v1 extent contract", () => {
         evidence_id: "source_test#p001_b0001",
       }],
     })).toThrow();
+  });
+
+  it("derives effective review accounting when an accepted decision closes a previously-unreviewed row", () => {
+    const unresolved: MemberExtentDecision = {
+      decision_id: "decision:base-unresolved",
+      occurrence_id: "occurrence:base",
+      route_record_id: "route_base",
+      treatment_record_id: "treatment_base",
+      resolution: "unresolved",
+      components: [],
+      evidence_bindings: [],
+      missing_roles: ["reviewed_extent_decision"],
+      rationale: "Awaiting exact evidence.",
+      reviewed_at: "2026-07-21T00:00:00.000Z",
+      reviewed_by: "base-review",
+    };
+    const accepted = (occurrence: string, treatment: string): MemberExtentDecision => ({
+      decision_id: `decision:${treatment}`,
+      occurrence_id: occurrence,
+      route_record_id: `route_${occurrence.split(":")[1]}`,
+      treatment_record_id: treatment,
+      resolution: "bounded_segment",
+      components: [{
+        component_kind: "segment",
+        identity_namespace: "source_literal_v1",
+        identifiers: ["stop-a", "stop-b"],
+        description: "Exact reviewed segment.",
+      }],
+      evidence_bindings: [{
+        role: "extent_classification",
+        record_id: treatment,
+        source_id: "source",
+        evidence_id: "source#block",
+      }],
+      missing_roles: [],
+      rationale: "Exact evidence closes the member extent.",
+      reviewed_at: "2026-07-24T00:00:00Z",
+      reviewed_by: "owner",
+    });
+    const replacement = accepted("occurrence:base", "treatment_base");
+    const newlyReviewed = accepted("occurrence:new", "treatment_new");
+    const denominatorKeys = [
+      {
+        occurrence_id: unresolved.occurrence_id,
+        route_record_id: unresolved.route_record_id,
+        treatment_record_id: unresolved.treatment_record_id,
+      },
+      {
+        occurrence_id: newlyReviewed.occurrence_id,
+        route_record_id: newlyReviewed.route_record_id,
+        treatment_record_id: newlyReviewed.treatment_record_id,
+      },
+    ];
+    const effective = mergeAcceptedMemberExtentDecisions({
+      baseDecisions: [unresolved],
+      acceptedDecisions: [replacement, newlyReviewed],
+      denominatorKeys,
+    });
+    expect(effective).toHaveLength(2);
+    expect(effective.map((decision) => decision.decision_id).sort()).toEqual([
+      "decision:treatment_base",
+      "decision:treatment_new",
+    ]);
+    expect(() => mergeAcceptedMemberExtentDecisions({
+      baseDecisions: [unresolved],
+      acceptedDecisions: [newlyReviewed, newlyReviewed],
+      denominatorKeys,
+    })).toThrow("duplicate accepted");
+    expect(() => mergeAcceptedMemberExtentDecisions({
+      baseDecisions: [unresolved],
+      acceptedDecisions: [accepted("occurrence:orphan", "treatment_orphan")],
+      denominatorKeys,
+    })).toThrow("orphan accepted");
   });
 
   it("retains exact Flatbush B41 and B67 bounded rows without fan-out", () => {

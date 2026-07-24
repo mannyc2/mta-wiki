@@ -16,6 +16,7 @@ import {
   explicitBridgeMissingRoles,
   extentDecisionKey,
   MEMBER_EXTENT_CONTRACT_ID,
+  mergeAcceptedMemberExtentDecisions,
   projectMemberExtent,
   STUDY_READINESS_SCHEMA_VERSION,
   validateMemberExtentDecision,
@@ -621,29 +622,22 @@ function buildExtentArtifacts(occurrences: JsonObject[], treatmentRecords: JsonO
     }
   }
   decisions.sort((left, right) => extentDecisionKey(left).localeCompare(extentDecisionKey(right)));
-  const decisionMap = new Map(decisions.map((decision) => [extentDecisionKey(decision), decision]));
-  if (decisionMap.size !== decisions.length) throw new Error("Duplicate member extent decision key");
-  const denominator = new Set(occurrences.flatMap((occurrence) =>
+  const denominatorKeys = occurrences.flatMap((occurrence) =>
     occurrence.routes.flatMap((route: JsonObject) => occurrenceMembers(occurrence).map((member) =>
-      extentDecisionKey({
+      ({
         occurrence_id: occurrence.occurrence_id,
         route_record_id: route.route_record_id,
         treatment_record_id: member.treatment_record_id,
-      })))));
-  for (const accepted of loadMemberExtentDecisions([ACCEPTED_EXTENT_DECISION_DIR])) {
-    const key = extentDecisionKey(accepted);
-    if (!denominator.has(key)) throw new Error(`${accepted.decision_id}: orphan accepted extent decision`);
-    const prior = decisionMap.get(key);
-    if (prior && prior.resolution !== "unresolved") {
-      throw new Error(`${accepted.decision_id}: accepted decision conflicts with an existing positive decision`);
-    }
-    decisionMap.set(key, accepted);
-  }
-  const effectiveDecisions = [...decisionMap.values()]
-    .sort((left, right) => extentDecisionKey(left).localeCompare(extentDecisionKey(right)));
-  if (effectiveDecisions.length !== 31) {
-    throw new Error(`Expected 31 reviewed extent decisions, received ${effectiveDecisions.length}`);
-  }
+      }))));
+  const effectiveDecisions = mergeAcceptedMemberExtentDecisions({
+    baseDecisions: decisions,
+    acceptedDecisions: loadMemberExtentDecisions([ACCEPTED_EXTENT_DECISION_DIR]),
+    denominatorKeys,
+  });
+  const decisionMap = new Map(effectiveDecisions.map((decision) => [
+    extentDecisionKey(decision),
+    decision,
+  ]));
 
   const rows = occurrences.flatMap((occurrence) => occurrence.routes.flatMap((route: JsonObject) =>
     occurrenceMembers(occurrence).map((member) => projectMemberExtent({
