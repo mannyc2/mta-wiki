@@ -18,6 +18,11 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   gap projects as `blocked_upstream` rather than `absent_in_source`. This
   closure changes no occurrence, study, cross-product, ontology, or correction
   authority and preserves prior decisions and reviewed siblings.
+- Recorded the deterministic 31-closure/shared-semantics checkpoint at commit
+  `8886b17a`, including the dual-approved provenance repair chain and the
+  unchanged nine-failure/one-missing-source public-clone baseline. Checkpoint
+  SHA-256 is `6fd187bbf0b80893f97cbd8decdf9eb79c4965c9649456c8c2895896cbf3c7b7`;
+  it is non-authorizing and leaves 65 global member candidates open.
 
 ## 2026-07-23
 
