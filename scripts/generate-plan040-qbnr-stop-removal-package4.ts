@@ -59,6 +59,12 @@ const DRAFT_PATH =
 const SERVICE_CHANGE_SOURCE_ID =
   "mta_queens_bus_network_redesign_service_changes";
 const SCHEDULE_SOURCE_ID = "mta_bus_schedules_2025_candidate_windows";
+const FROZEN_EXTENT_LEDGER_SHA256 =
+  "4825c86ac080c5ad21ab2b947c4a8cf4407703f5f016e1e68e1a4f001d2b642c";
+const FROZEN_GRAIN_LEDGER_SHA256 =
+  "c0034bbfdaaea4f66b60f0700cd5886658527345f8675361d8174e9438346e28";
+const PACKAGE4_ABSENCE_RECEIPT_ID =
+  "plan-040-qbnr-stop-removal-package-4-reviewed-absence-v1";
 
 const FEEDS = [
   {
@@ -127,6 +133,7 @@ type GrainRow = {
   member_extent_decision_id: string | null;
   verdict: string;
   spatial_verdict: string;
+  receipt_ids?: string[];
 };
 
 type SourceBlock = {
@@ -436,7 +443,9 @@ async function scanSchedule(
 }
 
 const extentLedgerText = read(EXTENT_LEDGER_PATH);
-const grainLedgerText = read(GRAIN_LEDGER_PATH);
+if (sha256(extentLedgerText) !== FROZEN_EXTENT_LEDGER_SHA256) {
+  throw new Error("Package 4 frozen extent-ledger input drifted");
+}
 const extentRows = parseJsonl<ExtentRow>(EXTENT_LEDGER_PATH);
 const grainRows = parseJsonl<GrainRow>(GRAIN_LEDGER_PATH);
 const serviceBlocks = parseJsonl<SourceBlock>(
@@ -471,13 +480,20 @@ for (const routeId of PLAN040_PACKAGE_4_ROUTE_ORDER) {
     row.occurrence_id === extent.occurrence_id &&
     row.route_record_id === extent.route_record_id &&
     row.treatment_record_id === extent.treatment_record_id);
-  if (
-    matchingGrain.length !== 1 ||
-    matchingGrain[0]!.current_extent_kind !== "unresolved" ||
-    matchingGrain[0]!.member_extent_decision_id !== null ||
-    matchingGrain[0]!.verdict !== "unreviewed" ||
-    matchingGrain[0]!.spatial_verdict !== "unreviewed"
-  ) {
+  const grain = matchingGrain[0];
+  const isFrozenInput =
+    grain?.current_extent_kind === "unresolved" &&
+    grain.member_extent_decision_id === null &&
+    grain.verdict === "unreviewed" &&
+    grain.spatial_verdict === "unreviewed";
+  const isAcceptedReplay =
+    grain?.current_extent_kind === "unresolved" &&
+    grain.member_extent_decision_id === null &&
+    grain.verdict === "absent_in_source" &&
+    grain.spatial_verdict === "absent_in_source" &&
+    stableJson((grain.receipt_ids ?? []) as unknown as JsonValue) ===
+      stableJson([PACKAGE4_ABSENCE_RECEIPT_ID] as unknown as JsonValue);
+  if (matchingGrain.length !== 1 || (!isFrozenInput && !isAcceptedReplay)) {
     throw new Error(`${routeId}: grain ledger parity is not unresolved`);
   }
 }
@@ -731,11 +747,11 @@ const acquisition = {
   receipt_id: "plan-040-qbnr-stop-removal-package-4-acquisition-v1",
   extent_ledger: {
     path: EXTENT_LEDGER_PATH,
-    sha256: sha256(extentLedgerText),
+    sha256: FROZEN_EXTENT_LEDGER_SHA256,
   },
   grain_ledger: {
     path: GRAIN_LEDGER_PATH,
-    sha256: sha256(grainLedgerText),
+    sha256: FROZEN_GRAIN_LEDGER_SHA256,
   },
   prior_packages: priorPackages,
   candidate_count: 23,

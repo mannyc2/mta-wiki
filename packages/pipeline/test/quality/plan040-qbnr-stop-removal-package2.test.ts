@@ -550,7 +550,9 @@ describe("Plan 040 QBNR Package 2 evidence-only draft", () => {
       decision.decision_id === "member-grain-review:plan040-package2-qm12-stop-removal");
     const receipts = loadMemberExtentAbsenceReceipts([
       dirname(PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_ABSENCE_RECEIPT_PATH),
-    ]);
+    ]).filter((receipt) =>
+      receipt.receipt_id ===
+        "plan-040-qbnr-stop-removal-package-2-reviewed-absence-v1");
     expect(extent).toHaveLength(1);
     expect(grain).toHaveLength(1);
     expect(receipts).toHaveLength(1);
@@ -558,7 +560,7 @@ describe("Plan 040 QBNR Package 2 evidence-only draft", () => {
     expect(receipts[0].surfaces).toEqual(["member_extent", "member_grain"]);
   });
 
-  it("materializes the exact 24-candidate terminal delta at a stable 308-row denominator", () => {
+  it("preserves the exact Package 2 terminal delta after later receipt-only closures", () => {
     const companion = readJsonl(
       `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/` +
         "operational_occurrence_member_extents.jsonl",
@@ -579,16 +581,16 @@ describe("Plan 040 QBNR Package 2 evidence-only draft", () => {
       unresolved: 283,
     });
     expect(distribution(extentLedger, "verdict")).toEqual({
-      absent_in_source: 23,
+      absent_in_source: 46,
       "resolved:bounded_segment": 17,
       "resolved:route_wide": 4,
       "resolved:stop_set": 4,
-      unreviewed: 260,
+      unreviewed: 237,
     });
     expect(distribution(grainLedger, "verdict")).toEqual({
-      absent_in_source: 23,
+      absent_in_source: 46,
       resolved: 12,
-      unreviewed: 273,
+      unreviewed: 250,
     });
     const companionByKey = new Map(companion.map((row) => [extentDecisionKey(row as any), row]));
     const extentByKey = new Map(extentLedger.map((row) => [extentDecisionKey(row as any), row]));

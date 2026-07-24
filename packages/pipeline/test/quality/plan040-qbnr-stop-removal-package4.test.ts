@@ -1,16 +1,25 @@
 import { describe, expect, it } from "bun:test";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
+import { dirname } from "node:path";
 import { repoRoot } from "../../../core/src/paths";
+import { stableJson } from "../../../db/src/stable-json";
 import type { JsonValue } from "../../../db/src/types";
 import {
+  loadMemberExtentAbsenceReceipts,
+} from "../../src/quality/member-extent-ledger";
+import {
+  acceptPlan040Package4ReceiptPackage,
+  buildPlan040Package4AcceptedArtifacts,
   buildPlan040Package4Draft,
   buildPlan040Package4GateAndAcceptance,
+  PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_ABSENCE_RECEIPT_PATH,
   PLAN040_PACKAGE_4_ROUTE_ORDER,
   plan040Package4ReplayHash,
   type Plan040Package4Draft,
   validatePlan040Package4GateAndAcceptance,
 } from "../../src/quality/plan040-qbnr-stop-removal-package4";
+import { extentDecisionKey } from "../../src/quality/study-readiness-v1";
 
 const acquisitionPath =
   `${repoRoot}/data/quality/acquisition/receipts/` +
@@ -32,6 +41,21 @@ const sha256 = (value: Uint8Array | string): string =>
   createHash("sha256").update(value).digest("hex");
 const readJson = <T>(path: string): T =>
   JSON.parse(readFileSync(path, "utf8")) as T;
+const readJsonl = (path: string): Array<Record<string, unknown>> => {
+  const text = readFileSync(path, "utf8").trim();
+  return text ? text.split("\n").map((line) =>
+    JSON.parse(line) as Record<string, unknown>) : [];
+};
+const distribution = (
+  rows: Array<Record<string, unknown>>,
+  field: string,
+): Record<string, number> =>
+  Object.fromEntries([...new Set(rows.map((row) => String(row[field])))]
+    .sort()
+    .map((value) => [
+      value,
+      rows.filter((row) => String(row[field]) === value).length,
+    ]));
 
 type Acquisition = {
   candidate_count: number;
@@ -367,5 +391,156 @@ describe("Plan 040 QBNR Package 4 evidence-only risk draft", () => {
       },
       acceptedAt: acceptance.accepted_at,
     })).toThrow("owner/delegate acceptance drifted");
+  });
+
+  it("builds one exact 23-key reviewed-absence receipt and no decisions", () => {
+    type GateAndAcceptance =
+      ReturnType<typeof buildPlan040Package4GateAndAcceptance>;
+    const draft = readJson<Plan040Package4Draft>(draftPath);
+    const gate = readJson<GateAndAcceptance["gate"]>(gatePath);
+    const acceptance =
+      readJson<GateAndAcceptance["acceptance"]>(acceptancePath);
+    const accepted = buildPlan040Package4AcceptedArtifacts({
+      draft,
+      gate,
+      acceptance,
+    });
+    expect(accepted.extentDecisions).toEqual([]);
+    expect(accepted.grainDecisions).toEqual([]);
+    expect(accepted.absenceReceipt).toMatchObject({
+      contract_id: "member-extent-absence-receipt-v1",
+      receipt_id:
+        "plan-040-qbnr-stop-removal-package-4-reviewed-absence-v1",
+      surfaces: ["member_extent", "member_grain"],
+      reviewed_at: "2026-07-24T05:22:18Z",
+      reviewed_by: "codex-owner-delegate",
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(accepted.absenceReceipt.extent_keys).toHaveLength(23);
+    expect(accepted.absenceReceipt.exact_searches).toHaveLength(23);
+    expect(accepted.absenceReceipt.urls_inspected).toHaveLength(23);
+    expect(accepted.absenceReceipt.urls_inspected.every((url) =>
+      /^https:\/\/www\.mta\.info\/document\/[0-9]+$/u.test(url))).toBe(true);
+    for (const candidate of draft.candidates) {
+      expect(accepted.absenceReceipt.exact_searches.some((search) =>
+        search.includes(`candidate=${candidate.candidate_key}`) &&
+        search.includes(`official_stop_list=${candidate.stop_list_url}`) &&
+        search.includes(
+          `boundary=${candidate.boundary_evidence.boundary_class}`,
+        ) &&
+        search.includes(
+          "route_row_presence_is_not_trip_inventory=true",
+        ) &&
+        candidate.unresolved_gap_codes.every((gap) =>
+          search.includes(gap)))).toBe(true);
+    }
+    expect(sha256(`${stableJson({
+      receipts: [accepted.absenceReceipt],
+    } as JsonValue)}\n`)).toBe(
+      "59ead8f03b2ebc87def775fb3d4e5d333f3fc7ed7a8ef0197b12e405f0d0361b",
+    );
+  });
+
+  it("replays the immutable absence-only acceptance through its strict loader", () => {
+    const first = acceptPlan040Package4ReceiptPackage();
+    const second = acceptPlan040Package4ReceiptPackage();
+    expect(second).toEqual(first);
+    expect(first).toEqual({
+      absenceReceiptPath:
+        PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_ABSENCE_RECEIPT_PATH,
+      absenceReceiptSha256:
+        "59ead8f03b2ebc87def775fb3d4e5d333f3fc7ed7a8ef0197b12e405f0d0361b",
+      extentDecisionCount: 0,
+      grainDecisionCount: 0,
+      absenceCandidateCount: 23,
+    });
+    const receipts = loadMemberExtentAbsenceReceipts([
+      dirname(PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_ABSENCE_RECEIPT_PATH),
+    ]).filter((receipt) =>
+      receipt.receipt_id ===
+        "plan-040-qbnr-stop-removal-package-4-reviewed-absence-v1");
+    expect(receipts).toHaveLength(1);
+    expect(receipts[0]!.extent_keys).toHaveLength(23);
+    expect(receipts[0]!.surfaces).toEqual([
+      "member_extent",
+      "member_grain",
+    ]);
+  });
+
+  it("materializes exactly 23 absence rows on both ledgers with no positive extent", () => {
+    const companion = readJsonl(
+      `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/` +
+        "operational_occurrence_member_extents.jsonl",
+    );
+    const extentLedger = readJsonl(
+      `${repoRoot}/data/quality/operational-reference/` +
+        "member-extent-ledger.jsonl",
+    );
+    const grainLedger = readJsonl(
+      `${repoRoot}/data/quality/operational-reference/` +
+        "member-grain-ledger.jsonl",
+    );
+    expect(companion).toHaveLength(308);
+    expect(extentLedger).toHaveLength(308);
+    expect(grainLedger).toHaveLength(308);
+    expect(distribution(companion, "extent")).toEqual({
+      bounded_segment: 17,
+      route_wide: 4,
+      stop_set: 4,
+      unresolved: 283,
+    });
+    expect(distribution(extentLedger, "verdict")).toEqual({
+      absent_in_source: 46,
+      "resolved:bounded_segment": 17,
+      "resolved:route_wide": 4,
+      "resolved:stop_set": 4,
+      unreviewed: 237,
+    });
+    expect(distribution(grainLedger, "verdict")).toEqual({
+      absent_in_source: 46,
+      resolved: 12,
+      unreviewed: 250,
+    });
+    const companionByKey = new Map(companion.map((row) => [
+      extentDecisionKey(row as never),
+      row,
+    ]));
+    const extentByKey = new Map(extentLedger.map((row) => [
+      extentDecisionKey(row as never),
+      row,
+    ]));
+    const grainByKey = new Map(grainLedger.map((row) => [
+      extentDecisionKey(row as never),
+      row,
+    ]));
+    const draft = readJson<Plan040Package4Draft>(draftPath);
+    for (const candidate of draft.candidates) {
+      expect(companionByKey.get(candidate.candidate_key)).toMatchObject({
+        extent: "unresolved",
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      });
+      expect(extentByKey.get(candidate.candidate_key)).toMatchObject({
+        verdict: "absent_in_source",
+        receipt_ids: [
+          "plan-040-qbnr-stop-removal-package-4-reviewed-absence-v1",
+        ],
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      });
+      expect(grainByKey.get(candidate.candidate_key)).toMatchObject({
+        verdict: "absent_in_source",
+        receipt_ids: [
+          "plan-040-qbnr-stop-removal-package-4-reviewed-absence-v1",
+        ],
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      });
+    }
+    expect(companion.filter((row) =>
+      draft.candidates.some((candidate) =>
+        candidate.candidate_key === extentDecisionKey(row as never)) &&
+      row.extent !== "unresolved")).toHaveLength(0);
   });
 });

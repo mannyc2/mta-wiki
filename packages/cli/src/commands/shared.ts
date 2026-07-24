@@ -42,6 +42,7 @@ export type Command =
   | "plan-040-exemplar-accept"
   | "plan-040-exemplar-draft"
   | "plan-040-package-2-accept"
+  | "plan-040-package-4-accept"
   | "replay-eval"
   | "extract"
   | "identity-review"
