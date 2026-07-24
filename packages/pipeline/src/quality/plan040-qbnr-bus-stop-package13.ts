@@ -13,21 +13,27 @@ import {
 export const PLAN040_QBNR_BUS_STOP_PACKAGE_13 =
   "plan-040-qbnr-bus-stop-package-13-evidence-only-v1" as const;
 export const PLAN040_PACKAGE_13_CANDIDATE_COUNT = 31 as const;
-export const PLAN040_PACKAGE_13_POSITIVE_COUNT = 19 as const;
-export const PLAN040_PACKAGE_13_TERMINAL_COUNT = 12 as const;
+export const PLAN040_PACKAGE_13_POSITIVE_EXTENT_AND_GRAIN_COUNT = 19 as const;
+export const PLAN040_PACKAGE_13_POSITIVE_EXTENT_ONLY_COUNT = 2 as const;
+export const PLAN040_PACKAGE_13_BLOCKED_EXTENT_AND_GRAIN_COUNT = 10 as const;
+export const PLAN040_PACKAGE_13_SOURCE_GAP_COUNT = 12 as const;
 export const PLAN040_PACKAGE_13_EXACT_ABSENCE_COUNT = 0 as const;
 export const PLAN040_PACKAGE_13_SIBLING_COUNT = 38 as const;
 export const PLAN040_PACKAGE_13_EXCLUSION_COUNT = 5 as const;
 export const PLAN040_PACKAGE_13_CANDIDATE_KEY_SHA256 =
   "7643e1bcbe254f48096c4d23f236aa812f2398e1db5e600bfba65a94fcad2a02" as const;
-export const PLAN040_PACKAGE_13_POSITIVE_KEY_SHA256 =
+export const PLAN040_PACKAGE_13_POSITIVE_EXTENT_AND_GRAIN_KEY_SHA256 =
   "e2bcf19f69fc9bb5eff8fee290baaa5b7c904c93c615aaf02c3bf5243e3b5276" as const;
-export const PLAN040_PACKAGE_13_TERMINAL_KEY_SHA256 =
+export const PLAN040_PACKAGE_13_POSITIVE_EXTENT_ONLY_KEY_SHA256 =
+  "0f3c7545a2fd5d6e1d49a14b6d90f67c1b9b0de8ec64e925285864b178fc1a42" as const;
+export const PLAN040_PACKAGE_13_BLOCKED_EXTENT_AND_GRAIN_KEY_SHA256 =
+  "d22346db3f4b03ac8854462f6e4c441beabc462483143762582d3c05fe173127" as const;
+export const PLAN040_PACKAGE_13_SOURCE_GAP_KEY_SHA256 =
   "0103e8f755bdd78cae2e0ba4a06c3efe8ba1f8af0657a62b08ed2f89d47219b8" as const;
 export const PLAN040_PACKAGE_13_COMPARISON_RECEIPT_SHA256 =
-  "b342e8102fae83f915f33f71a22807ca137524b8dc4be1e75342d42b8d1603d2" as const;
-export const PLAN040_PACKAGE_13_TERMINAL_RECEIPT_SHA256 =
-  "ca2431c9e7741481a1448556ce67ac2880457112b0c090224c2e5bbd3d65db53" as const;
+  "17604733a3cb1a40a020df04fe5883c62910ea1695f6ebef8ab59979324264b2" as const;
+export const PLAN040_PACKAGE_13_SOURCE_GAP_RECEIPT_SHA256 =
+  "2ee6e730caad80e545b149b46165ab5ad6c3569875a81874f3bf1b8bd859d661" as const;
 
 export type Plan040Package13ReceiptRef = {
   path: string;
@@ -51,11 +57,12 @@ export type Plan040Package13CandidateEvidence = {
   treatment_family: "bus_stop_or_boarding";
   evidence_verdict:
     | "positive_extent_and_grain_proposed"
-    | "receipt_terminal_unresolved_preserved";
+    | "positive_extent_proposed_grain_blocked"
+    | "source_gap_blocked_extent_and_grain";
   source_statement: JsonValue;
   immutable_rows: JsonValue;
   comparison_evidence: JsonValue;
-  terminal_receipt: JsonValue | null;
+  source_gap_block_receipt: JsonValue | null;
   preserved_scope_gap: string | null;
   proposed_extent_decision: MemberExtentDecision | null;
   proposed_grain_decision: MemberGrainDecision | null;
@@ -97,21 +104,34 @@ function assertCandidatePartition(
   if (candidates.length !== PLAN040_PACKAGE_13_CANDIDATE_COUNT) {
     throw new Error("Package 13 exact 31-candidate scope drifted");
   }
-  const positive = candidates.filter((row) =>
+  const positiveExtentAndGrain = candidates.filter((row) =>
     row.evidence_verdict === "positive_extent_and_grain_proposed"
   );
-  const terminal = candidates.filter((row) =>
-    row.evidence_verdict === "receipt_terminal_unresolved_preserved"
+  const positiveExtentOnly = candidates.filter((row) =>
+    row.evidence_verdict === "positive_extent_proposed_grain_blocked"
   );
+  const blockedExtentAndGrain = candidates.filter((row) =>
+    row.evidence_verdict === "source_gap_blocked_extent_and_grain"
+  );
+  const sourceGaps = [...positiveExtentOnly, ...blockedExtentAndGrain];
   if (
-    positive.length !== PLAN040_PACKAGE_13_POSITIVE_COUNT ||
-    terminal.length !== PLAN040_PACKAGE_13_TERMINAL_COUNT ||
+    positiveExtentAndGrain.length !==
+      PLAN040_PACKAGE_13_POSITIVE_EXTENT_AND_GRAIN_COUNT ||
+    positiveExtentOnly.length !==
+      PLAN040_PACKAGE_13_POSITIVE_EXTENT_ONLY_COUNT ||
+    blockedExtentAndGrain.length !==
+      PLAN040_PACKAGE_13_BLOCKED_EXTENT_AND_GRAIN_COUNT ||
+    sourceGaps.length !== PLAN040_PACKAGE_13_SOURCE_GAP_COUNT ||
     sortedHash(candidates.map((row) => row.candidate_key)) !==
       PLAN040_PACKAGE_13_CANDIDATE_KEY_SHA256 ||
-    sortedHash(positive.map((row) => row.candidate_key)) !==
-      PLAN040_PACKAGE_13_POSITIVE_KEY_SHA256 ||
-    sortedHash(terminal.map((row) => row.candidate_key)) !==
-      PLAN040_PACKAGE_13_TERMINAL_KEY_SHA256
+    sortedHash(positiveExtentAndGrain.map((row) => row.candidate_key)) !==
+      PLAN040_PACKAGE_13_POSITIVE_EXTENT_AND_GRAIN_KEY_SHA256 ||
+    sortedHash(positiveExtentOnly.map((row) => row.candidate_key)) !==
+      PLAN040_PACKAGE_13_POSITIVE_EXTENT_ONLY_KEY_SHA256 ||
+    sortedHash(blockedExtentAndGrain.map((row) => row.candidate_key)) !==
+      PLAN040_PACKAGE_13_BLOCKED_EXTENT_AND_GRAIN_KEY_SHA256 ||
+    sortedHash(sourceGaps.map((row) => row.candidate_key)) !==
+      PLAN040_PACKAGE_13_SOURCE_GAP_KEY_SHA256
   ) {
     throw new Error("Package 13 candidate partition hash drifted");
   }
@@ -130,18 +150,36 @@ function assertCandidatePartition(
       if (
         !candidate.proposed_extent_decision ||
         !candidate.proposed_grain_decision ||
-        candidate.terminal_receipt !== null
+        candidate.source_gap_block_receipt !== null ||
+        candidate.proposed_grain_decision.service_scope.kind === "unresolved"
       ) {
         throw new Error(`${candidate.candidate_key}: positive proposal is incomplete`);
       }
       validateMemberExtentDecision(candidate.proposed_extent_decision);
       parseMemberGrainDecision(candidate.proposed_grain_decision);
     } else if (
+      candidate.evidence_verdict ===
+        "positive_extent_proposed_grain_blocked"
+    ) {
+      if (
+        !candidate.proposed_extent_decision ||
+        candidate.proposed_extent_decision.resolution !== "bounded_segment" ||
+        !candidate.proposed_grain_decision ||
+        candidate.proposed_grain_decision.service_scope.kind !== "unresolved" ||
+        candidate.source_gap_block_receipt === null
+      ) {
+        throw new Error(
+          `${candidate.candidate_key}: extent-only blocked-grain proposal is incomplete`,
+        );
+      }
+      validateMemberExtentDecision(candidate.proposed_extent_decision);
+      parseMemberGrainDecision(candidate.proposed_grain_decision);
+    } else if (
       candidate.proposed_extent_decision !== null ||
       candidate.proposed_grain_decision !== null ||
-      candidate.terminal_receipt === null
+      candidate.source_gap_block_receipt === null
     ) {
-      throw new Error(`${candidate.candidate_key}: terminal candidate gained a proposal`);
+      throw new Error(`${candidate.candidate_key}: blocked candidate gained a proposal`);
     }
   }
 }
@@ -153,7 +191,7 @@ export function buildPlan040Package13Draft(input: {
   preservedSiblings: Plan040Package13PreservedSibling[];
   exclusions: Plan040Package13Exclusion[];
   comparisonReceipt: Plan040Package13ReceiptRef;
-  terminalReceipt: Plan040Package13ReceiptRef;
+  sourceGapReceipt: Plan040Package13ReceiptRef;
 }): JsonValue {
   assertCandidatePartition(input.candidates);
   if (input.preservedSiblings.length !== PLAN040_PACKAGE_13_SIBLING_COUNT) {
@@ -182,14 +220,24 @@ export function buildPlan040Package13Draft(input: {
       sha256: input.evidenceManifestSha256,
     },
     comparison_receipt: input.comparisonReceipt,
-    terminal_receipt: input.terminalReceipt,
+    source_gap_block_receipt: input.sourceGapReceipt,
     candidate_count: input.candidates.length,
-    positive_proposal_count: PLAN040_PACKAGE_13_POSITIVE_COUNT,
-    terminal_receipt_count: PLAN040_PACKAGE_13_TERMINAL_COUNT,
+    positive_extent_and_grain_count:
+      PLAN040_PACKAGE_13_POSITIVE_EXTENT_AND_GRAIN_COUNT,
+    positive_extent_only_blocked_grain_count:
+      PLAN040_PACKAGE_13_POSITIVE_EXTENT_ONLY_COUNT,
+    blocked_extent_and_grain_count:
+      PLAN040_PACKAGE_13_BLOCKED_EXTENT_AND_GRAIN_COUNT,
+    source_gap_block_receipt_count: PLAN040_PACKAGE_13_SOURCE_GAP_COUNT,
     exact_absence_count: PLAN040_PACKAGE_13_EXACT_ABSENCE_COUNT,
     candidate_key_sha256: PLAN040_PACKAGE_13_CANDIDATE_KEY_SHA256,
-    positive_candidate_key_sha256: PLAN040_PACKAGE_13_POSITIVE_KEY_SHA256,
-    terminal_candidate_key_sha256: PLAN040_PACKAGE_13_TERMINAL_KEY_SHA256,
+    positive_extent_and_grain_key_sha256:
+      PLAN040_PACKAGE_13_POSITIVE_EXTENT_AND_GRAIN_KEY_SHA256,
+    positive_extent_only_key_sha256:
+      PLAN040_PACKAGE_13_POSITIVE_EXTENT_ONLY_KEY_SHA256,
+    blocked_extent_and_grain_key_sha256:
+      PLAN040_PACKAGE_13_BLOCKED_EXTENT_AND_GRAIN_KEY_SHA256,
+    source_gap_key_sha256: PLAN040_PACKAGE_13_SOURCE_GAP_KEY_SHA256,
     preserved_sibling_count: input.preservedSiblings.length,
     preserved_sibling_key_sha256:
       sortedHash(input.preservedSiblings.map((row) => row.candidate_key)),
@@ -201,13 +249,23 @@ export function buildPlan040Package13Draft(input: {
         ? [candidate.proposed_extent_decision as unknown as JsonValue]
         : []
     ),
-    proposed_grain_decisions: input.candidates.flatMap((candidate) =>
-      candidate.proposed_grain_decision
+    proposed_positive_grain_decisions: input.candidates.flatMap((candidate) =>
+      candidate.evidence_verdict === "positive_extent_and_grain_proposed" &&
+        candidate.proposed_grain_decision
         ? [candidate.proposed_grain_decision as unknown as JsonValue]
         : []
     ),
-    proposed_terminal_receipts: input.candidates.flatMap((candidate) =>
-      candidate.terminal_receipt ? [candidate.terminal_receipt] : []
+    proposed_blocked_grain_decisions: input.candidates.flatMap((candidate) =>
+      candidate.evidence_verdict ===
+          "positive_extent_proposed_grain_blocked" &&
+        candidate.proposed_grain_decision
+        ? [candidate.proposed_grain_decision as unknown as JsonValue]
+        : []
+    ),
+    source_gap_blocks: input.candidates.flatMap((candidate) =>
+      candidate.source_gap_block_receipt
+        ? [candidate.source_gap_block_receipt]
+        : []
     ),
     persisted_extent_decision_count: 0,
     persisted_grain_decision_count: 0,
@@ -252,8 +310,18 @@ export function validatePlan040Package13Evidence(value: {
   ) {
     throw new Error("Package 13 evidence contract drifted");
   }
-  const bytes = stableJson(value as unknown as JsonValue);
-  if (!bytes.includes("receipt_terminal_unresolved_preserved")) {
-    throw new Error("Package 13 terminal contract disappeared");
+  const sourceGapBytes = stableJson(value.candidates.flatMap((candidate) =>
+    candidate.source_gap_block_receipt
+      ? [candidate.source_gap_block_receipt]
+      : []
+  ) as JsonValue);
+  if (
+    !sourceGapBytes.includes(
+      "absence_projection_prohibited_for_unresolved_grain",
+    ) ||
+    sourceGapBytes.includes("absent_in_source") ||
+    sourceGapBytes.includes("member-extent-absence-receipt-v1")
+  ) {
+    throw new Error("Package 13 source-gap/block contract drifted");
   }
 }

@@ -38,15 +38,19 @@ import type {
 import {
   PLAN040_PACKAGE_13_CANDIDATE_COUNT,
   PLAN040_PACKAGE_13_CANDIDATE_KEY_SHA256,
+  PLAN040_PACKAGE_13_BLOCKED_EXTENT_AND_GRAIN_COUNT,
+  PLAN040_PACKAGE_13_BLOCKED_EXTENT_AND_GRAIN_KEY_SHA256,
   PLAN040_PACKAGE_13_COMPARISON_RECEIPT_SHA256,
   PLAN040_PACKAGE_13_EXACT_ABSENCE_COUNT,
   PLAN040_PACKAGE_13_EXCLUSION_COUNT,
-  PLAN040_PACKAGE_13_POSITIVE_COUNT,
-  PLAN040_PACKAGE_13_POSITIVE_KEY_SHA256,
+  PLAN040_PACKAGE_13_POSITIVE_EXTENT_AND_GRAIN_COUNT,
+  PLAN040_PACKAGE_13_POSITIVE_EXTENT_AND_GRAIN_KEY_SHA256,
+  PLAN040_PACKAGE_13_POSITIVE_EXTENT_ONLY_COUNT,
+  PLAN040_PACKAGE_13_POSITIVE_EXTENT_ONLY_KEY_SHA256,
   PLAN040_PACKAGE_13_SIBLING_COUNT,
-  PLAN040_PACKAGE_13_TERMINAL_COUNT,
-  PLAN040_PACKAGE_13_TERMINAL_KEY_SHA256,
-  PLAN040_PACKAGE_13_TERMINAL_RECEIPT_SHA256,
+  PLAN040_PACKAGE_13_SOURCE_GAP_COUNT,
+  PLAN040_PACKAGE_13_SOURCE_GAP_KEY_SHA256,
+  PLAN040_PACKAGE_13_SOURCE_GAP_RECEIPT_SHA256,
   PLAN040_QBNR_BUS_STOP_PACKAGE_13,
   buildPlan040Package13Draft,
   validatePlan040Package13Evidence,
@@ -74,9 +78,9 @@ const draftRelative =
 const comparisonRelative =
   "data/quality/acquisition/receipts/member-extent-evidence/" +
   "plan-040-qbnr-bus-stop-package-13-full-stop-comparisons-v1.json";
-const terminalRelative =
+const sourceGapRelative =
   "data/quality/acquisition/receipts/member-extent-evidence/" +
-  "plan-040-qbnr-bus-stop-package-13-terminal-gaps-v1.json";
+  "plan-040-qbnr-bus-stop-package-13-source-gap-blocks-v1.json";
 
 const SOURCE_PINS = {
   service_change_html:
@@ -222,9 +226,7 @@ const writeImmutableNormalFile = (path: string, value: JsonValue): void => {
 
 type FrozenCandidateSpecSource = {
   candidate_key: string;
-  verdict:
-    | "positive_extent_and_grain_proposed"
-    | "receipt_terminal_unresolved_preserved";
+  verdict: string;
   gtfs_route_id: string;
   occurrence_id: string;
   route_record_id: string;
@@ -243,11 +245,13 @@ type FrozenCandidateSpecSource = {
     stop_list_refs?: string[];
     immutable_reuse?: string;
   };
-  unresolved_gap_codes: string[];
 };
 type CandidateSpec = {
   candidate_key: string;
-  verdict: FrozenCandidateSpecSource["verdict"];
+  verdict:
+    | "positive_extent_and_grain_proposed"
+    | "positive_extent_proposed_grain_blocked"
+    | "source_gap_blocked_extent_and_grain";
   gtfs_route_id: string;
   occurrence_id: string;
   route_record_id: string;
@@ -262,11 +266,12 @@ type CandidateSpec = {
   expected_matched_post_pattern_ids: string[];
   expected_comparison_ids: string[];
   proposed: FrozenCandidateSpecSource["proposed"];
-  terminal_gap_codes: string[];
+  source_gap_codes: string[];
   occurrence_decision_path: string;
 };
+type SeedCandidateSpec = CandidateSpec;
 type FrozenEvidenceSeed = {
-  candidate_specs: CandidateSpec[];
+  candidate_specs: SeedCandidateSpec[];
 };
 const evidencePath = join(repoRoot, evidenceRelative);
 if (!existsSync(evidencePath)) {
@@ -274,24 +279,104 @@ if (!existsSync(evidencePath)) {
     `${evidenceRelative}: frozen candidate specification is required for replay`,
   );
 }
-const candidateSpecs = readJson<FrozenEvidenceSeed>(evidencePath).candidate_specs;
+const candidateSpecs = readJson<FrozenEvidenceSeed>(evidencePath).candidate_specs
+  .map((spec): CandidateSpec => {
+    const base: Omit<CandidateSpec, "verdict" | "proposed"> = {
+      candidate_key: spec.candidate_key,
+      gtfs_route_id: spec.gtfs_route_id,
+      occurrence_id: spec.occurrence_id,
+      route_record_id: spec.route_record_id,
+      treatment_record_id: spec.treatment_record_id,
+      block_id: spec.block_id,
+      quote: spec.quote,
+      candidate_stop_list_source: spec.candidate_stop_list_source,
+      dates: spec.dates,
+      expected_schedule_passenger_shapes:
+        spec.expected_schedule_passenger_shapes,
+      expected_pre_pattern_ids: spec.expected_pre_pattern_ids,
+      expected_post_pattern_ids: spec.expected_post_pattern_ids,
+      expected_matched_post_pattern_ids:
+        spec.expected_matched_post_pattern_ids,
+      expected_comparison_ids: spec.expected_comparison_ids,
+      source_gap_codes: spec.source_gap_codes,
+      occurrence_decision_path: spec.occurrence_decision_path,
+    };
+    if (spec.treatment_record_id ===
+        "treatment_qm8-east-34-stop-addition-2025") {
+      return {
+        ...base,
+        verdict: "positive_extent_and_grain_proposed",
+        proposed: spec.proposed
+          ? {
+            ...spec.proposed,
+            scope:
+              "weekday_trip_subset_two_component_containing_patterns",
+          }
+          : null,
+      };
+    }
+    if (spec.treatment_record_id === "treatment_q28-limited-stops-2025") {
+      return {
+        ...base,
+        verdict: "positive_extent_proposed_grain_blocked",
+        proposed: {
+          extent: "bounded_segment",
+          component: "Northern Blvd",
+          scope: "source_literal_bounded_extent_grain_unresolved",
+        },
+      };
+    }
+    if (spec.treatment_record_id === "treatment_q84-limited-stops-2025") {
+      return {
+        ...base,
+        verdict: "positive_extent_proposed_grain_blocked",
+        proposed: {
+          extent: "bounded_segment",
+          component: "Merrick Blvd",
+          scope: "source_literal_bounded_extent_grain_unresolved",
+        },
+      };
+    }
+    return {
+      ...base,
+      proposed: spec.proposed,
+      verdict: spec.verdict === "positive_extent_and_grain_proposed"
+        ? "positive_extent_and_grain_proposed"
+        : "source_gap_blocked_extent_and_grain",
+    };
+  });
 
 const candidateKeyHash = sortedHash(candidateSpecs.map((row) => row.candidate_key));
-const positives = candidateSpecs.filter((row) =>
+const positiveExtentAndGrain = candidateSpecs.filter((row) =>
   row.verdict === "positive_extent_and_grain_proposed"
 );
-const terminals = candidateSpecs.filter((row) =>
-  row.verdict === "receipt_terminal_unresolved_preserved"
+const positiveExtentOnly = candidateSpecs.filter((row) =>
+  row.verdict === "positive_extent_proposed_grain_blocked"
 );
+const blockedExtentAndGrain = candidateSpecs.filter((row) =>
+  row.verdict === "source_gap_blocked_extent_and_grain"
+);
+const sourceGapCandidates = [
+  ...positiveExtentOnly,
+  ...blockedExtentAndGrain,
+];
 if (
   candidateSpecs.length !== PLAN040_PACKAGE_13_CANDIDATE_COUNT ||
-  positives.length !== PLAN040_PACKAGE_13_POSITIVE_COUNT ||
-  terminals.length !== PLAN040_PACKAGE_13_TERMINAL_COUNT ||
+  positiveExtentAndGrain.length !==
+    PLAN040_PACKAGE_13_POSITIVE_EXTENT_AND_GRAIN_COUNT ||
+  positiveExtentOnly.length !== PLAN040_PACKAGE_13_POSITIVE_EXTENT_ONLY_COUNT ||
+  blockedExtentAndGrain.length !==
+    PLAN040_PACKAGE_13_BLOCKED_EXTENT_AND_GRAIN_COUNT ||
+  sourceGapCandidates.length !== PLAN040_PACKAGE_13_SOURCE_GAP_COUNT ||
   candidateKeyHash !== PLAN040_PACKAGE_13_CANDIDATE_KEY_SHA256 ||
-  sortedHash(positives.map((row) => row.candidate_key)) !==
-    PLAN040_PACKAGE_13_POSITIVE_KEY_SHA256 ||
-  sortedHash(terminals.map((row) => row.candidate_key)) !==
-    PLAN040_PACKAGE_13_TERMINAL_KEY_SHA256
+  sortedHash(positiveExtentAndGrain.map((row) => row.candidate_key)) !==
+    PLAN040_PACKAGE_13_POSITIVE_EXTENT_AND_GRAIN_KEY_SHA256 ||
+  sortedHash(positiveExtentOnly.map((row) => row.candidate_key)) !==
+    PLAN040_PACKAGE_13_POSITIVE_EXTENT_ONLY_KEY_SHA256 ||
+  sortedHash(blockedExtentAndGrain.map((row) => row.candidate_key)) !==
+    PLAN040_PACKAGE_13_BLOCKED_EXTENT_AND_GRAIN_KEY_SHA256 ||
+  sortedHash(sourceGapCandidates.map((row) => row.candidate_key)) !==
+    PLAN040_PACKAGE_13_SOURCE_GAP_KEY_SHA256
 ) {
   throw new Error("Package 13 frozen candidate partition drifted");
 }
@@ -718,11 +803,25 @@ type CandidateComparison = {
   pre_patterns: JsonValue[];
   post_patterns: JsonValue[];
   schedule_matched_post_pattern_ids: string[];
+  component_containing_post_pattern_ids: string[];
   selected_comparison_ids: string[];
   comparisons: HistoricalPatternComparison[];
   exact_identifier_policy: string;
   changed_identifier_equivalence_authorized: false;
   reused_lineage: ReturnType<typeof reusedLineage>;
+};
+const componentContainingPatternIds = (
+  spec: CandidateSpec,
+  patterns: HistoricalFullStopPattern[],
+  matchedPatternIds: string[],
+): string[] => {
+  if (spec.proposed?.extent !== "stop_set") return matchedPatternIds;
+  const componentIds = new Set(spec.proposed.component_ids ?? []);
+  return matchedPatternIds.filter((patternId) => {
+    const pattern = patterns.find((row) => row.pattern_id === patternId);
+    return pattern?.stops.some((stop) => componentIds.has(stop.stop_id)) ??
+      false;
+  });
 };
 const candidateComparisons: CandidateComparison[] = candidateSpecs.map((spec) => {
   const block = blockById.get(spec.block_id);
@@ -795,6 +894,11 @@ const candidateComparisons: CandidateComparison[] = candidateSpecs.map((spec) =>
     post_patterns: post.patterns.map((row) =>
       patternInventory(row) as unknown as JsonValue),
     schedule_matched_post_pattern_ids: patternIds(matched),
+    component_containing_post_pattern_ids: componentContainingPatternIds(
+      spec,
+      post.patterns,
+      patternIds(matched),
+    ),
     selected_comparison_ids: selectedComparisons.map((row) => row!.comparison_id),
     comparisons: completeComparisons,
     exact_identifier_policy:
@@ -818,6 +922,8 @@ const comparisonReceiptBody = {
     accepted_calendar_and_calendar_dates_expanded: true,
     complete_ordered_stop_chains: true,
     comparison_inventory: "all_candidate_pre_post_pattern_pairs",
+    stop_set_pattern_scope_policy:
+      "each proposed grain pattern must contain at least one authorized component stop_id",
     schedule_passenger_policy: "any_trip_type_except_2_3_4",
     excluded_nonrevenue_trip_types: ["2", "3", "4"],
     exact_identifier_policy:
@@ -858,37 +964,57 @@ if (comparisonReceipt.sha256 !==
   throw new Error("Package 13 comparison receipt hash drifted");
 }
 
-const terminalEntries = terminals.map((spec) => ({
-  candidate_key: spec.candidate_key,
-  occurrence_id: spec.occurrence_id,
-  route_record_id: spec.route_record_id,
-  treatment_record_id: spec.treatment_record_id,
-  contract: "member-extent-absence-receipt-v1",
-  surfaces: ["member_extent", "member_grain"],
-  semantic_verdict: "reviewed_terminal_nonauthorizing_gap",
-  projected_ledger_verdict: "absent_in_source",
-  literal_exact_absence: false,
-  gap_codes: spec.terminal_gap_codes,
-  source_statement_evidence_id:
-    `mta_queens_bus_network_redesign_service_changes#${spec.block_id}`,
-  comparison_receipt_anchor:
-    `${comparisonReceipt.source_id}#candidate=${spec.candidate_key}`,
-  authorizes_occurrence: false,
-  authorizes_study: false,
-  authorizes_cross_product: false,
-  authorizes_decision_persistence: false,
-}));
-const terminalReceiptBody = {
+const sourceGapEntries = sourceGapCandidates.map((spec) => {
+  const blockedSurfaces = spec.verdict ===
+      "positive_extent_proposed_grain_blocked"
+    ? ["member_grain"]
+    : ["member_extent", "member_grain"];
+  const blockedReason = spec.source_gap_codes.join("+");
+  return {
+    candidate_key: spec.candidate_key,
+    occurrence_id: spec.occurrence_id,
+    route_record_id: spec.route_record_id,
+    treatment_record_id: spec.treatment_record_id,
+    contract: "member-evidence-source-gap-block-receipt-v1",
+    blocked_surfaces: blockedSurfaces,
+    resolved_surfaces: spec.verdict ===
+        "positive_extent_proposed_grain_blocked"
+      ? ["member_extent"]
+      : [],
+    semantic_verdict: "blocked_upstream",
+    prospective_ledger_handling: Object.fromEntries(
+      blockedSurfaces.map((surface) =>
+        [surface, `blocked_upstream:${blockedReason}`]
+      ),
+    ),
+    absence_projection_prohibited_for_unresolved_grain: true,
+    source_statement_present: true,
+    literal_exact_absence: false,
+    gap_codes: spec.source_gap_codes,
+    source_statement_evidence_id:
+      `mta_queens_bus_network_redesign_service_changes#${spec.block_id}`,
+    comparison_receipt_anchor:
+      `${comparisonReceipt.source_id}#candidate=${spec.candidate_key}`,
+    authorizes_occurrence: false,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+    authorizes_decision_persistence: false,
+  };
+});
+const sourceGapReceiptBody = {
   schema_version: 1,
-  receipt_id: "plan-040-qbnr-bus-stop-package-13-terminal-gaps-v1",
-  source_id: "plan_040_qbnr_bus_stop_package_13_terminal_gaps",
+  receipt_id: "plan-040-qbnr-bus-stop-package-13-source-gap-blocks-v1",
+  source_id: "plan_040_qbnr_bus_stop_package_13_source_gap_blocks",
   package_id: PLAN040_QBNR_BUS_STOP_PACKAGE_13,
-  candidate_count: terminalEntries.length,
-  candidate_key_sha256: sortedHash(terminalEntries.map((row) => row.candidate_key)),
+  candidate_count: sourceGapEntries.length,
+  candidate_key_sha256:
+    sortedHash(sourceGapEntries.map((row) => row.candidate_key)),
   exact_absence_count: PLAN040_PACKAGE_13_EXACT_ABSENCE_COUNT,
-  terminal_semantics:
-    "candidate-specific unresolved evidence gap; never a literal source absence",
-  candidates: terminalEntries,
+  contract_semantics:
+    "candidate-specific source gap blocks authority without claiming source absence",
+  absence_projection_prohibited_for_unresolved_grain: true,
+  prospective_ledger_prefix: "blocked_upstream:",
+  candidates: sourceGapEntries,
   comparison_receipt: comparisonReceipt,
   replay_derived: true,
   normal_file_verified: true,
@@ -898,12 +1024,15 @@ const terminalReceiptBody = {
   authorizes_cross_product: false,
   authorizes_decision_persistence: false,
 } satisfies JsonValue;
-writeImmutableNormalFile(join(repoRoot, terminalRelative), terminalReceiptBody);
-const terminalReceipt: Plan040Package13ReceiptRef = {
-  path: terminalRelative,
-  sha256: sha256(stableBytes(terminalReceiptBody)),
-  receipt_id: "plan-040-qbnr-bus-stop-package-13-terminal-gaps-v1",
-  source_id: "plan_040_qbnr_bus_stop_package_13_terminal_gaps",
+writeImmutableNormalFile(
+  join(repoRoot, sourceGapRelative),
+  sourceGapReceiptBody,
+);
+const sourceGapReceipt: Plan040Package13ReceiptRef = {
+  path: sourceGapRelative,
+  sha256: sha256(stableBytes(sourceGapReceiptBody)),
+  receipt_id: "plan-040-qbnr-bus-stop-package-13-source-gap-blocks-v1",
+  source_id: "plan_040_qbnr_bus_stop_package_13_source_gap_blocks",
   normal_file_verified: true,
   replay_derived: true,
   authorizes_occurrence: false,
@@ -911,8 +1040,8 @@ const terminalReceipt: Plan040Package13ReceiptRef = {
   authorizes_cross_product: false,
   authorizes_decision_persistence: false,
 };
-if (terminalReceipt.sha256 !== PLAN040_PACKAGE_13_TERMINAL_RECEIPT_SHA256) {
-  throw new Error("Package 13 terminal receipt hash drifted");
+if (sourceGapReceipt.sha256 !== PLAN040_PACKAGE_13_SOURCE_GAP_RECEIPT_SHA256) {
+  throw new Error("Package 13 source-gap receipt hash drifted");
 }
 
 const decisionFiles = readdirSync(join(
@@ -957,9 +1086,10 @@ const selectedPatternIds = (
   spec: CandidateSpec,
   comparison: CandidateComparison,
 ): string[] => {
+  const componentContaining = comparison.component_containing_post_pattern_ids;
   if (spec.treatment_record_id ===
       "treatment_qm63-midtown-stop-additions-2025") {
-    return comparison.schedule_matched_post_pattern_ids.filter((id) => {
+    return componentContaining.filter((id) => {
       const pattern = comparison.post_patterns.find((row) =>
         (row as { pattern_id: string }).pattern_id === id
       ) as { direction_id: string } | undefined;
@@ -970,7 +1100,7 @@ const selectedPatternIds = (
   const direction = scope.includes("direction_0") ? "0"
     : scope.includes("direction_1") ? "1"
     : null;
-  return comparison.schedule_matched_post_pattern_ids.filter((id) => {
+  return componentContaining.filter((id) => {
     if (!direction) return true;
     const pattern = comparison.post_patterns.find((row) =>
       (row as { pattern_id: string }).pattern_id === id
@@ -1003,10 +1133,13 @@ const buildExtent = (
     }],
     evidence_bindings: bindings,
     missing_roles: [],
-    rationale:
-      "The proposal is limited to the exact source statement, accepted initial-launch " +
-      "calendar expansion, passenger schedule slice, and candidate-specific ordered " +
-      "full-stop evidence. Changed identifiers remain unresolved.",
+    rationale: spec.verdict === "positive_extent_proposed_grain_blocked"
+      ? "The exact source literal identifies the bounded treatment segment. " +
+        "This spatial proposal does not resolve the blocked service grain."
+      : "The proposal is limited to the exact source statement, accepted " +
+        "initial-launch calendar expansion, passenger schedule slice, and " +
+        "candidate-specific ordered full-stop evidence. Changed identifiers " +
+        "remain unresolved.",
     reviewed_at: "1970-01-01T00:00:00Z",
     reviewed_by: "pending-plan-040-package-13-dual-independent-review",
   };
@@ -1056,6 +1189,31 @@ const buildGrain = (
     reviewed_by: "pending-plan-040-package-13-dual-independent-review",
   };
 };
+const buildBlockedGrain = (
+  spec: CandidateSpec,
+  extentDecision: MemberExtentDecision,
+  bindings: ExactEvidenceBinding[],
+): MemberGrainDecision => ({
+  schema_version: 1,
+  contract_id: "member-grain-decision-v1",
+  decision_id:
+    `member-grain-review:plan040-package13-${spec.treatment_record_id}`,
+  occurrence_id: spec.occurrence_id,
+  route_record_id: spec.route_record_id,
+  gtfs_route_id: spec.gtfs_route_id,
+  treatment_record_id: spec.treatment_record_id,
+  member_extent_decision_id: extentDecision.decision_id,
+  service_scope: {
+    kind: "unresolved",
+    missing_roles: sorted(spec.source_gap_codes),
+  },
+  lineage_segments: [],
+  evidence_bindings: bindings,
+  rationale:
+    "Candidate validation inputs remain incomplete. No service modality is asserted.",
+  reviewed_at: "1970-01-01T00:00:00Z",
+  reviewed_by: "pending-plan-040-package-13-dual-independent-review",
+});
 
 const candidates: Plan040Package13CandidateEvidence[] =
   candidateSpecs.map((spec) => {
@@ -1101,6 +1259,14 @@ const candidates: Plan040Package13CandidateEvidence[] =
         comparison.reused_lineage.source_package!,
         comparison.reused_lineage.source_decision_id,
       )] : []),
+      ...(spec.verdict !== "positive_extent_and_grain_proposed"
+        ? [binding(
+          spec,
+          "candidate_source_gap_block_receipt",
+          sourceGapReceipt.source_id,
+          `${sourceGapReceipt.source_id}#candidate=${spec.candidate_key}`,
+        )]
+        : []),
     ]);
     let proposedExtent: MemberExtentDecision | null = null;
     let proposedGrain: MemberGrainDecision | null = null;
@@ -1109,6 +1275,15 @@ const candidates: Plan040Package13CandidateEvidence[] =
       proposedGrain = buildGrain(
         spec,
         comparison,
+        proposedExtent,
+        exactBindings,
+      );
+    } else if (
+      spec.verdict === "positive_extent_proposed_grain_blocked"
+    ) {
+      proposedExtent = buildExtent(spec, exactBindings);
+      proposedGrain = buildBlockedGrain(
+        spec,
         proposedExtent,
         exactBindings,
       );
@@ -1144,16 +1319,18 @@ const candidates: Plan040Package13CandidateEvidence[] =
         selected_comparison_ids: comparison.selected_comparison_ids,
         reused_lineage: comparison.reused_lineage,
       },
-      terminal_receipt: spec.verdict ===
-          "receipt_terminal_unresolved_preserved"
+      source_gap_block_receipt: spec.verdict !==
+          "positive_extent_and_grain_proposed"
         ? {
-          receipt: terminalReceipt,
+          receipt: sourceGapReceipt,
           candidate_anchor:
-            `${terminalReceipt.source_id}#candidate=${spec.candidate_key}`,
-          semantic_verdict: "reviewed_terminal_nonauthorizing_gap",
-          projected_ledger_verdict: "absent_in_source",
+            `${sourceGapReceipt.source_id}#candidate=${spec.candidate_key}`,
+          semantic_verdict: "blocked_upstream",
+          prospective_ledger_handling:
+            `blocked_upstream:${spec.source_gap_codes.join("+")}`,
+          absence_projection_prohibited_for_unresolved_grain: true,
           literal_exact_absence: false,
-          gap_codes: spec.terminal_gap_codes,
+          gap_codes: spec.source_gap_codes,
         }
         : null,
       preserved_scope_gap: spec.proposed?.preserved_gap ?? null,
@@ -1231,12 +1408,19 @@ const evidence = {
   manifest_id: "plan-040-qbnr-bus-stop-package-13-evidence-freeze-v1",
   package_id: PLAN040_QBNR_BUS_STOP_PACKAGE_13,
   candidate_count: candidates.length,
-  positive_proposal_count: positives.length,
-  terminal_receipt_count: terminals.length,
+  positive_extent_and_grain_count: positiveExtentAndGrain.length,
+  positive_extent_only_blocked_grain_count: positiveExtentOnly.length,
+  blocked_extent_and_grain_count: blockedExtentAndGrain.length,
+  source_gap_block_receipt_count: sourceGapCandidates.length,
   exact_absence_count: PLAN040_PACKAGE_13_EXACT_ABSENCE_COUNT,
   candidate_key_sha256: PLAN040_PACKAGE_13_CANDIDATE_KEY_SHA256,
-  positive_candidate_key_sha256: PLAN040_PACKAGE_13_POSITIVE_KEY_SHA256,
-  terminal_candidate_key_sha256: PLAN040_PACKAGE_13_TERMINAL_KEY_SHA256,
+  positive_extent_and_grain_key_sha256:
+    PLAN040_PACKAGE_13_POSITIVE_EXTENT_AND_GRAIN_KEY_SHA256,
+  positive_extent_only_key_sha256:
+    PLAN040_PACKAGE_13_POSITIVE_EXTENT_ONLY_KEY_SHA256,
+  blocked_extent_and_grain_key_sha256:
+    PLAN040_PACKAGE_13_BLOCKED_EXTENT_AND_GRAIN_KEY_SHA256,
+  source_gap_key_sha256: PLAN040_PACKAGE_13_SOURCE_GAP_KEY_SHA256,
   candidate_specs: candidateSpecs,
   immutable_inputs: {
     initial_scope_provenance: INITIAL_SCOPE_PROVENANCE,
@@ -1245,7 +1429,7 @@ const evidence = {
     upstream_pins: UPSTREAM_PINS,
   },
   comparison_receipt: comparisonReceipt,
-  terminal_receipt: terminalReceipt,
+  source_gap_block_receipt: sourceGapReceipt,
   candidates,
   preserved_sibling_count: preservedSiblings.length,
   preserved_sibling_key_sha256:
@@ -1260,8 +1444,10 @@ const evidence = {
     dual_independent_review_required: true,
     dual_review_follows_separately: true,
   },
-  proposed_extent_decision_count: positives.length,
-  proposed_grain_decision_count: positives.length,
+  proposed_extent_decision_count:
+    positiveExtentAndGrain.length + positiveExtentOnly.length,
+  proposed_positive_grain_decision_count: positiveExtentAndGrain.length,
+  proposed_blocked_grain_decision_count: positiveExtentOnly.length,
   persisted_extent_decision_count: 0,
   persisted_grain_decision_count: 0,
   gate_created: false,
@@ -1285,22 +1471,24 @@ const draft = buildPlan040Package13Draft({
   preservedSiblings,
   exclusions,
   comparisonReceipt,
-  terminalReceipt,
+  sourceGapReceipt,
 });
 writeStable(join(repoRoot, draftRelative), draft);
 
 process.stdout.write(`${stableJson({
   package_id: PLAN040_QBNR_BUS_STOP_PACKAGE_13,
   candidate_count: candidates.length,
-  positive_count: positives.length,
-  terminal_count: terminals.length,
+  positive_extent_and_grain_count: positiveExtentAndGrain.length,
+  positive_extent_only_blocked_grain_count: positiveExtentOnly.length,
+  blocked_extent_and_grain_count: blockedExtentAndGrain.length,
+  source_gap_block_count: sourceGapCandidates.length,
   exact_absence_count: PLAN040_PACKAGE_13_EXACT_ABSENCE_COUNT,
   preserved_sibling_count: preservedSiblings.length,
   exclusion_count: exclusions.length,
   comparison_receipt_path: comparisonRelative,
   comparison_receipt_sha256: comparisonReceipt.sha256,
-  terminal_receipt_path: terminalRelative,
-  terminal_receipt_sha256: terminalReceipt.sha256,
+  source_gap_receipt_path: sourceGapRelative,
+  source_gap_receipt_sha256: sourceGapReceipt.sha256,
   evidence_path: evidenceRelative,
   evidence_sha256: evidenceSha256,
   draft_path: draftRelative,
