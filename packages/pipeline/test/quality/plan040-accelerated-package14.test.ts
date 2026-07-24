@@ -1,5 +1,12 @@
 import { createHash } from "node:crypto";
-import { lstatSync, readFileSync } from "node:fs";
+import {
+  lstatSync,
+  mkdtempSync,
+  readFileSync,
+  symlinkSync,
+  writeFileSync,
+} from "node:fs";
+import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, expect, test } from "bun:test";
 import { repoRoot } from "@mta-wiki/core/paths";
@@ -22,6 +29,7 @@ import {
   PLAN040_PACKAGE_14_SOURCE_GAP_KEY_SHA256,
   plan040Package14SortedHash,
   validatePlan040Package14Discovery,
+  writePlan040Package14ImmutableNormalFile,
   type Plan040Package14Discovery,
 } from "../../src/quality/plan040-accelerated-package14.js";
 
@@ -475,12 +483,19 @@ describe("Plan 040 accelerated Package 14 evidence freeze", () => {
     expect(proposal?.extent_components[0]?.identity_namespace).toBe(
       "source_literal_v1",
     );
-    expect(proposal?.extent_components[0]?.identifiers).toHaveLength(9);
     expect(
-      proposal?.extent_components[0]?.identifiers.every((value) =>
-        value.startsWith("eastbound:") || value.startsWith("westbound:")
-      ),
-    ).toBe(true);
+      [...(proposal?.extent_components[0]?.identifiers ?? [])].sort(),
+    ).toEqual([
+      "eastbound:Amsterdam Avenue",
+      "eastbound:Central Park West",
+      "eastbound:Columbus Avenue",
+      "eastbound:First Avenue",
+      "eastbound:Madison Avenue",
+      "westbound:Central Park West",
+      "westbound:Columbus Avenue",
+      "westbound:Fifth Avenue",
+      "westbound:York Avenue & E 87th Street",
+    ]);
   });
 
   test("all 28 source statements remain nonabsence blocked overlays", () => {
@@ -550,5 +565,35 @@ describe("Plan 040 accelerated Package 14 evidence freeze", () => {
     expect(evidence.authorizes_study).toBe(false);
     expect(evidence.authorizes_cross_product).toBe(false);
     expect(evidence.authorizes_decision_persistence).toBe(false);
+  });
+
+  test("immutable receipt writes refuse drift and non-normal paths", () => {
+    const root = mkdtempSync(join(tmpdir(), "plan040-package14-immutable-"));
+    const receipt = join(root, "receipt.json");
+    const missingCheck = join(root, "missing-check.json");
+    const target = join(root, "target.json");
+    const link = join(root, "link.json");
+    const value = { receipt_id: "fixture", schema_version: 1 };
+    writePlan040Package14ImmutableNormalFile(receipt, value, false);
+    const original = readFileSync(receipt, "utf8");
+    expect(() =>
+      writePlan040Package14ImmutableNormalFile(receipt, value, false)
+    ).not.toThrow();
+    expect(readFileSync(receipt, "utf8")).toBe(original);
+    expect(() =>
+      writePlan040Package14ImmutableNormalFile(
+        receipt,
+        { receipt_id: "drift", schema_version: 1 },
+        false,
+      )
+    ).toThrow("Refusing to overwrite frozen receipt");
+    expect(() =>
+      writePlan040Package14ImmutableNormalFile(missingCheck, value, true)
+    ).toThrow("Missing frozen receipt");
+    writeFileSync(target, "{}\n");
+    symlinkSync(target, link);
+    expect(() =>
+      writePlan040Package14ImmutableNormalFile(link, value, false)
+    ).toThrow("Frozen receipt is not a normal file");
   });
 });

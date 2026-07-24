@@ -1,4 +1,10 @@
 import { createHash } from "node:crypto";
+import {
+  existsSync,
+  lstatSync,
+  readFileSync,
+  writeFileSync,
+} from "node:fs";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
 
@@ -7,7 +13,7 @@ export const PLAN040_ACCELERATED_PACKAGE_14 =
 export const PLAN040_PACKAGE_14_BASE_CHECKPOINT_COMMIT =
   "7519ccab0813ba94078a52c11eb087f157831b4d" as const;
 export const PLAN040_PACKAGE_14_DISCOVERY_SHA256 =
-  "b1f090843ea26b76c305fc62a1fcae3085451f5872077822d36c2b141634f30c" as const;
+  "36e09927e3ac775d081d84ff042f2165733cc79e5d8e48490f8f057da75c2d62" as const;
 export const PLAN040_PACKAGE_14_CANDIDATE_COUNT = 36 as const;
 export const PLAN040_PACKAGE_14_POSITIVE_COUNT = 8 as const;
 export const PLAN040_PACKAGE_14_SOURCE_GAP_COUNT = 28 as const;
@@ -155,6 +161,30 @@ export const plan040Package14SortedHash = (
 ): string => sha256(`${[...values].sort().join("\n")}\n`);
 export const plan040Package14RowHash = (value: JsonValue): string =>
   sha256(`${stableJson(value)}\n`);
+
+export function writePlan040Package14ImmutableNormalFile(
+  path: string,
+  value: JsonValue,
+  checkOnly: boolean,
+): void {
+  const bytes = `${stableJson(value)}\n`;
+  if (existsSync(path)) {
+    const stat = lstatSync(path);
+    if (!stat.isFile() || stat.isSymbolicLink()) {
+      throw new Error(`Frozen receipt is not a normal file: ${path}`);
+    }
+    if (readFileSync(path, "utf8") !== bytes) {
+      throw new Error(`Refusing to overwrite frozen receipt ${path}`);
+    }
+    return;
+  }
+  if (checkOnly) throw new Error(`Missing frozen receipt ${path}`);
+  writeFileSync(path, bytes);
+  const stat = lstatSync(path);
+  if (!stat.isFile() || stat.isSymbolicLink()) {
+    throw new Error(`Created receipt is not a normal file: ${path}`);
+  }
+}
 
 const assertNoAuthority = (value: Plan040Package14Discovery): void => {
   if (

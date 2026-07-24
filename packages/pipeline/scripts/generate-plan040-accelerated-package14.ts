@@ -28,6 +28,7 @@ import {
   buildPlan040Package14Evidence,
   plan040Package14RowHash,
   validatePlan040Package14Discovery,
+  writePlan040Package14ImmutableNormalFile,
   type Plan040Package14Candidate,
   type Plan040Package14Discovery,
   type Plan040Package14Partition,
@@ -120,6 +121,12 @@ const writeStable = (path: string, value: JsonValue): void => {
   }
   writeFileSync(absolute, bytes);
 };
+const writeImmutableReceipt = (path: string, value: JsonValue): void =>
+  writePlan040Package14ImmutableNormalFile(
+    join(repoRoot, path),
+    value,
+    checkOnly,
+  );
 const acquireSourceRoot = process.argv.find((argument) =>
   argument.startsWith("--acquire-q110-chains-root=")
 )?.slice("--acquire-q110-chains-root=".length);
@@ -132,6 +139,10 @@ if (sha256(discoveryBytes) !== PLAN040_PACKAGE_14_DISCOVERY_SHA256) {
 const discovery = JSON.parse(
   discoveryBytes.toString("utf8"),
 ) as Plan040Package14Discovery;
+writeImmutableReceipt(
+  paths.discovery,
+  discovery as unknown as JsonValue,
+);
 validatePlan040Package14Discovery(discovery);
 
 const q110Summary = discovery.q110_positive_rederivation as {
@@ -205,7 +216,7 @@ if (acquireSourceRoot !== undefined) {
     loadPatterns(q110Summary.post_snapshot_id, q110Summary.post_service_date),
     q110Summary.post_patterns,
   );
-  writeStable(paths.q110Chains, {
+  writeImmutableReceipt(paths.q110Chains, {
     schema_version: 1,
     receipt_id: "plan-040-accelerated-package-14-q110-full-stop-chains-v1",
     candidate_key:
@@ -248,6 +259,10 @@ const q110Chains = readJson<{
   }>;
   corrected_first_week_diff_used: false;
 }>(paths.q110Chains);
+writeImmutableReceipt(
+  paths.q110Chains,
+  q110Chains as unknown as JsonValue,
+);
 for (const [actual, expected] of [
   [q110Chains.pre_patterns, q110Summary.pre_patterns],
   [q110Chains.post_patterns, q110Summary.post_patterns],
@@ -457,12 +472,12 @@ receipts.currentFreeze = {
   authorizes_decision_persistence: false,
 };
 
-writeStable(paths.qbnr6, receipts.qbnr6);
-writeStable(paths.express20, receipts.express20);
-writeStable(paths.ace7, receipts.ace7);
-writeStable(paths.legacySbs3, receipts.legacySbs3);
-writeStable(paths.sourceGaps, receipts.sourceGaps);
-writeStable(paths.currentFreeze, receipts.currentFreeze);
+writeImmutableReceipt(paths.qbnr6, receipts.qbnr6);
+writeImmutableReceipt(paths.express20, receipts.express20);
+writeImmutableReceipt(paths.ace7, receipts.ace7);
+writeImmutableReceipt(paths.legacySbs3, receipts.legacySbs3);
+writeImmutableReceipt(paths.sourceGaps, receipts.sourceGaps);
+writeImmutableReceipt(paths.currentFreeze, receipts.currentFreeze);
 
 const receiptRefs: Record<string, { path: string; sha256: string }> = {
   discovery: {
