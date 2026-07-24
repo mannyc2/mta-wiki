@@ -123,6 +123,91 @@ const stableBytes = (value: unknown): string =>
 const uniqueSorted = (values: readonly string[]): string[] =>
   [...new Set(values.filter(Boolean))].sort();
 
+const Q67_CORRECTION_MEMBER_METADATA = [
+  {
+    member: "agency.txt",
+    rows: 1,
+    sha1: "b2d926f7126f8a9066adcb72698f44aba5620d69",
+  },
+  {
+    member: "calendar.txt",
+    rows: 15,
+    sha1: "91183ad2187f37991e266ca1f549774384614726",
+  },
+  {
+    member: "calendar_dates.txt",
+    rows: 180,
+    sha1: "2cad2b1716cc4b899bc6a208307131cf44279dd8",
+  },
+  {
+    member: "routes.txt",
+    rows: 269,
+    sha1: "6cbdad5c2d3bb7b667ff54ef6f7fcc3b78d3a7a9",
+  },
+  {
+    member: "shapes.txt",
+    rows: 32512,
+    sha1: "1ee10b10185e9222b58808451b82af72d8e86aff",
+  },
+  {
+    member: "stop_times.txt",
+    rows: 652139,
+    sha1: "00c4676204737f35524627514a0e11f8f6ad65a7",
+  },
+  {
+    member: "stops.txt",
+    rows: 1391,
+    sha1: "bd9d9f4d48ae4472d689c3dce8bbcb85421cb475",
+  },
+  {
+    member: "trips.txt",
+    rows: 24721,
+    sha1: "08d77fa5c44ba2d052cb8151765f47b13c573848",
+  },
+] as const;
+
+const Q67_OPERATIONAL_MEMBER_NAMES = [
+  "calendar.txt",
+  "calendar_dates.txt",
+  "shapes.txt",
+  "stop_times.txt",
+  "stops.txt",
+  "trips.txt",
+] as const;
+
+const PHASE_2_INITIAL_MEMBER_METADATA = [
+  {
+    member: "calendar.txt",
+    rows: 32,
+    sha1: "8ef559e10f82b267b39e86a22f8bcaaf14304c5d",
+  },
+  {
+    member: "calendar_dates.txt",
+    rows: 274,
+    sha1: "9939b0e8589bd5e1e7e43c82246587aca6b4aed7",
+  },
+  {
+    member: "routes.txt",
+    rows: 92,
+    sha1: "1cb2b8d4e64e1d1221f0d978e66c8156dc1997d1",
+  },
+  {
+    member: "stop_times.txt",
+    rows: 1074297,
+    sha1: "9f1a325655e2c52ec2740afabecc4ff48596ad5d",
+  },
+  {
+    member: "stops.txt",
+    rows: 2760,
+    sha1: "2ff7b942a055ff5b3b05ddcc8800a04aed18e6f1",
+  },
+  {
+    member: "trips.txt",
+    rows: 45401,
+    sha1: "47ade1af05e1267eb5a3a1b618fcf5aba22af94b",
+  },
+] as const;
+
 function parseJsonl<T>(path: string): T[] {
   const text = read(path).trim();
   return text ? text.split("\n").map((line) => JSON.parse(line) as T) : [];
@@ -317,6 +402,175 @@ function verifyGtfsReceipt(sourceId: string): {
     receipt_sha256: sha256(receiptText),
     zip_path: zipPath,
     members,
+  };
+}
+
+function compareContentAddressedMembers(
+  metadata: readonly {
+    member: string;
+    rows: number;
+    sha1: string;
+  }[],
+  localFeed: ReturnType<typeof verifyGtfsReceipt>,
+) {
+  const localByName = new Map(
+    localFeed.members.map((member) => [member.member, member]),
+  );
+  return metadata.map((expected) => {
+    const local = localByName.get(expected.member);
+    if (!local) {
+      return {
+        member: expected.member,
+        metadata_rows: expected.rows,
+        metadata_sha1: expected.sha1,
+        local_source_id: localFeed.receipt.source_id,
+        local_rows: null,
+        local_bytes: null,
+        local_sha1: null,
+        local_sha256: null,
+        member_match_status: "local_member_unavailable" as const,
+      };
+    }
+    const matches = local.sha1 === expected.sha1;
+    return {
+      member: expected.member,
+      metadata_rows: expected.rows,
+      metadata_sha1: expected.sha1,
+      local_source_id: localFeed.receipt.source_id,
+      local_rows: local.rows,
+      local_bytes: local.bytes,
+      local_sha1: local.sha1,
+      local_sha256: local.sha256,
+      member_match_status: matches
+        ? "exact_sha1_content_match" as const
+        : "sha1_mismatch_not_target_member" as const,
+    };
+  });
+}
+
+async function scanStopTimesForTripIds(
+  sourceId: string,
+  tripIds: ReadonlySet<string>,
+): Promise<{ totalRows: number; matchedRows: number; stopIds: string[] }> {
+  const path = absolute(
+    `raw/sources/${sourceId}/extracted/stop_times.txt`,
+  );
+  const lines = createInterface({
+    input: createReadStream(path),
+    crlfDelay: Infinity,
+  });
+  let header: string[] | undefined;
+  let totalRows = 0;
+  let matchedRows = 0;
+  const stopIds = new Set<string>();
+  for await (const line of lines) {
+    if (!header) {
+      header = parseCsvRows(`${line}\n`)[0];
+      if (
+        !header ||
+        header[0] !== "trip_id" ||
+        header[3] !== "stop_id"
+      ) {
+        throw new Error(`${sourceId}: stop_times header drifted`);
+      }
+      continue;
+    }
+    if (!line) continue;
+    totalRows += 1;
+    const tripId = line.slice(0, line.indexOf(",")).replace(/^"|"$/gu, "");
+    if (!tripIds.has(tripId)) continue;
+    const cells = parseCsvRows(`${line}\n`)[0]!;
+    matchedRows += 1;
+    if (cells[3]) stopIds.add(cells[3]);
+  }
+  return { totalRows, matchedRows, stopIds: [...stopIds].sort() };
+}
+
+async function buildQ67CorrectionSensitivity(sourceId: string) {
+  const trips = parseGtfsRecords(
+    read(`raw/sources/${sourceId}/extracted/trips.txt`),
+  );
+  const shapes = parseGtfsRecords(
+    read(`raw/sources/${sourceId}/extracted/shapes.txt`),
+  );
+  const q67Trips = trips.filter((trip) => trip.route_id === "Q67");
+  const q67ShapeRows = shapes.filter((shape) =>
+    (shape.shape_id ?? "").startsWith("Q67"));
+  const q67ShapeIds = uniqueSorted(
+    q67ShapeRows.map((shape) => shape.shape_id ?? ""),
+  );
+  const q67TripIds = new Set(
+    q67Trips.map((trip) => trip.trip_id ?? "").filter(Boolean),
+  );
+  const stopTimeSensitivity = await scanStopTimesForTripIds(
+    sourceId,
+    q67TripIds,
+  );
+  const stops = parseGtfsRecords(
+    read(`raw/sources/${sourceId}/extracted/stops.txt`),
+  );
+  const q67ReferencedStops = stops.filter((stop) =>
+    stopTimeSensitivity.stopIds.includes(stop.stop_id ?? ""));
+  const serviceDates = (["2025-06-29", "2025-06-30"] as const).map(
+    (serviceDate) => {
+      const activeServices = activeServiceIds(sourceId, serviceDate);
+      const active = new Set(activeServices);
+      const activeTrips = q67Trips.filter((trip) =>
+        active.has(trip.service_id ?? ""));
+      return {
+        service_date: serviceDate,
+        active_service_ids: activeServices,
+        active_service_id_sha256: sha256(
+          `${activeServices.join("\n")}\n`,
+        ),
+        q67_trip_count: activeTrips.length as 0,
+        q67_shape_ids: uniqueSorted(
+          activeTrips.map((trip) => trip.shape_id ?? ""),
+        ) as [],
+      };
+    },
+  );
+  if (
+    q67Trips.length !== 0 ||
+    q67ShapeRows.length !== 0 ||
+    stopTimeSensitivity.totalRows !== 652139 ||
+    stopTimeSensitivity.matchedRows !== 0 ||
+    stopTimeSensitivity.stopIds.length !== 0 ||
+    stops.length !== 1391 ||
+    q67ReferencedStops.length !== 0 ||
+    serviceDates.some((date) =>
+      date.active_service_ids.length !== 5 ||
+      date.q67_trip_count !== 0 ||
+      date.q67_shape_ids.length !== 0)
+  ) {
+    throw new Error(
+      "Q67: correction-matching operational members no longer have the audited zero-trip/shape result",
+    );
+  }
+  return {
+    correction_member_source_id:
+      "gtfs_static_20250626_queens_post_qbnr" as const,
+    verified_operational_member_names: [
+      ...Q67_OPERATIONAL_MEMBER_NAMES,
+    ] as [
+      "calendar.txt",
+      "calendar_dates.txt",
+      "shapes.txt",
+      "stop_times.txt",
+      "stops.txt",
+      "trips.txt",
+    ],
+    unavailable_member_names: ["routes.txt"] as ["routes.txt"],
+    service_dates: serviceDates,
+    q67_route_trip_row_count: q67Trips.length as 0,
+    q67_shape_row_count: q67ShapeRows.length as 0,
+    q67_shape_ids: q67ShapeIds as [],
+    stop_time_rows_scanned: stopTimeSensitivity.totalRows as 652139,
+    q67_stop_time_row_count: stopTimeSensitivity.matchedRows as 0,
+    stop_rows_scanned: stops.length as 1391,
+    q67_referenced_stop_count: q67ReferencedStops.length as 0,
+    ordered_chain_count: 0 as const,
+    ordered_chain_status: "unavailable_zero_q67_trips" as const,
   };
 }
 
@@ -602,11 +856,50 @@ for (const candidate of candidates) {
 const q67PreFeed = verifyGtfsReceipt(
   "gtfs_static_20250625_busco_pre_qbnr",
 );
+const q67InitialPostFeed = verifyGtfsReceipt(
+  "gtfs_static_20250626_queens_post_qbnr",
+);
 const phase2PreFeed = verifyGtfsReceipt(
   "gtfs_static_20250626_busco_post_qbnr",
 );
 if (phase2PreFeed.receipt.zip_sha1 !== PLAN040_PHASE_2_PRE_BUSCO_SHA1) {
   throw new Error("Plan 040 Package 3 Phase 2 pre-feed SHA-1 drifted");
+}
+const q67CorrectionMemberComparison = compareContentAddressedMembers(
+  Q67_CORRECTION_MEMBER_METADATA,
+  q67InitialPostFeed,
+);
+const q67ExactMembers = q67CorrectionMemberComparison.filter((member) =>
+  member.member_match_status === "exact_sha1_content_match");
+const q67RouteMember = q67CorrectionMemberComparison.find((member) =>
+  member.member === "routes.txt");
+if (
+  q67ExactMembers.length !== 7 ||
+  q67RouteMember?.metadata_sha1 !==
+    "6cbdad5c2d3bb7b667ff54ef6f7fcc3b78d3a7a9" ||
+  q67RouteMember.local_sha1 !==
+    "e65023c197262bf504c450dd5bde21041a92dc6d" ||
+  q67RouteMember.member_match_status !==
+    "sha1_mismatch_not_target_member" ||
+  Q67_OPERATIONAL_MEMBER_NAMES.some((name) =>
+    !q67ExactMembers.some((member) => member.member === name))
+) {
+  throw new Error(
+    "Q67: audited 7-of-8 correction member identity no longer replays",
+  );
+}
+const q67CorrectionSensitivity = await buildQ67CorrectionSensitivity(
+  q67InitialPostFeed.receipt.source_id,
+);
+const phase2InitialMemberComparison = compareContentAddressedMembers(
+  PHASE_2_INITIAL_MEMBER_METADATA,
+  phase2PreFeed,
+);
+if (phase2InitialMemberComparison.some((member) =>
+  member.member_match_status === "exact_sha1_content_match")) {
+  throw new Error(
+    "Phase 2: a previously unavailable initial-feed member now matches locally and requires review",
+  );
 }
 const preFeedBySource = new Map([
   [q67PreFeed.receipt.source_id, q67PreFeed],
@@ -713,36 +1006,30 @@ const acquisition = {
       stop_count: 1391,
       trip_count: 24721,
       stop_time_count: 652139,
-      members: [
-        {
-          member: "calendar.txt",
-          sha1: "91183ad2187f37991e266ca1f549774384614726",
-          sha256: null,
-        },
-        {
-          member: "calendar_dates.txt",
-          sha1: "2cad2b1716cc4b899bc6a208307131cf44279dd8",
-          sha256: null,
-        },
-        {
-          member: "stop_times.txt",
-          sha1: "00c4676204737f35524627514a0e11f8f6ad65a7",
-          sha256: null,
-        },
-        {
-          member: "stops.txt",
-          sha1: "bd9d9f4d48ae4472d689c3dce8bbcb85421cb475",
-          sha256: null,
-        },
-        {
-          member: "trips.txt",
-          sha1: "08d77fa5c44ba2d052cb8151765f47b13c573848",
-          sha256: null,
-        },
-      ],
-      exact_bytes_status: "blocked_exact_bytes_unavailable",
-      calendar_expansion_status: "not_computed_exact_bytes_unavailable",
-      ordered_stop_comparison_status: "not_computed_exact_bytes_unavailable",
+      metadata_observed_on: "2026-07-24",
+      metadata_member_count: 8,
+      exact_local_member_match_count: 7,
+      unavailable_or_mismatched_member_count: 1,
+      members: q67CorrectionMemberComparison,
+      initial_post_container: {
+        source_id: q67InitialPostFeed.receipt.source_id,
+        receipt_path: q67InitialPostFeed.receipt_path,
+        receipt_sha256: q67InitialPostFeed.receipt_sha256,
+        zip_sha1: q67InitialPostFeed.receipt.zip_sha1,
+        zip_sha256: q67InitialPostFeed.receipt.zip_sha256,
+      },
+      whole_zip_identity:
+        "not_established_correction_container_differs_and_exact_correction_zip_bytes_are_unavailable",
+      member_identity:
+        "seven_of_eight_sha1_content_matches_including_all_six_operational_sensitivity_members",
+      zip_bytes_status: "blocked_whole_zip_bytes_unavailable",
+      routes_member_status:
+        "blocked_correction_routes_sha1_differs_from_staged_initial_routes",
+      calendar_expansion_status:
+        "computed_from_verified_content_addressed_members",
+      ordered_stop_comparison_status:
+        "unavailable_zero_q67_trips_in_verified_trips_member",
+      correction_sensitivity: q67CorrectionSensitivity,
     },
     phase_2_initial_busco: {
       version_role: "phase_2_initial_busco_full_stop_inventory",
@@ -763,47 +1050,16 @@ const acquisition = {
       stop_count: 2760,
       trip_count: 45401,
       stop_time_count: 1074297,
-      members: [
-        {
-          member: "calendar.txt",
-          rows: 32,
-          sha1: "8ef559e10f82b267b39e86a22f8bcaaf14304c5d",
-          sha256: null,
-        },
-        {
-          member: "calendar_dates.txt",
-          rows: 274,
-          sha1: "9939b0e8589bd5e1e7e43c82246587aca6b4aed7",
-          sha256: null,
-        },
-        {
-          member: "routes.txt",
-          rows: 92,
-          sha1: "1cb2b8d4e64e1d1221f0d978e66c8156dc1997d1",
-          sha256: null,
-        },
-        {
-          member: "stop_times.txt",
-          rows: 1074297,
-          sha1: "9f1a325655e2c52ec2740afabecc4ff48596ad5d",
-          sha256: null,
-        },
-        {
-          member: "stops.txt",
-          rows: 2760,
-          sha1: "2ff7b942a055ff5b3b05ddcc8800a04aed18e6f1",
-          sha256: null,
-        },
-        {
-          member: "trips.txt",
-          rows: 45401,
-          sha1: "47ade1af05e1267eb5a3a1b618fcf5aba22af94b",
-          sha256: null,
-        },
-      ],
-      exact_bytes_status: "blocked_exact_bytes_unavailable",
-      calendar_expansion_status: "not_computed_exact_bytes_unavailable",
-      ordered_stop_comparison_status: "not_computed_exact_bytes_unavailable",
+      metadata_member_count: 6,
+      exact_local_member_match_count: 0,
+      members: phase2InitialMemberComparison,
+      zip_bytes_status: "blocked_whole_zip_bytes_unavailable",
+      member_bytes_status:
+        "blocked_no_verified_required_member_matches",
+      calendar_expansion_status:
+        "not_computed_required_member_bytes_unavailable",
+      ordered_stop_comparison_status:
+        "not_computed_required_member_bytes_unavailable",
     },
   },
   explicitly_separate_non_substitute_versions: {
@@ -830,7 +1086,7 @@ const acquisition = {
         "Common Crawl exact origin URL",
       ],
       outcome:
-        "metadata_identity_found_but_no_exact_zip_or_member_bytes_accepted",
+        "exact_correction_zip_unavailable_but_7_of_8_content_addressed_members_verified_locally_routes_member_mismatch",
     },
     {
       target_sha1: PLAN040_PHASE_2_INITIAL_BUSCO_SHA1,
@@ -897,6 +1153,21 @@ const evidenceCandidates: Plan040Package3CandidateEvidence[] =
       routeId === "Q67" ? "2025-06-30" : "2025-08-31",
       routeId,
     );
+    if (
+      routeId === "Q67" &&
+      (
+        stableJson(postSchedule.passenger_shape_ids as JsonValue) !==
+          stableJson(["Q670022", "Q670023"] as JsonValue) ||
+        postSchedule.passenger_shape_ids.some((shapeId) =>
+          new Set<string>(
+            q67CorrectionSensitivity.q67_shape_ids,
+          ).has(shapeId))
+      )
+    ) {
+      throw new Error(
+        "Q67: June 30 schedule shapes no longer replay as absent from exact correction shapes",
+      );
+    }
     const activeShapes = new Set(preInventory.active_shape_ids);
     const matchedPassenger = preSchedule.passenger_shape_ids.filter((shapeId) =>
       activeShapes.has(shapeId));
@@ -912,10 +1183,20 @@ const evidenceCandidates: Plan040Package3CandidateEvidence[] =
           : "reviewed_unresolved_unmatched_or_ambiguous"
         : "matched_no_unresolved_shapes";
     const unresolvedGapCodes = [
-      "exact_post_gtfs_zip_bytes_unavailable",
-      "post_calendar_and_calendar_dates_expansion_not_computed",
-      "ordered_full_stop_diff_not_computed",
-      "schedule_to_post_gtfs_binding_unresolved",
+      ...(routeId === "Q67"
+        ? [
+          "q67_correction_zip_container_unavailable",
+          "q67_correction_routes_member_unavailable",
+          "q67_exact_operational_members_contain_zero_route_trips",
+          "q67_schedule_shapes_absent_from_exact_correction_shapes",
+          "ordered_full_stop_diff_unavailable_zero_q67_trips",
+        ]
+        : [
+          "exact_post_gtfs_zip_bytes_unavailable",
+          "post_calendar_and_calendar_dates_expansion_not_computed",
+          "ordered_full_stop_diff_not_computed",
+          "schedule_to_post_gtfs_binding_unresolved",
+        ]),
       ...(unmatchedPassenger.length > 0
         ? ["pre_schedule_shape_unmatched_to_active_gtfs"]
         : []),
@@ -970,11 +1251,21 @@ const evidenceCandidates: Plan040Package3CandidateEvidence[] =
             ? PLAN040_Q67_CORRECTION_SHA1
             : PLAN040_PHASE_2_INITIAL_BUSCO_SHA1,
         zip_sha256: null,
-        exact_bytes_status: "blocked_exact_bytes_unavailable",
+        zip_bytes_status: "blocked_whole_zip_bytes_unavailable",
+        member_bytes_status:
+          routeId === "Q67"
+            ? "verified_content_addressed_operational_members_6_of_6"
+            : "blocked_no_verified_required_member_matches",
         calendar_expansion_status:
-          "not_computed_exact_bytes_unavailable",
+          routeId === "Q67"
+            ? "computed_from_verified_content_addressed_members"
+            : "not_computed_required_member_bytes_unavailable",
         ordered_stop_comparison_status:
-          "not_computed_exact_bytes_unavailable",
+          routeId === "Q67"
+            ? "unavailable_zero_q67_trips_in_verified_trips_member"
+            : "not_computed_required_member_bytes_unavailable",
+        q67_correction_sensitivity:
+          routeId === "Q67" ? q67CorrectionSensitivity : null,
       },
       schedule_validation: {
         pre: preSchedule,
@@ -988,9 +1279,11 @@ const evidenceCandidates: Plan040Package3CandidateEvidence[] =
           status: preStatus,
         },
         post_binding: {
-          status: "blocked_post_gtfs_bytes_unavailable",
-          passenger_shape_ids_unmatched_pending_exact_gtfs:
-            postSchedule.passenger_shape_ids,
+          status:
+            routeId === "Q67"
+              ? "reviewed_unresolved_zero_gtfs_trips_and_unmatched_schedule_shapes"
+              : "blocked_post_gtfs_required_members_unavailable",
+          unmatched_passenger_shape_ids: postSchedule.passenger_shape_ids,
           excluded_nonrevenue_shape_ids:
             postSchedule.nonrevenue_shape_ids,
           ambiguous_shape_ids: postSchedule.ambiguous_shape_ids,
@@ -1030,7 +1323,7 @@ const evidence = {
     acquisition_blocked_no_terminalization: 13,
   },
   exact_search_rule:
-    "candidate-specific official stop-list and service-change blocks; no guessed paths; unavailable GTFS bytes never represented as accepted",
+    "candidate-specific official stop-list and service-change blocks; content-addressed GTFS members accepted only by exact SHA-1 match; member identity never implies whole-ZIP identity; no guessed paths",
   version_separation: {
     launch_initial_pre_phase_2_sha1: PLAN040_PHASE_2_PRE_BUSCO_SHA1,
     q67_correction_sha1: PLAN040_Q67_CORRECTION_SHA1,

@@ -103,9 +103,45 @@ export type Plan040Package3CandidateEvidence = {
     target_date: string;
     version_sha1: string;
     zip_sha256: null;
-    exact_bytes_status: "blocked_exact_bytes_unavailable";
-    calendar_expansion_status: "not_computed_exact_bytes_unavailable";
-    ordered_stop_comparison_status: "not_computed_exact_bytes_unavailable";
+    zip_bytes_status: "blocked_whole_zip_bytes_unavailable";
+    member_bytes_status:
+      | "verified_content_addressed_operational_members_6_of_6"
+      | "blocked_no_verified_required_member_matches";
+    calendar_expansion_status:
+      | "computed_from_verified_content_addressed_members"
+      | "not_computed_required_member_bytes_unavailable";
+    ordered_stop_comparison_status:
+      | "unavailable_zero_q67_trips_in_verified_trips_member"
+      | "not_computed_required_member_bytes_unavailable";
+    q67_correction_sensitivity: {
+      correction_member_source_id:
+        "gtfs_static_20250626_queens_post_qbnr";
+      verified_operational_member_names: [
+        "calendar.txt",
+        "calendar_dates.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt",
+      ];
+      unavailable_member_names: ["routes.txt"];
+      service_dates: Array<{
+        service_date: "2025-06-29" | "2025-06-30";
+        active_service_ids: string[];
+        active_service_id_sha256: string;
+        q67_trip_count: 0;
+        q67_shape_ids: [];
+      }>;
+      q67_route_trip_row_count: 0;
+      q67_shape_row_count: 0;
+      q67_shape_ids: [];
+      stop_time_rows_scanned: 652139;
+      q67_stop_time_row_count: 0;
+      stop_rows_scanned: 1391;
+      q67_referenced_stop_count: 0;
+      ordered_chain_count: 0;
+      ordered_chain_status: "unavailable_zero_q67_trips";
+    } | null;
   };
   schedule_validation: {
     pre: Plan040Package3ScheduleSlice;
@@ -121,8 +157,10 @@ export type Plan040Package3CandidateEvidence = {
         | "reviewed_unresolved_unmatched_or_ambiguous";
     };
     post_binding: {
-      status: "blocked_post_gtfs_bytes_unavailable";
-      passenger_shape_ids_unmatched_pending_exact_gtfs: string[];
+      status:
+        | "blocked_post_gtfs_required_members_unavailable"
+        | "reviewed_unresolved_zero_gtfs_trips_and_unmatched_schedule_shapes";
+      unmatched_passenger_shape_ids: string[];
       excluded_nonrevenue_shape_ids: string[];
       ambiguous_shape_ids: string[];
     };
@@ -219,12 +257,37 @@ export function buildPlan040Package3Draft(input: {
       );
     }
     if (
-      candidate.required_post_inventory.exact_bytes_status !==
-        "blocked_exact_bytes_unavailable" ||
+      candidate.required_post_inventory.zip_bytes_status !==
+        "blocked_whole_zip_bytes_unavailable" ||
       candidate.required_post_inventory.zip_sha256 !== null
     ) {
       throw new Error(
-        `${candidate.gtfs_route_id}: unavailable exact post bytes gained unsupported provenance`,
+        `${candidate.gtfs_route_id}: unavailable exact post ZIP gained unsupported provenance`,
+      );
+    }
+    if (candidate.gtfs_route_id === "Q67") {
+      if (
+        candidate.required_post_inventory.member_bytes_status !==
+          "verified_content_addressed_operational_members_6_of_6" ||
+        candidate.required_post_inventory.calendar_expansion_status !==
+          "computed_from_verified_content_addressed_members" ||
+        candidate.required_post_inventory.ordered_stop_comparison_status !==
+          "unavailable_zero_q67_trips_in_verified_trips_member" ||
+        candidate.required_post_inventory.q67_correction_sensitivity === null
+      ) {
+        throw new Error("Q67: verified correction member sensitivity drifted");
+      }
+    } else if (
+      candidate.required_post_inventory.member_bytes_status !==
+        "blocked_no_verified_required_member_matches" ||
+      candidate.required_post_inventory.calendar_expansion_status !==
+        "not_computed_required_member_bytes_unavailable" ||
+      candidate.required_post_inventory.ordered_stop_comparison_status !==
+        "not_computed_required_member_bytes_unavailable" ||
+      candidate.required_post_inventory.q67_correction_sensitivity !== null
+    ) {
+      throw new Error(
+        `${candidate.gtfs_route_id}: Phase 2 member-byte blocker drifted`,
       );
     }
   }

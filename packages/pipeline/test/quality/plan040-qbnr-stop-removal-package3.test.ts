@@ -63,20 +63,52 @@ type Acquisition = {
     q67_first_week_correction: {
       version_sha1: string;
       zip_sha256: null;
-      members: Array<{ member: string; sha1: string; sha256: null }>;
-      exact_bytes_status: string;
+      exact_local_member_match_count: number;
+      members: Array<{
+        member: string;
+        metadata_rows: number;
+        metadata_sha1: string;
+        local_rows: number | null;
+        local_bytes: number | null;
+        local_sha1: string | null;
+        local_sha256: string | null;
+        member_match_status: string;
+      }>;
+      zip_bytes_status: string;
+      routes_member_status: string;
       calendar_expansion_status: string;
+      ordered_stop_comparison_status: string;
+      whole_zip_identity: string;
+      correction_sensitivity: {
+        q67_route_trip_row_count: number;
+        q67_shape_row_count: number;
+        q67_shape_ids: string[];
+        stop_time_rows_scanned: number;
+        q67_stop_time_row_count: number;
+        stop_rows_scanned: number;
+        q67_referenced_stop_count: number;
+        ordered_chain_count: number;
+        service_dates: Array<{
+          service_date: string;
+          active_service_ids: string[];
+          q67_trip_count: number;
+          q67_shape_ids: string[];
+        }>;
+      };
     };
     phase_2_initial_busco: {
       version_sha1: string;
       zip_sha256: null;
+      exact_local_member_match_count: number;
       members: Array<{
         member: string;
-        rows: number;
-        sha1: string;
-        sha256: null;
+        metadata_rows: number;
+        metadata_sha1: string;
+        local_sha1: string | null;
+        member_match_status: string;
       }>;
-      exact_bytes_status: string;
+      zip_bytes_status: string;
+      member_bytes_status: string;
       calendar_expansion_status: string;
     };
   };
@@ -113,13 +145,13 @@ describe("Plan 040 QBNR Package 3 evidence-only acquisition draft", () => {
     ) as Plan040Package3Draft;
 
     expect(sha256(acquisitionBytes)).toBe(
-      "c82ca6c81b0075aeb550425cda7f55c38ee79347b2ccb0cb92aa9d0c605c29f5",
+      "7417deb4c56f12d98a9ec61f486cad9b0caeb7121819b1824e874643454f697e",
     );
     expect(sha256(evidenceBytes)).toBe(
-      "ba6bcf3ecfd576806668b00086433d2b45f3a1eaa016ee7dd13d297f3e92fbed",
+      "149809f528571fc3e49808a61ee83670121db536e691ffae88b70579e8e9ccf8",
     );
     expect(sha256(draftBytes)).toBe(
-      "294094a5f8fa3f54bf44bafec7e610bec4ddf26a61c7118f5c9613dae16b6939",
+      "1a3f446553955e75c373831ea282b1b4c0a2ceda2bfaec5f00a737d270b5fdbd",
     );
     expect(plan040Package3ReplayHash(draft as unknown as JsonValue)).toBe(
       sha256(draftBytes),
@@ -194,23 +226,92 @@ describe("Plan 040 QBNR Package 3 evidence-only acquisition draft", () => {
     expect(q67).toMatchObject({
       version_sha1: PLAN040_Q67_CORRECTION_SHA1,
       zip_sha256: null,
-      exact_bytes_status: "blocked_exact_bytes_unavailable",
-      calendar_expansion_status: "not_computed_exact_bytes_unavailable",
+      exact_local_member_match_count: 7,
+      zip_bytes_status: "blocked_whole_zip_bytes_unavailable",
+      routes_member_status:
+        "blocked_correction_routes_sha1_differs_from_staged_initial_routes",
+      calendar_expansion_status:
+        "computed_from_verified_content_addressed_members",
+      ordered_stop_comparison_status:
+        "unavailable_zero_q67_trips_in_verified_trips_member",
+      whole_zip_identity:
+        "not_established_correction_container_differs_and_exact_correction_zip_bytes_are_unavailable",
     });
-    expect(q67.members.every((member) =>
-      member.sha1.length === 40 && member.sha256 === null)).toBe(true);
+    expect(q67.members).toHaveLength(8);
+    expect(q67.members.filter((member) =>
+      member.member_match_status === "exact_sha1_content_match"))
+      .toHaveLength(7);
+    expect(q67.members.find((member) => member.member === "routes.txt"))
+      .toMatchObject({
+        metadata_rows: 269,
+        metadata_sha1: "6cbdad5c2d3bb7b667ff54ef6f7fcc3b78d3a7a9",
+        local_rows: 323,
+        local_sha1: "e65023c197262bf504c450dd5bde21041a92dc6d",
+        member_match_status: "sha1_mismatch_not_target_member",
+      });
+    expect(q67.members.find((member) => member.member === "shapes.txt"))
+      .toMatchObject({
+        metadata_rows: 32512,
+        metadata_sha1: "1ee10b10185e9222b58808451b82af72d8e86aff",
+        local_sha1: "1ee10b10185e9222b58808451b82af72d8e86aff",
+        member_match_status: "exact_sha1_content_match",
+      });
+    expect(q67.members.filter((member) =>
+      member.member_match_status === "exact_sha1_content_match")
+      .every((member) =>
+        member.local_sha1 === member.metadata_sha1 &&
+        member.local_sha256?.length === 64 &&
+        (member.local_bytes ?? 0) > 0)).toBe(true);
+    const activeServiceCounts =
+      q67.correction_sensitivity.service_dates.map((date) =>
+        date.active_service_ids.length);
+    expect(q67.correction_sensitivity).toMatchObject({
+      q67_route_trip_row_count: 0,
+      q67_shape_row_count: 0,
+      q67_shape_ids: [],
+      stop_time_rows_scanned: 652139,
+      q67_stop_time_row_count: 0,
+      stop_rows_scanned: 1391,
+      q67_referenced_stop_count: 0,
+      ordered_chain_count: 0,
+      service_dates: [
+        {
+          service_date: "2025-06-29",
+          active_service_ids: expect.arrayContaining([
+            "JA_C5-Sunday",
+          ]),
+          q67_trip_count: 0,
+          q67_shape_ids: [],
+        },
+        {
+          service_date: "2025-06-30",
+          active_service_ids: expect.arrayContaining([
+            "JA_C5-Weekday",
+          ]),
+          q67_trip_count: 0,
+          q67_shape_ids: [],
+        },
+      ],
+    });
+    expect(activeServiceCounts).toEqual([5, 5]);
     const phase2 =
       acquisition.required_exact_post_versions.phase_2_initial_busco;
     expect(phase2).toMatchObject({
       version_sha1: PLAN040_PHASE_2_INITIAL_BUSCO_SHA1,
       zip_sha256: null,
-      exact_bytes_status: "blocked_exact_bytes_unavailable",
-      calendar_expansion_status: "not_computed_exact_bytes_unavailable",
+      exact_local_member_match_count: 0,
+      zip_bytes_status: "blocked_whole_zip_bytes_unavailable",
+      member_bytes_status:
+        "blocked_no_verified_required_member_matches",
+      calendar_expansion_status:
+        "not_computed_required_member_bytes_unavailable",
     });
     expect(phase2.members.every((member) =>
-      member.rows > 0 &&
-      member.sha1.length === 40 &&
-      member.sha256 === null)).toBe(true);
+      member.metadata_rows > 0 &&
+      member.metadata_sha1.length === 40 &&
+      member.local_sha1?.length === 40 &&
+      member.member_match_status ===
+        "sha1_mismatch_not_target_member")).toBe(true);
     expect(
       acquisition.explicitly_separate_non_substitute_versions
         .phase_2_later_busco,
@@ -270,9 +371,40 @@ describe("Plan 040 QBNR Package 3 evidence-only acquisition draft", () => {
             .toBe(true);
         }
       }
-      expect(candidate.schedule_validation.post_binding.status)
-        .toBe("blocked_post_gtfs_bytes_unavailable");
+      expect(candidate.schedule_validation.post_binding.status).toBe(
+        candidate.gtfs_route_id === "Q67"
+          ? "reviewed_unresolved_zero_gtfs_trips_and_unmatched_schedule_shapes"
+          : "blocked_post_gtfs_required_members_unavailable",
+      );
     }
+    expect(draft.candidates.find((row) => row.gtfs_route_id === "Q67"))
+      .toMatchObject({
+        required_post_inventory: {
+          zip_bytes_status: "blocked_whole_zip_bytes_unavailable",
+          member_bytes_status:
+            "verified_content_addressed_operational_members_6_of_6",
+          calendar_expansion_status:
+            "computed_from_verified_content_addressed_members",
+          q67_correction_sensitivity: {
+            q67_route_trip_row_count: 0,
+            q67_shape_row_count: 0,
+          },
+        },
+        schedule_validation: {
+          post_binding: {
+            status:
+              "reviewed_unresolved_zero_gtfs_trips_and_unmatched_schedule_shapes",
+            unmatched_passenger_shape_ids: ["Q670022", "Q670023"],
+          },
+        },
+        unresolved_gap_codes: [
+          "ordered_full_stop_diff_unavailable_zero_q67_trips",
+          "q67_correction_routes_member_unavailable",
+          "q67_correction_zip_container_unavailable",
+          "q67_exact_operational_members_contain_zero_route_trips",
+          "q67_schedule_shapes_absent_from_exact_correction_shapes",
+        ],
+      });
     expect(draft.candidates.find((row) => row.gtfs_route_id === "Q69"))
       .toMatchObject({
         schedule_validation: {
@@ -325,14 +457,14 @@ describe("Plan 040 QBNR Package 3 evidence-only acquisition draft", () => {
     const draft = readJson<Plan040Package3Draft>(draftPath);
     const candidates = structuredClone(draft.candidates);
     (candidates[0]!.required_post_inventory as {
-      exact_bytes_status: string;
-    }).exact_bytes_status = "accepted_without_bytes";
+      zip_bytes_status: string;
+    }).zip_bytes_status = "accepted_without_bytes";
     expect(() => buildPlan040Package3Draft({
       acquisitionReceiptPath: draft.acquisition_receipt.path,
       acquisitionReceiptSha256: draft.acquisition_receipt.sha256,
       evidenceManifestPath: draft.evidence_manifest.path,
       evidenceManifestSha256: draft.evidence_manifest.sha256,
       candidates,
-    })).toThrow("gained unsupported provenance");
+    })).toThrow("unavailable exact post ZIP gained unsupported provenance");
   });
 });
