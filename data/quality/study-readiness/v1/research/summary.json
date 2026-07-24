@@ -2,13 +2,13 @@
   "schema_version": 1,
   "batch_id": "queens-redesign-extent-priority-v1",
   "target_count": 11,
-  "evidence_complete_existing_occurrence_count": 5,
-  "negative_disposition_count": 6,
+  "evidence_complete_existing_occurrence_count": 8,
+  "negative_disposition_count": 3,
   "new_occurrence_count": 0,
   "exact_missing_role_counts": {
-    "bounded_scope_identity": 4,
-    "scope_modality": 3,
-    "stop_identity": 4
+    "bounded_scope_identity": 2,
+    "scope_modality": 1,
+    "stop_identity": 2
   },
   "notice": "Evidence-complete means every member in the existing occurrence has reviewed extent. It does not authorize Tracker admission; the consumer must migrate the companion contract and issue a new candidate set and approval receipt."
 }

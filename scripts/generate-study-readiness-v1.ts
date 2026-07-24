@@ -26,6 +26,7 @@ import {
   type MemberExtentMissingRole,
   type MemberExtentRow,
 } from "../packages/pipeline/src/quality/study-readiness-v1";
+import { loadMemberExtentDecisions } from "../packages/pipeline/src/quality/member-extent-ledger";
 
 const INPUT_PATH = join(
   repoRoot,
@@ -55,6 +56,10 @@ const QUEENS_EXTENT_DURABILITY_PATH = join(
 const BROOKLYN_RECEIPTS_PATH = join(
   repoRoot,
   "data/quality/relationship-integrity/bus-lane-acquisition/shards/brooklyn-null/receipts.jsonl",
+);
+const ACCEPTED_EXTENT_DECISION_DIR = join(
+  repoRoot,
+  "data/quality/operational-reference/member-extent-ledger-decisions",
 );
 
 const REVIEWED_AT = "2026-07-21T00:00:00.000Z";
@@ -618,7 +623,27 @@ function buildExtentArtifacts(occurrences: JsonObject[], treatmentRecords: JsonO
   decisions.sort((left, right) => extentDecisionKey(left).localeCompare(extentDecisionKey(right)));
   const decisionMap = new Map(decisions.map((decision) => [extentDecisionKey(decision), decision]));
   if (decisionMap.size !== decisions.length) throw new Error("Duplicate member extent decision key");
-  if (decisions.length !== 31) throw new Error(`Expected 31 reviewed extent decisions, received ${decisions.length}`);
+  const denominator = new Set(occurrences.flatMap((occurrence) =>
+    occurrence.routes.flatMap((route: JsonObject) => occurrenceMembers(occurrence).map((member) =>
+      extentDecisionKey({
+        occurrence_id: occurrence.occurrence_id,
+        route_record_id: route.route_record_id,
+        treatment_record_id: member.treatment_record_id,
+      })))));
+  for (const accepted of loadMemberExtentDecisions([ACCEPTED_EXTENT_DECISION_DIR])) {
+    const key = extentDecisionKey(accepted);
+    if (!denominator.has(key)) throw new Error(`${accepted.decision_id}: orphan accepted extent decision`);
+    const prior = decisionMap.get(key);
+    if (prior && prior.resolution !== "unresolved") {
+      throw new Error(`${accepted.decision_id}: accepted decision conflicts with an existing positive decision`);
+    }
+    decisionMap.set(key, accepted);
+  }
+  const effectiveDecisions = [...decisionMap.values()]
+    .sort((left, right) => extentDecisionKey(left).localeCompare(extentDecisionKey(right)));
+  if (effectiveDecisions.length !== 31) {
+    throw new Error(`Expected 31 reviewed extent decisions, received ${effectiveDecisions.length}`);
+  }
 
   const rows = occurrences.flatMap((occurrence) => occurrence.routes.flatMap((route: JsonObject) =>
     occurrenceMembers(occurrence).map((member) => projectMemberExtent({
@@ -644,7 +669,7 @@ function buildExtentArtifacts(occurrences: JsonObject[], treatmentRecords: JsonO
       [kind, rows.filter((row) => row.extent === kind).length]),
   );
   return {
-    decisions,
+    decisions: effectiveDecisions,
     rows,
     summary: {
       schema_version: STUDY_READINESS_SCHEMA_VERSION,
@@ -653,7 +678,7 @@ function buildExtentArtifacts(occurrences: JsonObject[], treatmentRecords: JsonO
       occurrence_count: occurrences.length,
       member_extent_row_count: rows.length,
       eligible_member_extent_row_count: rows.filter((row) => eligibleIds.has(row.occurrence_id)).length,
-      reviewed_decision_count: decisions.length,
+      reviewed_decision_count: effectiveDecisions.length,
       extent_counts: counts,
       evidence_complete_row_count: rows.length - counts.unresolved,
       unresolved_row_count: counts.unresolved,
@@ -863,9 +888,9 @@ function buildStudyArtifacts(input: JsonObject, occurrences: JsonObject[], exten
     row.priority_tier === "priority_1_extent_only_consumer_ready");
   const resolvedTargets = targets.filter((row) =>
     row.current_producer_status === "resolved_requires_downstream_replay");
-  if (reviewedPriorityTargets.length !== 11 || openPriorityTargets.length !== 6 || resolvedTargets.length !== 5) {
+  if (reviewedPriorityTargets.length !== 11 || openPriorityTargets.length !== 3 || resolvedTargets.length !== 8) {
     throw new Error(
-      `Expected 11 reviewed / 6 open priority / 5 replay targets, received ${reviewedPriorityTargets.length}/${openPriorityTargets.length}/${resolvedTargets.length}`,
+      `Expected 11 reviewed / 3 open priority / 8 replay targets, received ${reviewedPriorityTargets.length}/${openPriorityTargets.length}/${resolvedTargets.length}`,
     );
   }
 
@@ -938,8 +963,8 @@ function buildStudyArtifacts(input: JsonObject, occurrences: JsonObject[], exten
   }).sort((left, right) => left.candidate_id.localeCompare(right.candidate_id));
   const completeCount = researchPackets.filter((row) =>
     row.review_disposition === "reviewed_candidate_packet_evidence_complete").length;
-  if (researchPackets.length !== 11 || completeCount !== 5) {
-    throw new Error(`Expected 11 research packets / 5 complete, received ${researchPackets.length}/${completeCount}`);
+  if (researchPackets.length !== 11 || completeCount !== 8) {
+    throw new Error(`Expected 11 research packets / 8 complete, received ${researchPackets.length}/${completeCount}`);
   }
   return {
     bridge,

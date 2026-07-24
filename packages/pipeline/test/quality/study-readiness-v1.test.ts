@@ -58,11 +58,11 @@ describe("study-readiness v1 extent contract", () => {
     expect(summary.member_extent_row_count).toBe(308);
     expect(summary.eligible_member_extent_row_count).toBe(306);
     expect(summary.extent_counts).toEqual({
-      route_wide: 2,
-      bounded_segment: 12,
-      stop_set: 0,
+      route_wide: 4,
+      bounded_segment: 17,
+      stop_set: 3,
       mixed: 0,
-      unresolved: 294,
+      unresolved: 284,
     });
     expect(rows.every((row) => !row.authorizes_study && !row.authorizes_cross_product)).toBe(true);
     expect(rows.filter((row) => row.extent === "unresolved")
@@ -198,11 +198,11 @@ describe("study-readiness v1 Tracker bridge", () => {
     );
     expect(manifest.target_count).toBe(404);
     expect(manifest.historical_source_fixable_target_count).toBe(404);
-    expect(manifest.current_open_target_count).toBe(399);
-    expect(manifest.resolved_requires_downstream_replay_count).toBe(5);
+    expect(manifest.current_open_target_count).toBe(396);
+    expect(manifest.resolved_requires_downstream_replay_count).toBe(8);
     expect(manifest.omitted_current_producer_status).toBe("open_source_fixable_target");
     expect(manifest.reviewed_priority_batch_count).toBe(11);
-    expect(manifest.priority_1_count).toBe(6);
+    expect(manifest.priority_1_count).toBe(3);
     expect(manifest.exhausted_bus_lane_sweep_count).toBe(321);
     expect(manifest.targets.every((row) => row.downstream_rejection_reason.startsWith(
       "source_fixable_"))).toBe(true);
@@ -210,13 +210,13 @@ describe("study-readiness v1 Tracker bridge", () => {
     expect(quarantine.every((row) => row.source_research_can_resolve === false)).toBe(true);
     expect(manifest.targets.filter((row) =>
       row.current_producer_status === "resolved_requires_downstream_replay").map((row) =>
-        row.route_id).sort()).toEqual(["Q45", "Q63", "Q80", "Q86", "Q87"]);
+        row.route_id).sort()).toEqual(["Q45", "Q61", "Q63", "Q80", "Q86", "Q87", "QM44", "QM64"]);
     expect(manifest.targets.filter((row) =>
       row.current_producer_status === "resolved_requires_downstream_replay").every((row) =>
         row.current_producer_missing_roles?.length === 0 && row.downstream_replay_required)).toBe(true);
   });
 
-  it("records five complete existing occurrences and six exact negative findings", () => {
+  it("records eight complete existing occurrences and three exact negative findings", () => {
     const summary = readJson<{
       target_count: number;
       evidence_complete_existing_occurrence_count: number;
@@ -228,13 +228,13 @@ describe("study-readiness v1 Tracker bridge", () => {
       schema_version: 1,
       batch_id: "queens-redesign-extent-priority-v1",
       target_count: 11,
-      evidence_complete_existing_occurrence_count: 5,
-      negative_disposition_count: 6,
+      evidence_complete_existing_occurrence_count: 8,
+      negative_disposition_count: 3,
       new_occurrence_count: 0,
       exact_missing_role_counts: {
-        bounded_scope_identity: 4,
-        scope_modality: 3,
-        stop_identity: 4,
+        bounded_scope_identity: 2,
+        scope_modality: 1,
+        stop_identity: 2,
       },
       notice: expect.any(String),
     });

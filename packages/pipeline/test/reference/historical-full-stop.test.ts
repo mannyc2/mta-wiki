@@ -149,6 +149,30 @@ function candidateSupportFixture(): {
   );
   const companion = readFileSync(companionPath, "utf8").trim().split("\n")
     .map((line) => JSON.parse(line) as MemberExtentRow);
+  const acceptance = JSON.parse(readFileSync(join(
+    repoRoot,
+    "data/quality/operational-reference/historical-full-stop/acceptance-manifest-v2.json",
+  ), "utf8")) as {
+    candidate_support_rows: Array<{
+      occurrence_id: string;
+      route_record_id: string;
+      treatment_record_id: string;
+      current_extent_kind: MemberExtentRow["extent"];
+      current_missing_roles: MemberExtentRow["missing_roles"];
+    }>;
+  };
+  const preAcceptanceState = new Map(acceptance.candidate_support_rows.map((row) => [
+    `${row.occurrence_id}\0${row.route_record_id}\0${row.treatment_record_id}`,
+    row,
+  ]));
+  const preAcceptanceCompanion = companion.map((row) => {
+    const prior = preAcceptanceState.get(
+      `${row.occurrence_id}\0${row.route_record_id}\0${row.treatment_record_id}`,
+    );
+    return prior
+      ? { ...row, extent: prior.current_extent_kind, missing_roles: prior.current_missing_roles }
+      : row;
+  });
   const files = [
     "q61_lineage.json",
     "qm44_stop_and_modality.json",
@@ -167,7 +191,7 @@ function candidateSupportFixture(): {
     };
   });
   return {
-    companion,
+    companion: preAcceptanceCompanion,
     dossiers: artifacts.map((row) => row.dossier),
     artifacts: artifacts.map((row) => row.artifact),
   };

@@ -9,7 +9,10 @@ import { writeForecastRealizationReviewArtifacts } from "@mta-wiki/pipeline/qual
 import { writeOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
 import { writeBusLaneIdentityArtifacts } from "@mta-wiki/pipeline/quality/bus-lane-identity";
 import { writeMemberExtentLedgerArtifacts } from "@mta-wiki/pipeline/quality/member-extent-ledger";
-import { writePlan040ExemplarDecisionDraft } from "@mta-wiki/pipeline/quality/plan-040-exemplar-decisions";
+import {
+  acceptPlan040ExemplarDecisionPackage,
+  writePlan040ExemplarDecisionDraft,
+} from "@mta-wiki/pipeline/quality/plan-040-exemplar-decisions";
 import {
   loadRelationshipCompletenessArtifacts,
   syncRelationshipCompletenessToCanonicalDb,
@@ -66,6 +69,14 @@ const plan040ExemplarDraft: CommandHandler = () => {
     `${result.draft.extent_decision_count}; grain decisions: ${result.draft.grain_decision_count}`,
   );
   console.log(`Spatial resolutions: ${JSON.stringify(result.draft.spatial_resolution_distribution)}`);
+};
+
+const plan040ExemplarAccept: CommandHandler = () => {
+  const result = acceptPlan040ExemplarDecisionPackage();
+  console.log(`Accepted Plan 040 extent decisions: ${relative(repoRoot, result.extentDecisionPath)}`);
+  console.log(`Extent SHA-256: ${result.extentDecisionSha256}; decisions: ${result.extentDecisionCount}`);
+  console.log(`Accepted Plan 040 grain decisions: ${relative(repoRoot, result.grainDecisionPath)}`);
+  console.log(`Grain SHA-256: ${result.grainDecisionSha256}; decisions: ${result.grainDecisionCount}`);
 };
 
 const busLaneIdentityLedger: CommandHandler = () => {
@@ -287,6 +298,7 @@ const relationshipCompleteness: CommandHandler = () => {
 export const qualityCommands = {
   "bus-lane-identity-ledger": busLaneIdentityLedger,
   "member-extent-ledger": memberExtentLedger,
+  "plan-040-exemplar-accept": plan040ExemplarAccept,
   "plan-040-exemplar-draft": plan040ExemplarDraft,
   "operational-coverage": operationalCoverage,
   "coverage-matrix": operationalCoverage,

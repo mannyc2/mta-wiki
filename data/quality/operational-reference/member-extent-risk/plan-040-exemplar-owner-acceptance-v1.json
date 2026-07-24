@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "acceptance_id": "plan-040-exemplar-owner-acceptance-v1",
+  "accepted_at": "2026-07-24T01:20:51Z",
+  "accepted_by": "codex-owner-delegate",
+  "gate": {
+    "path": "data/quality/operational-reference/member-extent-risk/plan-040-exemplar-dual-review-gate-v1.json",
+    "sha256": "0921fda4b89b98f3d63d2d368f222aae5404ca8d475e359ed0dd33f58cf313e2"
+  },
+  "draft": {
+    "path": "data/quality/operational-reference/member-extent-risk/plan-040-exemplar-decision-draft-v1.json",
+    "sha256": "ff5691e184a2472ba3b61b58842bfe415625d268e4417ea18017f8d7c1c38333",
+    "replay_hash": "3f84aa708c199863d5f90ad39031d49cf5bcd94cb563df4f4a0aaf1a7e4d0232"
+  },
+  "candidate_count": 11,
+  "extent_decision_count": {
+    "new": 10,
+    "existing": 1,
+    "effective": 11
+  },
+  "grain_decision_count": 11,
+  "spatial_resolution_distribution": {
+    "bounded_segment": 5,
+    "route_wide": 3,
+    "stop_set": 3
+  },
+  "reviewer_results": {
+    "independent_contract_and_accounting": "approve",
+    "independent_adversarial_candidate_semantics": "approve"
+  },
+  "authorization_state": "owner_accepted_decision_persistence_only",
+  "authorizes_decision_persistence": true,
+  "authorizes_occurrence": false,
+  "authorizes_study": false,
+  "authorizes_cross_product": false
+}

@@ -164,6 +164,33 @@ describe("member extent and grain ledgers", () => {
       .toBe("resolved");
   });
 
+  it("accepts an exact materialized copy of an external decision and rejects drift", () => {
+    const target = row("materialized");
+    const decision = positiveDecision(target);
+    const materialized: MemberExtentRow = {
+      ...target,
+      extent: decision.resolution,
+      components: decision.components,
+      evidence_bindings: decision.evidence_bindings,
+      missing_roles: decision.missing_roles,
+      decision_id: decision.decision_id,
+      rationale: decision.rationale,
+    };
+    const result = buildMemberExtentLedgers({
+      companionRows: [materialized],
+      extentDecisions: [decision],
+    });
+    expect(result.extentRows[0]).toMatchObject({
+      current_extent_kind: "bounded_segment",
+      verdict: "resolved:bounded_segment",
+      verdict_basis: `review:${decision.decision_id}`,
+    });
+    expect(() => buildMemberExtentLedgers({
+      companionRows: [{ ...materialized, rationale: "Drifted materialization." }],
+      extentDecisions: [decision],
+    })).toThrow("conflicts with materialized positive row");
+  });
+
   it("fails closed for conflicting, orphan, and authority-bearing absence receipts", () => {
     const target = row("target");
     expect(() => buildMemberExtentLedgers({

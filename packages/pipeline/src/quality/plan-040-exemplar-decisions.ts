@@ -28,6 +28,22 @@ export const PLAN_040_EXEMPLAR_DRAFT_PATH = join(
   repoRoot,
   "data/quality/operational-reference/member-extent-risk/plan-040-exemplar-decision-draft-v1.json",
 );
+export const PLAN_040_EXEMPLAR_REVIEW_GATE_PATH = join(
+  repoRoot,
+  "data/quality/operational-reference/member-extent-risk/plan-040-exemplar-dual-review-gate-v1.json",
+);
+export const PLAN_040_EXEMPLAR_OWNER_ACCEPTANCE_PATH = join(
+  repoRoot,
+  "data/quality/operational-reference/member-extent-risk/plan-040-exemplar-owner-acceptance-v1.json",
+);
+export const PLAN_040_EXEMPLAR_EXTENT_DECISIONS_PATH = join(
+  repoRoot,
+  "data/quality/operational-reference/member-extent-ledger-decisions/plan-040-exemplar-v1.json",
+);
+export const PLAN_040_EXEMPLAR_GRAIN_DECISIONS_PATH = join(
+  repoRoot,
+  "data/quality/operational-reference/member-grain-decisions/plan-040-exemplar-v1.json",
+);
 const ACCEPTANCE_PATH = join(
   repoRoot,
   "data/quality/operational-reference/historical-full-stop/acceptance-manifest-v2.json",
@@ -75,6 +91,20 @@ export type Plan040ExemplarDecisionDraft = {
   extent_decisions: MemberExtentDecision[];
   grain_decisions: MemberGrainDecision[];
   replay_hash: string;
+  authorizes_occurrence: false;
+  authorizes_study: false;
+  authorizes_cross_product: false;
+};
+
+type Plan040ExemplarOwnerAcceptance = {
+  schema_version: 1;
+  accepted_at: string;
+  accepted_by: string;
+  gate: { path: string; sha256: string };
+  draft: { path: string; sha256: string; replay_hash: string };
+  candidate_count: 11;
+  authorization_state: "owner_accepted_decision_persistence_only";
+  authorizes_decision_persistence: true;
   authorizes_occurrence: false;
   authorizes_study: false;
   authorizes_cross_product: false;
@@ -387,6 +417,11 @@ function buildGrainDecision(
 }
 
 export function buildPlan040ExemplarDecisionDraft(): Plan040ExemplarDecisionDraft {
+  if (existsSync(PLAN_040_EXEMPLAR_OWNER_ACCEPTANCE_PATH) &&
+      existsSync(PLAN_040_EXEMPLAR_DRAFT_PATH)) {
+    return JSON.parse(readFileSync(PLAN_040_EXEMPLAR_DRAFT_PATH, "utf8")) as
+      Plan040ExemplarDecisionDraft;
+  }
   const acceptance = JSON.parse(readFileSync(ACCEPTANCE_PATH, "utf8")) as CandidateAcceptance;
   if (acceptance.covered_candidate_count !== 11 ||
       acceptance.occurrence_authority !== false ||
@@ -503,4 +538,82 @@ export function writePlan040ExemplarDecisionDraft(
     writeFileSync(path, contents, "utf8");
   }
   return { path, sha256: fileSha256(path), draft };
+}
+
+function writeImmutableJson(path: string, value: unknown): void {
+  const contents = `${stableJson(value as JsonValue)}\n`;
+  if (existsSync(path)) {
+    if (readFileSync(path, "utf8") !== contents) {
+      throw new Error(`Refusing to overwrite immutable Plan 040 acceptance artifact ${relative(repoRoot, path)}`);
+    }
+    return;
+  }
+  mkdirSync(dirname(path), { recursive: true });
+  writeFileSync(path, contents, "utf8");
+}
+
+export function acceptPlan040ExemplarDecisionPackage(): {
+  extentDecisionPath: string;
+  extentDecisionSha256: string;
+  grainDecisionPath: string;
+  grainDecisionSha256: string;
+  extentDecisionCount: number;
+  grainDecisionCount: number;
+} {
+  const acceptance = JSON.parse(
+    readFileSync(PLAN_040_EXEMPLAR_OWNER_ACCEPTANCE_PATH, "utf8"),
+  ) as Plan040ExemplarOwnerAcceptance;
+  if (acceptance.schema_version !== 1 ||
+      acceptance.authorization_state !== "owner_accepted_decision_persistence_only" ||
+      acceptance.authorizes_decision_persistence !== true ||
+      acceptance.authorizes_occurrence !== false ||
+      acceptance.authorizes_study !== false ||
+      acceptance.authorizes_cross_product !== false ||
+      acceptance.candidate_count !== 11) {
+    throw new Error("Plan 040 exemplar owner acceptance does not authorize the bounded decision package");
+  }
+  if (acceptance.gate.path !== relative(repoRoot, PLAN_040_EXEMPLAR_REVIEW_GATE_PATH) ||
+      acceptance.gate.sha256 !== fileSha256(PLAN_040_EXEMPLAR_REVIEW_GATE_PATH)) {
+    throw new Error("Plan 040 exemplar owner acceptance has a stale review gate");
+  }
+  if (acceptance.draft.path !== relative(repoRoot, PLAN_040_EXEMPLAR_DRAFT_PATH) ||
+      acceptance.draft.sha256 !== fileSha256(PLAN_040_EXEMPLAR_DRAFT_PATH)) {
+    throw new Error("Plan 040 exemplar owner acceptance has a stale draft");
+  }
+  const draft = JSON.parse(readFileSync(PLAN_040_EXEMPLAR_DRAFT_PATH, "utf8")) as
+    Plan040ExemplarDecisionDraft;
+  if (draft.replay_hash !== acceptance.draft.replay_hash ||
+      draft.candidate_count !== 11 ||
+      draft.extent_decision_count !== 10 ||
+      draft.grain_decision_count !== 11 ||
+      draft.authorizes_occurrence !== false ||
+      draft.authorizes_study !== false ||
+      draft.authorizes_cross_product !== false) {
+    throw new Error("Plan 040 exemplar frozen draft no longer matches owner acceptance");
+  }
+  const extentDecisions = draft.extent_decisions.map((decision) => {
+    const accepted = {
+      ...decision,
+      reviewed_at: acceptance.accepted_at,
+      reviewed_by: acceptance.accepted_by,
+    };
+    validateMemberExtentDecision(accepted);
+    return accepted;
+  });
+  const grainDecisions = draft.grain_decisions.map((decision) =>
+    parseMemberGrainDecision({
+      ...decision,
+      reviewed_at: acceptance.accepted_at,
+      reviewed_by: acceptance.accepted_by,
+    }));
+  writeImmutableJson(PLAN_040_EXEMPLAR_EXTENT_DECISIONS_PATH, { decisions: extentDecisions });
+  writeImmutableJson(PLAN_040_EXEMPLAR_GRAIN_DECISIONS_PATH, { decisions: grainDecisions });
+  return {
+    extentDecisionPath: PLAN_040_EXEMPLAR_EXTENT_DECISIONS_PATH,
+    extentDecisionSha256: fileSha256(PLAN_040_EXEMPLAR_EXTENT_DECISIONS_PATH),
+    grainDecisionPath: PLAN_040_EXEMPLAR_GRAIN_DECISIONS_PATH,
+    grainDecisionSha256: fileSha256(PLAN_040_EXEMPLAR_GRAIN_DECISIONS_PATH),
+    extentDecisionCount: extentDecisions.length,
+    grainDecisionCount: grainDecisions.length,
+  };
 }

@@ -602,7 +602,26 @@ export function buildMemberExtentLedgers(input: {
     const key = extentDecisionKey(current);
     const overlay = extentDecisions.get(key);
     if (overlay && current.extent !== "unresolved") {
-      throw new Error(`${overlay.decision_id}: external extent decisions may overlay only unresolved rows`);
+      const currentProjection = {
+        decision_id: current.decision_id,
+        resolution: current.extent,
+        components: current.components,
+        evidence_bindings: current.evidence_bindings,
+        missing_roles: current.missing_roles,
+        rationale: current.rationale,
+      };
+      const acceptedProjection = {
+        decision_id: overlay.decision_id,
+        resolution: overlay.resolution,
+        components: overlay.components,
+        evidence_bindings: overlay.evidence_bindings,
+        missing_roles: overlay.missing_roles,
+        rationale: overlay.rationale,
+      };
+      if (stableJson(currentProjection as unknown as JsonValue) !==
+          stableJson(acceptedProjection as unknown as JsonValue)) {
+        throw new Error(`${overlay.decision_id}: external extent decision conflicts with materialized positive row`);
+      }
     }
     const absence = absences.get(`member_extent\0${key}`);
     if (absence && (overlay || current.extent !== "unresolved")) {
