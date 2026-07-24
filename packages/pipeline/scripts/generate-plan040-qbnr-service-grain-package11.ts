@@ -1,10 +1,27 @@
 import { createHash } from "node:crypto";
 import { spawnSync } from "node:child_process";
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import {
+  closeSync,
+  existsSync,
+  lstatSync,
+  openSync,
+  readFileSync,
+  readSync,
+  writeFileSync,
+} from "node:fs";
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
+import {
+  fullStopPatternsForDate,
+  type HistoricalFullStopPattern,
+} from "../src/reference/historical-full-stop.js";
+import { loadGtfsStaticSnapshot } from "../src/reference/gtfs-static.js";
+import {
+  loadOperationalSnapshotRegistry,
+  snapshotById,
+} from "../src/reference/snapshot-registry.js";
 import type { MemberGrainDecision } from
   "../src/quality/member-grain-decisions.js";
 import type {
@@ -21,10 +38,13 @@ import {
   PLAN040_PACKAGE_11_Q82_PATTERN_IDS,
   PLAN040_PACKAGE_11_Q86_PATTERN_IDS,
   PLAN040_PACKAGE_11_QM68_COMPARISON_IDS,
+  PLAN040_PACKAGE_11_POSITIVE_PATTERN_PINS,
+  PLAN040_PACKAGE_11_POSITIVE_PATTERN_RECEIPT_SHA256,
   PLAN040_QBNR_SERVICE_GRAIN_PACKAGE_11,
   buildPlan040Package11Draft,
   type Plan040Package11CandidateEvidence,
   type Plan040Package11Exclusion,
+  type Plan040Package11PositivePatternReceiptRef,
 } from "../src/quality/plan040-qbnr-service-grain-package11.js";
 import type {
   ExactEvidenceBinding,
@@ -41,6 +61,9 @@ const evidenceRelative =
 const draftRelative =
   "data/quality/operational-reference/member-extent-risk/" +
   "plan-040-qbnr-service-grain-package-11-evidence-draft-v1.json";
+const positivePatternReceiptRelative =
+  "data/quality/acquisition/receipts/member-extent-evidence/" +
+  "plan-040-qbnr-service-grain-package-11-positive-patterns-v1.json";
 const checkOnly = process.argv.includes("--check");
 
 const sha256 = (value: Uint8Array | string): string =>
@@ -70,6 +93,29 @@ const writeStable = (relative: string, value: JsonValue): void => {
     return;
   }
   writeFileSync(path, bytes);
+};
+const writeImmutableNormalFile = (
+  relative: string,
+  value: JsonValue,
+): void => {
+  const path = join(repoRoot, relative);
+  const bytes = stableBytes(value);
+  if (existsSync(path)) {
+    const stat = lstatSync(path);
+    if (!stat.isFile() || stat.isSymbolicLink()) {
+      throw new Error(`Frozen receipt is not a normal file: ${relative}`);
+    }
+    if (readFileSync(path, "utf8") !== bytes) {
+      throw new Error(`Refusing to overwrite frozen receipt ${relative}`);
+    }
+    return;
+  }
+  if (checkOnly) throw new Error(`Missing frozen receipt ${relative}`);
+  writeFileSync(path, bytes);
+  const stat = lstatSync(path);
+  if (!stat.isFile() || stat.isSymbolicLink()) {
+    throw new Error(`Created receipt is not a normal file: ${relative}`);
+  }
 };
 const assertPinned = (relative: string, expected: string): void => {
   const actual = sha256(readFileSync(join(repoRoot, relative)));
@@ -157,6 +203,31 @@ const pinnedFiles: Array<[string, string]> = [
     "data/quality/operational-reference/member-extent-risk/" +
       "plan-040-qbnr-service-pattern-package-9-evidence-v1.json",
     PLAN040_PACKAGE_11_GLOBAL_PINS.package_9_evidence,
+  ],
+  [
+    "data/quality/operational-reference/member-extent-risk/" +
+      "plan-040-qbnr-service-pattern-package-10d-evidence-v1.json",
+    PLAN040_PACKAGE_11_GLOBAL_PINS.package_10d_evidence,
+  ],
+  [
+    "data/quality/operational-reference/member-extent-risk/" +
+      "plan-040-qbnr-service-pattern-package-10d-dual-review-gate-v1.json",
+    PLAN040_PACKAGE_11_GLOBAL_PINS.package_10d_gate,
+  ],
+  [
+    "data/quality/operational-reference/member-extent-risk/" +
+      "plan-040-qbnr-service-pattern-package-10d-owner-acceptance-v1.json",
+    PLAN040_PACKAGE_11_GLOBAL_PINS.package_10d_acceptance,
+  ],
+  [
+    "data/quality/operational-reference/member-extent-ledger-decisions/" +
+      "plan-040-qbnr-service-pattern-package-10d-v1.json",
+    PLAN040_PACKAGE_11_GLOBAL_PINS.package_10d_extent_decisions,
+  ],
+  [
+    "data/quality/operational-reference/member-grain-decisions/" +
+      "plan-040-qbnr-service-pattern-package-10d-v1.json",
+    PLAN040_PACKAGE_11_GLOBAL_PINS.package_10d_grain_decisions,
   ],
   [
     "raw/sources/gtfs_static_20250615_queens_pre_qbnr/receipt.json",
@@ -340,14 +411,230 @@ const metadata = {
   },
 } as const;
 
+const postSnapshotId = "gtfs-static-20250626-queens-post-qbnr";
+const postSnapshot = loadGtfsStaticSnapshot(
+  snapshotById(loadOperationalSnapshotRegistry(), postSnapshotId),
+  ["calendar", "calendar_dates", "routes", "stops", "stop_times", "trips"],
+  repoRoot,
+  new Set(["Q45", "Q86"]),
+);
+const positivePatterns = ["Q45", "Q86"].flatMap((routeId) =>
+  fullStopPatternsForDate(postSnapshot, "2025-06-29", routeId));
+const patternInventory = (pattern: HistoricalFullStopPattern) => ({
+  pattern_id: pattern.pattern_id,
+  snapshot_id: pattern.snapshot_id,
+  service_date: pattern.service_date,
+  route_id: pattern.route_id,
+  direction_id: pattern.direction_id,
+  trip_count: pattern.trip_count,
+  trip_id_sha256: sortedHash(pattern.trip_ids),
+  shape_ids: pattern.shape_ids,
+  headsigns: pattern.headsigns,
+  period_trip_counts: pattern.period_trip_counts,
+  stop_count: pattern.stops.length,
+  stop_ids: pattern.stops.map((stop) => stop.stop_id),
+  stops: pattern.stops,
+  stop_chain_sha256: sha256(
+    `${pattern.stops.map((stop) => stop.stop_id).join("\n")}\n`,
+  ),
+});
+const positivePatternInventories = positivePatterns.map(patternInventory)
+  .sort((left, right) => left.pattern_id.localeCompare(right.pattern_id));
+for (const pin of Object.values(PLAN040_PACKAGE_11_POSITIVE_PATTERN_PINS)) {
+  const inventory = positivePatternInventories.find((row) =>
+    row.pattern_id === pin.pattern_id);
+  if (
+    !inventory ||
+    inventory.snapshot_id !== pin.snapshot_id ||
+    inventory.service_date !== pin.service_date ||
+    inventory.route_id !== pin.route_id ||
+    inventory.direction_id !== pin.direction_id ||
+    inventory.trip_count !== pin.trip_count ||
+    inventory.trip_id_sha256 !== pin.trip_id_sha256 ||
+    stableJson(inventory.shape_ids as JsonValue) !==
+      stableJson(pin.shape_ids as unknown as JsonValue) ||
+    inventory.stop_count !== pin.stop_count ||
+    inventory.stop_chain_sha256 !== pin.stop_chain_sha256
+  ) {
+    throw new Error(`${pin.pattern_id}: accepted GTFS replay drifted`);
+  }
+}
+if (positivePatternInventories.length !== 4) {
+  throw new Error("Package 11 accepted positive pattern count drifted");
+}
+
+type ScheduleSlice = {
+  route_id: string;
+  schedule_date: string;
+  total_stop_time_row_count: number;
+  trip_type_stop_time_row_counts: Record<string, number>;
+  trip_type_trip_start_counts: Record<string, number>;
+  shape_rows: Array<{
+    shape_id: string;
+    trip_type: string;
+    stop_time_row_count: number;
+    trip_start_count: number;
+  }>;
+};
+const csvCells = (line: string, count: number): string[] => {
+  const cells: string[] = [];
+  let cell = "";
+  let quoted = false;
+  for (let index = 0; index < line.length && cells.length < count; index += 1) {
+    const char = line[index]!;
+    if (char === '"') {
+      if (quoted && line[index + 1] === '"') {
+        cell += '"';
+        index += 1;
+      } else quoted = !quoted;
+    } else if (char === "," && !quoted) {
+      cells.push(cell);
+      cell = "";
+    } else if (char !== "\r" && char !== "\n") {
+      cell += char;
+    }
+  }
+  if (cells.length < count) cells.push(cell);
+  return cells;
+};
+const scanScheduleSlices = (): Record<string, ScheduleSlice> => {
+  const targets = new Set([
+    "Q45\u00002025-06-29",
+    "Q86\u00002025-06-29",
+    "QM68\u00002025-06-30",
+    "Q80\u00002025-08-31",
+  ]);
+  const summaries = new Map<string, {
+    total: number;
+    typeRows: Map<string, number>;
+    typeStarts: Map<string, number>;
+    shapes: Map<string, { type: string; rows: number; starts: number }>;
+  }>();
+  const path = join(
+    repoRoot,
+    "raw/sources/mta_bus_schedules_2025_candidate_windows/source.csv",
+  );
+  const descriptor = openSync(path, "r");
+  const buffer = Buffer.allocUnsafe(8 * 1024 * 1024);
+  let carry = "";
+  let firstLine = true;
+  const accept = (line: string) => {
+    if (firstLine) {
+      firstLine = false;
+      return;
+    }
+    const cells = csvCells(line, 14);
+    const scheduleDate = (cells[0] ?? "").slice(0, 10);
+    const shapeId = cells[6] ?? "";
+    const tripType = cells[7] ?? "";
+    const routeId = cells[8] ?? "";
+    const stopSequence = cells[9] ?? "";
+    const key = `${routeId}\0${scheduleDate}`;
+    if (!targets.has(key)) return;
+    const summary = summaries.get(key) ?? {
+      total: 0,
+      typeRows: new Map(),
+      typeStarts: new Map(),
+      shapes: new Map(),
+    };
+    summary.total += 1;
+    summary.typeRows.set(
+      tripType,
+      (summary.typeRows.get(tripType) ?? 0) + 1,
+    );
+    const isStart = stopSequence === "1";
+    if (isStart) {
+      summary.typeStarts.set(
+        tripType,
+        (summary.typeStarts.get(tripType) ?? 0) + 1,
+      );
+    }
+    const shape = summary.shapes.get(shapeId) ?? {
+      type: tripType,
+      rows: 0,
+      starts: 0,
+    };
+    if (shape.type !== tripType) {
+      throw new Error(`${shapeId}: schedule trip type drifted`);
+    }
+    shape.rows += 1;
+    if (isStart) shape.starts += 1;
+    summary.shapes.set(shapeId, shape);
+    summaries.set(key, summary);
+  };
+  try {
+    for (;;) {
+      const bytes = readSync(descriptor, buffer, 0, buffer.length, null);
+      if (bytes === 0) break;
+      const text = carry + buffer.subarray(0, bytes).toString("utf8");
+      const lines = text.split("\n");
+      carry = lines.pop() ?? "";
+      lines.forEach(accept);
+    }
+    if (carry) accept(carry);
+  } finally {
+    closeSync(descriptor);
+  }
+  return Object.fromEntries([...targets].sort().map((key) => {
+    const [routeId, scheduleDate] = key.split("\0");
+    const summary = summaries.get(key);
+    if (!routeId || !scheduleDate || !summary) {
+      throw new Error(`${key}: schedule slice missing`);
+    }
+    return [routeId, {
+      route_id: routeId,
+      schedule_date: scheduleDate,
+      total_stop_time_row_count: summary.total,
+      trip_type_stop_time_row_counts: Object.fromEntries(
+        [...summary.typeRows.entries()].sort(),
+      ),
+      trip_type_trip_start_counts: Object.fromEntries(
+        [...summary.typeStarts.entries()].sort(),
+      ),
+      shape_rows: [...summary.shapes.entries()].map(([shapeId, value]) => ({
+        shape_id: shapeId,
+        trip_type: value.type,
+        stop_time_row_count: value.rows,
+        trip_start_count: value.starts,
+      })).sort((left, right) => left.shape_id.localeCompare(right.shape_id)),
+    } satisfies ScheduleSlice];
+  }));
+};
+const scheduleSlices = scanScheduleSlices();
+const shapeSchedule = (
+  routeId: "Q45" | "Q86",
+  shapeId: string,
+  directionId: string,
+) => {
+  const row = scheduleSlices[routeId]?.shape_rows.find((value) =>
+    value.shape_id === shapeId && value.trip_type === "1");
+  if (!row) throw new Error(`${routeId}/${shapeId}: schedule row missing`);
+  return {
+    direction_id: directionId,
+    shape_id: shapeId,
+    stop_time_row_count: row.stop_time_row_count,
+    trip_start_count: row.trip_start_count,
+  };
+};
+if (
+  scheduleSlices.Q80?.total_stop_time_row_count !== 844 ||
+  stableJson(
+    scheduleSlices.Q80.trip_type_stop_time_row_counts as JsonValue,
+  ) !== stableJson({ "1": 780, "2": 30, "3": 28, "4": 6 }) ||
+  scheduleSlices.QM68?.trip_type_stop_time_row_counts["13"] !== 105 ||
+  scheduleSlices.QM68.trip_type_trip_start_counts["13"] !== 21
+) {
+  throw new Error("Package 11 schedule slice replay drifted");
+}
+
 const scheduleContext: Record<string, JsonValue> = {
   Q45: {
     accepted_snapshot_date: "2025-06-29",
     retained_trip_types: ["1"],
     excluded_trip_types: ["2", "3", "4"],
     passenger_schedule_rows: [
-      { direction_id: "0", shape_id: "Q450028", trip_count: 288 },
-      { direction_id: "1", shape_id: "Q450023", trip_count: 300 },
+      shapeSchedule("Q45", "Q450028", "0"),
+      shapeSchedule("Q45", "Q450023", "1"),
     ],
     pattern_ids: [...PLAN040_PACKAGE_11_Q45_PATTERN_IDS],
   },
@@ -361,10 +648,18 @@ const scheduleContext: Record<string, JsonValue> = {
   },
   Q80: {
     source_statement_date: "2025-08-31",
-    accepted_schedule_window_end: "2025-08-30",
-    later_inventory_required: true,
-    later_schedule_required: true,
-    later_lineage_required: true,
+    schedule_date: scheduleSlices.Q80!.schedule_date,
+    total_stop_time_row_count:
+      scheduleSlices.Q80!.total_stop_time_row_count,
+    trip_type_stop_time_row_counts:
+      scheduleSlices.Q80!.trip_type_stop_time_row_counts,
+    accepted_post_gtfs_end_date: "2025-08-30",
+    effective_date_full_stop_inventory_present: false,
+    missing_effective_date_evidence: [
+      "frequency_evidence",
+      "full_stop_patterns",
+      "lineage",
+    ],
   },
   Q82: {
     accepted_snapshot_date: "2025-06-29",
@@ -379,8 +674,8 @@ const scheduleContext: Record<string, JsonValue> = {
     retained_trip_types: ["1"],
     excluded_trip_types: ["2", "3", "4"],
     passenger_schedule_rows: [
-      { direction_id: "0", shape_id: "Q860045", trip_count: 324 },
-      { direction_id: "1", shape_id: "Q860044", trip_count: 296 },
+      shapeSchedule("Q86", "Q860045", "0"),
+      shapeSchedule("Q86", "Q860044", "1"),
     ],
     pattern_ids: [...PLAN040_PACKAGE_11_Q86_PATTERN_IDS],
   },
@@ -405,6 +700,8 @@ const scheduleContext: Record<string, JsonValue> = {
     predecessor_pattern_count: 4,
     successor_pattern_count: 2,
     identical_stop_id_lineage_only: true,
+    passenger_schedule_rows: scheduleSlices.QM68!.shape_rows.filter((row) =>
+      row.trip_type === "13"),
   },
 };
 
@@ -437,6 +734,96 @@ const selectedLineage = [
   stableJson(left as unknown as JsonValue)
     .localeCompare(stableJson(right as unknown as JsonValue)));
 
+const positivePatternReceiptBody = {
+  schema_version: 1,
+  receipt_id:
+    "plan-040-qbnr-service-grain-package-11-positive-patterns-v1",
+  source_id:
+    "plan_040_qbnr_service_grain_package_11_positive_patterns",
+  snapshot_id: postSnapshotId,
+  service_date: "2025-06-29",
+  derivation: {
+    algorithm: "accepted_gtfs_active_service_ordered_full_stop_patterns_v1",
+    route_ids: ["Q45", "Q86"],
+    exact_identifier_policy: "gtfs_stop_id_and_order",
+    pattern_count: positivePatternInventories.length,
+  },
+  accepted_patterns: positivePatternInventories,
+  candidate_bindings: [
+    {
+      treatment_record_id: "treatment_q45-all-day-frequent-service-2025",
+      pattern_ids: [...PLAN040_PACKAGE_11_Q45_PATTERN_IDS],
+    },
+    {
+      treatment_record_id: "treatment_q45-direct-connection-2025",
+      pattern_ids: [...PLAN040_PACKAGE_11_Q45_PATTERN_IDS],
+    },
+    {
+      treatment_record_id: "treatment_q86-limited-stops-2025",
+      pattern_ids: [...PLAN040_PACKAGE_11_Q86_PATTERN_IDS],
+    },
+  ],
+  schedule_cross_check: {
+    source_id: "mta_bus_schedules_2025_candidate_windows",
+    source_csv_sha256: PLAN040_PACKAGE_11_GLOBAL_PINS.schedule_csv,
+    route_dates: [
+      {
+        route_id: "Q45",
+        schedule_date: "2025-06-29",
+        passenger_schedule_rows:
+          scheduleContext.Q45!.passenger_schedule_rows,
+      },
+      {
+        route_id: "Q86",
+        schedule_date: "2025-06-29",
+        passenger_schedule_rows:
+          scheduleContext.Q86!.passenger_schedule_rows,
+      },
+    ],
+  },
+  upstream_pins: {
+    queens_post_receipt_sha256:
+      PLAN040_PACKAGE_11_GLOBAL_PINS.queens_post_receipt,
+    schedule_csv_sha256: PLAN040_PACKAGE_11_GLOBAL_PINS.schedule_csv,
+  },
+  replay_derived: true,
+  normal_file_verified: true,
+  external_acquisition_performed: false,
+  authorizes_occurrence: false,
+  authorizes_study: false,
+  authorizes_cross_product: false,
+  authorizes_decision_persistence: false,
+} satisfies JsonValue;
+const positivePatternReceiptSha256 = sha256(
+  stableBytes(positivePatternReceiptBody),
+);
+if (
+  PLAN040_PACKAGE_11_POSITIVE_PATTERN_RECEIPT_SHA256 &&
+  positivePatternReceiptSha256 !==
+    PLAN040_PACKAGE_11_POSITIVE_PATTERN_RECEIPT_SHA256
+) {
+  throw new Error(
+    "Package 11 positive pattern receipt replay hash drifted: " +
+      positivePatternReceiptSha256,
+  );
+}
+const positivePatternReceipt = {
+  path: positivePatternReceiptRelative,
+  sha256: positivePatternReceiptSha256,
+  receipt_id:
+    "plan-040-qbnr-service-grain-package-11-positive-patterns-v1",
+  source_id:
+    "plan_040_qbnr_service_grain_package_11_positive_patterns",
+  snapshot_id: postSnapshotId,
+  service_date: "2025-06-29",
+  replay_derived: true,
+  normal_file_verified: true,
+  authorizes_occurrence: false,
+  authorizes_study: false,
+  authorizes_cross_product: false,
+  authorizes_decision_persistence: false,
+} satisfies Plan040Package11PositivePatternReceiptRef;
+
 const sourceBinding = (
   treatmentId: string,
   block: SourceBlock,
@@ -446,12 +833,58 @@ const sourceBinding = (
   source_id: block.source_id,
   evidence_id: `${block.source_id}#${block.block_id}`,
 });
-const scheduleBinding = (): ExactEvidenceBinding => ({
+const scheduleDateByRoute = {
+  Q45: "2025-06-29",
+  Q63: "2025-06-29",
+  Q80: "2025-08-31",
+  Q82: "2025-06-29",
+  Q86: "2025-06-29",
+  Q87: "2025-06-30",
+  QM68: "2025-06-30",
+} as const;
+const retainedTripTypesByRoute = {
+  Q45: ["1"],
+  Q63: ["1"],
+  Q80: ["1"],
+  Q82: ["1"],
+  Q86: ["1"],
+  Q87: ["1"],
+  QM68: ["13"],
+} as const;
+const scheduleBinding = (
+  treatmentId: string,
+  routeId: keyof typeof scheduleDateByRoute,
+): ExactEvidenceBinding => ({
   role: "schedule_validation",
-  record_id: "mta_bus_schedules_2025_candidate_windows",
+  record_id: treatmentId,
   source_id: "mta_bus_schedules_2025_candidate_windows",
-  evidence_id: "mta_bus_schedules_2025_candidate_windows#blocks",
+  evidence_id:
+    `mta_bus_schedules_2025_candidate_windows#date=${
+      scheduleDateByRoute[routeId]
+    }&route=${routeId}&trip_types=${
+      retainedTripTypesByRoute[routeId].join(",")
+    }`,
 });
+const positivePatternBindings = (
+  treatmentId: string,
+  routeId: "Q45" | "Q86",
+): ExactEvidenceBinding[] => [
+  {
+    role: "accepted_gtfs_pattern_receipt",
+    record_id: treatmentId,
+    source_id: positivePatternReceipt.source_id,
+    evidence_id:
+      `${positivePatternReceipt.source_id}#candidate=${treatmentId}`,
+  },
+  ...(routeId === "Q45"
+    ? PLAN040_PACKAGE_11_Q45_PATTERN_IDS
+    : PLAN040_PACKAGE_11_Q86_PATTERN_IDS).map((patternId) => ({
+      role: "accepted_ordered_full_stop_pattern",
+      record_id: treatmentId,
+      source_id: positivePatternReceipt.source_id,
+      evidence_id: `${positivePatternReceipt.source_id}#${patternId}`,
+    })),
+];
 const grainDecision = (
   extent: MemberExtentLedgerRow,
   block: SourceBlock,
@@ -469,7 +902,14 @@ const grainDecision = (
       null,
     evidence_bindings: sortedBindings([
       sourceBinding(treatment, block),
-      scheduleBinding(),
+      scheduleBinding(
+        treatment,
+        extent.gtfs_route_id as keyof typeof scheduleDateByRoute,
+      ),
+      ...(extent.gtfs_route_id === "Q45" ||
+          extent.gtfs_route_id === "Q86"
+        ? positivePatternBindings(treatment, extent.gtfs_route_id)
+        : []),
     ]),
     reviewed_at: "2026-07-24T00:00:00.000Z",
     reviewed_by: "codex-plan-040-package-11-evidence-proposal",
@@ -543,6 +983,7 @@ const grainDecision = (
       ...common,
       evidence_bindings: sortedBindings([
         sourceBinding(treatment, block),
+        scheduleBinding(treatment, "QM68"),
         ...qm68Comparisons.map((row) => ({
           role: "lineage_comparison",
           record_id: row.comparison_id,
@@ -563,9 +1004,9 @@ const grainDecision = (
     ]
     : treatment.startsWith("treatment_q80-")
       ? [
-        "effective_date_inventory",
+        "effective_date_full_stop_inventory",
+        "frequency_evidence",
         "later_feed_lineage",
-        "later_schedule_trip_type_validation",
       ]
       : treatment.startsWith("treatment_q87-")
         ? ["accepted_date_resolution", "feed_version_resolution"]
@@ -682,12 +1123,27 @@ const candidates = PLAN040_PACKAGE_11_CANDIDATES.map(
       },
       schedule_and_pattern_context: scheduleContext[routeId]!,
       schedule_policy: {
-        retained_trip_types: ["1"],
+        retained_trip_types: routeId === "QM68" ? ["13"] : ["1"],
         excluded_trip_types: ["2", "3", "4"],
-        trip_type_13_retained_for_express_passenger_service: routeId === "QM68",
+        ...(routeId === "QM68"
+          ? {
+            retained_passenger_stop_time_row_count: 105,
+            retained_passenger_trip_start_count: 21,
+          }
+          : {}),
       },
       ledger_unchanged_now: true,
     };
+    if (routeId === "Q45" || routeId === "Q86") {
+      const patternIds = routeId === "Q45"
+        ? PLAN040_PACKAGE_11_Q45_PATTERN_IDS
+        : PLAN040_PACKAGE_11_Q86_PATTERN_IDS;
+      acceptedEvidence.accepted_gtfs_patterns =
+        positivePatternInventories.filter((row) =>
+          patternIds.includes(row.pattern_id as never));
+      acceptedEvidence.accepted_gtfs_pattern_receipt =
+        positivePatternReceipt as unknown as JsonValue;
+    }
     if (treatmentId === "treatment_q82-limited-stops-2025") {
       acceptedEvidence.q82_scope_review = {
         predecessor_route_selected: null,
@@ -794,25 +1250,71 @@ const exclusionKey = (treatmentId: string): string => candidateKey(one(
   (row) => row.treatment_record_id === treatmentId,
   `${treatmentId} exclusion`,
 ).row);
+const ledgerPreservation = (treatmentId: string): Record<string, JsonValue> => {
+  const extent = one(
+    extentRows,
+    (row) => row.treatment_record_id === treatmentId,
+    `${treatmentId} preserved extent row`,
+  );
+  const grain = one(
+    grainRows,
+    (row) => row.treatment_record_id === treatmentId,
+    `${treatmentId} preserved grain row`,
+  );
+  return {
+    treatment_record_id: treatmentId,
+    extent_ledger_row_sha256: extent.sha256,
+    grain_ledger_row_sha256: grain.sha256,
+    extent_verdict: extent.row.verdict,
+    grain_verdict: grain.row.verdict,
+  };
+};
+const q89LimitedKey = exclusionKey("treatment_q89-limited-stops-2025");
+const qm68MidtownKey = exclusionKey(
+  "treatment_qm68-midtown-stop-additions-2025",
+);
+const q48LimitedKey = exclusionKey("treatment_q48-limited-stops-2025");
+const historicalQ48Key =
+  "canonical-treatment\u0000" +
+  "treatment_q48-historical-discontinuation-replacement-2025";
+const historicalQ48Treatment = one(
+  treatmentRows,
+  (row) =>
+    row.record_id ===
+      "treatment_q48-historical-discontinuation-replacement-2025",
+  "historical old Q48 treatment",
+);
+const historicalQ48Route = one(
+  routeRows,
+  (row) => row.record_id === "route_q48-serves-lga-2011",
+  "historical old Q48 route",
+);
+if (
+  extentRows.some((row) =>
+    row.row.treatment_record_id === historicalQ48Treatment.row.record_id) ||
+  grainRows.some((row) =>
+    row.row.treatment_record_id === historicalQ48Treatment.row.record_id) ||
+  stableJson(occurrenceRoot).includes(historicalQ48Treatment.row.record_id)
+) {
+  throw new Error("Historical old Q48 context acquired occurrence membership");
+}
 const exclusions: Plan040Package11Exclusion[] = [
   {
     scope_id: "q89_residual_limited_stop",
-    candidate_keys: [exclusionKey(
-      "treatment_q89-q85-green-acres-replacement-2025",
-    )],
-    candidate_key_sha256: sortedHash([exclusionKey(
-      "treatment_q89-q85-green-acres-replacement-2025",
-    )]),
+    candidate_keys: [q89LimitedKey],
+    candidate_key_sha256: sortedHash([q89LimitedKey]),
+    preservation_evidence: ledgerPreservation(
+      "treatment_q89-limited-stops-2025",
+    ),
     unchanged: true,
   },
   {
     scope_id: "qm68_midtown_stop_additions",
-    candidate_keys: [exclusionKey(
+    candidate_keys: [qm68MidtownKey],
+    candidate_key_sha256: sortedHash([qm68MidtownKey]),
+    preservation_evidence: ledgerPreservation(
       "treatment_qm68-midtown-stop-additions-2025",
-    )],
-    candidate_key_sha256: sortedHash([exclusionKey(
-      "treatment_qm68-midtown-stop-additions-2025",
-    )]),
+    ),
     unchanged: true,
   },
   {
@@ -821,6 +1323,51 @@ const exclusions: Plan040Package11Exclusion[] = [
     candidate_key_sha256: sortedHash(
       package10b.candidates.map((row) => row.candidate_key),
     ),
+    preservation_evidence: {
+      package_10b_evidence_sha256:
+        PLAN040_PACKAGE_11_GLOBAL_PINS.package_10b_evidence,
+      accepted_candidate_count: package10b.candidates.length,
+    },
+    unchanged: true,
+  },
+  {
+    scope_id: "package_10d_q48_limited_stop_sibling",
+    candidate_keys: [q48LimitedKey],
+    candidate_key_sha256: sortedHash([q48LimitedKey]),
+    preservation_evidence: {
+      package_10d_evidence_sha256:
+        PLAN040_PACKAGE_11_GLOBAL_PINS.package_10d_evidence,
+      package_10d_gate_sha256:
+        PLAN040_PACKAGE_11_GLOBAL_PINS.package_10d_gate,
+      package_10d_acceptance_sha256:
+        PLAN040_PACKAGE_11_GLOBAL_PINS.package_10d_acceptance,
+      package_10d_extent_decisions_sha256:
+        PLAN040_PACKAGE_11_GLOBAL_PINS.package_10d_extent_decisions,
+      package_10d_grain_decisions_sha256:
+        PLAN040_PACKAGE_11_GLOBAL_PINS.package_10d_grain_decisions,
+      ...ledgerPreservation("treatment_q48-limited-stops-2025"),
+      accepted_main_treatment_record_id:
+        "treatment_q48-glen-oaks-branch-2025",
+      accepted_main_extent_ledger_row_sha256:
+        "746fb66028ded6478dff38eb634de6378b88631f0c3b7ec9b7ac0255ee481957",
+      accepted_main_grain_ledger_row_sha256:
+        "da8251518fbfedabb8c2cb8bb1c866fc4aa7a7b3627db21b0918e8f22f27937d",
+    },
+    unchanged: true,
+  },
+  {
+    scope_id: "historical_old_q48_context",
+    candidate_keys: [historicalQ48Key],
+    candidate_key_sha256: sortedHash([historicalQ48Key]),
+    preservation_evidence: {
+      treatment_record_id: historicalQ48Treatment.row.record_id,
+      treatment_row_sha256: historicalQ48Treatment.sha256,
+      route_record_id: historicalQ48Route.row.record_id,
+      route_row_sha256: historicalQ48Route.sha256,
+      occurrence_membership_present: false,
+      extent_ledger_row_count: 0,
+      grain_ledger_row_count: 0,
+    },
     unchanged: true,
   },
 ];
@@ -843,6 +1390,7 @@ const evidence = {
   },
   candidates,
   exclusions,
+  positive_pattern_receipt: positivePatternReceipt,
   immutable_inputs: PLAN040_PACKAGE_11_GLOBAL_PINS,
   evidence_verdict_distribution: {
     positive_extent_and_grain_proposed: 1,
@@ -873,6 +1421,10 @@ const evidence = {
   authorizes_decision_persistence: false,
 } satisfies JsonValue;
 
+writeImmutableNormalFile(
+  positivePatternReceiptRelative,
+  positivePatternReceiptBody,
+);
 writeStable(evidenceRelative, evidence);
 const evidenceSha256 = sha256(stableBytes(evidence));
 const draft = buildPlan040Package11Draft({
@@ -880,6 +1432,7 @@ const draft = buildPlan040Package11Draft({
   evidenceManifestSha256: evidenceSha256,
   candidates,
   exclusions,
+  positivePatternReceipt,
 });
 writeStable(draftRelative, draft as unknown as JsonValue);
 
