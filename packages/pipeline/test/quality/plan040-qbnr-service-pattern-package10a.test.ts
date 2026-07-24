@@ -603,13 +603,13 @@ describe("Plan 040 QBNR Package 10A accelerated absence freeze", () => {
       !targetIds.has(row.treatment_record_id as
         Plan040Package10aCandidateEvidence["treatment_record_id"])
     ))).toBe(
-      "02558895d710823347a665f7c1a0063386939058f2e3ae94539f813688664632",
+      "7df8bd6550fa327ec4948d7a1b7f3fe87390dc0a2ff8c9175fba92bd13468f5d",
     );
     expect(rowHash(grainRows.filter((row) =>
       !targetIds.has(row.treatment_record_id as
         Plan040Package10aCandidateEvidence["treatment_record_id"])
     ))).toBe(
-      "bd9bc13bb2fd178440303cae1f84bdda463017c261b0e22d1f659c1f990fb527",
+      "0f091d68826caaf52e36a367f38407b7907eab8b0ae1c52f12233af0c84052a6",
     );
     for (const candidate of evidence.candidates) {
       const extent = extentRows.find((row) =>
@@ -649,12 +649,12 @@ describe("Plan 040 QBNR Package 10A accelerated absence freeze", () => {
     expect(sha256(readFileSync(
       `${repoRoot}/data/quality/study-readiness/v1/bridge-ledger.jsonl`,
     ))).toBe(
-      "6c82b4a37067e6c7de563e373c7187c75a15610118da6fa3c64cdb70133e755b",
+      "f937c0ed6d420e35b6eb878292ac671ff24d5d6c2e86e0cc9fa47be377ef183e",
     );
     expect(sha256(readFileSync(
       `${repoRoot}/data/quality/study-readiness/v1/manifest.json`,
     ))).toBe(
-      "2aca7fc78f36440a89db0b85a23baf69d421bc93ebe22e32514285670f7dd882",
+      "cb40a045d09ffca2e59d4d96722a09f9832c715f50afb9aee35080eb4b97207c",
     );
   });
 });

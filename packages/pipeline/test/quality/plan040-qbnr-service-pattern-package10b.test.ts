@@ -1544,7 +1544,7 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     )).toHaveLength(165);
     expect(extentRows.filter((row) =>
       row.verdict === "resolved:bounded_segment"
-    )).toHaveLength(28);
+    )).toHaveLength(29);
     expect(extentRows.filter((row) =>
       row.verdict === "resolved:route_wide"
     )).toHaveLength(14);
@@ -1553,16 +1553,35 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     )).toHaveLength(4);
     expect(extentRows.filter((row) =>
       row.verdict === "unreviewed"
-    )).toHaveLength(97);
+    )).toHaveLength(96);
     expect(grainRows.filter((row) =>
       row.verdict === "absent_in_source"
     )).toHaveLength(165);
     expect(grainRows.filter((row) =>
       row.verdict === "resolved"
-    )).toHaveLength(33);
+    )).toHaveLength(38);
     expect(grainRows.filter((row) =>
       row.verdict === "unreviewed"
-    )).toHaveLength(110);
+    )).toHaveLength(96);
+    expect(grainRows.filter((row) =>
+      row.verdict ===
+        "blocked_upstream:accepted_date_resolution+feed_version_resolution"
+    )).toHaveLength(2);
+    expect(grainRows.filter((row) =>
+      row.verdict ===
+        "blocked_upstream:branch_lineage_mapping+direction_lineage_mapping"
+    )).toHaveLength(1);
+    expect(grainRows.filter((row) =>
+      row.verdict ===
+        "blocked_upstream:corrected_initial_feed_bytes+published_launch_conflict_resolution"
+    )).toHaveLength(2);
+    expect(grainRows.filter((row) =>
+      row.verdict ===
+        "blocked_upstream:effective_date_full_stop_inventory+frequency_evidence+later_feed_lineage"
+    )).toHaveLength(2);
+    expect(grainRows.filter((row) =>
+      row.verdict === "not_applicable"
+    )).toHaveLength(2);
 
     const positive = evidence.candidates.slice(0, 3);
     for (const candidate of positive) {

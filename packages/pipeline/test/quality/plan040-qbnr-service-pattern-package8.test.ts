@@ -880,13 +880,18 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
       allExtentRows.filter((row) => row.verdict === verdict).length,
     ]))).toEqual({
       absent_in_source: 165,
-      "resolved:bounded_segment": 28,
+      "resolved:bounded_segment": 29,
       "resolved:route_wide": 14,
       "resolved:stop_set": 4,
-      unreviewed: 97,
+      unreviewed: 96,
     });
     expect(Object.fromEntries([
       "absent_in_source",
+      "blocked_upstream:accepted_date_resolution+feed_version_resolution",
+      "blocked_upstream:branch_lineage_mapping+direction_lineage_mapping",
+      "blocked_upstream:corrected_initial_feed_bytes+published_launch_conflict_resolution",
+      "blocked_upstream:effective_date_full_stop_inventory+frequency_evidence+later_feed_lineage",
+      "not_applicable",
       "resolved",
       "unreviewed",
     ].map((verdict) => [
@@ -894,8 +899,15 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
       allGrainRows.filter((row) => row.verdict === verdict).length,
     ]))).toEqual({
       absent_in_source: 165,
-      resolved: 33,
-      unreviewed: 110,
+      "blocked_upstream:accepted_date_resolution+feed_version_resolution": 2,
+      "blocked_upstream:branch_lineage_mapping+direction_lineage_mapping": 1,
+      "blocked_upstream:corrected_initial_feed_bytes+published_launch_conflict_resolution":
+        2,
+      "blocked_upstream:effective_date_full_stop_inventory+frequency_evidence+later_feed_lineage":
+        2,
+      not_applicable: 2,
+      resolved: 38,
+      unreviewed: 96,
     });
   });
 
