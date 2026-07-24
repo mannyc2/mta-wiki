@@ -4,6 +4,16 @@ import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
+import {
+  compareFullStopPatterns,
+  fullStopPatternsForDate,
+  type HistoricalFullStopPattern,
+} from "../src/reference/historical-full-stop.js";
+import { loadGtfsStaticSnapshot } from "../src/reference/gtfs-static.js";
+import {
+  loadOperationalSnapshotRegistry,
+  snapshotById,
+} from "../src/reference/snapshot-registry.js";
 import type { MemberGrainDecision } from
   "../src/quality/member-grain-decisions.js";
 import type {
@@ -12,12 +22,19 @@ import type {
 } from "../src/quality/member-extent-ledger.js";
 import {
   PLAN040_PACKAGE_10B_CANDIDATE_KEY_SHA256,
+  PLAN040_PACKAGE_10B_ACQUISITION_PINS,
+  PLAN040_PACKAGE_10B_COMPARISON_IDS,
+  PLAN040_PACKAGE_10B_COMPARISON_PINS,
+  PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256,
   PLAN040_PACKAGE_10B_EXCLUSION_HASHES,
   PLAN040_PACKAGE_10B_PATTERN_IDS,
   PLAN040_PACKAGE_10B_POST_10A_PINS,
+  PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS,
+  PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_PINS,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B,
   buildPlan040Package10bDraft,
   type Plan040Package10bCandidateEvidence,
+  type Plan040Package10bComparisonReceiptRef,
   type Plan040Package10bExclusion,
   type Plan040Package10bPreservedPackage8,
 } from "../src/quality/plan040-qbnr-service-pattern-package10b.js";
@@ -38,6 +55,11 @@ const evidenceRelative =
 const draftRelative =
   "data/quality/operational-reference/member-extent-risk/" +
   "plan-040-qbnr-service-pattern-package-10b-evidence-draft-v1.json";
+const comparisonReceiptRelative =
+  "data/quality/acquisition/receipts/member-extent/" +
+  "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json";
+const comparisonReceiptSourceId =
+  "plan_040_qbnr_service_pattern_package_10b_full_stop_equivalence" as const;
 const extentLedgerPath = join(
   repoRoot,
   "data/quality/operational-reference/member-extent-ledger.jsonl",
@@ -158,6 +180,443 @@ const q82LaunchEvidence = {
   complete_active_trip_coverage: true,
 } as const;
 
+const operationalRegistry = loadOperationalSnapshotRegistry();
+const loadPatterns = (
+  snapshotId: string,
+  date: string,
+  routeId: string,
+): HistoricalFullStopPattern[] =>
+  fullStopPatternsForDate(
+    loadGtfsStaticSnapshot(
+      snapshotById(operationalRegistry, snapshotId),
+      ["calendar", "calendar_dates", "routes", "stops", "stop_times", "trips"],
+      repoRoot,
+      new Set([routeId]),
+    ),
+    date,
+    routeId,
+  );
+const q82CanonicalPatterns = loadPatterns(
+  "gtfs-static-20250626-queens-post-qbnr",
+  "2025-06-29",
+  "Q82",
+);
+const q110CanonicalPatterns = loadPatterns(
+  "gtfs-static-20250625-busco-pre-qbnr",
+  "2025-06-28",
+  "Q110",
+);
+const q36CanonicalPatterns = loadPatterns(
+  "gtfs-static-20250615-queens-pre-qbnr",
+  "2025-06-28",
+  "Q36",
+);
+const patternInventory = (pattern: HistoricalFullStopPattern) => ({
+  pattern_id: pattern.pattern_id,
+  snapshot_id: pattern.snapshot_id,
+  service_date: pattern.service_date,
+  route_id: pattern.route_id,
+  direction_id: pattern.direction_id,
+  trip_count: pattern.trip_count,
+  trip_id_sha256: sortedHash(pattern.trip_ids),
+  shape_ids: pattern.shape_ids,
+  stop_count: pattern.stops.length,
+  stop_ids: pattern.stops.map((stop) => stop.stop_id),
+  stops: pattern.stops,
+  stop_chain_sha256: sha256(
+    `${pattern.stops.map((stop) => stop.stop_id).join("\n")}\n`,
+  ),
+});
+const successorPatternInventories = q82CanonicalPatterns.map(patternInventory);
+const predecessorPatternInventories = [
+  ...q110CanonicalPatterns,
+  ...q36CanonicalPatterns,
+].map(patternInventory);
+const canonicalPatternIds = {
+  q82_direction_0: q82CanonicalPatterns.find((row) =>
+    row.direction_id === "0")?.pattern_id,
+  q82_direction_1: q82CanonicalPatterns.find((row) =>
+    row.direction_id === "1")?.pattern_id,
+  q110_direction_0: q110CanonicalPatterns.find((row) =>
+    row.direction_id === "0")?.pattern_id,
+  q110_direction_1: q110CanonicalPatterns.find((row) =>
+    row.direction_id === "1")?.pattern_id,
+  q36_direction_0: q36CanonicalPatterns.find((row) =>
+    row.direction_id === "0")?.pattern_id,
+  q36_direction_1: q36CanonicalPatterns.find((row) =>
+    row.direction_id === "1")?.pattern_id,
+};
+if (
+  canonicalPatternIds.q82_direction_0 !==
+    PLAN040_PACKAGE_10B_PATTERN_IDS.direction_0 ||
+  canonicalPatternIds.q82_direction_1 !==
+    PLAN040_PACKAGE_10B_PATTERN_IDS.direction_1 ||
+  canonicalPatternIds.q110_direction_0 !==
+    PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q110_direction_0 ||
+  canonicalPatternIds.q110_direction_1 !==
+    PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q110_direction_1 ||
+  canonicalPatternIds.q36_direction_0 !==
+    PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q36_direction_0 ||
+  canonicalPatternIds.q36_direction_1 !==
+    PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q36_direction_1
+) {
+  throw new Error("Package 10B canonical pattern identities drifted");
+}
+for (const chain of q82Chains) {
+  const canonical = successorPatternInventories.find((pattern) =>
+    pattern.direction_id === chain.direction_id);
+  if (
+    canonical?.pattern_id !== chain.pattern_id ||
+    canonical.trip_count !== chain.trip_count ||
+    canonical.trip_id_sha256 !== chain.trip_id_sha256 ||
+    canonical.stop_chain_sha256 !== chain.stop_chain_sha256 ||
+    stableJson(canonical.stop_ids as JsonValue) !==
+      stableJson(chain.stop_ids as unknown as JsonValue)
+  ) {
+    throw new Error(`Q82 direction ${chain.direction_id}: canonical chain drifted`);
+  }
+}
+for (const pin of Object.values(
+  PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_PINS,
+)) {
+  const canonical = predecessorPatternInventories.find((pattern) =>
+    pattern.pattern_id === pin.pattern_id);
+  if (
+    canonical?.trip_count !== pin.trip_count ||
+    canonical.trip_id_sha256 !== pin.trip_id_sha256 ||
+    canonical.stop_count !== pin.stop_count ||
+    canonical.stop_chain_sha256 !== pin.stop_chain_sha256
+  ) {
+    throw new Error(`${pin.pattern_id}: predecessor chain pin drifted`);
+  }
+}
+
+const comparisonSpecs = [
+  {
+    predecessor_route_id: "Q110",
+    direction_id: "0",
+    named_street_scope: "Hempstead Av",
+    treatment_record_id:
+      "treatment_q82-q110-hempstead-replacement-2025",
+    source_evidence_id:
+      "mta_queens_bus_network_redesign_service_changes#p001_b0079",
+    boundary_stop_ids: ["552248", "500122"],
+    expected_comparison_id:
+      PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_0,
+  },
+  {
+    predecessor_route_id: "Q110",
+    direction_id: "1",
+    named_street_scope: "Hempstead Av",
+    treatment_record_id:
+      "treatment_q82-q110-hempstead-replacement-2025",
+    source_evidence_id:
+      "mta_queens_bus_network_redesign_service_changes#p001_b0079",
+    boundary_stop_ids: ["500123", "552252"],
+    expected_comparison_id:
+      PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_1,
+  },
+  {
+    predecessor_route_id: "Q36",
+    direction_id: "0",
+    named_street_scope: "212 St/212 Pl",
+    treatment_record_id: "treatment_q82-q36-212-replacement-2025",
+    source_evidence_id:
+      "mta_queens_bus_network_redesign_service_changes#p001_b0079",
+    boundary_stop_ids: ["500022", "501927"],
+    expected_comparison_id:
+      PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_0,
+  },
+  {
+    predecessor_route_id: "Q36",
+    direction_id: "1",
+    named_street_scope: "212 St/212 Pl",
+    treatment_record_id: "treatment_q82-q36-212-replacement-2025",
+    source_evidence_id:
+      "mta_queens_bus_network_redesign_service_changes#p001_b0079",
+    boundary_stop_ids: ["501962", "501966"],
+    expected_comparison_id:
+      PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_1,
+  },
+] as const;
+const sliceByBounds = (
+  pattern: HistoricalFullStopPattern,
+  bounds: readonly [string, string] | readonly string[],
+) => {
+  const ids = pattern.stops.map((stop) => stop.stop_id);
+  const start = ids.indexOf(bounds[0]!);
+  const end = ids.indexOf(bounds[1]!);
+  if (start < 0 || end < start) {
+    throw new Error(
+      `${pattern.pattern_id}: invalid selected bounds ${bounds.join("..")}`,
+    );
+  }
+  return pattern.stops.slice(start, end + 1);
+};
+const stopEvidence = (
+  pattern: HistoricalFullStopPattern,
+  stopId: string,
+) => {
+  const stop = pattern.stops.find((row) => row.stop_id === stopId);
+  if (!stop) throw new Error(`${pattern.pattern_id}: stop ${stopId} missing`);
+  return stop;
+};
+const comparisonInventories = comparisonSpecs.map((spec) => {
+  const predecessors = spec.predecessor_route_id === "Q110"
+    ? q110CanonicalPatterns
+    : q36CanonicalPatterns;
+  const before = predecessors.find((row) =>
+    row.direction_id === spec.direction_id)!;
+  const after = q82CanonicalPatterns.find((row) =>
+    row.direction_id === spec.direction_id)!;
+  const full = compareFullStopPatterns(before, after);
+  if (
+    full.comparison_id !== spec.expected_comparison_id ||
+    !full.accepted
+  ) {
+    throw new Error(`${spec.predecessor_route_id} ${spec.direction_id}: comparison drifted`);
+  }
+  const beforeSlice = sliceByBounds(before, spec.boundary_stop_ids);
+  const afterSlice = sliceByBounds(after, spec.boundary_stop_ids);
+  const afterIds = new Set(afterSlice.map((stop) => stop.stop_id));
+  const beforeIds = new Set(beforeSlice.map((stop) => stop.stop_id));
+  const identicalIds = beforeSlice.map((stop) => stop.stop_id)
+    .filter((stopId) => afterIds.has(stopId));
+  const beforeOnly = beforeSlice.filter((stop) => !afterIds.has(stop.stop_id));
+  const afterOnly = afterSlice.filter((stop) => !beforeIds.has(stop.stop_id));
+  const selectedIds = new Set([
+    ...beforeSlice.map((stop) => stop.stop_id),
+    ...afterSlice.map((stop) => stop.stop_id),
+  ]);
+  const outsideSharedIds = full.shared_stop_ids.filter((stopId) =>
+    !selectedIds.has(stopId));
+  const selectedPayload = {
+    named_street_scope: spec.named_street_scope,
+    source_evidence_id: spec.source_evidence_id,
+    boundary_stop_ids: [...spec.boundary_stop_ids],
+    boundary_stop_evidence: spec.boundary_stop_ids.map((stopId) => ({
+      stop_id: stopId,
+      before_stop_name: stopEvidence(before, stopId).stop_name,
+      after_stop_name: stopEvidence(after, stopId).stop_name,
+    })),
+    before_stop_ids: beforeSlice.map((stop) => stop.stop_id),
+    after_stop_ids: afterSlice.map((stop) => stop.stop_id),
+    identical_stop_id_equivalences: identicalIds.map((stopId) => ({
+      before_stop_id: stopId,
+      after_stop_id: stopId,
+      before_stop_name: stopEvidence(before, stopId).stop_name,
+      after_stop_name: stopEvidence(after, stopId).stop_name,
+      equivalence_basis: "identical_stop_id" as const,
+    })),
+    before_only_stop_ids: beforeOnly.map((stop) => stop.stop_id),
+    before_only_stops: beforeOnly.map((stop) => ({
+      ...stop,
+      disposition: "unresolved_no_equivalence_authorized",
+    })),
+    after_only_stop_ids: afterOnly.map((stop) => stop.stop_id),
+    after_only_stops: afterOnly.map((stop) => ({
+      ...stop,
+      disposition: "unresolved_no_equivalence_authorized",
+    })),
+    shared_stop_ids_outside_candidate_slice: outsideSharedIds,
+    shared_stops_outside_candidate_slice: outsideSharedIds.map((stopId) => ({
+      stop_id: stopId,
+      before_stop_name: stopEvidence(before, stopId).stop_name,
+      after_stop_name: stopEvidence(after, stopId).stop_name,
+      exclusion_reason:
+        `outside_source_named_${spec.named_street_scope.replaceAll(/[^A-Za-z0-9]+/gu, "_").toLowerCase()}_candidate_slice`,
+    })),
+    changed_id_equivalence_authorized: false,
+    changed_id_disposition: "unresolved_no_equivalence_authorized",
+  };
+  return {
+    comparison_id: full.comparison_id,
+    predecessor_pattern_id: before.pattern_id,
+    successor_pattern_id: after.pattern_id,
+    predecessor_route_id: before.route_id,
+    successor_route_id: after.route_id,
+    direction_id: spec.direction_id,
+    treatment_record_id: spec.treatment_record_id,
+    full_chain_comparison: full,
+    full_chain_comparison_sha256: sha256(
+      `${stableJson(full as unknown as JsonValue)}\n`,
+    ),
+    selected_candidate_slice: {
+      ...selectedPayload,
+      comparison_sha256: sha256(
+        `${stableJson(selectedPayload as unknown as JsonValue)}\n`,
+      ),
+    },
+  };
+});
+for (const pin of Object.values(PLAN040_PACKAGE_10B_COMPARISON_PINS)) {
+  const canonical = comparisonInventories.find((comparison) =>
+    comparison.comparison_id === pin.comparison_id);
+  if (
+    canonical?.full_chain_comparison_sha256 !==
+      pin.full_chain_comparison_sha256 ||
+    canonical.selected_candidate_slice.comparison_sha256 !==
+      pin.selected_candidate_slice_sha256
+  ) {
+    throw new Error(`${pin.comparison_id}: comparison pin drifted`);
+  }
+}
+
+const comparisonReceipt = {
+  schema_version: 1,
+  receipt_id:
+    "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1",
+  source_id: comparisonReceiptSourceId,
+  upstream_pins: PLAN040_PACKAGE_10B_ACQUISITION_PINS,
+  accepted_snapshot_inputs: [
+    {
+      snapshot_id: "gtfs-static-20250625-busco-pre-qbnr",
+      source_id: "gtfs_static_20250625_busco_pre_qbnr",
+      service_date: "2025-06-28",
+      receipt_path:
+        "raw/sources/gtfs_static_20250625_busco_pre_qbnr/receipt.json",
+      receipt_sha256:
+        "de2d6e8c9a5cf700b0bee32e53634f1d2b984a8c3b8e41b51f84991cb3b7cae9",
+      zip_path:
+        "raw/sources/gtfs_static_20250625_busco_pre_qbnr/source.zip",
+      zip_sha1: "a52f278150cd9bc03082f76fccd57f1c8c331d3c",
+      zip_sha256:
+        "eb4fd60a8dfa63bac5e4cd3204e61b48420b474724cac708d115615e547ff3e1",
+      calendar_expansion: {
+        policy: "calendar_plus_calendar_dates",
+        active_service_ids: [
+          "BPPB5-BP_B5-Saturday-02", "CPPB5-CP_B5-Saturday-02",
+          "ECPB5-EC_B5-Saturday-02", "FRPB5-FR_B5-Saturday-12",
+          "JKPB5-JK_B5-Saturday-02", "LGPB5-LG_B5-Saturday-02",
+          "SCPB5-SC_B5-Saturday-02", "YOPB5-YO_B5-Saturday-02",
+        ],
+        active_service_id_sha256:
+          "fb9b616264a00d7ad49aa365f4d80e47847d23b7ab217d3ba36b4de4ea1753d3",
+      },
+    },
+    {
+      snapshot_id: "gtfs-static-20250615-queens-pre-qbnr",
+      source_id: "gtfs_static_20250615_queens_pre_qbnr",
+      service_date: "2025-06-28",
+      receipt_path:
+        "raw/sources/gtfs_static_20250615_queens_pre_qbnr/receipt.json",
+      receipt_sha256:
+        "07fc854e9d4f2e980048741b335c95f781f03b8a8914c4eb0acd51bd92c540c6",
+      zip_path:
+        "raw/sources/gtfs_static_20250615_queens_pre_qbnr/source.zip",
+      zip_sha1: "c96466458c55036cd6feeadc291bf5951d6c3274",
+      zip_sha256:
+        "2ddcb01c8ceb6c822a28819570692af99491be0967412e130d7a26131820e6ef",
+      calendar_expansion: {
+        policy: "calendar_plus_calendar_dates",
+        active_service_ids: [
+          "CS_B5-Saturday", "JA_B5-Saturday", "QV_B5-Saturday",
+        ],
+        active_service_id_sha256:
+          "ba9cebbfaf0a038948405f4b35c85459e22f22e21de2dd89c73f6ca3b326ab03",
+      },
+    },
+    {
+      snapshot_id: "gtfs-static-20250626-queens-post-qbnr",
+      source_id: "gtfs_static_20250626_queens_post_qbnr",
+      service_date: "2025-06-29",
+      receipt_path:
+        "raw/sources/gtfs_static_20250626_queens_post_qbnr/receipt.json",
+      receipt_sha256:
+        "0a66e26e639674b88bd1d0251d6a15f4cab2205e794fa14a3d75367c43394eeb",
+      zip_path:
+        "raw/sources/gtfs_static_20250626_queens_post_qbnr/source.zip",
+      zip_sha1: "c868290ddcd79c69712d809ece96d96dbad2c613",
+      zip_sha256:
+        "4db0f151dc541f2669dde72f104c7803b0f99258bc5d14278b04c8016ce7471a",
+      calendar_expansion: {
+        policy: "calendar_plus_calendar_dates",
+        active_service_ids: [
+          "CS_C5-Sunday", "CS_C5-Weekday-BM", "JA_C5-Sunday",
+          "QV_C5-Sunday", "QV_C5-Weekday-BM",
+        ],
+        active_service_id_sha256:
+          "813619a6d363ab72fdd0cb45bfd96d6606349584e15854b0978a7a55631f78fd",
+      },
+    },
+  ],
+  coverage: {
+    predecessor_route_count: 2,
+    predecessor_pattern_count: 4,
+    predecessor_active_trip_count: 323,
+    predecessor_covered_trip_count: 323,
+    predecessor_active_trip_coverage_percent: 100,
+    successor_route_count: 1,
+    successor_pattern_count: 2,
+    successor_active_trip_count: 102,
+    successor_covered_trip_count: 102,
+    successor_active_trip_coverage_percent: 100,
+  },
+  predecessor_patterns: predecessorPatternInventories,
+  successor_patterns: successorPatternInventories,
+  comparisons: comparisonInventories,
+  equivalence_policy: {
+    accepted_equivalence:
+      "identical_stop_id_or_separately_cited_first_party_crosswalk_only",
+    applied_equivalence: "identical_stop_id_only",
+    first_party_crosswalk_search_outcome:
+      "no_crosswalk_found_not_required_for_identical_stop_id_equivalences",
+    proximity_name_coordinate_or_adjacency_equivalence_authorized: false,
+    before_only_and_after_only_stops:
+      "unresolved_no_equivalence_authorized",
+  },
+  changed_id_guesses: [
+    {
+      before_stop_ids: ["500120", "500121"],
+      after_stop_ids: ["701055"],
+      context: "Q110 direction 0 selected Hempstead Av slice",
+      status: "unresolved_no_equivalence_authorized",
+    },
+    {
+      before_stop_ids: ["552250"],
+      after_stop_ids: ["552727"],
+      context:
+        "Q110 direction 1 immediately outside selected Hempstead Av slice",
+      status: "unresolved_no_equivalence_authorized",
+    },
+    {
+      before_stop_ids: ["500071"],
+      after_stop_ids: ["500072"],
+      context:
+        "Q36 direction 1 immediately outside selected 212 St/212 Pl slice",
+      status: "unresolved_no_equivalence_authorized",
+    },
+  ],
+  external_acquisition_performed: false,
+  authorizes_occurrence: false,
+  authorizes_study: false,
+  authorizes_cross_product: false,
+  authorizes_decision_persistence: false,
+};
+writeStable(
+  join(repoRoot, comparisonReceiptRelative),
+  comparisonReceipt as unknown as JsonValue,
+);
+const comparisonReceiptRef: Plan040Package10bComparisonReceiptRef = {
+  path: comparisonReceiptRelative,
+  sha256: sha256(readFileSync(join(repoRoot, comparisonReceiptRelative))),
+  receipt_id:
+    "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1",
+  source_id: comparisonReceiptSourceId,
+  upstream_pins: PLAN040_PACKAGE_10B_ACQUISITION_PINS,
+  external_acquisition_performed: false,
+  authorizes_occurrence: false,
+  authorizes_study: false,
+  authorizes_cross_product: false,
+  authorizes_decision_persistence: false,
+};
+if (
+  comparisonReceiptRef.sha256 !==
+    PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256
+) {
+  throw new Error("Package 10B comparison receipt bytes drifted");
+}
+
 const binding = (
   treatmentRecordId: string,
   role: string,
@@ -193,12 +652,18 @@ const decisionBindings = (treatmentRecordId: string) =>
       "mta_bus_schedules_2025_candidate_windows",
       "mta_bus_schedules_2025_candidate_windows#p001_b0001",
     ),
+    binding(
+      treatmentRecordId,
+      "full_stop_equivalence_receipt",
+      comparisonReceiptSourceId,
+      `${comparisonReceiptSourceId}#${comparisonReceipt.receipt_id}`,
+    ),
     ...q82Chains.map((chain) =>
       binding(
         treatmentRecordId,
         "successor_ordered_full_stop_chain",
-        "gtfs_static_20250626_queens_post_qbnr",
-        `gtfs_static_20250626_queens_post_qbnr#${chain.pattern_id}`,
+        comparisonReceiptSourceId,
+        `${comparisonReceiptSourceId}#${chain.pattern_id}`,
       )),
   ]);
 
@@ -260,20 +725,36 @@ function q82Candidate(input: {
     .replace("treatment_", "").replace("-2025", "");
   const extentId = `member-extent-review:plan040-package10b-${slug}`;
   const evidenceBindings = decisionBindings(input.treatmentRecordId);
+  const predecessorPatterns = input.predecessor
+    ? predecessorPatternInventories.filter((pattern) =>
+      pattern.route_id === input.predecessor?.route_id)
+    : [];
+  const candidateComparisons = input.predecessor
+    ? comparisonInventories.filter((comparison) =>
+      comparison.treatment_record_id === input.treatmentRecordId)
+    : [];
   if (input.predecessor) {
     evidenceBindings.push(
-      binding(
-        input.treatmentRecordId,
-        "predecessor_active_pattern",
-        input.predecessor.source_id,
-        `${input.predecessor.source_id}#route:${input.predecessor.route_id}`,
-      ),
       binding(
         input.treatmentRecordId,
         "predecessor_service_change_statement",
         "mta_queens_bus_network_redesign_service_changes",
         input.predecessor.source_evidence_id,
       ),
+      ...predecessorPatterns.map((pattern) =>
+        binding(
+          input.treatmentRecordId,
+          "predecessor_ordered_full_stop_chain",
+          comparisonReceiptSourceId,
+          `${comparisonReceiptSourceId}#${pattern.pattern_id}`,
+        )),
+      ...candidateComparisons.map((comparison) =>
+        binding(
+          input.treatmentRecordId,
+          "candidate_bound_full_stop_comparison",
+          comparisonReceiptSourceId,
+          `${comparisonReceiptSourceId}#${comparison.comparison_id}`,
+        )),
     );
     sortedBindings(evidenceBindings);
   }
@@ -330,7 +811,10 @@ function q82Candidate(input: {
     prior_ledger_state: priorLedger(input.treatmentRecordId),
     accepted_evidence: {
       ...clone(q82LaunchEvidence),
+      comparison_receipt: comparisonReceiptRef,
       predecessor_context: input.predecessor,
+      predecessor_full_stop_chains: clone(predecessorPatterns),
+      candidate_full_stop_comparisons: clone(candidateComparisons),
       rejected_identifier_inferences: input.rejected,
       accepted_initial_post_only: true,
       correction_bytes_used: false,
@@ -435,8 +919,8 @@ const candidates: Plan040Package10bCandidateEvidence[] = [
     },
     lineage: q110Lineage,
     rejected: [
-      "500120_or_500121_is_not_equivalent_to_701055",
-      "552250_is_not_equivalent_to_552727",
+      "500120_500121_to_701055_unresolved_no_equivalence_authorized",
+      "552250_to_552727_unresolved_no_equivalence_authorized",
     ],
   }),
   q82Candidate({
@@ -470,8 +954,8 @@ const candidates: Plan040Package10bCandidateEvidence[] = [
     },
     lineage: q36Lineage,
     rejected: [
-      "500071_is_not_equivalent_to_500072",
-      "skipped_local_stops_are_not_inferred",
+      "500071_to_500072_unresolved_no_equivalence_authorized",
+      "skipped_local_stops_unresolved_no_equivalence_authorized",
     ],
   }),
 ];
@@ -759,6 +1243,7 @@ const evidence = {
       },
     },
   },
+  comparison_receipt: comparisonReceiptRef,
   candidates,
   exclusions,
   prior_package_overlap_count: 0,
@@ -809,6 +1294,7 @@ const draft = buildPlan040Package10bDraft({
   evidenceManifestSha256: evidenceSha256,
   candidates,
   exclusions,
+  comparisonReceipt: comparisonReceiptRef,
   preservedPackage8,
   priorCandidateKeys: priorKeys,
   versionSeparation: package10a.version_separation,
@@ -820,6 +1306,8 @@ writeStable(
 
 process.stdout.write(`${stableJson({
   candidate_count: 4,
+  comparison_receipt_path: comparisonReceiptRelative,
+  comparison_receipt_sha256: comparisonReceiptRef.sha256,
   evidence_path: evidenceRelative,
   evidence_sha256: evidenceSha256,
   draft_path: draftRelative,

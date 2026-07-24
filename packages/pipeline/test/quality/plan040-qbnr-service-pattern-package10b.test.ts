@@ -10,19 +10,33 @@ import type {
 } from "../../src/quality/member-extent-ledger";
 import {
   PLAN040_PACKAGE_10B_CANDIDATES,
+  PLAN040_PACKAGE_10B_ACQUISITION_PINS,
   PLAN040_PACKAGE_10B_CANDIDATE_KEY_SHA256,
+  PLAN040_PACKAGE_10B_COMPARISON_IDS,
+  PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256,
   PLAN040_PACKAGE_10B_EXCLUSION_HASHES,
   PLAN040_PACKAGE_10B_PATTERN_IDS,
   PLAN040_PACKAGE_10B_POST_10A_PINS,
+  PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS,
   buildPlan040Package10bDraft,
   plan040Package10bReplayHash,
   type Plan040Package10bCandidateEvidence,
+  type Plan040Package10bComparisonReceiptRef,
   type Plan040Package10bDraft,
   type Plan040Package10bExclusion,
   type Plan040Package10bPreservedPackage8,
 } from "../../src/quality/plan040-qbnr-service-pattern-package10b";
 import type { Plan040Package8VersionSeparation } from
   "../../src/quality/plan040-qbnr-service-pattern-package8";
+import {
+  compareFullStopPatterns,
+  fullStopPatternsForDate,
+} from "../../src/reference/historical-full-stop";
+import { loadGtfsStaticSnapshot } from "../../src/reference/gtfs-static";
+import {
+  loadOperationalSnapshotRegistry,
+  snapshotById,
+} from "../../src/reference/snapshot-registry";
 
 const riskRoot =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk`;
@@ -30,10 +44,13 @@ const evidencePath =
   `${riskRoot}/plan-040-qbnr-service-pattern-package-10b-evidence-v1.json`;
 const draftPath =
   `${riskRoot}/plan-040-qbnr-service-pattern-package-10b-evidence-draft-v1.json`;
+const comparisonReceiptPath =
+  `${repoRoot}/data/quality/acquisition/receipts/member-extent/` +
+  "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json";
 const EVIDENCE_SHA256 =
-  "3f2a59a5fbf93bd49a0124483d2bb3af8baa3218868fc0f92ccc1ddabf8385f8";
+  "7345130b133681de5da7b7ad45feb7edd2ddd62dbaa5833328bb516bd1dc5a4f";
 const DRAFT_SHA256 =
-  "5fc0a7330bd9a8a78e118d2afd3cd5f45eec8a81255224cf32906e21088414c3";
+  "171f2735e36033d0a9464b4019c46f61e042143478f3b4bb8d3fd664ee495b24";
 
 type Package10bEvidence = {
   candidate_count: 4;
@@ -42,6 +59,7 @@ type Package10bEvidence = {
   candidates: Plan040Package10bCandidateEvidence[];
   exclusions: Plan040Package10bExclusion[];
   prior_package_overlap_count: 0;
+  comparison_receipt: Plan040Package10bComparisonReceiptRef;
   preserved_package_8_predecessor_rows: Plan040Package10bPreservedPackage8;
   immutable_inputs: {
     post_10a_pins: typeof PLAN040_PACKAGE_10B_POST_10A_PINS;
@@ -73,8 +91,132 @@ type Package10bEvidence = {
   authorizes_decision_persistence: false;
 };
 
+type FullStopPatternReceipt = {
+  pattern_id: string;
+  snapshot_id: string;
+  service_date: string;
+  route_id: string;
+  direction_id: string;
+  trip_count: number;
+  trip_id_sha256: string;
+  shape_ids: string[];
+  stop_count: number;
+  stop_ids: string[];
+  stops: Array<{ stop_id: string; stop_name: string }>;
+  stop_chain_sha256: string;
+};
+
+type FullStopComparisonReceipt = {
+  comparison_id: string;
+  predecessor_pattern_id: string;
+  successor_pattern_id: string;
+  predecessor_route_id: string;
+  successor_route_id: string;
+  direction_id: string;
+  treatment_record_id: string;
+  full_chain_comparison: JsonValue;
+  full_chain_comparison_sha256: string;
+  selected_candidate_slice: {
+    named_street_scope: string;
+    source_evidence_id: string;
+    boundary_stop_ids: string[];
+    boundary_stop_evidence: Array<{
+      stop_id: string;
+      before_stop_name: string;
+      after_stop_name: string;
+    }>;
+    before_stop_ids: string[];
+    after_stop_ids: string[];
+    identical_stop_id_equivalences: Array<{
+      before_stop_id: string;
+      after_stop_id: string;
+      before_stop_name: string;
+      after_stop_name: string;
+      equivalence_basis: string;
+    }>;
+    before_only_stop_ids: string[];
+    before_only_stops: Array<{
+      stop_id: string;
+      stop_name: string;
+      disposition: string;
+    }>;
+    after_only_stop_ids: string[];
+    after_only_stops: Array<{
+      stop_id: string;
+      stop_name: string;
+      disposition: string;
+    }>;
+    shared_stop_ids_outside_candidate_slice: string[];
+    shared_stops_outside_candidate_slice: Array<{
+      stop_id: string;
+      before_stop_name: string;
+      after_stop_name: string;
+      exclusion_reason: string;
+    }>;
+    changed_id_equivalence_authorized: boolean;
+    changed_id_disposition: string;
+    comparison_sha256: string;
+  };
+};
+
+type FullStopComparisonReceiptArtifact = {
+  receipt_id: string;
+  source_id: string;
+  upstream_pins: typeof PLAN040_PACKAGE_10B_ACQUISITION_PINS;
+  accepted_snapshot_inputs: Array<{
+    snapshot_id: string;
+    source_id: string;
+    service_date: string;
+    receipt_path: string;
+    receipt_sha256: string;
+    zip_path: string;
+    zip_sha1: string;
+    zip_sha256: string;
+    calendar_expansion: {
+      policy: string;
+      active_service_ids: string[];
+      active_service_id_sha256: string;
+    };
+  }>;
+  coverage: {
+    predecessor_route_count: number;
+    predecessor_pattern_count: number;
+    predecessor_active_trip_count: number;
+    predecessor_covered_trip_count: number;
+    predecessor_active_trip_coverage_percent: number;
+    successor_route_count: number;
+    successor_pattern_count: number;
+    successor_active_trip_count: number;
+    successor_covered_trip_count: number;
+    successor_active_trip_coverage_percent: number;
+  };
+  predecessor_patterns: FullStopPatternReceipt[];
+  successor_patterns: FullStopPatternReceipt[];
+  comparisons: FullStopComparisonReceipt[];
+  equivalence_policy: {
+    accepted_equivalence: string;
+    applied_equivalence: string;
+    first_party_crosswalk_search_outcome: string;
+    proximity_name_coordinate_or_adjacency_equivalence_authorized: boolean;
+    before_only_and_after_only_stops: string;
+  };
+  changed_id_guesses: Array<{
+    before_stop_ids: string[];
+    after_stop_ids: string[];
+    context: string;
+    status: string;
+  }>;
+  external_acquisition_performed: false;
+  authorizes_occurrence: false;
+  authorizes_study: false;
+  authorizes_cross_product: false;
+  authorizes_decision_persistence: false;
+};
+
 const sha256 = (value: Uint8Array | string): string =>
   createHash("sha256").update(value).digest("hex");
+const sha1 = (value: Uint8Array | string): string =>
+  createHash("sha1").update(value).digest("hex");
 const sortedHash = (values: readonly string[]): string =>
   sha256(`${[...values].sort().join("\n")}\n`);
 const readJson = <T>(path: string): T =>
@@ -90,6 +232,7 @@ const inputFor = (
   candidates = evidence.candidates,
   exclusions = evidence.exclusions,
   preservedPackage8 = evidence.preserved_package_8_predecessor_rows,
+  comparisonReceipt = evidence.comparison_receipt,
 ) => ({
   evidenceManifestPath:
     "data/quality/operational-reference/member-extent-risk/" +
@@ -100,6 +243,7 @@ const inputFor = (
   preservedPackage8,
   priorCandidateKeys: [] as string[],
   versionSeparation: evidence.version_separation,
+  comparisonReceipt,
 });
 
 type CsvRow = Record<string, string>;
@@ -154,6 +298,21 @@ const routeInventory = (
     shapes: [...new Set(trips.map((row) => row.shape_id!))].sort(),
   };
 };
+
+const recomputedPatterns = (
+  snapshotId: string,
+  serviceDate: string,
+  routeId: string,
+) => fullStopPatternsForDate(
+  loadGtfsStaticSnapshot(
+    snapshotById(loadOperationalSnapshotRegistry(), snapshotId),
+    ["calendar", "calendar_dates", "routes", "stops", "stop_times", "trips"],
+    repoRoot,
+    new Set([routeId]),
+  ),
+  serviceDate,
+  routeId,
+);
 
 const scheduleSlices = async () => {
   const target = new Map([
@@ -269,6 +428,261 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
         ),
       }),
     );
+  });
+
+  it("pins and independently recomputes complete predecessor/successor chains and comparisons", () => {
+    const evidence = readJson<Package10bEvidence>(evidencePath);
+    const receiptBytes = readFileSync(comparisonReceiptPath);
+    const receipt = JSON.parse(
+      receiptBytes.toString("utf8"),
+    ) as FullStopComparisonReceiptArtifact;
+    expect(sha256(receiptBytes)).toBe(
+      PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256,
+    );
+    expect(evidence.comparison_receipt).toEqual({
+      path:
+        "data/quality/acquisition/receipts/member-extent/" +
+        "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json",
+      sha256: PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256,
+      receipt_id:
+        "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1",
+      source_id:
+        "plan_040_qbnr_service_pattern_package_10b_full_stop_equivalence",
+      upstream_pins: PLAN040_PACKAGE_10B_ACQUISITION_PINS,
+      external_acquisition_performed: false,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+      authorizes_decision_persistence: false,
+    });
+    expect(receipt.upstream_pins).toEqual(PLAN040_PACKAGE_10B_ACQUISITION_PINS);
+    for (const pin of Object.values(receipt.upstream_pins)) {
+      expect(sha256(readFileSync(`${repoRoot}/${pin.path}`))).toBe(pin.sha256);
+    }
+    for (const snapshot of receipt.accepted_snapshot_inputs) {
+      const receiptFile = readFileSync(`${repoRoot}/${snapshot.receipt_path}`);
+      const zipFile = readFileSync(`${repoRoot}/${snapshot.zip_path}`);
+      expect(sha256(receiptFile)).toBe(snapshot.receipt_sha256);
+      expect(sha1(zipFile)).toBe(snapshot.zip_sha1);
+      expect(sha256(zipFile)).toBe(snapshot.zip_sha256);
+      expect(sortedHash(snapshot.calendar_expansion.active_service_ids)).toBe(
+        snapshot.calendar_expansion.active_service_id_sha256,
+      );
+      expect(snapshot.calendar_expansion.policy).toBe(
+        "calendar_plus_calendar_dates",
+      );
+    }
+    expect(receipt.coverage).toEqual({
+      predecessor_route_count: 2,
+      predecessor_pattern_count: 4,
+      predecessor_active_trip_count: 323,
+      predecessor_covered_trip_count: 323,
+      predecessor_active_trip_coverage_percent: 100,
+      successor_route_count: 1,
+      successor_pattern_count: 2,
+      successor_active_trip_count: 102,
+      successor_covered_trip_count: 102,
+      successor_active_trip_coverage_percent: 100,
+    });
+
+    const recomputed = [
+      ...recomputedPatterns(
+        "gtfs-static-20250625-busco-pre-qbnr",
+        "2025-06-28",
+        "Q110",
+      ),
+      ...recomputedPatterns(
+        "gtfs-static-20250615-queens-pre-qbnr",
+        "2025-06-28",
+        "Q36",
+      ),
+      ...recomputedPatterns(
+        "gtfs-static-20250626-queens-post-qbnr",
+        "2025-06-29",
+        "Q82",
+      ),
+    ];
+    expect(receipt.predecessor_patterns.map((row) => row.pattern_id)).toEqual([
+      PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q110_direction_0,
+      PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q110_direction_1,
+      PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q36_direction_0,
+      PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q36_direction_1,
+    ]);
+    expect(receipt.successor_patterns.map((row) => row.pattern_id)).toEqual([
+      PLAN040_PACKAGE_10B_PATTERN_IDS.direction_0,
+      PLAN040_PACKAGE_10B_PATTERN_IDS.direction_1,
+    ]);
+    for (const frozen of [
+      ...receipt.predecessor_patterns,
+      ...receipt.successor_patterns,
+    ]) {
+      const actual = recomputed.find((row) =>
+        row.pattern_id === frozen.pattern_id)!;
+      expect(actual).toBeDefined();
+      expect(frozen.snapshot_id).toBe(actual.snapshot_id);
+      expect(frozen.service_date).toBe(actual.service_date);
+      expect(frozen.route_id).toBe(actual.route_id);
+      expect(frozen.direction_id).toBe(actual.direction_id);
+      expect(frozen.trip_count).toBe(actual.trip_count);
+      expect(frozen.trip_id_sha256).toBe(sortedHash(actual.trip_ids));
+      expect(frozen.shape_ids).toEqual(actual.shape_ids);
+      expect(frozen.stop_count).toBe(actual.stops.length);
+      expect(frozen.stop_ids).toEqual(
+        actual.stops.map((stop) => stop.stop_id),
+      );
+      expect(frozen.stops).toEqual(actual.stops);
+      expect(frozen.stop_chain_sha256).toBe(
+        sha256(`${frozen.stop_ids.join("\n")}\n`),
+      );
+    }
+
+    const recomputedById = new Map(recomputed.map((row) => [
+      row.pattern_id,
+      row,
+    ]));
+    expect(receipt.comparisons.map((row) => row.comparison_id)).toEqual([
+      PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_0,
+      PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_1,
+      PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_0,
+      PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_1,
+    ]);
+    for (const frozen of receipt.comparisons) {
+      const actual = compareFullStopPatterns(
+        recomputedById.get(frozen.predecessor_pattern_id)!,
+        recomputedById.get(frozen.successor_pattern_id)!,
+      );
+      expect(actual.comparison_id).toBe(frozen.comparison_id);
+      expect(actual as unknown as JsonValue).toEqual(
+        frozen.full_chain_comparison,
+      );
+      expect(frozen.full_chain_comparison_sha256).toBe(
+        sha256(`${stableJson(actual as unknown as JsonValue)}\n`),
+      );
+    }
+
+    const selected = Object.fromEntries(receipt.comparisons.map((row) => [
+      row.comparison_id,
+      {
+        bounds: row.selected_candidate_slice.boundary_stop_ids,
+        before: row.selected_candidate_slice.before_stop_ids,
+        after: row.selected_candidate_slice.after_stop_ids,
+        identical:
+          row.selected_candidate_slice.identical_stop_id_equivalences.map(
+            (stop) => stop.before_stop_id,
+          ),
+        outside:
+          row.selected_candidate_slice.shared_stop_ids_outside_candidate_slice,
+      },
+    ]));
+    expect(selected).toEqual({
+      [PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_0]: {
+        bounds: ["552248", "500122"],
+        before: [
+          "552248", "552249", "505131", "500120", "500121", "500122",
+        ],
+        after: ["552248", "552249", "505131", "701055", "500122"],
+        identical: ["552248", "552249", "505131", "500122"],
+        outside: ["904250"],
+      },
+      [PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_1]: {
+        bounds: ["500123", "552252"],
+        before: ["500123", "500124", "500125", "552252"],
+        after: ["500123", "500125", "552252"],
+        identical: ["500123", "500125", "552252"],
+        outside: ["553437", "501962"],
+      },
+      [PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_0]: {
+        bounds: ["500022", "501927"],
+        before: ["500022", "501924", "501925", "501926", "501927"],
+        after: ["500022", "501925", "501927"],
+        identical: ["500022", "501925", "501927"],
+        outside: ["503984", "501908", "505096", "500018", "503965"],
+      },
+      [PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_1]: {
+        bounds: ["501962", "501966"],
+        before: ["501962", "501963", "501964", "501965", "501966"],
+        after: ["501962", "501964", "501966"],
+        identical: ["501962", "501964", "501966"],
+        outside: ["500072", "500074", "500080", "501414"],
+      },
+    });
+    for (const comparison of receipt.comparisons) {
+      const slice = comparison.selected_candidate_slice;
+      expect(slice.identical_stop_id_equivalences.every((stop) =>
+        stop.before_stop_id === stop.after_stop_id &&
+        stop.equivalence_basis === "identical_stop_id"
+      )).toBe(true);
+      expect(slice.before_only_stops.every((stop) =>
+        stop.disposition === "unresolved_no_equivalence_authorized"
+      )).toBe(true);
+      expect(slice.after_only_stops.every((stop) =>
+        stop.disposition === "unresolved_no_equivalence_authorized"
+      )).toBe(true);
+      expect(slice.changed_id_equivalence_authorized).toBe(false);
+      expect(slice.changed_id_disposition).toBe(
+        "unresolved_no_equivalence_authorized",
+      );
+    }
+    const q110Direction1 = receipt.comparisons.find((row) =>
+      row.comparison_id ===
+        PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_1)!;
+    expect(q110Direction1.selected_candidate_slice.boundary_stop_evidence)
+      .toEqual([
+        expect.objectContaining({
+          stop_id: "500123",
+          before_stop_name: expect.stringContaining("HEMPSTEAD"),
+          after_stop_name: expect.stringContaining("HEMPSTEAD"),
+        }),
+        expect.objectContaining({
+          stop_id: "552252",
+          before_stop_name: expect.stringContaining("HEMPSTEAD"),
+          after_stop_name: expect.stringContaining("HEMPSTEAD"),
+        }),
+      ]);
+    expect(
+      q110Direction1.selected_candidate_slice
+        .shared_stops_outside_candidate_slice,
+    ).toContainEqual(expect.objectContaining({
+      stop_id: "501962",
+      before_stop_name: "JAMAICA AV/212 PL",
+      after_stop_name: "JAMAICA AV/212 PL",
+      exclusion_reason: "outside_source_named_hempstead_av_candidate_slice",
+    }));
+    expect(receipt.changed_id_guesses).toEqual([
+      expect.objectContaining({
+        before_stop_ids: ["500120", "500121"],
+        after_stop_ids: ["701055"],
+        status: "unresolved_no_equivalence_authorized",
+      }),
+      expect.objectContaining({
+        before_stop_ids: ["552250"],
+        after_stop_ids: ["552727"],
+        status: "unresolved_no_equivalence_authorized",
+      }),
+      expect.objectContaining({
+        before_stop_ids: ["500071"],
+        after_stop_ids: ["500072"],
+        status: "unresolved_no_equivalence_authorized",
+      }),
+    ]);
+    expect(receipt.equivalence_policy).toEqual({
+      accepted_equivalence:
+        "identical_stop_id_or_separately_cited_first_party_crosswalk_only",
+      applied_equivalence: "identical_stop_id_only",
+      first_party_crosswalk_search_outcome:
+        "no_crosswalk_found_not_required_for_identical_stop_id_equivalences",
+      proximity_name_coordinate_or_adjacency_equivalence_authorized: false,
+      before_only_and_after_only_stops:
+        "unresolved_no_equivalence_authorized",
+    });
+    expect(stableJson(receipt as unknown as JsonValue)).not.toContain(
+      "not_equivalent",
+    );
+    expect(receipt.external_acquisition_performed).toBe(false);
+    expect(receipt.authorizes_occurrence).toBe(false);
+    expect(receipt.authorizes_study).toBe(false);
+    expect(receipt.authorizes_cross_product).toBe(false);
+    expect(receipt.authorizes_decision_persistence).toBe(false);
   });
 
   it("recomputes accepted initial GTFS inventories and exact Q82 chains", () => {
@@ -393,6 +807,26 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
         description:
           "Only the exact accepted initial-post Q82 passenger patterns on the implementation-date weekend slice.",
       });
+      const evidence = candidate.accepted_evidence as {
+        comparison_receipt: Plan040Package10bComparisonReceiptRef;
+        predecessor_full_stop_chains: FullStopPatternReceipt[];
+        candidate_full_stop_comparisons: FullStopComparisonReceipt[];
+      };
+      expect(evidence.comparison_receipt).toEqual(
+        readJson<Package10bEvidence>(evidencePath).comparison_receipt,
+      );
+      const receiptSource = evidence.comparison_receipt.source_id;
+      const bindingIds = candidate.proposed_extent_decision!.evidence_bindings
+        .map((binding) => binding.evidence_id);
+      expect(Object.values(PLAN040_PACKAGE_10B_PATTERN_IDS).every((id) =>
+        bindingIds.includes(`${receiptSource}#${id}`)
+      )).toBe(true);
+      expect(bindingIds).toContain(
+        `${receiptSource}#${evidence.comparison_receipt.receipt_id}`,
+      );
+      expect(grain.evidence_bindings).toEqual(
+        candidate.proposed_extent_decision!.evidence_bindings,
+      );
       expect(candidate.persisted_extent_decision).toBeNull();
       expect(candidate.persisted_grain_decision).toBeNull();
     }
@@ -413,16 +847,76 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
         shared_stop_ids: ["500123", "500125", "552252"],
       },
     ]);
+    const expectedReplacementBindings = [
+      {
+        candidate: q82[1]!,
+        predecessorIds: [
+          PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q110_direction_0,
+          PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q110_direction_1,
+        ],
+        comparisonIds: [
+          PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_0,
+          PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_1,
+        ],
+      },
+      {
+        candidate: q82[2]!,
+        predecessorIds: [
+          PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q36_direction_0,
+          PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q36_direction_1,
+        ],
+        comparisonIds: [
+          PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_0,
+          PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_1,
+        ],
+      },
+    ];
+    for (
+      const { candidate, predecessorIds, comparisonIds } of
+        expectedReplacementBindings
+    ) {
+      const accepted = candidate.accepted_evidence as {
+        comparison_receipt: Plan040Package10bComparisonReceiptRef;
+        predecessor_full_stop_chains: FullStopPatternReceipt[];
+        candidate_full_stop_comparisons: FullStopComparisonReceipt[];
+      };
+      const bindingIds = candidate.proposed_extent_decision!.evidence_bindings
+        .map((binding) => binding.evidence_id);
+      expect(accepted.predecessor_full_stop_chains.map((row) =>
+        row.pattern_id)).toEqual(predecessorIds);
+      expect(accepted.candidate_full_stop_comparisons.map((row) =>
+        row.comparison_id)).toEqual(comparisonIds);
+      expect([...predecessorIds, ...comparisonIds].every((id) =>
+        bindingIds.includes(`${accepted.comparison_receipt.source_id}#${id}`)
+      )).toBe(true);
+      expect(bindingIds.some((id) => id.includes("#route:"))).toBe(false);
+    }
+    expect(
+      (q82[0]!.accepted_evidence as {
+        predecessor_full_stop_chains: unknown[];
+      }).predecessor_full_stop_chains,
+    ).toEqual([]);
+    expect(
+      (q82[0]!.accepted_evidence as {
+        candidate_full_stop_comparisons: unknown[];
+      }).candidate_full_stop_comparisons,
+    ).toEqual([]);
     const rejected = q82.flatMap((candidate) =>
       (candidate.accepted_evidence as {
         rejected_identifier_inferences: string[];
       }).rejected_identifier_inferences);
     expect(rejected).toContain(
-      "500120_or_500121_is_not_equivalent_to_701055",
+      "500120_500121_to_701055_unresolved_no_equivalence_authorized",
     );
-    expect(rejected).toContain("552250_is_not_equivalent_to_552727");
-    expect(rejected).toContain("500071_is_not_equivalent_to_500072");
-    expect(rejected).toContain("skipped_local_stops_are_not_inferred");
+    expect(rejected).toContain(
+      "552250_to_552727_unresolved_no_equivalence_authorized",
+    );
+    expect(rejected).toContain(
+      "500071_to_500072_unresolved_no_equivalence_authorized",
+    );
+    expect(rejected).toContain(
+      "skipped_local_stops_unresolved_no_equivalence_authorized",
+    );
   });
 
   it("preserves Q89 and the accepted P8 Q110/Q36 absence rows exactly", () => {
@@ -562,6 +1056,41 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
         inputFor(evidence, chain),
       )
     ).toThrow(/Q82 evidence/u);
+
+    const comparison = clone(evidence.candidates);
+    (comparison[1]!.accepted_evidence as {
+      candidate_full_stop_comparisons: Array<{
+        selected_candidate_slice: {
+          identical_stop_id_equivalences: unknown[];
+        };
+      }>;
+    }).candidate_full_stop_comparisons[0]!
+      .selected_candidate_slice.identical_stop_id_equivalences = [];
+    expect(() =>
+      buildPlan040Package10bDraft(
+        inputFor(evidence, comparison),
+      )
+    ).toThrow(/predecessor comparator/u);
+
+    const receiptDrift = clone(evidence.comparison_receipt) as unknown as {
+      sha256: string;
+      upstream_pins: {
+        snapshot_registry: { sha256: string };
+      };
+    };
+    receiptDrift.sha256 = "0".repeat(64);
+    receiptDrift.upstream_pins.snapshot_registry.sha256 = "0".repeat(64);
+    expect(() =>
+      buildPlan040Package10bDraft(
+        inputFor(
+          evidence,
+          evidence.candidates,
+          evidence.exclusions,
+          evidence.preserved_package_8_predecessor_rows,
+          receiptDrift as unknown as Plan040Package10bComparisonReceiptRef,
+        ),
+      )
+    ).toThrow(/comparison receipt/u);
 
     const q89 = clone(evidence.candidates);
     q89[3]!.proposed_extent_decision =

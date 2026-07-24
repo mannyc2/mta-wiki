@@ -67,10 +67,143 @@ export const PLAN040_PACKAGE_10B_EXCLUSION_HASHES = {
 
 export const PLAN040_PACKAGE_10B_PATTERN_IDS = {
   direction_0:
-    "historical-full-stop-pattern:plan040-p10b-q82-9c85b382e78fcf4d",
+    "historical-full-stop-pattern:c97d65b9140c8cf53b45d350",
   direction_1:
-    "historical-full-stop-pattern:plan040-p10b-q82-08dc890c186a6d93",
+    "historical-full-stop-pattern:e09dcd02793958baccb601c5",
 } as const;
+
+export const PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS = {
+  q110_direction_0:
+    "historical-full-stop-pattern:709a937ad8704daeaed0cbb1",
+  q110_direction_1:
+    "historical-full-stop-pattern:473ed9ee3830a5451690eb34",
+  q36_direction_0:
+    "historical-full-stop-pattern:24f1bc9fad23c06d627e7725",
+  q36_direction_1:
+    "historical-full-stop-pattern:e38b6ec5c64fbe9be7ca8c08",
+} as const;
+
+export const PLAN040_PACKAGE_10B_COMPARISON_IDS = {
+  q110_direction_0:
+    "historical-full-stop-comparison:e2fe094ff7dd60273ee1e156",
+  q110_direction_1:
+    "historical-full-stop-comparison:082b077725233b8ac1e9520d",
+  q36_direction_0:
+    "historical-full-stop-comparison:5734666f6b5e92324405ffb8",
+  q36_direction_1:
+    "historical-full-stop-comparison:80d91071b9ddd11b83db0e50",
+} as const;
+
+export const PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_PINS = {
+  q110_direction_0: {
+    pattern_id: PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q110_direction_0,
+    trip_count: 92,
+    trip_id_sha256:
+      "43239f083f862df9d8d8e63734558cb1bc20234ff5f7a4a2b19fbcf097f23f4e",
+    stop_count: 34,
+    stop_chain_sha256:
+      "d88fcab6757bddc7ab49f027ce926a9238021abb797e08f715fbff0d68df78cb",
+  },
+  q110_direction_1: {
+    pattern_id: PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q110_direction_1,
+    trip_count: 93,
+    trip_id_sha256:
+      "6f1fdcb34a62e420e88ec3bd27fddfd474c02721d96d71e0a26369a3bd95d4b9",
+    stop_count: 34,
+    stop_chain_sha256:
+      "35d3d3c063486cc12010deedc51905cb9f1368a6bdc19ca2f748b280cedcec46",
+  },
+  q36_direction_0: {
+    pattern_id: PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q36_direction_0,
+    trip_count: 69,
+    trip_id_sha256:
+      "100534f0ca3fc9ce7879a4f612b274247c0a192179be91dec0f358e6ad3d6532",
+    stop_count: 38,
+    stop_chain_sha256:
+      "d23394c85bd51b5e0ee21653b80c969ea0369ff881b21f22d1fd4c185f1e91d2",
+  },
+  q36_direction_1: {
+    pattern_id: PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q36_direction_1,
+    trip_count: 69,
+    trip_id_sha256:
+      "ae968666c69f9b3fd5e08b671e195f7534636ad4f674abd65b42d760e061958a",
+    stop_count: 40,
+    stop_chain_sha256:
+      "912cc11c33950bc4bde7f4de8f878587b41d504f834f665076261b23cfc52ec9",
+  },
+} as const;
+
+export const PLAN040_PACKAGE_10B_COMPARISON_PINS = {
+  q110_direction_0: {
+    comparison_id: PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_0,
+    full_chain_comparison_sha256:
+      "68de60f2d420a7319461679c5fa9207830c9e6baec3235f2451aef20a8296c3e",
+    selected_candidate_slice_sha256:
+      "893651b8805c6005d5aa736f85cfe1268bfffb09b626a7a3eb4ad99d05ec10f8",
+  },
+  q110_direction_1: {
+    comparison_id: PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_1,
+    full_chain_comparison_sha256:
+      "4242e93389b40906827a637d5f9fdae831e3adc3afa7efd6002f52cfd47b593c",
+    selected_candidate_slice_sha256:
+      "8c7d31d19f49588636c07590fadd3a97a96bf8731fb6ef8f14a92793fea1725f",
+  },
+  q36_direction_0: {
+    comparison_id: PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_0,
+    full_chain_comparison_sha256:
+      "3607c9b3ee3b33a594010c109e89c0d2fa216ec37d9a5a15dcf1ed011e4624f8",
+    selected_candidate_slice_sha256:
+      "be183fc48b337d2f061759894197849ff6ad3f586755093bbaf1c9e7128730b7",
+  },
+  q36_direction_1: {
+    comparison_id: PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_1,
+    full_chain_comparison_sha256:
+      "2bf4584aa62fe0e718d808a1f5586bc815bd83113dac5424ef33bd67c62721cb",
+    selected_candidate_slice_sha256:
+      "a8b69a1b97cca5e01845849ef6f9c88d4f6be05179ab4989d27e2cdecbdd12cc",
+  },
+} as const;
+
+export const PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256 =
+  "bdc2dc5a9ac8aa1e5fa37d7c07de316cc2dc85030766ff2ef2be66236a93e44a" as const;
+
+export const PLAN040_PACKAGE_10B_ACQUISITION_PINS = {
+  historical_full_stop_acquisition: {
+    path:
+      "data/quality/acquisition/receipts/" +
+      "plan-040-historical-full-stop-acquisition.json",
+    sha256:
+      "842c109e99b326add639f78c5468e6d24a1f33521a7091655203349c7fd7c95d",
+  },
+  acquisition_manifest: {
+    path:
+      "data/quality/operational-reference/historical-full-stop/" +
+      "acquisition-manifest.json",
+    sha256:
+      "c68ba18ec3b65ebb240fec631954adfaa778ced3f459cd896c3f8cacb5f73f58",
+  },
+  snapshot_registry: {
+    path: "data/reference/operational/snapshots.json",
+    sha256:
+      "3372c2309f903ea1f069828619c925760ed8246daa1b1bf591f81aea0bfe7798",
+  },
+} as const;
+
+export type Plan040Package10bComparisonReceiptRef = {
+  path:
+    "data/quality/acquisition/receipts/member-extent/plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json";
+  sha256: string;
+  receipt_id:
+    "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1";
+  source_id:
+    "plan_040_qbnr_service_pattern_package_10b_full_stop_equivalence";
+  upstream_pins: typeof PLAN040_PACKAGE_10B_ACQUISITION_PINS;
+  external_acquisition_performed: false;
+  authorizes_occurrence: false;
+  authorizes_study: false;
+  authorizes_cross_product: false;
+  authorizes_decision_persistence: false;
+};
 
 export type Plan040Package10bCandidateEvidence = {
   candidate_key: string;
@@ -149,6 +282,7 @@ export type Plan040Package10bDraft = {
   candidates: Plan040Package10bCandidateEvidence[];
   exclusions: Plan040Package10bExclusion[];
   prior_package_overlap_count: 0;
+  comparison_receipt: Plan040Package10bComparisonReceiptRef;
   preserved_package_8_predecessor_rows: Plan040Package10bPreservedPackage8;
   post_10a_pins: typeof PLAN040_PACKAGE_10B_POST_10A_PINS;
   version_separation: Plan040Package8VersionSeparation;
@@ -177,6 +311,8 @@ const sha256 = (value: string): string =>
   createHash("sha256").update(value).digest("hex");
 const sortedHash = (values: readonly string[]): string =>
   sha256(`${[...values].sort().join("\n")}\n`);
+const sameJson = (left: unknown, right: unknown): boolean =>
+  stableJson(left as JsonValue) === stableJson(right as JsonValue);
 
 export function plan040Package10bReplayHash(value: JsonValue): string {
   return sha256(`${stableJson(value)}\n`);
@@ -202,6 +338,7 @@ function validateVersionSeparation(
 
 function validateQ82Positive(
   candidate: Plan040Package10bCandidateEvidence,
+  comparisonReceipt: Plan040Package10bComparisonReceiptRef,
 ): void {
   const extent = candidate.proposed_extent_decision;
   const grain = candidate.proposed_grain_decision;
@@ -255,6 +392,35 @@ function validateQ82Positive(
       stop_chain_sha256: string;
     }>;
     rejected_identifier_inferences?: string[];
+    comparison_receipt?: Plan040Package10bComparisonReceiptRef;
+    predecessor_full_stop_chains?: Array<{
+      pattern_id: string;
+      direction_id: string;
+      trip_count: number;
+      trip_id_sha256: string;
+      stop_count: number;
+      stop_ids: string[];
+      stop_chain_sha256: string;
+    }>;
+    candidate_full_stop_comparisons?: Array<{
+      comparison_id: string;
+      direction_id: string;
+      full_chain_comparison: JsonValue;
+      full_chain_comparison_sha256: string;
+      selected_candidate_slice: {
+        boundary_stop_ids: string[];
+        identical_stop_id_equivalences: Array<{
+          before_stop_id: string;
+          after_stop_id: string;
+          equivalence_basis: string;
+        }>;
+        before_only_stop_ids: string[];
+        after_only_stop_ids: string[];
+        shared_stop_ids_outside_candidate_slice: string[];
+        changed_id_equivalence_authorized: boolean;
+        comparison_sha256: string;
+      };
+    }>;
   };
   if (
     evidence.launch_feed?.active_trip_count !== 102 ||
@@ -279,9 +445,116 @@ function validateQ82Positive(
         PLAN040_PACKAGE_10B_PATTERN_IDS[
           chain.direction_id === "0" ? "direction_0" : "direction_1"
         ]) ||
-    (evidence.rejected_identifier_inferences?.length ?? 0) < 2
+    (evidence.rejected_identifier_inferences?.length ?? 0) < 2 ||
+    !sameJson(evidence.comparison_receipt, comparisonReceipt)
   ) {
     throw new Error(`${candidate.treatment_record_id}: accepted Q82 evidence drifted`);
+  }
+  const replacementRoute = candidate.treatment_record_id ===
+      "treatment_q82-q110-hempstead-replacement-2025"
+    ? "q110"
+    : candidate.treatment_record_id ===
+        "treatment_q82-q36-212-replacement-2025"
+    ? "q36"
+    : null;
+  const expectedComparisons = replacementRoute === "q110"
+    ? [
+      PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_0,
+      PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_1,
+    ]
+    : replacementRoute === "q36"
+    ? [
+      PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_0,
+      PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_1,
+    ]
+    : [];
+  const expectedPredecessors = replacementRoute === "q110"
+    ? [
+      PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q110_direction_0,
+      PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q110_direction_1,
+    ]
+    : replacementRoute === "q36"
+    ? [
+      PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q36_direction_0,
+      PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_IDS.q36_direction_1,
+    ]
+    : [];
+  const comparisons = evidence.candidate_full_stop_comparisons ?? [];
+  const predecessors = evidence.predecessor_full_stop_chains ?? [];
+  const expectedPredecessorIds = new Set<string>(expectedPredecessors);
+  const expectedComparisonIds = new Set<string>(expectedComparisons);
+  const expectedPredecessorPins = Object.values(
+    PLAN040_PACKAGE_10B_PREDECESSOR_PATTERN_PINS,
+  ).filter((pin) => expectedPredecessorIds.has(pin.pattern_id));
+  const expectedComparisonPins = Object.values(
+    PLAN040_PACKAGE_10B_COMPARISON_PINS,
+  ).filter((pin) => expectedComparisonIds.has(pin.comparison_id));
+  const comparisonContentDrifted = comparisons.some((row) => {
+    const {
+      comparison_sha256: selectedSha256,
+      ...selectedCandidateSlice
+    } = row.selected_candidate_slice;
+    return row.full_chain_comparison_sha256 !== sha256(
+      `${stableJson(row.full_chain_comparison)}\n`,
+    ) ||
+      selectedSha256 !== sha256(
+        `${stableJson(selectedCandidateSlice as unknown as JsonValue)}\n`,
+      );
+  });
+  const bindingIds = extent.evidence_bindings.map((binding) =>
+    binding.evidence_id);
+  if (
+    !Object.values(PLAN040_PACKAGE_10B_PATTERN_IDS).every((id) =>
+      bindingIds.includes(`${comparisonReceipt.source_id}#${id}`)) ||
+    !expectedComparisons.every((id) =>
+      bindingIds.includes(`${comparisonReceipt.source_id}#${id}`)) ||
+    !expectedPredecessors.every((id) =>
+      bindingIds.includes(`${comparisonReceipt.source_id}#${id}`)) ||
+    comparisons.length !== expectedComparisons.length ||
+    predecessors.length !== expectedPredecessors.length ||
+    !sameJson(
+      comparisons.map((row) => row.comparison_id).sort(),
+      [...expectedComparisons].sort(),
+    ) ||
+    !sameJson(
+      predecessors.map((row) => row.pattern_id).sort(),
+      [...expectedPredecessors].sort(),
+    ) ||
+    predecessors.some((row) =>
+      row.trip_count <= 0 ||
+      row.trip_id_sha256.length !== 64 ||
+      row.stop_ids.length < 2 ||
+      row.stop_chain_sha256 !== sha256(`${row.stop_ids.join("\n")}\n`)) ||
+    !expectedPredecessorPins.every((pin) =>
+      predecessors.some((row) =>
+        row.pattern_id === pin.pattern_id &&
+        row.trip_count === pin.trip_count &&
+        row.trip_id_sha256 === pin.trip_id_sha256 &&
+        row.stop_count === pin.stop_count &&
+        row.stop_ids.length === pin.stop_count &&
+        row.stop_chain_sha256 === pin.stop_chain_sha256)) ||
+    !expectedComparisonPins.every((pin) =>
+      comparisons.some((row) =>
+        row.comparison_id === pin.comparison_id &&
+        row.full_chain_comparison_sha256 ===
+          pin.full_chain_comparison_sha256 &&
+        row.selected_candidate_slice.comparison_sha256 ===
+          pin.selected_candidate_slice_sha256)) ||
+    comparisonContentDrifted ||
+    comparisons.some((row) =>
+      row.selected_candidate_slice.boundary_stop_ids.length !== 2 ||
+      row.selected_candidate_slice.identical_stop_id_equivalences.length <
+        2 ||
+      row.selected_candidate_slice.identical_stop_id_equivalences.some(
+        (equivalence) =>
+          equivalence.before_stop_id !== equivalence.after_stop_id ||
+          equivalence.equivalence_basis !== "identical_stop_id",
+      ) ||
+      row.selected_candidate_slice.changed_id_equivalence_authorized)
+  ) {
+    throw new Error(
+      `${candidate.treatment_record_id}: authoritative predecessor comparator drifted`,
+    );
   }
 }
 
@@ -365,12 +638,32 @@ export function buildPlan040Package10bDraft(input: {
   evidenceManifestSha256: string;
   candidates: Plan040Package10bCandidateEvidence[];
   exclusions: Plan040Package10bExclusion[];
+  comparisonReceipt: Plan040Package10bComparisonReceiptRef;
   preservedPackage8: Plan040Package10bPreservedPackage8;
   priorCandidateKeys: string[];
   versionSeparation: Plan040Package8VersionSeparation;
 }): Plan040Package10bDraft {
   validateVersionSeparation(input.versionSeparation);
   validatePreservedPackage8(input.preservedPackage8);
+  if (
+    input.comparisonReceipt.path !==
+      "data/quality/acquisition/receipts/member-extent/plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json" ||
+    input.comparisonReceipt.sha256 !==
+      PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256 ||
+    input.comparisonReceipt.receipt_id !==
+      "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1" ||
+    !sameJson(
+      input.comparisonReceipt.upstream_pins,
+      PLAN040_PACKAGE_10B_ACQUISITION_PINS,
+    ) ||
+    input.comparisonReceipt.external_acquisition_performed ||
+    input.comparisonReceipt.authorizes_occurrence ||
+    input.comparisonReceipt.authorizes_study ||
+    input.comparisonReceipt.authorizes_cross_product ||
+    input.comparisonReceipt.authorizes_decision_persistence
+  ) {
+    throw new Error("Plan 040 Package 10B comparison receipt drifted");
+  }
   const byTreatment = new Map(input.candidates.map((candidate) => [
     candidate.treatment_record_id,
     candidate,
@@ -399,7 +692,9 @@ export function buildPlan040Package10bDraft(input: {
     ) {
       throw new Error(`${candidate.treatment_record_id}: authority drifted`);
     }
-    if (candidate.gtfs_route_id === "Q82") validateQ82Positive(candidate);
+    if (candidate.gtfs_route_id === "Q82") {
+      validateQ82Positive(candidate, input.comparisonReceipt);
+    }
     else validateQ89Preservation(candidate);
   }
   if (
@@ -440,6 +735,7 @@ export function buildPlan040Package10bDraft(input: {
     candidates,
     exclusions: input.exclusions,
     prior_package_overlap_count: 0,
+    comparison_receipt: input.comparisonReceipt,
     preserved_package_8_predecessor_rows: input.preservedPackage8,
     post_10a_pins: PLAN040_PACKAGE_10B_POST_10A_PINS,
     version_separation: input.versionSeparation,
