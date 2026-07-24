@@ -34,7 +34,7 @@ export const PLAN040_PACKAGE_8_GATE_SHA256 =
 export const PLAN040_PACKAGE_8_ACCEPTANCE_SHA256 =
   "a6aa324ad0aef61c5dae054d30661057d5973848b26263cc0a555582124d17e8" as const;
 export const PLAN040_PACKAGE_8_ABSENCE_RECEIPT_SHA256 =
-  "PENDING_PLAN040_PACKAGE_8_ABSENCE_RECEIPT_SHA256" as const;
+  "0b0e60398c750dc29ab76cbb9d70886f72abe8a42c2c9127fc005eb8d6d1e8b4" as const;
 
 const PACKAGE_8_EVIDENCE_PATH =
   "data/quality/operational-reference/member-extent-risk/" +

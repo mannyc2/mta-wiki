@@ -652,16 +652,16 @@ describe("Plan 040 QBNR Package 5 accelerated evidence-only freeze", () => {
       unresolved: 283,
     });
     expect(distribution(extentLedger, "verdict")).toEqual({
-      absent_in_source: 99,
-      "resolved:bounded_segment": 17,
-      "resolved:route_wide": 4,
+      absent_in_source: 139,
+      "resolved:bounded_segment": 25,
+      "resolved:route_wide": 6,
       "resolved:stop_set": 4,
-      unreviewed: 184,
+      unreviewed: 134,
     });
     expect(distribution(grainLedger, "verdict")).toEqual({
-      absent_in_source: 99,
-      resolved: 12,
-      unreviewed: 197,
+      absent_in_source: 139,
+      resolved: 22,
+      unreviewed: 147,
     });
     const companionByKey = new Map(companion.map((row) => [
       extentDecisionKey(row as never),

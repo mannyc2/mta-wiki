@@ -4,10 +4,12 @@ import { existsSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import type { JsonValue } from "../../../db/src/types";
 import {
+  PLAN040_PACKAGE_8_ABSENCE_RECEIPT_SHA256,
   PLAN040_PACKAGE_8_ACCEPTANCE_SHA256,
   PLAN040_PACKAGE_8_APPROVED_COMMIT,
   PLAN040_PACKAGE_8_GATE_SHA256,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_ACCEPTANCE_PATH,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_ABSENCE_RECEIPT_PATH,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_GATE_PATH,
   buildPlan040Package8AcceptedArtifacts,
   buildPlan040Package8GateAndAcceptance,
@@ -668,37 +670,24 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
       ],
     ]);
     expect(evidence.pristine_ledger_inputs.extent.sha256).toBe(
-      sha256(readFileSync(extentLedgerPath)),
+      PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.extent_ledger,
     );
     expect(evidence.pristine_ledger_inputs.grain.sha256).toBe(
-      sha256(readFileSync(grainLedgerPath)),
+      PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.grain_ledger,
     );
-    const candidateKeys = new Set(evidence.candidates.map((candidate) =>
-      candidate.candidate_key));
-    const extentRows = readJsonl(extentLedgerPath).filter((row) =>
-      candidateKeys.has(extentDecisionKey(row as {
-        occurrence_id: string;
-        route_record_id: string;
-        treatment_record_id: string;
-      })));
-    const grainRows = readJsonl(grainLedgerPath).filter((row) =>
-      candidateKeys.has(extentDecisionKey(row as {
-        occurrence_id: string;
-        route_record_id: string;
-        treatment_record_id: string;
-      })));
-    expect(extentRows).toHaveLength(30);
-    expect(grainRows).toHaveLength(30);
-    expect(extentRows.every((row) =>
-      row.verdict === "unreviewed" &&
-      (row.receipt_ids as unknown[]).length === 0 &&
-      row.updated_at === null)).toBe(true);
-    expect(grainRows.every((row) =>
-      row.verdict === "unreviewed" &&
-      row.spatial_verdict === "unreviewed" &&
-      (row.receipt_ids as unknown[]).length === 0 &&
-      row.updated_at === null)).toBe(true);
     for (const candidate of evidence.candidates) {
+      expect(candidate.ledger_snapshot).toEqual({
+        extent_verdict: "unreviewed",
+        grain_verdict: "unreviewed",
+        grain_spatial_verdict: "unreviewed",
+        current_extent_kind: "unresolved",
+        extent_receipt_ids: [],
+        grain_receipt_ids: [],
+        extent_decision_id: null,
+        grain_decision_id: null,
+        extent_updated_at: null,
+        grain_updated_at: null,
+      });
       expect(candidate.source_statement.raw_text.length).toBeGreaterThan(0);
       expect(candidate.source_statement.evidence_id.length).toBeGreaterThan(0);
       expect(candidate.source_row.route_row).toBe(candidate.gtfs_route_id);
@@ -801,6 +790,111 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
       })).toThrow(
         "owner/delegate acceptance drifted",
       );
+  });
+
+  it("persists one exact 30-key dual-surface reviewed-absence receipt and zero positives", () => {
+    const draft = readJson<Plan040Package8Draft>(draftPath);
+    const gate = readJson<Record<string, unknown>>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_GATE_PATH,
+    );
+    const acceptance = readJson<Record<string, unknown>>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_ACCEPTANCE_PATH,
+    );
+    const absenceStore = readJson<{
+      receipts: Array<{
+        receipt_id: string;
+        surfaces: string[];
+        extent_keys: Array<{
+          occurrence_id: string;
+          route_record_id: string;
+          treatment_record_id: string;
+        }>;
+        exact_searches: string[];
+        urls_inspected: string[];
+        authorizes_study: boolean;
+        authorizes_cross_product: boolean;
+      }>;
+    }>(PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_ABSENCE_RECEIPT_PATH);
+
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_ABSENCE_RECEIPT_PATH,
+    ))).toBe(PLAN040_PACKAGE_8_ABSENCE_RECEIPT_SHA256);
+    expect(absenceStore.receipts).toHaveLength(1);
+    expect(absenceStore.receipts[0]).toMatchObject({
+      receipt_id:
+        "plan-040-qbnr-service-pattern-package-8-reviewed-absence-v1",
+      surfaces: ["member_extent", "member_grain"],
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(absenceStore.receipts[0]!.extent_keys).toHaveLength(30);
+    expect(absenceStore.receipts[0]!.exact_searches).toHaveLength(30);
+    expect(new Set(absenceStore.receipts[0]!.exact_searches).size).toBe(30);
+    expect(absenceStore.receipts[0]!.urls_inspected).toHaveLength(28);
+    const accepted = buildPlan040Package8AcceptedArtifacts({
+      draft,
+      gate: gate as never,
+      acceptance: acceptance as never,
+    });
+    expect(accepted.extentDecisions).toEqual([]);
+    expect(accepted.grainDecisions).toEqual([]);
+    expect(accepted.absenceReceipt).toEqual(absenceStore.receipts[0]);
+  });
+
+  it("replays the exact post-P8 extent and grain ledger distributions", () => {
+    const draft = readJson<Plan040Package8Draft>(draftPath);
+    const candidateKeys = new Set(draft.candidates.map((candidate) =>
+      candidate.candidate_key));
+    const allExtentRows = readJsonl(extentLedgerPath);
+    const allGrainRows = readJsonl(grainLedgerPath);
+    const extentRows = allExtentRows.filter((row) =>
+      candidateKeys.has(extentDecisionKey(row as never)));
+    const grainRows = allGrainRows.filter((row) =>
+      candidateKeys.has(extentDecisionKey(row as never)));
+
+    expect(extentRows).toHaveLength(30);
+    expect(grainRows).toHaveLength(30);
+    expect(extentRows.every((row) =>
+      row.verdict === "absent_in_source" &&
+      row.current_extent_kind === "unresolved" &&
+      (row.receipt_ids as string[]).includes(
+        "plan-040-qbnr-service-pattern-package-8-reviewed-absence-v1",
+      ))).toBe(true);
+    expect(grainRows.every((row) =>
+      row.verdict === "absent_in_source" &&
+      row.member_extent_decision_id === null &&
+      row.service_scope === null &&
+      (row.receipt_ids as string[]).includes(
+        "plan-040-qbnr-service-pattern-package-8-reviewed-absence-v1",
+      ))).toBe(true);
+    expect(Object.fromEntries([
+      "absent_in_source",
+      "resolved:bounded_segment",
+      "resolved:route_wide",
+      "resolved:stop_set",
+      "unreviewed",
+    ].map((verdict) => [
+      verdict,
+      allExtentRows.filter((row) => row.verdict === verdict).length,
+    ]))).toEqual({
+      absent_in_source: 139,
+      "resolved:bounded_segment": 25,
+      "resolved:route_wide": 6,
+      "resolved:stop_set": 4,
+      unreviewed: 134,
+    });
+    expect(Object.fromEntries([
+      "absent_in_source",
+      "resolved",
+      "unreviewed",
+    ].map((verdict) => [
+      verdict,
+      allGrainRows.filter((row) => row.verdict === verdict).length,
+    ]))).toEqual({
+      absent_in_source: 139,
+      resolved: 22,
+      unreviewed: 147,
+    });
   });
 
   it("rebuilds deterministically and rejects scope, gap, or authority mutations", () => {

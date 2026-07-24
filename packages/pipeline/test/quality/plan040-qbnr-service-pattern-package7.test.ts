@@ -724,11 +724,11 @@ describe("Plan 040 QBNR Package 7 accelerated evidence and decision draft", () =
       verdict,
       allExtentRows.filter((row) => row.verdict === verdict).length,
     ]))).toEqual({
-      absent_in_source: 109,
+      absent_in_source: 139,
       "resolved:bounded_segment": 25,
       "resolved:route_wide": 6,
       "resolved:stop_set": 4,
-      unreviewed: 164,
+      unreviewed: 134,
     });
     expect(Object.fromEntries([
       "absent_in_source",
@@ -738,9 +738,9 @@ describe("Plan 040 QBNR Package 7 accelerated evidence and decision draft", () =
       verdict,
       allGrainRows.filter((row) => row.verdict === verdict).length,
     ]))).toEqual({
-      absent_in_source: 109,
+      absent_in_source: 139,
       resolved: 22,
-      unreviewed: 177,
+      unreviewed: 147,
     });
   });
 
