@@ -19,7 +19,20 @@ import {
   PLAN040_PACKAGE_14_SOURCE_GAP_COUNT,
   PLAN040_PACKAGE_14_SOURCE_GAP_KEY_SHA256,
   plan040Package14SortedHash,
+  type Plan040Package14Discovery,
 } from "./plan040-accelerated-package14.js";
+import {
+  memberGrainDecisionKey,
+  parseMemberGrainDecision,
+  type MemberGrainDecision,
+} from "./member-grain-decisions.js";
+import type { MemberSourceGapOverlay } from "./member-extent-ledger.js";
+import {
+  extentDecisionKey,
+  validateMemberExtentDecision,
+  type ExactEvidenceBinding,
+  type MemberExtentDecision,
+} from "./study-readiness-v1.js";
 
 export const PLAN040_PACKAGE_14_REVIEWED_COMMIT =
   "d1293514bbd3fcc162f624fbbb63107a20d1f3a0" as const;
@@ -30,6 +43,52 @@ export const PLAN040_PACKAGE_14_FROZEN_EVIDENCE_SHA256 =
   "05a7431456441a250224069e897424c50ea063359885f4212bc2d9a79ad241d8" as const;
 export const PLAN040_PACKAGE_14_FROZEN_DRAFT_SHA256 =
   "e89135cd55199eb2504766c4f168cc2747fbef6970aba165b0ac7236f8fabd74" as const;
+export const PLAN040_PACKAGE_14_GATE_SHA256 =
+  "0ef37e80b6a367b99f4377f99fa65ed22248b633e72b3d45afe705191418f0fc" as const;
+export const PLAN040_PACKAGE_14_COMPARISON_SHA256 =
+  "06ad4d59255213474dc61c027fbdde49d310a3957e9922ac3ec0d52a83f5b417" as const;
+export const PLAN040_PACKAGE_14_SOURCE_GAP_BLOCK_SHA256 =
+  "87a6caec68e300313f2766b77b1d7bb673e4ab99e5cdf6ef66a5c4d05958e0e7" as const;
+export const PLAN040_PACKAGE_14_PERSISTENCE_EVIDENCE_SHA256 =
+  "f48639cc79bb0eb1560360e1187c261eaa4cbcb17d09530dff7467a9fbf5fe1e" as const;
+export const PLAN040_PACKAGE_14_ACCEPTANCE_SHA256 =
+  "6421e6739d61c9b364957838cf19f178ce75046438bd27a5198411365d26a765" as const;
+export const PLAN040_PACKAGE_14_EXTENT_DECISIONS_SHA256 =
+  "3646dd428d32c41c3ac3c49cf16387bb90ff9aa4d1a6234b059d5b7394cab3a2" as const;
+export const PLAN040_PACKAGE_14_GRAIN_DECISIONS_SHA256 =
+  "ca787cabdb2ba961d6c77266894dc157fe300f67cb1b2f3e0b6c3e4bb324a6d7" as const;
+export const PLAN040_PACKAGE_14_SOURCE_GAP_OVERLAY_SHA256 =
+  "9fa55806e5d247fe24c1d3ee2c573b1272c8a26542a2305714f0d8c2f1453b25" as const;
+export const PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS = {
+  extent_ledger:
+    "8cd25c9376eb3285663974edfd36880a3f8192826cacd4c151f4604495a281d6",
+  grain_ledger:
+    "09225b9be4227117ce9a5c6b0eb396035b10a4de9b1b012393afc68f77054d88",
+  bridge_ledger:
+    "2795f92338f5dcc22369759384d61355526842618f92b7eda70d7cf7476bae9e",
+  bridge_summary:
+    "a9fbef6364dd8e78ad29272190a55c6fa457926369258c0c838813af8853daa1",
+  consumer_priority_manifest:
+    "d1427e1d300905a5d96432fa2e0f3b468be458f447c01c406b4f6f7a03ae5d30",
+  study_manifest:
+    "1472dbba8e3ac1a2598516e145a126a1a62f0cdc41a29f87d785ec00bfb31088",
+  member_extent_contract:
+    "e956de3ebfc107b0d259cc39ad514858463a60b87185cfad5c758611ebc9eaa6",
+  member_extent_manifest:
+    "d329eeb7963ac1d8e53a7f987fb59dc07f361f6391cb3fd4068297bfbc751fff",
+  member_extent_review_ledger:
+    "e7bb15f9e9194b09e125e032fb5e7dffda25ab014f9367489ac8b4e6f8f2b207",
+  member_extent_summary:
+    "2896ff6fa063198f2a420c83405ff6191938c2013fbd6df645f97a3fd16be04a",
+  operational_occurrences:
+    "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
+  operational_occurrence_decisions:
+    "80e530c9953e59a767afcb2f0d61202d9a9209469075f41f993fe7469ee45883",
+  treatment_components:
+    "a9b76c3b7121fc87d0f190a44fb00f182229d8d309968d3ba00a8c27a1492bae",
+  reviewed_candidate_packets:
+    "0ac700c48740fff5eb36b626b8dee72f95212378c0b40bc3dc6265b32c3d5844",
+} as const;
 
 const RISK_PREFIX =
   "data/quality/operational-reference/member-extent-risk/";
@@ -64,7 +123,16 @@ const SOURCE_GAP_BLOCK_PATH =
 const PERSISTENCE_EVIDENCE_PATH =
   `${RISK_PREFIX}plan-040-accelerated-package-14-persistence-evidence-v1.json`;
 const ACCEPTANCE_PATH =
-  `${RISK_PREFIX}plan-040-accelerated-package-14-owner-acceptance-v1.json`;
+  `${RISK_PREFIX}plan-040-accelerated-package-14-owner-acceptance-v2.json`;
+const EXTENT_DECISIONS_PATH =
+  "data/quality/operational-reference/member-extent-ledger-decisions/" +
+  "plan-040-accelerated-package-14-v1.json";
+const GRAIN_DECISIONS_PATH =
+  "data/quality/operational-reference/member-grain-decisions/" +
+  "plan-040-accelerated-package-14-v1.json";
+const SOURCE_GAP_OVERLAY_PATH =
+  "data/quality/operational-reference/member-source-gap-overlays/" +
+  "plan-040-accelerated-package-14-v1.json";
 
 export const PLAN040_PACKAGE_14_GATE_PATH = join(repoRoot, GATE_PATH);
 export const PLAN040_PACKAGE_14_COMPARISON_PATH =
@@ -75,6 +143,12 @@ export const PLAN040_PACKAGE_14_PERSISTENCE_EVIDENCE_PATH =
   join(repoRoot, PERSISTENCE_EVIDENCE_PATH);
 export const PLAN040_PACKAGE_14_ACCEPTANCE_PATH =
   join(repoRoot, ACCEPTANCE_PATH);
+export const PLAN040_PACKAGE_14_EXTENT_DECISIONS_PATH =
+  join(repoRoot, EXTENT_DECISIONS_PATH);
+export const PLAN040_PACKAGE_14_GRAIN_DECISIONS_PATH =
+  join(repoRoot, GRAIN_DECISIONS_PATH);
+export const PLAN040_PACKAGE_14_SOURCE_GAP_OVERLAY_PATH =
+  join(repoRoot, SOURCE_GAP_OVERLAY_PATH);
 
 type ArtifactRef = { path: string; sha256: string };
 type StrictReceiptRef = ArtifactRef & {
@@ -611,7 +685,7 @@ function buildAcceptance(input: {
   const ids = decisionIds(input.draft);
   return {
     schema_version: 1,
-    acceptance_id: "plan-040-accelerated-package-14-owner-acceptance-v1",
+    acceptance_id: "plan-040-accelerated-package-14-owner-acceptance-v2",
     accepted_at: PLAN040_PACKAGE_14_ACCEPTED_AT,
     accepted_by: "codex-owner-delegate",
     acceptance_basis:
@@ -732,8 +806,14 @@ export function writePlan040Package14GateAndAcceptance() {
   const acceptance = buildAcceptance({
     draft: frozen.draft,
     gateRef,
-    comparisonRef,
-    sourceGapRef,
+    comparisonRef: {
+      path: comparisonRef.path,
+      sha256: comparisonRef.sha256,
+    },
+    sourceGapRef: {
+      path: sourceGapRef.path,
+      sha256: sourceGapRef.sha256,
+    },
     persistenceEvidenceRef,
   });
   writeImmutableJson(ACCEPTANCE_PATH, acceptance);
@@ -768,4 +848,357 @@ export function validatePlan040Package14GateAndAcceptance() {
     throw new Error("Plan 040 Package 14 acceptance authority drifted");
   }
   return result;
+}
+
+type Package14Acceptance = ReturnType<typeof buildAcceptance>;
+type Package14SourceGapReceipt =
+  ReturnType<typeof buildSourceGapReceipt>;
+
+function readPinnedAcceptanceInputs(): {
+  frozen: ReturnType<typeof frozenInputs>;
+  discovery: Plan040Package14Discovery;
+  acceptance: Package14Acceptance;
+  sourceGapReceipt: Package14SourceGapReceipt;
+} {
+  validatePlan040Package14GateAndAcceptance();
+  for (const [path, expected] of [
+    [GATE_PATH, PLAN040_PACKAGE_14_GATE_SHA256],
+    [COMPARISON_PATH, PLAN040_PACKAGE_14_COMPARISON_SHA256],
+    [SOURCE_GAP_BLOCK_PATH, PLAN040_PACKAGE_14_SOURCE_GAP_BLOCK_SHA256],
+    [
+      PERSISTENCE_EVIDENCE_PATH,
+      PLAN040_PACKAGE_14_PERSISTENCE_EVIDENCE_SHA256,
+    ],
+    [ACCEPTANCE_PATH, PLAN040_PACKAGE_14_ACCEPTANCE_SHA256],
+  ] as const) {
+    if (fileSha256(path) !== expected) {
+      throw new Error(`Plan 040 Package 14 accepted pin drifted for ${path}`);
+    }
+  }
+  const frozen = frozenInputs();
+  const discovery = JSON.parse(readFileSync(
+    join(repoRoot, DISCOVERY_PATH),
+    "utf8",
+  )) as Plan040Package14Discovery;
+  const acceptance = JSON.parse(readFileSync(
+    PLAN040_PACKAGE_14_ACCEPTANCE_PATH,
+    "utf8",
+  )) as Package14Acceptance;
+  const sourceGapReceipt = JSON.parse(readFileSync(
+    PLAN040_PACKAGE_14_SOURCE_GAP_BLOCK_PATH,
+    "utf8",
+  )) as Package14SourceGapReceipt;
+  if (
+    acceptance.authorization_state !==
+      "owner_accepted_exact_8_extent_8_grain_and_28_both_surface_source_gap_overlays_only" ||
+    acceptance.authorizes_decision_persistence !== true ||
+    acceptance.authorizes_occurrence ||
+    acceptance.authorizes_study ||
+    acceptance.authorizes_cross_product ||
+    acceptance.authorizes_ontology ||
+    acceptance.authorizes_corrections ||
+    acceptance.reviewer_result !== "APPROVE/APPROVE" ||
+    sourceGapReceipt.candidate_count !== 28 ||
+    sourceGapReceipt.candidate_key_sha256 !==
+      PLAN040_PACKAGE_14_SOURCE_GAP_KEY_SHA256
+  ) {
+    throw new Error(
+      "Plan 040 Package 14 acceptance does not authorize persistence",
+    );
+  }
+  return { frozen, discovery, acceptance, sourceGapReceipt };
+}
+
+function evidenceBindingKey(binding: ExactEvidenceBinding): string {
+  return [
+    binding.role,
+    binding.record_id,
+    binding.source_id,
+    binding.evidence_id,
+  ].join("\0");
+}
+
+function exactPositiveEvidenceBindings(input: {
+  candidateKey: string;
+  treatmentRecordId: string;
+  detail: Plan040Package14Discovery["candidate_details"][number];
+}): ExactEvidenceBinding[] {
+  const routeBindings =
+    input.detail.exact_route_bindings as unknown as ExactEvidenceBinding[];
+  const treatmentBindings = (
+    input.detail.exact_treatment_evidence_refs as unknown as Array<{
+      role: string;
+      source_id: string;
+      evidence_id: string;
+    }>
+  ).map((ref) => ({
+    role: ref.role,
+    record_id: input.treatmentRecordId,
+    source_id: ref.source_id,
+    evidence_id: ref.evidence_id,
+  }));
+  const receiptBindings: ExactEvidenceBinding[] = [{
+    role: "accepted_package_comparison_receipt",
+    record_id: input.treatmentRecordId,
+    source_id:
+      "plan_040_accelerated_package_14_persistence_comparisons",
+    evidence_id:
+      "plan_040_accelerated_package_14_persistence_comparisons#" +
+      `candidate=${input.candidateKey}`,
+  }];
+  if (input.treatmentRecordId === "treatment_q110-route-redesign-2025") {
+    receiptBindings.push({
+      role: "complete_ordered_full_stop_chains",
+      record_id: input.treatmentRecordId,
+      source_id: "plan_040_accelerated_package_14_q110_full_stop_chains",
+      evidence_id:
+        "plan_040_accelerated_package_14_q110_full_stop_chains#" +
+        `candidate=${input.candidateKey}`,
+    });
+  }
+  return [...new Map([
+    ...routeBindings,
+    ...treatmentBindings,
+    ...receiptBindings,
+  ].map((binding) => [evidenceBindingKey(binding), binding])).values()]
+    .sort((left, right) =>
+      evidenceBindingKey(left).localeCompare(evidenceBindingKey(right))
+    );
+}
+
+export function buildPlan040Package14AcceptedArtifacts(input:
+  ReturnType<typeof readPinnedAcceptanceInputs>
+): {
+  extentDecisions: MemberExtentDecision[];
+  grainDecisions: MemberGrainDecision[];
+  sourceGapOverlay: MemberSourceGapOverlay;
+} {
+  const positiveByKey = new Map(
+    input.frozen.draft.positive_extent_decisions.map((row) => [
+      row.candidate_key,
+      row,
+    ]),
+  );
+  const detailByKey = new Map(input.discovery.candidate_details.map((row) => [
+    row.candidate_key,
+    row,
+  ]));
+  const extentDecisions = [...positiveByKey].map(
+    ([candidateKey, candidate]) => {
+      const [occurrenceId, routeRecordId, treatmentRecordId] =
+        candidateKey.split("\0");
+      const detail = detailByKey.get(candidateKey);
+      if (
+        !occurrenceId ||
+        !routeRecordId ||
+        !treatmentRecordId ||
+        !detail ||
+        detail.proposed_verdict !== "positive_extent_and_grain"
+      ) {
+        throw new Error(`${candidateKey}: accepted positive scope drifted`);
+      }
+      const decision: MemberExtentDecision = {
+        decision_id:
+          `member-extent-review:plan040-package14-${routeRecordId}-` +
+          treatmentRecordId,
+        occurrence_id: occurrenceId,
+        route_record_id: routeRecordId,
+        treatment_record_id: treatmentRecordId,
+        resolution: candidate.proposal.extent_resolution,
+        components:
+          candidate.proposal.extent_components as unknown as
+            MemberExtentDecision["components"],
+        evidence_bindings: exactPositiveEvidenceBindings({
+          candidateKey,
+          treatmentRecordId,
+          detail,
+        }),
+        missing_roles: [],
+        rationale:
+          candidate.proposal.extent_resolution === "bounded_segment"
+            ? "Exact source statement and accepted ordered full-stop chains bind both directional segment boundaries using identical stop IDs only."
+            : candidate.proposal.extent_resolution === "stop_set"
+            ? "The official source enumerates exactly nine direction-qualified locations; no unlisted location or stop-ID equivalence is inferred."
+            : "The exact official activation statement names this route for the route-level program applicability treatment.",
+        reviewed_at: input.acceptance.accepted_at,
+        reviewed_by: input.acceptance.accepted_by,
+      };
+      validateMemberExtentDecision(decision);
+      if (extentDecisionKey(decision) !== candidateKey) {
+        throw new Error(`${candidateKey}: extent decision key drifted`);
+      }
+      return decision;
+    },
+  ).sort((left, right) =>
+    extentDecisionKey(left).localeCompare(extentDecisionKey(right))
+  );
+  const extentByKey = new Map(extentDecisions.map((decision) => [
+    extentDecisionKey(decision),
+    decision,
+  ]));
+  const grainDecisions = input.frozen.draft.positive_grain_decisions.map(
+    (candidate) => {
+      const [occurrenceId, routeRecordId, treatmentRecordId] =
+        candidate.candidate_key.split("\0");
+      const detail = detailByKey.get(candidate.candidate_key);
+      const currentExtent = detail?.current_extent_row as
+        | Record<string, unknown>
+        | undefined;
+      const extent = extentByKey.get(candidate.candidate_key);
+      const gtfsRouteId = currentExtent?.gtfs_route_id;
+      if (
+        !occurrenceId ||
+        !routeRecordId ||
+        !treatmentRecordId ||
+        !detail ||
+        !extent ||
+        typeof gtfsRouteId !== "string" ||
+        gtfsRouteId.length === 0
+      ) {
+        throw new Error(
+          `${candidate.candidate_key}: accepted grain binding drifted`,
+        );
+      }
+      const serviceScope = candidate.proposal.grain_scope;
+      const decision = parseMemberGrainDecision({
+        schema_version: 1,
+        contract_id: "member-grain-decision-v1",
+        decision_id:
+          `member-grain-review:plan040-package14-${routeRecordId}-` +
+          treatmentRecordId,
+        occurrence_id: occurrenceId,
+        route_record_id: routeRecordId,
+        gtfs_route_id: gtfsRouteId,
+        treatment_record_id: treatmentRecordId,
+        member_extent_decision_id: extent.decision_id,
+        service_scope: serviceScope,
+        lineage_segments: [],
+        evidence_bindings: exactPositiveEvidenceBindings({
+          candidateKey: candidate.candidate_key,
+          treatmentRecordId,
+          detail,
+        }),
+        rationale: serviceScope.kind === "all_service"
+          ? "Calendar-expanded passenger trips in the accepted launch feed share the exact redesign extent in both directions."
+          : "The accepted treatment is spatial or program-applicability metadata and has no separate structured trip modality.",
+        reviewed_at: input.acceptance.accepted_at,
+        reviewed_by: input.acceptance.accepted_by,
+      });
+      if (memberGrainDecisionKey(decision) !== candidate.candidate_key) {
+        throw new Error(
+          `${candidate.candidate_key}: grain decision key drifted`,
+        );
+      }
+      return decision;
+    },
+  ).sort((left, right) =>
+    memberGrainDecisionKey(left).localeCompare(
+      memberGrainDecisionKey(right),
+    )
+  );
+  const sourceGapOverlay: MemberSourceGapOverlay = {
+    schema_version: 1,
+    contract_id: "member-source-gap-overlay-v1",
+    overlay_id: "plan-040-accelerated-package-14-source-gap-overlay-v1",
+    source_receipt: {
+      path: SOURCE_GAP_BLOCK_PATH,
+      sha256: PLAN040_PACKAGE_14_SOURCE_GAP_BLOCK_SHA256,
+      receipt_id: input.sourceGapReceipt.receipt_id,
+    },
+    owner_acceptance: {
+      path: ACCEPTANCE_PATH,
+      sha256: PLAN040_PACKAGE_14_ACCEPTANCE_SHA256,
+    },
+    accepted_at: input.acceptance.accepted_at,
+    accepted_by: input.acceptance.accepted_by,
+    entries: input.sourceGapReceipt.candidates.map((candidate) => ({
+      candidate_key: candidate.candidate_key,
+      occurrence_id: candidate.occurrence_id,
+      route_record_id: candidate.route_record_id,
+      treatment_record_id: candidate.treatment_record_id,
+      blocked_surfaces:
+        candidate.blocked_surfaces as Array<
+          "member_extent" | "member_grain"
+        >,
+      missing_roles: candidate.gap_codes,
+      verdict:
+        `blocked_upstream:${candidate.gap_codes.join("+")}` as const,
+      source_statement_evidence_id:
+        candidate.source_statement_evidence_id,
+    })),
+    authorizes_decision_persistence: false,
+    authorizes_occurrence: false,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+  };
+  const extentIds = extentDecisions.map((decision) => decision.decision_id);
+  const grainIds = grainDecisions.map((decision) => decision.decision_id);
+  const accepted = input.acceptance.authorized_exact_persistence;
+  if (
+    extentDecisions.length !== 8 ||
+    grainDecisions.length !== 8 ||
+    sourceGapOverlay.entries.length !== 28 ||
+    extentDecisions.filter((decision) =>
+      decision.resolution === "bounded_segment"
+    ).length !== 1 ||
+    extentDecisions.filter((decision) =>
+      decision.resolution === "route_wide"
+    ).length !== 6 ||
+    extentDecisions.filter((decision) =>
+      decision.resolution === "stop_set"
+    ).length !== 1 ||
+    grainDecisions.filter((decision) =>
+      decision.service_scope.kind === "all_service"
+    ).length !== 1 ||
+    grainDecisions.filter((decision) =>
+      decision.service_scope.kind === "not_applicable"
+    ).length !== 7 ||
+    plan040Package14SortedHash(extentIds) !==
+      accepted.extent_decision_id_sha256 ||
+    plan040Package14SortedHash(grainIds) !==
+      accepted.grain_decision_id_sha256
+  ) {
+    throw new Error("Plan 040 Package 14 accepted output scope drifted");
+  }
+  return { extentDecisions, grainDecisions, sourceGapOverlay };
+}
+
+export function persistPlan040Package14AcceptedArtifacts() {
+  const input = readPinnedAcceptanceInputs();
+  const accepted = buildPlan040Package14AcceptedArtifacts(input);
+  writeImmutableJson(EXTENT_DECISIONS_PATH, {
+    decisions: accepted.extentDecisions,
+  });
+  writeImmutableJson(GRAIN_DECISIONS_PATH, {
+    decisions: accepted.grainDecisions,
+  });
+  writeImmutableJson(SOURCE_GAP_OVERLAY_PATH, accepted.sourceGapOverlay);
+  const extentSha256 = fileSha256(EXTENT_DECISIONS_PATH);
+  const grainSha256 = fileSha256(GRAIN_DECISIONS_PATH);
+  const sourceGapOverlaySha256 = fileSha256(SOURCE_GAP_OVERLAY_PATH);
+  if (
+    extentSha256 !== PLAN040_PACKAGE_14_EXTENT_DECISIONS_SHA256 ||
+    grainSha256 !== PLAN040_PACKAGE_14_GRAIN_DECISIONS_SHA256 ||
+    sourceGapOverlaySha256 !==
+      PLAN040_PACKAGE_14_SOURCE_GAP_OVERLAY_SHA256
+  ) {
+    throw new Error("Plan 040 Package 14 persisted artifact pin drifted");
+  }
+  return {
+    extent: {
+      path: EXTENT_DECISIONS_PATH,
+      sha256: extentSha256,
+      count: 8,
+    },
+    grain: {
+      path: GRAIN_DECISIONS_PATH,
+      sha256: grainSha256,
+      count: 8,
+    },
+    sourceGapOverlay: {
+      path: SOURCE_GAP_OVERLAY_PATH,
+      sha256: sourceGapOverlaySha256,
+      count: 28,
+    },
+  };
 }
