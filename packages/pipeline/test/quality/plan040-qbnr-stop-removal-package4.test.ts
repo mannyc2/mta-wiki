@@ -5,9 +5,11 @@ import { repoRoot } from "../../../core/src/paths";
 import type { JsonValue } from "../../../db/src/types";
 import {
   buildPlan040Package4Draft,
+  buildPlan040Package4GateAndAcceptance,
   PLAN040_PACKAGE_4_ROUTE_ORDER,
   plan040Package4ReplayHash,
   type Plan040Package4Draft,
+  validatePlan040Package4GateAndAcceptance,
 } from "../../src/quality/plan040-qbnr-stop-removal-package4";
 
 const acquisitionPath =
@@ -19,6 +21,12 @@ const evidencePath =
 const draftPath =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
   "plan-040-qbnr-stop-removal-package-4-evidence-draft-v1.json";
+const gatePath =
+  `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
+  "plan-040-qbnr-stop-removal-package-4-dual-review-gate-v1.json";
+const acceptancePath =
+  `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
+  "plan-040-qbnr-stop-removal-package-4-owner-acceptance-v1.json";
 
 const sha256 = (value: Uint8Array | string): string =>
   createHash("sha256").update(value).digest("hex");
@@ -266,5 +274,98 @@ describe("Plan 040 QBNR Package 4 evidence-only risk draft", () => {
       evidenceManifestSha256: draft.evidence_manifest.sha256,
       candidates: [...draft.candidates].reverse(),
     })).toEqual(draft);
+  });
+
+  it("validates dual approval and exact-package absence-only acceptance", () => {
+    type GateAndAcceptance =
+      ReturnType<typeof buildPlan040Package4GateAndAcceptance>;
+    const draft = readJson<Plan040Package4Draft>(draftPath);
+    const gateBytes = readFileSync(gatePath);
+    const acceptanceBytes = readFileSync(acceptancePath);
+    expect(sha256(gateBytes)).toBe(
+      "8194f8d0769e5d552cabab9669385487e52592e9bbd2121a898214dc2af57be7",
+    );
+    expect(sha256(acceptanceBytes)).toBe(
+      "08381028607d4ac2cffea33891eb87b5dade22e44ff40133f8d7171b090169fb",
+    );
+    const gate = JSON.parse(
+      gateBytes.toString("utf8"),
+    ) as GateAndAcceptance["gate"];
+    const acceptance = JSON.parse(
+      acceptanceBytes.toString("utf8"),
+    ) as GateAndAcceptance["acceptance"];
+    expect(validatePlan040Package4GateAndAcceptance({
+      draft,
+      gate,
+      acceptance,
+      acceptedAt: acceptance.accepted_at,
+    })).toEqual({
+      candidate_count: 23,
+      positive_candidate_count: 0,
+      unresolved_candidate_count: 23,
+      authorized_extent_decision_count: 0,
+      authorized_grain_decision_count: 0,
+      authorized_absence_candidate_count: 23,
+      persisted_decision_count: 0,
+      persisted_absence_receipt_count: 0,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(gate.reviewed_commit).toBe(
+      "ead95f107779bfdbbf4e1343f9db835e4c95119d",
+    );
+    expect(gate.reviewer_results).toEqual([
+      {
+        role: "independent_main_advisor_evidence_review",
+        reviewer_id: "main_advisor",
+        verdict: "APPROVE",
+      },
+      {
+        role: "independent_provenance_and_fail_closed_audit",
+        reviewer_id: "plan040_package4_independent_audit",
+        verdict: "APPROVE",
+      },
+    ]);
+    expect(acceptance.authorized_positive_persistence).toEqual({
+      candidate_count: 0,
+      candidate_keys: [],
+      extent_decision_ids: [],
+      grain_decision_ids: [],
+    });
+    expect(acceptance.authorized_reviewed_absence_receipt).toMatchObject({
+      receipt_id:
+        "plan-040-qbnr-stop-removal-package-4-reviewed-absence-v1",
+      candidate_count: 23,
+      candidate_key_sha256:
+        "68e73dc82486efb1744a1b826694af767b7e609dfeadbe9ab4b038a681d40eca",
+      surfaces: ["member_extent", "member_grain"],
+      verdict_by_surface: {
+        member_extent: "reviewed_terminal_unresolved",
+        member_grain: "reviewed_terminal_unresolved",
+      },
+    });
+    expect(acceptance).toMatchObject({
+      persisted_extent_decision_count: 0,
+      persisted_grain_decision_count: 0,
+      persisted_absence_receipt_count: 0,
+      authorizes_decision_persistence: false,
+      authorizes_reviewed_absence_receipt_persistence: true,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(acceptance.authorized_reviewed_absence_receipt.candidate_keys)
+      .toEqual(draft.candidates.map((candidate) =>
+        candidate.candidate_key).sort());
+    expect(() => validatePlan040Package4GateAndAcceptance({
+      draft,
+      gate,
+      acceptance: {
+        ...acceptance,
+        authorizes_decision_persistence: true,
+      },
+      acceptedAt: acceptance.accepted_at,
+    })).toThrow("owner/delegate acceptance drifted");
   });
 });

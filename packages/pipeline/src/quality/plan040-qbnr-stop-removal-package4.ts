@@ -11,6 +11,14 @@ import type { HistoricalFullStopPattern } from "../reference/historical-full-sto
 
 export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4 =
   "plan-040-qbnr-stop-removal-package-4-evidence-only-v1" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_REVIEWED_COMMIT =
+  "ead95f107779bfdbbf4e1343f9db835e4c95119d" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_ACQUISITION_SHA256 =
+  "3f804faabcbb769d037033eeeececda59fd93a3052a2d739f16680b1befe9431" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_EVIDENCE_SHA256 =
+  "f105bd93bfeb2b0504e9819885f55d67c77e14840836dbc58ab06ced5b6c2072" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_DRAFT_SHA256 =
+  "04fc4c0168eda1081ed5338b77794ba61be4c1346854ed1f9a628945607113ed" as const;
 
 export const PLAN040_PACKAGE_4_ROUTE_ORDER = [
   "Q12",
@@ -322,4 +330,221 @@ export function buildPlan040Package4Draft(input: {
 
 export function plan040Package4ReplayHash(value: JsonValue): string {
   return sha256(`${stableJson(value)}\n`);
+}
+
+const PACKAGE_4_ACQUISITION_PATH =
+  "data/quality/acquisition/receipts/" +
+  "plan-040-qbnr-stop-removal-package-4-acquisition-v1.json";
+const PACKAGE_4_EVIDENCE_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-package-4-evidence-v1.json";
+const PACKAGE_4_DRAFT_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-package-4-evidence-draft-v1.json";
+const PACKAGE_4_GATE_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-package-4-dual-review-gate-v1.json";
+
+function package4ArtifactPins() {
+  return {
+    acquisition: {
+      path: PACKAGE_4_ACQUISITION_PATH,
+      sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_ACQUISITION_SHA256,
+    },
+    evidence: {
+      path: PACKAGE_4_EVIDENCE_PATH,
+      sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_EVIDENCE_SHA256,
+    },
+    draft: {
+      path: PACKAGE_4_DRAFT_PATH,
+      sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_DRAFT_SHA256,
+      replay_sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_DRAFT_SHA256,
+    },
+  };
+}
+
+export function buildPlan040Package4GateAndAcceptance(input: {
+  draft: Plan040Package4Draft;
+  acceptedAt: string;
+}) {
+  const draftHash = plan040Package4ReplayHash(
+    input.draft as unknown as JsonValue,
+  );
+  const unresolved = input.draft.candidates.filter((candidate) =>
+    candidate.evidence_verdict === "receipt_terminal_unresolved");
+  if (
+    draftHash !== PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_DRAFT_SHA256 ||
+    input.draft.candidate_count !== 23 ||
+    input.draft.candidate_key_sha256 !==
+      "68e73dc82486efb1744a1b826694af767b7e609dfeadbe9ab4b038a681d40eca" ||
+    unresolved.length !== 23 ||
+    unresolved.some((candidate) =>
+      candidate.proposed_extent_decision !== null ||
+      candidate.proposed_grain_decision !== null ||
+      candidate.unresolved_gap_codes.length === 0) ||
+    input.draft.proposed_decision_count !== 0 ||
+    input.draft.persisted_decision_count !== 0 ||
+    input.draft.proposed_grain_decision_count !== 0 ||
+    input.draft.persisted_grain_decision_count !== 0 ||
+    input.draft.authorizes_occurrence ||
+    input.draft.authorizes_study ||
+    input.draft.authorizes_cross_product ||
+    input.draft.authorizes_decision_persistence
+  ) {
+    throw new Error(
+      "Plan 040 Package 4 frozen verdict, hash, or authorization scope drifted",
+    );
+  }
+  const unresolvedKeys = unresolved
+    .map((candidate) => candidate.candidate_key)
+    .sort();
+  const unresolvedKeySha256 = sha256(`${unresolvedKeys.join("\n")}\n`);
+  const reviewerResults = [
+    {
+      role: "independent_main_advisor_evidence_review",
+      reviewer_id: "main_advisor",
+      verdict: "APPROVE" as const,
+    },
+    {
+      role: "independent_provenance_and_fail_closed_audit",
+      reviewer_id: "plan040_package4_independent_audit",
+      verdict: "APPROVE" as const,
+    },
+  ];
+  const gate = {
+    schema_version: 1,
+    gate_id: "plan-040-qbnr-stop-removal-package-4-dual-review-gate-v1",
+    package_id: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4,
+    reviewed_commit: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_REVIEWED_COMMIT,
+    artifacts: package4ArtifactPins(),
+    candidate_count: 23,
+    candidate_key_sha256: input.draft.candidate_key_sha256,
+    boundary_distribution: input.draft.boundary_distribution,
+    evidence_verdict_distribution: {
+      evidence_complete_stop_set: 0,
+      receipt_terminal_unresolved: 23,
+    },
+    proposed_extent_distribution: { stop_set: 0, unresolved: 23 },
+    proposed_grain_distribution: { trip_subset: 0, unresolved: 23 },
+    unresolved_candidate_count: 23,
+    unresolved_candidate_key_sha256: unresolvedKeySha256,
+    reviewer_results: reviewerResults,
+    checkpoint_tests: {
+      focused: { pass: 4, fail: 0, assertions: 242, status: "pass" as const },
+      typecheck: { status: "pass" as const },
+      validate: {
+        issues: 0,
+        release_contract_issues: 0,
+        warnings: 3,
+        status: "pass" as const,
+      },
+      deterministic_replay: {
+        sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_4_DRAFT_SHA256,
+        status: "pass" as const,
+      },
+      full_repository: {
+        status: "scheduled_after_persistence_checkpoint" as const,
+        reason:
+          "required_at_47_cumulative_new_closures_since_last_full_suite",
+      },
+    },
+    authorization_state:
+      "dual_review_approved_pending_owner_delegate_acceptance",
+    persisted_extent_decision_count: 0,
+    persisted_grain_decision_count: 0,
+    persisted_absence_receipt_count: 0,
+    authorizes_occurrence: false as const,
+    authorizes_study: false as const,
+    authorizes_cross_product: false as const,
+    authorizes_decision_persistence: false as const,
+    authorizes_reviewed_absence_receipt_persistence: false as const,
+  };
+  const gateSha256 = sha256(
+    `${stableJson(gate as unknown as JsonValue)}\n`,
+  );
+  const acceptance = {
+    schema_version: 1,
+    acceptance_id:
+      "plan-040-qbnr-stop-removal-package-4-owner-acceptance-v1",
+    accepted_at: input.acceptedAt,
+    accepted_by: "codex-owner-delegate",
+    gate: { path: PACKAGE_4_GATE_PATH, sha256: gateSha256 },
+    artifacts: package4ArtifactPins(),
+    candidate_count: 23,
+    candidate_key_sha256: input.draft.candidate_key_sha256,
+    evidence_verdict_distribution: {
+      evidence_complete_stop_set: 0,
+      receipt_terminal_unresolved: 23,
+    },
+    reviewer_results: {
+      main_advisor: "APPROVE" as const,
+      plan040_package4_independent_audit: "APPROVE" as const,
+    },
+    authorized_positive_persistence: {
+      candidate_count: 0,
+      candidate_keys: [] as string[],
+      extent_decision_ids: [] as string[],
+      grain_decision_ids: [] as string[],
+    },
+    authorized_reviewed_absence_receipt: {
+      receipt_id:
+        "plan-040-qbnr-stop-removal-package-4-reviewed-absence-v1",
+      candidate_count: 23,
+      candidate_key_sha256: unresolvedKeySha256,
+      candidate_keys: unresolvedKeys,
+      surfaces: ["member_extent", "member_grain"] as const,
+      verdict_by_surface: {
+        member_extent: "reviewed_terminal_unresolved" as const,
+        member_grain: "reviewed_terminal_unresolved" as const,
+      },
+    },
+    authorization_state:
+      "owner_delegate_accepted_exact_23_key_reviewed_absence_only",
+    persisted_extent_decision_count: 0,
+    persisted_grain_decision_count: 0,
+    persisted_absence_receipt_count: 0,
+    authorizes_decision_persistence: false as const,
+    authorizes_reviewed_absence_receipt_persistence: true as const,
+    authorizes_occurrence: false as const,
+    authorizes_study: false as const,
+    authorizes_cross_product: false as const,
+  };
+  return { gate, gateSha256, acceptance };
+}
+
+export function validatePlan040Package4GateAndAcceptance(input: {
+  draft: Plan040Package4Draft;
+  gate: unknown;
+  acceptance: unknown;
+  acceptedAt: string;
+}) {
+  const expected = buildPlan040Package4GateAndAcceptance({
+    draft: input.draft,
+    acceptedAt: input.acceptedAt,
+  });
+  if (
+    stableJson(input.gate as JsonValue) !==
+      stableJson(expected.gate as unknown as JsonValue)
+  ) {
+    throw new Error("Plan 040 Package 4 dual-review gate drifted");
+  }
+  if (
+    stableJson(input.acceptance as JsonValue) !==
+      stableJson(expected.acceptance as unknown as JsonValue)
+  ) {
+    throw new Error("Plan 040 Package 4 owner/delegate acceptance drifted");
+  }
+  return {
+    candidate_count: 23,
+    positive_candidate_count: 0,
+    unresolved_candidate_count: 23,
+    authorized_extent_decision_count: 0,
+    authorized_grain_decision_count: 0,
+    authorized_absence_candidate_count: 23,
+    persisted_decision_count: 0,
+    persisted_absence_receipt_count: 0,
+    authorizes_occurrence: false as const,
+    authorizes_study: false as const,
+    authorizes_cross_product: false as const,
+  };
 }
