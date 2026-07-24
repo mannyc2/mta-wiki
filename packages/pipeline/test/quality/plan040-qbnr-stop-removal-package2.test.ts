@@ -581,16 +581,16 @@ describe("Plan 040 QBNR Package 2 evidence-only draft", () => {
       unresolved: 271,
     });
     expect(distribution(extentLedger, "verdict")).toEqual({
-      absent_in_source: 159,
+      absent_in_source: 163,
       "resolved:bounded_segment": 25,
       "resolved:route_wide": 8,
       "resolved:stop_set": 4,
-      unreviewed: 112,
+      unreviewed: 108,
     });
     expect(distribution(grainLedger, "verdict")).toEqual({
-      absent_in_source: 159,
+      absent_in_source: 163,
       resolved: 24,
-      unreviewed: 125,
+      unreviewed: 121,
     });
     const companionByKey = new Map(companion.map((row) => [extentDecisionKey(row as any), row]));
     const extentByKey = new Map(extentLedger.map((row) => [extentDecisionKey(row as any), row]));

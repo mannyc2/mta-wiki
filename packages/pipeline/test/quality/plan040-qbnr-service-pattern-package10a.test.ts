@@ -2,15 +2,20 @@ import { describe, expect, it } from "bun:test";
 import { createHash } from "node:crypto";
 import { readFileSync, readdirSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
+import { stableJson } from "../../../db/src/stable-json";
 import type { JsonValue } from "../../../db/src/types";
 import type {
+  MemberExtentAbsenceReceipt,
   MemberExtentLedgerRow,
   MemberGrainLedgerRow,
 } from "../../src/quality/member-extent-ledger";
 import {
+  PLAN040_PACKAGE_10A_ABSENCE_RECEIPT_SHA256,
   PLAN040_PACKAGE_10A_REVIEWED_COMMIT,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10A_ABSENCE_RECEIPT_PATH,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10A_ACCEPTANCE_PATH,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10A_GATE_PATH,
+  buildPlan040Package10aAcceptedReceipt,
   buildPlan040Package10aGateAndAcceptance,
   validatePlan040Package10aGateAndAcceptance,
 } from "../../src/quality/plan040-qbnr-service-pattern-package10a-closeout";
@@ -90,6 +95,9 @@ const sortedHash = (values: readonly string[]): string =>
   sha256(`${[...values].sort().join("\n")}\n`);
 const orderedHash = (values: readonly string[]): string =>
   sha256(`${values.join("\n")}\n`);
+const rowHash = (values: readonly unknown[]): string =>
+  sha256(`${values.map((value) =>
+    stableJson(value as JsonValue)).join("\n")}\n`);
 const readJson = <T>(path: string): T =>
   JSON.parse(readFileSync(path, "utf8")) as T;
 const readJsonl = <T>(path: string): T[] =>
@@ -264,29 +272,9 @@ describe("Plan 040 QBNR Package 10A accelerated absence freeze", () => {
     }
   });
 
-  it("preserves each complete post-P9 ledger row structurally", () => {
+  it("freezes each complete post-P9 ledger row structurally", () => {
     const evidence = readJson<Package10aEvidence>(evidencePath);
-    const extentRows = readJsonl<MemberExtentLedgerRow>(
-      `${repoRoot}/data/quality/operational-reference/` +
-        "member-extent-ledger.jsonl",
-    );
-    const grainRows = readJsonl<MemberGrainLedgerRow>(
-      `${repoRoot}/data/quality/operational-reference/` +
-        "member-grain-ledger.jsonl",
-    );
     for (const candidate of evidence.candidates) {
-      const extent = extentRows.find((row) =>
-        row.occurrence_id === candidate.occurrence_id &&
-        row.route_record_id === candidate.route_record_id &&
-        row.treatment_record_id === candidate.treatment_record_id
-      );
-      const grain = grainRows.find((row) =>
-        row.occurrence_id === candidate.occurrence_id &&
-        row.route_record_id === candidate.route_record_id &&
-        row.treatment_record_id === candidate.treatment_record_id
-      );
-      expect(candidate.prior_ledger_state.extent_row).toEqual(extent);
-      expect(candidate.prior_ledger_state.grain_row).toEqual(grain);
       expect(candidate.prior_ledger_state.extent_row).toEqual(
         expect.objectContaining({
           packet_id: null,
@@ -531,5 +519,138 @@ describe("Plan 040 QBNR Package 10A accelerated absence freeze", () => {
         acceptedAt: ACCEPTED_AT,
       })
     ).toThrow(/gate drifted/u);
+  });
+
+  it("persists one immutable four-key dual-surface absence receipt only", () => {
+    const draft = readJson<Plan040Package10aDraft>(draftPath);
+    const built = buildPlan040Package10aGateAndAcceptance({
+      draft,
+      acceptedAt: ACCEPTED_AT,
+    });
+    const receipt = buildPlan040Package10aAcceptedReceipt({
+      draft,
+      gate: built.gate,
+      acceptance: built.acceptance,
+    });
+    const artifact = readJson<{ receipts: MemberExtentAbsenceReceipt[] }>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10A_ABSENCE_RECEIPT_PATH,
+    );
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10A_ABSENCE_RECEIPT_PATH,
+    ))).toBe(PLAN040_PACKAGE_10A_ABSENCE_RECEIPT_SHA256);
+    expect(artifact.receipts).toEqual([receipt]);
+    expect(receipt.receipt_id).toBe(
+      "plan-040-qbnr-service-pattern-package-10a-reviewed-absence-v1",
+    );
+    expect(receipt.surfaces).toEqual(["member_extent", "member_grain"]);
+    expect(receipt.extent_keys).toHaveLength(4);
+    expect(receipt.exact_searches).toHaveLength(4);
+    expect(new Set(receipt.exact_searches).size).toBe(4);
+    expect(receipt.authorizes_study).toBe(false);
+    expect(receipt.authorizes_cross_product).toBe(false);
+    for (const candidate of draft.candidates) {
+      expect(receipt.exact_searches.some((search) =>
+        search.includes(candidate.candidate_key) &&
+        search.includes(candidate.source_statement.evidence_id) &&
+        search.includes(
+          candidate.accepted_launch_inventory.pre.receipt_sha256,
+        ) &&
+        search.includes(
+          candidate.accepted_launch_inventory.post.receipt_sha256,
+        ) &&
+        search.includes("predecessor_route_named=false") &&
+        search.includes("post_only_presence_authorizes_occurrence=false")
+      )).toBe(true);
+    }
+    for (
+      const directory of [
+        `${repoRoot}/data/quality/operational-reference/` +
+          "member-extent-ledger-decisions",
+        `${repoRoot}/data/quality/operational-reference/` +
+          "member-grain-decisions",
+      ]
+    ) {
+      expect(readdirSync(directory).filter((name) =>
+        name.includes("package-10a")
+      )).toEqual([]);
+    }
+
+    const mutation = clone(built.acceptance);
+    mutation.authorized_positive_persistence.candidate_count = 1 as 0;
+    expect(() =>
+      buildPlan040Package10aAcceptedReceipt({
+        draft,
+        gate: built.gate,
+        acceptance: mutation,
+      })
+    ).toThrow(/acceptance|scope/u);
+  });
+
+  it("overlays exactly four rows while preserving every prior reviewed row", () => {
+    const evidence = readJson<Package10aEvidence>(evidencePath);
+    const targetIds = new Set(evidence.candidates.map((candidate) =>
+      candidate.treatment_record_id
+    ));
+    const extentRows = readJsonl<MemberExtentLedgerRow>(
+      `${repoRoot}/data/quality/operational-reference/` +
+        "member-extent-ledger.jsonl",
+    );
+    const grainRows = readJsonl<MemberGrainLedgerRow>(
+      `${repoRoot}/data/quality/operational-reference/` +
+        "member-grain-ledger.jsonl",
+    );
+    expect(rowHash(extentRows.filter((row) =>
+      !targetIds.has(row.treatment_record_id as
+        Plan040Package10aCandidateEvidence["treatment_record_id"])
+    ))).toBe(
+      "e9460307913dafe91298462f2bf7d629101804273abec5ec1e5a43357ad81a5d",
+    );
+    expect(rowHash(grainRows.filter((row) =>
+      !targetIds.has(row.treatment_record_id as
+        Plan040Package10aCandidateEvidence["treatment_record_id"])
+    ))).toBe(
+      "f2338d2fc1f7ac750b854bc8990786308f2766e84a9231aa2d1ab51cdf17c634",
+    );
+    for (const candidate of evidence.candidates) {
+      const extent = extentRows.find((row) =>
+        row.treatment_record_id === candidate.treatment_record_id
+      )!;
+      const grain = grainRows.find((row) =>
+        row.treatment_record_id === candidate.treatment_record_id
+      )!;
+      expect(extent).toEqual({
+        ...candidate.prior_ledger_state.extent_row,
+        verdict: "absent_in_source",
+        verdict_basis:
+          "receipt:plan-040-qbnr-service-pattern-package-10a-reviewed-absence-v1",
+        receipt_ids: [
+          "plan-040-qbnr-service-pattern-package-10a-reviewed-absence-v1",
+        ],
+        updated_at: ACCEPTED_AT,
+      });
+      expect(grain).toEqual({
+        ...candidate.prior_ledger_state.grain_row,
+        verdict: "absent_in_source",
+        spatial_verdict: "absent_in_source",
+        verdict_basis:
+          "receipt:plan-040-qbnr-service-pattern-package-10a-reviewed-absence-v1",
+        receipt_ids: [
+          "plan-040-qbnr-service-pattern-package-10a-reviewed-absence-v1",
+        ],
+        updated_at: ACCEPTED_AT,
+      });
+    }
+    expect(extentRows.filter((row) =>
+      row.verdict === "absent_in_source"
+    )).toHaveLength(163);
+    expect(grainRows.filter((row) =>
+      row.verdict === "absent_in_source"
+    )).toHaveLength(163);
+    expect(sha256(readFileSync(
+      `${repoRoot}/data/quality/study-readiness/v1/bridge-ledger.jsonl`,
+    ))).toBe(PLAN040_PACKAGE_10A_POST_P9_PINS.bridge);
+    expect(sha256(readFileSync(
+      `${repoRoot}/data/quality/study-readiness/v1/manifest.json`,
+    ))).toBe(PLAN040_PACKAGE_10A_POST_P9_PINS.study_manifest);
   });
 });

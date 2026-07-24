@@ -41,6 +41,7 @@ export type Command =
   | "member-extent-ledger"
   | "plan-040-package-8-accept"
   | "plan-040-package-9-accept"
+  | "plan-040-package-10a-accept"
   | "plan-040-exemplar-accept"
   | "plan-040-exemplar-draft"
   | "plan-040-package-2-accept"
