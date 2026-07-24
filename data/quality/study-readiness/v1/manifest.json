@@ -37,14 +37,14 @@
     {
       "path": "data/contracts/operational-occurrence-member-extent/v1/manifest.json",
       "bytes": 2057,
-      "sha256": "389652644c0fb3980251606c3878f3acd0993266f1fd88b7c960b2887ccce6d4"
+      "sha256": "04062744b877de3349d914d70768f63b122dc0fcb370ac7a17765f49e9955755"
     }
   ],
   "files": [
     {
       "path": "data/quality/study-readiness/v1/bridge-ledger.jsonl",
-      "bytes": 980558,
-      "sha256": "8801f97900d6663f9090b47cfaff32ed4a4911911296faab1bd74a8b047a0d96",
+      "bytes": 992336,
+      "sha256": "d4f58a1b0aa9f2375de96cf5b77ed92e8c2f9236f930fcd3ecfce81af561a6a1",
       "row_count": 484
     },
     {

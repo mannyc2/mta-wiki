@@ -3,10 +3,15 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import {
+  PLAN040_PACKAGE_10C_ABSENCE_RECEIPT_SHA256,
   PLAN040_PACKAGE_10C_APPROVED_COMMIT,
+  PLAN040_PACKAGE_10C_EXTENT_DECISIONS_SHA256,
   PLAN040_PACKAGE_10C_COMPARISON_RECEIPT_SHA256,
   PLAN040_PACKAGE_10C_DRAFT_SHA256,
   PLAN040_PACKAGE_10C_EVIDENCE_SHA256,
+  PLAN040_PACKAGE_10C_GRAIN_DECISIONS_SHA256,
+  PLAN040_PACKAGE_10C_POST_PERSISTENCE_PINS,
+  buildPlan040Package10cAcceptedArtifacts,
   buildPlan040Package10cGateAndAcceptance,
   validatePlan040Package10cGateAndAcceptance,
 } from
@@ -177,5 +182,166 @@ describe("Plan 040 QBNR Package 10C gate and owner acceptance", () => {
     expect(acceptance.authorizes_occurrence).toBeFalse();
     expect(acceptance.authorizes_study).toBeFalse();
     expect(acceptance.authorizes_cross_product).toBeFalse();
+  });
+
+  it("persists exactly four linked decisions and one Q20 scope-conflict absence", () => {
+    const draft = JSON.parse(
+      readFileSync(draftPath, "utf8"),
+    ) as Plan040Package10cDraft;
+    const gate = JSON.parse(readFileSync(gatePath, "utf8")) as ReturnType<
+      typeof buildPlan040Package10cGateAndAcceptance
+    >["gate"];
+    const acceptance = JSON.parse(
+      readFileSync(acceptancePath, "utf8"),
+    ) as ReturnType<
+      typeof buildPlan040Package10cGateAndAcceptance
+    >["acceptance"];
+    const accepted = buildPlan040Package10cAcceptedArtifacts({
+      draft,
+      gate,
+      acceptance,
+    });
+    const extentPath =
+      `${repoRoot}/data/quality/operational-reference/` +
+      "member-extent-ledger-decisions/" +
+      "plan-040-qbnr-service-pattern-package-10c-v1.json";
+    const grainPath =
+      `${repoRoot}/data/quality/operational-reference/` +
+      "member-grain-decisions/" +
+      "plan-040-qbnr-service-pattern-package-10c-v1.json";
+    const absencePath =
+      `${repoRoot}/data/quality/acquisition/receipts/member-extent/` +
+      "plan-040-qbnr-service-pattern-package-10c-reviewed-absence-v1.json";
+    expect(sha256(readFileSync(extentPath))).toBe(
+      PLAN040_PACKAGE_10C_EXTENT_DECISIONS_SHA256,
+    );
+    expect(sha256(readFileSync(grainPath))).toBe(
+      PLAN040_PACKAGE_10C_GRAIN_DECISIONS_SHA256,
+    );
+    expect(sha256(readFileSync(absencePath))).toBe(
+      PLAN040_PACKAGE_10C_ABSENCE_RECEIPT_SHA256,
+    );
+    expect(JSON.parse(readFileSync(extentPath, "utf8"))).toEqual({
+      decisions: accepted.extentDecisions,
+    });
+    expect(JSON.parse(readFileSync(grainPath, "utf8"))).toEqual({
+      decisions: accepted.grainDecisions,
+    });
+    expect(JSON.parse(readFileSync(absencePath, "utf8"))).toEqual({
+      receipts: [accepted.absenceReceipt],
+    });
+    expect(accepted.extentDecisions).toHaveLength(4);
+    expect(accepted.extentDecisions.map((row) => row.resolution).sort())
+      .toEqual([
+        "bounded_segment",
+        "route_wide",
+        "route_wide",
+        "route_wide",
+      ]);
+    expect(accepted.grainDecisions).toHaveLength(4);
+    expect(accepted.grainDecisions.every((row) =>
+      row.service_scope.kind === "trip_subset" &&
+      row.service_scope.periods.length === 1 &&
+      row.service_scope.periods[0] === "weekend" &&
+      row.member_extent_decision_id !== null
+    )).toBeTrue();
+    expect(accepted.absenceReceipt).toMatchObject({
+      receipt_id:
+        "plan-040-qbnr-service-pattern-package-10c-reviewed-absence-v1",
+      surfaces: ["member_extent", "member_grain"],
+      extent_keys: [{
+        occurrence_id: "occurrence:b18b9a4512c3b2860dd8aa29",
+        route_record_id: "route_q20-qbnr-2025",
+        treatment_record_id:
+          "treatment_q20-q20b-replacement-2025",
+      }],
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(accepted.absenceReceipt.exact_searches[0]).toContain(
+      "canonical_treatment_route_scope_conflict",
+    );
+
+    const pinnedFiles = {
+      extent_ledger:
+        `${repoRoot}/data/quality/operational-reference/member-extent-ledger.jsonl`,
+      grain_ledger:
+        `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`,
+      bridge_ledger:
+        `${repoRoot}/data/quality/study-readiness/v1/bridge-ledger.jsonl`,
+      study_manifest:
+        `${repoRoot}/data/quality/study-readiness/v1/manifest.json`,
+      member_extent_contract:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/` +
+        "operational_occurrence_member_extents.jsonl",
+      member_extent_manifest:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/manifest.json`,
+      member_extent_review_ledger:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/review-ledger.jsonl`,
+      member_extent_summary:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/summary.json`,
+      operational_occurrences:
+        `${repoRoot}/data/exports/releases/v1-rc26/operational_occurrences.jsonl`,
+      operational_occurrence_decisions:
+        `${repoRoot}/data/exports/releases/v1-rc26/operational_occurrence_review_decisions.json`,
+      treatment_components:
+        `${repoRoot}/data/canonical/treatment_components.jsonl`,
+      reviewed_candidate_packets:
+        `${repoRoot}/data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl`,
+    };
+    for (const [name, path] of Object.entries(pinnedFiles)) {
+      expect(sha256(readFileSync(path))).toBe(
+        PLAN040_PACKAGE_10C_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_10C_POST_PERSISTENCE_PINS
+        ],
+      );
+    }
+
+    const extentRows = readFileSync(
+      pinnedFiles.extent_ledger,
+      "utf8",
+    ).trim().split("\n").map((line) => JSON.parse(line)) as Array<{
+      treatment_record_id: string;
+      verdict: string;
+      authorizes_study: false;
+      authorizes_cross_product: false;
+    }>;
+    const grainRows = readFileSync(
+      pinnedFiles.grain_ledger,
+      "utf8",
+    ).trim().split("\n").map((line) => JSON.parse(line)) as Array<{
+      treatment_record_id: string;
+      verdict: string;
+      authorizes_study: false;
+      authorizes_cross_product: false;
+    }>;
+    const positiveIds = new Set(accepted.extentDecisions.map((row) =>
+      row.treatment_record_id));
+    expect(extentRows.filter((row) =>
+      positiveIds.has(row.treatment_record_id) &&
+      row.verdict.startsWith("resolved:") &&
+      !row.authorizes_study &&
+      !row.authorizes_cross_product
+    )).toHaveLength(4);
+    expect(grainRows.filter((row) =>
+      positiveIds.has(row.treatment_record_id) &&
+      row.verdict === "resolved" &&
+      !row.authorizes_study &&
+      !row.authorizes_cross_product
+    )).toHaveLength(4);
+    expect(extentRows.find((row) =>
+      row.treatment_record_id ===
+        "treatment_q20-q20b-replacement-2025")).toMatchObject({
+      verdict: "absent_in_source",
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(grainRows.find((row) =>
+      row.treatment_record_id ===
+        "treatment_q20-q20b-replacement-2025")).toMatchObject({
+      verdict: "absent_in_source",
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
   });
 });

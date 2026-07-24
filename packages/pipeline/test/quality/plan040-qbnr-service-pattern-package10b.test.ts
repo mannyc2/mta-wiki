@@ -1541,28 +1541,28 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     expect(grainRows).toHaveLength(308);
     expect(extentRows.filter((row) =>
       row.verdict === "absent_in_source"
-    )).toHaveLength(164);
+    )).toHaveLength(165);
     expect(extentRows.filter((row) =>
       row.verdict === "resolved:bounded_segment"
-    )).toHaveLength(27);
+    )).toHaveLength(28);
     expect(extentRows.filter((row) =>
       row.verdict === "resolved:route_wide"
-    )).toHaveLength(9);
+    )).toHaveLength(12);
     expect(extentRows.filter((row) =>
       row.verdict === "resolved:stop_set"
     )).toHaveLength(4);
     expect(extentRows.filter((row) =>
       row.verdict === "unreviewed"
-    )).toHaveLength(104);
+    )).toHaveLength(99);
     expect(grainRows.filter((row) =>
       row.verdict === "absent_in_source"
-    )).toHaveLength(164);
+    )).toHaveLength(165);
     expect(grainRows.filter((row) =>
       row.verdict === "resolved"
-    )).toHaveLength(27);
+    )).toHaveLength(31);
     expect(grainRows.filter((row) =>
       row.verdict === "unreviewed"
-    )).toHaveLength(117);
+    )).toHaveLength(112);
 
     const positive = evidence.candidates.slice(0, 3);
     for (const candidate of positive) {

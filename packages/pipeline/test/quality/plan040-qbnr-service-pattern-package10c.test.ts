@@ -405,7 +405,7 @@ describe("Plan 040 QBNR Package 10C mixed-risk evidence freeze", () => {
     });
   });
 
-  it("fails closed with exact exclusions, no persistence, and no owner gate", () => {
+  it("keeps frozen evidence nonauthorizing through downstream closure", () => {
     const evidence = readJson<Package10cEvidence>(evidencePath);
     for (const exclusion of evidence.exclusions) {
       expect(exclusion.candidate_key_sha256).toBe(
@@ -442,10 +442,10 @@ describe("Plan 040 QBNR Package 10C mixed-risk evidence freeze", () => {
     )).toBeTrue();
     expect(existsSync(
       `${repoRoot}/data/quality/operational-reference/member-extent-ledger-decisions/plan-040-qbnr-service-pattern-package-10c-v1.json`,
-    )).toBeFalse();
+    )).toBeTrue();
     expect(existsSync(
       `${repoRoot}/data/quality/operational-reference/member-grain-decisions/plan-040-qbnr-service-pattern-package-10c-v1.json`,
-    )).toBeFalse();
+    )).toBeTrue();
     expect(receiptPath.includes("/member-extent-evidence/")).toBeTrue();
   });
 });

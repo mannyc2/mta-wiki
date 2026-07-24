@@ -879,11 +879,11 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
       verdict,
       allExtentRows.filter((row) => row.verdict === verdict).length,
     ]))).toEqual({
-      absent_in_source: 164,
-      "resolved:bounded_segment": 27,
-      "resolved:route_wide": 9,
+      absent_in_source: 165,
+      "resolved:bounded_segment": 28,
+      "resolved:route_wide": 12,
       "resolved:stop_set": 4,
-      unreviewed: 104,
+      unreviewed: 99,
     });
     expect(Object.fromEntries([
       "absent_in_source",
@@ -893,9 +893,9 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
       verdict,
       allGrainRows.filter((row) => row.verdict === verdict).length,
     ]))).toEqual({
-      absent_in_source: 164,
-      resolved: 27,
-      unreviewed: 117,
+      absent_in_source: 165,
+      resolved: 31,
+      unreviewed: 112,
     });
   });
 
