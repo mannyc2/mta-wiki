@@ -1,8 +1,14 @@
 import { describe, expect, it } from "bun:test";
 import { createHash } from "node:crypto";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import type { JsonValue } from "../../../db/src/types";
+import {
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_ACCEPTANCE_PATH,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_GATE_PATH,
+  buildPlan040Package9GateAndAcceptance,
+  validatePlan040Package9GateAndAcceptance,
+} from "../../src/quality/plan040-qbnr-service-pattern-package9-closeout";
 import {
   PLAN040_PACKAGE_9_CANDIDATES,
   PLAN040_PACKAGE_9_CANDIDATE_KEY_SHA256,
@@ -574,6 +580,68 @@ describe("Plan 040 QBNR Package 9 accelerated lineage-risk freeze", () => {
       expect(value.authorizes_decision_persistence).toBe(false);
     }
     expect(evidence.external_acquisition_performed).toBe(false);
+  });
+
+  it("freezes a compact dual-review gate and exact package acceptance", () => {
+    expect(existsSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_GATE_PATH,
+    )).toBe(true);
+    expect(existsSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_ACCEPTANCE_PATH,
+    )).toBe(true);
+    const draft = readJson<Plan040Package9Draft>(draftPath);
+    const gate = readJson<Record<string, unknown>>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_GATE_PATH,
+    );
+    const acceptance = readJson<Record<string, unknown>>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_ACCEPTANCE_PATH,
+    );
+    expect(validatePlan040Package9GateAndAcceptance({
+      draft,
+      gate,
+      acceptance,
+      acceptedAt: acceptance.accepted_at as string,
+    })).toEqual({
+      candidate_count: 22,
+      positive_candidate_count: 2,
+      unresolved_candidate_count: 20,
+      authorized_extent_decision_count: 2,
+      authorized_grain_decision_count: 2,
+      authorized_absence_candidate_count: 20,
+      persisted_decision_count: 0,
+      persisted_absence_receipt_count: 0,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(Object.keys(gate).sort()).toEqual([
+      "artifacts",
+      "authorization_state",
+      "authorizes_cross_product",
+      "authorizes_decision_persistence",
+      "authorizes_occurrence",
+      "authorizes_reviewed_absence_receipt_persistence",
+      "authorizes_study",
+      "candidate_count",
+      "gate_id",
+      "package_id",
+      "reviewer_results",
+      "schema_version",
+      "verdict_distribution",
+    ]);
+    expect(gate.authorization_state).toBe(
+      "dual_review_approved_pending_owner_delegate_acceptance",
+    );
+    expect(gate.authorizes_decision_persistence).toBe(false);
+    expect(gate.authorizes_occurrence).toBe(false);
+    expect(acceptance.authorizes_decision_persistence).toBe(true);
+    expect(acceptance.authorizes_reviewed_absence_receipt_persistence)
+      .toBe(true);
+    expect(acceptance.authorizes_occurrence).toBe(false);
+    expect(buildPlan040Package9GateAndAcceptance({
+      draft,
+      acceptedAt: acceptance.accepted_at as string,
+    }).gate).toEqual(gate);
   });
 
   it("rebuilds deterministically and fails closed on structural drift", () => {
