@@ -245,6 +245,13 @@ const evidenceReceiptRefFields = new Set([
   "authorizes_occurrence", "authorizes_study", "normal_file_verified",
   "path", "receipt_id", "replay_derived", "sha256", "source_id",
 ]);
+const comparisonReceiptFields = new Set([
+  "authorizes_cross_product", "authorizes_decision_persistence",
+  "authorizes_occurrence", "authorizes_study", "candidates", "derivation",
+  "external_acquisition_performed", "normal_file_verified", "package_id",
+  "receipt_id", "replay_derived", "schema_version", "source_id",
+  "source_pins", "upstream_pins",
+]);
 const acceptanceFields = new Set([
   "acceptance_basis", "acceptance_id", "accepted_at", "accepted_by",
   "artifacts", "authorization_state", "authorized_exact_persistence",
@@ -858,15 +865,14 @@ function assertPinnedReceiptIdentity(
   value: unknown,
   ref: StrictEvidenceReceiptRef,
   path: string,
+  fields: ReadonlySet<string>,
 ): void {
   const parsed = object(value, path);
+  exactKeys(parsed, fields, path);
   if (nonempty(parsed.receipt_id, `${path}.receipt_id`) !== ref.receipt_id) {
     throw new Error(`${path}: internal receipt_id does not match pinned reference`);
   }
-  if (
-    "source_id" in parsed &&
-    nonempty(parsed.source_id, `${path}.source_id`) !== ref.source_id
-  ) {
+  if (nonempty(parsed.source_id, `${path}.source_id`) !== ref.source_id) {
     throw new Error(`${path}: internal source_id does not match pinned reference`);
   }
   for (
@@ -879,7 +885,7 @@ function assertPinnedReceiptIdentity(
       "authorizes_cross_product",
     ] as const
   ) {
-    if (field in parsed && parsed[field] !== ref[field]) {
+    if (parsed[field] !== ref[field]) {
       throw new Error(
         `${path}: internal ${field} does not match pinned reference`,
       );
@@ -1319,6 +1325,7 @@ function assertPinnedAcceptanceChain(input: {
     comparisonReceipt,
     receipt.comparison_receipt,
     `${path}.acceptance.artifacts.comparison_receipt`,
+    comparisonReceiptFields,
   );
   assertPinnedReceiptIdentity(
     readPinnedNormalJson(
@@ -1328,6 +1335,7 @@ function assertPinnedAcceptanceChain(input: {
     ),
     evidenceReceipt,
     `${path}.acceptance.artifacts.source_gap_block_receipt`,
+    sourceGapReceiptFields,
   );
   const gate = object(
     readPinnedNormalJson(

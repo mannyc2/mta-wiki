@@ -144,16 +144,24 @@ function sourceGapFixture(input: SourceGapFixtureInput) {
   for (const path of Object.values(paths)) {
     mkdirSync(join(root, path, ".."), { recursive: true });
   }
-  writeStableJson(join(root, paths.comparison), {
+  const comparison = {
+    schema_version: 1,
     receipt_id: "fixture-comparison-receipt",
     source_id: "fixture_comparison_receipt",
+    package_id: "fixture-source-gap-package",
+    candidates: [],
+    derivation: {},
+    source_pins: {},
+    upstream_pins: {},
+    external_acquisition_performed: false,
     normal_file_verified: true,
     replay_derived: true,
     authorizes_decision_persistence: false,
     authorizes_occurrence: false,
     authorizes_study: false,
     authorizes_cross_product: false,
-  });
+  } as const;
+  writeStableJson(join(root, paths.comparison), comparison);
   writeStableJson(join(root, paths.draft), {
     draft_id: "fixture-source-gap-draft",
   });
@@ -393,11 +401,90 @@ function sourceGapFixture(input: SourceGapFixtureInput) {
     root,
     overlayDir: join(root, "overlays"),
     paths,
+    comparison,
     receipt,
     evidence,
     acceptance,
     overlay,
   };
+}
+
+type SourceGapFixture = ReturnType<typeof sourceGapFixture>;
+
+function withoutField(
+  value: Record<string, unknown>,
+  field: string,
+): Record<string, unknown> {
+  return Object.fromEntries(
+    Object.entries(value).filter(([key]) => key !== field),
+  );
+}
+
+function rehashSourceGapFixture(
+  fixture: SourceGapFixture,
+  replacement: {
+    comparison?: Record<string, unknown>;
+    receipt?: Record<string, unknown>;
+  },
+): void {
+  const comparison = replacement.comparison ?? fixture.comparison;
+  writeStableJson(join(fixture.root, fixture.paths.comparison), comparison);
+  const comparisonSha = fileSha256(
+    join(fixture.root, fixture.paths.comparison),
+  );
+  const receiptInput = (replacement.receipt ?? fixture.receipt) as
+    typeof fixture.receipt;
+  const receipt = {
+    ...receiptInput,
+    comparison_receipt: {
+      ...receiptInput.comparison_receipt,
+      sha256: comparisonSha,
+    },
+  };
+  writeStableJson(join(fixture.root, fixture.paths.receipt), receipt);
+  const receiptSha = fileSha256(join(fixture.root, fixture.paths.receipt));
+  const evidence = {
+    ...fixture.evidence,
+    comparison_receipt: {
+      ...fixture.evidence.comparison_receipt,
+      sha256: comparisonSha,
+    },
+    source_gap_block_receipt: {
+      ...fixture.evidence.source_gap_block_receipt,
+      sha256: receiptSha,
+    },
+  };
+  writeStableJson(join(fixture.root, fixture.paths.evidence), evidence);
+  const acceptance = {
+    ...fixture.acceptance,
+    artifacts: {
+      ...fixture.acceptance.artifacts,
+      comparison_receipt: {
+        ...fixture.acceptance.artifacts.comparison_receipt,
+        sha256: comparisonSha,
+      },
+      evidence: {
+        ...fixture.acceptance.artifacts.evidence,
+        sha256: fileSha256(join(fixture.root, fixture.paths.evidence)),
+      },
+      source_gap_block_receipt: {
+        ...fixture.acceptance.artifacts.source_gap_block_receipt,
+        sha256: receiptSha,
+      },
+    },
+  };
+  writeStableJson(join(fixture.root, fixture.paths.acceptance), acceptance);
+  writeStableJson(join(fixture.root, fixture.paths.overlay), {
+    ...fixture.overlay,
+    source_receipt: {
+      ...fixture.overlay.source_receipt,
+      sha256: receiptSha,
+    },
+    owner_acceptance: {
+      ...fixture.overlay.owner_acceptance,
+      sha256: fileSha256(join(fixture.root, fixture.paths.acceptance)),
+    },
+  });
 }
 
 function grainDecision(target: MemberExtentRow, extentDecisionId: string | null = null) {
@@ -1001,77 +1088,72 @@ describe("member extent and grain ledgers", () => {
       surfaces: ["member_extent", "member_grain"],
       missingRoles: ["reference_snapshot"],
     }]);
-    writeStableJson(join(fixture.root, fixture.paths.comparison), {
-      receipt_id: "tampered-comparison-receipt",
-      source_id: "fixture_comparison_receipt",
-      normal_file_verified: true,
-      replay_derived: true,
-      authorizes_decision_persistence: false,
-      authorizes_occurrence: false,
-      authorizes_study: false,
-      authorizes_cross_product: false,
-    });
-    const comparisonSha = fileSha256(
-      join(fixture.root, fixture.paths.comparison),
-    );
-    const receipt = {
-      ...fixture.receipt,
-      comparison_receipt: {
-        ...fixture.receipt.comparison_receipt,
-        sha256: comparisonSha,
-      },
-    };
-    writeStableJson(join(fixture.root, fixture.paths.receipt), receipt);
-    const receiptSha = fileSha256(join(fixture.root, fixture.paths.receipt));
-    const evidence = {
-      ...fixture.evidence,
-      comparison_receipt: {
-        ...fixture.evidence.comparison_receipt,
-        sha256: comparisonSha,
-      },
-      source_gap_block_receipt: {
-        ...fixture.evidence.source_gap_block_receipt,
-        sha256: receiptSha,
-      },
-    };
-    writeStableJson(join(fixture.root, fixture.paths.evidence), evidence);
-    const acceptance = {
-      ...fixture.acceptance,
-      artifacts: {
-        ...fixture.acceptance.artifacts,
-        comparison_receipt: {
-          ...fixture.acceptance.artifacts.comparison_receipt,
-          sha256: comparisonSha,
-        },
-        evidence: {
-          ...fixture.acceptance.artifacts.evidence,
-          sha256: fileSha256(join(fixture.root, fixture.paths.evidence)),
-        },
-        source_gap_block_receipt: {
-          ...fixture.acceptance.artifacts.source_gap_block_receipt,
-          sha256: receiptSha,
-        },
-      },
-    };
-    writeStableJson(
-      join(fixture.root, fixture.paths.acceptance),
-      acceptance,
-    );
-    writeStableJson(join(fixture.root, fixture.paths.overlay), {
-      ...fixture.overlay,
-      source_receipt: {
-        ...fixture.overlay.source_receipt,
-        sha256: receiptSha,
-      },
-      owner_acceptance: {
-        ...fixture.overlay.owner_acceptance,
-        sha256: fileSha256(join(fixture.root, fixture.paths.acceptance)),
+    rehashSourceGapFixture(fixture, {
+      comparison: {
+        ...fixture.comparison,
+        receipt_id: "tampered-comparison-receipt",
       },
     });
     expect(() => loadMemberSourceGapOverlays(
       [fixture.overlayDir],
       fixture.root,
     )).toThrow("internal receipt_id does not match pinned reference");
+  });
+
+  it("requires every pinned receipt identity field after graph rehashing", () => {
+    const fields = [
+      "source_id",
+      "normal_file_verified",
+      "replay_derived",
+      "authorizes_decision_persistence",
+      "authorizes_occurrence",
+      "authorizes_study",
+      "authorizes_cross_product",
+    ] as const;
+    for (const receiptKind of ["comparison", "source_gap"] as const) {
+      for (const field of fields) {
+        const fixture = sourceGapFixture([{
+          target: row(`missing-${receiptKind}-${field}`),
+          surfaces: ["member_extent", "member_grain"],
+          missingRoles: ["reference_snapshot"],
+        }]);
+        rehashSourceGapFixture(fixture, receiptKind === "comparison"
+          ? {
+            comparison: withoutField(
+              fixture.comparison as unknown as Record<string, unknown>,
+              field,
+            ),
+          }
+          : {
+            receipt: withoutField(
+              fixture.receipt as unknown as Record<string, unknown>,
+              field,
+            ),
+          });
+        expect(() => loadMemberSourceGapOverlays(
+          [fixture.overlayDir],
+          fixture.root,
+        )).toThrow(field);
+      }
+    }
+  });
+
+  it("rejects unknown fields in a rehashed comparison receipt", () => {
+    const fixture = sourceGapFixture([{
+      target: row("comparison-unknown-field"),
+      surfaces: ["member_extent", "member_grain"],
+      missingRoles: ["reference_snapshot"],
+    }]);
+    rehashSourceGapFixture(fixture, {
+      comparison: {
+        ...fixture.comparison,
+        forged_unknown_field: true,
+      },
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [fixture.overlayDir],
+      fixture.root,
+    )).toThrow("unknown field(s): forged_unknown_field");
   });
 
   it("loads single, array, and decisions-wrapper packages and rejects duplicate keys", () => {
