@@ -3,6 +3,8 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "bun:test";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
+import { loadMemberSourceGapOverlays } from
+  "../../src/quality/member-extent-ledger.js";
 import {
   PLAN040_PACKAGE_13_ACCEPTANCE_SHA256,
   PLAN040_PACKAGE_13_APPROVED_COMMIT,
@@ -225,6 +227,10 @@ describe("Plan 040 Package 13 gate and owner acceptance", () => {
     expect(extentArtifact).toEqual({ decisions: rebuilt.extentDecisions });
     expect(grainArtifact).toEqual({ decisions: rebuilt.grainDecisions });
     expect(overlayArtifact).toEqual(rebuilt.sourceGapOverlay);
+    expect(loadMemberSourceGapOverlays([
+      `${repoRoot}/data/quality/operational-reference/` +
+        "member-source-gap-overlays",
+    ])).toContainEqual(rebuilt.sourceGapOverlay);
     expect(extentArtifact.decisions).toHaveLength(21);
     expect(grainArtifact.decisions).toHaveLength(21);
     expect(grainArtifact.decisions.filter((decision) =>

@@ -1,5 +1,6 @@
 import { describe, expect, it } from "bun:test";
 import { createHash } from "node:crypto";
+import { spawnSync } from "node:child_process";
 import { lstatSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import { stableJson } from "../../../db/src/stable-json";
@@ -207,6 +208,25 @@ describe("Plan 040 Package 11 residual service-grain evidence freeze", () => {
       q89_residual_exclusion_changed: false,
     });
   });
+
+  it("replays frozen exclusions after later ledger closures", () => {
+    const result = spawnSync(
+      process.execPath,
+      [
+        `${repoRoot}/packages/pipeline/scripts/` +
+          "generate-plan040-qbnr-service-grain-package11.ts",
+        "--check",
+      ],
+      { cwd: repoRoot, encoding: "utf8" },
+    );
+    expect(result.status).toBe(0);
+    expect(result.stderr).toBe("");
+    expect(JSON.parse(result.stdout)).toMatchObject({
+      evidence_sha256: EVIDENCE_SHA256,
+      draft_sha256: DRAFT_SHA256,
+      check_only: true,
+    });
+  }, 15_000);
 
   it("freezes four positive grain-only proposals and seven unresolved rows", () => {
     expect(evidence.evidence_verdict_distribution).toEqual({

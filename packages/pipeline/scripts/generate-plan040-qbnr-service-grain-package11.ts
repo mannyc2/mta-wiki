@@ -1145,10 +1145,16 @@ const q82ExtentDecision = (
   reviewed_by: "codex-plan-040-package-11-evidence-proposal",
 });
 
-const frozenCandidateByTreatment = existsSync(join(repoRoot, evidenceRelative))
-  ? new Map(readJson<{
-    candidates: Plan040Package11CandidateEvidence[];
-  }>(evidenceRelative).candidates.map((candidate) => [
+type FrozenPackage11Evidence = {
+  candidates: Plan040Package11CandidateEvidence[];
+  exclusions: Plan040Package11Exclusion[];
+};
+const frozenPackage11Evidence =
+  existsSync(join(repoRoot, evidenceRelative))
+    ? readJson<FrozenPackage11Evidence>(evidenceRelative)
+    : null;
+const frozenCandidateByTreatment = frozenPackage11Evidence
+  ? new Map(frozenPackage11Evidence.candidates.map((candidate) => [
     candidate.treatment_record_id,
     candidate,
   ]))
@@ -1404,7 +1410,7 @@ if (
 ) {
   throw new Error("Historical old Q48 context acquired occurrence membership");
 }
-const exclusions: Plan040Package11Exclusion[] = [
+const currentExclusions: Plan040Package11Exclusion[] = [
   {
     scope_id: "q89_residual_limited_stop",
     candidate_keys: [q89LimitedKey],
@@ -1477,6 +1483,44 @@ const exclusions: Plan040Package11Exclusion[] = [
     unchanged: true,
   },
 ];
+const exclusions = frozenPackage11Evidence?.exclusions ?? currentExclusions;
+if (frozenPackage11Evidence) {
+  if (exclusions.length !== currentExclusions.length) {
+    throw new Error("Package 11 frozen exclusion count drifted");
+  }
+  const currentByScope = new Map(currentExclusions.map((exclusion) => [
+    exclusion.scope_id,
+    exclusion,
+  ]));
+  for (const exclusion of exclusions) {
+    const current = currentByScope.get(exclusion.scope_id);
+    if (
+      !current ||
+      stableJson(exclusion.candidate_keys as JsonValue) !==
+        stableJson(current.candidate_keys as JsonValue) ||
+      exclusion.candidate_key_sha256 !==
+        sortedHash(exclusion.candidate_keys) ||
+      exclusion.candidate_key_sha256 !== current.candidate_key_sha256
+    ) {
+      throw new Error(
+        `${exclusion.scope_id}: Package 11 frozen exclusion identity drifted`,
+      );
+    }
+    for (const key of exclusion.candidate_keys) {
+      if (key.startsWith("canonical-treatment\0")) continue;
+      one(
+        extentRows,
+        (row) => candidateKey(row) === key,
+        `${exclusion.scope_id} current extent identity`,
+      );
+      one(
+        grainRows,
+        (row) => candidateKey(row) === key,
+        `${exclusion.scope_id} current grain identity`,
+      );
+    }
+  }
+}
 
 const evidence = {
   schema_version: 1,

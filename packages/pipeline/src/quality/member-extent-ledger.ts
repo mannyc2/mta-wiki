@@ -1,5 +1,23 @@
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
-import { dirname, extname, join, relative, resolve } from "node:path";
+import { createHash } from "node:crypto";
+import {
+  existsSync,
+  lstatSync,
+  mkdirSync,
+  readFileSync,
+  readdirSync,
+  realpathSync,
+  writeFileSync,
+} from "node:fs";
+import {
+  dirname,
+  extname,
+  isAbsolute,
+  join,
+  normalize,
+  relative,
+  resolve,
+  sep,
+} from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableHash, stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
@@ -194,6 +212,64 @@ const sourceGapReceiptRefFields = new Set([
   "path", "receipt_id", "sha256",
 ]);
 const acceptanceRefFields = new Set(["path", "sha256"]);
+const sourceGapReceiptFields = new Set([
+  "absence_projection_prohibited_for_unresolved_grain",
+  "authorizes_cross_product", "authorizes_decision_persistence",
+  "authorizes_occurrence", "authorizes_study", "candidate_count",
+  "candidate_key_sha256", "candidates", "comparison_receipt",
+  "contract_semantics", "exact_absence_count",
+  "external_acquisition_performed", "normal_file_verified", "package_id",
+  "prospective_ledger_prefix", "prospective_ledger_reason_policy",
+  "receipt_id", "replay_derived", "schema_version", "source_id",
+]);
+const sourceGapReceiptCandidateFields = new Set([
+  "absence_projection_prohibited_for_unresolved_grain",
+  "authorizes_cross_product", "authorizes_decision_persistence",
+  "authorizes_occurrence", "authorizes_study", "blocked_surfaces",
+  "candidate_key", "comparison_receipt_anchor", "contract", "gap_codes",
+  "literal_exact_absence", "occurrence_id",
+  "prospective_ledger_handling", "resolved_surfaces", "route_record_id",
+  "semantic_verdict", "source_statement_evidence_id",
+  "source_statement_present", "treatment_record_id",
+]);
+const evidenceReceiptRefFields = new Set([
+  "authorizes_cross_product", "authorizes_decision_persistence",
+  "authorizes_occurrence", "authorizes_study", "normal_file_verified",
+  "path", "receipt_id", "replay_derived", "sha256", "source_id",
+]);
+const acceptanceFields = new Set([
+  "acceptance_basis", "acceptance_id", "accepted_at", "accepted_by",
+  "artifacts", "authorization_state", "authorized_exact_persistence",
+  "authorizes_corrections", "authorizes_cross_product",
+  "authorizes_decision_persistence", "authorizes_occurrence",
+  "authorizes_ontology", "authorizes_study", "candidate_count",
+  "candidate_key_sha256", "gate", "preservation_invariants",
+  "reviewer_result", "schema_version", "verdict_distribution",
+]);
+const acceptanceArtifactFields = new Set([
+  "comparison_receipt", "draft", "evidence", "source_gap_block_receipt",
+]);
+const acceptedPersistenceFields = new Set([
+  "decision_candidate_count", "decision_candidate_key_sha256",
+  "extent_blocked_upstream_count", "extent_decision_count",
+  "extent_decision_id_sha256", "extent_resolved_count",
+  "grain_blocked_upstream_count", "grain_decision_count",
+  "grain_decision_id_sha256", "grain_resolved_count",
+  "source_gap_candidate_key_sha256", "source_gap_overlay_count",
+]);
+const acceptancePreservationFields = new Set([
+  "absence_projection_prohibited_for_unresolved_grain",
+  "accepted_prior_decisions_byte_identical", "correction_state_unchanged",
+  "cross_product_authorization_unchanged", "occurrence_decisions_unchanged",
+  "preserved_siblings_byte_identical",
+  "source_gap_receipt_strict_and_nonauthorizing",
+  "study_authorization_unchanged", "treatment_ontology_unchanged",
+]);
+const acceptanceVerdictFields = new Set([
+  "exact_absence", "positive_extent_and_grain_proposed",
+  "positive_extent_proposed_grain_blocked", "source_gap_block_receipt",
+  "source_gap_blocked_extent_and_grain",
+]);
 const keyFields = new Set(["occurrence_id", "route_record_id", "treatment_record_id"]);
 
 function object(value: unknown, path: string): Record<string, unknown> {
@@ -217,6 +293,27 @@ function nonempty(value: unknown, path: string): string {
   return value.trim();
 }
 
+function nonnegativeInteger(value: unknown, path: string): number {
+  if (!Number.isInteger(value) || (value as number) < 0) {
+    throw new Error(`${path}: expected non-negative integer`);
+  }
+  return value as number;
+}
+
+function exactSha256(value: unknown, path: string): string {
+  const hash = nonempty(value, path);
+  if (!/^[0-9a-f]{64}$/u.test(hash)) {
+    throw new Error(`${path}: expected lowercase SHA-256`);
+  }
+  return hash;
+}
+
+function sortedKeyHash(values: readonly string[]): string {
+  return createHash("sha256")
+    .update(`${[...new Set(values)].sort().join("\n")}\n`)
+    .digest("hex");
+}
+
 function sortedStrings(value: unknown, path: string, allowEmpty = true): string[] {
   if (!Array.isArray(value) || (!allowEmpty && value.length === 0)) {
     throw new Error(`${path}: expected ${allowEmpty ? "" : "non-empty "}array`);
@@ -225,6 +322,19 @@ function sortedStrings(value: unknown, path: string, allowEmpty = true): string[
   if (new Set(output).size !== output.length) throw new Error(`${path}: duplicates are forbidden`);
   if (stableJson(output as JsonValue) !== stableJson([...output].sort() as JsonValue)) {
     throw new Error(`${path}: values must be sorted`);
+  }
+  return output;
+}
+
+function uniqueStrings(value: unknown, path: string, allowEmpty = true): string[] {
+  if (!Array.isArray(value) || (!allowEmpty && value.length === 0)) {
+    throw new Error(`${path}: expected ${allowEmpty ? "" : "non-empty "}array`);
+  }
+  const output = value.map((item, index) =>
+    nonempty(item, `${path}[${index}]`)
+  );
+  if (new Set(output).size !== output.length) {
+    throw new Error(`${path}: duplicates are forbidden`);
   }
   return output;
 }
@@ -502,16 +612,626 @@ function parseSourceGapOverlay(
   };
 }
 
+type StrictSourceGapReceiptCandidate = MemberExtentKey & {
+  candidate_key: string;
+  blocked_surfaces: MemberLedgerSurface[];
+  resolved_surfaces: MemberLedgerSurface[];
+  gap_codes: string[];
+  prospective_ledger_handling: Record<string, string>;
+  source_statement_evidence_id: string;
+};
+
+type StrictSourceGapReceipt = {
+  receipt_id: string;
+  candidate_count: number;
+  candidate_key_sha256: string;
+  candidates: StrictSourceGapReceiptCandidate[];
+};
+
+type PinnedArtifactRef = {
+  path: string;
+  sha256: string;
+};
+
+type StrictSourceGapAcceptance = {
+  accepted_at: string;
+  accepted_by: string;
+  candidate_count: number;
+  candidate_key_sha256: string;
+  reviewer_result: "APPROVE/APPROVE";
+  artifacts: {
+    evidence: PinnedArtifactRef;
+    source_gap_block_receipt: PinnedArtifactRef;
+  };
+  gate: PinnedArtifactRef;
+  authorized_exact_persistence: {
+    source_gap_overlay_count: number;
+    source_gap_candidate_key_sha256: string;
+    extent_blocked_upstream_count: number;
+    grain_blocked_upstream_count: number;
+  };
+  verdict_distribution: Record<string, number>;
+};
+
+function canonicalRepoRelativePath(value: unknown, path: string): string {
+  const candidate = nonempty(value, path);
+  if (
+    isAbsolute(candidate) ||
+    candidate !== normalize(candidate) ||
+    candidate === "." ||
+    candidate === ".." ||
+    candidate.startsWith(`..${sep}`) ||
+    candidate.includes("\0")
+  ) {
+    throw new Error(`${path}: expected canonical path under repository root`);
+  }
+  return candidate;
+}
+
+function pathWithinRoot(root: string, path: string, label: string): void {
+  const fromRoot = relative(root, path);
+  if (
+    fromRoot === ".." ||
+    fromRoot.startsWith(`..${sep}`) ||
+    isAbsolute(fromRoot)
+  ) {
+    throw new Error(`${label}: path escapes repository root`);
+  }
+}
+
+function readPinnedNormalJson(
+  root: string,
+  ref: PinnedArtifactRef,
+  label: string,
+): unknown {
+  const relativePath = canonicalRepoRelativePath(ref.path, `${label}.path`);
+  const expectedSha256 = exactSha256(ref.sha256, `${label}.sha256`);
+  const rootReal = realpathSync(root);
+  const resolvedPath = resolve(root, relativePath);
+  pathWithinRoot(resolve(root), resolvedPath, label);
+  let stat;
+  try {
+    stat = lstatSync(resolvedPath);
+  } catch {
+    throw new Error(`${label}: pinned file is missing`);
+  }
+  if (!stat.isFile() || stat.isSymbolicLink()) {
+    throw new Error(`${label}: pinned file must be a normal non-symlink file`);
+  }
+  pathWithinRoot(rootReal, realpathSync(resolvedPath), label);
+  const bytes = readFileSync(resolvedPath);
+  const actualSha256 = createHash("sha256").update(bytes).digest("hex");
+  if (actualSha256 !== expectedSha256) {
+    throw new Error(
+      `${label}: pinned SHA-256 mismatch; expected ${expectedSha256}, ` +
+        `got ${actualSha256}`,
+    );
+  }
+  try {
+    return JSON.parse(bytes.toString("utf8")) as unknown;
+  } catch {
+    throw new Error(`${label}: pinned file is not valid JSON`);
+  }
+}
+
+function strictArtifactRef(value: unknown, path: string): PinnedArtifactRef {
+  const parsed = object(value, path);
+  exactKeys(parsed, acceptanceRefFields, path);
+  return {
+    path: canonicalRepoRelativePath(parsed.path, `${path}.path`),
+    sha256: exactSha256(parsed.sha256, `${path}.sha256`),
+  };
+}
+
+function strictEvidenceReceiptRef(
+  value: unknown,
+  path: string,
+): PinnedArtifactRef & { receipt_id: string } {
+  const parsed = object(value, path);
+  exactKeys(parsed, evidenceReceiptRefFields, path);
+  if (
+    parsed.authorizes_decision_persistence !== false ||
+    parsed.authorizes_occurrence !== false ||
+    parsed.authorizes_study !== false ||
+    parsed.authorizes_cross_product !== false ||
+    parsed.normal_file_verified !== true ||
+    parsed.replay_derived !== true
+  ) {
+    throw new Error(`${path}: receipt reference semantics drifted`);
+  }
+  nonempty(parsed.source_id, `${path}.source_id`);
+  return {
+    ...strictArtifactRef({
+      path: parsed.path,
+      sha256: parsed.sha256,
+    }, path),
+    receipt_id: nonempty(parsed.receipt_id, `${path}.receipt_id`),
+  };
+}
+
+function parseStrictSourceGapReceipt(
+  value: unknown,
+  path: string,
+): StrictSourceGapReceipt {
+  const parsed = object(value, path);
+  exactKeys(parsed, sourceGapReceiptFields, path);
+  if (
+    parsed.schema_version !== MEMBER_EXTENT_LEDGER_SCHEMA_VERSION ||
+    parsed.absence_projection_prohibited_for_unresolved_grain !== true ||
+    parsed.authorizes_decision_persistence !== false ||
+    parsed.authorizes_occurrence !== false ||
+    parsed.authorizes_study !== false ||
+    parsed.authorizes_cross_product !== false ||
+    parsed.external_acquisition_performed !== false ||
+    parsed.normal_file_verified !== true ||
+    parsed.replay_derived !== true ||
+    parsed.exact_absence_count !== 0 ||
+    parsed.prospective_ledger_prefix !== "blocked_upstream:" ||
+    parsed.prospective_ledger_reason_policy !== "sorted_unique_gap_codes"
+  ) {
+    throw new Error(`${path}: source-gap receipt semantics drifted`);
+  }
+  nonempty(parsed.package_id, `${path}.package_id`);
+  nonempty(parsed.source_id, `${path}.source_id`);
+  nonempty(parsed.contract_semantics, `${path}.contract_semantics`);
+  strictEvidenceReceiptRef(
+    parsed.comparison_receipt,
+    `${path}.comparison_receipt`,
+  );
+  if (!Array.isArray(parsed.candidates) || parsed.candidates.length === 0) {
+    throw new Error(`${path}.candidates: expected non-empty array`);
+  }
+  const candidates = parsed.candidates.map((value, index) => {
+    const itemPath = `${path}.candidates[${index}]`;
+    const candidate = object(value, itemPath);
+    exactKeys(candidate, sourceGapReceiptCandidateFields, itemPath);
+    const key = {
+      occurrence_id: nonempty(
+        candidate.occurrence_id,
+        `${itemPath}.occurrence_id`,
+      ),
+      route_record_id: nonempty(
+        candidate.route_record_id,
+        `${itemPath}.route_record_id`,
+      ),
+      treatment_record_id: nonempty(
+        candidate.treatment_record_id,
+        `${itemPath}.treatment_record_id`,
+      ),
+    };
+    const candidateKey = nonempty(
+      candidate.candidate_key,
+      `${itemPath}.candidate_key`,
+    );
+    if (candidateKey !== extentDecisionKey(key)) {
+      throw new Error(`${itemPath}.candidate_key: key mismatch`);
+    }
+    const blockedSurfaces = sortedStrings(
+      candidate.blocked_surfaces,
+      `${itemPath}.blocked_surfaces`,
+      false,
+    ) as MemberLedgerSurface[];
+    const resolvedSurfaces = sortedStrings(
+      candidate.resolved_surfaces,
+      `${itemPath}.resolved_surfaces`,
+    ) as MemberLedgerSurface[];
+    const surfaces = [...blockedSurfaces, ...resolvedSurfaces];
+    if (
+      surfaces.some((surface) =>
+        surface !== "member_extent" && surface !== "member_grain"
+      ) ||
+      new Set(surfaces).size !== surfaces.length ||
+      [...surfaces].sort().join("\0") !==
+        ["member_extent", "member_grain"].sort().join("\0")
+    ) {
+      throw new Error(`${itemPath}: blocked/resolved surfaces must partition both ledgers`);
+    }
+    const gapCodes = uniqueStrings(
+      candidate.gap_codes,
+      `${itemPath}.gap_codes`,
+      false,
+    ).sort();
+    const expectedVerdict = `blocked_upstream:${gapCodes.join("+")}`;
+    const handling = object(
+      candidate.prospective_ledger_handling,
+      `${itemPath}.prospective_ledger_handling`,
+    );
+    exactKeys(
+      handling,
+      new Set(blockedSurfaces),
+      `${itemPath}.prospective_ledger_handling`,
+    );
+    if (blockedSurfaces.some((surface) =>
+      handling[surface] !== expectedVerdict
+    )) {
+      throw new Error(
+        `${itemPath}.prospective_ledger_handling: blocked verdict drifted`,
+      );
+    }
+    if (
+      candidate.contract !== "member-evidence-source-gap-block-receipt-v1" ||
+      candidate.semantic_verdict !== "blocked_upstream" ||
+      candidate.literal_exact_absence !== false ||
+      candidate.source_statement_present !== true ||
+      candidate.absence_projection_prohibited_for_unresolved_grain !== true ||
+      candidate.authorizes_decision_persistence !== false ||
+      candidate.authorizes_occurrence !== false ||
+      candidate.authorizes_study !== false ||
+      candidate.authorizes_cross_product !== false
+    ) {
+      throw new Error(`${itemPath}: source-gap candidate semantics drifted`);
+    }
+    nonempty(
+      candidate.comparison_receipt_anchor,
+      `${itemPath}.comparison_receipt_anchor`,
+    );
+    return {
+      ...key,
+      candidate_key: candidateKey,
+      blocked_surfaces: blockedSurfaces,
+      resolved_surfaces: resolvedSurfaces,
+      gap_codes: gapCodes,
+      prospective_ledger_handling: handling as Record<string, string>,
+      source_statement_evidence_id: nonempty(
+        candidate.source_statement_evidence_id,
+        `${itemPath}.source_statement_evidence_id`,
+      ),
+    };
+  });
+  const candidateKeys = candidates.map((candidate) =>
+    candidate.candidate_key
+  );
+  if (new Set(candidateKeys).size !== candidateKeys.length) {
+    throw new Error(`${path}.candidates: keys must be unique`);
+  }
+  const candidateCount = nonnegativeInteger(
+    parsed.candidate_count,
+    `${path}.candidate_count`,
+  );
+  const candidateKeySha256 = exactSha256(
+    parsed.candidate_key_sha256,
+    `${path}.candidate_key_sha256`,
+  );
+  if (
+    candidateCount !== candidates.length ||
+    candidateKeySha256 !== sortedKeyHash(candidateKeys)
+  ) {
+    throw new Error(`${path}: candidate count or key hash drifted`);
+  }
+  return {
+    receipt_id: nonempty(parsed.receipt_id, `${path}.receipt_id`),
+    candidate_count: candidateCount,
+    candidate_key_sha256: candidateKeySha256,
+    candidates,
+  };
+}
+
+function parseStrictSourceGapAcceptance(
+  value: unknown,
+  path: string,
+): StrictSourceGapAcceptance {
+  const parsed = object(value, path);
+  exactKeys(parsed, acceptanceFields, path);
+  if (
+    parsed.schema_version !== MEMBER_EXTENT_LEDGER_SCHEMA_VERSION ||
+    parsed.reviewer_result !== "APPROVE/APPROVE" ||
+    parsed.authorizes_decision_persistence !== true ||
+    parsed.authorizes_occurrence !== false ||
+    parsed.authorizes_study !== false ||
+    parsed.authorizes_cross_product !== false ||
+    parsed.authorizes_ontology !== false ||
+    parsed.authorizes_corrections !== false
+  ) {
+    throw new Error(
+      `${path}: acceptance must authorize only decision persistence`,
+    );
+  }
+  nonempty(parsed.acceptance_id, `${path}.acceptance_id`);
+  nonempty(parsed.acceptance_basis, `${path}.acceptance_basis`);
+  nonempty(parsed.authorization_state, `${path}.authorization_state`);
+  const artifacts = object(parsed.artifacts, `${path}.artifacts`);
+  exactKeys(artifacts, acceptanceArtifactFields, `${path}.artifacts`);
+  strictArtifactRef(
+    artifacts.comparison_receipt,
+    `${path}.artifacts.comparison_receipt`,
+  );
+  strictArtifactRef(artifacts.draft, `${path}.artifacts.draft`);
+  const evidence = strictArtifactRef(
+    artifacts.evidence,
+    `${path}.artifacts.evidence`,
+  );
+  const sourceGapReceipt = strictArtifactRef(
+    artifacts.source_gap_block_receipt,
+    `${path}.artifacts.source_gap_block_receipt`,
+  );
+  const gate = strictArtifactRef(parsed.gate, `${path}.gate`);
+  const persistence = object(
+    parsed.authorized_exact_persistence,
+    `${path}.authorized_exact_persistence`,
+  );
+  exactKeys(
+    persistence,
+    acceptedPersistenceFields,
+    `${path}.authorized_exact_persistence`,
+  );
+  for (const field of [
+    "decision_candidate_key_sha256",
+    "extent_decision_id_sha256",
+    "grain_decision_id_sha256",
+    "source_gap_candidate_key_sha256",
+  ] as const) {
+    exactSha256(
+      persistence[field],
+      `${path}.authorized_exact_persistence.${field}`,
+    );
+  }
+  for (const field of [
+    "decision_candidate_count",
+    "extent_blocked_upstream_count",
+    "extent_decision_count",
+    "extent_resolved_count",
+    "grain_blocked_upstream_count",
+    "grain_decision_count",
+    "grain_resolved_count",
+    "source_gap_overlay_count",
+  ] as const) {
+    nonnegativeInteger(
+      persistence[field],
+      `${path}.authorized_exact_persistence.${field}`,
+    );
+  }
+  const preservation = object(
+    parsed.preservation_invariants,
+    `${path}.preservation_invariants`,
+  );
+  exactKeys(
+    preservation,
+    acceptancePreservationFields,
+    `${path}.preservation_invariants`,
+  );
+  if (Object.values(preservation).some((value) => value !== true)) {
+    throw new Error(`${path}.preservation_invariants: every invariant is required`);
+  }
+  const verdictDistribution = object(
+    parsed.verdict_distribution,
+    `${path}.verdict_distribution`,
+  );
+  exactKeys(
+    verdictDistribution,
+    acceptanceVerdictFields,
+    `${path}.verdict_distribution`,
+  );
+  const decodedVerdictDistribution = Object.fromEntries(
+    [...acceptanceVerdictFields].map((field) => [
+      field,
+      nonnegativeInteger(
+        verdictDistribution[field],
+        `${path}.verdict_distribution.${field}`,
+      ),
+    ]),
+  );
+  return {
+    accepted_at: nonempty(parsed.accepted_at, `${path}.accepted_at`),
+    accepted_by: nonempty(parsed.accepted_by, `${path}.accepted_by`),
+    candidate_count: nonnegativeInteger(
+      parsed.candidate_count,
+      `${path}.candidate_count`,
+    ),
+    candidate_key_sha256: exactSha256(
+      parsed.candidate_key_sha256,
+      `${path}.candidate_key_sha256`,
+    ),
+    reviewer_result: "APPROVE/APPROVE",
+    artifacts: {
+      evidence,
+      source_gap_block_receipt: sourceGapReceipt,
+    },
+    gate,
+    authorized_exact_persistence: {
+      source_gap_overlay_count: persistence.source_gap_overlay_count as number,
+      source_gap_candidate_key_sha256:
+        persistence.source_gap_candidate_key_sha256 as string,
+      extent_blocked_upstream_count:
+        persistence.extent_blocked_upstream_count as number,
+      grain_blocked_upstream_count:
+        persistence.grain_blocked_upstream_count as number,
+    },
+    verdict_distribution: decodedVerdictDistribution,
+  };
+}
+
+function assertPinnedAcceptanceChain(input: {
+  overlay: MemberSourceGapOverlay;
+  receipt: StrictSourceGapReceipt;
+  acceptance: StrictSourceGapAcceptance;
+  root: string;
+  path: string;
+}): void {
+  const { overlay, receipt, acceptance, root, path } = input;
+  const sourceRef = acceptance.artifacts.source_gap_block_receipt;
+  if (
+    overlay.source_receipt.path !== sourceRef.path ||
+    overlay.source_receipt.sha256 !== sourceRef.sha256 ||
+    overlay.source_receipt.receipt_id !== receipt.receipt_id ||
+    overlay.accepted_at !== acceptance.accepted_at ||
+    overlay.accepted_by !== acceptance.accepted_by
+  ) {
+    throw new Error(`${path}: overlay provenance does not match acceptance`);
+  }
+  const overlayKeys = overlay.entries.map((entry) => entry.candidate_key);
+  const extentBlocked = overlay.entries.filter((entry) =>
+    entry.blocked_surfaces.includes("member_extent")
+  ).length;
+  const grainBlocked = overlay.entries.filter((entry) =>
+    entry.blocked_surfaces.includes("member_grain")
+  ).length;
+  const authorized = acceptance.authorized_exact_persistence;
+  if (
+    authorized.source_gap_overlay_count !== overlay.entries.length ||
+    authorized.source_gap_candidate_key_sha256 !==
+      sortedKeyHash(overlayKeys) ||
+    authorized.extent_blocked_upstream_count !== extentBlocked ||
+    authorized.grain_blocked_upstream_count !== grainBlocked ||
+    acceptance.verdict_distribution.source_gap_block_receipt !==
+      overlay.entries.length ||
+    acceptance.verdict_distribution.source_gap_blocked_extent_and_grain !==
+      extentBlocked ||
+    acceptance.verdict_distribution.exact_absence !== 0
+  ) {
+    throw new Error(`${path}: acceptance does not pin the exact overlay scope`);
+  }
+
+  const receiptByKey = new Map(receipt.candidates.map((candidate) => [
+    candidate.candidate_key,
+    candidate,
+  ]));
+  if (
+    receipt.candidate_count !== overlay.entries.length ||
+    receipt.candidate_key_sha256 !== sortedKeyHash(overlayKeys) ||
+    receiptByKey.size !== overlay.entries.length
+  ) {
+    throw new Error(`${path}: source-gap receipt and overlay coverage differ`);
+  }
+  for (const entry of overlay.entries) {
+    const candidate = receiptByKey.get(entry.candidate_key);
+    if (
+      !candidate ||
+      candidate.occurrence_id !== entry.occurrence_id ||
+      candidate.route_record_id !== entry.route_record_id ||
+      candidate.treatment_record_id !== entry.treatment_record_id ||
+      stableJson(candidate.gap_codes as JsonValue) !==
+        stableJson(entry.missing_roles as JsonValue) ||
+      stableJson(candidate.blocked_surfaces as JsonValue) !==
+        stableJson(entry.blocked_surfaces as JsonValue) ||
+      candidate.source_statement_evidence_id !==
+        entry.source_statement_evidence_id ||
+      candidate.prospective_ledger_handling[
+        entry.blocked_surfaces[0]!
+      ] !== entry.verdict ||
+      entry.blocked_surfaces.some((surface) =>
+        candidate.prospective_ledger_handling[surface] !== entry.verdict
+      )
+    ) {
+      throw new Error(
+        `${path}: overlay entry does not exactly match receipt candidate ` +
+          entry.candidate_key,
+      );
+    }
+  }
+
+  const evidence = object(
+    readPinnedNormalJson(
+      root,
+      acceptance.artifacts.evidence,
+      `${path}.acceptance.artifacts.evidence`,
+    ),
+    `${path}.acceptance.artifacts.evidence`,
+  );
+  const evidenceReceipt = strictEvidenceReceiptRef(
+    evidence.source_gap_block_receipt,
+    `${path}.acceptance.artifacts.evidence.source_gap_block_receipt`,
+  );
+  if (
+    evidence.schema_version !== MEMBER_EXTENT_LEDGER_SCHEMA_VERSION ||
+    evidence.candidate_count !== acceptance.candidate_count ||
+    evidence.candidate_key_sha256 !== acceptance.candidate_key_sha256 ||
+    evidenceReceipt.path !== overlay.source_receipt.path ||
+    evidenceReceipt.sha256 !== overlay.source_receipt.sha256 ||
+    evidenceReceipt.receipt_id !== overlay.source_receipt.receipt_id
+  ) {
+    throw new Error(`${path}: pinned evidence does not bind this overlay`);
+  }
+  const gate = object(
+    readPinnedNormalJson(
+      root,
+      acceptance.gate,
+      `${path}.acceptance.gate`,
+    ),
+    `${path}.acceptance.gate`,
+  );
+  if (
+    gate.schema_version !== MEMBER_EXTENT_LEDGER_SCHEMA_VERSION ||
+    gate.candidate_count !== acceptance.candidate_count ||
+    gate.candidate_key_sha256 !== acceptance.candidate_key_sha256 ||
+    gate.reviewer_result !== acceptance.reviewer_result ||
+    stableJson(gate.verdict_distribution as JsonValue) !==
+      stableJson(acceptance.verdict_distribution as JsonValue) ||
+    gate.authorizes_decision_persistence !== false ||
+    gate.authorizes_occurrence !== false ||
+    gate.authorizes_study !== false ||
+    gate.authorizes_cross_product !== false ||
+    gate.authorizes_ontology !== false ||
+    gate.authorizes_corrections !== false
+  ) {
+    throw new Error(`${path}: pinned gate semantics drifted`);
+  }
+  nonempty(gate.gate_id, `${path}.acceptance.gate.gate_id`);
+  nonempty(gate.reviewed_commit, `${path}.acceptance.gate.reviewed_commit`);
+}
+
+function sourceGapOverlayJsonFiles(
+  directory: string,
+  root: string,
+): string[] {
+  if (!existsSync(directory)) return [];
+  const rootReal = realpathSync(root);
+  const directoryPath = resolve(directory);
+  pathWithinRoot(resolve(root), directoryPath, directory);
+  const directoryStat = lstatSync(directoryPath);
+  if (!directoryStat.isDirectory() || directoryStat.isSymbolicLink()) {
+    throw new Error(`${directory}: overlay directory must be a normal directory`);
+  }
+  pathWithinRoot(rootReal, realpathSync(directoryPath), directory);
+  const visit = (path: string): string[] =>
+    readdirSync(path, { withFileTypes: true }).flatMap((entry) => {
+      const child = join(path, entry.name);
+      const stat = lstatSync(child);
+      if (stat.isSymbolicLink()) {
+        throw new Error(`${child}: source-gap overlay paths cannot be symlinks`);
+      }
+      if (stat.isDirectory()) return visit(child);
+      return stat.isFile() && extname(entry.name) === ".json" ? [child] : [];
+    });
+  return visit(directoryPath).sort();
+}
+
 export function loadMemberSourceGapOverlays(
   directories: readonly string[],
+  provenanceRoot = repoRoot,
 ): MemberSourceGapOverlay[] {
   const overlays = directories.flatMap((directory) =>
-    jsonFiles(directory).map((path) =>
-      parseSourceGapOverlay(
+    sourceGapOverlayJsonFiles(directory, provenanceRoot).map((path) => {
+      const overlay = parseSourceGapOverlay(
         JSON.parse(readFileSync(path, "utf8")) as unknown,
         path,
-      )
-    )
+      );
+      const sourceReceiptValue = readPinnedNormalJson(
+        provenanceRoot,
+        overlay.source_receipt,
+        `${path}.source_receipt`,
+      );
+      const receipt = parseStrictSourceGapReceipt(
+        sourceReceiptValue,
+        `${path}.source_receipt`,
+      );
+      const acceptanceValue = readPinnedNormalJson(
+        provenanceRoot,
+        overlay.owner_acceptance,
+        `${path}.owner_acceptance`,
+      );
+      const acceptance = parseStrictSourceGapAcceptance(
+        acceptanceValue,
+        `${path}.owner_acceptance`,
+      );
+      assertPinnedAcceptanceChain({
+        overlay,
+        receipt,
+        acceptance,
+        root: provenanceRoot,
+        path,
+      });
+      return overlay;
+    })
   );
   const ids = new Set<string>();
   const coverage = new Set<string>();

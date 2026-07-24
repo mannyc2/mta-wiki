@@ -1,5 +1,13 @@
 import { describe, expect, it } from "bun:test";
-import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+import {
+  mkdirSync,
+  mkdtempSync,
+  readFileSync,
+  symlinkSync,
+  unlinkSync,
+  writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { stableJson } from "@mta-wiki/db/stable-json";
@@ -106,42 +114,281 @@ function absence(target: MemberExtentRow): MemberExtentAbsenceReceipt {
   };
 }
 
-function sourceGapOverlay(input: Array<{
+type SourceGapFixtureInput = Array<{
   target: MemberExtentRow;
   surfaces: Array<"member_extent" | "member_grain">;
   missingRoles: string[];
-}>): MemberSourceGapOverlay {
-  return {
+}>;
+
+const sha256 = (value: Uint8Array | string): string =>
+  createHash("sha256").update(value).digest("hex");
+const sortedHash = (values: readonly string[]): string =>
+  sha256(`${[...new Set(values)].sort().join("\n")}\n`);
+const stableBytes = (value: unknown): string =>
+  `${stableJson(value as JsonValue)}\n`;
+const writeStableJson = (path: string, value: unknown): void =>
+  writeFileSync(path, stableBytes(value));
+const fileSha256 = (path: string): string => sha256(readFileSync(path));
+
+function sourceGapFixture(input: SourceGapFixtureInput) {
+  const root = mkdtempSync(join(tmpdir(), "member-source-gap-provenance-"));
+  const paths = {
+    comparison: "receipts/comparison.json",
+    receipt: "receipts/source-gaps.json",
+    draft: "review/draft.json",
+    evidence: "review/evidence.json",
+    gate: "review/gate.json",
+    acceptance: "review/acceptance.json",
+    overlay: "overlays/overlay.json",
+  };
+  for (const path of Object.values(paths)) {
+    mkdirSync(join(root, path, ".."), { recursive: true });
+  }
+  writeStableJson(join(root, paths.comparison), {
+    receipt_id: "fixture-comparison-receipt",
+  });
+  writeStableJson(join(root, paths.draft), {
+    draft_id: "fixture-source-gap-draft",
+  });
+  const normalized = input.map(({ target, surfaces, missingRoles }) => {
+    const candidateKey =
+      `${target.occurrence_id}\0${target.route_record_id}\0` +
+      target.treatment_record_id;
+    return {
+      target,
+      candidateKey,
+      surfaces: [...surfaces].sort() as Array<
+        "member_extent" | "member_grain"
+      >,
+      missingRoles: [...missingRoles].sort(),
+    };
+  }).sort((left, right) =>
+    left.candidateKey < right.candidateKey
+      ? -1
+      : left.candidateKey > right.candidateKey ? 1 : 0
+  );
+  const candidateKeys = normalized.map((entry) => entry.candidateKey);
+  const candidateKeySha256 = sortedHash(candidateKeys);
+  const comparisonRef = {
+    path: paths.comparison,
+    sha256: fileSha256(join(root, paths.comparison)),
+    receipt_id: "fixture-comparison-receipt",
+    source_id: "fixture_comparison_receipt",
+    normal_file_verified: true,
+    replay_derived: true,
+    authorizes_decision_persistence: false,
+    authorizes_occurrence: false,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+  };
+  const receipt = {
+    schema_version: 1,
+    receipt_id: "fixture-source-gap-receipt",
+    source_id: "fixture_source_gap_receipt",
+    package_id: "fixture-source-gap-package",
+    candidate_count: normalized.length,
+    candidate_key_sha256: candidateKeySha256,
+    exact_absence_count: 0,
+    contract_semantics:
+      "candidate-specific source gap blocks authority without claiming source absence",
+    prospective_ledger_prefix: "blocked_upstream:",
+    prospective_ledger_reason_policy: "sorted_unique_gap_codes",
+    absence_projection_prohibited_for_unresolved_grain: true,
+    normal_file_verified: true,
+    replay_derived: true,
+    external_acquisition_performed: false,
+    comparison_receipt: comparisonRef,
+    candidates: normalized.map((entry) => {
+      const verdict =
+        `blocked_upstream:${entry.missingRoles.join("+")}`;
+      const resolvedSurfaces = (
+        ["member_extent", "member_grain"] as const
+      ).filter((surface) => !entry.surfaces.includes(surface));
+      return {
+        contract: "member-evidence-source-gap-block-receipt-v1",
+        candidate_key: entry.candidateKey,
+        occurrence_id: entry.target.occurrence_id,
+        route_record_id: entry.target.route_record_id,
+        treatment_record_id: entry.target.treatment_record_id,
+        blocked_surfaces: entry.surfaces,
+        resolved_surfaces: resolvedSurfaces,
+        gap_codes: entry.missingRoles,
+        prospective_ledger_handling: Object.fromEntries(
+          entry.surfaces.map((surface) => [surface, verdict]),
+        ),
+        semantic_verdict: "blocked_upstream",
+        literal_exact_absence: false,
+        source_statement_present: true,
+        source_statement_evidence_id: "source#block",
+        comparison_receipt_anchor:
+          `fixture_comparison_receipt#candidate=${entry.candidateKey}`,
+        absence_projection_prohibited_for_unresolved_grain: true,
+        authorizes_decision_persistence: false,
+        authorizes_occurrence: false,
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      };
+    }),
+    authorizes_decision_persistence: false,
+    authorizes_occurrence: false,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+  };
+  writeStableJson(join(root, paths.receipt), receipt);
+  const sourceReceiptRef = {
+    path: paths.receipt,
+    sha256: fileSha256(join(root, paths.receipt)),
+  };
+  const sourceEvidenceReceiptRef = {
+    ...sourceReceiptRef,
+    receipt_id: receipt.receipt_id,
+    source_id: receipt.source_id,
+    normal_file_verified: true,
+    replay_derived: true,
+    authorizes_decision_persistence: false,
+    authorizes_occurrence: false,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+  };
+  const evidence = {
+    schema_version: 1,
+    manifest_id: "fixture-source-gap-evidence",
+    candidate_count: normalized.length,
+    candidate_key_sha256: candidateKeySha256,
+    source_gap_block_receipt: sourceEvidenceReceiptRef,
+  };
+  writeStableJson(join(root, paths.evidence), evidence);
+  const extentBlocked = normalized.filter((entry) =>
+    entry.surfaces.includes("member_extent")
+  ).length;
+  const grainBlocked = normalized.filter((entry) =>
+    entry.surfaces.includes("member_grain")
+  ).length;
+  const extentPositive = normalized.length - extentBlocked;
+  const verdictDistribution = {
+    exact_absence: 0,
+    positive_extent_and_grain_proposed: 0,
+    positive_extent_proposed_grain_blocked: extentPositive,
+    source_gap_block_receipt: normalized.length,
+    source_gap_blocked_extent_and_grain: extentBlocked,
+  };
+  const gate = {
+    schema_version: 1,
+    gate_id: "fixture-source-gap-gate",
+    reviewed_commit: "0123456789abcdef0123456789abcdef01234567",
+    candidate_count: normalized.length,
+    candidate_key_sha256: candidateKeySha256,
+    reviewer_result: "APPROVE/APPROVE",
+    verdict_distribution: verdictDistribution,
+    authorizes_decision_persistence: false,
+    authorizes_occurrence: false,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+    authorizes_ontology: false,
+    authorizes_corrections: false,
+  };
+  writeStableJson(join(root, paths.gate), gate);
+  const acceptance = {
+    schema_version: 1,
+    acceptance_id: "fixture-source-gap-acceptance",
+    acceptance_basis: "dual_review_fixture_acceptance",
+    accepted_at: "2026-07-24T20:45:00Z",
+    accepted_by: "fixture-owner",
+    authorization_state: "exact_source_gap_overlay_only",
+    reviewer_result: "APPROVE/APPROVE",
+    candidate_count: normalized.length,
+    candidate_key_sha256: candidateKeySha256,
+    artifacts: {
+      comparison_receipt: {
+        path: paths.comparison,
+        sha256: fileSha256(join(root, paths.comparison)),
+      },
+      draft: {
+        path: paths.draft,
+        sha256: fileSha256(join(root, paths.draft)),
+      },
+      evidence: {
+        path: paths.evidence,
+        sha256: fileSha256(join(root, paths.evidence)),
+      },
+      source_gap_block_receipt: sourceReceiptRef,
+    },
+    gate: {
+      path: paths.gate,
+      sha256: fileSha256(join(root, paths.gate)),
+    },
+    authorized_exact_persistence: {
+      decision_candidate_count: extentPositive,
+      decision_candidate_key_sha256: candidateKeySha256,
+      extent_blocked_upstream_count: extentBlocked,
+      extent_decision_count: extentPositive,
+      extent_decision_id_sha256: candidateKeySha256,
+      extent_resolved_count: extentPositive,
+      grain_blocked_upstream_count: grainBlocked,
+      grain_decision_count: extentPositive,
+      grain_decision_id_sha256: candidateKeySha256,
+      grain_resolved_count: 0,
+      source_gap_candidate_key_sha256: candidateKeySha256,
+      source_gap_overlay_count: normalized.length,
+    },
+    verdict_distribution: verdictDistribution,
+    preservation_invariants: {
+      absence_projection_prohibited_for_unresolved_grain: true,
+      accepted_prior_decisions_byte_identical: true,
+      correction_state_unchanged: true,
+      cross_product_authorization_unchanged: true,
+      occurrence_decisions_unchanged: true,
+      preserved_siblings_byte_identical: true,
+      source_gap_receipt_strict_and_nonauthorizing: true,
+      study_authorization_unchanged: true,
+      treatment_ontology_unchanged: true,
+    },
+    authorizes_decision_persistence: true,
+    authorizes_occurrence: false,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+    authorizes_ontology: false,
+    authorizes_corrections: false,
+  };
+  writeStableJson(join(root, paths.acceptance), acceptance);
+  const overlay: MemberSourceGapOverlay = {
     schema_version: 1,
     contract_id: MEMBER_SOURCE_GAP_OVERLAY_CONTRACT_ID,
     overlay_id: "fixture-source-gap-overlay",
     source_receipt: {
-      path: "receipts/source-gaps.json",
-      sha256: "fixture-source-gap-receipt-sha256",
-      receipt_id: "fixture-source-gap-receipt",
+      ...sourceReceiptRef,
+      receipt_id: receipt.receipt_id,
     },
     owner_acceptance: {
-      path: "acceptance.json",
-      sha256: "fixture-owner-acceptance-sha256",
+      path: paths.acceptance,
+      sha256: fileSha256(join(root, paths.acceptance)),
     },
-    accepted_at: "2026-07-24T20:45:00Z",
-    accepted_by: "fixture-owner",
-    entries: input.map(({ target, surfaces, missingRoles }) => ({
-      candidate_key:
-        `${target.occurrence_id}\0${target.route_record_id}\0` +
-        target.treatment_record_id,
+    accepted_at: acceptance.accepted_at,
+    accepted_by: acceptance.accepted_by,
+    entries: normalized.map(({ target, candidateKey, surfaces, missingRoles }) => ({
+      candidate_key: candidateKey,
       occurrence_id: target.occurrence_id,
       route_record_id: target.route_record_id,
       treatment_record_id: target.treatment_record_id,
-      blocked_surfaces: [...surfaces].sort(),
-      missing_roles: [...missingRoles].sort(),
-      verdict: `blocked_upstream:${[...missingRoles].sort().join("+")}`,
+      blocked_surfaces: surfaces,
+      missing_roles: missingRoles,
+      verdict: `blocked_upstream:${missingRoles.join("+")}`,
       source_statement_evidence_id: "source#block",
     })),
     authorizes_decision_persistence: false,
     authorizes_occurrence: false,
     authorizes_study: false,
     authorizes_cross_product: false,
+  };
+  writeStableJson(join(root, paths.overlay), overlay);
+  return {
+    root,
+    overlayDir: join(root, "overlays"),
+    paths,
+    receipt,
+    evidence,
+    acceptance,
+    overlay,
   };
 }
 
@@ -268,7 +515,7 @@ describe("member extent and grain ledgers", () => {
         missing_roles: ["pattern_identity"],
       },
     });
-    const overlay = sourceGapOverlay([
+    const fixture = sourceGapFixture([
       {
         target: unresolved,
         surfaces: ["member_extent", "member_grain"],
@@ -280,11 +527,15 @@ describe("member extent and grain ledgers", () => {
         missingRoles: ["pattern_identity"],
       },
     ]);
+    const [overlay] = loadMemberSourceGapOverlays(
+      [fixture.overlayDir],
+      fixture.root,
+    );
     const result = buildMemberExtentLedgers({
       companionRows: [unresolved, spatialOnly],
       extentDecisions: [extentDecision],
       grainDecisions: [unresolvedGrain],
-      sourceGapOverlays: [overlay],
+      sourceGapOverlays: [overlay!],
     });
     expect(result.extentRows.find((entry) =>
       entry.treatment_record_id === unresolved.treatment_record_id
@@ -312,31 +563,279 @@ describe("member extent and grain ledgers", () => {
 
   it("loads only canonical, nonauthorizing source-gap overlays", () => {
     const target = row("source-gap-loader");
-    const dir = mkdtempSync(join(tmpdir(), "member-source-gaps-"));
-    const artifact = sourceGapOverlay([{
+    const fixture = sourceGapFixture([{
       target,
       surfaces: ["member_extent", "member_grain"],
       missingRoles: ["reference_snapshot"],
     }]);
-    writeFileSync(join(dir, "overlay.json"), JSON.stringify(artifact));
-    expect(loadMemberSourceGapOverlays([dir])).toEqual([artifact]);
-    writeFileSync(join(dir, "overlay.json"), JSON.stringify({
-      ...artifact,
+    expect(loadMemberSourceGapOverlays(
+      [fixture.overlayDir],
+      fixture.root,
+    )).toEqual([fixture.overlay]);
+    writeStableJson(join(fixture.root, fixture.paths.overlay), {
+      ...fixture.overlay,
       authorizes_study: true,
-    }));
-    expect(() => loadMemberSourceGapOverlays([dir])).toThrow(
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [fixture.overlayDir],
+      fixture.root,
+    )).toThrow(
       "cannot carry authority",
     );
-    writeFileSync(join(dir, "overlay.json"), JSON.stringify({
-      ...artifact,
-      entries: artifact.entries.map((entry) => ({
+    writeStableJson(join(fixture.root, fixture.paths.overlay), {
+      ...fixture.overlay,
+      entries: fixture.overlay.entries.map((entry) => ({
         ...entry,
         verdict: "blocked_upstream:wrong_reason",
       })),
-    }));
-    expect(() => loadMemberSourceGapOverlays([dir])).toThrow(
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [fixture.overlayDir],
+      fixture.root,
+    )).toThrow(
       "noncanonical blocked reason",
     );
+  });
+
+  it("rejects mismatched, missing, orphan, and duplicate overlay coverage", () => {
+    const inputs: SourceGapFixtureInput = [
+      {
+        target: row("source-gap-a"),
+        surfaces: ["member_extent", "member_grain"],
+        missingRoles: ["reference_snapshot"],
+      },
+      {
+        target: row("source-gap-b", "Q2"),
+        surfaces: ["member_grain"],
+        missingRoles: ["pattern_identity"],
+      },
+    ];
+    const mismatch = sourceGapFixture(inputs);
+    writeStableJson(join(mismatch.root, mismatch.paths.overlay), {
+      ...mismatch.overlay,
+      entries: mismatch.overlay.entries.map((entry, index) =>
+        index === 0
+          ? {
+            ...entry,
+            missing_roles: ["forged_gap"],
+            verdict: "blocked_upstream:forged_gap",
+          }
+          : entry
+      ),
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [mismatch.overlayDir],
+      mismatch.root,
+    )).toThrow("does not exactly match receipt candidate");
+
+    const missing = sourceGapFixture(inputs);
+    writeStableJson(join(missing.root, missing.paths.overlay), {
+      ...missing.overlay,
+      entries: missing.overlay.entries.slice(1),
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [missing.overlayDir],
+      missing.root,
+    )).toThrow("acceptance does not pin the exact overlay scope");
+
+    const duplicate = sourceGapFixture(inputs);
+    writeStableJson(join(duplicate.root, duplicate.paths.overlay), {
+      ...duplicate.overlay,
+      entries: [
+        duplicate.overlay.entries[0],
+        duplicate.overlay.entries[0],
+      ],
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [duplicate.overlayDir],
+      duplicate.root,
+    )).toThrow("keys must be unique and sorted");
+
+    const orphan = sourceGapFixture(inputs);
+    const forgedTarget = row("forged-orphan", "Q9");
+    const forgedKey =
+      `${forgedTarget.occurrence_id}\0${forgedTarget.route_record_id}\0` +
+      forgedTarget.treatment_record_id;
+    writeStableJson(join(orphan.root, orphan.paths.overlay), {
+      ...orphan.overlay,
+      entries: orphan.overlay.entries.map((entry, index) =>
+        index === 0
+          ? {
+            ...entry,
+            candidate_key: forgedKey,
+            occurrence_id: forgedTarget.occurrence_id,
+            route_record_id: forgedTarget.route_record_id,
+            treatment_record_id: forgedTarget.treatment_record_id,
+          }
+          : entry
+      ).sort((left, right) =>
+        left.candidate_key.localeCompare(right.candidate_key)
+      ),
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [orphan.overlayDir],
+      orphan.root,
+    )).toThrow("acceptance does not pin the exact overlay scope");
+  });
+
+  it("strict-decodes receipt and acceptance provenance", () => {
+    const input: SourceGapFixtureInput = [{
+      target: row("source-gap-strict"),
+      surfaces: ["member_extent", "member_grain"],
+      missingRoles: ["reference_snapshot"],
+    }];
+    const unknownReceipt = sourceGapFixture(input);
+    const receipt = {
+      ...unknownReceipt.receipt,
+      forged_unknown_field: true,
+    };
+    writeStableJson(
+      join(unknownReceipt.root, unknownReceipt.paths.receipt),
+      receipt,
+    );
+    const receiptSha = fileSha256(
+      join(unknownReceipt.root, unknownReceipt.paths.receipt),
+    );
+    const evidence = {
+      ...unknownReceipt.evidence,
+      source_gap_block_receipt: {
+        ...unknownReceipt.evidence.source_gap_block_receipt,
+        sha256: receiptSha,
+      },
+    };
+    writeStableJson(
+      join(unknownReceipt.root, unknownReceipt.paths.evidence),
+      evidence,
+    );
+    const acceptance = {
+      ...unknownReceipt.acceptance,
+      artifacts: {
+        ...unknownReceipt.acceptance.artifacts,
+        evidence: {
+          ...unknownReceipt.acceptance.artifacts.evidence,
+          sha256: fileSha256(
+            join(unknownReceipt.root, unknownReceipt.paths.evidence),
+          ),
+        },
+        source_gap_block_receipt: {
+          ...unknownReceipt.acceptance.artifacts.source_gap_block_receipt,
+          sha256: receiptSha,
+        },
+      },
+    };
+    writeStableJson(
+      join(unknownReceipt.root, unknownReceipt.paths.acceptance),
+      acceptance,
+    );
+    writeStableJson(
+      join(unknownReceipt.root, unknownReceipt.paths.overlay),
+      {
+        ...unknownReceipt.overlay,
+        source_receipt: {
+          ...unknownReceipt.overlay.source_receipt,
+          sha256: receiptSha,
+        },
+        owner_acceptance: {
+          ...unknownReceipt.overlay.owner_acceptance,
+          sha256: fileSha256(
+            join(unknownReceipt.root, unknownReceipt.paths.acceptance),
+          ),
+        },
+      },
+    );
+    expect(() => loadMemberSourceGapOverlays(
+      [unknownReceipt.overlayDir],
+      unknownReceipt.root,
+    )).toThrow("unknown field(s): forged_unknown_field");
+
+    const authority = sourceGapFixture(input);
+    writeStableJson(join(authority.root, authority.paths.acceptance), {
+      ...authority.acceptance,
+      authorizes_occurrence: true,
+    });
+    writeStableJson(join(authority.root, authority.paths.overlay), {
+      ...authority.overlay,
+      owner_acceptance: {
+        ...authority.overlay.owner_acceptance,
+        sha256: fileSha256(
+          join(authority.root, authority.paths.acceptance),
+        ),
+      },
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [authority.overlayDir],
+      authority.root,
+    )).toThrow("must authorize only decision persistence");
+
+    const unknownAcceptance = sourceGapFixture(input);
+    writeStableJson(
+      join(unknownAcceptance.root, unknownAcceptance.paths.acceptance),
+      {
+        ...unknownAcceptance.acceptance,
+        forged_unknown_field: true,
+      },
+    );
+    writeStableJson(
+      join(unknownAcceptance.root, unknownAcceptance.paths.overlay),
+      {
+        ...unknownAcceptance.overlay,
+        owner_acceptance: {
+          ...unknownAcceptance.overlay.owner_acceptance,
+          sha256: fileSha256(join(
+            unknownAcceptance.root,
+            unknownAcceptance.paths.acceptance,
+          )),
+        },
+      },
+    );
+    expect(() => loadMemberSourceGapOverlays(
+      [unknownAcceptance.overlayDir],
+      unknownAcceptance.root,
+    )).toThrow("unknown field(s): forged_unknown_field");
+  });
+
+  it("rejects forged provenance paths, hashes, and symlinks", () => {
+    const input: SourceGapFixtureInput = [{
+      target: row("source-gap-files"),
+      surfaces: ["member_extent", "member_grain"],
+      missingRoles: ["reference_snapshot"],
+    }];
+    const forgedHash = sourceGapFixture(input);
+    writeStableJson(join(forgedHash.root, forgedHash.paths.overlay), {
+      ...forgedHash.overlay,
+      source_receipt: {
+        ...forgedHash.overlay.source_receipt,
+        sha256: "0".repeat(64),
+      },
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [forgedHash.overlayDir],
+      forgedHash.root,
+    )).toThrow("pinned SHA-256 mismatch");
+
+    const forgedPath = sourceGapFixture(input);
+    writeStableJson(join(forgedPath.root, forgedPath.paths.overlay), {
+      ...forgedPath.overlay,
+      source_receipt: {
+        ...forgedPath.overlay.source_receipt,
+        path: "../outside-source-gap.json",
+      },
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [forgedPath.overlayDir],
+      forgedPath.root,
+    )).toThrow("expected canonical path under repository root");
+
+    const symlink = sourceGapFixture(input);
+    const acceptancePath = join(symlink.root, symlink.paths.acceptance);
+    const targetPath = join(symlink.root, "review/acceptance-target.json");
+    writeFileSync(targetPath, readFileSync(acceptancePath));
+    unlinkSync(acceptancePath);
+    symlinkSync("acceptance-target.json", acceptancePath);
+    expect(() => loadMemberSourceGapOverlays(
+      [symlink.overlayDir],
+      symlink.root,
+    )).toThrow("must be a normal non-symlink file");
   });
 
   it("loads single, array, and decisions-wrapper packages and rejects duplicate keys", () => {
