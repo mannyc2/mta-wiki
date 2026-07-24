@@ -8,6 +8,13 @@ import type {
   MemberGrainLedgerRow,
 } from "../../src/quality/member-extent-ledger";
 import {
+  PLAN040_PACKAGE_10A_REVIEWED_COMMIT,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10A_ACCEPTANCE_PATH,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10A_GATE_PATH,
+  buildPlan040Package10aGateAndAcceptance,
+  validatePlan040Package10aGateAndAcceptance,
+} from "../../src/quality/plan040-qbnr-service-pattern-package10a-closeout";
+import {
   PLAN040_PACKAGE_10A_ACCEPTED_BUSCO_FEEDS,
   PLAN040_PACKAGE_10A_CANDIDATES,
   PLAN040_PACKAGE_10A_CANDIDATE_KEY_SHA256,
@@ -32,6 +39,11 @@ const EVIDENCE_SHA256 =
   "2d0bb750a8ecec2dcd2f686085669007696f96476aa3fe6af1d1c4156923acc6";
 const DRAFT_SHA256 =
   "e7b2c7b030d1a4a992f55b94a80e0f9c236fa284c9482a5ee50935c0d0c2814e";
+const GATE_SHA256 =
+  "d839d7c21e14af139f26414967291f6a8cfe1aa1d3546a0aa789e678b0f17a4b";
+const ACCEPTANCE_SHA256 =
+  "4762b8231d581a4b9a89028029458a796076706c5f51e40726978ff5bcbe96f1";
+const ACCEPTED_AT = "2026-07-24T12:48:03Z";
 
 type Package10aEvidence = {
   candidate_count: 4;
@@ -134,6 +146,8 @@ describe("Plan 040 QBNR Package 10A accelerated absence freeze", () => {
     ).toEqual([
       "plan-040-qbnr-service-pattern-package-10a-evidence-draft-v1.json",
       "plan-040-qbnr-service-pattern-package-10a-evidence-v1.json",
+      "plan-040-qbnr-service-pattern-package-10a-independent-review-gate-v1.json",
+      "plan-040-qbnr-service-pattern-package-10a-owner-acceptance-v1.json",
     ]);
   });
 
@@ -437,5 +451,85 @@ describe("Plan 040 QBNR Package 10A accelerated absence freeze", () => {
       expect(candidate.authorizes_cross_product).toBe(false);
       expect(candidate.authorizes_decision_persistence).toBe(false);
     }
+  });
+
+  it("freezes one approved independent review and exact owner acceptance", () => {
+    const draft = readJson<Plan040Package10aDraft>(draftPath);
+    const gate = readJson<unknown>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10A_GATE_PATH,
+    );
+    const acceptance = readJson<unknown>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10A_ACCEPTANCE_PATH,
+    );
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10A_GATE_PATH,
+    ))).toBe(GATE_SHA256);
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10A_ACCEPTANCE_PATH,
+    ))).toBe(ACCEPTANCE_SHA256);
+    expect(validatePlan040Package10aGateAndAcceptance({
+      draft,
+      gate,
+      acceptance,
+      acceptedAt: ACCEPTED_AT,
+    })).toEqual({
+      candidate_count: 4,
+      positive_candidate_count: 0,
+      unresolved_candidate_count: 4,
+      authorized_extent_decision_count: 0,
+      authorized_grain_decision_count: 0,
+      authorized_absence_candidate_count: 4,
+      persisted_decision_count: 0,
+      persisted_absence_receipt_count: 0,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    const built = buildPlan040Package10aGateAndAcceptance({
+      draft,
+      acceptedAt: ACCEPTED_AT,
+    });
+    expect(built.gate).toEqual(gate);
+    expect(built.acceptance).toEqual(acceptance);
+    expect(built.gate.reviewer_result).toEqual({
+      reviewer_id: "main_advisor",
+      role: "independent_fail_closed_evidence_review",
+      reviewed_commit: PLAN040_PACKAGE_10A_REVIEWED_COMMIT,
+      verdict: "APPROVE",
+    });
+    expect(built.gate.authorizes_reviewed_absence_receipt_persistence)
+      .toBe(false);
+    expect(built.acceptance.authorized_positive_persistence).toEqual({
+      candidate_count: 0,
+      candidate_keys: [],
+      extent_decision_ids: [],
+      grain_decision_ids: [],
+    });
+    expect(
+      built.acceptance.authorized_reviewed_absence_receipt,
+    ).toEqual(expect.objectContaining({
+      candidate_count: 4,
+      candidate_key_sha256:
+        PLAN040_PACKAGE_10A_CANDIDATE_KEY_SHA256,
+      surfaces: ["member_extent", "member_grain"],
+    }));
+    expect(
+      built.acceptance.authorizes_reviewed_absence_receipt_persistence,
+    ).toBe(true);
+    expect(built.acceptance.authorizes_decision_persistence).toBe(false);
+    expect(built.acceptance.authorizes_occurrence).toBe(false);
+    expect(built.acceptance.authorizes_study).toBe(false);
+    expect(built.acceptance.authorizes_cross_product).toBe(false);
+
+    const mutatedGate = clone(built.gate);
+    mutatedGate.reviewer_result.verdict = "REFUTE" as "APPROVE";
+    expect(() =>
+      validatePlan040Package10aGateAndAcceptance({
+        draft,
+        gate: mutatedGate,
+        acceptance,
+        acceptedAt: ACCEPTED_AT,
+      })
+    ).toThrow(/gate drifted/u);
   });
 });
