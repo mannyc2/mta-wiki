@@ -308,11 +308,13 @@ const comparisonSpecs = [
     predecessor_route_id: "Q110",
     direction_id: "1",
     named_street_scope: "Hempstead Av",
+    boundary_rationale:
+      "Stop 501962 JAMAICA AV/212 PL is the exact shared immediately-after-Hempstead boundary; it is not claimed as Hempstead Av interior.",
     treatment_record_id:
       "treatment_q82-q110-hempstead-replacement-2025",
     source_evidence_id:
       "mta_queens_bus_network_redesign_service_changes#p001_b0079",
-    boundary_stop_ids: ["500123", "552252"],
+    boundary_stop_ids: ["500123", "501962"],
     expected_comparison_id:
       PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_1,
   },
@@ -392,6 +394,9 @@ const comparisonInventories = comparisonSpecs.map((spec) => {
     !selectedIds.has(stopId));
   const selectedPayload = {
     named_street_scope: spec.named_street_scope,
+    ...("boundary_rationale" in spec
+      ? { boundary_rationale: spec.boundary_rationale }
+      : {}),
     source_evidence_id: spec.source_evidence_id,
     boundary_stop_ids: [...spec.boundary_stop_ids],
     boundary_stop_evidence: spec.boundary_stop_ids.map((stopId) => ({
@@ -458,7 +463,11 @@ for (const pin of Object.values(PLAN040_PACKAGE_10B_COMPARISON_PINS)) {
     canonical.selected_candidate_slice.comparison_sha256 !==
       pin.selected_candidate_slice_sha256
   ) {
-    throw new Error(`${pin.comparison_id}: comparison pin drifted`);
+    throw new Error(
+      `${pin.comparison_id}: comparison pin drifted ` +
+      `(full=${canonical?.full_chain_comparison_sha256 ?? "missing"} ` +
+      `selected=${canonical?.selected_candidate_slice.comparison_sha256 ?? "missing"})`,
+    );
   }
 }
 
@@ -576,7 +585,7 @@ const comparisonReceipt = {
       before_stop_ids: ["552250"],
       after_stop_ids: ["552727"],
       context:
-        "Q110 direction 1 immediately outside selected Hempstead Av slice",
+        "Q110 direction 1 selected Hempstead Av transition slice before the exact shared 501962 boundary",
       status: "unresolved_no_equivalence_authorized",
     },
     {
@@ -614,7 +623,10 @@ if (
   comparisonReceiptRef.sha256 !==
     PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256
 ) {
-  throw new Error("Package 10B comparison receipt bytes drifted");
+  throw new Error(
+    "Package 10B comparison receipt bytes drifted " +
+    `(actual=${comparisonReceiptRef.sha256})`,
+  );
 }
 
 const binding = (
@@ -769,6 +781,9 @@ function q82Candidate(input: {
     missing_roles: [],
     rationale: input.resolution === "route_wide"
       ? "The first-party statement defines the new Q82 as the Belmont Park-to-Jamaica connection; the route component is therefore route-wide while service grain remains limited to exact launch-weekend patterns."
+      : input.treatmentRecordId ===
+          "treatment_q82-q110-hempstead-replacement-2025"
+      ? "The first-party Hempstead Av replacement statement is bound through exact shared stop 501962 immediately after the named street segment. Stop 501962 is a boundary, not claimed as Hempstead Av interior; changed stop identifiers remain unresolved."
       : "The first-party replacement statement is bound only to shared stop identifiers observed in the exact predecessor and successor evidence. Adjacent or skipped stop identities are not inferred.",
     reviewed_at: reviewedAt,
     reviewed_by: reviewedBy,
@@ -793,7 +808,10 @@ function q82Candidate(input: {
     lineage_segments: input.lineage,
     evidence_bindings: evidenceBindings,
     rationale: input.predecessor
-      ? "The two exact Q82 launch patterns are retained, with predecessor lineage limited to shared stop identifiers and exact direction-specific bounds."
+      ? input.treatmentRecordId ===
+          "treatment_q82-q110-hempstead-replacement-2025"
+        ? "The two exact Q82 launch patterns are retained; direction 1 runs through changed Hempstead stop identifiers to exact shared boundary 501962, which is not claimed as Hempstead interior."
+        : "The two exact Q82 launch patterns are retained, with predecessor lineage limited to shared stop identifiers and exact direction-specific bounds."
       : "The two exact Q82 launch patterns are retained as the only structured service selectors.",
     reviewed_at: reviewedAt,
     reviewed_by: reviewedBy,
@@ -848,8 +866,8 @@ const q110Lineage = [
     predecessor_gtfs_route_id: "Q110",
     successor_gtfs_route_id: "Q82",
     direction: "1",
-    boundary_stop_ids: ["500123", "552252"] as [string, string],
-    shared_stop_ids: ["500123", "500125", "552252"],
+    boundary_stop_ids: ["500123", "501962"] as [string, string],
+    shared_stop_ids: ["500123", "500125", "501962", "552252"],
   },
 ];
 const q36Lineage = [
@@ -897,7 +915,9 @@ const candidates: Plan040Package10bCandidateEvidence[] = [
       identity_namespace: "source_literal_v1" as const,
       identifiers: segment.shared_stop_ids,
       description:
-        `Direction ${segment.direction} exact shared Q110/Q82 stop set bounded by ${segment.boundary_stop_ids.join(" and ")}.`,
+        segment.direction === "1"
+          ? "Direction 1 exact shared Q110/Q82 stop set bounded by 500123 and 501962; 501962 is the immediately-after-Hempstead boundary, not claimed as Hempstead interior."
+          : `Direction ${segment.direction} exact shared Q110/Q82 stop set bounded by ${segment.boundary_stop_ids.join(" and ")}.`,
     })),
     predecessor: {
       route_id: "Q110",

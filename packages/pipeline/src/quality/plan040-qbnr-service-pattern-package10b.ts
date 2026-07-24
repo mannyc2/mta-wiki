@@ -146,7 +146,7 @@ export const PLAN040_PACKAGE_10B_COMPARISON_PINS = {
     full_chain_comparison_sha256:
       "4242e93389b40906827a637d5f9fdae831e3adc3afa7efd6002f52cfd47b593c",
     selected_candidate_slice_sha256:
-      "8c7d31d19f49588636c07590fadd3a97a96bf8731fb6ef8f14a92793fea1725f",
+      "6ee0a21a154389602f078cfbe102db89a9f1fa40693b52a421a3d9a439faeef1",
   },
   q36_direction_0: {
     comparison_id: PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_0,
@@ -165,7 +165,7 @@ export const PLAN040_PACKAGE_10B_COMPARISON_PINS = {
 } as const;
 
 export const PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256 =
-  "bdc2dc5a9ac8aa1e5fa37d7c07de316cc2dc85030766ff2ef2be66236a93e44a" as const;
+  "09475af217f46307c25ada24ff0fcdc98b2f24e999f956586b6d02df041d7aec" as const;
 
 export const PLAN040_PACKAGE_10B_ACQUISITION_PINS = {
   historical_full_stop_acquisition: {
@@ -408,6 +408,7 @@ function validateQ82Positive(
       full_chain_comparison: JsonValue;
       full_chain_comparison_sha256: string;
       selected_candidate_slice: {
+        boundary_rationale?: string;
         boundary_stop_ids: string[];
         identical_stop_id_equivalences: Array<{
           before_stop_id: string;
@@ -501,6 +502,34 @@ function validateQ82Positive(
         `${stableJson(selectedCandidateSlice as unknown as JsonValue)}\n`,
       );
   });
+  const q110Direction1Lineage = grain.lineage_segments.find((segment) =>
+    segment.predecessor_gtfs_route_id === "Q110" &&
+    segment.direction === "1");
+  const q110Direction1Comparison = comparisons.find((row) =>
+    row.comparison_id ===
+      PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_1);
+  const strictQ110Direction1BoundaryDrifted = replacementRoute === "q110" &&
+    (
+      !sameJson(
+        q110Direction1Lineage?.boundary_stop_ids,
+        ["500123", "501962"],
+      ) ||
+      !sameJson(
+        q110Direction1Lineage?.shared_stop_ids,
+        ["500123", "500125", "501962", "552252"],
+      ) ||
+      !extent.components.some((component) =>
+        sameJson(
+          component.identifiers,
+          ["500123", "500125", "501962", "552252"],
+        )) ||
+      q110Direction1Comparison?.selected_candidate_slice
+          .boundary_rationale !==
+        "Stop 501962 JAMAICA AV/212 PL is the exact shared immediately-after-Hempstead boundary; it is not claimed as Hempstead Av interior." ||
+      !extent.rationale.includes(
+        "501962 is a boundary, not claimed as Hempstead Av interior",
+      )
+    );
   const bindingIds = extent.evidence_bindings.map((binding) =>
     binding.evidence_id);
   if (
@@ -541,6 +570,7 @@ function validateQ82Positive(
         row.selected_candidate_slice.comparison_sha256 ===
           pin.selected_candidate_slice_sha256)) ||
     comparisonContentDrifted ||
+    strictQ110Direction1BoundaryDrifted ||
     comparisons.some((row) =>
       row.selected_candidate_slice.boundary_stop_ids.length !== 2 ||
       row.selected_candidate_slice.identical_stop_id_equivalences.length <

@@ -48,9 +48,9 @@ const comparisonReceiptPath =
   `${repoRoot}/data/quality/acquisition/receipts/member-extent/` +
   "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json";
 const EVIDENCE_SHA256 =
-  "7345130b133681de5da7b7ad45feb7edd2ddd62dbaa5833328bb516bd1dc5a4f";
+  "d0e41e3368d0eae0cc8425ad4f354aaae75bf678c5c0036d985913d786a75b2a";
 const DRAFT_SHA256 =
-  "171f2735e36033d0a9464b4019c46f61e042143478f3b4bb8d3fd664ee495b24";
+  "f65c3827d9adedfc6a537e19d48835934f31c1b87ea2a373d657316a85981f83";
 
 type Package10bEvidence = {
   candidate_count: 4;
@@ -118,6 +118,7 @@ type FullStopComparisonReceipt = {
   full_chain_comparison_sha256: string;
   selected_candidate_slice: {
     named_street_scope: string;
+    boundary_rationale?: string;
     source_evidence_id: string;
     boundary_stop_ids: string[];
     boundary_stop_evidence: Array<{
@@ -585,11 +586,13 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
         outside: ["904250"],
       },
       [PLAN040_PACKAGE_10B_COMPARISON_IDS.q110_direction_1]: {
-        bounds: ["500123", "552252"],
-        before: ["500123", "500124", "500125", "552252"],
-        after: ["500123", "500125", "552252"],
-        identical: ["500123", "500125", "552252"],
-        outside: ["553437", "501962"],
+        bounds: ["500123", "501962"],
+        before: [
+          "500123", "500124", "500125", "552252", "552250", "501962",
+        ],
+        after: ["500123", "500125", "552252", "552727", "501962"],
+        identical: ["500123", "500125", "552252", "501962"],
+        outside: ["553437"],
       },
       [PLAN040_PACKAGE_10B_COMPARISON_IDS.q36_direction_0]: {
         bounds: ["500022", "501927"],
@@ -634,20 +637,18 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
           after_stop_name: expect.stringContaining("HEMPSTEAD"),
         }),
         expect.objectContaining({
-          stop_id: "552252",
-          before_stop_name: expect.stringContaining("HEMPSTEAD"),
-          after_stop_name: expect.stringContaining("HEMPSTEAD"),
+          stop_id: "501962",
+          before_stop_name: "JAMAICA AV/212 PL",
+          after_stop_name: "JAMAICA AV/212 PL",
         }),
       ]);
+    expect(q110Direction1.selected_candidate_slice.boundary_rationale).toBe(
+      "Stop 501962 JAMAICA AV/212 PL is the exact shared immediately-after-Hempstead boundary; it is not claimed as Hempstead Av interior.",
+    );
     expect(
       q110Direction1.selected_candidate_slice
         .shared_stops_outside_candidate_slice,
-    ).toContainEqual(expect.objectContaining({
-      stop_id: "501962",
-      before_stop_name: "JAMAICA AV/212 PL",
-      after_stop_name: "JAMAICA AV/212 PL",
-      exclusion_reason: "outside_source_named_hempstead_av_candidate_slice",
-    }));
+    ).not.toContainEqual(expect.objectContaining({ stop_id: "501962" }));
     expect(receipt.changed_id_guesses).toEqual([
       expect.objectContaining({
         before_stop_ids: ["500120", "500121"],
@@ -843,10 +844,21 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
         predecessor_gtfs_route_id: "Q110",
         successor_gtfs_route_id: "Q82",
         direction: "1",
-        boundary_stop_ids: ["500123", "552252"],
-        shared_stop_ids: ["500123", "500125", "552252"],
+        boundary_stop_ids: ["500123", "501962"],
+        shared_stop_ids: ["500123", "500125", "501962", "552252"],
       },
     ]);
+    expect(q82[1]!.proposed_extent_decision!.components[1]).toEqual(
+      expect.objectContaining({
+        identifiers: ["500123", "500125", "501962", "552252"],
+        description: expect.stringContaining(
+          "immediately-after-Hempstead boundary, not claimed as Hempstead interior",
+        ),
+      }),
+    );
+    expect(q82[1]!.proposed_extent_decision!.rationale).toContain(
+      "Stop 501962 is a boundary, not claimed as Hempstead Av interior",
+    );
     const expectedReplacementBindings = [
       {
         candidate: q82[1]!,
@@ -1069,6 +1081,15 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     expect(() =>
       buildPlan040Package10bDraft(
         inputFor(evidence, comparison),
+      )
+    ).toThrow(/predecessor comparator/u);
+
+    const boundary = clone(evidence.candidates);
+    boundary[1]!.proposed_grain_decision!.lineage_segments[1]!
+      .boundary_stop_ids = ["500123", "552252"];
+    expect(() =>
+      buildPlan040Package10bDraft(
+        inputFor(evidence, boundary),
       )
     ).toThrow(/predecessor comparator/u);
 
