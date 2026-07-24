@@ -14,6 +14,9 @@ import {
   writePlan040ExemplarDecisionDraft,
 } from "@mta-wiki/pipeline/quality/plan-040-exemplar-decisions";
 import {
+  acceptPlan040Package2DecisionPackage,
+} from "@mta-wiki/pipeline/quality/plan040-qbnr-stop-removal-package2";
+import {
   loadRelationshipCompletenessArtifacts,
   syncRelationshipCompletenessToCanonicalDb,
   writeRelationshipCompletenessArtifacts,
@@ -77,6 +80,18 @@ const plan040ExemplarAccept: CommandHandler = () => {
   console.log(`Extent SHA-256: ${result.extentDecisionSha256}; decisions: ${result.extentDecisionCount}`);
   console.log(`Accepted Plan 040 grain decisions: ${relative(repoRoot, result.grainDecisionPath)}`);
   console.log(`Grain SHA-256: ${result.grainDecisionSha256}; decisions: ${result.grainDecisionCount}`);
+};
+
+const plan040Package2Accept: CommandHandler = () => {
+  const result = acceptPlan040Package2DecisionPackage();
+  console.log(`Accepted Plan 040 Package 2 extent decisions: ${relative(repoRoot, result.extentDecisionPath)}`);
+  console.log(`Extent SHA-256: ${result.extentDecisionSha256}; decisions: ${result.extentDecisionCount}`);
+  console.log(`Accepted Plan 040 Package 2 grain decisions: ${relative(repoRoot, result.grainDecisionPath)}`);
+  console.log(`Grain SHA-256: ${result.grainDecisionSha256}; decisions: ${result.grainDecisionCount}`);
+  console.log(`Accepted Plan 040 Package 2 absence receipt: ${relative(repoRoot, result.absenceReceiptPath)}`);
+  console.log(
+    `Absence SHA-256: ${result.absenceReceiptSha256}; candidates: ${result.absenceCandidateCount}`,
+  );
 };
 
 const busLaneIdentityLedger: CommandHandler = () => {
@@ -300,6 +315,7 @@ export const qualityCommands = {
   "member-extent-ledger": memberExtentLedger,
   "plan-040-exemplar-accept": plan040ExemplarAccept,
   "plan-040-exemplar-draft": plan040ExemplarDraft,
+  "plan-040-package-2-accept": plan040Package2Accept,
   "operational-coverage": operationalCoverage,
   "coverage-matrix": operationalCoverage,
   "forecast-frontier": forecastFrontier,

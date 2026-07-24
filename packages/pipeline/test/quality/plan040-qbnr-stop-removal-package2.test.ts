@@ -1,22 +1,37 @@
 import { describe, expect, it } from "bun:test";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
+import { dirname } from "node:path";
 import { repoRoot } from "../../../core/src/paths";
+import { stableJson } from "../../../db/src/stable-json";
 import type { JsonValue } from "../../../db/src/types";
 import type { HistoricalFullStopPattern } from "../../src/reference/historical-full-stop";
+import { loadMemberGrainDecisions } from "../../src/quality/member-grain-decisions";
+import {
+  loadMemberExtentAbsenceReceipts,
+  loadMemberExtentDecisions,
+} from "../../src/quality/member-extent-ledger";
 import type {
   Plan040AcquisitionCandidate,
 } from "../../src/quality/plan040-qbnr-stop-removal-acquisition";
 import {
+  acceptPlan040Package2DecisionPackage,
+  buildPlan040Package2AcceptedArtifacts,
   buildPlan040Package2CandidateEvidence,
   buildPlan040Package2GateAndAcceptance,
   extractPlan040Package2PdfStatements,
   normalizePlan040Package2StopName,
+  PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_ABSENCE_RECEIPT_PATH,
+  PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_ACCEPTANCE_PATH,
+  PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_EXTENT_DECISIONS_PATH,
+  PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_GATE_PATH,
+  PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_GRAIN_DECISIONS_PATH,
   plan040Package2ReplayHash,
   type Plan040Package2Draft,
   type Plan040Package2ScheduleSlice,
   validatePlan040Package2GateAndAcceptance,
 } from "../../src/quality/plan040-qbnr-stop-removal-package2";
+import { extentDecisionKey } from "../../src/quality/study-readiness-v1";
 
 const artifactPath =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
@@ -24,6 +39,19 @@ const artifactPath =
 const readDraft = (): Plan040Package2Draft =>
   JSON.parse(readFileSync(artifactPath, "utf8")) as Plan040Package2Draft;
 type GateAndAcceptance = ReturnType<typeof buildPlan040Package2GateAndAcceptance>;
+
+function readJsonl(path: string): any[] {
+  return readFileSync(path, "utf8").trim().split("\n").map((line) => JSON.parse(line));
+}
+
+function distribution(rows: any[], field: string): Record<string, number> {
+  return Object.fromEntries(
+    [...new Set(rows.map((row) => String(row[field])))].sort().map((value) => [
+      value,
+      rows.filter((row) => row[field] === value).length,
+    ]),
+  );
+}
 
 function pattern(
   snapshotId: string,
@@ -425,5 +453,191 @@ describe("Plan 040 QBNR Package 2 evidence-only draft", () => {
       full_route_pdf_gtfs_removed_stop_set_mismatch_nonexclusive: 24,
       full_route_renamed_or_replacement_stop_nonexclusive: 18,
     });
+  });
+
+  it("round-trips the owner-accepted QM12 decisions and exact 23-key absence receipt", () => {
+    const gate = JSON.parse(
+      readFileSync(PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_GATE_PATH, "utf8"),
+    ) as GateAndAcceptance["gate"];
+    const acceptance = JSON.parse(
+      readFileSync(PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_ACCEPTANCE_PATH, "utf8"),
+    ) as GateAndAcceptance["acceptance"];
+    const accepted = buildPlan040Package2AcceptedArtifacts({
+      draft: readDraft(),
+      gate,
+      acceptance,
+    });
+    expect(accepted.extentDecisions).toHaveLength(1);
+    expect(accepted.extentDecisions[0]).toMatchObject({
+      decision_id: "member-extent-review:plan040-package2-qm12-stop-removal",
+      resolution: "stop_set",
+      reviewed_at: "2026-07-24T03:54:20Z",
+      reviewed_by: "codex-owner-delegate",
+    });
+    expect(accepted.grainDecisions).toHaveLength(1);
+    expect(accepted.grainDecisions[0]).toMatchObject({
+      decision_id: "member-grain-review:plan040-package2-qm12-stop-removal",
+      member_extent_decision_id:
+        "member-extent-review:plan040-package2-qm12-stop-removal",
+      service_scope: {
+        kind: "trip_subset",
+        directions: ["0", "1"],
+        periods: ["am_peak", "midday", "pm_peak"],
+      },
+      reviewed_at: "2026-07-24T03:54:20Z",
+      reviewed_by: "codex-owner-delegate",
+    });
+    expect(accepted.absenceReceipt).toMatchObject({
+      contract_id: "member-extent-absence-receipt-v1",
+      receipt_id: "plan-040-qbnr-stop-removal-package-2-reviewed-absence-v1",
+      surfaces: ["member_extent", "member_grain"],
+      reviewed_at: "2026-07-24T03:54:20Z",
+      reviewed_by: "codex-owner-delegate",
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(accepted.absenceReceipt.extent_keys).toHaveLength(23);
+    expect(accepted.absenceReceipt.exact_searches).toHaveLength(23);
+    expect(accepted.absenceReceipt.urls_inspected).toHaveLength(23);
+    expect(accepted.absenceReceipt.urls_inspected.every((url) =>
+      /^https:\/\/www\.mta\.info\/document\/[0-9]+$/u.test(url))).toBe(true);
+    const unresolved = readDraft().candidates.filter((candidate) =>
+      candidate.evidence_verdict === "receipt_terminal_unresolved");
+    for (const candidate of unresolved) {
+      expect(accepted.absenceReceipt.exact_searches.some((search) =>
+        search.includes(`candidate=${candidate.candidate_key}`) &&
+        search.includes(`official_stop_list=${candidate.stop_list_url}`) &&
+        search.includes(`pre=${candidate.pre_source_id}@${candidate.pre_target_date}`) &&
+        search.includes(`post=${candidate.post_source_id}@${candidate.post_target_date}`) &&
+        candidate.unresolved_gap_codes.every((gap) => search.includes(gap)))).toBe(true);
+    }
+    expect(createHash("sha256").update(`${stableJson({
+      decisions: accepted.extentDecisions,
+    } as JsonValue)}\n`).digest("hex"))
+      .toBe("ccd1fbbd157c4718d6e18fd06f5166a3207fa5ff0cca26926de9b123e786cc8b");
+    expect(createHash("sha256").update(`${stableJson({
+      decisions: accepted.grainDecisions,
+    } as JsonValue)}\n`).digest("hex"))
+      .toBe("a5cdfb96cee98302379a03887bb6b2f9e4b2ce045448c794b2a415d5463578ba");
+    expect(createHash("sha256").update(`${stableJson({
+      receipts: [accepted.absenceReceipt],
+    } as JsonValue)}\n`).digest("hex"))
+      .toBe("cfa04da8ce463e50eac2798058902e019be88263b1c9a5c2dcbb4c2182bdba5c");
+  });
+
+  it("replays immutable accepted artifacts through the strict decision and receipt loaders", () => {
+    const first = acceptPlan040Package2DecisionPackage();
+    const second = acceptPlan040Package2DecisionPackage();
+    expect(second).toEqual(first);
+    expect(first).toMatchObject({
+      extentDecisionSha256:
+        "ccd1fbbd157c4718d6e18fd06f5166a3207fa5ff0cca26926de9b123e786cc8b",
+      grainDecisionSha256:
+        "a5cdfb96cee98302379a03887bb6b2f9e4b2ce045448c794b2a415d5463578ba",
+      absenceReceiptSha256:
+        "cfa04da8ce463e50eac2798058902e019be88263b1c9a5c2dcbb4c2182bdba5c",
+      extentDecisionCount: 1,
+      grainDecisionCount: 1,
+      absenceCandidateCount: 23,
+    });
+    const extent = loadMemberExtentDecisions([
+      dirname(PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_EXTENT_DECISIONS_PATH),
+    ]).filter((decision) =>
+      decision.decision_id === "member-extent-review:plan040-package2-qm12-stop-removal");
+    const grain = loadMemberGrainDecisions([
+      dirname(PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_GRAIN_DECISIONS_PATH),
+    ]).filter((decision) =>
+      decision.decision_id === "member-grain-review:plan040-package2-qm12-stop-removal");
+    const receipts = loadMemberExtentAbsenceReceipts([
+      dirname(PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_ABSENCE_RECEIPT_PATH),
+    ]);
+    expect(extent).toHaveLength(1);
+    expect(grain).toHaveLength(1);
+    expect(receipts).toHaveLength(1);
+    expect(receipts[0].extent_keys).toHaveLength(23);
+    expect(receipts[0].surfaces).toEqual(["member_extent", "member_grain"]);
+  });
+
+  it("materializes the exact 24-candidate terminal delta at a stable 308-row denominator", () => {
+    const companion = readJsonl(
+      `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/` +
+        "operational_occurrence_member_extents.jsonl",
+    );
+    const extentLedger = readJsonl(
+      `${repoRoot}/data/quality/operational-reference/member-extent-ledger.jsonl`,
+    );
+    const grainLedger = readJsonl(
+      `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`,
+    );
+    expect(companion).toHaveLength(308);
+    expect(extentLedger).toHaveLength(308);
+    expect(grainLedger).toHaveLength(308);
+    expect(distribution(companion, "extent")).toEqual({
+      bounded_segment: 17,
+      route_wide: 4,
+      stop_set: 4,
+      unresolved: 283,
+    });
+    expect(distribution(extentLedger, "verdict")).toEqual({
+      absent_in_source: 23,
+      "resolved:bounded_segment": 17,
+      "resolved:route_wide": 4,
+      "resolved:stop_set": 4,
+      unreviewed: 260,
+    });
+    expect(distribution(grainLedger, "verdict")).toEqual({
+      absent_in_source: 23,
+      resolved: 12,
+      unreviewed: 273,
+    });
+    const companionByKey = new Map(companion.map((row) => [extentDecisionKey(row as any), row]));
+    const extentByKey = new Map(extentLedger.map((row) => [extentDecisionKey(row as any), row]));
+    const grainByKey = new Map(grainLedger.map((row) => [extentDecisionKey(row as any), row]));
+    const draft = readDraft();
+    const positive = draft.candidates.find((candidate) =>
+      candidate.evidence_verdict === "evidence_complete_stop_set")!;
+    const unresolved = draft.candidates.filter((candidate) =>
+      candidate.evidence_verdict === "receipt_terminal_unresolved");
+    expect(companionByKey.get(positive.candidate_key)).toMatchObject({
+      extent: "stop_set",
+      decision_id: "member-extent-review:plan040-package2-qm12-stop-removal",
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(extentByKey.get(positive.candidate_key)).toMatchObject({
+      verdict: "resolved:stop_set",
+      verdict_basis: "review:member-extent-review:plan040-package2-qm12-stop-removal",
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(grainByKey.get(positive.candidate_key)).toMatchObject({
+      verdict: "resolved",
+      verdict_basis: "review:member-grain-review:plan040-package2-qm12-stop-removal",
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    for (const candidate of unresolved) {
+      expect(companionByKey.get(candidate.candidate_key)).toMatchObject({
+        extent: "unresolved",
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      });
+      expect(extentByKey.get(candidate.candidate_key)).toMatchObject({
+        verdict: "absent_in_source",
+        receipt_ids: ["plan-040-qbnr-stop-removal-package-2-reviewed-absence-v1"],
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      });
+      expect(grainByKey.get(candidate.candidate_key)).toMatchObject({
+        verdict: "absent_in_source",
+        receipt_ids: ["plan-040-qbnr-stop-removal-package-2-reviewed-absence-v1"],
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      });
+    }
+    expect(companion.filter((row) =>
+      draft.candidates.some((candidate) =>
+        candidate.candidate_key === extentDecisionKey(row as any)) &&
+      row.extent !== "unresolved")).toHaveLength(1);
   });
 });

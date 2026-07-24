@@ -41,6 +41,7 @@ export type Command =
   | "member-extent-ledger"
   | "plan-040-exemplar-accept"
   | "plan-040-exemplar-draft"
+  | "plan-040-package-2-accept"
   | "replay-eval"
   | "extract"
   | "identity-review"
