@@ -344,6 +344,7 @@ function verifyStopList(candidate: Plan040AcquisitionCandidate) {
     blocks_path: blocksPath,
     blocks_sha256: sha256(blocks),
     blocks_bytes: blocks.byteLength,
+    blocks_jsonl: blocks.toString("utf8"),
     layout_text: text.toString("utf8"),
     raw_text: rawText.toString("utf8"),
     authorizes_occurrence: false as const,
@@ -400,6 +401,7 @@ const acquisition = {
   sources: stopLists.map(({
     layout_text: _layoutText,
     raw_text: _rawText,
+    blocks_jsonl: _blocksJsonl,
     ...source
   }) => source),
   schedule_inputs: scheduleInputs,
@@ -455,6 +457,7 @@ const evidenceCandidates = candidates.map((candidate) => {
     stopListLayoutTextSha256: stopList.layout_text_sha256,
     stopListRawTextSha256: stopList.raw_text_sha256,
     stopListText: stopList.layout_text,
+    stopListBlocksJsonl: stopList.blocks_jsonl,
     prePatterns: fullStopPatternsForDate(
       preSnapshot,
       candidate.pre_target_date,

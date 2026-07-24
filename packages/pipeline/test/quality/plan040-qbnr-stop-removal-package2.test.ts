@@ -10,6 +10,7 @@ import type {
 import {
   buildPlan040Package2CandidateEvidence,
   extractPlan040Package2PdfStatements,
+  normalizePlan040Package2StopName,
   plan040Package2ReplayHash,
   type Plan040Package2Draft,
   type Plan040Package2ScheduleSlice,
@@ -123,6 +124,13 @@ function buildSynthetic(
     stopListText:
       "NORTHBOUND to Terminal\nOn Street/At Street Proposal Note\n" +
       "Main St/Cross Av Removed to improve speed & reliability\f",
+    stopListBlocksJsonl: `${JSON.stringify({
+      source_id: "mta-qx-stop-list",
+      block_id: "p001_b0001",
+      page_number: 1,
+      reading_order: 1,
+      raw_text: "Main St/Cross Av Removed to improve speed & reliability",
+    })}\n`,
     prePatterns: [pattern("pre", "PRE1", preStops)],
     postPatterns: [pattern("post", "POST1", postStops)],
     preScheduleSlice: schedule("schedule", "2025-06-28", "PRE1"),
@@ -209,9 +217,9 @@ describe("Plan 040 QBNR Package 2 evidence-only draft", () => {
     const bytes = readFileSync(artifactPath);
     const draft = JSON.parse(bytes.toString("utf8")) as Plan040Package2Draft;
     expect(createHash("sha256").update(bytes).digest("hex"))
-      .toBe("b2f7570baf6e7f5f3bf677dde0b2926d5d8388f821d79115fb2cd282b70b3370");
+      .toBe("ade4e511ab132d3b8eb4f7fa2225dcab0e84d8e8921cc5bd7e3c3126fb61ba5a");
     expect(plan040Package2ReplayHash(draft as unknown as JsonValue))
-      .toBe("b2f7570baf6e7f5f3bf677dde0b2926d5d8388f821d79115fb2cd282b70b3370");
+      .toBe("ade4e511ab132d3b8eb4f7fa2225dcab0e84d8e8921cc5bd7e3c3126fb61ba5a");
     expect(draft.candidate_count).toBe(24);
     expect(new Set(draft.candidates.map((row) => row.candidate_key)).size).toBe(24);
     expect(draft.candidate_key_sha256)
@@ -254,6 +262,56 @@ describe("Plan 040 QBNR Package 2 evidence-only draft", () => {
     });
   });
 
+  it("resolves every proposed evidence binding and covers every exact removed row", () => {
+    const qm12 = readDraft().candidates.find((row) => row.gtfs_route_id === "QM12");
+    expect(qm12?.proposed_extent_decision).not.toBeNull();
+    expect(qm12?.proposed_grain_decision).not.toBeNull();
+    const blockIndexes = new Map<string, Map<string, { raw_text: string }>>();
+    const blocksFor = (sourceId: string) => {
+      const prior = blockIndexes.get(sourceId);
+      if (prior) return prior;
+      const blocks = readFileSync(
+        `${repoRoot}/raw/sources/${sourceId}/blocks.jsonl`,
+        "utf8",
+      ).trim().split("\n").map((line) =>
+        JSON.parse(line) as { block_id: string; raw_text: string });
+      const index = new Map(blocks.map((block) => [block.block_id, block]));
+      blockIndexes.set(sourceId, index);
+      return index;
+    };
+    for (const decision of [
+      qm12!.proposed_extent_decision!,
+      qm12!.proposed_grain_decision!,
+    ]) {
+      for (const binding of decision.evidence_bindings) {
+        const prefix = `${binding.source_id}#`;
+        expect(binding.evidence_id.startsWith(prefix)).toBe(true);
+        const blockId = binding.evidence_id.slice(prefix.length);
+        expect(blocksFor(binding.source_id).has(blockId)).toBe(true);
+      }
+    }
+    const stopEvidence = new Set(
+      qm12!.proposed_extent_decision!.evidence_bindings
+        .filter((binding) => binding.role === "candidate_stop_list")
+        .map((binding) => binding.evidence_id),
+    );
+    const exactRows = qm12!.statement_bindings.filter((binding) =>
+      binding.verdict === "exact_pre_id_absent_post");
+    expect(exactRows).toHaveLength(12);
+    expect(stopEvidence.size).toBe(12);
+    for (const row of exactRows) {
+      expect(row.source_block_id).not.toBeNull();
+      const evidenceId = `${qm12!.stop_list_source_id}#${row.source_block_id}`;
+      expect(stopEvidence.has(evidenceId)).toBe(true);
+      const block = blocksFor(qm12!.stop_list_source_id).get(row.source_block_id!)!;
+      const removedIndex = block.raw_text.toLowerCase().indexOf("removed");
+      expect(removedIndex).toBeGreaterThan(0);
+      expect(normalizePlan040Package2StopName(
+        block.raw_text.slice(0, removedIndex),
+      )).toBe(row.normalized_stop_name);
+    }
+  });
+
   it("records the complete fail-closed gap distribution", () => {
     const distribution: Record<string, number> = {};
     for (const candidate of readDraft().candidates) {
@@ -269,6 +327,7 @@ describe("Plan 040 QBNR Package 2 evidence-only draft", () => {
       pdf_claimed_removed_id_still_present_post: 6,
       pdf_direction_heading_not_bound_to_gtfs: 11,
       pdf_name_not_exactly_bound_to_pre_gtfs: 22,
+      pdf_removed_row_source_block_unresolved: 9,
       possible_changed_id_or_relocation: 4,
       route_pattern_variant_requires_review: 14,
       unmatched_active_gtfs_shape: 7,

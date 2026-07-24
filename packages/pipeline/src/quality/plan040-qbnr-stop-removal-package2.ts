@@ -97,6 +97,7 @@ export type Plan040Package2PatternEvidence = {
 };
 
 export type Plan040Package2StatementBinding = Plan040Package2PdfStatement & {
+  source_block_id: string | null;
   direction_match_status: "not_applicable" | "exact_headsign_match" | "unmatched";
   pre_direction_ids: string[];
   post_direction_ids: string[];
@@ -437,10 +438,58 @@ function directionMatchedPatterns(
     : { patterns: [...patterns], status: "unmatched" };
 }
 
+function statementSourceBlockIds(
+  statements: readonly Plan040Package2PdfStatement[],
+  blocksJsonl: string,
+): Map<string, string> {
+  const blocks = blocksJsonl.trim().split("\n").filter(Boolean).map((line, index) => {
+    const value = JSON.parse(line) as {
+      block_id?: unknown;
+      page_number?: unknown;
+      reading_order?: unknown;
+      raw_text?: unknown;
+    };
+    if (
+      typeof value.block_id !== "string" ||
+      typeof value.page_number !== "number" ||
+      typeof value.reading_order !== "number" ||
+      typeof value.raw_text !== "string"
+    ) {
+      throw new Error(`stop-list blocks.jsonl line ${index + 1}: invalid source block`);
+    }
+    const removedIndex = value.raw_text.toLowerCase().indexOf("removed");
+    const literal = removedIndex < 0
+      ? ""
+      : cleanRawStopLiteral(value.raw_text.slice(0, removedIndex));
+    return {
+      block_id: value.block_id,
+      page_number: value.page_number,
+      reading_order: value.reading_order,
+      normalized_stop_name: literal.includes("/")
+        ? normalizePlan040Package2StopName(literal)
+        : "",
+    };
+  }).filter((block) => block.normalized_stop_name)
+    .sort((left, right) => left.reading_order - right.reading_order);
+  const byKey = new Map<string, typeof blocks>();
+  for (const block of blocks) {
+    const key = `${block.page_number}\u0000${block.normalized_stop_name}`;
+    byKey.set(key, [...(byKey.get(key) ?? []), block]);
+  }
+  const ordinals = new Map<string, number>();
+  return new Map(statements.flatMap((statement) => {
+    const key = `${statement.page_number}\u0000${statement.normalized_stop_name}`;
+    const ordinal = ordinals.get(key) ?? 0;
+    ordinals.set(key, ordinal + 1);
+    const block = byKey.get(key)?.[ordinal];
+    return block ? [[statement.statement_id, block.block_id] as const] : [];
+  }));
+}
+
 function evidenceBindings(
   candidate: Plan040AcquisitionCandidate,
   sourceId: string,
-  statements: readonly Plan040Package2PdfStatement[],
+  statements: readonly Plan040Package2StatementBinding[],
   scheduleSlices: readonly Plan040Package2ScheduleSlice[],
 ): MemberExtentDecision["evidence_bindings"] {
   const bindings: MemberExtentDecision["evidence_bindings"] = [
@@ -454,26 +503,27 @@ function evidenceBindings(
       role: "reference_snapshot",
       record_id: candidate.treatment_record_id,
       source_id: candidate.pre_source_id,
-      evidence_id: `${candidate.pre_source_id}#receipt`,
+      evidence_id: `${candidate.pre_source_id}#p001_b0001`,
     },
     {
       role: "reference_snapshot",
       record_id: candidate.treatment_record_id,
       source_id: candidate.post_source_id!,
-      evidence_id: `${candidate.post_source_id}#receipt`,
+      evidence_id: `${candidate.post_source_id}#p001_b0001`,
     },
-    ...[...new Set(statements.map((statement) => statement.page_number))]
-      .map((pageNumber) => ({
+    ...[...new Set(statements.map((statement) => statement.source_block_id))]
+      .filter((blockId): blockId is string => blockId !== null)
+      .map((blockId) => ({
         role: "candidate_stop_list",
         record_id: candidate.treatment_record_id,
         source_id: sourceId,
-        evidence_id: `${sourceId}#page_${String(pageNumber).padStart(3, "0")}`,
+        evidence_id: `${sourceId}#${blockId}`,
       })),
-    ...scheduleSlices.map((slice) => ({
+    ...[...new Set(scheduleSlices.map((slice) => slice.source_id))].map((scheduleSourceId) => ({
       role: "schedule_trip_type_validation",
       record_id: candidate.treatment_record_id,
-      source_id: slice.source_id,
-      evidence_id: `${slice.source_id}#${slice.schedule_date}_${slice.route_id}`,
+      source_id: scheduleSourceId,
+      evidence_id: `${scheduleSourceId}#p001_b0001`,
     })),
   ];
   return bindings.sort((left, right) =>
@@ -490,6 +540,7 @@ export function buildPlan040Package2CandidateEvidence(input: {
   stopListLayoutTextSha256: string;
   stopListRawTextSha256: string;
   stopListText: string;
+  stopListBlocksJsonl: string;
   prePatterns: HistoricalFullStopPattern[];
   postPatterns: HistoricalFullStopPattern[];
   preScheduleSlice: Plan040Package2ScheduleSlice;
@@ -502,6 +553,10 @@ export function buildPlan040Package2CandidateEvidence(input: {
   const pdfExtraction = extractPlan040Package2PdfStatements(
     candidate.gtfs_route_id,
     input.stopListText,
+  );
+  const sourceBlockIds = statementSourceBlockIds(
+    pdfExtraction.statements,
+    input.stopListBlocksJsonl,
   );
   const prePatterns = input.prePatterns.map((pattern) =>
     patternEvidence(pattern, input.preScheduleSlice));
@@ -551,6 +606,7 @@ export function buildPlan040Package2CandidateEvidence(input: {
             : "exact_pre_id_absent_post" as const;
     return {
       ...statement,
+      source_block_id: sourceBlockIds.get(statement.statement_id) ?? null,
       direction_match_status:
         directionalPre.status === "unmatched" || directionalPost.status === "unmatched"
           ? "unmatched" as const
@@ -586,6 +642,9 @@ export function buildPlan040Package2CandidateEvidence(input: {
   if (pdfExtraction.statements.length === 0) gapCodes.add("no_pdf_removed_stop_statement");
   if (pdfExtraction.unresolved_lines.length > 0) gapCodes.add("pdf_removed_row_extraction_gap");
   for (const binding of statementBindings) {
+    if (binding.source_block_id === null) {
+      gapCodes.add("pdf_removed_row_source_block_unresolved");
+    }
     if (binding.direction_match_status === "unmatched") {
       gapCodes.add("pdf_direction_heading_not_bound_to_gtfs");
     } else if (binding.direction_match_status !== "exact_headsign_match") {
@@ -653,7 +712,7 @@ export function buildPlan040Package2CandidateEvidence(input: {
     evidence_bindings: evidenceBindings(
       candidate,
       input.stopListSourceId,
-      pdfExtraction.statements,
+      statementBindings,
       [input.preScheduleSlice, input.postScheduleSlice],
     ),
     missing_roles: [],
