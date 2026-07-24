@@ -4,6 +4,16 @@ import { existsSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import type { JsonValue } from "../../../db/src/types";
 import {
+  PLAN040_PACKAGE_8_ACCEPTANCE_SHA256,
+  PLAN040_PACKAGE_8_APPROVED_COMMIT,
+  PLAN040_PACKAGE_8_GATE_SHA256,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_ACCEPTANCE_PATH,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_GATE_PATH,
+  buildPlan040Package8AcceptedArtifacts,
+  buildPlan040Package8GateAndAcceptance,
+  validatePlan040Package8GateAndAcceptance,
+} from "../../src/quality/plan040-qbnr-service-pattern-package8-closeout";
+import {
   PLAN040_PACKAGE_8_CANDIDATES,
   PLAN040_PACKAGE_8_BUSCO_CORRECTION_SHA1,
   PLAN040_PACKAGE_8_CANDIDATE_KEY_SHA256,
@@ -697,7 +707,7 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
     }
   });
 
-  it("has zero prior overlap and creates no gate, acceptance, or authority", () => {
+  it("has zero prior overlap and the frozen draft grants no authority", () => {
     const evidence = readJson<Package8Evidence>(evidencePath);
     const draft = readJson<Plan040Package8Draft>(draftPath);
     expect(Object.values(evidence.exclusion_checks).every((entry) =>
@@ -722,12 +732,75 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
       owner_gate_allowed_before_dual_review: false,
       persistence_allowed_before_owner_gate: false,
     });
+  });
+
+  it("freezes a compact dual-review gate and exact owner-delegate absence acceptance", () => {
     expect(existsSync(
-      `${riskRoot}/plan-040-qbnr-service-pattern-package-8-dual-review-gate-v1.json`,
-    )).toBe(false);
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_GATE_PATH,
+    )).toBe(true);
     expect(existsSync(
-      `${riskRoot}/plan-040-qbnr-service-pattern-package-8-owner-acceptance-v1.json`,
-    )).toBe(false);
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_ACCEPTANCE_PATH,
+    )).toBe(true);
+    const draft = readJson<Plan040Package8Draft>(draftPath);
+    const gate = readJson<Record<string, unknown>>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_GATE_PATH,
+    );
+    const acceptance = readJson<Record<string, unknown>>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_ACCEPTANCE_PATH,
+    );
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_GATE_PATH,
+    ))).toBe(PLAN040_PACKAGE_8_GATE_SHA256);
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8_ACCEPTANCE_PATH,
+    ))).toBe(PLAN040_PACKAGE_8_ACCEPTANCE_SHA256);
+    expect(validatePlan040Package8GateAndAcceptance({
+      draft,
+      gate,
+      acceptance,
+      acceptedAt: acceptance.accepted_at as string,
+    })).toEqual({
+      candidate_count: 30,
+      positive_candidate_count: 0,
+      reviewed_terminal_unresolved_candidate_count: 30,
+      authorized_extent_decision_count: 0,
+      authorized_grain_decision_count: 0,
+      authorized_absence_candidate_count: 30,
+      persisted_decision_count: 0,
+      persisted_absence_receipt_count: 0,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(gate.reviewed_commit).toBe(PLAN040_PACKAGE_8_APPROVED_COMMIT);
+    expect(gate).not.toHaveProperty("candidate_keys");
+    expect(gate.authorization_state).toBe(
+      "dual_review_approved_pending_owner_delegate_acceptance",
+    );
+    expect(gate.authorizes_decision_persistence).toBe(false);
+    expect(gate.authorizes_occurrence).toBe(false);
+    expect(acceptance.authorization_state).toBe(
+      "owner_delegate_accepted_exact_30_key_reviewed_absence_only",
+    );
+    expect(acceptance.authorizes_decision_persistence).toBe(false);
+    expect(acceptance.authorizes_reviewed_absence_receipt_persistence)
+      .toBe(true);
+    expect(acceptance.authorizes_occurrence).toBe(false);
+    expect(buildPlan040Package8GateAndAcceptance({
+      draft,
+      acceptedAt: acceptance.accepted_at as string,
+    }).gate).toEqual(gate);
+    expect(() =>
+      buildPlan040Package8AcceptedArtifacts({
+        draft,
+        gate: gate as never,
+        acceptance: {
+          ...acceptance,
+          authorizes_occurrence: true,
+        } as never,
+      })).toThrow(
+        "owner/delegate acceptance drifted",
+      );
   });
 
   it("rebuilds deterministically and rejects scope, gap, or authority mutations", () => {
