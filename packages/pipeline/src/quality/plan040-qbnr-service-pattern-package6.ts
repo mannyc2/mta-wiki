@@ -9,6 +9,13 @@ import { dirname, join, relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
+import { fileSha256 } from "../reference/snapshot-registry.js";
+import {
+  MEMBER_EXTENT_ABSENCE_CONTRACT_ID,
+  MEMBER_EXTENT_LEDGER_SCHEMA_VERSION,
+  type MemberExtentAbsenceReceipt,
+} from "./member-extent-ledger.js";
+import { extentDecisionKey } from "./study-readiness-v1.js";
 
 export const PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6 =
   "plan-040-qbnr-service-pattern-package-6-evidence-only-v1" as const;
@@ -34,6 +41,8 @@ export const PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_GATE_SHA256 =
   "8584597e5e48d5e8a2459565bfc12be9880b3f8e73eb3b818f3de0a3653427b3" as const;
 export const PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_ACCEPTANCE_SHA256 =
   "89e05147c7dd3feb21904f8bfe08baba61332c7aa6087002bc4626d6f9794032" as const;
+export const PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_ABSENCE_RECEIPT_SHA256 =
+  "386e7eab99701951e388f57dbf857850e58c1f3c678d69c5b42e6ac0fd40c6e2" as const;
 
 export const PLAN040_PACKAGE_6_WAVES = [
   {
@@ -879,5 +888,305 @@ export function writePlan040Package6GateAndAcceptance(input: {
     acceptanceSha256: sha256(
       `${stableJson(result.acceptance as unknown as JsonValue)}\n`,
     ),
+  };
+}
+
+type Plan040Package6GateAndAcceptance =
+  ReturnType<typeof buildPlan040Package6GateAndAcceptance>;
+
+function assertExactPlan040Package6Values(
+  actual: readonly string[],
+  expected: readonly string[],
+  label: string,
+): void {
+  if (
+    stableJson([...actual].sort() as JsonValue) !==
+      stableJson([...expected].sort() as JsonValue)
+  ) {
+    throw new Error(
+      `Plan 040 Package 6 ${label} drifted outside owner acceptance`,
+    );
+  }
+}
+
+export function buildPlan040Package6AcceptedArtifacts(input: {
+  draft: Plan040Package6Draft;
+  gate: Plan040Package6GateAndAcceptance["gate"];
+  acceptance: Plan040Package6GateAndAcceptance["acceptance"];
+}): {
+  extentDecisions: [];
+  grainDecisions: [];
+  absenceReceipt: MemberExtentAbsenceReceipt;
+} {
+  validatePlan040Package6GateAndAcceptance({
+    draft: input.draft,
+    gate: input.gate,
+    acceptance: input.acceptance,
+    acceptedAt: input.acceptance.accepted_at,
+  });
+  if (
+    input.acceptance.authorization_state !==
+      "owner_delegate_accepted_exact_29_key_reviewed_absence_only" ||
+    input.acceptance.authorizes_decision_persistence !== false ||
+    input.acceptance.authorizes_reviewed_absence_receipt_persistence !==
+      true ||
+    input.acceptance.authorizes_occurrence !== false ||
+    input.acceptance.authorizes_study !== false ||
+    input.acceptance.authorizes_cross_product !== false ||
+    input.acceptance.authorized_positive_persistence.candidate_count !==
+      0 ||
+    input.acceptance.authorized_positive_persistence.candidate_keys
+        .length !== 0 ||
+    input.acceptance.authorized_positive_persistence.extent_decision_ids
+        .length !== 0 ||
+    input.acceptance.authorized_positive_persistence.grain_decision_ids
+        .length !== 0
+  ) {
+    throw new Error(
+      "Plan 040 Package 6 owner acceptance does not authorize receipt-only persistence",
+    );
+  }
+  const terminal = input.draft.candidates.filter((candidate) =>
+    candidate.evidence_verdict === "receipt_terminal_unresolved");
+  if (
+    terminal.length !== 29 ||
+    terminal.some((candidate) =>
+      candidate.current_evidence_positive_eligible !== false ||
+      candidate
+          .positive_eligibility_requires_new_exact_post_full_stop_and_id_equivalence_evidence_plus_review !==
+        true ||
+      candidate.review_outcome_state !==
+        "audited_current_evidence_terminal_absence" ||
+      candidate.proposed_extent_decision !== null ||
+      candidate.proposed_grain_decision !== null ||
+      candidate.persisted_extent_decision !== null ||
+      candidate.persisted_grain_decision !== null ||
+      candidate.unresolved_gap_codes.length === 0 ||
+      candidate.authorizes_occurrence ||
+      candidate.authorizes_study ||
+      candidate.authorizes_cross_product ||
+      candidate.authorizes_decision_persistence)
+  ) {
+    throw new Error(
+      "Plan 040 Package 6 persistence inputs no longer match the accepted 0-positive/29-terminal split",
+    );
+  }
+  const terminalKeys = terminal
+    .map((candidate) => candidate.candidate_key)
+    .sort();
+  assertExactPlan040Package6Values(
+    input.acceptance.authorized_reviewed_absence_receipt.candidate_keys,
+    terminalKeys,
+    "reviewed absence candidate keys",
+  );
+  assertExactPlan040Package6Values(
+    input.acceptance.authorized_reviewed_absence_receipt.surfaces,
+    ["member_extent", "member_grain"],
+    "reviewed absence surfaces",
+  );
+  const terminalKeySha256 = sha256(`${terminalKeys.join("\n")}\n`);
+  if (
+    terminalKeySha256 !== PLAN040_PACKAGE_6_CANDIDATE_KEY_SHA256 ||
+    input.acceptance.authorized_reviewed_absence_receipt.receipt_id !==
+      "plan-040-qbnr-service-pattern-package-6-reviewed-absence-v1" ||
+    input.acceptance.authorized_reviewed_absence_receipt.candidate_count !==
+      29 ||
+    input.acceptance.authorized_reviewed_absence_receipt
+        .candidate_key_sha256 !== terminalKeySha256 ||
+    input.acceptance.authorized_reviewed_absence_receipt
+        .verdict_by_surface.member_extent !==
+      "reviewed_terminal_unresolved" ||
+    input.acceptance.authorized_reviewed_absence_receipt
+        .verdict_by_surface.member_grain !==
+      "reviewed_terminal_unresolved"
+  ) {
+    throw new Error(
+      "Plan 040 Package 6 reviewed absence authorization drifted",
+    );
+  }
+
+  const exactSearches = terminal.map((candidate) => {
+    if (
+      !/^https:\/\/www\.mta\.info\/document\/[0-9]+$/u.test(
+        candidate.candidate_document.source_url,
+      )
+    ) {
+      throw new Error(
+        `${candidate.gtfs_route_id}: reviewed absence URL is not an exact MTA document URL`,
+      );
+    }
+    return [
+      `candidate=${candidate.candidate_key}`,
+      `route=${candidate.gtfs_route_id}`,
+      `risk_wave=${candidate.risk_wave_id}`,
+      `service_change=${candidate.service_change_evidence.evidence_id}`,
+      `official_candidate_document=` +
+        `${candidate.candidate_document.source_url}`,
+      `candidate_document_source=${candidate.candidate_document.source_id}`,
+      `candidate_document_binding=` +
+        `${candidate.candidate_document.binding_status}`,
+      `candidate_document_full_stop_chain=` +
+        `${candidate.candidate_document.document_is_full_stop_chain}`,
+      `candidate_document_nonexclusive_context=` +
+        `${candidate.candidate_document.nonexclusive_context}`,
+      `exact_search=Candidate-specific service-pattern statements in ` +
+        `${candidate.candidate_document.source_id}`,
+      `pre=${candidate.pre_inventory.source_id}@` +
+        `${candidate.pre_inventory.target_date}/${candidate.gtfs_route_id}`,
+      `pre_schedule=${String(
+        candidate.schedule_validation.pre.source_id,
+      )}@${String(candidate.schedule_validation.pre.schedule_date)}/` +
+        `${candidate.gtfs_route_id}`,
+      `required_post_sha1=` +
+        `${candidate.required_post_inventory.version_sha1}`,
+      `required_post_target=` +
+        `${candidate.required_post_inventory.target_date}/` +
+        `${candidate.gtfs_route_id}`,
+      `post_schedule=${String(
+        candidate.schedule_validation.post.source_id,
+      )}@${String(candidate.schedule_validation.post.schedule_date)}/` +
+        `${candidate.gtfs_route_id}`,
+      `post_member_status=` +
+        `${candidate.required_post_inventory.member_bytes_status}`,
+      "current_evidence_positive_eligible=false",
+      "future_positive_requires_new_exact_post_full_stop_member_bytes=true",
+      "future_positive_requires_reviewed_stop_id_equivalence=true",
+      "future_positive_requires_independent_review_after_new_evidence=true",
+      "review_alone_sufficient=false",
+      "route_row_presence_is_not_trip_inventory=true",
+      "later_post_version_is_not_substitute=true",
+      "result=receipt_terminal_unresolved",
+      `risk_flags=${candidate.risk_flags.join(",")}`,
+      `gaps=${candidate.unresolved_gap_codes.join(",")}`,
+    ].join("; ");
+  }).sort();
+  if (new Set(exactSearches).size !== 29) {
+    throw new Error(
+      "Plan 040 Package 6 requires one exact search record per candidate",
+    );
+  }
+  const urlsInspected = [
+    ...new Set(terminal.map((candidate) =>
+      candidate.candidate_document.source_url)),
+  ].sort();
+  if (urlsInspected.length !== 18) {
+    throw new Error(
+      "Plan 040 Package 6 requires the exact 18-document review set",
+    );
+  }
+  const absenceReceipt: MemberExtentAbsenceReceipt = {
+    schema_version: MEMBER_EXTENT_LEDGER_SCHEMA_VERSION,
+    contract_id: MEMBER_EXTENT_ABSENCE_CONTRACT_ID,
+    receipt_id:
+      input.acceptance.authorized_reviewed_absence_receipt.receipt_id,
+    surfaces: ["member_extent", "member_grain"],
+    extent_keys: terminal.map((candidate) => ({
+      occurrence_id: candidate.occurrence_id,
+      route_record_id: candidate.route_record_id,
+      treatment_record_id: candidate.treatment_record_id,
+    })).sort((left, right) =>
+      extentDecisionKey(left).localeCompare(extentDecisionKey(right))),
+    exact_searches: exactSearches,
+    urls_inspected: urlsInspected,
+    rationale:
+      "Owner-delegate accepted reviewed absence for the exact 29 Package 6 " +
+      "service-pattern candidates after the initial evidence freeze was independently " +
+      "refuted and the amended fail-closed evidence state was independently approved. " +
+      "All five risk waves resolved to 0 positive and 29 terminal current-evidence " +
+      "outcomes. This records terminal member-extent and member-grain ledger review " +
+      "only. Immutable prior receipts, exact candidate-specific searches, unresolved " +
+      "schedule and route-variant bindings, source gaps, nonexclusive context, and the " +
+      "prohibition on occurrence inference remain preserved. Any future positive " +
+      "eligibility requires new exact e1c52 post full-stop member bytes, reviewed " +
+      "stop-ID equivalence, and a new independent review. Review alone is insufficient. " +
+      "No occurrence, study, cross-product, positive extent, or positive grain decision " +
+      "is authorized.",
+    reviewed_at: input.acceptance.accepted_at,
+    reviewed_by: input.acceptance.accepted_by,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+  };
+  return {
+    extentDecisions: [],
+    grainDecisions: [],
+    absenceReceipt,
+  };
+}
+
+export const PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_ABSENCE_RECEIPT_PATH =
+  join(
+    repoRoot,
+    "data/quality/acquisition/receipts/member-extent/" +
+      "plan-040-qbnr-service-pattern-package-6-reviewed-absence-v1.json",
+  );
+
+export function acceptPlan040Package6ReceiptPackage(): {
+  absenceReceiptPath: string;
+  absenceReceiptSha256: string;
+  extentDecisionCount: 0;
+  grainDecisionCount: 0;
+  absenceCandidateCount: 29;
+} {
+  const requiredPins = [
+    [
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_DRAFT_PATH,
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_DRAFT_SHA256,
+      "draft",
+    ],
+    [
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_GATE_PATH,
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_GATE_SHA256,
+      "dual-review gate",
+    ],
+    [
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_ACCEPTANCE_PATH,
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_ACCEPTANCE_SHA256,
+      "owner acceptance",
+    ],
+  ] as const;
+  for (const [path, expectedSha256, label] of requiredPins) {
+    const actualSha256 = fileSha256(path);
+    if (actualSha256 !== expectedSha256) {
+      throw new Error(
+        `Plan 040 Package 6 ${label} pin drifted: ${actualSha256}`,
+      );
+    }
+  }
+  const draft = JSON.parse(
+    readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_DRAFT_PATH,
+      "utf8",
+    ),
+  ) as Plan040Package6Draft;
+  const gate = JSON.parse(
+    readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_GATE_PATH,
+      "utf8",
+    ),
+  ) as Plan040Package6GateAndAcceptance["gate"];
+  const acceptance = JSON.parse(
+    readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_ACCEPTANCE_PATH,
+      "utf8",
+    ),
+  ) as Plan040Package6GateAndAcceptance["acceptance"];
+  const accepted = buildPlan040Package6AcceptedArtifacts({
+    draft,
+    gate,
+    acceptance,
+  });
+  writeImmutablePlan040Package6Json(
+    PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_ABSENCE_RECEIPT_PATH,
+    { receipts: [accepted.absenceReceipt] },
+  );
+  return {
+    absenceReceiptPath:
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_ABSENCE_RECEIPT_PATH,
+    absenceReceiptSha256: fileSha256(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_ABSENCE_RECEIPT_PATH,
+    ),
+    extentDecisionCount: 0,
+    grainDecisionCount: 0,
+    absenceCandidateCount: 29,
   };
 }

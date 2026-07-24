@@ -23,6 +23,9 @@ import {
   acceptPlan040Package5ReceiptPackage,
 } from "@mta-wiki/pipeline/quality/plan040-qbnr-stop-removal-package5";
 import {
+  acceptPlan040Package6ReceiptPackage,
+} from "@mta-wiki/pipeline/quality/plan040-qbnr-service-pattern-package6";
+import {
   loadRelationshipCompletenessArtifacts,
   syncRelationshipCompletenessToCanonicalDb,
   writeRelationshipCompletenessArtifacts,
@@ -120,6 +123,22 @@ const plan040Package5Accept: CommandHandler = () => {
   const result = acceptPlan040Package5ReceiptPackage();
   console.log(
     `Accepted Plan 040 Package 5 absence receipt: ` +
+    `${relative(repoRoot, result.absenceReceiptPath)}`,
+  );
+  console.log(
+    `Absence SHA-256: ${result.absenceReceiptSha256}; ` +
+    `candidates: ${result.absenceCandidateCount}`,
+  );
+  console.log(
+    `Positive extent decisions: ${result.extentDecisionCount}; ` +
+    `positive grain decisions: ${result.grainDecisionCount}`,
+  );
+};
+
+const plan040Package6Accept: CommandHandler = () => {
+  const result = acceptPlan040Package6ReceiptPackage();
+  console.log(
+    `Accepted Plan 040 Package 6 absence receipt: ` +
     `${relative(repoRoot, result.absenceReceiptPath)}`,
   );
   console.log(
@@ -356,6 +375,7 @@ export const qualityCommands = {
   "plan-040-package-2-accept": plan040Package2Accept,
   "plan-040-package-4-accept": plan040Package4Accept,
   "plan-040-package-5-accept": plan040Package5Accept,
+  "plan-040-package-6-accept": plan040Package6Accept,
   "operational-coverage": operationalCoverage,
   "coverage-matrix": operationalCoverage,
   "forecast-frontier": forecastFrontier,

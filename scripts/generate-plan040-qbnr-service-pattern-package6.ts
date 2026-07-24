@@ -69,6 +69,10 @@ const EXTENT_LEDGER_PATH =
   "data/quality/operational-reference/member-extent-ledger.jsonl";
 const GRAIN_LEDGER_PATH =
   "data/quality/operational-reference/member-grain-ledger.jsonl";
+const FROZEN_EXTENT_LEDGER_SHA256 =
+  "af4d0e4535ad4f3d0adb8647f43edf59166ff74dfb82c2c23a03bf290894b16b";
+const FROZEN_GRAIN_LEDGER_SHA256 =
+  "1bba493b0d2d1d386184d41fb4bbe2ef8b1618a5c5961cb667777cabcc878bb4";
 const TREATMENT_PATH = "data/canonical/treatment_components.jsonl";
 const SERVICE_CHANGE_SOURCE_ID =
   "mta_queens_bus_network_redesign_service_changes";
@@ -81,6 +85,9 @@ const SERVICE_CHANGE_HTML_SHA256 =
 const SCHEDULE_SOURCE_ID =
   "mta_bus_schedules_2025_candidate_windows";
 const PRE_SOURCE_ID = "gtfs_static_20250626_busco_post_qbnr";
+const PACKAGE_6_ABSENCE_RECEIPT_ID =
+  "plan-040-qbnr-service-pattern-package-6-reviewed-absence-v1";
+const PACKAGE_6_ABSENCE_REVIEWED_AT = "2026-07-24T07:46:30Z";
 
 const PACKAGE_3_PINS = {
   acquisition:
@@ -153,10 +160,11 @@ type LedgerRow = {
   gtfs_route_id: string;
   current_extent_kind: string;
   verdict: string;
+  spatial_verdict?: string;
   receipt_ids: string[];
   packet_id: null;
-  updated_at: null;
-  verdict_basis: null;
+  updated_at: string | null;
+  verdict_basis: string | null;
   authorizes_study: false;
   authorizes_cross_product: false;
   member_extent_decision_id?: null;
@@ -295,32 +303,56 @@ if (
 for (const [, routeId, treatmentId] of PLAN040_PACKAGE_6_CANDIDATES) {
   const extent = extentByTreatment.get(treatmentId)!;
   const grain = grainByTreatment.get(treatmentId)!;
+  const commonUnresolved =
+    extent.gtfs_route_id === routeId &&
+    grain.gtfs_route_id === routeId &&
+    extentDecisionKey(extent) === extentDecisionKey(grain) &&
+    extent.treatment_family === "service_pattern" &&
+    grain.treatment_family === "service_pattern" &&
+    extent.current_extent_kind === "unresolved" &&
+    grain.current_extent_kind === "unresolved" &&
+    extent.packet_id === null &&
+    grain.packet_id === null &&
+    grain.member_extent_decision_id === null &&
+    (grain.evidence_bindings?.length ?? 0) === 0 &&
+    !extent.authorizes_study &&
+    !extent.authorizes_cross_product &&
+    !grain.authorizes_study &&
+    !grain.authorizes_cross_product;
+  const isFrozenInput =
+    extent.verdict === "unreviewed" &&
+    grain.verdict === "unreviewed" &&
+    grain.spatial_verdict === "unreviewed" &&
+    extent.receipt_ids.length === 0 &&
+    grain.receipt_ids.length === 0 &&
+    extent.updated_at === null &&
+    grain.updated_at === null &&
+    extent.verdict_basis === null &&
+    grain.verdict_basis === null;
+  const acceptedReceiptIds = stableJson(
+    [PACKAGE_6_ABSENCE_RECEIPT_ID] as JsonValue,
+  );
+  const acceptedVerdictBasis =
+    `receipt:${PACKAGE_6_ABSENCE_RECEIPT_ID}`;
+  const isAcceptedReplay =
+    extent.verdict === "absent_in_source" &&
+    grain.verdict === "absent_in_source" &&
+    grain.spatial_verdict === "absent_in_source" &&
+    extent.updated_at === PACKAGE_6_ABSENCE_REVIEWED_AT &&
+    grain.updated_at === PACKAGE_6_ABSENCE_REVIEWED_AT &&
+    extent.verdict_basis === acceptedVerdictBasis &&
+    grain.verdict_basis === acceptedVerdictBasis &&
+    stableJson(extent.receipt_ids as JsonValue) ===
+      acceptedReceiptIds &&
+    stableJson(grain.receipt_ids as JsonValue) ===
+      acceptedReceiptIds;
   if (
-    extent.gtfs_route_id !== routeId ||
-    grain.gtfs_route_id !== routeId ||
-    extentDecisionKey(extent) !== extentDecisionKey(grain) ||
-    extent.treatment_family !== "service_pattern" ||
-    grain.treatment_family !== "service_pattern" ||
-    extent.current_extent_kind !== "unresolved" ||
-    grain.current_extent_kind !== "unresolved" ||
-    extent.verdict !== "unreviewed" ||
-    grain.verdict !== "unreviewed" ||
-    extent.receipt_ids.length !== 0 ||
-    grain.receipt_ids.length !== 0 ||
-    extent.packet_id !== null ||
-    grain.packet_id !== null ||
-    extent.updated_at !== null ||
-    grain.updated_at !== null ||
-    extent.verdict_basis !== null ||
-    grain.verdict_basis !== null ||
-    grain.member_extent_decision_id !== null ||
-    (grain.evidence_bindings?.length ?? 0) !== 0 ||
-    extent.authorizes_study ||
-    extent.authorizes_cross_product ||
-    grain.authorizes_study ||
-    grain.authorizes_cross_product
+    !commonUnresolved ||
+    (!isFrozenInput && !isAcceptedReplay)
   ) {
-    throw new Error(`${treatmentId}: Package 6 ledger row is not pristine`);
+    throw new Error(
+      `${treatmentId}: Package 6 ledger row is neither frozen nor accepted replay`,
+    );
   }
 }
 const candidateKeys = selectedExtent.map(extentDecisionKey).sort();
@@ -1177,13 +1209,13 @@ const acquisition = {
   pristine_ledger_inputs: {
     extent: {
       path: EXTENT_LEDGER_PATH,
-      sha256: sha256(read(EXTENT_LEDGER_PATH)),
+      sha256: FROZEN_EXTENT_LEDGER_SHA256,
       candidate_count: 29,
       verdict_distribution: { unreviewed: 29 },
     },
     grain: {
       path: GRAIN_LEDGER_PATH,
-      sha256: sha256(read(GRAIN_LEDGER_PATH)),
+      sha256: FROZEN_GRAIN_LEDGER_SHA256,
       candidate_count: 29,
       verdict_distribution: { unreviewed: 29 },
     },
