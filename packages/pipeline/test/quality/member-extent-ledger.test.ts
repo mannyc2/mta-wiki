@@ -255,6 +255,7 @@ function sourceGapFixture(input: SourceGapFixtureInput) {
     manifest_id: "fixture-source-gap-evidence",
     candidate_count: normalized.length,
     candidate_key_sha256: candidateKeySha256,
+    comparison_receipt: comparisonRef,
     source_gap_block_receipt: sourceEvidenceReceiptRef,
   };
   writeStableJson(join(root, paths.evidence), evidence);
@@ -561,6 +562,31 @@ describe("member extent and grain ledgers", () => {
     )).toBeFalse();
   });
 
+  it("rejects direct raw overlays that bypass full-chain provenance loading", () => {
+    const target = row("raw-source-gap-forgery");
+    const fixture = sourceGapFixture([{
+      target,
+      surfaces: ["member_extent", "member_grain"],
+      missingRoles: ["reference_snapshot"],
+    }]);
+    const forged = {
+      ...fixture.overlay,
+      source_receipt: {
+        path: "does/not/exist/source-gap.json",
+        sha256: "0".repeat(64),
+        receipt_id: "forged-receipt",
+      },
+      owner_acceptance: {
+        path: "does/not/exist/acceptance.json",
+        sha256: "f".repeat(64),
+      },
+    };
+    expect(() => buildMemberExtentLedgers({
+      companionRows: [target],
+      sourceGapOverlays: [forged as never],
+    })).toThrow("was not provenance-verified by the loader");
+  });
+
   it("loads only canonical, nonauthorizing source-gap overlays", () => {
     const target = row("source-gap-loader");
     const fixture = sourceGapFixture([{
@@ -836,6 +862,130 @@ describe("member extent and grain ledgers", () => {
       [symlink.overlayDir],
       symlink.root,
     )).toThrow("must be a normal non-symlink file");
+  });
+
+  it("verifies every declared comparison, draft, evidence, and gate pin", () => {
+    const input: SourceGapFixtureInput = [{
+      target: row("source-gap-full-pin-graph"),
+      surfaces: ["member_extent", "member_grain"],
+      missingRoles: ["reference_snapshot"],
+    }];
+
+    const missingReceiptComparison = sourceGapFixture(input);
+    unlinkSync(join(
+      missingReceiptComparison.root,
+      missingReceiptComparison.paths.comparison,
+    ));
+    expect(() => loadMemberSourceGapOverlays(
+      [missingReceiptComparison.overlayDir],
+      missingReceiptComparison.root,
+    )).toThrow("pinned file is missing");
+
+    const draftHash = sourceGapFixture(input);
+    writeStableJson(join(draftHash.root, draftHash.paths.draft), {
+      draft_id: "tampered-after-acceptance",
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [draftHash.overlayDir],
+      draftHash.root,
+    )).toThrow("pinned SHA-256 mismatch");
+
+    const gateSymlink = sourceGapFixture(input);
+    const gatePath = join(gateSymlink.root, gateSymlink.paths.gate);
+    const gateTargetPath = join(gateSymlink.root, "review/gate-target.json");
+    writeFileSync(gateTargetPath, readFileSync(gatePath));
+    unlinkSync(gatePath);
+    symlinkSync("gate-target.json", gatePath);
+    expect(() => loadMemberSourceGapOverlays(
+      [gateSymlink.overlayDir],
+      gateSymlink.root,
+    )).toThrow("must be a normal non-symlink file");
+
+    const missingAcceptanceComparison = sourceGapFixture(input);
+    const acceptance = {
+      ...missingAcceptanceComparison.acceptance,
+      artifacts: {
+        ...missingAcceptanceComparison.acceptance.artifacts,
+        comparison_receipt: {
+          path: "receipts/missing-owner-comparison.json",
+          sha256: "0".repeat(64),
+        },
+      },
+    };
+    writeStableJson(
+      join(
+        missingAcceptanceComparison.root,
+        missingAcceptanceComparison.paths.acceptance,
+      ),
+      acceptance,
+    );
+    writeStableJson(
+      join(
+        missingAcceptanceComparison.root,
+        missingAcceptanceComparison.paths.overlay,
+      ),
+      {
+        ...missingAcceptanceComparison.overlay,
+        owner_acceptance: {
+          ...missingAcceptanceComparison.overlay.owner_acceptance,
+          sha256: fileSha256(join(
+            missingAcceptanceComparison.root,
+            missingAcceptanceComparison.paths.acceptance,
+          )),
+        },
+      },
+    );
+    expect(() => loadMemberSourceGapOverlays(
+      [missingAcceptanceComparison.overlayDir],
+      missingAcceptanceComparison.root,
+    )).toThrow("pinned file is missing");
+
+    const nestedEvidencePin = sourceGapFixture(input);
+    const evidence = {
+      ...nestedEvidencePin.evidence,
+      additional_declared_pin: {
+        path: "review/missing-declared-input.json",
+        sha256: "f".repeat(64),
+      },
+    };
+    writeStableJson(
+      join(nestedEvidencePin.root, nestedEvidencePin.paths.evidence),
+      evidence,
+    );
+    const nestedAcceptance = {
+      ...nestedEvidencePin.acceptance,
+      artifacts: {
+        ...nestedEvidencePin.acceptance.artifacts,
+        evidence: {
+          ...nestedEvidencePin.acceptance.artifacts.evidence,
+          sha256: fileSha256(join(
+            nestedEvidencePin.root,
+            nestedEvidencePin.paths.evidence,
+          )),
+        },
+      },
+    };
+    writeStableJson(
+      join(nestedEvidencePin.root, nestedEvidencePin.paths.acceptance),
+      nestedAcceptance,
+    );
+    writeStableJson(
+      join(nestedEvidencePin.root, nestedEvidencePin.paths.overlay),
+      {
+        ...nestedEvidencePin.overlay,
+        owner_acceptance: {
+          ...nestedEvidencePin.overlay.owner_acceptance,
+          sha256: fileSha256(join(
+            nestedEvidencePin.root,
+            nestedEvidencePin.paths.acceptance,
+          )),
+        },
+      },
+    );
+    expect(() => loadMemberSourceGapOverlays(
+      [nestedEvidencePin.overlayDir],
+      nestedEvidencePin.root,
+    )).toThrow("pinned file is missing");
   });
 
   it("loads single, array, and decisions-wrapper packages and rejects duplicate keys", () => {

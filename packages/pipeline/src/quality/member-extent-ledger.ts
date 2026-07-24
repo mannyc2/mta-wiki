@@ -118,6 +118,14 @@ export type MemberSourceGapOverlay = {
   authorizes_cross_product: false;
 };
 
+const VERIFIED_SOURCE_GAP_OVERLAY =
+  Symbol("verified-member-source-gap-overlay");
+const verifiedSourceGapOverlayInstances = new WeakSet<object>();
+
+export type VerifiedMemberSourceGapOverlay = MemberSourceGapOverlay & {
+  readonly [VERIFIED_SOURCE_GAP_OVERLAY]: true;
+};
+
 export type MemberExtentDossierRef = {
   artifact: string;
   fact_kind: "bounded_scope_identity" | "scope_modality" | "stop_identity";
@@ -612,6 +620,43 @@ function parseSourceGapOverlay(
   };
 }
 
+function markVerifiedSourceGapOverlay(
+  overlay: MemberSourceGapOverlay,
+): VerifiedMemberSourceGapOverlay {
+  Object.defineProperty(overlay, VERIFIED_SOURCE_GAP_OVERLAY, {
+    value: true,
+    enumerable: false,
+    configurable: false,
+    writable: false,
+  });
+  const freeze = (value: unknown): void => {
+    if (typeof value !== "object" || value === null || Object.isFrozen(value)) {
+      return;
+    }
+    for (const child of Object.values(value)) freeze(child);
+    Object.freeze(value);
+  };
+  freeze(overlay);
+  verifiedSourceGapOverlayInstances.add(overlay);
+  return overlay as VerifiedMemberSourceGapOverlay;
+}
+
+function assertVerifiedSourceGapOverlay(
+  overlay: MemberSourceGapOverlay,
+  path: string,
+): asserts overlay is VerifiedMemberSourceGapOverlay {
+  if (
+    (overlay as Partial<VerifiedMemberSourceGapOverlay>)[
+      VERIFIED_SOURCE_GAP_OVERLAY
+    ] !== true ||
+    !verifiedSourceGapOverlayInstances.has(overlay)
+  ) {
+    throw new Error(
+      `${path}: source-gap overlay was not provenance-verified by the loader`,
+    );
+  }
+}
+
 type StrictSourceGapReceiptCandidate = MemberExtentKey & {
   candidate_key: string;
   blocked_surfaces: MemberLedgerSurface[];
@@ -626,6 +671,7 @@ type StrictSourceGapReceipt = {
   candidate_count: number;
   candidate_key_sha256: string;
   candidates: StrictSourceGapReceiptCandidate[];
+  comparison_receipt: PinnedArtifactRef & { receipt_id: string };
 };
 
 type PinnedArtifactRef = {
@@ -640,6 +686,8 @@ type StrictSourceGapAcceptance = {
   candidate_key_sha256: string;
   reviewer_result: "APPROVE/APPROVE";
   artifacts: {
+    comparison_receipt: PinnedArtifactRef;
+    draft: PinnedArtifactRef;
     evidence: PinnedArtifactRef;
     source_gap_block_receipt: PinnedArtifactRef;
   };
@@ -679,11 +727,11 @@ function pathWithinRoot(root: string, path: string, label: string): void {
   }
 }
 
-function readPinnedNormalJson(
+function readPinnedNormalFile(
   root: string,
   ref: PinnedArtifactRef,
   label: string,
-): unknown {
+): Buffer {
   const relativePath = canonicalRepoRelativePath(ref.path, `${label}.path`);
   const expectedSha256 = exactSha256(ref.sha256, `${label}.sha256`);
   const rootReal = realpathSync(root);
@@ -704,14 +752,52 @@ function readPinnedNormalJson(
   if (actualSha256 !== expectedSha256) {
     throw new Error(
       `${label}: pinned SHA-256 mismatch; expected ${expectedSha256}, ` +
-        `got ${actualSha256}`,
+      `got ${actualSha256}`,
     );
   }
+  return bytes;
+}
+
+function readPinnedNormalJson(
+  root: string,
+  ref: PinnedArtifactRef,
+  label: string,
+): unknown {
+  const bytes = readPinnedNormalFile(root, ref, label);
   try {
     return JSON.parse(bytes.toString("utf8")) as unknown;
   } catch {
     throw new Error(`${label}: pinned file is not valid JSON`);
   }
+}
+
+function verifyDeclaredPathPins(
+  value: unknown,
+  root: string,
+  label: string,
+): void {
+  const visit = (candidate: unknown, path: string): void => {
+    if (Array.isArray(candidate)) {
+      candidate.forEach((item, index) => visit(item, `${path}[${index}]`));
+      return;
+    }
+    if (typeof candidate !== "object" || candidate === null) return;
+    const parsed = candidate as Record<string, unknown>;
+    if ("path" in parsed && "sha256" in parsed) {
+      readPinnedNormalFile(
+        root,
+        {
+          path: canonicalRepoRelativePath(parsed.path, `${path}.path`),
+          sha256: exactSha256(parsed.sha256, `${path}.sha256`),
+        },
+        path,
+      );
+    }
+    for (const [key, item] of Object.entries(parsed)) {
+      visit(item, `${path}.${key}`);
+    }
+  };
+  visit(value, label);
 }
 
 function strictArtifactRef(value: unknown, path: string): PinnedArtifactRef {
@@ -774,7 +860,7 @@ function parseStrictSourceGapReceipt(
   nonempty(parsed.package_id, `${path}.package_id`);
   nonempty(parsed.source_id, `${path}.source_id`);
   nonempty(parsed.contract_semantics, `${path}.contract_semantics`);
-  strictEvidenceReceiptRef(
+  const comparisonReceipt = strictEvidenceReceiptRef(
     parsed.comparison_receipt,
     `${path}.comparison_receipt`,
   );
@@ -903,6 +989,7 @@ function parseStrictSourceGapReceipt(
     candidate_count: candidateCount,
     candidate_key_sha256: candidateKeySha256,
     candidates,
+    comparison_receipt: comparisonReceipt,
   };
 }
 
@@ -931,11 +1018,14 @@ function parseStrictSourceGapAcceptance(
   nonempty(parsed.authorization_state, `${path}.authorization_state`);
   const artifacts = object(parsed.artifacts, `${path}.artifacts`);
   exactKeys(artifacts, acceptanceArtifactFields, `${path}.artifacts`);
-  strictArtifactRef(
+  const comparisonReceipt = strictArtifactRef(
     artifacts.comparison_receipt,
     `${path}.artifacts.comparison_receipt`,
   );
-  strictArtifactRef(artifacts.draft, `${path}.artifacts.draft`);
+  const draft = strictArtifactRef(
+    artifacts.draft,
+    `${path}.artifacts.draft`,
+  );
   const evidence = strictArtifactRef(
     artifacts.evidence,
     `${path}.artifacts.evidence`,
@@ -1023,6 +1113,8 @@ function parseStrictSourceGapAcceptance(
     ),
     reviewer_result: "APPROVE/APPROVE",
     artifacts: {
+      comparison_receipt: comparisonReceipt,
+      draft,
       evidence,
       source_gap_block_receipt: sourceGapReceipt,
     },
@@ -1053,6 +1145,10 @@ function assertPinnedAcceptanceChain(input: {
     overlay.source_receipt.path !== sourceRef.path ||
     overlay.source_receipt.sha256 !== sourceRef.sha256 ||
     overlay.source_receipt.receipt_id !== receipt.receipt_id ||
+    receipt.comparison_receipt.path !==
+      acceptance.artifacts.comparison_receipt.path ||
+    receipt.comparison_receipt.sha256 !==
+      acceptance.artifacts.comparison_receipt.sha256 ||
     overlay.accepted_at !== acceptance.accepted_at ||
     overlay.accepted_by !== acceptance.accepted_by
   ) {
@@ -1119,6 +1215,16 @@ function assertPinnedAcceptanceChain(input: {
     }
   }
 
+  const comparisonReceipt = readPinnedNormalJson(
+    root,
+    acceptance.artifacts.comparison_receipt,
+    `${path}.acceptance.artifacts.comparison_receipt`,
+  );
+  const draft = readPinnedNormalJson(
+    root,
+    acceptance.artifacts.draft,
+    `${path}.acceptance.artifacts.draft`,
+  );
   const evidence = object(
     readPinnedNormalJson(
       root,
@@ -1131,13 +1237,21 @@ function assertPinnedAcceptanceChain(input: {
     evidence.source_gap_block_receipt,
     `${path}.acceptance.artifacts.evidence.source_gap_block_receipt`,
   );
+  const evidenceComparisonReceipt = strictEvidenceReceiptRef(
+    evidence.comparison_receipt,
+    `${path}.acceptance.artifacts.evidence.comparison_receipt`,
+  );
   if (
     evidence.schema_version !== MEMBER_EXTENT_LEDGER_SCHEMA_VERSION ||
     evidence.candidate_count !== acceptance.candidate_count ||
     evidence.candidate_key_sha256 !== acceptance.candidate_key_sha256 ||
     evidenceReceipt.path !== overlay.source_receipt.path ||
     evidenceReceipt.sha256 !== overlay.source_receipt.sha256 ||
-    evidenceReceipt.receipt_id !== overlay.source_receipt.receipt_id
+    evidenceReceipt.receipt_id !== overlay.source_receipt.receipt_id ||
+    evidenceComparisonReceipt.path !== receipt.comparison_receipt.path ||
+    evidenceComparisonReceipt.sha256 !== receipt.comparison_receipt.sha256 ||
+    evidenceComparisonReceipt.receipt_id !==
+      receipt.comparison_receipt.receipt_id
   ) {
     throw new Error(`${path}: pinned evidence does not bind this overlay`);
   }
@@ -1167,6 +1281,22 @@ function assertPinnedAcceptanceChain(input: {
   }
   nonempty(gate.gate_id, `${path}.acceptance.gate.gate_id`);
   nonempty(gate.reviewed_commit, `${path}.acceptance.gate.reviewed_commit`);
+  verifyDeclaredPathPins(
+    comparisonReceipt,
+    root,
+    `${path}.acceptance.artifacts.comparison_receipt`,
+  );
+  verifyDeclaredPathPins(
+    draft,
+    root,
+    `${path}.acceptance.artifacts.draft`,
+  );
+  verifyDeclaredPathPins(
+    evidence,
+    root,
+    `${path}.acceptance.artifacts.evidence`,
+  );
+  verifyDeclaredPathPins(gate, root, `${path}.acceptance.gate`);
 }
 
 function sourceGapOverlayJsonFiles(
@@ -1198,7 +1328,7 @@ function sourceGapOverlayJsonFiles(
 export function loadMemberSourceGapOverlays(
   directories: readonly string[],
   provenanceRoot = repoRoot,
-): MemberSourceGapOverlay[] {
+): VerifiedMemberSourceGapOverlay[] {
   const overlays = directories.flatMap((directory) =>
     sourceGapOverlayJsonFiles(directory, provenanceRoot).map((path) => {
       const overlay = parseSourceGapOverlay(
@@ -1214,6 +1344,11 @@ export function loadMemberSourceGapOverlays(
         sourceReceiptValue,
         `${path}.source_receipt`,
       );
+      verifyDeclaredPathPins(
+        sourceReceiptValue,
+        provenanceRoot,
+        `${path}.source_receipt`,
+      );
       const acceptanceValue = readPinnedNormalJson(
         provenanceRoot,
         overlay.owner_acceptance,
@@ -1223,6 +1358,11 @@ export function loadMemberSourceGapOverlays(
         acceptanceValue,
         `${path}.owner_acceptance`,
       );
+      verifyDeclaredPathPins(
+        acceptanceValue,
+        provenanceRoot,
+        `${path}.owner_acceptance`,
+      );
       assertPinnedAcceptanceChain({
         overlay,
         receipt,
@@ -1230,7 +1370,7 @@ export function loadMemberSourceGapOverlays(
         root: provenanceRoot,
         path,
       });
-      return overlay;
+      return markVerifiedSourceGapOverlay(overlay);
     })
   );
   const ids = new Set<string>();
@@ -1477,12 +1617,12 @@ function absenceIndex(
 }
 
 type IndexedSourceGap = {
-  overlay: MemberSourceGapOverlay;
+  overlay: VerifiedMemberSourceGapOverlay;
   entry: MemberSourceGapOverlayEntry;
 };
 
 function sourceGapIndex(
-  overlays: readonly MemberSourceGapOverlay[],
+  overlays: readonly VerifiedMemberSourceGapOverlay[],
   denominator: ReadonlySet<string>,
 ): Map<string, IndexedSourceGap> {
   const output = new Map<string, IndexedSourceGap>();
@@ -1511,7 +1651,7 @@ export function buildMemberExtentLedgers(input: {
   extentDecisions?: readonly MemberExtentDecision[];
   grainDecisions?: readonly MemberGrainDecision[];
   absenceReceipts?: readonly MemberExtentAbsenceReceipt[];
-  sourceGapOverlays?: readonly MemberSourceGapOverlay[];
+  sourceGapOverlays?: readonly VerifiedMemberSourceGapOverlay[];
   dossierArtifacts?: readonly ScheduleDossierArtifact[];
   packetIds?: ReadonlyMap<string, string>;
   expectedMemberKeys?: readonly MemberExtentKey[];
@@ -1546,9 +1686,13 @@ export function buildMemberExtentLedgers(input: {
   const parsedReceipts = (input.absenceReceipts ?? [])
     .map((receipt, index) => parseAbsenceReceipt(receipt, `absenceReceipts[${index}]`));
   const parsedSourceGapOverlays = (input.sourceGapOverlays ?? [])
-    .map((overlay, index) =>
-      parseSourceGapOverlay(overlay, `sourceGapOverlays[${index}]`)
-    );
+    .map((overlay, index) => {
+      assertVerifiedSourceGapOverlay(
+        overlay,
+        `sourceGapOverlays[${index}]`,
+      );
+      return overlay;
+    });
   const extentDecisions = new Map<string, MemberExtentDecision>();
   const grainDecisions = new Map<string, MemberGrainDecision>();
   const decisionIds = new Set<string>();
