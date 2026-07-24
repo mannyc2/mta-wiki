@@ -5,9 +5,17 @@ import { repoRoot } from "../../../core/src/paths";
 import { stableJson } from "../../../db/src/stable-json";
 import type { JsonValue } from "../../../db/src/types";
 import type {
+  MemberExtentAbsenceReceipt,
   MemberExtentLedgerRow,
   MemberGrainLedgerRow,
 } from "../../src/quality/member-extent-ledger";
+import {
+  loadMemberExtentAbsenceReceipts,
+} from "../../src/quality/member-extent-ledger";
+import {
+  memberGrainDecisionKey,
+  type MemberGrainDecision,
+} from "../../src/quality/member-grain-decisions";
 import {
   PLAN040_PACKAGE_10B_CANDIDATES,
   PLAN040_PACKAGE_10B_ACQUISITION_PINS,
@@ -29,6 +37,10 @@ import {
 import type { Plan040Package8VersionSeparation } from
   "../../src/quality/plan040-qbnr-service-pattern-package8";
 import {
+  extentDecisionKey,
+  type MemberExtentDecision,
+} from "../../src/quality/study-readiness-v1";
+import {
   compareFullStopPatterns,
   fullStopPatternsForDate,
 } from "../../src/reference/historical-full-stop";
@@ -39,16 +51,24 @@ import {
 } from "../../src/reference/snapshot-registry";
 import {
   PLAN040_PACKAGE_10B_ACCEPTANCE_SHA256,
+  PLAN040_PACKAGE_10B_ABSENCE_RECEIPT_SHA256,
   PLAN040_PACKAGE_10B_APPROVED_COMMIT,
+  PLAN040_PACKAGE_10B_EXTENT_DECISIONS_SHA256,
   PLAN040_PACKAGE_10B_GATE_SHA256,
+  PLAN040_PACKAGE_10B_GRAIN_DECISIONS_SHA256,
   PLAN040_PACKAGE_10B_PATH_AMENDMENT_COMMIT,
+  PLAN040_PACKAGE_10B_POST_PERSISTENCE_PINS,
   PLAN040_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_SHA256,
   PLAN040_PACKAGE_10B_PATH_REVIEW_GATE_SHA256,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ACCEPTANCE_PATH,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ABSENCE_RECEIPT_PATH,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_EXTENT_DECISIONS_PATH,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GATE_PATH,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GRAIN_DECISIONS_PATH,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_PATH,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_GATE_PATH,
   buildPlan040Package10bGateAndAcceptance,
+  buildPlan040Package10bAcceptedArtifacts,
   buildPlan040Package10bPathReviewAndAcceptance,
   validatePlan040Package10bGateAndAcceptance,
 } from
@@ -439,12 +459,10 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
         artifact.sha256,
       );
     }
-    expect(sha256(readFileSync(
-      `${repoRoot}/data/quality/operational-reference/member-extent-ledger.jsonl`,
-    ))).toBe(PLAN040_PACKAGE_10B_POST_10A_PINS.extent_ledger);
-    expect(sha256(readFileSync(
-      `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`,
-    ))).toBe(PLAN040_PACKAGE_10B_POST_10A_PINS.grain_ledger);
+    expect(evidence.immutable_inputs.post_10a_pins.extent_ledger)
+      .toBe(PLAN040_PACKAGE_10B_POST_10A_PINS.extent_ledger);
+    expect(evidence.immutable_inputs.post_10a_pins.grain_ledger)
+      .toBe(PLAN040_PACKAGE_10B_POST_10A_PINS.grain_ledger);
     const blocks = readJsonl<{
       block_id: string;
       raw_text_sha256: string;
@@ -975,20 +993,14 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     );
   });
 
-  it("preserves Q89 and the accepted P8 Q110/Q36 absence rows exactly", () => {
+  it("preserves Q89 identity and the accepted P8 Q110/Q36 absence rows exactly", () => {
     const evidence = readJson<Package10bEvidence>(evidencePath);
     const q89 = evidence.candidates[3]!;
-    expect(q89.prior_ledger_state.extent_row).toEqual(
-      readJsonl<MemberExtentLedgerRow>(
-        `${repoRoot}/data/quality/operational-reference/member-extent-ledger.jsonl`,
-      ).find((row) =>
-        row.treatment_record_id === q89.treatment_record_id),
+    const currentExtentRows = readJsonl<MemberExtentLedgerRow>(
+      `${repoRoot}/data/quality/operational-reference/member-extent-ledger.jsonl`,
     );
-    expect(q89.prior_ledger_state.grain_row).toEqual(
-      readJsonl<MemberGrainLedgerRow>(
-        `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`,
-      ).find((row) =>
-        row.treatment_record_id === q89.treatment_record_id),
+    const currentGrainRows = readJsonl<MemberGrainLedgerRow>(
+      `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`,
     );
     expect(q89.prior_ledger_state.extent_row).toEqual(
       expect.objectContaining({
@@ -1006,6 +1018,31 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
         lineage_segments: [],
       }),
     );
+    expect(currentExtentRows.find((row) =>
+      row.treatment_record_id === q89.treatment_record_id
+    )).toEqual({
+      ...q89.prior_ledger_state.extent_row,
+      verdict: "absent_in_source",
+      verdict_basis:
+        "receipt:plan-040-qbnr-service-pattern-package-10b-reviewed-absence-v1",
+      receipt_ids: [
+        "plan-040-qbnr-service-pattern-package-10b-reviewed-absence-v1",
+      ],
+      updated_at: ACCEPTED_AT,
+    });
+    expect(currentGrainRows.find((row) =>
+      row.treatment_record_id === q89.treatment_record_id
+    )).toEqual({
+      ...q89.prior_ledger_state.grain_row,
+      spatial_verdict: "absent_in_source",
+      verdict: "absent_in_source",
+      verdict_basis:
+        "receipt:plan-040-qbnr-service-pattern-package-10b-reviewed-absence-v1",
+      receipt_ids: [
+        "plan-040-qbnr-service-pattern-package-10b-reviewed-absence-v1",
+      ],
+      updated_at: ACCEPTED_AT,
+    });
     expect(q89.proposed_extent_decision).toBeNull();
     expect(q89.proposed_grain_decision).toBeNull();
     expect(q89.unresolved_gap_codes).toEqual([
@@ -1032,6 +1069,16 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
       row.receipt_ids[0] ===
         "plan-040-qbnr-service-pattern-package-8-reviewed-absence-v1"
     )).toBe(true);
+    for (const prior of preserved.extent_rows) {
+      expect(currentExtentRows.find((row) =>
+        extentDecisionKey(row) === extentDecisionKey(prior)
+      )).toEqual(prior);
+    }
+    for (const prior of preserved.grain_rows) {
+      expect(currentGrainRows.find((row) =>
+        memberGrainDecisionKey(row) === memberGrainDecisionKey(prior)
+      )).toEqual(prior);
+    }
   });
 
   it("pins all exclusions, comparison roles, and pre-persistence authority", () => {
@@ -1364,6 +1411,277 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     expect(
       (acceptance.gate as { sha256: string }).sha256,
     ).toBe(PLAN040_PACKAGE_10B_PATH_REVIEW_GATE_SHA256);
+  });
+
+  it("persists exactly three linked decisions and one Q89 dual-surface reviewed absence", () => {
+    const draft = readJson<Plan040Package10bDraft>(draftPath);
+    const gate = readJson<ReturnType<
+      typeof buildPlan040Package10bGateAndAcceptance
+    >["gate"]>(PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GATE_PATH);
+    const acceptance = readJson<ReturnType<
+      typeof buildPlan040Package10bGateAndAcceptance
+    >["acceptance"]>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ACCEPTANCE_PATH,
+    );
+    const pathReviewGate = readJson<ReturnType<
+      typeof buildPlan040Package10bPathReviewAndAcceptance
+    >["gate"]>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_GATE_PATH,
+    );
+    const pathReviewAcceptance = readJson<ReturnType<
+      typeof buildPlan040Package10bPathReviewAndAcceptance
+    >["acceptance"]>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_PATH,
+    );
+    const accepted = buildPlan040Package10bAcceptedArtifacts({
+      draft,
+      gate,
+      acceptance,
+      pathReviewGate,
+      pathReviewAcceptance,
+    });
+    const extentArtifact = readJson<{ decisions: MemberExtentDecision[] }>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_EXTENT_DECISIONS_PATH,
+    );
+    const grainArtifact = readJson<{ decisions: MemberGrainDecision[] }>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GRAIN_DECISIONS_PATH,
+    );
+    const absenceArtifact = readJson<{
+      receipts: MemberExtentAbsenceReceipt[];
+    }>(PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ABSENCE_RECEIPT_PATH);
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_EXTENT_DECISIONS_PATH,
+    ))).toBe(PLAN040_PACKAGE_10B_EXTENT_DECISIONS_SHA256);
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GRAIN_DECISIONS_PATH,
+    ))).toBe(PLAN040_PACKAGE_10B_GRAIN_DECISIONS_SHA256);
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ABSENCE_RECEIPT_PATH,
+    ))).toBe(PLAN040_PACKAGE_10B_ABSENCE_RECEIPT_SHA256);
+    expect(extentArtifact.decisions).toEqual(accepted.extentDecisions);
+    expect(grainArtifact.decisions).toEqual(accepted.grainDecisions);
+    expect(absenceArtifact.receipts).toEqual([accepted.absenceReceipt]);
+    expect(extentArtifact.decisions).toHaveLength(3);
+    expect(grainArtifact.decisions).toHaveLength(3);
+    expect(Object.fromEntries(
+      ["route_wide", "bounded_segment"].map((resolution) => [
+        resolution,
+        extentArtifact.decisions.filter((decision) =>
+          decision.resolution === resolution
+        ).length,
+      ]),
+    )).toEqual({ route_wide: 1, bounded_segment: 2 });
+    const extentByKey = new Map(extentArtifact.decisions.map((decision) => [
+      extentDecisionKey(decision),
+      decision,
+    ]));
+    for (const decision of grainArtifact.decisions) {
+      expect(decision.service_scope.kind).toBe("trip_subset");
+      expect(decision.member_extent_decision_id).toBe(
+        extentByKey.get(memberGrainDecisionKey(decision))!.decision_id,
+      );
+      expect(decision.reviewed_at).toBe(ACCEPTED_AT);
+      expect(decision.reviewed_by).toBe("codex-owner-delegate");
+    }
+    expect(extentArtifact.decisions.every((decision) =>
+      decision.reviewed_at === ACCEPTED_AT &&
+      decision.reviewed_by === "codex-owner-delegate"
+    )).toBe(true);
+    const receipt = absenceArtifact.receipts[0]!;
+    expect(receipt.receipt_id).toBe(
+      "plan-040-qbnr-service-pattern-package-10b-reviewed-absence-v1",
+    );
+    expect(receipt.surfaces).toEqual(["member_extent", "member_grain"]);
+    expect(receipt.extent_keys).toHaveLength(1);
+    expect(receipt.exact_searches).toHaveLength(1);
+    expect(receipt.exact_searches[0]).toContain(
+      "study-readiness-review:ea9e0f1db4ffbcd5d34356ed",
+    );
+    expect(receipt.exact_searches[0]).toContain(
+      "member-extent-review:53b053d72d04f18923d31522",
+    );
+    expect(receipt.exact_searches[0]).toContain(
+      "preserved_without_supersession",
+    );
+    expect(receipt.authorizes_study).toBe(false);
+    expect(receipt.authorizes_cross_product).toBe(false);
+    expect(lstatSync(comparisonReceiptPath).isFile()).toBe(true);
+    expect(lstatSync(comparisonReceiptPath).isSymbolicLink()).toBe(false);
+    expect(sha256(readFileSync(comparisonReceiptPath))).toBe(
+      PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256,
+    );
+    expect(loadMemberExtentAbsenceReceipts([
+      `${repoRoot}/data/quality/acquisition/receipts/member-extent`,
+    ]).some((candidate) =>
+      candidate.receipt_id === receipt.receipt_id
+    )).toBe(true);
+
+    const unauthorized = clone(pathReviewGate);
+    unauthorized.reviewer_results[1]!.verdict = "REFUTE" as "APPROVE";
+    expect(() =>
+      buildPlan040Package10bAcceptedArtifacts({
+        draft,
+        gate,
+        acceptance,
+        pathReviewGate: unauthorized,
+        pathReviewAcceptance,
+      })
+    ).toThrow(/path-review|acceptance/u);
+  });
+
+  it("replays deterministic ledgers and study surfaces without widening authority", () => {
+    const evidence = readJson<Package10bEvidence>(evidencePath);
+    const extentRows = readJsonl<MemberExtentLedgerRow>(
+      `${repoRoot}/data/quality/operational-reference/member-extent-ledger.jsonl`,
+    );
+    const grainRows = readJsonl<MemberGrainLedgerRow>(
+      `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`,
+    );
+    expect(extentRows).toHaveLength(308);
+    expect(grainRows).toHaveLength(308);
+    expect(extentRows.filter((row) =>
+      row.verdict === "absent_in_source"
+    )).toHaveLength(164);
+    expect(extentRows.filter((row) =>
+      row.verdict === "resolved:bounded_segment"
+    )).toHaveLength(27);
+    expect(extentRows.filter((row) =>
+      row.verdict === "resolved:route_wide"
+    )).toHaveLength(9);
+    expect(extentRows.filter((row) =>
+      row.verdict === "resolved:stop_set"
+    )).toHaveLength(4);
+    expect(extentRows.filter((row) =>
+      row.verdict === "unreviewed"
+    )).toHaveLength(104);
+    expect(grainRows.filter((row) =>
+      row.verdict === "absent_in_source"
+    )).toHaveLength(164);
+    expect(grainRows.filter((row) =>
+      row.verdict === "resolved"
+    )).toHaveLength(27);
+    expect(grainRows.filter((row) =>
+      row.verdict === "unreviewed"
+    )).toHaveLength(117);
+
+    const positive = evidence.candidates.slice(0, 3);
+    for (const candidate of positive) {
+      const extent = extentRows.find((row) =>
+        extentDecisionKey(row) === candidate.candidate_key
+      )!;
+      const grain = grainRows.find((row) =>
+        memberGrainDecisionKey(row) === candidate.candidate_key
+      )!;
+      expect(extent).toEqual(expect.objectContaining({
+        current_extent_kind:
+          candidate.proposed_extent_decision!.resolution,
+        verdict:
+          `resolved:${candidate.proposed_extent_decision!.resolution}`,
+        receipt_ids: [],
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      }));
+      expect(grain).toEqual(expect.objectContaining({
+        current_extent_kind:
+          candidate.proposed_extent_decision!.resolution,
+        spatial_verdict:
+          `resolved:${candidate.proposed_extent_decision!.resolution}`,
+        member_extent_decision_id:
+          candidate.proposed_extent_decision!.decision_id,
+        service_scope:
+          candidate.proposed_grain_decision!.service_scope,
+        lineage_segments:
+          candidate.proposed_grain_decision!.lineage_segments,
+        verdict: "resolved",
+        receipt_ids: [],
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      }));
+    }
+
+    const pinnedFiles = {
+      extent_ledger:
+        `${repoRoot}/data/quality/operational-reference/member-extent-ledger.jsonl`,
+      grain_ledger:
+        `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`,
+      bridge_ledger:
+        `${repoRoot}/data/quality/study-readiness/v1/bridge-ledger.jsonl`,
+      study_manifest:
+        `${repoRoot}/data/quality/study-readiness/v1/manifest.json`,
+      member_extent_contract:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/` +
+          "operational_occurrence_member_extents.jsonl",
+      member_extent_manifest:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/manifest.json`,
+      operational_occurrences:
+        `${repoRoot}/data/exports/releases/v1-rc26/operational_occurrences.jsonl`,
+      reviewed_candidate_packets:
+        `${repoRoot}/data/quality/study-readiness/v1/research/` +
+          "reviewed-candidate-packets.jsonl",
+    };
+    for (const [name, path] of Object.entries(pinnedFiles)) {
+      expect(sha256(readFileSync(path))).toBe(
+        PLAN040_PACKAGE_10B_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_10B_POST_PERSISTENCE_PINS
+        ],
+      );
+    }
+
+    type BridgeRow = {
+      candidate_route_id: string | null;
+      occurrence_id: string | null;
+      authorizes_study: false;
+      authorizes_cross_product: false;
+      treatment_extent: {
+        members: Array<{
+          treatment_record_id: string;
+          extent: string;
+          decision_id: string | null;
+          authorizes_study: false;
+          authorizes_cross_product: false;
+        }>;
+      };
+    };
+    const bridgeRows = readJsonl<BridgeRow>(pinnedFiles.bridge_ledger);
+    const q82Bridge = bridgeRows.find((row) =>
+      row.candidate_route_id === "Q82" &&
+      row.occurrence_id === "occurrence:136f3d32a53a62f096f8f44e"
+    )!;
+    const q89Bridge = bridgeRows.find((row) =>
+      row.candidate_route_id === "Q89" &&
+      row.occurrence_id === "occurrence:2748598653b74d33fcdce3d1"
+    )!;
+    expect(q82Bridge.treatment_extent.members.filter((member) =>
+      positive.some((candidate) =>
+        candidate.treatment_record_id === member.treatment_record_id
+      )
+    ).map((member) => [
+      member.treatment_record_id,
+      member.extent,
+      member.decision_id,
+    ])).toEqual(positive.map((candidate) => [
+      candidate.treatment_record_id,
+      candidate.proposed_extent_decision!.resolution,
+      candidate.proposed_extent_decision!.decision_id,
+    ]));
+    expect(q89Bridge.treatment_extent.members.find((member) =>
+      member.treatment_record_id ===
+        "treatment_q89-q85-green-acres-replacement-2025"
+    )).toEqual(expect.objectContaining({
+      extent: "unresolved",
+      decision_id: "member-extent-review:53b053d72d04f18923d31522",
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    }));
+    expect([
+      ...extentRows,
+      ...grainRows,
+      q82Bridge,
+      q89Bridge,
+    ].every((row) =>
+      row.authorizes_study === false &&
+      row.authorizes_cross_product === false
+    )).toBe(true);
   });
 
   it("fails closed on chain, Q89 preservation, P8, and exclusion drift", () => {

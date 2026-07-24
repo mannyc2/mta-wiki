@@ -12,11 +12,26 @@ import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
 import { fileSha256 } from "../reference/snapshot-registry.js";
 import {
+  MEMBER_EXTENT_ABSENCE_CONTRACT_ID,
+  MEMBER_EXTENT_LEDGER_SCHEMA_VERSION,
+  type MemberExtentAbsenceReceipt,
+} from "./member-extent-ledger.js";
+import {
+  memberGrainDecisionKey,
+  parseMemberGrainDecision,
+  type MemberGrainDecision,
+} from "./member-grain-decisions.js";
+import {
   PLAN040_PACKAGE_10B_CANDIDATE_KEY_SHA256,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B,
   plan040Package10bReplayHash,
   type Plan040Package10bDraft,
 } from "./plan040-qbnr-service-pattern-package10b.js";
+import {
+  extentDecisionKey,
+  validateMemberExtentDecision,
+  type MemberExtentDecision,
+} from "./study-readiness-v1.js";
 
 export const PLAN040_PACKAGE_10B_APPROVED_COMMIT =
   "4ff696145873c8de8138217a4ec83a7f9f3a2099" as const;
@@ -36,6 +51,30 @@ export const PLAN040_PACKAGE_10B_PATH_REVIEW_GATE_SHA256 =
   "c56aebde2d43dc94cbdeb684112beb6454e701d25c4e570d630e70f5f5466601" as const;
 export const PLAN040_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_SHA256 =
   "daa5c604d75c44432336f0010444d21e53b55aa929ca899e0caad66c8076a963" as const;
+export const PLAN040_PACKAGE_10B_EXTENT_DECISIONS_SHA256 =
+  "90481c9f87b49ae02b01f6a9085eaecb727b44527ffd560f2b8019dff737d746" as const;
+export const PLAN040_PACKAGE_10B_GRAIN_DECISIONS_SHA256 =
+  "df46021d5c62f1c128399c05d931ea83ada58d26ddc205ad5656f94403f0445d" as const;
+export const PLAN040_PACKAGE_10B_ABSENCE_RECEIPT_SHA256 =
+  "ab1bc3150c8c3ffc1dd14f93ea18a821831a83e07ea485ac7df4c2b4b220043f" as const;
+export const PLAN040_PACKAGE_10B_POST_PERSISTENCE_PINS = {
+  extent_ledger:
+    "85ae65827341e85eb9f221776a25bb1d66e6594b38892ee4484a9106d042cdea",
+  grain_ledger:
+    "f374aa9d11240081e9c6fa69a92e3e71300dc8faa6e8362d068a241489655402",
+  bridge_ledger:
+    "8801f97900d6663f9090b47cfaff32ed4a4911911296faab1bd74a8b047a0d96",
+  study_manifest:
+    "06c6430bf3ae713c6777335ff51b1abbf02e37717820f7e2d3270ba678a8a5d3",
+  member_extent_contract:
+    "c7e4d953ac96d33e48da6a1e7b0df14d45b5e9470b29517fa7a6c57db1d21542",
+  member_extent_manifest:
+    "389652644c0fb3980251606c3878f3acd0993266f1fd88b7c960b2887ccce6d4",
+  operational_occurrences:
+    "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
+  reviewed_candidate_packets:
+    "0ac700c48740fff5eb36b626b8dee72f95212378c0b40bc3dc6265b32c3d5844",
+} as const;
 
 const PACKAGE_10B_EVIDENCE_PATH =
   "data/quality/operational-reference/member-extent-risk/" +
@@ -118,6 +157,24 @@ export const PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_GATE_PATH =
 export const
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_PATH =
     join(repoRoot, PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_PATH);
+export const PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_EXTENT_DECISIONS_PATH =
+  join(
+    repoRoot,
+    "data/quality/operational-reference/member-extent-ledger-decisions/" +
+      "plan-040-qbnr-service-pattern-package-10b-v1.json",
+  );
+export const PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GRAIN_DECISIONS_PATH =
+  join(
+    repoRoot,
+    "data/quality/operational-reference/member-grain-decisions/" +
+      "plan-040-qbnr-service-pattern-package-10b-v1.json",
+  );
+export const PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ABSENCE_RECEIPT_PATH =
+  join(
+    repoRoot,
+    "data/quality/acquisition/receipts/member-extent/" +
+      "plan-040-qbnr-service-pattern-package-10b-reviewed-absence-v1.json",
+  );
 
 const sha256 = (value: string): string =>
   createHash("sha256").update(value).digest("hex");
@@ -587,5 +644,460 @@ export function writePlan040Package10bPathReviewAndAcceptance(input: {
     acceptanceSha256: sha256(
       `${stableJson(built.acceptance as unknown as JsonValue)}\n`,
     ),
+  };
+}
+
+type Plan040Package10bGateAndAcceptance =
+  ReturnType<typeof buildPlan040Package10bGateAndAcceptance>;
+type Plan040Package10bPathReviewAndAcceptance =
+  ReturnType<typeof buildPlan040Package10bPathReviewAndAcceptance>;
+
+function assertExactValues(
+  actual: readonly string[],
+  expected: readonly string[],
+  label: string,
+): void {
+  if (
+    stableJson([...actual].sort() as JsonValue) !==
+      stableJson([...expected].sort() as JsonValue)
+  ) {
+    throw new Error(
+      `Plan 040 Package 10B ${label} drifted outside owner acceptance`,
+    );
+  }
+}
+
+function q89SearchRecord(
+  candidate: Plan040Package10bDraft["candidates"][number],
+): string {
+  const evidence = candidate.accepted_evidence as {
+    prior_review: {
+      packet_id: string;
+      packet_row_sha256: string;
+      member_extent_decision_id: string;
+      occurrence_review_decision_id: string;
+    };
+    initial_post_inventory: {
+      source_id: string;
+      receipt_sha256: string;
+      zip_sha1: string;
+      active_trip_count: number;
+      shape_ids: string[];
+    };
+    schedule_slice: {
+      source_id: string;
+      source_csv_sha256: string;
+      row_count: number;
+      passenger_shape_ids: string[];
+      slice_sha256: string;
+      shape_identity_matches_initial_post: boolean;
+    };
+  };
+  return [
+    `candidate=${candidate.candidate_key}`,
+    `source_statement=${candidate.source_statement.evidence_id}@` +
+      `${candidate.source_statement.block_sha256}/` +
+      `${JSON.stringify(candidate.source_statement.source_quote)}`,
+    `prior_review=${evidence.prior_review.packet_id}@` +
+      `${evidence.prior_review.packet_row_sha256}/` +
+      `${evidence.prior_review.member_extent_decision_id}/` +
+      `${evidence.prior_review.occurrence_review_decision_id}/` +
+      "preserved_without_supersession",
+    `initial_post=${evidence.initial_post_inventory.source_id}/` +
+      `receipt=${evidence.initial_post_inventory.receipt_sha256}/` +
+      `zip=${evidence.initial_post_inventory.zip_sha1}/` +
+      `trips=${evidence.initial_post_inventory.active_trip_count}/` +
+      `shapes=${evidence.initial_post_inventory.shape_ids.join(",")}`,
+    `schedule=${evidence.schedule_slice.source_id}@` +
+      `${evidence.schedule_slice.source_csv_sha256}/` +
+      `rows=${evidence.schedule_slice.row_count}/` +
+      `shapes=${evidence.schedule_slice.passenger_shape_ids.join(",")}/` +
+      `slice=${evidence.schedule_slice.slice_sha256}/` +
+      `initial_match=${evidence.schedule_slice.shape_identity_matches_initial_post}`,
+    `exact_searches=${candidate.exact_candidate_searches.join(" | ")}`,
+    `prior_extent_ledger=${candidate.prior_ledger_state.extent_row.ledger_id}`,
+    `prior_grain_ledger=${candidate.prior_ledger_state.grain_row.ledger_id}`,
+    "occurrence_inference_prohibited=true",
+    "prior_occurrence_preserved=true",
+    "prior_member_extent_decision_preserved=true",
+    "result=receipt_terminal_unresolved_preserved",
+    `gaps=${candidate.unresolved_gap_codes.join(",")}`,
+  ].join("; ");
+}
+
+export function buildPlan040Package10bAcceptedArtifacts(input: {
+  draft: Plan040Package10bDraft;
+  gate: Plan040Package10bGateAndAcceptance["gate"];
+  acceptance: Plan040Package10bGateAndAcceptance["acceptance"];
+  pathReviewGate: Plan040Package10bPathReviewAndAcceptance["gate"];
+  pathReviewAcceptance:
+    Plan040Package10bPathReviewAndAcceptance["acceptance"];
+}): {
+  extentDecisions: MemberExtentDecision[];
+  grainDecisions: MemberGrainDecision[];
+  absenceReceipt: MemberExtentAbsenceReceipt;
+} {
+  validatePlan040Package10bGateAndAcceptance({
+    draft: input.draft,
+    gate: input.gate,
+    acceptance: input.acceptance,
+    acceptedAt: input.acceptance.accepted_at,
+  });
+  const expectedPathReview =
+    buildPlan040Package10bPathReviewAndAcceptance({
+      acceptedAt: input.pathReviewAcceptance.accepted_at,
+    });
+  if (
+    stableJson(input.pathReviewGate as unknown as JsonValue) !==
+      stableJson(expectedPathReview.gate as unknown as JsonValue) ||
+    stableJson(input.pathReviewAcceptance as unknown as JsonValue) !==
+      stableJson(expectedPathReview.acceptance as unknown as JsonValue)
+  ) {
+    throw new Error(
+      "Plan 040 Package 10B path-review approval or supplemental acceptance drifted",
+    );
+  }
+  if (
+    input.acceptance.authorization_state !==
+      "owner_delegate_accepted_exact_3_positive_decision_pairs_and_exact_1_key_preserved_reviewed_absence_only" ||
+    input.acceptance.authorizes_decision_persistence !== true ||
+    input.acceptance.authorizes_reviewed_absence_receipt_persistence !==
+      true ||
+    input.acceptance.authorizes_occurrence !== false ||
+    input.acceptance.authorizes_study !== false ||
+    input.acceptance.authorizes_cross_product !== false ||
+    input.pathReviewGate.verdict !== "APPROVE" ||
+    input.pathReviewGate.reviewer_results.some((review) =>
+      review.verdict !== "APPROVE") ||
+    input.pathReviewAcceptance
+        .authorizes_path_amendment_integration !== true ||
+    input.pathReviewAcceptance
+        .authorizes_previously_accepted_persistence_after_combined_validation !==
+      true ||
+    input.pathReviewAcceptance.authorizes_new_or_changed_decisions !==
+      false ||
+    input.pathReviewAcceptance.authorizes_occurrence !== false ||
+    input.pathReviewAcceptance.authorizes_study !== false ||
+    input.pathReviewAcceptance.authorizes_cross_product !== false
+  ) {
+    throw new Error(
+      "Plan 040 Package 10B combined owner acceptance does not authorize this persistence scope",
+    );
+  }
+  const positive = input.draft.candidates.filter((candidate) =>
+    candidate.evidence_verdict === "positive_extent_and_grain_proposed"
+  );
+  const unresolved = input.draft.candidates.filter((candidate) =>
+    candidate.evidence_verdict ===
+      "receipt_terminal_unresolved_preserved"
+  );
+  if (
+    positive.length !== 3 ||
+    positive.some((candidate) =>
+      !candidate.proposed_extent_decision ||
+      !candidate.proposed_grain_decision ||
+      candidate.unresolved_gap_codes.length !== 0) ||
+    unresolved.length !== 1 ||
+    unresolved.some((candidate) =>
+      candidate.gtfs_route_id !== "Q89" ||
+      candidate.proposed_extent_decision !== null ||
+      candidate.proposed_grain_decision !== null ||
+      candidate.unresolved_gap_codes.length === 0)
+  ) {
+    throw new Error(
+      "Plan 040 Package 10B persistence inputs no longer match the accepted verdict split",
+    );
+  }
+  const q89 = unresolved[0]!;
+  if (
+    q89.occurrence_id !== "occurrence:2748598653b74d33fcdce3d1" ||
+    q89.prior_ledger_state.extent_row.ledger_id !==
+      "member-extent-ledger:06d3feaca1f812078748a979" ||
+    q89.prior_ledger_state.grain_row.ledger_id !==
+      "member-grain-ledger:06d3feaca1f812078748a979" ||
+    q89.prior_ledger_state.extent_row.packet_id !==
+      "study-readiness-review:ea9e0f1db4ffbcd5d34356ed" ||
+    q89.prior_ledger_state.grain_row.member_extent_decision_id !==
+      "member-extent-review:53b053d72d04f18923d31522" ||
+    q89.prior_ledger_state.extent_row.current_extent_kind !== "unresolved" ||
+    q89.prior_ledger_state.grain_row.current_extent_kind !== "unresolved"
+  ) {
+    throw new Error(
+      "Plan 040 Package 10B Q89 prior unresolved state drifted",
+    );
+  }
+
+  const positiveKeys = positive.map((candidate) =>
+    candidate.candidate_key
+  ).sort();
+  const unresolvedKeys = [q89.candidate_key];
+  const proposedExtentIds = positive.map((candidate) =>
+    candidate.proposed_extent_decision!.decision_id
+  ).sort();
+  const proposedGrainIds = positive.map((candidate) =>
+    candidate.proposed_grain_decision!.decision_id
+  ).sort();
+  assertExactValues(
+    input.acceptance.authorized_positive_persistence.candidate_keys,
+    positiveKeys,
+    "positive candidate keys",
+  );
+  assertExactValues(
+    input.acceptance.authorized_positive_persistence.extent_decision_ids,
+    proposedExtentIds,
+    "extent decision ids",
+  );
+  assertExactValues(
+    input.acceptance.authorized_positive_persistence.grain_decision_ids,
+    proposedGrainIds,
+    "grain decision ids",
+  );
+  assertExactValues(
+    input.acceptance.authorized_reviewed_absence_receipt.candidate_keys,
+    unresolvedKeys,
+    "reviewed absence candidate keys",
+  );
+  assertExactValues(
+    input.acceptance.authorized_reviewed_absence_receipt.surfaces,
+    ["member_extent", "member_grain"],
+    "reviewed absence surfaces",
+  );
+  const unresolvedKeySha256 = sha256(`${q89.candidate_key}\n`);
+  if (
+    input.acceptance.authorized_reviewed_absence_receipt.receipt_id !==
+      "plan-040-qbnr-service-pattern-package-10b-reviewed-absence-v1" ||
+    input.acceptance.authorized_reviewed_absence_receipt.candidate_count !==
+      1 ||
+    input.acceptance.authorized_reviewed_absence_receipt
+        .candidate_key_sha256 !== unresolvedKeySha256 ||
+    input.acceptance.authorized_reviewed_absence_receipt
+        .verdict_by_surface.member_extent !==
+      "reviewed_terminal_unresolved_preserved" ||
+    input.acceptance.authorized_reviewed_absence_receipt
+        .verdict_by_surface.member_grain !==
+      "reviewed_terminal_unresolved_preserved"
+  ) {
+    throw new Error(
+      "Plan 040 Package 10B reviewed absence authorization drifted",
+    );
+  }
+
+  const extentDecisions = positive.map((candidate) => {
+    const decision = {
+      ...candidate.proposed_extent_decision!,
+      reviewed_at: input.acceptance.accepted_at,
+      reviewed_by: input.acceptance.accepted_by,
+    };
+    validateMemberExtentDecision(decision);
+    if (extentDecisionKey(decision) !== candidate.candidate_key) {
+      throw new Error(
+        `${candidate.treatment_record_id}: accepted extent key drifted`,
+      );
+    }
+    return decision;
+  }).sort((left, right) =>
+    extentDecisionKey(left).localeCompare(extentDecisionKey(right)));
+  const extentByKey = new Map(
+    extentDecisions.map((decision) => [
+      extentDecisionKey(decision),
+      decision,
+    ]),
+  );
+  const grainDecisions = positive.map((candidate) => {
+    const decision = parseMemberGrainDecision({
+      ...candidate.proposed_grain_decision!,
+      reviewed_at: input.acceptance.accepted_at,
+      reviewed_by: input.acceptance.accepted_by,
+    });
+    const extentDecision = extentByKey.get(candidate.candidate_key);
+    if (
+      memberGrainDecisionKey(decision) !== candidate.candidate_key ||
+      decision.member_extent_decision_id !== extentDecision?.decision_id ||
+      decision.service_scope.kind !== "trip_subset"
+    ) {
+      throw new Error(
+        `${candidate.treatment_record_id}: accepted extent/grain link drifted`,
+      );
+    }
+    return decision;
+  }).sort((left, right) =>
+    memberGrainDecisionKey(left).localeCompare(
+      memberGrainDecisionKey(right),
+    ));
+  const extentDistribution = Object.fromEntries(
+    ["route_wide", "bounded_segment"].map((resolution) => [
+      resolution,
+      extentDecisions.filter((decision) =>
+        decision.resolution === resolution).length,
+    ]),
+  );
+  if (
+    extentDistribution.route_wide !== 1 ||
+    extentDistribution.bounded_segment !== 2
+  ) {
+    throw new Error(
+      "Plan 040 Package 10B accepted extent distribution drifted",
+    );
+  }
+
+  const exactSearch = q89SearchRecord(q89);
+  const absenceReceipt: MemberExtentAbsenceReceipt = {
+    schema_version: MEMBER_EXTENT_LEDGER_SCHEMA_VERSION,
+    contract_id: MEMBER_EXTENT_ABSENCE_CONTRACT_ID,
+    receipt_id:
+      input.acceptance.authorized_reviewed_absence_receipt.receipt_id,
+    surfaces: ["member_extent", "member_grain"],
+    extent_keys: [{
+      occurrence_id: q89.occurrence_id,
+      route_record_id: q89.route_record_id,
+      treatment_record_id: q89.treatment_record_id,
+    }],
+    exact_searches: [exactSearch],
+    urls_inspected: [
+      "https://www.mta.info/project/queens-bus-network-redesign/service-changes",
+    ],
+    rationale:
+      "Owner-delegate accepted reviewed absence for the exact Package 10B Q89/Q85 Green Acres " +
+      "replacement candidate after dual independent risk review. The exact prior Q89 packet, " +
+      "reviewed unresolved member-extent decision, occurrence, ledger rows, source gaps, initial-" +
+      "post versus schedule shape mismatch, candidate-specific searches, and correction-version " +
+      "separation remain preserved without supersession. This receipt authorizes no occurrence, " +
+      "study, cross-product, positive extent, or positive grain inference.",
+    reviewed_at: input.acceptance.accepted_at,
+    reviewed_by: input.acceptance.accepted_by,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+  };
+  return { extentDecisions, grainDecisions, absenceReceipt };
+}
+
+export function acceptPlan040Package10bDecisionPackage(): {
+  extentDecisionPath: string;
+  extentDecisionSha256: string;
+  grainDecisionPath: string;
+  grainDecisionSha256: string;
+  absenceReceiptPath: string;
+  absenceReceiptSha256: string;
+  extentDecisionCount: 3;
+  grainDecisionCount: 3;
+  absenceCandidateCount: 1;
+} {
+  for (const [path, expectedSha256, label] of [
+    [
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_DRAFT_PATH,
+      PLAN040_PACKAGE_10B_DRAFT_SHA256,
+      "draft",
+    ],
+    [
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GATE_PATH,
+      PLAN040_PACKAGE_10B_GATE_SHA256,
+      "dual-review gate",
+    ],
+    [
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ACCEPTANCE_PATH,
+      PLAN040_PACKAGE_10B_ACCEPTANCE_SHA256,
+      "owner acceptance",
+    ],
+    [
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_GATE_PATH,
+      PLAN040_PACKAGE_10B_PATH_REVIEW_GATE_SHA256,
+      "path-review gate",
+    ],
+    [
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_PATH,
+      PLAN040_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_SHA256,
+      "path-review supplemental acceptance",
+    ],
+  ] as const) {
+    const actualSha256 = fileSha256(path);
+    if (actualSha256 !== expectedSha256) {
+      throw new Error(
+        `Plan 040 Package 10B ${label} pin drifted: ${actualSha256}`,
+      );
+    }
+  }
+  const comparisonReceiptPath = join(
+    repoRoot,
+    PACKAGE_10B_COMPARISON_RECEIPT_PATH,
+  );
+  const comparisonReceiptStat = lstatSync(comparisonReceiptPath);
+  if (
+    !comparisonReceiptStat.isFile() ||
+    comparisonReceiptStat.isSymbolicLink() ||
+    fileSha256(comparisonReceiptPath) !==
+      PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256
+  ) {
+    throw new Error(
+      "Plan 040 Package 10B comparison receipt regular-file pin drifted",
+    );
+  }
+  const draft = JSON.parse(
+    readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_DRAFT_PATH,
+      "utf8",
+    ),
+  ) as Plan040Package10bDraft;
+  const gate = JSON.parse(
+    readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GATE_PATH,
+      "utf8",
+    ),
+  ) as Plan040Package10bGateAndAcceptance["gate"];
+  const acceptance = JSON.parse(
+    readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ACCEPTANCE_PATH,
+      "utf8",
+    ),
+  ) as Plan040Package10bGateAndAcceptance["acceptance"];
+  const pathReviewGate = JSON.parse(
+    readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_GATE_PATH,
+      "utf8",
+    ),
+  ) as Plan040Package10bPathReviewAndAcceptance["gate"];
+  const pathReviewAcceptance = JSON.parse(
+    readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_PATH,
+      "utf8",
+    ),
+  ) as Plan040Package10bPathReviewAndAcceptance["acceptance"];
+  const accepted = buildPlan040Package10bAcceptedArtifacts({
+    draft,
+    gate,
+    acceptance,
+    pathReviewGate,
+    pathReviewAcceptance,
+  });
+  writeImmutableJson(
+    PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_EXTENT_DECISIONS_PATH,
+    { decisions: accepted.extentDecisions },
+  );
+  writeImmutableJson(
+    PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GRAIN_DECISIONS_PATH,
+    { decisions: accepted.grainDecisions },
+  );
+  writeImmutableJson(
+    PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ABSENCE_RECEIPT_PATH,
+    { receipts: [accepted.absenceReceipt] },
+  );
+  return {
+    extentDecisionPath:
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_EXTENT_DECISIONS_PATH,
+    extentDecisionSha256: fileSha256(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_EXTENT_DECISIONS_PATH,
+    ),
+    grainDecisionPath:
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GRAIN_DECISIONS_PATH,
+    grainDecisionSha256: fileSha256(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GRAIN_DECISIONS_PATH,
+    ),
+    absenceReceiptPath:
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ABSENCE_RECEIPT_PATH,
+    absenceReceiptSha256: fileSha256(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ABSENCE_RECEIPT_PATH,
+    ),
+    extentDecisionCount: 3,
+    grainDecisionCount: 3,
+    absenceCandidateCount: 1,
   };
 }
