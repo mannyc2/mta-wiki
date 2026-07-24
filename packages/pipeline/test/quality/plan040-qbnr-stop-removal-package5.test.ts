@@ -4,6 +4,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import type { JsonValue } from "../../../db/src/types";
 import {
+  buildPlan040Package5GateAndAcceptance,
   buildPlan040Package5Draft,
   PLAN040_PACKAGE_5_CANDIDATE_KEY_SHA256,
   PLAN040_PACKAGE_5_NEW_SOURCE_ROUTES,
@@ -15,6 +16,7 @@ import {
   PLAN040_PACKAGE_5_ROUTE_ORDER,
   plan040Package5ReplayHash,
   type Plan040Package5Draft,
+  validatePlan040Package5GateAndAcceptance,
 } from "../../src/quality/plan040-qbnr-stop-removal-package5";
 
 const acquisitionPath =
@@ -32,6 +34,12 @@ const package2Path =
 const package4Path =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
   "plan-040-qbnr-stop-removal-package-4-evidence-draft-v1.json";
+const gatePath =
+  `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
+  "plan-040-qbnr-stop-removal-package-5-dual-review-gate-v1.json";
+const acceptancePath =
+  `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
+  "plan-040-qbnr-stop-removal-package-5-owner-acceptance-v1.json";
 
 const sha256 = (value: Uint8Array | string): string =>
   createHash("sha256").update(value).digest("hex");
@@ -344,7 +352,7 @@ describe("Plan 040 QBNR Package 5 accelerated evidence-only freeze", () => {
     }
   });
 
-  it("fails closed with no Package 2/4 overlap and no gate, acceptance, or persistence", () => {
+  it("fails closed with no Package 2/4 overlap or positive persistence", () => {
     const acquisition = readJson<Acquisition>(acquisitionPath);
     const draft = readJson<Plan040Package5Draft>(draftPath);
     const package2 = readJson<{
@@ -388,14 +396,130 @@ describe("Plan 040 QBNR Package 5 accelerated evidence-only freeze", () => {
       !candidate.authorizes_study &&
       !candidate.authorizes_cross_product &&
       !candidate.authorizes_decision_persistence)).toBe(true);
-    expect(existsSync(
-      `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
-      "plan-040-qbnr-stop-removal-package-5-dual-review-gate-v1.json",
-    )).toBe(false);
-    expect(existsSync(
-      `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
-      "plan-040-qbnr-stop-removal-package-5-owner-acceptance-v1.json",
-    )).toBe(false);
+  });
+
+  it("validates dual approval and exact-package receipt-only acceptance", () => {
+    type GateAndAcceptance =
+      ReturnType<typeof buildPlan040Package5GateAndAcceptance>;
+    const draft = readJson<Plan040Package5Draft>(draftPath);
+    const gateBytes = readFileSync(gatePath);
+    const acceptanceBytes = readFileSync(acceptancePath);
+    expect(sha256(gateBytes)).toBe(
+      "8449a0333f7f6f5ec30fc6463af0e6983b0b27f2da48e72468f15ee5135eba15",
+    );
+    expect(sha256(acceptanceBytes)).toBe(
+      "c3b5758a434ae8d647d4feb3e60ba3119350d6b222c98f554801de3434b144e7",
+    );
+    const gate = JSON.parse(
+      gateBytes.toString("utf8"),
+    ) as GateAndAcceptance["gate"];
+    const acceptance = JSON.parse(
+      acceptanceBytes.toString("utf8"),
+    ) as GateAndAcceptance["acceptance"];
+    expect(validatePlan040Package5GateAndAcceptance({
+      draft,
+      gate,
+      acceptance,
+      acceptedAt: acceptance.accepted_at,
+    })).toEqual({
+      candidate_count: 24,
+      positive_candidate_count: 0,
+      unresolved_candidate_count: 24,
+      authorized_extent_decision_count: 0,
+      authorized_grain_decision_count: 0,
+      authorized_absence_candidate_count: 24,
+      persisted_decision_count: 0,
+      persisted_absence_receipt_count: 0,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(gate.reviewed_commit).toBe(
+      "21571bba030ad54bd38e55274dc3172bad64b044",
+    );
+    expect(gate.reviewer_results).toEqual([
+      {
+        role:
+          "independent_main_advisor_source_provenance_and_gap_review",
+        reviewer_id: "main_advisor",
+        verdict: "APPROVE",
+      },
+      {
+        role: "independent_provenance_and_fail_closed_audit",
+        reviewer_id: "plan040_package5_independent_audit",
+        verdict: "APPROVE",
+      },
+    ]);
+    expect(gate.artifacts).toEqual({
+      acquisition: {
+        path:
+          "data/quality/acquisition/receipts/" +
+          "plan-040-qbnr-stop-removal-package-5-acquisition-v1.json",
+        sha256:
+          "bb7c89669ed6b106cf37fe099b626116c4e5022f8ff909915cf68430853cb44c",
+      },
+      evidence: {
+        path:
+          "data/quality/operational-reference/member-extent-risk/" +
+          "plan-040-qbnr-stop-removal-package-5-evidence-v1.json",
+        sha256:
+          "a8a54fc2e5554d9517b9b65d5726141d4cccd1e8c16072ae2260f76bb64eb6ba",
+      },
+      draft: {
+        path:
+          "data/quality/operational-reference/member-extent-risk/" +
+          "plan-040-qbnr-stop-removal-package-5-evidence-draft-v1.json",
+        sha256:
+          "6506f12da89d3925b66a5f4a6003bd6b79929295c222ad18509459447e037179",
+        replay_sha256:
+          "6506f12da89d3925b66a5f4a6003bd6b79929295c222ad18509459447e037179",
+      },
+    });
+    expect(gate.immutable_package_3_carry_forward).toMatchObject({
+      candidate_count: 12,
+      acquisition_sha256: PLAN040_PACKAGE_5_PACKAGE_3_PINS.acquisition,
+      evidence_sha256: PLAN040_PACKAGE_5_PACKAGE_3_PINS.evidence,
+      draft_sha256: PLAN040_PACKAGE_5_PACKAGE_3_PINS.draft,
+    });
+    expect(acceptance.authorized_positive_persistence).toEqual({
+      candidate_count: 0,
+      candidate_keys: [],
+      extent_decision_ids: [],
+      grain_decision_ids: [],
+    });
+    expect(acceptance.authorized_reviewed_absence_receipt).toMatchObject({
+      receipt_id:
+        "plan-040-qbnr-stop-removal-package-5-reviewed-absence-v1",
+      candidate_count: 24,
+      candidate_key_sha256: PLAN040_PACKAGE_5_CANDIDATE_KEY_SHA256,
+      surfaces: ["member_extent", "member_grain"],
+      verdict_by_surface: {
+        member_extent: "reviewed_terminal_unresolved",
+        member_grain: "reviewed_terminal_unresolved",
+      },
+    });
+    expect(acceptance).toMatchObject({
+      persisted_extent_decision_count: 0,
+      persisted_grain_decision_count: 0,
+      persisted_absence_receipt_count: 0,
+      authorizes_decision_persistence: false,
+      authorizes_reviewed_absence_receipt_persistence: true,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(acceptance.authorized_reviewed_absence_receipt.candidate_keys)
+      .toEqual(draft.candidates.map((candidate) =>
+        candidate.candidate_key).sort());
+    expect(() => validatePlan040Package5GateAndAcceptance({
+      draft,
+      gate,
+      acceptance: {
+        ...acceptance,
+        authorizes_decision_persistence: true,
+      },
+      acceptedAt: acceptance.accepted_at,
+    })).toThrow("owner/delegate acceptance drifted");
   });
 
   it("rejects authorization, post-version substitution, and prior-package overlap", () => {

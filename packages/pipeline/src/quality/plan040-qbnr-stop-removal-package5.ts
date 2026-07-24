@@ -1,4 +1,12 @@
 import { createHash } from "node:crypto";
+import {
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  writeFileSync,
+} from "node:fs";
+import { dirname, join, relative } from "node:path";
+import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
 
@@ -12,6 +20,14 @@ export const PLAN040_PACKAGE_5_REQUIRED_POST_BUSCO_SHA1 =
   "e1c52ddfd8bece8f782dea60ee4d61f258f68e18" as const;
 export const PLAN040_PACKAGE_5_NON_SUBSTITUTE_POST_BUSCO_SHA1 =
   "fb0e2c097635e5dfa495870b2b177b02762c9ecc" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_REVIEWED_COMMIT =
+  "21571bba030ad54bd38e55274dc3172bad64b044" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ACQUISITION_SHA256 =
+  "bb7c89669ed6b106cf37fe099b626116c4e5022f8ff909915cf68430853cb44c" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_EVIDENCE_SHA256 =
+  "a8a54fc2e5554d9517b9b65d5726141d4cccd1e8c16072ae2260f76bb64eb6ba" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_DRAFT_SHA256 =
+  "6506f12da89d3925b66a5f4a6003bd6b79929295c222ad18509459447e037179" as const;
 
 export const PLAN040_PACKAGE_5_PACKAGE_3_PINS = {
   acquisition:
@@ -407,4 +423,320 @@ export function buildPlan040Package5Draft(input: {
 
 export function plan040Package5ReplayHash(value: JsonValue): string {
   return sha256(`${stableJson(value)}\n`);
+}
+
+const PACKAGE_5_ACQUISITION_PATH =
+  "data/quality/acquisition/receipts/" +
+  "plan-040-qbnr-stop-removal-package-5-acquisition-v1.json";
+const PACKAGE_5_EVIDENCE_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-package-5-evidence-v1.json";
+const PACKAGE_5_DRAFT_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-package-5-evidence-draft-v1.json";
+const PACKAGE_5_GATE_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-package-5-dual-review-gate-v1.json";
+const PACKAGE_5_ACCEPTANCE_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-package-5-owner-acceptance-v1.json";
+
+function package5ArtifactPins() {
+  return {
+    acquisition: {
+      path: PACKAGE_5_ACQUISITION_PATH,
+      sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ACQUISITION_SHA256,
+    },
+    evidence: {
+      path: PACKAGE_5_EVIDENCE_PATH,
+      sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_EVIDENCE_SHA256,
+    },
+    draft: {
+      path: PACKAGE_5_DRAFT_PATH,
+      sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_DRAFT_SHA256,
+      replay_sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_DRAFT_SHA256,
+    },
+  };
+}
+
+export function buildPlan040Package5GateAndAcceptance(input: {
+  draft: Plan040Package5Draft;
+  acceptedAt: string;
+}) {
+  const draftHash = plan040Package5ReplayHash(
+    input.draft as unknown as JsonValue,
+  );
+  const unresolved = input.draft.candidates.filter((candidate) =>
+    candidate.evidence_verdict === "receipt_terminal_unresolved");
+  const immutableCarries = input.draft.candidates.filter((candidate) =>
+    candidate.evidence_origin === "immutable_package_3_carry_forward");
+  if (
+    draftHash !== PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_DRAFT_SHA256 ||
+    input.draft.candidate_count !== 24 ||
+    input.draft.candidate_key_sha256 !==
+      PLAN040_PACKAGE_5_CANDIDATE_KEY_SHA256 ||
+    unresolved.length !== 24 ||
+    unresolved.some((candidate) =>
+      candidate.proposed_extent_decision !== null ||
+      candidate.proposed_grain_decision !== null ||
+      candidate.persisted_extent_decision !== null ||
+      candidate.persisted_grain_decision !== null ||
+      candidate.unresolved_gap_codes.length === 0 ||
+      candidate.authorizes_occurrence ||
+      candidate.authorizes_study ||
+      candidate.authorizes_cross_product ||
+      candidate.authorizes_decision_persistence) ||
+    immutableCarries.length !== 12 ||
+    immutableCarries.some((candidate) =>
+      candidate.immutable_package_3_ref?.evidence_manifest_sha256 !==
+        PLAN040_PACKAGE_5_PACKAGE_3_PINS.evidence) ||
+    input.draft.prior_package_overlap
+      .intentional_nonterminal_package_3_carry_forward_count !== 12 ||
+    input.draft.proposed_decision_count !== 0 ||
+    input.draft.persisted_decision_count !== 0 ||
+    input.draft.proposed_grain_decision_count !== 0 ||
+    input.draft.persisted_grain_decision_count !== 0 ||
+    input.draft.authorizes_occurrence ||
+    input.draft.authorizes_study ||
+    input.draft.authorizes_cross_product ||
+    input.draft.authorizes_decision_persistence
+  ) {
+    throw new Error(
+      "Plan 040 Package 5 frozen verdict, immutable carry, hash, or authorization scope drifted",
+    );
+  }
+  const unresolvedKeys = unresolved
+    .map((candidate) => candidate.candidate_key)
+    .sort();
+  const unresolvedKeySha256 = sha256(`${unresolvedKeys.join("\n")}\n`);
+  if (unresolvedKeySha256 !== PLAN040_PACKAGE_5_CANDIDATE_KEY_SHA256) {
+    throw new Error("Plan 040 Package 5 unresolved candidate scope drifted");
+  }
+  const reviewerResults = [
+    {
+      role: "independent_main_advisor_source_provenance_and_gap_review",
+      reviewer_id: "main_advisor",
+      verdict: "APPROVE" as const,
+    },
+    {
+      role: "independent_provenance_and_fail_closed_audit",
+      reviewer_id: "plan040_package5_independent_audit",
+      verdict: "APPROVE" as const,
+    },
+  ];
+  const gate = {
+    schema_version: 1,
+    gate_id: "plan-040-qbnr-stop-removal-package-5-dual-review-gate-v1",
+    package_id: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5,
+    reviewed_commit: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_REVIEWED_COMMIT,
+    artifacts: package5ArtifactPins(),
+    candidate_count: 24,
+    candidate_key_sha256: input.draft.candidate_key_sha256,
+    immutable_package_3_carry_forward: {
+      candidate_count: 12,
+      candidate_key_sha256:
+        input.draft.prior_package_overlap
+          .intentional_nonterminal_package_3_carry_forward_key_sha256,
+      acquisition_sha256: PLAN040_PACKAGE_5_PACKAGE_3_PINS.acquisition,
+      evidence_sha256: PLAN040_PACKAGE_5_PACKAGE_3_PINS.evidence,
+      draft_sha256: PLAN040_PACKAGE_5_PACKAGE_3_PINS.draft,
+    },
+    evidence_verdict_distribution: {
+      receipt_terminal_unresolved: 24,
+    },
+    proposed_extent_distribution: { stop_set: 0, unresolved: 24 },
+    proposed_grain_distribution: { trip_subset: 0, unresolved: 24 },
+    unresolved_candidate_count: 24,
+    unresolved_candidate_key_sha256: unresolvedKeySha256,
+    reviewer_results: reviewerResults,
+    checkpoint_tests: {
+      focused_p3_p5: {
+        pass: 17,
+        fail: 0,
+        assertions: 1186,
+        status: "pass" as const,
+      },
+      independent_package_5_replay: {
+        pass: 4,
+        fail: 0,
+        assertions: 378,
+        status: "pass" as const,
+      },
+      typecheck: { status: "pass" as const },
+      validate: { status: "pass" as const },
+      deterministic_replay: {
+        sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_DRAFT_SHA256,
+        status: "pass" as const,
+      },
+      full_repository: {
+        status: "not_required_below_accelerated_checkpoint" as const,
+        reason:
+          "24_new_closures_since_last_completed_checkpoint_below_25_to_50_threshold",
+      },
+    },
+    authorization_state:
+      "dual_review_approved_pending_owner_delegate_acceptance",
+    persisted_extent_decision_count: 0,
+    persisted_grain_decision_count: 0,
+    persisted_absence_receipt_count: 0,
+    authorizes_occurrence: false as const,
+    authorizes_study: false as const,
+    authorizes_cross_product: false as const,
+    authorizes_decision_persistence: false as const,
+    authorizes_reviewed_absence_receipt_persistence: false as const,
+  };
+  const gateSha256 = sha256(
+    `${stableJson(gate as unknown as JsonValue)}\n`,
+  );
+  const acceptance = {
+    schema_version: 1,
+    acceptance_id:
+      "plan-040-qbnr-stop-removal-package-5-owner-acceptance-v1",
+    accepted_at: input.acceptedAt,
+    accepted_by: "codex-owner-delegate",
+    gate: { path: PACKAGE_5_GATE_PATH, sha256: gateSha256 },
+    artifacts: package5ArtifactPins(),
+    candidate_count: 24,
+    candidate_key_sha256: input.draft.candidate_key_sha256,
+    evidence_verdict_distribution: {
+      receipt_terminal_unresolved: 24,
+    },
+    reviewer_results: {
+      main_advisor: "APPROVE" as const,
+      plan040_package5_independent_audit: "APPROVE" as const,
+    },
+    immutable_package_3_carry_forward: {
+      candidate_count: 12,
+      candidate_key_sha256:
+        input.draft.prior_package_overlap
+          .intentional_nonterminal_package_3_carry_forward_key_sha256,
+      evidence_sha256: PLAN040_PACKAGE_5_PACKAGE_3_PINS.evidence,
+      preserved_without_reacquisition_or_recomputation: true as const,
+    },
+    authorized_positive_persistence: {
+      candidate_count: 0,
+      candidate_keys: [] as string[],
+      extent_decision_ids: [] as string[],
+      grain_decision_ids: [] as string[],
+    },
+    authorized_reviewed_absence_receipt: {
+      receipt_id:
+        "plan-040-qbnr-stop-removal-package-5-reviewed-absence-v1",
+      candidate_count: 24,
+      candidate_key_sha256: unresolvedKeySha256,
+      candidate_keys: unresolvedKeys,
+      surfaces: ["member_extent", "member_grain"] as const,
+      verdict_by_surface: {
+        member_extent: "reviewed_terminal_unresolved" as const,
+        member_grain: "reviewed_terminal_unresolved" as const,
+      },
+    },
+    authorization_state:
+      "owner_delegate_accepted_exact_24_key_reviewed_absence_only",
+    persisted_extent_decision_count: 0,
+    persisted_grain_decision_count: 0,
+    persisted_absence_receipt_count: 0,
+    authorizes_decision_persistence: false as const,
+    authorizes_reviewed_absence_receipt_persistence: true as const,
+    authorizes_occurrence: false as const,
+    authorizes_study: false as const,
+    authorizes_cross_product: false as const,
+  };
+  return { gate, gateSha256, acceptance };
+}
+
+export function validatePlan040Package5GateAndAcceptance(input: {
+  draft: Plan040Package5Draft;
+  gate: unknown;
+  acceptance: unknown;
+  acceptedAt: string;
+}) {
+  const expected = buildPlan040Package5GateAndAcceptance({
+    draft: input.draft,
+    acceptedAt: input.acceptedAt,
+  });
+  if (
+    stableJson(input.gate as JsonValue) !==
+      stableJson(expected.gate as unknown as JsonValue)
+  ) {
+    throw new Error("Plan 040 Package 5 dual-review gate drifted");
+  }
+  if (
+    stableJson(input.acceptance as JsonValue) !==
+      stableJson(expected.acceptance as unknown as JsonValue)
+  ) {
+    throw new Error("Plan 040 Package 5 owner/delegate acceptance drifted");
+  }
+  return {
+    candidate_count: 24,
+    positive_candidate_count: 0,
+    unresolved_candidate_count: 24,
+    authorized_extent_decision_count: 0,
+    authorized_grain_decision_count: 0,
+    authorized_absence_candidate_count: 24,
+    persisted_decision_count: 0,
+    persisted_absence_receipt_count: 0,
+    authorizes_occurrence: false as const,
+    authorizes_study: false as const,
+    authorizes_cross_product: false as const,
+  };
+}
+
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_DRAFT_PATH = join(
+  repoRoot,
+  PACKAGE_5_DRAFT_PATH,
+);
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_GATE_PATH = join(
+  repoRoot,
+  PACKAGE_5_GATE_PATH,
+);
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ACCEPTANCE_PATH = join(
+  repoRoot,
+  PACKAGE_5_ACCEPTANCE_PATH,
+);
+
+function writeImmutablePlan040Package5Json(
+  path: string,
+  value: unknown,
+): void {
+  const contents = `${stableJson(value as JsonValue)}\n`;
+  if (existsSync(path)) {
+    if (readFileSync(path, "utf8") !== contents) {
+      throw new Error(
+        `Refusing to overwrite immutable Plan 040 Package 5 artifact ` +
+        `${relative(repoRoot, path)}`,
+      );
+    }
+    return;
+  }
+  mkdirSync(dirname(path), { recursive: true });
+  writeFileSync(path, contents, "utf8");
+}
+
+export function writePlan040Package5GateAndAcceptance(input: {
+  acceptedAt: string;
+}) {
+  const draft = JSON.parse(
+    readFileSync(PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_DRAFT_PATH, "utf8"),
+  ) as Plan040Package5Draft;
+  const result = buildPlan040Package5GateAndAcceptance({
+    draft,
+    acceptedAt: input.acceptedAt,
+  });
+  writeImmutablePlan040Package5Json(
+    PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_GATE_PATH,
+    result.gate,
+  );
+  writeImmutablePlan040Package5Json(
+    PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ACCEPTANCE_PATH,
+    result.acceptance,
+  );
+  return {
+    gatePath: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_GATE_PATH,
+    gateSha256: result.gateSha256,
+    acceptancePath: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ACCEPTANCE_PATH,
+    acceptanceSha256: sha256(
+      `${stableJson(result.acceptance as unknown as JsonValue)}\n`,
+    ),
+  };
 }
