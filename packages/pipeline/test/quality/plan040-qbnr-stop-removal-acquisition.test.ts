@@ -11,6 +11,23 @@ import {
 } from "../../src/quality/plan040-qbnr-stop-removal-acquisition";
 
 const read = (path: string) => readFileSync(`${repoRoot}/${path}`, "utf8");
+const ACQUISITION_TIME_LEDGER_FIXTURE =
+  "packages/pipeline/test/quality/fixtures/" +
+  "plan040-qbnr-stop-removal-member-extent-ledger-1da72b0c.jsonl";
+const ACQUISITION_TIME_LEDGER_SHA256 =
+  "18f340c70bc5dcc14382fa86682f5f6099236f4b74af9cca42f7818d77264ebd";
+
+function immutableAcquisitionTimeLedgerJsonl(): string {
+  const ledgerJsonl = read(ACQUISITION_TIME_LEDGER_FIXTURE);
+  const actualSha256 = createHash("sha256").update(ledgerJsonl).digest("hex");
+  if (actualSha256 !== ACQUISITION_TIME_LEDGER_SHA256) {
+    throw new Error(
+      `Plan 040 Package 1 acquisition-time ledger fixture drifted: ${actualSha256}`,
+    );
+  }
+  return ledgerJsonl;
+}
+
 const snapshot = (sourceId: string) => {
   const base = `raw/sources/${sourceId}`;
   return {
@@ -23,7 +40,7 @@ const snapshot = (sourceId: string) => {
 
 function currentInputs() {
   return {
-    ledgerJsonl: read("data/quality/operational-reference/member-extent-ledger.jsonl"),
+    ledgerJsonl: immutableAcquisitionTimeLedgerJsonl(),
     treatmentJsonl: read("data/canonical/treatment_components.jsonl"),
     routeTreatmentScopesJsonl: read("data/exports/releases/v1-rc26/route_treatment_scopes.jsonl"),
     sourceBlocksJsonl: read(
@@ -66,6 +83,9 @@ function currentManifest() {
 
 describe("Plan 040 QBNR generic stop-removal acquisition manifest", () => {
   it("freezes exactly 37 denominator keys with exact MTA route blocks and document URLs", () => {
+    expect(createHash("sha256")
+      .update(immutableAcquisitionTimeLedgerJsonl())
+      .digest("hex")).toBe(ACQUISITION_TIME_LEDGER_SHA256);
     const manifest = currentManifest();
     expect(manifest.candidate_count).toBe(37);
     expect(manifest.key_count).toBe(37);
