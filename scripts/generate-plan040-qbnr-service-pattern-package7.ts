@@ -79,6 +79,7 @@ const EVIDENCE_PATH =
 const DRAFT_PATH =
   "data/quality/operational-reference/member-extent-risk/" +
   "plan-040-qbnr-service-pattern-package-7-evidence-draft-v1.json";
+const check = process.argv.includes("--check");
 
 type LedgerRow = {
   occurrence_id: string;
@@ -216,6 +217,21 @@ const parseJsonl = <T>(path: string): T[] => {
   const text = read(path).trim();
   return text ? text.split("\n").map((line) => JSON.parse(line) as T) : [];
 };
+const frozenEvidence = check && existsSync(absolute(EVIDENCE_PATH))
+  ? JSON.parse(read(EVIDENCE_PATH)) as {
+    candidates: Plan040Package7CandidateEvidence[];
+    pristine_ledger_inputs: {
+      extent: { path: string; sha256: string };
+      grain: { path: string; sha256: string };
+    };
+  }
+  : null;
+const frozenCandidateByTreatment = new Map(
+  (frozenEvidence?.candidates ?? []).map((candidate) => [
+    candidate.treatment_record_id,
+    candidate,
+  ]),
+);
 
 function pin(path: string, expected: string, label: string): string {
   const actual = sha256(readFileSync(absolute(path)));
@@ -878,6 +894,10 @@ function ledgerSnapshot(
   candidate: PriorCandidate,
   treatmentId: string,
 ) {
+  const frozen = frozenCandidateByTreatment.get(treatmentId);
+  if (check && frozen) {
+    return frozen.ledger_snapshot;
+  }
   const extent = extentLedger.find((row) =>
     row.occurrence_id === candidate.occurrence_id &&
     row.route_record_id === candidate.route_record_id &&
@@ -1164,11 +1184,11 @@ const evidence = {
     receipt_terminal_unresolved: 10,
   },
   pristine_ledger_inputs: {
-    extent: {
+    extent: frozenEvidence?.pristine_ledger_inputs.extent ?? {
       path: EXTENT_LEDGER_PATH,
       sha256: sha256(readFileSync(absolute(EXTENT_LEDGER_PATH))),
     },
-    grain: {
+    grain: frozenEvidence?.pristine_ledger_inputs.grain ?? {
       path: GRAIN_LEDGER_PATH,
       sha256: sha256(readFileSync(absolute(GRAIN_LEDGER_PATH))),
     },
@@ -1228,7 +1248,6 @@ const outputs = [
   [EVIDENCE_PATH, evidenceBytes],
   [DRAFT_PATH, draftBytes],
 ] as const;
-const check = process.argv.includes("--check");
 for (const [path, bytes] of outputs) {
   if (check) {
     if (!existsSync(absolute(path)) || read(path) !== bytes) {
