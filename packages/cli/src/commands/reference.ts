@@ -1,6 +1,10 @@
 import { relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { captureScheduleSnapshots, captureX64PredecessorSnapshot } from "@mta-wiki/pipeline/reference/bus-schedules";
+import {
+  stageHistoricalFullStopEvidence,
+  writeHistoricalFullStopEvidence,
+} from "@mta-wiki/pipeline/reference/historical-full-stop";
 import { buildCurrentLaneProbe, writeLaneTraversalDossier } from "@mta-wiki/pipeline/reference/lane-traversal";
 import { writeRequiredScheduleDiffDossiers, writeScheduleDiffDossier } from "@mta-wiki/pipeline/reference/schedule-diff";
 import {
@@ -138,9 +142,38 @@ const scheduleDiff: CommandHandler = (args) => {
   console.log(`SHA-256: ${result.sha256}`);
 };
 
+const historicalFullStop: CommandHandler = () => {
+  const paths = {
+    queens_before: optionValue(process.argv, "--queens-before"),
+    queens_after: optionValue(process.argv, "--queens-after"),
+    busco_before: optionValue(process.argv, "--busco-before"),
+    busco_after: optionValue(process.argv, "--busco-after"),
+  };
+  const provided = Object.values(paths).filter((value) => value !== undefined).length;
+  if (provided !== 0 && provided !== 4) {
+    throw new Error(
+      "historical-full-stop requires all four of --queens-before, --queens-after, --busco-before, and --busco-after",
+    );
+  }
+  const result = provided === 4
+    ? stageHistoricalFullStopEvidence({
+      queens_before: paths.queens_before!,
+      queens_after: paths.queens_after!,
+      busco_before: paths.busco_before!,
+      busco_after: paths.busco_after!,
+    })
+    : writeHistoricalFullStopEvidence();
+  console.log(`Historical full-stop acceptance manifest: ${relative(repoRoot, result.acceptance_manifest_path)}`);
+  console.log(`SHA-256: ${result.acceptance_manifest_sha256}`);
+  console.log(`Replay hash: ${result.replay_hash}`);
+  console.log(`Covered candidates: ${result.covered_candidate_count}`);
+  console.log(`Verdicts: ${JSON.stringify(result.verdict_distribution)}`);
+};
+
 export const referenceCommands = {
   "reference-snapshots": referenceSnapshots,
   "lane-traversal": laneTraversal,
   "lane-traversal-probe": laneTraversalProbe,
   "schedule-diff": scheduleDiff,
+  "historical-full-stop": historicalFullStop,
 } satisfies Record<string, CommandHandler>;

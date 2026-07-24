@@ -68,6 +68,22 @@ export type OperationalSnapshotRegistry = {
   supporting_artifacts: Array<OperationalSnapshotArtifact & { kind: "bus_schedule_field_metadata" }>;
 };
 
+export type ArchivedGtfsSnapshotInput = {
+  sourceId: string;
+  snapshotId: string;
+  label: string;
+  title: string;
+  documentDate: string;
+  zipPath: string;
+  officialUrl: string;
+  archiveUrl: string;
+  archiveTimestamp: string;
+  retrievedAt: string;
+  expectedSha1: string;
+  expectedSha256: string;
+  provenanceUrls: string[];
+};
+
 export type OperationalReferenceValidationIssue = {
   code: "invalid_operational_reference";
   path: string;
@@ -131,6 +147,22 @@ function copyImmutable(source: string, target: string): void {
 
 export function fileSha256(path: string): string {
   const hash = createHash("sha256");
+  const descriptor = openSync(path, "r");
+  const buffer = Buffer.allocUnsafe(8 * 1024 * 1024);
+  try {
+    for (;;) {
+      const bytes = readSync(descriptor, buffer, 0, buffer.length, null);
+      if (bytes === 0) break;
+      hash.update(buffer.subarray(0, bytes));
+    }
+  } finally {
+    closeSync(descriptor);
+  }
+  return hash.digest("hex");
+}
+
+export function fileSha1(path: string): string {
+  const hash = createHash("sha1");
   const descriptor = openSync(path, "r");
   const buffer = Buffer.allocUnsafe(8 * 1024 * 1024);
   try {
@@ -364,6 +396,107 @@ export function stageLocalGtfsSnapshots(): OperationalSnapshot[] {
     });
   }
   return snapshots;
+}
+
+export function stageArchivedGtfsSnapshot(input: ArchivedGtfsSnapshotInput): OperationalSnapshot {
+  const sourceDir = join(repoRoot, "raw/sources", input.sourceId);
+  const zipSha1 = fileSha1(input.zipPath);
+  const zipSha256 = fileSha256(input.zipPath);
+  if (zipSha1 !== input.expectedSha1) {
+    throw new Error(`${input.sourceId}: expected SHA-1 ${input.expectedSha1}, received ${zipSha1}`);
+  }
+  if (zipSha256 !== input.expectedSha256) {
+    throw new Error(`${input.sourceId}: expected SHA-256 ${input.expectedSha256}, received ${zipSha256}`);
+  }
+
+  mkdirSync(join(sourceDir, "extracted"), { recursive: true });
+  const zipTarget = join(sourceDir, "source.zip");
+  copyImmutable(input.zipPath, zipTarget);
+  for (const member of GTFS_MEMBER_NAMES) {
+    const result = spawnSync("/usr/bin/unzip", ["-p", zipTarget, member], {
+      encoding: null,
+      maxBuffer: 1024 * 1024 * 512,
+    });
+    if (result.status !== 0 || !result.stdout) {
+      throw new Error(`Unable to extract ${member} from ${zipTarget}: ${String(result.stderr)}`);
+    }
+    writeImmutable(join(sourceDir, "extracted", member), result.stdout);
+  }
+
+  const members = GTFS_MEMBER_NAMES.map((member) => {
+    const path = join(sourceDir, "extracted", member);
+    return {
+      member,
+      sha256: fileSha256(path),
+      bytes: statSync(path).size,
+      rows: countDataRows(path),
+    };
+  });
+  const serviceWindow = gtfsServiceWindow(
+    join(sourceDir, "extracted/calendar.txt"),
+    join(sourceDir, "extracted/calendar_dates.txt"),
+  );
+  const receipt = {
+    schema_version: 1,
+    source_id: input.sourceId,
+    snapshot_id: input.snapshotId,
+    snapshot_label: input.label,
+    official_origin_url: input.officialUrl,
+    archive_transport_url: input.archiveUrl,
+    archive_timestamp: input.archiveTimestamp,
+    retrieved_at: input.retrievedAt,
+    zip_sha1: zipSha1,
+    zip_sha256: zipSha256,
+    zip_bytes: statSync(zipTarget).size,
+    service_window: serviceWindow,
+    members,
+    provenance_urls: [...new Set(input.provenanceUrls)].sort(),
+  };
+  writeImmutable(join(sourceDir, "receipt.json"), `${stableJson(receipt as unknown as JsonValue)}\n`);
+  const receiptText = [
+    input.title,
+    `Official origin: ${input.officialUrl}`,
+    `Archive transport: ${input.archiveUrl}`,
+    `Archive timestamp: ${input.archiveTimestamp}`,
+    `ZIP SHA-1: ${zipSha1}`,
+    `ZIP SHA-256: ${zipSha256}`,
+    `Service window: ${serviceWindow.start} through ${serviceWindow.end}`,
+    ...members.map((member) => `${member.member}: ${member.rows} rows, SHA-256 ${member.sha256}`),
+    ...receipt.provenance_urls.map((url) => `Provenance: ${url}`),
+    "",
+  ].join("\n");
+  writeSourceScaffold(input.sourceId, {
+    sourceId: input.sourceId,
+    title: input.title,
+    publisher: "Metropolitan Transportation Authority",
+    sourceGroup: "historical_gtfs_static",
+    sourceUrl: input.officialUrl,
+    finalUrl: input.archiveUrl,
+    documentDate: input.documentDate,
+    retrievedAt: input.retrievedAt,
+    contentType: "application/zip",
+    sha1: zipSha1,
+    sha256: zipSha256,
+    byteLength: statSync(zipTarget).size,
+    archiveTimestamp: input.archiveTimestamp,
+    termsNote: "Immutable archival transport of a byte-identical MTA-origin GTFS object; hashes and provenance are pinned in receipt.json.",
+  }, receiptText);
+
+  const base = `raw/sources/${input.sourceId}`;
+  return {
+    snapshot_id: input.snapshotId,
+    kind: "gtfs_static",
+    source_id: input.sourceId,
+    label: input.label,
+    retrieved_at: input.retrievedAt,
+    source_url: input.officialUrl,
+    service_window: serviceWindow,
+    artifacts: [
+      artifact(`${base}/source.zip`),
+      artifact(`${base}/receipt.json`),
+      ...members.map((member) => artifact(`${base}/extracted/${member.member}`, member.rows)),
+    ],
+  };
 }
 
 export function stageLocalDotSnapshot(): OperationalSnapshot {

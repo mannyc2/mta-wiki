@@ -66,6 +66,7 @@ export type GtfsTrip = {
   trip_id: string;
   shape_id: string;
   direction_id: string;
+  trip_headsign?: string | undefined;
 };
 
 export type GtfsStopTime = {
@@ -74,6 +75,8 @@ export type GtfsStopTime = {
   stop_sequence: number;
   arrival_time: string;
   departure_time: string;
+  pickup_type?: string | undefined;
+  drop_off_type?: string | undefined;
 };
 
 export type GtfsShapePoint = {
@@ -275,6 +278,7 @@ export function loadGtfsStaticSnapshot(
       trip_id: requireText(row, "trip_id", `trips[${index}]`),
       shape_id: row.shape_id ?? "",
       direction_id: row.direction_id ?? "",
+      trip_headsign: row.trip_headsign ?? "",
     })),
     stop_times: stopTimeRows.map((row, index) => ({
       trip_id: requireText(row, "trip_id", `stop_times[${index}]`),
@@ -282,6 +286,8 @@ export function loadGtfsStaticSnapshot(
       stop_sequence: finiteNumber(requireText(row, "stop_sequence", `stop_times[${index}]`), `stop_times[${index}].stop_sequence`),
       arrival_time: row.arrival_time ?? "",
       departure_time: row.departure_time ?? "",
+      pickup_type: row.pickup_type ?? "",
+      drop_off_type: row.drop_off_type ?? "",
     })),
     shapes: shapeRows.map((row, index) => ({
       shape_id: requireText(row, "shape_id", `shapes[${index}]`),

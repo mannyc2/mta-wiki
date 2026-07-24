@@ -36,6 +36,7 @@ export type Command =
   | "lane-traversal"
   | "lane-traversal-probe"
   | "schedule-diff"
+  | "historical-full-stop"
   | "bus-lane-identity-ledger"
   | "member-extent-ledger"
   | "replay-eval"
