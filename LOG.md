@@ -4,6 +4,21 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-24
+
+### Queens bus-stop member extent and grain closure
+
+- Accepted the dual-independent `APPROVE/APPROVE` review of the frozen 31-member
+  Queens redesign bus-stop package and persisted exactly 21 spatial decisions
+  plus 21 linked service-grain decisions. The resulting package projection is
+  21 resolved / 10 source-gap-blocked spatial rows and 19 resolved / 12
+  source-gap-blocked grain rows; Q28 and Q84 retain positive bounded extents
+  with explicitly unresolved service grain.
+- Added strict, non-authorizing source-gap overlays so a receipt-backed upstream
+  gap projects as `blocked_upstream` rather than `absent_in_source`. This
+  closure changes no occurrence, study, cross-product, ontology, or correction
+  authority and preserves prior decisions and reviewed siblings.
+
 ## 2026-07-23
 
 ### Bus-lane identity ledger closure

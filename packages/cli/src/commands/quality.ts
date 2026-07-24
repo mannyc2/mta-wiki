@@ -58,6 +58,10 @@ const memberExtentLedger: CommandHandler = () => {
   const extentDecisionDirs = optionValues(process.argv, "--extent-decisions");
   const grainDecisionDirs = optionValues(process.argv, "--grain-decisions");
   const absenceReceiptDirs = optionValues(process.argv, "--absence-receipts");
+  const sourceGapOverlayDirs = optionValues(
+    process.argv,
+    "--source-gap-overlays",
+  );
   const companionPath = optionValue(process.argv, "--companion");
   const occurrencesPath = optionValue(process.argv, "--occurrences");
   const dossierDir = optionValue(process.argv, "--dossiers");
@@ -70,6 +74,7 @@ const memberExtentLedger: CommandHandler = () => {
     ...(extentDecisionDirs.length > 0 ? { extentDecisionDirs } : {}),
     ...(grainDecisionDirs.length > 0 ? { grainDecisionDirs } : {}),
     ...(absenceReceiptDirs.length > 0 ? { absenceReceiptDirs } : {}),
+    ...(sourceGapOverlayDirs.length > 0 ? { sourceGapOverlayDirs } : {}),
     ...(dossierDir ? { dossierDir } : {}),
     ...(packetPath ? { packetPath } : {}),
     ...(extentOutputPath ? { extentOutputPath } : {}),

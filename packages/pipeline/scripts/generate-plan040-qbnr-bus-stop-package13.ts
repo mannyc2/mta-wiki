@@ -63,6 +63,9 @@ import type {
   ExactEvidenceBinding,
   MemberExtentDecision,
 } from "../src/quality/study-readiness-v1.js";
+import {
+  PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS,
+} from "../src/quality/plan040-qbnr-bus-stop-package13-closeout.js";
 
 const checkOnly = process.argv.includes("--check");
 const riskRoot = join(
@@ -196,6 +199,15 @@ const assertPinned = (path: string, expected: string): void => {
   const actual = sha256(readFileSync(join(repoRoot, path)));
   if (actual !== expected) throw new Error(`${path}: expected ${expected}, got ${actual}`);
 };
+const assertOneOfPinned = (
+  path: string,
+  expected: readonly string[],
+): void => {
+  const actual = sha256(readFileSync(join(repoRoot, path)));
+  if (!expected.includes(actual)) {
+    throw new Error(`${path}: expected one of ${expected.join(", ")}, got ${actual}`);
+  }
+};
 const writeStable = (path: string, value: JsonValue): void => {
   const bytes = stableBytes(value);
   if (checkOnly) {
@@ -272,6 +284,10 @@ type CandidateSpec = {
 type SeedCandidateSpec = CandidateSpec;
 type FrozenEvidenceSeed = {
   candidate_specs: SeedCandidateSpec[];
+  candidates?: Array<Pick<
+    Plan040Package13CandidateEvidence,
+    "candidate_key" | "immutable_rows"
+  >>;
 };
 const evidencePath = join(repoRoot, evidenceRelative);
 if (!existsSync(evidencePath)) {
@@ -279,7 +295,14 @@ if (!existsSync(evidencePath)) {
     `${evidenceRelative}: frozen candidate specification is required for replay`,
   );
 }
-const candidateSpecs = readJson<FrozenEvidenceSeed>(evidencePath).candidate_specs
+const frozenEvidenceSeed = readJson<FrozenEvidenceSeed>(evidencePath);
+const frozenCandidateByKey = new Map(
+  (frozenEvidenceSeed.candidates ?? []).map((candidate) => [
+    candidate.candidate_key,
+    candidate,
+  ]),
+);
+const candidateSpecs = frozenEvidenceSeed.candidate_specs
   .map((spec): CandidateSpec => {
     const base: Omit<CandidateSpec, "verdict" | "proposed"> = {
       candidate_key: spec.candidate_key,
@@ -420,7 +443,28 @@ for (const [path, expected] of [
     CHECKPOINT_PINS.extent_contract],
   ["data/contracts/operational-occurrence-member-extent/v1/manifest.json",
     CHECKPOINT_PINS.extent_manifest],
-] as const) assertPinned(path, expected);
+] as const) {
+  const postPersistencePins: Record<string, string> = {
+    "data/quality/operational-reference/member-extent-ledger.jsonl":
+      PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.extent_ledger,
+    "data/quality/operational-reference/member-grain-ledger.jsonl":
+      PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.grain_ledger,
+    "data/quality/study-readiness/v1/bridge-ledger.jsonl":
+      PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.bridge_ledger,
+    "data/quality/study-readiness/v1/manifest.json":
+      PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.study_manifest,
+    "data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl":
+      PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.member_extent_contract,
+    "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
+      PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.member_extent_manifest,
+  };
+  const postPersistencePin = postPersistencePins[path];
+  if (postPersistencePin) {
+    assertOneOfPinned(path, [expected, postPersistencePin]);
+  } else {
+    assertPinned(path, expected);
+  }
+}
 for (const pin of Object.values(UPSTREAM_PINS)) {
   assertPinned(pin.path, pin.sha256);
 }
@@ -1256,6 +1300,7 @@ const candidates: Plan040Package13CandidateEvidence[] =
     if (occurrence.path !== spec.occurrence_decision_path) {
       throw new Error(`${spec.treatment_record_id}: occurrence decision path drifted`);
     }
+    const frozenCandidate = frozenCandidateByKey.get(spec.candidate_key);
     const exactBindings = sortedBindings([
       binding(
         spec,
@@ -1324,7 +1369,7 @@ const candidates: Plan040Package13CandidateEvidence[] =
       treatment_family: "bus_stop_or_boarding",
       evidence_verdict: spec.verdict,
       source_statement: comparison.source_statement,
-      immutable_rows: {
+      immutable_rows: frozenCandidate?.immutable_rows ?? {
         extent_ledger_row: extent,
         extent_ledger_row_sha256: rowSha256(extent),
         grain_ledger_row: grain,

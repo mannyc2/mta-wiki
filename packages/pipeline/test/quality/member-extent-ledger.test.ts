@@ -6,11 +6,14 @@ import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
 import {
   MEMBER_EXTENT_ABSENCE_CONTRACT_ID,
+  MEMBER_SOURCE_GAP_OVERLAY_CONTRACT_ID,
   buildMemberExtentLedgers,
   loadMemberExtentAbsenceReceipts,
   loadMemberExtentDecisions,
+  loadMemberSourceGapOverlays,
   writeMemberExtentLedgerArtifacts,
   type MemberExtentAbsenceReceipt,
+  type MemberSourceGapOverlay,
 } from "../../src/quality/member-extent-ledger";
 import {
   MEMBER_GRAIN_DECISION_CONTRACT_ID,
@@ -98,6 +101,45 @@ function absence(target: MemberExtentRow): MemberExtentAbsenceReceipt {
     rationale: "Exact official targets were inspected without the required binding.",
     reviewed_at: "2026-07-23",
     reviewed_by: "fixture-reviewer",
+    authorizes_study: false,
+    authorizes_cross_product: false,
+  };
+}
+
+function sourceGapOverlay(input: Array<{
+  target: MemberExtentRow;
+  surfaces: Array<"member_extent" | "member_grain">;
+  missingRoles: string[];
+}>): MemberSourceGapOverlay {
+  return {
+    schema_version: 1,
+    contract_id: MEMBER_SOURCE_GAP_OVERLAY_CONTRACT_ID,
+    overlay_id: "fixture-source-gap-overlay",
+    source_receipt: {
+      path: "receipts/source-gaps.json",
+      sha256: "fixture-source-gap-receipt-sha256",
+      receipt_id: "fixture-source-gap-receipt",
+    },
+    owner_acceptance: {
+      path: "acceptance.json",
+      sha256: "fixture-owner-acceptance-sha256",
+    },
+    accepted_at: "2026-07-24T20:45:00Z",
+    accepted_by: "fixture-owner",
+    entries: input.map(({ target, surfaces, missingRoles }) => ({
+      candidate_key:
+        `${target.occurrence_id}\0${target.route_record_id}\0` +
+        target.treatment_record_id,
+      occurrence_id: target.occurrence_id,
+      route_record_id: target.route_record_id,
+      treatment_record_id: target.treatment_record_id,
+      blocked_surfaces: [...surfaces].sort(),
+      missing_roles: [...missingRoles].sort(),
+      verdict: `blocked_upstream:${[...missingRoles].sort().join("+")}`,
+      source_statement_evidence_id: "source#block",
+    })),
+    authorizes_decision_persistence: false,
+    authorizes_occurrence: false,
     authorizes_study: false,
     authorizes_cross_product: false,
   };
@@ -213,6 +255,88 @@ describe("member extent and grain ledgers", () => {
       exact_searches: [],
     }));
     expect(() => loadMemberExtentAbsenceReceipts([dir])).toThrow("non-empty array");
+  });
+
+  it("projects strict source-gap receipts without converting them to absence", () => {
+    const unresolved = row("source-gap");
+    const spatialOnly = row("source-gap-grain", "Q2");
+    const extentDecision = positiveDecision(spatialOnly);
+    const unresolvedGrain = parseMemberGrainDecision({
+      ...grainDecision(spatialOnly, extentDecision.decision_id),
+      service_scope: {
+        kind: "unresolved",
+        missing_roles: ["pattern_identity"],
+      },
+    });
+    const overlay = sourceGapOverlay([
+      {
+        target: unresolved,
+        surfaces: ["member_extent", "member_grain"],
+        missingRoles: ["reference_snapshot", "stop_identity"],
+      },
+      {
+        target: spatialOnly,
+        surfaces: ["member_grain"],
+        missingRoles: ["pattern_identity"],
+      },
+    ]);
+    const result = buildMemberExtentLedgers({
+      companionRows: [unresolved, spatialOnly],
+      extentDecisions: [extentDecision],
+      grainDecisions: [unresolvedGrain],
+      sourceGapOverlays: [overlay],
+    });
+    expect(result.extentRows.find((entry) =>
+      entry.treatment_record_id === unresolved.treatment_record_id
+    )).toMatchObject({
+      verdict: "blocked_upstream:reference_snapshot+stop_identity",
+      verdict_basis: "receipt:fixture-source-gap-receipt",
+      receipt_ids: ["fixture-source-gap-receipt"],
+    });
+    expect(result.grainRows.find((entry) =>
+      entry.treatment_record_id === unresolved.treatment_record_id
+    )?.verdict).toBe("blocked_upstream:reference_snapshot+stop_identity");
+    expect(result.extentRows.find((entry) =>
+      entry.treatment_record_id === spatialOnly.treatment_record_id
+    )?.verdict).toBe("resolved:bounded_segment");
+    expect(result.grainRows.find((entry) =>
+      entry.treatment_record_id === spatialOnly.treatment_record_id
+    )?.verdict).toBe("blocked_upstream:pattern_identity");
+    expect(result.extentRows.some((entry) =>
+      entry.verdict === "absent_in_source"
+    )).toBeFalse();
+    expect(result.grainRows.some((entry) =>
+      entry.verdict === "absent_in_source"
+    )).toBeFalse();
+  });
+
+  it("loads only canonical, nonauthorizing source-gap overlays", () => {
+    const target = row("source-gap-loader");
+    const dir = mkdtempSync(join(tmpdir(), "member-source-gaps-"));
+    const artifact = sourceGapOverlay([{
+      target,
+      surfaces: ["member_extent", "member_grain"],
+      missingRoles: ["reference_snapshot"],
+    }]);
+    writeFileSync(join(dir, "overlay.json"), JSON.stringify(artifact));
+    expect(loadMemberSourceGapOverlays([dir])).toEqual([artifact]);
+    writeFileSync(join(dir, "overlay.json"), JSON.stringify({
+      ...artifact,
+      authorizes_study: true,
+    }));
+    expect(() => loadMemberSourceGapOverlays([dir])).toThrow(
+      "cannot carry authority",
+    );
+    writeFileSync(join(dir, "overlay.json"), JSON.stringify({
+      ...artifact,
+      entries: artifact.entries.map((entry) => ({
+        ...entry,
+        verdict: "blocked_upstream:wrong_reason",
+      })),
+    }));
+    expect(() => loadMemberSourceGapOverlays([dir])).toThrow(
+      "noncanonical blocked reason",
+    );
   });
 
   it("loads single, array, and decisions-wrapper packages and rejects duplicate keys", () => {

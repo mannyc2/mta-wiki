@@ -10,6 +10,18 @@ import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
 import {
+  memberGrainDecisionKey,
+  parseMemberGrainDecision,
+  type MemberGrainDecision,
+} from "./member-grain-decisions.js";
+import type { MemberSourceGapOverlay } from "./member-extent-ledger.js";
+import { fileSha256 } from "../reference/snapshot-registry.js";
+import {
+  extentDecisionKey,
+  validateMemberExtentDecision,
+  type MemberExtentDecision,
+} from "./study-readiness-v1.js";
+import {
   PLAN040_PACKAGE_13_BLOCKED_EXTENT_AND_GRAIN_COUNT,
   PLAN040_PACKAGE_13_CANDIDATE_COUNT,
   PLAN040_PACKAGE_13_CANDIDATE_KEY_SHA256,
@@ -38,6 +50,42 @@ export const PLAN040_PACKAGE_13_GATE_SHA256 =
   "323bba3399a2a7064e94e7c0ddf2bb31bb0da00ceb13e976032bf66f01493be8" as const;
 export const PLAN040_PACKAGE_13_ACCEPTANCE_SHA256 =
   "5c34ecc6539c66f711dae2f6337969b3b6c0ae8a9a16786bf861eb759726093b" as const;
+export const PLAN040_PACKAGE_13_EXTENT_DECISIONS_SHA256 =
+  "35f9dc504c96caa2095e0b2905c7d1d512f01485634b810f4d65fbfa9e2e1645";
+export const PLAN040_PACKAGE_13_GRAIN_DECISIONS_SHA256 =
+  "3340a13eca188babb2f43344f8a7ecdf008f893cf3dd5cc3814c71cbab62c940";
+export const PLAN040_PACKAGE_13_SOURCE_GAP_OVERLAY_SHA256 =
+  "f5f6ded5b9e000e05a35b2956dad64ed6a37044ab836aa958a4b01803f512581";
+export const PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS = {
+  extent_ledger:
+    "06323143214794dc50628239cd67c0b641704ad9c2b9b25883f26b60c06f3daf",
+  grain_ledger:
+    "eaa4803cc4e8ef9c07beef4014eb2f82c5b9aafd8e9d899514320f6c7f7120f7",
+  bridge_ledger:
+    "c053736116774006a40a15e218a97e60e575785a6fbf6c6fccce5c8abd904cfd",
+  bridge_summary:
+    "701f5238c36d9f66b531c0860da04a4cceff4053a87885f63e1865613eadd139",
+  consumer_priority_manifest:
+    "d1427e1d300905a5d96432fa2e0f3b468be458f447c01c406b4f6f7a03ae5d30",
+  study_manifest:
+    "ea552dd8ed6eb3622b41547be4960eb125591b12efe5d590a42a5ca5ebafc874",
+  member_extent_contract:
+    "11b15f1419b36c5b125e9a57545ae5e97bac9c0877b0585df5c2d28472fc4e21",
+  member_extent_manifest:
+    "44a66c5f1652f2a2e35ee5b383d6b5cc806964bee4fc768b9a56cabba239ed42",
+  member_extent_review_ledger:
+    "c390b19ca4a0c5e7bdfba1541230c59ec2899c9f6669237604e46381da23eb15",
+  member_extent_summary:
+    "e5ecc67539eeabcf1359628d4587cf5b57978f4313fc8ce6ed97bcd5f8190c88",
+  operational_occurrences:
+    "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
+  operational_occurrence_decisions:
+    "80e530c9953e59a767afcb2f0d61202d9a9209469075f41f993fe7469ee45883",
+  treatment_components:
+    "a9b76c3b7121fc87d0f190a44fb00f182229d8d309968d3ba00a8c27a1492bae",
+  reviewed_candidate_packets:
+    "0ac700c48740fff5eb36b626b8dee72f95212378c0b40bc3dc6265b32c3d5844",
+} as const;
 
 const EVIDENCE_PATH =
   "data/quality/operational-reference/member-extent-risk/" +
@@ -57,6 +105,15 @@ const GATE_PATH =
 const ACCEPTANCE_PATH =
   "data/quality/operational-reference/member-extent-risk/" +
   "plan-040-qbnr-bus-stop-package-13-owner-acceptance-v1.json";
+const EXTENT_DECISIONS_PATH =
+  "data/quality/operational-reference/member-extent-ledger-decisions/" +
+  "plan-040-qbnr-bus-stop-package-13-v1.json";
+const GRAIN_DECISIONS_PATH =
+  "data/quality/operational-reference/member-grain-decisions/" +
+  "plan-040-qbnr-bus-stop-package-13-v1.json";
+const SOURCE_GAP_OVERLAY_PATH =
+  "data/quality/operational-reference/member-source-gap-overlays/" +
+  "plan-040-qbnr-bus-stop-package-13-v1.json";
 
 export const PLAN040_QBNR_BUS_STOP_PACKAGE_13_EVIDENCE_PATH =
   join(repoRoot, EVIDENCE_PATH);
@@ -66,6 +123,12 @@ export const PLAN040_QBNR_BUS_STOP_PACKAGE_13_GATE_PATH =
   join(repoRoot, GATE_PATH);
 export const PLAN040_QBNR_BUS_STOP_PACKAGE_13_ACCEPTANCE_PATH =
   join(repoRoot, ACCEPTANCE_PATH);
+export const PLAN040_QBNR_BUS_STOP_PACKAGE_13_EXTENT_DECISIONS_PATH =
+  join(repoRoot, EXTENT_DECISIONS_PATH);
+export const PLAN040_QBNR_BUS_STOP_PACKAGE_13_GRAIN_DECISIONS_PATH =
+  join(repoRoot, GRAIN_DECISIONS_PATH);
+export const PLAN040_QBNR_BUS_STOP_PACKAGE_13_SOURCE_GAP_OVERLAY_PATH =
+  join(repoRoot, SOURCE_GAP_OVERLAY_PATH);
 
 type Plan040Package13EvidenceArtifact = {
   candidates: Plan040Package13CandidateEvidence[];
@@ -514,5 +577,406 @@ export function writePlan040Package13GateAndAcceptance(input: {
     gateSha256: built.gateSha256,
     acceptancePath: PLAN040_QBNR_BUS_STOP_PACKAGE_13_ACCEPTANCE_PATH,
     acceptanceSha256: jsonSha256(built.acceptance),
+  };
+}
+
+type Plan040Package13GateAndAcceptance =
+  ReturnType<typeof buildPlan040Package13GateAndAcceptance>;
+
+type StrictSourceGapReceipt = {
+  receipt_id: string;
+  source_id: string;
+  candidate_count: number;
+  candidate_key_sha256: string;
+  exact_absence_count: number;
+  absence_projection_prohibited_for_unresolved_grain: true;
+  candidates: Array<{
+    candidate_key: string;
+    occurrence_id: string;
+    route_record_id: string;
+    treatment_record_id: string;
+    blocked_surfaces: Array<"member_extent" | "member_grain">;
+    resolved_surfaces: Array<"member_extent" | "member_grain">;
+    gap_codes: string[];
+    prospective_ledger_handling: Record<string, string>;
+    semantic_verdict: "blocked_upstream";
+    literal_exact_absence: false;
+    source_statement_present: true;
+    source_statement_evidence_id: string;
+    absence_projection_prohibited_for_unresolved_grain: true;
+    authorizes_decision_persistence: false;
+    authorizes_occurrence: false;
+    authorizes_study: false;
+    authorizes_cross_product: false;
+  }>;
+  authorizes_decision_persistence: false;
+  authorizes_occurrence: false;
+  authorizes_study: false;
+  authorizes_cross_product: false;
+};
+
+function assertAcceptedHash(
+  actual: readonly string[],
+  expectedSha256: string,
+  label: string,
+): void {
+  if (sortedHash(actual) !== expectedSha256) {
+    throw new Error(
+      `Plan 040 Package 13 ${label} drifted outside owner acceptance`,
+    );
+  }
+}
+
+export function buildPlan040Package13AcceptedArtifacts(input: {
+  evidence: Plan040Package13EvidenceArtifact;
+  draft: Plan040Package13Draft;
+  gate: Plan040Package13GateAndAcceptance["gate"];
+  acceptance: Plan040Package13GateAndAcceptance["acceptance"];
+  sourceGapReceipt: StrictSourceGapReceipt;
+}): {
+  extentDecisions: MemberExtentDecision[];
+  grainDecisions: MemberGrainDecision[];
+  sourceGapOverlay: MemberSourceGapOverlay;
+} {
+  validatePlan040Package13GateAndAcceptance({
+    evidence: input.evidence,
+    draft: input.draft,
+    gate: input.gate,
+    acceptance: input.acceptance,
+    acceptedAt: input.acceptance.accepted_at,
+  });
+  const partitions = candidatePartitions(input.evidence);
+  if (
+    input.gate.verdict !== "APPROVE" ||
+    input.gate.reviewer_result !== "APPROVE/APPROVE" ||
+    input.gate.reviewer_results.some((review) =>
+      review.verdict !== "APPROVE"
+    ) ||
+    input.acceptance.reviewer_result !== "APPROVE/APPROVE" ||
+    input.acceptance.authorization_state !==
+      "owner_accepted_exact_21_extent_21_grain_and_12_source_gap_overlays_only" ||
+    !input.acceptance.authorizes_decision_persistence ||
+    input.acceptance.authorizes_occurrence ||
+    input.acceptance.authorizes_study ||
+    input.acceptance.authorizes_cross_product ||
+    input.acceptance.authorizes_ontology ||
+    input.acceptance.authorizes_corrections ||
+    !input.acceptance.preservation_invariants
+      .accepted_prior_decisions_byte_identical ||
+    !input.acceptance.preservation_invariants
+      .preserved_siblings_byte_identical ||
+    !input.acceptance.preservation_invariants
+      .occurrence_decisions_unchanged ||
+    !input.acceptance.preservation_invariants
+      .study_authorization_unchanged ||
+    !input.acceptance.preservation_invariants
+      .cross_product_authorization_unchanged ||
+    !input.acceptance.preservation_invariants
+      .treatment_ontology_unchanged ||
+    !input.acceptance.preservation_invariants.correction_state_unchanged ||
+    !input.acceptance.preservation_invariants
+      .source_gap_receipt_strict_and_nonauthorizing ||
+    !input.acceptance.preservation_invariants
+      .absence_projection_prohibited_for_unresolved_grain
+  ) {
+    throw new Error(
+      "Plan 040 Package 13 acceptance does not authorize this persistence scope",
+    );
+  }
+
+  const decisionCandidates = partitions.decisionCandidates;
+  assertAcceptedHash(
+    decisionCandidates.map((candidate) => candidate.candidate_key),
+    input.acceptance.authorized_exact_persistence
+      .decision_candidate_key_sha256,
+    "decision candidate keys",
+  );
+  assertAcceptedHash(
+    decisionCandidates.map((candidate) =>
+      candidate.proposed_extent_decision!.decision_id
+    ),
+    input.acceptance.authorized_exact_persistence.extent_decision_id_sha256,
+    "extent decision ids",
+  );
+  assertAcceptedHash(
+    decisionCandidates.map((candidate) =>
+      candidate.proposed_grain_decision!.decision_id
+    ),
+    input.acceptance.authorized_exact_persistence.grain_decision_id_sha256,
+    "grain decision ids",
+  );
+
+  const extentDecisions = decisionCandidates.map((candidate) => {
+    const decision = {
+      ...candidate.proposed_extent_decision!,
+      reviewed_at: input.acceptance.accepted_at,
+      reviewed_by: input.acceptance.accepted_by,
+    };
+    validateMemberExtentDecision(decision);
+    if (
+      extentDecisionKey(decision) !== candidate.candidate_key ||
+      decision.resolution === "unresolved"
+    ) {
+      throw new Error(
+        `${candidate.treatment_record_id}: accepted extent state drifted`,
+      );
+    }
+    return decision;
+  }).sort((left, right) =>
+    extentDecisionKey(left).localeCompare(extentDecisionKey(right))
+  );
+  const extentByKey = new Map(extentDecisions.map((decision) =>
+    [extentDecisionKey(decision), decision]
+  ));
+  const grainDecisions = decisionCandidates.map((candidate) => {
+    const decision = parseMemberGrainDecision({
+      ...candidate.proposed_grain_decision!,
+      reviewed_at: input.acceptance.accepted_at,
+      reviewed_by: input.acceptance.accepted_by,
+    });
+    const extent = extentByKey.get(candidate.candidate_key)!;
+    const unresolved = candidate.evidence_verdict ===
+      "positive_extent_proposed_grain_blocked";
+    if (
+      memberGrainDecisionKey(decision) !== candidate.candidate_key ||
+      decision.member_extent_decision_id !== extent.decision_id ||
+      (
+        unresolved
+          ? decision.service_scope.kind !== "unresolved"
+          : decision.service_scope.kind !== "trip_subset"
+      )
+    ) {
+      throw new Error(
+        `${candidate.treatment_record_id}: accepted grain state drifted`,
+      );
+    }
+    return decision;
+  }).sort((left, right) =>
+    memberGrainDecisionKey(left).localeCompare(
+      memberGrainDecisionKey(right),
+    )
+  );
+  if (
+    extentDecisions.length !== 21 ||
+    grainDecisions.length !== 21 ||
+    grainDecisions.filter((decision) =>
+      decision.service_scope.kind === "trip_subset").length !== 19 ||
+    grainDecisions.filter((decision) =>
+      decision.service_scope.kind === "unresolved").length !== 2
+  ) {
+    throw new Error(
+      "Plan 040 Package 13 accepted decision distribution drifted",
+    );
+  }
+
+  const receipt = input.sourceGapReceipt;
+  if (
+    receipt.receipt_id !==
+      "plan-040-qbnr-bus-stop-package-13-source-gap-blocks-v1" ||
+    receipt.candidate_count !== 12 ||
+    receipt.candidate_key_sha256 !==
+      PLAN040_PACKAGE_13_SOURCE_GAP_KEY_SHA256 ||
+    receipt.exact_absence_count !== 0 ||
+    !receipt.absence_projection_prohibited_for_unresolved_grain ||
+    receipt.authorizes_decision_persistence ||
+    receipt.authorizes_occurrence ||
+    receipt.authorizes_study ||
+    receipt.authorizes_cross_product ||
+    receipt.candidates.length !== 12 ||
+    receipt.candidates.some((candidate) => {
+      const missingRoles = [...new Set(candidate.gap_codes)].sort();
+      const reason = `blocked_upstream:${missingRoles.join("+")}`;
+      return (
+        candidate.semantic_verdict !== "blocked_upstream" ||
+        candidate.literal_exact_absence ||
+        !candidate.source_statement_present ||
+        !candidate.absence_projection_prohibited_for_unresolved_grain ||
+        candidate.authorizes_decision_persistence ||
+        candidate.authorizes_occurrence ||
+        candidate.authorizes_study ||
+        candidate.authorizes_cross_product ||
+        candidate.blocked_surfaces.some((surface) =>
+          candidate.prospective_ledger_handling[surface] !== reason
+        )
+      );
+    })
+  ) {
+    throw new Error("Plan 040 Package 13 strict source-gap receipt drifted");
+  }
+  assertAcceptedHash(
+    receipt.candidates.map((candidate) => candidate.candidate_key),
+    input.acceptance.authorized_exact_persistence
+      .source_gap_candidate_key_sha256,
+    "source-gap candidate keys",
+  );
+  const sourceGapOverlay: MemberSourceGapOverlay = {
+    schema_version: 1,
+    contract_id: "member-source-gap-overlay-v1",
+    overlay_id: "plan-040-qbnr-bus-stop-package-13-source-gap-overlay-v1",
+    source_receipt: {
+      path: SOURCE_GAP_RECEIPT_PATH,
+      sha256: PLAN040_PACKAGE_13_SOURCE_GAP_RECEIPT_SHA256,
+      receipt_id: receipt.receipt_id,
+    },
+    owner_acceptance: {
+      path: ACCEPTANCE_PATH,
+      sha256: PLAN040_PACKAGE_13_ACCEPTANCE_SHA256,
+    },
+    accepted_at: input.acceptance.accepted_at,
+    accepted_by: input.acceptance.accepted_by,
+    entries: receipt.candidates.map((candidate) => {
+      const missingRoles = [...new Set(candidate.gap_codes)].sort();
+      return {
+        candidate_key: candidate.candidate_key,
+        occurrence_id: candidate.occurrence_id,
+        route_record_id: candidate.route_record_id,
+        treatment_record_id: candidate.treatment_record_id,
+        blocked_surfaces: [...candidate.blocked_surfaces].sort(),
+        missing_roles: missingRoles,
+        verdict: `blocked_upstream:${missingRoles.join("+")}` as const,
+        source_statement_evidence_id:
+          candidate.source_statement_evidence_id,
+      };
+    }).sort((left, right) =>
+      left.candidate_key.localeCompare(right.candidate_key)
+    ),
+    authorizes_decision_persistence: false,
+    authorizes_occurrence: false,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+  };
+  return { extentDecisions, grainDecisions, sourceGapOverlay };
+}
+
+export function acceptPlan040Package13DecisionPackage(): {
+  extentDecisionPath: string;
+  extentDecisionSha256: string;
+  grainDecisionPath: string;
+  grainDecisionSha256: string;
+  sourceGapOverlayPath: string;
+  sourceGapOverlaySha256: string;
+  extentDecisionCount: 21;
+  grainDecisionCount: 21;
+  sourceGapOverlayCount: 12;
+} {
+  for (const [path, expectedSha256, label] of [
+    [
+      PLAN040_QBNR_BUS_STOP_PACKAGE_13_EVIDENCE_PATH,
+      PLAN040_PACKAGE_13_EVIDENCE_SHA256,
+      "evidence",
+    ],
+    [
+      PLAN040_QBNR_BUS_STOP_PACKAGE_13_DRAFT_PATH,
+      PLAN040_PACKAGE_13_DRAFT_SHA256,
+      "draft",
+    ],
+    [
+      join(repoRoot, COMPARISON_RECEIPT_PATH),
+      PLAN040_PACKAGE_13_COMPARISON_RECEIPT_SHA256,
+      "comparison receipt",
+    ],
+    [
+      join(repoRoot, SOURCE_GAP_RECEIPT_PATH),
+      PLAN040_PACKAGE_13_SOURCE_GAP_RECEIPT_SHA256,
+      "source-gap receipt",
+    ],
+    [
+      PLAN040_QBNR_BUS_STOP_PACKAGE_13_GATE_PATH,
+      PLAN040_PACKAGE_13_GATE_SHA256,
+      "dual-review gate",
+    ],
+    [
+      PLAN040_QBNR_BUS_STOP_PACKAGE_13_ACCEPTANCE_PATH,
+      PLAN040_PACKAGE_13_ACCEPTANCE_SHA256,
+      "owner acceptance",
+    ],
+  ] as const) {
+    const actualSha256 = fileSha256(path);
+    if (actualSha256 !== expectedSha256) {
+      throw new Error(
+        `Plan 040 Package 13 ${label} pin drifted: ${actualSha256}`,
+      );
+    }
+  }
+  const evidence = JSON.parse(readFileSync(
+    PLAN040_QBNR_BUS_STOP_PACKAGE_13_EVIDENCE_PATH,
+    "utf8",
+  )) as Plan040Package13EvidenceArtifact;
+  const draft = JSON.parse(readFileSync(
+    PLAN040_QBNR_BUS_STOP_PACKAGE_13_DRAFT_PATH,
+    "utf8",
+  )) as Plan040Package13Draft;
+  const gate = JSON.parse(readFileSync(
+    PLAN040_QBNR_BUS_STOP_PACKAGE_13_GATE_PATH,
+    "utf8",
+  )) as Plan040Package13GateAndAcceptance["gate"];
+  const acceptance = JSON.parse(readFileSync(
+    PLAN040_QBNR_BUS_STOP_PACKAGE_13_ACCEPTANCE_PATH,
+    "utf8",
+  )) as Plan040Package13GateAndAcceptance["acceptance"];
+  const sourceGapReceipt = JSON.parse(readFileSync(
+    join(repoRoot, SOURCE_GAP_RECEIPT_PATH),
+    "utf8",
+  )) as StrictSourceGapReceipt;
+  const accepted = buildPlan040Package13AcceptedArtifacts({
+    evidence,
+    draft,
+    gate,
+    acceptance,
+    sourceGapReceipt,
+  });
+  writeImmutableJson(
+    PLAN040_QBNR_BUS_STOP_PACKAGE_13_EXTENT_DECISIONS_PATH,
+    { decisions: accepted.extentDecisions },
+  );
+  writeImmutableJson(
+    PLAN040_QBNR_BUS_STOP_PACKAGE_13_GRAIN_DECISIONS_PATH,
+    { decisions: accepted.grainDecisions },
+  );
+  writeImmutableJson(
+    PLAN040_QBNR_BUS_STOP_PACKAGE_13_SOURCE_GAP_OVERLAY_PATH,
+    accepted.sourceGapOverlay,
+  );
+  const extentDecisionSha256 = fileSha256(
+    PLAN040_QBNR_BUS_STOP_PACKAGE_13_EXTENT_DECISIONS_PATH,
+  );
+  const grainDecisionSha256 = fileSha256(
+    PLAN040_QBNR_BUS_STOP_PACKAGE_13_GRAIN_DECISIONS_PATH,
+  );
+  const sourceGapOverlaySha256 = fileSha256(
+    PLAN040_QBNR_BUS_STOP_PACKAGE_13_SOURCE_GAP_OVERLAY_PATH,
+  );
+  if (
+    (
+      PLAN040_PACKAGE_13_EXTENT_DECISIONS_SHA256 &&
+      extentDecisionSha256 !== PLAN040_PACKAGE_13_EXTENT_DECISIONS_SHA256
+    ) ||
+    (
+      PLAN040_PACKAGE_13_GRAIN_DECISIONS_SHA256 &&
+      grainDecisionSha256 !== PLAN040_PACKAGE_13_GRAIN_DECISIONS_SHA256
+    ) ||
+    (
+      PLAN040_PACKAGE_13_SOURCE_GAP_OVERLAY_SHA256 &&
+      sourceGapOverlaySha256 !==
+        PLAN040_PACKAGE_13_SOURCE_GAP_OVERLAY_SHA256
+    )
+  ) {
+    throw new Error(
+      "Plan 040 Package 13 persisted artifact output pin drifted",
+    );
+  }
+  return {
+    extentDecisionPath:
+      PLAN040_QBNR_BUS_STOP_PACKAGE_13_EXTENT_DECISIONS_PATH,
+    extentDecisionSha256,
+    grainDecisionPath:
+      PLAN040_QBNR_BUS_STOP_PACKAGE_13_GRAIN_DECISIONS_PATH,
+    grainDecisionSha256,
+    sourceGapOverlayPath:
+      PLAN040_QBNR_BUS_STOP_PACKAGE_13_SOURCE_GAP_OVERLAY_PATH,
+    sourceGapOverlaySha256,
+    extentDecisionCount: 21,
+    grainDecisionCount: 21,
+    sourceGapOverlayCount: 12,
   };
 }

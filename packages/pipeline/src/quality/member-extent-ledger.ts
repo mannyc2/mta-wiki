@@ -26,6 +26,8 @@ export const MEMBER_EXTENT_LEDGER_SCHEMA_VERSION = 1 as const;
 export const MEMBER_EXTENT_LEDGER_CONTRACT_ID = "member-extent-ledger-v1" as const;
 export const MEMBER_GRAIN_LEDGER_CONTRACT_ID = "member-grain-ledger-v1" as const;
 export const MEMBER_EXTENT_ABSENCE_CONTRACT_ID = "member-extent-absence-receipt-v1" as const;
+export const MEMBER_SOURCE_GAP_OVERLAY_CONTRACT_ID =
+  "member-source-gap-overlay-v1" as const;
 export const DEFAULT_MEMBER_EXTENT_COMPANION =
   "data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl";
 export const DEFAULT_MEMBER_EXTENT_OCCURRENCES =
@@ -38,6 +40,8 @@ export const DEFAULT_MEMBER_EXTENT_DECISION_DIR =
   "data/quality/operational-reference/member-extent-ledger-decisions";
 export const DEFAULT_MEMBER_GRAIN_DECISION_DIR =
   "data/quality/operational-reference/member-grain-decisions";
+export const DEFAULT_MEMBER_SOURCE_GAP_OVERLAY_DIR =
+  "data/quality/operational-reference/member-source-gap-overlays";
 export const DEFAULT_MEMBER_EXTENT_ABSENCE_DIR =
   "data/quality/acquisition/receipts/member-extent";
 export const DEFAULT_SCHEDULE_DIFF_DIR =
@@ -62,6 +66,36 @@ export type MemberExtentAbsenceReceipt = {
   rationale: string;
   reviewed_at: string;
   reviewed_by: string;
+  authorizes_study: false;
+  authorizes_cross_product: false;
+};
+
+export type MemberSourceGapOverlayEntry = MemberExtentKey & {
+  candidate_key: string;
+  blocked_surfaces: MemberLedgerSurface[];
+  missing_roles: string[];
+  verdict: `blocked_upstream:${string}`;
+  source_statement_evidence_id: string;
+};
+
+export type MemberSourceGapOverlay = {
+  schema_version: typeof MEMBER_EXTENT_LEDGER_SCHEMA_VERSION;
+  contract_id: typeof MEMBER_SOURCE_GAP_OVERLAY_CONTRACT_ID;
+  overlay_id: string;
+  source_receipt: {
+    path: string;
+    sha256: string;
+    receipt_id: string;
+  };
+  owner_acceptance: {
+    path: string;
+    sha256: string;
+  };
+  accepted_at: string;
+  accepted_by: string;
+  entries: MemberSourceGapOverlayEntry[];
+  authorizes_decision_persistence: false;
+  authorizes_occurrence: false;
   authorizes_study: false;
   authorizes_cross_product: false;
 };
@@ -145,6 +179,21 @@ const receiptFields = new Set([
   "authorizes_cross_product", "authorizes_study", "contract_id", "exact_searches", "extent_keys",
   "rationale", "receipt_id", "reviewed_at", "reviewed_by", "schema_version", "surfaces", "urls_inspected",
 ]);
+const sourceGapOverlayFields = new Set([
+  "accepted_at", "accepted_by", "authorizes_cross_product",
+  "authorizes_decision_persistence", "authorizes_occurrence",
+  "authorizes_study", "contract_id", "entries", "overlay_id",
+  "owner_acceptance", "schema_version", "source_receipt",
+]);
+const sourceGapEntryFields = new Set([
+  "blocked_surfaces", "candidate_key", "missing_roles", "occurrence_id",
+  "route_record_id", "source_statement_evidence_id", "treatment_record_id",
+  "verdict",
+]);
+const sourceGapReceiptRefFields = new Set([
+  "path", "receipt_id", "sha256",
+]);
+const acceptanceRefFields = new Set(["path", "sha256"]);
 const keyFields = new Set(["occurrence_id", "route_record_id", "treatment_record_id"]);
 
 function object(value: unknown, path: string): Record<string, unknown> {
@@ -312,6 +361,178 @@ export function loadMemberExtentAbsenceReceipts(directories: readonly string[]):
     }
   }
   return receipts.sort((left, right) => left.receipt_id.localeCompare(right.receipt_id));
+}
+
+function parseSourceGapOverlay(
+  value: unknown,
+  path: string,
+): MemberSourceGapOverlay {
+  const parsed = object(value, path);
+  exactKeys(parsed, sourceGapOverlayFields, path);
+  if (
+    parsed.schema_version !== MEMBER_EXTENT_LEDGER_SCHEMA_VERSION ||
+    parsed.contract_id !== MEMBER_SOURCE_GAP_OVERLAY_CONTRACT_ID
+  ) {
+    throw new Error(`${path}: invalid source-gap overlay contract header`);
+  }
+  if (
+    parsed.authorizes_decision_persistence !== false ||
+    parsed.authorizes_occurrence !== false ||
+    parsed.authorizes_study !== false ||
+    parsed.authorizes_cross_product !== false
+  ) {
+    throw new Error(`${path}: source-gap overlays cannot carry authority`);
+  }
+  const sourceReceipt = object(
+    parsed.source_receipt,
+    `${path}.source_receipt`,
+  );
+  exactKeys(
+    sourceReceipt,
+    sourceGapReceiptRefFields,
+    `${path}.source_receipt`,
+  );
+  const ownerAcceptance = object(
+    parsed.owner_acceptance,
+    `${path}.owner_acceptance`,
+  );
+  exactKeys(
+    ownerAcceptance,
+    acceptanceRefFields,
+    `${path}.owner_acceptance`,
+  );
+  if (!Array.isArray(parsed.entries) || parsed.entries.length === 0) {
+    throw new Error(`${path}.entries: expected non-empty array`);
+  }
+  const entries = parsed.entries.map((value, index) => {
+    const itemPath = `${path}.entries[${index}]`;
+    const entry = object(value, itemPath);
+    exactKeys(entry, sourceGapEntryFields, itemPath);
+    const key = {
+      occurrence_id: nonempty(entry.occurrence_id, `${itemPath}.occurrence_id`),
+      route_record_id: nonempty(
+        entry.route_record_id,
+        `${itemPath}.route_record_id`,
+      ),
+      treatment_record_id: nonempty(
+        entry.treatment_record_id,
+        `${itemPath}.treatment_record_id`,
+      ),
+    };
+    const candidateKey = nonempty(
+      entry.candidate_key,
+      `${itemPath}.candidate_key`,
+    );
+    if (candidateKey !== extentDecisionKey(key)) {
+      throw new Error(`${itemPath}.candidate_key: key mismatch`);
+    }
+    const blockedSurfaces = sortedStrings(
+      entry.blocked_surfaces,
+      `${itemPath}.blocked_surfaces`,
+      false,
+    );
+    if (blockedSurfaces.some((surface) =>
+      surface !== "member_extent" && surface !== "member_grain"
+    )) {
+      throw new Error(`${itemPath}.blocked_surfaces: unsupported surface`);
+    }
+    const missingRoles = sortedStrings(
+      entry.missing_roles,
+      `${itemPath}.missing_roles`,
+      false,
+    );
+    const expectedVerdict =
+      `blocked_upstream:${missingRoles.join("+")}` as const;
+    const verdict = nonempty(entry.verdict, `${itemPath}.verdict`);
+    if (verdict !== expectedVerdict) {
+      throw new Error(`${itemPath}.verdict: noncanonical blocked reason`);
+    }
+    return {
+      ...key,
+      candidate_key: candidateKey,
+      blocked_surfaces: blockedSurfaces as MemberLedgerSurface[],
+      missing_roles: missingRoles,
+      verdict: expectedVerdict,
+      source_statement_evidence_id: nonempty(
+        entry.source_statement_evidence_id,
+        `${itemPath}.source_statement_evidence_id`,
+      ),
+    };
+  });
+  if (
+    new Set(entries.map((entry) => entry.candidate_key)).size !==
+      entries.length ||
+    stableJson(entries.map((entry) => entry.candidate_key) as JsonValue) !==
+      stableJson(entries.map((entry) => entry.candidate_key).sort() as JsonValue)
+  ) {
+    throw new Error(`${path}.entries: keys must be unique and sorted`);
+  }
+  return {
+    schema_version: MEMBER_EXTENT_LEDGER_SCHEMA_VERSION,
+    contract_id: MEMBER_SOURCE_GAP_OVERLAY_CONTRACT_ID,
+    overlay_id: nonempty(parsed.overlay_id, `${path}.overlay_id`),
+    source_receipt: {
+      path: nonempty(sourceReceipt.path, `${path}.source_receipt.path`),
+      sha256: nonempty(
+        sourceReceipt.sha256,
+        `${path}.source_receipt.sha256`,
+      ),
+      receipt_id: nonempty(
+        sourceReceipt.receipt_id,
+        `${path}.source_receipt.receipt_id`,
+      ),
+    },
+    owner_acceptance: {
+      path: nonempty(
+        ownerAcceptance.path,
+        `${path}.owner_acceptance.path`,
+      ),
+      sha256: nonempty(
+        ownerAcceptance.sha256,
+        `${path}.owner_acceptance.sha256`,
+      ),
+    },
+    accepted_at: nonempty(parsed.accepted_at, `${path}.accepted_at`),
+    accepted_by: nonempty(parsed.accepted_by, `${path}.accepted_by`),
+    entries,
+    authorizes_decision_persistence: false,
+    authorizes_occurrence: false,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+  };
+}
+
+export function loadMemberSourceGapOverlays(
+  directories: readonly string[],
+): MemberSourceGapOverlay[] {
+  const overlays = directories.flatMap((directory) =>
+    jsonFiles(directory).map((path) =>
+      parseSourceGapOverlay(
+        JSON.parse(readFileSync(path, "utf8")) as unknown,
+        path,
+      )
+    )
+  );
+  const ids = new Set<string>();
+  const coverage = new Set<string>();
+  for (const overlay of overlays) {
+    if (ids.has(overlay.overlay_id)) {
+      throw new Error(`duplicate source-gap overlay id ${overlay.overlay_id}`);
+    }
+    ids.add(overlay.overlay_id);
+    for (const entry of overlay.entries) {
+      for (const surface of entry.blocked_surfaces) {
+        const coverageKey = `${surface}\0${entry.candidate_key}`;
+        if (coverage.has(coverageKey)) {
+          throw new Error(`duplicate source-gap coverage ${coverageKey}`);
+        }
+        coverage.add(coverageKey);
+      }
+    }
+  }
+  return overlays.sort((left, right) =>
+    left.overlay_id.localeCompare(right.overlay_id)
+  );
 }
 
 function readCompanion(path: string): MemberExtentRow[] {
@@ -535,11 +756,42 @@ function absenceIndex(
   return output;
 }
 
+type IndexedSourceGap = {
+  overlay: MemberSourceGapOverlay;
+  entry: MemberSourceGapOverlayEntry;
+};
+
+function sourceGapIndex(
+  overlays: readonly MemberSourceGapOverlay[],
+  denominator: ReadonlySet<string>,
+): Map<string, IndexedSourceGap> {
+  const output = new Map<string, IndexedSourceGap>();
+  for (const overlay of overlays) {
+    for (const entry of overlay.entries) {
+      if (!denominator.has(entry.candidate_key)) {
+        throw new Error(
+          `${overlay.overlay_id}: source-gap overlay has orphan key ` +
+            entry.candidate_key,
+        );
+      }
+      for (const surface of entry.blocked_surfaces) {
+        const coverageKey = `${surface}\0${entry.candidate_key}`;
+        if (output.has(coverageKey)) {
+          throw new Error(`duplicate source-gap coverage ${coverageKey}`);
+        }
+        output.set(coverageKey, { overlay, entry });
+      }
+    }
+  }
+  return output;
+}
+
 export function buildMemberExtentLedgers(input: {
   companionRows: readonly MemberExtentRow[];
   extentDecisions?: readonly MemberExtentDecision[];
   grainDecisions?: readonly MemberGrainDecision[];
   absenceReceipts?: readonly MemberExtentAbsenceReceipt[];
+  sourceGapOverlays?: readonly MemberSourceGapOverlay[];
   dossierArtifacts?: readonly ScheduleDossierArtifact[];
   packetIds?: ReadonlyMap<string, string>;
   expectedMemberKeys?: readonly MemberExtentKey[];
@@ -573,6 +825,10 @@ export function buildMemberExtentLedgers(input: {
     .map((decision, index) => parseMemberGrainDecision(decision, `grainDecisions[${index}]`));
   const parsedReceipts = (input.absenceReceipts ?? [])
     .map((receipt, index) => parseAbsenceReceipt(receipt, `absenceReceipts[${index}]`));
+  const parsedSourceGapOverlays = (input.sourceGapOverlays ?? [])
+    .map((overlay, index) =>
+      parseSourceGapOverlay(overlay, `sourceGapOverlays[${index}]`)
+    );
   const extentDecisions = new Map<string, MemberExtentDecision>();
   const grainDecisions = new Map<string, MemberGrainDecision>();
   const decisionIds = new Set<string>();
@@ -597,6 +853,7 @@ export function buildMemberExtentLedgers(input: {
     if (!denominator.has(key)) throw new Error(`orphan decision key ${key}`);
   }
   const absences = absenceIndex(parsedReceipts, denominator);
+  const sourceGaps = sourceGapIndex(parsedSourceGapOverlays, denominator);
   const dossierIndex = dossierRefs(input.dossierArtifacts ?? []);
   const extentRows = companion.map((current) => {
     const key = extentDecisionKey(current);
@@ -624,8 +881,18 @@ export function buildMemberExtentLedgers(input: {
       }
     }
     const absence = absences.get(`member_extent\0${key}`);
+    const sourceGap = sourceGaps.get(`member_extent\0${key}`);
+    if (absence && sourceGap) {
+      throw new Error(`${key}: absence and source-gap overlays conflict`);
+    }
     if (absence && (overlay || current.extent !== "unresolved")) {
       throw new Error(`${absence.receipt_id}: absence conflicts with a positive spatial decision`);
+    }
+    if (sourceGap && (overlay || current.extent !== "unresolved")) {
+      throw new Error(
+        `${sourceGap.overlay.overlay_id}: source gap conflicts with a ` +
+          "positive spatial decision",
+      );
     }
     const resolvedKind = overlay?.resolution ?? current.extent;
     const decisionId = overlay?.decision_id ?? current.decision_id;
@@ -648,12 +915,21 @@ export function buildMemberExtentLedgers(input: {
       packet_id: input.packetIds?.get(key) ?? null,
       verdict: absence
         ? "absent_in_source"
+        : sourceGap
+        ? sourceGap.entry.verdict
         : resolvedKind === "unresolved" ? "unreviewed" : `resolved:${resolvedKind}`,
       verdict_basis: absence
         ? `receipt:${absence.receipt_id}`
+        : sourceGap
+        ? `receipt:${sourceGap.overlay.source_receipt.receipt_id}`
         : resolvedKind === "unresolved" ? null : `review:${decisionId}`,
-      receipt_ids: absence ? [absence.receipt_id] : [],
-      updated_at: absence?.reviewed_at ?? overlay?.reviewed_at ?? null,
+      receipt_ids: absence
+        ? [absence.receipt_id]
+        : sourceGap ? [sourceGap.overlay.source_receipt.receipt_id] : [],
+      updated_at: absence?.reviewed_at ??
+        sourceGap?.overlay.accepted_at ??
+        overlay?.reviewed_at ??
+        null,
       authorizes_study: false,
       authorizes_cross_product: false,
     } satisfies MemberExtentLedgerRow;
@@ -664,7 +940,25 @@ export function buildMemberExtentLedgers(input: {
     const spatial = spatialByKey.get(key)!;
     const decision = grainDecisions.get(key);
     const absence = absences.get(`member_grain\0${key}`);
+    const sourceGap = sourceGaps.get(`member_grain\0${key}`);
+    if (absence && sourceGap) {
+      throw new Error(`${key}: absence and source-gap overlays conflict`);
+    }
     if (decision && absence) throw new Error(`${key}: grain decision conflicts with absence receipt`);
+    if (
+      sourceGap &&
+      decision &&
+      (
+        decision.service_scope.kind !== "unresolved" ||
+        stableJson(
+          decision.service_scope.missing_roles as unknown as JsonValue,
+        ) !== stableJson(sourceGap.entry.missing_roles as JsonValue)
+      )
+    ) {
+      throw new Error(
+        `${decision.decision_id}: grain decision conflicts with source gap`,
+      );
+    }
     const effectiveExtentDecisionId = extentDecisions.get(key)?.decision_id ?? current.decision_id;
     const terminalGrain = decision && decision.service_scope.kind !== "unresolved";
     if (terminalGrain &&
@@ -682,6 +976,8 @@ export function buildMemberExtentLedgers(input: {
     }
     const verdict = absence
       ? "absent_in_source"
+      : sourceGap
+      ? sourceGap.entry.verdict
       : decision?.service_scope.kind === "not_applicable"
         ? "not_applicable"
         : decision?.service_scope.kind === "unresolved"
@@ -709,10 +1005,18 @@ export function buildMemberExtentLedgers(input: {
       dossier_refs: spatial.dossier_refs,
       packet_id: spatial.packet_id,
       verdict,
-      verdict_basis: absence ? `receipt:${absence.receipt_id}` :
-        decision ? `review:${decision.decision_id}` : null,
-      receipt_ids: absence ? [absence.receipt_id] : [],
-      updated_at: absence?.reviewed_at ?? decision?.reviewed_at ?? null,
+      verdict_basis: absence
+        ? `receipt:${absence.receipt_id}`
+        : sourceGap
+        ? `receipt:${sourceGap.overlay.source_receipt.receipt_id}`
+        : decision ? `review:${decision.decision_id}` : null,
+      receipt_ids: absence
+        ? [absence.receipt_id]
+        : sourceGap ? [sourceGap.overlay.source_receipt.receipt_id] : [],
+      updated_at: absence?.reviewed_at ??
+        sourceGap?.overlay.accepted_at ??
+        decision?.reviewed_at ??
+        null,
       authorizes_study: false,
       authorizes_cross_product: false,
     } satisfies MemberGrainLedgerRow;
@@ -741,6 +1045,7 @@ export function writeMemberExtentLedgerArtifacts(options: {
   extentDecisionDirs?: string[];
   grainDecisionDirs?: string[];
   absenceReceiptDirs?: string[];
+  sourceGapOverlayDirs?: string[];
   dossierDir?: string;
   packetPath?: string;
   extentOutputPath?: string;
@@ -758,6 +1063,10 @@ export function writeMemberExtentLedgerArtifacts(options: {
   const extentDecisionDirs = (options.extentDecisionDirs ?? [DEFAULT_MEMBER_EXTENT_DECISION_DIR]).map(absolute);
   const grainDecisionDirs = (options.grainDecisionDirs ?? [DEFAULT_MEMBER_GRAIN_DECISION_DIR]).map(absolute);
   const absenceReceiptDirs = (options.absenceReceiptDirs ?? [DEFAULT_MEMBER_EXTENT_ABSENCE_DIR]).map(absolute);
+  const sourceGapOverlayDirs = (
+    options.sourceGapOverlayDirs ??
+      [DEFAULT_MEMBER_SOURCE_GAP_OVERLAY_DIR]
+  ).map(absolute);
   const dossierDir = absolute(options.dossierDir ?? DEFAULT_SCHEDULE_DIFF_DIR);
   const packetPath = absolute(options.packetPath ??
     "data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl");
@@ -769,6 +1078,7 @@ export function writeMemberExtentLedgerArtifacts(options: {
     extentDecisions: loadMemberExtentDecisions(extentDecisionDirs),
     grainDecisions: loadMemberGrainDecisions(grainDecisionDirs),
     absenceReceipts: loadMemberExtentAbsenceReceipts(absenceReceiptDirs),
+    sourceGapOverlays: loadMemberSourceGapOverlays(sourceGapOverlayDirs),
     dossierArtifacts: readScheduleDossiers(dossierDir, rootDir),
     packetIds: packetIndex(packetPath),
   });

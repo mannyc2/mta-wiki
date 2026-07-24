@@ -60,10 +60,10 @@ describe("study-readiness v1 extent contract", () => {
     expect(summary.eligible_member_extent_row_count).toBe(306);
     expect(summary.extent_counts).toEqual({
       route_wide: 14,
-      bounded_segment: 29,
-      stop_set: 4,
+      bounded_segment: 47,
+      stop_set: 7,
       mixed: 0,
-      unresolved: 261,
+      unresolved: 240,
     });
     expect(rows.every((row) => !row.authorizes_study && !row.authorizes_cross_product)).toBe(true);
     expect(rows.filter((row) => row.extent === "unresolved")
@@ -272,8 +272,8 @@ describe("study-readiness v1 Tracker bridge", () => {
     );
     expect(manifest.target_count).toBe(404);
     expect(manifest.historical_source_fixable_target_count).toBe(404);
-    expect(manifest.current_open_target_count).toBe(395);
-    expect(manifest.resolved_requires_downstream_replay_count).toBe(9);
+    expect(manifest.current_open_target_count).toBe(393);
+    expect(manifest.resolved_requires_downstream_replay_count).toBe(11);
     expect(manifest.omitted_current_producer_status).toBe("open_source_fixable_target");
     expect(manifest.reviewed_priority_batch_count).toBe(11);
     expect(manifest.priority_1_count).toBe(3);
@@ -286,8 +286,10 @@ describe("study-readiness v1 Tracker bridge", () => {
       row.current_producer_status === "resolved_requires_downstream_replay").map((row) =>
         row.route_id).sort()).toEqual([
           "Q45",
+          "Q48",
           "Q61",
           "Q63",
+          "Q75",
           "Q80",
           "Q82",
           "Q86",

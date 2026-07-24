@@ -5,16 +5,16 @@
   "occurrence_count": 131,
   "member_extent_row_count": 308,
   "eligible_member_extent_row_count": 306,
-  "reviewed_decision_count": 54,
+  "reviewed_decision_count": 75,
   "extent_counts": {
     "route_wide": 14,
-    "bounded_segment": 29,
-    "stop_set": 4,
+    "bounded_segment": 47,
+    "stop_set": 7,
     "mixed": 0,
-    "unresolved": 261
+    "unresolved": 240
   },
-  "evidence_complete_row_count": 47,
-  "unresolved_row_count": 261,
+  "evidence_complete_row_count": 68,
+  "unresolved_row_count": 240,
   "doctrine": {
     "empty_scope_is_unresolved": true,
     "route_membership_is_not_route_wide_evidence": true,
