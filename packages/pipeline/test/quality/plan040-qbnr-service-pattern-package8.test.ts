@@ -5,14 +5,20 @@ import { repoRoot } from "../../../core/src/paths";
 import type { JsonValue } from "../../../db/src/types";
 import {
   PLAN040_PACKAGE_8_CANDIDATES,
+  PLAN040_PACKAGE_8_BUSCO_CORRECTION_SHA1,
   PLAN040_PACKAGE_8_CANDIDATE_KEY_SHA256,
   PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS,
+  PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1,
+  PLAN040_PACKAGE_8_SCHEDULE_BLOCKS_SHA256,
+  PLAN040_PACKAGE_8_SCHEDULE_CSV_SHA256,
+  PLAN040_PACKAGE_8_SCHEDULE_RECEIPT_SHA256,
   PLAN040_PACKAGE_8_SERVICE_CHANGE_HTML_SHA256,
   PLAN040_PACKAGE_8_WAVES,
   buildPlan040Package8Draft,
   plan040Package8ReplayHash,
   type Plan040Package8CandidateEvidence,
   type Plan040Package8Draft,
+  type Plan040Package8VersionSeparation,
 } from "../../src/quality/plan040-qbnr-service-pattern-package8";
 import { extentDecisionKey } from "../../src/quality/study-readiness-v1";
 
@@ -27,9 +33,9 @@ const extentLedgerPath =
 const grainLedgerPath =
   `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`;
 const EVIDENCE_SHA256 =
-  "6d987aa752beb800046989f8b27891dffeedb80aa976ac4089ae6d89377cf85c";
+  "3ee567af00c9eab1a50b823674cddc36f554a475b7e485f0fab3cd257858c192";
 const DRAFT_SHA256 =
-  "56704f0f15abf3327f361e75eeee9d560b06364e79bdfa8edff5df7279f32f6b";
+  "a5e53299617523fa152072a55ca2fa1f9e9515750d6595a9706c737f0c3db152";
 
 type Package8Evidence = {
   candidate_count: number;
@@ -49,6 +55,13 @@ type Package8Evidence = {
       path: string;
       sha256: string;
     }>;
+    package_3_correction_context: {
+      acquisition: { path: string; sha256: string };
+      evidence: { path: string; sha256: string };
+      correction_manifest: { path: string; sha256: string };
+      correction_bytes_used: false;
+      corrected_diff_used: false;
+    };
     accepted_launch_feed_identities: Array<{
       family: string;
       boundary: string;
@@ -62,6 +75,17 @@ type Package8Evidence = {
   };
   service_change_source: {
     source_html_sha256: string;
+  };
+  schedule_trip_type_source: {
+    source_id: "mta_bus_schedules_2025_candidate_windows";
+    source_csv_sha256: string;
+    source_bytes: number;
+    acquisition_receipt_sha256: string;
+    blocks_sha256: string;
+    passenger_policy: "any_trip_type_except_2_3_4";
+    excluded_nonrevenue_trip_types: ["2", "3", "4"];
+    source_csv_recomputed: true;
+    external_acquisition_performed: false;
   };
   pristine_ledger_inputs: {
     extent: {
@@ -85,6 +109,7 @@ type Package8Evidence = {
     prior_candidate_count: number;
     overlap_count: number;
   }>;
+  version_separation: Plan040Package8VersionSeparation;
   candidates: Plan040Package8CandidateEvidence[];
   external_acquisition_performed: false;
   authorizes_occurrence: false;
@@ -128,6 +153,7 @@ const buildInput = (
     "plan-040-qbnr-service-pattern-package-8-evidence-v1.json",
   evidenceManifestSha256: EVIDENCE_SHA256,
   candidates,
+  versionSeparation: evidence.version_separation,
   priorCandidateKeys: {
     package_2: priorKeys(
       `${riskRoot}/plan-040-qbnr-stop-removal-package-2-decision-draft-v1.json`,
@@ -275,14 +301,177 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
       expect(gap.binding_status).toBe(
         "blocked_post_schedule_gtfs_shape_identity_mismatch",
       );
+      expect(candidate.schedule_trip_type_validation).toBeNull();
+      const correction = candidate.correction_sensitivity!;
+      expect(correction.feed_family).toBe(
+        candidate.boundary_inventory.post.feed_family,
+      );
+      expect(correction.published_initial_post_sha1).toBe(
+        candidate.boundary_inventory.post.zip_sha1,
+      );
+      expect(correction.correction_version_sha1).toBe(
+        correction.feed_family === "queens"
+          ? PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1
+          : PLAN040_PACKAGE_8_BUSCO_CORRECTION_SHA1,
+      );
+      expect(correction).toEqual(expect.objectContaining({
+        status:
+          "nonauthorizing_initial_shape_mismatch_may_be_correction_sensitive",
+        corrected_first_week_diff_status: "blocked_not_run",
+        correction_bytes_used: false,
+        corrected_diff_used: false,
+      }));
+      expect(candidate.unresolved_gap_codes).toContain(
+        "initial_shape_mismatch_may_be_correction_sensitive",
+      );
+      expect(candidate.unresolved_gap_codes).toContain(
+        "corrected_first_week_diff_blocked_not_run",
+      );
       expect(candidate.candidate_document_gap).toBeNull();
     }
+  });
+
+  it("pins immutable correction identities and keeps both comparison roles separate", () => {
+    const evidence = readJson<Package8Evidence>(evidencePath);
+    const separation = evidence.version_separation;
+    expect(evidence.immutable_reuse.package_3_correction_context).toEqual({
+      acquisition: expect.objectContaining({
+        sha256: PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.acquisition,
+      }),
+      evidence: expect.objectContaining({
+        sha256: PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.evidence,
+      }),
+      correction_manifest: expect.objectContaining({
+        sha256:
+          PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.correction_manifest,
+      }),
+      correction_bytes_used: false,
+      corrected_diff_used: false,
+    });
+    expect(separation.immutable_correction_context).toEqual({
+      package_3_acquisition: expect.objectContaining({
+        sha256: PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.acquisition,
+      }),
+      package_3_evidence: expect.objectContaining({
+        sha256: PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.evidence,
+      }),
+      correction_manifest: expect.objectContaining({
+        sha256:
+          PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.correction_manifest,
+      }),
+    });
+    expect(separation.published_launch_diff).toEqual({
+      status: "completed_from_accepted_initial_feed_bytes",
+      comparison_role: "published_launch_diff",
+      initial_post_versions: {
+        queens: {
+          source_id: "gtfs_static_20250626_queens_post_qbnr",
+          zip_sha1: "c868290ddcd79c69712d809ece96d96dbad2c613",
+          zip_sha256:
+            "4db0f151dc541f2669dde72f104c7803b0f99258bc5d14278b04c8016ce7471a",
+        },
+        busco: {
+          source_id: "gtfs_static_20250626_busco_post_qbnr",
+          zip_sha1: "54653b3fafb5fabc5ab1c941780b871343138440",
+          zip_sha256:
+            "7d0e5651d5cc5c3ac86973dc664e16a05e9245bea156f566c39e71506128670e",
+        },
+      },
+      correction_version_sha1s_used: [],
+      correction_bytes_used: false,
+    });
+
+    const corrected = separation.corrected_first_week_diff;
+    expect(corrected).toEqual(expect.objectContaining({
+      status: "blocked_not_run",
+      comparison_role: "corrected_first_week_diff",
+      comparison_run: false,
+      correction_bytes_used: false,
+      corrected_diff_used: false,
+      published_launch_outcomes_reclassified: false,
+      block_reason:
+        "exact_correction_zip_bytes_unavailable_and_required_member_set_not_accepted",
+    }));
+    expect(corrected.corrections.queens).toEqual({
+      feed_family: "queens",
+      version_sha1: PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1,
+      fetched_at: "2025-06-30T15:46:28.558891Z",
+      metadata_url:
+        "https://www.transit.land/feeds/f-dr5x-mtanyctbusqueens/versions/" +
+        PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1,
+      service_window: { start: "2025-06-28", end: "2025-08-30" },
+      route_count: 269,
+      stop_count: 1391,
+      stop_time_count: 652139,
+      trip_count: 24721,
+      member_sha1s: {
+        calendar_dates_txt: "2cad2b1716cc4b899bc6a208307131cf44279dd8",
+        calendar_txt: "91183ad2187f37991e266ca1f549774384614726",
+        stop_times_txt: "00c4676204737f35524627514a0e11f8f6ad65a7",
+        stops_txt: "bd9d9f4d48ae4472d689c3dce8bbcb85421cb475",
+        trips_txt: "08d77fa5c44ba2d052cb8151765f47b13c573848",
+      },
+      acquisition_status: "full_sha1_observed_bytes_not_accepted",
+      exact_zip_bytes_status: "blocked_unavailable",
+      exact_member_bytes_status:
+        "queens_partial_content_matches_routes_member_mismatch",
+      zip_sha256: null,
+      correction_bytes_used: false,
+      corrected_diff_used: false,
+    });
+    expect(corrected.corrections.busco).toEqual({
+      feed_family: "busco",
+      version_sha1: PLAN040_PACKAGE_8_BUSCO_CORRECTION_SHA1,
+      fetched_at: "2025-07-03",
+      metadata_url: null,
+      service_window: { start: "2025-06-29", end: "2025-08-30" },
+      route_count: 92,
+      stop_count: 3163,
+      stop_time_count: 803149,
+      trip_count: 28419,
+      member_sha1s: {
+        calendar_dates_txt: "1630be2890679c5136fe298e811caeba5d90f1d6",
+        calendar_txt: "05cea37704c833bf6ae2789bc0a92c4b293f51a6",
+        stop_times_txt: "f714c895c98e82c37bbd37deb6a67abd7bcd7f71",
+        stops_txt: "3d77f6acb9d2a0f580c985934acdd58f1322a187",
+        trips_txt: "486c9a4acccbcaa4f73bbbc9bbd848258c1dad87",
+      },
+      acquisition_status: "full_sha1_observed_bytes_not_accepted",
+      exact_zip_bytes_status: "blocked_unavailable",
+      exact_member_bytes_status:
+        "busco_no_exact_correction_members_accepted",
+      zip_sha256: null,
+      correction_bytes_used: false,
+      corrected_diff_used: false,
+    });
   });
 
   it("pins both active same-family inventories and exact missing-doc searches for B", () => {
     const evidence = readJson<Package8Evidence>(evidencePath);
     const rows = evidence.candidates.filter((candidate) =>
       candidate.risk_wave_id === "P8-B");
+    const expectedPostMismatches: Record<string, {
+      schedule: string[];
+      gtfs: string[];
+      matched: string[];
+      scheduleOnly: string[];
+      gtfsOnly: string[];
+    }> = {
+      Q36: {
+        schedule: ["Q360169", "Q360170", "Q360186", "Q360187"],
+        gtfs: ["Q360166", "Q360168", "Q360169", "Q360170"],
+        matched: ["Q360169", "Q360170"],
+        scheduleOnly: ["Q360186", "Q360187"],
+        gtfsOnly: ["Q360166", "Q360168"],
+      },
+      Q85: {
+        schedule: ["Q850420", "Q850437"],
+        gtfs: ["Q850420", "Q850421"],
+        matched: ["Q850420"],
+        scheduleOnly: ["Q850437"],
+        gtfsOnly: ["Q850421"],
+      },
+    };
     expect(rows).toHaveLength(15);
     for (const candidate of rows) {
       const inventories = candidate.boundary_inventory;
@@ -300,6 +489,101 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
         expect(inventory.receipt_sha256).toHaveLength(64);
         expect(inventory.zip_sha1).toHaveLength(40);
         expect(inventory.zip_sha256).toHaveLength(64);
+        expect(inventory.inventory_role).toBe(
+          "raw_active_gtfs_inventory_nonauthorizing_not_schedule_trip_type_validated",
+        );
+      }
+      const schedule = candidate.schedule_trip_type_validation!;
+      expect(schedule.source_id).toBe(
+        "mta_bus_schedules_2025_candidate_windows",
+      );
+      expect(schedule.source_csv_sha256).toBe(
+        PLAN040_PACKAGE_8_SCHEDULE_CSV_SHA256,
+      );
+      expect(schedule.acquisition_receipt_sha256).toBe(
+        PLAN040_PACKAGE_8_SCHEDULE_RECEIPT_SHA256,
+      );
+      expect(schedule.blocks_sha256).toBe(
+        PLAN040_PACKAGE_8_SCHEDULE_BLOCKS_SHA256,
+      );
+      expect(schedule.passenger_policy).toBe(
+        "any_trip_type_except_2_3_4",
+      );
+      expect(schedule.excluded_nonrevenue_trip_types).toEqual(["2", "3", "4"]);
+      expect(schedule.raw_gtfs_inventory_role).toBe(
+        "nonauthorizing_not_schedule_trip_type_validated",
+      );
+      expect(schedule.pre.shape_sets_match).toBe(true);
+      expect(schedule.pre.schedule_only_passenger_shape_ids).toEqual([]);
+      expect(schedule.pre.gtfs_only_active_shape_ids).toEqual([]);
+      expect(schedule.pre.ambiguous_shape_ids).toEqual([]);
+      expect(schedule.post.ambiguous_shape_ids).toEqual([]);
+      expect(schedule.pre.schedule_slice_sha256).toHaveLength(64);
+      expect(schedule.post.schedule_slice_sha256).toHaveLength(64);
+      expect(schedule.pre.route_id).toBe(candidate.gtfs_route_id);
+      expect(schedule.post.route_id).toBe(candidate.gtfs_route_id);
+      expect(schedule.pre.schedule_date).toStartWith(
+        inventories.pre.target_date,
+      );
+      expect(schedule.post.schedule_date).toStartWith(
+        inventories.post.target_date,
+      );
+      expect(schedule.pre.gtfs_active_full_stop_shape_ids).toEqual(
+        inventories.pre.ordered_full_stop_pattern_shape_ids,
+      );
+      expect(schedule.post.gtfs_active_full_stop_shape_ids).toEqual(
+        inventories.post.ordered_full_stop_pattern_shape_ids,
+      );
+      const mismatch = expectedPostMismatches[candidate.gtfs_route_id];
+      if (mismatch) {
+        expect(schedule.binding_status).toBe(
+          "blocked_post_schedule_gtfs_shape_identity_mismatch",
+        );
+        expect(schedule.post.shape_sets_match).toBe(false);
+        expect(schedule.post.schedule_passenger_shape_ids).toEqual(
+          mismatch.schedule,
+        );
+        expect(schedule.post.gtfs_active_full_stop_shape_ids).toEqual(
+          mismatch.gtfs,
+        );
+        expect(schedule.post.matched_passenger_shape_ids).toEqual(
+          mismatch.matched,
+        );
+        expect(schedule.post.schedule_only_passenger_shape_ids).toEqual(
+          mismatch.scheduleOnly,
+        );
+        expect(schedule.post.gtfs_only_active_shape_ids).toEqual(
+          mismatch.gtfsOnly,
+        );
+        expect(candidate.correction_sensitivity).toEqual(
+          expect.objectContaining({
+            feed_family: "queens",
+            published_initial_post_sha1:
+              "c868290ddcd79c69712d809ece96d96dbad2c613",
+            correction_version_sha1:
+              PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1,
+            corrected_first_week_diff_status: "blocked_not_run",
+            correction_bytes_used: false,
+            corrected_diff_used: false,
+          }),
+        );
+        expect(candidate.unresolved_gap_codes).toContain(
+          "post_schedule_gtfs_shape_identity_mismatch",
+        );
+        expect(candidate.unresolved_gap_codes).toContain(
+          "initial_shape_mismatch_may_be_correction_sensitive",
+        );
+        expect(candidate.unresolved_gap_codes).toContain(
+          "corrected_first_week_diff_blocked_not_run",
+        );
+      } else {
+        expect(schedule.binding_status).toBe(
+          "validated_exact_passenger_shape_sets_match_both_boundaries",
+        );
+        expect(schedule.post.shape_sets_match).toBe(true);
+        expect(schedule.post.schedule_only_passenger_shape_ids).toEqual([]);
+        expect(schedule.post.gtfs_only_active_shape_ids).toEqual([]);
+        expect(candidate.correction_sensitivity).toBeUndefined();
       }
       const gap = candidate.candidate_document_gap!;
       expect(gap.required_source_roles).toEqual([
@@ -328,6 +612,18 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
     expect(evidence.service_change_source.source_html_sha256).toBe(
       PLAN040_PACKAGE_8_SERVICE_CHANGE_HTML_SHA256,
     );
+    expect(evidence.schedule_trip_type_source).toEqual(expect.objectContaining({
+      source_id: "mta_bus_schedules_2025_candidate_windows",
+      source_csv_sha256: PLAN040_PACKAGE_8_SCHEDULE_CSV_SHA256,
+      source_bytes: 1419827780,
+      acquisition_receipt_sha256:
+        PLAN040_PACKAGE_8_SCHEDULE_RECEIPT_SHA256,
+      blocks_sha256: PLAN040_PACKAGE_8_SCHEDULE_BLOCKS_SHA256,
+      passenger_policy: "any_trip_type_except_2_3_4",
+      excluded_nonrevenue_trip_types: ["2", "3", "4"],
+      source_csv_recomputed: true,
+      external_acquisition_performed: false,
+    }));
     expect(evidence.immutable_reuse.accepted_launch_feed_identities.map(
       (feed) => [
         feed.family,
@@ -465,6 +761,36 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
         buildInput(evidence, stagedMatchAdded),
       )).toThrow("P8-B candidate-document gap drifted");
 
+    const passengerMismatchRemoved = structuredClone(evidence.candidates);
+    passengerMismatchRemoved.find((candidate) =>
+      candidate.gtfs_route_id === "Q36")!
+      .schedule_trip_type_validation!.post.gtfs_only_active_shape_ids = [];
+    expect(() =>
+      buildPlan040Package8Draft(
+        buildInput(evidence, passengerMismatchRemoved),
+      )).toThrow("P8-B passenger-validation mismatch drifted");
+
+    const scheduleIdentityChanged = structuredClone(evidence.candidates);
+    scheduleIdentityChanged.find((candidate) =>
+      candidate.gtfs_route_id === "Q4")!
+      .schedule_trip_type_validation!.source_csv_sha256 =
+        "0".repeat(64) as typeof PLAN040_PACKAGE_8_SCHEDULE_CSV_SHA256;
+    expect(() =>
+      buildPlan040Package8Draft(
+        buildInput(evidence, scheduleIdentityChanged),
+      )).toThrow("P8-B candidate-document gap drifted");
+
+    const rawInventoryRelabeled = structuredClone(evidence.candidates);
+    rawInventoryRelabeled.find((candidate) =>
+      candidate.gtfs_route_id === "Q4")!
+      .boundary_inventory.post.inventory_role =
+        "schedule_trip_type_validated" as
+          "raw_active_gtfs_inventory_nonauthorizing_not_schedule_trip_type_validated";
+    expect(() =>
+      buildPlan040Package8Draft(
+        buildInput(evidence, rawInventoryRelabeled),
+      )).toThrow("evidence, ledger, or authority scope drifted");
+
     const overlap = buildInput(evidence);
     overlap.priorCandidateKeys.package_7 = [
       evidence.candidates[0]!.candidate_key,
@@ -472,5 +798,37 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
     expect(() => buildPlan040Package8Draft(overlap)).toThrow(
       "overlaps package_7",
     );
+
+    const mixedVersion = buildInput(evidence);
+    mixedVersion.versionSeparation = structuredClone(
+      evidence.version_separation,
+    );
+    mixedVersion.versionSeparation.corrected_first_week_diff.corrections.queens
+      .version_sha1 = mixedVersion.versionSeparation.published_launch_diff
+        .initial_post_versions.queens.zip_sha1 as
+          typeof PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1;
+    expect(() => buildPlan040Package8Draft(mixedVersion)).toThrow(
+      "correction-version separation drifted or mixed",
+    );
+
+    const correctedComparisonRun = buildInput(evidence);
+    correctedComparisonRun.versionSeparation = structuredClone(
+      evidence.version_separation,
+    );
+    correctedComparisonRun.versionSeparation.corrected_first_week_diff
+      .comparison_run = true as false;
+    expect(() => buildPlan040Package8Draft(correctedComparisonRun)).toThrow(
+      "correction-version separation drifted or mixed",
+    );
+
+    const correctionGapRemoved = structuredClone(evidence.candidates);
+    const correctionSensitiveCandidate = correctionGapRemoved.find(
+      (candidate) => candidate.risk_wave_id === "P8-A",
+    )!;
+    delete correctionSensitiveCandidate.correction_sensitivity;
+    expect(() =>
+      buildPlan040Package8Draft(
+        buildInput(evidence, correctionGapRemoved),
+      )).toThrow("P8-A shape-source gap drifted");
   });
 });

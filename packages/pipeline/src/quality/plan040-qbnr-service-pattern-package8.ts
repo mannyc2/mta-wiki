@@ -8,6 +8,16 @@ export const PLAN040_PACKAGE_8_CANDIDATE_KEY_SHA256 =
   "b616771483efb83f294b07946dcd5386788cb05ba8da6c6a810a30cc39e04d19" as const;
 export const PLAN040_PACKAGE_8_SERVICE_CHANGE_HTML_SHA256 =
   "4b5dc9ca398980a3803e076378acefd7ac3ec04343e0ac32db95a17c1d51226d" as const;
+export const PLAN040_PACKAGE_8_SCHEDULE_CSV_SHA256 =
+  "c592686da8a1cabdc8b559db4d4ae15d5a663adbe08f332e196215fd377be7c5" as const;
+export const PLAN040_PACKAGE_8_SCHEDULE_RECEIPT_SHA256 =
+  "82cc442de9b9c0356965f678c8491a78a093eea8eca06bac29d67747355a58c3" as const;
+export const PLAN040_PACKAGE_8_SCHEDULE_BLOCKS_SHA256 =
+  "e12d18baf0ed5f6fb019d877922861df44fd99805f58f5b4b8344de89b71658d" as const;
+export const PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1 =
+  "6db867de2ce30f47ae0ee763f422dc34fb7a9f9f" as const;
+export const PLAN040_PACKAGE_8_BUSCO_CORRECTION_SHA1 =
+  "a35da13d0a8c311de05d3558e9e80d2a472c21d2" as const;
 
 export const PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS = {
   package_2: {
@@ -28,6 +38,14 @@ export const PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS = {
   },
   package_7_draft:
     "ee62990a38ebb787cf009ea1236618bf69cfd4e5bdbc32ce94bbc1720ed224a8",
+  package_3: {
+    acquisition:
+      "7417deb4c56f12d98a9ec61f486cad9b0caeb7121819b1824e874643454f697e",
+    evidence:
+      "149809f528571fc3e49808a61ee83670121db536e691ffae88b70579e8e9ccf8",
+    correction_manifest:
+      "43a17a230eb70e9b7c322d2125b0db99910f035e688652624d4ce0e97a08a1d4",
+  },
   extent_ledger:
     "63725f2aceca12047ff75198b9e9a131d26355ae6b1bf4efff5a6a430f7e039b",
   grain_ledger:
@@ -111,6 +129,8 @@ export type Plan040Package8BoundaryInventory = {
   receipt_sha256: string;
   zip_sha1: string;
   zip_sha256: string;
+  inventory_role:
+    "raw_active_gtfs_inventory_nonauthorizing_not_schedule_trip_type_validated";
 };
 
 export type Plan040Package8CandidateEvidence = {
@@ -172,6 +192,34 @@ export type Plan040Package8CandidateEvidence = {
     binding_status:
       "blocked_post_schedule_gtfs_shape_identity_mismatch";
   };
+  schedule_trip_type_validation: null | {
+    source_id: "mta_bus_schedules_2025_candidate_windows";
+    source_csv_sha256: typeof PLAN040_PACKAGE_8_SCHEDULE_CSV_SHA256;
+    acquisition_receipt_sha256:
+      typeof PLAN040_PACKAGE_8_SCHEDULE_RECEIPT_SHA256;
+    blocks_sha256: typeof PLAN040_PACKAGE_8_SCHEDULE_BLOCKS_SHA256;
+    passenger_policy: "any_trip_type_except_2_3_4";
+    excluded_nonrevenue_trip_types: ["2", "3", "4"];
+    raw_gtfs_inventory_role:
+      "nonauthorizing_not_schedule_trip_type_validated";
+    pre: Plan040Package8ScheduleValidationBoundary;
+    post: Plan040Package8ScheduleValidationBoundary;
+    binding_status:
+      | "validated_exact_passenger_shape_sets_match_both_boundaries"
+      | "blocked_post_schedule_gtfs_shape_identity_mismatch";
+  };
+  correction_sensitivity?: {
+    feed_family: "queens" | "busco";
+    published_initial_post_sha1: string;
+    correction_version_sha1:
+      | typeof PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1
+      | typeof PLAN040_PACKAGE_8_BUSCO_CORRECTION_SHA1;
+    status:
+      "nonauthorizing_initial_shape_mismatch_may_be_correction_sensitive";
+    corrected_first_week_diff_status: "blocked_not_run";
+    correction_bytes_used: false;
+    corrected_diff_used: false;
+  };
   candidate_document_gap: null | {
     required_source_roles: [
       "candidate_specific_service_detail",
@@ -225,6 +273,88 @@ export type Plan040Package8ShapeComparison = {
   schedule_slice_sha256: string;
 };
 
+export type Plan040Package8ScheduleValidationBoundary = {
+  schedule_date: string;
+  route_id: Plan040Package8RouteId;
+  operator: "NYCT" | "MTA Bus";
+  row_count: number;
+  trip_type_rows: Record<string, number>;
+  schedule_passenger_shape_ids: string[];
+  schedule_nonrevenue_shape_ids: string[];
+  ambiguous_shape_ids: string[];
+  gtfs_active_full_stop_shape_ids: string[];
+  matched_passenger_shape_ids: string[];
+  schedule_only_passenger_shape_ids: string[];
+  gtfs_only_active_shape_ids: string[];
+  shape_sets_match: boolean;
+  schedule_slice_sha256: string;
+};
+
+export type Plan040Package8CorrectionIdentity = {
+  feed_family: "queens" | "busco";
+  version_sha1:
+    | typeof PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1
+    | typeof PLAN040_PACKAGE_8_BUSCO_CORRECTION_SHA1;
+  fetched_at: string;
+  metadata_url: string | null;
+  service_window: { start: string; end: string };
+  route_count: number;
+  stop_count: number;
+  stop_time_count: number;
+  trip_count: number;
+  member_sha1s: Record<string, string>;
+  acquisition_status: "full_sha1_observed_bytes_not_accepted";
+  exact_zip_bytes_status: "blocked_unavailable";
+  exact_member_bytes_status:
+    | "queens_partial_content_matches_routes_member_mismatch"
+    | "busco_no_exact_correction_members_accepted";
+  zip_sha256: null;
+  correction_bytes_used: false;
+  corrected_diff_used: false;
+};
+
+export type Plan040Package8VersionSeparation = {
+  immutable_correction_context: {
+    package_3_acquisition: { path: string; sha256: string };
+    package_3_evidence: { path: string; sha256: string };
+    correction_manifest: { path: string; sha256: string };
+  };
+  published_launch_diff: {
+    status: "completed_from_accepted_initial_feed_bytes";
+    comparison_role: "published_launch_diff";
+    initial_post_versions: {
+      queens: {
+        source_id: "gtfs_static_20250626_queens_post_qbnr";
+        zip_sha1: "c868290ddcd79c69712d809ece96d96dbad2c613";
+        zip_sha256:
+          "4db0f151dc541f2669dde72f104c7803b0f99258bc5d14278b04c8016ce7471a";
+      };
+      busco: {
+        source_id: "gtfs_static_20250626_busco_post_qbnr";
+        zip_sha1: "54653b3fafb5fabc5ab1c941780b871343138440";
+        zip_sha256:
+          "7d0e5651d5cc5c3ac86973dc664e16a05e9245bea156f566c39e71506128670e";
+      };
+    };
+    correction_version_sha1s_used: [];
+    correction_bytes_used: false;
+  };
+  corrected_first_week_diff: {
+    status: "blocked_not_run";
+    comparison_role: "corrected_first_week_diff";
+    corrections: {
+      queens: Plan040Package8CorrectionIdentity;
+      busco: Plan040Package8CorrectionIdentity;
+    };
+    comparison_run: false;
+    correction_bytes_used: false;
+    corrected_diff_used: false;
+    published_launch_outcomes_reclassified: false;
+    block_reason:
+      "exact_correction_zip_bytes_unavailable_and_required_member_set_not_accepted";
+  };
+};
+
 export type Plan040Package8Draft = {
   schema_version: 1;
   package_id: typeof PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_8;
@@ -259,6 +389,7 @@ export type Plan040Package8Draft = {
     0
   >;
   candidates: Plan040Package8CandidateEvidence[];
+  version_separation: Plan040Package8VersionSeparation;
   review_protocol: {
     dual_independent_review_required: true;
     owner_gate_allowed_before_dual_review: false;
@@ -284,6 +415,7 @@ export function buildPlan040Package8Draft(input: {
   evidenceManifestPath: string;
   evidenceManifestSha256: string;
   candidates: Plan040Package8CandidateEvidence[];
+  versionSeparation: Plan040Package8VersionSeparation;
   priorCandidateKeys: Record<
     | "package_2"
     | "package_4"
@@ -294,6 +426,74 @@ export function buildPlan040Package8Draft(input: {
     string[]
   >;
 }): Plan040Package8Draft {
+  const versionSeparation = input.versionSeparation;
+  const queensCorrection =
+    versionSeparation.corrected_first_week_diff.corrections.queens;
+  const buscoCorrection =
+    versionSeparation.corrected_first_week_diff.corrections.busco;
+  const identityMatches = (left: string, right: string): boolean =>
+    left === right;
+  if (
+    versionSeparation.immutable_correction_context.package_3_acquisition
+        .sha256 !==
+      PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.acquisition ||
+    versionSeparation.immutable_correction_context.package_3_evidence
+        .sha256 !==
+      PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.evidence ||
+    versionSeparation.immutable_correction_context.correction_manifest
+        .sha256 !==
+      PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.correction_manifest ||
+    versionSeparation.published_launch_diff.status !==
+      "completed_from_accepted_initial_feed_bytes" ||
+    versionSeparation.published_launch_diff.comparison_role !==
+      "published_launch_diff" ||
+    versionSeparation.published_launch_diff.initial_post_versions.queens
+        .zip_sha1 !== "c868290ddcd79c69712d809ece96d96dbad2c613" ||
+    versionSeparation.published_launch_diff.initial_post_versions.busco
+        .zip_sha1 !== "54653b3fafb5fabc5ab1c941780b871343138440" ||
+    versionSeparation.published_launch_diff.correction_version_sha1s_used
+        .length !== 0 ||
+    versionSeparation.published_launch_diff.correction_bytes_used ||
+    versionSeparation.corrected_first_week_diff.status !==
+      "blocked_not_run" ||
+    versionSeparation.corrected_first_week_diff.comparison_role !==
+      "corrected_first_week_diff" ||
+    versionSeparation.corrected_first_week_diff.comparison_run ||
+    versionSeparation.corrected_first_week_diff.correction_bytes_used ||
+    versionSeparation.corrected_first_week_diff.corrected_diff_used ||
+    versionSeparation.corrected_first_week_diff
+      .published_launch_outcomes_reclassified ||
+    queensCorrection.feed_family !== "queens" ||
+    queensCorrection.version_sha1 !==
+      PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1 ||
+    queensCorrection.exact_zip_bytes_status !== "blocked_unavailable" ||
+    queensCorrection.exact_member_bytes_status !==
+      "queens_partial_content_matches_routes_member_mismatch" ||
+    queensCorrection.correction_bytes_used ||
+    queensCorrection.corrected_diff_used ||
+    buscoCorrection.feed_family !== "busco" ||
+    buscoCorrection.version_sha1 !==
+      PLAN040_PACKAGE_8_BUSCO_CORRECTION_SHA1 ||
+    buscoCorrection.exact_zip_bytes_status !== "blocked_unavailable" ||
+    buscoCorrection.exact_member_bytes_status !==
+      "busco_no_exact_correction_members_accepted" ||
+    buscoCorrection.correction_bytes_used ||
+    buscoCorrection.corrected_diff_used ||
+    identityMatches(
+      queensCorrection.version_sha1,
+      versionSeparation.published_launch_diff.initial_post_versions.queens
+        .zip_sha1,
+    ) ||
+    identityMatches(
+      buscoCorrection.version_sha1,
+      versionSeparation.published_launch_diff.initial_post_versions.busco
+        .zip_sha1,
+    )
+  ) {
+    throw new Error(
+      "Plan 040 Package 8 correction-version separation drifted or mixed",
+    );
+  }
   const expected = new Map<string, {
     waveId: Plan040Package8WaveId;
     routeId: Plan040Package8RouteId;
@@ -351,6 +551,10 @@ export function buildPlan040Package8Draft(input: {
       candidate.boundary_inventory.post.active_route_trip_count > 0 &&
       candidate.boundary_inventory.pre.active_shape_ids.length > 0 &&
       candidate.boundary_inventory.post.active_shape_ids.length > 0 &&
+      candidate.boundary_inventory.pre.inventory_role ===
+        "raw_active_gtfs_inventory_nonauthorizing_not_schedule_trip_type_validated" &&
+      candidate.boundary_inventory.post.inventory_role ===
+        "raw_active_gtfs_inventory_nonauthorizing_not_schedule_trip_type_validated" &&
       candidate.ledger_snapshot.extent_verdict === "unreviewed" &&
       candidate.ledger_snapshot.grain_verdict === "unreviewed" &&
       candidate.ledger_snapshot.grain_spatial_verdict === "unreviewed" &&
@@ -378,9 +582,15 @@ export function buildPlan040Package8Draft(input: {
     }
     if (candidate.risk_wave_id === "P8-A") {
       const gap = candidate.schedule_to_gtfs_shape_gap;
+      const correction = candidate.correction_sensitivity;
+      const expectedCorrection = candidate.boundary_inventory.post
+          .feed_family === "queens"
+        ? PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1
+        : PLAN040_PACKAGE_8_BUSCO_CORRECTION_SHA1;
       if (
         !candidate.immutable_p2_p4_context ||
         candidate.candidate_document_gap !== null ||
+        candidate.schedule_trip_type_validation !== null ||
         !gap ||
         !gap.pre_shape_sets_match ||
         gap.post_shape_sets_match ||
@@ -390,8 +600,25 @@ export function buildPlan040Package8Draft(input: {
         gap.post.gtfs_only_shape_ids.length === 0 ||
         gap.binding_status !==
           "blocked_post_schedule_gtfs_shape_identity_mismatch" ||
+        !correction ||
+        correction.feed_family !==
+          candidate.boundary_inventory.post.feed_family ||
+        correction.published_initial_post_sha1 !==
+          candidate.boundary_inventory.post.zip_sha1 ||
+        correction.correction_version_sha1 !== expectedCorrection ||
+        correction.status !==
+          "nonauthorizing_initial_shape_mismatch_may_be_correction_sensitive" ||
+        correction.corrected_first_week_diff_status !== "blocked_not_run" ||
+        correction.correction_bytes_used ||
+        correction.corrected_diff_used ||
         !candidate.unresolved_gap_codes.includes(
           "post_schedule_gtfs_shape_identity_mismatch",
+        ) ||
+        !candidate.unresolved_gap_codes.includes(
+          "initial_shape_mismatch_may_be_correction_sensitive",
+        ) ||
+        !candidate.unresolved_gap_codes.includes(
+          "corrected_first_week_diff_blocked_not_run",
         )
       ) {
         throw new Error(
@@ -400,9 +627,52 @@ export function buildPlan040Package8Draft(input: {
       }
     } else {
       const gap = candidate.candidate_document_gap;
+      const schedule = candidate.schedule_trip_type_validation;
+      const correctionSensitive = candidate.gtfs_route_id === "Q36" ||
+        candidate.gtfs_route_id === "Q85";
+      const correction = candidate.correction_sensitivity;
+      const scheduleCommonValid =
+        schedule?.source_id ===
+          "mta_bus_schedules_2025_candidate_windows" &&
+        schedule.source_csv_sha256 ===
+          PLAN040_PACKAGE_8_SCHEDULE_CSV_SHA256 &&
+        schedule.acquisition_receipt_sha256 ===
+          PLAN040_PACKAGE_8_SCHEDULE_RECEIPT_SHA256 &&
+        schedule.blocks_sha256 ===
+          PLAN040_PACKAGE_8_SCHEDULE_BLOCKS_SHA256 &&
+        schedule.passenger_policy === "any_trip_type_except_2_3_4" &&
+        schedule.excluded_nonrevenue_trip_types.join(",") === "2,3,4" &&
+        schedule.raw_gtfs_inventory_role ===
+          "nonauthorizing_not_schedule_trip_type_validated" &&
+        schedule.pre.route_id === candidate.gtfs_route_id &&
+        schedule.post.route_id === candidate.gtfs_route_id &&
+        schedule.pre.schedule_date.startsWith(
+          candidate.boundary_inventory.pre.target_date,
+        ) &&
+        schedule.post.schedule_date.startsWith(
+          candidate.boundary_inventory.post.target_date,
+        ) &&
+        schedule.pre.ambiguous_shape_ids.length === 0 &&
+        schedule.post.ambiguous_shape_ids.length === 0 &&
+        stableJson(
+          schedule.pre.gtfs_active_full_stop_shape_ids as unknown as JsonValue,
+        ) === stableJson(
+          candidate.boundary_inventory.pre
+            .ordered_full_stop_pattern_shape_ids as unknown as JsonValue,
+        ) &&
+        stableJson(
+          schedule.post.gtfs_active_full_stop_shape_ids as unknown as JsonValue,
+        ) === stableJson(
+          candidate.boundary_inventory.post
+            .ordered_full_stop_pattern_shape_ids as unknown as JsonValue,
+        ) &&
+        schedule.pre.shape_sets_match &&
+        schedule.pre.schedule_only_passenger_shape_ids.length === 0 &&
+        schedule.pre.gtfs_only_active_shape_ids.length === 0;
       if (
         candidate.immutable_p2_p4_context !== null ||
         candidate.schedule_to_gtfs_shape_gap !== null ||
+        !scheduleCommonValid ||
         !gap ||
         gap.exact_url_searches.length !== 2 ||
         gap.exact_url_searches.some((search) =>
@@ -419,6 +689,78 @@ export function buildPlan040Package8Draft(input: {
       ) {
         throw new Error(
           `${candidate.treatment_record_id}: P8-B candidate-document gap drifted`,
+        );
+      }
+      if (correctionSensitive) {
+        const expected = candidate.gtfs_route_id === "Q36"
+          ? {
+            schedule: ["Q360169", "Q360170", "Q360186", "Q360187"],
+            gtfs: ["Q360166", "Q360168", "Q360169", "Q360170"],
+            matched: ["Q360169", "Q360170"],
+            scheduleOnly: ["Q360186", "Q360187"],
+            gtfsOnly: ["Q360166", "Q360168"],
+          }
+          : {
+            schedule: ["Q850420", "Q850437"],
+            gtfs: ["Q850420", "Q850421"],
+            matched: ["Q850420"],
+            scheduleOnly: ["Q850437"],
+            gtfsOnly: ["Q850421"],
+          };
+        if (
+          schedule.binding_status !==
+            "blocked_post_schedule_gtfs_shape_identity_mismatch" ||
+          schedule.post.shape_sets_match ||
+          stableJson(
+            schedule.post.schedule_passenger_shape_ids as unknown as JsonValue,
+          ) !== stableJson(expected.schedule as unknown as JsonValue) ||
+          stableJson(
+            schedule.post.gtfs_active_full_stop_shape_ids as unknown as JsonValue,
+          ) !== stableJson(expected.gtfs as unknown as JsonValue) ||
+          stableJson(
+            schedule.post.matched_passenger_shape_ids as unknown as JsonValue,
+          ) !== stableJson(expected.matched as unknown as JsonValue) ||
+          stableJson(
+            schedule.post
+              .schedule_only_passenger_shape_ids as unknown as JsonValue,
+          ) !== stableJson(expected.scheduleOnly as unknown as JsonValue) ||
+          stableJson(
+            schedule.post.gtfs_only_active_shape_ids as unknown as JsonValue,
+          ) !== stableJson(expected.gtfsOnly as unknown as JsonValue) ||
+          !correction ||
+          correction.published_initial_post_sha1 !==
+            candidate.boundary_inventory.post.zip_sha1 ||
+          correction.correction_version_sha1 !==
+            PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1 ||
+          correction.status !==
+            "nonauthorizing_initial_shape_mismatch_may_be_correction_sensitive" ||
+          correction.corrected_first_week_diff_status !== "blocked_not_run" ||
+          correction.correction_bytes_used ||
+          correction.corrected_diff_used ||
+          !candidate.unresolved_gap_codes.includes(
+            "post_schedule_gtfs_shape_identity_mismatch",
+          ) ||
+          !candidate.unresolved_gap_codes.includes(
+            "initial_shape_mismatch_may_be_correction_sensitive",
+          ) ||
+          !candidate.unresolved_gap_codes.includes(
+            "corrected_first_week_diff_blocked_not_run",
+          )
+        ) {
+          throw new Error(
+            `${candidate.treatment_record_id}: P8-B passenger-validation mismatch drifted`,
+          );
+        }
+      } else if (
+        correction !== undefined ||
+        schedule.binding_status !==
+          "validated_exact_passenger_shape_sets_match_both_boundaries" ||
+        !schedule.post.shape_sets_match ||
+        schedule.post.schedule_only_passenger_shape_ids.length !== 0 ||
+        schedule.post.gtfs_only_active_shape_ids.length !== 0
+      ) {
+        throw new Error(
+          `${candidate.treatment_record_id}: P8-B passenger validation drifted`,
         );
       }
     }
@@ -481,6 +823,7 @@ export function buildPlan040Package8Draft(input: {
       exemplar: 0,
     },
     candidates,
+    version_separation: versionSeparation,
     review_protocol: {
       dual_independent_review_required: true,
       owner_gate_allowed_before_dual_review: false,

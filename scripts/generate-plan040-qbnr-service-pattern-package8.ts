@@ -1,18 +1,27 @@
 import { createHash } from "node:crypto";
 import {
+  createReadStream,
   existsSync,
   readFileSync,
   readdirSync,
+  statSync,
   writeFileSync,
 } from "node:fs";
 import { resolve } from "node:path";
+import { createInterface } from "node:readline";
 import { repoRoot } from "../packages/core/src/paths";
+import { parseCsv as parseCsvRows } from "../packages/db/src/import-gtfs";
 import { stableJson } from "../packages/db/src/stable-json";
 import type { JsonValue } from "../packages/db/src/types";
 import {
   PLAN040_PACKAGE_8_CANDIDATES,
+  PLAN040_PACKAGE_8_BUSCO_CORRECTION_SHA1,
   PLAN040_PACKAGE_8_CANDIDATE_KEY_SHA256,
   PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS,
+  PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1,
+  PLAN040_PACKAGE_8_SCHEDULE_BLOCKS_SHA256,
+  PLAN040_PACKAGE_8_SCHEDULE_CSV_SHA256,
+  PLAN040_PACKAGE_8_SCHEDULE_RECEIPT_SHA256,
   PLAN040_PACKAGE_8_SERVICE_CHANGE_HTML_SHA256,
   PLAN040_PACKAGE_8_WAVES,
   buildPlan040Package8Draft,
@@ -20,6 +29,8 @@ import {
   type Plan040Package8BoundaryInventory,
   type Plan040Package8CandidateEvidence,
   type Plan040Package8RouteId,
+  type Plan040Package8ScheduleValidationBoundary,
+  type Plan040Package8VersionSeparation,
 } from "../packages/pipeline/src/quality/plan040-qbnr-service-pattern-package8";
 import { extentDecisionKey } from "../packages/pipeline/src/quality/study-readiness-v1";
 import {
@@ -52,6 +63,15 @@ const P4_EVIDENCE_PATH =
 const P4_DRAFT_PATH =
   "data/quality/operational-reference/member-extent-risk/" +
   "plan-040-qbnr-stop-removal-package-4-evidence-draft-v1.json";
+const P3_ACQUISITION_PATH =
+  "data/quality/acquisition/receipts/" +
+  "plan-040-qbnr-stop-removal-package-3-acquisition-v1.json";
+const P3_EVIDENCE_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-package-3-evidence-v1.json";
+const CORRECTION_MANIFEST_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-acquisition-manifest-v1.json";
 const P5_DRAFT_PATH =
   "data/quality/operational-reference/member-extent-risk/" +
   "plan-040-qbnr-stop-removal-package-5-evidence-draft-v1.json";
@@ -70,6 +90,14 @@ const GRAIN_LEDGER_PATH =
   "data/quality/operational-reference/member-grain-ledger.jsonl";
 const SERVICE_HTML_PATH =
   "raw/sources/mta_queens_bus_network_redesign_service_changes/source.html";
+const SCHEDULE_SOURCE_ID =
+  "mta_bus_schedules_2025_candidate_windows" as const;
+const SCHEDULE_SOURCE_PATH =
+  `raw/sources/${SCHEDULE_SOURCE_ID}/source.csv`;
+const SCHEDULE_RECEIPT_PATH =
+  `raw/sources/${SCHEDULE_SOURCE_ID}/receipt.json`;
+const SCHEDULE_BLOCKS_PATH =
+  `raw/sources/${SCHEDULE_SOURCE_ID}/blocks.jsonl`;
 const EVIDENCE_PATH =
   "data/quality/operational-reference/member-extent-risk/" +
   "plan-040-qbnr-service-pattern-package-8-evidence-v1.json";
@@ -170,6 +198,84 @@ type PriorAcquisition = {
   accepted_launch_feeds?: FeedIdentity[];
 };
 
+type CorrectionMetadata = {
+  acquisition_gap?: string;
+  acquisition_status: "full_sha1_observed_bytes_not_accepted";
+  fetched_at: string;
+  file_sha1s: Record<string, string>;
+  metadata_url?: string;
+  route_count: number;
+  service_window: { start: string; end: string };
+  stop_count: number;
+  stop_time_count: number;
+  trip_count: number;
+  version_sha1: string;
+  zip_sha256: null;
+};
+
+type CorrectionManifest = {
+  publication_version_semantics: {
+    first_week_corrections: {
+      authority: "non_authorizing_sensitivity_only";
+      busco: CorrectionMetadata;
+      queens: CorrectionMetadata;
+      comparison_model: {
+        corrected_first_week_diff:
+          "pending_exact_correction_bytes_and_candidate_review";
+        published_launch_diff: "frozen_from_accepted_launch_bytes";
+      };
+    };
+    launch_published_initial_post: {
+      busco: {
+        acceptance_status: "accepted_immutable_bytes";
+        source_id: "gtfs_static_20250626_busco_post_qbnr";
+        zip_sha1: "54653b3fafb5fabc5ab1c941780b871343138440";
+        zip_sha256:
+          "7d0e5651d5cc5c3ac86973dc664e16a05e9245bea156f566c39e71506128670e";
+      };
+      queens: {
+        acceptance_status: "accepted_immutable_bytes";
+        source_id: "gtfs_static_20250626_queens_post_qbnr";
+        zip_sha1: "c868290ddcd79c69712d809ece96d96dbad2c613";
+        zip_sha256:
+          "4db0f151dc541f2669dde72f104c7803b0f99258bc5d14278b04c8016ce7471a";
+      };
+    };
+  };
+};
+
+type Package3Acquisition = {
+  package_1_manifest: { path: string; sha256: string };
+  required_exact_post_versions: {
+    q67_first_week_correction: CorrectionMetadata & {
+      exact_local_member_match_count: 7;
+      unavailable_or_mismatched_member_count: 1;
+      member_identity:
+        "seven_of_eight_sha1_content_matches_including_all_six_operational_sensitivity_members";
+      routes_member_status:
+        "blocked_correction_routes_sha1_differs_from_staged_initial_routes";
+      zip_bytes_status: "blocked_whole_zip_bytes_unavailable";
+    };
+  };
+  archive_access_state: {
+    mobility_database_api_key: "absent";
+    transitland_api_key: "absent";
+    unauthenticated_metadata_does_not_substitute_for_exact_bytes: true;
+  };
+};
+
+type Package3Evidence = {
+  acquisition_receipt: { path: string; sha256: string };
+  package_1_manifest: { path: string; sha256: string };
+  version_separation: {
+    q67_correction_sha1: string;
+  };
+  authorizes_occurrence: false;
+  authorizes_study: false;
+  authorizes_cross_product: false;
+  authorizes_decision_persistence: false;
+};
+
 const sha256 = (value: Uint8Array | string): string =>
   createHash("sha256").update(value).digest("hex");
 const absolute = (path: string): string => resolve(repoRoot, path);
@@ -224,6 +330,21 @@ for (const [path, expected, label] of [
     "Package 4 draft",
   ],
   [
+    P3_ACQUISITION_PATH,
+    PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.acquisition,
+    "Package 3 acquisition",
+  ],
+  [
+    P3_EVIDENCE_PATH,
+    PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.evidence,
+    "Package 3 evidence",
+  ],
+  [
+    CORRECTION_MANIFEST_PATH,
+    PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.correction_manifest,
+    "Package 3 correction manifest",
+  ],
+  [
     P7_DRAFT_PATH,
     PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_7_draft,
     "Package 7 draft",
@@ -248,6 +369,12 @@ const p2Acquisition =
   JSON.parse(read(P2_ACQUISITION_PATH)) as PriorAcquisition;
 const p4Acquisition =
   JSON.parse(read(P4_ACQUISITION_PATH)) as PriorAcquisition;
+const p3Acquisition =
+  JSON.parse(read(P3_ACQUISITION_PATH)) as Package3Acquisition;
+const p3Evidence =
+  JSON.parse(read(P3_EVIDENCE_PATH)) as Package3Evidence;
+const correctionManifest =
+  JSON.parse(read(CORRECTION_MANIFEST_PATH)) as CorrectionManifest;
 const extentLedger = parseJsonl<LedgerRow>(EXTENT_LEDGER_PATH);
 const grainLedger = parseJsonl<LedgerRow>(GRAIN_LEDGER_PATH);
 const treatments = new Map(
@@ -312,6 +439,155 @@ const feedByFamilyBoundary = new Map(feedIdentities.map((feed) => [
   feed,
 ]));
 
+const correctionSemantics =
+  correctionManifest.publication_version_semantics;
+const queensCorrection =
+  correctionSemantics.first_week_corrections.queens;
+const buscoCorrection =
+  correctionSemantics.first_week_corrections.busco;
+const p3QueensCorrection =
+  p3Acquisition.required_exact_post_versions.q67_first_week_correction;
+if (
+  p3Acquisition.package_1_manifest.path !== CORRECTION_MANIFEST_PATH ||
+  p3Acquisition.package_1_manifest.sha256 !==
+    PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.correction_manifest ||
+  p3Evidence.acquisition_receipt.path !== P3_ACQUISITION_PATH ||
+  p3Evidence.acquisition_receipt.sha256 !==
+    PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.acquisition ||
+  p3Evidence.package_1_manifest.path !== CORRECTION_MANIFEST_PATH ||
+  p3Evidence.package_1_manifest.sha256 !==
+    PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.correction_manifest ||
+  p3Evidence.version_separation.q67_correction_sha1 !==
+    PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1 ||
+  p3Evidence.authorizes_occurrence ||
+  p3Evidence.authorizes_study ||
+  p3Evidence.authorizes_cross_product ||
+  p3Evidence.authorizes_decision_persistence ||
+  correctionSemantics.first_week_corrections.authority !==
+    "non_authorizing_sensitivity_only" ||
+  correctionSemantics.first_week_corrections.comparison_model
+      .published_launch_diff !== "frozen_from_accepted_launch_bytes" ||
+  correctionSemantics.first_week_corrections.comparison_model
+      .corrected_first_week_diff !==
+    "pending_exact_correction_bytes_and_candidate_review" ||
+  queensCorrection.version_sha1 !==
+    PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1 ||
+  buscoCorrection.version_sha1 !==
+    PLAN040_PACKAGE_8_BUSCO_CORRECTION_SHA1 ||
+  queensCorrection.acquisition_status !==
+    "full_sha1_observed_bytes_not_accepted" ||
+  buscoCorrection.acquisition_status !==
+    "full_sha1_observed_bytes_not_accepted" ||
+  queensCorrection.zip_sha256 !== null ||
+  buscoCorrection.zip_sha256 !== null ||
+  p3QueensCorrection.version_sha1 !==
+    PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1 ||
+  p3QueensCorrection.exact_local_member_match_count !== 7 ||
+  p3QueensCorrection.unavailable_or_mismatched_member_count !== 1 ||
+  p3QueensCorrection.member_identity !==
+    "seven_of_eight_sha1_content_matches_including_all_six_operational_sensitivity_members" ||
+  p3QueensCorrection.routes_member_status !==
+    "blocked_correction_routes_sha1_differs_from_staged_initial_routes" ||
+  p3QueensCorrection.zip_bytes_status !==
+    "blocked_whole_zip_bytes_unavailable" ||
+  !p3Acquisition.archive_access_state
+    .unauthenticated_metadata_does_not_substitute_for_exact_bytes
+) {
+  throw new Error("Package 8 correction metadata or authority scope drifted");
+}
+
+const versionSeparation: Plan040Package8VersionSeparation = {
+  immutable_correction_context: {
+    package_3_acquisition: {
+      path: P3_ACQUISITION_PATH,
+      sha256: PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.acquisition,
+    },
+    package_3_evidence: {
+      path: P3_EVIDENCE_PATH,
+      sha256: PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.evidence,
+    },
+    correction_manifest: {
+      path: CORRECTION_MANIFEST_PATH,
+      sha256:
+        PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.correction_manifest,
+    },
+  },
+  published_launch_diff: {
+    status: "completed_from_accepted_initial_feed_bytes",
+    comparison_role: "published_launch_diff",
+    initial_post_versions: {
+      queens: {
+        source_id:
+          correctionSemantics.launch_published_initial_post.queens.source_id,
+        zip_sha1:
+          correctionSemantics.launch_published_initial_post.queens.zip_sha1,
+        zip_sha256:
+          correctionSemantics.launch_published_initial_post.queens.zip_sha256,
+      },
+      busco: {
+        source_id:
+          correctionSemantics.launch_published_initial_post.busco.source_id,
+        zip_sha1:
+          correctionSemantics.launch_published_initial_post.busco.zip_sha1,
+        zip_sha256:
+          correctionSemantics.launch_published_initial_post.busco.zip_sha256,
+      },
+    },
+    correction_version_sha1s_used: [],
+    correction_bytes_used: false,
+  },
+  corrected_first_week_diff: {
+    status: "blocked_not_run",
+    comparison_role: "corrected_first_week_diff",
+    corrections: {
+      queens: {
+        feed_family: "queens",
+        version_sha1: PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1,
+        fetched_at: queensCorrection.fetched_at,
+        metadata_url: queensCorrection.metadata_url ?? null,
+        service_window: queensCorrection.service_window,
+        route_count: queensCorrection.route_count,
+        stop_count: queensCorrection.stop_count,
+        stop_time_count: queensCorrection.stop_time_count,
+        trip_count: queensCorrection.trip_count,
+        member_sha1s: queensCorrection.file_sha1s,
+        acquisition_status: queensCorrection.acquisition_status,
+        exact_zip_bytes_status: "blocked_unavailable",
+        exact_member_bytes_status:
+          "queens_partial_content_matches_routes_member_mismatch",
+        zip_sha256: null,
+        correction_bytes_used: false,
+        corrected_diff_used: false,
+      },
+      busco: {
+        feed_family: "busco",
+        version_sha1: PLAN040_PACKAGE_8_BUSCO_CORRECTION_SHA1,
+        fetched_at: buscoCorrection.fetched_at,
+        metadata_url: buscoCorrection.metadata_url ?? null,
+        service_window: buscoCorrection.service_window,
+        route_count: buscoCorrection.route_count,
+        stop_count: buscoCorrection.stop_count,
+        stop_time_count: buscoCorrection.stop_time_count,
+        trip_count: buscoCorrection.trip_count,
+        member_sha1s: buscoCorrection.file_sha1s,
+        acquisition_status: buscoCorrection.acquisition_status,
+        exact_zip_bytes_status: "blocked_unavailable",
+        exact_member_bytes_status:
+          "busco_no_exact_correction_members_accepted",
+        zip_sha256: null,
+        correction_bytes_used: false,
+        corrected_diff_used: false,
+      },
+    },
+    comparison_run: false,
+    correction_bytes_used: false,
+    corrected_diff_used: false,
+    published_launch_outcomes_reclassified: false,
+    block_reason:
+      "exact_correction_zip_bytes_unavailable_and_required_member_set_not_accepted",
+  },
+};
+
 const B_ROUTE_BOUNDARIES: Record<string, {
   family: "queens" | "busco";
   preDate: "2025-06-27" | "2025-06-28";
@@ -328,6 +604,192 @@ const B_ROUTE_BOUNDARIES: Record<string, {
   QM10: { family: "busco", preDate: "2025-06-27", postDate: "2025-06-30" },
   QM11: { family: "busco", preDate: "2025-06-27", postDate: "2025-06-30" },
 };
+
+type Package8ScheduleSlice = {
+  source_id: typeof SCHEDULE_SOURCE_ID;
+  schedule_date: string;
+  route_id: Plan040Package8RouteId;
+  operator: "NYCT" | "MTA Bus";
+  row_count: number;
+  trip_type_rows: Record<string, number>;
+  passenger_shape_ids: string[];
+  nonrevenue_shape_ids: string[];
+  ambiguous_shape_ids: string[];
+  shape_trip_type_rows: Array<{
+    shape_id: string;
+    trip_type_rows: Record<string, number>;
+  }>;
+  schedule_slice_sha256: string;
+};
+
+async function scanPackage8Schedules(): Promise<{
+  source_csv_sha256: typeof PLAN040_PACKAGE_8_SCHEDULE_CSV_SHA256;
+  source_bytes: number;
+  acquisition_receipt_sha256:
+    typeof PLAN040_PACKAGE_8_SCHEDULE_RECEIPT_SHA256;
+  blocks_sha256: typeof PLAN040_PACKAGE_8_SCHEDULE_BLOCKS_SHA256;
+  slices: Map<string, Package8ScheduleSlice>;
+}> {
+  const receiptText = read(SCHEDULE_RECEIPT_PATH);
+  const receipt = JSON.parse(receiptText) as {
+    source_id: string;
+    merged_sha256: string;
+  };
+  const blocksSha256 = sha256(
+    readFileSync(absolute(SCHEDULE_BLOCKS_PATH)),
+  );
+  if (
+    receipt.source_id !== SCHEDULE_SOURCE_ID ||
+    receipt.merged_sha256 !== PLAN040_PACKAGE_8_SCHEDULE_CSV_SHA256 ||
+    sha256(receiptText) !== PLAN040_PACKAGE_8_SCHEDULE_RECEIPT_SHA256 ||
+    blocksSha256 !== PLAN040_PACKAGE_8_SCHEDULE_BLOCKS_SHA256
+  ) {
+    throw new Error("Package 8 schedule source identity drifted");
+  }
+  const specs = Object.entries(B_ROUTE_BOUNDARIES).flatMap(
+    ([routeId, boundary]) => [
+      {
+        scheduleDate: `${boundary.preDate}T00:00:00.000`,
+        routeId: routeId as Plan040Package8RouteId,
+        operator: boundary.family === "queens"
+          ? "NYCT" as const
+          : "MTA Bus" as const,
+      },
+      {
+        scheduleDate: `${boundary.postDate}T00:00:00.000`,
+        routeId: routeId as Plan040Package8RouteId,
+        operator: boundary.family === "queens"
+          ? "NYCT" as const
+          : "MTA Bus" as const,
+      },
+    ],
+  );
+  const accumulators = new Map(specs.map((spec) => [
+    `${spec.scheduleDate}\u0000${spec.routeId}`,
+    {
+      spec,
+      rowCount: 0,
+      operators: new Set<string>(),
+      tripTypes: new Map<string, number>(),
+      shapes: new Map<string, Map<string, number>>(),
+    },
+  ]));
+  const hash = createHash("sha256");
+  const stream = createReadStream(absolute(SCHEDULE_SOURCE_PATH));
+  stream.on("data", (chunk) => hash.update(chunk));
+  const lines = createInterface({ input: stream, crlfDelay: Infinity });
+  let header: string[] | undefined;
+  for await (const line of lines) {
+    if (!header) {
+      header = parseCsvRows(`${line}\n`)[0];
+      if (
+        !header ||
+        header[0] !== "schedule_date" ||
+        header[3] !== "operator" ||
+        header[6] !== "shape_id" ||
+        header[7] !== "trip_type" ||
+        header[8] !== "route_id"
+      ) {
+        throw new Error(`${SCHEDULE_SOURCE_ID}: schedule header drifted`);
+      }
+      continue;
+    }
+    if (!line) continue;
+    const first = line.split(",", 9);
+    const unquote = (value: string | undefined): string =>
+      value?.replace(/^"|"$/gu, "") ?? "";
+    const accumulator = accumulators.get(
+      `${unquote(first[0])}\u0000${unquote(first[8])}`,
+    );
+    if (!accumulator) continue;
+    const cells = parseCsvRows(`${line}\n`)[0]!;
+    const row = Object.fromEntries(
+      header.map((name, index) => [name, cells[index] ?? ""]),
+    );
+    const shapeId = row.shape_id!;
+    const tripType = row.trip_type!;
+    accumulator.rowCount += 1;
+    accumulator.operators.add(row.operator!);
+    accumulator.tripTypes.set(
+      tripType,
+      (accumulator.tripTypes.get(tripType) ?? 0) + 1,
+    );
+    const shapeTypes =
+      accumulator.shapes.get(shapeId) ?? new Map<string, number>();
+    shapeTypes.set(tripType, (shapeTypes.get(tripType) ?? 0) + 1);
+    accumulator.shapes.set(shapeId, shapeTypes);
+  }
+  const sourceCsvSha256 = hash.digest("hex");
+  if (sourceCsvSha256 !== PLAN040_PACKAGE_8_SCHEDULE_CSV_SHA256) {
+    throw new Error("Package 8 schedule CSV content drifted");
+  }
+  const slices = new Map<string, Package8ScheduleSlice>();
+  for (const accumulator of accumulators.values()) {
+    if (
+      accumulator.rowCount === 0 ||
+      accumulator.operators.size !== 1 ||
+      !accumulator.operators.has(accumulator.spec.operator)
+    ) {
+      throw new Error(
+        `${accumulator.spec.routeId} ${accumulator.spec.scheduleDate}: ` +
+        "schedule slice or operator drifted",
+      );
+    }
+    const passenger: string[] = [];
+    const nonrevenue: string[] = [];
+    const ambiguous: string[] = [];
+    const shapeTripTypeRows = [...accumulator.shapes.entries()]
+      .sort(([left], [right]) => left.localeCompare(right))
+      .map(([shapeId, types]) => {
+        const hasPassenger = [...types.keys()].some((type) =>
+          !["2", "3", "4"].includes(type));
+        const hasNonrevenue = [...types.keys()].some((type) =>
+          ["2", "3", "4"].includes(type));
+        if (hasPassenger && hasNonrevenue) ambiguous.push(shapeId);
+        else if (hasPassenger) passenger.push(shapeId);
+        else nonrevenue.push(shapeId);
+        return {
+          shape_id: shapeId,
+          trip_type_rows: Object.fromEntries(
+            [...types.entries()].sort(([left], [right]) =>
+              left.localeCompare(right)),
+          ),
+        };
+      });
+    const sliceWithoutHash = {
+      source_id: SCHEDULE_SOURCE_ID,
+      schedule_date: accumulator.spec.scheduleDate,
+      route_id: accumulator.spec.routeId,
+      operator: accumulator.spec.operator,
+      row_count: accumulator.rowCount,
+      trip_type_rows: Object.fromEntries(
+        [...accumulator.tripTypes.entries()].sort(([left], [right]) =>
+          left.localeCompare(right)),
+      ),
+      passenger_shape_ids: passenger.sort(),
+      nonrevenue_shape_ids: nonrevenue.sort(),
+      ambiguous_shape_ids: ambiguous.sort(),
+      shape_trip_type_rows: shapeTripTypeRows,
+    };
+    const slice = {
+      ...sliceWithoutHash,
+      schedule_slice_sha256: sha256(stableBytes(sliceWithoutHash)),
+    };
+    slices.set(
+      `${slice.schedule_date}\u0000${slice.route_id}`,
+      slice,
+    );
+  }
+  return {
+    source_csv_sha256: PLAN040_PACKAGE_8_SCHEDULE_CSV_SHA256,
+    source_bytes: statSync(absolute(SCHEDULE_SOURCE_PATH)).size,
+    acquisition_receipt_sha256: PLAN040_PACKAGE_8_SCHEDULE_RECEIPT_SHA256,
+    blocks_sha256: PLAN040_PACKAGE_8_SCHEDULE_BLOCKS_SHA256,
+    slices,
+  };
+}
+
+const scheduleScan = await scanPackage8Schedules();
 
 const routeIdsBySource = new Map<string, Set<string>>();
 function addRoute(sourceId: string, routeId: string): void {
@@ -454,6 +916,8 @@ function boundaryInventory(
     receipt_sha256: feed.receipt_sha256,
     zip_sha1: feed.zip_sha1,
     zip_sha256: feed.zip_sha256,
+    inventory_role:
+      "raw_active_gtfs_inventory_nonauthorizing_not_schedule_trip_type_validated",
   };
 }
 
@@ -609,6 +1073,35 @@ function shapeComparison(
   };
 }
 
+function passengerScheduleValidation(
+  slice: Package8ScheduleSlice,
+  inventory: Plan040Package8BoundaryInventory,
+): Plan040Package8ScheduleValidationBoundary {
+  const schedule = uniqueSorted(slice.passenger_shape_ids);
+  const gtfs = uniqueSorted(inventory.ordered_full_stop_pattern_shape_ids);
+  const scheduleSet = new Set(schedule);
+  const gtfsSet = new Set(gtfs);
+  const scheduleOnly = schedule.filter((shapeId) => !gtfsSet.has(shapeId));
+  const gtfsOnly = gtfs.filter((shapeId) => !scheduleSet.has(shapeId));
+  return {
+    schedule_date: slice.schedule_date,
+    route_id: slice.route_id,
+    operator: slice.operator,
+    row_count: slice.row_count,
+    trip_type_rows: slice.trip_type_rows,
+    schedule_passenger_shape_ids: schedule,
+    schedule_nonrevenue_shape_ids: uniqueSorted(slice.nonrevenue_shape_ids),
+    ambiguous_shape_ids: uniqueSorted(slice.ambiguous_shape_ids),
+    gtfs_active_full_stop_shape_ids: gtfs,
+    matched_passenger_shape_ids: schedule.filter((shapeId) =>
+      gtfsSet.has(shapeId)),
+    schedule_only_passenger_shape_ids: scheduleOnly,
+    gtfs_only_active_shape_ids: gtfsOnly,
+    shape_sets_match: scheduleOnly.length === 0 && gtfsOnly.length === 0,
+    schedule_slice_sha256: slice.schedule_slice_sha256,
+  };
+}
+
 const candidates = PLAN040_PACKAGE_8_CANDIDATES.map(
   ([waveId, routeId, treatmentId]) => {
     const extent = extentLedger.find((row) =>
@@ -636,8 +1129,12 @@ const candidates = PLAN040_PACKAGE_8_CANDIDATES.map(
       Plan040Package8CandidateEvidence["immutable_p2_p4_context"] = null;
     let shapeGap:
       Plan040Package8CandidateEvidence["schedule_to_gtfs_shape_gap"] = null;
+    let scheduleValidation:
+      Plan040Package8CandidateEvidence["schedule_trip_type_validation"] = null;
     let documentGap:
       Plan040Package8CandidateEvidence["candidate_document_gap"] = null;
+    let correctionSensitivity:
+      Plan040Package8CandidateEvidence["correction_sensitivity"];
     const unresolvedGapCodes: string[] = [];
     const roleSearches: string[] = [];
 
@@ -723,7 +1220,21 @@ const candidates = PLAN040_PACKAGE_8_CANDIDATES.map(
         "post_schedule_gtfs_shape_identity_mismatch",
         "candidate_specific_shape_binding_not_authorized",
         "candidate_route_document_nonexclusive_context",
+        "initial_shape_mismatch_may_be_correction_sensitive",
+        "corrected_first_week_diff_blocked_not_run",
       );
+      correctionSensitivity = {
+        feed_family: postInventory.feed_family,
+        published_initial_post_sha1: postInventory.zip_sha1,
+        correction_version_sha1: postInventory.feed_family === "queens"
+          ? PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1
+          : PLAN040_PACKAGE_8_BUSCO_CORRECTION_SHA1,
+        status:
+          "nonauthorizing_initial_shape_mismatch_may_be_correction_sensitive",
+        corrected_first_week_diff_status: "blocked_not_run",
+        correction_bytes_used: false,
+        corrected_diff_used: false,
+      };
       roleSearches.push(
         `candidate_document_url=${document.source_url} immutable_origin=${immutable.origin}`,
         `post_schedule_only_shape_ids=${post.schedule_only_shape_ids.join(",")}`,
@@ -745,6 +1256,72 @@ const candidates = PLAN040_PACKAGE_8_CANDIDATES.map(
         routeId,
         boundary.postDate,
       );
+      const preSchedule = scheduleScan.slices.get(
+        `${boundary.preDate}T00:00:00.000\u0000${routeId}`,
+      );
+      const postSchedule = scheduleScan.slices.get(
+        `${boundary.postDate}T00:00:00.000\u0000${routeId}`,
+      );
+      if (!preSchedule || !postSchedule) {
+        throw new Error(`${routeId}: exact schedule slices missing`);
+      }
+      const prePassenger = passengerScheduleValidation(
+        preSchedule,
+        preInventory,
+      );
+      const postPassenger = passengerScheduleValidation(
+        postSchedule,
+        postInventory,
+      );
+      const correctionSensitive = routeId === "Q36" || routeId === "Q85";
+      if (
+        prePassenger.ambiguous_shape_ids.length !== 0 ||
+        postPassenger.ambiguous_shape_ids.length !== 0 ||
+        !prePassenger.shape_sets_match ||
+        (correctionSensitive
+          ? postPassenger.shape_sets_match ||
+            postPassenger.schedule_only_passenger_shape_ids.length === 0 ||
+            postPassenger.gtfs_only_active_shape_ids.length === 0
+          : !postPassenger.shape_sets_match)
+      ) {
+        throw new Error(
+          `${routeId}: Package 8 passenger schedule validation drifted`,
+        );
+      }
+      scheduleValidation = {
+        source_id: SCHEDULE_SOURCE_ID,
+        source_csv_sha256: scheduleScan.source_csv_sha256,
+        acquisition_receipt_sha256:
+          scheduleScan.acquisition_receipt_sha256,
+        blocks_sha256: scheduleScan.blocks_sha256,
+        passenger_policy: "any_trip_type_except_2_3_4",
+        excluded_nonrevenue_trip_types: ["2", "3", "4"],
+        raw_gtfs_inventory_role:
+          "nonauthorizing_not_schedule_trip_type_validated",
+        pre: prePassenger,
+        post: postPassenger,
+        binding_status: correctionSensitive
+          ? "blocked_post_schedule_gtfs_shape_identity_mismatch"
+          : "validated_exact_passenger_shape_sets_match_both_boundaries",
+      };
+      if (correctionSensitive) {
+        correctionSensitivity = {
+          feed_family: postInventory.feed_family,
+          published_initial_post_sha1: postInventory.zip_sha1,
+          correction_version_sha1:
+            PLAN040_PACKAGE_8_QUEENS_CORRECTION_SHA1,
+          status:
+            "nonauthorizing_initial_shape_mismatch_may_be_correction_sensitive",
+          corrected_first_week_diff_status: "blocked_not_run",
+          correction_bytes_used: false,
+          corrected_diff_used: false,
+        };
+        unresolvedGapCodes.push(
+          "post_schedule_gtfs_shape_identity_mismatch",
+          "initial_shape_mismatch_may_be_correction_sensitive",
+          "corrected_first_week_diff_blocked_not_run",
+        );
+      }
       const detail = sourceRow.anchors.find((anchor) =>
         /(?:get more details|learn more).*service/iu.test(anchor.text));
       const timetable = sourceRow.anchors.find((anchor) =>
@@ -795,6 +1372,10 @@ const candidates = PLAN040_PACKAGE_8_CANDIDATES.map(
       roleSearches.push(
         `source_role=candidate_specific_service_detail exact_url=${detail.href} staged_match_count=0`,
         `source_role=candidate_specific_schedule_or_timetable exact_url=${timetable.href} staged_match_count=0`,
+        `schedule_trip_type_validation pre_passenger_shape_ids=${prePassenger.schedule_passenger_shape_ids.join(",")}`,
+        `schedule_trip_type_validation post_passenger_shape_ids=${postPassenger.schedule_passenger_shape_ids.join(",")}`,
+        `schedule_trip_type_validation post_schedule_only_shape_ids=${postPassenger.schedule_only_passenger_shape_ids.join(",")}`,
+        `schedule_trip_type_validation post_gtfs_only_shape_ids=${postPassenger.gtfs_only_active_shape_ids.join(",")}`,
       );
     }
 
@@ -836,6 +1417,10 @@ const candidates = PLAN040_PACKAGE_8_CANDIDATES.map(
         both_boundaries_active: true,
       },
       schedule_to_gtfs_shape_gap: shapeGap,
+      schedule_trip_type_validation: scheduleValidation,
+      ...(correctionSensitivity
+        ? { correction_sensitivity: correctionSensitivity }
+        : {}),
       candidate_document_gap: documentGap,
       ledger_snapshot: ledgerSnapshot(
         extent.occurrence_id,
@@ -920,6 +1505,23 @@ const evidence = {
         sha256: PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_4.draft,
       },
     },
+    package_3_correction_context: {
+      acquisition: {
+        path: P3_ACQUISITION_PATH,
+        sha256: PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.acquisition,
+      },
+      evidence: {
+        path: P3_EVIDENCE_PATH,
+        sha256: PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.evidence,
+      },
+      correction_manifest: {
+        path: CORRECTION_MANIFEST_PATH,
+        sha256:
+          PLAN040_PACKAGE_8_IMMUTABLE_INPUT_PINS.package_3.correction_manifest,
+      },
+      correction_bytes_used: false,
+      corrected_diff_used: false,
+    },
     accepted_launch_feed_identities: feedIdentities,
     source_bytes_recomputed: false,
     external_acquisition_performed: false,
@@ -928,6 +1530,21 @@ const evidence = {
     source_id: "mta_queens_bus_network_redesign_service_changes",
     source_html_path: SERVICE_HTML_PATH,
     source_html_sha256: PLAN040_PACKAGE_8_SERVICE_CHANGE_HTML_SHA256,
+  },
+  schedule_trip_type_source: {
+    source_id: SCHEDULE_SOURCE_ID,
+    source_path: SCHEDULE_SOURCE_PATH,
+    source_csv_sha256: scheduleScan.source_csv_sha256,
+    source_bytes: scheduleScan.source_bytes,
+    acquisition_receipt_path: SCHEDULE_RECEIPT_PATH,
+    acquisition_receipt_sha256:
+      scheduleScan.acquisition_receipt_sha256,
+    blocks_path: SCHEDULE_BLOCKS_PATH,
+    blocks_sha256: scheduleScan.blocks_sha256,
+    passenger_policy: "any_trip_type_except_2_3_4",
+    excluded_nonrevenue_trip_types: ["2", "3", "4"],
+    source_csv_recomputed: true,
+    external_acquisition_performed: false,
   },
   candidate_count: 30,
   route_count: 18,
@@ -977,8 +1594,10 @@ const evidence = {
     occurrence_inference_from_route_or_schedule_presence: false,
     cross_route_or_predecessor_lineage_inference: false,
     active_inventory_without_candidate_document_is_nonauthorizing: true,
+    raw_active_gtfs_inventory_is_not_schedule_trip_type_validated: true,
     schedule_shape_mismatch_is_terminal_until_new_exact_binding_evidence: true,
   },
+  version_separation: versionSeparation,
   candidates,
   review_protocol: {
     risk_review_reason: "source_gaps",
@@ -1000,6 +1619,7 @@ const draft = buildPlan040Package8Draft({
   evidenceManifestPath: EVIDENCE_PATH,
   evidenceManifestSha256: evidenceSha256,
   candidates,
+  versionSeparation,
   priorCandidateKeys,
 });
 const draftBytes = stableBytes(draft);
