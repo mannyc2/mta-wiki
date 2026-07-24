@@ -9,6 +9,7 @@ import { writeForecastRealizationReviewArtifacts } from "@mta-wiki/pipeline/qual
 import { writeOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
 import { writeBusLaneIdentityArtifacts } from "@mta-wiki/pipeline/quality/bus-lane-identity";
 import { writeMemberExtentLedgerArtifacts } from "@mta-wiki/pipeline/quality/member-extent-ledger";
+import { writePlan040ExemplarDecisionDraft } from "@mta-wiki/pipeline/quality/plan-040-exemplar-decisions";
 import {
   loadRelationshipCompletenessArtifacts,
   syncRelationshipCompletenessToCanonicalDb,
@@ -53,6 +54,18 @@ const memberExtentLedger: CommandHandler = () => {
   console.log(`Rows: extent=${result.extentRows.length}; grain=${result.grainRows.length}`);
   console.log(`Extent verdicts: ${Object.entries(extentCounts).map(([key, value]) => `${key}=${value}`).join(", ")}`);
   console.log(`Grain verdicts: ${Object.entries(grainCounts).map(([key, value]) => `${key}=${value}`).join(", ")}`);
+};
+
+const plan040ExemplarDraft: CommandHandler = () => {
+  const result = writePlan040ExemplarDecisionDraft();
+  console.log(`Plan 040 exemplar decision draft: ${relative(repoRoot, result.path)}`);
+  console.log(`SHA-256: ${result.sha256}`);
+  console.log(`Replay hash: ${result.draft.replay_hash}`);
+  console.log(
+    `Candidates: ${result.draft.candidate_count}; extent decisions: ` +
+    `${result.draft.extent_decision_count}; grain decisions: ${result.draft.grain_decision_count}`,
+  );
+  console.log(`Spatial resolutions: ${JSON.stringify(result.draft.spatial_resolution_distribution)}`);
 };
 
 const busLaneIdentityLedger: CommandHandler = () => {
@@ -274,6 +287,7 @@ const relationshipCompleteness: CommandHandler = () => {
 export const qualityCommands = {
   "bus-lane-identity-ledger": busLaneIdentityLedger,
   "member-extent-ledger": memberExtentLedger,
+  "plan-040-exemplar-draft": plan040ExemplarDraft,
   "operational-coverage": operationalCoverage,
   "coverage-matrix": operationalCoverage,
   "forecast-frontier": forecastFrontier,

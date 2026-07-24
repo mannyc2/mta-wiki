@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "review_id": "plan-040-exemplar-semantic-review-v1",
+  "reviewed_at": "2026-07-24T01:15:22Z",
+  "reviewer_role": "independent_adversarial_candidate_semantics",
+  "verdict": "approve",
+  "draft": {
+    "path": "data/quality/operational-reference/member-extent-risk/plan-040-exemplar-decision-draft-v1.json",
+    "sha256": "ff5691e184a2472ba3b61b58842bfe415625d268e4417ea18017f8d7c1c38333",
+    "replay_hash": "3f84aa708c199863d5f90ad39031d49cf5bcd94cb563df4f4a0aaf1a7e4d0232"
+  },
+  "raw_recomputation": {
+    "active_revenue_trip_count": 395,
+    "exact_pattern_count": 16,
+    "chain_mismatches": 0,
+    "trip_count_mismatches": 0,
+    "period_count_mismatches": 0,
+    "focused_tests_pass": 5,
+    "focused_tests_fail": 0
+  },
+  "route_findings": {
+    "Q61": {
+      "verdict": "approve",
+      "connection_direction_count": 2,
+      "connection_lineage_segment_count": 4,
+      "q15_lineage_segment_count": 2,
+      "q34_lineage_segment_count": 2,
+      "service_scope": "weekend directions 0 and 1",
+      "finding": "Exact connection components, Q15/Q34 shared sets and two-boundary segments, and Q61 selectors match the pinned raw GTFS slices."
+    },
+    "QM44": {
+      "verdict": "approve",
+      "removed_stop_id_count": 7,
+      "direction_0_removed_stop_id_count": 5,
+      "direction_1_removed_stop_id_count": 3,
+      "overlapping_stop_id_count": 1,
+      "frequency_scope": "direction 1 AM peak",
+      "frequency_before_after": "7 to 6",
+      "finding": "The complete stop-ID union and the only changed frequency subset match the pinned raw GTFS slices; route-wide is spatial-only and narrowed by the paired grain."
+    },
+    "QM64": {
+      "verdict": "approve",
+      "discontinued_segment_stop_id_count": 18,
+      "elmont_direction_0_stop_id_count": 2,
+      "elmont_direction_1_stop_id_count": 3,
+      "midtown_added_stop_id_count": 9,
+      "removed_stop_id_count": 28,
+      "frequency_scope": "direction 1 AM peak",
+      "frequency_before_after": "7 to 6",
+      "lineage_segment_count_per_grain": 2,
+      "finding": "The discontinued old suffix, Elmont segments, Midtown additions, full removed-stop union, AM subset, and X64-to-QM64 lineage all match the pinned raw GTFS slices."
+    }
+  },
+  "identity_constraints": {
+    "all_equivalences_are_identical_stop_ids": true,
+    "nonidentical_terminal_equivalence_used": false,
+    "proximity_identity_used": false
+  },
+  "bindings": {
+    "all_decisions_have_document_and_snapshot_evidence": true,
+    "all_decisions_have_route_identity_and_member_binding": true
+  },
+  "authority": {
+    "authorizes_occurrence": false,
+    "authorizes_study": false,
+    "authorizes_cross_product": false
+  },
+  "finding": "No decision overclaims the document-plus-snapshot evidence, changes occurrence identity, or infers an unresolved stop equivalence."
+}

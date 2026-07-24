@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "review_id": "plan-040-exemplar-contract-review-v1",
+  "reviewed_at": "2026-07-24T01:15:22Z",
+  "reviewer_role": "independent_contract_and_accounting",
+  "verdict": "approve",
+  "draft": {
+    "path": "data/quality/operational-reference/member-extent-risk/plan-040-exemplar-decision-draft-v1.json",
+    "sha256": "ff5691e184a2472ba3b61b58842bfe415625d268e4417ea18017f8d7c1c38333",
+    "replay_hash": "3f84aa708c199863d5f90ad39031d49cf5bcd94cb563df4f4a0aaf1a7e4d0232"
+  },
+  "coverage": {
+    "candidate_count": 11,
+    "new_extent_decision_count": 10,
+    "existing_extent_decision_count": 1,
+    "grain_decision_count": 11,
+    "spatial_resolution_distribution": {
+      "bounded_segment": 5,
+      "route_wide": 3,
+      "stop_set": 3
+    },
+    "missing_candidate_keys": 0,
+    "extra_candidate_keys": 0,
+    "duplicate_candidate_keys": 0,
+    "orphan_decisions": 0,
+    "stale_extent_ids": 0,
+    "extent_grain_pairing_mismatches": 0
+  },
+  "validation": {
+    "new_extent_decisions_valid": 10,
+    "existing_extent_decisions_valid": 1,
+    "grain_decisions_valid": 11,
+    "evidence_binding_mismatches": 0,
+    "component_fact_mismatches": 0,
+    "focused_tests_pass": 14,
+    "focused_tests_fail": 0
+  },
+  "overlay_result": {
+    "spatial_resolved": 11,
+    "grain_resolved": 11
+  },
+  "authority": {
+    "authorizes_occurrence": false,
+    "authorizes_study": false,
+    "authorizes_cross_product": false,
+    "proximity_identity_used": false
+  },
+  "finding": "The frozen draft exactly covers the eleven accepted exemplar candidates, pairs every grain decision to its effective spatial decision, and remains inside the non-occurrence authority boundary."
+}

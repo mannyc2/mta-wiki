@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "gate_id": "plan-040-exemplar-dual-review-gate-v1",
+  "draft": {
+    "path": "data/quality/operational-reference/member-extent-risk/plan-040-exemplar-decision-draft-v1.json",
+    "sha256": "ff5691e184a2472ba3b61b58842bfe415625d268e4417ea18017f8d7c1c38333",
+    "replay_hash": "3f84aa708c199863d5f90ad39031d49cf5bcd94cb563df4f4a0aaf1a7e4d0232"
+  },
+  "candidate_count": 11,
+  "extent_decision_count": {
+    "new": 10,
+    "existing": 1,
+    "effective": 11
+  },
+  "grain_decision_count": 11,
+  "spatial_resolution_distribution": {
+    "bounded_segment": 5,
+    "route_wide": 3,
+    "stop_set": 3
+  },
+  "reviewer_results": [
+    {
+      "role": "independent_contract_and_accounting",
+      "verdict": "approve",
+      "path": "data/quality/operational-reference/member-extent-risk/plan-040-exemplar-contract-review-v1.json",
+      "sha256": "4f72296bdc0424108b50e173a2b6de44720c10a374d399738c62291f24fcadfb"
+    },
+    {
+      "role": "independent_adversarial_candidate_semantics",
+      "verdict": "approve",
+      "path": "data/quality/operational-reference/member-extent-risk/plan-040-exemplar-semantic-review-v1.json",
+      "sha256": "002f4facd359b6a28108fd332f255ea64d551a19926db61c5c2bf754cc777d9f"
+    }
+  ],
+  "checkpoint_tests": {
+    "focused": {
+      "pass": 55,
+      "fail": 0,
+      "status": "pass"
+    },
+    "typecheck": {
+      "status": "pass"
+    },
+    "validate": {
+      "issues": 0,
+      "warnings": 3,
+      "status": "pass"
+    },
+    "deterministic_replay": {
+      "replay_hash": "3f84aa708c199863d5f90ad39031d49cf5bcd94cb563df4f4a0aaf1a7e4d0232",
+      "status": "pass"
+    },
+    "full_repository": {
+      "status": "baseline_reused",
+      "baseline_classification": "known_missing_corpus_environment_family",
+      "pass": 1665,
+      "skip": 1,
+      "fail": 9,
+      "error": 1
+    }
+  },
+  "authorization_state": "decision_draft_dual_review_approved_pending_owner_acceptance",
+  "authorizes_occurrence": false,
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "authorizes_decision_persistence": false
+}
