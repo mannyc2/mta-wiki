@@ -8,6 +8,13 @@ import {
   parseMemberGrainDecision,
 } from "../../src/quality/member-grain-decisions";
 import {
+  PLAN040_PACKAGE_7_APPROVED_COMMIT,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_7_ACCEPTANCE_PATH,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_7_GATE_PATH,
+  buildPlan040Package7GateAndAcceptance,
+  validatePlan040Package7GateAndAcceptance,
+} from "../../src/quality/plan040-qbnr-service-pattern-package7-closeout";
+import {
   PLAN040_PACKAGE_7_CANDIDATES,
   PLAN040_PACKAGE_7_CANDIDATE_KEY_SHA256,
   PLAN040_PACKAGE_7_IMMUTABLE_INPUT_PINS,
@@ -582,7 +589,7 @@ describe("Plan 040 QBNR Package 7 accelerated evidence and decision draft", () =
     expect(draft.exclusions.unrelated_occurrence_inference_count).toBe(0);
   });
 
-  it("keeps both ledgers pristine and creates no gate, acceptance, or persistence", () => {
+  it("keeps both ledgers pristine before accepted decisions are persisted", () => {
     const evidence = readJson<Package7Evidence>(evidencePath);
     const draft = readJson<Plan040Package7Draft>(draftPath);
     expect(evidence.pristine_ledger_inputs.extent.sha256).toBe(
@@ -619,12 +626,59 @@ describe("Plan 040 QBNR Package 7 accelerated evidence and decision draft", () =
     expect(draft.authorizes_study).toBe(false);
     expect(draft.authorizes_cross_product).toBe(false);
     expect(draft.authorizes_decision_persistence).toBe(false);
+  });
+
+  it("freezes a compact dual-review gate and exact owner acceptance", () => {
     expect(existsSync(
-      `${riskRoot}/plan-040-qbnr-service-pattern-package-7-dual-review-gate-v1.json`,
-    )).toBe(false);
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_7_GATE_PATH,
+    )).toBe(true);
     expect(existsSync(
-      `${riskRoot}/plan-040-qbnr-service-pattern-package-7-owner-acceptance-v1.json`,
-    )).toBe(false);
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_7_ACCEPTANCE_PATH,
+    )).toBe(true);
+    const draft = readJson<Plan040Package7Draft>(draftPath);
+    const gate = readJson<Record<string, unknown>>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_7_GATE_PATH,
+    );
+    const acceptance = readJson<Record<string, unknown>>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_7_ACCEPTANCE_PATH,
+    );
+    expect(validatePlan040Package7GateAndAcceptance({
+      draft,
+      gate,
+      acceptance,
+      acceptedAt: acceptance.accepted_at as string,
+    })).toEqual({
+      candidate_count: 20,
+      positive_candidate_count: 10,
+      unresolved_candidate_count: 10,
+      authorized_extent_decision_count: 10,
+      authorized_grain_decision_count: 10,
+      authorized_absence_candidate_count: 10,
+      persisted_decision_count: 0,
+      persisted_absence_receipt_count: 0,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(gate.reviewed_commit).toBe(
+      PLAN040_PACKAGE_7_APPROVED_COMMIT,
+    );
+    expect(gate).not.toHaveProperty("candidate_keys");
+    expect(gate).not.toHaveProperty("extent_decision_ids");
+    expect(gate).not.toHaveProperty("grain_decision_ids");
+    expect(gate.authorization_state).toBe(
+      "dual_review_approved_pending_owner_delegate_acceptance",
+    );
+    expect(gate.authorizes_decision_persistence).toBe(false);
+    expect(gate.authorizes_occurrence).toBe(false);
+    expect(acceptance.authorizes_decision_persistence).toBe(true);
+    expect(acceptance.authorizes_reviewed_absence_receipt_persistence)
+      .toBe(true);
+    expect(acceptance.authorizes_occurrence).toBe(false);
+    expect(buildPlan040Package7GateAndAcceptance({
+      draft,
+      acceptedAt: acceptance.accepted_at as string,
+    }).gate).toEqual(gate);
   });
 
   it("rebuilds deterministically and rejects scope or authority mutations", () => {
