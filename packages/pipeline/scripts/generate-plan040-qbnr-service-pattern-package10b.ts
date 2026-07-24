@@ -56,7 +56,7 @@ const draftRelative =
   "data/quality/operational-reference/member-extent-risk/" +
   "plan-040-qbnr-service-pattern-package-10b-evidence-draft-v1.json";
 const comparisonReceiptRelative =
-  "data/quality/acquisition/receipts/member-extent/" +
+  "data/quality/acquisition/receipts/member-extent-evidence/" +
   "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json";
 const comparisonReceiptSourceId =
   "plan_040_qbnr_service_pattern_package_10b_full_stop_equivalence" as const;

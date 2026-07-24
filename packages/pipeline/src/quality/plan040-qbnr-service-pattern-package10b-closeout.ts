@@ -14,15 +14,15 @@ import {
 export const PLAN040_PACKAGE_10B_APPROVED_COMMIT =
   "4ff696145873c8de8138217a4ec83a7f9f3a2099" as const;
 export const PLAN040_PACKAGE_10B_EVIDENCE_SHA256 =
-  "d0e41e3368d0eae0cc8425ad4f354aaae75bf678c5c0036d985913d786a75b2a" as const;
+  "43877f6b9461ce904f8536789b28bc746afc42c15be02115cdbe8317ce4334c6" as const;
 export const PLAN040_PACKAGE_10B_DRAFT_SHA256 =
-  "f65c3827d9adedfc6a537e19d48835934f31c1b87ea2a373d657316a85981f83" as const;
+  "90680f7321edb260901ac4861a63256e3ae8b6df59e85363f808454cf83990d8" as const;
 export const PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256 =
   "09475af217f46307c25ada24ff0fcdc98b2f24e999f956586b6d02df041d7aec" as const;
 export const PLAN040_PACKAGE_10B_GATE_SHA256 =
-  "f719470a012399382a5108ceec4962467d49c6ddba6b0010d2d75012cbe3f7d1" as const;
+  "bf0300e079fee81cad9e365bfda76c76ee9a193bbe7657543d28ff99b8f942ea" as const;
 export const PLAN040_PACKAGE_10B_ACCEPTANCE_SHA256 =
-  "22586299d637d8e54ae638a94db14efc44342f52876a68874bc5fe3693869e86" as const;
+  "8318f4028da59211db19554e66bce9f1b00fbf0ea561d70d35d3f7f82fd2d5d0" as const;
 
 const PACKAGE_10B_EVIDENCE_PATH =
   "data/quality/operational-reference/member-extent-risk/" +
@@ -31,11 +31,59 @@ const PACKAGE_10B_DRAFT_PATH =
   "data/quality/operational-reference/member-extent-risk/" +
   "plan-040-qbnr-service-pattern-package-10b-evidence-draft-v1.json";
 const PACKAGE_10B_COMPARISON_RECEIPT_PATH =
-  "data/quality/acquisition/receipts/member-extent/" +
+  "data/quality/acquisition/receipts/member-extent-evidence/" +
   "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json";
 const PACKAGE_10B_GATE_PATH =
   "data/quality/operational-reference/member-extent-risk/" +
   "plan-040-qbnr-service-pattern-package-10b-dual-review-gate-v1.json";
+
+const PACKAGE_10B_PATH_MIGRATION = {
+  amendment_id:
+    "plan-040-qbnr-service-pattern-package-10b-receipt-path-amendment-v1",
+  amendment_kind: "path_only_nonsemantic_supersession",
+  reason:
+    "Keep full-stop comparison evidence outside the directory reserved for member-extent absence receipts.",
+  prior_artifacts: {
+    comparison_receipt: {
+      path:
+        "data/quality/acquisition/receipts/member-extent/" +
+        "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json",
+      sha256: PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256,
+    },
+    evidence_sha256:
+      "d0e41e3368d0eae0cc8425ad4f354aaae75bf678c5c0036d985913d786a75b2a",
+    draft_sha256:
+      "f65c3827d9adedfc6a537e19d48835934f31c1b87ea2a373d657316a85981f83",
+    gate_sha256:
+      "f719470a012399382a5108ceec4962467d49c6ddba6b0010d2d75012cbe3f7d1",
+    acceptance_sha256:
+      "22586299d637d8e54ae638a94db14efc44342f52876a68874bc5fe3693869e86",
+  },
+  current_comparison_receipt: {
+    path: PACKAGE_10B_COMPARISON_RECEIPT_PATH,
+    sha256: PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256,
+    file_kind: "regular_file",
+  },
+  supersession_scope: [
+    "comparison_receipt_path",
+    "derived_evidence_sha256",
+    "derived_draft_sha256",
+    "derived_gate_sha256",
+    "derived_acceptance_sha256",
+  ],
+  unchanged: {
+    receipt_bytes: true,
+    candidate_keys: true,
+    verdicts: true,
+    proposed_decisions: true,
+    reviewer_results: true,
+    authorization: true,
+  },
+  prior_artifacts_retained_in_git_history: true,
+  shared_loader_semantics_changed: false,
+  fresh_compact_dual_path_review_required_before_persistence: true,
+  path_review_status: "pending",
+} as const;
 
 export const PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_DRAFT_PATH =
   join(repoRoot, PACKAGE_10B_DRAFT_PATH);
@@ -199,6 +247,7 @@ export function buildPlan040Package10bGateAndAcceptance(input: {
           "Only four closures since the Package 10A checkpoint and no shared semantics changed.",
       },
     },
+    path_migration: PACKAGE_10B_PATH_MIGRATION,
     authorization_state:
       "dual_review_approved_pending_owner_delegate_acceptance",
     authorizes_decision_persistence: false as const,
@@ -223,6 +272,7 @@ export function buildPlan040Package10bGateAndAcceptance(input: {
     candidate_key_sha256: PLAN040_PACKAGE_10B_CANDIDATE_KEY_SHA256,
     verdict_distribution: verdictDistribution,
     reviewer_results: reviewerResults,
+    path_migration: PACKAGE_10B_PATH_MIGRATION,
     authorized_positive_persistence: {
       candidate_count: 3,
       candidate_key_sha256: positiveKeySha256,

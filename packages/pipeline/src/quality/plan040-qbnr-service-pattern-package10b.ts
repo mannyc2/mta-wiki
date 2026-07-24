@@ -191,7 +191,7 @@ export const PLAN040_PACKAGE_10B_ACQUISITION_PINS = {
 
 export type Plan040Package10bComparisonReceiptRef = {
   path:
-    "data/quality/acquisition/receipts/member-extent/plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json";
+    "data/quality/acquisition/receipts/member-extent-evidence/plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json";
   sha256: string;
   receipt_id:
     "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1";
@@ -677,7 +677,7 @@ export function buildPlan040Package10bDraft(input: {
   validatePreservedPackage8(input.preservedPackage8);
   if (
     input.comparisonReceipt.path !==
-      "data/quality/acquisition/receipts/member-extent/plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json" ||
+      "data/quality/acquisition/receipts/member-extent-evidence/plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json" ||
     input.comparisonReceipt.sha256 !==
       PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256 ||
     input.comparisonReceipt.receipt_id !==

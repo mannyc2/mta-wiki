@@ -1,6 +1,6 @@
 import { describe, expect, it } from "bun:test";
 import { createHash } from "node:crypto";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, lstatSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import { stableJson } from "../../../db/src/stable-json";
 import type { JsonValue } from "../../../db/src/types";
@@ -55,13 +55,19 @@ const evidencePath =
 const draftPath =
   `${riskRoot}/plan-040-qbnr-service-pattern-package-10b-evidence-draft-v1.json`;
 const comparisonReceiptPath =
-  `${repoRoot}/data/quality/acquisition/receipts/member-extent/` +
+  `${repoRoot}/data/quality/acquisition/receipts/member-extent-evidence/` +
   "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json";
 const EVIDENCE_SHA256 =
-  "d0e41e3368d0eae0cc8425ad4f354aaae75bf678c5c0036d985913d786a75b2a";
+  "43877f6b9461ce904f8536789b28bc746afc42c15be02115cdbe8317ce4334c6";
 const DRAFT_SHA256 =
-  "f65c3827d9adedfc6a537e19d48835934f31c1b87ea2a373d657316a85981f83";
+  "90680f7321edb260901ac4861a63256e3ae8b6df59e85363f808454cf83990d8";
 const ACCEPTED_AT = "2026-07-24T14:23:38Z";
+const PRIOR_COMPARISON_RECEIPT_RELATIVE =
+  "data/quality/acquisition/receipts/member-extent/" +
+  "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json";
+const CURRENT_COMPARISON_RECEIPT_RELATIVE =
+  "data/quality/acquisition/receipts/member-extent-evidence/" +
+  "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json";
 
 type Package10bEvidence = {
   candidate_count: 4;
@@ -377,6 +383,25 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     ) as Plan040Package10bDraft;
     expect(sha256(evidenceBytes)).toBe(EVIDENCE_SHA256);
     expect(sha256(draftBytes)).toBe(DRAFT_SHA256);
+    expect(sha256(
+      evidenceBytes.toString("utf8").replaceAll(
+        CURRENT_COMPARISON_RECEIPT_RELATIVE,
+        PRIOR_COMPARISON_RECEIPT_RELATIVE,
+      ),
+    )).toBe(
+      "d0e41e3368d0eae0cc8425ad4f354aaae75bf678c5c0036d985913d786a75b2a",
+    );
+    expect(sha256(
+      draftBytes.toString("utf8").replaceAll(
+        CURRENT_COMPARISON_RECEIPT_RELATIVE,
+        PRIOR_COMPARISON_RECEIPT_RELATIVE,
+      ).replaceAll(
+        EVIDENCE_SHA256,
+        "d0e41e3368d0eae0cc8425ad4f354aaae75bf678c5c0036d985913d786a75b2a",
+      ),
+    )).toBe(
+      "f65c3827d9adedfc6a537e19d48835934f31c1b87ea2a373d657316a85981f83",
+    );
     expect(plan040Package10bReplayHash(
       draft as unknown as JsonValue,
     )).toBe(DRAFT_SHA256);
@@ -451,9 +476,11 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     expect(sha256(receiptBytes)).toBe(
       PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256,
     );
+    expect(lstatSync(comparisonReceiptPath).isFile()).toBe(true);
+    expect(lstatSync(comparisonReceiptPath).isSymbolicLink()).toBe(false);
     expect(evidence.comparison_receipt).toEqual({
       path:
-        "data/quality/acquisition/receipts/member-extent/" +
+        "data/quality/acquisition/receipts/member-extent-evidence/" +
         "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1.json",
       sha256: PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256,
       receipt_id:
@@ -1118,6 +1145,68 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
       expect.objectContaining({ verdict: "APPROVE" }),
       expect.objectContaining({ verdict: "APPROVE" }),
     ]);
+    expect(gate.path_migration).toEqual(expect.objectContaining({
+      amendment_id:
+        "plan-040-qbnr-service-pattern-package-10b-receipt-path-amendment-v1",
+      amendment_kind: "path_only_nonsemantic_supersession",
+      prior_artifacts: expect.objectContaining({
+        comparison_receipt: {
+          path: PRIOR_COMPARISON_RECEIPT_RELATIVE,
+          sha256: PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256,
+        },
+        gate_sha256:
+          "f719470a012399382a5108ceec4962467d49c6ddba6b0010d2d75012cbe3f7d1",
+        acceptance_sha256:
+          "22586299d637d8e54ae638a94db14efc44342f52876a68874bc5fe3693869e86",
+      }),
+      current_comparison_receipt: {
+        path: CURRENT_COMPARISON_RECEIPT_RELATIVE,
+        sha256: PLAN040_PACKAGE_10B_COMPARISON_RECEIPT_SHA256,
+        file_kind: "regular_file",
+      },
+      unchanged: {
+        receipt_bytes: true,
+        candidate_keys: true,
+        verdicts: true,
+        proposed_decisions: true,
+        reviewer_results: true,
+        authorization: true,
+      },
+      prior_artifacts_retained_in_git_history: true,
+      shared_loader_semantics_changed: false,
+      fresh_compact_dual_path_review_required_before_persistence: true,
+      path_review_status: "pending",
+    }));
+    const priorGate = clone(gate) as unknown as {
+      artifacts: {
+        comparison_receipt: { path: string };
+        evidence: { sha256: string };
+        draft: { sha256: string };
+      };
+      checkpoint_tests: {
+        deterministic_replay: {
+          evidence_sha256: string;
+          draft_sha256: string;
+        };
+      };
+      path_migration?: unknown;
+    };
+    delete priorGate.path_migration;
+    priorGate.artifacts.comparison_receipt.path =
+      PRIOR_COMPARISON_RECEIPT_RELATIVE;
+    priorGate.artifacts.evidence.sha256 =
+      "d0e41e3368d0eae0cc8425ad4f354aaae75bf678c5c0036d985913d786a75b2a";
+    priorGate.artifacts.draft.sha256 =
+      "f65c3827d9adedfc6a537e19d48835934f31c1b87ea2a373d657316a85981f83";
+    priorGate.checkpoint_tests.deterministic_replay.evidence_sha256 =
+      priorGate.artifacts.evidence.sha256;
+    priorGate.checkpoint_tests.deterministic_replay.draft_sha256 =
+      priorGate.artifacts.draft.sha256;
+    expect(sha256(
+      `${stableJson(priorGate as unknown as JsonValue)}\n`,
+    )).toBe(
+      "f719470a012399382a5108ceec4962467d49c6ddba6b0010d2d75012cbe3f7d1",
+    );
     expect(acceptance).toEqual(expect.objectContaining({
       accepted_at: ACCEPTED_AT,
       accepted_by: "codex-owner-delegate",
@@ -1131,6 +1220,30 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
       authorizes_study: false,
       authorizes_cross_product: false,
     }));
+    expect(acceptance.path_migration).toEqual(gate.path_migration);
+    const priorAcceptance = clone(acceptance) as unknown as {
+      artifacts: {
+        comparison_receipt: { path: string };
+        evidence: { sha256: string };
+        draft: { sha256: string };
+      };
+      gate: { sha256: string };
+      path_migration?: unknown;
+    };
+    delete priorAcceptance.path_migration;
+    priorAcceptance.artifacts.comparison_receipt.path =
+      PRIOR_COMPARISON_RECEIPT_RELATIVE;
+    priorAcceptance.artifacts.evidence.sha256 =
+      "d0e41e3368d0eae0cc8425ad4f354aaae75bf678c5c0036d985913d786a75b2a";
+    priorAcceptance.artifacts.draft.sha256 =
+      "f65c3827d9adedfc6a537e19d48835934f31c1b87ea2a373d657316a85981f83";
+    priorAcceptance.gate.sha256 =
+      "f719470a012399382a5108ceec4962467d49c6ddba6b0010d2d75012cbe3f7d1";
+    expect(sha256(
+      `${stableJson(priorAcceptance as unknown as JsonValue)}\n`,
+    )).toBe(
+      "22586299d637d8e54ae638a94db14efc44342f52876a68874bc5fe3693869e86",
+    );
     expect(
       acceptance.authorized_positive_persistence,
     ).toEqual(expect.objectContaining({
