@@ -10,12 +10,13 @@ import {
   PLAN040_PACKAGE_10D_EVIDENCE_SHA256,
   PLAN040_PACKAGE_10D_EXTENT_DECISIONS_SHA256,
   PLAN040_PACKAGE_10D_GRAIN_DECISIONS_SHA256,
-  PLAN040_PACKAGE_10D_POST_PERSISTENCE_PINS,
   buildPlan040Package10dAcceptedArtifacts,
   buildPlan040Package10dGateAndAcceptance,
   validatePlan040Package10dGateAndAcceptance,
 } from
   "../../src/quality/plan040-qbnr-service-pattern-package10d-closeout";
+import { PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS } from
+  "../../src/quality/plan040-qbnr-bus-stop-package13-closeout";
 import type { Plan040Package10dDraft } from
   "../../src/quality/plan040-qbnr-service-pattern-package10d";
 
@@ -234,7 +235,7 @@ describe("Plan 040 QBNR Package 10D gate and owner acceptance", () => {
       row.member_extent_decision_id !== null
     )).toBeTrue();
 
-    const pinnedFiles = {
+    const currentProjectionFiles = {
       extent_ledger:
         `${repoRoot}/data/quality/operational-reference/member-extent-ledger.jsonl`,
       grain_ledger:
@@ -261,16 +262,16 @@ describe("Plan 040 QBNR Package 10D gate and owner acceptance", () => {
       reviewed_candidate_packets:
         `${repoRoot}/data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl`,
     };
-    for (const [name, path] of Object.entries(pinnedFiles)) {
+    for (const [name, path] of Object.entries(currentProjectionFiles)) {
       expect(sha256(readFileSync(path))).toBe(
-        PLAN040_PACKAGE_10D_POST_PERSISTENCE_PINS[
-          name as keyof typeof PLAN040_PACKAGE_10D_POST_PERSISTENCE_PINS
+        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS
         ],
       );
     }
 
     const extentRows = readFileSync(
-      pinnedFiles.extent_ledger,
+      currentProjectionFiles.extent_ledger,
       "utf8",
     ).trim().split("\n").map((line) => JSON.parse(line)) as Array<{
       treatment_record_id: string;
@@ -279,7 +280,7 @@ describe("Plan 040 QBNR Package 10D gate and owner acceptance", () => {
       authorizes_cross_product: false;
     }>;
     const grainRows = readFileSync(
-      pinnedFiles.grain_ledger,
+      currentProjectionFiles.grain_ledger,
       "utf8",
     ).trim().split("\n").map((line) => JSON.parse(line)) as Array<{
       treatment_record_id: string;

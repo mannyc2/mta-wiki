@@ -4,6 +4,8 @@ import { readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import { stableJson } from "../../../db/src/stable-json";
 import type { JsonValue } from "../../../db/src/types";
+import { PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS } from
+  "../../src/quality/plan040-qbnr-bus-stop-package13-closeout";
 
 const riskRoot =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk`;
@@ -349,31 +351,63 @@ describe("Plan 040 Package 10B through 12 accepted 25-closure checkpoint", () =>
     });
   });
 
-  it("pins current projections and grants no authority", () => {
+  it("preserves the Package 12 projection snapshot while Package 13 is current", () => {
     const checkpoint = readJson<Checkpoint>(checkpointPath);
-    const projectionPaths = {
-      member_extent_ledger_sha256:
-        "data/quality/operational-reference/member-extent-ledger.jsonl",
-      member_grain_ledger_sha256:
-        "data/quality/operational-reference/member-grain-ledger.jsonl",
+    expect(checkpoint.current_projection).toEqual({
       bridge_ledger_sha256:
-        "data/quality/study-readiness/v1/bridge-ledger.jsonl",
-      study_manifest_sha256:
-        "data/quality/study-readiness/v1/manifest.json",
+        "f937c0ed6d420e35b6eb878292ac671ff24d5d6c2e86e0cc9fa47be377ef183e",
       member_extent_contract_sha256:
-        "data/contracts/operational-occurrence-member-extent/v1/" +
-        "operational_occurrence_member_extents.jsonl",
+        "5566b2a536bd2d3f2e513b32af0a46a7efc18854414ea3c1dacd37d22d250b5f",
+      member_extent_ledger_sha256:
+        "b6ec884cc6e0a38f09fa69b99f1b844b00b82def1477f7e48e52378fc8673c5b",
       member_extent_manifest_sha256:
-        "data/contracts/operational-occurrence-member-extent/v1/manifest.json",
+        "d8126f8017c899726fc6c7181f0dfdc84f773066af54bc9f2ee769703bed9253",
       member_extent_review_ledger_sha256:
-        "data/contracts/operational-occurrence-member-extent/v1/" +
-        "review-ledger.jsonl",
+        "9bee9b8f1e4e0358822dbf38ae5840c4f6d9ae834e1aaaf20c492c608065f57c",
       member_extent_summary_sha256:
-        "data/contracts/operational-occurrence-member-extent/v1/summary.json",
+        "7897a943ea6c14166346260af65a94625ce629fadc59e26db24df8e21d17adba",
+      member_grain_ledger_sha256:
+        "362538a4e870914a6c148dfb546018da1f69e81725766eba8feb891ef0fb77de",
+      study_manifest_sha256:
+        "cb40a045d09ffca2e59d4d96722a09f9832c715f50afb9aee35080eb4b97207c",
+    });
+    const projectionPaths = {
+      extent_ledger: {
+        path: "data/quality/operational-reference/member-extent-ledger.jsonl",
+      },
+      grain_ledger: {
+        path: "data/quality/operational-reference/member-grain-ledger.jsonl",
+      },
+      bridge_ledger: {
+        path: "data/quality/study-readiness/v1/bridge-ledger.jsonl",
+      },
+      study_manifest: {
+        path: "data/quality/study-readiness/v1/manifest.json",
+      },
+      member_extent_contract: {
+        path:
+          "data/contracts/operational-occurrence-member-extent/v1/" +
+          "operational_occurrence_member_extents.jsonl",
+      },
+      member_extent_manifest: {
+        path:
+          "data/contracts/operational-occurrence-member-extent/v1/manifest.json",
+      },
+      member_extent_review_ledger: {
+        path:
+          "data/contracts/operational-occurrence-member-extent/v1/" +
+          "review-ledger.jsonl",
+      },
+      member_extent_summary: {
+        path:
+          "data/contracts/operational-occurrence-member-extent/v1/summary.json",
+      },
     } as const;
-    for (const [hashKey, path] of Object.entries(projectionPaths)) {
-      expect(artifactSha(path)).toBe(
-        checkpoint.current_projection[hashKey],
+    for (const [pinKey, projection] of Object.entries(projectionPaths)) {
+      expect(artifactSha(projection.path)).toBe(
+        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS[
+          pinKey as keyof typeof PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS
+        ],
       );
     }
     expect(checkpoint.authority).toEqual({

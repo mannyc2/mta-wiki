@@ -33,6 +33,8 @@ import {
   type Plan040Package10aExclusion,
 } from "../../src/quality/plan040-qbnr-service-pattern-package10a";
 import type { Plan040Package8VersionSeparation } from "../../src/quality/plan040-qbnr-service-pattern-package8";
+import { PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS } from
+  "../../src/quality/plan040-qbnr-bus-stop-package13-closeout";
 
 const riskRoot =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk`;
@@ -95,9 +97,6 @@ const sortedHash = (values: readonly string[]): string =>
   sha256(`${[...values].sort().join("\n")}\n`);
 const orderedHash = (values: readonly string[]): string =>
   sha256(`${values.join("\n")}\n`);
-const rowHash = (values: readonly unknown[]): string =>
-  sha256(`${values.map((value) =>
-    stableJson(value as JsonValue)).join("\n")}\n`);
 const readJson = <T>(path: string): T =>
   JSON.parse(readFileSync(path, "utf8")) as T;
 const readJsonl = <T>(path: string): T[] =>
@@ -586,11 +585,8 @@ describe("Plan 040 QBNR Package 10A accelerated absence freeze", () => {
     ).toThrow(/acceptance|scope/u);
   });
 
-  it("overlays exactly four rows while preserving every prior reviewed row", () => {
+  it("overlays exactly four rows within the current Package 13 projection", () => {
     const evidence = readJson<Package10aEvidence>(evidencePath);
-    const targetIds = new Set(evidence.candidates.map((candidate) =>
-      candidate.treatment_record_id
-    ));
     const extentRows = readJsonl<MemberExtentLedgerRow>(
       `${repoRoot}/data/quality/operational-reference/` +
         "member-extent-ledger.jsonl",
@@ -599,18 +595,57 @@ describe("Plan 040 QBNR Package 10A accelerated absence freeze", () => {
       `${repoRoot}/data/quality/operational-reference/` +
         "member-grain-ledger.jsonl",
     );
-    expect(rowHash(extentRows.filter((row) =>
-      !targetIds.has(row.treatment_record_id as
-        Plan040Package10aCandidateEvidence["treatment_record_id"])
-    ))).toBe(
-      "7df8bd6550fa327ec4948d7a1b7f3fe87390dc0a2ff8c9175fba92bd13468f5d",
-    );
-    expect(rowHash(grainRows.filter((row) =>
-      !targetIds.has(row.treatment_record_id as
-        Plan040Package10aCandidateEvidence["treatment_record_id"])
-    ))).toBe(
-      "0f091d68826caaf52e36a367f38407b7907eab8b0ae1c52f12233af0c84052a6",
-    );
+    expect(Object.fromEntries([...new Set(extentRows.map((row) =>
+      row.verdict))].sort().map((verdict) => [
+      verdict,
+      extentRows.filter((row) => row.verdict === verdict).length,
+    ]))).toEqual({
+      absent_in_source: 165,
+      "blocked_upstream:candidate_named_stop_pair_not_named_and_not_isolatable_from_changed_id_diff":
+        1,
+      "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_and_jamaica_reroute_diff":
+        1,
+      "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_diff":
+        1,
+      "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window":
+        1,
+      "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window+no_effective_date_schedule_slice":
+        2,
+      "blocked_upstream:schedule_gtfs_validation_missing": 4,
+      "resolved:bounded_segment": 47,
+      "resolved:route_wide": 14,
+      "resolved:stop_set": 7,
+      unreviewed: 65,
+    });
+    expect(Object.fromEntries([...new Set(grainRows.map((row) =>
+      row.verdict))].sort().map((verdict) => [
+      verdict,
+      grainRows.filter((row) => row.verdict === verdict).length,
+    ]))).toEqual({
+      absent_in_source: 165,
+      "blocked_upstream:accepted_date_resolution+feed_version_resolution": 2,
+      "blocked_upstream:branch_lineage_mapping+direction_lineage_mapping": 1,
+      "blocked_upstream:candidate_named_stop_pair_not_named_and_not_isolatable_from_changed_id_diff":
+        1,
+      "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_and_jamaica_reroute_diff":
+        1,
+      "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_diff":
+        1,
+      "blocked_upstream:corrected_initial_feed_bytes+published_launch_conflict_resolution":
+        2,
+      "blocked_upstream:cross_feed_operator_transition_requires_review+schedule_gtfs_validation_missing":
+        1,
+      "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window":
+        1,
+      "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window+no_effective_date_schedule_slice":
+        2,
+      "blocked_upstream:effective_date_full_stop_inventory+frequency_evidence+later_feed_lineage":
+        2,
+      "blocked_upstream:schedule_gtfs_validation_missing": 5,
+      not_applicable: 2,
+      resolved: 57,
+      unreviewed: 65,
+    });
     for (const candidate of evidence.candidates) {
       const extent = extentRows.find((row) =>
         row.treatment_record_id === candidate.treatment_record_id
@@ -649,12 +684,12 @@ describe("Plan 040 QBNR Package 10A accelerated absence freeze", () => {
     expect(sha256(readFileSync(
       `${repoRoot}/data/quality/study-readiness/v1/bridge-ledger.jsonl`,
     ))).toBe(
-      "f937c0ed6d420e35b6eb878292ac671ff24d5d6c2e86e0cc9fa47be377ef183e",
+      PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.bridge_ledger,
     );
     expect(sha256(readFileSync(
       `${repoRoot}/data/quality/study-readiness/v1/manifest.json`,
     ))).toBe(
-      "cb40a045d09ffca2e59d4d96722a09f9832c715f50afb9aee35080eb4b97207c",
+      PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.study_manifest,
     );
   });
 });

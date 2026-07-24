@@ -57,7 +57,6 @@ import {
   PLAN040_PACKAGE_10B_GATE_SHA256,
   PLAN040_PACKAGE_10B_GRAIN_DECISIONS_SHA256,
   PLAN040_PACKAGE_10B_PATH_AMENDMENT_COMMIT,
-  PLAN040_PACKAGE_10B_POST_PERSISTENCE_PINS,
   PLAN040_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_SHA256,
   PLAN040_PACKAGE_10B_PATH_REVIEW_GATE_SHA256,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ACCEPTANCE_PATH,
@@ -73,6 +72,8 @@ import {
   validatePlan040Package10bGateAndAcceptance,
 } from
   "../../src/quality/plan040-qbnr-service-pattern-package10b-closeout";
+import { PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS } from
+  "../../src/quality/plan040-qbnr-bus-stop-package13-closeout";
 
 const riskRoot =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk`;
@@ -1539,49 +1540,57 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     );
     expect(extentRows).toHaveLength(308);
     expect(grainRows).toHaveLength(308);
-    expect(extentRows.filter((row) =>
-      row.verdict === "absent_in_source"
-    )).toHaveLength(165);
-    expect(extentRows.filter((row) =>
-      row.verdict === "resolved:bounded_segment"
-    )).toHaveLength(29);
-    expect(extentRows.filter((row) =>
-      row.verdict === "resolved:route_wide"
-    )).toHaveLength(14);
-    expect(extentRows.filter((row) =>
-      row.verdict === "resolved:stop_set"
-    )).toHaveLength(4);
-    expect(extentRows.filter((row) =>
-      row.verdict === "unreviewed"
-    )).toHaveLength(96);
-    expect(grainRows.filter((row) =>
-      row.verdict === "absent_in_source"
-    )).toHaveLength(165);
-    expect(grainRows.filter((row) =>
-      row.verdict === "resolved"
-    )).toHaveLength(38);
-    expect(grainRows.filter((row) =>
-      row.verdict === "unreviewed"
-    )).toHaveLength(96);
-    expect(grainRows.filter((row) =>
-      row.verdict ===
-        "blocked_upstream:accepted_date_resolution+feed_version_resolution"
-    )).toHaveLength(2);
-    expect(grainRows.filter((row) =>
-      row.verdict ===
-        "blocked_upstream:branch_lineage_mapping+direction_lineage_mapping"
-    )).toHaveLength(1);
-    expect(grainRows.filter((row) =>
-      row.verdict ===
-        "blocked_upstream:corrected_initial_feed_bytes+published_launch_conflict_resolution"
-    )).toHaveLength(2);
-    expect(grainRows.filter((row) =>
-      row.verdict ===
-        "blocked_upstream:effective_date_full_stop_inventory+frequency_evidence+later_feed_lineage"
-    )).toHaveLength(2);
-    expect(grainRows.filter((row) =>
-      row.verdict === "not_applicable"
-    )).toHaveLength(2);
+    expect(Object.fromEntries([...new Set(extentRows.map((row) =>
+      row.verdict))].sort().map((verdict) => [
+      verdict,
+      extentRows.filter((row) => row.verdict === verdict).length,
+    ]))).toEqual({
+      absent_in_source: 165,
+      "blocked_upstream:candidate_named_stop_pair_not_named_and_not_isolatable_from_changed_id_diff":
+        1,
+      "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_and_jamaica_reroute_diff":
+        1,
+      "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_diff":
+        1,
+      "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window":
+        1,
+      "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window+no_effective_date_schedule_slice":
+        2,
+      "blocked_upstream:schedule_gtfs_validation_missing": 4,
+      "resolved:bounded_segment": 47,
+      "resolved:route_wide": 14,
+      "resolved:stop_set": 7,
+      unreviewed: 65,
+    });
+    expect(Object.fromEntries([...new Set(grainRows.map((row) =>
+      row.verdict))].sort().map((verdict) => [
+      verdict,
+      grainRows.filter((row) => row.verdict === verdict).length,
+    ]))).toEqual({
+      absent_in_source: 165,
+      "blocked_upstream:accepted_date_resolution+feed_version_resolution": 2,
+      "blocked_upstream:branch_lineage_mapping+direction_lineage_mapping": 1,
+      "blocked_upstream:candidate_named_stop_pair_not_named_and_not_isolatable_from_changed_id_diff":
+        1,
+      "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_and_jamaica_reroute_diff":
+        1,
+      "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_diff":
+        1,
+      "blocked_upstream:corrected_initial_feed_bytes+published_launch_conflict_resolution":
+        2,
+      "blocked_upstream:cross_feed_operator_transition_requires_review+schedule_gtfs_validation_missing":
+        1,
+      "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window":
+        1,
+      "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window+no_effective_date_schedule_slice":
+        2,
+      "blocked_upstream:effective_date_full_stop_inventory+frequency_evidence+later_feed_lineage":
+        2,
+      "blocked_upstream:schedule_gtfs_validation_missing": 5,
+      not_applicable: 2,
+      resolved: 57,
+      unreviewed: 65,
+    });
 
     const positive = evidence.candidates.slice(0, 3);
     for (const candidate of positive) {
@@ -1640,8 +1649,8 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     };
     for (const [name, path] of Object.entries(pinnedFiles)) {
       expect(sha256(readFileSync(path))).toBe(
-        PLAN040_PACKAGE_10B_POST_PERSISTENCE_PINS[
-          name as keyof typeof PLAN040_PACKAGE_10B_POST_PERSISTENCE_PINS
+        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS
         ],
       );
     }
