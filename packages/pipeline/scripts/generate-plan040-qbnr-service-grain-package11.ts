@@ -54,6 +54,8 @@ import {
   PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS,
 } from
   "../src/quality/plan040-qbnr-service-grain-package11-closeout.js";
+import { PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS } from
+  "../src/quality/plan040-accelerated-package14-closeout.js";
 
 const riskRoot = join(
   repoRoot,
@@ -269,9 +271,32 @@ const mutablePostPins: Record<string, string> = {
   "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
     PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.member_extent_manifest,
 };
+const package14Pins: Record<string, string> = {
+  "data/quality/operational-reference/member-extent-ledger.jsonl":
+    PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.extent_ledger,
+  "data/quality/operational-reference/member-grain-ledger.jsonl":
+    PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.grain_ledger,
+  "data/quality/study-readiness/v1/bridge-ledger.jsonl":
+    PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.bridge_ledger,
+  "data/quality/study-readiness/v1/manifest.json":
+    PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.study_manifest,
+  [
+    "data/contracts/operational-occurrence-member-extent/v1/" +
+      "operational_occurrence_member_extents.jsonl"
+  ]: PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.member_extent_contract,
+  "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
+    PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.member_extent_manifest,
+};
 pinnedFiles.forEach(([path, hash]) => {
   const postPin = mutablePostPins[path];
-  if (postPin) assertOneOfPinned(path, [hash, postPin]);
+  const package14Pin = package14Pins[path];
+  if (postPin) {
+    assertOneOfPinned(path, [
+      hash,
+      postPin,
+      ...(package14Pin ? [package14Pin] : []),
+    ]);
+  }
   else assertPinned(path, hash);
 });
 assertLargePinned(

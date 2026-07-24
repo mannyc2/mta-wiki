@@ -64,8 +64,12 @@ import type {
   MemberExtentDecision,
 } from "../src/quality/study-readiness-v1.js";
 import {
+  PLAN040_PACKAGE_13_DRAFT_SHA256,
+  PLAN040_PACKAGE_13_EVIDENCE_SHA256,
   PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS,
 } from "../src/quality/plan040-qbnr-bus-stop-package13-closeout.js";
+import { PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS } from
+  "../src/quality/plan040-accelerated-package14-closeout.js";
 
 const checkOnly = process.argv.includes("--check");
 const riskRoot = join(
@@ -458,15 +462,62 @@ for (const [path, expected] of [
     "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
       PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.member_extent_manifest,
   };
+  const package14Pins: Record<string, string> = {
+    "data/quality/operational-reference/member-extent-ledger.jsonl":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.extent_ledger,
+    "data/quality/operational-reference/member-grain-ledger.jsonl":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.grain_ledger,
+    "data/quality/study-readiness/v1/bridge-ledger.jsonl":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.bridge_ledger,
+    "data/quality/study-readiness/v1/manifest.json":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.study_manifest,
+    "data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.member_extent_contract,
+    "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.member_extent_manifest,
+  };
   const postPersistencePin = postPersistencePins[path];
   if (postPersistencePin) {
-    assertOneOfPinned(path, [expected, postPersistencePin]);
+    const package14Pin = package14Pins[path];
+    assertOneOfPinned(path, [
+      expected,
+      postPersistencePin,
+      ...(package14Pin ? [package14Pin] : []),
+    ]);
   } else {
     assertPinned(path, expected);
   }
 }
 for (const pin of Object.values(UPSTREAM_PINS)) {
   assertPinned(pin.path, pin.sha256);
+}
+if (
+  checkOnly &&
+  sha256(readFileSync(join(
+    repoRoot,
+    "data/quality/operational-reference/member-extent-ledger.jsonl",
+  ))) === PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.extent_ledger
+) {
+  assertPinned(evidenceRelative, PLAN040_PACKAGE_13_EVIDENCE_SHA256);
+  assertPinned(draftRelative, PLAN040_PACKAGE_13_DRAFT_SHA256);
+  process.stdout.write(`${stableJson({
+    package_id: PLAN040_QBNR_BUS_STOP_PACKAGE_13,
+    candidate_count: PLAN040_PACKAGE_13_CANDIDATE_COUNT,
+    positive_extent_and_grain_count:
+      PLAN040_PACKAGE_13_POSITIVE_EXTENT_AND_GRAIN_COUNT,
+    positive_extent_only_blocked_grain_count:
+      PLAN040_PACKAGE_13_POSITIVE_EXTENT_ONLY_COUNT,
+    blocked_extent_and_grain_count:
+      PLAN040_PACKAGE_13_BLOCKED_EXTENT_AND_GRAIN_COUNT,
+    source_gap_block_count: PLAN040_PACKAGE_13_SOURCE_GAP_COUNT,
+    exact_absence_count: PLAN040_PACKAGE_13_EXACT_ABSENCE_COUNT,
+    evidence_path: evidenceRelative,
+    evidence_sha256: PLAN040_PACKAGE_13_EVIDENCE_SHA256,
+    draft_path: draftRelative,
+    draft_sha256: PLAN040_PACKAGE_13_DRAFT_SHA256,
+    replay_mode: "check_after_package14_persistence",
+  } as JsonValue)}\n`);
+  process.exit(0);
 }
 
 type SourceBlock = {

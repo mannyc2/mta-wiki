@@ -13,7 +13,6 @@ import {
   PLAN040_PACKAGE_13_EXTENT_DECISIONS_SHA256,
   PLAN040_PACKAGE_13_GATE_SHA256,
   PLAN040_PACKAGE_13_GRAIN_DECISIONS_SHA256,
-  PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS,
   PLAN040_PACKAGE_13_SOURCE_GAP_OVERLAY_SHA256,
   PLAN040_QBNR_BUS_STOP_PACKAGE_13_EXTENT_DECISIONS_PATH,
   PLAN040_QBNR_BUS_STOP_PACKAGE_13_GRAIN_DECISIONS_PATH,
@@ -23,6 +22,8 @@ import {
   validatePlan040Package13GateAndAcceptance,
 } from
   "../../src/quality/plan040-qbnr-bus-stop-package13-closeout.js";
+import { PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS } from
+  "../../src/quality/plan040-accelerated-package14-closeout.js";
 
 const riskRoot =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk`;
@@ -328,9 +329,9 @@ describe("Plan 040 Package 13 gate and owner acceptance", () => {
       !row.authorizes_study && !row.authorizes_cross_product
     )).toBeTrue();
     expect(extentRows.filter((row) => row.verdict === "unreviewed"))
-      .toHaveLength(65);
+      .toHaveLength(29);
     expect(grainRows.filter((row) => row.verdict === "unreviewed"))
-      .toHaveLength(65);
+      .toHaveLength(29);
 
     const extentByKey = new Map(extentRows.map((row) => [key(row), row]));
     const grainByKey = new Map(grainRows.map((row) => [key(row), row]));
@@ -343,25 +344,25 @@ describe("Plan 040 Package 13 gate and owner acceptance", () => {
 
     for (const [relativePath, expected] of Object.entries({
       "data/quality/operational-reference/member-extent-ledger.jsonl":
-        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.extent_ledger,
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.extent_ledger,
       "data/quality/operational-reference/member-grain-ledger.jsonl":
-        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.grain_ledger,
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.grain_ledger,
       "data/quality/study-readiness/v1/bridge-ledger.jsonl":
-        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.bridge_ledger,
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.bridge_ledger,
       "data/quality/study-readiness/v1/bridge-summary.json":
-        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.bridge_summary,
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.bridge_summary,
       "data/quality/study-readiness/v1/consumer-priority-manifest.json":
-        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.consumer_priority_manifest,
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.consumer_priority_manifest,
       "data/quality/study-readiness/v1/manifest.json":
-        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.study_manifest,
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.study_manifest,
       "data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl":
-          PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.member_extent_contract,
+          PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.member_extent_contract,
       "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
-        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.member_extent_manifest,
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.member_extent_manifest,
       "data/contracts/operational-occurrence-member-extent/v1/review-ledger.jsonl":
-        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.member_extent_review_ledger,
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.member_extent_review_ledger,
       "data/contracts/operational-occurrence-member-extent/v1/summary.json":
-        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS.member_extent_summary,
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.member_extent_summary,
     })) {
       expect(sha256(readFileSync(`${repoRoot}/${relativePath}`)))
         .toBe(expected);

@@ -37,20 +37,20 @@
     {
       "path": "data/contracts/operational-occurrence-member-extent/v1/manifest.json",
       "bytes": 2057,
-      "sha256": "44a66c5f1652f2a2e35ee5b383d6b5cc806964bee4fc768b9a56cabba239ed42"
+      "sha256": "d329eeb7963ac1d8e53a7f987fb59dc07f361f6391cb3fd4068297bfbc751fff"
     }
   ],
   "files": [
     {
       "path": "data/quality/study-readiness/v1/bridge-ledger.jsonl",
-      "bytes": 1049303,
-      "sha256": "c053736116774006a40a15e218a97e60e575785a6fbf6c6fccce5c8abd904cfd",
+      "bytes": 1066116,
+      "sha256": "2795f92338f5dcc22369759384d61355526842618f92b7eda70d7cf7476bae9e",
       "row_count": 484
     },
     {
       "path": "data/quality/study-readiness/v1/bridge-summary.json",
       "bytes": 474,
-      "sha256": "701f5238c36d9f66b531c0860da04a4cceff4053a87885f63e1865613eadd139"
+      "sha256": "a9fbef6364dd8e78ad29272190a55c6fa457926369258c0c838813af8853daa1"
     },
     {
       "path": "data/quality/study-readiness/v1/consumer-owned-quarantine.jsonl",

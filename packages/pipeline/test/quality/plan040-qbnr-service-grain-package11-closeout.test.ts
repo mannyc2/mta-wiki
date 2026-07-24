@@ -11,7 +11,6 @@ import {
   PLAN040_PACKAGE_11_GATE_SHA256,
   PLAN040_PACKAGE_11_GRAIN_DECISIONS_SHA256,
   PLAN040_PACKAGE_11_GRAIN_ONLY_EXTENT_ROW_PINS,
-  PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS,
   PLAN040_PACKAGE_11_RECEIPT_SHA256,
   buildPlan040Package11AcceptedArtifacts,
   buildPlan040Package11GateAndAcceptance,
@@ -20,6 +19,8 @@ import {
   "../../src/quality/plan040-qbnr-service-grain-package11-closeout";
 import type { Plan040Package11Draft } from
   "../../src/quality/plan040-qbnr-service-grain-package11";
+import { PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS } from
+  "../../src/quality/plan040-accelerated-package14-closeout";
 
 const root =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk`;
@@ -316,8 +317,8 @@ describe("Plan 040 Package 11 gate and owner acceptance", () => {
     };
     for (const [name, path] of Object.entries(pinnedFiles)) {
       expect(sha256(readFileSync(path))).toBe(
-        PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS[
-          name as keyof typeof PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS
         ],
       );
     }
