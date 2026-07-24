@@ -33,6 +33,21 @@ import {
   type Plan040Package14Discovery,
   type Plan040Package14Partition,
 } from "../src/quality/plan040-accelerated-package14.js";
+import {
+  PLAN040_PACKAGE_14_ACCEPTANCE_SHA256,
+  PLAN040_PACKAGE_14_COMPARISON_SHA256,
+  PLAN040_PACKAGE_14_EXTENT_DECISIONS_SHA256,
+  PLAN040_PACKAGE_14_FROZEN_DRAFT_SHA256,
+  PLAN040_PACKAGE_14_FROZEN_EVIDENCE_SHA256,
+  PLAN040_PACKAGE_14_GATE_SHA256,
+  PLAN040_PACKAGE_14_GRAIN_DECISIONS_SHA256,
+  PLAN040_PACKAGE_14_PERSISTENCE_EVIDENCE_SHA256,
+  PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS,
+  PLAN040_PACKAGE_14_SOURCE_GAP_BLOCK_SHA256,
+  PLAN040_PACKAGE_14_SOURCE_GAP_OVERLAY_SHA256,
+} from "../src/quality/plan040-accelerated-package14-closeout.js";
+import { loadMemberSourceGapOverlays } from
+  "../src/quality/member-extent-ledger.js";
 
 const checkOnly = process.argv.includes("--check");
 const receiptRoot =
@@ -78,6 +93,61 @@ const trackedInputs = {
   package13Checkpoint:
     "data/quality/operational-reference/member-extent-risk/plan-040-package-13-checkpoint-v1.json",
 } as const;
+const postPersistenceArtifacts = {
+  gate:
+    `${riskRoot}/plan-040-accelerated-package-14-dual-review-gate-v1.json`,
+  comparison:
+    `${receiptRoot}/plan-040-accelerated-package-14-persistence-comparisons-v1.json`,
+  sourceGapBlock:
+    `${receiptRoot}/plan-040-accelerated-package-14-source-gap-blocks-v1.json`,
+  persistenceEvidence:
+    `${riskRoot}/plan-040-accelerated-package-14-persistence-evidence-v1.json`,
+  acceptance:
+    `${riskRoot}/plan-040-accelerated-package-14-owner-acceptance-v2.json`,
+  extentDecisions:
+    "data/quality/operational-reference/member-extent-ledger-decisions/" +
+    "plan-040-accelerated-package-14-v1.json",
+  grainDecisions:
+    "data/quality/operational-reference/member-grain-decisions/" +
+    "plan-040-accelerated-package-14-v1.json",
+  sourceGapOverlay:
+    "data/quality/operational-reference/member-source-gap-overlays/" +
+    "plan-040-accelerated-package-14-v1.json",
+} as const;
+const frozenArtifactPins = {
+  [paths.qbnr6]:
+    "03512b4002d7609adb9a1e9e0e2c52fc10da10f4cca1344047d3572b4e8ea370",
+  [paths.q110Chains]:
+    "e2d6b67a9543aae16c3f27efad570b2ecfb9975f6d3605aec5a850a1ca44b525",
+  [paths.express20]:
+    "9783bcec6b4e1edc45f929fb5daca7b69cbe62683b792f38fbdcd9939a780b89",
+  [paths.ace7]:
+    "b562800f6dfea2ff1ef10324889a924f781a63ce235ad7aebc573ddc811f8214",
+  [paths.legacySbs3]:
+    "6d3c0bfcc6c3d51ce88af81b652fd5f368399a11f4262fa05e8045a6b3d516c4",
+  [paths.sourceGaps]:
+    "f8ac25362481b5d69a435555a0c429b9dfd627e832245c8a70119e6c0ce847af",
+  [paths.currentFreeze]:
+    "fccd862125882bae3a53b2862bb38bb04c2b0abea08d550c2689202d89fe266a",
+  [paths.evidence]: PLAN040_PACKAGE_14_FROZEN_EVIDENCE_SHA256,
+  [paths.draft]: PLAN040_PACKAGE_14_FROZEN_DRAFT_SHA256,
+} as const;
+const postPersistenceArtifactPins = {
+  [postPersistenceArtifacts.gate]: PLAN040_PACKAGE_14_GATE_SHA256,
+  [postPersistenceArtifacts.comparison]: PLAN040_PACKAGE_14_COMPARISON_SHA256,
+  [postPersistenceArtifacts.sourceGapBlock]:
+    PLAN040_PACKAGE_14_SOURCE_GAP_BLOCK_SHA256,
+  [postPersistenceArtifacts.persistenceEvidence]:
+    PLAN040_PACKAGE_14_PERSISTENCE_EVIDENCE_SHA256,
+  [postPersistenceArtifacts.acceptance]:
+    PLAN040_PACKAGE_14_ACCEPTANCE_SHA256,
+  [postPersistenceArtifacts.extentDecisions]:
+    PLAN040_PACKAGE_14_EXTENT_DECISIONS_SHA256,
+  [postPersistenceArtifacts.grainDecisions]:
+    PLAN040_PACKAGE_14_GRAIN_DECISIONS_SHA256,
+  [postPersistenceArtifacts.sourceGapOverlay]:
+    PLAN040_PACKAGE_14_SOURCE_GAP_OVERLAY_SHA256,
+} as const;
 
 const sha256 = (value: Uint8Array | string): string =>
   createHash("sha256").update(value).digest("hex");
@@ -108,6 +178,15 @@ const assertNormalFile = (path: string): void => {
   const stat = lstatSync(join(repoRoot, path));
   if (!stat.isFile() || stat.isSymbolicLink()) {
     throw new Error(`${path}: expected immutable normal file`);
+  }
+};
+const assertPinnedNormalFile = (path: string, expected: string): void => {
+  assertNormalFile(path);
+  const actual = sha256(readFileSync(join(repoRoot, path)));
+  if (actual !== expected) {
+    throw new Error(
+      `${path}: pinned SHA-256 drifted; expected ${expected}, got ${actual}`,
+    );
   }
 };
 const writeStable = (path: string, value: JsonValue): void => {
@@ -286,6 +365,234 @@ for (const [actual, expected] of [
 }
 if (q110Chains.corrected_first_week_diff_used) {
   throw new Error("Q110 correction feed was silently mixed into Package 14");
+}
+
+const persistenceMarkers = [
+  postPersistenceArtifacts.extentDecisions,
+  postPersistenceArtifacts.grainDecisions,
+  postPersistenceArtifacts.sourceGapOverlay,
+] as const;
+const materializedMarkerCount = persistenceMarkers.filter((path) =>
+  existsSync(join(repoRoot, path))
+).length;
+if (checkOnly && materializedMarkerCount > 0) {
+  if (materializedMarkerCount !== persistenceMarkers.length) {
+    throw new Error(
+      "Package 14 post-persistence replay requires all three exact " +
+        "decision/overlay artifacts",
+    );
+  }
+  assertPinnedNormalFile(
+    paths.discovery,
+    PLAN040_PACKAGE_14_DISCOVERY_SHA256,
+  );
+  for (const [path, expected] of Object.entries(frozenArtifactPins)) {
+    assertPinnedNormalFile(path, expected);
+  }
+  for (
+    const [path, expected] of Object.entries(postPersistenceArtifactPins)
+  ) {
+    assertPinnedNormalFile(path, expected);
+  }
+  const postProjectionPins: Record<string, string> = {
+    [trackedInputs.extentLedger]:
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.extent_ledger,
+    [trackedInputs.grainLedger]:
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.grain_ledger,
+    "data/quality/study-readiness/v1/bridge-ledger.jsonl":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.bridge_ledger,
+    "data/quality/study-readiness/v1/bridge-summary.json":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.bridge_summary,
+    "data/quality/study-readiness/v1/consumer-priority-manifest.json":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.consumer_priority_manifest,
+    "data/quality/study-readiness/v1/manifest.json":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.study_manifest,
+    ["data/contracts/operational-occurrence-member-extent/v1/" +
+      "operational_occurrence_member_extents.jsonl"]:
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.member_extent_contract,
+    "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.member_extent_manifest,
+    "data/contracts/operational-occurrence-member-extent/v1/review-ledger.jsonl":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.member_extent_review_ledger,
+    "data/contracts/operational-occurrence-member-extent/v1/summary.json":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.member_extent_summary,
+    "data/exports/releases/v1-rc26/operational_occurrences.jsonl":
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.operational_occurrences,
+    ["data/exports/releases/v1-rc26/" +
+      "operational_occurrence_review_decisions.json"]:
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS
+          .operational_occurrence_decisions,
+    [trackedInputs.treatments]:
+      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.treatment_components,
+    ["data/quality/study-readiness/v1/research/" +
+      "reviewed-candidate-packets.jsonl"]:
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS
+          .reviewed_candidate_packets,
+  };
+  for (const [path, expected] of Object.entries(postProjectionPins)) {
+    assertPinnedNormalFile(path, expected);
+  }
+
+  type AcceptedExtentDecision = {
+    decision_id: string;
+    occurrence_id: string;
+    route_record_id: string;
+    treatment_record_id: string;
+    resolution: string;
+  };
+  type AcceptedGrainDecision = {
+    decision_id: string;
+    occurrence_id: string;
+    route_record_id: string;
+    treatment_record_id: string;
+    member_extent_decision_id: string;
+    service_scope: { kind: string };
+  };
+  const acceptedExtent = readJson<{ decisions: AcceptedExtentDecision[] }>(
+    postPersistenceArtifacts.extentDecisions,
+  ).decisions;
+  const acceptedGrain = readJson<{ decisions: AcceptedGrainDecision[] }>(
+    postPersistenceArtifacts.grainDecisions,
+  ).decisions;
+  if (acceptedExtent.length !== 8 || acceptedGrain.length !== 8) {
+    throw new Error("Package 14 accepted decision count drifted");
+  }
+  const extentDecisionByKey = new Map(acceptedExtent.map((row) => [
+    `${row.occurrence_id}\0${row.route_record_id}\0${row.treatment_record_id}`,
+    row,
+  ]));
+  const grainDecisionByKey = new Map(acceptedGrain.map((row) => [
+    `${row.occurrence_id}\0${row.route_record_id}\0${row.treatment_record_id}`,
+    row,
+  ]));
+  const liveExtentByKey = new Map(
+    readJsonl(trackedInputs.extentLedger)
+      .map((row) => [keyForLedgerRow(row), row]),
+  );
+  const liveGrainByKey = new Map(
+    readJsonl(trackedInputs.grainLedger)
+      .map((row) => [keyForLedgerRow(row), row]),
+  );
+  const liveRouteById = new Map(
+    readJsonl(trackedInputs.routes).map((row) => [recordId(row), row]),
+  );
+  const liveTreatmentById = new Map(
+    readJsonl(trackedInputs.treatments).map((row) => [recordId(row), row]),
+  );
+  for (const candidate of discovery.candidate_details) {
+    const [, routeId, treatmentId] = candidate.candidate_key.split("\0");
+    const extentRow = liveExtentByKey.get(candidate.candidate_key);
+    const grainRow = liveGrainByKey.get(candidate.candidate_key);
+    const routeRow = liveRouteById.get(routeId);
+    const treatmentRow = liveTreatmentById.get(treatmentId);
+    if (
+      extentRow === undefined ||
+      grainRow === undefined ||
+      routeRow === undefined ||
+      treatmentRow === undefined ||
+      plan040Package14RowHash(routeRow) !==
+        candidate.canonical_route_row_sha256 ||
+      plan040Package14RowHash(treatmentRow) !==
+        candidate.canonical_treatment_row_sha256
+    ) {
+      throw new Error(
+        `${candidate.candidate_key}: post-persistence canonical binding drifted`,
+      );
+    }
+    const extentRecord = record(extentRow);
+    const grainRecord = record(grainRow);
+    if (
+      extentRecord.authorizes_study !== false ||
+      extentRecord.authorizes_cross_product !== false ||
+      grainRecord.authorizes_study !== false ||
+      grainRecord.authorizes_cross_product !== false
+    ) {
+      throw new Error(
+        `${candidate.candidate_key}: post-persistence row gained authority`,
+      );
+    }
+    if (candidate.proposed_verdict === "positive_extent_and_grain") {
+      const extentDecision = extentDecisionByKey.get(candidate.candidate_key);
+      const grainDecision = grainDecisionByKey.get(candidate.candidate_key);
+      const proposal = record(candidate.proposed_positive_decisions!);
+      const proposalGrain = record(proposal.grain_scope);
+      if (
+        extentDecision === undefined ||
+        grainDecision === undefined ||
+        extentRecord.verdict !==
+          `resolved:${extentDecision.resolution}` ||
+        extentRecord.verdict_basis !==
+          `review:${extentDecision.decision_id}` ||
+        grainRecord.verdict !== "resolved" &&
+          grainRecord.verdict !== "not_applicable" ||
+        grainRecord.verdict_basis !==
+          `review:${grainDecision.decision_id}` ||
+        grainDecision.member_extent_decision_id !==
+          extentDecision.decision_id ||
+        extentDecision.resolution !== proposal.extent_resolution ||
+        grainDecision.service_scope.kind !== proposalGrain.kind
+      ) {
+        throw new Error(
+          `${candidate.candidate_key}: accepted positive projection drifted`,
+        );
+      }
+    } else {
+      const proposedOverlay = record(candidate.proposed_source_gap_overlay!);
+      const expectedVerdict = String(proposedOverlay.verdict);
+      if (
+        extentDecisionByKey.has(candidate.candidate_key) ||
+        grainDecisionByKey.has(candidate.candidate_key) ||
+        extentRecord.verdict !== expectedVerdict ||
+        grainRecord.verdict !== expectedVerdict ||
+        extentRecord.verdict_basis !==
+          "receipt:plan-040-accelerated-package-14-source-gap-blocks-v1" ||
+        grainRecord.verdict_basis !==
+          "receipt:plan-040-accelerated-package-14-source-gap-blocks-v1"
+      ) {
+        throw new Error(
+          `${candidate.candidate_key}: source-gap projection drifted`,
+        );
+      }
+    }
+  }
+  for (const sibling of discovery.preservation.same_occurrence_siblings) {
+    const extentRow = liveExtentByKey.get(sibling.candidate_key);
+    const grainRow = liveGrainByKey.get(sibling.candidate_key);
+    if (
+      extentRow === undefined ||
+      grainRow === undefined ||
+      plan040Package14RowHash(extentRow) !== sibling.extent_row_sha256 ||
+      plan040Package14RowHash(grainRow) !== sibling.grain_row_sha256
+    ) {
+      throw new Error(
+        `${sibling.candidate_key}: preserved sibling changed after persistence`,
+      );
+    }
+  }
+  const overlays = loadMemberSourceGapOverlays([
+    join(
+      repoRoot,
+      "data/quality/operational-reference/member-source-gap-overlays",
+    ),
+  ]);
+  const package14Overlay = overlays.find((overlay) =>
+    overlay.overlay_id ===
+      "plan-040-accelerated-package-14-source-gap-overlay-v1"
+  );
+  if (
+    package14Overlay === undefined ||
+    package14Overlay.entries.length !== PLAN040_PACKAGE_14_SOURCE_GAP_COUNT ||
+    package14Overlay.entries.some((entry) =>
+      entry.blocked_surfaces.join(",") !== "member_extent,member_grain"
+    )
+  ) {
+    throw new Error("Package 14 strict source-gap overlay replay drifted");
+  }
+  console.log(
+    "checked Plan 040 accelerated Package 14 post-persistence replay: " +
+      "36 candidates, 8 positive, 28 blocked source gaps",
+  );
+  process.exit(0);
 }
 
 const extentRows = new Map(

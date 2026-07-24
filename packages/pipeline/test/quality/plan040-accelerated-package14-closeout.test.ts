@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { spawnSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "bun:test";
 import {
@@ -179,5 +180,22 @@ describe("Plan 040 accelerated Package 14 closeout", () => {
       row.authorizes_study === false &&
       row.authorizes_cross_product === false
     )).toBeTrue();
+  });
+
+  it("replays the real Package 14 generator after persistence", () => {
+    const result = spawnSync(
+      "bun",
+      [
+        "packages/pipeline/scripts/" +
+          "generate-plan040-accelerated-package14.ts",
+        "--check",
+      ],
+      { cwd: process.cwd(), encoding: "utf8" },
+    );
+    expect(result.status).toBe(0);
+    expect(result.stderr).toBe("");
+    expect(result.stdout).toContain(
+      "checked Plan 040 accelerated Package 14 post-persistence replay",
+    );
   });
 });
