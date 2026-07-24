@@ -944,9 +944,9 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
     expect(grainLedger).toHaveLength(308);
     expect(distribution(companion, "extent")).toEqual({
       bounded_segment: 25,
-      route_wide: 6,
+      route_wide: 8,
       stop_set: 4,
-      unresolved: 273,
+      unresolved: 271,
     });
     const companionByKey = new Map(companion.map((row) => [
       extentDecisionKey(row as never),

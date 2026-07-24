@@ -32,6 +32,9 @@ import {
   acceptPlan040Package8ReceiptPackage,
 } from "@mta-wiki/pipeline/quality/plan040-qbnr-service-pattern-package8-closeout";
 import {
+  acceptPlan040Package9DecisionPackage,
+} from "@mta-wiki/pipeline/quality/plan040-qbnr-service-pattern-package9-closeout";
+import {
   loadRelationshipCompletenessArtifacts,
   syncRelationshipCompletenessToCanonicalDb,
   writeRelationshipCompletenessArtifacts,
@@ -206,6 +209,40 @@ const plan040Package8Accept: CommandHandler = () => {
   console.log(
     `Positive extent decisions: ${result.extentDecisionCount}; ` +
     `positive grain decisions: ${result.grainDecisionCount}`,
+  );
+};
+
+const plan040Package9Accept: CommandHandler = () => {
+  const result = acceptPlan040Package9DecisionPackage();
+  console.log(
+    `Accepted Plan 040 Package 9 extent decisions: ${
+      relative(repoRoot, result.extentDecisionPath)
+    }`,
+  );
+  console.log(
+    `Extent SHA-256: ${result.extentDecisionSha256}; decisions: ${
+      result.extentDecisionCount
+    }`,
+  );
+  console.log(
+    `Accepted Plan 040 Package 9 grain decisions: ${
+      relative(repoRoot, result.grainDecisionPath)
+    }`,
+  );
+  console.log(
+    `Grain SHA-256: ${result.grainDecisionSha256}; decisions: ${
+      result.grainDecisionCount
+    }`,
+  );
+  console.log(
+    `Accepted Plan 040 Package 9 absence receipt: ${
+      relative(repoRoot, result.absenceReceiptPath)
+    }`,
+  );
+  console.log(
+    `Absence SHA-256: ${result.absenceReceiptSha256}; candidates: ${
+      result.absenceCandidateCount
+    }`,
   );
 };
 
@@ -436,6 +473,7 @@ export const qualityCommands = {
   "plan-040-package-6-accept": plan040Package6Accept,
   "plan-040-package-7-accept": plan040Package7Accept,
   "plan-040-package-8-accept": plan040Package8Accept,
+  "plan-040-package-9-accept": plan040Package9Accept,
   "operational-coverage": operationalCoverage,
   "coverage-matrix": operationalCoverage,
   "forecast-frontier": forecastFrontier,

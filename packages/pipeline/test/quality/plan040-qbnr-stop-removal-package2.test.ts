@@ -560,7 +560,7 @@ describe("Plan 040 QBNR Package 2 evidence-only draft", () => {
     expect(receipts[0].surfaces).toEqual(["member_extent", "member_grain"]);
   });
 
-  it("preserves the exact Package 2 terminal delta after later receipt-only closures", () => {
+  it("preserves the exact Package 2 terminal delta after later package closures", () => {
     const companion = readJsonl(
       `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/` +
         "operational_occurrence_member_extents.jsonl",
@@ -576,21 +576,21 @@ describe("Plan 040 QBNR Package 2 evidence-only draft", () => {
     expect(grainLedger).toHaveLength(308);
     expect(distribution(companion, "extent")).toEqual({
       bounded_segment: 25,
-      route_wide: 6,
+      route_wide: 8,
       stop_set: 4,
-      unresolved: 273,
+      unresolved: 271,
     });
     expect(distribution(extentLedger, "verdict")).toEqual({
-      absent_in_source: 139,
+      absent_in_source: 159,
       "resolved:bounded_segment": 25,
-      "resolved:route_wide": 6,
+      "resolved:route_wide": 8,
       "resolved:stop_set": 4,
-      unreviewed: 134,
+      unreviewed: 112,
     });
     expect(distribution(grainLedger, "verdict")).toEqual({
-      absent_in_source: 139,
-      resolved: 22,
-      unreviewed: 147,
+      absent_in_source: 159,
+      resolved: 24,
+      unreviewed: 125,
     });
     const companionByKey = new Map(companion.map((row) => [extentDecisionKey(row as any), row]));
     const extentByKey = new Map(extentLedger.map((row) => [extentDecisionKey(row as any), row]));

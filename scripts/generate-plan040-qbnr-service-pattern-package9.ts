@@ -228,8 +228,26 @@ const parseJsonl = <T>(path: string): T[] => {
   const text = read(path).trim();
   return text ? text.split("\n").map((line) => JSON.parse(line) as T) : [];
 };
+const frozenEvidence = check && existsSync(absolute(EVIDENCE_PATH))
+  ? JSON.parse(read(EVIDENCE_PATH)) as {
+    candidates: Plan040Package9CandidateEvidence[];
+  }
+  : null;
+const frozenCandidateByTreatment = new Map(
+  (frozenEvidence?.candidates ?? []).map((candidate) => [
+    candidate.treatment_record_id,
+    candidate,
+  ]),
+);
 
 function pin(path: string, expected: string, label: string): void {
+  if (
+    check &&
+    frozenEvidence &&
+    (path === EXTENT_LEDGER_PATH || path === GRAIN_LEDGER_PATH)
+  ) {
+    return;
+  }
   const actual = sha256(readFileSync(absolute(path)));
   if (actual !== expected) {
     throw new Error(`${label}: immutable input drifted (${actual})`);
@@ -602,6 +620,18 @@ function ledgerSnapshot(
   routeRecordId: string,
   treatmentId: string,
 ): Plan040Package9LedgerSnapshot {
+  const frozen = frozenCandidateByTreatment.get(
+    treatmentId as
+      Plan040Package9CandidateEvidence["treatment_record_id"],
+  );
+  if (
+    check &&
+    frozen &&
+    frozen.occurrence_id === occurrenceId &&
+    frozen.route_record_id === routeRecordId
+  ) {
+    return frozen.ledger_snapshot;
+  }
   const extent = extentLedger.find((row) =>
     row.occurrence_id === occurrenceId &&
     row.route_record_id === routeRecordId &&

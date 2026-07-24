@@ -4,8 +4,15 @@ import { existsSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import type { JsonValue } from "../../../db/src/types";
 import {
+  PLAN040_PACKAGE_9_ABSENCE_RECEIPT_SHA256,
+  PLAN040_PACKAGE_9_EXTENT_DECISIONS_SHA256,
+  PLAN040_PACKAGE_9_GRAIN_DECISIONS_SHA256,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_ABSENCE_RECEIPT_PATH,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_ACCEPTANCE_PATH,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_EXTENT_DECISIONS_PATH,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_GATE_PATH,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_GRAIN_DECISIONS_PATH,
+  buildPlan040Package9AcceptedArtifacts,
   buildPlan040Package9GateAndAcceptance,
   validatePlan040Package9GateAndAcceptance,
 } from "../../src/quality/plan040-qbnr-service-pattern-package9-closeout";
@@ -88,6 +95,10 @@ const sha256 = (value: Uint8Array | string): string =>
   createHash("sha256").update(value).digest("hex");
 const readJson = <T>(path: string): T =>
   JSON.parse(readFileSync(path, "utf8")) as T;
+const readJsonl = <T>(path: string): T[] =>
+  readFileSync(path, "utf8").split(/\r?\n/u)
+    .filter((line) => line.trim().length > 0)
+    .map((line) => JSON.parse(line) as T);
 const priorKeys = (path: string): string[] => {
   const parsed = readJson<{
     candidates?: Array<{ candidate_key: string }>;
@@ -642,6 +653,182 @@ describe("Plan 040 QBNR Package 9 accelerated lineage-risk freeze", () => {
       draft,
       acceptedAt: acceptance.accepted_at as string,
     }).gate).toEqual(gate);
+  });
+
+  it("persists only the exact accepted decisions and reviewed absence", () => {
+    const draft = readJson<Plan040Package9Draft>(draftPath);
+    const acceptedAt = readJson<{ accepted_at: string }>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_ACCEPTANCE_PATH,
+    ).accepted_at;
+    const closeout = buildPlan040Package9GateAndAcceptance({
+      draft,
+      acceptedAt,
+    });
+    const accepted = buildPlan040Package9AcceptedArtifacts({
+      draft,
+      gate: closeout.gate,
+      acceptance: closeout.acceptance,
+    });
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_EXTENT_DECISIONS_PATH,
+    ))).toBe(PLAN040_PACKAGE_9_EXTENT_DECISIONS_SHA256);
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_GRAIN_DECISIONS_PATH,
+    ))).toBe(PLAN040_PACKAGE_9_GRAIN_DECISIONS_SHA256);
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_ABSENCE_RECEIPT_PATH,
+    ))).toBe(PLAN040_PACKAGE_9_ABSENCE_RECEIPT_SHA256);
+    expect(readJson<{ decisions: unknown[] }>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_EXTENT_DECISIONS_PATH,
+    ).decisions).toEqual(accepted.extentDecisions);
+    expect(readJson<{ decisions: unknown[] }>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_GRAIN_DECISIONS_PATH,
+    ).decisions).toEqual(accepted.grainDecisions);
+    expect(readJson<{ receipts: unknown[] }>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_9_ABSENCE_RECEIPT_PATH,
+    ).receipts).toEqual([accepted.absenceReceipt]);
+    expect(accepted.extentDecisions.map((decision) => [
+      decision.treatment_record_id,
+      decision.resolution,
+    ])).toEqual([
+      ["treatment_qm63-frequency-span-adjustment-2025", "route_wide"],
+      ["treatment_qm63-route-rename-2025", "route_wide"],
+    ]);
+    expect(accepted.grainDecisions.map((decision) => [
+      decision.treatment_record_id,
+      decision.service_scope.kind,
+    ])).toEqual([
+      ["treatment_qm63-frequency-span-adjustment-2025", "periods"],
+      ["treatment_qm63-route-rename-2025", "all_service"],
+    ]);
+    expect(accepted.absenceReceipt.extent_keys).toHaveLength(20);
+    expect(accepted.absenceReceipt.exact_searches).toHaveLength(20);
+    expect(accepted.absenceReceipt.authorizes_study).toBe(false);
+    expect(accepted.absenceReceipt.authorizes_cross_product).toBe(false);
+
+    const unauthorized = clone(closeout.acceptance);
+    unauthorized.authorized_positive_persistence.candidate_keys.pop();
+    expect(() =>
+      buildPlan040Package9AcceptedArtifacts({
+        draft,
+        gate: closeout.gate,
+        acceptance: unauthorized,
+      })).toThrow("owner/delegate acceptance drifted");
+  });
+
+  it("materializes receipt overlays without erasing QM68 reviewed lineage", () => {
+    type LedgerRow = {
+      treatment_record_id: string;
+      current_extent_kind: string;
+      packet_id: string | null;
+      verdict: string;
+      spatial_verdict?: string;
+      member_extent_decision_id?: string | null;
+      service_scope?: Record<string, JsonValue> | null;
+      receipt_ids: string[];
+      authorizes_study: false;
+      authorizes_cross_product: false;
+    };
+    const extentRows = readJsonl<LedgerRow>(
+      `${repoRoot}/data/quality/operational-reference/` +
+        "member-extent-ledger.jsonl",
+    );
+    const grainRows = readJsonl<LedgerRow>(
+      `${repoRoot}/data/quality/operational-reference/` +
+        "member-grain-ledger.jsonl",
+    );
+    const draft = readJson<Plan040Package9Draft>(draftPath);
+    const unresolved = new Set(draft.candidates.filter((candidate) =>
+      candidate.evidence_verdict === "receipt_terminal_unresolved")
+      .map((candidate) => candidate.treatment_record_id));
+    expect(extentRows.filter((row) =>
+      unresolved.has(row.treatment_record_id as
+        Plan040Package9CandidateEvidence["treatment_record_id"]) &&
+      row.receipt_ids.includes(
+        "plan-040-qbnr-service-pattern-package-9-reviewed-absence-v1",
+      ))).toHaveLength(20);
+    expect(grainRows.filter((row) =>
+      unresolved.has(row.treatment_record_id as
+        Plan040Package9CandidateEvidence["treatment_record_id"]) &&
+      row.receipt_ids.includes(
+        "plan-040-qbnr-service-pattern-package-9-reviewed-absence-v1",
+      ))).toHaveLength(20);
+
+    const positiveTreatments = [
+      "treatment_qm63-frequency-span-adjustment-2025",
+      "treatment_qm63-route-rename-2025",
+    ];
+    expect(extentRows.filter((row) =>
+      positiveTreatments.includes(row.treatment_record_id)).map((row) => [
+        row.treatment_record_id,
+        row.current_extent_kind,
+        row.verdict,
+        row.receipt_ids,
+      ])).toEqual([
+      [
+        "treatment_qm63-frequency-span-adjustment-2025",
+        "route_wide",
+        "resolved:route_wide",
+        [],
+      ],
+      [
+        "treatment_qm63-route-rename-2025",
+        "route_wide",
+        "resolved:route_wide",
+        [],
+      ],
+    ]);
+    expect(grainRows.filter((row) =>
+      positiveTreatments.includes(row.treatment_record_id)).map((row) => [
+        row.treatment_record_id,
+        row.service_scope?.kind,
+        row.verdict,
+      ])).toEqual([
+      [
+        "treatment_qm63-frequency-span-adjustment-2025",
+        "periods",
+        "resolved",
+      ],
+      [
+        "treatment_qm63-route-rename-2025",
+        "all_service",
+        "resolved",
+      ],
+    ]);
+
+    const qm68Extent = extentRows.find((row) =>
+      row.treatment_record_id ===
+        "treatment_qm68-avenue-service-discontinuation-2025")!;
+    const qm68Grain = grainRows.find((row) =>
+      row.treatment_record_id ===
+        "treatment_qm68-avenue-service-discontinuation-2025")!;
+    expect(qm68Extent).toEqual(expect.objectContaining({
+      current_extent_kind: "unresolved",
+      packet_id: "study-readiness-review:bd7b80033f83d01f5c1cb0ec",
+      verdict: "absent_in_source",
+      receipt_ids: [
+        "plan-040-qbnr-service-pattern-package-9-reviewed-absence-v1",
+      ],
+    }));
+    expect(qm68Grain).toEqual(expect.objectContaining({
+      current_extent_kind: "unresolved",
+      spatial_verdict: "absent_in_source",
+      packet_id: "study-readiness-review:bd7b80033f83d01f5c1cb0ec",
+      member_extent_decision_id:
+        "member-extent-review:ea591b10e8be9bcccca6f111",
+      service_scope: null,
+      verdict: "absent_in_source",
+      receipt_ids: [
+        "plan-040-qbnr-service-pattern-package-9-reviewed-absence-v1",
+      ],
+    }));
+    expect(sha256(readFileSync(
+      `${repoRoot}/data/quality/study-readiness/v1/research/` +
+        "reviewed-candidate-packets.jsonl",
+    ))).toBe(
+      PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets
+        .artifact,
+    );
   });
 
   it("rebuilds deterministically and fails closed on structural drift", () => {

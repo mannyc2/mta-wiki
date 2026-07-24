@@ -59,11 +59,11 @@ describe("study-readiness v1 extent contract", () => {
     expect(summary.member_extent_row_count).toBe(308);
     expect(summary.eligible_member_extent_row_count).toBe(306);
     expect(summary.extent_counts).toEqual({
-      route_wide: 6,
+      route_wide: 8,
       bounded_segment: 25,
       stop_set: 4,
       mixed: 0,
-      unresolved: 273,
+      unresolved: 271,
     });
     expect(rows.every((row) => !row.authorizes_study && !row.authorizes_cross_product)).toBe(true);
     expect(rows.filter((row) => row.extent === "unresolved")
