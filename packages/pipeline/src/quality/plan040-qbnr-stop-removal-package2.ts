@@ -28,6 +28,16 @@ export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_REVIEWED_COMMIT =
   "7ad7e30c30237fe7f4fa4344559c1aba4ab1624e" as const;
 export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_1_MANIFEST_SHA256 =
   "43a17a230eb70e9b7c322d2125b0db99910f035e688652624d4ce0e97a08a1d4" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_REJECTED_COMMIT =
+  "66be04c90096a09c62c95c4f53c18482fae15639" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_APPROVED_COMMIT =
+  "ede63792e604c44c007458b6df52907cf32a170c" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_ACQUISITION_SHA256 =
+  "f7b8a17c27c7d09f025dbcb7448099fe60bbc59147acac236f05875bada38a39" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_EVIDENCE_SHA256 =
+  "48acf849f9d66508d4a8253c102bfaf04758a619603d7d79aeaaf83c2cc5958e" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_DRAFT_SHA256 =
+  "ade4e511ab132d3b8eb4f7fa2225dcab0e84d8e8921cc5bd7e3c3126fb61ba5a" as const;
 
 export type Plan040Package2RemovalReason =
   | "improve_speed_reliability"
@@ -892,4 +902,222 @@ export function buildPlan040Package2Draft(input: {
 
 export function plan040Package2ReplayHash(value: JsonValue): string {
   return sha256(`${stableJson(value)}\n`);
+}
+
+const PACKAGE_2_ACQUISITION_PATH =
+  "data/quality/acquisition/receipts/" +
+  "plan-040-qbnr-stop-removal-package-2-stop-lists-v1.json";
+const PACKAGE_2_EVIDENCE_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-package-2-evidence-v1.json";
+const PACKAGE_2_DRAFT_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-package-2-decision-draft-v1.json";
+const PACKAGE_2_GATE_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-package-2-dual-review-gate-v1.json";
+
+function package2ArtifactPins() {
+  return {
+    acquisition: {
+      path: PACKAGE_2_ACQUISITION_PATH,
+      sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_ACQUISITION_SHA256,
+    },
+    evidence: {
+      path: PACKAGE_2_EVIDENCE_PATH,
+      sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_EVIDENCE_SHA256,
+    },
+    draft: {
+      path: PACKAGE_2_DRAFT_PATH,
+      sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_DRAFT_SHA256,
+      replay_sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_DRAFT_SHA256,
+    },
+  };
+}
+
+export function buildPlan040Package2GateAndAcceptance(input: {
+  draft: Plan040Package2Draft;
+  acceptedAt: string;
+}) {
+  const draftHash = plan040Package2ReplayHash(input.draft as unknown as JsonValue);
+  if (draftHash !== PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_DRAFT_SHA256) {
+    throw new Error(`Plan 040 Package 2 draft hash drifted: ${draftHash}`);
+  }
+  const positive = input.draft.candidates.filter((candidate) =>
+    candidate.evidence_verdict === "evidence_complete_stop_set");
+  const unresolved = input.draft.candidates.filter((candidate) =>
+    candidate.evidence_verdict === "receipt_terminal_unresolved");
+  const positiveCandidate = positive[0];
+  const extentDecision = positiveCandidate?.proposed_extent_decision;
+  const grainDecision = positiveCandidate?.proposed_grain_decision;
+  if (
+    input.draft.candidate_count !== 24 ||
+    positive.length !== 1 ||
+    positiveCandidate?.gtfs_route_id !== "QM12" ||
+    !extentDecision ||
+    !grainDecision ||
+    unresolved.length !== 23 ||
+    unresolved.some((candidate) =>
+      candidate.proposed_extent_decision !== null ||
+      candidate.proposed_grain_decision !== null) ||
+    input.draft.persisted_decision_count !== 0 ||
+    input.draft.persisted_grain_decision_count !== 0 ||
+    input.draft.authorizes_occurrence ||
+    input.draft.authorizes_study ||
+    input.draft.authorizes_cross_product ||
+    input.draft.authorizes_decision_persistence
+  ) {
+    throw new Error("Plan 040 Package 2 frozen verdict or authorization scope drifted");
+  }
+  const qm12 = positiveCandidate;
+  const unresolvedKeys = unresolved.map((candidate) => candidate.candidate_key).sort();
+  const unresolvedKeySha256 = sha256(`${unresolvedKeys.join("\n")}\n`);
+  const reviewers = [
+    {
+      role: "independent_main_advisor_evidence_review",
+      reviewer_id: "main_advisor",
+      verdict: "APPROVE" as const,
+    },
+    {
+      role: "independent_provenance_and_fail_closed_audit",
+      reviewer_id: "plan040_package2_independent_audit",
+      verdict: "APPROVE" as const,
+    },
+  ];
+  const gate = {
+    schema_version: 1,
+    gate_id: "plan-040-qbnr-stop-removal-package-2-dual-review-gate-v1",
+    package_id: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2,
+    reviewed_commit: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_APPROVED_COMMIT,
+    rejected_history: [{
+      commit: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_REJECTED_COMMIT,
+      verdict: "REJECT" as const,
+      superseded_by: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_APPROVED_COMMIT,
+      reason: "non_resolving_evidence_id_placeholders",
+    }],
+    artifacts: package2ArtifactPins(),
+    candidate_count: 24,
+    candidate_key_sha256: input.draft.candidate_key_sha256,
+    evidence_verdict_distribution: {
+      evidence_complete_stop_set: 1,
+      receipt_terminal_unresolved: 23,
+    },
+    proposed_extent_distribution: { stop_set: 1, unresolved: 23 },
+    proposed_grain_distribution: { trip_subset: 1, unresolved: 23 },
+    positive_candidate: {
+      candidate_key: qm12.candidate_key,
+      gtfs_route_id: "QM12",
+      extent_decision_id: extentDecision.decision_id,
+      grain_decision_id: grainDecision.decision_id,
+    },
+    unresolved_candidate_count: 23,
+    unresolved_candidate_key_sha256: unresolvedKeySha256,
+    reviewer_results: reviewers,
+    checkpoint_tests: {
+      focused: { pass: 8, fail: 0, assertions: 157, status: "pass" as const },
+      typecheck: { status: "pass" as const },
+      validate: { issues: 0, release_contract_issues: 0, warnings: 3, status: "pass" as const },
+      deterministic_replay: {
+        sha256: PLAN040_QBNR_STOP_REMOVAL_PACKAGE_2_DRAFT_SHA256,
+        status: "pass" as const,
+      },
+      full_repository: {
+        status: "checkpoint_not_required" as const,
+        reason: "focused_risk_package_below_next_accelerated_full_suite_checkpoint",
+      },
+    },
+    authorization_state: "dual_review_approved_pending_owner_delegate_acceptance",
+    persisted_extent_decision_count: 0,
+    persisted_grain_decision_count: 0,
+    persisted_absence_receipt_count: 0,
+    authorizes_occurrence: false as const,
+    authorizes_study: false as const,
+    authorizes_cross_product: false as const,
+    authorizes_decision_persistence: false as const,
+    authorizes_reviewed_absence_receipt_persistence: false as const,
+  };
+  const gateSha256 = sha256(`${stableJson(gate as unknown as JsonValue)}\n`);
+  const acceptance = {
+    schema_version: 1,
+    acceptance_id: "plan-040-qbnr-stop-removal-package-2-owner-acceptance-v1",
+    accepted_at: input.acceptedAt,
+    accepted_by: "codex-owner-delegate",
+    gate: { path: PACKAGE_2_GATE_PATH, sha256: gateSha256 },
+    artifacts: package2ArtifactPins(),
+    candidate_count: 24,
+    candidate_key_sha256: input.draft.candidate_key_sha256,
+    evidence_verdict_distribution: {
+      evidence_complete_stop_set: 1,
+      receipt_terminal_unresolved: 23,
+    },
+    reviewer_results: {
+      main_advisor: "APPROVE" as const,
+      plan040_package2_independent_audit: "APPROVE" as const,
+    },
+    authorized_positive_persistence: {
+      candidate_count: 1,
+      candidate_keys: [qm12.candidate_key],
+      extent_decision_ids: [extentDecision.decision_id],
+      grain_decision_ids: [grainDecision.decision_id],
+    },
+    authorized_reviewed_absence_receipt: {
+      receipt_id: "plan-040-qbnr-stop-removal-package-2-reviewed-absence-v1",
+      candidate_count: 23,
+      candidate_key_sha256: unresolvedKeySha256,
+      candidate_keys: unresolvedKeys,
+      surfaces: ["member_extent", "member_grain"],
+      verdict_by_surface: {
+        member_extent: "reviewed_terminal_unresolved",
+        member_grain: "reviewed_terminal_unresolved",
+      },
+    },
+    authorization_state:
+      "owner_delegate_accepted_exact_qm12_decisions_and_exact_23_key_reviewed_absence_only",
+    persisted_extent_decision_count: 0,
+    persisted_grain_decision_count: 0,
+    persisted_absence_receipt_count: 0,
+    authorizes_decision_persistence: true as const,
+    authorizes_reviewed_absence_receipt_persistence: true as const,
+    authorizes_occurrence: false as const,
+    authorizes_study: false as const,
+    authorizes_cross_product: false as const,
+  };
+  return { gate, gateSha256, acceptance };
+}
+
+export function validatePlan040Package2GateAndAcceptance(input: {
+  draft: Plan040Package2Draft;
+  gate: unknown;
+  acceptance: unknown;
+  acceptedAt: string;
+}) {
+  const expected = buildPlan040Package2GateAndAcceptance({
+    draft: input.draft,
+    acceptedAt: input.acceptedAt,
+  });
+  if (
+    stableJson(input.gate as JsonValue) !==
+      stableJson(expected.gate as unknown as JsonValue)
+  ) {
+    throw new Error("Plan 040 Package 2 dual-review gate drifted");
+  }
+  if (
+    stableJson(input.acceptance as JsonValue) !==
+      stableJson(expected.acceptance as unknown as JsonValue)
+  ) {
+    throw new Error("Plan 040 Package 2 owner/delegate acceptance drifted");
+  }
+  return {
+    candidate_count: 24,
+    positive_candidate_count: 1,
+    unresolved_candidate_count: 23,
+    authorized_extent_decision_count: 1,
+    authorized_grain_decision_count: 1,
+    authorized_absence_candidate_count: 23,
+    persisted_decision_count: 0,
+    persisted_absence_receipt_count: 0,
+    authorizes_occurrence: false as const,
+    authorizes_study: false as const,
+    authorizes_cross_product: false as const,
+  };
 }

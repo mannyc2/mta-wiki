@@ -9,11 +9,13 @@ import type {
 } from "../../src/quality/plan040-qbnr-stop-removal-acquisition";
 import {
   buildPlan040Package2CandidateEvidence,
+  buildPlan040Package2GateAndAcceptance,
   extractPlan040Package2PdfStatements,
   normalizePlan040Package2StopName,
   plan040Package2ReplayHash,
   type Plan040Package2Draft,
   type Plan040Package2ScheduleSlice,
+  validatePlan040Package2GateAndAcceptance,
 } from "../../src/quality/plan040-qbnr-stop-removal-package2";
 
 const artifactPath =
@@ -21,6 +23,7 @@ const artifactPath =
   "plan-040-qbnr-stop-removal-package-2-decision-draft-v1.json";
 const readDraft = (): Plan040Package2Draft =>
   JSON.parse(readFileSync(artifactPath, "utf8")) as Plan040Package2Draft;
+type GateAndAcceptance = ReturnType<typeof buildPlan040Package2GateAndAcceptance>;
 
 function pattern(
   snapshotId: string,
@@ -310,6 +313,86 @@ describe("Plan 040 QBNR Package 2 evidence-only draft", () => {
         block.raw_text.slice(0, removedIndex),
       )).toBe(row.normalized_stop_name);
     }
+  });
+
+  it("validates the frozen dual-review gate and bounded owner/delegate acceptance", () => {
+    const gatePath =
+      `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
+      "plan-040-qbnr-stop-removal-package-2-dual-review-gate-v1.json";
+    const acceptancePath =
+      `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
+      "plan-040-qbnr-stop-removal-package-2-owner-acceptance-v1.json";
+    const gateBytes = readFileSync(gatePath);
+    const acceptanceBytes = readFileSync(acceptancePath);
+    expect(createHash("sha256").update(gateBytes).digest("hex"))
+      .toBe("b419817d9c46bca35ed9a6570ef47ef536dc5e5a01bcccc27472891369778e31");
+    expect(createHash("sha256").update(acceptanceBytes).digest("hex"))
+      .toBe("a438f8479c160934296cf31ab04f701dd41c7360c6237d50ff6e899f40bf106d");
+    const gate = JSON.parse(gateBytes.toString("utf8")) as GateAndAcceptance["gate"];
+    const acceptance = JSON.parse(
+      acceptanceBytes.toString("utf8"),
+    ) as GateAndAcceptance["acceptance"];
+    expect(validatePlan040Package2GateAndAcceptance({
+      draft: readDraft(),
+      gate,
+      acceptance,
+      acceptedAt: acceptance.accepted_at,
+    })).toEqual({
+      candidate_count: 24,
+      positive_candidate_count: 1,
+      unresolved_candidate_count: 23,
+      authorized_extent_decision_count: 1,
+      authorized_grain_decision_count: 1,
+      authorized_absence_candidate_count: 23,
+      persisted_decision_count: 0,
+      persisted_absence_receipt_count: 0,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(gate.reviewer_results.map((review) => review.verdict))
+      .toEqual(["APPROVE", "APPROVE"]);
+    expect(gate.rejected_history).toEqual([{
+      commit: "66be04c90096a09c62c95c4f53c18482fae15639",
+      verdict: "REJECT",
+      superseded_by: "ede63792e604c44c007458b6df52907cf32a170c",
+      reason: "non_resolving_evidence_id_placeholders",
+    }]);
+    expect(acceptance.authorized_positive_persistence).toMatchObject({
+      candidate_count: 1,
+      extent_decision_ids: [
+        "member-extent-review:plan040-package2-qm12-stop-removal",
+      ],
+      grain_decision_ids: [
+        "member-grain-review:plan040-package2-qm12-stop-removal",
+      ],
+    });
+    const unresolvedKeys = readDraft().candidates
+      .filter((candidate) =>
+        candidate.evidence_verdict === "receipt_terminal_unresolved")
+      .map((candidate) => candidate.candidate_key)
+      .sort();
+    expect(acceptance.authorized_reviewed_absence_receipt).toMatchObject({
+      candidate_count: 23,
+      candidate_keys: unresolvedKeys,
+      surfaces: ["member_extent", "member_grain"],
+    });
+    expect(acceptance).toMatchObject({
+      persisted_extent_decision_count: 0,
+      persisted_grain_decision_count: 0,
+      persisted_absence_receipt_count: 0,
+      authorizes_decision_persistence: true,
+      authorizes_reviewed_absence_receipt_persistence: true,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(() => validatePlan040Package2GateAndAcceptance({
+      draft: readDraft(),
+      gate,
+      acceptance: { ...acceptance, candidate_count: 25 },
+      acceptedAt: acceptance.accepted_at,
+    })).toThrow("owner/delegate acceptance drifted");
   });
 
   it("records the complete fail-closed gap distribution", () => {
