@@ -9,6 +9,13 @@ import { dirname, join, relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
+import { fileSha256 } from "../reference/snapshot-registry.js";
+import {
+  MEMBER_EXTENT_ABSENCE_CONTRACT_ID,
+  MEMBER_EXTENT_LEDGER_SCHEMA_VERSION,
+  type MemberExtentAbsenceReceipt,
+} from "./member-extent-ledger.js";
+import { extentDecisionKey } from "./study-readiness-v1.js";
 
 export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5 =
   "plan-040-qbnr-stop-removal-package-5-evidence-only-v1" as const;
@@ -28,6 +35,10 @@ export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_EVIDENCE_SHA256 =
   "a8a54fc2e5554d9517b9b65d5726141d4cccd1e8c16072ae2260f76bb64eb6ba" as const;
 export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_DRAFT_SHA256 =
   "6506f12da89d3925b66a5f4a6003bd6b79929295c222ad18509459447e037179" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_GATE_SHA256 =
+  "8449a0333f7f6f5ec30fc6463af0e6983b0b27f2da48e72468f15ee5135eba15" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ACCEPTANCE_SHA256 =
+  "c3b5758a434ae8d647d4feb3e60ba3119350d6b222c98f554801de3434b144e7" as const;
 
 export const PLAN040_PACKAGE_5_PACKAGE_3_PINS = {
   acquisition:
@@ -694,6 +705,11 @@ export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ACCEPTANCE_PATH = join(
   repoRoot,
   PACKAGE_5_ACCEPTANCE_PATH,
 );
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ABSENCE_RECEIPT_PATH = join(
+  repoRoot,
+  "data/quality/acquisition/receipts/member-extent/" +
+    "plan-040-qbnr-stop-removal-package-5-reviewed-absence-v1.json",
+);
 
 function writeImmutablePlan040Package5Json(
   path: string,
@@ -738,5 +754,275 @@ export function writePlan040Package5GateAndAcceptance(input: {
     acceptanceSha256: sha256(
       `${stableJson(result.acceptance as unknown as JsonValue)}\n`,
     ),
+  };
+}
+
+type Plan040Package5GateAndAcceptance =
+  ReturnType<typeof buildPlan040Package5GateAndAcceptance>;
+
+function assertExactPlan040Package5Values(
+  actual: readonly string[],
+  expected: readonly string[],
+  label: string,
+): void {
+  if (
+    stableJson([...actual].sort() as JsonValue) !==
+      stableJson([...expected].sort() as JsonValue)
+  ) {
+    throw new Error(
+      `Plan 040 Package 5 ${label} drifted outside owner acceptance`,
+    );
+  }
+}
+
+export function buildPlan040Package5AcceptedArtifacts(input: {
+  draft: Plan040Package5Draft;
+  gate: Plan040Package5GateAndAcceptance["gate"];
+  acceptance: Plan040Package5GateAndAcceptance["acceptance"];
+}): {
+  extentDecisions: [];
+  grainDecisions: [];
+  absenceReceipt: MemberExtentAbsenceReceipt;
+} {
+  validatePlan040Package5GateAndAcceptance({
+    draft: input.draft,
+    gate: input.gate,
+    acceptance: input.acceptance,
+    acceptedAt: input.acceptance.accepted_at,
+  });
+  if (
+    input.acceptance.authorization_state !==
+      "owner_delegate_accepted_exact_24_key_reviewed_absence_only" ||
+    input.acceptance.authorizes_decision_persistence !== false ||
+    input.acceptance.authorizes_reviewed_absence_receipt_persistence !== true ||
+    input.acceptance.authorizes_occurrence !== false ||
+    input.acceptance.authorizes_study !== false ||
+    input.acceptance.authorizes_cross_product !== false ||
+    input.acceptance.authorized_positive_persistence.candidate_count !== 0 ||
+    input.acceptance.authorized_positive_persistence.candidate_keys.length !== 0 ||
+    input.acceptance.authorized_positive_persistence.extent_decision_ids.length !== 0 ||
+    input.acceptance.authorized_positive_persistence.grain_decision_ids.length !== 0
+  ) {
+    throw new Error(
+      "Plan 040 Package 5 owner acceptance does not authorize receipt-only persistence",
+    );
+  }
+  const unresolved = input.draft.candidates.filter((candidate) =>
+    candidate.evidence_verdict === "receipt_terminal_unresolved");
+  const immutableCarries = unresolved.filter((candidate) =>
+    candidate.evidence_origin === "immutable_package_3_carry_forward");
+  if (
+    unresolved.length !== 24 ||
+    unresolved.some((candidate) =>
+      candidate.proposed_extent_decision !== null ||
+      candidate.proposed_grain_decision !== null ||
+      candidate.persisted_extent_decision !== null ||
+      candidate.persisted_grain_decision !== null ||
+      candidate.unresolved_gap_codes.length === 0 ||
+      candidate.authorizes_occurrence ||
+      candidate.authorizes_study ||
+      candidate.authorizes_cross_product ||
+      candidate.authorizes_decision_persistence) ||
+    immutableCarries.length !== 12 ||
+    immutableCarries.some((candidate) =>
+      candidate.immutable_package_3_ref?.evidence_manifest_sha256 !==
+        PLAN040_PACKAGE_5_PACKAGE_3_PINS.evidence)
+  ) {
+    throw new Error(
+      "Plan 040 Package 5 persistence inputs no longer match the accepted terminal split",
+    );
+  }
+  const unresolvedKeys = unresolved
+    .map((candidate) => candidate.candidate_key)
+    .sort();
+  assertExactPlan040Package5Values(
+    input.acceptance.authorized_reviewed_absence_receipt.candidate_keys,
+    unresolvedKeys,
+    "reviewed absence candidate keys",
+  );
+  assertExactPlan040Package5Values(
+    input.acceptance.authorized_reviewed_absence_receipt.surfaces,
+    ["member_extent", "member_grain"],
+    "reviewed absence surfaces",
+  );
+  const unresolvedKeySha256 = sha256(`${unresolvedKeys.join("\n")}\n`);
+  if (
+    unresolvedKeySha256 !== PLAN040_PACKAGE_5_CANDIDATE_KEY_SHA256 ||
+    input.acceptance.authorized_reviewed_absence_receipt.receipt_id !==
+      "plan-040-qbnr-stop-removal-package-5-reviewed-absence-v1" ||
+    input.acceptance.authorized_reviewed_absence_receipt.candidate_count !== 24 ||
+    input.acceptance.authorized_reviewed_absence_receipt.candidate_key_sha256 !==
+      unresolvedKeySha256 ||
+    input.acceptance.authorized_reviewed_absence_receipt.verdict_by_surface
+        .member_extent !== "reviewed_terminal_unresolved" ||
+    input.acceptance.authorized_reviewed_absence_receipt.verdict_by_surface
+        .member_grain !== "reviewed_terminal_unresolved"
+  ) {
+    throw new Error(
+      "Plan 040 Package 5 reviewed absence authorization drifted",
+    );
+  }
+  const exactSearches = unresolved.map((candidate) => {
+    if (
+      !/^https:\/\/www\.mta\.info\/document\/[0-9]+$/u.test(
+        candidate.candidate_document.source_url,
+      )
+    ) {
+      throw new Error(
+        `${candidate.gtfs_route_id}: reviewed absence URL is not an exact MTA document URL`,
+      );
+    }
+    const carryForward = candidate.immutable_package_3_ref === null
+      ? "none"
+      : [
+          "immutable_package_3",
+          candidate.immutable_package_3_ref.evidence_manifest_sha256,
+          candidate.immutable_package_3_ref.candidate_sha256,
+        ].join("@");
+    return [
+      `candidate=${candidate.candidate_key}`,
+      `route=${candidate.gtfs_route_id}`,
+      `evidence_origin=${candidate.evidence_origin}`,
+      `immutable_carry_forward=${carryForward}`,
+      `service_change=${candidate.service_change_evidence.evidence_id}`,
+      `official_candidate_document=${candidate.candidate_document.source_url}`,
+      `candidate_document_source=${candidate.candidate_document.source_id}`,
+      `candidate_document_binding=${candidate.candidate_document.binding_status}`,
+      `exact_search=Candidate-specific stop-change statements in ` +
+        `${candidate.candidate_document.source_id}`,
+      `pre=${candidate.pre_inventory.source_id}@` +
+        `${candidate.pre_inventory.target_date}/${candidate.gtfs_route_id}`,
+      `pre_schedule=${candidate.schedule_validation.pre.source_id}@` +
+        `${candidate.schedule_validation.pre.schedule_date}/` +
+        `${candidate.schedule_validation.pre.route_id}`,
+      `required_post_sha1=` +
+        `${candidate.required_post_inventory.version_sha1}`,
+      `required_post_target=${candidate.required_post_inventory.target_date}/` +
+        `${candidate.gtfs_route_id}`,
+      `post_schedule=${candidate.schedule_validation.post.source_id}@` +
+        `${candidate.schedule_validation.post.schedule_date}/` +
+        `${candidate.schedule_validation.post.route_id}`,
+      `post_member_status=` +
+        `${candidate.required_post_inventory.member_bytes_status}`,
+      "route_row_presence_is_not_trip_inventory=true",
+      "later_post_version_is_not_substitute=true",
+      "result=receipt_terminal_unresolved",
+      `gaps=${candidate.unresolved_gap_codes.join(",")}`,
+    ].join("; ");
+  }).sort();
+  if (new Set(exactSearches).size !== 24) {
+    throw new Error(
+      "Plan 040 Package 5 requires one exact search record per candidate",
+    );
+  }
+  const urlsInspected = [
+    ...new Set(unresolved.map((candidate) =>
+      candidate.candidate_document.source_url)),
+  ].sort();
+  if (urlsInspected.length === 0) {
+    throw new Error(
+      "Plan 040 Package 5 requires exact official candidate URLs",
+    );
+  }
+  const absenceReceipt: MemberExtentAbsenceReceipt = {
+    schema_version: MEMBER_EXTENT_LEDGER_SCHEMA_VERSION,
+    contract_id: MEMBER_EXTENT_ABSENCE_CONTRACT_ID,
+    receipt_id:
+      input.acceptance.authorized_reviewed_absence_receipt.receipt_id,
+    surfaces: ["member_extent", "member_grain"],
+    extent_keys: unresolved.map((candidate) => ({
+      occurrence_id: candidate.occurrence_id,
+      route_record_id: candidate.route_record_id,
+      treatment_record_id: candidate.treatment_record_id,
+    })).sort((left, right) =>
+      extentDecisionKey(left).localeCompare(extentDecisionKey(right))),
+    exact_searches: exactSearches,
+    urls_inspected: urlsInspected,
+    rationale:
+      "Owner-delegate accepted reviewed absence for the exact 24 Package 5 " +
+      "candidates that remained receipt-terminal unresolved after dual independent " +
+      "review of candidate-specific MTA documents, immutable Package 3 evidence, " +
+      "accepted pre-change BusCo inventory, schedule revenue classification, and the " +
+      "required initial Phase 2 post-feed identity. This records terminal member-extent " +
+      "and member-grain ledger review only. Immutable prior receipts, exact searches, " +
+      "unresolved bindings, source gaps, nonexclusive route context, route variants, " +
+      "and the unavailable exact initial post-feed members remain preserved. The later " +
+      "post feed is not a substitute, route-row presence is not trip inventory, and no " +
+      "occurrence, study, cross-product, positive extent, or positive grain decision " +
+      "is authorized.",
+    reviewed_at: input.acceptance.accepted_at,
+    reviewed_by: input.acceptance.accepted_by,
+    authorizes_study: false,
+    authorizes_cross_product: false,
+  };
+  return {
+    extentDecisions: [],
+    grainDecisions: [],
+    absenceReceipt,
+  };
+}
+
+export function acceptPlan040Package5ReceiptPackage(): {
+  absenceReceiptPath: string;
+  absenceReceiptSha256: string;
+  extentDecisionCount: 0;
+  grainDecisionCount: 0;
+  absenceCandidateCount: 24;
+} {
+  const requiredPins = [
+    [
+      PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_DRAFT_PATH,
+      PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_DRAFT_SHA256,
+      "draft",
+    ],
+    [
+      PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_GATE_PATH,
+      PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_GATE_SHA256,
+      "dual-review gate",
+    ],
+    [
+      PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ACCEPTANCE_PATH,
+      PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ACCEPTANCE_SHA256,
+      "owner acceptance",
+    ],
+  ] as const;
+  for (const [path, expectedSha256, label] of requiredPins) {
+    const actualSha256 = fileSha256(path);
+    if (actualSha256 !== expectedSha256) {
+      throw new Error(
+        `Plan 040 Package 5 ${label} pin drifted: ${actualSha256}`,
+      );
+    }
+  }
+  const draft = JSON.parse(
+    readFileSync(PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_DRAFT_PATH, "utf8"),
+  ) as Plan040Package5Draft;
+  const gate = JSON.parse(
+    readFileSync(PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_GATE_PATH, "utf8"),
+  ) as Plan040Package5GateAndAcceptance["gate"];
+  const acceptance = JSON.parse(
+    readFileSync(
+      PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ACCEPTANCE_PATH,
+      "utf8",
+    ),
+  ) as Plan040Package5GateAndAcceptance["acceptance"];
+  const accepted = buildPlan040Package5AcceptedArtifacts({
+    draft,
+    gate,
+    acceptance,
+  });
+  writeImmutablePlan040Package5Json(
+    PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ABSENCE_RECEIPT_PATH,
+    { receipts: [accepted.absenceReceipt] },
+  );
+  return {
+    absenceReceiptPath:
+      PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ABSENCE_RECEIPT_PATH,
+    absenceReceiptSha256: fileSha256(
+      PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ABSENCE_RECEIPT_PATH,
+    ),
+    extentDecisionCount: 0,
+    grainDecisionCount: 0,
+    absenceCandidateCount: 24,
   };
 }

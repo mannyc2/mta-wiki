@@ -1,11 +1,18 @@
 import { describe, expect, it } from "bun:test";
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
+import { dirname } from "node:path";
 import { repoRoot } from "../../../core/src/paths";
 import type { JsonValue } from "../../../db/src/types";
 import {
+  loadMemberExtentAbsenceReceipts,
+} from "../../src/quality/member-extent-ledger";
+import {
+  acceptPlan040Package5ReceiptPackage,
+  buildPlan040Package5AcceptedArtifacts,
   buildPlan040Package5GateAndAcceptance,
   buildPlan040Package5Draft,
+  PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ABSENCE_RECEIPT_PATH,
   PLAN040_PACKAGE_5_CANDIDATE_KEY_SHA256,
   PLAN040_PACKAGE_5_NEW_SOURCE_ROUTES,
   PLAN040_PACKAGE_5_NON_SUBSTITUTE_POST_BUSCO_SHA1,
@@ -18,6 +25,7 @@ import {
   type Plan040Package5Draft,
   validatePlan040Package5GateAndAcceptance,
 } from "../../src/quality/plan040-qbnr-stop-removal-package5";
+import { extentDecisionKey } from "../../src/quality/study-readiness-v1";
 
 const acquisitionPath =
   `${repoRoot}/data/quality/acquisition/receipts/` +
@@ -45,6 +53,21 @@ const sha256 = (value: Uint8Array | string): string =>
   createHash("sha256").update(value).digest("hex");
 const readJson = <T>(path: string): T =>
   JSON.parse(readFileSync(path, "utf8")) as T;
+const readJsonl = (path: string): Array<Record<string, unknown>> => {
+  const text = readFileSync(path, "utf8").trim();
+  return text ? text.split("\n").map((line) =>
+    JSON.parse(line) as Record<string, unknown>) : [];
+};
+const distribution = (
+  rows: Array<Record<string, unknown>>,
+  field: string,
+): Record<string, number> =>
+  Object.fromEntries([...new Set(rows.map((row) => String(row[field])))]
+    .sort()
+    .map((value) => [
+      value,
+      rows.filter((row) => String(row[field]) === value).length,
+    ]));
 
 type Acquisition = {
   candidate_count: number;
@@ -520,6 +543,174 @@ describe("Plan 040 QBNR Package 5 accelerated evidence-only freeze", () => {
       },
       acceptedAt: acceptance.accepted_at,
     })).toThrow("owner/delegate acceptance drifted");
+  });
+
+  it("builds one exact 24-key reviewed-absence receipt and no decisions", () => {
+    type GateAndAcceptance =
+      ReturnType<typeof buildPlan040Package5GateAndAcceptance>;
+    const draft = readJson<Plan040Package5Draft>(draftPath);
+    const gate = readJson<GateAndAcceptance["gate"]>(gatePath);
+    const acceptance =
+      readJson<GateAndAcceptance["acceptance"]>(acceptancePath);
+    const accepted = buildPlan040Package5AcceptedArtifacts({
+      draft,
+      gate,
+      acceptance,
+    });
+    expect(accepted.extentDecisions).toEqual([]);
+    expect(accepted.grainDecisions).toEqual([]);
+    expect(accepted.absenceReceipt).toMatchObject({
+      contract_id: "member-extent-absence-receipt-v1",
+      receipt_id:
+        "plan-040-qbnr-stop-removal-package-5-reviewed-absence-v1",
+      surfaces: ["member_extent", "member_grain"],
+      reviewed_at: "2026-07-24T06:49:44Z",
+      reviewed_by: "codex-owner-delegate",
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(accepted.absenceReceipt.extent_keys).toHaveLength(24);
+    expect(accepted.absenceReceipt.exact_searches).toHaveLength(24);
+    expect(accepted.absenceReceipt.urls_inspected).toHaveLength(23);
+    expect(accepted.absenceReceipt.urls_inspected.every((url) =>
+      /^https:\/\/www\.mta\.info\/document\/[0-9]+$/u.test(url))).toBe(true);
+    for (const candidate of draft.candidates) {
+      expect(accepted.absenceReceipt.exact_searches.some((search) =>
+        search.includes(`candidate=${candidate.candidate_key}`) &&
+        search.includes(
+          `official_candidate_document=` +
+          `${candidate.candidate_document.source_url}`,
+        ) &&
+        search.includes(
+          `required_post_sha1=${PLAN040_PACKAGE_5_REQUIRED_POST_BUSCO_SHA1}`,
+        ) &&
+        search.includes("route_row_presence_is_not_trip_inventory=true") &&
+        search.includes("later_post_version_is_not_substitute=true") &&
+        candidate.unresolved_gap_codes.every((gap) =>
+          search.includes(gap)))).toBe(true);
+      if (
+        candidate.evidence_origin ===
+          "immutable_package_3_carry_forward"
+      ) {
+        expect(accepted.absenceReceipt.exact_searches.some((search) =>
+          search.includes(`candidate=${candidate.candidate_key}`) &&
+          search.includes(
+            `immutable_package_3@` +
+            `${PLAN040_PACKAGE_5_PACKAGE_3_PINS.evidence}@` +
+            `${candidate.immutable_package_3_ref!.candidate_sha256}`,
+          ))).toBe(true);
+      }
+    }
+  });
+
+  it("replays immutable receipt-only acceptance through the strict loader", () => {
+    const first = acceptPlan040Package5ReceiptPackage();
+    const second = acceptPlan040Package5ReceiptPackage();
+    expect(second).toEqual(first);
+    expect(first).toEqual({
+      absenceReceiptPath:
+        PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ABSENCE_RECEIPT_PATH,
+      absenceReceiptSha256:
+        "5001fb8be406ce9f5abc90490635d22e2f6fad28944400b8eecb4342bfa1c0d2",
+      extentDecisionCount: 0,
+      grainDecisionCount: 0,
+      absenceCandidateCount: 24,
+    });
+    const receipts = loadMemberExtentAbsenceReceipts([
+      dirname(PLAN040_QBNR_STOP_REMOVAL_PACKAGE_5_ABSENCE_RECEIPT_PATH),
+    ]).filter((receipt) =>
+      receipt.receipt_id ===
+        "plan-040-qbnr-stop-removal-package-5-reviewed-absence-v1");
+    expect(receipts).toHaveLength(1);
+    expect(receipts[0]!.extent_keys).toHaveLength(24);
+    expect(receipts[0]!.surfaces).toEqual([
+      "member_extent",
+      "member_grain",
+    ]);
+  });
+
+  it("materializes exactly 24 absence rows while companion decisions remain unresolved", () => {
+    const companion = readJsonl(
+      `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/` +
+        "operational_occurrence_member_extents.jsonl",
+    );
+    const extentLedger = readJsonl(
+      `${repoRoot}/data/quality/operational-reference/` +
+        "member-extent-ledger.jsonl",
+    );
+    const grainLedger = readJsonl(
+      `${repoRoot}/data/quality/operational-reference/` +
+        "member-grain-ledger.jsonl",
+    );
+    expect(companion).toHaveLength(308);
+    expect(extentLedger).toHaveLength(308);
+    expect(grainLedger).toHaveLength(308);
+    expect(distribution(companion, "extent")).toEqual({
+      bounded_segment: 17,
+      route_wide: 4,
+      stop_set: 4,
+      unresolved: 283,
+    });
+    expect(distribution(extentLedger, "verdict")).toEqual({
+      absent_in_source: 70,
+      "resolved:bounded_segment": 17,
+      "resolved:route_wide": 4,
+      "resolved:stop_set": 4,
+      unreviewed: 213,
+    });
+    expect(distribution(grainLedger, "verdict")).toEqual({
+      absent_in_source: 70,
+      resolved: 12,
+      unreviewed: 226,
+    });
+    const companionByKey = new Map(companion.map((row) => [
+      extentDecisionKey(row as never),
+      row,
+    ]));
+    const extentByKey = new Map(extentLedger.map((row) => [
+      extentDecisionKey(row as never),
+      row,
+    ]));
+    const grainByKey = new Map(grainLedger.map((row) => [
+      extentDecisionKey(row as never),
+      row,
+    ]));
+    const draft = readJson<Plan040Package5Draft>(draftPath);
+    for (const candidate of draft.candidates) {
+      expect(companionByKey.get(candidate.candidate_key)).toMatchObject({
+        extent: "unresolved",
+        decision_id: null,
+        components: [],
+        evidence_bindings: [],
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      });
+      expect(extentByKey.get(candidate.candidate_key)).toMatchObject({
+        verdict: "absent_in_source",
+        receipt_ids: [
+          "plan-040-qbnr-stop-removal-package-5-reviewed-absence-v1",
+        ],
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      });
+      expect(grainByKey.get(candidate.candidate_key)).toMatchObject({
+        verdict: "absent_in_source",
+        receipt_ids: [
+          "plan-040-qbnr-stop-removal-package-5-reviewed-absence-v1",
+        ],
+        authorizes_study: false,
+        authorizes_cross_product: false,
+      });
+    }
+    expect(companion.filter((row) =>
+      draft.candidates.some((candidate) =>
+        candidate.candidate_key === extentDecisionKey(row as never)) &&
+      (
+        row.extent !== "unresolved" ||
+        row.decision_id !== null ||
+        (row.components as unknown[]).length > 0 ||
+        (row.evidence_bindings as unknown[]).length > 0
+      ))).toHaveLength(0);
   });
 
   it("rejects authorization, post-version substitution, and prior-package overlap", () => {

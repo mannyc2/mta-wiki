@@ -64,6 +64,13 @@ const SERVICE_CHANGE_SOURCE_ID =
 const SCHEDULE_SOURCE_ID =
   "mta_bus_schedules_2025_candidate_windows";
 const PRE_SOURCE_ID = "gtfs_static_20250626_busco_post_qbnr";
+const FROZEN_EXTENT_LEDGER_SHA256 =
+  "8584dc9c3c4f38ec32cff5b301fe64f3ab482235a4a814e9fc983f546590f8af";
+const FROZEN_GRAIN_LEDGER_SHA256 =
+  "a106f41b23a4df8c9d8ff87e940c9b8fa501e0780f978c05bd533fa03445aebe";
+const PACKAGE5_ABSENCE_RECEIPT_ID =
+  "plan-040-qbnr-stop-removal-package-5-reviewed-absence-v1";
+const PACKAGE5_ABSENCE_REVIEWED_AT = "2026-07-24T06:49:44Z";
 
 type LedgerRow = {
   ledger_id: string;
@@ -83,6 +90,7 @@ type LedgerRow = {
   authorizes_cross_product: false;
   member_extent_decision_id?: null;
   evidence_bindings?: unknown[];
+  spatial_verdict?: string;
 };
 
 type TreatmentRecord = {
@@ -800,8 +808,6 @@ if (
   );
 }
 
-const extentLedgerText = read(EXTENT_LEDGER_PATH);
-const grainLedgerText = read(GRAIN_LEDGER_PATH);
 const extentRows = parseJsonl<LedgerRow>(EXTENT_LEDGER_PATH).filter(
   (row) =>
     row.treatment_family === "bus_stop_or_boarding" &&
@@ -835,27 +841,49 @@ for (const routeId of PLAN040_PACKAGE_5_ROUTE_ORDER) {
   const grain = grainByRoute.get(routeId)!;
   const keysMatch =
     extentDecisionKey(extent) === extentDecisionKey(grain);
+  const commonUnresolved =
+    keysMatch &&
+    extent.current_extent_kind === "unresolved" &&
+    grain.current_extent_kind === "unresolved" &&
+    extent.packet_id === null &&
+    grain.packet_id === null &&
+    grain.member_extent_decision_id === null &&
+    !extent.authorizes_study &&
+    !extent.authorizes_cross_product &&
+    !grain.authorizes_study &&
+    !grain.authorizes_cross_product;
+  const isFrozenInput =
+    extent.verdict === "unreviewed" &&
+    grain.verdict === "unreviewed" &&
+    grain.spatial_verdict === "unreviewed" &&
+    extent.updated_at === null &&
+    grain.updated_at === null &&
+    extent.verdict_basis === null &&
+    grain.verdict_basis === null &&
+    extent.receipt_ids.length === 0 &&
+    grain.receipt_ids.length === 0;
+  const acceptedReceiptIds = stableJson(
+    [PACKAGE5_ABSENCE_RECEIPT_ID] as JsonValue,
+  );
+  const acceptedVerdictBasis =
+    `receipt:${PACKAGE5_ABSENCE_RECEIPT_ID}`;
+  const isAcceptedReplay =
+    extent.verdict === "absent_in_source" &&
+    grain.verdict === "absent_in_source" &&
+    grain.spatial_verdict === "absent_in_source" &&
+    extent.updated_at === PACKAGE5_ABSENCE_REVIEWED_AT &&
+    grain.updated_at === PACKAGE5_ABSENCE_REVIEWED_AT &&
+    extent.verdict_basis === acceptedVerdictBasis &&
+    grain.verdict_basis === acceptedVerdictBasis &&
+    stableJson(extent.receipt_ids as JsonValue) === acceptedReceiptIds &&
+    stableJson(grain.receipt_ids as JsonValue) === acceptedReceiptIds;
   if (
-    !keysMatch ||
-    extent.verdict !== "unreviewed" ||
-    grain.verdict !== "unreviewed" ||
-    extent.current_extent_kind !== "unresolved" ||
-    grain.current_extent_kind !== "unresolved" ||
-    extent.packet_id !== null ||
-    grain.packet_id !== null ||
-    extent.updated_at !== null ||
-    grain.updated_at !== null ||
-    extent.verdict_basis !== null ||
-    grain.verdict_basis !== null ||
-    extent.receipt_ids.length !== 0 ||
-    grain.receipt_ids.length !== 0 ||
-    grain.member_extent_decision_id !== null ||
-    extent.authorizes_study ||
-    extent.authorizes_cross_product ||
-    grain.authorizes_study ||
-    grain.authorizes_cross_product
+    !commonUnresolved ||
+    (!isFrozenInput && !isAcceptedReplay)
   ) {
-    throw new Error(`${routeId}: Package 5 ledger row is not untouched`);
+    throw new Error(
+      `${routeId}: Package 5 ledger row is neither frozen nor accepted replay`,
+    );
   }
 }
 const ledgerKeys = extentRows.map(extentDecisionKey).sort();
@@ -1327,12 +1355,12 @@ const acquisition = {
   ledger_inputs: {
     extent: {
       path: EXTENT_LEDGER_PATH,
-      sha256: sha256(extentLedgerText),
+      sha256: FROZEN_EXTENT_LEDGER_SHA256,
       candidate_count: 24,
     },
     grain: {
       path: GRAIN_LEDGER_PATH,
-      sha256: sha256(grainLedgerText),
+      sha256: FROZEN_GRAIN_LEDGER_SHA256,
       candidate_count: 24,
     },
   },

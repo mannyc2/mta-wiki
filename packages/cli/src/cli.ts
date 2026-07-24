@@ -156,6 +156,7 @@ function parseCommand(argv: string[]): ParsedArgs {
     "plan-040-exemplar-draft",
     "plan-040-package-2-accept",
     "plan-040-package-4-accept",
+    "plan-040-package-5-accept",
     "replay-eval",
     "extract",
     "identity-review",

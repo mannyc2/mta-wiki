@@ -491,16 +491,16 @@ describe("Plan 040 QBNR Package 4 evidence-only risk draft", () => {
       unresolved: 283,
     });
     expect(distribution(extentLedger, "verdict")).toEqual({
-      absent_in_source: 46,
+      absent_in_source: 70,
       "resolved:bounded_segment": 17,
       "resolved:route_wide": 4,
       "resolved:stop_set": 4,
-      unreviewed: 237,
+      unreviewed: 213,
     });
     expect(distribution(grainLedger, "verdict")).toEqual({
-      absent_in_source: 46,
+      absent_in_source: 70,
       resolved: 12,
-      unreviewed: 250,
+      unreviewed: 226,
     });
     const companionByKey = new Map(companion.map((row) => [
       extentDecisionKey(row as never),
