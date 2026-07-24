@@ -435,10 +435,16 @@ describe("Plan 040 QBNR Package 10C mixed-risk evidence freeze", () => {
       expect(candidate.exact_candidate_searches.length).toBeGreaterThanOrEqual(7);
     }
     expect(existsSync(
-      `${riskRoot}/plan-040-qbnr-service-pattern-package-10c-owner-gate-v1.json`,
-    )).toBeFalse();
+      `${riskRoot}/plan-040-qbnr-service-pattern-package-10c-dual-review-gate-v1.json`,
+    )).toBeTrue();
     expect(existsSync(
       `${riskRoot}/plan-040-qbnr-service-pattern-package-10c-owner-acceptance-v1.json`,
+    )).toBeTrue();
+    expect(existsSync(
+      `${repoRoot}/data/quality/operational-reference/member-extent-ledger-decisions/plan-040-qbnr-service-pattern-package-10c-v1.json`,
+    )).toBeFalse();
+    expect(existsSync(
+      `${repoRoot}/data/quality/operational-reference/member-grain-decisions/plan-040-qbnr-service-pattern-package-10c-v1.json`,
     )).toBeFalse();
     expect(receiptPath.includes("/member-extent-evidence/")).toBeTrue();
   });
