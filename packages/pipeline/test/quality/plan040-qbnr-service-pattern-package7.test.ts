@@ -45,9 +45,9 @@ const grainLedgerPath =
   `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`;
 
 const EVIDENCE_SHA256 =
-  "490f0dcc1299b811f0380c64ef1621e954d3f3bd7bfc5a0f23c5b83adb027f0f";
+  "ae2b3885a7a534a754e6b9f54868cd604dd5983e993bccbf210fe5e4f13281a2";
 const DRAFT_SHA256 =
-  "278ceb8121656c5170cad314cdd2aec629f1074050e61816c4204dcabb51472e";
+  "ee62990a38ebb787cf009ea1236618bf69cfd4e5bdbc32ce94bbc1720ed224a8";
 
 const sha256 = (value: Uint8Array | string): string =>
   createHash("sha256").update(value).digest("hex");
@@ -204,7 +204,7 @@ describe("Plan 040 QBNR Package 7 accelerated evidence and decision draft", () =
       [9, 8, 1],
       [2, 0, 2],
       [1, 0, 1],
-      [8, 3, 5],
+      [8, 2, 6],
     ]);
   });
 
@@ -348,28 +348,28 @@ describe("Plan 040 QBNR Package 7 accelerated evidence and decision draft", () =
     }
   });
 
-  it("strictly validates 11 linked extent/grain proposals and 9 fail-closed outcomes", () => {
+  it("strictly validates 10 linked extent/grain proposals and 10 fail-closed outcomes", () => {
     const draft = readJson<Plan040Package7Draft>(draftPath);
     expect(draft.evidence_verdict_distribution).toEqual({
-      evidence_complete_positive_draft: 11,
-      receipt_terminal_unresolved: 9,
+      evidence_complete_positive_draft: 10,
+      receipt_terminal_unresolved: 10,
     });
     expect(draft.proposed_extent_distribution).toEqual({
       bounded_segment: 8,
-      route_wide: 3,
-      unresolved: 9,
+      route_wide: 2,
+      unresolved: 10,
     });
     expect(draft.proposed_grain_distribution).toEqual({
-      periods: 3,
+      periods: 2,
       trip_subset: 8,
-      unresolved: 9,
+      unresolved: 10,
     });
     const positives = draft.candidates.filter((candidate) =>
       candidate.expected_outcome === "positive");
     const unresolved = draft.candidates.filter((candidate) =>
       candidate.expected_outcome === "unresolved");
-    expect(positives).toHaveLength(11);
-    expect(unresolved).toHaveLength(9);
+    expect(positives).toHaveLength(10);
+    expect(unresolved).toHaveLength(10);
     for (const candidate of positives) {
       const extent = candidate.proposed_extent_decision!;
       const grain = parseMemberGrainDecision(
@@ -379,6 +379,32 @@ describe("Plan 040 QBNR Package 7 accelerated evidence and decision draft", () =
       const componentKeys = extent.components.map((component) =>
         JSON.stringify(component));
       expect(new Set(componentKeys).size).toBe(componentKeys.length);
+      for (let leftIndex = 0; leftIndex < extent.components.length; leftIndex += 1) {
+        const left = extent.components[leftIndex]!;
+        for (
+          let rightIndex = leftIndex + 1;
+          rightIndex < extent.components.length;
+          rightIndex += 1
+        ) {
+          const right = extent.components[rightIndex]!;
+          if (
+            left.component_kind !== right.component_kind ||
+            left.description !== right.description
+          ) {
+            continue;
+          }
+          const leftIds = new Set(left.identifiers);
+          const rightIds = new Set(right.identifiers);
+          expect(
+            left.identifiers.length < right.identifiers.length &&
+              left.identifiers.every((identifier) => rightIds.has(identifier)),
+          ).toBe(false);
+          expect(
+            right.identifiers.length < left.identifiers.length &&
+              right.identifiers.every((identifier) => leftIds.has(identifier)),
+          ).toBe(false);
+        }
+      }
       expect(extentDecisionKey(extent)).toBe(candidate.candidate_key);
       expect(memberGrainDecisionKey(grain)).toBe(candidate.candidate_key);
       expect(grain.member_extent_decision_id).toBe(extent.decision_id);
@@ -393,6 +419,100 @@ describe("Plan 040 QBNR Package 7 accelerated evidence and decision draft", () =
         "receipt_terminal_unresolved",
       );
     }
+  });
+
+  it("union-normalizes Q114 extent while retaining both comparisons and all three patterns", () => {
+    const draft = readJson<Plan040Package7Draft>(draftPath);
+    const q114 = draft.candidates.find((candidate) =>
+      candidate.treatment_record_id ===
+        "treatment_q114-jamaica-minor-change-2025")!;
+    expect(q114.proposed_extent_decision?.components).toEqual([{
+      component_kind: "segment",
+      identity_namespace: "source_literal_v1",
+      identifiers: [
+        "500249",
+        "503166",
+        "503169",
+        "503789",
+        "505264",
+        "982492",
+      ],
+      description:
+        "Direction 0 exact launch-boundary changed region 505264 to route-end; pre/post identifiers remain distinct.",
+    }]);
+    expect(q114.proposed_extent_decision?.evidence_bindings
+      .filter((binding) => binding.role === "ordered_full_stop_chain")
+      .map((binding) => binding.evidence_id)).toEqual([
+        "gtfs_static_20250626_busco_post_qbnr#historical-full-stop-comparison:0e3d3d9c8474f0548ff2591b",
+        "gtfs_static_20250626_busco_post_qbnr#historical-full-stop-comparison:28f12c943b71fc2139ab860c",
+      ]);
+    expect(q114.proposed_grain_decision?.service_scope).toEqual({
+      kind: "trip_subset",
+      periods: ["weekend"],
+      directions: ["0"],
+      pattern_ids: [
+        "historical-full-stop-pattern:57bceedb5585609d3f7d3cc5",
+        "historical-full-stop-pattern:8fa79013886bdb7fcd9605a2",
+        "historical-full-stop-pattern:d2d584252034cb1f4f051725",
+      ],
+      description:
+        "Only the receipt-pinned passenger patterns whose ordered chains contain the candidate-specific changed region.",
+    });
+  });
+
+  it("fails QM20 closed because flat selectors include unchanged combinations", () => {
+    const draft = readJson<Plan040Package7Draft>(draftPath);
+    const qm20 = draft.candidates.find((candidate) =>
+      candidate.treatment_record_id ===
+        "treatment_qm20-frequency-decrease-2025")!;
+    expect(qm20.expected_outcome).toBe("unresolved");
+    expect(qm20.evidence_verdict).toBe("receipt_terminal_unresolved");
+    expect(qm20.proposed_extent_decision).toBeNull();
+    expect(qm20.proposed_grain_decision).toBeNull();
+    expect(qm20.unresolved_gap_codes).toEqual([
+      "flat_selector_cross_product_includes_unchanged_period_direction_combinations",
+      "maintained_super_express_pattern_is_nonexclusive_unchanged_context",
+    ]);
+    expect(qm20.source_statement.raw_text).toBe(
+      "Peak and midday frequencies will decrease.",
+    );
+    const patterns = [
+      ...qm20.ordered_full_stop_evidence.pre_patterns,
+      ...qm20.ordered_full_stop_evidence.post_patterns,
+    ] as Array<{
+      direction_id: string;
+      headsigns: string[];
+      period_trip_counts: Array<{ period: string; trip_count: number }>;
+    }>;
+    const count = (
+      side: "pre" | "post",
+      direction: string,
+      period: string,
+      superExpress = false,
+    ): number => {
+      const rows = (side === "pre"
+        ? qm20.ordered_full_stop_evidence.pre_patterns
+        : qm20.ordered_full_stop_evidence.post_patterns) as typeof patterns;
+      return rows
+        .filter((pattern) =>
+          pattern.direction_id === direction &&
+          pattern.headsigns.some((headsign) =>
+            headsign.includes("SUPER EXPRESS")) === superExpress)
+        .flatMap((pattern) => pattern.period_trip_counts)
+        .filter((entry) => entry.period === period)
+        .reduce((sum, entry) => sum + entry.trip_count, 0);
+    };
+    expect(patterns.some((pattern) =>
+      pattern.headsigns.some((headsign) =>
+        headsign.includes("SUPER EXPRESS")))).toBe(true);
+    expect([count("pre", "0", "midday"), count("post", "0", "midday")])
+      .toEqual([5, 5]);
+    expect([count("pre", "1", "pm_peak"), count("post", "1", "pm_peak")])
+      .toEqual([4, 4]);
+    expect([
+      count("pre", "0", "pm_peak", true),
+      count("post", "0", "pm_peak", true),
+    ]).toEqual([3, 3]);
   });
 
   it("preserves endpoint, variant, nonlike-day, and span ambiguity", () => {
@@ -550,6 +670,38 @@ describe("Plan 040 QBNR Package 7 accelerated evidence and decision draft", () =
       buildPlan040Package7Draft(
         buildInput(evidence, duplicateComponent),
       )).toThrow("duplicate exact extent components");
+
+    const nestedComponent = structuredClone(evidence.candidates);
+    const q114 = nestedComponent.find((candidate) =>
+      candidate.treatment_record_id ===
+        "treatment_q114-jamaica-minor-change-2025")!;
+    const q114Component = q114.proposed_extent_decision!.components[0]!;
+    q114.proposed_extent_decision!.components.push({
+      ...structuredClone(q114Component),
+      identifiers: q114Component.identifiers.slice(0, -1),
+    });
+    expect(() =>
+      buildPlan040Package7Draft(
+        buildInput(evidence, nestedComponent),
+      )).toThrow("nested extent component identifier sets");
+
+    const qm20Promoted = structuredClone(evidence.candidates);
+    const qm20 = qm20Promoted.find((candidate) =>
+      candidate.treatment_record_id ===
+        "treatment_qm20-frequency-decrease-2025")!;
+    const qm12 = evidence.candidates.find((candidate) =>
+      candidate.treatment_record_id ===
+        "treatment_qm12-frequency-decrease-2025")!;
+    qm20.proposed_extent_decision = structuredClone(
+      qm12.proposed_extent_decision,
+    );
+    qm20.proposed_grain_decision = structuredClone(
+      qm12.proposed_grain_decision,
+    );
+    expect(() =>
+      buildPlan040Package7Draft(
+        buildInput(evidence, qm20Promoted),
+      )).toThrow("unresolved fail-closed scope drifted");
 
     const overlapInput = buildInput(evidence);
     overlapInput.priorCandidateKeys.package_6 = [

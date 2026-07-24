@@ -204,6 +204,14 @@ const stableBytes = (value: unknown): string =>
   `${stableJson(value as JsonValue)}\n`;
 const uniqueSorted = (values: readonly string[]): string[] =>
   [...new Set(values.filter(Boolean))].sort();
+const isStrictIdentifierSubset = (
+  left: readonly string[],
+  right: readonly string[],
+): boolean => {
+  if (left.length >= right.length) return false;
+  const rightSet = new Set(right);
+  return left.every((identifier) => rightSet.has(identifier));
+};
 const parseJsonl = <T>(path: string): T[] => {
   const text = read(path).trim();
   return text ? text.split("\n").map((line) => JSON.parse(line) as T) : [];
@@ -650,10 +658,6 @@ const FREQUENCY_SCOPES: Record<string, {
     periods: ["am_peak", "pm_peak"],
     directions: ["0", "1"],
   },
-  "treatment_qm20-frequency-decrease-2025": {
-    periods: ["am_peak", "midday", "pm_peak"],
-    directions: ["0", "1"],
-  },
   "treatment_qm21-frequency-decrease-2025": {
     periods: ["am_peak", "pm_peak"],
     directions: ["0", "1"],
@@ -760,7 +764,14 @@ function positiveDecisions(
     }
     const components = [...componentsByExactObject.values()].sort(
       (left, right) => left.description.localeCompare(right.description),
-    );
+    ).filter((component, index, all) => {
+      return !all.some((other, otherIndex) =>
+        otherIndex !== index &&
+        other.component_kind === component.component_kind &&
+        other.description === component.description &&
+        isStrictIdentifierSubset(component.identifiers, other.identifiers)
+      );
+    });
     const selectedComparisonIds = new Set(regions.map((region) =>
       region.comparison_id));
     const selectedComparisons = candidate.comparisons.filter((comparison) =>
@@ -843,6 +854,10 @@ const UNRESOLVED_GAPS: Record<string, string[]> = {
   "treatment_qm8-span-adjustment-2025": [
     "exact_service_span_boundary_times_missing",
     "period_reclassification_is_not_exact_span_identity",
+  ],
+  "treatment_qm20-frequency-decrease-2025": [
+    "flat_selector_cross_product_includes_unchanged_period_direction_combinations",
+    "maintained_super_express_pattern_is_nonexclusive_unchanged_context",
   ],
   "treatment_qm32-frequency-span-adjustment-2025": [
     "combined_frequency_and_span_candidate_not_partially_terminalized",
@@ -1145,8 +1160,8 @@ const evidence = {
   candidate_key_sha256: PLAN040_PACKAGE_7_CANDIDATE_KEY_SHA256,
   wave_partition: PLAN040_PACKAGE_7_WAVES,
   current_outcome_distribution: {
-    evidence_complete_positive_draft: 11,
-    receipt_terminal_unresolved: 9,
+    evidence_complete_positive_draft: 10,
+    receipt_terminal_unresolved: 10,
   },
   pristine_ledger_inputs: {
     extent: {

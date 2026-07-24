@@ -65,8 +65,8 @@ export const PLAN040_PACKAGE_7_WAVES = [
     wave_id: "P7-D",
     label: "express_frequency_or_span",
     candidate_count: 8,
-    positive_count: 3,
-    unresolved_count: 5,
+    positive_count: 2,
+    unresolved_count: 6,
     review_mode: "dual_independent_risk_review",
   },
 ] as const;
@@ -90,7 +90,7 @@ export const PLAN040_PACKAGE_7_CANDIDATES = [
   ["P7-D", "QM2", "treatment_qm2-frequency-decrease-2025", "unresolved"],
   ["P7-D", "QM8", "treatment_qm8-span-adjustment-2025", "unresolved"],
   ["P7-D", "QM12", "treatment_qm12-frequency-decrease-2025", "positive"],
-  ["P7-D", "QM20", "treatment_qm20-frequency-decrease-2025", "positive"],
+  ["P7-D", "QM20", "treatment_qm20-frequency-decrease-2025", "unresolved"],
   ["P7-D", "QM21", "treatment_qm21-frequency-decrease-2025", "positive"],
   ["P7-D", "QM32", "treatment_qm32-frequency-span-adjustment-2025", "unresolved"],
   ["P7-D", "QM36", "treatment_qm36-frequency-span-adjustment-2025", "unresolved"],
@@ -220,21 +220,21 @@ export type Plan040Package7Draft = {
     typeof PLAN040_PACKAGE_7_CANDIDATE_KEY_SHA256;
   wave_partition: typeof PLAN040_PACKAGE_7_WAVES;
   evidence_verdict_distribution: {
-    evidence_complete_positive_draft: 11;
-    receipt_terminal_unresolved: 9;
+    evidence_complete_positive_draft: 10;
+    receipt_terminal_unresolved: 10;
   };
   proposed_extent_distribution: {
     bounded_segment: 8;
-    route_wide: 3;
-    unresolved: 9;
+    route_wide: 2;
+    unresolved: 10;
   };
   proposed_grain_distribution: {
-    periods: 3;
+    periods: 2;
     trip_subset: 8;
-    unresolved: 9;
+    unresolved: 10;
   };
-  proposed_extent_decision_count: 11;
-  proposed_grain_decision_count: 11;
+  proposed_extent_decision_count: 10;
+  proposed_grain_decision_count: 10;
   persisted_extent_decision_count: 0;
   persisted_grain_decision_count: 0;
   exclusions: {
@@ -374,6 +374,41 @@ export function buildPlan040Package7Draft(input: {
           `${candidate.treatment_record_id}: duplicate exact extent components`,
         );
       }
+      for (
+        let leftIndex = 0;
+        leftIndex < candidate.proposed_extent_decision.components.length;
+        leftIndex += 1
+      ) {
+        const left =
+          candidate.proposed_extent_decision.components[leftIndex]!;
+        const leftIds = new Set(left.identifiers);
+        for (
+          let rightIndex = leftIndex + 1;
+          rightIndex < candidate.proposed_extent_decision.components.length;
+          rightIndex += 1
+        ) {
+          const right =
+            candidate.proposed_extent_decision.components[rightIndex]!;
+          if (
+            left.component_kind !== right.component_kind ||
+            left.description !== right.description
+          ) {
+            continue;
+          }
+          const rightIds = new Set(right.identifiers);
+          const leftNested =
+            leftIds.size < rightIds.size &&
+            left.identifiers.every((id) => rightIds.has(id));
+          const rightNested =
+            rightIds.size < leftIds.size &&
+            right.identifiers.every((id) => leftIds.has(id));
+          if (leftNested || rightNested) {
+            throw new Error(
+              `${candidate.treatment_record_id}: nested extent component identifier sets`,
+            );
+          }
+        }
+      }
       const grain = parseMemberGrainDecision(
         candidate.proposed_grain_decision,
         candidate.treatment_record_id,
@@ -445,21 +480,21 @@ export function buildPlan040Package7Draft(input: {
     candidate_key_sha256: PLAN040_PACKAGE_7_CANDIDATE_KEY_SHA256,
     wave_partition: PLAN040_PACKAGE_7_WAVES,
     evidence_verdict_distribution: {
-      evidence_complete_positive_draft: 11,
-      receipt_terminal_unresolved: 9,
+      evidence_complete_positive_draft: 10,
+      receipt_terminal_unresolved: 10,
     },
     proposed_extent_distribution: {
       bounded_segment: 8,
-      route_wide: 3,
-      unresolved: 9,
+      route_wide: 2,
+      unresolved: 10,
     },
     proposed_grain_distribution: {
-      periods: 3,
+      periods: 2,
       trip_subset: 8,
-      unresolved: 9,
+      unresolved: 10,
     },
-    proposed_extent_decision_count: 11,
-    proposed_grain_decision_count: 11,
+    proposed_extent_decision_count: 10,
+    proposed_grain_decision_count: 10,
     persisted_extent_decision_count: 0,
     persisted_grain_decision_count: 0,
     exclusions: {
