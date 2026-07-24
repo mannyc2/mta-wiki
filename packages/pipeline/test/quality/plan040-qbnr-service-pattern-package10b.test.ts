@@ -41,9 +41,15 @@ import {
   PLAN040_PACKAGE_10B_ACCEPTANCE_SHA256,
   PLAN040_PACKAGE_10B_APPROVED_COMMIT,
   PLAN040_PACKAGE_10B_GATE_SHA256,
+  PLAN040_PACKAGE_10B_PATH_AMENDMENT_COMMIT,
+  PLAN040_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_SHA256,
+  PLAN040_PACKAGE_10B_PATH_REVIEW_GATE_SHA256,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ACCEPTANCE_PATH,
   PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GATE_PATH,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_PATH,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_GATE_PATH,
   buildPlan040Package10bGateAndAcceptance,
+  buildPlan040Package10bPathReviewAndAcceptance,
   validatePlan040Package10bGateAndAcceptance,
 } from
   "../../src/quality/plan040-qbnr-service-pattern-package10b-closeout";
@@ -1285,6 +1291,79 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
         acceptedAt: ACCEPTED_AT,
       })
     ).toThrow(/gate drifted/u);
+  });
+
+  it("records fresh dual path approval and standing supplemental acceptance separately", () => {
+    const gate = readJson<Record<string, unknown>>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_GATE_PATH,
+    );
+    const acceptance = readJson<Record<string, unknown>>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_PATH,
+    );
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_GATE_PATH,
+    ))).toBe(PLAN040_PACKAGE_10B_PATH_REVIEW_GATE_SHA256);
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_PATH,
+    ))).toBe(PLAN040_PACKAGE_10B_PATH_REVIEW_ACCEPTANCE_SHA256);
+    const rebuilt = buildPlan040Package10bPathReviewAndAcceptance({
+      acceptedAt: "2026-07-24T14:52:52Z",
+    });
+    expect(gate).toEqual(rebuilt.gate);
+    expect(acceptance).toEqual(rebuilt.acceptance);
+    expect(gate).toEqual(expect.objectContaining({
+      reviewed_commit: PLAN040_PACKAGE_10B_PATH_AMENDMENT_COMMIT,
+      candidate_count: 4,
+      candidate_key_sha256: PLAN040_PACKAGE_10B_CANDIDATE_KEY_SHA256,
+      verdict: "APPROVE",
+      authorization_state:
+        "fresh_compact_dual_path_review_approved_pending_owner_supplemental_acceptance",
+      authorizes_decision_persistence: false,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    }));
+    expect(gate.reviewer_results).toEqual([
+      expect.objectContaining({
+        reviewed_commit: PLAN040_PACKAGE_10B_PATH_AMENDMENT_COMMIT,
+        verdict: "APPROVE",
+      }),
+      expect.objectContaining({
+        reviewed_commit: PLAN040_PACKAGE_10B_PATH_AMENDMENT_COMMIT,
+        verdict: "APPROVE",
+      }),
+    ]);
+    expect(gate.invariants).toEqual({
+      receipt_bytes_unchanged: true,
+      receipt_sha256_unchanged: true,
+      candidate_keys_unchanged: true,
+      verdicts_unchanged: true,
+      proposed_decisions_unchanged: true,
+      prior_reviewer_results_unchanged: true,
+      prior_authorization_unchanged: true,
+      shared_loader_semantics_unchanged: true,
+      persistence_performed: false,
+    });
+    expect(acceptance).toEqual(expect.objectContaining({
+      accepted_at: "2026-07-24T14:52:52Z",
+      accepted_by: "codex-owner-delegate",
+      acceptance_basis: "standing_owner_accelerated_checkpoint_protocol",
+      reviewed_commit: PLAN040_PACKAGE_10B_PATH_AMENDMENT_COMMIT,
+      authorization_state:
+        "owner_supplementally_accepted_path_only_amendment_for_combined_validation_with_prior_acceptance",
+      authorizes_path_amendment_integration: true,
+      authorizes_previously_accepted_persistence_after_combined_validation:
+        true,
+      authorizes_new_or_changed_decisions: false,
+      authorizes_decision_persistence: false,
+      authorizes_reviewed_absence_receipt_persistence: false,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    }));
+    expect(
+      (acceptance.gate as { sha256: string }).sha256,
+    ).toBe(PLAN040_PACKAGE_10B_PATH_REVIEW_GATE_SHA256);
   });
 
   it("fails closed on chain, Q89 preservation, P8, and exclusion drift", () => {
