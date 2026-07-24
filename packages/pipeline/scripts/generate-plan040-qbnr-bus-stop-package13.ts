@@ -306,6 +306,10 @@ const candidateSpecs = readJson<FrozenEvidenceSeed>(evidencePath).candidate_spec
       return {
         ...base,
         verdict: "positive_extent_and_grain_proposed",
+        expected_comparison_ids: [
+          "historical-full-stop-comparison:e0e98ebdc33c41388f11c289",
+          "historical-full-stop-comparison:af58c70e8d6accba99efd522",
+        ],
         proposed: spec.proposed
           ? {
             ...spec.proposed,
@@ -909,6 +913,50 @@ const candidateComparisons: CandidateComparison[] = candidateSpecs.map((spec) =>
 });
 const comparisonByKey = new Map(candidateComparisons.map((row) =>
   [row.candidate_key, row]));
+const selectedPatternIds = (
+  spec: CandidateSpec,
+  comparison: CandidateComparison,
+): string[] => {
+  const componentContaining = comparison.component_containing_post_pattern_ids;
+  if (spec.treatment_record_id ===
+      "treatment_qm63-midtown-stop-additions-2025") {
+    return componentContaining.filter((id) => {
+      const pattern = comparison.post_patterns.find((row) =>
+        (row as { pattern_id: string }).pattern_id === id
+      ) as { direction_id: string } | undefined;
+      return pattern?.direction_id === "1";
+    });
+  }
+  const scope = spec.proposed?.scope ?? "";
+  const direction = scope.includes("direction_0") ? "0"
+    : scope.includes("direction_1") ? "1"
+    : null;
+  return componentContaining.filter((id) => {
+    if (!direction) return true;
+    const pattern = comparison.post_patterns.find((row) =>
+      (row as { pattern_id: string }).pattern_id === id
+    ) as { direction_id: string } | undefined;
+    return pattern?.direction_id === direction;
+  });
+};
+for (const spec of candidateSpecs) {
+  const comparison = comparisonByKey.get(spec.candidate_key)!;
+  const selectedPatterns = new Set(selectedPatternIds(spec, comparison));
+  const comparisonsById = new Map(comparison.comparisons.map((row) =>
+    [row.comparison_id, row]));
+  for (const comparisonId of comparison.selected_comparison_ids) {
+    const selectedComparison = comparisonsById.get(comparisonId);
+    if (
+      !selectedComparison ||
+      !selectedPatterns.has(selectedComparison.after_pattern_id)
+    ) {
+      throw new Error(
+        `${spec.treatment_record_id}: selected comparison ${comparisonId} ` +
+          "is not bound to a selected component-containing post pattern",
+      );
+    }
+  }
+}
 
 const comparisonReceiptBody = {
   schema_version: 1,
@@ -924,6 +972,8 @@ const comparisonReceiptBody = {
     comparison_inventory: "all_candidate_pre_post_pattern_pairs",
     stop_set_pattern_scope_policy:
       "each proposed grain pattern must contain at least one authorized component stop_id",
+    selected_comparison_binding_policy:
+      "each selected comparison after_pattern_id is a selected component-containing post pattern",
     schedule_passenger_policy: "any_trip_type_except_2_3_4",
     excluded_nonrevenue_trip_types: ["2", "3", "4"],
     exact_identifier_policy:
@@ -964,12 +1014,14 @@ if (comparisonReceipt.sha256 !==
   throw new Error("Package 13 comparison receipt hash drifted");
 }
 
+const blockedUpstreamReason = (spec: CandidateSpec): string =>
+  sorted(spec.source_gap_codes).join("+");
 const sourceGapEntries = sourceGapCandidates.map((spec) => {
   const blockedSurfaces = spec.verdict ===
       "positive_extent_proposed_grain_blocked"
     ? ["member_grain"]
     : ["member_extent", "member_grain"];
-  const blockedReason = spec.source_gap_codes.join("+");
+  const blockedReason = blockedUpstreamReason(spec);
   return {
     candidate_key: spec.candidate_key,
     occurrence_id: spec.occurrence_id,
@@ -1014,6 +1066,7 @@ const sourceGapReceiptBody = {
     "candidate-specific source gap blocks authority without claiming source absence",
   absence_projection_prohibited_for_unresolved_grain: true,
   prospective_ledger_prefix: "blocked_upstream:",
+  prospective_ledger_reason_policy: "sorted_unique_gap_codes",
   candidates: sourceGapEntries,
   comparison_receipt: comparisonReceipt,
   replay_derived: true,
@@ -1082,32 +1135,6 @@ const sortedBindings = (
           .join("\0"),
       )
   );
-const selectedPatternIds = (
-  spec: CandidateSpec,
-  comparison: CandidateComparison,
-): string[] => {
-  const componentContaining = comparison.component_containing_post_pattern_ids;
-  if (spec.treatment_record_id ===
-      "treatment_qm63-midtown-stop-additions-2025") {
-    return componentContaining.filter((id) => {
-      const pattern = comparison.post_patterns.find((row) =>
-        (row as { pattern_id: string }).pattern_id === id
-      ) as { direction_id: string } | undefined;
-      return pattern?.direction_id === "1";
-    });
-  }
-  const scope = spec.proposed?.scope ?? "";
-  const direction = scope.includes("direction_0") ? "0"
-    : scope.includes("direction_1") ? "1"
-    : null;
-  return componentContaining.filter((id) => {
-    if (!direction) return true;
-    const pattern = comparison.post_patterns.find((row) =>
-      (row as { pattern_id: string }).pattern_id === id
-    ) as { direction_id: string } | undefined;
-    return pattern?.direction_id === direction;
-  });
-};
 const buildExtent = (
   spec: CandidateSpec,
   bindings: ExactEvidenceBinding[],
@@ -1327,7 +1354,7 @@ const candidates: Plan040Package13CandidateEvidence[] =
             `${sourceGapReceipt.source_id}#candidate=${spec.candidate_key}`,
           semantic_verdict: "blocked_upstream",
           prospective_ledger_handling:
-            `blocked_upstream:${spec.source_gap_codes.join("+")}`,
+            `blocked_upstream:${blockedUpstreamReason(spec)}`,
           absence_projection_prohibited_for_unresolved_grain: true,
           literal_exact_absence: false,
           gap_codes: spec.source_gap_codes,

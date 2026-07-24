@@ -56,6 +56,10 @@ const readJson = <T>(path: string): T =>
 
 type Evidence = {
   candidates: Plan040Package13CandidateEvidence[];
+  candidate_specs: Array<{
+    treatment_record_id: string;
+    expected_comparison_ids: string[];
+  }>;
   preserved_siblings: Plan040Package13PreservedSibling[];
   exclusions: Plan040Package13Exclusion[];
   candidate_key_sha256: string;
@@ -106,8 +110,10 @@ type ComparisonCandidate = {
   }>;
   schedule_matched_post_pattern_ids: string[];
   component_containing_post_pattern_ids: string[];
+  selected_comparison_ids: string[];
   comparisons: Array<{
     comparison_id: string;
+    after_pattern_id: string;
     equivalences: Array<{
       before_stop_id: string;
       after_stop_id: string;
@@ -346,6 +352,44 @@ describe("Plan 040 QBNR bus-stop Package 13 evidence freeze", () => {
           "historical-full-stop-pattern:7eb5163a8a2b5410f91e42e5",
         );
     }
+    const qm8Receipt = comparisonByKey.get(qm8.candidate_key)!;
+    const expectedQm8Comparisons = [
+      "historical-full-stop-comparison:e0e98ebdc33c41388f11c289",
+      "historical-full-stop-comparison:af58c70e8d6accba99efd522",
+    ];
+    expect(qm8Receipt.selected_comparison_ids).toEqual(expectedQm8Comparisons);
+    expect(evidence.candidate_specs.find((spec) =>
+      spec.treatment_record_id ===
+        "treatment_qm8-east-34-stop-addition-2025"
+    )?.expected_comparison_ids).toEqual(expectedQm8Comparisons);
+    expect(qm8Receipt.selected_comparison_ids).not.toContain(
+      "historical-full-stop-comparison:8bbc7403f888d411a1af050c",
+    );
+    expect(qm8Receipt.selected_comparison_ids).not.toContain(
+      "historical-full-stop-comparison:00fb72499a2bdacf83614edd",
+    );
+  });
+
+  test("binds every selected comparison to a selected post pattern", () => {
+    const evidenceByKey = new Map(evidence.candidates.map((row) =>
+      [row.candidate_key, row]));
+    for (const receipt of comparison.candidates) {
+      const comparisonsById = new Map(receipt.comparisons.map((row) =>
+        [row.comparison_id, row]));
+      for (const comparisonId of receipt.selected_comparison_ids) {
+        const selectedComparison = comparisonsById.get(comparisonId)!;
+        expect(selectedComparison).toBeDefined();
+        expect(receipt.component_containing_post_pattern_ids)
+          .toContain(selectedComparison.after_pattern_id);
+        const serviceScope =
+          evidenceByKey.get(receipt.candidate_key)?.proposed_grain_decision
+            ?.service_scope;
+        if (serviceScope?.kind === "trip_subset") {
+          expect(serviceScope.pattern_ids)
+            .toContain(selectedComparison.after_pattern_id);
+        }
+      }
+    }
   });
 
   test("blocks 12 source gaps without projecting an exact absence", () => {
@@ -360,7 +404,10 @@ describe("Plan 040 QBNR bus-stop Package 13 evidence freeze", () => {
       row.absence_projection_prohibited_for_unresolved_grain === true &&
       row.gap_codes.length > 0 &&
       Object.values(row.prospective_ledger_handling).every((value) =>
-        value.startsWith("blocked_upstream:")
+        value ===
+          `blocked_upstream:${
+            [...new Set(row.gap_codes)].sort().join("+")
+          }`
       )
     )).toBe(true);
     const gaps = new Set(sourceGap.candidates.flatMap((row) => row.gap_codes));
@@ -438,6 +485,21 @@ describe("Plan 040 QBNR bus-stop Package 13 evidence freeze", () => {
           ]
           : ["schedule_gtfs_validation_missing"],
       );
+      const canonicalReason = `blocked_upstream:${[...new Set(receipt.gap_codes)]
+        .sort().join("+")}`;
+      expect(receipt.prospective_ledger_handling)
+        .toEqual({ member_grain: canonicalReason });
+      expect(
+        (candidate.source_gap_block_receipt as {
+          prospective_ledger_handling: string;
+        }).prospective_ledger_handling,
+      ).toBe(canonicalReason);
+      if (treatment === "treatment_q28-limited-stops-2025") {
+        expect(canonicalReason).toBe(
+          "blocked_upstream:cross_feed_operator_transition_requires_review+" +
+            "schedule_gtfs_validation_missing",
+        );
+      }
       expect(
         comparisonByKey.get(candidate.candidate_key)!
           .schedule_matched_post_pattern_ids,
