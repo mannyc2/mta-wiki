@@ -47,6 +47,10 @@ import type {
   ExactEvidenceBinding,
   MemberExtentDecision,
 } from "../src/quality/study-readiness-v1.js";
+import {
+  PLAN040_PACKAGE_10D_POST_PERSISTENCE_PINS,
+} from
+  "../src/quality/plan040-qbnr-service-pattern-package10d-closeout.js";
 
 const riskRoot = join(
   repoRoot,
@@ -114,31 +118,61 @@ const assertPinnedFile = (relativePath: string, expected: string): void => {
     throw new Error(`${relativePath}: expected ${expected}, got ${actual}`);
   }
 };
+const assertOneOfPinnedFile = (
+  relativePath: string,
+  expected: readonly string[],
+): string => {
+  const actual = sha256(readFileSync(join(repoRoot, relativePath)));
+  if (!expected.includes(actual)) {
+    throw new Error(
+      `${relativePath}: expected one of ${expected.join(", ")}, got ${actual}`,
+    );
+  }
+  return actual;
+};
 
-assertPinnedFile(
+const currentExtentLedgerSha256 = assertOneOfPinnedFile(
   "data/quality/operational-reference/member-extent-ledger.jsonl",
-  PLAN040_PACKAGE_10D_POST_10C_PINS.extent_ledger,
+  [
+    PLAN040_PACKAGE_10D_POST_10C_PINS.extent_ledger,
+    PLAN040_PACKAGE_10D_POST_PERSISTENCE_PINS.extent_ledger,
+  ],
 );
-assertPinnedFile(
+const currentGrainLedgerSha256 = assertOneOfPinnedFile(
   "data/quality/operational-reference/member-grain-ledger.jsonl",
-  PLAN040_PACKAGE_10D_POST_10C_PINS.grain_ledger,
+  [
+    PLAN040_PACKAGE_10D_POST_10C_PINS.grain_ledger,
+    PLAN040_PACKAGE_10D_POST_PERSISTENCE_PINS.grain_ledger,
+  ],
 );
-assertPinnedFile(
+assertOneOfPinnedFile(
   "data/quality/study-readiness/v1/bridge-ledger.jsonl",
-  PLAN040_PACKAGE_10D_POST_10C_PINS.bridge,
+  [
+    PLAN040_PACKAGE_10D_POST_10C_PINS.bridge,
+    PLAN040_PACKAGE_10D_POST_PERSISTENCE_PINS.bridge_ledger,
+  ],
 );
-assertPinnedFile(
+assertOneOfPinnedFile(
   "data/quality/study-readiness/v1/manifest.json",
-  PLAN040_PACKAGE_10D_POST_10C_PINS.study_manifest,
+  [
+    PLAN040_PACKAGE_10D_POST_10C_PINS.study_manifest,
+    PLAN040_PACKAGE_10D_POST_PERSISTENCE_PINS.study_manifest,
+  ],
 );
-assertPinnedFile(
+assertOneOfPinnedFile(
   "data/contracts/operational-occurrence-member-extent/v1/" +
     "operational_occurrence_member_extents.jsonl",
-  PLAN040_PACKAGE_10D_POST_10C_PINS.member_extent_contract,
+  [
+    PLAN040_PACKAGE_10D_POST_10C_PINS.member_extent_contract,
+    PLAN040_PACKAGE_10D_POST_PERSISTENCE_PINS.member_extent_contract,
+  ],
 );
-assertPinnedFile(
+assertOneOfPinnedFile(
   "data/contracts/operational-occurrence-member-extent/v1/manifest.json",
-  PLAN040_PACKAGE_10D_POST_10C_PINS.operational_manifest,
+  [
+    PLAN040_PACKAGE_10D_POST_10C_PINS.operational_manifest,
+    PLAN040_PACKAGE_10D_POST_PERSISTENCE_PINS.member_extent_manifest,
+  ],
 );
 assertPinnedFile(
   "raw/sources/mta_queens_bus_network_redesign_service_changes/source.html",
@@ -196,7 +230,44 @@ const grainRows = readJsonl<MemberGrainLedgerRow>(join(
   repoRoot,
   "data/quality/operational-reference/member-grain-ledger.jsonl",
 ));
+const frozenPriorLedger = existsSync(join(repoRoot, evidenceRelative))
+  ? new Map(readJson<{
+    candidates: Plan040Package10dCandidateEvidence[];
+  }>(join(repoRoot, evidenceRelative)).candidates.flatMap((candidate) => {
+    const sibling = candidate.accepted_evidence
+      .preserved_limited_stop_sibling as {
+        treatment_record_id: string;
+        extent_ledger_state: MemberExtentLedgerRow;
+        grain_ledger_state: MemberGrainLedgerRow;
+      };
+    return [
+      [candidate.treatment_record_id, candidate.prior_ledger_state],
+      [
+        sibling.treatment_record_id,
+        {
+          extent_row: sibling.extent_ledger_state,
+          grain_row: sibling.grain_ledger_state,
+        },
+      ],
+    ] as const;
+  }))
+  : null;
 const priorLedger = (treatmentRecordId: string) => {
+  const frozen = frozenPriorLedger?.get(
+    treatmentRecordId as
+      Plan040Package10dCandidateEvidence["treatment_record_id"],
+  );
+  if (frozen) return frozen;
+  if (
+    currentExtentLedgerSha256 !==
+      PLAN040_PACKAGE_10D_POST_10C_PINS.extent_ledger ||
+    currentGrainLedgerSha256 !==
+      PLAN040_PACKAGE_10D_POST_10C_PINS.grain_ledger
+  ) {
+    throw new Error(
+      `${treatmentRecordId}: frozen pre-persistence ledger state missing`,
+    );
+  }
   const extent = extentRows.find((row) =>
     row.treatment_record_id === treatmentRecordId
   );

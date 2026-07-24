@@ -53,21 +53,21 @@ export const PLAN040_PACKAGE_10C_ABSENCE_RECEIPT_SHA256 =
   "7b67ac3dc6a4b8a1638a0c7367157187bfe5cb63159b9cf818c1c8f025428f83" as const;
 export const PLAN040_PACKAGE_10C_POST_PERSISTENCE_PINS = {
   extent_ledger:
-    "9026b6e83b27171870602e7599c5a2201522d78bd9f516b6ebf621170ca9d6e4",
+    "677586944219a59e1d6d74b7bf7c6b39150a99a0a84dce6bdc4fac11cf9057e9",
   grain_ledger:
-    "7e897b559c55e54ba1274ea400895413a4c8bd25e4be203686f69a4b44df9514",
+    "bb6c5aca8bff36494e6c1e0857d2a6e722c3fb523cd2aca2ee8b17f3fa2730cf",
   bridge_ledger:
-    "d4f58a1b0aa9f2375de96cf5b77ed92e8c2f9236f930fcd3ecfce81af561a6a1",
+    "6c82b4a37067e6c7de563e373c7187c75a15610118da6fa3c64cdb70133e755b",
   study_manifest:
-    "91e5909fd51978e95896a28ffc5d0ac3a9592f3f8fc8e9d21e100a723b71bd50",
+    "2aca7fc78f36440a89db0b85a23baf69d421bc93ebe22e32514285670f7dd882",
   member_extent_contract:
-    "1bc6d340462cb13839796c9d41491b7d132c5dd12a48a9a1ec90c85ff998437c",
+    "2898c276271722374ce81b23d02d2110ddef198055cdfcb81e1d6c29094144c4",
   member_extent_manifest:
-    "04062744b877de3349d914d70768f63b122dc0fcb370ac7a17765f49e9955755",
+    "51ad2e7d37f751f9278bf695342a0497803601efe0ad0ada3c49ad85e8cd8158",
   member_extent_review_ledger:
-    "5befe59a6dc7c6fc4004efaa454f9d69e08a405f68be514dec9d4fc2955e7f05",
+    "8f1a0f4d7e1df6df77c9c65a68dad3501d350f23f92a6fef1ab36412808d6a08",
   member_extent_summary:
-    "3de2f469dc478d58b3f5be1ea8f1ea0948d71cd4d5802da4313e371b301c8d42",
+    "6856a8acc6858aa0415acbc5590fbdf3060e89333b7d26771dba4a9b197c2932",
   operational_occurrences:
     "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
   operational_occurrence_decisions:

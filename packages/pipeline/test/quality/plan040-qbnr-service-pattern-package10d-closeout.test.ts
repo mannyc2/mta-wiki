@@ -8,6 +8,10 @@ import {
   PLAN040_PACKAGE_10D_COMPARISON_RECEIPT_SHA256,
   PLAN040_PACKAGE_10D_DRAFT_SHA256,
   PLAN040_PACKAGE_10D_EVIDENCE_SHA256,
+  PLAN040_PACKAGE_10D_EXTENT_DECISIONS_SHA256,
+  PLAN040_PACKAGE_10D_GRAIN_DECISIONS_SHA256,
+  PLAN040_PACKAGE_10D_POST_PERSISTENCE_PINS,
+  buildPlan040Package10dAcceptedArtifacts,
   buildPlan040Package10dGateAndAcceptance,
   validatePlan040Package10dGateAndAcceptance,
 } from
@@ -179,5 +183,148 @@ describe("Plan 040 QBNR Package 10D gate and owner acceptance", () => {
       draft: correctionDrift,
       acceptedAt: ACCEPTED_AT,
     })).toThrow("frozen verdict or authorization scope drifted");
+  });
+
+  it("persists exactly two linked route-wide weekday decisions", () => {
+    const draft = JSON.parse(
+      readFileSync(draftPath, "utf8"),
+    ) as Plan040Package10dDraft;
+    const gate = JSON.parse(readFileSync(gatePath, "utf8")) as ReturnType<
+      typeof buildPlan040Package10dGateAndAcceptance
+    >["gate"];
+    const acceptance = JSON.parse(
+      readFileSync(acceptancePath, "utf8"),
+    ) as ReturnType<
+      typeof buildPlan040Package10dGateAndAcceptance
+    >["acceptance"];
+    const accepted = buildPlan040Package10dAcceptedArtifacts({
+      draft,
+      gate,
+      acceptance,
+    });
+    const extentPath =
+      `${repoRoot}/data/quality/operational-reference/` +
+      "member-extent-ledger-decisions/" +
+      "plan-040-qbnr-service-pattern-package-10d-v1.json";
+    const grainPath =
+      `${repoRoot}/data/quality/operational-reference/` +
+      "member-grain-decisions/" +
+      "plan-040-qbnr-service-pattern-package-10d-v1.json";
+    expect(sha256(readFileSync(extentPath))).toBe(
+      PLAN040_PACKAGE_10D_EXTENT_DECISIONS_SHA256,
+    );
+    expect(sha256(readFileSync(grainPath))).toBe(
+      PLAN040_PACKAGE_10D_GRAIN_DECISIONS_SHA256,
+    );
+    expect(JSON.parse(readFileSync(extentPath, "utf8"))).toEqual({
+      decisions: accepted.extentDecisions,
+    });
+    expect(JSON.parse(readFileSync(grainPath, "utf8"))).toEqual({
+      decisions: accepted.grainDecisions,
+    });
+    expect(accepted.extentDecisions).toHaveLength(2);
+    expect(accepted.extentDecisions.every((row) =>
+      row.resolution === "route_wide"
+    )).toBeTrue();
+    expect(accepted.grainDecisions).toHaveLength(2);
+    expect(accepted.grainDecisions.every((row) =>
+      row.service_scope.kind === "trip_subset" &&
+      row.service_scope.periods.length === 1 &&
+      row.service_scope.periods[0] === "weekday" &&
+      row.member_extent_decision_id !== null
+    )).toBeTrue();
+
+    const pinnedFiles = {
+      extent_ledger:
+        `${repoRoot}/data/quality/operational-reference/member-extent-ledger.jsonl`,
+      grain_ledger:
+        `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`,
+      bridge_ledger:
+        `${repoRoot}/data/quality/study-readiness/v1/bridge-ledger.jsonl`,
+      study_manifest:
+        `${repoRoot}/data/quality/study-readiness/v1/manifest.json`,
+      member_extent_contract:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/` +
+        "operational_occurrence_member_extents.jsonl",
+      member_extent_manifest:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/manifest.json`,
+      member_extent_review_ledger:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/review-ledger.jsonl`,
+      member_extent_summary:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/summary.json`,
+      operational_occurrences:
+        `${repoRoot}/data/exports/releases/v1-rc26/operational_occurrences.jsonl`,
+      operational_occurrence_decisions:
+        `${repoRoot}/data/exports/releases/v1-rc26/operational_occurrence_review_decisions.json`,
+      treatment_components:
+        `${repoRoot}/data/canonical/treatment_components.jsonl`,
+      reviewed_candidate_packets:
+        `${repoRoot}/data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl`,
+    };
+    for (const [name, path] of Object.entries(pinnedFiles)) {
+      expect(sha256(readFileSync(path))).toBe(
+        PLAN040_PACKAGE_10D_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_10D_POST_PERSISTENCE_PINS
+        ],
+      );
+    }
+
+    const extentRows = readFileSync(
+      pinnedFiles.extent_ledger,
+      "utf8",
+    ).trim().split("\n").map((line) => JSON.parse(line)) as Array<{
+      treatment_record_id: string;
+      verdict: string;
+      authorizes_study: false;
+      authorizes_cross_product: false;
+    }>;
+    const grainRows = readFileSync(
+      pinnedFiles.grain_ledger,
+      "utf8",
+    ).trim().split("\n").map((line) => JSON.parse(line)) as Array<{
+      treatment_record_id: string;
+      verdict: string;
+      service_scope: { kind: string; periods: string[] } | null;
+      authorizes_study: false;
+      authorizes_cross_product: false;
+    }>;
+    const positiveIds = new Set(accepted.extentDecisions.map((row) =>
+      row.treatment_record_id));
+    expect(extentRows.filter((row) =>
+      positiveIds.has(row.treatment_record_id) &&
+      row.verdict === "resolved:route_wide" &&
+      !row.authorizes_study &&
+      !row.authorizes_cross_product
+    )).toHaveLength(2);
+    expect(grainRows.filter((row) =>
+      positiveIds.has(row.treatment_record_id) &&
+      row.verdict === "resolved" &&
+      row.service_scope?.kind === "trip_subset" &&
+      row.service_scope.periods.length === 1 &&
+      row.service_scope.periods[0] === "weekday" &&
+      !row.authorizes_study &&
+      !row.authorizes_cross_product
+    )).toHaveLength(2);
+  });
+
+  it("fails closed on owner acceptance outside the exact persistence scope", () => {
+    const draft = JSON.parse(
+      readFileSync(draftPath, "utf8"),
+    ) as Plan040Package10dDraft;
+    const gate = JSON.parse(readFileSync(gatePath, "utf8")) as ReturnType<
+      typeof buildPlan040Package10dGateAndAcceptance
+    >["gate"];
+    const acceptance = JSON.parse(
+      readFileSync(acceptancePath, "utf8"),
+    ) as ReturnType<
+      typeof buildPlan040Package10dGateAndAcceptance
+    >["acceptance"];
+    const drift = structuredClone(acceptance);
+    drift.authorizes_occurrence = true as never;
+    expect(() => buildPlan040Package10dAcceptedArtifacts({
+      draft,
+      gate,
+      acceptance: drift,
+    })).toThrow("gate or standing owner acceptance drifted");
   });
 });
