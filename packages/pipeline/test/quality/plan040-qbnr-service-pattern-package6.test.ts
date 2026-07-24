@@ -4,7 +4,12 @@ import { existsSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import type { JsonValue } from "../../../db/src/types";
 import {
+  buildPlan040Package6GateAndAcceptance,
   buildPlan040Package6Draft,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_ACCEPTANCE_SHA256,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_AMENDED_REVIEWED_COMMIT,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_GATE_SHA256,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_INITIAL_REVIEWED_COMMIT,
   PLAN040_PACKAGE_6_AUDITED_CURRENT_OUTCOMES,
   PLAN040_PACKAGE_6_CANDIDATES,
   PLAN040_PACKAGE_6_CANDIDATE_KEY_SHA256,
@@ -15,6 +20,7 @@ import {
   plan040Package6ReplayHash,
   type Plan040Package6CandidateEvidence,
   type Plan040Package6Draft,
+  validatePlan040Package6GateAndAcceptance,
 } from "../../src/quality/plan040-qbnr-service-pattern-package6";
 import { extentDecisionKey } from "../../src/quality/study-readiness-v1";
 
@@ -27,6 +33,12 @@ const evidencePath =
 const draftPath =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
   "plan-040-qbnr-service-pattern-package-6-evidence-draft-v1.json";
+const gatePath =
+  `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
+  "plan-040-qbnr-service-pattern-package-6-dual-review-gate-v1.json";
+const acceptancePath =
+  `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
+  "plan-040-qbnr-service-pattern-package-6-owner-acceptance-v1.json";
 const package2Path =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
   "plan-040-qbnr-stop-removal-package-2-decision-draft-v1.json";
@@ -596,18 +608,10 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
     expect(acquisition.authorizes_cross_product).toBe(false);
     expect(acquisition.authorizes_decision_persistence).toBe(false);
 
-    for (
-      const suffix of [
-        "dual-review-gate-v1.json",
-        "owner-acceptance-v1.json",
-        "accepted-decisions-v1.json",
-      ]
-    ) {
-      expect(existsSync(
-        `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
-          `plan-040-qbnr-service-pattern-package-6-${suffix}`,
-      )).toBe(false);
-    }
+    expect(existsSync(
+      `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
+        "plan-040-qbnr-service-pattern-package-6-accepted-decisions-v1.json",
+    )).toBe(false);
   });
 
   it("records that review alone cannot authorize a positive outcome", () => {
@@ -651,6 +655,166 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
     expect(serialized).not.toContain(
       "candidate_may_support_positive_after_review",
     );
+  });
+
+  it("validates amended dual approval and exact receipt-only acceptance", () => {
+    type GateAndAcceptance =
+      ReturnType<typeof buildPlan040Package6GateAndAcceptance>;
+    const draft = readJson<Plan040Package6Draft>(draftPath);
+    const gateBytes = readFileSync(gatePath);
+    const acceptanceBytes = readFileSync(acceptancePath);
+    expect(sha256(gateBytes)).toBe(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_GATE_SHA256,
+    );
+    expect(sha256(acceptanceBytes)).toBe(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_ACCEPTANCE_SHA256,
+    );
+    const gate = JSON.parse(
+      gateBytes.toString("utf8"),
+    ) as GateAndAcceptance["gate"];
+    const acceptance = JSON.parse(
+      acceptanceBytes.toString("utf8"),
+    ) as GateAndAcceptance["acceptance"];
+    expect(validatePlan040Package6GateAndAcceptance({
+      draft,
+      gate,
+      acceptance,
+      acceptedAt: acceptance.accepted_at,
+    })).toEqual({
+      candidate_count: 29,
+      positive_candidate_count: 0,
+      reviewed_terminal_unresolved_candidate_count: 29,
+      authorized_extent_decision_count: 0,
+      authorized_grain_decision_count: 0,
+      authorized_absence_candidate_count: 29,
+      persisted_decision_count: 0,
+      persisted_absence_receipt_count: 0,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(gate.reviewed_commit).toBe(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_AMENDED_REVIEWED_COMMIT,
+    );
+    expect(gate.preserved_review_history).toEqual({
+      initial_refuted_commit:
+        PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_INITIAL_REVIEWED_COMMIT,
+      amended_approved_commit:
+        PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_AMENDED_REVIEWED_COMMIT,
+    });
+    expect(gate.artifacts).toEqual({
+      acquisition: {
+        path:
+          "data/quality/acquisition/receipts/" +
+          "plan-040-qbnr-service-pattern-package-6-acquisition-v1.json",
+        sha256:
+          "fe597387e7a9d1a4072316be8f706bca6b3ce785983b5aabc104bdc23c4ec84a",
+      },
+      evidence: {
+        path:
+          "data/quality/operational-reference/member-extent-risk/" +
+          "plan-040-qbnr-service-pattern-package-6-evidence-v1.json",
+        sha256:
+          "4315d767821963f43bbef7416b893c74995601a79be6d5b5070e9db6e521f2a9",
+      },
+      draft: {
+        path:
+          "data/quality/operational-reference/member-extent-risk/" +
+          "plan-040-qbnr-service-pattern-package-6-evidence-draft-v1.json",
+        sha256:
+          "4ddd5302bef65687106d7ac16cfb2199ed05341526ce1d3707e9afd66a00b85c",
+        replay_sha256:
+          "4ddd5302bef65687106d7ac16cfb2199ed05341526ce1d3707e9afd66a00b85c",
+      },
+    });
+    expect(gate.reviewer_results).toEqual([
+      {
+        role: "independent_main_advisor_amended_package_review",
+        reviewer_id: "main_advisor",
+        reviewed_commit:
+          PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_AMENDED_REVIEWED_COMMIT,
+        verdict: "APPROVE",
+      },
+      {
+        role: "independent_package_6_evidence_and_fail_closed_audit",
+        reviewer_id: "plan040_package6_independent_audit",
+        verdict: "APPROVE",
+        review_history: [
+          {
+            reviewed_commit:
+              PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_INITIAL_REVIEWED_COMMIT,
+            verdict: "REFUTE",
+            finding:
+              "review alone could not cure missing exact e1c52 post full-stop bytes and reviewed stop-ID equivalence",
+          },
+          {
+            reviewed_commit:
+              PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_6_AMENDED_REVIEWED_COMMIT,
+            verdict: "APPROVE",
+            finding:
+              "amendment correctly records 0 positive and 29 terminal current-evidence outcomes with new-evidence prerequisites",
+          },
+        ],
+      },
+    ]);
+    expect(gate.audited_current_outcomes).toEqual(
+      PLAN040_PACKAGE_6_AUDITED_CURRENT_OUTCOMES,
+    );
+    expect(gate.checkpoint_tests.full_repository).toEqual({
+      status:
+        "scheduled_after_receipt_persistence_53_candidate_checkpoint",
+      timeout_seconds: 900,
+      pinned_baseline: {
+        classification: "known_missing_corpus_environment_family",
+        pass: 1665,
+        skip: 1,
+        fail: 9,
+        error: 1,
+      },
+    });
+    expect(acceptance.authorized_positive_persistence).toEqual({
+      candidate_count: 0,
+      candidate_keys: [],
+      extent_decision_ids: [],
+      grain_decision_ids: [],
+    });
+    expect(acceptance.authorized_reviewed_absence_receipt).toMatchObject({
+      receipt_id:
+        "plan-040-qbnr-service-pattern-package-6-reviewed-absence-v1",
+      candidate_count: 29,
+      candidate_key_sha256:
+        PLAN040_PACKAGE_6_CANDIDATE_KEY_SHA256,
+      surfaces: ["member_extent", "member_grain"],
+      verdict_by_surface: {
+        member_extent: "reviewed_terminal_unresolved",
+        member_grain: "reviewed_terminal_unresolved",
+      },
+    });
+    expect(
+      acceptance.authorized_reviewed_absence_receipt.candidate_keys,
+    ).toEqual(draft.candidates.map((candidate) =>
+      candidate.candidate_key).sort());
+    expect(acceptance).toMatchObject({
+      authorization_state:
+        "owner_delegate_accepted_exact_29_key_reviewed_absence_only",
+      persisted_extent_decision_count: 0,
+      persisted_grain_decision_count: 0,
+      persisted_absence_receipt_count: 0,
+      authorizes_decision_persistence: false,
+      authorizes_reviewed_absence_receipt_persistence: true,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(() => validatePlan040Package6GateAndAcceptance({
+      draft,
+      gate,
+      acceptance: {
+        ...acceptance,
+        authorizes_decision_persistence: true,
+      },
+      acceptedAt: acceptance.accepted_at,
+    })).toThrow("owner/delegate acceptance drifted");
   });
 
   it("replays deterministically and fails closed on scope or authority drift", () => {
