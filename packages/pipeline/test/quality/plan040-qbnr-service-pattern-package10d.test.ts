@@ -598,9 +598,15 @@ describe("Plan 040 QBNR Package 10D weekday lineage evidence freeze", () => {
     expect(evidence.authorizes_decision_persistence).toBeFalse();
     expect(existsSync(
       `${riskRoot}/plan-040-qbnr-service-pattern-package-10d-dual-review-gate-v1.json`,
-    )).toBeFalse();
+    )).toBeTrue();
     expect(existsSync(
       `${riskRoot}/plan-040-qbnr-service-pattern-package-10d-owner-acceptance-v1.json`,
+    )).toBeTrue();
+    expect(existsSync(
+      `${repoRoot}/data/quality/operational-reference/member-extent-ledger-decisions/plan-040-qbnr-service-pattern-package-10d-v1.json`,
+    )).toBeFalse();
+    expect(existsSync(
+      `${repoRoot}/data/quality/operational-reference/member-grain-decisions/plan-040-qbnr-service-pattern-package-10d-v1.json`,
     )).toBeFalse();
   });
 });
