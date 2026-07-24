@@ -24,9 +24,9 @@ const evidencePath =
 const draftPath =
   `${riskRoot}/plan-040-qbnr-service-pattern-package-9-evidence-draft-v1.json`;
 const EVIDENCE_SHA256 =
-  "6869e20c3229d6acf1ddb5269c59a26e5d85800efa24ca227ab953df4cb46e86";
+  "376a3e9f184a24530d344eea0f53842fabce2e83ab2eb12b21bc59fd7ee10a7c";
 const DRAFT_SHA256 =
-  "db10ffe52f43f466774764fbd65339f669a61770cde0372e08807db8d5c06a67";
+  "a35e7baa10736e65ee432394313dde58a790c2184015920df613d573e8628481";
 
 type Package9Evidence = {
   candidate_count: number;
@@ -40,7 +40,30 @@ type Package9Evidence = {
   immutable_inputs: {
     main_schedule_source: { source_id: string; path: string; sha256: string };
     accepted_launch_feeds: Array<Record<string, JsonValue>>;
+    prior_reviewed_state: {
+      reviewed_packets: {
+        path: string;
+        artifact_sha256: string;
+        qm68_packet_row_sha256: string;
+      };
+      qm68_accepted_occurrence_decision: {
+        path: string;
+        sha256: string;
+        decision_id: string;
+      };
+      occurrence_identity_registry: {
+        path: string;
+        artifact_sha256: string;
+        qm68_row_sha256: string;
+      };
+    };
   };
+  prior_state_distribution: Plan040Package9Draft[
+    "prior_state_distribution"
+  ];
+  package_9_persistence_delta: Plan040Package9Draft[
+    "package_9_persistence_delta"
+  ];
   candidates: Plan040Package9CandidateEvidence[];
   exclusion_checks: Record<string, {
     prior_candidate_count: number;
@@ -374,6 +397,160 @@ describe("Plan 040 QBNR Package 9 accelerated lineage-risk freeze", () => {
     }
   });
 
+  it("preserves the prior QM68 reviewed unresolved state with exact provenance", () => {
+    const evidence = readJson<Package9Evidence>(evidencePath);
+    const draft = readJson<Plan040Package9Draft>(draftPath);
+    expect(evidence.prior_state_distribution).toEqual({
+      pristine_unreviewed: 21,
+      reviewed_unresolved_carried_forward: 1,
+    });
+    expect(draft.prior_state_distribution).toEqual(
+      evidence.prior_state_distribution,
+    );
+    expect(evidence.package_9_persistence_delta).toEqual({
+      new_extent_decision_count: 0,
+      new_grain_decision_count: 0,
+      new_receipt_count: 0,
+      prior_state_mutation_count: 0,
+    });
+    expect(draft.package_9_persistence_delta).toEqual(
+      evidence.package_9_persistence_delta,
+    );
+    expect(evidence.immutable_inputs.prior_reviewed_state).toEqual({
+      reviewed_packets: {
+        path:
+          "data/quality/study-readiness/v1/research/" +
+          "reviewed-candidate-packets.jsonl",
+        artifact_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets
+            .artifact,
+        qm68_packet_row_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets
+            .qm68_packet_row,
+      },
+      qm68_accepted_occurrence_decision: {
+        path:
+          "data/operational-occurrence-review/accepted/decisions/" +
+          "qm68-route-redesign-2025-06-30.json",
+        sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+            .qm68_accepted_occurrence_decision,
+        decision_id: "qm68-route-redesign-2025-06-30",
+      },
+      occurrence_identity_registry: {
+        path: "data/operational-occurrence-identities/registry.jsonl",
+        artifact_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+            .occurrence_identity_registry.artifact,
+        qm68_row_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+            .occurrence_identity_registry.qm68_row,
+      },
+    });
+    const qm68Evidence = evidence.candidates.find((candidate) =>
+      candidate.treatment_record_id ===
+        "treatment_qm68-avenue-service-discontinuation-2025")!;
+    const qm68Draft = draft.candidates.find((candidate) =>
+      candidate.treatment_record_id ===
+        "treatment_qm68-avenue-service-discontinuation-2025")!;
+    expect(qm68Draft.ledger_snapshot).toEqual(
+      qm68Evidence.ledger_snapshot,
+    );
+    const snapshot = qm68Evidence.ledger_snapshot;
+    expect(snapshot.prior_state_classification).toBe(
+      "reviewed_unresolved_carried_forward",
+    );
+    expect(snapshot.extent_row).toEqual(expect.objectContaining({
+      contract_id: "member-extent-ledger-v1",
+      ledger_id: "member-extent-ledger:fddb808a44ba10da9dd9a27a",
+      packet_id: "study-readiness-review:bd7b80033f83d01f5c1cb0ec",
+      verdict: "unreviewed",
+      current_extent_kind: "unresolved",
+      missing_roles: ["bounded_scope_identity"],
+      receipt_ids: [],
+      updated_at: null,
+    }));
+    expect(snapshot.grain_row).toEqual(expect.objectContaining({
+      contract_id: "member-grain-ledger-v1",
+      ledger_id: "member-grain-ledger:fddb808a44ba10da9dd9a27a",
+      packet_id: "study-readiness-review:bd7b80033f83d01f5c1cb0ec",
+      member_extent_decision_id:
+        "member-extent-review:ea591b10e8be9bcccca6f111",
+      verdict: "unreviewed",
+      spatial_verdict: "unreviewed",
+      current_extent_kind: "unresolved",
+      service_scope: null,
+      receipt_ids: [],
+      updated_at: null,
+    }));
+    expect(snapshot.prior_review_provenance?.packet).toEqual(
+      expect.objectContaining({
+        packet_id:
+          "study-readiness-review:bd7b80033f83d01f5c1cb0ec",
+        artifact_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets
+            .artifact,
+        row_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets
+            .qm68_packet_row,
+        member_extent_decision_id:
+          "member-extent-review:ea591b10e8be9bcccca6f111",
+        member_extent: "unresolved",
+      }),
+    );
+    expect(snapshot.prior_review_provenance
+      ?.accepted_occurrence_decision).toEqual(expect.objectContaining({
+        decision_id: "qm68-route-redesign-2025-06-30",
+        review_state: "approved",
+      }));
+    expect(snapshot.prior_review_provenance?.occurrence_registry).toEqual(
+      expect.objectContaining({
+        decision_id: "qm68-route-redesign-2025-06-30",
+        tombstoned: false,
+      }),
+    );
+    expect(snapshot.decision_versioning).toEqual({
+      package_9_assessment_version:
+        "plan-040-qbnr-service-pattern-package-9-evidence-v2",
+      prior_member_extent_decision_id:
+        "member-extent-review:ea591b10e8be9bcccca6f111",
+      prior_decision_state: "reviewed_unresolved_preserved",
+      relationship:
+        "supplements_prior_unresolved_without_supersession",
+      prior_decision_retained: true,
+      supersedes_prior_decision_id: null,
+    });
+    expect(snapshot.package_9_persistence_delta).toEqual({
+      new_extent_decision_id: null,
+      new_grain_decision_id: null,
+      new_receipt_ids: [],
+      new_updated_at: null,
+      prior_state_mutated: false,
+    });
+    expect(qm68Evidence.persisted_extent_decision).toBeNull();
+    expect(qm68Evidence.persisted_grain_decision).toBeNull();
+    expect(qm68Evidence.unresolved_gap_codes).toContain(
+      "prior_reviewed_unresolved_extent_preserved_without_supersession",
+    );
+
+    const otherRows = evidence.candidates.filter((candidate) =>
+      candidate.treatment_record_id !==
+        "treatment_qm68-avenue-service-discontinuation-2025");
+    expect(otherRows).toHaveLength(21);
+    for (const candidate of otherRows) {
+      expect(candidate.ledger_snapshot.prior_state_classification).toBe(
+        "pristine_unreviewed",
+      );
+      expect(candidate.ledger_snapshot.extent_row.packet_id).toBeNull();
+      expect(candidate.ledger_snapshot.grain_row.packet_id).toBeNull();
+      expect(candidate.ledger_snapshot.grain_row
+        .member_extent_decision_id).toBeNull();
+      expect(candidate.ledger_snapshot.prior_review_provenance).toBeNull();
+      expect(candidate.ledger_snapshot.decision_versioning.relationship)
+        .toBe("new_assessment_no_prior_decision");
+    }
+  });
+
   it("remains draft-only, nonauthorizing, and disjoint from prior packages", () => {
     const evidence = readJson<Package9Evidence>(evidencePath);
     const draft = readJson<Plan040Package9Draft>(draftPath);
@@ -455,5 +632,37 @@ describe("Plan 040 QBNR Package 9 accelerated lineage-risk freeze", () => {
       buildPlan040Package9Draft(
         buildInput(evidence, unauthorized),
       )).toThrow("evidence or authority scope drifted");
+
+    const lostPriorDecision = clone(evidence.candidates);
+    const qm68LostDecision = lostPriorDecision.find((candidate) =>
+      candidate.treatment_record_id ===
+        "treatment_qm68-avenue-service-discontinuation-2025")!;
+    qm68LostDecision.ledger_snapshot.grain_row
+      .member_extent_decision_id = null;
+    expect(() =>
+      buildPlan040Package9Draft(
+        buildInput(evidence, lostPriorDecision),
+      )).toThrow("reviewed prior-state provenance or versioning drifted");
+
+    const alteredPacketHash = clone(evidence.candidates);
+    const qm68AlteredPacket = alteredPacketHash.find((candidate) =>
+      candidate.treatment_record_id ===
+        "treatment_qm68-avenue-service-discontinuation-2025")!;
+    qm68AlteredPacket.ledger_snapshot.prior_review_provenance!
+      .packet.row_sha256 = "0".repeat(64) as
+        typeof PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+          .prior_reviewed_packets.qm68_packet_row;
+    expect(() =>
+      buildPlan040Package9Draft(
+        buildInput(evidence, alteredPacketHash),
+      )).toThrow("prior reviewed-state reconciliation drifted");
+
+    const fakeNewPersistence = clone(evidence.candidates);
+    fakeNewPersistence[0]!.ledger_snapshot.package_9_persistence_delta
+      .new_extent_decision_id = "invented" as null;
+    expect(() =>
+      buildPlan040Package9Draft(
+        buildInput(evidence, fakeNewPersistence),
+      )).toThrow("prior ledger or Package 9 persistence delta drifted");
   });
 });

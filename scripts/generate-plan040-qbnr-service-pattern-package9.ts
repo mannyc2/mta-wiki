@@ -25,6 +25,7 @@ import {
   plan040Package9ReplayHash,
   type Plan040Package9CandidateEvidence,
   type Plan040Package9FeedFamily,
+  type Plan040Package9LedgerSnapshot,
   type Plan040Package9RouteId,
   type Plan040Package9ServiceSpanSlice,
 } from "../packages/pipeline/src/quality/plan040-qbnr-service-pattern-package9";
@@ -82,6 +83,14 @@ const EXTENT_LEDGER_PATH =
   "data/quality/operational-reference/member-extent-ledger.jsonl";
 const GRAIN_LEDGER_PATH =
   "data/quality/operational-reference/member-grain-ledger.jsonl";
+const REVIEWED_PACKETS_PATH =
+  "data/quality/study-readiness/v1/research/" +
+  "reviewed-candidate-packets.jsonl";
+const QM68_ACCEPTED_OCCURRENCE_DECISION_PATH =
+  "data/operational-occurrence-review/accepted/decisions/" +
+  "qm68-route-redesign-2025-06-30.json";
+const OCCURRENCE_IDENTITY_REGISTRY_PATH =
+  "data/operational-occurrence-identities/registry.jsonl";
 const SERVICE_HTML_PATH =
   "raw/sources/mta_queens_bus_network_redesign_service_changes/source.html";
 const TREATMENT_COMPONENTS_PATH =
@@ -104,6 +113,9 @@ const DRAFT_PATH =
 const check = process.argv.includes("--check");
 
 type LedgerRow = {
+  contract_id: "member-extent-ledger-v1" | "member-grain-ledger-v1";
+  ledger_id: string;
+  packet_id: string | null;
   occurrence_id: string;
   route_record_id: string;
   treatment_record_id: string;
@@ -112,9 +124,14 @@ type LedgerRow = {
   current_extent_kind: string;
   verdict: string;
   spatial_verdict?: string;
+  verdict_basis: string | null;
+  missing_roles?: string[];
+  dossier_refs: JsonValue[];
   receipt_ids: string[];
   member_extent_decision_id?: string | null;
-  decision_id?: string | null;
+  service_scope?: JsonValue | null;
+  lineage_segments?: JsonValue[];
+  evidence_bindings?: JsonValue[];
   updated_at: string | null;
   authorizes_study: boolean;
   authorizes_cross_product: boolean;
@@ -164,6 +181,36 @@ type Package8Evidence = {
     accepted_launch_feed_identities: Array<Record<string, JsonValue>>;
   };
   version_separation: Plan040Package8VersionSeparation;
+};
+
+type ReviewedPacket = {
+  packet_id: string;
+  occurrence_id: string;
+  route_id: string;
+  review_disposition: string;
+  creates_new_occurrence: boolean;
+  member_extents: Array<{
+    decision_id: string;
+    occurrence_review_decision_id: string;
+    occurrence_id: string;
+    route_record_id: string;
+    gtfs_route_id: string;
+    treatment_record_id: string;
+    extent: string;
+    missing_roles: string[];
+  }>;
+};
+
+type AcceptedOccurrenceDecision = {
+  decision_id: string;
+  review_state: string;
+  occurrence_id: string;
+};
+
+type OccurrenceRegistryRow = {
+  decision_id: string;
+  occurrence_id: string;
+  tombstoned: boolean;
 };
 
 const sha256 = (value: Uint8Array | string): string =>
@@ -261,6 +308,23 @@ for (const [path, expected, label] of [
     "Q61 reviewed lineage dossier",
   ],
   [
+    REVIEWED_PACKETS_PATH,
+    PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets.artifact,
+    "prior reviewed candidate packets",
+  ],
+  [
+    QM68_ACCEPTED_OCCURRENCE_DECISION_PATH,
+    PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+      .qm68_accepted_occurrence_decision,
+    "QM68 accepted occurrence decision",
+  ],
+  [
+    OCCURRENCE_IDENTITY_REGISTRY_PATH,
+    PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+      .occurrence_identity_registry.artifact,
+    "occurrence identity registry",
+  ],
+  [
     EXTENT_LEDGER_PATH,
     PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.extent_ledger,
     "post-P8 extent ledger",
@@ -294,6 +358,35 @@ for (
 }
 const extentLedger = parseJsonl<LedgerRow>(EXTENT_LEDGER_PATH);
 const grainLedger = parseJsonl<LedgerRow>(GRAIN_LEDGER_PATH);
+const reviewedPackets = parseJsonl<ReviewedPacket>(REVIEWED_PACKETS_PATH);
+const reviewedPacketById = new Map(reviewedPackets.map((packet) => [
+  packet.packet_id,
+  packet,
+]));
+const qm68AcceptedOccurrenceDecision = JSON.parse(
+  read(QM68_ACCEPTED_OCCURRENCE_DECISION_PATH),
+) as AcceptedOccurrenceDecision;
+const occurrenceRegistry = parseJsonl<OccurrenceRegistryRow>(
+  OCCURRENCE_IDENTITY_REGISTRY_PATH,
+);
+const qm68ReviewedPacket = reviewedPacketById.get(
+  "study-readiness-review:bd7b80033f83d01f5c1cb0ec",
+);
+const qm68RegistryRow = occurrenceRegistry.find((row) =>
+  row.decision_id === "qm68-route-redesign-2025-06-30" &&
+  row.occurrence_id === "occurrence:bca0b565b6971c90a6af9e55");
+if (
+  !qm68ReviewedPacket ||
+  sha256(stableBytes(qm68ReviewedPacket)) !==
+    PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets
+      .qm68_packet_row ||
+  !qm68RegistryRow ||
+  sha256(stableBytes(qm68RegistryRow)) !==
+    PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.occurrence_identity_registry
+      .qm68_row
+) {
+  throw new Error("Package 9 exact QM68 prior-review row pin drifted");
+}
 const treatments = new Map(
   parseJsonl<TreatmentRecord>(TREATMENT_COMPONENTS_PATH)
     .map((record) => [record.record_id, record]),
@@ -508,7 +601,7 @@ function ledgerSnapshot(
   occurrenceId: string,
   routeRecordId: string,
   treatmentId: string,
-) {
+): Plan040Package9LedgerSnapshot {
   const extent = extentLedger.find((row) =>
     row.occurrence_id === occurrenceId &&
     row.route_record_id === routeRecordId &&
@@ -520,9 +613,13 @@ function ledgerSnapshot(
   if (
     !extent ||
     !grain ||
+    extent.contract_id !== "member-extent-ledger-v1" ||
+    grain.contract_id !== "member-grain-ledger-v1" ||
     extent.verdict !== "unreviewed" ||
     grain.verdict !== "unreviewed" ||
     grain.spatial_verdict !== "unreviewed" ||
+    extent.verdict_basis !== null ||
+    grain.verdict_basis !== null ||
     extent.current_extent_kind !== "unresolved" ||
     grain.current_extent_kind !== "unresolved" ||
     extent.receipt_ids.length !== 0 ||
@@ -534,19 +631,169 @@ function ledgerSnapshot(
     grain.authorizes_study ||
     grain.authorizes_cross_product
   ) {
-    throw new Error(`${treatmentId}: Package 9 ledger input is not pristine`);
+    throw new Error(`${treatmentId}: Package 9 ledger input is unsupported`);
   }
+  const hasPriorReviewedState =
+    extent.packet_id !== null ||
+    grain.packet_id !== null ||
+    grain.member_extent_decision_id != null;
+  if (!hasPriorReviewedState) {
+    if (
+      extent.packet_id !== null ||
+      grain.packet_id !== null ||
+      grain.member_extent_decision_id != null ||
+      !sameJson(extent.missing_roles, ["reviewed_extent_decision"]) ||
+      extent.dossier_refs.length !== 0 ||
+      grain.service_scope != null ||
+      (grain.lineage_segments?.length ?? 0) !== 0 ||
+      (grain.evidence_bindings?.length ?? 0) !== 0 ||
+      grain.dossier_refs.length !== 0
+    ) {
+      throw new Error(
+        `${treatmentId}: Package 9 pristine ledger shape drifted`,
+      );
+    }
+  }
+  const packet = hasPriorReviewedState && extent.packet_id
+    ? reviewedPacketById.get(extent.packet_id)
+    : null;
+  const member = packet?.member_extents.find((row) =>
+    row.occurrence_id === occurrenceId &&
+    row.route_record_id === routeRecordId &&
+    row.treatment_record_id === treatmentId);
+  if (
+    hasPriorReviewedState &&
+    (!packet ||
+      extent.packet_id !== grain.packet_id ||
+      !grain.member_extent_decision_id ||
+      !member ||
+      member.decision_id !== grain.member_extent_decision_id ||
+      member.extent !== "unresolved" ||
+      !sameJson(member.missing_roles, extent.missing_roles) ||
+      packet.creates_new_occurrence ||
+      qm68AcceptedOccurrenceDecision.decision_id !==
+        member.occurrence_review_decision_id ||
+      qm68AcceptedOccurrenceDecision.review_state !== "approved" ||
+      qm68AcceptedOccurrenceDecision.occurrence_id !== occurrenceId ||
+      !qm68RegistryRow ||
+      qm68RegistryRow.decision_id !== member.occurrence_review_decision_id ||
+      qm68RegistryRow.occurrence_id !== occurrenceId ||
+      qm68RegistryRow.tombstoned)
+  ) {
+    throw new Error(
+      `${treatmentId}: non-pristine prior state lacks exact pinned reviewed provenance`,
+    );
+  }
+  const priorReviewProvenance = hasPriorReviewedState
+    ? {
+      packet: {
+        path: REVIEWED_PACKETS_PATH as
+          "data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl",
+        artifact_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets
+            .artifact,
+        row_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets
+            .qm68_packet_row,
+        packet_id: packet!.packet_id as
+          "study-readiness-review:bd7b80033f83d01f5c1cb0ec",
+        review_disposition: packet!.review_disposition as
+          "receipt_backed_negative_missing_member_extent",
+        member_extent_decision_id: member!.decision_id as
+          "member-extent-review:ea591b10e8be9bcccca6f111",
+        member_extent: member!.extent as "unresolved",
+        member_missing_roles: member!.missing_roles as
+          ["bounded_scope_identity"],
+      },
+      accepted_occurrence_decision: {
+        path: QM68_ACCEPTED_OCCURRENCE_DECISION_PATH as
+          "data/operational-occurrence-review/accepted/decisions/qm68-route-redesign-2025-06-30.json",
+        sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+            .qm68_accepted_occurrence_decision,
+        decision_id: qm68AcceptedOccurrenceDecision.decision_id as
+          "qm68-route-redesign-2025-06-30",
+        review_state: qm68AcceptedOccurrenceDecision.review_state as
+          "approved",
+        occurrence_id: qm68AcceptedOccurrenceDecision.occurrence_id as
+          "occurrence:bca0b565b6971c90a6af9e55",
+      },
+      occurrence_registry: {
+        path: OCCURRENCE_IDENTITY_REGISTRY_PATH as
+          "data/operational-occurrence-identities/registry.jsonl",
+        artifact_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+            .occurrence_identity_registry.artifact,
+        row_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+            .occurrence_identity_registry.qm68_row,
+        decision_id: qm68RegistryRow!.decision_id as
+          "qm68-route-redesign-2025-06-30",
+        occurrence_id: qm68RegistryRow!.occurrence_id as
+          "occurrence:bca0b565b6971c90a6af9e55",
+        tombstoned: false as const,
+      },
+    }
+    : null;
   return {
-    extent_verdict: "unreviewed" as const,
-    grain_verdict: "unreviewed" as const,
-    grain_spatial_verdict: "unreviewed" as const,
-    current_extent_kind: "unresolved" as const,
-    extent_receipt_ids: [] as [],
-    grain_receipt_ids: [] as [],
-    extent_decision_id: null,
-    grain_decision_id: null,
-    extent_updated_at: null,
-    grain_updated_at: null,
+    prior_state_classification: hasPriorReviewedState
+      ? "reviewed_unresolved_carried_forward"
+      : "pristine_unreviewed",
+    extent_row: {
+      contract_id: "member-extent-ledger-v1",
+      ledger_id: extent.ledger_id,
+      packet_id: extent.packet_id,
+      verdict: "unreviewed",
+      verdict_basis: null,
+      current_extent_kind: "unresolved",
+      missing_roles: extent.missing_roles ?? [],
+      dossier_refs: extent.dossier_refs,
+      receipt_ids: extent.receipt_ids,
+      updated_at: null,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    },
+    grain_row: {
+      contract_id: "member-grain-ledger-v1",
+      ledger_id: grain.ledger_id,
+      packet_id: grain.packet_id,
+      verdict: "unreviewed",
+      spatial_verdict: "unreviewed",
+      verdict_basis: null,
+      current_extent_kind: "unresolved",
+      member_extent_decision_id:
+        grain.member_extent_decision_id ?? null,
+      service_scope: grain.service_scope ?? null,
+      lineage_segments: grain.lineage_segments ?? [],
+      evidence_bindings: grain.evidence_bindings ?? [],
+      dossier_refs: grain.dossier_refs,
+      receipt_ids: grain.receipt_ids,
+      updated_at: null,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    },
+    prior_review_provenance: priorReviewProvenance,
+    decision_versioning: {
+      package_9_assessment_version:
+        "plan-040-qbnr-service-pattern-package-9-evidence-v2",
+      prior_member_extent_decision_id:
+        grain.member_extent_decision_id ?? null,
+      prior_decision_state: hasPriorReviewedState
+        ? "reviewed_unresolved_preserved"
+        : "none",
+      relationship: hasPriorReviewedState
+        ? "supplements_prior_unresolved_without_supersession"
+        : "new_assessment_no_prior_decision",
+      prior_decision_retained: hasPriorReviewedState,
+      supersedes_prior_decision_id: null,
+    },
+    package_9_persistence_delta: {
+      new_extent_decision_id: null,
+      new_grain_decision_id: null,
+      new_receipt_ids: [],
+      new_updated_at: null,
+      prior_state_mutated: false,
+    },
   };
 }
 
@@ -636,6 +883,7 @@ const GAP_CODES: Record<
   "treatment_qm68-avenue-service-discontinuation-2025": [
     "reviewed_x68_qm68_lineage_does_not_bind_avenue_segment_extent",
     "avenue_segment_identity_not_candidate_bound",
+    "prior_reviewed_unresolved_extent_preserved_without_supersession",
   ],
 };
 
@@ -1225,6 +1473,33 @@ const evidenceManifest = {
       sha256: PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.q61_lineage,
       owner_warning: PLAN040_PACKAGE_9_Q61_OWNER_WARNING,
     },
+    prior_reviewed_state: {
+      reviewed_packets: {
+        path: REVIEWED_PACKETS_PATH,
+        artifact_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets
+            .artifact,
+        qm68_packet_row_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets
+            .qm68_packet_row,
+      },
+      qm68_accepted_occurrence_decision: {
+        path: QM68_ACCEPTED_OCCURRENCE_DECISION_PATH,
+        sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+            .qm68_accepted_occurrence_decision,
+        decision_id: "qm68-route-redesign-2025-06-30",
+      },
+      occurrence_identity_registry: {
+        path: OCCURRENCE_IDENTITY_REGISTRY_PATH,
+        artifact_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+            .occurrence_identity_registry.artifact,
+        qm68_row_sha256:
+          PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+            .occurrence_identity_registry.qm68_row,
+      },
+    },
     post_package_8_ledgers: {
       extent: {
         path: EXTENT_LEDGER_PATH,
@@ -1257,6 +1532,20 @@ const evidenceManifest = {
   },
   version_separation: p8Evidence.version_separation,
   exclusion_checks: exclusionChecks,
+  prior_state_distribution: {
+    pristine_unreviewed: candidates.filter((candidate) =>
+      candidate.ledger_snapshot.prior_state_classification ===
+        "pristine_unreviewed").length,
+    reviewed_unresolved_carried_forward: candidates.filter((candidate) =>
+      candidate.ledger_snapshot.prior_state_classification ===
+        "reviewed_unresolved_carried_forward").length,
+  },
+  package_9_persistence_delta: {
+    new_extent_decision_count: 0,
+    new_grain_decision_count: 0,
+    new_receipt_count: 0,
+    prior_state_mutation_count: 0,
+  },
   candidates,
   review_protocol: {
     review_waves: ["P9-A", "P9-B"],
@@ -1319,6 +1608,11 @@ console.log(JSON.stringify({
     evidence_complete_positive_draft: 2,
     receipt_terminal_unresolved: 20,
   },
+  prior_state_distribution: {
+    pristine_unreviewed: 21,
+    reviewed_unresolved_carried_forward: 1,
+  },
+  package_9_new_persistence_count: 0,
   authorization_state: draft.authorization_state,
   authorizes_occurrence: false,
   authorizes_study: false,

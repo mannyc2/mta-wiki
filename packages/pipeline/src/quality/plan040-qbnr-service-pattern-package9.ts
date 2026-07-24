@@ -61,6 +61,20 @@ export const PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS = {
   },
   q61_lineage:
     "474022382ec0abe89c632bec3147bbf46c0b0fcd12e940d3ef5f16cc1631622a",
+  prior_reviewed_packets: {
+    artifact:
+      "0ac700c48740fff5eb36b626b8dee72f95212378c0b40bc3dc6265b32c3d5844",
+    qm68_packet_row:
+      "3ec77680285e37ead994046edcfaf454b9bfb57dafa88f00eaa44b5b7eb740f3",
+  },
+  qm68_accepted_occurrence_decision:
+    "0a74eab4a4238abcef4947f6916e49bcaf5d725fded59fa91de47d993b6dae1a",
+  occurrence_identity_registry: {
+    artifact:
+      "f0a63cb5a068857c7c6c5e02b01577431f9b537a12ef3754919e4ffdb2167d80",
+    qm68_row:
+      "b34a9770366f607a97bea7577a0a6604e154327f1938541217c2e3a8b6a5f1d6",
+  },
   extent_ledger:
     "02b88ffa272b12fa7de655089d2c313b70b3e16d2f564d20267cfd2bce1b00a8",
   grain_ledger:
@@ -242,6 +256,102 @@ export type Plan040Package9ServiceSpanSlice = {
     trip_count: number;
     departure_time_sha256: string;
   }>;
+};
+
+export type Plan040Package9PriorStateClassification =
+  | "pristine_unreviewed"
+  | "reviewed_unresolved_carried_forward";
+
+export type Plan040Package9LedgerSnapshot = {
+  prior_state_classification: Plan040Package9PriorStateClassification;
+  extent_row: {
+    contract_id: "member-extent-ledger-v1";
+    ledger_id: string;
+    packet_id: string | null;
+    verdict: "unreviewed";
+    verdict_basis: null;
+    current_extent_kind: "unresolved";
+    missing_roles: string[];
+    dossier_refs: JsonValue[];
+    receipt_ids: string[];
+    updated_at: null;
+    authorizes_study: false;
+    authorizes_cross_product: false;
+  };
+  grain_row: {
+    contract_id: "member-grain-ledger-v1";
+    ledger_id: string;
+    packet_id: string | null;
+    verdict: "unreviewed";
+    spatial_verdict: "unreviewed";
+    verdict_basis: null;
+    current_extent_kind: "unresolved";
+    member_extent_decision_id: string | null;
+    service_scope: JsonValue | null;
+    lineage_segments: JsonValue[];
+    evidence_bindings: JsonValue[];
+    dossier_refs: JsonValue[];
+    receipt_ids: string[];
+    updated_at: null;
+    authorizes_study: false;
+    authorizes_cross_product: false;
+  };
+  prior_review_provenance: {
+    packet: {
+      path:
+        "data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl";
+      artifact_sha256:
+        typeof PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets.artifact;
+      row_sha256:
+        typeof PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets.qm68_packet_row;
+      packet_id: "study-readiness-review:bd7b80033f83d01f5c1cb0ec";
+      review_disposition:
+        "receipt_backed_negative_missing_member_extent";
+      member_extent_decision_id:
+        "member-extent-review:ea591b10e8be9bcccca6f111";
+      member_extent: "unresolved";
+      member_missing_roles: ["bounded_scope_identity"];
+    };
+    accepted_occurrence_decision: {
+      path:
+        "data/operational-occurrence-review/accepted/decisions/qm68-route-redesign-2025-06-30.json";
+      sha256:
+        typeof PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.qm68_accepted_occurrence_decision;
+      decision_id: "qm68-route-redesign-2025-06-30";
+      review_state: "approved";
+      occurrence_id: "occurrence:bca0b565b6971c90a6af9e55";
+    };
+    occurrence_registry: {
+      path: "data/operational-occurrence-identities/registry.jsonl";
+      artifact_sha256:
+        typeof PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.occurrence_identity_registry.artifact;
+      row_sha256:
+        typeof PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.occurrence_identity_registry.qm68_row;
+      decision_id: "qm68-route-redesign-2025-06-30";
+      occurrence_id: "occurrence:bca0b565b6971c90a6af9e55";
+      tombstoned: false;
+    };
+  } | null;
+  decision_versioning: {
+    package_9_assessment_version:
+      "plan-040-qbnr-service-pattern-package-9-evidence-v2";
+    prior_member_extent_decision_id: string | null;
+    prior_decision_state:
+      | "none"
+      | "reviewed_unresolved_preserved";
+    relationship:
+      | "new_assessment_no_prior_decision"
+      | "supplements_prior_unresolved_without_supersession";
+    prior_decision_retained: boolean;
+    supersedes_prior_decision_id: null;
+  };
+  package_9_persistence_delta: {
+    new_extent_decision_id: null;
+    new_grain_decision_id: null;
+    new_receipt_ids: [];
+    new_updated_at: null;
+    prior_state_mutated: false;
+  };
 };
 
 export type Plan040Package9LineageSpec = {
@@ -494,18 +604,7 @@ export type Plan040Package9CandidateEvidence = {
     exact_post_span: Plan040Package9ServiceSpanSlice | null;
   };
   exact_candidate_searches: string[];
-  ledger_snapshot: {
-    extent_verdict: "unreviewed";
-    grain_verdict: "unreviewed";
-    grain_spatial_verdict: "unreviewed";
-    current_extent_kind: "unresolved";
-    extent_receipt_ids: [];
-    grain_receipt_ids: [];
-    extent_decision_id: null;
-    grain_decision_id: null;
-    extent_updated_at: null;
-    grain_updated_at: null;
-  };
+  ledger_snapshot: Plan040Package9LedgerSnapshot;
   unresolved_gap_codes: string[];
   evidence_verdict:
     | "evidence_complete_positive_draft"
@@ -543,6 +642,16 @@ export type Plan040Package9Draft = {
   proposed_grain_decision_count: 2;
   persisted_extent_decision_count: 0;
   persisted_grain_decision_count: 0;
+  prior_state_distribution: {
+    pristine_unreviewed: 21;
+    reviewed_unresolved_carried_forward: 1;
+  };
+  package_9_persistence_delta: {
+    new_extent_decision_count: 0;
+    new_grain_decision_count: 0;
+    new_receipt_count: 0;
+    prior_state_mutation_count: 0;
+  };
   prior_package_overlap: Record<
     | "exemplar"
     | "package_2"
@@ -731,6 +840,118 @@ function validateOrderedStopAndComparisonEvidence(
   }
 }
 
+function validatePriorLedgerState(
+  candidate: Plan040Package9CandidateEvidence,
+): void {
+  const snapshot = candidate.ledger_snapshot;
+  const extent = snapshot.extent_row;
+  const grain = snapshot.grain_row;
+  if (
+    extent.contract_id !== "member-extent-ledger-v1" ||
+    grain.contract_id !== "member-grain-ledger-v1" ||
+    !extent.ledger_id ||
+    extent.ledger_id.replace("member-extent-ledger:", "") !==
+      grain.ledger_id.replace("member-grain-ledger:", "") ||
+    extent.verdict !== "unreviewed" ||
+    grain.verdict !== "unreviewed" ||
+    grain.spatial_verdict !== "unreviewed" ||
+    extent.verdict_basis !== null ||
+    grain.verdict_basis !== null ||
+    extent.current_extent_kind !== "unresolved" ||
+    grain.current_extent_kind !== "unresolved" ||
+    extent.receipt_ids.length !== 0 ||
+    grain.receipt_ids.length !== 0 ||
+    extent.updated_at !== null ||
+    grain.updated_at !== null ||
+    extent.authorizes_study ||
+    extent.authorizes_cross_product ||
+    grain.authorizes_study ||
+    grain.authorizes_cross_product ||
+    snapshot.package_9_persistence_delta.new_extent_decision_id !== null ||
+    snapshot.package_9_persistence_delta.new_grain_decision_id !== null ||
+    snapshot.package_9_persistence_delta.new_receipt_ids.length !== 0 ||
+    snapshot.package_9_persistence_delta.new_updated_at !== null ||
+    snapshot.package_9_persistence_delta.prior_state_mutated ||
+    snapshot.decision_versioning.package_9_assessment_version !==
+      "plan-040-qbnr-service-pattern-package-9-evidence-v2" ||
+    snapshot.decision_versioning.supersedes_prior_decision_id !== null
+  ) {
+    throw new Error(
+      `${candidate.treatment_record_id}: prior ledger or Package 9 persistence delta drifted`,
+    );
+  }
+  const hasPriorReviewedState =
+    extent.packet_id !== null ||
+    grain.packet_id !== null ||
+    grain.member_extent_decision_id !== null;
+  if (!hasPriorReviewedState) {
+    if (
+      snapshot.prior_state_classification !== "pristine_unreviewed" ||
+      extent.packet_id !== null ||
+      grain.packet_id !== null ||
+      grain.member_extent_decision_id !== null ||
+      !sameJson(extent.missing_roles, ["reviewed_extent_decision"]) ||
+      extent.dossier_refs.length !== 0 ||
+      grain.service_scope !== null ||
+      grain.lineage_segments.length !== 0 ||
+      grain.evidence_bindings.length !== 0 ||
+      grain.dossier_refs.length !== 0 ||
+      snapshot.prior_review_provenance !== null ||
+      snapshot.decision_versioning.prior_member_extent_decision_id !==
+        null ||
+      snapshot.decision_versioning.prior_decision_state !== "none" ||
+      snapshot.decision_versioning.relationship !==
+        "new_assessment_no_prior_decision" ||
+      snapshot.decision_versioning.prior_decision_retained
+    ) {
+      throw new Error(
+        `${candidate.treatment_record_id}: pristine prior-state classification drifted`,
+      );
+    }
+    return;
+  }
+  const provenance = snapshot.prior_review_provenance;
+  if (
+    snapshot.prior_state_classification !==
+      "reviewed_unresolved_carried_forward" ||
+    !extent.packet_id ||
+    extent.packet_id !== grain.packet_id ||
+    !grain.member_extent_decision_id ||
+    !sameJson(extent.missing_roles, ["bounded_scope_identity"]) ||
+    extent.dossier_refs.length !== 0 ||
+    grain.service_scope !== null ||
+    grain.lineage_segments.length !== 0 ||
+    grain.evidence_bindings.length !== 0 ||
+    grain.dossier_refs.length !== 0 ||
+    !provenance ||
+    provenance.packet.packet_id !== extent.packet_id ||
+    provenance.packet.member_extent_decision_id !==
+      grain.member_extent_decision_id ||
+    provenance.packet.member_extent !== "unresolved" ||
+    !sameJson(
+      provenance.packet.member_missing_roles,
+      extent.missing_roles,
+    ) ||
+    provenance.accepted_occurrence_decision.occurrence_id !==
+      candidate.occurrence_id ||
+    provenance.occurrence_registry.occurrence_id !==
+      candidate.occurrence_id ||
+    provenance.accepted_occurrence_decision.decision_id !==
+      provenance.occurrence_registry.decision_id ||
+    snapshot.decision_versioning.prior_member_extent_decision_id !==
+      grain.member_extent_decision_id ||
+    snapshot.decision_versioning.prior_decision_state !==
+      "reviewed_unresolved_preserved" ||
+    snapshot.decision_versioning.relationship !==
+      "supplements_prior_unresolved_without_supersession" ||
+    !snapshot.decision_versioning.prior_decision_retained
+  ) {
+    throw new Error(
+      `${candidate.treatment_record_id}: reviewed prior-state provenance or versioning drifted`,
+    );
+  }
+}
+
 export function buildPlan040Package9Draft(input: {
   evidenceManifestPath: string;
   evidenceManifestSha256: string;
@@ -806,6 +1027,7 @@ export function buildPlan040Package9Draft(input: {
     validateScheduleSlice(candidate.schedule_trip_type_validation.pre);
     validateScheduleSlice(candidate.schedule_trip_type_validation.post);
     validateOrderedStopAndComparisonEvidence(candidate);
+    validatePriorLedgerState(candidate);
     if (
       candidate.risk_wave_id !== spec.waveId ||
       candidate.gtfs_route_id !== spec.routeId ||
@@ -868,16 +1090,6 @@ export function buildPlan040Package9Draft(input: {
         .cross_feed_family_equivalence_authorized ||
       candidate.inventory_transition
         .automatic_predecessor_route_id_equivalence_authorized ||
-      candidate.ledger_snapshot.extent_verdict !== "unreviewed" ||
-      candidate.ledger_snapshot.grain_verdict !== "unreviewed" ||
-      candidate.ledger_snapshot.grain_spatial_verdict !== "unreviewed" ||
-      candidate.ledger_snapshot.current_extent_kind !== "unresolved" ||
-      candidate.ledger_snapshot.extent_receipt_ids.length !== 0 ||
-      candidate.ledger_snapshot.grain_receipt_ids.length !== 0 ||
-      candidate.ledger_snapshot.extent_decision_id !== null ||
-      candidate.ledger_snapshot.grain_decision_id !== null ||
-      candidate.ledger_snapshot.extent_updated_at !== null ||
-      candidate.ledger_snapshot.grain_updated_at !== null ||
       candidate.persisted_extent_decision !== null ||
       candidate.persisted_grain_decision !== null ||
       candidate.authorizes_occurrence ||
@@ -1100,6 +1312,56 @@ export function buildPlan040Package9Draft(input: {
     }
   }
 
+  const priorStateCounts = {
+    pristine_unreviewed: candidates.filter((candidate) =>
+      candidate.ledger_snapshot.prior_state_classification ===
+        "pristine_unreviewed").length,
+    reviewed_unresolved_carried_forward: candidates.filter((candidate) =>
+      candidate.ledger_snapshot.prior_state_classification ===
+        "reviewed_unresolved_carried_forward").length,
+  };
+  const reviewedPriorRows = candidates.filter((candidate) =>
+    candidate.ledger_snapshot.prior_state_classification ===
+      "reviewed_unresolved_carried_forward");
+  const qm68Prior = reviewedPriorRows[0];
+  const qm68Provenance =
+    qm68Prior?.ledger_snapshot.prior_review_provenance;
+  if (
+    !sameJson(priorStateCounts, {
+      pristine_unreviewed: 21,
+      reviewed_unresolved_carried_forward: 1,
+    }) ||
+    reviewedPriorRows.length !== 1 ||
+    qm68Prior?.treatment_record_id !==
+      "treatment_qm68-avenue-service-discontinuation-2025" ||
+    qm68Prior.occurrence_id !==
+      "occurrence:bca0b565b6971c90a6af9e55" ||
+    qm68Prior.ledger_snapshot.extent_row.packet_id !==
+      "study-readiness-review:bd7b80033f83d01f5c1cb0ec" ||
+    qm68Prior.ledger_snapshot.grain_row.member_extent_decision_id !==
+      "member-extent-review:ea591b10e8be9bcccca6f111" ||
+    !qm68Provenance ||
+    qm68Provenance.packet.artifact_sha256 !==
+      PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets
+        .artifact ||
+    qm68Provenance.packet.row_sha256 !==
+      PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets
+        .qm68_packet_row ||
+    qm68Provenance.accepted_occurrence_decision.sha256 !==
+      PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+        .qm68_accepted_occurrence_decision ||
+    qm68Provenance.occurrence_registry.artifact_sha256 !==
+      PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+        .occurrence_identity_registry.artifact ||
+    qm68Provenance.occurrence_registry.row_sha256 !==
+      PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS
+        .occurrence_identity_registry.qm68_row
+  ) {
+    throw new Error(
+      "Plan 040 Package 9 prior reviewed-state reconciliation drifted",
+    );
+  }
+
   for (const wave of PLAN040_PACKAGE_9_WAVES) {
     const rows = candidates.filter((candidate) =>
       candidate.risk_wave_id === wave.wave_id);
@@ -1154,6 +1416,16 @@ export function buildPlan040Package9Draft(input: {
     proposed_grain_decision_count: 2,
     persisted_extent_decision_count: 0,
     persisted_grain_decision_count: 0,
+    prior_state_distribution: {
+      pristine_unreviewed: 21,
+      reviewed_unresolved_carried_forward: 1,
+    },
+    package_9_persistence_delta: {
+      new_extent_decision_count: 0,
+      new_grain_decision_count: 0,
+      new_receipt_count: 0,
+      prior_state_mutation_count: 0,
+    },
     prior_package_overlap: priorPackageOverlap,
     candidates,
     version_separation: input.versionSeparation,
