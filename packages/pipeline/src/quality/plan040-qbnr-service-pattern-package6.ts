@@ -49,6 +49,34 @@ export const PLAN040_PACKAGE_6_WAVES = [
 export type Plan040Package6WaveId =
   (typeof PLAN040_PACKAGE_6_WAVES)[number]["wave_id"];
 
+export const PLAN040_PACKAGE_6_AUDITED_CURRENT_OUTCOMES = [
+  {
+    wave_id: "P6-A",
+    positive_count: 0,
+    terminal_absence_count: 11,
+  },
+  {
+    wave_id: "P6-B",
+    positive_count: 0,
+    terminal_absence_count: 7,
+  },
+  {
+    wave_id: "P6-C",
+    positive_count: 0,
+    terminal_absence_count: 3,
+  },
+  {
+    wave_id: "P6-D",
+    positive_count: 0,
+    terminal_absence_count: 3,
+  },
+  {
+    wave_id: "P6-E",
+    positive_count: 0,
+    terminal_absence_count: 5,
+  },
+] as const;
+
 export const PLAN040_PACKAGE_6_CANDIDATES = [
   ["P6-A", "Q101", "treatment_q101-northern-shortening-2025"],
   ["P6-A", "Q101", "treatment_q101-southern-hunters-point-reroute-2025"],
@@ -197,8 +225,11 @@ export type Plan040Package6CandidateEvidence = {
   proposed_grain_decision: null;
   persisted_extent_decision: null;
   persisted_grain_decision: null;
-  candidate_may_support_positive_after_review: true;
-  review_outcome_state: "awaiting_independent_risk_review";
+  current_evidence_positive_eligible: false;
+  positive_eligibility_requires_new_exact_post_full_stop_and_id_equivalence_evidence_plus_review:
+    true;
+  independent_audit_completed: true;
+  review_outcome_state: "audited_current_evidence_terminal_absence";
   authorizes_occurrence: false;
   authorizes_study: false;
   authorizes_cross_product: false;
@@ -215,6 +246,8 @@ export type Plan040Package6Draft = {
   candidate_key_sha256:
     typeof PLAN040_PACKAGE_6_CANDIDATE_KEY_SHA256;
   wave_partition: typeof PLAN040_PACKAGE_6_WAVES;
+  audited_current_outcomes:
+    typeof PLAN040_PACKAGE_6_AUDITED_CURRENT_OUTCOMES;
   evidence_verdict_distribution: { receipt_terminal_unresolved: 29 };
   proposed_decision_count: 0;
   persisted_decision_count: 0;
@@ -247,8 +280,16 @@ export type Plan040Package6Draft = {
     route_name_coordinate_or_proximity_equivalence: false;
     occurrence_inference_from_route_schedule_or_document_presence: false;
   };
+  future_positive_prerequisites: {
+    exact_post_feed_version_sha1:
+      typeof PLAN040_PACKAGE_6_REQUIRED_POST_BUSCO_SHA1;
+    new_exact_post_full_stop_member_bytes_required: true;
+    reviewed_stop_id_equivalence_required: true;
+    independent_review_required_after_new_evidence: true;
+    review_alone_sufficient: false;
+  };
   freeze_readiness:
-    "frozen_evidence_only_ready_for_five_independent_risk_review_waves";
+    "audited_current_evidence_terminal_absence_reaudit_required_after_new_prerequisite_evidence";
   authorization_state:
     "evidence_only_no_gate_no_acceptance_no_persistence";
   authorizes_occurrence: false;
@@ -326,9 +367,18 @@ export function buildPlan040Package6Draft(input: {
       candidate.ledger_snapshot.grain_receipt_ids.length !== 0 ||
       candidate.ledger_snapshot.extent_decision_id !== null ||
       candidate.ledger_snapshot.grain_decision_id !== null ||
-      !candidate.candidate_may_support_positive_after_review ||
+      candidate.current_evidence_positive_eligible !== false ||
+      !candidate
+        .positive_eligibility_requires_new_exact_post_full_stop_and_id_equivalence_evidence_plus_review ||
+      !candidate.independent_audit_completed ||
       candidate.review_outcome_state !==
-        "awaiting_independent_risk_review" ||
+        "audited_current_evidence_terminal_absence" ||
+      !candidate.risk_flags.includes(
+        "current_evidence_not_positive_eligible",
+      ) ||
+      !candidate.unresolved_gap_codes.includes(
+        "positive_eligibility_requires_new_exact_post_full_stop_and_id_equivalence_evidence_plus_review",
+      ) ||
       candidate.required_post_inventory.version_sha1 !==
         PLAN040_PACKAGE_6_REQUIRED_POST_BUSCO_SHA1 ||
       candidate.required_post_inventory.zip_sha256 !== null ||
@@ -388,6 +438,8 @@ export function buildPlan040Package6Draft(input: {
     route_count: 20,
     candidate_key_sha256: PLAN040_PACKAGE_6_CANDIDATE_KEY_SHA256,
     wave_partition: PLAN040_PACKAGE_6_WAVES,
+    audited_current_outcomes:
+      PLAN040_PACKAGE_6_AUDITED_CURRENT_OUTCOMES,
     evidence_verdict_distribution: { receipt_terminal_unresolved: 29 },
     proposed_decision_count: 0,
     persisted_decision_count: 0,
@@ -420,8 +472,16 @@ export function buildPlan040Package6Draft(input: {
       route_name_coordinate_or_proximity_equivalence: false,
       occurrence_inference_from_route_schedule_or_document_presence: false,
     },
+    future_positive_prerequisites: {
+      exact_post_feed_version_sha1:
+        PLAN040_PACKAGE_6_REQUIRED_POST_BUSCO_SHA1,
+      new_exact_post_full_stop_member_bytes_required: true,
+      reviewed_stop_id_equivalence_required: true,
+      independent_review_required_after_new_evidence: true,
+      review_alone_sufficient: false,
+    },
     freeze_readiness:
-      "frozen_evidence_only_ready_for_five_independent_risk_review_waves",
+      "audited_current_evidence_terminal_absence_reaudit_required_after_new_prerequisite_evidence",
     authorization_state:
       "evidence_only_no_gate_no_acceptance_no_persistence",
     authorizes_occurrence: false,

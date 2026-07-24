@@ -14,6 +14,7 @@ import { stableJson } from "../packages/db/src/stable-json";
 import type { JsonValue } from "../packages/db/src/types";
 import {
   buildPlan040Package6Draft,
+  PLAN040_PACKAGE_6_AUDITED_CURRENT_OUTCOMES,
   PLAN040_PACKAGE_6_CANDIDATES,
   PLAN040_PACKAGE_6_CANDIDATE_KEY_SHA256,
   PLAN040_PACKAGE_6_NON_SUBSTITUTE_POST_BUSCO_SHA1,
@@ -902,7 +903,8 @@ function riskFlags(
   treatmentId: string,
 ): string[] {
   const flags = [
-    "official_evidence_may_support_positive_extent_or_service_scope_after_review",
+    "current_evidence_not_positive_eligible",
+    "future_positive_requires_new_e1c52_exact_post_full_stop_bytes_and_reviewed_stop_id_equivalence",
     "independent_risk_review_required_before_any_gate",
   ];
   if (waveId === "P6-A") {
@@ -988,7 +990,7 @@ const candidates: Plan040Package6CandidateEvidence[] =
       "post_calendar_expansion_not_computed",
       "ordered_full_stop_diff_not_computed",
       "schedule_to_post_gtfs_binding_unresolved",
-      "candidate_positive_extent_or_service_scope_requires_independent_review",
+      "positive_eligibility_requires_new_exact_post_full_stop_and_id_equivalence_evidence_plus_review",
       ...(documentByRoute.get(routeId)!.document_is_full_stop_chain
         ? []
         : ["candidate_document_timepoints_nonexhaustive_not_full_stop_chain"]),
@@ -1103,8 +1105,12 @@ const candidates: Plan040Package6CandidateEvidence[] =
       proposed_grain_decision: null,
       persisted_extent_decision: null,
       persisted_grain_decision: null,
-      candidate_may_support_positive_after_review: true,
-      review_outcome_state: "awaiting_independent_risk_review",
+      current_evidence_positive_eligible: false,
+      positive_eligibility_requires_new_exact_post_full_stop_and_id_equivalence_evidence_plus_review:
+        true,
+      independent_audit_completed: true,
+      review_outcome_state:
+        "audited_current_evidence_terminal_absence",
       authorizes_occurrence: false,
       authorizes_study: false,
       authorizes_cross_product: false,
@@ -1316,6 +1322,8 @@ const evidence = {
   route_count: 20,
   candidate_key_sha256: PLAN040_PACKAGE_6_CANDIDATE_KEY_SHA256,
   risk_wave_partition: PLAN040_PACKAGE_6_WAVES,
+  audited_current_outcomes:
+    PLAN040_PACKAGE_6_AUDITED_CURRENT_OUTCOMES,
   candidate_document_binding_count: 29,
   unique_document_count: 18,
   reused_route_document_count: 17,
@@ -1339,8 +1347,20 @@ const evidence = {
   review_protocol: {
     package_owner_gate_allowed: false,
     independent_risk_waves_required: 5,
-    positive_extent_or_service_scope_possible_after_review: true,
-    final_terminal_absence_conclusion_allowed: false,
+    current_positive_extent_or_service_scope_possible: false,
+    reviewed_terminal_absence_allowed: true,
+    review_alone_can_authorize_positive: false,
+    future_positive_requires_new_exact_post_full_stop_member_bytes: true,
+    future_positive_requires_reviewed_stop_id_equivalence: true,
+    future_positive_requires_independent_review_after_new_evidence: true,
+  },
+  future_positive_prerequisites: {
+    exact_post_feed_version_sha1:
+      PLAN040_PACKAGE_6_REQUIRED_POST_BUSCO_SHA1,
+    new_exact_post_full_stop_member_bytes_required: true,
+    reviewed_stop_id_equivalence_required: true,
+    independent_review_required_after_new_evidence: true,
+    review_alone_sufficient: false,
   },
   version_separation: {
     pre_busco_sha1: PLAN040_PACKAGE_6_PRE_BUSCO_SHA1,

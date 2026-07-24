@@ -5,6 +5,7 @@ import { repoRoot } from "../../../core/src/paths";
 import type { JsonValue } from "../../../db/src/types";
 import {
   buildPlan040Package6Draft,
+  PLAN040_PACKAGE_6_AUDITED_CURRENT_OUTCOMES,
   PLAN040_PACKAGE_6_CANDIDATES,
   PLAN040_PACKAGE_6_CANDIDATE_KEY_SHA256,
   PLAN040_PACKAGE_6_NON_SUBSTITUTE_POST_BUSCO_SHA1,
@@ -176,6 +177,29 @@ type Package6Acquisition = {
   authorizes_decision_persistence: false;
 };
 
+type Package6Evidence = {
+  audited_current_outcomes:
+    typeof PLAN040_PACKAGE_6_AUDITED_CURRENT_OUTCOMES;
+  review_protocol: {
+    package_owner_gate_allowed: false;
+    independent_risk_waves_required: 5;
+    current_positive_extent_or_service_scope_possible: false;
+    reviewed_terminal_absence_allowed: true;
+    review_alone_can_authorize_positive: false;
+    future_positive_requires_new_exact_post_full_stop_member_bytes: true;
+    future_positive_requires_reviewed_stop_id_equivalence: true;
+    future_positive_requires_independent_review_after_new_evidence: true;
+  };
+  future_positive_prerequisites: {
+    exact_post_feed_version_sha1: string;
+    new_exact_post_full_stop_member_bytes_required: true;
+    reviewed_stop_id_equivalence_required: true;
+    independent_review_required_after_new_evidence: true;
+    review_alone_sufficient: false;
+  };
+  candidates: Plan040Package6CandidateEvidence[];
+};
+
 const priorKeys = (path: string): string[] =>
   readJson<PriorDraft>(path).candidates.map((candidate) =>
     candidate.candidate_key);
@@ -202,6 +226,9 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
     const acquisition = JSON.parse(
       acquisitionBytes.toString("utf8"),
     ) as Package6Acquisition;
+    const evidence = JSON.parse(
+      evidenceBytes.toString("utf8"),
+    ) as Package6Evidence;
     const draft = JSON.parse(
       draftBytes.toString("utf8"),
     ) as Plan040Package6Draft;
@@ -210,10 +237,10 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
       "fe597387e7a9d1a4072316be8f706bca6b3ce785983b5aabc104bdc23c4ec84a",
     );
     expect(sha256(evidenceBytes)).toBe(
-      "3b146c38630acc0481f11342cda540c0696183f7015e3c99be0338e37718e14e",
+      "4315d767821963f43bbef7416b893c74995601a79be6d5b5070e9db6e521f2a9",
     );
     expect(sha256(draftBytes)).toBe(
-      "e2248d9aa61047f24f5236df29670eea884c29701878930692f4d77f6023b050",
+      "4ddd5302bef65687106d7ac16cfb2199ed05341526ce1d3707e9afd66a00b85c",
     );
     expect(plan040Package6ReplayHash(draft as unknown as JsonValue)).toBe(
       sha256(draftBytes),
@@ -230,6 +257,12 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
       PLAN040_PACKAGE_6_CANDIDATE_KEY_SHA256,
     );
     expect(draft.wave_partition).toEqual(PLAN040_PACKAGE_6_WAVES);
+    expect(draft.audited_current_outcomes).toEqual(
+      PLAN040_PACKAGE_6_AUDITED_CURRENT_OUTCOMES,
+    );
+    expect(evidence.audited_current_outcomes).toEqual(
+      PLAN040_PACKAGE_6_AUDITED_CURRENT_OUTCOMES,
+    );
     expect(draft.candidates.map((candidate) => [
       candidate.risk_wave_id,
       candidate.gtfs_route_id,
@@ -242,6 +275,10 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
         draft.candidates.filter((candidate) =>
           candidate.risk_wave_id === wave.wave_id).length),
     ).toEqual([11, 7, 3, 3, 5]);
+    expect(PLAN040_PACKAGE_6_AUDITED_CURRENT_OUTCOMES.map((outcome) => [
+      outcome.positive_count,
+      outcome.terminal_absence_count,
+    ])).toEqual([[0, 11], [0, 7], [0, 3], [0, 3], [0, 5]]);
   });
 
   it("reuses immutable Package 3/5 evidence and pins only two new documents", () => {
@@ -537,6 +574,12 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
     }
     expect(draft.candidates.every((candidate) =>
       candidate.evidence_verdict === "receipt_terminal_unresolved" &&
+      candidate.current_evidence_positive_eligible === false &&
+      candidate
+        .positive_eligibility_requires_new_exact_post_full_stop_and_id_equivalence_evidence_plus_review &&
+      candidate.independent_audit_completed &&
+      candidate.review_outcome_state ===
+        "audited_current_evidence_terminal_absence" &&
       candidate.proposed_extent_decision === null &&
       candidate.proposed_grain_decision === null &&
       candidate.persisted_extent_decision === null &&
@@ -567,6 +610,49 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
     }
   });
 
+  it("records that review alone cannot authorize a positive outcome", () => {
+    const evidence = readJson<Package6Evidence>(evidencePath);
+    const draft = readJson<Plan040Package6Draft>(draftPath);
+
+    expect(evidence.review_protocol).toEqual({
+      package_owner_gate_allowed: false,
+      independent_risk_waves_required: 5,
+      current_positive_extent_or_service_scope_possible: false,
+      reviewed_terminal_absence_allowed: true,
+      review_alone_can_authorize_positive: false,
+      future_positive_requires_new_exact_post_full_stop_member_bytes: true,
+      future_positive_requires_reviewed_stop_id_equivalence: true,
+      future_positive_requires_independent_review_after_new_evidence: true,
+    });
+    expect(evidence.future_positive_prerequisites).toEqual({
+      exact_post_feed_version_sha1:
+        PLAN040_PACKAGE_6_REQUIRED_POST_BUSCO_SHA1,
+      new_exact_post_full_stop_member_bytes_required: true,
+      reviewed_stop_id_equivalence_required: true,
+      independent_review_required_after_new_evidence: true,
+      review_alone_sufficient: false,
+    });
+    expect(draft.future_positive_prerequisites).toEqual(
+      evidence.future_positive_prerequisites,
+    );
+    expect(evidence.candidates.every((candidate) =>
+      candidate.independent_audit_completed &&
+      !candidate.current_evidence_positive_eligible &&
+      candidate.risk_flags.includes(
+        "current_evidence_not_positive_eligible",
+      ) &&
+      candidate.unresolved_gap_codes.includes(
+        "positive_eligibility_requires_new_exact_post_full_stop_and_id_equivalence_evidence_plus_review",
+      ))).toBe(true);
+    const serialized = JSON.stringify(evidence);
+    expect(serialized).not.toContain(
+      "official_evidence_may_support_positive_extent_or_service_scope_after_review",
+    );
+    expect(serialized).not.toContain(
+      "candidate_may_support_positive_after_review",
+    );
+  });
+
   it("replays deterministically and fails closed on scope or authority drift", () => {
     const draft = readJson<Plan040Package6Draft>(draftPath);
     expect(buildPlan040Package6Draft(buildInput(draft))).toEqual(draft);
@@ -577,6 +663,22 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
       buildPlan040Package6Draft(buildInput(draft, withAuthority))).toThrow(
         "gained unsupported authority",
       );
+
+    const reviewAlonePositive = structuredClone(draft.candidates);
+    reviewAlonePositive[0]!.current_evidence_positive_eligible = true;
+    expect(() =>
+      buildPlan040Package6Draft(
+        buildInput(draft, reviewAlonePositive),
+      )).toThrow("gained unsupported authority");
+
+    const missingNewEvidencePrerequisite = structuredClone(draft.candidates);
+    missingNewEvidencePrerequisite[0]!
+      .positive_eligibility_requires_new_exact_post_full_stop_and_id_equivalence_evidence_plus_review =
+        false;
+    expect(() =>
+      buildPlan040Package6Draft(
+        buildInput(draft, missingNewEvidencePrerequisite),
+      )).toThrow("gained unsupported authority");
 
     const wrongWave = structuredClone(draft.candidates);
     wrongWave[0]!.risk_wave_id = "P6-E";
