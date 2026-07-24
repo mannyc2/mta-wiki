@@ -885,6 +885,33 @@ const positivePatternBindings = (
       evidence_id: `${positivePatternReceipt.source_id}#${patternId}`,
     })),
 ];
+const package10bQ82PatternBindings = (
+  treatmentId: string,
+): ExactEvidenceBinding[] => [
+  {
+    role: "full_stop_equivalence_receipt",
+    record_id: treatmentId,
+    source_id:
+      "plan_040_qbnr_service_pattern_package_10b_full_stop_equivalence",
+    evidence_id:
+      "plan_040_qbnr_service_pattern_package_10b_full_stop_equivalence#" +
+      "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1",
+  },
+  ...PLAN040_PACKAGE_11_Q82_PATTERN_IDS.map((patternId) => ({
+    role: "successor_ordered_full_stop_chain",
+    record_id: treatmentId,
+    source_id:
+      "plan_040_qbnr_service_pattern_package_10b_full_stop_equivalence",
+    evidence_id:
+      "plan_040_qbnr_service_pattern_package_10b_full_stop_equivalence#" +
+      patternId,
+  })),
+];
+const positivePatternTreatmentIds = new Set([
+  "treatment_q45-all-day-frequent-service-2025",
+  "treatment_q45-direct-connection-2025",
+  "treatment_q86-limited-stops-2025",
+]);
 const grainDecision = (
   extent: MemberExtentLedgerRow,
   block: SourceBlock,
@@ -906,8 +933,10 @@ const grainDecision = (
         treatment,
         extent.gtfs_route_id as keyof typeof scheduleDateByRoute,
       ),
-      ...(extent.gtfs_route_id === "Q45" ||
-          extent.gtfs_route_id === "Q86"
+      ...(
+          positivePatternTreatmentIds.has(treatment) &&
+          (extent.gtfs_route_id === "Q45" ||
+            extent.gtfs_route_id === "Q86")
         ? positivePatternBindings(treatment, extent.gtfs_route_id)
         : []),
     ]),
@@ -917,6 +946,14 @@ const grainDecision = (
   if (treatment === "treatment_q82-limited-stops-2025") {
     return {
       ...common,
+      evidence_bindings: sortedBindings([
+        sourceBinding(treatment, block),
+        {
+          ...scheduleBinding(treatment, "Q82"),
+          role: "schedule_timepoint_validation",
+        },
+        ...package10bQ82PatternBindings(treatment),
+      ]),
       member_extent_decision_id:
         "member-extent-review:plan040-package11-q82-limited-stops",
       service_scope: {
@@ -1008,6 +1045,8 @@ const grainDecision = (
         "frequency_evidence",
         "later_feed_lineage",
       ]
+      : treatment === "treatment_q86-q5-q85-branch-combination-2025"
+        ? ["branch_lineage_mapping", "direction_lineage_mapping"]
       : treatment.startsWith("treatment_q87-")
         ? ["accepted_date_resolution", "feed_version_resolution"]
         : ["branch_mapping", "direction_mapping"];
@@ -1134,7 +1173,10 @@ const candidates = PLAN040_PACKAGE_11_CANDIDATES.map(
       },
       ledger_unchanged_now: true,
     };
-    if (routeId === "Q45" || routeId === "Q86") {
+    if (
+      positivePatternTreatmentIds.has(treatmentId) &&
+      (routeId === "Q45" || routeId === "Q86")
+    ) {
       const patternIds = routeId === "Q45"
         ? PLAN040_PACKAGE_11_Q45_PATTERN_IDS
         : PLAN040_PACKAGE_11_Q86_PATTERN_IDS;

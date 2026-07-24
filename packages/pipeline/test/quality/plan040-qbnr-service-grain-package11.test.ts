@@ -32,9 +32,9 @@ const positivePatternReceiptPath =
   `${repoRoot}/data/quality/acquisition/receipts/member-extent-evidence/` +
   "plan-040-qbnr-service-grain-package-11-positive-patterns-v1.json";
 const EVIDENCE_SHA256 =
-  "149d71d7aa82a3b1e4a6161ac232fe0bde921dee1cf6510aaa725fd16b51ffa7";
+  "5980bdc4723956e36df9734b5180e9eb3b3ecf11d995d1ba75b004326d5ce4d3";
 const DRAFT_SHA256 =
-  "b2acc40f1318fae9eac127cea796273601327d959c89f26674887ae5af612e7b";
+  "c4c0aed52bdeb0d82492857f14afb2d39d5ac1b7a82f4e5deacab7bb2779ff2e";
 
 type Package11Evidence = {
   candidate_count: 12;
@@ -108,6 +108,12 @@ describe("Plan 040 Package 11 residual service-grain evidence freeze", () => {
   const draft = JSON.parse(
     draftBytes.toString("utf8"),
   ) as Plan040Package11Draft;
+  const positivePatternReceipt = readJson<{
+    candidate_bindings: Array<{
+      treatment_record_id: string;
+      pattern_ids: string[];
+    }>;
+  }>(positivePatternReceiptPath);
 
   it("freezes the corrected exact 12-candidate discovery and replay", () => {
     const receiptStat = lstatSync(positivePatternReceiptPath);
@@ -176,6 +182,24 @@ describe("Plan 040 Package 11 residual service-grain evidence freeze", () => {
         "Weekend passenger trips on both accepted initial Q82 patterns.",
     });
     expect(q82.proposed_grain_decision.lineage_segments).toEqual([]);
+    const q82Bindings = q82.proposed_grain_decision.evidence_bindings;
+    expect(q82Bindings.filter((row) =>
+      row.role === "full_stop_equivalence_receipt").map((row) =>
+        row.evidence_id)).toEqual([
+      "plan_040_qbnr_service_pattern_package_10b_full_stop_equivalence#" +
+      "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1",
+    ]);
+    expect(q82Bindings.filter((row) =>
+      row.role === "successor_ordered_full_stop_chain").map((row) =>
+        row.evidence_id).sort()).toEqual(
+      PLAN040_PACKAGE_11_Q82_PATTERN_IDS.map((patternId) =>
+        "plan_040_qbnr_service_pattern_package_10b_full_stop_equivalence#" +
+        patternId).sort(),
+    );
+    expect(q82Bindings.filter((row) =>
+      row.role === "schedule_timepoint_validation")).toHaveLength(1);
+    expect(q82Bindings.some((row) =>
+      row.role === "schedule_validation")).toBe(false);
     expect(q82.accepted_evidence.q82_scope_review).toMatchObject({
       predecessor_route_selected: null,
       local_service_routes_are_context_only: ["Q1", "Q3", "Q76"],
@@ -287,6 +311,45 @@ describe("Plan 040 Package 11 residual service-grain evidence freeze", () => {
     }
   });
 
+  it("uses positive-receipt candidate anchors only for receipt-bound positives", () => {
+    const receiptCandidates = new Set(
+      positivePatternReceipt.candidate_bindings.map((row) =>
+        row.treatment_record_id),
+    );
+    const usedAnchors = evidence.candidates.flatMap((candidate) =>
+      candidate.proposed_grain_decision.evidence_bindings
+        .filter((binding) => binding.role === "accepted_gtfs_pattern_receipt")
+        .map((binding) => ({
+          treatment_record_id: candidate.treatment_record_id,
+          evidence_id: binding.evidence_id,
+        })));
+    expect(usedAnchors).toHaveLength(3);
+    expect(usedAnchors.every((anchor) =>
+      receiptCandidates.has(anchor.treatment_record_id) &&
+      anchor.evidence_id.endsWith(
+        `#candidate=${anchor.treatment_record_id}`,
+      ))).toBe(true);
+
+    const unresolvedBranch = evidence.candidates.find((candidate) =>
+      candidate.treatment_record_id ===
+        "treatment_q86-q5-q85-branch-combination-2025")!;
+    expect(unresolvedBranch.unresolved_gap_codes).toEqual([
+      "branch_lineage_mapping",
+      "direction_lineage_mapping",
+    ]);
+    expect(unresolvedBranch.proposed_grain_decision.evidence_bindings.some(
+      (binding) =>
+        binding.role === "accepted_gtfs_pattern_receipt" ||
+        binding.role === "accepted_ordered_full_stop_pattern",
+    )).toBe(false);
+    expect(unresolvedBranch.accepted_evidence).not.toHaveProperty(
+      "accepted_gtfs_pattern_receipt",
+    );
+    expect(unresolvedBranch.accepted_evidence).not.toHaveProperty(
+      "accepted_gtfs_patterns",
+    );
+  });
+
   it("deduplicates QM68 lineage to three segments while binding four comparisons", () => {
     const qm68 = evidence.candidates.find((row) =>
       row.treatment_record_id === "treatment_qm68-route-rename-2025")!;
@@ -373,6 +436,17 @@ describe("Plan 040 Package 11 residual service-grain evidence freeze", () => {
       evidence,
       q82Tamper,
     ))).toThrow();
+
+    const q82BindingTamper = clone(evidence.candidates);
+    q82BindingTamper[0]!.proposed_grain_decision.evidence_bindings =
+      q82BindingTamper[0]!.proposed_grain_decision.evidence_bindings.filter(
+        (binding) =>
+          !binding.evidence_id.endsWith(PLAN040_PACKAGE_11_Q82_PATTERN_IDS[0]),
+      );
+    expect(() => buildPlan040Package11Draft(inputFor(
+      evidence,
+      q82BindingTamper,
+    ))).toThrow("Q82 proposal drifted");
 
     const q86Tamper = clone(evidence.candidates);
     const q86 = q86Tamper.find((row) =>

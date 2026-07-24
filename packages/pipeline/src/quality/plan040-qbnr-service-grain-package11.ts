@@ -401,7 +401,29 @@ function validateCandidate(
       !sameJson(grain.service_scope.pattern_ids, [
         ...PLAN040_PACKAGE_11_Q82_PATTERN_IDS,
       ]) ||
-      grain.lineage_segments.length !== 0
+      grain.lineage_segments.length !== 0 ||
+      !sameJson(
+        grain.evidence_bindings.filter((binding) =>
+          binding.role === "successor_ordered_full_stop_chain")
+          .map((binding) => binding.evidence_id).sort(),
+        PLAN040_PACKAGE_11_Q82_PATTERN_IDS.map((patternId) =>
+          "plan_040_qbnr_service_pattern_package_10b_full_stop_equivalence#" +
+          patternId).sort(),
+      ) ||
+      grain.evidence_bindings.filter((binding) =>
+        binding.role === "full_stop_equivalence_receipt" &&
+        binding.evidence_id ===
+          "plan_040_qbnr_service_pattern_package_10b_full_stop_equivalence#" +
+          "plan-040-qbnr-service-pattern-package-10b-full-stop-equivalence-v1"
+      ).length !== 1 ||
+      grain.evidence_bindings.filter((binding) =>
+        binding.role === "schedule_timepoint_validation" &&
+        binding.evidence_id ===
+          "mta_bus_schedules_2025_candidate_windows#" +
+          "date=2025-06-29&route=Q82&trip_types=1"
+      ).length !== 1 ||
+      grain.evidence_bindings.some((binding) =>
+        binding.role === "schedule_validation")
     ) {
       throw new Error("Plan 040 Package 11 Q82 proposal drifted");
     }
@@ -629,6 +651,26 @@ function validateCandidate(
       throw new Error(`${candidate.treatment_record_id}: Q80 evidence drifted`);
     }
   }
+  if (
+    candidate.treatment_record_id ===
+      "treatment_q86-q5-q85-branch-combination-2025"
+  ) {
+    if (
+      !sameJson(grain.service_scope.missing_roles, [
+        "branch_lineage_mapping",
+        "direction_lineage_mapping",
+      ]) ||
+      "accepted_gtfs_pattern_receipt" in candidate.accepted_evidence ||
+      "accepted_gtfs_patterns" in candidate.accepted_evidence ||
+      grain.evidence_bindings.some((binding) =>
+        binding.role === "accepted_gtfs_pattern_receipt" ||
+        binding.role === "accepted_ordered_full_stop_pattern")
+    ) {
+      throw new Error(
+        "Plan 040 Package 11 unresolved Q86 branch evidence drifted",
+      );
+    }
+  }
 }
 
 export function buildPlan040Package11Draft(input: {
@@ -678,6 +720,23 @@ export function buildPlan040Package11Draft(input: {
   }
   candidates.forEach((candidate) =>
     validateCandidate(candidate, input.positivePatternReceipt));
+  const receiptCandidateIds = new Set([
+    "treatment_q45-all-day-frequent-service-2025",
+    "treatment_q45-direct-connection-2025",
+    "treatment_q86-limited-stops-2025",
+  ]);
+  if (candidates.some((candidate) =>
+    candidate.proposed_grain_decision.evidence_bindings.some((binding) =>
+      binding.role === "accepted_gtfs_pattern_receipt" &&
+      (
+        !receiptCandidateIds.has(candidate.treatment_record_id) ||
+        binding.evidence_id !==
+          `${input.positivePatternReceipt.source_id}#candidate=${
+            candidate.treatment_record_id
+          }`
+      )))) {
+    throw new Error("Plan 040 Package 11 receipt candidate anchor drifted");
+  }
   if (
     input.exclusions.length !== 5 ||
     input.exclusions.some((row) =>
