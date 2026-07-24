@@ -37,20 +37,20 @@
     {
       "path": "data/contracts/operational-occurrence-member-extent/v1/manifest.json",
       "bytes": 2057,
-      "sha256": "51ad2e7d37f751f9278bf695342a0497803601efe0ad0ada3c49ad85e8cd8158"
+      "sha256": "d8126f8017c899726fc6c7181f0dfdc84f773066af54bc9f2ee769703bed9253"
     }
   ],
   "files": [
     {
       "path": "data/quality/study-readiness/v1/bridge-ledger.jsonl",
-      "bytes": 1004629,
-      "sha256": "6c82b4a37067e6c7de563e373c7187c75a15610118da6fa3c64cdb70133e755b",
+      "bytes": 1006107,
+      "sha256": "f937c0ed6d420e35b6eb878292ac671ff24d5d6c2e86e0cc9fa47be377ef183e",
       "row_count": 484
     },
     {
       "path": "data/quality/study-readiness/v1/bridge-summary.json",
       "bytes": 474,
-      "sha256": "7c8a256e153dd18ee510bb2b5bb008845bdd35ef290d178854352e0f5180ea4d"
+      "sha256": "3f82b30e023532836d2bbae0aa70156dc7feb3e2aa5d86f461272b35c6c38d15"
     },
     {
       "path": "data/quality/study-readiness/v1/consumer-owned-quarantine.jsonl",
@@ -60,8 +60,8 @@
     },
     {
       "path": "data/quality/study-readiness/v1/consumer-priority-manifest.json",
-      "bytes": 574209,
-      "sha256": "a1c49e2ea6319295e7d8a4858c1bc5b1ec3619b4db04247a61f6d4e923aab367"
+      "bytes": 574370,
+      "sha256": "b95d3891b8ac1acb98f7e99fbdfbc3a3efc6fa5b59a2504b9afce183ed73b616"
     },
     {
       "path": "data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl",

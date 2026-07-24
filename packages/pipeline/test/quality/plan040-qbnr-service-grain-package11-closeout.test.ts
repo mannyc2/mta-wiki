@@ -7,7 +7,13 @@ import {
   PLAN040_PACKAGE_11_APPROVED_COMMIT,
   PLAN040_PACKAGE_11_DRAFT_SHA256,
   PLAN040_PACKAGE_11_EVIDENCE_SHA256,
+  PLAN040_PACKAGE_11_EXTENT_DECISIONS_SHA256,
+  PLAN040_PACKAGE_11_GATE_SHA256,
+  PLAN040_PACKAGE_11_GRAIN_DECISIONS_SHA256,
+  PLAN040_PACKAGE_11_GRAIN_ONLY_EXTENT_ROW_PINS,
+  PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS,
   PLAN040_PACKAGE_11_RECEIPT_SHA256,
+  buildPlan040Package11AcceptedArtifacts,
   buildPlan040Package11GateAndAcceptance,
   validatePlan040Package11GateAndAcceptance,
 } from
@@ -173,5 +179,157 @@ describe("Plan 040 Package 11 gate and owner acceptance", () => {
       draft: unresolvedDrift,
       acceptedAt: ACCEPTED_AT,
     })).toThrow("frozen verdict or authorization scope drifted");
+  });
+
+  it("persists exactly one extent and twelve terminal grain decisions", () => {
+    const draft = JSON.parse(
+      readFileSync(draftPath, "utf8"),
+    ) as Plan040Package11Draft;
+    const gate = JSON.parse(readFileSync(gatePath, "utf8")) as ReturnType<
+      typeof buildPlan040Package11GateAndAcceptance
+    >["gate"];
+    const acceptance = JSON.parse(
+      readFileSync(acceptancePath, "utf8"),
+    ) as ReturnType<
+      typeof buildPlan040Package11GateAndAcceptance
+    >["acceptance"];
+    const accepted = buildPlan040Package11AcceptedArtifacts({
+      draft,
+      gate,
+      acceptance,
+    });
+    const extentPath =
+      `${repoRoot}/data/quality/operational-reference/` +
+      "member-extent-ledger-decisions/" +
+      "plan-040-qbnr-service-grain-package-11-v1.json";
+    const grainPath =
+      `${repoRoot}/data/quality/operational-reference/` +
+      "member-grain-decisions/" +
+      "plan-040-qbnr-service-grain-package-11-v1.json";
+    expect(sha256(readFileSync(gatePath))).toBe(
+      PLAN040_PACKAGE_11_GATE_SHA256,
+    );
+    expect(sha256(readFileSync(extentPath))).toBe(
+      PLAN040_PACKAGE_11_EXTENT_DECISIONS_SHA256,
+    );
+    expect(sha256(readFileSync(grainPath))).toBe(
+      PLAN040_PACKAGE_11_GRAIN_DECISIONS_SHA256,
+    );
+    expect(JSON.parse(readFileSync(extentPath, "utf8"))).toEqual({
+      decisions: accepted.extentDecisions,
+    });
+    expect(JSON.parse(readFileSync(grainPath, "utf8"))).toEqual({
+      decisions: accepted.grainDecisions,
+    });
+    expect(accepted.extentDecisions).toHaveLength(1);
+    expect(accepted.extentDecisions[0]?.resolution).toBe("bounded_segment");
+    expect(accepted.grainDecisions).toHaveLength(12);
+    expect(accepted.grainDecisions.filter((decision) =>
+      decision.service_scope.kind === "unresolved")).toHaveLength(7);
+
+    const grainRows = readFileSync(
+      `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`,
+      "utf8",
+    ).trim().split("\n").map((line) => JSON.parse(line)) as Array<{
+      treatment_record_id: string;
+      verdict: string;
+      service_scope:
+        | { kind: string; missing_roles?: string[] }
+        | null;
+      authorizes_study: false;
+      authorizes_cross_product: false;
+    }>;
+    const byTreatment = new Map(draft.candidates.map((candidate) => [
+      candidate.treatment_record_id,
+      candidate,
+    ]));
+    const persistedRows = grainRows.filter((row) =>
+      byTreatment.has(row.treatment_record_id));
+    expect(persistedRows).toHaveLength(12);
+    expect(persistedRows.filter((row) => row.verdict === "resolved"))
+      .toHaveLength(5);
+    expect(persistedRows.filter((row) =>
+      row.verdict.startsWith("blocked_upstream:"))).toHaveLength(7);
+    expect(persistedRows.every((row) => {
+      const candidate = byTreatment.get(row.treatment_record_id)!;
+      return candidate.evidence_verdict ===
+          "structured_unresolved_grain_proposed"
+        ? row.verdict ===
+          `blocked_upstream:${candidate.unresolved_gap_codes.join("+")}` &&
+          row.service_scope?.kind === "unresolved"
+        : row.verdict === "resolved";
+    })).toBeTrue();
+    expect(persistedRows.every((row) =>
+      row.verdict !== "unreviewed" &&
+      row.verdict !== "absent_in_source" &&
+      !row.authorizes_study &&
+      !row.authorizes_cross_product
+    )).toBeTrue();
+  });
+
+  it("preserves all prior grain-only extent rows and post-persistence pins", () => {
+    const reviewLines = readFileSync(
+      `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/` +
+        "review-ledger.jsonl",
+      "utf8",
+    ).trim().split("\n");
+    const pinnedIds = new Set(Object.keys(
+      PLAN040_PACKAGE_11_GRAIN_ONLY_EXTENT_ROW_PINS,
+    ));
+    const observed = new Map<string, string>();
+    for (const line of reviewLines) {
+      const row = JSON.parse(line) as { decision_id: string };
+      if (pinnedIds.has(row.decision_id)) {
+        observed.set(row.decision_id, sha256(`${line}\n`));
+      }
+    }
+    expect(Object.fromEntries(observed)).toEqual(
+      PLAN040_PACKAGE_11_GRAIN_ONLY_EXTENT_ROW_PINS,
+    );
+
+    const pinnedFiles = {
+      extent_ledger:
+        `${repoRoot}/data/quality/operational-reference/member-extent-ledger.jsonl`,
+      grain_ledger:
+        `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`,
+      bridge_ledger:
+        `${repoRoot}/data/quality/study-readiness/v1/bridge-ledger.jsonl`,
+      study_manifest:
+        `${repoRoot}/data/quality/study-readiness/v1/manifest.json`,
+      member_extent_contract:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/` +
+        "operational_occurrence_member_extents.jsonl",
+      member_extent_manifest:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/manifest.json`,
+      member_extent_review_ledger:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/review-ledger.jsonl`,
+      member_extent_summary:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/summary.json`,
+      operational_occurrences:
+        `${repoRoot}/data/exports/releases/v1-rc26/operational_occurrences.jsonl`,
+      operational_occurrence_decisions:
+        `${repoRoot}/data/exports/releases/v1-rc26/operational_occurrence_review_decisions.json`,
+      treatment_components:
+        `${repoRoot}/data/canonical/treatment_components.jsonl`,
+      reviewed_candidate_packets:
+        `${repoRoot}/data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl`,
+    };
+    for (const [name, path] of Object.entries(pinnedFiles)) {
+      expect(sha256(readFileSync(path))).toBe(
+        PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS
+        ],
+      );
+    }
+    expect(sha256(readFileSync(
+      `${root}/plan-040-flatbush-physical-grain-package-12-evidence-v1.json`,
+    ))).toBe(
+      "4134a3afc2ce8c2f6fcecd9b12f941c1967511f1401132620b3750d916bc7736",
+    );
+    expect(sha256(readFileSync(
+      `${root}/plan-040-flatbush-physical-grain-package-12-evidence-draft-v1.json`,
+    ))).toBe(
+      "60095cd79d13f3174961a93aec1cfae5f5e481f6373914a2075502a7a8a7c23b",
+    );
   });
 });

@@ -23,6 +23,10 @@ import type {
   ExactEvidenceBinding,
   MemberExtentDecision,
 } from "../src/quality/study-readiness-v1.js";
+import {
+  PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS,
+} from
+  "../src/quality/plan040-qbnr-service-grain-package11-closeout.js";
 
 const evidenceRelative =
   "data/quality/operational-reference/member-extent-risk/" +
@@ -58,6 +62,17 @@ const assertPinned = (relative: string, expected: string): void => {
   const actual = sha256(readFileSync(join(repoRoot, relative)));
   if (actual !== expected) {
     throw new Error(`${relative}: expected ${expected}, got ${actual}`);
+  }
+};
+const assertOneOfPinned = (
+  relative: string,
+  expected: readonly string[],
+): void => {
+  const actual = sha256(readFileSync(join(repoRoot, relative)));
+  if (!expected.includes(actual)) {
+    throw new Error(
+      `${relative}: expected one of ${expected.join(", ")}, got ${actual}`,
+    );
   }
 };
 const writeStable = (relative: string, value: JsonValue): void => {
@@ -148,7 +163,29 @@ const pins: Array<[string, string]> = [
     PLAN040_PACKAGE_12_GLOBAL_PINS.source_submission_journal,
   ],
 ];
-pins.forEach(([path, hash]) => assertPinned(path, hash));
+const mutablePostPins: Record<string, string> = {
+  "data/quality/operational-reference/member-extent-ledger.jsonl":
+    PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.extent_ledger,
+  "data/quality/operational-reference/member-grain-ledger.jsonl":
+    PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.grain_ledger,
+  "data/quality/study-readiness/v1/bridge-ledger.jsonl":
+    PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.bridge_ledger,
+  "data/quality/study-readiness/v1/manifest.json":
+    PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.study_manifest,
+  [
+    "data/contracts/operational-occurrence-member-extent/v1/" +
+      "operational_occurrence_member_extents.jsonl"
+  ]: PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.member_extent_contract,
+  "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
+    PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.member_extent_manifest,
+  "data/contracts/operational-occurrence-member-extent/v1/review-ledger.jsonl":
+    PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.member_extent_review_ledger,
+};
+pins.forEach(([path, hash]) => {
+  const postPin = mutablePostPins[path];
+  if (postPin) assertOneOfPinned(path, [hash, postPin]);
+  else assertPinned(path, hash);
+});
 if (existsSync(join(repoRoot, absentRawSourceRelative))) {
   throw new Error(
     "Package 12 raw source packet unexpectedly appeared; evidence must be reviewed",
@@ -258,10 +295,18 @@ if (
   throw new Error("Package 12 canonical/submission source binding drifted");
 }
 
+const frozenCandidateByRoute = existsSync(join(repoRoot, evidenceRelative))
+  ? new Map(readJson<{
+    candidates: Plan040Package12CandidateEvidence[];
+  }>(evidenceRelative).candidates.map((candidate) => [
+    candidate.gtfs_route_id,
+    candidate,
+  ]))
+  : null;
 const candidates = PLAN040_PACKAGE_12_CANDIDATES.map(
   ([routeId, routeRecordId, extentDecisionId]):
     Plan040Package12CandidateEvidence => {
-    const extent = one(
+    const currentExtent = one(
       extentRows,
       (row) =>
         row.occurrence_id === "occurrence:8c987704152b459014217d44" &&
@@ -269,7 +314,7 @@ const candidates = PLAN040_PACKAGE_12_CANDIDATES.map(
         row.treatment_record_id === PLAN040_PACKAGE_12_TREATMENT_RECORD_ID,
       `${routeId} extent ledger`,
     );
-    const grain = one(
+    const currentGrain = one(
       grainRows,
       (row) =>
         row.occurrence_id === "occurrence:8c987704152b459014217d44" &&
@@ -277,6 +322,27 @@ const candidates = PLAN040_PACKAGE_12_CANDIDATES.map(
         row.treatment_record_id === PLAN040_PACKAGE_12_TREATMENT_RECORD_ID,
       `${routeId} grain ledger`,
     );
+    const frozenCandidate = frozenCandidateByRoute?.get(routeId);
+    const extent = frozenCandidate
+      ? {
+        row: frozenCandidate.prior_ledger_state.extent_row,
+        sha256:
+          frozenCandidate.immutable_candidate_rows.extent_ledger_row_sha256,
+      }
+      : currentExtent;
+    const grain = frozenCandidate
+      ? {
+        row: frozenCandidate.prior_ledger_state.grain_row,
+        sha256:
+          frozenCandidate.immutable_candidate_rows.grain_ledger_row_sha256,
+      }
+      : currentGrain;
+    if (
+      candidateKey(currentExtent.row) !== candidateKey(extent.row) ||
+      candidateKey(currentGrain.row) !== candidateKey(grain.row)
+    ) {
+      throw new Error(`${routeId}: persisted ledger identity drifted`);
+    }
     const route = one(
       routes,
       (row) => row.record_id === routeRecordId,

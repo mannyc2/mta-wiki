@@ -50,6 +50,10 @@ import type {
   ExactEvidenceBinding,
   MemberExtentDecision,
 } from "../src/quality/study-readiness-v1.js";
+import {
+  PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS,
+} from
+  "../src/quality/plan040-qbnr-service-grain-package11-closeout.js";
 
 const riskRoot = join(
   repoRoot,
@@ -121,6 +125,17 @@ const assertPinned = (relative: string, expected: string): void => {
   const actual = sha256(readFileSync(join(repoRoot, relative)));
   if (actual !== expected) {
     throw new Error(`${relative}: expected ${expected}, got ${actual}`);
+  }
+};
+const assertOneOfPinned = (
+  relative: string,
+  expected: readonly string[],
+): void => {
+  const actual = sha256(readFileSync(join(repoRoot, relative)));
+  if (!expected.includes(actual)) {
+    throw new Error(
+      `${relative}: expected one of ${expected.join(", ")}, got ${actual}`,
+    );
   }
 };
 const assertLargePinned = (relative: string, expected: string): void => {
@@ -238,7 +253,27 @@ const pinnedFiles: Array<[string, string]> = [
     PLAN040_PACKAGE_11_GLOBAL_PINS.queens_post_receipt,
   ],
 ];
-pinnedFiles.forEach(([path, hash]) => assertPinned(path, hash));
+const mutablePostPins: Record<string, string> = {
+  "data/quality/operational-reference/member-extent-ledger.jsonl":
+    PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.extent_ledger,
+  "data/quality/operational-reference/member-grain-ledger.jsonl":
+    PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.grain_ledger,
+  "data/quality/study-readiness/v1/bridge-ledger.jsonl":
+    PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.bridge_ledger,
+  "data/quality/study-readiness/v1/manifest.json":
+    PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.study_manifest,
+  [
+    "data/contracts/operational-occurrence-member-extent/v1/" +
+      "operational_occurrence_member_extents.jsonl"
+  ]: PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.member_extent_contract,
+  "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
+    PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS.member_extent_manifest,
+};
+pinnedFiles.forEach(([path, hash]) => {
+  const postPin = mutablePostPins[path];
+  if (postPin) assertOneOfPinned(path, [hash, postPin]);
+  else assertPinned(path, hash);
+});
 assertLargePinned(
   "raw/sources/mta_bus_schedules_2025_candidate_windows/source.csv",
   PLAN040_PACKAGE_11_GLOBAL_PINS.schedule_csv,
@@ -1110,18 +1145,47 @@ const q82ExtentDecision = (
   reviewed_by: "codex-plan-040-package-11-evidence-proposal",
 });
 
+const frozenCandidateByTreatment = existsSync(join(repoRoot, evidenceRelative))
+  ? new Map(readJson<{
+    candidates: Plan040Package11CandidateEvidence[];
+  }>(evidenceRelative).candidates.map((candidate) => [
+    candidate.treatment_record_id,
+    candidate,
+  ]))
+  : null;
 const candidates = PLAN040_PACKAGE_11_CANDIDATES.map(
   ([routeId, treatmentId]): Plan040Package11CandidateEvidence => {
-    const extent = one(
+    const currentExtent = one(
       extentRows,
       (row) => row.treatment_record_id === treatmentId,
       `${treatmentId} extent ledger`,
     );
-    const grain = one(
+    const currentGrain = one(
       grainRows,
       (row) => row.treatment_record_id === treatmentId,
       `${treatmentId} grain ledger`,
     );
+    const frozenCandidate = frozenCandidateByTreatment?.get(treatmentId);
+    const extent = frozenCandidate
+      ? {
+        row: frozenCandidate.prior_ledger_state.extent_row,
+        sha256:
+          frozenCandidate.immutable_candidate_rows.extent_ledger_row_sha256,
+      }
+      : currentExtent;
+    const grain = frozenCandidate
+      ? {
+        row: frozenCandidate.prior_ledger_state.grain_row,
+        sha256:
+          frozenCandidate.immutable_candidate_rows.grain_ledger_row_sha256,
+      }
+      : currentGrain;
+    if (
+      candidateKey(currentExtent.row) !== candidateKey(extent.row) ||
+      candidateKey(currentGrain.row) !== candidateKey(grain.row)
+    ) {
+      throw new Error(`${treatmentId}: persisted ledger identity drifted`);
+    }
     const treatment = one(
       treatmentRows,
       (row) => row.record_id === treatmentId,

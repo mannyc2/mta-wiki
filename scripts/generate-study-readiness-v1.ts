@@ -882,9 +882,9 @@ function buildStudyArtifacts(input: JsonObject, occurrences: JsonObject[], exten
     row.priority_tier === "priority_1_extent_only_consumer_ready");
   const resolvedTargets = targets.filter((row) =>
     row.current_producer_status === "resolved_requires_downstream_replay");
-  if (reviewedPriorityTargets.length !== 11 || openPriorityTargets.length !== 3 || resolvedTargets.length !== 8) {
+  if (reviewedPriorityTargets.length !== 11 || openPriorityTargets.length !== 3 || resolvedTargets.length !== 9) {
     throw new Error(
-      `Expected 11 reviewed / 3 open priority / 8 replay targets, received ${reviewedPriorityTargets.length}/${openPriorityTargets.length}/${resolvedTargets.length}`,
+      `Expected 11 reviewed / 3 open priority / 9 replay targets, received ${reviewedPriorityTargets.length}/${openPriorityTargets.length}/${resolvedTargets.length}`,
     );
   }
 
