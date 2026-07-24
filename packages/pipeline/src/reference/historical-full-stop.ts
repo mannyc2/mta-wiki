@@ -4,6 +4,7 @@ import { dirname, join, relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableHash, stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
+import type { MemberExtentRow } from "../quality/study-readiness-v1.js";
 import {
   loadGtfsStaticSnapshot,
   type GtfsStaticSnapshot,
@@ -32,6 +33,14 @@ export const HISTORICAL_FULL_STOP_ROOT = join(
 export const HISTORICAL_FULL_STOP_ACQUISITION_RECEIPT_PATH = join(
   repoRoot,
   "data/quality/acquisition/receipts/plan-040-historical-full-stop-acquisition.json",
+);
+export const HISTORICAL_FULL_STOP_COMPANION_PATH = join(
+  repoRoot,
+  "data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl",
+);
+export const HISTORICAL_FULL_STOP_RISK_ARTIFACT_PATH = join(
+  repoRoot,
+  "data/quality/operational-reference/member-extent-risk/plan-040-exemplar-evidence-drift.json",
 );
 
 const REQUIRED_GTFS_MEMBERS = [
@@ -210,6 +219,41 @@ export type HistoricalFullStopWriteResult = {
   replay_hash: string;
   covered_candidate_count: number;
   verdict_distribution: Record<string, number>;
+};
+
+export type HistoricalCandidateFactRef = {
+  dossier_path: string;
+  dossier_sha256: string;
+  fact_kind:
+    | "lineage_correspondence"
+    | "connection_remainder"
+    | "period_trip_count_change"
+    | "removed_stop_set"
+    | "added_stop_set"
+    | "terminal_change"
+    | "route_rename";
+  fact_id: string;
+  direction: string;
+  identifiers: string[];
+};
+
+export type HistoricalCandidateSupportRow = {
+  occurrence_id: string;
+  route_record_id: string;
+  gtfs_route_id: "Q61" | "QM44" | "QM64";
+  treatment_record_id: string;
+  extent_id: string;
+  current_extent_kind: string;
+  current_missing_roles: string[];
+  historical_evidence_verdict:
+    | "bounded_segment_supported"
+    | "lineage_supported"
+    | "service_scope_supported"
+    | "stop_set_supported"
+    | "route_rename_supported";
+  fact_refs: HistoricalCandidateFactRef[];
+  decision_authority: false;
+  occurrence_authority: false;
 };
 
 function writeImmutableJson(path: string, value: JsonValue): void {
@@ -728,6 +772,413 @@ function requiredInputArtifacts(snapshot: OperationalSnapshot): Array<{
   return artifacts.map((artifact) => ({ ...artifact })).sort((left, right) => left.path.localeCompare(right.path));
 }
 
+type CandidateSupportSpec = {
+  occurrence_id: string;
+  route_record_id: string;
+  gtfs_route_id: HistoricalCandidateSupportRow["gtfs_route_id"];
+  treatment_record_id: string;
+  expected_extent_kind: "unresolved" | "route_wide";
+  expected_missing_roles: string[];
+  verdict: HistoricalCandidateSupportRow["historical_evidence_verdict"];
+};
+
+const CANDIDATE_SUPPORT_SPECS = ([
+  {
+    occurrence_id: "occurrence:347bc4f1a346152697520648",
+    route_record_id: "route_qm44-qbnr-2025",
+    gtfs_route_id: "QM44",
+    treatment_record_id: "treatment_qm44-frequency-decrease-2025",
+    expected_extent_kind: "unresolved",
+    expected_missing_roles: ["scope_modality"],
+    verdict: "service_scope_supported",
+  },
+  {
+    occurrence_id: "occurrence:347bc4f1a346152697520648",
+    route_record_id: "route_qm44-qbnr-2025",
+    gtfs_route_id: "QM44",
+    treatment_record_id: "treatment_qm44-stop-removal-2025",
+    expected_extent_kind: "unresolved",
+    expected_missing_roles: ["stop_identity"],
+    verdict: "stop_set_supported",
+  },
+  {
+    occurrence_id: "occurrence:5d51147fc80a669bfb81da45",
+    route_record_id: "route_q61-queens",
+    gtfs_route_id: "Q61",
+    treatment_record_id: "treatment_q61-beechhurst-flushing-connection-2025",
+    expected_extent_kind: "unresolved",
+    expected_missing_roles: ["bounded_scope_identity"],
+    verdict: "bounded_segment_supported",
+  },
+  {
+    occurrence_id: "occurrence:5d51147fc80a669bfb81da45",
+    route_record_id: "route_q61-queens",
+    gtfs_route_id: "Q61",
+    treatment_record_id: "treatment_q61-q15-beechhurst-replacement-2025",
+    expected_extent_kind: "unresolved",
+    expected_missing_roles: ["bounded_scope_identity"],
+    verdict: "lineage_supported",
+  },
+  {
+    occurrence_id: "occurrence:5d51147fc80a669bfb81da45",
+    route_record_id: "route_q61-queens",
+    gtfs_route_id: "Q61",
+    treatment_record_id: "treatment_q61-q34-linden-hill-replacement-2025",
+    expected_extent_kind: "unresolved",
+    expected_missing_roles: ["bounded_scope_identity"],
+    verdict: "lineage_supported",
+  },
+  {
+    occurrence_id: "occurrence:8e0377c6acfe62e1a61d910b",
+    route_record_id: "route_qm64-qbnr-2025",
+    gtfs_route_id: "QM64",
+    treatment_record_id: "treatment_qm64-avenue-service-discontinuation-2025",
+    expected_extent_kind: "unresolved",
+    expected_missing_roles: ["bounded_scope_identity"],
+    verdict: "bounded_segment_supported",
+  },
+  {
+    occurrence_id: "occurrence:8e0377c6acfe62e1a61d910b",
+    route_record_id: "route_qm64-qbnr-2025",
+    gtfs_route_id: "QM64",
+    treatment_record_id: "treatment_qm64-elmont-extension-2025",
+    expected_extent_kind: "unresolved",
+    expected_missing_roles: ["bounded_scope_identity"],
+    verdict: "bounded_segment_supported",
+  },
+  {
+    occurrence_id: "occurrence:8e0377c6acfe62e1a61d910b",
+    route_record_id: "route_qm64-qbnr-2025",
+    gtfs_route_id: "QM64",
+    treatment_record_id: "treatment_qm64-frequency-decrease-2025",
+    expected_extent_kind: "unresolved",
+    expected_missing_roles: ["scope_modality"],
+    verdict: "service_scope_supported",
+  },
+  {
+    occurrence_id: "occurrence:8e0377c6acfe62e1a61d910b",
+    route_record_id: "route_qm64-qbnr-2025",
+    gtfs_route_id: "QM64",
+    treatment_record_id: "treatment_qm64-midtown-stop-additions-2025",
+    expected_extent_kind: "unresolved",
+    expected_missing_roles: ["stop_identity"],
+    verdict: "stop_set_supported",
+  },
+  {
+    occurrence_id: "occurrence:8e0377c6acfe62e1a61d910b",
+    route_record_id: "route_qm64-qbnr-2025",
+    gtfs_route_id: "QM64",
+    treatment_record_id: "treatment_qm64-route-rename-2025",
+    expected_extent_kind: "route_wide",
+    expected_missing_roles: [],
+    verdict: "route_rename_supported",
+  },
+  {
+    occurrence_id: "occurrence:8e0377c6acfe62e1a61d910b",
+    route_record_id: "route_qm64-qbnr-2025",
+    gtfs_route_id: "QM64",
+    treatment_record_id: "treatment_qm64-stop-removal-2025",
+    expected_extent_kind: "unresolved",
+    expected_missing_roles: ["stop_identity"],
+    verdict: "stop_set_supported",
+  },
+] satisfies CandidateSupportSpec[]).sort((left, right) =>
+  candidateSupportKey(left).localeCompare(candidateSupportKey(right)));
+
+function candidateSupportKey(value: {
+  occurrence_id: string;
+  route_record_id: string;
+  treatment_record_id: string;
+}): string {
+  return `${value.occurrence_id}\0${value.route_record_id}\0${value.treatment_record_id}`;
+}
+
+function readCurrentCompanionRows(path = HISTORICAL_FULL_STOP_COMPANION_PATH): MemberExtentRow[] {
+  return readFileSync(path, "utf8").split(/\r?\n/u).flatMap((line, index) => {
+    if (!line.trim()) return [];
+    const parsed = JSON.parse(line) as MemberExtentRow;
+    if (stableJson(parsed as unknown as JsonValue) !== line) {
+      throw new Error(`${relative(repoRoot, path)}:${index + 1}: expected stable JSON`);
+    }
+    return [parsed];
+  });
+}
+
+function candidateFact(
+  dossierArtifacts: ReadonlyMap<HistoricalFullStopDossier["family_id"], { path: string; sha256: string }>,
+  familyId: HistoricalFullStopDossier["family_id"],
+  factKind: HistoricalCandidateFactRef["fact_kind"],
+  factId: string,
+  direction: string,
+  identifiers: readonly string[],
+): HistoricalCandidateFactRef {
+  const artifact = dossierArtifacts.get(familyId);
+  if (!artifact) throw new Error(`Missing dossier artifact for ${familyId}`);
+  const sortedIdentifiers = uniqueSorted(identifiers);
+  if (sortedIdentifiers.length === 0) throw new Error(`${factId}: candidate fact has no identifiers`);
+  return {
+    dossier_path: artifact.path,
+    dossier_sha256: artifact.sha256,
+    fact_kind: factKind,
+    fact_id: factId,
+    direction,
+    identifiers: sortedIdentifiers,
+  };
+}
+
+function comparisonFacts(
+  dossier: HistoricalFullStopDossier,
+  dossierArtifacts: ReadonlyMap<HistoricalFullStopDossier["family_id"], { path: string; sha256: string }>,
+  comparisons: readonly HistoricalPatternComparison[],
+  factKind: HistoricalCandidateFactRef["fact_kind"],
+  identifiers: (comparison: HistoricalPatternComparison) => readonly string[],
+): HistoricalCandidateFactRef[] {
+  return comparisons.map((comparison) => candidateFact(
+    dossierArtifacts,
+    dossier.family_id,
+    factKind,
+    comparison.comparison_id,
+    comparison.direction_id,
+    identifiers(comparison),
+  ));
+}
+
+function periodChangeFact(
+  dossier: HistoricalFullStopDossier,
+  dossierArtifacts: ReadonlyMap<HistoricalFullStopDossier["family_id"], { path: string; sha256: string }>,
+  comparison: HistoricalPatternComparison,
+): HistoricalCandidateFactRef {
+  const before = dossier.patterns.find((pattern) => pattern.pattern_id === comparison.before_pattern_id);
+  const after = dossier.patterns.find((pattern) => pattern.pattern_id === comparison.after_pattern_id);
+  if (!before || !after) throw new Error(`${comparison.comparison_id}: missing pattern for period comparison`);
+  const beforeCounts = new Map<string, number>(
+    before.period_trip_counts.map((row) => [row.period, row.trip_count]),
+  );
+  const afterCounts = new Map<string, number>(
+    after.period_trip_counts.map((row) => [row.period, row.trip_count]),
+  );
+  const changed = uniqueSorted([...beforeCounts.keys(), ...afterCounts.keys()]).flatMap((period) => {
+    const beforeCount = beforeCounts.get(period) ?? 0;
+    const afterCount = afterCounts.get(period) ?? 0;
+    return beforeCount === afterCount ? [] : [
+      `before:${period}:${beforeCount}`,
+      `after:${period}:${afterCount}`,
+    ];
+  });
+  return candidateFact(
+    dossierArtifacts,
+    dossier.family_id,
+    "period_trip_count_change",
+    `${comparison.comparison_id}#period_trip_counts`,
+    comparison.direction_id,
+    changed,
+  );
+}
+
+function patternSegment(pattern: HistoricalFullStopPattern, first: string, last: string): string[] {
+  const ids = pattern.stops.map((stop) => stop.stop_id);
+  const firstIndex = ids.indexOf(first);
+  const lastIndex = ids.indexOf(last);
+  if (firstIndex < 0 || lastIndex < 0) {
+    throw new Error(`${pattern.pattern_id}: missing required segment boundary ${first}/${last}`);
+  }
+  const start = Math.min(firstIndex, lastIndex);
+  const end = Math.max(firstIndex, lastIndex);
+  return ids.slice(start, end + 1);
+}
+
+function candidateFactRefs(
+  spec: CandidateSupportSpec,
+  dossiers: ReadonlyMap<HistoricalFullStopDossier["family_id"], HistoricalFullStopDossier>,
+  dossierArtifacts: ReadonlyMap<HistoricalFullStopDossier["family_id"], { path: string; sha256: string }>,
+): HistoricalCandidateFactRef[] {
+  const q61 = dossiers.get("q61_lineage");
+  const qm44 = dossiers.get("qm44_stop_and_modality");
+  const qm64 = dossiers.get("qm64_x64_lineage");
+  if (!q61 || !qm44 || !qm64) throw new Error("Historical candidate support requires all three dossiers");
+
+  let refs: HistoricalCandidateFactRef[];
+  switch (spec.treatment_record_id) {
+    case "treatment_q61-q15-beechhurst-replacement-2025":
+      refs = comparisonFacts(
+        q61,
+        dossierArtifacts,
+        q61.comparisons.filter((row) => row.before_route_id === "Q15"),
+        "lineage_correspondence",
+        (row) => [...row.boundary_stop_ids, ...row.shared_stop_ids],
+      );
+      break;
+    case "treatment_q61-q34-linden-hill-replacement-2025":
+      refs = comparisonFacts(
+        q61,
+        dossierArtifacts,
+        q61.comparisons.filter((row) => row.before_route_id === "Q34"),
+        "lineage_correspondence",
+        (row) => [...row.boundary_stop_ids, ...row.shared_stop_ids],
+      );
+      break;
+    case "treatment_q61-beechhurst-flushing-connection-2025": {
+      const q61Patterns = q61.patterns.filter((pattern) => pattern.route_id === "Q61");
+      refs = q61Patterns.map((pattern) => {
+        const boundaries = pattern.direction_id === "0"
+          ? ["501098", "501175"] as const
+          : pattern.direction_id === "1" ? ["501196", "501134"] as const : null;
+        if (!boundaries) throw new Error(`${pattern.pattern_id}: unexpected Q61 direction`);
+        return candidateFact(
+          dossierArtifacts,
+          q61.family_id,
+          "connection_remainder",
+          `${pattern.pattern_id}#connection_remainder`,
+          pattern.direction_id,
+          patternSegment(pattern, boundaries[0], boundaries[1]),
+        );
+      });
+      break;
+    }
+    case "treatment_qm44-frequency-decrease-2025": {
+      const comparison = qm44.comparisons.find((row) => row.direction_id === "1");
+      if (!comparison) throw new Error("QM44: missing direction 1 comparison");
+      refs = [periodChangeFact(qm44, dossierArtifacts, comparison)];
+      break;
+    }
+    case "treatment_qm44-stop-removal-2025":
+      refs = comparisonFacts(
+        qm44,
+        dossierArtifacts,
+        qm44.comparisons,
+        "removed_stop_set",
+        (row) => row.stops_removed.map((stop) => stop.stop_id),
+      );
+      break;
+    case "treatment_qm64-avenue-service-discontinuation-2025": {
+      const comparison = qm64.comparisons.find((row) => row.direction_id === "1");
+      const terminal = comparison?.terminal_changes.find((row) => row.end === "suffix");
+      if (!comparison || !terminal) throw new Error("QM64: missing Midtown discontinued-segment fact");
+      refs = [candidateFact(
+        dossierArtifacts,
+        qm64.family_id,
+        "terminal_change",
+        `${comparison.comparison_id}#terminal_changes:suffix`,
+        comparison.direction_id,
+        [terminal.shared_boundary_stop_id, ...terminal.stops_removed.map((stop) => stop.stop_id)],
+      )];
+      break;
+    }
+    case "treatment_qm64-elmont-extension-2025":
+      refs = qm64.comparisons.map((comparison) => {
+        const terminal = comparison.terminal_changes.find((row) =>
+          row.stops_added.some((stop) => stop.stop_id === "700904" || stop.stop_id === "700905"));
+        if (!terminal) throw new Error(`${comparison.comparison_id}: missing Elmont terminal change`);
+        return candidateFact(
+          dossierArtifacts,
+          qm64.family_id,
+          "terminal_change",
+          `${comparison.comparison_id}#terminal_changes:${terminal.end}`,
+          comparison.direction_id,
+          [terminal.shared_boundary_stop_id, ...terminal.stops_added.map((stop) => stop.stop_id)],
+        );
+      });
+      break;
+    case "treatment_qm64-frequency-decrease-2025": {
+      const comparison = qm64.comparisons.find((row) => row.direction_id === "1");
+      if (!comparison) throw new Error("QM64: missing direction 1 comparison");
+      refs = [periodChangeFact(qm64, dossierArtifacts, comparison)];
+      break;
+    }
+    case "treatment_qm64-midtown-stop-additions-2025": {
+      const comparison = qm64.comparisons.find((row) => row.direction_id === "1");
+      if (!comparison) throw new Error("QM64: missing Midtown-bound comparison");
+      const midtownStopIds = [
+        "402144", "402146", "404295", "404297", "404298", "404300", "404877", "450041", "904045",
+      ];
+      const available = new Set(comparison.stops_added.map((stop) => stop.stop_id));
+      if (midtownStopIds.some((stopId) => !available.has(stopId))) {
+        throw new Error(`${comparison.comparison_id}: incomplete Midtown added-stop set`);
+      }
+      refs = [candidateFact(
+        dossierArtifacts,
+        qm64.family_id,
+        "added_stop_set",
+        `${comparison.comparison_id}#midtown_stops_added`,
+        comparison.direction_id,
+        midtownStopIds,
+      )];
+      break;
+    }
+    case "treatment_qm64-route-rename-2025":
+      refs = comparisonFacts(
+        qm64,
+        dossierArtifacts,
+        qm64.comparisons,
+        "route_rename",
+        (row) => [row.before_route_id, row.after_route_id],
+      );
+      break;
+    case "treatment_qm64-stop-removal-2025":
+      refs = comparisonFacts(
+        qm64,
+        dossierArtifacts,
+        qm64.comparisons,
+        "removed_stop_set",
+        (row) => row.stops_removed.map((stop) => stop.stop_id),
+      );
+      break;
+    default:
+      throw new Error(`No historical support mapping for ${spec.treatment_record_id}`);
+  }
+  if (refs.length === 0) throw new Error(`${spec.treatment_record_id}: candidate has no historical facts`);
+  return refs.sort((left, right) =>
+    stableJson(left as unknown as JsonValue).localeCompare(stableJson(right as unknown as JsonValue)));
+}
+
+export function buildHistoricalCandidateSupportRows(
+  companionRows: readonly MemberExtentRow[],
+  dossiers: readonly HistoricalFullStopDossier[],
+  dossierArtifacts: readonly { family_id: HistoricalFullStopDossier["family_id"]; path: string; sha256: string }[],
+): HistoricalCandidateSupportRow[] {
+  const targetRouteIds = new Set(["Q61", "QM44", "QM64"]);
+  const candidates = companionRows.filter((row) => targetRouteIds.has(row.gtfs_route_id))
+    .sort((left, right) => candidateSupportKey(left).localeCompare(candidateSupportKey(right)));
+  const candidateKeys = candidates.map(candidateSupportKey);
+  const expectedKeys = CANDIDATE_SUPPORT_SPECS.map(candidateSupportKey);
+  const missing = expectedKeys.filter((key) => !candidateKeys.includes(key));
+  const extra = candidateKeys.filter((key) => !expectedKeys.includes(key));
+  if (missing.length > 0 || extra.length > 0 || new Set(candidateKeys).size !== candidateKeys.length) {
+    throw new Error(
+      `Historical candidate package key drift: missing=${missing.length}, extra=${extra.length}, ` +
+      `duplicate=${candidateKeys.length - new Set(candidateKeys).size}`,
+    );
+  }
+  const dossierByFamily = new Map(dossiers.map((dossier) => [dossier.family_id, dossier]));
+  const artifactByFamily = new Map(dossierArtifacts.map((artifact) => [
+    artifact.family_id,
+    { path: artifact.path, sha256: artifact.sha256 },
+  ]));
+  const rowByKey = new Map(candidates.map((row) => [candidateSupportKey(row), row]));
+  return CANDIDATE_SUPPORT_SPECS.map((spec) => {
+    const row = rowByKey.get(candidateSupportKey(spec));
+    if (!row) throw new Error(`Missing historical candidate ${candidateSupportKey(spec)}`);
+    if (row.extent !== spec.expected_extent_kind ||
+        stableJson(row.missing_roles as unknown as JsonValue) !==
+          stableJson(spec.expected_missing_roles as unknown as JsonValue)) {
+      throw new Error(`${spec.treatment_record_id}: current extent or missing-role drift`);
+    }
+    return {
+      occurrence_id: row.occurrence_id,
+      route_record_id: row.route_record_id,
+      gtfs_route_id: spec.gtfs_route_id,
+      treatment_record_id: row.treatment_record_id,
+      extent_id: row.extent_id,
+      current_extent_kind: row.extent,
+      current_missing_roles: [...row.missing_roles],
+      historical_evidence_verdict: spec.verdict,
+      fact_refs: candidateFactRefs(spec, dossierByFamily, artifactByFamily),
+      decision_authority: false,
+      occurrence_authority: false,
+    };
+  });
+}
+
 export function writeHistoricalFullStopEvidence(): HistoricalFullStopWriteResult {
   const registry = loadOperationalSnapshotRegistry();
   const historicalSnapshots = Object.values(SNAPSHOTS).map((definition) =>
@@ -811,6 +1262,75 @@ export function writeHistoricalFullStopEvidence(): HistoricalFullStopWriteResult
     identity_rule: "identical_stop_ids_only_no_proximity_identity",
   };
   writeImmutableJson(acceptanceManifestPath, acceptanceManifest as unknown as JsonValue);
+
+  const companionSha256 = fileSha256(HISTORICAL_FULL_STOP_COMPANION_PATH);
+  const riskArtifactSha256 = fileSha256(HISTORICAL_FULL_STOP_RISK_ARTIFACT_PATH);
+  const riskArtifact = JSON.parse(readFileSync(HISTORICAL_FULL_STOP_RISK_ARTIFACT_PATH, "utf8")) as {
+    input_pins?: Array<{ path?: string; sha256?: string }>;
+  };
+  const riskCompanionPin = riskArtifact.input_pins?.find((pin) =>
+    pin.path === relative(repoRoot, HISTORICAL_FULL_STOP_COMPANION_PATH));
+  if (riskCompanionPin?.sha256 !== companionSha256) {
+    throw new Error("Plan 040 risk artifact does not pin the current member-extent companion");
+  }
+  const dossierSupportArtifacts = dossiers.map((dossier, index) => ({
+    family_id: dossier.family_id,
+    path: relative(repoRoot, dossierPaths[index]!),
+    sha256: dossierHashes[index]!,
+  })).sort((left, right) => left.family_id.localeCompare(right.family_id));
+  const candidateSupportRows = buildHistoricalCandidateSupportRows(
+    readCurrentCompanionRows(),
+    dossiers,
+    dossierSupportArtifacts,
+  );
+  const candidateVerdictDistribution = Object.fromEntries(
+    uniqueSorted(candidateSupportRows.map((row) => row.historical_evidence_verdict))
+      .map((verdict) => [
+        verdict,
+        candidateSupportRows.filter((row) => row.historical_evidence_verdict === verdict).length,
+      ]),
+  );
+  const packageInputPins = [
+    {
+      path: relative(repoRoot, HISTORICAL_FULL_STOP_COMPANION_PATH),
+      sha256: companionSha256,
+    },
+    {
+      path: relative(repoRoot, HISTORICAL_FULL_STOP_RISK_ARTIFACT_PATH),
+      sha256: riskArtifactSha256,
+    },
+  ].sort((left, right) => left.path.localeCompare(right.path));
+  const candidateReplayPayload = {
+    prior_acceptance_manifest_sha256: fileSha256(acceptanceManifestPath),
+    package_input_pins: packageInputPins,
+    dossiers: dossierSupportArtifacts,
+    candidate_support_rows: candidateSupportRows,
+    candidate_verdict_distribution: candidateVerdictDistribution,
+  };
+  const candidateReplayHash = stableHash(candidateReplayPayload as unknown as JsonValue);
+  const acceptanceManifestV2Path = join(HISTORICAL_FULL_STOP_ROOT, "acceptance-manifest-v2.json");
+  const acceptanceManifestV2 = {
+    schema_version: 2,
+    acceptance_id: "plan-040-step-2a-acceptance-v2",
+    prior_acceptance_manifest: {
+      path: relative(repoRoot, acceptanceManifestPath),
+      sha256: fileSha256(acceptanceManifestPath),
+    },
+    package_input_pins: packageInputPins,
+    dossiers: dossierSupportArtifacts,
+    exact_candidate_key_rule: "current_companion_rows_for_q61_qm44_qm64_exact_expected_keys_v1",
+    candidate_support_rows: candidateSupportRows,
+    covered_candidate_count: candidateSupportRows.length,
+    covered_route_family_count: new Set(candidateSupportRows.map((row) => row.gtfs_route_id)).size,
+    candidate_verdict_distribution: candidateVerdictDistribution,
+    evidence_fact_distribution: verdictDistribution,
+    replay_hash: candidateReplayHash,
+    authorization_state: "candidate_evidence_only_pending_dual_independent_review",
+    occurrence_authority: false,
+    decision_authority: false,
+    identity_rule: "identical_stop_ids_only_no_proximity_identity",
+  };
+  writeImmutableJson(acceptanceManifestV2Path, acceptanceManifestV2 as unknown as JsonValue);
   return {
     acquisition_receipt_path: HISTORICAL_FULL_STOP_ACQUISITION_RECEIPT_PATH,
     acquisition_receipt_sha256: acquisitionReceiptSha,
@@ -818,11 +1338,11 @@ export function writeHistoricalFullStopEvidence(): HistoricalFullStopWriteResult
     acquisition_manifest_sha256: fileSha256(acquisitionManifestPath),
     dossier_paths: dossierPaths,
     dossier_sha256s: dossierHashes,
-    acceptance_manifest_path: acceptanceManifestPath,
-    acceptance_manifest_sha256: fileSha256(acceptanceManifestPath),
-    replay_hash: replayHash,
-    covered_candidate_count: 11,
-    verdict_distribution: verdictDistribution,
+    acceptance_manifest_path: acceptanceManifestV2Path,
+    acceptance_manifest_sha256: fileSha256(acceptanceManifestV2Path),
+    replay_hash: candidateReplayHash,
+    covered_candidate_count: candidateSupportRows.length,
+    verdict_distribution: candidateVerdictDistribution,
   };
 }
 
@@ -856,4 +1376,25 @@ export function historicalFullStopReplayHash(
     verdict_distribution: verdictDistribution,
   };
   return createHash("sha256").update(stableJson(payload as unknown as JsonValue)).digest("hex");
+}
+
+export function historicalFullStopCandidateReplayHash(input: {
+  prior_acceptance_manifest_sha256: string;
+  package_input_pins: readonly { path: string; sha256: string }[];
+  dossiers: readonly {
+    family_id: HistoricalFullStopDossier["family_id"];
+    path: string;
+    sha256: string;
+  }[];
+  candidate_support_rows: readonly HistoricalCandidateSupportRow[];
+  candidate_verdict_distribution: Readonly<Record<string, number>>;
+}): string {
+  return createHash("sha256").update(stableJson({
+    prior_acceptance_manifest_sha256: input.prior_acceptance_manifest_sha256,
+    package_input_pins: [...input.package_input_pins].sort((left, right) => left.path.localeCompare(right.path)),
+    dossiers: [...input.dossiers].sort((left, right) => left.family_id.localeCompare(right.family_id)),
+    candidate_support_rows: [...input.candidate_support_rows].sort((left, right) =>
+      candidateSupportKey(left).localeCompare(candidateSupportKey(right))),
+    candidate_verdict_distribution: input.candidate_verdict_distribution,
+  } as unknown as JsonValue)).digest("hex");
 }

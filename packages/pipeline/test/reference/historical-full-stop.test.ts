@@ -1,11 +1,19 @@
 import { describe, expect, it } from "bun:test";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import { repoRoot } from "@mta-wiki/core/paths";
 import {
+  buildHistoricalCandidateSupportRows,
   compareFullStopPatterns,
   fullStopPatternsForDate,
+  historicalFullStopCandidateReplayHash,
   historicalFullStopReplayHash,
+  type HistoricalFullStopDossier,
   type HistoricalFullStopPattern,
 } from "../../src/reference/historical-full-stop";
 import type { GtfsStaticSnapshot } from "../../src/reference/gtfs-static";
+import { fileSha256 } from "../../src/reference/snapshot-registry";
+import type { MemberExtentRow } from "../../src/quality/study-readiness-v1";
 
 function pattern(
   patternId: string,
@@ -126,6 +134,45 @@ function snapshotFixture(): GtfsStaticSnapshot {
   };
 }
 
+function candidateSupportFixture(): {
+  companion: MemberExtentRow[];
+  dossiers: HistoricalFullStopDossier[];
+  artifacts: Array<{
+    family_id: HistoricalFullStopDossier["family_id"];
+    path: string;
+    sha256: string;
+  }>;
+} {
+  const companionPath = join(
+    repoRoot,
+    "data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl",
+  );
+  const companion = readFileSync(companionPath, "utf8").trim().split("\n")
+    .map((line) => JSON.parse(line) as MemberExtentRow);
+  const files = [
+    "q61_lineage.json",
+    "qm44_stop_and_modality.json",
+    "qm64_x64_lineage.json",
+  ];
+  const artifacts = files.map((file) => {
+    const path = join(repoRoot, "data/quality/operational-reference/historical-full-stop", file);
+    const dossier = JSON.parse(readFileSync(path, "utf8")) as HistoricalFullStopDossier;
+    return {
+      dossier,
+      artifact: {
+        family_id: dossier.family_id,
+        path: `data/quality/operational-reference/historical-full-stop/${file}`,
+        sha256: fileSha256(path),
+      },
+    };
+  });
+  return {
+    companion,
+    dossiers: artifacts.map((row) => row.dossier),
+    artifacts: artifacts.map((row) => row.artifact),
+  };
+}
+
 describe("historical full-stop evidence", () => {
   it("filters non-revenue trips and non-revenue stop-time waypoints", () => {
     const patterns = fullStopPatternsForDate(snapshotFixture(), "2025-06-30", "QM44");
@@ -201,5 +248,101 @@ describe("historical full-stop evidence", () => {
       { path: "b.json", sha256: "b" },
     ], distribution);
     expect(left).toBe(right);
+  });
+
+  it("derives the exact 11-key exemplar package and candidate verdict distribution", () => {
+    const fixture = candidateSupportFixture();
+    const rows = buildHistoricalCandidateSupportRows(
+      fixture.companion,
+      fixture.dossiers,
+      fixture.artifacts,
+    );
+    expect(rows).toHaveLength(11);
+    expect(Object.fromEntries([...new Set(rows.map((row) => row.historical_evidence_verdict))]
+      .sort()
+      .map((verdict) => [
+        verdict,
+        rows.filter((row) => row.historical_evidence_verdict === verdict).length,
+      ]))).toEqual({
+      bounded_segment_supported: 3,
+      lineage_supported: 2,
+      route_rename_supported: 1,
+      service_scope_supported: 2,
+      stop_set_supported: 3,
+    });
+    expect(rows.every((row) =>
+      row.fact_refs.length > 0 &&
+      row.decision_authority === false &&
+      row.occurrence_authority === false)).toBe(true);
+  });
+
+  it("fails closed on missing, extra, or state-drifted candidate keys", () => {
+    const fixture = candidateSupportFixture();
+    const targetRows = fixture.companion.filter((row) =>
+      row.gtfs_route_id === "Q61" || row.gtfs_route_id === "QM44" || row.gtfs_route_id === "QM64");
+    const targetKeys = new Set(targetRows.map((row) =>
+      `${row.occurrence_id}\0${row.route_record_id}\0${row.treatment_record_id}`));
+    const withoutOne = fixture.companion.filter((row) =>
+      `${row.occurrence_id}\0${row.route_record_id}\0${row.treatment_record_id}` !==
+      `${targetRows[0]!.occurrence_id}\0${targetRows[0]!.route_record_id}\0${targetRows[0]!.treatment_record_id}`);
+    expect(() => buildHistoricalCandidateSupportRows(
+      withoutOne,
+      fixture.dossiers,
+      fixture.artifacts,
+    )).toThrow("missing=1");
+
+    const extra = {
+      ...targetRows[0]!,
+      treatment_record_id: "treatment_unexpected",
+      extent_id: "member-extent:unexpected",
+    };
+    expect(targetKeys.has(
+      `${extra.occurrence_id}\0${extra.route_record_id}\0${extra.treatment_record_id}`,
+    )).toBe(false);
+    expect(() => buildHistoricalCandidateSupportRows(
+      [...fixture.companion, extra],
+      fixture.dossiers,
+      fixture.artifacts,
+    )).toThrow("extra=1");
+
+    const drifted = fixture.companion.map((row) =>
+      row === targetRows[0] ? { ...row, missing_roles: ["scope_evidence"] as const } : row);
+    expect(() => buildHistoricalCandidateSupportRows(
+      drifted,
+      fixture.dossiers,
+      fixture.artifacts,
+    )).toThrow("current extent or missing-role drift");
+  });
+
+  it("candidate replay binds key rows and is independent of input ordering", () => {
+    const fixture = candidateSupportFixture();
+    const rows = buildHistoricalCandidateSupportRows(
+      fixture.companion,
+      fixture.dossiers,
+      fixture.artifacts,
+    );
+    const input = {
+      prior_acceptance_manifest_sha256: "prior",
+      package_input_pins: [
+        { path: "risk.json", sha256: "risk" },
+        { path: "companion.jsonl", sha256: "companion" },
+      ],
+      dossiers: fixture.artifacts,
+      candidate_support_rows: rows,
+      candidate_verdict_distribution: { supported: 11 },
+    };
+    expect(historicalFullStopCandidateReplayHash(input)).toBe(
+      historicalFullStopCandidateReplayHash({
+        ...input,
+        package_input_pins: [...input.package_input_pins].reverse(),
+        dossiers: [...input.dossiers].reverse(),
+        candidate_support_rows: [...input.candidate_support_rows].reverse(),
+      }),
+    );
+    expect(historicalFullStopCandidateReplayHash({
+      ...input,
+      candidate_support_rows: rows.map((row, index) =>
+        index === 0 ? { ...row, historical_evidence_verdict: "stop_set_supported" as const } : row),
+    })).not.toBe(historicalFullStopCandidateReplayHash(input));
   });
 });
