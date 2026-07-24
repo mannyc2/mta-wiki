@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "acceptance_id": "plan-040-qbnr-stop-removal-package-1-owner-acceptance-v1",
+  "accepted_at": "2026-07-24T03:03:13Z",
+  "accepted_by": "codex-owner-delegate",
+  "gate": {
+    "path": "data/quality/operational-reference/member-extent-risk/plan-040-qbnr-stop-removal-package-1-dual-review-gate-v1.json",
+    "sha256": "f1bac2d3c05e844cd3a880c1a2441f27b69702262dc36fd242382aac6137891c"
+  },
+  "artifacts": {
+    "acquisition_manifest": {
+      "path": "data/quality/operational-reference/member-extent-risk/plan-040-qbnr-stop-removal-acquisition-manifest-v1.json",
+      "sha256": "43a17a230eb70e9b7c322d2125b0db99910f035e688652624d4ce0e97a08a1d4"
+    },
+    "schedule_trip_type_sensitivity": {
+      "path": "data/quality/operational-reference/member-extent-risk/plan-040-schedule-trip-type-sensitivity-v1.json",
+      "sha256": "b0fb4cacab4d3c9460684841792253ae360183a635484c5efcef17599366dd7b"
+    }
+  },
+  "candidate_count": 37,
+  "inventory_status_distribution": {
+    "accepted_reused": 24,
+    "correction_sensitive_incomplete": 1,
+    "phase_2_required": 12
+  },
+  "reviewer_results": {
+    "main_advisor": "approve",
+    "plan040_pkg1_manifest_audit": "approve"
+  },
+  "authorization_state": "owner_accepted_package_freeze_evidence_acquisition_only",
+  "decision_count": 0,
+  "authorizes_package_freeze": true,
+  "authorizes_evidence_acquisition_acceptance": true,
+  "authorizes_occurrence": false,
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "authorizes_decision_persistence": false
+}

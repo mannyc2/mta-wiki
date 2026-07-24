@@ -7,6 +7,7 @@ import type { JsonValue } from "../../../db/src/types";
 import {
   buildPlan040QbnrStopRemovalAcquisitionManifest,
   plan040QbnrAcquisitionReplayHash,
+  validatePlan040QbnrStopRemovalPackage1Acceptance,
 } from "../../src/quality/plan040-qbnr-stop-removal-acquisition";
 
 const read = (path: string) => readFileSync(`${repoRoot}/${path}`, "utf8");
@@ -357,6 +358,42 @@ describe("Plan 040 QBNR generic stop-removal acquisition manifest", () => {
     );
     expect(createHash("sha256").update(sensitivityBytes).digest("hex"))
       .toBe("b0fb4cacab4d3c9460684841792253ae360183a635484c5efcef17599366dd7b");
+  });
+
+  it("binds dual approval and owner acceptance to Package 1 evidence acquisition only", () => {
+    const acceptanceInputs = {
+      manifestJson: read(
+        "data/quality/operational-reference/member-extent-risk/" +
+          "plan-040-qbnr-stop-removal-acquisition-manifest-v1.json",
+      ),
+      scheduleSensitivityJson: read(
+        "data/quality/operational-reference/member-extent-risk/" +
+          "plan-040-schedule-trip-type-sensitivity-v1.json",
+      ),
+      gateJson: read(
+        "data/quality/operational-reference/member-extent-risk/" +
+          "plan-040-qbnr-stop-removal-package-1-dual-review-gate-v1.json",
+      ),
+      ownerAcceptanceJson: read(
+        "data/quality/operational-reference/member-extent-risk/" +
+          "plan-040-qbnr-stop-removal-package-1-owner-acceptance-v1.json",
+      ),
+    };
+    expect(validatePlan040QbnrStopRemovalPackage1Acceptance(acceptanceInputs)).toEqual({
+      gate_sha256: "f1bac2d3c05e844cd3a880c1a2441f27b69702262dc36fd242382aac6137891c",
+      owner_acceptance_sha256:
+        "ec2085023d53fda66072b34bc612249f33d02a23a8d4636d1671cca9168f1cd1",
+    });
+
+    const overAuthorized = JSON.parse(acceptanceInputs.ownerAcceptanceJson) as Record<
+      string,
+      unknown
+    >;
+    overAuthorized.authorizes_decision_persistence = true;
+    expect(() => validatePlan040QbnrStopRemovalPackage1Acceptance({
+      ...acceptanceInputs,
+      ownerAcceptanceJson: JSON.stringify(overAuthorized),
+    })).toThrow("stale or over-authorizing");
   });
 
   it("fails closed on denominator, URL, and source-byte drift", () => {

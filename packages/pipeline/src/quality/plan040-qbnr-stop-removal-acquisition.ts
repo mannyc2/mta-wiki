@@ -8,6 +8,12 @@ export const PLAN040_QBNR_STOP_REMOVAL_ACQUISITION_CONTRACT =
   "plan-040-qbnr-stop-removal-acquisition-v1" as const;
 export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE =
   "plan-040-qbnr-generic-stop-removal-risk-v1" as const;
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_1_GATE_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-package-1-dual-review-gate-v1.json";
+export const PLAN040_QBNR_STOP_REMOVAL_PACKAGE_1_OWNER_ACCEPTANCE_PATH =
+  "data/quality/operational-reference/member-extent-risk/" +
+  "plan-040-qbnr-stop-removal-package-1-owner-acceptance-v1.json";
 
 const SOURCE_ID = "mta_queens_bus_network_redesign_service_changes";
 const SOURCE_URL = "https://www.mta.info/project/queens-bus-network-redesign/service-changes";
@@ -1355,4 +1361,193 @@ export function plan040QbnrAcquisitionReplayHash(
   manifest: Plan040QbnrStopRemovalAcquisitionManifest,
 ): string {
   return sha256(`${stableJson(manifest as unknown as JsonValue)}\n`);
+}
+
+export function validatePlan040QbnrStopRemovalPackage1Acceptance(input: {
+  manifestJson: string;
+  scheduleSensitivityJson: string;
+  gateJson: string;
+  ownerAcceptanceJson: string;
+}): { gate_sha256: string; owner_acceptance_sha256: string } {
+  const manifestSha256 = sha256(input.manifestJson);
+  const sensitivitySha256 = sha256(input.scheduleSensitivityJson);
+  if (manifestSha256 !== "43a17a230eb70e9b7c322d2125b0db99910f035e688652624d4ce0e97a08a1d4") {
+    throw new Error("Plan 040 Package 1 acceptance manifest identity drifted");
+  }
+  if (sensitivitySha256 !== "b0fb4cacab4d3c9460684841792253ae360183a635484c5efcef17599366dd7b") {
+    throw new Error("Plan 040 Package 1 schedule sensitivity identity drifted");
+  }
+
+  const manifest = object(JSON.parse(input.manifestJson) as unknown, "Package 1 manifest");
+  const manifestDistribution = object(
+    manifest.inventory_status_distribution,
+    "Package 1 manifest inventory distribution",
+  );
+  if (
+    manifest.candidate_count !== 37 ||
+    manifest.decision_count !== 0 ||
+    manifestDistribution.accepted_reused !== 24 ||
+    manifestDistribution.incomplete_requires_later_queens_post_inventory !== 1 ||
+    manifestDistribution.required_not_yet_accepted !== 12 ||
+    manifest.authorizes_occurrence !== false ||
+    manifest.authorizes_study !== false ||
+    manifest.authorizes_cross_product !== false
+  ) {
+    throw new Error("Plan 040 Package 1 manifest accounting or authorization drifted");
+  }
+  const sensitivity = object(
+    JSON.parse(input.scheduleSensitivityJson) as unknown,
+    "Package 1 schedule sensitivity",
+  );
+  if (
+    sensitivity.authorizes_occurrence !== false ||
+    sensitivity.authorizes_study !== false ||
+    sensitivity.authorizes_cross_product !== false
+  ) {
+    throw new Error("Plan 040 Package 1 sensitivity gained unsupported authority");
+  }
+
+  const gate = object(JSON.parse(input.gateJson) as unknown, "Package 1 dual-review gate");
+  const gateArtifacts = object(gate.artifacts, "Package 1 gate artifacts");
+  const gateManifest = object(gateArtifacts.acquisition_manifest, "Package 1 gate manifest");
+  const gateSensitivity = object(
+    gateArtifacts.schedule_trip_type_sensitivity,
+    "Package 1 gate sensitivity",
+  );
+  const gateDistribution = object(
+    gate.inventory_status_distribution,
+    "Package 1 gate inventory distribution",
+  );
+  const checkpointTests = object(gate.checkpoint_tests, "Package 1 gate checkpoint tests");
+  const focusedCheckpoint = object(checkpointTests.focused, "Package 1 focused checkpoint");
+  const typecheckCheckpoint = object(checkpointTests.typecheck, "Package 1 typecheck checkpoint");
+  const validateCheckpoint = object(checkpointTests.validate, "Package 1 validate checkpoint");
+  const replayCheckpoint = object(
+    checkpointTests.deterministic_replay,
+    "Package 1 replay checkpoint",
+  );
+  const fullRepositoryCheckpoint = object(
+    checkpointTests.full_repository,
+    "Package 1 full-repository checkpoint",
+  );
+  const gateReviewers = Array.isArray(gate.reviewer_results) ? gate.reviewer_results : [];
+  const expectedReviewerResults = [
+    {
+      role: "independent_main_advisor_evidence_review",
+      reviewer_id: "main_advisor",
+      verdict: "approve",
+    },
+    {
+      role: "independent_manifest_and_fail_closed_audit",
+      reviewer_id: "plan040_pkg1_manifest_audit",
+      verdict: "approve",
+    },
+  ];
+  if (
+    gate.gate_id !== "plan-040-qbnr-stop-removal-package-1-dual-review-gate-v1" ||
+    gate.package_id !== PLAN040_QBNR_STOP_REMOVAL_PACKAGE ||
+    gate.reviewed_commit !== "80d0b2471587274b53dc728ff16a6fc93cbdb70d" ||
+    gateManifest.path !==
+      "data/quality/operational-reference/member-extent-risk/" +
+        "plan-040-qbnr-stop-removal-acquisition-manifest-v1.json" ||
+    gateManifest.sha256 !== manifestSha256 ||
+    gateSensitivity.path !==
+      "data/quality/operational-reference/member-extent-risk/" +
+        "plan-040-schedule-trip-type-sensitivity-v1.json" ||
+    gateSensitivity.sha256 !== sensitivitySha256 ||
+    gate.candidate_count !== 37 ||
+    gateDistribution.accepted_reused !== 24 ||
+    gateDistribution.correction_sensitive_incomplete !== 1 ||
+    gateDistribution.phase_2_required !== 12 ||
+    stableJson(gateReviewers as JsonValue) !==
+      stableJson(expectedReviewerResults as unknown as JsonValue) ||
+    focusedCheckpoint.pass !== 9 ||
+    focusedCheckpoint.fail !== 0 ||
+    focusedCheckpoint.status !== "pass" ||
+    typecheckCheckpoint.status !== "pass" ||
+    validateCheckpoint.issues !== 0 ||
+    validateCheckpoint.warnings !== 3 ||
+    validateCheckpoint.status !== "pass" ||
+    replayCheckpoint.sha256 !== manifestSha256 ||
+    replayCheckpoint.status !== "pass" ||
+    fullRepositoryCheckpoint.status !== "baseline_reused" ||
+    fullRepositoryCheckpoint.baseline_classification !==
+      "known_missing_corpus_environment_family" ||
+    gate.authorization_state !==
+      "package_freeze_evidence_acquisition_dual_review_approved_pending_owner_acceptance" ||
+    gate.decision_count !== 0 ||
+    gate.authorizes_package_freeze !== false ||
+    gate.authorizes_evidence_acquisition_acceptance !== false ||
+    gate.authorizes_occurrence !== false ||
+    gate.authorizes_study !== false ||
+    gate.authorizes_cross_product !== false ||
+    gate.authorizes_decision_persistence !== false
+  ) {
+    throw new Error("Plan 040 Package 1 dual-review gate drifted or gained authority");
+  }
+
+  const gateSha256 = sha256(input.gateJson);
+  const acceptance = object(
+    JSON.parse(input.ownerAcceptanceJson) as unknown,
+    "Package 1 owner acceptance",
+  );
+  const acceptanceGate = object(acceptance.gate, "Package 1 owner acceptance gate");
+  const acceptanceArtifacts = object(
+    acceptance.artifacts,
+    "Package 1 owner acceptance artifacts",
+  );
+  const acceptanceManifest = object(
+    acceptanceArtifacts.acquisition_manifest,
+    "Package 1 owner acceptance manifest",
+  );
+  const acceptanceSensitivity = object(
+    acceptanceArtifacts.schedule_trip_type_sensitivity,
+    "Package 1 owner acceptance sensitivity",
+  );
+  const acceptanceDistribution = object(
+    acceptance.inventory_status_distribution,
+    "Package 1 owner acceptance inventory distribution",
+  );
+  const acceptanceReviewers = object(
+    acceptance.reviewer_results,
+    "Package 1 owner acceptance reviewers",
+  );
+  if (
+    acceptance.acceptance_id !==
+      "plan-040-qbnr-stop-removal-package-1-owner-acceptance-v1" ||
+    acceptance.accepted_by !== "codex-owner-delegate" ||
+    typeof acceptance.accepted_at !== "string" ||
+    !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/u.test(acceptance.accepted_at) ||
+    acceptanceGate.path !== PLAN040_QBNR_STOP_REMOVAL_PACKAGE_1_GATE_PATH ||
+    acceptanceGate.sha256 !== gateSha256 ||
+    acceptanceManifest.path !==
+      "data/quality/operational-reference/member-extent-risk/" +
+        "plan-040-qbnr-stop-removal-acquisition-manifest-v1.json" ||
+    acceptanceManifest.sha256 !== manifestSha256 ||
+    acceptanceSensitivity.path !==
+      "data/quality/operational-reference/member-extent-risk/" +
+        "plan-040-schedule-trip-type-sensitivity-v1.json" ||
+    acceptanceSensitivity.sha256 !== sensitivitySha256 ||
+    acceptance.candidate_count !== 37 ||
+    acceptanceDistribution.accepted_reused !== 24 ||
+    acceptanceDistribution.correction_sensitive_incomplete !== 1 ||
+    acceptanceDistribution.phase_2_required !== 12 ||
+    acceptanceReviewers.main_advisor !== "approve" ||
+    acceptanceReviewers.plan040_pkg1_manifest_audit !== "approve" ||
+    acceptance.authorization_state !==
+      "owner_accepted_package_freeze_evidence_acquisition_only" ||
+    acceptance.decision_count !== 0 ||
+    acceptance.authorizes_package_freeze !== true ||
+    acceptance.authorizes_evidence_acquisition_acceptance !== true ||
+    acceptance.authorizes_occurrence !== false ||
+    acceptance.authorizes_study !== false ||
+    acceptance.authorizes_cross_product !== false ||
+    acceptance.authorizes_decision_persistence !== false
+  ) {
+    throw new Error("Plan 040 Package 1 owner acceptance is stale or over-authorizing");
+  }
+  return {
+    gate_sha256: gateSha256,
+    owner_acceptance_sha256: sha256(input.ownerAcceptanceJson),
+  };
 }
