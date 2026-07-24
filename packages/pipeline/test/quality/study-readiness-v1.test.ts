@@ -6,6 +6,9 @@ import { join } from "node:path";
 
 import { repoRoot } from "../../../core/src/paths";
 import {
+  PLAN040_PACKAGE_14_CONTRACT_EXTENT_HISTOGRAM,
+} from "../../src/quality/plan040-accelerated-package14-closeout";
+import {
   classifyDownstreamDisposition,
   extentDecisionKey,
   mergeAcceptedMemberExtentDecisions,
@@ -59,11 +62,8 @@ describe("study-readiness v1 extent contract", () => {
     expect(summary.member_extent_row_count).toBe(308);
     expect(summary.eligible_member_extent_row_count).toBe(306);
     expect(summary.extent_counts).toEqual({
-      route_wide: 14,
-      bounded_segment: 47,
-      stop_set: 7,
+      ...PLAN040_PACKAGE_14_CONTRACT_EXTENT_HISTOGRAM,
       mixed: 0,
-      unresolved: 240,
     });
     expect(rows.every((row) => !row.authorizes_study && !row.authorizes_cross_product)).toBe(true);
     expect(rows.filter((row) => row.extent === "unresolved")

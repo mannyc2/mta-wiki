@@ -4,6 +4,10 @@ import { describe, expect, it } from "bun:test";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
+import { PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS } from
+  "../../src/quality/plan040-accelerated-package14-closeout";
+import { PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS } from
+  "../../src/quality/plan040-qbnr-bus-stop-package13-closeout";
 import {
   PLAN040_PACKAGE_12_CHECKPOINT_PATH,
   PLAN040_PACKAGE_12_CHECKPOINT_SHA256,
@@ -247,7 +251,7 @@ describe("Plan 040 Package 13 accepted 31-closure shared-semantics checkpoint", 
     });
   });
 
-  it("pins current histograms and grants no authority", () => {
+  it("pins its historical histograms and the current Package 14 bytes", () => {
     const checkpoint = readCheckpoint();
     expect(checkpoint.current_projection.member_extent_histogram).toEqual({
       absent_in_source: 165,
@@ -265,11 +269,20 @@ describe("Plan 040 Package 13 accepted 31-closure shared-semantics checkpoint", 
       unreviewed: 65,
     });
     for (
-      const artifact of Object.values(
+      const [name, artifact] of Object.entries(
         checkpoint.current_projection.artifacts,
       )
     ) {
-      expect(artifactSha(artifact.path)).toBe(artifact.sha256);
+      expect(artifact.sha256).toBe(
+        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS
+        ],
+      );
+      expect(artifactSha(artifact.path)).toBe(
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS
+        ],
+      );
     }
     expect(checkpoint.comparison.plan040_package_13).toEqual({
       additional_failures: 0,

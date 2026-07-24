@@ -9,6 +9,8 @@ import { dirname, resolve } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
+import { PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS } from
+  "./plan040-accelerated-package14-closeout.js";
 import {
   PLAN040_PACKAGE_13_ACCEPTANCE_SHA256,
   PLAN040_PACKAGE_13_APPROVED_COMMIT,
@@ -29,6 +31,8 @@ const RISK_ROOT =
   "data/quality/operational-reference/member-extent-risk";
 export const PLAN040_PACKAGE_13_CHECKPOINT_PATH =
   `${RISK_ROOT}/plan-040-package-13-checkpoint-v1.json`;
+export const PLAN040_PACKAGE_13_CHECKPOINT_SHA256 =
+  "6fd187bbf0b80893f97cbd8decdf9eb79c4965c9649456c8c2895896cbf3c7b7";
 export const PLAN040_PACKAGE_12_CHECKPOINT_PATH =
   `${RISK_ROOT}/plan-040-package-12-checkpoint-v1.json`;
 export const PLAN040_PACKAGE_12_CHECKPOINT_SHA256 =
@@ -189,6 +193,19 @@ const projectionArtifacts = {
   },
 } as const;
 
+const package14ProjectionArtifacts = Object.fromEntries(
+  Object.entries(projectionArtifacts).map(([name, artifact]) => [
+    name,
+    {
+      path: artifact.path,
+      sha256:
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS
+        ],
+    },
+  ]),
+) as Record<string, { path: string; sha256: string }>;
+
 type TestCounts = {
   pass: number;
   skip: number;
@@ -261,6 +278,28 @@ function assertPinnedArtifacts(
   }
 }
 
+function pinnedArtifactsMatch(
+  rootDir: string,
+  artifacts: Record<string, { path: string; sha256: string }>,
+): boolean {
+  return Object.values(artifacts).every((artifact) =>
+    artifactSha256(rootDir, artifact.path) === artifact.sha256
+  );
+}
+
+function readImmutableCheckpointForPackage14Replay(
+  rootDir: string,
+): Record<string, unknown> {
+  const path = resolve(rootDir, PLAN040_PACKAGE_13_CHECKPOINT_PATH);
+  const bytes = readFileSync(path);
+  if (sha256(bytes) !== PLAN040_PACKAGE_13_CHECKPOINT_SHA256) {
+    throw new Error(
+      "Package 13 historical checkpoint drifted during Package 14 replay",
+    );
+  }
+  return JSON.parse(bytes.toString("utf8")) as Record<string, unknown>;
+}
+
 function readJsonl(rootDir: string, path: string): Array<Record<string, unknown>> {
   return readFileSync(resolve(rootDir, path), "utf8").trim().split("\n")
     .filter(Boolean)
@@ -288,6 +327,9 @@ export function buildPlan040Package13Checkpoint(
   rootDir = repoRoot,
 ): Record<string, unknown> {
   assertPinnedArtifacts(rootDir, packageArtifacts);
+  if (pinnedArtifactsMatch(rootDir, package14ProjectionArtifacts)) {
+    return readImmutableCheckpointForPackage14Replay(rootDir);
+  }
   assertPinnedArtifacts(rootDir, projectionArtifacts);
   const previousPath = resolve(rootDir, PLAN040_PACKAGE_12_CHECKPOINT_PATH);
   const previousBytes = readFileSync(previousPath);

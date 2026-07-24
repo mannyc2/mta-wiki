@@ -4,8 +4,8 @@ import { readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import { stableJson } from "../../../db/src/stable-json";
 import type { JsonValue } from "../../../db/src/types";
-import { PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS } from
-  "../../src/quality/plan040-qbnr-bus-stop-package13-closeout";
+import { PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS } from
+  "../../src/quality/plan040-accelerated-package14-closeout";
 
 const riskRoot =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk`;
@@ -351,7 +351,7 @@ describe("Plan 040 Package 10B through 12 accepted 25-closure checkpoint", () =>
     });
   });
 
-  it("preserves the Package 12 projection snapshot while Package 13 is current", () => {
+  it("preserves the Package 12 snapshot while Package 14 is current", () => {
     const checkpoint = readJson<Checkpoint>(checkpointPath);
     expect(checkpoint.current_projection).toEqual({
       bridge_ledger_sha256:
@@ -405,8 +405,8 @@ describe("Plan 040 Package 10B through 12 accepted 25-closure checkpoint", () =>
     } as const;
     for (const [pinKey, projection] of Object.entries(projectionPaths)) {
       expect(artifactSha(projection.path)).toBe(
-        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS[
-          pinKey as keyof typeof PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS[
+          pinKey as keyof typeof PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS
         ],
       );
     }

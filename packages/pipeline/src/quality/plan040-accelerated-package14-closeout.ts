@@ -90,6 +90,80 @@ export const PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS = {
     "0ac700c48740fff5eb36b626b8dee72f95212378c0b40bc3dc6265b32c3d5844",
 } as const;
 
+export const PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM = {
+  absent_in_source: 165,
+  "blocked_upstream:ace_corridor_endpoint_inventory+bounded_scope_identity": 1,
+  "blocked_upstream:candidate_named_stop_pair_not_named_and_not_isolatable_from_changed_id_diff":
+    1,
+  "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_and_jamaica_reroute_diff":
+    1,
+  "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_diff":
+    1,
+  "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window":
+    1,
+  "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window+no_effective_date_schedule_slice":
+    2,
+  "blocked_upstream:effective_date_full_stop_inventory+exact_boarding_stop_identity+exact_stop_id_equivalence":
+    1,
+  "blocked_upstream:effective_date_full_stop_inventory+exact_stop_id_equivalence+revenue_trip_validation":
+    4,
+  "blocked_upstream:effective_date_full_stop_inventory+exact_stop_id_equivalence+revenue_trip_validation+route_specific_trip_pattern_binding":
+    20,
+  "blocked_upstream:historical_full_stop_inventory_2010+historical_stop_id_equivalence":
+    1,
+  "blocked_upstream:historical_full_stop_inventory_2015+historical_stop_id_equivalence":
+    1,
+  "blocked_upstream:schedule_gtfs_validation_missing": 4,
+  "resolved:bounded_segment": 48,
+  "resolved:route_wide": 20,
+  "resolved:stop_set": 8,
+  unreviewed: 29,
+} as const;
+
+export const PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM = {
+  absent_in_source: 165,
+  "blocked_upstream:accepted_date_resolution+feed_version_resolution": 2,
+  "blocked_upstream:ace_corridor_endpoint_inventory+bounded_scope_identity": 1,
+  "blocked_upstream:branch_lineage_mapping+direction_lineage_mapping": 1,
+  "blocked_upstream:candidate_named_stop_pair_not_named_and_not_isolatable_from_changed_id_diff":
+    1,
+  "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_and_jamaica_reroute_diff":
+    1,
+  "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_diff":
+    1,
+  "blocked_upstream:corrected_initial_feed_bytes+published_launch_conflict_resolution":
+    2,
+  "blocked_upstream:cross_feed_operator_transition_requires_review+schedule_gtfs_validation_missing":
+    1,
+  "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window":
+    1,
+  "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window+no_effective_date_schedule_slice":
+    2,
+  "blocked_upstream:effective_date_full_stop_inventory+exact_boarding_stop_identity+exact_stop_id_equivalence":
+    1,
+  "blocked_upstream:effective_date_full_stop_inventory+exact_stop_id_equivalence+revenue_trip_validation":
+    4,
+  "blocked_upstream:effective_date_full_stop_inventory+exact_stop_id_equivalence+revenue_trip_validation+route_specific_trip_pattern_binding":
+    20,
+  "blocked_upstream:effective_date_full_stop_inventory+frequency_evidence+later_feed_lineage":
+    2,
+  "blocked_upstream:historical_full_stop_inventory_2010+historical_stop_id_equivalence":
+    1,
+  "blocked_upstream:historical_full_stop_inventory_2015+historical_stop_id_equivalence":
+    1,
+  "blocked_upstream:schedule_gtfs_validation_missing": 5,
+  not_applicable: 9,
+  resolved: 58,
+  unreviewed: 29,
+} as const;
+
+export const PLAN040_PACKAGE_14_CONTRACT_EXTENT_HISTOGRAM = {
+  bounded_segment: 48,
+  route_wide: 20,
+  stop_set: 8,
+  unresolved: 232,
+} as const;
+
 const RISK_PREFIX =
   "data/quality/operational-reference/member-extent-risk/";
 const RECEIPT_PREFIX =

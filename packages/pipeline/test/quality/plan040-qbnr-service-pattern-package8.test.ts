@@ -4,6 +4,10 @@ import { existsSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import type { JsonValue } from "../../../db/src/types";
 import {
+  PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM,
+  PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM,
+} from "../../src/quality/plan040-accelerated-package14-closeout";
+import {
   PLAN040_PACKAGE_8_ABSENCE_RECEIPT_SHA256,
   PLAN040_PACKAGE_8_ACCEPTANCE_SHA256,
   PLAN040_PACKAGE_8_APPROVED_COMMIT,
@@ -873,53 +877,12 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
       String(row.verdict)))].sort().map((verdict) => [
       verdict,
       allExtentRows.filter((row) => row.verdict === verdict).length,
-    ]))).toEqual({
-      absent_in_source: 165,
-      "blocked_upstream:candidate_named_stop_pair_not_named_and_not_isolatable_from_changed_id_diff":
-        1,
-      "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_and_jamaica_reroute_diff":
-        1,
-      "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_diff":
-        1,
-      "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window":
-        1,
-      "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window+no_effective_date_schedule_slice":
-        2,
-      "blocked_upstream:schedule_gtfs_validation_missing": 4,
-      "resolved:bounded_segment": 47,
-      "resolved:route_wide": 14,
-      "resolved:stop_set": 7,
-      unreviewed: 65,
-    });
+    ]))).toEqual(PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM);
     expect(Object.fromEntries([...new Set(allGrainRows.map((row) =>
       String(row.verdict)))].sort().map((verdict) => [
       verdict,
       allGrainRows.filter((row) => row.verdict === verdict).length,
-    ]))).toEqual({
-      absent_in_source: 165,
-      "blocked_upstream:accepted_date_resolution+feed_version_resolution": 2,
-      "blocked_upstream:branch_lineage_mapping+direction_lineage_mapping": 1,
-      "blocked_upstream:candidate_named_stop_pair_not_named_and_not_isolatable_from_changed_id_diff":
-        1,
-      "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_and_jamaica_reroute_diff":
-        1,
-      "blocked_upstream:candidate_named_two_removed_one_added_not_isolatable_from_changed_id_diff":
-        1,
-      "blocked_upstream:corrected_initial_feed_bytes+published_launch_conflict_resolution":
-        2,
-      "blocked_upstream:cross_feed_operator_transition_requires_review+schedule_gtfs_validation_missing":
-        1,
-      "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window":
-        1,
-      "blocked_upstream:effective_2025_08_31_outside_accepted_initial_post_full_stop_window+no_effective_date_schedule_slice":
-        2,
-      "blocked_upstream:effective_date_full_stop_inventory+frequency_evidence+later_feed_lineage":
-        2,
-      "blocked_upstream:schedule_gtfs_validation_missing": 5,
-      not_applicable: 2,
-      resolved: 57,
-      unreviewed: 65,
-    });
+    ]))).toEqual(PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM);
   });
 
   it("records the 50-candidate checkpoint and bounded Package 7 projection repair", () => {

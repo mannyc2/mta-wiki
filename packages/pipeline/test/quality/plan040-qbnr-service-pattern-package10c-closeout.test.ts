@@ -15,8 +15,8 @@ import {
   validatePlan040Package10cGateAndAcceptance,
 } from
   "../../src/quality/plan040-qbnr-service-pattern-package10c-closeout";
-import { PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS } from
-  "../../src/quality/plan040-qbnr-bus-stop-package13-closeout";
+import { PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS } from
+  "../../src/quality/plan040-accelerated-package14-closeout";
 import type { Plan040Package10cDraft } from
   "../../src/quality/plan040-qbnr-service-pattern-package10c";
 
@@ -292,8 +292,8 @@ describe("Plan 040 QBNR Package 10C gate and owner acceptance", () => {
     };
     for (const [name, path] of Object.entries(currentProjectionFiles)) {
       expect(sha256(readFileSync(path))).toBe(
-        PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS[
-          name as keyof typeof PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS
+        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS
         ],
       );
     }
