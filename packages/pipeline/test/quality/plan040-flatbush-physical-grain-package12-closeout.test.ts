@@ -1,12 +1,16 @@
 import { describe, expect, it } from "bun:test";
 import { createHash } from "node:crypto";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import { stableJson } from "../../../db/src/stable-json";
 import {
   PLAN040_PACKAGE_12_APPROVED_COMMIT,
   PLAN040_PACKAGE_12_DRAFT_SHA256,
   PLAN040_PACKAGE_12_EVIDENCE_SHA256,
+  PLAN040_PACKAGE_12_GATE_SHA256,
+  PLAN040_PACKAGE_12_GRAIN_DECISIONS_SHA256,
+  PLAN040_PACKAGE_12_POST_PERSISTENCE_PINS,
+  buildPlan040Package12AcceptedArtifacts,
   buildPlan040Package12GateAndAcceptance,
   validatePlan040Package12GateAndAcceptance,
 } from
@@ -166,5 +170,132 @@ describe("Plan 040 Package 12 gate and owner acceptance", () => {
       draft: sourceDrift,
       acceptedAt: ACCEPTED_AT,
     })).toThrow("frozen verdict or authorization scope drifted");
+  });
+
+  it("persists exactly two linked not_applicable grain decisions", () => {
+    const draft = JSON.parse(
+      readFileSync(draftPath, "utf8"),
+    ) as Plan040Package12Draft;
+    const gate = JSON.parse(readFileSync(gatePath, "utf8")) as ReturnType<
+      typeof buildPlan040Package12GateAndAcceptance
+    >["gate"];
+    const acceptance = JSON.parse(
+      readFileSync(acceptancePath, "utf8"),
+    ) as ReturnType<
+      typeof buildPlan040Package12GateAndAcceptance
+    >["acceptance"];
+    const accepted = buildPlan040Package12AcceptedArtifacts({
+      draft,
+      gate,
+      acceptance,
+    });
+    const grainPath =
+      `${repoRoot}/data/quality/operational-reference/` +
+      "member-grain-decisions/" +
+      "plan-040-flatbush-physical-grain-package-12-v1.json";
+    expect(sha256(readFileSync(gatePath))).toBe(
+      PLAN040_PACKAGE_12_GATE_SHA256,
+    );
+    expect(sha256(readFileSync(grainPath))).toBe(
+      PLAN040_PACKAGE_12_GRAIN_DECISIONS_SHA256,
+    );
+    expect(JSON.parse(readFileSync(grainPath, "utf8"))).toEqual({
+      decisions: accepted.grainDecisions,
+    });
+    expect(accepted.grainDecisions).toHaveLength(2);
+    expect(accepted.grainDecisions.every((decision) =>
+      decision.service_scope.kind === "not_applicable" &&
+      decision.lineage_segments.length === 0 &&
+      decision.member_extent_decision_id !== null
+    )).toBeTrue();
+    expect(existsSync(
+      `${repoRoot}/data/quality/operational-reference/` +
+      "member-extent-ledger-decisions/" +
+      "plan-040-flatbush-physical-grain-package-12-v1.json",
+    )).toBeFalse();
+
+    const grainRows = readFileSync(
+      `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`,
+      "utf8",
+    ).trim().split("\n").map((line) => JSON.parse(line)) as Array<{
+      route_record_id: string;
+      treatment_record_id: string;
+      verdict: string;
+      service_scope: { kind: string } | null;
+      lineage_segments: unknown[];
+      member_extent_decision_id: string | null;
+    }>;
+    const candidateRoutes = new Set(draft.candidates.map((candidate) =>
+      candidate.route_record_id));
+    const persistedRows = grainRows.filter((row) =>
+      candidateRoutes.has(row.route_record_id) &&
+      row.treatment_record_id ===
+        "treatment_flatbush-phase1-center-running-bus-lanes-livingston-state"
+    );
+    expect(persistedRows).toHaveLength(2);
+    expect(persistedRows.every((row) =>
+      row.verdict === "not_applicable" &&
+      row.service_scope?.kind === "not_applicable" &&
+      row.lineage_segments.length === 0 &&
+      row.member_extent_decision_id !== null
+    )).toBeTrue();
+  });
+
+  it("preserves extent, study, source-gap, and nonauthority bytes", () => {
+    const draft = JSON.parse(
+      readFileSync(draftPath, "utf8"),
+    ) as Plan040Package12Draft;
+    const reviewLines = readFileSync(
+      `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/` +
+        "review-ledger.jsonl",
+      "utf8",
+    ).trim().split("\n");
+    const currentExtentRowHashes = new Map(reviewLines.map((line) => {
+      const row = JSON.parse(line) as { decision_id: string };
+      return [row.decision_id, sha256(`${line}\n`)];
+    }));
+    expect(draft.candidates.every((candidate) =>
+      currentExtentRowHashes.get(
+        candidate.immutable_candidate_rows.extent_review_decision.decision_id,
+      ) === candidate.immutable_candidate_rows.extent_review_row_sha256
+    )).toBeTrue();
+
+    const pinnedFiles = {
+      extent_ledger:
+        `${repoRoot}/data/quality/operational-reference/member-extent-ledger.jsonl`,
+      grain_ledger:
+        `${repoRoot}/data/quality/operational-reference/member-grain-ledger.jsonl`,
+      bridge_ledger:
+        `${repoRoot}/data/quality/study-readiness/v1/bridge-ledger.jsonl`,
+      study_manifest:
+        `${repoRoot}/data/quality/study-readiness/v1/manifest.json`,
+      member_extent_contract:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/` +
+        "operational_occurrence_member_extents.jsonl",
+      member_extent_manifest:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/manifest.json`,
+      member_extent_review_ledger:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/review-ledger.jsonl`,
+      member_extent_summary:
+        `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/summary.json`,
+      operational_occurrences:
+        `${repoRoot}/data/exports/releases/v1-rc26/operational_occurrences.jsonl`,
+      operational_occurrence_decisions:
+        `${repoRoot}/data/exports/releases/v1-rc26/operational_occurrence_review_decisions.json`,
+      treatment_components:
+        `${repoRoot}/data/canonical/treatment_components.jsonl`,
+      reviewed_candidate_packets:
+        `${repoRoot}/data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl`,
+    };
+    for (const [name, path] of Object.entries(pinnedFiles)) {
+      expect(sha256(readFileSync(path))).toBe(
+        PLAN040_PACKAGE_12_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_12_POST_PERSISTENCE_PINS
+        ],
+      );
+    }
+    expect(existsSync(
+      `${repoRoot}/raw/sources/nyc_dot_flatbush_installation_begins_2025`,
+    )).toBeFalse();
   });
 });

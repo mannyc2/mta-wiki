@@ -59,17 +59,17 @@ export const PLAN040_PACKAGE_10B_ABSENCE_RECEIPT_SHA256 =
   "ab1bc3150c8c3ffc1dd14f93ea18a821831a83e07ea485ac7df4c2b4b220043f" as const;
 export const PLAN040_PACKAGE_10B_POST_PERSISTENCE_PINS = {
   extent_ledger:
-    "677586944219a59e1d6d74b7bf7c6b39150a99a0a84dce6bdc4fac11cf9057e9",
+    "b6ec884cc6e0a38f09fa69b99f1b844b00b82def1477f7e48e52378fc8673c5b",
   grain_ledger:
-    "bb6c5aca8bff36494e6c1e0857d2a6e722c3fb523cd2aca2ee8b17f3fa2730cf",
+    "362538a4e870914a6c148dfb546018da1f69e81725766eba8feb891ef0fb77de",
   bridge_ledger:
-    "6c82b4a37067e6c7de563e373c7187c75a15610118da6fa3c64cdb70133e755b",
+    "f937c0ed6d420e35b6eb878292ac671ff24d5d6c2e86e0cc9fa47be377ef183e",
   study_manifest:
-    "2aca7fc78f36440a89db0b85a23baf69d421bc93ebe22e32514285670f7dd882",
+    "cb40a045d09ffca2e59d4d96722a09f9832c715f50afb9aee35080eb4b97207c",
   member_extent_contract:
-    "2898c276271722374ce81b23d02d2110ddef198055cdfcb81e1d6c29094144c4",
+    "5566b2a536bd2d3f2e513b32af0a46a7efc18854414ea3c1dacd37d22d250b5f",
   member_extent_manifest:
-    "51ad2e7d37f751f9278bf695342a0497803601efe0ad0ada3c49ad85e8cd8158",
+    "d8126f8017c899726fc6c7181f0dfdc84f773066af54bc9f2ee769703bed9253",
   operational_occurrences:
     "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
   reviewed_candidate_packets:

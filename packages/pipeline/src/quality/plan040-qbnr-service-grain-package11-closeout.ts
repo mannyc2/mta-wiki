@@ -71,7 +71,7 @@ export const PLAN040_PACKAGE_11_POST_PERSISTENCE_PINS = {
   extent_ledger:
     "b6ec884cc6e0a38f09fa69b99f1b844b00b82def1477f7e48e52378fc8673c5b",
   grain_ledger:
-    "a456ddd9a408c52390672e74f454e055d8c3094c0d2c07200d99e2b34c668bf5",
+    "362538a4e870914a6c148dfb546018da1f69e81725766eba8feb891ef0fb77de",
   bridge_ledger:
     "f937c0ed6d420e35b6eb878292ac671ff24d5d6c2e86e0cc9fa47be377ef183e",
   study_manifest:

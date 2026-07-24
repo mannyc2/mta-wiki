@@ -9,6 +9,12 @@ import { dirname, join, relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
+import { fileSha256 } from "../reference/snapshot-registry.js";
+import {
+  memberGrainDecisionKey,
+  parseMemberGrainDecision,
+  type MemberGrainDecision,
+} from "./member-grain-decisions.js";
 import {
   PLAN040_FLATBUSH_PHYSICAL_GRAIN_PACKAGE_12,
   PLAN040_PACKAGE_12_CANDIDATE_KEY_SHA256,
@@ -22,6 +28,38 @@ export const PLAN040_PACKAGE_12_EVIDENCE_SHA256 =
   "4134a3afc2ce8c2f6fcecd9b12f941c1967511f1401132620b3750d916bc7736" as const;
 export const PLAN040_PACKAGE_12_DRAFT_SHA256 =
   "60095cd79d13f3174961a93aec1cfae5f5e481f6373914a2075502a7a8a7c23b" as const;
+export const PLAN040_PACKAGE_12_GATE_SHA256 =
+  "117cd3568c9381c45461aa273002c44a2705bafd39be9fb0cb934a2376857fb6" as const;
+export const PLAN040_PACKAGE_12_ACCEPTANCE_SHA256 =
+  "42b95822f68cc47441ff56492b662e2ea78fa3b4973794908ef459ec122bb8b6" as const;
+export const PLAN040_PACKAGE_12_GRAIN_DECISIONS_SHA256 =
+  "e0c1129bbaa8e2dae377b0d412171cef748e1a04de158cba2388019d308a2f59";
+export const PLAN040_PACKAGE_12_POST_PERSISTENCE_PINS = {
+  extent_ledger:
+    "b6ec884cc6e0a38f09fa69b99f1b844b00b82def1477f7e48e52378fc8673c5b",
+  grain_ledger:
+    "362538a4e870914a6c148dfb546018da1f69e81725766eba8feb891ef0fb77de",
+  bridge_ledger:
+    "f937c0ed6d420e35b6eb878292ac671ff24d5d6c2e86e0cc9fa47be377ef183e",
+  study_manifest:
+    "cb40a045d09ffca2e59d4d96722a09f9832c715f50afb9aee35080eb4b97207c",
+  member_extent_contract:
+    "5566b2a536bd2d3f2e513b32af0a46a7efc18854414ea3c1dacd37d22d250b5f",
+  member_extent_manifest:
+    "d8126f8017c899726fc6c7181f0dfdc84f773066af54bc9f2ee769703bed9253",
+  member_extent_review_ledger:
+    "9bee9b8f1e4e0358822dbf38ae5840c4f6d9ae834e1aaaf20c492c608065f57c",
+  member_extent_summary:
+    "7897a943ea6c14166346260af65a94625ce629fadc59e26db24df8e21d17adba",
+  operational_occurrences:
+    "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
+  operational_occurrence_decisions:
+    "80e530c9953e59a767afcb2f0d61202d9a9209469075f41f993fe7469ee45883",
+  treatment_components:
+    "a9b76c3b7121fc87d0f190a44fb00f182229d8d309968d3ba00a8c27a1492bae",
+  reviewed_candidate_packets:
+    "0ac700c48740fff5eb36b626b8dee72f95212378c0b40bc3dc6265b32c3d5844",
+} as const;
 
 const EVIDENCE_PATH =
   "data/quality/operational-reference/member-extent-risk/" +
@@ -42,6 +80,12 @@ export const PLAN040_FLATBUSH_PHYSICAL_GRAIN_PACKAGE_12_GATE_PATH =
   join(repoRoot, GATE_PATH);
 export const PLAN040_FLATBUSH_PHYSICAL_GRAIN_PACKAGE_12_ACCEPTANCE_PATH =
   join(repoRoot, ACCEPTANCE_PATH);
+export const PLAN040_FLATBUSH_PHYSICAL_GRAIN_PACKAGE_12_GRAIN_DECISIONS_PATH =
+  join(
+    repoRoot,
+    "data/quality/operational-reference/member-grain-decisions/" +
+      "plan-040-flatbush-physical-grain-package-12-v1.json",
+  );
 
 const sha256 = (value: string): string =>
   createHash("sha256").update(value).digest("hex");
@@ -307,5 +351,225 @@ export function writePlan040Package12GateAndAcceptance(input: {
     acceptanceSha256: sha256(
       `${stableJson(built.acceptance as unknown as JsonValue)}\n`,
     ),
+  };
+}
+
+type Plan040Package12GateAndAcceptance =
+  ReturnType<typeof buildPlan040Package12GateAndAcceptance>;
+
+function assertExactValues(
+  actual: readonly string[],
+  expected: readonly string[],
+  label: string,
+): void {
+  if (
+    stableJson([...actual].sort() as JsonValue) !==
+      stableJson([...expected].sort() as JsonValue)
+  ) {
+    throw new Error(
+      `Plan 040 Package 12 ${label} drifted outside owner acceptance`,
+    );
+  }
+}
+
+export function buildPlan040Package12AcceptedArtifacts(input: {
+  draft: Plan040Package12Draft;
+  gate: Plan040Package12GateAndAcceptance["gate"];
+  acceptance: Plan040Package12GateAndAcceptance["acceptance"];
+}): {
+  grainDecisions: MemberGrainDecision[];
+} {
+  validatePlan040Package12GateAndAcceptance({
+    draft: input.draft,
+    gate: input.gate,
+    acceptance: input.acceptance,
+    acceptedAt: input.acceptance.accepted_at,
+  });
+  if (
+    input.gate.verdict !== "APPROVE" ||
+    input.gate.reviewer_results.some((review) =>
+      review.verdict !== "APPROVE") ||
+    input.acceptance.authorization_state !==
+      "owner_accepted_exact_2_not_applicable_grain_decisions_only" ||
+    !input.acceptance.authorizes_decision_persistence ||
+    input.acceptance.authorizes_occurrence ||
+    input.acceptance.authorizes_study ||
+    input.acceptance.authorizes_cross_product ||
+    input.acceptance.authorizes_ontology ||
+    input.acceptance.authorizes_corrections ||
+    !input.acceptance.preservation_invariants
+      .existing_extent_decisions_byte_identical ||
+    !input.acceptance.preservation_invariants
+      .occurrence_decisions_unchanged ||
+    !input.acceptance.preservation_invariants.study_outputs_unchanged ||
+    !input.acceptance.preservation_invariants
+      .cross_product_authorization_unchanged ||
+    !input.acceptance.preservation_invariants
+      .treatment_ontology_unchanged ||
+    !input.acceptance.preservation_invariants.missing_raw_source_preserved ||
+    !input.acceptance.preservation_invariants.source_gap_nonauthorizing ||
+    !input.acceptance.preservation_invariants.external_acquisition_prohibited ||
+    existsSync(join(
+      repoRoot,
+      "raw/sources/nyc_dot_flatbush_installation_begins_2025",
+    ))
+  ) {
+    throw new Error(
+      "Plan 040 Package 12 acceptance does not authorize this persistence scope",
+    );
+  }
+  const candidates = input.draft.candidates;
+  if (
+    candidates.length !== 2 ||
+    candidates.some((candidate) =>
+      candidate.evidence_verdict !==
+        "positive_grain_not_applicable_proposed" ||
+      candidate.proposed_extent_decision !== null ||
+      candidate.proposed_grain_decision.service_scope.kind !==
+        "not_applicable" ||
+      candidate.proposed_grain_decision.lineage_segments.length !== 0 ||
+      candidate.proposed_grain_decision.member_extent_decision_id !==
+        candidate.prior_ledger_state.extent_row.verdict_basis?.replace(
+          /^review:/u,
+          "",
+        ) ||
+      candidate.persisted_extent_decision !== null ||
+      candidate.persisted_grain_decision !== null ||
+      candidate.authorizes_occurrence ||
+      candidate.authorizes_study ||
+      candidate.authorizes_cross_product ||
+      candidate.authorizes_decision_persistence)
+  ) {
+    throw new Error(
+      "Plan 040 Package 12 persistence verdict split drifted",
+    );
+  }
+  assertExactValues(
+    input.acceptance.authorized_exact_persistence.candidate_keys,
+    candidates.map((candidate) => candidate.candidate_key),
+    "candidate keys",
+  );
+  assertExactValues(
+    input.acceptance.authorized_exact_persistence.extent_decision_ids,
+    [],
+    "extent decision ids",
+  );
+  assertExactValues(
+    input.acceptance.authorized_exact_persistence.grain_decision_ids,
+    candidates.map((candidate) =>
+      candidate.proposed_grain_decision.decision_id),
+    "grain decision ids",
+  );
+  const grainDecisions = candidates.map((candidate) => {
+    const decision = parseMemberGrainDecision({
+      ...candidate.proposed_grain_decision,
+      reviewed_at: input.acceptance.accepted_at,
+      reviewed_by: input.acceptance.accepted_by,
+    });
+    if (
+      memberGrainDecisionKey(decision) !== candidate.candidate_key ||
+      decision.member_extent_decision_id !==
+        candidate.proposed_grain_decision.member_extent_decision_id ||
+      decision.service_scope.kind !== "not_applicable" ||
+      decision.lineage_segments.length !== 0
+    ) {
+      throw new Error(
+        `${candidate.gtfs_route_id}: accepted not_applicable grain drifted`,
+      );
+    }
+    return decision;
+  }).sort((left, right) =>
+    memberGrainDecisionKey(left).localeCompare(
+      memberGrainDecisionKey(right),
+    ));
+  if (
+    grainDecisions.length !== 2 ||
+    grainDecisions.some((decision) =>
+      decision.service_scope.kind !== "not_applicable")
+  ) {
+    throw new Error(
+      "Plan 040 Package 12 accepted decision distribution drifted",
+    );
+  }
+  return { grainDecisions };
+}
+
+export function acceptPlan040Package12DecisionPackage(): {
+  grainDecisionPath: string;
+  grainDecisionSha256: string;
+  grainDecisionCount: 2;
+} {
+  for (const [path, expectedSha256, label] of [
+    [
+      join(repoRoot, EVIDENCE_PATH),
+      PLAN040_PACKAGE_12_EVIDENCE_SHA256,
+      "evidence",
+    ],
+    [
+      PLAN040_FLATBUSH_PHYSICAL_GRAIN_PACKAGE_12_DRAFT_PATH,
+      PLAN040_PACKAGE_12_DRAFT_SHA256,
+      "draft",
+    ],
+    [
+      PLAN040_FLATBUSH_PHYSICAL_GRAIN_PACKAGE_12_GATE_PATH,
+      PLAN040_PACKAGE_12_GATE_SHA256,
+      "dual-review gate",
+    ],
+    [
+      PLAN040_FLATBUSH_PHYSICAL_GRAIN_PACKAGE_12_ACCEPTANCE_PATH,
+      PLAN040_PACKAGE_12_ACCEPTANCE_SHA256,
+      "owner acceptance",
+    ],
+  ] as const) {
+    const actualSha256 = fileSha256(path);
+    if (actualSha256 !== expectedSha256) {
+      throw new Error(
+        `Plan 040 Package 12 ${label} pin drifted: ${actualSha256}`,
+      );
+    }
+  }
+  const draft = JSON.parse(
+    readFileSync(
+      PLAN040_FLATBUSH_PHYSICAL_GRAIN_PACKAGE_12_DRAFT_PATH,
+      "utf8",
+    ),
+  ) as Plan040Package12Draft;
+  const gate = JSON.parse(
+    readFileSync(
+      PLAN040_FLATBUSH_PHYSICAL_GRAIN_PACKAGE_12_GATE_PATH,
+      "utf8",
+    ),
+  ) as Plan040Package12GateAndAcceptance["gate"];
+  const acceptance = JSON.parse(
+    readFileSync(
+      PLAN040_FLATBUSH_PHYSICAL_GRAIN_PACKAGE_12_ACCEPTANCE_PATH,
+      "utf8",
+    ),
+  ) as Plan040Package12GateAndAcceptance["acceptance"];
+  const accepted = buildPlan040Package12AcceptedArtifacts({
+    draft,
+    gate,
+    acceptance,
+  });
+  writeImmutableJson(
+    PLAN040_FLATBUSH_PHYSICAL_GRAIN_PACKAGE_12_GRAIN_DECISIONS_PATH,
+    { decisions: accepted.grainDecisions },
+  );
+  const grainDecisionSha256 = fileSha256(
+    PLAN040_FLATBUSH_PHYSICAL_GRAIN_PACKAGE_12_GRAIN_DECISIONS_PATH,
+  );
+  if (
+    PLAN040_PACKAGE_12_GRAIN_DECISIONS_SHA256 &&
+    grainDecisionSha256 !== PLAN040_PACKAGE_12_GRAIN_DECISIONS_SHA256
+  ) {
+    throw new Error(
+      "Plan 040 Package 12 persisted decision output pin drifted",
+    );
+  }
+  return {
+    grainDecisionPath:
+      PLAN040_FLATBUSH_PHYSICAL_GRAIN_PACKAGE_12_GRAIN_DECISIONS_PATH,
+    grainDecisionSha256,
+    grainDecisionCount: 2,
   };
 }
