@@ -37,6 +37,16 @@ import {
   loadOperationalSnapshotRegistry,
   snapshotById,
 } from "../../src/reference/snapshot-registry";
+import {
+  PLAN040_PACKAGE_10B_ACCEPTANCE_SHA256,
+  PLAN040_PACKAGE_10B_APPROVED_COMMIT,
+  PLAN040_PACKAGE_10B_GATE_SHA256,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ACCEPTANCE_PATH,
+  PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GATE_PATH,
+  buildPlan040Package10bGateAndAcceptance,
+  validatePlan040Package10bGateAndAcceptance,
+} from
+  "../../src/quality/plan040-qbnr-service-pattern-package10b-closeout";
 
 const riskRoot =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk`;
@@ -51,6 +61,7 @@ const EVIDENCE_SHA256 =
   "d0e41e3368d0eae0cc8425ad4f354aaae75bf678c5c0036d985913d786a75b2a";
 const DRAFT_SHA256 =
   "f65c3827d9adedfc6a537e19d48835934f31c1b87ea2a373d657316a85981f83";
+const ACCEPTED_AT = "2026-07-24T14:23:38Z";
 
 type Package10bEvidence = {
   candidate_count: 4;
@@ -990,7 +1001,7 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     )).toBe(true);
   });
 
-  it("pins all exclusions, comparison roles, and draft-only authority", () => {
+  it("pins all exclusions, comparison roles, and pre-persistence authority", () => {
     const evidence = readJson<Package10bEvidence>(evidencePath);
     const draft = readJson<Plan040Package10bDraft>(draftPath);
     expect(Object.fromEntries(evidence.exclusions.map((row) => [
@@ -1050,10 +1061,117 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     expect(draft.authorizes_decision_persistence).toBe(false);
     expect(existsSync(
       `${riskRoot}/plan-040-qbnr-service-pattern-package-10b-dual-review-gate-v1.json`,
-    )).toBe(false);
+    )).toBe(true);
     expect(existsSync(
       `${riskRoot}/plan-040-qbnr-service-pattern-package-10b-owner-acceptance-v1.json`,
-    )).toBe(false);
+    )).toBe(true);
+  });
+
+  it("freezes the compact dual-review gate and one exact package acceptance", () => {
+    const draft = readJson<Plan040Package10bDraft>(draftPath);
+    const gate = readJson<Record<string, unknown>>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GATE_PATH,
+    );
+    const acceptance = readJson<Record<string, unknown>>(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ACCEPTANCE_PATH,
+    );
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_GATE_PATH,
+    ))).toBe(PLAN040_PACKAGE_10B_GATE_SHA256);
+    expect(sha256(readFileSync(
+      PLAN040_QBNR_SERVICE_PATTERN_PACKAGE_10B_ACCEPTANCE_PATH,
+    ))).toBe(PLAN040_PACKAGE_10B_ACCEPTANCE_SHA256);
+    expect(validatePlan040Package10bGateAndAcceptance({
+      draft,
+      gate,
+      acceptance,
+      acceptedAt: ACCEPTED_AT,
+    })).toEqual({
+      candidate_count: 4,
+      positive_candidate_count: 3,
+      unresolved_candidate_count: 1,
+      authorized_extent_decision_count: 3,
+      authorized_grain_decision_count: 3,
+      authorized_absence_candidate_count: 1,
+      persisted_decision_count: 0,
+      persisted_absence_receipt_count: 0,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    expect(gate).toEqual(expect.objectContaining({
+      reviewed_commit: PLAN040_PACKAGE_10B_APPROVED_COMMIT,
+      candidate_count: 4,
+      candidate_key_sha256: PLAN040_PACKAGE_10B_CANDIDATE_KEY_SHA256,
+      verdict_distribution: {
+        positive_extent_and_grain_proposed: 3,
+        receipt_terminal_unresolved_preserved: 1,
+      },
+      authorization_state:
+        "dual_review_approved_pending_owner_delegate_acceptance",
+      authorizes_decision_persistence: false,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    }));
+    expect(gate.reviewer_results).toEqual([
+      expect.objectContaining({ verdict: "APPROVE" }),
+      expect.objectContaining({ verdict: "APPROVE" }),
+    ]);
+    expect(acceptance).toEqual(expect.objectContaining({
+      accepted_at: ACCEPTED_AT,
+      accepted_by: "codex-owner-delegate",
+      candidate_count: 4,
+      candidate_key_sha256: PLAN040_PACKAGE_10B_CANDIDATE_KEY_SHA256,
+      authorization_state:
+        "owner_delegate_accepted_exact_3_positive_decision_pairs_and_exact_1_key_preserved_reviewed_absence_only",
+      authorizes_decision_persistence: true,
+      authorizes_reviewed_absence_receipt_persistence: true,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    }));
+    expect(
+      acceptance.authorized_positive_persistence,
+    ).toEqual(expect.objectContaining({
+      candidate_count: 3,
+      candidate_keys: draft.candidates.slice(0, 3)
+        .map((candidate) => candidate.candidate_key).sort(),
+      extent_decision_ids: draft.candidates.slice(0, 3)
+        .map((candidate) =>
+          candidate.proposed_extent_decision!.decision_id).sort(),
+      grain_decision_ids: draft.candidates.slice(0, 3)
+        .map((candidate) =>
+          candidate.proposed_grain_decision!.decision_id).sort(),
+    }));
+    expect(
+      acceptance.authorized_reviewed_absence_receipt,
+    ).toEqual(expect.objectContaining({
+      receipt_id:
+        "plan-040-qbnr-service-pattern-package-10b-reviewed-absence-v1",
+      candidate_count: 1,
+      candidate_keys: [draft.candidates[3]!.candidate_key],
+      surfaces: ["member_extent", "member_grain"],
+    }));
+
+    const rebuilt = buildPlan040Package10bGateAndAcceptance({
+      draft,
+      acceptedAt: ACCEPTED_AT,
+    });
+    expect(rebuilt.gate).toEqual(gate);
+    expect(rebuilt.acceptance).toEqual(acceptance);
+    const mutation = clone(gate) as unknown as {
+      reviewer_results: Array<{ verdict: string }>;
+    };
+    mutation.reviewer_results[1]!.verdict = "REFUTE";
+    expect(() =>
+      validatePlan040Package10bGateAndAcceptance({
+        draft,
+        gate: mutation,
+        acceptance,
+        acceptedAt: ACCEPTED_AT,
+      })
+    ).toThrow(/gate drifted/u);
   });
 
   it("fails closed on chain, Q89 preservation, P8, and exclusion drift", () => {
