@@ -1,0 +1,270 @@
+import { describe, expect, it } from "bun:test";
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
+import { repoRoot } from "../../../core/src/paths";
+import type { JsonValue } from "../../../db/src/types";
+import {
+  buildPlan040Package4Draft,
+  PLAN040_PACKAGE_4_ROUTE_ORDER,
+  plan040Package4ReplayHash,
+  type Plan040Package4Draft,
+} from "../../src/quality/plan040-qbnr-stop-removal-package4";
+
+const acquisitionPath =
+  `${repoRoot}/data/quality/acquisition/receipts/` +
+  "plan-040-qbnr-stop-removal-package-4-acquisition-v1.json";
+const evidencePath =
+  `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
+  "plan-040-qbnr-stop-removal-package-4-evidence-v1.json";
+const draftPath =
+  `${repoRoot}/data/quality/operational-reference/member-extent-risk/` +
+  "plan-040-qbnr-stop-removal-package-4-evidence-draft-v1.json";
+
+const sha256 = (value: Uint8Array | string): string =>
+  createHash("sha256").update(value).digest("hex");
+const readJson = <T>(path: string): T =>
+  JSON.parse(readFileSync(path, "utf8")) as T;
+
+type Acquisition = {
+  candidate_count: number;
+  candidate_key_sha256: string;
+  candidate_route_order: string[];
+  candidate_parity: Array<{
+    gtfs_route_id: string;
+    pre_source_id: string;
+    pre_route_trip_row_count: number;
+    pre_active_trip_count: number;
+    post_source_id: string;
+    post_route_trip_row_count: number;
+    post_active_trip_count: number;
+    boundary_class: string;
+    complete_active_trip_boundary: boolean;
+    route_row_presence_is_not_trip_inventory: true;
+  }>;
+  prior_packages: Array<{
+    package_id: string;
+    candidate_count: number;
+    overlap_count: number;
+  }>;
+  accepted_launch_feeds: Array<{
+    source_id: string;
+    zip_sha1: string;
+    zip_sha256: string;
+  }>;
+  stop_list_source_count: number;
+  stop_list_sources: Array<{
+    route_id: string;
+    source_id: string;
+    source_url: string;
+    source_url_derivation: {
+      route_row: string;
+      anchor_text: string;
+    };
+    receipt_sha256: string;
+    pdf_sha256: string;
+    layout_text_sha256: string;
+    raw_text_sha256: string;
+    blocks_sha256: string;
+    authorizes_decision_persistence: false;
+  }>;
+  schedule_trip_type_policy: {
+    passenger: string;
+    nonrevenue_excluded: string[];
+  };
+  authorizes_decision_persistence: false;
+};
+
+describe("Plan 040 QBNR Package 4 evidence-only risk draft", () => {
+  it("freezes exact 23-key parity with zero overlap and immutable source hashes", () => {
+    const acquisitionBytes = readFileSync(acquisitionPath);
+    const evidenceBytes = readFileSync(evidencePath);
+    const draftBytes = readFileSync(draftPath);
+    const acquisition = JSON.parse(
+      acquisitionBytes.toString("utf8"),
+    ) as Acquisition;
+    const draft = JSON.parse(
+      draftBytes.toString("utf8"),
+    ) as Plan040Package4Draft;
+
+    expect(sha256(acquisitionBytes)).toBe(
+      "3f804faabcbb769d037033eeeececda59fd93a3052a2d739f16680b1befe9431",
+    );
+    expect(sha256(evidenceBytes)).toBe(
+      "f105bd93bfeb2b0504e9819885f55d67c77e14840836dbc58ab06ced5b6c2072",
+    );
+    expect(sha256(draftBytes)).toBe(
+      "04fc4c0168eda1081ed5338b77794ba61be4c1346854ed1f9a628945607113ed",
+    );
+    expect(plan040Package4ReplayHash(draft as unknown as JsonValue)).toBe(
+      sha256(draftBytes),
+    );
+    expect(acquisition.candidate_count).toBe(23);
+    expect(acquisition.candidate_route_order).toEqual([
+      ...PLAN040_PACKAGE_4_ROUTE_ORDER,
+    ]);
+    expect(draft.candidates.map((candidate) => candidate.gtfs_route_id))
+      .toEqual([...PLAN040_PACKAGE_4_ROUTE_ORDER]);
+    expect(acquisition.candidate_key_sha256).toBe(
+      "68e73dc82486efb1744a1b826694af767b7e609dfeadbe9ab4b038a681d40eca",
+    );
+    expect(draft.candidate_key_sha256).toBe(
+      acquisition.candidate_key_sha256,
+    );
+    expect(acquisition.prior_packages).toEqual([
+      {
+        package_id: "plan040-package2",
+        path:
+          "data/quality/operational-reference/member-extent-risk/" +
+          "plan-040-qbnr-stop-removal-package-2-decision-draft-v1.json",
+        sha256:
+          "ade4e511ab132d3b8eb4f7fa2225dcab0e84d8e8921cc5bd7e3c3126fb61ba5a",
+        candidate_count: 24,
+        overlap_count: 0,
+      },
+      {
+        package_id: "plan040-package3",
+        path:
+          "data/quality/operational-reference/member-extent-risk/" +
+          "plan-040-qbnr-stop-removal-package-3-evidence-draft-v1.json",
+        sha256:
+          "1a3f446553955e75c373831ea282b1b4c0a2ceda2bfaec5f00a737d270b5fdbd",
+        candidate_count: 13,
+        overlap_count: 0,
+      },
+    ]);
+  });
+
+  it("keeps six incomplete boundaries explicit and never treats route rows as trips", () => {
+    const acquisition = readJson<Acquisition>(acquisitionPath);
+    const draft = readJson<Plan040Package4Draft>(draftPath);
+    expect(draft.boundary_distribution).toEqual({
+      complete_weekend_launch_boundary: 13,
+      complete_weekday_launch_boundary: 4,
+      cross_family_transfer_incomplete: 2,
+      pre_inventory_absent: 1,
+      both_boundary_inventories_absent: 3,
+    });
+    const complete = acquisition.candidate_parity.filter((candidate) =>
+      candidate.complete_active_trip_boundary);
+    expect(complete).toHaveLength(17);
+    expect(complete.every((candidate) =>
+      candidate.pre_active_trip_count > 0 &&
+      candidate.post_active_trip_count > 0)).toBe(true);
+
+    const incompleteRoutes = ["Q29", "Q39", "Q54", "Q55", "Q58", "Q59"];
+    const incomplete = acquisition.candidate_parity.filter((candidate) =>
+      incompleteRoutes.includes(candidate.gtfs_route_id));
+    expect(incomplete).toHaveLength(6);
+    expect(incomplete.every((candidate) =>
+      candidate.route_row_presence_is_not_trip_inventory &&
+      !candidate.complete_active_trip_boundary)).toBe(true);
+    expect(incomplete.find((candidate) => candidate.gtfs_route_id === "Q29"))
+      .toMatchObject({
+        pre_source_id: "gtfs_static_20250625_busco_pre_qbnr",
+        post_source_id: "gtfs_static_20250626_queens_post_qbnr",
+        post_route_trip_row_count: 0,
+        post_active_trip_count: 0,
+        boundary_class: "cross_family_transfer_incomplete",
+      });
+    expect(incomplete.find((candidate) => candidate.gtfs_route_id === "Q39"))
+      .toMatchObject({
+        pre_source_id: "gtfs_static_20250625_busco_pre_qbnr",
+        post_source_id: "gtfs_static_20250626_queens_post_qbnr",
+        post_route_trip_row_count: 0,
+        post_active_trip_count: 0,
+        boundary_class: "cross_family_transfer_incomplete",
+      });
+    for (const routeId of incompleteRoutes) {
+      expect(draft.candidates.find((candidate) =>
+        candidate.gtfs_route_id === routeId)).toMatchObject({
+          evidence_verdict: "receipt_terminal_unresolved",
+          proposed_extent_decision: null,
+          proposed_grain_decision: null,
+          authorizes_decision_persistence: false,
+        });
+    }
+  });
+
+  it("pins only the four accepted launch feeds and candidate-specific stop lists", () => {
+    const acquisition = readJson<Acquisition>(acquisitionPath);
+    expect(acquisition.accepted_launch_feeds.map((feed) => [
+      feed.source_id,
+      feed.zip_sha1,
+    ])).toEqual([
+      [
+        "gtfs_static_20250615_queens_pre_qbnr",
+        "c96466458c55036cd6feeadc291bf5951d6c3274",
+      ],
+      [
+        "gtfs_static_20250625_busco_pre_qbnr",
+        "a52f278150cd9bc03082f76fccd57f1c8c331d3c",
+      ],
+      [
+        "gtfs_static_20250626_queens_post_qbnr",
+        "c868290ddcd79c69712d809ece96d96dbad2c613",
+      ],
+      [
+        "gtfs_static_20250626_busco_post_qbnr",
+        "54653b3fafb5fabc5ab1c941780b871343138440",
+      ],
+    ]);
+    expect(acquisition.stop_list_source_count).toBe(23);
+    for (const source of acquisition.stop_list_sources) {
+      expect(source.source_url).toMatch(
+        /^https:\/\/www\.mta\.info\/document\/\d+$/u,
+      );
+      expect(source.source_url_derivation).toMatchObject({
+        route_row: source.route_id,
+        anchor_text: "View the full list of stops.",
+      });
+      expect(source.source_id).toBe(
+        `mta_qbnr_2025_${source.route_id.toLowerCase()}_stop_list`,
+      );
+      expect(source.receipt_sha256).toHaveLength(64);
+      expect(source.pdf_sha256).toHaveLength(64);
+      expect(source.layout_text_sha256).toHaveLength(64);
+      expect(source.raw_text_sha256).toHaveLength(64);
+      expect(source.blocks_sha256).toHaveLength(64);
+      expect(source.authorizes_decision_persistence).toBe(false);
+    }
+    expect(acquisition.schedule_trip_type_policy.nonrevenue_excluded)
+      .toEqual(["2", "3", "4"]);
+  });
+
+  it("fails closed with zero persistence and deterministic reconstruction", () => {
+    const draft = readJson<Plan040Package4Draft>(draftPath);
+    expect(draft.evidence_verdict_distribution).toEqual({
+      evidence_complete_stop_set: 0,
+      receipt_terminal_unresolved: 23,
+    });
+    expect(draft.proposed_extent_distribution).toEqual({
+      stop_set: 0,
+      unresolved: 23,
+    });
+    expect(draft.proposed_decision_count).toBe(0);
+    expect(draft.persisted_decision_count).toBe(0);
+    expect(draft.proposed_grain_decision_count).toBe(0);
+    expect(draft.persisted_grain_decision_count).toBe(0);
+    expect(draft.authorization_state).toBe(
+      "evidence_only_no_gate_no_persistence",
+    );
+    expect(draft.candidates.every((candidate) =>
+      candidate.evidence_verdict === "receipt_terminal_unresolved" &&
+      candidate.proposed_extent_decision === null &&
+      candidate.proposed_grain_decision === null &&
+      !candidate.authorizes_occurrence &&
+      !candidate.authorizes_study &&
+      !candidate.authorizes_cross_product &&
+      !candidate.authorizes_decision_persistence)).toBe(true);
+    expect(buildPlan040Package4Draft({
+      extentLedger: draft.extent_ledger,
+      grainLedger: draft.grain_ledger,
+      priorPackages: draft.prior_packages,
+      acquisitionReceiptPath: draft.acquisition_receipt.path,
+      acquisitionReceiptSha256: draft.acquisition_receipt.sha256,
+      evidenceManifestPath: draft.evidence_manifest.path,
+      evidenceManifestSha256: draft.evidence_manifest.sha256,
+      candidates: [...draft.candidates].reverse(),
+    })).toEqual(draft);
+  });
+});
