@@ -146,6 +146,13 @@ function sourceGapFixture(input: SourceGapFixtureInput) {
   }
   writeStableJson(join(root, paths.comparison), {
     receipt_id: "fixture-comparison-receipt",
+    source_id: "fixture_comparison_receipt",
+    normal_file_verified: true,
+    replay_derived: true,
+    authorizes_decision_persistence: false,
+    authorizes_occurrence: false,
+    authorizes_study: false,
+    authorizes_cross_product: false,
   });
   writeStableJson(join(root, paths.draft), {
     draft_id: "fixture-source-gap-draft",
@@ -988,6 +995,85 @@ describe("member extent and grain ledgers", () => {
     )).toThrow("pinned file is missing");
   });
 
+  it("rejects a rehashed provenance graph with a tampered internal receipt id", () => {
+    const fixture = sourceGapFixture([{
+      target: row("source-gap-internal-id"),
+      surfaces: ["member_extent", "member_grain"],
+      missingRoles: ["reference_snapshot"],
+    }]);
+    writeStableJson(join(fixture.root, fixture.paths.comparison), {
+      receipt_id: "tampered-comparison-receipt",
+      source_id: "fixture_comparison_receipt",
+      normal_file_verified: true,
+      replay_derived: true,
+      authorizes_decision_persistence: false,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    });
+    const comparisonSha = fileSha256(
+      join(fixture.root, fixture.paths.comparison),
+    );
+    const receipt = {
+      ...fixture.receipt,
+      comparison_receipt: {
+        ...fixture.receipt.comparison_receipt,
+        sha256: comparisonSha,
+      },
+    };
+    writeStableJson(join(fixture.root, fixture.paths.receipt), receipt);
+    const receiptSha = fileSha256(join(fixture.root, fixture.paths.receipt));
+    const evidence = {
+      ...fixture.evidence,
+      comparison_receipt: {
+        ...fixture.evidence.comparison_receipt,
+        sha256: comparisonSha,
+      },
+      source_gap_block_receipt: {
+        ...fixture.evidence.source_gap_block_receipt,
+        sha256: receiptSha,
+      },
+    };
+    writeStableJson(join(fixture.root, fixture.paths.evidence), evidence);
+    const acceptance = {
+      ...fixture.acceptance,
+      artifacts: {
+        ...fixture.acceptance.artifacts,
+        comparison_receipt: {
+          ...fixture.acceptance.artifacts.comparison_receipt,
+          sha256: comparisonSha,
+        },
+        evidence: {
+          ...fixture.acceptance.artifacts.evidence,
+          sha256: fileSha256(join(fixture.root, fixture.paths.evidence)),
+        },
+        source_gap_block_receipt: {
+          ...fixture.acceptance.artifacts.source_gap_block_receipt,
+          sha256: receiptSha,
+        },
+      },
+    };
+    writeStableJson(
+      join(fixture.root, fixture.paths.acceptance),
+      acceptance,
+    );
+    writeStableJson(join(fixture.root, fixture.paths.overlay), {
+      ...fixture.overlay,
+      source_receipt: {
+        ...fixture.overlay.source_receipt,
+        sha256: receiptSha,
+      },
+      owner_acceptance: {
+        ...fixture.overlay.owner_acceptance,
+        sha256: fileSha256(join(fixture.root, fixture.paths.acceptance)),
+      },
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [fixture.overlayDir],
+      fixture.root,
+    )).toThrow("internal receipt_id does not match pinned reference");
+  });
+
   it("loads single, array, and decisions-wrapper packages and rejects duplicate keys", () => {
     const targetA = row("a");
     const targetB = row("b");
@@ -1163,6 +1249,47 @@ describe("member extent and grain ledgers", () => {
     writeMemberExtentLedgerArtifacts(options);
     expect(readFileSync(options.extentOutputPath)).toEqual(first[0]);
     expect(readFileSync(options.grainOutputPath)).toEqual(first[1]);
+  });
+
+  it("loads source-gap provenance relative to the configured writer root", () => {
+    const target = row("custom-root-source-gap");
+    const fixture = sourceGapFixture([{
+      target,
+      surfaces: ["member_extent", "member_grain"],
+      missingRoles: ["reference_snapshot"],
+    }]);
+    mkdirSync(join(fixture.root, "inputs"), { recursive: true });
+    mkdirSync(join(fixture.root, "dossiers"), { recursive: true });
+    writeFileSync(
+      join(fixture.root, "inputs/companion.jsonl"),
+      `${stableJson(target as unknown as JsonValue)}\n`,
+    );
+    writeFileSync(
+      join(fixture.root, "inputs/occurrences.jsonl"),
+      `${stableJson(occurrence(target) as unknown as JsonValue)}\n`,
+    );
+    const result = writeMemberExtentLedgerArtifacts({
+      rootDir: fixture.root,
+      companionPath: "inputs/companion.jsonl",
+      occurrencesPath: "inputs/occurrences.jsonl",
+      extentDecisionDirs: ["extent-decisions"],
+      grainDecisionDirs: ["grain-decisions"],
+      absenceReceiptDirs: ["absence-receipts"],
+      sourceGapOverlayDirs: ["overlays"],
+      dossierDir: "dossiers",
+      packetPath: "packets.jsonl",
+      extentOutputPath: "output/extent.jsonl",
+      grainOutputPath: "output/grain.jsonl",
+    });
+    expect(result.extentRows).toHaveLength(1);
+    expect(result.extentRows[0]).toMatchObject({
+      verdict: "blocked_upstream:reference_snapshot",
+      verdict_basis: "receipt:fixture-source-gap-receipt",
+    });
+    expect(result.grainRows[0]).toMatchObject({
+      verdict: "blocked_upstream:reference_snapshot",
+      verdict_basis: "receipt:fixture-source-gap-receipt",
+    });
   });
 
   it("loads grain packages from every accelerated artifact shape", () => {

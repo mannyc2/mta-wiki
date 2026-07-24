@@ -668,15 +668,27 @@ type StrictSourceGapReceiptCandidate = MemberExtentKey & {
 
 type StrictSourceGapReceipt = {
   receipt_id: string;
+  source_id: string;
   candidate_count: number;
   candidate_key_sha256: string;
   candidates: StrictSourceGapReceiptCandidate[];
-  comparison_receipt: PinnedArtifactRef & { receipt_id: string };
+  comparison_receipt: StrictEvidenceReceiptRef;
 };
 
 type PinnedArtifactRef = {
   path: string;
   sha256: string;
+};
+
+type StrictEvidenceReceiptRef = PinnedArtifactRef & {
+  receipt_id: string;
+  source_id: string;
+  normal_file_verified: true;
+  replay_derived: true;
+  authorizes_decision_persistence: false;
+  authorizes_occurrence: false;
+  authorizes_study: false;
+  authorizes_cross_product: false;
 };
 
 type StrictSourceGapAcceptance = {
@@ -812,7 +824,7 @@ function strictArtifactRef(value: unknown, path: string): PinnedArtifactRef {
 function strictEvidenceReceiptRef(
   value: unknown,
   path: string,
-): PinnedArtifactRef & { receipt_id: string } {
+): StrictEvidenceReceiptRef {
   const parsed = object(value, path);
   exactKeys(parsed, evidenceReceiptRefFields, path);
   if (
@@ -832,7 +844,47 @@ function strictEvidenceReceiptRef(
       sha256: parsed.sha256,
     }, path),
     receipt_id: nonempty(parsed.receipt_id, `${path}.receipt_id`),
+    source_id: nonempty(parsed.source_id, `${path}.source_id`),
+    normal_file_verified: true,
+    replay_derived: true,
+    authorizes_decision_persistence: false,
+    authorizes_occurrence: false,
+    authorizes_study: false,
+    authorizes_cross_product: false,
   };
+}
+
+function assertPinnedReceiptIdentity(
+  value: unknown,
+  ref: StrictEvidenceReceiptRef,
+  path: string,
+): void {
+  const parsed = object(value, path);
+  if (nonempty(parsed.receipt_id, `${path}.receipt_id`) !== ref.receipt_id) {
+    throw new Error(`${path}: internal receipt_id does not match pinned reference`);
+  }
+  if (
+    "source_id" in parsed &&
+    nonempty(parsed.source_id, `${path}.source_id`) !== ref.source_id
+  ) {
+    throw new Error(`${path}: internal source_id does not match pinned reference`);
+  }
+  for (
+    const field of [
+      "normal_file_verified",
+      "replay_derived",
+      "authorizes_decision_persistence",
+      "authorizes_occurrence",
+      "authorizes_study",
+      "authorizes_cross_product",
+    ] as const
+  ) {
+    if (field in parsed && parsed[field] !== ref[field]) {
+      throw new Error(
+        `${path}: internal ${field} does not match pinned reference`,
+      );
+    }
+  }
 }
 
 function parseStrictSourceGapReceipt(
@@ -858,7 +910,7 @@ function parseStrictSourceGapReceipt(
     throw new Error(`${path}: source-gap receipt semantics drifted`);
   }
   nonempty(parsed.package_id, `${path}.package_id`);
-  nonempty(parsed.source_id, `${path}.source_id`);
+  const sourceId = nonempty(parsed.source_id, `${path}.source_id`);
   nonempty(parsed.contract_semantics, `${path}.contract_semantics`);
   const comparisonReceipt = strictEvidenceReceiptRef(
     parsed.comparison_receipt,
@@ -947,10 +999,18 @@ function parseStrictSourceGapReceipt(
     ) {
       throw new Error(`${itemPath}: source-gap candidate semantics drifted`);
     }
-    nonempty(
+    const comparisonReceiptAnchor = nonempty(
       candidate.comparison_receipt_anchor,
       `${itemPath}.comparison_receipt_anchor`,
     );
+    if (
+      comparisonReceiptAnchor !==
+        `${comparisonReceipt.source_id}#candidate=${candidateKey}`
+    ) {
+      throw new Error(
+        `${itemPath}.comparison_receipt_anchor: receipt identity mismatch`,
+      );
+    }
     return {
       ...key,
       candidate_key: candidateKey,
@@ -986,6 +1046,7 @@ function parseStrictSourceGapReceipt(
   }
   return {
     receipt_id: nonempty(parsed.receipt_id, `${path}.receipt_id`),
+    source_id: sourceId,
     candidate_count: candidateCount,
     candidate_key_sha256: candidateKeySha256,
     candidates,
@@ -1248,13 +1309,26 @@ function assertPinnedAcceptanceChain(input: {
     evidenceReceipt.path !== overlay.source_receipt.path ||
     evidenceReceipt.sha256 !== overlay.source_receipt.sha256 ||
     evidenceReceipt.receipt_id !== overlay.source_receipt.receipt_id ||
-    evidenceComparisonReceipt.path !== receipt.comparison_receipt.path ||
-    evidenceComparisonReceipt.sha256 !== receipt.comparison_receipt.sha256 ||
-    evidenceComparisonReceipt.receipt_id !==
-      receipt.comparison_receipt.receipt_id
+    evidenceReceipt.source_id !== receipt.source_id ||
+    stableJson(evidenceComparisonReceipt as unknown as JsonValue) !==
+      stableJson(receipt.comparison_receipt as unknown as JsonValue)
   ) {
     throw new Error(`${path}: pinned evidence does not bind this overlay`);
   }
+  assertPinnedReceiptIdentity(
+    comparisonReceipt,
+    receipt.comparison_receipt,
+    `${path}.acceptance.artifacts.comparison_receipt`,
+  );
+  assertPinnedReceiptIdentity(
+    readPinnedNormalJson(
+      root,
+      sourceRef,
+      `${path}.acceptance.artifacts.source_gap_block_receipt`,
+    ),
+    evidenceReceipt,
+    `${path}.acceptance.artifacts.source_gap_block_receipt`,
+  );
   const gate = object(
     readPinnedNormalJson(
       root,
@@ -1942,7 +2016,10 @@ export function writeMemberExtentLedgerArtifacts(options: {
     extentDecisions: loadMemberExtentDecisions(extentDecisionDirs),
     grainDecisions: loadMemberGrainDecisions(grainDecisionDirs),
     absenceReceipts: loadMemberExtentAbsenceReceipts(absenceReceiptDirs),
-    sourceGapOverlays: loadMemberSourceGapOverlays(sourceGapOverlayDirs),
+    sourceGapOverlays: loadMemberSourceGapOverlays(
+      sourceGapOverlayDirs,
+      rootDir,
+    ),
     dossierArtifacts: readScheduleDossiers(dossierDir, rootDir),
     packetIds: packetIndex(packetPath),
   });
