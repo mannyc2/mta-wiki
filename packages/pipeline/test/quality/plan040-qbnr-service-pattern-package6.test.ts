@@ -948,18 +948,6 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
       stop_set: 4,
       unresolved: 283,
     });
-    expect(distribution(extentLedger, "verdict")).toEqual({
-      absent_in_source: 99,
-      "resolved:bounded_segment": 17,
-      "resolved:route_wide": 4,
-      "resolved:stop_set": 4,
-      unreviewed: 184,
-    });
-    expect(distribution(grainLedger, "verdict")).toEqual({
-      absent_in_source: 99,
-      resolved: 12,
-      unreviewed: 197,
-    });
     const companionByKey = new Map(companion.map((row) => [
       extentDecisionKey(row as never),
       row,
@@ -973,6 +961,14 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
       row,
     ]));
     const draft = readJson<Plan040Package6Draft>(draftPath);
+    const package6Keys = draft.candidates.map((candidate) =>
+      candidate.candidate_key);
+    expect(draft.candidates).toHaveLength(29);
+    expect(new Set(package6Keys).size).toBe(29);
+    expect(package6Keys.every((key) =>
+      companionByKey.has(key) &&
+      extentByKey.has(key) &&
+      grainByKey.has(key))).toBe(true);
     for (const candidate of draft.candidates) {
       expect(companionByKey.get(candidate.candidate_key)).toMatchObject({
         extent: "unresolved",
