@@ -10,9 +10,18 @@ import {
 } from "../../src/quality/plan040-qbnr-stop-removal-acquisition";
 
 const read = (path: string) => readFileSync(`${repoRoot}/${path}`, "utf8");
+const snapshot = (sourceId: string) => {
+  const base = `raw/sources/${sourceId}`;
+  return {
+    receiptJson: read(`${base}/receipt.json`),
+    tripsCsv: read(`${base}/extracted/trips.txt`),
+    calendarCsv: read(`${base}/extracted/calendar.txt`),
+    calendarDatesCsv: read(`${base}/extracted/calendar_dates.txt`),
+  };
+};
 
-function currentManifest() {
-  return buildPlan040QbnrStopRemovalAcquisitionManifest({
+function currentInputs() {
+  return {
     ledgerJsonl: read("data/quality/operational-reference/member-extent-ledger.jsonl"),
     treatmentJsonl: read("data/canonical/treatment_components.jsonl"),
     routeTreatmentScopesJsonl: read("data/exports/releases/v1-rc26/route_treatment_scopes.jsonl"),
@@ -23,6 +32,34 @@ function currentManifest() {
     sourceMetadata: JSON.parse(read(
       "raw/sources/mta_queens_bus_network_redesign_service_changes/metadata.json",
     )) as unknown,
+    inventorySnapshots: {
+      phase_1_queens_pre: snapshot("gtfs_static_20250615_queens_pre_qbnr"),
+      phase_1_busco_pre: snapshot("gtfs_static_20250625_busco_pre_qbnr"),
+      phase_1_queens_post: snapshot("gtfs_static_20250626_queens_post_qbnr"),
+      phase_1_busco_post: snapshot("gtfs_static_20250626_busco_post_qbnr"),
+    },
+    scheduleSourceMetadataJson: read(
+      "raw/sources/mta_bus_schedules_2025_candidate_windows/metadata.json",
+    ),
+    scheduleSourceAcquisitionReceiptJson: read(
+      "raw/sources/mta_bus_schedules_2025_candidate_windows/receipt.json",
+    ),
+    scheduleX64MetadataJson: read(
+      "raw/sources/mta_bus_schedules_2025_x64_predecessor_2026_07_23/metadata.json",
+    ),
+    scheduleX64AcquisitionReceiptJson: read(
+      "raw/sources/mta_bus_schedules_2025_x64_predecessor_2026_07_23/receipt.json",
+    ),
+    scheduleSensitivityReceipt: JSON.parse(read(
+      "data/quality/operational-reference/member-extent-risk/" +
+        "plan-040-schedule-trip-type-sensitivity-v1.json",
+    )) as unknown,
+  };
+}
+
+function currentManifest() {
+  return buildPlan040QbnrStopRemovalAcquisitionManifest({
+    ...currentInputs(),
   });
 }
 
@@ -47,52 +84,252 @@ describe("Plan 040 QBNR generic stop-removal acquisition manifest", () => {
       !candidate.authorizes_cross_product)).toBe(true);
   });
 
-  it("derives feed families from exact route-treatment scopes and preserves phase requirements", () => {
+  it("pins the five special Phase-1 lineages and exact trip-row counts", () => {
     const manifest = currentManifest();
-    expect(Object.values(manifest.phase_feed_distribution)
-      .flatMap((counts) => Object.values(counts))
+    const byRoute = new Map(manifest.candidates.map((candidate) =>
+      [candidate.gtfs_route_id, candidate]));
+    expect(byRoute.get("Q26")).toMatchObject({
+      pre_feed_family: "queens",
+      pre_gtfs_route_id: "Q26",
+      pre_trip_row_count: 136,
+      post_feed_family: "busco",
+      post_gtfs_route_id: "Q26",
+      post_trip_row_count: 632,
+      inventory_group: "phase_1_operator_transfer_complete",
+      inventory_status: "accepted_reused",
+    });
+    expect(byRoute.get("Q38")).toMatchObject({
+      pre_feed_family: "busco",
+      pre_gtfs_route_id: "Q38",
+      pre_trip_row_count: 437,
+      post_feed_family: "queens",
+      post_gtfs_route_id: "Q38",
+      post_trip_row_count: 456,
+      inventory_group: "phase_1_operator_transfer_complete",
+      inventory_status: "accepted_reused",
+    });
+    expect(byRoute.get("Q67")).toMatchObject({
+      pre_feed_family: "busco",
+      pre_gtfs_route_id: "Q67",
+      pre_trip_row_count: 266,
+      post_feed_family: "queens",
+      post_gtfs_route_id: "Q67",
+      post_source_id: null,
+      post_inspected_source_id: "gtfs_static_20250626_queens_post_qbnr",
+      post_required_acquisition_role:
+        "exact_queens_first_week_correction_6db867de2ce30f47ae0ee763f422dc34fb7a9f9f_bytes_for_q67_non_authorizing_sensitivity",
+      post_trip_row_count: 0,
+      post_active_trip_count: 0,
+      inventory_group: "phase_1_operator_transfer_incomplete",
+      inventory_status: "incomplete_requires_later_queens_post_inventory",
+    });
+    expect(byRoute.get("QM63")).toMatchObject({
+      pre_feed_family: "queens",
+      pre_gtfs_route_id: "X63",
+      pre_trip_row_count: 50,
+      post_feed_family: "queens",
+      post_gtfs_route_id: "QM63",
+      post_trip_row_count: 48,
+      inventory_group: "phase_1_queens_route_rename",
+      inventory_status: "accepted_reused",
+    });
+    expect(byRoute.get("QM68")).toMatchObject({
+      pre_feed_family: "queens",
+      pre_gtfs_route_id: "X68",
+      pre_trip_row_count: 44,
+      post_feed_family: "queens",
+      post_gtfs_route_id: "QM68",
+      post_trip_row_count: 42,
+      inventory_group: "phase_1_queens_route_rename",
+      inventory_status: "accepted_reused",
+    });
+    expect(["Q26", "Q38", "Q67", "QM63", "QM68"].every((routeId) =>
+      (byRoute.get(routeId)?.pre_active_trip_count ?? 0) > 0)).toBe(true);
+    expect(["Q26", "Q38", "QM63", "QM68"].every((routeId) =>
+      (byRoute.get(routeId)?.post_active_trip_count ?? 0) > 0)).toBe(true);
+  });
+
+  it("derives aggregate parity and keeps all Phase-2 post inventories unaccepted", () => {
+    const manifest = currentManifest();
+    expect(manifest.inventory_group_distribution).toEqual({
+      phase_1_same_family_busco: 11,
+      phase_1_same_family_queens: 9,
+      phase_1_queens_route_rename: 2,
+      phase_1_operator_transfer_complete: 2,
+      phase_1_operator_transfer_incomplete: 1,
+      phase_2_busco_pre_only: 12,
+    });
+    expect(manifest.inventory_status_distribution).toEqual({
+      accepted_reused: 24,
+      incomplete_requires_later_queens_post_inventory: 1,
+      required_not_yet_accepted: 12,
+    });
+    expect(Object.values(manifest.inventory_group_distribution)
       .reduce((sum, count) => sum + count, 0)).toBe(37);
-    expect(manifest.candidates.every((candidate) =>
-      candidate.implementation_phase === "phase_1"
-        ? candidate.implementation_date === "2025-06-29" ||
-          candidate.implementation_date === "2025-06-30"
-        : candidate.implementation_date === "2025-08-31" ||
-          candidate.implementation_date === "2025-09-02")).toBe(true);
-    const nonzeroCells = Object.entries(manifest.phase_feed_distribution).flatMap(
-      ([phase, counts]) => Object.entries(counts).flatMap(([feed, count]) =>
-        count > 0 ? [`${phase}/${feed}/${count}`] : []),
-    );
-    expect(manifest.inventory_requirements.map((requirement) =>
-      `${requirement.implementation_phase}/${requirement.feed_family}/${requirement.candidate_count}`))
-      .toEqual(nonzeroCells);
-    expect(manifest.inventory_requirements.find((requirement) =>
-      requirement.implementation_phase === "phase_2" && requirement.feed_family === "busco"))
+    const phase2 = manifest.candidates.filter((candidate) =>
+      candidate.implementation_phase === "phase_2");
+    expect(phase2).toHaveLength(12);
+    expect(phase2.every((candidate) =>
+      candidate.pre_feed_family === "busco" &&
+      candidate.pre_source_id === "gtfs_static_20250626_busco_post_qbnr" &&
+      candidate.pre_trip_row_count > 0 &&
+      candidate.pre_active_trip_count > 0 &&
+      candidate.post_source_id === null &&
+      candidate.post_required_acquisition_role?.includes("full_sha1_sha256_provenance") &&
+      candidate.inventory_status === "required_not_yet_accepted")).toBe(true);
+    expect(manifest.trip_count_method.snapshot_inputs).toHaveLength(4);
+    expect(manifest.trip_count_method.snapshot_inputs.every((snapshotInput) =>
+      snapshotInput.receipt_sha256.length === 64 &&
+      snapshotInput.zip_sha1.length === 40 &&
+      snapshotInput.zip_sha256.length === 64 &&
+      snapshotInput.trips_txt_sha256.length === 64 &&
+      snapshotInput.calendar_txt_sha256.length === 64 &&
+      snapshotInput.calendar_dates_txt_sha256.length === 64)).toBe(true);
+    expect(manifest.trip_count_method.classification_scope)
+      .toBe("calendar_resolved_gtfs_trip_presence_not_fully_schedule_classified_revenue");
+    expect(manifest.publication_version_semantics.launch_published_initial_post)
       .toMatchObject({
-        candidate_count: 12,
-        acquisition_status: "required_not_yet_accepted",
+        queens: {
+          zip_sha1: "c868290ddcd79c69712d809ece96d96dbad2c613",
+          acceptance_status: "accepted_immutable_bytes",
+        },
+        busco: {
+          zip_sha1: "54653b3fafb5fabc5ab1c941780b871343138440",
+          acceptance_status: "accepted_immutable_bytes",
+        },
       });
-    expect(manifest.inventory_requirements.some((requirement) =>
-      requirement.implementation_phase === "phase_2" && requirement.feed_family === "queens"))
-      .toBe(false);
-    expect(manifest.inventory_requirements.filter((requirement) =>
-      requirement.implementation_phase === "phase_1")).toEqual([
-      {
-        implementation_phase: "phase_1",
-        feed_family: "busco",
-        candidate_count: 12,
-        pre_source_id: "gtfs_static_20250625_busco_pre_qbnr",
-        post_source_id: "gtfs_static_20250626_busco_post_qbnr",
-        acquisition_status: "accepted_reused",
+    expect(manifest.publication_version_semantics.accepted_four_feed_launch_inputs)
+      .toMatchObject({
+        queens_pre: { zip_sha1: "c96466458c55036cd6feeadc291bf5951d6c3274" },
+        queens_post: { zip_sha1: "c868290ddcd79c69712d809ece96d96dbad2c613" },
+        busco_pre: { zip_sha1: "a52f278150cd9bc03082f76fccd57f1c8c331d3c" },
+        busco_post: { zip_sha1: "54653b3fafb5fabc5ab1c941780b871343138440" },
+      });
+    expect(manifest.publication_version_semantics.first_week_corrections)
+      .toMatchObject({
+        queens: {
+          version_sha1: "6db867de2ce30f47ae0ee763f422dc34fb7a9f9f",
+          zip_sha256: null,
+          q67_check_status: "blocked_correction_bytes_unavailable",
+        },
+        busco: {
+          version_sha1: "a35da13d0a8c311de05d3558e9e80d2a472c21d2",
+          zip_sha256: null,
+          trip_count: 28419,
+          stop_time_count: 803149,
+        },
+        authority: "non_authorizing_sensitivity_only",
+        correction_sensitive_candidate_route_ids: ["Q67"],
+      });
+    expect(manifest.schedule_trip_type_sensitivity).toMatchObject({
+      status: "schedule_corroborated_ordered_stop_correction_pending",
+      source_csv_sha256: "c592686da8a1cabdc8b559db4d4ae15d5a663adbe08f332e196215fd377be7c5",
+      q67_filter: {
+        schedule_date: "2025-06-30",
+        operator: "NYCT",
+        route_id: "Q67",
       },
-      {
-        implementation_phase: "phase_1",
-        feed_family: "queens",
-        candidate_count: 13,
-        pre_source_id: "gtfs_static_20250615_queens_pre_qbnr",
-        post_source_id: "gtfs_static_20250626_queens_post_qbnr",
-        acquisition_status: "accepted_reused",
+      q67_timepoint_row_count: 723,
+      q67_trip_type_distribution: {
+        revenue: 615,
+        pull_out: 54,
+        pull_in: 54,
+        deadhead: 0,
       },
-    ]);
+      detailed_receipt_path:
+        "data/quality/operational-reference/member-extent-risk/" +
+        "plan-040-schedule-trip-type-sensitivity-v1.json",
+      accepted_exemplar_shape_sensitivity: {
+        status: "no_selected_pattern_impact",
+        scope: "selected_accepted_pattern_shapes_only",
+        unmatched_or_other_shapes: "excluded_reviewed_unresolved",
+        accepted_decision_effect: "no_amendment_required",
+      },
+      required_exclusions: {
+        pull_out_trip_type: 2,
+        pull_in_trip_type: 3,
+        deadhead_trip_type: 4,
+      },
+      unmatched_schedule_gtfs_rows: "reviewed_unresolved",
+      authority: "non_authorizing_sensitivity_only",
+    });
+    expect(manifest.equivalence_policy).toEqual({
+      accepted_equivalence: "identical_stop_id_or_separately_cited_first_party_crosswalk_only",
+      name_or_coordinate_inference: false,
+    });
+  });
+
+  it("rejects a previously accepted route when its pinned post trip inventory is zero", () => {
+    const inputs = currentInputs();
+    const post = inputs.inventorySnapshots.phase_1_queens_post;
+    const lines = post.tripsCsv.split("\n");
+    const driftedTrips = [
+      lines[0],
+      ...lines.slice(1).filter((line) => !line.startsWith("Q38,")),
+    ].join("\n");
+    const receipt = JSON.parse(post.receiptJson) as {
+      members: Array<{ member: string; rows: number; sha256: string }>;
+    };
+    const member = receipt.members.find((value) => value.member === "trips.txt");
+    expect(member).toBeDefined();
+    member!.rows = driftedTrips.split("\n").filter((line) => line.length > 0).length - 1;
+    member!.sha256 = createHash("sha256").update(driftedTrips).digest("hex");
+    expect(() => buildPlan040QbnrStopRemovalAcquisitionManifest({
+      ...inputs,
+      inventorySnapshots: {
+        ...inputs.inventorySnapshots,
+        phase_1_queens_post: {
+          ...post,
+          receiptJson: JSON.stringify(receipt),
+          tripsCsv: driftedTrips,
+        },
+      },
+    })).toThrow("Q38: Phase-1 post inventory has no trip rows");
+  });
+
+  it("fails closed on schedule date, route, operator, trip_type, count, shape, and byte drift", () => {
+    const inputs = currentInputs();
+    const mutations: Array<(receipt: any) => void> = [
+      (receipt) => { receipt.filter.schedule_date = "2025-07-01"; },
+      (receipt) => { receipt.filter.route_id = "Q66"; },
+      (receipt) => { receipt.filter.operator = "MTA Bus"; },
+      (receipt) => { receipt.trip_type_distribution.revenue = 614; },
+      (receipt) => { receipt.timepoint_row_count = 722; },
+      (receipt) => { receipt.source_csv_sha256 = "0".repeat(64); },
+      (receipt) => { receipt.slices[1].selected_shapes[0].shape_id = "Q610999"; },
+    ];
+    for (const mutate of mutations) {
+      const receipt = structuredClone(inputs.scheduleSensitivityReceipt);
+      mutate(receipt);
+      expect(() => buildPlan040QbnrStopRemovalAcquisitionManifest({
+        ...inputs,
+        scheduleSensitivityReceipt: receipt,
+      })).toThrow();
+    }
+  });
+
+  it("fails closed when any of the four accepted launch ZIP identities drifts", () => {
+    const inputs = currentInputs();
+    for (const snapshotKey of [
+      "phase_1_queens_pre",
+      "phase_1_queens_post",
+      "phase_1_busco_pre",
+      "phase_1_busco_post",
+    ] as const) {
+      const snapshotInput = inputs.inventorySnapshots[snapshotKey];
+      const receipt = JSON.parse(snapshotInput.receiptJson) as Record<string, unknown>;
+      receipt.zip_sha1 = "0".repeat(40);
+      expect(() => buildPlan040QbnrStopRemovalAcquisitionManifest({
+        ...inputs,
+        inventorySnapshots: {
+          ...inputs.inventorySnapshots,
+          [snapshotKey]: {
+            ...snapshotInput,
+            receiptJson: JSON.stringify(receipt),
+          },
+        },
+      })).toThrow("one of the four launch feed identities drifted");
+    }
   });
 
   it("pins all derivation inputs and replays to the exact checked-in bytes and key set", () => {
@@ -111,12 +348,19 @@ describe("Plan 040 QBNR generic stop-removal acquisition manifest", () => {
     expect(first.candidate_key_sha256)
       .toBe("0a9896feebea7617c745ab62492ad3cc66c2727eed6689eff0e70e3f2b01bf7e");
     expect(plan040QbnrAcquisitionReplayHash(first))
-      .toBe("00d6dfee59e21a4631e37b8a1f3aeb3221fd51f859f3899d3455f146a960932f");
+      .toBe("43a17a230eb70e9b7c322d2125b0db99910f035e688652624d4ce0e97a08a1d4");
     expect(createHash("sha256").update(checkedBytes).digest("hex"))
-      .toBe("00d6dfee59e21a4631e37b8a1f3aeb3221fd51f859f3899d3455f146a960932f");
+      .toBe("43a17a230eb70e9b7c322d2125b0db99910f035e688652624d4ce0e97a08a1d4");
+    const sensitivityBytes = read(
+      "data/quality/operational-reference/member-extent-risk/" +
+        "plan-040-schedule-trip-type-sensitivity-v1.json",
+    );
+    expect(createHash("sha256").update(sensitivityBytes).digest("hex"))
+      .toBe("b0fb4cacab4d3c9460684841792253ae360183a635484c5efcef17599366dd7b");
   });
 
   it("fails closed on denominator, URL, and source-byte drift", () => {
+    const inputs = currentInputs();
     const sourceHtml = read(
       "raw/sources/mta_queens_bus_network_redesign_service_changes/source.html",
     );
@@ -124,15 +368,11 @@ describe("Plan 040 QBNR generic stop-removal acquisition manifest", () => {
       "raw/sources/mta_queens_bus_network_redesign_service_changes/metadata.json",
     )) as Record<string, unknown>;
     expect(() => buildPlan040QbnrStopRemovalAcquisitionManifest({
-      ledgerJsonl: read("data/quality/operational-reference/member-extent-ledger.jsonl")
+      ...inputs,
+      ledgerJsonl: inputs.ledgerJsonl
         .split("\n")
         .filter((line) => !line.includes("\"treatment_record_id\":\"treatment_q27-stop-removal-2025\""))
         .join("\n"),
-      treatmentJsonl: read("data/canonical/treatment_components.jsonl"),
-      routeTreatmentScopesJsonl: read("data/exports/releases/v1-rc26/route_treatment_scopes.jsonl"),
-      sourceBlocksJsonl: read(
-        "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl",
-      ),
       sourceHtml,
       sourceMetadata: metadata,
     })).toThrow("expected exact 37-key package");
@@ -142,12 +382,7 @@ describe("Plan 040 QBNR generic stop-removal acquisition manifest", () => {
       "https:\\/\\/example.test\\/not-mta",
     );
     expect(() => buildPlan040QbnrStopRemovalAcquisitionManifest({
-      ledgerJsonl: read("data/quality/operational-reference/member-extent-ledger.jsonl"),
-      treatmentJsonl: read("data/canonical/treatment_components.jsonl"),
-      routeTreatmentScopesJsonl: read("data/exports/releases/v1-rc26/route_treatment_scopes.jsonl"),
-      sourceBlocksJsonl: read(
-        "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl",
-      ),
+      ...inputs,
       sourceHtml: driftedHtml,
       sourceMetadata: {
         ...metadata,
