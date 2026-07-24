@@ -40,6 +40,8 @@ const evidencePath =
   `${riskRoot}/plan-040-qbnr-service-pattern-package-8-evidence-v1.json`;
 const draftPath =
   `${riskRoot}/plan-040-qbnr-service-pattern-package-8-evidence-draft-v1.json`;
+const checkpointPath =
+  `${riskRoot}/plan-040-package-8-checkpoint-v1.json`;
 const extentLedgerPath =
   `${repoRoot}/data/quality/operational-reference/member-extent-ledger.jsonl`;
 const grainLedgerPath =
@@ -894,6 +896,123 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
       absent_in_source: 139,
       resolved: 22,
       unreviewed: 147,
+    });
+  });
+
+  it("records the 50-candidate checkpoint and bounded Package 7 projection repair", () => {
+    const checkpoint = readJson<{
+      receipt_id: string;
+      checkpoint_scope: {
+        newly_closed_since_repaired_baseline: number;
+      };
+      full_repository_checkpoint: {
+        counts: Record<string, number>;
+      };
+      pinned_baseline: {
+        path: string;
+        sha256: string;
+      };
+      comparison: {
+        known_missing_corpus_family: {
+          signature_unchanged: boolean;
+          failed_tests: string[];
+        };
+        additional_failure: {
+          classification: string;
+          package_8_receipt_caused_projection_change: boolean;
+          semantic_baseline_change: boolean;
+        };
+      };
+      derived_projection_repair: {
+        scope: {
+          review_ledger_rows_added: number;
+          operational_extent_rows_replaced: number;
+          bridge_rows_replaced: number;
+          package_7_positive_distribution: Record<string, number>;
+          package_8_positive_projection_rows: number;
+          package_8_reviewed_absence_rows: number;
+        };
+        review_decision_ids: string[];
+        generated_files: Array<{
+          path: string;
+          sha256: string;
+        }>;
+        full_repository_suite_rerun: boolean;
+      };
+      authority: Record<string, boolean>;
+      next_action: {
+        package_9_started: boolean;
+        plan_transition_started: boolean;
+      };
+    }>(checkpointPath);
+
+    expect(checkpoint.receipt_id).toBe(
+      "plan-040-package-8-checkpoint-v1",
+    );
+    expect(
+      checkpoint.checkpoint_scope.newly_closed_since_repaired_baseline,
+    ).toBe(50);
+    expect(checkpoint.full_repository_checkpoint.counts).toEqual({
+      pass: 1750,
+      skip: 1,
+      fail: 10,
+      error: 1,
+      test_count: 1761,
+      test_file_count: 146,
+      expect_call_count: 602716,
+    });
+    expect(sha256(readFileSync(
+      `${repoRoot}/${checkpoint.pinned_baseline.path}`,
+    ))).toBe(checkpoint.pinned_baseline.sha256);
+    expect(
+      checkpoint.comparison.known_missing_corpus_family.signature_unchanged,
+    ).toBe(true);
+    expect(
+      checkpoint.comparison.known_missing_corpus_family.failed_tests,
+    ).toHaveLength(9);
+    expect(checkpoint.comparison.additional_failure).toMatchObject({
+      classification:
+        "accepted_package7_positive_projection_not_yet_regenerated",
+      package_8_receipt_caused_projection_change: false,
+      semantic_baseline_change: false,
+    });
+    expect(checkpoint.derived_projection_repair.scope).toEqual({
+      review_ledger_rows_added: 10,
+      operational_extent_rows_replaced: 10,
+      bridge_rows_replaced: 10,
+      package_7_positive_distribution: {
+        bounded_segment: 8,
+        route_wide: 2,
+      },
+      package_8_positive_projection_rows: 0,
+      package_8_reviewed_absence_rows: 30,
+    });
+    expect(checkpoint.derived_projection_repair.review_decision_ids)
+      .toHaveLength(10);
+    expect(
+      checkpoint.derived_projection_repair.generated_files.every(
+        (file) =>
+          existsSync(`${repoRoot}/${file.path}`) &&
+          sha256(readFileSync(`${repoRoot}/${file.path}`)) === file.sha256,
+      ),
+    ).toBe(true);
+    expect(
+      checkpoint.derived_projection_repair.full_repository_suite_rerun,
+    ).toBe(false);
+    expect(Object.values(checkpoint.authority).every((value) =>
+      value === false || value === true)).toBe(true);
+    expect(checkpoint.authority).toEqual({
+      nonauthorizing_checkpoint_receipt: true,
+      authorizes_decision_persistence: false,
+      authorizes_occurrence: false,
+      authorizes_study: false,
+      authorizes_cross_product: false,
+      changes_evidence_outcomes: false,
+      changes_ontology_or_grain: false,
+    });
+    expect(checkpoint.next_action).toEqual({
+      package_9_started: false,
+      plan_transition_started: false,
     });
   });
 

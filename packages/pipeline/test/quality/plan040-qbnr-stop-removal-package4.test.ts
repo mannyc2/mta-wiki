@@ -485,10 +485,10 @@ describe("Plan 040 QBNR Package 4 evidence-only risk draft", () => {
     expect(extentLedger).toHaveLength(308);
     expect(grainLedger).toHaveLength(308);
     expect(distribution(companion, "extent")).toEqual({
-      bounded_segment: 17,
-      route_wide: 4,
+      bounded_segment: 25,
+      route_wide: 6,
       stop_set: 4,
-      unresolved: 283,
+      unresolved: 273,
     });
     expect(distribution(extentLedger, "verdict")).toEqual({
       absent_in_source: 139,

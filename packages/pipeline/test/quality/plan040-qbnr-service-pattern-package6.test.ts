@@ -926,7 +926,7 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
     ]);
   });
 
-  it("materializes exactly 29 absence rows while companion decisions remain unresolved", () => {
+  it("materializes exactly 29 absence rows while Package 6 companion decisions remain unresolved", () => {
     const companion = readJsonl(
       `${repoRoot}/data/contracts/operational-occurrence-member-extent/v1/` +
         "operational_occurrence_member_extents.jsonl",
@@ -943,10 +943,10 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
     expect(extentLedger).toHaveLength(308);
     expect(grainLedger).toHaveLength(308);
     expect(distribution(companion, "extent")).toEqual({
-      bounded_segment: 17,
-      route_wide: 4,
+      bounded_segment: 25,
+      route_wide: 6,
       stop_set: 4,
-      unresolved: 283,
+      unresolved: 273,
     });
     const companionByKey = new Map(companion.map((row) => [
       extentDecisionKey(row as never),
