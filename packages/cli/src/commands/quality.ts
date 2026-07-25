@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import {
@@ -11,6 +12,7 @@ import { writeBusLaneIdentityArtifacts } from "@mta-wiki/pipeline/quality/bus-la
 import { writeMemberExtentLedgerArtifacts } from "@mta-wiki/pipeline/quality/member-extent-ledger";
 import { runStudyFrontierPreflight } from "@mta-wiki/pipeline/quality/study-frontier-preflight";
 import {
+  parseDeterminismAnchor,
   verifyStudyFrontierProducerHandoff,
   writeStudyFrontierHandoffVerification,
   writeStudyFrontierProducerHandoff,
@@ -586,15 +588,17 @@ export const qualityCommands = {
   },
   "study-frontier-handoff-write": () => {
     const releaseId = optionValue(process.argv, "--release");
-    const anchor = optionValue(process.argv, "--determinism-anchor");
-    if (!releaseId || !anchor) {
+    const anchorPath = optionValue(process.argv, "--determinism-anchor");
+    if (!releaseId || !anchorPath) {
       throw new Error(
-        "study-frontier-handoff-write requires --release and --determinism-anchor",
+        "study-frontier-handoff-write requires --release and --determinism-anchor <json>",
       );
     }
     const result = writeStudyFrontierProducerHandoff({
       releaseId,
-      postCutDeterminismAnchor: anchor,
+      postCutDeterminismAnchor: parseDeterminismAnchor(
+        JSON.parse(readFileSync(anchorPath, "utf8")) as unknown,
+      ),
     });
     console.log(
       `Plan 041 producer handoff: ${result.receiptPath} (${result.receiptSha256})`,

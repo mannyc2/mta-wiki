@@ -1,4 +1,7 @@
 import {
+  createHash,
+} from "node:crypto";
+import {
   mkdtempSync,
   readFileSync,
   rmSync,
@@ -28,6 +31,10 @@ function writeReceipt(name: string, value: Record<string, unknown>): string {
   const path = join(work, name);
   writeFileSync(path, `${JSON.stringify(value)}\n`);
   return relative(repoRoot, path).replaceAll("\\", "/");
+}
+
+function sha256(bytes: string): string {
+  return createHash("sha256").update(bytes).digest("hex");
 }
 
 describe("Plan 041 producer handoff", () => {
@@ -84,7 +91,7 @@ describe("Plan 041 producer handoff", () => {
         "b47a105dc78501210f2d32e6f597f878203b8cfc35654cebc4de445d575a453c",
       manifest_version: 6,
       verified_release_file_count: 383,
-      verified_artifact_count: 9,
+      verified_artifact_count: 10,
       verified_candidate_count: 484,
     });
   });
@@ -112,5 +119,56 @@ describe("Plan 041 producer handoff", () => {
         relative(repoRoot, receiptLink).replaceAll("\\", "/"),
       )
     ).toThrow("regular non-symlink file");
+  });
+
+  test("verifier requires the reconciliation to be an exact four-column bridge projection", () => {
+    const original = readFileSync(
+      `${repoRoot}/docs/research/study-frontier-closure-v1-rc28.md`,
+      "utf8",
+    );
+    const mutated = original.replace(
+      "occurrence occurrence:09a7c0cfcac97e1a2651695b",
+      "occurrence tampered:09a7c0cfcac97e1a2651695b",
+    );
+    expect(mutated).not.toBe(original);
+    const reportPath = join(work, "mutated-reconciliation.md");
+    writeFileSync(reportPath, mutated);
+    const handoff = receipt();
+    Object.assign(
+      handoff.closure_reconciliation as Record<string, unknown>,
+      {
+        path: relative(repoRoot, reportPath).replaceAll("\\", "/"),
+        bytes: Buffer.byteLength(mutated),
+        sha256: sha256(mutated),
+      },
+    );
+    expect(() =>
+      verifyStudyFrontierProducerHandoff(
+        writeReceipt("mutated-reconciliation.json", handoff),
+      )
+    ).toThrow("does not exactly project bridge v2");
+  });
+
+  test("verifier identity-binds both fixture roles to their companion pointers", () => {
+    const handoff = receipt();
+    const fixtures = handoff.fixtures as Record<string, unknown>;
+    fixtures.member_grain = structuredClone(fixtures.identity_verdict);
+    expect(() =>
+      verifyStudyFrontierProducerHandoff(
+        writeReceipt("substituted-fixture.json", handoff),
+      )
+    ).toThrow("fixture: handoff path does not match companion pointer");
+  });
+
+  test("verifier binds the post-cut determinism anchor to its hashed artifact", () => {
+    const handoff = receipt();
+    (
+      handoff.post_cut_determinism as Record<string, unknown>
+    ).combined = "0".repeat(64);
+    expect(() =>
+      verifyStudyFrontierProducerHandoff(
+        writeReceipt("substituted-anchor.json", handoff),
+      )
+    ).toThrow("does not match the release handoff");
   });
 });

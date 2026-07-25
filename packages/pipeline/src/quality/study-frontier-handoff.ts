@@ -57,6 +57,18 @@ export type CandidateFilePin = FilePin & {
   candidate_count: number;
 };
 
+export type DeterminismAnchor = {
+  records: number;
+  dump: string;
+  fts: string;
+  master: string;
+  combined: string;
+};
+
+export type DeterminismArtifactPin = FilePin & {
+  combined: string;
+};
+
 export type StudyFrontierProducerHandoff = {
   schema_version: 1;
   contract_id: typeof STUDY_FRONTIER_HANDOFF_CONTRACT_ID;
@@ -81,7 +93,7 @@ export type StudyFrontierProducerHandoff = {
   bridge_v2: CandidateFilePin;
   closure_reconciliation: CandidateFilePin;
   frontier_exception_count: 0;
-  post_cut_determinism_anchor: string;
+  post_cut_determinism: DeterminismArtifactPin;
   evidence_policy: {
     exact_positive_required: true;
     authoritative_historical_full_stop_inventory_required: true;
@@ -207,6 +219,43 @@ function parseCandidateFilePin(
   };
 }
 
+function parseDeterminismArtifactPin(
+  value: unknown,
+  path: string,
+): DeterminismArtifactPin {
+  const pin = object(value, path);
+  exactKeys(pin, ["bytes", "combined", "path", "sha256"], path);
+  return {
+    path: repositoryRelativePath(pin.path, `${path}.path`),
+    sha256: string(pin.sha256, `${path}.sha256`, SHA256),
+    bytes: positiveInteger(pin.bytes, `${path}.bytes`),
+    combined: string(pin.combined, `${path}.combined`, SHA256),
+  };
+}
+
+export function parseDeterminismAnchor(value: unknown): DeterminismAnchor {
+  const anchor = object(value, "determinism_anchor");
+  exactKeys(
+    anchor,
+    ["combined", "dump", "fts", "master", "records"],
+    "determinism_anchor",
+  );
+  const parsed = {
+    records: positiveInteger(anchor.records, "determinism_anchor.records"),
+    dump: string(anchor.dump, "determinism_anchor.dump", SHA256),
+    fts: string(anchor.fts, "determinism_anchor.fts", SHA256),
+    master: string(anchor.master, "determinism_anchor.master", SHA256),
+    combined: string(anchor.combined, "determinism_anchor.combined", SHA256),
+  };
+  if (
+    parsed.combined !==
+      sha256(`${parsed.dump}\n${parsed.fts}\n${parsed.master}`)
+  ) {
+    throw new Error("determinism_anchor.combined: derived hash mismatch");
+  }
+  return parsed;
+}
+
 export function parseStudyFrontierProducerHandoff(
   value: unknown,
 ): StudyFrontierProducerHandoff {
@@ -225,7 +274,7 @@ export function parseStudyFrontierProducerHandoff(
       "frontier_exception_count",
       "generator_commit",
       "manifest_sha256",
-      "post_cut_determinism_anchor",
+      "post_cut_determinism",
       "release_id",
       "schema_version",
       "transport",
@@ -359,10 +408,9 @@ export function parseStudyFrontierProducerHandoff(
       "closure_reconciliation",
     ),
     frontier_exception_count: 0,
-    post_cut_determinism_anchor: string(
-      root.post_cut_determinism_anchor,
-      "post_cut_determinism_anchor",
-      SHA256,
+    post_cut_determinism: parseDeterminismArtifactPin(
+      root.post_cut_determinism,
+      "post_cut_determinism",
     ),
     evidence_policy: {
       exact_positive_required: true,
@@ -454,6 +502,84 @@ function reconciliationCandidateIds(bytes: Buffer): string[] {
   return ids;
 }
 
+function parseDeterminismArtifact(
+  bytes: Buffer,
+  path: string,
+): DeterminismAnchor & {
+  release_id: string;
+  manifest_sha256: string;
+  generator_commit: string;
+} {
+  const artifact = object(
+    JSON.parse(bytes.toString("utf8")) as unknown,
+    path,
+  );
+  exactKeys(
+    artifact,
+    [
+      "authority",
+      "combined",
+      "command",
+      "contract_id",
+      "dump",
+      "fts",
+      "generator_commit",
+      "manifest_sha256",
+      "master",
+      "records",
+      "release_id",
+      "schema_version",
+    ],
+    path,
+  );
+  if (
+    artifact.schema_version !== 1 ||
+    artifact.contract_id !== "plan-041-post-cut-determinism-anchor-v1" ||
+    artifact.command !== "bun scripts/determinism-anchor.ts"
+  ) {
+    throw new Error(`${path}: invalid determinism artifact identity`);
+  }
+  const authority = object(artifact.authority, `${path}.authority`);
+  exactKeys(
+    authority,
+    ["authorizes_cross_product", "authorizes_study"],
+    `${path}.authority`,
+  );
+  if (
+    authority.authorizes_study !== false ||
+    authority.authorizes_cross_product !== false
+  ) {
+    throw new Error(`${path}: determinism artifact must be non-authorizing`);
+  }
+  const anchor = {
+    records: positiveInteger(artifact.records, `${path}.records`),
+    dump: string(artifact.dump, `${path}.dump`, SHA256),
+    fts: string(artifact.fts, `${path}.fts`, SHA256),
+    master: string(artifact.master, `${path}.master`, SHA256),
+    combined: string(artifact.combined, `${path}.combined`, SHA256),
+  };
+  const recomputed = sha256(
+    `${anchor.dump}\n${anchor.fts}\n${anchor.master}`,
+  );
+  if (anchor.combined !== recomputed) {
+    throw new Error(`${path}: combined determinism anchor mismatch`);
+  }
+  return {
+    ...anchor,
+    release_id: string(artifact.release_id, `${path}.release_id`, RELEASE_ID),
+    manifest_sha256: string(
+      artifact.manifest_sha256,
+      `${path}.manifest_sha256`,
+      SHA256,
+    ),
+    generator_commit: string(
+      artifact.generator_commit,
+      `${path}.generator_commit`,
+      COMMIT,
+    ),
+  };
+}
+
 function releaseRelativePath(
   releaseDir: string,
   rootDir: string,
@@ -492,7 +618,10 @@ function expectedReleaseArtifactPaths(
   receipt: StudyFrontierProducerHandoff,
   manifest: ReleaseManifest,
 ): Record<
-  keyof StudyFrontierProducerHandoff["artifacts"] | "bridge_v2",
+  | keyof StudyFrontierProducerHandoff["artifacts"]
+  | "bridge_v2"
+  | "member_grain_fixture"
+  | "identity_verdict_fixture",
   string
 > {
   const releasePrefix = `data/exports/releases/${receipt.release_id}`;
@@ -518,6 +647,12 @@ function expectedReleaseArtifactPaths(
     bridge_v2:
       `${releasePrefix}/${dirname(pointer("study_readiness_v2"))}` +
       "/bridge-ledger.jsonl",
+    member_grain_fixture:
+      `${releasePrefix}/${dirname(pointer("operational_occurrence_member_grain"))}` +
+      "/fixture.jsonl",
+    identity_verdict_fixture:
+      `${releasePrefix}/${dirname(pointer("bus_lane_identity_verdicts"))}` +
+      "/fixture.jsonl",
   };
 }
 
@@ -583,7 +718,16 @@ export function verifyStudyFrontierProducerHandoff(
     verifyAddressedReleasePin(manifest, releaseDir, rootDir, pin);
   }
 
-  for (const pin of Object.values(receipt.fixtures)) {
+  const fixturePaths = {
+    member_grain: expectedPaths.member_grain_fixture,
+    identity_verdict: expectedPaths.identity_verdict_fixture,
+  };
+  for (const [role, pin] of Object.entries(receipt.fixtures)) {
+    if (pin.path !== fixturePaths[role as keyof typeof fixturePaths]) {
+      throw new Error(
+        `${role} fixture: handoff path does not match companion pointer`,
+      );
+    }
     verifyRowPin(rootDir, pin);
     verifyAddressedReleasePin(manifest, releaseDir, rootDir, pin);
   }
@@ -610,6 +754,16 @@ export function verifyStudyFrontierProducerHandoff(
     rootDir,
     receipt.closure_reconciliation,
   );
+  const expectedReconciliation = closureReport(
+    receipt.release_id,
+    receipt.manifest_sha256,
+    bridgeRows,
+  );
+  if (!reconciliationBytes.equals(Buffer.from(expectedReconciliation))) {
+    throw new Error(
+      "closure reconciliation: content does not exactly project bridge v2",
+    );
+  }
   const reconciliationIds = reconciliationCandidateIds(reconciliationBytes);
   if (
     reconciliationIds.length !==
@@ -619,6 +773,30 @@ export function verifyStudyFrontierProducerHandoff(
   ) {
     throw new Error(
       "closure reconciliation: candidate denominator does not match bridge v2",
+    );
+  }
+
+  const determinismBytes = verifyFilePin(
+    rootDir,
+    receipt.post_cut_determinism,
+  );
+  const determinism = parseDeterminismArtifact(
+    determinismBytes,
+    receipt.post_cut_determinism.path,
+  );
+  const canonicalRecordCount = Object.values(manifest.record_counts).reduce(
+    (sum, count) => sum + count,
+    0,
+  );
+  if (
+    determinism.combined !== receipt.post_cut_determinism.combined ||
+    determinism.records !== canonicalRecordCount ||
+    determinism.release_id !== receipt.release_id ||
+    determinism.manifest_sha256 !== receipt.manifest_sha256 ||
+    determinism.generator_commit !== receipt.generator_commit
+  ) {
+    throw new Error(
+      "post-cut determinism artifact does not match the release handoff",
     );
   }
 
@@ -648,7 +826,7 @@ export function verifyStudyFrontierProducerHandoff(
     manifest_sha256: receipt.manifest_sha256,
     manifest_version: manifest.manifest_version,
     verified_release_file_count: releaseVerification.verified_file_count,
-    verified_artifact_count: 9,
+    verified_artifact_count: 10,
     verified_candidate_count: bridgeRows.length,
   };
 }
@@ -787,7 +965,7 @@ function closureReport(
 
 export function writeStudyFrontierProducerHandoff(options: {
   releaseId: string;
-  postCutDeterminismAnchor: string;
+  postCutDeterminismAnchor: DeterminismAnchor;
   rootDir?: string;
   receiptPath?: string;
   reconciliationPath?: string;
@@ -802,9 +980,9 @@ export function writeStudyFrontierProducerHandoff(options: {
   if (!RELEASE_ID.test(options.releaseId)) {
     throw new Error(`releaseId: invalid repository-local RC id ${options.releaseId}`);
   }
-  if (!SHA256.test(options.postCutDeterminismAnchor)) {
-    throw new Error("postCutDeterminismAnchor: expected SHA-256 hex");
-  }
+  const determinismAnchor = parseDeterminismAnchor(
+    options.postCutDeterminismAnchor,
+  );
   const releasePrefix = `data/exports/releases/${options.releaseId}`;
   const manifestPath = `${releasePrefix}/manifest.json`;
   const manifestPin = filePin(rootDir, manifestPath);
@@ -844,8 +1022,28 @@ export function writeStudyFrontierProducerHandoff(options: {
   mkdirSync(dirname(reconciliationAbsolute), { recursive: true });
   writeFileSync(reconciliationAbsolute, reconciliationBytes);
 
-  const fixtureBase =
-    `${releasePrefix}/study-frontier-closure/data/contracts`;
+  const determinismPath =
+    "data/quality/study-frontier-closure/post-cut-determinism-anchor-v1.json";
+  const determinismArtifact = {
+    schema_version: 1,
+    contract_id: "plan-041-post-cut-determinism-anchor-v1",
+    release_id: options.releaseId,
+    manifest_sha256: manifestPin.sha256,
+    generator_commit: manifest.generator_commit,
+    command: "bun scripts/determinism-anchor.ts",
+    ...determinismAnchor,
+    authority: {
+      authorizes_study: false,
+      authorizes_cross_product: false,
+    },
+  };
+  const determinismAbsolute = resolve(rootDir, determinismPath);
+  mkdirSync(dirname(determinismAbsolute), { recursive: true });
+  writeFileSync(
+    determinismAbsolute,
+    `${stableJson(determinismArtifact as unknown as JsonValue)}\n`,
+  );
+
   const receipt: StudyFrontierProducerHandoff = {
     schema_version: 1,
     contract_id: STUDY_FRONTIER_HANDOFF_CONTRACT_ID,
@@ -874,11 +1072,11 @@ export function writeStudyFrontierProducerHandoff(options: {
     fixtures: {
       member_grain: rowFilePin(
         rootDir,
-        `${fixtureBase}/operational-occurrence-member-grain/v1/fixture.jsonl`,
+        paths.member_grain_fixture,
       ),
       identity_verdict: rowFilePin(
         rootDir,
-        `${fixtureBase}/bus-lane-identity-verdicts-v1/fixture.jsonl`,
+        paths.identity_verdict_fixture,
       ),
     },
     bridge_v2: {
@@ -890,7 +1088,10 @@ export function writeStudyFrontierProducerHandoff(options: {
       candidate_count: bridgeRows.length,
     },
     frontier_exception_count: 0,
-    post_cut_determinism_anchor: options.postCutDeterminismAnchor,
+    post_cut_determinism: {
+      ...filePin(rootDir, determinismPath),
+      combined: determinismAnchor.combined,
+    },
     evidence_policy: {
       exact_positive_required: true,
       authoritative_historical_full_stop_inventory_required: true,
