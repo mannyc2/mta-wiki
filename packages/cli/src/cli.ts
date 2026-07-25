@@ -153,6 +153,8 @@ function parseCommand(argv: string[]): ParsedArgs {
     "bus-lane-identity-ledger",
     "member-extent-ledger",
     "study-frontier-preflight",
+    "study-frontier-handoff-write",
+    "study-frontier-handoff-verify",
     "plan-040-exemplar-accept",
     "plan-040-exemplar-draft",
     "plan-040-package-2-accept",

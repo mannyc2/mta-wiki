@@ -11,6 +11,11 @@ import { writeBusLaneIdentityArtifacts } from "@mta-wiki/pipeline/quality/bus-la
 import { writeMemberExtentLedgerArtifacts } from "@mta-wiki/pipeline/quality/member-extent-ledger";
 import { runStudyFrontierPreflight } from "@mta-wiki/pipeline/quality/study-frontier-preflight";
 import {
+  verifyStudyFrontierProducerHandoff,
+  writeStudyFrontierHandoffVerification,
+  writeStudyFrontierProducerHandoff,
+} from "@mta-wiki/pipeline/quality/study-frontier-handoff";
+import {
   acceptPlan040ExemplarDecisionPackage,
   writePlan040ExemplarDecisionDraft,
 } from "@mta-wiki/pipeline/quality/plan-040-exemplar-decisions";
@@ -577,6 +582,41 @@ export const qualityCommands = {
         `bridge=${result.bridge_candidate_count}, ` +
         `exceptions=${result.frontier_exception_count}, ` +
         `receipt-refs=${result.receipt_reference_count}.`,
+    );
+  },
+  "study-frontier-handoff-write": () => {
+    const releaseId = optionValue(process.argv, "--release");
+    const anchor = optionValue(process.argv, "--determinism-anchor");
+    if (!releaseId || !anchor) {
+      throw new Error(
+        "study-frontier-handoff-write requires --release and --determinism-anchor",
+      );
+    }
+    const result = writeStudyFrontierProducerHandoff({
+      releaseId,
+      postCutDeterminismAnchor: anchor,
+    });
+    console.log(
+      `Plan 041 producer handoff: ${result.receiptPath} (${result.receiptSha256})`,
+    );
+    console.log(
+      `Closure reconciliation: ${result.reconciliationPath} ` +
+        `(${result.reconciliationSha256}); candidates=${result.candidateCount}`,
+    );
+  },
+  "study-frontier-handoff-verify": () => {
+    const receiptPath = optionValue(process.argv, "--receipt");
+    const outputPath = optionValue(process.argv, "--json");
+    if (!receiptPath || !outputPath) {
+      throw new Error(
+        "study-frontier-handoff-verify requires --receipt and --json",
+      );
+    }
+    const result = verifyStudyFrontierProducerHandoff(receiptPath);
+    writeStudyFrontierHandoffVerification(outputPath, result);
+    console.log(
+      `Verified Plan 041 producer handoff: ${result.release_id} ` +
+        `(${result.manifest_sha256}); candidates=${result.verified_candidate_count}`,
     );
   },
   "plan-040-exemplar-accept": plan040ExemplarAccept,

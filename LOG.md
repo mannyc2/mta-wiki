@@ -4,6 +4,24 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-25
+
+### Study-frontier closure release
+
+- Cut immutable repository-local manifest-v6 candidate `v1-rc28` from generator
+  commit `741ade31`: manifest SHA-256
+  `b47a105dc78501210f2d32e6f597f878203b8cfc35654cebc4de445d575a453c`,
+  `383` addressed files, and all `85,396` canonical records. An independent
+  frozen-commit recut reproduced the complete release directory byte-for-byte;
+  `LATEST` and the downstream pin remain unchanged.
+- Published complete non-authorizing closure companions: identity verdicts
+  `321 binding_absent_after_search`; member grain `73 resolved / 10
+  not_applicable / 165 absent_in_source / 60 blocked_upstream`; and bridge v2
+  `484` candidates with zero source-fixable rows and zero frontier exceptions.
+  Later positive admission still requires exact-positive evidence,
+  authoritative historical full-stop inventory, and reviewed stop-ID
+  equivalence; absence never infers an occurrence.
+
 ## 2026-07-24
 
 ### Queens bus-stop member extent and grain closure

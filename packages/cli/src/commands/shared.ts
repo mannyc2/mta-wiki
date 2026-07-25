@@ -40,6 +40,8 @@ export type Command =
   | "bus-lane-identity-ledger"
   | "member-extent-ledger"
   | "study-frontier-preflight"
+  | "study-frontier-handoff-write"
+  | "study-frontier-handoff-verify"
   | "plan-040-package-8-accept"
   | "plan-040-package-9-accept"
   | "plan-040-package-10a-accept"
