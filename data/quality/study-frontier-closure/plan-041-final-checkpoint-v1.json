@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-041-final-checkpoint-v1",
+  "recorded_at": "2026-07-25T04:29:16Z",
+  "checkpoint_scope": {
+    "checkpoint_reason": "plan_041_release_handoff_and_transition_closure",
+    "checkpoint_input_commit": "39820f9af1cf493cda7f9f6e4c4b4b565b2a4aff",
+    "release_generator_commit": "741ade31ce84498506c77d0adb6b37019fa05f75",
+    "release_commit": "d74d80356d160c3a8c4c4b35843a326465ff0b36",
+    "handoff_commit": "310b13b7a5749c4d60cdf05a6d24abda15879922",
+    "handoff_hardening_commit": "e8eefbbd8096043c3797aa650903126e05883944"
+  },
+  "release": {
+    "release_id": "v1-rc28",
+    "manifest_version": 6,
+    "manifest_path": "data/exports/releases/v1-rc28/manifest.json",
+    "manifest_sha256": "b47a105dc78501210f2d32e6f597f878203b8cfc35654cebc4de445d575a453c",
+    "addressed_file_count": 383,
+    "canonical_record_count": 85396,
+    "transport_mode": "repository_local"
+  },
+  "artifacts": {
+    "producer_handoff": {
+      "path": "data/quality/study-frontier-closure/plan-041-producer-handoff.json",
+      "sha256": "986dfc18adc7867975c338e960eb99fa808cb585a091073887f744427e471aec"
+    },
+    "closure_reconciliation": {
+      "path": "docs/research/study-frontier-closure-v1-rc28.md",
+      "sha256": "d415cfe4a28bd9e92048ef96ce1f754034bb6c1c18d50d8f56b395b0cfacfb54"
+    },
+    "post_cut_determinism": {
+      "path": "data/quality/study-frontier-closure/post-cut-determinism-anchor-v1.json",
+      "sha256": "3f64ede6d1605f8093bd1362dd325cd93c9a62393a68d0863c1f09ef9f096565"
+    },
+    "identity_verdict": {
+      "path": "data/exports/releases/v1-rc28/study-frontier-closure/data/contracts/bus-lane-identity-verdicts-v1/bus_lane_identity_verdicts.jsonl",
+      "sha256": "6f98d0975aeb9e0cc2786db528b6196a5bb1b8ccf8dc880d061245adf6d1434d",
+      "row_count": 321
+    },
+    "member_extent": {
+      "path": "data/exports/releases/v1-rc28/member-extent/data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl",
+      "sha256": "5ca1ba253a75a577c0e32b249508873d5a5114f2bbb2565dba80e7fa60deab0e",
+      "row_count": 308
+    },
+    "member_grain": {
+      "path": "data/exports/releases/v1-rc28/study-frontier-closure/data/contracts/operational-occurrence-member-grain/v1/operational_occurrence_member_grain.jsonl",
+      "sha256": "d5555770fe4b82764f685eb2f2f755d9790a09ad153fd7ace10bb81ae06b7679",
+      "row_count": 308
+    },
+    "bridge_v2": {
+      "path": "data/exports/releases/v1-rc28/study-frontier-closure/data/quality/study-readiness/v2/bridge-ledger.jsonl",
+      "sha256": "4744dee6e246393460959412e8dbfd7f05ee7a6dd14a1fca408d8a8cf13d988e",
+      "row_count": 484
+    }
+  },
+  "candidate_accounting": {
+    "candidate_count": 484,
+    "identity_candidate_count": 321,
+    "member_extent_row_count": 308,
+    "member_grain_row_count": 308,
+    "frontier_exception_count": 0,
+    "source_fixable_count": 0,
+    "receipt_reference_count": 838
+  },
+  "verdict_distribution": {
+    "identity": {
+      "binding_absent_after_search": 321
+    },
+    "member_grain": {
+      "absent_in_source": 165,
+      "blocked_upstream": 60,
+      "not_applicable": 10,
+      "resolved": 73
+    },
+    "bridge_v2": {
+      "extent_absent_in_source": 60,
+      "extent_blocked_upstream": 12,
+      "identity_absent_in_source": 321,
+      "quarantined_later_ace_phase": 20,
+      "resolved_member_extent": 11,
+      "resolved_prior_approval": 7,
+      "tracker_owned_outcome_calendar": 8,
+      "tracker_owned_spine_or_pattern": 45
+    }
+  },
+  "authority": {
+    "authorizes_cross_product": false,
+    "authorizes_occurrence": false,
+    "authorizes_publication": false,
+    "authorizes_study": false,
+    "checkpoint_creates_new_authority": false
+  },
+  "evidence_policy": {
+    "authoritative_historical_full_stop_inventory_required": true,
+    "exact_positive_required": true,
+    "occurrence_inference_prohibited": true,
+    "stop_id_equivalence_acquisition_required": true
+  },
+  "verification": {
+    "focused_closure": {
+      "command": "bun test packages/pipeline/test/quality/study-frontier-preflight.test.ts packages/pipeline/test/quality/study-frontier-handoff.test.ts packages/pipeline/test/quality/study-readiness-companions.test.ts packages/pipeline/test/quality/plan041-projection-successor.test.ts --timeout 900000",
+      "pass": 15,
+      "fail": 0,
+      "expect_call_count": 71,
+      "test_file_count": 4,
+      "duration_seconds": 79.18,
+      "status": "pass"
+    },
+    "successor_projection_repair": {
+      "commit": "39820f9af1cf493cda7f9f6e4c4b4b565b2a4aff",
+      "focused_pass": 64,
+      "focused_fail": 0,
+      "focused_expect_call_count": 995,
+      "focused_test_file_count": 11,
+      "repaired_additional_failure_count": 13,
+      "new_exact_successor_test_count": 2,
+      "status": "pass"
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "status": "pass"
+    },
+    "validate": {
+      "command": "bun run validate",
+      "issues": 0,
+      "release_contract_issues": 0,
+      "reviewed_warnings": 3,
+      "status": "pass"
+    },
+    "preflight": {
+      "command": "bun packages/cli/src/cli.ts study-frontier-preflight",
+      "bus_lane_count": 321,
+      "member_extent_count": 308,
+      "member_grain_count": 308,
+      "bridge_count": 484,
+      "frontier_exception_count": 0,
+      "receipt_reference_count": 838,
+      "status": "pass"
+    },
+    "handoff": {
+      "command": "bun packages/cli/src/cli.ts study-frontier-handoff-verify --receipt data/quality/study-frontier-closure/plan-041-producer-handoff.json --json /tmp/plan041-final-handoff-verification.json",
+      "report_path": "/tmp/plan041-final-handoff-verification.json",
+      "report_sha256": "92b9cb4b3a7ca43639162f14267f218c2d30c8c7032970b99d47445bcc218ce9",
+      "verified_artifact_count": 10,
+      "verified_candidate_count": 484,
+      "verified_release_file_count": 383,
+      "status": "pass"
+    },
+    "release": {
+      "command": "bun packages/cli/src/cli.ts verify-release v1-rc28",
+      "addressed_file_count": 383,
+      "canonical_record_count": 85396,
+      "status": "pass"
+    },
+    "deterministic_replay": {
+      "command": "bun scripts/determinism-anchor.ts",
+      "record_count": 85396,
+      "dump_sha256": "c24ba21771857ecc24286b01c5349ca9b2bbd387129b743b9e39469532ce827d",
+      "fts_sha256": "bb8f1525d4622068e79ca616c654c8bd32ea2227c1766541af6c52dc3f2c04d9",
+      "master_sha256": "f99ff2cd3004d2f6a1203e6ba03f0be439a25884019ca204684f9e3b6fe3cd5d",
+      "combined_sha256": "33777f3cb1b600ec7b839fff47fe8370c7e6c5da97d277896e57618ec7a4a87a",
+      "status": "pass"
+    },
+    "full_repository_checkpoint": {
+      "command": "bun run test",
+      "commit": "39820f9af1cf493cda7f9f6e4c4b4b565b2a4aff",
+      "runner": "bun test v1.3.14 (0d9b296a)",
+      "duration_seconds": 710.64,
+      "exit_code": 1,
+      "counts": {
+        "pass": 1948,
+        "skip": 1,
+        "fail": 9,
+        "error": 1,
+        "test_count": 1958,
+        "test_file_count": 174,
+        "expect_call_count": 613999
+      },
+      "captured_log": {
+        "path": "/tmp/plan041-final-full-suite-39820f9a.log",
+        "sha256": "bb894344cc2a418e53a254ded933db1afed7486512e59341246167148c11936a",
+        "byte_count": 268032,
+        "line_count": 2486,
+        "durability": "ephemeral_checkpoint_capture"
+      },
+      "baseline": {
+        "path": "data/quality/study-frontier-closure/full-suite-baseline-signature-v1.json",
+        "artifact_sha256": "be0604d1825c2cdb0178ee0c3a12db7b4d818663a05afb0044343b642ce9f0d6",
+        "failure_signature_sha256": "d111d493e9a52cb9f14704fc73e3b7679bd7abdbfea5cd20ba604f310b26ea0b",
+        "family_id": "known_missing_corpus_environment_family"
+      },
+      "failure_signature": {
+        "failed_test_count": 9,
+        "failed_tests": [
+          "relationship dispositions v1 > keeps all 1,362 operational and 669 bus-treatment decisions valid in the replayed graph",
+          "Bronx acquisition linkage remediation > materializes 16 physical records and 37 evidence-backed, endpoint-valid, type-valid relations",
+          "Bronx acquisition linkage remediation > retains frozen and current official-source hashes and reuses the exact staged CB5 source",
+          "Gun Hill Road bus-lane completion on October 31, 2023 > pins the official DOT snapshot and exact evidence blocks",
+          "May 2025 ACE official route cut and two bounded canonical cohorts > pins every official artifact, evidence block, stable row id, route, and implementation date",
+          "Flatbush Phase 1 September 2025 source and canonical lifecycle > pins both official source captures and the bounded start, completion, route, and treatment blocks",
+          "Queens acquisition linkage remediation > materializes 21 evidence-backed, endpoint-valid, type-valid relations and no shadow treatment",
+          "Queens acquisition linkage remediation > reconciles the five receipts to exactly the 21 journaled links while retaining exclusion",
+          "Staten Island acquisition linkage remediation > materializes 12 compact route endpoints and 14 evidence-backed, endpoint-valid, type-valid relations"
+        ],
+        "unhandled_error": {
+          "file": "packages/pipeline/test/quality/relationship-reference-remediation.test.ts",
+          "message": "Missing staged source blocks for nyc_dot_gun_hill_road_completion_2023; run prepare-source first."
+        },
+        "failed_tests_match_exact": true,
+        "unhandled_error_match_exact": true,
+        "additional_failures": 0,
+        "unexpected_errors": 0,
+        "signature_unchanged": true
+      },
+      "status": "matches_known_missing_corpus_baseline"
+    },
+    "independent_reviews": {
+      "reviewed_commit": "39820f9af1cf493cda7f9f6e4c4b4b565b2a4aff",
+      "reviewer_results": [
+        "APPROVE",
+        "APPROVE"
+      ],
+      "verdict": "APPROVE/APPROVE"
+    }
+  },
+  "preservation": {
+    "completed_commits_preserved": true,
+    "accepted_decisions_preserved": true,
+    "immutable_plan_040_artifacts_unchanged": true,
+    "plan_041_successor_changed_projection_count": 1,
+    "plan_041_successor_changed_row_count": 7,
+    "plan_041_successor_change_scope": "receipt_ids_and_verdict_basis_only",
+    "latest_path": "data/exports/releases/LATEST",
+    "latest_value": "v1-rc26",
+    "latest_sha256": "00f90525dc3e75ab1580eb678d65c15d46eb1227710c8196ba560b52b1d00eba",
+    "downstream_pin_status": "unchanged",
+    "downstream_pin_sha256": "a4d0b0343eff36bd80ff5ba8dd9cd9c27ba0ebdea1fc13a3c23a4c5f994267f8"
+  }
+}
