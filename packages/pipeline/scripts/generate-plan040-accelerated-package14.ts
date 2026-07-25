@@ -372,9 +372,30 @@ const persistenceMarkers = [
   postPersistenceArtifacts.grainDecisions,
   postPersistenceArtifacts.sourceGapOverlay,
 ] as const;
+const successorPersistenceMarkers = [
+  "data/quality/operational-reference/member-extent-ledger-decisions/" +
+    "plan-040-accelerated-package-15-v1.json",
+  "data/quality/operational-reference/member-grain-decisions/" +
+    "plan-040-accelerated-package-15-v1.json",
+  "data/quality/operational-reference/member-source-gap-overlays/" +
+    "plan-040-accelerated-package-15-v1.json",
+] as const;
 const materializedMarkerCount = persistenceMarkers.filter((path) =>
   existsSync(join(repoRoot, path))
 ).length;
+const successorMarkerCount = successorPersistenceMarkers.filter((path) =>
+  existsSync(join(repoRoot, path))
+).length;
+if (
+  successorMarkerCount !== 0 &&
+  successorMarkerCount !== successorPersistenceMarkers.length
+) {
+  throw new Error(
+    "Package 14 replay found an incomplete Package 15 persistence set",
+  );
+}
+const successorMaterialized =
+  successorMarkerCount === successorPersistenceMarkers.length;
 if (checkOnly && materializedMarkerCount > 0) {
   if (materializedMarkerCount !== persistenceMarkers.length) {
     throw new Error(
@@ -429,8 +450,10 @@ if (checkOnly && materializedMarkerCount > 0) {
         PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS
           .reviewed_candidate_packets,
   };
-  for (const [path, expected] of Object.entries(postProjectionPins)) {
-    assertPinnedNormalFile(path, expected);
+  if (!successorMaterialized) {
+    for (const [path, expected] of Object.entries(postProjectionPins)) {
+      assertPinnedNormalFile(path, expected);
+    }
   }
 
   type AcceptedExtentDecision = {

@@ -53,10 +53,18 @@ export const PLAN040_PACKAGE_15_PERSISTENCE_EVIDENCE_SHA256 =
   "b27f24f7c94e1e52a25f1295f49935d865ea7d7ae4471cd21fab5f9afd95c817" as const;
 export const PLAN040_PACKAGE_15_ACCEPTANCE_SHA256 =
   "778d79c63d9577309afb9dc05a2426677e6d666d1e8574728a6ef78fefe36d80" as const;
-export const PLAN040_PACKAGE_15_EXTENT_DECISIONS_SHA256 = "PENDING" as const;
-export const PLAN040_PACKAGE_15_GRAIN_DECISIONS_SHA256 = "PENDING" as const;
+export const PLAN040_PACKAGE_15_EXTENT_DECISIONS_SHA256 =
+  "f27901ea7f05072ffd6f3ef3446133f2a8ecd29736dfc2a102d01fffb058528b" as const;
+export const PLAN040_PACKAGE_15_GRAIN_DECISIONS_SHA256 =
+  "eac2b262b82bdf3817ee595fd670e08270dd7070cec3349b8c413cfe2c8fcd34" as const;
 export const PLAN040_PACKAGE_15_SOURCE_GAP_OVERLAY_SHA256 =
-  "PENDING" as const;
+  "680c779ea3b0f52abb4069643981ebd67633c5e56955259fc0836d3ba1f15f2c" as const;
+export const PLAN040_PACKAGE_15_CONTRACT_EXTENT_HISTOGRAM = {
+  bounded_segment: 48,
+  route_wide: 35,
+  stop_set: 9,
+  unresolved: 216,
+} as const;
 
 const RISK_PREFIX =
   "data/quality/operational-reference/member-extent-risk/";
@@ -356,7 +364,19 @@ function decisionIds(draft: FrozenDraft) {
 }
 
 function buildGate(input: ReturnType<typeof frozenInputs>) {
-  const proposals = new Map([
+  type GateProposal = {
+    evidence_verdict:
+      | "positive_extent_and_grain_proposed"
+      | "source_gap_blocked_extent_and_grain";
+    proposed_extent_resolution: "route_wide" | "stop_set" | null;
+    proposed_grain_kind:
+      | "all_service"
+      | "not_applicable"
+      | "trip_subset"
+      | null;
+    source_gap_blocked_surfaces: string[];
+  };
+  const proposals = new Map<string, GateProposal>([
     ...input.draft.positive_extent_decisions.map((row) => [
       row.candidate_key,
       {
@@ -1096,7 +1116,7 @@ export function persistPlan040Package15AcceptedArtifacts() {
     [SOURCE_GAP_OVERLAY_PATH, sourceGapOverlaySha256,
       PLAN040_PACKAGE_15_SOURCE_GAP_OVERLAY_SHA256],
   ] as const) {
-    if (expected !== "PENDING" && actual !== expected) {
+    if (actual !== expected) {
       throw new Error(`Plan 040 Package 15 persisted pin drifted: ${path}`);
     }
   }

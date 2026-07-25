@@ -123,7 +123,7 @@ describe("Plan 040 accelerated Package 14 closeout", () => {
       .toBe(persisted.sourceGapOverlay.sha256);
   });
 
-  it("projects the exact global 29-open closure without new authority", () => {
+  it("survives the exact final successor closure without new authority", () => {
     const extent = readJsonl(
       `${process.cwd()}/data/quality/operational-reference/` +
         "member-extent-ledger.jsonl",
@@ -153,11 +153,11 @@ describe("Plan 040 accelerated Package 14 closeout", () => {
       unreviewed: count(extent, (row) => row.verdict === "unreviewed"),
     }).toEqual({
       absent: 165,
-      blocked: 38,
+      blocked: 51,
       bounded: 48,
-      routewide: 20,
-      stopset: 8,
-      unreviewed: 29,
+      routewide: 35,
+      stopset: 9,
+      unreviewed: 0,
     });
     expect({
       absent: count(grain, (row) => row.verdict === "absent_in_source"),
@@ -171,10 +171,10 @@ describe("Plan 040 accelerated Package 14 closeout", () => {
       unreviewed: count(grain, (row) => row.verdict === "unreviewed"),
     }).toEqual({
       absent: 165,
-      blocked: 47,
-      not_applicable: 9,
-      resolved: 58,
-      unreviewed: 29,
+      blocked: 60,
+      not_applicable: 10,
+      resolved: 73,
+      unreviewed: 0,
     });
     expect([...extent, ...grain].every((row) =>
       row.authorizes_study === false &&

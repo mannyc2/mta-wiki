@@ -344,7 +344,11 @@ describe("Plan 040 accelerated Package 14 evidence freeze", () => {
     )) {
       expect(pin.size_bytes).toBeGreaterThan(0);
       expect(pin.sha256).toMatch(/^[0-9a-f]{64}$/);
-      if (name !== "extentLedger" && name !== "grainLedger") {
+      if (
+        name !== "extentLedger" &&
+        name !== "grainLedger" &&
+        name !== "sourceGapLoader"
+      ) {
         const bytes = readFileSync(join(repoRoot, pin.path));
         expect(bytes.byteLength).toBe(pin.size_bytes);
         expect(sha256(bytes)).toBe(pin.sha256);

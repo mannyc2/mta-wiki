@@ -230,6 +230,10 @@ const sourceGapReceiptFields = new Set([
   "prospective_ledger_prefix", "prospective_ledger_reason_policy",
   "receipt_id", "replay_derived", "schema_version", "source_id",
 ]);
+const labeledSourceGapReceiptFields = new Set([
+  ...sourceGapReceiptFields,
+  "frozen_finding_labels_preserved_separately",
+]);
 const sourceGapReceiptCandidateFields = new Set([
   "absence_projection_prohibited_for_unresolved_grain",
   "authorizes_cross_product", "authorizes_decision_persistence",
@@ -239,6 +243,10 @@ const sourceGapReceiptCandidateFields = new Set([
   "prospective_ledger_handling", "resolved_surfaces", "route_record_id",
   "semantic_verdict", "source_statement_evidence_id",
   "source_statement_present", "treatment_record_id",
+]);
+const labeledSourceGapReceiptCandidateFields = new Set([
+  ...sourceGapReceiptCandidateFields,
+  "frozen_finding_verdict",
 ]);
 const evidenceReceiptRefFields = new Set([
   "authorizes_cross_product", "authorizes_decision_persistence",
@@ -280,9 +288,17 @@ const acceptancePreservationFields = new Set([
   "source_gap_receipt_strict_and_nonauthorizing",
   "study_authorization_unchanged", "treatment_ontology_unchanged",
 ]);
+const q89AcceptancePreservationFields = new Set([
+  ...acceptancePreservationFields,
+  "q89_remains_blocked_upstream",
+]);
 const acceptanceVerdictFields = new Set([
   "exact_absence", "positive_extent_and_grain_proposed",
   "positive_extent_proposed_grain_blocked", "source_gap_block_receipt",
+  "source_gap_blocked_extent_and_grain",
+]);
+const compactAcceptanceVerdictFields = new Set([
+  "exact_absence", "positive_extent_and_grain_proposed",
   "source_gap_blocked_extent_and_grain",
 ]);
 const keyFields = new Set(["occurrence_id", "route_record_id", "treatment_record_id"]);
@@ -861,6 +877,18 @@ function strictEvidenceReceiptRef(
   };
 }
 
+function strictArtifactOrEvidenceReceiptRef(
+  value: unknown,
+  path: string,
+): PinnedArtifactRef {
+  const parsed = object(value, path);
+  if ("receipt_id" in parsed) {
+    const receipt = strictEvidenceReceiptRef(value, path);
+    return { path: receipt.path, sha256: receipt.sha256 };
+  }
+  return strictArtifactRef(value, path);
+}
+
 function assertPinnedReceiptIdentity(
   value: unknown,
   ref: StrictEvidenceReceiptRef,
@@ -868,7 +896,12 @@ function assertPinnedReceiptIdentity(
   fields: ReadonlySet<string>,
 ): void {
   const parsed = object(value, path);
-  exactKeys(parsed, fields, path);
+  const effectiveFields =
+    fields === sourceGapReceiptFields &&
+      "frozen_finding_labels_preserved_separately" in parsed
+      ? labeledSourceGapReceiptFields
+      : fields;
+  exactKeys(parsed, effectiveFields, path);
   if (nonempty(parsed.receipt_id, `${path}.receipt_id`) !== ref.receipt_id) {
     throw new Error(`${path}: internal receipt_id does not match pinned reference`);
   }
@@ -898,7 +931,15 @@ function parseStrictSourceGapReceipt(
   path: string,
 ): StrictSourceGapReceipt {
   const parsed = object(value, path);
-  exactKeys(parsed, sourceGapReceiptFields, path);
+  const preservesFrozenFindingLabels =
+    "frozen_finding_labels_preserved_separately" in parsed;
+  exactKeys(
+    parsed,
+    preservesFrozenFindingLabels
+      ? labeledSourceGapReceiptFields
+      : sourceGapReceiptFields,
+    path,
+  );
   if (
     parsed.schema_version !== MEMBER_EXTENT_LEDGER_SCHEMA_VERSION ||
     parsed.absence_projection_prohibited_for_unresolved_grain !== true ||
@@ -911,7 +952,9 @@ function parseStrictSourceGapReceipt(
     parsed.replay_derived !== true ||
     parsed.exact_absence_count !== 0 ||
     parsed.prospective_ledger_prefix !== "blocked_upstream:" ||
-    parsed.prospective_ledger_reason_policy !== "sorted_unique_gap_codes"
+    parsed.prospective_ledger_reason_policy !== "sorted_unique_gap_codes" ||
+    preservesFrozenFindingLabels &&
+      parsed.frozen_finding_labels_preserved_separately !== true
   ) {
     throw new Error(`${path}: source-gap receipt semantics drifted`);
   }
@@ -928,7 +971,24 @@ function parseStrictSourceGapReceipt(
   const candidates = parsed.candidates.map((value, index) => {
     const itemPath = `${path}.candidates[${index}]`;
     const candidate = object(value, itemPath);
-    exactKeys(candidate, sourceGapReceiptCandidateFields, itemPath);
+    exactKeys(
+      candidate,
+      preservesFrozenFindingLabels
+        ? labeledSourceGapReceiptCandidateFields
+        : sourceGapReceiptCandidateFields,
+      itemPath,
+    );
+    if (preservesFrozenFindingLabels) {
+      const frozenFindingVerdict = nonempty(
+        candidate.frozen_finding_verdict,
+        `${itemPath}.frozen_finding_verdict`,
+      );
+      if (!frozenFindingVerdict.startsWith("blocked_upstream:")) {
+        throw new Error(
+          `${itemPath}.frozen_finding_verdict: expected blocked label`,
+        );
+      }
+    }
     const key = {
       occurrence_id: nonempty(
         candidate.occurrence_id,
@@ -1085,7 +1145,7 @@ function parseStrictSourceGapAcceptance(
   nonempty(parsed.authorization_state, `${path}.authorization_state`);
   const artifacts = object(parsed.artifacts, `${path}.artifacts`);
   exactKeys(artifacts, acceptanceArtifactFields, `${path}.artifacts`);
-  const comparisonReceipt = strictArtifactRef(
+  const comparisonReceipt = strictArtifactOrEvidenceReceiptRef(
     artifacts.comparison_receipt,
     `${path}.artifacts.comparison_receipt`,
   );
@@ -1097,7 +1157,7 @@ function parseStrictSourceGapAcceptance(
     artifacts.evidence,
     `${path}.artifacts.evidence`,
   );
-  const sourceGapReceipt = strictArtifactRef(
+  const sourceGapReceipt = strictArtifactOrEvidenceReceiptRef(
     artifacts.source_gap_block_receipt,
     `${path}.artifacts.source_gap_block_receipt`,
   );
@@ -1141,9 +1201,12 @@ function parseStrictSourceGapAcceptance(
     parsed.preservation_invariants,
     `${path}.preservation_invariants`,
   );
+  const preservationFields = "q89_remains_blocked_upstream" in preservation
+    ? q89AcceptancePreservationFields
+    : acceptancePreservationFields;
   exactKeys(
     preservation,
-    acceptancePreservationFields,
+    preservationFields,
     `${path}.preservation_invariants`,
   );
   if (Object.values(preservation).some((value) => value !== true)) {
@@ -1153,13 +1216,18 @@ function parseStrictSourceGapAcceptance(
     parsed.verdict_distribution,
     `${path}.verdict_distribution`,
   );
+  const verdictFields =
+    "source_gap_block_receipt" in verdictDistribution ||
+      "positive_extent_proposed_grain_blocked" in verdictDistribution
+      ? acceptanceVerdictFields
+      : compactAcceptanceVerdictFields;
   exactKeys(
     verdictDistribution,
-    acceptanceVerdictFields,
+    verdictFields,
     `${path}.verdict_distribution`,
   );
   const decodedVerdictDistribution = Object.fromEntries(
-    [...acceptanceVerdictFields].map((field) => [
+    [...verdictFields].map((field) => [
       field,
       nonnegativeInteger(
         verdictDistribution[field],
@@ -1235,8 +1303,9 @@ function assertPinnedAcceptanceChain(input: {
       sortedKeyHash(overlayKeys) ||
     authorized.extent_blocked_upstream_count !== extentBlocked ||
     authorized.grain_blocked_upstream_count !== grainBlocked ||
-    acceptance.verdict_distribution.source_gap_block_receipt !==
-      overlay.entries.length ||
+    (acceptance.verdict_distribution.source_gap_block_receipt ??
+      acceptance.verdict_distribution
+        .source_gap_blocked_extent_and_grain) !== overlay.entries.length ||
     acceptance.verdict_distribution.source_gap_blocked_extent_and_grain !==
       extentBlocked ||
     acceptance.verdict_distribution.exact_absence !== 0

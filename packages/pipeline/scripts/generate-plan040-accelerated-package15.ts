@@ -43,6 +43,11 @@ import {
   type Plan040Package15Discovery,
   type Plan040Package15Partition,
 } from "../src/quality/plan040-accelerated-package15.js";
+import {
+  PLAN040_PACKAGE_15_FROZEN_DRAFT_SHA256,
+  PLAN040_PACKAGE_15_FROZEN_EVIDENCE_SHA256,
+  persistPlan040Package15AcceptedArtifacts,
+} from "../src/quality/plan040-accelerated-package15-closeout.js";
 
 const checkOnly = process.argv.includes("--check");
 const seedPathArgument = process.argv.find((argument) =>
@@ -159,6 +164,82 @@ const filePin = (path: string): JsonValue => {
   const bytes = readFileSync(join(repoRoot, path));
   return { path, sha256: sha256(bytes), size_bytes: bytes.byteLength };
 };
+
+const persistenceMarkers = [
+  "data/quality/operational-reference/member-extent-ledger-decisions/" +
+    "plan-040-accelerated-package-15-v1.json",
+  "data/quality/operational-reference/member-grain-decisions/" +
+    "plan-040-accelerated-package-15-v1.json",
+  "data/quality/operational-reference/member-source-gap-overlays/" +
+    "plan-040-accelerated-package-15-v1.json",
+] as const;
+const persistenceMarkerCount = persistenceMarkers.filter((path) =>
+  existsSync(artifactPath(path))
+).length;
+if (
+  persistenceMarkerCount !== 0 &&
+  persistenceMarkerCount !== persistenceMarkers.length
+) {
+  throw new Error("Package 15 replay found incomplete persistence artifacts");
+}
+if (
+  checkOnly &&
+  artifactRoot === repoRoot &&
+  persistenceMarkerCount === persistenceMarkers.length
+) {
+  const discovery = readJson<Plan040Package15Discovery>(paths.discovery);
+  validatePlan040Package15Discovery(discovery);
+  for (const [path, expected] of [
+    [paths.evidence, PLAN040_PACKAGE_15_FROZEN_EVIDENCE_SHA256],
+    [paths.draft, PLAN040_PACKAGE_15_FROZEN_DRAFT_SHA256],
+  ] as const) {
+    assertNormalFile(path);
+    const actual = sha256(readFileSync(artifactPath(path)));
+    if (actual !== expected) {
+      throw new Error(`${path}: frozen Package 15 SHA-256 drifted`);
+    }
+  }
+  persistPlan040Package15AcceptedArtifacts();
+  const liveExtent = readJsonl(trackedInputs.extentLedger).map(record);
+  const liveGrain = readJsonl(trackedInputs.grainLedger).map(record);
+  const extentByKey = new Map(
+    liveExtent.map((row) => [keyForLedgerRow(row), row]),
+  );
+  const grainByKey = new Map(
+    liveGrain.map((row) => [keyForLedgerRow(row), row]),
+  );
+  for (const candidate of discovery.candidate_details) {
+    const extent = extentByKey.get(candidate.candidate_key);
+    const grain = grainByKey.get(candidate.candidate_key);
+    if (
+      extent === undefined ||
+      grain === undefined ||
+      extent.verdict === "unreviewed" ||
+      grain.verdict === "unreviewed" ||
+      extent.authorizes_study !== false ||
+      extent.authorizes_cross_product !== false ||
+      grain.authorizes_study !== false ||
+      grain.authorizes_cross_product !== false
+    ) {
+      throw new Error(
+        `${candidate.candidate_key}: post-persistence projection drifted`,
+      );
+    }
+  }
+  if (
+    liveExtent.length !== 308 ||
+    liveGrain.length !== 308 ||
+    liveExtent.some((row) => row.verdict === "unreviewed") ||
+    liveGrain.some((row) => row.verdict === "unreviewed")
+  ) {
+    throw new Error("Package 15 final 308-row closure drifted");
+  }
+  console.log(
+    "checked Plan 040 accelerated Package 15 post-persistence replay: " +
+      "29 candidates, 16 positive, 13 blocked source gaps, 0 unreviewed",
+  );
+  process.exit(0);
+}
 
 type SourceReportCandidate = {
   candidate_key: string;

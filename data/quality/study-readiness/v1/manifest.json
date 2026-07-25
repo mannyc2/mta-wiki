@@ -37,14 +37,14 @@
     {
       "path": "data/contracts/operational-occurrence-member-extent/v1/manifest.json",
       "bytes": 2057,
-      "sha256": "d329eeb7963ac1d8e53a7f987fb59dc07f361f6391cb3fd4068297bfbc751fff"
+      "sha256": "47cd4cc4d50313798c324c25f8ee7606a6cbcffda703b0f2e8573e038d4b280e"
     }
   ],
   "files": [
     {
       "path": "data/quality/study-readiness/v1/bridge-ledger.jsonl",
-      "bytes": 1066116,
-      "sha256": "2795f92338f5dcc22369759384d61355526842618f92b7eda70d7cf7476bae9e",
+      "bytes": 1067925,
+      "sha256": "3c4a293ec089e364ebca63fcd045ee8bfb4c74b61ed0f82a2a1267f3b842c043",
       "row_count": 484
     },
     {
@@ -65,8 +65,8 @@
     },
     {
       "path": "data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl",
-      "bytes": 90299,
-      "sha256": "0ac700c48740fff5eb36b626b8dee72f95212378c0b40bc3dc6265b32c3d5844",
+      "bytes": 91383,
+      "sha256": "f393971c46b568a94c6d9f2729f4a6e5d30919fe9e313cee046cc1d9db77e65b",
       "row_count": 11
     },
     {
