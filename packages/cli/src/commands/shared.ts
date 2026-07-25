@@ -39,6 +39,7 @@ export type Command =
   | "historical-full-stop"
   | "bus-lane-identity-ledger"
   | "member-extent-ledger"
+  | "study-frontier-preflight"
   | "plan-040-package-8-accept"
   | "plan-040-package-9-accept"
   | "plan-040-package-10a-accept"

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-041-v1-baseline-freeze-v1",
+  "plan_040_checkpoint": {
+    "commit": "40a032dd5f3ae90208a6dc2b32219f9b43510d59",
+    "path": "data/quality/operational-reference/member-extent-risk/plan-040-final-checkpoint-v1.json",
+    "sha256": "33ba121bed1d4e5ade57983ccadfff0d1b6099c1e87a653237673cb7871c5594"
+  },
+  "newest_verified_release": {
+    "release_id": "v1-rc27",
+    "manifest_version": 5,
+    "manifest_path": "data/exports/releases/v1-rc27/manifest.json",
+    "manifest_bytes": 76157,
+    "manifest_sha256": "ed2332e653c7c9b5e37faee52198ff9f4c17d725c539831a4010471be5de622a"
+  },
+  "frozen_files": [
+    {
+      "path": "data/quality/study-readiness/v1/bridge-ledger.jsonl",
+      "bytes": 1067925,
+      "sha256": "3c4a293ec089e364ebca63fcd045ee8bfb4c74b61ed0f82a2a1267f3b842c043"
+    },
+    {
+      "path": "data/quality/study-readiness/v1/bridge-summary.json",
+      "bytes": 474,
+      "sha256": "a9fbef6364dd8e78ad29272190a55c6fa457926369258c0c838813af8853daa1"
+    },
+    {
+      "path": "data/quality/study-readiness/v1/consumer-owned-quarantine.jsonl",
+      "bytes": 25287,
+      "sha256": "e9a32eb8cdafcdb6b69d6f8410e7503e8a33029e5df20153b03cd571d390a491"
+    },
+    {
+      "path": "data/quality/study-readiness/v1/consumer-priority-manifest.json",
+      "bytes": 574693,
+      "sha256": "d1427e1d300905a5d96432fa2e0f3b468be458f447c01c406b4f6f7a03ae5d30"
+    },
+    {
+      "path": "data/quality/study-readiness/v1/manifest.json",
+      "bytes": 2924,
+      "sha256": "74857abb4ed98ac1f680815bede9cd0fa6f761409885fa159b19ead576730092"
+    },
+    {
+      "path": "data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl",
+      "bytes": 91383,
+      "sha256": "f393971c46b568a94c6d9f2729f4a6e5d30919fe9e313cee046cc1d9db77e65b"
+    },
+    {
+      "path": "data/quality/study-readiness/v1/research/summary.json",
+      "bytes": 577,
+      "sha256": "95039b727ad3af502c1b14c53dedec1686add0b24581cd9110b094fd23783e23"
+    },
+    {
+      "path": "data/quality/study-readiness/v1/tracker-rc26-input.json",
+      "bytes": 1442487,
+      "sha256": "1d96eda711a30f651628b64adf8ae4f71cd7acd99bff09d6735bfeea265965cf"
+    },
+    {
+      "path": "packages/pipeline/src/quality/study-readiness-v1.ts",
+      "bytes": 12314,
+      "sha256": "6e0cb83a996e5b78a122a1bf0a7ace055f6df578a21d2e63913f5c507b94cad3"
+    }
+  ],
+  "authorizes_study": false,
+  "authorizes_cross_product": false
+}

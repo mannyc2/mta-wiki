@@ -9,6 +9,7 @@ import { writeForecastRealizationReviewArtifacts } from "@mta-wiki/pipeline/qual
 import { writeOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
 import { writeBusLaneIdentityArtifacts } from "@mta-wiki/pipeline/quality/bus-lane-identity";
 import { writeMemberExtentLedgerArtifacts } from "@mta-wiki/pipeline/quality/member-extent-ledger";
+import { runStudyFrontierPreflight } from "@mta-wiki/pipeline/quality/study-frontier-preflight";
 import {
   acceptPlan040ExemplarDecisionPackage,
   writePlan040ExemplarDecisionDraft,
@@ -567,6 +568,17 @@ const relationshipCompleteness: CommandHandler = () => {
 export const qualityCommands = {
   "bus-lane-identity-ledger": busLaneIdentityLedger,
   "member-extent-ledger": memberExtentLedger,
+  "study-frontier-preflight": () => {
+    const result = runStudyFrontierPreflight();
+    console.log(
+      `Study frontier ${result.status}: bus-lane=${result.bus_lane_candidate_count}, ` +
+        `member-extent=${result.member_extent_candidate_count}, ` +
+        `member-grain=${result.member_grain_candidate_count}, ` +
+        `bridge=${result.bridge_candidate_count}, ` +
+        `exceptions=${result.frontier_exception_count}, ` +
+        `receipt-refs=${result.receipt_reference_count}.`,
+    );
+  },
   "plan-040-exemplar-accept": plan040ExemplarAccept,
   "plan-040-exemplar-draft": plan040ExemplarDraft,
   "plan-040-package-2-accept": plan040Package2Accept,

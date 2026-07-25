@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "contract_id": "member-grain-block-receipt-v1",
+  "receipt_id": "plan-040-package-11-reviewed-blocks-v1",
+  "bindings": [
+    {
+      "occurrence_id": "occurrence:8ceb4179de2ab8a2852347df",
+      "route_record_id": "route_q80",
+      "gtfs_route_id": "Q80",
+      "treatment_record_id": "treatment_q80-frequency-overnight-service-2025",
+      "member_extent_decision_id": "member-extent-review:ae33c3c10ba9cca06dc01a56",
+      "member_grain_decision_id": "member-grain-review:plan040-package11-treatment_q80-frequency-overnight-service-2025",
+      "missing_roles": [
+        "effective_date_full_stop_inventory",
+        "frequency_evidence",
+        "later_feed_lineage"
+      ]
+    },
+    {
+      "occurrence_id": "occurrence:8ceb4179de2ab8a2852347df",
+      "route_record_id": "route_q80",
+      "gtfs_route_id": "Q80",
+      "treatment_record_id": "treatment_q80-q10-limited-branch-replacement-2025",
+      "member_extent_decision_id": "member-extent-review:ea11416fe15938b292b96ae9",
+      "member_grain_decision_id": "member-grain-review:plan040-package11-treatment_q80-q10-limited-branch-replacement-2025",
+      "missing_roles": [
+        "effective_date_full_stop_inventory",
+        "frequency_evidence",
+        "later_feed_lineage"
+      ]
+    },
+    {
+      "occurrence_id": "occurrence:a04ec993d0faee78af481311",
+      "route_record_id": "route_q87-qbnr-2025",
+      "gtfs_route_id": "Q87",
+      "treatment_record_id": "treatment_q87-limited-stops-2025",
+      "member_extent_decision_id": "member-extent-review:abd3040a78bbc19e8fe9e6bb",
+      "member_grain_decision_id": "member-grain-review:plan040-package11-treatment_q87-limited-stops-2025",
+      "missing_roles": [
+        "accepted_date_resolution",
+        "feed_version_resolution"
+      ]
+    },
+    {
+      "occurrence_id": "occurrence:a04ec993d0faee78af481311",
+      "route_record_id": "route_q87-qbnr-2025",
+      "gtfs_route_id": "Q87",
+      "treatment_record_id": "treatment_q87-q5-green-acres-replacement-2025",
+      "member_extent_decision_id": "member-extent-review:df05eab7e8db9c2288df667f",
+      "member_grain_decision_id": "member-grain-review:plan040-package11-treatment_q87-q5-green-acres-replacement-2025",
+      "missing_roles": [
+        "accepted_date_resolution",
+        "feed_version_resolution"
+      ]
+    },
+    {
+      "occurrence_id": "occurrence:a31494bfefdd2128f130b872",
+      "route_record_id": "route_q63-qbnr-2025",
+      "gtfs_route_id": "Q63",
+      "treatment_record_id": "treatment_q63-limited-stops-2025",
+      "member_extent_decision_id": "member-extent-review:1f5bfe3fde988855502a3718",
+      "member_grain_decision_id": "member-grain-review:plan040-package11-treatment_q63-limited-stops-2025",
+      "missing_roles": [
+        "corrected_initial_feed_bytes",
+        "published_launch_conflict_resolution"
+      ]
+    },
+    {
+      "occurrence_id": "occurrence:a31494bfefdd2128f130b872",
+      "route_record_id": "route_q63-qbnr-2025",
+      "gtfs_route_id": "Q63",
+      "treatment_record_id": "treatment_q63-northern-boulevard-connection-2025",
+      "member_extent_decision_id": "member-extent-review:11def9ffcb4a7b9280e04c0f",
+      "member_grain_decision_id": "member-grain-review:plan040-package11-treatment_q63-northern-boulevard-connection-2025",
+      "missing_roles": [
+        "corrected_initial_feed_bytes",
+        "published_launch_conflict_resolution"
+      ]
+    },
+    {
+      "occurrence_id": "occurrence:d30e60bf0a04874c1ae7d40b",
+      "route_record_id": "route_q86-qbnr-2025",
+      "gtfs_route_id": "Q86",
+      "treatment_record_id": "treatment_q86-q5-q85-branch-combination-2025",
+      "member_extent_decision_id": "member-extent-review:8b21c0a3d8d33b6ec5a4e0df",
+      "member_grain_decision_id": "member-grain-review:plan040-package11-treatment_q86-q5-q85-branch-combination-2025",
+      "missing_roles": [
+        "branch_lineage_mapping",
+        "direction_lineage_mapping"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "role": "dual_review_gate",
+      "path": "data/quality/operational-reference/member-extent-risk/plan-040-qbnr-service-grain-package-11-dual-review-gate-v1.json",
+      "bytes": 2578,
+      "sha256": "ec277d0872919b975e0871ad75af7d1413e4eb0dbd3d02e7d5fd150ebfa9eb3e"
+    },
+    {
+      "role": "grain_decisions",
+      "path": "data/quality/operational-reference/member-grain-decisions/plan-040-qbnr-service-grain-package-11-v1.json",
+      "bytes": 20427,
+      "sha256": "b44afec8ac1e99d1793c26fee994ea7243f7ebd2f8f1622d097a6d7c98dc991b"
+    },
+    {
+      "role": "owner_acceptance",
+      "path": "data/quality/operational-reference/member-extent-risk/plan-040-qbnr-service-grain-package-11-owner-acceptance-v1.json",
+      "bytes": 5096,
+      "sha256": "a54f5eaa415af1f0e62fa50302eb3769154ae9587a4b519f6337614043335110"
+    }
+  ],
+  "rationale": "Provenance-only receipt for the seven accepted Package-11 unresolved service-grain decisions. It preserves the exact missing roles and accepted review chain without authorizing an occurrence, study, cross-product, or new decision.",
+  "reviewed_at": "2026-07-24T18:45:00Z",
+  "reviewed_by": "codex-owner-delegate",
+  "authorizes_study": false,
+  "authorizes_cross_product": false,
+  "authorizes_occurrence": false,
+  "authorizes_decision_persistence": false
+}

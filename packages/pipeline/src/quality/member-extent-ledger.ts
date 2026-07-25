@@ -31,6 +31,12 @@ import {
   type MemberGrainServiceScope,
 } from "./member-grain-decisions.js";
 import {
+  DEFAULT_MEMBER_GRAIN_BLOCK_RECEIPT,
+  loadMemberGrainBlockReceipt,
+  memberGrainBlockKey,
+  type MemberGrainBlockReceipt,
+} from "./member-grain-block-receipts.js";
+import {
   MEMBER_EXTENT_KINDS,
   extentDecisionKey,
   validateMemberExtentDecision,
@@ -1852,6 +1858,7 @@ export function buildMemberExtentLedgers(input: {
   dossierArtifacts?: readonly ScheduleDossierArtifact[];
   packetIds?: ReadonlyMap<string, string>;
   expectedMemberKeys?: readonly MemberExtentKey[];
+  grainBlockReceipts?: readonly MemberGrainBlockReceipt[];
 }): { extentRows: MemberExtentLedgerRow[]; grainRows: MemberGrainLedgerRow[] } {
   const companion = [...input.companionRows].sort((left, right) =>
     extentDecisionKey(left).localeCompare(extentDecisionKey(right)));
@@ -1915,6 +1922,22 @@ export function buildMemberExtentLedgers(input: {
   }
   const absences = absenceIndex(parsedReceipts, denominator);
   const sourceGaps = sourceGapIndex(parsedSourceGapOverlays, denominator);
+  const grainBlocks = new Map<string, {
+    receipt: MemberGrainBlockReceipt;
+    binding: MemberGrainBlockReceipt["bindings"][number];
+  }>();
+  for (const receipt of input.grainBlockReceipts ?? []) {
+    for (const binding of receipt.bindings) {
+      const key = memberGrainBlockKey(binding);
+      if (!denominator.has(key)) {
+        throw new Error(`${receipt.receipt_id}: orphan grain-block binding ${key}`);
+      }
+      if (grainBlocks.has(key)) {
+        throw new Error(`${receipt.receipt_id}: duplicate grain-block binding ${key}`);
+      }
+      grainBlocks.set(key, { receipt, binding });
+    }
+  }
   const dossierIndex = dossierRefs(input.dossierArtifacts ?? []);
   const extentRows = companion.map((current) => {
     const key = extentDecisionKey(current);
@@ -2000,12 +2023,34 @@ export function buildMemberExtentLedgers(input: {
     const key = extentDecisionKey(current);
     const spatial = spatialByKey.get(key)!;
     const decision = grainDecisions.get(key);
+    const grainBlock = grainBlocks.get(key);
     const absence = absences.get(`member_grain\0${key}`);
     const sourceGap = sourceGaps.get(`member_grain\0${key}`);
     if (absence && sourceGap) {
       throw new Error(`${key}: absence and source-gap overlays conflict`);
     }
     if (decision && absence) throw new Error(`${key}: grain decision conflicts with absence receipt`);
+    if (grainBlock) {
+      if (
+        !decision ||
+        decision.service_scope.kind !== "unresolved" ||
+        decision.decision_id !== grainBlock.binding.member_grain_decision_id ||
+        decision.member_extent_decision_id !==
+          grainBlock.binding.member_extent_decision_id ||
+        decision.gtfs_route_id !== grainBlock.binding.gtfs_route_id ||
+        stableJson(decision.service_scope.missing_roles as unknown as JsonValue) !==
+          stableJson(grainBlock.binding.missing_roles as JsonValue)
+      ) {
+        throw new Error(
+          `${grainBlock.receipt.receipt_id}: grain-block binding does not match unresolved decision ${key}`,
+        );
+      }
+      if (absence || sourceGap) {
+        throw new Error(
+          `${grainBlock.receipt.receipt_id}: grain-block receipt conflicts with another receipt ${key}`,
+        );
+      }
+    }
     if (
       sourceGap &&
       decision &&
@@ -2070,10 +2115,14 @@ export function buildMemberExtentLedgers(input: {
         ? `receipt:${absence.receipt_id}`
         : sourceGap
         ? `receipt:${sourceGap.overlay.source_receipt.receipt_id}`
+        : grainBlock
+        ? `review:${decision!.decision_id};receipt:${grainBlock.receipt.receipt_id}`
         : decision ? `review:${decision.decision_id}` : null,
       receipt_ids: absence
         ? [absence.receipt_id]
-        : sourceGap ? [sourceGap.overlay.source_receipt.receipt_id] : [],
+        : sourceGap
+        ? [sourceGap.overlay.source_receipt.receipt_id]
+        : grainBlock ? [grainBlock.receipt.receipt_id] : [],
       updated_at: absence?.reviewed_at ??
         sourceGap?.overlay.accepted_at ??
         decision?.reviewed_at ??
@@ -2111,6 +2160,7 @@ export function writeMemberExtentLedgerArtifacts(options: {
   packetPath?: string;
   extentOutputPath?: string;
   grainOutputPath?: string;
+  grainBlockReceiptPath?: string | null;
 } = {}): {
   extentRows: MemberExtentLedgerRow[];
   grainRows: MemberGrainLedgerRow[];
@@ -2133,11 +2183,22 @@ export function writeMemberExtentLedgerArtifacts(options: {
     "data/quality/study-readiness/v1/research/reviewed-candidate-packets.jsonl");
   const extentOutputPath = absolute(options.extentOutputPath ?? DEFAULT_MEMBER_EXTENT_LEDGER);
   const grainOutputPath = absolute(options.grainOutputPath ?? DEFAULT_MEMBER_GRAIN_LEDGER);
+  const grainBlockReceiptPath = options.grainBlockReceiptPath === null
+    ? null
+    : absolute(options.grainBlockReceiptPath ?? DEFAULT_MEMBER_GRAIN_BLOCK_RECEIPT);
   const result = buildMemberExtentLedgers({
     companionRows: readCompanion(companionPath),
     expectedMemberKeys: readOccurrenceMemberKeys(occurrencesPath),
     extentDecisions: loadMemberExtentDecisions(extentDecisionDirs),
     grainDecisions: loadMemberGrainDecisions(grainDecisionDirs),
+    grainBlockReceipts: grainBlockReceiptPath === null ||
+        (!existsSync(grainBlockReceiptPath) &&
+          options.grainBlockReceiptPath === undefined)
+      ? []
+      : [loadMemberGrainBlockReceipt(
+          options.grainBlockReceiptPath ?? DEFAULT_MEMBER_GRAIN_BLOCK_RECEIPT,
+          rootDir,
+        )],
     absenceReceipts: loadMemberExtentAbsenceReceipts(absenceReceiptDirs),
     sourceGapOverlays: loadMemberSourceGapOverlays(
       sourceGapOverlayDirs,
