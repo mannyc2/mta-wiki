@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "contract_id": "relationship-dispositions-v1",
+  "reviewed_at": "2026-07-15",
+  "operational_event_count": 1362,
+  "decision_count": 1362,
+  "study_projectable_count": 131,
+  "non_projectable_count": 1231,
+  "waiver_count": 1231,
+  "missing_decision_count": 0,
+  "counts_by_primary_disposition": {
+    "eligible_occurrence_present": 131,
+    "reviewed_non_projectable_occurrence_excluded": 1,
+    "reviewed_non_projectable_required_roles_unproven": 1143,
+    "reviewed_non_projectable_terminal_source_absence": 87
+  },
+  "warning_backlog_after_dispositions": 0
+}

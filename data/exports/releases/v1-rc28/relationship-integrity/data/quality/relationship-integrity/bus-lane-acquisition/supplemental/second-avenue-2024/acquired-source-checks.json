@@ -1,0 +1,22 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "second-avenue-redesign-release-supplement",
+  "sources": [
+    {
+      "byte_length": 27501,
+      "category": "dot_lane_project",
+      "content_sha256": "3cc463142e35806046b8cc959658f423e7b6a5d6c360d1dceeb54360eca69979",
+      "http_status": 200,
+      "id": "second_avenue_redesign_release_current_staged_copy",
+      "media_type": "text/html; charset=utf-8",
+      "note": "Official NYC DOT release used only for broader-project M15 local/SBS service context; it does not establish the exact four feature rows, July 1 onset, phase, direction, traversal, or study eligibility.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.html",
+      "source_id": "nyc_dot_second_avenue_redesign_release_jun2024",
+      "url": "https://www.nyc.gov/html/dot/html/pr2024/redesign-manhattan-second-ave.shtml"
+    }
+  ]
+}

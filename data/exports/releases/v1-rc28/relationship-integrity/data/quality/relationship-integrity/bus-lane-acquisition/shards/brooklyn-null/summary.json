@@ -1,0 +1,41 @@
+{
+  "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
+  "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
+  "date_and_phase_proved_count": 0,
+  "exact_route_binding_proved_candidate_ids": [
+    "study-event-v2:2d2be03b8437c8af3bf6ddef",
+    "study-event-v2:9abe8a89e65262770fe5df60",
+    "study-event-v2:b12bca67da912c6dc9b71b80",
+    "study-event-v2:bc870a23ee602a9ea28d9160",
+    "study-event-v2:d7958c3a07e9ba179ab9ac61",
+    "study-event-v2:e1d437f15fa4caee51760675",
+    "study-event-v2:e2f62a46ac9f1b1a54f713bc",
+    "study-event-v2:ea0ab416262ceed4e7184116"
+  ],
+  "exact_route_binding_proved_count": 8,
+  "exclusions_sha256": "bafe8d4ba43709cdc3561d57f871c1195495127dc49de1aee44712f05bba4271",
+  "exclusive_primary_disposition_counts": {
+    "completed_search_route_linkage_unresolved": 52,
+    "linkage_supported_phase_unresolved": 8
+  },
+  "existing_canonical_link_count": 8,
+  "explicitly_excluded_count": 60,
+  "operational_occurrence_added_or_updated_count": 0,
+  "receipts_sha256": "8806c619a6a3cbcdf4233f74fb58cab8d243651b649b69c02c8f8c4c24344a10",
+  "researched_count": 60,
+  "researched_on": "2026-07-15",
+  "route_partition_counts": {
+    "borough_null_x_routes": 4,
+    "brooklyn": 56
+  },
+  "schema_version": 1,
+  "segment_binding_proved_candidate_ids": [
+    "study-event-v2:b12bca67da912c6dc9b71b80"
+  ],
+  "segment_binding_proved_count": 1,
+  "shard": "brooklyn-null",
+  "source_acquired_count": 60,
+  "still_unresolved_count": 60,
+  "study_projection_eligible_count": 0,
+  "warning": "A supported route-treatment linkage is not a projectable occurrence. All rows remain excluded because stable phase and canonical occurrence identity were not proved."
+}

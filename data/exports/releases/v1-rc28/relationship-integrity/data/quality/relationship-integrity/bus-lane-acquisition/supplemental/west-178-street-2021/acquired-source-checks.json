@@ -1,0 +1,22 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "west-178-street-2021-route-context-supplement",
+  "sources": [
+    {
+      "byte_length": 4455944,
+      "category": "official_public_board_committee",
+      "content_sha256": "431fe0b4105561eb4ce0c241245a276ee56b07c6bf810be5cd7a6eee36a94209",
+      "http_status": 200,
+      "id": "west_178_street_cb12_project_presentation",
+      "media_type": "application/pdf",
+      "note": "Official NYC DOT presentation used only for exact-project-area route context. It names BX7, M5, and M100 among bus routes within the West 178th Street project limits and describes the corridor Bus Only Lane, but does not establish the exact feature-row traversal, eastbound direction, June 28, 2021 onset, or study eligibility.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "nyc_dot_w178_street_safety_cb12_mar2020",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/w178-st-ft-washington-ave-wadsworth-ave-cb12-mar2020.pdf"
+    }
+  ]
+}

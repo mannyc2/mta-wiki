@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-07-15T12:00:00.000Z",
+  "pinned_corpus": {
+    "data/canonical/relations.jsonl": "c2480fb9da78b339a9381ff6e5756f6496f87791f79b5cf3f2bc8e2f6b99bbf7",
+    "data/canonical/sources.jsonl": "9866592b0e6c0d713c2f62c362d50d33ca43d4e56d631126a335d075771c2ca0",
+    "data/canonical/claims.jsonl": "55b0784ffc4eb08204e79ce6ac9ea4755a1253a202f15fd50a6b51e9cd541d22",
+    "data/canonical/metric_claims.jsonl": "433649f5a1cea1e80d4feb1264d1d76fef688444c0546048ea8f920569da3c2a"
+  },
+  "pinned_raw_sources": {
+    "jamaica": {
+      "metadata": "bb5e1a905794402630d1ff44e0ccedb5ff73e5e4cf785430a09da111380a72b1",
+      "blocks": "608fde933fca3418cf0575d2d243595e00ba835c272e12cf561d0ac790572ca3"
+    },
+    "mta_automated_camera_enforcement": {
+      "metadata": "949c2ebd77140c5bca22bfe178317330a040cdb15a30b73c21e41c7cf7a8a977",
+      "blocks": "52beef546cf3e92e3c1414ce0b28daf836dc4d14813a96cb0efbcee80f06fb9f"
+    },
+    "open_data_lessons_2026": {
+      "metadata": "614981a2fe1f4a97bfb08c2e805e92a212f20c8c1c0759497184aa3fb960f32c",
+      "blocks": "507c72ffd33b8652ab63bd60a344b0c7e668a7e29f1174bf1ade0b9e1279335f"
+    },
+    "queens_proposed_final_plan_addendum_2024": {
+      "metadata": "1be1a7a556a74e2bc315376209189be79da376f14681d3ff051c8d98482871b3",
+      "blocks": "4804ae1366c5e9844f3e16f2cad0d21d52f607f9de632da654c30fa00a110e84"
+    },
+    "queens_service_change_board_item_2025": {
+      "metadata": "9e043d37ed94957f236d2b2c27edcc3643d7bd39a3ab7a9c38a3ce68b7f38e76",
+      "blocks": "022c76a02a0d740b481d1dde6b06798f8df4363e4a3d2f8196a346c06a9ff7b8"
+    },
+    "meeting_doc_205566": {
+      "metadata": "32b896b70400d34d980ec32c387dec35c0c809a2999027fe88fb515b109c1962",
+      "blocks": "a7ed37a0ca470e3b1f1529786cf889e717e237791e47d0028ac60263d5e11eda"
+    },
+    "meeting_doc_179691": {
+      "metadata": "1c30e14444c409e4db297dac3d606af8193986df06e1e7e31b76018dfb76548b",
+      "blocks": "aa3c9b82b01966157ca6132f27cf94575db603e444d81e3e7ead8f31852ea27a"
+    },
+    "brt_m79_cb7_mar2017": {
+      "metadata": "4776d75b1893332673b35c557356eb1333fa5df80e05ac331cc613e81e1e1e32",
+      "blocks": "f62ad2594a9631380e96aede80dfd583c50effdff9b48c850692f1c134768a2d"
+    },
+    "meeting_doc_201561": {
+      "metadata": "799bfcd2a1c093483f8e60a8950199d6c04110cc4e060db18c1c9fe633d74007",
+      "blocks": "f6a0ff3d9ab0a4244253e95260f3b983cd26549a2f6fb08ce0d3913438369ac5"
+    },
+    "meeting_doc_33681": {
+      "metadata": "72494d98c47da6b178f90643516bda2b3553160027515e914796a631fa705a53",
+      "blocks": "92ed00349d5a3710f24474930d6996280f6e4aeed156e6ad880bd20cb9894661"
+    },
+    "meeting_doc_131646": {
+      "metadata": "d520033e844dd5f54fcde17829b60a77d26c9df915f38d97906f4100badc0567",
+      "blocks": "019b42127d06341fa6bef10e05b9d841393730f8fa05312fe0c2ffe81f090eb4"
+    },
+    "meeting_doc_171496": {
+      "metadata": "14f7d7ea9ff6ef71e671b8e9306d62a41a0e1e9eccd084b66f1b7a488c1cc1d1",
+      "blocks": "350080537b0b70bda52ce83033abf23d98082448330f64df3d24f8d286f12ee8"
+    },
+    "flatbush_ave_bus_priority_mtp_briefing_apr2026": {
+      "metadata": "7de89144dcb896ad64ae3b14f29df6d8ae4fe29ca530ebfa8615cfd2f1d456a7",
+      "blocks": "4a13c7a218c0f16f7ceb483a1117a5703caaee83c64b8e6b315d32a3312072b6"
+    },
+    "meeting_doc_102841": {
+      "metadata": "d5af9e7904a848bb20fc29f6e10e7334154c5e87099e21014433600dcf22014c",
+      "blocks": "ede14deacf8cc34427ad4b47bbf63e71fb22859206a0d752ff41f3959c3de51f"
+    },
+    "meeting_doc_128921": {
+      "metadata": "32f1c3bad7707bdb72bb9358914df7e4eac5a762637de9c833027c31caf9e4e1",
+      "blocks": "28b00a43af5fdbf44d7290b728fc710aef6ee4c690ca1903c516bdb8962cb99e"
+    },
+    "meeting_doc_140421": {
+      "metadata": "3163e3de9e0ff5233655b804639f01630c51b5f29bcb1d1b662d1191e632053a",
+      "blocks": "11efff07ea19ce23d99be562648764b7c07e746ea790e479a811d451dfc5cc89"
+    },
+    "meeting_doc_164966": {
+      "metadata": "c0b58e41f20f006a37d9aa67495576c784e5082fee89b09f274c6d5c10f2a32c",
+      "blocks": "877611d33091fdb7979929a465620b9e434ca4a2a5563895e4eb1fdb115e7dee"
+    },
+    "nyct_key_performance_metrics_june2025": {
+      "metadata": "aa4280f87295631afaccafe78d9f613ee86da6add51f9d35a742fbc6f1492fd9",
+      "blocks": "05c367fed2e36a6c07f5d97517315a402731d1932f7bbf85aff9a922ed150e99"
+    },
+    "meeting_doc_199181": {
+      "metadata": "15af615a3868ad83b7954c7d938ff4fa1fedfb0307b038967fa0f0d8cbfcd2ba",
+      "blocks": "44a3219b1028e93cfe1bb542e34535f2eff072b94a4d97120814bcb12c064391"
+    },
+    "meeting_doc_205596": {
+      "metadata": "06b26ca0e55d43ff268d9dc5641ad9aaeaee6f5f803d24f45e33bb034a5ddb7f",
+      "blocks": "b05b255e59c81573f90f879aada6421838d778d3f9e4e826ca7353cca584e4c6"
+    }
+  },
+  "inventory": {
+    "ledger_items": 216,
+    "provisional_family_shape_suspects": 172,
+    "exact_semantic_duplicate_groups": 22,
+    "same_date_lifecycle_groups": 2,
+    "merged_edge_conflicts": 1,
+    "local_endpoint_membership_mismatches": 1,
+    "broad_evidence_span_reviews": 8,
+    "missing_source_registry_identities": 5,
+    "duplicate_source_registry_identities": 5
+  },
+  "remediation": {
+    "semantic_corrections": 242,
+    "submission_entries": 22,
+    "source_backfills": 5,
+    "split_relation_additions": 1,
+    "physical_corridor_additions": 3,
+    "physical_scope_relation_additions": 3,
+    "typed_modeling_gap_record_additions": 6,
+    "typed_modeling_gap_relation_additions": 6,
+    "correction_apply_summary": {
+      "total": 242,
+      "applied": 242,
+      "skipped": 0,
+      "appliedByOp": {
+        "patch_payload": 191,
+        "replace_endpoint": 17,
+        "retract_record": 14,
+        "set_review_state": 2,
+        "supersede_record": 12,
+        "recite_evidence": 6
+      },
+      "skippedByOp": {},
+      "appliedBySourceDecision": {
+        "data/quality/relationship-integrity/legacy-remediation/ledger.jsonl": 242
+      }
+    },
+    "disposition_counts": {
+      "backfilled_authoritative_source_observation": 5,
+      "corrected_canonical_endpoint": 14,
+      "corrected_relation_family": 137,
+      "merged_duplicate_identity": 8,
+      "merged_into_correct_local_identity_survivor": 1,
+      "merged_same_document_identity": 4,
+      "modeled_typed_counterpart": 6,
+      "recited_to_exact_atomic_blocks": 6,
+      "repaired_collapsed_agency_endpoints": 1,
+      "retained_explicit_distinct_variants": 13,
+      "retained_necessary_multirow_evidence": 1,
+      "retained_phase_parallel_assertions": 2,
+      "retained_semantically_valid_family": 9,
+      "retracted_evidence_invalid_relation": 1,
+      "retracted_invalid_derived_self_loop": 1,
+      "retracted_malformed_self_loop": 5,
+      "retracted_test_submission": 1,
+      "split_into_two_canonical_edges": 1
+    },
+    "canonical_additions": [
+      {
+        "record_id": "corridor_east-river-tunnels-meeting-doc-171496",
+        "record_kind": "corridor",
+        "submission_id": "sub_86261221d940ff84",
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_171496#p002_c0001",
+            "text_sha256": "sha256:74b4dfcde0ba2bfeb7cfe008f3add411e224dac1f20640ffa32cff47058dd718"
+          }
+        ]
+      },
+      {
+        "record_id": "corridor_flatbush-phase1-livingston-state",
+        "record_kind": "corridor",
+        "submission_id": "sub_f9824a66d8ab3bfc",
+        "evidence_bindings": [
+          {
+            "evidence_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026#p004_c0002",
+            "text_sha256": "sha256:04e364443480c8b2cda313fd5461a4e0c68f70b891b2d9d39735d13513839e29"
+          }
+        ]
+      },
+      {
+        "record_id": "relation_flatbush-phase1-uses-bounded-corridor-livingston-state-20260715",
+        "record_kind": "relation",
+        "submission_id": "sub_9457376b301c4128",
+        "evidence_bindings": [
+          {
+            "evidence_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026#p004_c0002",
+            "text_sha256": "sha256:04e364443480c8b2cda313fd5461a4e0c68f70b891b2d9d39735d13513839e29"
+          }
+        ],
+        "relation_kind": "uses_corridor",
+        "relation_family": "corridor_scope",
+        "subject_id": "project_flatbush-phase1-center-running-bus-lanes-livingston-state",
+        "object_id": "corridor_flatbush-phase1-livingston-state"
+      },
+      {
+        "record_id": "relation_flatbush-phase1-treatment-on-bounded-corridor-livingston-state-20260715",
+        "record_kind": "relation",
+        "submission_id": "sub_1eef86e06a786107",
+        "evidence_bindings": [
+          {
+            "evidence_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026#p004_c0002",
+            "text_sha256": "sha256:04e364443480c8b2cda313fd5461a4e0c68f70b891b2d9d39735d13513839e29"
+          }
+        ],
+        "relation_kind": "located_on_corridor",
+        "relation_family": "corridor_scope",
+        "subject_id": "treatment_flatbush-phase1-center-running-bus-lanes-livingston-state",
+        "object_id": "corridor_flatbush-phase1-livingston-state"
+      },
+      {
+        "record_id": "entity_ossining-station-2024",
+        "record_kind": "entity",
+        "submission_id": "sub_0193323612676453",
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_140421#p002_c0004",
+            "text_sha256": "sha256:25e22a3a3ec21e6d7f3bd266deec16ffdcf4d0038e8b02661054e5a79e0b2fd9"
+          },
+          {
+            "evidence_id": "meeting_doc_140421#p002_c0008",
+            "text_sha256": "sha256:527ee4a9e3df7522d13d716568c658ced77be9c20036dd4b69d0a47bb643bed0"
+          }
+        ]
+      },
+      {
+        "record_id": "relation_ossining-event-located-at-station-20260715",
+        "record_kind": "relation",
+        "submission_id": "sub_85210cb67a6158f4",
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_140421#p002_c0004",
+            "text_sha256": "sha256:25e22a3a3ec21e6d7f3bd266deec16ffdcf4d0038e8b02661054e5a79e0b2fd9"
+          },
+          {
+            "evidence_id": "meeting_doc_140421#p002_c0008",
+            "text_sha256": "sha256:527ee4a9e3df7522d13d716568c658ced77be9c20036dd4b69d0a47bb643bed0"
+          },
+          {
+            "evidence_id": "meeting_doc_140421#p002_c0010",
+            "text_sha256": "sha256:c91e01432885a18db92906dda6a054a7fa2d724966120484491aecda4a069abb"
+          }
+        ],
+        "relation_kind": "located_at",
+        "relation_family": "location_scope",
+        "subject_id": "event_ossining-earth-day-2024",
+        "object_id": "entity_ossining-station-2024"
+      },
+      {
+        "record_id": "project_paratransit-ev-bus-pilot-2024",
+        "record_kind": "project",
+        "submission_id": "sub_89a72b8caf737d43",
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_164966#p010_c0005",
+            "text_sha256": "sha256:4e51c7510b4e53846fca1be5b211ae1d6de7aa4266e000d46f72c1e30076cf77"
+          }
+        ]
+      },
+      {
+        "record_id": "relation_paratransit-department-has-ev-bus-pilot-20260715",
+        "record_kind": "relation",
+        "submission_id": "sub_10a48321e42ca00f",
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_164966#p010_c0005",
+            "text_sha256": "sha256:4e51c7510b4e53846fca1be5b211ae1d6de7aa4266e000d46f72c1e30076cf77"
+          }
+        ],
+        "relation_kind": "has_project",
+        "relation_family": "program_project_scope",
+        "subject_id": "entity_department-of-paratransit",
+        "object_id": "project_paratransit-ev-bus-pilot-2024"
+      },
+      {
+        "record_id": "project_ptm-second-queens-facility-2025",
+        "record_kind": "project",
+        "submission_id": "sub_75e696b814e718bd",
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_164966#p009_c0005",
+            "text_sha256": "sha256:3fcc6b400e9656caa13bb1601c1ee4380e32d135ec4bf278c759ee5e675b3826"
+          },
+          {
+            "evidence_id": "meeting_doc_164966#p010_c0006",
+            "text_sha256": "sha256:19964f49df53d0d78e158b0e74240b0f6fcb3a0953ce5ecfb6c70575c079eac2"
+          }
+        ]
+      },
+      {
+        "record_id": "relation_ptm-has-second-queens-facility-project-20260715",
+        "record_kind": "relation",
+        "submission_id": "sub_4e20edd192ae5450",
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_164966#p009_c0005",
+            "text_sha256": "sha256:3fcc6b400e9656caa13bb1601c1ee4380e32d135ec4bf278c759ee5e675b3826"
+          },
+          {
+            "evidence_id": "meeting_doc_164966#p010_c0006",
+            "text_sha256": "sha256:19964f49df53d0d78e158b0e74240b0f6fcb3a0953ce5ecfb6c70575c079eac2"
+          }
+        ],
+        "relation_kind": "has_project",
+        "relation_family": "program_project_scope",
+        "subject_id": "entity_ptm-management-corp",
+        "object_id": "project_ptm-second-queens-facility-2025"
+      },
+      {
+        "record_id": "entity_queens-borough",
+        "record_kind": "entity",
+        "submission_id": "sub_343f86ef704f5bc1",
+        "evidence_bindings": [
+          {
+            "evidence_id": "nyct_key_performance_metrics_june2025#p024_c0003",
+            "text_sha256": "sha256:70f4922ac7f9e2cffb11ed94fd7d6e7140d833601bfc3d830eee642816c4c7a4"
+          }
+        ]
+      },
+      {
+        "record_id": "relation_jamaica-bus-depot-located-in-queens-20260715",
+        "record_kind": "relation",
+        "submission_id": "sub_e7f4c51d1db4ec3e",
+        "evidence_bindings": [
+          {
+            "evidence_id": "nyct_key_performance_metrics_june2025#p024_c0003",
+            "text_sha256": "sha256:70f4922ac7f9e2cffb11ed94fd7d6e7140d833601bfc3d830eee642816c4c7a4"
+          }
+        ],
+        "relation_kind": "located_in",
+        "relation_family": "location_scope",
+        "subject_id": "project_jamaica-bus-depot-reconstruction",
+        "object_id": "entity_queens-borough"
+      },
+      {
+        "record_id": "project_dos-sharp-safety-hazards-risk-prevention",
+        "record_kind": "project",
+        "submission_id": "sub_6e9d8a118a711d1b",
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_199181#p001_c0001",
+            "text_sha256": "sha256:8413f8db6efc6bbc656b1feba9040120de416280a7e819edcd917a965be839a7"
+          },
+          {
+            "evidence_id": "meeting_doc_199181#p001_c0005",
+            "text_sha256": "sha256:29a73dcff5f28be5b81defd82b9fb679b46403cfc93af730bf332997d33d120e"
+          }
+        ]
+      },
+      {
+        "record_id": "relation_sharp-program-part-of-department-of-subways-20260715",
+        "record_kind": "relation",
+        "submission_id": "sub_2f0c1e57732228ac",
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_199181#p001_c0001",
+            "text_sha256": "sha256:8413f8db6efc6bbc656b1feba9040120de416280a7e819edcd917a965be839a7"
+          },
+          {
+            "evidence_id": "meeting_doc_199181#p001_c0005",
+            "text_sha256": "sha256:29a73dcff5f28be5b81defd82b9fb679b46403cfc93af730bf332997d33d120e"
+          }
+        ],
+        "relation_kind": "managed_by_department",
+        "relation_family": "agency_role",
+        "subject_id": "project_dos-sharp-safety-hazards-risk-prevention",
+        "object_id": "entity_dept-of-subways-crichlow"
+      },
+      {
+        "record_id": "corridor_lirr-port-washington-branch",
+        "record_kind": "corridor",
+        "submission_id": "sub_ba7f43f9543e7201",
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_205596#p004_c0001",
+            "text_sha256": "sha256:1ec209f93306a2d15bc092665d002a6a62f68b241958fd820115cbd5cf04539f"
+          }
+        ]
+      },
+      {
+        "record_id": "relation_webster-bridge-located-on-port-washington-branch-20260715",
+        "record_kind": "relation",
+        "submission_id": "sub_1e3e79816ea3af00",
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_205596#p004_c0001",
+            "text_sha256": "sha256:1ec209f93306a2d15bc092665d002a6a62f68b241958fd820115cbd5cf04539f"
+          }
+        ],
+        "relation_kind": "located_on",
+        "relation_family": "corridor_scope",
+        "subject_id": "project_webster-ave-bridge-replacement",
+        "object_id": "corridor_lirr-port-washington-branch"
+      }
+    ]
+  },
+  "projected_materialized_counts": {
+    "relation_records_before": 21247,
+    "relation_records_after_corrections": 21226,
+    "relation_records_after_split_submission": 21227,
+    "relation_records_after_all_submissions": 21235,
+    "source_records_before": 2574,
+    "source_records_after_corrections": 2569,
+    "source_records_after_backfills": 2574,
+    "corridor_records_before": 218,
+    "corridor_records_after_additions": 221,
+    "project_records_after_additions": 1867,
+    "entity_records_after_additions": 1896,
+    "missing_source_registry_identities_after": 0,
+    "duplicate_source_registry_identities_after": 0
+  }
+}

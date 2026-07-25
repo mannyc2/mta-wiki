@@ -1,0 +1,37 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "nassau-avenue-2018-b43-b48-pure-absence-supplement",
+  "sources": [
+    {
+      "byte_length": 4223378,
+      "category": "official_nyc_dot_lane_project",
+      "content_sha256": "d235ecd5706494bc4efc5c89957d2a467e0bfb27cf71f5f8664ee8835c6aadfe",
+      "http_status": 200,
+      "id": "bedford_nassau_aves_june2018_candidate_check",
+      "media_type": "application/pdf",
+      "note": "The official June 2018 plan identifies the existing Nassau Avenue bus-only lane between Leonard Street and Manhattan Avenue and explicitly names B62 transit changes. It does not name B43 or B48, bind either candidate to feature 0035256, or establish candidate-date traversal.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "bedford_nassau_aves_june2018",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/bedford-nassau-aves-june2018-2.pdf"
+    },
+    {
+      "byte_length": 3247131,
+      "category": "official_public_board_committee",
+      "content_sha256": "b2bd9bbe909d4e079a6daaf82f514232aca9e6dcbc7f4a0a4ae9d68fb796bc0b",
+      "http_status": 200,
+      "id": "bedford_nassau_nov2018_candidate_check",
+      "media_type": "application/pdf",
+      "note": "The official November 2018 post-implementation presentation states that the bus reroute occurred July 1 and most markings were finished August 24. It does not name B43 or B48 or bind either candidate to the exact westbound registry feature or candidate-date traversal.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "bedford_nassau_nov2018",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/bedford-nassau-nov2018.pdf"
+    }
+  ]
+}

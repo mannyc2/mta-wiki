@@ -1,0 +1,37 @@
+{
+  "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
+  "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
+  "canonical_linkage_remediated_count": 5,
+  "canonical_links_added_count": 21,
+  "date_and_phase_proved_count": 0,
+  "exact_route_binding_proved_candidate_ids": [
+    "study-event-v2:2903c93577f1e07b34fa218c",
+    "study-event-v2:8483f8b099d292e9d6883859",
+    "study-event-v2:a1e55641545033df387b70b1",
+    "study-event-v2:d1cc616281e5031091c4b8e9",
+    "study-event-v2:df8bb7f9438c48166f1ff8b9"
+  ],
+  "exact_route_binding_proved_count": 5,
+  "exclusions_sha256": "7f6b3bd2ac6d7f616975ff09865c6c25f3010078519485adc85a608b1c29611a",
+  "exclusive_primary_disposition_counts": {
+    "completed_search_route_linkage_unresolved": 108,
+    "linkage_supported_phase_unresolved": 5
+  },
+  "explicitly_excluded_count": 113,
+  "operational_occurrence_added_or_updated_count": 0,
+  "receipts_sha256": "950c9c7844027edf6607fba3f957bb4a6252e9dbc0f2dcddf5aac2162b9c9e41",
+  "researched_count": 113,
+  "researched_on": "2026-07-15",
+  "route_prefix_counts": {
+    "Q": 83,
+    "QM": 30
+  },
+  "schema_version": 1,
+  "segment_binding_proved_candidate_ids": [],
+  "segment_binding_proved_count": 0,
+  "shard": "queens",
+  "source_acquired_count": 113,
+  "still_unresolved_count": 113,
+  "study_projection_eligible_count": 0,
+  "warning": "A supported route-treatment linkage is not a projectable occurrence. All Queens rows remain excluded because stable phase and canonical occurrence identity were not proved."
+}

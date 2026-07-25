@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-07-15T21-00-00-000Z_staten-island-acquisition-linkage-remediation",
+  "files": [
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/candidate-actions.json",
+      "bytes": 29142,
+      "sha256": "207950439ccf482dc750a76395858fb348647dd6c9c89b452309d9d3f583d85f"
+    },
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/report.md",
+      "bytes": 3546,
+      "sha256": "280ebbc62cd5a0eedf1949a22d2d2a4bd98758dbf29fd4cdd97df55a7dba0f65"
+    },
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/source-verification.json",
+      "bytes": 3103,
+      "sha256": "f021df74d570b644fb6c6a43529adf79d87db8a24d3bdcd20788eff34c7df272"
+    },
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/summary.json",
+      "bytes": 3458,
+      "sha256": "37cf8442c4ab6d7904e7f03f1f72f3e7cdc36943680ce85edea91c8e7a18a30f"
+    },
+    {
+      "path": "data/submissions/2026-07-15T21-00-00-000Z_staten-island-acquisition-linkage-remediation.jsonl",
+      "bytes": 50606,
+      "sha256": "9e0ade44c8f28f6684bbe6b57d496730d0ce360a4a84e6d9fc541ef8b0458a4b"
+    }
+  ]
+}

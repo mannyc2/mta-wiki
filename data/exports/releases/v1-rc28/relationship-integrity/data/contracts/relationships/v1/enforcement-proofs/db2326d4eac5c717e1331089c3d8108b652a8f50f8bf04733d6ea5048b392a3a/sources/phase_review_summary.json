@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "contract_id": "operational-occurrence-phase-review-v1",
+  "occurrence_count": 135,
+  "eligible_occurrence_count": 134,
+  "ineligible_occurrence_count": 1,
+  "phase_identity_membership_count": 135,
+  "unique_phase_event_count": 135,
+  "projected_phase_relation_count": 0,
+  "checked_event_event_candidate_count": 0,
+  "counts_by_primary_disposition": {
+    "single_observed_phase_no_related_phase_asserted": 135,
+    "evidence_bound_related_phases": 0,
+    "review_required": 0
+  },
+  "counts_by_candidate_disposition": {
+    "projected_reviewed_phase_relation": 0,
+    "not_projected_external_event_not_selected": 0,
+    "not_projected_non_phase_semantics": 0,
+    "review_required_unprojected_same_occurrence_temporal_relation": 0
+  },
+  "finding_counts": {},
+  "phase_identity_complete": true,
+  "phase_relation_or_disposition_complete": true,
+  "exact_evidence_complete": true,
+  "hard_mode_ready": true,
+  "ledger_id": "operational-occurrence-phase-review-ledger-v1",
+  "release_id": "v1-rc21",
+  "reviewed_occurrence_count": 135,
+  "single_observed_phase_count": 135,
+  "related_phase_count": 0,
+  "unresolved_phase_count": 0,
+  "missing_evidence_count": 0,
+  "ambiguous_phase_count": 0,
+  "review_complete": true,
+  "violation_count": 0,
+  "content_hashes": {
+    "review_ledger_sha256": "93e1404257763e1ebe04dece9e51a03c10bc03a4400ab4ea9b9a9061d69cc67a",
+    "event_event_candidates_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "findings_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "operational_occurrences_sha256": "de85fa5791540d373b11b6975cece389360607e70875d878af28a6b492707b9d",
+    "canonical_phase_projection_sha256": "437d9cb83ea87bffec5c8fc14ca9c5ccab4c8dd3df9717dba50def184a8f51a2"
+  }
+}

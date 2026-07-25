@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-07-15T22-00-00-000Z_bronx-acquisition-linkage-remediation",
+  "files": [
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/bronx/linkage-remediation/candidate-actions.json",
+      "bytes": 22154,
+      "sha256": "4ccd73830ee06dda53ba28720fb7cd190bc341ce559e9b418df26aa542d6537b"
+    },
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/bronx/linkage-remediation/report.md",
+      "bytes": 2598,
+      "sha256": "d20f3f7f6cc8655d440e062b37dd5de910540d2263d63f24a60774654f6e5577"
+    },
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/bronx/linkage-remediation/source-verification.json",
+      "bytes": 6280,
+      "sha256": "af0ec40eaedbf1a2cf9e863c69a4c55f8ab21c0be357103757da06c747ec7c17"
+    },
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/bronx/linkage-remediation/summary.json",
+      "bytes": 4840,
+      "sha256": "25b89a2868487666c26a2e2deb206396c3e73f3f266abcfb955942a5eac27ca6"
+    },
+    {
+      "path": "data/submissions/2026-07-15T22-00-00-000Z_bronx-acquisition-linkage-remediation.jsonl",
+      "bytes": 114821,
+      "sha256": "a4785d76d4d2ecdbed7448c4afb0f30f60091f646d4c637c05dfb23cd363f33a"
+    }
+  ]
+}

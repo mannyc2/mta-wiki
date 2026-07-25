@@ -1,0 +1,18 @@
+{
+  "bronx_count": 52,
+  "bx_local_or_sbs_count": 41,
+  "bxm_express_count": 11,
+  "candidate_ids_sha256": "9c5eaa8648a97249f2ccf08983e9ef7067d0bb2dc4a138f7340b8c559be08a8d",
+  "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
+  "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
+  "derived_on": "2026-07-15",
+  "exact_backlog_count": 321,
+  "exclusive_partition_rule": "exclusive_primary_disposition=mta_route_or_treatment_scope_binding_gap AND treatment_family=bus_lane AND route_id begins BX",
+  "partition_sha256": "695d16a85e6177a71776e3b54c7b7f644479b41e4899fb293cdbf6f034ddd566",
+  "reconciliation_ledger_path": "data/quality/rc19-reject-reconciliation/rc19-reject-ledger.jsonl",
+  "reconciliation_ledger_sha256": "d9b3b19bcc315a13d091831a46550ea457890f4cd9a73ea056645f8d8e5626f4",
+  "schema_version": 1,
+  "shard": "bronx",
+  "unique_candidate_count": 52,
+  "unique_route_count": 52
+}

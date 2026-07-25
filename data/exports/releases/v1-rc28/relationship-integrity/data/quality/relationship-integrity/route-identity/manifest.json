@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "contract_id": "route-identity-dispositions-v1",
+  "generator": "data/relationship-integrity/dispositions/v1/routes/generate.ts",
+  "review_artifact": {
+    "path": "data/relationship-integrity/dispositions/v1/routes/review.json",
+    "bytes": 52666,
+    "sha256": "70f710eb7cbf56522925a5f7d549d422b11c42ad5a61f99662cd861852f2ed4a"
+  },
+  "files": {
+    "before-unaccounted.jsonl": {
+      "bytes": 53796,
+      "sha256": "cb151c370cd24b8e3b1280e89505172d7cdad629b206363719e93dff0efde017"
+    },
+    "investigations.jsonl": {
+      "bytes": 45994,
+      "sha256": "a9ee6ba49de0d9387ba4a92a3d9c0968e5c9d99cd0e86fc569ff7edd4bf96b86"
+    },
+    "after-accounting.jsonl": {
+      "bytes": 109802,
+      "sha256": "1746d73ee75ed8d575cba4ff984cfb9183ecaac9f0d94d446fb2ba987a03db50"
+    },
+    "summary.json": {
+      "bytes": 1688,
+      "sha256": "46339743ec23e26a6517300225ad311f0866a7bd415a71179b9c720ebe1a69e2"
+    },
+    "report.md": {
+      "bytes": 1927,
+      "sha256": "b79df639787f7238213f24cb4236f5afca4401372af6a278726dff5c01b5a4ad"
+    }
+  },
+  "route_anchor_projection_sha256": "515d64e4e003847b3c148ac1e49fc2c7d4121b1c5d90b55e1c95543b8d5746cc"
+}

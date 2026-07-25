@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "remediation_id": "staten-island-evidence-reblocking-remediation-v1",
+  "outputs": [
+    {
+      "path": "data/submissions/2026-07-16T01-30-00-000Z_staten-island-evidence-reblocking-remediation.jsonl",
+      "bytes": 48574,
+      "sha256": "7c91ba7c95ec523cf200179239c1f25aea5a4b317439be4a3b9d7fa81f5c36f2"
+    },
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/remediation.json",
+      "bytes": 20628,
+      "sha256": "30d1c4642eee937bab95b10fd2f00f84449a61f719f9dff125b0ba3e713e19a6"
+    },
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/staten-island/linkage-remediation/evidence-reblocking/report.md",
+      "bytes": 900,
+      "sha256": "1104df205b74ce19a0daee749c879ef42418e5641a33ce2df0f147ccc153671d"
+    }
+  ],
+  "campaign_retirement_entry_count": 20,
+  "campaign_retirement_entries_sha256": "ceace8170b1ef86ff25aed3cbb868e33fa28adfb93ad24c518d8e2b43c408b6a",
+  "manifest_payload_sha256": "e66bb82575f0e5f32b490732c5c543d4cd98038f69c202bf6e41cb46799d8e25"
+}

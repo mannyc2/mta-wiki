@@ -1,0 +1,22 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "utica-avenue-2015-historical-outside-project-extent-intersection-context-supplement",
+  "sources": [
+    {
+      "byte_length": 1666553,
+      "category": "official_public_board_committee",
+      "content_sha256": "55ce4356a1483202b331e91fedf1ac99eee97919410f1d14b2a0d42503160c1b",
+      "http_status": 200,
+      "id": "utica_avenue_bus_priority_safety_study_cb9_2013_b8_context",
+      "media_type": "application/pdf",
+      "note": "Official NYC DOT September 2013 study used only for nonterminal historical outside-project-extent intersection/connection context. Its project area ends at Church Avenue, while its B46 route map labels B8 at Avenue D beyond that endpoint. It does not establish B8 service on the exact 2015-10-16 Utica Avenue lane rows, feature extent, phase, direction, attribution, or candidate-date traversal.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "2013_09_24_sbs_utica_cb9",
+      "url": "https://www.nyc.gov/html/brt/downloads/pdf/2013-09-24-sbs-utica-cb9.pdf"
+    }
+  ]
+}

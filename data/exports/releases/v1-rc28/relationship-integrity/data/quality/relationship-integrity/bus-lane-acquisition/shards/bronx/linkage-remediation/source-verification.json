@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-07-15T22:00:00.000Z",
+  "supported_candidates": {
+    "path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/bronx/supported-linkage-candidates.jsonl",
+    "prior_sha256": "79e478d383e917ae0583ebd3a4d8af04935304e6f38e43b76a8c98359bc7ec90",
+    "corrected_sha256": "86e6f394d302e0f0e5d10bd68900d1bc62881ea976c5746974a4cd6b1598ff35",
+    "prior_row_count": 14,
+    "corrected_row_count": 13,
+    "rejected_route_variant_candidate_id": "study-event-v2:4f20a93956a3af9db4bad8c1"
+  },
+  "sources": [
+    {
+      "source_id": "e149_cb1",
+      "acquisition_source_id": "e149_cb1",
+      "canonical_staged_source_id": "e149_cb1",
+      "status": "staged_identical_to_acquisition",
+      "url": "https://www.nyc.gov/html/brt/downloads/pdf/e149th-st-cb1-jun2020.pdf",
+      "acquisition_sha256": "80072ca715d6f60900a3fe851128458162f8730565f9c38a82357a0006622d02",
+      "acquisition_byte_length": 41291476,
+      "staged_byte_sha256": "80072ca715d6f60900a3fe851128458162f8730565f9c38a82357a0006622d02",
+      "staged_byte_length": 41291476,
+      "staged_metadata_sha256": "baf915059d58ca4e5d6302e72be89b330ec758289033da059e51edd579007f33",
+      "staged_blocks_sha256": "5285feb6e1df19574b9bc1e7924b3af7570605b769ae386f49e8d9851e79b16b",
+      "staged_block_count": 582,
+      "cited_block_ids": [
+        "p001_p0001",
+        "p001_p0002",
+        "p004_p0003",
+        "p013_p0001",
+        "p013_p0002"
+      ]
+    },
+    {
+      "source_id": "bx_cb5_projects_dec032019",
+      "acquisition_source_id": "bronx_cb5_priority_2019",
+      "canonical_staged_source_id": "bx_cb5_projects_dec032019",
+      "status": "reused_existing_staged_source_identical_to_acquisition",
+      "url": "https://www.nyc.gov/html/brt/downloads/pdf/bx-cb5-projects-dec032019.pdf",
+      "acquisition_sha256": "0e43255dc5a37106de9c7805e7eb1db80289141bb3937870a3d31264fcb552bc",
+      "acquisition_byte_length": 5088842,
+      "staged_byte_sha256": "0e43255dc5a37106de9c7805e7eb1db80289141bb3937870a3d31264fcb552bc",
+      "staged_byte_length": 5088842,
+      "staged_metadata_sha256": "c168997e8dadf40c8fbc6ab8cb7e5056350f65e611724371237aae9da968e938",
+      "staged_blocks_sha256": "6af34a3f7bcdfa991ec568a6b146756eaeee79e12013cd083aebff2cc6870871",
+      "staged_block_count": 243,
+      "cited_block_ids": [
+        "p001_c0001",
+        "p001_c0002",
+        "p013_c0002",
+        "p013_c0003",
+        "p015_c0006",
+        "p016_c0006",
+        "p020_c0002",
+        "p020_c0003",
+        "p023_c0006"
+      ]
+    },
+    {
+      "source_id": "pelham_parkway_completion",
+      "acquisition_source_id": "pelham_parkway_completion",
+      "canonical_staged_source_id": "pelham_parkway_completion",
+      "status": "dynamic_official_html_reacquired_and_staged_with_both_hashes_retained",
+      "url": "https://www.nyc.gov/site/ddc/about/press-releases/2023/pr-122723-Pelham.page",
+      "acquisition_sha256": "9a0811b58f4755a8638e8cb3e1bf5531e488f5fc05ef157ef16d7fee1246943e",
+      "acquisition_byte_length": 33178,
+      "staged_byte_sha256": "fe7a3a6fe92107876c01e266f9ffd271210615f56a96969eb8a9dfd33f039a5d",
+      "staged_byte_length": 33156,
+      "staged_metadata_sha256": "567ea12cc932efd70cb7868916768346c476f2161a62810a001d9d209143e22a",
+      "staged_blocks_sha256": "d78d12bed61b5728c1b24b27c9aaa50065af93483d7d6248eaadd03b4a2055d4",
+      "staged_block_count": 47,
+      "cited_block_ids": [
+        "p001_b0018",
+        "p001_b0023",
+        "p001_b0027",
+        "p001_b0028"
+      ]
+    },
+    {
+      "source_id": "pelham_bay_completion",
+      "acquisition_source_id": "pelham_bay_completion",
+      "canonical_staged_source_id": "pelham_bay_completion",
+      "status": "dynamic_official_html_reacquired_and_staged_with_both_hashes_retained",
+      "url": "https://www.nyc.gov/html/dot/html/pr2023/pelham-bay-station-improvements.shtml",
+      "acquisition_sha256": "cfdaa4b25d03f9057419906d820af31e011924799c731e6557f9124752303d98",
+      "acquisition_byte_length": 26838,
+      "staged_byte_sha256": "4a18ac7c3d478f58b2a43d66da5519ac66b8a00c2223bfbab1eb2079784863a2",
+      "staged_byte_length": 26828,
+      "staged_metadata_sha256": "10e6b31fe73e4fbf321d621e053a309a72fba6e0b5e28a18149b5ccff4e1faf7",
+      "staged_blocks_sha256": "7f095ab49b066b729f1948dbf62f6a15761b733db804589d0e86cc128404aa08",
+      "staged_block_count": 110,
+      "cited_block_ids": [
+        "p001_b0010",
+        "p001_b0012",
+        "p001_b0016",
+        "p001_b0019",
+        "p001_b0025"
+      ]
+    },
+    {
+      "source_id": "w178_cb12",
+      "acquisition_source_id": "w178_cb12",
+      "canonical_staged_source_id": "w178_cb12",
+      "status": "staged_identical_to_acquisition",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/w178-st-ft-washington-ave-wadsworth-ave-cb12-mar2020.pdf",
+      "acquisition_sha256": "431fe0b4105561eb4ce0c241245a276ee56b07c6bf810be5cd7a6eee36a94209",
+      "acquisition_byte_length": 4455944,
+      "staged_byte_sha256": "431fe0b4105561eb4ce0c241245a276ee56b07c6bf810be5cd7a6eee36a94209",
+      "staged_byte_length": 4455944,
+      "staged_metadata_sha256": "d8c2892278bd37c1921869178ff109360e26d8ffe539be47187e0bed750a821c",
+      "staged_blocks_sha256": "e66f55c71abd7dcaa4e18478e6b6e484f241e87302fe3a6f67005f87d7ce67c6",
+      "staged_block_count": 164,
+      "cited_block_ids": [
+        "p001_p0001",
+        "p001_p0002",
+        "p002_p0002",
+        "p002_p0003",
+        "p002_p0004",
+        "p002_p0012",
+        "p002_p0013",
+        "p009_p0016",
+        "p009_p0017",
+        "p009_p0019"
+      ]
+    }
+  ],
+  "coordinated_physical_scope_journal": {
+    "path": "data/submissions/2026-07-15T20-00-00-000Z_bus-lane-treatment-physical-scope-remediation.jsonl",
+    "sha256": "c4ea1ac8afcdd31c2499f00df4fdd32a6ad5909fd37aabad78084ff1c2b50983",
+    "relation_ids": [
+      "relation_bus-lane-treatment-scope-v1-university-north-tremont-on-university-ave",
+      "relation_bus-lane-treatment-scope-v1-university-south-tremont-on-university-ave",
+      "relation_bus-lane-treatment-scope-v1-washington-bridge-bus-lanes-on-washington-bridge"
+    ],
+    "note": "Read-only coordination dependency; accepted CB5 treatment-to-corridor entries are referenced and not duplicated."
+  }
+}

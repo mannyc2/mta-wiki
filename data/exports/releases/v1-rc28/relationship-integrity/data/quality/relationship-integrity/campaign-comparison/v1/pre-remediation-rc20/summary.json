@@ -1,0 +1,51 @@
+{
+  "canonical_record_count": 85116,
+  "canonical_relation_count": 21247,
+  "distinct_relation_kind_count": 741,
+  "contract_rule_count": 741,
+  "contract_covered_relation_count": 21247,
+  "finding_count": 46554,
+  "findings_by_code": {
+    "REL_ALIAS_AMBIGUOUS": 1,
+    "REL_CONFLICTING_EDGE": 4,
+    "REL_DUPLICATE_IDENTITY": 44,
+    "REL_ENDPOINT_LOCAL_MISMATCH": 1,
+    "REL_EVIDENCE_OVERBROAD": 8,
+    "REL_FAMILY_TYPE_SUSPECT": 172,
+    "REL_MERGED_EDGE_CONFLICT": 1,
+    "REL_ORPHAN_RECORD": 46031,
+    "REL_SOURCE_ID_AMBIGUOUS": 5,
+    "REL_SOURCE_ID_MISSING": 287
+  },
+  "findings_by_severity": {
+    "info": 46031,
+    "warning": 523
+  },
+  "primary_dispositions": {
+    "clean": 18322,
+    "exact_duplicate": 43,
+    "local_endpoint_inconsistent": 1,
+    "merged_edge_conflict": 1,
+    "parallel_duplicate": 2696,
+    "provisional_family_type_suspect": 172,
+    "same_date_status_conflict": 4,
+    "structurally_overbroad_evidence": 8
+  },
+  "orphan_records_by_kind": {
+    "claim": 8174,
+    "corridor": 63,
+    "entity": 729,
+    "event": 4284,
+    "metric_claim": 30553,
+    "project": 669,
+    "route": 16,
+    "source_gap": 467,
+    "treatment_component": 1076
+  },
+  "duplicate_triple_groups": 709,
+  "duplicate_triple_records": 2750,
+  "exact_duplicate_groups": 22,
+  "exact_duplicate_records": 44,
+  "ambiguous_aliases": 1,
+  "semantic_supersessions": 20
+}

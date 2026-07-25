@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "contract_id": "occurrence-treatment-physicality-v1",
+  "policy_id": "occurrence-treatment-physicality-policy-v1",
+  "reviewed_at": "2026-07-16T04:00:00.000Z",
+  "reviewed_by": "codex-occurrence-treatment-physicality-review",
+  "statement": "Classification is exact-family-and-kind reviewed policy, never inference from a family name, location literal, proximity, or street-name similarity. A decision does not independently create study eligibility.",
+  "categories": {
+    "physical_corridor_or_segment_intervention": {
+      "scope_requirement": "corridor_or_segment_required",
+      "definition": "A physical intervention whose exact delivered treatment must bind to a canonical bounded corridor or segment through exact authoritative evidence."
+    },
+    "nonphysical_service_operations_policy_control": {
+      "scope_requirement": "not_applicable",
+      "definition": "A service, routing, frequency, fare, enforcement, operations, policy, or control change that does not claim construction of a physical treatment."
+    },
+    "point_or_stop_physical_intervention": {
+      "scope_requirement": "point_or_stop_required",
+      "definition": "A constructed point or stop facility. Version 1 has no eligible reviewed member in this category; a future member requires an explicit point/stop scope contract."
+    },
+    "review_required": {
+      "scope_requirement": "review_required",
+      "definition": "An unseen, evidence-invalid, conflicting, or otherwise unreviewed treatment that fails closed."
+    }
+  },
+  "unknown_treatment_record_policy": "review_required",
+  "unknown_family_kind_policy": "review_required",
+  "missing_evidence_policy": "review_required",
+  "conflicting_membership_policy": "review_required",
+  "rules": [
+    {
+      "rule_id": "otphy-v1:automated-camera-warning-phase",
+      "treatment_family": "automated_bus_lane_enforcement",
+      "treatment_kind": "Automated Camera Enforcement (ACE) 60-day warning-phase activation",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes camera-enforcement activation or deployment, not construction of a physical corridor or segment.",
+      "reason_codes": [
+        "camera_enforcement_control",
+        "no_physical_construction_claim"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:automated-camera-activation",
+      "treatment_family": "automated_bus_lane_enforcement",
+      "treatment_kind": "Automated Camera Enforcement (ACE) activation",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes camera-enforcement activation or deployment, not construction of a physical corridor or segment.",
+      "reason_codes": [
+        "camera_enforcement_control",
+        "no_physical_construction_claim"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:automated-camera-route-deployment",
+      "treatment_family": "automated_bus_lane_enforcement",
+      "treatment_kind": "Automated Camera Enforcement (ACE) route deployment",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes camera-enforcement activation or deployment, not construction of a physical corridor or segment.",
+      "reason_codes": [
+        "camera_enforcement_control",
+        "route_deployment_not_corridor_construction"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:automated-camera-route-implementation",
+      "treatment_family": "automated_bus_lane_enforcement",
+      "treatment_kind": "Automated Camera Enforcement (ACE) route implementation",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes camera-enforcement activation or deployment, not construction of a physical corridor or segment.",
+      "reason_codes": [
+        "camera_enforcement_control",
+        "route_implementation_not_corridor_construction"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:center-running-bus-lanes",
+      "treatment_family": "bus_lane",
+      "treatment_kind": "center-running bus lanes",
+      "classification": "physical_corridor_or_segment_intervention",
+      "scope_requirement": "corridor_or_segment_required",
+      "reason": "The exact treatment evidence states a bounded center-running bus-lane installation between official street endpoints.",
+      "reason_codes": [
+        "bounded_official_endpoints",
+        "physical_lane_installation"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:limited-stops",
+      "treatment_family": "bus_stop_or_boarding",
+      "treatment_kind": "limited stops",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact eligible treatment kind is a limited-stop, stop-change, or stop-removal service pattern; it does not assert construction of a stop or boarding facility.",
+      "reason_codes": [
+        "no_stop_construction_claim",
+        "service_stop_pattern"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:stop-change",
+      "treatment_family": "bus_stop_or_boarding",
+      "treatment_kind": "stop change",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact eligible treatment kind is a limited-stop, stop-change, or stop-removal service pattern; it does not assert construction of a stop or boarding facility.",
+      "reason_codes": [
+        "no_stop_construction_claim",
+        "service_stop_pattern"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:stop-removal",
+      "treatment_family": "bus_stop_or_boarding",
+      "treatment_kind": "stop removal",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact eligible treatment kind is a limited-stop, stop-change, or stop-removal service pattern; it does not assert construction of a stop or boarding facility.",
+      "reason_codes": [
+        "no_stop_construction_claim",
+        "service_stop_pattern"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:omny-only-fare-payment",
+      "treatment_family": "fare_collection",
+      "treatment_kind": "OMNY-only fare payment",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes fare collection or payment policy/operations, not physical corridor construction.",
+      "reason_codes": [
+        "fare_policy_or_operations",
+        "no_physical_construction_claim"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:fare-collection-resumption",
+      "treatment_family": "fare_collection",
+      "treatment_kind": "fare collection resumption",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes fare collection or payment policy/operations, not physical corridor construction.",
+      "reason_codes": [
+        "fare_policy_or_operations",
+        "no_physical_construction_claim"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:fare-free",
+      "treatment_family": "fare_collection",
+      "treatment_kind": "fare_free",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes fare collection or payment policy/operations, not physical corridor construction.",
+      "reason_codes": [
+        "fare_policy_or_operations",
+        "no_physical_construction_claim"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:off-board-fare-collection",
+      "treatment_family": "fare_collection",
+      "treatment_kind": "off-board fare collection",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes fare collection or payment policy/operations, not physical corridor construction.",
+      "reason_codes": [
+        "fare_policy_or_operations",
+        "no_physical_construction_claim"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:route-rerouting-and-extension",
+      "treatment_family": "route_redesign",
+      "treatment_kind": "route rerouting and extension",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "no_physical_construction_claim",
+        "route_redesign_service_change"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:route-improvement-service-management",
+      "treatment_family": "service_pattern",
+      "treatment_kind": "Route Improvement Initiative service-management program",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "no_physical_construction_claim",
+        "service_management_program"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:limited-stop-discontinuation",
+      "treatment_family": "service_pattern",
+      "treatment_kind": "limited stop discontinuation",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "no_physical_construction_claim",
+        "service_pattern_change"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:route-change",
+      "treatment_family": "service_pattern",
+      "treatment_kind": "route change",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "no_physical_construction_claim",
+        "route_service_change"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:route-rerouting",
+      "treatment_family": "service_pattern",
+      "treatment_kind": "route rerouting",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "no_physical_construction_claim",
+        "route_service_change"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:route-segment-discontinuation-and-replacement",
+      "treatment_family": "service_pattern",
+      "treatment_kind": "route segment discontinuation and replacement",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "route_service_change",
+        "segment_literal_not_physical_scope"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:route-shortening",
+      "treatment_family": "service_pattern",
+      "treatment_kind": "route shortening",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "no_physical_construction_claim",
+        "route_service_change"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:service-expansion",
+      "treatment_family": "service_pattern",
+      "treatment_kind": "service expansion",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "no_physical_construction_claim",
+        "service_pattern_change"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:service-frequency-adjustment",
+      "treatment_family": "service_pattern",
+      "treatment_kind": "service frequency adjustment",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "no_physical_construction_claim",
+        "service_frequency_change"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:service-frequency-and-span-adjustment",
+      "treatment_family": "service_pattern",
+      "treatment_kind": "service frequency and span adjustment",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "no_physical_construction_claim",
+        "service_frequency_or_span_change"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:service-pattern-change",
+      "treatment_family": "service_pattern",
+      "treatment_kind": "service pattern change",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "no_physical_construction_claim",
+        "service_pattern_change"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:weekday-express-trip-additions",
+      "treatment_family": "service_pattern",
+      "treatment_kind": "weekday express-bus trip additions",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "no_physical_construction_claim",
+        "trip_level_service_change"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:weekday-express-trip-discontinuation",
+      "treatment_family": "service_pattern",
+      "treatment_kind": "weekday express-bus trip discontinuation",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "no_physical_construction_claim",
+        "trip_level_service_change"
+      ]
+    },
+    {
+      "rule_id": "otphy-v1:weekday-trip-additions",
+      "treatment_family": "service_pattern",
+      "treatment_kind": "weekday trip additions",
+      "classification": "nonphysical_service_operations_policy_control",
+      "scope_requirement": "not_applicable",
+      "reason": "The exact treatment evidence describes a service pattern, routing, frequency, span, or trip policy change, not physical construction.",
+      "reason_codes": [
+        "no_physical_construction_claim",
+        "trip_level_service_change"
+      ]
+    }
+  ]
+}

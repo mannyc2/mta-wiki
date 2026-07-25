@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "manifest_id": "q45-q86-q87-member-extents-2025-durable-sources",
+  "status": "fetchable_archive_pins_verified",
+  "verified_at": "2026-07-22T00:00:00.000Z",
+  "retention_contract": "docs/releases-and-provenance.md",
+  "tracked_full_artifacts": false,
+  "offline_fixture": {
+    "path": "data/quality/acquisition/receipts/q45-q86-q87-member-extents-2025.json",
+    "byte_length": 24161,
+    "sha256": "4942692197828512e80d0de304bf28227bf9be0a923156e7ff50a07b6ebc0183",
+    "evidence_block_count": 23,
+    "fixture_kind": "embedded exact reviewed normalized-text blocks with staged page/block locators"
+  },
+  "verification_command": "bun run queens-member-extents:sources",
+  "hydration_command": "bun run queens-member-extents:hydrate",
+  "clean_clone_requires_network": false,
+  "sources": [
+    {
+      "source_id": "mta_qbnr_q45_route_detail_2025",
+      "source_url": "https://www.mta.info/project/queens-bus-network-redesign/routes/q45-local",
+      "capture_url": "https://web.archive.org/web/20260518012428id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q45-local",
+      "archive_timestamp": "20260518012428",
+      "archive_digest": "B2R7LJASS457K2MJLNCOCGZ7BBB2VWTP",
+      "content_type": "text/html; charset=UTF-8",
+      "byte_length": 62666,
+      "sha256": "366f65f08e0a2d45eeec73a1f3bbe7ec6fb97c310f4ed3d2c3587b21d2d5e883",
+      "hydration_path": "raw/sources/mta_qbnr_q45_route_detail_2025/source.html"
+    },
+    {
+      "source_id": "mta_q45_timetable_2025_06_29",
+      "source_url": "https://www.mta.info/document/176896",
+      "capture_url": "https://web.archive.org/web/20250628193652id_/https://www.mta.info/document/176896",
+      "archive_timestamp": "20250628193652",
+      "archive_digest": "Z7OT7L25I4NNWZ25RGV4LZEO6S5BZRVD",
+      "content_type": "application/pdf",
+      "byte_length": 305922,
+      "sha256": "a6de73fb74e98441bbfd5f2030de9e8c079eba9eeb9adc8a5ff4f611a22339d6",
+      "hydration_path": "raw/sources/mta_q45_timetable_2025_06_29/source.pdf"
+    },
+    {
+      "source_id": "mta_qbnr_q5_route_detail_2025",
+      "source_url": "https://www.mta.info/project/queens-bus-network-redesign/routes/q5-local",
+      "capture_url": "https://web.archive.org/web/20260518012418id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q5-local",
+      "archive_timestamp": "20260518012418",
+      "archive_digest": "AXZCN6YK3GGN72EFCGFNKREMVK6P553F",
+      "content_type": "text/html; charset=UTF-8",
+      "byte_length": 68060,
+      "sha256": "2016eba052f848b7ad2c0859705d69b0f910091933cc067398fe71ff584785d1",
+      "hydration_path": "raw/sources/mta_qbnr_q5_route_detail_2025/source.html"
+    },
+    {
+      "source_id": "mta_qbnr_q85_route_detail_2025",
+      "source_url": "https://www.mta.info/project/queens-bus-network-redesign/routes/q85-rush",
+      "capture_url": "https://web.archive.org/web/20260518012435id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q85-rush",
+      "archive_timestamp": "20260518012435",
+      "archive_digest": "RJSOV64IZCLR2L7FS7TE5KDAT3CBR5W5",
+      "content_type": "text/html; charset=UTF-8",
+      "byte_length": 66680,
+      "sha256": "60ad197c0bc15334ca35640b2b769412dcbbc108b7cb4653e4daa11ee902fc3d",
+      "hydration_path": "raw/sources/mta_qbnr_q85_route_detail_2025/source.html"
+    },
+    {
+      "source_id": "mta_qbnr_q86_route_detail_2025",
+      "source_url": "https://www.mta.info/project/queens-bus-network-redesign/routes/q86-rush",
+      "capture_url": "https://web.archive.org/web/20260518012426id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q86-rush",
+      "archive_timestamp": "20260518012426",
+      "archive_digest": "24JTXZTWGLSMKOHMY65BWBB36VCMVJ7A",
+      "content_type": "text/html; charset=UTF-8",
+      "byte_length": 64552,
+      "sha256": "0aed4c0431cbfada403ea688f50c014aad3c266399eff4b232ed9659c221e048",
+      "hydration_path": "raw/sources/mta_qbnr_q86_route_detail_2025/source.html"
+    },
+    {
+      "source_id": "mta_qbnr_q87_route_detail_2025",
+      "source_url": "https://www.mta.info/project/queens-bus-network-redesign/routes/q87-rush",
+      "capture_url": "https://web.archive.org/web/20260518012422id_/https://www.mta.info/project/queens-bus-network-redesign/routes/q87-rush",
+      "archive_timestamp": "20260518012422",
+      "archive_digest": "5VLNZI5WKDQ54XX5YDXRD7GUKBJRWYSK",
+      "content_type": "text/html; charset=UTF-8",
+      "byte_length": 68445,
+      "sha256": "19557a67d075d201e973bb626ec706eb7dfa31da3b0cbdda1e03cb1ca8a16581",
+      "hydration_path": "raw/sources/mta_qbnr_q87_route_detail_2025/source.html"
+    },
+    {
+      "source_id": "mta_q86_q87_timetable_2025_06_29",
+      "source_url": "https://www.mta.info/document/177056",
+      "capture_url": "https://web.archive.org/web/20250624233431id_/https://www.mta.info/document/177056",
+      "archive_timestamp": "20250624233431",
+      "archive_digest": "XE4QO3BVFEKGUSZN7OLQD7N5TVMU7OFF",
+      "content_type": "application/pdf",
+      "byte_length": 862072,
+      "sha256": "c228aad87a505cafc0104cab5995b2e1d33e9357e68ef66a1d536d7d55902e5f",
+      "hydration_path": "raw/sources/mta_q86_q87_timetable_2025_06_29/source.pdf"
+    }
+  ]
+}

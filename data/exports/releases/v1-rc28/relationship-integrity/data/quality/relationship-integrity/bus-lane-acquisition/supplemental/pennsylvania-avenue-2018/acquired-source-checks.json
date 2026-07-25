@@ -1,0 +1,37 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "pennsylvania-avenue-2018-b83-pure-absence-supplement",
+  "sources": [
+    {
+      "byte_length": 4949452,
+      "category": "official_nyc_dot_lane_project",
+      "content_sha256": "48b7b14d48202cda38a9b06e24a5b227449abf39fcf174defc9ef50a2a7d1775",
+      "http_status": 200,
+      "id": "bus_lane_camera_report_2024_pennsylvania_check",
+      "media_type": "application/pdf",
+      "note": "Candidate-exact B83, Pennsylvania Avenue, and 2018-06-30 search returned no indexed result. The official lane report lists Pennsylvania Avenue but names no route and does not bind B83 to the 36 lane-row occurrences or candidate-date traversal.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "bus_lane_camera_report_2024",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/bus-lane-camera-report.pdf"
+    },
+    {
+      "byte_length": 8324258,
+      "category": "official_public_board_committee",
+      "content_sha256": "fdcf18d432221c0cb7474496189fd0914fc04090032d9e3616d40a469e004d1b",
+      "http_status": 200,
+      "id": "brt_south_brooklyn_b82_mar2018_pennsylvania_check",
+      "media_type": "application/pdf",
+      "note": "Candidate-exact B83 public-board search returned no indexed result. The inspected official March 2018 presentation is explicitly a B82 project source; it cannot transfer the 34 per-row B82 names or project identity to B83.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-15",
+      "source_artifact": "source.pdf",
+      "source_id": "brt_south_brooklyn_b82_mar2018",
+      "url": "https://www.nyc.gov/html/brt/downloads/pdf/brt-south-brooklyn-b82-mar2018.pdf"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "van-sinderen-avenue-2016-b111-pure-absence-supplement",
+  "sources": [
+    {
+      "byte_length": 4949452,
+      "category": "official_nyc_dot_lane_project",
+      "content_sha256": "48b7b14d48202cda38a9b06e24a5b227449abf39fcf174defc9ef50a2a7d1775",
+      "http_status": 200,
+      "id": "bus_lane_camera_report_2024_van_sinderen_check",
+      "media_type": "application/pdf",
+      "note": "Official NYC DOT lane report checked for the exact B111 and Van Sinderen Avenue candidate. It does not bind B111 to the four 2016-01-01 southbound lane rows or candidate-date traversal.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "bus_lane_camera_report_2024",
+      "url": "https://www.nyc.gov/html/dot/downloads/pdf/bus-lane-camera-report.pdf"
+    },
+    {
+      "byte_length": 95145,
+      "category": "official_public_board_committee",
+      "content_sha256": "d859a604632bf27a2352ce54f2ca4c81232f1fa0920480bef71b89987b592c99",
+      "http_status": 200,
+      "id": "dot_projects_2019_van_sinderen_check",
+      "media_type": "text/html; charset=utf-8",
+      "note": "Official NYC DOT project index checked for the exact B111 and Van Sinderen Avenue candidate; no candidate-exact project or public-board binding was found.",
+      "raw_content_retained": false,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-15",
+      "url": "https://www.nyc.gov/html/dot/html/about/projects-2019.shtml"
+    }
+  ]
+}

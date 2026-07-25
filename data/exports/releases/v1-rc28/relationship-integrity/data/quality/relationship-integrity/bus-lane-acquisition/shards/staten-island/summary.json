@@ -1,0 +1,67 @@
+{
+  "acquired_source_hash_count": 75,
+  "candidate_set_id": "candidate-set-v2:24080902f508b55a0033df32",
+  "candidate_set_sha256": "42d9dc3139b4ba1439b0737b7f2b2175e7fe71fa20286c1ec349addf8f6455ba",
+  "corridor_group_count": 10,
+  "date_and_phase_proved_count": 0,
+  "exact_route_binding_proved_by_corridor": {
+    "Battery Pl": 12,
+    "Hylan Bl / Hylan Boulevard": 4,
+    "Hylan Boulevard": 1,
+    "Madison Avenue": 5
+  },
+  "exact_route_binding_proved_by_source": {
+    "better_buses_action_plan_2019": 17,
+    "hylan_cb_july_2020": 5
+  },
+  "exact_route_binding_proved_candidate_ids": [
+    "study-event-v2:03cf27aac5906110d05d23d8",
+    "study-event-v2:35b924de75751e620ff5cd1b",
+    "study-event-v2:402e35b93b2e18dd50b8bf4d",
+    "study-event-v2:56144ad13c89a760eca742f1",
+    "study-event-v2:56a19ae37a156ba38aefa748",
+    "study-event-v2:5ac3f393233f205c142914c2",
+    "study-event-v2:5c3f4b6828ca4b76c035fffb",
+    "study-event-v2:69ff2b25bf71bb7f1dd41962",
+    "study-event-v2:7ee4d4a1161ff7b0902bd182",
+    "study-event-v2:88a4ef98d281f791f9e4d4c5",
+    "study-event-v2:94506aa18ba41d7470163cad",
+    "study-event-v2:955adb3a7cb228ff39810821",
+    "study-event-v2:b6072a8190833425317d1ddc",
+    "study-event-v2:b6b1da71abbf2c610a3ff0e0",
+    "study-event-v2:b81faee767193778423c95fc",
+    "study-event-v2:c224f7cd66538358313fa2c2",
+    "study-event-v2:c4c39b0f3c90371b46c73fa6",
+    "study-event-v2:c5669d0023b64203e23f1af6",
+    "study-event-v2:c6bd93155bbffd9856470732",
+    "study-event-v2:c910351a6970ad67a85ba290",
+    "study-event-v2:c99e29584b799c943a5dda53",
+    "study-event-v2:fbc625c00e4811450ce3dab9"
+  ],
+  "exact_route_binding_proved_count": 22,
+  "exclusions_sha256": "b8f68745c298ce500dc6556b27539de1bc2024f5ef11828b8e2e1050944be5ae",
+  "exclusive_primary_disposition_counts": {
+    "completed_search_route_linkage_unresolved": 32,
+    "linkage_supported_phase_unresolved": 22
+  },
+  "explicitly_excluded_count": 54,
+  "operational_occurrence_added_or_updated_count": 0,
+  "receipts_sha256": "c511783ce9f86b65fa5ffc087fe1d1753beb92caa37064976da67748ca182593",
+  "researched_count": 54,
+  "researched_on": "2026-07-15",
+  "route_prefix_counts": {
+    "S": 27,
+    "SIM": 27
+  },
+  "route_specific_mta_fetch_count": 54,
+  "schema_version": 1,
+  "segment_binding_proved_candidate_ids": [],
+  "segment_binding_proved_count": 0,
+  "shard": "staten-island",
+  "shared_official_source_fetch_count": 21,
+  "source_acquired_count": 54,
+  "still_unresolved_count": 54,
+  "study_projection_eligible_count": 0,
+  "supported_linkages_sha256": "71d39ca53c4816671da2cd0e6905bb359d81660ba14622c50e005c5595cfe2cc",
+  "warning": "Supported route-treatment evidence is not a projectable occurrence. All Staten Island rows remain excluded pending exact segment, stable phase, onset, and canonical occurrence identity."
+}

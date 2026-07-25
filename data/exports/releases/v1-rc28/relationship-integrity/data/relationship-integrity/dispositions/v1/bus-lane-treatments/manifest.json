@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "contract_id": "bus-lane-treatment-physical-scope-v1",
+  "generated_at": "2026-07-15T20:00:00.000Z",
+  "artifacts": [
+    {
+      "path": "contract.json",
+      "sha256": "52da62bde669c8a6cd257f456dc016475ac79c4a3a151bf14dda483d38322bdd",
+      "bytes": 4455
+    },
+    {
+      "path": "decisions.jsonl",
+      "sha256": "6d9e8a5d16bc2066434411e96051400cdbee1617c110266e0b3fbfa22b794439",
+      "bytes": 1540308
+    },
+    {
+      "path": "review.jsonl",
+      "sha256": "9abf0fcb0e1d5cef4c45874b1acc77cf4d4e010637006331729536ef9fe7e259",
+      "bytes": 890120
+    },
+    {
+      "path": "remediation-links.jsonl",
+      "sha256": "c8e0ecbf9aabd4c049423e4a7ccfd708fc84b129558bf78fdaf54c8c6277cc78",
+      "bytes": 91320
+    },
+    {
+      "path": "evidence-review.jsonl",
+      "sha256": "72ab67aaee8237ec90030f02349af0132d28cbf1bd591bcbd0357492fe40395a",
+      "bytes": 94160
+    },
+    {
+      "path": "summary.json",
+      "sha256": "6a5ef2ceb88465445bb2e9e2154db4fd217bb4ecd55e18c0b1dd36c25e2774b3",
+      "bytes": 1769
+    },
+    {
+      "path": "report.md",
+      "sha256": "4879f16bdf41177f0a040b9c8cec1cb41e1ed8785a2975974f46afcdf464f408",
+      "bytes": 2426
+    }
+  ],
+  "remediation_journal": {
+    "path": "data/submissions/2026-07-15T20-00-00-000Z_bus-lane-treatment-physical-scope-remediation.jsonl",
+    "sha256": "22d70ae096b6e6706dd494dab1f6248fe6b87ba045749995b201014ddff677d2",
+    "bytes": 190723
+  }
+}

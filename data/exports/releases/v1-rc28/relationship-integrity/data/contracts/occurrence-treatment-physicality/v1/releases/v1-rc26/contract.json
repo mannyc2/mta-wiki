@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "contract_id": "occurrence-treatment-physicality-v1",
+  "contract_status": "reviewed_final",
+  "reviewed_at": "2026-07-16T04:00:00.000Z",
+  "reviewed_by": "codex-occurrence-treatment-physicality-review",
+  "statement": "Every treatment member of every study-projectable operational occurrence has one exact evidence-bound physicality decision. These decisions do not create study eligibility.",
+  "policy": {
+    "path": "data/contracts/occurrence-treatment-physicality/v1/releases/v1-rc26/policy.json",
+    "bytes": 16189,
+    "sha256": "4b664726e353e7b1d823409b054fe3ecd931bf87da63eb8ffcd9c0ecda913ed5"
+  },
+  "review_ledger": {
+    "path": "data/contracts/occurrence-treatment-physicality/v1/releases/v1-rc26/review-ledger.jsonl",
+    "bytes": 492080,
+    "sha256": "937259630ea1aa981b84f1cb1cc709bd897753774580f2bb128575d78b84b433",
+    "row_count": 269,
+    "logical_sha256": "12c4db22490f9a193b1882bc973b883f3d70c4b46039372ea44890d25382ecdc",
+    "ledger_id": "occurrence-treatment-physicality-review-v1",
+    "immutable_after_review": true
+  },
+  "review_retirements": {
+    "schema_version": 1,
+    "contract_id": "occurrence-treatment-physicality-review-retirement-v1",
+    "receipt": {
+      "path": "data/contracts/occurrence-treatment-physicality/v1/releases/v1-rc26/review-retirement-receipt.json",
+      "bytes": 3650,
+      "sha256": "9c2bb1108a08f356ad2910069da374ba5da2d8e225c9ec5aba5dfe59fe411288"
+    },
+    "archived_review_ledger": {
+      "path": "data/contracts/occurrence-treatment-physicality/v1/releases/v1-rc26/retired-review-ledger.jsonl",
+      "bytes": 12721,
+      "sha256": "d8c5be24a0d68e2ec6b0b3b33b0c18bb8d83c0d55a98ed3f10b126988fd9a54a",
+      "row_count": 7
+    },
+    "active_review_count": 269,
+    "retired_review_count": 7
+  },
+  "review_snapshot": {
+    "stage": "final_post_semantic_release",
+    "release_id": "v1-rc26",
+    "release_dir": "data/exports/releases/v1-rc26",
+    "input_pins": [
+      {
+        "path": "data/exports/releases/v1-rc26/operational_occurrences.jsonl",
+        "bytes": 865769,
+        "sha256": "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
+        "row_count": 131
+      },
+      {
+        "path": "data/exports/releases/v1-rc26/treatment_components.jsonl",
+        "bytes": 4484742,
+        "sha256": "7a766ba1abbbcec88c3151cd2a4e6342ce433e70dbcd5e71dc53fd397e93ecf0",
+        "row_count": 2938
+      },
+      {
+        "path": "data/exports/releases/v1-rc26/relations.jsonl",
+        "bytes": 35117554,
+        "sha256": "93459fd3c0c1660a85eac1b1e26fe1cfbd7085dc1d3dce4494a8f667b9a7bc06",
+        "row_count": 21424
+      },
+      {
+        "path": "data/exports/releases/v1-rc26/corridors.jsonl",
+        "bytes": 793111,
+        "sha256": "03abdeba78a962bf735e6edf937c624cf2c2fe04bcb403822fdd80684152135d",
+        "row_count": 227
+      }
+    ],
+    "eligible_occurrence_count": 130,
+    "unique_treatment_count": 269,
+    "treatment_membership_count": 269,
+    "completeness_occurrence_membership_reconciled": true,
+    "completeness_bundle_content_addressing": "quality_manifest_only_to_avoid_contract_completeness_hash_cycle"
+  },
+  "fail_closed_policy": {
+    "unseen_treatment_record_id": "review_required",
+    "unseen_treatment_family_or_kind": "review_required",
+    "missing_or_drifted_exact_evidence": "review_required",
+    "conflicting_occurrence_membership": "review_required",
+    "physical_scope_inference_from_family_or_location_literal": "forbidden",
+    "nonphysical_decision_creates_study_eligibility": false,
+    "waiver_semantics": "none"
+  },
+  "final_post_semantic_release_guard": {
+    "required": true,
+    "status": "verified",
+    "immutable_review_history_must_reconstruct_byte_identically": true,
+    "matching_release_and_completeness_bundle_required": true,
+    "zero_review_findings_required": true,
+    "zero_physical_scope_findings_required": true,
+    "new_release_required": true
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "overlay_id": "bus-lane-acquisition-current-resolutions-v1",
+  "append_only_ledger": "data/quality/relationship-integrity/bus-lane-acquisition/current-resolutions/v1/ledger.jsonl",
+  "immutable_input_pins": [
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/shards/brooklyn-null/receipts.jsonl",
+      "bytes": 427854,
+      "sha256": "8806c619a6a3cbcdf4233f74fb58cab8d243651b649b69c02c8f8c4c24344a10",
+      "row_count": 60
+    },
+    {
+      "path": "data/exports/releases/v1-rc26/operational_occurrences.jsonl",
+      "bytes": 865769,
+      "sha256": "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
+      "row_count": 131
+    },
+    {
+      "path": "data/quality/study-readiness/v1/tracker-rc26-input.json",
+      "bytes": 1442487,
+      "sha256": "1d96eda711a30f651628b64adf8ae4f71cd7acd99bff09d6735bfeea265965cf"
+    }
+  ],
+  "files": [
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/current-resolutions/v1/current.jsonl",
+      "bytes": 43134,
+      "sha256": "6f1964b701180af97effafc88606d3cca47c2e61043b4f1fb9b101e02794de93",
+      "row_count": 2
+    },
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/current-resolutions/v1/ledger.jsonl",
+      "bytes": 43134,
+      "sha256": "9af451e05dde94e290016073d91e5abdb4ca8b540c574e9dd40f041f7f061f8a",
+      "row_count": 2
+    },
+    {
+      "path": "data/quality/relationship-integrity/bus-lane-acquisition/current-resolutions/v1/summary.json",
+      "bytes": 300,
+      "sha256": "367d862398722730986e56436a8f20ca4102f1e74daee5ab96fe0716044159dd"
+    }
+  ]
+}

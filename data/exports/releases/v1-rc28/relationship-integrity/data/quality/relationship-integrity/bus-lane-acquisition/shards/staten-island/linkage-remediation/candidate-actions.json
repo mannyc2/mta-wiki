@@ -1,0 +1,639 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-07-15T21-00-00-000Z_staten-island-acquisition-linkage-remediation",
+  "candidates": [
+    {
+      "candidate_id": "study-event-v2:03cf27aac5906110d05d23d8",
+      "route_id": "SIM1C",
+      "canonical_gtfs_route_id": "SIM1C",
+      "corridor_group": "Battery Place",
+      "route_binding_action": "verified_existing",
+      "project_id": "project_05-battery-pl",
+      "treatment_id": "treatment_proposed-westbound-bus-lane-battery-pl",
+      "corridor_id": "corridor_battery-pl-manhattan",
+      "route_record_id": "route_sim1c-meeting-doc-138456",
+      "canonical_links_verified_existing": [
+        "relation_battery-pl-project-uses-corridor",
+        "relation_project-has-treatment-proposed-design",
+        "relation_serves-route-project-05-battery-pl-route-sim1c-meeting-doc-138456_03f16bc090"
+      ],
+      "canonical_links_added": [],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:35b924de75751e620ff5cd1b",
+      "route_id": "S78",
+      "canonical_gtfs_route_id": "S78",
+      "corridor_group": "Hylan Boulevard",
+      "route_binding_action": "verified_existing",
+      "project_id": "project_hylan-blvd-transportation-improvement-study",
+      "treatment_id": "treatment_bus-lanes-hylan-blvd-2012-03",
+      "corridor_id": "corridor_hylan-boulevard-brt",
+      "route_record_id": "route_s78-hylan-2010",
+      "canonical_links_verified_existing": [
+        "relation_hylan-study-has-bus-lane-hylan",
+        "relation_hylan-study-on-corridor",
+        "relation_hylan-study-serves-s78"
+      ],
+      "canonical_links_added": [],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-bus-lanes-hylan-blvd-2012-03-on-hylan-boulevard-brt",
+      "staged_source_ids": [
+        "hylan_cb_july_2020"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:402e35b93b2e18dd50b8bf4d",
+      "route_id": "SIM3C",
+      "canonical_gtfs_route_id": "SIM3C",
+      "corridor_group": "Battery Place",
+      "route_binding_action": "added",
+      "project_id": "project_05-battery-pl",
+      "treatment_id": "treatment_proposed-westbound-bus-lane-battery-pl",
+      "corridor_id": "corridor_battery-pl-manhattan",
+      "route_record_id": "route_sim3c",
+      "canonical_links_verified_existing": [
+        "relation_battery-pl-project-uses-corridor",
+        "relation_project-has-treatment-proposed-design"
+      ],
+      "canonical_links_added": [
+        "relation_battery-place-project-serves-sim3c-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:56144ad13c89a760eca742f1",
+      "route_id": "SIM26",
+      "canonical_gtfs_route_id": "SIM26",
+      "corridor_group": "Madison Avenue",
+      "route_binding_action": "verified_existing",
+      "project_id": "project_03-madison-ave",
+      "treatment_id": "treatment_madison-ave-double-bus-lane",
+      "corridor_id": "corridor_madison-avenue",
+      "route_record_id": "route_sim26-42nd-st",
+      "canonical_links_verified_existing": [
+        "relation_serves-route-project-03-madison-ave-route-sim26-42nd-st_e500e37c2d"
+      ],
+      "canonical_links_added": [
+        "relation_staten-acquisition-madison-project-has-double-bus-lane-2019",
+        "relation_staten-acquisition-madison-project-uses-corridor-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-madison-ave-double-bus-lane-on-madison-avenue",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:56a19ae37a156ba38aefa748",
+      "route_id": "SIM8",
+      "canonical_gtfs_route_id": "SIM8",
+      "corridor_group": "Madison Avenue",
+      "route_binding_action": "verified_existing",
+      "project_id": "project_03-madison-ave",
+      "treatment_id": "treatment_madison-ave-double-bus-lane",
+      "corridor_id": "corridor_madison-avenue",
+      "route_record_id": "route_sim8-42nd-st",
+      "canonical_links_verified_existing": [
+        "relation_serves-route-project-03-madison-ave-route-sim8-42nd-st_ef772633d0"
+      ],
+      "canonical_links_added": [
+        "relation_staten-acquisition-madison-project-has-double-bus-lane-2019",
+        "relation_staten-acquisition-madison-project-uses-corridor-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-madison-ave-double-bus-lane-on-madison-avenue",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:5ac3f393233f205c142914c2",
+      "route_id": "SIM7",
+      "canonical_gtfs_route_id": "SIM7",
+      "corridor_group": "Hylan Boulevard",
+      "route_binding_action": "added",
+      "project_id": "project_hylan-blvd-transportation-improvement-study",
+      "treatment_id": "treatment_bus-lanes-hylan-blvd-2012-03",
+      "corridor_id": "corridor_hylan-boulevard-brt",
+      "route_record_id": "route_sim7",
+      "canonical_links_verified_existing": [
+        "relation_hylan-study-has-bus-lane-hylan",
+        "relation_hylan-study-on-corridor"
+      ],
+      "canonical_links_added": [
+        "relation_hylan-project-serves-sim7-2020"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-bus-lanes-hylan-blvd-2012-03-on-hylan-boulevard-brt",
+      "staged_source_ids": [
+        "hylan_cb_july_2020"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:5c3f4b6828ca4b76c035fffb",
+      "route_id": "S79",
+      "canonical_gtfs_route_id": "S79+",
+      "corridor_group": "Hylan Boulevard",
+      "route_binding_action": "verified_existing",
+      "project_id": "project_hylan-blvd-transportation-improvement-study",
+      "treatment_id": "treatment_bus-lanes-hylan-blvd-2012-03",
+      "corridor_id": "corridor_hylan-boulevard-brt",
+      "route_record_id": "route_able-s79-sbs",
+      "canonical_links_verified_existing": [
+        "relation_hylan-study-has-bus-lane-hylan",
+        "relation_hylan-study-on-corridor",
+        "relation_project-serves-s79-sbs-winter-2012"
+      ],
+      "canonical_links_added": [],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-bus-lanes-hylan-blvd-2012-03-on-hylan-boulevard-brt",
+      "staged_source_ids": [
+        "hylan_cb_july_2020"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:69ff2b25bf71bb7f1dd41962",
+      "route_id": "SIM33C",
+      "canonical_gtfs_route_id": "SIM33C",
+      "corridor_group": "Battery Place",
+      "route_binding_action": "added",
+      "project_id": "project_05-battery-pl",
+      "treatment_id": "treatment_proposed-westbound-bus-lane-battery-pl",
+      "corridor_id": "corridor_battery-pl-manhattan",
+      "route_record_id": "route_sim33c",
+      "canonical_links_verified_existing": [
+        "relation_battery-pl-project-uses-corridor",
+        "relation_project-has-treatment-proposed-design"
+      ],
+      "canonical_links_added": [
+        "relation_battery-place-project-serves-sim33c-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:7ee4d4a1161ff7b0902bd182",
+      "route_id": "SIM4C",
+      "canonical_gtfs_route_id": "SIM4C",
+      "corridor_group": "Battery Place",
+      "route_binding_action": "verified_existing",
+      "project_id": "project_05-battery-pl",
+      "treatment_id": "treatment_proposed-westbound-bus-lane-battery-pl",
+      "corridor_id": "corridor_battery-pl-manhattan",
+      "route_record_id": "route_sim4c-meeting-doc-138456",
+      "canonical_links_verified_existing": [
+        "relation_battery-pl-project-uses-corridor",
+        "relation_project-has-treatment-proposed-design",
+        "relation_serves-route-project-05-battery-pl-route-sim4c-meeting-doc-138456_a2d0a85b97"
+      ],
+      "canonical_links_added": [],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:88a4ef98d281f791f9e4d4c5",
+      "route_id": "SIM34",
+      "canonical_gtfs_route_id": "SIM34",
+      "corridor_group": "Battery Place",
+      "route_binding_action": "added",
+      "project_id": "project_05-battery-pl",
+      "treatment_id": "treatment_proposed-westbound-bus-lane-battery-pl",
+      "corridor_id": "corridor_battery-pl-manhattan",
+      "route_record_id": "route_sim34",
+      "canonical_links_verified_existing": [
+        "relation_battery-pl-project-uses-corridor",
+        "relation_project-has-treatment-proposed-design"
+      ],
+      "canonical_links_added": [
+        "relation_battery-place-project-serves-sim34-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:94506aa18ba41d7470163cad",
+      "route_id": "SIM2",
+      "canonical_gtfs_route_id": "SIM2",
+      "corridor_group": "Battery Place",
+      "route_binding_action": "added",
+      "project_id": "project_05-battery-pl",
+      "treatment_id": "treatment_proposed-westbound-bus-lane-battery-pl",
+      "corridor_id": "corridor_battery-pl-manhattan",
+      "route_record_id": "route_sim2",
+      "canonical_links_verified_existing": [
+        "relation_battery-pl-project-uses-corridor",
+        "relation_project-has-treatment-proposed-design"
+      ],
+      "canonical_links_added": [
+        "relation_battery-place-project-serves-sim2-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:955adb3a7cb228ff39810821",
+      "route_id": "SIM15",
+      "canonical_gtfs_route_id": "SIM15",
+      "corridor_group": "Battery Place",
+      "route_binding_action": "added",
+      "project_id": "project_05-battery-pl",
+      "treatment_id": "treatment_proposed-westbound-bus-lane-battery-pl",
+      "corridor_id": "corridor_battery-pl-manhattan",
+      "route_record_id": "route_sim15",
+      "canonical_links_verified_existing": [
+        "relation_battery-pl-project-uses-corridor",
+        "relation_project-has-treatment-proposed-design"
+      ],
+      "canonical_links_added": [
+        "relation_battery-place-project-serves-sim15-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:b6072a8190833425317d1ddc",
+      "route_id": "SIM1",
+      "canonical_gtfs_route_id": "SIM1",
+      "corridor_group": "Battery Place",
+      "route_binding_action": "added",
+      "project_id": "project_05-battery-pl",
+      "treatment_id": "treatment_proposed-westbound-bus-lane-battery-pl",
+      "corridor_id": "corridor_battery-pl-manhattan",
+      "route_record_id": "route_sim1",
+      "canonical_links_verified_existing": [
+        "relation_battery-pl-project-uses-corridor",
+        "relation_project-has-treatment-proposed-design"
+      ],
+      "canonical_links_added": [
+        "relation_battery-place-project-serves-sim1-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:b6b1da71abbf2c610a3ff0e0",
+      "route_id": "S57",
+      "canonical_gtfs_route_id": "S57",
+      "corridor_group": "Hylan Boulevard",
+      "route_binding_action": "added",
+      "project_id": "project_hylan-blvd-transportation-improvement-study",
+      "treatment_id": "treatment_bus-lanes-hylan-blvd-2012-03",
+      "corridor_id": "corridor_hylan-boulevard-brt",
+      "route_record_id": "route_s57",
+      "canonical_links_verified_existing": [
+        "relation_hylan-study-has-bus-lane-hylan",
+        "relation_hylan-study-on-corridor"
+      ],
+      "canonical_links_added": [
+        "relation_hylan-project-serves-s57-2020"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-bus-lanes-hylan-blvd-2012-03-on-hylan-boulevard-brt",
+      "staged_source_ids": [
+        "hylan_cb_july_2020"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:b81faee767193778423c95fc",
+      "route_id": "SIM5",
+      "canonical_gtfs_route_id": "SIM5",
+      "corridor_group": "Battery Place",
+      "route_binding_action": "added",
+      "project_id": "project_05-battery-pl",
+      "treatment_id": "treatment_proposed-westbound-bus-lane-battery-pl",
+      "corridor_id": "corridor_battery-pl-manhattan",
+      "route_record_id": "route_sim5",
+      "canonical_links_verified_existing": [
+        "relation_battery-pl-project-uses-corridor",
+        "relation_project-has-treatment-proposed-design"
+      ],
+      "canonical_links_added": [
+        "relation_battery-place-project-serves-sim5-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:c224f7cd66538358313fa2c2",
+      "route_id": "SIM30",
+      "canonical_gtfs_route_id": "SIM30",
+      "corridor_group": "Madison Avenue",
+      "route_binding_action": "verified_existing",
+      "project_id": "project_03-madison-ave",
+      "treatment_id": "treatment_madison-ave-double-bus-lane",
+      "corridor_id": "corridor_madison-avenue",
+      "route_record_id": "route_sim30-42nd-st",
+      "canonical_links_verified_existing": [
+        "relation_serves-route-project-03-madison-ave-route-sim30-42nd-st_7f869c0db8"
+      ],
+      "canonical_links_added": [
+        "relation_staten-acquisition-madison-project-has-double-bus-lane-2019",
+        "relation_staten-acquisition-madison-project-uses-corridor-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-madison-ave-double-bus-lane-on-madison-avenue",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:c4c39b0f3c90371b46c73fa6",
+      "route_id": "SIM25",
+      "canonical_gtfs_route_id": "SIM25",
+      "corridor_group": "Madison Avenue",
+      "route_binding_action": "verified_existing",
+      "project_id": "project_03-madison-ave",
+      "treatment_id": "treatment_madison-ave-double-bus-lane",
+      "corridor_id": "corridor_madison-avenue",
+      "route_record_id": "route_sim25-42nd-st",
+      "canonical_links_verified_existing": [
+        "relation_serves-route-project-03-madison-ave-route-sim25-42nd-st_097dcbb41f"
+      ],
+      "canonical_links_added": [
+        "relation_staten-acquisition-madison-project-has-double-bus-lane-2019",
+        "relation_staten-acquisition-madison-project-uses-corridor-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-madison-ave-double-bus-lane-on-madison-avenue",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:c5669d0023b64203e23f1af6",
+      "route_id": "SIM4",
+      "canonical_gtfs_route_id": "SIM4",
+      "corridor_group": "Battery Place",
+      "route_binding_action": "verified_existing",
+      "project_id": "project_05-battery-pl",
+      "treatment_id": "treatment_proposed-westbound-bus-lane-battery-pl",
+      "corridor_id": "corridor_battery-pl-manhattan",
+      "route_record_id": "route_sim4-meeting-doc-176441",
+      "canonical_links_verified_existing": [
+        "relation_battery-pl-project-uses-corridor",
+        "relation_project-has-treatment-proposed-design",
+        "relation_serves-route-project-05-battery-pl-route-sim4-meeting-doc-176441_38a98eebd7"
+      ],
+      "canonical_links_added": [],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:c6bd93155bbffd9856470732",
+      "route_id": "SIM22",
+      "canonical_gtfs_route_id": "SIM22",
+      "corridor_group": "Madison Avenue",
+      "route_binding_action": "verified_existing",
+      "project_id": "project_03-madison-ave",
+      "treatment_id": "treatment_madison-ave-double-bus-lane",
+      "corridor_id": "corridor_madison-avenue",
+      "route_record_id": "route_sim22-42nd-st",
+      "canonical_links_verified_existing": [
+        "relation_serves-route-project-03-madison-ave-route-sim22-42nd-st_ab04281425"
+      ],
+      "canonical_links_added": [
+        "relation_staten-acquisition-madison-project-has-double-bus-lane-2019",
+        "relation_staten-acquisition-madison-project-uses-corridor-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-madison-ave-double-bus-lane-on-madison-avenue",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:c910351a6970ad67a85ba290",
+      "route_id": "SIM35",
+      "canonical_gtfs_route_id": "SIM35",
+      "corridor_group": "Battery Place",
+      "route_binding_action": "added",
+      "project_id": "project_05-battery-pl",
+      "treatment_id": "treatment_proposed-westbound-bus-lane-battery-pl",
+      "corridor_id": "corridor_battery-pl-manhattan",
+      "route_record_id": "route_sim35",
+      "canonical_links_verified_existing": [
+        "relation_battery-pl-project-uses-corridor",
+        "relation_project-has-treatment-proposed-design"
+      ],
+      "canonical_links_added": [
+        "relation_battery-place-project-serves-sim35-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:c99e29584b799c943a5dda53",
+      "route_id": "SIM32",
+      "canonical_gtfs_route_id": "SIM32",
+      "corridor_group": "Battery Place",
+      "route_binding_action": "added",
+      "project_id": "project_05-battery-pl",
+      "treatment_id": "treatment_proposed-westbound-bus-lane-battery-pl",
+      "corridor_id": "corridor_battery-pl-manhattan",
+      "route_record_id": "route_sim32",
+      "canonical_links_verified_existing": [
+        "relation_battery-pl-project-uses-corridor",
+        "relation_project-has-treatment-proposed-design"
+      ],
+      "canonical_links_added": [
+        "relation_battery-place-project-serves-sim32-2019"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-proposed-westbound-bus-lane-battery-pl-on-battery-pl-manhat",
+      "staged_source_ids": [
+        "better_buses_action_plan_2019"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    },
+    {
+      "candidate_id": "study-event-v2:fbc625c00e4811450ce3dab9",
+      "route_id": "SIM9",
+      "canonical_gtfs_route_id": "SIM9",
+      "corridor_group": "Hylan Boulevard",
+      "route_binding_action": "added",
+      "project_id": "project_hylan-blvd-transportation-improvement-study",
+      "treatment_id": "treatment_bus-lanes-hylan-blvd-2012-03",
+      "corridor_id": "corridor_hylan-boulevard-brt",
+      "route_record_id": "route_sim9",
+      "canonical_links_verified_existing": [
+        "relation_hylan-study-has-bus-lane-hylan",
+        "relation_hylan-study-on-corridor"
+      ],
+      "canonical_links_added": [
+        "relation_hylan-project-serves-sim9-2020"
+      ],
+      "coordinated_physical_scope_relation_id": "relation_bus-lane-treatment-scope-v1-bus-lanes-hylan-blvd-2012-03-on-hylan-boulevard-brt",
+      "staged_source_ids": [
+        "hylan_cb_july_2020"
+      ],
+      "study_projection_eligible": false,
+      "remaining_unsupported_claims": [
+        "The candidate's exact historical registry segment identity remains unpinned.",
+        "No stable candidate phase identity was proved.",
+        "The candidate-specific operational onset was not proved.",
+        "No canonical operational-occurrence identity was proved."
+      ]
+    }
+  ]
+}

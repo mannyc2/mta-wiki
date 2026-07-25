@@ -1,0 +1,32 @@
+{
+  "acquired_on": "2026-07-23",
+  "schema_version": 1,
+  "scope": "malcolm-x-boulevard-2020-b46-sbs-nonterminal-project-context",
+  "sources": [
+    {
+      "category": "official_nyc_dot_lane_project",
+      "content_sha256": "15753f32e4f1024f0e49b9b0aff61d9fd2d4bcf3e752f77a5ed292831eb13e16",
+      "id": "dot_projects_2020_malcolm_x_exact_candidate_check",
+      "note": "The exact B46+, Malcolm X Boulevard, and 2020-07-23 query returned no indexed result. The acquired official project section binds B46 Local and Select Bus Service to the broader project corridor but does not prove the exact three lane rows, registry day, stable phase, or candidate-date traversal.",
+      "raw_content_retained": false,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-15",
+      "url": "https://www.nyc.gov/html/dot/html/about/projects-2020.shtml"
+    },
+    {
+      "byte_length": 3058030,
+      "category": "official_public_board_committee",
+      "content_sha256": "702eec07776b7d722cb2040e715e74a3dd149ec92938c0aa91bcb447058ff60c",
+      "http_status": 200,
+      "id": "malcolm_x_blvd_utica_ave_mar2020_exact_candidate_check",
+      "media_type": "application/pdf",
+      "note": "The staged March 2020 presentation explicitly distinguishes B46 Local and B46 SBS and shows the southbound project corridor. Its timeline uses Spring 2020 and does not bind the registry's exact 2020-07-23 day or the current three-row identity.",
+      "raw_content_retained": true,
+      "retrieval_status": "acquired",
+      "retrieved_on": "2026-07-23",
+      "source_artifact": "source.pdf",
+      "source_id": "malcolm_x_blvd_utica_ave_mar2020",
+      "url": "https://www.nyc.gov/html/brt/downloads/pdf/malcolm-x-blvd-utica-ave-mar2020.pdf"
+    }
+  ]
+}

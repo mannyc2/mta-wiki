@@ -1,0 +1,1399 @@
+{
+  "schema_version": 1,
+  "campaign_id": "relationship-semantic-remediation-v1",
+  "journal_path": "data/submissions/2026-07-16T03-00-00-000Z_relationship-semantic-remediation-v1.jsonl",
+  "submission_count": 154,
+  "submission_ids_sha256": "4464a3b52e6034f8f49f556d73547c100ea5fc85377cb89f506e46bf8ae271d1",
+  "entries": [
+    {
+      "submission_id": "sub_0040d1f909b91b2a",
+      "source_id": "meeting_doc_160251",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_finance_committee_action_precedes_board_action_2024_12",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-160251-board-agenda"
+      ]
+    },
+    {
+      "submission_id": "sub_02859fa4d005131b",
+      "source_id": "meeting_doc_91576",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_south_12th_street_grade_crossing_meeting_doc_91576",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_lirr-south-12th-st-elimination"
+      ]
+    },
+    {
+      "submission_id": "sub_038368a40573ce73",
+      "source_id": "meeting_doc_133361",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mta_has_license_with_rlf_ii_bassett",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-133361-mta-psa-licenses"
+      ]
+    },
+    {
+      "submission_id": "sub_0687ae89c23624b7",
+      "source_id": "meeting_doc_164901",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_skanska_rr_jv_items_1_2_164901_awarded_to_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-164901-skanska-contracts"
+      ]
+    },
+    {
+      "submission_id": "sub_08129d98852e7b17",
+      "source_id": "meeting_doc_194126",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mta_efficiencies_plan_applies_to_bt_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_efficiencies-agencies"
+      ]
+    },
+    {
+      "submission_id": "sub_0884eef3a9daa477",
+      "source_id": "meeting_doc_131546",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_joint_operations_committee_meeting_doc_131546",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-131546-event-organized-by-mta"
+      ]
+    },
+    {
+      "submission_id": "sub_0a6bdffc34800ba0",
+      "source_id": "meeting_doc_129101",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_escalator_51_street_station_meeting_doc_129101",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_escalator-6-stations-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_0f34352e1a9ed3e3",
+      "source_id": "meeting_doc_131546",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_december_2023_operations_meeting_organized_by_joint_committee",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-131546-event-organized-by-mta"
+      ]
+    },
+    {
+      "submission_id": "sub_1276dd5ff2d6ffbe",
+      "source_id": "meeting_doc_190011",
+      "observation_kind": "claim",
+      "local_observation_id": "claim_daso_lease_renewal_authorization_request_meeting_doc_190011",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mta-real-estate-requests-lirr-daso-lease"
+      ]
+    },
+    {
+      "submission_id": "sub_14c93c9a29a6148b",
+      "source_id": "meeting_doc_129101",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_escalator_park_place_station_meeting_doc_129101",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_escalator-6-stations-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_15a28851897f72de",
+      "source_id": "meeting_doc_30001",
+      "observation_kind": "event",
+      "local_observation_id": "event_mrt2_escalator_payment_authorization_fy2020",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mrt-payments-treasury"
+      ]
+    },
+    {
+      "submission_id": "sub_17e19b83706adbc5",
+      "source_id": "brt_south_brooklyn_b82_cb18_jun2017",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_b82_local_related_to_b44_sbs_cb18_jun2017",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_b82-connects-subway-b82-cb18-jun2017"
+      ]
+    },
+    {
+      "submission_id": "sub_1b9bf9974bc99c5c",
+      "source_id": "meeting_doc_135381",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_action_carting_extension_has_funding_claim",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-135381-funding-source"
+      ]
+    },
+    {
+      "submission_id": "sub_1c09a4779146bab5",
+      "source_id": "meeting_doc_98266",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_98266_overhead_bridge_uses_harlem_line_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_98266-overhead-bridge-lines"
+      ]
+    },
+    {
+      "submission_id": "sub_1c419c0ba0ea8a4b",
+      "source_id": "meeting_doc_194126",
+      "observation_kind": "project",
+      "local_observation_id": "project_mta_operating_efficiencies_plan_194126",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_efficiencies-agencies"
+      ]
+    },
+    {
+      "submission_id": "sub_1f366a7c3a65fca0",
+      "source_id": "meeting_doc_129101",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_escalator_replacement_applies_to_escalator_franklin_avenue_station_meeting_doc_129101",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_escalator-6-stations-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_218bd800cd2f0538",
+      "source_id": "meeting_doc_170981",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_joseph_gulotta_nypd_transit",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_safety-report-gulotta"
+      ]
+    },
+    {
+      "submission_id": "sub_22df9a40b422e761",
+      "source_id": "meeting_doc_164901",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_tutor_perini_item_3_164901_has_claim_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-164901-tutor-contract"
+      ]
+    },
+    {
+      "submission_id": "sub_24edce848a0e0454",
+      "source_id": "meeting_doc_206071",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_exp_urbahn_three_line_accessibility_design_206071_awarded_to_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_exp-urbahn-contract-design-services"
+      ]
+    },
+    {
+      "submission_id": "sub_259d5c171629c291",
+      "source_id": "meeting_doc_146956",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_lexington_avenue_subway_line_meeting_doc_146956",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-146956-sas2-mnr-125"
+      ]
+    },
+    {
+      "submission_id": "sub_28e4fe3113914f2a",
+      "source_id": "meeting_doc_26821",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_bw39_rk60_applies_to_rfk_bridge",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-26821-bw39-rk60-at-bxw-rfk"
+      ]
+    },
+    {
+      "submission_id": "sub_29951b4ef8398128",
+      "source_id": "meeting_doc_205556",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_report_mnr_president_205556_presented_by_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_mnr-presented-by-vonashek"
+      ]
+    },
+    {
+      "submission_id": "sub_2ac5375a1f5a7140",
+      "source_id": "meeting_doc_115231",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_c48703_mod08_eastern_parkway_115231_awarded_to_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_fos-contract-eastern-pkwy"
+      ]
+    },
+    {
+      "submission_id": "sub_2db2a08f9b561c63",
+      "source_id": "meeting_doc_164901",
+      "observation_kind": "project",
+      "local_observation_id": "contract_tutor_perini_item_3_164901",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-164901-tutor-contract"
+      ]
+    },
+    {
+      "submission_id": "sub_2df3e60f2d8aa738",
+      "source_id": "meeting_doc_164961",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mta_hq_various_procurements_managed_by_davis_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-164961-davis-manages-procurement"
+      ]
+    },
+    {
+      "submission_id": "sub_357b7ad78a865308",
+      "source_id": "meeting_doc_164901",
+      "observation_kind": "project",
+      "local_observation_id": "contract_cubic_a34024_bus_validator_modification_164901",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-164901-cubic-contract"
+      ]
+    },
+    {
+      "submission_id": "sub_3582eb8240efc829",
+      "source_id": "meeting_doc_135381",
+      "observation_kind": "project",
+      "local_observation_id": "project_action_carting_refuse_removal_extension_600000000022916",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-135381-funding-source"
+      ]
+    },
+    {
+      "submission_id": "sub_39642733ab057c48",
+      "source_id": "meeting_doc_129101",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_escalator_high_street_station_meeting_doc_129101",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_escalator-6-stations-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_3abdd0580d27d0c5",
+      "source_id": "meeting_doc_166906",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_jamaica_station_vertical_transportation_except_platform_f",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_166906-jamaica-maintained-by-port-authority"
+      ]
+    },
+    {
+      "submission_id": "sub_3bebb7fd22d1f522",
+      "source_id": "meeting_doc_194126",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mta_efficiencies_plan_applies_to_lirr_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_efficiencies-agencies"
+      ]
+    },
+    {
+      "submission_id": "sub_3c6a25da6f80e4db",
+      "source_id": "meeting_doc_155111",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_waye_paratransit_scheduling_engine_155111_awarded_to_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_waye-contract-scheduling-engine"
+      ]
+    },
+    {
+      "submission_id": "sub_3d46e7ee7e053a82",
+      "source_id": "meeting_doc_26821",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_hc30_qm91_applies_to_queens_midtown_tunnel",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-26821-hc30-qm91-at-hugh-carey-qmt"
+      ]
+    },
+    {
+      "submission_id": "sub_3e591908376fa20e",
+      "source_id": "meeting_doc_133356",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_mnr_delivery_department_133356",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_delivery-department-mnr-fire"
+      ]
+    },
+    {
+      "submission_id": "sub_4136d1aadb36264b",
+      "source_id": "nyct_key_performance_metrics_june2025",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_jamaica_bus_depot_located_in_queens_semantic_remediation_part_1",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_rel-jamaica-bus-depot-queens"
+      ]
+    },
+    {
+      "submission_id": "sub_441d731c782b5350",
+      "source_id": "meeting_doc_26831",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_report_2020_year_end_review_26831_presented_by_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_mta-finance-prepared-year-end-review"
+      ]
+    },
+    {
+      "submission_id": "sub_442a66437d6d0dd6",
+      "source_id": "meeting_doc_29951",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_2020_surplus_bt_to_nyct_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_2020-surplus-to-mta-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_462391b5af4c387b",
+      "source_id": "meeting_doc_205571",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_tactical_deployable_camera_system_funded_by_fema_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-205571-fema-grant"
+      ]
+    },
+    {
+      "submission_id": "sub_468c267cd319ff5d",
+      "source_id": "meeting_doc_98266",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_98266_overhead_bridge_uses_port_jervis_line_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_98266-overhead-bridge-lines"
+      ]
+    },
+    {
+      "submission_id": "sub_46c9d6e9f1c44440",
+      "source_id": "meeting_doc_129101",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_escalator_21_street_queensbridge_station_meeting_doc_129101",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_escalator-6-stations-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_4772cec3f16bdae9",
+      "source_id": "meeting_doc_194126",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mta_efficiencies_plan_applies_to_nyct_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_efficiencies-agencies"
+      ]
+    },
+    {
+      "submission_id": "sub_4a148c6be1cb16d6",
+      "source_id": "meeting_doc_133281",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_taxi_reimbursement_processing_improvement_has_83pct_metric_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_lynch-architect-taxi-reimbursement-app"
+      ]
+    },
+    {
+      "submission_id": "sub_4a21173b46662c6a",
+      "source_id": "meeting_doc_133356",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mnr_fire_project_responsible_delivery_department_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_delivery-department-mnr-fire"
+      ]
+    },
+    {
+      "submission_id": "sub_4a823b38fe42efc2",
+      "source_id": "meeting_doc_133281",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_dennis_lynch_contributed_to_taxi_reimbursement_improvement_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_lynch-architect-taxi-reimbursement-app"
+      ]
+    },
+    {
+      "submission_id": "sub_4cd3d260d57a6e10",
+      "source_id": "meeting_doc_155111",
+      "observation_kind": "project",
+      "local_observation_id": "contract_oas_avlm_hardware_155111",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_oas-contract-avlm-hardware"
+      ]
+    },
+    {
+      "submission_id": "sub_511a6b8e3827565e",
+      "source_id": "meeting_doc_129101",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_escalator_replacement_applies_to_escalator_park_place_station_meeting_doc_129101",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_escalator-6-stations-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_524bbe1a2aabb4f3",
+      "source_id": "meeting_doc_205556",
+      "observation_kind": "source",
+      "local_observation_id": "report_lirr_president_205556",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_lirr-presented-by-free"
+      ]
+    },
+    {
+      "submission_id": "sub_5479bda4472bb567",
+      "source_id": "meeting_doc_129101",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_escalator_replacement_applies_to_escalator_21_street_queensbridge_station_meeting_doc_129101",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_escalator-6-stations-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_5490a0413cfa7d59",
+      "source_id": "meeting_doc_98266",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_98266_graffiti_uses_hudson_line_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_98266-graffiti-hudson-harlem"
+      ]
+    },
+    {
+      "submission_id": "sub_54d06872033bdd32",
+      "source_id": "meeting_doc_206071",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_exp_urbahn_three_line_accessibility_design_206071_has_metric_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_exp-urbahn-contract-design-services"
+      ]
+    },
+    {
+      "submission_id": "sub_55b2c6025772be82",
+      "source_id": "meeting_doc_91576",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_south_12th_street_project_applies_to_grade_crossing",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_lirr-south-12th-st-elimination"
+      ]
+    },
+    {
+      "submission_id": "sub_56cd27e3d523170b",
+      "source_id": "meeting_doc_164901",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_tutor_perini_item_3_164901_awarded_to_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-164901-tutor-contract"
+      ]
+    },
+    {
+      "submission_id": "sub_58d5fceb9ea83420",
+      "source_id": "meeting_doc_190011",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mta_real_estate_has_tmha_disposition_authorization_request_meeting_doc_190011",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mta-real-estate-requests-mnr-tmha-disposition"
+      ]
+    },
+    {
+      "submission_id": "sub_5a22f6e8c9f927cb",
+      "source_id": "meeting_doc_33876",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_tbta_pmt_obligation_resolution_prepared_by_finance",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-33876-mta-finance-prepared-by"
+      ]
+    },
+    {
+      "submission_id": "sub_5d1b28d42f9dc417",
+      "source_id": "meeting_doc_194126",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mta_efficiencies_plan_applies_to_hq_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_efficiencies-agencies"
+      ]
+    },
+    {
+      "submission_id": "sub_5da7baf40c80945c",
+      "source_id": "meeting_doc_155111",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_waye_paratransit_scheduling_engine_155111_has_metric_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_waye-contract-scheduling-engine"
+      ]
+    },
+    {
+      "submission_id": "sub_5ec2dd12db3395d6",
+      "source_id": "meeting_doc_155111",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_oas_avlm_hardware_155111_has_metric_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_oas-contract-avlm-hardware"
+      ]
+    },
+    {
+      "submission_id": "sub_61df6450ccb08aae",
+      "source_id": "meeting_doc_190011",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mta_real_estate_has_transit_museum_archives_lease_amendment_authorization_request_meeting_doc_190011",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mta-real-estate-requests-transit-museum-lease"
+      ]
+    },
+    {
+      "submission_id": "sub_65f79e38a6b6ebe4",
+      "source_id": "meeting_doc_133361",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mta_has_license_with_1776_eastchester_condominium",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-133361-mta-psa-licenses"
+      ]
+    },
+    {
+      "submission_id": "sub_69009a7439e81804",
+      "source_id": "meeting_doc_29951",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_2020_surplus_bt_to_mta_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_2020-surplus-to-mta-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_6a3b87e89d6f8dbd",
+      "source_id": "meeting_doc_205556",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_report_cd_president_205556_presented_by_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_cd-presented-by-torres-springer"
+      ]
+    },
+    {
+      "submission_id": "sub_6acf883b038813aa",
+      "source_id": "meeting_doc_129101",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_escalator_replacement_applies_to_escalator_high_street_station_meeting_doc_129101",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_escalator-6-stations-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_6cff28a05e7c8b50",
+      "source_id": "meeting_doc_164901",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_skanska_rr_jv_items_1_2_164901_has_claim_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-164901-skanska-contracts"
+      ]
+    },
+    {
+      "submission_id": "sub_70de05e75200290d",
+      "source_id": "meeting_doc_129101",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_escalator_replacement_applies_to_escalator_lexington_avenue_63_street_station_meeting_doc_129101",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_escalator-6-stations-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_71da8819228d1c7a",
+      "source_id": "meeting_doc_133281",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_taxi_reimbursement_processing_improvement_has_83pct_metric_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_ye-led-taxi-reimbursement-improvement"
+      ]
+    },
+    {
+      "submission_id": "sub_72225d2ae39efb04",
+      "source_id": "meeting_doc_135386",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mtapd_uses_30_30_northern_boulevard_training_premises",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-135386-mtapd-uses-3030"
+      ]
+    },
+    {
+      "submission_id": "sub_722472931e8f333b",
+      "source_id": "meeting_doc_206071",
+      "observation_kind": "project",
+      "local_observation_id": "contract_exp_urbahn_three_line_accessibility_design_206071",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_exp-urbahn-contract-design-services"
+      ]
+    },
+    {
+      "submission_id": "sub_7226c895df169e33",
+      "source_id": "meeting_doc_133281",
+      "observation_kind": "project",
+      "local_observation_id": "project_taxi_reimbursement_processing_improvement_133281",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_lynch-architect-taxi-reimbursement-app"
+      ]
+    },
+    {
+      "submission_id": "sub_72d91ff1a29f7a52",
+      "source_id": "meeting_doc_190011",
+      "observation_kind": "claim",
+      "local_observation_id": "claim_transit_museum_archives_lease_amendment_authorization_request_meeting_doc_190011",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mta-real-estate-requests-transit-museum-lease"
+      ]
+    },
+    {
+      "submission_id": "sub_77dcae184e8c8d7e",
+      "source_id": "meeting_doc_135381",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_action_carting_extension_awarded_to_action_carting",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-135381-funding-source"
+      ]
+    },
+    {
+      "submission_id": "sub_7bea2da8c924cac3",
+      "source_id": "meeting_doc_26926",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mnr_lirr_escalator_services_apply_to_white_plains_station",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mnr-lirr-escalator-rfp"
+      ]
+    },
+    {
+      "submission_id": "sub_7c9cefe34109f85e",
+      "source_id": "meeting_doc_164901",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_cubic_a34024_bus_validator_modification_164901_awarded_to_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-164901-cubic-contract"
+      ]
+    },
+    {
+      "submission_id": "sub_7ef8e80454f1c62e",
+      "source_id": "meeting_doc_113946",
+      "observation_kind": "source",
+      "local_observation_id": "report_meeting_doc_113946_safety_security",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-113946-grandstaff-safety"
+      ]
+    },
+    {
+      "submission_id": "sub_808c057d0a6029f6",
+      "source_id": "meeting_doc_33236",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_130_livingston_street",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_nyct-employee-vaccination-site"
+      ]
+    },
+    {
+      "submission_id": "sub_80c3f9672781b046",
+      "source_id": "meeting_doc_170981",
+      "observation_kind": "source",
+      "local_observation_id": "report_safety_security_gulotta_170981",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_safety-report-gulotta"
+      ]
+    },
+    {
+      "submission_id": "sub_80d3ab843a8e37ba",
+      "source_id": "meeting_doc_121276",
+      "observation_kind": "source",
+      "local_observation_id": "report_ridership_data_through_july_2023",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_dmb-prepares-ridership-report"
+      ]
+    },
+    {
+      "submission_id": "sub_83238f1548905a94",
+      "source_id": "meeting_doc_91591",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_nova_aeb_test_fleet_uses_kingsbridge_depot_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting91591-nova-kingsbridge-depot"
+      ]
+    },
+    {
+      "submission_id": "sub_83a1006471a0fec7",
+      "source_id": "meeting_doc_190011",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mta_real_estate_has_daso_lease_renewal_authorization_request_meeting_doc_190011",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mta-real-estate-requests-lirr-daso-lease"
+      ]
+    },
+    {
+      "submission_id": "sub_841ec86095005362",
+      "source_id": "meeting_doc_167331",
+      "observation_kind": "claim",
+      "local_observation_id": "claim_monsey_license_authorization_request_meeting_doc_167331",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-167331-mta-real-estate-requesting-authorization"
+      ]
+    },
+    {
+      "submission_id": "sub_88b5ba6af793fdd2",
+      "source_id": "meeting_doc_155111",
+      "observation_kind": "project",
+      "local_observation_id": "contract_udi_paratransit_ivr_155111",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_udi-contract-ivr-system"
+      ]
+    },
+    {
+      "submission_id": "sub_89f37a799b6796ce",
+      "source_id": "meeting_doc_155111",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_udi_paratransit_ivr_155111_has_metric_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_udi-contract-ivr-system"
+      ]
+    },
+    {
+      "submission_id": "sub_8aeff245c5d768bb",
+      "source_id": "meeting_doc_194166",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_tab_has_fair_fares_fine_waiver_claim",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_rel-meeting-doc-194166-fair-fares-fine-waiver"
+      ]
+    },
+    {
+      "submission_id": "sub_8b171ca2370faaae",
+      "source_id": "meeting_doc_135381",
+      "observation_kind": "claim",
+      "local_observation_id": "claim_action_carting_extension_funded_by_nyct_operating_budget",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-135381-funding-source"
+      ]
+    },
+    {
+      "submission_id": "sub_8f9321a81e180367",
+      "source_id": "meeting_doc_26831",
+      "observation_kind": "source",
+      "local_observation_id": "report_2020_year_end_review_26831",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_mta-finance-prepared-year-end-review"
+      ]
+    },
+    {
+      "submission_id": "sub_8fdb067136b6f5e7",
+      "source_id": "meeting_doc_26821",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_hc30_qm91_applies_to_hugh_l_carey_tunnel",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-26821-hc30-qm91-at-hugh-carey-qmt"
+      ]
+    },
+    {
+      "submission_id": "sub_92a566528949400c",
+      "source_id": "meeting_doc_194166",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_fair_fares_has_enrollment_fine_waiver_claim",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_rel-meeting-doc-194166-fair-fares-fine-waiver"
+      ]
+    },
+    {
+      "submission_id": "sub_960d576071061a64",
+      "source_id": "meeting_doc_170981",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_report_safety_security_gulotta_presented_by_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_safety-report-gulotta"
+      ]
+    },
+    {
+      "submission_id": "sub_96135c9ef3248e5a",
+      "source_id": "meeting_doc_179671",
+      "observation_kind": "project",
+      "local_observation_id": "project_enstoa_pmis_contract_600000000036586",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_rel-meeting-doc-179671-enstoa-pmis-contract"
+      ]
+    },
+    {
+      "submission_id": "sub_98da12bdb65c632d",
+      "source_id": "meeting_doc_205556",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_report_nyct_president_205556_presented_by_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_nyct-presented-by-crichlow"
+      ]
+    },
+    {
+      "submission_id": "sub_9d692a9864ac65b2",
+      "source_id": "meeting_doc_129101",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_escalator_replacement_applies_to_escalator_51_street_station_meeting_doc_129101",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_escalator-6-stations-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_a07bc9c11465f271",
+      "source_id": "meeting_doc_208146",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_penn_station_access_uses_bruckner_boulevard_property_segment",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_psa-bruckner-blvd-property"
+      ]
+    },
+    {
+      "submission_id": "sub_a210748b3c55367c",
+      "source_id": "meeting_doc_167331",
+      "observation_kind": "project",
+      "local_observation_id": "project_monsey_developers_mnr_license_agreement_2025",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-167331-board-approval",
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-167331-finance-committee-approval"
+      ]
+    },
+    {
+      "submission_id": "sub_a4ca1983bfb6ce83",
+      "source_id": "2012_11_sbs_webster_cac4_summary",
+      "observation_kind": "route",
+      "local_observation_id": "route_bx15_limited_2012_11_webster",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_bx15-local-replaces-bx55",
+        "relationship-semantic-remediation-v1/part-2/relation_bx15-ltd-replaces-bx55",
+        "relationship-semantic-remediation-v1/part-2/relation_bx55-renamed-bx15-ltd",
+        "relationship-semantic-remediation-v1/part-2/relation_bx55-renamed-to-bx15-limited-2012"
+      ]
+    },
+    {
+      "submission_id": "sub_a638cdd153d1edc9",
+      "source_id": "meeting_doc_167331",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mta_real_estate_has_monsey_license_authorization_request_meeting_doc_167331",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-167331-mta-real-estate-requesting-authorization"
+      ]
+    },
+    {
+      "submission_id": "sub_a6a65842d8cbf21f",
+      "source_id": "meeting_doc_166906",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_jamaica_vertical_transportation_maintained_by_port_authority_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_166906-jamaica-maintained-by-port-authority"
+      ]
+    },
+    {
+      "submission_id": "sub_a862cfd62e140b14",
+      "source_id": "meeting_doc_155111",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_udi_paratransit_ivr_155111_managed_by_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_udi-contract-ivr-system"
+      ]
+    },
+    {
+      "submission_id": "sub_aa07be44034bfcb3",
+      "source_id": "meeting_doc_199166",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_nyct_safety_committee_199166",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_safety-committee-composition"
+      ]
+    },
+    {
+      "submission_id": "sub_aa8cd923a7314e99",
+      "source_id": "meeting_doc_155111",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_oas_avlm_hardware_155111_awarded_to_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_oas-contract-avlm-hardware"
+      ]
+    },
+    {
+      "submission_id": "sub_aa8e774e3e3d1a19",
+      "source_id": "2015_01_06_brt_125th_cb11",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_126th_curb_project_uses_126th_corridor_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_rel-126th-curb-project-uses-corridor"
+      ]
+    },
+    {
+      "submission_id": "sub_ab0959cefb96541f",
+      "source_id": "2015_01_06_brt_125th_cb11",
+      "observation_kind": "corridor",
+      "local_observation_id": "corridor_126th_street_fdb_lenox_2015",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_rel-126th-curb-project-uses-corridor"
+      ]
+    },
+    {
+      "submission_id": "sub_ac779f602b0b24e7",
+      "source_id": "meeting_doc_205571",
+      "observation_kind": "project",
+      "local_observation_id": "project_tactical_deployable_camera_system_205571",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-205571-fema-grant"
+      ]
+    },
+    {
+      "submission_id": "sub_af84f73845b39d74",
+      "source_id": "meeting_doc_205556",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_report_lirr_president_205556_presented_by_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_lirr-presented-by-free"
+      ]
+    },
+    {
+      "submission_id": "sub_b15a1b4602694adf",
+      "source_id": "meeting_doc_164901",
+      "observation_kind": "project",
+      "local_observation_id": "contract_skanska_rr_jv_items_1_2_164901",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-164901-skanska-contracts"
+      ]
+    },
+    {
+      "submission_id": "sub_b43b5cb779add1d0",
+      "source_id": "meeting_doc_98266",
+      "observation_kind": "corridor",
+      "local_observation_id": "corridor_port_jervis_line_98266",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_98266-overhead-bridge-lines"
+      ]
+    },
+    {
+      "submission_id": "sub_b4eb4618080b6ddb",
+      "source_id": "meeting_doc_205556",
+      "observation_kind": "source",
+      "local_observation_id": "report_mnr_president_205556",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_mnr-presented-by-vonashek"
+      ]
+    },
+    {
+      "submission_id": "sub_bacb768d017dfbb3",
+      "source_id": "meeting_doc_26926",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mnr_lirr_escalator_services_apply_to_penn_station",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mnr-lirr-escalator-rfp"
+      ]
+    },
+    {
+      "submission_id": "sub_beb59ec16be1f168",
+      "source_id": "meeting_doc_164901",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_cubic_a34024_bus_validator_modification_164901_has_claim_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-164901-cubic-contract"
+      ]
+    },
+    {
+      "submission_id": "sub_bef26692d38d1fba",
+      "source_id": "meeting_doc_133281",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_jason_ye_contributed_to_taxi_reimbursement_improvement_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_ye-led-taxi-reimbursement-improvement"
+      ]
+    },
+    {
+      "submission_id": "sub_c08d650a74ae07c1",
+      "source_id": "meeting_doc_133356",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_verrazzano_project_responsible_bt_business_unit_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_b-t-business-unit-verrazzano"
+      ]
+    },
+    {
+      "submission_id": "sub_c145658021144236",
+      "source_id": "meeting_doc_33236",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_employee_vaccination_site_located_130_livingston_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_nyct-employee-vaccination-site"
+      ]
+    },
+    {
+      "submission_id": "sub_c16a09817ee54792",
+      "source_id": "meeting_doc_206071",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_exp_urbahn_three_line_accessibility_design_206071_managed_by_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_exp-urbahn-contract-design-services"
+      ]
+    },
+    {
+      "submission_id": "sub_c1ca04faaeb2bc6f",
+      "source_id": "meeting_doc_194126",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mta_efficiencies_plan_applies_to_mnr_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_efficiencies-agencies"
+      ]
+    },
+    {
+      "submission_id": "sub_c34a50c71f865741",
+      "source_id": "meeting_doc_190011",
+      "observation_kind": "claim",
+      "local_observation_id": "claim_tmha_disposition_authorization_request_meeting_doc_190011",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mta-real-estate-requests-mnr-tmha-disposition"
+      ]
+    },
+    {
+      "submission_id": "sub_c43a00963ed7bf72",
+      "source_id": "meeting_doc_205556",
+      "observation_kind": "source",
+      "local_observation_id": "report_cd_president_205556",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_cd-presented-by-torres-springer"
+      ]
+    },
+    {
+      "submission_id": "sub_cc319f49ba8255b9",
+      "source_id": "meeting_doc_133356",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_bt_business_unit_133356",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_b-t-business-unit-verrazzano"
+      ]
+    },
+    {
+      "submission_id": "sub_cd7370addbdf5d51",
+      "source_id": "meeting_doc_129101",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_escalator_lexington_avenue_63_street_station_meeting_doc_129101",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_escalator-6-stations-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_ce4604fe1294dcf8",
+      "source_id": "meeting_doc_155111",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_oas_avlm_hardware_155111_managed_by_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_oas-contract-avlm-hardware"
+      ]
+    },
+    {
+      "submission_id": "sub_ce4823d72a66c08e",
+      "source_id": "meeting_doc_30001",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mrt2_authorization_has_escalator_payment_total",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mrt-payments-treasury"
+      ]
+    },
+    {
+      "submission_id": "sub_ceb275424468475a",
+      "source_id": "meeting_doc_164961",
+      "observation_kind": "project",
+      "local_observation_id": "project_mta_hq_various_procurements_authorization_164961",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-164961-davis-manages-procurement"
+      ]
+    },
+    {
+      "submission_id": "sub_d256b1825a9130cb",
+      "source_id": "nyct_key_performance_metrics_june2025",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_queens_borough_semantic_remediation_part_1",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_rel-jamaica-bus-depot-queens"
+      ]
+    },
+    {
+      "submission_id": "sub_d3a65696f8ab02db",
+      "source_id": "meeting_doc_155111",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_udi_paratransit_ivr_155111_awarded_to_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_udi-contract-ivr-system"
+      ]
+    },
+    {
+      "submission_id": "sub_d3abd9af02c00ae1",
+      "source_id": "brt_south_brooklyn_b82_cb18_jun2017",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_b82_local_related_to_b46_sbs_cb18_jun2017",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_b82-connects-subway-b82-cb18-jun2017"
+      ]
+    },
+    {
+      "submission_id": "sub_d50b3134387af8da",
+      "source_id": "meeting_doc_33876",
+      "observation_kind": "claim",
+      "local_observation_id": "claim_tbta_payroll_mobility_tax_obligation_resolution_meeting_doc_33876",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-33876-mta-finance-prepared-by"
+      ]
+    },
+    {
+      "submission_id": "sub_d599ef99be14bf59",
+      "source_id": "meeting_doc_177266",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_my_aar_app_meeting_doc_177266",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_rel-meeting-doc-177266-my-aar-part-of-aar"
+      ]
+    },
+    {
+      "submission_id": "sub_d6a706f1cf480d3e",
+      "source_id": "meeting_doc_177266",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_my_aar_app_part_of_access_a_ride",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_rel-meeting-doc-177266-my-aar-part-of-aar"
+      ]
+    },
+    {
+      "submission_id": "sub_d7a293903cfc0828",
+      "source_id": "meeting_doc_129101",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_escalator_franklin_avenue_station_meeting_doc_129101",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_escalator-6-stations-nyct"
+      ]
+    },
+    {
+      "submission_id": "sub_db812d367c9e677a",
+      "source_id": "meeting_doc_115231",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_c48703_mod08_eastern_parkway_115231_has_claim_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_fos-contract-eastern-pkwy"
+      ]
+    },
+    {
+      "submission_id": "sub_db9cdf01eda39991",
+      "source_id": "meeting_doc_104701",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_coney_island_flood_mitigation_has_plc_signal_cable_claim",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_coney-island-contract-modification"
+      ]
+    },
+    {
+      "submission_id": "sub_de8de099fd2d2b65",
+      "source_id": "meeting_doc_104701",
+      "observation_kind": "claim",
+      "local_observation_id": "claim_coney_island_plc_signal_cable_modification",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_coney-island-contract-modification"
+      ]
+    },
+    {
+      "submission_id": "sub_e121d20649134b3f",
+      "source_id": "meeting_doc_146956",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_sas2_connects_to_lexington_avenue_line",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-146956-sas2-mnr-125"
+      ]
+    },
+    {
+      "submission_id": "sub_e169d082d24d5a18",
+      "source_id": "meeting_doc_155111",
+      "observation_kind": "project",
+      "local_observation_id": "contract_waye_paratransit_scheduling_engine_155111",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_waye-contract-scheduling-engine"
+      ]
+    },
+    {
+      "submission_id": "sub_e567fc4a8fede75f",
+      "source_id": "meeting_doc_167331",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_monsey_license_has_board_approval_event",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-167331-board-approval"
+      ]
+    },
+    {
+      "submission_id": "sub_e65b40316de8eeb1",
+      "source_id": "meeting_doc_146956",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_sas2_connects_to_metro_north_at_125_street",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-146956-sas2-mnr-125"
+      ]
+    },
+    {
+      "submission_id": "sub_e6db198277b212e8",
+      "source_id": "meeting_doc_26821",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_bw39_rk60_applies_to_bronx_whitestone_bridge",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-26821-bw39-rk60-at-bxw-rfk"
+      ]
+    },
+    {
+      "submission_id": "sub_e78b97595aa31d6a",
+      "source_id": "meeting_doc_179671",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_pmis_contract_600000000036586_awarded_to_enstoa",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_rel-meeting-doc-179671-enstoa-pmis-contract"
+      ]
+    },
+    {
+      "submission_id": "sub_e96517d060f36dc9",
+      "source_id": "meeting_doc_26926",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_white_plains_station_escalators_meeting_doc_26926",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mnr-lirr-escalator-rfp"
+      ]
+    },
+    {
+      "submission_id": "sub_eaf3a2c498cefe76",
+      "source_id": "meeting_doc_98266",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_98266_overhead_bridge_uses_new_haven_line_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_98266-overhead-bridge-lines"
+      ]
+    },
+    {
+      "submission_id": "sub_ebd19ab73e34c996",
+      "source_id": "meeting_doc_121276",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_report_ridership_data_through_july_2023_presented_by_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_dmb-prepares-ridership-report"
+      ]
+    },
+    {
+      "submission_id": "sub_ec82f1250ca21e23",
+      "source_id": "meeting_doc_98266",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_98266_overhead_bridge_uses_hudson_line_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_98266-overhead-bridge-lines"
+      ]
+    },
+    {
+      "submission_id": "sub_edaad68a49abf273",
+      "source_id": "meeting_doc_91591",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_nova_aeb_test_fleet_91591",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting91591-nova-kingsbridge-depot"
+      ]
+    },
+    {
+      "submission_id": "sub_ef2ac8792199d195",
+      "source_id": "meeting_doc_133281",
+      "observation_kind": "project",
+      "local_observation_id": "project_taxi_reimbursement_processing_improvement_133281",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_ye-led-taxi-reimbursement-improvement"
+      ]
+    },
+    {
+      "submission_id": "sub_ef5a60b3b358b1b6",
+      "source_id": "meeting_doc_135386",
+      "observation_kind": "entity",
+      "local_observation_id": "entity_30_30_northern_boulevard_sixth_seventh_floors_meeting_doc_135386",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-135386-mtapd-uses-3030"
+      ]
+    },
+    {
+      "submission_id": "sub_f0bee8eff22302a8",
+      "source_id": "meeting_doc_155111",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_contract_waye_paratransit_scheduling_engine_155111_managed_by_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_waye-contract-scheduling-engine"
+      ]
+    },
+    {
+      "submission_id": "sub_f3925230b7d319b5",
+      "source_id": "meeting_doc_167331",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_monsey_license_has_finance_committee_approval_event",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-167331-finance-committee-approval"
+      ]
+    },
+    {
+      "submission_id": "sub_f4770bc4ce071a6c",
+      "source_id": "meeting_doc_205556",
+      "observation_kind": "source",
+      "local_observation_id": "report_nyct_president_205556",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_nyct-presented-by-crichlow"
+      ]
+    },
+    {
+      "submission_id": "sub_f54b2286ea1ccd3a",
+      "source_id": "meeting_doc_199166",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_nyct_safety_committee_has_twu_local_100_participant_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_safety-committee-composition"
+      ]
+    },
+    {
+      "submission_id": "sub_f5ed83e6ca409cc4",
+      "source_id": "meeting_doc_194166",
+      "observation_kind": "claim",
+      "local_observation_id": "claim_fair_fares_enrollment_fine_waiver_meeting_doc_194166",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_rel-meeting-doc-194166-fair-fares-fine-waiver"
+      ]
+    },
+    {
+      "submission_id": "sub_f6b91b979a4fc9b1",
+      "source_id": "meeting_doc_190011",
+      "observation_kind": "claim",
+      "local_observation_id": "claim_marsah_lease_renewal_authorization_request_meeting_doc_190011",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mta-real-estate-requests-lirr-marsah-lease"
+      ]
+    },
+    {
+      "submission_id": "sub_f817f1b21e000302",
+      "source_id": "meeting_doc_113946",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_report_meeting_doc_113946_safety_security_presented_by_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_meeting-doc-113946-grandstaff-safety"
+      ]
+    },
+    {
+      "submission_id": "sub_fcab0b268232ec71",
+      "source_id": "meeting_doc_179671",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_pmis_contract_600000000036586_has_total_amount",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_rel-meeting-doc-179671-enstoa-pmis-contract"
+      ]
+    },
+    {
+      "submission_id": "sub_fcaec9d0d80e9cea",
+      "source_id": "meeting_doc_26926",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mnr_lirr_escalator_services_apply_to_grand_central_terminal",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mnr-lirr-escalator-rfp"
+      ]
+    },
+    {
+      "submission_id": "sub_fd56f4b7edf4fd9f",
+      "source_id": "meeting_doc_115231",
+      "observation_kind": "project",
+      "local_observation_id": "contract_c48703_mod08_eastern_parkway_115231",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_fos-contract-eastern-pkwy"
+      ]
+    },
+    {
+      "submission_id": "sub_fd5fc03b0ad81224",
+      "source_id": "meeting_doc_190011",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_mta_real_estate_has_marsah_lease_renewal_authorization_request_meeting_doc_190011",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_mta-real-estate-requests-lirr-marsah-lease"
+      ]
+    },
+    {
+      "submission_id": "sub_fe4d22a52bfb8806",
+      "source_id": "meeting_doc_98266",
+      "observation_kind": "relation",
+      "local_observation_id": "relation_98266_graffiti_uses_harlem_line_20260716",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-2/relation_98266-graffiti-hudson-harlem"
+      ]
+    },
+    {
+      "submission_id": "sub_ff4fd76f4fbfb2ab",
+      "source_id": "meeting_doc_160251",
+      "observation_kind": "event",
+      "local_observation_id": "event_finance_committee_meeting_2024_12_16_meeting_doc_160251",
+      "decision_ids": [
+        "relationship-semantic-remediation-v1/part-1/relation_meeting-doc-160251-board-agenda"
+      ]
+    }
+  ]
+}
