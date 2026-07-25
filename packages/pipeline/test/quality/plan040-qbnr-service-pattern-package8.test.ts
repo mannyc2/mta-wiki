@@ -4,9 +4,9 @@ import { existsSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import type { JsonValue } from "../../../db/src/types";
 import {
-  PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM,
-  PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM,
-} from "../../src/quality/plan040-accelerated-package14-closeout";
+  PLAN040_PACKAGE_15_EXTENT_VERDICT_HISTOGRAM,
+  PLAN040_PACKAGE_15_GRAIN_VERDICT_HISTOGRAM,
+} from "../../src/quality/plan040-accelerated-package15-closeout";
 import {
   PLAN040_PACKAGE_8_ABSENCE_RECEIPT_SHA256,
   PLAN040_PACKAGE_8_ACCEPTANCE_SHA256,
@@ -877,12 +877,12 @@ describe("Plan 040 QBNR Package 8 accelerated source-gap freeze", () => {
       String(row.verdict)))].sort().map((verdict) => [
       verdict,
       allExtentRows.filter((row) => row.verdict === verdict).length,
-    ]))).toEqual(PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM);
+    ]))).toEqual(PLAN040_PACKAGE_15_EXTENT_VERDICT_HISTOGRAM);
     expect(Object.fromEntries([...new Set(allGrainRows.map((row) =>
       String(row.verdict)))].sort().map((verdict) => [
       verdict,
       allGrainRows.filter((row) => row.verdict === verdict).length,
-    ]))).toEqual(PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM);
+    ]))).toEqual(PLAN040_PACKAGE_15_GRAIN_VERDICT_HISTOGRAM);
   });
 
   it("records the 50-candidate checkpoint and bounded Package 7 projection repair", () => {

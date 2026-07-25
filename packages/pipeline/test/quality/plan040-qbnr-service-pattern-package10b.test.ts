@@ -10,10 +10,10 @@ import type {
   MemberGrainLedgerRow,
 } from "../../src/quality/member-extent-ledger";
 import {
-  PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM,
-  PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM,
-  PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS,
-} from "../../src/quality/plan040-accelerated-package14-closeout";
+  PLAN040_PACKAGE_15_EXTENT_VERDICT_HISTOGRAM,
+  PLAN040_PACKAGE_15_GRAIN_VERDICT_HISTOGRAM,
+  PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS,
+} from "../../src/quality/plan040-accelerated-package15-closeout";
 import {
   loadMemberExtentAbsenceReceipts,
 } from "../../src/quality/member-extent-ledger";
@@ -1547,12 +1547,12 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
       row.verdict))].sort().map((verdict) => [
       verdict,
       extentRows.filter((row) => row.verdict === verdict).length,
-    ]))).toEqual(PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM);
+    ]))).toEqual(PLAN040_PACKAGE_15_EXTENT_VERDICT_HISTOGRAM);
     expect(Object.fromEntries([...new Set(grainRows.map((row) =>
       row.verdict))].sort().map((verdict) => [
       verdict,
       grainRows.filter((row) => row.verdict === verdict).length,
-    ]))).toEqual(PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM);
+    ]))).toEqual(PLAN040_PACKAGE_15_GRAIN_VERDICT_HISTOGRAM);
 
     const positive = evidence.candidates.slice(0, 3);
     for (const candidate of positive) {
@@ -1611,8 +1611,8 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     };
     for (const [name, path] of Object.entries(pinnedFiles)) {
       expect(sha256(readFileSync(path))).toBe(
-        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS[
-          name as keyof typeof PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS
+        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS
         ],
       );
     }

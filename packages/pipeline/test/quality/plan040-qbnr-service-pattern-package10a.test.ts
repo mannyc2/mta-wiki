@@ -10,10 +10,10 @@ import type {
   MemberGrainLedgerRow,
 } from "../../src/quality/member-extent-ledger";
 import {
-  PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM,
-  PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM,
-  PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS,
-} from "../../src/quality/plan040-accelerated-package14-closeout";
+  PLAN040_PACKAGE_15_EXTENT_VERDICT_HISTOGRAM,
+  PLAN040_PACKAGE_15_GRAIN_VERDICT_HISTOGRAM,
+  PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS,
+} from "../../src/quality/plan040-accelerated-package15-closeout";
 import {
   PLAN040_PACKAGE_10A_ABSENCE_RECEIPT_SHA256,
   PLAN040_PACKAGE_10A_REVIEWED_COMMIT,
@@ -588,7 +588,7 @@ describe("Plan 040 QBNR Package 10A accelerated absence freeze", () => {
     ).toThrow(/acceptance|scope/u);
   });
 
-  it("overlays exactly four rows within the current Package 14 projection", () => {
+  it("overlays exactly four rows within the current Package 15 projection", () => {
     const evidence = readJson<Package10aEvidence>(evidencePath);
     const extentRows = readJsonl<MemberExtentLedgerRow>(
       `${repoRoot}/data/quality/operational-reference/` +
@@ -602,12 +602,12 @@ describe("Plan 040 QBNR Package 10A accelerated absence freeze", () => {
       row.verdict))].sort().map((verdict) => [
       verdict,
       extentRows.filter((row) => row.verdict === verdict).length,
-    ]))).toEqual(PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM);
+    ]))).toEqual(PLAN040_PACKAGE_15_EXTENT_VERDICT_HISTOGRAM);
     expect(Object.fromEntries([...new Set(grainRows.map((row) =>
       row.verdict))].sort().map((verdict) => [
       verdict,
       grainRows.filter((row) => row.verdict === verdict).length,
-    ]))).toEqual(PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM);
+    ]))).toEqual(PLAN040_PACKAGE_15_GRAIN_VERDICT_HISTOGRAM);
     for (const candidate of evidence.candidates) {
       const extent = extentRows.find((row) =>
         row.treatment_record_id === candidate.treatment_record_id
@@ -646,12 +646,12 @@ describe("Plan 040 QBNR Package 10A accelerated absence freeze", () => {
     expect(sha256(readFileSync(
       `${repoRoot}/data/quality/study-readiness/v1/bridge-ledger.jsonl`,
     ))).toBe(
-      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.bridge_ledger,
+      PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.bridge_ledger,
     );
     expect(sha256(readFileSync(
       `${repoRoot}/data/quality/study-readiness/v1/manifest.json`,
     ))).toBe(
-      PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.study_manifest,
+      PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.study_manifest,
     );
   });
 });

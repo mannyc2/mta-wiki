@@ -11,6 +11,8 @@ import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
 import { PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS } from
   "./plan040-accelerated-package14-closeout.js";
+import { PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS } from
+  "./plan040-accelerated-package15-closeout.js";
 import {
   PLAN040_PACKAGE_13_ACCEPTANCE_SHA256,
   PLAN040_PACKAGE_13_APPROVED_COMMIT,
@@ -206,6 +208,19 @@ const package14ProjectionArtifacts = Object.fromEntries(
   ]),
 ) as Record<string, { path: string; sha256: string }>;
 
+const package15ProjectionArtifacts = Object.fromEntries(
+  Object.entries(projectionArtifacts).map(([name, artifact]) => [
+    name,
+    {
+      path: artifact.path,
+      sha256:
+        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS
+        ],
+    },
+  ]),
+) as Record<string, { path: string; sha256: string }>;
+
 type TestCounts = {
   pass: number;
   skip: number;
@@ -287,14 +302,14 @@ function pinnedArtifactsMatch(
   );
 }
 
-function readImmutableCheckpointForPackage14Replay(
+function readImmutableCheckpointForSuccessorReplay(
   rootDir: string,
 ): Record<string, unknown> {
   const path = resolve(rootDir, PLAN040_PACKAGE_13_CHECKPOINT_PATH);
   const bytes = readFileSync(path);
   if (sha256(bytes) !== PLAN040_PACKAGE_13_CHECKPOINT_SHA256) {
     throw new Error(
-      "Package 13 historical checkpoint drifted during Package 14 replay",
+      "Package 13 historical checkpoint drifted during successor replay",
     );
   }
   return JSON.parse(bytes.toString("utf8")) as Record<string, unknown>;
@@ -327,8 +342,11 @@ export function buildPlan040Package13Checkpoint(
   rootDir = repoRoot,
 ): Record<string, unknown> {
   assertPinnedArtifacts(rootDir, packageArtifacts);
-  if (pinnedArtifactsMatch(rootDir, package14ProjectionArtifacts)) {
-    return readImmutableCheckpointForPackage14Replay(rootDir);
+  if (
+    pinnedArtifactsMatch(rootDir, package14ProjectionArtifacts) ||
+    pinnedArtifactsMatch(rootDir, package15ProjectionArtifacts)
+  ) {
+    return readImmutableCheckpointForSuccessorReplay(rootDir);
   }
   assertPinnedArtifacts(rootDir, projectionArtifacts);
   const previousPath = resolve(rootDir, PLAN040_PACKAGE_12_CHECKPOINT_PATH);

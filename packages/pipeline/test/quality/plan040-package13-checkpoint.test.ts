@@ -4,8 +4,8 @@ import { describe, expect, it } from "bun:test";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
-import { PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS } from
-  "../../src/quality/plan040-accelerated-package14-closeout";
+import { PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS } from
+  "../../src/quality/plan040-accelerated-package15-closeout";
 import { PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS } from
   "../../src/quality/plan040-qbnr-bus-stop-package13-closeout";
 import {
@@ -251,7 +251,7 @@ describe("Plan 040 Package 13 accepted 31-closure shared-semantics checkpoint", 
     });
   });
 
-  it("pins its historical histograms and the current Package 14 bytes", () => {
+  it("pins its historical histograms and the current Package 15 bytes", () => {
     const checkpoint = readCheckpoint();
     expect(checkpoint.current_projection.member_extent_histogram).toEqual({
       absent_in_source: 165,
@@ -279,8 +279,8 @@ describe("Plan 040 Package 13 accepted 31-closure shared-semantics checkpoint", 
         ],
       );
       expect(artifactSha(artifact.path)).toBe(
-        PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS[
-          name as keyof typeof PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS
+        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS[
+          name as keyof typeof PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS
         ],
       );
     }

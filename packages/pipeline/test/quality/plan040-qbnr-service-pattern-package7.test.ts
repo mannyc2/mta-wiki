@@ -9,9 +9,9 @@ import {
   type MemberGrainDecision,
 } from "../../src/quality/member-grain-decisions";
 import {
-  PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM,
-  PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM,
-} from "../../src/quality/plan040-accelerated-package14-closeout";
+  PLAN040_PACKAGE_15_EXTENT_VERDICT_HISTOGRAM,
+  PLAN040_PACKAGE_15_GRAIN_VERDICT_HISTOGRAM,
+} from "../../src/quality/plan040-accelerated-package15-closeout";
 import {
   PLAN040_PACKAGE_7_APPROVED_COMMIT,
   PLAN040_PACKAGE_7_ABSENCE_RECEIPT_SHA256,
@@ -722,12 +722,12 @@ describe("Plan 040 QBNR Package 7 accelerated evidence and decision draft", () =
       String(row.verdict)))].sort().map((verdict) => [
       verdict,
       allExtentRows.filter((row) => row.verdict === verdict).length,
-    ]))).toEqual(PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM);
+    ]))).toEqual(PLAN040_PACKAGE_15_EXTENT_VERDICT_HISTOGRAM);
     expect(Object.fromEntries([...new Set(allGrainRows.map((row) =>
       String(row.verdict)))].sort().map((verdict) => [
       verdict,
       allGrainRows.filter((row) => row.verdict === verdict).length,
-    ]))).toEqual(PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM);
+    ]))).toEqual(PLAN040_PACKAGE_15_GRAIN_VERDICT_HISTOGRAM);
   });
 
   it("freezes a compact dual-review gate and exact owner acceptance", () => {

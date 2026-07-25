@@ -12,10 +12,10 @@ import {
   loadMemberExtentDecisions,
 } from "../../src/quality/member-extent-ledger";
 import {
-  PLAN040_PACKAGE_14_CONTRACT_EXTENT_HISTOGRAM,
-  PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM,
-  PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM,
-} from "../../src/quality/plan040-accelerated-package14-closeout";
+  PLAN040_PACKAGE_15_CONTRACT_EXTENT_HISTOGRAM,
+  PLAN040_PACKAGE_15_EXTENT_VERDICT_HISTOGRAM,
+  PLAN040_PACKAGE_15_GRAIN_VERDICT_HISTOGRAM,
+} from "../../src/quality/plan040-accelerated-package15-closeout";
 import type {
   Plan040AcquisitionCandidate,
 } from "../../src/quality/plan040-qbnr-stop-removal-acquisition";
@@ -580,13 +580,13 @@ describe("Plan 040 QBNR Package 2 evidence-only draft", () => {
     expect(extentLedger).toHaveLength(308);
     expect(grainLedger).toHaveLength(308);
     expect(distribution(companion, "extent")).toEqual(
-      PLAN040_PACKAGE_14_CONTRACT_EXTENT_HISTOGRAM,
+      PLAN040_PACKAGE_15_CONTRACT_EXTENT_HISTOGRAM,
     );
     expect(distribution(extentLedger, "verdict")).toEqual(
-      PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM,
+      PLAN040_PACKAGE_15_EXTENT_VERDICT_HISTOGRAM,
     );
     expect(distribution(grainLedger, "verdict")).toEqual(
-      PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM,
+      PLAN040_PACKAGE_15_GRAIN_VERDICT_HISTOGRAM,
     );
     const companionByKey = new Map(companion.map((row) => [extentDecisionKey(row as any), row]));
     const extentByKey = new Map(extentLedger.map((row) => [extentDecisionKey(row as any), row]));

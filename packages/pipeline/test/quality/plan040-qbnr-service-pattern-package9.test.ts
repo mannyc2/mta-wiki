@@ -3,6 +3,8 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
 import type { JsonValue } from "../../../db/src/types";
+import { PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS } from
+  "../../src/quality/plan040-accelerated-package15-closeout";
 import {
   PLAN040_PACKAGE_9_ABSENCE_RECEIPT_SHA256,
   PLAN040_PACKAGE_9_EXTENT_DECISIONS_SHA256,
@@ -826,8 +828,7 @@ describe("Plan 040 QBNR Package 9 accelerated lineage-risk freeze", () => {
       `${repoRoot}/data/quality/study-readiness/v1/research/` +
         "reviewed-candidate-packets.jsonl",
     ))).toBe(
-      PLAN040_PACKAGE_9_IMMUTABLE_INPUT_PINS.prior_reviewed_packets
-        .artifact,
+      PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.reviewed_candidate_packets,
     );
   });
 

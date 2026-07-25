@@ -8,10 +8,10 @@ import {
   loadMemberExtentAbsenceReceipts,
 } from "../../src/quality/member-extent-ledger";
 import {
-  PLAN040_PACKAGE_14_CONTRACT_EXTENT_HISTOGRAM,
-  PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM,
-  PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM,
-} from "../../src/quality/plan040-accelerated-package14-closeout";
+  PLAN040_PACKAGE_15_CONTRACT_EXTENT_HISTOGRAM,
+  PLAN040_PACKAGE_15_EXTENT_VERDICT_HISTOGRAM,
+  PLAN040_PACKAGE_15_GRAIN_VERDICT_HISTOGRAM,
+} from "../../src/quality/plan040-accelerated-package15-closeout";
 import {
   acceptPlan040Package6ReceiptPackage,
   buildPlan040Package6AcceptedArtifacts,
@@ -948,13 +948,13 @@ describe("Plan 040 QBNR Package 6 accelerated evidence-only freeze", () => {
     expect(extentLedger).toHaveLength(308);
     expect(grainLedger).toHaveLength(308);
     expect(distribution(companion, "extent")).toEqual(
-      PLAN040_PACKAGE_14_CONTRACT_EXTENT_HISTOGRAM,
+      PLAN040_PACKAGE_15_CONTRACT_EXTENT_HISTOGRAM,
     );
     expect(distribution(extentLedger, "verdict")).toEqual(
-      PLAN040_PACKAGE_14_EXTENT_VERDICT_HISTOGRAM,
+      PLAN040_PACKAGE_15_EXTENT_VERDICT_HISTOGRAM,
     );
     expect(distribution(grainLedger, "verdict")).toEqual(
-      PLAN040_PACKAGE_14_GRAIN_VERDICT_HISTOGRAM,
+      PLAN040_PACKAGE_15_GRAIN_VERDICT_HISTOGRAM,
     );
     const companionByKey = new Map(companion.map((row) => [
       extentDecisionKey(row as never),

@@ -56,6 +56,8 @@ import {
   "../src/quality/plan040-qbnr-service-grain-package11-closeout.js";
 import { PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS } from
   "../src/quality/plan040-accelerated-package14-closeout.js";
+import { PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS } from
+  "../src/quality/plan040-accelerated-package15-closeout.js";
 
 const riskRoot = join(
   repoRoot,
@@ -127,17 +129,6 @@ const assertPinned = (relative: string, expected: string): void => {
   const actual = sha256(readFileSync(join(repoRoot, relative)));
   if (actual !== expected) {
     throw new Error(`${relative}: expected ${expected}, got ${actual}`);
-  }
-};
-const assertOneOfPinned = (
-  relative: string,
-  expected: readonly string[],
-): void => {
-  const actual = sha256(readFileSync(join(repoRoot, relative)));
-  if (!expected.includes(actual)) {
-    throw new Error(
-      `${relative}: expected one of ${expected.join(", ")}, got ${actual}`,
-    );
   }
 };
 const assertLargePinned = (relative: string, expected: string): void => {
@@ -287,17 +278,44 @@ const package14Pins: Record<string, string> = {
   "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
     PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS.member_extent_manifest,
 };
+const package15Pins: Record<string, string> = {
+  "data/quality/operational-reference/member-extent-ledger.jsonl":
+    PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.extent_ledger,
+  "data/quality/operational-reference/member-grain-ledger.jsonl":
+    PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.grain_ledger,
+  "data/quality/study-readiness/v1/bridge-ledger.jsonl":
+    PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.bridge_ledger,
+  "data/quality/study-readiness/v1/manifest.json":
+    PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.study_manifest,
+  [
+    "data/contracts/operational-occurrence-member-extent/v1/" +
+      "operational_occurrence_member_extents.jsonl"
+  ]: PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.member_extent_contract,
+  "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
+    PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.member_extent_manifest,
+};
+const initialProjectionPins = Object.fromEntries(
+  pinnedFiles.filter(([path]) => mutablePostPins[path]),
+) as Record<string, string>;
+const acceptedProjectionStates = [
+  ["package_11_input", initialProjectionPins],
+  ["package_11_post_persistence", mutablePostPins],
+  ["package_14_post_persistence", package14Pins],
+  ["package_15_post_persistence", package15Pins],
+] as const;
+const currentProjectionState = acceptedProjectionStates.find(([, pins]) =>
+  Object.entries(pins).every(([path, expected]) =>
+    sha256(readFileSync(join(repoRoot, path))) === expected
+  )
+);
+if (!currentProjectionState) {
+  throw new Error(
+    "Package 11 mutable projections do not match one exact accepted " +
+      "input or successor state",
+  );
+}
 pinnedFiles.forEach(([path, hash]) => {
-  const postPin = mutablePostPins[path];
-  const package14Pin = package14Pins[path];
-  if (postPin) {
-    assertOneOfPinned(path, [
-      hash,
-      postPin,
-      ...(package14Pin ? [package14Pin] : []),
-    ]);
-  }
-  else assertPinned(path, hash);
+  if (!mutablePostPins[path]) assertPinned(path, hash);
 });
 assertLargePinned(
   "raw/sources/mta_bus_schedules_2025_candidate_windows/source.csv",
