@@ -22,8 +22,8 @@ import {
   validatePlan040Package13GateAndAcceptance,
 } from
   "../../src/quality/plan040-qbnr-bus-stop-package13-closeout.js";
-import { PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS } from
-  "../../src/quality/plan040-accelerated-package15-closeout.js";
+import { PLAN041_POST_CLOSURE_PROJECTION_PINS } from
+  "../../src/quality/plan041-projection-successor.js";
 
 const riskRoot =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk`;
@@ -344,25 +344,25 @@ describe("Plan 040 Package 13 gate and owner acceptance", () => {
 
     for (const [relativePath, expected] of Object.entries({
       "data/quality/operational-reference/member-extent-ledger.jsonl":
-        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.extent_ledger,
+        PLAN041_POST_CLOSURE_PROJECTION_PINS.extent_ledger,
       "data/quality/operational-reference/member-grain-ledger.jsonl":
-        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.grain_ledger,
+        PLAN041_POST_CLOSURE_PROJECTION_PINS.grain_ledger,
       "data/quality/study-readiness/v1/bridge-ledger.jsonl":
-        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.bridge_ledger,
+        PLAN041_POST_CLOSURE_PROJECTION_PINS.bridge_ledger,
       "data/quality/study-readiness/v1/bridge-summary.json":
-        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.bridge_summary,
+        PLAN041_POST_CLOSURE_PROJECTION_PINS.bridge_summary,
       "data/quality/study-readiness/v1/consumer-priority-manifest.json":
-        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.consumer_priority_manifest,
+        PLAN041_POST_CLOSURE_PROJECTION_PINS.consumer_priority_manifest,
       "data/quality/study-readiness/v1/manifest.json":
-        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.study_manifest,
+        PLAN041_POST_CLOSURE_PROJECTION_PINS.study_manifest,
       "data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl":
-          PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.member_extent_contract,
+          PLAN041_POST_CLOSURE_PROJECTION_PINS.member_extent_contract,
       "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
-        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.member_extent_manifest,
+        PLAN041_POST_CLOSURE_PROJECTION_PINS.member_extent_manifest,
       "data/contracts/operational-occurrence-member-extent/v1/review-ledger.jsonl":
-        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.member_extent_review_ledger,
+        PLAN041_POST_CLOSURE_PROJECTION_PINS.member_extent_review_ledger,
       "data/contracts/operational-occurrence-member-extent/v1/summary.json":
-        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.member_extent_summary,
+        PLAN041_POST_CLOSURE_PROJECTION_PINS.member_extent_summary,
     })) {
       expect(sha256(readFileSync(`${repoRoot}/${relativePath}`)))
         .toBe(expected);

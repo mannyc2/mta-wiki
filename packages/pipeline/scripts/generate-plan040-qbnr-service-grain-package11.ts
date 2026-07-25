@@ -58,6 +58,8 @@ import { PLAN040_PACKAGE_14_POST_PERSISTENCE_PINS } from
   "../src/quality/plan040-accelerated-package14-closeout.js";
 import { PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS } from
   "../src/quality/plan040-accelerated-package15-closeout.js";
+import { PLAN041_POST_CLOSURE_PROJECTION_PINS } from
+  "../src/quality/plan041-projection-successor.js";
 
 const riskRoot = join(
   repoRoot,
@@ -294,6 +296,22 @@ const package15Pins: Record<string, string> = {
   "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
     PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS.member_extent_manifest,
 };
+const plan041Pins: Record<string, string> = {
+  "data/quality/operational-reference/member-extent-ledger.jsonl":
+    PLAN041_POST_CLOSURE_PROJECTION_PINS.extent_ledger,
+  "data/quality/operational-reference/member-grain-ledger.jsonl":
+    PLAN041_POST_CLOSURE_PROJECTION_PINS.grain_ledger,
+  "data/quality/study-readiness/v1/bridge-ledger.jsonl":
+    PLAN041_POST_CLOSURE_PROJECTION_PINS.bridge_ledger,
+  "data/quality/study-readiness/v1/manifest.json":
+    PLAN041_POST_CLOSURE_PROJECTION_PINS.study_manifest,
+  [
+    "data/contracts/operational-occurrence-member-extent/v1/" +
+      "operational_occurrence_member_extents.jsonl"
+  ]: PLAN041_POST_CLOSURE_PROJECTION_PINS.member_extent_contract,
+  "data/contracts/operational-occurrence-member-extent/v1/manifest.json":
+    PLAN041_POST_CLOSURE_PROJECTION_PINS.member_extent_manifest,
+};
 const initialProjectionPins = Object.fromEntries(
   pinnedFiles.filter(([path]) => mutablePostPins[path]),
 ) as Record<string, string>;
@@ -302,6 +320,7 @@ const acceptedProjectionStates = [
   ["package_11_post_persistence", mutablePostPins],
   ["package_14_post_persistence", package14Pins],
   ["package_15_post_persistence", package15Pins],
+  ["plan_041_post_closure", plan041Pins],
 ] as const;
 const currentProjectionState = acceptedProjectionStates.find(([, pins]) =>
   Object.entries(pins).every(([path, expected]) =>

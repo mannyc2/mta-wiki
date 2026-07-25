@@ -50,6 +50,8 @@ import {
   PLAN040_PACKAGE_15_POSITIVE_COUNT,
   PLAN040_PACKAGE_15_SOURCE_GAP_COUNT,
 } from "./plan040-accelerated-package15.js";
+import { PLAN041_POST_CLOSURE_PROJECTION_PINS } from
+  "./plan041-projection-successor.js";
 
 const RISK_ROOT =
   "data/quality/operational-reference/member-extent-risk";
@@ -260,6 +262,18 @@ const projectionArtifacts = Object.fromEntries(
     },
   ]),
 ) as Record<string, ArtifactRef>;
+const plan041ProjectionArtifacts = Object.fromEntries(
+  Object.entries(projectionPaths).map(([name, path]) => [
+    name,
+    {
+      path,
+      sha256:
+        PLAN041_POST_CLOSURE_PROJECTION_PINS[
+          name as keyof typeof PLAN041_POST_CLOSURE_PROJECTION_PINS
+        ],
+    },
+  ]),
+) as Record<string, ArtifactRef>;
 
 const finalSuiteCounts: TestCounts = {
   pass: 1923,
@@ -311,6 +325,15 @@ function assertPinnedArtifacts(
   }
 }
 
+function pinnedArtifactsMatch(
+  rootDir: string,
+  artifacts: Record<string, ArtifactRef>,
+): boolean {
+  return Object.values(artifacts).every((artifact) =>
+    artifactSha256(rootDir, artifact.path) === artifact.sha256
+  );
+}
+
 function readJsonl(
   rootDir: string,
   path: string,
@@ -351,7 +374,15 @@ export function buildPlan040FinalCheckpoint(
 ): Record<string, unknown> {
   assertPinnedArtifacts(rootDir, PLAN040_FINAL_HISTORICAL_REPLAY_ARTIFACTS);
   assertPinnedArtifacts(rootDir, PLAN040_FINAL_PACKAGE_15_ARTIFACTS);
-  assertPinnedArtifacts(rootDir, projectionArtifacts);
+  if (
+    !pinnedArtifactsMatch(rootDir, projectionArtifacts) &&
+    !pinnedArtifactsMatch(rootDir, plan041ProjectionArtifacts)
+  ) {
+    throw new Error(
+      "Plan 040 final mutable projections do not match its terminal state " +
+      "or the exact Plan 041 provenance-only successor state",
+    );
+  }
 
   const previousBytes = readFileSync(
     resolve(rootDir, PLAN040_PACKAGE_14_CHECKPOINT_PATH),

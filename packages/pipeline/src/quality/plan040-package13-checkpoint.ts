@@ -28,6 +28,8 @@ import {
   PLAN040_PACKAGE_13_COMPARISON_RECEIPT_SHA256,
   PLAN040_PACKAGE_13_SOURCE_GAP_RECEIPT_SHA256,
 } from "./plan040-qbnr-bus-stop-package13.js";
+import { PLAN041_POST_CLOSURE_PROJECTION_PINS } from
+  "./plan041-projection-successor.js";
 
 const RISK_ROOT =
   "data/quality/operational-reference/member-extent-risk";
@@ -220,6 +222,18 @@ const package15ProjectionArtifacts = Object.fromEntries(
     },
   ]),
 ) as Record<string, { path: string; sha256: string }>;
+const plan041ProjectionArtifacts = Object.fromEntries(
+  Object.entries(projectionArtifacts).map(([name, artifact]) => [
+    name,
+    {
+      path: artifact.path,
+      sha256:
+        PLAN041_POST_CLOSURE_PROJECTION_PINS[
+          name as keyof typeof PLAN041_POST_CLOSURE_PROJECTION_PINS
+        ],
+    },
+  ]),
+) as Record<string, { path: string; sha256: string }>;
 
 type TestCounts = {
   pass: number;
@@ -344,7 +358,8 @@ export function buildPlan040Package13Checkpoint(
   assertPinnedArtifacts(rootDir, packageArtifacts);
   if (
     pinnedArtifactsMatch(rootDir, package14ProjectionArtifacts) ||
-    pinnedArtifactsMatch(rootDir, package15ProjectionArtifacts)
+    pinnedArtifactsMatch(rootDir, package15ProjectionArtifacts) ||
+    pinnedArtifactsMatch(rootDir, plan041ProjectionArtifacts)
   ) {
     return readImmutableCheckpointForSuccessorReplay(rootDir);
   }

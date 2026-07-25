@@ -4,10 +4,10 @@ import { describe, expect, it } from "bun:test";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
-import { PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS } from
-  "../../src/quality/plan040-accelerated-package15-closeout";
 import { PLAN040_PACKAGE_13_POST_PERSISTENCE_PINS } from
   "../../src/quality/plan040-qbnr-bus-stop-package13-closeout";
+import { PLAN041_POST_CLOSURE_PROJECTION_PINS } from
+  "../../src/quality/plan041-projection-successor";
 import {
   PLAN040_PACKAGE_12_CHECKPOINT_PATH,
   PLAN040_PACKAGE_12_CHECKPOINT_SHA256,
@@ -279,8 +279,8 @@ describe("Plan 040 Package 13 accepted 31-closure shared-semantics checkpoint", 
         ],
       );
       expect(artifactSha(artifact.path)).toBe(
-        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS[
-          name as keyof typeof PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS
+        PLAN041_POST_CLOSURE_PROJECTION_PINS[
+          name as keyof typeof PLAN041_POST_CLOSURE_PROJECTION_PINS
         ],
       );
     }

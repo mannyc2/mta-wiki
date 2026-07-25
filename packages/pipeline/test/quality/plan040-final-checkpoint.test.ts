@@ -24,6 +24,8 @@ import {
 import {
   PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS,
 } from "../../src/quality/plan040-accelerated-package15-closeout";
+import { PLAN041_POST_CLOSURE_PROJECTION_PINS } from
+  "../../src/quality/plan041-projection-successor";
 
 const checkpointPath = `${repoRoot}/${PLAN040_FINAL_CHECKPOINT_PATH}`;
 const sha256 = (value: Uint8Array | string): string =>
@@ -181,7 +183,11 @@ describe("Plan 040 final transition checkpoint", () => {
           name as keyof typeof PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS
         ],
       );
-      expect(artifactSha(artifact.path)).toBe(artifact.sha256);
+      expect(artifactSha(artifact.path)).toBe(
+        PLAN041_POST_CLOSURE_PROJECTION_PINS[
+          name as keyof typeof PLAN041_POST_CLOSURE_PROJECTION_PINS
+        ],
+      );
     }
   });
 

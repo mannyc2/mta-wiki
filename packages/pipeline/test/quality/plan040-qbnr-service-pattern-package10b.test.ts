@@ -12,8 +12,9 @@ import type {
 import {
   PLAN040_PACKAGE_15_EXTENT_VERDICT_HISTOGRAM,
   PLAN040_PACKAGE_15_GRAIN_VERDICT_HISTOGRAM,
-  PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS,
 } from "../../src/quality/plan040-accelerated-package15-closeout";
+import { PLAN041_POST_CLOSURE_PROJECTION_PINS } from
+  "../../src/quality/plan041-projection-successor";
 import {
   loadMemberExtentAbsenceReceipts,
 } from "../../src/quality/member-extent-ledger";
@@ -1611,8 +1612,8 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     };
     for (const [name, path] of Object.entries(pinnedFiles)) {
       expect(sha256(readFileSync(path))).toBe(
-        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS[
-          name as keyof typeof PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS
+        PLAN041_POST_CLOSURE_PROJECTION_PINS[
+          name as keyof typeof PLAN041_POST_CLOSURE_PROJECTION_PINS
         ],
       );
     }

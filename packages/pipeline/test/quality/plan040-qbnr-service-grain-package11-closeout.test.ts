@@ -19,8 +19,8 @@ import {
   "../../src/quality/plan040-qbnr-service-grain-package11-closeout";
 import type { Plan040Package11Draft } from
   "../../src/quality/plan040-qbnr-service-grain-package11";
-import { PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS } from
-  "../../src/quality/plan040-accelerated-package15-closeout";
+import { PLAN041_POST_CLOSURE_PROJECTION_PINS } from
+  "../../src/quality/plan041-projection-successor";
 
 const root =
   `${repoRoot}/data/quality/operational-reference/member-extent-risk`;
@@ -317,8 +317,8 @@ describe("Plan 040 Package 11 gate and owner acceptance", () => {
     };
     for (const [name, path] of Object.entries(pinnedFiles)) {
       expect(sha256(readFileSync(path))).toBe(
-        PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS[
-          name as keyof typeof PLAN040_PACKAGE_15_POST_PERSISTENCE_PINS
+        PLAN041_POST_CLOSURE_PROJECTION_PINS[
+          name as keyof typeof PLAN041_POST_CLOSURE_PROJECTION_PINS
         ],
       );
     }
