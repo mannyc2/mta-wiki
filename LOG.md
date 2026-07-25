@@ -13,7 +13,7 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   `b47a105dc78501210f2d32e6f597f878203b8cfc35654cebc4de445d575a453c`,
   `383` addressed files, and all `85,396` canonical records. An independent
   frozen-commit recut reproduced the complete release directory byte-for-byte;
-  `LATEST` and the downstream pin remain unchanged.
+  at release cut, `LATEST` and the downstream pin remained unchanged.
 - Published complete non-authorizing closure companions: identity verdicts
   `321 binding_absent_after_search`; member grain `73 resolved / 10
   not_applicable / 165 absent_in_source / 60 blocked_upstream`; and bridge v2
@@ -21,6 +21,12 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
   Later positive admission still requires exact-positive evidence,
   authoritative historical full-stop inventory, and reviewed stop-ID
   equivalence; absence never infers an occurrence.
+- Finalized the repository-local downstream pin from tracker receipt commit
+  `ca61b293` and its verified consumer commit `583c3538`, retaining candidate
+  set `candidate-set-v5:1fadedfcb292deda5179bdf3` and all `695` member-grain
+  verdict rows. The completed pin and regenerated coverage remain
+  non-authorizing for studies, publication, D1/R2 mutation, and deployment;
+  `LATEST` is unchanged.
 
 ## 2026-07-24
 

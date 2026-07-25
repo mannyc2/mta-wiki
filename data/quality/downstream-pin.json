@@ -1,43 +1,181 @@
 {
   "schema_version": 1,
   "consumer": "bus-reliability-tracker",
-  "release_id": "v3-operational-occurrences-1",
-  "manifest_sha256": "01cb22b55b9a7f3acee15f7bfbdd92d1028a44d5b999338346172d0412c190a0",
-  "generator_commit": "c5834836c8e9c7aa0f1e96a12b80b2bf7873ed83",
+  "release_id": "v1-rc28",
+  "manifest_sha256": "b47a105dc78501210f2d32e6f597f878203b8cfc35654cebc4de445d575a453c",
+  "generator_commit": "741ade31ce84498506c77d0adb6b37019fa05f75",
   "contract_versions": {
+    "bus_lane_identity_verdicts": 1,
+    "operational_anchor_review_decisions": 2,
     "operational_anchors": 1,
-    "operational_anchor_review_decisions": 1,
-    "operational_occurrences": 1,
-    "operational_occurrence_review_decisions": 1
+    "operational_occurrence_member_extents": 1,
+    "operational_occurrence_member_grain": 1,
+    "operational_occurrence_review_decisions": 2,
+    "operational_occurrences": 2,
+    "relationship_integrity_bundle": 1,
+    "route_anchors": 1,
+    "route_identity_snapshot": 1
   },
-  "pinned_at": "2026-07-12T15:14:26.000Z",
-  "consumer_commit": "bcbe4c955dc116eda2570db3bf26a55f719e06d2",
+  "consumer_commit": "583c3538ad07c85b8e1d828f5bafa37570af8aa5",
+  "pinned_at": "2026-07-25T06:05:39.101Z",
+  "public_latest_pointer_updated": false,
   "occurrence_artifact": {
-    "path": "data/exports/releases/v3-operational-occurrences-1/operational_occurrences.jsonl",
-    "sha256": "e5212065c32498d758e23c58c908dd56193b42f26f5e4a56616ccbd301b963a4",
-    "bytes": 23946
+    "bytes": 865769,
+    "path": "data/exports/releases/v1-rc28/operational_occurrences.jsonl",
+    "row_count": 131,
+    "sha256": "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef"
+  },
+  "member_extent_artifact": {
+    "bytes": 379210,
+    "path": "data/exports/releases/v1-rc28/member-extent/data/contracts/operational-occurrence-member-extent/v1/operational_occurrence_member_extents.jsonl",
+    "row_count": 308,
+    "sha256": "5ca1ba253a75a577c0e32b249508873d5a5114f2bbb2565dba80e7fa60deab0e"
+  },
+  "member_grain_artifact": {
+    "bytes": 353242,
+    "path": "data/exports/releases/v1-rc28/study-frontier-closure/data/contracts/operational-occurrence-member-grain/v1/operational_occurrence_member_grain.jsonl",
+    "row_count": 308,
+    "sha256": "d5555770fe4b82764f685eb2f2f755d9790a09ad153fd7ace10bb81ae06b7679"
+  },
+  "identity_verdict_artifact": {
+    "bytes": 241856,
+    "path": "data/exports/releases/v1-rc28/study-frontier-closure/data/contracts/bus-lane-identity-verdicts-v1/bus_lane_identity_verdicts.jsonl",
+    "row_count": 321,
+    "sha256": "6f98d0975aeb9e0cc2786db528b6196a5bb1b8ccf8dc880d061245adf6d1434d"
+  },
+  "bridge_v2": {
+    "bytes": 1244111,
+    "candidate_count": 484,
+    "path": "data/exports/releases/v1-rc28/study-frontier-closure/data/quality/study-readiness/v2/bridge-ledger.jsonl",
+    "sha256": "4744dee6e246393460959412e8dbfd7f05ee7a6dd14a1fca408d8a8cf13d988e"
+  },
+  "closure_reconciliation": {
+    "bytes": 151311,
+    "candidate_count": 484,
+    "path": "docs/research/study-frontier-closure-v1-rc28.md",
+    "sha256": "d415cfe4a28bd9e92048ef96ce1f754034bb6c1c18d50d8f56b395b0cfacfb54"
   },
   "consumer_import": {
-    "path": "data/artifacts/studio/v2/wiki/operational-occurrences-v3-operational-occurrences-1.json",
-    "sha256": "411f2ce686dd6d11f389c654b1d6a7b7891fde39ed96546ede991bc8187ed97f",
-    "source_occurrence_count": 4,
-    "eligible_occurrence_count": 3,
-    "route_projection_count": 6
+    "path": "docs/research/reviews/closure-plan-042/artifacts/producer-import.json",
+    "bytes": 2743,
+    "sha256": "48a3ae009995e45396ad81f47af9dcd0984b13250f364c654bba025363f33b7f",
+    "source_occurrence_count": 131,
+    "eligible_occurrence_count": 130,
+    "route_projection_count": 167,
+    "complete_occurrence_route_count": 168
   },
   "candidate_set": {
-    "path": "data/artifacts/studio/v2/studies/study-events-v3-operational-occurrences-1.json",
-    "sha256": "9d62b2923ebff63c7a4fa715a1b3da427d5d87e69d4d19e823637e0bc8340bc7",
-    "candidate_set_id": "candidate-set-v2:bb333220c9cdfbfe592329f8",
-    "candidate_count": 407,
-    "approval_state": "awaiting_approval",
-    "focus_candidate_id": "study-event-v2:8476b86179cbe2ae5d827cd1",
-    "focus_occurrence_id": "occurrence:c5e9aba290ca2be1be6fb38e"
+    "path": "docs/research/reviews/closure-plan-042/artifacts/candidate-set-v5.json",
+    "bytes": 536535,
+    "sha256": "bfc1ab93cc805939459c2d471c6c6cca72f370627385c43f8b46ceb77674e9fe",
+    "candidate_set_id": "candidate-set-v5:1fadedfcb292deda5179bdf3",
+    "candidate_count": 555,
+    "approval_state": "awaiting_outcome_grain_review"
+  },
+  "member_grain_import": {
+    "path": "docs/research/reviews/closure-plan-042/artifacts/member-grain-import.json",
+    "bytes": 457205,
+    "sha256": "e80c5e1b0173e02a4c27919bf82c50e56343903ad75160f426e41d4ae78bdb96",
+    "row_count": 308,
+    "member_extent_projection_sha256": "5ca1ba253a75a577c0e32b249508873d5a5114f2bbb2565dba80e7fa60deab0e"
+  },
+  "extent_binding": {
+    "path": "docs/research/reviews/closure-plan-042/artifacts/extent-segment-bindings.json",
+    "bytes": 62686,
+    "sha256": "c5f0c1499799e15da85e6cb0aa9d17c5fc0385b5890643b7f46f9e21679940dc",
+    "row_count": 48,
+    "disposition_histogram": {
+      "missing_endpoint_stop_id_equivalence": 9,
+      "spine_not_ready": 39
+    }
+  },
+  "grain_verdict": {
+    "path": "docs/research/reviews/closure-plan-042/artifacts/grain-verdict-matrix.json",
+    "bytes": 463013,
+    "sha256": "5b0a411b95cbeca9ea66889dd3d54289235432ecb9a76f7c9e02e256a6d028cc",
+    "row_count": 695,
+    "denominator": {
+      "member_row_count": 308,
+      "no_member_candidate_count": 387,
+      "expected_row_count": 695
+    },
+    "family_by_verdict_histogram": {
+      "automated_bus_lane_enforcement": {
+        "grain_context_only": 4,
+        "grain_matched_primary": 8,
+        "blocked:member_grain_blocked_upstream": 6,
+        "blocked:preserved_prior_rejection": 60
+      },
+      "bus_lane": {
+        "blocked:spine_not_ready": 1,
+        "blocked:missing_endpoint_stop_id_equivalence": 1,
+        "blocked:binding_absent_after_search": 321
+      },
+      "bus_stop_or_boarding": {
+        "blocked:member_grain_blocked_upstream": 13,
+        "blocked:spine_not_ready": 20,
+        "blocked:member_grain_absent_in_source": 70,
+        "blocked:route_lineage_incomparable": 5,
+        "blocked:missing_pinned_stop_grain_coverage": 5
+      },
+      "fare_collection": {
+        "blocked:member_grain_blocked_upstream": 3,
+        "grain_context_only": 14
+      },
+      "route_redesign": {
+        "blocked:spine_not_ready": 1
+      },
+      "service_pattern": {
+        "blocked:member_grain_absent_in_source": 95,
+        "blocked:missing_pinned_service_pattern_product_coverage": 5,
+        "blocked:route_lineage_incomparable": 17,
+        "blocked:member_grain_blocked_upstream": 29,
+        "blocked:spine_not_ready": 11,
+        "grain_context_only": 1,
+        "blocked:missing_endpoint_stop_id_equivalence": 4
+      },
+      "signage_and_markings": {
+        "blocked:missing_pinned_stop_grain_coverage": 1
+      }
+    }
   },
   "review_handoff": {
-    "path": "data/study-event-approvals/reviews/candidate-set-v2-bb333220c9cdfbfe592329f8.review-worksheet.json",
-    "sha256": "6c3841de4f2564ddc84dffed25953aeedf81282ee2974673ccc797ef394d69f9",
-    "status": "review_required",
+    "path": "docs/research/reviews/closure-plan-042/artifacts/review-handoff.json",
+    "bytes": 63125,
+    "sha256": "45946d1a0e515c38c3c481a199428750b9b9c4aca6975c4efd1c7d1c5ac04033",
+    "review_cut_id": "study-review-cut-v2:1ae9e99a8b4c32793b5dbc86",
+    "row_count": 695,
+    "status": "reviewed_authority_false",
     "approval_applied": false
   },
-  "public_latest_pointer_updated": false
+  "acceptance_manifest": {
+    "path": "docs/research/reviews/closure-plan-042/acceptance-manifest.json",
+    "bytes": 56841,
+    "sha256": "05e4f6f00dea8688acbe07c613930541714d7335a3bb6375680fe5cbad09454f",
+    "review_cut_id": "study-review-cut-v2:1ae9e99a8b4c32793b5dbc86",
+    "artifact_count": 11,
+    "package_count": 25
+  },
+  "operator_authorization": {
+    "authorization_id": "mta-wiki-owner-2026-07-22-all-closure-plans",
+    "scope": "internal_analyst_stop_set_admission",
+    "recorded_decision": "versioned_analyst_grain_allowed_only_with_candidate_coverage_and_reviewed_stop_id_lineage",
+    "source_plan": "plans/106-member-grain-outcome-certification.md"
+  },
+  "authority": {
+    "authorizes_study": false,
+    "authorizes_publication": false,
+    "authorizes_d1_r2_mutation": false,
+    "authorizes_deploy": false
+  },
+  "producer_handoff": {
+    "path": "data/quality/study-frontier-closure/plan-041-producer-handoff.json",
+    "sha256": "986dfc18adc7867975c338e960eb99fa808cb585a091073887f744427e471aec"
+  },
+  "consumer_receipt": {
+    "repository": "bus-reliability-tracker",
+    "path": "docs/research/reviews/closure-plan-042/downstream-pin-receipt.json",
+    "sha256": "20a25d4f28851b31e8782e928521cabcf2dcf47ffc74c73ecddbe47476c4afee",
+    "receipt_commit": "ca61b2939ad09db06d4d06a41a78492e6288944c"
+  }
 }

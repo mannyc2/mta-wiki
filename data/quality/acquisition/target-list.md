@@ -3,7 +3,7 @@
 As of: 2026-07-22
 Grace period: 90 day(s) after the forecast interval ends
 Frontier basis fingerprint: `266d7a4abe8769922354a04c30c54f47a23a5bfe4ada14c310084716dae78e8b`
-Artifact fingerprint: `d7c7c670284dd7c92ed4f7dc25d89d9164d5a2dcbca763c0aeedfb199042d748`
+Artifact fingerprint: `5397b04c48b14c6d01887629a92bd441b7ac7fe2d7786835ecf68f01a931ca3e`
 
 Same-subject realized events are review candidates only. Their presence never closes a target.
 Operational-coverage verdicts remain a separate diagnostic layer and never close this acquisition frontier.

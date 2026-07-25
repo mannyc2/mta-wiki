@@ -2,7 +2,7 @@
 
 Frontier as of: 2026-07-22
 Grace period: 90 days
-Frontier artifact fingerprint: `d7c7c670284dd7c92ed4f7dc25d89d9164d5a2dcbca763c0aeedfb199042d748`
+Frontier artifact fingerprint: `5397b04c48b14c6d01887629a92bd441b7ac7fe2d7786835ecf68f01a931ca3e`
 
 This reviewed overlay is advisory and append-only. It does not mutate historical forecasts, operational occurrences, or study authority.
 

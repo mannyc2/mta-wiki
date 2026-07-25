@@ -29,8 +29,8 @@ describe("current forecast-realization acquisition frontier", () => {
   it("recomputes byte-identically and keeps acquisition state independent from terminal study diagnostics", () => {
     const jsonBytes = readFileSync(jsonPath, "utf8");
     const markdownBytes = readFileSync(markdownPath, "utf8");
-    expect(sha256(jsonBytes)).toBe("5178b2a9e7e5db2a8a5c247226d2c7a6c935e0edd69ec0902c3bc07be29a4627");
-    expect(sha256(markdownBytes)).toBe("51126d9ed84d5aa5adb80e604a5705530f11bbd4fc2168dfe39dc81df1720604");
+    expect(sha256(jsonBytes)).toBe("bf602bca25cd40a060ccb449cc087ea1aaf56be5ba756652f6aa7d045cfa0c8e");
+    expect(sha256(markdownBytes)).toBe("cf2c3f88db125fd121d293a2c75b04615ab44f6b074fe0549caa477f6fccb638");
 
     const targetList = JSON.parse(jsonBytes) as ForecastRealizationTargetList;
     expect(targetList.as_of).toBe("2026-07-22");

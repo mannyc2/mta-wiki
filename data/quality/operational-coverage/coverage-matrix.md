@@ -1,6 +1,6 @@
 # Operational coverage matrix
 
-Input fingerprint: `facbb6f41de501103f813b8a313d7fbc049182a70f4372fba9108ec9aea72e60`
+Input fingerprint: `ea90437f6bde0180759626c2b1adf10713cd676a928eaf146ea10c38121f749d`
 Corpus fingerprint: `d608a3372f188808fa45d12a53790ceaaeae4b892a3a340e0124883b6305f589`
 Study window: 2023-04-01 through 2026-12-31
 
@@ -38,8 +38,8 @@ Study window: 2023-04-01 through 2026-12-31
 
 ## Downstream-served layer
 
-- Status: pinned_release_not_present
+- Status: verified
 - Consumer: bus-reliability-tracker
-- Pinned release: v3-operational-occurrences-1
+- Pinned release: v1-rc28
 
 Exclusion and gap histograms overlap; they are not additive funnel attrition.

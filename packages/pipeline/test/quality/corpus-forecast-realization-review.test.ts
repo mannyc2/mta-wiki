@@ -23,9 +23,9 @@ describe("current forecast realization reviewed overlay", () => {
     const overlayBytes = readFileSync(join(reviewDir, FORECAST_REALIZATION_REVIEW_JSONL_FILE), "utf8");
     const manifestBytes = readFileSync(join(reviewDir, FORECAST_REALIZATION_REVIEW_MANIFEST_FILE), "utf8");
     const followUpBytes = readFileSync(join(reviewDir, FORECAST_REALIZATION_REVIEW_FOLLOW_UP_FILE), "utf8");
-    expect(sha256(overlayBytes)).toBe("ebbec691ffd5cdadaf7fbbbad6aa3b070b219a190bcdfafcc3fd164e75f36609");
-    expect(sha256(manifestBytes)).toBe("3d5d59fe236b0e9226f9c9a7fef5c60d0cf0ba12060233ab1a6f8f906daf742b");
-    expect(sha256(followUpBytes)).toBe("55cd3403cbbcca03dad504580e3653a7b3721f87901b20ad482fbc75b34d0f61");
+    expect(sha256(overlayBytes)).toBe("8eff909088863a86d936df5a679ae954334007240bf8f4b924edc929dbb4d053");
+    expect(sha256(manifestBytes)).toBe("670e8c8aeef8c329a6adbcdb7d487aa8e44f155adcbdfa064fbbe5d51527203a");
+    expect(sha256(followUpBytes)).toBe("12009c43d48f650d4f4e3632db557e5af69b8b2a566fc17f9aa24fddc169ffaa");
 
     const targetList = JSON.parse(
       readFileSync(join(repoRoot, "data/quality/acquisition/target-list.json"), "utf8"),
