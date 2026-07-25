@@ -164,6 +164,7 @@ function parseCommand(argv: string[]): ParsedArgs {
     "plan-040-package-10a-accept",
     "plan-040-package-10b-accept",
     "plan-040-package-13-checkpoint",
+    "plan-040-package-14-checkpoint",
     "replay-eval",
     "extract",
     "identity-review",
