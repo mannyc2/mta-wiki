@@ -47,6 +47,9 @@ import {
   writePlan040Package14Checkpoint,
 } from "@mta-wiki/pipeline/quality/plan040-package14-checkpoint";
 import {
+  writePlan040FinalCheckpoint,
+} from "@mta-wiki/pipeline/quality/plan040-final-checkpoint";
+import {
   loadRelationshipCompletenessArtifacts,
   syncRelationshipCompletenessToCanonicalDb,
   writeRelationshipCompletenessArtifacts,
@@ -335,6 +338,16 @@ const plan040Package14Checkpoint: CommandHandler = () => {
   console.log(`SHA-256: ${result.sha256}`);
 };
 
+const plan040FinalCheckpoint: CommandHandler = () => {
+  const check = process.argv.includes("--check");
+  const result = writePlan040FinalCheckpoint({ check });
+  console.log(
+    `Plan 040 final checkpoint ${check ? "verified" : "written"}: ` +
+    `${relative(repoRoot, result.path)}`,
+  );
+  console.log(`SHA-256: ${result.sha256}`);
+};
+
 const busLaneIdentityLedger: CommandHandler = () => {
   const bridgePath = optionValue(process.argv, "--bridge");
   const trackerPath = optionValue(process.argv, "--tracker");
@@ -567,6 +580,7 @@ export const qualityCommands = {
   "plan-040-package-10b-accept": plan040Package10bAccept,
   "plan-040-package-13-checkpoint": plan040Package13Checkpoint,
   "plan-040-package-14-checkpoint": plan040Package14Checkpoint,
+  "plan-040-final-checkpoint": plan040FinalCheckpoint,
   "operational-coverage": operationalCoverage,
   "coverage-matrix": operationalCoverage,
   "forecast-frontier": forecastFrontier,
