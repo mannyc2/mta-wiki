@@ -728,9 +728,14 @@ type StrictSourceGapAcceptance = {
   };
   gate: PinnedArtifactRef;
   authorized_exact_persistence: {
+    decision_candidate_count: number;
+    extent_decision_count: number;
+    extent_resolved_count: number;
     source_gap_overlay_count: number;
     source_gap_candidate_key_sha256: string;
     extent_blocked_upstream_count: number;
+    grain_decision_count: number;
+    grain_resolved_count: number;
     grain_blocked_upstream_count: number;
   };
   verdict_distribution: Record<string, number>;
@@ -1182,7 +1187,7 @@ function parseStrictSourceGapAcceptance(
       `${path}.authorized_exact_persistence.${field}`,
     );
   }
-  for (const field of [
+  const persistenceCounts = Object.fromEntries([
     "decision_candidate_count",
     "extent_blocked_upstream_count",
     "extent_decision_count",
@@ -1191,12 +1196,23 @@ function parseStrictSourceGapAcceptance(
     "grain_decision_count",
     "grain_resolved_count",
     "source_gap_overlay_count",
-  ] as const) {
+  ].map((field) => [
+    field,
     nonnegativeInteger(
       persistence[field],
       `${path}.authorized_exact_persistence.${field}`,
-    );
-  }
+    ),
+  ])) as Record<
+    | "decision_candidate_count"
+    | "extent_blocked_upstream_count"
+    | "extent_decision_count"
+    | "extent_resolved_count"
+    | "grain_blocked_upstream_count"
+    | "grain_decision_count"
+    | "grain_resolved_count"
+    | "source_gap_overlay_count",
+    number
+  >;
   const preservation = object(
     parsed.preservation_invariants,
     `${path}.preservation_invariants`,
@@ -1221,6 +1237,7 @@ function parseStrictSourceGapAcceptance(
       "positive_extent_proposed_grain_blocked" in verdictDistribution
       ? acceptanceVerdictFields
       : compactAcceptanceVerdictFields;
+  const compactAcceptance = verdictFields === compactAcceptanceVerdictFields;
   exactKeys(
     verdictDistribution,
     verdictFields,
@@ -1235,13 +1252,36 @@ function parseStrictSourceGapAcceptance(
       ),
     ]),
   );
+  const candidateCount = nonnegativeInteger(
+    parsed.candidate_count,
+    `${path}.candidate_count`,
+  );
+  if (compactAcceptance) {
+    const positive =
+      decodedVerdictDistribution.positive_extent_and_grain_proposed!;
+    const blocked =
+      decodedVerdictDistribution.source_gap_blocked_extent_and_grain!;
+    const exactAbsence = decodedVerdictDistribution.exact_absence!;
+    if (
+      persistenceCounts.decision_candidate_count !== positive ||
+      persistenceCounts.extent_decision_count !== positive ||
+      persistenceCounts.extent_resolved_count !== positive ||
+      persistenceCounts.grain_decision_count !== positive ||
+      persistenceCounts.grain_resolved_count !== positive ||
+      persistenceCounts.source_gap_overlay_count !== blocked ||
+      persistenceCounts.extent_blocked_upstream_count !== blocked ||
+      persistenceCounts.grain_blocked_upstream_count !== blocked ||
+      candidateCount !== positive + blocked + exactAbsence
+    ) {
+      throw new Error(
+        `${path}: compact acceptance persistence counts do not reconcile`,
+      );
+    }
+  }
   return {
     accepted_at: nonempty(parsed.accepted_at, `${path}.accepted_at`),
     accepted_by: nonempty(parsed.accepted_by, `${path}.accepted_by`),
-    candidate_count: nonnegativeInteger(
-      parsed.candidate_count,
-      `${path}.candidate_count`,
-    ),
+    candidate_count: candidateCount,
     candidate_key_sha256: exactSha256(
       parsed.candidate_key_sha256,
       `${path}.candidate_key_sha256`,
@@ -1255,13 +1295,19 @@ function parseStrictSourceGapAcceptance(
     },
     gate,
     authorized_exact_persistence: {
-      source_gap_overlay_count: persistence.source_gap_overlay_count as number,
+      decision_candidate_count:
+        persistenceCounts.decision_candidate_count,
+      extent_decision_count: persistenceCounts.extent_decision_count,
+      extent_resolved_count: persistenceCounts.extent_resolved_count,
+      source_gap_overlay_count: persistenceCounts.source_gap_overlay_count,
       source_gap_candidate_key_sha256:
         persistence.source_gap_candidate_key_sha256 as string,
       extent_blocked_upstream_count:
-        persistence.extent_blocked_upstream_count as number,
+        persistenceCounts.extent_blocked_upstream_count,
+      grain_decision_count: persistenceCounts.grain_decision_count,
+      grain_resolved_count: persistenceCounts.grain_resolved_count,
       grain_blocked_upstream_count:
-        persistence.grain_blocked_upstream_count as number,
+        persistenceCounts.grain_blocked_upstream_count,
     },
     verdict_distribution: decodedVerdictDistribution,
   };

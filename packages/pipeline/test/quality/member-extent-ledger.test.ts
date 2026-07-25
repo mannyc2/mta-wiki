@@ -404,12 +404,118 @@ function sourceGapFixture(input: SourceGapFixtureInput) {
     comparison,
     receipt,
     evidence,
+    gate,
     acceptance,
     overlay,
   };
 }
 
 type SourceGapFixture = ReturnType<typeof sourceGapFixture>;
+
+function compactLabeledSourceGapFixture(
+  input: SourceGapFixtureInput,
+  positiveCount = 2,
+): SourceGapFixture {
+  const fixture = sourceGapFixture(input);
+  const blockedCount = input.length;
+  const candidateCount = positiveCount + blockedCount;
+  const candidateKeySha256 = sha256(
+    `compact-package:${candidateCount}:${positiveCount}:${blockedCount}\n`,
+  );
+  const receipt = {
+    ...fixture.receipt,
+    frozen_finding_labels_preserved_separately: true,
+    candidates: fixture.receipt.candidates.map((candidate) => ({
+      ...candidate,
+      frozen_finding_verdict:
+        "blocked_upstream:reviewed_human_finding_label",
+    })),
+  };
+  writeStableJson(join(fixture.root, fixture.paths.receipt), receipt);
+  const receiptSha = fileSha256(
+    join(fixture.root, fixture.paths.receipt),
+  );
+  const evidence = {
+    ...fixture.evidence,
+    candidate_count: candidateCount,
+    candidate_key_sha256: candidateKeySha256,
+    source_gap_block_receipt: {
+      ...fixture.evidence.source_gap_block_receipt,
+      sha256: receiptSha,
+    },
+  };
+  writeStableJson(join(fixture.root, fixture.paths.evidence), evidence);
+  const verdictDistribution = {
+    exact_absence: 0,
+    positive_extent_and_grain_proposed: positiveCount,
+    source_gap_blocked_extent_and_grain: blockedCount,
+  };
+  const gate = {
+    ...fixture.gate,
+    candidate_count: candidateCount,
+    candidate_key_sha256: candidateKeySha256,
+    verdict_distribution: verdictDistribution,
+  };
+  writeStableJson(join(fixture.root, fixture.paths.gate), gate);
+  const acceptance = {
+    ...fixture.acceptance,
+    candidate_count: candidateCount,
+    candidate_key_sha256: candidateKeySha256,
+    artifacts: {
+      ...fixture.acceptance.artifacts,
+      evidence: {
+        ...fixture.acceptance.artifacts.evidence,
+        sha256: fileSha256(join(fixture.root, fixture.paths.evidence)),
+      },
+      source_gap_block_receipt: {
+        ...fixture.acceptance.artifacts.source_gap_block_receipt,
+        sha256: receiptSha,
+      },
+    },
+    gate: {
+      ...fixture.acceptance.gate,
+      sha256: fileSha256(join(fixture.root, fixture.paths.gate)),
+    },
+    authorized_exact_persistence: {
+      ...fixture.acceptance.authorized_exact_persistence,
+      decision_candidate_count: positiveCount,
+      extent_blocked_upstream_count: blockedCount,
+      extent_decision_count: positiveCount,
+      extent_resolved_count: positiveCount,
+      grain_blocked_upstream_count: blockedCount,
+      grain_decision_count: positiveCount,
+      grain_resolved_count: positiveCount,
+      source_gap_overlay_count: blockedCount,
+    },
+    verdict_distribution: verdictDistribution,
+  };
+  writeStableJson(
+    join(fixture.root, fixture.paths.acceptance),
+    acceptance,
+  );
+  const overlay = {
+    ...fixture.overlay,
+    source_receipt: {
+      ...fixture.overlay.source_receipt,
+      sha256: receiptSha,
+    },
+    owner_acceptance: {
+      ...fixture.overlay.owner_acceptance,
+      sha256: fileSha256(
+        join(fixture.root, fixture.paths.acceptance),
+      ),
+    },
+  };
+  writeStableJson(join(fixture.root, fixture.paths.overlay), overlay);
+  return {
+    ...fixture,
+    receipt,
+    evidence,
+    gate,
+    acceptance,
+    overlay,
+  } as unknown as SourceGapFixture;
+}
 
 function withoutField(
   value: Record<string, unknown>,
@@ -425,6 +531,7 @@ function rehashSourceGapFixture(
   replacement: {
     comparison?: Record<string, unknown>;
     receipt?: Record<string, unknown>;
+    acceptance?: Record<string, unknown>;
   },
 ): void {
   const comparison = replacement.comparison ?? fixture.comparison;
@@ -455,10 +562,11 @@ function rehashSourceGapFixture(
     },
   };
   writeStableJson(join(fixture.root, fixture.paths.evidence), evidence);
+  const acceptanceInput = replacement.acceptance ?? fixture.acceptance;
   const acceptance = {
-    ...fixture.acceptance,
+    ...acceptanceInput,
     artifacts: {
-      ...fixture.acceptance.artifacts,
+      ...acceptanceInput.artifacts as Record<string, unknown>,
       comparison_receipt: {
         ...fixture.acceptance.artifacts.comparison_receipt,
         sha256: comparisonSha,
@@ -912,6 +1020,109 @@ describe("member extent and grain ledgers", () => {
       [unknownAcceptance.overlayDir],
       unknownAcceptance.root,
     )).toThrow("unknown field(s): forged_unknown_field");
+  });
+
+  it("loads compact acceptance with labeled findings and reconciled counts", () => {
+    const fixture = compactLabeledSourceGapFixture([{
+      target: row("compact-labeled-happy"),
+      surfaces: ["member_extent", "member_grain"],
+      missingRoles: ["candidate_specific_replay", "staged_source_bytes"],
+    }], 2);
+    const overlays = loadMemberSourceGapOverlays(
+      [fixture.overlayDir],
+      fixture.root,
+    );
+    expect(overlays).toEqual([fixture.overlay]);
+    expect(fixture.acceptance.verdict_distribution).toEqual({
+      exact_absence: 0,
+      positive_extent_and_grain_proposed: 2,
+      source_gap_blocked_extent_and_grain: 1,
+    });
+    expect(
+      "positive_extent_proposed_grain_blocked" in
+        fixture.acceptance.verdict_distribution,
+    ).toBeFalse();
+  });
+
+  it("rejects rehashed compact positive and persistence-count drift", () => {
+    const positiveDrift = compactLabeledSourceGapFixture([{
+      target: row("compact-positive-drift"),
+      surfaces: ["member_extent", "member_grain"],
+      missingRoles: ["reference_snapshot"],
+    }], 2);
+    rehashSourceGapFixture(positiveDrift, {
+      acceptance: {
+        ...positiveDrift.acceptance,
+        candidate_count: 4,
+        verdict_distribution: {
+          ...positiveDrift.acceptance.verdict_distribution,
+          positive_extent_and_grain_proposed: 3,
+        },
+      },
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [positiveDrift.overlayDir],
+      positiveDrift.root,
+    )).toThrow("compact acceptance persistence counts do not reconcile");
+
+    const countDrift = compactLabeledSourceGapFixture([{
+      target: row("compact-count-drift"),
+      surfaces: ["member_extent", "member_grain"],
+      missingRoles: ["reference_snapshot"],
+    }], 2);
+    rehashSourceGapFixture(countDrift, {
+      acceptance: {
+        ...countDrift.acceptance,
+        authorized_exact_persistence: {
+          ...countDrift.acceptance.authorized_exact_persistence,
+          grain_resolved_count: 3,
+        },
+      },
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [countDrift.overlayDir],
+      countDrift.root,
+    )).toThrow("compact acceptance persistence counts do not reconcile");
+  });
+
+  it("rejects rehashed labeled-finding and canonical-gap tampering", () => {
+    const labelDrift = compactLabeledSourceGapFixture([{
+      target: row("compact-label-drift"),
+      surfaces: ["member_extent", "member_grain"],
+      missingRoles: ["reference_snapshot"],
+    }]);
+    rehashSourceGapFixture(labelDrift, {
+      receipt: {
+        ...labelDrift.receipt,
+        candidates: labelDrift.receipt.candidates.map((candidate) => ({
+          ...candidate,
+          frozen_finding_verdict: "resolved:forged_human_label",
+        })),
+      },
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [labelDrift.overlayDir],
+      labelDrift.root,
+    )).toThrow("frozen_finding_verdict: expected blocked label");
+
+    const gapDrift = compactLabeledSourceGapFixture([{
+      target: row("compact-gap-drift"),
+      surfaces: ["member_extent", "member_grain"],
+      missingRoles: ["reference_snapshot"],
+    }]);
+    rehashSourceGapFixture(gapDrift, {
+      receipt: {
+        ...gapDrift.receipt,
+        candidates: gapDrift.receipt.candidates.map((candidate) => ({
+          ...candidate,
+          gap_codes: ["forged_canonical_gap"],
+        })),
+      },
+    });
+    expect(() => loadMemberSourceGapOverlays(
+      [gapDrift.overlayDir],
+      gapDrift.root,
+    )).toThrow("prospective_ledger_handling: blocked verdict drifted");
   });
 
   it("rejects forged provenance paths, hashes, and symlinks", () => {
