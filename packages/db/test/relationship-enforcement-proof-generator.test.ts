@@ -1295,6 +1295,43 @@ describe("relationship enforcement proof generator", () => {
     })).toBe(false);
   });
 
+  it("admits only the exact reviewed rc28 release-identity rebind", () => {
+    const receipt = JSON.parse(readFileSync(join(
+      repoRoot,
+      "data/contracts/relationships/v1/enforcement-transition-receipts/7480d7da706b5e2080e3ac6ead9b8dc9e5b50d8e418a4105bceb84f0b712a635.json",
+    ), "utf8")) as RelationshipEnforcementTransitionReceipt;
+    const refreshes = [
+      {
+        role: "occurrence_treatment_physicality_summary",
+        path: "data/quality/relationship-integrity/occurrence-treatment-physicality/summary.json",
+        sha256: "299b1b670fc8b7fd3ae7b321a708ce8301ca5286c4506fff273697ec914f2c67",
+      },
+      {
+        role: "phase_review_summary",
+        path: "data/quality/relationship-integrity/operational-occurrence-phases/summary.json",
+        sha256: "96a24808f84dc0dfa2412f993ce62f2497156a0d96dd951a6a00b5763d4cddb8",
+      },
+      {
+        role: "relationship_completeness_summary",
+        path: "data/quality/relationship-integrity/completeness/summary.json",
+        sha256: "50f4f432130e031f2f22ddd0c2deaef486eafc39735e6af2abc60379525421f3",
+      },
+    ] as const;
+    for (const refresh of refreshes) {
+      const pin = receipt.pre_promotion_sources.find(
+        (source) => source.role === refresh.role,
+      )!;
+      const currentText = readFileSync(join(repoRoot, refresh.path), "utf8");
+      expect(byteSha256(currentText)).toBe(refresh.sha256);
+      expect(isPlan035ReviewedSourceRefresh({ receipt, pin, currentText })).toBe(true);
+      expect(isPlan035ReviewedSourceRefresh({
+        receipt,
+        pin,
+        currentText: `${currentText} `,
+      })).toBe(false);
+    }
+  });
+
   it("rejects an enforcement-eligible graph row even when every summary and hash pin self-attests readiness", () => {
     const matrix = fixtureMatrix();
     const contract = fixtureContract(matrix);

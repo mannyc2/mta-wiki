@@ -1,29 +1,29 @@
 {
   "schema_version": 1,
   "contract_id": "occurrence-treatment-physicality-v1",
-  "release_id": "v1-rc27",
+  "release_id": "v1-rc28",
   "review_stage": "final_post_semantic_release",
   "input_pins": [
     {
-      "path": "data/exports/releases/v1-rc27/operational_occurrences.jsonl",
+      "path": "data/exports/releases/v1-rc28/operational_occurrences.jsonl",
       "bytes": 865769,
       "sha256": "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
       "row_count": 131
     },
     {
-      "path": "data/exports/releases/v1-rc27/treatment_components.jsonl",
+      "path": "data/exports/releases/v1-rc28/treatment_components.jsonl",
       "bytes": 4484742,
       "sha256": "7a766ba1abbbcec88c3151cd2a4e6342ce433e70dbcd5e71dc53fd397e93ecf0",
       "row_count": 2938
     },
     {
-      "path": "data/exports/releases/v1-rc27/relations.jsonl",
+      "path": "data/exports/releases/v1-rc28/relations.jsonl",
       "bytes": 35117554,
       "sha256": "93459fd3c0c1660a85eac1b1e26fe1cfbd7085dc1d3dce4494a8f667b9a7bc06",
       "row_count": 21424
     },
     {
-      "path": "data/exports/releases/v1-rc27/corridors.jsonl",
+      "path": "data/exports/releases/v1-rc28/corridors.jsonl",
       "bytes": 793111,
       "sha256": "03abdeba78a962bf735e6edf937c624cf2c2fe04bcb403822fdd80684152135d",
       "row_count": 227
@@ -31,7 +31,7 @@
     {
       "path": "data/quality/relationship-integrity/completeness/manifest.json",
       "bytes": 7314,
-      "sha256": "a923b0223a3d894673e5a99366b318fa251ec8fc08b3b0b16fb559611cde93f0"
+      "sha256": "70e54f3361e117930a8e6c0b8ea3e722501f60bb41ae70939b192f06d7d2840c"
     },
     {
       "path": "data/quality/relationship-integrity/completeness/occurrence-completeness.jsonl",
@@ -59,13 +59,13 @@
     {
       "path": "data/contracts/occurrence-treatment-physicality/v1/review-retirement-receipt.json",
       "bytes": 3616,
-      "sha256": "cee8560fafd0cdffba24e73976303e8dc1a0a1bd2255c7a4ed05b9aa1718709b"
+      "sha256": "1eef811403f57a20fcfd45d706d1cb31f808d72143ad13348d867ebbe534642f"
     },
     {
       "retirement_id": "q6-q06-current-ineligible-2026-07-18",
       "accepted_by": "MTA Wiki owner (Codex task 019f7640-fd5c-7be2-8a40-a7c264284c0f)",
       "accepted_at": "2026-07-18T21:14:54Z",
-      "path": "data/exports/releases/v1-rc27/review-retirements/source/q6-q06-current-ineligible-2026-07-18.json",
+      "path": "data/exports/releases/v1-rc28/review-retirements/source/q6-q06-current-ineligible-2026-07-18.json",
       "bytes": 2297,
       "sha256": "b05146bc8a7ad2d75692f457402fe435c6918a1e022b8e4d0abc0530720487bb"
     },
@@ -73,7 +73,7 @@
       "retirement_id": "q7-q07-current-ineligible-2026-07-18",
       "accepted_by": "MTA Wiki owner (Codex task 019f7640-fd5c-7be2-8a40-a7c264284c0f)",
       "accepted_at": "2026-07-18T21:14:54Z",
-      "path": "data/exports/releases/v1-rc27/review-retirements/source/q7-q07-current-ineligible-2026-07-18.json",
+      "path": "data/exports/releases/v1-rc28/review-retirements/source/q7-q07-current-ineligible-2026-07-18.json",
       "bytes": 1928,
       "sha256": "e661f065ab60bf44ac2dbe3f65b46cb50c6c9548b5e6e61a3fb91e361869681a"
     },
@@ -81,7 +81,7 @@
       "retirement_id": "q8-q08-current-ineligible-2026-07-18",
       "accepted_by": "MTA Wiki owner (Codex task 019f7640-fd5c-7be2-8a40-a7c264284c0f)",
       "accepted_at": "2026-07-18T21:14:54Z",
-      "path": "data/exports/releases/v1-rc27/review-retirements/source/q8-q08-current-ineligible-2026-07-18.json",
+      "path": "data/exports/releases/v1-rc28/review-retirements/source/q8-q08-current-ineligible-2026-07-18.json",
       "bytes": 1944,
       "sha256": "f4fdfcead32256bf9b49ec02f6c8a35a223724cf47673525a9104b998d7910f2"
     },
@@ -89,14 +89,14 @@
       "retirement_id": "q9-q09-current-ineligible-2026-07-18",
       "accepted_by": "MTA Wiki owner (Codex task 019f7640-fd5c-7be2-8a40-a7c264284c0f)",
       "accepted_at": "2026-07-18T21:14:54Z",
-      "path": "data/exports/releases/v1-rc27/review-retirements/source/q9-q09-current-ineligible-2026-07-18.json",
+      "path": "data/exports/releases/v1-rc28/review-retirements/source/q9-q09-current-ineligible-2026-07-18.json",
       "bytes": 1929,
       "sha256": "6293121b708d8956ab0fc254cfd86dd4e88f8fac5f8ae5c5879064092cd4b114"
     },
     {
       "path": "data/contracts/occurrence-treatment-physicality/v1/contract.json",
       "bytes": 3881,
-      "sha256": "7e29d28c614483b6f6c2ad1833584defc6ec2ef55371546e1d57121bc81c4b03"
+      "sha256": "808cb8ab0e64290a4c0e53f67abe8ee1c3ed9a7ef6ec6a068c17041e483c371f"
     }
   ],
   "files": {
@@ -115,12 +115,12 @@
     "report.md": {
       "path": "data/quality/relationship-integrity/occurrence-treatment-physicality/report.md",
       "bytes": 2531,
-      "sha256": "2800d7c02f9974e4fd4781a613c3b90b6ea0f58e1541b4ae2a0ce9969ea8c592"
+      "sha256": "dfa746eb91597e8a6861fcd260dd5b4c86724bf0659504306acf653b9c2aed22"
     },
     "summary.json": {
       "path": "data/quality/relationship-integrity/occurrence-treatment-physicality/summary.json",
       "bytes": 2696,
-      "sha256": "378a8ab99533ecc5222fb26f5e6b9ad6ccd00e0042a39e343bb4c1fd9b42cee1"
+      "sha256": "299b1b670fc8b7fd3ae7b321a708ce8301ca5286c4506fff273697ec914f2c67"
     },
     "treatment-audit.jsonl": {
       "path": "data/quality/relationship-integrity/occurrence-treatment-physicality/treatment-audit.jsonl",
@@ -129,5 +129,5 @@
       "row_count": 269
     }
   },
-  "audit_fingerprint": "6ce1bf61562512944983b9d3db0735fd2eadbfde73d574159f6ecb36b8ca2a46"
+  "audit_fingerprint": "3bc84dfb822944ba63ff568630f5711de7e8c2831ffbdd82e1253acc3f6af9ec"
 }

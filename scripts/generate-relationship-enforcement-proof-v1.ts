@@ -342,6 +342,34 @@ const RC27_REVIEWED_SOURCE_REFRESHES = [
     reconciled_sha256:
       "336406b0da1b6ecd5a4baf5006c7e85e933219c038467b8aa4835e8887aec01b",
   },
+  // v1-rc28 again preserves the canonical and operational occurrence bytes.
+  // These exact reviewed hashes only rebind the same zero-warning physicality,
+  // phase, and completeness denominators to the new immutable release identity;
+  // no selector, finding, or review decision changes.
+  {
+    role: "occurrence_treatment_physicality_summary",
+    path: "data/quality/relationship-integrity/occurrence-treatment-physicality/summary.json",
+    previous_sha256:
+      "976959ba8fd399d50d76d2289affb71a1511d69afcab32f3ca05233fc0f33444",
+    reconciled_sha256:
+      "299b1b670fc8b7fd3ae7b321a708ce8301ca5286c4506fff273697ec914f2c67",
+  },
+  {
+    role: "phase_review_summary",
+    path: "data/quality/relationship-integrity/operational-occurrence-phases/summary.json",
+    previous_sha256:
+      "53c33806f17338945863e6798eb584107d631a78bcd5b9fc87640191f2f5fc05",
+    reconciled_sha256:
+      "96a24808f84dc0dfa2412f993ce62f2497156a0d96dd951a6a00b5763d4cddb8",
+  },
+  {
+    role: "relationship_completeness_summary",
+    path: "data/quality/relationship-integrity/completeness/summary.json",
+    previous_sha256:
+      "898ce9417d5c2c8e631224fd29dcd5071792e51e182205710ff1831245340cd8",
+    reconciled_sha256:
+      "50f4f432130e031f2f22ddd0c2deaef486eafc39735e6af2abc60379525421f3",
+  },
 ] as const;
 const REQUIRED_COMMAND_IDS = [
   "architecture",
@@ -3155,6 +3183,10 @@ function validateSnapshotRelease(
     operational_occurrence_member_extents: null,
     quality_provenance: null,
     route_identity_snapshot: null,
+    bus_lane_identity_verdicts: null,
+    operational_occurrence_member_grain: null,
+    study_readiness_v2: null,
+    frontier_exceptions: null,
   };
   assert(
     stableJson(manifest.pointers as unknown as JsonValue) ===

@@ -4,15 +4,15 @@
   "generated_at": "2026-07-16T06:00:00.000Z",
   "generated_by": "codex-operational-occurrence-phase-integrity-review",
   "route_anchor_release": {
-    "release_id": "v1-rc27",
+    "release_id": "v1-rc28",
     "route_anchors": {
-      "path": "data/exports/releases/v1-rc27/route_anchors.jsonl",
+      "path": "data/exports/releases/v1-rc28/route_anchors.jsonl",
       "bytes": 101876,
       "sha256": "aaf8bb1532587c2aea188a7f7cc84a358b5a0a49106a07282fd6c5d05cfdc222",
       "row_count": 520
     },
     "operational_occurrences": {
-      "path": "data/exports/releases/v1-rc27/operational_occurrences.jsonl",
+      "path": "data/exports/releases/v1-rc28/operational_occurrences.jsonl",
       "bytes": 865769,
       "sha256": "6cb8654efee370d7444405ce3a0cdb8ce6fa394e6ada2347982cbec49df701ef",
       "row_count": 131
@@ -97,13 +97,13 @@
     "data/quality/relationship-integrity/operational-occurrence-phases/summary.json": {
       "path": "data/quality/relationship-integrity/operational-occurrence-phases/summary.json",
       "bytes": 1806,
-      "sha256": "fa68438f7b1fa0fdef74d12f749ef1c9a8a82f4c7c02e8af1d1125c6d2825d1e"
+      "sha256": "96a24808f84dc0dfa2412f993ce62f2497156a0d96dd951a6a00b5763d4cddb8"
     },
     "data/quality/relationship-integrity/operational-occurrence-phases/report.md": {
       "path": "data/quality/relationship-integrity/operational-occurrence-phases/report.md",
       "bytes": 1888,
-      "sha256": "1144846df5ebba1ca76cd541a64ea232d798e3ba71aaa1aeaf7bf3354b77f12a"
+      "sha256": "6b57f868671f9cd8d397aa8aabf35665c0dfc4ef5a2a3934184de9fc2cfa9dd3"
     }
   },
-  "reproduction_command": "bun scripts/generate-operational-occurrence-phase-review-v1.ts --check --route-anchor-release-dir data/exports/releases/v1-rc27"
+  "reproduction_command": "bun scripts/generate-operational-occurrence-phase-review-v1.ts --check --route-anchor-release-dir data/exports/releases/v1-rc28"
 }

@@ -592,11 +592,8 @@ describe("relationship completeness audit", () => {
 
   it("fails closed when the immutable physicality contract or review-ledger pin drifts", () => {
     const contractPath = "data/contracts/occurrence-treatment-physicality/v1/contract.json";
-    const releaseId = "v1-rc27";
-    const namedReleaseDir = "data/exports/releases/v1-rc27";
-    const candidateReleaseDir = existsSync(join(repoRoot, namedReleaseDir))
-      ? namedReleaseDir
-      : "data/exports/releases/.v1-rc27-completeness-input.treatment-semantics-v1/v1-rc27";
+    const releaseId = "v1-rc28";
+    const candidateReleaseDir = "data/exports/releases/v1-rc27";
     const loaded = loadOccurrenceTreatmentPhysicalityContract({
       rootDir: repoRoot,
       contractPath,
@@ -611,13 +608,13 @@ describe("relationship completeness audit", () => {
     expect(() => loadOccurrenceTreatmentPhysicalityContract({
       rootDir: repoRoot,
       contractPath,
-      releaseId: "v1-rc26",
+      releaseId: "v1-rc27",
       releaseSnapshotSourceDir: join(repoRoot, candidateReleaseDir),
-    })).toThrow("does not match completeness release v1-rc26");
+    })).toThrow("does not match completeness release v1-rc27");
     expect(loadOccurrenceTreatmentPhysicalityContract({
       rootDir: repoRoot,
       contractPath,
-      releaseId: "v1-rc26",
+      releaseId: "v1-rc27",
       releaseSnapshotSourceDir: join(repoRoot, candidateReleaseDir),
       allowByteIdenticalReviewedReleaseAlias: true,
     })).toMatchObject({ contract_status: "reviewed_final" });
@@ -1289,14 +1286,12 @@ describe("relationship completeness audit", () => {
     }
   });
 
-  it("reproduces the current rc27 zero-warning completeness and retirement-closed physicality review", () => {
+  it("reproduces the byte-identical rc27 baseline under the rc28 physicality rebind", () => {
     const namedReleaseDir = "data/exports/releases/v1-rc27";
-    const releaseSourceDir = existsSync(join(repoRoot, namedReleaseDir))
-      ? namedReleaseDir
-      : "data/exports/releases/.v1-rc27-completeness-input.treatment-semantics-v1/v1-rc27";
     const build = loadRelationshipCompletenessArtifacts({
       releaseDir: namedReleaseDir,
-      ...(releaseSourceDir === namedReleaseDir ? {} : { releaseSourceDir }),
+      releaseSourceDir: namedReleaseDir,
+      allowByteIdenticalPhysicalityBootstrap: true,
     });
     expect(build.summary.occurrences).toMatchObject({
       release_occurrence_count: 131,
@@ -1544,7 +1539,7 @@ describe("relationship completeness audit", () => {
         {
           path: "data/contracts/occurrence-treatment-physicality/v1/contract.json",
           bytes: 3881,
-          sha256: "7e29d28c614483b6f6c2ad1833584defc6ec2ef55371546e1d57121bc81c4b03",
+          sha256: "808cb8ab0e64290a4c0e53f67abe8ee1c3ed9a7ef6ec6a068c17041e483c371f",
         },
         {
           path: "data/contracts/occurrence-treatment-physicality/v1/policy.json",
@@ -1566,7 +1561,7 @@ describe("relationship completeness audit", () => {
         {
           path: "data/contracts/occurrence-treatment-physicality/v1/review-retirement-receipt.json",
           bytes: 3616,
-          sha256: "cee8560fafd0cdffba24e73976303e8dc1a0a1bd2255c7a4ed05b9aa1718709b",
+          sha256: "1eef811403f57a20fcfd45d706d1cb31f808d72143ad13348d867ebbe534642f",
         },
       ]);
     for (const [name, metadata] of Object.entries(build.manifest.files)) {
