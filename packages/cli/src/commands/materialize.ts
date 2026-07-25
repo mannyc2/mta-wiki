@@ -277,6 +277,7 @@ export const materializeCommands = {
       gtfsSnapshotId: optionValue(process.argv, "--gtfs-snapshot"),
       outputRoot: optionValue(process.argv, "--output-root"),
       relationshipCompletenessStaging,
+      allowOpenFrontier: process.argv.includes("--allow-open-frontier"),
       ...(relationshipCompletenessStaging
         ? { relationshipIntegrityBundleDescriptor: null }
         : {}),

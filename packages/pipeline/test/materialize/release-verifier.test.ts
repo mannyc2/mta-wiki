@@ -11,7 +11,7 @@ const root = mkdtempSync(join(tmpdir(), "release-verifier-"));
 const decisions = join(root, "decisions");
 const release = (id: string) => join(root, "data", "exports", "releases", id);
 const digest = (bytes: Buffer) => createHash("sha256").update(bytes).digest("hex");
-beforeAll(() => { mkdirSync(decisions, { recursive: true }); exportRelease("baseline", { rootDir: root, records: [], gtfsRoutes: [], routeAnchorOverrides: {}, reviewedNonGtfsRouteDispositions: {}, operationalAnchorReviewDecisionDir: decisions, operationalOccurrenceReviewDecisionDir: decisions, operationalOccurrenceIdentityRegistry: [], relationshipIntegrityBundleDescriptor: null }); });
+beforeAll(() => { mkdirSync(decisions, { recursive: true }); exportRelease("baseline", { rootDir: root, records: [], gtfsRoutes: [], routeAnchorOverrides: {}, reviewedNonGtfsRouteDispositions: {}, operationalAnchorReviewDecisionDir: decisions, operationalOccurrenceReviewDecisionDir: decisions, operationalOccurrenceIdentityRegistry: [], relationshipIntegrityBundleDescriptor: null, allowOpenFrontier: true }); });
 afterAll(() => rmSync(root, { recursive: true, force: true }));
 function clone(id: string): string { const path = release(id); cpSync(release("baseline"), path, { recursive: true }); const manifestPath = join(path, "manifest.json"); const manifest = JSON.parse(readFileSync(manifestPath, "utf8")); manifest.release_id = id; writeFileSync(manifestPath, `${JSON.stringify(manifest)}\n`); return path; }
 function editManifest(path: string, edit: (manifest: any) => void): void { const file = join(path, "manifest.json"); const manifest = JSON.parse(readFileSync(file, "utf8")); edit(manifest); writeFileSync(file, `${JSON.stringify(manifest)}\n`); }

@@ -83,9 +83,12 @@ import {
   routeTreatmentScopeSummaryJson,
 } from "@mta-wiki/pipeline/materialize/route-treatment-scopes";
 import {
+  BUS_LANE_IDENTITY_VERDICT_SCHEMA_VERSION,
   OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION,
+  OPERATIONAL_OCCURRENCE_MEMBER_GRAIN_SCHEMA_VERSION,
   stageReleaseCompanions,
 } from "@mta-wiki/pipeline/materialize/release-companions";
+import { runStudyFrontierPreflight } from "@mta-wiki/pipeline/quality/study-frontier-preflight";
 
 export type ReleaseManifestFile = {
   bytes: number;
@@ -93,7 +96,7 @@ export type ReleaseManifestFile = {
 };
 
 export type ReleaseManifest = {
-  manifest_version: 1 | 2 | 3 | 4 | 5;
+  manifest_version: 1 | 2 | 3 | 4 | 5 | 6;
   release_id: string;
   generator_commit: string;
   contract_versions: {
@@ -103,6 +106,8 @@ export type ReleaseManifest = {
     operational_occurrence_review_decisions?: 1 | 2 | undefined;
     relationship_integrity_bundle?: typeof RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION | undefined;
     operational_occurrence_member_extents?: typeof OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION | undefined;
+    bus_lane_identity_verdicts?: typeof BUS_LANE_IDENTITY_VERDICT_SCHEMA_VERSION | undefined;
+    operational_occurrence_member_grain?: typeof OPERATIONAL_OCCURRENCE_MEMBER_GRAIN_SCHEMA_VERSION | undefined;
     route_anchors?: 1 | undefined;
     route_identity_snapshot?: 1 | undefined;
   };
@@ -122,6 +127,10 @@ export type ReleaseManifest = {
     operational_occurrence_member_extents?: string | null | undefined;
     quality_provenance?: string | null | undefined;
     route_identity_snapshot?: string | null | undefined;
+    bus_lane_identity_verdicts?: string | null | undefined;
+    operational_occurrence_member_grain?: string | null | undefined;
+    study_readiness_v2?: string | null | undefined;
+    frontier_exceptions?: string | null | undefined;
   };
 };
 
@@ -179,8 +188,8 @@ function assertManifestKeys(object: Record<string, unknown>, allowed: readonly s
 export function parseReleaseManifest(value: unknown): ReleaseManifest {
   const root = manifestObject(value, "$root");
   const version = root.manifest_version === undefined ? 1 : root.manifest_version;
-  if (version !== 1 && version !== 2 && version !== 3 && version !== 4 && version !== 5) {
-    throw new Error("Invalid release manifest manifest_version: expected 1, 2, 3, 4, or 5");
+  if (version !== 1 && version !== 2 && version !== 3 && version !== 4 && version !== 5 && version !== 6) {
+    throw new Error("Invalid release manifest manifest_version: expected 1, 2, 3, 4, 5, or 6");
   }
   assertManifestKeys(
     root,
@@ -250,8 +259,20 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
               "taxonomy",
               "quality_report",
               "relationship_integrity_bundle",
-              ...(version === 5
-                ? ["route_identity_snapshot", "operational_occurrence_member_extents", "quality_provenance"]
+              ...(version >= 5
+                ? [
+                    "route_identity_snapshot",
+                    "operational_occurrence_member_extents",
+                    "quality_provenance",
+                    ...(version === 6
+                      ? [
+                          "bus_lane_identity_verdicts",
+                          "operational_occurrence_member_grain",
+                          "study_readiness_v2",
+                          "frontier_exceptions",
+                        ]
+                      : []),
+                  ]
                 : []),
             ],
     "pointers",
@@ -316,8 +337,18 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
               "operational_occurrences",
               "operational_occurrence_review_decisions",
               "relationship_integrity_bundle",
-              ...(version === 5
-                ? ["route_anchors", "route_identity_snapshot", "operational_occurrence_member_extents"]
+              ...(version >= 5
+                ? [
+                    "route_anchors",
+                    "route_identity_snapshot",
+                    "operational_occurrence_member_extents",
+                    ...(version === 6
+                      ? [
+                          "bus_lane_identity_verdicts",
+                          "operational_occurrence_member_grain",
+                        ]
+                      : []),
+                  ]
                 : []),
             ],
       "contract_versions",
@@ -328,10 +359,10 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
     contracts.operational_anchors = OPERATIONAL_ANCHOR_SCHEMA_VERSION;
     if (
       input.operational_anchor_review_decisions !== OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_VERSION &&
-      (version !== 5 || input.operational_anchor_review_decisions !== OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_V2_VERSION)
+      (version < 5 || input.operational_anchor_review_decisions !== OPERATIONAL_ANCHOR_REVIEW_SNAPSHOT_V2_VERSION)
     ) {
       throw new Error(
-        `Invalid release manifest contract_versions.operational_anchor_review_decisions: expected 1${version === 5 ? " or 2" : ""}`,
+          `Invalid release manifest contract_versions.operational_anchor_review_decisions: expected 1${version >= 5 ? " or 2" : ""}`,
       );
     }
     contracts.operational_anchor_review_decisions = input.operational_anchor_review_decisions;
@@ -344,15 +375,15 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
       contracts.operational_occurrences = input.operational_occurrences;
       if (
         input.operational_occurrence_review_decisions !== OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_VERSION &&
-        (version !== 5 || input.operational_occurrence_review_decisions !== OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_V2_VERSION)
+        (version < 5 || input.operational_occurrence_review_decisions !== OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_V2_VERSION)
       ) {
         throw new Error(
-          `Invalid release manifest contract_versions.operational_occurrence_review_decisions: expected 1${version === 5 ? " or 2" : ""}`,
+          `Invalid release manifest contract_versions.operational_occurrence_review_decisions: expected 1${version >= 5 ? " or 2" : ""}`,
         );
       }
       contracts.operational_occurrence_review_decisions = input.operational_occurrence_review_decisions;
       if (
-        version === 5 &&
+        version >= 5 &&
         contracts.operational_anchor_review_decisions !==
           contracts.operational_occurrence_review_decisions
       ) {
@@ -368,7 +399,7 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
         }
         contracts.relationship_integrity_bundle = RELATIONSHIP_RELEASE_BUNDLE_SCHEMA_VERSION;
       }
-      if (version === 5) {
+      if (version >= 5) {
         if (input.route_anchors !== 1 || input.route_identity_snapshot !== 1) throw new Error("Invalid release manifest route contract versions: expected route_anchors and route_identity_snapshot");
         contracts.route_anchors = 1; contracts.route_identity_snapshot = 1;
         if (
@@ -381,6 +412,22 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
         }
         if (input.operational_occurrence_member_extents === OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION) {
           contracts.operational_occurrence_member_extents = OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION;
+        }
+        if (version === 6) {
+          if (
+            input.bus_lane_identity_verdicts !==
+              BUS_LANE_IDENTITY_VERDICT_SCHEMA_VERSION ||
+            input.operational_occurrence_member_grain !==
+              OPERATIONAL_OCCURRENCE_MEMBER_GRAIN_SCHEMA_VERSION
+          ) {
+            throw new Error(
+              "Invalid release manifest closure companion contract versions: expected v1",
+            );
+          }
+          contracts.bus_lane_identity_verdicts =
+            BUS_LANE_IDENTITY_VERDICT_SCHEMA_VERSION;
+          contracts.operational_occurrence_member_grain =
+            OPERATIONAL_OCCURRENCE_MEMBER_GRAIN_SCHEMA_VERSION;
         }
       }
     }
@@ -412,7 +459,7 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
             )
           : null,
       operational_occurrence_member_extents:
-        version === 5 && contracts.operational_occurrence_member_extents !== undefined
+        version >= 5 && contracts.operational_occurrence_member_extents !== undefined
           ? manifestAddressedPointer(
               pointersInput.operational_occurrence_member_extents,
               "pointers.operational_occurrence_member_extents",
@@ -422,14 +469,42 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
             ? null
             : (() => { throw new Error("Invalid release manifest pointers.operational_occurrence_member_extents: contract version is missing"); })(),
       quality_provenance:
-        version === 5 && pointersInput.quality_provenance !== undefined
+        version >= 5 && pointersInput.quality_provenance !== undefined
           ? manifestAddressedPointer(
               pointersInput.quality_provenance,
               "pointers.quality_provenance",
               files,
             )
           : null,
-      route_identity_snapshot: version === 5 ? manifestAddressedPointer(pointersInput.route_identity_snapshot, "pointers.route_identity_snapshot", files) : null,
+      route_identity_snapshot: version >= 5 ? manifestAddressedPointer(pointersInput.route_identity_snapshot, "pointers.route_identity_snapshot", files) : null,
+      bus_lane_identity_verdicts: version === 6
+        ? manifestAddressedPointer(
+            pointersInput.bus_lane_identity_verdicts,
+            "pointers.bus_lane_identity_verdicts",
+            files,
+          )
+        : null,
+      operational_occurrence_member_grain: version === 6
+        ? manifestAddressedPointer(
+            pointersInput.operational_occurrence_member_grain,
+            "pointers.operational_occurrence_member_grain",
+            files,
+          )
+        : null,
+      study_readiness_v2: version === 6
+        ? manifestAddressedPointer(
+            pointersInput.study_readiness_v2,
+            "pointers.study_readiness_v2",
+            files,
+          )
+        : null,
+      frontier_exceptions: version === 6
+        ? manifestAddressedPointer(
+            pointersInput.frontier_exceptions,
+            "pointers.frontier_exceptions",
+            files,
+          )
+        : null,
     },
   };
 }
@@ -460,6 +535,7 @@ export type ReleaseExportOptions = {
   relationshipIntegrityBundleDescriptor?: string | null | undefined;
   treatmentSemanticContractPath?: string | null | undefined;
   relationshipCompletenessStaging?: boolean | undefined;
+  allowOpenFrontier?: boolean | undefined;
 };
 
 function recordJson(record: MtaCanonicalRecord): string {
@@ -588,6 +664,24 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   const targetDir = join(releasesDir, releaseId);
   if (existsSync(targetDir)) {
     throw new Error("Release " + releaseId + " already exists; choose a new immutable ID");
+  }
+  let frontierGate: { status: "closed" | "bypassed"; reason?: string };
+  try {
+    runStudyFrontierPreflight({ rootDir });
+    frontierGate = { status: "closed" };
+  } catch (error) {
+    if (!opts.allowOpenFrontier) {
+      throw new Error(
+        `Release export refused by study-frontier preflight: ${
+          error instanceof Error ? error.message : String(error)
+        }`,
+      );
+    }
+    frontierGate = {
+      status: "bypassed",
+      reason: (error instanceof Error ? error.message : String(error))
+        .split(resolve(rootDir)).join("<root>"),
+    };
   }
 
   const records = opts.records ?? readCanonicalRecords();
@@ -885,17 +979,40 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
     }
   }
 
-  const companions = stageReleaseCompanions(rootDir, dir, releaseId, generatorCommit);
+  const companions = stageReleaseCompanions(
+    rootDir,
+    dir,
+    releaseId,
+    generatorCommit,
+    frontierGate,
+  );
   for (const file of companions.files) {
     fileEntries.push([file.path, { bytes: file.bytes, sha256: file.sha256 }]);
   }
 
-  const manifestVersion = routeIdentitySnapshotPath ? 5 : relationshipBundle ? 4 : 3;
+  const hasClosureCompanions =
+    companions.identity_verdict_manifest_path !== null ||
+    companions.member_grain_manifest_path !== null ||
+    companions.study_readiness_v2_manifest_path !== null;
   if (
-    manifestVersion !== 5 &&
+    hasClosureCompanions &&
+    (
+      companions.identity_verdict_manifest_path === null ||
+      companions.member_grain_manifest_path === null ||
+      companions.study_readiness_v2_manifest_path === null ||
+      companions.frontier_exceptions_path === null
+    )
+  ) {
+    throw new Error("Closure release requires all v2/identity/grain/exception roles");
+  }
+  const manifestVersion = hasClosureCompanions
+    ? 6
+    : routeIdentitySnapshotPath ? 5 : relationshipBundle ? 4 : 3;
+  if (
+    manifestVersion < 5 &&
     (companions.member_extent_manifest_path !== null || companions.quality_provenance_path !== null)
   ) {
-    throw new Error("Release companions require a manifest-v5 route identity snapshot");
+    throw new Error("Release companions require a manifest-v5+ route identity snapshot");
   }
   const manifest: ReleaseManifest = {
     manifest_version: manifestVersion,
@@ -916,6 +1033,14 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
         : {}),
       ...(companions.member_extent_manifest_path
         ? { operational_occurrence_member_extents: OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION }
+        : {}),
+      ...(hasClosureCompanions
+        ? {
+            bus_lane_identity_verdicts:
+              BUS_LANE_IDENTITY_VERDICT_SCHEMA_VERSION,
+            operational_occurrence_member_grain:
+              OPERATIONAL_OCCURRENCE_MEMBER_GRAIN_SCHEMA_VERSION,
+          }
         : {}),
     },
     record_counts: sortedObject(countEntries),
@@ -939,6 +1064,18 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
         : {}),
       ...(companions.quality_provenance_path
         ? { quality_provenance: companions.quality_provenance_path }
+        : {}),
+      ...(hasClosureCompanions
+        ? {
+            bus_lane_identity_verdicts:
+              companions.identity_verdict_manifest_path!,
+            operational_occurrence_member_grain:
+              companions.member_grain_manifest_path!,
+            study_readiness_v2:
+              companions.study_readiness_v2_manifest_path!,
+            frontier_exceptions:
+              companions.frontier_exceptions_path!,
+          }
         : {}),
     },
   };

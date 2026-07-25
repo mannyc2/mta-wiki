@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "contract_id": "full-suite-baseline-signature-v1",
+  "source_checkpoint": {
+    "path": "data/quality/operational-reference/member-extent-risk/plan-040-final-checkpoint-v1.json",
+    "sha256": "33ba121bed1d4e5ade57983ccadfff0d1b6099c1e87a653237673cb7871c5594"
+  },
+  "command": "bun run test",
+  "runner": "bun test v1.3.14 (0d9b296a)",
+  "status": "matches_known_missing_corpus_baseline",
+  "counts": {
+    "test_file_count": 168,
+    "test_count": 1933,
+    "pass": 1923,
+    "fail": 9,
+    "skip": 1,
+    "error": 1,
+    "expect_call_count": 613830
+  },
+  "failure_policy": "Do not re-isolate identical missing-corpus failures or timeouts unless this signature changes.",
+  "authorizes_study": false,
+  "authorizes_cross_product": false
+}

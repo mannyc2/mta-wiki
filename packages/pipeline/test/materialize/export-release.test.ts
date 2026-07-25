@@ -61,6 +61,7 @@ function exportTestRelease(releaseId: string, opts: ReleaseExportOptions) {
     return [{ route_id: routeId, short_name: routeId }];
   });
   return exportRelease(releaseId, {
+    allowOpenFrontier: true,
     routeAnchorOverrides: {},
     reviewedNonGtfsRouteDispositions: {},
     ...opts,
@@ -1088,7 +1089,7 @@ describe("exportRelease", () => {
       records: [record("route_b1", "route"), record("source_a", "source")],
     });
     expect(result.recordCount).toBe(2);
-    expect(result.files).toBe(20);
+    expect(result.files).toBe(22);
 
     const dir = releaseDir(root, "v-test");
     expect(readFileSync(join(dir, "routes.jsonl"), "utf8")).toBe(`${stableJson(record("route_b1", "route") as unknown as JsonValue)}\n`);
@@ -1191,7 +1192,7 @@ describe("exportRelease", () => {
     expect(manifest.manifest_version).toBe(4);
     expect(manifest.contract_versions.relationship_integrity_bundle).toBe(1);
     expect(manifest.pointers.relationship_integrity_bundle).toBe("relationship_integrity_bundle.json");
-    expect(result.files).toBe(20 + fixture.artifacts.length + 1);
+    expect(result.files).toBe(22 + fixture.artifacts.length + 1);
     expect(manifest.files["relationship_integrity_bundle.json"]?.sha256).toBe(
       sha256(join(dir, "relationship_integrity_bundle.json")),
     );
@@ -1463,6 +1464,27 @@ describe("exportRelease", () => {
     expect(readdirSync(releases).some((name) => name.startsWith(".v-broken.tmp-"))).toBe(false);
   });
 
+  it("refuses an open frontier unless explicitly bypassed and stamps the named failure", () => {
+    const root = join(work, "frontier-bypass");
+    expect(() => exportTestRelease("refused", {
+      rootDir: root,
+      records: [],
+      allowOpenFrontier: false,
+    })).toThrow("study-frontier preflight");
+    const result = exportTestRelease("allowed", {
+      rootDir: root,
+      records: [],
+      allowOpenFrontier: true,
+    });
+    const stamp = JSON.parse(readFileSync(
+      join(result.dir, "quality-provenance/frontier-exceptions.json"),
+      "utf8",
+    )) as { exceptions: Array<{ reason: string; owner_sign_off: string }> };
+    expect(stamp.exceptions).toHaveLength(1);
+    expect(stamp.exceptions[0]!.reason).toContain("<root>");
+    expect(stamp.exceptions[0]!.owner_sign_off).toBe("--allow-open-frontier");
+  });
+
   it("normalizes legacy manifests while keeping operational anchors unavailable", () => {
     const manifest = parseReleaseManifest({
       release_id: "v1-legacy",
@@ -1571,7 +1593,7 @@ describe("exportRelease", () => {
     const missingPointer = structuredClone(manifest);
     delete (missingPointer.pointers as Partial<typeof missingPointer.pointers>).operational_anchor_review_decisions;
     expect(() => parseReleaseManifest(missingPointer)).toThrow("pointers.operational_anchor_review_decisions");
-    expect(() => parseReleaseManifest({ manifest_version: 6 })).toThrow("expected 1, 2, 3, 4, or 5");
+    expect(() => parseReleaseManifest({ manifest_version: 7 })).toThrow("expected 1, 2, 3, 4, 5, or 6");
   });
 
   it("requires all manifest-v3 occurrence pointers to be addressed", () => {

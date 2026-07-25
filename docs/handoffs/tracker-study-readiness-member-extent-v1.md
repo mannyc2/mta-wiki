@@ -263,3 +263,52 @@ bun run typecheck
 bun run validate
 bun run test
 ```
+
+## Closure-release companions (manifest v6)
+
+Plan 041 adds two independently versioned, non-authorizing companions. They do
+not change `operational-occurrence-member-extent-v1`; that contract and its
+bytes remain frozen.
+
+### `bus-lane-identity-verdict-v1`
+
+The release pointer `bus_lane_identity_verdicts` addresses the strict
+`bus-lane-identity-verdict-manifest-v1`. Its projection contains exactly one
+sorted row for every candidate in the 321-row registry-born bus-lane
+denominator. The admitted verdicts are `occurrence_created`,
+`refuted_no_traversal`, `refuted_wrong_route_attribution`,
+`confirmed_out_of_window`, `binding_absent_after_search`, and
+`superseded_duplicate`.
+
+`binding_absent_after_search` preserves the exact Plan 039 meaning: the
+candidate-specific binding search was exhausted. It is not onset absence and
+is not a route-treatment refutation. Every row denies study and cross-product
+authority. Missing, duplicate, unknown-verdict, or verdict-nullability drift
+is a hard import failure.
+
+### `operational-occurrence-member-grain-v1`
+
+The release pointer `operational_occurrence_member_grain` addresses the strict
+member-grain manifest. The projection covers the exact 308-row
+occurrence × route × treatment-member denominator and pins the byte/SHA-256
+identity of the member-extent projection. It carries structured
+`service_scope`, `lineage_segments`, `evidence_bindings`, decision ids, and
+receipt ids.
+
+`terminal_disposition` is one of `resolved`, `not_applicable`,
+`absent_in_source`, or `blocked_upstream`. Absence and upstream-blocked rows
+must carry resolvable receipts. Positive rows require a reviewed structured
+service scope; prose cannot substitute for selectors or predecessor-route
+lineage. Exact-positive evidence remains mandatory, including authoritative
+historical full-stop inventory and stop-ID-equivalence acquisition where the
+decision depends on ordered stop-chain identity.
+
+### Consumer migration table
+
+| Manifest-v6 role | Consumer action | Fail-closed rule |
+|---|---|---|
+| `bus_lane_identity_verdicts@1` | Terminal-state all 321 registry candidates without deleting them | Reject missing/duplicate candidates, unknown verdicts, or unresolved receipt/decision pins |
+| `operational_occurrence_member_extents@1` | Continue importing the unchanged spatial companion | Require containing-release occurrence pin and exact denominator |
+| `operational_occurrence_member_grain@1` | Import structured service scope and lineage keyed to the extent row | Reject extent-hash mismatch, prose-only grain, invalid lineage, or unreceipted absence/block |
+| `study_readiness_v2` | Reconcile all 484 prior bridge candidates to terminal or tracker-owned states | Reject any `source_fixable_*` disposition |
+| `frontier_exceptions` | Record whether export preflight closed or was explicitly bypassed | Plan 041 closure requires an empty array |

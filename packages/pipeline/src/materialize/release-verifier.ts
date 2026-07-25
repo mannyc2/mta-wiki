@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { existsSync, lstatSync, readFileSync, realpathSync, statSync } from "node:fs";
-import { basename, join, relative, resolve, sep } from "node:path";
+import { basename, dirname, join, relative, resolve, sep } from "node:path";
 import { FILE_BY_KIND } from "./canonical-read.js";
 import { parseReleaseManifest, type ReleaseManifest } from "./export-release.js";
 import {
@@ -57,11 +57,31 @@ import {
   routeTreatmentScopeSummaryJson,
 } from "./route-treatment-scopes.js";
 import {
+  BUS_LANE_IDENTITY_VERDICT_SCHEMA_VERSION,
+  FRONTIER_EXCEPTIONS_SOURCE_PATH,
+  IDENTITY_VERDICT_MANIFEST,
+  IDENTITY_VERDICT_ROOT,
+  MEMBER_GRAIN_MANIFEST,
+  MEMBER_GRAIN_ROOT,
   MEMBER_EXTENT_MANIFEST,
   OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION,
+  OPERATIONAL_OCCURRENCE_MEMBER_GRAIN_SCHEMA_VERSION,
   RELEASE_QUALITY_PROVENANCE_SCHEMA_VERSION,
+  closureReleasePath,
   memberExtentReleasePath,
 } from "./release-companions.js";
+import {
+  parseBusLaneIdentityVerdicts,
+} from "../quality/bus-lane-identity-companion.js";
+import {
+  STUDY_READINESS_V2_DISPOSITIONS,
+  parseStudyReadinessV2Rows,
+} from "../quality/study-readiness-v2.js";
+import {
+  memberExtentProjectionSha256,
+  parseMemberGrainCompanion,
+} from "../quality/member-grain-companion.js";
+import type { MemberExtentRow } from "../quality/study-readiness-v1.js";
 
 export type ReleaseVerificationResult = { release_id: string; manifest_version: number; manifest_sha256: string; verified_file_count: number; verified_record_count: number; contract_versions: ReleaseManifest["contract_versions"] };
 type Decoder = (bytes: Buffer, path: string) => unknown;
@@ -116,6 +136,93 @@ function memberExtentManifestV1(bytes: Buffer, path: string): MemberExtentManife
     files: addressedArtifacts(value.files, `${path}.files`),
   };
 }
+type ClosureCompanionManifestV1 = {
+  schema_version: 1;
+  contract_id: string;
+  count: number;
+  projection: AddressedArtifact;
+  fixture: AddressedArtifact;
+  histogram: Record<string, number>;
+  member_extent_projection?: AddressedArtifact;
+};
+function closureManifestV1(
+  bytes: Buffer,
+  path: string,
+  kind: "identity" | "grain",
+): ClosureCompanionManifestV1 {
+  const value = object(json(bytes, path), path);
+  const expected = kind === "identity"
+    ? [
+        "authorizes_cross_product", "authorizes_study", "candidate_count",
+        "contract_id", "fixture", "projection", "schema_version",
+        "verdict_histogram",
+      ]
+    : [
+        "authorizes_cross_product", "authorizes_study", "contract_id",
+        "fixture", "member_count", "member_extent_projection", "projection",
+        "schema_version", "terminal_disposition_histogram",
+      ];
+  const extras = Object.keys(value).filter((key) => !expected.includes(key));
+  const missing = expected.filter((key) => !(key in value));
+  if (extras.length || missing.length) {
+    throw new Error(`${path}: exact manifest fields required`);
+  }
+  if (
+    value.schema_version !== 1 ||
+    value.authorizes_study !== false ||
+    value.authorizes_cross_product !== false
+  ) {
+    throw new Error(`${path}: invalid non-authorizing manifest`);
+  }
+  const contractId = kind === "identity"
+    ? "bus-lane-identity-verdict-manifest-v1"
+    : "operational-occurrence-member-grain-manifest-v1";
+  if (value.contract_id !== contractId) {
+    throw new Error(`${path}.contract_id: unexpected contract`);
+  }
+  const count = value[kind === "identity" ? "candidate_count" : "member_count"];
+  if (!Number.isInteger(count) || (count as number) < 1) {
+    throw new Error(`${path}: expected positive denominator count`);
+  }
+  const projection = addressedArtifacts([value.projection], `${path}.projection`)[0]!;
+  const fixture = addressedArtifacts([value.fixture], `${path}.fixture`)[0]!;
+  const memberExtentProjection = kind === "grain"
+    ? addressedArtifacts(
+        [value.member_extent_projection],
+        `${path}.member_extent_projection`,
+      )[0]!
+    : undefined;
+  const histogramField = kind === "identity"
+    ? "verdict_histogram"
+    : "terminal_disposition_histogram";
+  const rawHistogram = object(value[histogramField], `${path}.${histogramField}`);
+  const histogram: Record<string, number> = {};
+  for (const [key, countValue] of Object.entries(rawHistogram).sort(
+    ([left], [right]) => left.localeCompare(right),
+  )) {
+    if (!Number.isInteger(countValue) || (countValue as number) < 1) {
+      throw new Error(`${path}.${histogramField}.${key}: expected positive integer`);
+    }
+    histogram[key] = countValue as number;
+  }
+  if (
+    Object.values(histogram).reduce((sum, countValue) => sum + countValue, 0) !==
+      count
+  ) {
+    throw new Error(`${path}.${histogramField}: count mismatch`);
+  }
+  return {
+    schema_version: 1,
+    contract_id: contractId,
+    count: count as number,
+    projection,
+    fixture,
+    histogram,
+    ...(memberExtentProjection
+      ? { member_extent_projection: memberExtentProjection }
+      : {}),
+  };
+}
 function occurrencesAtVersion(bytes: Buffer, path: string, version: 1 | 2): unknown {
   rows(bytes).forEach((line, index) => { const raw = object(json(Buffer.from(line), `${path}:${index + 1}`), `${path}:${index + 1}`); if (raw.schema_version !== version) throw new Error(`${path}:${index + 1}.schema_version: declared contract requires ${version}`); });
   return parseOperationalOccurrencesJsonl(bytes.toString("utf8"));
@@ -143,11 +250,19 @@ export const RELEASE_CONTRACT_REGISTRY: Readonly<Record<string, Readonly<Record<
     2: (bytes, path) => occurrenceReviewAtVersion(bytes, path, 2),
   },
   operational_occurrence_member_extents: { 1: memberExtentManifestV1 },
+  bus_lane_identity_verdicts: {
+    [BUS_LANE_IDENTITY_VERDICT_SCHEMA_VERSION]: (bytes, path) =>
+      closureManifestV1(bytes, path, "identity"),
+  },
+  operational_occurrence_member_grain: {
+    [OPERATIONAL_OCCURRENCE_MEMBER_GRAIN_SCHEMA_VERSION]: (bytes, path) =>
+      closureManifestV1(bytes, path, "grain"),
+  },
   relationship_integrity_bundle: { 1: relationshipBundleV1 },
   route_anchors: { 1: (bytes, path) => parseRouteAnchorsJsonl(bytes.toString("utf8"), path) },
   route_identity_snapshot: { 1: (bytes, path) => parseRouteIdentitySnapshotV1(json(bytes, path)) },
 };
-const pointers: Readonly<Record<string, keyof ReleaseManifest["pointers"]>> = { operational_anchors: "operational_anchors", operational_anchor_review_decisions: "operational_anchor_review_decisions", operational_occurrences: "operational_occurrences", operational_occurrence_review_decisions: "operational_occurrence_review_decisions", operational_occurrence_member_extents: "operational_occurrence_member_extents", relationship_integrity_bundle: "relationship_integrity_bundle", route_anchors: "route_anchors", route_identity_snapshot: "route_identity_snapshot" };
+const pointers: Readonly<Record<string, keyof ReleaseManifest["pointers"]>> = { operational_anchors: "operational_anchors", operational_anchor_review_decisions: "operational_anchor_review_decisions", operational_occurrences: "operational_occurrences", operational_occurrence_review_decisions: "operational_occurrence_review_decisions", operational_occurrence_member_extents: "operational_occurrence_member_extents", bus_lane_identity_verdicts: "bus_lane_identity_verdicts", operational_occurrence_member_grain: "operational_occurrence_member_grain", relationship_integrity_bundle: "relationship_integrity_bundle", route_anchors: "route_anchors", route_identity_snapshot: "route_identity_snapshot" };
 const sha256 = (bytes: Buffer) => createHash("sha256").update(bytes).digest("hex");
 function safeFile(dir: string, relativePath: string): string {
   const root = realpathSync(resolve(dir));
@@ -309,6 +424,292 @@ function assertMemberExtentCompanion(
   }
 }
 
+function assertClosureCompanions(
+  files: ReadonlyMap<string, Buffer>,
+  manifest: ReleaseManifest,
+  identityManifest: ClosureCompanionManifestV1,
+  grainManifest: ClosureCompanionManifestV1,
+): void {
+  const identityPointer = manifest.pointers.bus_lane_identity_verdicts;
+  const grainPointer = manifest.pointers.operational_occurrence_member_grain;
+  if (
+    identityPointer !== closureReleasePath(IDENTITY_VERDICT_MANIFEST) ||
+    grainPointer !== closureReleasePath(MEMBER_GRAIN_MANIFEST)
+  ) {
+    throw new Error("manifest-v6 closure companion pointers must address versioned manifests");
+  }
+  const identityProjectionPath = join(
+    dirname(identityPointer),
+    identityManifest.projection.path,
+  );
+  const identityBytes = assertPinnedBytes(
+    files,
+    identityProjectionPath,
+    identityManifest.projection,
+  );
+  const identityRows = parseBusLaneIdentityVerdicts(
+    identityBytes.toString("utf8"),
+    identityProjectionPath,
+  );
+  if (
+    identityManifest.count !== 321 ||
+    identityRows.length !== identityManifest.count
+  ) {
+    throw new Error("identity-verdict companion must cover the exact 321-row denominator");
+  }
+  const actualIdentityHistogram = Object.fromEntries(
+    [...new Set(identityRows.map((row) => row.verdict))].sort().map(
+      (verdict) => [
+        verdict,
+        identityRows.filter((row) => row.verdict === verdict).length,
+      ],
+    ),
+  );
+  if (
+    stableJson(actualIdentityHistogram as JsonValue) !==
+      stableJson(identityManifest.histogram as JsonValue)
+  ) {
+    throw new Error("identity-verdict companion histogram mismatch");
+  }
+  const identityFixturePath = join(
+    dirname(identityPointer),
+    identityManifest.fixture.path,
+  );
+  const identityFixture = assertPinnedBytes(
+    files,
+    identityFixturePath,
+    identityManifest.fixture,
+  );
+  if (parseBusLaneIdentityVerdicts(
+    identityFixture.toString("utf8"),
+    identityFixturePath,
+  ).length !== 1) {
+    throw new Error("identity-verdict fixture must contain exactly one strict row");
+  }
+
+  const extentProjection = grainManifest.member_extent_projection;
+  if (!extentProjection) throw new Error("member-grain manifest lacks extent projection pin");
+  const extentReleasePath = memberExtentReleasePath(extentProjection.path);
+  const extentBytes = assertPinnedBytes(files, extentReleasePath, extentProjection);
+  if (memberExtentProjectionSha256(extentBytes) !== extentProjection.sha256) {
+    throw new Error("member-grain companion member-extent SHA mismatch");
+  }
+  const extentRows = rows(extentBytes).map((line) =>
+    JSON.parse(line) as MemberExtentRow
+  );
+  const grainProjectionPath = join(
+    dirname(grainPointer),
+    grainManifest.projection.path,
+  );
+  const grainBytes = assertPinnedBytes(
+    files,
+    grainProjectionPath,
+    grainManifest.projection,
+  );
+  const grainRows = parseMemberGrainCompanion(
+    grainBytes.toString("utf8"),
+    extentProjection.sha256,
+    extentProjection.sha256,
+    grainProjectionPath,
+    extentRows,
+  );
+  if (grainManifest.count !== 308 || grainRows.length !== grainManifest.count) {
+    throw new Error("member-grain companion must cover the exact 308-row denominator");
+  }
+  const actualGrainHistogram = Object.fromEntries(
+    [...new Set(grainRows.map((row) => row.terminal_disposition))].sort().map(
+      (disposition) => [
+        disposition,
+        grainRows.filter((row) => row.terminal_disposition === disposition)
+          .length,
+      ],
+    ),
+  );
+  if (
+    stableJson(actualGrainHistogram as JsonValue) !==
+      stableJson(grainManifest.histogram as JsonValue)
+  ) {
+    throw new Error("member-grain companion histogram mismatch");
+  }
+  const grainFixturePath = join(
+    dirname(grainPointer),
+    grainManifest.fixture.path,
+  );
+  const grainFixture = assertPinnedBytes(
+    files,
+    grainFixturePath,
+    grainManifest.fixture,
+  );
+  if (parseMemberGrainCompanion(
+    grainFixture.toString("utf8"),
+    undefined,
+    undefined,
+    grainFixturePath,
+  ).length !== 1) {
+    throw new Error("member-grain fixture must contain exactly one strict row");
+  }
+
+  const v2Pointer = manifest.pointers.study_readiness_v2;
+  if (!v2Pointer) throw new Error("manifest-v6 lacks study-readiness-v2 pointer");
+  const v2Manifest = object(json(files.get(v2Pointer)!, v2Pointer), v2Pointer);
+  const v2Fields = [
+    "authorizes_cross_product", "authorizes_study", "candidate_count",
+    "contract_id", "files", "schema_version", "source_fixable_count",
+  ];
+  if (
+    Object.keys(v2Manifest).some((key) => !v2Fields.includes(key)) ||
+    v2Fields.some((key) => !(key in v2Manifest)) ||
+    v2Manifest.schema_version !== 2 ||
+    v2Manifest.contract_id !== "study-readiness-v2-manifest" ||
+    v2Manifest.candidate_count !== 484 ||
+    v2Manifest.source_fixable_count !== 0 ||
+    v2Manifest.authorizes_study !== false ||
+    v2Manifest.authorizes_cross_product !== false
+  ) {
+    throw new Error(`${v2Pointer}: invalid closure bridge manifest`);
+  }
+  const v2Artifacts = addressedArtifacts(v2Manifest.files, `${v2Pointer}.files`);
+  if (
+    stableJson(v2Artifacts.map((artifact) => artifact.path).sort() as JsonValue) !==
+      stableJson(["bridge-ledger.jsonl", "bridge-summary.json"] as JsonValue)
+  ) {
+    throw new Error(`${v2Pointer}: exact bridge artifact set required`);
+  }
+  const v2LedgerArtifact = v2Artifacts.find((artifact) =>
+    artifact.path === "bridge-ledger.jsonl"
+  );
+  if (!v2LedgerArtifact) throw new Error(`${v2Pointer}: bridge ledger pin missing`);
+  for (const artifact of v2Artifacts) {
+    assertPinnedBytes(
+      files,
+      join(dirname(v2Pointer), artifact.path),
+      artifact,
+    );
+  }
+  const v2LedgerPath = join(dirname(v2Pointer), v2LedgerArtifact.path);
+  const v2Ledger = files.get(v2LedgerPath)!;
+  const v2Rows = parseStudyReadinessV2Rows(
+    v2Ledger.toString("utf8"),
+    v2LedgerPath,
+  );
+  if (
+    v2Rows.length !== 484 ||
+    new Set(v2Rows.map((row) => row.candidate_id)).size !== 484
+  ) {
+    throw new Error(`${v2LedgerPath}: bridge must be exact, unique, and terminal`);
+  }
+  const v2ByCandidate = new Map(v2Rows.map((row) => [row.candidate_id, row]));
+  for (const identity of identityRows) {
+    const bridge = v2ByCandidate.get(identity.candidate_id);
+    const actual = bridge?.closing_artifacts.identity_verdict;
+    const expected = {
+      verdict: identity.verdict,
+      decision_id: identity.decision_id,
+      occurrence_id: identity.occurrence_id,
+      receipt_ids: identity.acquisition_receipt_ids,
+    };
+    if (
+      !actual ||
+      stableJson(actual as unknown as JsonValue) !==
+        stableJson(expected as unknown as JsonValue)
+    ) {
+      throw new Error(`${identity.candidate_id}: bridge identity closure mismatch`);
+    }
+  }
+  const bridgeExtentIds = v2Rows.flatMap((row) =>
+    row.closing_artifacts.member_extents.map((extent) => extent.extent_id)
+  );
+  const grainExtentIds = new Set(grainRows.map((row) => row.extent_id));
+  if (
+    new Set(bridgeExtentIds).size !== bridgeExtentIds.length ||
+    bridgeExtentIds.some((extentId) => !grainExtentIds.has(extentId))
+  ) {
+    throw new Error(`${v2LedgerPath}: bridge member extents must be an exact unique subset of member grain`);
+  }
+  const summaryArtifact = v2Artifacts.find((artifact) =>
+    artifact.path === "bridge-summary.json"
+  )!;
+  const summaryPath = join(dirname(v2Pointer), summaryArtifact.path);
+  const summary = object(json(files.get(summaryPath)!, summaryPath), summaryPath);
+  const summaryFields = [
+    "authorizes_cross_product", "authorizes_study", "candidate_count",
+    "contract_id", "disposition_histogram", "frontier_exception_count",
+    "schema_version", "source_fixable_count",
+  ];
+  if (
+    stableJson(Object.keys(summary).sort() as JsonValue) !==
+      stableJson(summaryFields.sort() as JsonValue) ||
+    summary.schema_version !== 2 ||
+    summary.contract_id !== "study-readiness-bridge-v2" ||
+    summary.candidate_count !== 484 ||
+    summary.source_fixable_count !== 0 ||
+    summary.frontier_exception_count !== 0 ||
+    summary.authorizes_study !== false ||
+    summary.authorizes_cross_product !== false
+  ) {
+    throw new Error(`${summaryPath}: invalid bridge summary`);
+  }
+  const actualV2Histogram = Object.fromEntries(
+    STUDY_READINESS_V2_DISPOSITIONS.flatMap((disposition) => {
+      const countValue = v2Rows.filter((row) =>
+        row.downstream_disposition === disposition
+      ).length;
+      return countValue > 0 ? [[disposition, countValue]] : [];
+    }),
+  );
+  if (
+    stableJson(summary.disposition_histogram as JsonValue) !==
+      stableJson(actualV2Histogram as JsonValue)
+  ) {
+    throw new Error(`${summaryPath}: disposition histogram mismatch`);
+  }
+
+  const exceptionsPointer = manifest.pointers.frontier_exceptions;
+  if (!exceptionsPointer) throw new Error("manifest-v6 lacks frontier exceptions stamp");
+  const exceptionBytes = files.get(exceptionsPointer);
+  if (!exceptionBytes) throw new Error(`${exceptionsPointer}: exception stamp is not addressed`);
+  const exceptions = object(
+    json(exceptionBytes, exceptionsPointer),
+    exceptionsPointer,
+  );
+  const exceptionFields = ["exceptions", "schema_version"];
+  if (
+    Object.keys(exceptions).some((key) => !exceptionFields.includes(key)) ||
+    exceptionFields.some((key) => !(key in exceptions)) ||
+    exceptions.schema_version !== 1 ||
+    !Array.isArray(exceptions.exceptions)
+  ) {
+    throw new Error(`${exceptionsPointer}: invalid frontier exception stamp`);
+  }
+  const provenancePointer = manifest.pointers.quality_provenance;
+  if (!provenancePointer) {
+    throw new Error("manifest-v6 lacks quality provenance pointer");
+  }
+  const provenanceBytes = files.get(provenancePointer);
+  if (!provenanceBytes) {
+    throw new Error(`${provenancePointer}: quality provenance is not addressed`);
+  }
+  const provenance = object(json(provenanceBytes, provenancePointer), provenancePointer);
+  const semanticDelta = object(
+    provenance.semantic_delta,
+    `${provenancePointer}.semantic_delta`,
+  );
+  const frontierGate = object(
+    semanticDelta.frontier_gate,
+    `${provenancePointer}.semantic_delta.frontier_gate`,
+  );
+  const exceptionCount = exceptions.exceptions.length;
+  if (
+    (frontierGate.status === "closed" && exceptionCount !== 0) ||
+    (frontierGate.status === "bypassed" && exceptionCount === 0) ||
+    (frontierGate.status !== "closed" && frontierGate.status !== "bypassed")
+  ) {
+    throw new Error(
+      `${exceptionsPointer}: frontier gate status and exception stamp disagree`,
+    );
+  }
+}
+
 function assertQualityProvenance(
   files: ReadonlyMap<string, Buffer>,
   pointer: string,
@@ -325,9 +726,26 @@ function assertQualityProvenance(
   for (const [index, rawArtifact] of value.artifacts.entries()) {
     const artifact = object(rawArtifact, `${pointer}.artifacts[${index}]`);
     if (typeof artifact.source_path !== "string" || typeof artifact.release_path !== "string" || typeof artifact.bytes !== "number" || typeof artifact.sha256 !== "string") throw new Error(`${pointer}.artifacts[${index}]: invalid pin`);
-    const expectedPath = artifact.source_path.startsWith("data/quality/acquisition/target-list") || artifact.source_path.startsWith("data/quality/acquisition/reviews/")
-      ? `quality-provenance/${artifact.source_path}`
-      : memberExtentReleasePath(artifact.source_path);
+    let expectedPath: string;
+    if (
+      artifact.source_path.startsWith("data/quality/acquisition/target-list") ||
+      artifact.source_path.startsWith("data/quality/acquisition/reviews/")
+    ) {
+      expectedPath = `quality-provenance/${artifact.source_path}`;
+    } else if (
+      artifact.source_path === FRONTIER_EXCEPTIONS_SOURCE_PATH ||
+      artifact.source_path === "generated:frontier-exceptions-v1"
+    ) {
+      expectedPath = "quality-provenance/frontier-exceptions.json";
+    } else if (
+      artifact.source_path.startsWith(`${IDENTITY_VERDICT_ROOT}/`) ||
+      artifact.source_path.startsWith(`${MEMBER_GRAIN_ROOT}/`) ||
+      artifact.source_path.startsWith("data/quality/study-readiness/v2/")
+    ) {
+      expectedPath = closureReleasePath(artifact.source_path);
+    } else {
+      expectedPath = memberExtentReleasePath(artifact.source_path);
+    }
     if (artifact.release_path !== expectedPath) throw new Error(`${pointer}.artifacts[${index}]: source/release path mapping mismatch`);
     const pin: AddressedArtifact = { path: artifact.source_path, bytes: artifact.bytes, sha256: artifact.sha256 };
     if (typeof artifact.row_count === "number") pin.row_count = artifact.row_count;
@@ -809,6 +1227,23 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
       throw new Error("member-extent companion pointer must address the versioned source manifest");
     }
     assertMemberExtentCompanion(files, memberExtentManifest, occurrences);
+  }
+  if (manifest.manifest_version === 6) {
+    const identityManifest = decoded.get(
+      "bus_lane_identity_verdicts",
+    ) as ClosureCompanionManifestV1 | undefined;
+    const grainManifest = decoded.get(
+      "operational_occurrence_member_grain",
+    ) as ClosureCompanionManifestV1 | undefined;
+    if (!identityManifest || !grainManifest) {
+      throw new Error("manifest-v6 closure companions did not strict-decode");
+    }
+    assertClosureCompanions(
+      files,
+      manifest,
+      identityManifest,
+      grainManifest,
+    );
   }
   if (manifest.pointers.quality_provenance) {
     if (!Array.isArray(occurrences)) throw new Error("quality provenance requires decoded operational occurrences");
