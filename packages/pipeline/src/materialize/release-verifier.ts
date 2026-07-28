@@ -1256,7 +1256,7 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
     }
     assertMemberExtentCompanion(files, memberExtentManifest, occurrences);
   }
-  if (manifest.manifest_version >= 6) {
+  if (manifest.manifest_version === 6) {
     const identityManifest = decoded.get(
       "bus_lane_identity_verdicts",
     ) as ClosureCompanionManifestV1 | undefined;

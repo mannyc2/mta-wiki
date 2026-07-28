@@ -288,19 +288,25 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
     "pointers",
   );
   const operationalAnchors =
-    version >= 3
+    version === 7
+      ? manifestPointer(pointersInput.operational_anchors, "pointers.operational_anchors")
+      : version >= 3
       ? manifestAddressedPointer(pointersInput.operational_anchors, "pointers.operational_anchors", files)
       : version === 2
         ? manifestPointer(pointersInput.operational_anchors, "pointers.operational_anchors")
         : null;
   const operationalAnchorSummary =
-    version >= 3
+    version === 7
+      ? manifestPointer(pointersInput.operational_anchor_summary, "pointers.operational_anchor_summary")
+      : version >= 3
       ? manifestAddressedPointer(pointersInput.operational_anchor_summary, "pointers.operational_anchor_summary", files)
       : version === 2
         ? manifestPointer(pointersInput.operational_anchor_summary, "pointers.operational_anchor_summary")
         : null;
   const operationalAnchorReviewDecisions =
-    version >= 2
+    version === 7
+      ? manifestPointer(pointersInput.operational_anchor_review_decisions, "pointers.operational_anchor_review_decisions")
+      : version >= 2
       ? manifestAddressedPointer(
           pointersInput.operational_anchor_review_decisions,
           "pointers.operational_anchor_review_decisions",
@@ -308,11 +314,15 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
         )
       : null;
   const operationalOccurrences =
-    version >= 3
+    version === 7
+      ? manifestPointer(pointersInput.operational_occurrences, "pointers.operational_occurrences")
+      : version >= 3
       ? manifestAddressedPointer(pointersInput.operational_occurrences, "pointers.operational_occurrences", files)
       : null;
   const operationalOccurrenceSummary =
-    version >= 3
+    version === 7
+      ? manifestPointer(pointersInput.operational_occurrence_summary, "pointers.operational_occurrence_summary")
+      : version >= 3
       ? manifestAddressedPointer(
           pointersInput.operational_occurrence_summary,
           "pointers.operational_occurrence_summary",
@@ -320,7 +330,9 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
         )
       : null;
   const operationalOccurrenceReviewDecisions =
-    version >= 3
+    version === 7
+      ? manifestPointer(pointersInput.operational_occurrence_review_decisions, "pointers.operational_occurrence_review_decisions")
+      : version >= 3
       ? manifestAddressedPointer(
           pointersInput.operational_occurrence_review_decisions,
           "pointers.operational_occurrence_review_decisions",
@@ -328,7 +340,10 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
         )
       : null;
   const contracts: ReleaseManifest["contract_versions"] = {};
-  if (version >= 2) {
+  if (version === 7) {
+    const input = manifestObject(root.contract_versions, "contract_versions");
+    assertManifestKeys(input, [], "contract_versions");
+  } else if (version >= 2) {
     const input = manifestObject(root.contract_versions, "contract_versions");
     assertManifestKeys(
       input,
@@ -461,7 +476,12 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
       taxonomy: manifestPointer(pointersInput.taxonomy, "pointers.taxonomy"),
       quality_report: manifestPointer(pointersInput.quality_report, "pointers.quality_report"),
       relationship_integrity_bundle:
-        version >= 4
+        version === 7
+          ? manifestPointer(
+              pointersInput.relationship_integrity_bundle,
+              "pointers.relationship_integrity_bundle",
+            )
+          : version >= 4
           ? manifestAddressedPointer(
               pointersInput.relationship_integrity_bundle,
               "pointers.relationship_integrity_bundle",
@@ -469,7 +489,12 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
             )
           : null,
       operational_occurrence_member_extents:
-        version >= 5 && contracts.operational_occurrence_member_extents !== undefined
+        version === 7
+          ? manifestPointer(
+              pointersInput.operational_occurrence_member_extents,
+              "pointers.operational_occurrence_member_extents",
+            )
+          : version >= 5 && contracts.operational_occurrence_member_extents !== undefined
           ? manifestAddressedPointer(
               pointersInput.operational_occurrence_member_extents,
               "pointers.operational_occurrence_member_extents",
@@ -479,36 +504,42 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
             ? null
             : (() => { throw new Error("Invalid release manifest pointers.operational_occurrence_member_extents: contract version is missing"); })(),
       quality_provenance:
-        version >= 5 && pointersInput.quality_provenance !== undefined
+        version === 7
+          ? manifestPointer(pointersInput.quality_provenance, "pointers.quality_provenance")
+          : version >= 5 && pointersInput.quality_provenance !== undefined
           ? manifestAddressedPointer(
               pointersInput.quality_provenance,
               "pointers.quality_provenance",
               files,
             )
           : null,
-      route_identity_snapshot: version >= 5 ? manifestAddressedPointer(pointersInput.route_identity_snapshot, "pointers.route_identity_snapshot", files) : null,
-      bus_lane_identity_verdicts: version >= 6
+      route_identity_snapshot: version === 7
+        ? manifestPointer(pointersInput.route_identity_snapshot, "pointers.route_identity_snapshot")
+        : version >= 5
+          ? manifestAddressedPointer(pointersInput.route_identity_snapshot, "pointers.route_identity_snapshot", files)
+          : null,
+      bus_lane_identity_verdicts: version === 6
         ? manifestAddressedPointer(
             pointersInput.bus_lane_identity_verdicts,
             "pointers.bus_lane_identity_verdicts",
             files,
           )
         : null,
-      operational_occurrence_member_grain: version >= 6
+      operational_occurrence_member_grain: version === 6
         ? manifestAddressedPointer(
             pointersInput.operational_occurrence_member_grain,
             "pointers.operational_occurrence_member_grain",
             files,
           )
         : null,
-      study_readiness_v2: version >= 6
+      study_readiness_v2: version === 6
         ? manifestAddressedPointer(
             pointersInput.study_readiness_v2,
             "pointers.study_readiness_v2",
             files,
           )
         : null,
-      frontier_exceptions: version >= 6
+      frontier_exceptions: version === 6
         ? manifestAddressedPointer(
             pointersInput.frontier_exceptions,
             "pointers.frontier_exceptions",

@@ -183,7 +183,12 @@ export function buildReleaseResourceDescriptors(
   files: Readonly<Record<string, ReleaseManifestFile>>,
 ): ReleaseResourceDescriptor[] {
   return Object.keys(files).map((path): ReleaseResourceDescriptor => {
-    const canonical = path.startsWith("canonical/");
+    const canonical = new Set([
+      "sources.jsonl", "entities.jsonl", "projects.jsonl", "corridors.jsonl",
+      "routes.jsonl", "treatment_components.jsonl", "events.jsonl",
+      "claims.jsonl", "metric_claims.jsonl", "tables.jsonl",
+      "source_gaps.jsonl", "relations.jsonl",
+    ]).has(path);
     const publicResource = path.startsWith("resolved-pack/public/");
     const envelope = path === "build_receipt.json";
     const reconciliation = /reconciliation|candidate_ledger|cohort|source_observation_ledger/u.test(path);
