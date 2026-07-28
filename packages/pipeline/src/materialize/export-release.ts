@@ -965,16 +965,28 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
     opts.relationshipIntegrityBundleDescriptor === undefined
       ? relationshipReleaseBundleDescriptorPath(rootDir)
       : opts.relationshipIntegrityBundleDescriptor;
-  const producerInputClosureRelative = "data/test-contracts/producer-input-closure-v1.json";
-  const producerInputClosureSource = join(rootDir, producerInputClosureRelative);
-  if (configuredRelationshipBundleDescriptor !== null && existsSync(producerInputClosureSource)) {
-    const stagedClosurePath = join(dir, "relationship-integrity", producerInputClosureRelative);
-    mkdirSync(dirname(stagedClosurePath), { recursive: true });
-    writeFileSync(stagedClosurePath, readFileSync(producerInputClosureSource));
-    fileEntries.push([
-      `relationship-integrity/${producerInputClosureRelative}`,
-      fileMetadata(stagedClosurePath),
-    ]);
+  if (configuredRelationshipBundleDescriptor !== null) {
+    const completenessManifestPath = join(
+      rootDir,
+      "data/quality/relationship-integrity/completeness/manifest.json",
+    );
+    const stagedInputPaths = new Set<string>(["data/test-contracts/producer-input-closure-v1.json"]);
+    if (existsSync(completenessManifestPath)) {
+      const completeness = JSON.parse(readFileSync(completenessManifestPath, "utf8")) as {
+        input_pins?: Array<{ path?: unknown }>;
+      };
+      for (const pin of completeness.input_pins ?? []) {
+        if (typeof pin.path === "string") stagedInputPaths.add(pin.path);
+      }
+    }
+    for (const inputPath of [...stagedInputPaths].sort()) {
+      const source = join(rootDir, inputPath);
+      if (!existsSync(source)) continue;
+      const stagedPath = join(dir, "relationship-integrity", inputPath);
+      mkdirSync(dirname(stagedPath), { recursive: true });
+      writeFileSync(stagedPath, readFileSync(source));
+      fileEntries.push([`relationship-integrity/${inputPath}`, fileMetadata(stagedPath)]);
+    }
   }
   const relationshipBundle =
     configuredRelationshipBundleDescriptor !== null && existsSync(configuredRelationshipBundleDescriptor)
