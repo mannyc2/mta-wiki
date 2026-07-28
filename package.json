@@ -2,7 +2,7 @@
   "name": "mta-llm-wiki",
   "private": true,
   "type": "module",
-  "packageManager": "bun@1.3.9",
+  "packageManager": "bun@1.3.14",
   "workspaces": [
     "packages/*"
   ],
@@ -62,7 +62,8 @@
     "test:corpus": "bun scripts/audit-local-corpus-manifest.ts --check && bun scripts/verify-local-corpus-contracts.ts",
     "test:authoring": "bun scripts/audit-local-corpus-manifest.ts --check && bun scripts/verify-authoring-replay.ts",
     "typecheck": "bun run --cwd packages/core typecheck && bun run --cwd packages/db typecheck && bun run --cwd packages/pipeline typecheck && bun run --cwd packages/agents typecheck && bun run --cwd packages/cli typecheck",
-    "validate": "bun packages/cli/src/cli.ts validate"
+    "validate": "bun packages/cli/src/cli.ts validate",
+    "check": "bun scripts/check-clean-clone.ts"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",

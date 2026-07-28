@@ -1,6 +1,6 @@
 import { spawnSync } from "node:child_process";
 import { randomUUID } from "node:crypto";
-import { existsSync, readdirSync, renameSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, readdirSync, renameSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { isAbsolute, join, relative, resolve } from "node:path";
 import {
   auditPostIngestCoverage,
@@ -105,13 +105,13 @@ import { seededDefectSummary, writeSeededDefectFixtures } from "@mta-wiki/pipeli
 import { humanCalibrationJudgeInputs, readFixtureJudgeInputs, runSemanticSweep, semanticSweepSummaryText } from "@mta-wiki/pipeline/quality/semantic-sweep";
 import { optionValue, requireSubject, type CommandHandler } from "./shared.js";
 
-function repairCanonicalFtsWithSqliteCli(): string {
+function repairCanonicalFtsWithSqliteCli(databasePath = canonicalDbPath()): string {
   const sql = [
     "INSERT INTO records_fts(records_fts) VALUES('rebuild')",
     "INSERT INTO blocks_fts(blocks_fts) VALUES('rebuild')",
     "PRAGMA quick_check",
   ].join("; ");
-  const result = spawnSync("sqlite3", [canonicalDbPath(), sql], { encoding: "utf8" });
+  const result = spawnSync("sqlite3", [databasePath, sql], { encoding: "utf8" });
   if (result.error) throw new Error(`sqlite3 FTS repair failed to start: ${result.error.message}`);
   if (result.status !== 0) {
     const detail = (result.stderr || result.stdout || "").trim();
@@ -170,7 +170,7 @@ function hasLocalStagedSourceBlocks(): boolean {
   return readdirSync(sourcesDir, { withFileTypes: true }).some((entry) => entry.isDirectory() && existsSync(join(sourcesDir, entry.name, "blocks.jsonl")));
 }
 
-function rebuildDbFromTrackedCanonical() {
+function rebuildDbFromTrackedCanonical(outputPath = canonicalDbPath()) {
   const records = readCanonicalRecordsFromJsonl();
   if (records.length === 0) {
     throw new Error("No tracked canonical JSONL records found; refusing to rebuild an empty data/canonical.db.");
@@ -192,11 +192,12 @@ function rebuildDbFromTrackedCanonical() {
   const relationshipCompleteness = relationshipCompletenessForMaterialization(records, relationshipContract);
 
   const result = rebuildCanonicalDb(records, {
+    path: outputPath,
     identitySupersessions: semanticSupersessionIdentities(readSemanticCorrections()),
     relationshipFindings: relationshipAudit.findings,
     relationshipCompleteness: relationshipCompleteness.mirror,
   });
-  const quickCheck = repairCanonicalFtsWithSqliteCli();
+  const quickCheck = repairCanonicalFtsWithSqliteCli(outputPath);
   console.log(
     `Rebuilt ${relative(repoRoot, result.path)} from tracked canonical JSONL: ` +
       `${result.recordCount} records, ${result.relationCount} relation edge(s), ` +
@@ -452,6 +453,24 @@ export const materializeCommands = {
     assertCanonicalDbSourceRefreshAvailable({
       operation: "rebuild-db-from-canonical command",
     });
+    const outputDb = optionValue(process.argv, "--output-db");
+    const ownedRoot = optionValue(process.argv, "--owned-root");
+    if ((outputDb === undefined) !== (ownedRoot === undefined)) {
+      throw new Error("--output-db and --owned-root must be supplied together");
+    }
+    if (process.argv.filter((arg) => arg === "--output-db").length > 1 ||
+        process.argv.filter((arg) => arg === "--owned-root").length > 1) {
+      throw new Error("--output-db and --owned-root may not be repeated");
+    }
+    if (outputDb && ownedRoot) {
+      const target = resolve(outputDb);
+      const owner = resolve(ownedRoot);
+      if (target === resolve(canonicalDbPath())) throw new Error("owned rebuild cannot target the repository canonical.db");
+      if (!target.startsWith(`${owner}/`) || target === owner) throw new Error("--output-db must be inside --owned-root");
+      if (existsSync(target) && !statSync(target).isFile()) throw new Error("--output-db existing target must be a regular file");
+      rebuildDbFromTrackedCanonical(target);
+      return;
+    }
     rebuildDbFromTrackedCanonical();
   },
 
