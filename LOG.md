@@ -6,6 +6,19 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-28
 
+### Bitemporal intervention placement state
+
+- Added append-only stable placement identities, exact application-placement
+  transitions, a closed 1,756-candidate placement frontier, and pure dated
+  lifecycle resolution in the separately versioned resolved-transit model.
+  Valid time remains separate from document time; conflicting evidence requires
+  explicit review, and historical onset never implies current activity.
+- The current 306 applications all retain non-authorizing `unknown` actions, so
+  the honest migration publishes zero resolved placements and zero
+  confirmed-active footprint rows while preserving every application and
+  generically admitted lifecycle/inventory candidate for review. Canonical
+  lifecycle views and release bytes remain unchanged.
+
 ### Exact resolved intervention applications
 
 - Added a separate resolved intervention read model above canonical source

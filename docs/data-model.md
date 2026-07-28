@@ -64,6 +64,24 @@ Examples:
 Enums should be closed only through deterministic audit evidence or by enforcing an invariant already
 guaranteed by code. Do not close source vocabularies based on model confidence alone.
 
+## Documentary and resolved lifecycle
+
+Canonical lifecycle records preserve what a source said. The canonical `lifecycle_entries` and
+`route_timeline` views are documentary timelines, not a current intervention inventory.
+The legacy canonical `resolved_status` view is deprecated: despite its name, it only selects the
+most recent credible documentary row per subject. It does not reconcile conflicts and has no
+current-state authority. Its SQL remains unchanged for historical consumers, but new builders and
+queries must not depend on it.
+
+Resolved intervention state lives in the independently versioned `data/resolved-transit.db`.
+Stable placement identity is separate from an episode (something that happened) and an application
+(a reviewed route/treatment/action claim within that episode). Placement lifecycle assertions retain
+valid-time bounds separately from source publication, retrieval, and assertion-as-of time.
+Consumers must provide an explicit date and read `resolved_intervention_placement_state_as_of` or
+`resolved_current_intervention_footprint`; the latter contains only `confirmed_active` placements.
+An empty footprint means no placement is currently confirmed by accepted interval evidence, not that
+the corpus contains no interventions.
+
 ## Releases
 
 Release exports copy canonical records plus release metadata under `data/exports/releases/<id>/`.
