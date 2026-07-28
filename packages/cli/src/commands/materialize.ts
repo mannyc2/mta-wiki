@@ -72,6 +72,17 @@ import {
   writePublicKeyMigration,
 } from "@mta-wiki/pipeline/materialize/resolved-transit-public-keys";
 import {
+  buildOperatorPublicDisplayDictionary,
+  checkOperatorPublicDisplay,
+  writeOperatorPublicDisplay,
+} from "@mta-wiki/pipeline/materialize/resolved-transit-public-display";
+import {
+  writeResolvedTransitPack,
+} from "@mta-wiki/pipeline/materialize/resolved-transit-pack";
+import {
+  runResolvedPackReferenceAdapter,
+} from "@mta-wiki/pipeline/consumer/reference-adapter";
+import {
   checkInterventionPlacementFrontier,
   writeInterventionPlacementFrontier,
 } from "@mta-wiki/pipeline/materialize/intervention-placement-frontier";
@@ -240,6 +251,50 @@ This command does not call a provider.`);
 }
 
 export const materializeCommands = {
+  "resolved-pack-reference-adapter": () => {
+    const input = optionValue(process.argv, "--input");
+    const output = optionValue(process.argv, "--json");
+    if (!input || !output) {
+      throw new Error("resolved-pack-reference-adapter requires --input and --json");
+    }
+    const result = runResolvedPackReferenceAdapter(input);
+    writeFileSync(output, `${JSON.stringify(result, null, 2)}\n`);
+    console.log(
+      `Adapted ${result.episodes_by_route.length} route histories from public pack only; JSON: ${output}`,
+    );
+  },
+
+  "resolved-transit-public-display": () => {
+    const asOfDate = optionValue(process.argv, "--as-of") ?? "2026-07-27";
+    const output = join(repoRoot, "data", "resolved-transit", "operator", "v1", "public-display");
+    const model = buildOperatorPublicDisplayDictionary(asOfDate);
+    if (process.argv.includes("--write")) {
+      writeOperatorPublicDisplay(output, model);
+      console.log(
+        `Wrote operator public display: ${model.summary.episode_count} episodes, ` +
+        `${model.summary.component_count} components, ${model.summary.placement_count} placements.`,
+      );
+      return;
+    }
+    if (process.argv.includes("--check")) {
+      checkOperatorPublicDisplay(output, model);
+      console.log(`Verified operator public display as of ${asOfDate}.`);
+      return;
+    }
+    throw new Error("resolved-transit-public-display requires --write or --check");
+  },
+
+  "resolved-transit-pack": () => {
+    const asOfDate = optionValue(process.argv, "--as-of") ?? "2026-07-27";
+    const output = optionValue(process.argv, "--output");
+    if (!output) throw new Error("resolved-transit-pack requires --output");
+    const result = writeResolvedTransitPack(output, asOfDate);
+    console.log(
+      `Wrote resolved transit knowledge pack: ${result.publicPack.episodes.length} public episodes, ` +
+      `${result.publicPack.components.length} components, fingerprint ${result.fingerprint.slice(0, 12)}.`,
+    );
+  },
+
   "resolved-transit-public-keys": () => {
     const asOfDate = optionValue(process.argv, "--as-of") ?? "2026-07-27";
     if (process.argv.includes("--prepare")) {

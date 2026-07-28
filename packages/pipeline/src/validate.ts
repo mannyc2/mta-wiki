@@ -36,6 +36,17 @@ import {
 import {
   checkInterventionLifecycleProjection,
 } from "@mta-wiki/pipeline/materialize/current-intervention-footprint";
+import {
+  checkPublicKeyRegistry,
+} from "@mta-wiki/pipeline/materialize/resolved-transit-public-keys";
+import {
+  buildOperatorPublicDisplayDictionary,
+  checkOperatorPublicDisplay,
+} from "@mta-wiki/pipeline/materialize/resolved-transit-public-display";
+import {
+  buildResolvedTransitPublicPack,
+} from "@mta-wiki/pipeline/materialize/resolved-transit-public";
+import { assertPublicSafe } from "@mta-wiki/pipeline/consumer/public-contract";
 import { openResolvedTransitDb } from "@mta-wiki/db/resolved-transit-db";
 import {
   extractWriterRegion,
@@ -191,6 +202,33 @@ export function validateResolvedInterventionLifecycle(
     issues.push({
       code: "resolved_intervention_lifecycle_invalid",
       path: "data/resolved-transit/operator/v1",
+      message: error instanceof Error ? error.message : String(error),
+    });
+  }
+}
+
+export function validateResolvedTransitPublicContract(
+  issues: MtaValidationIssue[],
+  rootDir = repoRoot,
+): void {
+  try {
+    checkPublicKeyRegistry("2026-07-27", rootDir);
+    const display = buildOperatorPublicDisplayDictionary("2026-07-27", rootDir);
+    checkOperatorPublicDisplay(
+      join(rootDir, "data", "resolved-transit", "operator", "v1", "public-display"),
+      display,
+    );
+    const pack = buildResolvedTransitPublicPack("2026-07-27", rootDir);
+    assertPublicSafe(pack);
+    if (
+      pack.episodes.length !== Number(display.summary.episode_count) ||
+      pack.components.length !== Number(display.summary.component_count) ||
+      pack.placements.length !== Number(display.summary.placement_count)
+    ) throw new Error("public pack counts disagree with operator display dictionary");
+  } catch (error) {
+    issues.push({
+      code: "resolved_transit_public_contract_invalid",
+      path: "data/resolved-transit/operator/v1/public-display",
       message: error instanceof Error ? error.message : String(error),
     });
   }
@@ -893,6 +931,7 @@ export function validateRepo(options: {
   validateOperationalEpisodeFrontier(issues);
   validateResolvedInterventions(issues);
   validateResolvedInterventionLifecycle(issues);
+  validateResolvedTransitPublicContract(issues);
   const dbRecords = readCanonicalRecordsFromDbFile();
   if (!dbRecords) {
     issues.push({

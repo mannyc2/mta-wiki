@@ -9,8 +9,11 @@ import { createMtaWriterTools } from "./writer-tools.js";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 import { assertCanonicalDbSourceRefreshAvailable } from "@mta-wiki/db/canonical-db-source-refresh";
 import {
+  readResolvedCurrentInterventionFootprint,
   readResolvedInterventionApplications,
   readResolvedInterventionEpisodes,
+  readResolvedInterventionPlacements,
+  readResolvedInterventionPlacementStates,
 } from "@mta-wiki/db/resolved-transit-db";
 
 function textResult(text: string, details: Record<string, unknown> = {}) {
@@ -211,8 +214,156 @@ export function createMtaQueryTools(transcript: TranscriptWriter, runId: string,
     },
   };
 
+  const episodeSearchParameters = Type.Object({
+    query: Type.String(),
+    max_results: Type.Optional(Type.Number()),
+  });
+  const searchEpisodesTool: AgentTool<typeof episodeSearchParameters> = {
+    name: "search_intervention_episodes",
+    label: "Search Resolved Episodes",
+    description: "Search the reviewed resolved episode read model. This is not a source-document search.",
+    parameters: episodeSearchParameters,
+    executionMode: "parallel",
+    execute: async (_id, params) => {
+      const terms = queryTerms(params.query);
+      const episodes = readResolvedInterventionEpisodes({
+        ...(options.resolvedDbPath ? { path: options.resolvedDbPath } : {}),
+      });
+      const results = episodes.filter((row) => {
+        const text = JSON.stringify(row).toLowerCase();
+        return terms.every((term) => text.includes(term));
+      }).slice(0, Math.max(1, params.max_results ?? 8));
+      return textResult(JSON.stringify({
+        layer: "resolved-intervention-model-v1",
+        question_type: "reviewed_episode_resolution",
+        results,
+      }, null, 2), { resultCount: results.length });
+    },
+  };
+  const episodeGetParameters = Type.Object({ intervention_id: Type.String() });
+  const getEpisodeTool: AgentTool<typeof episodeGetParameters> = {
+    name: "get_intervention_episode",
+    label: "Get Resolved Episode",
+    description: "Get one resolved episode and its exact reviewed applications.",
+    parameters: episodeGetParameters,
+    executionMode: "parallel",
+    execute: async (_id, params) => {
+      const path = options.resolvedDbPath ? { path: options.resolvedDbPath } : {};
+      const episodes = readResolvedInterventionEpisodes({ occurrenceId: params.intervention_id, ...path });
+      const applications = readResolvedInterventionApplications({ occurrenceId: params.intervention_id, ...path });
+      return textResult(JSON.stringify({
+        layer: "resolved-intervention-model-v1", episodes, applications,
+      }, null, 2), { episodeCount: episodes.length, applicationCount: applications.length });
+    },
+  };
+  const routeHistoryParameters = Type.Object({ gtfs_route_id: Type.String() });
+  const routeHistoryTool: AgentTool<typeof routeHistoryParameters> = {
+    name: "list_route_intervention_history",
+    label: "List Route Intervention History",
+    description: "List exact resolved application history for one GTFS route.",
+    parameters: routeHistoryParameters,
+    executionMode: "parallel",
+    execute: async (_id, params) => {
+      const applications = readResolvedInterventionApplications({
+        gtfsRouteId: params.gtfs_route_id,
+        ...(options.resolvedDbPath ? { path: options.resolvedDbPath } : {}),
+      });
+      return textResult(JSON.stringify({
+        layer: "resolved-intervention-model-v1",
+        gtfs_route_id: params.gtfs_route_id,
+        applications,
+      }, null, 2), { applicationCount: applications.length });
+    },
+  };
+  const placementSearchParameters = Type.Object({
+    gtfs_route_id: Type.Optional(Type.String()),
+    treatment_family: Type.Optional(Type.String()),
+    state: Type.Optional(Type.String()),
+    as_of_date: Type.Optional(Type.String()),
+  });
+  const searchPlacementsTool: AgentTool<typeof placementSearchParameters> = {
+    name: "search_intervention_placements",
+    label: "Search Resolved Placements",
+    description: "Search stable resolved placement identities and optionally their dated state snapshot.",
+    parameters: placementSearchParameters,
+    executionMode: "parallel",
+    execute: async (_id, params) => {
+      const path = options.resolvedDbPath ? { path: options.resolvedDbPath } : {};
+      const placements = readResolvedInterventionPlacements({
+        ...(params.gtfs_route_id ? { gtfsRouteId: params.gtfs_route_id } : {}),
+        ...(params.treatment_family ? { treatmentFamily: params.treatment_family } : {}),
+        ...path,
+      });
+      const states = readResolvedInterventionPlacementStates({
+        ...(params.state ? { state: params.state } : {}),
+        ...(params.as_of_date ? { asOfDate: params.as_of_date } : {}),
+        ...path,
+      });
+      return textResult(JSON.stringify({
+        layer: "resolved-intervention-placement-v1", placements, states,
+      }, null, 2), { placementCount: placements.length, stateCount: states.length });
+    },
+  };
+  const placementGetParameters = Type.Object({ placement_id: Type.String() });
+  const getPlacementTool: AgentTool<typeof placementGetParameters> = {
+    name: "get_intervention_placement",
+    label: "Get Resolved Placement",
+    description: "Get one stable resolved placement plus available dated state and current-footprint rows.",
+    parameters: placementGetParameters,
+    executionMode: "parallel",
+    execute: async (_id, params) => {
+      const path = options.resolvedDbPath ? { path: options.resolvedDbPath } : {};
+      const placements = readResolvedInterventionPlacements({ placementId: params.placement_id, ...path });
+      const states = readResolvedInterventionPlacementStates({ placementId: params.placement_id, ...path });
+      const footprint = readResolvedCurrentInterventionFootprint(path);
+      return textResult(JSON.stringify({
+        layer: "resolved-intervention-placement-v1",
+        placements,
+        states,
+        current_footprint: footprint.filter((row) =>
+          (row as Record<string, unknown>).placement_id === params.placement_id
+        ),
+      }, null, 2), { placementCount: placements.length });
+    },
+  };
+  const stateGetParameters = Type.Object({
+    placement_id: Type.String(),
+    as_of_date: Type.String(),
+  });
+  const getStateTool: AgentTool<typeof stateGetParameters> = {
+    name: "get_intervention_state_as_of",
+    label: "Get Resolved Placement State",
+    description: "Read a placement state snapshot for an explicit date; absence means that date was not materialized, never an inferred state.",
+    parameters: stateGetParameters,
+    executionMode: "parallel",
+    execute: async (_id, params) => {
+      const states = readResolvedInterventionPlacementStates({
+        placementId: params.placement_id,
+        asOfDate: params.as_of_date,
+        ...(options.resolvedDbPath ? { path: options.resolvedDbPath } : {}),
+      });
+      return textResult(JSON.stringify({
+        layer: "resolved-intervention-placement-state-v1",
+        as_of_date: params.as_of_date,
+        states,
+        instruction: states.length ? "Resolved state snapshot." : "No state snapshot exists for this date; do not infer one.",
+      }, null, 2), { stateCount: states.length });
+    },
+  };
+
   const ingestReadTools = createMtaTools(transcript, runId).filter((tool) => READONLY_INGEST_TOOLS.has(tool.name));
   const writerReadTools = createMtaWriterTools(transcript, runId).filter((tool) => READONLY_WRITER_TOOLS.has(tool.name));
 
-  return [semanticSearchTool, resolvedTool, ...ingestReadTools, ...writerReadTools];
+  return [
+    semanticSearchTool,
+    resolvedTool,
+    searchEpisodesTool,
+    getEpisodeTool,
+    routeHistoryTool,
+    searchPlacementsTool,
+    getPlacementTool,
+    getStateTool,
+    ...ingestReadTools,
+    ...writerReadTools,
+  ];
 }

@@ -87,6 +87,12 @@ describe("createMtaQueryTools", () => {
     expect(names).toContain("mta_semantic_search");
     expect(names).toContain("mta_read_record");
     expect(names).toContain("mta_read_evidence");
+    expect(names).toContain("search_intervention_episodes");
+    expect(names).toContain("get_intervention_episode");
+    expect(names).toContain("list_route_intervention_history");
+    expect(names).toContain("search_intervention_placements");
+    expect(names).toContain("get_intervention_placement");
+    expect(names).toContain("get_intervention_state_as_of");
     expect(names).not.toContain("mta_submit_observation");
     expect(names).not.toContain("mta_write_writer_context");
     expect(names).not.toContain("mta_flag_record_issue");

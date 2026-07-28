@@ -216,6 +216,17 @@ export function preparePublicKeyMigration(input: {
   const existing = readPublicKeyOperations(root);
   const existingBySubject = new Map(existing.map((row) => [`${row.key_kind}|${row.subject_id}`, row]));
   const proposed = proposals(root);
+  for (const proposal of proposed.proposals) {
+    const prior = existingBySubject.get(`${proposal.key_kind}|${proposal.subject_id}`);
+    if (!prior) continue;
+    if (prior.public_key !== proposal.public_key ||
+        prior.owner_intervention_id !== proposal.owner_intervention_id ||
+        stableJson(prior.proposal_basis as unknown as JsonValue) !==
+          stableJson(proposal.proposal_basis as unknown as JsonValue) ||
+        prior.establishment_method !== proposal.establishment_method) {
+      throw new Error(`public-key operation no longer reproduces losslessly: ${prior.operation_id}`);
+    }
+  }
   const pending = proposed.proposals.filter((row) => !existingBySubject.has(`${row.key_kind}|${row.subject_id}`));
   const operations = pending.map(op).sort((a, b) => a.operation_id.localeCompare(b.operation_id));
   const review: PublicKeyMigration["requires_review"] = [];
