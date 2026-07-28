@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { basename, join, relative, resolve } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
@@ -810,3 +811,591 @@ export function parseOperationalOccurrenceReviewSnapshot(value: unknown): Operat
 // Occurrence-v2 phase and physical-scope relationships remain separately evidenced projections.
 const _occurrenceContractSupportsReviewV1: 1 = OPERATIONAL_OCCURRENCE_REVIEW_SCHEMA_VERSION;
 void _occurrenceContractSupportsReviewV1;
+
+export const OPERATIONAL_OCCURRENCE_REVIEW_V2_SCHEMA_VERSION = 2 as const;
+export const OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_V3_VERSION = 3 as const;
+
+export const OPERATIONAL_OCCURRENCE_APPLICATION_ACTIONS = [
+  "add",
+  "modify",
+  "remove",
+  "suspend",
+  "resume",
+  "retain",
+  "unknown",
+] as const;
+export type OperationalOccurrenceApplicationAction =
+  (typeof OPERATIONAL_OCCURRENCE_APPLICATION_ACTIONS)[number];
+
+export type OperationalOccurrenceReviewApplication = {
+  route_record_id: string;
+  gtfs_route_id: string;
+  treatment_record_id: string;
+  phase_record_id: string | null;
+  action: OperationalOccurrenceApplicationAction;
+  physical_scope_record_ids: string[];
+  evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+};
+
+export type OperationalOccurrenceAcceptedDecisionV2 = {
+  schema_version: 2;
+  decision_id: string;
+  review_state: "approved";
+  occurrence_id: string;
+  founding_key: string;
+  anchor_review_decision_ids: string[];
+  observation_event_record_ids: string[];
+  observation_relation_record_ids: string[];
+  resolution_cluster_id: string | null;
+  phase_record_ids: string[];
+  phase_relation_record_ids: string[];
+  physical_scope_record_ids: string[];
+  physical_scope_relation_record_ids: string[];
+  resolved_onset: OperationalOccurrenceReviewDecision["resolved_onset"];
+  routes: OperationalOccurrenceReviewDecision["routes"];
+  treatment: OperationalOccurrenceReviewTreatment;
+  applications: OperationalOccurrenceReviewApplication[];
+  evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+  reviewers: string[];
+  accepted_at: string;
+  rationale: string;
+  review_scope: "full_episode_application" | "lossless_v1_migration";
+  membership_fingerprint: string;
+};
+
+export type OperationalOccurrenceReviewSnapshotV3 = {
+  snapshot_version: 3;
+  decision_schema_version: 2;
+  decision_count: number;
+  decisions: OperationalOccurrenceAcceptedDecisionV2[];
+};
+
+const v2DecisionFields = new Set([
+  "accepted_at",
+  "anchor_review_decision_ids",
+  "applications",
+  "decision_id",
+  "evidence_bindings",
+  "founding_key",
+  "membership_fingerprint",
+  "observation_event_record_ids",
+  "observation_relation_record_ids",
+  "occurrence_id",
+  "phase_record_ids",
+  "phase_relation_record_ids",
+  "physical_scope_record_ids",
+  "physical_scope_relation_record_ids",
+  "rationale",
+  "resolution_cluster_id",
+  "resolved_onset",
+  "review_scope",
+  "review_state",
+  "reviewers",
+  "routes",
+  "schema_version",
+  "treatment",
+]);
+const applicationFields = new Set([
+  "action",
+  "evidence_bindings",
+  "gtfs_route_id",
+  "phase_record_id",
+  "physical_scope_record_ids",
+  "route_record_id",
+  "treatment_record_id",
+]);
+const v2BindingFields = new Set(["evidence_id", "record_id", "role", "source_id"]);
+const v2EvidenceRoles = new Set<OperationalOccurrenceEvidenceBinding["role"]>([
+  ...OPERATIONAL_OCCURRENCE_REVIEW_V1_EVIDENCE_ROLES,
+  "phase_relation",
+  "physical_scope",
+]);
+
+function uniqueSortedV2(values: readonly string[]): string[] {
+  return [...new Set(values)].sort((left, right) => left.localeCompare(right));
+}
+
+function v2Binding(value: unknown, path: string): OperationalOccurrenceEvidenceBinding {
+  const input = acceptedObject(value, path);
+  acceptedKeys(input, v2BindingFields, path);
+  const role = acceptedString(input.role, `${path}.role`);
+  if (!v2EvidenceRoles.has(role as OperationalOccurrenceEvidenceBinding["role"])) {
+    throw new Error(`${path}.role is unsupported: ${role}`);
+  }
+  return {
+    role: role as OperationalOccurrenceEvidenceBinding["role"],
+    record_id: acceptedString(input.record_id, `${path}.record_id`),
+    source_id: acceptedString(input.source_id, `${path}.source_id`),
+    evidence_id: acceptedString(input.evidence_id, `${path}.evidence_id`),
+  };
+}
+
+function v2Bindings(
+  value: unknown,
+  path: string,
+  options: { allowEmpty?: boolean } = {},
+): OperationalOccurrenceEvidenceBinding[] {
+  if (!Array.isArray(value) || (!options.allowEmpty && value.length === 0)) {
+    throw new Error(`${path} must be ${options.allowEmpty ? "an" : "a non-empty"} array`);
+  }
+  const bindings = value.map((entry, index) => v2Binding(entry, `${path}[${index}]`));
+  const sorted = [...bindings].sort((left, right) =>
+    [left.role, left.record_id, left.source_id, left.evidence_id].join("|").localeCompare(
+      [right.role, right.record_id, right.source_id, right.evidence_id].join("|"),
+    )
+  );
+  const keys = sorted.map((binding) =>
+    [binding.role, binding.record_id, binding.source_id, binding.evidence_id].join("|")
+  );
+  if (new Set(keys).size !== keys.length) throw new Error(`${path} must not contain duplicate bindings`);
+  return sorted;
+}
+
+function v2StringArray(
+  value: unknown,
+  path: string,
+  options: { allowEmpty?: boolean } = {},
+): string[] {
+  const values = options.allowEmpty
+    ? acceptedPossiblyEmptyStringArray(value, path)
+    : acceptedStringArray(value, path);
+  return [...values].sort((left, right) => left.localeCompare(right));
+}
+
+function parseV2BaseDecision(
+  input: Record<string, unknown>,
+  path: string,
+): OperationalOccurrenceReviewDecision {
+  const snapshot = parseOperationalOccurrenceReviewSnapshot({
+    snapshot_version: 1,
+    decision_schema_version: 1,
+    decision_count: 1,
+    decisions: [{
+      schema_version: 1,
+      decision_id: input.decision_id,
+      review_state: input.review_state,
+      occurrence_id: input.occurrence_id,
+      founding_key: input.founding_key,
+      anchor_review_decision_ids: input.anchor_review_decision_ids,
+      resolved_onset: input.resolved_onset,
+      routes: input.routes,
+      treatment: input.treatment,
+      evidence_bindings: (input.evidence_bindings as unknown[]).filter((binding) =>
+        !["phase_relation", "physical_scope"].includes(
+          String((binding as Record<string, unknown>).role),
+        )
+      ),
+      reviewers: input.reviewers,
+      accepted_at: input.accepted_at,
+      rationale: input.rationale,
+    }],
+  });
+  const decision = snapshot.decisions[0];
+  if (!decision) throw new Error(`${path} cannot parse legacy-compatible decision fields`);
+  return decision;
+}
+
+function membershipProjection(
+  decision: Omit<OperationalOccurrenceAcceptedDecisionV2, "membership_fingerprint">,
+): JsonValue {
+  return {
+    applications: decision.applications,
+    evidence_bindings: decision.evidence_bindings,
+    founding_key: decision.founding_key,
+    observation_event_record_ids: decision.observation_event_record_ids,
+    observation_relation_record_ids: decision.observation_relation_record_ids,
+    occurrence_id: decision.occurrence_id,
+    phase_record_ids: decision.phase_record_ids,
+    phase_relation_record_ids: decision.phase_relation_record_ids,
+    physical_scope_record_ids: decision.physical_scope_record_ids,
+    physical_scope_relation_record_ids: decision.physical_scope_relation_record_ids,
+    resolution_cluster_id: decision.resolution_cluster_id,
+    resolved_onset: decision.resolved_onset,
+    routes: decision.routes,
+    treatment: decision.treatment,
+  } as unknown as JsonValue;
+}
+
+export function operationalOccurrenceReviewMembershipFingerprint(
+  decision: Omit<OperationalOccurrenceAcceptedDecisionV2, "membership_fingerprint">,
+): string {
+  return createHash("sha256")
+    .update(stableJson(membershipProjection(decision)))
+    .digest("hex");
+}
+
+export function parseOperationalOccurrenceAcceptedDecisionV2(
+  value: unknown,
+  path = "operational occurrence accepted decision v2",
+): OperationalOccurrenceAcceptedDecisionV2 {
+  const input = acceptedObject(value, path);
+  acceptedKeys(input, v2DecisionFields, path);
+  if (input.schema_version !== OPERATIONAL_OCCURRENCE_REVIEW_V2_SCHEMA_VERSION) {
+    throw new Error(`${path}.schema_version must be 2`);
+  }
+  if (!Array.isArray(input.evidence_bindings)) throw new Error(`${path}.evidence_bindings must be an array`);
+  const base = parseV2BaseDecision(input, path);
+  const applicationsInput = input.applications;
+  if (!Array.isArray(applicationsInput) || applicationsInput.length === 0) {
+    throw new Error(`${path}.applications must be a non-empty array`);
+  }
+  const applications = applicationsInput.map((entry, index): OperationalOccurrenceReviewApplication => {
+    const applicationPath = `${path}.applications[${index}]`;
+    const application = acceptedObject(entry, applicationPath);
+    acceptedKeys(application, applicationFields, applicationPath);
+    const action = acceptedString(application.action, `${applicationPath}.action`);
+    if (!OPERATIONAL_OCCURRENCE_APPLICATION_ACTIONS.includes(action as OperationalOccurrenceApplicationAction)) {
+      throw new Error(`${applicationPath}.action is unsupported: ${action}`);
+    }
+    const phaseRecordId = application.phase_record_id === null
+      ? null
+      : acceptedString(application.phase_record_id, `${applicationPath}.phase_record_id`);
+    return {
+      route_record_id: acceptedString(application.route_record_id, `${applicationPath}.route_record_id`),
+      gtfs_route_id: acceptedString(application.gtfs_route_id, `${applicationPath}.gtfs_route_id`),
+      treatment_record_id: acceptedString(
+        application.treatment_record_id,
+        `${applicationPath}.treatment_record_id`,
+      ),
+      phase_record_id: phaseRecordId,
+      action: action as OperationalOccurrenceApplicationAction,
+      physical_scope_record_ids: v2StringArray(
+        application.physical_scope_record_ids,
+        `${applicationPath}.physical_scope_record_ids`,
+        { allowEmpty: true },
+      ),
+      evidence_bindings: v2Bindings(
+        application.evidence_bindings,
+        `${applicationPath}.evidence_bindings`,
+      ),
+    };
+  }).sort((left, right) =>
+    [
+      left.route_record_id,
+      left.gtfs_route_id,
+      left.treatment_record_id,
+      left.phase_record_id ?? "",
+      left.action,
+    ].join("|").localeCompare([
+      right.route_record_id,
+      right.gtfs_route_id,
+      right.treatment_record_id,
+      right.phase_record_id ?? "",
+      right.action,
+    ].join("|"))
+  );
+  const applicationKeys = applications.map((application) =>
+    [
+      application.route_record_id,
+      application.gtfs_route_id,
+      application.treatment_record_id,
+      application.phase_record_id ?? "",
+    ].join("|")
+  );
+  if (new Set(applicationKeys).size !== applicationKeys.length) {
+    throw new Error(`${path}.applications must not contain duplicate incidence rows`);
+  }
+  const reviewScope = acceptedString(input.review_scope, `${path}.review_scope`);
+  if (reviewScope !== "full_episode_application" && reviewScope !== "lossless_v1_migration") {
+    throw new Error(`${path}.review_scope is unsupported: ${reviewScope}`);
+  }
+  const decisionWithoutFingerprint: Omit<
+    OperationalOccurrenceAcceptedDecisionV2,
+    "membership_fingerprint"
+  > = {
+    schema_version: 2,
+    decision_id: base.decision_id,
+    review_state: "approved",
+    occurrence_id: base.occurrence_id,
+    founding_key: base.founding_key,
+    anchor_review_decision_ids: [...base.anchor_review_decision_ids].sort(),
+    observation_event_record_ids: v2StringArray(
+      input.observation_event_record_ids,
+      `${path}.observation_event_record_ids`,
+    ),
+    observation_relation_record_ids: v2StringArray(
+      input.observation_relation_record_ids,
+      `${path}.observation_relation_record_ids`,
+      { allowEmpty: true },
+    ),
+    resolution_cluster_id:
+      input.resolution_cluster_id === null
+        ? null
+        : acceptedString(input.resolution_cluster_id, `${path}.resolution_cluster_id`),
+    phase_record_ids: v2StringArray(input.phase_record_ids, `${path}.phase_record_ids`),
+    phase_relation_record_ids: v2StringArray(
+      input.phase_relation_record_ids,
+      `${path}.phase_relation_record_ids`,
+      { allowEmpty: true },
+    ),
+    physical_scope_record_ids: v2StringArray(
+      input.physical_scope_record_ids,
+      `${path}.physical_scope_record_ids`,
+      { allowEmpty: true },
+    ),
+    physical_scope_relation_record_ids: v2StringArray(
+      input.physical_scope_relation_record_ids,
+      `${path}.physical_scope_relation_record_ids`,
+      { allowEmpty: true },
+    ),
+    resolved_onset: base.resolved_onset,
+    routes: [...base.routes].sort((left, right) =>
+      left.route_record_id.localeCompare(right.route_record_id)
+    ),
+    treatment: base.treatment,
+    applications,
+    evidence_bindings: v2Bindings(input.evidence_bindings, `${path}.evidence_bindings`),
+    reviewers: [...base.reviewers].sort(),
+    accepted_at: base.accepted_at,
+    rationale: base.rationale,
+    review_scope: reviewScope,
+  };
+  const expectedFingerprint = operationalOccurrenceReviewMembershipFingerprint(
+    decisionWithoutFingerprint,
+  );
+  const fingerprint = acceptedString(
+    input.membership_fingerprint,
+    `${path}.membership_fingerprint`,
+  );
+  if (!/^[a-f0-9]{64}$/u.test(fingerprint) || fingerprint !== expectedFingerprint) {
+    throw new Error(`${path}.membership_fingerprint is stale`);
+  }
+  return { ...decisionWithoutFingerprint, membership_fingerprint: fingerprint };
+}
+
+function treatmentMembers(
+  treatment: OperationalOccurrenceReviewTreatment,
+): Array<{ treatment_record_id: string; evidence_bindings: OperationalOccurrenceEvidenceBinding[] }> {
+  return treatment.kind === "atomic"
+    ? [{
+        treatment_record_id: treatment.member.treatment_record_id,
+        evidence_bindings: treatment.member.evidence_bindings,
+      }]
+    : treatment.members.map((member) => ({
+        treatment_record_id: member.treatment_record_id,
+        evidence_bindings: member.evidence_bindings,
+      }));
+}
+
+function rowObservationEventIds(row: OperationalOccurrenceRow): string[] {
+  return uniqueSortedV2(row.observations.map((observation) => observation.event_record_id));
+}
+
+function rowObservationRelationIds(row: OperationalOccurrenceRow): string[] {
+  return uniqueSortedV2(row.observations.flatMap((observation) => observation.relation_record_ids));
+}
+
+function losslessApplications(
+  row: OperationalOccurrenceRow,
+  treatment: OperationalOccurrenceReviewTreatment,
+): OperationalOccurrenceReviewApplication[] {
+  const members = treatmentMembers(treatment);
+  if (row.routes.length > 1 && members.length > 1) {
+    throw new Error(
+      `occurrence ${row.occurrence_id} requires explicit route-treatment application review`,
+    );
+  }
+  if (row.phase_record_ids.length !== 1) {
+    throw new Error(`occurrence ${row.occurrence_id} requires explicit phase application review`);
+  }
+  return row.routes.flatMap((route) =>
+    members.map((member) => {
+      const bindings = v2Bindings([
+        ...route.evidence_bindings,
+        ...member.evidence_bindings,
+        ...row.phase_relation_evidence_bindings,
+        ...row.physical_scope_evidence_bindings,
+      ], `occurrence ${row.occurrence_id} application evidence`);
+      return {
+        route_record_id: route.route_record_id,
+        gtfs_route_id: route.gtfs_route_id,
+        treatment_record_id: member.treatment_record_id,
+        phase_record_id: row.phase_record_ids[0]!,
+        action: "unknown" as const,
+        physical_scope_record_ids: [...row.physical_scope_record_ids].sort(),
+        evidence_bindings: bindings,
+      };
+    })
+  ).sort((left, right) =>
+    [left.route_record_id, left.treatment_record_id].join("|").localeCompare(
+      [right.route_record_id, right.treatment_record_id].join("|"),
+    )
+  );
+}
+
+export function migrateOperationalOccurrenceReviewDecisionV2(
+  row: OperationalOccurrenceRow,
+  legacyDecision: OperationalOccurrenceReviewDecision,
+): OperationalOccurrenceAcceptedDecisionV2 {
+  if (row.occurrence_id !== legacyDecision.occurrence_id) {
+    throw new Error(`legacy review ${legacyDecision.decision_id} does not bind ${row.occurrence_id}`);
+  }
+  const treatment = treatmentBinding(row);
+  const applications = losslessApplications(row, treatment);
+  const withoutFingerprint: Omit<
+    OperationalOccurrenceAcceptedDecisionV2,
+    "membership_fingerprint"
+  > = {
+    schema_version: 2,
+    decision_id: legacyDecision.decision_id,
+    review_state: "approved",
+    occurrence_id: row.occurrence_id,
+    founding_key: row.founding_key,
+    anchor_review_decision_ids: [...legacyDecision.anchor_review_decision_ids].sort(),
+    observation_event_record_ids: rowObservationEventIds(row),
+    observation_relation_record_ids: rowObservationRelationIds(row),
+    resolution_cluster_id: row.resolution_cluster_id,
+    phase_record_ids: [...row.phase_record_ids].sort(),
+    phase_relation_record_ids: [...row.phase_relation_record_ids].sort(),
+    physical_scope_record_ids: [...row.physical_scope_record_ids].sort(),
+    physical_scope_relation_record_ids: [...row.physical_scope_relation_record_ids].sort(),
+    resolved_onset: legacyDecision.resolved_onset,
+    routes: [...legacyDecision.routes].sort((left, right) =>
+      left.route_record_id.localeCompare(right.route_record_id)
+    ),
+    treatment,
+    applications,
+    evidence_bindings: v2Bindings(
+      row.evidence_bindings,
+      `occurrence ${row.occurrence_id} evidence_bindings`,
+    ),
+    reviewers: [...legacyDecision.reviewers].sort(),
+    accepted_at: legacyDecision.accepted_at,
+    rationale: legacyDecision.rationale,
+    review_scope: "lossless_v1_migration",
+  };
+  return {
+    ...withoutFingerprint,
+    membership_fingerprint:
+      operationalOccurrenceReviewMembershipFingerprint(withoutFingerprint),
+  };
+}
+
+function exactRowMembership(row: OperationalOccurrenceRow): JsonValue {
+  return {
+    applications: losslessApplications(row, treatmentBinding(row)),
+    founding_key: row.founding_key,
+    observation_event_record_ids: rowObservationEventIds(row),
+    observation_relation_record_ids: rowObservationRelationIds(row),
+    occurrence_id: row.occurrence_id,
+    phase_record_ids: [...row.phase_record_ids].sort(),
+    phase_relation_record_ids: [...row.phase_relation_record_ids].sort(),
+    physical_scope_record_ids: [...row.physical_scope_record_ids].sort(),
+    physical_scope_relation_record_ids: [...row.physical_scope_relation_record_ids].sort(),
+    resolution_cluster_id: row.resolution_cluster_id,
+  } as unknown as JsonValue;
+}
+
+function exactDecisionMembership(
+  decision: OperationalOccurrenceAcceptedDecisionV2,
+): JsonValue {
+  return {
+    applications: decision.applications,
+    founding_key: decision.founding_key,
+    observation_event_record_ids: decision.observation_event_record_ids,
+    observation_relation_record_ids: decision.observation_relation_record_ids,
+    occurrence_id: decision.occurrence_id,
+    phase_record_ids: decision.phase_record_ids,
+    phase_relation_record_ids: decision.phase_relation_record_ids,
+    physical_scope_record_ids: decision.physical_scope_record_ids,
+    physical_scope_relation_record_ids: decision.physical_scope_relation_record_ids,
+    resolution_cluster_id: decision.resolution_cluster_id,
+  } as unknown as JsonValue;
+}
+
+export function assertOperationalOccurrenceReviewDecisionsV2(
+  decisions: readonly OperationalOccurrenceAcceptedDecisionV2[],
+  rows: readonly OperationalOccurrenceRow[],
+): OperationalOccurrenceAcceptedDecisionV2[] {
+  const parsed = decisions.map((decision, index) =>
+    parseOperationalOccurrenceAcceptedDecisionV2(decision, `occurrence review v2[${index}]`)
+  );
+  const rowsById = new Map(rows.map((row) => [row.occurrence_id, row]));
+  if (new Set(parsed.map((decision) => decision.decision_id)).size !== parsed.length) {
+    throw new Error("duplicate occurrence review v2 decision_id");
+  }
+  if (new Set(parsed.map((decision) => decision.occurrence_id)).size !== parsed.length) {
+    throw new Error("duplicate occurrence review v2 occurrence_id");
+  }
+  for (const decision of parsed) {
+    const row = rowsById.get(decision.occurrence_id);
+    if (!row) throw new Error(`occurrence review v2 ${decision.decision_id} references missing occurrence`);
+    if (
+      stableJson(exactDecisionMembership(decision)) !==
+      stableJson(exactRowMembership(row))
+    ) {
+      throw new Error(
+        `occurrence review v2 ${decision.decision_id} is stale for exact episode membership`,
+      );
+    }
+  }
+  return [...parsed].sort((left, right) =>
+    left.decision_id.localeCompare(right.decision_id)
+  );
+}
+
+export function operationalOccurrenceReviewSnapshotV3(
+  decisions: readonly OperationalOccurrenceAcceptedDecisionV2[],
+): OperationalOccurrenceReviewSnapshotV3 {
+  const sorted = [...decisions].sort((left, right) =>
+    left.decision_id.localeCompare(right.decision_id)
+  );
+  return {
+    snapshot_version: 3,
+    decision_schema_version: 2,
+    decision_count: sorted.length,
+    decisions: sorted,
+  };
+}
+
+export function operationalOccurrenceReviewSnapshotV3Json(
+  decisions: readonly OperationalOccurrenceAcceptedDecisionV2[],
+): string {
+  const snapshot = operationalOccurrenceReviewSnapshotV3(decisions);
+  const text = `${stableJson(snapshot as unknown as JsonValue)}\n`;
+  parseOperationalOccurrenceReviewSnapshotV3(JSON.parse(text) as unknown);
+  return text;
+}
+
+export function parseOperationalOccurrenceReviewSnapshotV3(
+  value: unknown,
+): OperationalOccurrenceReviewSnapshotV3 {
+  const input = acceptedObject(value, "operational occurrence review snapshot v3");
+  acceptedKeys(input, new Set([
+    "decision_count",
+    "decision_schema_version",
+    "decisions",
+    "snapshot_version",
+  ]), "operational occurrence review snapshot v3");
+  if (
+    input.snapshot_version !== OPERATIONAL_OCCURRENCE_REVIEW_SNAPSHOT_V3_VERSION ||
+    input.decision_schema_version !== OPERATIONAL_OCCURRENCE_REVIEW_V2_SCHEMA_VERSION
+  ) {
+    throw new Error("operational occurrence review snapshot v3 contract versions are invalid");
+  }
+  if (!Array.isArray(input.decisions)) {
+    throw new Error("operational occurrence review snapshot v3.decisions must be an array");
+  }
+  const decisions = input.decisions.map((decision, index) =>
+    parseOperationalOccurrenceAcceptedDecisionV2(
+      decision,
+      `operational occurrence review snapshot v3.decisions[${index}]`,
+    )
+  );
+  if (input.decision_count !== decisions.length) {
+    throw new Error("operational occurrence review snapshot v3.decision_count is stale");
+  }
+  const ids = decisions.map((decision) => decision.decision_id);
+  if (
+    new Set(ids).size !== ids.length ||
+    ids.join("\n") !== [...ids].sort().join("\n")
+  ) {
+    throw new Error("operational occurrence review snapshot v3 decisions must be sorted and unique");
+  }
+  return {
+    snapshot_version: 3,
+    decision_schema_version: 2,
+    decision_count: decisions.length,
+    decisions,
+  };
+}
