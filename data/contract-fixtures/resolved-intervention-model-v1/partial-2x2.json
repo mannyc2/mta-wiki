@@ -1,0 +1,1 @@
+{"authorized_pairs":[{"route_record_id":"route_a","treatment_record_id":"treatment_x"},{"route_record_id":"route_b","treatment_record_id":"treatment_y"}],"forbidden_inferred_pairs":[{"route_record_id":"route_a","treatment_record_id":"treatment_y"},{"route_record_id":"route_b","treatment_record_id":"treatment_x"}],"schema_version":1}
