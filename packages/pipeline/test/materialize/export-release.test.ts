@@ -1593,7 +1593,7 @@ describe("exportRelease", () => {
     const missingPointer = structuredClone(manifest);
     delete (missingPointer.pointers as Partial<typeof missingPointer.pointers>).operational_anchor_review_decisions;
     expect(() => parseReleaseManifest(missingPointer)).toThrow("pointers.operational_anchor_review_decisions");
-    expect(() => parseReleaseManifest({ manifest_version: 7 })).toThrow("expected 1, 2, 3, 4, 5, or 6");
+    expect(() => parseReleaseManifest({ manifest_version: 8 })).toThrow("expected 1 through 7");
   });
 
   it("requires all manifest-v3 occurrence pointers to be addressed", () => {

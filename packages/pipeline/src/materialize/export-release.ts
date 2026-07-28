@@ -89,6 +89,10 @@ import {
   stageReleaseCompanions,
 } from "@mta-wiki/pipeline/materialize/release-companions";
 import { runStudyFrontierPreflight } from "@mta-wiki/pipeline/quality/study-frontier-preflight";
+import {
+  parseReleaseResourceDescriptors,
+  type ReleaseResourceDescriptor,
+} from "./release-resource-descriptors.js";
 
 export type ReleaseManifestFile = {
   bytes: number;
@@ -96,7 +100,7 @@ export type ReleaseManifestFile = {
 };
 
 export type ReleaseManifest = {
-  manifest_version: 1 | 2 | 3 | 4 | 5 | 6;
+  manifest_version: 1 | 2 | 3 | 4 | 5 | 6 | 7;
   release_id: string;
   generator_commit: string;
   contract_versions: {
@@ -132,6 +136,10 @@ export type ReleaseManifest = {
     study_readiness_v2?: string | null | undefined;
     frontier_exceptions?: string | null | undefined;
   };
+  resource_descriptors?: ReleaseResourceDescriptor[] | undefined;
+  build_receipt?: string | undefined;
+  export_profile?: "resolved-pack-v1" | undefined;
+  as_of_date?: string | undefined;
 };
 
 function manifestObject(value: unknown, path: string): Record<string, unknown> {
@@ -188,14 +196,16 @@ function assertManifestKeys(object: Record<string, unknown>, allowed: readonly s
 export function parseReleaseManifest(value: unknown): ReleaseManifest {
   const root = manifestObject(value, "$root");
   const version = root.manifest_version === undefined ? 1 : root.manifest_version;
-  if (version !== 1 && version !== 2 && version !== 3 && version !== 4 && version !== 5 && version !== 6) {
-    throw new Error("Invalid release manifest manifest_version: expected 1, 2, 3, 4, 5, or 6");
+  if (version !== 1 && version !== 2 && version !== 3 && version !== 4 && version !== 5 && version !== 6 && version !== 7) {
+    throw new Error("Invalid release manifest manifest_version: expected 1 through 7");
   }
   assertManifestKeys(
     root,
     version === 1
       ? ["manifest_version", "release_id", "generator_commit", "record_counts", "files", "pointers"]
-      : ["manifest_version", "release_id", "generator_commit", "contract_versions", "record_counts", "files", "pointers"],
+      : version === 7
+        ? ["manifest_version", "release_id", "generator_commit", "contract_versions", "record_counts", "files", "pointers", "resource_descriptors", "build_receipt", "export_profile", "as_of_date"]
+        : ["manifest_version", "release_id", "generator_commit", "contract_versions", "record_counts", "files", "pointers"],
     "$root",
   );
 
@@ -264,7 +274,7 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
                     "route_identity_snapshot",
                     "operational_occurrence_member_extents",
                     "quality_provenance",
-                    ...(version === 6
+                    ...(version >= 6
                       ? [
                           "bus_lane_identity_verdicts",
                           "operational_occurrence_member_grain",
@@ -342,7 +352,7 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
                     "route_anchors",
                     "route_identity_snapshot",
                     "operational_occurrence_member_extents",
-                    ...(version === 6
+                    ...(version >= 6
                       ? [
                           "bus_lane_identity_verdicts",
                           "operational_occurrence_member_grain",
@@ -413,7 +423,7 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
         if (input.operational_occurrence_member_extents === OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION) {
           contracts.operational_occurrence_member_extents = OPERATIONAL_OCCURRENCE_MEMBER_EXTENT_SCHEMA_VERSION;
         }
-        if (version === 6) {
+        if (version >= 6) {
           if (
             input.bus_lane_identity_verdicts !==
               BUS_LANE_IDENTITY_VERDICT_SCHEMA_VERSION ||
@@ -433,7 +443,7 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
     }
   }
 
-  return {
+  const base: ReleaseManifest = {
     manifest_version: version,
     release_id: manifestString(root.release_id, "release_id"),
     generator_commit: manifestString(root.generator_commit, "generator_commit"),
@@ -477,28 +487,28 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
             )
           : null,
       route_identity_snapshot: version >= 5 ? manifestAddressedPointer(pointersInput.route_identity_snapshot, "pointers.route_identity_snapshot", files) : null,
-      bus_lane_identity_verdicts: version === 6
+      bus_lane_identity_verdicts: version >= 6
         ? manifestAddressedPointer(
             pointersInput.bus_lane_identity_verdicts,
             "pointers.bus_lane_identity_verdicts",
             files,
           )
         : null,
-      operational_occurrence_member_grain: version === 6
+      operational_occurrence_member_grain: version >= 6
         ? manifestAddressedPointer(
             pointersInput.operational_occurrence_member_grain,
             "pointers.operational_occurrence_member_grain",
             files,
           )
         : null,
-      study_readiness_v2: version === 6
+      study_readiness_v2: version >= 6
         ? manifestAddressedPointer(
             pointersInput.study_readiness_v2,
             "pointers.study_readiness_v2",
             files,
           )
         : null,
-      frontier_exceptions: version === 6
+      frontier_exceptions: version >= 6
         ? manifestAddressedPointer(
             pointersInput.frontier_exceptions,
             "pointers.frontier_exceptions",
@@ -506,7 +516,23 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
           )
         : null,
     },
+    ...(version === 7
+      ? {
+          resource_descriptors: root.resource_descriptors as ReleaseResourceDescriptor[],
+          build_receipt: manifestAddressedPointer(root.build_receipt, "build_receipt", files),
+          export_profile: root.export_profile === "resolved-pack-v1"
+            ? "resolved-pack-v1"
+            : (() => { throw new Error("Invalid release manifest export_profile"); })(),
+          as_of_date: typeof root.as_of_date === "string" && /^\d{4}-\d{2}-\d{2}$/u.test(root.as_of_date)
+            ? root.as_of_date
+            : (() => { throw new Error("Invalid release manifest as_of_date"); })(),
+        }
+      : {}),
   };
+  if (version === 7) {
+    base.resource_descriptors = parseReleaseResourceDescriptors(root.resource_descriptors, files);
+  }
+  return base;
 }
 
 export type ReleaseExportResult = {

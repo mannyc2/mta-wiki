@@ -1,6 +1,7 @@
 import { spawnSync } from "node:child_process";
-import { existsSync, readdirSync, writeFileSync } from "node:fs";
-import { join, relative } from "node:path";
+import { randomUUID } from "node:crypto";
+import { existsSync, readdirSync, renameSync, rmSync, writeFileSync } from "node:fs";
+import { isAbsolute, join, relative, resolve } from "node:path";
 import {
   auditPostIngestCoverage,
   auditSubmissionSourceIdDrift,
@@ -49,7 +50,11 @@ import {
   writePipelineReport,
   type PipelineReport,
 } from "@mta-wiki/agents";
+import { exportResolvedTransitRelease } from "@mta-wiki/pipeline/materialize/export-resolved-transit-release";
+import { verificationSummary } from "@mta-wiki/pipeline/materialize/release-verifier";
 import { canonicalDbPath } from "@mta-wiki/db/canonical-db";
+import { stableJson } from "@mta-wiki/db/stable-json";
+import type { JsonValue } from "@mta-wiki/db/types";
 import { assertCanonicalDbSourceRefreshAvailable } from "@mta-wiki/db/canonical-db-source-refresh";
 import { loadRelationshipContract, relationshipContractValidationMode } from "@mta-wiki/db/relationship-contract";
 import { rebuildResolvedTransitDb } from "@mta-wiki/db/resolved-transit-db";
@@ -481,6 +486,35 @@ export const materializeCommands = {
 
   "export-release": (args) => {
     const releaseId = optionValue(process.argv, "--id") ?? new Date().toISOString().slice(0, 10);
+    const profile = optionValue(process.argv, "--profile");
+    if (profile !== undefined) {
+      if (profile !== "resolved-pack-v1") throw new Error(`Unknown release export profile: ${profile}`);
+      const asOfDate = optionValue(process.argv, "--as-of");
+      const outputRoot = optionValue(process.argv, "--output-root");
+      if (!asOfDate || !outputRoot) throw new Error("resolved-pack-v1 requires --as-of and --output-root");
+      const allowed = new Set(["--id", "--profile", "--as-of", "--output-root", "--publish-check"]);
+      const valueFlags = new Set(["--id", "--profile", "--as-of", "--output-root"]);
+      const seen = new Set<string>();
+      for (let index = 3; index < process.argv.length; index += 1) {
+        const flag = process.argv[index]!;
+        if (!flag.startsWith("--") || !allowed.has(flag)) throw new Error(`Unknown resolved-pack-v1 flag: ${flag}`);
+        if (seen.has(flag)) throw new Error(`Duplicate resolved-pack-v1 flag: ${flag}`);
+        seen.add(flag);
+        if (valueFlags.has(flag)) index += 1;
+      }
+      const result = exportResolvedTransitRelease(releaseId, {
+        rootDir: repoRoot,
+        outputRoot,
+        asOfDate,
+        publishCheck: process.argv.includes("--publish-check"),
+      });
+      console.log(
+        `Exported resolved release ${result.releaseId}: manifest-v7, ${result.files} addressed files ` +
+        `(manifest ${result.manifestSha256.slice(0, 12)}; build ${result.buildId.slice(0, 12)}; ` +
+        `publication eligible=${result.publicationEligible}; LATEST unchanged)`,
+      );
+      return;
+    }
     const setLatest = process.argv.includes("--set-latest");
     const relationshipCompletenessStaging = process.argv.includes("--relationship-completeness-staging");
     const result = exportRelease(releaseId, {
@@ -503,11 +537,38 @@ export const materializeCommands = {
 
   "verify-release": (args) => {
     const releaseId = requireSubject(args.command, args.subject, "release id");
+    if (releaseId.includes("/") || releaseId.includes("\\") || releaseId === "." || releaseId === "..") {
+      throw new Error("release id must be a safe single path segment");
+    }
+    const allowed = new Set(["--release-root", "--json-out"]);
+    const seen = new Set<string>();
+    for (let index = 4; index < process.argv.length; index += 2) {
+      const flag = process.argv[index]!;
+      if (!allowed.has(flag)) throw new Error(`Unknown verify-release flag: ${flag}`);
+      if (seen.has(flag)) throw new Error(`Duplicate verify-release flag: ${flag}`);
+      seen.add(flag);
+      const value = process.argv[index + 1];
+      if (!value || value.startsWith("--")) throw new Error(`Missing value for ${flag}`);
+    }
+    const releaseRoot = optionValue(process.argv, "--release-root");
+    const jsonOut = optionValue(process.argv, "--json-out");
+    const containingRoot = releaseRoot ? resolve(releaseRoot) : join(repoRoot, "data", "exports", "releases");
     const result = verifyReleaseDirectory(
-      join(repoRoot, "data", "exports", "releases", releaseId),
+      join(containingRoot, releaseId),
       releaseId,
       { sourceRootDir: repoRoot },
     );
+    if (jsonOut) {
+      if (!isAbsolute(jsonOut)) throw new Error("--json-out must be an absolute path");
+      const temp = `${jsonOut}.tmp-${randomUUID()}`;
+      try {
+        writeFileSync(temp, `${stableJson(verificationSummary(result) as unknown as JsonValue)}\n`);
+        renameSync(temp, jsonOut);
+      } catch (error) {
+        if (existsSync(temp)) rmSync(temp, { force: true });
+        throw error;
+      }
+    }
     console.log(
       `Verified release ${result.release_id}: manifest-v${result.manifest_version}, ${result.verified_file_count} files, ` +
         `${result.verified_record_count} canonical records (manifest ${result.manifest_sha256.slice(0, 12)}).`,
