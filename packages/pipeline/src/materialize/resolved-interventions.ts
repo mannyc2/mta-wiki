@@ -18,7 +18,7 @@ import {
   type OperationalOccurrenceReviewTreatment,
 } from "./operational-occurrence-review.js";
 import type { OperationalOccurrenceEvidenceBinding } from "./operational-occurrences.js";
-import { readCanonicalRecordsFromJsonl } from "./canonical-read.js";
+import { readCanonicalRecords } from "./canonical-read.js";
 import {
   parseResolvedInterventionApplication,
   resolvedInterventionApplicationIdentity,
@@ -866,7 +866,7 @@ export function buildProductionResolvedInterventions(rootDir = repoRoot): Resolv
       .map((line) => JSON.parse(line) as NonNullable<BuildResolvedInterventionsInput["legacy_member_extent_rows"]>[number])
     : [];
   return buildResolvedInterventions({
-    canonical_records: readCanonicalRecordsFromJsonl(),
+    canonical_records: readCanonicalRecords(),
     candidate_ledger,
     identity_registry: loadOperationalOccurrenceIdentityRegistryV2(rootDir),
     review_decisions: loadOperationalOccurrenceAcceptedDecisionsV2(
