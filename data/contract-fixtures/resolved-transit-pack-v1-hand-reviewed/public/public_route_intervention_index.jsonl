@@ -1,0 +1,4 @@
+{"action":"add","intervention_component_key":"r1-boarding-add-main-stop","intervention_id":"occurrence:aaaaaaaaaaaaaaaaaaaaaaaa","route_key":"r1","schema_version":1,"treatment_family_key":"boarding"}
+{"action":"retain","intervention_component_key":"r1-service-retain-route-wide","intervention_id":"occurrence:bbbbbbbbbbbbbbbbbbbbbbbb","route_key":"r1","schema_version":1,"treatment_family_key":"service-pattern"}
+{"action":"retain","intervention_component_key":"r2-service-retain-route-wide","intervention_id":"occurrence:bbbbbbbbbbbbbbbbbbbbbbbb","route_key":"r2","schema_version":1,"treatment_family_key":"service-pattern"}
+{"action":"remove","intervention_component_key":"r2-lane-remove-segment","intervention_id":"occurrence:cccccccccccccccccccccccc","route_key":"r2","schema_version":1,"treatment_family_key":"bus-lane"}

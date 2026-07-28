@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "contract_id": "resolved-transit-reference-adapter-v1",
+  "episodes_by_route": [
+    {
+      "route_key": "r1",
+      "route_label": "R1",
+      "episodes": [
+        {"intervention_id": "occurrence:aaaaaaaaaaaaaaaaaaaaaaaa", "display_name": "R1 boarding change", "onset": {"date": "2025-01-01", "precision": "day"}},
+        {"intervention_id": "occurrence:bbbbbbbbbbbbbbbbbbbbbbbb", "display_name": "R1/R2 service bundle", "onset": {"date": "2026-01", "precision": "month"}}
+      ]
+    },
+    {
+      "route_key": "r2",
+      "route_label": "R2",
+      "episodes": [
+        {"intervention_id": "occurrence:bbbbbbbbbbbbbbbbbbbbbbbb", "display_name": "R1/R2 service bundle", "onset": {"date": "2026-01", "precision": "month"}},
+        {"intervention_id": "occurrence:cccccccccccccccccccccccc", "display_name": "R2 planned lane removal", "onset": {"date": "2027", "precision": "year"}}
+      ]
+    }
+  ],
+  "history_by_route": [
+    {
+      "route_key": "r1",
+      "entries": [
+        {"intervention_id": "occurrence:aaaaaaaaaaaaaaaaaaaaaaaa", "intervention_component_key": "r1-boarding-add-main-stop", "treatment": "Boarding changes", "action": "add"},
+        {"intervention_id": "occurrence:bbbbbbbbbbbbbbbbbbbbbbbb", "intervention_component_key": "r1-service-retain-route-wide", "treatment": "Service pattern", "action": "retain"}
+      ]
+    },
+    {
+      "route_key": "r2",
+      "entries": [
+        {"intervention_id": "occurrence:bbbbbbbbbbbbbbbbbbbbbbbb", "intervention_component_key": "r2-service-retain-route-wide", "treatment": "Service pattern", "action": "retain"},
+        {"intervention_id": "occurrence:cccccccccccccccccccccccc", "intervention_component_key": "r2-lane-remove-segment", "treatment": "Bus lane", "action": "remove"}
+      ]
+    }
+  ],
+  "confirmed_current_by_route": [
+    {
+      "route_key": "r1",
+      "placements": [
+        {"placement_key": "r1-boarding-main-stop", "treatment": "Boarding changes", "as_of_date": "2026-07-27"}
+      ]
+    }
+  ],
+  "completeness": {
+    "as_of_date": "2026-07-27",
+    "confirmed_current_placement_count": 1,
+    "confirmed_current_route_count": 1,
+    "exact_component_count": 4,
+    "exact_route_component_incidence_count": 4,
+    "frontier_profile": "fixture_closed_with_pending",
+    "placement_counts_by_state": {"confirmed_active": 1, "confirmed_inactive": 0, "conflicted": 0, "last_confirmed_active": 1, "planned": 0, "suspended": 0, "unknown": 1},
+    "placement_frontier_candidate_count": 5,
+    "placement_frontier_pending_count": 1,
+    "resolved_placement_count": 3,
+    "reviewed_historical_episode_count": 3,
+    "schema_version": 1
+  },
+  "sources": [
+    {"source_key": "official-report", "title": "Official report", "link": "https://example.org/report"},
+    {"source_key": "offline-source", "title": "Offline source", "link": null},
+    {"source_key": "reviewed-permalink", "title": "Archived notice", "link": "https://archive.example.org/notice"}
+  ]
+}

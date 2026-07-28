@@ -82,6 +82,17 @@ Consumers must provide an explicit date and read `resolved_intervention_placemen
 An empty footprint means no placement is currently confirmed by accepted interval evidence, not that
 the corpus contains no interventions.
 
+## Consumer-safe resolved pack
+
+The Resolved Transit Knowledge Pack is the product boundary above the
+operator-only resolved database. Its append-only public-key registry freezes
+route, treatment-family, source, exact component, and placement keys. A
+canonical-read display builder produces an addressed operator dictionary;
+the public projector then reads only resolved operator resources and that
+dictionary. Public rows exclude canonical ids, review metadata, fingerprints,
+queues, and paths. History, placement state, and confirmed-current footprint
+remain separate resources with explicit denominators.
+
 ## Releases
 
 Release exports copy canonical records plus release metadata under `data/exports/releases/<id>/`.

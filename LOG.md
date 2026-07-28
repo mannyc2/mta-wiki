@@ -6,6 +6,19 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-28
 
+### Consumer-safe Resolved Transit Knowledge Pack
+
+- Added distinct operator and public resolved-transit contracts, a frozen
+  append-only 473-key public registry, an addressed operator display
+  dictionary, recursive public redaction, and exact public resources for 130
+  historical episodes and 306 route-treatment components.
+- Added a repository-independent reference adapter and content-addressed
+  hand-reviewed oracle. Public source rows distinguish lossless HTTPS literals,
+  accepted overrides, and unavailable URLs without implying liveness. The
+  confirmed-current footprint remains empty because Plan 048 has no resolved
+  placement authority; all 1,756 placement candidates remain visible in the
+  completeness summary.
+
 ### Bitemporal intervention placement state
 
 - Added append-only stable placement identities, exact application-placement

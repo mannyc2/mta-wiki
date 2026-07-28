@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "contract_id": "resolved-transit-public-field-classification-v1",
+  "classes": {
+    "operator_only": ["application_id", "placement_id", "*_record_id", "review_*", "decision_*", "*fingerprint*", "*sha256*", "*path"],
+    "public_identity": ["intervention_id", "intervention_component_key", "placement_key", "route_key", "treatment_family_key", "source_key"],
+    "public_fact": ["display_name", "onset", "action", "extent", "state", "as_of_date", "counts"],
+    "public_source_link": ["source_key", "title", "publisher", "date", "url", "url_status"]
+  },
+  "hash_shaped_public_identity_exception": "intervention_id"
+}

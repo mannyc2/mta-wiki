@@ -1,0 +1,3 @@
+{"as_of_date":"2026-07-27","placement_key":"r1-boarding-main-stop","route_key":"r1","schema_version":1,"scope":{"kind":"stop_set"},"state_as_of":"confirmed_active","treatment_family_key":"boarding"}
+{"as_of_date":"2026-07-27","placement_key":"r2-lane-downtown","route_key":"r2","schema_version":1,"scope":{"kind":"bounded_segment"},"state_as_of":"last_confirmed_active","treatment_family_key":"bus-lane"}
+{"as_of_date":"2026-07-27","placement_key":"r2-independent-signage","route_key":"r2","schema_version":1,"scope":{"kind":"route_wide"},"state_as_of":"unknown","treatment_family_key":"signage"}

@@ -36,6 +36,10 @@ import {
   readRouteAnchorReview,
 } from "../packages/pipeline/src/materialize/route-anchors";
 
+// Legacy decoder-compatibility fixture only. This script's analysis-family
+// reductions and expected_route_candidates output are non-normative and must
+// not be used as a consumer oracle. The independent hand-reviewed public-pack
+// fixture and reference adapter own consumer conformance.
 const dir = join(repoRoot, "data", "contract-fixtures", "operational-occurrences-v1");
 mkdirSync(dir, { recursive: true });
 

@@ -1,0 +1,4 @@
+{"display_name":"Boarding changes","schema_version":1,"treatment_family_key":"boarding"}
+{"display_name":"Bus lane","schema_version":1,"treatment_family_key":"bus-lane"}
+{"display_name":"Service pattern","schema_version":1,"treatment_family_key":"service-pattern"}
+{"display_name":"Signage","schema_version":1,"treatment_family_key":"signage"}

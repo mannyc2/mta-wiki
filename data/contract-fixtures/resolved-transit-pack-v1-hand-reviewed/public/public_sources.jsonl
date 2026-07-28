@@ -1,0 +1,3 @@
+{"date":"2025-01-01","publisher":"Transit Agency","schema_version":1,"source_key":"official-report","title":"Official report","url":"https://example.org/report","url_status":"source_provided"}
+{"date":"2026-01","publisher":"Transit Agency","schema_version":1,"source_key":"reviewed-permalink","title":"Archived notice","url":"https://archive.example.org/notice","url_status":"accepted_override"}
+{"date":"2027","publisher":"Transit Agency","schema_version":1,"source_key":"offline-source","title":"Offline source","url":null,"url_status":"unavailable"}
