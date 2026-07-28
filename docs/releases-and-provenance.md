@@ -34,7 +34,9 @@ bun packages/cli/src/cli.ts verify-release <id> \
 
 The temporary `resolved-pack-v1-verification-candidate` proves reproducibility
 only. `LATEST`, tags, GitHub Releases, and downstream pins remain owner-gated
-and unchanged. GitHub-only transport requires a later publication decision.
+and unchanged. Its deterministic repository handoff records the generator and
+docs-only descendant commits without storing local output paths. GitHub-only
+transport requires a later publication decision.
 
 ### Treatment semantic companions
 
