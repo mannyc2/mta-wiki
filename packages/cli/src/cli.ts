@@ -125,6 +125,7 @@ function parseCommand(argv: string[]): ParsedArgs {
     "chandra-run",
     "seed-pilot",
     "materialize",
+    "materialize-resolved-interventions",
     "rebuild-db-from-canonical",
     "rebuild-evidence-index",
     "export-jsonl",

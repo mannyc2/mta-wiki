@@ -4,10 +4,12 @@ import type { OperationalOccurrenceRow } from "@mta-wiki/pipeline/materialize/op
 import type { RouteIdentitySnapshotV1 } from "@mta-wiki/pipeline/materialize/route-identity-contract";
 import {
   buildRouteTreatmentScopeProjection,
+  buildRouteTreatmentScopeProjectionFromApplications,
   routeTreatmentScopeReconciliationJsonl,
   routeTreatmentScopesJsonl,
   routeTreatmentScopeSummaryJson,
 } from "@mta-wiki/pipeline/materialize/route-treatment-scopes";
+import type { ResolvedInterventionApplication } from "@mta-wiki/pipeline/materialize/resolved-intervention-applications";
 
 function record(
   recordId: string,
@@ -131,6 +133,54 @@ function occurrence(input: {
 }
 
 describe("route-treatment scope projection", () => {
+  it("projects an exact partial 2x2 application set as two pairs, never four", () => {
+    const routes = [
+      record("route_a", "route", { route_id: "A" }),
+      record("route_b", "route", { route_id: "B" }),
+    ];
+    const treatments = [
+      record("treatment_x", "treatment_component", { treatment_kind: "lane", treatment_family: "bus_lane" }),
+      record("treatment_y", "treatment_component", { treatment_kind: "signal", treatment_family: "signal_priority" }),
+    ];
+    const application = (
+      id: string,
+      route: MtaCanonicalRecord,
+      treatment: MtaCanonicalRecord,
+      gtfs: string,
+    ): ResolvedInterventionApplication => ({
+      schema_version: 1,
+      application_id: id,
+      occurrence_id: "occurrence:partial",
+      route_record_id: route.record_id,
+      gtfs_route_id: gtfs,
+      treatment_record_id: treatment.record_id,
+      treatment_family: String(treatment.payload.treatment_family),
+      phase_record_id: "event_one",
+      action: "add",
+      applicability: "applies",
+      extent: { kind: "unknown", record_ids: [], description: null },
+      evidence_bindings: [
+        { role: "route_identity", record_id: route.record_id, source_id: "source_fixture", evidence_id: "source_fixture#p001_b0001" },
+        { role: "treatment_definition", record_id: treatment.record_id, source_id: "source_fixture", evidence_id: "source_fixture#p001_b0001" },
+      ],
+      review_decision_id: "review:partial",
+      resolution_method: "accepted_review",
+    });
+    const projection = buildRouteTreatmentScopeProjectionFromApplications(
+      [...routes, ...treatments],
+      snapshot([
+        { routeRecordId: "route_a", datasetId: "mta-nyct-bus", sourceRouteId: "A" },
+        { routeRecordId: "route_b", datasetId: "mta-nyct-bus", sourceRouteId: "B" },
+      ]),
+      [
+        application("application:ax", routes[0]!, treatments[0]!, "A"),
+        application("application:by", routes[1]!, treatments[1]!, "B"),
+      ],
+    );
+    expect(projection.scopes.map((row) => `${row.route_record_id}×${row.treatment_record_id}`))
+      .toEqual(["route_a×treatment_x", "route_b×treatment_y"]);
+  });
+
   it("does not fan Q27 or B57 treatments through shared Queens project membership", () => {
     const project = record("project_queens-bus-network-redesign", "project");
     const q27Route = record("route_q27-ace", "route", { route_id: "Q27" });

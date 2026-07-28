@@ -19,8 +19,41 @@ import {
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-identity";
 import type { OperationalOccurrenceAcceptedDecision } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
 import type { RouteAnchorRow } from "@mta-wiki/pipeline/materialize/route-anchors";
+import type {
+  ResolvedInterventionEpisode,
+} from "@mta-wiki/pipeline/materialize/resolved-interventions";
 
 export const OPERATIONAL_OCCURRENCE_SCHEMA_VERSION = 2 as const;
+
+export type OperationalOccurrenceResolvedCompatibilityV1 = {
+  schema_version: 1;
+  occurrence_id: string;
+  application_ids: string[];
+  route_record_ids: string[];
+  treatment_record_ids: string[];
+  phase_record_ids: string[];
+  physical_scope_record_ids: string[];
+  join_policy: "applications_are_authoritative";
+};
+
+/** New resolved builds expose v2-like convenience sets only as an explicitly
+ * non-authoritative compatibility reference to the application resource. */
+export function operationalOccurrenceResolvedCompatibilityV1(
+  episodes: readonly ResolvedInterventionEpisode[],
+): OperationalOccurrenceResolvedCompatibilityV1[] {
+  return [...episodes].sort((left, right) =>
+    left.occurrence_id.localeCompare(right.occurrence_id)
+  ).map((episode) => ({
+    schema_version: 1,
+    occurrence_id: episode.occurrence_id,
+    application_ids: [...episode.application_ids],
+    route_record_ids: [...episode.route_record_ids],
+    treatment_record_ids: [...episode.treatment_record_ids],
+    phase_record_ids: [...episode.phase_record_ids],
+    physical_scope_record_ids: [...episode.physical_scope_record_ids],
+    join_policy: "applications_are_authoritative",
+  }));
+}
 
 /**
  * Operational occurrences expose a closed producer semantic, not the treatment's display label.

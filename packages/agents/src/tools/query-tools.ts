@@ -8,6 +8,10 @@ import { createMtaTools } from "./ingest-tools.js";
 import { createMtaWriterTools } from "./writer-tools.js";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 import { assertCanonicalDbSourceRefreshAvailable } from "@mta-wiki/db/canonical-db-source-refresh";
+import {
+  readResolvedInterventionApplications,
+  readResolvedInterventionEpisodes,
+} from "@mta-wiki/db/resolved-transit-db";
 
 function textResult(text: string, details: Record<string, unknown> = {}) {
   return {
@@ -84,6 +88,8 @@ export type QueryToolOptions = {
   embed?: Embedder | undefined;
   /** Inject a fixture corpus in tests without swapping the live canonical DB. */
   records?: MtaCanonicalRecord[] | undefined;
+  /** Override the generated resolved read-model DB in tests. */
+  resolvedDbPath?: string | undefined;
 };
 
 export function createMtaQueryTools(transcript: TranscriptWriter, runId: string, options: QueryToolOptions = {}): AgentTool[] {
@@ -163,8 +169,50 @@ export function createMtaQueryTools(transcript: TranscriptWriter, runId: string,
     },
   };
 
+  const resolvedParameters = Type.Object({
+    occurrence_id: Type.Optional(Type.String({ description: "Exact operational occurrence id." })),
+    gtfs_route_id: Type.Optional(Type.String({ description: "Exact GTFS route id." })),
+    treatment_family: Type.Optional(Type.String({ description: "Exact reviewed treatment family." })),
+  });
+  const resolvedTool: AgentTool<typeof resolvedParameters> = {
+    name: "mta_read_resolved_interventions",
+    label: "Read Resolved Interventions",
+    description:
+      "Read the internal, review-authorized intervention episode/application layer. Applications are exact route-treatment-phase incidence; episode convenience arrays are non-authoritative derived sets. This operator surface includes review and provenance fields.",
+    parameters: resolvedParameters,
+    executionMode: "parallel",
+    execute: async (_toolCallId, params) => {
+      const episodes = readResolvedInterventionEpisodes({
+        ...(params.occurrence_id ? { occurrenceId: params.occurrence_id } : {}),
+        ...(options.resolvedDbPath ? { path: options.resolvedDbPath } : {}),
+      });
+      const applications = readResolvedInterventionApplications({
+        ...(params.occurrence_id ? { occurrenceId: params.occurrence_id } : {}),
+        ...(params.gtfs_route_id ? { gtfsRouteId: params.gtfs_route_id } : {}),
+        ...(params.treatment_family ? { treatmentFamily: params.treatment_family } : {}),
+        ...(options.resolvedDbPath ? { path: options.resolvedDbPath } : {}),
+      });
+      transcript.write("mta_tool_read_resolved_interventions", {
+        occurrenceId: params.occurrence_id,
+        gtfsRouteId: params.gtfs_route_id,
+        treatmentFamily: params.treatment_family,
+        episodeCount: episodes.length,
+        applicationCount: applications.length,
+      });
+      return textResult(JSON.stringify({
+        layer: "resolved-intervention-model-v1",
+        authority: "exact applications",
+        episodes,
+        applications,
+      }, null, 2), {
+        episodeCount: episodes.length,
+        applicationCount: applications.length,
+      });
+    },
+  };
+
   const ingestReadTools = createMtaTools(transcript, runId).filter((tool) => READONLY_INGEST_TOOLS.has(tool.name));
   const writerReadTools = createMtaWriterTools(transcript, runId).filter((tool) => READONLY_WRITER_TOOLS.has(tool.name));
 
-  return [semanticSearchTool, ...ingestReadTools, ...writerReadTools];
+  return [semanticSearchTool, resolvedTool, ...ingestReadTools, ...writerReadTools];
 }

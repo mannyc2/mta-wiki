@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
 import type { OperationalOccurrenceRow } from "./operational-occurrences.js";
+import type { ResolvedInterventionApplication } from "./resolved-intervention-applications.js";
 import type {
   RouteIdentityRecordBindingV1,
   RouteIdentitySnapshotV1,
@@ -212,6 +213,44 @@ function scopeId(treatmentRecordId: string, routeRecordId: string): string {
 
 function occurrenceMembers(row: OperationalOccurrenceRow) {
   return row.treatment.kind === "atomic" ? [row.treatment.member] : row.treatment.members;
+}
+
+/**
+ * Compatibility adapter for new builds. Each exact application becomes one
+ * single-route/single-treatment compatibility occurrence, so the legacy scope
+ * projection cannot reconstruct a route × treatment cross-product.
+ */
+export function buildRouteTreatmentScopeProjectionFromApplications(
+  records: readonly MtaCanonicalRecord[],
+  routeIdentitySnapshot: RouteIdentitySnapshotV1,
+  applications: readonly ResolvedInterventionApplication[],
+): RouteTreatmentScopeProjection {
+  const compatibilityRows = applications.map((application) => ({
+    occurrence_id: application.occurrence_id,
+    routes: [{
+      route_record_id: application.route_record_id,
+      gtfs_route_id: application.gtfs_route_id,
+      evidence_bindings: application.evidence_bindings,
+    }],
+    treatment: {
+      kind: "atomic" as const,
+      member: {
+        treatment_record_id: application.treatment_record_id,
+        treatment_family: application.treatment_family,
+        evidence_bindings: application.evidence_bindings,
+      },
+    },
+    provenance: {
+      relation_record_ids: uniqueSorted(
+        application.evidence_bindings
+          .filter((binding) => records.find((record) =>
+            record.record_id === binding.record_id && record.record_kind === "relation"
+          ))
+          .map((binding) => binding.record_id),
+      ),
+    },
+  })) as unknown as OperationalOccurrenceRow[];
+  return buildRouteTreatmentScopeProjection(records, routeIdentitySnapshot, compatibilityRows);
 }
 
 /**

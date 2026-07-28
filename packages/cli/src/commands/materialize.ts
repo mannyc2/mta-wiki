@@ -52,6 +52,13 @@ import {
 import { canonicalDbPath } from "@mta-wiki/db/canonical-db";
 import { assertCanonicalDbSourceRefreshAvailable } from "@mta-wiki/db/canonical-db-source-refresh";
 import { loadRelationshipContract, relationshipContractValidationMode } from "@mta-wiki/db/relationship-contract";
+import { rebuildResolvedTransitDb } from "@mta-wiki/db/resolved-transit-db";
+import {
+  buildProductionResolvedInterventions,
+  checkResolvedInterventions,
+  productionResolvedInterventionDir,
+  writeResolvedInterventions,
+} from "@mta-wiki/pipeline/materialize/resolved-interventions";
 import { factDedupSameSourceDryRunSummaryText, factDedupScoutSummaryText, writeFactDedupSameSourceDryRun, writeFactDedupScout } from "@mta-wiki/pipeline/quality/fact-dedup";
 import { auditRelationshipGraph } from "@mta-wiki/pipeline/records/relationship-integrity";
 import { readSemanticCorrections, semanticSupersessionIdentities } from "@mta-wiki/pipeline/records/semantic-corrections";
@@ -212,6 +219,23 @@ This command does not call a provider.`);
 }
 
 export const materializeCommands = {
+  "materialize-resolved-interventions": () => {
+    const output = optionValue(process.argv, "--output") ??
+      productionResolvedInterventionDir();
+    const model = buildProductionResolvedInterventions();
+    if (process.argv.includes("--check")) checkResolvedInterventions(output, model);
+    else writeResolvedInterventions(output, model);
+    const db = rebuildResolvedTransitDb(model);
+    console.log(
+      `${process.argv.includes("--check") ? "Verified" : "Materialized"} resolved interventions: ` +
+      `${model.summary.episode_count} episodes, ${model.summary.application_count} applications, ` +
+      `${model.summary.identity_reconciliation_count} unresolved identities, ` +
+      `${model.summary.application_reconciliation_count} legacy application reconciliations.`,
+    );
+    console.log(`Operator artifacts: ${relative(repoRoot, output)}`);
+    console.log(`Resolved DB: ${relative(repoRoot, db.path)} (${db.dataSha256.slice(0, 12)})`);
+  },
+
   materialize: () => {
     assertCanonicalDbSourceRefreshAvailable({
       operation: "materialize command",

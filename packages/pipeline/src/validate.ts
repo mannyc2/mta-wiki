@@ -22,6 +22,11 @@ import {
   loadOperationalEpisodeFrontierLedgers,
 } from "@mta-wiki/pipeline/materialize/operational-episode-frontier";
 import {
+  loadResolvedInterventions,
+  productionResolvedInterventionDir,
+} from "@mta-wiki/pipeline/materialize/resolved-interventions";
+import { openResolvedTransitDb } from "@mta-wiki/db/resolved-transit-db";
+import {
   extractWriterRegion,
   parseBlockPrimitives,
   parseInlinePrimitives,
@@ -95,6 +100,37 @@ export function validateOperationalEpisodeFrontier(
     issues.push({
       code: "operational_episode_frontier_invalid",
       path: "data/quality/operational-episode-frontier/v1",
+      message: error instanceof Error ? error.message : String(error),
+    });
+  }
+}
+
+export function validateResolvedInterventions(
+  issues: MtaValidationIssue[],
+  rootDir = repoRoot,
+): void {
+  const path = productionResolvedInterventionDir(rootDir);
+  try {
+    const model = loadResolvedInterventions(path);
+    const db = openResolvedTransitDb(join(rootDir, "data", "resolved-transit.db"));
+    try {
+      const episodes = db.query(
+        "SELECT COUNT(*) AS count FROM resolved_intervention_episodes",
+      ).get() as { count: number };
+      const applications = db.query(
+        "SELECT COUNT(*) AS count FROM resolved_intervention_applications",
+      ).get() as { count: number };
+      if (
+        episodes.count !== model.summary.episode_count ||
+        applications.count !== model.summary.application_count
+      ) throw new Error("resolved transit DB row counts disagree with operator artifacts");
+    } finally {
+      db.close();
+    }
+  } catch (error) {
+    issues.push({
+      code: "resolved_interventions_invalid",
+      path: "data/resolved-transit/operator/v1/interventions",
       message: error instanceof Error ? error.message : String(error),
     });
   }
@@ -795,6 +831,7 @@ export function validateRepo(options: {
   const requiredPathCount = validateRequiredPaths(issues);
   validateReleasePointer(issues);
   validateOperationalEpisodeFrontier(issues);
+  validateResolvedInterventions(issues);
   const dbRecords = readCanonicalRecordsFromDbFile();
   if (!dbRecords) {
     issues.push({

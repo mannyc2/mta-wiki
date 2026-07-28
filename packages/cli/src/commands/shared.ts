@@ -12,6 +12,7 @@ export type Command =
   | "chandra-run"
   | "seed-pilot"
   | "materialize"
+  | "materialize-resolved-interventions"
   | "rebuild-db-from-canonical"
   | "rebuild-evidence-index"
   | "export-jsonl"
