@@ -6,6 +6,19 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-28
 
+### Exact resolved intervention applications
+
+- Added a separate resolved intervention read model above canonical source
+  observations. It publishes 130 reviewed episodes and 306 exact
+  route-treatment-phase applications while retaining five unresolved active
+  identities and two non-authorizing legacy study rows in typed operator
+  reconciliation.
+- Added strict tracked operator contracts and an independently sealed
+  `data/resolved-transit.db` projection. Episode convenience sets are derived
+  from applications, partial multi-route bundles cannot cross-product, and the
+  canonical DB schema, canonical records, and prior release bytes remain
+  unchanged.
+
 ### Closed operational episode frontier
 
 - Added a deterministic observation-to-candidate frontier with strict cohort,
