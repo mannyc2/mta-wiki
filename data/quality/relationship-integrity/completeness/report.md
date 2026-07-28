@@ -95,5 +95,5 @@ This report uses the immutable occurrence-treatment physicality policy and exact
 Reproduce from the repository root:
 
 ```bash
-bun -e 'import { writeRelationshipCompletenessArtifacts as write } from "./packages/pipeline/src/quality/relationship-completeness.ts"; write()'
+bun packages/cli/src/cli.ts relationship-completeness --check-current-public-snapshot --no-sync-db
 ```
