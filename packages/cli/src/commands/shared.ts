@@ -31,6 +31,7 @@ export type Command =
   | "relationship-integrity"
   | "relationship-completeness"
   | "occurrence-identity-migrate"
+  | "operational-episode-frontier"
   | "semantic-sweep"
   | "fact-dedup"
   | "reference-snapshots"

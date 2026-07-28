@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
-import { relative } from "node:path";
+import { join, relative, resolve } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import {
   loadRelationshipContract,
@@ -10,6 +10,22 @@ import { assertCanonicalDbSourceRefreshAvailable } from "@mta-wiki/db/canonical-
 import { writeForecastRealizationArtifacts } from "@mta-wiki/pipeline/quality/forecast-realization-artifacts";
 import { writeForecastRealizationReviewArtifacts } from "@mta-wiki/pipeline/quality/forecast-realization-review-artifacts";
 import { writeOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
+import { readCanonicalRecordsFromDbFile } from "@mta-wiki/pipeline/materialize/canonical-read";
+import {
+  loadOperationalEpisodeAcceptedMappings,
+} from "@mta-wiki/pipeline/materialize/operational-episode-adapters";
+import {
+  buildOperationalEpisodeFrontier,
+  checkOperationalEpisodeFrontier,
+  loadOperationalEpisodeCandidateDecisions,
+  writeOperationalEpisodeFrontier,
+} from "@mta-wiki/pipeline/materialize/operational-episode-frontier";
+import {
+  loadOperationalOccurrenceIdentityRegistryV2,
+} from "@mta-wiki/pipeline/materialize/operational-occurrence-identity-operations";
+import {
+  loadOperationalOccurrenceAcceptedDecisionsV2,
+} from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
 import { writeBusLaneIdentityArtifacts } from "@mta-wiki/pipeline/quality/bus-lane-identity";
 import { writeMemberExtentLedgerArtifacts } from "@mta-wiki/pipeline/quality/member-extent-ledger";
 import { runStudyFrontierPreflight } from "@mta-wiki/pipeline/quality/study-frontier-preflight";
@@ -128,6 +144,48 @@ const occurrenceIdentityMigrate: CommandHandler = () => {
   const output = `${result.stdout ?? ""}${result.stderr ?? ""}`;
   if (result.status !== 0) throw new Error(output.trim());
   console.log(output.trim());
+};
+
+const operationalEpisodeFrontier: CommandHandler = () => {
+  const profile = optionValue(process.argv, "--profile");
+  if (profile !== "partial" && profile !== "complete") {
+    throw new Error("operational-episode-frontier requires --profile partial|complete");
+  }
+  const records = readCanonicalRecordsFromDbFile(join(repoRoot, "data", "canonical.db"));
+  if (!records) throw new Error("operational-episode-frontier requires a readable data/canonical.db");
+  const frontier = buildOperationalEpisodeFrontier({
+    canonical_records: records,
+    accepted_mappings: loadOperationalEpisodeAcceptedMappings(
+      join(repoRoot, "data", "operational-episode-resolution", "adapters"),
+    ),
+    candidate_decisions: loadOperationalEpisodeCandidateDecisions(
+      join(repoRoot, "data", "operational-episode-resolution", "decisions", "index.json"),
+    ),
+    identity_registry: loadOperationalOccurrenceIdentityRegistryV2(repoRoot),
+    review_decisions: loadOperationalOccurrenceAcceptedDecisionsV2(),
+    completeness_profile: profile,
+  });
+  const checkDir = optionValue(process.argv, "--check");
+  if (checkDir) {
+    checkOperationalEpisodeFrontier(resolve(repoRoot, checkDir), frontier);
+    console.log(
+      `Operational episode frontier verified: ${frontier.summary.observation_ledger_rows} observations, ` +
+      `${frontier.summary.candidate_ledger_rows} candidates, ${frontier.summary.pending_count} pending.`,
+    );
+    return;
+  }
+  const outputDir = resolve(
+    repoRoot,
+    optionValue(process.argv, "--output") ??
+      "data/quality/operational-episode-frontier/v1",
+  );
+  writeOperationalEpisodeFrontier(outputDir, frontier);
+  console.log(`Operational episode frontier: ${relative(repoRoot, outputDir)}`);
+  console.log(
+    `Observations: ${frontier.summary.observation_ledger_rows}; candidates: ` +
+    `${frontier.summary.candidate_ledger_rows}; published: ` +
+    `${frontier.summary.published_distinct_occurrence_ids}; pending: ${frontier.summary.pending_count}.`,
+  );
 };
 
 const plan040ExemplarDraft: CommandHandler = () => {
@@ -653,6 +711,7 @@ const relationshipCompleteness: CommandHandler = () => {
 
 export const qualityCommands = {
   "occurrence-identity-migrate": occurrenceIdentityMigrate,
+  "operational-episode-frontier": operationalEpisodeFrontier,
   "bus-lane-identity-ledger": busLaneIdentityLedger,
   "member-extent-ledger": memberExtentLedger,
   "study-frontier-preflight": () => {

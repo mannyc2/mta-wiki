@@ -144,6 +144,7 @@ function parseCommand(argv: string[]): ParsedArgs {
     "relationship-integrity",
     "relationship-completeness",
     "occurrence-identity-migrate",
+    "operational-episode-frontier",
     "semantic-sweep",
     "fact-dedup",
     "reference-snapshots",
