@@ -129,6 +129,7 @@ function parseCommand(argv: string[]): ParsedArgs {
     "materialize-intervention-placements",
     "materialize-intervention-lifecycle",
     "intervention-state-as-of",
+    "resolved-transit-public-keys",
     "rebuild-db-from-canonical",
     "rebuild-evidence-index",
     "export-jsonl",

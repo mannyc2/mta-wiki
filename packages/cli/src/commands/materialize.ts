@@ -65,6 +65,13 @@ import {
   productionInterventionPlacementDir,
 } from "@mta-wiki/pipeline/materialize/intervention-placement-build";
 import {
+  applyPublicKeyMigration,
+  assertCleanGenerator,
+  checkPublicKeyRegistry,
+  preparePublicKeyMigration,
+  writePublicKeyMigration,
+} from "@mta-wiki/pipeline/materialize/resolved-transit-public-keys";
+import {
   checkInterventionPlacementFrontier,
   writeInterventionPlacementFrontier,
 } from "@mta-wiki/pipeline/materialize/intervention-placement-frontier";
@@ -233,6 +240,43 @@ This command does not call a provider.`);
 }
 
 export const materializeCommands = {
+  "resolved-transit-public-keys": () => {
+    const asOfDate = optionValue(process.argv, "--as-of") ?? "2026-07-27";
+    if (process.argv.includes("--prepare")) {
+      const output = optionValue(process.argv, "--output");
+      const ownedRoot = optionValue(process.argv, "--owned-output-root");
+      if (!output || !ownedRoot) {
+        throw new Error("--prepare requires --output and --owned-output-root");
+      }
+      const migration = preparePublicKeyMigration({
+        asOfDate,
+        generatorCommit: assertCleanGenerator(),
+      });
+      const receipt = writePublicKeyMigration(migration, output, ownedRoot);
+      console.log(
+        `Prepared ${migration.proposed_operations.length} public-key operations; ` +
+        `${migration.requires_review_count} require review; receipt ${receipt}.`,
+      );
+      return;
+    }
+    const apply = optionValue(process.argv, "--apply");
+    if (apply) {
+      const migration = applyPublicKeyMigration(apply);
+      console.log(
+        `Applied ${migration.proposed_operations.length} public-key operations from ${migration.receipt_id}.`,
+      );
+      return;
+    }
+    if (process.argv.includes("--check")) {
+      const result = checkPublicKeyRegistry(asOfDate);
+      console.log(
+        `Verified public-key registry: ${result.live}/${result.eligible} live keys, head ${result.head.slice(0, 12)}.`,
+      );
+      return;
+    }
+    throw new Error("resolved-transit-public-keys requires --prepare, --apply <receipt>, or --check");
+  },
+
   "materialize-intervention-placements": () => {
     const output = optionValue(process.argv, "--output") ?? productionInterventionPlacementDir();
     const build = buildProductionInterventionPlacements("2026-07-27");

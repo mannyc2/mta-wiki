@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "contract_id": "resolved-transit-treatment-family-display-v1",
+  "families": [
+    {"family": "automated_bus_lane_enforcement", "key": "automated-bus-lane-enforcement", "label": "Automated bus lane enforcement"},
+    {"family": "bus_stop_or_boarding", "key": "bus-stop-or-boarding", "label": "Bus stop or boarding changes"},
+    {"family": "fare_collection", "key": "fare-collection", "label": "Fare collection"},
+    {"family": "route_redesign", "key": "route-redesign", "label": "Route redesign"},
+    {"family": "service_pattern", "key": "service-pattern", "label": "Service pattern"},
+    {"family": "signage_and_markings", "key": "signage-and-markings", "label": "Signage and markings"}
+  ]
+}
