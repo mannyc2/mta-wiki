@@ -55,6 +55,63 @@ export type ResolvedTransitModelInput = {
     reason_code: string;
   }>;
   summary: { contract_id: string };
+  placements?: ReadonlyArray<{
+    placement_id: string;
+    registry_state: string;
+    current_claim: {
+      route_record_id: string;
+      gtfs_route_id: string;
+      treatment_family: string;
+      scope: { kind: string; record_ids: string[] };
+    };
+  }>;
+  placement_transitions?: ReadonlyArray<{
+    transition_id: string;
+    application_id: string;
+    action: string;
+  }>;
+  placement_frontier?: ReadonlyArray<{
+    candidate_id: string;
+    disposition: string;
+    origin: string;
+  }>;
+  placement_reconciliation?: ReadonlyArray<{
+    application_id: string;
+    disposition: string;
+  }>;
+  documentary_lifecycle_observations?: ReadonlyArray<{
+    observation_id: string;
+    subject_record_id: string | null;
+    lifecycle_phase: string | null;
+    document_status: string | null;
+    assertion_as_of: string | null;
+    source_id: string;
+  }>;
+  lifecycle_assertions?: ReadonlyArray<{
+    assertion_id: string;
+    subject: { kind: string; placement_id?: string };
+    state: string;
+    review_state: string;
+    valid_time: {
+      start_earliest: string | null;
+      start_latest: string | null;
+      end_earliest: string | null;
+      end_latest: string | null;
+    };
+    document_time: { assertion_as_of: string | null };
+  }>;
+  placement_states_as_of?: ReadonlyArray<{
+    placement_id: string;
+    as_of_date: string;
+    state: string;
+  }>;
+  current_footprint?: ReadonlyArray<{
+    placement_id: string;
+    as_of_date: string;
+    gtfs_route_id: string;
+    treatment_family: string;
+    scope: { kind: string };
+  }>;
 };
 
 export type RebuildResolvedTransitDbResult = {
@@ -90,6 +147,14 @@ function dataDump(db: Database): string {
     "resolved_intervention_context_links",
     "resolved_intervention_application_reconciliation",
     "resolved_intervention_identity_reconciliation",
+    "resolved_intervention_placements",
+    "resolved_application_placement_transitions",
+    "resolved_intervention_placement_frontier",
+    "resolved_intervention_placement_reconciliation",
+    "documentary_lifecycle_observations",
+    "resolved_intervention_lifecycle_assertions",
+    "resolved_intervention_placement_state_as_of",
+    "resolved_current_intervention_footprint",
   ];
   return tables.map((table) => {
     const rows = db.query(`SELECT row_json FROM ${table} ORDER BY 1`).all() as Array<{ row_json: string }>;
@@ -179,6 +244,112 @@ export function rebuildResolvedTransitDb(
         row.reason_code, stableJson(row as unknown as JsonValue),
       );
     }
+    const insertPlacement = db.prepare(
+      `INSERT INTO resolved_intervention_placements
+       (placement_id, registry_state, route_record_id, gtfs_route_id,
+        treatment_family, scope_kind, normalized_scope_key, row_json)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+    );
+    for (const row of [...(model.placements ?? [])].sort((a, b) => a.placement_id.localeCompare(b.placement_id))) {
+      insertPlacement.run(
+        row.placement_id, row.registry_state, row.current_claim.route_record_id,
+        row.current_claim.gtfs_route_id, row.current_claim.treatment_family,
+        row.current_claim.scope.kind,
+        stableJson({
+          kind: row.current_claim.scope.kind,
+          record_ids: row.current_claim.scope.record_ids,
+        } as JsonValue),
+        stableJson(row as unknown as JsonValue),
+      );
+    }
+    const insertTransition = db.prepare(
+      `INSERT INTO resolved_application_placement_transitions
+       (transition_id, application_id, action, row_json) VALUES (?, ?, ?, ?)`,
+    );
+    for (const row of [...(model.placement_transitions ?? [])]
+      .sort((a, b) => a.transition_id.localeCompare(b.transition_id))) {
+      insertTransition.run(
+        row.transition_id, row.application_id, row.action,
+        stableJson(row as unknown as JsonValue),
+      );
+    }
+    const insertFrontier = db.prepare(
+      `INSERT INTO resolved_intervention_placement_frontier
+       (candidate_id, disposition, origin, row_json) VALUES (?, ?, ?, ?)`,
+    );
+    for (const row of [...(model.placement_frontier ?? [])]
+      .sort((a, b) => a.candidate_id.localeCompare(b.candidate_id))) {
+      insertFrontier.run(
+        row.candidate_id, row.disposition, row.origin,
+        stableJson(row as unknown as JsonValue),
+      );
+    }
+    const insertPlacementReconciliation = db.prepare(
+      `INSERT INTO resolved_intervention_placement_reconciliation
+       (application_id, disposition, row_json) VALUES (?, ?, ?)`,
+    );
+    for (const row of [...(model.placement_reconciliation ?? [])]
+      .sort((a, b) => a.application_id.localeCompare(b.application_id))) {
+      insertPlacementReconciliation.run(
+        row.application_id, row.disposition,
+        stableJson(row as unknown as JsonValue),
+      );
+    }
+    const insertDocumentary = db.prepare(
+      `INSERT INTO documentary_lifecycle_observations
+       (observation_id, subject_record_id, lifecycle_phase, document_status,
+        assertion_as_of, source_id, row_json) VALUES (?, ?, ?, ?, ?, ?, ?)`,
+    );
+    for (const row of [...(model.documentary_lifecycle_observations ?? [])]
+      .sort((a, b) => a.observation_id.localeCompare(b.observation_id))) {
+      insertDocumentary.run(
+        row.observation_id, row.subject_record_id, row.lifecycle_phase,
+        row.document_status, row.assertion_as_of, row.source_id,
+        stableJson(row as unknown as JsonValue),
+      );
+    }
+    const insertAssertion = db.prepare(
+      `INSERT INTO resolved_intervention_lifecycle_assertions
+       (assertion_id, placement_id, state, review_state, valid_start_earliest,
+        valid_start_latest, valid_end_earliest, valid_end_latest,
+        document_assertion_as_of, row_json)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    );
+    for (const row of [...(model.lifecycle_assertions ?? [])]
+      .sort((a, b) => a.assertion_id.localeCompare(b.assertion_id))) {
+      insertAssertion.run(
+        row.assertion_id,
+        row.subject.kind === "placement" ? row.subject.placement_id ?? null : null,
+        row.state, row.review_state, row.valid_time.start_earliest,
+        row.valid_time.start_latest, row.valid_time.end_earliest,
+        row.valid_time.end_latest, row.document_time.assertion_as_of,
+        stableJson(row as unknown as JsonValue),
+      );
+    }
+    const insertState = db.prepare(
+      `INSERT INTO resolved_intervention_placement_state_as_of
+       (placement_id, as_of_date, state, row_json) VALUES (?, ?, ?, ?)`,
+    );
+    for (const row of [...(model.placement_states_as_of ?? [])]
+      .sort((a, b) => a.placement_id.localeCompare(b.placement_id))) {
+      insertState.run(
+        row.placement_id, row.as_of_date, row.state,
+        stableJson(row as unknown as JsonValue),
+      );
+    }
+    const insertFootprint = db.prepare(
+      `INSERT INTO resolved_current_intervention_footprint
+       (placement_id, as_of_date, gtfs_route_id, treatment_family,
+        scope_kind, row_json) VALUES (?, ?, ?, ?, ?, ?)`,
+    );
+    for (const row of [...(model.current_footprint ?? [])]
+      .sort((a, b) => a.placement_id.localeCompare(b.placement_id))) {
+      insertFootprint.run(
+        row.placement_id, row.as_of_date, row.gtfs_route_id,
+        row.treatment_family, row.scope.kind,
+        stableJson(row as unknown as JsonValue),
+      );
+    }
     const dataSha256 = sha256(dataDump(db));
     db.prepare(
       `INSERT INTO resolved_transit_state
@@ -258,4 +429,60 @@ export function readResolvedInterventionApplications(
   } finally {
     db.close();
   }
+}
+
+function readRows(
+  table: string,
+  orderBy: string,
+  options: { path?: string; clauses?: string[]; parameters?: string[] } = {},
+): JsonValue[] {
+  const db = openResolvedTransitDb(options.path);
+  try {
+    const where = options.clauses?.length ? ` WHERE ${options.clauses.join(" AND ")}` : "";
+    const rows = db.query(
+      `SELECT row_json FROM ${table}${where} ORDER BY ${orderBy}`,
+    ).all(...(options.parameters ?? [])) as Array<{ row_json: string }>;
+    return rows.map((row) => JSON.parse(row.row_json) as JsonValue);
+  } finally {
+    db.close();
+  }
+}
+
+export function readResolvedInterventionPlacements(
+  options: { placementId?: string; gtfsRouteId?: string; treatmentFamily?: string; path?: string } = {},
+): JsonValue[] {
+  const clauses: string[] = [];
+  const parameters: string[] = [];
+  if (options.placementId) { clauses.push("placement_id = ?"); parameters.push(options.placementId); }
+  if (options.gtfsRouteId) { clauses.push("gtfs_route_id = ?"); parameters.push(options.gtfsRouteId); }
+  if (options.treatmentFamily) { clauses.push("treatment_family = ?"); parameters.push(options.treatmentFamily); }
+  return readRows("resolved_intervention_placements", "placement_id", {
+    ...(options.path ? { path: options.path } : {}), clauses, parameters,
+  });
+}
+
+export function readResolvedInterventionPlacementStates(
+  options: { placementId?: string; asOfDate?: string; state?: string; path?: string } = {},
+): JsonValue[] {
+  const clauses: string[] = [];
+  const parameters: string[] = [];
+  if (options.placementId) { clauses.push("placement_id = ?"); parameters.push(options.placementId); }
+  if (options.asOfDate) { clauses.push("as_of_date = ?"); parameters.push(options.asOfDate); }
+  if (options.state) { clauses.push("state = ?"); parameters.push(options.state); }
+  return readRows("resolved_intervention_placement_state_as_of", "placement_id", {
+    ...(options.path ? { path: options.path } : {}), clauses, parameters,
+  });
+}
+
+export function readResolvedCurrentInterventionFootprint(
+  options: { gtfsRouteId?: string; treatmentFamily?: string; asOfDate?: string; path?: string } = {},
+): JsonValue[] {
+  const clauses: string[] = [];
+  const parameters: string[] = [];
+  if (options.gtfsRouteId) { clauses.push("gtfs_route_id = ?"); parameters.push(options.gtfsRouteId); }
+  if (options.treatmentFamily) { clauses.push("treatment_family = ?"); parameters.push(options.treatmentFamily); }
+  if (options.asOfDate) { clauses.push("as_of_date = ?"); parameters.push(options.asOfDate); }
+  return readRows("resolved_current_intervention_footprint", "placement_id", {
+    ...(options.path ? { path: options.path } : {}), clauses, parameters,
+  });
 }

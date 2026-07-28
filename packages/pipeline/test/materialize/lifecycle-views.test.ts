@@ -47,6 +47,24 @@ describe.if(haveDb)("C2 lifecycle views", () => {
     }
   });
 
+  it("keeps legacy timeline/status views documentary and byte-compatible", () => {
+    const db = openCanonicalDb(canonicalDbPath(), { readonly: true });
+    try {
+      const resolvedSql = (db.query(
+        "SELECT sql FROM sqlite_master WHERE type = 'view' AND name = 'resolved_status'",
+      ).get() as { sql: string }).sql;
+      const timelineSql = (db.query(
+        "SELECT sql FROM sqlite_master WHERE type = 'view' AND name = 'route_timeline'",
+      ).get() as { sql: string }).sql;
+      expect(resolvedSql).toContain("ROW_NUMBER() OVER");
+      expect(resolvedSql).toContain("WHERE rn = 1");
+      expect(timelineSql).toContain("UNION ALL");
+      expect(timelineSql).toContain("'treatment'");
+    } finally {
+      db.close();
+    }
+  });
+
   it("date_unnormalized only lists events with a date literal but no normalized date", () => {
     const db = openCanonicalDb(canonicalDbPath(), { readonly: true });
     try {

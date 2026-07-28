@@ -577,6 +577,9 @@ export const lifecycle_entries_view = sqliteView("lifecycle_entries", {}).as(sql
   LEFT JOIN projects proj ON proj.record_id = subj.record_id
   WHERE ev.record_kind = 'event'`);
 
+// Legacy documentary projection. This is a source-observation timeline, not a
+// resolved inventory or current-state surface. New resolved builders must not
+// consume it. Keep the SQL byte-compatible for existing canonical DB users.
 export const route_timeline_view = sqliteView("route_timeline", {}).as(sql`
   SELECT route_record_id, 'event' AS entry_kind, event_record_id AS entry_record_id,
          lifecycle_phase AS label, date_normalized, date_precision, assertion_status, as_of_date, source_id
@@ -590,6 +593,10 @@ export const route_timeline_view = sqliteView("route_timeline", {}).as(sql`
   LEFT JOIN treatment_components tc ON tc.record_id = rel.object_id
   WHERE rel.relation_kind = 'has_treatment'`);
 
+// Deprecated legacy name: this folds documentary observations by recency only.
+// It has no conflict resolution or current-state authority. New resolved
+// builders must use the separate bitemporal resolved-transit model instead.
+// Keep the SQL byte-compatible for historical canonical DB queries.
 export const resolved_status_view = sqliteView("resolved_status", {}).as(sql`
   SELECT subject_record_id, subject_kind, lifecycle_phase, date_normalized, as_of_date, source_id, evidence_block
   FROM (

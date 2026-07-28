@@ -25,6 +25,17 @@ import {
   loadResolvedInterventions,
   productionResolvedInterventionDir,
 } from "@mta-wiki/pipeline/materialize/resolved-interventions";
+import {
+  buildProductionInterventionPlacements,
+  productionInterventionLifecycleDir,
+  productionInterventionPlacementDir,
+} from "@mta-wiki/pipeline/materialize/intervention-placement-build";
+import {
+  checkInterventionPlacementFrontier,
+} from "@mta-wiki/pipeline/materialize/intervention-placement-frontier";
+import {
+  checkInterventionLifecycleProjection,
+} from "@mta-wiki/pipeline/materialize/current-intervention-footprint";
 import { openResolvedTransitDb } from "@mta-wiki/db/resolved-transit-db";
 import {
   extractWriterRegion,
@@ -131,6 +142,55 @@ export function validateResolvedInterventions(
     issues.push({
       code: "resolved_interventions_invalid",
       path: "data/resolved-transit/operator/v1/interventions",
+      message: error instanceof Error ? error.message : String(error),
+    });
+  }
+}
+
+export function validateResolvedInterventionLifecycle(
+  issues: MtaValidationIssue[],
+  rootDir = repoRoot,
+): void {
+  try {
+    const build = buildProductionInterventionPlacements("2026-07-27", rootDir);
+    checkInterventionPlacementFrontier(productionInterventionPlacementDir(rootDir), {
+      frontier: build.frontier,
+      registry: build.registry,
+      transitions: build.transitions,
+    });
+    checkInterventionLifecycleProjection(
+      productionInterventionLifecycleDir(rootDir),
+      build.lifecycle,
+    );
+    const db = openResolvedTransitDb(join(rootDir, "data", "resolved-transit.db"));
+    try {
+      const count = (table: string) => Number((db.query(
+        `SELECT COUNT(*) AS count FROM ${table}`,
+      ).get() as { count: number }).count);
+      if (
+        count("resolved_intervention_placements") !== build.registry.length ||
+        count("resolved_application_placement_transitions") !== build.transitions.length ||
+        count("resolved_intervention_placement_frontier") !== build.frontier.candidate_ledger.length ||
+        count("resolved_intervention_placement_reconciliation") !==
+          build.frontier.transition_reconciliation.length ||
+        count("documentary_lifecycle_observations") !==
+          build.documentary_lifecycle_observations.length ||
+        count("resolved_intervention_lifecycle_assertions") !== build.lifecycle.assertions.length ||
+        count("resolved_intervention_placement_state_as_of") !== build.lifecycle.states.length ||
+        count("resolved_current_intervention_footprint") !== build.lifecycle.footprint.length
+      ) throw new Error("resolved placement/lifecycle DB counts disagree with operator artifacts");
+      if (
+        build.lifecycle.summary.resolved_placement_count !==
+        build.lifecycle.summary.confirmed_active_count +
+          build.lifecycle.summary.reconciliation_count
+      ) throw new Error("resolved placement footprint partition is unbalanced");
+    } finally {
+      db.close();
+    }
+  } catch (error) {
+    issues.push({
+      code: "resolved_intervention_lifecycle_invalid",
+      path: "data/resolved-transit/operator/v1",
       message: error instanceof Error ? error.message : String(error),
     });
   }
@@ -832,6 +892,7 @@ export function validateRepo(options: {
   validateReleasePointer(issues);
   validateOperationalEpisodeFrontier(issues);
   validateResolvedInterventions(issues);
+  validateResolvedInterventionLifecycle(issues);
   const dbRecords = readCanonicalRecordsFromDbFile();
   if (!dbRecords) {
     issues.push({

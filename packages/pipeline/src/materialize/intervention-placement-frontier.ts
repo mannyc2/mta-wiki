@@ -1,0 +1,392 @@
+import { createHash } from "node:crypto";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
+import { stableJson } from "@mta-wiki/db/stable-json";
+import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
+import type { ApplicationPlacementTransition } from "./application-placement-transitions.js";
+import type { InterventionPlacementRegistryEntry } from "./intervention-placements.js";
+import type { ResolvedInterventionApplication } from "./resolved-intervention-applications.js";
+
+export const INTERVENTION_PLACEMENT_FRONTIER_VERSION = 1 as const;
+export const INTERVENTION_PLACEMENT_RELATION_FAMILIES = [
+  "corridor_scope",
+  "location_scope",
+  "route_scope",
+  "timeline_context",
+  "treatment_context",
+] as const;
+
+export type PlacementObservationDisposition =
+  | "candidate_bearing"
+  | "included_context"
+  | "unrelated_domain_content"
+  | "non_authoritative"
+  | "unsupported_shape"
+  | "invalid";
+
+export type PlacementCandidateDisposition =
+  | "resolved_placement"
+  | "duplicate_alias"
+  | "not_a_placement"
+  | "ambiguous"
+  | "pending_review"
+  | "invalid";
+
+export type PlacementSourceObservationRow = {
+  schema_version: 1;
+  record_id: string;
+  record_kind: string;
+  source_ids: string[];
+  candidate_ids: string[];
+  disposition: PlacementObservationDisposition;
+  reason_code: string;
+};
+
+export type PlacementCandidateRow = {
+  schema_version: 1;
+  candidate_id: string;
+  origin: "application" | "independent_inventory" | "later_lifecycle";
+  application_id: string | null;
+  observation_record_ids: string[];
+  transition_ids: string[];
+  placement_ids: string[];
+  disposition: PlacementCandidateDisposition;
+  reason_code: string;
+};
+
+export type PlacementTransitionReconciliation = {
+  schema_version: 1;
+  application_id: string;
+  disposition: "pending_review" | "nonauthorizing_unknown_action";
+  reason_code: string;
+};
+
+export type InterventionPlacementFrontier = {
+  cohort: {
+    schema_version: 1;
+    cohort_id: "intervention-placement-observations-v1";
+    examined_record_count: number;
+    canonical_input_fingerprint: string;
+    predicate_version: 1;
+    relation_families: string[];
+    examined_record_ids: string[];
+  };
+  source_observation_ledger: PlacementSourceObservationRow[];
+  candidate_ledger: PlacementCandidateRow[];
+  transition_reconciliation: PlacementTransitionReconciliation[];
+  summary: {
+    schema_version: 1;
+    examined_observations: number;
+    included_observations: number;
+    excluded_observations: number;
+    candidate_ledger_rows: number;
+    application_candidate_count: number;
+    transition_count: number;
+    transition_reconciliation_count: number;
+    placement_registry_count: number;
+    counts_by_observation_disposition: Record<string, number>;
+    counts_by_candidate_disposition: Record<string, number>;
+    frontier_fingerprint: string;
+    zero_unexplained_loss: true;
+  };
+};
+
+const examinedKinds = new Set([
+  "event", "treatment_component", "claim", "project", "route", "corridor", "entity",
+]);
+const relationFamilies = new Set<string>(INTERVENTION_PLACEMENT_RELATION_FAMILIES);
+
+function canonical(value: unknown): string {
+  return stableJson(value as JsonValue);
+}
+function fingerprint(value: unknown): string {
+  return createHash("sha256").update(canonical(value)).digest("hex");
+}
+function sortedUnique(values: readonly string[]): string[] {
+  return [...new Set(values)].sort((a, b) => a.localeCompare(b));
+}
+function histogram(values: readonly string[]): Record<string, number> {
+  const result: Record<string, number> = {};
+  for (const value of values) result[value] = (result[value] ?? 0) + 1;
+  return Object.fromEntries(Object.entries(result).sort(([a], [b]) => a.localeCompare(b)));
+}
+const observationDispositionUniverse: PlacementObservationDisposition[] = [
+  "candidate_bearing", "included_context", "unrelated_domain_content",
+  "non_authoritative", "unsupported_shape", "invalid",
+];
+const candidateDispositionUniverse: PlacementCandidateDisposition[] = [
+  "resolved_placement", "duplicate_alias", "not_a_placement", "ambiguous",
+  "pending_review", "invalid",
+];
+function closedHistogram(universe: readonly string[], values: readonly string[]): Record<string, number> {
+  return {
+    ...Object.fromEntries(universe.map((value) => [value, 0])),
+    ...histogram(values),
+  };
+}
+function sourceIds(record: MtaCanonicalRecord): string[] {
+  return sortedUnique([
+    record.source_id,
+    ...(record.source_ids ?? []),
+    ...record.evidence_refs.map((ref) => ref.source_id),
+  ].filter(Boolean));
+}
+function text(value: JsonValue | undefined): string | null {
+  return typeof value === "string" && value.trim() ? value.trim().toLowerCase() : null;
+}
+function examined(record: MtaCanonicalRecord): boolean {
+  if (examinedKinds.has(record.record_kind)) return true;
+  return record.record_kind === "relation" &&
+    relationFamilies.has(text(record.payload.relation_family) ?? "");
+}
+function genericCandidateOrigin(record: MtaCanonicalRecord): PlacementCandidateRow["origin"] | null {
+  const lifecycle = text(record.payload.lifecycle_phase) ?? text(record.payload.status) ??
+    text(record.payload.assertion_status);
+  if (record.record_kind === "event" && lifecycle && lifecycle !== "other") return "later_lifecycle";
+  const inventory = [
+    text(record.payload.current_status),
+    text(record.payload.installation_status),
+    text(record.payload.operational_status),
+  ].filter(Boolean).join(" ");
+  if (inventory && /(active|installed|operational|removed|suspended|ended)/u.test(inventory)) {
+    return "independent_inventory";
+  }
+  return null;
+}
+function applicationCandidateId(applicationId: string): string {
+  return `placement-candidate:${fingerprint(["application", applicationId]).slice(0, 24)}`;
+}
+function recordCandidateId(recordId: string): string {
+  return `placement-candidate:${fingerprint(["canonical", recordId]).slice(0, 24)}`;
+}
+
+export function buildInterventionPlacementFrontier(input: {
+  canonical_records: readonly MtaCanonicalRecord[];
+  applications: readonly ResolvedInterventionApplication[];
+  registry: readonly InterventionPlacementRegistryEntry[];
+  transitions: readonly ApplicationPlacementTransition[];
+}): InterventionPlacementFrontier {
+  const examinedRecords = input.canonical_records.filter(examined)
+    .sort((a, b) => a.record_id.localeCompare(b.record_id));
+  const transitionsByApplication = new Map(input.transitions.map((row) => [row.application_id, row]));
+  const applicationBindingIds = new Map<string, string[]>();
+  for (const application of input.applications) {
+    const ids = sortedUnique([
+      application.route_record_id,
+      application.treatment_record_id,
+      ...(application.phase_record_id ? [application.phase_record_id] : []),
+      ...application.extent.record_ids,
+      ...application.evidence_bindings.map((binding) => binding.record_id),
+    ]);
+    for (const id of ids) {
+      const applications = applicationBindingIds.get(id) ?? [];
+      applications.push(application.application_id);
+      applicationBindingIds.set(id, applications);
+    }
+  }
+  const sourceLedger: PlacementSourceObservationRow[] = examinedRecords.map((record) => {
+    let disposition: PlacementObservationDisposition;
+    let reasonCode: string;
+    let candidateIds: string[] = [];
+    if (record.evidence_refs.length === 0) {
+      disposition = "invalid";
+      reasonCode = "missing_canonical_evidence";
+    } else if (
+      record.record_kind === "relation" &&
+      (typeof record.payload.subject_id !== "string" || typeof record.payload.object_id !== "string")
+    ) {
+      disposition = "unsupported_shape";
+      reasonCode = "placement_relation_missing_endpoints";
+    } else if (record.truth_status !== "source_stated" || record.review_state === "quarantined") {
+      disposition = "non_authoritative";
+      reasonCode = "truth_or_review_state_not_authoritative";
+    } else {
+      const boundApplications = applicationBindingIds.get(record.record_id) ?? [];
+      const origin = genericCandidateOrigin(record);
+      if (boundApplications.length) {
+        disposition = "included_context";
+        reasonCode = "exact_application_membership";
+        candidateIds = boundApplications.map(applicationCandidateId).sort();
+      } else if (origin) {
+        disposition = "candidate_bearing";
+        reasonCode = origin === "later_lifecycle"
+          ? "generic_lifecycle_predicate"
+          : "generic_inventory_predicate";
+        candidateIds = [recordCandidateId(record.record_id)];
+      } else if (record.record_kind === "relation" || ["route", "corridor", "project", "entity"].includes(record.record_kind)) {
+        disposition = "included_context";
+        reasonCode = "placement_context_only";
+      } else {
+        disposition = "unrelated_domain_content";
+        reasonCode = "no_placement_predicate_match";
+      }
+    }
+    return {
+      schema_version: 1,
+      record_id: record.record_id,
+      record_kind: record.record_kind,
+      source_ids: sourceIds(record),
+      candidate_ids: candidateIds,
+      disposition,
+      reason_code: reasonCode,
+    };
+  });
+  const candidates: PlacementCandidateRow[] = input.applications.map((application) => {
+    const transition = transitionsByApplication.get(application.application_id);
+    const placementIds = transition
+      ? sortedUnique([...transition.target_placement_ids, ...transition.result_placement_ids])
+      : [];
+    return {
+      schema_version: 1,
+      candidate_id: applicationCandidateId(application.application_id),
+      origin: "application",
+      application_id: application.application_id,
+      observation_record_ids: sortedUnique([
+        application.route_record_id,
+        application.treatment_record_id,
+        ...(application.phase_record_id ? [application.phase_record_id] : []),
+        ...application.extent.record_ids,
+        ...application.evidence_bindings.map((binding) => binding.record_id),
+      ]),
+      transition_ids: transition ? [transition.transition_id] : [],
+      placement_ids: placementIds,
+      disposition: transition && placementIds.length ? "resolved_placement" : "pending_review",
+      reason_code: transition
+        ? placementIds.length ? "accepted_application_transition" : "nonauthorizing_transition"
+        : application.action === "unknown"
+          ? "application_action_unknown"
+          : "missing_application_transition",
+    };
+  });
+  for (const row of sourceLedger.filter((row) => row.disposition === "candidate_bearing")) {
+    candidates.push({
+      schema_version: 1,
+      candidate_id: row.candidate_ids[0]!,
+      origin: row.reason_code === "generic_lifecycle_predicate"
+        ? "later_lifecycle"
+        : "independent_inventory",
+      application_id: null,
+      observation_record_ids: [row.record_id],
+      transition_ids: [],
+      placement_ids: [],
+      disposition: "pending_review",
+      reason_code: "requires_accepted_declarative_mapping",
+    });
+  }
+  candidates.sort((a, b) => a.candidate_id.localeCompare(b.candidate_id));
+  if (new Set(candidates.map((row) => row.candidate_id)).size !== candidates.length) {
+    throw new Error("duplicate intervention placement candidate id");
+  }
+  const transitionReconciliation = input.applications
+    .filter((application) => !transitionsByApplication.has(application.application_id))
+    .map((application): PlacementTransitionReconciliation => ({
+      schema_version: 1,
+      application_id: application.application_id,
+      disposition: application.action === "unknown"
+        ? "nonauthorizing_unknown_action"
+        : "pending_review",
+      reason_code: application.action === "unknown"
+        ? "unknown_action_cannot_authorize_placement_transition"
+        : "accepted_transition_required",
+    })).sort((a, b) => a.application_id.localeCompare(b.application_id));
+  if (input.applications.length !== input.transitions.length + transitionReconciliation.length) {
+    throw new Error("application transition reconciliation is unbalanced");
+  }
+  const included = sourceLedger.filter((row) =>
+    row.disposition === "candidate_bearing" || row.disposition === "included_context"
+  ).length;
+  const cohort = {
+    schema_version: 1 as const,
+    cohort_id: "intervention-placement-observations-v1" as const,
+    examined_record_count: examinedRecords.length,
+    canonical_input_fingerprint: fingerprint(examinedRecords),
+    predicate_version: 1 as const,
+    relation_families: [...INTERVENTION_PLACEMENT_RELATION_FAMILIES],
+    examined_record_ids: examinedRecords.map((record) => record.record_id),
+  };
+  const summaryWithoutFingerprint = {
+    schema_version: 1 as const,
+    examined_observations: sourceLedger.length,
+    included_observations: included,
+    excluded_observations: sourceLedger.length - included,
+    candidate_ledger_rows: candidates.length,
+    application_candidate_count: input.applications.length,
+    transition_count: input.transitions.length,
+    transition_reconciliation_count: transitionReconciliation.length,
+    placement_registry_count: input.registry.length,
+    counts_by_observation_disposition: closedHistogram(
+      observationDispositionUniverse,
+      sourceLedger.map((row) => row.disposition),
+    ),
+    counts_by_candidate_disposition: closedHistogram(
+      candidateDispositionUniverse,
+      candidates.map((row) => row.disposition),
+    ),
+    zero_unexplained_loss: true as const,
+  };
+  const summary = {
+    ...summaryWithoutFingerprint,
+    frontier_fingerprint: fingerprint({
+      cohort,
+      source_observation_ledger: sourceLedger,
+      candidate_ledger: candidates,
+      transition_reconciliation: transitionReconciliation,
+      summary: summaryWithoutFingerprint,
+    }),
+  };
+  if (summary.examined_observations !== summary.included_observations + summary.excluded_observations ||
+      summary.candidate_ledger_rows !== Object.values(summary.counts_by_candidate_disposition)
+        .reduce((sum, count) => sum + count, 0)) {
+    throw new Error("intervention placement frontier arithmetic is unbalanced");
+  }
+  return {
+    cohort,
+    source_observation_ledger: sourceLedger,
+    candidate_ledger: candidates,
+    transition_reconciliation: transitionReconciliation,
+    summary,
+  };
+}
+
+function json(value: unknown): string { return `${canonical(value)}\n`; }
+function jsonl(values: readonly unknown[]): string {
+  return values.map(canonical).join("\n") + (values.length ? "\n" : "");
+}
+
+export function interventionPlacementFrontierContents(input: {
+  frontier: InterventionPlacementFrontier;
+  registry: readonly InterventionPlacementRegistryEntry[];
+  transitions: readonly ApplicationPlacementTransition[];
+}): Record<string, string> {
+  return {
+    "candidate_ledger.jsonl": jsonl(input.frontier.candidate_ledger),
+    "cohort.json": json(input.frontier.cohort),
+    "registry.jsonl": jsonl(input.registry),
+    "source_observation_ledger.jsonl": jsonl(input.frontier.source_observation_ledger),
+    "summary.json": json(input.frontier.summary),
+    "transition_reconciliation.jsonl": jsonl(input.frontier.transition_reconciliation),
+    "transitions.jsonl": jsonl(input.transitions),
+  };
+}
+
+export function writeInterventionPlacementFrontier(
+  outputDir: string,
+  input: Parameters<typeof interventionPlacementFrontierContents>[0],
+): void {
+  mkdirSync(outputDir, { recursive: true });
+  for (const [name, content] of Object.entries(interventionPlacementFrontierContents(input))) {
+    writeFileSync(join(outputDir, name), content);
+  }
+}
+
+export function checkInterventionPlacementFrontier(
+  outputDir: string,
+  input: Parameters<typeof interventionPlacementFrontierContents>[0],
+): void {
+  for (const [name, content] of Object.entries(interventionPlacementFrontierContents(input))) {
+    const path = join(outputDir, name);
+    if (!existsSync(path) || readFileSync(path, "utf8") !== content) {
+      throw new Error(`intervention placement frontier artifact is missing or stale: ${path}`);
+    }
+  }
+}

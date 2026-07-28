@@ -1,5 +1,5 @@
 import { spawnSync } from "node:child_process";
-import { existsSync, readdirSync } from "node:fs";
+import { existsSync, readdirSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 import {
   auditPostIngestCoverage,
@@ -59,6 +59,20 @@ import {
   productionResolvedInterventionDir,
   writeResolvedInterventions,
 } from "@mta-wiki/pipeline/materialize/resolved-interventions";
+import {
+  buildProductionInterventionPlacements,
+  productionInterventionLifecycleDir,
+  productionInterventionPlacementDir,
+} from "@mta-wiki/pipeline/materialize/intervention-placement-build";
+import {
+  checkInterventionPlacementFrontier,
+  writeInterventionPlacementFrontier,
+} from "@mta-wiki/pipeline/materialize/intervention-placement-frontier";
+import {
+  checkInterventionLifecycleProjection,
+  writeInterventionLifecycleProjection,
+} from "@mta-wiki/pipeline/materialize/current-intervention-footprint";
+import { loadResolvedInterventions } from "@mta-wiki/pipeline/materialize/resolved-interventions";
 import { factDedupSameSourceDryRunSummaryText, factDedupScoutSummaryText, writeFactDedupSameSourceDryRun, writeFactDedupScout } from "@mta-wiki/pipeline/quality/fact-dedup";
 import { auditRelationshipGraph } from "@mta-wiki/pipeline/records/relationship-integrity";
 import { readSemanticCorrections, semanticSupersessionIdentities } from "@mta-wiki/pipeline/records/semantic-corrections";
@@ -219,6 +233,75 @@ This command does not call a provider.`);
 }
 
 export const materializeCommands = {
+  "materialize-intervention-placements": () => {
+    const output = optionValue(process.argv, "--output") ?? productionInterventionPlacementDir();
+    const build = buildProductionInterventionPlacements("2026-07-27");
+    const projection = {
+      frontier: build.frontier,
+      registry: build.registry,
+      transitions: build.transitions,
+    };
+    if (process.argv.includes("--check")) checkInterventionPlacementFrontier(output, projection);
+    else writeInterventionPlacementFrontier(output, projection);
+    const resolved = loadResolvedInterventions(productionResolvedInterventionDir());
+    rebuildResolvedTransitDb({
+      ...resolved,
+      placements: build.registry,
+      placement_transitions: build.transitions,
+      placement_frontier: build.frontier.candidate_ledger,
+      placement_reconciliation: build.frontier.transition_reconciliation,
+      documentary_lifecycle_observations: build.documentary_lifecycle_observations,
+    });
+    console.log(
+      `${process.argv.includes("--check") ? "Verified" : "Materialized"} intervention placements: ` +
+      `${build.registry.length} registry rows, ${build.transitions.length} transitions, ` +
+      `${build.frontier.summary.candidate_ledger_rows} candidates, ` +
+      `${build.frontier.summary.transition_reconciliation_count} transition reconciliations.`,
+    );
+  },
+
+  "materialize-intervention-lifecycle": () => {
+    const output = optionValue(process.argv, "--output") ?? productionInterventionLifecycleDir();
+    const asOfDate = optionValue(process.argv, "--date") ?? "2026-07-27";
+    const build = buildProductionInterventionPlacements(asOfDate);
+    if (process.argv.includes("--check")) checkInterventionLifecycleProjection(output, build.lifecycle);
+    else writeInterventionLifecycleProjection(output, build.lifecycle);
+    const resolved = loadResolvedInterventions(productionResolvedInterventionDir());
+    rebuildResolvedTransitDb({
+      ...resolved,
+      placements: build.registry,
+      placement_transitions: build.transitions,
+      placement_frontier: build.frontier.candidate_ledger,
+      placement_reconciliation: build.frontier.transition_reconciliation,
+      documentary_lifecycle_observations: build.documentary_lifecycle_observations,
+      lifecycle_assertions: build.lifecycle.assertions,
+      placement_states_as_of: build.lifecycle.states,
+      current_footprint: build.lifecycle.footprint,
+    });
+    console.log(
+      `${process.argv.includes("--check") ? "Verified" : "Materialized"} intervention lifecycle as of ${asOfDate}: ` +
+      `${build.lifecycle.summary.assertion_count} assertions, ` +
+      `${build.lifecycle.summary.confirmed_active_count} confirmed active, ` +
+      `${build.lifecycle.summary.reconciliation_count} reconciled placements.`,
+    );
+  },
+
+  "intervention-state-as-of": () => {
+    const asOfDate = optionValue(process.argv, "--date");
+    if (!asOfDate) throw new Error("intervention-state-as-of requires --date YYYY-MM-DD");
+    const output = optionValue(process.argv, "--json");
+    if (!output) throw new Error("intervention-state-as-of requires --json <path>");
+    const build = buildProductionInterventionPlacements(asOfDate);
+    writeFileSync(output, `${JSON.stringify({
+      as_of_date: asOfDate,
+      states: build.lifecycle.states,
+      summary: build.lifecycle.summary,
+    }, null, 2)}\n`);
+    console.log(
+      `Resolved ${build.lifecycle.states.length} intervention placement states as of ${asOfDate}; JSON: ${output}`,
+    );
+  },
+
   "materialize-resolved-interventions": () => {
     const output = optionValue(process.argv, "--output") ??
       productionResolvedInterventionDir();
