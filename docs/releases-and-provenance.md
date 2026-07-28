@@ -154,6 +154,9 @@ temporary database without touching authoring output with:
 bun run check
 ```
 
+That gate also checks the tracked test-dependency and public-snapshot input
+inventories before executing code.
+
 Evidence validation in public clones uses `data/evidence-block-index.jsonl`.
 
 ## Publication History
