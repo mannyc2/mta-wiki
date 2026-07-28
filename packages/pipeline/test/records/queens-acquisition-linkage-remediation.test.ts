@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { authoringIt } from "../support/local-test-profile";
 import { repoRoot } from "../../../core/src/paths";
 import { stableHash } from "../../../db/src/stable-json";
 import type { MtaCanonicalRecord, MtaSubmissionEntry } from "../../../db/src/types";
@@ -94,8 +95,11 @@ describe("Queens acquisition linkage remediation", () => {
     expect(entries.some((entry) => ["operational_occurrence", "phase_id", "segment_id"].some((key) => key in entry.tool_args.payload))).toBe(false);
   });
 
-  it("materializes 21 evidence-backed, endpoint-valid, type-valid relations and no shadow treatment", () => {
-    const generated = entriesToRecords(readJournal());
+  authoringIt("materializes 21 evidence-backed, endpoint-valid, type-valid relations and no shadow treatment", () => {
+    const submissionIds = new Set(readJournal().map((entry) => entry.submission_id));
+    const generated = readCanonicalRecordsFromJsonl().filter((record) =>
+      record.submission_ids.some((submissionId) => submissionIds.has(submissionId))
+    );
     const generatedByKind = (kind: MtaCanonicalRecord["record_kind"]) => generated.filter((record) => record.record_kind === kind);
     expect(generated).toHaveLength(26);
     expect(generatedByKind("source")).toHaveLength(2);
@@ -141,7 +145,7 @@ describe("Queens acquisition linkage remediation", () => {
     expect(actionLinks).toEqual(summary.canonical_relation_ids);
 
     const materializedLinkIds = new Set(
-      entriesToRecords(readJournal())
+      readCanonicalRecordsFromJsonl()
         .filter((record) => record.record_kind === "relation")
         .map((record) => record.record_id),
     );

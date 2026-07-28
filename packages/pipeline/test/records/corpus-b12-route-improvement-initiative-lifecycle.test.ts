@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "@mta-wiki/core/paths";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 
@@ -166,7 +167,7 @@ const generatedArtifactsReady =
   generatedArtifactPaths.every((path) => existsSync(join(repoRoot, path)));
 
 describe("B12 Route Improvement Initiative source and existing graph", () => {
-  it("pins the official page-3/page-4 evidence and excludes the page-5 subway story", () => {
+  corpusIt("pins the official page-3/page-4 evidence and excludes the page-5 subway story", () => {
     for (const [filename, expected] of Object.entries(artifactHashes)) {
       expect(sha256(readFileSync(join(repoRoot, "raw/sources", sourceId, filename)))).toBe(expected);
     }

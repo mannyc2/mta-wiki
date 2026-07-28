@@ -8,8 +8,12 @@ import {
   MTA_NYCT_IDENTITY_REMEDIATION_JOURNAL_PATH,
   MTA_NYCT_IDENTITY_RETIREMENTS_PATH,
 } from "../../../../scripts/remediate-mta-nyct-target-identity";
+import { authoringDescribe } from "../support/local-test-profile";
 
-describe("MTA/NYCT target identity remediation", () => {
+const describeAuthoring = authoringDescribe;
+
+describeAuthoring("MTA/NYCT target identity remediation", () => {
+  if (!mtaNyctRemediationAuthoringEnabled) return;
   const campaign = buildMtaNyctIdentityRemediation();
   const artifact = campaign.artifact;
   const journal = campaign.journalContent.trim().split("\n").map((line) => JSON.parse(line) as MtaSubmissionEntry);

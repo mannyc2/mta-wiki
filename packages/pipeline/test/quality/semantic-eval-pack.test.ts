@@ -2,6 +2,7 @@ import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { afterAll, describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
 import {
@@ -77,7 +78,7 @@ describe("judge calibration fixtures", () => {
 });
 
 describe("seeded defect generator", () => {
-  it("builds deterministic fixture rows with all defect classes and controls", () => {
+  corpusIt("builds deterministic fixture rows with all defect classes and controls", () => {
     const first = buildSeededDefectFixtures({ seed: "semqa-v1" });
     const second = buildSeededDefectFixtures({ seed: "semqa-v1" });
     expect(first).toEqual(second);

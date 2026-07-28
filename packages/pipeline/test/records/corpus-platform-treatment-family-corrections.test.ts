@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "@mta-wiki/core/paths";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 import {
@@ -83,6 +84,16 @@ describe("reviewed non-bus platform treatment-family corrections", () => {
     }
   });
 
+  corpusIt("pins every reviewed treatment correction to its exact staged evidence", () => {
+    const receipt = readJson<SweepReceipt>(sweepReceiptPath);
+    for (const decision of receipt.decisions) {
+      expectEvidenceHash(decision.evidence_id, decision.evidence_sha256);
+      if (decision.supporting_evidence_id && decision.supporting_evidence_sha256) {
+        expectEvidenceHash(decision.supporting_evidence_id, decision.supporting_evidence_sha256);
+      }
+    }
+  });
+
   it("applies only the reviewed family patch to all fifteen non-bus records", () => {
     expect(receipt.receipt_id).toBe("non-bus-platform-treatment-family-sweep-2024-2026");
     expect(receipt.decisions).toHaveLength(15);
@@ -112,10 +123,6 @@ describe("reviewed non-bus platform treatment-family corrections", () => {
       expect(applied.summary).toMatchObject({ total: 1, applied: 1, skipped: 0 });
       expect(applied.records[0]?.payload).toEqual(record.payload);
 
-      expectEvidenceHash(decision.evidence_id, decision.evidence_sha256);
-      if (decision.supporting_evidence_id && decision.supporting_evidence_sha256) {
-        expectEvidenceHash(decision.supporting_evidence_id, decision.supporting_evidence_sha256);
-      }
     }
   });
 

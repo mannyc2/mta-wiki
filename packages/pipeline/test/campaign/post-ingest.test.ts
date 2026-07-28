@@ -1,4 +1,5 @@
 import { describe, expect, it } from "bun:test";
+import { authoringIt } from "../support/local-test-profile";
 import { readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
@@ -205,7 +206,7 @@ describe("writer backlog packets", () => {
     });
   });
 
-  it("records queue metadata that matches the current writer backlog queue", () => {
+  authoringIt("records queue metadata that matches the current writer backlog queue", () => {
     const run = generateWriterBacklogPackets({ limit: 2, offset: 0 });
     try {
       const queueItems = collectWriterBacklogItems();
@@ -263,7 +264,7 @@ describe("writer backlog packets", () => {
     }
   }, ARTIFACT_TEST_TIMEOUT_MS);
 
-  it("builds writer packets for an explicit page list in caller order", () => {
+  authoringIt("builds writer packets for an explicit page list in caller order", () => {
     const routeCorridorQueueItems = collectWriterBacklogItems(undefined, { recordKinds: ["route", "corridor"] });
     const queueItems = routeCorridorQueueItems.length >= 3 ? routeCorridorQueueItems : collectWriterBacklogItems(undefined);
     const recordKinds = routeCorridorQueueItems.length >= 3 ? ["route", "corridor"] : undefined;
@@ -643,7 +644,7 @@ describe("writer backlog packets", () => {
     }
   }, ARTIFACT_TEST_TIMEOUT_MS);
 
-  it("writes a bounded handoff batch for claimed not-started dispatch shards", () => {
+  authoringIt("writes a bounded handoff batch for claimed not-started dispatch shards", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
     const runB = generateWriterBacklogPackets({ limit: 2, offset: 2 });
     let plan: ReturnType<typeof generateWriterBacklogDispatchPlan> | undefined;
@@ -734,7 +735,7 @@ describe("writer backlog packets", () => {
     }
   }, ARTIFACT_TEST_TIMEOUT_MS);
 
-  it("splits a verified handoff batch into per-shard prompt files", () => {
+  authoringIt("splits a verified handoff batch into per-shard prompt files", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
     const runB = generateWriterBacklogPackets({ limit: 2, offset: 2 });
     let plan: ReturnType<typeof generateWriterBacklogDispatchPlan> | undefined;
@@ -783,7 +784,7 @@ describe("writer backlog packets", () => {
     }
   }, ARTIFACT_TEST_TIMEOUT_MS);
 
-  it("detects tampered handoff prompt bundles", () => {
+  authoringIt("detects tampered handoff prompt bundles", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
     const runB = generateWriterBacklogPackets({ limit: 2, offset: 2 });
     let plan: ReturnType<typeof generateWriterBacklogDispatchPlan> | undefined;
@@ -832,7 +833,7 @@ describe("writer backlog packets", () => {
     }
   }, ARTIFACT_TEST_TIMEOUT_MS);
 
-  it("verifies aggregate handoff prompt coverage across reports", () => {
+  authoringIt("verifies aggregate handoff prompt coverage across reports", () => {
     const runA = generateWriterBacklogPackets({ limit: 2, offset: 0 });
     const runB = generateWriterBacklogPackets({ limit: 2, offset: 2 });
     const runC = generateWriterBacklogPackets({ limit: 2, offset: 4 });
@@ -1088,7 +1089,7 @@ describe("writer backlog packets", () => {
     }
   }, ARTIFACT_TEST_TIMEOUT_MS);
 
-  it("derives packet pages for future writer edit verification", () => {
+  authoringIt("derives packet pages for future writer edit verification", () => {
     const run = generateWriterBacklogPackets({ limit: 1, offset: 0 });
     try {
       const verification = verifyWriterBacklogPacketEdits([run.json_path]);

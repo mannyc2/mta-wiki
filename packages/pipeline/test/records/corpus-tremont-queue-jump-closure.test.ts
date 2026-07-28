@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "@mta-wiki/core/paths";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 import { loadOperationalAnchorReviewDecisions } from "@mta-wiki/pipeline/materialize/operational-anchor-review";
@@ -165,7 +166,7 @@ describe("Fall 2024 Tremont and Grand Concourse Bx36 queue jump", () => {
   );
   const receipt = readJson<CurationReceipt>(curationReceiptPath);
 
-  it("pins the official source and preserves its season-only onset", () => {
+  corpusIt("pins the official source and exact queue-jump evidence blocks", () => {
     for (const [filename, expected] of Object.entries(sourceArtifactPins)) {
       expect(sha256Hex(`raw/sources/${sourceId}/${filename}`)).toBe(expected);
     }
@@ -185,7 +186,9 @@ describe("Fall 2024 Tremont and Grand Concourse Bx36 queue jump", () => {
     expect(
       blocks.find((block) => block.block_id === "p014_c0002")?.raw_text,
     ).toContain("Installed at Grand Concourse & Tremont Av");
+  });
 
+  it("pins the official source and preserves its season-only onset", () => {
     const event = byRecordId(events, eventId);
     expect(event.payload).toMatchObject({
       event_family: "implementation",

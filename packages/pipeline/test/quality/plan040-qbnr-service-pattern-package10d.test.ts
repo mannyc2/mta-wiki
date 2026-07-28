@@ -1,4 +1,5 @@
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { createHash } from "node:crypto";
 import { existsSync, lstatSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
@@ -224,7 +225,7 @@ describe("Plan 040 QBNR Package 10D weekday lineage evidence freeze", () => {
     )).toBe(sha256(draftBytes));
   });
 
-  it("proves the candidate-specific Sunday-zero and Monday-active date role", () => {
+  corpusIt("proves the candidate-specific Sunday-zero and Monday-active date role", () => {
     const receipt = readJson<ReceiptArtifact>(receiptPath);
     const q48Sunday = patterns(
       "gtfs-static-20250626-queens-post-qbnr",
@@ -278,7 +279,7 @@ describe("Plan 040 QBNR Package 10D weekday lineage evidence freeze", () => {
     ]);
   });
 
-  it("recomputes every selected pattern and full comparison from accepted bytes", () => {
+  corpusIt("recomputes every selected pattern and full comparison from accepted bytes", () => {
     const receiptBytes = readFileSync(receiptPath);
     const stat = lstatSync(receiptPath);
     const receipt = JSON.parse(

@@ -1,0 +1,61 @@
+{
+  "contract_id": "mta-wiki-local-corpus-reviewed-pins-v1",
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "path": "raw/sources/mta_ace_routes_may2025_cut/blocks.jsonl",
+      "sha256": "f4a364c38c4048ef20c25865694b25c39c1199c1eca620ada54caf1758ad711f",
+      "bytes": 4544
+    },
+    {
+      "path": "raw/sources/mta_ace_routes_may2025_cut/metadata.json",
+      "sha256": "8f8a599f163550a7486affe9ac232055629ae0b16128ad45628d43fe80192371",
+      "bytes": 1888
+    },
+    {
+      "path": "raw/sources/mta_ace_routes_may2025_cut/source.json",
+      "sha256": "8f206d056b24099c5ff1f03957a94ff06fdfb7c43b52c4630961fbd4ee50b6ea",
+      "bytes": 555
+    },
+    {
+      "path": "raw/sources/mta_ace_routes_may2025_cut/text.txt",
+      "sha256": "10149a6594cd379bfb59fa64bb54f043191b8ffe6a4ad4da23cb33c8ac4083d6",
+      "bytes": 750
+    },
+    {
+      "path": "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl",
+      "sha256": "7b46befc331051265d4e7f9ff86ef8dde908474759ec1e94f9cfe28764a28490",
+      "bytes": 164036
+    },
+    {
+      "path": "raw/sources/mta_queens_bus_network_redesign_service_changes/metadata.json",
+      "sha256": "3d005b8b66bd40786be6ee68f538b6daf2366420854d6081b29ef584d89ad2ce",
+      "bytes": 1450
+    },
+    {
+      "path": "raw/sources/mta_queens_bus_network_redesign_service_changes/source.html",
+      "sha256": "4b5dc9ca398980a3803e076378acefd7ac3ec04343e0ac32db95a17c1d51226d",
+      "bytes": 317531
+    },
+    {
+      "path": "raw/sources/nyc_dot_gun_hill_road_completion_2023/blocks.jsonl",
+      "sha256": "bbfd1504126dc2d83d47d6e1c4335e4fb98457b9785dadfaf6aa35d4a617e905",
+      "bytes": 80129
+    },
+    {
+      "path": "raw/sources/nyc_dot_gun_hill_road_completion_2023/metadata.json",
+      "sha256": "bb26f2761fbdf79d94ae0df62e24551ce10391595e66f0da8066f216f9ff439c",
+      "bytes": 1414
+    },
+    {
+      "path": "raw/sources/nyc_dot_gun_hill_road_completion_2023/source.html",
+      "sha256": "66d8005f4c919f2dc65edc8acc0d926c213df833486ee857e38586ecc3937a99",
+      "bytes": 30117
+    },
+    {
+      "path": "raw/sources/nyc_dot_gun_hill_road_completion_2023/text.txt",
+      "sha256": "4f23cbc0937b5857b95b15e274379e1a4e2ec66f7b3dac75b2f6cebfcb66ee54",
+      "bytes": 11278
+    }
+  ]
+}

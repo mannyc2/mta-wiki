@@ -11,6 +11,7 @@ import {
   recordBaseIdForInput,
 } from "@mta-wiki/db/identity";
 import { rebuildCanonicalDb } from "@mta-wiki/db/canonical-db";
+import { assertCanonicalDbSourceRefreshAvailable } from "@mta-wiki/db/canonical-db-source-refresh";
 import { loadRelationshipContract, relationshipContractValidationMode } from "@mta-wiki/db/relationship-contract";
 import { canonicalDir, FILE_BY_KIND } from "@mta-wiki/pipeline/materialize/canonical-read";
 import { withDerivedRelations } from "@mta-wiki/pipeline/records/derived-relations";
@@ -1516,6 +1517,9 @@ function removeStaleGeneratedPages(currentPagePaths: string[]) {
 }
 
 export function materializeWiki(): MaterializeResult {
+  assertCanonicalDbSourceRefreshAvailable({
+    operation: "materialize",
+  });
   const submissions = readSubmissionEntries();
   const retiredIds = retiredSubmissionIds();
   const acceptedSubmissions = materializableEntries(submissions, { retiredSubmissionIds: retiredIds });

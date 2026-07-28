@@ -12,6 +12,7 @@ import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
 import {
   assertRelationshipEnforcementProof,
+  assertRelationshipEnforcementSourceRefreshReceipt,
   assertRelationshipEnforcementTransitionReceipt,
   assertRelationshipContractPolicyV1,
   RELATIONSHIP_ENFORCEMENT_GATE_IDS,
@@ -19,6 +20,7 @@ import {
   type RelationshipContract,
   type RelationshipEndpointMatrixPointer,
   type RelationshipEnforcementProof,
+  type RelationshipEnforcementSourceRefreshReceipt,
   type RelationshipEnforcementTransitionReceipt,
   type RelationshipFinalEndpointMatrix,
 } from "@mta-wiki/db/relationship-contract";
@@ -433,6 +435,103 @@ function assertContractMode(rootDir: string, descriptor: RelationshipReleaseBund
           `Relationship release bundle omits transition receipt dependency ${String(artifactPath)}`,
         );
       }
+    }
+    const sourceRefreshPointer = proofPointer.source_refresh_receipt;
+    if (sourceRefreshPointer !== undefined) {
+      const pointer = object(
+        sourceRefreshPointer,
+        "relationship_contract.enforcement_proof.source_refresh_receipt",
+      );
+      const sourceRefreshEntry = descriptor.artifacts.find(
+        (entry) =>
+          entry.role === "enforcement_source_refresh_receipt",
+      );
+      const sourceRefreshSchema = descriptor.artifacts.find(
+        (entry) =>
+          entry.role ===
+            "relationship_enforcement_source_refresh_receipt_schema",
+      );
+      if (!sourceRefreshEntry || !sourceRefreshSchema) {
+        throw new Error(
+          "Relationship release bundle source-refresh chain requires its receipt and schema",
+        );
+      }
+      const sourceRefresh = JSON.parse(
+        readFileSync(
+          join(rootDir, sourceRefreshEntry.source_path),
+          "utf8",
+        ),
+      ) as RelationshipEnforcementSourceRefreshReceipt;
+      assertRelationshipEnforcementSourceRefreshReceipt(
+        sourceRefresh,
+      );
+      if (
+        pointer.path !== sourceRefreshEntry.source_path ||
+        pointer.sha256 !==
+          sha256(
+            stableJson(sourceRefresh as unknown as JsonValue),
+          ) ||
+        proof?.source_refresh_receipt?.path !== pointer.path ||
+        proof.source_refresh_receipt.sha256 !== pointer.sha256
+      ) {
+        throw new Error(
+          "Relationship release bundle source-refresh receipt does not match the contract and proof chain",
+        );
+      }
+      for (const artifactPath of [
+        sourceRefresh.previous_active_proof.path,
+        sourceRefresh.completeness_manifest.path,
+        sourceRefresh.completeness_summary.path,
+        sourceRefresh.report.path,
+        ...sourceRefresh.unchanged_row_artifacts.map(
+          (artifact) => artifact.path,
+        ),
+        ...(sourceRefresh.previous_source_refresh_receipt
+          ? [sourceRefresh.previous_source_refresh_receipt.path]
+          : []),
+      ]) {
+        if (
+          !descriptor.artifacts.some(
+            (entry) => entry.source_path === artifactPath,
+          )
+        ) {
+          throw new Error(
+            `Relationship release bundle omits source-refresh dependency ${artifactPath}`,
+          );
+        }
+      }
+      const closureBytes = readFileSync(
+        join(
+          rootDir,
+          sourceRefresh.public_snapshot_input_closure.path,
+        ),
+      );
+      const coverageBytes = readFileSync(
+        join(rootDir, sourceRefresh.coverage_manifest.path),
+      );
+      if (
+        sha256(closureBytes) !==
+          sourceRefresh.public_snapshot_input_closure.sha256 ||
+        closureBytes.length !==
+          sourceRefresh.public_snapshot_input_closure.bytes ||
+        sha256(coverageBytes) !==
+          sourceRefresh.coverage_manifest.current.sha256 ||
+        coverageBytes.length !==
+          sourceRefresh.coverage_manifest.current.bytes
+      ) {
+        throw new Error(
+          "Relationship release bundle source-refresh external closure or coverage pin is stale",
+        );
+      }
+    } else if (
+      descriptor.artifacts.some(
+        (entry) =>
+          entry.role === "enforcement_source_refresh_receipt",
+      )
+    ) {
+      throw new Error(
+        "Relationship release bundle has an unaddressed source-refresh receipt",
+      );
     }
     for (const artifactPath of proofValidation.artifact_paths) {
       const entry = descriptor.artifacts.find(

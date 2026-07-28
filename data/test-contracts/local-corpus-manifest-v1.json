@@ -1,0 +1,614 @@
+{
+  "contract_id": "mta-wiki-local-corpus-v1",
+  "schema_version": 1,
+  "entries": [
+    {
+      "source_id": "2012_03_15_brt_hylan_meeting_slides",
+      "path": "raw/sources/2012_03_15_brt_hylan_meeting_slides/blocks.jsonl",
+      "sha256": "dd0c02f014c9d3a0f651ff9a6cc1d5e4ed6eef4c485981a70d2ba3af53c587c4",
+      "bytes": 133660,
+      "test_families": [
+        "corpus-profile:bus-lane-identity"
+      ]
+    },
+    {
+      "source_id": "2012_03_15_brt_hylan_meeting_slides",
+      "path": "raw/sources/2012_03_15_brt_hylan_meeting_slides/metadata.json",
+      "sha256": "a6ccca40e6174318ec13a9e7fef3f2e877f097f6a1a5a318bd2dd953ee3f4d12",
+      "bytes": 1532,
+      "test_families": [
+        "corpus-profile:bus-lane-identity"
+      ]
+    },
+    {
+      "source_id": "2012_03_15_brt_hylan_meeting_slides",
+      "path": "raw/sources/2012_03_15_brt_hylan_meeting_slides/source.pdf",
+      "sha256": "0ef8aef7cfa68eccf0513303ef1aed52556f6b6a442a94f802a8cf9613b69332",
+      "bytes": 4282564,
+      "test_families": [
+        "corpus-profile:bus-lane-identity"
+      ]
+    },
+    {
+      "source_id": "2014_hylan_blvd_final_report",
+      "path": "raw/sources/2014_hylan_blvd_final_report/blocks.jsonl",
+      "sha256": "c661395358b2235783b6c43c7c5dfd2bf3cfc22f5512053e7e85c16ff2255286",
+      "bytes": 216845,
+      "test_families": [
+        "corpus-profile:bus-lane-identity"
+      ]
+    },
+    {
+      "source_id": "2014_hylan_blvd_final_report",
+      "path": "raw/sources/2014_hylan_blvd_final_report/metadata.json",
+      "sha256": "a9ebe681d66d9dc08667b4c67259663368cf6dc0b0634a5fb6d8ddc4192786d7",
+      "bytes": 1444,
+      "test_families": [
+        "corpus-profile:bus-lane-identity"
+      ]
+    },
+    {
+      "source_id": "2014_hylan_blvd_final_report",
+      "path": "raw/sources/2014_hylan_blvd_final_report/source.pdf",
+      "sha256": "3e106b77495dcace4815c8e5294957baad516020de6ff735acdc3f0aff92400e",
+      "bytes": 3726939,
+      "test_families": [
+        "corpus-profile:bus-lane-identity"
+      ]
+    },
+    {
+      "source_id": "ace_routes_dataset_dictionary",
+      "path": "raw/sources/ace_routes_dataset_dictionary/blocks.jsonl",
+      "sha256": "6a1cebd44436009e112dc40df6da39421b5597d3badba4ecdcc667e8c7f472ec",
+      "bytes": 123312,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "ace_routes_dataset_dictionary",
+      "path": "raw/sources/ace_routes_dataset_dictionary/metadata.json",
+      "sha256": "85295354f00456c35a9b00864a229a838f57062e1e09564e3d14a665ae06a442",
+      "bytes": 1269,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "ace_routes_dataset_dictionary",
+      "path": "raw/sources/ace_routes_dataset_dictionary/source.json",
+      "sha256": "036ee59df32ea069706825915889079432acb27983b3b3f30ac56f7ad448c541",
+      "bytes": 4087,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "ace_routes_dataset_dictionary",
+      "path": "raw/sources/ace_routes_dataset_dictionary/text.txt",
+      "sha256": "23d8fb5a32d84783c1183314bcfcb01dded3a6f0fc62f84f22dfbf3cab4db760",
+      "bytes": 4932,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "better_buses_action_plan_2019",
+      "path": "raw/sources/better_buses_action_plan_2019/blocks.jsonl",
+      "sha256": "487b4b779b210ed48c836b10a647567cc20f4ea18c95a58abc4334744e262a28",
+      "bytes": 513329,
+      "test_families": [
+        "corpus-profile:bus-lane-identity"
+      ]
+    },
+    {
+      "source_id": "better_buses_action_plan_2019",
+      "path": "raw/sources/better_buses_action_plan_2019/metadata.json",
+      "sha256": "ac401be3bee7e15f58f7e59cd5f87732611e0ba285b6428513948c5770c2face",
+      "bytes": 1366,
+      "test_families": [
+        "corpus-profile:bus-lane-identity"
+      ]
+    },
+    {
+      "source_id": "better_buses_action_plan_2019",
+      "path": "raw/sources/better_buses_action_plan_2019/source.pdf",
+      "sha256": "68ac9e1aaf17a033577688e241e586ac101581ef0e2ba0cc3854196f9323f1c1",
+      "bytes": 8330907,
+      "test_families": [
+        "corpus-profile:bus-lane-identity"
+      ]
+    },
+    {
+      "source_id": "bx_cb5_projects_dec032019",
+      "path": "raw/sources/bx_cb5_projects_dec032019/blocks.jsonl",
+      "sha256": "6af34a3f7bcdfa991ec568a6b146756eaeee79e12013cd083aebff2cc6870871",
+      "bytes": 217652,
+      "test_families": [
+        "corpus-profile:bronx-acquisition-linkage-remediation"
+      ]
+    },
+    {
+      "source_id": "bx_cb5_projects_dec032019",
+      "path": "raw/sources/bx_cb5_projects_dec032019/metadata.json",
+      "sha256": "c168997e8dadf40c8fbc6ab8cb7e5056350f65e611724371237aae9da968e938",
+      "bytes": 1516,
+      "test_families": [
+        "corpus-profile:bronx-acquisition-linkage-remediation"
+      ]
+    },
+    {
+      "source_id": "bx_cb5_projects_dec032019",
+      "path": "raw/sources/bx_cb5_projects_dec032019/source.pdf",
+      "sha256": "0e43255dc5a37106de9c7805e7eb1db80289141bb3937870a3d31264fcb552bc",
+      "bytes": 5088842,
+      "test_families": [
+        "corpus-profile:bronx-acquisition-linkage-remediation"
+      ]
+    },
+    {
+      "source_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026",
+      "path": "raw/sources/flatbush_ave_bus_priority_mtp_briefing_apr2026/blocks.jsonl",
+      "sha256": "4a13c7a218c0f16f7ceb483a1117a5703caaee83c64b8e6b315d32a3312072b6",
+      "bytes": 144066,
+      "test_families": [
+        "corpus-profile:corpus-flatbush-phase1-installation-september-2025"
+      ]
+    },
+    {
+      "source_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026",
+      "path": "raw/sources/flatbush_ave_bus_priority_mtp_briefing_apr2026/metadata.json",
+      "sha256": "7de89144dcb896ad64ae3b14f29df6d8ae4fe29ca530ebfa8615cfd2f1d456a7",
+      "bytes": 1622,
+      "test_families": [
+        "corpus-profile:corpus-flatbush-phase1-installation-september-2025"
+      ]
+    },
+    {
+      "source_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026",
+      "path": "raw/sources/flatbush_ave_bus_priority_mtp_briefing_apr2026/source.pdf",
+      "sha256": "1041b579d5a32ed1be7bb247a0ead5384d7d67119a88adab4f985e9fd93ae5f6",
+      "bytes": 2089808,
+      "test_families": [
+        "corpus-profile:corpus-flatbush-phase1-installation-september-2025"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_127471",
+      "path": "raw/sources/meeting_doc_127471/blocks.jsonl",
+      "sha256": "e3ee6c7214ec37ea01ecfa906cc26e8ba62b7ea5da30f56fcb312f42ef2e959a",
+      "bytes": 301572,
+      "test_families": [
+        "corpus-profile:bus-lane-identity",
+        "corpus-profile:corpus-gun-hill-road-completion-2023"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_127471",
+      "path": "raw/sources/meeting_doc_127471/metadata.json",
+      "sha256": "3abae4c00097503d301593a61dd79537542cb80fb66fbf4fb64cb28c0c1c1df2",
+      "bytes": 1119,
+      "test_families": [
+        "corpus-profile:bus-lane-identity",
+        "corpus-profile:corpus-gun-hill-road-completion-2023"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_127471",
+      "path": "raw/sources/meeting_doc_127471/source.pdf",
+      "sha256": "5d3a82851efed1316ff8b65540eaa7e33c7fe9d21221192740476002f50d51ce",
+      "bytes": 5467536,
+      "test_families": [
+        "corpus-profile:bus-lane-identity",
+        "corpus-profile:corpus-gun-hill-road-completion-2023"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_143341",
+      "path": "raw/sources/meeting_doc_143341/blocks.jsonl",
+      "sha256": "c9fec17bd49d215cb61d46f046e3514dd7405e4cc1bc6ff225bf5451c769be71",
+      "bytes": 79202,
+      "test_families": [
+        "corpus-profile:corpus-b12-route-improvement-initiative-lifecycle"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_143341",
+      "path": "raw/sources/meeting_doc_143341/metadata.json",
+      "sha256": "feccd263adc23b6ffe733936c178c25615f2cfa8d47fda17da6abef9b7409ac2",
+      "bytes": 1105,
+      "test_families": [
+        "corpus-profile:corpus-b12-route-improvement-initiative-lifecycle"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_143341",
+      "path": "raw/sources/meeting_doc_143341/source.pdf",
+      "sha256": "1695a37fe9c8aa7990bc0c52db0ffbe600e90e828a2aa12f8fe58559d07a24d5",
+      "bytes": 918836,
+      "test_families": [
+        "corpus-profile:corpus-b12-route-improvement-initiative-lifecycle"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_160441",
+      "path": "raw/sources/meeting_doc_160441/blocks.jsonl",
+      "sha256": "a8e8b7a9a66145447444633e8c96e24afa195d39a8170f6f653c0786fc71efde",
+      "bytes": 51469,
+      "test_families": [
+        "corpus-profile:corpus-express-bus-service-enhancements-march-2025"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_160441",
+      "path": "raw/sources/meeting_doc_160441/source.pdf",
+      "sha256": "2cbb8ac03d1b52681982b1bd4d994c17b2f6e6995c1d4806bdf34b0ee8f754b8",
+      "bytes": 378124,
+      "test_families": [
+        "corpus-profile:corpus-express-bus-service-enhancements-march-2025"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_171141",
+      "path": "raw/sources/meeting_doc_171141/blocks.jsonl",
+      "sha256": "25919e028d70731b69d171dc15e4d35bbdb5b18e2cbb84b1b84e08036e6fc1af",
+      "bytes": 144194,
+      "test_families": [
+        "corpus-profile:corpus-express-bus-service-enhancements-march-2025"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_171141",
+      "path": "raw/sources/meeting_doc_171141/source.pdf",
+      "sha256": "51da3489ccb15a3fdf6b2fdbbd8603808cff8fd439215afaf1d5057ca4839d8a",
+      "bytes": 5501154,
+      "test_families": [
+        "corpus-profile:corpus-express-bus-service-enhancements-march-2025"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_179621",
+      "path": "raw/sources/meeting_doc_179621/blocks.jsonl",
+      "sha256": "05caa59b480d07f4f4140cf7423f80e29082684b4407fb7062cdccb2483af846",
+      "bytes": 56132,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_179621",
+      "path": "raw/sources/meeting_doc_179621/metadata.json",
+      "sha256": "2610d7401b95ea2b48f1bff9eef688105d2b97eb10b364e2f46c0afcc20a0508",
+      "bytes": 1094,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_179621",
+      "path": "raw/sources/meeting_doc_179621/source.pdf",
+      "sha256": "c6fde7da5aadf2525f52096311b017d37c0bfdcca250fd606b6ad072b3f75536",
+      "bytes": 90601,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_85816",
+      "path": "raw/sources/meeting_doc_85816/blocks.jsonl",
+      "sha256": "6c2f3f809d0f34a5d88533efe0713d23f17f737ca1a8e003e791a424fb0c069d",
+      "bytes": 2054695,
+      "test_families": [
+        "corpus-profile:bus-lane-identity"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_85816",
+      "path": "raw/sources/meeting_doc_85816/metadata.json",
+      "sha256": "e230f8fc5c15fc970c68de737aaf278c7b6e6bcca0fa5731c8b4ea557de8f816",
+      "bytes": 1110,
+      "test_families": [
+        "corpus-profile:bus-lane-identity"
+      ]
+    },
+    {
+      "source_id": "meeting_doc_85816",
+      "path": "raw/sources/meeting_doc_85816/source.pdf",
+      "sha256": "a83e62444fd24e3d157f94be44eebb12be290ff84025b2d1afcb0b3b328babaf",
+      "bytes": 7446397,
+      "test_families": [
+        "corpus-profile:bus-lane-identity"
+      ]
+    },
+    {
+      "source_id": "mta_ace_routes_may2025_cut",
+      "path": "raw/sources/mta_ace_routes_may2025_cut/blocks.jsonl",
+      "sha256": "f4a364c38c4048ef20c25865694b25c39c1199c1eca620ada54caf1758ad711f",
+      "bytes": 4544,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "mta_ace_routes_may2025_cut",
+      "path": "raw/sources/mta_ace_routes_may2025_cut/metadata.json",
+      "sha256": "8f8a599f163550a7486affe9ac232055629ae0b16128ad45628d43fe80192371",
+      "bytes": 1888,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "mta_ace_routes_may2025_cut",
+      "path": "raw/sources/mta_ace_routes_may2025_cut/source.json",
+      "sha256": "8f206d056b24099c5ff1f03957a94ff06fdfb7c43b52c4630961fbd4ee50b6ea",
+      "bytes": 555,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "mta_ace_routes_may2025_cut",
+      "path": "raw/sources/mta_ace_routes_may2025_cut/text.txt",
+      "sha256": "10149a6594cd379bfb59fa64bb54f043191b8ffe6a4ad4da23cb33c8ac4083d6",
+      "bytes": 750,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "mta_bus_schedules_2025_candidate_windows",
+      "path": "raw/sources/mta_bus_schedules_2025_candidate_windows/receipt.json",
+      "sha256": "82cc442de9b9c0356965f678c8491a78a093eea8eca06bac29d67747355a58c3",
+      "bytes": 22972,
+      "test_families": [
+        "corpus-profile:plan040-qbnr-stop-removal-acquisition"
+      ]
+    },
+    {
+      "source_id": "mta_bus_schedules_2025_x64_predecessor_2026_07_23",
+      "path": "raw/sources/mta_bus_schedules_2025_x64_predecessor_2026_07_23/receipt.json",
+      "sha256": "d76fd412c308597af40378e30283e607363d3ab344037a888b2d74cc993b5032",
+      "bytes": 1513,
+      "test_families": [
+        "corpus-profile:plan040-qbnr-stop-removal-acquisition"
+      ]
+    },
+    {
+      "source_id": "mta_q45_timetable_2025_06_29",
+      "path": "raw/sources/mta_q45_timetable_2025_06_29/source.pdf",
+      "sha256": "a6de73fb74e98441bbfd5f2030de9e8c079eba9eeb9adc8a5ff4f611a22339d6",
+      "bytes": 305922,
+      "test_families": [
+        "qbnr-study-readiness"
+      ]
+    },
+    {
+      "source_id": "mta_q86_q87_timetable_2025_06_29",
+      "path": "raw/sources/mta_q86_q87_timetable_2025_06_29/source.pdf",
+      "sha256": "c228aad87a505cafc0104cab5995b2e1d33e9357e68ef66a1d536d7d55902e5f",
+      "bytes": 862072,
+      "test_families": [
+        "qbnr-study-readiness"
+      ]
+    },
+    {
+      "source_id": "mta_qbnr_q45_route_detail_2025",
+      "path": "raw/sources/mta_qbnr_q45_route_detail_2025/source.html",
+      "sha256": "366f65f08e0a2d45eeec73a1f3bbe7ec6fb97c310f4ed3d2c3587b21d2d5e883",
+      "bytes": 62666,
+      "test_families": [
+        "qbnr-study-readiness"
+      ]
+    },
+    {
+      "source_id": "mta_qbnr_q5_route_detail_2025",
+      "path": "raw/sources/mta_qbnr_q5_route_detail_2025/source.html",
+      "sha256": "2016eba052f848b7ad2c0859705d69b0f910091933cc067398fe71ff584785d1",
+      "bytes": 68060,
+      "test_families": [
+        "qbnr-study-readiness"
+      ]
+    },
+    {
+      "source_id": "mta_qbnr_q85_route_detail_2025",
+      "path": "raw/sources/mta_qbnr_q85_route_detail_2025/source.html",
+      "sha256": "60ad197c0bc15334ca35640b2b769412dcbbc108b7cb4653e4daa11ee902fc3d",
+      "bytes": 66680,
+      "test_families": [
+        "qbnr-study-readiness"
+      ]
+    },
+    {
+      "source_id": "mta_qbnr_q86_route_detail_2025",
+      "path": "raw/sources/mta_qbnr_q86_route_detail_2025/source.html",
+      "sha256": "0aed4c0431cbfada403ea688f50c014aad3c266399eff4b232ed9659c221e048",
+      "bytes": 64552,
+      "test_families": [
+        "qbnr-study-readiness"
+      ]
+    },
+    {
+      "source_id": "mta_qbnr_q87_route_detail_2025",
+      "path": "raw/sources/mta_qbnr_q87_route_detail_2025/source.html",
+      "sha256": "19557a67d075d201e973bb626ec706eb7dfa31da3b0cbdda1e03cb1ca8a16581",
+      "bytes": 68445,
+      "test_families": [
+        "qbnr-study-readiness"
+      ]
+    },
+    {
+      "source_id": "mta_queens_bus_network_redesign_service_changes",
+      "path": "raw/sources/mta_queens_bus_network_redesign_service_changes/blocks.jsonl",
+      "sha256": "7b46befc331051265d4e7f9ff86ef8dde908474759ec1e94f9cfe28764a28490",
+      "bytes": 164036,
+      "test_families": [
+        "corpus-profile:plan040-qbnr-stop-removal-acquisition"
+      ]
+    },
+    {
+      "source_id": "mta_queens_bus_network_redesign_service_changes",
+      "path": "raw/sources/mta_queens_bus_network_redesign_service_changes/metadata.json",
+      "sha256": "3d005b8b66bd40786be6ee68f538b6daf2366420854d6081b29ef584d89ad2ce",
+      "bytes": 1450,
+      "test_families": [
+        "corpus-profile:plan040-qbnr-stop-removal-acquisition"
+      ]
+    },
+    {
+      "source_id": "mta_queens_bus_network_redesign_service_changes",
+      "path": "raw/sources/mta_queens_bus_network_redesign_service_changes/source.html",
+      "sha256": "4b5dc9ca398980a3803e076378acefd7ac3ec04343e0ac32db95a17c1d51226d",
+      "bytes": 317531,
+      "test_families": [
+        "corpus-profile:plan040-qbnr-stop-removal-acquisition"
+      ]
+    },
+    {
+      "source_id": "nyc_dot_bus_lanes_local_streets_2026_07_22",
+      "path": "raw/sources/nyc_dot_bus_lanes_local_streets_2026_07_22/source.geojson",
+      "sha256": "e09e001191c53799936884f4e8311873a03bf9ff4f38e1f0b86af4ba465b6ef5",
+      "bytes": 3451772,
+      "test_families": [
+        "corpus-profile:bus-lane-identity"
+      ]
+    },
+    {
+      "source_id": "nyc_dot_gun_hill_road_completion_2023",
+      "path": "raw/sources/nyc_dot_gun_hill_road_completion_2023/blocks.jsonl",
+      "sha256": "bbfd1504126dc2d83d47d6e1c4335e4fb98457b9785dadfaf6aa35d4a617e905",
+      "bytes": 80129,
+      "test_families": [
+        "corpus-profile:bus-lane-identity",
+        "corpus-profile:corpus-gun-hill-road-completion-2023"
+      ]
+    },
+    {
+      "source_id": "nyc_dot_gun_hill_road_completion_2023",
+      "path": "raw/sources/nyc_dot_gun_hill_road_completion_2023/metadata.json",
+      "sha256": "bb26f2761fbdf79d94ae0df62e24551ce10391595e66f0da8066f216f9ff439c",
+      "bytes": 1414,
+      "test_families": [
+        "corpus-profile:bus-lane-identity",
+        "corpus-profile:corpus-gun-hill-road-completion-2023"
+      ]
+    },
+    {
+      "source_id": "nyc_dot_gun_hill_road_completion_2023",
+      "path": "raw/sources/nyc_dot_gun_hill_road_completion_2023/source.html",
+      "sha256": "66d8005f4c919f2dc65edc8acc0d926c213df833486ee857e38586ecc3937a99",
+      "bytes": 30117,
+      "test_families": [
+        "corpus-profile:corpus-gun-hill-road-completion-2023"
+      ]
+    },
+    {
+      "source_id": "nyc_dot_gun_hill_road_completion_2023",
+      "path": "raw/sources/nyc_dot_gun_hill_road_completion_2023/text.txt",
+      "sha256": "4f23cbc0937b5857b95b15e274379e1a4e2ec66f7b3dac75b2f6cebfcb66ee54",
+      "bytes": 11278,
+      "test_families": [
+        "corpus-profile:corpus-gun-hill-road-completion-2023"
+      ]
+    },
+    {
+      "source_id": "nyct_key_performance_metrics_doc194001",
+      "path": "raw/sources/nyct_key_performance_metrics_doc194001/blocks.jsonl",
+      "sha256": "068d54b750065e0a05d2b1b696d64eaf5171763908626207115060c5bf7f7ee7",
+      "bytes": 348121,
+      "test_families": [
+        "corpus-profile:corpus-ace-december-2025-warning-cohort"
+      ]
+    },
+    {
+      "source_id": "nyct_key_performance_metrics_doc194001",
+      "path": "raw/sources/nyct_key_performance_metrics_doc194001/metadata.json",
+      "sha256": "641b84213f03daa8591e9fbc9f1d7325eea12daed2d55770448fe87173fa35d0",
+      "bytes": 1315,
+      "test_families": [
+        "corpus-profile:corpus-ace-december-2025-warning-cohort"
+      ]
+    },
+    {
+      "source_id": "nyct_key_performance_metrics_doc194001",
+      "path": "raw/sources/nyct_key_performance_metrics_doc194001/source.pdf",
+      "sha256": "61b015b7778c176b182d4d81422aaf27c06f0ee6ad2953cb494cbff9453b2f19",
+      "bytes": 6419049,
+      "test_families": [
+        "corpus-profile:corpus-ace-december-2025-warning-cohort"
+      ]
+    },
+    {
+      "source_id": "nyct_key_performance_metrics_doc194001",
+      "path": "raw/sources/nyct_key_performance_metrics_doc194001/text.txt",
+      "sha256": "94e7d39757e0cb7c39f580341d8fdb990c2637be87c7ece9bee55a83a83bd68e",
+      "bytes": 72035,
+      "test_families": [
+        "corpus-profile:corpus-ace-december-2025-warning-cohort"
+      ]
+    },
+    {
+      "source_id": "nyct_key_performance_metrics_june2025",
+      "path": "raw/sources/nyct_key_performance_metrics_june2025/blocks.jsonl",
+      "sha256": "05c367fed2e36a6c07f5d97517315a402731d1932f7bbf85aff9a922ed150e99",
+      "bytes": 357876,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "nyct_key_performance_metrics_june2025",
+      "path": "raw/sources/nyct_key_performance_metrics_june2025/metadata.json",
+      "sha256": "aa4280f87295631afaccafe78d9f613ee86da6add51f9d35a742fbc6f1492fd9",
+      "bytes": 1313,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "nyct_key_performance_metrics_june2025",
+      "path": "raw/sources/nyct_key_performance_metrics_june2025/source.pdf",
+      "sha256": "aca1f7edc2748df53814b945128c53ebf11fd06e3cc1cb5be6772260308df13e",
+      "bytes": 591802,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "nyct_key_performance_metrics_june2025",
+      "path": "raw/sources/nyct_key_performance_metrics_june2025/text.txt",
+      "sha256": "70decd350b161dd3167c6084dbfdd34c8cbd3794dc6aeb0e154247ca4d88b3ae",
+      "bytes": 70121,
+      "test_families": [
+        "corpus-profile:corpus-ace-may2025-two-cohorts"
+      ]
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb5_nov2024",
+      "path": "raw/sources/tremont_ave_bus_priority_cb5_nov2024/blocks.jsonl",
+      "sha256": "ff2b47fe400f12ae868c9c082a8b3bf71702aa0e3927215f09ed9913add48e59",
+      "bytes": 298669,
+      "test_families": [
+        "corpus-profile:corpus-tremont-queue-jump-closure"
+      ]
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb5_nov2024",
+      "path": "raw/sources/tremont_ave_bus_priority_cb5_nov2024/metadata.json",
+      "sha256": "1c016f83d36fbc4fc3a8261c4f27a204c74dd52a21e830641793b6421f044124",
+      "bytes": 1593,
+      "test_families": [
+        "corpus-profile:corpus-tremont-queue-jump-closure"
+      ]
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb5_nov2024",
+      "path": "raw/sources/tremont_ave_bus_priority_cb5_nov2024/source.pdf",
+      "sha256": "0f16201c3c442d289fbbbdb3bae4846eb74e1829c6bafff9a9111a85ffa6c5b8",
+      "bytes": 6376448,
+      "test_families": [
+        "corpus-profile:corpus-tremont-queue-jump-closure"
+      ]
+    }
+  ]
+}

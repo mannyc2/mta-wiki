@@ -53,6 +53,7 @@
     "reviewed_by": { "type": "string", "minLength": 1 },
     "previous_proof": { "$ref": "#/$defs/proofRef" },
     "transition_receipt": { "$ref": "#/$defs/artifactRef" },
+    "source_refresh_receipt": { "$ref": "#/$defs/artifactRef" },
     "final_matrix": {
       "allOf": [
         { "$ref": "#/$defs/artifactRef" },

@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { authoringIt, corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "../../../core/src/paths";
 import { loadRelationshipContract } from "../../../db/src/relationship-contract";
 import { stableHash } from "../../../db/src/stable-json";
@@ -124,8 +125,11 @@ describe("Manhattan Third Avenue acquisition linkage remediation", () => {
     ].some((key) => key in entry.tool_args.payload))).toBe(false);
   });
 
-  it("materializes two physical proposal scopes and 14 evidence-backed, endpoint-valid, type-valid relations", () => {
-    const generated = entriesToRecords(readJournal());
+  authoringIt("materializes two physical proposal scopes and 14 evidence-backed, endpoint-valid, type-valid relations", () => {
+    const submissionIds = new Set(readJournal().map((entry) => entry.submission_id));
+    const generated = readCanonicalRecordsFromJsonl().filter((record) =>
+      record.submission_ids.some((submissionId) => submissionIds.has(submissionId))
+    );
     const byKind = (kind: MtaCanonicalRecord["record_kind"]) => generated.filter((record) => record.record_kind === kind);
     expect(generated).toHaveLength(22);
     expect(byKind("source")).toHaveLength(2);
@@ -199,7 +203,7 @@ describe("Manhattan Third Avenue acquisition linkage remediation", () => {
     expect(actionLinks).toHaveLength(14);
     expect(actionLinks).toEqual(summary.canonical_relation_ids);
     const materializedLinkIds = new Set(
-      entriesToRecords(readJournal())
+      readCanonicalRecordsFromJsonl()
         .filter((record) => record.record_kind === "relation")
         .map((record) => record.record_id),
     );
@@ -215,7 +219,7 @@ describe("Manhattan Third Avenue acquisition linkage remediation", () => {
     expect(matchingExclusions.every((exclusion) => !exclusion.study_projection_eligible && !exclusion.phase_identity_proved)).toBe(true);
   });
 
-  it("pins both ignored staged source packets to acquisition and block hashes", () => {
+  corpusIt("pins both ignored staged source packets to acquisition and block hashes", () => {
     const verification = readJson<{
       sources: Array<{
         source_id: string;

@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { spawnSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
@@ -253,7 +254,7 @@ describe("Plan 040 final transition checkpoint", () => {
     });
   });
 
-  it(
+  corpusIt(
     "replays P11, P13, P14, and P15 without changing prior artifacts",
     () => {
       const commands = [

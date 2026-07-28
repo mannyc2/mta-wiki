@@ -1,4 +1,5 @@
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { createHash } from "node:crypto";
 import { spawnSync } from "node:child_process";
 import { lstatSync, readFileSync } from "node:fs";
@@ -209,7 +210,7 @@ describe("Plan 040 Package 11 residual service-grain evidence freeze", () => {
     });
   });
 
-  it("replays frozen exclusions after later ledger closures", () => {
+  corpusIt("replays frozen exclusions after later ledger closures", () => {
     const result = spawnSync(
       process.execPath,
       [

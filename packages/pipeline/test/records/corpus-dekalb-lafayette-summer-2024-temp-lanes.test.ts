@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "@mta-wiki/core/paths";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 
@@ -152,7 +153,7 @@ describe("DeKalb/Lafayette Summer 2024 temporary bus lanes", () => {
   const corrections = readJsonl<SemanticCorrection>("data/semantic-corrections/corrections.jsonl");
   const acquisitionReceipt = readJson<AcquisitionReceipt>(acquisitionReceiptPath);
 
-  it("pins both official decks and preserves the source-stated season", () => {
+  corpusIt("pins both official decks and their exact temporary-lane evidence", () => {
     for (const [pinnedSourceId, artifacts] of Object.entries(sourceArtifactPins)) {
       for (const [filename, expected] of Object.entries(artifacts)) {
         expect(sha256Hex(`raw/sources/${pinnedSourceId}/${filename}`)).toBe(expected);
@@ -162,7 +163,9 @@ describe("DeKalb/Lafayette Summer 2024 temporary bus lanes", () => {
       expect(block?.raw_text).toContain("Temporary bus lanes installed during the Summer 2024 G Train shutdown");
       expect(block?.raw_text).toContain("B38 service");
     }
+  });
 
+  it("pins both official decks and preserves the source-stated season", () => {
     const event = byRecordId(events, eventId);
     expect(event.payload).toMatchObject({
       event_family: "implementation",

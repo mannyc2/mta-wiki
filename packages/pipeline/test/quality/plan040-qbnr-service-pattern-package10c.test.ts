@@ -1,4 +1,5 @@
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
@@ -231,7 +232,7 @@ describe("Plan 040 QBNR Package 10C mixed-risk evidence freeze", () => {
     )).toBe(sha256(draftBytes));
   });
 
-  it("recomputes all 11 full-stop patterns and five comparisons from pinned feeds", () => {
+  corpusIt("recomputes all 11 full-stop patterns and five comparisons from pinned feeds", () => {
     const receiptBytes = readFileSync(receiptPath);
     const receipt = JSON.parse(
       receiptBytes.toString("utf8"),

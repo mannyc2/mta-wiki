@@ -6,14 +6,7 @@ import {
   type RelationshipDispositionDecision,
 } from "@mta-wiki/pipeline/quality/relationship-dispositions";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
-import { entriesToRecords } from "@mta-wiki/pipeline/materialize/materialize";
-import { retiredSubmissionIds } from "@mta-wiki/pipeline/records/submission-overrides";
-import {
-  readSemanticCorrections,
-  readSemanticCorrectionSupersessions,
-  withSemanticCorrections,
-} from "@mta-wiki/pipeline/records/semantic-corrections";
-import { readSubmissionEntries } from "@mta-wiki/pipeline/records/submissions";
+import { readCanonicalRecordsFromJsonl } from "@mta-wiki/pipeline/materialize/canonical-read";
 
 const operationalCoreRoles = [
   "canonical_event_identity",
@@ -344,20 +337,16 @@ describe("relationship dispositions v1", () => {
     );
   });
 
-  it("keeps all 1,362 operational and 669 bus-treatment decisions valid in the replayed graph", () => {
-    const corrected = withSemanticCorrections(
-      entriesToRecords(readSubmissionEntries(), { retiredSubmissionIds: retiredSubmissionIds() }),
-      readSemanticCorrections(),
-      readSemanticCorrectionSupersessions(),
-    );
-    expect(corrected.issues).toEqual([]);
+  it("keeps all 1,362 operational and 669 bus-treatment decisions valid in the tracked public snapshot", () => {
+    const records = readCanonicalRecordsFromJsonl();
+    expect(records.length).toBeGreaterThan(0);
     const ledger = readRelationshipDispositionLedger();
     const decisions = ledger.decisions;
     expect(decisions.filter((entry) => entry.selector === "operational_event")).toHaveLength(1_362);
     expect(decisions.filter((entry) => entry.selector === "bus_lane_family_treatment")).toHaveLength(669);
-    expect(validateRelationshipDispositionLedger(corrected.records, ledger)).toEqual([]);
+    expect(validateRelationshipDispositionLedger(records, ledger)).toEqual([]);
 
-    const recordsById = new Map(corrected.records.map((record) => [record.record_id, record]));
+    const recordsById = new Map(records.map((record) => [record.record_id, record]));
     const staleReferences = new Set([
       "relation_nyct-employee-vaccination-site",
       "relation_rel-project-m86-sbs-launch-event",

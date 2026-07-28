@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "@mta-wiki/core/paths";
 import type { JsonObject, MtaCanonicalRecord } from "@mta-wiki/db/types";
 import {
@@ -200,10 +201,6 @@ describe("reviewed prospective lifecycle corrections", () => {
       expect(applied.summary).toMatchObject({ total: 1, applied: 1, skipped: 0 });
       expect(applied.records[0]?.payload).toEqual(record.payload);
 
-      expectEvidenceHash(decision.evidence_id, decision.evidence_sha256);
-      if (decision.supporting_evidence_id && decision.supporting_evidence_sha256) {
-        expectEvidenceHash(decision.supporting_evidence_id, decision.supporting_evidence_sha256);
-      }
       if (decision.corroborating_relation_id && decision.corroborating_relation_status) {
         const relation = relationsById.get(decision.corroborating_relation_id);
         expect(relation?.payload.object_id).toBe(decision.record_id);
@@ -225,14 +222,27 @@ describe("reviewed prospective lifecycle corrections", () => {
     expect(record?.payload.date_normalized).toBe(review.canonical_date);
     expect(record?.payload.date_precision).toBe(review.canonical_date_precision);
     expect(record?.payload.lifecycle_phase).toBe("planned");
-    expectEvidenceHash(review.local_source_date_evidence_id, review.local_source_date_evidence_sha256);
-    expectEvidenceHash(review.local_event_evidence_id, review.local_event_evidence_sha256);
-
     const primary = review.staged_official_primary_source;
     expect(primary.publisher).toBe("Metropolitan Transportation Authority");
     expect(primary.confirmed_onset).toBe(review.canonical_date);
     expect(primary.title).toContain("January 2026");
     expect(primary.url).toMatch(/^https:\/\/www\.mta\.info\//u);
+    expect(review.supporting_government_source.confirmed_onset).toBe(review.canonical_date);
+    expect(review.supporting_government_source.weekday_literal).toBe("Friday");
+    expect(review.supporting_government_source.url).toMatch(/^https:\/\/www\.governor\.ny\.gov\//u);
+  });
+
+  corpusIt("pins every lifecycle decision and the staged Newburgh primary source", () => {
+    for (const decision of receipt.lifecycle_decisions) {
+      expectEvidenceHash(decision.evidence_id, decision.evidence_sha256);
+      if (decision.supporting_evidence_id && decision.supporting_evidence_sha256) {
+        expectEvidenceHash(decision.supporting_evidence_id, decision.supporting_evidence_sha256);
+      }
+    }
+    const review = receipt.newburgh_date_validation;
+    expectEvidenceHash(review.local_source_date_evidence_id, review.local_source_date_evidence_sha256);
+    expectEvidenceHash(review.local_event_evidence_id, review.local_event_evidence_sha256);
+    const primary = review.staged_official_primary_source;
     expectEvidenceHash(primary.evidence_id, primary.evidence_sha256);
     const sourceRoot = `raw/sources/${primary.source_id}`;
     const sourceMetadata = readJson<SourceMetadata>(`${sourceRoot}/metadata.json`);
@@ -244,10 +254,6 @@ describe("reviewed prospective lifecycle corrections", () => {
     expect(readFileSync(join(repoRoot, `${sourceRoot}/source.html`)).byteLength).toBe(primary.capture.source_html_bytes);
     expect(sha256(`${sourceRoot}/text.txt`)).toBe(primary.capture.text_sha256);
     expect(sha256(`${sourceRoot}/blocks.jsonl`)).toBe(primary.capture.blocks_sha256);
-
-    expect(review.supporting_government_source.confirmed_onset).toBe(review.canonical_date);
-    expect(review.supporting_government_source.weekday_literal).toBe("Friday");
-    expect(review.supporting_government_source.url).toMatch(/^https:\/\/www\.governor\.ny\.gov\//u);
   });
 
   it("keeps reviewed records occurrence-free and preserves the receipt-pinned queue disposition", () => {

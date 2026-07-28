@@ -1,4 +1,5 @@
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
@@ -186,7 +187,7 @@ describe("Plan 040 Package 10 local validation-schedule acquisition", () => {
     expect(value.extraction.requested_slices_exhaustive).toBe(true);
   });
 
-  it("stages exact source, metadata, blocks, and matching raw receipt bytes", () => {
+  corpusIt("stages exact source, metadata, blocks, and matching raw receipt bytes", () => {
     const value = receipt();
     const source = readFileSync(`${SOURCE_ROOT}/source.csv`);
     const metadata = readFileSync(`${SOURCE_ROOT}/metadata.json`);
@@ -289,7 +290,7 @@ describe("Plan 040 Package 10 local validation-schedule acquisition", () => {
     });
   });
 
-  it("keeps the acquisition wholly nonauthorizing", () => {
+  corpusIt("keeps the acquisition wholly nonauthorizing", () => {
     const value = receipt();
     expect({
       authorizes_occurrence: value.authorizes_occurrence,

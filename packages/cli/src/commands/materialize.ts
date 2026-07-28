@@ -50,6 +50,7 @@ import {
   type PipelineReport,
 } from "@mta-wiki/agents";
 import { canonicalDbPath } from "@mta-wiki/db/canonical-db";
+import { assertCanonicalDbSourceRefreshAvailable } from "@mta-wiki/db/canonical-db-source-refresh";
 import { loadRelationshipContract, relationshipContractValidationMode } from "@mta-wiki/db/relationship-contract";
 import { factDedupSameSourceDryRunSummaryText, factDedupScoutSummaryText, writeFactDedupSameSourceDryRun, writeFactDedupScout } from "@mta-wiki/pipeline/quality/fact-dedup";
 import { auditRelationshipGraph } from "@mta-wiki/pipeline/records/relationship-integrity";
@@ -212,6 +213,9 @@ This command does not call a provider.`);
 
 export const materializeCommands = {
   materialize: () => {
+    assertCanonicalDbSourceRefreshAvailable({
+      operation: "materialize command",
+    });
     if (!hasLocalStagedSourceBlocks()) {
       console.log("Local raw source blocks not found; public-clone materialize is rebuilding the SQLite projection from tracked canonical JSONL.");
       rebuildDbFromTrackedCanonical();
@@ -234,6 +238,9 @@ export const materializeCommands = {
   },
 
   "rebuild-db-from-canonical": () => {
+    assertCanonicalDbSourceRefreshAvailable({
+      operation: "rebuild-db-from-canonical command",
+    });
     rebuildDbFromTrackedCanonical();
   },
 

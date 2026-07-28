@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
+import { canonicalDbPath } from "@mta-wiki/db/canonical-db";
 import { readCanonicalRecordsFromDbFile } from "@mta-wiki/pipeline/materialize/canonical-read";
 import type { ForecastRealizationTargetList } from "@mta-wiki/pipeline/quality/forecast-realization-frontier";
 import {
@@ -30,7 +31,7 @@ describe("current forecast realization reviewed overlay", () => {
     const targetList = JSON.parse(
       readFileSync(join(repoRoot, "data/quality/acquisition/target-list.json"), "utf8"),
     ) as ForecastRealizationTargetList;
-    const records = readCanonicalRecordsFromDbFile(join(repoRoot, "data/canonical.db"));
+    const records = readCanonicalRecordsFromDbFile(canonicalDbPath());
     expect(records).not.toBeNull();
     const rebuilt = buildForecastRealizationReviewArtifacts({
       targetList,

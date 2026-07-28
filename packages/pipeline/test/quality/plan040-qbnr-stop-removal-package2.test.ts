@@ -1,4 +1,5 @@
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { dirname } from "node:path";
@@ -298,7 +299,7 @@ describe("Plan 040 QBNR Package 2 evidence-only draft", () => {
     });
   });
 
-  it("resolves every proposed evidence binding and covers every exact removed row", () => {
+  corpusIt("resolves every proposed evidence binding and covers every exact removed row", () => {
     const qm12 = readDraft().candidates.find((row) => row.gtfs_route_id === "QM12");
     expect(qm12?.proposed_extent_decision).not.toBeNull();
     expect(qm12?.proposed_grain_decision).not.toBeNull();

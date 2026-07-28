@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "@mta-wiki/core/paths";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 
@@ -141,7 +142,7 @@ const corpusReady = existsSync(join(repoRoot, decisionPath));
 const describeCorpus = corpusReady ? describe : describe.skip;
 
 describeCorpus("Spring 2025 express-bus service enhancements", () => {
-  it("pins the two official source artifacts and exact planning/realization blocks", () => {
+  corpusIt("pins the two official source artifacts and exact planning/realization blocks", () => {
     const sourcePins = [
       {
         sourceId: "meeting_doc_160441",

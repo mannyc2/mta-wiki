@@ -4,6 +4,24 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-28
+
+### Clean-clone and source-refresh integrity boundary
+
+- Split the mandatory tracked-input test gate from explicit content-addressed
+  local-corpus and hydrated authoring replays. Ordinary tests rebuild SQLite
+  below an owned temporary root and no longer inherit ignored source or
+  database state from a developer checkout.
+- Added separate public-snapshot/authoring producer-input declarations and a
+  lossless, content-addressed enforcement source-refresh receipt. The reviewed
+  v1-rc28 repair updates only the stale operational-coverage pin and the
+  completeness report's read-only reproduction command; completeness rows and
+  semantic counts remain byte/value identical.
+- Added a fail-closed, resumable transaction boundary for installing the
+  completeness/proof/contract/bundle chain together with its matching ignored
+  primary SQLite projection. Immutable canonical JSONL, accepted submissions,
+  release bytes, `LATEST`, and release tags remain unchanged.
+
 ## 2026-07-25
 
 ### Study-frontier closure release

@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "@mta-wiki/core/paths";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 
@@ -348,7 +349,7 @@ function occurrenceRelationIds(cohort: typeof cohorts[number]): string[] {
 }
 
 describe("May 2025 ACE official route cut and two bounded canonical cohorts", () => {
-  it("pins every official artifact, evidence block, stable row id, route, and implementation date", () => {
+  corpusIt("pins every official artifact, evidence block, stable row id, route, and implementation date", () => {
     for (const sourcePin of sourcePins) {
       const sourceRoot = join(repoRoot, "raw/sources", sourcePin.sourceId);
       for (const [filename, expectedHash] of Object.entries(sourcePin.artifacts)) {

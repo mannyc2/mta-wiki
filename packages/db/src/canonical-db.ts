@@ -13,7 +13,8 @@ import { Database } from "bun:sqlite";
 import { drizzle } from "drizzle-orm/bun-sqlite";
 import { asc, eq } from "drizzle-orm";
 import { existsSync, mkdirSync, readFileSync, renameSync, rmSync } from "node:fs";
-import { dirname, join, resolve } from "node:path";
+import { tmpdir } from "node:os";
+import { dirname, isAbsolute, join, relative, resolve } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { readIdentityDoNotMergeOverrides, readIdentityOverrides } from "./identity.js";
 import { loadRelationshipContract } from "./relationship-contract.js";
@@ -34,6 +35,7 @@ import { populateFts } from "./fts.js";
 import { loadGtfsRefTables } from "./import-gtfs.js";
 import { loadSelectedGtfsSnapshotTables } from "./gtfs-snapshot-db.js";
 import { validateRow } from "./schema-validators.js";
+import { assertCanonicalDbSourceRefreshAvailable } from "./canonical-db-source-refresh.js";
 import { sha256, stableJson } from "./stable-json.js";
 import type { JsonObject, JsonValue, MtaCanonicalRecord, MtaEvidenceRef, MtaSubmissionEntry } from "./types.js";
 
@@ -167,14 +169,49 @@ export type CanonicalEvidenceRegistryInput = {
   entries: readonly CanonicalEvidenceBlockRegistryEntry[];
 };
 
-export function canonicalDbPath(): string {
+export const CANONICAL_DB_TEST_PATH_ENV = "MTA_TEST_CANONICAL_DB_PATH";
+
+export function primaryCanonicalDbPath(): string {
   return join(repoRoot, "data", "canonical.db");
+}
+
+/**
+ * Return the canonical DB projection path.
+ *
+ * Ordinary production processes use the ignored workspace projection. The
+ * repository test preload may point readers at a rebuilt projection below the
+ * operating-system temporary directory. Keeping the override both explicit
+ * and temp-root-bounded prevents a test fixture from publishing over the
+ * workspace database while allowing spawned verification commands to inherit
+ * the same reproducible projection.
+ */
+export function canonicalDbPath(): string {
+  const override = process.env[CANONICAL_DB_TEST_PATH_ENV];
+  if (!override) return primaryCanonicalDbPath();
+
+  const resolved = resolve(override);
+  const tempRoot = resolve(tmpdir());
+  const fromTemp = relative(tempRoot, resolved);
+  if (
+    resolved === tempRoot ||
+    fromTemp.length === 0 ||
+    fromTemp === ".." ||
+    fromTemp.startsWith(`..${process.platform === "win32" ? "\\" : "/"}`) ||
+    isAbsolute(fromTemp)
+  ) {
+    throw new Error(`${CANONICAL_DB_TEST_PATH_ENV} must resolve below the operating-system temporary directory`);
+  }
+  return resolved;
 }
 
 /** Open an existing canonical DB for reading, setting the required pragmas and asserting the
  *  schema version. The single sanctioned open path — `foreign_keys` is per-connection and OFF by
  *  default, so one stray `new Database()` would silently skip every FK check (doc §7). */
 export function openCanonicalDb(path: string = canonicalDbPath(), options: { readonly?: boolean; skipVersionCheck?: boolean } = {}): Database {
+  assertCanonicalDbSourceRefreshAvailable({
+    databasePath: path,
+    operation: options.readonly === false ? "primary canonical DB write-open" : "primary canonical DB read-open",
+  });
   const readonly = options.readonly ?? true;
   // bun:sqlite needs an explicit access flag; `{ create: false }` alone is SQLITE_MISUSE.
   const db = new Database(path, readonly ? { readonly: true } : { readwrite: true, create: false });
@@ -325,6 +362,10 @@ export function rebuildCanonicalDb(
   } = {},
 ): RebuildCanonicalDbResult {
   const targetPath = options.path ?? canonicalDbPath();
+  assertCanonicalDbSourceRefreshAvailable({
+    databasePath: targetPath,
+    operation: "primary canonical DB rebuild",
+  });
   const tempPath = `${targetPath}.building`;
   mkdirSync(dirname(targetPath), { recursive: true });
   removeDbFiles(tempPath);

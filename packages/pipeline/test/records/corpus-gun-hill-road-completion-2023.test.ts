@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "@mta-wiki/core/paths";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 
@@ -121,7 +122,7 @@ describe("Gun Hill Road bus-lane completion on October 31, 2023", () => {
   const relations = readJsonl<MtaCanonicalRecord>("data/canonical/relations.jsonl");
   const receipt = readJson<AcquisitionReceipt>(receiptPath);
 
-  it("pins the official DOT snapshot and exact evidence blocks", () => {
+  corpusIt("pins the official DOT snapshot and exact evidence blocks", () => {
     for (const [filename, expectedHash] of Object.entries(sourcePins)) {
       expect(sha256Hex(`raw/sources/${sourceId}/${filename}`)).toBe(expectedHash);
     }

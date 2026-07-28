@@ -1,5 +1,16 @@
 import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import {
+  existsSync,
+  lstatSync,
+  mkdtempSync,
+  mkdirSync,
+  readFileSync,
+  readdirSync,
+  realpathSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
+import { tmpdir } from "node:os";
 import { basename, isAbsolute, join, normalize, relative, resolve, sep } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import {
@@ -66,6 +77,13 @@ export const DEFAULT_RELATIONSHIP_COMPLETENESS_RELEASE_MANIFEST_SHA256 =
 export const DEFAULT_RELATIONSHIP_COMPLETENESS_COVERAGE_DIR = "data/quality/operational-coverage";
 export const DEFAULT_RELATIONSHIP_COMPLETENESS_OUTPUT_DIR =
   "data/quality/relationship-integrity/completeness";
+export const REVIEWED_PUBLIC_SNAPSHOT_RELEASE_DIR =
+  "data/exports/releases/v1-rc28";
+export const REVIEWED_PUBLIC_SNAPSHOT_RELEASE_MANIFEST_SHA256 =
+  "b47a105dc78501210f2d32e6f597f878203b8cfc35654cebc4de445d575a453c";
+export const REVIEWED_PUBLIC_SNAPSHOT_COVERAGE_MANIFEST_SHA256 =
+  "e44e629e3460e3f7bcc71ba020595830fa29433303b1b46bb8ce0c1f5a9dbd9d";
+export const REVIEWED_PUBLIC_SNAPSHOT_COVERAGE_MANIFEST_BYTES = 1_584;
 export const DEFAULT_OCCURRENCE_TREATMENT_PHYSICALITY_CONTRACT_PATH =
   "data/contracts/occurrence-treatment-physicality/v1/contract.json";
 export const DEFAULT_BUS_LANE_TREATMENT_SCOPE_CONTRACT_DIR =
@@ -721,6 +739,13 @@ export type WriteRelationshipCompletenessArtifactsOptions = {
    * release, coverage, contract, and artifact pins remain fail-closed.
    */
   reviewedCurrentCorpusMigration?: boolean | undefined;
+  /**
+   * Prepare the narrowly reviewed v1-rc28 public-snapshot pin refresh. This
+   * mode preserves the historical rc20 migration boundary and may write only
+   * to an empty directory below ownedOutputRoot.
+   */
+  prepareReviewedPublicSnapshotRefresh?: boolean | undefined;
+  ownedOutputRoot?: string | undefined;
   dispositionRootDir?: string | undefined;
   treatmentPhysicalityContractPath?: string | undefined;
   /**
@@ -1699,6 +1724,8 @@ const DEFAULT_RELATIONSHIP_COMPLETENESS_REPRODUCTION_COMMAND =
   "bun -e 'import { writeRelationshipCompletenessArtifacts as write } from \"./packages/pipeline/src/quality/relationship-completeness.ts\"; write()'";
 const REVIEWED_CURRENT_CORPUS_MIGRATION_REPRODUCTION_COMMAND =
   "bun packages/cli/src/cli.ts relationship-completeness --reviewed-current-corpus-migration --no-sync-db";
+const CURRENT_PUBLIC_SNAPSHOT_CHECK_REPRODUCTION_COMMAND =
+  "bun packages/cli/src/cli.ts relationship-completeness --check-current-public-snapshot --no-sync-db";
 
 function markdownReport(
   summary: RelationshipCompletenessSummary,
@@ -2105,6 +2132,45 @@ function normalizedRepositoryPath(path: string, label: string): string {
     throw new Error(`${label} is not a normalized repository-relative path: ${path}`);
   }
   return normalized;
+}
+
+export function assertOwnedEmptyOutputDirectory(
+  outputPath: string,
+  ownedRootPath: string,
+): void {
+  if (!isAbsolute(outputPath) || !isAbsolute(ownedRootPath)) {
+    throw new Error(
+      "--output and --owned-output-root must be absolute in reviewed public-snapshot prepare mode",
+    );
+  }
+  if (!existsSync(ownedRootPath) || !lstatSync(ownedRootPath).isDirectory()) {
+    throw new Error(`Owned output root must be an existing directory: ${ownedRootPath}`);
+  }
+  if (lstatSync(ownedRootPath).isSymbolicLink()) {
+    throw new Error(`Owned output root may not be a symbolic link: ${ownedRootPath}`);
+  }
+  const ownedRoot = realpathSync(ownedRootPath);
+  const output = resolve(outputPath);
+  const prefix = `${ownedRoot}${sep}`;
+  if (output === ownedRoot || !output.startsWith(prefix)) {
+    throw new Error(`Output must be a strict descendant of the owned output root: ${output}`);
+  }
+  if (existsSync(output)) {
+    throw new Error(`Reviewed public-snapshot output must not already exist: ${output}`);
+  }
+  const relativeParent = relative(ownedRoot, resolve(output, ".."));
+  let cursor = ownedRoot;
+  for (const component of relativeParent.split(sep).filter(Boolean)) {
+    cursor = join(cursor, component);
+    if (!existsSync(cursor)) continue;
+    const stat = lstatSync(cursor);
+    if (stat.isSymbolicLink()) {
+      throw new Error(`Reviewed public-snapshot output ancestry may not contain symlinks: ${cursor}`);
+    }
+    if (!stat.isDirectory()) {
+      throw new Error(`Reviewed public-snapshot output parent is not a directory: ${cursor}`);
+    }
+  }
 }
 
 function readJsonObject(path: string): Record<string, unknown> {
@@ -3136,11 +3202,20 @@ export function loadRelationshipCompletenessArtifacts(
     options.coverageDir ?? DEFAULT_RELATIONSHIP_COMPLETENESS_COVERAGE_DIR,
     "coverageDir",
   );
-  const outputDirPath = normalizedRepositoryPath(
-    options.outputDir ?? DEFAULT_RELATIONSHIP_COMPLETENESS_OUTPUT_DIR,
-    "outputDir",
-  );
+  const prepareReviewedPublicSnapshotRefresh =
+    options.prepareReviewedPublicSnapshotRefresh === true;
+  const outputDirPath = prepareReviewedPublicSnapshotRefresh
+    ? resolve(options.outputDir ?? "")
+    : normalizedRepositoryPath(
+        options.outputDir ?? DEFAULT_RELATIONSHIP_COMPLETENESS_OUTPUT_DIR,
+        "outputDir",
+      );
   const reviewedCurrentCorpusMigration = options.reviewedCurrentCorpusMigration === true;
+  if (reviewedCurrentCorpusMigration && prepareReviewedPublicSnapshotRefresh) {
+    throw new Error(
+      "--reviewed-current-corpus-migration and --prepare-reviewed-public-snapshot-refresh are mutually exclusive",
+    );
+  }
   if (
     reviewedCurrentCorpusMigration &&
     (releaseDirPath !== DEFAULT_RELATIONSHIP_COMPLETENESS_RELEASE_DIR ||
@@ -3151,16 +3226,42 @@ export function loadRelationshipCompletenessArtifacts(
       "--reviewed-current-corpus-migration is restricted to the default rc20 release/completeness output boundary",
     );
   }
+  if (prepareReviewedPublicSnapshotRefresh) {
+    if (
+      releaseDirPath !== REVIEWED_PUBLIC_SNAPSHOT_RELEASE_DIR ||
+      releaseSourceDirPath !== REVIEWED_PUBLIC_SNAPSHOT_RELEASE_DIR ||
+      coverageDirPath !== DEFAULT_RELATIONSHIP_COMPLETENESS_COVERAGE_DIR ||
+      options.expectedReleaseManifestSha256 !==
+        REVIEWED_PUBLIC_SNAPSHOT_RELEASE_MANIFEST_SHA256
+    ) {
+      throw new Error(
+        "--prepare-reviewed-public-snapshot-refresh requires the exact v1-rc28 release/source, operational-coverage directory, and reviewed release-manifest pin",
+      );
+    }
+    if (!options.outputDir || !options.ownedOutputRoot) {
+      throw new Error(
+        "--prepare-reviewed-public-snapshot-refresh requires --output and --owned-output-root",
+      );
+    }
+    assertOwnedEmptyOutputDirectory(
+      options.outputDir,
+      options.ownedOutputRoot,
+    );
+  }
   const releaseDir = resolve(rootDir, releaseDirPath);
   const releaseSourceDir = resolve(rootDir, releaseSourceDirPath);
   const coverageDir = resolve(rootDir, coverageDirPath);
-  const outputDir = resolve(rootDir, outputDirPath);
+  const outputDir = prepareReviewedPublicSnapshotRefresh
+    ? outputDirPath
+    : resolve(rootDir, outputDirPath);
   const rootPrefix = rootDir.endsWith(sep) ? rootDir : `${rootDir}${sep}`;
   for (const { label, path } of [
     { label: "releaseDir", path: releaseDir },
     { label: "releaseSourceDir", path: releaseSourceDir },
     { label: "coverageDir", path: coverageDir },
-    { label: "outputDir", path: outputDir },
+    ...(prepareReviewedPublicSnapshotRefresh
+      ? []
+      : [{ label: "outputDir", path: outputDir }]),
   ]) {
     if (path !== rootDir && !path.startsWith(rootPrefix)) throw new Error(`${label} escapes repository root: ${path}`);
   }
@@ -3239,6 +3340,17 @@ export function loadRelationshipCompletenessArtifacts(
   }
   const coverageManifestPath = join(coverageDir, "manifest.json");
   const coverageManifestContent = readFileSync(coverageManifestPath, "utf8");
+  if (
+    prepareReviewedPublicSnapshotRefresh &&
+    (sha256(coverageManifestContent) !==
+        REVIEWED_PUBLIC_SNAPSHOT_COVERAGE_MANIFEST_SHA256 ||
+      Buffer.byteLength(coverageManifestContent) !==
+        REVIEWED_PUBLIC_SNAPSHOT_COVERAGE_MANIFEST_BYTES)
+  ) {
+    throw new Error(
+      `${coverageManifestPath}: reviewed public-snapshot coverage manifest pin mismatch`,
+    );
+  }
   const coverageManifest = readJsonObject(coverageManifestPath);
   const coverageLedgerName = "recoverability-ledger.jsonl";
   const coverageLedgerPath = join(coverageDir, coverageLedgerName);
@@ -3415,7 +3527,9 @@ export function loadRelationshipCompletenessArtifacts(
     releaseId,
     ...(reviewedCurrentCorpusMigration
       ? { reproductionCommand: REVIEWED_CURRENT_CORPUS_MIGRATION_REPRODUCTION_COMMAND }
-      : {}),
+      : prepareReviewedPublicSnapshotRefresh
+        ? { reproductionCommand: CURRENT_PUBLIC_SNAPSHOT_CHECK_REPRODUCTION_COMMAND }
+        : {}),
     occurrences: parseReleaseJsonl<OperationalOccurrenceRow>("operational_occurrences.jsonl"),
     treatments: parseReleaseJsonl<MtaCanonicalRecord>("treatment_components.jsonl"),
     events: parseReleaseJsonl<MtaCanonicalRecord>("events.jsonl"),
@@ -3920,6 +4034,81 @@ export function writeRelationshipCompletenessArtifacts(
     writeFileSync(join(loaded.outputDir, name), content, "utf8");
   }
   return { outputDir: loaded.outputDir, summary: loaded.summary, manifest: loaded.manifest };
+}
+
+export function checkCurrentPublicSnapshotRelationshipCompleteness(
+  rootDir = repoRoot,
+): WriteRelationshipCompletenessArtifactsResult {
+  const loadedContract = loadRelationshipContract(
+    join(rootDir, "data/contracts/relationships/v1/contract.json"),
+  );
+  const receipt = loadedContract.enforcementSourceRefreshReceipt;
+  const receiptReference =
+    loadedContract.contract.enforcement_proof?.source_refresh_receipt;
+  if (!receipt || !receiptReference) {
+    throw new Error(
+      "Current public-snapshot completeness check requires an active strict source-refresh receipt",
+    );
+  }
+  const ownedRoot = mkdtempSync(
+    join(tmpdir(), "mta-current-public-snapshot-check-"),
+  );
+  try {
+    const generated = loadRelationshipCompletenessArtifacts({
+      rootDir,
+      releaseDir: REVIEWED_PUBLIC_SNAPSHOT_RELEASE_DIR,
+      releaseSourceDir: REVIEWED_PUBLIC_SNAPSHOT_RELEASE_DIR,
+      coverageDir: DEFAULT_RELATIONSHIP_COMPLETENESS_COVERAGE_DIR,
+      outputDir: join(ownedRoot, "completeness"),
+      ownedOutputRoot: ownedRoot,
+      expectedReleaseManifestSha256:
+        REVIEWED_PUBLIC_SNAPSHOT_RELEASE_MANIFEST_SHA256,
+      prepareReviewedPublicSnapshotRefresh: true,
+    });
+    const trackedRoot = join(
+      rootDir,
+      DEFAULT_RELATIONSHIP_COMPLETENESS_OUTPUT_DIR,
+    );
+    const generatedNames = Object.keys(generated.contents).sort();
+    const trackedNames = readdirSync(trackedRoot)
+      .filter((name) => lstatSync(join(trackedRoot, name)).isFile())
+      .sort();
+    if (
+      stableJson(generatedNames as unknown as JsonValue) !==
+        stableJson(trackedNames as unknown as JsonValue)
+    ) {
+      throw new Error(
+        "Tracked current public-snapshot completeness artifact set differs from the generator",
+      );
+    }
+    for (const name of generatedNames) {
+      const tracked = readFileSync(join(trackedRoot, name), "utf8");
+      if (tracked !== generated.contents[name]) {
+        throw new Error(
+          `Tracked current public-snapshot completeness artifact is stale: ${name}`,
+        );
+      }
+    }
+    for (const pin of [
+      receipt.completeness_manifest,
+      receipt.completeness_summary,
+      receipt.report,
+    ]) {
+      const content = readFileSync(join(rootDir, pin.path), "utf8");
+      if (sha256(content) !== pin.current_sha256) {
+        throw new Error(
+          `Active source-refresh receipt current hash is stale: ${pin.path}`,
+        );
+      }
+    }
+    return {
+      outputDir: trackedRoot,
+      summary: generated.summary,
+      manifest: generated.manifest,
+    };
+  } finally {
+    rmSync(ownedRoot, { recursive: true, force: true });
+  }
 }
 
 export function relationshipCompletenessReproductionCommand(

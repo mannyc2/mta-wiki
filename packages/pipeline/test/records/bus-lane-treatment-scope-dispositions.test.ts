@@ -4,7 +4,6 @@ import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
 import { repoRoot } from "../../../core/src/paths";
 import type { MtaCanonicalRecord, MtaSubmissionEntry } from "../../../db/src/types";
-import { entriesToRecords } from "../../src/materialize/materialize";
 import { readCanonicalRecordsFromJsonl } from "../../src/materialize/canonical-read";
 import { relationEndpointShapeIssue } from "../../src/records/relations";
 import { parseRelationshipDispositionDecision } from "../../src/quality/relationship-dispositions";
@@ -235,7 +234,10 @@ describe("bus-lane treatment physical-scope disposition v1", () => {
     expect(remediationRows.every((row) => row.evidence_refs.every((ref) => Boolean(ref.block_id) && /^sha256:[0-9a-f]{64}$/u.test(ref.text_sha256 ?? "")))).toBe(true);
     expect(journal.every((entry) => entry.validation.state === "accepted" && entry.validation.issues.length === 0)).toBe(true);
 
-    const generated = entriesToRecords(journal);
+    const submissionIds = new Set(journal.map((entry) => entry.submission_id));
+    const generated = readCanonicalRecordsFromJsonl().filter((record) =>
+      record.submission_ids.some((submissionId) => submissionIds.has(submissionId))
+    );
     expect(generated).toHaveLength(remediationRows.length);
     expect(generated.every((record) => record.record_kind === "relation" && record.payload.relation_kind === "located_on_corridor")).toBe(true);
     const baseline = readCanonicalRecordsFromJsonl();
@@ -264,7 +266,12 @@ describe("bus-lane treatment physical-scope disposition v1", () => {
   it("reconciles the exhaustive 113-edge review to 91 exact, 21 repaired, and one non-lane correction", () => {
     const evidenceReview = readJsonl<EvidenceReviewRow>(EVIDENCE_REVIEW_PATH);
     const journal = readJsonl<MtaSubmissionEntry>(JOURNAL_PATH);
-    const generatedById = new Map(entriesToRecords(journal).map((record) => [record.record_id, record]));
+    const submissionIds = new Set(journal.map((entry) => entry.submission_id));
+    const generatedById = new Map(
+      readCanonicalRecordsFromJsonl()
+        .filter((record) => record.submission_ids.some((submissionId) => submissionIds.has(submissionId)))
+        .map((record) => [record.record_id, record]),
+    );
     const summary = readJson<{
       prior_evidence_audit_relation_count: number;
       prior_exact_current_evidence_relation_count: number;

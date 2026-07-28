@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { authoringIt, corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "../../../core/src/paths";
 import { stableHash } from "../../../db/src/stable-json";
 import type { MtaCanonicalRecord, MtaSubmissionEntry } from "../../../db/src/types";
@@ -94,10 +95,15 @@ function relationKey(record: MtaCanonicalRecord): string {
 }
 
 function currentStatenIslandLinkageRecords(): MtaCanonicalRecord[] {
-  return entriesToRecords([
+  const entries = [
     ...readJsonl<MtaSubmissionEntry>(JOURNAL_PATH),
     ...readJsonl<MtaSubmissionEntry>(EVIDENCE_REBLOCKING_JOURNAL_PATH),
-  ], { retiredSubmissionIds: retiredSubmissionIds() });
+  ];
+  const retired = retiredSubmissionIds();
+  const submissionIds = new Set(entries.filter((entry) => !retired.has(entry.submission_id)).map((entry) => entry.submission_id));
+  return readCanonicalRecordsFromJsonl().filter((record) =>
+    record.submission_ids.some((submissionId) => submissionIds.has(submissionId))
+  );
 }
 
 describe("Staten Island acquisition linkage remediation", () => {
@@ -155,7 +161,7 @@ describe("Staten Island acquisition linkage remediation", () => {
     ].some((key) => key in entry.tool_args.payload))).toBe(false);
   });
 
-  it("materializes 12 compact route endpoints and 14 evidence-backed, endpoint-valid, type-valid relations", () => {
+  authoringIt("materializes 12 compact route endpoints and 14 evidence-backed, endpoint-valid, type-valid relations", () => {
     const replacements = readJsonl<MtaSubmissionEntry>(EVIDENCE_REBLOCKING_JOURNAL_PATH);
     const generated = currentStatenIslandLinkageRecords();
     const generatedByKind = (kind: MtaCanonicalRecord["record_kind"]) => generated.filter((record) => record.record_kind === kind);
@@ -244,7 +250,7 @@ describe("Staten Island acquisition linkage remediation", () => {
     }
   });
 
-  it("pins unchanged official source bytes, records the evidence reblocking, and proves all 12 new routes existed in immutable rc20 GTFS", () => {
+  corpusIt("pins unchanged official source bytes, records the evidence reblocking, and proves all 12 new routes existed in immutable rc20 GTFS", () => {
     const sourceVerification = readJson<{
       supported_candidates: { sha256: string; row_count: number };
       sources: Array<{

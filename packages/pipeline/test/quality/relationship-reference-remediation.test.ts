@@ -8,8 +8,12 @@ import {
   PAYLOAD_REFERENCE_REMEDIATION_LEDGER_PATH,
   PAYLOAD_REFERENCE_REMEDIATION_SUMMARY_PATH,
 } from "../../../../scripts/remediate-relationship-payload-references-v1";
+import { authoringDescribe } from "../support/local-test-profile";
 
-describe("relationship payload-reference remediation v1", () => {
+const describeAuthoring = authoringDescribe;
+
+describeAuthoring("relationship payload-reference remediation v1", () => {
+  if (!relationshipReferenceAuthoringEnabled) return;
   const generated = generatePayloadReferenceRemediationArtifacts();
 
   it("materializes every accepted proposal as one unique evidence-bound relation", () => {

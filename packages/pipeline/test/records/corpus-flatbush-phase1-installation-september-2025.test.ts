@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "@mta-wiki/core/paths";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 import { readCanonicalRecordsFromJsonl } from "../../src/materialize/canonical-read";
@@ -389,7 +390,7 @@ function canonicalBindingExpectations(
 }
 
 describe("Flatbush Phase 1 September 2025 source and canonical lifecycle", () => {
-  it("pins both official source captures and the bounded start, completion, route, and treatment blocks", () => {
+  corpusIt("pins both official source captures and the bounded start, completion, route, and treatment blocks", () => {
     for (const sourcePin of sourcePins) {
       const sourceRoot = join(repoRoot, "raw/sources", sourcePin.sourceId);
       for (const [filename, expectedHash] of Object.entries(sourcePin.artifacts)) {

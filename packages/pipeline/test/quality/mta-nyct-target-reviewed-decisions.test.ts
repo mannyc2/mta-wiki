@@ -5,8 +5,12 @@ import {
   MTA_NYCT_REVIEWED_DECISIONS_PATH,
   validateMtaNyctTargetReviewedDecisions,
 } from "../../../../scripts/review-mta-nyct-target-identity";
+import { authoringDescribe } from "../support/local-test-profile";
 
-describe("MTA/NYCT target reviewed decisions", () => {
+const describeAuthoring = authoringDescribe;
+
+describeAuthoring("MTA/NYCT target reviewed decisions", () => {
+  if (!mtaNyctReviewAuthoringEnabled) return;
   const artifact = buildMtaNyctTargetReviewedDecisions();
 
   test("exhausts the inventory with exclusive evidence-backed decisions", () => {

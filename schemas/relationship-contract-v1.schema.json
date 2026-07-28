@@ -140,6 +140,18 @@
               "pattern": "^[a-f0-9]{64}$"
             }
           }
+        },
+        "source_refresh_receipt": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "sha256"],
+          "properties": {
+            "path": { "type": "string", "minLength": 1 },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
         }
       }
     },

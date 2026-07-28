@@ -5,6 +5,7 @@ import {
   loadRelationshipContract,
   relationshipContractValidationMode,
 } from "@mta-wiki/db/relationship-contract";
+import { assertCanonicalDbSourceRefreshAvailable } from "@mta-wiki/db/canonical-db-source-refresh";
 import { writeForecastRealizationArtifacts } from "@mta-wiki/pipeline/quality/forecast-realization-artifacts";
 import { writeForecastRealizationReviewArtifacts } from "@mta-wiki/pipeline/quality/forecast-realization-review-artifacts";
 import { writeOperationalCoverageArtifacts } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
@@ -58,6 +59,7 @@ import {
   writePlan040FinalCheckpoint,
 } from "@mta-wiki/pipeline/quality/plan040-final-checkpoint";
 import {
+  checkCurrentPublicSnapshotRelationshipCompleteness,
   loadRelationshipCompletenessArtifacts,
   syncRelationshipCompletenessToCanonicalDb,
   writeRelationshipCompletenessArtifacts,
@@ -508,6 +510,9 @@ const qbnrRecoveryDraft: CommandHandler = (args) => {
 };
 
 const relationshipIntegrity: CommandHandler = () => {
+  assertCanonicalDbSourceRefreshAvailable({
+    operation: "relationship-integrity quality command",
+  });
   const contractMode = relationshipContractValidationMode(loadRelationshipContract());
   const requestedMode = optionValue(process.argv, "--mode");
   if (requestedMode !== undefined && requestedMode !== contractMode) {
@@ -525,6 +530,9 @@ const relationshipIntegrity: CommandHandler = () => {
 };
 
 const relationshipCompleteness: CommandHandler = () => {
+  assertCanonicalDbSourceRefreshAvailable({
+    operation: "relationship-completeness quality command",
+  });
   const relationshipMode = relationshipContractValidationMode(loadRelationshipContract());
   const mode = relationshipMode === "warn" ? "warning" : "enforce";
   const rawRequestedMode = optionValue(process.argv, "--mode");
@@ -535,6 +543,55 @@ const relationshipCompleteness: CommandHandler = () => {
       `refusing requested downgrade/override ${rawRequestedMode}`,
     );
   }
+  const prepareReviewedPublicSnapshotRefresh = process.argv.includes(
+    "--prepare-reviewed-public-snapshot-refresh",
+  );
+  const checkCurrentPublicSnapshot = process.argv.includes(
+    "--check-current-public-snapshot",
+  );
+  if (prepareReviewedPublicSnapshotRefresh && checkCurrentPublicSnapshot) {
+    throw new Error(
+      "Choose at most one of --prepare-reviewed-public-snapshot-refresh and --check-current-public-snapshot",
+    );
+  }
+  if (
+    prepareReviewedPublicSnapshotRefresh &&
+    !process.argv.includes("--no-sync-db")
+  ) {
+    throw new Error(
+      "--prepare-reviewed-public-snapshot-refresh requires --no-sync-db",
+    );
+  }
+  if (checkCurrentPublicSnapshot) {
+    const forbidden = [
+      "--release",
+      "--release-source",
+      "--coverage",
+      "--output",
+      "-o",
+      "--manifest-sha256",
+      "--owned-output-root",
+      "--reviewed-current-corpus-migration",
+      "--allow-byte-identical-physicality-bootstrap",
+    ].filter((option) => process.argv.includes(option));
+    if (
+      forbidden.length > 0 ||
+      !process.argv.includes("--no-sync-db")
+    ) {
+      throw new Error(
+        "--check-current-public-snapshot accepts no input/output overrides and requires --no-sync-db",
+      );
+    }
+    const result =
+      checkCurrentPublicSnapshotRelationshipCompleteness();
+    console.log(
+      `Current public-snapshot relationship completeness verified: ` +
+        `${relative(repoRoot, result.outputDir)}; ` +
+        `release=${result.summary.release_id}; ` +
+        `input=${result.summary.input_fingerprint}`,
+    );
+    return;
+  }
   const options = {
     releaseDir: optionValue(process.argv, "--release"),
     releaseSourceDir: optionValue(process.argv, "--release-source"),
@@ -542,6 +599,8 @@ const relationshipCompleteness: CommandHandler = () => {
     outputDir: optionValue(process.argv, "--output") ?? optionValue(process.argv, "-o"),
     expectedReleaseManifestSha256: optionValue(process.argv, "--manifest-sha256"),
     reviewedCurrentCorpusMigration: process.argv.includes("--reviewed-current-corpus-migration"),
+    prepareReviewedPublicSnapshotRefresh,
+    ownedOutputRoot: optionValue(process.argv, "--owned-output-root"),
     allowByteIdenticalPhysicalityBootstrap:
       process.argv.includes("--allow-byte-identical-physicality-bootstrap"),
   };

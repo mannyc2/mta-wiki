@@ -8,6 +8,7 @@ import { loadOperationalOccurrenceIdentityRegistry } from "@mta-wiki/pipeline/ma
 import { loadOperationalOccurrenceAcceptedDecisions } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
 import { readSemanticCorrections } from "@mta-wiki/pipeline/records/semantic-corrections";
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 
 const sourceId = "nyct_key_performance_metrics_doc194001";
 const projectId = "project_ace-b60-b68-m57-warning-cohort-2025-12-08";
@@ -151,13 +152,7 @@ function expectRelation(
 }
 
 describe("December 2025 B60/B68/M57 ACE warning-phase cohort", () => {
-  it("pins the official source, exact date resolution, and bounded canonical graph", () => {
-    const receiptPath =
-      "data/quality/acquisition/receipts/ace-b60-b68-m57-warning-phase-december-8-2025.json";
-    expect(sha256(readFileSync(path(receiptPath)))).toBe(
-      "7b9d63000090cf22821949db5087d2b2b5611ada41059cc5069aaf356c159fdb",
-    );
-
+  corpusIt("pins the official source and exact warning-phase evidence blocks", () => {
     const artifactHashes = {
       "metadata.json": "641b84213f03daa8591e9fbc9f1d7325eea12daed2d55770448fe87173fa35d0",
       "source.pdf": "61b015b7778c176b182d4d81422aaf27c06f0ee6ad2953cb494cbff9453b2f19",
@@ -172,35 +167,23 @@ describe("December 2025 B60/B68/M57 ACE warning-phase cohort", () => {
       readJsonl<SourceBlock>(`raw/sources/${sourceId}/blocks.jsonl`).map((block) => [block.block_id, block]),
     );
     for (const [blockId, page, expectedHash, literals] of [
-      [
-        "p001_c0002",
-        1,
-        "sha256:1c2e7d7242d4937bffeb7ae2ac5b4071b084298424eb1637e9c216f6f292d64f",
-        ["December 2025"],
-      ],
-      [
-        "p003_c0003",
-        3,
-        "sha256:da018863a9eae42e35f1a801fc448de9d224d07d24d389b5c264e09564cfb624",
-        ["December 15, 2025"],
-      ],
-      [
-        "p010_c0011",
-        10,
-        "sha256:e147dfa103fac9d1499e269c62864619e13cdfd4b3540e71e98ebfb706cd1a42",
-        ["On December 8", "the B68 and B60 in Brooklyn and the M57 in Manhattan entered a 60-day warning phase"],
-      ],
-      [
-        "p011_c0009",
-        11,
-        "sha256:2d2318454276de1fad6ef39bbd54826456515f6b382b2a9e95ab426545adf858",
-        ["lanes, bus stops, or double-parked received warning notices"],
-      ],
+      ["p001_c0002", 1, "sha256:1c2e7d7242d4937bffeb7ae2ac5b4071b084298424eb1637e9c216f6f292d64f", ["December 2025"]],
+      ["p003_c0003", 3, "sha256:da018863a9eae42e35f1a801fc448de9d224d07d24d389b5c264e09564cfb624", ["December 15, 2025"]],
+      ["p010_c0011", 10, "sha256:e147dfa103fac9d1499e269c62864619e13cdfd4b3540e71e98ebfb706cd1a42", ["On December 8", "the B68 and B60 in Brooklyn and the M57 in Manhattan entered a 60-day warning phase"]],
+      ["p011_c0009", 11, "sha256:2d2318454276de1fad6ef39bbd54826456515f6b382b2a9e95ab426545adf858", ["lanes, bus stops, or double-parked received warning notices"]],
     ] as const) {
       const block = blocks.get(blockId);
       expect(block).toMatchObject({ page_number: page, raw_text_sha256: expectedHash });
       for (const literal of literals) expect(block?.raw_text).toContain(literal);
     }
+  });
+
+  it("pins the official source, exact date resolution, and bounded canonical graph", () => {
+    const receiptPath =
+      "data/quality/acquisition/receipts/ace-b60-b68-m57-warning-phase-december-8-2025.json";
+    expect(sha256(readFileSync(path(receiptPath)))).toBe(
+      "7b9d63000090cf22821949db5087d2b2b5611ada41059cc5069aaf356c159fdb",
+    );
 
     const records = readCanonicalRecordsFromJsonl();
     const recordsById = new Map(records.map((record) => [record.record_id, record]));

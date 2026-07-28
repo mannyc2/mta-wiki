@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
+import { canonicalDbPath } from "@mta-wiki/db/canonical-db";
 import { readCanonicalRecordsFromDbFile } from "@mta-wiki/pipeline/materialize/canonical-read";
 import {
   buildForecastRealizationArtifacts,
@@ -14,8 +15,9 @@ import {
 } from "@mta-wiki/pipeline/quality/forecast-realization-frontier";
 import {
   DEFAULT_OPERATIONAL_COVERAGE_OUTPUT_DIR,
-  loadPinnedOperationalCoverageArtifacts,
+  type OperationalCoverageArtifactManifest,
 } from "@mta-wiki/pipeline/quality/operational-coverage-artifacts";
+import type { OperationalCoverageQueueRow } from "@mta-wiki/pipeline/quality/operational-coverage";
 import { describe, expect, it } from "bun:test";
 
 const jsonPath = join(repoRoot, "data/quality/acquisition", FORECAST_REALIZATION_JSON_FILE);
@@ -35,19 +37,23 @@ describe("current forecast-realization acquisition frontier", () => {
     const targetList = JSON.parse(jsonBytes) as ForecastRealizationTargetList;
     expect(targetList.as_of).toBe("2026-07-22");
     expect(targetList.grace_days).toBe(90);
-    const records = readCanonicalRecordsFromDbFile(join(repoRoot, "data/canonical.db"));
+    const records = readCanonicalRecordsFromDbFile(canonicalDbPath());
     expect(records).not.toBeNull();
-    const coverage = loadPinnedOperationalCoverageArtifacts({
-      rootDir: repoRoot,
-      outputDir: DEFAULT_OPERATIONAL_COVERAGE_OUTPUT_DIR,
-    });
+    const coverageRoot = join(repoRoot, DEFAULT_OPERATIONAL_COVERAGE_OUTPUT_DIR);
+    const coverageManifest = JSON.parse(
+      readFileSync(join(coverageRoot, "manifest.json"), "utf8"),
+    ) as OperationalCoverageArtifactManifest;
+    const priorityQueue = readFileSync(join(coverageRoot, "priority-queue.jsonl"), "utf8")
+      .split(/\r?\n/u)
+      .filter((line) => line.trim())
+      .map((line) => JSON.parse(line) as OperationalCoverageQueueRow);
     const rebuilt = buildForecastRealizationFrontier({
       records: records!,
-      priorityQueue: coverage.build.ledger.queue,
+      priorityQueue,
       asOf: targetList.as_of,
       graceDays: targetList.grace_days,
-      corpusFingerprint: coverage.build.manifest.corpus_fingerprint,
-      operationalCoverageInputFingerprint: coverage.build.manifest.input_fingerprint,
+      corpusFingerprint: coverageManifest.corpus_fingerprint,
+      operationalCoverageInputFingerprint: coverageManifest.input_fingerprint,
     });
     expect(rebuilt).toEqual(targetList);
 

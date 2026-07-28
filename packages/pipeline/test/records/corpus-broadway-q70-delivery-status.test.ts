@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "@mta-wiki/core/paths";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 
@@ -184,7 +185,7 @@ describe("Broadway Q70 delivered-status recovery", () => {
   const treatments = readJsonl<MtaCanonicalRecord>("data/canonical/treatment_components.jsonl");
   const relations = readJsonl<MtaCanonicalRecord>("data/canonical/relations.jsonl");
 
-  it("pins both official captures and every receipt-cited evidence block", () => {
+  corpusIt("pins both official captures and every receipt-cited evidence block", () => {
     expect(receipt.receipt_id).toBe("broadway-q70-delivery-status-2026");
     expect(receipt.status).toBe("delivered_status_recovered_exact_onset_unresolved");
     expect(receipt.official_source_captures).toHaveLength(2);
@@ -210,12 +211,10 @@ describe("Broadway Q70 delivered-status recovery", () => {
         .toBe(capture.source_html_bytes);
       expect(sha256Hex(`${sourceRoot}/text.txt`)).toBe(capture.text_sha256);
       expect(sha256Hex(`${sourceRoot}/blocks.jsonl`)).toBe(capture.blocks_sha256);
-
       for (const evidence of capture.evidence) {
         expectEvidenceHash(evidence.evidence_id, evidence.evidence_sha256);
       }
     }
-
     expectEvidenceHash(
       receipt.temporal_adjudication.earlier_planning_evidence_id,
       receipt.temporal_adjudication.earlier_planning_evidence_sha256,

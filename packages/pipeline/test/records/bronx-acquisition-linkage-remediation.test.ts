@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { authoringIt, corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "../../../core/src/paths";
 import { loadRelationshipContract } from "../../../db/src/relationship-contract";
 import { stableHash } from "../../../db/src/stable-json";
@@ -139,8 +140,12 @@ describe("Bronx acquisition linkage remediation", () => {
     ].some((key) => key in entry.tool_args.payload))).toBe(false);
   });
 
-  it("materializes 16 physical records and 37 evidence-backed, endpoint-valid, type-valid relations", () => {
-    const generated = entriesToRecords(readJsonl<MtaSubmissionEntry>(JOURNAL_PATH));
+  authoringIt("materializes 16 physical records and 37 evidence-backed, endpoint-valid, type-valid relations", () => {
+    const journal = readJsonl<MtaSubmissionEntry>(JOURNAL_PATH);
+    const submissionIds = new Set(journal.map((entry) => entry.submission_id));
+    const generated = readCanonicalRecordsFromJsonl().filter((record) =>
+      record.submission_ids.some((submissionId) => submissionIds.has(submissionId))
+    );
     const byKind = (kind: MtaCanonicalRecord["record_kind"]) => generated.filter((record) => record.record_kind === kind);
     expect(generated).toHaveLength(53);
     expect(byKind("source").map((record) => record.record_id).sort()).toEqual([
@@ -196,9 +201,7 @@ describe("Bronx acquisition linkage remediation", () => {
       reason: string;
       study_projection_eligible: boolean;
     }>(EXCLUSIONS_PATH);
-    const ownGenerated = entriesToRecords(readJsonl<MtaSubmissionEntry>(JOURNAL_PATH));
-    const physicalGenerated = entriesToRecords(readJsonl<MtaSubmissionEntry>(PHYSICAL_SCOPE_JOURNAL_PATH));
-    const allRecords = [...readCanonicalRecordsFromJsonl(), ...physicalGenerated, ...ownGenerated];
+    const allRecords = readCanonicalRecordsFromJsonl();
     const byId = new Map(allRecords.map((record) => [record.record_id, record]));
     const relations = allRecords.filter((record) => record.record_kind === "relation");
     const triples = new Set(relations.map(relationKey));
@@ -240,7 +243,7 @@ describe("Bronx acquisition linkage remediation", () => {
     expect(triples.has("serves_route\0project_pelham-parkway-reconstruction-boston-road-stillwell-avenue\0route_bx12-local-2015-webster-map")).toBe(false);
   });
 
-  it("retains frozen and current official-source hashes and reuses the exact staged CB5 source", () => {
+  corpusIt("retains frozen and current official-source hashes and reuses the exact staged CB5 source", () => {
     const verification = readJson<{
       supported_candidates: {
         prior_sha256: string;

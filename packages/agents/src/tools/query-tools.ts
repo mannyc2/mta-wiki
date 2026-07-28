@@ -7,6 +7,7 @@ import { recordCard, searchSemanticIndex, semanticIndexExists, type SemanticSear
 import { createMtaTools } from "./ingest-tools.js";
 import { createMtaWriterTools } from "./writer-tools.js";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
+import { assertCanonicalDbSourceRefreshAvailable } from "@mta-wiki/db/canonical-db-source-refresh";
 
 function textResult(text: string, details: Record<string, unknown> = {}) {
   return {
@@ -86,6 +87,9 @@ export type QueryToolOptions = {
 };
 
 export function createMtaQueryTools(transcript: TranscriptWriter, runId: string, options: QueryToolOptions = {}): AgentTool[] {
+  assertCanonicalDbSourceRefreshAvailable({
+    operation: "query tool initialization",
+  });
   const semanticSearchParameters = Type.Object({
     query: Type.String({ description: "Natural-language question or topic to find supporting canonical records for." }),
     max_results: Type.Optional(Type.Number({ description: "Number of records to return. Defaults to 8." })),

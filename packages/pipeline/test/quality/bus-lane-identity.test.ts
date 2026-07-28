@@ -1,4 +1,5 @@
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { createHash } from "node:crypto";
 import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
@@ -5689,7 +5690,7 @@ describe("bus-lane identity exact-date targeting", () => {
     }
   });
 
-  it("closes Archer/Jamaica only with corrected ordered two-group nonauthorizing targets", () => {
+  corpusIt("closes Archer/Jamaica only with corrected ordered two-group nonauthorizing targets", () => {
     const repoRoot = join(import.meta.dir, "../../../..");
     const packetPath = join(repoRoot,
       "data/quality/acquisition/packets/bus-lane/packets/150b4ac6b440ebc511b5c83f.json");
@@ -5984,7 +5985,7 @@ describe("bus-lane identity exact-date targeting", () => {
     }
   });
 
-  it("closes University Avenue only with exact route, target, dossier, variant, and context guards", () => {
+  corpusIt("closes University Avenue only with exact route, target, dossier, variant, and context guards", () => {
     const repoRoot = join(import.meta.dir, "../../../..");
     const batch = JSON.parse(readFileSync(join(repoRoot,
       "data/quality/acquisition/packets/bus-lane/batches/bus-lane-bx-university-avenue-2023-12-01-part-01.json"),
@@ -6280,7 +6281,7 @@ describe("bus-lane identity exact-date targeting", () => {
     }
   });
 
-  it("closes Hylan Boulevard only with exact row multiset, route variants, corrections, and context guards", () => {
+  corpusIt("closes Hylan Boulevard only with exact row multiset, route variants, corrections, and context guards", () => {
     const repoRoot = join(import.meta.dir, "../../../..");
     const batch = JSON.parse(readFileSync(join(repoRoot,
       "data/quality/acquisition/packets/bus-lane/batches/bus-lane-si-hylan-boulevard-2020-09-12-part-01.json"),
@@ -6712,7 +6713,7 @@ describe("bus-lane identity exact-date targeting", () => {
     }
   });
 
-  it("closes East Gun Hill Road only with exact targets, dossiers, context, and an explicit missing-source gap", () => {
+  corpusIt("closes East Gun Hill Road only with exact targets, dossiers, context, and an explicit missing-source gap", () => {
     const repoRoot = join(import.meta.dir, "../../../..");
     const packetRoot = join(repoRoot, "data/quality/acquisition/packets/bus-lane");
     const batch = JSON.parse(readFileSync(join(packetRoot,
@@ -6923,7 +6924,7 @@ describe("bus-lane identity exact-date targeting", () => {
     }
   });
 
-  it("closes S52 Father Capodanno only with candidate-exact uncertainty and nonterminal context", () => {
+  corpusIt("closes S52 Father Capodanno only with candidate-exact uncertainty and nonterminal context", () => {
     const repoRoot = join(import.meta.dir, "../../../..");
     const packetPath = join(repoRoot,
       "data/quality/acquisition/packets/bus-lane/packets/b40f1b64f8c80552a5dd73e9.json");
@@ -7125,7 +7126,7 @@ describe("bus-lane identity exact-date targeting", () => {
     }
   });
 
-  it("closes Q103 and Q104 on 21 Street only with the exact mixed-direction target and explicit source gap", () => {
+  corpusIt("closes Q103 and Q104 on 21 Street only with the exact mixed-direction target and explicit source gap", () => {
     const repoRoot = join(import.meta.dir, "../../../..");
     const packetPaths = [
       join(repoRoot, "data/quality/acquisition/packets/bus-lane/packets/734bee5255654fbd9e1f06b4.json"),
@@ -7394,7 +7395,7 @@ describe("bus-lane identity exact-date targeting", () => {
     }
   });
 
-  it("closes the five 2012 Madison Avenue candidates without promoting current direction or later upgrade context", () => {
+  corpusIt("closes the five 2012 Madison Avenue candidates without promoting current direction or later upgrade context", () => {
     const repoRoot = join(import.meta.dir, "../../../..");
     const packetNames = [
       "ed46109842e4a9ad3a9beee7", "779bcd9de5c539c681b75e56", "88da2540117d36715c8e05b4",

@@ -1,4 +1,5 @@
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { createHash } from "node:crypto";
 import { existsSync, lstatSync, readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
@@ -454,7 +455,7 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     )).toBe(DRAFT_SHA256);
   });
 
-  it("pins the accepted source, feed, schedule, and prior-ledger bytes", () => {
+  corpusIt("pins the accepted source, feed, schedule, and prior-ledger bytes", () => {
     const evidence = readJson<Package10bEvidence>(evidencePath);
     for (const [name, artifact] of Object.entries(
       evidence.immutable_inputs.source_artifacts,
@@ -496,7 +497,7 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     );
   });
 
-  it("pins and independently recomputes complete predecessor/successor chains and comparisons", () => {
+  corpusIt("pins and independently recomputes complete predecessor/successor chains and comparisons", () => {
     const evidence = readJson<Package10bEvidence>(evidencePath);
     const receiptBytes = readFileSync(comparisonReceiptPath);
     const receipt = JSON.parse(
@@ -753,7 +754,7 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     expect(receipt.authorizes_decision_persistence).toBe(false);
   });
 
-  it("recomputes accepted initial GTFS inventories and exact Q82 chains", () => {
+  corpusIt("recomputes accepted initial GTFS inventories and exact Q82 chains", () => {
     const evidence = readJson<Package10bEvidence>(evidencePath);
     const queensPost =
       `${repoRoot}/raw/sources/gtfs_static_20250626_queens_post_qbnr/extracted`;
@@ -810,7 +811,7 @@ describe("Plan 040 QBNR Package 10B mixed-risk evidence freeze", () => {
     }
   });
 
-  it("recomputes the four exact schedule slices and passenger shape sets", async () => {
+  corpusIt("recomputes the four exact schedule slices and passenger shape sets", async () => {
     const { sha256: sourceSha, target } = await scheduleSlices();
     expect(sourceSha).toBe(PLAN040_PACKAGE_10B_POST_10A_PINS.schedule_csv);
     const expected = {

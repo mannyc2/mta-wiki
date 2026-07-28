@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { identityPairKey, readIdentityDoNotMergeOverrides } from "@mta-wiki/db/identity";
 import type { JsonObject, MtaCanonicalRecord } from "@mta-wiki/db/types";
@@ -393,7 +394,6 @@ describe("reviewed Q20A and Q52 route-identity corrections", () => {
       expect(q52PhysicalRouteRecords.some((record) => record.submission_ids.includes(slashObservation.submission_id))).toBe(true);
       expect(q52PhysicalRouteRecords.some((record) => record.source_ids.includes(slashObservation.source_id))).toBe(true);
       for (const evidence of slashObservation.evidence) {
-        expectEvidenceHash(evidence.evidence_id, evidence.evidence_sha256);
         expect(q52PhysicalRouteRecords.some((record) =>
           record.evidence_refs.some((ref) =>
             ref.evidence_id === evidence.evidence_id && ref.text_sha256 === evidence.evidence_sha256
@@ -509,12 +509,9 @@ describe("reviewed Q20A and Q52 route-identity corrections", () => {
       expect(recordById(relations, relationId).record_kind).toBe("relation");
     }
 
-    for (const evidence of [...receipt.historical_evidence, receipt.current_lifecycle_evidence]) {
-      expectEvidenceHash(evidence.evidence_id, evidence.source_block_sha256);
-    }
   });
 
-  it("verifies every receipt-backed artifact, GTFS row, and cited block hash", () => {
+  corpusIt("verifies every receipt-backed artifact, GTFS row, and cited block hash", () => {
     const q20Receipt = readJson<Q20Receipt>(Q20_RECEIPT_PATH);
     const q52Receipt = readJson<Q52Receipt>(Q52_RECEIPT_PATH);
 
@@ -538,6 +535,15 @@ describe("reviewed Q20A and Q52 route-identity corrections", () => {
       }
       expectEvidenceHash(evidence.evidence_id, evidence.evidence_sha256);
     }
+    for (const observation of q52Receipt.canonical_inventory.slash_surface_observations) {
+      for (const evidence of observation.evidence) {
+        expectEvidenceHash(evidence.evidence_id, evidence.evidence_sha256);
+      }
+    }
+    const metricReceipt = readJson<Q20MetricScopeReceipt>(Q20_METRIC_SCOPE_RECEIPT_PATH);
+    for (const evidence of [...metricReceipt.historical_evidence, ...metricReceipt.current_lifecycle_evidence]) {
+      expectEvidenceHash(evidence.evidence_id, evidence.source_block_sha256);
+    }
 
     const gtfs = q52Receipt.current_gtfs;
     expect(sha256File(gtfs.routes_path)).toBe(gtfs.routes_sha256);
@@ -552,4 +558,5 @@ describe("reviewed Q20A and Q52 route-identity corrections", () => {
     expect(q52Rows[0]).toMatchObject(gtfs.q52_route);
     expect(q53Rows[0]).toMatchObject(gtfs.q53_route);
   });
+
 });

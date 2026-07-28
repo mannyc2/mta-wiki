@@ -15,6 +15,7 @@ import {
 } from "node:fs";
 import { spawnSync } from "node:child_process";
 import {
+  basename,
   dirname,
   isAbsolute,
   join,
@@ -35,6 +36,7 @@ import {
 import {
   assertRelationshipContractPolicyV1,
   assertRelationshipEnforcementProof,
+  assertRelationshipEnforcementSourceRefreshReceipt,
   assertRelationshipEnforcementTransitionReceipt,
   assertRelationshipFinalEndpointMatrix,
   loadRelationshipContract,
@@ -50,6 +52,8 @@ import {
   type RelationshipEnforcementGateArtifact,
   type RelationshipEnforcementProof,
   type RelationshipEnforcementProofReference,
+  type RelationshipEnforcementSourceRefreshReceipt,
+  type RelationshipEnforcementSourceRefreshReceiptReference,
   type RelationshipEnforcementTransitionReceipt,
   type RelationshipEnforcementTransitionReceiptReference,
   type RelationshipFinalEndpointMatrix,
@@ -1536,6 +1540,8 @@ function pinnedInputByPath(
 function assertPhysicalityPins(
   root: string,
   candidateRelease?: CandidateReleasePinSource | undefined,
+  sourceRefreshReceipt?:
+    RelationshipEnforcementSourceRefreshReceipt | undefined,
 ): Record<string, unknown> {
   const summaryText = readRepositoryText(
     root,
@@ -1576,9 +1582,27 @@ function assertPhysicalityPins(
     );
   }
   for (let index = 0; index < inputPins.length; index += 1) {
+    const pin = filePin(inputPins[index], `physicality input ${index}`);
+    const reviewedRefresh = sourceRefreshReceipt
+      ? [
+          sourceRefreshReceipt.completeness_manifest,
+          sourceRefreshReceipt.completeness_summary,
+          sourceRefreshReceipt.report,
+        ].find((candidate) => candidate.path === pin.path)
+      : undefined;
+    if (reviewedRefresh) {
+      const bytes = readRepositoryBytes(root, pin.path);
+      assert(
+        pin.sha256 === reviewedRefresh.previous_sha256 &&
+          byteSha256(bytes) === reviewedRefresh.current_sha256 &&
+          (pin.bytes === undefined || pin.bytes === bytes.length),
+        `physicality input ${index} does not match its exact reviewed source-refresh transition: ${pin.path}`,
+      );
+      continue;
+    }
     verifyRepositoryFilePin(
       root,
-      inputPins[index],
+      pin,
       `physicality input ${index}`,
       candidateRelease,
     );
@@ -2171,8 +2195,14 @@ function assertPhasePins(
 function assertPhysicalityAndPhasePins(
   root: string,
   candidateRelease?: CandidateReleasePinSource | undefined,
+  sourceRefreshReceipt?:
+    RelationshipEnforcementSourceRefreshReceipt | undefined,
 ): void {
-  const physicality = assertPhysicalityPins(root, candidateRelease);
+  const physicality = assertPhysicalityPins(
+    root,
+    candidateRelease,
+    sourceRefreshReceipt,
+  );
   const phase = assertPhasePins(root, candidateRelease);
   assert(
     physicality.release_id === phase.release_id &&
@@ -3983,6 +4013,8 @@ export function buildRelationshipEnforcementOutputs(input: {
   previousProof?: RelationshipEnforcementProofReference;
   transitionReceipt?:
     RelationshipEnforcementTransitionReceiptReference;
+  sourceRefreshReceipt?:
+    RelationshipEnforcementSourceRefreshReceiptReference;
 }): BuiltEnforcementOutputs {
   const { contract, matrix, sourceTexts } = input;
   const proofStage =
@@ -4131,6 +4163,9 @@ export function buildRelationshipEnforcementOutputs(input: {
     ...(input.transitionReceipt
       ? { transition_receipt: input.transitionReceipt }
       : {}),
+    ...(input.sourceRefreshReceipt
+      ? { source_refresh_receipt: input.sourceRefreshReceipt }
+      : {}),
     final_matrix: {
       path: contract.endpoint_matrix.path,
       sha256: contract.endpoint_matrix.sha256,
@@ -4174,12 +4209,14 @@ export function assertRelationshipEnforcementRefreshPins(input: {
   sourceTexts: ReadonlyMap<string, string>;
   invariantSha256ByRole: ReadonlyMap<string, string>;
   canonicalDbSha256: string;
+  sourceRefreshReceipt?: RelationshipEnforcementSourceRefreshReceipt;
 }): void {
   const {
     receipt,
     sourceTexts,
     invariantSha256ByRole,
     canonicalDbSha256,
+    sourceRefreshReceipt,
   } = input;
   for (const pin of receipt.invariant_artifacts) {
     assert(
@@ -4220,7 +4257,14 @@ export function assertRelationshipEnforcementRefreshPins(input: {
         currentText: text,
       });
       assert(
-        sha256(text) === pin.sha256 || reviewedPlan035Refresh,
+        sha256(text) === pin.sha256 ||
+          reviewedPlan035Refresh ||
+          (
+            pin.role === "relationship_completeness_summary" &&
+            sourceRefreshReceipt?.completeness_summary.path === pin.path &&
+            sha256(text) ===
+              sourceRefreshReceipt.completeness_summary.current_sha256
+          ),
         `Relationship enforcement refresh changed forbidden source artifact: ${pin.role}`,
       );
     }
@@ -4259,6 +4303,7 @@ function assertPostPromotionRefreshDrift(
   matrix: RelationshipFinalEndpointMatrix,
   receipt: RelationshipEnforcementTransitionReceipt,
   sourceTexts: ReadonlyMap<string, string>,
+  sourceRefreshReceipt?: RelationshipEnforcementSourceRefreshReceipt,
 ): void {
   assertRelationshipEnforcementTransitionReceipt(
     receipt,
@@ -4319,6 +4364,7 @@ function assertPostPromotionRefreshDrift(
     sourceTexts,
     invariantSha256ByRole,
     canonicalDbSha256,
+    sourceRefreshReceipt,
   });
 }
 
@@ -4334,6 +4380,11 @@ function desiredProofContract(
       ? {
           transition_receipt:
             contract.enforcement_proof.transition_receipt,
+        }
+      : {}),
+    ...(proof.source_refresh_receipt
+      ? {
+          source_refresh_receipt: proof.source_refresh_receipt,
         }
       : {}),
   };
@@ -4388,7 +4439,11 @@ function compareOrWrite(
 export function generateRelationshipEnforcementProofV1(
   mode: "check" | "apply",
   root = repoRoot,
-  options: { candidateReleaseDir?: string | undefined } = {},
+  options: {
+    candidateReleaseDir?: string | undefined;
+    sourceRefreshReceiptPath?: string | undefined;
+    canonicalDbPath?: string | undefined;
+  } = {},
 ): BuiltEnforcementOutputs {
   const candidateRelease = options.candidateReleaseDir
     ? loadCandidateReleasePinSource(root, options.candidateReleaseDir)
@@ -4417,6 +4472,12 @@ export function generateRelationshipEnforcementProofV1(
   let previousProofReference:
     | RelationshipEnforcementProofReference
     | undefined;
+  let sourceRefreshReceipt:
+    | RelationshipEnforcementSourceRefreshReceipt
+    | undefined;
+  let sourceRefreshReceiptReference:
+    | RelationshipEnforcementSourceRefreshReceiptReference
+    | undefined;
   if (contract.contract_status === "enforced") {
     transitionReceiptReference =
       contract.enforcement_proof?.transition_receipt;
@@ -4435,8 +4496,123 @@ export function generateRelationshipEnforcementProofV1(
     );
     previousProofReference = transitionReceipt.previous_proof;
   }
+  const configuredSourceRefreshPath =
+    options.sourceRefreshReceiptPath ??
+    contract.enforcement_proof?.source_refresh_receipt?.path;
+  if (configuredSourceRefreshPath) {
+    assert(
+      !isAbsolute(configuredSourceRefreshPath),
+      "Reviewed source-refresh receipt path must be repository-relative",
+    );
+    sourceRefreshReceipt = parseJson<RelationshipEnforcementSourceRefreshReceipt>(
+      readRepositoryText(root, configuredSourceRefreshPath),
+      configuredSourceRefreshPath,
+    );
+    assertRelationshipEnforcementSourceRefreshReceipt(
+      sourceRefreshReceipt,
+    );
+    const receiptSha256 = stableHash(
+      sourceRefreshReceipt as unknown as JsonValue,
+    );
+    assert(
+      basename(configuredSourceRefreshPath) === `${receiptSha256}.json`,
+      "Reviewed source-refresh receipt filename/hash mismatch",
+    );
+    sourceRefreshReceiptReference = {
+      path: configuredSourceRefreshPath,
+      sha256: receiptSha256,
+    };
+    const configuredPointer =
+      contract.enforcement_proof?.source_refresh_receipt;
+    if (configuredPointer) {
+      assert(
+        configuredPointer.path === configuredSourceRefreshPath &&
+          configuredPointer.sha256 === receiptSha256,
+        "Relationship contract source-refresh pointer does not match the reviewed receipt",
+      );
+    } else {
+      assert(
+        contract.enforcement_proof?.sha256 ===
+          sourceRefreshReceipt.previous_active_proof.sha256,
+        "Reviewed source-refresh receipt does not chain from the active proof",
+      );
+    }
+    const previousProof = parseJson<RelationshipEnforcementProof>(
+      readRepositoryText(
+        root,
+        sourceRefreshReceipt.previous_active_proof.path,
+      ),
+      sourceRefreshReceipt.previous_active_proof.path,
+    );
+    assert(
+      stableHash(previousProof as unknown as JsonValue) ===
+        sourceRefreshReceipt.previous_active_proof.sha256 &&
+        previousProof.proof_stage === "post_promotion_enforced",
+      "Reviewed source-refresh receipt previous-proof archive is missing or stale",
+    );
+    if (sourceRefreshReceipt.previous_source_refresh_receipt) {
+      const prior = parseJson<RelationshipEnforcementSourceRefreshReceipt>(
+        readRepositoryText(
+          root,
+          sourceRefreshReceipt.previous_source_refresh_receipt.path,
+        ),
+        sourceRefreshReceipt.previous_source_refresh_receipt.path,
+      );
+      assertRelationshipEnforcementSourceRefreshReceipt(prior);
+      assert(
+        stableHash(prior as unknown as JsonValue) ===
+          sourceRefreshReceipt.previous_source_refresh_receipt.sha256,
+        "Reviewed source-refresh receipt prior-receipt chain is stale",
+      );
+    }
+    for (const pin of [
+      sourceRefreshReceipt.completeness_manifest,
+      sourceRefreshReceipt.completeness_summary,
+      sourceRefreshReceipt.report,
+    ]) {
+      assert(
+        sha256(readRepositoryText(root, pin.path)) ===
+          pin.current_sha256,
+        `Reviewed source-refresh current artifact hash mismatch: ${pin.path}`,
+      );
+    }
+    const coverageText = readRepositoryText(
+      root,
+      sourceRefreshReceipt.coverage_manifest.path,
+    );
+    assert(
+      sha256(coverageText) ===
+        sourceRefreshReceipt.coverage_manifest.current.sha256 &&
+        Buffer.byteLength(coverageText) ===
+          sourceRefreshReceipt.coverage_manifest.current.bytes,
+      "Reviewed source-refresh coverage manifest hash/byte pin mismatch",
+    );
+    for (const pin of sourceRefreshReceipt.unchanged_row_artifacts) {
+      const text = readRepositoryText(root, pin.path);
+      assert(
+        sha256(text) === pin.sha256 &&
+          Buffer.byteLength(text) === pin.bytes &&
+          (text ? text.trimEnd().split(/\r?\n/gu).length : 0) ===
+            pin.row_count,
+        `Reviewed source-refresh unchanged row artifact drifted: ${pin.path}`,
+      );
+    }
+    const closureText = readRepositoryText(
+      root,
+      sourceRefreshReceipt.public_snapshot_input_closure.path,
+    );
+    assert(
+      sha256(closureText) ===
+        sourceRefreshReceipt.public_snapshot_input_closure.sha256 &&
+        Buffer.byteLength(closureText) ===
+          sourceRefreshReceipt.public_snapshot_input_closure.bytes,
+      "Reviewed source-refresh public-snapshot closure pin mismatch",
+    );
+  }
 
-  const databasePath = repositoryPath(root, CANONICAL_DB_PATH);
+  const databasePath = options.canonicalDbPath
+    ? resolve(options.canonicalDbPath)
+    : repositoryPath(root, CANONICAL_DB_PATH);
   const db = openCanonicalDb(databasePath, { readonly: true });
   let linkageMaterialization: JsonObject;
   let sqlIntegrity: JsonObject;
@@ -4449,15 +4625,43 @@ export function generateRelationshipEnforcementProofV1(
   } finally {
     db.close();
   }
-  assertPhysicalityAndPhasePins(root, candidateRelease);
+  assertPhysicalityAndPhasePins(
+    root,
+    candidateRelease,
+    sourceRefreshReceipt,
+  );
 
-  const generatedSources = new Map<string, string>([
+  const generatedLinkageText = json(linkageMaterialization);
+  const generatedSqlText = json(sqlIntegrity);
+  const generatedSources = new Map<string, string>();
+  for (const [role, path, generatedText] of [
     [
+      "linkage_materialization_summary",
       LINKAGE_MATERIALIZATION_SUMMARY_PATH,
-      json(linkageMaterialization),
+      generatedLinkageText,
     ],
-    [SQL_INTEGRITY_SUMMARY_PATH, json(sqlIntegrity)],
-  ]);
+    [
+      "sql_integrity_summary",
+      SQL_INTEGRITY_SUMMARY_PATH,
+      generatedSqlText,
+    ],
+  ] as const) {
+    if (!sourceRefreshReceipt) {
+      generatedSources.set(path, generatedText);
+      continue;
+    }
+    const trackedText = readRepositoryText(root, path);
+    assert(
+      relationshipEnforcementTransitionFingerprint(role, trackedText) ===
+        relationshipEnforcementTransitionFingerprint(role, generatedText),
+      `Reviewed source refresh changed ${role} semantics`,
+    );
+    // This refresh changes only the completeness pin and the canonical DB's
+    // corresponding logical anchor. Preserve the already sealed diagnostic
+    // snapshot bytes after independently proving the candidate DB derives the
+    // same normalized SQL/linkage result.
+    generatedSources.set(path, trackedText);
+  }
   const sourceTexts = new Map<string, string>();
   for (const sources of Object.values(
     RELATIONSHIP_ENFORCEMENT_GATE_SOURCES,
@@ -4477,6 +4681,7 @@ export function generateRelationshipEnforcementProofV1(
       matrix,
       transitionReceipt,
       sourceTexts,
+      sourceRefreshReceipt,
     );
   }
 
@@ -4493,6 +4698,7 @@ export function generateRelationshipEnforcementProofV1(
         : "post_promotion_enforced",
     previousProof: previousProofReference,
     transitionReceipt: transitionReceiptReference,
+    sourceRefreshReceipt: sourceRefreshReceiptReference,
   });
   const desiredContract = desiredProofContract(
     contract,
@@ -4573,6 +4779,12 @@ if (import.meta.main) {
     "--refresh-after-promotion",
   );
   const candidateReleaseDir = optionValue(args, "--candidate-release-dir");
+  const repositoryRoot = optionValue(args, "--repository-root");
+  const candidateDb = optionValue(args, "--candidate-db");
+  const reviewedSourceRefresh = optionValue(
+    args,
+    "--reviewed-source-refresh",
+  );
 
   if (capturePath !== undefined) {
     assertKnownArguments(
@@ -4669,7 +4881,12 @@ if (import.meta.main) {
   } else {
     assertKnownArguments(
       args,
-      ["--candidate-release-dir"],
+      [
+        "--candidate-release-dir",
+        "--repository-root",
+        "--candidate-db",
+        "--reviewed-source-refresh",
+      ],
       [
         "--apply",
         "--check",
@@ -4686,24 +4903,39 @@ if (import.meta.main) {
       "Writing ready enforcement artifacts requires --reviewed-enforcement",
     );
     assert(
-      !check || !reviewedEnforcement,
-      "--reviewed-enforcement is only valid with --apply",
+      !check || !reviewedEnforcement || reviewedSourceRefresh !== undefined,
+      "--reviewed-enforcement is only valid with --apply unless checking an exact reviewed source-refresh receipt",
     );
+    assert(
+      reviewedSourceRefresh !== undefined ||
+        (repositoryRoot === undefined && candidateDb === undefined),
+      "--repository-root and --candidate-db are restricted to the reviewed source-refresh workflow",
+    );
+    const generationRoot = repositoryRoot
+      ? resolve(repositoryRoot)
+      : repoRoot;
     const currentContract = parseJson<RelationshipContract>(
-      readRepositoryText(repoRoot, CONTRACT_PATH),
+      readRepositoryText(generationRoot, CONTRACT_PATH),
       CONTRACT_PATH,
     );
     assert(
-      refreshAfterPromotion ===
-        (currentContract.contract_status === "enforced"),
+      reviewedSourceRefresh !== undefined ||
+        refreshAfterPromotion ===
+          (currentContract.contract_status === "enforced"),
       currentContract.contract_status === "enforced"
         ? "Post-promotion proof generation requires --refresh-after-promotion"
         : "--refresh-after-promotion is valid only for an enforced contract",
     );
     const built = generateRelationshipEnforcementProofV1(
       apply ? "apply" : "check",
-      repoRoot,
-      candidateReleaseDir ? { candidateReleaseDir } : {},
+      generationRoot,
+      {
+        ...(candidateReleaseDir ? { candidateReleaseDir } : {}),
+        ...(reviewedSourceRefresh
+          ? { sourceRefreshReceiptPath: reviewedSourceRefresh }
+          : {}),
+        ...(candidateDb ? { canonicalDbPath: candidateDb } : {}),
+      },
     );
     console.log(
       JSON.stringify(

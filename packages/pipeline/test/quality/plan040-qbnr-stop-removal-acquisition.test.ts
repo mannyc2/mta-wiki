@@ -1,4 +1,5 @@
 import { describe, expect, it } from "bun:test";
+import { corpusDescribe } from "../support/local-test-profile";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { repoRoot } from "../../../core/src/paths";
@@ -81,7 +82,9 @@ function currentManifest() {
   });
 }
 
-describe("Plan 040 QBNR generic stop-removal acquisition manifest", () => {
+const describeCorpus = corpusDescribe;
+
+describeCorpus("Plan 040 QBNR generic stop-removal acquisition manifest", () => {
   it("freezes exactly 37 denominator keys with exact MTA route blocks and document URLs", () => {
     expect(createHash("sha256")
       .update(immutableAcquisitionTimeLedgerJsonl())

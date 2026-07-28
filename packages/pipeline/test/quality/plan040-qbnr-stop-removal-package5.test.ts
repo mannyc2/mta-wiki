@@ -1,4 +1,5 @@
 import { describe, expect, it } from "bun:test";
+import { corpusIt } from "../support/local-test-profile";
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import { dirname } from "node:path";
@@ -162,7 +163,7 @@ type Acquisition = {
 };
 
 describe("Plan 040 QBNR Package 5 accelerated evidence-only freeze", () => {
-  it("freezes exact 24-key parity, 12 immutable carries, and 12 new MTA documents", () => {
+  corpusIt("freezes exact 24-key parity, 12 immutable carries, and 12 new MTA documents", () => {
     const acquisitionBytes = readFileSync(acquisitionPath);
     const evidenceBytes = readFileSync(evidencePath);
     const draftBytes = readFileSync(draftPath);

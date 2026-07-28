@@ -5,7 +5,7 @@ import {
   RELATIONSHIP_COMPLETENESS_BUS_LANE_INVENTORY_V1,
   RELATIONSHIP_COMPLETENESS_REQUIRED_WARNING_CODES,
 } from "./relationship-completeness-contract.js";
-import { sha256, stableJson } from "./stable-json.js";
+import { sha256, stableHash, stableJson } from "./stable-json.js";
 import type { JsonValue, MtaObservationKind } from "./types.js";
 
 export const RELATIONSHIP_CONTRACT_ID = "relationship-contract-v1" as const;
@@ -13,6 +13,10 @@ export const RELATIONSHIP_ENFORCEMENT_PROOF_SCHEMA_VERSION = 2 as const;
 export const RELATIONSHIP_ENFORCEMENT_TRANSITION_RECEIPT_SCHEMA_VERSION = 1 as const;
 export const RELATIONSHIP_ENFORCEMENT_TRANSITION_RECEIPT_ID =
   "relationship-contract-v1-enforcement-transition" as const;
+export const RELATIONSHIP_ENFORCEMENT_SOURCE_REFRESH_RECEIPT_SCHEMA_VERSION =
+  1 as const;
+export const RELATIONSHIP_ENFORCEMENT_SOURCE_REFRESH_RECEIPT_ID =
+  "relationship-contract-v1-enforcement-source-refresh" as const;
 export const RELATIONSHIP_ENFORCEMENT_REFRESH_ROLES = [
   "canonical_db",
   "graph_audit_findings",
@@ -321,6 +325,62 @@ export type RelationshipEnforcementTransitionReceipt = {
   refresh_artifacts: RelationshipEnforcementTransitionArtifactPin[];
 };
 
+export type RelationshipEnforcementSourceRefreshReceiptReference =
+  RelationshipContentAddressedArtifact;
+
+export type RelationshipEnforcementSourceRefreshReceipt = {
+  schema_version:
+    typeof RELATIONSHIP_ENFORCEMENT_SOURCE_REFRESH_RECEIPT_SCHEMA_VERSION;
+  receipt_id: typeof RELATIONSHIP_ENFORCEMENT_SOURCE_REFRESH_RECEIPT_ID;
+  contract_id: typeof RELATIONSHIP_CONTRACT_ID;
+  reason_code: "public_snapshot_pin_closure";
+  review_method: "lossless_public_snapshot_pin_refresh";
+  previous_active_proof: RelationshipEnforcementProofReference;
+  previous_source_refresh_receipt?:
+    | RelationshipEnforcementSourceRefreshReceiptReference;
+  coverage_manifest: {
+    path: string;
+    previous: { sha256: string; bytes: number };
+    current: { sha256: string; bytes: number };
+  };
+  completeness_manifest: {
+    path: string;
+    previous_sha256: string;
+    current_sha256: string;
+  };
+  completeness_summary: {
+    path: string;
+    previous_sha256: string;
+    current_sha256: string;
+  };
+  report: {
+    path: string;
+    previous_sha256: string;
+    current_sha256: string;
+    previous_command: string;
+    current_command: string;
+    exact_removed_line: string;
+    exact_added_line: string;
+  };
+  unchanged_row_artifacts: Array<{
+    path: string;
+    sha256: string;
+    bytes: number;
+    row_count: number;
+  }>;
+  allowed_json_pointer_changes: Array<{
+    artifact_path: string;
+    json_pointer: string;
+    previous_value: JsonValue;
+    current_value: JsonValue;
+  }>;
+  public_snapshot_input_closure: {
+    path: string;
+    sha256: string;
+    bytes: number;
+  };
+};
+
 export type RelationshipEnforcementProof = {
   schema_version: typeof RELATIONSHIP_ENFORCEMENT_PROOF_SCHEMA_VERSION;
   proof_id: "relationship-contract-v1-enforcement-proof";
@@ -332,6 +392,8 @@ export type RelationshipEnforcementProof = {
   reviewed_by: string;
   previous_proof?: RelationshipEnforcementProofReference;
   transition_receipt?: RelationshipEnforcementTransitionReceiptReference;
+  source_refresh_receipt?:
+    | RelationshipEnforcementSourceRefreshReceiptReference;
   final_matrix: {
     path: string;
     sha256: string;
@@ -375,6 +437,8 @@ export type RelationshipContract = {
     sha256: string;
     required_gate_ids: string[];
     transition_receipt?: RelationshipEnforcementTransitionReceiptReference;
+    source_refresh_receipt?:
+      | RelationshipEnforcementSourceRefreshReceiptReference;
   };
   identity_policy: {
     canonical_endpoint_required: true;
@@ -599,6 +663,9 @@ export type LoadedRelationshipContract = {
   enforcementTransitionReceipt?:
     | RelationshipEnforcementTransitionReceipt
     | undefined;
+  enforcementSourceRefreshReceipt?:
+    | RelationshipEnforcementSourceRefreshReceipt
+    | undefined;
   rulesByKind: Map<
     string,
     RelationshipEndpointRule | RelationshipFinalEndpointRule
@@ -741,6 +808,18 @@ export function assertRelationshipContractPolicyV1(
     ) {
       throw new Error(
         "Relationship enforcement transition receipt pointer is not content-addressed",
+      );
+    }
+    const sourceRefreshReceipt =
+      contract.enforcement_proof.source_refresh_receipt;
+    if (
+      sourceRefreshReceipt &&
+      (typeof sourceRefreshReceipt.path !== "string" ||
+        !sourceRefreshReceipt.path.trim() ||
+        !isSha256(sourceRefreshReceipt.sha256))
+    ) {
+      throw new Error(
+        "Relationship enforcement source-refresh receipt pointer is not content-addressed",
       );
     }
   }
@@ -2345,6 +2424,7 @@ export function assertRelationshipEnforcementProofEnvelope(
     "reviewed_by",
     "previous_proof",
     "transition_receipt",
+    "source_refresh_receipt",
     "final_matrix",
     "gate_count",
     "all_gates_ready",
@@ -2387,6 +2467,14 @@ export function assertRelationshipEnforcementProofEnvelope(
   ) {
     throw new Error(
       "Relationship enforcement proof is not a valid reviewed stage, mode, and zero-violation envelope",
+    );
+  }
+  if (
+    proof.source_refresh_receipt !== undefined &&
+    !isContentAddressedReference(proof.source_refresh_receipt)
+  ) {
+    throw new Error(
+      "Relationship enforcement proof source-refresh pointer is not content-addressed",
     );
   }
   if (
@@ -2804,6 +2892,209 @@ export function assertRelationshipEnforcementTransitionReceipt(
   return previousProof;
 }
 
+function hasExactKeys(
+  value: unknown,
+  keys: readonly string[],
+): value is Record<string, unknown> {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const actual = Object.keys(value).sort();
+  const expected = [...keys].sort();
+  return actual.length === expected.length &&
+    actual.every((key, index) => key === expected[index]);
+}
+
+function isContentAddressedReference(
+  value: unknown,
+  extraKeys: readonly string[] = [],
+): value is RelationshipContentAddressedArtifact {
+  return hasExactKeys(value, ["path", "sha256", ...extraKeys]) &&
+    typeof value.path === "string" &&
+    value.path.trim().length > 0 &&
+    !isAbsolute(value.path) &&
+    isSha256(value.sha256);
+}
+
+export function assertRelationshipEnforcementSourceRefreshReceipt(
+  receipt: RelationshipEnforcementSourceRefreshReceipt,
+): void {
+  const receiptKeys = [
+    "schema_version",
+    "receipt_id",
+    "contract_id",
+    "reason_code",
+    "review_method",
+    "previous_active_proof",
+    ...(receipt.previous_source_refresh_receipt
+      ? ["previous_source_refresh_receipt"]
+      : []),
+    "coverage_manifest",
+    "completeness_manifest",
+    "completeness_summary",
+    "report",
+    "unchanged_row_artifacts",
+    "allowed_json_pointer_changes",
+    "public_snapshot_input_closure",
+  ];
+  if (
+    !hasExactKeys(receipt, receiptKeys) ||
+    receipt.schema_version !==
+      RELATIONSHIP_ENFORCEMENT_SOURCE_REFRESH_RECEIPT_SCHEMA_VERSION ||
+    receipt.receipt_id !==
+      RELATIONSHIP_ENFORCEMENT_SOURCE_REFRESH_RECEIPT_ID ||
+    receipt.contract_id !== RELATIONSHIP_CONTRACT_ID ||
+    receipt.reason_code !== "public_snapshot_pin_closure" ||
+    receipt.review_method !==
+      "lossless_public_snapshot_pin_refresh" ||
+    !isContentAddressedReference(
+      receipt.previous_active_proof,
+      ["proof_stage"],
+    ) ||
+    receipt.previous_active_proof.proof_stage !==
+      "post_promotion_enforced" ||
+    (receipt.previous_source_refresh_receipt !== undefined &&
+      !isContentAddressedReference(
+        receipt.previous_source_refresh_receipt,
+      ))
+  ) {
+    throw new Error(
+      "Relationship enforcement source-refresh receipt header is invalid",
+    );
+  }
+  const coverage = receipt.coverage_manifest;
+  const validFileVersion = (value: unknown): boolean =>
+    hasExactKeys(value, ["sha256", "bytes"]) &&
+    isSha256(value.sha256) &&
+    typeof value.bytes === "number" &&
+    Number.isInteger(value.bytes) &&
+    value.bytes >= 0;
+  if (
+    !hasExactKeys(coverage, ["path", "previous", "current"]) ||
+    typeof coverage.path !== "string" ||
+    isAbsolute(coverage.path) ||
+    !validFileVersion(coverage.previous) ||
+    !validFileVersion(coverage.current)
+  ) {
+    throw new Error(
+      "Relationship enforcement source-refresh coverage pin is invalid",
+    );
+  }
+  for (const [label, pin] of [
+    ["completeness manifest", receipt.completeness_manifest],
+    ["completeness summary", receipt.completeness_summary],
+  ] as const) {
+    if (
+      !hasExactKeys(pin, [
+        "path",
+        "previous_sha256",
+        "current_sha256",
+      ]) ||
+      typeof pin.path !== "string" ||
+      isAbsolute(pin.path) ||
+      !isSha256(pin.previous_sha256) ||
+      !isSha256(pin.current_sha256)
+    ) {
+      throw new Error(
+        `Relationship enforcement source-refresh ${label} pin is invalid`,
+      );
+    }
+  }
+  if (
+    !hasExactKeys(receipt.report, [
+      "path",
+      "previous_sha256",
+      "current_sha256",
+      "previous_command",
+      "current_command",
+      "exact_removed_line",
+      "exact_added_line",
+    ]) ||
+    typeof receipt.report.path !== "string" ||
+    isAbsolute(receipt.report.path) ||
+    !isSha256(receipt.report.previous_sha256) ||
+    !isSha256(receipt.report.current_sha256) ||
+    receipt.report.exact_removed_line !==
+      `-${receipt.report.previous_command}` ||
+    receipt.report.exact_added_line !==
+      `+${receipt.report.current_command}`
+  ) {
+    throw new Error(
+      "Relationship enforcement source-refresh report change is invalid",
+    );
+  }
+  const rows = receipt.unchanged_row_artifacts;
+  if (
+    !Array.isArray(rows) ||
+    rows.length === 0 ||
+    rows.some((row) =>
+      !hasExactKeys(row, [
+        "path",
+        "sha256",
+        "bytes",
+        "row_count",
+      ]) ||
+      typeof row.path !== "string" ||
+      isAbsolute(row.path) ||
+      !isSha256(row.sha256) ||
+      !Number.isInteger(row.bytes) ||
+      row.bytes < 0 ||
+      !Number.isInteger(row.row_count) ||
+      row.row_count < 0
+    ) ||
+    rows.some((row, index) =>
+      index > 0 && rows[index - 1]!.path.localeCompare(row.path) >= 0
+    )
+  ) {
+    throw new Error(
+      "Relationship enforcement source-refresh unchanged row pins are invalid",
+    );
+  }
+  const changes = receipt.allowed_json_pointer_changes;
+  if (
+    !Array.isArray(changes) ||
+    changes.length === 0 ||
+    changes.some((change) =>
+      !hasExactKeys(change, [
+        "artifact_path",
+        "json_pointer",
+        "previous_value",
+        "current_value",
+      ]) ||
+      typeof change.artifact_path !== "string" ||
+      isAbsolute(change.artifact_path) ||
+      typeof change.json_pointer !== "string" ||
+      !change.json_pointer.startsWith("/")
+    ) ||
+    changes.some((change, index) => {
+      if (index === 0) return false;
+      const previous = changes[index - 1]!;
+      return `${previous.artifact_path}\0${previous.json_pointer}`
+        .localeCompare(
+          `${change.artifact_path}\0${change.json_pointer}`,
+        ) >= 0;
+    })
+  ) {
+    throw new Error(
+      "Relationship enforcement source-refresh allowed change set is invalid",
+    );
+  }
+  if (
+    !hasExactKeys(receipt.public_snapshot_input_closure, [
+      "path",
+      "sha256",
+      "bytes",
+    ]) ||
+    typeof receipt.public_snapshot_input_closure.path !== "string" ||
+    isAbsolute(receipt.public_snapshot_input_closure.path) ||
+    !isSha256(receipt.public_snapshot_input_closure.sha256) ||
+    !Number.isInteger(receipt.public_snapshot_input_closure.bytes) ||
+    receipt.public_snapshot_input_closure.bytes < 0
+  ) {
+    throw new Error(
+      "Relationship enforcement source-refresh public-snapshot closure pin is invalid",
+    );
+  }
+}
+
 export function assertRelationshipEnforcementProof(
   proof: RelationshipEnforcementProof,
   matrix: RelationshipFinalEndpointMatrix,
@@ -3017,6 +3308,9 @@ export function loadRelationshipContract(
   let enforcementTransitionReceipt:
     | RelationshipEnforcementTransitionReceipt
     | undefined;
+  let enforcementSourceRefreshReceipt:
+    | RelationshipEnforcementSourceRefreshReceipt
+    | undefined;
   if (contract.enforcement_proof) {
     const proofPath = referencedPath(
       contract.enforcement_proof.path,
@@ -3058,6 +3352,76 @@ export function loadRelationshipContract(
           `Relationship enforcement transition receipt hash mismatch: expected ${receiptPointer.sha256}, found ${receiptSha256}`,
         );
       }
+    }
+    const sourceRefreshPointer =
+      contract.enforcement_proof.source_refresh_receipt;
+    if (sourceRefreshPointer) {
+      enforcementSourceRefreshReceipt =
+        parseJsonFile<RelationshipEnforcementSourceRefreshReceipt>(
+          referencedPath(sourceRefreshPointer.path),
+          "relationship enforcement source-refresh receipt",
+        );
+      assertRelationshipEnforcementSourceRefreshReceipt(
+        enforcementSourceRefreshReceipt,
+      );
+      const sourceRefreshSha256 = stableHash(
+        enforcementSourceRefreshReceipt as unknown as JsonValue,
+      );
+      if (sourceRefreshSha256 !== sourceRefreshPointer.sha256) {
+        throw new Error(
+          `Relationship enforcement source-refresh receipt hash mismatch: expected ${sourceRefreshPointer.sha256}, found ${sourceRefreshSha256}`,
+        );
+      }
+      if (
+        enforcementProof.source_refresh_receipt?.path !==
+          sourceRefreshPointer.path ||
+        enforcementProof.source_refresh_receipt?.sha256 !==
+          sourceRefreshPointer.sha256
+      ) {
+        throw new Error(
+          "Relationship enforcement proof and contract source-refresh pointers differ",
+        );
+      }
+      const previousProofText = artifactText(
+        enforcementSourceRefreshReceipt.previous_active_proof.path,
+      );
+      const previousProof = JSON.parse(
+        previousProofText,
+      ) as RelationshipEnforcementProof;
+      if (
+        stableHash(previousProof as unknown as JsonValue) !==
+          enforcementSourceRefreshReceipt.previous_active_proof.sha256 ||
+        previousProof.proof_stage !== "post_promotion_enforced"
+      ) {
+        throw new Error(
+          "Relationship enforcement source-refresh previous-proof chain is stale",
+        );
+      }
+      if (
+        enforcementSourceRefreshReceipt.previous_source_refresh_receipt
+      ) {
+        const priorText = artifactText(
+          enforcementSourceRefreshReceipt
+            .previous_source_refresh_receipt.path,
+        );
+        const prior = JSON.parse(
+          priorText,
+        ) as RelationshipEnforcementSourceRefreshReceipt;
+        assertRelationshipEnforcementSourceRefreshReceipt(prior);
+        if (
+          stableHash(prior as unknown as JsonValue) !==
+            enforcementSourceRefreshReceipt
+              .previous_source_refresh_receipt.sha256
+        ) {
+          throw new Error(
+            "Relationship enforcement source-refresh prior-receipt chain is stale",
+          );
+        }
+      }
+    } else if (enforcementProof.source_refresh_receipt) {
+      throw new Error(
+        "Relationship enforcement proof has an unaddressed source-refresh receipt",
+      );
     }
     if (contract.enforcement_state === "enforced_refresh_required") {
       if (
@@ -3148,6 +3512,7 @@ export function loadRelationshipContract(
     reviewedTupleExpansionLedger: expansionLedger,
     enforcementProof,
     enforcementTransitionReceipt,
+    enforcementSourceRefreshReceipt,
     rulesByKind: new Map(
       matrix.rules.map(
         (rule) => [rule.relation_kind, rule] as const,
