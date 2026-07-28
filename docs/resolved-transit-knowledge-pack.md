@@ -94,3 +94,23 @@ bun packages/cli/src/cli.ts resolved-transit-public-display --as-of 2026-07-27 -
 bun packages/cli/src/cli.ts resolved-transit-pack --as-of 2026-07-27 --output /tmp/resolved-pack
 bun packages/cli/src/cli.ts resolved-pack-reference-adapter --input /tmp/resolved-pack/public --json /tmp/reference.json
 ```
+
+## Verified release envelope
+
+Manifest v7 packages canonical observations, the complete operator audit
+surface, and the consumer-safe public surface as distinct resource roles.
+Every addressed file has exactly one descriptor declaring its layer,
+authority, identity contract, completeness, joins, dependencies, and
+authorization flags. The addressed build receipt binds the clean generator
+commit, runtime, explicit as-of date, export options, all enumerated semantic
+and code/config inputs, and every output resource hash.
+
+The strict verifier hashes every addressed byte before parsing it, validates
+descriptor ownership and authority, checks receipt/output parity, validates
+the complete resolved resource set, recursively checks public redaction, and
+runs the reference adapter using only public files. A successful verifier
+returns the sole branded verified-release handle used by downstream analysis.
+
+Temporary verification candidates are producer-contract proofs only. They do
+not promote `LATEST`, publish an external release, or authorize a downstream
+pin.

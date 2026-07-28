@@ -16,6 +16,12 @@ wiki pages, release exports, tests, and the pipeline code that produced them.
    They do not own frontmatter, source pages, or structured data.
 5. Query tools read canonical records, wiki pages, evidence refs, release exports, and the SQLite
    materialization.
+6. Resolution converts reviewed observation membership into episodes and exact
+   applications, then optionally into stable placements and dated lifecycle
+   state. It never mutates canonical evidence.
+7. Serving projects that operator model through a frozen display/key
+   dictionary into a recursively redacted public pack. Manifest v7 verifies
+   both surfaces and their reproducible build receipt before consumption.
 
 ## Generated Surfaces
 
@@ -80,3 +86,9 @@ source context and are not writer-owned.
 
 The materializer is idempotent and resumable. When generated outputs change, the change should be
 explainable by changed inputs, code, or deterministic override files.
+
+`bun run check` is the aggregate clean-clone boundary. It audits tracked input
+closure, typechecks, runs the default suite, rebuilds SQLite only below an
+owned temporary root, validates, checks determinism, verifies the frozen
+legacy release, and runs the isolated public reference adapter. It never
+dispatches authoring materialization.

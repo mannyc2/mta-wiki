@@ -6,6 +6,15 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-28
 
+### Reproducible manifest-v7 release envelope
+
+- Added closed semantic resource descriptors, a complete build-input/output
+  receipt, branded strict verification, deterministic two-root recuts, and a
+  non-mutating clean-clone CI gate for the Resolved Transit Knowledge Pack.
+  The temporary candidate is publication-eligible at the producer-contract
+  level only; `LATEST`, tags, external releases, and downstream pins remain
+  unchanged and owner-gated.
+
 ### Consumer-safe Resolved Transit Knowledge Pack
 
 - Added distinct operator and public resolved-transit contracts, a frozen

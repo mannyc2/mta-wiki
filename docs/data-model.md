@@ -97,3 +97,11 @@ remain separate resources with explicit denominators.
 
 Release exports copy canonical records plus release metadata under `data/exports/releases/<id>/`.
 The `v1-rc26` tag corresponds to the current v1 release; the `LATEST` file points to that release id.
+
+Manifest v7 keeps canonical observations documentary and places resolved
+episodes/applications, stable placements, lifecycle state, and public
+projections in separately described resources. Only resolved episodes and
+applications answer what reviewed real-world change occurred. Only placement
+state-as-of and confirmed-current footprint answer installed-treatment state.
+The operator and public surfaces intentionally expose different fields and
+must reconcile by frozen public keys.

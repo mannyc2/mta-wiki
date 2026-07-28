@@ -97,6 +97,21 @@ bun packages/cli/src/cli.ts transcript <run_name> --full
 bun packages/cli/src/cli.ts usage <run_name>
 ```
 
+Release verification and the non-mutating aggregate gate:
+
+```bash
+bun run check
+bun packages/cli/src/cli.ts verify-release v1-rc28
+bun packages/cli/src/cli.ts verify-release <id> --release-root <root> --json-out /tmp/verification.json
+```
+
+Manifest v7 resolved-pack candidates must use an explicit as-of date, a clean
+tracked generator commit, fully receipted semantic inputs, and an output root
+outside repository releases. Never infer current intervention state from
+canonical timelines or route-treatment scopes; only resolved placement
+state-as-of/current-footprint resources have that role. Candidate verification
+does not authorize `LATEST`, a tag, external publication, or a downstream pin.
+
 `ontology-normalize-run` is audit-first: it writes machine-validated and quarantined typed decisions
 under `data/ontology-decisions/`, but those decisions are not automatically applied to canonical
 records or materialized pages.

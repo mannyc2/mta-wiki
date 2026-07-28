@@ -58,6 +58,16 @@ current v1 release is `v1-rc26`, and `data/exports/releases/LATEST` points to th
 
 Downstream consumers should pin a release id instead of assuming `main` is stable.
 
+Manifest v7 resolved-pack candidates distinguish documentary canonical
+observations, reviewed operator resolution, consumer-safe public projections,
+non-authorizing reconciliation/quality resources, and envelope metadata.
+Every addressed resource has a closed descriptor and every build has an
+addressed receipt binding the generator, explicit as-of date, semantic inputs,
+code/config inputs, and output hashes. Only resolved episodes/applications
+answer what change occurred; only placement state-as-of/current-footprint
+resources answer current state. Promotion and external publication remain
+owner-gated.
+
 ## Writer Primitives
 
 Writer regions may use typed Markdown primitives so prose can point at current structured data

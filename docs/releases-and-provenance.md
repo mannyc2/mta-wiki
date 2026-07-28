@@ -11,6 +11,31 @@ The v1 public data release is `v1-rc26`.
 
 The release manifest records per-kind counts, hashes, and pointers to companion release artifacts.
 
+### Manifest v7 resolved-pack candidates
+
+Manifest v7 adds a semantic envelope without changing legacy manifest v1–v6
+decoders. Canonical JSONL remains documentary. Operator resolution resources,
+consumer-safe public projections, quality artifacts, and envelope metadata
+have separate closed resource descriptors; every addressed file is owned
+exactly once. Reconciliation/frontier resources cannot grant occurrence,
+current-state, cross-product, or study authority.
+
+`build_receipt.json` records the clean generator commit, Bun/runtime versions,
+explicit `resolved-pack-v1` options and as-of date, hashes for every enumerated
+semantic and code/config input, every output hash, and publication eligibility.
+It omits wall-clock and output-root data, so independent recuts are
+byte-identical. `verify-release` checks the addressed bytes and semantics
+before returning a verified bundle:
+
+```bash
+bun packages/cli/src/cli.ts verify-release <id> \
+  --release-root <containing-root> --json-out /tmp/verification.json
+```
+
+The temporary `resolved-pack-v1-verification-candidate` proves reproducibility
+only. `LATEST`, tags, GitHub Releases, and downstream pins remain owner-gated
+and unchanged. GitHub-only transport requires a later publication decision.
+
 ### Treatment semantic companions
 
 Manifest-v5 candidates may address a complete seven-file treatment companion set without changing
@@ -120,10 +145,11 @@ Ignored local or build surfaces:
 - Local planning files under `plans/`.
 - Local automation state under `.claude/`.
 
-Fresh public clones can recreate `data/canonical.db` from tracked canonical JSONL with:
+Fresh public clones can validate all ordinary gates and rebuild an owned
+temporary database without touching authoring output with:
 
 ```bash
-bun run materialize
+bun run check
 ```
 
 Evidence validation in public clones uses `data/evidence-block-index.jsonl`.
