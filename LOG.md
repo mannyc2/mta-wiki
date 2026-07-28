@@ -6,6 +6,19 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-28
 
+### Closed operational episode frontier
+
+- Added a deterministic observation-to-candidate frontier with strict cohort,
+  adapter, candidate-disposition, and arithmetic contracts. The tracked
+  partial profile accounts for 1,366 observations and 766 candidates while
+  preserving the exact 130 published / five unresolved active-identity
+  partition; pending and unsupported states remain explicit and
+  non-authorizing.
+- Kept operational coverage as a study-specific view over its unchanged 1,363
+  implementation/launch-family observations. Its dimension gaps are not
+  episode candidates, and adapter code contains no route, source, or
+  product-specific branches.
+
 ### Durable occurrence lineage and exact review membership
 
 - Added append-only occurrence identity operations and deterministic

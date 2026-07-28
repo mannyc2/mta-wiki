@@ -1,4 +1,5 @@
 import { describe, expect, it } from "bun:test";
+import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
@@ -112,6 +113,32 @@ function review(
 }
 
 describe("operational episode adapters and closed frontier", () => {
+  it("freezes every disposition and a multi-observation candidate in the contract fixture", () => {
+    const fixture = JSON.parse(readFileSync(
+      join(
+        repoRoot,
+        "data",
+        "contract-fixtures",
+        "operational-episode-frontier-v1",
+        "all-dispositions.json",
+      ),
+      "utf8",
+    )) as {
+      observation_dispositions: string[];
+      candidate_dispositions: string[];
+      multi_observation_candidate: { observation_event_record_ids: string[] };
+    };
+    expect(fixture.observation_dispositions).toEqual([
+      "candidate_bearing",
+      "not_episode_evidence",
+      "unsupported_record",
+      "invalid_record",
+      "pending_segmentation",
+    ]);
+    expect(fixture.candidate_dispositions).toHaveLength(8);
+    expect(fixture.multi_observation_candidate.observation_event_record_ids).toHaveLength(2);
+  });
+
   it("strictly parses accepted mappings and rejects unknown authority fields", () => {
     const accepted = mapping(["event_one"], "occurrence:one");
     expect(parseOperationalEpisodeAcceptedMapping(accepted)).toEqual(accepted);

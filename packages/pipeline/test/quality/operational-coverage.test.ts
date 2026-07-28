@@ -260,6 +260,27 @@ describe("operational coverage ledger", () => {
     ]);
   });
 
+  it("uses the generic frontier as a closed population check without treating study gaps as candidates", () => {
+    const input = baseInput();
+    const frontierObservations = ["event_current", "event_historical"].map((event_record_id) => ({
+      event_record_id,
+    })) as Parameters<typeof buildOperationalCoverageLedger>[0]["episode_frontier_observations"];
+    const report = buildOperationalCoverageLedger({
+      ...input,
+      episode_frontier_observations: frontierObservations,
+    });
+    expect(report.summary.population.canonical_operational_events).toBe(2);
+    expect(report.summary.completion.gap_rows).toBe(report.gaps.length);
+    expect(() => buildOperationalCoverageLedger({
+      ...input,
+      episode_frontier_observations: frontierObservations?.slice(0, 1),
+    })).toThrow("population is missing from the episode frontier");
+    expect(() => buildOperationalCoverageLedger({
+      ...input,
+      episode_frontier_observations: [...(frontierObservations ?? []), frontierObservations![0]!],
+    })).toThrow("duplicate episode frontier observations");
+  });
+
   it("separates delivered status-as-of evidence from a still-missing operational onset", () => {
     const statusEvent = record("event_status_as_of", "event", {
       event_family: "implementation",

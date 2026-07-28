@@ -4,6 +4,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import type { MtaCanonicalRecord, MtaValidationIssue } from "@mta-wiki/db/types";
 import {
+  validateOperationalEpisodeFrontier,
   validateReleasePointer,
   validateSourceRegistryForRecords,
 } from "@mta-wiki/pipeline/validate";
@@ -110,6 +111,28 @@ describe("release pointer validation lane", () => {
       writeFileSync(join(releasesDir, "missing-release", "manifest.json"), "{}\n", "utf8");
       validateReleasePointer(issues, root);
       expect(issues).toEqual([]);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+});
+
+describe("operational episode frontier validation lane", () => {
+  it("fails closed on missing or non-strict frontier ledgers", () => {
+    const root = mkdtempSync(join(tmpdir(), "mta-episode-frontier-"));
+    try {
+      const issues: MtaValidationIssue[] = [];
+      validateOperationalEpisodeFrontier(issues, root);
+      expect(issues).toHaveLength(1);
+      expect(issues[0]?.code).toBe("operational_episode_frontier_invalid");
+
+      const frontierDir = join(root, "data", "quality", "operational-episode-frontier", "v1");
+      mkdirSync(frontierDir, { recursive: true });
+      writeFileSync(join(frontierDir, "observation_ledger.jsonl"), "{\"schema_version\":1,\"extra\":true}\n");
+      writeFileSync(join(frontierDir, "candidate_ledger.jsonl"), "");
+      issues.length = 0;
+      validateOperationalEpisodeFrontier(issues, root);
+      expect(issues[0]?.message).toContain("unknown field");
     } finally {
       rmSync(root, { recursive: true, force: true });
     }

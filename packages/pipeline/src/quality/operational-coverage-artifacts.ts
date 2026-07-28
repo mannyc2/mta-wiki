@@ -23,6 +23,10 @@ import {
   loadOperationalOccurrenceAcceptedDecisions,
   type OperationalOccurrenceAcceptedDecision,
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
+import {
+  loadOperationalEpisodeFrontierLedgers,
+  type OperationalEpisodeObservationLedgerRow,
+} from "@mta-wiki/pipeline/materialize/operational-episode-frontier";
 import { computeOperationalOccurrences } from "@mta-wiki/pipeline/materialize/operational-occurrences";
 import type { RouteAnchorRow } from "@mta-wiki/pipeline/materialize/route-anchors";
 import {
@@ -115,6 +119,7 @@ export type BuildOperationalCoverageArtifactsInput = {
   routeAnchorSha256?: string | undefined;
   studyWindow?: OperationalCoverageDateInterval | undefined;
   downstream?: OperationalCoverageDownstreamLayer | undefined;
+  episodeFrontierObservations?: readonly OperationalEpisodeObservationLedgerRow[] | undefined;
 };
 
 export type WriteOperationalCoverageArtifactsOptions = {
@@ -559,6 +564,9 @@ export function buildOperationalCoverageArtifacts(
     accepted_search_receipts: searchReceipts,
     corpus_fingerprint: corpusFingerprint,
     study_window: studyWindow,
+    ...(input.episodeFrontierObservations
+      ? { episode_frontier_observations: input.episodeFrontierObservations }
+      : {}),
   });
   const anchorSummary = summarizeOperationalAnchors(projection.rows, {
     canonicalEventCount: records.filter((record) => record.record_kind === "event").length,
@@ -683,6 +691,9 @@ export function loadOperationalCoverageArtifacts(
   const ledgerDecisions = loadLedgerDecisions(decisionDir);
   const searchReceipts = loadSearchReceipts(searchReceiptDir);
   const downstream = loadDownstreamLayer(rootDir);
+  const episodeFrontier = loadOperationalEpisodeFrontierLedgers(
+    join(rootDir, "data", "quality", "operational-episode-frontier", "v1"),
+  );
   validateLedgerDecisionEvidence(ledgerDecisions, records);
   validateSearchReceiptSources(searchReceipts, records);
   const routeAnchorRelativePath = slashPath(relative(rootDir, routeAnchorPath));
@@ -695,6 +706,7 @@ export function loadOperationalCoverageArtifacts(
     ledgerDecisions,
     searchReceipts,
     downstream,
+    episodeFrontierObservations: episodeFrontier.observation_ledger,
     routeAnchorPath: routeAnchorRelativePath,
     routeAnchorReleaseId: releaseIdForRouteAnchorPath(routeAnchorRelativePath),
     routeAnchorSha256: sha256(routeAnchorContent),

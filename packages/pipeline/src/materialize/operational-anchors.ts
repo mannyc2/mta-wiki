@@ -81,6 +81,11 @@ export type OperationalAnchorDateCandidate = {
 export type OperationalAnchorRow = {
   schema_version: typeof OPERATIONAL_ANCHOR_SCHEMA_VERSION;
   anchor_id: string;
+  /**
+   * Enrichment-sensitive candidate fingerprint retained for release
+   * compatibility. It is not a durable real-world episode identity.
+   * @deprecated Prefer operationalAnchorCandidateFingerprint(row).
+   */
   operational_change_id: string;
   event_record_id: string;
   timeline_relation_record_ids: string[];
@@ -230,6 +235,13 @@ export function countOperationalFamilyEvents(records: readonly MtaCanonicalRecor
   return records.filter(
     (record) => record.record_kind === "event" && operationalEventFamilies.has(text(record.payload.event_family) ?? ""),
   ).length;
+}
+
+/** Nonbreaking semantic accessor for the legacy `operational_change_id` field. */
+export function operationalAnchorCandidateFingerprint(
+  row: Pick<OperationalAnchorRow, "operational_change_id">,
+): string {
+  return row.operational_change_id;
 }
 
 function text(value: JsonValue | undefined): string | null {

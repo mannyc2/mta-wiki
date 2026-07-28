@@ -3,9 +3,9 @@
   "schema_version": 1,
   "baseline_commit": "6a713a74b40841635bbce98cc96340feeeb80bda",
   "scanner_sha256": "d1073bf30223e95dbc1784fe5003fe3baa8738f8db6ee128cb9cdbab18f84bc9",
-  "entrypoint_count": 180,
+  "entrypoint_count": 181,
   "unsafe_default_entrypoints": [],
-  "rows_sha256": "a2fa8c63d48f62e73be0945899bd993aa61a928dceb3b4849f92bafbcab01035",
+  "rows_sha256": "60ea7200e8fe195d819fe419ef897a687ddefec8eafe3e6659d2b0361bc9f7da",
   "rows": [
     {
       "owner_kind": "gate",
@@ -1149,6 +1149,30 @@
       "class": "tracked_contract_only",
       "reconstruction_command_or_corpus_pin": null,
       "rationale": "No ignored or local semantic dependency was detected.",
+      "safe_in_default_suite": true
+    },
+    {
+      "owner_kind": "test",
+      "entrypoint_path": "packages/pipeline/test/materialize/operational-episode-frontier.test.ts",
+      "detected_access_sites": [
+        {
+          "path": "packages/pipeline/test/materialize/operational-episode-frontier.test.ts",
+          "line": 45,
+          "kinds": [
+            "production_corpus"
+          ],
+          "excerpt": "source_path: \"raw/sources/source_fixture/blocks.jsonl\","
+        }
+      ],
+      "paths_or_patterns": [
+        "production_corpus"
+      ],
+      "transitive_helper_chain": [
+        "packages/pipeline/test/materialize/operational-episode-frontier.test.ts"
+      ],
+      "class": "fixture_local",
+      "reconstruction_command_or_corpus_pin": "test-owned temporary fixture",
+      "rationale": "Uses a raw-shaped path only within a fixture it creates and removes itself.",
       "safe_in_default_suite": true
     },
     {

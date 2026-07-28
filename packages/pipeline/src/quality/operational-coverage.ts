@@ -2,6 +2,9 @@ import { createHash } from "node:crypto";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 import type { OperationalAnchorRow } from "@mta-wiki/pipeline/materialize/operational-anchors";
 import type { OperationalOccurrenceRow } from "@mta-wiki/pipeline/materialize/operational-occurrences";
+import type {
+  OperationalEpisodeObservationLedgerRow,
+} from "@mta-wiki/pipeline/materialize/operational-episode-frontier";
 import { isOfficialPublicPublisher } from "@mta-wiki/pipeline/records/source-authority";
 
 export const OPERATIONAL_COVERAGE_SCHEMA_VERSION = 1 as const;
@@ -159,6 +162,7 @@ export type OperationalCoverageInput = {
   accepted_search_receipts?: readonly OperationalCoverageSearchReceipt[];
   corpus_fingerprint?: string;
   study_window?: OperationalCoverageDateInterval;
+  episode_frontier_observations?: readonly OperationalEpisodeObservationLedgerRow[];
 };
 
 export type OperationalCoverageLedger = {
@@ -673,6 +677,23 @@ export function buildOperationalCoverageLedger(input: OperationalCoverageInput):
   const records = [...input.canonical_records].sort((left, right) => left.record_id.localeCompare(right.record_id));
   const events = uniqueOperationalEvents(records);
   const eventIds = new Set(events.map((event) => event.record_id));
+  if (input.episode_frontier_observations) {
+    const frontierEventIds = new Set(
+      input.episode_frontier_observations.map((row) => row.event_record_id),
+    );
+    const missing = [...eventIds].filter((eventId) => !frontierEventIds.has(eventId)).sort();
+    if (missing.length > 0) {
+      throw new Error(
+        `Operational coverage population is missing from the episode frontier: ${missing.join(", ")}`,
+      );
+    }
+    const duplicateCount =
+      input.episode_frontier_observations.length -
+      new Set(input.episode_frontier_observations.map((row) => row.event_record_id)).size;
+    if (duplicateCount > 0) {
+      throw new Error("Operational coverage received duplicate episode frontier observations");
+    }
+  }
   const recordsById = new Map(records.map((record) => [record.record_id, record]));
   const broadRows = input.operational_anchor_rows
     .filter((row) => row.anchor_id.startsWith("operational:"))

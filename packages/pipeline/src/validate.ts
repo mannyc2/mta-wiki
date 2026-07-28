@@ -19,6 +19,9 @@ import {
   readCanonicalRecordsFromDbFile,
 } from "@mta-wiki/pipeline/materialize/canonical-read";
 import {
+  loadOperationalEpisodeFrontierLedgers,
+} from "@mta-wiki/pipeline/materialize/operational-episode-frontier";
+import {
   extractWriterRegion,
   parseBlockPrimitives,
   parseInlinePrimitives,
@@ -69,6 +72,32 @@ function validateRequiredPaths(issues: MtaValidationIssue[]) {
   }
 
   return requiredPaths.length;
+}
+
+export function validateOperationalEpisodeFrontier(
+  issues: MtaValidationIssue[],
+  rootDir = repoRoot,
+): void {
+  const path = join(rootDir, "data", "quality", "operational-episode-frontier", "v1");
+  try {
+    const ledgers = loadOperationalEpisodeFrontierLedgers(path);
+    const summary = JSON.parse(readFileSync(join(path, "summary.json"), "utf8")) as {
+      observation_ledger_rows?: unknown;
+      candidate_ledger_rows?: unknown;
+      zero_unexplained_loss?: unknown;
+    };
+    if (
+      summary.observation_ledger_rows !== ledgers.observation_ledger.length ||
+      summary.candidate_ledger_rows !== ledgers.candidate_ledger.length ||
+      summary.zero_unexplained_loss !== true
+    ) throw new Error("frontier summary does not match its strict ledgers");
+  } catch (error) {
+    issues.push({
+      code: "operational_episode_frontier_invalid",
+      path: "data/quality/operational-episode-frontier/v1",
+      message: error instanceof Error ? error.message : String(error),
+    });
+  }
 }
 
 export function validateReleasePointer(
@@ -765,6 +794,7 @@ export function validateRepo(options: {
   const relationshipMode = contractRelationshipMode;
   const requiredPathCount = validateRequiredPaths(issues);
   validateReleasePointer(issues);
+  validateOperationalEpisodeFrontier(issues);
   const dbRecords = readCanonicalRecordsFromDbFile();
   if (!dbRecords) {
     issues.push({
