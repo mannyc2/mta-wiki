@@ -1,7 +1,7 @@
 import { spawnSync } from "node:child_process";
 import { createHash, randomUUID } from "node:crypto";
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from "node:fs";
-import { basename, isAbsolute, join, resolve, sep } from "node:path";
+import { basename, dirname, isAbsolute, join, resolve, sep } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
@@ -965,6 +965,17 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
     opts.relationshipIntegrityBundleDescriptor === undefined
       ? relationshipReleaseBundleDescriptorPath(rootDir)
       : opts.relationshipIntegrityBundleDescriptor;
+  const producerInputClosureRelative = "data/test-contracts/producer-input-closure-v1.json";
+  const producerInputClosureSource = join(rootDir, producerInputClosureRelative);
+  if (configuredRelationshipBundleDescriptor !== null && existsSync(producerInputClosureSource)) {
+    const stagedClosurePath = join(dir, "relationship-integrity", producerInputClosureRelative);
+    mkdirSync(dirname(stagedClosurePath), { recursive: true });
+    writeFileSync(stagedClosurePath, readFileSync(producerInputClosureSource));
+    fileEntries.push([
+      `relationship-integrity/${producerInputClosureRelative}`,
+      fileMetadata(stagedClosurePath),
+    ]);
+  }
   const relationshipBundle =
     configuredRelationshipBundleDescriptor !== null && existsSync(configuredRelationshipBundleDescriptor)
       ? stageRelationshipReleaseBundle(rootDir, dir, configuredRelationshipBundleDescriptor)
