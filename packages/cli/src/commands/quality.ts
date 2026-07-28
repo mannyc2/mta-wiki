@@ -1,4 +1,5 @@
 import { readFileSync } from "node:fs";
+import { spawnSync } from "node:child_process";
 import { relative } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import {
@@ -108,6 +109,25 @@ const memberExtentLedger: CommandHandler = () => {
   console.log(`Rows: extent=${result.extentRows.length}; grain=${result.grainRows.length}`);
   console.log(`Extent verdicts: ${Object.entries(extentCounts).map(([key, value]) => `${key}=${value}`).join(", ")}`);
   console.log(`Grain verdicts: ${Object.entries(grainCounts).map(([key, value]) => `${key}=${value}`).join(", ")}`);
+};
+
+const occurrenceIdentityMigrate: CommandHandler = () => {
+  const write = process.argv.includes("--write");
+  const check = process.argv.includes("--check");
+  if (Number(write) + Number(check) !== 1) {
+    throw new Error("occurrence-identity-migrate requires exactly one of --write and --check");
+  }
+  const result = spawnSync(
+    "bun",
+    [
+      "scripts/migrate-operational-occurrence-identity-v2.ts",
+      write ? "--write" : "--check",
+    ],
+    { cwd: repoRoot, encoding: "utf8" },
+  );
+  const output = `${result.stdout ?? ""}${result.stderr ?? ""}`;
+  if (result.status !== 0) throw new Error(output.trim());
+  console.log(output.trim());
 };
 
 const plan040ExemplarDraft: CommandHandler = () => {
@@ -632,6 +652,7 @@ const relationshipCompleteness: CommandHandler = () => {
 };
 
 export const qualityCommands = {
+  "occurrence-identity-migrate": occurrenceIdentityMigrate,
   "bus-lane-identity-ledger": busLaneIdentityLedger,
   "member-extent-ledger": memberExtentLedger,
   "study-frontier-preflight": () => {

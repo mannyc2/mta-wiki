@@ -1,6 +1,8 @@
 import { describe, expect, it } from "bun:test";
 import { readFileSync } from "node:fs";
+import { mkdtempSync, rmSync } from "node:fs";
 import { join } from "node:path";
+import { tmpdir } from "node:os";
 import { repoRoot } from "@mta-wiki/core/paths";
 import {
   assertOperationalOccurrenceIdentityRegistry,
@@ -9,6 +11,7 @@ import {
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-identity";
 import {
   migrateOperationalOccurrenceIdentityV1Operations,
+  loadOperationalOccurrenceIdentityRegistryV2,
   parseOperationalOccurrenceIdentityOperation,
   replayOperationalOccurrenceIdentityOperations,
   resolveOperationalOccurrenceIdentityV2,
@@ -216,5 +219,31 @@ describe("operational occurrence identity registry v2", () => {
     expect(() =>
       replayOperationalOccurrenceIdentityOperations([alias, second, first])
     ).toThrow("conflicts with an identity");
+  });
+
+  it("requires production registry-v2 inputs but permits explicit optional fixtures", () => {
+    expect(loadOperationalOccurrenceIdentityRegistryV2(repoRoot)).toHaveLength(135);
+    const root = mkdtempSync(join(tmpdir(), "mta-occurrence-identity-v2-"));
+    try {
+      expect(() =>
+        loadOperationalOccurrenceIdentityRegistryV2(root)
+      ).toThrow("required operational occurrence identity registry-v2 inputs are missing");
+      expect(
+        loadOperationalOccurrenceIdentityRegistryV2(root, {
+          optionalFixture: true,
+        }),
+      ).toEqual([]);
+      expect(() =>
+        loadOperationalOccurrenceIdentityRegistry(join(root, "missing.jsonl"))
+      ).toThrow("required operational occurrence identity registry is missing");
+      expect(
+        loadOperationalOccurrenceIdentityRegistry(
+          join(root, "missing.jsonl"),
+          { optionalFixture: true },
+        ),
+      ).toEqual([]);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
   });
 });

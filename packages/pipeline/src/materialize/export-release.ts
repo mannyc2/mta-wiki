@@ -800,7 +800,10 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
 
   const occurrenceIdentityRegistry =
     opts.operationalOccurrenceIdentityRegistry ??
-    loadOperationalOccurrenceIdentityRegistry(operationalOccurrenceIdentityRegistryPath(rootDir));
+    loadOperationalOccurrenceIdentityRegistry(
+      operationalOccurrenceIdentityRegistryPath(rootDir),
+      { optionalFixture: opts.records !== undefined },
+    );
   if (routeIdentityRelease) {
     assertOperationalProjectionRetirementsAgainstRouteIdentity(
       operationalProjectionRetirements,
@@ -809,7 +812,13 @@ export function exportRelease(releaseId: string, opts: ReleaseExportOptions = {}
   }
   const acceptedOccurrenceReviewDecisions = loadOperationalOccurrenceAcceptedDecisions(
     opts.operationalOccurrenceReviewDecisionDir ?? operationalOccurrenceReviewAcceptedDir(rootDir),
-    { rootDir, retirements: operationalProjectionRetirements },
+    {
+      rootDir,
+      retirements: operationalProjectionRetirements,
+      optionalFixture:
+        opts.records !== undefined &&
+        opts.operationalOccurrenceReviewDecisionDir === undefined,
+    },
   );
   const operationalOccurrences = computeOperationalOccurrences(records, routeAnchors, {
     reviewDecisions: acceptedReviewDecisions,

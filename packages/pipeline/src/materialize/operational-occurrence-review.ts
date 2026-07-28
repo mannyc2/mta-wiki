@@ -388,9 +388,13 @@ export function loadOperationalOccurrenceAcceptedDecisions(
     rootDir?: string | undefined;
     includeRetired?: boolean | undefined;
     retirements?: readonly OperationalProjectionRetirementV1[] | undefined;
+    optionalFixture?: boolean | undefined;
   } = {},
 ): OperationalOccurrenceAcceptedDecision[] {
-  if (!existsSync(dir)) return [];
+  if (!existsSync(dir)) {
+    if (options.optionalFixture) return [];
+    throw new Error(`required operational occurrence review directory is missing: ${dir}`);
+  }
   const rootDir = options.rootDir ?? repoRoot;
   const decisions = readdirSync(dir)
     .filter((name) => name.endsWith(".json"))
@@ -1398,4 +1402,50 @@ export function parseOperationalOccurrenceReviewSnapshotV3(
     decision_count: decisions.length,
     decisions,
   };
+}
+
+export function operationalOccurrenceReviewAcceptedV2Dir(
+  rootDir = repoRoot,
+): string {
+  return join(
+    rootDir,
+    "data",
+    "operational-occurrence-review",
+    "accepted-v2",
+    "decisions",
+  );
+}
+
+export function loadOperationalOccurrenceAcceptedDecisionsV2(
+  dir = operationalOccurrenceReviewAcceptedV2Dir(),
+  options: { optionalFixture?: boolean } = {},
+): OperationalOccurrenceAcceptedDecisionV2[] {
+  if (!existsSync(dir)) {
+    if (options.optionalFixture) return [];
+    throw new Error(`required operational occurrence review-v2 directory is missing: ${dir}`);
+  }
+  const names = readdirSync(dir);
+  const unsupported = names.filter((name) => !name.endsWith(".json")).sort();
+  if (unsupported.length > 0) {
+    throw new Error(
+      `operational occurrence review-v2 directory contains unsupported entries: ${unsupported.join(", ")}`,
+    );
+  }
+  const decisions = names
+    .sort((left, right) => left.localeCompare(right))
+    .map((name) => {
+      const path = join(dir, name);
+      const decision = parseOperationalOccurrenceAcceptedDecisionV2(
+        JSON.parse(readFileSync(path, "utf8")) as unknown,
+        path,
+      );
+      if (`${decision.decision_id}.json` !== basename(path)) {
+        throw new Error(`${path}: decision_id must match the file name`);
+      }
+      return decision;
+    });
+  if (new Set(decisions.map((decision) => decision.decision_id)).size !== decisions.length) {
+    throw new Error("operational occurrence review-v2 decision ids must be unique");
+  }
+  return decisions;
 }

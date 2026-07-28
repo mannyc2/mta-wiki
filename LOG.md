@@ -6,6 +6,19 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-07-28
 
+### Durable occurrence lineage and exact review membership
+
+- Added append-only occurrence identity operations and deterministic
+  registry-v2 replay while preserving all 135 existing `occurrence:<24-hex>`
+  IDs. Typed resolution now distinguishes active, redirect, retired, and
+  missing identities and rejects invalid ownership, lineage, alias, and
+  non-coreference transitions.
+- Added review-decision v2 and snapshot v3 with exact observation, phase,
+  physical-scope, and route-treatment application membership. The lossless
+  migration publishes 130 exact reviews and retains five active identities as
+  explicit review packets; it invents no merge, split, cross-product, phase
+  assignment, or lifecycle action.
+
 ### Clean-clone and source-refresh integrity boundary
 
 - Split the mandatory tracked-input test gate from explicit content-addressed

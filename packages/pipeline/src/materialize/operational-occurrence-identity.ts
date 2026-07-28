@@ -117,8 +117,12 @@ export function operationalOccurrenceIdentityRegistryPath(rootDir = repoRoot): s
 
 export function loadOperationalOccurrenceIdentityRegistry(
   path = operationalOccurrenceIdentityRegistryPath(),
+  options: { optionalFixture?: boolean } = {},
 ): OperationalOccurrenceIdentityEntry[] {
-  if (!existsSync(path)) return [];
+  if (!existsSync(path)) {
+    if (options.optionalFixture) return [];
+    throw new Error(`required operational occurrence identity registry is missing: ${path}`);
+  }
   const entries = readFileSync(path, "utf8")
     .split(/\r?\n/u)
     .filter((line) => line.trim().length > 0)

@@ -143,6 +143,7 @@ function parseCommand(argv: string[]): ParsedArgs {
     "qbnr-recovery-draft",
     "relationship-integrity",
     "relationship-completeness",
+    "occurrence-identity-migrate",
     "semantic-sweep",
     "fact-dedup",
     "reference-snapshots",

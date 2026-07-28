@@ -1,10 +1,14 @@
 import { describe, expect, it } from "bun:test";
 import { readFileSync } from "node:fs";
+import { mkdtempSync, rmSync } from "node:fs";
 import { join } from "node:path";
+import { tmpdir } from "node:os";
 import { repoRoot } from "@mta-wiki/core/paths";
 import {
   assertOperationalOccurrenceReviewDecisionsV2,
   migrateOperationalOccurrenceReviewDecisionV2,
+  loadOperationalOccurrenceAcceptedDecisions,
+  loadOperationalOccurrenceAcceptedDecisionsV2,
   operationalOccurrenceReviewMembershipFingerprint,
   operationalOccurrenceReviewSnapshotV3Json,
   parseOperationalOccurrenceAcceptedDecisionV2,
@@ -204,5 +208,36 @@ describe("operational occurrence exact review v2", () => {
         legacy.find((decision) => decision.occurrence_id === row.occurrence_id)!,
       )
     ).toThrow("requires explicit route-treatment application review");
+  });
+
+  it("fails closed on a missing production decision directory and loads the exact active partition", () => {
+    expect(loadOperationalOccurrenceAcceptedDecisionsV2()).toHaveLength(130);
+    const root = mkdtempSync(join(tmpdir(), "mta-occurrence-review-v2-"));
+    try {
+      expect(() =>
+        loadOperationalOccurrenceAcceptedDecisionsV2(
+          join(root, "missing"),
+        )
+      ).toThrow("required operational occurrence review-v2 directory is missing");
+      expect(
+        loadOperationalOccurrenceAcceptedDecisionsV2(
+          join(root, "missing"),
+          { optionalFixture: true },
+        ),
+      ).toEqual([]);
+      expect(() =>
+        loadOperationalOccurrenceAcceptedDecisions(
+          join(root, "missing-v1"),
+        )
+      ).toThrow("required operational occurrence review directory is missing");
+      expect(
+        loadOperationalOccurrenceAcceptedDecisions(
+          join(root, "missing-v1"),
+          { optionalFixture: true },
+        ),
+      ).toEqual([]);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
   });
 });

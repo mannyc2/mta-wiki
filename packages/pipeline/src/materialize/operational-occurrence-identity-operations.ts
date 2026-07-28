@@ -555,6 +555,38 @@ export function loadOperationalOccurrenceIdentityOperations(
     });
 }
 
+export function loadOperationalOccurrenceIdentityRegistryV2(
+  rootDir: string,
+  options: { optionalFixture?: boolean } = {},
+): OperationalOccurrenceIdentityRegistryV2Entry[] {
+  const operationsDir = join(
+    rootDir,
+    "data",
+    "operational-occurrence-identities",
+    "operations",
+  );
+  const registryPath = join(
+    rootDir,
+    "data",
+    "operational-occurrence-identities",
+    "registry-v2.jsonl",
+  );
+  if (!existsSync(operationsDir) || !existsSync(registryPath)) {
+    if (options.optionalFixture) return [];
+    throw new Error(
+      "required operational occurrence identity registry-v2 inputs are missing",
+    );
+  }
+  const replayed = replayOperationalOccurrenceIdentityOperations(
+    loadOperationalOccurrenceIdentityOperations(operationsDir),
+  );
+  const expected = operationalOccurrenceIdentityRegistryV2Jsonl(replayed);
+  if (readFileSync(registryPath, "utf8") !== expected) {
+    throw new Error("operational occurrence identity registry-v2 is stale against operation replay");
+  }
+  return replayed;
+}
+
 export function resolveOperationalOccurrenceIdentityV2(
   requestedKey: string,
   entries: readonly OperationalOccurrenceIdentityRegistryV2Entry[],
