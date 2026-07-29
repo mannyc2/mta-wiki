@@ -105,3 +105,10 @@ applications answer what reviewed real-world change occurred. Only placement
 state-as-of and confirmed-current footprint answer installed-treatment state.
 The operator and public surfaces intentionally expose different fields and
 must reconcile by frozen public keys.
+
+Resolved application identity is incidence-stable. The historical migration
+root establishes an application ID; append-only current review decisions may
+refine action and extent without changing it. Public component and placement
+lookups likewise survive mutable claim refinement. An accepted same-subject
+presentation-key supersession retains the prior key as an alias; a real
+subject replacement requires explicit reviewed lineage/redirect history.

@@ -18,8 +18,9 @@ operator display dictionary. It never reads canonical events or treatments
 directly.
 
 `intervention_id` preserves the durable occurrence identity. An
-`intervention_component_key` identifies one exact route/treatment/action/scope
-application within that episode. A `placement_key` identifies a durable
+`intervention_component_key` identifies one exact route/treatment/phase
+application within that episode; action and scope are mutable reviewed
+details. A `placement_key` identifies a durable
 installed subject independently of any single episode. Route and treatment
 joins use `route_key` and `treatment_family_key`; internal record,
 application, placement, review, decision, hash, queue, and path fields are
@@ -29,6 +30,13 @@ Keys are replayed from
 `resolved-transit-public-key-registry-v1`. Establishment is append-only and
 records either a reproducible lossless migration or an exact accepted display
 decision. Labels may be corrected or gain aliases without changing identity.
+An existing key is not re-derived from mutable action, extent, placement-scope,
+or label claims. An accepted `supersede_public_key` operation may replace the
+live presentation key for the same durable subject while retaining the prior
+key as an alias. A genuine subject replacement uses an accepted
+`redirect_public_key_subject` operation; replay retains all prior keys as
+aliases, preserves operation history, and rejects cycles or duplicate
+ownership.
 Normal display checks and pack builds are read-only over this registry.
 
 ## History is not current footprint

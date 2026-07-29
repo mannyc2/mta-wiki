@@ -9,7 +9,9 @@ import {
   type OperationalEpisodeEvidenceBinding,
 } from "@mta-wiki/pipeline/materialize/operational-episode-adapters";
 import type { OperationalOccurrenceIdentityRegistryV2Entry } from "@mta-wiki/pipeline/materialize/operational-occurrence-identity-operations";
-import type { OperationalOccurrenceAcceptedDecisionV2 } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
+import type {
+  OperationalOccurrenceCurrentReviewDecision,
+} from "@mta-wiki/pipeline/materialize/operational-occurrence-resolution";
 
 export const OPERATIONAL_EPISODE_FRONTIER_SCHEMA_VERSION = 1 as const;
 export const OPERATIONAL_EPISODE_COHORT_ID = "operational-event-family-v1" as const;
@@ -152,7 +154,7 @@ export type BuildOperationalEpisodeFrontierInput = {
   accepted_mappings: readonly OperationalEpisodeAcceptedMapping[];
   candidate_decisions: readonly OperationalEpisodeCandidateDecision[];
   identity_registry: readonly OperationalOccurrenceIdentityRegistryV2Entry[];
-  review_decisions: readonly OperationalOccurrenceAcceptedDecisionV2[];
+  review_decisions: readonly OperationalOccurrenceCurrentReviewDecision[];
   completeness_profile: "partial" | "complete";
 };
 
@@ -627,9 +629,9 @@ function activeIdentityIds(
 }
 
 function reviewByOccurrence(
-  reviews: readonly OperationalOccurrenceAcceptedDecisionV2[],
-): Map<string, OperationalOccurrenceAcceptedDecisionV2> {
-  const result = new Map<string, OperationalOccurrenceAcceptedDecisionV2>();
+  reviews: readonly OperationalOccurrenceCurrentReviewDecision[],
+): Map<string, OperationalOccurrenceCurrentReviewDecision> {
+  const result = new Map<string, OperationalOccurrenceCurrentReviewDecision>();
   for (const review of reviews) {
     if (result.has(review.occurrence_id)) throw new Error(`duplicate exact review for ${review.occurrence_id}`);
     result.set(review.occurrence_id, review);

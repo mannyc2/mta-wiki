@@ -2,9 +2,18 @@ import { describe, expect, it } from "bun:test";
 import type { MtaCanonicalRecord } from "@mta-wiki/db/types";
 import type { OperationalEpisodeCandidateLedgerRow } from "@mta-wiki/pipeline/materialize/operational-episode-frontier";
 import type { OperationalOccurrenceIdentityRegistryV2Entry } from "@mta-wiki/pipeline/materialize/operational-occurrence-identity-operations";
-import type { OperationalOccurrenceAcceptedDecisionV2 } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
+import {
+  operationalOccurrenceReviewMembershipFingerprint,
+  type OperationalOccurrenceAcceptedDecisionV2,
+} from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
+import {
+  operationalOccurrenceCurrentReviewMembershipFingerprint,
+  parseOperationalOccurrenceAcceptedDecisionV3,
+  replayOperationalOccurrenceCurrentReviews,
+} from "@mta-wiki/pipeline/materialize/operational-occurrence-resolution";
 import {
   parseResolvedInterventionApplication,
+  resolvedInterventionDurableApplicationIdentity,
   resolvedInterventionApplicationIdentity,
 } from "@mta-wiki/pipeline/materialize/resolved-intervention-applications";
 import {
@@ -61,7 +70,7 @@ function review(
     route_record_id: string;
     treatment_record_id: string;
     phase_record_id?: string | null;
-    action?: "add" | "modify";
+    action?: "add" | "modify" | "unknown";
     physical_scope_record_ids?: string[];
   }>,
 ): OperationalOccurrenceAcceptedDecisionV2 {
@@ -135,7 +144,10 @@ function review(
   };
 }
 
-function candidate(disposition: "published" | "pending_review" = "published"): OperationalEpisodeCandidateLedgerRow {
+function candidate(
+  disposition: "published" | "pending_review" = "published",
+  reviewFingerprint = "a".repeat(64),
+): OperationalEpisodeCandidateLedgerRow {
   return {
     schema_version: 1,
     candidate_id: "candidate:one",
@@ -151,7 +163,7 @@ function candidate(disposition: "published" | "pending_review" = "published"): O
     lineage_occurrence_ids: ["occurrence:one"],
     successor_occurrence_ids: [],
     decision_ids: ["mapping:one"],
-    review_membership_fingerprint: disposition === "published" ? "a".repeat(64) : null,
+    review_membership_fingerprint: disposition === "published" ? reviewFingerprint : null,
   };
 }
 
@@ -205,6 +217,122 @@ describe("resolved intervention model v1", () => {
       `${application.route_record_id}×${application.treatment_record_id}`
     ).sort()).toEqual(["route_a×treatment_x", "route_b×treatment_y"]);
     expect(model.summary.zero_unexplained_identity_loss).toBe(true);
+  });
+
+  it("materializes an append-only unknown/unknown refinement with the same durable application ids", () => {
+    const baselineWithPlaceholder = review([
+      {
+        route_record_id: "route_a",
+        treatment_record_id: "treatment_x",
+        action: "unknown",
+      },
+      {
+        route_record_id: "route_b",
+        treatment_record_id: "treatment_y",
+        action: "unknown",
+      },
+    ]);
+    const {
+      membership_fingerprint: _placeholder,
+      ...baselineWithoutFingerprint
+    } = baselineWithPlaceholder;
+    const baselineWithoutMigrationFingerprint = {
+      ...baselineWithoutFingerprint,
+      review_scope: "lossless_v1_migration" as const,
+    };
+    const baseline: OperationalOccurrenceAcceptedDecisionV2 = {
+      ...baselineWithoutMigrationFingerprint,
+      membership_fingerprint:
+        operationalOccurrenceReviewMembershipFingerprint(
+          baselineWithoutMigrationFingerprint,
+        ),
+    };
+    const baselineApplicationIds = baseline.applications.map((application) =>
+      resolvedInterventionApplicationIdentity({
+        occurrence_id: baseline.occurrence_id,
+        route_record_id: application.route_record_id,
+        treatment_record_id: application.treatment_record_id,
+        phase_record_id: application.phase_record_id,
+        action: application.action,
+        extent: { kind: "unknown", record_ids: [], description: null },
+      })
+    );
+    const refinedApplications = baseline.applications.map((application, index) => ({
+      ...application,
+      application_id: baselineApplicationIds[index]!,
+      action: index === 0 ? "add" as const : application.action,
+      physical_scope_record_ids: index === 0 ? ["corridor_one"] : [],
+      extent: index === 0
+        ? {
+            kind: "bounded_segment" as const,
+            record_ids: ["corridor_one"],
+            description: "Reviewed bounded segment.",
+          }
+        : { kind: "unknown" as const, record_ids: [], description: null },
+      evidence_bindings: index === 0
+        ? [...application.evidence_bindings, binding("corridor_one")]
+          .sort((left, right) =>
+            [left.role, left.record_id].join("|").localeCompare(
+              [right.role, right.record_id].join("|"),
+            )
+          )
+        : application.evidence_bindings,
+    }));
+    const currentWithBaselineFingerprint = {
+      ...baseline,
+      schema_version: 3 as const,
+      decision_id: "review:one:resolution-1",
+      operation: "supersede_current_resolution" as const,
+      supersedes_decision_id: baseline.decision_id,
+      supersedes_membership_fingerprint: baseline.membership_fingerprint,
+      physical_scope_record_ids: ["corridor_one"],
+      applications: refinedApplications,
+      evidence_bindings: [...baseline.evidence_bindings, binding("corridor_one")]
+        .sort((left, right) =>
+          [left.role, left.record_id].join("|").localeCompare(
+            [right.role, right.record_id].join("|"),
+          )
+        ),
+      reviewers: ["fixture-reviewer"],
+      accepted_at: "2026-07-29T00:00:00Z",
+      rationale: "Refine one durable application without widening incidence.",
+      review_scope: "application_resolution_refinement" as const,
+    };
+    const {
+      membership_fingerprint: _baselineFingerprint,
+      ...currentWithoutFingerprint
+    } = currentWithBaselineFingerprint;
+    const current = parseOperationalOccurrenceAcceptedDecisionV3({
+      ...currentWithoutFingerprint,
+      membership_fingerprint:
+        operationalOccurrenceCurrentReviewMembershipFingerprint(
+          currentWithoutFingerprint,
+        ),
+    });
+    const [head] = replayOperationalOccurrenceCurrentReviews(
+      [baseline],
+      [current],
+    );
+    const model = buildResolvedInterventions({
+      canonical_records: corpus(),
+      candidate_ledger: [candidate("published", current.membership_fingerprint)],
+      identity_registry: [identity()],
+      review_decisions: [head!],
+    });
+    expect(model.applications.map((application) => application.application_id).sort())
+      .toEqual([...baselineApplicationIds].sort());
+    expect(model.applications.map((application) =>
+      `${application.route_record_id}×${application.treatment_record_id}`
+    ).sort()).toEqual(["route_a×treatment_x", "route_b×treatment_y"]);
+    expect(model.applications.find((application) =>
+      application.route_record_id === "route_a"
+    )).toEqual(expect.objectContaining({
+      action: "add",
+      extent: expect.objectContaining({
+        kind: "bounded_segment",
+        record_ids: ["corridor_one"],
+      }),
+    }));
   });
 
   it("materializes a reviewed full 2x2 and preserves phase/action/extent identity", () => {
@@ -282,7 +410,7 @@ describe("resolved intervention model v1", () => {
     })).toThrow("evidence is outside canonical record membership");
   });
 
-  it("includes action and reviewed scope identity in the deterministic id", () => {
+  it("keeps the legacy claim-derived id while new durable ids use incidence only", () => {
     const base = {
       occurrence_id: "occurrence:one",
       route_record_id: "route_a",
@@ -298,6 +426,18 @@ describe("resolved intervention model v1", () => {
       resolvedInterventionApplicationIdentity({
         ...base,
         extent: { kind: "bounded_segment", record_ids: ["corridor_one"], description: "ignored identity text" },
+      }),
+    );
+    const durable = resolvedInterventionDurableApplicationIdentity(base);
+    expect(durable).toBe(
+      resolvedInterventionDurableApplicationIdentity({
+        ...base,
+        action: "modify",
+        extent: {
+          kind: "bounded_segment",
+          record_ids: ["corridor_one"],
+          description: "mutable claim",
+        },
       }),
     );
   });

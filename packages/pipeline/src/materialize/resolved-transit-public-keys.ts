@@ -18,7 +18,7 @@ export type PublicKeyKind =
   | "intervention_component"
   | "placement";
 
-export type PublicKeyOperation = {
+export type EstablishPublicKeyOperation = {
   schema_version: 1;
   operation: "establish_public_key";
   operation_id: string;
@@ -31,7 +31,52 @@ export type PublicKeyOperation = {
   proposal_basis: Record<string, string>;
 };
 
-export type PublicKeyProposal = Omit<PublicKeyOperation, "operation_id" | "schema_version" | "operation">;
+export type RedirectPublicKeySubjectOperation = {
+  schema_version: 1;
+  operation: "redirect_public_key_subject";
+  operation_id: string;
+  key_kind: PublicKeyKind;
+  subject_id: string;
+  redirect_subject_id: string;
+  decision_id: string;
+  issued_at: string;
+  rationale: string;
+};
+
+export type SupersedePublicKeyOperation = {
+  schema_version: 1;
+  operation: "supersede_public_key";
+  operation_id: string;
+  key_kind: PublicKeyKind;
+  subject_id: string;
+  prior_public_key: string;
+  public_key: string;
+  decision_id: string;
+  issued_at: string;
+  rationale: string;
+};
+
+export type PublicKeyOperation =
+  | EstablishPublicKeyOperation
+  | SupersedePublicKeyOperation
+  | RedirectPublicKeySubjectOperation;
+
+export type PublicKeyProposal = Omit<
+  EstablishPublicKeyOperation,
+  "operation_id" | "schema_version" | "operation"
+>;
+
+export type PublicKeyRegistryEntry = {
+  key_kind: PublicKeyKind;
+  subject_id: string;
+  registry_state: "live" | "redirect";
+  public_key: string;
+  owner_intervention_id: string | null;
+  redirect_subject_id: string | null;
+  public_key_aliases: string[];
+  operation_ids: string[];
+  establishment: EstablishPublicKeyOperation;
+};
 
 export type PublicKeyMigration = {
   schema_version: 1;
@@ -45,7 +90,7 @@ export type PublicKeyMigration = {
   newly_established_losslessly: number;
   newly_established_from_accepted_review: number;
   requires_review_count: number;
-  proposed_operations: PublicKeyOperation[];
+  proposed_operations: EstablishPublicKeyOperation[];
   requires_review: Array<{ key_kind: PublicKeyKind; subject_id: string; reason: string }>;
   receipt_id: string;
 };
@@ -77,16 +122,387 @@ function slug(value: string): string {
 function operationId(row: PublicKeyProposal): string {
   return `public-key-op:${sha(stableJson(row as unknown as JsonValue)).slice(0, 24)}`;
 }
-function op(row: PublicKeyProposal): PublicKeyOperation {
+export function publicKeyEstablishOperation(
+  row: PublicKeyProposal,
+): EstablishPublicKeyOperation {
   return { schema_version: 1, operation: "establish_public_key", operation_id: operationId(row), ...row };
 }
 function registryDir(root = repoRoot): string {
   return join(root, "data", "resolved-transit-public", "public-key-operations", "v1");
 }
+
+const establishFields = new Set([
+  "decision_id",
+  "establishment_method",
+  "key_kind",
+  "operation",
+  "operation_id",
+  "owner_intervention_id",
+  "proposal_basis",
+  "public_key",
+  "schema_version",
+  "subject_id",
+]);
+const redirectFields = new Set([
+  "decision_id",
+  "issued_at",
+  "key_kind",
+  "operation",
+  "operation_id",
+  "rationale",
+  "redirect_subject_id",
+  "schema_version",
+  "subject_id",
+]);
+const supersedeKeyFields = new Set([
+  "decision_id",
+  "issued_at",
+  "key_kind",
+  "operation",
+  "operation_id",
+  "prior_public_key",
+  "public_key",
+  "rationale",
+  "schema_version",
+  "subject_id",
+]);
+const keyKinds = new Set<PublicKeyKind>([
+  "route",
+  "treatment_family",
+  "source",
+  "intervention_component",
+  "placement",
+]);
+
+function strictObject(value: unknown, path: string): Record<string, unknown> {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    throw new Error(`${path} must be an object`);
+  }
+  return value as Record<string, unknown>;
+}
+
+function strictFields(
+  value: Record<string, unknown>,
+  expected: ReadonlySet<string>,
+  path: string,
+): void {
+  const extras = Object.keys(value).filter((field) => !expected.has(field)).sort();
+  const missing = [...expected].filter((field) => !(field in value)).sort();
+  if (extras.length > 0 || missing.length > 0) {
+    throw new Error(
+      `${path}: exact fields required; unknown=${extras.join(",")}; missing=${missing.join(",")}`,
+    );
+  }
+}
+
+function strictString(value: unknown, path: string): string {
+  if (typeof value !== "string" || !value.trim()) {
+    throw new Error(`${path} must be a non-empty string`);
+  }
+  return value.trim();
+}
+
+function strictLiteralString(value: unknown, path: string): string {
+  if (typeof value !== "string") throw new Error(`${path} must be a string`);
+  return value;
+}
+
+function strictKeyKind(value: unknown, path: string): PublicKeyKind {
+  const result = strictString(value, path);
+  if (!keyKinds.has(result as PublicKeyKind)) {
+    throw new Error(`${path} is unsupported: ${result}`);
+  }
+  return result as PublicKeyKind;
+}
+
+function redirectOperationId(
+  row: Omit<RedirectPublicKeySubjectOperation, "operation_id" | "schema_version" | "operation">,
+): string {
+  return `public-key-op:${sha(stableJson(row as unknown as JsonValue)).slice(0, 24)}`;
+}
+
+export function publicKeyRedirectOperation(
+  row: Omit<RedirectPublicKeySubjectOperation, "operation_id" | "schema_version" | "operation">,
+): RedirectPublicKeySubjectOperation {
+  return {
+    schema_version: 1,
+    operation: "redirect_public_key_subject",
+    operation_id: redirectOperationId(row),
+    ...row,
+  };
+}
+
+function supersedeKeyOperationId(
+  row: Omit<SupersedePublicKeyOperation, "operation_id" | "schema_version" | "operation">,
+): string {
+  return `public-key-op:${sha(stableJson(row as unknown as JsonValue)).slice(0, 24)}`;
+}
+
+export function publicKeySupersedeOperation(
+  row: Omit<SupersedePublicKeyOperation, "operation_id" | "schema_version" | "operation">,
+): SupersedePublicKeyOperation {
+  return {
+    schema_version: 1,
+    operation: "supersede_public_key",
+    operation_id: supersedeKeyOperationId(row),
+    ...row,
+  };
+}
+
+export function parsePublicKeyOperation(
+  value: unknown,
+  path = "public key operation",
+): PublicKeyOperation {
+  const input = strictObject(value, path);
+  if (input.operation === "establish_public_key") {
+    strictFields(input, establishFields, path);
+    if (input.schema_version !== 1) throw new Error(`${path}.schema_version must be 1`);
+    const basisInput = strictObject(input.proposal_basis, `${path}.proposal_basis`);
+    const proposalBasis = Object.fromEntries(
+      Object.entries(basisInput).sort(([left], [right]) => left.localeCompare(right))
+        .map(([key, entry]) => [
+          key,
+          strictLiteralString(entry, `${path}.proposal_basis.${key}`),
+        ]),
+    );
+    const method = strictString(input.establishment_method, `${path}.establishment_method`);
+    if (method !== "lossless_migration" && method !== "accepted_review") {
+      throw new Error(`${path}.establishment_method is unsupported: ${method}`);
+    }
+    const decisionId = input.decision_id === null
+      ? null
+      : strictString(input.decision_id, `${path}.decision_id`);
+    if (
+      (method === "lossless_migration" && decisionId !== null) ||
+      (method === "accepted_review" && decisionId === null)
+    ) {
+      throw new Error(`${path}: establishment method and decision_id disagree`);
+    }
+    const proposal: PublicKeyProposal = {
+      key_kind: strictKeyKind(input.key_kind, `${path}.key_kind`),
+      subject_id: strictString(input.subject_id, `${path}.subject_id`),
+      owner_intervention_id: input.owner_intervention_id === null
+        ? null
+        : strictString(input.owner_intervention_id, `${path}.owner_intervention_id`),
+      public_key: strictString(input.public_key, `${path}.public_key`),
+      establishment_method: method,
+      decision_id: decisionId,
+      proposal_basis: proposalBasis,
+    };
+    assertSlug(proposal.public_key, `${path}.public_key`);
+    const operation: EstablishPublicKeyOperation = {
+      schema_version: 1,
+      operation: "establish_public_key",
+      operation_id: strictString(input.operation_id, `${path}.operation_id`),
+      ...proposal,
+    };
+    if (operation.operation_id !== operationId(proposal)) {
+      throw new Error(`${path}.operation_id is stale`);
+    }
+    return operation;
+  }
+  if (input.operation === "supersede_public_key") {
+    strictFields(input, supersedeKeyFields, path);
+    if (input.schema_version !== 1) throw new Error(`${path}.schema_version must be 1`);
+    const withoutId = {
+      key_kind: strictKeyKind(input.key_kind, `${path}.key_kind`),
+      subject_id: strictString(input.subject_id, `${path}.subject_id`),
+      prior_public_key: strictString(
+        input.prior_public_key,
+        `${path}.prior_public_key`,
+      ),
+      public_key: strictString(input.public_key, `${path}.public_key`),
+      decision_id: strictString(input.decision_id, `${path}.decision_id`),
+      issued_at: strictString(input.issued_at, `${path}.issued_at`),
+      rationale: strictString(input.rationale, `${path}.rationale`),
+    };
+    assertSlug(withoutId.prior_public_key, `${path}.prior_public_key`);
+    assertSlug(withoutId.public_key, `${path}.public_key`);
+    if (withoutId.prior_public_key === withoutId.public_key) {
+      throw new Error(`${path}: superseded public keys must differ`);
+    }
+    const operation: SupersedePublicKeyOperation = {
+      schema_version: 1,
+      operation: "supersede_public_key",
+      operation_id: strictString(input.operation_id, `${path}.operation_id`),
+      ...withoutId,
+    };
+    if (operation.operation_id !== supersedeKeyOperationId(withoutId)) {
+      throw new Error(`${path}.operation_id is stale`);
+    }
+    return operation;
+  }
+  if (input.operation === "redirect_public_key_subject") {
+    strictFields(input, redirectFields, path);
+    if (input.schema_version !== 1) throw new Error(`${path}.schema_version must be 1`);
+    const withoutId = {
+      key_kind: strictKeyKind(input.key_kind, `${path}.key_kind`),
+      subject_id: strictString(input.subject_id, `${path}.subject_id`),
+      redirect_subject_id: strictString(
+        input.redirect_subject_id,
+        `${path}.redirect_subject_id`,
+      ),
+      decision_id: strictString(input.decision_id, `${path}.decision_id`),
+      issued_at: strictString(input.issued_at, `${path}.issued_at`),
+      rationale: strictString(input.rationale, `${path}.rationale`),
+    };
+    const operation: RedirectPublicKeySubjectOperation = {
+      schema_version: 1,
+      operation: "redirect_public_key_subject",
+      operation_id: strictString(input.operation_id, `${path}.operation_id`),
+      ...withoutId,
+    };
+    if (operation.operation_id !== redirectOperationId(withoutId)) {
+      throw new Error(`${path}.operation_id is stale`);
+    }
+    return operation;
+  }
+  throw new Error(`${path}.operation is unsupported: ${String(input.operation)}`);
+}
+
 export function readPublicKeyOperations(root = repoRoot): PublicKeyOperation[] {
   const path = join(registryDir(root), "operations.jsonl");
   if (!existsSync(path)) return [];
-  return jsonl(path) as PublicKeyOperation[];
+  return jsonl(path).map((row, index) =>
+    parsePublicKeyOperation(row, `${path}:${index + 1}`)
+  );
+}
+
+function publicKeyOwnership(input: {
+  key_kind: PublicKeyKind;
+  owner_intervention_id: string | null;
+  public_key: string;
+}): string {
+  return input.key_kind === "intervention_component"
+    ? `${input.key_kind}|${input.owner_intervention_id}|${input.public_key}`
+    : `${input.key_kind}|${input.public_key}`;
+}
+
+export function replayPublicKeyOperations(
+  values: readonly PublicKeyOperation[],
+): PublicKeyRegistryEntry[] {
+  const operations = values.map((value, index) =>
+    parsePublicKeyOperation(value, `public key operation[${index}]`)
+  );
+  if (new Set(operations.map((row) => row.operation_id)).size !== operations.length) {
+    throw new Error("duplicate public key operation_id");
+  }
+  const registry = new Map<string, PublicKeyRegistryEntry>();
+  const ownership = new Map<string, string>();
+  for (const operation of operations) {
+    const subjectKey = `${operation.key_kind}|${operation.subject_id}`;
+    if (operation.operation === "establish_public_key") {
+      if (registry.has(subjectKey)) {
+        throw new Error(`${operation.operation_id}: duplicate public key subject owner`);
+      }
+      const entry: PublicKeyRegistryEntry = {
+        key_kind: operation.key_kind,
+        subject_id: operation.subject_id,
+        registry_state: "live",
+        public_key: operation.public_key,
+        owner_intervention_id: operation.owner_intervention_id,
+        redirect_subject_id: null,
+        public_key_aliases: [],
+        operation_ids: [operation.operation_id],
+        establishment: operation,
+      };
+      const ownershipKey = publicKeyOwnership(entry);
+      const prior = ownership.get(ownershipKey);
+      if (prior) {
+        throw new Error(
+          `${operation.operation_id}: duplicate public key owner conflicts with ${prior}`,
+        );
+      }
+      ownership.set(ownershipKey, subjectKey);
+      registry.set(subjectKey, entry);
+      continue;
+    }
+
+    const source = registry.get(subjectKey);
+    if (operation.operation === "supersede_public_key") {
+      if (!source || source.registry_state !== "live") {
+        throw new Error(`${operation.operation_id}: key supersession references non-live subject`);
+      }
+      if (source.public_key !== operation.prior_public_key) {
+        throw new Error(`${operation.operation_id}: stale prior public key`);
+      }
+      const newOwnershipKey = publicKeyOwnership({
+        ...source,
+        public_key: operation.public_key,
+      });
+      const prior = ownership.get(newOwnershipKey);
+      if (prior && prior !== subjectKey) {
+        throw new Error(
+          `${operation.operation_id}: duplicate public key owner conflicts with ${prior}`,
+        );
+      }
+      source.public_key_aliases = [...new Set([
+        ...source.public_key_aliases,
+        source.public_key,
+      ])].sort();
+      source.public_key = operation.public_key;
+      source.operation_ids.push(operation.operation_id);
+      ownership.set(newOwnershipKey, subjectKey);
+      continue;
+    }
+
+    const targetKey = `${operation.key_kind}|${operation.redirect_subject_id}`;
+    const target = registry.get(targetKey);
+    if (!source || !target) {
+      throw new Error(`${operation.operation_id}: redirect references missing subject`);
+    }
+    if (source.registry_state !== "live") {
+      throw new Error(`${operation.operation_id}: cyclic or duplicate redirect source`);
+    }
+    if (target.registry_state !== "live") {
+      throw new Error(`${operation.operation_id}: cyclic redirect target`);
+    }
+    if (
+      operation.key_kind === "intervention_component" &&
+      source.owner_intervention_id !== target.owner_intervention_id
+    ) {
+      throw new Error(`${operation.operation_id}: component redirect changes owner`);
+    }
+    source.registry_state = "redirect";
+    source.redirect_subject_id = target.subject_id;
+    source.operation_ids.push(operation.operation_id);
+    target.public_key_aliases = [...new Set([
+      ...target.public_key_aliases,
+      ...source.public_key_aliases,
+      source.public_key,
+    ])].filter((key) => key !== target.public_key).sort();
+    for (const alias of [source.public_key, ...source.public_key_aliases]) {
+      ownership.set(publicKeyOwnership({
+        ...target,
+        public_key: alias,
+      }), targetKey);
+    }
+    target.operation_ids.push(operation.operation_id);
+  }
+  return [...registry.values()].sort((left, right) =>
+    `${left.key_kind}|${left.subject_id}`.localeCompare(
+      `${right.key_kind}|${right.subject_id}`,
+    )
+  );
+}
+
+export function resolvePublicKeySubject(
+  registry: readonly PublicKeyRegistryEntry[],
+  keyKind: PublicKeyKind,
+  subjectId: string,
+): PublicKeyRegistryEntry | null {
+  const bySubject = new Map(
+    registry.map((entry) => [`${entry.key_kind}|${entry.subject_id}`, entry]),
+  );
+  let entry = bySubject.get(`${keyKind}|${subjectId}`);
+  const seen = new Set<string>();
+  while (entry?.registry_state === "redirect") {
+    const key = `${entry.key_kind}|${entry.subject_id}`;
+    if (seen.has(key)) throw new Error(`cyclic public key redirect at ${key}`);
+    seen.add(key);
+    entry = bySubject.get(`${keyKind}|${entry.redirect_subject_id}`);
+  }
+  return entry ?? null;
 }
 function registryHead(operations: readonly PublicKeyOperation[]): string {
   return sha(operations.map((row) => stableJson(row as unknown as JsonValue)).join("\n"));
@@ -207,31 +623,63 @@ function proposals(root: string): { proposals: PublicKeyProposal[]; fingerprint:
   };
 }
 
-export function preparePublicKeyMigration(input: {
-  rootDir?: string;
+export function reconcilePublicKeyMigration(input: {
+  existing_operations: readonly PublicKeyOperation[];
+  proposals: readonly PublicKeyProposal[];
+  input_fingerprint: string;
   asOfDate: string;
   generatorCommit: string;
 }): PublicKeyMigration {
-  const root = input.rootDir ?? repoRoot;
-  const existing = readPublicKeyOperations(root);
-  const existingBySubject = new Map(existing.map((row) => [`${row.key_kind}|${row.subject_id}`, row]));
-  const proposed = proposals(root);
-  for (const proposal of proposed.proposals) {
+  const existing = [...input.existing_operations];
+  const registry = replayPublicKeyOperations(existing);
+  const existingBySubject = new Map(
+    registry.map((row) => [`${row.key_kind}|${row.subject_id}`, row]),
+  );
+  const eligibleSubjects = new Set(
+    input.proposals.map((row) => `${row.key_kind}|${row.subject_id}`),
+  );
+  const orphanedLiveSubjects = registry
+    .filter((entry) =>
+      entry.registry_state === "live" &&
+      !eligibleSubjects.has(`${entry.key_kind}|${entry.subject_id}`)
+    );
+  if (orphanedLiveSubjects.length > 0) {
+    throw new Error(
+      "public-key registry has live subjects absent the current eligible set; " +
+      "append an accepted subject redirect before changing the subject set: " +
+      orphanedLiveSubjects.map((entry) =>
+        `${entry.key_kind}|${entry.subject_id}`
+      ).join(", "),
+    );
+  }
+  for (const proposal of input.proposals) {
     const prior = existingBySubject.get(`${proposal.key_kind}|${proposal.subject_id}`);
     if (!prior) continue;
-    if (prior.public_key !== proposal.public_key ||
-        prior.owner_intervention_id !== proposal.owner_intervention_id ||
-        stableJson(prior.proposal_basis as unknown as JsonValue) !==
-          stableJson(proposal.proposal_basis as unknown as JsonValue) ||
-        prior.establishment_method !== proposal.establishment_method) {
-      throw new Error(`public-key operation no longer reproduces losslessly: ${prior.operation_id}`);
+    if (prior.registry_state !== "live") {
+      throw new Error(
+        `eligible public-key subject is redirected: ${proposal.key_kind}|${proposal.subject_id}`,
+      );
+    }
+    if (prior.owner_intervention_id !== proposal.owner_intervention_id) {
+      throw new Error(
+        `public-key subject owner changed without an accepted redirect: ` +
+        `${proposal.key_kind}|${proposal.subject_id}`,
+      );
     }
   }
-  const pending = proposed.proposals.filter((row) => !existingBySubject.has(`${row.key_kind}|${row.subject_id}`));
-  const operations = pending.map(op).sort((a, b) => a.operation_id.localeCompare(b.operation_id));
+  const pending = input.proposals.filter((row) =>
+    !existingBySubject.has(`${row.key_kind}|${row.subject_id}`)
+  );
+  const operations = pending.map(publicKeyEstablishOperation)
+    .sort((a, b) => a.operation_id.localeCompare(b.operation_id));
   const review: PublicKeyMigration["requires_review"] = [];
   const ownership = new Map<string, string>();
-  for (const row of [...existing, ...operations]) {
+  for (const row of [
+    ...registry.filter((entry) => entry.registry_state === "live").map((entry) =>
+      entry.establishment
+    ),
+    ...operations,
+  ]) {
     const ownershipKey = row.key_kind === "intervention_component"
       ? `${row.key_kind}|${row.owner_intervention_id}|${row.public_key}`
       : `${row.key_kind}|${row.public_key}`;
@@ -246,9 +694,10 @@ export function preparePublicKeyMigration(input: {
     generator_commit: input.generatorCommit,
     as_of_date: input.asOfDate,
     registry_head: registryHead(existing),
-    input_fingerprint: proposed.fingerprint,
-    eligible_subject_count: proposed.proposals.length,
-    existing_live_key_count: existing.length,
+    input_fingerprint: input.input_fingerprint,
+    eligible_subject_count: input.proposals.length,
+    existing_live_key_count:
+      registry.filter((entry) => entry.registry_state === "live").length,
     newly_established_losslessly: operations.length,
     newly_established_from_accepted_review: 0,
     requires_review_count: review.length,
@@ -259,6 +708,22 @@ export function preparePublicKeyMigration(input: {
     ...withoutReceipt,
     receipt_id: `public-key-migration:${sha(stableJson(withoutReceipt as unknown as JsonValue))}`,
   };
+}
+
+export function preparePublicKeyMigration(input: {
+  rootDir?: string;
+  asOfDate: string;
+  generatorCommit: string;
+}): PublicKeyMigration {
+  const root = input.rootDir ?? repoRoot;
+  const proposed = proposals(root);
+  return reconcilePublicKeyMigration({
+    existing_operations: readPublicKeyOperations(root),
+    proposals: proposed.proposals,
+    input_fingerprint: proposed.fingerprint,
+    asOfDate: input.asOfDate,
+    generatorCommit: input.generatorCommit,
+  });
 }
 
 function assertOwnedOutput(output: string, ownedRoot: string): void {
@@ -331,6 +796,7 @@ export function checkPublicKeyRegistry(asOfDate: string, root = repoRoot): {
   eligible: number; live: number; head: string;
 } {
   const operations = readPublicKeyOperations(root);
+  const registry = replayPublicKeyOperations(operations);
   const migration = preparePublicKeyMigration({
     rootDir: root, asOfDate, generatorCommit: gitCommit(root),
   });
@@ -341,8 +807,13 @@ export function checkPublicKeyRegistry(asOfDate: string, root = repoRoot): {
     head: string; operation_count: number;
   };
   if (manifest.head !== registryHead(operations) || manifest.operation_count !== operations.length ||
-      operations.length !== migration.eligible_subject_count) {
+      registry.filter((entry) => entry.registry_state === "live").length !==
+        migration.eligible_subject_count) {
     throw new Error("public-key registry manifest/eligible subject drift");
   }
-  return { eligible: migration.eligible_subject_count, live: operations.length, head: manifest.head };
+  return {
+    eligible: migration.eligible_subject_count,
+    live: registry.filter((entry) => entry.registry_state === "live").length,
+    head: manifest.head,
+  };
 }

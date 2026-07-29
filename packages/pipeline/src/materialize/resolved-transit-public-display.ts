@@ -5,7 +5,10 @@ import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
 import { parsePublicSource } from "../consumer/public-contract.js";
-import { readPublicKeyOperations } from "./resolved-transit-public-keys.js";
+import {
+  readPublicKeyOperations,
+  replayPublicKeyOperations,
+} from "./resolved-transit-public-keys.js";
 import {
   summarizePublicDisplayReconciliation,
   type PublicDisplayReconciliationRow,
@@ -76,8 +79,8 @@ function treatmentName(row: Record<string, any>): string {
   return display;
 }
 function keyMap(root: string, kind: string): Map<string, string> {
-  return new Map(readPublicKeyOperations(root)
-    .filter((row) => row.key_kind === kind)
+  return new Map(replayPublicKeyOperations(readPublicKeyOperations(root))
+    .filter((row) => row.key_kind === kind && row.registry_state === "live")
     .map((row) => [row.subject_id, row.public_key]));
 }
 

@@ -48,6 +48,35 @@ Every authority-bearing field participates in
 `membership_fingerprint`. A semantic member change invalidates review;
 ordering-only changes canonicalize without invalidation.
 
+## Immutable migration roots and current resolution heads
+
+The 130 files under
+`data/operational-occurrence-review/accepted-v2/decisions/` are immutable
+v1→v2 migration roots. They remain byte-for-byte inputs to
+`occurrence-identity-migrate --check`; current curation never edits, deletes,
+or adds a replacement beside them.
+
+Current accepted resolutions are separate append-only decision-v3 files under
+`data/operational-occurrence-review/accepted-current/decisions/`. A v3
+establishment has no predecessor and can add a newly reviewed occurrence
+without changing the migration corpus. A v3 supersession names exactly one
+`supersedes_decision_id` and its exact predecessor `membership_fingerprint`;
+both operations carry the complete current review. Replay requires a
+superseded predecessor to be the one current head for that occurrence.
+Missing predecessors, stale fingerprints, cycles, branches with conflicting
+heads, duplicate application owners, and changed route × treatment × phase
+incidence fail closed.
+
+Application identity is durable across this replay. Existing migrated
+`application:<24-hex>` values are retained as founding incidence identities;
+new establishments derive application IDs only from occurrence × route ×
+treatment × phase incidence;
+action and extent are current reviewed claims, not identity inputs. A
+refinement from `unknown` action/extent to `add`/`bounded_segment` therefore
+changes the review fingerprint and resolved claim while preserving consumer
+lookup. A true incidence replacement requires explicit application lineage;
+it is not represented by silently recomputing an ID.
+
 The Plan 045 migration preserves all 135 v1 identity IDs. It produces 130
 lossless exact reviews and five operator-visible unresolved packets: four
 existing route-binding projection retirements and one two-phase application
@@ -64,3 +93,6 @@ Reproduce the migration:
 ```bash
 bun packages/cli/src/cli.ts occurrence-identity-migrate --check
 ```
+
+The migration check verifies only historical outputs. Resolved-intervention
+materialization replays those roots plus the separate current decisions.

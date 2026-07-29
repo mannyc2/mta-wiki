@@ -4,6 +4,23 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-29
+
+### Evolvable occurrence resolution and public-key continuity
+
+- Separated immutable v1→v2 occurrence-review migration roots from append-only
+  current decision-v3 establishments and supersessions with strict
+  predecessor, fingerprint, single-head, and cycle checks. Existing
+  application IDs now remain durable across reviewed action/extent changes;
+  new applications derive identity only from exact route × treatment × phase
+  incidence.
+- Public-key replay now freezes establishment against durable subjects rather
+  than re-demanding equality with mutable current claims. Accepted
+  same-subject key supersessions and subject redirects retain aliases/history
+  and reject stale predecessors, cycles, or duplicate ownership. This changes
+  no canonical observation, release byte, `LATEST`, external publication, or
+  downstream pin.
+
 ## 2026-07-28
 
 ### Reproducible manifest-v7 release envelope

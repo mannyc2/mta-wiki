@@ -2,6 +2,10 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { assertPublicSafe, PUBLIC_PACK_CONTRACT_ID } from "../consumer/public-contract.js";
+import {
+  parsePublicKeyOperation,
+  replayPublicKeyOperations,
+} from "./resolved-transit-public-keys.js";
 
 export type ResolvedTransitPublicPack = {
   manifest: {
@@ -45,15 +49,20 @@ export function buildResolvedTransitPublicPack(
   const familyDisplay = jsonl(join(display, "treatment_families.jsonl"));
   const sourceDisplay = jsonl(join(display, "sources.jsonl"));
   const publicKeyRows = jsonl(join(display, "public_keys.jsonl"));
-  const componentKeys = new Map(publicKeyRows.filter((row) => row.key_kind === "intervention_component")
+  const liveKeyRows = replayPublicKeyOperations(
+    publicKeyRows.map((row, index) =>
+      parsePublicKeyOperation(row, `public display key operation[${index}]`)
+    ),
+  ).filter((row) => row.registry_state === "live");
+  const componentKeys = new Map(liveKeyRows.filter((row) => row.key_kind === "intervention_component")
     .map((row) => [row.subject_id, row.public_key]));
-  const placementKeys = new Map(publicKeyRows.filter((row) => row.key_kind === "placement")
+  const placementKeys = new Map(liveKeyRows.filter((row) => row.key_kind === "placement")
     .map((row) => [row.subject_id, row.public_key]));
-  const routeKeys = new Map(publicKeyRows.filter((row) => row.key_kind === "route")
+  const routeKeys = new Map(liveKeyRows.filter((row) => row.key_kind === "route")
     .map((row) => [row.subject_id, row.public_key]));
-  const familyKeys = new Map(publicKeyRows.filter((row) => row.key_kind === "treatment_family")
+  const familyKeys = new Map(liveKeyRows.filter((row) => row.key_kind === "treatment_family")
     .map((row) => [row.subject_id, row.public_key]));
-  const sourceKeys = new Map(publicKeyRows.filter((row) => row.key_kind === "source")
+  const sourceKeys = new Map(liveKeyRows.filter((row) => row.key_kind === "source")
     .map((row) => [row.subject_id, row.public_key]));
   const appsByEpisode = new Map<string, Array<Record<string, any>>>();
   for (const row of applications) {

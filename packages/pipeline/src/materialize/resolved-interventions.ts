@@ -13,10 +13,12 @@ import {
   type OperationalOccurrenceIdentityRegistryV2Entry,
 } from "./operational-occurrence-identity-operations.js";
 import {
-  loadOperationalOccurrenceAcceptedDecisionsV2,
-  type OperationalOccurrenceAcceptedDecisionV2,
   type OperationalOccurrenceReviewTreatment,
 } from "./operational-occurrence-review.js";
+import {
+  loadOperationalOccurrenceCurrentReviewDecisions,
+  type OperationalOccurrenceCurrentReviewDecision,
+} from "./operational-occurrence-resolution.js";
 import type { OperationalOccurrenceEvidenceBinding } from "./operational-occurrences.js";
 import { readCanonicalRecords } from "./canonical-read.js";
 import {
@@ -123,7 +125,7 @@ export type BuildResolvedInterventionsInput = {
   canonical_records: readonly MtaCanonicalRecord[];
   candidate_ledger: readonly OperationalEpisodeCandidateLedgerRow[];
   identity_registry: readonly OperationalOccurrenceIdentityRegistryV2Entry[];
-  review_decisions: readonly OperationalOccurrenceAcceptedDecisionV2[];
+  review_decisions: readonly OperationalOccurrenceCurrentReviewDecision[];
   legacy_member_extent_rows?: ReadonlyArray<{
     extent_id: string;
     occurrence_id: string;
@@ -543,7 +545,9 @@ export function buildResolvedInterventions(
         }
         evidenceMatchesCanonical(binding, recordsById, `review ${review.decision_id} application[${index}].evidence[${bindingIndex}]`);
       }
-      const extent = extentFor(reviewed.physical_scope_record_ids, recordsById);
+      const extent = "extent" in reviewed
+        ? reviewed.extent
+        : extentFor(reviewed.physical_scope_record_ids, recordsById);
       const withoutId = {
         schema_version: 1 as const,
         occurrence_id: occurrenceId,
@@ -558,13 +562,16 @@ export function buildResolvedInterventions(
         extent,
         evidence_bindings: sortEvidenceBindings(reviewed.evidence_bindings),
         review_decision_id: review.decision_id,
-        resolution_method: review.review_scope === "lossless_v1_migration"
+        resolution_method: review.schema_version === 2 &&
+          review.review_scope === "lossless_v1_migration"
           ? "lossless_v1_migration" as const
           : "accepted_review" as const,
       };
       return parseResolvedInterventionApplication({
         ...withoutId,
-        application_id: resolvedInterventionApplicationIdentity(withoutId),
+        application_id: "application_id" in reviewed
+          ? reviewed.application_id
+          : resolvedInterventionApplicationIdentity(withoutId),
       }, `review ${review.decision_id} application[${index}]`);
     });
     if (episodeApplications.length === 0) throw new Error(`episode ${occurrenceId} has no applications`);
@@ -602,7 +609,8 @@ export function buildResolvedInterventions(
       application_ids: applicationIds,
       review_decision_id: review.decision_id,
       review_membership_fingerprint: review.membership_fingerprint,
-      resolution_method: review.review_scope === "lossless_v1_migration"
+      resolution_method: review.schema_version === 2 &&
+        review.review_scope === "lossless_v1_migration"
         ? "lossless_v1_migration"
         : "accepted_review",
       evidence_bindings: sortEvidenceBindings(review.evidence_bindings),
@@ -869,9 +877,7 @@ export function buildProductionResolvedInterventions(rootDir = repoRoot): Resolv
     canonical_records: readCanonicalRecords(),
     candidate_ledger,
     identity_registry: loadOperationalOccurrenceIdentityRegistryV2(rootDir),
-    review_decisions: loadOperationalOccurrenceAcceptedDecisionsV2(
-      join(rootDir, "data", "operational-occurrence-review", "accepted-v2", "decisions"),
-    ),
+    review_decisions: loadOperationalOccurrenceCurrentReviewDecisions(rootDir),
     legacy_member_extent_rows: legacyRows,
   });
 }

@@ -33,7 +33,10 @@ const RELEASE_DIR = "data/exports/releases/v1-rc28";
 const OPERATIONS_DIR = "data/operational-occurrence-identities/operations";
 const REGISTRY_V2_PATH =
   "data/operational-occurrence-identities/registry-v2.jsonl";
-const ACCEPTED_V2_DIR =
+// Historical v1→v2 output. Current review refinements are append-only inputs
+// under accepted-current/decisions and are deliberately outside this
+// migration's managed-file set.
+const HISTORICAL_ACCEPTED_V2_DIR =
   "data/operational-occurrence-review/accepted-v2/decisions";
 const MIGRATION_DIR =
   "data/operational-occurrence-review/migrations/v1-to-v2";
@@ -107,7 +110,7 @@ function expectedMigrationFiles(): Map<string, string> {
     if (!legacy) throw new Error(`release occurrence ${row.occurrence_id} has no legacy review`);
     try {
       const decision = migrateOperationalOccurrenceReviewDecisionV2(row, legacy);
-      const outputPath = `${ACCEPTED_V2_DIR}/${decision.decision_id}.json`;
+      const outputPath = `${HISTORICAL_ACCEPTED_V2_DIR}/${decision.decision_id}.json`;
       files.set(outputPath, json(decision as unknown as JsonValue));
       migratedIds.push(row.occurrence_id);
       const originalPath = originalDecisionPaths.get(decision.decision_id);
@@ -245,7 +248,7 @@ function expectedMigrationFiles(): Map<string, string> {
 function managedFiles(): string[] {
   const roots = [
     OPERATIONS_DIR,
-    ACCEPTED_V2_DIR,
+    HISTORICAL_ACCEPTED_V2_DIR,
     MIGRATION_DIR,
   ];
   const result = [REGISTRY_V2_PATH].filter((path) => existsSync(join(repoRoot, path)));

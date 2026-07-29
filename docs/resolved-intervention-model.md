@@ -22,14 +22,16 @@ identities.
 An application is the authority-bearing incidence:
 
 ```text
-occurrence × route × treatment × phase × action × reviewed extent identity
+occurrence × route × treatment × phase
 ```
 
-Its deterministic id includes those fields, `extent.kind`, and sorted extent
-record ids. Description text and evidence ordering are not identity inputs.
-Evidence from repeated observations is de-duplicated and sorted. A partial
-two-route/two-treatment review can authorize `A×X` and `B×Y` without ever
-creating `A×Y` or `B×X`.
+The durable application id identifies that reviewed incidence. Existing
+Plan 047 IDs remain their immutable founding IDs; future founding IDs use only
+the incidence fields above. Action and reviewed extent are supersedable
+claims, not application-identity inputs. Description text and evidence
+ordering are also not identity inputs. Evidence from repeated observations is
+de-duplicated and sorted. A partial two-route/two-treatment review can
+authorize `A×X` and `B×Y` without ever creating `A×Y` or `B×X`.
 
 Episode route, GTFS route, treatment, family, phase, physical-scope, and
 application-id arrays are convenience sets derived from applications. They
@@ -42,12 +44,15 @@ The operator build is bound to:
 
 - tracked canonical JSONL and exact canonical evidence;
 - occurrence registry-v2 operation replay;
-- accepted review-v2 decisions and membership fingerprints;
+- immutable accepted review-v2 migration roots plus append-only current
+  decision-v3 supersession replay and membership fingerprints;
 - the closed candidate ledger.
 
 Any membership, route identity, treatment, phase, scope, evidence, or frontier
 fingerprint drift invalidates the build. Canonical records must remain
 `source_stated`, non-quarantined, and type-correct at the build boundary.
+Refining action or extent requires a new current decision and a regenerated
+frontier fingerprint, but it does not change the durable application id.
 
 ## Extent and legacy study companions
 

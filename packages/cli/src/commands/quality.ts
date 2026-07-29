@@ -24,8 +24,8 @@ import {
   loadOperationalOccurrenceIdentityRegistryV2,
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-identity-operations";
 import {
-  loadOperationalOccurrenceAcceptedDecisionsV2,
-} from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
+  loadOperationalOccurrenceCurrentReviewDecisions,
+} from "@mta-wiki/pipeline/materialize/operational-occurrence-resolution";
 import { writeBusLaneIdentityArtifacts } from "@mta-wiki/pipeline/quality/bus-lane-identity";
 import { writeMemberExtentLedgerArtifacts } from "@mta-wiki/pipeline/quality/member-extent-ledger";
 import { runStudyFrontierPreflight } from "@mta-wiki/pipeline/quality/study-frontier-preflight";
@@ -162,7 +162,7 @@ const operationalEpisodeFrontier: CommandHandler = () => {
       join(repoRoot, "data", "operational-episode-resolution", "decisions", "index.json"),
     ),
     identity_registry: loadOperationalOccurrenceIdentityRegistryV2(repoRoot),
-    review_decisions: loadOperationalOccurrenceAcceptedDecisionsV2(),
+    review_decisions: loadOperationalOccurrenceCurrentReviewDecisions(),
     completeness_profile: profile,
   });
   const checkDir = optionValue(process.argv, "--check");

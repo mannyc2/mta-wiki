@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "contract_id": "resolved-transit-completion-baseline-v1",
+  "captured_at": "2026-07-29",
+  "base": {
+    "ref": "codex/050-resolved-release-envelope",
+    "commit": "1f10e6411a0b5c0b28c4e44ffc011e11d50c1998",
+    "tree": "74097135fed272b2bc68d43701e237bec2d4be40"
+  },
+  "verification_candidate": {
+    "release_id": "resolved-pack-v1-verification-candidate",
+    "as_of_date": "2026-07-27",
+    "manifest_version": 7,
+    "manifest_sha256": "f367de6c376058501442257850cbacc1eb6007b0c248b667668a774ab9217ef1",
+    "generator_commit": "86137c9959368a26dcd8b1b5875b229766b56d08",
+    "documentation_commit": "083425e5dc7a3ef883d391eb5cc9e0df101b3d59",
+    "verification": "verified",
+    "publication_eligible": true,
+    "eligibility_profile": "producer_contract_verification_only",
+    "resolved_public_completeness": "partial",
+    "authorizes_transport_or_promotion": false,
+    "external_publication": "not_performed",
+    "downstream_pin": "not_performed",
+    "latest_changed": false,
+    "latest_value": "v1-rc26"
+  },
+  "frontiers": {
+    "episode": {
+      "observation_count": 1366,
+      "candidate_count": 766,
+      "published_count": 130,
+      "pending_review_count": 636,
+      "pending_segmentation_count": 629,
+      "unresolved_active_identity_count": 5,
+      "invalid_count": 0,
+      "completeness_profile": "partial",
+      "cohort_fingerprint": "94dfd16c1c57362b220fb8ce53b8325e6ca166c1e697d9001da8b66f6483e373"
+    },
+    "applications": {
+      "episode_count": 130,
+      "application_count": 306,
+      "unknown_action_count": 306,
+      "unknown_extent_count": 306
+    },
+    "placement": {
+      "examined_observation_count": 32867,
+      "candidate_count": 1756,
+      "pending_review_count": 1756,
+      "placement_count": 0,
+      "transition_count": 0,
+      "frontier_fingerprint": "783db7ef2e8ec71e8c6b43e6765a50eea4fb387811ef0140b0b6407ede9e5cb9"
+    },
+    "lifecycle": {
+      "assertion_count": 0,
+      "state_count": 0,
+      "confirmed_current_placement_count": 0
+    },
+    "public_display": {
+      "episode_count": 130,
+      "component_count": 306,
+      "route_count": 144,
+      "placement_count": 0
+    },
+    "public_key_registry": {
+      "operation_count": 473,
+      "head": "00cfaf46b58bc5edd818106a6bb7cdb9a18e918be59b487626ddc3432dfd2296"
+    }
+  },
+  "tracked_input_sha256": {
+    "data/quality/releases/resolved-pack-v1-verification-handoff.json": "66ddcf9f06e9a2fa282a45421cdcd41e1083334312db9f4c7e0bd178510c705c",
+    "data/quality/operational-episode-frontier/v1/summary.json": "4baf594cea14431b2f2c125c19c554755ecf167be6b81f399152873a5cd35545",
+    "data/resolved-transit/operator/v1/interventions/summary.json": "aeb6df3cb30058e1c52fc8c6c4f4f88162fc256ef8e60f4ebb7d0d197c1f246a",
+    "data/resolved-transit/operator/v1/placements/summary.json": "f75340710416435a8b69ec5be6f2b15434b4d034084872fe257c1dce7f7d4377",
+    "data/resolved-transit/operator/v1/lifecycle/summary.json": "57b6cadec10fd33049817f82dc674a8fad112f25ee01f7d4efed051a5b6ae726",
+    "data/resolved-transit/operator/v1/public-display/summary.json": "108b8ba14827a9d987354b684bc6b478735525b2a90818a064bd9e8b1ea1707c",
+    "data/resolved-transit-public/public-key-operations/v1/manifest.json": "72e2ba13dc6514d238eefb2226ee3ef745b81dbcfd9d4e468e97072d23884aeb"
+  }
+}

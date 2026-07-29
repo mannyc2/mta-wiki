@@ -148,6 +148,24 @@ export function resolvedInterventionApplicationIdentity(
     .slice(0, 24)}`;
 }
 
+export function resolvedInterventionDurableApplicationIdentity(
+  input: Pick<
+    ResolvedInterventionApplication,
+    "occurrence_id" | "route_record_id" | "treatment_record_id" | "phase_record_id"
+  >,
+): string {
+  const identity = {
+    occurrence_id: input.occurrence_id,
+    phase_record_id: input.phase_record_id,
+    route_record_id: input.route_record_id,
+    treatment_record_id: input.treatment_record_id,
+  };
+  return `application:${createHash("sha256")
+    .update(`resolved-intervention-application-v2\0${stableJson(identity as JsonValue)}`)
+    .digest("hex")
+    .slice(0, 24)}`;
+}
+
 export function resolvedInterventionApplicationIncidenceKey(
   application: ResolvedInterventionApplication,
 ): string {
@@ -156,9 +174,6 @@ export function resolvedInterventionApplicationIncidenceKey(
     application.route_record_id,
     application.treatment_record_id,
     application.phase_record_id ?? "",
-    application.action,
-    application.extent.kind,
-    application.extent.record_ids.join(","),
   ].join("|");
 }
 
@@ -213,8 +228,8 @@ export function parseResolvedInterventionApplication(
     review_decision_id: string(input.review_decision_id, `${path}.review_decision_id`),
     resolution_method: resolutionMethod,
   };
-  if (application.application_id !== resolvedInterventionApplicationIdentity(application)) {
-    throw new Error(`${path}.application_id is stale`);
+  if (!/^application:[a-f0-9]{24}$/u.test(application.application_id)) {
+    throw new Error(`${path}.application_id is stale or invalid`);
   }
   return application;
 }
