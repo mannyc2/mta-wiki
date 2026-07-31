@@ -7,6 +7,7 @@ import {
   type OperationalOccurrenceAcceptedDecisionV2,
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
 import {
+  operationalOccurrenceApplicationSemanticReviewReceipt,
   operationalOccurrenceCurrentReviewMembershipFingerprint,
   parseOperationalOccurrenceAcceptedDecisionV3,
   replayOperationalOccurrenceCurrentReviews,
@@ -257,27 +258,89 @@ describe("resolved intervention model v1", () => {
         extent: { kind: "unknown", record_ids: [], description: null },
       })
     );
-    const refinedApplications = baseline.applications.map((application, index) => ({
-      ...application,
-      application_id: baselineApplicationIds[index]!,
-      action: index === 0 ? "add" as const : application.action,
-      physical_scope_record_ids: index === 0 ? ["corridor_one"] : [],
-      extent: index === 0
-        ? {
-            kind: "bounded_segment" as const,
-            record_ids: ["corridor_one"],
-            description: "Reviewed bounded segment.",
-          }
-        : { kind: "unknown" as const, record_ids: [], description: null },
-      evidence_bindings: index === 0
+    const refinedApplications = baseline.applications.map((application, index) => {
+      const evidenceBindings = index === 0
         ? [...application.evidence_bindings, binding("corridor_one")]
           .sort((left, right) =>
             [left.role, left.record_id].join("|").localeCompare(
               [right.role, right.record_id].join("|"),
             )
           )
-        : application.evidence_bindings,
-    }));
+        : application.evidence_bindings;
+      const refined = {
+        ...application,
+        application_id: baselineApplicationIds[index]!,
+        action: index === 0 ? "add" as const : application.action,
+        physical_scope_record_ids: index === 0 ? ["corridor_one"] : [],
+        extent: index === 0
+          ? {
+              kind: "bounded_segment" as const,
+              record_ids: ["corridor_one"],
+              description: "Reviewed bounded segment.",
+            }
+          : { kind: "unknown" as const, record_ids: [], description: null },
+        evidence_bindings: evidenceBindings,
+      };
+      const treatmentEvidence = evidenceBindings.filter((entry) =>
+        entry.record_id === application.treatment_record_id
+      );
+      const scopeEvidence = index === 0
+        ? evidenceBindings.filter((entry) => entry.record_id === "corridor_one")
+        : treatmentEvidence;
+      return {
+        ...refined,
+        semantic_review: operationalOccurrenceApplicationSemanticReviewReceipt({
+          schema_version: 1,
+          contract_id: "plan-053-application-semantic-review-v1",
+          application_id: refined.application_id,
+          batch_id: "fixture-batch",
+          batch_manifest: {
+            path: "data/operational-application-semantics/campaigns/plan-053/batches/fixture-batch.json",
+            sha256: "1".repeat(64),
+          },
+          predecessor_decision_id: baseline.decision_id,
+          predecessor_membership_fingerprint: baseline.membership_fingerprint,
+          action_disposition: index === 0 ? "resolved" : "accepted_unknown",
+          action_reason_code: index === 0
+            ? "source_explicit_addition"
+            : "action_not_distinguishable_from_source",
+          action_evidence_bindings: treatmentEvidence,
+          extent_disposition: index === 0 ? "resolved" : "accepted_unknown",
+          extent_reason_code: index === 0
+            ? "source_explicit_bounded_segment"
+            : "extent_not_distinguishable_from_source",
+          extent_evidence_bindings: scopeEvidence,
+          reviewers: {
+            primary: "fixture-primary",
+            independent: "fixture-independent",
+            adjudicator: null,
+          },
+          proposal_receipts: {
+            primary: {
+              path: "data/operational-application-semantics/campaigns/plan-053/reviews/fixture-primary.json",
+              sha256: "2".repeat(64),
+            },
+            independent: {
+              path: "data/operational-application-semantics/campaigns/plan-053/reviews/fixture-independent.json",
+              sha256: "3".repeat(64),
+            },
+            adjudicator: null,
+          },
+          accepted_at: "2026-07-31T00:00:00Z",
+          rationale: "Fixture semantic review is bound to exact application evidence.",
+          provider_usage: {
+            provider_requests: 0,
+            input_tokens: 0,
+            output_tokens: 0,
+            committed_cost_usd: 0,
+            actual_cost_usd: 0,
+            provider: null,
+            model: null,
+            profile: null,
+          },
+        }),
+      };
+    });
     const currentWithBaselineFingerprint = {
       ...baseline,
       schema_version: 3 as const,

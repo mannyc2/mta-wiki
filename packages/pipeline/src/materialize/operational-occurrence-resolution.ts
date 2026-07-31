@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
-import { basename, join } from "node:path";
+import { basename, join, resolve } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
@@ -25,10 +25,84 @@ import {
 export const OPERATIONAL_OCCURRENCE_CURRENT_REVIEW_SCHEMA_VERSION = 3 as const;
 export const OPERATIONAL_OCCURRENCE_CURRENT_REVIEW_SNAPSHOT_VERSION = 4 as const;
 
+export const APPLICATION_ACTION_REVIEW_REASON_CODES = [
+  "source_explicit_addition",
+  "source_explicit_modification",
+  "source_explicit_removal",
+  "source_explicit_suspension",
+  "source_explicit_resumption",
+  "source_explicit_retention",
+  "action_not_distinguishable_from_source",
+  "conflicting_action_evidence",
+] as const;
+export type ApplicationActionReviewReasonCode =
+  (typeof APPLICATION_ACTION_REVIEW_REASON_CODES)[number];
+
+export const APPLICATION_EXTENT_REVIEW_REASON_CODES = [
+  "source_explicit_route_wide_scope",
+  "source_explicit_bounded_segment",
+  "source_explicit_stop_set",
+  "source_explicit_service_pattern",
+  "exact_stop_set_not_enumerated",
+  "bounded_endpoints_not_stated",
+  "source_explicit_scope_without_canonical_extent_identity",
+  "extent_not_distinguishable_from_source",
+  "conflicting_extent_evidence",
+  "nonphysical_scope_not_exactly_bound",
+] as const;
+export type ApplicationExtentReviewReasonCode =
+  (typeof APPLICATION_EXTENT_REVIEW_REASON_CODES)[number];
+
+export type ApplicationSemanticReviewArtifactPin = {
+  path: string;
+  sha256: string;
+};
+
+export type OperationalOccurrenceApplicationSemanticReview = {
+  schema_version: 1;
+  contract_id: "plan-053-application-semantic-review-v1";
+  application_id: string;
+  batch_id: string;
+  batch_manifest: ApplicationSemanticReviewArtifactPin;
+  predecessor_decision_id: string;
+  predecessor_membership_fingerprint: string;
+  action_disposition: "resolved" | "accepted_unknown";
+  action_reason_code: ApplicationActionReviewReasonCode;
+  action_evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+  extent_disposition: "resolved" | "accepted_unknown";
+  extent_reason_code: ApplicationExtentReviewReasonCode;
+  extent_evidence_bindings: OperationalOccurrenceEvidenceBinding[];
+  reviewers: {
+    primary: string;
+    independent: string;
+    adjudicator: string | null;
+  };
+  proposal_receipts: {
+    primary: ApplicationSemanticReviewArtifactPin;
+    independent: ApplicationSemanticReviewArtifactPin;
+    adjudicator: ApplicationSemanticReviewArtifactPin | null;
+  };
+  accepted_at: string;
+  rationale: string;
+  provider_usage: {
+    provider_requests: 0;
+    input_tokens: 0;
+    output_tokens: 0;
+    committed_cost_usd: 0;
+    actual_cost_usd: 0;
+    provider: null;
+    model: null;
+    profile: null;
+  };
+  receipt_id: string;
+  receipt_path: string;
+};
+
 export type OperationalOccurrenceCurrentReviewApplication =
   OperationalOccurrenceReviewApplication & {
     application_id: string;
     extent: ResolvedInterventionExtent;
+    semantic_review?: OperationalOccurrenceApplicationSemanticReview;
   };
 
 type OperationalOccurrenceAcceptedDecisionV3Base = Omit<
@@ -111,8 +185,51 @@ const applicationFields = new Set([
   "route_record_id",
   "treatment_record_id",
 ]);
+const reviewedApplicationFields = new Set([
+  ...applicationFields,
+  "semantic_review",
+]);
 const extentFields = new Set(["description", "kind", "record_ids"]);
 const evidenceFields = new Set(["evidence_id", "record_id", "role", "source_id"]);
+const semanticReviewFields = new Set([
+  "accepted_at",
+  "action_disposition",
+  "action_evidence_bindings",
+  "action_reason_code",
+  "application_id",
+  "batch_id",
+  "batch_manifest",
+  "contract_id",
+  "extent_disposition",
+  "extent_evidence_bindings",
+  "extent_reason_code",
+  "predecessor_decision_id",
+  "predecessor_membership_fingerprint",
+  "proposal_receipts",
+  "provider_usage",
+  "rationale",
+  "receipt_id",
+  "receipt_path",
+  "reviewers",
+  "schema_version",
+]);
+const artifactPinFields = new Set(["path", "sha256"]);
+const semanticReviewerFields = new Set(["adjudicator", "independent", "primary"]);
+const semanticProposalReceiptFields = new Set([
+  "adjudicator",
+  "independent",
+  "primary",
+]);
+const zeroProviderUsageFields = new Set([
+  "actual_cost_usd",
+  "committed_cost_usd",
+  "input_tokens",
+  "model",
+  "output_tokens",
+  "profile",
+  "provider",
+  "provider_requests",
+]);
 const extentKinds = new Set<ResolvedInterventionExtent["kind"]>([
   "route_wide",
   "bounded_segment",
@@ -223,6 +340,270 @@ function parseEvidence(
   return result;
 }
 
+function sha256(value: string | Uint8Array): string {
+  return createHash("sha256").update(value).digest("hex");
+}
+
+function sha256String(value: unknown, path: string): string {
+  const result = string(value, path);
+  if (!/^[a-f0-9]{64}$/u.test(result)) {
+    throw new Error(`${path} must be a SHA-256 hex string`);
+  }
+  return result;
+}
+
+function parseArtifactPin(
+  value: unknown,
+  path: string,
+): ApplicationSemanticReviewArtifactPin {
+  const input = object(value, path);
+  exact(input, artifactPinFields, path);
+  return {
+    path: string(input.path, `${path}.path`),
+    sha256: sha256String(input.sha256, `${path}.sha256`),
+  };
+}
+
+function semanticReviewReceiptProjection(
+  review: Omit<
+    OperationalOccurrenceApplicationSemanticReview,
+    "receipt_id" | "receipt_path"
+  >,
+): JsonValue {
+  return review as unknown as JsonValue;
+}
+
+export function operationalOccurrenceApplicationSemanticReviewReceipt(
+  review: Omit<
+    OperationalOccurrenceApplicationSemanticReview,
+    "receipt_id" | "receipt_path"
+  >,
+): OperationalOccurrenceApplicationSemanticReview {
+  const hash = sha256(stableJson(semanticReviewReceiptProjection(review)));
+  return {
+    ...review,
+    receipt_id: `application-semantic-review:${hash}`,
+    receipt_path:
+      `data/operational-application-semantics/campaigns/plan-053/accepted/receipts/${hash}.json`,
+  };
+}
+
+export function parseOperationalOccurrenceApplicationSemanticReview(
+  value: unknown,
+  path: string,
+  application: {
+    application_id: string;
+    action: OperationalOccurrenceApplicationAction;
+    extent: ResolvedInterventionExtent;
+  },
+): OperationalOccurrenceApplicationSemanticReview {
+  const input = object(value, path);
+  exact(input, semanticReviewFields, path);
+  if (input.schema_version !== 1) throw new Error(`${path}.schema_version must be 1`);
+  if (input.contract_id !== "plan-053-application-semantic-review-v1") {
+    throw new Error(`${path}.contract_id is unsupported`);
+  }
+  const applicationId = string(input.application_id, `${path}.application_id`);
+  if (applicationId !== application.application_id) {
+    throw new Error(`${path}.application_id does not bind the application owner`);
+  }
+  const actionDisposition = string(
+    input.action_disposition,
+    `${path}.action_disposition`,
+  );
+  if (actionDisposition !== "resolved" && actionDisposition !== "accepted_unknown") {
+    throw new Error(`${path}.action_disposition is unsupported`);
+  }
+  const actionReason = string(input.action_reason_code, `${path}.action_reason_code`);
+  if (!APPLICATION_ACTION_REVIEW_REASON_CODES.includes(
+    actionReason as ApplicationActionReviewReasonCode,
+  )) {
+    throw new Error(`${path}.action_reason_code is unsupported: ${actionReason}`);
+  }
+  const expectedActionReasons: Record<
+    OperationalOccurrenceApplicationAction,
+    readonly ApplicationActionReviewReasonCode[]
+  > = {
+    add: ["source_explicit_addition"],
+    modify: ["source_explicit_modification"],
+    remove: ["source_explicit_removal"],
+    suspend: ["source_explicit_suspension"],
+    resume: ["source_explicit_resumption"],
+    retain: ["source_explicit_retention"],
+    unknown: [
+      "action_not_distinguishable_from_source",
+      "conflicting_action_evidence",
+    ],
+  };
+  if (
+    (application.action === "unknown") !==
+      (actionDisposition === "accepted_unknown") ||
+    !expectedActionReasons[application.action].includes(
+      actionReason as ApplicationActionReviewReasonCode,
+    )
+  ) {
+    throw new Error(`${path}: action claim/disposition/reason disagree`);
+  }
+
+  const extentDisposition = string(
+    input.extent_disposition,
+    `${path}.extent_disposition`,
+  );
+  if (extentDisposition !== "resolved" && extentDisposition !== "accepted_unknown") {
+    throw new Error(`${path}.extent_disposition is unsupported`);
+  }
+  const extentReason = string(input.extent_reason_code, `${path}.extent_reason_code`);
+  if (!APPLICATION_EXTENT_REVIEW_REASON_CODES.includes(
+    extentReason as ApplicationExtentReviewReasonCode,
+  )) {
+    throw new Error(`${path}.extent_reason_code is unsupported: ${extentReason}`);
+  }
+  const expectedExtentReasons: Record<
+    ResolvedInterventionExtent["kind"],
+    readonly ApplicationExtentReviewReasonCode[]
+  > = {
+    route_wide: ["source_explicit_route_wide_scope"],
+    bounded_segment: ["source_explicit_bounded_segment"],
+    stop_set: ["source_explicit_stop_set"],
+    service_pattern: ["source_explicit_service_pattern"],
+    unknown: [
+      "exact_stop_set_not_enumerated",
+      "bounded_endpoints_not_stated",
+      "source_explicit_scope_without_canonical_extent_identity",
+      "extent_not_distinguishable_from_source",
+      "conflicting_extent_evidence",
+      "nonphysical_scope_not_exactly_bound",
+    ],
+  };
+  if (
+    (application.extent.kind === "unknown") !==
+      (extentDisposition === "accepted_unknown") ||
+    !expectedExtentReasons[application.extent.kind].includes(
+      extentReason as ApplicationExtentReviewReasonCode,
+    )
+  ) {
+    throw new Error(`${path}: extent claim/disposition/reason disagree`);
+  }
+
+  const reviewersInput = object(input.reviewers, `${path}.reviewers`);
+  exact(reviewersInput, semanticReviewerFields, `${path}.reviewers`);
+  const primary = string(reviewersInput.primary, `${path}.reviewers.primary`);
+  const independent = string(
+    reviewersInput.independent,
+    `${path}.reviewers.independent`,
+  );
+  const adjudicator = reviewersInput.adjudicator === null
+    ? null
+    : string(reviewersInput.adjudicator, `${path}.reviewers.adjudicator`);
+  if (
+    primary === independent || adjudicator === primary ||
+    adjudicator === independent
+  ) {
+    throw new Error(`${path}.reviewers must be independent`);
+  }
+
+  const proposalInput = object(
+    input.proposal_receipts,
+    `${path}.proposal_receipts`,
+  );
+  exact(
+    proposalInput,
+    semanticProposalReceiptFields,
+    `${path}.proposal_receipts`,
+  );
+  const primaryProposal = parseArtifactPin(
+    proposalInput.primary,
+    `${path}.proposal_receipts.primary`,
+  );
+  const independentProposal = parseArtifactPin(
+    proposalInput.independent,
+    `${path}.proposal_receipts.independent`,
+  );
+  const adjudicatorProposal = proposalInput.adjudicator === null
+    ? null
+    : parseArtifactPin(
+        proposalInput.adjudicator,
+        `${path}.proposal_receipts.adjudicator`,
+      );
+  if ((adjudicator === null) !== (adjudicatorProposal === null)) {
+    throw new Error(`${path}: adjudicator and adjudication receipt disagree`);
+  }
+
+  const usageInput = object(input.provider_usage, `${path}.provider_usage`);
+  exact(usageInput, zeroProviderUsageFields, `${path}.provider_usage`);
+  for (const field of [
+    "provider_requests",
+    "input_tokens",
+    "output_tokens",
+    "committed_cost_usd",
+    "actual_cost_usd",
+  ] as const) {
+    if (usageInput[field] !== 0) {
+      throw new Error(`${path}.provider_usage.${field} must be zero`);
+    }
+  }
+  for (const field of ["provider", "model", "profile"] as const) {
+    if (usageInput[field] !== null) {
+      throw new Error(`${path}.provider_usage.${field} must be null`);
+    }
+  }
+
+  const withoutReceipt = {
+    schema_version: 1 as const,
+    contract_id: "plan-053-application-semantic-review-v1" as const,
+    application_id: applicationId,
+    batch_id: string(input.batch_id, `${path}.batch_id`),
+    batch_manifest: parseArtifactPin(input.batch_manifest, `${path}.batch_manifest`),
+    predecessor_decision_id: string(
+      input.predecessor_decision_id,
+      `${path}.predecessor_decision_id`,
+    ),
+    predecessor_membership_fingerprint: sha256String(
+      input.predecessor_membership_fingerprint,
+      `${path}.predecessor_membership_fingerprint`,
+    ),
+    action_disposition: actionDisposition as "resolved" | "accepted_unknown",
+    action_reason_code: actionReason as ApplicationActionReviewReasonCode,
+    action_evidence_bindings: parseEvidence(
+      input.action_evidence_bindings,
+      `${path}.action_evidence_bindings`,
+    ),
+    extent_disposition: extentDisposition as "resolved" | "accepted_unknown",
+    extent_reason_code: extentReason as ApplicationExtentReviewReasonCode,
+    extent_evidence_bindings: parseEvidence(
+      input.extent_evidence_bindings,
+      `${path}.extent_evidence_bindings`,
+    ),
+    reviewers: { primary, independent, adjudicator },
+    proposal_receipts: {
+      primary: primaryProposal,
+      independent: independentProposal,
+      adjudicator: adjudicatorProposal,
+    },
+    accepted_at: string(input.accepted_at, `${path}.accepted_at`),
+    rationale: string(input.rationale, `${path}.rationale`),
+    provider_usage: {
+      provider_requests: 0 as const,
+      input_tokens: 0 as const,
+      output_tokens: 0 as const,
+      committed_cost_usd: 0 as const,
+      actual_cost_usd: 0 as const,
+      provider: null,
+      model: null,
+      profile: null,
+    },
+  };
+  const expected = operationalOccurrenceApplicationSemanticReviewReceipt(
+    withoutReceipt,
+  );
+  const receiptId = string(input.receipt_id, `${path}.receipt_id`);
+  const receiptPath = string(input.receipt_path, `${path}.receipt_path`);
+  if (receiptId !== expected.receipt_id || receiptPath !== expected.receipt_path) {
+    throw new Error(`${path}: application semantic review receipt is stale`);
+  }
+  return expected;
+}
+
 function applicationIncidence(
   application: Pick<
     OperationalOccurrenceReviewApplication,
@@ -269,6 +650,7 @@ export function operationalOccurrenceCurrentReviewMembershipFingerprint(
 function parseApplications(
   value: unknown,
   path: string,
+  options: { requireSemanticReview: boolean },
 ): OperationalOccurrenceCurrentReviewApplication[] {
   if (!Array.isArray(value) || value.length === 0) {
     throw new Error(`${path} must be a non-empty array`);
@@ -276,7 +658,15 @@ function parseApplications(
   const applications = value.map((entry, index) => {
     const entryPath = `${path}[${index}]`;
     const input = object(entry, entryPath);
-    exact(input, applicationFields, entryPath);
+    const hasSemanticReview = "semantic_review" in input;
+    if (options.requireSemanticReview && !hasSemanticReview) {
+      throw new Error(`${entryPath}.semantic_review is required for a refinement`);
+    }
+    exact(
+      input,
+      hasSemanticReview ? reviewedApplicationFields : applicationFields,
+      entryPath,
+    );
     const action = string(input.action, `${entryPath}.action`);
     if (
       !OPERATIONAL_OCCURRENCE_APPLICATION_ACTIONS.includes(
@@ -301,7 +691,7 @@ function parseApplications(
         `${entryPath}.physical_scope_record_ids must equal extent.record_ids`,
       );
     }
-    return {
+    const application = {
       application_id: string(input.application_id, `${entryPath}.application_id`),
       route_record_id: string(input.route_record_id, `${entryPath}.route_record_id`),
       gtfs_route_id: string(input.gtfs_route_id, `${entryPath}.gtfs_route_id`),
@@ -318,6 +708,16 @@ function parseApplications(
         `${entryPath}.evidence_bindings`,
       ),
     };
+    return hasSemanticReview
+      ? {
+          ...application,
+          semantic_review: parseOperationalOccurrenceApplicationSemanticReview(
+            input.semantic_review,
+            `${entryPath}.semantic_review`,
+            application,
+          ),
+        }
+      : application;
   }).sort((left, right) =>
     applicationIncidence(left).localeCompare(applicationIncidence(right))
   );
@@ -357,7 +757,11 @@ export function parseOperationalOccurrenceAcceptedDecisionV3(
   ) {
     throw new Error(`${path}.review_scope does not match operation ${operation}`);
   }
-  const applications = parseApplications(input.applications, `${path}.applications`);
+  const applications = parseApplications(
+    input.applications,
+    `${path}.applications`,
+    { requireSemanticReview: operation === "supersede_current_resolution" },
+  );
 
   // Reuse the v2 strict decoders for every unchanged nested review field. The
   // v3-only identity and extent fields are stripped from this compatibility
@@ -550,6 +954,126 @@ function assertApplicationMembership(
         `${decision.decision_id}: application resolution is outside exact review membership`,
       );
     }
+    const semanticReview = application.semantic_review;
+    if (decision.operation === "supersede_current_resolution") {
+      if (!semanticReview) {
+        throw new Error(
+          `${decision.decision_id}: application semantic review is required`,
+        );
+      }
+      if (
+        semanticReview.predecessor_decision_id !==
+          decision.supersedes_decision_id ||
+        semanticReview.predecessor_membership_fingerprint !==
+          decision.supersedes_membership_fingerprint
+      ) {
+        throw new Error(
+          `${decision.decision_id}: application semantic review predecessor is stale`,
+        );
+      }
+      const applicationEvidence = new Set(
+        application.evidence_bindings.map(evidenceKey),
+      );
+      const semanticEvidence = [
+        ...semanticReview.action_evidence_bindings,
+        ...semanticReview.extent_evidence_bindings,
+      ];
+      if (semanticEvidence.some((binding) => !applicationEvidence.has(evidenceKey(binding)))) {
+        throw new Error(
+          `${decision.decision_id}: semantic review evidence is outside exact application evidence`,
+        );
+      }
+    }
+  }
+}
+
+function assertPlan053ArtifactPath(
+  rootDir: string,
+  relativePath: string,
+  expectedRoot: string,
+): string {
+  const campaignRoot = resolve(rootDir, expectedRoot);
+  const target = resolve(rootDir, relativePath);
+  if (!target.startsWith(`${campaignRoot}/`)) {
+    throw new Error(`Plan 053 artifact path escapes its owned root: ${relativePath}`);
+  }
+  if (!existsSync(target)) throw new Error(`missing Plan 053 artifact: ${relativePath}`);
+  return target;
+}
+
+export function assertOperationalOccurrenceApplicationSemanticReviewArtifacts(
+  review: OperationalOccurrenceApplicationSemanticReview,
+  rootDir = repoRoot,
+): void {
+  const manifestPath = assertPlan053ArtifactPath(
+    rootDir,
+    review.batch_manifest.path,
+    "data/operational-application-semantics/campaigns/plan-053/batches",
+  );
+  if (sha256(readFileSync(manifestPath)) !== review.batch_manifest.sha256) {
+    throw new Error(`Plan 053 batch manifest hash drift: ${review.batch_manifest.path}`);
+  }
+  for (const pin of [
+    review.proposal_receipts.primary,
+    review.proposal_receipts.independent,
+    review.proposal_receipts.adjudicator,
+  ]) {
+    if (!pin) continue;
+    const proposalPath = assertPlan053ArtifactPath(
+      rootDir,
+      pin.path,
+      "data/operational-application-semantics/campaigns/plan-053/reviews",
+    );
+    if (sha256(readFileSync(proposalPath)) !== pin.sha256) {
+      throw new Error(`Plan 053 proposal receipt hash drift: ${pin.path}`);
+    }
+  }
+  const receiptPath = assertPlan053ArtifactPath(
+    rootDir,
+    review.receipt_path,
+    "data/operational-application-semantics/campaigns/plan-053/accepted/receipts",
+  );
+  const receipt = JSON.parse(readFileSync(receiptPath, "utf8")) as unknown;
+  const parsed = parseOperationalOccurrenceApplicationSemanticReview(
+    receipt,
+    review.receipt_path,
+    {
+      application_id: review.application_id,
+      action: review.action_disposition === "accepted_unknown"
+        ? "unknown"
+        : ({
+            source_explicit_addition: "add",
+            source_explicit_modification: "modify",
+            source_explicit_removal: "remove",
+            source_explicit_suspension: "suspend",
+            source_explicit_resumption: "resume",
+            source_explicit_retention: "retain",
+          } as Partial<Record<
+            ApplicationActionReviewReasonCode,
+            OperationalOccurrenceApplicationAction
+          >>)[review.action_reason_code]!,
+      extent: {
+        kind: review.extent_disposition === "accepted_unknown"
+          ? "unknown"
+          : ({
+              source_explicit_route_wide_scope: "route_wide",
+              source_explicit_bounded_segment: "bounded_segment",
+              source_explicit_stop_set: "stop_set",
+              source_explicit_service_pattern: "service_pattern",
+            } as Partial<Record<
+              ApplicationExtentReviewReasonCode,
+              ResolvedInterventionExtent["kind"]
+            >>)[review.extent_reason_code]!,
+        record_ids: review.extent_disposition === "accepted_unknown" ? [] : ["receipt-validation"],
+        description: null,
+      },
+    },
+  );
+  if (
+    stableJson(parsed as unknown as JsonValue) !==
+      stableJson(review as unknown as JsonValue)
+  ) {
+    throw new Error(`Plan 053 semantic review receipt content drift: ${review.receipt_path}`);
   }
 }
 
@@ -842,6 +1366,23 @@ export function loadOperationalOccurrenceAcceptedDecisionsV3(
 export function loadOperationalOccurrenceCurrentReviewDecisions(
   rootDir = repoRoot,
 ): OperationalOccurrenceCurrentReviewDecision[] {
+  const current = loadOperationalOccurrenceAcceptedDecisionsV3(
+    operationalOccurrenceCurrentReviewDir(rootDir),
+  );
+  for (const decision of current) {
+    if (decision.operation !== "supersede_current_resolution") continue;
+    for (const application of decision.applications) {
+      if (!application.semantic_review) {
+        throw new Error(
+          `${decision.decision_id}: missing Plan 053 application semantic review`,
+        );
+      }
+      assertOperationalOccurrenceApplicationSemanticReviewArtifacts(
+        application.semantic_review,
+        rootDir,
+      );
+    }
+  }
   return replayOperationalOccurrenceCurrentReviews(
     loadOperationalOccurrenceAcceptedDecisionsV2(
       join(
@@ -852,9 +1393,7 @@ export function loadOperationalOccurrenceCurrentReviewDecisions(
         "decisions",
       ),
     ),
-    loadOperationalOccurrenceAcceptedDecisionsV3(
-      operationalOccurrenceCurrentReviewDir(rootDir),
-    ),
+    current,
   );
 }
 

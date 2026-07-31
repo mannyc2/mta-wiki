@@ -51,8 +51,14 @@ The operator build is bound to:
 Any membership, route identity, treatment, phase, scope, evidence, or frontier
 fingerprint drift invalidates the build. Canonical records must remain
 `source_stated`, non-quarantined, and type-correct at the build boundary.
-Refining action or extent requires a new current decision and a regenerated
-frontier fingerprint, but it does not change the durable application id.
+Refining action or extent requires a new current decision, an exact
+evidence-bound semantic-review receipt, and a regenerated frontier
+fingerprint, but it does not change the durable application id. Replay checks
+the predecessor application head, frozen batch/input hashes, distinct primary
+and independent reviewers, and a third adjudicator whenever semantic claims
+disagree. Accepted unknowns require axis-specific reason codes and exact
+application evidence; they are terminal reviewed claims, never metric-filling
+defaults.
 
 ## Extent and legacy study companions
 
@@ -63,9 +69,16 @@ member-extent/member-grain decisions cannot authorize a generic application.
 
 The v1-rc28 study member-extent rows join by exact
 `occurrence_id × route_record_id × treatment_record_id`. In the current
-projection, 306 rows join to exact applications. The two remaining Flatbush
-study rows belong to an unresolved active identity and therefore appear as
-typed `legacy_study_row_is_nonauthorizing` reconciliation rows.
+projection, 343 exact applications cover all 157 public episodes. Four
+historical route-binding projection retirements remain explicit typed
+reconciliations; there are no unresolved active episode identities.
+
+The reviewed application partition is 104 `add`, 109 `modify`, 117 `remove`,
+seven `resume`, one `retain`, and five accepted `unknown`. Extents partition as
+34 `route_wide`, eight `bounded_segment`, 163 `service_pattern`, and 138
+accepted `unknown`. These claims describe reviewed historical episode
+semantics only. They do not establish placement continuity, transitions,
+lifecycle intervals, or current footprint.
 
 Documentary route-treatment scope describes source-backed applicability. It is
 not a statement that a treatment is currently installed. Current operational

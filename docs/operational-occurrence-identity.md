@@ -67,6 +67,14 @@ Missing predecessors, stale fingerprints, cycles, branches with conflicting
 heads, duplicate application owners, and changed route × treatment × phase
 incidence fail closed.
 
+Application-semantic supersessions additionally bind every application to a
+frozen Plan 053 batch, its exact predecessor decision/fingerprint, incidence,
+evidence blocks and hashes, primary and independent reviews, and an accepted
+content-addressed receipt. Any disagreement requires a third adjudicator;
+adjudication applies only to disputed application claims. Evidence-free
+unknowns and missing, stale, cyclic, duplicate-owner, conflicting-head, or
+identity-drifting mutations fail closed.
+
 Application identity is durable across this replay. Existing migrated
 `application:<24-hex>` values are retained as founding incidence identities;
 new establishments derive application IDs only from occurrence × route ×
@@ -77,12 +85,11 @@ changes the review fingerprint and resolved claim while preserving consumer
 lookup. A true incidence replacement requires explicit application lineage;
 it is not represented by silently recomputing an ID.
 
-The Plan 045 migration preserves all 135 v1 identity IDs. It produces 130
-lossless exact reviews and five operator-visible unresolved packets: four
-existing route-binding projection retirements and one two-phase application
-that needs explicit review. The active identity partition is disjoint and
-exhaustive; unresolved identities remain durable but are not publishable
-episodes.
+The Plan 045 migration preserves all 135 v1 identity IDs. Later append-only
+review closes the frontier at 157 published episodes and 343 exact
+applications, with four existing route-binding projection retirements kept as
+explicit reconciliation. The active identity partition is disjoint and
+exhaustive; no active identity remains unresolved.
 
 `operational_change_id` is a candidate or observation-layer identifier. It is
 not durable real-world episode identity and must not be persisted as a

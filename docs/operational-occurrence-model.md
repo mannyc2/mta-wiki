@@ -13,7 +13,9 @@ The resolution pipeline is deliberately layered:
    identities with explicit redirect and retirement lineage.
 4. Review snapshot v3 binds an episode to exact observation, phase,
    physical-scope, and route-treatment application membership. Any membership
-   change invalidates the review.
+   change invalidates the review. Later action/extent refinements are
+   append-only, evidence-bound claims on that stable incidence and require
+   reviewed receipts; accepted unknowns remain explicit.
 5. Resolved episodes and exact applications answer what reviewed change
    occurred. An application is one route/treatment/action/scope incidence;
    multi-route and bundle evidence must never be expanded as a cross-product.
@@ -26,4 +28,3 @@ The resolution pipeline is deliberately layered:
 Pending, ambiguous, conflicted, invalid, and reconciliation rows are
 non-authorizing. Canonical timelines, route-treatment scopes, historical
 onsets, and “latest” documentary rows cannot establish current activity.
-

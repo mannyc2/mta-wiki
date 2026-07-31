@@ -119,6 +119,26 @@ function slug(value: string): string {
   assertSlug(result, "proposed public key");
   return result;
 }
+export function interventionComponentPublicKey(input: {
+  route_key: string;
+  treatment_family_key: string;
+  application_id: string;
+}): string {
+  const durableSuffix = input.application_id.replace(/^application:/u, "");
+  if (!/^[a-f0-9]{24}$/u.test(durableSuffix)) {
+    throw new Error(`invalid durable application identity: ${input.application_id}`);
+  }
+  const result = slug([
+    input.route_key,
+    input.treatment_family_key,
+    "component",
+    durableSuffix,
+  ].join("-"));
+  if (result.includes("unknown")) {
+    throw new Error(`mutable placeholder leaked into component public key: ${result}`);
+  }
+  return result;
+}
 function operationId(row: PublicKeyProposal): string {
   return `public-key-op:${sha(stableJson(row as unknown as JsonValue)).slice(0, 24)}`;
 }
@@ -532,7 +552,6 @@ function proposals(root: string): { proposals: PublicKeyProposal[]; fingerprint:
     families: Array<{ family: string; key: string; label: string }>;
   };
   const routeById = new Map(routes.map((row) => [row.record_id, row]));
-  const treatmentById = new Map(treatments.map((row) => [row.record_id, row]));
   const sourceById = new Map(sources.map((row) => [row.source_id, row]));
   const familyByName = new Map(familyContract.families.map((row) => [row.family, row]));
   const result: PublicKeyProposal[] = [];
@@ -576,28 +595,24 @@ function proposals(root: string): { proposals: PublicKeyProposal[]; fingerprint:
   const routeKey = new Map(result.filter((row) => row.key_kind === "route").map((row) => [row.subject_id, row.public_key]));
   const familyKey = new Map(result.filter((row) => row.key_kind === "treatment_family").map((row) => [row.subject_id, row.public_key]));
   for (const application of applications.sort((a, b) => String(a.application_id).localeCompare(String(b.application_id)))) {
-    const treatment = treatmentById.get(application.treatment_record_id);
-    if (!treatment) throw new Error(`missing addressed treatment display row: ${application.treatment_record_id}`);
-    const scope = application.extent as { kind: string; record_ids: string[] };
-    const component = [
-      routeKey.get(application.route_record_id),
-      familyKey.get(application.treatment_family),
-      application.action,
-      slug(String(treatment.display_name)),
-      scope.kind,
-      ...(scope.record_ids ?? []).map(String).map(slug),
-    ].filter(Boolean).join("-");
+    const routePublicKey = routeKey.get(application.route_record_id);
+    const familyPublicKey = familyKey.get(application.treatment_family);
+    if (!routePublicKey || !familyPublicKey) {
+      throw new Error(`missing immutable component key basis: ${application.application_id}`);
+    }
+    const component = interventionComponentPublicKey({
+      route_key: routePublicKey,
+      treatment_family_key: familyPublicKey,
+      application_id: String(application.application_id),
+    });
     result.push({
       key_kind: "intervention_component", subject_id: application.application_id,
-      owner_intervention_id: application.occurrence_id, public_key: slug(component),
+      owner_intervention_id: application.occurrence_id, public_key: component,
       establishment_method: "lossless_migration", decision_id: null,
       proposal_basis: {
-        route_key: routeKey.get(application.route_record_id)!,
-        treatment_family_key: familyKey.get(application.treatment_family)!,
-        action: application.action,
-        treatment_display_name: String(treatment.display_name),
-        scope_kind: scope.kind,
-        scope_record_ids: (scope.record_ids ?? []).join(","),
+        route_key: routePublicKey,
+        treatment_family_key: familyPublicKey,
+        durable_application_id: String(application.application_id),
       },
     });
   }

@@ -7,6 +7,7 @@ import {
   type OperationalOccurrenceAcceptedDecisionV2,
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
 import {
+  operationalOccurrenceApplicationSemanticReviewReceipt,
   operationalOccurrenceCurrentReviewMembershipFingerprint,
   parseOperationalOccurrenceAcceptedDecisionV3,
   replayOperationalOccurrenceCurrentReviews,
@@ -74,7 +75,7 @@ function refinement(
   };
   const applications = baseline.applications.map((_application, index) => {
     const current = baselineApplication(baseline, index);
-    return index === 0
+    const refined = index === 0
       ? {
           ...current,
           action: "add" as const,
@@ -88,6 +89,73 @@ function refinement(
             .sort((left, right) => evidenceKey(left).localeCompare(evidenceKey(right))),
         }
       : current;
+    const actionEvidence = refined.evidence_bindings.filter((binding) =>
+      binding.role === "treatment_definition"
+    );
+    const extentEvidence = refined.evidence_bindings.filter((binding) =>
+      binding.role === "physical_scope"
+    );
+    return {
+      ...refined,
+      semantic_review: operationalOccurrenceApplicationSemanticReviewReceipt({
+        schema_version: 1,
+        contract_id: "plan-053-application-semantic-review-v1",
+        application_id: refined.application_id,
+        batch_id: "fixture-batch",
+        batch_manifest: {
+          path: "data/operational-application-semantics/campaigns/plan-053/batches/fixture-batch.json",
+          sha256: "1".repeat(64),
+        },
+        predecessor_decision_id: baseline.decision_id,
+        predecessor_membership_fingerprint: baseline.membership_fingerprint,
+        action_disposition: refined.action === "unknown"
+          ? "accepted_unknown"
+          : "resolved",
+        action_reason_code: refined.action === "unknown"
+          ? "action_not_distinguishable_from_source"
+          : "source_explicit_addition",
+        action_evidence_bindings: actionEvidence.length > 0
+          ? actionEvidence
+          : [refined.evidence_bindings[0]!],
+        extent_disposition: refined.extent.kind === "unknown"
+          ? "accepted_unknown"
+          : "resolved",
+        extent_reason_code: refined.extent.kind === "unknown"
+          ? "extent_not_distinguishable_from_source"
+          : "source_explicit_bounded_segment",
+        extent_evidence_bindings: extentEvidence.length > 0
+          ? extentEvidence
+          : [refined.evidence_bindings[0]!],
+        reviewers: {
+          primary: "fixture-primary",
+          independent: "fixture-independent",
+          adjudicator: null,
+        },
+        proposal_receipts: {
+          primary: {
+            path: "data/operational-application-semantics/campaigns/plan-053/reviews/fixture-primary.json",
+            sha256: "2".repeat(64),
+          },
+          independent: {
+            path: "data/operational-application-semantics/campaigns/plan-053/reviews/fixture-independent.json",
+            sha256: "3".repeat(64),
+          },
+          adjudicator: null,
+        },
+        accepted_at: "2026-07-31T00:00:00Z",
+        rationale: "Fixture semantic review is bound to exact evidence.",
+        provider_usage: {
+          provider_requests: 0,
+          input_tokens: 0,
+          output_tokens: 0,
+          committed_cost_usd: 0,
+          actual_cost_usd: 0,
+          provider: null,
+          model: null,
+          profile: null,
+        },
+      }),
+    };
   });
   const withoutFingerprint = {
     ...baseline,
@@ -171,6 +239,45 @@ function withFingerprint(
   });
 }
 
+function rebaseRefinement(
+  decision: OperationalOccurrenceAcceptedDecisionV3,
+  input: {
+    decision_id?: string;
+    predecessor_decision_id: string;
+    predecessor_membership_fingerprint: string;
+  },
+): OperationalOccurrenceAcceptedDecisionV3 {
+  if (decision.operation !== "supersede_current_resolution") {
+    throw new Error("fixture rebase requires a superseding decision");
+  }
+  const applications = decision.applications.map((application) => {
+    const review = application.semantic_review!;
+    const {
+      receipt_id: _receiptId,
+      receipt_path: _receiptPath,
+      ...withoutReceipt
+    } = review;
+    return {
+      ...application,
+      semantic_review: operationalOccurrenceApplicationSemanticReviewReceipt({
+        ...withoutReceipt,
+        predecessor_decision_id: input.predecessor_decision_id,
+        predecessor_membership_fingerprint:
+          input.predecessor_membership_fingerprint,
+      }),
+    };
+  });
+  const { membership_fingerprint: _fingerprint, ...withoutFingerprint } = decision;
+  return withFingerprint({
+    ...withoutFingerprint,
+    decision_id: input.decision_id ?? decision.decision_id,
+    supersedes_decision_id: input.predecessor_decision_id,
+    supersedes_membership_fingerprint:
+      input.predecessor_membership_fingerprint,
+    applications,
+  });
+}
+
 describe("append-only operational occurrence resolution heads", () => {
   it("accepts a new current resolution without modifying the migration corpus", () => {
     const baseline = loadOperationalOccurrenceAcceptedDecisionsV2(historicalDir)[0]!;
@@ -250,14 +357,22 @@ describe("append-only operational occurrence resolution heads", () => {
       .find((decision) => decision.applications.length > 0)!;
     const first = refinement(baseline, `${baseline.decision_id}:resolution-a`);
 
+    const stale = rebaseRefinement(first, {
+      predecessor_decision_id: baseline.decision_id,
+      predecessor_membership_fingerprint: "0".repeat(64),
+    });
     expect(() => replayOperationalOccurrenceCurrentReviews(
       [baseline],
-      [{ ...first, supersedes_membership_fingerprint: "0".repeat(64) }],
+      [stale],
     )).toThrow("stale predecessor fingerprint");
 
+    const missing = rebaseRefinement(first, {
+      predecessor_decision_id: "missing:decision",
+      predecessor_membership_fingerprint: baseline.membership_fingerprint,
+    });
     expect(() => replayOperationalOccurrenceCurrentReviews(
       [baseline],
-      [{ ...first, supersedes_decision_id: "missing:decision" }],
+      [missing],
     )).toThrow("missing predecessor");
 
     const conflicting = refinement(
@@ -281,23 +396,99 @@ describe("append-only operational occurrence resolution heads", () => {
       "duplicate application owner",
     );
 
-    const {
-      membership_fingerprint: _firstFingerprint,
-      ...firstWithoutFingerprint
-    } = first;
-    const cycleA = withFingerprint({
-      ...firstWithoutFingerprint,
-      supersedes_decision_id: `${baseline.decision_id}:cycle-b`,
+    const cycleA = rebaseRefinement(first, {
       decision_id: `${baseline.decision_id}:cycle-a`,
+      predecessor_decision_id: `${baseline.decision_id}:cycle-b`,
+      predecessor_membership_fingerprint: baseline.membership_fingerprint,
     });
-    const cycleB = withFingerprint({
-      ...firstWithoutFingerprint,
-      supersedes_decision_id: cycleA.decision_id,
+    const cycleB = rebaseRefinement(first, {
       decision_id: `${baseline.decision_id}:cycle-b`,
+      predecessor_decision_id: cycleA.decision_id,
+      predecessor_membership_fingerprint: baseline.membership_fingerprint,
     });
     expect(() => replayOperationalOccurrenceCurrentReviews(
       [baseline],
       [cycleA, cycleB],
     )).toThrow("cyclic current occurrence review lineage");
+  });
+
+  it("rejects evidence-free unknowns and durable incidence drift", () => {
+    const baseline = loadOperationalOccurrenceAcceptedDecisionsV2(historicalDir)
+      .find((decision) => decision.applications.length > 1)!;
+    const reviewed = refinement(
+      baseline,
+      `${baseline.decision_id}:semantic-mutations`,
+    );
+    const first = reviewed.applications[0]!;
+    const withoutReview = {
+      ...reviewed,
+      applications: reviewed.applications.map((application, index) => {
+        if (index !== 0) return application;
+        const { semantic_review: _review, ...unreviewed } = application;
+        return unreviewed;
+      }),
+    };
+    expect(() => parseOperationalOccurrenceAcceptedDecisionV3(
+      withoutReview,
+    )).toThrow("semantic_review is required");
+
+    const semantic = first.semantic_review!;
+    const noEvidenceWithoutReceipt = {
+      ...semantic,
+      action_evidence_bindings: [],
+    };
+    const noEvidence = {
+      ...reviewed,
+      applications: reviewed.applications.map((application, index) =>
+        index === 0
+          ? { ...application, semantic_review: noEvidenceWithoutReceipt }
+          : application
+      ),
+    };
+    expect(() => parseOperationalOccurrenceAcceptedDecisionV3(
+      noEvidence,
+    )).toThrow("action_evidence_bindings must be a non-empty array");
+
+    const second = reviewed.applications[1]!;
+    const firstIncidence = {
+      route_record_id: first.route_record_id,
+      gtfs_route_id: first.gtfs_route_id,
+      treatment_record_id: first.treatment_record_id,
+      phase_record_id: first.phase_record_id,
+    };
+    const secondIncidence = {
+      route_record_id: second.route_record_id,
+      gtfs_route_id: second.gtfs_route_id,
+      treatment_record_id: second.treatment_record_id,
+      phase_record_id: second.phase_record_id,
+    };
+    const driftedApplications = reviewed.applications
+      .map((application, index) =>
+        index === 0
+          ? { ...application, ...secondIncidence }
+          : index === 1
+            ? { ...application, ...firstIncidence }
+            : application
+      )
+      .sort((left, right) => [
+        left.route_record_id,
+        left.gtfs_route_id,
+        left.treatment_record_id,
+        left.phase_record_id ?? "",
+      ].join("|").localeCompare([
+        right.route_record_id,
+        right.gtfs_route_id,
+        right.treatment_record_id,
+        right.phase_record_id ?? "",
+      ].join("|")));
+    const {
+      membership_fingerprint: _driftFingerprint,
+      ...driftWithoutFingerprint
+    } = { ...reviewed, applications: driftedApplications };
+    const drift = withFingerprint(driftWithoutFingerprint);
+    expect(() => replayOperationalOccurrenceCurrentReviews(
+      [baseline],
+      [drift],
+    )).toThrow("durable application incidence changed");
   });
 });

@@ -4,6 +4,28 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-31
+
+### Evidence-bound exact application semantics
+
+- Reviewed the complete frozen 343-application post-Plan-052 cohort through
+  nine content-addressed treatment/evidence batches with independent review
+  and clean-room adjudication of 26 disputed claims. Append-only current heads
+  now classify actions as 104 add, 109 modify, 117 remove, seven resume, one
+  retain, and five accepted unknown; extents are 34 route-wide, eight bounded
+  segment, 163 service pattern, and 138 accepted unknown.
+- Every unknown claim now has an exact evidence binding, accepted reason code,
+  distinct reviewer chain, predecessor head, and content-addressed receipt.
+  The 343 durable application IDs and route × treatment × phase incidences are
+  unchanged. Public lookup remains 577/577 live with prior component keys
+  retained as aliases and no live component key derived from mutable
+  action/extent claims or containing `unknown`.
+- Placement truth was not reviewed: the same 1,773 placement candidates remain
+  pending, with zero placement registry rows, transitions, lifecycle
+  assertions, or confirmed-current footprint. Provider usage and cost were
+  zero. No release, `LATEST`, publication, downstream pin, deployment, push,
+  or merge was performed.
+
 ## 2026-07-30
 
 ### Complete operational episode frontier

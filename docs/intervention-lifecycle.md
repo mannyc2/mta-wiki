@@ -46,13 +46,15 @@ The separate `data/resolved-transit.db` mirrors these products in strict indexed
 `lifecycle_entries`, `route_timeline`, and the deprecated `resolved_status` view remain documentary
 and are forbidden inputs to new resolved builders.
 
-## Current corpus migration
+## Current corpus boundary
 
-The current 306 reviewed applications all have action `unknown`. Consequently they authorize no
-placement transitions. The v1 frontier retains every application plus generically admitted
-inventory/lifecycle candidate for review, while the placement registry and current footprint remain
-empty. This is an evidence-preserving result: zero confirmed placements does not claim zero
-interventions exist.
+The current 343 applications have evidence-reviewed historical actions and
+extents, including explicitly accepted unknowns. Plan 053 intentionally did
+not adjudicate placement identity or transitions: all 1,773 placement
+candidates remain pending, and the placement registry, accepted transitions,
+lifecycle assertions, and current footprint remain empty. Application action
+alone never authorizes a placement. This is an evidence-preserving result:
+zero confirmed placements does not claim zero interventions exist.
 
 Build and inspect with an explicit date:
 

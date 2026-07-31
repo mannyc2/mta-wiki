@@ -1,5 +1,6 @@
 import { describe, expect, it } from "bun:test";
 import {
+  interventionComponentPublicKey,
   preparePublicKeyMigration,
   publicKeyEstablishOperation,
   publicKeyRedirectOperation,
@@ -32,31 +33,28 @@ describe("resolved transit public key registry", () => {
   });
 
   it("preserves a component key when reviewed action and extent claims change", () => {
+    const immutableKey = interventionComponentPublicKey({
+      route_key: "q1",
+      treatment_family_key: "bus-lane",
+      application_id: "application:0123456789abcdef01234567",
+    });
+    expect(immutableKey).toBe("q1-bus-lane-component-0123456789abcdef01234567");
+    expect(immutableKey).not.toContain("unknown");
     const original: PublicKeyProposal = {
       key_kind: "intervention_component",
       subject_id: "application:0123456789abcdef01234567",
       owner_intervention_id: "occurrence:0123456789abcdef01234567",
-      public_key: "q1-bus-lane-unknown-unknown",
+      public_key: immutableKey,
       establishment_method: "lossless_migration",
       decision_id: null,
       proposal_basis: {
-        action: "unknown",
+        durable_application_id: "application:0123456789abcdef01234567",
         route_key: "q1",
-        scope_kind: "unknown",
-        scope_record_ids: "",
-        treatment_display_name: "Bus lane",
         treatment_family_key: "bus-lane",
       },
     };
     const refined: PublicKeyProposal = {
       ...original,
-      public_key: "q1-bus-lane-add-bounded-segment-main-st",
-      proposal_basis: {
-        ...original.proposal_basis,
-        action: "add",
-        scope_kind: "bounded_segment",
-        scope_record_ids: "corridor_main_st",
-      },
     };
     const establishment = publicKeyEstablishOperation(original);
     const migration = reconcilePublicKeyMigration({
@@ -81,7 +79,7 @@ describe("resolved transit public key registry", () => {
       key_kind: original.key_kind,
       subject_id: original.subject_id,
       prior_public_key: original.public_key,
-      public_key: refined.public_key,
+      public_key: "q1-bus-lane-component-aaaaaaaaaaaaaaaaaaaaaaaa",
       decision_id: "display:accepted-key-supersession",
       issued_at: "2026-07-29T00:00:00Z",
       rationale: "Remove mutable placeholders from the live presentation key.",
@@ -91,7 +89,7 @@ describe("resolved transit public key registry", () => {
       original.key_kind,
       original.subject_id,
     );
-    expect(renamed?.public_key).toBe(refined.public_key);
+    expect(renamed?.public_key).toBe("q1-bus-lane-component-aaaaaaaaaaaaaaaaaaaaaaaa");
     expect(renamed?.public_key_aliases).toContain(original.public_key);
 
     const stale = publicKeySupersedeOperation({
