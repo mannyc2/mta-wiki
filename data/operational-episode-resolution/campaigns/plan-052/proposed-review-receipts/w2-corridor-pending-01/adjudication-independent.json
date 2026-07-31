@@ -1,0 +1,805 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w2-corridor-pending-01",
+  "review_role": "independent_adjudication",
+  "reviewer": "plan-052-corridor01-blind-adjudicator",
+  "created_at": "2026-07-31T00:34:48.000Z",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-corridor-pending-01.json",
+  "manifest_sha256": "95711643dc8d356f7e31bd6bd2f8757e36b1b58874509b4f3a533a76ab255268",
+  "review_complete": true,
+  "frozen_inputs": {
+    "batch_manifest": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-corridor-pending-01.json",
+      "sha256": "95711643dc8d356f7e31bd6bd2f8757e36b1b58874509b4f3a533a76ab255268"
+    },
+    "paired_evidence_manifest": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-corridor-pending-02.json",
+      "sha256": "09dd2aee03d7a4e5fc1ec43406b7a2b6dd2a90feedd29b3fc199bd9c33fbe00b"
+    },
+    "cohort_hashes": {
+      "adapter_input_sha256": "a680ca465b8f5d267b09517f86106ab9a24f649998a8b30a624f851c951dab16",
+      "candidate_input_sha256": "8ffb7eb0ac962ed2ffe0b8211fb499aa7759ddd04639a9740373bf7fb07274ed",
+      "candidate_membership_sha256": "1c191217b3d3cd7c17c2e3c8e281dbc1e84d19fa533425c8f796984658fb1713",
+      "evidence_input_sha256": "8c8af5535220d78f3770da3f55c36baf92ed22fd975c5573b2b42a54dd682372",
+      "observation_membership_sha256": "5d1a48d450fe8ffe5e5c7a8ef6d9d514a226f3d875c3215e753c1fae2aac41c6"
+    },
+    "immutable_starting_provenance": {
+      "adapter_fingerprint": "de51c8db4353cc8774d4c55bea3fcba8103ecdee3a38898b85b61733eccf07b9",
+      "cohort_fingerprint": "94dfd16c1c57362b220fb8ce53b8325e6ca166c1e697d9001da8b66f6483e373",
+      "commit_sha": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+      "corpus_fingerprint": "318cee05f0c7288fd28084df44b6b036f0607ffdfb76b3d6c6fcd14118f479c5",
+      "decision_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "frontier_artifacts": [
+        {
+          "bytes": 860230,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+          "sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2"
+        },
+        {
+          "bytes": 720438,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/cohort.json",
+          "sha256": "59e4c2fbdb389255442c00ac06204b6798fed64742d80489441cd5524a912a61"
+        },
+        {
+          "bytes": 1374322,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/observation_ledger.jsonl",
+          "sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f"
+        },
+        {
+          "bytes": 21408,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/summary.json",
+          "sha256": "4baf594cea14431b2f2c125c19c554755ecf167be6b81f399152873a5cd35545"
+        }
+      ],
+      "identity_fingerprint": "6827adf67650c81fa38d30b1dfbaf6be5282a45491b058b3ed44167aa287d26e",
+      "review_fingerprint": "3989ac8637527e5862f18b7a6c4f7f2699078eb992a2675b16a23af525fd1d24"
+    },
+    "evidence_source_pin_count": 48,
+    "evidence_source_pins_verified": true,
+    "evidence_source_pin_failures": [],
+    "paired_evidence_source_pin_count": 46,
+    "paired_evidence_source_pins_verified": true,
+    "paired_evidence_source_pin_failures": [],
+    "frozen_frontier_verified": true
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "findings": [
+    {
+      "candidate_id": "candidate:09d029cfaedf6e61d279d372",
+      "candidate_key": "event:event_ace-cameras-34th-st-aug2020",
+      "observation_event_record_ids": [
+        "event_ace-cameras-34th-st-aug2020"
+      ],
+      "observation_relation_record_ids": [
+        "relation_rel-project-has-timeline-ace-cameras-2020"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "34th_st_enhanced_bus_priority_cb4_may2025#p023_c0002",
+          "record_id": "event_ace-cameras-34th-st-aug2020",
+          "source_id": "34th_st_enhanced_bus_priority_cb4_may2025"
+        }
+      ],
+      "source_ids": [
+        "34th_st_enhanced_bus_priority_cb4_may2025"
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "The source states that ACE cameras were in effect on 34th Street for M34/M34A SBS from 2020-08-10, but the frozen canonical route identities are split candidates and there is no source-specific canonical ACE treatment record that can support an exact exhaustive application.",
+      "known_facts": [
+        "ACE on-bus and fixed-location cameras were in effect on 34th Street for M34/M34A SBS from August 10, 2020."
+      ],
+      "evidence_gaps": [
+        "An exact canonical route identity and source-specific canonical treatment binding are not both available."
+      ],
+      "prohibited_inferences": [
+        "Do not publish an M34 or M34A route-treatment application from the bundled route mention.",
+        "Do not infer one application per named route without canonical identity resolution."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:1f9ec8221329e8dc1c2b050d",
+      "candidate_key": "event:event_2018-cropsey-ave-project",
+      "observation_event_record_ids": [
+        "event_2018-cropsey-ave-project"
+      ],
+      "observation_relation_record_ids": [
+        "relation_2018-cropsey-project-timeline"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "bay_pkwy_cropsey_ave_jan2025#p015_c0002",
+          "record_id": "event_2018-cropsey-ave-project",
+          "source_id": "bay_pkwy_cropsey_ave_jan2025"
+        }
+      ],
+      "source_ids": [
+        "bay_pkwy_cropsey_ave_jan2025"
+      ],
+      "recommended_disposition": "published",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "The source exhaustively identifies one 2018 bus boarding island treatment and the two routes whose layover it serves, authorizing two explicit applications without a cross-product inference.",
+      "known_facts": [
+        "The 2018 Cropsey Avenue project included a bus boarding island for B6 and B82-SBS layover in front of I.S. 281."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not extend the island to other routes listed elsewhere in the corridor presentation.",
+        "Do not infer a more precise onset than calendar year 2018."
+      ],
+      "applications": [
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_b6-2015-sbk-corridor",
+          "treatment_record_id": "treatment_bus-boarding-island-cropsey",
+          "phase_record_id": "event_2018-cropsey-ave-project",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "bay_pkwy_cropsey_ave_jan2025#p015_c0002"
+          ]
+        },
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_b82-sbs",
+          "treatment_record_id": "treatment_bus-boarding-island-cropsey",
+          "phase_record_id": "event_2018-cropsey-ave-project",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "bay_pkwy_cropsey_ave_jan2025#p015_c0002"
+          ]
+        }
+      ],
+      "blocked_applications": [],
+      "onset": {
+        "date": "2018",
+        "precision": "year",
+        "source_date_text": "2018",
+        "evidence_ids": [
+          "bay_pkwy_cropsey_ave_jan2025#p015_c0002"
+        ],
+        "authorizes_publication": true
+      },
+      "scope": {
+        "kind": "explicit_route_treatment_incidence",
+        "route_count": 2,
+        "treatment_count": 1,
+        "application_count": 2,
+        "cross_product_inferred": false,
+        "exhaustive": true
+      },
+      "status": "ready_for_integration",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:3493b460514dbc2bf51b5049",
+      "candidate_key": "event:event_dekalb-lafayette-summer2024-temp-lanes",
+      "observation_event_record_ids": [
+        "event_dekalb-lafayette-summer2024-temp-lanes"
+      ],
+      "observation_relation_record_ids": [
+        "relation_b38-has-summer2024-temp-lane-event",
+        "relation_project-has-timeline-summer2024",
+        "relation_temp-bus-lanes-has-summer2024-event"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "dekalb_lafayette_cb2_dec2024#p026_c0002",
+          "record_id": "event_dekalb-lafayette-summer2024-temp-lanes",
+          "source_id": "dekalb_lafayette_cb2_dec2024"
+        }
+      ],
+      "source_ids": [
+        "dekalb_lafayette_cb2_dec2024"
+      ],
+      "recommended_disposition": "published",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "The source retrospectively states that temporary bus lanes were installed in Summer 2024 and that those lanes improved B38 service, proving one route-treatment application and seasonal onset.",
+      "known_facts": [
+        "Temporary bus lanes were installed on portions of DeKalb and Lafayette Avenues during the Summer 2024 G Train shutdown.",
+        "The same source explicitly says the lanes improved B38 service."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not add shuttle routes or any other route not explicitly bound to the temporary lanes.",
+        "Do not infer a month or day within Summer 2024."
+      ],
+      "applications": [
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_b38",
+          "treatment_record_id": "treatment_temp-bus-lanes-summer2024",
+          "phase_record_id": "event_dekalb-lafayette-summer2024-temp-lanes",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "dekalb_lafayette_cb2_dec2024#p026_c0002"
+          ]
+        }
+      ],
+      "blocked_applications": [],
+      "onset": {
+        "date": "2024-summer",
+        "precision": "season",
+        "source_date_text": "Summer 2024",
+        "evidence_ids": [
+          "dekalb_lafayette_cb2_dec2024#p026_c0002"
+        ],
+        "authorizes_publication": true
+      },
+      "scope": {
+        "kind": "explicit_route_treatment_incidence",
+        "route_count": 1,
+        "treatment_count": 1,
+        "application_count": 1,
+        "cross_product_inferred": false,
+        "exhaustive": true
+      },
+      "status": "ready_for_integration",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:38ce9289f7e4b98ecd1f3caf",
+      "candidate_key": "event:event_able-implementation-nov18-2022",
+      "observation_event_record_ids": [
+        "event_able-implementation-nov18-2022"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-has-event-able-impl-jun2023"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "fordham_rd_inwood_cb7_jun2023#p023_c0002",
+          "record_id": "event_able-implementation-nov18-2022",
+          "source_id": "fordham_rd_inwood_cb7_jun2023"
+        },
+        {
+          "evidence_id": "fordham_rd_inwood_cb7_jun2023#p049_c0002",
+          "record_id": "event_able-implementation-nov18-2022",
+          "source_id": "fordham_rd_inwood_cb7_jun2023"
+        }
+      ],
+      "source_ids": [
+        "fordham_rd_inwood_cb7_jun2023"
+      ],
+      "recommended_disposition": "published",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "The source explicitly states that ABLE was implemented on all Bx12-SBS buses on 2022-11-18, proving one route-treatment application and day-precision onset.",
+      "known_facts": [
+        "ABLE was implemented on all Bx12-SBS buses on November 18, 2022 with a 60-day warning period."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not extend this application to other Fordham Road routes.",
+        "Do not treat the summons start date as the implementation onset."
+      ],
+      "applications": [
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_bx12-plus",
+          "treatment_record_id": "treatment_able-enforcement",
+          "phase_record_id": "event_able-implementation-nov18-2022",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "fordham_rd_inwood_cb7_jun2023#p023_c0002",
+            "fordham_rd_inwood_cb7_jun2023#p049_c0002"
+          ]
+        }
+      ],
+      "blocked_applications": [],
+      "onset": {
+        "date": "2022-11-18",
+        "precision": "day",
+        "source_date_text": "November 18, 2022",
+        "evidence_ids": [
+          "fordham_rd_inwood_cb7_jun2023#p023_c0002",
+          "fordham_rd_inwood_cb7_jun2023#p049_c0002"
+        ],
+        "authorizes_publication": true
+      },
+      "scope": {
+        "kind": "explicit_route_treatment_incidence",
+        "route_count": 1,
+        "treatment_count": 1,
+        "application_count": 1,
+        "cross_product_inferred": false,
+        "exhaustive": true
+      },
+      "status": "ready_for_integration",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:3a328b5d3aad08957d3b653f",
+      "candidate_key": "event:event_implement-fulton-to-atlantic-summer2019",
+      "observation_event_record_ids": [
+        "event_implement-fulton-to-atlantic-summer2019"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-has-timeline-implement-fulton-may2019"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "malcolm_x_blvd_utica_ave_may2019#p021_c0002",
+          "record_id": "event_implement-fulton-to-atlantic-summer2019",
+          "source_id": "malcolm_x_blvd_utica_ave_may2019"
+        }
+      ],
+      "source_ids": [
+        "malcolm_x_blvd_utica_ave_may2019"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:bfbdd7c7a4367ca16b504a89",
+      "canonical_candidate_id": "candidate:bfbdd7c7a4367ca16b504a89",
+      "assessment": "The Summer 2019 Fulton-to-Atlantic implementation wording is co-referential with the later retrospective July-December 2019 Fulton-to-Atlantic event.",
+      "known_facts": [
+        "Both candidates describe implementation of the same Fulton Street-to-Atlantic Avenue phase on Malcolm X Boulevard in 2019."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not publish a second occurrence from this alias.",
+        "Do not preserve the less precise prospective date as a separate delivered phase."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:4094c4e2a2b295c159afa65b",
+      "candidate_key": "event:event_curbside-bus-lanes-intro-2008",
+      "observation_event_record_ids": [
+        "event_curbside-bus-lanes-intro-2008"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-timeline-curbside-lanes-2008"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "34th_st_enhanced_bus_priority_cb5_jan2025#p008_c0002",
+          "record_id": "event_curbside-bus-lanes-intro-2008",
+          "source_id": "34th_st_enhanced_bus_priority_cb5_jan2025"
+        }
+      ],
+      "source_ids": [
+        "34th_st_enhanced_bus_priority_cb5_jan2025"
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "This is the selected representative for the 2008 34th Street curbside bus-lane event, but the source does not resolve exact canonical M34/M34A route incidence into exhaustive applications.",
+      "known_facts": [
+        "Curbside bus lanes were introduced on 34th Street in 2008."
+      ],
+      "evidence_gaps": [
+        "The bundled M34/M34A route identity and exact per-route treatment incidence remain unresolved."
+      ],
+      "prohibited_inferences": [
+        "Do not create M34 and M34A applications from a bundled corridor statement.",
+        "Do not infer treatment incidence solely from temporal proximity to the SBS history."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:4af8c545ae3df68902e071f0",
+      "candidate_key": "event:event_bx12-sbs-launch-2008_3",
+      "observation_event_record_ids": [
+        "event_bx12-sbs-launch-2008_3"
+      ],
+      "observation_relation_record_ids": [
+        "relation_bx12-sbs-has-timeline-event-launch-2008"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "fordham_rd_major_deegan_expwy_boston_rd_cab_feb2021#p006_c0003",
+          "record_id": "event_bx12-sbs-launch-2008_3",
+          "source_id": "fordham_rd_major_deegan_expwy_boston_rd_cab_feb2021"
+        },
+        {
+          "evidence_id": "fordham_rd_major_deegan_expwy_boston_rd_cab_feb2021#p006_c0005",
+          "record_id": "event_bx12-sbs-launch-2008_3",
+          "source_id": "fordham_rd_major_deegan_expwy_boston_rd_cab_feb2021"
+        }
+      ],
+      "source_ids": [
+        "fordham_rd_major_deegan_expwy_boston_rd_cab_feb2021"
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "This is the selected representative for the 2008 Bx12 SBS launch, but a route launch alone does not exhaustively prove the route-treatment incidence required by the publication contract.",
+      "known_facts": [
+        "MTA and DOT launched the first Select Bus Service route on the Bx12 in 2008."
+      ],
+      "evidence_gaps": [
+        "No exhaustive atomic treatment list is bound to this launch candidate by the cited evidence."
+      ],
+      "prohibited_inferences": [
+        "Do not synthesize an SBS treatment bundle from general program knowledge.",
+        "Do not publish a route-only launch as a route-treatment occurrence."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:4f620ca153ff7aed15d475be",
+      "candidate_key": "event:event_tentative-implementation-summer2025",
+      "observation_event_record_ids": [
+        "event_tentative-implementation-summer2025"
+      ],
+      "observation_relation_record_ids": [
+        "relation_rel-project-timeline-summer2025-impl"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "116_st_morningside_ave_pleasant_ave_cb10_jun2025#p032_c0002",
+          "record_id": "event_tentative-implementation-summer2025",
+          "source_id": "116_st_morningside_ave_pleasant_ave_cb10_jun2025"
+        }
+      ],
+      "source_ids": [
+        "116_st_morningside_ave_pleasant_ave_cb10_jun2025"
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "This is the selected representative for tentative Summer 2025 implementation of the 116th Street project, but the cited material is prospective and does not prove delivered treatment incidence.",
+      "known_facts": [
+        "The presentation described Summer 2025 as a tentative implementation period."
+      ],
+      "evidence_gaps": [
+        "No retrospective delivered-state evidence establishes exact route-treatment applications."
+      ],
+      "prohibited_inferences": [
+        "Do not convert a tentative schedule into delivered onset.",
+        "Do not infer current footprint from a project timeline."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:5e7fcd1846aa832a66307396",
+      "candidate_key": "event:event_bx12-sbs-launch-2008_2",
+      "observation_event_record_ids": [
+        "event_bx12-sbs-launch-2008_2"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-event-bx12-sbs-launch"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "fordham_rd_major_deegan_expwy_boston_rd_cab_jan2021#p017_c0002",
+          "record_id": "event_bx12-sbs-launch-2008_2",
+          "source_id": "fordham_rd_major_deegan_expwy_boston_rd_cab_jan2021"
+        }
+      ],
+      "source_ids": [
+        "fordham_rd_major_deegan_expwy_boston_rd_cab_jan2021"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:4af8c545ae3df68902e071f0",
+      "canonical_candidate_id": "candidate:4af8c545ae3df68902e071f0",
+      "assessment": "This 2008 Bx12 SBS launch record is an exact co-reference to the selected Bx12 launch representative.",
+      "known_facts": [
+        "Both candidates identify the same Bx12 SBS launch in 2008."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not publish a second launch occurrence from this alias."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:63eee0dc5fb645c9a4e177c3",
+      "candidate_key": "event:event_upgrade-articulated-buses-2019-2020",
+      "observation_event_record_ids": [
+        "event_upgrade-articulated-buses-2019-2020"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-has-timeline-event-articulated-buses"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "malcolm_x_blvd_utica_ave_jun2019#p015_c0002",
+          "record_id": "event_upgrade-articulated-buses-2019-2020",
+          "source_id": "malcolm_x_blvd_utica_ave_jun2019"
+        },
+        {
+          "evidence_id": "malcolm_x_blvd_utica_ave_jun2019#p017_c0002",
+          "record_id": "event_upgrade-articulated-buses-2019-2020",
+          "source_id": "malcolm_x_blvd_utica_ave_jun2019"
+        }
+      ],
+      "source_ids": [
+        "malcolm_x_blvd_utica_ave_jun2019"
+      ],
+      "recommended_disposition": "published",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "A retrospective source pinned in the paired corridor review proves that B46 SBS was upgraded to articulated buses in January 2020, but no B46-specific canonical articulated-bus treatment record exists, so the exact application cannot yet be serialized.",
+      "known_facts": [
+        "B46 SBS was upgraded to articulated buses in January 2020.",
+        "The frozen canonical route record route_utica-ave-sbs identifies the B46 SBS route."
+      ],
+      "evidence_gaps": [
+        "A B46-specific canonical treatment component for the articulated-bus upgrade is absent."
+      ],
+      "prohibited_inferences": [
+        "Do not substitute an unrelated articulated-bus treatment record.",
+        "Do not write a canonical treatment record from this review receipt.",
+        "Do not infer a day within January 2020."
+      ],
+      "applications": [],
+      "blocked_applications": [
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_utica-ave-sbs",
+          "treatment_record_id": null,
+          "treatment_literal": "B46 SBS upgrade to articulated buses",
+          "phase_record_id": "event_upgrade-articulated-buses-2019-2020",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "malcolm_x_blvd_utica_ave_mar2020#p004_c0002"
+          ]
+        }
+      ],
+      "onset": {
+        "date": "2020-01",
+        "precision": "month",
+        "source_date_text": "January 2020",
+        "evidence_ids": [
+          "malcolm_x_blvd_utica_ave_mar2020#p004_c0002"
+        ],
+        "authorizes_publication": true
+      },
+      "scope": {
+        "kind": "explicit_route_treatment_incidence",
+        "route_count": 1,
+        "treatment_count": 1,
+        "application_count": 1,
+        "cross_product_inferred": false,
+        "exhaustive": true,
+        "serialization_blocked": true
+      },
+      "status": "blocked_pending_canonical_treatment_record",
+      "blockers": [
+        "schema-blocker:b46-articulated-treatment-record"
+      ]
+    },
+    {
+      "candidate_id": "candidate:768bb30e4509f428e9297a05",
+      "candidate_key": "event:event_articulated-bus-upgrade-2019-2020",
+      "observation_event_record_ids": [
+        "event_articulated-bus-upgrade-2019-2020"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-has-timeline-articulated-bus-may2019"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "malcolm_x_blvd_utica_ave_may2019#p019_c0002",
+          "record_id": "event_articulated-bus-upgrade-2019-2020",
+          "source_id": "malcolm_x_blvd_utica_ave_may2019"
+        },
+        {
+          "evidence_id": "malcolm_x_blvd_utica_ave_may2019#p021_c0002",
+          "record_id": "event_articulated-bus-upgrade-2019-2020",
+          "source_id": "malcolm_x_blvd_utica_ave_may2019"
+        }
+      ],
+      "source_ids": [
+        "malcolm_x_blvd_utica_ave_may2019"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:63eee0dc5fb645c9a4e177c3",
+      "canonical_candidate_id": "candidate:63eee0dc5fb645c9a4e177c3",
+      "assessment": "The articulated-bus upgrade event is co-referential with the selected B46 SBS articulated-bus upgrade representative.",
+      "known_facts": [
+        "Both candidates describe the same B46 SBS articulated-bus upgrade across the 2019-2020 project timeline."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not publish a second occurrence from this alias.",
+        "Do not interpret the prospective wording as a distinct delivered phase."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:8fd55b632c8d81ae36d25c13",
+      "candidate_key": "event:event_busway-start-oct2021",
+      "observation_event_record_ids": [
+        "event_busway-start-oct2021"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-has-event-start"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "jamaica_archer_brochure#p001_c0027",
+          "record_id": "event_busway-start-oct2021",
+          "source_id": "jamaica_archer_brochure"
+        }
+      ],
+      "source_ids": [
+        "jamaica_archer_brochure"
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "The brochure proves the Jamaica/Archer busway start date but reports only aggregate route counts rather than exact route identities, so exhaustive route-treatment applications cannot be serialized.",
+      "known_facts": [
+        "The busway began on October 24, 2021.",
+        "The brochure describes aggregate service by 14 daytime and 19 overnight bus routes."
+      ],
+      "evidence_gaps": [
+        "The exact exhaustive set of route record IDs served by the busway is not enumerated."
+      ],
+      "prohibited_inferences": [
+        "Do not expand aggregate route counts into guessed route identities.",
+        "Do not publish a corridor-only busway onset without exact applications."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:a11d4dbd658ca1d4d5e5001f",
+      "candidate_key": "event:event_m34-sbs-launch-nov2011_2",
+      "observation_event_record_ids": [
+        "event_m34-sbs-launch-nov2011_2"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-timeline-sbs-launch-2011"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "34th_st_enhanced_bus_priority_cb5_jan2025#p008_c0002",
+          "record_id": "event_m34-sbs-launch-nov2011_2",
+          "source_id": "34th_st_enhanced_bus_priority_cb5_jan2025"
+        }
+      ],
+      "source_ids": [
+        "34th_st_enhanced_bus_priority_cb5_jan2025"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:d3c647e315bf04d66d4ffefb",
+      "canonical_candidate_id": "candidate:d3c647e315bf04d66d4ffefb",
+      "assessment": "This November 2011 M34 SBS launch record is an exact co-reference to the selected M34/M34A SBS launch representative.",
+      "known_facts": [
+        "Both candidates identify the same 2011 launch of M34/M34A Select Bus Service."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not publish a second launch occurrence from this alias."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    }
+  ],
+  "arithmetic": {
+    "assigned_candidate_count": 13,
+    "finding_count": 13,
+    "published_count": 4,
+    "duplicate_alias_count": 4,
+    "insufficient_evidence_count": 5,
+    "outside_domain_count": 0,
+    "rejected_count": 0,
+    "serialized_application_count": 4,
+    "blocked_application_count": 1,
+    "accounted_candidate_count": 13,
+    "balanced": true
+  },
+  "schema_blockers": [
+    {
+      "blocker_id": "schema-blocker:b46-articulated-treatment-record",
+      "candidate_id": "candidate:63eee0dc5fb645c9a4e177c3",
+      "condition": "Exact paired manifest-pinned retrospective evidence proves the B46 SBS articulated-bus upgrade in January 2020, but the frozen canonical corpus has no B46-specific articulated-bus treatment component to bind.",
+      "required_resolution": "Create and independently review a source-backed canonical B46 articulated-bus treatment component, then bind route_utica-ave-sbs, that treatment, and event_upgrade-articulated-buses-2019-2020.",
+      "canonical_mutation_required": true,
+      "receipt_authorizes_mutation": false,
+      "evidence_ids": [
+        "malcolm_x_blvd_utica_ave_mar2020#p004_c0002"
+      ]
+    }
+  ],
+  "isolation": {
+    "clean_room_review": true,
+    "primary_receipts_read": false,
+    "independent_receipts_read": false,
+    "adjudication_receipts_read": false,
+    "reconciliation_receipts_read": false,
+    "integration_receipts_read": false,
+    "evidence_gap_receipts_read": false,
+    "stop_receipts_read": false,
+    "git_diff_or_other_agent_output_read": false,
+    "provider_called": false,
+    "named_manifests_and_frozen_rows_only": true,
+    "paired_manifest_read_for_cross_batch_evidence": true,
+    "canonical_records_and_manifest_pinned_sources_only": true,
+    "shared_writes": false,
+    "canonical_or_frontier_mutation": false,
+    "written_paths": [
+      "data/operational-episode-resolution/campaigns/plan-052/proposed-review-receipts/w2-corridor-pending-01/adjudication-independent.json"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-post-accept-authority-restoration-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w2-bus-priority-pending-01",
+  "recorded_at": "2026-07-30T18:10:00.000Z",
+  "integrator": "plan-052-single-frontier-integrator",
+  "path": "data/operational-episode-resolution/campaigns/plan-052/proposed-review-receipts/w2-bus-priority-pending-01/adjudication-independent.json",
+  "accepted_original": {
+    "byte_count": 63096,
+    "sha256": "e4250071f4a37aa3efe76945a512013ec65344d9a9033d4f0c291c93df0c93fb"
+  },
+  "accidental_post_accept_mutation": {
+    "byte_count": 63361,
+    "sha256": "4b0959259b5f6b60864c5c5e78331c9380866f9d49acc2cbaddcfcbc78b8177e",
+    "added_fields": [
+      "manifest_path",
+      "manifest_sha256",
+      "provider_usage.provider_called",
+      "provider_usage.estimated_cost_usd"
+    ],
+    "semantic_findings_changed": false
+  },
+  "restoration": {
+    "operation": "Remove exactly the four post-accept compatibility fields and restore the accepted reported bytes.",
+    "expected_byte_count": 63096,
+    "expected_sha256": "e4250071f4a37aa3efe76945a512013ec65344d9a9033d4f0c291c93df0c93fb"
+  },
+  "reason": "The reviewer modified its compatibility envelope after the single-writer integrator had accepted and hash-pinned the reported e425... bytes. Deterministic diagnosis proved the mutation added only four redundant envelope fields. Restoring the accepted bytes preserves the immutable authority and every downstream receipt pin; the mutation and restoration remain permanently auditable here.",
+  "publication_or_release_authorized": false
+}

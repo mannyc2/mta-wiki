@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "batch_id": "w1-characterization",
+  "reviewer": "plan-052-primary-characterization",
+  "review_role": "primary",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w1-characterization.json",
+  "manifest_sha256": "b96adbd4878a5abfae2cd9523c3534239195ea876dc0877fffc5abc8a99fbe7e",
+  "manifest_verification": {
+    "candidate_count": 30,
+    "published_count": 18,
+    "pending_count": 12,
+    "observation_count": 33,
+    "status": "pass"
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "review_complete": true,
+  "stop": false,
+  "conformance": {
+    "status": "pass",
+    "candidate_ids": [
+      "candidate:fdb0996559f52e8f0303ac1e",
+      "candidate:bc3af61e8e8faf45202daa06",
+      "candidate:b5f53263fdbf92efc04b98e4",
+      "candidate:d29162b2b125ffccac945d79",
+      "candidate:9c30e538fa63b2f4a0b8629e",
+      "candidate:5869244004949dd6a7ef652e",
+      "candidate:fa8d92583c278bfcf8f0f5dc",
+      "candidate:6d19f1cc63b3315494b43743",
+      "candidate:9d1f3c0e9fc5bf867b5ca3c2",
+      "candidate:112b22f996a45af91cb3ebb9",
+      "candidate:2f6cc9f56f959b89a829bd16",
+      "candidate:03b50ad4dc550953706514a5",
+      "candidate:0412e2f2c3cffe8b2d0bbb23",
+      "candidate:02e4ee27eca455874f0edb4d",
+      "candidate:08261cb9526e35e4e6652aa1",
+      "candidate:079d1298921cadb340e8dd03",
+      "candidate:914b0589afcb11b6d7db759b",
+      "candidate:e8ad808d103bbbe1a9e70ac6"
+    ],
+    "assessment": "All 18 frozen published candidates conform to their accepted identity, exact review, and route-treatment incidence."
+  },
+  "findings": [
+    {
+      "candidate_id": "candidate:089c5dca117ab12f156ec032",
+      "candidate_key": "event:event_broadway-center-running-bus-lane-installation-confirmed",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "Delivered lane evidence does not establish exact route incidence within this candidate's evidence membership."
+    },
+    {
+      "candidate_id": "candidate:0065d35d05693332aeb8b1ef",
+      "candidate_key": "event:event_bus-lane-implementation-fall-2015",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The candidate has unresolved temporal and coreference framing against other Utica corpus observations."
+    },
+    {
+      "candidate_id": "candidate:1231d55f0a2a808692101b1c",
+      "candidate_key": "event:event_bx35-late-spring-fall-2020-implementation",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The evidence is proposed and forward-looking rather than proof of completed implementation."
+    },
+    {
+      "candidate_id": "candidate:061d89f4090bae3d8d422e25",
+      "candidate_key": "event:event_dekalb-lafayette-implementation-summerfall2025",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The evidence is planned rather than proof of completed implementation."
+    },
+    {
+      "candidate_id": "candidate:002e8ac7107b222e82e03c82",
+      "candidate_key": "event:event_machine-installation-oct4-2011",
+      "recommended_disposition": "published",
+      "assessment": "Direct evidence supports M34 and historical M16/pre-M34A incidence with off-board fare collection at the October 4 machine-installation phase."
+    },
+    {
+      "candidate_id": "candidate:001098617ce238bef5e9cbc4",
+      "candidate_key": "event:event_new-years-eve-program-2025",
+      "recommended_disposition": "outside_domain",
+      "assessment": "LIRR-only holiday rail service is outside the bus intervention domain."
+    },
+    {
+      "candidate_id": "candidate:000c6dc834dffa5ef7e98f7f",
+      "candidate_key": "event:event_platform-f-in-service",
+      "recommended_disposition": "outside_domain",
+      "assessment": "Rail platform and station-track infrastructure is outside the bus intervention domain."
+    },
+    {
+      "candidate_id": "candidate:00a57691fb4583cceadb9be0",
+      "candidate_key": "event:event_q52-q53-sbs-launch-nov2017_2",
+      "recommended_disposition": "published",
+      "assessment": "Direct evidence supports Q52-SBS and Q53-SBS launch incidence with off-board fare collection."
+    },
+    {
+      "candidate_id": "candidate:09d24ae40bf93ee46e8eb095",
+      "candidate_key": "event:event_redesign-restart-aug2021",
+      "recommended_disposition": "outside_domain",
+      "assessment": "The administrative redesign restart is outside the route-treatment occurrence product."
+    },
+    {
+      "candidate_id": "candidate:028228114b28e6cee3ddd224",
+      "candidate_key": "event:event_sbs-implementation-2012_2",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "A target 2012 start does not prove delivered implementation."
+    },
+    {
+      "candidate_id": "candidate:02cad757a6d52baca3130545",
+      "candidate_key": "event:event_tsp-installation-2022",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "Flatbush TSP installation is proven, but exact route incidence is not established; terminal nonpublication is recommended rather than an inferred incidence."
+    },
+    {
+      "candidate_id": "candidate:00d747ca94c86213e5c59992",
+      "candidate_key": "event:event_us-open-2026-shinnecock",
+      "recommended_disposition": "outside_domain",
+      "assessment": "LIRR event service is outside the bus intervention domain."
+    }
+  ],
+  "evidence_binding_source": {
+    "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+    "candidate_ledger_sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2",
+    "rule": "Each finding is restricted to the exact candidate row and manifest-pinned source files."
+  },
+  "observation_only_conformance": {
+    "count": 3,
+    "disposition": "not_episode_evidence",
+    "status": "pass"
+  },
+  "expected_post_wave_arithmetic": {
+    "wave1_candidates": {
+      "published": 20,
+      "outside_domain": 4,
+      "insufficient_evidence": 6,
+      "total": 30
+    },
+    "global_after_wave0": {
+      "published": 133,
+      "retired": 4,
+      "outside_domain": 4,
+      "insufficient_evidence": 6,
+      "pending_review": 619,
+      "candidate_total": 766,
+      "candidate_bearing_observations": 150,
+      "pending_segmentation_observations": 617,
+      "pending_count": 1236,
+      "invalid_count": 0
+    }
+  },
+  "integration_authorization": "blocked_by_cross-review_disagreement"
+}

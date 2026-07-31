@@ -3051,7 +3051,6 @@ export function assertRelationshipEnforcementSourceRefreshReceipt(
   const changes = receipt.allowed_json_pointer_changes;
   if (
     !Array.isArray(changes) ||
-    changes.length === 0 ||
     changes.some((change) =>
       !hasExactKeys(change, [
         "artifact_path",

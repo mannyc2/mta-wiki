@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "receipt_status": "proposed",
+  "batch_id": "w2-meeting-docs-pending-01",
+  "reviewer": "plan-052-independent-adjudicator-meeting-docs-pending-01-five-case",
+  "review_role": "independent_adjudication",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-01.json",
+  "manifest_sha256": "40bcda03e39158abb62170ada7cff4a7e7bf3a29dece534a86b3d8c3be36fa91",
+  "manifest_verification": {
+    "manifest_candidate_count": 43,
+    "manifest_observation_count": 108,
+    "adjudication_candidate_count": 5,
+    "adjudication_observation_count": 5,
+    "candidate_ledger_sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2",
+    "observation_ledger_sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f",
+    "status": "pass"
+  },
+  "adjudication_scope": {
+    "candidate_ids": [
+      "candidate:088739db939c96f629a3300d",
+      "candidate:0ad2fb93b633c3f10e37d137",
+      "candidate:1aa07d05242c6d0e9fca12b0",
+      "candidate:1ab1d644f895ad6d1c77e1ea",
+      "candidate:2858bb5b77047d46d606e372"
+    ],
+    "observation_event_record_ids": [
+      "event_si-express-bus-redesign-2018",
+      "event_fare-free-bus-pilot-launch",
+      "event_170921-queens-bus-phase1-launch",
+      "event_omny-fare-capping-effective",
+      "event_qbnr-implementation-2025"
+    ]
+  },
+  "source_pins": [
+    {
+      "source_id": "meeting_doc_121271",
+      "path": "wiki/sources/meeting_doc_121271.md",
+      "sha256": "8cf34c59ebea48d64c7b29755d00d2f3568aab2a22e653ffb6d7c89d355f2de4"
+    },
+    {
+      "source_id": "meeting_doc_170921",
+      "path": "wiki/sources/meeting_doc_170921.md",
+      "sha256": "c9d9bf973015e36b3dba6c440db6dcca1df1f351aa2d16a6eb7f86e5ff116f36"
+    },
+    {
+      "source_id": "meeting_doc_176441",
+      "path": "wiki/sources/meeting_doc_176441.md",
+      "sha256": "2388c0d27f79eaa0172ee3b228ac72f83a68fd52d08a12bb917800a2d74ec0ee"
+    },
+    {
+      "source_id": "meeting_doc_199241",
+      "path": "wiki/sources/meeting_doc_199241.md",
+      "sha256": "24936f90f80f6955d15f49ebc371be197af8ae115b3119a720bbad4d046b4a01"
+    },
+    {
+      "source_id": "meeting_doc_68641",
+      "path": "wiki/sources/meeting_doc_68641.md",
+      "sha256": "26b21e04405e69d448e8934f76a6f69521fe114c0111a5e9737d3094194e9f56"
+    }
+  ],
+  "provider_usage": {
+    "provider_called": false,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "review_complete": true,
+  "stop": false,
+  "schema_blockers": [],
+  "blind_review": {
+    "primary_receipt_read": false,
+    "independent_receipt_read": false,
+    "other_reviewer_rationales_read": false,
+    "assessment_recorded_from": "Frozen manifest, frozen candidate and observation ledgers, canonical event/relation/route/treatment records, and exact manifest-pinned local source evidence only."
+  },
+  "findings": [
+    {
+      "candidate_id": "candidate:088739db939c96f629a3300d",
+      "candidate_key": "event:event_si-express-bus-redesign-2018",
+      "observation_event_record_ids": ["event_si-express-bus-redesign-2018"],
+      "observation_relation_record_ids": ["relation_project-has-event-2018-redesign"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_bindings": [
+        {
+          "source_id": "meeting_doc_176441",
+          "record_id": "event_si-express-bus-redesign-2018",
+          "evidence_id": "meeting_doc_176441#p001_c0006",
+          "text_sha256": "sha256:f1f8826518802baaf2ed1d0debbe337ef8bcd79229f5df7bfb8e4c992bf944de"
+        },
+        {
+          "source_id": "meeting_doc_176441",
+          "record_id": "event_si-express-bus-redesign-2018",
+          "evidence_id": "meeting_doc_176441#p002_c0010",
+          "text_sha256": "sha256:2aa40f36526eb0daa92e75d43b9796466e718903a625b4d9826dd330dbb01115"
+        }
+      ],
+      "known_facts": [
+        "SIM4X and SIM8X were introduced as part of the Staten Island Express Bus Redesign in August 2018.",
+        "The source says the variants were established to experiment with leveraging the Staten Island Mall Park-and-Ride.",
+        "The exact source-bound route subjects are SIM4X and SIM8X."
+      ],
+      "evidence_gap_reason": "The frozen evidence has exact route identities and a month, but it has no exact canonical treatment component for the route-variant/park-and-ride service design. Publishing would require inventing or substituting a treatment identity.",
+      "prohibited_inferences": [
+        "Do not substitute the later Fall 2025 discontinuation-and-trip-conversion proposal for the 2018 introduction treatment.",
+        "Do not use SIM4 or SIM8 full-route service as the 2018 treatment identity.",
+        "Do not mint a route-treatment application without an exact canonical treatment component."
+      ],
+      "assessment": "This is an operational, route-specific event, but exact route-treatment incidence is not fully encodable from the frozen evidence; terminal insufficient_evidence is required."
+    },
+    {
+      "candidate_id": "candidate:0ad2fb93b633c3f10e37d137",
+      "candidate_key": "event:event_fare-free-bus-pilot-launch",
+      "observation_event_record_ids": ["event_fare-free-bus-pilot-launch"],
+      "observation_relation_record_ids": ["relation_fare-free-pilot-launch-event"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_bindings": [
+        {
+          "source_id": "meeting_doc_121271",
+          "record_id": "event_fare-free-bus-pilot-launch",
+          "evidence_id": "meeting_doc_121271#p005_c0004",
+          "text_sha256": "sha256:b445f20e248ec5d3698a3a47cbeadf8dd4653446417245b577d9dfc43dc6e531"
+        }
+      ],
+      "known_facts": [
+        "The Fare Free Bus Pilot was scheduled to begin on 2023-09-24.",
+        "The meeting minutes say selected routes were identified during the presentation, but the pinned text does not name them.",
+        "The treatment is a fare-free bus pilot."
+      ],
+      "evidence_gap_reason": "The exact route subject set is absent from the pinned local text, so the pilot cannot be converted into exact route-treatment incidence.",
+      "prohibited_inferences": [
+        "Do not recover route names from memory, later reports, or the unavailable meeting video.",
+        "Do not infer a borough-wide or systemwide route set.",
+        "Do not publish the treatment without exact route incidence."
+      ],
+      "assessment": "The pilot treatment and launch date are proven, but exact route incidence is not; terminal insufficient_evidence is required."
+    },
+    {
+      "candidate_id": "candidate:1aa07d05242c6d0e9fca12b0",
+      "candidate_key": "event:event_170921-queens-bus-phase1-launch",
+      "observation_event_record_ids": ["event_170921-queens-bus-phase1-launch"],
+      "observation_relation_record_ids": ["relation_170921-queens-bus-phase1-event"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_bindings": [
+        {
+          "source_id": "meeting_doc_170921",
+          "record_id": "event_170921-queens-bus-phase1-launch",
+          "evidence_id": "meeting_doc_170921#p011_c0010",
+          "text_sha256": "sha256:e6e557af9b6421b7713cac6525d220279e330d07b29a321ca652fda6dbb8ad89"
+        }
+      ],
+      "known_facts": [
+        "The source announces Queens Bus Network Redesign Phase 1 for 2025-06-29.",
+        "The adjacent source text describes network-level goals such as faster, more reliable service, an expanded frequent network, overnight service, stop changes, and new connections.",
+        "The source directs readers to an external route lookup for route-specific details."
+      ],
+      "evidence_gap_reason": "The frozen candidate evidence establishes the phase date and umbrella program, but it does not enumerate the exact route-treatment incidence for Phase 1.",
+      "prohibited_inferences": [
+        "Do not cross every Queens route with every network-level change.",
+        "Do not import route details from an unpinned external lookup.",
+        "Do not treat a program phase date as proof that every route received every treatment."
+      ],
+      "assessment": "The rollout phase is operational and product-relevant, but exact route-treatment incidence is absent; terminal insufficient_evidence is required."
+    },
+    {
+      "candidate_id": "candidate:1ab1d644f895ad6d1c77e1ea",
+      "candidate_key": "event:event_omny-fare-capping-effective",
+      "observation_event_record_ids": ["event_omny-fare-capping-effective"],
+      "observation_relation_record_ids": ["relation_omny-fare-capping-event", "relation_omny-nyct"],
+      "recommended_disposition": "outside_domain",
+      "evidence_bindings": [
+        {
+          "source_id": "meeting_doc_68641",
+          "record_id": "event_omny-fare-capping-effective",
+          "evidence_id": "meeting_doc_68641#p003_c0002",
+          "text_sha256": "sha256:0473fecc51226f65c4eceba388340ff156e7066999f198c47052e58263893553"
+        }
+      ],
+      "known_facts": [
+        "OMNY Weekly Fare Capping was listed as effective 2/28 for NYC Transit in a presentation dated 2021-12-15.",
+        "The program automatically upgrades customers to unlimited rides after 12 full-fare rides in a Monday-Sunday period."
+      ],
+      "assessment": "This is a real systemwide fare-policy/program event applying to NYC Transit, not a bus route-treatment operational occurrence; outside_domain is the evidence-honest terminal disposition."
+    },
+    {
+      "candidate_id": "candidate:2858bb5b77047d46d606e372",
+      "candidate_key": "event:event_qbnr-implementation-2025",
+      "observation_event_record_ids": ["event_qbnr-implementation-2025"],
+      "observation_relation_record_ids": ["relation_qbnr-has-implementation-event"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_bindings": [
+        {
+          "source_id": "meeting_doc_199241",
+          "record_id": "event_qbnr-implementation-2025",
+          "evidence_id": "meeting_doc_199241#p010_c0003",
+          "text_sha256": "sha256:e331ac2f0ee7e6f353b62e81922b482d43032caedc2479653d153c457118298f"
+        },
+        {
+          "source_id": "meeting_doc_199241",
+          "record_id": "event_qbnr-implementation-2025",
+          "evidence_id": "meeting_doc_199241#p010_c0004",
+          "text_sha256": "sha256:8d33d1caed77c2e8ac6da7a1c5ee2544c4165be10d3cec5983dda22dfe1fc98d"
+        }
+      ],
+      "known_facts": [
+        "The Queens Bus Network Redesign was implemented in two phases during Summer 2025.",
+        "The implementation included thousands of bus-stop signage updates, additional street changes, more than 7,000 Guide-A-Ride inserts, and a large Customer Ambassador effort.",
+        "The source characterizes the overall redesign as successfully launched."
+      ],
+      "evidence_gap_reason": "The retrospective umbrella account does not enumerate exact route subjects or partition the several rollout treatments by route.",
+      "prohibited_inferences": [
+        "Do not cross the full Queens route network with signage, street changes, ambassadors, or rider-information treatments.",
+        "Do not substitute aggregate implementation counts for exact route incidence.",
+        "Do not publish an umbrella occurrence when exact route-treatment applications are not evidenced."
+      ],
+      "assessment": "The network rollout is operational and delivered, but exact route-treatment incidence is absent; terminal insufficient_evidence is required."
+    }
+  ],
+  "expected_adjudication_arithmetic": {
+    "published": 0,
+    "duplicate_alias": 0,
+    "outside_domain": 1,
+    "insufficient_evidence": 4,
+    "rejected": 0,
+    "terminal_candidate_total": 5,
+    "accounted_observation_total": 5
+  },
+  "integration_authorization": "pending_reconciliation_against_blinded_primary_and_independent_receipts"
+}

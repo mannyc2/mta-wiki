@@ -6,6 +6,9 @@ import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
 import type { ApplicationPlacementTransition } from "./application-placement-transitions.js";
 import type { InterventionPlacementRegistryEntry } from "./intervention-placements.js";
 import type {
+  OperationalOccurrenceOnsetPrecision,
+} from "./operational-occurrence-review.js";
+import type {
   ResolvedInterventionApplication,
 } from "./resolved-intervention-applications.js";
 import type { ResolvedInterventionEpisode } from "./resolved-interventions.js";
@@ -216,18 +219,50 @@ export function parseInterventionLifecycleAssertion(
   return assertion;
 }
 
-function pointBounds(dateValue: string, precision: "day" | "month"): {
+function pointBounds(
+  dateValue: string,
+  precision: OperationalOccurrenceOnsetPrecision,
+): {
   earliest: string;
   latest: string;
-  precision: "day" | "month";
+  precision: "day" | "month" | "year" | "range";
 } {
   if (precision === "day") return { earliest: dateValue, latest: dateValue, precision };
-  const [year, month] = dateValue.split("-").map(Number);
-  const last = new Date(Date.UTC(year!, month!, 0)).getUTCDate();
+  if (precision === "month") {
+    const [year, month] = dateValue.split("-").map(Number);
+    const last = new Date(Date.UTC(year!, month!, 0)).getUTCDate();
+    return {
+      earliest: `${dateValue}-01`,
+      latest: `${dateValue}-${String(last).padStart(2, "0")}`,
+      precision,
+    };
+  }
+  if (precision === "year") {
+    return {
+      earliest: `${dateValue}-01-01`,
+      latest: `${dateValue}-12-31`,
+      precision,
+    };
+  }
+  if (precision === "upper_bound_day") {
+    return {
+      earliest: "0001-01-01",
+      latest: dateValue,
+      precision: "range",
+    };
+  }
+  const [year, season] = dateValue.split("-");
+  const bounds = {
+    winter: ["01-01", "03-31"],
+    spring: ["04-01", "06-30"],
+    summer: ["07-01", "09-30"],
+    fall: ["10-01", "12-31"],
+  }[season!];
+  if (!bounds) throw new Error(`unsupported onset season ${dateValue}`);
   return {
-    earliest: `${dateValue}-01`,
-    latest: `${dateValue}-${String(last).padStart(2, "0")}`,
-    precision,
+    earliest: `${year}-${bounds[0]}`,
+    latest: `${year}-${bounds[1]}`,
+    precision: "range",
   };
 }
 

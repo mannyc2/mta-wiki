@@ -1,0 +1,568 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "receipt_status": "proposed",
+  "batch_id": "w2-bus-priority-pending-01",
+  "reviewer": "plan-052-primary-bus-priority-pending-01",
+  "review_role": "primary",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-bus-priority-pending-01.json",
+  "manifest_sha256": "5961721be6200a787df306892ee33388fdeca4fab1b39e6c52db8fd6d8d5584e",
+  "manifest_verification": {
+    "candidate_count": 46,
+    "starting_published_count": 0,
+    "starting_pending_review_count": 46,
+    "observation_count": 58,
+    "candidate_ledger_sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2",
+    "observation_ledger_sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f",
+    "status": "pass"
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "review_complete": true,
+  "stop": false,
+  "disagreements": null,
+  "schema_blockers": [],
+  "conformance": {
+    "status": "pass",
+    "terminal_candidate_count": 46,
+    "accounted_observation_count": 58,
+    "assessment": "Every frozen candidate and observation is accounted for exactly once. Positive findings use exact route and treatment incidence; duplicate observations preserve their source phases through aliases; no route is inferred for evidence-gap outcomes."
+  },
+  "findings": [
+    {
+      "candidate_id": "candidate:019c86ce925c27b1f907bf3a",
+      "candidate_key": "event:event_nostrand-rogers-sbs-identified-2008",
+      "observation_event_record_ids": ["event_nostrand-rogers-sbs-identified-2008"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["2010_05_17_brt_nostrand_cb15#p019_c0002"],
+      "assessment": "Identification of a corridor for future implementation is an administrative selection milestone, not a route-treatment operational occurrence."
+    },
+    {
+      "candidate_id": "candidate:01ac3a48e32abd7b5e5e7fc5",
+      "candidate_key": "event:event_2014-03-05-phase1-roadway",
+      "observation_event_record_ids": ["event_2014-03-05-phase1-roadway"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["2014_03_05_brt_webster_cb4#p034_c0002"],
+      "known_facts": ["A source timeline identifies Phase 1 roadway improvements in Spring 2013."],
+      "evidence_gap_reason": "The pinned event block does not identify the exact roadway treatment membership, so an exact route-treatment application cannot be established.",
+      "assessment": "Exact treatment membership is not proven, so terminal nonpublication is required.",
+      "prohibited_inferences": ["Do not cross-product the Bx41 route with every treatment described elsewhere in the presentation."]
+    },
+    {
+      "candidate_id": "candidate:03b369ef29856a8bbce07b7e",
+      "candidate_key": "event:event_woodhaven-crossbay-sbs-start",
+      "observation_event_record_ids": ["event_woodhaven-crossbay-sbs-start"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_q52-sbs-queens", "route_q53-sbs-ace"],
+      "treatment_record_ids": ["treatment_off-board-fare-payment-2017"],
+      "phase": {"lifecycle_phase": "in_service", "date_claim": "2017-11-12", "date_precision": "day"},
+      "evidence_ids": ["brt_route_index#p001_b0001", "2015_12_01_brt_woodhaven_cb5#p002_c0004", "brt_woodhaven_cb9_jan2016#p015_c0002"],
+      "cross_product_proof": "The pinned project evidence jointly names Q52/Q53 SBS and off-board fare payment; the route index supplies the exact service-began date. This is two explicitly named routes and one shared treatment, not an inferred plural-treatment cross-product.",
+      "assessment": "Publish one Woodhaven/Cross Bay SBS occurrence with exact Q52-SBS and Q53-SBS incidence and off-board fare payment."
+    },
+    {
+      "candidate_id": "candidate:05eaa0ba9f528fbe4803ca68",
+      "candidate_key": "event:event_summer-2015-bus-lane-implementation",
+      "observation_event_record_ids": ["event_summer-2015-bus-lane-implementation"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_125th-laguardia-sbs"],
+      "treatment_record_ids": ["treatment_2015-bus-lane-extension-lenox-morningside"],
+      "phase": {"lifecycle_phase": "planned", "date_claim": "Summer 2015", "date_precision": "season"},
+      "scope": "125th Street, Lenox Avenue to Morningside Avenue",
+      "evidence_ids": ["2015_04_14_brt_125th_cb10_post_implementation_update#p030_c0004", "2015_04_14_brt_125th_cb10_post_implementation_update#p019_c0002", "2015_04_14_brt_125th_cb10_post_implementation_update#p020_c0003"],
+      "cross_product_proof": "One project route and one exact extension treatment.",
+      "assessment": "The future implementation phase is source-stated and exact; publication does not assert later delivery."
+    },
+    {
+      "candidate_id": "candidate:06f9fec4842c4c1d5615b2fb",
+      "candidate_key": "event:event_implementation-begins-mid-sept-woodhaven",
+      "observation_event_record_ids": ["event_implementation-begins-mid-sept-woodhaven"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:03b369ef29856a8bbce07b7e",
+      "evidence_ids": ["brt_woodhaven_crossbay_blvd_sept_flyer#p001_c0009"],
+      "assessment": "This is a source-specific implementation phase for the same Q52/Q53 Woodhaven/Cross Bay SBS occurrence; preserve the Mid-September phase on the canonical occurrence."
+    },
+    {
+      "candidate_id": "candidate:0903cae3c57bdd4e8e670c70",
+      "candidate_key": "event:event_start-service-2012-late",
+      "observation_event_record_ids": ["event_start-service-2012-late"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:2737ce60eff9ea2b8ce19134",
+      "evidence_ids": ["201109_brt_nostrand_cac4#p038_c0002"],
+      "assessment": "The Late 2012 statement is a superseded projected launch phase for the same B44 Nostrand/Rogers SBS occurrence; it must not replace the evidenced 2013-11-17 launch."
+    },
+    {
+      "candidate_id": "candidate:09aa3e427256f35744c0b148",
+      "candidate_key": "event:event_m34-sbs-launch",
+      "observation_event_record_ids": ["event_m34-sbs-launch"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_m34-sbs", "route_m34a-sbs"],
+      "treatment_record_ids": ["treatment_off-board-fare-collection-2011", "treatment_offset-bus-lanes-2012_2"],
+      "phase": {"lifecycle_phase": "in_service", "date_claim": "November 2011", "date_precision": "month"},
+      "evidence_ids": ["brt_routes_fullreport#p012_c0026", "brt_routes_fullreport#p012_c0028", "brt_routes_fullreport#p012_c0032"],
+      "cross_product_proof": "Under a single M34/M34A project heading, the pinned source states implementation and jointly enumerates off-board fare and offset/curbside bus lanes. The two-by-two incidence is direct, not a route list crossed with an unrelated treatment list.",
+      "assessment": "Publish one 34th Street SBS occurrence with exact M34 and M34A incidence."
+    },
+    {
+      "candidate_id": "candidate:0a11961a6b3045b1f1fe88d3",
+      "candidate_key": "event:event_sbs-implementation-2012-nostrand",
+      "observation_event_record_ids": ["event_sbs-implementation-2012-nostrand"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:2737ce60eff9ea2b8ce19134",
+      "evidence_ids": ["2010_06_22_brt_nostrand_cb9#p016_c0002"],
+      "assessment": "Winter 2012 is a source-stated implementation target for the same B44 Nostrand/Rogers occurrence, retained as a planned phase rather than a separate delivered episode."
+    },
+    {
+      "candidate_id": "candidate:0b9940c2407fb25b6ba2917e",
+      "candidate_key": "event:event_implement-project-and-launch-2018",
+      "observation_event_record_ids": ["event_implement-project-and-launch-2018"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_b82-sbs"],
+      "treatment_record_ids": ["treatment_off-board-fare-collection_3"],
+      "phase": {"lifecycle_phase": "in_service", "date_claim": "2018-10-01", "date_precision": "day"},
+      "evidence_ids": ["brt_south_brooklyn_b82_cb14_may2017#p022_c0008", "brt_south_brooklyn_b82_cb14_may2017#p022_c0009", "brt_south_brooklyn_b82_cb14_may2017#p005_c0007", "brt_route_index#p001_b0001"],
+      "cross_product_proof": "One explicitly named B82 SBS route and one exact SBS treatment; the route index supplies the delivered launch date for the same named service.",
+      "assessment": "Publish the B82 SBS launch occurrence while preserving the earlier 2018 projected phase."
+    },
+    {
+      "candidate_id": "candidate:0cc063a4d799481d094eff47",
+      "candidate_key": "event:event_sbs-start-of-service-june-2013",
+      "observation_event_record_ids": ["event_sbs-start-of-service-june-2013"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:26d64e39027f40978cd0638c",
+      "evidence_ids": ["2013_02_sbs_webster_bx_cb1#p032_c0006", "2013_02_sbs_webster_bx_cb1#p032_c0007"],
+      "assessment": "Duplicate source view of the Bx41 SBS launch; preserve its end-of-June planned phase and exact package evidence on the canonical occurrence."
+    },
+    {
+      "candidate_id": "candidate:11fd656a9049fb961bc424b8",
+      "candidate_key": "event:event_34th-st-transitway-implementation-2012",
+      "observation_event_record_ids": ["event_34th-st-transitway-implementation-2012"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["brt_future_corridors#p004_c0002"],
+      "known_facts": ["The source lists a 2012 implementation expectation for a 34th Street Transitway."],
+      "evidence_gap_reason": "The one-line future-corridor inventory does not bind exact routes and treatments and does not prove delivery.",
+      "assessment": "Exact route-treatment incidence and delivery are not proven, so terminal nonpublication is required.",
+      "prohibited_inferences": ["Do not merge the proposed Transitway wholesale into the narrower M34/M34A SBS launch."]
+    },
+    {
+      "candidate_id": "candidate:1268fc19629a92ab229a4d8d",
+      "candidate_key": "event:event_summer-2014-transit-signal-priority",
+      "observation_event_record_ids": ["event_summer-2014-transit-signal-priority"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_webster-ave-sbs"],
+      "treatment_record_ids": ["treatment_2013-03-sbs-webster-tsp"],
+      "phase": {"lifecycle_phase": "planned", "date_claim": "Summer 2014", "date_precision": "season"},
+      "evidence_ids": ["2014_04_10_brt_webster_cb7#p035_c0003"],
+      "cross_product_proof": "One Bx41-SBS project route and the exact named transit-signal-priority treatment.",
+      "assessment": "Publish the source-stated planned TSP phase without asserting completed installation."
+    },
+    {
+      "candidate_id": "candidate:12f43dc158ab2a37316ceeab",
+      "candidate_key": "event:event_b46-sbs-launch-late-spring-2016",
+      "observation_event_record_ids": ["event_b46-sbs-launch-late-spring-2016"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_utica-ave-sbs"],
+      "treatment_record_ids": ["treatment_fare-machines-wayfinding-2016"],
+      "phase": {"lifecycle_phase": "in_service", "date_claim": "2016-07-03", "date_precision": "day"},
+      "evidence_ids": ["brt_cb17_uticaave_apr2016#p010_c0002", "brt_cb17_uticaave_apr2016#p010_c0003", "brt_route_index#p001_b0001"],
+      "cross_product_proof": "One exact B46 SBS route and one exact fare-machine/wayfinding treatment; the route index supplies the actual launch date while the project source preserves the planned Late Spring phase.",
+      "assessment": "Publish one B46 SBS launch occurrence with both planned and actual phase evidence."
+    },
+    {
+      "candidate_id": "candidate:134cce445d4ae483eab69821",
+      "candidate_key": "event:event_final-design-implementation-2013-2014",
+      "observation_event_record_ids": ["event_final-design-implementation-2013-2014"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:26d64e39027f40978cd0638c",
+      "evidence_ids": ["201205_brt_webster_cac#p016_c0002"],
+      "assessment": "This project-timeline phase belongs to the same Bx41 Webster Avenue SBS occurrence; preserve it as a planned design/implementation phase rather than a separate episode."
+    },
+    {
+      "candidate_id": "candidate:14e3a3ae899802ec45b68080",
+      "candidate_key": "event:event_webster-sbs-start-of-service-2013",
+      "observation_event_record_ids": ["event_webster-sbs-start-of-service-2013"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:26d64e39027f40978cd0638c",
+      "evidence_ids": ["2013_03_sbs_webster_bx_cb6#p044_c0005"],
+      "assessment": "Duplicate exact project launch view for the Bx41 SBS occurrence."
+    },
+    {
+      "candidate_id": "candidate:1603b42c0f19c0c183867b48",
+      "candidate_key": "event:event_2019-able-full-implementation",
+      "observation_event_record_ids": ["event_2019-able-full-implementation"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["bus_lane_camera_report_2024#p008_c0002"],
+      "known_facts": ["The MTA ABLE program is described as fully implemented in 2019."],
+      "evidence_gap_reason": "The program-level milestone does not enumerate the contemporaneous route subject set, so exact route-treatment incidence cannot be reconstructed.",
+      "assessment": "Exact 2019 route incidence is not proven, so terminal nonpublication is required.",
+      "prohibited_inferences": ["Do not apply the program to every route later documented with ABLE."]
+    },
+    {
+      "candidate_id": "candidate:171b670499dc21fdbc9410a1",
+      "candidate_key": "event:event_step4-final-design-tbd",
+      "observation_event_record_ids": ["event_step4-final-design-tbd"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["2014_10_07_brt_flushingjamaica_pw1_presentation#p028_c0003"],
+      "assessment": "A TBD final-design and construction-phasing work step is an administrative planning milestone, not an operational route-treatment occurrence."
+    },
+    {
+      "candidate_id": "candidate:1a7efb5438c66642c0e67777",
+      "candidate_key": "event:event_m15-sbs-launch-oct-10-2010_2",
+      "observation_event_record_ids": ["event_m15-sbs-launch-oct-10-2010_2"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_m15-sbs"],
+      "treatment_record_ids": ["treatment_off-board-fare-payment_3", "treatment_offset-bus-lane_2", "treatment_curb-bus-lane"],
+      "phase": {"lifecycle_phase": "in_service", "date_claim": "2010-10-10", "date_precision": "day"},
+      "evidence_ids": ["2010_09_14_brt_1st2nd_cac5#p003_c0006", "2010_09_14_brt_1st2nd_cac5#p023_c0006", "2010_09_14_brt_1st2nd_cac5#p012_c0007", "2010_09_14_brt_1st2nd_cac5#p019_c0005", "2010_09_14_brt_1st2nd_cac5#p020_c0005"],
+      "cross_product_proof": "A single M15 SBS route and its source-enumerated Phase I package; there is no plural-route cross-product.",
+      "assessment": "Publish the exact M15 SBS launch and its supported initial treatment package."
+    },
+    {
+      "candidate_id": "candidate:209334abcb61f971a4713eba",
+      "candidate_key": "event:event_busway-launch-oct2021",
+      "observation_event_record_ids": ["event_busway-launch-oct2021"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["jamaica_busway_monitoring_update_2022#p005_c0003"],
+      "known_facts": ["The Jamaica Avenue busway launched on 2021-10-24."],
+      "evidence_gap_reason": "The pinned monitoring event proves the corridor treatment and date but not the exact route incidence at launch.",
+      "assessment": "The busway and launch date are proven, but exact route incidence is not; terminal nonpublication is required.",
+      "prohibited_inferences": ["Do not infer every route shown in a later Jamaica study or monitoring map."]
+    },
+    {
+      "candidate_id": "candidate:20ab7467a4d200c9865a301b",
+      "candidate_key": "event:event_brt-bx6-cb4-mar2017-fare-machine-install",
+      "observation_event_record_ids": ["event_brt-bx6-cb4-mar2017-fare-machine-install"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_bx6-sbs"],
+      "treatment_record_ids": ["treatment_brt-bx6-cb4-mar2017-off-board-fare"],
+      "phase": {"lifecycle_phase": "installation_begins", "date_claim": "Winter 2017", "date_precision": "season"},
+      "evidence_ids": ["brt_bx6_cb4_mar2017#p040_c0002", "brt_bx6_cb4_mar2017#p005_c0007", "brt_bx6_cb4_mar2017#p005_c0008"],
+      "cross_product_proof": "The event explicitly says fare machines at Bx6 SBS stops: one route and one treatment.",
+      "assessment": "Publish the exact fare-machine installation phase."
+    },
+    {
+      "candidate_id": "candidate:2248ba6cf9879d8dfad25e1e",
+      "candidate_key": "event:event_offset-bus-lane-conversion-fall-2014",
+      "observation_event_record_ids": ["event_offset-bus-lane-conversion-fall-2014"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_m101", "route_m102", "route_m103-segment-speed"],
+      "treatment_record_ids": ["treatment_offset-bus-lane-third-ave-36th-to-56th"],
+      "phase": {"lifecycle_phase": "installed", "date_claim": "Fall 2014", "date_precision": "season"},
+      "scope": "Third Avenue, 36th Street to 56th Street",
+      "evidence_ids": ["2014_12_01_brt_thirdave_cb6_presentation#p002_c0002", "2014_12_01_brt_thirdave_cb6_presentation#p011_c0004"],
+      "cross_product_proof": "The route-specific project evidence jointly names M101, M102, and M103 service on the converted Third Avenue facility; one shared treatment prevents a two-by-two cross-product.",
+      "assessment": "Publish the bounded offset-lane conversion for the three exact Third Avenue routes."
+    },
+    {
+      "candidate_id": "candidate:224b78d76ee4b98eba139b0f",
+      "candidate_key": "event:event_m60-sbs-launch-2014-05-25_2",
+      "observation_event_record_ids": ["event_m60-sbs-launch-2014-05-25_2"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_125th-laguardia-sbs"],
+      "treatment_record_ids": ["treatment_fare-machines-shelters-125th"],
+      "phase": {"lifecycle_phase": "in_service", "date_claim": "2014-05-25", "date_precision": "day"},
+      "evidence_ids": ["2015_01_08_brt_125th_cb9#p008_c0002", "2015_01_08_brt_125th_cb9#p003_c0004"],
+      "cross_product_proof": "One M60 SBS route and one exact launch-package treatment.",
+      "assessment": "Publish the exact M60 SBS launch."
+    },
+    {
+      "candidate_id": "candidate:225c1d8841c8ff1c951b9c68",
+      "candidate_key": "event:event_utica-bus-priority-improvements-aug2014",
+      "observation_event_record_ids": ["event_utica-bus-priority-improvements-aug2014"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_utica-ave-sbs"],
+      "treatment_record_ids": ["treatment_bus-lanes-utica-2014", "treatment_left-turn-bays-utica-2014", "treatment_loading-zones-utica-2014"],
+      "phase": {"lifecycle_phase": "installed", "date_claim": "August 2014", "date_precision": "month"},
+      "scope": "Utica Avenue, St. Johns Place to Church Avenue",
+      "evidence_ids": ["2014_11_brt_utica_workshopsummary#p003_c0002"],
+      "cross_product_proof": "One durable B46 corridor subject and three treatments jointly enumerated in the exact implementation sentence.",
+      "assessment": "Publish the bounded Utica bus-priority package; do not merge it with later 2015 lanes or the 2016 SBS launch."
+    },
+    {
+      "candidate_id": "candidate:2291ebfda96176abe0e553bf",
+      "candidate_key": "event:event_late-summer-bus-lane-implementation",
+      "observation_event_record_ids": ["event_late-summer-bus-lane-implementation"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_bronx-flushing-jamaica-sbs"],
+      "treatment_record_ids": ["treatment_q44-curbside-bus-lanes", "treatment_q44-offset-bus-lanes"],
+      "phase": {"lifecycle_phase": "planned", "date_claim": "Late Summer", "date_precision": "season"},
+      "evidence_ids": ["2015_06_15_brt_flushing_jamaica_cb8_presentation#p022_c0005", "2015_06_15_brt_flushing_jamaica_cb8_presentation#p011_c0003", "2015_06_15_brt_flushing_jamaica_cb8_presentation#p011_c0005"],
+      "cross_product_proof": "One Q44 project route; both bus-lane configurations are explicitly scoped to that route in the same presentation.",
+      "assessment": "Publish the source-stated planned bus-lane implementation phase without asserting delivery."
+    },
+    {
+      "candidate_id": "candidate:2441f2b3770a2852082501a4",
+      "candidate_key": "event:event_m60-sbs-launch-2014-05-25_3",
+      "observation_event_record_ids": ["event_m60-sbs-launch-2014-05-25_3"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:224b78d76ee4b98eba139b0f",
+      "evidence_ids": ["2015_01_13_brt_125th_cb10_post_implementation_update#p008_c0002"],
+      "assessment": "Duplicate source view of the exact M60 SBS launch."
+    },
+    {
+      "candidate_id": "candidate:24d400232f2d9cadd443db6f",
+      "candidate_key": "event:event_bus-queue-jump-signal-installed-79th-5th",
+      "observation_event_record_ids": ["event_bus-queue-jump-signal-installed-79th-5th"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_m79-sbs"],
+      "treatment_record_ids": ["treatment_bus-queue-jump-signal-79th-5th"],
+      "phase": {"lifecycle_phase": "installed", "date_claim": "11/05/2018", "date_precision": "source_literal_day"},
+      "scope": "Westbound 79th Street at Fifth Avenue",
+      "evidence_ids": ["brt_m79_cb8_nov2018#p011_c0001", "brt_m79_cb8_nov2018#p011_c0002"],
+      "cross_product_proof": "One M79 SBS route and one exact signal treatment.",
+      "assessment": "Publish while retaining the source-literal numeric date rather than silently changing its locale interpretation."
+    },
+    {
+      "candidate_id": "candidate:26a9a37abf4325785bc12dd0",
+      "candidate_key": "event:event_start-of-service-webster-sbs-june-2013",
+      "observation_event_record_ids": ["event_start-of-service-webster-sbs-june-2013"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:26d64e39027f40978cd0638c",
+      "evidence_ids": ["2013_02_sbs_webster_bx_cb4#p040_c0006", "2013_02_sbs_webster_bx_cb4#p039_c0011"],
+      "assessment": "Duplicate Bx41 SBS launch view."
+    },
+    {
+      "candidate_id": "candidate:26d64e39027f40978cd0638c",
+      "candidate_key": "event:event_bx41-sbs-launch-2014-03-11",
+      "observation_event_record_ids": ["event_bx41-sbs-launch-2014-03-11"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_webster-ave-sbs"],
+      "treatment_record_ids": ["treatment_off-board-fare-webster-2013", "treatment_offset-bus-lanes-webster-2013"],
+      "phase": {"lifecycle_phase": "in_service", "date_claim": "2013-06-30", "date_precision": "day"},
+      "evidence_ids": ["2014_03_11_brt_webster_cb3#p004_c0002", "2014_03_11_brt_webster_cb3#p004_c0003", "2013_02_sbs_webster_bx_cb4#p011_c0002"],
+      "cross_product_proof": "One exact Bx41 SBS route and a source-enumerated service package; no plural-route cross-product.",
+      "assessment": "Publish the exact Bx41 SBS launch and retain the other source views as aliases."
+    },
+    {
+      "candidate_id": "candidate:2737ce60eff9ea2b8ce19134",
+      "candidate_key": "event:event_b44-sbs-launch_2",
+      "observation_event_record_ids": ["event_b44-sbs-launch_2"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_b44-sbs"],
+      "treatment_record_ids": ["treatment_bus-lanes", "treatment_off-board-fare_2"],
+      "phase": {"lifecycle_phase": "in_service", "date_claim": "2013-11-17", "date_precision": "day"},
+      "evidence_ids": ["b44_sbs_progress_report_2016#p023_c0003", "b44_sbs_progress_report_2016#p018_c0005", "b44_sbs_progress_report_2016#p018_c0010"],
+      "cross_product_proof": "One exact B44 SBS route and two package elements explicitly described as substantially in place at launch.",
+      "assessment": "Publish the B44 SBS launch; older 2012 schedule statements remain planned-phase aliases."
+    },
+    {
+      "candidate_id": "candidate:28e87b892f20b8423a6f3e32",
+      "candidate_key": "event:event_utica-bus-lanes-implemented-summer-2014",
+      "observation_event_record_ids": ["event_utica-bus-lanes-implemented-summer-2014"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:225c1d8841c8ff1c951b9c68",
+      "evidence_ids": ["2015_04_15_brt_uticaave_cb17_presentation#p011_c0002", "2015_04_15_brt_uticaave_cb17_presentation#p011_c0003"],
+      "assessment": "Retrospective seasonal view of the same bounded August 2014 Utica package."
+    },
+    {
+      "candidate_id": "candidate:29e5bd504cb7197669e1dcdc",
+      "candidate_key": "event:event_spring2017-fare-install-brt-bx6-cb4-mar2017",
+      "observation_event_record_ids": ["event_spring2017-fare-install-brt-bx6-cb4-mar2017"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:20ab7467a4d200c9865a301b",
+      "evidence_ids": ["brt_bx6_south_bronx_mar2017#p040_c0002"],
+      "assessment": "A second source-specific schedule phase for the same Bx6 SBS fare-machine installation; preserve Spring 2017 and do not attach the unspecific street-design phrase as an extra application."
+    },
+    {
+      "candidate_id": "candidate:2e77b209d463d19590fc438b",
+      "candidate_key": "event:event_m79-sbs-launch-may2017_2",
+      "observation_event_record_ids": ["event_m79-sbs-launch-may2017_2"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_m79-sbs"],
+      "treatment_record_ids": ["treatment_bus-lanes-79th-st", "treatment_off-board-fare-79th-st"],
+      "phase": {"lifecycle_phase": "in_service", "date_claim": "2017-05-21", "date_precision": "day"},
+      "evidence_ids": ["brt_m79_after_report_feb2020#p002_c0003", "brt_m79_after_report_feb2020#p008_c0003", "brt_m79_after_report_feb2020#p008_c0004"],
+      "cross_product_proof": "One M79 SBS route and its exact source-described launch package.",
+      "assessment": "Publish the exact M79 SBS launch."
+    },
+    {
+      "candidate_id": "candidate:2ec2e964735ea8681ff39463",
+      "candidate_key": "event:event_bx6-sbs-launch-2017",
+      "observation_event_record_ids": ["event_bx6-sbs-launch-2017"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_bx6-sbs"],
+      "treatment_record_ids": ["treatment_bus-lanes-brt-bx6-cb12-may2022"],
+      "phase": {"lifecycle_phase": "in_service", "date_claim": "2017-09-03", "date_precision": "day"},
+      "evidence_ids": ["brt_bx6_cb12_may2022#p004_c0002", "brt_bx6_cb12_may2022#p005_c0002"],
+      "cross_product_proof": "One Bx6 SBS route and one explicitly implemented project treatment.",
+      "assessment": "Publish the exact Bx6 SBS launch."
+    },
+    {
+      "candidate_id": "candidate:2edbf63871dc39b2d25ac789",
+      "candidate_key": "event:event_2010-november-first-cameras",
+      "observation_event_record_ids": ["event_2010-november-first-cameras"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["bus_lane_camera_report_2024#p002_c0003"],
+      "known_facts": ["The first stationary bus-lane camera implementation began in November 2010."],
+      "evidence_gap_reason": "The historical summary does not identify the exact routes or camera locations for this phase.",
+      "assessment": "Exact 2010 route incidence is not proven, so terminal nonpublication is required.",
+      "prohibited_inferences": ["Do not back-project later camera route lists to the 2010 onset."]
+    },
+    {
+      "candidate_id": "candidate:2fdb02b11c5a5ed0a4f7ad2f",
+      "candidate_key": "event:event_step4-final-design-implementation-2013-2014",
+      "observation_event_record_ids": ["event_step4-final-design-implementation-2013-2014"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:26d64e39027f40978cd0638c",
+      "evidence_ids": ["2012_02_06_brt_webster_cac1#p028_c0006", "2012_02_06_brt_webster_cac1#p028_c0007", "2012_02_06_brt_webster_cac1#p028_c0008"],
+      "assessment": "The final-design/implementation/launch work step is a planned phase of the same Webster Avenue Bx41 occurrence."
+    },
+    {
+      "candidate_id": "candidate:2ff41682926b09671519af51",
+      "candidate_key": "event:event_2018-launch-b82-sbs-may2017",
+      "observation_event_record_ids": ["event_2018-launch-b82-sbs-may2017"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:0b9940c2407fb25b6ba2917e",
+      "evidence_ids": ["brt_south_brooklyn_b82_may2017#p035_c0008", "brt_south_brooklyn_b82_may2017#p035_c0009"],
+      "assessment": "Duplicate 2018 projected B82 SBS launch phase."
+    },
+    {
+      "candidate_id": "candidate:30ce754c5d623ce7e713b939",
+      "candidate_key": "event:event_2018-implement-and-launch",
+      "observation_event_record_ids": ["event_2018-implement-and-launch"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:0b9940c2407fb25b6ba2917e",
+      "evidence_ids": ["brt_south_brooklyn_b82#p027_c0008", "brt_south_brooklyn_b82#p027_c0009"],
+      "assessment": "Duplicate 2018 projected B82 SBS launch phase."
+    },
+    {
+      "candidate_id": "candidate:31087989c62ad4667d44ad7b",
+      "candidate_key": "event:event_bus-lanes-installed-aug-2015",
+      "observation_event_record_ids": ["event_bus-lanes-installed-aug-2015"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["2015_12_01_brt_woodhaven_cb5#p001_c0012"],
+      "known_facts": ["Bus-only lanes were installed on Woodhaven Boulevard from Dry Harbor Road to Metropolitan Avenue in August 2015."],
+      "evidence_gap_reason": "The source does not bind the pre-SBS lane installation to an exact route subject set.",
+      "assessment": "The bounded lane installation is proven, but exact route incidence is not; terminal nonpublication is required.",
+      "prohibited_inferences": ["Do not assign the later Q52/Q53 SBS route set to the earlier 2015 lanes."]
+    },
+    {
+      "candidate_id": "candidate:315ca90631e960876837ae66",
+      "candidate_key": "event:event_fare-machine-installation-winter-2016",
+      "observation_event_record_ids": ["event_fare-machine-installation-winter-2016"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_utica-ave-sbs"],
+      "treatment_record_ids": ["treatment_sbs-improvements-spring-2016"],
+      "phase": {"lifecycle_phase": "installation_begins", "date_claim": "Winter 2016", "date_precision": "season"},
+      "evidence_ids": ["brt_uticaave_cb9_transportation_committee_2016#p024_c0003", "brt_uticaave_cb9_transportation_committee_2016#p008_c0002"],
+      "cross_product_proof": "The event explicitly identifies B46 SBS fare-machine installation: one route and one exact treatment.",
+      "assessment": "Publish the exact fare-machine installation phase."
+    },
+    {
+      "candidate_id": "candidate:315f9d756c61519379126f0f",
+      "candidate_key": "event:event_m60-sbs-launch-2014-05-25",
+      "observation_event_record_ids": ["event_m60-sbs-launch-2014-05-25"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:224b78d76ee4b98eba139b0f",
+      "evidence_ids": ["2015_01_06_brt_125th_cb11#p008_c0002", "2015_01_06_brt_125th_cb11#p008_c0003", "2015_01_06_brt_125th_cb11#p008_c0004"],
+      "assessment": "Duplicate source view of the exact M60 SBS launch; its customer-ambassador detail remains evidence on that occurrence but is not minted as a treatment without a canonical treatment record."
+    },
+    {
+      "candidate_id": "candidate:3308114fb11e8b3c5a0b0b8d",
+      "candidate_key": "event:event_customer-ambassador-launch-period",
+      "observation_event_record_ids": ["event_customer-ambassador-launch-period"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["2015_01_13_brt_125th_cb10_post_implementation_update#p008_c0003", "2015_01_13_brt_125th_cb10_post_implementation_update#p008_c0004"],
+      "known_facts": ["Customer Ambassadors staffed M60 SBS stops for two weeks during the launch period."],
+      "evidence_gap_reason": "The canonical treatment inventory has no exact customer-ambassador treatment component to bind without inventing a new semantic record during review.",
+      "assessment": "The route and staffing event are proven, but no exact canonical treatment identity exists in the frozen review inputs; terminal nonpublication is required.",
+      "prohibited_inferences": ["Do not substitute fare machines, shelters, or generic passenger information for the evidenced staffing treatment."]
+    },
+    {
+      "candidate_id": "candidate:33af0322ca04c2d1e9f842de",
+      "candidate_key": "event:event_bx41-sbs-launch",
+      "observation_event_record_ids": ["event_bx41-sbs-launch"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:26d64e39027f40978cd0638c",
+      "evidence_ids": ["brt_routes_fullreport#p013_c0016"],
+      "assessment": "Duplicate month-level retrospective view of the exact Bx41 SBS launch."
+    },
+    {
+      "candidate_id": "candidate:3406ae6826b7c1bdcd790a05",
+      "candidate_key": "event:event_begin-implementation-spring2017",
+      "observation_event_record_ids": ["event_begin-implementation-spring2017"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:03b369ef29856a8bbce07b7e",
+      "evidence_ids": ["brt_woodhaven_cb9_jan2016#p024_c0002"],
+      "assessment": "Source-specific planned implementation phase for the same Q52/Q53 Woodhaven/Cross Bay SBS occurrence."
+    },
+    {
+      "candidate_id": "candidate:3495812f639230b6f204e4e5",
+      "candidate_key": "event:event_sbs-launch-spring2016",
+      "observation_event_record_ids": ["event_sbs-launch-spring2016"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:12f43dc158ab2a37316ceeab",
+      "evidence_ids": ["brt_uticaave_cb18_transportation_committee_2016#p025_c0003", "brt_uticaave_cb18_transportation_committee_2016#p009_c0003"],
+      "assessment": "Duplicate planned launch phase for the same B46 SBS occurrence; retain resurfacing and lane-restoration evidence as separate applications only where exact."
+    },
+    {
+      "candidate_id": "candidate:34b6b0cb552ffd038c1d8719",
+      "candidate_key": "event:event_jamaica-bus-study-implementation",
+      "observation_event_record_ids": ["event_jamaica-bus-study-implementation"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["brt_future_corridors#p004_c0002"],
+      "known_facts": ["A future-corridor inventory lists Downtown Jamaica Bus Study implementation in 2011/2012."],
+      "evidence_gap_reason": "The inventory does not identify exact routes, treatments, or a sufficiently bounded event.",
+      "assessment": "Exact route-treatment incidence is not proven, so terminal nonpublication is required.",
+      "prohibited_inferences": ["Do not treat this as the later 2021 Jamaica Busway launch."]
+    },
+    {
+      "candidate_id": "candidate:34d408b4c685ffec2d79dda7",
+      "candidate_key": "event:event_bx41-sbs-launch-2013-06-30_3",
+      "observation_event_record_ids": ["event_bx41-sbs-launch-2013-06-30_3"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:26d64e39027f40978cd0638c",
+      "evidence_ids": ["2014_03_06_brt_webster_cb6#p004_c0002", "2014_03_06_brt_webster_cb6#p004_c0003"],
+      "assessment": "Duplicate exact-date Bx41 SBS launch view."
+    }
+  ],
+  "observation_only_conformance": {
+    "count": 12,
+    "status": "pass",
+    "unsupported_record_no_episode_graph": [
+      "event_b82-begin-implementation-summer2017",
+      "event_bx12-sbs-implementation-june2008_2",
+      "event_gates-ave-station-added",
+      "event_jamaica-center-bus-lanes-2011",
+      "event_m60-sbs-125th-2014-implementation",
+      "event_nostrand-sbs-2011",
+      "event_online-portal-nov2015-may2016",
+      "event_second-ave-subway-q-opening",
+      "event_tsp-phase1-summer-2014",
+      "event_woodside-jackson-heights-sbs-start"
+    ],
+    "not_episode_evidence_prospective_observation": [
+      "event_bus-lane-extension-church-fillmore-2015",
+      "event_proposed-implementation-spring-2014"
+    ],
+    "assessment": "These manifest observations have no candidate membership and already carry the listed frozen terminal adapter dispositions; this receipt verifies rather than mutates them."
+  },
+  "evidence_binding_source": {
+    "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+    "candidate_ledger_sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2",
+    "rule": "Each finding is restricted to the frozen candidate membership and manifest-pinned source files. Cross-source joins occur only inside this manifest and are spelled out in the finding."
+  },
+  "review_method": {
+    "other_reviewer_receipts_read": false,
+    "canonical_observations_modified": false,
+    "shared_artifacts_regenerated": false,
+    "semantic_rule": "Publish only an exact route-treatment incidence; retain future/planned phases as such; terminally close unprovable incidence without inferred routes."
+  },
+  "expected_post_batch_arithmetic": {
+    "published": 18,
+    "duplicate_alias": 18,
+    "outside_domain": 2,
+    "insufficient_evidence": 8,
+    "rejected": 0,
+    "terminal_candidate_total": 46,
+    "accounted_observation_total": 58,
+    "pending_review_delta": -46
+  },
+  "integration_authorization": "pending_independent_agreement_and_integrator_verification"
+}

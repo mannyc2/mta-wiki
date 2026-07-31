@@ -1,0 +1,2416 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w2-meeting-docs-pending-04",
+  "review_role": "primary",
+  "review_complete": true,
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-04.json",
+  "manifest_sha256": "c6a50b3ca048b1b444081558a0716e0da36bb512287ad0e0fbeff4545e887cd5",
+  "created_at": "2026-07-30T23:33:34Z",
+  "reviewer": {
+    "reviewer_id": "plan-052-primary-meeting-docs-pending-04-codex",
+    "role": "primary",
+    "runtime": "OpenAI Codex",
+    "model_family": "GPT-5",
+    "counterpart_exposure": false
+  },
+  "method": {
+    "independent_receipt_read": false,
+    "integration_or_reconciliation_receipt_read": false,
+    "basis": "Immutable manifest, frozen candidate and observation ledgers, canonical records, and manifest-pinned local source pages only.",
+    "cross_product_rule": "No plural route-by-treatment incidence was inferred.",
+    "forecast_rule": "Prospective schedules do not establish delivered operation."
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "provider": "none",
+    "profile": "local_read_only_review",
+    "model": "none",
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "frozen_inputs": {
+    "candidate_ledger": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+      "sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2"
+    },
+    "observation_ledger": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/observation_ledger.jsonl",
+      "sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f"
+    },
+    "cohort": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/cohort.json",
+      "sha256": "59e4c2fbdb389255442c00ac06204b6798fed64742d80489441cd5524a912a61"
+    },
+    "summary": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/summary.json",
+      "sha256": "4baf594cea14431b2f2c125c19c554755ecf167be6b81f399152873a5cd35545"
+    },
+    "cohort_hashes": {
+      "adapter_input_sha256": "47a9445b350dc469631b907b7845cd0e5adabfb8c0cce1b3a1ef2cedc18e1e5b",
+      "candidate_input_sha256": "d433c30abcce130f49249c1db329cb4603cb783aa553c99bfe1de31f62d9998d",
+      "candidate_membership_sha256": "99cc11f66711defd0de6d94f70e8c4ffb4d9f0d2f70a662876514ff60e1b9cdf",
+      "evidence_input_sha256": "370899587866b06300d12770bde70f6c52aa7015173b03a65f43bdb5d0ad90be",
+      "observation_membership_sha256": "e8d089848e69bf7e9971a0f8145f54b8418999894bb5e43d463ea1d3752c2f5e"
+    }
+  },
+  "exact_membership": {
+    "candidate_count": 42,
+    "observation_count": 107,
+    "candidate_ids": [
+      "candidate:749f76e80d0d737f129f33d2",
+      "candidate:7514c25fde19dc94e373c327",
+      "candidate:751a004ea7702f3b4c22d199",
+      "candidate:76f21a75dab2a1388658e218",
+      "candidate:7728d2e147f1ff0f819883ab",
+      "candidate:77ac74fdefd1d9870b7946cc",
+      "candidate:7883fee4cff26cbd6a9e9efd",
+      "candidate:79026758b8ee1249195d6af8",
+      "candidate:799562a5da5929308eabdaa7",
+      "candidate:79a5515799b315fda6862fc6",
+      "candidate:7c5602f63b0a01c06e75bed8",
+      "candidate:7cb4825a8c94423cdc2c21c5",
+      "candidate:7f16dc77e6485ac6a7923ce2",
+      "candidate:7fa6f6a926f3e735353e75e2",
+      "candidate:8041365e6a95a42f9ecba217",
+      "candidate:80753e82f3e303c1e8ac6af8",
+      "candidate:83c45b532c54d8aa86b55c11",
+      "candidate:84a71e6c3ffa3b201b268713",
+      "candidate:86a00387dd0db3a982a2a683",
+      "candidate:875fcc765abd8c4098c36a5e",
+      "candidate:881abe90bdd5af1f81d229ad",
+      "candidate:88e687c4c934424c66581eaf",
+      "candidate:89aeb7d84b5cd362eed12771",
+      "candidate:8a0274bd1166c7b2c1c70350",
+      "candidate:8a3000e5ce531244c21c5556",
+      "candidate:8aa99fb4ea05f54a2c853bee",
+      "candidate:8ab8e498b4dc5cd278e8a25b",
+      "candidate:8b840113f5ac23a252c3ec59",
+      "candidate:8cffe2ce20ced294a5985213",
+      "candidate:8f161235f18ebe3799765403",
+      "candidate:9088ac26de753a649b692706",
+      "candidate:926e93307a7bcf4477fc12b6",
+      "candidate:92b27034413d3ebd07c646eb",
+      "candidate:9443416387af6b20aa4e63aa",
+      "candidate:94715cbd1a70dc309e5b6e09",
+      "candidate:9496059b1f3ebb5bc085c7ed",
+      "candidate:9595227fc0801c7811cac82a",
+      "candidate:96435683a0611d2dc3fd91aa",
+      "candidate:96971d2d19ed76c79a69e5e3",
+      "candidate:96a9ede32779e2b5c5d2f789",
+      "candidate:9925657c0216c5db52780750",
+      "candidate:9b8560652d8161543452244a"
+    ],
+    "observation_event_record_ids": [
+      "event_163121-r211s-introduction",
+      "event_166956-memorial-day-getaway-2025",
+      "event_166956-schedule-change-mar-30-2025",
+      "event_192261-crz-tolling-commenced",
+      "event_2012-able-proof-of-concept-meeting-doc-138336",
+      "event_2023-fare-toll-increase",
+      "event_automated-bus-lane-enforcement-camera-activation-2022",
+      "event_battery-electric-aar-van-debut",
+      "event_biltmore-room-connection-opening",
+      "event_bronx-bus-redesign-launch-2022-06-26",
+      "event_carle-place-station-unveiling",
+      "event_christmas-day-service-2025",
+      "event_copiague-station-elevator-debut",
+      "event_crz-tolling-program-commenced",
+      "event_e-hail-phase2-start",
+      "event_express-bus-additions-june2024",
+      "event_fare-programs-launch-feb2022",
+      "event_gcm-full-service-commenced",
+      "event_gcm-full-service-meeting-doc-105771",
+      "event_gct-holiday-fair-opening-2024",
+      "event_gct-switch-replacement",
+      "event_grand-central-madison-opening-feb2023",
+      "event_holiday-lights-train-start",
+      "event_holiday-lights-trains-launch-192301",
+      "event_jfk-bike-ped-ramp-opening",
+      "event_jun2023-summer-trackwork",
+      "event_lirr-cannonball-summer-service-2021",
+      "event_lirr-concourse-opening-sep2022",
+      "event_lirr-jan2024-timetable",
+      "event_lirr-new-timetables-sep2023",
+      "event_lirr-schedule-adjustments-apr10",
+      "event_lirr-work-plan-sept-2023-timetable-change",
+      "event_m186726-presidents-day",
+      "event_m190081-mpi-delivery-complete",
+      "event_march-4-timetable-change-133331",
+      "event_massapequa-signal-cutover_2",
+      "event_maybrook-trailway-opening",
+      "event_meeting-151656-new-elevators-14st-6av",
+      "event_meeting-doc-100351-omny-reduced-fare-available",
+      "event_meeting-doc-108036-track-trespassing-task-force-launch",
+      "event_meeting-doc-109341-cherry-valley-bridge-waterproofing",
+      "event_meeting-doc-111811-able-bx35-rollout",
+      "event_meeting-doc-114216-ipad-installation-complete",
+      "event_meeting-doc-114216-phase2-start",
+      "event_meeting-doc-115206-oct2023-lirr-mnr-ptc-update",
+      "event_meeting-doc-115251-additional-testing-added",
+      "event_meeting-doc-115576-automated-uploads",
+      "event_meeting-doc-121091-us-open-service",
+      "event_meeting-doc-121096-summer-trackwork-jun2024",
+      "event_meeting-doc-124201-mnr-cp243-signal-cutover",
+      "event_meeting-doc-124201-mnr-hudson-fiber",
+      "event_meeting-doc-124251-bronx-interlocking-renewal",
+      "event_meeting-doc-124251-new-years-eve-service",
+      "event_meeting-doc-124251-walk-bridge-replacement",
+      "event_meeting-doc-127701-congestion-pricing",
+      "event_meeting-doc-128871-oct2024-ptc",
+      "event_meeting-doc-128921-g-c-headway-reduction-dec18",
+      "event_meeting-doc-133291-implementation-april2024",
+      "event_meeting-doc-140311-lirr-emergency-drill-op-east-bound-down",
+      "event_meeting-doc-140411-open-data-launch",
+      "event_meeting-doc-140621-summer-saturdays",
+      "event_meeting-doc-157681-thanksgiving-day-program",
+      "event_meeting-doc-160121-nye-program",
+      "event_meeting-doc-160196-mnr-testing-early2025",
+      "event_meeting-doc-160311-haverstraw-ferry-start",
+      "event_meeting-doc-160321-nycsc-golive",
+      "event_meeting-doc-171141-modern-fare-gates",
+      "event_meeting-doc-179641-crz-start",
+      "event_meeting-doc-196866-implementation-may2026",
+      "event_meeting-doc-199481-fare-changes",
+      "event_meeting-doc-201761-congestion-pricing-launch",
+      "event_meeting-doc-208031-may18-schedule-changes",
+      "event_meeting-doc-68201-titlevi-policy-2022",
+      "event_meeting-doc-98226-main-line-third-track-section1",
+      "event_meeting-doc-98656-cost-containment",
+      "event_meeting-doc-proposed-implementation-early-2023",
+      "event_meeting196966-holiday-lights-train",
+      "event_metro-north-service-restoration-sep29-2023",
+      "event_mfg-continued-installation",
+      "event_mn-emergency-exercise-dec2023",
+      "event_mnr-committee-oct2023-ptc-update",
+      "event_mnr-heritage-wrap-series-launch-march2024",
+      "event_mnr-spring-schedule-change-april2024",
+      "event_montauk-bridge-track-maintenance-oct5-6-2024",
+      "event_mowic-commissioned-2020",
+      "event_new-dorp-elevator-opening-2023",
+      "event_nostrand-av-entrance-reopened",
+      "event_nov2023-winter-trackwork-jamaica",
+      "event_nov2024-winter-trackwork_3",
+      "event_november-timetable-change-124266",
+      "event_oct2023-ptc-update",
+      "event_omny-fare-capping-start-feb28-2022",
+      "event_opening-15-cscs-190506",
+      "event_phase-2-launch-aug2023",
+      "event_poughkeepsie-emergency-drill-nov2025",
+      "event_reduced-overnight-closure-feb22-2021",
+      "event_ronkonkoma-oct4-5-2025",
+      "event_scout-launch-2023",
+      "event_scout-launch-fall2023",
+      "event_service-adjustment-far-rockaway-127546",
+      "event_spring-trackwork-mar2025",
+      "event_summer-trackwork-2024",
+      "event_toll-increase-aug2023",
+      "event_train882-lynbrook-stop-may2025",
+      "event_van-wyck-oct19-20-2024",
+      "event_weekend-ferry-resumes-may2025",
+      "event_work-resumed-april2021"
+    ]
+  },
+  "findings": [
+    {
+      "candidate_id": "candidate:749f76e80d0d737f129f33d2",
+      "candidate_key": "event:event_scout-launch-fall2023",
+      "source_ids": [
+        "meeting_doc_135741"
+      ],
+      "observation_event_record_ids": [
+        "event_scout-launch-fall2023"
+      ],
+      "observation_relation_record_ids": [
+        "relation_scout-launch-event"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_135741#p012_c0002",
+          "record_id": "event_scout-launch-fall2023",
+          "source_id": "meeting_doc_135741"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_135741",
+          "record_id": "event_scout-launch-fall2023",
+          "evidence_id": "meeting_doc_135741#p012_c0002",
+          "text_sha256": "sha256:8c410c846fdd9bcaa536960265eddd25790d4bd65fc83f6a8af8cb22bd30ba39"
+        }
+      ],
+      "recommended_disposition": "outside_domain",
+      "canonical_candidate_id": null,
+      "assessment": "Launching a subway outreach/co-response staffing program is not an exact route-by-treatment operational occurrence.",
+      "known_facts": [
+        "SCOUT (Subway Co-Response Outreach Teams) launched 2 teams, weekdays in Manhattan",
+        "date_text: fall 2023"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not recast team staffing as a transit route treatment."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:7514c25fde19dc94e373c327",
+      "candidate_key": "event:event_gcm-full-service-meeting-doc-105771",
+      "source_ids": [
+        "meeting_doc_105771"
+      ],
+      "observation_event_record_ids": [
+        "event_gcm-full-service-meeting-doc-105771"
+      ],
+      "observation_relation_record_ids": [
+        "relation_gcm-project-has-event-full-service"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_105771#p004_c0007",
+          "record_id": "event_gcm-full-service-meeting-doc-105771",
+          "source_id": "meeting_doc_105771"
+        },
+        {
+          "evidence_id": "meeting_doc_105771#p004_c0008",
+          "record_id": "event_gcm-full-service-meeting-doc-105771",
+          "source_id": "meeting_doc_105771"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_105771",
+          "record_id": "event_gcm-full-service-meeting-doc-105771",
+          "evidence_id": "meeting_doc_105771#p004_c0007",
+          "text_sha256": "sha256:ab6443e5197367ac192d0540be43cd380c0834d26bd5d3b48d354c1bf7d659ea"
+        },
+        {
+          "source_id": "meeting_doc_105771",
+          "record_id": "event_gcm-full-service-meeting-doc-105771",
+          "evidence_id": "meeting_doc_105771#p004_c0008",
+          "text_sha256": "sha256:7d3148ad5a466ee7603d7ca6aec1ff2083e38f1122e122c592ecb20c678db801"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The source forecasts full LIRR service to Grand Central Madison, but it does not enumerate exact branch-by-service-pattern applications.",
+      "known_facts": [
+        "Full service to Grand Central Madison begins with Monday, February 27 timetable change. Rush hour service split between Penn Station and Grand Central Madison.",
+        "date_text: February 27, 2023"
+      ],
+      "evidence_gaps": [
+        "Delivered operation is not confirmed by this pre-change evidence.",
+        "Exact LIRR branch and service-pattern incidence is not enumerated."
+      ],
+      "prohibited_inferences": [
+        "Do not cross-product the LIRR network or rush-hour terminal split into branch applications."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:751a004ea7702f3b4c22d199",
+      "candidate_key": "event:event_meeting-doc-98656-cost-containment",
+      "source_ids": [
+        "meeting_doc_98656"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-98656-cost-containment"
+      ],
+      "observation_relation_record_ids": [
+        "relation_meeting-doc-98656-project-cost-containment"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_98656#p012_c0002",
+          "record_id": "event_meeting-doc-98656-cost-containment",
+          "source_id": "meeting_doc_98656"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_98656",
+          "record_id": "event_meeting-doc-98656-cost-containment",
+          "evidence_id": "meeting_doc_98656#p012_c0002",
+          "text_sha256": "sha256:3bd3745466f278f0858cb50a07557c370123926bc8fd7339d2328a0b128b3042"
+        }
+      ],
+      "recommended_disposition": "outside_domain",
+      "canonical_candidate_id": null,
+      "assessment": "The Cost Containment Initiative is a project-management initiative, not a route-treatment operational occurrence.",
+      "known_facts": [
+        "Cost Containment Initiative announced. Identified major drivers of cost and delay: unbalanced risks, layers of bureaucracy/red tape, weak project management.",
+        "date_text: June 2018"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not treat administrative cost controls as a transit intervention application."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:76f21a75dab2a1388658e218",
+      "candidate_key": "event:event_march-4-timetable-change-133331",
+      "source_ids": [
+        "meeting_doc_133331"
+      ],
+      "observation_event_record_ids": [
+        "event_march-4-timetable-change-133331"
+      ],
+      "observation_relation_record_ids": [
+        "relation_batch012-lirr-implements-timetable-133331-timeline-event",
+        "relation_batch023-montauk-crossing-related-to-march4-timetable",
+        "relation_batch023-pj-crossing-related-to-march4-timetable",
+        "relation_batch023-pw-trackwork-related-to-march4-timetable",
+        "relation_crossing-rehab-timetable-133331",
+        "relation_funding-lirr-mta-capital-133331",
+        "relation_hall-interlocking-timetable-133331",
+        "relation_wsy-overbuild-timetable-133331"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_133331#p001_c0004",
+          "record_id": "event_march-4-timetable-change-133331",
+          "source_id": "meeting_doc_133331"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_133331",
+          "record_id": "event_march-4-timetable-change-133331",
+          "evidence_id": "meeting_doc_133331#p001_c0004",
+          "text_sha256": "sha256:910294fbde19f8400e4b7d0b791c5d13b4785629b6c9ca019b07e1a4d3da91b8"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The timetable plan groups multiple projects and construction activities without proving exact route-by-treatment incidence or delivered operation.",
+      "known_facts": [
+        "MTA LIRR plan to adjust schedules beginning March 4, 2024 through May 19, 2024.",
+        "date_text: March 4, 2024 through May 19, 2024"
+      ],
+      "evidence_gaps": [
+        "The source describes a planned March 4-May 19, 2024 timetable period.",
+        "Multiple branches and treatments cannot be paired from the grouped schedule."
+      ],
+      "prohibited_inferences": [
+        "Do not cross-product listed projects, branches, and timetable effects.",
+        "Do not infer delivery from a plan."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:7728d2e147f1ff0f819883ab",
+      "candidate_key": "event:event_november-timetable-change-124266",
+      "source_ids": [
+        "meeting_doc_124266"
+      ],
+      "observation_event_record_ids": [
+        "event_november-timetable-change-124266"
+      ],
+      "observation_relation_record_ids": [
+        "relation_gcm-service-plan-improvements-124266",
+        "relation_timetable-supports-projects-124266"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_124266#p001_c0004",
+          "record_id": "event_november-timetable-change-124266",
+          "source_id": "meeting_doc_124266"
+        },
+        {
+          "evidence_id": "meeting_doc_124266#p001_c0007",
+          "record_id": "event_november-timetable-change-124266",
+          "source_id": "meeting_doc_124266"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_124266",
+          "record_id": "event_november-timetable-change-124266",
+          "evidence_id": "meeting_doc_124266#p001_c0004",
+          "text_sha256": "sha256:cea951ba9341bcf723fcc70b54bcc95da3be8c7ab6d87ca15686fe8da34fa682"
+        },
+        {
+          "source_id": "meeting_doc_124266",
+          "record_id": "event_november-timetable-change-124266",
+          "evidence_id": "meeting_doc_124266#p001_c0007",
+          "text_sha256": "sha256:5c64a993d072682385c6bbe551d6301817598db0fbb4a7145ed944a5f2ad0a1e"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The planned LIRR timetable adjustment supports plural projects but lacks exact branch-by-service-change applications and delivered confirmation.",
+      "known_facts": [
+        "LIRR schedule adjustment beginning November 13, 2023 through March 3, 2024",
+        "date_text: November 13, 2023 through March 3, 2024"
+      ],
+      "evidence_gaps": [
+        "The source states a November 13, 2023-March 3, 2024 timetable period.",
+        "Exact branch and treatment incidence is absent."
+      ],
+      "prohibited_inferences": [
+        "Do not infer that every LIRR branch received every listed project-related change."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:77ac74fdefd1d9870b7946cc",
+      "candidate_key": "event:event_meeting-doc-127701-congestion-pricing",
+      "source_ids": [
+        "meeting_doc_127701"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-127701-congestion-pricing"
+      ],
+      "observation_relation_record_ids": [
+        "relation_meeting-doc-127701-cbdtp-implementation"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_127701#p009_c0009",
+          "record_id": "event_meeting-doc-127701-congestion-pricing",
+          "source_id": "meeting_doc_127701"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_127701",
+          "record_id": "event_meeting-doc-127701-congestion-pricing",
+          "evidence_id": "meeting_doc_127701#p009_c0009",
+          "text_sha256": "sha256:647a109cf1f5e51ce1a288223d083d3925df21e266de27da47a01ecdbbe3004d"
+        }
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:f778ffc2ea802a1dc10df1f5",
+      "assessment": "The mid-2024 congestion-pricing schedule is a forecast observation of the same CBD tolling activation represented by the exact January 5, 2025 target.",
+      "known_facts": [
+        "Central Business District Tolling Program (Congestion Pricing) scheduled for implementation",
+        "date_text: mid-2024"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Preserve the forecast as documentary history; do not use it as the delivered onset."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:7883fee4cff26cbd6a9e9efd",
+      "candidate_key": "event:event_montauk-bridge-track-maintenance-oct5-6-2024",
+      "source_ids": [
+        "meeting_doc_151821"
+      ],
+      "observation_event_record_ids": [
+        "event_montauk-bridge-track-maintenance-oct5-6-2024"
+      ],
+      "observation_relation_record_ids": [
+        "relation_montauk-maint-has-event-oct5-6"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_151821#p001_c0007",
+          "record_id": "event_montauk-bridge-track-maintenance-oct5-6-2024",
+          "source_id": "meeting_doc_151821"
+        },
+        {
+          "evidence_id": "meeting_doc_151821#p002_c0001",
+          "record_id": "event_montauk-bridge-track-maintenance-oct5-6-2024",
+          "source_id": "meeting_doc_151821"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_151821",
+          "record_id": "event_montauk-bridge-track-maintenance-oct5-6-2024",
+          "evidence_id": "meeting_doc_151821#p001_c0007",
+          "text_sha256": "sha256:42e6516638fe08fdd6f739e2bb6948bc3ee28e536935a4ef8078ecaa419478c2"
+        },
+        {
+          "source_id": "meeting_doc_151821",
+          "record_id": "event_montauk-bridge-track-maintenance-oct5-6-2024",
+          "evidence_id": "meeting_doc_151821#p002_c0001",
+          "text_sha256": "sha256:79c8e7d89b1f8c4da892abf297e9439f204e1465a0ffd2951aa3772b70125ac7"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The source prospectively schedules a Montauk Branch outage and replacement buses; it does not prove that the October 2024 operation occurred.",
+      "known_facts": [
+        "All main tracks on Montauk Branch between Babylon and Montauk out of service; bus service replaces train service for approximately 48 hours",
+        "date_text: October 5-6, 2024"
+      ],
+      "evidence_gaps": [
+        "At source time, the October 5-6 outage and replacement-bus operation were future.",
+        "Canonical exact route and replacement-service treatment identities are absent."
+      ],
+      "prohibited_inferences": [
+        "Do not convert scheduled track work into delivered service replacement."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:79026758b8ee1249195d6af8",
+      "candidate_key": "event:event_meeting-doc-108036-track-trespassing-task-force-launch",
+      "source_ids": [
+        "meeting_doc_108036"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-108036-track-trespassing-task-force-launch"
+      ],
+      "observation_relation_record_ids": [
+        "relation_mta-track-trespassing-task-force-launch"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_108036#p003_c0003",
+          "record_id": "event_meeting-doc-108036-track-trespassing-task-force-launch",
+          "source_id": "meeting_doc_108036"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_108036",
+          "record_id": "event_meeting-doc-108036-track-trespassing-task-force-launch",
+          "evidence_id": "meeting_doc_108036#p003_c0003",
+          "text_sha256": "sha256:5c6f75f804dd5fa376ed09abf228ddf29534eebdfc6d95a7fbb429cc904ca494"
+        }
+      ],
+      "recommended_disposition": "outside_domain",
+      "canonical_candidate_id": null,
+      "assessment": "Creation of a track-trespassing task force is an organizational safety initiative, not one exact route-treatment application.",
+      "known_facts": [
+        "MTA launched a Track Trespassing Task Force to address the issue of track intrusion",
+        "date_text: fall of 2021"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not infer implementation of every technology discussed by the task force."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:799562a5da5929308eabdaa7",
+      "candidate_key": "event:event_meeting-doc-109341-cherry-valley-bridge-waterproofing",
+      "source_ids": [
+        "meeting_doc_109341"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-109341-cherry-valley-bridge-waterproofing"
+      ],
+      "observation_relation_record_ids": [
+        "relation_rel-meeting-doc-109341-cherry-valley-bridge-work-event"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_109341#p002_c0004",
+          "record_id": "event_meeting-doc-109341-cherry-valley-bridge-waterproofing",
+          "source_id": "meeting_doc_109341"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_109341",
+          "record_id": "event_meeting-doc-109341-cherry-valley-bridge-waterproofing",
+          "evidence_id": "meeting_doc_109341#p002_c0004",
+          "text_sha256": "sha256:9c6f689b3f3c5bafe2e47db7de16ad80571d01a605bd47167944c3f5a7d26566"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The source prospectively schedules a Hempstead Branch outage and replacement buses for bridge waterproofing; it does not prove delivery.",
+      "known_facts": [
+        "Hempstead Branch between Floral Park and Hempstead taken out of service for approximately 24 hours while Cherry Valley Bridge in Garden City is waterproofed; bus service replaces train service in both directions.",
+        "date_text: Saturday, May 13"
+      ],
+      "evidence_gaps": [
+        "The April 2023 source describes planned May 13, 2023 work.",
+        "No canonical exact branch-route and replacement-service treatment application is available."
+      ],
+      "prohibited_inferences": [
+        "Do not infer that the scheduled outage occurred."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:79a5515799b315fda6862fc6",
+      "candidate_key": "event:event_meeting-doc-115206-oct2023-lirr-mnr-ptc-update",
+      "source_ids": [
+        "meeting_doc_115206"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-115206-oct2023-lirr-mnr-ptc-update"
+      ],
+      "observation_relation_record_ids": [
+        "relation_lirr-mnr-ptc-oct2023-has-participant-lirr",
+        "relation_lirr-mnr-ptc-oct2023-has-participant-mnr",
+        "relation_ptc-project-timeline-oct2023"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_115206#p004_c0006",
+          "record_id": "event_meeting-doc-115206-oct2023-lirr-mnr-ptc-update",
+          "source_id": "meeting_doc_115206"
+        },
+        {
+          "evidence_id": "meeting_doc_115206#p004_c0007",
+          "record_id": "event_meeting-doc-115206-oct2023-lirr-mnr-ptc-update",
+          "source_id": "meeting_doc_115206"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_115206",
+          "record_id": "event_meeting-doc-115206-oct2023-lirr-mnr-ptc-update",
+          "evidence_id": "meeting_doc_115206#p004_c0006",
+          "text_sha256": "sha256:b0ea8e62251212fc908b69a9d0b0d82c05cb256a691be9c1839c2e30d744398a"
+        },
+        {
+          "source_id": "meeting_doc_115206",
+          "record_id": "event_meeting-doc-115206-oct2023-lirr-mnr-ptc-update",
+          "evidence_id": "meeting_doc_115206#p004_c0007",
+          "text_sha256": "sha256:2b08a680b41617ee792cf036fc411b7e6c3f367a7976388d96ee9036b5e90834"
+        }
+      ],
+      "recommended_disposition": "outside_domain",
+      "canonical_candidate_id": null,
+      "assessment": "An October 2023 committee briefing about PTC close-out is a reporting event, not a new operational route-treatment implementation.",
+      "known_facts": [
+        "The Committee will be briefed on the status of project implementation and close-out following full Positive Train Control functionality for both railroads going into effect in December 2020.",
+        "date_text: October 2023"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not backdate or recreate the December 2020 PTC activation from a 2023 briefing."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:7c5602f63b0a01c06e75bed8",
+      "candidate_key": "event:event_ronkonkoma-oct4-5-2025",
+      "source_ids": [
+        "meeting_doc_186721"
+      ],
+      "observation_event_record_ids": [
+        "event_ronkonkoma-oct4-5-2025"
+      ],
+      "observation_relation_record_ids": [
+        "relation_ronkonkoma-proj-event-oct4-5"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_186721#p002_c0001",
+          "record_id": "event_ronkonkoma-oct4-5-2025",
+          "source_id": "meeting_doc_186721"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_186721",
+          "record_id": "event_ronkonkoma-oct4-5-2025",
+          "evidence_id": "meeting_doc_186721#p002_c0001",
+          "text_sha256": "sha256:c014d7c18d0048efbd8e1b30df32c6d7c89b6ce864aa287b5331f0ff20725039"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The source schedules future Ronkonkoma switch installations and state-of-good-repair work but does not confirm delivery or exact service incidence.",
+      "known_facts": [
+        "Switch installations and state of good repair maintenance at Ronkonkoma Station",
+        "date_text: October 4-5, 2025"
+      ],
+      "evidence_gaps": [
+        "October 2025 work is prospective in the source.",
+        "The passenger-route effects of the plural work are not enumerated."
+      ],
+      "prohibited_inferences": [
+        "Do not publish future work as completed or cross-product activities with routes."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:7cb4825a8c94423cdc2c21c5",
+      "candidate_key": "event:event_massapequa-signal-cutover_2",
+      "source_ids": [
+        "meeting_doc_127536"
+      ],
+      "observation_event_record_ids": [
+        "event_massapequa-signal-cutover_2"
+      ],
+      "observation_relation_record_ids": [
+        "relation_rel-massapequa-signal"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_127536#p005_c0003",
+          "record_id": "event_massapequa-signal-cutover_2",
+          "source_id": "meeting_doc_127536"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_127536",
+          "record_id": "event_massapequa-signal-cutover_2",
+          "evidence_id": "meeting_doc_127536#p005_c0003",
+          "text_sha256": "sha256:28a1338eddd026697807fa6814ce852f6eafe9f5cc42c07dd08a21a99b4980c0"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The Massapequa Pocket Track signal cutover is retrospectively dated, but the source does not bind that asset work to an exact passenger route and treatment application.",
+      "known_facts": [
+        "Massapequa Pocket Track signal system cutover",
+        "date_text: March 2020"
+      ],
+      "evidence_gaps": [
+        "Signal cutover occurred in March 2020.",
+        "Exact passenger-route incidence is not stated."
+      ],
+      "prohibited_inferences": [
+        "Do not substitute a project asset for a true route identity."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:7f16dc77e6485ac6a7923ce2",
+      "candidate_key": "event:event_mnr-committee-oct2023-ptc-update",
+      "source_ids": [
+        "meeting_doc_124191"
+      ],
+      "observation_event_record_ids": [
+        "event_mnr-committee-oct2023-ptc-update"
+      ],
+      "observation_relation_record_ids": [
+        "relation_ptc-update-committee-oct2023"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_124191#p003_c0011",
+          "record_id": "event_mnr-committee-oct2023-ptc-update",
+          "source_id": "meeting_doc_124191"
+        },
+        {
+          "evidence_id": "meeting_doc_124191#p003_c0014",
+          "record_id": "event_mnr-committee-oct2023-ptc-update",
+          "source_id": "meeting_doc_124191"
+        },
+        {
+          "evidence_id": "meeting_doc_124191#p003_c0015",
+          "record_id": "event_mnr-committee-oct2023-ptc-update",
+          "source_id": "meeting_doc_124191"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_124191",
+          "record_id": "event_mnr-committee-oct2023-ptc-update",
+          "evidence_id": "meeting_doc_124191#p003_c0011",
+          "text_sha256": "sha256:42f2a1c739de35db812568f3ff692cf85dc13c30d9c380df160860e033095a81"
+        },
+        {
+          "source_id": "meeting_doc_124191",
+          "record_id": "event_mnr-committee-oct2023-ptc-update",
+          "evidence_id": "meeting_doc_124191#p003_c0014",
+          "text_sha256": "sha256:b0ea8e62251212fc908b69a9d0b0d82c05cb256a691be9c1839c2e30d744398a"
+        },
+        {
+          "source_id": "meeting_doc_124191",
+          "record_id": "event_mnr-committee-oct2023-ptc-update",
+          "evidence_id": "meeting_doc_124191#p003_c0015",
+          "text_sha256": "sha256:9999b2e54073c4ad87418da9fed3f6058b1dd02f8126b5c64daff3991800c244"
+        }
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:79a5515799b315fda6862fc6",
+      "assessment": "This is another committee-source observation of the same October 2023 LIRR/MNR PTC close-out briefing retained by the target candidate.",
+      "known_facts": [
+        "The Committee will be briefed on the status of project implementation and close-out following full Positive Train Control functionality for both railroads which went into effect in December 2020.",
+        "date_text: October 2023"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not create another PTC activation or briefing occurrence."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:7fa6f6a926f3e735353e75e2",
+      "candidate_key": "event:event_nostrand-av-entrance-reopened",
+      "source_ids": [
+        "meeting_doc_33236"
+      ],
+      "observation_event_record_ids": [
+        "event_nostrand-av-entrance-reopened"
+      ],
+      "observation_relation_record_ids": [
+        "relation_nostrand-entrance-b44-sbs"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_33236#p077_c0005",
+          "record_id": "event_nostrand-av-entrance-reopened",
+          "source_id": "meeting_doc_33236"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_33236",
+          "record_id": "event_nostrand-av-entrance-reopened",
+          "evidence_id": "meeting_doc_33236#p077_c0005",
+          "text_sha256": "sha256:a6d25f6862e3460c35f7be2bab65918117435e86f2bb9eb3f270ee424f2641d1"
+        }
+      ],
+      "recommended_disposition": "outside_domain",
+      "canonical_candidate_id": null,
+      "assessment": "Reopening a subway-station entrance is station access infrastructure, not a treatment applied to the connected B44 SBS route.",
+      "known_facts": [
+        "Reopening of Bedford Av and Fulton St entrance of Nostrand Av station on A/C lines, closed for 30 years. Provides another path to subway, easier connection to B44 SBS, and creates free transfer between north and southbound platforms.",
+        "date_text: March 2021"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "The easier B44 connection does not establish a B44 treatment application."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:8041365e6a95a42f9ecba217",
+      "candidate_key": "event:event_meeting-doc-128871-oct2024-ptc",
+      "source_ids": [
+        "meeting_doc_128871"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-128871-oct2024-ptc"
+      ],
+      "observation_relation_record_ids": [
+        "relation_meeting-doc-128871-ptc-oct2024"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_128871#p005_c0008",
+          "record_id": "event_meeting-doc-128871-oct2024-ptc",
+          "source_id": "meeting_doc_128871"
+        },
+        {
+          "evidence_id": "meeting_doc_128871#p005_c0011",
+          "record_id": "event_meeting-doc-128871-oct2024-ptc",
+          "source_id": "meeting_doc_128871"
+        },
+        {
+          "evidence_id": "meeting_doc_128871#p005_c0012",
+          "record_id": "event_meeting-doc-128871-oct2024-ptc",
+          "source_id": "meeting_doc_128871"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_128871",
+          "record_id": "event_meeting-doc-128871-oct2024-ptc",
+          "evidence_id": "meeting_doc_128871#p005_c0008",
+          "text_sha256": "sha256:59c069aba89084a384d3436d7cf6432962fe6a9d53e6bf8a78bf13cc428bbe65"
+        },
+        {
+          "source_id": "meeting_doc_128871",
+          "record_id": "event_meeting-doc-128871-oct2024-ptc",
+          "evidence_id": "meeting_doc_128871#p005_c0011",
+          "text_sha256": "sha256:b0ea8e62251212fc908b69a9d0b0d82c05cb256a691be9c1839c2e30d744398a"
+        },
+        {
+          "source_id": "meeting_doc_128871",
+          "record_id": "event_meeting-doc-128871-oct2024-ptc",
+          "evidence_id": "meeting_doc_128871#p005_c0012",
+          "text_sha256": "sha256:2b08a680b41617ee792cf036fc411b7e6c3f367a7976388d96ee9036b5e90834"
+        }
+      ],
+      "recommended_disposition": "outside_domain",
+      "canonical_candidate_id": null,
+      "assessment": "The October 2024 PTC agenda item is a committee briefing, not a new implementation episode.",
+      "known_facts": [
+        "The Committee will be briefed on the status of project implementation and close-out following full Positive Train Control functionality for both railroads going into effect in December 2020.",
+        "date_text: October 2024"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not recreate the December 2020 PTC activation from a later briefing."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:80753e82f3e303c1e8ac6af8",
+      "candidate_key": "event:event_mfg-continued-installation",
+      "source_ids": [
+        "meeting_doc_202091"
+      ],
+      "observation_event_record_ids": [
+        "event_mfg-continued-installation"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-continued-install"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_202091#p013_c0004",
+          "record_id": "event_mfg-continued-installation",
+          "source_id": "meeting_doc_202091"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_202091",
+          "record_id": "event_mfg-continued-installation",
+          "evidence_id": "meeting_doc_202091#p013_c0004",
+          "text_sha256": "sha256:89e4f5980ba57bc64bc1b655ac75c54f4764f0154813f9e07f7de7c71472272e"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "Continued modern-fare-gate installation in Q1 2027+ is a future schedule and lacks the exact station/route incidence required for publication.",
+      "known_facts": [
+        "Continued Installation of modern fare gates",
+        "date_text: Q1 2027+"
+      ],
+      "evidence_gaps": [
+        "The date is prospective.",
+        "The continued-installation station set and route bindings are not enumerated."
+      ],
+      "prohibited_inferences": [
+        "Do not infer delivery or distribute the 20-station project treatment across routes."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:83c45b532c54d8aa86b55c11",
+      "candidate_key": "event:event_meeting-doc-124201-mnr-cp243-signal-cutover",
+      "source_ids": [
+        "meeting_doc_124201"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-124201-mnr-cp243-signal-cutover"
+      ],
+      "observation_relation_record_ids": [
+        "relation_meeting-doc-124201-mnr-ptc-timeline-cp243"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_124201#p004_c0006",
+          "record_id": "event_meeting-doc-124201-mnr-cp243-signal-cutover",
+          "source_id": "meeting_doc_124201"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_124201",
+          "record_id": "event_meeting-doc-124201-mnr-cp243-signal-cutover",
+          "evidence_id": "meeting_doc_124201#p004_c0006",
+          "text_sha256": "sha256:6355018ee1e281ac91823166c17f6c8b5d7eeec2ae11866362f023a80a596b06"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The CP 243 signal cutover was scheduled after the October 23, 2023 source date and is not delivery evidence.",
+      "known_facts": [
+        "Signal cutover is scheduled for the 1st week of Nov followed by PTC Testing and commissioning by Dec 1st",
+        "date_text: 1st week of Nov 2023"
+      ],
+      "evidence_gaps": [
+        "The source schedules cutover for the first week of November 2023 and testing by December 1.",
+        "No exact passenger-route application is stated."
+      ],
+      "prohibited_inferences": [
+        "Do not convert the schedule to an installed occurrence."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:84a71e6c3ffa3b201b268713",
+      "candidate_key": "event:event_163121-r211s-introduction",
+      "source_ids": [
+        "meeting_doc_163121"
+      ],
+      "observation_event_record_ids": [
+        "event_163121-r211s-introduction"
+      ],
+      "observation_relation_record_ids": [
+        "relation_163121-r211-has-r211s-intro"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_163121#p032_c0008",
+          "record_id": "event_163121-r211s-introduction",
+          "source_id": "meeting_doc_163121"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_163121",
+          "record_id": "event_163121-r211s-introduction",
+          "evidence_id": "meeting_doc_163121#p032_c0008",
+          "text_sha256": "sha256:34b0f72072dac526f6a25b5de14ba2500a8d11e889daf6781ed760b1eb1428e7"
+        }
+      ],
+      "recommended_disposition": "published",
+      "canonical_candidate_id": null,
+      "assessment": "The retrospective source states that R211S cars were introduced on the Staten Island Railway in fall 2024, proving one route-fleet-treatment incidence; canonical identities require schema repair.",
+      "known_facts": [
+        "R211S introduced on the Staten Island Railway, which will comprise the entire fleet of the Staten Island Railway, replacing the oldest cars in the entire MTA fleet",
+        "date_text: fall of 2024"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not claim that the entire 75-car fleet was already in service at the introduction onset."
+      ],
+      "applications": [
+        {
+          "route_surface": "Staten Island Railway",
+          "route_record_id": null,
+          "treatment_surface": "R211S fleet introduction",
+          "treatment_record_id": null,
+          "phase": "introduced",
+          "extent": {
+            "kind": "unknown",
+            "location_text": "Staten Island Railway"
+          },
+          "evidence_ids": [
+            "meeting_doc_163121#p032_c0008"
+          ]
+        }
+      ],
+      "onset": {
+        "date": "2024-fall",
+        "precision": "season",
+        "source_text": "fall of 2024"
+      },
+      "scope": {
+        "kind": "unknown",
+        "location_text": "Staten Island Railway"
+      },
+      "integration_status": "blocked_schema",
+      "schema_blocker_ids": [
+        "schema:meeting04-sir-r211s-identities"
+      ]
+    },
+    {
+      "candidate_id": "candidate:86a00387dd0db3a982a2a683",
+      "candidate_key": "event:event_battery-electric-aar-van-debut",
+      "source_ids": [
+        "meeting_doc_138391"
+      ],
+      "observation_event_record_ids": [
+        "event_battery-electric-aar-van-debut"
+      ],
+      "observation_relation_record_ids": [
+        "relation_aar-pilot-launch-event"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_138391#p006_c0002",
+          "record_id": "event_battery-electric-aar-van-debut",
+          "source_id": "meeting_doc_138391"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_138391",
+          "record_id": "event_battery-electric-aar-van-debut",
+          "evidence_id": "meeting_doc_138391#p006_c0002",
+          "text_sha256": "sha256:180da5c6440e8321ae2ada371edc1579a9e8c61063aa6d0708e71bcc9ed340f0"
+        }
+      ],
+      "recommended_disposition": "outside_domain",
+      "canonical_candidate_id": null,
+      "assessment": "A single battery-electric Access-A-Ride van entering service is a demand-responsive fleet pilot without an exact fixed-route application.",
+      "known_facts": [
+        "First battery-electric Access-A-Ride van entered passenger service, debuted at Bowling Green Park",
+        "date_text: April 15, 2024"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not invent a fixed route or service-wide fleet conversion."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:875fcc765abd8c4098c36a5e",
+      "candidate_key": "event:event_lirr-concourse-opening-sep2022",
+      "source_ids": [
+        "meeting_doc_104701"
+      ],
+      "observation_event_record_ids": [
+        "event_lirr-concourse-opening-sep2022"
+      ],
+      "observation_relation_record_ids": [
+        "relation_lirr-concourse-opening-event"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_104701#p013_c0010",
+          "record_id": "event_lirr-concourse-opening-sep2022",
+          "source_id": "meeting_doc_104701"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_104701",
+          "record_id": "event_lirr-concourse-opening-sep2022",
+          "evidence_id": "meeting_doc_104701#p013_c0010",
+          "text_sha256": "sha256:698f49edce0a5b7bf1cf7dc6cc2d7b18aa1615b1add091b679a25761ac1052b6"
+        }
+      ],
+      "recommended_disposition": "outside_domain",
+      "canonical_candidate_id": null,
+      "assessment": "Opening the LIRR 33rd Street Concourse is station/terminal access infrastructure, not an exact route-treatment application.",
+      "known_facts": [
+        "The main 33 St Concourse of the LIRR Concourse project was revealed to the public",
+        "date_text: September 6, 2022"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not apply the concourse opening to every LIRR branch."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:881abe90bdd5af1f81d229ad",
+      "candidate_key": "event:event_service-adjustment-far-rockaway-127546",
+      "source_ids": [
+        "meeting_doc_127546"
+      ],
+      "observation_event_record_ids": [
+        "event_service-adjustment-far-rockaway-127546"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-to-service-adjustment"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_127546#p001_c0008",
+          "record_id": "event_service-adjustment-far-rockaway-127546",
+          "source_id": "meeting_doc_127546"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_127546",
+          "record_id": "event_service-adjustment-far-rockaway-127546",
+          "evidence_id": "meeting_doc_127546#p001_c0008",
+          "text_sha256": "sha256:3a8f195b97a48a94e793d8dbf5708e00530b0abb200d258b0e7873d772dfcb4d"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The source prospectively describes three Far Rockaway Branch weekend diversions but does not prove they occurred or provide a canonical service-diversion treatment.",
+      "known_facts": [
+        "Far Rockaway Branch trains diverted from Penn Station to Grand Central Madison for approximately 48-hours during each weekend outage.",
+        "date_text: December 2-3, December 9-10, and December 16-17, 2023"
+      ],
+      "evidence_gaps": [
+        "The exact Far Rockaway Branch is named.",
+        "The weekend diversions are planned in the source."
+      ],
+      "prohibited_inferences": [
+        "Do not publish scheduled diversions as delivered."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:88e687c4c934424c66581eaf",
+      "candidate_key": "event:event_biltmore-room-connection-opening",
+      "source_ids": [
+        "meeting_doc_111761"
+      ],
+      "observation_event_record_ids": [
+        "event_biltmore-room-connection-opening"
+      ],
+      "observation_relation_record_ids": [
+        "relation_biltmore-connection-opening-event"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_111761#p006_c0010",
+          "record_id": "event_biltmore-room-connection-opening",
+          "source_id": "meeting_doc_111761"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_111761",
+          "record_id": "event_biltmore-room-connection-opening",
+          "evidence_id": "meeting_doc_111761#p006_c0010",
+          "text_sha256": "sha256:e87d5619b94875dc88bb21c8f4d7ad9e3df1fabf38a64287ecc925afb82a3952"
+        }
+      ],
+      "recommended_disposition": "outside_domain",
+      "canonical_candidate_id": null,
+      "assessment": "Opening a terminal pathway, escalators, and elevator is station access infrastructure rather than a route-treatment operational occurrence.",
+      "known_facts": [
+        "New pathway in and out of Grand Central debuted in the terminal's Biltmore Room with two new escalators and an elevator leading between the Biltmore Room and Grand Central Madison.",
+        "date_text: May 8, 2023"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not assign the pathway to all Grand Central Madison services."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:89aeb7d84b5cd362eed12771",
+      "candidate_key": "event:event_jun2023-summer-trackwork",
+      "source_ids": [
+        "meeting_doc_105781"
+      ],
+      "observation_event_record_ids": [
+        "event_jun2023-summer-trackwork"
+      ],
+      "observation_relation_record_ids": [
+        "relation_mainline-summer-trackwork"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_105781#p004_c0019",
+          "record_id": "event_jun2023-summer-trackwork",
+          "source_id": "meeting_doc_105781"
+        },
+        {
+          "evidence_id": "meeting_doc_105781#p004_c0020",
+          "record_id": "event_jun2023-summer-trackwork",
+          "source_id": "meeting_doc_105781"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_105781",
+          "record_id": "event_jun2023-summer-trackwork",
+          "evidence_id": "meeting_doc_105781#p004_c0019",
+          "text_sha256": "sha256:c1ed04fc38056e63c6e5df5ab1a2cf0cfb62275ddf4c554c7c91cee65cc75df3"
+        },
+        {
+          "source_id": "meeting_doc_105781",
+          "record_id": "event_jun2023-summer-trackwork",
+          "evidence_id": "meeting_doc_105781#p004_c0020",
+          "text_sha256": "sha256:d30a24b5a1f5d4282e9b6edb1eeed6930be56a2340fc9a647f98e8b315dae4a4"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The source describes plans to adjust schedules for multiple June 2023 trackwork programs without enumerating exact route-treatment incidence.",
+      "known_facts": [
+        "Adjust schedules to support various trackwork programs, Main Line Second Track construction and East Side Access Readiness projects",
+        "date_text: June 2023"
+      ],
+      "evidence_gaps": [
+        "Multiple construction and readiness programs are grouped.",
+        "Exact branch-specific schedule actions are absent."
+      ],
+      "prohibited_inferences": [
+        "Do not cross-product projects, trackwork, and LIRR branches."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:8a0274bd1166c7b2c1c70350",
+      "candidate_key": "event:event_192261-crz-tolling-commenced",
+      "source_ids": [
+        "meeting_doc_192261"
+      ],
+      "observation_event_record_ids": [
+        "event_192261-crz-tolling-commenced"
+      ],
+      "observation_relation_record_ids": [
+        "relation_192261-project-event-commenced"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_192261#p001_c0009",
+          "record_id": "event_192261-crz-tolling-commenced",
+          "source_id": "meeting_doc_192261"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_192261",
+          "record_id": "event_192261-crz-tolling-commenced",
+          "evidence_id": "meeting_doc_192261#p001_c0009",
+          "text_sha256": "sha256:48e6c38204b76bb29407a8125af59cefa022e67d34f6dc4e8f5e4f8ffc8e1268"
+        }
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:f778ffc2ea802a1dc10df1f5",
+      "assessment": "This exact January 5, 2025 CRZ tolling commencement is a duplicate source view of the frozen target candidate.",
+      "known_facts": [
+        "The CRZ Tolling Program went into effect and tolling commenced.",
+        "date_text: January 5, 2025"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not create a second tolling commencement."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:8a3000e5ce531244c21c5556",
+      "candidate_key": "event:event_meeting-doc-115251-additional-testing-added",
+      "source_ids": [
+        "meeting_doc_115251"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-115251-additional-testing-added"
+      ],
+      "observation_relation_record_ids": [
+        "relation_proj-testing-added"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_115251#p007_c0008",
+          "record_id": "event_meeting-doc-115251-additional-testing-added",
+          "source_id": "meeting_doc_115251"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_115251",
+          "record_id": "event_meeting-doc-115251-additional-testing-added",
+          "evidence_id": "meeting_doc_115251#p007_c0008",
+          "text_sha256": "sha256:3af86585c56607134e3b6a70a195dddfbf4b7c46807737362da4c17728042dd1"
+        }
+      ],
+      "recommended_disposition": "outside_domain",
+      "canonical_candidate_id": null,
+      "assessment": "Adding testing time to a contract schedule is project administration, not an operational route-treatment occurrence.",
+      "known_facts": [
+        "NYC Transit added 9 additional weeks to schedule for additional testing requirements at no additional cost",
+        "date_text: April 2022"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not treat schedule contingency as passenger service implementation."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:8aa99fb4ea05f54a2c853bee",
+      "candidate_key": "event:event_meeting-doc-160121-nye-program",
+      "source_ids": [
+        "meeting_doc_160121"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-160121-nye-program"
+      ],
+      "observation_relation_record_ids": [
+        "relation_lirr-nye-program"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_160121#p001_c0011",
+          "record_id": "event_meeting-doc-160121-nye-program",
+          "source_id": "meeting_doc_160121"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_160121",
+          "record_id": "event_meeting-doc-160121-nye-program",
+          "evidence_id": "meeting_doc_160121#p001_c0011",
+          "text_sha256": "sha256:2cb9071ae5455a3a5a097a4a74c4880c056731d4da28a9203a16d272f6c5ed61"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The source schedules New Year's Eve LIRR service but does not confirm operation or enumerate exact branch-by-extra-service applications.",
+      "known_facts": [
+        "On New Year's Eve, the LIRR will operate on a regular weekday schedule with the addition of extra evening westbound trains.",
+        "date_text: Tuesday, December 31, 2024"
+      ],
+      "evidence_gaps": [
+        "A regular weekday schedule plus extra westbound trains is planned.",
+        "The extra trains' branches are not identified."
+      ],
+      "prohibited_inferences": [
+        "Do not apply extra service to every LIRR branch."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:8ab8e498b4dc5cd278e8a25b",
+      "candidate_key": "event:event_gct-switch-replacement",
+      "source_ids": [
+        "meeting_doc_133301"
+      ],
+      "observation_event_record_ids": [
+        "event_gct-switch-replacement"
+      ],
+      "observation_relation_record_ids": [
+        "relation_mnrr-gct-switch-replacement"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_133301#p005_c0007",
+          "record_id": "event_gct-switch-replacement",
+          "source_id": "meeting_doc_133301"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_133301",
+          "record_id": "event_gct-switch-replacement",
+          "evidence_id": "meeting_doc_133301#p005_c0007",
+          "text_sha256": "sha256:35c8a9ea73a4f80ab5f2d365d66776298e975c35ce8b578b90a4a3716dd60b88"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The source confirms switch-replacement work at Grand Central Terminal but does not bind the shared interlocking assets to exact passenger routes.",
+      "known_facts": [
+        "Metro-North began a replacement program in Grand Central Terminal focused on three critical double-slip switches and a diamond switch that allows trains to operate from any track in the Park Avenue tunnel to any platform in Grand Central Terminal. Crews will work through late March.",
+        "date_text: January 12, 2024 to late March 2024"
+      ],
+      "evidence_gaps": [
+        "Replacement work began January 12, 2024.",
+        "The switches allow plural trains/tracks/platforms and no exact route incidence is stated."
+      ],
+      "prohibited_inferences": [
+        "Do not cross-product terminal tracks or Metro-North lines with the switch work."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:8b840113f5ac23a252c3ec59",
+      "candidate_key": "event:event_meeting-doc-160311-haverstraw-ferry-start",
+      "source_ids": [
+        "meeting_doc_160311"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-160311-haverstraw-ferry-start"
+      ],
+      "observation_relation_record_ids": [
+        "relation_haverstraw-route-start-event"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_160311#p009_c0007",
+          "record_id": "event_meeting-doc-160311-haverstraw-ferry-start",
+          "source_id": "meeting_doc_160311"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_160311",
+          "record_id": "event_meeting-doc-160311-haverstraw-ferry-start",
+          "evidence_id": "meeting_doc_160311#p009_c0007",
+          "text_sha256": "sha256:e80d937b87dad24c010b19fbad83c0e86bcf4bdc20bee8744591b263c704424f"
+        }
+      ],
+      "recommended_disposition": "published",
+      "canonical_candidate_id": null,
+      "assessment": "The retrospective source establishes the September 2000 start of the exact Haverstraw-Ossining commuter ferry route; a treatment identity for service activation is missing.",
+      "known_facts": [
+        "Haverstraw-Ossining Ferry service began after a successful demonstration project and subsequent MTA Board approval",
+        "date_text: September 2000"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not include the later Newburgh-Beacon route in this occurrence.",
+        "Do not treat current ancillary services as present at the 2000 onset."
+      ],
+      "applications": [
+        {
+          "route_surface": "Haverstraw-Ossining Ferry",
+          "route_record_id": "route_meeting-doc-160311-haverstraw-ossining-ferry",
+          "treatment_surface": "regular commuter ferry service activation",
+          "treatment_record_id": null,
+          "phase": "launched",
+          "extent": {
+            "kind": "route_wide",
+            "location_text": "Haverstraw-Ossining ferry route"
+          },
+          "evidence_ids": [
+            "meeting_doc_160311#p009_c0007"
+          ]
+        }
+      ],
+      "onset": {
+        "date": "2000-09",
+        "precision": "month",
+        "source_text": "September 2000"
+      },
+      "scope": {
+        "kind": "route_wide",
+        "location_text": "Haverstraw-Ossining ferry route"
+      },
+      "integration_status": "blocked_schema",
+      "schema_blocker_ids": [
+        "schema:meeting04-haverstraw-service-treatment"
+      ]
+    },
+    {
+      "candidate_id": "candidate:8cffe2ce20ced294a5985213",
+      "candidate_key": "event:event_meeting-doc-140621-summer-saturdays",
+      "source_ids": [
+        "meeting_doc_140621"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-140621-summer-saturdays"
+      ],
+      "observation_relation_record_ids": [
+        "relation_summer-saturdays-project"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_140621#p036_c0004",
+          "record_id": "event_meeting-doc-140621-summer-saturdays",
+          "source_id": "meeting_doc_140621"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_140621",
+          "record_id": "event_meeting-doc-140621-summer-saturdays",
+          "evidence_id": "meeting_doc_140621#p036_c0004",
+          "text_sha256": "sha256:6975178f85bc10835cffd864aeace21f67f3a62436c9ed3fb226d0fccaede625"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The Summer Saturdays fare pilot is prospectively described for LIRR and Metro-North at system level, without exact route applications.",
+      "known_facts": [
+        "Summer Saturdays program on LIRR and MNR allowing monthly pass holders to travel with up to two additional people for $1 per person.",
+        "date_text: Saturdays between July 6 and August 31, 2024"
+      ],
+      "evidence_gaps": [
+        "The pilot dates and fare terms are stated.",
+        "Exact routes and proof of delivered operation are absent."
+      ],
+      "prohibited_inferences": [
+        "Do not cross-product two railroads with all routes."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:8f161235f18ebe3799765403",
+      "candidate_key": "event:event_holiday-lights-trains-launch-192301",
+      "source_ids": [
+        "meeting_doc_192301"
+      ],
+      "observation_event_record_ids": [
+        "event_holiday-lights-trains-launch-192301"
+      ],
+      "observation_relation_record_ids": [
+        "relation_holiday-lights-project-to-launch"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_192301#p022_c0006",
+          "record_id": "event_holiday-lights-trains-launch-192301",
+          "source_id": "meeting_doc_192301"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_192301",
+          "record_id": "event_holiday-lights-trains-launch-192301",
+          "evidence_id": "meeting_doc_192301#p022_c0006",
+          "text_sha256": "sha256:824482c5e8df62d48f4cdd3e198f849770a86494f3881094d18463049338e55c"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The Holiday Lights Train start lacks a year-qualified onset and exact line/service-pattern incidence.",
+      "known_facts": [
+        "Metro-North Holiday Lights Trains begin operation on Friday, November 28, operating until New Year's Day.",
+        "date_text: November 28"
+      ],
+      "evidence_gaps": [
+        "Operation is described as beginning November 28 and continuing to New Year's Day.",
+        "The year and exact routes are not established in the candidate evidence."
+      ],
+      "prohibited_inferences": [
+        "Do not guess the year or Metro-North line assignments."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:9088ac26de753a649b692706",
+      "candidate_key": "event:event_nov2023-winter-trackwork-jamaica",
+      "source_ids": [
+        "meeting_doc_105781"
+      ],
+      "observation_event_record_ids": [
+        "event_nov2023-winter-trackwork-jamaica"
+      ],
+      "observation_relation_record_ids": [
+        "relation_jamaica-winter-trackwork"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_105781#p005_c0020",
+          "record_id": "event_nov2023-winter-trackwork-jamaica",
+          "source_id": "meeting_doc_105781"
+        },
+        {
+          "evidence_id": "meeting_doc_105781#p005_c0021",
+          "record_id": "event_nov2023-winter-trackwork-jamaica",
+          "source_id": "meeting_doc_105781"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_105781",
+          "record_id": "event_nov2023-winter-trackwork-jamaica",
+          "evidence_id": "meeting_doc_105781#p005_c0020",
+          "text_sha256": "sha256:263a98fe24dd4eda1772327354fbd77403747a2ea0295f2f008e1d03bb478203"
+        },
+        {
+          "source_id": "meeting_doc_105781",
+          "record_id": "event_nov2023-winter-trackwork-jamaica",
+          "evidence_id": "meeting_doc_105781#p005_c0021",
+          "text_sha256": "sha256:23f6d05a421a530726a94ab228caa196260c9fa138fe5959c554aea12f834d1e"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The source plans November 2023 schedule changes for multiple Jamaica-area projects without exact branch-treatment applications or delivery proof.",
+      "known_facts": [
+        "Temporarily adjust schedules for a series of Switch Installations near Jamaica in support of the Jamaica Capacity Improvement Project. Additionally, trackwork programs will support Switch Maintenance near Valley Stream, and Rail Maintenance on the Wreck Lead Bridge in Island Park.",
+        "date_text: November 2023"
+      ],
+      "evidence_gaps": [
+        "Several switch and rail-maintenance programs are grouped.",
+        "Exact route-specific schedule effects are not enumerated."
+      ],
+      "prohibited_inferences": [
+        "Do not cross-product projects and LIRR branches."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:926e93307a7bcf4477fc12b6",
+      "candidate_key": "event:event_oct2023-ptc-update",
+      "source_ids": [
+        "meeting_doc_105781"
+      ],
+      "observation_event_record_ids": [
+        "event_oct2023-ptc-update"
+      ],
+      "observation_relation_record_ids": [
+        "relation_ptc-oct2023-briefing-v2"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_105781#p005_c0010",
+          "record_id": "event_oct2023-ptc-update",
+          "source_id": "meeting_doc_105781"
+        },
+        {
+          "evidence_id": "meeting_doc_105781#p005_c0013",
+          "record_id": "event_oct2023-ptc-update",
+          "source_id": "meeting_doc_105781"
+        },
+        {
+          "evidence_id": "meeting_doc_105781#p005_c0014",
+          "record_id": "event_oct2023-ptc-update",
+          "source_id": "meeting_doc_105781"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_105781",
+          "record_id": "event_oct2023-ptc-update",
+          "evidence_id": "meeting_doc_105781#p005_c0010",
+          "text_sha256": "sha256:42f2a1c739de35db812568f3ff692cf85dc13c30d9c380df160860e033095a81"
+        },
+        {
+          "source_id": "meeting_doc_105781",
+          "record_id": "event_oct2023-ptc-update",
+          "evidence_id": "meeting_doc_105781#p005_c0013",
+          "text_sha256": "sha256:b0ea8e62251212fc908b69a9d0b0d82c05cb256a691be9c1839c2e30d744398a"
+        },
+        {
+          "source_id": "meeting_doc_105781",
+          "record_id": "event_oct2023-ptc-update",
+          "evidence_id": "meeting_doc_105781#p005_c0014",
+          "text_sha256": "sha256:5180c55f6f805bd0f7ca1de1742e35c31e42cd25ecc9488b640e40d3ffac5ebe"
+        }
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:79a5515799b315fda6862fc6",
+      "assessment": "This is another source observation of the same October 2023 LIRR/MNR PTC close-out briefing retained by the target candidate.",
+      "known_facts": [
+        "The committee will be briefed on the status of project implementation and close-out following full Positive Train Control functionality for both railroads going into effect in December 2020.",
+        "date_text: October 2023"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not create a second briefing or PTC activation."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:92b27034413d3ebd07c646eb",
+      "candidate_key": "event:event_166956-memorial-day-getaway-2025",
+      "source_ids": [
+        "meeting_doc_166956"
+      ],
+      "observation_event_record_ids": [
+        "event_166956-memorial-day-getaway-2025"
+      ],
+      "observation_relation_record_ids": [
+        "relation_166956-mnr-organizes-memorial-day"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_166956#p002_c0007",
+          "record_id": "event_166956-memorial-day-getaway-2025",
+          "source_id": "meeting_doc_166956"
+        },
+        {
+          "evidence_id": "meeting_doc_166956#p002_c0008",
+          "record_id": "event_166956-memorial-day-getaway-2025",
+          "source_id": "meeting_doc_166956"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_166956",
+          "record_id": "event_166956-memorial-day-getaway-2025",
+          "evidence_id": "meeting_doc_166956#p002_c0007",
+          "text_sha256": "sha256:a973bcfa60500bc0270565f822f46c9c76aea1642a396c9989b25105671212d0"
+        },
+        {
+          "source_id": "meeting_doc_166956",
+          "record_id": "event_166956-memorial-day-getaway-2025",
+          "evidence_id": "meeting_doc_166956#p002_c0008",
+          "text_sha256": "sha256:c53b92b395c2167111269a5a5fe625c1153c48f7d8dbdba46e8d4cd695f02cf1"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The source schedules Memorial Day service on three Metro-North lines but does not provide retrospective delivery evidence.",
+      "known_facts": [
+        "Metro-North operates getaway day with additional trains on Hudson, Harlem and New Haven lines on May 23, and Sunday Service on Memorial Day, May 26.",
+        "date_text: Friday, May 23, 2025 (getaway day); Memorial Day, May 26, 2025"
+      ],
+      "evidence_gaps": [
+        "Hudson, Harlem, and New Haven lines and dates are explicit.",
+        "Operation remained prospective at source time."
+      ],
+      "prohibited_inferences": [
+        "Do not promote scheduled trains to delivered service."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:9443416387af6b20aa4e63aa",
+      "candidate_key": "event:event_meeting-doc-114216-phase2-start",
+      "source_ids": [
+        "meeting_doc_114216"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-114216-phase2-start"
+      ],
+      "observation_relation_record_ids": [
+        "relation_meeting-doc-114216-phase2-timeline"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_114216#p009_c0006",
+          "record_id": "event_meeting-doc-114216-phase2-start",
+          "source_id": "meeting_doc_114216"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_114216",
+          "record_id": "event_meeting-doc-114216-phase2-start",
+          "evidence_id": "meeting_doc_114216#p009_c0006",
+          "text_sha256": "sha256:ca91f5e52ae0c2b1f4c6a61d76c1c13d80dc01548697bfff1e0a14c38bb7a6c4"
+        }
+      ],
+      "recommended_disposition": "outside_domain",
+      "canonical_candidate_id": null,
+      "assessment": "E-Hail Phase 2 expands demand-responsive Access-A-Ride booking rather than applying a treatment to an exact fixed route.",
+      "known_facts": [
+        "E-Hail Phase 2 expansion begins, enhancing flexibility and spontaneity for triple the number of customers",
+        "date_text: August 1"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not invent fixed-route incidence for paratransit customers."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:94715cbd1a70dc309e5b6e09",
+      "candidate_key": "event:event_m190081-mpi-delivery-complete",
+      "source_ids": [
+        "meeting_doc_190081"
+      ],
+      "observation_event_record_ids": [
+        "event_m190081-mpi-delivery-complete"
+      ],
+      "observation_relation_record_ids": [
+        "relation_m190081-mpi-delivery-complete-event"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_190081#p008_c0008",
+          "record_id": "event_m190081-mpi-delivery-complete",
+          "source_id": "meeting_doc_190081"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_190081",
+          "record_id": "event_m190081-mpi-delivery-complete",
+          "evidence_id": "meeting_doc_190081#p008_c0008",
+          "text_sha256": "sha256:695e16ebef6556cd20771e3598ceb2d589f2b7c3fc462f6aedbee92b3e9ff33c"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The September 2029 locomotive-delivery completion is an anticipated procurement milestone, not delivered fleet service.",
+      "known_facts": [
+        "Anticipated completion of delivery for 45 diesel-battery hybrid option locomotives",
+        "date_text: September 20, 2029"
+      ],
+      "evidence_gaps": [
+        "The source states an anticipated completion date.",
+        "No exact passenger-route deployment is established."
+      ],
+      "prohibited_inferences": [
+        "Do not infer delivery, acceptance, or passenger service."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:9496059b1f3ebb5bc085c7ed",
+      "candidate_key": "event:event_meeting-doc-100351-omny-reduced-fare-available",
+      "source_ids": [
+        "meeting_doc_100351"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-100351-omny-reduced-fare-available"
+      ],
+      "observation_relation_record_ids": [
+        "relation_meeting-doc-100351-omny-reduced-fare-event"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_100351#p004_c0004",
+          "record_id": "event_meeting-doc-100351-omny-reduced-fare-available",
+          "source_id": "meeting_doc_100351"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_100351",
+          "record_id": "event_meeting-doc-100351-omny-reduced-fare-available",
+          "evidence_id": "meeting_doc_100351#p004_c0004",
+          "text_sha256": "sha256:ad09ec7b01da29fcb39b2e46c929f1b9b32db3c1b44c52d540b9f89f80d3d375"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "Reduced-fare OMNY availability is delivered system context, but the evidence does not enumerate exact route-by-fare-treatment applications.",
+      "known_facts": [
+        "OMNY is now available for reduced fare customers",
+        "date_text: October 2022"
+      ],
+      "evidence_gaps": [
+        "OMNY reduced fare became available in October 2022.",
+        "Exact route incidence is absent."
+      ],
+      "prohibited_inferences": [
+        "Do not apply the fare treatment to every route by assumption."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:9595227fc0801c7811cac82a",
+      "candidate_key": "event:event_meeting-doc-121096-summer-trackwork-jun2024",
+      "source_ids": [
+        "meeting_doc_121096"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-121096-summer-trackwork-jun2024"
+      ],
+      "observation_relation_record_ids": [
+        "relation_summer-trackwork-esa-readiness_2",
+        "relation_summer-trackwork-main-line-second-track_2"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_121096#p006_c0005",
+          "record_id": "event_meeting-doc-121096-summer-trackwork-jun2024",
+          "source_id": "meeting_doc_121096"
+        },
+        {
+          "evidence_id": "meeting_doc_121096#p006_c0006",
+          "record_id": "event_meeting-doc-121096-summer-trackwork-jun2024",
+          "source_id": "meeting_doc_121096"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_121096",
+          "record_id": "event_meeting-doc-121096-summer-trackwork-jun2024",
+          "evidence_id": "meeting_doc_121096#p006_c0005",
+          "text_sha256": "sha256:c1ed04fc38056e63c6e5df5ab1a2cf0cfb62275ddf4c554c7c91cee65cc75df3"
+        },
+        {
+          "source_id": "meeting_doc_121096",
+          "record_id": "event_meeting-doc-121096-summer-trackwork-jun2024",
+          "evidence_id": "meeting_doc_121096#p006_c0006",
+          "text_sha256": "sha256:d30a24b5a1f5d4282e9b6edb1eeed6930be56a2340fc9a647f98e8b315dae4a4"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The June 2024 trackwork notice groups multiple programs and schedule adjustments without exact route-treatment incidence or retrospective delivery proof.",
+      "known_facts": [
+        "This is to inform the Long Island Committee of the MTA Long Island Rail Road's plans to adjust schedules to support various trackwork programs, Main Line Second Track construction and East Side Access Readiness projects",
+        "date_text: June 2024"
+      ],
+      "evidence_gaps": [
+        "Main Line Second Track and East Side Access readiness are named.",
+        "Exact affected branches and treatments are not paired."
+      ],
+      "prohibited_inferences": [
+        "Do not cross-product projects, branches, and schedule changes."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:96435683a0611d2dc3fd91aa",
+      "candidate_key": "event:event_meeting-doc-124201-mnr-hudson-fiber",
+      "source_ids": [
+        "meeting_doc_124201"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-124201-mnr-hudson-fiber"
+      ],
+      "observation_relation_record_ids": [
+        "relation_meeting-doc-124201-mnr-ptc-timeline-hudson-fiber"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_124201#p004_c0006",
+          "record_id": "event_meeting-doc-124201-mnr-hudson-fiber",
+          "source_id": "meeting_doc_124201"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_124201",
+          "record_id": "event_meeting-doc-124201-mnr-hudson-fiber",
+          "evidence_id": "meeting_doc_124201#p004_c0006",
+          "text_sha256": "sha256:6355018ee1e281ac91823166c17f6c8b5d7eeec2ae11866362f023a80a596b06"
+        }
+      ],
+      "recommended_disposition": "published",
+      "canonical_candidate_id": null,
+      "assessment": "The retrospective PTC update states that fiber communication was installed on the Hudson Line from CP 58 to CP 72 in 2023, proving one bounded line-treatment incidence; canonical identities require repair.",
+      "known_facts": [
+        "Migrated from cellular to fiber communication with the installation of new fiber on Hudson Line from CP 58 to CP 72",
+        "date_text: 2023"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not extend the installation beyond CP 58-CP 72 or to other Metro-North lines."
+      ],
+      "applications": [
+        {
+          "route_surface": "Hudson Line",
+          "route_record_id": null,
+          "treatment_surface": "fiber communication migration and installation",
+          "treatment_record_id": null,
+          "phase": "installed",
+          "extent": {
+            "kind": "bounded_segment",
+            "from": "CP 58",
+            "to": "CP 72",
+            "location_text": "Hudson Line"
+          },
+          "evidence_ids": [
+            "meeting_doc_124201#p004_c0006"
+          ]
+        }
+      ],
+      "onset": {
+        "date": "2023",
+        "precision": "year",
+        "source_text": "2023"
+      },
+      "scope": {
+        "kind": "bounded_segment",
+        "location_text": "Hudson Line from CP 58 to CP 72"
+      },
+      "integration_status": "blocked_schema",
+      "schema_blocker_ids": [
+        "schema:meeting04-hudson-fiber-identities"
+      ]
+    },
+    {
+      "candidate_id": "candidate:96971d2d19ed76c79a69e5e3",
+      "candidate_key": "event:event_van-wyck-oct19-20-2024",
+      "source_ids": [
+        "meeting_doc_151821"
+      ],
+      "observation_event_record_ids": [
+        "event_van-wyck-oct19-20-2024"
+      ],
+      "observation_relation_record_ids": [
+        "relation_van-wyck-has-event-oct19-20"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_151821#p001_c0007",
+          "record_id": "event_van-wyck-oct19-20-2024",
+          "source_id": "meeting_doc_151821"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_151821",
+          "record_id": "event_van-wyck-oct19-20-2024",
+          "evidence_id": "meeting_doc_151821#p001_c0007",
+          "text_sha256": "sha256:42e6516638fe08fdd6f739e2bb6948bc3ee28e536935a4ef8078ecaa419478c2"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The source prospectively schedules Van Wyck bridge-related track outages and adjusted Atlantic Branch shuttle service; delivery and exact treatment incidence are not established.",
+      "known_facts": [
+        "Select tracks in Jay Interlocking taken out of service for Van Wyck Bridge Widening Project; Atlantic Branch shuttle service on adjusted schedules",
+        "date_text: October 19-20, 2024"
+      ],
+      "evidence_gaps": [
+        "October 19-20, 2024 work was future at source publication.",
+        "The exact shuttle service treatment is not canonically represented."
+      ],
+      "prohibited_inferences": [
+        "Do not infer that the outage or adjusted service occurred."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:96a9ede32779e2b5c5d2f789",
+      "candidate_key": "event:event_meeting-doc-160321-nycsc-golive",
+      "source_ids": [
+        "meeting_doc_160321"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-160321-nycsc-golive"
+      ],
+      "observation_relation_record_ids": [
+        "relation_meeting-doc-160321-nycsc-golive-event"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_160321#p006_c0009",
+          "record_id": "event_meeting-doc-160321-nycsc-golive",
+          "source_id": "meeting_doc_160321"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_160321",
+          "record_id": "event_meeting-doc-160321-nycsc-golive",
+          "evidence_id": "meeting_doc_160321#p006_c0009",
+          "text_sha256": "sha256:c2cb72f64697ae1d3397feb2acd38aef950ff8fbbab7897b18030d126e5390af"
+        }
+      ],
+      "recommended_disposition": "outside_domain",
+      "canonical_candidate_id": null,
+      "assessment": "A customer-service-center technology go-live is a system administration milestone, not an exact route-treatment application.",
+      "known_facts": [
+        "NYCSC System scheduled to go live in early 2025",
+        "date_text: early 2025"
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not map a system go-live to transit routes."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:9925657c0216c5db52780750",
+      "candidate_key": "event:event_meeting-doc-160196-mnr-testing-early2025",
+      "source_ids": [
+        "meeting_doc_160196"
+      ],
+      "observation_event_record_ids": [
+        "event_meeting-doc-160196-mnr-testing-early2025"
+      ],
+      "observation_relation_record_ids": [
+        "relation_rel-lirr-option3-has-mnr-testing-event"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_160196#p006_c0012",
+          "record_id": "event_meeting-doc-160196-mnr-testing-early2025",
+          "source_id": "meeting_doc_160196"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_160196",
+          "record_id": "event_meeting-doc-160196-mnr-testing-early2025",
+          "evidence_id": "meeting_doc_160196#p006_c0012",
+          "text_sha256": "sha256:0230f486d9d5ffa81680e3969255282b1f32d48726e9347c0cb9bf2f5bbc32a6"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "Locomotive testing and expected early-2025 passenger service are prospective and lack exact line deployment incidence.",
+      "known_facts": [
+        "First two Siemens locomotives completed Phase 1 testing in Pueblo, Colorado; in Phase 2 testing in Metro-North environment; expected to enter passenger service in early 2025",
+        "date_text: early 2025"
+      ],
+      "evidence_gaps": [
+        "Two Siemens locomotives were in testing.",
+        "Passenger service and line assignment were not yet established."
+      ],
+      "prohibited_inferences": [
+        "Do not infer entry into passenger service or deploy the locomotives across Metro-North lines."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    },
+    {
+      "candidate_id": "candidate:9b8560652d8161543452244a",
+      "candidate_key": "event:event_166956-schedule-change-mar-30-2025",
+      "source_ids": [
+        "meeting_doc_166956"
+      ],
+      "observation_event_record_ids": [
+        "event_166956-schedule-change-mar-30-2025"
+      ],
+      "observation_relation_record_ids": [
+        "relation_166956-mnr-organizes-schedule-change"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "meeting_doc_166956#p001_c0008",
+          "record_id": "event_166956-schedule-change-mar-30-2025",
+          "source_id": "meeting_doc_166956"
+        }
+      ],
+      "evidence_text_hashes": [
+        {
+          "source_id": "meeting_doc_166956",
+          "record_id": "event_166956-schedule-change-mar-30-2025",
+          "evidence_id": "meeting_doc_166956#p001_c0008",
+          "text_sha256": "sha256:fcf2e0d9f5d9b591fd3bd1996195a1ef1c81d43130b2e064ca469e10c5ca9787"
+        }
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "canonical_candidate_id": null,
+      "assessment": "The source schedules March 30, 2025 service changes on three Metro-North lines but does not provide retrospective delivery evidence or exact line-by-change details.",
+      "known_facts": [
+        "Schedules change on Hudson, Harlem and New Haven lines effective March 30, 2025, including service improvements, support for major C&D, CDOT and Maintenance of Way projects.",
+        "date_text: Sunday, March 30, 2025"
+      ],
+      "evidence_gaps": [
+        "Hudson, Harlem, and New Haven lines are named.",
+        "Distinct service improvements and project-support changes are not paired to each line."
+      ],
+      "prohibited_inferences": [
+        "Do not cross-product the three lines with every listed change.",
+        "Do not treat a schedule notice as proof of operation."
+      ],
+      "applications": [],
+      "onset": null,
+      "scope": null,
+      "integration_status": null,
+      "schema_blocker_ids": []
+    }
+  ],
+  "schema_blockers": [
+    {
+      "blocker_id": "schema:meeting04-sir-r211s-identities",
+      "candidate_id": "candidate:84a71e6c3ffa3b201b268713",
+      "description": "Evidence proves Staten Island Railway × R211S fleet introduction, but no exact canonical true-route record or treatment component represents the incidence.",
+      "required_resolution": "Materialize exact Staten Island Railway route and R211S fleet-treatment identities without claiming full-fleet deployment at onset."
+    },
+    {
+      "blocker_id": "schema:meeting04-haverstraw-service-treatment",
+      "candidate_id": "candidate:8b840113f5ac23a252c3ec59",
+      "description": "The Haverstraw-Ossining route record exists, but no canonical treatment component represents activation of regular commuter ferry service.",
+      "required_resolution": "Materialize an exact service-activation treatment identity bound to the pinned September 2000 evidence."
+    },
+    {
+      "blocker_id": "schema:meeting04-hudson-fiber-identities",
+      "candidate_id": "candidate:96435683a0611d2dc3fd91aa",
+      "description": "Evidence proves Hudson Line × fiber communication installation on CP 58-CP 72, but exact canonical route and treatment identities are absent.",
+      "required_resolution": "Materialize exact Hudson Line route and bounded fiber-installation treatment identities."
+    }
+  ],
+  "arithmetic": {
+    "reviewed": 42,
+    "published": 3,
+    "duplicate_alias": 4,
+    "insufficient_evidence": 23,
+    "outside_domain": 12,
+    "rejected": 0,
+    "partition_sum": 42,
+    "exact_partition": true,
+    "finding_count": 42
+  },
+  "mutation_boundary": {
+    "shared_artifacts_integrated": false,
+    "shared_artifacts_regenerated": false,
+    "canonical_records_edited": false,
+    "only_primary_proposed_receipt_written": true
+  }
+}

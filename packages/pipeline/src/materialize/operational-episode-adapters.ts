@@ -145,13 +145,31 @@ export function loadOperationalEpisodeAcceptedMappings(
     if (options.optionalFixture) return [];
     throw new Error(`required operational episode adapter directory is missing: ${dir}`);
   }
-  const names = readdirSync(dir).sort();
-  const unsupported = names.filter((name) => !name.endsWith(".json"));
+  const entries = readdirSync(dir, { withFileTypes: true }).sort((left, right) =>
+    left.name.localeCompare(right.name)
+  );
+  const unsupported = entries.filter((entry) =>
+    !(entry.isFile() && entry.name.endsWith(".json")) &&
+    !(entry.isDirectory() && entry.name === "accepted-current")
+  ).map((entry) => entry.name);
   if (unsupported.length > 0) {
     throw new Error(`operational episode adapter directory contains unsupported entries: ${unsupported.join(", ")}`);
   }
-  const mappings = names.map((name) => {
-    const path = join(dir, name);
+  const paths = entries.flatMap((entry) => {
+    if (entry.isFile()) return [join(dir, entry.name)];
+    const currentDir = join(dir, entry.name);
+    return readdirSync(currentDir, { withFileTypes: true })
+      .sort((left, right) => left.name.localeCompare(right.name))
+      .map((currentEntry) => {
+        if (!currentEntry.isFile() || !currentEntry.name.endsWith(".json")) {
+          throw new Error(
+            `operational episode accepted-current adapter directory contains unsupported entry: ${currentEntry.name}`,
+          );
+        }
+        return join(currentDir, currentEntry.name);
+      });
+  });
+  const mappings = paths.map((path) => {
     const mapping = parseOperationalEpisodeAcceptedMapping(
       JSON.parse(readFileSync(path, "utf8")) as unknown,
       path,

@@ -1,0 +1,497 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "receipt_status": "proposed",
+  "batch_id": "w2-meeting-docs-pending-02",
+  "reviewer": "plan-052-independent-meeting-docs-pending-02",
+  "review_role": "independent",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-02.json",
+  "manifest_sha256": "9b8af0895d588bff3622cabebd5cce61c0a92f59fa1cb3a51799239428e1da0a",
+  "manifest_verification": {
+    "candidate_count": 43,
+    "starting_published_count": 0,
+    "starting_pending_review_count": 43,
+    "observation_count": 108,
+    "candidate_ledger_sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2",
+    "observation_ledger_sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f",
+    "status": "pass"
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "review_complete": true,
+  "stop": false,
+  "disagreements": null,
+  "schema_blockers": [],
+  "independence_attestation": {
+    "status": "qualified",
+    "counterpart_receipt_opened_or_intentionally_read": false,
+    "exception": {
+      "candidate_id": "candidate:3a044ebc7850017c27ea6814",
+      "description": "After the exact source evidence had already been reviewed and the positive disposition independently determined, an over-broad repository search accidentally displayed one counterpart-receipt cross-product-proof line for this candidate.",
+      "impact": "No assessment changed and no other counterpart rationale was displayed. Formal blind-review purity is nevertheless qualified and the integrator should require a clean third review if strict procedural independence is mandatory."
+    }
+  },
+  "conformance": {
+    "status": "pass",
+    "terminal_candidate_count": 43,
+    "accounted_observation_count": 108,
+    "assessment": "Every frozen candidate and observation is accounted for exactly once. Only one candidate supplies exact bus route and treatment incidence. Two otherwise in-domain bus-priority events close for missing route incidence; all remaining real events are outside the route-treatment operational product."
+  },
+  "findings": [
+    {
+      "candidate_id": "candidate:2955fde3a97280fee2346808",
+      "candidate_key": "event:event_2024-mta-app",
+      "observation_event_record_ids": ["event_2024-mta-app"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_202106#p003_c0006"],
+      "assessment": "A customer application milestone is not a route-treatment operational occurrence."
+    },
+    {
+      "candidate_id": "candidate:2956d795387df178d15f7aef",
+      "candidate_key": "event:event_christmas-eve-day-service-2022",
+      "observation_event_record_ids": ["event_christmas-eve-day-service-2022"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_102751#p001_c0009", "meeting_doc_102751#p001_c0010"],
+      "assessment": "Holiday service scheduling is not a bus-priority treatment occurrence."
+    },
+    {
+      "candidate_id": "candidate:29c5e8316d706d69afed1f54",
+      "candidate_key": "event:event_graybar-kiosk-program-launch-2005",
+      "observation_event_record_ids": ["event_graybar-kiosk-program-launch-2005"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_129081#p006_c0017"],
+      "assessment": "A station kiosk program launch is outside the route-treatment operational product."
+    },
+    {
+      "candidate_id": "candidate:29fc2d952d3fd27387f8f354",
+      "candidate_key": "event:event_meeting-doc-ptc-update-may2023",
+      "observation_event_record_ids": ["event_meeting-doc-ptc-update-may2023"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_102691#p005_c0001", "meeting_doc_102691#p005_c0002"],
+      "assessment": "A rail positive-train-control status update is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:2b29e3131baeee2169065d07",
+      "candidate_key": "event:event_platform-barrier-pilot-start",
+      "observation_event_record_ids": ["event_platform-barrier-pilot-start"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_143341#p005_c0012"],
+      "assessment": "A subway platform-barrier pilot is outside the bus route-treatment product."
+    },
+    {
+      "candidate_id": "candidate:2c0322344bce13e63e9beffa",
+      "candidate_key": "event:event_st-albans-ada-oct26-27-2024",
+      "observation_event_record_ids": ["event_st-albans-ada-oct26-27-2024"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_151821#p002_c0001"],
+      "assessment": "A railroad station accessibility outage/work event is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:2c2a3e0c0dd9a9d41d88ff68",
+      "candidate_key": "event:event_meeting-doc-164866-weekend-switch-signal-mar22",
+      "observation_event_record_ids": ["event_meeting-doc-164866-weekend-switch-signal-mar22"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_164866#p002_c0006"],
+      "assessment": "Rail switch and signal work is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:2ca8528523da31fc8f978e10",
+      "candidate_key": "event:event_201556-schedule-change-march-29-2026",
+      "observation_event_record_ids": ["event_201556-schedule-change-march-29-2026"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_201556#p001_c0002", "meeting_doc_201556#p001_c0009"],
+      "assessment": "A railroad timetable change is outside the bus route-treatment product."
+    },
+    {
+      "candidate_id": "candidate:2d32cea78bbbd31dd311fa61",
+      "candidate_key": "event:event_qbnr-phase2-end-aug-2025",
+      "observation_event_record_ids": ["event_qbnr-phase2-end-aug-2025"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_167241#p005_c0004"],
+      "assessment": "A network-redesign service rollout is a service-plan milestone, not an exact route by bus-priority-treatment occurrence."
+    },
+    {
+      "candidate_id": "candidate:2e77389dd97f0c200b5baa86",
+      "candidate_key": "event:event_able-proof-of-concept-2012",
+      "observation_event_record_ids": ["event_able-proof-of-concept-2012"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["meeting_doc_138441#p007_c0007"],
+      "known_facts": ["NYC Transit conducted a limited ABLE proof of concept with Zenco in 2012."],
+      "evidence_gap_reason": "The exact bus route subject set for the proof of concept is not identified.",
+      "prohibited_inferences": ["Do not back-project routes from the 2019 or later ABLE deployments."]
+    },
+    {
+      "candidate_id": "candidate:2fef6fd0d90be4a859d0dae8",
+      "candidate_key": "event:event_170871-cbd-tolling-launch",
+      "observation_event_record_ids": ["event_170871-cbd-tolling-launch"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_170871#p047_c0003"],
+      "assessment": "CBD toll collection is a real congestion-pricing event, but not a route-treatment bus-priority occurrence."
+    },
+    {
+      "candidate_id": "candidate:31aa33e90fc74affed9e948a",
+      "candidate_key": "event:event_meeting-doc-155021-timetable-start",
+      "observation_event_record_ids": ["event_meeting-doc-155021-timetable-start"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_155021#p001_c0004", "meeting_doc_155021#p001_c0007"],
+      "assessment": "A railroad timetable start is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:31e12b8500668d74a763acf9",
+      "candidate_key": "event:event_meeting157646-lirr-nov2024-timetable",
+      "observation_event_record_ids": ["event_meeting157646-lirr-nov2024-timetable"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_157646#p002_c0013"],
+      "assessment": "An LIRR timetable event is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:32100b64034f692fe36c92e7",
+      "candidate_key": "event:event_phased-implementation-mid2025",
+      "observation_event_record_ids": ["event_phased-implementation-mid2025"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_138431#p001_c0006"],
+      "assessment": "A Queens Bus Network Redesign service-plan milestone is not an exact route-treatment bus-priority occurrence."
+    },
+    {
+      "candidate_id": "candidate:32419d3b0ab4b415f91153ce",
+      "candidate_key": "event:event_181st-st-busway-launch",
+      "observation_event_record_ids": ["event_181st-st-busway-launch"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["meeting_doc_40141#p042_c0003"],
+      "known_facts": ["The 181st Street Busway launched by May 2021 and was already producing preliminary bus-speed improvements."],
+      "evidence_gap_reason": "The manifest-pinned launch evidence does not name the exact route incidence.",
+      "prohibited_inferences": ["Do not infer the route set from other unpinned corridor inventories or later sources."]
+    },
+    {
+      "candidate_id": "candidate:32913e92560dd6a419c3ebe6",
+      "candidate_key": "event:event_valley-stream-switch-work-weekend1",
+      "observation_event_record_ids": ["event_valley-stream-switch-work-weekend1"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_166961#p001_c0007"],
+      "assessment": "Rail switch work is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:33bb583c14c0f04ceda0fe29",
+      "candidate_key": "event:event_new-discounts-feb25-2022",
+      "observation_event_record_ids": ["event_new-discounts-feb25-2022"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_79786#p005_c0005", "meeting_doc_79786#p005_c0006"],
+      "assessment": "A fare-discount change is outside the route-treatment operational product."
+    },
+    {
+      "candidate_id": "candidate:343671a6e9ce8d746909b997",
+      "candidate_key": "event:event_phase-iii-service-launch-dec-2023",
+      "observation_event_record_ids": ["event_phase-iii-service-launch-dec-2023"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_128931#p003_c0009"],
+      "assessment": "A subway service-frequency launch is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:34d80ae3b5077327a9225189",
+      "candidate_key": "event:event_massapequa-in-service",
+      "observation_event_record_ids": ["event_massapequa-in-service"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_100321#p005_c0003"],
+      "assessment": "A railroad station or infrastructure in-service event is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:35a6e0adbdf88c046278bcbf",
+      "candidate_key": "event:event_meeting-doc-128991-dbe-policy-effective",
+      "observation_event_record_ids": ["event_meeting-doc-128991-dbe-policy-effective"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_128991#p028_c0001", "meeting_doc_128991#p029_c0003"],
+      "assessment": "A procurement/civil-rights policy effective date is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:36b7228b61afcfa36997d9d1",
+      "candidate_key": "event:event_meeting-doc-170846-744pm-lynbrook-stop",
+      "observation_event_record_ids": ["event_meeting-doc-170846-744pm-lynbrook-stop"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_170846#p002_c0001"],
+      "assessment": "An LIRR train-stop timetable change is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:37126c4184d109295ba7a4dc",
+      "candidate_key": "event:event_port-washington-weekend-work-jun28-29",
+      "observation_event_record_ids": ["event_port-washington-weekend-work-jun28-29"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_176351#p001_c0008"],
+      "assessment": "Railroad weekend work is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:3883fa65a813e686fc9e2787",
+      "candidate_key": "event:event_meeting-doc-160316-delivery-completed",
+      "observation_event_record_ids": ["event_meeting-doc-160316-delivery-completed"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_160316#p006_c0011"],
+      "assessment": "A locomotive procurement delivery schedule is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:38d277c818676aa36d95a2c2",
+      "candidate_key": "event:event_far-rockaway-branch-diversion-131526",
+      "observation_event_record_ids": ["event_far-rockaway-branch-diversion-131526"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_131526#p001_c0007"],
+      "assessment": "An LIRR diversion is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:39cdbc8419fe7bbf68e637b1",
+      "candidate_key": "event:event_cargo-vessel-safe-passage-2024",
+      "observation_event_record_ids": ["event_cargo-vessel-safe-passage-2024"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_157631#p009_c0014"],
+      "assessment": "A maritime/bridge operational event is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:3a044ebc7850017c27ea6814",
+      "candidate_key": "event:event_bus-lane-cameras-activated-dec12",
+      "observation_event_record_ids": ["event_bus-lane-cameras-activated-dec12"],
+      "recommended_disposition": "published",
+      "route_record_ids": ["route_b25", "route_b62", "route_b42"],
+      "treatment_record_ids": ["treatment_able-cameras"],
+      "phase": {"lifecycle_phase": "activated", "date_claim": "2022-12-12", "date_precision": "day"},
+      "evidence_ids": ["meeting_doc_102836#p015_c0011"],
+      "cross_product_proof": "The single pinned paragraph explicitly names B25, B62, and B42 as the final three routes activated on December 12 and identifies one shared bus-lane-enforcement-camera treatment.",
+      "assessment": "Publish three exact route applications to the one shared ABLE treatment."
+    },
+    {
+      "candidate_id": "candidate:3bda18a94645003d2f88bb71",
+      "candidate_key": "event:event_meeting-doc-138226-may20-timetable-change",
+      "observation_event_record_ids": ["event_meeting-doc-138226-may20-timetable-change"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_138226#p001_c0005", "meeting_doc_138226#p001_c0008"],
+      "assessment": "An LIRR timetable change is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:3bfe3e0378074cece38694a4",
+      "candidate_key": "event:event_meeting-doc-206206-strike-over",
+      "observation_event_record_ids": ["event_meeting-doc-206206-strike-over"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_206206#p007_c0012", "meeting_doc_206206#p007_c0013"],
+      "assessment": "An LIRR labor/service-restoration event is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:3cd0075b6db5c01b22389b3c",
+      "candidate_key": "event:event_station-agent-new-role-early-2023",
+      "observation_event_record_ids": ["event_station-agent-new-role-early-2023"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_102836#p026_c0004"],
+      "assessment": "A subway station-agent staffing change is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:3cd767df5b3e86aee26975ec",
+      "candidate_key": "event:event_atlantic-branch-tie-replacement-jan2026",
+      "observation_event_record_ids": ["event_atlantic-branch-tie-replacement-jan2026"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_194056#p002_c0007", "meeting_doc_194056#p003_c0001"],
+      "assessment": "Rail tie replacement is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:3e61be2eb91121027d551e08",
+      "candidate_key": "event:event_harrison-garage-opening",
+      "observation_event_record_ids": ["event_harrison-garage-opening"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_53036#p002_c0001", "meeting_doc_53036#p002_c0002"],
+      "assessment": "A railroad garage/facility opening is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:3f037216d00a1af1cd2b5786",
+      "candidate_key": "event:event_rockaway-reconstruction-start-jan2025",
+      "observation_event_record_ids": ["event_rockaway-reconstruction-start-jan2025"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_157731#p009_c0009"],
+      "assessment": "Subway reconstruction is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:3ff887ea1b278f72a6c6e734",
+      "candidate_key": "event:event_meeting-doc-128866-ptc-update-oct2024",
+      "observation_event_record_ids": ["event_meeting-doc-128866-ptc-update-oct2024"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_128866#p005_c0024", "meeting_doc_128866#p006_c0003"],
+      "assessment": "A rail positive-train-control status update is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:4039e105a75e6679e1d55af2",
+      "candidate_key": "event:event_mou-commencement-oct152024",
+      "observation_event_record_ids": ["event_mou-commencement-oct152024"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_160326#p002_c0008"],
+      "assessment": "A labor or operating memorandum commencement is outside the route-treatment bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:4042684c07feffe0f6391fae",
+      "candidate_key": "event:event_meeting-doc-170846-may-timetable-change",
+      "observation_event_record_ids": ["event_meeting-doc-170846-may-timetable-change"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_170846#p001_c0004", "meeting_doc_170846#p001_c0006"],
+      "assessment": "An LIRR timetable change is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:4077f490f94d80b5a92ee08a",
+      "candidate_key": "event:event_mn-new-trains-july11-2022",
+      "observation_event_record_ids": ["event_mn-new-trains-july11-2022"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_98226#p005_c0002"],
+      "assessment": "A Metro-North rail-fleet/service event is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:40cd73d69cd9f507c08bd922",
+      "candidate_key": "event:event_autogate-omny-nov2021",
+      "observation_event_record_ids": ["event_autogate-omny-nov2021"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_72541#p029_c0007", "meeting_doc_72541#p029_c0008"],
+      "assessment": "A fare-gate/OMNY accessibility event is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:4107a130ac5dcb33e30fc60a",
+      "candidate_key": "event:event_199066-st-patricks-day-service",
+      "observation_event_record_ids": ["event_199066-st-patricks-day-service"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_199066#p001_c0007"],
+      "assessment": "Extra LIRR parade service is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:41630d60e03d191cb5e6fe82",
+      "candidate_key": "event:event_m186726-thanksgiving",
+      "observation_event_record_ids": ["event_m186726-thanksgiving"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_186726#p002_c0004", "meeting_doc_186726#p002_c0005"],
+      "assessment": "A railroad holiday-service plan is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:41b671d73473fe7bc95f455a",
+      "candidate_key": "event:event_meeting-doc-100351-open-stroller-launch",
+      "observation_event_record_ids": ["event_meeting-doc-100351-open-stroller-launch"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_100351#p003_c0011"],
+      "assessment": "A bus boarding/customer-policy program is real but is not a route by bus-priority-treatment occurrence."
+    },
+    {
+      "candidate_id": "candidate:41c3f7f19d509423bf9c2844",
+      "candidate_key": "event:event_meeting-doc-196991-cbdtp-start",
+      "observation_event_record_ids": ["event_meeting-doc-196991-cbdtp-start"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:2fef6fd0d90be4a859d0dae8",
+      "evidence_ids": ["meeting_doc_196991#p010_c0004"],
+      "assessment": "Exact duplicate January 5, 2025 CBD toll-collection start; retain the canonical outside-domain event."
+    },
+    {
+      "candidate_id": "candidate:42ed9e0ec9b6424be3fa781b",
+      "candidate_key": "event:event_west-hempstead-oct4-5-2025",
+      "observation_event_record_ids": ["event_west-hempstead-oct4-5-2025"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_186721#p001_c0008"],
+      "assessment": "LIRR weekend work is outside the bus-priority product."
+    },
+    {
+      "candidate_id": "candidate:43c6bd5c2c38736af25a776b",
+      "candidate_key": "event:event_meeting-doc-205546-bus-simulators",
+      "observation_event_record_ids": ["event_meeting-doc-205546-bus-simulators"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_205546#p006_c0003"],
+      "assessment": "Bus-operator training simulators are not a route-treatment operational occurrence."
+    }
+  ],
+  "observation_only_conformance": {
+    "count": 65,
+    "status": "pass",
+    "unsupported_record_no_episode_graph": [
+      "event_186736-gateway-foods-operating-since",
+      "event_201556-memorial-day-2026",
+      "event_bridgeport-waterbury-shuttle-launch-oct2020",
+      "event_cbdtp-tolling-start",
+      "event_convo-access-pilot-launch",
+      "event_croton-harmon-shops-pilot-q3-2024",
+      "event_dyckman-st-1-ada-opening",
+      "event_elmont-westbound-platform-oct2022",
+      "event_fare-pilot-duration-12-months",
+      "event_flood-door-testing-tunnels-2024",
+      "event_gcm-situational-readiness-drills",
+      "event_grand-central-madison-opening_2",
+      "event_hillside-inspection-pilot-q4-2024",
+      "event_item1-m7-original-service-date",
+      "event_lirr-bridge-replacement-hempstead-april2024",
+      "event_lirr-jamaica-station-signage-improvements-april-2021",
+      "event_lirr-new-timetable-jan2024",
+      "event_lirr-renewable-diesel-pilot-nov4",
+      "event_lirr-summer-timetable-2025",
+      "event_m186726-mlk-day",
+      "event_markys-started-operations-2022-201531",
+      "event_meeting-151656-ace-phase3-warning",
+      "event_meeting-doc-111781-summer-service-partial-resumption",
+      "event_meeting-doc-113906-combo-ticket-launch",
+      "event_meeting-doc-115391-fare-effective-date",
+      "event_meeting-doc-121091-sept5-schedule",
+      "event_meeting-doc-124166-oct29-schedule-change-mnr",
+      "event_meeting-doc-124251-mow-rail-tie-replacement",
+      "event_meeting-doc-124251-sogr-pleasantville-chappaqua",
+      "event_meeting-doc-128921-181st-accessible-dec7",
+      "event_meeting-doc-128991-titlevi-policy-effective",
+      "event_meeting-doc-138226-montauk-thursday-service",
+      "event_meeting-doc-140311-yankees-opening-day-2024",
+      "event_meeting-doc-140621-ehail-phase2-start",
+      "event_meeting-doc-176496-policy-effective-date",
+      "event_meeting-doc-192536-cbd-tolling-start",
+      "event_meeting-doc-199231-bowling-green-elevators-reopened",
+      "event_meeting-doc-201716-san-wei-open",
+      "event_meeting-doc-205616-timetable-end",
+      "event_meeting-doc-52976-vaccine-requirement",
+      "event_meeting-doc-95161-ada-training-launch",
+      "event_meeting-doc-metro-north-annual-readiness-drill",
+      "event_meeting164941-first-two-delivered",
+      "event_metrics-dot-mta-info-launch",
+      "event_mileposts-newsletter-revival",
+      "event_mnr-emergency-preparedness-exercise",
+      "event_mnr-new-fares-jan2026",
+      "event_mnrr-traintime-app-merger",
+      "event_navilens-pilot-white-plains-2023",
+      "event_omny-fare-capping-launch",
+      "event_open-stroller-pilot-launch",
+      "event_penn-central-heritage-wrap-launch",
+      "event_polycarbonate-barrier-installation-complete",
+      "event_queensboro-plaza-accessible-opening-dec2024",
+      "event_sb-installation-2025",
+      "event_south-street-fulton-ave-bridges-opening",
+      "event_summer-2024-strategic-improvement",
+      "event_thanksgiving-eve-program-nov23-2022",
+      "event_train1946-ronkonkoma-nov2025",
+      "event_vnb-split-tolling",
+      "event_winter-trackwork-nov2024"
+    ],
+    "not_episode_evidence_prospective_observation": [
+      "event_ace-implementation-may-2024",
+      "event_bus-service-increase-summer-2025",
+      "event_meeting-doc-160441-local-summer-2025",
+      "event_newburgh-beacon-shuttle-expansion"
+    ],
+    "assessment": "These observations have no candidate membership and already carry the listed frozen terminal adapter dispositions; this receipt verifies rather than mutates them."
+  },
+  "evidence_binding_source": {
+    "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+    "candidate_ledger_sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2",
+    "rule": "Each finding is restricted to frozen candidate membership and manifest-pinned meeting-document evidence. No route is inferred from an unpinned source."
+  },
+  "review_method": {
+    "counterpart_receipt_intentionally_read": false,
+    "canonical_observations_modified": false,
+    "shared_artifacts_regenerated": false,
+    "semantic_rule": "Publish only exact bus route-treatment incidence; use outside_domain for rail, station, fare, staffing, policy, training, customer-program, and service-plan events; use insufficient_evidence for otherwise in-domain bus-priority events lacking exact route incidence."
+  },
+  "expected_post_batch_arithmetic": {
+    "published": 1,
+    "duplicate_alias": 1,
+    "outside_domain": 39,
+    "insufficient_evidence": 2,
+    "rejected": 0,
+    "terminal_candidate_total": 43,
+    "accounted_observation_total": 108,
+    "pending_review_delta": -43
+  },
+  "integration_authorization": "pending_primary_agreement_integrator_verification_and_resolution_of_qualified_independence_attestation"
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-wave1-owner-reconciliation-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w1-characterization",
+  "reconciliation_id": "wave-1-owner-adjudication-v1",
+  "recorded_at": "2026-07-30T00:00:00.000Z",
+  "owner_authority": {
+    "source_task_id": "019faea5-b07f-7560-879f-7476152764ff",
+    "scope": "Wave 1 rulings, one versioned local evidence supplement, and a USD 1.00 Plan 052 provider ceiling; integration only if fresh adjudication finds no contradiction or representation gap"
+  },
+  "immutable_originals": {
+    "manifest": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w1-characterization.json",
+      "sha256": "b96adbd4878a5abfae2cd9523c3534239195ea876dc0877fffc5abc8a99fbe7e"
+    },
+    "primary_receipt": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/review-receipts/w1-characterization/primary.json",
+      "sha256": "1ce0f2058aa2f4e0c9b179f724475498afc6b6f27e4fbcbbe49e2cf750e758c1"
+    },
+    "independent_receipt": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/review-receipts/w1-characterization/independent.json",
+      "sha256": "24e81ea5bfbfbfeabc6931858b4c316b43d2b8df2d792e6696a054cce5e6e5f3"
+    },
+    "disagreement_receipt": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/review-receipts/w1-characterization/disagreement.json",
+      "sha256": "ef07d3d72e98bf0e548c4faa04ac403ba873370fb45f43356c9b34cc539044c2"
+    }
+  },
+  "append_only_inputs": {
+    "evidence_supplement": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/evidence-supplements/w1-broadway-q70-installed-v1.json",
+      "sha256": "e2b9f88e2213361f368e8d1ccc47af95f2aceaa14c3dd7afd5da57232a0cb058"
+    },
+    "fresh_independent_adjudication": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/review-receipts/w1-characterization/fresh-independent-adjudication.json",
+      "sha256": "68816846ff3fe9064b57f3f7052c1d7a9302c3788d772fafa8cc68fc214d4263"
+    },
+    "provider_budget_authorization": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/provider-budget-authorization.json",
+      "hard_incremental_ceiling_usd": 1,
+      "approved_campaign_estimate_usd": 0.463214
+    }
+  },
+  "owner_ruling_outcomes": {
+    "candidate:089c5dca117ab12f156ec032": "factually_verified_but_not_encodable",
+    "candidate:0065d35d05693332aeb8b1ef": "factually_verified_but_not_encodable",
+    "candidate:002e8ac7107b222e82e03c82": "factually_verified_but_not_encodable",
+    "candidate:09d24ae40bf93ee46e8eb095": "outside_domain_encodable_but_withheld",
+    "candidate:02cad757a6d52baca3130545": "insufficient_evidence_encodable_but_withheld"
+  },
+  "agreed_original_cases": {
+    "candidate_count": 25,
+    "integration_status": "withheld_due_batch_STOP"
+  },
+  "stop_conditions_triggered": [
+    "data_model_cannot_encode_owner_ruling_without_inference",
+    "canonical_observation_edit_would_be_required",
+    "historical_route_surface_successor_continuity_missing"
+  ],
+  "semantic_writes": {
+    "accepted_occurrence_decisions": 0,
+    "terminal_candidate_decisions": 0,
+    "identity_operations": 0,
+    "evidence_gap_decisions": 0
+  },
+  "frontier_before": {
+    "root": "data/quality/operational-episode-frontier/v1",
+    "cohort_sha256": "daa3023de133c66d3e1f0e7eda03313a8e1fbd59062a1a7dea888cf4777bcda0",
+    "observation_ledger_sha256": "53c81a25b1dcec773fdfcedfe200dff85ef1646f0072d131a40dd7721ef9c4eb",
+    "candidate_ledger_sha256": "8660d54c98716f486b813b5bf82ca12dced093184fbfb767c9b65cbe94467b35",
+    "summary_sha256": "42c57c8e3cfadf487a9b90c907ae4a8788f52105c2bd0833d8297b69ac67c1ec",
+    "observations": 1366,
+    "candidates": 766,
+    "published": 131,
+    "projection_retired": 4,
+    "pending_candidates": 631,
+    "pending_segmentation": 629,
+    "unresolved_active_identities": 0,
+    "pending_count": 1260,
+    "invalid_count": 0,
+    "completeness_profile": "partial"
+  },
+  "frontier_after": {
+    "changed": false,
+    "cohort_sha256": "daa3023de133c66d3e1f0e7eda03313a8e1fbd59062a1a7dea888cf4777bcda0",
+    "observation_ledger_sha256": "53c81a25b1dcec773fdfcedfe200dff85ef1646f0072d131a40dd7721ef9c4eb",
+    "candidate_ledger_sha256": "8660d54c98716f486b813b5bf82ca12dced093184fbfb767c9b65cbe94467b35",
+    "summary_sha256": "42c57c8e3cfadf487a9b90c907ae4a8788f52105c2bd0833d8297b69ac67c1ec",
+    "observations": 1366,
+    "candidates": 766,
+    "published": 131,
+    "projection_retired": 4,
+    "pending_candidates": 631,
+    "pending_segmentation": 629,
+    "unresolved_active_identities": 0,
+    "pending_count": 1260,
+    "invalid_count": 0,
+    "completeness_profile": "partial"
+  },
+  "provider_usage": {
+    "hard_incremental_ceiling_usd": 1,
+    "approved_campaign_estimate_usd": 0.463214,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "actual_cost_usd": 0,
+    "committed_cost_usd": 0
+  },
+  "historical_migration_files_changed": false,
+  "frozen_manifest_changed": false,
+  "canonical_observations_changed": false,
+  "integration_status": "stopped_before_wave1_semantic_writes",
+  "wave_2_status": "not_started",
+  "owner_decision_required": true
+}

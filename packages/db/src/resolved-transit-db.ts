@@ -13,7 +13,10 @@ import {
 
 export type ResolvedTransitEpisodeRow = {
   occurrence_id: string;
-  resolved_onset: { date: string; precision: "day" | "month" };
+  resolved_onset: {
+    date: string;
+    precision: "day" | "month" | "year" | "season" | "upper_bound_day";
+  };
   review_decision_id: string;
   review_membership_fingerprint: string;
   resolution_method: "accepted_review" | "lossless_v1_migration";

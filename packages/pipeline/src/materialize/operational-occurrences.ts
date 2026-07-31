@@ -17,7 +17,11 @@ import {
   resolveOperationalOccurrenceIdentity,
   type OperationalOccurrenceIdentityEntry,
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-identity";
-import type { OperationalOccurrenceAcceptedDecision } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
+import {
+  OPERATIONAL_OCCURRENCE_ONSET_PRECISIONS,
+  type OperationalOccurrenceAcceptedDecision,
+  type OperationalOccurrenceOnsetPrecision,
+} from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
 import type { RouteAnchorRow } from "@mta-wiki/pipeline/materialize/route-anchors";
 import type {
   ResolvedInterventionEpisode,
@@ -117,7 +121,7 @@ export type OperationalOccurrenceObservation = {
 
 export type OperationalOccurrenceResolvedOnset = {
   date: string;
-  precision: "day" | "month";
+  precision: OperationalOccurrenceOnsetPrecision;
   resolver_ids: string[];
   publication_dates: string[];
   retrieval_dates: string[];
@@ -1493,10 +1497,24 @@ export function parseOperationalOccurrence(value: unknown, path = "operational o
   const onsetObject = contractObject(object.resolved_onset, `${path}.resolved_onset`);
   contractKeys(onsetObject, onsetFields, `${path}.resolved_onset`);
   const precision = contractString(onsetObject.precision, `${path}.resolved_onset.precision`);
-  if (precision !== "day" && precision !== "month") throw new Error(`${path}.resolved_onset.precision must be day or month`);
+  if (
+    !OPERATIONAL_OCCURRENCE_ONSET_PRECISIONS.includes(
+      precision as OperationalOccurrenceOnsetPrecision,
+    )
+  ) {
+    throw new Error(`${path}.resolved_onset.precision is unsupported: ${precision}`);
+  }
   const date = contractString(onsetObject.date, `${path}.resolved_onset.date`);
-  const datePattern = precision === "day" ? /^\d{4}-\d{2}-\d{2}$/u : /^\d{4}-\d{2}$/u;
-  if (!datePattern.test(date)) throw new Error(`${path}.resolved_onset.date does not match ${precision} precision`);
+  const datePattern: Record<OperationalOccurrenceOnsetPrecision, RegExp> = {
+    day: /^\d{4}-\d{2}-\d{2}$/u,
+    month: /^\d{4}-\d{2}$/u,
+    year: /^\d{4}$/u,
+    season: /^\d{4}-(?:winter|spring|summer|fall)$/u,
+    upper_bound_day: /^\d{4}-\d{2}-\d{2}$/u,
+  };
+  if (!datePattern[precision as OperationalOccurrenceOnsetPrecision].test(date)) {
+    throw new Error(`${path}.resolved_onset.date does not match ${precision} precision`);
+  }
   if (!Array.isArray(object.observations) || object.observations.length === 0) throw new Error(`${path}.observations must not be empty`);
   if (!Array.isArray(object.routes) || object.routes.length === 0) throw new Error(`${path}.routes must not be empty`);
   const routes = object.routes.map((entry, index) => {
@@ -1712,7 +1730,7 @@ export function parseOperationalOccurrence(value: unknown, path = "operational o
     resolved_status: "realized",
     resolved_onset: {
       date,
-      precision,
+      precision: precision as OperationalOccurrenceOnsetPrecision,
       resolver_ids: contractStringArray(onsetObject.resolver_ids, `${path}.resolved_onset.resolver_ids`, true),
       publication_dates: contractStringArray(onsetObject.publication_dates, `${path}.resolved_onset.publication_dates`),
       retrieval_dates: contractStringArray(onsetObject.retrieval_dates, `${path}.resolved_onset.retrieval_dates`),

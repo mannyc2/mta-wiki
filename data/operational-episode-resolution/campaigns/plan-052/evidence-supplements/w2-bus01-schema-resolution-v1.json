@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-local-canonical-evidence-supplement-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w2-bus-priority-pending-01",
+  "supplement_id": "w2-bus01-schema-resolution-v1",
+  "recorded_at": "2026-07-30T18:15:00.000Z",
+  "authority": {
+    "scope": "Existing local canonical evidence and the immutable rc28 route-identity snapshot may be bound through an append-only hash-pinned receipt; no new external source or canonical-observation edit is authorized.",
+    "source_task_id": "019faea5-b07f-7560-879f-7476152764ff"
+  },
+  "immutable_inputs": [
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-bus-priority-pending-01.json",
+      "sha256": "5961721be6200a787df306892ee33388fdeca4fab1b39e6c52db8fd6d8d5584e"
+    },
+    {
+      "path": "data/exports/releases/v1-rc28/route_anchors.jsonl",
+      "sha256": "aaf8bb1532587c2aea188a7f7cc84a358b5a0a49106a07282fd6c5d05cfdc222"
+    },
+    {
+      "path": "data/canonical/treatment_components.jsonl",
+      "sha256": "a9b76c3b7121fc87d0f190a44fb00f182229d8d309968d3ba00a8c27a1492bae"
+    },
+    {
+      "path": "data/canonical/routes.jsonl",
+      "sha256": "8ea0278c7acae7585cbe0c85e3fa9407d8ca49b1ca12327b60318b676122a5c0"
+    },
+    {
+      "path": "wiki/sources/201203_brt_34th_cac6.md",
+      "sha256": "32b0ac459b118488a05834a617ed40c60e1591a776179ca3bd88db577afa5824"
+    },
+    {
+      "path": "wiki/sources/201110_brt_34th_open_house_slides.md",
+      "sha256": "1b1f6aa369a37a6f8b8f6f57878132c9ed1840eedfc69563663a9b1aa7254503"
+    }
+  ],
+  "route_identity_resolution": {
+    "ordered_selected_rows_sha256": "f1d14537feaa7b9a57be13b3c62979b771ca47900e020392cffff26a9e301cd0",
+    "rows": [
+      {
+        "gtfs_route_id": "M101",
+        "canonical_route_record_id": "route_m101",
+        "disposition": "exact_service"
+      },
+      {
+        "gtfs_route_id": "M34+",
+        "canonical_route_record_id": "route_m34-sbs",
+        "disposition": "exact_service"
+      },
+      {
+        "gtfs_route_id": "M34A+",
+        "canonical_route_record_id": "route_m34a-sbs",
+        "disposition": "exact_service"
+      }
+    ],
+    "m34_route_rows_sha256": "a8cc763f72c05166d207c6a87a2de4e154c0e83c9b142b3c8fbcfe950b7c28c5",
+    "m34_route_evidence_binding": {
+      "source_id": "201110_brt_34th_open_house_slides",
+      "evidence_id": "201110_brt_34th_open_house_slides#p028_c0002",
+      "text_sha256": "sha256:920aa6d36d8f2342145bf4a81382ed68f4f7fa104814b5f6fbc566b31a421e64"
+    },
+    "finding": "The immutable accepted rc28 route-identity snapshot already resolves the three canonical route records as exact service identities. A merged-source split_candidate note on a canonical documentary record does not override the reviewed route-identity snapshot."
+  },
+  "treatment_identity_resolution": {
+    "record_id": "treatment_tc-201203-34th-sbs-off-board-fare",
+    "record_jsonl_row_sha256": "4abbe9e8be75da7e4436496486c8d509633038df494f04157fb6851a14a2fee9",
+    "treatment_family": "fare_collection",
+    "evidence_binding": {
+      "source_id": "201203_brt_34th_cac6",
+      "evidence_id": "201203_brt_34th_cac6#p003_c0002",
+      "text_sha256": "sha256:d243a2df4698874e58ef36157b071abe0ba3bfff9e9d9598c95990dacc3e861e",
+      "source_quote": "Implemented off-board fare collection"
+    },
+    "finding": "This already-canonical local treatment record supplies the exact treatment identity and definition. The frozen Broadway Routes report remains the authority for the November 2011 M34/M34A occurrence and its route-treatment incidence; this supplement does not infer an onset from the later source."
+  },
+  "resolved_blocker_ids": [
+    "schema:m34-m34a-route-split",
+    "schema:m34-pinned-treatment-record",
+    "schema:m101-route-service-variant-split"
+  ],
+  "mutation_boundary": {
+    "canonical_observations_changed": false,
+    "frozen_manifest_changed": false,
+    "historical_migration_files_changed": false,
+    "new_external_source_acquired": false,
+    "publication_or_release_authorized": false
+  }
+}

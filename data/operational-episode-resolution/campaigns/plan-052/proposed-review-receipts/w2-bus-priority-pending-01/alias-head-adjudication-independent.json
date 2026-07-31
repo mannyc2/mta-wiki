@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "contract": "plan-052-semantic-review-receipt-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w2-bus-priority-pending-01",
+  "review_role": "independent_adjudication",
+  "reviewer_id": "plan-052-bus01-alias-head-blind-adjudicator",
+  "review_complete": true,
+  "clean_room": {
+    "independent_of_primary_review": true,
+    "inputs_limited_to": [
+      "AGENTS.md",
+      "CODEX.md",
+      "Plan 052",
+      "the named batch manifest and frozen-frontier rows",
+      "canonical records",
+      "manifest-pinned local source pages"
+    ],
+    "excluded_inputs": [
+      "primary, independent, adjudication, reconciliation, integration, evidence-gap, and STOP receipts",
+      "git diff",
+      "other agent outputs"
+    ]
+  },
+  "manifest_pin": {
+    "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-bus-priority-pending-01.json",
+    "bytes": 17006,
+    "sha256": "5961721be6200a787df306892ee33388fdeca4fab1b39e6c52db8fd6d8d5584e"
+  },
+  "frozen_frontier_pins": [
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+      "bytes": 860230,
+      "sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/cohort.json",
+      "bytes": 720438,
+      "sha256": "59e4c2fbdb389255442c00ac06204b6798fed64742d80489441cd5524a912a61"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/observation_ledger.jsonl",
+      "bytes": 1374322,
+      "sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/summary.json",
+      "bytes": 21408,
+      "sha256": "4baf594cea14431b2f2c125c19c554755ecf167be6b81f399152873a5cd35545"
+    }
+  ],
+  "source_pin_set": {
+    "manifest_field": "evidence_source_pins",
+    "source_count": 49,
+    "total_bytes": 1330287,
+    "sha256": "0ab0b0a1f81ef0c0d923cee5944bf337e53790f7a915e6e096b7914dd0a7b6b4",
+    "verification": "Every path, byte count, and SHA-256 entry in the manifest field was verified before review."
+  },
+  "cohort_hashes": {
+    "adapter_input_sha256": "4e28254400128cd071dcecb1530acc7ae465a01435c499a74a3bedaeb06bd2b1",
+    "candidate_input_sha256": "c2caefd379c712643b468451bb06bac6a72fc1cfe6098c6c8894581322c35710",
+    "candidate_membership_sha256": "319d21324ab9c4f55cc7beb01dff943577681acaf2f1cfa5dd4411d9044fb67c",
+    "evidence_input_sha256": "0ab0b0a1f81ef0c0d923cee5944bf337e53790f7a915e6e096b7914dd0a7b6b4",
+    "observation_membership_sha256": "d947ff75563d4198121d226ba72dc61051ca523a257d11017b085394324eaab5"
+  },
+  "immutable_starting_provenance": {
+    "adapter_fingerprint": "de51c8db4353cc8774d4c55bea3fcba8103ecdee3a38898b85b61733eccf07b9",
+    "cohort_fingerprint": "94dfd16c1c57362b220fb8ce53b8325e6ca166c1e697d9001da8b66f6483e373",
+    "commit_sha": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+    "corpus_fingerprint": "318cee05f0c7288fd28084df44b6b036f0607ffdfb76b3d6c6fcd14118f479c5",
+    "decision_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "identity_fingerprint": "6827adf67650c81fa38d30b1dfbaf6be5282a45491b058b3ed44167aa287d26e",
+    "review_fingerprint": "3989ac8637527e5862f18b7a6c4f7f2699078eb992a2675b16a23af525fd1d24"
+  },
+  "provider_usage": {
+    "provider": null,
+    "model": null,
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "corrected_requested_membership": {
+    "candidate_count": 3,
+    "observation_event_count": 3,
+    "candidate_ids": [
+      "candidate:12f43dc158ab2a37316ceeab",
+      "candidate:224b78d76ee4b98eba139b0f",
+      "candidate:225c1d8841c8ff1c951b9c68"
+    ],
+    "correction_note": "These are the exact IDs confirmed from the named manifest and frozen ledger. Earlier mistyped strings are not review inputs and are intentionally not recorded."
+  },
+  "alias_safety": {
+    "requested_heads_are_not_alias_targets": true,
+    "targets_are_distinct_manifest_members": true,
+    "targets_are_outside_this_receipt_findings": true,
+    "cycle_created_by_this_receipt": false
+  },
+  "findings": [
+    {
+      "candidate_id": "candidate:12f43dc158ab2a37316ceeab",
+      "observation_event_record_ids": ["event_b46-sbs-launch-late-spring-2016"],
+      "recommended_disposition": "rejected",
+      "recommended_canonical_candidate_id": null,
+      "assessment": "The proposed late-Spring 2016 B46 launch conflicts with the delivered July 3, 2016 launch in the manifest-pinned route index.",
+      "known_facts": ["The April source states a future late-Spring 2016 launch.", "Utica Avenue B46 SBS began July 3, 2016."],
+      "evidence_refs": ["brt_cb17_uticaave_apr2016#p010_c0003", "brt_route_index#p001_b0001"],
+      "gaps": [],
+      "prohibited_inferences": ["Do not alias a contradicted target date to the delivered launch or treat it as an exact positive onset."],
+      "applications": [],
+      "onset": {"candidate_date_text": "Late Spring 2016", "delivered_date_text": "July 3, 2016", "date_precision": "day"},
+      "scope": {"route_ids": ["route_utica-ave-sbs"], "treatment_ids": [], "extent": "Utica Avenue"},
+      "integration_status": "terminal_no_publication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:224b78d76ee4b98eba139b0f",
+      "observation_event_record_ids": ["event_m60-sbs-launch-2014-05-25_2"],
+      "recommended_disposition": "duplicate_alias",
+      "recommended_canonical_candidate_id": "candidate:315f9d756c61519379126f0f",
+      "assessment": "This is an exact co-reference to the distinct manifest member for the M60 SBS launch on May 25, 2014; route, event type, and day match.",
+      "known_facts": ["Both source observations state that M60 SBS launched May 25, 2014.", "The target is not one of the three corrected reverse-alias heads."],
+      "evidence_refs": ["2015_01_08_brt_125th_cb9#p008_c0002", "2015_01_06_brt_125th_cb11#p008_c0002", "2015_01_06_brt_125th_cb11#p008_c0003", "2015_01_06_brt_125th_cb11#p008_c0004"],
+      "gaps": [],
+      "prohibited_inferences": ["Do not attach corridor treatment records to this alias-only identity decision."],
+      "applications": [],
+      "onset": {"date_text": "May 25, 2014", "date_normalized": "2014-05-25", "date_precision": "day"},
+      "scope": {"route_ids": ["route_125th-laguardia-sbs"], "treatment_ids": [], "extent": "M60 SBS on 125th Street"},
+      "integration_status": "ready_for_alias_integration",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:225c1d8841c8ff1c951b9c68",
+      "observation_event_record_ids": ["event_utica-bus-priority-improvements-aug2014"],
+      "recommended_disposition": "duplicate_alias",
+      "recommended_canonical_candidate_id": "candidate:28e87b892f20b8423a6f3e32",
+      "assessment": "This is an exact co-reference to the distinct manifest member for the Summer/August 2014 Utica Avenue implementation: same St. Johns Place-to-Church Avenue segment and same bus-lane/turn treatment package.",
+      "known_facts": ["August 2014 falls within the target's Summer 2014 precision.", "Both sources identify the same segment, bus lanes, left-turn bays, and turn restrictions.", "The target is not one of the three corrected reverse-alias heads."],
+      "evidence_refs": ["2014_11_brt_utica_workshopsummary#p003_c0002", "2015_04_15_brt_uticaave_cb17_presentation#p011_c0002", "2015_04_15_brt_uticaave_cb17_presentation#p011_c0003"],
+      "gaps": [],
+      "prohibited_inferences": ["Do not create route-by-treatment cross-products from the alias decision."],
+      "applications": [],
+      "onset": {"date_text": "August 2014 / Summer 2014", "date_normalized": "2014-08", "date_precision": "month"},
+      "scope": {"route_ids": ["route_utica-ave-sbs", "route_b46-local-2012"], "treatment_ids": ["treatment_bus-lanes-utica-2014"], "extent": "Utica Avenue, St. Johns Place to Church Avenue"},
+      "integration_status": "ready_for_alias_integration",
+      "blockers": []
+    }
+  ],
+  "arithmetic": {
+    "assigned_candidate_count": 3,
+    "finding_count": 3,
+    "published_count": 0,
+    "duplicate_alias_count": 2,
+    "insufficient_evidence_count": 0,
+    "outside_domain_count": 0,
+    "rejected_count": 1,
+    "nonpublication_count": 3,
+    "application_count": 0,
+    "identity": "0 + 2 + 0 + 0 + 1 = 3",
+    "isolation": "Only the three corrected manifest/frozen candidate IDs are adjudicated."
+  }
+}

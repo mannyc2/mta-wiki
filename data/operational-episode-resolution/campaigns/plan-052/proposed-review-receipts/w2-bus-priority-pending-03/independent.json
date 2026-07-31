@@ -1,0 +1,573 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "proposal_status": "proposed_not_accepted",
+  "batch_id": "w2-bus-priority-pending-03",
+  "reviewer": "plan-052-independent-bus-priority-pending-03",
+  "review_role": "independent",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-bus-priority-pending-03.json",
+  "manifest_sha256": "4d3208edc5c738b9b857f999581c9dc7b989c9d9a9b85cab09e93ce390ed84aa",
+  "frozen_input_verification": {
+    "candidate_count": 46,
+    "candidate_bearing_observation_count": 46,
+    "preterminal_observation_count": 11,
+    "required_accounted_observation_count": 57,
+    "evidence_pin_count": 51,
+    "all_candidate_ids_present": true,
+    "all_evidence_pins_match": true,
+    "cohort_hashes": {
+      "adapter_input_sha256": "53e167e4a06b33b514f79e9c8f2f8abcf3cea18916fdf7bb5ace4a8b1a1b0698",
+      "candidate_input_sha256": "e0d82d5fcda506ed199d7c99ad60ac95805af218d308319486af8ceb52407100",
+      "candidate_membership_sha256": "a9e7c86d2744db9a3df058aec6bb2cb3feb9fcc584028216a7909103bbac53b5",
+      "evidence_input_sha256": "61cfc07d282a9b5ad338abad2399beb563b7180b526ce60be323561c6a1464d9",
+      "observation_membership_sha256": "d6d468ea7ab6fc603c9755479689fde1d42eed21565f805fc3de6cb54bbfd028"
+    },
+    "status": "pass"
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "review_complete": true,
+  "stop": false,
+  "disagreements": null,
+  "findings": [
+    {
+      "candidate_id": "candidate:6868cc12e5a8a02f88698edb",
+      "candidate_key": "event:event_bus-lanes-installed-aug2015_3",
+      "recommended_disposition": "published",
+      "observation_event_record_ids": ["event_bus-lanes-installed-aug2015_3"],
+      "route_applications": [
+        {
+          "route_record_id": "route_q52-ltd-woodhaven-2014",
+          "gtfs_route_id": "Q52",
+          "treatment_record_id": "treatment_bus-only-lanes-woodhaven-2015",
+          "extent": "Woodhaven Boulevard from Dry Harbor Road to Metropolitan Avenue, weekdays 7-10 AM and 4-7 PM"
+        },
+        {
+          "route_record_id": "route_q53-ltd-woodhaven-2014",
+          "gtfs_route_id": "Q53",
+          "treatment_record_id": "treatment_bus-only-lanes-woodhaven-2015",
+          "extent": "Woodhaven Boulevard from Dry Harbor Road to Metropolitan Avenue, weekdays 7-10 AM and 4-7 PM"
+        }
+      ],
+      "phase": "installed",
+      "phase_date": {"value": "2015-08", "precision": "month"},
+      "scope": "Pre-SBS Q52 Limited and Q53 Limited service on the bounded Woodhaven Boulevard bus-only-lane segment",
+      "evidence_ids": [
+        "brt_woodhaven_cb6_handout_2016#p001_c0003",
+        "brt_woodhaven_cb6_handout_2016#p001_c0005",
+        "brt_woodhaven_cb6_handout_2016#p001_c0010"
+      ],
+      "cross_product_proof": "The source says the Woodhaven/Cross Bay project was based on exactly the existing Q52 and Q53 routes and identifies one installed bus-only-lane treatment; two routes by one treatment yields exactly two applications."
+    },
+    {
+      "candidate_id": "candidate:69d039ca776580d1d42317fd",
+      "candidate_key": "event:event_tsp-summer-2014",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The March 2014 Bx41 SBS presentation schedules Transit Signal Priority for Summer 2014.",
+      "evidence_ids": ["2014_03_20_brt_webste_cb5#p030_c0003"],
+      "evidence_gap": "The pinned evidence is a future schedule and does not establish that TSP was implemented.",
+      "prohibited_inferences": ["Do not convert a planned TSP milestone into delivered Bx41 route-treatment incidence."]
+    },
+    {
+      "candidate_id": "candidate:69d43228584f6e4cab294f4c",
+      "candidate_key": "event:event_machine-installation-2011-10-04",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:002e8ac7107b222e82e03c82",
+      "canonical_target_candidate_id": "candidate:002e8ac7107b222e82e03c82",
+      "target_incidence_id": "m34-m16-machine-installation-2011-10-04",
+      "known_facts": "This source records the same October 4, 2011 fare-machine installation phase already represented by the Wave 1 candidate for M34 and historical M16/pre-M34A.",
+      "evidence_ids": ["201110_brt_34th_cac5#p038_c0002"],
+      "prohibited_inferences": [
+        "Do not create a second October 4 occurrence.",
+        "Do not backdate the M34A public designation before the November 13 M16 rename."
+      ]
+    },
+    {
+      "candidate_id": "candidate:6a1af04d4f923d94efd05bf8",
+      "candidate_key": "event:event_phase1-short-term-improvements-2017",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:4ff0c75be7254c4f0a39e354",
+      "canonical_target_candidate_id": "candidate:4ff0c75be7254c4f0a39e354",
+      "target_incidence_id": "woodhaven-launch-2017-11-12",
+      "known_facts": "The 2015 FAQ describes the planned 2017 first phase of the Q52/Q53 Woodhaven/Cross Bay SBS project; the retrospective route-index candidate fixes the delivered launch on November 12, 2017.",
+      "evidence_ids": ["brt_woodhaven_faq#p012_c0011", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish the broad 2017 plan as a second delivered onset or create a route-by-treatment cross-product."]
+    },
+    {
+      "candidate_id": "candidate:6bf2d5c16fa28589269bfdb6",
+      "candidate_key": "event:event_b46-sbs-launch-sep2015",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:ec77a003b36acf9a73e98a2f",
+      "canonical_target_candidate_id": "candidate:ec77a003b36acf9a73e98a2f",
+      "target_incidence_id": "b46-launch-2016-07-03",
+      "known_facts": "The source planned B46 SBS launch for September 2015; the retrospective route-index candidate establishes delivery on July 3, 2016.",
+      "evidence_ids": ["2015_04_28_brt_uticaave_cb9_presentation#p014_c0004", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish the superseded September 2015 target as delivered onset."]
+    },
+    {
+      "candidate_id": "candidate:6bfc7f360d380d52910f9c22",
+      "candidate_key": "event:event_pilot-start-oct3-2019",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:5552945358a38e79c893f62e",
+      "canonical_target_candidate_id": "candidate:5552945358a38e79c893f62e",
+      "target_incidence_id": "14th-pilot-2019-10-03",
+      "known_facts": "The NYC DOT page and the canonical brochure candidate describe the same October 3, 2019 Transit and Truck Priority pilot.",
+      "evidence_ids": ["14th_street_busway#p001_b0001"],
+      "prohibited_inferences": ["Do not create a second 14th Street pilot occurrence or split the combined M14A/D durable subject."]
+    },
+    {
+      "candidate_id": "candidate:6c5e7706a80720c860ae0d0d",
+      "candidate_key": "event:event_b82-sbs-launch-oct2018",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:dcfb5883d45d4b39666e1a5a",
+      "canonical_target_candidate_id": "candidate:dcfb5883d45d4b39666e1a5a",
+      "target_incidence_id": "b82-launch-2018-10-01",
+      "known_facts": "This source reports the same October 1, 2018 B82 SBS launch represented by the exact retrospective target candidate.",
+      "evidence_ids": ["brt_south_brooklyn_b82_mbca_oct2018#p008_c0002", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not create a second B82 SBS launch occurrence."]
+    },
+    {
+      "candidate_id": "candidate:705409a44d74e06586e43765",
+      "candidate_key": "event:event_101av-left-turn-restriction-oct26-2017",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The Woodhaven implementation update lists a southbound left-turn restriction at 101st Avenue as upcoming for October 26.",
+      "evidence_ids": ["brt_woodhaven_implementation_update_2017#p002_c0008"],
+      "evidence_gap": "The source does not establish completed implementation or exact route incidence for this roadway restriction.",
+      "prohibited_inferences": ["Do not infer Q52, Q53, or both from project-level corridor context."]
+    },
+    {
+      "candidate_id": "candidate:70beb158573fca213b5c1f8a",
+      "candidate_key": "event:event_sbs-start-of-service-2013-06-webster",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:3a5c6e4b4f69da4a19163423",
+      "canonical_target_candidate_id": "candidate:3a5c6e4b4f69da4a19163423",
+      "target_incidence_id": "bx41-launch-2013-06-30",
+      "known_facts": "The source says Bx41 SBS service would start at the end of June 2013; the retrospective target fixes June 30.",
+      "evidence_ids": ["2013_03_sbs_webster_bx_cb5#p044_c0006", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not create a second Bx41 launch occurrence."]
+    },
+    {
+      "candidate_id": "candidate:713641f71f29818f59d4f1b2",
+      "candidate_key": "event:event_b82-sbs-launch-2018-cb18-jun2017",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:dcfb5883d45d4b39666e1a5a",
+      "canonical_target_candidate_id": "candidate:dcfb5883d45d4b39666e1a5a",
+      "target_incidence_id": "b82-launch-2018-10-01",
+      "known_facts": "The source forecast a 2018 B82 SBS launch; the retrospective target establishes October 1, 2018.",
+      "evidence_ids": ["brt_south_brooklyn_b82_cb18_jun2017#p040_c0009", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish the year-only forecast as a separate launch."]
+    },
+    {
+      "candidate_id": "candidate:7247faa9bcd17bc61bcd89db",
+      "candidate_key": "event:event_jay-st-launch",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The Jay Street Busway launched in August 2020 from Livingston/Smith Streets to Jay/Tillary Streets and operates weekdays from 7 AM to 7 PM.",
+      "evidence_ids": ["busways#p001_b0001"],
+      "evidence_gap": "The pinned source does not name exact bus routes using the busway.",
+      "prohibited_inferences": ["Do not infer route incidence from the reported aggregate weekday ridership."]
+    },
+    {
+      "candidate_id": "candidate:7286f6c57f315d4236c86330",
+      "candidate_key": "event:event_q44-sbs-launch",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:e36a659ebf2102c7e496ea73",
+      "canonical_target_candidate_id": "candidate:e36a659ebf2102c7e496ea73",
+      "target_incidence_id": "q44-launch-2015-11-29",
+      "known_facts": "The construction timeline reports the Q44 SBS launch on November 29, 2015; the retrospective route-index candidate records the same route and day.",
+      "evidence_ids": ["brt_flushing_main_st_aug2018#p012_c0002", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not create a second Q44 launch or combine later Main Street capital work into the launch treatment."]
+    },
+    {
+      "candidate_id": "candidate:72d565d81b4e59e90d61adc7",
+      "candidate_key": "event:event_nostrand-rogers-sbs-start",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:6598e41cd21efb8735aa3f39",
+      "canonical_target_candidate_id": "candidate:6598e41cd21efb8735aa3f39",
+      "target_incidence_id": "b44-launch-2013-11-17",
+      "known_facts": "The route index reports the same November 17, 2013 B44 SBS launch represented by the exact retrospective progress-report target.",
+      "evidence_ids": ["brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not create a second B44 launch occurrence."]
+    },
+    {
+      "candidate_id": "candidate:74c4243ae73143545c6415ac",
+      "candidate_key": "event:event_begin-implementation-summer2017",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The B82 project schedule called for beginning critical safety and transit-accessibility work in Summer 2017.",
+      "evidence_ids": ["brt_south_brooklyn_b82_cb14_may2017#p022_c0004", "brt_south_brooklyn_b82_cb14_may2017#p022_c0005"],
+      "evidence_gap": "The schedule is prospective and does not prove a completed route-treatment phase.",
+      "prohibited_inferences": ["Do not merge a planned safety phase with the later B82 SBS launch or infer completed applications."]
+    },
+    {
+      "candidate_id": "candidate:752bb4bb12b41b1743a541ba",
+      "candidate_key": "event:event_2019-better-buses-initiated",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "NYC DOT initiated the Better Buses program in 2019 to broaden bus-corridor improvements.",
+      "evidence_ids": ["bus_lane_camera_report_2024#p005_c0003"],
+      "prohibited_inferences": ["Do not model a systemwide program initiation as one route-treatment operational occurrence."]
+    },
+    {
+      "candidate_id": "candidate:75c3e60befbc45ca53804048",
+      "candidate_key": "event:event_service-starts-2017-2018_2",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:4ff0c75be7254c4f0a39e354",
+      "canonical_target_candidate_id": "candidate:4ff0c75be7254c4f0a39e354",
+      "target_incidence_id": "woodhaven-launch-2017-11-12",
+      "known_facts": "The source gives a 2017-2018 service-start target for the Woodhaven/Cross Bay SBS project; the retrospective candidate establishes the November 12, 2017 launch.",
+      "evidence_ids": ["2015_04_16_brt_woodhaven_dw1_presentation#p007_c0002", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish the broad target as a second onset."]
+    },
+    {
+      "candidate_id": "candidate:75e465cb244cddf5b0f93be0",
+      "candidate_key": "event:event_public-art-fencing-winter2018-spring2019",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The source planned public-art fencing at the Jamaica Avenue, 91st Avenue, 101st Avenue, and Rockaway Boulevard SBS stations for Winter 2018/Spring 2019.",
+      "evidence_ids": ["brt_woodhaven_after_fall2018#p029_c0002"],
+      "evidence_gap": "The evidence says the fencing will be installed and does not prove delivery.",
+      "prohibited_inferences": ["Do not convert a forecast into installed route-treatment incidence."]
+    },
+    {
+      "candidate_id": "candidate:777273debe9efa994cf7fa7c",
+      "candidate_key": "event:event_bx6-sbs-launch-fall2016-spring2017",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:3db82fb4309450a623699c14",
+      "canonical_target_candidate_id": "candidate:3db82fb4309450a623699c14",
+      "target_incidence_id": "bx6-launch-2017-09-03",
+      "known_facts": "The source gave a Fall 2016/Spring 2017 Bx6 SBS target; the retrospective target establishes September 3, 2017.",
+      "evidence_ids": ["brt_bx6_south_bronx_cb2_may2016#p027_c0002", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish the superseded target range as delivered onset."]
+    },
+    {
+      "candidate_id": "candidate:789bfcea0728fe71253c625e",
+      "candidate_key": "event:event_b82-sbs-launch-spring-summer-2018-sept2017",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:dcfb5883d45d4b39666e1a5a",
+      "canonical_target_candidate_id": "candidate:dcfb5883d45d4b39666e1a5a",
+      "target_incidence_id": "b82-launch-2018-10-01",
+      "known_facts": "The source forecast B82 SBS launch for Spring-Summer 2018; the retrospective target establishes October 1, 2018.",
+      "evidence_ids": ["brt_south_brooklyn_b82_sept2017#p028_c0007", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish the forecast season as a second B82 launch."]
+    },
+    {
+      "candidate_id": "candidate:7a04ffcd343c298ddd15f130",
+      "candidate_key": "event:event_spring2017-street-design-fare-machines",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:3db82fb4309450a623699c14",
+      "canonical_target_candidate_id": "candidate:3db82fb4309450a623699c14",
+      "target_incidence_id": "bx6-launch-2017-09-03",
+      "known_facts": "The Spring 2017 fare-machine and street-design implementation is a planned implementation phase of the same Bx6 SBS intervention delivered September 3, 2017.",
+      "evidence_ids": ["brt_bx6_cb12_apr2017#p015_c0002", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not split fare-machine installation from the canonical Bx6 launch without exact independent onset evidence."]
+    },
+    {
+      "candidate_id": "candidate:7b1c2c01ce637f206991f084",
+      "candidate_key": "event:event_sbs-launch-spring-2016-cb17",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:ec77a003b36acf9a73e98a2f",
+      "canonical_target_candidate_id": "candidate:ec77a003b36acf9a73e98a2f",
+      "target_incidence_id": "b46-launch-2016-07-03",
+      "known_facts": "The source forecast B46 SBS launch for Spring 2016; the retrospective target establishes July 3, 2016.",
+      "evidence_ids": ["brt_uticaave_cb17_transportation_committee_2016#p008_c0003", "brt_uticaave_cb17_transportation_committee_2016#p025_c0003", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish the forecast season as a second B46 launch."]
+    },
+    {
+      "candidate_id": "candidate:7bd97780b22795bca790e5ad",
+      "candidate_key": "event:event_woodhaven-bus-lane-implementation-mid-july-2015",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:6868cc12e5a8a02f88698edb",
+      "canonical_target_candidate_id": "candidate:6868cc12e5a8a02f88698edb",
+      "target_incidence_id": "woodhaven-ltd-bus-lanes-2015-08",
+      "known_facts": "The flyer announces mid-July implementation of the same bounded Woodhaven bus lanes retrospectively recorded as installed in August 2015.",
+      "evidence_ids": ["2015_07_brt_woodhaven_whh_flyer#p001_c0009", "brt_woodhaven_cb6_handout_2016#p001_c0005"],
+      "prohibited_inferences": ["Do not create separate July-start and August-installed episodes for the same lane treatment."]
+    },
+    {
+      "candidate_id": "candidate:7c1300d8af61d282d580c6a1",
+      "candidate_key": "event:event_brt-bx6-cb4-mar2017-capital-project",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The Bx6 plan schedules capital-project design and implementation for 2018-2020.",
+      "evidence_ids": ["brt_bx6_cb4_mar2017#p040_c0002"],
+      "evidence_gap": "The source is a prospective program range and does not identify a completed exact application onset.",
+      "prohibited_inferences": ["Do not merge later capital work into the 2017 Bx6 SBS launch or assert delivery."]
+    },
+    {
+      "candidate_id": "candidate:7c9bfbbfc41860feaea3ba44",
+      "candidate_key": "event:event_sbs-implementation-2012",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:6598e41cd21efb8735aa3f39",
+      "canonical_target_candidate_id": "candidate:6598e41cd21efb8735aa3f39",
+      "target_incidence_id": "b44-launch-2013-11-17",
+      "known_facts": "The 2010 presentation gave a 2012 implementation target for the Nostrand/Rogers SBS project; the retrospective target establishes the November 17, 2013 B44 launch.",
+      "evidence_ids": ["2010_05_11_brt_nostrand_cb3#p022_c0002", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish 2012 as delivered B44 onset."]
+    },
+    {
+      "candidate_id": "candidate:7ce00f3356c0137110f468dd",
+      "candidate_key": "event:event_2013-03-sbs-webster-start-of-service",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:3a5c6e4b4f69da4a19163423",
+      "canonical_target_candidate_id": "candidate:3a5c6e4b4f69da4a19163423",
+      "target_incidence_id": "bx41-launch-2013-06-30",
+      "known_facts": "The source schedules Bx41 SBS service for the end of June 2013; the retrospective target fixes June 30.",
+      "evidence_ids": ["2013_03_sbs_webster_bx_cb7#p043_c0005", "2013_03_sbs_webster_bx_cb7#p043_c0006", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not create a second Bx41 launch occurrence."]
+    },
+    {
+      "candidate_id": "candidate:7d71b99992e52d83360cf3ec",
+      "candidate_key": "event:event_implementation-summer-2019",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The May 2019 Lexington Avenue plan schedules implementation to begin in Summer 2019; the corridor is served by M98, M101, M102, and M103 and contains several proposed treatment types.",
+      "evidence_ids": ["bus_forward_lex_ave_96th_60th_st_may2019#p019_c0002"],
+      "evidence_gap": "The timeline is prospective and does not map each route to exact treatments without a multi-route by multi-treatment inference.",
+      "prohibited_inferences": ["Do not manufacture a four-route treatment cross-product or assert delivery."]
+    },
+    {
+      "candidate_id": "candidate:7dd0cfe7fff7f8875fd22028",
+      "candidate_key": "event:event_fare-pre-payment-start-2011-11-13",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:443c8f021b1a09d7a1046587",
+      "canonical_target_candidate_id": "candidate:443c8f021b1a09d7a1046587",
+      "target_incidence_id": "m34-prepayment-2011-11-13",
+      "known_facts": "The source records the same November 13, 2011 M34/M34A fare-prepayment activation and M16-to-M34A rename represented by the canonical target candidate.",
+      "evidence_ids": ["201110_brt_34th_cac5#p030_c0002"],
+      "prohibited_inferences": ["Do not create a second activation occurrence or erase the historical M16 predecessor label."]
+    },
+    {
+      "candidate_id": "candidate:7e6c1865d84ffcac215bf2c2",
+      "candidate_key": "event:event_main-st-southbound-start",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The Main Street southbound busway began in March 2017 on the bounded Main Street/Kissena Boulevard corridor.",
+      "evidence_ids": ["busways#p001_b0001"],
+      "evidence_gap": "The pinned source does not name exact bus routes using the busway.",
+      "prohibited_inferences": ["Do not infer route incidence from aggregate weekday ridership."]
+    },
+    {
+      "candidate_id": "candidate:8283c453b56b6850adabfc9b",
+      "candidate_key": "event:event_project-implementation-jul-sep2016_2",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:fa35844bb65bc2e1aab4a18a",
+      "canonical_target_candidate_id": "candidate:fa35844bb65bc2e1aab4a18a",
+      "target_incidence_id": "m23-launch-2016-11-06",
+      "known_facts": "The July-September implementation schedule is a planning representation of the M23 SBS intervention whose retrospective launch candidate fixes November 6, 2016.",
+      "evidence_ids": ["brt_m23_cb5_jun2016#p011_c0002", "brt_m23_cb5_jun2016#p011_c0003", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish a second M23 onset from the construction window."]
+    },
+    {
+      "candidate_id": "candidate:82e1c3bd708aa041f6cd08ce",
+      "candidate_key": "event:event_m15-sbs-launch-2010-10-10",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:6d19f1cc63b3315494b43743",
+      "canonical_target_candidate_id": "candidate:6d19f1cc63b3315494b43743",
+      "target_occurrence_id": "occurrence:b45f5df36b98c638d8052c7a",
+      "target_incidence_id": "m15-launch-2010-10-10",
+      "known_facts": "This source reports the same October 10, 2010 M15 SBS launch already represented by the published occurrence.",
+      "evidence_ids": ["2011_05_02_brt_1st2nd_cb6#p003_c0005"],
+      "prohibited_inferences": ["Do not create a second M15 launch occurrence."]
+    },
+    {
+      "candidate_id": "candidate:832efb7933eae1eb9f16162a",
+      "candidate_key": "event:event_m15-sbs-launch-october-2010",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:6d19f1cc63b3315494b43743",
+      "canonical_target_candidate_id": "candidate:6d19f1cc63b3315494b43743",
+      "target_occurrence_id": "occurrence:b45f5df36b98c638d8052c7a",
+      "target_incidence_id": "m15-launch-2010-10-10",
+      "known_facts": "The month-level source describes the same M15 SBS launch already fixed to October 10, 2010 by the published occurrence.",
+      "evidence_ids": ["2011_03_07_brt_nostrand_cb3#p005_c0002"],
+      "prohibited_inferences": ["Do not create a month-level duplicate of the day-precision M15 occurrence."]
+    },
+    {
+      "candidate_id": "candidate:8527cd3707599da53da05186",
+      "candidate_key": "event:event_project-implementation-jun-sep-2016",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:fa35844bb65bc2e1aab4a18a",
+      "canonical_target_candidate_id": "candidate:fa35844bb65bc2e1aab4a18a",
+      "target_incidence_id": "m23-launch-2016-11-06",
+      "known_facts": "The June-September implementation schedule is a planning representation of the M23 SBS intervention launched November 6, 2016.",
+      "evidence_ids": ["brt_m23_cb6_jun2016#p013_c0004", "brt_m23_cb6_jun2016#p013_c0005", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish a construction-window onset distinct from the M23 launch."]
+    },
+    {
+      "candidate_id": "candidate:857f4eb2925049f4090ac8ce",
+      "candidate_key": "event:event_off-board-fare-payment-spring-2016",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:ec77a003b36acf9a73e98a2f",
+      "canonical_target_candidate_id": "candidate:ec77a003b36acf9a73e98a2f",
+      "target_incidence_id": "b46-launch-2016-07-03",
+      "known_facts": "The newsletter's Spring 2016 off-board-fare launch is a forecast phase of the B46 SBS intervention delivered July 3, 2016.",
+      "evidence_ids": ["brt_uticaave_winter_spring_newsletter_2016#p002_c0008", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not create a second B46 launch or merge the earlier dedicated-lane occurrence into it."]
+    },
+    {
+      "candidate_id": "candidate:85d8d1599cf166a8241482f6",
+      "candidate_key": "event:event_flushing-signal-control-summer2015",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The workshop summary says Flushing traffic-signal-control improvements were likely to be implemented in Summer 2015.",
+      "evidence_ids": ["2014_brt_flushingjamaica_workshopsummary#p005_c0017"],
+      "evidence_gap": "The statement is explicitly uncertain and does not provide exact route incidence.",
+      "prohibited_inferences": ["Do not assign the signal changes to Q44 or any other route and do not assert delivery."]
+    },
+    {
+      "candidate_id": "candidate:8a4813193b09f3b095289527",
+      "candidate_key": "event:event_sbs-launch-fall2017",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:4ff0c75be7254c4f0a39e354",
+      "canonical_target_candidate_id": "candidate:4ff0c75be7254c4f0a39e354",
+      "target_incidence_id": "woodhaven-launch-2017-11-12",
+      "known_facts": "The source forecast a Fall 2017 Q52/Q53 SBS launch; the retrospective candidate establishes November 12, 2017.",
+      "evidence_ids": ["brt_woodhaven_may2016#p012_c0002", "brt_woodhaven_may2016#p055_c0001", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish the forecast season as a second launch."]
+    },
+    {
+      "candidate_id": "candidate:8f2dfd1146931f0f7c8fb58f",
+      "candidate_key": "event:event_project-implementation-jul-sep-2016",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:fa35844bb65bc2e1aab4a18a",
+      "canonical_target_candidate_id": "candidate:fa35844bb65bc2e1aab4a18a",
+      "target_incidence_id": "m23-launch-2016-11-06",
+      "known_facts": "The July-September implementation schedule is a planning representation of the M23 SBS intervention launched November 6, 2016.",
+      "evidence_ids": ["brt_m23_cb4_apr2016#p035_c0006", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish a construction-window onset distinct from the M23 launch."]
+    },
+    {
+      "candidate_id": "candidate:902b95c23f8aba706a8cce3c",
+      "candidate_key": "event:event_implementing-aug-sep-2015",
+      "recommended_disposition": "published",
+      "observation_event_record_ids": ["event_implementing-aug-sep-2015"],
+      "route_applications": [
+        {
+          "route_record_id": "route_utica-ave-sbs",
+          "gtfs_route_id": "B46+",
+          "treatment_record_id": "treatment_bus-lanes-church-fillmore-2015_5",
+          "extent": "Utica Avenue from Church Avenue to Fillmore Avenue"
+        }
+      ],
+      "phase": "implementation_in_progress",
+      "phase_date": {"value": "2015-09", "precision": "month"},
+      "scope": "B46 Utica Avenue bus-lane and associated street-design package from Church Avenue to Fillmore Avenue",
+      "evidence_ids": [
+        "2015_09_10_brt_uticaave_cb8_presentation#p001_c0001",
+        "2015_09_10_brt_uticaave_cb8_presentation#p002_c0002",
+        "2015_09_10_brt_uticaave_cb8_presentation#p005_c0004"
+      ],
+      "cross_product_proof": "The source explicitly joins one B46 project route to one canonical bundled component on one bounded segment; one route by one bundle has no cross-product."
+    },
+    {
+      "candidate_id": "candidate:906e326ace00e1503c915970",
+      "candidate_key": "event:event_b82-sbs-launch-july2018",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:dcfb5883d45d4b39666e1a5a",
+      "canonical_target_candidate_id": "candidate:dcfb5883d45d4b39666e1a5a",
+      "target_incidence_id": "b82-launch-2018-10-01",
+      "known_facts": "The source forecast B82 SBS launch for July 2018; the retrospective target establishes October 1, 2018.",
+      "evidence_ids": ["brt_south_brooklyn_b82_feb2018#p025_c0005", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish the superseded July target as delivered onset."]
+    },
+    {
+      "candidate_id": "candidate:90826487bb148ff28dcaad68",
+      "candidate_key": "event:event_target-implementation-late-summer-2012",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The Utica Avenue study set late Summer 2012 as a target for implementing its proposed plan.",
+      "evidence_ids": ["2012_04_26_sbs_utica#p026_c0004"],
+      "evidence_gap": "The source is prospective and does not establish which proposed treatments were delivered or their exact route application.",
+      "prohibited_inferences": ["Do not equate the target with later B46 lane phases or assert a delivered 2012 occurrence."]
+    },
+    {
+      "candidate_id": "candidate:9159697928beb1d8698ed640",
+      "candidate_key": "event:event_project-implementation",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:fa35844bb65bc2e1aab4a18a",
+      "canonical_target_candidate_id": "candidate:fa35844bb65bc2e1aab4a18a",
+      "target_incidence_id": "m23-launch-2016-11-06",
+      "known_facts": "The July-September project-implementation target is a planning representation of the M23 SBS intervention launched November 6, 2016.",
+      "evidence_ids": ["brt_m23_cb5_mar2016#p036_c0009", "brt_route_index#p001_b0001"],
+      "prohibited_inferences": ["Do not publish a construction-window onset distinct from the M23 launch."]
+    },
+    {
+      "candidate_id": "candidate:91e41131475f7495422187a4",
+      "candidate_key": "event:event_spring-2015-install-upgrade-m86",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:9d1f3c0e9fc5bf867b5ca3c2",
+      "canonical_target_candidate_id": "candidate:9d1f3c0e9fc5bf867b5ca3c2",
+      "target_occurrence_id": "occurrence:025c872102a446492605b997",
+      "target_incidence_id": "m86-launch-2015-07-13",
+      "known_facts": "The Spring 2015 fare-machine installation and M86 upgrade schedule is a planning phase of the published M86 SBS occurrence launched July 13, 2015.",
+      "evidence_ids": ["2015_02_10_brt_86thstreet_cb7_presentation#p008_c0004"],
+      "prohibited_inferences": ["Do not publish the Spring target as a separate M86 onset."]
+    },
+    {
+      "candidate_id": "candidate:9232b17f970193be210093dd",
+      "candidate_key": "event:event_m15-sbs-launch-2010-10-10_2",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:6d19f1cc63b3315494b43743",
+      "canonical_target_candidate_id": "candidate:6d19f1cc63b3315494b43743",
+      "target_occurrence_id": "occurrence:b45f5df36b98c638d8052c7a",
+      "target_incidence_id": "m15-launch-2010-10-10",
+      "known_facts": "This source reports the same October 10, 2010 M15 SBS launch already represented by the published occurrence.",
+      "evidence_ids": ["2011_04_27_brt_1st2nd_cac6#p003_c0005"],
+      "prohibited_inferences": ["Do not create a second M15 launch occurrence."]
+    },
+    {
+      "candidate_id": "candidate:943fb341b5be8f6ffdcd2481",
+      "candidate_key": "event:event_post-implementation-data-collection-fall-winter-2019",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The Lexington Avenue project scheduled post-implementation data collection and monitoring for Fall/Winter 2019.",
+      "evidence_ids": ["bus_forward_lex_ave_96th_60th_st_may2019#p019_c0002"],
+      "prohibited_inferences": ["Do not model evaluation activity as a route-treatment operational occurrence."]
+    },
+    {
+      "candidate_id": "candidate:948239e6785c302d35ad2b49",
+      "candidate_key": "event:event_m86-sbs-launch-jul2015",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:9d1f3c0e9fc5bf867b5ca3c2",
+      "canonical_target_candidate_id": "candidate:9d1f3c0e9fc5bf867b5ca3c2",
+      "target_occurrence_id": "occurrence:025c872102a446492605b997",
+      "target_incidence_id": "m86-launch-2015-07-13",
+      "known_facts": "The month-level source reports the same M86 SBS launch already fixed to July 13, 2015 by the published occurrence.",
+      "evidence_ids": ["brt_m86_m79_cb8_oct2016#p006_c0002"],
+      "prohibited_inferences": ["Do not create a month-level duplicate of the day-precision M86 occurrence."]
+    },
+    {
+      "candidate_id": "candidate:9521cc9609cb6caac0d64f8c",
+      "candidate_key": "event:event_m15-sbs-launch-oct-10-2010",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:6d19f1cc63b3315494b43743",
+      "canonical_target_candidate_id": "candidate:6d19f1cc63b3315494b43743",
+      "target_occurrence_id": "occurrence:b45f5df36b98c638d8052c7a",
+      "target_incidence_id": "m15-launch-2010-10-10",
+      "known_facts": "This source reports the same October 10, 2010 M15 SBS launch already represented by the published occurrence.",
+      "evidence_ids": ["2010_04_29_brt_1st2nd_cac4#p003_c0005", "2010_04_29_brt_1st2nd_cac4#p018_c0005"],
+      "prohibited_inferences": ["Do not create a second M15 launch occurrence."]
+    },
+    {
+      "candidate_id": "candidate:9521f638d178d1e87aa7b70e",
+      "candidate_key": "event:event_bx6-online-feedback-portal-launch",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "An online feedback portal for the Bx6 SBS planning process launched in November 2015.",
+      "evidence_ids": ["ace_able_pdf_brt_bx6_river_terrace_houses_sept2016#p008_c0002"],
+      "prohibited_inferences": ["Do not model a public-feedback tool as a route-treatment operational occurrence."]
+    }
+  ],
+  "preterminal_observation_conformance": {
+    "unsupported_record_count": 9,
+    "not_episode_evidence_count": 2,
+    "count": 11,
+    "status": "pass_no_semantic_write",
+    "rule": "These observations were already terminal in the frozen observation ledger and are not candidate decisions."
+  },
+  "terminal_disposition_counts": {
+    "published": 2,
+    "duplicate_alias": 31,
+    "insufficient_evidence": 10,
+    "outside_domain": 3,
+    "rejected": 0,
+    "schema_blocked": 0,
+    "total": 46
+  },
+  "integration_authorization": "await_primary_review_and_deterministic_reconciliation"
+}

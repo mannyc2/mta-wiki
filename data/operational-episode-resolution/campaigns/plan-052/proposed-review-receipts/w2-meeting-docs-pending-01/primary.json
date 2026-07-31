@@ -1,0 +1,407 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "proposal_status": "proposed_not_accepted",
+  "batch_id": "w2-meeting-docs-pending-01",
+  "reviewer": "plan-052-primary-meeting-docs-pending-01",
+  "review_role": "primary",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-01.json",
+  "manifest_sha256": "40bcda03e39158abb62170ada7cff4a7e7bf3a29dece534a86b3d8c3be36fa91",
+  "manifest_verification": {
+    "candidate_count": 43,
+    "pending_count": 43,
+    "observation_count": 108,
+    "candidate_bearing_observation_count": 43,
+    "preterminal_observation_count": 65,
+    "status": "pass"
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "review_complete": true,
+  "stop": false,
+  "disagreements": null,
+  "findings": [
+    {
+      "candidate_id": "candidate:014d487f0ea13770e0c12f20",
+      "candidate_key": "event:event_29941-main-st-busway-launch",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The Main Street Busway Pilot launched January 19, 2021 and provided 24/7 bus-and-truck priority northbound from Sanford Avenue to Northern Boulevard.",
+      "evidence_ids": ["meeting_doc_29941#p042_c0004"],
+      "prohibited_inferences": ["Do not infer a route from the Main Street corridor or project name; the candidate-bound evidence names no route."]
+    },
+    {
+      "candidate_id": "candidate:01fe47b87888acd2df622498",
+      "candidate_key": "event:event_meeting-doc-86471-15-electric-buses",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "Fifteen electric buses were operating in Manhattan at document time.",
+      "evidence_ids": ["meeting_doc_86471#p003_c0004"],
+      "prohibited_inferences": ["Do not infer route assignment from borough-level fleet deployment."]
+    },
+    {
+      "candidate_id": "candidate:03c82cc7f8441ccb01bc26ac",
+      "candidate_key": "event:event_meeting-doc-160121-nyd-program",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The source describes a New Year's Day rail service program.",
+      "evidence_ids": ["meeting_doc_160121#p002_c0002"],
+      "prohibited_inferences": ["Do not translate a rail holiday schedule into a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:04ff5cc8efd7d0d8f7886be8",
+      "candidate_key": "event:event_nanuet-shelter-opening",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Metro-North opened a rebuilt platform shelter at Nanuet station in May 2022.",
+      "evidence_ids": ["meeting_doc_87686#p009_c0002"],
+      "prohibited_inferences": ["Do not model rail-station infrastructure as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:05a3e94f9c2907332b820464",
+      "candidate_key": "event:event_gcm-grand-opening-meeting-doc-105771",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Grand Central Madison opened January 25, 2023.",
+      "evidence_ids": ["meeting_doc_105771#p004_c0006"],
+      "prohibited_inferences": ["Do not model a rail-terminal opening as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:0715720d05e47aa47aa52382",
+      "candidate_key": "event:event_lirr-main-line-third-track-oct2022",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The LIRR Main Line third track entered service in October 2022.",
+      "evidence_ids": ["meeting_doc_104701#p021_c0007"],
+      "prohibited_inferences": ["Do not model rail-track activation as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:088739db939c96f629a3300d",
+      "candidate_key": "event:event_si-express-bus-redesign-2018",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The evidence says SIM4X and SIM8X were established in the August 2018 Staten Island Express Bus Redesign as short express variants serving the Mall Park-and-Ride.",
+      "evidence_ids": ["meeting_doc_176441#p001_c0006", "meeting_doc_176441#p002_c0010"],
+      "prohibited_inferences": ["Do not publish without a canonical treatment member and an exact evidence-bound route-treatment application; do not cross-apply the SIM4X pattern to SIM8X or vice versa."]
+    },
+    {
+      "candidate_id": "candidate:0a99bce41c879aa42692e271",
+      "candidate_key": "event:event_meeting-doc-ptc-update-oct2023",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The source records an October 2023 LIRR/Metro-North Positive Train Control update.",
+      "evidence_ids": ["meeting_doc_102691#p005_c0025", "meeting_doc_102691#p005_c0026"],
+      "prohibited_inferences": ["Do not model rail safety-system reporting as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:0ac4f493d414eeca26e8e3b3",
+      "candidate_key": "event:event_cbdtp-launch-20250105",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The Central Business District Tolling Program launched January 5, 2025.",
+      "evidence_ids": ["meeting_doc_165006#p076_c0002"],
+      "prohibited_inferences": ["Do not infer bus route-treatment incidence from a road-tolling program."]
+    },
+    {
+      "candidate_id": "candidate:0ac733796220746a1f0cc2a0",
+      "candidate_key": "event:event_meeting-doc-100351-omny-aar-pilot",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Testing for an OMNY pilot for Access-A-Ride customers was underway in October 2022.",
+      "evidence_ids": ["meeting_doc_100351#p004_c0005"],
+      "prohibited_inferences": ["Do not invent a fixed-route bus subject for a paratransit payment pilot."]
+    },
+    {
+      "candidate_id": "candidate:0acc1ff45c47a17ffcff5863",
+      "candidate_key": "event:event_meeting-doc-115206-may2024-lirr-mnr-ptc-update",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The source records a May 2024 LIRR/Metro-North PTC project update.",
+      "evidence_ids": ["meeting_doc_115206#p005_c0019", "meeting_doc_115206#p005_c0020"],
+      "prohibited_inferences": ["Do not model rail safety-system close-out as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:0ad2fb93b633c3f10e37d137",
+      "candidate_key": "event:event_fare-free-bus-pilot-launch",
+      "recommended_disposition": "duplicate_alias",
+      "target_occurrence_id": "occurrence:7a2f12e7e5c483d946eea9f4",
+      "target_candidate_id": "candidate:2f6cc9f56f959b89a829bd16",
+      "observation_event_record_ids": ["event_fare-free-bus-pilot-launch"],
+      "known_facts": "This source independently states the same September 24, 2023 Fare-Free Bus Pilot launch already represented by the accepted occurrence.",
+      "evidence_ids": ["meeting_doc_121271#p005_c0004"],
+      "target_exact_incidence": {
+        "gtfs_route_ids": ["B60", "BX18A", "BX18B", "M116", "Q4", "S46", "S96"],
+        "treatment_record_ids": ["treatment_fare-free-fare-collection"],
+        "phase_date": "2023-09-24",
+        "cross_product_proof": "The accepted target has seven explicit route applications to one atomic fare-free treatment; the alias adds no application."
+      },
+      "prohibited_inferences": ["Do not mint a second Fare-Free Bus Pilot occurrence or derive route membership from this meeting-summary block."]
+    },
+    {
+      "candidate_id": "candidate:0bd15a07632e707c70247318",
+      "candidate_key": "event:event_meeting-doc-111811-open-stroller-launch",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The Open Stroller pilot launched in September 2022 and was expected to expand to roughly 1,000 buses on 50 routes.",
+      "evidence_ids": ["meeting_doc_111811#p006_c0007"],
+      "prohibited_inferences": ["Do not infer any of the 50 route identities or a route-treatment cross-product from an aggregate count."]
+    },
+    {
+      "candidate_id": "candidate:0c406797b18fd8c9b954f265",
+      "candidate_key": "event:event_meeting-doc-may2023-ptc-update_2",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The source records a May 2023 LIRR/Metro-North PTC update.",
+      "evidence_ids": ["meeting_doc_100311#p005_c0002", "meeting_doc_100311#p005_c0005", "meeting_doc_100311#p005_c0006"],
+      "prohibited_inferences": ["Do not model rail safety-system reporting as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:0c9e33691d40b7a9e1eeb0ff",
+      "candidate_key": "event:event_switch-installation-weekend-1",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The event is a LIRR Main Line switch-installation outage.",
+      "evidence_ids": ["meeting_doc_140326#p001_c0008"],
+      "prohibited_inferences": ["Do not model rail track work as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:0daa7786479d952159ba1019",
+      "candidate_key": "event:event_military-benefits-policy-effective",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "An all-agency military-benefits personnel policy became effective June 16, 2025.",
+      "evidence_ids": ["meeting_doc_176446#p022_c0003", "meeting_doc_176446#p022_c0005", "meeting_doc_176446#p029_c0010"],
+      "prohibited_inferences": ["Do not model an employment policy as a transit operational occurrence."]
+    },
+    {
+      "candidate_id": "candidate:0e0fdb1e134a59172adcfead",
+      "candidate_key": "event:event_meeting-doc-189776-commencement",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "A WZSE program was anticipated to commence in the second quarter of 2026 if approved.",
+      "evidence_ids": ["meeting_doc_189776#p002_c0004"],
+      "prohibited_inferences": ["Do not convert a conditional work-zone enforcement program commencement into bus route incidence."]
+    },
+    {
+      "candidate_id": "candidate:11afffa56d57d2c1e65034a1",
+      "candidate_key": "event:event_r211t-g-line-launch-mar2025",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Two R211T open-gangway subway cars entered G-line service in March 2025.",
+      "evidence_ids": ["meeting_doc_167241#p004_c0011"],
+      "prohibited_inferences": ["Do not model subway rolling-stock deployment as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:11f6d62632ff964a8c0cdb2f",
+      "candidate_key": "event:event_prowfm-go-live-186841",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "A workforce-management software go-live was planned for the end of 2025.",
+      "evidence_ids": ["meeting_doc_186841#p005_c0007"],
+      "prohibited_inferences": ["Do not model an internal software deployment as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:12dc00afc2c7bd3ce48b256e",
+      "candidate_key": "event:event_mets-willets-pt-permanent",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Mets-Willets Point became a permanent LIRR station stop April 7, 2023.",
+      "evidence_ids": ["meeting_doc_111766#p005_c0002"],
+      "prohibited_inferences": ["Do not model rail service as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:1582bab1965c2510479a2d0e",
+      "candidate_key": "event:event_rrs-proof-of-concept-2024",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "A toll-violation revenue-recovery proof of concept completed in 2024.",
+      "evidence_ids": ["meeting_doc_179626#p007_c0009"],
+      "prohibited_inferences": ["Do not infer bus incidence from toll-violation enforcement."]
+    },
+    {
+      "candidate_id": "candidate:158f53b77412f8bf49123788",
+      "candidate_key": "event:event_meeting-doc-115576-metrics-launch",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The metrics.mta.info website launched in September 2022.",
+      "evidence_ids": ["meeting_doc_115576#p012_c0003"],
+      "prohibited_inferences": ["Do not model a public website launch as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:164cfac666b7c15b0dc4ec98",
+      "candidate_key": "event:event_meeting-doc-86471-10-bus-pilot",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "A leased ten-electric-bus pilot operated during 2019–2021.",
+      "evidence_ids": ["meeting_doc_86471#p003_c0003"],
+      "prohibited_inferences": ["Do not infer route assignment or route-treatment incidence from a fleet count."]
+    },
+    {
+      "candidate_id": "candidate:16e9dd13d29e402179339ddd",
+      "candidate_key": "event:event_van-wyck-oct5-6-2024",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The event is LIRR track work associated with Van Wyck bridge widening.",
+      "evidence_ids": ["meeting_doc_151821#p001_c0007"],
+      "prohibited_inferences": ["Do not model rail track work as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:174e7948a1dbe70dcb793476",
+      "candidate_key": "event:event_meeting-doc-124251-schedule-change-oct29",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The event is a rail timetable change on October 29, 2023.",
+      "evidence_ids": ["meeting_doc_124251#p001_c0009"],
+      "prohibited_inferences": ["Do not model a rail timetable as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:18e683d144ba97d9bf311287",
+      "candidate_key": "event:event_meeting-doc-164866-weekend-switch-signal-mar15",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The event is weekend rail switch and signal work.",
+      "evidence_ids": ["meeting_doc_164866#p002_c0006"],
+      "prohibited_inferences": ["Do not model rail infrastructure work as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:190974e61d8fe948587783af",
+      "candidate_key": "event:event_meeting128861-heritage-wrap-series-locomotive",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "A Metro-North heritage-wrap locomotive debuted November 14, 2023.",
+      "evidence_ids": ["meeting_doc_128861#p007_c0003"],
+      "prohibited_inferences": ["Do not model rail rolling-stock branding as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:19add4fc24d973bbeb99ce6f",
+      "candidate_key": "event:event_lirr-ptc-full-operations",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR reported full Positive Train Control operation across its territory.",
+      "evidence_ids": ["meeting_doc_98256#p002_c0004"],
+      "prohibited_inferences": ["Do not model rail safety-system operation as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:1aa07d05242c6d0e9fca12b0",
+      "candidate_key": "event:event_170921-queens-bus-phase1-launch",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "Queens Bus Network Redesign Phase 1 was scheduled for June 29, 2025.",
+      "evidence_ids": ["meeting_doc_170921#p011_c0010"],
+      "prohibited_inferences": ["Do not infer any route-treatment application from a phase date and project-level route-change summary; do not create a plural-route by plural-treatment cross-product."]
+    },
+    {
+      "candidate_id": "candidate:1ab1d644f895ad6d1c77e1ea",
+      "candidate_key": "event:event_omny-fare-capping-effective",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "NYC Transit OMNY weekly fare capping became effective on a source-stated February 28.",
+      "evidence_ids": ["meeting_doc_68641#p003_c0002"],
+      "prohibited_inferences": ["Do not infer a year or enumerate bus routes from a network-level fare policy."]
+    },
+    {
+      "candidate_id": "candidate:1ab95c539448effd454dc26a",
+      "candidate_key": "event:event_meeting-doc-193996-additional-stations-jan2026",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The event concerns fare-evasion hardware installation at additional subway stations.",
+      "evidence_ids": ["meeting_doc_193996#p009_c0007"],
+      "prohibited_inferences": ["Do not model subway-station hardware as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:1d116b046fab2bb499e48634",
+      "candidate_key": "event:event_omny-vending-machines-oct30-2023",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The first OMNY vending machines entered service at a subway station October 30, 2023.",
+      "evidence_ids": ["meeting_doc_127471#p002_c0001"],
+      "prohibited_inferences": ["Do not model subway-station vending equipment as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:1d853d261e66273af25a287a",
+      "candidate_key": "event:event_great-neck-signal-cutover-commissioning",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Great Neck rail signals were cut over and commissioned December 2, 2022.",
+      "evidence_ids": ["meeting_doc_127536#p006_c0004"],
+      "prohibited_inferences": ["Do not model rail signal commissioning as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:1f7ee2168fd31d32bf235620",
+      "candidate_key": "event:event_meeting-doc-140676-insystem-testing",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The event concerns in-system testing of fare gates.",
+      "evidence_ids": ["meeting_doc_140676#p012_c0005"],
+      "prohibited_inferences": ["Do not model subway fare-gate testing as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:2070a061936cef5eaf339ec5",
+      "candidate_key": "event:event_meeting-doc-115396-aug2023-implementation",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "A new bridge-and-tunnel crossing-charge schedule was conditionally planned for August 2023.",
+      "evidence_ids": ["meeting_doc_115396#p016_c0003", "meeting_doc_115396#p018_c0007"],
+      "prohibited_inferences": ["Do not infer bus treatment incidence from toll policy."]
+    },
+    {
+      "candidate_id": "candidate:20b827736931b89691318f7e",
+      "candidate_key": "event:event_meeting-doc-121101-lirr-mnr-ptc-update-oct2023",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The source records an October 2023 LIRR/Metro-North PTC update.",
+      "evidence_ids": ["meeting_doc_121101#p003_c0021"],
+      "prohibited_inferences": ["Do not model rail safety-system reporting as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:20d6dfaecc02c9081adb5cb9",
+      "candidate_key": "event:event_mount-vernon-bridge-replacement",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Metro-North began replacing two road-bridge superstructures over New Haven Line tracks.",
+      "evidence_ids": ["meeting_doc_127506#p028_c0004"],
+      "prohibited_inferences": ["Do not model rail-adjacent bridge construction as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:20d789a31e4e418a445249b4",
+      "candidate_key": "event:event_166956-yankee-stadium-service-2025",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Metro-North planned special Yankee Stadium rail service beginning March 27, 2025.",
+      "evidence_ids": ["meeting_doc_166956#p003_c0006"],
+      "prohibited_inferences": ["Do not model rail event service as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:2462b7edfb882cea3ece7602",
+      "candidate_key": "event:event_new-years-day-service-2023",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR operated a New Year's Day rail-service program.",
+      "evidence_ids": ["meeting_doc_102751#p002_c0001", "meeting_doc_102751#p002_c0002"],
+      "prohibited_inferences": ["Do not model a rail holiday schedule as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:24f40715ec0b40da406c8714",
+      "candidate_key": "event:event_meeting-doc-124201-lirr-fleetwide-obc-2024",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The event concerns fleetwide LIRR onboard-computer software deployment.",
+      "evidence_ids": ["meeting_doc_124201#p003_c0006"],
+      "prohibited_inferences": ["Do not model rail onboard software as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:277368514a72be62a3715aa1",
+      "candidate_key": "event:event_employee-vaccination-site-feb24-2021",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "An employee vaccination site opened February 24, 2021.",
+      "evidence_ids": ["meeting_doc_33236#p001_c0019"],
+      "prohibited_inferences": ["Do not model an employee health facility as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:2858bb5b77047d46d606e372",
+      "candidate_key": "event:event_qbnr-implementation-2025",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The Queens Bus Network Redesign was implemented in two phases during summer 2025.",
+      "evidence_ids": ["meeting_doc_199241#p010_c0003", "meeting_doc_199241#p010_c0004"],
+      "prohibited_inferences": ["Do not infer route-by-route service-pattern incidence from an aggregate program retrospective; do not manufacture a route-treatment cross-product."]
+    },
+    {
+      "candidate_id": "candidate:2896fc43ecd24c276d835925",
+      "candidate_key": "event:event_meeting-doc-160121-christmas-eve",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The source describes a Christmas Eve rail service program.",
+      "evidence_ids": ["meeting_doc_160121#p001_c0007"],
+      "prohibited_inferences": ["Do not translate a rail holiday schedule into a bus occurrence."]
+    }
+  ],
+  "terminal_disposition_counts": {
+    "published": 0,
+    "duplicate_alias": 1,
+    "insufficient_evidence": 8,
+    "outside_domain": 34,
+    "rejected": 0,
+    "schema_blocked": 0,
+    "total": 43
+  },
+  "preterminal_observation_conformance": {
+    "unsupported_record_count": 61,
+    "not_episode_evidence_count": 4,
+    "count": 65,
+    "ordered_partition_sha256": "d6eaef85abbed36a4ddc6b0936f9b27f3501c26e82eccf8951f250b93163534b",
+    "status": "pass_no_semantic_write",
+    "rule": "These manifest observations were already terminal in the frozen observation ledger and are not candidate decisions."
+  },
+  "evidence_binding_source": {
+    "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+    "candidate_ledger_sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2",
+    "rule": "Each finding is restricted to its frozen candidate evidence plus immutable accepted occurrence evidence when an explicit duplicate alias is recommended."
+  },
+  "integration_authorization": "await_independent_review_and_deterministic_reconciliation"
+}

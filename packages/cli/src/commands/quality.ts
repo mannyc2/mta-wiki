@@ -18,14 +18,22 @@ import {
   buildOperationalEpisodeFrontier,
   checkOperationalEpisodeFrontier,
   loadOperationalEpisodeCandidateDecisions,
+  loadPlan052OperationalEpisodeFrozenDenominator,
   writeOperationalEpisodeFrontier,
 } from "@mta-wiki/pipeline/materialize/operational-episode-frontier";
 import {
   loadOperationalOccurrenceIdentityRegistryV2,
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-identity-operations";
 import {
+  assertOperationalProjectionRetirementsAgainstRouteIdentity,
+  loadOperationalProjectionRetirements,
+} from "@mta-wiki/pipeline/materialize/operational-projection-retirements";
+import {
   loadOperationalOccurrenceCurrentReviewDecisions,
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-resolution";
+import {
+  parseRouteIdentitySnapshotV1,
+} from "@mta-wiki/pipeline/materialize/route-identity-contract";
 import { writeBusLaneIdentityArtifacts } from "@mta-wiki/pipeline/quality/bus-lane-identity";
 import { writeMemberExtentLedgerArtifacts } from "@mta-wiki/pipeline/quality/member-extent-ledger";
 import { runStudyFrontierPreflight } from "@mta-wiki/pipeline/quality/study-frontier-preflight";
@@ -153,6 +161,21 @@ const operationalEpisodeFrontier: CommandHandler = () => {
   }
   const records = readCanonicalRecordsFromDbFile(join(repoRoot, "data", "canonical.db"));
   if (!records) throw new Error("operational-episode-frontier requires a readable data/canonical.db");
+  const projectionRetirements = loadOperationalProjectionRetirements(repoRoot);
+  assertOperationalProjectionRetirementsAgainstRouteIdentity(
+    projectionRetirements,
+    parseRouteIdentitySnapshotV1(JSON.parse(readFileSync(
+      join(
+        repoRoot,
+        "data",
+        "exports",
+        "releases",
+        "v1-rc28",
+        "route_identity_snapshot.json",
+      ),
+      "utf8",
+    )) as unknown),
+  );
   const frontier = buildOperationalEpisodeFrontier({
     canonical_records: records,
     accepted_mappings: loadOperationalEpisodeAcceptedMappings(
@@ -163,6 +186,8 @@ const operationalEpisodeFrontier: CommandHandler = () => {
     ),
     identity_registry: loadOperationalOccurrenceIdentityRegistryV2(repoRoot),
     review_decisions: loadOperationalOccurrenceCurrentReviewDecisions(),
+    projection_retirements: projectionRetirements,
+    frozen_denominator: loadPlan052OperationalEpisodeFrozenDenominator(repoRoot)!,
     completeness_profile: profile,
   });
   const checkDir = optionValue(process.argv, "--check");

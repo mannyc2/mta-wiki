@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-versioned-evidence-supplement-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w1-characterization",
+  "supplement_id": "w1-broadway-q70-installed-v1",
+  "supplement_version": 1,
+  "appended_at": "2026-07-30T00:00:00.000Z",
+  "authorized_by": "MTA Wiki owner (Codex source task 019faea5-b07f-7560-879f-7476152764ff)",
+  "authorization_scope": "Use the already-canonical, already-local NYC DOT current-projects evidence only to adjudicate candidate:089c5dca117ab12f156ec032. This receipt does not amend the frozen manifest or canonical observations and authorizes no additional route inference.",
+  "manifest": {
+    "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w1-characterization.json",
+    "sha256": "b96adbd4878a5abfae2cd9523c3534239195ea876dc0877fffc5abc8a99fbe7e"
+  },
+  "candidate": {
+    "candidate_id": "candidate:089c5dca117ab12f156ec032",
+    "candidate_key": "event:event_broadway-center-running-bus-lane-installation-confirmed",
+    "frozen_candidate_row_sha256": "8a91db8934aa9f9d7d9a8ab876c5ac76af9fe420fb3c6994b49e5046eb140be9",
+    "frozen_observation_row_sha256": "2f46c7fe966a41d2679d83fcee218e433a95485498d2186d83667121ec324235"
+  },
+  "supplemented_source": {
+    "source_id": "nyc_dot_current_projects_july_2026",
+    "source_file": {
+      "path": "wiki/sources/nyc_dot_current_projects_july_2026.md",
+      "bytes": 160980,
+      "sha256": "025510709da50bced4144e0ba224952d1eb37c8439d6fa22a00f70a01d9246d7"
+    },
+    "block": {
+      "block_id": "p001_b0631",
+      "evidence_id": "nyc_dot_current_projects_july_2026#p001_b0631",
+      "text_bytes": 435,
+      "text_sha256": "ba1026d7e34c7d25733c60ffe77287249bd0a9f7ea1ebb79ccad274115142166",
+      "text": "NYC DOT, in coordination with the MTA and the Port Authority of New York and New Jersey, recently installed an eastbound center-running bus lane on Broadway in Queens between 69th Street and Roosevelt Avenue. The bus lane will speed up bus service for approximately 9,000 daily riders on the Q70 SBS and provide improved transportation from LaGuardia Airport to the Jackson Heights – Roosevelt Avenue subway station and bus terminal."
+    }
+  },
+  "original_source": {
+    "source_id": "nyc_mayor_broadway_created_june_2026",
+    "source_file": {
+      "path": "wiki/sources/nyc_mayor_broadway_created_june_2026.md",
+      "bytes": 27571,
+      "sha256": "391fe9086b77032c1437310b08158e0b9ab845e056a61675ef1a8829bafbc84a"
+    },
+    "block": {
+      "block_id": "p001_b0114",
+      "evidence_id": "nyc_mayor_broadway_created_june_2026#p001_b0114",
+      "text_bytes": 120,
+      "text_sha256": "740dee6d1b381c8c2611ddba3c14e47b5a7c9f487b3a30684db48225b5cd6de3",
+      "text": "Created a new dedicated, center-running eastbound bus lane on Broadway in Queens to improve travel to LaGuardia Airport."
+    },
+    "publication_date": "2026-06-10"
+  },
+  "canonical_join": {
+    "project": {
+      "path": "data/canonical/projects.jsonl",
+      "record_id": "project_broadway-bus-priority-2026",
+      "row_sha256": "581ccad925979c0a4829adcdaf8709b3d3a23a5da0be3146b03445321f0e3987"
+    },
+    "route": {
+      "path": "data/canonical/routes.jsonl",
+      "record_id": "route_q70-sbs",
+      "gtfs_route_id": "Q70+",
+      "row_sha256": "a3edb772c6c21e255d47e3a3839f9e3068e59cdac9a2afae6f7cdb6192d0a67e"
+    },
+    "treatment": {
+      "path": "data/canonical/treatment_components.jsonl",
+      "record_id": "treatment_broadway-center-running-bus-lane",
+      "row_sha256": "3b0e61573bfb3333fd8502cd3184bb0fbe246bd745553f554cadd32ae9b7d5d0"
+    },
+    "relations": [
+      {
+        "path": "data/canonical/relations.jsonl",
+        "record_id": "relation_broadway-delivered-serves-q70-as-of-2026-07-13",
+        "row_sha256": "1a7cfaff0d98532dad8c4e2710ee3e26aab566663ab6f1955d96ffd9aa9732b8"
+      },
+      {
+        "path": "data/canonical/relations.jsonl",
+        "record_id": "relation_broadway-has-delivered-center-running-lane-as-of-2026-07-13",
+        "row_sha256": "f0b4ef3db9a875ca424508015e92a1429f07feddfb9fa907d771518fdf6a0cd1"
+      },
+      {
+        "path": "data/canonical/relations.jsonl",
+        "record_id": "relation_q70-uses-broadway-center-running-lane-as-of-2026-07-13",
+        "row_sha256": "806fdaaccdeb1901ccc9a934a7fc54704916831d95d7a02106425d799fc3285b"
+      }
+    ],
+    "bounded_corridor": {
+      "record_id": "corridor_broadway-queens",
+      "description": "Broadway in Queens between 69th Street and Roosevelt Avenue"
+    }
+  },
+  "authorized_semantic_limit": {
+    "route_record_ids": [
+      "route_q70-sbs"
+    ],
+    "gtfs_route_ids": [
+      "Q70+"
+    ],
+    "treatment_record_ids": [
+      "treatment_broadway-center-running-bus-lane"
+    ],
+    "physical_scope_record_ids": [
+      "corridor_broadway-queens"
+    ],
+    "installed_by": "2026-06-10",
+    "exact_onset": null,
+    "additional_route_inference_forbidden": true
+  },
+  "new_external_source_acquired": false,
+  "canonical_observations_changed": false,
+  "frozen_manifest_changed": false
+}

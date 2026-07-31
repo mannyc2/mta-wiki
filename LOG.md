@@ -4,6 +4,26 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-07-30
+
+### Complete operational episode frontier
+
+- Closed the frozen 1,366-observation / 766-candidate frontier through 20
+  content-addressed, independently reviewed batch manifests: 157 published,
+  116 duplicate aliases, 183 insufficient-evidence dispositions, 281
+  outside-domain dispositions, 25 rejected, four projection-retired, zero
+  pending, and zero invalid. All active identities resolve and the profile is
+  `complete`; canonical documentary observations remain unchanged.
+- The resolved operator projection now contains 157 episodes and 343 exact
+  applications; the public-key registry has 577/577 live keys and public
+  display has 157 episodes across 170 routes. Provider usage and cost were
+  zero. No release, `LATEST`, publication, downstream pin, deployment, push,
+  or merge was performed.
+- Regeneration exposed 1,773 downstream placement candidates, 17 more than the
+  prior scaffold because of the newly admitted applications. All remain
+  pending for the separately owner-gated Plan 054; Plan 052 established no
+  placement or lifecycle truth.
+
 ## 2026-07-29
 
 ### Evolvable occurrence resolution and public-key continuity

@@ -1,4 +1,4 @@
-export const RESOLVED_TRANSIT_DB_VERSION = 2;
+export const RESOLVED_TRANSIT_DB_VERSION = 4;
 
 export const RESOLVED_TRANSIT_DDL = `
 PRAGMA foreign_keys = ON;
@@ -14,7 +14,9 @@ CREATE TABLE resolved_transit_state (
 CREATE TABLE resolved_intervention_episodes (
   occurrence_id TEXT PRIMARY KEY,
   onset_date TEXT NOT NULL,
-  onset_precision TEXT NOT NULL CHECK (onset_precision IN ('day', 'month')),
+  onset_precision TEXT NOT NULL CHECK (
+    onset_precision IN ('day', 'month', 'year', 'season', 'upper_bound_day')
+  ),
   review_decision_id TEXT NOT NULL,
   review_membership_fingerprint TEXT NOT NULL,
   resolution_method TEXT NOT NULL CHECK (resolution_method IN ('accepted_review', 'lossless_v1_migration')),
@@ -55,7 +57,7 @@ CREATE TABLE resolved_intervention_application_reconciliation (
 CREATE TABLE resolved_intervention_identity_reconciliation (
   reconciliation_id TEXT PRIMARY KEY,
   occurrence_id TEXT NOT NULL UNIQUE,
-  disposition TEXT NOT NULL CHECK (disposition = 'pending_review'),
+  disposition TEXT NOT NULL CHECK (disposition IN ('pending_review', 'projection_retired')),
   reason_code TEXT NOT NULL,
   row_json TEXT NOT NULL CHECK (json_valid(row_json))
 ) STRICT;

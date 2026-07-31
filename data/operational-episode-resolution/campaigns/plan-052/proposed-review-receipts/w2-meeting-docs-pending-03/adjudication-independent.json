@@ -1,0 +1,1283 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w2-meeting-docs-pending-03",
+  "review_role": "independent_adjudication",
+  "reviewer": "plan-052-meeting03-blind-adjudicator",
+  "created_at": "2026-07-31T00:30:16Z",
+  "review_complete": true,
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-03.json",
+  "manifest_sha256": "01f6e5f06360ede94fc64bafa074206b31d23960fbe66056c884a6b5182397da",
+  "manifest_bytes": 24135,
+  "frozen_inputs": {
+    "manifest_contract_id": "plan-052-operational-episode-batch-manifest-v1",
+    "source_family": "meeting_documents",
+    "wave": 2,
+    "execution_order": 12,
+    "cohort_hashes": {
+      "adapter_input_sha256": "1cad87d850b90287ae896dd82d49c46947d04f7c55b516948258a30a5e0e8cfc",
+      "candidate_input_sha256": "c5cd3c4d5ab552ba15c8e9090ce751060e6bf22d6ee1789ed42f8c61a339a53b",
+      "candidate_membership_sha256": "cdcdf5f4ed5cdab79e43ed99eee62c1729e1a67e3c7724689b9882e2cff10bed",
+      "evidence_input_sha256": "059c504dd10e275807e833c8e03641d27b3c1b50b288341a272137f6d3139c5e",
+      "observation_membership_sha256": "d9906bceb7b95c2704d012fd34826eb6b94de539d935fc14086ac9909d008ff0"
+    },
+    "immutable_starting_provenance": {
+      "adapter_fingerprint": "de51c8db4353cc8774d4c55bea3fcba8103ecdee3a38898b85b61733eccf07b9",
+      "cohort_fingerprint": "94dfd16c1c57362b220fb8ce53b8325e6ca166c1e697d9001da8b66f6483e373",
+      "commit_sha": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+      "corpus_fingerprint": "318cee05f0c7288fd28084df44b6b036f0607ffdfb76b3d6c6fcd14118f479c5",
+      "decision_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "frontier_artifacts": [
+        {
+          "bytes": 860230,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+          "sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2"
+        },
+        {
+          "bytes": 720438,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/cohort.json",
+          "sha256": "59e4c2fbdb389255442c00ac06204b6798fed64742d80489441cd5524a912a61"
+        },
+        {
+          "bytes": 1374322,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/observation_ledger.jsonl",
+          "sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f"
+        },
+        {
+          "bytes": 21408,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/summary.json",
+          "sha256": "4baf594cea14431b2f2c125c19c554755ecf167be6b81f399152873a5cd35545"
+        }
+      ],
+      "identity_fingerprint": "6827adf67650c81fa38d30b1dfbaf6be5282a45491b058b3ed44167aa287d26e",
+      "review_fingerprint": "3989ac8637527e5862f18b7a6c4f7f2699078eb992a2675b16a23af525fd1d24"
+    },
+    "targeted_candidate_ids": [
+      "candidate:46c2b0179c09b1f94716d1f1",
+      "candidate:4afeb71d220c5c1f6a5bcc38",
+      "candidate:4dec7cf924524aed2c281e55",
+      "candidate:53576ae4e784581f906a2596",
+      "candidate:545be0b6c15212ed9f6dd273",
+      "candidate:55291cdf68954f24514eecdc",
+      "candidate:6289d1d9a428377cf0bd164f",
+      "candidate:636fe89200635b52a5b4458e",
+      "candidate:6b790cae9335492681da1427",
+      "candidate:6f2f311e4cca8011eca80c32"
+    ],
+    "targeted_candidate_keys": [
+      "event:event_cp-goes-live-jan5-2025",
+      "event:event_meeting-doc-180056-cbdtp",
+      "event:event_lirr-full-gcm-service-feb2023",
+      "event:event_meeting174221-cbdtp-tolling-start",
+      "event:event_may-2023-lirr-mnr-ptc-update",
+      "event:event_sim4x-sim8x-jan2019-stop-added",
+      "event:event_m15-sbs-ace-launch-oct2019",
+      "event:event_meeting-doc-127701-penn-access-commencement",
+      "event:event_meeting-doc-86471-470-electric-buses",
+      "event:event_q98v-b98v-launch-mar1-2021"
+    ],
+    "targeted_observation_event_record_ids": [
+      "event_cp-goes-live-jan5-2025",
+      "event_meeting-doc-180056-cbdtp",
+      "event_lirr-full-gcm-service-feb2023",
+      "event_meeting174221-cbdtp-tolling-start",
+      "event_may-2023-lirr-mnr-ptc-update",
+      "event_sim4x-sim8x-jan2019-stop-added",
+      "event_m15-sbs-ace-launch-oct2019",
+      "event_meeting-doc-127701-penn-access-commencement",
+      "event_meeting-doc-86471-470-electric-buses",
+      "event_q98v-b98v-launch-mar1-2021"
+    ],
+    "targeted_evidence_source_pins": [
+      {
+        "bytes": 12335,
+        "path": "wiki/sources/meeting_doc_111771.md",
+        "sha256": "02a8067b846d54a0cbccdb2ec8225eec5740f7893d3e9a5198e7d6f43064a73e"
+      },
+      {
+        "bytes": 59840,
+        "path": "wiki/sources/meeting_doc_127701.md",
+        "sha256": "54d18385ba7c29ff346c89094d4c76d38fe8570d929fc22ac225a50de7cb50d1"
+      },
+      {
+        "bytes": 506772,
+        "path": "wiki/sources/meeting_doc_131666.md",
+        "sha256": "f0dadd34b128a7bf9a75dbc04ba9bfa1af55cdb555be6f2cfe39bc9d0164e5a6"
+      },
+      {
+        "bytes": 24372,
+        "path": "wiki/sources/meeting_doc_160966.md",
+        "sha256": "eaf977244c3442f6eb2827df46e278991cd2e95d65ee34adbe1c38af2ad6254e"
+      },
+      {
+        "bytes": 136347,
+        "path": "wiki/sources/meeting_doc_174221.md",
+        "sha256": "f8e364f6f9afa267879db547d78ca51b5915b22d4d46a93409115d5111b9fd20"
+      },
+      {
+        "bytes": 13011,
+        "path": "wiki/sources/meeting_doc_176441.md",
+        "sha256": "2388c0d27f79eaa0172ee3b228ac72f83a68fd52d08a12bb917800a2d74ec0ee"
+      },
+      {
+        "bytes": 930024,
+        "path": "wiki/sources/meeting_doc_180056.md",
+        "sha256": "ba46cd4375dc5636eaea9b8ed2f644a475b3fe24a0365cedd11dc2e5d85a0b90"
+      },
+      {
+        "bytes": 72240,
+        "path": "wiki/sources/meeting_doc_201621.md",
+        "sha256": "cb91b4b3e4bbb68ab653054e8c372de9eabf4d50e2b2b0ec9a802bd53703cbba"
+      },
+      {
+        "bytes": 276133,
+        "path": "wiki/sources/meeting_doc_33236.md",
+        "sha256": "b7dd8cdc1b8fb18c7ef3cd22c74359f180bb5ba627d8c478db8f74eed973b823"
+      },
+      {
+        "bytes": 8958,
+        "path": "wiki/sources/meeting_doc_86471.md",
+        "sha256": "a4c94e403b06435b4691d7cdf5b2c4de84f9a592c680603bf53bbff09dac4473"
+      }
+    ],
+    "adjudication_scope": {
+      "candidate_count": 10,
+      "observation_count": 10,
+      "subset_of_manifest": true
+    }
+  },
+  "provider_usage": {
+    "provider_calls": 0,
+    "model_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "findings": {
+    "candidate_findings": [
+      {
+        "candidate_id": "candidate:46c2b0179c09b1f94716d1f1",
+        "candidate_key": "event:event_cp-goes-live-jan5-2025",
+        "recommended_disposition": "duplicate_alias",
+        "target": {
+          "canonical_candidate_id": "candidate:53576ae4e784581f906a2596",
+          "published_occurrence_id": null
+        },
+        "assessment": "The announcement that CBD tolling would go live January 5, 2025 is an earlier representation of the same commencement retrospectively recorded by the May 2025 source.",
+        "known_facts": [
+          "The source announced a January 5, 2025 CBD tolling start."
+        ],
+        "evidence_gaps": [
+          "This source is prospective, while the canonical target supplies retrospective confirmation."
+        ],
+        "prohibited_inferences": [
+          "Do not count the announcement and retrospective report as two starts."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_160966#p010_c0002",
+            "record_id": "event_cp-goes-live-jan5-2025",
+            "source_id": "meeting_doc_160966"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_cp-goes-live-jan5-2025",
+          "date_text": "Midnight on Sunday, January 5, 2025",
+          "date_normalized": "2025-01-05",
+          "date_precision": "day",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_160966"
+          ],
+          "relation_record_ids": [
+            "relation_rel-crz-launch-event"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": []
+      },
+      {
+        "candidate_id": "candidate:4afeb71d220c5c1f6a5bcc38",
+        "candidate_key": "event:event_meeting-doc-180056-cbdtp",
+        "recommended_disposition": "duplicate_alias",
+        "target": {
+          "canonical_candidate_id": "candidate:53576ae4e784581f906a2596",
+          "published_occurrence_id": null
+        },
+        "assessment": "The July 2025 financial-plan reference to toll collection commencing in January 2025 is a month-precision representation of the same CBD tolling start.",
+        "known_facts": [
+          "The source retrospectively states that CBD toll collection commenced in January 2025."
+        ],
+        "evidence_gaps": [
+          "This representation is less temporally precise than the January 5 retrospective target."
+        ],
+        "prohibited_inferences": [
+          "Do not count different retrospective descriptions of one tolling commencement as separate occurrences."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_180056#p016_c0007",
+            "record_id": "event_meeting-doc-180056-cbdtp",
+            "source_id": "meeting_doc_180056"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_meeting-doc-180056-cbdtp",
+          "date_text": "January 2025",
+          "date_normalized": "2025-01",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_180056"
+          ],
+          "relation_record_ids": [
+            "relation_meeting-doc-180056-mta-cbdtp"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": []
+      },
+      {
+        "candidate_id": "candidate:4dec7cf924524aed2c281e55",
+        "candidate_key": "event:event_lirr-full-gcm-service-feb2023",
+        "recommended_disposition": "insufficient_evidence",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "The source retrospectively establishes full LIRR service at Grand Central Madison in February 2023, but describes an aggregate service expansion rather than exhaustive line-by-treatment incidence.",
+        "known_facts": [
+          "Full LIRR service at Grand Central Madison began in February 2023.",
+          "The source describes an aggregate service increase."
+        ],
+        "evidence_gaps": [
+          "No exhaustive rail-line incidence set or exact treatment application is stated."
+        ],
+        "prohibited_inferences": [
+          "Do not decompose an aggregate rail-service statement into inferred line applications."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_131666#p016_c0008",
+            "record_id": "event_lirr-full-gcm-service-feb2023",
+            "source_id": "meeting_doc_131666"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_lirr-full-gcm-service-feb2023",
+          "date_text": "February 2023",
+          "date_normalized": "2023-02",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_131666"
+          ],
+          "relation_record_ids": [
+            "relation_mta-lirr-gcm-event"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": [
+          "meeting03-blocker-aggregate-rail-service-incidence"
+        ]
+      },
+      {
+        "candidate_id": "candidate:53576ae4e784581f906a2596",
+        "candidate_key": "event:event_meeting174221-cbdtp-tolling-start",
+        "recommended_disposition": "outside_domain",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "The source retrospectively establishes the January 5, 2025 CBD tolling start, but toll-policy commencement is outside the route-by-treatment operational product domain.",
+        "known_facts": [
+          "CBD toll collection began January 5, 2025 and had been operating for nearly four months by the source date."
+        ],
+        "evidence_gaps": [
+          "No route-treatment application is applicable to this toll-policy event."
+        ],
+        "prohibited_inferences": [
+          "Do not remodel a toll-policy start as transit route-treatment incidence."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_174221#p070_c0002",
+            "record_id": "event_meeting174221-cbdtp-tolling-start",
+            "source_id": "meeting_doc_174221"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_meeting174221-cbdtp-tolling-start",
+          "date_text": "January 5, 2025",
+          "date_normalized": "2025-01-05",
+          "date_precision": "day",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_174221"
+          ],
+          "relation_record_ids": [
+            "relation_meeting174221-cbdtp-timeline-launch"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": []
+      },
+      {
+        "candidate_id": "candidate:545be0b6c15212ed9f6dd273",
+        "candidate_key": "event:event_may-2023-lirr-mnr-ptc-update",
+        "recommended_disposition": "outside_domain",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "The record is a committee agenda/update concerning PTC, including retrospective system status, rather than a route-treatment operational onset.",
+        "known_facts": [
+          "The agenda concerns a May 2023 LIRR/MNR PTC update.",
+          "The source notes full PTC functionality in December 2020."
+        ],
+        "evidence_gaps": [
+          "No route-treatment application is applicable to this governance/update record."
+        ],
+        "prohibited_inferences": [
+          "Do not convert a committee update or system-safety milestone into route-treatment incidence."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_111771#p001_c0008",
+            "record_id": "event_may-2023-lirr-mnr-ptc-update",
+            "source_id": "meeting_doc_111771"
+          },
+          {
+            "evidence_id": "meeting_doc_111771#p003_c0016",
+            "record_id": "event_may-2023-lirr-mnr-ptc-update",
+            "source_id": "meeting_doc_111771"
+          },
+          {
+            "evidence_id": "meeting_doc_111771#p003_c0017",
+            "record_id": "event_may-2023-lirr-mnr-ptc-update",
+            "source_id": "meeting_doc_111771"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_may-2023-lirr-mnr-ptc-update",
+          "date_text": "May 2023",
+          "date_normalized": "2023-05",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_111771"
+          ],
+          "relation_record_ids": [
+            "relation_ptc-project-may2023-event"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": []
+      },
+      {
+        "candidate_id": "candidate:55291cdf68954f24514eecdc",
+        "candidate_key": "event:event_sim4x-sim8x-jan2019-stop-added",
+        "recommended_disposition": "insufficient_evidence",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "The source retrospectively states that one SIM4X/SIM8X stop was added in each direction in January 2019, but the frozen data lacks an exact treatment component and stable historical route application surface.",
+        "known_facts": [
+          "In January 2019, one stop was added in each direction for SIM4X/SIM8X near the first/last stops."
+        ],
+        "evidence_gaps": [
+          "No exact candidate-bound treatment component exists.",
+          "The historical route identities lack the application identifiers required for publication."
+        ],
+        "prohibited_inferences": [
+          "Do not invent a treatment record or map historical route labels to current identifiers by assumption."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_176441#p002_c0010",
+            "record_id": "event_sim4x-sim8x-jan2019-stop-added",
+            "source_id": "meeting_doc_176441"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_sim4x-sim8x-jan2019-stop-added",
+          "date_text": "January 2019",
+          "date_normalized": "2019-01",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_176441"
+          ],
+          "relation_record_ids": [
+            "relation_project-has-event-jan2019-stop"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": [
+          "meeting03-blocker-historical-route-treatment-surface"
+        ]
+      },
+      {
+        "candidate_id": "candidate:6289d1d9a428377cf0bd164f",
+        "candidate_key": "event:event_m15-sbs-ace-launch-oct2019",
+        "recommended_disposition": "insufficient_evidence",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "The source retrospectively identifies M15 SBS as the first ACE enforcement route launched in October 2019, but the frozen route and treatment records do not provide an exact candidate-bound publishable application.",
+        "known_facts": [
+          "M15 SBS was the first ACE enforcement route and launched in October 2019."
+        ],
+        "evidence_gaps": [
+          "The source event has no exact candidate-bound treatment component.",
+          "The frozen route identity does not expose a publication-safe GTFS route identifier."
+        ],
+        "prohibited_inferences": [
+          "Do not borrow a generic ACE treatment from another source or infer a GTFS mapping."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_201621#p029_c0006",
+            "record_id": "event_m15-sbs-ace-launch-oct2019",
+            "source_id": "meeting_doc_201621"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_m15-sbs-ace-launch-oct2019",
+          "date_text": "October 2019",
+          "date_normalized": "2019-10",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_201621"
+          ],
+          "relation_record_ids": [
+            "relation_rel-ace-has-event-m15-launch"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": [
+          "meeting03-blocker-m15-ace-encoding"
+        ]
+      },
+      {
+        "candidate_id": "candidate:636fe89200635b52a5b4458e",
+        "candidate_key": "event:event_meeting-doc-127701-penn-access-commencement",
+        "recommended_disposition": "rejected",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "The source schedules Penn Station Access service commencement for November 2027; it is prospective.",
+        "known_facts": [
+          "Service commencement was scheduled for November 2027."
+        ],
+        "evidence_gaps": [
+          "No cited evidence establishes delivery."
+        ],
+        "prohibited_inferences": [
+          "Do not publish a scheduled future service start."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_127701#p027_c0005",
+            "record_id": "event_meeting-doc-127701-penn-access-commencement",
+            "source_id": "meeting_doc_127701"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_meeting-doc-127701-penn-access-commencement",
+          "date_text": "November 2027",
+          "date_normalized": "2027-11",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_127701"
+          ],
+          "relation_record_ids": [
+            "relation_meeting-doc-127701-psa-commencement"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": []
+      },
+      {
+        "candidate_id": "candidate:6b790cae9335492681da1427",
+        "candidate_key": "event:event_meeting-doc-86471-470-electric-buses",
+        "recommended_disposition": "rejected",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "The source presents 470 electric buses in 2025–2026 as a future fleet roadmap, not delivered incidence.",
+        "known_facts": [
+          "The timeline planned 470 electric buses for 2025–2026."
+        ],
+        "evidence_gaps": [
+          "No cited evidence establishes that the planned fleet milestone occurred."
+        ],
+        "prohibited_inferences": [
+          "Do not publish a future fleet target as delivered treatment incidence."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_86471#p003_c0006",
+            "record_id": "event_meeting-doc-86471-470-electric-buses",
+            "source_id": "meeting_doc_86471"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_meeting-doc-86471-470-electric-buses",
+          "date_text": "2025-26",
+          "date_normalized": "2025-26",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_86471"
+          ],
+          "relation_record_ids": [
+            "relation_86471-zej-470-buses"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": []
+      },
+      {
+        "candidate_id": "candidate:6f2f311e4cca8011eca80c32",
+        "candidate_key": "event:event_q98v-b98v-launch-mar1-2021",
+        "recommended_disposition": "insufficient_evidence",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "The source establishes the March 1, 2021 Q98V/B98V temporary-route launch for vaccination service, but the frozen data lacks an exact treatment component and stable historical route application surface.",
+        "known_facts": [
+          "Temporary Q98V and B98V vaccination-service routes launched March 1, 2021."
+        ],
+        "evidence_gaps": [
+          "No exact candidate-bound treatment component exists.",
+          "The temporary historical routes lack publication-safe application identifiers."
+        ],
+        "prohibited_inferences": [
+          "Do not invent a treatment or map temporary routes to unrelated current route identifiers."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_33236#p040_c0005",
+            "record_id": "event_q98v-b98v-launch-mar1-2021",
+            "source_id": "meeting_doc_33236"
+          },
+          {
+            "evidence_id": "meeting_doc_33236#p041_c0003",
+            "record_id": "event_q98v-b98v-launch-mar1-2021",
+            "source_id": "meeting_doc_33236"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_q98v-b98v-launch-mar1-2021",
+          "date_text": "March 1, 2021",
+          "date_normalized": "2021-03-01",
+          "date_precision": "day",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_33236"
+          ],
+          "relation_record_ids": [
+            "relation_b98v-vaccination-program",
+            "relation_q98v-vaccination-program"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": [
+          "meeting03-blocker-historical-route-treatment-surface"
+        ]
+      }
+    ],
+    "observation_findings": [
+      {
+        "observation_event_record_id": "event_cp-goes-live-jan5-2025",
+        "candidate_id": "candidate:46c2b0179c09b1f94716d1f1",
+        "recommended_disposition": "duplicate_alias",
+        "target": {
+          "canonical_candidate_id": "candidate:53576ae4e784581f906a2596",
+          "published_occurrence_id": null
+        },
+        "assessment": "Observation adjudicated with its sole targeted candidate: The announcement that CBD tolling would go live January 5, 2025 is an earlier representation of the same commencement retrospectively recorded by the May 2025 source.",
+        "known_facts": [
+          "The source announced a January 5, 2025 CBD tolling start."
+        ],
+        "evidence_gaps": [
+          "This source is prospective, while the canonical target supplies retrospective confirmation."
+        ],
+        "prohibited_inferences": [
+          "Do not count the announcement and retrospective report as two starts."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_160966#p010_c0002",
+            "record_id": "event_cp-goes-live-jan5-2025",
+            "source_id": "meeting_doc_160966"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_cp-goes-live-jan5-2025",
+          "date_text": "Midnight on Sunday, January 5, 2025",
+          "date_normalized": "2025-01-05",
+          "date_precision": "day",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_160966"
+          ],
+          "relation_record_ids": [
+            "relation_rel-crz-launch-event"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": []
+      },
+      {
+        "observation_event_record_id": "event_meeting-doc-180056-cbdtp",
+        "candidate_id": "candidate:4afeb71d220c5c1f6a5bcc38",
+        "recommended_disposition": "duplicate_alias",
+        "target": {
+          "canonical_candidate_id": "candidate:53576ae4e784581f906a2596",
+          "published_occurrence_id": null
+        },
+        "assessment": "Observation adjudicated with its sole targeted candidate: The July 2025 financial-plan reference to toll collection commencing in January 2025 is a month-precision representation of the same CBD tolling start.",
+        "known_facts": [
+          "The source retrospectively states that CBD toll collection commenced in January 2025."
+        ],
+        "evidence_gaps": [
+          "This representation is less temporally precise than the January 5 retrospective target."
+        ],
+        "prohibited_inferences": [
+          "Do not count different retrospective descriptions of one tolling commencement as separate occurrences."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_180056#p016_c0007",
+            "record_id": "event_meeting-doc-180056-cbdtp",
+            "source_id": "meeting_doc_180056"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_meeting-doc-180056-cbdtp",
+          "date_text": "January 2025",
+          "date_normalized": "2025-01",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_180056"
+          ],
+          "relation_record_ids": [
+            "relation_meeting-doc-180056-mta-cbdtp"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": []
+      },
+      {
+        "observation_event_record_id": "event_lirr-full-gcm-service-feb2023",
+        "candidate_id": "candidate:4dec7cf924524aed2c281e55",
+        "recommended_disposition": "insufficient_evidence",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "Observation adjudicated with its sole targeted candidate: The source retrospectively establishes full LIRR service at Grand Central Madison in February 2023, but describes an aggregate service expansion rather than exhaustive line-by-treatment incidence.",
+        "known_facts": [
+          "Full LIRR service at Grand Central Madison began in February 2023.",
+          "The source describes an aggregate service increase."
+        ],
+        "evidence_gaps": [
+          "No exhaustive rail-line incidence set or exact treatment application is stated."
+        ],
+        "prohibited_inferences": [
+          "Do not decompose an aggregate rail-service statement into inferred line applications."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_131666#p016_c0008",
+            "record_id": "event_lirr-full-gcm-service-feb2023",
+            "source_id": "meeting_doc_131666"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_lirr-full-gcm-service-feb2023",
+          "date_text": "February 2023",
+          "date_normalized": "2023-02",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_131666"
+          ],
+          "relation_record_ids": [
+            "relation_mta-lirr-gcm-event"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": [
+          "meeting03-blocker-aggregate-rail-service-incidence"
+        ]
+      },
+      {
+        "observation_event_record_id": "event_meeting174221-cbdtp-tolling-start",
+        "candidate_id": "candidate:53576ae4e784581f906a2596",
+        "recommended_disposition": "outside_domain",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "Observation adjudicated with its sole targeted candidate: The source retrospectively establishes the January 5, 2025 CBD tolling start, but toll-policy commencement is outside the route-by-treatment operational product domain.",
+        "known_facts": [
+          "CBD toll collection began January 5, 2025 and had been operating for nearly four months by the source date."
+        ],
+        "evidence_gaps": [
+          "No route-treatment application is applicable to this toll-policy event."
+        ],
+        "prohibited_inferences": [
+          "Do not remodel a toll-policy start as transit route-treatment incidence."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_174221#p070_c0002",
+            "record_id": "event_meeting174221-cbdtp-tolling-start",
+            "source_id": "meeting_doc_174221"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_meeting174221-cbdtp-tolling-start",
+          "date_text": "January 5, 2025",
+          "date_normalized": "2025-01-05",
+          "date_precision": "day",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_174221"
+          ],
+          "relation_record_ids": [
+            "relation_meeting174221-cbdtp-timeline-launch"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": []
+      },
+      {
+        "observation_event_record_id": "event_may-2023-lirr-mnr-ptc-update",
+        "candidate_id": "candidate:545be0b6c15212ed9f6dd273",
+        "recommended_disposition": "outside_domain",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "Observation adjudicated with its sole targeted candidate: The record is a committee agenda/update concerning PTC, including retrospective system status, rather than a route-treatment operational onset.",
+        "known_facts": [
+          "The agenda concerns a May 2023 LIRR/MNR PTC update.",
+          "The source notes full PTC functionality in December 2020."
+        ],
+        "evidence_gaps": [
+          "No route-treatment application is applicable to this governance/update record."
+        ],
+        "prohibited_inferences": [
+          "Do not convert a committee update or system-safety milestone into route-treatment incidence."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_111771#p001_c0008",
+            "record_id": "event_may-2023-lirr-mnr-ptc-update",
+            "source_id": "meeting_doc_111771"
+          },
+          {
+            "evidence_id": "meeting_doc_111771#p003_c0016",
+            "record_id": "event_may-2023-lirr-mnr-ptc-update",
+            "source_id": "meeting_doc_111771"
+          },
+          {
+            "evidence_id": "meeting_doc_111771#p003_c0017",
+            "record_id": "event_may-2023-lirr-mnr-ptc-update",
+            "source_id": "meeting_doc_111771"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_may-2023-lirr-mnr-ptc-update",
+          "date_text": "May 2023",
+          "date_normalized": "2023-05",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_111771"
+          ],
+          "relation_record_ids": [
+            "relation_ptc-project-may2023-event"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": []
+      },
+      {
+        "observation_event_record_id": "event_sim4x-sim8x-jan2019-stop-added",
+        "candidate_id": "candidate:55291cdf68954f24514eecdc",
+        "recommended_disposition": "insufficient_evidence",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "Observation adjudicated with its sole targeted candidate: The source retrospectively states that one SIM4X/SIM8X stop was added in each direction in January 2019, but the frozen data lacks an exact treatment component and stable historical route application surface.",
+        "known_facts": [
+          "In January 2019, one stop was added in each direction for SIM4X/SIM8X near the first/last stops."
+        ],
+        "evidence_gaps": [
+          "No exact candidate-bound treatment component exists.",
+          "The historical route identities lack the application identifiers required for publication."
+        ],
+        "prohibited_inferences": [
+          "Do not invent a treatment record or map historical route labels to current identifiers by assumption."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_176441#p002_c0010",
+            "record_id": "event_sim4x-sim8x-jan2019-stop-added",
+            "source_id": "meeting_doc_176441"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_sim4x-sim8x-jan2019-stop-added",
+          "date_text": "January 2019",
+          "date_normalized": "2019-01",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_176441"
+          ],
+          "relation_record_ids": [
+            "relation_project-has-event-jan2019-stop"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": [
+          "meeting03-blocker-historical-route-treatment-surface"
+        ]
+      },
+      {
+        "observation_event_record_id": "event_m15-sbs-ace-launch-oct2019",
+        "candidate_id": "candidate:6289d1d9a428377cf0bd164f",
+        "recommended_disposition": "insufficient_evidence",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "Observation adjudicated with its sole targeted candidate: The source retrospectively identifies M15 SBS as the first ACE enforcement route launched in October 2019, but the frozen route and treatment records do not provide an exact candidate-bound publishable application.",
+        "known_facts": [
+          "M15 SBS was the first ACE enforcement route and launched in October 2019."
+        ],
+        "evidence_gaps": [
+          "The source event has no exact candidate-bound treatment component.",
+          "The frozen route identity does not expose a publication-safe GTFS route identifier."
+        ],
+        "prohibited_inferences": [
+          "Do not borrow a generic ACE treatment from another source or infer a GTFS mapping."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_201621#p029_c0006",
+            "record_id": "event_m15-sbs-ace-launch-oct2019",
+            "source_id": "meeting_doc_201621"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_m15-sbs-ace-launch-oct2019",
+          "date_text": "October 2019",
+          "date_normalized": "2019-10",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_201621"
+          ],
+          "relation_record_ids": [
+            "relation_rel-ace-has-event-m15-launch"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": [
+          "meeting03-blocker-m15-ace-encoding"
+        ]
+      },
+      {
+        "observation_event_record_id": "event_meeting-doc-127701-penn-access-commencement",
+        "candidate_id": "candidate:636fe89200635b52a5b4458e",
+        "recommended_disposition": "rejected",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "Observation adjudicated with its sole targeted candidate: The source schedules Penn Station Access service commencement for November 2027; it is prospective.",
+        "known_facts": [
+          "Service commencement was scheduled for November 2027."
+        ],
+        "evidence_gaps": [
+          "No cited evidence establishes delivery."
+        ],
+        "prohibited_inferences": [
+          "Do not publish a scheduled future service start."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_127701#p027_c0005",
+            "record_id": "event_meeting-doc-127701-penn-access-commencement",
+            "source_id": "meeting_doc_127701"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_meeting-doc-127701-penn-access-commencement",
+          "date_text": "November 2027",
+          "date_normalized": "2027-11",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_127701"
+          ],
+          "relation_record_ids": [
+            "relation_meeting-doc-127701-psa-commencement"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": []
+      },
+      {
+        "observation_event_record_id": "event_meeting-doc-86471-470-electric-buses",
+        "candidate_id": "candidate:6b790cae9335492681da1427",
+        "recommended_disposition": "rejected",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "Observation adjudicated with its sole targeted candidate: The source presents 470 electric buses in 2025–2026 as a future fleet roadmap, not delivered incidence.",
+        "known_facts": [
+          "The timeline planned 470 electric buses for 2025–2026."
+        ],
+        "evidence_gaps": [
+          "No cited evidence establishes that the planned fleet milestone occurred."
+        ],
+        "prohibited_inferences": [
+          "Do not publish a future fleet target as delivered treatment incidence."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_86471#p003_c0006",
+            "record_id": "event_meeting-doc-86471-470-electric-buses",
+            "source_id": "meeting_doc_86471"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_meeting-doc-86471-470-electric-buses",
+          "date_text": "2025-26",
+          "date_normalized": "2025-26",
+          "date_precision": "month",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_86471"
+          ],
+          "relation_record_ids": [
+            "relation_86471-zej-470-buses"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": []
+      },
+      {
+        "observation_event_record_id": "event_q98v-b98v-launch-mar1-2021",
+        "candidate_id": "candidate:6f2f311e4cca8011eca80c32",
+        "recommended_disposition": "insufficient_evidence",
+        "target": {
+          "canonical_candidate_id": null,
+          "published_occurrence_id": null
+        },
+        "assessment": "Observation adjudicated with its sole targeted candidate: The source establishes the March 1, 2021 Q98V/B98V temporary-route launch for vaccination service, but the frozen data lacks an exact treatment component and stable historical route application surface.",
+        "known_facts": [
+          "Temporary Q98V and B98V vaccination-service routes launched March 1, 2021."
+        ],
+        "evidence_gaps": [
+          "No exact candidate-bound treatment component exists.",
+          "The temporary historical routes lack publication-safe application identifiers."
+        ],
+        "prohibited_inferences": [
+          "Do not invent a treatment or map temporary routes to unrelated current route identifiers."
+        ],
+        "evidence_bindings": [
+          {
+            "evidence_id": "meeting_doc_33236#p040_c0005",
+            "record_id": "event_q98v-b98v-launch-mar1-2021",
+            "source_id": "meeting_doc_33236"
+          },
+          {
+            "evidence_id": "meeting_doc_33236#p041_c0003",
+            "record_id": "event_q98v-b98v-launch-mar1-2021",
+            "source_id": "meeting_doc_33236"
+          }
+        ],
+        "applications": [],
+        "onset": {
+          "source_event_record_id": "event_q98v-b98v-launch-mar1-2021",
+          "date_text": "March 1, 2021",
+          "date_normalized": "2021-03-01",
+          "date_precision": "day",
+          "source_truth_status": "source_stated",
+          "publication_authorized": false
+        },
+        "scope": {
+          "source_ids": [
+            "meeting_doc_33236"
+          ],
+          "relation_record_ids": [
+            "relation_b98v-vaccination-program",
+            "relation_q98v-vaccination-program"
+          ],
+          "route_record_ids": [],
+          "treatment_component_record_ids": [],
+          "exact_incidence_authorized": false,
+          "cross_product_authorized": false
+        },
+        "integration_status": "review_only_not_integrated",
+        "blocker_ids": [
+          "meeting03-blocker-historical-route-treatment-surface"
+        ]
+      }
+    ]
+  },
+  "schema_blockers": [
+    {
+      "blocker_id": "meeting03-blocker-aggregate-rail-service-incidence",
+      "affected_candidate_ids": [
+        "candidate:4dec7cf924524aed2c281e55"
+      ],
+      "description": "The retrospective Grand Central Madison statement is an aggregate LIRR service expansion, not an exhaustive line-by-treatment incidence set.",
+      "required_resolution": "Supply source-backed exhaustive line incidence and exact treatment applications without decomposition by inference."
+    },
+    {
+      "blocker_id": "meeting03-blocker-historical-route-treatment-surface",
+      "affected_candidate_ids": [
+        "candidate:55291cdf68954f24514eecdc",
+        "candidate:6f2f311e4cca8011eca80c32"
+      ],
+      "description": "The actual historical route events lack exact event-bound treatment components and publication-safe historical route application identifiers.",
+      "required_resolution": "Add source-backed treatment bindings and governed stable identifiers for the cited historical/temporary routes."
+    },
+    {
+      "blocker_id": "meeting03-blocker-m15-ace-encoding",
+      "affected_candidate_ids": [
+        "candidate:6289d1d9a428377cf0bd164f"
+      ],
+      "description": "The M15 SBS ACE launch is source-backed, but frozen route identity and candidate-bound treatment data do not support an exact publishable application.",
+      "required_resolution": "Bind the exact ACE treatment to the event and provide a governed publication-safe M15 SBS route identifier."
+    }
+  ],
+  "arithmetic": {
+    "starting_candidate_count": 10,
+    "terminal_candidate_count": 10,
+    "disposition_counts": {
+      "published": 0,
+      "duplicate_alias": 2,
+      "insufficient_evidence": 4,
+      "outside_domain": 2,
+      "rejected": 2
+    },
+    "final_published_count": 0,
+    "final_nonpublication_count": 10,
+    "starting_observation_count": 10,
+    "accounted_observation_count": 10,
+    "application_count": 0,
+    "identities": {
+      "candidates_terminal": true,
+      "candidates_partitioned": true,
+      "observations_accounted": true,
+      "applications_match_findings": true
+    }
+  },
+  "isolation": {
+    "clean_room_review": true,
+    "primary_receipt_inspected": false,
+    "other_independent_receipt_inspected": false,
+    "adjudication_or_reconciliation_receipt_inspected": false,
+    "integration_or_evidence_gap_receipt_inspected": false,
+    "stop_receipt_inspected": false,
+    "git_diff_inspected": false,
+    "other_agent_output_inspected": false,
+    "provider_used": false,
+    "read_boundary": [
+      "AGENTS.md",
+      "CODEX.md",
+      "Plan 052",
+      "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-03.json",
+      "targeted frozen candidate rows",
+      "targeted frozen observation rows",
+      "targeted canonical records",
+      "manifest-pinned local source evidence"
+    ]
+  },
+  "mutation_boundary": {
+    "written_paths": [
+      "data/operational-episode-resolution/campaigns/plan-052/proposed-review-receipts/w2-meeting-docs-pending-03/adjudication-independent.json"
+    ],
+    "canonical_data_mutated": false,
+    "frontier_mutated": false,
+    "manifest_mutated": false,
+    "source_evidence_mutated": false,
+    "integration_performed": false
+  }
+}

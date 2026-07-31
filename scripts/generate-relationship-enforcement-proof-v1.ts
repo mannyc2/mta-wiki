@@ -1543,6 +1543,44 @@ function assertPhysicalityPins(
   sourceRefreshReceipt?:
     RelationshipEnforcementSourceRefreshReceipt | undefined,
 ): Record<string, unknown> {
+  const sourceRefreshHashes = (
+    receipt: RelationshipEnforcementSourceRefreshReceipt,
+    path: string,
+  ): Set<string> => {
+    const hashes = new Set<string>();
+    let current: RelationshipEnforcementSourceRefreshReceipt | undefined =
+      receipt;
+    const visited = new Set<string>();
+    while (current) {
+      const pin = [
+        current.completeness_manifest,
+        current.completeness_summary,
+        current.report,
+      ].find((candidate) => candidate.path === path);
+      if (pin) {
+        hashes.add(pin.previous_sha256);
+        hashes.add(pin.current_sha256);
+      }
+      const previous = current.previous_source_refresh_receipt;
+      if (!previous) break;
+      assert(
+        !visited.has(previous.sha256),
+        "Relationship source-refresh receipt predecessor cycle",
+      );
+      visited.add(previous.sha256);
+      const parsed = parseJson<RelationshipEnforcementSourceRefreshReceipt>(
+        readRepositoryText(root, previous.path),
+        previous.path,
+      );
+      assertRelationshipEnforcementSourceRefreshReceipt(parsed);
+      assert(
+        stableHash(parsed as unknown as JsonValue) === previous.sha256,
+        "Relationship source-refresh receipt predecessor hash mismatch",
+      );
+      current = parsed;
+    }
+    return hashes;
+  };
   const summaryText = readRepositoryText(
     root,
     PHYSICALITY_SUMMARY_PATH,
@@ -1593,7 +1631,9 @@ function assertPhysicalityPins(
     if (reviewedRefresh) {
       const bytes = readRepositoryBytes(root, pin.path);
       assert(
-        pin.sha256 === reviewedRefresh.previous_sha256 &&
+        sourceRefreshHashes(sourceRefreshReceipt!, pin.path).has(
+          pin.sha256,
+        ) &&
           byteSha256(bytes) === reviewedRefresh.current_sha256 &&
           (pin.bytes === undefined || pin.bytes === bytes.length),
         `physicality input ${index} does not match its exact reviewed source-refresh transition: ${pin.path}`,
@@ -4525,10 +4565,19 @@ export function generateRelationshipEnforcementProofV1(
     const configuredPointer =
       contract.enforcement_proof?.source_refresh_receipt;
     if (configuredPointer) {
-      assert(
+      const checkingInstalledReceipt =
         configuredPointer.path === configuredSourceRefreshPath &&
-          configuredPointer.sha256 === receiptSha256,
-        "Relationship contract source-refresh pointer does not match the reviewed receipt",
+        configuredPointer.sha256 === receiptSha256;
+      const appendingReviewedReceipt =
+        sourceRefreshReceipt.previous_source_refresh_receipt?.path ===
+          configuredPointer.path &&
+        sourceRefreshReceipt.previous_source_refresh_receipt.sha256 ===
+          configuredPointer.sha256 &&
+        contract.enforcement_proof?.sha256 ===
+          sourceRefreshReceipt.previous_active_proof.sha256;
+      assert(
+        checkingInstalledReceipt || appendingReviewedReceipt,
+        "Relationship contract source-refresh pointer does not match the reviewed receipt or its append-only predecessor",
       );
     } else {
       assert(

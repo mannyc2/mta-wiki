@@ -1,0 +1,491 @@
+{
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "schema_version": 1,
+  "plan_id": "plan-052",
+  "wave": 2,
+  "batch_id": "w2-meeting-docs-pending-04",
+  "role": "independent_adjudication",
+  "reviewer": "plan-052-meeting04-blind-adjudicator",
+  "review_scope": {
+    "candidate_ids": [
+      "candidate:7514c25fde19dc94e373c327",
+      "candidate:76f21a75dab2a1388658e218",
+      "candidate:7728d2e147f1ff0f819883ab",
+      "candidate:77ac74fdefd1d9870b7946cc",
+      "candidate:7883fee4cff26cbd6a9e9efd",
+      "candidate:799562a5da5929308eabdaa7",
+      "candidate:7c5602f63b0a01c06e75bed8",
+      "candidate:7cb4825a8c94423cdc2c21c5",
+      "candidate:7f16dc77e6485ac6a7923ce2",
+      "candidate:80753e82f3e303c1e8ac6af8",
+      "candidate:83c45b532c54d8aa86b55c11",
+      "candidate:84a71e6c3ffa3b201b268713",
+      "candidate:881abe90bdd5af1f81d229ad",
+      "candidate:89aeb7d84b5cd362eed12771",
+      "candidate:8a0274bd1166c7b2c1c70350",
+      "candidate:8aa99fb4ea05f54a2c853bee",
+      "candidate:8ab8e498b4dc5cd278e8a25b",
+      "candidate:8b840113f5ac23a252c3ec59",
+      "candidate:8cffe2ce20ced294a5985213",
+      "candidate:8f161235f18ebe3799765403",
+      "candidate:9088ac26de753a649b692706",
+      "candidate:926e93307a7bcf4477fc12b6",
+      "candidate:92b27034413d3ebd07c646eb",
+      "candidate:94715cbd1a70dc309e5b6e09",
+      "candidate:9496059b1f3ebb5bc085c7ed",
+      "candidate:9595227fc0801c7811cac82a",
+      "candidate:96435683a0611d2dc3fd91aa",
+      "candidate:96971d2d19ed76c79a69e5e3",
+      "candidate:9925657c0216c5db52780750",
+      "candidate:9b8560652d8161543452244a"
+    ],
+    "candidate_count": 30,
+    "observation_event_record_count": 30,
+    "manifest_candidate_count": 42,
+    "manifest_observation_count": 107
+  },
+  "input_pins": {
+    "manifest": {
+      "bytes": 24607,
+      "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-04.json",
+      "sha256": "c6a50b3ca048b1b444081558a0716e0da36bb512287ad0e0fbeff4545e887cd5"
+    },
+    "cohort_hashes": {
+      "adapter_input_sha256": "47a9445b350dc469631b907b7845cd0e5adabfb8c0cce1b3a1ef2cedc18e1e5b",
+      "candidate_input_sha256": "d433c30abcce130f49249c1db329cb4603cb783aa553c99bfe1de31f62d9998d",
+      "candidate_membership_sha256": "99cc11f66711defd0de6d94f70e8c4ffb4d9f0d2f70a662876514ff60e1b9cdf",
+      "evidence_input_sha256": "370899587866b06300d12770bde70f6c52aa7015173b03a65f43bdb5d0ad90be",
+      "observation_membership_sha256": "e8d089848e69bf7e9971a0f8145f54b8418999894bb5e43d463ea1d3752c2f5e"
+    },
+    "immutable_starting_provenance": {
+      "adapter_fingerprint": "de51c8db4353cc8774d4c55bea3fcba8103ecdee3a38898b85b61733eccf07b9",
+      "cohort_fingerprint": "94dfd16c1c57362b220fb8ce53b8325e6ca166c1e697d9001da8b66f6483e373",
+      "commit_sha": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+      "corpus_fingerprint": "318cee05f0c7288fd28084df44b6b036f0607ffdfb76b3d6c6fcd14118f479c5",
+      "decision_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "identity_fingerprint": "6827adf67650c81fa38d30b1dfbaf6be5282a45491b058b3ed44167aa287d26e",
+      "review_fingerprint": "3989ac8637527e5862f18b7a6c4f7f2699078eb992a2675b16a23af525fd1d24"
+    },
+    "frozen_frontier": [
+      {
+        "bytes": 860230,
+        "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+        "sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2"
+      },
+      {
+        "bytes": 720438,
+        "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/cohort.json",
+        "sha256": "59e4c2fbdb389255442c00ac06204b6798fed64742d80489441cd5524a912a61"
+      },
+      {
+        "bytes": 1374322,
+        "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/observation_ledger.jsonl",
+        "sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f"
+      },
+      {
+        "bytes": 21408,
+        "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/summary.json",
+        "sha256": "4baf594cea14431b2f2c125c19c554755ecf167be6b81f399152873a5cd35545"
+      }
+    ],
+    "source_files": [
+      {"bytes":12834,"path":"wiki/sources/meeting_doc_100351.md","sha256":"693d3964b490d24b38109e141bca318c5468121dd563a287b6e174f16542c2f2"},
+      {"bytes":61875,"path":"wiki/sources/meeting_doc_105771.md","sha256":"d83155b9feffecdb70c69e113fb1e07317d7e1677f8623c3b1da5ad7fabe571f"},
+      {"bytes":14255,"path":"wiki/sources/meeting_doc_105781.md","sha256":"08b1562880666be75932d70097318f42636d9cbbb9b20f96021056039b6630f5"},
+      {"bytes":6887,"path":"wiki/sources/meeting_doc_109341.md","sha256":"57a4fb11aaea24d2018b4cd2891c86af842466fa8a205375985c4fb57d770703"},
+      {"bytes":12276,"path":"wiki/sources/meeting_doc_115206.md","sha256":"f114277baa756c68f48fa63eaadf51790c52e17d93978021d19ac251393d6db4"},
+      {"bytes":15210,"path":"wiki/sources/meeting_doc_121096.md","sha256":"58c651c422a35319a3c5c0269fba2ee65cb6b93f7b93398b28df5cb68485b9d8"},
+      {"bytes":12818,"path":"wiki/sources/meeting_doc_124191.md","sha256":"874cb0304414364c8ca347b63f6838e3ba735f43cb94ca448de41518788c7ba9"},
+      {"bytes":10192,"path":"wiki/sources/meeting_doc_124201.md","sha256":"b73537fb03586c2de5001b33abc55f122570f31b9183b836020a3dd62d57a85b"},
+      {"bytes":6804,"path":"wiki/sources/meeting_doc_124266.md","sha256":"ec6fbc6fa648c15b80cc0288bea87315dbc6aef3d715a5e303f5b8576f143f6e"},
+      {"bytes":8166,"path":"wiki/sources/meeting_doc_127536.md","sha256":"e4b3d47dadc5a001633f50cfaae39e06f92b0478c8578c375582409026d84e5f"},
+      {"bytes":4201,"path":"wiki/sources/meeting_doc_127546.md","sha256":"31b01f1eebfc68d501f6acec8466eab9417a0a78b9116ed0869d3b6770f181ba"},
+      {"bytes":59840,"path":"wiki/sources/meeting_doc_127701.md","sha256":"54d18385ba7c29ff346c89094d4c76d38fe8570d929fc22ac225a50de7cb50d1"},
+      {"bytes":38604,"path":"wiki/sources/meeting_doc_133301.md","sha256":"eaea29438bb1ab2f50186eb740cc9fdbad84d6f2044dbb8fa20d854839755022"},
+      {"bytes":8205,"path":"wiki/sources/meeting_doc_133331.md","sha256":"2990864f3b0ea6c2aac83a90d0d7249e67c553d7383e8ffd46831165fa2bb4c2"},
+      {"bytes":12125,"path":"wiki/sources/meeting_doc_140306.md","sha256":"da7c13d3f48972577a3aae98965691c750b5350c126b685eeac2227bd5116862"},
+      {"bytes":142146,"path":"wiki/sources/meeting_doc_140621.md","sha256":"4a7d969569ab0f44b9ff5db0b42149b07b347c8219a4fb4e25832095226f3627"},
+      {"bytes":4988,"path":"wiki/sources/meeting_doc_151821.md","sha256":"cc06824b06200eeedcb44aae0d8003ff1c0b57acc40996527fc925c340ef981b"},
+      {"bytes":4561,"path":"wiki/sources/meeting_doc_160121.md","sha256":"6a3cbad9d27125569a4d3168b0aa2491926a41a3c6ddddd6b47d7d189028c238"},
+      {"bytes":13976,"path":"wiki/sources/meeting_doc_160196.md","sha256":"8129b62e35e9842de5da34a646b396a226fbc1f91fd35ed283fed2ed277691bd"},
+      {"bytes":21390,"path":"wiki/sources/meeting_doc_160311.md","sha256":"c0b3f6da3146480ba71e6f45d24c6629e8f20fb52852ed174effedadd6992452"},
+      {"bytes":76117,"path":"wiki/sources/meeting_doc_163121.md","sha256":"2750845f677655f90895e0ffed57c0cd5be4832251adecb0eb97f895baeea5cc"},
+      {"bytes":9618,"path":"wiki/sources/meeting_doc_166956.md","sha256":"eaa97ae7f3ffb262b819f34b3ff773303f399fa10263eef07769496a3ff5ebff"},
+      {"bytes":4864,"path":"wiki/sources/meeting_doc_186721.md","sha256":"ec075ee80c1380629daac96f2e59f73862de33af259d16b2f210206c8435a2d9"},
+      {"bytes":20127,"path":"wiki/sources/meeting_doc_190081.md","sha256":"20ecdf1957cef1352df41cdaa6365ccf072602ba1b2f20a2d653c0b13cd084d7"},
+      {"bytes":392475,"path":"wiki/sources/meeting_doc_192261.md","sha256":"963676bda134153b1215e417d62160ac9b0cdefc9d2d87ae44e8366843d3f216"},
+      {"bytes":172988,"path":"wiki/sources/meeting_doc_192276.md","sha256":"9a9c08f9eec2fde6ab4bea9330873a03f1b864182495930429ddaf360ccddc79"},
+      {"bytes":62759,"path":"wiki/sources/meeting_doc_192301.md","sha256":"dca16b89bc3312b9dff3ba8314a8097c90ac19902031ba46f916b5f7e7ef6841"},
+      {"bytes":20653,"path":"wiki/sources/meeting_doc_196966.md","sha256":"fdf0ccdb58e0df177cc4283ab7ebe204b69c6fc50ea19a66188dc37cd1700a4a"},
+      {"bytes":14069,"path":"wiki/sources/meeting_doc_202091.md","sha256":"a4e9f3ed73c6cb25435906ef253d631a377bc4654ed21062dff3063da34c70df"}
+    ]
+  },
+  "evidence_pins": [
+    {"evidence_id":"meeting_doc_100351#p004_c0004","source_path":"raw/sources/meeting_doc_100351/blocks.jsonl","text_sha256":"sha256:ad09ec7b01da29fcb39b2e46c929f1b9b32db3c1b44c52d540b9f89f80d3d375"},
+    {"evidence_id":"meeting_doc_105771#p004_c0007","source_path":"raw/sources/meeting_doc_105771/blocks.jsonl","text_sha256":"sha256:ab6443e5197367ac192d0540be43cd380c0834d26bd5d3b48d354c1bf7d659ea"},
+    {"evidence_id":"meeting_doc_105771#p004_c0008","source_path":"raw/sources/meeting_doc_105771/blocks.jsonl","text_sha256":"sha256:7d3148ad5a466ee7603d7ca6aec1ff2083e38f1122e122c592ecb20c678db801"},
+    {"evidence_id":"meeting_doc_105781#p004_c0019","source_path":"raw/sources/meeting_doc_105781/blocks.jsonl","text_sha256":"sha256:c1ed04fc38056e63c6e5df5ab1a2cf0cfb62275ddf4c554c7c91cee65cc75df3"},
+    {"evidence_id":"meeting_doc_105781#p004_c0020","source_path":"raw/sources/meeting_doc_105781/blocks.jsonl","text_sha256":"sha256:d30a24b5a1f5d4282e9b6edb1eeed6930be56a2340fc9a647f98e8b315dae4a4"},
+    {"evidence_id":"meeting_doc_105781#p005_c0010","source_path":"raw/sources/meeting_doc_105781/blocks.jsonl","text_sha256":"sha256:42f2a1c739de35db812568f3ff692cf85dc13c30d9c380df160860e033095a81"},
+    {"evidence_id":"meeting_doc_105781#p005_c0013","source_path":"raw/sources/meeting_doc_105781/blocks.jsonl","text_sha256":"sha256:b0ea8e62251212fc908b69a9d0b0d82c05cb256a691be9c1839c2e30d744398a"},
+    {"evidence_id":"meeting_doc_105781#p005_c0014","source_path":"raw/sources/meeting_doc_105781/blocks.jsonl","text_sha256":"sha256:5180c55f6f805bd0f7ca1de1742e35c31e42cd25ecc9488b640e40d3ffac5ebe"},
+    {"evidence_id":"meeting_doc_105781#p005_c0020","source_path":"raw/sources/meeting_doc_105781/blocks.jsonl","text_sha256":"sha256:263a98fe24dd4eda1772327354fbd77403747a2ea0295f2f008e1d03bb478203"},
+    {"evidence_id":"meeting_doc_105781#p005_c0021","source_path":"raw/sources/meeting_doc_105781/blocks.jsonl","text_sha256":"sha256:23f6d05a421a530726a94ab228caa196260c9fa138fe5959c554aea12f834d1e"},
+    {"evidence_id":"meeting_doc_109341#p002_c0004","source_path":"raw/sources/meeting_doc_109341/blocks.jsonl","text_sha256":"sha256:9c6f689b3f3c5bafe2e47db7de16ad80571d01a605bd47167944c3f5a7d26566"},
+    {"evidence_id":"meeting_doc_115206#p004_c0006","source_path":"raw/sources/meeting_doc_115206/blocks.jsonl","text_sha256":"sha256:b0ea8e62251212fc908b69a9d0b0d82c05cb256a691be9c1839c2e30d744398a"},
+    {"evidence_id":"meeting_doc_115206#p004_c0007","source_path":"raw/sources/meeting_doc_115206/blocks.jsonl","text_sha256":"sha256:2b08a680b41617ee792cf036fc411b7e6c3f367a7976388d96ee9036b5e90834"},
+    {"evidence_id":"meeting_doc_121096#p006_c0005","source_path":"raw/sources/meeting_doc_121096/blocks.jsonl","text_sha256":"sha256:c1ed04fc38056e63c6e5df5ab1a2cf0cfb62275ddf4c554c7c91cee65cc75df3"},
+    {"evidence_id":"meeting_doc_121096#p006_c0006","source_path":"raw/sources/meeting_doc_121096/blocks.jsonl","text_sha256":"sha256:d30a24b5a1f5d4282e9b6edb1eeed6930be56a2340fc9a647f98e8b315dae4a4"},
+    {"evidence_id":"meeting_doc_124191#p003_c0011","source_path":"raw/sources/meeting_doc_124191/blocks.jsonl","text_sha256":"sha256:42f2a1c739de35db812568f3ff692cf85dc13c30d9c380df160860e033095a81"},
+    {"evidence_id":"meeting_doc_124191#p003_c0014","source_path":"raw/sources/meeting_doc_124191/blocks.jsonl","text_sha256":"sha256:b0ea8e62251212fc908b69a9d0b0d82c05cb256a691be9c1839c2e30d744398a"},
+    {"evidence_id":"meeting_doc_124191#p003_c0015","source_path":"raw/sources/meeting_doc_124191/blocks.jsonl","text_sha256":"sha256:9999b2e54073c4ad87418da9fed3f6058b1dd02f8126b5c64daff3991800c244"},
+    {"evidence_id":"meeting_doc_124201#p004_c0006","source_path":"raw/sources/meeting_doc_124201/blocks.jsonl","text_sha256":"sha256:6355018ee1e281ac91823166c17f6c8b5d7eeec2ae11866362f023a80a596b06"},
+    {"evidence_id":"meeting_doc_124266#p001_c0004","source_path":"raw/sources/meeting_doc_124266/blocks.jsonl","text_sha256":"sha256:cea951ba9341bcf723fcc70b54bcc95da3be8c7ab6d87ca15686fe8da34fa682"},
+    {"evidence_id":"meeting_doc_124266#p001_c0007","source_path":"raw/sources/meeting_doc_124266/blocks.jsonl","text_sha256":"sha256:5c64a993d072682385c6bbe551d6301817598db0fbb4a7145ed944a5f2ad0a1e"},
+    {"evidence_id":"meeting_doc_127536#p005_c0003","source_path":"raw/sources/meeting_doc_127536/blocks.jsonl","text_sha256":"sha256:28a1338eddd026697807fa6814ce852f6eafe9f5cc42c07dd08a21a99b4980c0"},
+    {"evidence_id":"meeting_doc_127546#p001_c0008","source_path":"raw/sources/meeting_doc_127546/blocks.jsonl","text_sha256":"sha256:3a8f195b97a48a94e793d8dbf5708e00530b0abb200d258b0e7873d772dfcb4d"},
+    {"evidence_id":"meeting_doc_127701#p009_c0009","source_path":"raw/sources/meeting_doc_127701/blocks.jsonl","text_sha256":"sha256:647a109cf1f5e51ce1a288223d083d3925df21e266de27da47a01ecdbbe3004d"},
+    {"evidence_id":"meeting_doc_133301#p005_c0007","source_path":"raw/sources/meeting_doc_133301/blocks.jsonl","text_sha256":"sha256:35c8a9ea73a4f80ab5f2d365d66776298e975c35ce8b578b90a4a3716dd60b88"},
+    {"evidence_id":"meeting_doc_133331#p001_c0004","source_path":"raw/sources/meeting_doc_133331/blocks.jsonl","text_sha256":"sha256:910294fbde19f8400e4b7d0b791c5d13b4785629b6c9ca019b07e1a4d3da91b8"},
+    {"evidence_id":"meeting_doc_140621#p036_c0004","source_path":"raw/sources/meeting_doc_140621/blocks.jsonl","text_sha256":"sha256:6975178f85bc10835cffd864aeace21f67f3a62436c9ed3fb226d0fccaede625"},
+    {"evidence_id":"meeting_doc_151821#p001_c0007","source_path":"raw/sources/meeting_doc_151821/blocks.jsonl","text_sha256":"sha256:42e6516638fe08fdd6f739e2bb6948bc3ee28e536935a4ef8078ecaa419478c2"},
+    {"evidence_id":"meeting_doc_151821#p002_c0001","source_path":"raw/sources/meeting_doc_151821/blocks.jsonl","text_sha256":"sha256:79c8e7d89b1f8c4da892abf297e9439f204e1465a0ffd2951aa3772b70125ac7"},
+    {"evidence_id":"meeting_doc_160121#p001_c0011","source_path":"raw/sources/meeting_doc_160121/blocks.jsonl","text_sha256":"sha256:2cb9071ae5455a3a5a097a4a74c4880c056731d4da28a9203a16d272f6c5ed61"},
+    {"evidence_id":"meeting_doc_160196#p006_c0012","source_path":"raw/sources/meeting_doc_160196/blocks.jsonl","text_sha256":"sha256:0230f486d9d5ffa81680e3969255282b1f32d48726e9347c0cb9bf2f5bbc32a6"},
+    {"evidence_id":"meeting_doc_160311#p009_c0007","source_path":"raw/sources/meeting_doc_160311/blocks.jsonl","text_sha256":"sha256:e80d937b87dad24c010b19fbad83c0e86bcf4bdc20bee8744591b263c704424f"},
+    {"evidence_id":"meeting_doc_163121#p032_c0008","source_path":"raw/sources/meeting_doc_163121/blocks.jsonl","text_sha256":"sha256:34b0f72072dac526f6a25b5de14ba2500a8d11e889daf6781ed760b1eb1428e7"},
+    {"evidence_id":"meeting_doc_166956#p001_c0008","source_path":"raw/sources/meeting_doc_166956/blocks.jsonl","text_sha256":"sha256:fcf2e0d9f5d9b591fd3bd1996195a1ef1c81d43130b2e064ca469e10c5ca9787"},
+    {"evidence_id":"meeting_doc_166956#p001_c0009","source_path":"raw/sources/meeting_doc_166956/blocks.jsonl","text_sha256":"sha256:803f6ec2ed77f719105271a0f12959e71e15440fd99c9151f67bcd4a9f4fef9e"},
+    {"evidence_id":"meeting_doc_166956#p002_c0007","source_path":"raw/sources/meeting_doc_166956/blocks.jsonl","text_sha256":"sha256:a973bcfa60500bc0270565f822f46c9c76aea1642a396c9989b25105671212d0"},
+    {"evidence_id":"meeting_doc_166956#p002_c0008","source_path":"raw/sources/meeting_doc_166956/blocks.jsonl","text_sha256":"sha256:c53b92b395c2167111269a5a5fe625c1153c48f7d8dbdba46e8d4cd695f02cf1"},
+    {"evidence_id":"meeting_doc_186721#p002_c0001","source_path":"raw/sources/meeting_doc_186721/blocks.jsonl","text_sha256":"sha256:c014d7c18d0048efbd8e1b30df32c6d7c89b6ce864aa287b5331f0ff20725039"},
+    {"evidence_id":"meeting_doc_190081#p008_c0008","source_path":"raw/sources/meeting_doc_190081/blocks.jsonl","text_sha256":"sha256:695e16ebef6556cd20771e3598ceb2d589f2b7c3fc462f6aedbee92b3e9ff33c"},
+    {"evidence_id":"meeting_doc_192261#p001_c0009","source_path":"raw/sources/meeting_doc_192261/blocks.jsonl","text_sha256":"sha256:48e6c38204b76bb29407a8125af59cefa022e67d34f6dc4e8f5e4f8ffc8e1268"},
+    {"evidence_id":"meeting_doc_192301#p022_c0006","source_path":"raw/sources/meeting_doc_192301/blocks.jsonl","text_sha256":"sha256:824482c5e8df62d48f4cdd3e198f849770a86494f3881094d18463049338e55c"},
+    {"evidence_id":"meeting_doc_202091#p013_c0004","source_path":"raw/sources/meeting_doc_202091/blocks.jsonl","text_sha256":"sha256:89e4f5980ba57bc64bc1b655ac75c54f4764f0154813f9e07f7de7c71472272e"}
+  ],
+  "findings": [
+    {
+      "candidate_id": "candidate:7514c25fde19dc94e373c327",
+      "candidate_key": "event:event_gcm-full-service-meeting-doc-105771",
+      "observation_event_record_ids": ["event_gcm-full-service-meeting-doc-105771"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_105771#p004_c0007","meeting_doc_105771#p004_c0008"],
+      "rationale": "The evidence establishes commencement of Long Island Rail Road service to Grand Central Madison, a real commuter-rail service event, not a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:76f21a75dab2a1388658e218",
+      "candidate_key": "event:event_march-4-timetable-change-133331",
+      "observation_event_record_ids": ["event_march-4-timetable-change-133331"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_133331#p001_c0004"],
+      "rationale": "The evidence establishes a Long Island Rail Road timetable period supporting rail construction and maintenance work, not a bus-priority route-treatment episode; no project-level cross-product is inferred."
+    },
+    {
+      "candidate_id": "candidate:7728d2e147f1ff0f819883ab",
+      "candidate_key": "event:event_november-timetable-change-124266",
+      "observation_event_record_ids": ["event_november-timetable-change-124266"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_124266#p001_c0004","meeting_doc_124266#p001_c0007"],
+      "rationale": "The evidence establishes a Long Island Rail Road timetable change, a real commuter-rail schedule event outside the bus-priority product domain."
+    },
+    {
+      "candidate_id": "candidate:77ac74fdefd1d9870b7946cc",
+      "candidate_key": "event:event_meeting-doc-127701-congestion-pricing",
+      "observation_event_record_ids": ["event_meeting-doc-127701-congestion-pricing"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_127701#p009_c0009"],
+      "rationale": "The evidence describes the planned Central Business District Tolling Program implementation and financing risk, not an exact bus route-treatment installation."
+    },
+    {
+      "candidate_id": "candidate:7883fee4cff26cbd6a9e9efd",
+      "candidate_key": "event:event_montauk-bridge-track-maintenance-oct5-6-2024",
+      "observation_event_record_ids": ["event_montauk-bridge-track-maintenance-oct5-6-2024"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_151821#p001_c0007","meeting_doc_151821#p002_c0001"],
+      "rationale": "The evidence establishes Montauk Branch rail bridge and track maintenance with temporary replacement buses, not a bus-priority treatment episode."
+    },
+    {
+      "candidate_id": "candidate:799562a5da5929308eabdaa7",
+      "candidate_key": "event:event_meeting-doc-109341-cherry-valley-bridge-waterproofing",
+      "observation_event_record_ids": ["event_meeting-doc-109341-cherry-valley-bridge-waterproofing"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_109341#p002_c0004"],
+      "rationale": "The evidence establishes rail bridge waterproofing and temporary replacement buses, not a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:7c5602f63b0a01c06e75bed8",
+      "candidate_key": "event:event_ronkonkoma-oct4-5-2025",
+      "observation_event_record_ids": ["event_ronkonkoma-oct4-5-2025"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_186721#p002_c0001"],
+      "rationale": "The evidence establishes Ronkonkoma rail switch installation and maintenance with temporary rail-service impacts, not a bus-priority episode."
+    },
+    {
+      "candidate_id": "candidate:7cb4825a8c94423cdc2c21c5",
+      "candidate_key": "event:event_massapequa-signal-cutover_2",
+      "observation_event_record_ids": ["event_massapequa-signal-cutover_2"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_127536#p005_c0003"],
+      "rationale": "The evidence establishes a Massapequa Pocket Track rail-signal cutover, not a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:7f16dc77e6485ac6a7923ce2",
+      "candidate_key": "event:event_mnr-committee-oct2023-ptc-update",
+      "observation_event_record_ids": ["event_mnr-committee-oct2023-ptc-update"],
+      "disposition": "duplicate_alias",
+      "alias_of_candidate_id": "candidate:79a5515799b315fda6862fc6",
+      "alias_of_event_record_id": "event_meeting-doc-115206-oct2023-lirr-mnr-ptc-update",
+      "evidence_ids": ["meeting_doc_124191#p003_c0011","meeting_doc_124191#p003_c0014","meeting_doc_124191#p003_c0015","meeting_doc_115206#p004_c0006","meeting_doc_115206#p004_c0007"],
+      "rationale": "The month, agenda title, committee action, project status, close-out purpose, and December 2020 PTC reference identify the same October 2023 LIRR/MNR PTC briefing as the frozen alias target."
+    },
+    {
+      "candidate_id": "candidate:80753e82f3e303c1e8ac6af8",
+      "candidate_key": "event:event_mfg-continued-installation",
+      "observation_event_record_ids": ["event_mfg-continued-installation"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_202091#p013_c0004"],
+      "rationale": "The evidence establishes a future phase of subway modern fare-gate installation, not a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:83c45b532c54d8aa86b55c11",
+      "candidate_key": "event:event_meeting-doc-124201-mnr-cp243-signal-cutover",
+      "observation_event_record_ids": ["event_meeting-doc-124201-mnr-cp243-signal-cutover"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_124201#p004_c0006"],
+      "rationale": "The evidence establishes a Metro-North rail-signal cutover and PTC commissioning milestone, not a bus-priority episode."
+    },
+    {
+      "candidate_id": "candidate:84a71e6c3ffa3b201b268713",
+      "candidate_key": "event:event_163121-r211s-introduction",
+      "observation_event_record_ids": ["event_163121-r211s-introduction"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_163121#p032_c0008"],
+      "rationale": "The evidence establishes introduction of R211S rail cars on the Staten Island Railway, not a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:881abe90bdd5af1f81d229ad",
+      "candidate_key": "event:event_service-adjustment-far-rockaway-127546",
+      "observation_event_record_ids": ["event_service-adjustment-far-rockaway-127546"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_127546#p001_c0008"],
+      "rationale": "The evidence establishes a temporary Long Island Rail Road diversion caused by West Side Yard switch work, not a bus-priority episode."
+    },
+    {
+      "candidate_id": "candidate:89aeb7d84b5cd362eed12771",
+      "candidate_key": "event:event_jun2023-summer-trackwork",
+      "observation_event_record_ids": ["event_jun2023-summer-trackwork"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_105781#p004_c0019","meeting_doc_105781#p004_c0020"],
+      "rationale": "The evidence establishes June 2023 Long Island Rail Road schedule adjustments for rail trackwork and readiness projects, not a bus-priority episode."
+    },
+    {
+      "candidate_id": "candidate:8a0274bd1166c7b2c1c70350",
+      "candidate_key": "event:event_192261-crz-tolling-commenced",
+      "observation_event_record_ids": ["event_192261-crz-tolling-commenced"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_192261#p001_c0009"],
+      "rationale": "The evidence establishes commencement of the Congestion Relief Zone tolling program, a real tolling-policy event rather than a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:8aa99fb4ea05f54a2c853bee",
+      "candidate_key": "event:event_meeting-doc-160121-nye-program",
+      "observation_event_record_ids": ["event_meeting-doc-160121-nye-program"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_160121#p001_c0011"],
+      "rationale": "The evidence establishes Long Island Rail Road New Year's Eve extra train service, not a bus-priority episode."
+    },
+    {
+      "candidate_id": "candidate:8ab8e498b4dc5cd278e8a25b",
+      "candidate_key": "event:event_gct-switch-replacement",
+      "observation_event_record_ids": ["event_gct-switch-replacement"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_133301#p005_c0007"],
+      "rationale": "The evidence establishes a Grand Central Terminal rail-switch replacement program, not a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:8b840113f5ac23a252c3ec59",
+      "candidate_key": "event:event_meeting-doc-160311-haverstraw-ferry-start",
+      "observation_event_record_ids": ["event_meeting-doc-160311-haverstraw-ferry-start"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_160311#p009_c0007"],
+      "rationale": "The evidence establishes the start of a commuter-ferry route, not a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:8cffe2ce20ced294a5985213",
+      "candidate_key": "event:event_meeting-doc-140621-summer-saturdays",
+      "observation_event_record_ids": ["event_meeting-doc-140621-summer-saturdays"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_140621#p036_c0004"],
+      "rationale": "The evidence establishes a temporary commuter-rail fare promotion, not a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:8f161235f18ebe3799765403",
+      "candidate_key": "event:event_holiday-lights-trains-launch-192301",
+      "observation_event_record_ids": ["event_holiday-lights-trains-launch-192301"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_192301#p022_c0006"],
+      "rationale": "The evidence establishes operation of Metro-North holiday-themed trains, not a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:9088ac26de753a649b692706",
+      "candidate_key": "event:event_nov2023-winter-trackwork-jamaica",
+      "observation_event_record_ids": ["event_nov2023-winter-trackwork-jamaica"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_105781#p005_c0020","meeting_doc_105781#p005_c0021"],
+      "rationale": "The evidence establishes Long Island Rail Road schedule adjustments for rail switch installation and maintenance, not a bus-priority episode."
+    },
+    {
+      "candidate_id": "candidate:926e93307a7bcf4477fc12b6",
+      "candidate_key": "event:event_oct2023-ptc-update",
+      "observation_event_record_ids": ["event_oct2023-ptc-update"],
+      "disposition": "duplicate_alias",
+      "alias_of_candidate_id": "candidate:79a5515799b315fda6862fc6",
+      "alias_of_event_record_id": "event_meeting-doc-115206-oct2023-lirr-mnr-ptc-update",
+      "evidence_ids": ["meeting_doc_105781#p005_c0010","meeting_doc_105781#p005_c0013","meeting_doc_105781#p005_c0014","meeting_doc_115206#p004_c0006","meeting_doc_115206#p004_c0007"],
+      "rationale": "The month, agenda title, committee action, project status, close-out purpose, and December 2020 PTC reference identify the same October 2023 LIRR/MNR PTC briefing as the frozen alias target."
+    },
+    {
+      "candidate_id": "candidate:92b27034413d3ebd07c646eb",
+      "candidate_key": "event:event_166956-memorial-day-getaway-2025",
+      "observation_event_record_ids": ["event_166956-memorial-day-getaway-2025"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_166956#p002_c0007","meeting_doc_166956#p002_c0008"],
+      "rationale": "The evidence establishes Metro-North holiday train service, not a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:94715cbd1a70dc309e5b6e09",
+      "candidate_key": "event:event_m190081-mpi-delivery-complete",
+      "observation_event_record_ids": ["event_m190081-mpi-delivery-complete"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_190081#p008_c0008"],
+      "rationale": "The evidence establishes an anticipated completion milestone for rail work-locomotive delivery, not a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:9496059b1f3ebb5bc085c7ed",
+      "candidate_key": "event:event_meeting-doc-100351-omny-reduced-fare-available",
+      "observation_event_record_ids": ["event_meeting-doc-100351-omny-reduced-fare-available"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_100351#p004_c0004"],
+      "rationale": "The evidence establishes reduced-fare OMNY availability, a fare-media event rather than a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:9595227fc0801c7811cac82a",
+      "candidate_key": "event:event_meeting-doc-121096-summer-trackwork-jun2024",
+      "observation_event_record_ids": ["event_meeting-doc-121096-summer-trackwork-jun2024"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_121096#p006_c0005","meeting_doc_121096#p006_c0006"],
+      "rationale": "The evidence establishes June 2024 Long Island Rail Road schedule adjustments supporting rail projects, not a bus-priority episode."
+    },
+    {
+      "candidate_id": "candidate:96435683a0611d2dc3fd91aa",
+      "candidate_key": "event:event_meeting-doc-124201-mnr-hudson-fiber",
+      "observation_event_record_ids": ["event_meeting-doc-124201-mnr-hudson-fiber"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_124201#p004_c0006"],
+      "rationale": "The evidence establishes a Metro-North rail communications fiber migration, not a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:96971d2d19ed76c79a69e5e3",
+      "candidate_key": "event:event_van-wyck-oct19-20-2024",
+      "observation_event_record_ids": ["event_van-wyck-oct19-20-2024"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_151821#p001_c0007"],
+      "rationale": "The evidence establishes rail track outages and shuttle schedule changes for the Van Wyck Bridge widening project, not a bus-priority episode."
+    },
+    {
+      "candidate_id": "candidate:9925657c0216c5db52780750",
+      "candidate_key": "event:event_meeting-doc-160196-mnr-testing-early2025",
+      "observation_event_record_ids": ["event_meeting-doc-160196-mnr-testing-early2025"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_160196#p006_c0012"],
+      "rationale": "The evidence establishes Metro-North locomotive testing and expected passenger-service entry, not a bus-priority route-treatment episode."
+    },
+    {
+      "candidate_id": "candidate:9b8560652d8161543452244a",
+      "candidate_key": "event:event_166956-schedule-change-mar-30-2025",
+      "observation_event_record_ids": ["event_166956-schedule-change-mar-30-2025"],
+      "disposition": "outside_domain",
+      "evidence_ids": ["meeting_doc_166956#p001_c0008","meeting_doc_166956#p001_c0009"],
+      "rationale": "The pinned event and attached relation establish a Metro-North schedule change on three rail lines, not a bus-priority route-treatment episode."
+    }
+  ],
+  "proposed_applications": [
+    {"candidate_id":"candidate:7514c25fde19dc94e373c327","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:76f21a75dab2a1388658e218","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:7728d2e147f1ff0f819883ab","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:77ac74fdefd1d9870b7946cc","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:7883fee4cff26cbd6a9e9efd","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:799562a5da5929308eabdaa7","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:7c5602f63b0a01c06e75bed8","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:7cb4825a8c94423cdc2c21c5","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:7f16dc77e6485ac6a7923ce2","operation":"record_terminal_disposition","disposition":"duplicate_alias","alias_of_candidate_id":"candidate:79a5515799b315fda6862fc6","publish":false},
+    {"candidate_id":"candidate:80753e82f3e303c1e8ac6af8","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:83c45b532c54d8aa86b55c11","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:84a71e6c3ffa3b201b268713","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:881abe90bdd5af1f81d229ad","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:89aeb7d84b5cd362eed12771","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:8a0274bd1166c7b2c1c70350","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:8aa99fb4ea05f54a2c853bee","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:8ab8e498b4dc5cd278e8a25b","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:8b840113f5ac23a252c3ec59","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:8cffe2ce20ced294a5985213","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:8f161235f18ebe3799765403","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:9088ac26de753a649b692706","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:926e93307a7bcf4477fc12b6","operation":"record_terminal_disposition","disposition":"duplicate_alias","alias_of_candidate_id":"candidate:79a5515799b315fda6862fc6","publish":false},
+    {"candidate_id":"candidate:92b27034413d3ebd07c646eb","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:94715cbd1a70dc309e5b6e09","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:9496059b1f3ebb5bc085c7ed","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:9595227fc0801c7811cac82a","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:96435683a0611d2dc3fd91aa","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:96971d2d19ed76c79a69e5e3","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:9925657c0216c5db52780750","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false},
+    {"candidate_id":"candidate:9b8560652d8161543452244a","operation":"record_terminal_disposition","disposition":"outside_domain","publish":false}
+  ],
+  "evidence_gaps": [],
+  "schema_blockers": [],
+  "arithmetic": {
+    "starting_candidate_count": 30,
+    "starting_pending_review_count": 30,
+    "starting_published_count": 0,
+    "required_terminal_candidate_count": 30,
+    "required_accounted_observation_count": 30,
+    "finding_count": 30,
+    "application_count": 30,
+    "accounted_candidate_count": 30,
+    "accounted_observation_count": 30,
+    "final_published_count": 0,
+    "final_nonpublication_count": 30,
+    "final_pending_count": 0,
+    "counts_by_disposition": {
+      "published": 0,
+      "duplicate_alias": 2,
+      "insufficient_evidence": 0,
+      "outside_domain": 28,
+      "rejected": 0
+    },
+    "evidence_gap_count": 0,
+    "schema_blocker_count": 0,
+    "evidence_determined_outcomes": true
+  },
+  "isolation": {
+    "clean_room_review": true,
+    "counterpart_outcomes_supplied": false,
+    "counterpart_outcomes_read": false,
+    "forbidden_receipt_paths_inspected": false,
+    "git_diff_or_other_agent_outputs_inspected": false,
+    "provider_used": false,
+    "external_sources_used": false,
+    "exact_pinned_evidence_only": true,
+    "route_treatment_cross_products_inferred": false,
+    "count_target_used": false,
+    "integration_or_regeneration_performed": false
+  },
+  "provider_usage": {
+    "provider_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "committed_cost_usd": 0,
+    "actual_cost_usd": 0
+  }
+}

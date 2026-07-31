@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "batch_id": "w0-unresolved-identities",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w0-unresolved-identities.json",
+  "manifest_sha256": "33a80d7b4394227154e41039bcd6bfd40304aba5410d62b196b2f78b2a817ac1",
+  "reviewer": "plan-052-primary-unresolved-identities",
+  "review_complete": true,
+  "re_review_reason": "Independent review correctly distinguished stable occurrence identity from route-snapshot-scoped projection retirement.",
+  "provider_called": false,
+  "provider_request_count": 0,
+  "provider_input_tokens": 0,
+  "provider_output_tokens": 0,
+  "provider_cost_usd": 0,
+  "disagreement_count": 0,
+  "portfolio_verdict": "approve_projection_retired_partition",
+  "findings": [
+    {
+      "candidate_id": "candidate:7eedf6f690a6972606b0c4ca",
+      "candidate_key": "event:event_flatbush-phase1-installation-start-sep2025",
+      "occurrence_id": "occurrence:8c987704152b459014217d44",
+      "accepted_action": "establish_current_resolution",
+      "terminal_disposition": "published",
+      "registry_identity_state": "active",
+      "application_ids": [
+        "application:2d759ab67c4e0006fbec2f24",
+        "application:a607f7cfc3cf8d63127a4da4"
+      ],
+      "installation_phase_application_count": 0,
+      "action_claim": "unknown",
+      "extent_projection": "owner-accepted bounded physical scope",
+      "cross_product_authorized": false
+    },
+    {
+      "candidate_id": "candidate:223626b6d5f40d46270e3d76",
+      "candidate_key": "event:event_q6-qbnr-service-change-2025-08-31",
+      "occurrence_id": "occurrence:ddb7be06c9eb2b6292ef86c9",
+      "accepted_action": "terminal_projection_retired_candidate",
+      "terminal_disposition": "retired",
+      "registry_identity_state": "active",
+      "retirement_receipt_path": "data/route-identity/operational-projection-retirements/v1/q6-q06-current-ineligible-2026-07-18.json",
+      "retirement_receipt_sha256": "b05146bc8a7ad2d75692f457402fe435c6918a1e022b8e4d0abc0530720487bb"
+    },
+    {
+      "candidate_id": "candidate:ffee5c007890e6a026ce607a",
+      "candidate_key": "event:event_q7-route-redesign-effective-2025-08-31",
+      "occurrence_id": "occurrence:c5e9aba290ca2be1be6fb38e",
+      "accepted_action": "terminal_projection_retired_candidate",
+      "terminal_disposition": "retired",
+      "registry_identity_state": "active",
+      "retirement_receipt_path": "data/route-identity/operational-projection-retirements/v1/q7-q07-current-ineligible-2026-07-18.json",
+      "retirement_receipt_sha256": "e661f065ab60bf44ac2dbe3f65b46cb50c6c9548b5e6e61a3fb91e361869681a"
+    },
+    {
+      "candidate_id": "candidate:e5794fe8a3becced0f7d362a",
+      "candidate_key": "event:event_q8-route-redesign-effective-2025-08-31",
+      "occurrence_id": "occurrence:934b8066ac790c3820f764d1",
+      "accepted_action": "terminal_projection_retired_candidate",
+      "terminal_disposition": "retired",
+      "registry_identity_state": "active",
+      "retirement_receipt_path": "data/route-identity/operational-projection-retirements/v1/q8-q08-current-ineligible-2026-07-18.json",
+      "retirement_receipt_sha256": "f4fdfcead32256bf9b49ec02f6c8a35a223724cf47673525a9104b998d7910f2"
+    },
+    {
+      "candidate_id": "candidate:380750ba0c716896ae5342ca",
+      "candidate_key": "event:event_q9-qbnr-service-change-2025-08-31",
+      "occurrence_id": "occurrence:9d9f23af3933cda5d4dc1abd",
+      "accepted_action": "terminal_projection_retired_candidate",
+      "terminal_disposition": "retired",
+      "registry_identity_state": "active",
+      "retirement_receipt_path": "data/route-identity/operational-projection-retirements/v1/q9-q09-current-ineligible-2026-07-18.json",
+      "retirement_receipt_sha256": "6293121b708d8956ab0fc254cfd86dd4e88f8fac5f8ae5c5879064092cd4b114"
+    }
+  ],
+  "expected_wave_arithmetic": {
+    "terminal_candidates": 5,
+    "published_candidates": 1,
+    "projection_retired_candidates": 4,
+    "active_identity_count": 135,
+    "published_active_identity_count": 131,
+    "projection_retired_active_identity_count": 4,
+    "unresolved_active_identity_count": 0
+  }
+}

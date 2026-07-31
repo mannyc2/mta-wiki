@@ -9,7 +9,10 @@ import {
   type OperationalEpisodeEvidenceBinding,
 } from "../packages/pipeline/src/materialize/operational-episode-adapters";
 import { readCanonicalRecordsFromJsonl } from "../packages/pipeline/src/materialize/canonical-read";
-import { loadOperationalOccurrenceIdentityRegistryV2 } from "../packages/pipeline/src/materialize/operational-occurrence-identity-operations";
+import {
+  loadOperationalOccurrenceIdentityOperations,
+  replayOperationalOccurrenceIdentityOperations,
+} from "../packages/pipeline/src/materialize/operational-occurrence-identity-operations";
 
 const outputDir = join(repoRoot, "data", "operational-episode-resolution", "adapters");
 const legacyDecisionDir = join(
@@ -69,7 +72,16 @@ function relationTouches(record: MtaCanonicalRecord, ids: ReadonlySet<string>): 
 
 const records = readCanonicalRecordsFromJsonl();
 const recordsById = new Map(records.map((record) => [record.record_id, record]));
-const registry = loadOperationalOccurrenceIdentityRegistryV2(repoRoot);
+// This generator owns only the immutable migration-shaped mapping root. New
+// identities receive append-only mappings under adapters/accepted-current;
+// replaying them here would both rewrite the historical corpus and create a
+// duplicate observation owner.
+const migrationIdentityOperations = loadOperationalOccurrenceIdentityOperations(
+  join(repoRoot, "data", "operational-occurrence-identities", "operations"),
+);
+const registry = replayOperationalOccurrenceIdentityOperations(
+  migrationIdentityOperations,
+);
 const legacyDecisions = readdirSync(legacyDecisionDir)
   .filter((name) => name.endsWith(".json"))
   .sort()
@@ -137,15 +149,34 @@ for (const identity of registry) {
   contents.set(`${mappingId}.json`, `${stableJson(parsed as unknown as JsonValue)}\n`);
 }
 
-if (contents.size !== 135) throw new Error(`expected 135 identity mappings, found ${contents.size}`);
+if (contents.size !== registry.length) {
+  throw new Error(
+    `historical identity/mapping partition drifted: ${registry.length} identities, ` +
+      `${contents.size} mappings`,
+  );
+}
 if (mode === "--write") {
   mkdirSync(outputDir, { recursive: true });
   for (const [name, content] of contents) writeFileSync(join(outputDir, name), content);
 } else {
   if (!existsSync(outputDir)) throw new Error(`mapping output directory is missing: ${outputDir}`);
-  const names = readdirSync(outputDir).sort();
+  const entries = readdirSync(outputDir, { withFileTypes: true });
+  const unsupported = entries.filter((entry) =>
+    !(entry.isFile() && entry.name.endsWith(".json")) &&
+    !(entry.isDirectory() && entry.name === "accepted-current")
+  );
+  if (unsupported.length > 0) {
+    throw new Error(
+      `operational episode mapping root contains unsupported entries: ` +
+        unsupported.map((entry) => entry.name).sort().join(", "),
+    );
+  }
+  const names = entries
+    .filter((entry) => entry.isFile())
+    .map((entry) => entry.name)
+    .sort();
   if (stableJson(names as unknown as JsonValue) !== stableJson([...contents.keys()].sort() as unknown as JsonValue)) {
-    throw new Error("operational episode mapping file set is stale");
+    throw new Error("historical operational episode mapping file set is stale");
   }
   for (const [name, content] of contents) {
     if (readFileSync(join(outputDir, name), "utf8") !== content) {

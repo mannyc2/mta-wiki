@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-provider-budget-authorization-v1",
+  "plan_id": "plan-052",
+  "currency": "USD",
+  "hard_incremental_ceiling_usd": 1,
+  "approved_campaign_estimate_usd": 0.463214,
+  "authorized_at": "2026-07-30T00:00:00.000Z",
+  "authorized_by": "MTA Wiki owner (Codex source task 019faea5-b07f-7560-879f-7476152764ff)",
+  "allowed_provider": "pioneer",
+  "allowed_profile": "pioneer-deepseek-flash",
+  "allowed_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "new_provider_forbidden": true,
+  "new_subscription_forbidden": true,
+  "paid_external_data_forbidden": true,
+  "ledger_path": "data/operational-episode-resolution/campaigns/plan-052/provider-usage-ledger.jsonl",
+  "guard_command": "bun scripts/plan052-provider-budget.ts"
+}

@@ -1,0 +1,700 @@
+{
+  "schema_version": 1,
+  "contract_id": "resolved-transit-public-key-registry-v1",
+  "generator_commit": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+  "as_of_date": "2026-07-27",
+  "registry_head": "3fc7581010e4cabf454922257411075afda4df9b98bbf13df625c678893bbdc0",
+  "input_fingerprint": "100b5058ac2ac46aabb74efed1378ca4652876746d169f791740e5daaa920b88",
+  "eligible_subject_count": 577,
+  "existing_live_key_count": 536,
+  "newly_established_losslessly": 41,
+  "newly_established_from_accepted_review": 0,
+  "requires_review_count": 0,
+  "proposed_operations": [
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:02ff5ad546e9efe36e2aef6d",
+      "key_kind": "source",
+      "subject_id": "fordham_rd_inwood_cb7_jun2023",
+      "owner_intervention_id": null,
+      "public_key": "fordham-rd-inwood-cb7-jun2023",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "fordham_rd_inwood_cb7_jun2023",
+        "title": "Fordham Road – Inwood Bus Priority - Community Board 7 Transportation Committee – June 1, 2023"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:03306334f1b7fc24968dd541",
+      "key_kind": "intervention_component",
+      "subject_id": "application:5ba70c033fb6a83e51340e48",
+      "owner_intervention_id": "occurrence:8c858d57336960f18223d10b",
+      "public_key": "m79-sbs-fare-collection-unknown-improved-fare-collection-at-all-stops-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m79-sbs",
+        "treatment_family_key": "fare-collection",
+        "action": "unknown",
+        "treatment_display_name": "Improved fare collection at all stops",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:1a1af41a48dada4c834b5a49",
+      "key_kind": "intervention_component",
+      "subject_id": "application:b31c8464a76012d9051ccbc9",
+      "owner_intervention_id": "occurrence:77c4d4453f2ec0f91971d9d1",
+      "public_key": "m14-sbs-traffic-restriction-unknown-ttp-corridor-restrictions-bus-truck-emergency-priority-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m14-sbs",
+        "treatment_family_key": "traffic-restriction",
+        "action": "unknown",
+        "treatment_display_name": "TTP corridor restrictions (bus/truck/emergency priority)",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:2692e45cf7a904d6a3cd76fb",
+      "key_kind": "source",
+      "subject_id": "bay_pkwy_cropsey_ave_jan2025",
+      "owner_intervention_id": null,
+      "public_key": "bay-pkwy-cropsey-ave-jan2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "bay_pkwy_cropsey_ave_jan2025",
+        "title": "Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:280cbecd1e5f020cb840b767",
+      "key_kind": "intervention_component",
+      "subject_id": "application:0b7095c5c78cf686c5a8bd09",
+      "owner_intervention_id": "occurrence:efd60476cbc36f3bf2f33d1b",
+      "public_key": "b82-sbs-bus-stop-or-boarding-unknown-bus-boarding-island-on-cropsey-avenue-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b82-sbs",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "action": "unknown",
+        "treatment_display_name": "Bus boarding island on Cropsey Avenue",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:2bd0db68e57b9478ead01686",
+      "key_kind": "source",
+      "subject_id": "tremont_ave_bus_priority_cb5_nov2024",
+      "owner_intervention_id": null,
+      "public_key": "tremont-ave-bus-priority-cb5-nov2024",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "tremont_ave_bus_priority_cb5_nov2024",
+        "title": "Tremont Av Bus Priority Project - Bronx CB5 Nov 2024"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:2bd637b88d75082466dadad7",
+      "key_kind": "intervention_component",
+      "subject_id": "application:ba1de677d698b4a6a726a489",
+      "owner_intervention_id": "occurrence:9b7895927d9cf4530b5073bd",
+      "public_key": "m34a-sbs-fare-collection-unknown-off-board-fare-collection-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m34a-sbs",
+        "treatment_family_key": "fare-collection",
+        "action": "unknown",
+        "treatment_display_name": "Off-board fare collection",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:2f1ad693026ef579fdc5a41f",
+      "key_kind": "treatment_family",
+      "subject_id": "traffic_restriction",
+      "owner_intervention_id": null,
+      "public_key": "traffic-restriction",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "family": "traffic_restriction",
+        "label": "Traffic restrictions"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:381c353532a3d66fda04dfc4",
+      "key_kind": "route",
+      "subject_id": "route_able-s79-sbs",
+      "owner_intervention_id": null,
+      "public_key": "s79-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "S79+",
+        "route_display_name": "S79-SBS - ABLE route"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:38206caf3cca343a5217d4ab",
+      "key_kind": "route",
+      "subject_id": "route_b38",
+      "owner_intervention_id": null,
+      "public_key": "b38",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "B38",
+        "route_display_name": "Proposed B38 Local"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:38dbcb5943d51a7bfff31b4d",
+      "key_kind": "intervention_component",
+      "subject_id": "application:0958fa4cc834471277fe5c5a",
+      "owner_intervention_id": "occurrence:efd60476cbc36f3bf2f33d1b",
+      "public_key": "b6-bus-stop-or-boarding-unknown-bus-boarding-island-on-cropsey-avenue-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b6",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "action": "unknown",
+        "treatment_display_name": "Bus boarding island on Cropsey Avenue",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:3de3127abc0572529ef45e61",
+      "key_kind": "source",
+      "subject_id": "dekalb_lafayette_cb2_dec2024",
+      "owner_intervention_id": null,
+      "public_key": "dekalb-lafayette-cb2-dec2024",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "dekalb_lafayette_cb2_dec2024",
+        "title": "Dekalb-Lafayette Aves Bus and Safety Improvements - CB 2 Existing Conditions Meeting"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:4c54d515dab5fe323970fbad",
+      "key_kind": "source",
+      "subject_id": "brt_nostrand_progress_report_june2016",
+      "owner_intervention_id": null,
+      "public_key": "brt-nostrand-progress-report-june2016",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "brt_nostrand_progress_report_june2016",
+        "title": "B44 SBS on Nostrand Avenue Progress Report"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:51fa514b52fb1490e12871f6",
+      "key_kind": "intervention_component",
+      "subject_id": "application:56a265c4c5fb47753ce38afd",
+      "owner_intervention_id": "occurrence:1bb734757f006e2c7dfc0194",
+      "public_key": "m60-sbs-bus-priority-unknown-the-route-includes-dedicated-bus-lanes-transit-signal-priority-off-board-fare-payment-limited-stops-and-low-floor-three-door-articulated-buses-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m60-sbs",
+        "treatment_family_key": "bus-priority",
+        "action": "unknown",
+        "treatment_display_name": "The route includes dedicated bus lanes, transit signal priority, off-board fare payment, limited stops, and low-floor, three-door articulated buses.",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:58290932e12a7500cc0126a8",
+      "key_kind": "intervention_component",
+      "subject_id": "application:106304bfc0de92e2aec39cfa",
+      "owner_intervention_id": "occurrence:f4d362e25055b1a04e3a67bf",
+      "public_key": "bx12-sbs-bus-lane-unknown-able-on-bus-camera-enforcement-on-bx12-sbs-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx12-sbs",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "ABLE On-Bus Camera Enforcement on Bx12-SBS",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:5d5ea504599fe06ebb238723",
+      "key_kind": "source",
+      "subject_id": "2015_01_08_brt_125th_cb9",
+      "owner_intervention_id": null,
+      "public_key": "2015-01-08-brt-125th-cb9",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "2015_01_08_brt_125th_cb9",
+        "title": "M60 Select Bus Service on 125th Street"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:60f496986e5afd3587364aa4",
+      "key_kind": "intervention_component",
+      "subject_id": "application:c8301860a010b60d2033a188",
+      "owner_intervention_id": "occurrence:68897d185ad24d1d38854c7c",
+      "public_key": "b41-bus-lane-unknown-center-running-physically-protected-bus-lanes-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b41",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "Center-Running Physically Protected Bus Lanes",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:7615a9debe65de7e1639d422",
+      "key_kind": "intervention_component",
+      "subject_id": "application:1c3fdc8c8b551027a13d1b44",
+      "owner_intervention_id": "occurrence:55c3212ffbf62125b4e9603e",
+      "public_key": "b44-sbs-bus-lane-unknown-b44-sbs-bus-lanes-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b44-sbs",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "B44 SBS Bus Lanes",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:8189f577d16184d4a68fee63",
+      "key_kind": "route",
+      "subject_id": "route_b6-2015-sbk-corridor",
+      "owner_intervention_id": null,
+      "public_key": "b6",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "B6",
+        "route_display_name": "B6"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:89a5c09dc96a38b7defc7bc3",
+      "key_kind": "route",
+      "subject_id": "route_m14-ad-sbs",
+      "owner_intervention_id": null,
+      "public_key": "m14-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "M14+",
+        "route_display_name": "M14 A/D Select Bus Service"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:8ffc1e88194bee1f9ae89631",
+      "key_kind": "source",
+      "subject_id": "brt_route_index",
+      "owner_intervention_id": null,
+      "public_key": "brt-route-index",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "brt_route_index",
+        "title": "NYC DOT Select Bus Service Routes index"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:95168f0006bde22830893889",
+      "key_kind": "source",
+      "subject_id": "fordham_rd_inwood_cb5_jun2023",
+      "owner_intervention_id": null,
+      "public_key": "fordham-rd-inwood-cb5-jun2023",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "fordham_rd_inwood_cb5_jun2023",
+        "title": "Fordham Road – Inwood Bus Priority, CB5 June 2023"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:a4f03da7859a472123ce0df6",
+      "key_kind": "source",
+      "subject_id": "malcolm_x_blvd_utica_ave_mar2020",
+      "owner_intervention_id": null,
+      "public_key": "malcolm-x-blvd-utica-ave-mar2020",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "malcolm_x_blvd_utica_ave_mar2020",
+        "title": "Malcolm X Blvd Transit & Traffic Improvements – CB 3 Full Board March 2020"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:af2ab1edc52e53fdf4c41b88",
+      "key_kind": "treatment_family",
+      "subject_id": "bus_priority",
+      "owner_intervention_id": null,
+      "public_key": "bus-priority",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "family": "bus_priority",
+        "label": "Bus priority"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:b6081716ec839031dbc50d69",
+      "key_kind": "route",
+      "subject_id": "route_b82-sbs",
+      "owner_intervention_id": null,
+      "public_key": "b82-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "B82+",
+        "route_display_name": "Southern Brooklyn Select Bus Service"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:b687eaf88cc7e798db859c52",
+      "key_kind": "route",
+      "subject_id": "route_125th-laguardia-sbs",
+      "owner_intervention_id": null,
+      "public_key": "m60-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "M60+",
+        "route_display_name": "M60 SBS - Manhattan to La Guardia Airport"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:b748dd6e071c4b7ab2031aaf",
+      "key_kind": "intervention_component",
+      "subject_id": "application:9e4f6d526407565b49334b94",
+      "owner_intervention_id": "occurrence:309903e646457fcbff2036c4",
+      "public_key": "b46-sbs-bus-lane-unknown-southbound-bus-lane-fulton-st-to-atlantic-ave-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b46-sbs",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "Southbound bus lane Fulton St to Atlantic Ave",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:bbcf854c5c4afbb1553330e7",
+      "key_kind": "source",
+      "subject_id": "14th_street_preliminary_report_fall_2019_corrected",
+      "owner_intervention_id": null,
+      "public_key": "14th-street-preliminary-report-fall-2019-corrected",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+        "title": "14TH STREET TRANSIT & TRUCK PRIORITY PILOT PROJECT PRELIMINARY REPORT | FALL 2019"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:c338da23194d7d3ad9e40da9",
+      "key_kind": "intervention_component",
+      "subject_id": "application:6f5fd55b678227830c8780bc",
+      "owner_intervention_id": "occurrence:013153fac4644d8acd272413",
+      "public_key": "bx36-signal-priority-unknown-bus-queue-jump-signal-at-grand-concourse-tremont-av-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx36",
+        "treatment_family_key": "signal-priority",
+        "action": "unknown",
+        "treatment_display_name": "Bus Queue Jump Signal at Grand Concourse & Tremont Av",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:c4d1de4e7fb93fbf38ced297",
+      "key_kind": "intervention_component",
+      "subject_id": "application:fb82d5ef62ece9ed66185a09",
+      "owner_intervention_id": "occurrence:68897d185ad24d1d38854c7c",
+      "public_key": "b67-bus-lane-unknown-center-running-physically-protected-bus-lanes-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b67",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "Center-Running Physically Protected Bus Lanes",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:cd9b15861de8bc92ca17a318",
+      "key_kind": "source",
+      "subject_id": "2014_11_brt_utica_workshopsummary",
+      "owner_intervention_id": null,
+      "public_key": "2014-11-brt-utica-workshopsummary",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "2014_11_brt_utica_workshopsummary",
+        "title": "Utica Avenue Select Bus Service Workshop Summary"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:d1c8e9acf9f4b1c34b06cca9",
+      "key_kind": "source",
+      "subject_id": "brt_m79_cb7_nov2018",
+      "owner_intervention_id": null,
+      "public_key": "brt-m79-cb7-nov2018",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "brt_m79_cb7_nov2018",
+        "title": "M79 Crosstown Select Bus Service – Fall 2018 Update · CB 7"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:d3ce7a37f2a4cc96c19ea190",
+      "key_kind": "intervention_component",
+      "subject_id": "application:4928ccbaf1819b136f5cd1b5",
+      "owner_intervention_id": "occurrence:7dc94dfb9eda23a60c4e33bf",
+      "public_key": "m15-sbs-bus-lane-unknown-offset-and-curbside-bus-lanes-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m15-sbs",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "offset and curbside bus lanes",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:d76383764ae7e35d8a9272d0",
+      "key_kind": "intervention_component",
+      "subject_id": "application:e373c48c728d92eb921cea66",
+      "owner_intervention_id": "occurrence:9b7895927d9cf4530b5073bd",
+      "public_key": "m34-sbs-fare-collection-unknown-off-board-fare-collection-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m34-sbs",
+        "treatment_family_key": "fare-collection",
+        "action": "unknown",
+        "treatment_display_name": "Off-board fare collection",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:d943df946fe05288dfa74833",
+      "key_kind": "route",
+      "subject_id": "route_bx12-plus",
+      "owner_intervention_id": null,
+      "public_key": "bx12-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "BX12+",
+        "route_display_name": "BX12-SBS - ABLE route"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:d9964926ed5014c961a30881",
+      "key_kind": "intervention_component",
+      "subject_id": "application:766952c8049e6a46d5d967e9",
+      "owner_intervention_id": "occurrence:16e3d792f8d2e6d28fb9df61",
+      "public_key": "b46-bus-lane-unknown-utica-avenue-bus-lanes-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b46",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "Utica Avenue bus lanes",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:e645ffc004122d79b4ec3fef",
+      "key_kind": "source",
+      "subject_id": "bay_pkwy_cropsey_ave_cb12_jun2025",
+      "owner_intervention_id": null,
+      "public_key": "bay-pkwy-cropsey-ave-cb12-jun2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "bay_pkwy_cropsey_ave_cb12_jun2025",
+        "title": "Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements Draft Proposal"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:efd845d3474b41c393ca84c1",
+      "key_kind": "intervention_component",
+      "subject_id": "application:3c894b11da6ee3ae996e3910",
+      "owner_intervention_id": "occurrence:128579d80d38412f8ca818a0",
+      "public_key": "b38-bus-lane-unknown-summer-2024-temporary-bus-lanes-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b38",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "Summer 2024 Temporary Bus Lanes",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:f4ed5bdd55fa6434dae5f27e",
+      "key_kind": "route",
+      "subject_id": "route_utica-ave-sbs",
+      "owner_intervention_id": null,
+      "public_key": "b46-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "B46+",
+        "route_display_name": "B46-SBS - ABLE route"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:fa06ac3076298a5026068526",
+      "key_kind": "intervention_component",
+      "subject_id": "application:90b1ab75afae5be88e0dee62",
+      "owner_intervention_id": "occurrence:6d37007e6b7a97e1343790d2",
+      "public_key": "s79-sbs-bus-stop-or-boarding-unknown-reduced-s79-stations-from-80-to-18-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "s79-sbs",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "action": "unknown",
+        "treatment_display_name": "Reduced S79 stations from 80 to 18",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:fda5c301510f561d5781dab8",
+      "key_kind": "source",
+      "subject_id": "2014_hylan_blvd_final_report",
+      "owner_intervention_id": null,
+      "public_key": "2014-hylan-blvd-final-report",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "2014_hylan_blvd_final_report",
+        "title": "S79 on Hylan Boulevard +selectbus service Progress Report"
+      }
+    }
+  ],
+  "requires_review": [],
+  "receipt_id": "public-key-migration:f4c21fa78665e5b2e4c84636f9c8b671c17fcd2dccfe3396632237bccb1d63aa"
+}

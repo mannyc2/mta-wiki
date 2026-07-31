@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "batch_id": "w1-characterization",
+  "reviewer": "plan-052-independent-characterization",
+  "review_role": "independent",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w1-characterization.json",
+  "manifest_sha256": "b96adbd4878a5abfae2cd9523c3534239195ea876dc0877fffc5abc8a99fbe7e",
+  "manifest_verification": {
+    "candidate_count": 30,
+    "published_count": 18,
+    "pending_count": 12,
+    "observation_count": 33,
+    "evidence_source_pin_count": 39,
+    "evidence_source_hash_mismatches": [],
+    "observation_partition": {
+      "candidate_bearing": 18,
+      "pending_segmentation": 12,
+      "not_episode_evidence": 3
+    },
+    "status": "pass"
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "review_complete": true,
+  "stop": true,
+  "stop_reason": "identity_or_incidence_cannot_be_determined",
+  "stop_candidate_id": "candidate:02cad757a6d52baca3130545",
+  "findings": [
+    {
+      "candidate_id": "candidate:fdb0996559f52e8f0303ac1e",
+      "candidate_key": "event:event_ace-m2-m4-implementation-2025-05-19",
+      "observation_ids": ["event_ace-m2-m4-implementation-2025-05-19"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence": [
+        "M2|route_m2-ace|treatment_ace-m2-m4-implementation-2025-05-19|event_ace-m2-m4-implementation-2025-05-19",
+        "M4|route_m4-ace|treatment_ace-m2-m4-implementation-2025-05-19|event_ace-m2-m4-implementation-2025-05-19"
+      ],
+      "cross_product_proof": "two routes, one shared ACE treatment"
+    },
+    {
+      "candidate_id": "candidate:bc3af61e8e8faf45202daa06",
+      "candidate_key": "event:event_ace-m42-m100-bx5-implementation-2025-05-27",
+      "observation_ids": ["event_ace-m42-m100-bx5-implementation-2025-05-27"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence": [
+        "BX5|route_bx5-addendum-update|treatment_ace-m42-m100-bx5-implementation-2025-05-27|event_ace-m42-m100-bx5-implementation-2025-05-27",
+        "M100|route_m100-ace|treatment_ace-m42-m100-bx5-implementation-2025-05-27|event_ace-m42-m100-bx5-implementation-2025-05-27",
+        "M42|route_m42-ace|treatment_ace-m42-m100-bx5-implementation-2025-05-27|event_ace-m42-m100-bx5-implementation-2025-05-27"
+      ],
+      "cross_product_proof": "three routes, one shared ACE treatment"
+    },
+    {
+      "candidate_id": "candidate:b5f53263fdbf92efc04b98e4",
+      "candidate_key": "event:event_ace-program-expansion-dec2025",
+      "observation_ids": ["event_ace-program-expansion-dec2025"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence": [
+        "B60|route_b60|treatment_ace-b60-b68-m57-warning-phase-2025-12-08|event_ace-program-expansion-dec2025",
+        "B68|route_b68-nyct-2025|treatment_ace-b60-b68-m57-warning-phase-2025-12-08|event_ace-program-expansion-dec2025",
+        "M57|route_m57-nyct-2025|treatment_ace-b60-b68-m57-warning-phase-2025-12-08|event_ace-program-expansion-dec2025"
+      ],
+      "cross_product_proof": "three routes, one shared warning-phase treatment"
+    },
+    {
+      "candidate_id": "candidate:089c5dca117ab12f156ec032",
+      "candidate_key": "event:event_broadway-center-running-bus-lane-installation-confirmed",
+      "observation_ids": ["event_broadway-center-running-bus-lane-installation-confirmed"],
+      "current_state": "pending_review",
+      "recommended_disposition": "published",
+      "identity_operation": "establish",
+      "assessment": "The June 10 retrospective proves the lane installed by publication; the pinned Broadway evidence and exact route binding identify Q70+.",
+      "incidence": [
+        "Q70+|route_q70-sbs|treatment_broadway-center-running-bus-lane|event_broadway-center-running-bus-lane-installation-confirmed|corridor_broadway-queens"
+      ],
+      "cross_product_proof": "one route, one treatment, one bounded corridor"
+    },
+    {
+      "candidate_id": "candidate:0065d35d05693332aeb8b1ef",
+      "candidate_key": "event:event_bus-lane-implementation-fall-2015",
+      "observation_ids": ["event_bus-lane-implementation-fall-2015"],
+      "current_state": "pending_review",
+      "recommended_disposition": "published",
+      "identity_operation": "establish",
+      "assessment": "The source explicitly says B46 dedicated lanes were completed in Fall 2015 from St. Johns Place to Church Avenue.",
+      "incidence": [
+        "B46|route_b46-local-2012|treatment_dedicated-bus-lanes-utica-2015|event_bus-lane-implementation-fall-2015|corridor_utica-ave-st-johns-pl-church-ave-2013"
+      ],
+      "cross_product_proof": "one GTFS route identity, one treatment, one bounded corridor"
+    },
+    {
+      "candidate_id": "candidate:1231d55f0a2a808692101b1c",
+      "candidate_key": "event:event_bx35-late-spring-fall-2020-implementation",
+      "observation_ids": ["event_bx35-late-spring-fall-2020-implementation"],
+      "current_state": "pending_review",
+      "recommended_disposition": "insufficient_evidence",
+      "identity_operation": "none",
+      "assessment": "February 2020 evidence is explicitly proposed and forward-looking; no delivered implementation is established."
+    },
+    {
+      "candidate_id": "candidate:061d89f4090bae3d8d422e25",
+      "candidate_key": "event:event_dekalb-lafayette-implementation-summerfall2025",
+      "observation_ids": ["event_dekalb-lafayette-implementation-summerfall2025"],
+      "current_state": "pending_review",
+      "recommended_disposition": "insufficient_evidence",
+      "identity_operation": "none",
+      "assessment": "December 2024 evidence records a planned Summer/Fall 2025 implementation, not completed work."
+    },
+    {
+      "candidate_id": "candidate:d29162b2b125ffccac945d79",
+      "candidate_key": "event:event_express-bus-schedule-readjustment-effective-2024-09-01",
+      "observation_ids": ["event_express-bus-schedule-readjustment-effective-2024-09-01"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence": [
+        "BM2|route_bm2-brt-south-brooklyn-2017|treatment_weekday-express-bus-trip-discontinuation-fall-2024",
+        "BM5|route_bm5-brt-south-brooklyn-2017|treatment_weekday-express-bus-trip-discontinuation-fall-2024",
+        "SIM1C|route_sim1c-meeting-doc-138456|treatment_weekday-express-bus-trip-discontinuation-fall-2024",
+        "SIM23|route_sim23-madison-ave-cb6-jun2025|treatment_weekday-express-bus-trip-discontinuation-fall-2024",
+        "SIM24|route_sim24-madison-ave-cb6-jun2025|treatment_weekday-express-bus-trip-discontinuation-fall-2024",
+        "SIM4C|route_sim4c-meeting-doc-138456|treatment_weekday-express-bus-trip-discontinuation-fall-2024"
+      ],
+      "cross_product_proof": "six routes, one shared discontinuation treatment"
+    },
+    {
+      "candidate_id": "candidate:9c30e538fa63b2f4a0b8629e",
+      "candidate_key": "event:event_express-bus-service-enhancements-took-effect-march-2025",
+      "observation_ids": ["event_express-bus-service-enhancements-took-effect-march-2025"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence_routes": ["BM2", "BM5", "X27", "QM15", "SIM1C", "SIM23", "SIM24", "SIM4C"],
+      "treatment": "treatment_weekday-express-bus-trip-additions-spring-2025",
+      "phase": "event_express-bus-service-enhancements-took-effect-march-2025",
+      "cross_product_proof": "eight routes, one shared trip-addition treatment"
+    },
+    {
+      "candidate_id": "candidate:5869244004949dd6a7ef652e",
+      "candidate_key": "event:event_express-bus-service-increases-begin-june-30-2024",
+      "observation_ids": ["event_express-bus-service-increases-begin-june-30-2024"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence_routes": ["BM2", "BM5", "SIM1C", "SIM23", "SIM24", "SIM4C"],
+      "treatment": "treatment_weekday-express-bus-trip-additions-summer-2024",
+      "phase": "event_express-bus-service-increases-begin-june-30-2024",
+      "cross_product_proof": "six routes, one shared trip-addition treatment"
+    },
+    {
+      "candidate_id": "candidate:fa8d92583c278bfcf8f0f5dc",
+      "candidate_key": "event:event_fare-collection-resumed",
+      "observation_ids": ["event_fare-collection-resumed"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence_routes": ["B60", "BX18A", "BX18B", "M116", "Q4", "S46", "S96"],
+      "treatment": "treatment_fare-collection-resumption-2024",
+      "phase": "event_fare-collection-resumed",
+      "cross_product_proof": "seven pilot routes, one shared fare-resumption treatment"
+    },
+    {
+      "candidate_id": "candidate:6d19f1cc63b3315494b43743",
+      "candidate_key": "event:event_m15-sbs-launch-20101010",
+      "observation_ids": ["event_m15-sbs-launch-20101010"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence": [
+        "M15+|route_m15-sbs|treatment_off-board-fare-collection-m15-sbs|event_m15-sbs-launch-20101010"
+      ]
+    },
+    {
+      "candidate_id": "candidate:9d1f3c0e9fc5bf867b5ca3c2",
+      "candidate_key": "event:event_m86-sbs-launch",
+      "observation_ids": ["event_m86-sbs-launch"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence": [
+        "M86+|route_m86-sbs|treatment_off-board-fare-m86|event_m86-sbs-launch",
+        "M86+|route_m86-sbs|treatment_real-time-info-m86|event_m86-sbs-launch"
+      ],
+      "cross_product_proof": "one route, two independently evidenced treatments"
+    },
+    {
+      "candidate_id": "candidate:002e8ac7107b222e82e03c82",
+      "candidate_key": "event:event_machine-installation-oct4-2011",
+      "observation_ids": ["event_machine-installation-oct4-2011"],
+      "current_state": "pending_review",
+      "recommended_disposition": "published",
+      "identity_operation": "establish",
+      "assessment": "The source directly records SBS fare-machine installation beginning October 4 for the M34/M34A project.",
+      "incidence": [
+        "M34+|route_m34-sbs|treatment_off-board-fare-collection-34th|event_machine-installation-oct4-2011|corridor_34th-st-busway",
+        "M34A+|route_m34a-sbs|treatment_off-board-fare-collection-34th|event_machine-installation-oct4-2011|corridor_34th-st-busway"
+      ],
+      "cross_product_proof": "two routes, one shared fare-machine treatment"
+    },
+    {
+      "candidate_id": "candidate:112b22f996a45af91cb3ebb9",
+      "candidate_key": "event:event_meeting-doc-186616-ace-routes-activated-sep15-2025",
+      "observation_ids": ["event_meeting-doc-186616-ace-routes-activated-sep15-2025"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence_routes": ["BX20", "BX3", "BX7"],
+      "treatment": "treatment_meeting-doc-186616-ace-route-activation",
+      "phase": "event_meeting-doc-186616-ace-routes-activated-sep15-2025",
+      "cross_product_proof": "three routes, one shared ACE activation treatment"
+    },
+    {
+      "candidate_id": "candidate:001098617ce238bef5e9cbc4",
+      "candidate_key": "event:event_new-years-eve-program-2025",
+      "observation_ids": ["event_new-years-eve-program-2025"],
+      "current_state": "pending_review",
+      "recommended_disposition": "outside_domain",
+      "identity_operation": "none",
+      "assessment": "LIRR-only holiday rail service, outside the bus intervention domain."
+    },
+    {
+      "candidate_id": "candidate:2f6cc9f56f959b89a829bd16",
+      "candidate_key": "event:event_pilot-start_2",
+      "observation_ids": ["event_pilot-start_2"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence_routes": ["B60", "BX18A", "BX18B", "M116", "Q4", "S46", "S96"],
+      "treatment": "treatment_fare-free-fare-collection",
+      "phase": "event_pilot-start_2",
+      "cross_product_proof": "seven pilot routes, one shared fare-free treatment"
+    },
+    {
+      "candidate_id": "candidate:000c6dc834dffa5ef7e98f7f",
+      "candidate_key": "event:event_platform-f-in-service",
+      "observation_ids": ["event_platform-f-in-service"],
+      "current_state": "pending_review",
+      "recommended_disposition": "outside_domain",
+      "identity_operation": "none",
+      "assessment": "Jamaica rail-platform and station-track infrastructure, outside the bus intervention domain."
+    },
+    {
+      "candidate_id": "candidate:03b50ad4dc550953706514a5",
+      "candidate_key": "event:event_q41-qbnr-service-change-2025-08-31",
+      "observation_ids": ["event_q41-qbnr-service-change-2025-08-31"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence": [
+        "Q41|treatment_q41-109-avenue-extension-2025",
+        "Q41|treatment_q41-south-richmond-hill-discontinuation-2025",
+        "Q41|treatment_q41-stop-removal-2025"
+      ],
+      "cross_product_proof": "one route, three separately evidenced treatments"
+    },
+    {
+      "candidate_id": "candidate:00a57691fb4583cceadb9be0",
+      "candidate_key": "event:event_q52-q53-sbs-launch-nov2017_2",
+      "observation_ids": ["event_q52-q53-sbs-launch-nov2017_2"],
+      "current_state": "pending_review",
+      "recommended_disposition": "published",
+      "identity_operation": "establish",
+      "assessment": "The source directly records both route launches and SBS fare-machine installation at the launch phase.",
+      "incidence": [
+        "Q52+|route_q52-sbs-queens|treatment_off-board-fare-collection_4|event_q52-q53-sbs-launch-nov2017_2|corridor_woodhaven-cross-bay-blvds",
+        "Q53+|route_q53-sbs-ace|treatment_off-board-fare-collection_4|event_q52-q53-sbs-launch-nov2017_2|corridor_woodhaven-cross-bay-blvds"
+      ],
+      "cross_product_proof": "two explicitly named launch routes, one shared fare-machine treatment; no plural-treatment expansion"
+    },
+    {
+      "candidate_id": "candidate:0412e2f2c3cffe8b2d0bbb23",
+      "candidate_key": "event:event_q56-qbnr-service-change-2025-08-31",
+      "observation_ids": ["event_q56-qbnr-service-change-2025-08-31"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence": ["Q56|treatment_q56-stop-removal-2025"]
+    },
+    {
+      "candidate_id": "candidate:02e4ee27eca455874f0edb4d",
+      "candidate_key": "event:event_q82-qbnr-start-2025-06-29",
+      "observation_ids": ["event_q82-qbnr-start-2025-06-29"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence": [
+        "Q82|treatment_q82-belmont-jamaica-connection-2025",
+        "Q82|treatment_q82-limited-stops-2025",
+        "Q82|treatment_q82-q110-hempstead-replacement-2025",
+        "Q82|treatment_q82-q36-212-replacement-2025"
+      ],
+      "cross_product_proof": "one route, four separately evidenced treatments"
+    },
+    {
+      "candidate_id": "candidate:08261cb9526e35e4e6652aa1",
+      "candidate_key": "event:event_qm16-qbnr-service-change-2025-09-02",
+      "observation_ids": ["event_qm16-qbnr-service-change-2025-09-02"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence": ["QM16|treatment_qm16-frequency-adjustment-2025"]
+    },
+    {
+      "candidate_id": "candidate:079d1298921cadb340e8dd03",
+      "candidate_key": "event:event_qm20-qbnr-service-change-2025-06-30",
+      "observation_ids": ["event_qm20-qbnr-service-change-2025-06-30"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence": [
+        "QM20|treatment_qm20-frequency-decrease-2025",
+        "QM20|treatment_qm20-stop-removal-2025"
+      ],
+      "cross_product_proof": "one route, two separately evidenced treatments"
+    },
+    {
+      "candidate_id": "candidate:09d24ae40bf93ee46e8eb095",
+      "candidate_key": "event:event_redesign-restart-aug2021",
+      "observation_ids": ["event_redesign-restart-aug2021"],
+      "current_state": "pending_review",
+      "recommended_disposition": "rejected",
+      "identity_operation": "none",
+      "assessment": "Administrative redesign-program restart, not a route-treatment operational occurrence."
+    },
+    {
+      "candidate_id": "candidate:914b0589afcb11b6d7db759b",
+      "candidate_key": "event:event_route-improvement-initiative-start",
+      "observation_ids": ["event_route-improvement-initiative-start"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence": ["B12|treatment_b12-deliberate-proactive-service-management"]
+    },
+    {
+      "candidate_id": "candidate:028228114b28e6cee3ddd224",
+      "candidate_key": "event:event_sbs-implementation-2012_2",
+      "observation_ids": ["event_sbs-implementation-2012_2"],
+      "current_state": "pending_review",
+      "recommended_disposition": "insufficient_evidence",
+      "identity_operation": "none",
+      "assessment": "The 2010 source states a target 2012 start; it does not prove delivered implementation."
+    },
+    {
+      "candidate_id": "candidate:e8ad808d103bbbe1a9e70ac6",
+      "candidate_key": "event:event_tremont-ace-cameras-operative",
+      "observation_ids": ["event_tremont-ace-cameras-operative"],
+      "current_state": "published",
+      "recommended_disposition": "published",
+      "identity_operation": "preserve",
+      "assessment": "conformant",
+      "incidence": ["BX36|treatment_bx36-ace-activation-tremont-avenue"]
+    },
+    {
+      "candidate_id": "candidate:02cad757a6d52baca3130545",
+      "candidate_key": "event:event_tsp-installation-2022",
+      "observation_ids": ["event_tsp-installation-2022"],
+      "current_state": "pending_review",
+      "recommended_disposition": "STOP",
+      "identity_operation": "none_pending_owner_resolution",
+      "assessment": "Installation of TSP at 37 Flatbush Avenue intersections is proven. Exact route incidence is not. The source says 12 MTA routes use Flatbush Avenue but does not enumerate intersection-level beneficiaries; B12/B41 canonical edges belong to the broader project and a separate planned bus-only-signal treatment.",
+      "known_treatment": "treatment_tsp-flatbush-ave-2022_2",
+      "known_phase": "event_tsp-installation-2022",
+      "known_scope": "corridor_flatbush-avenue",
+      "prohibited_inference": "Do not assign B41, B12, or a B41×B12 route set without exact TSP-specific evidence."
+    },
+    {
+      "candidate_id": "candidate:00d747ca94c86213e5c59992",
+      "candidate_key": "event:event_us-open-2026-shinnecock",
+      "observation_ids": ["event_us-open-2026-shinnecock"],
+      "current_state": "pending_review",
+      "recommended_disposition": "outside_domain",
+      "identity_operation": "none",
+      "assessment": "LIRR extra rail service and temporary rail-station event, outside the bus intervention domain."
+    }
+  ],
+  "observation_only_conformance": [
+    {
+      "event_record_id": "event_flatbush-av-bus-lanes-open-late-fall2026",
+      "disposition": "not_episode_evidence",
+      "reason": "prospective_observation",
+      "assessment": "conformant"
+    },
+    {
+      "event_record_id": "event_goal-implement-2025",
+      "disposition": "not_episode_evidence",
+      "reason": "prospective_observation",
+      "assessment": "conformant"
+    },
+    {
+      "event_record_id": "event_proposed-implementation-spring-summer2025",
+      "disposition": "not_episode_evidence",
+      "reason": "prospective_observation",
+      "assessment": "conformant"
+    }
+  ],
+  "expected_post_wave_arithmetic_if_all_nonblocked_findings_are_integrated": {
+    "wave1_candidates": {
+      "published": 22,
+      "outside_domain": 3,
+      "insufficient_evidence": 3,
+      "rejected": 1,
+      "pending_stop": 1,
+      "total": 30
+    },
+    "wave1_observations": {
+      "candidate_bearing": 29,
+      "pending_segmentation": 1,
+      "not_episode_evidence": 3,
+      "total": 33
+    },
+    "global_after_wave0": {
+      "published": 135,
+      "retired": 4,
+      "outside_domain": 3,
+      "insufficient_evidence": 3,
+      "rejected": 1,
+      "pending_review": 620,
+      "candidate_total": 766,
+      "candidate_bearing_observations": 149,
+      "pending_segmentation_observations": 618,
+      "pending_count": 1238,
+      "invalid_count": 0
+    }
+  },
+  "integration_authorization": "blocked_until_stop_is_resolved"
+}

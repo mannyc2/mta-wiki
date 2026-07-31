@@ -13,6 +13,8 @@ import {
   type OperationalOccurrenceIdentityRegistryV2Entry,
 } from "./operational-occurrence-identity-operations.js";
 import {
+  OPERATIONAL_OCCURRENCE_ONSET_PRECISIONS,
+  type OperationalOccurrenceOnsetPrecision,
   type OperationalOccurrenceReviewTreatment,
 } from "./operational-occurrence-review.js";
 import {
@@ -43,7 +45,7 @@ export type ResolvedInterventionEpisode = {
   candidate_ids: string[];
   resolved_onset: {
     date: string;
-    precision: "day" | "month";
+    precision: OperationalOccurrenceOnsetPrecision;
   };
   route_record_ids: string[];
   gtfs_route_ids: string[];
@@ -85,8 +87,10 @@ export type ResolvedInterventionIdentityReconciliation = {
   reconciliation_id: string;
   occurrence_id: string;
   candidate_ids: string[];
-  disposition: "pending_review";
-  reason_code: "active_identity_without_exact_application_review";
+  disposition: "pending_review" | "projection_retired";
+  reason_code:
+    | "active_identity_without_exact_application_review"
+    | "accepted_route_snapshot_projection_retirement";
   lineage_occurrence_ids: string[];
   decision_ids: string[];
   evidence_bindings: Array<{ record_id: string; source_id: string; evidence_id: string }>;
@@ -102,6 +106,7 @@ export type ResolvedInterventionSummary = {
   identity_reconciliation_count: number;
   published_candidate_count: number;
   pending_identity_candidate_count: number;
+  projection_retired_identity_count: number;
   active_identity_count: number;
   counts_by_action: Record<string, number>;
   counts_by_extent_kind: Record<string, number>;
@@ -166,7 +171,8 @@ const summaryFields = new Set([
   "canonical_input_fingerprint", "context_link_count", "contract_id", "counts_by_action",
   "counts_by_extent_kind", "episode_count", "frontier_input_fingerprint",
   "identity_reconciliation_count", "pending_identity_candidate_count",
-  "published_candidate_count", "review_input_fingerprint", "schema_version",
+  "projection_retired_identity_count", "published_candidate_count",
+  "review_input_fingerprint", "schema_version",
   "source_canonical_record_count", "zero_unexplained_identity_loss",
 ]);
 const onsetFields = new Set(["date", "precision"]);
@@ -244,7 +250,13 @@ export function parseResolvedInterventionEpisode(
   const onset = strictObject(input.resolved_onset, `${path}.resolved_onset`);
   strictFields(onset, onsetFields, `${path}.resolved_onset`);
   const precision = strictString(onset.precision, `${path}.resolved_onset.precision`);
-  if (precision !== "day" && precision !== "month") throw new Error(`${path}.resolved_onset.precision is invalid`);
+  if (
+    !OPERATIONAL_OCCURRENCE_ONSET_PRECISIONS.includes(
+      precision as OperationalOccurrenceOnsetPrecision,
+    )
+  ) {
+    throw new Error(`${path}.resolved_onset.precision is invalid`);
+  }
   const resolutionMethod = strictString(input.resolution_method, `${path}.resolution_method`);
   if (resolutionMethod !== "accepted_review" && resolutionMethod !== "lossless_v1_migration") {
     throw new Error(`${path}.resolution_method is invalid`);
@@ -259,7 +271,7 @@ export function parseResolvedInterventionEpisode(
     candidate_ids: strictSortedStrings(input.candidate_ids, `${path}.candidate_ids`),
     resolved_onset: {
       date: strictString(onset.date, `${path}.resolved_onset.date`),
-      precision,
+      precision: precision as OperationalOccurrenceOnsetPrecision,
     },
     route_record_ids: strictSortedStrings(input.route_record_ids, `${path}.route_record_ids`),
     gtfs_route_ids: strictSortedStrings(input.gtfs_route_ids, `${path}.gtfs_route_ids`),
@@ -329,8 +341,13 @@ export function parseResolvedInterventionIdentityReconciliation(
 ): ResolvedInterventionIdentityReconciliation {
   const input = strictObject(value, path);
   strictFields(input, identityReconciliationFields, path);
-  if (input.schema_version !== 1 || input.disposition !== "pending_review" ||
-      input.reason_code !== "active_identity_without_exact_application_review") {
+  const pending =
+    input.disposition === "pending_review" &&
+    input.reason_code === "active_identity_without_exact_application_review";
+  const projectionRetired =
+    input.disposition === "projection_retired" &&
+    input.reason_code === "accepted_route_snapshot_projection_retirement";
+  if (input.schema_version !== 1 || (!pending && !projectionRetired)) {
     throw new Error(`${path} contract fields are invalid`);
   }
   return {
@@ -338,8 +355,10 @@ export function parseResolvedInterventionIdentityReconciliation(
     reconciliation_id: strictString(input.reconciliation_id, `${path}.reconciliation_id`),
     occurrence_id: strictString(input.occurrence_id, `${path}.occurrence_id`),
     candidate_ids: strictSortedStrings(input.candidate_ids, `${path}.candidate_ids`),
-    disposition: "pending_review",
-    reason_code: "active_identity_without_exact_application_review",
+    disposition: input.disposition as
+      ResolvedInterventionIdentityReconciliation["disposition"],
+    reason_code: input.reason_code as
+      ResolvedInterventionIdentityReconciliation["reason_code"],
     lineage_occurrence_ids: strictSortedStrings(input.lineage_occurrence_ids, `${path}.lineage_occurrence_ids`),
     decision_ids: strictSortedStrings(input.decision_ids, `${path}.decision_ids`),
     evidence_bindings: strictEvidence(
@@ -362,7 +381,8 @@ function parseResolvedInterventionSummary(value: unknown): ResolvedInterventionS
     "episode_count", "application_count", "context_link_count",
     "application_reconciliation_count", "identity_reconciliation_count",
     "published_candidate_count", "pending_identity_candidate_count",
-    "active_identity_count", "source_canonical_record_count",
+    "projection_retired_identity_count", "active_identity_count",
+    "source_canonical_record_count",
   ] as const) {
     if (!Number.isInteger(input[field]) || Number(input[field]) < 0) {
       throw new Error(`resolved intervention summary.${field} must be a non-negative integer`);
@@ -633,31 +653,61 @@ export function buildResolvedInterventions(
   const unresolvedCandidateRows = input.candidate_ledger.filter((candidate) =>
     candidate.disposition === "pending_review" && candidate.unresolved_active_occurrence_ids.length > 0
   );
-  const unresolvedByIdentity = new Map<string, OperationalEpisodeCandidateLedgerRow[]>();
-  for (const candidate of unresolvedCandidateRows) {
-    for (const occurrenceId of candidate.unresolved_active_occurrence_ids) {
-      const rows = unresolvedByIdentity.get(occurrenceId) ?? [];
+  const projectionRetiredCandidateRows = input.candidate_ledger.filter(
+    (candidate) =>
+      candidate.disposition === "retired" &&
+      candidate.lineage_occurrence_ids.some((occurrenceId) =>
+        activeById.has(occurrenceId)
+      ),
+  );
+  const reconciliationByIdentity =
+    new Map<string, OperationalEpisodeCandidateLedgerRow[]>();
+  for (const candidate of [
+    ...unresolvedCandidateRows,
+    ...projectionRetiredCandidateRows,
+  ]) {
+    const occurrenceIds = candidate.disposition === "pending_review"
+      ? candidate.unresolved_active_occurrence_ids
+      : candidate.lineage_occurrence_ids.filter((occurrenceId) =>
+        activeById.has(occurrenceId)
+      );
+    for (const occurrenceId of occurrenceIds) {
+      const rows = reconciliationByIdentity.get(occurrenceId) ?? [];
       rows.push(candidate);
-      unresolvedByIdentity.set(occurrenceId, rows);
+      reconciliationByIdentity.set(occurrenceId, rows);
     }
   }
-  const unresolvedIds = sortedUnique([...unresolvedByIdentity.keys()]);
+  const reconciledIds = sortedUnique([...reconciliationByIdentity.keys()]);
   const expectedUnresolvedIds = sortedUnique(activeIdentities
     .filter((identity) => !reviewsByOccurrence.has(identity.occurrence_id))
     .map((identity) => identity.occurrence_id));
-  if (canonical(unresolvedIds) !== canonical(expectedUnresolvedIds)) {
-    throw new Error("identity reconciliation ids must equal unresolved active identity ids");
+  if (canonical(reconciledIds) !== canonical(expectedUnresolvedIds)) {
+    throw new Error(
+      "identity reconciliation ids must equal unpublished active identity ids",
+    );
   }
-  const identityReconciliation: ResolvedInterventionIdentityReconciliation[] = unresolvedIds.map((occurrenceId) => {
-    const rows = unresolvedByIdentity.get(occurrenceId)!;
+  const identityReconciliation: ResolvedInterventionIdentityReconciliation[] = reconciledIds.map((occurrenceId) => {
+    const rows = reconciliationByIdentity.get(occurrenceId)!;
     const identity = activeById.get(occurrenceId)!;
+    const projectionRetired = rows.every((row) => row.disposition === "retired");
+    if (
+      !projectionRetired &&
+      rows.some((row) => row.disposition === "retired")
+    ) {
+      throw new Error(
+        `active identity ${occurrenceId} mixes pending and projection-retired candidates`,
+      );
+    }
     return {
       schema_version: 1,
       reconciliation_id: `identity-reconciliation:${occurrenceId}`,
       occurrence_id: occurrenceId,
       candidate_ids: rows.map((row) => row.candidate_id).sort(),
-      disposition: "pending_review",
-      reason_code: "active_identity_without_exact_application_review",
+      disposition:
+        projectionRetired ? "projection_retired" as const : "pending_review" as const,
+      reason_code: projectionRetired
+        ? "accepted_route_snapshot_projection_retirement" as const
+        : "active_identity_without_exact_application_review" as const,
       lineage_occurrence_ids: sortedUnique(rows.flatMap((row) => row.lineage_occurrence_ids)),
       decision_ids: sortedUnique([...identity.lineage_operation_ids, ...rows.flatMap((row) => row.decision_ids)]),
       evidence_bindings: [...new Map(rows.flatMap((row) => row.evidence_bindings)
@@ -671,8 +721,8 @@ export function buildResolvedInterventions(
         ),
     };
   });
-  if (publishedIds.some((id) => unresolvedIds.includes(id)) ||
-      canonical(sortedUnique([...publishedIds, ...unresolvedIds])) !==
+  if (publishedIds.some((id) => reconciledIds.includes(id)) ||
+      canonical(sortedUnique([...publishedIds, ...reconciledIds])) !==
         canonical(sortedUnique(activeIdentities.map((identity) => identity.occurrence_id)))) {
     throw new Error("resolved episode and identity reconciliation partitions are not exact");
   }
@@ -725,6 +775,10 @@ export function buildResolvedInterventions(
       identity_reconciliation_count: identityReconciliation.length,
       published_candidate_count: published.length,
       pending_identity_candidate_count: unresolvedCandidateRows.length,
+      projection_retired_identity_count:
+        identityReconciliation.filter((row) =>
+          row.disposition === "projection_retired"
+        ).length,
       active_identity_count: activeIdentities.length,
       counts_by_action: histogram(applications.map((application) => application.action)),
       counts_by_extent_kind: histogram(applications.map((application) => application.extent.kind)),

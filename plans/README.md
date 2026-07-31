@@ -9,7 +9,7 @@ is `plans/051-057-resolved-transit-completion-index.md`.
 | Plan | Title | Depends on | Status |
 |---|---|---|---|
 | 051 | Evolvable occurrence/application review and stable public keys | 050 | DONE (`9cd32baa`) |
-| 052 | Close operational episode frontier | 051 | READY (owner batch/spend/semantic gates) |
+| 052 | Close operational episode frontier | 051 | DONE (local closure; no publication authority) |
 | 053 | Review exact application semantics | 052 | BLOCKED (052 gate) |
 | 054 | Close placement frontier and transitions | 053 | BLOCKED (053 gate) |
 | 055 | Close bitemporal lifecycle and footprint | 054 | BLOCKED (054 gate) |

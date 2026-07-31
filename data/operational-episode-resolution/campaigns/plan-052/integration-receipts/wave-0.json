@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-operational-episode-wave-integration-v1",
+  "plan_id": "plan-052",
+  "wave": 0,
+  "integrator": "plan-052-single-frontier-integrator",
+  "integrated_at": "2026-07-30T00:00:00.000Z",
+  "batch_ids": [
+    "w0-unresolved-identities"
+  ],
+  "batch_manifest_sha256s": {
+    "w0-unresolved-identities": "33a80d7b4394227154e41039bcd6bfd40304aba5410d62b196b2f78b2a817ac1"
+  },
+  "review_receipts": [
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/review-receipts/w0-unresolved-identities/primary.json",
+      "sha256": "6247356e7dc386f8488aafd5f67fd69e1aaaf2f6a81faede207ba868d3517ebb"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/review-receipts/w0-unresolved-identities/independent.json",
+      "sha256": "b814833749151df687616373aec907c3d06de9437864b147c9f4f0a2fd488513"
+    }
+  ],
+  "semantic_artifacts": [
+    {
+      "path": "data/operational-occurrence-review/accepted-current/decisions/plan-052-flatbush-phase1-current-resolution.json",
+      "sha256": "aa558b1acea66f40d867af3b2995e4fd7e3448fe1a16ca5dd346fed3ec35a8eb"
+    },
+    {
+      "path": "data/operational-episode-resolution/decisions/accepted-current/plan-052-wave0-retire-projection-q6.json",
+      "sha256": "e28eeeffea6fa823eca1551b7026319be183bf04f155cb87fbd0ded7a79de3d8"
+    },
+    {
+      "path": "data/operational-episode-resolution/decisions/accepted-current/plan-052-wave0-retire-projection-q7.json",
+      "sha256": "6aa8d0e992c0d792620a48dab90dd3b313d123ac6925465b7fe0b53de65a7c1e"
+    },
+    {
+      "path": "data/operational-episode-resolution/decisions/accepted-current/plan-052-wave0-retire-projection-q8.json",
+      "sha256": "9883c7a14ee0acd92a43abbbb7dcfbc0248eae87fbb1e81fb3af851b686927d8"
+    },
+    {
+      "path": "data/operational-episode-resolution/decisions/accepted-current/plan-052-wave0-retire-projection-q9.json",
+      "sha256": "608627157a32e1d605fc748e2db124b57dcb84cef481db26ddb0e18250b4d7b5"
+    }
+  ],
+  "historical_identity_migration_bytes_changed": false,
+  "identity_operations_appended": 0,
+  "provider_usage": {
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "actual_cost_usd": 0
+  },
+  "before": {
+    "frontier_root": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier",
+    "cohort_sha256": "59e4c2fbdb389255442c00ac06204b6798fed64742d80489441cd5524a912a61",
+    "observation_ledger_sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f",
+    "candidate_ledger_sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2",
+    "summary_sha256": "4baf594cea14431b2f2c125c19c554755ecf167be6b81f399152873a5cd35545",
+    "observations": 1366,
+    "candidates": 766,
+    "published": 130,
+    "pending_candidates": 636,
+    "pending_segmentation": 629,
+    "projection_retired": 0,
+    "unresolved_active_identities": 5,
+    "pending_count": 1265,
+    "invalid_count": 0
+  },
+  "after": {
+    "frontier_root": "data/quality/operational-episode-frontier/v1",
+    "cohort_sha256": "daa3023de133c66d3e1f0e7eda03313a8e1fbd59062a1a7dea888cf4777bcda0",
+    "observation_ledger_sha256": "53c81a25b1dcec773fdfcedfe200dff85ef1646f0072d131a40dd7721ef9c4eb",
+    "candidate_ledger_sha256": "8660d54c98716f486b813b5bf82ca12dced093184fbfb767c9b65cbe94467b35",
+    "summary_sha256": "42c57c8e3cfadf487a9b90c907ae4a8788f52105c2bd0833d8297b69ac67c1ec",
+    "observations": 1366,
+    "candidates": 766,
+    "published": 131,
+    "pending_candidates": 631,
+    "pending_segmentation": 629,
+    "projection_retired": 4,
+    "unresolved_active_identities": 0,
+    "pending_count": 1260,
+    "invalid_count": 0
+  },
+  "delta": {
+    "published": 1,
+    "pending_candidates": -5,
+    "pending_segmentation": 0,
+    "projection_retired": 4,
+    "unresolved_active_identities": -5,
+    "pending_count": -5
+  },
+  "partition_equations": [
+    "1366 observations = 138 candidate_bearing + 629 pending_segmentation + 68 not_episode_evidence + 531 unsupported_record + 0 invalid_record",
+    "766 candidates = 131 published + 4 retired + 631 pending_review + 0 invalid",
+    "135 active identities = 131 published + 4 projection_retired + 0 unresolved"
+  ],
+  "status": "accepted"
+}

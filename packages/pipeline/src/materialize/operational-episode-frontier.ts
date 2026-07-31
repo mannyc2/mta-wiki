@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { basename, dirname, join, relative, resolve, sep } from "node:path";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
 import {
@@ -9,6 +9,9 @@ import {
   type OperationalEpisodeEvidenceBinding,
 } from "@mta-wiki/pipeline/materialize/operational-episode-adapters";
 import type { OperationalOccurrenceIdentityRegistryV2Entry } from "@mta-wiki/pipeline/materialize/operational-occurrence-identity-operations";
+import type {
+  LoadedOperationalProjectionRetirementV1,
+} from "@mta-wiki/pipeline/materialize/operational-projection-retirements";
 import type {
   OperationalOccurrenceCurrentReviewDecision,
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-resolution";
@@ -110,6 +113,10 @@ export type OperationalEpisodeCandidateDecision = {
   decided_at: string;
   rationale: string;
   evidence_bindings: OperationalEpisodeEvidenceBinding[];
+  evidence_gap_receipt_path?: string | null;
+  evidence_gap_receipt_sha256?: string | null;
+  projection_retirement_id: string | null;
+  projection_retirement_sha256: string | null;
 };
 
 export type OperationalEpisodeFrontierSummary = {
@@ -126,6 +133,7 @@ export type OperationalEpisodeFrontierSummary = {
   published_distinct_occurrence_ids: number;
   publishable_reviewed_occurrence_ids: number;
   pending_review_distinct_unresolved_identity_ids: number;
+  projection_retired_active_identity_ids: number;
   unresolved_active_identity_ids: number;
   active_identity_ids: number;
   pending_count: number;
@@ -155,7 +163,18 @@ export type BuildOperationalEpisodeFrontierInput = {
   candidate_decisions: readonly OperationalEpisodeCandidateDecision[];
   identity_registry: readonly OperationalOccurrenceIdentityRegistryV2Entry[];
   review_decisions: readonly OperationalOccurrenceCurrentReviewDecision[];
+  projection_retirements?: readonly LoadedOperationalProjectionRetirementV1[];
+  frozen_denominator?: OperationalEpisodeFrozenDenominator;
   completeness_profile: "partial" | "complete";
+};
+
+export type OperationalEpisodeFrozenDenominator = {
+  contract_id: "plan-052-operational-episode-denominator-v1";
+  canonical_input_sha256: string;
+  admitted_events_sha256: string;
+  relevant_relations_sha256: string;
+  observation_event_record_ids: string[];
+  candidate_keys: string[];
 };
 
 const candidateDecisionFields = new Set([
@@ -165,10 +184,14 @@ const candidateDecisionFields = new Set([
   "decision_id",
   "disposition",
   "evidence_bindings",
+  "evidence_gap_receipt_path",
+  "evidence_gap_receipt_sha256",
   "rationale",
   "reviewer",
   "schema_version",
   "successor_occurrence_ids",
+  "projection_retirement_id",
+  "projection_retirement_sha256",
 ]);
 const candidateDecisionEvidenceFields = new Set(["evidence_id", "record_id", "source_id"]);
 const observationRowFields = new Set([
@@ -300,6 +323,59 @@ export function parseOperationalEpisodeCandidateDecision(
       `${right.record_id}|${right.source_id}|${right.evidence_id}`,
     )
   );
+  const projectionRetirementId = input.projection_retirement_id === undefined ||
+      input.projection_retirement_id === null
+    ? null
+    : strictString(
+      input.projection_retirement_id,
+      `${path}.projection_retirement_id`,
+    );
+  const projectionRetirementSha256 =
+    input.projection_retirement_sha256 === undefined ||
+      input.projection_retirement_sha256 === null
+      ? null
+      : strictString(
+        input.projection_retirement_sha256,
+        `${path}.projection_retirement_sha256`,
+      );
+  if (
+    (projectionRetirementId === null) !==
+      (projectionRetirementSha256 === null) ||
+    (projectionRetirementSha256 !== null &&
+      !/^[a-f0-9]{64}$/u.test(projectionRetirementSha256))
+  ) {
+    throw new Error(
+      `${path}: projection retirement id and SHA-256 must be a valid pair`,
+    );
+  }
+  const evidenceGapReceiptPath =
+    input.evidence_gap_receipt_path === undefined ||
+      input.evidence_gap_receipt_path === null
+      ? null
+      : strictString(
+        input.evidence_gap_receipt_path,
+        `${path}.evidence_gap_receipt_path`,
+      );
+  const evidenceGapReceiptSha256 =
+    input.evidence_gap_receipt_sha256 === undefined ||
+      input.evidence_gap_receipt_sha256 === null
+      ? null
+      : strictString(
+        input.evidence_gap_receipt_sha256,
+        `${path}.evidence_gap_receipt_sha256`,
+      );
+  if (
+    (evidenceGapReceiptPath === null) !==
+      (evidenceGapReceiptSha256 === null) ||
+    (evidenceGapReceiptSha256 !== null &&
+      !/^[a-f0-9]{64}$/u.test(evidenceGapReceiptSha256)) ||
+    (disposition === "insufficient_evidence") !==
+      (evidenceGapReceiptPath !== null)
+  ) {
+    throw new Error(
+      `${path}: insufficient_evidence requires one evidence-gap receipt path/SHA pair, and other dispositions forbid it`,
+    );
+  }
   return {
     schema_version: 1,
     decision_id: strictString(input.decision_id, `${path}.decision_id`),
@@ -316,7 +392,197 @@ export function parseOperationalEpisodeCandidateDecision(
     decided_at: decidedAt,
     rationale: strictString(input.rationale, `${path}.rationale`),
     evidence_bindings: evidenceBindings,
+    ...(evidenceGapReceiptPath === null
+      ? {}
+      : {
+          evidence_gap_receipt_path: evidenceGapReceiptPath,
+          evidence_gap_receipt_sha256: evidenceGapReceiptSha256,
+        }),
+    projection_retirement_id: projectionRetirementId,
+    projection_retirement_sha256: projectionRetirementSha256,
   };
+}
+
+const evidenceGapReceiptFields = new Set([
+  "batch_id",
+  "candidate_id",
+  "candidate_key",
+  "contract_id",
+  "disposition",
+  "evidence_bindings",
+  "known_facts",
+  "manifest",
+  "plan_id",
+  "prohibited_inferences",
+  "recorded_at",
+  "review_receipts",
+  "schema_version",
+]);
+const evidenceGapPointerFields = new Set(["path", "sha256"]);
+
+function parseEvidenceGapPointer(
+  value: unknown,
+  path: string,
+): { path: string; sha256: string } {
+  const input = strictObject(value, path);
+  strictKeys(input, evidenceGapPointerFields, path);
+  const pointer = {
+    path: strictString(input.path, `${path}.path`),
+    sha256: strictString(input.sha256, `${path}.sha256`),
+  };
+  if (!/^[a-f0-9]{64}$/u.test(pointer.sha256)) {
+    throw new Error(`${path}.sha256 must be an exact SHA-256`);
+  }
+  return pointer;
+}
+
+function validatePlan052PinnedFile(
+  rootDir: string,
+  pointer: { path: string; sha256: string },
+  path: string,
+): void {
+  const absolutePath = resolve(rootDir, pointer.path);
+  const normalizedRelative = relative(rootDir, absolutePath).split(sep).join("/");
+  if (
+    normalizedRelative !== pointer.path ||
+    normalizedRelative.startsWith("../") ||
+    !normalizedRelative.startsWith(
+      "data/operational-episode-resolution/campaigns/plan-052/",
+    ) ||
+    !existsSync(absolutePath)
+  ) {
+    throw new Error(`${path}: pinned Plan 052 file is missing or outside campaign`);
+  }
+  const actual = createHash("sha256")
+    .update(readFileSync(absolutePath))
+    .digest("hex");
+  if (actual !== pointer.sha256) {
+    throw new Error(`${path}: pinned Plan 052 file hash drifted`);
+  }
+}
+
+function validateEvidenceGapReceipt(
+  decision: OperationalEpisodeCandidateDecision,
+  decisionRegistryPath: string,
+): void {
+  if (
+    !decision.evidence_gap_receipt_path ||
+    !decision.evidence_gap_receipt_sha256
+  ) return;
+  const rootDir = resolve(dirname(decisionRegistryPath), "..", "..", "..");
+  const receiptPath = resolve(rootDir, decision.evidence_gap_receipt_path);
+  const normalizedRelative = relative(rootDir, receiptPath).split(sep).join("/");
+  if (
+    normalizedRelative !== decision.evidence_gap_receipt_path ||
+    normalizedRelative.startsWith("../") ||
+    !normalizedRelative.startsWith(
+      "data/operational-episode-resolution/campaigns/plan-052/evidence-gap-receipts/",
+    ) ||
+    !existsSync(receiptPath)
+  ) {
+    throw new Error(
+      `${decision.decision_id}: evidence-gap receipt path is missing or outside Plan 052`,
+    );
+  }
+  const bytes = readFileSync(receiptPath);
+  if (
+    createHash("sha256").update(bytes).digest("hex") !==
+      decision.evidence_gap_receipt_sha256
+  ) {
+    throw new Error(`${decision.decision_id}: evidence-gap receipt hash drifted`);
+  }
+  const input = strictObject(
+    JSON.parse(bytes.toString("utf8")) as unknown,
+    decision.evidence_gap_receipt_path,
+  );
+  strictKeys(input, evidenceGapReceiptFields, decision.evidence_gap_receipt_path);
+  const knownFacts = Array.isArray(input.known_facts)
+    ? input.known_facts.map((value, index) =>
+      strictString(
+        value,
+        `${decision.evidence_gap_receipt_path}.known_facts[${index}]`,
+      )
+    )
+    : [];
+  const prohibitedInferences = Array.isArray(input.prohibited_inferences)
+    ? input.prohibited_inferences.map((value, index) =>
+      strictString(
+        value,
+        `${decision.evidence_gap_receipt_path}.prohibited_inferences[${index}]`,
+      )
+    )
+    : [];
+  const reviewReceipts = Array.isArray(input.review_receipts)
+    ? input.review_receipts.map((value, index) =>
+      parseEvidenceGapPointer(
+        value,
+        `${decision.evidence_gap_receipt_path}.review_receipts[${index}]`,
+      )
+    )
+    : [];
+  const manifest = parseEvidenceGapPointer(
+    input.manifest,
+    `${decision.evidence_gap_receipt_path}.manifest`,
+  );
+  const recordedAt = strictString(
+    input.recorded_at,
+    `${decision.evidence_gap_receipt_path}.recorded_at`,
+  );
+  if (
+    input.schema_version !== 1 ||
+    input.contract_id !== "plan-052-evidence-gap-receipt-v1" ||
+    input.plan_id !== "plan-052" ||
+    input.disposition !== "insufficient_evidence" ||
+    input.candidate_key !== decision.candidate_key ||
+    input.candidate_id !== candidateId(decision.candidate_key) ||
+    strictString(
+      input.batch_id,
+      `${decision.evidence_gap_receipt_path}.batch_id`,
+    ).length === 0 ||
+    knownFacts.length === 0 ||
+    prohibitedInferences.length === 0 ||
+    reviewReceipts.length < 2 ||
+    !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/u.test(
+      recordedAt,
+    ) ||
+    Number.isNaN(Date.parse(recordedAt))
+  ) {
+    throw new Error(
+      `${decision.decision_id}: evidence-gap receipt is incomplete or stale`,
+    );
+  }
+  const receiptEvidence = strictEvidence(
+    input.evidence_bindings,
+    `${decision.evidence_gap_receipt_path}.evidence_bindings`,
+  );
+  const receiptEvidenceKeys = new Set(receiptEvidence.map((binding) =>
+    `${binding.record_id}|${binding.source_id}|${binding.evidence_id}`
+  ));
+  if (
+    receiptEvidence.length === 0 ||
+    decision.evidence_bindings.length === 0 ||
+    decision.evidence_bindings.some((binding) =>
+      !receiptEvidenceKeys.has(
+        `${binding.record_id}|${binding.source_id}|${binding.evidence_id}`,
+      )
+    )
+  ) {
+    throw new Error(
+      `${decision.decision_id}: decision evidence is not preserved by its evidence-gap receipt`,
+    );
+  }
+  validatePlan052PinnedFile(
+    rootDir,
+    manifest,
+    `${decision.evidence_gap_receipt_path}.manifest`,
+  );
+  for (const [index, pointer] of reviewReceipts.entries()) {
+    validatePlan052PinnedFile(
+      rootDir,
+      pointer,
+      `${decision.evidence_gap_receipt_path}.review_receipts[${index}]`,
+    );
+  }
 }
 
 export function loadOperationalEpisodeCandidateDecisions(
@@ -332,12 +598,49 @@ export function loadOperationalEpisodeCandidateDecisions(
   if (input.schema_version !== 1 || !Array.isArray(input.decisions)) {
     throw new Error(`${path} must be a schema-v1 decision registry`);
   }
-  const decisions = input.decisions.map((decision, index) =>
+  const historicalDecisions = input.decisions.map((decision, index) =>
     parseOperationalEpisodeCandidateDecision(decision, `${path}.decisions[${index}]`)
   );
-  const ids = decisions.map((decision) => decision.decision_id);
-  if (new Set(ids).size !== ids.length || canonical(ids) !== canonical([...ids].sort())) {
+  const historicalIds = historicalDecisions.map((decision) => decision.decision_id);
+  if (
+    new Set(historicalIds).size !== historicalIds.length ||
+    canonical(historicalIds) !== canonical([...historicalIds].sort())
+  ) {
     throw new Error(`${path}.decisions must be sorted and unique`);
+  }
+  const currentDir = join(dirname(path), "accepted-current");
+  const currentDecisions = existsSync(currentDir)
+    ? readdirSync(currentDir, { withFileTypes: true })
+      .sort((left, right) => left.name.localeCompare(right.name))
+      .map((entry) => {
+        if (!entry.isFile() || !entry.name.endsWith(".json")) {
+          throw new Error(
+            `${currentDir} contains unsupported entry: ${entry.name}`,
+          );
+        }
+        const decisionPath = join(currentDir, entry.name);
+        const decision = parseOperationalEpisodeCandidateDecision(
+          JSON.parse(readFileSync(decisionPath, "utf8")) as unknown,
+          decisionPath,
+        );
+        if (`${decision.decision_id}.json` !== basename(decisionPath)) {
+          throw new Error(`${decisionPath}: decision_id must match file name`);
+        }
+        return decision;
+      })
+    : [];
+  const decisions = [...historicalDecisions, ...currentDecisions]
+    .sort((left, right) => left.decision_id.localeCompare(right.decision_id));
+  const ids = decisions.map((decision) => decision.decision_id);
+  if (new Set(ids).size !== ids.length) {
+    throw new Error("duplicate operational episode candidate decision_id");
+  }
+  const candidateOwners = decisions.map((decision) => decision.candidate_key);
+  if (new Set(candidateOwners).size !== candidateOwners.length) {
+    throw new Error("operational episode candidate has multiple terminal decision owners");
+  }
+  for (const decision of decisions) {
+    validateEvidenceGapReceipt(decision, path);
   }
   return decisions;
 }
@@ -504,6 +807,61 @@ export function loadOperationalEpisodeFrontierLedgers(outputDir: string): {
   return { observation_ledger: observationLedger, candidate_ledger: candidateLedger };
 }
 
+export function loadPlan052OperationalEpisodeFrozenDenominator(
+  rootDir: string,
+  options: { optionalFixture?: boolean } = {},
+): OperationalEpisodeFrozenDenominator | undefined {
+  const frozenDir = join(
+    rootDir,
+    "data",
+    "operational-episode-resolution",
+    "campaigns",
+    "plan-052",
+    "frozen-frontier",
+  );
+  if (!existsSync(frozenDir)) {
+    if (options.optionalFixture) return undefined;
+    throw new Error("required Plan 052 operational episode denominator is missing");
+  }
+  const cohortPath = join(frozenDir, "cohort.json");
+  if (!existsSync(cohortPath)) {
+    throw new Error("Plan 052 frozen cohort contract is missing");
+  }
+  const cohort = strictObject(
+    JSON.parse(readFileSync(cohortPath, "utf8")) as unknown,
+    cohortPath,
+  );
+  for (const field of [
+    "canonical_input_sha256",
+    "admitted_events_sha256",
+    "relevant_relations_sha256",
+  ]) {
+    if (
+      typeof cohort[field] !== "string" ||
+      !/^[a-f0-9]{64}$/u.test(cohort[field])
+    ) {
+      throw new Error(`${cohortPath}.${field} is invalid`);
+    }
+  }
+  const ledgers = loadOperationalEpisodeFrontierLedgers(frozenDir);
+  if (
+    ledgers.observation_ledger.length !== 1366 ||
+    ledgers.candidate_ledger.length !== 766
+  ) {
+    throw new Error("Plan 052 frozen denominator arithmetic is stale");
+  }
+  return {
+    contract_id: "plan-052-operational-episode-denominator-v1",
+    canonical_input_sha256: cohort.canonical_input_sha256 as string,
+    admitted_events_sha256: cohort.admitted_events_sha256 as string,
+    relevant_relations_sha256: cohort.relevant_relations_sha256 as string,
+    observation_event_record_ids: ledgers.observation_ledger.map((row) =>
+      row.event_record_id
+    ),
+    candidate_keys: ledgers.candidate_ledger.map((row) => row.candidate_key),
+  };
+}
+
 function candidateId(candidateKey: string): string {
   return `candidate:${sha256(`operational-episode-candidate-v1\0${candidateKey}`).slice(0, 24)}`;
 }
@@ -639,6 +997,66 @@ function reviewByOccurrence(
   return result;
 }
 
+function assertActiveProjectionRetirement(
+  candidateKey: string,
+  decision: OperationalEpisodeCandidateDecision,
+  identity: OperationalOccurrenceIdentityRegistryV2Entry,
+  ownerDecisionIds: readonly string[],
+  candidateEvidence: readonly OperationalEpisodeEvidenceBinding[],
+  retirements: readonly LoadedOperationalProjectionRetirementV1[],
+): void {
+  if (
+    decision.canonical_candidate_key !== null ||
+    decision.successor_occurrence_ids.length > 0 ||
+    !decision.projection_retirement_id ||
+    !decision.projection_retirement_sha256
+  ) {
+    throw new Error(
+      `active candidate ${candidateKey} requires exact projection-retirement authority`,
+    );
+  }
+  const matches = retirements.filter((retirement) =>
+    retirement.retirement_id === decision.projection_retirement_id
+  );
+  if (matches.length !== 1) {
+    throw new Error(
+      `active candidate ${candidateKey} has missing or duplicate projection-retirement authority`,
+    );
+  }
+  const retirement = matches[0]!;
+  if (retirement.source_sha256 !== decision.projection_retirement_sha256) {
+    throw new Error(
+      `active candidate ${candidateKey} has stale projection-retirement authority`,
+    );
+  }
+  const targets = retirement.occurrence_review_decisions.filter((target) =>
+    target.occurrence_id === identity.occurrence_id
+  );
+  if (targets.length !== 1) {
+    throw new Error(
+      `active candidate ${candidateKey} projection retirement does not uniquely own its identity`,
+    );
+  }
+  const target = targets[0]!;
+  const evidenceRecordIds = new Set(
+    candidateEvidence.map((binding) => binding.record_id),
+  );
+  if (
+    target.founding_key !== candidateKey ||
+    !identity.founding_key_history.includes(target.founding_key) ||
+    !ownerDecisionIds.includes(target.decision_id) ||
+    canonical(target.pinned_gtfs_route_ids) !==
+      canonical([retirement.binding.gtfs_route_id]) ||
+    !evidenceRecordIds.has(retirement.binding.route_record_id) ||
+    target.projection_state !== "retired" ||
+    target.reason_code !== "route_binding_nonprojectable"
+  ) {
+    throw new Error(
+      `active candidate ${candidateKey} projection-retirement authority does not match candidate, identity, review, and route binding`,
+    );
+  }
+}
+
 export function buildOperationalEpisodeFrontier(
   input: BuildOperationalEpisodeFrontierInput,
 ): OperationalEpisodeFrontier {
@@ -657,6 +1075,23 @@ export function buildOperationalEpisodeFrontier(
     [...input.candidate_decisions].sort((left, right) => left.decision_id.localeCompare(right.decision_id)),
   );
   const cohortBuild = cohort(input, adapterFingerprint, identityFingerprint, reviewFingerprint);
+  if (input.frozen_denominator) {
+    const frozen = input.frozen_denominator;
+    if (
+      frozen.contract_id !== "plan-052-operational-episode-denominator-v1" ||
+      cohortBuild.cohort.canonical_input_sha256 !== frozen.canonical_input_sha256 ||
+      cohortBuild.cohort.admitted_events_sha256 !== frozen.admitted_events_sha256 ||
+      cohortBuild.cohort.relevant_relations_sha256 !== frozen.relevant_relations_sha256
+    ) {
+      throw new Error("Plan 052 frozen operational episode input fingerprint drift");
+    }
+    if (
+      canonical(cohortBuild.events.map((event) => event.record_id)) !==
+      canonical(frozen.observation_event_record_ids)
+    ) {
+      throw new Error("Plan 052 frozen operational observation denominator drift");
+    }
+  }
   const records = [...input.canonical_records].sort((left, right) => left.record_id.localeCompare(right.record_id));
   const eventsById = new Map(cohortBuild.events.map((event) => [event.record_id, event]));
   const mappingByEvent = new Map<string, OperationalEpisodeAcceptedMapping>();
@@ -731,6 +1166,13 @@ export function buildOperationalEpisodeFrontier(
     });
   }
   observationRows.sort((left, right) => left.event_record_id.localeCompare(right.event_record_id));
+  if (
+    input.frozen_denominator &&
+    canonical([...candidateKeys].sort((left, right) => left.localeCompare(right))) !==
+      canonical(input.frozen_denominator.candidate_keys)
+  ) {
+    throw new Error("Plan 052 frozen operational candidate denominator drift");
+  }
   if (observationRows.length !== cohortBuild.events.length) throw new Error("observation ledger does not cover cohort");
   if (new Set(observationRows.map((row) => row.event_record_id)).size !== observationRows.length) {
     throw new Error("duplicate observation ledger row");
@@ -788,6 +1230,19 @@ export function buildOperationalEpisodeFrontier(
       }
       disposition = "published";
       publishedOccurrenceId = occurrenceId;
+    } else if (
+      identity?.state === "active" &&
+      decision?.disposition === "retired"
+    ) {
+      assertActiveProjectionRetirement(
+        key,
+        decision,
+        identity,
+        owners.map((owner) => owner.decision_id),
+        evidence,
+        input.projection_retirements ?? [],
+      );
+      disposition = "retired";
     } else if (identity?.state === "active") {
       disposition = "pending_review";
       unresolvedActiveOccurrenceIds = [identity.occurrence_id];
@@ -824,6 +1279,61 @@ export function buildOperationalEpisodeFrontier(
   if (new Set(candidates.map((row) => row.candidate_id)).size !== candidates.length) {
     throw new Error("duplicate operational episode candidate");
   }
+  const candidatesByKey = new Map(candidates.map((candidate) => [
+    candidate.candidate_key,
+    candidate,
+  ]));
+  for (const decision of input.candidate_decisions) {
+    const candidate = candidatesByKey.get(decision.candidate_key);
+    if (!candidate) {
+      throw new Error(
+        `candidate decision ${decision.decision_id} references unknown candidate ${decision.candidate_key}`,
+      );
+    }
+    const candidateEvidence = new Set(candidate.evidence_bindings.map((binding) =>
+      `${binding.record_id}|${binding.source_id}|${binding.evidence_id}`
+    ));
+    for (const binding of decision.evidence_bindings) {
+      const key = `${binding.record_id}|${binding.source_id}|${binding.evidence_id}`;
+      if (!candidateEvidence.has(key)) {
+        throw new Error(
+          `candidate decision ${decision.decision_id} carries evidence outside candidate membership`,
+        );
+      }
+    }
+    if (decision.disposition === "duplicate_alias") {
+      if (
+        !decision.canonical_candidate_key ||
+        decision.canonical_candidate_key === decision.candidate_key ||
+        !candidatesByKey.has(decision.canonical_candidate_key)
+      ) {
+        throw new Error(
+          `candidate decision ${decision.decision_id} has invalid duplicate-alias authority`,
+        );
+      }
+    } else if (decision.canonical_candidate_key !== null) {
+      throw new Error(
+        `candidate decision ${decision.decision_id} carries canonical candidate outside duplicate_alias`,
+      );
+    }
+    if (
+      decision.disposition !== "retired" &&
+      decision.successor_occurrence_ids.length > 0
+    ) {
+      throw new Error(
+        `candidate decision ${decision.decision_id} carries successors outside retired disposition`,
+      );
+    }
+    if (
+      decision.disposition !== "retired" &&
+      (decision.projection_retirement_id !== null ||
+        decision.projection_retirement_sha256 !== null)
+    ) {
+      throw new Error(
+        `candidate decision ${decision.decision_id} carries projection authority outside retired disposition`,
+      );
+    }
+  }
   const knownCandidateIds = new Set(candidates.map((row) => row.candidate_id));
   for (const observation of observationRows) {
     if (observation.disposition === "candidate_bearing" && observation.candidate_ids.length === 0) {
@@ -839,16 +1349,35 @@ export function buildOperationalEpisodeFrontier(
   }
 
   const publishedIds = sortedUnique(candidates.flatMap((row) => row.published_occurrence_id ? [row.published_occurrence_id] : []));
+  const projectionRetiredIds = sortedUnique(candidates.flatMap((row) =>
+    row.disposition === "retired" &&
+      row.lineage_occurrence_ids.some((id) => activeIds.has(id))
+      ? row.lineage_occurrence_ids.filter((id) => activeIds.has(id))
+      : []
+  ));
   const unresolvedIds = sortedUnique(candidates.flatMap((row) => row.unresolved_active_occurrence_ids));
   const reviewedIds = sortedUnique(input.review_decisions.map((review) => review.occurrence_id));
   const activeIdList = [...activeIds].sort();
   if (canonical(publishedIds) !== canonical(reviewedIds)) {
     throw new Error("published candidate identities do not equal publishable reviewed identities");
   }
-  if (publishedIds.some((id) => unresolvedIds.includes(id))) {
-    throw new Error("published and unresolved identity partitions overlap");
+  if (
+    [...publishedIds, ...projectionRetiredIds, ...unresolvedIds].length !==
+    new Set([...publishedIds, ...projectionRetiredIds, ...unresolvedIds]).size
+  ) {
+    throw new Error(
+      "published, projection-retired, and unresolved identity partitions overlap",
+    );
   }
-  if (canonical(sortedUnique([...publishedIds, ...unresolvedIds])) !== canonical(activeIdList)) {
+  if (
+    canonical(
+      sortedUnique([
+        ...publishedIds,
+        ...projectionRetiredIds,
+        ...unresolvedIds,
+      ]),
+    ) !== canonical(activeIdList)
+  ) {
     throw new Error("candidate identity partition does not cover every active identity");
   }
   const observationCounts = countRecord(observationDispositions);
@@ -882,7 +1411,8 @@ export function buildOperationalEpisodeFrontier(
     published_distinct_occurrence_ids: publishedIds.length,
     publishable_reviewed_occurrence_ids: reviewedIds.length,
     pending_review_distinct_unresolved_identity_ids: unresolvedIds.length,
-    unresolved_active_identity_ids: activeIdList.length - reviewedIds.length,
+    projection_retired_active_identity_ids: projectionRetiredIds.length,
+    unresolved_active_identity_ids: unresolvedIds.length,
     active_identity_ids: activeIdList.length,
     pending_count: pendingCount,
     invalid_count: invalidCount,
@@ -907,7 +1437,9 @@ export function buildOperationalEpisodeFrontier(
     summary.published_distinct_occurrence_ids !== summary.publishable_reviewed_occurrence_ids ||
     summary.pending_review_distinct_unresolved_identity_ids !== summary.unresolved_active_identity_ids ||
     summary.active_identity_ids !==
-      summary.published_distinct_occurrence_ids + summary.pending_review_distinct_unresolved_identity_ids
+      summary.published_distinct_occurrence_ids +
+        summary.projection_retired_active_identity_ids +
+        summary.pending_review_distinct_unresolved_identity_ids
   ) throw new Error("operational episode frontier summary arithmetic is unbalanced");
   return {
     cohort: cohortBuild.cohort,

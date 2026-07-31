@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "contract": "plan-052-semantic-review-receipt-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w2-meeting-docs-pending-05",
+  "review_role": "independent_adjudication",
+  "reviewer_id": "codex-clean-room-third-adjudicator",
+  "review_complete": true,
+  "clean_room": {
+    "mode": "fresh_blind_third_adjudication",
+    "consulted_original_reviewer_receipts": false,
+    "consulted_other_adjudication_receipts": false,
+    "consulted_reconciliation_receipts": false,
+    "consulted_integration_receipts": false,
+    "consulted_evidence_gap_receipts": false,
+    "consulted_stop_receipts": false,
+    "consulted_agent_output": false,
+    "provider_calls": false,
+    "semantic_writes": false,
+    "authorized_output_path": "data/operational-episode-resolution/campaigns/plan-052/proposed-review-receipts/w2-meeting-docs-pending-05/adjudication-independent.json"
+  },
+  "manifest_pin": {
+    "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-05.json",
+    "bytes": 24487,
+    "sha256": "3f7bbd021d893075a4707c164f3995061aa6e37bbc4b5d4d0fe3e8ab96e2a010"
+  },
+  "frozen_frontier_pins": [
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+      "bytes": 860230,
+      "sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/cohort.json",
+      "bytes": 720438,
+      "sha256": "59e4c2fbdb389255442c00ac06204b6798fed64742d80489441cd5524a912a61"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/observation_ledger.jsonl",
+      "bytes": 1374322,
+      "sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/summary.json",
+      "bytes": 21408,
+      "sha256": "4baf594cea14431b2f2c125c19c554755ecf167be6b81f399152873a5cd35545"
+    }
+  ],
+  "source_pin_set": {
+    "count": 95,
+    "total_bytes": 6970952,
+    "evidence_input_sha256": "0c5d24adfa164f0a422e94aedf12022379987e958467044bc4996e447dd4045f",
+    "validation": "all 95 manifest evidence_source_pins rehashed at the recorded byte lengths with no drift"
+  },
+  "cohort_hashes": {
+    "adapter_input_sha256": "5993a5c1b5901c8e193c6ff7deb5fa1dd8105aa02e56123a9ee0c2fff12d4eaf",
+    "candidate_input_sha256": "b1d4cb34a48f4d51fdcae3585f585382be3794e70add8b70a3dc96119e5ca4e2",
+    "candidate_membership_sha256": "4b47d9d79351efe5178683d6432d501681bc6ff161afe5997c99e3e55f53f179",
+    "evidence_input_sha256": "0c5d24adfa164f0a422e94aedf12022379987e958467044bc4996e447dd4045f",
+    "observation_membership_sha256": "98f724cf58fdd3851705e64b1913a419474506291d1654d8919c824b78654bdb"
+  },
+  "immutable_starting_provenance": {
+    "adapter_fingerprint": "de51c8db4353cc8774d4c55bea3fcba8103ecdee3a38898b85b61733eccf07b9",
+    "cohort_fingerprint": "94dfd16c1c57362b220fb8ce53b8325e6ca166c1e697d9001da8b66f6483e373",
+    "commit_sha": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+    "corpus_fingerprint": "318cee05f0c7288fd28084df44b6b036f0607ffdfb76b3d6c6fcd14118f479c5",
+    "decision_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "identity_fingerprint": "6827adf67650c81fa38d30b1dfbaf6be5282a45491b058b3ed44167aa287d26e",
+    "review_fingerprint": "3989ac8637527e5862f18b7a6c4f7f2699078eb992a2675b16a23af525fd1d24"
+  },
+  "provider_usage": {
+    "provider": null,
+    "model": null,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "assigned_membership": {
+    "candidate_count": 5,
+    "observation_event_record_count": 5,
+    "candidate_ids": [
+      "candidate:9f3fae8be715e1e0d6fb79c2",
+      "candidate:a8deaa2dc483784c62ab6219",
+      "candidate:b01b1774ec3bab1014236009",
+      "candidate:b20fdeaa867deff62a70a9b8",
+      "candidate:b8d2b8c71aea5c28b7d0f4cb"
+    ],
+    "observation_event_record_ids": [
+      "event_able-established-2019",
+      "event_meeting-doc-171006-ovd-pilot-start",
+      "event_queens-bus-redesign-phase1-launch-june29-2025",
+      "event_meeting-doc-86471-60-new-buses",
+      "event_170921-queens-bus-phase2-launch"
+    ]
+  },
+  "findings": [
+    {
+      "candidate_id": "candidate:9f3fae8be715e1e0d6fb79c2",
+      "observation_event_record_ids": ["event_able-established-2019"],
+      "recommended_disposition": "insufficient_evidence",
+      "recommended_canonical_candidate_id": null,
+      "assessment": "The source establishes the ABLE program in 2019, but does not identify an exact route-treatment application at program establishment.",
+      "known_facts": ["MTA established the Automated Bus Lane Enforcement program in 2019 using bus-mounted cameras.", "The program later broadened into Automated Camera Enforcement."],
+      "evidence_refs": ["meeting_doc_201621#p028_c0004"],
+      "gaps": ["The route set and per-route application onset are not stated."],
+      "prohibited_inferences": ["Do not apply ABLE to every bus route or every bus lane in 2019."],
+      "applications": [],
+      "onset": null,
+      "scope": {"route_ids": [], "treatment_ids": [], "extent": null},
+      "integration_status": "terminal_nonpublication",
+      "blockers": ["route-treatment incidence is absent"]
+    },
+    {
+      "candidate_id": "candidate:a8deaa2dc483784c62ab6219",
+      "observation_event_record_ids": ["event_meeting-doc-171006-ovd-pilot-start"],
+      "recommended_disposition": "insufficient_evidence",
+      "recommended_canonical_candidate_id": null,
+      "assessment": "The source establishes that an onboard-validation-device pilot began in 2020 on Select Bus Service routes, but the plural route set is not enumerated.",
+      "known_facts": ["The OVD fare-compliance pilot began in 2020 on Select Bus Service routes.", "The document reports that the pilot proved successful."],
+      "evidence_refs": ["meeting_doc_171006#p004_c0008"],
+      "gaps": ["No exact participating SBS route list is present."],
+      "prohibited_inferences": ["Do not cross-product the pilot onto all SBS routes."],
+      "applications": [],
+      "onset": null,
+      "scope": {"route_ids": [], "treatment_ids": [], "extent": null},
+      "integration_status": "terminal_nonpublication",
+      "blockers": ["plural route incidence is unresolved"]
+    },
+    {
+      "candidate_id": "candidate:b01b1774ec3bab1014236009",
+      "observation_event_record_ids": ["event_queens-bus-redesign-phase1-launch-june29-2025"],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "assessment": "Queens Bus Network Redesign Phase One is a real network service-plan rollout, not a route-treatment product application for this frontier.",
+      "known_facts": ["Phase One was scheduled for June 29, 2025.", "It comprised 16 new routes, 67 modified routes, and five discontinued routes."],
+      "evidence_refs": ["meeting_doc_174141#p011_c0009"],
+      "gaps": [],
+      "prohibited_inferences": ["Do not decompose the network redesign into route-treatment applications by cross-product."],
+      "applications": [],
+      "onset": null,
+      "scope": {"route_ids": [], "treatment_ids": [], "extent": null},
+      "integration_status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:b20fdeaa867deff62a70a9b8",
+      "observation_event_record_ids": ["event_meeting-doc-86471-60-new-buses"],
+      "recommended_disposition": "insufficient_evidence",
+      "recommended_canonical_candidate_id": null,
+      "assessment": "The fleet slide plans 60 new electric buses across 2022–2023 with deployment beginning later in the document year; no exact route assignment or stable onset is given.",
+      "known_facts": ["The slide states '2022-23: 60 new buses hitting the streets starting later this year.'", "The surrounding slide concerns electric-bus fleet deployment."],
+      "evidence_refs": ["meeting_doc_86471#p003_c0005"],
+      "gaps": ["Exact routes are absent.", "The literal '2022-23' is a range and cannot be normalized to one month without guessing."],
+      "prohibited_inferences": ["Do not assign the buses to routes.", "Do not normalize the range to a fabricated month or day."],
+      "applications": [],
+      "onset": null,
+      "scope": {"route_ids": [], "treatment_ids": [], "extent": null},
+      "integration_status": "terminal_nonpublication",
+      "blockers": ["route incidence and exact onset are absent"]
+    },
+    {
+      "candidate_id": "candidate:b8d2b8c71aea5c28b7d0f4cb",
+      "observation_event_record_ids": ["event_170921-queens-bus-phase2-launch"],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "assessment": "Queens Bus Network Redesign Phase Two is a real network service-plan rollout, not a route-treatment product application for this frontier.",
+      "known_facts": ["Phase Two was announced for August 31, 2025.", "The redesign changes route patterns and service at network scale."],
+      "evidence_refs": ["meeting_doc_170921#p011_c0010"],
+      "gaps": [],
+      "prohibited_inferences": ["Do not decompose a plural network redesign into a route-treatment cross-product."],
+      "applications": [],
+      "onset": null,
+      "scope": {"route_ids": [], "treatment_ids": [], "extent": null},
+      "integration_status": "terminal_nonpublication",
+      "blockers": []
+    }
+  ],
+  "arithmetic": {
+    "assigned_candidate_count": 5,
+    "published": 0,
+    "duplicate_alias": 0,
+    "rejected": 0,
+    "outside_domain": 2,
+    "insufficient_evidence": 3,
+    "application_count": 0,
+    "identity": "0 + 0 + 0 + 2 + 3 = 5",
+    "finding_count": 5,
+    "unique_candidate_count": 5,
+    "unassigned_candidate_count": 0,
+    "duplicate_finding_count": 0,
+    "alias_cycle_count": 0,
+    "cross_product_application_count": 0
+  },
+  "blockers": []
+}

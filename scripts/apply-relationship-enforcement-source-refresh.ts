@@ -88,6 +88,11 @@ const ALLOWED_FIXED_DESTINATIONS = new Set([
   CONTRACT_PATH,
   "data/contracts/relationships/v1/release-bundle-sources.json",
 ]);
+const REQUIRED_FIXED_DESTINATIONS = [
+  ACTIVE_PROOF_PATH,
+  CONTRACT_PATH,
+  "data/contracts/relationships/v1/release-bundle-sources.json",
+] as const;
 
 function sha256(value: Buffer | string): string {
   return createHash("sha256").update(value).digest("hex");
@@ -413,7 +418,7 @@ function assertAllowedDestinationSet(
     );
   }
   for (const required of [
-    ...ALLOWED_FIXED_DESTINATIONS,
+    ...REQUIRED_FIXED_DESTINATIONS,
     receiptPath,
   ]) {
     if (!destinations.includes(required)) {

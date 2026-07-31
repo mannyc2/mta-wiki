@@ -161,7 +161,8 @@ describe("reviewed current public-snapshot completeness boundary", () => {
         });
       assertRelationshipEnforcementSourceRefreshReceipt(receipt);
       expect(receipt.unchanged_row_artifacts).toHaveLength(5);
-      expect(receipt.allowed_json_pointer_changes).toHaveLength(8);
+      expect(receipt.allowed_json_pointer_changes).toHaveLength(0);
+      expect(receipt.previous_source_refresh_receipt).toBeDefined();
       expect(receipt.previous_active_proof.path).toBe(
         `data/contracts/relationships/v1/enforcement-proofs/${receipt.previous_active_proof.sha256}/proof.json`,
       );

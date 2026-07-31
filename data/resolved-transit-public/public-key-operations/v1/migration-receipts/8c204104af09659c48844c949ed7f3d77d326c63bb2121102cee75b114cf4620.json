@@ -1,0 +1,545 @@
+{
+  "schema_version": 1,
+  "contract_id": "resolved-transit-public-key-registry-v1",
+  "generator_commit": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+  "as_of_date": "2026-07-27",
+  "registry_head": "fc16ddcbd904b3f7d7de977dad3a3cb651c3368f16f25295fe1449a5c126e377",
+  "input_fingerprint": "a2bbda2c0eee0b726b35047ac7a7c129778db97ff377da1b1784781b16b608ab",
+  "eligible_subject_count": 536,
+  "existing_live_key_count": 504,
+  "newly_established_losslessly": 32,
+  "newly_established_from_accepted_review": 0,
+  "requires_review_count": 0,
+  "proposed_operations": [
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:04abb96fcf3e18a93def661b",
+      "key_kind": "source",
+      "subject_id": "brt_woodhaven_cb9_jan2016",
+      "owner_intervention_id": null,
+      "public_key": "brt-woodhaven-cb9-jan2016",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "brt_woodhaven_cb9_jan2016",
+        "title": "Woodhaven / Cross Bay Boulevard (Q52/53) - Presentation to Community Board 9"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:17b9778493e23b2060dcbe09",
+      "key_kind": "intervention_component",
+      "subject_id": "application:f24e5addf9c7493140a2f7f8",
+      "owner_intervention_id": "occurrence:df0debf497ebc1af33e0ad09",
+      "public_key": "q52-sbs-bus-lane-unknown-bus-only-lanes-on-woodhaven-blvd-2015-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q52-sbs",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "Bus only lanes on Woodhaven Blvd (2015)",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:1bf2b07bff7fc8e1323fc831",
+      "key_kind": "source",
+      "subject_id": "2015_12_01_brt_woodhaven_cb5",
+      "owner_intervention_id": null,
+      "public_key": "2015-12-01-brt-woodhaven-cb5",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "2015_12_01_brt_woodhaven_cb5",
+        "title": "Woodhaven & Cross Bay Blvd Q52/53 Select Bus Service - CB5 Meeting Handout"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:1d2e984414333947c021d5e1",
+      "key_kind": "route",
+      "subject_id": "route_m101",
+      "owner_intervention_id": null,
+      "public_key": "m101",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "M101",
+        "route_display_name": "M101"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:2e1482467a07b696e0859c76",
+      "key_kind": "treatment_family",
+      "subject_id": "signal_priority",
+      "owner_intervention_id": null,
+      "public_key": "signal-priority",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "family": "signal_priority",
+        "label": "Signal priority"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:334b5a5d3a8f160302277d13",
+      "key_kind": "route",
+      "subject_id": "route_b44-sbs",
+      "owner_intervention_id": null,
+      "public_key": "b44-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "B44+",
+        "route_display_name": "Nostrand Avenue-Rogers Avenue Select Bus Service (B44)"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:36dce55b1a03a1be4caaa7fc",
+      "key_kind": "source",
+      "subject_id": "brt_bx6_cb12_may2022",
+      "owner_intervention_id": null,
+      "public_key": "brt-bx6-cb12-may2022",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "brt_bx6_cb12_may2022",
+        "title": "Bx6 Select Bus Service Project Update - Manhattan CB 12 Transportation Committee"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:38de9c87ceb5bf462f7d1e46",
+      "key_kind": "intervention_component",
+      "subject_id": "application:6bd3c3983e7dac8298f599d6",
+      "owner_intervention_id": "occurrence:df0debf497ebc1af33e0ad09",
+      "public_key": "q53-sbs-bus-lane-unknown-bus-only-lanes-on-woodhaven-blvd-2015-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q53-sbs",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "Bus only lanes on Woodhaven Blvd (2015)",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:41fcdaf101d342e8121651c4",
+      "key_kind": "intervention_component",
+      "subject_id": "application:3588e48bb61aa8a3284540f8",
+      "owner_intervention_id": "occurrence:b37d234ac31590880842ee39",
+      "public_key": "m102-bus-lane-unknown-offset-bus-lane-third-avenue-36th-56th-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m102",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "Offset bus lane Third Avenue 36th-56th",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:51e30785eb3057897450a745",
+      "key_kind": "source",
+      "subject_id": "brt_routes_fullreport",
+      "owner_intervention_id": null,
+      "public_key": "brt-routes-fullreport",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "brt_routes_fullreport",
+        "title": "Select Bus Service Full Report"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:53299b7e2cc6cd79d9dd0ea2",
+      "key_kind": "route",
+      "subject_id": "route_m79-sbs",
+      "owner_intervention_id": null,
+      "public_key": "m79-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "M79+",
+        "route_display_name": "M79 Select Bus Service"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:55e3040104bcb0d66d1e6894",
+      "key_kind": "route",
+      "subject_id": "route_m102",
+      "owner_intervention_id": null,
+      "public_key": "m102",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "M102",
+        "route_display_name": "M102 Bus Route"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:598ad50803d83788f13740e3",
+      "key_kind": "route",
+      "subject_id": "route_bx6-sbs",
+      "owner_intervention_id": null,
+      "public_key": "bx6-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "BX6+",
+        "route_display_name": "South Bronx Select Bus Service (Bx6)"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:748baaea763a29ddb2470cd6",
+      "key_kind": "intervention_component",
+      "subject_id": "application:ed64540bb7432ef955e43f5e",
+      "owner_intervention_id": "occurrence:5c3604bf2becda004d9ee7af",
+      "public_key": "bx6-sbs-fare-collection-unknown-fare-machines-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx6-sbs",
+        "treatment_family_key": "fare-collection",
+        "action": "unknown",
+        "treatment_display_name": "Fare Machines",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:7e3c3496daf1eab1b85806a7",
+      "key_kind": "intervention_component",
+      "subject_id": "application:bc13f627d7642b4f421ee3e7",
+      "owner_intervention_id": "occurrence:3f4667138e8c35dea29a951f",
+      "public_key": "b44-sbs-fare-collection-unknown-treatment-off-board-fare-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b44-sbs",
+        "treatment_family_key": "fare-collection",
+        "action": "unknown",
+        "treatment_display_name": "treatment_off_board_fare",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:838ce6a455564d5a1ddbef49",
+      "key_kind": "source",
+      "subject_id": "brt_m79_after_report_feb2020",
+      "owner_intervention_id": null,
+      "public_key": "brt-m79-after-report-feb2020",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "brt_m79_after_report_feb2020",
+        "title": "M79 Crosstown Select Bus Service Progress Report Winter 2020"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:90359bef4879ba6e9300fcff",
+      "key_kind": "intervention_component",
+      "subject_id": "application:3ac61802e4f4b02f4bcb8f3c",
+      "owner_intervention_id": "occurrence:b9084fd225672fc058f92a12",
+      "public_key": "m79-sbs-fare-collection-unknown-off-board-fare-payment-and-all-door-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m79-sbs",
+        "treatment_family_key": "fare-collection",
+        "action": "unknown",
+        "treatment_display_name": "Off-board Fare Payment and All-door Boarding",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:b3f2120b38807f080528e4c4",
+      "key_kind": "intervention_component",
+      "subject_id": "application:5281dd14d84c0775f58fc802",
+      "owner_intervention_id": "occurrence:b37d234ac31590880842ee39",
+      "public_key": "m101-bus-lane-unknown-offset-bus-lane-third-avenue-36th-56th-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m101",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "Offset bus lane Third Avenue 36th-56th",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:b6a84091c3f32b641f7fdafb",
+      "key_kind": "source",
+      "subject_id": "2014_03_06_brt_webster_cb6",
+      "owner_intervention_id": null,
+      "public_key": "2014-03-06-brt-webster-cb6",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "2014_03_06_brt_webster_cb6",
+        "title": "Webster Avenue Select Bus Service - Presentation to CB 6 Transportation Committee"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:c4f4332645e124f8d1b3b9ff",
+      "key_kind": "route",
+      "subject_id": "route_m34a-sbs",
+      "owner_intervention_id": null,
+      "public_key": "m34a-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "M34A+",
+        "route_display_name": "M34A SBS"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:c77327614bbb097c636ea430",
+      "key_kind": "source",
+      "subject_id": "brt_m79_cb8_nov2018",
+      "owner_intervention_id": null,
+      "public_key": "brt-m79-cb8-nov2018",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "brt_m79_cb8_nov2018",
+        "title": "M79 Crosstown Select Bus Service - Fall 2018 Update · CB 8"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:d59e8469015393baf526cb8e",
+      "key_kind": "intervention_component",
+      "subject_id": "application:f6d6009a0c2b0bc2d94f9622",
+      "owner_intervention_id": "occurrence:7ae3c4207d0bbda0338d7fe5",
+      "public_key": "m79-sbs-signal-priority-unknown-bus-queue-jump-signal-at-79th-st-and-5th-ave-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m79-sbs",
+        "treatment_family_key": "signal-priority",
+        "action": "unknown",
+        "treatment_display_name": "Bus Queue Jump Signal at 79th St and 5th Ave",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:da9d3cec0e8876fc700efa1a",
+      "key_kind": "route",
+      "subject_id": "route_m103-segment-speed",
+      "owner_intervention_id": null,
+      "public_key": "m103",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "M103",
+        "route_display_name": "M103"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:db09fac86d40b2a39b96ccaa",
+      "key_kind": "intervention_component",
+      "subject_id": "application:b75a8247d4f3287f2b0b87f0",
+      "owner_intervention_id": "occurrence:4d7f971b670bfbc3b58d98a5",
+      "public_key": "m34-sbs-fare-collection-unknown-off-board-fare-collection-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m34-sbs",
+        "treatment_family_key": "fare-collection",
+        "action": "unknown",
+        "treatment_display_name": "Off-board fare collection",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:df28024b45176133b2909011",
+      "key_kind": "source",
+      "subject_id": "2013_02_sbs_webster_bx_cb1",
+      "owner_intervention_id": null,
+      "public_key": "2013-02-sbs-webster-bx-cb1",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "2013_02_sbs_webster_bx_cb1",
+        "title": "Webster Avenue Select Bus Service - Presentation to Community Board 1"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:e4b4fea366c53a9eb40a80f1",
+      "key_kind": "source",
+      "subject_id": "2014_12_01_brt_thirdave_cb6_presentation",
+      "owner_intervention_id": null,
+      "public_key": "2014-12-01-brt-thirdave-cb6-presentation",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "2014_12_01_brt_thirdave_cb6_presentation",
+        "title": "Third Avenue and 57th St Bus Boarding Island & Pedestrian Safety Improvements"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:e6069046cec3352dfb0c4a3e",
+      "key_kind": "intervention_component",
+      "subject_id": "application:7b861e1691e7295536014750",
+      "owner_intervention_id": "occurrence:4d7f971b670bfbc3b58d98a5",
+      "public_key": "m34a-sbs-fare-collection-unknown-off-board-fare-collection-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m34a-sbs",
+        "treatment_family_key": "fare-collection",
+        "action": "unknown",
+        "treatment_display_name": "Off-board fare collection",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:e60e8a870ac6ba9f3f644783",
+      "key_kind": "intervention_component",
+      "subject_id": "application:1e679fe209fcd38d922bf974",
+      "owner_intervention_id": "occurrence:77be4db896d8645a9c1c6e27",
+      "public_key": "bx41-sbs-fare-collection-unknown-webster-avenue-off-board-fare-collection-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx41-sbs",
+        "treatment_family_key": "fare-collection",
+        "action": "unknown",
+        "treatment_display_name": "Webster Avenue Off-Board Fare Collection",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:f1a6d9473353cc4c3ab4be0a",
+      "key_kind": "route",
+      "subject_id": "route_webster-ave-sbs",
+      "owner_intervention_id": null,
+      "public_key": "bx41-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "BX41+",
+        "route_display_name": "BX41-SBS - ABLE route"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:f9ff17721d386ec6d0a34ccf",
+      "key_kind": "source",
+      "subject_id": "201203_brt_34th_cac6",
+      "owner_intervention_id": null,
+      "public_key": "201203-brt-34th-cac6",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "201203_brt_34th_cac6",
+        "title": "34th Street SBS Community Advisory Committee Meeting #6"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:fc0615cc1f1df0f8637e2608",
+      "key_kind": "intervention_component",
+      "subject_id": "application:54d9d0107b5fe57949abafc2",
+      "owner_intervention_id": "occurrence:b37d234ac31590880842ee39",
+      "public_key": "m103-bus-lane-unknown-offset-bus-lane-third-avenue-36th-56th-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m103",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "Offset bus lane Third Avenue 36th-56th",
+        "scope_kind": "unknown",
+        "scope_record_ids": ""
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:fc5e9002ecfe803beb100caa",
+      "key_kind": "source",
+      "subject_id": "b44_sbs_progress_report_2016",
+      "owner_intervention_id": null,
+      "public_key": "b44-sbs-progress-report-2016",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "b44_sbs_progress_report_2016",
+        "title": "source_b44_sbs_progress_report_2016"
+      }
+    }
+  ],
+  "requires_review": [],
+  "receipt_id": "public-key-migration:8c204104af09659c48844c949ed7f3d77d326c63bb2121102cee75b114cf4620"
+}

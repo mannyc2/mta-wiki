@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "contract": "plan-052-semantic-review-receipt-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w2-meeting-docs-pending-02",
+  "review_role": "independent_adjudication",
+  "reviewer_id": "plan-052-meeting02-blind-adjudicator",
+  "review_complete": true,
+  "clean_room": {
+    "independent_of_primary_review": true,
+    "inputs_limited_to": [
+      "AGENTS.md",
+      "CODEX.md",
+      "Plan 052",
+      "the named batch manifest and frozen-frontier rows",
+      "canonical records",
+      "manifest-pinned local source pages"
+    ],
+    "excluded_inputs": [
+      "primary, independent, adjudication, reconciliation, integration, evidence-gap, and STOP receipts",
+      "git diff",
+      "other agent outputs"
+    ]
+  },
+  "manifest_pin": {
+    "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-02.json",
+    "bytes": 24535,
+    "sha256": "9b8af0895d588bff3622cabebd5cce61c0a92f59fa1cb3a51799239428e1da0a"
+  },
+  "frozen_frontier_pins": [
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+      "bytes": 860230,
+      "sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/cohort.json",
+      "bytes": 720438,
+      "sha256": "59e4c2fbdb389255442c00ac06204b6798fed64742d80489441cd5524a912a61"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/observation_ledger.jsonl",
+      "bytes": 1374322,
+      "sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/summary.json",
+      "bytes": 21408,
+      "sha256": "4baf594cea14431b2f2c125c19c554755ecf167be6b81f399152873a5cd35545"
+    }
+  ],
+  "source_pin_set": {
+    "manifest_field": "evidence_source_pins",
+    "source_count": 94,
+    "total_bytes": 5607713,
+    "sha256": "5498f9f6c64906738222d1ff89472deebb11400e5eaac8f7a85508d6de92713c",
+    "verification": "Every path, byte count, and SHA-256 entry in the manifest field was verified before review."
+  },
+  "cohort_hashes": {
+    "adapter_input_sha256": "068d7732f164a164621557d08e0322a8168aa64da33d80bd41e7fd2d8939bcfb",
+    "candidate_input_sha256": "2001764f5f0ff9b251bd83da24edc000b33117162acc675a9fcc662b70232f50",
+    "candidate_membership_sha256": "74553d69ce01fe5fbf35dc428c4b7a135543f11662982e02e7c57f24b577780f",
+    "evidence_input_sha256": "5498f9f6c64906738222d1ff89472deebb11400e5eaac8f7a85508d6de92713c",
+    "observation_membership_sha256": "1842b54ea96f5c4c99ee522a50b3e78580d9a3b0209a7ae94733d1cb8afa43ec"
+  },
+  "immutable_starting_provenance": {
+    "adapter_fingerprint": "de51c8db4353cc8774d4c55bea3fcba8103ecdee3a38898b85b61733eccf07b9",
+    "cohort_fingerprint": "94dfd16c1c57362b220fb8ce53b8325e6ca166c1e697d9001da8b66f6483e373",
+    "commit_sha": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+    "corpus_fingerprint": "318cee05f0c7288fd28084df44b6b036f0607ffdfb76b3d6c6fcd14118f479c5",
+    "decision_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "identity_fingerprint": "6827adf67650c81fa38d30b1dfbaf6be5282a45491b058b3ed44167aa287d26e",
+    "review_fingerprint": "3989ac8637527e5862f18b7a6c4f7f2699078eb992a2675b16a23af525fd1d24"
+  },
+  "provider_usage": {
+    "provider": null,
+    "model": null,
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "assigned_membership": {
+    "candidate_count": 5,
+    "observation_event_count": 5,
+    "candidate_ids": [
+      "candidate:2d32cea78bbbd31dd311fa61",
+      "candidate:32100b64034f692fe36c92e7",
+      "candidate:3a044ebc7850017c27ea6814",
+      "candidate:41b671d73473fe7bc95f455a",
+      "candidate:41c3f7f19d509423bf9c2844"
+    ]
+  },
+  "findings": [
+    {
+      "candidate_id": "candidate:2d32cea78bbbd31dd311fa61",
+      "observation_event_record_ids": ["event_qbnr-phase2-end-aug-2025"],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "assessment": "This is a real Queens Bus Network Redesign rollout milestone, not a source-backed route-treatment incidence product.",
+      "known_facts": ["The network rollout was described as two phases, with phase two at the end of August 2025."],
+      "evidence_refs": ["meeting_doc_167241#p005_c0004"],
+      "gaps": [],
+      "prohibited_inferences": ["Do not expand a network-wide rollout milestone into route-by-treatment applications."],
+      "applications": [],
+      "onset": {"date_text": "end of August 2025", "date_normalized": "2025-08", "date_precision": "month"},
+      "scope": {"route_ids": [], "treatment_ids": [], "extent": "Queens bus network"},
+      "integration_status": "terminal_no_publication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:32100b64034f692fe36c92e7",
+      "observation_event_record_ids": ["event_phased-implementation-mid2025"],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "assessment": "This is a real but broad Queens Bus Network Redesign implementation target, not an exact route-treatment incidence.",
+      "known_facts": ["The source targets phased implementation for mid-2025."],
+      "evidence_refs": ["meeting_doc_138431#p001_c0006"],
+      "gaps": [],
+      "prohibited_inferences": ["Do not derive route membership or treatment membership from the network-wide target."],
+      "applications": [],
+      "onset": {"date_text": "mid-2025", "date_normalized": null, "date_precision": "unknown"},
+      "scope": {"route_ids": [], "treatment_ids": [], "extent": "Queens bus network"},
+      "integration_status": "terminal_no_publication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:3a044ebc7850017c27ea6814",
+      "observation_event_record_ids": ["event_bus-lane-cameras-activated-dec12"],
+      "recommended_disposition": "insufficient_evidence",
+      "recommended_canonical_candidate_id": null,
+      "assessment": "The block proves onboard bus-lane-enforcement camera activation on exactly B25, B62, and B42 on December 12, 2022, but the canonical graph has no exact treatment component binding for this project; publication would require guessing between later ACE identity and contemporaneous ABLE identity.",
+      "known_facts": ["The final three routes were B25, B62, and B42.", "They were activated December 12, 2022.", "The source calls the equipment onboard bus-lane-enforcement cameras."],
+      "evidence_refs": ["meeting_doc_102836#p015_c0011"],
+      "gaps": ["No canonical treatment_component or has_treatment relation binds the camera project in this source."],
+      "prohibited_inferences": ["Do not assign the later ACE treatment identity or the separately named ABLE treatment identity without exact co-reference evidence."],
+      "applications": [],
+      "onset": {"date_text": "December 12, 2022", "date_normalized": "2022-12-12", "date_precision": "day"},
+      "scope": {"route_ids": ["route_b25", "route_b62", "route_b42"], "treatment_ids": [], "extent": "onboard camera coverage on the three named routes"},
+      "integration_status": "blocked_schema",
+      "blockers": ["missing_exact_canonical_treatment_binding"]
+    },
+    {
+      "candidate_id": "candidate:41b671d73473fe7bc95f455a",
+      "observation_event_record_ids": ["event_meeting-doc-100351-open-stroller-launch"],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "assessment": "The Open Stroller Program launch is a real customer-policy program, not a route-treatment intervention product.",
+      "known_facts": ["The program launched in September 2022.", "It allows customers to board buses with open strollers and use a dedicated area."],
+      "evidence_refs": ["meeting_doc_100351#p003_c0011"],
+      "gaps": [],
+      "prohibited_inferences": ["Do not recast a fleetwide customer policy as a route-treatment application."],
+      "applications": [],
+      "onset": {"date_text": "September 2022", "date_normalized": "2022-09", "date_precision": "month"},
+      "scope": {"route_ids": [], "treatment_ids": [], "extent": "bus customer policy"},
+      "integration_status": "terminal_no_publication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:41c3f7f19d509423bf9c2844",
+      "observation_event_record_ids": ["event_meeting-doc-196991-cbdtp-start"],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "assessment": "CBDTP toll collection is a real congestion-pricing operation, not a route-treatment intervention product.",
+      "known_facts": ["MTA Bridges and Tunnels began collecting CBDTP tolls January 5, 2025."],
+      "evidence_refs": ["meeting_doc_196991#p010_c0004"],
+      "gaps": [],
+      "prohibited_inferences": ["Do not convert regional congestion pricing into bus route-treatment incidence."],
+      "applications": [],
+      "onset": {"date_text": "January 5, 2025", "date_normalized": "2025-01-05", "date_precision": "day"},
+      "scope": {"route_ids": [], "treatment_ids": [], "extent": "Manhattan CBD south of 60th Street"},
+      "integration_status": "terminal_no_publication",
+      "blockers": []
+    }
+  ],
+  "arithmetic": {
+    "assigned_candidate_count": 5,
+    "finding_count": 5,
+    "published_count": 0,
+    "duplicate_alias_count": 0,
+    "insufficient_evidence_count": 1,
+    "outside_domain_count": 4,
+    "rejected_count": 0,
+    "nonpublication_count": 5,
+    "application_count": 0,
+    "identity": "0 + 0 + 1 + 4 + 0 = 5",
+    "isolation": "Only the five explicitly assigned candidate IDs are adjudicated."
+  }
+}

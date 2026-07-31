@@ -1,0 +1,461 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w2-other-pending-01",
+  "review_role": "independent_adjudication",
+  "reviewer": "plan-052-clean-room-third-adjudicator-other01-meeting06",
+  "reviewed_at": "2026-07-31T00:00:00.000Z",
+  "review_complete": true,
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-other-pending-01.json",
+  "manifest_sha256": "5fed3160150c69590d02ecf1d7f62e6dc64a64bf2fa1c8e62e44533d7e01d750",
+  "input_pins": {
+    "manifest": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-other-pending-01.json",
+      "sha256": "5fed3160150c69590d02ecf1d7f62e6dc64a64bf2fa1c8e62e44533d7e01d750"
+    },
+    "frozen_candidate_ledger": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+      "bytes": 860230,
+      "sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2"
+    },
+    "frozen_observation_ledger": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/observation_ledger.jsonl",
+      "bytes": 1374322,
+      "sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f"
+    },
+    "target_candidate_membership_sha256": "0a491a9c9a60499d25286d275029ffac195ae3d8963e537cc4cfd68dce611291",
+    "target_observation_membership_sha256": "ebd7e9b065af8bc83ef93dabd8cada1cfae4d2b18d38cea9fc82314c92af1fa3",
+    "cohort_hashes": {
+      "adapter_input_sha256": "6907a2588f6fb9af3f127d1d01fdb198d23234ab8ca49271aa1406e26c8fb00c",
+      "candidate_input_sha256": "8d26830845ffa76bfea129cf6c9450ce2d378c6b2c3a6e9e7e9424ef749bcb73",
+      "candidate_membership_sha256": "ff91e37bf35acef6074d4cd3471d42d4ac398ceb5b7dc465a3d6fc88f7358297",
+      "evidence_input_sha256": "b100bf8d4f1cac1227150cf226f3ab9863413566b01742860cefcc6e3c90c732",
+      "observation_membership_sha256": "21e4aca044a4353873a798a5baa049e6ad4e59533cd17d892b5e679aaf998e79"
+    },
+    "immutable_starting_provenance": {
+      "commit_sha": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+      "corpus_fingerprint": "318cee05f0c7288fd28084df44b6b036f0607ffdfb76b3d6c6fcd14118f479c5",
+      "cohort_fingerprint": "94dfd16c1c57362b220fb8ce53b8325e6ca166c1e697d9001da8b66f6483e373",
+      "adapter_fingerprint": "de51c8db4353cc8774d4c55bea3fcba8103ecdee3a38898b85b61733eccf07b9",
+      "identity_fingerprint": "6827adf67650c81fa38d30b1dfbaf6be5282a45491b058b3ed44167aa287d26e",
+      "review_fingerprint": "3989ac8637527e5862f18b7a6c4f7f2699078eb992a2675b16a23af525fd1d24",
+      "decision_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "frontier_artifacts": [
+        {
+          "bytes": 860230,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+          "sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2"
+        },
+        {
+          "bytes": 720438,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/cohort.json",
+          "sha256": "59e4c2fbdb389255442c00ac06204b6798fed64742d80489441cd5524a912a61"
+        },
+        {
+          "bytes": 1374322,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/observation_ledger.jsonl",
+          "sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f"
+        },
+        {
+          "bytes": 21408,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/summary.json",
+          "sha256": "4baf594cea14431b2f2c125c19c554755ecf167be6b81f399152873a5cd35545"
+        }
+      ]
+    },
+    "source_files": [
+      {"bytes":40453,"path":"wiki/sources/14th_street_fall2019_monitoring.md","sha256":"002714069764e707b97a4e1cef90912de1acad1053c4a05e18df13f80e2fd708"},
+      {"bytes":38267,"path":"wiki/sources/14th_street_preliminary_report_fall_2019_corrected.md","sha256":"bcd6ad70702479a7f02ea9d5c487c4ec465b87a7929fcd7c733251be159c22eb"},
+      {"bytes":55036,"path":"wiki/sources/14th_street_winter2020_monitoring.md","sha256":"a00073d46d65b61d71179ff0ed2dca2185212ee800ffa9888c87900d8217f429"},
+      {"bytes":8544,"path":"wiki/sources/201011_nostrand_handout.md","sha256":"314f0347272a5872035da90470e1e5e68dcd2961fea81346f66f11c709bd4269"},
+      {"bytes":22115,"path":"wiki/sources/201109_nostrand_cb9_slides.md","sha256":"9b8320cede3baaa0b201674aad14a9a129af21024c3aceaa76fb6b6765a55a45"},
+      {"bytes":11580,"path":"wiki/sources/201110_nostrand_cb15_slides.md","sha256":"c55d2e772a6c7ac8476eb278fede8fc6f4d96b6b1751afe94279539fb25b80a9"},
+      {"bytes":22458,"path":"wiki/sources/201110_nostrand_cb17_slides.md","sha256":"e9c5fe6e5dc1e54b3c758042ad02224703afb64744356d1f2ae7f2351d9450f4"},
+      {"bytes":28860,"path":"wiki/sources/201110_nostrand_cb8_slides.md","sha256":"f206b075a752cd826bb2ddebb682146488cc7180e0bac2baacd08c0de459d07a"},
+      {"bytes":13183,"path":"wiki/sources/201111_nostrand_cb1_slides.md","sha256":"8c007f30cb7a9f611e7277eac931b70a889e1e3c598a9f48849195e1b7b1e251"},
+      {"bytes":22911,"path":"wiki/sources/20111205_nostrand_cb3_slides.md","sha256":"ca5cfb4b22fc83389cb0401d2ac17615a750a59179d6c121be4a8d32027bdfa7"},
+      {"bytes":4886,"path":"wiki/sources/2012_08_hylan_start_of_service_flyer.md","sha256":"16974f37126e756083adef8e51ff98945c0b7af07d82df459570bcab3ee4e97a"},
+      {"bytes":4445,"path":"wiki/sources/2014_125th_st_curb_regulations.md","sha256":"b800a2a815a515954e60d10f55c9e41415d608d92aed6c06832600508f75a5bd"},
+      {"bytes":49151,"path":"wiki/sources/2014_hylan_blvd_final_report.md","sha256":"4dde3a8fee6d159a57bd12abdcbc5ee297114d8de23d6872df6831827aaa9072"},
+      {"bytes":5437,"path":"wiki/sources/2014_m60_selectbusservice_launchflyer.md","sha256":"5c413eda447d9dd1b509ff17dfa4296c0c78090de64801f39945e0612493f3f9"},
+      {"bytes":707608,"path":"wiki/sources/bronx_bus_network_final_plan_2019.md","sha256":"4cb217fe20258dea22b5ec49ee171197a9e005cdc0664754462f38aff278ccae"},
+      {"bytes":1227685,"path":"wiki/sources/brooklyn_bus_network_draft_plan_with_route_profiles.md","sha256":"f2a1f56fad62abc1d672a13b0e70522abaa5a9c7fd419dba4d6d3cc9315a9e88"},
+      {"bytes":149879,"path":"wiki/sources/brooklyn_bus_network_draft_plan_without_route_profiles.md","sha256":"58a52c059000de600ee5bbfd7cd5a534690b2ab1ce83ea481cd896d6bdf57917"},
+      {"bytes":33630,"path":"wiki/sources/bx_cb5_projects_dec032019.md","sha256":"cebd54c79f950ad463d7db14853017fa21a3d322db3344dff0f115be468b1cdd"},
+      {"bytes":75877,"path":"wiki/sources/nyct_key_performance_metrics_doc194001.md","sha256":"1277ea538a173a6fbb9aa6f4593d1e555b93a15d75b08a669f71d8e2fc38b1a4"},
+      {"bytes":6873,"path":"wiki/sources/q70_fare_free_service_increases_2025.md","sha256":"b023d210d8b07ca7a2cbb43d16957e7ab0827404ead92dd853c6ea2829e47a18"}
+    ]
+  },
+  "isolation": {
+    "clean_room_assessment": true,
+    "original_reviewer_receipts_opened": false,
+    "reconciliation_or_integration_receipts_opened": false,
+    "provider_calls": 0,
+    "governed_inputs_used": [
+      "AGENTS.md",
+      "CODEX.md",
+      "LOG.md",
+      "plans/052-close-operational-episode-frontier.md",
+      "docs/operational-episode-frontier.md",
+      "Plan 052 contract and schema code",
+      "the frozen batch manifest",
+      "the exact targeted frozen candidate and observation rows",
+      "the targeted rows' canonical records and hash-pinned source pages"
+    ],
+    "nonsemantic_discovery_exposures": [
+      "An initial overbroad file-name discovery listed accepted-current path names carrying batch/category stems but no target-candidate mapping, receipt content, rationale, evidence, or outcome.",
+      "A schema-search command returned ten generic lines containing an empty route_record_ids array from a different batch, with no candidate identity, outcome, rationale, evidence, or target-batch linkage."
+    ],
+    "exposure_used_for_adjudication": false,
+    "certification": "No original reviewer, reconciliation, adjudication, integration, evidence-gap, or STOP receipt was opened or used. Candidate-level findings below were formed from the frozen manifest, frozen rows, canonical records, and exact pinned source evidence only."
+  },
+  "target_partition": [
+    {"candidate_id":"candidate:34f443bf0d318dd0a97e33cf","observation_event_record_ids":["event_start-sbs-service-2012-winter"]},
+    {"candidate_id":"candidate:407fd769b976143ae63fe882","observation_event_record_ids":["event_start-service-late2012"]},
+    {"candidate_id":"candidate:448306f9d06eb9591ac1f059","observation_event_record_ids":["event_nostrand-sbs-service-start-201011"]},
+    {"candidate_id":"candidate:4f15d91d8a39673aac4e511a","observation_event_record_ids":["event_fm-route-swap-dec2025"]},
+    {"candidate_id":"candidate:554c993379e3429a318c6195","observation_event_record_ids":["event_public-launch-fall-2019"]},
+    {"candidate_id":"candidate:55df7d8f32037f71dd351a37","observation_event_record_ids":["event_webster-pedestrian-island-spring2020"]},
+    {"candidate_id":"candidate:68ee33f841cccb7afbb5d9db","observation_event_record_ids":["event_s79-sbs-start-sep2-2012"]},
+    {"candidate_id":"candidate:6dbaa917c079f4cc2d427b29","observation_event_record_ids":["event_service-start-late-2012"]},
+    {"candidate_id":"candidate:6f4acd2ef6c371f69722e4bc","observation_event_record_ids":["event_s79-sbs-launch-2012"]},
+    {"candidate_id":"candidate:7cc1b0fe37865338d6869ac6","observation_event_record_ids":["event_start-service-late-2012"]},
+    {"candidate_id":"candidate:851e0f370eeb3238b72ade33","observation_event_record_ids":["event_implementation-summer-2025"]},
+    {"candidate_id":"candidate:85733e04363e846e95995182","observation_event_record_ids":["event_pilot-implementation-oct3"]},
+    {"candidate_id":"candidate:8c8348490805e389081836cd","observation_event_record_ids":["event_plan-implemented-summer-fall2020"]},
+    {"candidate_id":"candidate:941ff0ac7ce8ababb8fbc72f","observation_event_record_ids":["event_start-of-sbs-service-winter-2012"]},
+    {"candidate_id":"candidate:997e0be1579e3d5004c28756","observation_event_record_ids":["event_project-launch-oct2019_2"]},
+    {"candidate_id":"candidate:a5132fe0f385a61457f2d8da","observation_event_record_ids":["event_m14-sbs-start-fall2019"]},
+    {"candidate_id":"candidate:a7428319d8a06c0d412ba293","observation_event_record_ids":["event_start-of-service-late-2012_2"]},
+    {"candidate_id":"candidate:c2025d9553b3035ea40414d1","observation_event_record_ids":["event_start-of-service-late-2012"]},
+    {"candidate_id":"candidate:c75aed4a666bad6ed682866f","observation_event_record_ids":["event_tsp-coming-2013"]},
+    {"candidate_id":"candidate:d480c96fb1016f581ca6cbb9","observation_event_record_ids":["event_125th-curb-may-2014"]},
+    {"candidate_id":"candidate:d84ac7e5ad7b52c5d18fa028","observation_event_record_ids":["event_m60-sbs-service-launch-may-2014"]},
+    {"candidate_id":"candidate:e29b3e010cd413d7fe68df3d","observation_event_record_ids":["event_ttp-implementation-fall2019"]},
+    {"candidate_id":"candidate:e324e2e087b66dc48045221b","observation_event_record_ids":["event_start-sbs-service-2012"]},
+    {"candidate_id":"candidate:e7539a6241afd79671015126","observation_event_record_ids":["event_project-launch-oct2019"]}
+  ],
+  "findings": [
+    {
+      "candidate_id": "candidate:34f443bf0d318dd0a97e33cf",
+      "candidate_key": "event:event_start-sbs-service-2012-winter",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The December 2011 presentation states a Winter 2012 start target for Nostrand/Rogers SBS, but the pinned evidence does not prove that exact route-treatment occurrence reached an implemented phase at that time.",
+      "evidence_bindings": [{"record_id":"event_start-sbs-service-2012-winter","source_id":"20111205_nostrand_cb3_slides","evidence_id":"20111205_nostrand_cb3_slides#p010_c0002"}],
+      "known_facts": ["The source records a Winter 2012 planned start of SBS service for the Nostrand/Rogers project."],
+      "prohibited_inferences": ["Do not convert the forecast milestone into a completed occurrence.", "Do not infer a later launch date or treatment incidence from this block."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:407fd769b976143ae63fe882",
+      "candidate_key": "event:event_start-service-late2012",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The September 2011 source records a Late 2012 service-start target, not evidence that a particular route-treatment application was delivered.",
+      "evidence_bindings": [{"record_id":"event_start-service-late2012","source_id":"201109_nostrand_cb9_slides","evidence_id":"201109_nostrand_cb9_slides#p021_c0002"}],
+      "known_facts": ["The Nostrand/Rogers project timeline anticipated service starting in late 2012."],
+      "prohibited_inferences": ["Do not publish a forecast as an implemented occurrence.", "Do not infer route-treatment incidence beyond the cited timeline block."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:448306f9d06eb9591ac1f059",
+      "candidate_key": "event:event_nostrand-sbs-service-start-201011",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The 2010 handout depicts a Winter 2012-2013 onward project-timeline start, but does not establish actual delivery of an exact route-treatment application.",
+      "evidence_bindings": [{"record_id":"event_nostrand-sbs-service-start-201011","source_id":"201011_nostrand_handout","evidence_id":"201011_nostrand_handout#p003_c0004"}],
+      "known_facts": ["The source presents a future SBS service-start window for the Nostrand/Rogers project."],
+      "prohibited_inferences": ["Do not treat the diagrammed future window as completed implementation.", "Do not infer a route or treatment cross-product."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:4f15d91d8a39673aac4e511a",
+      "candidate_key": "event:event_fm-route-swap-dec2025",
+      "recommended_disposition": "outside_domain",
+      "assessment": "The F/M subway-network route swap is a real rail service-change event, but it is not a bus route × bus-priority-treatment operational occurrence.",
+      "evidence_bindings": [
+        {"record_id":"event_fm-route-swap-dec2025","source_id":"nyct_key_performance_metrics_doc194001","evidence_id":"nyct_key_performance_metrics_doc194001#p004_c0007"},
+        {"record_id":"event_fm-route-swap-dec2025","source_id":"nyct_key_performance_metrics_doc194001","evidence_id":"nyct_key_performance_metrics_doc194001#p009_c0011"}
+      ],
+      "known_facts": ["The source describes a permanent F/M subway routing swap implemented December 8, 2025."],
+      "prohibited_inferences": ["Do not model subway lines as bus routes or manufacture a bus-priority treatment."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:554c993379e3429a318c6195",
+      "candidate_key": "event:event_public-launch-fall-2019",
+      "recommended_disposition": "outside_domain",
+      "assessment": "This is the public-outreach launch of the Brooklyn Bus Network Redesign, not a route × treatment operational change.",
+      "evidence_bindings": [
+        {"record_id":"event_public-launch-fall-2019","source_id":"brooklyn_bus_network_draft_plan_with_route_profiles","evidence_id":"brooklyn_bus_network_draft_plan_with_route_profiles#p005_c0006"},
+        {"record_id":"event_public-launch-fall-2019","source_id":"brooklyn_bus_network_draft_plan_with_route_profiles","evidence_id":"brooklyn_bus_network_draft_plan_with_route_profiles#p006_c0004"}
+      ],
+      "known_facts": ["The source documents open houses, on-street outreach, and surveys in Fall 2019."],
+      "prohibited_inferences": ["Do not turn an outreach-program milestone into route-treatment incidence."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:55df7d8f32037f71dd351a37",
+      "candidate_key": "event:event_webster-pedestrian-island-spring2020",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The source says a pedestrian island will be installed in Spring 2020 and separately reports Bx41 speed changes from a southbound bus lane; it does not prove that the future island itself was delivered as an exact Bx41 route-treatment occurrence.",
+      "evidence_bindings": [{"record_id":"event_webster-pedestrian-island-spring2020","source_id":"bx_cb5_projects_dec032019","evidence_id":"bx_cb5_projects_dec032019#p003_c0004"}],
+      "known_facts": ["A pedestrian island was planned on Webster Avenue between East 176th and East 174th Streets for Spring 2020.", "The same source block separately discusses a southbound bus lane and Bx41 Local/SBS running time."],
+      "prohibited_inferences": ["Do not borrow the bus-lane route evidence to assert route incidence for the pedestrian-island event.", "Do not convert future tense into completed installation."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:68ee33f841cccb7afbb5d9db",
+      "candidate_key": "event:event_s79-sbs-start-sep2-2012",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:6f4acd2ef6c371f69722e4bc",
+      "assessment": "The launch flyer and later final report identify the same S79 SBS launch on September 2, 2012. The later report-backed candidate is the evidence-complete canonical head.",
+      "evidence_bindings": [
+        {"record_id":"event_s79-sbs-start-sep2-2012","source_id":"2012_08_hylan_start_of_service_flyer","evidence_id":"2012_08_hylan_start_of_service_flyer#p001_c0001"},
+        {"record_id":"event_s79-sbs-start-sep2-2012","source_id":"2012_08_hylan_start_of_service_flyer","evidence_id":"2012_08_hylan_start_of_service_flyer#p002_c0001"},
+        {"record_id":"event_s79-sbs-start-sep2-2012","source_id":"2012_08_hylan_start_of_service_flyer","evidence_id":"2012_08_hylan_start_of_service_flyer#p002_c0002"}
+      ],
+      "review_evidence_bindings": [{"record_id":"event_s79-sbs-launch-2012","source_id":"2014_hylan_blvd_final_report","evidence_id":"2014_hylan_blvd_final_report#p012_c0003","role":"canonical_event_confirmation"}],
+      "known_facts": ["Both sources identify S79 SBS and the September 2, 2012 service launch."],
+      "prohibited_inferences": ["Do not create a second occurrence for the same launch.", "Do not include the explicitly deferred TSP treatment in the September 2 launch."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:6dbaa917c079f4cc2d427b29",
+      "candidate_key": "event:event_service-start-late-2012",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The presentation states a Late 2012 service-start target, but the exact pinned evidence does not prove completed route-treatment implementation.",
+      "evidence_bindings": [
+        {"record_id":"event_service-start-late-2012","source_id":"201110_nostrand_cb8_slides","evidence_id":"201110_nostrand_cb8_slides#p009_c0002"},
+        {"record_id":"event_service-start-late-2012","source_id":"201110_nostrand_cb8_slides","evidence_id":"201110_nostrand_cb8_slides#p023_c0002"}
+      ],
+      "known_facts": ["The source presents a late-2012 start milestone for Nostrand/Rogers SBS."],
+      "prohibited_inferences": ["Do not publish a proposed milestone as delivered.", "Do not infer a later route-treatment occurrence."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:6f4acd2ef6c371f69722e4bc",
+      "candidate_key": "event:event_s79-sbs-launch-2012",
+      "recommended_disposition": "published",
+      "assessment": "The final report proves that S79 SBS launched September 2, 2012 and that the station-consolidation treatment was part of the implemented project. One exact S79+ × station consolidation × launch application is established without cross-product.",
+      "evidence_bindings": [
+        {"record_id":"event_s79-sbs-launch-2012","source_id":"2014_hylan_blvd_final_report","evidence_id":"2014_hylan_blvd_final_report#p006_c0001"},
+        {"record_id":"event_s79-sbs-launch-2012","source_id":"2014_hylan_blvd_final_report","evidence_id":"2014_hylan_blvd_final_report#p012_c0003"}
+      ],
+      "review_evidence_bindings": [
+        {"record_id":"event_s79-sbs-launch-2012","source_id":"2014_hylan_blvd_final_report","evidence_id":"2014_hylan_blvd_final_report#p012_c0003","role":"event_date"},
+        {"record_id":"route_able-s79-sbs","source_id":"2014_hylan_blvd_final_report","evidence_id":"2014_hylan_blvd_final_report#p002_c0002","role":"route_identity"},
+        {"record_id":"treatment_station-consolidation","source_id":"2014_hylan_blvd_final_report","evidence_id":"2014_hylan_blvd_final_report#p007_c0007","role":"treatment_definition"}
+      ],
+      "resolved_onset": {"date":"2012-09-02","precision":"day"},
+      "known_facts": ["S79 SBS launched on September 2, 2012.", "The implemented S79 project reduced the route from 80 stops to 18 SBS stations.", "The final report says the launch elements were substantially in place at service start."],
+      "prohibited_inferences": ["Do not attach TSP to the September 2012 phase; the sources explicitly place it later.", "Do not infer treatments not individually supported."],
+      "applications": [
+        {
+          "route_record_id": "route_able-s79-sbs",
+          "gtfs_route_id": "S79+",
+          "route_evidence_id": "2014_hylan_blvd_final_report#p002_c0002",
+          "treatment_record_id": "treatment_station-consolidation",
+          "treatment_evidence_id": "2014_hylan_blvd_final_report#p007_c0007",
+          "phase_record_id": null
+        }
+      ]
+    },
+    {
+      "candidate_id": "candidate:7cc1b0fe37865338d6869ac6",
+      "candidate_key": "event:event_start-service-late-2012",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The block is a next-steps forecast for a Late 2012 service start and does not prove an implemented route-treatment occurrence.",
+      "evidence_bindings": [{"record_id":"event_start-service-late-2012","source_id":"20111205_nostrand_cb3_slides","evidence_id":"20111205_nostrand_cb3_slides#p020_c0002"}],
+      "known_facts": ["The December 2011 presentation anticipated a late-2012 Nostrand/Rogers service start."],
+      "prohibited_inferences": ["Do not publish the forecast as delivered.", "Do not force co-reference with a later actual launch without exact evidence."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:851e0f370eeb3238b72ade33",
+      "candidate_key": "event:event_implementation-summer-2025",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The board item recommends adding 18 weekday Q70 trips and gives Summer 2025 as the implementation date, but its documentary status is proposed and the pinned evidence does not prove delivery.",
+      "evidence_bindings": [{"record_id":"event_implementation-summer-2025","source_id":"q70_fare_free_service_increases_2025","evidence_id":"q70_fare_free_service_increases_2025#p001_c0013"}],
+      "known_facts": ["The proposal names Q70 SBS, recommends approximately 18 additional weekday trips, and states Summer 2025 as the implementation date."],
+      "prohibited_inferences": ["Do not convert a proposed implementation date into a completed service increase.", "Do not publish without delivered-phase evidence."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:85733e04363e846e95995182",
+      "candidate_key": "event:event_pilot-implementation-oct3",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:e29b3e010cd413d7fe68df3d",
+      "assessment": "This monitoring copy and the corrected preliminary report describe the same TTP Pilot implementation on October 3, 2019; the corrected-report candidate is the canonical evidence-complete head.",
+      "evidence_bindings": [{"record_id":"event_pilot-implementation-oct3","source_id":"14th_street_fall2019_monitoring","evidence_id":"14th_street_fall2019_monitoring#p003_c0017"}],
+      "review_evidence_bindings": [{"record_id":"event_ttp-implementation-fall2019","source_id":"14th_street_preliminary_report_fall_2019_corrected","evidence_id":"14th_street_preliminary_report_fall_2019_corrected#p003_c0017","role":"canonical_event_confirmation"}],
+      "known_facts": ["Both records state that the 14th Street TTP Pilot was implemented October 3, 2019."],
+      "prohibited_inferences": ["Do not mint a second occurrence for the same project/date/phase."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:8c8348490805e389081836cd",
+      "candidate_key": "event:event_plan-implemented-summer-fall2020",
+      "recommended_disposition": "outside_domain",
+      "assessment": "The Bronx Bus Network Redesign plan-level implementation target is an aggregate program milestone, not one exact route × treatment occurrence.",
+      "evidence_bindings": [{"record_id":"event_plan-implemented-summer-fall2020","source_id":"bronx_bus_network_final_plan_2019","evidence_id":"bronx_bus_network_final_plan_2019#p041_c0012"}],
+      "known_facts": ["The 2019 final plan states Summer/Fall 2020 as the target for plan implementation."],
+      "prohibited_inferences": ["Do not cross-product the redesign's routes and changes.", "Do not treat a plan-wide milestone as an exact operational occurrence."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:941ff0ac7ce8ababb8fbc72f",
+      "candidate_key": "event:event_start-of-sbs-service-winter-2012",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The source gives a Winter 2012 planned start for Nostrand/Rogers SBS, not evidence of completed exact incidence.",
+      "evidence_bindings": [{"record_id":"event_start-of-sbs-service-winter-2012","source_id":"201110_nostrand_cb15_slides","evidence_id":"201110_nostrand_cb15_slides#p013_c0002"}],
+      "known_facts": ["The source timeline anticipated a Winter 2012 SBS service start."],
+      "prohibited_inferences": ["Do not publish a future plan as delivered.", "Do not infer exact route-treatment incidence from the milestone alone."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:997e0be1579e3d5004c28756",
+      "candidate_key": "event:event_project-launch-oct2019_2",
+      "recommended_disposition": "outside_domain",
+      "assessment": "This is the public launch of Brooklyn Bus Network Redesign outreach, not an operational route-treatment event.",
+      "evidence_bindings": [{"record_id":"event_project-launch-oct2019_2","source_id":"brooklyn_bus_network_draft_plan_without_route_profiles","evidence_id":"brooklyn_bus_network_draft_plan_without_route_profiles#p006_c0004"}],
+      "known_facts": ["The source describes October 2019 public outreach, including open houses, surveys, and on-street engagement."],
+      "prohibited_inferences": ["Do not model an outreach launch as route-treatment incidence."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:a5132fe0f385a61457f2d8da",
+      "candidate_key": "event:event_m14-sbs-start-fall2019",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The report proves M14 A/D SBS service started in July 2019, but these pinned service-start blocks do not bind that phase to an exact treatment component. The October TTP implementation is a distinct event and cannot be backdated.",
+      "evidence_bindings": [
+        {"record_id":"event_m14-sbs-start-fall2019","source_id":"14th_street_preliminary_report_fall_2019_corrected","evidence_id":"14th_street_preliminary_report_fall_2019_corrected#p005_c0022"},
+        {"record_id":"event_m14-sbs-start-fall2019","source_id":"14th_street_preliminary_report_fall_2019_corrected","evidence_id":"14th_street_preliminary_report_fall_2019_corrected#p006_c0009"}
+      ],
+      "known_facts": ["M14 A/D SBS services started in July 2019."],
+      "prohibited_inferences": ["Do not attach the October 3 TTP restrictions to the July service-start phase.", "Do not publish a route-only event without an exact treatment application."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:a7428319d8a06c0d412ba293",
+      "candidate_key": "event:event_start-of-service-late-2012_2",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The next-steps block records a Late 2012 proposed service start; it does not prove delivered route-treatment incidence.",
+      "evidence_bindings": [{"record_id":"event_start-of-service-late-2012_2","source_id":"201110_nostrand_cb15_slides","evidence_id":"201110_nostrand_cb15_slides#p014_c0002"}],
+      "known_facts": ["The source anticipated a late-2012 Nostrand/Rogers service start."],
+      "prohibited_inferences": ["Do not turn a planned next step into an implemented occurrence."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:c2025d9553b3035ea40414d1",
+      "candidate_key": "event:event_start-of-service-late-2012",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The source states a Late 2012 planned SBS start, without proving completed exact route-treatment incidence.",
+      "evidence_bindings": [{"record_id":"event_start-of-service-late-2012","source_id":"201110_nostrand_cb17_slides","evidence_id":"201110_nostrand_cb17_slides#p019_c0002"}],
+      "known_facts": ["The source timeline anticipated the Nostrand/Rogers SBS start in late 2012."],
+      "prohibited_inferences": ["Do not publish the forecast as delivered.", "Do not infer later implementation facts."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:c75aed4a666bad6ed682866f",
+      "candidate_key": "event:event_tsp-coming-2013",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The launch flyer explicitly says S79 Transit Signal Priority was coming in 2013; it proves a planned treatment and year, not actual implementation.",
+      "evidence_bindings": [{"record_id":"event_tsp-coming-2013","source_id":"2012_08_hylan_start_of_service_flyer","evidence_id":"2012_08_hylan_start_of_service_flyer#p002_c0007"}],
+      "known_facts": ["TSP for the S79 project was planned for 2013.", "The source defines TSP as extending green or shortening red signal time for buses."],
+      "prohibited_inferences": ["Do not include TSP in the September 2012 launch.", "Do not assert 2013 delivery without completion evidence."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:d480c96fb1016f581ca6cbb9",
+      "candidate_key": "event:event_125th-curb-may-2014",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The flyer says several 125th Street curb and bus-stop changes were coming in May 2014, but does not identify exact route incidence or prove completed installation.",
+      "evidence_bindings": [{"record_id":"event_125th-curb-may-2014","source_id":"2014_125th_st_curb_regulations","evidence_id":"2014_125th_st_curb_regulations#p001_c0006"}],
+      "known_facts": ["The flyer announces longer bus stops, loading-zone changes, parking changes, and anticipated faster bus service on 125th Street for May 2014."],
+      "prohibited_inferences": ["Do not infer M60 or any other route from corridor context.", "Do not convert 'Coming in May' into completed installation."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:d84ac7e5ad7b52c5d18fa028",
+      "candidate_key": "event:event_m60-sbs-service-launch-may-2014",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The launch flyer proves an exact scheduled M60 SBS date and describes the route and treatments, but its future-tense 'is coming' language does not prove that the launch reached a delivered phase.",
+      "evidence_bindings": [{"record_id":"event_m60-sbs-service-launch-may-2014","source_id":"2014_m60_selectbusservice_launchflyer","evidence_id":"2014_m60_selectbusservice_launchflyer#p001_c0002"}],
+      "known_facts": ["M60 Select Bus Service was scheduled for Sunday, May 25, 2014.", "The flyer describes off-board fare payment and dedicated 125th Street bus lanes."],
+      "prohibited_inferences": ["Do not convert the advance flyer into post-launch confirmation.", "Do not attach local routes listed for context to the M60 treatment package."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:e29b3e010cd413d7fe68df3d",
+      "candidate_key": "event:event_ttp-implementation-fall2019",
+      "recommended_disposition": "published",
+      "assessment": "The post-implementation report directly proves the October 3, 2019 TTP implementation, names M14A/D SBS as the intended bus service, and defines the exact 14th Street traffic-restriction treatment. One M14+ × TTP restrictions × implementation application is exact.",
+      "evidence_bindings": [{"record_id":"event_ttp-implementation-fall2019","source_id":"14th_street_preliminary_report_fall_2019_corrected","evidence_id":"14th_street_preliminary_report_fall_2019_corrected#p003_c0017"}],
+      "review_evidence_bindings": [
+        {"record_id":"event_ttp-implementation-fall2019","source_id":"14th_street_preliminary_report_fall_2019_corrected","evidence_id":"14th_street_preliminary_report_fall_2019_corrected#p003_c0017","role":"event_date"},
+        {"record_id":"route_m14-ad-sbs","source_id":"14th_street_preliminary_report_fall_2019_corrected","evidence_id":"14th_street_preliminary_report_fall_2019_corrected#p002_c0006","role":"route_identity"},
+        {"record_id":"treatment_ttp-restrictions-fall2019","source_id":"14th_street_preliminary_report_fall_2019_corrected","evidence_id":"14th_street_preliminary_report_fall_2019_corrected#p002_c0007","role":"treatment_definition"}
+      ],
+      "resolved_onset": {"date":"2019-10-03","precision":"day"},
+      "known_facts": ["NYC DOT implemented the TTP Pilot in October 2019.", "The exact project rules prioritize buses, trucks, and emergency vehicles on the bounded 14th Street corridor.", "The project aimed to improve M14A/D SBS operations."],
+      "prohibited_inferences": ["Do not attach pedestrian-space or boarding-platform work whose timing differs.", "Do not split M14A and M14D into a route-treatment cross-product; use the durable M14 A/D SBS subject."],
+      "applications": [
+        {
+          "route_record_id": "route_m14-ad-sbs",
+          "gtfs_route_id": "M14+",
+          "route_evidence_id": "14th_street_preliminary_report_fall_2019_corrected#p002_c0006",
+          "treatment_record_id": "treatment_ttp-restrictions-fall2019",
+          "treatment_evidence_id": "14th_street_preliminary_report_fall_2019_corrected#p002_c0007",
+          "phase_record_id": null
+        }
+      ]
+    },
+    {
+      "candidate_id": "candidate:e324e2e087b66dc48045221b",
+      "candidate_key": "event:event_start-sbs-service-2012",
+      "recommended_disposition": "insufficient_evidence",
+      "assessment": "The source presents a Winter 2012 start milestone for Nostrand/Rogers SBS, but does not prove delivered exact route-treatment incidence.",
+      "evidence_bindings": [{"record_id":"event_start-sbs-service-2012","source_id":"201111_nostrand_cb1_slides","evidence_id":"201111_nostrand_cb1_slides#p013_c0002"}],
+      "known_facts": ["The presentation anticipated starting SBS service in Winter 2012."],
+      "prohibited_inferences": ["Do not publish a planning milestone as delivered.", "Do not infer a later launch or treatment."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:e7539a6241afd79671015126",
+      "candidate_key": "event:event_project-launch-oct2019",
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:e29b3e010cd413d7fe68df3d",
+      "assessment": "The Winter 2020 report's October 3, 2019 project-launch statement identifies the same TTP implementation represented by the corrected Fall 2019 report candidate.",
+      "evidence_bindings": [{"record_id":"event_project-launch-oct2019","source_id":"14th_street_winter2020_monitoring","evidence_id":"14th_street_winter2020_monitoring#p004_c0005"}],
+      "review_evidence_bindings": [{"record_id":"event_ttp-implementation-fall2019","source_id":"14th_street_preliminary_report_fall_2019_corrected","evidence_id":"14th_street_preliminary_report_fall_2019_corrected#p003_c0017","role":"canonical_event_confirmation"}],
+      "known_facts": ["Both sources identify the same 14th Street TTP project and October 3, 2019 implementation/launch."],
+      "prohibited_inferences": ["Do not mint a separate occurrence for a later report's description of the same event."],
+      "applications": []
+    }
+  ],
+  "arithmetic": {
+    "required_terminal_candidate_count": 24,
+    "accounted_candidate_count": 24,
+    "required_observation_count": 24,
+    "accounted_observation_count": 24,
+    "published_count": 2,
+    "duplicate_alias_count": 3,
+    "insufficient_evidence_count": 15,
+    "outside_domain_count": 4,
+    "rejected_count": 0,
+    "application_count": 2,
+    "final_pending_count": 0,
+    "arithmetic_ok": true
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "provider": "none",
+    "profile": null,
+    "model": null,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  }
+}

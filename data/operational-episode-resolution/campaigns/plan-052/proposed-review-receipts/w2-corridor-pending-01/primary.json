@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "batch_id": "w2-corridor-pending-01",
+  "reviewer": "plan-052-primary-corridor-pending-01",
+  "review_role": "primary",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-corridor-pending-01.json",
+  "manifest_sha256": "95711643dc8d356f7e31bd6bd2f8757e36b1b58874509b4f3a533a76ab255268",
+  "manifest_verification": {
+    "candidate_count": 29,
+    "starting_published_count": 0,
+    "starting_pending_review_count": 29,
+    "observation_count": 60,
+    "candidate_bearing_observation_count": 29,
+    "observation_only_count": 31,
+    "status": "pass"
+  },
+  "review_isolation": {
+    "other_review_rationales_read": false,
+    "other_proposed_receipts_read": false,
+    "evidence_scope": "Exact frozen candidate rows, manifest-pinned source bytes, canonical records named by those rows, and existing accepted route identity bindings only."
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "review_complete": true,
+  "stop": false,
+  "findings": [
+    {
+      "candidate_id": "candidate:09d029cfaedf6e61d279d372",
+      "candidate_key": "event:event_ace-cameras-34th-st-aug2020",
+      "observation_event_record_ids": ["event_ace-cameras-34th-st-aug2020"],
+      "recommended_disposition": "published",
+      "evidence_ids": ["34th_st_enhanced_bus_priority_cb4_may2025#p023_c0002"],
+      "assessment": "The pinned block says ACE cameras were in effect on the 34th Street M34/M34A SBS route since 8/10/20. The two route names share one explicitly named treatment, so the two applications are evidenced directly and do not arise from a plural-route by plural-treatment cross-product.",
+      "applications": [
+        {"route_record_id": "route_m34-sbs", "gtfs_route_id": "M34+", "treatment_record_id": "treatment_ace-camera-enforcement_2", "phase": "in_effect_since", "date_text": "since 8/10/20", "normalized_date": "2020-08-10", "date_precision": "day", "extent": "34th Street", "evidence_ids": ["34th_st_enhanced_bus_priority_cb4_may2025#p023_c0002"]},
+        {"route_record_id": "route_m34a-sbs", "gtfs_route_id": "M34A+", "treatment_record_id": "treatment_ace-camera-enforcement_2", "phase": "in_effect_since", "date_text": "since 8/10/20", "normalized_date": "2020-08-10", "date_precision": "day", "extent": "34th Street", "evidence_ids": ["34th_st_enhanced_bus_priority_cb4_may2025#p023_c0002"]}
+      ],
+      "prohibited_inferences": ["No route beyond M34+ and M34A+.", "No exact onset earlier than the source-stated in-effect-since date."]
+    },
+    {
+      "candidate_id": "candidate:1f9ec8221329e8dc1c2b050d",
+      "candidate_key": "event:event_2018-cropsey-ave-project",
+      "observation_event_record_ids": ["event_2018-cropsey-ave-project"],
+      "recommended_disposition": "published",
+      "evidence_ids": ["bay_pkwy_cropsey_ave_jan2025#p015_c0002"],
+      "assessment": "The retrospective pinned block identifies the 2018 Cropsey Avenue project and one bus boarding island for the B6 and B82-SBS layover in front of I.S. 281. Two routes share one explicitly named treatment, so there is no 2x2 inference.",
+      "applications": [
+        {"route_record_id": "route_b6-2015-sbk-corridor", "gtfs_route_id": "B6", "treatment_record_id": "treatment_bus-boarding-island-cropsey", "phase": "implemented", "date_text": "2018", "normalized_date": "2018", "date_precision": "year", "extent": "Cropsey Avenue in front of I.S. 281, within the Bay Parkway-to-26th Avenue project", "evidence_ids": ["bay_pkwy_cropsey_ave_jan2025#p015_c0002"]},
+        {"route_record_id": "route_b82-sbs", "gtfs_route_id": "B82+", "treatment_record_id": "treatment_bus-boarding-island-cropsey", "phase": "implemented", "date_text": "2018", "normalized_date": "2018", "date_precision": "year", "extent": "Cropsey Avenue in front of I.S. 281, within the Bay Parkway-to-26th Avenue project", "evidence_ids": ["bay_pkwy_cropsey_ave_jan2025#p015_c0002"]}
+      ],
+      "prohibited_inferences": ["No treatment other than the boarding island.", "No route beyond B6 and B82-SBS.", "Do not represent the upcoming capital work in the same block as delivered."]
+    },
+    {
+      "candidate_id": "candidate:2bc0c2428fa76c07953cd220",
+      "candidate_key": "event:event_project-restart-announcement-feb2026",
+      "observation_event_record_ids": ["event_project-restart-announcement-feb2026"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p002_c0002"],
+      "assessment": "A project-restart announcement is an administrative program event, not a delivered route by treatment operational occurrence."
+    },
+    {
+      "candidate_id": "candidate:2d2a21cb498648297c0408ad",
+      "candidate_key": "event:event_street-design-implementation-summer2019_2",
+      "observation_event_record_ids": ["event_street-design-implementation-summer2019_2"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["42nd_st_cb4_jun192019#p027_c0002"],
+      "assessment": "The June 2019 presentation gives a prospective Summer 2019 implementation step, not retrospective proof that a route-specific treatment was delivered.",
+      "known_facts": {"time": "Summer 2019 planned implementation", "corridor": "42nd Street", "status": "prospective in pinned source"},
+      "prohibited_inferences": ["No delivered occurrence.", "No route or treatment incidence inferred from the project schedule."]
+    },
+    {
+      "candidate_id": "candidate:3148bb0f42568786d3f10350",
+      "candidate_key": "event:event_implement-chauncey-fulton-tbd",
+      "observation_event_record_ids": ["event_implement-chauncey-fulton-tbd"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["malcolm_x_blvd_utica_ave_jun2019#p017_c0002"],
+      "assessment": "The Chauncey Street-to-Fulton Street implementation date is TBD and the pinned planning block does not prove delivery.",
+      "known_facts": {"corridor": "Utica Avenue, Chauncey Street to Fulton Street", "time": "TBD", "status": "planned"},
+      "prohibited_inferences": ["No delivered occurrence.", "No route incidence inferred."]
+    },
+    {
+      "candidate_id": "candidate:3493b460514dbc2bf51b5049",
+      "candidate_key": "event:event_dekalb-lafayette-summer2024-temp-lanes",
+      "observation_event_record_ids": ["event_dekalb-lafayette-summer2024-temp-lanes"],
+      "recommended_disposition": "published",
+      "evidence_ids": ["dekalb_lafayette_cb2_dec2024#p026_c0002"],
+      "assessment": "The retrospective pinned block says temporary lanes were installed in Summer 2024 and that the corridor lanes improved B38 service. It binds one exact route to one exact treatment.",
+      "applications": [
+        {"route_record_id": "route_b38", "gtfs_route_id": "B38", "treatment_record_id": "treatment_temp-bus-lanes-summer2024", "phase": "installed", "date_text": "Summer 2024", "normalized_date": "2024-summer", "date_precision": "season", "extent": "portions of DeKalb and Lafayette Avenues", "evidence_ids": ["dekalb_lafayette_cb2_dec2024#p026_c0002"]}
+      ],
+      "prohibited_inferences": ["No permanent-lane status.", "No route beyond B38.", "Do not merge with the separate Summer/Fall 2025 proposal."]
+    },
+    {
+      "candidate_id": "candidate:38ce9289f7e4b98ecd1f3caf",
+      "candidate_key": "event:event_able-implementation-nov18-2022",
+      "observation_event_record_ids": ["event_able-implementation-nov18-2022"],
+      "recommended_disposition": "published",
+      "evidence_ids": ["fordham_rd_inwood_cb7_jun2023#p023_c0002", "fordham_rd_inwood_cb7_jun2023#p049_c0002"],
+      "assessment": "The pinned evidence says ABLE was implemented on all Bx12-SBS buses on November 18, 2022 and bounds the observed Fordham Road segment. It establishes one exact route-treatment application.",
+      "applications": [
+        {"route_record_id": "route_bx12-plus", "gtfs_route_id": "BX12+", "treatment_record_id": "treatment_able-enforcement", "phase": "implemented_warning_period", "date_text": "November 18, 2022", "normalized_date": "2022-11-18", "date_precision": "day", "extent": "Fordham Road between Sedgwick Avenue and Southern Boulevard", "evidence_ids": ["fordham_rd_inwood_cb7_jun2023#p023_c0002", "fordham_rd_inwood_cb7_jun2023#p049_c0002"]}
+      ],
+      "prohibited_inferences": ["Do not backdate summons issuance before January 17, 2023.", "No route beyond Bx12-SBS."]
+    },
+    {
+      "candidate_id": "candidate:3a328b5d3aad08957d3b653f",
+      "candidate_key": "event:event_implement-fulton-to-atlantic-summer2019",
+      "observation_event_record_ids": ["event_implement-fulton-to-atlantic-summer2019"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["malcolm_x_blvd_utica_ave_may2019#p021_c0002"],
+      "assessment": "The May 2019 timeline is prospective and does not prove the Fulton Street-to-Atlantic Avenue segment was delivered.",
+      "known_facts": {"corridor": "Utica Avenue, Fulton Street to Atlantic Avenue", "time": "Summer 2019 planned implementation", "status": "prospective"},
+      "prohibited_inferences": ["No delivered occurrence.", "No route incidence inferred."]
+    },
+    {
+      "candidate_id": "candidate:3e83d7a3c608cb6545dde733",
+      "candidate_key": "event:event_implementation-summer2019",
+      "observation_event_record_ids": ["event_implementation-summer2019"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["church_ave_cb14_tc_may2019#p031_c0002"],
+      "assessment": "The May 2019 project timeline schedules Summer 2019 implementation but is not evidence that the Church Avenue treatment was delivered.",
+      "known_facts": {"corridor": "Church Avenue", "time": "Summer 2019 planned implementation", "status": "prospective"},
+      "prohibited_inferences": ["No delivered occurrence.", "No route-treatment incidence inferred."]
+    },
+    {
+      "candidate_id": "candidate:4094c4e2a2b295c159afa65b",
+      "candidate_key": "event:event_curbside-bus-lanes-intro-2008",
+      "observation_event_record_ids": ["event_curbside-bus-lanes-intro-2008"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["34th_st_enhanced_bus_priority_cb5_jan2025#p008_c0002"],
+      "assessment": "The pinned block proves curbside lanes on 34th Street in 2008 but does not bind the 2008 treatment to exact durable route subjects. Backdating the later M34/M34A SBS designations would be false.",
+      "known_facts": {"treatment": "curbside bus lanes", "corridor": "34th Street", "time": "2008", "status": "delivered treatment with unresolved exact route incidence"},
+      "prohibited_inferences": ["Do not backdate M34+ or M34A+ SBS designations to 2008.", "No route cross-product."]
+    },
+    {
+      "candidate_id": "candidate:493c79769bed33c2a20955da",
+      "candidate_key": "event:event_able-implementation-bx12-sbs",
+      "observation_event_record_ids": ["event_able-implementation-bx12-sbs"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:38ce9289f7e4b98ecd1f3caf",
+      "evidence_ids": ["fordham_rd_inwood_cb5_jun2023#p023_c0002", "fordham_rd_inwood_cb5_jun2023#p047_c0002"],
+      "assessment": "This observation co-refers to the same Bx12-SBS ABLE implementation on November 18, 2022 as the canonical candidate."
+    },
+    {
+      "candidate_id": "candidate:4af8c545ae3df68902e071f0",
+      "candidate_key": "event:event_bx12-sbs-launch-2008_3",
+      "observation_event_record_ids": ["event_bx12-sbs-launch-2008_3"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:5e7fcd1846aa832a66307396",
+      "evidence_ids": ["fordham_rd_major_deegan_expwy_boston_rd_cab_feb2021#p006_c0003", "fordham_rd_major_deegan_expwy_boston_rd_cab_feb2021#p006_c0005"],
+      "assessment": "This is a second observation of the same Bx12 SBS 2008 launch and Fordham Road treatment occurrence."
+    },
+    {
+      "candidate_id": "candidate:4f620ca153ff7aed15d475be",
+      "candidate_key": "event:event_tentative-implementation-summer2025",
+      "observation_event_record_ids": ["event_tentative-implementation-summer2025"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["116_st_morningside_ave_pleasant_ave_cb10_jun2025#p032_c0002"],
+      "assessment": "Tentative Summer 2025 implementation is prospective and does not prove delivery.",
+      "known_facts": {"time": "tentative Summer 2025", "status": "prospective"},
+      "prohibited_inferences": ["No delivered occurrence.", "No route-treatment incidence inferred."]
+    },
+    {
+      "candidate_id": "candidate:514ee819286a8af325464fb7",
+      "candidate_key": "event:event_busway-launch-20210426",
+      "observation_event_record_ids": ["event_busway-launch-20210426"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["181st_street_jun2022#p005_c0002"],
+      "assessment": "The pinned source proves the 181st Street busway launch date and corridor, but it does not establish exact route incidence.",
+      "known_facts": {"treatment": "busway", "corridor": "181st Street", "time": "April 26, 2021", "status": "delivered treatment with unresolved exact route incidence"},
+      "prohibited_inferences": ["No route inferred from corridor knowledge or other unpinned sources."]
+    },
+    {
+      "candidate_id": "candidate:5e7fcd1846aa832a66307396",
+      "candidate_key": "event:event_bx12-sbs-launch-2008_2",
+      "observation_event_record_ids": ["event_bx12-sbs-launch-2008_2"],
+      "recommended_disposition": "published",
+      "evidence_ids": ["fordham_rd_major_deegan_expwy_boston_rd_cab_jan2021#p017_c0002"],
+      "assessment": "The retrospective pinned block explicitly says MTA and DOT launched SBS on the Bx12 in 2008 and installed curbside bus lanes throughout the corridor. It binds one route to one treatment.",
+      "applications": [
+        {"route_record_id": "route_bx12-plus", "gtfs_route_id": "BX12+", "treatment_record_id": "treatment_curbside-bus-lanes-fordham-rd", "phase": "launched_and_installed", "date_text": "2008", "normalized_date": "2008", "date_precision": "year", "extent": "Fordham Road corridor", "evidence_ids": ["fordham_rd_major_deegan_expwy_boston_rd_cab_jan2021#p017_c0002"]}
+      ],
+      "prohibited_inferences": ["No exact day or month.", "No route beyond Bx12-SBS.", "Do not add treatments only listed as performance context."]
+    },
+    {
+      "candidate_id": "candidate:610cad7c2ec5e7cf48f7515b",
+      "candidate_key": "event:event_able-implementation-nov2022",
+      "observation_event_record_ids": ["event_able-implementation-nov2022"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:38ce9289f7e4b98ecd1f3caf",
+      "evidence_ids": ["fordham_rd_inwood_cab_may2023#p023_c0002", "fordham_rd_inwood_cab_may2023#p049_c0002"],
+      "assessment": "This observation co-refers to the same Bx12-SBS ABLE implementation on November 18, 2022 as the canonical candidate."
+    },
+    {
+      "candidate_id": "candidate:63eee0dc5fb645c9a4e177c3",
+      "candidate_key": "event:event_upgrade-articulated-buses-2019-2020",
+      "observation_event_record_ids": ["event_upgrade-articulated-buses-2019-2020"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["malcolm_x_blvd_utica_ave_jun2019#p015_c0002", "malcolm_x_blvd_utica_ave_jun2019#p017_c0002"],
+      "assessment": "The pinned 2019 planning source describes a 2019-2020 articulated-bus upgrade, not retrospective proof of completed route-treatment incidence.",
+      "known_facts": {"treatment": "articulated-bus fleet upgrade", "time": "2019-2020 planned window", "status": "prospective"},
+      "prohibited_inferences": ["No delivered occurrence.", "Do not substitute a later SBS launch or fleet record."]
+    },
+    {
+      "candidate_id": "candidate:683b4ab876ad5947027aaab3",
+      "candidate_key": "event:event_estimated-implementation-mid-fall-2022",
+      "observation_event_record_ids": ["event_estimated-implementation-mid-fall-2022"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["fordham_rd_inwood_cab_mar2022#p031_c0009"],
+      "assessment": "An estimated mid-Fall 2022 implementation date is prospective and does not prove delivery.",
+      "known_facts": {"time": "estimated mid-Fall 2022", "status": "prospective"},
+      "prohibited_inferences": ["No delivered occurrence.", "No route-treatment incidence inferred."]
+    },
+    {
+      "candidate_id": "candidate:69bb739ac61796e2ec7f4ed9",
+      "candidate_key": "event:event_fordham-rd-able-implementation",
+      "observation_event_record_ids": ["event_fordham-rd-able-implementation"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:38ce9289f7e4b98ecd1f3caf",
+      "evidence_ids": ["fordham_rd_inwood_cb6_jun2023#p024_c0002", "fordham_rd_inwood_cb6_jun2023#p056_c0002"],
+      "assessment": "This observation co-refers to the same Bx12-SBS ABLE implementation on November 18, 2022 as the canonical candidate."
+    },
+    {
+      "candidate_id": "candidate:6caa951a269f8efacb1afdac",
+      "candidate_key": "event:event_curb-regulations-refine-2026_2",
+      "observation_event_record_ids": ["event_curb-regulations-refine-2026_2"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["lexington_ave_60_st_52_st_oct2025#p012_c0003"],
+      "assessment": "A 2026 curb-regulation refinement in an October 2025 project schedule is prospective and not delivery evidence.",
+      "known_facts": {"treatment": "curb-regulation refinement", "time": "2026 planned", "status": "prospective"},
+      "prohibited_inferences": ["No delivered occurrence.", "No exact route incidence inferred."]
+    },
+    {
+      "candidate_id": "candidate:70e22d49d549054bc44e4d54",
+      "candidate_key": "event:event_bus-lane-activation-oct23-2019",
+      "observation_event_record_ids": ["event_bus-lane-activation-oct23-2019"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["church_ave_project_update_oct2019#p030_c0005", "church_ave_project_update_oct2019#p033_c0002"],
+      "assessment": "The pinned project update says the lanes will be activated October 23; its future-tense statement is not retrospective proof of activation.",
+      "known_facts": {"treatment": "bus lanes", "corridor": "Church Avenue", "time": "October 23, 2019 scheduled activation", "status": "prospective in pinned source"},
+      "prohibited_inferences": ["No delivered occurrence.", "No route incidence inferred."]
+    },
+    {
+      "candidate_id": "candidate:734e4bab952d8223cc75b70a",
+      "candidate_key": "event:event_implementation-summer-2019_2",
+      "observation_event_record_ids": ["event_implementation-summer-2019_2"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["fresh_pond_rd_tc_jun2019#p027_c0002"],
+      "assessment": "The June 2019 Fresh Pond Road timeline schedules Summer 2019 implementation but does not prove it occurred.",
+      "known_facts": {"corridor": "Fresh Pond Road", "time": "Summer 2019 planned implementation", "status": "prospective"},
+      "prohibited_inferences": ["No delivered occurrence.", "No route-treatment incidence inferred."]
+    },
+    {
+      "candidate_id": "candidate:739c28bb16c50763c506e190",
+      "candidate_key": "event:event_initial-improvements-2010_2",
+      "observation_event_record_ids": ["event_initial-improvements-2010_2"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["2014_woodhaven_comm_planning_workshop_presentation#p004_c0002"],
+      "assessment": "The source references initial 2010 improvements but does not provide an exact route-treatment-phase incidence suitable for publication.",
+      "known_facts": {"corridor": "Woodhaven Boulevard", "time": "2010", "status": "retrospective but semantically thin"},
+      "prohibited_inferences": ["No treatment or route filled from general corridor knowledge."]
+    },
+    {
+      "candidate_id": "candidate:768bb30e4509f428e9297a05",
+      "candidate_key": "event:event_articulated-bus-upgrade-2019-2020",
+      "observation_event_record_ids": ["event_articulated-bus-upgrade-2019-2020"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:63eee0dc5fb645c9a4e177c3",
+      "evidence_ids": ["malcolm_x_blvd_utica_ave_may2019#p019_c0002", "malcolm_x_blvd_utica_ave_may2019#p021_c0002"],
+      "assessment": "This is a duplicate planning observation of the same 2019-2020 articulated-bus upgrade window."
+    },
+    {
+      "candidate_id": "candidate:7cf09c572781781a3d8f9427",
+      "candidate_key": "event:event_cbd-tolling-program-jan2025",
+      "observation_event_record_ids": ["event_cbd-tolling-program-jan2025"],
+      "recommended_disposition": "outside_domain",
+      "evidence_ids": ["34th_st_enhanced_bus_priority_cb4_may2025#p004_c0002"],
+      "assessment": "The Central Business District tolling program is road-pricing policy, not a route by bus-priority-treatment operational occurrence."
+    },
+    {
+      "candidate_id": "candidate:89383ee7e73616e9537d21fd",
+      "candidate_key": "event:event_summer2019-implementation",
+      "observation_event_record_ids": ["event_summer2019-implementation"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:2d2a21cb498648297c0408ad",
+      "evidence_ids": ["42nd_st_cb5_jun242019#p028_c0002"],
+      "assessment": "This community-board presentation co-refers to the same prospective Summer 2019 42nd Street implementation step."
+    },
+    {
+      "candidate_id": "candidate:8f50f534a89c8d7690b5f26b",
+      "candidate_key": "event:event_street-design-implementation-summer2019",
+      "observation_event_record_ids": ["event_street-design-implementation-summer2019"],
+      "recommended_disposition": "duplicate_alias",
+      "canonical_candidate_id": "candidate:2d2a21cb498648297c0408ad",
+      "evidence_ids": ["42nd_st_cb6_jun032019#p029_c0002"],
+      "assessment": "This community-board presentation co-refers to the same prospective Summer 2019 42nd Street implementation step."
+    },
+    {
+      "candidate_id": "candidate:8fd55b632c8d81ae36d25c13",
+      "candidate_key": "event:event_busway-start-oct2021",
+      "observation_event_record_ids": ["event_busway-start-oct2021"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["jamaica_archer_brochure#p001_c0027"],
+      "assessment": "The brochure proves the Jamaica/Archer busway start and says it serves multiple routes, but the pinned block does not name the exact route subjects.",
+      "known_facts": {"treatment": "busway", "corridor": "Jamaica Avenue and Archer Avenue", "time": "October 2021", "status": "delivered treatment with unresolved exact route incidence"},
+      "prohibited_inferences": ["Do not expand the stated route count into guessed route IDs.", "No route cross-product."]
+    },
+    {
+      "candidate_id": "candidate:a11d4dbd658ca1d4d5e5001f",
+      "candidate_key": "event:event_m34-sbs-launch-nov2011_2",
+      "observation_event_record_ids": ["event_m34-sbs-launch-nov2011_2"],
+      "recommended_disposition": "insufficient_evidence",
+      "evidence_ids": ["34th_st_enhanced_bus_priority_cb5_jan2025#p008_c0002"],
+      "assessment": "The source jointly names M34/M34-A and two infrastructure changes but does not disaggregate exact route by treatment incidence. Publishing four applications would be an unverified 2x2 cross-product.",
+      "known_facts": {"routes": ["historical M34 SBS", "historical M34-A SBS"], "treatments": ["offset bus-lane upgrade", "eleven bus bulbs"], "time": "November 2011", "status": "joint SBS launch with unresolved exact application matrix"},
+      "prohibited_inferences": ["No four-cell route-treatment cross-product.", "No assumption that each infrastructure component applies independently to both route subjects."]
+    }
+  ],
+  "evidence_binding_source": {
+    "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+    "candidate_ledger_sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2",
+    "rule": "Every finding is restricted to the exact candidate row, its evidence membership, manifest-pinned source bytes, and already accepted route identity continuity."
+  },
+  "observation_only_conformance": {
+    "count": 31,
+    "status": "pass",
+    "observations": [
+      {"event_record_id":"event_14th-st-busway-pilot-launch-oct2019","frozen_disposition":"unsupported_record","reason_code":"no_episode_graph"},
+      {"event_record_id":"event_181st-st-busway-launch-apr2021","frozen_disposition":"unsupported_record","reason_code":"no_episode_graph"},
+      {"event_record_id":"event_bronx-bus-network-redesign-implemented","frozen_disposition":"unsupported_record","reason_code":"no_episode_graph"},
+      {"event_record_id":"event_bus-lanes-operational-latesummer2026","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_bus-only-signals-install-summer2024","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_busway-implementation-summer-fall-2025","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_bx12-sbs-launch-2008","frozen_disposition":"unsupported_record","reason_code":"no_episode_graph"},
+      {"event_record_id":"event_curb-regulations-refine-2026_3","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_early-summer2026-implementation-begins","frozen_disposition":"unsupported_record","reason_code":"no_episode_graph"},
+      {"event_record_id":"event_fordham-rd-sbs-launch-2008","frozen_disposition":"unsupported_record","reason_code":"no_episode_graph"},
+      {"event_record_id":"event_implementation-begins-late-may-2026","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_implementation-late-2024-or-2025","frozen_disposition":"unsupported_record","reason_code":"no_episode_graph"},
+      {"event_record_id":"event_implementation-late2024-or-2025","frozen_disposition":"unsupported_record","reason_code":"no_episode_graph"},
+      {"event_record_id":"event_implementation-summer-2025_3","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_implementation-summer-fall-2025","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_implementation-summer-fall-2025_3","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_implementation-tentative-summer2025-cb11-jun2025","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_initial-improvements-2010","frozen_disposition":"unsupported_record","reason_code":"no_episode_graph"},
+      {"event_record_id":"event_install-bus-lane-markings-fall2025_2","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_m34-sbs-launch-2011","frozen_disposition":"unsupported_record","reason_code":"no_episode_graph"},
+      {"event_record_id":"event_morningside-av-vz-pedestrian-2014","frozen_disposition":"unsupported_record","reason_code":"no_episode_graph"},
+      {"event_record_id":"event_planned-implementation-fall2023","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_planned-implementation-fall2023_3","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_planned-implementation-summer-2025","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_potential-implementation-summer-fall-2025_2","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_proposed-implementation-spring-summer-2025","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_q52-q53-sbs-launch-2017","frozen_disposition":"unsupported_record","reason_code":"no_episode_graph"},
+      {"event_record_id":"event_summer-fall-2025-implementation","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_tremont-busway-impl-spring2025","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_tremont-busway-launch-spring2025","frozen_disposition":"not_episode_evidence","reason_code":"prospective_observation"},
+      {"event_record_id":"event_upstream-offset-implementation-2019","frozen_disposition":"unsupported_record","reason_code":"no_episode_graph"}
+    ]
+  },
+  "batch_outcome_arithmetic": {
+    "published": 5,
+    "duplicate_alias": 7,
+    "outside_domain": 2,
+    "insufficient_evidence": 15,
+    "rejected": 0,
+    "retired": 0,
+    "schema_blocked": 0,
+    "terminal_candidate_count": 29,
+    "exact_application_count": 8,
+    "accounted_observation_count": 60
+  },
+  "schema_blockers": [],
+  "integration_authorization": "proposed_pending_cross_review_and_integrator_verification"
+}

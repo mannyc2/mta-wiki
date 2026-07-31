@@ -138,6 +138,30 @@ describe("resolved transit DB", () => {
       .toThrow();
   });
 
+  it("stores an accepted projection-retired identity reconciliation", () => {
+    const directory = mkdtempSync(join(tmpdir(), "resolved-transit-db-"));
+    directories.push(directory);
+    const model = fixture();
+    const path = join(directory, "resolved.db");
+    rebuildResolvedTransitDb({
+      ...model,
+      identity_reconciliation: [{
+        reconciliation_id: "identity-reconciliation:retired",
+        occurrence_id: "occurrence:retired",
+        disposition: "projection_retired",
+        reason_code: "accepted_route_snapshot_projection_retirement",
+      }],
+    }, { path });
+    const db = openResolvedTransitDb(path);
+    try {
+      expect(db.query(
+        "SELECT disposition FROM resolved_intervention_identity_reconciliation",
+      ).get()).toEqual({ disposition: "projection_retired" });
+    } finally {
+      db.close();
+    }
+  });
+
   it("materializes deterministic bitemporal placement snapshots and indexed reads", () => {
     const directory = mkdtempSync(join(tmpdir(), "resolved-transit-db-"));
     directories.push(directory);
@@ -159,7 +183,7 @@ describe("resolved transit DB", () => {
     try {
       expect(db.query("SELECT COUNT(*) AS count FROM latest_lifecycle_observation").get())
         .toEqual({ count: 1 });
-      expect(db.query("PRAGMA user_version").get()).toEqual({ user_version: 2 });
+      expect(db.query("PRAGMA user_version").get()).toEqual({ user_version: 4 });
     } finally {
       db.close();
     }

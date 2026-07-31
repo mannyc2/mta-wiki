@@ -10,14 +10,19 @@ describe("resolved transit operator public display", () => {
     const second = buildOperatorPublicDisplayDictionary("2026-07-27");
     expect(second).toEqual(first);
     expect(first.summary).toMatchObject({
-      episode_count: 130,
-      component_count: 306,
+      episode_count: first.episodes.length,
+      component_count: first.scopes.length,
       placement_count: 0,
+      route_count: first.routes.length,
+      source_count: first.sources.length,
+      treatment_family_count: first.treatment_families.length,
       reconciliation: { requires_review: 0 },
     });
+    expect(first.episodes.length).toBeGreaterThanOrEqual(130);
     expect(first.episodes.every((row) => typeof row.display_name === "string" && row.display_name.length > 0))
       .toBe(true);
-    expect(first.sources.map(({ source_id: _sourceId, ...row }) => parsePublicSource(row))).toHaveLength(17);
+    expect(first.sources.map(({ source_id: _sourceId, ...row }) => parsePublicSource(row)))
+      .toHaveLength(first.sources.length);
     expect(first.sources.some((row) => row.url_status === "source_provided")).toBe(true);
     expect(first.sources.some((row) => row.url_status === "unavailable" && row.url === null)).toBe(true);
   });

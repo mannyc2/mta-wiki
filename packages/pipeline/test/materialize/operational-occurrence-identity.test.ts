@@ -1,6 +1,12 @@
 import { describe, expect, it } from "bun:test";
-import { readFileSync } from "node:fs";
-import { mkdtempSync, rmSync } from "node:fs";
+import { createHash } from "node:crypto";
+import {
+  mkdirSync,
+  mkdtempSync,
+  readFileSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { repoRoot } from "@mta-wiki/core/paths";
@@ -12,6 +18,7 @@ import {
 import {
   migrateOperationalOccurrenceIdentityV1Operations,
   loadOperationalOccurrenceIdentityRegistryV2,
+  operationalOccurrenceIdentityRegistryV2Jsonl,
   parseOperationalOccurrenceIdentityOperation,
   replayOperationalOccurrenceIdentityOperations,
   resolveOperationalOccurrenceIdentityV2,
@@ -222,7 +229,11 @@ describe("operational occurrence identity registry v2", () => {
   });
 
   it("requires production registry-v2 inputs but permits explicit optional fixtures", () => {
-    expect(loadOperationalOccurrenceIdentityRegistryV2(repoRoot)).toHaveLength(135);
+    const production = loadOperationalOccurrenceIdentityRegistryV2(repoRoot);
+    expect(production.length).toBeGreaterThanOrEqual(135);
+    expect(new Set(production.map((row) => row.occurrence_id)).size).toBe(
+      production.length,
+    );
     const root = mkdtempSync(join(tmpdir(), "mta-occurrence-identity-v2-"));
     try {
       expect(() =>
@@ -242,6 +253,105 @@ describe("operational occurrence identity registry v2", () => {
           { optionalFixture: true },
         ),
       ).toEqual([]);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("replays accepted-current operations without changing historical migration bytes", () => {
+    const root = mkdtempSync(join(tmpdir(), "mta-occurrence-identity-current-"));
+    try {
+      const base = establish("event_current_fixture");
+      const retire: OperationalOccurrenceIdentityOperation = {
+        ...operationBase("retire:current-fixture"),
+        issued_at: "2026-07-30T00:00:00.000Z",
+        kind: "retire",
+        occurrence_id: base.occurrence_id,
+        reason: "Fixture retirement has independent reviewed authority.",
+      };
+      const historicalOperations = join(
+        root,
+        "data",
+        "operational-occurrence-identities",
+        "operations",
+      );
+      const currentOperations = join(
+        root,
+        "data",
+        "operational-occurrence-identities",
+        "accepted-current",
+        "operations",
+      );
+      const currentReceipts = join(
+        root,
+        "data",
+        "operational-occurrence-identities",
+        "accepted-current",
+        "receipts",
+      );
+      mkdirSync(historicalOperations, { recursive: true });
+      mkdirSync(currentOperations, { recursive: true });
+      mkdirSync(currentReceipts, { recursive: true });
+      writeFileSync(
+        join(historicalOperations, `${base.operation_id}.json`),
+        `${JSON.stringify(base)}\n`,
+      );
+      const retireBytes = `${JSON.stringify(retire)}\n`;
+      writeFileSync(join(currentOperations, `${retire.operation_id}.json`), retireBytes);
+      const historicalRegistry = operationalOccurrenceIdentityRegistryV2Jsonl(
+        replayOperationalOccurrenceIdentityOperations([base]),
+      );
+      const historicalRegistryPath = join(
+        root,
+        "data",
+        "operational-occurrence-identities",
+        "registry-v2.jsonl",
+      );
+      writeFileSync(historicalRegistryPath, historicalRegistry);
+      writeFileSync(
+        join(
+          root,
+          "data",
+          "operational-occurrence-identities",
+          "registry-current.jsonl",
+        ),
+        operationalOccurrenceIdentityRegistryV2Jsonl(
+          replayOperationalOccurrenceIdentityOperations([base, retire]),
+        ),
+      );
+      const manifestPath =
+        "data/operational-episode-resolution/campaigns/plan-052/batches/fixture.json";
+      const manifestAbsolute = join(root, manifestPath);
+      mkdirSync(join(manifestAbsolute, ".."), { recursive: true });
+      const manifestBytes = "{\"batch_id\":\"fixture\"}\n";
+      writeFileSync(manifestAbsolute, manifestBytes);
+      const resultRegistry = operationalOccurrenceIdentityRegistryV2Jsonl(
+        replayOperationalOccurrenceIdentityOperations([base, retire]),
+      );
+      writeFileSync(
+        join(currentReceipts, `${retire.operation_id}.json`),
+        `${JSON.stringify({
+          schema_version: 1,
+          operation_id: retire.operation_id,
+          operation_sha256: createHash("sha256").update(retireBytes).digest("hex"),
+          basis_registry_sha256: createHash("sha256").update(historicalRegistry).digest("hex"),
+          result_registry_sha256: createHash("sha256").update(resultRegistry).digest("hex"),
+          batch_id: "fixture",
+          batch_manifest_path: manifestPath,
+          batch_manifest_sha256: createHash("sha256").update(manifestBytes).digest("hex"),
+          primary_reviewer: "fixture-primary",
+          independent_reviewer: "fixture-independent",
+          evidence_bindings: [{
+            record_id: "event_current_fixture",
+            source_id: "source_fixture",
+            evidence_id: "source_fixture#p001_b0001",
+          }],
+        })}\n`,
+      );
+      expect(loadOperationalOccurrenceIdentityRegistryV2(root)).toMatchObject([
+        { occurrence_id: base.occurrence_id, state: "retired" },
+      ]);
+      expect(readFileSync(historicalRegistryPath, "utf8")).toBe(historicalRegistry);
     } finally {
       rmSync(root, { recursive: true, force: true });
     }

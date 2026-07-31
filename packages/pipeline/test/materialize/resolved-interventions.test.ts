@@ -145,7 +145,7 @@ function review(
 }
 
 function candidate(
-  disposition: "published" | "pending_review" = "published",
+  disposition: "published" | "pending_review" | "retired" = "published",
   reviewFingerprint = "a".repeat(64),
 ): OperationalEpisodeCandidateLedgerRow {
   return {
@@ -353,6 +353,77 @@ describe("resolved intervention model v1", () => {
       ?.extent.record_ids).toEqual(["corridor_one"]);
   });
 
+  it("preserves source-honest season, year, and installed-by onset precision", () => {
+    const baseline = review([
+      { route_record_id: "route_a", treatment_record_id: "treatment_x" },
+    ]);
+    const {
+      membership_fingerprint: _migrationFingerprint,
+      applications: baselineApplications,
+      schema_version: _schemaVersion,
+      review_scope: _reviewScope,
+      ...baselineFields
+    } = baseline;
+    for (
+      const resolvedOnset of [
+        { date: "2015-fall", precision: "season" as const },
+        { date: "2011", precision: "year" as const },
+        { date: "2026-06-10", precision: "upper_bound_day" as const },
+      ]
+    ) {
+      const application = baselineApplications[0]!;
+      const withoutFingerprint = {
+        ...baselineFields,
+        schema_version: 3 as const,
+        decision_id: `review:onset:${resolvedOnset.precision}`,
+        treatment: {
+          kind: "atomic" as const,
+          member: baselineFields.treatment.kind === "bundle"
+            ? baselineFields.treatment.members[0]!
+            : baselineFields.treatment.member,
+        },
+        resolved_onset: {
+          ...resolvedOnset,
+          evidence_bindings: [binding("event_one")],
+        },
+        applications: [{
+          ...application,
+          application_id: resolvedInterventionDurableApplicationIdentity({
+            occurrence_id: baseline.occurrence_id,
+            route_record_id: application.route_record_id,
+            treatment_record_id: application.treatment_record_id,
+            phase_record_id: application.phase_record_id,
+          }),
+          extent: {
+            kind: "unknown" as const,
+            record_ids: [],
+            description: null,
+          },
+        }],
+        operation: "establish_current_resolution" as const,
+        supersedes_decision_id: null,
+        supersedes_membership_fingerprint: null,
+        review_scope: "full_episode_application" as const,
+      };
+      const parsed = parseOperationalOccurrenceAcceptedDecisionV3({
+        ...withoutFingerprint,
+        membership_fingerprint:
+          operationalOccurrenceCurrentReviewMembershipFingerprint(
+            withoutFingerprint,
+          ),
+      });
+      const model = buildResolvedInterventions({
+        canonical_records: corpus(),
+        candidate_ledger: [
+          candidate("published", parsed.membership_fingerprint),
+        ],
+        identity_registry: [identity()],
+        review_decisions: [parsed],
+      });
+      expect(model.episodes[0]?.resolved_onset).toEqual(resolvedOnset);
+    }
+  });
+
   it("withholds an unresolved active identity into operator reconciliation", () => {
     const model = buildResolvedInterventions({
       canonical_records: corpus(),
@@ -368,6 +439,30 @@ describe("resolved intervention model v1", () => {
         disposition: "pending_review",
       }),
     ]);
+  });
+
+  it("reconciles a route-snapshot projection retirement without retiring identity", () => {
+    const model = buildResolvedInterventions({
+      canonical_records: corpus(),
+      candidate_ledger: [candidate("retired")],
+      identity_registry: [identity()],
+      review_decisions: [],
+    });
+    expect(model.episodes).toHaveLength(0);
+    expect(model.applications).toHaveLength(0);
+    expect(model.identity_reconciliation).toEqual([
+      expect.objectContaining({
+        occurrence_id: "occurrence:one",
+        disposition: "projection_retired",
+        reason_code: "accepted_route_snapshot_projection_retirement",
+      }),
+    ]);
+    expect(model.summary).toMatchObject({
+      active_identity_count: 1,
+      identity_reconciliation_count: 1,
+      pending_identity_candidate_count: 0,
+      projection_retired_identity_count: 1,
+    });
   });
 
   it("strictly rejects unknown fields and stale application ids", () => {

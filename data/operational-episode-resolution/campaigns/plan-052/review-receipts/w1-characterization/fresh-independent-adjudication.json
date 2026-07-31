@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-fresh-independent-adjudication-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w1-characterization",
+  "adjudication_id": "w1-owner-ruling-fresh-independent-2026-07-30",
+  "adjudicator": "plan-052-fresh-independent-adjudicator-wave1-reconciliation",
+  "adjudicated_at": "2026-07-30T00:00:00.000Z",
+  "manifest": {
+    "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w1-characterization.json",
+    "sha256": "b96adbd4878a5abfae2cd9523c3534239195ea876dc0877fffc5abc8a99fbe7e"
+  },
+  "original_review_inputs": [
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/review-receipts/w1-characterization/primary.json",
+      "sha256": "1ce0f2058aa2f4e0c9b179f724475498afc6b6f27e4fbcbbe49e2cf750e758c1"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/review-receipts/w1-characterization/independent.json",
+      "sha256": "24e81ea5bfbfbfeabc6931858b4c316b43d2b8df2d792e6696a054cce5e6e5f3"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/review-receipts/w1-characterization/disagreement.json",
+      "sha256": "ef07d3d72e98bf0e548c4faa04ac403ba873370fb45f43356c9b34cc539044c2"
+    }
+  ],
+  "authorized_supplements": [
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/evidence-supplements/w1-broadway-q70-installed-v1.json",
+      "sha256": "e2b9f88e2213361f368e8d1ccc47af95f2aceaa14c3dd7afd5da57232a0cb058"
+    }
+  ],
+  "provider_usage": {
+    "provider_called": false,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "actual_cost_usd": 0
+  },
+  "findings": [
+    {
+      "candidate_id": "candidate:089c5dca117ab12f156ec032",
+      "candidate_key": "event:event_broadway-center-running-bus-lane-installation-confirmed",
+      "owner_ruling": "publish exactly Q70+ × Broadway center-running bus lane × installed/by-2026-06-10 with bounded Broadway 69th Street–Roosevelt Avenue scope and unknown exact onset if the exact supplemented join verifies",
+      "factual_adjudication": "verified",
+      "evidence_ids": [
+        "nyc_dot_current_projects_july_2026#p001_b0631",
+        "nyc_mayor_broadway_created_june_2026#p001_b0070",
+        "nyc_mayor_broadway_created_june_2026#p001_b0114"
+      ],
+      "verified_incidence": [
+        "Q70+|route_q70-sbs|treatment_broadway-center-running-bus-lane|event_broadway-center-running-bus-lane-installation-confirmed|corridor_broadway-queens"
+      ],
+      "verified_temporal_claim": {
+        "installed_by": "2026-06-10",
+        "exact_onset": null
+      },
+      "schema_adjudication": "not_encodable_without_inference_or_canonical_edit",
+      "schema_gaps": [
+        "resolved_onset requires an exact day/month value and materialization requires it to equal canonical event date_normalized/date_precision; it cannot encode an installed-by upper bound with unknown exact onset",
+        "bounded physical scope is projected only from an allowlisted direct canonical treatment↔corridor relation; the hash-pinned source block proves the limits but no such canonical direct relation exists and canonical observations are frozen"
+      ],
+      "final_action": "STOP_before_integration"
+    },
+    {
+      "candidate_id": "candidate:0065d35d05693332aeb8b1ef",
+      "candidate_key": "event:event_bus-lane-implementation-fall-2015",
+      "owner_ruling": "publish exactly B46 × dedicated bus lanes × Fall 2015 × St. Johns Place–Church Avenue",
+      "factual_adjudication": "verified",
+      "evidence_ids": [
+        "brt_uticaave_winter_spring_newsletter_2016#p002_c0002",
+        "brt_uticaave_winter_spring_newsletter_2016#p002_c0003",
+        "brt_uticaave_winter_spring_newsletter_2016#p002_c0004",
+        "brt_uticaave_winter_spring_newsletter_2016#p002_c0005",
+        "brt_uticaave_winter_spring_newsletter_2016#p003_c0012"
+      ],
+      "verified_incidence": [
+        "B46|route_b46-local-2012|treatment_dedicated-bus-lanes-utica-2015|event_bus-lane-implementation-fall-2015|corridor_utica-ave-st-johns-pl-church-ave-2013"
+      ],
+      "schema_adjudication": "not_encodable_without_inference_or_canonical_edit",
+      "schema_gaps": [
+        "resolved_onset supports day or month precision, not the source-stated Fall 2015 season",
+        "the relevant canonical route/treatment/timeline relations are proposed rather than delivered under the occurrence allowlists",
+        "no allowlisted direct delivered treatment↔corridor relation encodes the source-proven bounded segment"
+      ],
+      "final_action": "STOP_before_integration"
+    },
+    {
+      "candidate_id": "candidate:002e8ac7107b222e82e03c82",
+      "candidate_key": "event:event_machine-installation-oct4-2011",
+      "owner_ruling": "publish the October 4 machine-installation incidence for durable M34 and historical M16/pre-M34A subjects with explicit alias/successor continuity to M34A+",
+      "factual_adjudication": "verified",
+      "evidence_ids": [
+        "201110_brt_34th_open_house_slides#p036_c0002",
+        "201110_brt_34th_open_house_slides#p028_c0002"
+      ],
+      "verified_historical_subjects": [
+        "route_m34-local-2011",
+        "route_m16-mentioned"
+      ],
+      "verified_successor_subject": "route_m34a-sbs",
+      "schema_adjudication": "not_encodable_without_inference_or_false_current_label",
+      "schema_gaps": [
+        "the canonical event currently carries only 2011/year while resolved_onset requires and validates an exact day/month value",
+        "route_m16-mentioned is an accepted historical-retired/non-projectable subject with no GTFS route id, while every occurrence route requires a nonempty exact GTFS anchor",
+        "the occurrence route contract has no historical surface or route-predecessor/successor continuity field; using M34A+ for October 4 would falsely backdate a November 13 public designation"
+      ],
+      "final_action": "STOP_before_integration"
+    },
+    {
+      "candidate_id": "candidate:09d24ae40bf93ee46e8eb095",
+      "candidate_key": "event:event_redesign-restart-aug2021",
+      "owner_ruling": "outside_domain",
+      "factual_adjudication": "verified",
+      "schema_adjudication": "terminal_nonpublication_encodable",
+      "final_action": "withheld_due_batch_STOP"
+    },
+    {
+      "candidate_id": "candidate:02cad757a6d52baca3130545",
+      "candidate_key": "event:event_tsp-installation-2022",
+      "owner_ruling": "insufficient_evidence with an evidence-gap receipt; publish no occurrence and infer no route",
+      "factual_adjudication": "verified",
+      "evidence_ids": [
+        "flatbush_ave_cb8_jun2024#p008_c0005"
+      ],
+      "known_treatment_record_id": "treatment_tsp-flatbush-ave-2022_2",
+      "known_phase_record_id": "event_tsp-installation-2022",
+      "known_scope_record_id": "corridor_flatbush-avenue",
+      "prohibited_route_inferences": [
+        "B12",
+        "B41",
+        "B12×B41"
+      ],
+      "schema_adjudication": "terminal_nonpublication_encodable",
+      "final_action": "withheld_due_batch_STOP"
+    }
+  ],
+  "factual_contradiction_found": false,
+  "data_model_gap_found": true,
+  "stop_condition": "data_model_cannot_encode_owner_ruling_without_inference",
+  "integration_permitted": false,
+  "wave_2_permitted": false
+}

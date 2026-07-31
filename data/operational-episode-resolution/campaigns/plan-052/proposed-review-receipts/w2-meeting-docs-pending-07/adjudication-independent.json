@@ -1,0 +1,583 @@
+{
+  "schema_version": 1,
+  "contract": "plan-052-semantic-review-receipt-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w2-meeting-docs-pending-07",
+  "review_role": "independent_adjudication",
+  "reviewer_id": "plan-052-meeting07-blind-adjudicator",
+  "review_complete": true,
+  "clean_room": {
+    "independent_of_other_reviews": true,
+    "inputs_limited_to": [
+      "AGENTS.md",
+      "CODEX.md",
+      "Plan 052",
+      "w2-meeting-docs-pending-07 manifest and assigned frozen-frontier rows",
+      "canonical records",
+      "manifest-pinned local source pages"
+    ],
+    "excluded_inputs": [
+      "primary, independent, adjudication, reconciliation, integration, evidence-gap, and STOP receipts",
+      "git diff",
+      "other agent outputs"
+    ]
+  },
+  "manifest_pin": {
+    "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-07.json",
+    "bytes": 24926,
+    "sha256": "71943fc6a44d5baea2dbea6d6b71a07bdc823dda91fbf07015c8d308764cc2c9"
+  },
+  "frozen_frontier_pins": [
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+      "bytes": 860230,
+      "sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/cohort.json",
+      "bytes": 720438,
+      "sha256": "59e4c2fbdb389255442c00ac06204b6798fed64742d80489441cd5524a912a61"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/observation_ledger.jsonl",
+      "bytes": 1374322,
+      "sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f"
+    },
+    {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/summary.json",
+      "bytes": 21408,
+      "sha256": "4baf594cea14431b2f2c125c19c554755ecf167be6b81f399152873a5cd35545"
+    }
+  ],
+  "source_pin_set": {
+    "authoritative_manifest_field": "evidence_source_pins",
+    "source_count": 96,
+    "total_bytes": 8150754,
+    "evidence_input_sha256": "b34b35050aa70cde5461fe97fecc0e024770b051ba791392b55bf4565ec229f0",
+    "verification": "Every manifest source path, byte count, and SHA-256 was verified before review."
+  },
+  "cohort_hashes": {
+    "adapter_input_sha256": "42318a285ab0d7dae243ba71da1adbfb3e344f52e7cc214ac9730f6e87bf523f",
+    "candidate_input_sha256": "54a6b52470dc1889f50c7cccf01ef2096c5ea8669f34dc5dd7b988c50f29fcbb",
+    "candidate_membership_sha256": "2b6012fed2d5851c64054a332d24d2bb333cfad1e2bdfabbef3182b07884f0e0",
+    "evidence_input_sha256": "b34b35050aa70cde5461fe97fecc0e024770b051ba791392b55bf4565ec229f0",
+    "observation_membership_sha256": "bb113f8c6c2751a9c1f64c8cbc86e5f122191ae71e2420587e4a003659b15fc8"
+  },
+  "immutable_starting_provenance": {
+    "adapter_fingerprint": "de51c8db4353cc8774d4c55bea3fcba8103ecdee3a38898b85b61733eccf07b9",
+    "cohort_fingerprint": "94dfd16c1c57362b220fb8ce53b8325e6ca166c1e697d9001da8b66f6483e373",
+    "commit_sha": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+    "corpus_fingerprint": "318cee05f0c7288fd28084df44b6b036f0607ffdfb76b3d6c6fcd14118f479c5",
+    "decision_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "identity_fingerprint": "6827adf67650c81fa38d30b1dfbaf6be5282a45491b058b3ed44167aa287d26e",
+    "review_fingerprint": "3989ac8637527e5862f18b7a6c4f7f2699078eb992a2675b16a23af525fd1d24"
+  },
+  "assigned_membership": {
+    "candidate_count": 12,
+    "observation_event_count": 12,
+    "candidate_ids": [
+      "candidate:e429b56aab9a539d7cebe2cb",
+      "candidate:e8c6311d91cdfe7e4dde1615",
+      "candidate:ec20e1f71779bb2cc6467e6c",
+      "candidate:eda3b2949410d38969bdaf49",
+      "candidate:edaa1c05024161c5ba43a30c",
+      "candidate:eeccce54e99a3f0efc0a2e00",
+      "candidate:f11ed5b298777726b5e9c448",
+      "candidate:f145a021471d0ad8c5594f5a",
+      "candidate:f2009a8a231dba22faeeba35",
+      "candidate:f4fee5507541191d792510e8",
+      "candidate:f61c697169ac944a3f1baa7a",
+      "candidate:fb95b6de169316a50f2a0747"
+    ]
+  },
+  "findings": [
+    {
+      "candidate_id": "candidate:e429b56aab9a539d7cebe2cb",
+      "candidate_key": "event:event_meeting-doc-111756-mnr-pilot-test-2022",
+      "observation_event_record_ids": [
+        "event_meeting-doc-111756-mnr-pilot-test-2022"
+      ],
+      "observation_relation_record_ids": [
+        "relation_meeting-doc-111756-project-mnr-pilot"
+      ],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "alias_of_candidate_id": null,
+      "assessment": "This is a Metro-North rail-treatment technology pilot, not a bus route-treatment application episode.",
+      "known_facts": [
+        "Metro-North Railroad completed a successful pilot test of Laser Tribology BV laser modules during the 2022 leaf season."
+      ],
+      "gaps": [],
+      "prohibited_inferences": [
+        "Do not recast a railroad rail-treatment technology pilot as a bus route-treatment occurrence."
+      ],
+      "applications": [],
+      "onset": {
+        "date_text": "2022 leaf season",
+        "date_normalized": null,
+        "date_precision": "unknown"
+      },
+      "scope": {
+        "route_ids": [],
+        "treatment_ids": [],
+        "extent": "Metro-North Railroad laser-module rail-treatment pilot"
+      },
+      "status": "completed_pilot",
+      "blockers": [],
+      "integration_status": "terminal_no_publication",
+      "evidence_refs": [
+        "meeting_doc_111756#p006_c0006"
+      ]
+    },
+    {
+      "candidate_id": "candidate:e8c6311d91cdfe7e4dde1615",
+      "candidate_key": "event:event_meeting-doc-189866-divide-signal-nov8-9",
+      "observation_event_record_ids": [
+        "event_meeting-doc-189866-divide-signal-nov8-9"
+      ],
+      "observation_relation_record_ids": [
+        "relation_meeting-doc-189866-divide-signal-event"
+      ],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "alias_of_candidate_id": null,
+      "assessment": "This is an LIRR signal-cutover work window, not a bus route-treatment application episode.",
+      "known_facts": [
+        "A signal cutover at Divide Interlocking was scheduled for November 8-9, 2025, with all tracks near Hicksville Station out of service for about 48 hours."
+      ],
+      "gaps": [],
+      "prohibited_inferences": [
+        "Do not recast railroad signal work as a bus route-treatment occurrence."
+      ],
+      "applications": [],
+      "onset": {
+        "date_text": "November 8-9, 2025",
+        "date_normalized": null,
+        "date_precision": "unknown"
+      },
+      "scope": {
+        "route_ids": [],
+        "treatment_ids": [],
+        "extent": "Divide Interlocking and tracks near Hicksville Station"
+      },
+      "status": "scheduled_cutover",
+      "blockers": [],
+      "integration_status": "terminal_no_publication",
+      "evidence_refs": [
+        "meeting_doc_189866#p002_c0008"
+      ]
+    },
+    {
+      "candidate_id": "candidate:ec20e1f71779bb2cc6467e6c",
+      "candidate_key": "event:event_lirr-work-plan-nov-2023-winter-trackwork-jamaica",
+      "observation_event_record_ids": [
+        "event_lirr-work-plan-nov-2023-winter-trackwork-jamaica"
+      ],
+      "observation_relation_record_ids": [
+        "relation_winter-trackwork-supports-jamaica-capacity"
+      ],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "alias_of_candidate_id": null,
+      "assessment": "This is an LIRR trackwork and rail-capacity-project event, not a bus route-treatment application episode.",
+      "known_facts": [
+        "LIRR planned November 2023 switch installations near Jamaica in support of the Jamaica Capacity Improvement Project, along with other winter trackwork."
+      ],
+      "gaps": [],
+      "prohibited_inferences": [
+        "Do not recast railroad trackwork or capacity-project support as a bus route-treatment occurrence."
+      ],
+      "applications": [],
+      "onset": {
+        "date_text": "November 2023",
+        "date_normalized": "2023-11",
+        "date_precision": "month"
+      },
+      "scope": {
+        "route_ids": [],
+        "treatment_ids": [],
+        "extent": "LIRR switch installations near Jamaica and related winter trackwork"
+      },
+      "status": "planned_trackwork",
+      "blockers": [],
+      "integration_status": "terminal_no_publication",
+      "evidence_refs": [
+        "meeting_doc_115176#p004_c0016"
+      ]
+    },
+    {
+      "candidate_id": "candidate:eda3b2949410d38969bdaf49",
+      "candidate_key": "event:event_montauk-crossing-replacement-april19",
+      "observation_event_record_ids": [
+        "event_montauk-crossing-replacement-april19"
+      ],
+      "observation_relation_record_ids": [
+        "relation_montauk-project-april19"
+      ],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "alias_of_candidate_id": null,
+      "assessment": "This is an LIRR crossing, bridge, and track-maintenance work window, not a bus route-treatment application episode.",
+      "known_facts": [
+        "On April 19, 2025, Montauk Branch work was to replace the Snake Hollow Road crossing, rehabilitate Tuthill Creek Bridge timbers, and perform other track and structural maintenance."
+      ],
+      "gaps": [],
+      "prohibited_inferences": [
+        "Do not recast railroad crossing, bridge, or track maintenance as a bus route-treatment occurrence."
+      ],
+      "applications": [],
+      "onset": {
+        "date_text": "April 19, 2025",
+        "date_normalized": "2025-04-19",
+        "date_precision": "day"
+      },
+      "scope": {
+        "route_ids": [],
+        "treatment_ids": [],
+        "extent": "Montauk Branch between Babylon and Montauk"
+      },
+      "status": "scheduled_trackwork",
+      "blockers": [],
+      "integration_status": "terminal_no_publication",
+      "evidence_refs": [
+        "meeting_doc_166961#p002_c0002"
+      ]
+    },
+    {
+      "candidate_id": "candidate:edaa1c05024161c5ba43a30c",
+      "candidate_key": "event:event_jamaica-beaver-interlocking-cutover",
+      "observation_event_record_ids": [
+        "event_jamaica-beaver-interlocking-cutover"
+      ],
+      "observation_relation_record_ids": [
+        "relation_rel-jamaica-beaver-interlocking"
+      ],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "alias_of_candidate_id": null,
+      "assessment": "This is an LIRR interlocking cutover, not a bus route-treatment application episode.",
+      "known_facts": [
+        "The Beaver Interlocking final cutover was actual in August 2022 as part of Jamaica Capacity Improvements Phase 1 Stage 2."
+      ],
+      "gaps": [],
+      "prohibited_inferences": [
+        "Do not recast a railroad interlocking cutover as a bus route-treatment occurrence."
+      ],
+      "applications": [],
+      "onset": {
+        "date_text": "August 2022",
+        "date_normalized": "2022-08",
+        "date_precision": "month"
+      },
+      "scope": {
+        "route_ids": [],
+        "treatment_ids": [],
+        "extent": "Beaver Interlocking, Jamaica Capacity Improvements Phase 1 Stage 2"
+      },
+      "status": "actual_final_cutover",
+      "blockers": [],
+      "integration_status": "terminal_no_publication",
+      "evidence_refs": [
+        "meeting_doc_127536#p004_c0005"
+      ]
+    },
+    {
+      "candidate_id": "candidate:eeccce54e99a3f0efc0a2e00",
+      "candidate_key": "event:event_nh-cp229-commissioning",
+      "observation_event_record_ids": [
+        "event_nh-cp229-commissioning"
+      ],
+      "observation_relation_record_ids": [
+        "relation_mnr-ptc-timeline-cp229"
+      ],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "alias_of_candidate_id": null,
+      "assessment": "This is a Metro-North railroad signal-enclosure commissioning event, not a bus route-treatment application episode.",
+      "known_facts": [
+        "Commissioning of the New Haven Line CP 229 signal enclosure was completed in June 2022."
+      ],
+      "gaps": [],
+      "prohibited_inferences": [
+        "Do not recast railroad signal-enclosure commissioning as a bus route-treatment occurrence."
+      ],
+      "applications": [],
+      "onset": {
+        "date_text": "June 2022",
+        "date_normalized": "2022-06",
+        "date_precision": "month"
+      },
+      "scope": {
+        "route_ids": [],
+        "treatment_ids": [],
+        "extent": "New Haven Line CP 229 signal enclosure"
+      },
+      "status": "completed_commissioning",
+      "blockers": [],
+      "integration_status": "terminal_no_publication",
+      "evidence_refs": [
+        "meeting_doc_98256#p005_c0006"
+      ]
+    },
+    {
+      "candidate_id": "candidate:f11ed5b298777726b5e9c448",
+      "candidate_key": "event:event_montauk-branch-switch-maintenance",
+      "observation_event_record_ids": [
+        "event_montauk-branch-switch-maintenance"
+      ],
+      "observation_relation_record_ids": [
+        "relation_jamaica-switch-affects-montauk",
+        "relation_montauk-switch-affects-babylon",
+        "relation_montauk-switch-affects-west-hempstead"
+      ],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "alias_of_candidate_id": null,
+      "assessment": "This is an LIRR switch-maintenance work window, not a bus route-treatment application episode.",
+      "known_facts": [
+        "Overnight Montauk Branch switch maintenance was scheduled for December 6-8, taking one of two main tracks between Valley Stream and Rockville Centre out of service."
+      ],
+      "gaps": [],
+      "prohibited_inferences": [
+        "Do not infer a year absent from the source-backed event date.",
+        "Do not recast railroad switch maintenance as a bus route-treatment occurrence."
+      ],
+      "applications": [],
+      "onset": {
+        "date_text": "December 6-8",
+        "date_normalized": null,
+        "date_precision": "unknown"
+      },
+      "scope": {
+        "route_ids": [],
+        "treatment_ids": [],
+        "extent": "Montauk Branch between Valley Stream and Rockville Centre"
+      },
+      "status": "scheduled_trackwork",
+      "blockers": [],
+      "integration_status": "terminal_no_publication",
+      "evidence_refs": [
+        "meeting_doc_100336#p001_c0008"
+      ]
+    },
+    {
+      "candidate_id": "candidate:f145a021471d0ad8c5594f5a",
+      "candidate_key": "event:event_main-line-track-surfacing-switch-jan2026",
+      "observation_event_record_ids": [
+        "event_main-line-track-surfacing-switch-jan2026"
+      ],
+      "observation_relation_record_ids": [
+        "relation_main-line-work-part-of-queens-interlocking",
+        "relation_queens-interlocking-has-timeline-main-line-work",
+        "relation_track-work-funded-by-mta-capital-program"
+      ],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "alias_of_candidate_id": null,
+      "assessment": "This is an LIRR track and signal-project work window, not a bus route-treatment application episode.",
+      "known_facts": [
+        "Main Line track surfacing and switch removal was planned for the weekend of January 10-11 between Jamaica and Floral Park as part of the Queens Interlocking signal-upgrade project."
+      ],
+      "gaps": [],
+      "prohibited_inferences": [
+        "Do not infer a year from the canonical record identifier when the source-backed date text omits it.",
+        "Do not recast railroad track or signal work as a bus route-treatment occurrence."
+      ],
+      "applications": [],
+      "onset": {
+        "date_text": "weekend of January 10-11",
+        "date_normalized": null,
+        "date_precision": "unknown"
+      },
+      "scope": {
+        "route_ids": [],
+        "treatment_ids": [],
+        "extent": "Eastbound local track between Jamaica and Floral Park"
+      },
+      "status": "scheduled_trackwork",
+      "blockers": [],
+      "integration_status": "terminal_no_publication",
+      "evidence_refs": [
+        "meeting_doc_194056#p002_c0007"
+      ]
+    },
+    {
+      "candidate_id": "candidate:f2009a8a231dba22faeeba35",
+      "candidate_key": "event:event_main-line-midday-trackwork-2024",
+      "observation_event_record_ids": [
+        "event_main-line-midday-trackwork-2024"
+      ],
+      "observation_relation_record_ids": [
+        "relation_main-line-trackwork-has-event"
+      ],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "alias_of_candidate_id": null,
+      "assessment": "This is an LIRR track-maintenance work window, not a bus route-treatment application episode.",
+      "known_facts": [
+        "Main Line midday trackwork was planned Monday through Thursday between July 8 and July 25, 2024, taking the local westbound track between Queens Village and Jamaica out of service."
+      ],
+      "gaps": [],
+      "prohibited_inferences": [
+        "Do not recast railroad track maintenance as a bus route-treatment occurrence."
+      ],
+      "applications": [],
+      "onset": {
+        "date_text": "Monday through Thursday between July 8 and July 25, 2024, during the midday period",
+        "date_normalized": "2024-07-25",
+        "date_precision": "day"
+      },
+      "scope": {
+        "route_ids": [],
+        "treatment_ids": [],
+        "extent": "Main Line local westbound track between Queens Village and Jamaica"
+      },
+      "status": "scheduled_trackwork",
+      "blockers": [],
+      "integration_status": "terminal_no_publication",
+      "evidence_refs": [
+        "meeting_doc_143201#p002_c0001"
+      ]
+    },
+    {
+      "candidate_id": "candidate:f4fee5507541191d792510e8",
+      "candidate_key": "event:event_main-line-third-track-opening",
+      "observation_event_record_ids": [
+        "event_main-line-third-track-opening"
+      ],
+      "observation_relation_record_ids": [
+        "relation_main-line-third-track-opening-event"
+      ],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "alias_of_candidate_id": null,
+      "assessment": "This is an LIRR rail-infrastructure opening, not a bus route-treatment application episode.",
+      "known_facts": [
+        "The third and final section of the LIRR Main Line Third Track between Carle Place and Hicksville opened on October 3, 2022."
+      ],
+      "gaps": [],
+      "prohibited_inferences": [
+        "Do not recast a railroad infrastructure opening as a bus route-treatment occurrence."
+      ],
+      "applications": [],
+      "onset": {
+        "date_text": "Monday, October 3, 2022",
+        "date_normalized": "2022-10-03",
+        "date_precision": "day"
+      },
+      "scope": {
+        "route_ids": [],
+        "treatment_ids": [],
+        "extent": "LIRR Main Line Third Track between Carle Place and Hicksville"
+      },
+      "status": "opened",
+      "blockers": [],
+      "integration_status": "terminal_no_publication",
+      "evidence_refs": [
+        "meeting_doc_100306#p004_c0003"
+      ]
+    },
+    {
+      "candidate_id": "candidate:f61c697169ac944a3f1baa7a",
+      "candidate_key": "event:event_meeting-doc-111756-lirr-pilot-test",
+      "observation_event_record_ids": [
+        "event_meeting-doc-111756-lirr-pilot-test"
+      ],
+      "observation_relation_record_ids": [
+        "relation_batch012-meeting-doc-111756-lirr-pilot-lirr-timeline-event",
+        "relation_meeting-doc-111756-project-lirr-pilot"
+      ],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "alias_of_candidate_id": null,
+      "assessment": "This is an LIRR rail-treatment technology pilot, not a bus route-treatment application episode.",
+      "known_facts": [
+        "Long Island Rail Road's pilot test of Laser Tribology BV laser modules was ongoing and scheduled for completion in late 2024."
+      ],
+      "gaps": [],
+      "prohibited_inferences": [
+        "Do not treat the scheduled completion as a proven completion.",
+        "Do not recast a railroad rail-treatment technology pilot as a bus route-treatment occurrence."
+      ],
+      "applications": [],
+      "onset": {
+        "date_text": "ongoing, scheduled for completion in late 2024",
+        "date_normalized": null,
+        "date_precision": "unknown"
+      },
+      "scope": {
+        "route_ids": [],
+        "treatment_ids": [],
+        "extent": "Long Island Rail Road laser-module rail-treatment pilot"
+      },
+      "status": "ongoing_pilot_scheduled_for_completion",
+      "blockers": [],
+      "integration_status": "terminal_no_publication",
+      "evidence_refs": [
+        "meeting_doc_111756#p006_c0006"
+      ]
+    },
+    {
+      "candidate_id": "candidate:fb95b6de169316a50f2a0747",
+      "candidate_key": "event:event_sim4x-sim8x-implementation-fall2025",
+      "observation_event_record_ids": [
+        "event_sim4x-sim8x-implementation-fall2025"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-has-event-fall2025"
+      ],
+      "recommended_disposition": "outside_domain",
+      "recommended_canonical_candidate_id": null,
+      "alias_of_candidate_id": null,
+      "assessment": "This is a proposed express-bus service-plan conversion, not a treatment deployment application episode.",
+      "known_facts": [
+        "The source proposed Fall 2025 implementation of SIM4X and SIM8X discontinuation and conversion of their trips into SIM4 and SIM8 trips."
+      ],
+      "gaps": [],
+      "prohibited_inferences": [
+        "Do not treat a proposed implementation date as a delivered service change.",
+        "Do not recast a route service-plan conversion as a route-treatment application."
+      ],
+      "applications": [],
+      "onset": {
+        "date_text": "Fall 2025",
+        "date_normalized": "2025-fall",
+        "date_precision": "season"
+      },
+      "scope": {
+        "route_ids": [],
+        "treatment_ids": [],
+        "extent": "Proposed SIM4X and SIM8X discontinuation and trip conversion to SIM4 and SIM8"
+      },
+      "status": "proposed_implementation",
+      "blockers": [],
+      "integration_status": "terminal_no_publication",
+      "evidence_refs": [
+        "meeting_doc_176441#p001_c0013",
+        "meeting_doc_176441#p003_c0011"
+      ]
+    }
+  ],
+  "provider_usage": {
+    "provider": null,
+    "model": null,
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "arithmetic": {
+    "assigned_candidate_count": 12,
+    "finding_count": 12,
+    "published_count": 0,
+    "duplicate_alias_count": 0,
+    "insufficient_evidence_count": 0,
+    "outside_domain_count": 12,
+    "rejected_count": 0,
+    "nonpublication_count": 12,
+    "application_count": 0,
+    "identity": "0 + 0 + 0 + 12 + 0 = 12",
+    "isolation": "Only the 12 explicitly assigned candidate IDs are adjudicated."
+  }
+}

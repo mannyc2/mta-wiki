@@ -1,0 +1,420 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "proposal_status": "proposed_not_accepted",
+  "batch_id": "w2-meeting-docs-pending-03",
+  "reviewer": "plan-052-primary-meeting-docs-pending-03",
+  "review_role": "primary",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-03.json",
+  "manifest_sha256": "01f6e5f06360ede94fc64bafa074206b31d23960fbe66056c884a6b5182397da",
+  "frozen_input_verification": {
+    "candidate_count": 42,
+    "candidate_bearing_observation_count": 42,
+    "preterminal_observation_count": 65,
+    "required_accounted_observation_count": 107,
+    "evidence_pin_count": 92,
+    "all_candidate_ids_present": true,
+    "all_evidence_pins_match": true,
+    "cohort_hashes": {
+      "adapter_input_sha256": "1cad87d850b90287ae896dd82d49c46947d04f7c55b516948258a30a5e0e8cfc",
+      "candidate_input_sha256": "c5cd3c4d5ab552ba15c8e9090ce751060e6bf22d6ee1789ed42f8c61a339a53b",
+      "candidate_membership_sha256": "cdcdf5f4ed5cdab79e43ed99eee62c1729e1a67e3c7724689b9882e2cff10bed",
+      "evidence_input_sha256": "059c504dd10e275807e833c8e03641d27b3c1b50b288341a272137f6d3139c5e",
+      "observation_membership_sha256": "d9906bceb7b95c2704d012fd34826eb6b94de539d935fc14086ac9909d008ff0"
+    },
+    "status": "pass"
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "review_complete": true,
+  "stop": false,
+  "disagreements": null,
+  "findings": [
+    {
+      "candidate_id": "candidate:46c2b0179c09b1f94716d1f1",
+      "candidate_key": "event:event_cp-goes-live-jan5-2025",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Congestion pricing tolling began in the Congestion Relief Zone on January 5, 2025.",
+      "evidence_ids": ["meeting_doc_160966#p010_c0002"],
+      "prohibited_inferences": ["Do not model a road-tolling program as a route-treatment operational occurrence."]
+    },
+    {
+      "candidate_id": "candidate:4867222f85b6c33b7a6c5446",
+      "candidate_key": "event:event_new-years-early-getaway-2022",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR operated 13 early-release eastbound trains on December 30, 2022.",
+      "evidence_ids": ["meeting_doc_102751#p001_c0011", "meeting_doc_102751#p001_c0012"],
+      "prohibited_inferences": ["Do not model railroad holiday service as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:4afeb71d220c5c1f6a5bcc38",
+      "candidate_key": "event:event_meeting-doc-180056-cbdtp",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Central Business District Tolling Program toll collection commenced in January 2025.",
+      "evidence_ids": ["meeting_doc_180056#p016_c0007"],
+      "prohibited_inferences": ["Do not model a road-tolling program as a route-treatment operational occurrence."]
+    },
+    {
+      "candidate_id": "candidate:4b21286e712d43bfb34af9ec",
+      "candidate_key": "event:event_gcm-pre-revenue-testing-oct2022",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR performed Grand Central Madison pre-revenue testing in October 2022.",
+      "evidence_ids": ["meeting_doc_100306#p004_c0003"],
+      "prohibited_inferences": ["Do not model railroad testing as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:4d13383cbff5756e44067592",
+      "candidate_key": "event:event_meeting-doc-may2023-ptc-update_3",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The May 2023 committee item concerned LIRR and Metro-North Positive Train Control implementation and close-out.",
+      "evidence_ids": ["meeting_doc_104756#p004_c0020", "meeting_doc_104756#p004_c0021"],
+      "prohibited_inferences": ["Do not model a railroad project-status briefing as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:4dec7cf924524aed2c281e55",
+      "candidate_key": "event:event_lirr-full-gcm-service-feb2023",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Full LIRR service to Grand Central Madison began in February 2023.",
+      "evidence_ids": ["meeting_doc_131666#p016_c0008"],
+      "prohibited_inferences": ["Do not model railroad service as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:4e0d01297d1cbb3663810d35",
+      "candidate_key": "event:event_199066-march-timetable-change-period",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The source defines a March 23 through May 17, 2026 LIRR timetable period for winter trackwork.",
+      "evidence_ids": ["meeting_doc_199066#p001_c0004"],
+      "prohibited_inferences": ["Do not model a railroad timetable period as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:4fd0795d9234164d5e3a991b",
+      "candidate_key": "event:event_harlem-cp117-switch-upgrades",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Harlem Line CP 117 switch upgrades and track reconfiguration were completed in August 2022.",
+      "evidence_ids": ["meeting_doc_98256#p005_c0006"],
+      "prohibited_inferences": ["Do not model railroad infrastructure work as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:510bb198efde4c35f3f022ac",
+      "candidate_key": "event:event_west-hempstead-oct25-26-2025",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Concrete-tie and rail replacement affected the Montauk and West Hempstead Branches on October 25-26, 2025.",
+      "evidence_ids": ["meeting_doc_186721#p001_c0008"],
+      "prohibited_inferences": ["Do not model railroad trackwork or substitute service as a bus-priority route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:5355564367d22a373d63a536",
+      "candidate_key": "event:event_grand-central-madison-opening-jan25-2023",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Grand Central Madison first received customers through Jamaica shuttle service on January 25, 2023.",
+      "evidence_ids": ["meeting_doc_105776#p002_c0008"],
+      "prohibited_inferences": ["Do not model a railroad terminal opening as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:53576ae4e784581f906a2596",
+      "candidate_key": "event:event_meeting174221-cbdtp-tolling-start",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The Central Business District Tolling Program began collecting tolls on January 5, 2025.",
+      "evidence_ids": ["meeting_doc_174221#p070_c0002"],
+      "prohibited_inferences": ["Do not model a road-tolling program as a route-treatment operational occurrence."]
+    },
+    {
+      "candidate_id": "candidate:545be0b6c15212ed9f6dd273",
+      "candidate_key": "event:event_may-2023-lirr-mnr-ptc-update",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The May 2023 committee agenda item concerned LIRR and Metro-North Positive Train Control implementation and close-out.",
+      "evidence_ids": ["meeting_doc_111771#p001_c0008", "meeting_doc_111771#p003_c0016", "meeting_doc_111771#p003_c0017"],
+      "prohibited_inferences": ["Do not model a railroad committee briefing as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:55291cdf68954f24514eecdc",
+      "candidate_key": "event:event_sim4x-sim8x-jan2019-stop-added",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The source says one Staten Island stop was added in each direction near the first or last stops of both SIM4X and SIM8X in January 2019. The frozen canonical graph has durable SIM4X and SIM8X routes and the event, but no source-bound stop-addition treatment component with which to form an exact application.",
+      "evidence_ids": ["meeting_doc_176441#p002_c0010"],
+      "evidence_gap": "The frozen cohort lacks a canonical treatment-component observation for the evidenced stop addition.",
+      "prohibited_inferences": [
+        "Do not substitute a stop-change component from an unrelated route or source.",
+        "Do not publish an application without an exact durable treatment subject."
+      ]
+    },
+    {
+      "candidate_id": "candidate:555063b9d4ec1a4046c0fea5",
+      "candidate_key": "event:event_toll-increase-jan-2026",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "A bridge-and-tunnel toll increase was implemented January 4, 2026.",
+      "evidence_ids": ["meeting_doc_198996#p007_c0006"],
+      "prohibited_inferences": ["Do not model bridge-and-tunnel toll policy as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:571239bc0eb58e020e80a61b",
+      "candidate_key": "event:event_meeting-doc-121096-winter-trackwork-nov2023",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The November 2023 LIRR trackwork program included switch installation and rail maintenance.",
+      "evidence_ids": ["meeting_doc_121096#p004_c0009", "meeting_doc_121096#p004_c0010"],
+      "prohibited_inferences": ["Do not model railroad trackwork as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:575c799d9dcf3248a3dbf546",
+      "candidate_key": "event:event_m186726-schedule-change",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Metro-North updated Hudson, Harlem, and New Haven Line schedules on October 5, 2025.",
+      "evidence_ids": ["meeting_doc_186726#p001_c0009", "meeting_doc_186726#p001_c0011"],
+      "prohibited_inferences": ["Do not model railroad schedule changes as bus route-treatment occurrences."]
+    },
+    {
+      "candidate_id": "candidate:583cd3f1d026543e9219a2b4",
+      "candidate_key": "event:event_cityticket-expansion-effective",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "CityTicket expanded to weekday off-peak travel on LIRR and Metro-North within New York City.",
+      "evidence_ids": ["meeting_doc_68641#p006_c0002"],
+      "prohibited_inferences": ["Do not model railroad fare policy as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:5963dbcd1235ff65adafd731",
+      "candidate_key": "event:event_ronkonkoma-oct18-19-2025",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Switch installation and state-of-good-repair maintenance occurred at Ronkonkoma Station on October 18-19, 2025.",
+      "evidence_ids": ["meeting_doc_186721#p002_c0001"],
+      "prohibited_inferences": ["Do not model railroad trackwork as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:597023ec4c1c916f75081d1b",
+      "candidate_key": "event:event_meeting-doc-170846-513pm-montauk-extension",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "A Penn Station-to-Speonk train was extended to Montauk on summer weekdays.",
+      "evidence_ids": ["meeting_doc_170846#p001_c0008"],
+      "prohibited_inferences": ["Do not model railroad service changes as bus route-treatment occurrences."]
+    },
+    {
+      "candidate_id": "candidate:5c68040c5947ca8362509fd6",
+      "candidate_key": "event:event_croton-harmon-shop-completion-ceremony",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Completion of upgrades to Metro-North's Croton-Harmon maintenance hub was announced on May 10, 2024.",
+      "evidence_ids": ["meeting_doc_140286#p002_c0002", "meeting_doc_140286#p021_c0005"],
+      "prohibited_inferences": ["Do not model a railroad maintenance-facility opening as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:5c85fa71d9fa7760cd9025a6",
+      "candidate_key": "event:event_lirr-work-plan-jun-2024-summer-trackwork",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The June 2024 LIRR work plan adjusted schedules for trackwork, Main Line Second Track construction, and East Side Access readiness.",
+      "evidence_ids": ["meeting_doc_115176#p006_c0010", "meeting_doc_115176#p006_c0011"],
+      "prohibited_inferences": ["Do not model railroad construction or schedule changes as bus route-treatment occurrences."]
+    },
+    {
+      "candidate_id": "candidate:5de333d7ac0bfad5c269095b",
+      "candidate_key": "event:event_meeting-doc-131681-cashless-tolling-operational",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Cashless tolling was operational at all MTA Bridges and Tunnels facilities by September 2017.",
+      "evidence_ids": ["meeting_doc_131681#p001_c0007"],
+      "prohibited_inferences": ["Do not model bridge-and-tunnel tolling as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:5e44974da6587490a23210c6",
+      "candidate_key": "event:event_psa-service-commencement-2027",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Metro-North Penn Station Access service was expected to commence in November 2027.",
+      "evidence_ids": ["meeting_doc_160111#p001_c0014"],
+      "prohibited_inferences": ["Do not model prospective railroad service as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:6289d1d9a428377cf0bd164f",
+      "candidate_key": "event:event_m15-sbs-ace-launch-oct2019",
+      "recommended_disposition": "published",
+      "observation_event_record_ids": ["event_m15-sbs-ace-launch-oct2019"],
+      "route_applications": [
+        {
+          "route_record_id": "route_m15-sbs",
+          "gtfs_route_id": "M15+",
+          "treatment_record_id": "treatment_able-cameras",
+          "extent": "on-board automated bus-lane enforcement coverage on M15 SBS"
+        }
+      ],
+      "phase": "launched",
+      "phase_date": {
+        "value": "2019-10",
+        "precision": "month"
+      },
+      "scope": "First ABLE enforcement route, M15 SBS",
+      "evidence_ids": ["meeting_doc_201621#p029_c0006"],
+      "cross_product_proof": "The evidence identifies one route, M15 SBS, as the first enforcement route and one automated bus-lane-enforcement treatment; the exact incidence is one route by one treatment."
+    },
+    {
+      "candidate_id": "candidate:62a47a4f009290be1fc10a42",
+      "candidate_key": "event:event_toll-violation-implementation",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Bridge-and-tunnel toll-violation enforcement changes were scheduled for September 1, 2024.",
+      "evidence_ids": ["meeting_doc_140276#p065_c0007"],
+      "prohibited_inferences": ["Do not model toll enforcement as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:62f2e1c18eac906dddca3faa",
+      "candidate_key": "event:event_omny-card-introduced-oct2021",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The OMNY card retail network launched full-fare sales and reloads and a reduced-fare soft launch.",
+      "evidence_ids": ["meeting_doc_72541#p029_c0005", "meeting_doc_72541#p029_c0006"],
+      "prohibited_inferences": ["Do not model a systemwide fare-media product launch as a route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:6322933a1063e359bfb4cfb2",
+      "candidate_key": "event:event_switch-installation-weekend-2",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Main Line tracks were taken out of service for a railroad switch installation on June 22-23.",
+      "evidence_ids": ["meeting_doc_140326#p001_c0008"],
+      "prohibited_inferences": ["Do not model railroad switch work as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:632ee42322bd446b1569d8c8",
+      "candidate_key": "event:event_163121-r211-debut",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The first R211 subway train entered revenue service on the A line on March 10, 2023.",
+      "evidence_ids": ["meeting_doc_163121#p030_c0003"],
+      "prohibited_inferences": ["Do not model subway rolling-stock deployment as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:636fe89200635b52a5b4458e",
+      "candidate_key": "event:event_meeting-doc-127701-penn-access-commencement",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Metro-North Penn Station Access service was scheduled to commence in November 2027.",
+      "evidence_ids": ["meeting_doc_127701#p027_c0005"],
+      "prohibited_inferences": ["Do not model prospective railroad service as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:67c3c9181e27742352106024",
+      "candidate_key": "event:event_ronkonkoma-relief-train-start-192301",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "A new Penn Station-to-Ronkonkoma relief train began operating on November 9.",
+      "evidence_ids": ["meeting_doc_192301#p007_c0003"],
+      "prohibited_inferences": ["Do not model railroad service as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:694eb4d82c2deaed59aa037c",
+      "candidate_key": "event:event_lirr-mnr-promotions-effective",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR and Metro-North fare promotions included ticket discounts and CityTicket expansion.",
+      "evidence_ids": ["meeting_doc_68641#p003_c0002"],
+      "prohibited_inferences": ["Do not model railroad fare policy as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:695a4ca99ed513c4e423b4d4",
+      "candidate_key": "event:event_meeting-doc-164866-weekend-switch-signal-mar8",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Railroad switch and signal work occurred near Ronkonkoma station on March 8-9, 2025.",
+      "evidence_ids": ["meeting_doc_164866#p002_c0006"],
+      "prohibited_inferences": ["Do not model railroad trackwork as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:6a5588a468388b2cabd85a87",
+      "candidate_key": "event:event_sc42-revenue-service-start",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Revenue service for Metro-North SC42 dual-mode locomotives was projected for July 2025.",
+      "evidence_ids": ["meeting_doc_176356#p016_c0003"],
+      "prohibited_inferences": ["Do not model prospective railroad rolling-stock deployment as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:6a9707fa9a37386679419cf3",
+      "candidate_key": "event:event_van-wyck-sep28-29-2024",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Jay Interlocking tracks were taken out of service for the Van Wyck Bridge Widening Project on September 28-29, 2024.",
+      "evidence_ids": ["meeting_doc_151821#p001_c0007"],
+      "prohibited_inferences": ["Do not model railroad work or substitute service as a bus-priority route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:6aa4e742858bd0f8b72e510e",
+      "candidate_key": "event:event_lirr-2022-queens-interlocking-cutover",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR performed Queens Interlocking cutover trackwork in October 2022.",
+      "evidence_ids": ["meeting_doc_105836#p004_c0003"],
+      "prohibited_inferences": ["Do not model railroad interlocking work as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:6b790cae9335492681da1427",
+      "candidate_key": "event:event_meeting-doc-86471-470-electric-buses",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The source plans 470 electric buses for 2025-26, comprising 380 standard and 90 articulated buses.",
+      "evidence_ids": ["meeting_doc_86471#p003_c0006"],
+      "evidence_gap": "No exact route incidence is stated for the fleet deployment.",
+      "prohibited_inferences": [
+        "Do not assign electric buses to any route.",
+        "Do not publish a systemwide fleet count as a route-treatment occurrence."
+      ]
+    },
+    {
+      "candidate_id": "candidate:6bd152ccc5ead89b4c80dad4",
+      "candidate_key": "event:event_meeting-doc-164866-march-timetable-change",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR adjusted its timetable from March 3 through May 19, 2025.",
+      "evidence_ids": ["meeting_doc_164866#p001_c0005", "meeting_doc_164866#p002_c0001"],
+      "prohibited_inferences": ["Do not model railroad timetable changes as bus route-treatment occurrences."]
+    },
+    {
+      "candidate_id": "candidate:6d3ee378b9841cd0f3a72c70",
+      "candidate_key": "event:event_meeting-doc-128921-wide-aisle-gates-sutphin-dec4",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Wide-aisle fare gates and a Customer Service Center opened at the Sutphin Boulevard-Archer Avenue subway station.",
+      "evidence_ids": ["meeting_doc_128921#p002_c0001"],
+      "prohibited_inferences": ["Do not model subway-station fare-gate work as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:6f269dd12104ddc1c34b88b3",
+      "candidate_key": "event:event_grand-central-madison-opening_4",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The source reports the Grand Central Madison opening on February 27.",
+      "evidence_ids": ["meeting_doc_138216#p002_c0004"],
+      "prohibited_inferences": ["Do not model a railroad terminal opening as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:6f2f311e4cca8011eca80c32",
+      "candidate_key": "event:event_q98v-b98v-launch-mar1-2021",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The source directly assigns the new Q98V shuttle from Edgemere to the York College vaccination site and the new B98V shuttle from Pink Houses to the Medgar Evers College vaccination site, both launched March 1, 2021 and operating every 30 minutes from 6:30 a.m. to 9 p.m. The frozen canonical graph contains both durable route records and the launch event but no source-bound service-pattern treatment component.",
+      "evidence_ids": ["meeting_doc_33236#p040_c0005", "meeting_doc_33236#p041_c0003"],
+      "evidence_gap": "The frozen cohort lacks canonical treatment-component observations for the two exact shuttle-service applications.",
+      "prohibited_inferences": [
+        "Do not substitute a service-pattern component from an unrelated route or source.",
+        "Do not infer any route beyond Q98V and B98V.",
+        "Do not create a two-route by two-destination cross-product."
+      ]
+    },
+    {
+      "candidate_id": "candidate:6fb768edbb7594999c268482",
+      "candidate_key": "event:event_meeting-doc-109341-long-beach-far-rockaway-work-weekends",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR rail replacement and signal maintenance affected the Long Beach and Far Rockaway Branches on three weekends, with buses replacing trains between Valley Stream and Far Rockaway.",
+      "evidence_ids": ["meeting_doc_109341#p002_c0004"],
+      "prohibited_inferences": ["Do not model railroad replacement-bus operations as a bus-priority route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:728ed85b864a70f7f7c1d7d2",
+      "candidate_key": "event:event_pj-trackwork-weekend-dates-2024",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Port Jefferson Branch main tracks were out of service on five 2024 weekends for switch installation, rail replacement, and bridge maintenance.",
+      "evidence_ids": ["meeting_doc_143201#p001_c0007"],
+      "prohibited_inferences": ["Do not model railroad trackwork as a bus route-treatment occurrence."]
+    }
+  ],
+  "preterminal_observation_conformance": {
+    "unsupported_record_count": 64,
+    "not_episode_evidence_count": 1,
+    "count": 65,
+    "status": "pass_no_semantic_write",
+    "rule": "These observations were already terminal in the frozen observation ledger and are not candidate decisions."
+  },
+  "terminal_disposition_counts": {
+    "published": 1,
+    "duplicate_alias": 0,
+    "insufficient_evidence": 3,
+    "outside_domain": 38,
+    "rejected": 0,
+    "schema_blocked": 0,
+    "total": 42
+  },
+  "integration_authorization": "await_independent_review_and_deterministic_reconciliation"
+}

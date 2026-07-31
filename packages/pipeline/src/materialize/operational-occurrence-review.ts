@@ -45,6 +45,16 @@ export type OperationalOccurrenceReviewV1EvidenceRole =
 export type OperationalOccurrenceReviewV1EvidenceBinding =
   Omit<OperationalOccurrenceEvidenceBinding, "role"> & { role: OperationalOccurrenceReviewV1EvidenceRole };
 
+export const OPERATIONAL_OCCURRENCE_ONSET_PRECISIONS = [
+  "day",
+  "month",
+  "year",
+  "season",
+  "upper_bound_day",
+] as const;
+export type OperationalOccurrenceOnsetPrecision =
+  (typeof OPERATIONAL_OCCURRENCE_ONSET_PRECISIONS)[number];
+
 export type OperationalOccurrenceAcceptedTreatment =
   | {
       kind: "atomic";
@@ -80,7 +90,7 @@ export type OperationalOccurrenceAcceptedDecision = {
   resolved_status: "realized";
   resolved_onset: {
     date: string;
-    precision: "day" | "month";
+    precision: OperationalOccurrenceOnsetPrecision;
     evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
   };
   routes: Array<{
@@ -121,7 +131,7 @@ export type OperationalOccurrenceReviewDecision = {
   anchor_review_decision_ids: string[];
   resolved_onset: {
     date: string;
-    precision: "day" | "month";
+    precision: OperationalOccurrenceOnsetPrecision;
     evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
   };
   routes: Array<{
@@ -204,7 +214,6 @@ const snapshotDecisionFields = new Set([
   "schema_version",
   "treatment",
 ]);
-const snapshotOnsetFields = new Set(["date", "evidence_bindings", "precision"]);
 const snapshotRouteFields = new Set(["evidence_bindings", "gtfs_route_id", "route_record_id"]);
 const snapshotAtomicFields = new Set(["kind", "member"]);
 const snapshotBundleFields = new Set(["bundle_family", "bundle_family_evidence_bindings", "kind", "members"]);
@@ -237,6 +246,45 @@ function acceptedPossiblyEmptyStringArray(value: unknown, path: string): string[
   const values = value.map((entry, index) => acceptedString(entry, `${path}[${index}]`));
   if (new Set(values).size !== values.length) throw new Error(`${path} must not contain duplicates`);
   return values;
+}
+
+function acceptedOnset(
+  value: unknown,
+  path: string,
+): {
+  date: string;
+  precision: OperationalOccurrenceOnsetPrecision;
+  evidence_bindings: OperationalOccurrenceReviewV1EvidenceBinding[];
+} {
+  const onset = acceptedObject(value, path);
+  acceptedKeys(onset, acceptedOnsetFields, path);
+  const precision = acceptedString(onset.precision, `${path}.precision`);
+  if (
+    !OPERATIONAL_OCCURRENCE_ONSET_PRECISIONS.includes(
+      precision as OperationalOccurrenceOnsetPrecision,
+    )
+  ) {
+    throw new Error(`${path}.precision is unsupported: ${precision}`);
+  }
+  const patterns: Record<OperationalOccurrenceOnsetPrecision, RegExp> = {
+    day: /^\d{4}-\d{2}-\d{2}$/u,
+    month: /^\d{4}-\d{2}$/u,
+    year: /^\d{4}$/u,
+    season: /^\d{4}-(?:winter|spring|summer|fall)$/u,
+    upper_bound_day: /^\d{4}-\d{2}-\d{2}$/u,
+  };
+  const date = acceptedString(onset.date, `${path}.date`);
+  if (!patterns[precision as OperationalOccurrenceOnsetPrecision].test(date)) {
+    throw new Error(`${path}.date does not match ${precision} precision`);
+  }
+  return {
+    date,
+    precision: precision as OperationalOccurrenceOnsetPrecision,
+    evidence_bindings: acceptedBindings(
+      onset.evidence_bindings,
+      `${path}.evidence_bindings`,
+    ),
+  };
 }
 
 function acceptedBinding(value: unknown, path: string): OperationalOccurrenceReviewV1EvidenceBinding {
@@ -293,14 +341,7 @@ export function parseOperationalOccurrenceAcceptedDecision(
   if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/u.test(acceptedAt) || Number.isNaN(Date.parse(acceptedAt))) {
     throw new Error(`${path}.accepted_at must be an ISO-8601 UTC timestamp`);
   }
-  const onset = acceptedObject(object.resolved_onset, `${path}.resolved_onset`);
-  acceptedKeys(onset, acceptedOnsetFields, `${path}.resolved_onset`);
-  const precision = acceptedString(onset.precision, `${path}.resolved_onset.precision`);
-  if (precision !== "day" && precision !== "month") throw new Error(`${path}.resolved_onset.precision must be day or month`);
-  const date = acceptedString(onset.date, `${path}.resolved_onset.date`);
-  if (!(precision === "day" ? /^\d{4}-\d{2}-\d{2}$/u : /^\d{4}-\d{2}$/u).test(date)) {
-    throw new Error(`${path}.resolved_onset.date does not match ${precision} precision`);
-  }
+  const onset = acceptedOnset(object.resolved_onset, `${path}.resolved_onset`);
   if (!Array.isArray(object.routes) || object.routes.length === 0) throw new Error(`${path}.routes must be a non-empty array`);
   const routes = object.routes.map((entry, index) => {
     const routePath = `${path}.routes[${index}]`;
@@ -368,9 +409,9 @@ export function parseOperationalOccurrenceAcceptedDecision(
     ),
     resolved_status: "realized",
     resolved_onset: {
-      date,
-      precision,
-      evidence_bindings: acceptedBindings(onset.evidence_bindings, `${path}.resolved_onset.evidence_bindings`),
+      date: onset.date,
+      precision: onset.precision,
+      evidence_bindings: onset.evidence_bindings,
     },
     routes,
     treatment_scope_kind: scopeKind,
@@ -676,14 +717,7 @@ export function parseOperationalOccurrenceReviewSnapshot(value: unknown): Operat
     if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/u.test(acceptedAt) || Number.isNaN(Date.parse(acceptedAt))) {
       throw new Error(`${path}.accepted_at must be an ISO-8601 UTC timestamp`);
     }
-    const onset = acceptedObject(decision.resolved_onset, `${path}.resolved_onset`);
-    acceptedKeys(onset, snapshotOnsetFields, `${path}.resolved_onset`);
-    const precision = acceptedString(onset.precision, `${path}.resolved_onset.precision`);
-    if (precision !== "day" && precision !== "month") throw new Error(`${path}.resolved_onset.precision must be day or month`);
-    const date = acceptedString(onset.date, `${path}.resolved_onset.date`);
-    if (!(precision === "day" ? /^\d{4}-\d{2}-\d{2}$/u : /^\d{4}-\d{2}$/u).test(date)) {
-      throw new Error(`${path}.resolved_onset.date does not match ${precision} precision`);
-    }
+    const onset = acceptedOnset(decision.resolved_onset, `${path}.resolved_onset`);
     if (!Array.isArray(decision.routes) || decision.routes.length === 0) throw new Error(`${path}.routes must be non-empty`);
     const routes = decision.routes.map((routeEntry, routeIndex) => {
       const routePath = `${path}.routes[${routeIndex}]`;
@@ -742,9 +776,9 @@ export function parseOperationalOccurrenceReviewSnapshot(value: unknown): Operat
         `${path}.anchor_review_decision_ids`,
       ),
       resolved_onset: {
-        date,
-        precision,
-        evidence_bindings: acceptedBindings(onset.evidence_bindings, `${path}.resolved_onset.evidence_bindings`),
+        date: onset.date,
+        precision: onset.precision,
+        evidence_bindings: onset.evidence_bindings,
       },
       routes,
       treatment,

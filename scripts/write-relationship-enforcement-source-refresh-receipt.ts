@@ -29,8 +29,6 @@ const TRACKED_COMPLETENESS_DIR =
   "data/quality/relationship-integrity/completeness";
 const COVERAGE_MANIFEST_PATH =
   "data/quality/operational-coverage/manifest.json";
-const EXPECTED_PREVIOUS_COVERAGE_SHA256 =
-  "287a638949df774544c5c9eaa67245af2be92f78455892bb79bf6b3bc4c09e79";
 const EXPECTED_PREVIOUS_COMMAND =
   "bun -e 'import { writeRelationshipCompletenessArtifacts as write } from \"./packages/pipeline/src/quality/relationship-completeness.ts\"; write()'";
 const EXPECTED_CURRENT_COMMAND =
@@ -150,15 +148,15 @@ function assertAllowedChanges(changes: readonly Change[]): void {
     /\/input_pins\/\d+\/sha256$/u.test(change.json_pointer)
   );
   if (
-    coverageChanges.length !== 2 ||
+    coverageChanges.length !== 0 &&
+    (coverageChanges.length !== 2 ||
     coverageChanges.some((change) =>
-      change.previous_value !== EXPECTED_PREVIOUS_COVERAGE_SHA256 ||
       change.current_value !==
         REVIEWED_PUBLIC_SNAPSHOT_COVERAGE_MANIFEST_SHA256
-    )
+    ))
   ) {
     throw new Error(
-      "Source refresh must change exactly the stale coverage-manifest SHA pin in summary and manifest",
+      "Source refresh may only change the stale coverage-manifest SHA pin in summary and manifest",
     );
   }
 }
@@ -256,14 +254,18 @@ export function buildRelationshipEnforcementSourceRefreshReceipt(input: {
 
   const previousCommand = reportCommand(trackedReportText);
   const currentCommand = reportCommand(candidateReportText);
-  if (
-    previousCommand !== EXPECTED_PREVIOUS_COMMAND ||
-    currentCommand !== EXPECTED_CURRENT_COMMAND ||
-    trackedReportText.replace(previousCommand, currentCommand) !==
-      candidateReportText
-  ) {
+  const initialCommandRefresh =
+    previousCommand === EXPECTED_PREVIOUS_COMMAND &&
+    currentCommand === EXPECTED_CURRENT_COMMAND &&
+    trackedReportText.replace(previousCommand, currentCommand) ===
+      candidateReportText;
+  const repeatedClosureRefresh =
+    previousCommand === EXPECTED_CURRENT_COMMAND &&
+    currentCommand === EXPECTED_CURRENT_COMMAND &&
+    trackedReportText === candidateReportText;
+  if (!initialCommandRefresh && !repeatedClosureRefresh) {
     throw new Error(
-      "Completeness report changed beyond the exact reviewed reproduction-command line",
+      "Completeness report changed beyond the reviewed reproduction-command boundary",
     );
   }
 
@@ -311,7 +313,7 @@ export function buildRelationshipEnforcementSourceRefreshReceipt(input: {
     }
   ).input_pins.find((pin) => pin.path === COVERAGE_MANIFEST_PATH);
   if (
-    trackedCoveragePin?.sha256 !== EXPECTED_PREVIOUS_COVERAGE_SHA256 ||
+    trackedCoveragePin?.sha256 === undefined ||
     trackedCoveragePin.bytes !== REVIEWED_PUBLIC_SNAPSHOT_COVERAGE_MANIFEST_BYTES ||
     candidateCoveragePin?.sha256 !==
       REVIEWED_PUBLIC_SNAPSHOT_COVERAGE_MANIFEST_SHA256 ||

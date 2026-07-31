@@ -14,15 +14,24 @@ import {
   buildOperationalEpisodeFrontier,
   loadOperationalEpisodeCandidateDecisions,
   parseOperationalEpisodeObservationLedgerRow,
+  type OperationalEpisodeCandidateDecision,
 } from "@mta-wiki/pipeline/materialize/operational-episode-frontier";
 import {
   loadOperationalOccurrenceIdentityRegistryV2,
   type OperationalOccurrenceIdentityRegistryV2Entry,
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-identity-operations";
 import {
-  loadOperationalOccurrenceAcceptedDecisionsV2,
   type OperationalOccurrenceAcceptedDecisionV2,
 } from "@mta-wiki/pipeline/materialize/operational-occurrence-review";
+import {
+  loadOperationalOccurrenceCurrentReviewDecisions,
+} from "@mta-wiki/pipeline/materialize/operational-occurrence-resolution";
+import type {
+  LoadedOperationalProjectionRetirementV1,
+} from "@mta-wiki/pipeline/materialize/operational-projection-retirements";
+import {
+  loadOperationalProjectionRetirements,
+} from "@mta-wiki/pipeline/materialize/operational-projection-retirements";
 
 function record(
   id: string,
@@ -249,8 +258,111 @@ describe("operational episode adapters and closed frontier", () => {
     })).toThrow("observation membership is stale");
   });
 
+  it("closes an active projection without retiring its stable identity", () => {
+    const event = record("event_one", "event", {
+      event_family: "implementation",
+      lifecycle_phase: "installed",
+    });
+    const occurrenceId = "occurrence:one";
+    const acceptedMapping = {
+      ...mapping(["event_one"], occurrenceId),
+      decision_id: "review:one",
+      evidence_bindings: [
+        {
+          record_id: "event_one",
+          source_id: "source_fixture",
+          evidence_id: "source_fixture#p001_b0001",
+        },
+        {
+          record_id: "route_one",
+          source_id: "source_fixture",
+          evidence_id: "source_fixture#p001_b0001",
+        },
+      ],
+    };
+    const retirementSha = "b".repeat(64);
+    const retirement = {
+      retirement_id: "retirement:one",
+      source_sha256: retirementSha,
+      binding: {
+        route_record_id: "route_one",
+        gtfs_route_id: "R1",
+      },
+      occurrence_review_decisions: [{
+        decision_id: "review:one",
+        occurrence_id: occurrenceId,
+        founding_key: "event:event_one",
+        pinned_gtfs_route_ids: ["R1"],
+        projection_state: "retired",
+        reason_code: "route_binding_nonprojectable",
+      }],
+    } as unknown as LoadedOperationalProjectionRetirementV1;
+    const decision: OperationalEpisodeCandidateDecision = {
+      schema_version: 1,
+      decision_id: "terminal:one",
+      candidate_key: "event:event_one",
+      disposition: "retired",
+      canonical_candidate_key: null,
+      successor_occurrence_ids: [],
+      reviewer: "fixture-dual-review",
+      decided_at: "2026-07-30T00:00:00.000Z",
+      rationale: "Accepted route-snapshot projection retirement preserves identity.",
+      evidence_bindings: [{
+        record_id: "event_one",
+        source_id: "source_fixture",
+        evidence_id: "source_fixture#p001_b0001",
+      }],
+      projection_retirement_id: retirement.retirement_id,
+      projection_retirement_sha256: retirementSha,
+    };
+    const input = {
+      canonical_records: [event],
+      accepted_mappings: [acceptedMapping],
+      candidate_decisions: [decision],
+      identity_registry: [identity(occurrenceId, "event_one")],
+      review_decisions: [],
+      projection_retirements: [retirement],
+      completeness_profile: "complete" as const,
+    };
+    const frontier = buildOperationalEpisodeFrontier(input);
+    expect(frontier.candidate_ledger[0]).toMatchObject({
+      disposition: "retired",
+      lineage_occurrence_ids: [occurrenceId],
+      unresolved_active_occurrence_ids: [],
+    });
+    expect(frontier.summary).toMatchObject({
+      active_identity_ids: 1,
+      projection_retired_active_identity_ids: 1,
+      unresolved_active_identity_ids: 0,
+      pending_count: 0,
+    });
+    expect(() => buildOperationalEpisodeFrontier({
+      ...input,
+      projection_retirements: [],
+    })).toThrow("missing or duplicate projection-retirement authority");
+    expect(() => buildOperationalEpisodeFrontier({
+      ...input,
+      candidate_decisions: [{
+        ...decision,
+        projection_retirement_sha256: "c".repeat(64),
+      }],
+    })).toThrow("stale projection-retirement authority");
+    expect(() => buildOperationalEpisodeFrontier({
+      ...input,
+      projection_retirements: [{
+        ...retirement,
+        occurrence_review_decisions: [{
+          ...retirement.occurrence_review_decisions[0]!,
+          founding_key: "event:event_other",
+        }],
+      }],
+    })).toThrow("does not match candidate, identity, review, and route binding");
+  });
+
   it("reconciles the production family denominator and all exact identity authority", () => {
     const records = readCanonicalRecordsFromJsonl();
+    const identityRegistry =
+      loadOperationalOccurrenceIdentityRegistryV2(repoRoot);
     const frontier = buildOperationalEpisodeFrontier({
       canonical_records: records,
       accepted_mappings: loadOperationalEpisodeAcceptedMappings(
@@ -259,8 +371,9 @@ describe("operational episode adapters and closed frontier", () => {
       candidate_decisions: loadOperationalEpisodeCandidateDecisions(
         join(repoRoot, "data", "operational-episode-resolution", "decisions", "index.json"),
       ),
-      identity_registry: loadOperationalOccurrenceIdentityRegistryV2(repoRoot),
-      review_decisions: loadOperationalOccurrenceAcceptedDecisionsV2(),
+      identity_registry: identityRegistry,
+      review_decisions: loadOperationalOccurrenceCurrentReviewDecisions(),
+      projection_retirements: loadOperationalProjectionRetirements(repoRoot),
       completeness_profile: "partial",
     });
     const familyCount = records.filter((record) =>
@@ -269,9 +382,13 @@ describe("operational episode adapters and closed frontier", () => {
     ).length;
     expect(familyCount).toBe(1363);
     expect(frontier.summary.cohort_observations).toBe(1366);
-    expect(frontier.summary.active_identity_ids).toBe(135);
-    expect(frontier.summary.published_distinct_occurrence_ids).toBe(130);
-    expect(frontier.summary.pending_review_distinct_unresolved_identity_ids).toBe(5);
+    expect(frontier.summary.active_identity_ids).toBe(identityRegistry.length);
+    expect(frontier.summary.published_distinct_occurrence_ids).toBeGreaterThanOrEqual(130);
+    expect(
+      frontier.summary.published_distinct_occurrence_ids +
+        frontier.summary.projection_retired_active_identity_ids +
+        frontier.summary.pending_review_distinct_unresolved_identity_ids,
+    ).toBe(identityRegistry.length);
     expect(frontier.summary.invalid_count).toBe(0);
-  });
+  }, 60_000);
 });

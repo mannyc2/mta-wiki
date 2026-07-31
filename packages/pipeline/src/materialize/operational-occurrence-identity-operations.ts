@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import { stableJson } from "@mta-wiki/db/stable-json";
@@ -341,6 +342,9 @@ export function replayOperationalOccurrenceIdentityOperations(
   if (new Set(ordered.map((operation) => operation.operation_id)).size !== ordered.length) {
     throw new Error("duplicate operational occurrence identity operation_id");
   }
+  if (new Set(ordered.map((operation) => operation.decision_id)).size !== ordered.length) {
+    throw new Error("duplicate operational occurrence identity decision_id");
+  }
   const entries = new Map<string, ReturnType<typeof mutableEntry>>();
   const foundingOwners = new Map<string, string>();
   const memberOwners = new Map<string, string>();
@@ -375,6 +379,9 @@ export function replayOperationalOccurrenceIdentityOperations(
       }
       const owner = aliasOwners.get(operation.alias);
       if (owner && owner !== entry.occurrence_id) throw new Error(`occurrence alias ${operation.alias} has two owners`);
+      if (owner === entry.occurrence_id) {
+        throw new Error(`occurrence alias ${operation.alias} is already owned by ${owner}`);
+      }
       if (operation.alias === entry.occurrence_id) throw new Error(`occurrence identity ${entry.occurrence_id} aliases itself`);
       aliasOwners.set(operation.alias, entry.occurrence_id);
       entry.aliases = [...new Set([...entry.aliases, operation.alias])].sort();
@@ -386,6 +393,11 @@ export function replayOperationalOccurrenceIdentityOperations(
       const leftEntry = requireEntry(left, operation);
       const rightEntry = requireEntry(right, operation);
       const key = pairKey(left, right);
+      if (nonCoreferenceDecision.has(key)) {
+        throw new Error(
+          `${operation.operation_id} repeats non-coreference authority for ${key}`,
+        );
+      }
       nonCoreferenceDecision.set(key, operation.decision_id);
       leftEntry.non_coreference_occurrence_ids = [...new Set([
         ...leftEntry.non_coreference_occurrence_ids,
@@ -559,30 +571,215 @@ export function loadOperationalOccurrenceIdentityRegistryV2(
   rootDir: string,
   options: { optionalFixture?: boolean } = {},
 ): OperationalOccurrenceIdentityRegistryV2Entry[] {
-  const operationsDir = join(
+  const migrationOperationsDir = join(
     rootDir,
     "data",
     "operational-occurrence-identities",
     "operations",
   );
-  const registryPath = join(
+  const migrationRegistryPath = join(
     rootDir,
     "data",
     "operational-occurrence-identities",
     "registry-v2.jsonl",
   );
-  if (!existsSync(operationsDir) || !existsSync(registryPath)) {
+  const acceptedOperationsDir = join(
+    rootDir,
+    "data",
+    "operational-occurrence-identities",
+    "accepted-current",
+    "operations",
+  );
+  const currentRegistryPath = join(
+    rootDir,
+    "data",
+    "operational-occurrence-identities",
+    "registry-current.jsonl",
+  );
+  const acceptedReceiptsDir = join(
+    rootDir,
+    "data",
+    "operational-occurrence-identities",
+    "accepted-current",
+    "receipts",
+  );
+  if (!existsSync(migrationOperationsDir) || !existsSync(migrationRegistryPath)) {
     if (options.optionalFixture) return [];
     throw new Error(
       "required operational occurrence identity registry-v2 inputs are missing",
     );
   }
-  const replayed = replayOperationalOccurrenceIdentityOperations(
-    loadOperationalOccurrenceIdentityOperations(operationsDir),
+  const migrationOperations = loadOperationalOccurrenceIdentityOperations(
+    migrationOperationsDir,
   );
-  const expected = operationalOccurrenceIdentityRegistryV2Jsonl(replayed);
-  if (readFileSync(registryPath, "utf8") !== expected) {
-    throw new Error("operational occurrence identity registry-v2 is stale against operation replay");
+  const migrated = replayOperationalOccurrenceIdentityOperations(migrationOperations);
+  const expectedMigration = operationalOccurrenceIdentityRegistryV2Jsonl(migrated);
+  if (readFileSync(migrationRegistryPath, "utf8") !== expectedMigration) {
+    throw new Error(
+      "historical operational occurrence identity registry-v2 is stale against migration operation replay",
+    );
+  }
+  if (!existsSync(acceptedOperationsDir)) {
+    if (existsSync(currentRegistryPath)) {
+      throw new Error(
+        "operational occurrence identity registry-current exists without accepted-current operations",
+      );
+    }
+    return migrated;
+  }
+  const acceptedOperations = loadOperationalOccurrenceIdentityOperations(
+    acceptedOperationsDir,
+  );
+  if (acceptedOperations.length === 0) {
+    throw new Error(
+      "operational occurrence identity accepted-current operation directory must not be empty",
+    );
+  }
+  const replayed = replayOperationalOccurrenceIdentityOperations([
+    ...migrationOperations,
+    ...acceptedOperations,
+  ]);
+  if (!existsSync(acceptedReceiptsDir)) {
+    throw new Error(
+      "operational occurrence identity accepted-current receipt directory is missing",
+    );
+  }
+  const receiptNames = readdirSync(acceptedReceiptsDir, { withFileTypes: true });
+  if (
+    receiptNames.some((entry) => !entry.isFile() || !entry.name.endsWith(".json"))
+  ) {
+    throw new Error(
+      "operational occurrence identity accepted-current receipt directory contains unsupported entries",
+    );
+  }
+  const receiptByOperation = new Map(receiptNames.map((entry) => {
+    const path = join(acceptedReceiptsDir, entry.name);
+    const input = object(
+      JSON.parse(readFileSync(path, "utf8")) as unknown,
+      path,
+    );
+    const fields = new Set([
+      "basis_registry_sha256",
+      "batch_id",
+      "batch_manifest_path",
+      "batch_manifest_sha256",
+      "evidence_bindings",
+      "independent_reviewer",
+      "operation_id",
+      "operation_sha256",
+      "primary_reviewer",
+      "result_registry_sha256",
+      "schema_version",
+    ]);
+    keys(input, fields, path);
+    if (input.schema_version !== 1) throw new Error(`${path}.schema_version must be 1`);
+    const operationId = string(input.operation_id, `${path}.operation_id`);
+    if (`${operationId}.json` !== entry.name) {
+      throw new Error(`${path}: operation_id must match file name`);
+    }
+    const hash = (value: unknown, field: string) => {
+      const result = string(value, `${path}.${field}`);
+      if (!/^[a-f0-9]{64}$/u.test(result)) {
+        throw new Error(`${path}.${field} must be a sha256`);
+      }
+      return result;
+    };
+    const primaryReviewer = string(
+      input.primary_reviewer,
+      `${path}.primary_reviewer`,
+    );
+    const independentReviewer = string(
+      input.independent_reviewer,
+      `${path}.independent_reviewer`,
+    );
+    if (primaryReviewer === independentReviewer) {
+      throw new Error(`${path}: identity reviewers must be independent`);
+    }
+    if (!Array.isArray(input.evidence_bindings) || input.evidence_bindings.length === 0) {
+      throw new Error(`${path}.evidence_bindings must be a non-empty array`);
+    }
+    const manifestPath = string(
+      input.batch_manifest_path,
+      `${path}.batch_manifest_path`,
+    );
+    if (!manifestPath.startsWith("data/operational-episode-resolution/campaigns/plan-052/batches/")) {
+      throw new Error(`${path}.batch_manifest_path is outside Plan 052`);
+    }
+    const manifestAbsolute = join(rootDir, manifestPath);
+    if (
+      !existsSync(manifestAbsolute) ||
+      createHash("sha256").update(readFileSync(manifestAbsolute)).digest("hex") !==
+        hash(input.batch_manifest_sha256, "batch_manifest_sha256")
+    ) {
+      throw new Error(`${path}: batch manifest pin is stale`);
+    }
+    return [operationId, {
+      basis_registry_sha256: hash(
+        input.basis_registry_sha256,
+        "basis_registry_sha256",
+      ),
+      operation_sha256: hash(input.operation_sha256, "operation_sha256"),
+      result_registry_sha256: hash(
+        input.result_registry_sha256,
+        "result_registry_sha256",
+      ),
+    }] as const;
+  }));
+  if (
+    receiptByOperation.size !== acceptedOperations.length ||
+    acceptedOperations.some((operation) => !receiptByOperation.has(operation.operation_id))
+  ) {
+    throw new Error(
+      "operational occurrence identity accepted-current operation/receipt partition is not exact",
+    );
+  }
+  const orderedCurrent = [...acceptedOperations].sort((left, right) =>
+    left.issued_at.localeCompare(right.issued_at) ||
+    left.operation_id.localeCompare(right.operation_id)
+  );
+  let priorRegistry = operationalOccurrenceIdentityRegistryV2Jsonl(
+    replayOperationalOccurrenceIdentityOperations(migrationOperations),
+  );
+  const applied: OperationalOccurrenceIdentityOperation[] = [];
+  for (const operation of orderedCurrent) {
+    const receipt = receiptByOperation.get(operation.operation_id)!;
+    const operationPath = join(
+      acceptedOperationsDir,
+      `${operation.operation_id}.json`,
+    );
+    const operationSha = createHash("sha256")
+      .update(readFileSync(operationPath))
+      .digest("hex");
+    const basisSha = createHash("sha256").update(priorRegistry).digest("hex");
+    applied.push(operation);
+    const resultRegistry = operationalOccurrenceIdentityRegistryV2Jsonl(
+      replayOperationalOccurrenceIdentityOperations([
+        ...migrationOperations,
+        ...applied,
+      ]),
+    );
+    const resultSha = createHash("sha256").update(resultRegistry).digest("hex");
+    if (
+      receipt.operation_sha256 !== operationSha ||
+      receipt.basis_registry_sha256 !== basisSha ||
+      receipt.result_registry_sha256 !== resultSha
+    ) {
+      throw new Error(
+        `operational occurrence identity receipt is stale for ${operation.operation_id}`,
+      );
+    }
+    priorRegistry = resultRegistry;
+  }
+  if (!existsSync(currentRegistryPath)) {
+    throw new Error(
+      "operational occurrence identity registry-current is missing for accepted-current operations",
+    );
+  }
+  const expectedCurrent = operationalOccurrenceIdentityRegistryV2Jsonl(replayed);
+  if (readFileSync(currentRegistryPath, "utf8") !== expectedCurrent) {
+    throw new Error(
+      "operational occurrence identity registry-current is stale against complete operation replay",
+    );
   }
   return replayed;
 }

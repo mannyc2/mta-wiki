@@ -205,7 +205,15 @@ export function buildOperatorPublicDisplayDictionary(
     const scopeName = contextNames[0] ?? (routeNames.join(", ") || "Network scope");
     const action = [...new Set(apps.map((app) => app.action))].join("/");
     const treatment = treatmentNames[0] ?? "Intervention";
-    const display = `${scopeName} — ${treatment}${action && action !== "unknown" ? ` (${action})` : ""} — ${episode.resolved_onset.date}`;
+    const onset = episode.resolved_onset.precision === "upper_bound_day"
+      ? `installed by ${episode.resolved_onset.date}`
+      : episode.resolved_onset.precision === "season"
+      ? (() => {
+          const [year, season] = episode.resolved_onset.date.split("-");
+          return `${season![0]!.toUpperCase()}${season!.slice(1)} ${year}`;
+        })()
+      : episode.resolved_onset.date;
+    const display = `${scopeName} — ${treatment}${action && action !== "unknown" ? ` (${action})` : ""} — ${onset}`;
     reconciliation.push({ schema_version: 1, subject_kind: "episode", subject_id: episode.occurrence_id, disposition: "resolved", reason_code: contextNames.length ? "addressed_context_composition" : "route_treatment_onset_composition" });
     return {
       schema_version: 1, occurrence_id: episode.occurrence_id,

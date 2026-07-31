@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w2-meeting-docs-pending-06",
+  "review_role": "independent_adjudication",
+  "reviewer": "plan-052-clean-room-third-adjudicator-other01-meeting06",
+  "reviewed_at": "2026-07-31T00:00:00.000Z",
+  "review_complete": true,
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-06.json",
+  "manifest_sha256": "ad5b92acdd23fb1cc22ec180a4af7df23b42439eb29d399a840372ac0d5a5f93",
+  "input_pins": {
+    "manifest": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-06.json",
+      "sha256": "ad5b92acdd23fb1cc22ec180a4af7df23b42439eb29d399a840372ac0d5a5f93"
+    },
+    "frozen_candidate_ledger": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+      "bytes": 860230,
+      "sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2"
+    },
+    "frozen_observation_ledger": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/observation_ledger.jsonl",
+      "bytes": 1374322,
+      "sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f"
+    },
+    "target_candidate_membership_sha256": "6ed1030c60a6943712c5c41ca899ff1db4567dc5bb79aa181fdcceeb1ca1728c",
+    "target_observation_membership_sha256": "1840559a9619620711d9702440e3d27ed2bee5cf0e3a20e67e781f2436034acd",
+    "cohort_hashes": {
+      "adapter_input_sha256": "5a108b36de0913cca26e8bef3e3765facce658531df99a700089d19566cbe91e",
+      "candidate_input_sha256": "d149492e6cdf506770389bb72d989831acfec317b5c55d4fe58e7ed2d4fb6c3c",
+      "candidate_membership_sha256": "69a5a1df36f2d1fea8f84797dfd4bb3a0958fba9c642fed504aa87a49acd6ad7",
+      "evidence_input_sha256": "1a88b5ef957d1cff96340eb104c522a00ee3faf897c2518631bbc0bd8dafe412",
+      "observation_membership_sha256": "ff858508c1ba5d42f81714ab32074eda6ed47591f33f046a65a3e8ac4f6874a9"
+    },
+    "immutable_starting_provenance": {
+      "commit_sha": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+      "corpus_fingerprint": "318cee05f0c7288fd28084df44b6b036f0607ffdfb76b3d6c6fcd14118f479c5",
+      "cohort_fingerprint": "94dfd16c1c57362b220fb8ce53b8325e6ca166c1e697d9001da8b66f6483e373",
+      "adapter_fingerprint": "de51c8db4353cc8774d4c55bea3fcba8103ecdee3a38898b85b61733eccf07b9",
+      "identity_fingerprint": "6827adf67650c81fa38d30b1dfbaf6be5282a45491b058b3ed44167aa287d26e",
+      "review_fingerprint": "3989ac8637527e5862f18b7a6c4f7f2699078eb992a2675b16a23af525fd1d24",
+      "decision_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "frontier_artifacts": [
+        {
+          "bytes": 860230,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+          "sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2"
+        },
+        {
+          "bytes": 720438,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/cohort.json",
+          "sha256": "59e4c2fbdb389255442c00ac06204b6798fed64742d80489441cd5524a912a61"
+        },
+        {
+          "bytes": 1374322,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/observation_ledger.jsonl",
+          "sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f"
+        },
+        {
+          "bytes": 21408,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/summary.json",
+          "sha256": "4baf594cea14431b2f2c125c19c554755ecf167be6b81f399152873a5cd35545"
+        }
+      ]
+    },
+    "source_files": [
+      {"bytes":122945,"path":"wiki/sources/meeting_doc_104701.md","sha256":"f5ba848ad2e1b1f50b2c27b44a076115a14507b926e047a384d60f23d9a8fd56"},
+      {"bytes":82854,"path":"wiki/sources/meeting_doc_115231.md","sha256":"36476c2b4a4d9d7de285b659e79a1463f77c7382f6a8a58a3433e478eda74721"},
+      {"bytes":1034640,"path":"wiki/sources/meeting_doc_127706.md","sha256":"754d2c0eb1c17d0fbf775f10afcc30ed94a2de741d4c4bdbcafe306f29741b45"},
+      {"bytes":506772,"path":"wiki/sources/meeting_doc_131666.md","sha256":"f0dadd34b128a7bf9a75dbc04ba9bfa1af55cdb555be6f2cfe39bc9d0164e5a6"},
+      {"bytes":5414,"path":"wiki/sources/meeting_doc_160271.md","sha256":"90d281c73fc408053b4eb2c95af8831a5325d1982ab7a0d79e43cc62b27999e8"},
+      {"bytes":76117,"path":"wiki/sources/meeting_doc_163121.md","sha256":"2750845f677655f90895e0ffed57c0cd5be4832251adecb0eb97f895baeea5cc"},
+      {"bytes":9618,"path":"wiki/sources/meeting_doc_166956.md","sha256":"eaa97ae7f3ffb262b819f34b3ff773303f399fa10263eef07769496a3ff5ebff"},
+      {"bytes":62713,"path":"wiki/sources/meeting_doc_174141.md","sha256":"175eda17965b843d4ccec4fbfe46c8afcb2ada67b9e6181380590b6ee4ccf62f"},
+      {"bytes":16398,"path":"wiki/sources/meeting_doc_202106.md","sha256":"a7244f716756414b1ba02b930d41ac4f45db2345a3447a5a81748d8a736a1187"},
+      {"bytes":487521,"path":"wiki/sources/meeting_doc_68306.md","sha256":"9d8897977e97cb807ecfca1906bc5899b3a230cb439662c19fde80f33f4f7c79"},
+      {"bytes":80175,"path":"wiki/sources/meeting_doc_91581.md","sha256":"a692f8615ae25474e809e551fbb79dafb533ca2986c488f66ec1c55faaecf44c"},
+      {"bytes":14034,"path":"wiki/sources/meeting_doc_98251.md","sha256":"ddbd92c91ee24d779e3a9dc186b5433a9f10bca9378579520910bb3eee80ea09"}
+    ]
+  },
+  "isolation": {
+    "clean_room_assessment": true,
+    "original_reviewer_receipts_opened": false,
+    "reconciliation_or_integration_receipts_opened": false,
+    "provider_calls": 0,
+    "governed_inputs_used": [
+      "AGENTS.md",
+      "CODEX.md",
+      "LOG.md",
+      "plans/052-close-operational-episode-frontier.md",
+      "docs/operational-episode-frontier.md",
+      "Plan 052 contract and schema code",
+      "the frozen batch manifest",
+      "the exact targeted frozen candidate and observation rows",
+      "the targeted rows' canonical records and hash-pinned source pages"
+    ],
+    "nonsemantic_discovery_exposures": [
+      "An initial overbroad file-name discovery listed accepted-current path names carrying batch/category stems but no target-candidate mapping, receipt content, rationale, evidence, or outcome.",
+      "A schema-search command returned ten generic lines containing an empty route_record_ids array from a different batch, with no candidate identity, outcome, rationale, evidence, or target-batch linkage."
+    ],
+    "exposure_used_for_adjudication": false,
+    "certification": "No original reviewer, reconciliation, adjudication, integration, evidence-gap, or STOP receipt was opened or used. Candidate-level findings below were formed from the frozen manifest, frozen rows, canonical records, and exact pinned source evidence only."
+  },
+  "target_partition": [
+    {"candidate_id":"candidate:bc8be5eae707da963ec77a55","observation_event_record_ids":["event_2018-mymta"]},
+    {"candidate_id":"candidate:bf0714556619197d7cdbbae8","observation_event_record_ids":["event_gcm-revenue-service-jan2023_2"]},
+    {"candidate_id":"candidate:c0c317b686c58caa81370441","observation_event_record_ids":["event_meeting-doc-98251-may2023-ptc-update"]},
+    {"candidate_id":"candidate:c51012a7a4d19d955162bad3","observation_event_record_ids":["event_meeting-doc-91581-bronx-bus-redesign-launch"]},
+    {"candidate_id":"candidate:ca7fca611c353de76f3efcbc","observation_event_record_ids":["event_166956-labor-day-getaway-2025"]},
+    {"candidate_id":"candidate:cb2b328bd8631c222e484cb3","observation_event_record_ids":["event_gcm-revenue-service-jan2023_3"]},
+    {"candidate_id":"candidate:cdbe2fdd616b72695ed8df83","observation_event_record_ids":["event_cbdtp-tolling-commencement-2024"]},
+    {"candidate_id":"candidate:ce934d307aab30d4c646a797","observation_event_record_ids":["event_fare-promotions-launch-2025"]},
+    {"candidate_id":"candidate:d65455e1707aa683e0ad18d7","observation_event_record_ids":["event_gcm-revenue-service-jan2023"]},
+    {"candidate_id":"candidate:d8684f0b28d726bc7fdd232f","observation_event_record_ids":["event_queens-bus-redesign-phase2-launch-aug31-2025"]},
+    {"candidate_id":"candidate:d9f5a743ac87d8b9deabf107","observation_event_record_ids":["event_163121-r211t-debut"]},
+    {"candidate_id":"candidate:dc2b9da011755ce24564314b","observation_event_record_ids":["event_bronx-redesign-implementation-summer2022"]}
+  ],
+  "findings": [
+    {
+      "candidate_id": "candidate:bc8be5eae707da963ec77a55",
+      "candidate_key": "event:event_2018-mymta",
+      "recommended_disposition": "outside_domain",
+      "assessment": "The MYmta application launch is a real digital-product milestone, not a bus route × treatment operational occurrence.",
+      "evidence_bindings": [{"record_id":"event_2018-mymta","source_id":"meeting_doc_202106","evidence_id":"meeting_doc_202106#p003_c0004"}],
+      "known_facts": ["The source timeline identifies MYmta in 2018."],
+      "prohibited_inferences": ["Do not treat a mobile application as a transit route or bus-priority treatment."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:bf0714556619197d7cdbbae8",
+      "candidate_key": "event:event_gcm-revenue-service-jan2023_2",
+      "recommended_disposition": "outside_domain",
+      "assessment": "Grand Central Madison LIRR revenue-service commencement is a real rail-terminal event, but not a bus route-treatment occurrence.",
+      "evidence_bindings": [
+        {"record_id":"event_gcm-revenue-service-jan2023_2","source_id":"meeting_doc_104701","evidence_id":"meeting_doc_104701#p016_c0006"},
+        {"record_id":"event_gcm-revenue-service-jan2023_2","source_id":"meeting_doc_104701","evidence_id":"meeting_doc_104701#p037_c0003"}
+      ],
+      "known_facts": ["LIRR direct shuttle revenue service from Jamaica to Grand Central Madison commenced January 25, 2023."],
+      "prohibited_inferences": ["Do not model LIRR service or a rail terminal as bus-priority route-treatment incidence."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:c0c317b686c58caa81370441",
+      "candidate_key": "event:event_meeting-doc-98251-may2023-ptc-update",
+      "recommended_disposition": "outside_domain",
+      "assessment": "The May 2023 LIRR/Metro-North Positive Train Control close-out briefing is a rail-program administrative event, not a bus route-treatment occurrence.",
+      "evidence_bindings": [{"record_id":"event_meeting-doc-98251-may2023-ptc-update","source_id":"meeting_doc_98251","evidence_id":"meeting_doc_98251#p005_c0011"}],
+      "known_facts": ["The committee briefing concerned implementation status and close-out after full PTC functionality for two railroads."],
+      "prohibited_inferences": ["Do not treat rail safety-system implementation as bus-priority treatment incidence."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:c51012a7a4d19d955162bad3",
+      "candidate_key": "event:event_meeting-doc-91581-bronx-bus-redesign-launch",
+      "recommended_disposition": "outside_domain",
+      "assessment": "The official launch of the Bronx Local Bus Network Redesign is an aggregate network-program milestone. This candidate does not establish one exact route × treatment application.",
+      "evidence_bindings": [{"record_id":"event_meeting-doc-91581-bronx-bus-redesign-launch","source_id":"meeting_doc_91581","evidence_id":"meeting_doc_91581#p020_c0003"}],
+      "known_facts": ["The Bronx Local Bus Network Redesign officially launched June 26, 2022."],
+      "prohibited_inferences": ["Do not cross-product all redesigned routes and changes.", "Do not replace route-level service-change occurrences with one aggregate network launch."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:ca7fca611c353de76f3efcbc",
+      "candidate_key": "event:event_166956-labor-day-getaway-2025",
+      "recommended_disposition": "outside_domain",
+      "assessment": "Metro-North Labor Day getaway and Sunday rail service is a real temporary rail-schedule event, not a bus route × bus-priority-treatment occurrence.",
+      "evidence_bindings": [{"record_id":"event_166956-labor-day-getaway-2025","source_id":"meeting_doc_166956","evidence_id":"meeting_doc_166956#p003_c0003"}],
+      "known_facts": ["Metro-North planned additional Hudson, Harlem, and New Haven trains on August 29, 2025 and Sunday service on September 1."],
+      "prohibited_inferences": ["Do not model rail lines as bus routes or temporary rail service as bus-priority treatment."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:cb2b328bd8631c222e484cb3",
+      "candidate_key": "event:event_gcm-revenue-service-jan2023_3",
+      "recommended_disposition": "outside_domain",
+      "assessment": "Grand Central Madison/East Side Access revenue-service start is a real LIRR event but outside the bus route-treatment operational product.",
+      "evidence_bindings": [
+        {"record_id":"event_gcm-revenue-service-jan2023_3","source_id":"meeting_doc_115231","evidence_id":"meeting_doc_115231#p011_c0009"},
+        {"record_id":"event_gcm-revenue-service-jan2023_3","source_id":"meeting_doc_115231","evidence_id":"meeting_doc_115231#p011_c0010"}
+      ],
+      "known_facts": ["Grand Central Madison started revenue service January 25, 2023."],
+      "prohibited_inferences": ["Do not represent a rail megaproject opening as bus-priority route-treatment incidence."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:cdbe2fdd616b72695ed8df83",
+      "candidate_key": "event:event_cbdtp-tolling-commencement-2024",
+      "recommended_disposition": "outside_domain",
+      "assessment": "The projected commencement of the Central Business District Tolling Program is a real congestion-pricing program milestone, not a route-specific bus-priority treatment occurrence.",
+      "evidence_bindings": [
+        {"record_id":"event_cbdtp-tolling-commencement-2024","source_id":"meeting_doc_127706","evidence_id":"meeting_doc_127706#p017_c0003"},
+        {"record_id":"event_cbdtp-tolling-commencement-2024","source_id":"meeting_doc_127706","evidence_id":"meeting_doc_127706#p170_c0008"}
+      ],
+      "known_facts": ["The source projected CBDTP operations to commence in mid-2024."],
+      "prohibited_inferences": ["Do not infer bus route incidence from network-level tolling effects.", "Do not convert a projection into implementation proof."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:ce934d307aab30d4c646a797",
+      "candidate_key": "event:event_fare-promotions-launch-2025",
+      "recommended_disposition": "outside_domain",
+      "assessment": "Temporary fare promotions during the Rockaway A-train outage are a subway fare-policy event, not a bus route-treatment operational occurrence.",
+      "evidence_bindings": [{"record_id":"event_fare-promotions-launch-2025","source_id":"meeting_doc_160271","evidence_id":"meeting_doc_160271#p001_c0003"}],
+      "known_facts": ["The Board item concerns temporary fare promotions beginning January 17, 2025 during a Rockaway Line outage."],
+      "prohibited_inferences": ["Do not treat a subway fare promotion as a bus-priority treatment."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:d65455e1707aa683e0ad18d7",
+      "candidate_key": "event:event_gcm-revenue-service-jan2023",
+      "recommended_disposition": "outside_domain",
+      "assessment": "The Grand Central Madison terminal revenue-service milestone is a rail asset/service event outside the bus route-treatment product.",
+      "evidence_bindings": [{"record_id":"event_gcm-revenue-service-jan2023","source_id":"meeting_doc_131666","evidence_id":"meeting_doc_131666#p006_c0009"}],
+      "known_facts": ["Grand Central Madison terminal assets entered revenue service in January 2023."],
+      "prohibited_inferences": ["Do not represent LIRR terminal revenue service as bus-priority incidence."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:d8684f0b28d726bc7fdd232f",
+      "candidate_key": "event:event_queens-bus-redesign-phase2-launch-aug31-2025",
+      "recommended_disposition": "outside_domain",
+      "assessment": "The Queens Bus Network Redesign Phase 2 program launch aggregates one new, 37 modified, and one discontinued route. It is not one exact route × treatment occurrence and cannot be cross-producted.",
+      "evidence_bindings": [{"record_id":"event_queens-bus-redesign-phase2-launch-aug31-2025","source_id":"meeting_doc_174141","evidence_id":"meeting_doc_174141#p011_c0009"}],
+      "known_facts": ["Phase 2 was aligned to the August 31, 2025 seasonal schedule change and covered many distinct route outcomes."],
+      "prohibited_inferences": ["Do not cross-product the 39 route outcomes with redesign treatments.", "Use route-level exact service-change events for product occurrences."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:d9f5a743ac87d8b9deabf107",
+      "candidate_key": "event:event_163121-r211t-debut",
+      "recommended_disposition": "outside_domain",
+      "assessment": "The R211T open-gangway debut on the C subway line is a rail rolling-stock/service event, not a bus route-treatment occurrence.",
+      "evidence_bindings": [{"record_id":"event_163121-r211t-debut","source_id":"meeting_doc_163121","evidence_id":"meeting_doc_163121#p032_c0008"}],
+      "known_facts": ["R211T open-gangway trains debuted on the C line in February 2024."],
+      "prohibited_inferences": ["Do not model a subway line or railcar type as a bus route or bus-priority treatment."],
+      "applications": []
+    },
+    {
+      "candidate_id": "candidate:dc2b9da011755ce24564314b",
+      "candidate_key": "event:event_bronx-redesign-implementation-summer2022",
+      "recommended_disposition": "outside_domain",
+      "assessment": "The proposed implementation of most Bronx redesign routing and schedule changes is an aggregate network-plan milestone, not an exact route-treatment occurrence.",
+      "evidence_bindings": [{"record_id":"event_bronx-redesign-implementation-summer2022","source_id":"meeting_doc_68306","evidence_id":"meeting_doc_68306#p034_c0014"}],
+      "known_facts": ["The source proposed implementing most routing and schedule changes in Summer 2022."],
+      "prohibited_inferences": ["Do not cross-product routes and schedule changes.", "Do not convert the proposal into a route-specific implemented occurrence."],
+      "applications": []
+    }
+  ],
+  "arithmetic": {
+    "required_terminal_candidate_count": 12,
+    "accounted_candidate_count": 12,
+    "required_observation_count": 12,
+    "accounted_observation_count": 12,
+    "published_count": 0,
+    "duplicate_alias_count": 0,
+    "insufficient_evidence_count": 0,
+    "outside_domain_count": 12,
+    "rejected_count": 0,
+    "application_count": 0,
+    "final_pending_count": 0,
+    "arithmetic_ok": true
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "provider": "none",
+    "profile": null,
+    "model": null,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  }
+}

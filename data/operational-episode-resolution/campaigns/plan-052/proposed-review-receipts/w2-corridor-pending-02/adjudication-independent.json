@@ -1,0 +1,992 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w2-corridor-pending-02",
+  "review_role": "independent_adjudication",
+  "reviewer": "plan-052-corridor02-blind-adjudicator",
+  "created_at": "2026-07-31T00:34:48.000Z",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-corridor-pending-02.json",
+  "manifest_sha256": "09dd2aee03d7a4e5fc1ec43406b7a2b6dd2a90feedd29b3fc199bd9c33fbe00b",
+  "review_complete": true,
+  "frozen_inputs": {
+    "batch_manifest": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-corridor-pending-02.json",
+      "sha256": "09dd2aee03d7a4e5fc1ec43406b7a2b6dd2a90feedd29b3fc199bd9c33fbe00b"
+    },
+    "paired_alias_target_manifest": {
+      "path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-corridor-pending-01.json",
+      "sha256": "95711643dc8d356f7e31bd6bd2f8757e36b1b58874509b4f3a533a76ab255268"
+    },
+    "cohort_hashes": {
+      "adapter_input_sha256": "c95bcab6272c6a5e01c0d1a89f81bf1a301cf7dce95137dc14f480b8fe30be74",
+      "candidate_input_sha256": "6f0bfa0e34a0405ecf2f67e7805d7cb74dcdca4ebbe14cbe2a7551d23dbac563",
+      "candidate_membership_sha256": "a606440c8f39c9e6055c1365afda139f820c3d6f36712ab1b75a2536e56c8d7d",
+      "evidence_input_sha256": "b7d2bf4268812e94fd899ea45540be4138f25a839fb6fe4365565030d208a798",
+      "observation_membership_sha256": "ff8e25dcc2c638e37e56cdcf5798ff3a7808807547ca389aa5549eb2e3bfab00"
+    },
+    "immutable_starting_provenance": {
+      "adapter_fingerprint": "de51c8db4353cc8774d4c55bea3fcba8103ecdee3a38898b85b61733eccf07b9",
+      "cohort_fingerprint": "94dfd16c1c57362b220fb8ce53b8325e6ca166c1e697d9001da8b66f6483e373",
+      "commit_sha": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+      "corpus_fingerprint": "318cee05f0c7288fd28084df44b6b036f0607ffdfb76b3d6c6fcd14118f479c5",
+      "decision_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "frontier_artifacts": [
+        {
+          "bytes": 860230,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/candidate_ledger.jsonl",
+          "sha256": "7b2ea8b80920e534c8958fc0665182dad6d0a84bf31e6881c58413107b3254b2"
+        },
+        {
+          "bytes": 720438,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/cohort.json",
+          "sha256": "59e4c2fbdb389255442c00ac06204b6798fed64742d80489441cd5524a912a61"
+        },
+        {
+          "bytes": 1374322,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/observation_ledger.jsonl",
+          "sha256": "c1916f6a03d2add7e6ab642a80898d413ab0682223a9baf82fe8ffab9856ba5f"
+        },
+        {
+          "bytes": 21408,
+          "path": "data/operational-episode-resolution/campaigns/plan-052/frozen-frontier/summary.json",
+          "sha256": "4baf594cea14431b2f2c125c19c554755ecf167be6b81f399152873a5cd35545"
+        }
+      ],
+      "identity_fingerprint": "6827adf67650c81fa38d30b1dfbaf6be5282a45491b058b3ed44167aa287d26e",
+      "review_fingerprint": "3989ac8637527e5862f18b7a6c4f7f2699078eb992a2675b16a23af525fd1d24"
+    },
+    "evidence_source_pin_count": 46,
+    "evidence_source_pins_verified": true,
+    "evidence_source_pin_failures": [],
+    "frozen_frontier_verified": true
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "findings": [
+    {
+      "candidate_id": "candidate:a8027b08bacfc082018a14b3",
+      "candidate_key": "event:event_implementation-summer",
+      "observation_event_record_ids": [
+        "event_implementation-summer"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-has-event-implementation-summer"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "fresh_pond_rd_jun2019#p026_c0002",
+          "record_id": "event_implementation-summer",
+          "source_id": "fresh_pond_rd_jun2019"
+        }
+      ],
+      "source_ids": [
+        "fresh_pond_rd_jun2019"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:734e4bab952d8223cc75b70a",
+      "canonical_candidate_id": "candidate:734e4bab952d8223cc75b70a",
+      "assessment": "The generic Summer implementation event is co-referential with the more source-specific Fresh Pond Road Summer 2019 implementation candidate.",
+      "known_facts": [
+        "Both candidates describe the same Fresh Pond Road implementation scheduled for Summer 2019."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not publish a second occurrence from this less specific alias."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:abb34f7aea376a89596b4a9f",
+      "candidate_key": "event:event_implement-chauncey-to-fulton-spring2020",
+      "observation_event_record_ids": [
+        "event_implement-chauncey-to-fulton-spring2020"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-event-propose-chauncey-fulton"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "malcolm_x_blvd_utica_ave_feb2020#p017_c0002",
+          "record_id": "event_implement-chauncey-to-fulton-spring2020",
+          "source_id": "malcolm_x_blvd_utica_ave_feb2020"
+        }
+      ],
+      "source_ids": [
+        "malcolm_x_blvd_utica_ave_feb2020"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:c60d90f19e7c4bff3622fa8e",
+      "canonical_candidate_id": "candidate:c60d90f19e7c4bff3622fa8e",
+      "assessment": "The Chauncey-to-Fulton Spring 2020 event is an exact co-reference to the selected Chauncey-Fulton Spring 2020 representative.",
+      "known_facts": [
+        "Both candidates identify the same planned Chauncey Street-to-Fulton Street phase in Spring 2020."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not publish a second occurrence from this alias."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:ad05aa97f7486fd5d8c75800",
+      "candidate_key": "event:event_cbd-tolling-program-launch-jan2025",
+      "observation_event_record_ids": [
+        "event_cbd-tolling-program-launch-jan2025"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-timeline-cbd-tolling-2025"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "34th_st_enhanced_bus_priority_cb5_jan2025#p004_c0002",
+          "record_id": "event_cbd-tolling-program-launch-jan2025",
+          "source_id": "34th_st_enhanced_bus_priority_cb5_jan2025"
+        }
+      ],
+      "source_ids": [
+        "34th_st_enhanced_bus_priority_cb5_jan2025"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:7cf09c572781781a3d8f9427",
+      "canonical_candidate_id": "candidate:7cf09c572781781a3d8f9427",
+      "assessment": "The January 2025 CBD tolling launch is an exact co-reference to the selected CBD tolling program representative.",
+      "known_facts": [
+        "Both candidates describe the same congestion-pricing program launch in January 2025."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not create a second event from this alias.",
+        "Do not reinterpret CBD tolling as a route-treatment bus-priority occurrence."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:af4624b537a2ba918378badf",
+      "candidate_key": "event:event_m34-sbs-launch-nov2011",
+      "observation_event_record_ids": [
+        "event_m34-sbs-launch-nov2011"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-event-m34-sbs-launch-2011"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "34th_st_enhanced_bus_priority_cb4_jan2025#p008_c0002",
+          "record_id": "event_m34-sbs-launch-nov2011",
+          "source_id": "34th_st_enhanced_bus_priority_cb4_jan2025"
+        }
+      ],
+      "source_ids": [
+        "34th_st_enhanced_bus_priority_cb4_jan2025"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:d3c647e315bf04d66d4ffefb",
+      "canonical_candidate_id": "candidate:d3c647e315bf04d66d4ffefb",
+      "assessment": "This November 2011 M34 SBS launch record is an exact co-reference to the selected M34/M34A SBS launch representative.",
+      "known_facts": [
+        "Both candidates identify the same 2011 M34/M34A Select Bus Service launch."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not publish a second launch occurrence from this alias."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:af8fa091f701b29be42612c2",
+      "candidate_key": "event:event_34th-st-curbside-lanes-introduced-2008",
+      "observation_event_record_ids": [
+        "event_34th-st-curbside-lanes-introduced-2008"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-event-curbside-lanes-2008"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "34th_st_enhanced_bus_priority_cb4_jan2025#p008_c0002",
+          "record_id": "event_34th-st-curbside-lanes-introduced-2008",
+          "source_id": "34th_st_enhanced_bus_priority_cb4_jan2025"
+        }
+      ],
+      "source_ids": [
+        "34th_st_enhanced_bus_priority_cb4_jan2025"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:4094c4e2a2b295c159afa65b",
+      "canonical_candidate_id": "candidate:4094c4e2a2b295c159afa65b",
+      "assessment": "This 2008 34th Street curbside bus-lane event is an exact co-reference to the selected curbside-lane representative.",
+      "known_facts": [
+        "Both candidates identify introduction of curbside bus lanes on 34th Street in 2008."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not publish a second occurrence from this alias."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:b5263d3312ba2bc5a8a7b76b",
+      "candidate_key": "event:event_cbd-tolling-jan2025-feb2025",
+      "observation_event_record_ids": [
+        "event_cbd-tolling-jan2025-feb2025"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-event-cbd-tolling-feb2025"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "34th_st_enhanced_bus_priority_cb6_feb2025#p004_c0002",
+          "record_id": "event_cbd-tolling-jan2025-feb2025",
+          "source_id": "34th_st_enhanced_bus_priority_cb6_feb2025"
+        }
+      ],
+      "source_ids": [
+        "34th_st_enhanced_bus_priority_cb6_feb2025"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:7cf09c572781781a3d8f9427",
+      "canonical_candidate_id": "candidate:7cf09c572781781a3d8f9427",
+      "assessment": "The January-February 2025 CBD tolling event is co-referential with the selected CBD tolling program launch representative.",
+      "known_facts": [
+        "The candidate describes the same CBD tolling program that launched in January 2025."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not create a second event from this alias.",
+        "Do not reinterpret tolling as a bus route-treatment occurrence."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:bd61e5d90d112a4e8ffc59d5",
+      "candidate_key": "event:event_potential-implementation-summer-fall-2025",
+      "observation_event_record_ids": [
+        "event_potential-implementation-summer-fall-2025"
+      ],
+      "observation_relation_record_ids": [
+        "relation_rel-project-has-event-implementation-2025"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "116_st_morningside_ave_pleasant_ave_cb10_feb2025#p025_c0003",
+          "record_id": "event_potential-implementation-summer-fall-2025",
+          "source_id": "116_st_morningside_ave_pleasant_ave_cb10_feb2025"
+        }
+      ],
+      "source_ids": [
+        "116_st_morningside_ave_pleasant_ave_cb10_feb2025"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:4f620ca153ff7aed15d475be",
+      "canonical_candidate_id": "candidate:4f620ca153ff7aed15d475be",
+      "assessment": "The potential Summer-Fall 2025 implementation wording is co-referential with the selected tentative Summer 2025 116th Street implementation representative.",
+      "known_facts": [
+        "Both candidates describe tentative future implementation timing for the same 116th Street project."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not publish a separate occurrence from this prospective schedule variant."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:bfbdd7c7a4367ca16b504a89",
+      "candidate_key": "event:event_implement-fulton-atlantic-jul-dec2019",
+      "observation_event_record_ids": [
+        "event_implement-fulton-atlantic-jul-dec2019"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-has-timeline-fulton-atlantic-impl"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "malcolm_x_blvd_utica_ave_mar2020#p016_c0002",
+          "record_id": "event_implement-fulton-atlantic-jul-dec2019",
+          "source_id": "malcolm_x_blvd_utica_ave_mar2020"
+        }
+      ],
+      "source_ids": [
+        "malcolm_x_blvd_utica_ave_mar2020"
+      ],
+      "recommended_disposition": "published",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "The retrospective project timeline states implementation of the Fulton Street-to-Atlantic Avenue phase during July-December 2019, while the same source identifies the B46 SBS route and the one-block southbound bus-lane treatment, proving one exact application.",
+      "known_facts": [
+        "The Fulton Street-to-Atlantic Avenue phase was implemented during July-December 2019.",
+        "The phase was a one-block southbound bus lane on the B46 SBS corridor."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not attach the later Chauncey Street-to-Fulton Street proposal to this occurrence.",
+        "Do not infer a day within December 2019.",
+        "Do not add other routes."
+      ],
+      "applications": [
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_utica-ave-sbs",
+          "treatment_record_id": "treatment_fulton-atlantic-bus-lane-mar2020",
+          "phase_record_id": "event_implement-fulton-atlantic-jul-dec2019",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "malcolm_x_blvd_utica_ave_mar2020#p004_c0002",
+            "malcolm_x_blvd_utica_ave_mar2020#p009_c0002",
+            "malcolm_x_blvd_utica_ave_mar2020#p016_c0002"
+          ]
+        }
+      ],
+      "blocked_applications": [],
+      "onset": {
+        "date": "2019-12",
+        "precision": "month",
+        "source_date_text": "July-Dec. 2019",
+        "evidence_ids": [
+          "malcolm_x_blvd_utica_ave_mar2020#p016_c0002"
+        ],
+        "authorizes_publication": true
+      },
+      "scope": {
+        "kind": "explicit_route_treatment_incidence",
+        "route_count": 1,
+        "treatment_count": 1,
+        "application_count": 1,
+        "cross_product_inferred": false,
+        "exhaustive": true
+      },
+      "status": "ready_for_integration",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:c2748e69337d369890623c53",
+      "candidate_key": "event:event_curb-regulations-refine-2026",
+      "observation_event_record_ids": [
+        "event_curb-regulations-refine-2026"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-has-timeline-curb-regulations"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "lexington_ave_60_st_52_st_cb8_oct2025#p012_c0003",
+          "record_id": "event_curb-regulations-refine-2026",
+          "source_id": "lexington_ave_60_st_52_st_cb8_oct2025"
+        }
+      ],
+      "source_ids": [
+        "lexington_ave_60_st_52_st_cb8_oct2025"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:6caa951a269f8efacb1afdac",
+      "canonical_candidate_id": "candidate:6caa951a269f8efacb1afdac",
+      "assessment": "The 2026 curb-regulation refinement event is an exact co-reference to the selected refinement representative for the same Flatbush Avenue project.",
+      "known_facts": [
+        "Both candidates describe refinement of curb regulations in 2026 for the same project."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not publish a second occurrence from this alias."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:c40d519ef3425be71f964ec3",
+      "candidate_key": "event:event_flatbush-av-phase1-installed-fall2025",
+      "observation_event_record_ids": [
+        "event_flatbush-av-phase1-installed-fall2025"
+      ],
+      "observation_relation_record_ids": [
+        "relation_flatbush-phase1-has-completion-event-fall2025",
+        "relation_project-has-event-phase1-installed"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026#p004_c0002",
+          "record_id": "event_flatbush-av-phase1-installed-fall2025",
+          "source_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026"
+        }
+      ],
+      "source_ids": [
+        "flatbush_ave_bus_priority_mtp_briefing_apr2026"
+      ],
+      "recommended_disposition": "published",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "The April 2026 retrospective source states that center-running bus lanes between Livingston Street and State Street were installed in Fall 2025 and explicitly identifies B41 and B67 as the buses traveling straight in those lanes, proving two applications to one atomic treatment.",
+      "known_facts": [
+        "DOT installed center-running bus lanes between Livingston Street and State Street in Fall 2025.",
+        "B41 and B67 buses travel straight in the Flatbush Avenue bus lanes."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not include the later State Street-to-Grand Army Plaza phase.",
+        "Do not add other Flatbush Avenue routes.",
+        "Do not infer a month within Fall 2025."
+      ],
+      "applications": [
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_b41-ace",
+          "treatment_record_id": "treatment_flatbush-phase1-center-running-bus-lanes-livingston-state",
+          "phase_record_id": "event_flatbush-av-phase1-installed-fall2025",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "flatbush_ave_bus_priority_mtp_briefing_apr2026#p004_c0002",
+            "flatbush_ave_bus_priority_mtp_briefing_apr2026#p012_c0003"
+          ]
+        },
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_b67-flatbush-ave-apr2026",
+          "treatment_record_id": "treatment_flatbush-phase1-center-running-bus-lanes-livingston-state",
+          "phase_record_id": "event_flatbush-av-phase1-installed-fall2025",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "flatbush_ave_bus_priority_mtp_briefing_apr2026#p004_c0002",
+            "flatbush_ave_bus_priority_mtp_briefing_apr2026#p012_c0003"
+          ]
+        }
+      ],
+      "blocked_applications": [],
+      "onset": {
+        "date": "2025-fall",
+        "precision": "season",
+        "source_date_text": "Last fall",
+        "evidence_ids": [
+          "flatbush_ave_bus_priority_mtp_briefing_apr2026#p004_c0002"
+        ],
+        "authorizes_publication": true
+      },
+      "scope": {
+        "kind": "explicit_route_treatment_incidence",
+        "route_count": 2,
+        "treatment_count": 1,
+        "application_count": 2,
+        "cross_product_inferred": false,
+        "exhaustive": true
+      },
+      "status": "ready_for_integration",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:c60d90f19e7c4bff3622fa8e",
+      "candidate_key": "event:event_implement-chauncey-fulton-spring2020",
+      "observation_event_record_ids": [
+        "event_implement-chauncey-fulton-spring2020"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-has-timeline-chauncey-fulton-spring2020"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "malcolm_x_blvd_utica_ave_mar2020#p016_c0002",
+          "record_id": "event_implement-chauncey-fulton-spring2020",
+          "source_id": "malcolm_x_blvd_utica_ave_mar2020"
+        }
+      ],
+      "source_ids": [
+        "malcolm_x_blvd_utica_ave_mar2020"
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "This is the selected representative for the Chauncey Street-to-Fulton Street Spring 2020 phase, but the March 2020 source presents it as a future implementation item and does not prove delivery.",
+      "known_facts": [
+        "The March 2020 project timeline scheduled implementation from Chauncey Street to Fulton Street for Spring 2020."
+      ],
+      "evidence_gaps": [
+        "No retrospective delivered-state evidence establishes that this phase was implemented or its exact route-treatment incidence."
+      ],
+      "prohibited_inferences": [
+        "Do not convert a planned Spring 2020 milestone into delivered onset.",
+        "Do not borrow the delivered Fulton-to-Atlantic treatment for this separate phase."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:d3c647e315bf04d66d4ffefb",
+      "candidate_key": "event:event_m34-m34a-sbs-launch-2011",
+      "observation_event_record_ids": [
+        "event_m34-m34a-sbs-launch-2011"
+      ],
+      "observation_relation_record_ids": [
+        "relation_rel-project-has-timeline-m34-sbs-launch-2011"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "34th_st_enhanced_bus_priority_cb4_may2025#p007_c0002",
+          "record_id": "event_m34-m34a-sbs-launch-2011",
+          "source_id": "34th_st_enhanced_bus_priority_cb4_may2025"
+        }
+      ],
+      "source_ids": [
+        "34th_st_enhanced_bus_priority_cb4_may2025"
+      ],
+      "recommended_disposition": "insufficient_evidence",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "This is the selected representative for the 2011 M34/M34A SBS launch, but the sources do not resolve the bundled route identities into an exhaustive set of atomic route-treatment applications.",
+      "known_facts": [
+        "M34/M34A Select Bus Service launched in 2011."
+      ],
+      "evidence_gaps": [
+        "The route bundle remains split in canonical identity and no exhaustive atomic treatment incidence is established for this event."
+      ],
+      "prohibited_inferences": [
+        "Do not create one application per M34/M34A label from the bundled launch statement.",
+        "Do not synthesize an SBS treatment bundle from general program knowledge."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:df486c89a8c124d164f1abad",
+      "candidate_key": "event:event_m79-sbs-launch-2017",
+      "observation_event_record_ids": [
+        "event_m79-sbs-launch-2017"
+      ],
+      "observation_relation_record_ids": [
+        "relation_2017-project-launch-event"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0001",
+          "record_id": "event_m79-sbs-launch-2017",
+          "source_id": "79_st_riverside_dr_fdr_dr_cb8_apr2025"
+        },
+        {
+          "evidence_id": "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0002",
+          "record_id": "event_m79-sbs-launch-2017",
+          "source_id": "79_st_riverside_dr_fdr_dr_cb8_apr2025"
+        }
+      ],
+      "source_ids": [
+        "79_st_riverside_dr_fdr_dr_cb8_apr2025"
+      ],
+      "recommended_disposition": "published",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "The 2017 Street Improvement Project source explicitly states that M79 Select Bus Service launched and exhaustively lists six included treatments, proving six applications for the one route without a plural-route cross product.",
+      "known_facts": [
+        "M79 Select Bus Service launched in 2017 replacing the M79 Local.",
+        "The source lists queue-jump lanes, one full-block bus lane, signal timing improvements, off-board fare payment, real-time passenger information, and bus-stop amenities and street furniture."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not add treatments not listed in the 2017 project block.",
+        "Do not apply these treatments to routes merely shown on the corridor map.",
+        "Do not infer a month or day within 2017."
+      ],
+      "applications": [
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_m79-sbs",
+          "treatment_record_id": "treatment_bus-queue-jump-lanes-2017",
+          "phase_record_id": "event_m79-sbs-launch-2017",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0001",
+            "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0002"
+          ]
+        },
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_m79-sbs",
+          "treatment_record_id": "treatment_bus-lane-full-block-2017",
+          "phase_record_id": "event_m79-sbs-launch-2017",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0001",
+            "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0002"
+          ]
+        },
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_m79-sbs",
+          "treatment_record_id": "treatment_signal-timing-2017",
+          "phase_record_id": "event_m79-sbs-launch-2017",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0001",
+            "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0002"
+          ]
+        },
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_m79-sbs",
+          "treatment_record_id": "treatment_off-board-fare-payment-2017_2",
+          "phase_record_id": "event_m79-sbs-launch-2017",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0001",
+            "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0002"
+          ]
+        },
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_m79-sbs",
+          "treatment_record_id": "treatment_rpi-2017",
+          "phase_record_id": "event_m79-sbs-launch-2017",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0001",
+            "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0002"
+          ]
+        },
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_m79-sbs",
+          "treatment_record_id": "treatment_bus-stop-amenities-2017",
+          "phase_record_id": "event_m79-sbs-launch-2017",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0001",
+            "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0002"
+          ]
+        }
+      ],
+      "blocked_applications": [],
+      "onset": {
+        "date": "2017",
+        "precision": "year",
+        "source_date_text": "2017 Street Improvement Project",
+        "evidence_ids": [
+          "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0001",
+          "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0002"
+        ],
+        "authorizes_publication": true
+      },
+      "scope": {
+        "kind": "explicit_route_treatment_incidence",
+        "route_count": 1,
+        "treatment_count": 6,
+        "application_count": 6,
+        "cross_product_inferred": false,
+        "exhaustive": true
+      },
+      "status": "ready_for_integration",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:ed8d52ac76d7f5fe9b485500",
+      "candidate_key": "event:event_queue-jump-implementation-fall2024",
+      "observation_event_record_ids": [
+        "event_queue-jump-implementation-fall2024"
+      ],
+      "observation_relation_record_ids": [
+        "relation_bx36-has-fall2024-queue-jump-installation",
+        "relation_queue-jump-signal-has-fall2024-installation",
+        "relation_tremont-queue-jump-has-fall2024-installation"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "tremont_ave_bus_priority_cb5_nov2024#p013_c0002",
+          "record_id": "event_queue-jump-implementation-fall2024",
+          "source_id": "tremont_ave_bus_priority_cb5_nov2024"
+        }
+      ],
+      "source_ids": [
+        "tremont_ave_bus_priority_cb5_nov2024"
+      ],
+      "recommended_disposition": "published",
+      "target": null,
+      "canonical_candidate_id": null,
+      "assessment": "The source states Fall 2024 installation of the queue-jump signal at Tremont Avenue and Grand Concourse and identifies the corridor route as Bx36, proving one exact application.",
+      "known_facts": [
+        "A bus queue-jump signal was installed at Tremont Avenue and Grand Concourse in Fall 2024.",
+        "The project corridor route is Bx36."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not include additional studied queue-jump locations.",
+        "Do not infer a month or day within Fall 2024.",
+        "Do not add other routes."
+      ],
+      "applications": [
+        {
+          "action": "unknown",
+          "gtfs_route_id": null,
+          "route_record_id": "route_bx36",
+          "treatment_record_id": "treatment_queue-jump-grand-concourse",
+          "phase_record_id": "event_queue-jump-implementation-fall2024",
+          "physical_scope_record_ids": [],
+          "evidence_ids": [
+            "tremont_ave_bus_priority_cb5_nov2024#p004_c0002",
+            "tremont_ave_bus_priority_cb5_nov2024#p013_c0002",
+            "tremont_ave_bus_priority_cb5_nov2024#p014_c0002"
+          ]
+        }
+      ],
+      "blocked_applications": [],
+      "onset": {
+        "date": "2024-fall",
+        "precision": "season",
+        "source_date_text": "Fall 2024",
+        "evidence_ids": [
+          "tremont_ave_bus_priority_cb5_nov2024#p013_c0002",
+          "tremont_ave_bus_priority_cb5_nov2024#p014_c0002"
+        ],
+        "authorizes_publication": true
+      },
+      "scope": {
+        "kind": "explicit_route_treatment_incidence",
+        "route_count": 1,
+        "treatment_count": 1,
+        "application_count": 1,
+        "cross_product_inferred": false,
+        "exhaustive": true
+      },
+      "status": "ready_for_integration",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:f19d3dd64351ac92e6f010f9",
+      "candidate_key": "event:event_implement-fulton-to-atlantic-jul-dec2019",
+      "observation_event_record_ids": [
+        "event_implement-fulton-to-atlantic-jul-dec2019"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-event-implement-fulton-atlantic"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "malcolm_x_blvd_utica_ave_feb2020#p017_c0002",
+          "record_id": "event_implement-fulton-to-atlantic-jul-dec2019",
+          "source_id": "malcolm_x_blvd_utica_ave_feb2020"
+        }
+      ],
+      "source_ids": [
+        "malcolm_x_blvd_utica_ave_feb2020"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:bfbdd7c7a4367ca16b504a89",
+      "canonical_candidate_id": "candidate:bfbdd7c7a4367ca16b504a89",
+      "assessment": "This July-December 2019 Fulton-to-Atlantic event is an exact co-reference to the selected retrospective implementation representative.",
+      "known_facts": [
+        "Both candidates identify the same Fulton Street-to-Atlantic Avenue implementation phase in 2019."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not publish a second occurrence from this alias."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:fb6c14b9d826d380df7357cc",
+      "candidate_key": "event:event_begin-implementation-summer2025",
+      "observation_event_record_ids": [
+        "event_begin-implementation-summer2025"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-has-timeline-implementation-summer2025"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "116_st_morningside_ave_pleasant_ave_cb11_may2025#p025_c0002",
+          "record_id": "event_begin-implementation-summer2025",
+          "source_id": "116_st_morningside_ave_pleasant_ave_cb11_may2025"
+        }
+      ],
+      "source_ids": [
+        "116_st_morningside_ave_pleasant_ave_cb11_may2025"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:4f620ca153ff7aed15d475be",
+      "canonical_candidate_id": "candidate:4f620ca153ff7aed15d475be",
+      "assessment": "The begin-implementation Summer 2025 event is co-referential with the selected tentative Summer 2025 116th Street implementation representative.",
+      "known_facts": [
+        "Both candidates describe tentative Summer 2025 implementation timing for the same 116th Street project."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not publish a separate delivered occurrence from this prospective schedule alias."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    },
+    {
+      "candidate_id": "candidate:fd0a03008817c2b296b48a9f",
+      "candidate_key": "event:event_implement-fulton-atlantic-summer2019",
+      "observation_event_record_ids": [
+        "event_implement-fulton-atlantic-summer2019"
+      ],
+      "observation_relation_record_ids": [
+        "relation_project-has-timeline-event-fulton-atlantic-impl"
+      ],
+      "evidence_bindings": [
+        {
+          "evidence_id": "malcolm_x_blvd_utica_ave_jun2019#p017_c0002",
+          "record_id": "event_implement-fulton-atlantic-summer2019",
+          "source_id": "malcolm_x_blvd_utica_ave_jun2019"
+        }
+      ],
+      "source_ids": [
+        "malcolm_x_blvd_utica_ave_jun2019"
+      ],
+      "recommended_disposition": "duplicate_alias",
+      "target": "candidate:bfbdd7c7a4367ca16b504a89",
+      "canonical_candidate_id": "candidate:bfbdd7c7a4367ca16b504a89",
+      "assessment": "The Summer 2019 Fulton-to-Atlantic event is co-referential with the selected retrospective July-December 2019 implementation representative.",
+      "known_facts": [
+        "Both candidates identify the same Fulton Street-to-Atlantic Avenue implementation phase in 2019."
+      ],
+      "evidence_gaps": [],
+      "prohibited_inferences": [
+        "Do not publish a second occurrence from this less precise alias."
+      ],
+      "applications": [],
+      "blocked_applications": [],
+      "onset": null,
+      "scope": {
+        "kind": "not_published",
+        "cross_product_inferred": false
+      },
+      "status": "terminal_nonpublication",
+      "blockers": []
+    }
+  ],
+  "arithmetic": {
+    "assigned_candidate_count": 17,
+    "finding_count": 17,
+    "published_count": 4,
+    "duplicate_alias_count": 11,
+    "insufficient_evidence_count": 2,
+    "outside_domain_count": 0,
+    "rejected_count": 0,
+    "serialized_application_count": 10,
+    "blocked_application_count": 0,
+    "accounted_candidate_count": 17,
+    "balanced": true
+  },
+  "schema_blockers": [],
+  "isolation": {
+    "clean_room_review": true,
+    "primary_receipts_read": false,
+    "independent_receipts_read": false,
+    "adjudication_receipts_read": false,
+    "reconciliation_receipts_read": false,
+    "integration_receipts_read": false,
+    "evidence_gap_receipts_read": false,
+    "stop_receipts_read": false,
+    "git_diff_or_other_agent_output_read": false,
+    "provider_called": false,
+    "named_manifests_and_frozen_rows_only": true,
+    "paired_manifest_read_for_alias_targets": true,
+    "canonical_records_and_manifest_pinned_sources_only": true,
+    "shared_writes": false,
+    "canonical_or_frontier_mutation": false,
+    "written_paths": [
+      "data/operational-episode-resolution/campaigns/plan-052/proposed-review-receipts/w2-corridor-pending-02/adjudication-independent.json"
+    ]
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "schema_version": 1,
+  "contract_id": "resolved-transit-public-key-registry-v1",
+  "generator_commit": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+  "as_of_date": "2026-07-27",
+  "registry_head": "b9da30fd373f435b49ca98ae493f9a415095e1d6f12b1acc1b758c9e7774efb6",
+  "input_fingerprint": "cc096a836075619a2f7466d51366d80e935cba43d91fac271ddfe085d471e8f0",
+  "eligible_subject_count": 501,
+  "existing_live_key_count": 481,
+  "newly_established_losslessly": 20,
+  "newly_established_from_accepted_review": 0,
+  "requires_review_count": 0,
+  "proposed_operations": [
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:0596a23759893fcd6ee2f431",
+      "key_kind": "route",
+      "subject_id": "route_q53-sbs-ace",
+      "owner_intervention_id": null,
+      "public_key": "q53-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "Q53+",
+        "route_display_name": "Q53 SBS on Woodhaven Boulevard, Queens (TSP in development)"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:0b4eb3d0d84751345e68ba70",
+      "key_kind": "intervention_component",
+      "subject_id": "application:6ac91494e96d9f529dbcd47c",
+      "owner_intervention_id": "occurrence:2137dc5b364cf4d9a8cd6392",
+      "public_key": "m16-fare-collection-add-off-board-fare-collection-bounded-segment-corridor-34th-st-busway",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m16",
+        "treatment_family_key": "fare-collection",
+        "action": "add",
+        "treatment_display_name": "Off-board fare collection",
+        "scope_kind": "bounded_segment",
+        "scope_record_ids": "corridor_34th-st-busway"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:0d52e8be934c890f20a6660b",
+      "key_kind": "source",
+      "subject_id": "brt_uticaave_winter_spring_newsletter_2016",
+      "owner_intervention_id": null,
+      "public_key": "brt-uticaave-winter-spring-newsletter-2016",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "brt_uticaave_winter_spring_newsletter_2016",
+        "title": "B46 Utica Avenue Winter/Spring 2016 Newsletter"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:108f1d8d5eb97a1a4de1b183",
+      "key_kind": "source",
+      "subject_id": "better_buses",
+      "owner_intervention_id": null,
+      "public_key": "better-buses",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "better_buses",
+        "title": "NYC DOT Better Buses Page"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:1db02a6f61198c30dad2c9d4",
+      "key_kind": "source",
+      "subject_id": "20110314_34th_cac4_slides",
+      "owner_intervention_id": null,
+      "public_key": "20110314-34th-cac4-slides",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "20110314_34th_cac4_slides",
+        "title": "34th Street Project Community Advisory Committee Meeting #4"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:268560bd5097546ce78315a0",
+      "key_kind": "intervention_component",
+      "subject_id": "application:dff15c694536e6350ba76f18",
+      "owner_intervention_id": "occurrence:b9cdb2271eacb4ebf7888b00",
+      "public_key": "q70-sbs-bus-lane-add-center-running-bus-lane-24-7-eastbound-bounded-segment-corridor-broadway-queens",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q70-sbs",
+        "treatment_family_key": "bus-lane",
+        "action": "add",
+        "treatment_display_name": "Center-running bus lane (24/7 eastbound)",
+        "scope_kind": "bounded_segment",
+        "scope_record_ids": "corridor_broadway-queens"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:387d5ee6591c6e2619e78ff2",
+      "key_kind": "route",
+      "subject_id": "route_q70-sbs",
+      "owner_intervention_id": null,
+      "public_key": "q70-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "Q70+",
+        "route_display_name": "Q70 SBS LaGuardia Airport"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:3a94c0a65eae4c43e75881d1",
+      "key_kind": "source",
+      "subject_id": "broadway_69_st_roosevelt_ave_may2026",
+      "owner_intervention_id": null,
+      "public_key": "broadway-69-st-roosevelt-ave-may2026",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "broadway_69_st_roosevelt_ave_may2026",
+        "title": "Broadway Bus Priority - Presentation to Queens CB3"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:6eb9043134b6ae8f8ad6e197",
+      "key_kind": "source",
+      "subject_id": "nyc_dot_current_projects_july_2026",
+      "owner_intervention_id": null,
+      "public_key": "nyc-dot-current-projects-july-2026",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "nyc_dot_current_projects_july_2026",
+        "title": "NYC DOT Current Projects"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:9062186abd89428c65d44b4e",
+      "key_kind": "intervention_component",
+      "subject_id": "application:5b348222474dfa2486c6f4c3",
+      "owner_intervention_id": "occurrence:96b33d493a0743d2d0d90470",
+      "public_key": "b46-bus-lane-add-dedicated-bus-lanes-on-utica-avenue-bounded-segment-corridor-utica-ave-st-johns-pl-church-ave-2013",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b46",
+        "treatment_family_key": "bus-lane",
+        "action": "add",
+        "treatment_display_name": "Dedicated Bus Lanes on Utica Avenue",
+        "scope_kind": "bounded_segment",
+        "scope_record_ids": "corridor_utica-ave-st-johns-pl-church-ave-2013"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:942845f7cc28d34eb9744505",
+      "key_kind": "route",
+      "subject_id": "route_m34-local-2011",
+      "owner_intervention_id": null,
+      "public_key": "m34-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "M34+",
+        "route_display_name": "M34 Bus Route (Local)"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:9c35cfe5b1b615ebd55581a5",
+      "key_kind": "source",
+      "subject_id": "nyc_mayor_broadway_created_june_2026",
+      "owner_intervention_id": null,
+      "public_key": "nyc-mayor-broadway-created-june-2026",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "nyc_mayor_broadway_created_june_2026",
+        "title": "Mayor Mamdani: The World Cup Belongs to New Yorkers"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:a38a683ddc0f68203dc10c2d",
+      "key_kind": "source",
+      "subject_id": "201110_brt_34th_cac5",
+      "owner_intervention_id": null,
+      "public_key": "201110-brt-34th-cac5",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "201110_brt_34th_cac5",
+        "title": "34th Street SBS Community Advisory Committee Meeting #5"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:bf47d0564fc2e8203ea9fe89",
+      "key_kind": "intervention_component",
+      "subject_id": "application:68b7cedf3d8285764e01ac60",
+      "owner_intervention_id": "occurrence:2137dc5b364cf4d9a8cd6392",
+      "public_key": "m34-sbs-fare-collection-add-off-board-fare-collection-bounded-segment-corridor-34th-st-busway",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m34-sbs",
+        "treatment_family_key": "fare-collection",
+        "action": "add",
+        "treatment_display_name": "Off-board fare collection",
+        "scope_kind": "bounded_segment",
+        "scope_record_ids": "corridor_34th-st-busway"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:c2619fd1d18d54fc90843ee4",
+      "key_kind": "intervention_component",
+      "subject_id": "application:11dd57466f952ec654f8e644",
+      "owner_intervention_id": "occurrence:184e8d4319dd4fd1e15eef93",
+      "public_key": "q53-sbs-fare-collection-add-off-board-fare-collection-bounded-segment-corridor-woodhaven-cross-bay-blvds",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q53-sbs",
+        "treatment_family_key": "fare-collection",
+        "action": "add",
+        "treatment_display_name": "Off-board fare collection",
+        "scope_kind": "bounded_segment",
+        "scope_record_ids": "corridor_woodhaven-cross-bay-blvds"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:cdb4d3f435896f3f607a8600",
+      "key_kind": "route",
+      "subject_id": "route_m16-mentioned",
+      "owner_intervention_id": null,
+      "public_key": "m16",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "M16",
+        "route_display_name": "M16 Bus Route on 34th Street"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:d022080e920912bd386a3f50",
+      "key_kind": "intervention_component",
+      "subject_id": "application:e777e16846606e5568f3aa03",
+      "owner_intervention_id": "occurrence:184e8d4319dd4fd1e15eef93",
+      "public_key": "q52-sbs-fare-collection-add-off-board-fare-collection-bounded-segment-corridor-woodhaven-cross-bay-blvds",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q52-sbs",
+        "treatment_family_key": "fare-collection",
+        "action": "add",
+        "treatment_display_name": "Off-board fare collection",
+        "scope_kind": "bounded_segment",
+        "scope_record_ids": "corridor_woodhaven-cross-bay-blvds"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:d964d2b24c0e932937bddf16",
+      "key_kind": "source",
+      "subject_id": "brt_woodhaven_after_fall2018",
+      "owner_intervention_id": null,
+      "public_key": "brt-woodhaven-after-fall2018",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "brt_woodhaven_after_fall2018",
+        "title": "Q52/53 Woodhaven/Cross Bay Blvd SBS Progress Report – Fall 2018"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:e7e1e7c63ea53bb4f8f62a5a",
+      "key_kind": "source",
+      "subject_id": "201110_brt_34th_open_house_slides",
+      "owner_intervention_id": null,
+      "public_key": "201110-brt-34th-open-house-slides",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "201110_brt_34th_open_house_slides",
+        "title": "34th Street SBS Fall 2011 Open Houses"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:ea38354c2a591ec28b7a00fe",
+      "key_kind": "route",
+      "subject_id": "route_b46-local-2012",
+      "owner_intervention_id": null,
+      "public_key": "b46",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "B46",
+        "route_display_name": "B46 Local"
+      }
+    }
+  ],
+  "requires_review": [],
+  "receipt_id": "public-key-migration:2ab19719140929e8aaa1cf907a92bb9b48c0d35e80fd043a2a824b358bf4bf0a"
+}

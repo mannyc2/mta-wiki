@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-semantic-review-receipt-v1",
+  "proposal_status": "proposed_not_accepted",
+  "batch_id": "w2-meeting-docs-pending-02",
+  "reviewer": "plan-052-primary-meeting-docs-pending-02",
+  "review_role": "primary",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w2-meeting-docs-pending-02.json",
+  "manifest_sha256": "9b8af0895d588bff3622cabebd5cce61c0a92f59fa1cb3a51799239428e1da0a",
+  "frozen_input_verification": {
+    "candidate_count": 43,
+    "candidate_bearing_observation_count": 43,
+    "preterminal_observation_count": 65,
+    "required_accounted_observation_count": 108,
+    "evidence_pin_count": 94,
+    "all_candidate_ids_present": true,
+    "all_evidence_pins_match": true,
+    "cohort_hashes": {
+      "adapter_input_sha256": "068d7732f164a164621557d08e0322a8168aa64da33d80bd41e7fd2d8939bcfb",
+      "candidate_input_sha256": "2001764f5f0ff9b251bd83da24edc000b33117162acc675a9fcc662b70232f50",
+      "candidate_membership_sha256": "74553d69ce01fe5fbf35dc428c4b7a135543f11662982e02e7c57f24b577780f",
+      "evidence_input_sha256": "5498f9f6c64906738222d1ff89472deebb11400e5eaac8f7a85508d6de92713c",
+      "observation_membership_sha256": "1842b54ea96f5c4c99ee522a50b3e78580d9a3b0209a7ae94733d1cb8afa43ec"
+    },
+    "status": "pass"
+  },
+  "provider_usage": {
+    "provider_called": false,
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "actual_cost_usd": 0
+  },
+  "review_complete": true,
+  "stop": false,
+  "disagreements": null,
+  "findings": [
+    {
+      "candidate_id": "candidate:2955fde3a97280fee2346808",
+      "candidate_key": "event:event_2024-mta-app",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The evidence is a heading for the 2024 MTA App.",
+      "evidence_ids": ["meeting_doc_202106#p003_c0006"],
+      "prohibited_inferences": ["Do not model an app release as a route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:2956d795387df178d15f7aef",
+      "candidate_key": "event:event_christmas-eve-day-service-2022",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR operated a regular weekend/holiday schedule on Christmas Eve and Christmas Day 2022.",
+      "evidence_ids": ["meeting_doc_102751#p001_c0009", "meeting_doc_102751#p001_c0010"],
+      "prohibited_inferences": ["Do not translate a rail holiday schedule into a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:29c5e8316d706d69afed1f54",
+      "candidate_key": "event:event_graybar-kiosk-program-launch-2005",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Grand Central Terminal Development launched the Graybar retail kiosk program in May 2005.",
+      "evidence_ids": ["meeting_doc_129081#p006_c0017"],
+      "prohibited_inferences": ["Do not model terminal retail activity as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:29fc2d952d3fd27387f8f354",
+      "candidate_key": "event:event_meeting-doc-ptc-update-may2023",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The committee item is an LIRR/Metro-North Positive Train Control close-out update.",
+      "evidence_ids": ["meeting_doc_102691#p005_c0001", "meeting_doc_102691#p005_c0002"],
+      "prohibited_inferences": ["Do not model a rail safety-system update as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:2b29e3131baeee2169065d07",
+      "candidate_key": "event:event_platform-barrier-pilot-start",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "A subway platform-barrier pilot began in January 2024 at four stations.",
+      "evidence_ids": ["meeting_doc_143341#p005_c0012"],
+      "prohibited_inferences": ["Do not model subway platform infrastructure as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:2c0322344bce13e63e9beffa",
+      "candidate_key": "event:event_st-albans-ada-oct26-27-2024",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR planned a 48-hour Montauk Branch outage for St. Albans ADA work, with temporary replacement buses.",
+      "evidence_ids": ["meeting_doc_151821#p002_c0001"],
+      "prohibited_inferences": ["Do not treat temporary rail-replacement service as a bus-priority route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:2c2a3e0c0dd9a9d41d88ff68",
+      "candidate_key": "event:event_meeting-doc-164866-weekend-switch-signal-mar22",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR planned Ronkonkoma Branch switch and signal outages with temporary replacement buses.",
+      "evidence_ids": ["meeting_doc_164866#p002_c0006"],
+      "prohibited_inferences": ["Do not model temporary rail-replacement operations as a bus-priority occurrence."]
+    },
+    {
+      "candidate_id": "candidate:2ca8528523da31fc8f978e10",
+      "candidate_key": "event:event_201556-schedule-change-march-29-2026",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Metro-North timetable changes were to take effect March 29, 2026.",
+      "evidence_ids": ["meeting_doc_201556#p001_c0002", "meeting_doc_201556#p001_c0009"],
+      "prohibited_inferences": ["Do not model a rail timetable as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:2d32cea78bbbd31dd311fa61",
+      "candidate_key": "event:event_qbnr-phase2-end-aug-2025",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The Queens Bus Network Redesign was planned to roll out in two phases at the end of June and August 2025.",
+      "evidence_ids": ["meeting_doc_167241#p005_c0004"],
+      "prohibited_inferences": ["Do not infer route-by-route redesign incidence from an aggregate program milestone or manufacture a route-treatment cross-product."]
+    },
+    {
+      "candidate_id": "candidate:2e77389dd97f0c200b5baa86",
+      "candidate_key": "event:event_able-proof-of-concept-2012",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "NYC Transit conducted a limited ABLE proof of concept in 2012 and later awarded a 123-system contract in 2019.",
+      "evidence_ids": ["meeting_doc_138441#p007_c0007"],
+      "prohibited_inferences": ["Do not infer any route assignment, corridor extent, or operational onset from a system-level proof of concept."]
+    },
+    {
+      "candidate_id": "candidate:2fef6fd0d90be4a859d0dae8",
+      "candidate_key": "event:event_170871-cbd-tolling-launch",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The Central Business District Tolling Program began collecting tolls January 5, 2025.",
+      "evidence_ids": ["meeting_doc_170871#p047_c0003"],
+      "prohibited_inferences": ["Do not infer bus route-treatment incidence from a road-tolling program."]
+    },
+    {
+      "candidate_id": "candidate:31aa33e90fc74affed9e948a",
+      "candidate_key": "event:event_meeting-doc-155021-timetable-start",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR adjusted schedules beginning November 11, 2024.",
+      "evidence_ids": ["meeting_doc_155021#p001_c0004", "meeting_doc_155021#p001_c0007"],
+      "prohibited_inferences": ["Do not model a rail timetable change as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:31e12b8500668d74a763acf9",
+      "candidate_key": "event:event_meeting157646-lirr-nov2024-timetable",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "A public speaker discussed the LIRR timetable taking effect November 11, 2024.",
+      "evidence_ids": ["meeting_doc_157646#p002_c0013"],
+      "prohibited_inferences": ["Do not model rail timetable commentary as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:32100b64034f692fe36c92e7",
+      "candidate_key": "event:event_phased-implementation-mid2025",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "A Queens Bus Network Redesign source targeted phased implementation for mid-2025.",
+      "evidence_ids": ["meeting_doc_138431#p001_c0006"],
+      "prohibited_inferences": ["Do not publish a prospective aggregate program date or infer route-specific changes."]
+    },
+    {
+      "candidate_id": "candidate:32419d3b0ab4b415f91153ce",
+      "candidate_key": "event:event_181st-st-busway-launch",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "The 181st Street Busway had launched and preliminary bus-speed increases of up to 34% were reported.",
+      "evidence_ids": ["meeting_doc_40141#p042_c0003"],
+      "prohibited_inferences": ["Do not infer a route set or route-treatment applications from a corridor-level busway statement."]
+    },
+    {
+      "candidate_id": "candidate:32913e92560dd6a419c3ebe6",
+      "candidate_key": "event:event_valley-stream-switch-work-weekend1",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR planned Valley Stream switch and grade-crossing rehabilitation with reduced rail service.",
+      "evidence_ids": ["meeting_doc_166961#p001_c0007"],
+      "prohibited_inferences": ["Do not model rail infrastructure work or temporary replacement service as a bus-priority occurrence."]
+    },
+    {
+      "candidate_id": "candidate:33bb583c14c0f04ceda0fe29",
+      "candidate_key": "event:event_new-discounts-feb25-2022",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Systemwide multimodal fare discounts began February 25, 2022.",
+      "evidence_ids": ["meeting_doc_79786#p005_c0005", "meeting_doc_79786#p005_c0006"],
+      "prohibited_inferences": ["Do not create route-specific applications from a systemwide fare policy."]
+    },
+    {
+      "candidate_id": "candidate:343671a6e9ce8d746909b997",
+      "candidate_key": "event:event_phase-iii-service-launch-dec-2023",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Phase III subway service enhancements on the C, N, R, and G lines were planned for December 2023.",
+      "evidence_ids": ["meeting_doc_128931#p003_c0009"],
+      "prohibited_inferences": ["Do not model subway frequency changes as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:34d80ae3b5077327a9225189",
+      "candidate_key": "event:event_massapequa-in-service",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "An LIRR pocket track entered commissioning in June 2021.",
+      "evidence_ids": ["meeting_doc_100321#p005_c0003"],
+      "prohibited_inferences": ["Do not model rail infrastructure commissioning as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:35a6e0adbdf88c046278bcbf",
+      "candidate_key": "event:event_meeting-doc-128991-dbe-policy-effective",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "An MTA disadvantaged-business-enterprise policy statement became effective in November 2023.",
+      "evidence_ids": ["meeting_doc_128991#p028_c0001", "meeting_doc_128991#p029_c0003"],
+      "prohibited_inferences": ["Do not model a procurement policy as a transit occurrence."]
+    },
+    {
+      "candidate_id": "candidate:36b7228b61afcfa36997d9d1",
+      "candidate_key": "event:event_meeting-doc-170846-744pm-lynbrook-stop",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "An LIRR Long Beach train gained a Lynbrook stop.",
+      "evidence_ids": ["meeting_doc_170846#p002_c0001"],
+      "prohibited_inferences": ["Do not model a rail stopping-pattern change as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:37126c4184d109295ba7a4dc",
+      "candidate_key": "event:event_port-washington-weekend-work-jun28-29",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR planned Port Washington Branch tie, surfacing, and switch work for June 28–29.",
+      "evidence_ids": ["meeting_doc_176351#p001_c0008"],
+      "prohibited_inferences": ["Do not model rail maintenance as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:3883fa65a813e686fc9e2787",
+      "candidate_key": "event:event_meeting-doc-160316-delivery-completed",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "A rail-locomotive contract scheduled delivery completion for 2031.",
+      "evidence_ids": ["meeting_doc_160316#p006_c0011"],
+      "prohibited_inferences": ["Do not model a rail procurement schedule as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:38d277c818676aa36d95a2c2",
+      "candidate_key": "event:event_far-rockaway-branch-diversion-131526",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Far Rockaway Branch trains were to divert during West Side Yard switch installations.",
+      "evidence_ids": ["meeting_doc_131526#p001_c0007"],
+      "prohibited_inferences": ["Do not model a rail diversion as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:39cdbc8419fe7bbf68e637b1",
+      "candidate_key": "event:event_cargo-vessel-safe-passage-2024",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Agencies coordinated a cargo vessel's safe passage beneath the Verrazzano-Narrows Bridge on October 19, 2024.",
+      "evidence_ids": ["meeting_doc_157631#p009_c0014"],
+      "prohibited_inferences": ["Do not model maritime bridge clearance as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:3a044ebc7850017c27ea6814",
+      "candidate_key": "event:event_bus-lane-cameras-activated-dec12",
+      "recommended_disposition": "published",
+      "observation_event_record_ids": ["event_bus-lane-cameras-activated-dec12"],
+      "route_applications": [
+        {"route_record_id": "route_b25", "gtfs_route_id": "B25", "treatment_record_id": "treatment_able-cameras", "extent": "on-board enforcement coverage on B25 bus-lane service"},
+        {"route_record_id": "route_b62", "gtfs_route_id": "B62", "treatment_record_id": "treatment_able-cameras", "extent": "on-board enforcement coverage on B62 bus-lane service"},
+        {"route_record_id": "route_b42", "gtfs_route_id": "B42", "treatment_record_id": "treatment_able-cameras", "extent": "on-board enforcement coverage on B42 bus-lane service"}
+      ],
+      "phase": "activated",
+      "phase_date": {"value": "2022-12-12", "precision": "day"},
+      "scope": "Final three routes in the 2022 expansion of bus-mounted lane-enforcement cameras",
+      "evidence_ids": ["meeting_doc_102836#p015_c0011"],
+      "cross_product_proof": "The evidence explicitly names exactly B25, B62, and B42 as the final three activated routes and one camera-enforcement treatment; three route applications to one treatment cannot create a plural-treatment cross-product."
+    },
+    {
+      "candidate_id": "candidate:3bda18a94645003d2f88bb71",
+      "candidate_key": "event:event_meeting-doc-138226-may20-timetable-change",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR schedules changed beginning May 20, 2024.",
+      "evidence_ids": ["meeting_doc_138226#p001_c0005", "meeting_doc_138226#p001_c0008"],
+      "prohibited_inferences": ["Do not model a rail timetable as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:3bfe3e0378074cece38694a4",
+      "candidate_key": "event:event_meeting-doc-206206-strike-over",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The source announced that an LIRR strike was over and service restoration was underway.",
+      "evidence_ids": ["meeting_doc_206206#p007_c0012", "meeting_doc_206206#p007_c0013"],
+      "prohibited_inferences": ["Do not model restoration of rail service as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:3cd0075b6db5c01b22389b3c",
+      "candidate_key": "event:event_station-agent-new-role-early-2023",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "NYCT planned to phase in a new subway station-agent role in early 2023.",
+      "evidence_ids": ["meeting_doc_102836#p026_c0004"],
+      "prohibited_inferences": ["Do not model a subway staffing program as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:3cd767df5b3e86aee26975ec",
+      "candidate_key": "event:event_atlantic-branch-tie-replacement-jan2026",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR planned Atlantic Branch tie replacement and switch maintenance in January 2026.",
+      "evidence_ids": ["meeting_doc_194056#p002_c0007", "meeting_doc_194056#p003_c0001"],
+      "prohibited_inferences": ["Do not model rail maintenance or fare cross-honoring as a bus-priority occurrence."]
+    },
+    {
+      "candidate_id": "candidate:3e61be2eb91121027d551e08",
+      "candidate_key": "event:event_harrison-garage-opening",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The evidence depicts the opening of a garage at Metro-North's Harrison station.",
+      "evidence_ids": ["meeting_doc_53036#p002_c0001", "meeting_doc_53036#p002_c0002"],
+      "prohibited_inferences": ["Do not model rail-station parking infrastructure as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:3f037216d00a1af1cd2b5786",
+      "candidate_key": "event:event_rockaway-reconstruction-start-jan2025",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "NYCT was preparing for Rockaway subway-line reconstruction beginning in January 2025.",
+      "evidence_ids": ["meeting_doc_157731#p009_c0009"],
+      "prohibited_inferences": ["Do not model subway reconstruction or alternative-service planning as a bus-priority occurrence."]
+    },
+    {
+      "candidate_id": "candidate:3ff887ea1b278f72a6c6e734",
+      "candidate_key": "event:event_meeting-doc-128866-ptc-update-oct2024",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "The source contains an October 2024 LIRR/Metro-North Positive Train Control update.",
+      "evidence_ids": ["meeting_doc_128866#p005_c0024", "meeting_doc_128866#p006_c0003"],
+      "prohibited_inferences": ["Do not model a rail safety-system update as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:4039e105a75e6679e1d55af2",
+      "candidate_key": "event:event_mou-commencement-oct152024",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "An environmental testing and remediation license term was to commence around October 15, 2024.",
+      "evidence_ids": ["meeting_doc_160326#p002_c0008"],
+      "prohibited_inferences": ["Do not model a property-use agreement as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:4042684c07feffe0f6391fae",
+      "candidate_key": "event:event_meeting-doc-170846-may-timetable-change",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR schedules changed beginning May 19, 2025.",
+      "evidence_ids": ["meeting_doc_170846#p001_c0004", "meeting_doc_170846#p001_c0006"],
+      "prohibited_inferences": ["Do not model a rail timetable as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:4077f490f94d80b5a92ee08a",
+      "candidate_key": "event:event_mn-new-trains-july11-2022",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Metro-North introduced 13 weekday trains on July 11, 2022.",
+      "evidence_ids": ["meeting_doc_98226#p005_c0002"],
+      "prohibited_inferences": ["Do not model rail service additions as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:40cd73d69cd9f507c08bd922",
+      "candidate_key": "event:event_autogate-omny-nov2021",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "AutoGate OMNY readers entered revenue-service proof-of-concept use on November 1, 2021.",
+      "evidence_ids": ["meeting_doc_72541#p029_c0007", "meeting_doc_72541#p029_c0008"],
+      "prohibited_inferences": ["Do not model station fare-gate equipment as a bus route-treatment occurrence."]
+    },
+    {
+      "candidate_id": "candidate:4107a130ac5dcb33e30fc60a",
+      "candidate_key": "event:event_199066-st-patricks-day-service",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR planned extra train service for the March 17 St. Patrick's Day Parade.",
+      "evidence_ids": ["meeting_doc_199066#p001_c0007"],
+      "prohibited_inferences": ["Do not model rail special-event service as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:41630d60e03d191cb5e6fe82",
+      "candidate_key": "event:event_m186726-thanksgiving",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Metro-North planned a four-day Thanksgiving rail service plan for November 26–30, 2025.",
+      "evidence_ids": ["meeting_doc_186726#p002_c0004", "meeting_doc_186726#p002_c0005"],
+      "prohibited_inferences": ["Do not model a rail holiday schedule as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:41b671d73473fe7bc95f455a",
+      "candidate_key": "event:event_meeting-doc-100351-open-stroller-launch",
+      "recommended_disposition": "insufficient_evidence",
+      "known_facts": "MTA's Open Stroller Program launched in September 2022 and allowed strollers in dedicated bus areas.",
+      "evidence_ids": ["meeting_doc_100351#p003_c0011"],
+      "prohibited_inferences": ["Do not infer route membership or route-level stroller-space applications from a systemwide launch statement."]
+    },
+    {
+      "candidate_id": "candidate:41c3f7f19d509423bf9c2844",
+      "candidate_key": "event:event_meeting-doc-196991-cbdtp-start",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "MTA Bridges and Tunnels began collecting CBDTP tolls January 5, 2025.",
+      "evidence_ids": ["meeting_doc_196991#p010_c0004"],
+      "prohibited_inferences": ["Do not infer bus route-treatment incidence from a tolling program."]
+    },
+    {
+      "candidate_id": "candidate:42ed9e0ec9b6424be3fa781b",
+      "candidate_key": "event:event_west-hempstead-oct4-5-2025",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "LIRR planned West Hempstead Branch concrete-tie and rail replacement in October 2025.",
+      "evidence_ids": ["meeting_doc_186721#p001_c0008"],
+      "prohibited_inferences": ["Do not model rail maintenance as a bus occurrence."]
+    },
+    {
+      "candidate_id": "candidate:43c6bd5c2c38736af25a776b",
+      "candidate_key": "event:event_meeting-doc-205546-bus-simulators",
+      "recommended_disposition": "outside_domain",
+      "known_facts": "Bus operator training simulators came online at Zerega and Spring Creek in April 2026.",
+      "evidence_ids": ["meeting_doc_205546#p006_c0003"],
+      "prohibited_inferences": ["Do not model an employee-training facility as a route-treatment occurrence."]
+    }
+  ],
+  "preterminal_observation_conformance": {
+    "unsupported_record_count": 61,
+    "not_episode_evidence_count": 4,
+    "count": 65,
+    "status": "pass_no_semantic_write",
+    "rule": "These observations were already terminal in the frozen observation ledger and are not candidate decisions."
+  },
+  "terminal_disposition_counts": {
+    "published": 1,
+    "duplicate_alias": 0,
+    "insufficient_evidence": 5,
+    "outside_domain": 37,
+    "rejected": 0,
+    "schema_blocked": 0,
+    "total": 43
+  },
+  "integration_authorization": "await_independent_review_and_deterministic_reconciliation"
+}

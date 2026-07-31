@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "contract_id": "resolved-transit-public-key-registry-v1",
+  "generator_commit": "0a0fb2c1ee09f661b77aaa854fe9b75581203722",
+  "as_of_date": "2026-07-27",
+  "registry_head": "00cfaf46b58bc5edd818106a6bb7cdb9a18e918be59b487626ddc3432dfd2296",
+  "input_fingerprint": "818432f1614ade507a64187cc5c610ad154f0a550e8de9ebc5aeaab47c97e19f",
+  "eligible_subject_count": 481,
+  "existing_live_key_count": 473,
+  "newly_established_losslessly": 8,
+  "newly_established_from_accepted_review": 0,
+  "requires_review_count": 0,
+  "proposed_operations": [
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:522b6dd7340e23fa749b7d27",
+      "key_kind": "intervention_component",
+      "subject_id": "application:2d759ab67c4e0006fbec2f24",
+      "owner_intervention_id": "occurrence:8c987704152b459014217d44",
+      "public_key": "b41-bus-lane-unknown-phase-1-center-running-bus-lanes-livingston-street-to-state-street-bounded-segment-corridor-flatbush-phase1-livingston-state",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b41",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "Phase 1 center-running bus lanes, Livingston Street to State Street",
+        "scope_kind": "bounded_segment",
+        "scope_record_ids": "corridor_flatbush-phase1-livingston-state"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:550997c55c47677195a11adc",
+      "key_kind": "intervention_component",
+      "subject_id": "application:a607f7cfc3cf8d63127a4da4",
+      "owner_intervention_id": "occurrence:8c987704152b459014217d44",
+      "public_key": "b67-bus-lane-unknown-phase-1-center-running-bus-lanes-livingston-street-to-state-street-bounded-segment-corridor-flatbush-phase1-livingston-state",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b67",
+        "treatment_family_key": "bus-lane",
+        "action": "unknown",
+        "treatment_display_name": "Phase 1 center-running bus lanes, Livingston Street to State Street",
+        "scope_kind": "bounded_segment",
+        "scope_record_ids": "corridor_flatbush-phase1-livingston-state"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:809c274da14f13ff6df757f9",
+      "key_kind": "source",
+      "subject_id": "nyc_dot_bus_lanes_flatbush_phase1_opening_2025",
+      "owner_intervention_id": null,
+      "public_key": "nyc-dot-bus-lanes-flatbush-phase1-opening-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "nyc_dot_bus_lanes_flatbush_phase1_opening_2025",
+        "title": "Bus Lanes - Local Streets: Flatbush Avenue Phase 1 opening rows"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:8dc33ad4a2212f774a172215",
+      "key_kind": "route",
+      "subject_id": "route_b67-flatbush-ave-apr2026",
+      "owner_intervention_id": null,
+      "public_key": "b67",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "B67",
+        "route_display_name": "B67"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:9470fc13605ec711e2a6655d",
+      "key_kind": "route",
+      "subject_id": "route_b41-ace",
+      "owner_intervention_id": null,
+      "public_key": "b41",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "gtfs_route_id": "B41",
+        "route_display_name": "Proposed B41 Local"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:97d2ed9cae5c5e510fa23dd5",
+      "key_kind": "source",
+      "subject_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026",
+      "owner_intervention_id": null,
+      "public_key": "flatbush-ave-bus-priority-mtp-briefing-apr2026",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "flatbush_ave_bus_priority_mtp_briefing_apr2026",
+        "title": "Flatbush Av Bus Priority – State St to Grand Army Plz - Construction Update and Major Transportation Project Notification"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:a2f1d2aeb2cd4dc8c502b39b",
+      "key_kind": "treatment_family",
+      "subject_id": "bus_lane",
+      "owner_intervention_id": null,
+      "public_key": "bus-lane",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "family": "bus_lane",
+        "label": "Bus lanes"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:feff20217853de6936af5935",
+      "key_kind": "source",
+      "subject_id": "nyc_dot_flatbush_installation_begins_2025",
+      "owner_intervention_id": null,
+      "public_key": "nyc-dot-flatbush-installation-begins-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "source_id": "nyc_dot_flatbush_installation_begins_2025",
+        "title": "Transformative Flatbush Avenue Bus Lane Installation Begins This Week"
+      }
+    }
+  ],
+  "requires_review": [],
+  "receipt_id": "public-key-migration:352279d86d0ff8505ac8c35fdc535e01fcd85dab4d9bc3ccce585161031ca338"
+}

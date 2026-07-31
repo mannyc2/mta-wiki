@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-052-cross-review-disagreement-v1",
+  "plan_id": "plan-052",
+  "batch_id": "w1-characterization",
+  "manifest_path": "data/operational-episode-resolution/campaigns/plan-052/batches/w1-characterization.json",
+  "manifest_sha256": "b96adbd4878a5abfae2cd9523c3534239195ea876dc0877fffc5abc8a99fbe7e",
+  "primary_receipt": {
+    "path": "data/operational-episode-resolution/campaigns/plan-052/review-receipts/w1-characterization/primary.json",
+    "sha256": "1ce0f2058aa2f4e0c9b179f724475498afc6b6f27e4fbcbbe49e2cf750e758c1"
+  },
+  "independent_receipt": {
+    "path": "data/operational-episode-resolution/campaigns/plan-052/review-receipts/w1-characterization/independent.json",
+    "sha256": "24e81ea5bfbfbfeabc6931858b4c316b43d2b8df2d792e6696a054cce5e6e5f3"
+  },
+  "agreed_candidate_count": 25,
+  "disagreement_count": 5,
+  "disagreements": [
+    {
+      "candidate_id": "candidate:089c5dca117ab12f156ec032",
+      "candidate_key": "event:event_broadway-center-running-bus-lane-installation-confirmed",
+      "risk": "publishability_and_route_incidence",
+      "primary": "insufficient_evidence",
+      "independent": "published Q70+ × center-running bus lane × installed phase"
+    },
+    {
+      "candidate_id": "candidate:0065d35d05693332aeb8b1ef",
+      "candidate_key": "event:event_bus-lane-implementation-fall-2015",
+      "risk": "publishability_temporal_coreference_and_route_incidence",
+      "primary": "insufficient_evidence",
+      "independent": "published B46 × dedicated bus lanes × Fall 2015 phase"
+    },
+    {
+      "candidate_id": "candidate:002e8ac7107b222e82e03c82",
+      "candidate_key": "event:event_machine-installation-oct4-2011",
+      "risk": "historical_route_identity_and_exact_incidence",
+      "primary": "published M34 plus historical M16/pre-M34A",
+      "independent": "published M34+ plus M34A+"
+    },
+    {
+      "candidate_id": "candidate:09d24ae40bf93ee46e8eb095",
+      "candidate_key": "event:event_redesign-restart-aug2021",
+      "risk": "terminal_nonpublication_semantics",
+      "primary": "outside_domain",
+      "independent": "rejected"
+    },
+    {
+      "candidate_id": "candidate:02cad757a6d52baca3130545",
+      "candidate_key": "event:event_tsp-installation-2022",
+      "risk": "genuinely_indeterminate_route_incidence",
+      "primary": "insufficient_evidence",
+      "independent": "STOP: installation proven but exact route incidence cannot be determined"
+    }
+  ],
+  "stop_conditions_triggered": [
+    "identity_or_incidence_cannot_be_determined",
+    "primary_and_independent_reviewers_disagree"
+  ],
+  "integration_authorized": false,
+  "semantic_decisions_written": 0,
+  "next_wave_authorized": false,
+  "owner_decision_required": true
+}

@@ -70,8 +70,8 @@
         },
         {
           "path": "packages/db/src/relationship-contract.ts",
-          "bytes": 121173,
-          "sha256": "78ae44bd9e0fe2f8bbb6689d33fb44a8c07f6625f58b909813ab4d1408cdf100"
+          "bytes": 121145,
+          "sha256": "a1d94bbb81a6eb2a243dd288fcede92b525e6d7849653e2aad8a357ac7a2fa26"
         },
         {
           "path": "packages/pipeline/src/quality/relationship-completeness.ts",
@@ -80,11 +80,11 @@
         },
         {
           "path": "schemas/relationship-enforcement-source-refresh-receipt-v1.schema.json",
-          "bytes": 5004,
-          "sha256": "f5cc377efaed952b5dde64d7b6c2dccb6cd6508834e7a1e3f1097e3c4608a1c8"
+          "bytes": 4983,
+          "sha256": "a500598523317672a71b6376c7baf8db865ad0947fd15ddbf9d4bd46cb70aa23"
         }
       ],
-      "input_tree_sha256": "796980da304de54dc2f07ee5d031ce8777725d521b1084563405d0be5b952003",
+      "input_tree_sha256": "bc0f67588d57ae1bac42886979fe05e575d6c3eb03054ee29378311fa0fe5b41",
       "command": "bun run materialize",
       "claimed_output": "data/canonical.db",
       "transitive_input_contracts": [
