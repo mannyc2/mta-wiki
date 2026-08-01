@@ -511,30 +511,35 @@ export const materializeCommands = {
     const releaseId = optionValue(process.argv, "--id") ?? new Date().toISOString().slice(0, 10);
     const profile = optionValue(process.argv, "--profile");
     if (profile !== undefined) {
-      if (profile !== "resolved-pack-v1") throw new Error(`Unknown release export profile: ${profile}`);
+      if (profile !== "resolved-pack-v1-verification" && profile !== "resolved-pack-v1-production") {
+        throw new Error(`Unknown release export profile: ${profile}`);
+      }
       const asOfDate = optionValue(process.argv, "--as-of");
       const outputRoot = optionValue(process.argv, "--output-root");
-      if (!asOfDate || !outputRoot) throw new Error("resolved-pack-v1 requires --as-of and --output-root");
+      if (!asOfDate || !outputRoot) throw new Error(`${profile} requires --as-of and --output-root`);
       const allowed = new Set(["--id", "--profile", "--as-of", "--output-root", "--publish-check"]);
       const valueFlags = new Set(["--id", "--profile", "--as-of", "--output-root"]);
       const seen = new Set<string>();
       for (let index = 3; index < process.argv.length; index += 1) {
         const flag = process.argv[index]!;
-        if (!flag.startsWith("--") || !allowed.has(flag)) throw new Error(`Unknown resolved-pack-v1 flag: ${flag}`);
-        if (seen.has(flag)) throw new Error(`Duplicate resolved-pack-v1 flag: ${flag}`);
+        if (!flag.startsWith("--") || !allowed.has(flag)) throw new Error(`Unknown ${profile} flag: ${flag}`);
+        if (seen.has(flag)) throw new Error(`Duplicate ${profile} flag: ${flag}`);
         seen.add(flag);
         if (valueFlags.has(flag)) index += 1;
       }
       const result = exportResolvedTransitRelease(releaseId, {
         rootDir: repoRoot,
         outputRoot,
+        profile,
         asOfDate,
         publishCheck: process.argv.includes("--publish-check"),
       });
       console.log(
         `Exported resolved release ${result.releaseId}: manifest-v7, ${result.files} addressed files ` +
         `(manifest ${result.manifestSha256.slice(0, 12)}; build ${result.buildId.slice(0, 12)}; ` +
-        `publication eligible=${result.publicationEligible}; LATEST unchanged)`,
+        `verification candidate eligible=${result.verificationCandidateEligible}; ` +
+        `production content eligible=${result.productionContentEligible}; ` +
+        `production eligible=${result.productionEligible}; LATEST unchanged)`,
       );
       return;
     }

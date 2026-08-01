@@ -21,8 +21,13 @@ exactly once. Reconciliation/frontier resources cannot grant occurrence,
 current-state, cross-product, or study authority.
 
 `build_receipt.json` records the clean generator commit, Bun/runtime versions,
-explicit `resolved-pack-v1` options and as-of date, hashes for every enumerated
-semantic and code/config input, every output hash, and publication eligibility.
+an explicit `resolved-pack-v1-verification` or `resolved-pack-v1-production`
+profile and as-of date, hashes for every enumerated semantic and code/config
+input, every output hash, and distinct verification-candidate and substantive
+production eligibility. Production eligibility fails closed with closed reason
+codes unless the episode, application, placement, lifecycle, strict-public,
+display, and Tracker gates all pass from receipted evidence and an independent
+recut is byte-identical.
 It omits wall-clock and output-root data, so independent recuts are
 byte-identical. `verify-release` checks the addressed bytes and semantics
 before returning a verified bundle:
@@ -32,11 +37,12 @@ bun packages/cli/src/cli.ts verify-release <id> \
   --release-root <containing-root> --json-out /tmp/verification.json
 ```
 
-The temporary `resolved-pack-v1-verification-candidate` proves reproducibility
-only. `LATEST`, tags, GitHub Releases, and downstream pins remain owner-gated
-and unchanged. Its deterministic repository handoff records the generator and
-docs-only descendant commits without storing local output paths. GitHub-only
-transport requires a later publication decision.
+The pinned Plan 050 `resolved-pack-v1-verification-candidate` remains
+verification-valid but is explicitly production-ineligible under the new
+contract. `LATEST`, tags, GitHub Releases, and downstream pins are separate
+promotion operations; candidate construction changes none of them. A
+production handoff binds both independently verified roots before any of those
+operations can proceed.
 
 ### Treatment semantic companions
 

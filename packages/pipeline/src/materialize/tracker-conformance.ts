@@ -53,9 +53,10 @@ function sameSet(left: Iterable<string>, right: Iterable<string>, path: string):
 export function validateTrackerConformance(
   pack: ResolvedTransitPublicPack,
   repoDir: string,
+  artifactRoot = ROOT,
 ): void {
   const contents = new Map([BASELINE, LEDGER, ROUTE_SURFACE, SUMMARY, RECEIPT].map((path) =>
-    [path, readFileSync(join(repoDir, path), "utf8")]
+    [path, readFileSync(join(repoDir, artifactRoot, path.slice(ROOT.length + 1)), "utf8")]
   ));
   const baseline = rows(contents.get(BASELINE)!, BASELINE);
   const ledger = rows(contents.get(LEDGER)!, LEDGER);

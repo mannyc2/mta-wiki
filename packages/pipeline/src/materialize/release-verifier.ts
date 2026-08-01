@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { spawnSync } from "node:child_process";
 import { existsSync, lstatSync, readFileSync, realpathSync, statSync } from "node:fs";
 import { basename, dirname, join, relative, resolve, sep } from "node:path";
 import { FILE_BY_KIND } from "./canonical-read.js";
@@ -82,10 +83,12 @@ import {
   parseMemberGrainCompanion,
 } from "../quality/member-grain-companion.js";
 import type { MemberExtentRow } from "../quality/study-readiness-v1.js";
-import { parseReleaseBuildReceipt } from "./release-build-receipt.js";
+import { parseReleaseBuildReceipt, productionReleaseInputPathspecs } from "./release-build-receipt.js";
 import { runResolvedPackReferenceAdapter } from "../consumer/reference-adapter.js";
 import { verifyPublicPackDirectory } from "./resolved-transit-pack.js";
 import { assertPublicSafe } from "../consumer/public-contract.js";
+import { validateTrackerConformance } from "./tracker-conformance.js";
+import { collectProductionGateEvidence } from "./release-production-eligibility.js";
 
 const verifiedReleaseBrand: unique symbol = Symbol("VerifiedReleaseBundle");
 export type ReleaseVerificationResult = {
@@ -95,6 +98,13 @@ export type ReleaseVerificationResult = {
   verified_file_count: number;
   verified_record_count: number;
   contract_versions: ReleaseManifest["contract_versions"];
+  export_profile: ReleaseManifest["export_profile"] | null;
+  as_of_date: string | null;
+  build_id: string | null;
+  verification_candidate_eligible: boolean | null;
+  production_eligible: boolean | null;
+  production_content_eligible: boolean | null;
+  production_ineligibility_reasons: string[];
 };
 export type VerifiedReleaseBundle = ReleaseVerificationResult & {
   readonly [verifiedReleaseBrand]: true;
@@ -110,6 +120,13 @@ export function verificationSummary(bundle: VerifiedReleaseBundle): ReleaseVerif
     verified_file_count: bundle.verified_file_count,
     verified_record_count: bundle.verified_record_count,
     contract_versions: bundle.contract_versions,
+    export_profile: bundle.export_profile,
+    as_of_date: bundle.as_of_date,
+    build_id: bundle.build_id,
+    verification_candidate_eligible: bundle.verification_candidate_eligible,
+    production_eligible: bundle.production_eligible,
+    production_content_eligible: bundle.production_content_eligible,
+    production_ineligibility_reasons: bundle.production_ineligibility_reasons,
   };
 }
 type Decoder = (bytes: Buffer, path: string) => unknown;
@@ -292,6 +309,8 @@ export const RELEASE_CONTRACT_REGISTRY: Readonly<Record<string, Readonly<Record<
 };
 const pointers: Readonly<Record<string, keyof ReleaseManifest["pointers"]>> = { operational_anchors: "operational_anchors", operational_anchor_review_decisions: "operational_anchor_review_decisions", operational_occurrences: "operational_occurrences", operational_occurrence_review_decisions: "operational_occurrence_review_decisions", operational_occurrence_member_extents: "operational_occurrence_member_extents", bus_lane_identity_verdicts: "bus_lane_identity_verdicts", operational_occurrence_member_grain: "operational_occurrence_member_grain", relationship_integrity_bundle: "relationship_integrity_bundle", route_anchors: "route_anchors", route_identity_snapshot: "route_identity_snapshot" };
 const sha256 = (bytes: Buffer) => createHash("sha256").update(bytes).digest("hex");
+const gitBlobSha1 = (bytes: Buffer) => createHash("sha1")
+  .update(`blob ${bytes.length}\0`).update(bytes).digest("hex");
 function safeFile(dir: string, relativePath: string): string {
   const root = realpathSync(resolve(dir));
   const path = resolve(root, relativePath);
@@ -1287,15 +1306,21 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
   const bundle = decoded.get("relationship_integrity_bundle") as ReturnType<typeof parseRelationshipReleaseBundleDescriptor> | undefined;
   if (bundle) for (const artifact of bundle.artifacts) { const path = `relationship-integrity/${artifact.source_path}`; const bytes = files.get(path); if (!bytes) throw new Error(`relationship bundle artifact is not content-addressed by manifest: ${path}`); if (bytes.length !== artifact.bytes || sha256(bytes) !== artifact.sha256) throw new Error(`relationship bundle artifact metadata mismatch: ${path}`); }
   if (bundle) verifyStagedRelationshipReleaseBundle(releaseDir, bundle);
+  let buildId: string | null = null;
+  let verificationCandidateEligible: boolean | null = null;
+  let productionEligible: boolean | null = null;
+  let productionContentEligible: boolean | null = null;
+  let productionIneligibilityReasons: string[] = [];
   if (manifest.manifest_version === 7) {
-    if (manifest.export_profile !== "resolved-pack-v1" || !manifest.as_of_date) {
-      throw new Error("manifest-v7 requires the resolved-pack-v1 profile and explicit as-of date");
+    if (!manifest.export_profile || !manifest.as_of_date) {
+      throw new Error("manifest-v7 requires an explicit resolved-pack profile and as-of date");
     }
     const receiptPath = manifest.build_receipt;
     if (!receiptPath) throw new Error("manifest-v7 build receipt pointer is missing");
     const receiptBytes = files.get(receiptPath);
     if (!receiptBytes) throw new Error("manifest-v7 build receipt is not addressed");
     const receipt = parseReleaseBuildReceipt(json(receiptBytes, receiptPath));
+    buildId = receipt.build_id;
     if (receipt.generator_commit !== manifest.generator_commit ||
         receipt.export_options.as_of_date !== manifest.as_of_date) {
       throw new Error("manifest-v7 build receipt does not bind generator/as-of");
@@ -1310,17 +1335,108 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
     if (JSON.stringify(Object.keys(receipt.output_resources).sort()) !== JSON.stringify(expectedOutputPaths)) {
       throw new Error("manifest-v7 build receipt output resource set mismatch");
     }
-    const publicRoot = join(releaseDir, "resolved-pack", "public");
-    const publicPack = verifyPublicPackDirectory(publicRoot);
-    assertPublicSafe(publicPack);
-    const adapter = runResolvedPackReferenceAdapter(publicRoot);
-    if (adapter.episodes_by_route.length !== publicPack.routes.length) {
-      throw new Error("manifest-v7 reference adapter route denominator mismatch");
+    if (receipt.export_options.profile !== manifest.export_profile) {
+      throw new Error("manifest-v7 build receipt does not bind export profile");
     }
-    if (publicPack.manifest.as_of_date !== manifest.as_of_date) {
-      throw new Error("manifest-v7 public pack as-of mismatch");
+    if (receipt.schema_version === 2 && options.sourceRootDir === undefined) {
+      throw new Error("manifest-v7 modern profile verification requires the generator source root");
+    }
+    if (receipt.schema_version === 2 && options.sourceRootDir !== undefined) {
+      const trackedResult = spawnSync("git", [
+        "ls-tree", "-r", "--full-tree", receipt.generator_commit, "--", ...productionReleaseInputPathspecs,
+      ], {
+        cwd: options.sourceRootDir,
+        encoding: "utf8",
+      });
+      if (trackedResult.status !== 0) throw new Error("manifest-v7 could not verify tracked semantic inputs");
+      const tree = new Map(trackedResult.stdout.split("\n").filter(Boolean).map((line) => {
+        const match = /^\d+ blob ([a-f0-9]{40})\t(.+)$/u.exec(line);
+        if (!match) throw new Error(`manifest-v7 invalid generator tree row: ${line}`);
+        return [match[2]!, match[1]!] as const;
+      }));
+      const receipted = new Set(receipt.semantic_inputs.map((entry) => entry.path));
+      if (JSON.stringify([...tree.keys()].sort()) !== JSON.stringify([...receipted].sort())) {
+        throw new Error("manifest-v7 semantic input inventory is incomplete or contains extras");
+      }
+      for (const input of receipt.semantic_inputs) {
+        const source = join(options.sourceRootDir, input.path);
+        if (!input.tracked || !tree.has(input.path) || !existsSync(source) || !statSync(source).isFile()) {
+          throw new Error(`manifest-v7 semantic input is not an exact tracked file: ${input.path}`);
+        }
+        const bytes = readFileSync(source);
+        if (bytes.length !== input.bytes || sha256(bytes) !== input.sha256 ||
+            gitBlobSha1(bytes) !== tree.get(input.path)) {
+          throw new Error(`manifest-v7 semantic input mismatch: ${input.path}`);
+        }
+      }
+      const operatorInputPrefix = "data/resolved-transit/operator/v1/";
+      const expectedOperatorOutputs = receipt.semantic_inputs
+        .filter((input) => input.path.startsWith(operatorInputPrefix))
+        .map((input) => `resolved-pack/operator/${input.path.slice(operatorInputPrefix.length)}`).sort();
+      const actualOperatorOutputs = [...files.keys()]
+        .filter((path) => path.startsWith("resolved-pack/operator/")).sort();
+      if (JSON.stringify(actualOperatorOutputs) !== JSON.stringify(expectedOperatorOutputs)) {
+        throw new Error("manifest-v7 released operator resource inventory is incomplete or contains extras");
+      }
+      for (const [path, bytes] of files) {
+        if (!path.startsWith("resolved-pack/operator/")) continue;
+        const source = join(options.sourceRootDir, "data/resolved-transit/operator/v1", path.slice("resolved-pack/operator/".length));
+        if (!existsSync(source) || !readFileSync(source).equals(bytes)) {
+          throw new Error(`manifest-v7 released operator resource differs from its receipted input: ${path}`);
+        }
+      }
+      const expectedEvidence = collectProductionGateEvidence(options.sourceRootDir, manifest.as_of_date, {
+        strictPublicContractComplete: true,
+        independentRecutVerified: false,
+      });
+      if (JSON.stringify(receipt.production_gate_evidence) !== JSON.stringify(expectedEvidence)) {
+        throw new Error("manifest-v7 production gate evidence is not the independent source replay");
+      }
+    }
+    const isPinnedLegacyCandidate =
+      receipt.schema_version === 1 &&
+      manifest.export_profile === "resolved-pack-v1" &&
+      manifest.release_id === "resolved-pack-v1-verification-candidate" &&
+      sha256(manifestBytes) === "f367de6c376058501442257850cbacc1eb6007b0c248b667668a774ab9217ef1";
+    if (receipt.schema_version === 1 && !isPinnedLegacyCandidate) {
+      throw new Error("manifest-v7 legacy profile is verification-only and is not the pinned Plan 050 candidate");
+    }
+    if (isPinnedLegacyCandidate) {
+      verificationCandidateEligible = !receipt.tracked_dirty &&
+        receipt.semantic_inputs.every((entry) => entry.tracked);
+      productionEligible = false;
+      productionContentEligible = false;
+      productionIneligibilityReasons = [
+        "production_profile_required",
+        "episode_frontier_incomplete",
+        "application_semantics_incomplete",
+        "placement_frontier_incomplete",
+        "lifecycle_coverage_incomplete",
+        "strict_public_contract_incomplete",
+        "public_display_incomplete",
+        "tracker_conformance_incomplete",
+        "semantic_input_receipts_incomplete",
+      ];
+    } else {
+      if (receipt.schema_version !== 2) throw new Error("manifest-v7 unexpected legacy receipt");
+      verificationCandidateEligible = receipt.verification_candidate_eligible;
+      productionContentEligible = receipt.production_content_eligible;
+      productionEligible = receipt.production_eligible;
+      productionIneligibilityReasons = [...receipt.production_ineligibility_reasons];
+      const publicRoot = join(releaseDir, "resolved-pack", "public");
+      const publicPack = verifyPublicPackDirectory(publicRoot);
+      assertPublicSafe(publicPack);
+      const adapter = runResolvedPackReferenceAdapter(publicRoot);
+      if (adapter.episodes_by_route.length !== publicPack.routes.length) {
+        throw new Error("manifest-v7 reference adapter route denominator mismatch");
+      }
+      if (publicPack.manifest.as_of_date !== manifest.as_of_date) {
+        throw new Error("manifest-v7 public pack as-of mismatch");
+      }
+      validateTrackerConformance(publicPack, releaseDir, "resolved-pack/operator/tracker-conformance");
     }
     const required = [
+      "resolved-pack/manifest.json",
       "resolved-pack/operator/interventions/episodes.jsonl",
       "resolved-pack/operator/interventions/applications.jsonl",
       "resolved-pack/operator/interventions/application_reconciliation.jsonl",
@@ -1338,7 +1454,9 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
       "resolved-pack/public/public_intervention_components.jsonl",
       "resolved-pack/public/public_network_summary.json",
     ];
-    for (const path of required) if (!files.has(path)) throw new Error(`manifest-v7 incomplete resolved resource set: ${path}`);
+    if (!isPinnedLegacyCandidate) {
+      for (const path of required) if (!files.has(path)) throw new Error(`manifest-v7 incomplete resolved resource set: ${path}`);
+    }
   }
   const result: VerifiedReleaseBundle = {
     release_id: manifest.release_id,
@@ -1347,6 +1465,13 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
     verified_file_count: files.size,
     verified_record_count: recordCount,
     contract_versions: manifest.contract_versions,
+    export_profile: manifest.export_profile ?? null,
+    as_of_date: manifest.as_of_date ?? null,
+    build_id: buildId,
+    verification_candidate_eligible: verificationCandidateEligible,
+    production_eligible: productionEligible,
+    production_content_eligible: productionContentEligible,
+    production_ineligibility_reasons: productionIneligibilityReasons,
     manifest,
     release_dir: resolve(releaseDir),
     readAddressed(path: string) {

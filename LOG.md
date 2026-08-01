@@ -6,6 +6,19 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-08-01
 
+### Split verification-candidate and production release eligibility
+
+- Manifest-v7 resolved-pack receipts now distinguish reproducible candidate
+  verification from substantive production eligibility. Production requires
+  complete episode, application, placement, lifecycle, strict-public, display,
+  and Tracker evidence; complete tracked input receipts; a clean explicit-as-of
+  build; and an independent byte-identical recut.
+- The immutable Plan 050 partial candidate remains verification-valid and now
+  returns nine closed production-ineligibility reasons instead of passing a
+  clean-build-only publication flag or failing an unrelated modern decoder.
+  No release bytes, `LATEST`, tag, external publication, downstream pin,
+  deployment, push, or merge occurred in this contract-preparation change.
+
 ### Closed the strict public pack and Tracker conformance boundary
 
 - Replaced cast-based public-pack reads with exact decoders for every public

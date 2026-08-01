@@ -138,7 +138,11 @@ export type ReleaseManifest = {
   };
   resource_descriptors?: ReleaseResourceDescriptor[] | undefined;
   build_receipt?: string | undefined;
-  export_profile?: "resolved-pack-v1" | undefined;
+  export_profile?:
+    | "resolved-pack-v1"
+    | "resolved-pack-v1-verification"
+    | "resolved-pack-v1-production"
+    | undefined;
   as_of_date?: string | undefined;
 };
 
@@ -551,8 +555,10 @@ export function parseReleaseManifest(value: unknown): ReleaseManifest {
       ? {
           resource_descriptors: root.resource_descriptors as ReleaseResourceDescriptor[],
           build_receipt: manifestAddressedPointer(root.build_receipt, "build_receipt", files),
-          export_profile: root.export_profile === "resolved-pack-v1"
-            ? "resolved-pack-v1"
+          export_profile: root.export_profile === "resolved-pack-v1" ||
+              root.export_profile === "resolved-pack-v1-verification" ||
+              root.export_profile === "resolved-pack-v1-production"
+            ? root.export_profile
             : (() => { throw new Error("Invalid release manifest export_profile"); })(),
           as_of_date: typeof root.as_of_date === "string" && /^\d{4}-\d{2}-\d{2}$/u.test(root.as_of_date)
             ? root.as_of_date
