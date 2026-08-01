@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "contract_id": "resolved-transit-public-key-registry-v1",
-  "head": "ab00ce5bcb7f9db576eab3e6152ff5f6de6b160c74cd0bf4f0c29581cf9d724d",
-  "operation_count": 920,
-  "receipt_id": "plan-053-public-key-review:4db345cba379a573ae2059c409956208133eab9a82d3ad224996a8b3139010bf",
-  "generator_commit": "f29cc5e3ee27dd4411405693e3474af4fb2c217e"
+  "head": "c0020a87605111db924001cb116ca01ddaf51fb6db2931839d29974da2f18339",
+  "operation_count": 923,
+  "receipt_id": "plan-054-public-key-review:0fe55a5efcccb4038638093d00537c67f422b0a428e6f0a0f3ca7118ce6cc572",
+  "generator_commit": "6182de23897a0893a36bd4f81e4805bcfebd1d9f"
 }
