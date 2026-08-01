@@ -1,0 +1,10 @@
+{"display_name":"Automated bus lane enforcement","schema_version":1,"treatment_family":"automated_bus_lane_enforcement","treatment_family_key":"automated-bus-lane-enforcement"}
+{"display_name":"Bus lanes","schema_version":1,"treatment_family":"bus_lane","treatment_family_key":"bus-lane"}
+{"display_name":"Bus priority","schema_version":1,"treatment_family":"bus_priority","treatment_family_key":"bus-priority"}
+{"display_name":"Bus stop or boarding changes","schema_version":1,"treatment_family":"bus_stop_or_boarding","treatment_family_key":"bus-stop-or-boarding"}
+{"display_name":"Fare collection","schema_version":1,"treatment_family":"fare_collection","treatment_family_key":"fare-collection"}
+{"display_name":"Route redesign","schema_version":1,"treatment_family":"route_redesign","treatment_family_key":"route-redesign"}
+{"display_name":"Service pattern","schema_version":1,"treatment_family":"service_pattern","treatment_family_key":"service-pattern"}
+{"display_name":"Signal priority","schema_version":1,"treatment_family":"signal_priority","treatment_family_key":"signal-priority"}
+{"display_name":"Signage and markings","schema_version":1,"treatment_family":"signage_and_markings","treatment_family_key":"signage-and-markings"}
+{"display_name":"Traffic restrictions","schema_version":1,"treatment_family":"traffic_restriction","treatment_family_key":"traffic-restriction"}
