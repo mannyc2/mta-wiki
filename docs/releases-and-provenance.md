@@ -2,13 +2,13 @@
 
 ## Current Release
 
-The current public data release is `resolved-pack-v1-production-candidate`,
+The current public data release is `resolved-pack-v1-production`,
 the production-eligible manifest-v7 Resolved Transit Knowledge Pack cut at
 the explicit as-of date `2026-07-27`.
 
-- Git tag: `resolved-pack-v1-production-candidate`
+- Git tag: `resolved-pack-v1-production`
 - Release pointer: `data/exports/releases/LATEST`
-- Release directory: `data/exports/releases/resolved-pack-v1-production-candidate/`
+- Release directory: `data/exports/releases/resolved-pack-v1-production/`
 - Public repository: `https://github.com/mannyc2/mta-wiki`
 
 The release manifest records per-kind counts, hashes, and pointers to companion release artifacts.
@@ -143,7 +143,7 @@ Tracked durable surfaces:
 - `data/quality/operational-coverage/`, the deterministic operational completion ledger and matrix.
 - `data/reference/gtfs/`, the small GTFS route/agency reference input used by SQLite projections.
 - `wiki/`, the generated wiki pages and source context pages.
-- `data/exports/releases/resolved-pack-v1-production-candidate/`, the current
+- `data/exports/releases/resolved-pack-v1-production/`, the current
   production Resolved Transit Knowledge Pack snapshot.
 - Documentation in `docs/`.
 
