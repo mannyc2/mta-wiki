@@ -12,7 +12,7 @@ is `plans/051-057-resolved-transit-completion-index.md`.
 | 052 | Close operational episode frontier | 051 | DONE (local closure; no publication authority) |
 | 053 | Review exact application semantics | 052 | DONE (local closure; no placement or publication authority) |
 | 054 | Close placement frontier and transitions | 053 | DONE (local closure; 1,773 terminal candidates, 104 placements, no lifecycle inference or publication) |
-| 055 | Close bitemporal lifecycle and footprint | 054 | READY |
+| 055 | Close bitemporal lifecycle and footprint | 054 | IN PROGRESS (104 frozen lifecycle candidates; 3 approved batches) |
 | 056 | Strict public pack and Tracker conformance | 055 | BLOCKED (055 gate) |
 | 057 | Production release, publication, and pin | 056 | BLOCKED (056 gate + owner approvals) |
 
