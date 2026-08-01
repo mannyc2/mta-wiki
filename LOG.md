@@ -6,6 +6,27 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-08-01
 
+### Published the production Resolved Transit Knowledge Pack
+
+- Published `resolved-pack-v1-production-candidate` as the current non-prerelease
+  GitHub Release and promoted `data/exports/releases/LATEST`. The annotated tag
+  targets promotion commit `038e36394a56900f309af10d26e649e8805a581c`.
+  Freshly downloaded `manifest.json`, `SHA256SUMS`, and deterministic
+  `tar.zst` assets match the locally verified bytes.
+- Two independent clean recuts from generator
+  `53d7fe0802620319d55065a722a5bd21608d149b` are identical across all 61
+  files. The production manifest is
+  `0658289179758acd140e4275de745931eae284eeff119c9169ebc47d425efa76`,
+  build ID is `af5a72647c4988da54941c3e8486ca94b7df1537dd9bb9db5e4a744beb61836f`,
+  and the final handoff has no production-ineligibility reasons.
+- The public product contains 157 reviewed episodes, 343 exact component
+  incidences, 104 stable placements, and zero confirmed-current placements at
+  the explicit `2026-07-27` as-of date. That zero does not assert inactivity or
+  absence. Tracker pin and deployment remain unperformed: downstream Plans 098
+  and 106 must first replace the legacy local authority paths and atomic serving
+  boundary. The dirty Tracker checkout was not mutated. Provider usage and cost
+  were zero.
+
 ### Split verification-candidate and production release eligibility
 
 - Manifest-v7 resolved-pack receipts now distinguish reproducible candidate
