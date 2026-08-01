@@ -17,6 +17,7 @@ const CAMPAIGN = "data/intervention-lifecycle/campaigns/plan-055";
 const FROZEN = `${CAMPAIGN}/frozen-cohort`;
 const BATCHES = `${CAMPAIGN}/batches`;
 const PORTFOLIO = `${CAMPAIGN}/portfolio.json`;
+const FREEZE_CORRECTION = `${CAMPAIGN}/freeze-correction-receipt.json`;
 const PRODUCTION_AS_OF = "2026-07-27";
 const REPRESENTATIVE_DATES = [
   "2025-06-28",
@@ -325,6 +326,14 @@ function buildCandidates(): LifecycleCandidate[] {
       ...(sourcePublishedAt === null && sourceRetrievedAt === null
         ? ["document_time_literal_not_iso_representable"]
         : []),
+      ...(phaseSemantics.lifecycle_phase === "planned" ? ["prospective_not_realized"] : []),
+      ...(phaseSemantics.lifecycle_phase === "other" &&
+          phaseSemantics.lifecycle_phase_other === "route rename"
+        ? ["no_exact_treatment_lifecycle_evidence"]
+        : []),
+      ...(phaseSemantics.event_kind === "machine installation begins"
+        ? ["implementation_not_operational_activation"]
+        : []),
     ]);
     const withoutHash = {
       schema_version: 1 as const,
@@ -367,9 +376,9 @@ function expectedFiles(): Map<string, string> {
     throw new Error(`Plan 055 precision partition drift: day=${day.length}; imprecise=${imprecise.length}`);
   }
   const specs = [
-    { batch_id: "historical-active-point-day-01", evidence_shape: "exact_day_historical_active_point", rows: day.slice(0, 42) },
-    { batch_id: "historical-active-point-day-02", evidence_shape: "exact_day_historical_active_point", rows: day.slice(42) },
-    { batch_id: "historical-active-point-imprecise-01", evidence_shape: "bounded_or_upper_bound_historical_active_point", rows: imprecise },
+    { batch_id: "lifecycle-point-day-01", evidence_shape: "exact_day_lifecycle_point_candidate", rows: day.slice(0, 42) },
+    { batch_id: "lifecycle-point-day-02", evidence_shape: "exact_day_lifecycle_point_candidate", rows: day.slice(42) },
+    { batch_id: "lifecycle-point-imprecise-01", evidence_shape: "imprecise_lifecycle_point_candidate", rows: imprecise },
   ];
   const cohortContent = jsonl(candidates);
   const cohortSha = sha256(cohortContent);
@@ -416,6 +425,26 @@ function expectedFiles(): Map<string, string> {
     canonical_evidence_artifacts: canonicalArtifacts,
   }));
   const files = new Map<string, string>();
+  const freezeCorrectionContent = json({
+    schema_version: 1,
+    contract_id: "plan-055-freeze-correction-receipt-v1",
+    plan_id: PLAN_ID,
+    superseded_checkpoint_commit: "cc6b5a33f62ea1124c80964cdd2556b18c2b245c",
+    superseded_portfolio_path:
+      `${CAMPAIGN}/superseded/cc6b5a33/portfolio.json`,
+    superseded_portfolio_sha256:
+      "07d7a28d90c7a0f74f0c494aadb6a742d33058989ab89304957e112b49d35b27",
+    superseded_cohort_path:
+      `${CAMPAIGN}/superseded/cc6b5a33/frozen-cohort/cohort.jsonl`,
+    superseded_cohort_sha256:
+      "f9d02df9f444f6a30070116f81cde294b0c79fbb6077b3eba974dce4bff6de78",
+    correction_reason:
+      "Neutralize preaccepted active semantics before review; six planned and three route-rename candidates require evidence-specific terminal decisions.",
+    review_started_against_superseded_freeze: false,
+    semantic_acceptance_started_against_superseded_freeze: false,
+  });
+  files.set(FREEZE_CORRECTION, freezeCorrectionContent);
+  const freezeCorrectionArtifact = contentArtifact(FREEZE_CORRECTION, freezeCorrectionContent);
   files.set(`${FROZEN}/cohort.jsonl`, cohortContent);
   files.set(`${FROZEN}/summary.json`, json({
     schema_version: 1,
@@ -469,7 +498,13 @@ function expectedFiles(): Map<string, string> {
       cohort_input_sha256: cohortInputSha,
       production_as_of_date: PRODUCTION_AS_OF,
       representative_dates: REPRESENTATIVE_DATES,
-      input_artifacts: [cohortArtifact, ...dependencyArtifacts, ...codeArtifacts, ...canonicalArtifacts],
+      input_artifacts: [
+        cohortArtifact,
+        freezeCorrectionArtifact,
+        ...dependencyArtifacts,
+        ...codeArtifacts,
+        ...canonicalArtifacts,
+      ],
       candidates: spec.rows.map((row) => ({
         lifecycle_candidate_id: row.lifecycle_candidate_id,
         candidate_sha256: row.candidate_sha256,
@@ -528,6 +563,7 @@ function expectedFiles(): Map<string, string> {
     cohort_sha256: cohortSha,
     cohort_input_sha256: cohortInputSha,
     manifest_partition_sha256: manifestPartitionSha,
+    freeze_correction_receipt: freezeCorrectionArtifact,
     manifests,
     provider_usage: {
       provider_requests: 0,

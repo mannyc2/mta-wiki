@@ -69,6 +69,10 @@ describe("Plan 055 frozen lifecycle review portfolio", () => {
     expect(precisions).toEqual({ day: 84, month: 16, season: 3, upper_bound_day: 1 });
     expect(rows.filter((row) => row.risk_classes.includes("cross_source_continuity"))).toHaveLength(27);
     expect(rows.filter((row) => row.risk_classes.includes("uncertain_valid_time_bounds"))).toHaveLength(20);
+    expect(rows.filter((row) => row.risk_classes.includes("prospective_not_realized"))).toHaveLength(6);
+    expect(rows.filter((row) =>
+      row.risk_classes.includes("no_exact_treatment_lifecycle_evidence")
+    )).toHaveLength(3);
   });
 
   it("partitions three independently reviewed content-addressed batches exactly once", () => {
