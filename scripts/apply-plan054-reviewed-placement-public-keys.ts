@@ -30,8 +30,6 @@ const integrationRelative =
   `${campaign}/accepted/public-key-review-integration-v1.json`;
 const baselineHead =
   "ab00ce5bcb7f9db576eab3e6152ff5f6de6b160c74cd0bf4f0c29581cf9d724d";
-const baselineMigrationReceipt =
-  "public-key-migration:ae8c3e3dac957c787228586f235a06dc9c03e1925abc5d689b0b86aded87cf72";
 const baselineInputFingerprint =
   "b1dc46454df561432bb742bd2736f00a6c0c2b5ee56238511d7b45d74d8914dd";
 
@@ -153,6 +151,7 @@ function reviewedOperations(): PublicKeyOperation[] {
 
 function receiptWithoutId(input: {
   generatorCommit: string;
+  baselineMigrationReceipt: string;
   prior: readonly PublicKeyOperation[];
   additions: readonly PublicKeyOperation[];
 }): Record<string, unknown> {
@@ -183,7 +182,7 @@ function receiptWithoutId(input: {
     })),
     baseline_prepare: {
       registry_head: baselineHead,
-      receipt_id: baselineMigrationReceipt,
+      receipt_id: input.baselineMigrationReceipt,
       input_fingerprint: baselineInputFingerprint,
       eligible_subject_count: 681,
       existing_live_key_count: 577,
@@ -232,6 +231,7 @@ function receiptWithoutId(input: {
 
 function receipt(input: {
   generatorCommit: string;
+  baselineMigrationReceipt: string;
   prior: readonly PublicKeyOperation[];
   additions: readonly PublicKeyOperation[];
 }): Record<string, unknown> {
@@ -255,7 +255,6 @@ function write(): void {
   });
   const reviewSubjects = new Set(reviewedPlacements.map((row) => row.subject_id));
   if (
-    baseline.receipt_id !== baselineMigrationReceipt ||
     baseline.input_fingerprint !== baselineInputFingerprint ||
     baseline.registry_head !== baselineHead ||
     baseline.eligible_subject_count !== 681 ||
@@ -277,7 +276,12 @@ function write(): void {
   const additions = reviewedOperations();
   const updated = [...prior, ...additions];
   replayPublicKeyOperations(updated);
-  const acceptedReceipt = receipt({ generatorCommit, prior, additions });
+  const acceptedReceipt = receipt({
+    generatorCommit,
+    baselineMigrationReceipt: baseline.receipt_id,
+    prior,
+    additions,
+  });
   const receiptId = String(acceptedReceipt.receipt_id);
   const receiptHash = receiptId.split(":")[1];
   if (!receiptHash) throw new Error("review receipt id lacks hash");
@@ -325,6 +329,7 @@ function write(): void {
     },
     accepted_review_establishment_count: additions.length,
     public_identity_redirect_count: 0,
+    baseline_migration_receipt_id: baseline.receipt_id,
   };
   const integration = {
     ...integrationWithoutId,
@@ -351,6 +356,7 @@ function check(): void {
     result_registry_prefix: { operation_count: number; head: string };
     accepted_review_establishment_count: number;
     public_identity_redirect_count: number;
+    baseline_migration_receipt_id: string;
   };
   if (
     integration.contract_id !==
@@ -358,7 +364,10 @@ function check(): void {
     integration.prior_registry.operation_count !== 920 ||
     integration.prior_registry.head !== baselineHead ||
     integration.accepted_review_establishment_count !== 3 ||
-    integration.public_identity_redirect_count !== 0
+    integration.public_identity_redirect_count !== 0 ||
+    !integration.baseline_migration_receipt_id.startsWith(
+      "public-key-migration:",
+    )
   ) {
     throw new Error("Plan 054 public-key review integration is invalid");
   }
@@ -381,6 +390,7 @@ function check(): void {
   }
   const expectedReceipt = receipt({
     generatorCommit: integration.generator_commit,
+    baselineMigrationReceipt: integration.baseline_migration_receipt_id,
     prior,
     additions,
   });
