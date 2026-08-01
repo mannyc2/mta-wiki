@@ -1,0 +1,170 @@
+{"aliases":["B12"],"display_name":"B12","gtfs_route_id":"B12","route_key":"b12","schema_version":1}
+{"aliases":["B38"],"display_name":"Proposed B38 Local","gtfs_route_id":"B38","route_key":"b38","schema_version":1}
+{"aliases":["B41"],"display_name":"Proposed B41 Local","gtfs_route_id":"B41","route_key":"b41","schema_version":1}
+{"aliases":["B44+"],"display_name":"Nostrand Avenue-Rogers Avenue Select Bus Service (B44)","gtfs_route_id":"B44+","route_key":"b44-sbs","schema_version":1}
+{"aliases":["B46"],"display_name":"B46 Local","gtfs_route_id":"B46","route_key":"b46","schema_version":1}
+{"aliases":["B46+"],"display_name":"B46-SBS - ABLE route","gtfs_route_id":"B46+","route_key":"b46-sbs","schema_version":1}
+{"aliases":["B57"],"display_name":"B57 bus","gtfs_route_id":"B57","route_key":"b57","schema_version":1}
+{"aliases":["B6"],"display_name":"B6","gtfs_route_id":"B6","route_key":"b6","schema_version":1}
+{"aliases":["B60"],"display_name":"B60 Brooklyn","gtfs_route_id":"B60","route_key":"b60","schema_version":1}
+{"aliases":["B62"],"display_name":"B62 - ABLE route","gtfs_route_id":"B62","route_key":"b62","schema_version":1}
+{"aliases":["B67"],"display_name":"B67","gtfs_route_id":"B67","route_key":"b67","schema_version":1}
+{"aliases":["B68"],"display_name":"B68 Bus Route","gtfs_route_id":"B68","route_key":"b68","schema_version":1}
+{"aliases":["B82+"],"display_name":"Southern Brooklyn Select Bus Service","gtfs_route_id":"B82+","route_key":"b82-sbs","schema_version":1}
+{"aliases":["BM2"],"display_name":"BM2 Express","gtfs_route_id":"BM2","route_key":"bm2","schema_version":1}
+{"aliases":["BM5"],"display_name":"BM5 Express","gtfs_route_id":"BM5","route_key":"bm5","schema_version":1}
+{"aliases":["BX12+"],"display_name":"BX12-SBS - ABLE route","gtfs_route_id":"BX12+","route_key":"bx12-sbs","schema_version":1}
+{"aliases":["BX18A"],"display_name":"Bx18A","gtfs_route_id":"BX18A","route_key":"bx18a","schema_version":1}
+{"aliases":["BX18B"],"display_name":"Bx18B","gtfs_route_id":"BX18B","route_key":"bx18b","schema_version":1}
+{"aliases":["BX20"],"display_name":"Bx20","gtfs_route_id":"BX20","route_key":"bx20","schema_version":1}
+{"aliases":["BX3"],"display_name":"MTA Bus Bx3","gtfs_route_id":"BX3","route_key":"bx3","schema_version":1}
+{"aliases":["BX36"],"display_name":"BX36 - ABLE route","gtfs_route_id":"BX36","route_key":"bx36","schema_version":1}
+{"aliases":["BX41+"],"display_name":"BX41-SBS - ABLE route","gtfs_route_id":"BX41+","route_key":"bx41-sbs","schema_version":1}
+{"aliases":["BX5"],"display_name":"Bx5","gtfs_route_id":"BX5","route_key":"bx5","schema_version":1}
+{"aliases":["BX6+"],"display_name":"South Bronx Select Bus Service (Bx6)","gtfs_route_id":"BX6+","route_key":"bx6-sbs","schema_version":1}
+{"aliases":["BX7"],"display_name":"Bx7","gtfs_route_id":"BX7","route_key":"bx7","schema_version":1}
+{"aliases":["M100"],"display_name":"M100","gtfs_route_id":"M100","route_key":"m100","schema_version":1}
+{"aliases":["M101"],"display_name":"M101","gtfs_route_id":"M101","route_key":"m101","schema_version":1}
+{"aliases":["M102"],"display_name":"M102 Bus Route","gtfs_route_id":"M102","route_key":"m102","schema_version":1}
+{"aliases":["M103"],"display_name":"M103","gtfs_route_id":"M103","route_key":"m103","schema_version":1}
+{"aliases":["M116"],"display_name":"M116 Manhattan","gtfs_route_id":"M116","route_key":"m116","schema_version":1}
+{"aliases":["M14+"],"display_name":"M14 A/D Select Bus Service","gtfs_route_id":"M14+","route_key":"m14-sbs","schema_version":1}
+{"aliases":["M15+"],"display_name":"M15-SBS - ABLE route","gtfs_route_id":"M15+","route_key":"m15-sbs","schema_version":1}
+{"aliases":["M16"],"display_name":"M16 Bus Route on 34th Street","gtfs_route_id":"M16","route_key":"m16","schema_version":1}
+{"aliases":["M2"],"display_name":"M2 Local Bus","gtfs_route_id":"M2","route_key":"m2","schema_version":1}
+{"aliases":["M34+"],"display_name":"M34 Bus Route (Local)","gtfs_route_id":"M34+","route_key":"m34-sbs","schema_version":1}
+{"aliases":["M34+"],"display_name":"M34/M34A on 34th Street Busway","gtfs_route_id":"M34+","route_key":"m34-select-bus-service","schema_version":1}
+{"aliases":["M34A+"],"display_name":"M34A SBS","gtfs_route_id":"M34A+","route_key":"m34a-sbs","schema_version":1}
+{"aliases":["M4"],"display_name":"M4 Local Bus","gtfs_route_id":"M4","route_key":"m4","schema_version":1}
+{"aliases":["M42"],"display_name":"M42","gtfs_route_id":"M42","route_key":"m42","schema_version":1}
+{"aliases":["M57"],"display_name":"M57 Bus Route","gtfs_route_id":"M57","route_key":"m57","schema_version":1}
+{"aliases":["M60+"],"display_name":"M60 SBS - Manhattan to La Guardia Airport","gtfs_route_id":"M60+","route_key":"m60-sbs","schema_version":1}
+{"aliases":["M79+"],"display_name":"M79 Select Bus Service","gtfs_route_id":"M79+","route_key":"m79-sbs","schema_version":1}
+{"aliases":["M86+"],"display_name":"M86 SBS Route","gtfs_route_id":"M86+","route_key":"m86-sbs","schema_version":1}
+{"aliases":["Q1"],"display_name":"Q1 bus route","gtfs_route_id":"Q1","route_key":"q1","schema_version":1}
+{"aliases":["Q10"],"display_name":"Q10 bus route","gtfs_route_id":"Q10","route_key":"q10","schema_version":1}
+{"aliases":["Q100"],"display_name":"Q100","gtfs_route_id":"Q100","route_key":"q100","schema_version":1}
+{"aliases":["Q101"],"display_name":"Q101 Local Bus Route","gtfs_route_id":"Q101","route_key":"q101","schema_version":1}
+{"aliases":["Q102"],"display_name":"Q102 route (mentioned)","gtfs_route_id":"Q102","route_key":"q102","schema_version":1}
+{"aliases":["Q103"],"display_name":"Q103 reroute to 21 St and 44 St","gtfs_route_id":"Q103","route_key":"q103","schema_version":1}
+{"aliases":["Q104"],"display_name":"Q104","gtfs_route_id":"Q104","route_key":"q104","schema_version":1}
+{"aliases":["Q11"],"display_name":"Q11 Local","gtfs_route_id":"Q11","route_key":"q11","schema_version":1}
+{"aliases":["Q110"],"display_name":"Q110 bus route","gtfs_route_id":"Q110","route_key":"q110","schema_version":1}
+{"aliases":["Q111"],"display_name":"Q111 Rush Route","gtfs_route_id":"Q111","route_key":"q111","schema_version":1}
+{"aliases":["Q112"],"display_name":"Q112","gtfs_route_id":"Q112","route_key":"q112","schema_version":1}
+{"aliases":["Q113"],"display_name":"Q113","gtfs_route_id":"Q113","route_key":"q113","schema_version":1}
+{"aliases":["Q114"],"display_name":"Q114","gtfs_route_id":"Q114","route_key":"q114","schema_version":1}
+{"aliases":["Q115"],"display_name":"Q115","gtfs_route_id":"Q115","route_key":"q115","schema_version":1}
+{"aliases":["Q12"],"display_name":"Q12","gtfs_route_id":"Q12","route_key":"q12","schema_version":1}
+{"aliases":["Q13"],"display_name":"Q13 (NYCT)","gtfs_route_id":"Q13","route_key":"q13","schema_version":1}
+{"aliases":["Q14"],"display_name":"Q14 bus route","gtfs_route_id":"Q14","route_key":"q14","schema_version":1}
+{"aliases":["Q15"],"display_name":"Q15","gtfs_route_id":"Q15","route_key":"q15","schema_version":1}
+{"aliases":["Q16"],"display_name":"Q16","gtfs_route_id":"Q16","route_key":"q16","schema_version":1}
+{"aliases":["Q17"],"display_name":"Q17","gtfs_route_id":"Q17","route_key":"q17","schema_version":1}
+{"aliases":["Q18"],"display_name":"Q18","gtfs_route_id":"Q18","route_key":"q18","schema_version":1}
+{"aliases":["Q19"],"display_name":"Q19","gtfs_route_id":"Q19","route_key":"q19","schema_version":1}
+{"aliases":["Q2"],"display_name":"Q2","gtfs_route_id":"Q2","route_key":"q2","schema_version":1}
+{"aliases":["Q20"],"display_name":"Q20","gtfs_route_id":"Q20","route_key":"q20","schema_version":1}
+{"aliases":["Q22"],"display_name":"Q22 bus route","gtfs_route_id":"Q22","route_key":"q22","schema_version":1}
+{"aliases":["Q23"],"display_name":"Q23","gtfs_route_id":"Q23","route_key":"q23","schema_version":1}
+{"aliases":["Q24"],"display_name":"Q24","gtfs_route_id":"Q24","route_key":"q24","schema_version":1}
+{"aliases":["Q25"],"display_name":"Q25 bus route","gtfs_route_id":"Q25","route_key":"q25","schema_version":1}
+{"aliases":["Q26"],"display_name":"Q26","gtfs_route_id":"Q26","route_key":"q26","schema_version":1}
+{"aliases":["Q27"],"display_name":"Q27","gtfs_route_id":"Q27","route_key":"q27","schema_version":1}
+{"aliases":["Q28"],"display_name":"Q28 (NYCT)","gtfs_route_id":"Q28","route_key":"q28","schema_version":1}
+{"aliases":["Q29"],"display_name":"Q29","gtfs_route_id":"Q29","route_key":"q29","schema_version":1}
+{"aliases":["Q3"],"display_name":"Q3","gtfs_route_id":"Q3","route_key":"q3","schema_version":1}
+{"aliases":["Q30"],"display_name":"Q30","gtfs_route_id":"Q30","route_key":"q30","schema_version":1}
+{"aliases":["Q31"],"display_name":"Q31","gtfs_route_id":"Q31","route_key":"q31","schema_version":1}
+{"aliases":["Q32"],"display_name":"Q32 Local Bus Route","gtfs_route_id":"Q32","route_key":"q32","schema_version":1}
+{"aliases":["Q33"],"display_name":"Q33","gtfs_route_id":"Q33","route_key":"q33","schema_version":1}
+{"aliases":["Q35"],"display_name":"Q35 (MTA Bus)","gtfs_route_id":"Q35","route_key":"q35","schema_version":1}
+{"aliases":["Q36"],"display_name":"Q36","gtfs_route_id":"Q36","route_key":"q36","schema_version":1}
+{"aliases":["Q37"],"display_name":"Q37","gtfs_route_id":"Q37","route_key":"q37","schema_version":1}
+{"aliases":["Q38"],"display_name":"Q38 bus route","gtfs_route_id":"Q38","route_key":"q38","schema_version":1}
+{"aliases":["Q39"],"display_name":"Q39","gtfs_route_id":"Q39","route_key":"q39","schema_version":1}
+{"aliases":["Q4"],"display_name":"Q4","gtfs_route_id":"Q4","route_key":"q4","schema_version":1}
+{"aliases":["Q40"],"display_name":"Q40","gtfs_route_id":"Q40","route_key":"q40","schema_version":1}
+{"aliases":["Q41"],"display_name":"Q41","gtfs_route_id":"Q41","route_key":"q41","schema_version":1}
+{"aliases":["Q42"],"display_name":"Q42","gtfs_route_id":"Q42","route_key":"q42","schema_version":1}
+{"aliases":["Q43"],"display_name":"Q43 - ABLE route","gtfs_route_id":"Q43","route_key":"q43","schema_version":1}
+{"aliases":["Q45"],"display_name":"Q45","gtfs_route_id":"Q45","route_key":"q45","schema_version":1}
+{"aliases":["Q46"],"display_name":"Q46","gtfs_route_id":"Q46","route_key":"q46","schema_version":1}
+{"aliases":["Q47"],"display_name":"Q47","gtfs_route_id":"Q47","route_key":"q47","schema_version":1}
+{"aliases":["Q48"],"display_name":"Q48 Glen Oaks service","gtfs_route_id":"Q48","route_key":"q48","schema_version":1}
+{"aliases":["Q49"],"display_name":"Q49","gtfs_route_id":"Q49","route_key":"q49","schema_version":1}
+{"aliases":["Q5"],"display_name":"Q5 on Merrick Boulevard, Queens (TSP in development)","gtfs_route_id":"Q5","route_key":"q5","schema_version":1}
+{"aliases":["Q50"],"display_name":"Q50","gtfs_route_id":"Q50","route_key":"q50","schema_version":1}
+{"aliases":["Q51"],"display_name":"Q51 bus route","gtfs_route_id":"Q51","route_key":"q51","schema_version":1}
+{"aliases":["Q52+"],"display_name":"Q52 LTD","gtfs_route_id":"Q52+","route_key":"q52-limited","schema_version":1}
+{"aliases":["Q52+"],"display_name":"Q52 SBS bus route","gtfs_route_id":"Q52+","route_key":"q52-sbs","schema_version":1}
+{"aliases":["Q53+"],"display_name":"Q53 LTD","gtfs_route_id":"Q53+","route_key":"q53-limited","schema_version":1}
+{"aliases":["Q53+"],"display_name":"Q53 SBS on Woodhaven Boulevard, Queens (TSP in development)","gtfs_route_id":"Q53+","route_key":"q53-sbs","schema_version":1}
+{"aliases":["Q54"],"display_name":"Q54 - ABLE route","gtfs_route_id":"Q54","route_key":"q54","schema_version":1}
+{"aliases":["Q55"],"display_name":"Q55","gtfs_route_id":"Q55","route_key":"q55","schema_version":1}
+{"aliases":["Q56"],"display_name":"Q56","gtfs_route_id":"Q56","route_key":"q56","schema_version":1}
+{"aliases":["Q58"],"display_name":"Q58 - ABLE route","gtfs_route_id":"Q58","route_key":"q58","schema_version":1}
+{"aliases":["Q59"],"display_name":"Q59 bus","gtfs_route_id":"Q59","route_key":"q59","schema_version":1}
+{"aliases":["Q60"],"display_name":"Q60 Local Bus Route","gtfs_route_id":"Q60","route_key":"q60","schema_version":1}
+{"aliases":["Q61"],"display_name":"Q61 bus route","gtfs_route_id":"Q61","route_key":"q61","schema_version":1}
+{"aliases":["Q63"],"display_name":"Q63","gtfs_route_id":"Q63","route_key":"q63","schema_version":1}
+{"aliases":["Q64"],"display_name":"Q64","gtfs_route_id":"Q64","route_key":"q64","schema_version":1}
+{"aliases":["Q65"],"display_name":"Q65 on 164 St","gtfs_route_id":"Q65","route_key":"q65","schema_version":1}
+{"aliases":["Q66"],"display_name":"Q66 bus route","gtfs_route_id":"Q66","route_key":"q66","schema_version":1}
+{"aliases":["Q67"],"display_name":"Q67","gtfs_route_id":"Q67","route_key":"q67","schema_version":1}
+{"aliases":["Q69"],"display_name":"Q69 (MTA Bus)","gtfs_route_id":"Q69","route_key":"q69","schema_version":1}
+{"aliases":["Q70+"],"display_name":"Q70 SBS LaGuardia Airport","gtfs_route_id":"Q70+","route_key":"q70-sbs","schema_version":1}
+{"aliases":["Q72"],"display_name":"Q72","gtfs_route_id":"Q72","route_key":"q72","schema_version":1}
+{"aliases":["Q74"],"display_name":"Q74","gtfs_route_id":"Q74","route_key":"q74","schema_version":1}
+{"aliases":["Q75"],"display_name":"Q75","gtfs_route_id":"Q75","route_key":"q75","schema_version":1}
+{"aliases":["Q76"],"display_name":"Q76","gtfs_route_id":"Q76","route_key":"q76","schema_version":1}
+{"aliases":["Q77"],"display_name":"Q77 bus route","gtfs_route_id":"Q77","route_key":"q77","schema_version":1}
+{"aliases":["Q80"],"display_name":"Q80 bus route","gtfs_route_id":"Q80","route_key":"q80","schema_version":1}
+{"aliases":["Q82"],"display_name":"Q82 bus route","gtfs_route_id":"Q82","route_key":"q82","schema_version":1}
+{"aliases":["Q83"],"display_name":"Q83","gtfs_route_id":"Q83","route_key":"q83","schema_version":1}
+{"aliases":["Q84"],"display_name":"Q84","gtfs_route_id":"Q84","route_key":"q84","schema_version":1}
+{"aliases":["Q85"],"display_name":"Q85 Rush Route","gtfs_route_id":"Q85","route_key":"q85","schema_version":1}
+{"aliases":["Q86"],"display_name":"Q86","gtfs_route_id":"Q86","route_key":"q86","schema_version":1}
+{"aliases":["Q87"],"display_name":"Q87","gtfs_route_id":"Q87","route_key":"q87","schema_version":1}
+{"aliases":["Q88"],"display_name":"Q88","gtfs_route_id":"Q88","route_key":"q88","schema_version":1}
+{"aliases":["Q89"],"display_name":"Q89","gtfs_route_id":"Q89","route_key":"q89","schema_version":1}
+{"aliases":["Q90"],"display_name":"Q90","gtfs_route_id":"Q90","route_key":"q90","schema_version":1}
+{"aliases":["Q98"],"display_name":"Q98","gtfs_route_id":"Q98","route_key":"q98","schema_version":1}
+{"aliases":["QM1"],"display_name":"QM1 Express Bus Route","gtfs_route_id":"QM1","route_key":"qm1","schema_version":1}
+{"aliases":["QM10"],"display_name":"QM10 Express Bus Route","gtfs_route_id":"QM10","route_key":"qm10","schema_version":1}
+{"aliases":["QM11"],"display_name":"QM11","gtfs_route_id":"QM11","route_key":"qm11","schema_version":1}
+{"aliases":["QM12"],"display_name":"QM12 Express Bus Route","gtfs_route_id":"QM12","route_key":"qm12","schema_version":1}
+{"aliases":["QM15"],"display_name":"QM15 Express Bus Route","gtfs_route_id":"QM15","route_key":"qm15","schema_version":1}
+{"aliases":["QM16"],"display_name":"QM16 Express Bus Route","gtfs_route_id":"QM16","route_key":"qm16","schema_version":1}
+{"aliases":["QM17"],"display_name":"QM17 Express Bus Route","gtfs_route_id":"QM17","route_key":"qm17","schema_version":1}
+{"aliases":["QM18"],"display_name":"QM18 Express Bus Route","gtfs_route_id":"QM18","route_key":"qm18","schema_version":1}
+{"aliases":["QM2"],"display_name":"QM2 Express Bus Route","gtfs_route_id":"QM2","route_key":"qm2","schema_version":1}
+{"aliases":["QM20"],"display_name":"QM20","gtfs_route_id":"QM20","route_key":"qm20","schema_version":1}
+{"aliases":["QM21"],"display_name":"QM21 Express Bus Route","gtfs_route_id":"QM21","route_key":"qm21","schema_version":1}
+{"aliases":["QM24"],"display_name":"QM24 Express Bus Route","gtfs_route_id":"QM24","route_key":"qm24","schema_version":1}
+{"aliases":["QM25"],"display_name":"QM25","gtfs_route_id":"QM25","route_key":"qm25","schema_version":1}
+{"aliases":["QM31"],"display_name":"QM31","gtfs_route_id":"QM31","route_key":"qm31","schema_version":1}
+{"aliases":["QM32"],"display_name":"QM32","gtfs_route_id":"QM32","route_key":"qm32","schema_version":1}
+{"aliases":["QM34"],"display_name":"QM34","gtfs_route_id":"QM34","route_key":"qm34","schema_version":1}
+{"aliases":["QM35"],"display_name":"QM35","gtfs_route_id":"QM35","route_key":"qm35","schema_version":1}
+{"aliases":["QM36"],"display_name":"QM36","gtfs_route_id":"QM36","route_key":"qm36","schema_version":1}
+{"aliases":["QM4"],"display_name":"QM4 Express Bus Route","gtfs_route_id":"QM4","route_key":"qm4","schema_version":1}
+{"aliases":["QM40"],"display_name":"QM40","gtfs_route_id":"QM40","route_key":"qm40","schema_version":1}
+{"aliases":["QM42"],"display_name":"QM42","gtfs_route_id":"QM42","route_key":"qm42","schema_version":1}
+{"aliases":["QM44"],"display_name":"QM44","gtfs_route_id":"QM44","route_key":"qm44","schema_version":1}
+{"aliases":["QM5"],"display_name":"QM5","gtfs_route_id":"QM5","route_key":"qm5","schema_version":1}
+{"aliases":["QM6"],"display_name":"QM6","gtfs_route_id":"QM6","route_key":"qm6","schema_version":1}
+{"aliases":["QM63"],"display_name":"QM63","gtfs_route_id":"QM63","route_key":"qm63","schema_version":1}
+{"aliases":["QM64"],"display_name":"QM64","gtfs_route_id":"QM64","route_key":"qm64","schema_version":1}
+{"aliases":["QM65"],"display_name":"QM65","gtfs_route_id":"QM65","route_key":"qm65","schema_version":1}
+{"aliases":["QM68"],"display_name":"QM68","gtfs_route_id":"QM68","route_key":"qm68","schema_version":1}
+{"aliases":["QM7"],"display_name":"QM7","gtfs_route_id":"QM7","route_key":"qm7","schema_version":1}
+{"aliases":["QM8"],"display_name":"QM8","gtfs_route_id":"QM8","route_key":"qm8","schema_version":1}
+{"aliases":["S46"],"display_name":"S46","gtfs_route_id":"S46","route_key":"s46","schema_version":1}
+{"aliases":["S79+"],"display_name":"S79-SBS - ABLE route","gtfs_route_id":"S79+","route_key":"s79-sbs","schema_version":1}
+{"aliases":["S96"],"display_name":"S96","gtfs_route_id":"S96","route_key":"s96","schema_version":1}
+{"aliases":["SIM1C"],"display_name":"SIM1C (NYCT)","gtfs_route_id":"SIM1C","route_key":"sim1c","schema_version":1}
+{"aliases":["SIM23"],"display_name":"SIM23 Express Bus","gtfs_route_id":"SIM23","route_key":"sim23","schema_version":1}
+{"aliases":["SIM24"],"display_name":"SIM24 Express Bus","gtfs_route_id":"SIM24","route_key":"sim24","schema_version":1}
+{"aliases":["SIM4C"],"display_name":"SIM4C (NYCT)","gtfs_route_id":"SIM4C","route_key":"sim4c","schema_version":1}
+{"aliases":["X27"],"display_name":"X27 (NYCT)","gtfs_route_id":"X27","route_key":"x27","schema_version":1}
