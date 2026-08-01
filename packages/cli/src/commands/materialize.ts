@@ -373,18 +373,20 @@ export const materializeCommands = {
     const build = buildProductionInterventionPlacements(asOfDate);
     if (process.argv.includes("--check")) checkInterventionLifecycleProjection(output, build.lifecycle);
     else writeInterventionLifecycleProjection(output, build.lifecycle);
-    const resolved = loadResolvedInterventions(productionResolvedInterventionDir());
-    rebuildResolvedTransitDb({
-      ...resolved,
-      placements: build.registry,
-      placement_transitions: build.transitions,
-      placement_frontier: build.frontier.candidate_ledger,
-      placement_reconciliation: build.frontier.transition_reconciliation,
-      documentary_lifecycle_observations: build.documentary_lifecycle_observations,
-      lifecycle_assertions: build.lifecycle.assertions,
-      placement_states_as_of: build.lifecycle.states,
-      current_footprint: build.lifecycle.footprint,
-    });
+    if (!process.argv.includes("--check")) {
+      const resolved = loadResolvedInterventions(productionResolvedInterventionDir());
+      rebuildResolvedTransitDb({
+        ...resolved,
+        placements: build.registry,
+        placement_transitions: build.transitions,
+        placement_frontier: build.frontier.candidate_ledger,
+        placement_reconciliation: build.frontier.transition_reconciliation,
+        documentary_lifecycle_observations: build.documentary_lifecycle_observations,
+        lifecycle_assertions: build.lifecycle.assertions,
+        placement_states_as_of: build.lifecycle.states,
+        current_footprint: build.lifecycle.footprint,
+      });
+    }
     console.log(
       `${process.argv.includes("--check") ? "Verified" : "Materialized"} intervention lifecycle as of ${asOfDate}: ` +
       `${build.lifecycle.summary.assertion_count} assertions, ` +

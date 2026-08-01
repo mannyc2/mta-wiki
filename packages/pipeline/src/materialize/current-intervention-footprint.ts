@@ -32,6 +32,7 @@ export type CurrentInterventionFootprintReconciliation = {
   explanation_code: string;
   supporting_assertion_ids: string[];
   conflicting_assertion_ids: string[];
+  terminal_decision_ids: string[];
 };
 
 export type InterventionLifecycleProjection = {
@@ -138,6 +139,7 @@ export function buildInterventionLifecycleProjection(input: {
       explanation_code: state.explanation_code,
       supporting_assertion_ids: state.supporting_assertion_ids,
       conflicting_assertion_ids: state.conflicting_assertion_ids,
+      terminal_decision_ids: state.terminal_decision_ids,
     }));
   const assertionIdsByPlacement = new Map<string, string[]>();
   for (const assertion of input.assertions) {

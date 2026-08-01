@@ -56,11 +56,20 @@ that are not placements. The 104 accepted positive transitions are exact
 reviewed additions; every other application has an explicit accepted negative
 transition disposition. Application action alone never authorizes a placement.
 
-Lifecycle truth remains a separate Plan 055 review. The explicit 2026-07-27
-projection therefore contains zero accepted lifecycle assertions, 104
-`unknown` placement states, 104 reconciliation rows, and zero
-confirmed-current footprint rows. This is evidence preservation, not a claim
-that the placements are inactive or that the real-world footprint is zero.
+Plan 055 independently reviewed the complete 104-placement lifecycle cohort.
+The terminal partition is 95 accepted historical-active assertions, six
+accepted planned assertions, and three rejected active candidates with
+explicit negative decisions; pending and conflicted review counts are zero.
+Application action alone never supplied lifecycle authority. Ten frozen dated
+snapshots preserve the accepted valid-time and document-time values separately.
+
+At the production as-of date 2026-07-27, 95 placements are
+`last_confirmed_active` and nine are `unknown`: six accepted plans do not
+resolve the later production date, and three reviewed negatives establish no
+state. All 104 placements therefore remain in footprint reconciliation and
+the confirmed-current footprint contains zero rows. This completed review
+supports zero *confirmed-current* placements; it is not a claim that the
+interventions are inactive or that the real-world footprint is zero.
 
 Build and inspect with an explicit date:
 

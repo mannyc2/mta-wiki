@@ -1,5 +1,6 @@
 import {
   cpSync,
+  mkdirSync,
   mkdtempSync,
   readFileSync,
   rmSync,
@@ -9,6 +10,7 @@ import {
 import { createHash } from "node:crypto";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { dirname } from "node:path";
 import { describe, expect, test } from "bun:test";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
@@ -18,12 +20,18 @@ import { runStudyFrontierPreflight } from "../../src/quality/study-frontier-pref
 describe("Plan 041 study frontier preflight", () => {
   const fixtureRoot = (): string => {
     const root = mkdtempSync(join(tmpdir(), "study-frontier-open-"));
-    cpSync(join(repoRoot, "data"), join(root, "data"), { recursive: true });
-    cpSync(
-      join(repoRoot, "packages/pipeline/src/quality/study-readiness-v1.ts"),
-      join(root, "packages/pipeline/src/quality/study-readiness-v1.ts"),
-      { recursive: true },
-    );
+    // Copy only the preflight's declared inputs. Copying the entire tracked
+    // data tree makes this unrelated fixture scale with every later campaign.
+    for (const relativePath of [
+      "data/quality",
+      "data/contracts/operational-occurrence-member-extent",
+      "data/exports/releases/v1-rc27/manifest.json",
+      "packages/pipeline/src/quality/study-readiness-v1.ts",
+    ]) {
+      const target = join(root, relativePath);
+      mkdirSync(dirname(target), { recursive: true });
+      cpSync(join(repoRoot, relativePath), target, { recursive: true });
+    }
     return root;
   };
   const mutateFirstJsonl = (

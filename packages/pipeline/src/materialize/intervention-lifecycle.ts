@@ -295,11 +295,21 @@ export function buildTransitionLifecycleAssertions(input: {
       ? transition.target_placement_ids
       : transition.result_placement_ids;
     const bounds = pointBounds(episode.resolved_onset.date, episode.resolved_onset.precision);
-    const evidenceBindings = transition.evidence_bindings.map((binding) => ({
-      record_id: binding.record_id,
-      source_id: binding.source_id,
-      evidence_id: binding.evidence_id,
-    }));
+    // A transition may bind the same canonical evidence under more than one
+    // application role. Lifecycle evidence has no role field, so collapse
+    // those bindings before constructing a candidate assertion.
+    const evidenceBindings = [...new Map(transition.evidence_bindings.map((binding) => {
+      const row = {
+        record_id: binding.record_id,
+        source_id: binding.source_id,
+        evidence_id: binding.evidence_id,
+      };
+      return [`${row.record_id}|${row.source_id}|${row.evidence_id}`, row] as const;
+    })).values()].sort((a, b) =>
+      `${a.record_id}|${a.source_id}|${a.evidence_id}`.localeCompare(
+        `${b.record_id}|${b.source_id}|${b.evidence_id}`,
+      )
+    );
     for (const binding of evidenceBindings) {
       const record = records.get(binding.record_id);
       if (!record || record.truth_status !== "source_stated" || record.review_state === "quarantined" ||
@@ -320,12 +330,11 @@ export function buildTransitionLifecycleAssertions(input: {
           end_latest: null,
           precision: bounds.precision,
         },
-        evidence_bindings: evidenceBindings.sort((a, b) =>
-          `${a.record_id}|${a.source_id}|${a.evidence_id}`.localeCompare(
-            `${b.record_id}|${b.source_id}|${b.evidence_id}`,
-          )
-        ),
-        decision_id: transition.decision_id,
+        evidence_bindings: evidenceBindings,
+        // Placement-transition review establishes identity mutation only. It
+        // is evidence for a lifecycle candidate, but is never lifecycle
+        // acceptance authority.
+        decision_id: null,
       };
       const assertionId = `assertion:${createHash("sha256").update(stableJson(partial as JsonValue)).digest("hex").slice(0, 24)}`;
       assertions.push(parseInterventionLifecycleAssertion({
@@ -338,7 +347,7 @@ export function buildTransitionLifecycleAssertions(input: {
           assertion_as_of: null,
         },
         truth_status: "source_stated",
-        review_state: "accepted",
+        review_state: "pending",
         supersedes_assertion_ids: [],
       }, `transition ${transition.transition_id} assertion ${placementId}`));
     }
@@ -375,7 +384,13 @@ export function validateAcceptedInterventionLifecycleAssertions(
   const episodes = new Set(input.episodes.map((row) => row.occurrence_id));
   const applications = new Set(input.applications.map((row) => row.application_id));
   const records = new Map(input.canonical_records.map((row) => [row.record_id, row]));
-  const ids = new Set(assertions.map((row) => row.assertion_id));
+  const assertionsById = new Map(assertions.map((row) => [row.assertion_id, row]));
+  const subjectKey = (assertion: InterventionLifecycleAssertion): string =>
+    assertion.subject.kind === "placement"
+      ? `placement|${assertion.subject.placement_id}`
+      : assertion.subject.kind === "episode"
+        ? `episode|${assertion.subject.occurrence_id}`
+        : `application|${assertion.subject.application_id}`;
   for (const assertion of assertions) {
     if (assertion.subject.kind === "placement" && !placements.has(assertion.subject.placement_id)) {
       throw new Error(`${assertion.assertion_id}: unbound placement assertion`);
@@ -386,8 +401,10 @@ export function validateAcceptedInterventionLifecycleAssertions(
     if (assertion.subject.kind === "application" && !applications.has(assertion.subject.application_id)) {
       throw new Error(`${assertion.assertion_id}: unbound application assertion`);
     }
-    if (assertion.review_state === "accepted" && assertion.decision_id === null) {
-      throw new Error(`${assertion.assertion_id}: accepted assertion requires an explicit decision`);
+    if (assertion.review_state !== "pending" && assertion.decision_id === null) {
+      throw new Error(
+        `${assertion.assertion_id}: ${assertion.review_state} assertion requires an explicit decision`,
+      );
     }
     for (const binding of assertion.evidence_bindings) {
       const record = records.get(binding.record_id);
@@ -397,7 +414,78 @@ export function validateAcceptedInterventionLifecycleAssertions(
           )) throw new Error(`${assertion.assertion_id}: evidence is not canonical`);
     }
     for (const superseded of assertion.supersedes_assertion_ids) {
-      if (!ids.has(superseded)) throw new Error(`${assertion.assertion_id}: missing superseded assertion`);
+      const supersededAssertion = assertionsById.get(superseded);
+      if (!supersededAssertion) throw new Error(`${assertion.assertion_id}: missing superseded assertion`);
+      if (superseded === assertion.assertion_id) {
+        throw new Error(`${assertion.assertion_id}: assertion cannot supersede itself`);
+      }
+      if (assertion.review_state !== "accepted" || assertion.decision_id === null) {
+        throw new Error(`${assertion.assertion_id}: supersedence requires accepted decision authority`);
+      }
+      if (subjectKey(assertion) !== subjectKey(supersededAssertion)) {
+        throw new Error(`${assertion.assertion_id}: cannot supersede a different lifecycle subject`);
+      }
+    }
+  }
+
+  const visiting = new Set<string>();
+  const visited = new Set<string>();
+  const visit = (assertionId: string): void => {
+    if (visiting.has(assertionId)) {
+      throw new Error(`${assertionId}: lifecycle supersedence graph must be acyclic`);
+    }
+    if (visited.has(assertionId)) return;
+    visiting.add(assertionId);
+    for (const supersededId of assertionsById.get(assertionId)!.supersedes_assertion_ids) {
+      visit(supersededId);
+    }
+    visiting.delete(assertionId);
+    visited.add(assertionId);
+  };
+  for (const assertion of assertions) visit(assertion.assertion_id);
+
+  const transitivelySupersedes = (newerId: string, olderId: string): boolean => {
+    const pending = [...assertionsById.get(newerId)!.supersedes_assertion_ids];
+    const seen = new Set(pending);
+    while (pending.length) {
+      const current = pending.shift()!;
+      if (current === olderId) return true;
+      for (const next of assertionsById.get(current)!.supersedes_assertion_ids) {
+        if (!seen.has(next)) {
+          seen.add(next);
+          pending.push(next);
+        }
+      }
+    }
+    return false;
+  };
+  const accepted = assertions.filter((assertion) => assertion.review_state === "accepted");
+  const possibleInterval = (assertion: InterventionLifecycleAssertion): [string, string] => {
+    const earliest = assertion.valid_time.start_earliest ?? "0000-00-00";
+    const latest = assertion.valid_time.coverage_kind === "point"
+      ? assertion.valid_time.start_latest ?? "9999-99-99"
+      : assertion.valid_time.end_latest ?? "9999-99-99";
+    return [earliest, latest];
+  };
+  const canOverlap = (
+    left: InterventionLifecycleAssertion,
+    right: InterventionLifecycleAssertion,
+  ): boolean => {
+    const [leftEarliest, leftLatest] = possibleInterval(left);
+    const [rightEarliest, rightLatest] = possibleInterval(right);
+    return leftEarliest <= rightLatest && rightEarliest <= leftLatest;
+  };
+  for (let leftIndex = 0; leftIndex < accepted.length; leftIndex += 1) {
+    const left = accepted[leftIndex]!;
+    for (const right of accepted.slice(leftIndex + 1)) {
+      if (subjectKey(left) !== subjectKey(right) ||
+          !canOverlap(left, right) ||
+          left.state === right.state ||
+          transitivelySupersedes(left.assertion_id, right.assertion_id) ||
+          transitivelySupersedes(right.assertion_id, left.assertion_id)) continue;
+      throw new Error(
+        `${left.assertion_id},${right.assertion_id}: contradictory accepted lifecycle states require explicit supersedence`,
+      );
     }
   }
   return assertions;

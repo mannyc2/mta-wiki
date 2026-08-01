@@ -18,6 +18,7 @@ export type InterventionStateAsOf = {
     | "unknown";
   supporting_assertion_ids: string[];
   conflicting_assertion_ids: string[];
+  terminal_decision_ids: string[];
   explanation_code: string;
   input_fingerprint: string;
 };
@@ -72,16 +73,24 @@ export function interventionStateAsOf(
   queryDate: string,
 ): InterventionStateAsOf {
   validateInterventionStateAsOfDate(queryDate);
-  const subjectAssertions = assertions
+  const allSubjectAssertions = assertions
     .filter((assertion) =>
       assertion.subject.kind === "placement" &&
-      assertion.subject.placement_id === placementId &&
-      assertion.review_state !== "rejected"
+      assertion.subject.placement_id === placementId
     )
     .sort((a, b) => a.assertion_id.localeCompare(b.assertion_id));
-  const supersededIds = new Set(subjectAssertions
+  const subjectAssertions = allSubjectAssertions.filter((assertion) =>
+    assertion.review_state !== "rejected"
+  );
+  const supersededIds = new Set(allSubjectAssertions
     .filter((assertion) => assertion.review_state === "accepted")
     .flatMap((assertion) => assertion.supersedes_assertion_ids));
+  const terminalDecisionIds = [...new Set(allSubjectAssertions
+    .filter((assertion) =>
+      assertion.review_state === "rejected" && !supersededIds.has(assertion.assertion_id)
+    )
+    .flatMap((assertion) => assertion.decision_id === null ? [] : [assertion.decision_id]))]
+    .sort();
   const current = subjectAssertions.filter((assertion) => !supersededIds.has(assertion.assertion_id));
   const pendingConflict = current.filter((assertion) =>
     (assertion.review_state === "conflicted" || assertion.review_state === "pending") &&
@@ -146,7 +155,14 @@ export function interventionStateAsOf(
       supporting = [latest.assertion_id];
     } else {
       state = "unknown";
-      explanation = accepted.length ? "accepted_evidence_does_not_resolve_date" : "no_accepted_assertion";
+      if (accepted.length) {
+        explanation = "accepted_evidence_does_not_resolve_date";
+        supporting = accepted.map((row) => row.assertion_id).sort();
+      } else {
+        explanation = terminalDecisionIds.length
+          ? "terminal_rejection_does_not_establish_state"
+          : "no_accepted_assertion";
+      }
     }
   }
   return {
@@ -156,11 +172,12 @@ export function interventionStateAsOf(
     state,
     supporting_assertion_ids: supporting,
     conflicting_assertion_ids: conflicting,
+    terminal_decision_ids: terminalDecisionIds,
     explanation_code: explanation,
     input_fingerprint: createHash("sha256").update(stableJson({
       placement_id: placementId,
       query_date: queryDate,
-      assertions: subjectAssertions,
+      assertions: allSubjectAssertions,
     } as JsonValue)).digest("hex"),
   };
 }

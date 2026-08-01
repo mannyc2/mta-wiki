@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "contract_id": "plan-055-primary-lifecycle-review-summary-v1",
+  "plan_id": "plan-055",
+  "starting_commit_sha": "81f895417a47e36214b00aab483d482742f80099",
+  "frozen_portfolio": {
+    "candidate_count": 104,
+    "batch_count": 3,
+    "cohort_sha256": "04284344463870931f56296c989759388aff29738ff3fc1cddd1cd9e06bd8ced",
+    "cohort_input_sha256": "33ca8a8992a61dd071159208424c02d2dfec15b9fb1cff7a02d787cbefce4e92",
+    "candidate_id_partition_sha256": "6c5daf5222ce48a00c69c267b1f49460a2ea804f02bffff765fbb826fa507b02",
+    "manifest_partition_sha256": "11948134a291d9029fa93d1df86b198e1e0c32240c62d35ec99ccf2786204de6"
+  },
+  "batches": [
+    {
+      "batch_id": "lifecycle-point-day-01",
+      "candidate_count": 42,
+      "primary_reviewer": "plan-055-primary-lifecycle-point-day-01",
+      "review_partition_sha256": "0794605d2e73b5d20cc370fc13ffc3ea0365a71a92b13227c153743352abcaa0"
+    },
+    {
+      "batch_id": "lifecycle-point-day-02",
+      "candidate_count": 42,
+      "primary_reviewer": "plan-055-primary-lifecycle-point-day-02",
+      "review_partition_sha256": "328491c1522431ddbfb4b80c1180d4513a093fbbf5acab6f8350283df4b6ad00"
+    },
+    {
+      "batch_id": "lifecycle-point-imprecise-01",
+      "candidate_count": 20,
+      "primary_reviewer": "plan-055-primary-lifecycle-point-imprecise-01",
+      "review_partition_sha256": "76ed34b192927b28365ee14153c5590ca4359fdc4c0ef3eade952f69385b10c1"
+    }
+  ],
+  "counts": {
+    "accepted": 101,
+    "negative": 3,
+    "proposed_active": 95,
+    "proposed_planned": 6,
+    "no_assertion": 3,
+    "independent_review_required": 104
+  },
+  "invariants": {
+    "every_frozen_candidate_exactly_once": true,
+    "every_live_placement_exactly_once": true,
+    "action_alone_authorized_lifecycle": false,
+    "open_interval_assertions": 0,
+    "provider_requests": 0,
+    "provider_cost_usd": 0
+  },
+  "primary_review_path": "/tmp/plan055-primary-review-frozen.jsonl",
+  "primary_review_sha256": "fbabc39f15700f6a5e869d7d3e8c721002ce47ae1341ce16d5d78468402a940f"
+}

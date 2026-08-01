@@ -6,6 +6,27 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-08-01
 
+### Closed bitemporal lifecycle and dated footprint
+
+- Closed the complete 104-placement lifecycle cohort through distinct primary
+  and independent review: 95 accepted historical-active assertions, six
+  accepted planned assertions, three rejected active candidates with explicit
+  negative decisions, and zero pending or conflicted review rows. Six
+  clean-room records preserve three QM63/QM64/QM68 treatment-binding
+  rejections, two bounded physical-machine-installation interpretations, and
+  the source-stated July–December 2019 Fulton valid-time range.
+- Froze ten explicit dated projections. At the owner-approved production date
+  2026-07-27, 95 placements are `last_confirmed_active` and nine are `unknown`;
+  all 104 placements reconcile, and zero are `confirmed_active`. This completed
+  review supports a zero confirmed-current footprint without inferring
+  inactivity, persistence, or absence from silence.
+- Bound production assertions to 104 content-addressed decisions and receipts
+  under completion receipt
+  `plan-055-completion:347736366cc08cb774290c4b96df5c2c8ae63a38ff176a7873177d6c4a051de1`.
+  Provider usage and cost were zero; canonical observations and the immutable
+  specification were unchanged. No release, `LATEST`, publication, downstream
+  pin, deployment, push, or merge occurred.
+
 ### Closed placement identities and application transitions
 
 - Closed all 1,773 frozen placement candidates through independent review and

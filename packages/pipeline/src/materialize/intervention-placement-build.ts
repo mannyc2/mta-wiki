@@ -24,6 +24,9 @@ import {
   validateAcceptedInterventionLifecycleAssertions,
 } from "./intervention-lifecycle.js";
 import {
+  validatePlan055LifecycleReviewProvenance,
+} from "./intervention-lifecycle-review-provenance.js";
+import {
   loadInterventionPlacementIdentityOperations,
   replayInterventionPlacementIdentityOperations,
   validateInterventionPlacementIdentityOperationManifests,
@@ -140,6 +143,7 @@ export function buildProductionInterventionPlacements(
       canonical_records: records,
     },
   );
+  validatePlan055LifecycleReviewProvenance(rootDir, acceptedAssertions);
   const lifecycle = buildInterventionLifecycleProjection({
     placements: registry,
     transitions,

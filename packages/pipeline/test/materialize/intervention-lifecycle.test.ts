@@ -150,6 +150,50 @@ describe("bitemporal intervention lifecycle", () => {
     expect(interventionStateAsOf("placement:one", [], "2026-07-27").state).toBe("unknown");
   });
 
+  it("keeps nonresolving accepted evidence and terminal negative decisions auditable", () => {
+    const pastPlan = assertion({ state: "planned", startEarliest: "2025-01-01" });
+    expect(interventionStateAsOf("placement:one", [pastPlan], "2026-07-27")).toEqual(
+      expect.objectContaining({
+        state: "unknown",
+        explanation_code: "accepted_evidence_does_not_resolve_date",
+        supporting_assertion_ids: [pastPlan.assertion_id],
+        conflicting_assertion_ids: [],
+        terminal_decision_ids: [],
+      }),
+    );
+
+    const rejected = assertion({
+      state: "active",
+      startEarliest: "2025-01-01",
+      review: "rejected",
+      decision: "decision:negative-lifecycle-review",
+    });
+    const reviewedNegative = interventionStateAsOf(
+      "placement:one",
+      [rejected],
+      "2026-07-27",
+    );
+    expect(reviewedNegative).toEqual(expect.objectContaining({
+      state: "unknown",
+      explanation_code: "terminal_rejection_does_not_establish_state",
+      supporting_assertion_ids: [],
+      conflicting_assertion_ids: [],
+      terminal_decision_ids: ["decision:negative-lifecycle-review"],
+    }));
+
+    const noAssertions = interventionStateAsOf("placement:one", [], "2026-07-27");
+    expect(noAssertions).toEqual(
+      expect.objectContaining({
+        state: "unknown",
+        explanation_code: "no_accepted_assertion",
+        supporting_assertion_ids: [],
+        conflicting_assertion_ids: [],
+        terminal_decision_ids: [],
+      }),
+    );
+    expect(reviewedNegative.input_fingerprint).not.toBe(noAssertions.input_fingerprint);
+  });
+
   it("keeps uncertain bounds and contradictory accepted assertions conflicted", () => {
     expect(interventionStateAsOf("placement:one", [
       assertion({
@@ -204,5 +248,37 @@ describe("bitemporal intervention lifecycle", () => {
       expect.objectContaining({ state: "confirmed_active", placement_id: "placement:one" }),
     ]);
     expect(active.footprint_reconciliation).toEqual([]);
+  });
+
+  it("carries terminal negative decisions into footprint reconciliation without inferring inactivity", () => {
+    const rejected = assertion({
+      state: "active",
+      startEarliest: "2025-01-01",
+      review: "rejected",
+      decision: "decision:negative-lifecycle-review",
+    });
+    const projection = buildInterventionLifecycleProjection({
+      placements: [placement()],
+      transitions: [],
+      assertions: [rejected],
+      as_of_date: "2026-07-27",
+    });
+
+    expect(projection.footprint).toEqual([]);
+    expect(projection.footprint_reconciliation).toEqual([
+      expect.objectContaining({
+        placement_id: "placement:one",
+        state: "unknown",
+        explanation_code: "terminal_rejection_does_not_establish_state",
+        terminal_decision_ids: ["decision:negative-lifecycle-review"],
+      }),
+    ]);
+    expect(projection.summary.counts_by_state).toEqual(expect.objectContaining({
+      confirmed_inactive: 0,
+      unknown: 1,
+    }));
+    expect(projection.summary.confirmed_active_count).toBe(0);
+    expect(projection.summary.reconciliation_count).toBe(1);
+    expect(projection.summary.zero_unexplained_loss).toBe(true);
   });
 });
