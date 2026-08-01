@@ -1,9 +1,13 @@
 import { createHash } from "node:crypto";
-import { cpSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue } from "@mta-wiki/db/types";
+import {
+  parseResolvedTransitPublicPack,
+  PUBLIC_RESOURCE_ROLES,
+} from "../consumer/public-contract.js";
 import {
   buildResolvedTransitPublicPack,
   type ResolvedTransitPublicPack,
@@ -42,7 +46,7 @@ export function writeResolvedTransitPack(
   const contents = publicPackContents(pack);
   for (const [name, content] of Object.entries(contents)) writeFileSync(join(publicDir, name), content);
   const source = join(root, "data", "resolved-transit", "operator", "v1");
-  for (const name of ["interventions", "placements", "lifecycle", "public-display"]) {
+  for (const name of ["interventions", "placements", "lifecycle", "public-display", "tracker-conformance"]) {
     cpSync(join(source, name), join(operatorDir, name), { recursive: true });
   }
   const fingerprint = createHash("sha256").update(
@@ -62,13 +66,21 @@ export function writeResolvedTransitPack(
 }
 
 export function verifyPublicPackDirectory(input: string): ResolvedTransitPublicPack {
+  const expectedFiles = ["manifest.json", ...PUBLIC_RESOURCE_ROLES.map(([name]) => name)].sort();
+  const actualFiles = readdirSync(input, { withFileTypes: true }).map((entry) => {
+    if (!entry.isFile()) throw new Error(`public pack contains a non-file entry: ${entry.name}`);
+    return entry.name;
+  }).sort();
+  if (JSON.stringify(actualFiles) !== JSON.stringify(expectedFiles)) {
+    throw new Error("public pack directory resource set mismatch");
+  }
   const read = (name: string) => readFileSync(join(input, name), "utf8");
   const lines = (name: string) => {
     const text = read(name).trim();
-    return text ? text.split("\n").map((line) => JSON.parse(line) as Record<string, unknown>) : [];
+    return text ? text.split("\n").map((line) => JSON.parse(line) as unknown) : [];
   };
-  return {
-    manifest: JSON.parse(read("manifest.json")) as ResolvedTransitPublicPack["manifest"],
+  return parseResolvedTransitPublicPack({
+    manifest: JSON.parse(read("manifest.json")) as unknown,
     episodes: lines("public_intervention_episodes.jsonl"),
     components: lines("public_intervention_components.jsonl"),
     placements: lines("public_intervention_placements.jsonl"),
@@ -77,7 +89,7 @@ export function verifyPublicPackDirectory(input: string): ResolvedTransitPublicP
     route_index: lines("public_route_intervention_index.jsonl"),
     history: lines("public_intervention_history.jsonl"),
     current_footprint: lines("public_current_footprint.jsonl"),
-    summary: JSON.parse(read("public_network_summary.json")) as Record<string, unknown>,
+    summary: JSON.parse(read("public_network_summary.json")) as unknown,
     sources: lines("public_sources.jsonl"),
-  };
+  });
 }

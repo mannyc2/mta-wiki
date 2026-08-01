@@ -50,10 +50,39 @@ const inputPaths = [
   "data/canonical/sources.jsonl",
   "data/resolved-transit-public/treatment-family-display-v1.json",
   "data/resolved-transit-public/public-key-operations/v1/operations.jsonl",
+  "data/operational-application-semantics/campaigns/plan-053/accepted/integration-receipt.json",
 ];
+
+const actionLabels: Readonly<Record<string, string>> = {
+  add: "Added", modify: "Modified", remove: "Removed", suspend: "Suspended",
+  resume: "Resumed", retain: "Retained", unknown: "Action not established",
+};
+const extentLabels: Readonly<Record<string, string>> = {
+  route_wide: "Route-wide", bounded_segment: "Bounded segment", stop_set: "Stop set",
+  service_pattern: "Service pattern", unknown: "Exact extent not established",
+};
+const uncertaintyCaveats: Readonly<Record<string, string>> = {
+  action_not_distinguishable_from_source:
+    "The reviewed source does not establish whether the intervention was added, modified, removed, suspended, resumed, or retained.",
+  conflicting_action_evidence:
+    "The reviewed source evidence supports conflicting interpretations of the intervention action.",
+  exact_stop_set_not_enumerated:
+    "The reviewed source does not enumerate the exact set of affected stops.",
+  source_explicit_scope_without_canonical_extent_identity:
+    "The source describes the intervention scope without establishing an exact public extent identity.",
+  conflicting_extent_evidence:
+    "The reviewed source evidence supports conflicting interpretations of the intervention extent.",
+  nonphysical_scope_not_exactly_bound:
+    "The reviewed nonphysical scope cannot be bound to an exact public extent.",
+};
 
 function sha(value: string): string {
   return createHash("sha256").update(value).digest("hex");
+}
+function required<K, V>(values: ReadonlyMap<K, V>, key: K, path: string): V {
+  const value = values.get(key);
+  if (value === undefined) throw new Error(`missing ${path}`);
+  return value;
 }
 function jsonl(path: string): Array<Record<string, any>> {
   const text = readFileSync(path, "utf8").trim();
@@ -77,6 +106,28 @@ function treatmentName(row: Record<string, any>): string {
     return row.payload.treatment_kind;
   }
   return display;
+}
+function usefulText(value: string): string {
+  const trimmed = value.replace(/\s+/gu, " ").trim();
+  if (/^[a-z0-9]+(?:[_-][a-z0-9]+)+$/u.test(trimmed)) {
+    const words = trimmed.replace(/[_-]+/gu, " ");
+    return `${words[0]!.toUpperCase()}${words.slice(1)}`;
+  }
+  return trimmed;
+}
+function conciseEpisodeTitle(
+  contextNames: string[],
+  routeNames: string[],
+  familyLabels: string[],
+): string {
+  const context = contextNames.map(usefulText).find((value) => value.length <= 72);
+  const scope = context ?? (routeNames.map(usefulText).join(", ") || "Network scope");
+  const uniqueFamilies = [...new Set(familyLabels.map(usefulText))].sort();
+  const all = uniqueFamilies.join(", ");
+  const treatment = `${scope} — ${all}`.length <= 120
+    ? all
+    : `${uniqueFamilies[0]} and ${uniqueFamilies.length - 1} more treatment types`;
+  return `${scope} — ${treatment}`;
 }
 function keyMap(root: string, kind: string): Map<string, string> {
   return new Map(replayPublicKeyOperations(readPublicKeyOperations(root))
@@ -105,6 +156,27 @@ export function buildOperatorPublicDisplayDictionary(
   const familyContract = JSON.parse(readFileSync(
     join(root, "data/resolved-transit-public/treatment-family-display-v1.json"), "utf8",
   )) as { families: Array<{ family: string; key: string; label: string }> };
+  const applicationReviewReceipt = JSON.parse(readFileSync(
+    join(root, inputPaths[16]!), "utf8",
+  )) as { decisions: Array<{ decision_id: string; path: string; sha256: string }> };
+  const decisionDescriptor = new Map(applicationReviewReceipt.decisions.map((row) => [row.decision_id, row]));
+  const decisionCache = new Map<string, Record<string, any>>();
+  const semanticReview = (application: Record<string, any>): Record<string, any> => {
+    const descriptor = decisionDescriptor.get(String(application.review_decision_id));
+    if (!descriptor) throw new Error(`missing semantic review descriptor: ${application.application_id}`);
+    let decision = decisionCache.get(descriptor.decision_id);
+    if (!decision) {
+      const content = readFileSync(join(root, descriptor.path), "utf8");
+      if (sha(content) !== descriptor.sha256) throw new Error(`semantic review hash mismatch: ${descriptor.decision_id}`);
+      decision = JSON.parse(content) as Record<string, any>;
+      decisionCache.set(descriptor.decision_id, decision);
+    }
+    const reviewed = (decision.applications as Array<Record<string, any>>).find((row) =>
+      row.application_id === application.application_id
+    )?.semantic_review;
+    if (!reviewed) throw new Error(`missing semantic review row: ${application.application_id}`);
+    return reviewed;
+  };
   const routeKey = keyMap(root, "route");
   const familyKey = keyMap(root, "treatment_family");
   const sourceKey = keyMap(root, "source");
@@ -172,16 +244,37 @@ export function buildOperatorPublicDisplayDictionary(
     if (!treatment || !key || !routeKey.get(row.route_record_id) || !familyKey.get(row.treatment_family)) {
       throw new Error(`unresolved component display: ${row.application_id}`);
     }
+    const review = semanticReview(row);
+    const family = familyContract.families.find((candidate) => candidate.family === row.treatment_family);
+    if (!family) throw new Error(`missing treatment family display: ${row.treatment_family}`);
+    const actionLabel = actionLabels[String(row.action)];
+    const extentLabel = extentLabels[String(row.extent.kind)];
+    if (!actionLabel || !extentLabel) throw new Error(`missing component display label: ${row.application_id}`);
+    const reasonCodes = [
+      row.action === "unknown" ? review.action_reason_code : null,
+      row.extent.kind === "unknown" ? review.extent_reason_code : null,
+    ].filter((value): value is string => typeof value === "string").sort();
+    const caveats = reasonCodes.map((code) => {
+      const caveat = uncertaintyCaveats[code];
+      if (!caveat) throw new Error(`missing accepted uncertainty display: ${code}`);
+      return caveat;
+    }).sort();
     reconciliation.push({ schema_version: 1, subject_kind: "component", subject_id: row.application_id, disposition: "resolved", reason_code: "exact_application_display" });
     return {
       schema_version: 1, application_id: row.application_id,
       occurrence_id: row.occurrence_id, intervention_component_key: key,
       route_key: routeKey.get(row.route_record_id), gtfs_route_id: row.gtfs_route_id,
       treatment_family_key: familyKey.get(row.treatment_family),
-      treatment_display_name: treatmentName(treatment),
+      treatment_family_label: family.label,
+      treatment_display_name: usefulText(treatmentName(treatment)),
+      applicability: row.applicability,
       action: row.action,
-      extent: { kind: row.extent.kind, description: row.extent.description },
-      source_keys: [...new Set(row.evidence_bindings.map((binding: any) => sourceKey.get(binding.source_id)))].filter(Boolean).sort(),
+      action_label: actionLabel,
+      extent: { kind: row.extent.kind, label: extentLabel, description: row.extent.description },
+      caveats,
+      source_keys: [...new Set(row.evidence_bindings.map((binding: any) =>
+        required(sourceKey, binding.source_id, `${row.application_id} evidence source key`)
+      ))].sort(),
     };
   });
   const contextRows = links.map((row) => {
@@ -196,30 +289,25 @@ export function buildOperatorPublicDisplayDictionary(
   const episodeRows = episodes.map((episode) => {
     const apps = applicationsByEpisode.get(episode.occurrence_id) ?? [];
     const contexts = contextsByEpisode.get(episode.occurrence_id) ?? [];
-    const routeNames = [...new Set(apps.map((app) => routeById.get(app.route_record_id)?.display_name).filter(Boolean))].sort();
-    const treatmentNames = [...new Set(apps.map((app) => {
-      const row = treatmentById.get(app.treatment_record_id);
-      return row ? treatmentName(row) : null;
-    }).filter(Boolean))].sort();
-    const contextNames = [...new Set(contexts.map((link) => contextById.get(link.context_record_id)?.display_name).filter(Boolean))].sort();
-    const scopeName = contextNames[0] ?? (routeNames.join(", ") || "Network scope");
-    const action = [...new Set(apps.map((app) => app.action))].join("/");
-    const treatment = treatmentNames[0] ?? "Intervention";
-    const onset = episode.resolved_onset.precision === "upper_bound_day"
-      ? `installed by ${episode.resolved_onset.date}`
-      : episode.resolved_onset.precision === "season"
-      ? (() => {
-          const [year, season] = episode.resolved_onset.date.split("-");
-          return `${season![0]!.toUpperCase()}${season!.slice(1)} ${year}`;
-        })()
-      : episode.resolved_onset.date;
-    const display = `${scopeName} — ${treatment}${action && action !== "unknown" ? ` (${action})` : ""} — ${onset}`;
+    const routeNames = [...new Set(apps.map((app) =>
+      required(routeById, app.route_record_id, `${episode.occurrence_id} route display`).display_name
+    ))].sort();
+    const familyLabels = [...new Set(apps.map((app) =>
+      familyContract.families.find((family) => family.family === app.treatment_family)?.label
+    ).filter((value): value is string => typeof value === "string"))].sort();
+    const contextNames = [...new Set(contexts.map((link) =>
+      required(contextById, link.context_record_id, `${episode.occurrence_id} context display`).display_name
+    ))].sort();
+    if (familyLabels.length === 0) throw new Error(`missing episode family display: ${episode.occurrence_id}`);
+    const display = conciseEpisodeTitle(contextNames, routeNames as string[], familyLabels);
     reconciliation.push({ schema_version: 1, subject_kind: "episode", subject_id: episode.occurrence_id, disposition: "resolved", reason_code: contextNames.length ? "addressed_context_composition" : "route_treatment_onset_composition" });
     return {
       schema_version: 1, occurrence_id: episode.occurrence_id,
       display_name: display, normalized_sort_name: sortName(display), aliases: [],
       label_method: "deterministic_resolved_composition",
-      source_keys: episode.source_ids.map((id: string) => sourceKey.get(id)).filter(Boolean).sort(),
+      source_keys: episode.source_ids.map((id: string) =>
+        required(sourceKey, id, `${episode.occurrence_id} source key`)
+      ).sort(),
     };
   }).sort((a, b) => String(a.occurrence_id).localeCompare(String(b.occurrence_id)));
   const placementRows = placements.map((row) => {
@@ -249,7 +337,13 @@ export function buildOperatorPublicDisplayDictionary(
     contexts: contextRows,
     scopes: [...componentRows.map((row) => ({
       schema_version: 1, application_id: row.application_id,
-      intervention_component_key: row.intervention_component_key, extent: row.extent,
+      intervention_component_key: row.intervention_component_key,
+      treatment_family_label: row.treatment_family_label,
+      treatment_display_name: row.treatment_display_name,
+      applicability: row.applicability,
+      action_label: row.action_label,
+      extent: row.extent,
+      caveats: row.caveats,
       source_keys: row.source_keys,
     })), ...placementRows],
     sources: sourceRows,

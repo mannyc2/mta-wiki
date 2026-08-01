@@ -6,6 +6,31 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-08-01
 
+### Closed the strict public pack and Tracker conformance boundary
+
+- Replaced cast-based public-pack reads with exact decoders for every public
+  resource and strict whole-pack identity, join, cardinality, date, as-of, and
+  redaction checks. Episode titles are now date-free presentation labels;
+  every one of the 343 component incidences carries human-readable action,
+  treatment, and extent labels plus details and caveats. All 139 components
+  with accepted action or extent uncertainty expose a human caveat, and no
+  live public key contains the mutable `unknown` token.
+- Froze the read-only Tracker baseline as 204 unique interventions across 179
+  route artifacts and accepted an append-only 230-decision reconciliation:
+  131 producer matches, 65 Tracker-owned enrichment-only rows, eight reviewed
+  Tracker-local exclusions, and 26 producer additions. The accepted producer
+  result remains 157 episodes, 343 exact component incidences, 170 public route
+  keys, and 167 distinct GTFS routes. One semantic onset correction and two
+  date-representation differences are explicit rather than silently coerced.
+  A 179-row route-surface manifest proves all 243 Route History memberships
+  against the 204-episode global surface with zero identity/content mismatch.
+- Tracker-authored narrative, study, asset, and eligibility content remains
+  downstream-owned. Its legacy route-detail fallback is a downstream release
+  blocker until the Tracker migration is completed; this repository did not
+  mutate Tracker. Provider usage and cost were zero. No production release,
+  `LATEST`, tag, publication, downstream pin, deployment, push, or merge
+  occurred.
+
 ### Closed bitemporal lifecycle and dated footprint
 
 - Closed the complete 104-placement lifecycle cohort through distinct primary

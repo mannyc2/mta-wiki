@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from "bun:test";
 import { createHash } from "node:crypto";
-import { cpSync, mkdtempSync, readFileSync, rmSync } from "node:fs";
+import { cpSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
@@ -39,5 +39,20 @@ describe("standalone resolved-pack reference adapter", () => {
       "utf8",
     );
     expect(source).not.toMatch(/canonical|sqlite|record-id|record_id|repoRoot/u);
+  });
+
+  it("fails closed when any declared resource is missing or an extra resource appears", () => {
+    const root = join(repoRoot, "data", "contract-fixtures", "resolved-transit-pack-v1-hand-reviewed", "public");
+    const missing = mkdtempSync(join(tmpdir(), "resolved-pack-missing-"));
+    dirs.push(missing);
+    cpSync(root, missing, { recursive: true });
+    rmSync(join(missing, "public_intervention_history.jsonl"));
+    expect(() => runResolvedPackReferenceAdapter(missing)).toThrow(/resource set/u);
+
+    const extra = mkdtempSync(join(tmpdir(), "resolved-pack-extra-"));
+    dirs.push(extra);
+    cpSync(root, extra, { recursive: true });
+    writeFileSync(join(extra, "unchecked.json"), "{}\n");
+    expect(() => runResolvedPackReferenceAdapter(extra)).toThrow(/resource set/u);
   });
 });

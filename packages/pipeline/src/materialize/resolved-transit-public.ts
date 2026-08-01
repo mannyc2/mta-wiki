@@ -1,34 +1,28 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
-import { assertPublicSafe, PUBLIC_PACK_CONTRACT_ID } from "../consumer/public-contract.js";
+import {
+  parseResolvedTransitPublicPack,
+  PUBLIC_PACK_CONTRACT_ID,
+  PUBLIC_RESOURCE_ROLES,
+  type ResolvedTransitPublicPack,
+} from "../consumer/public-contract.js";
 import {
   parsePublicKeyOperation,
   replayPublicKeyOperations,
 } from "./resolved-transit-public-keys.js";
+import { validateTrackerConformance } from "./tracker-conformance.js";
 
-export type ResolvedTransitPublicPack = {
-  manifest: {
-    schema_version: 1;
-    contract_id: typeof PUBLIC_PACK_CONTRACT_ID;
-    as_of_date: string;
-    resources: Array<{ name: string; role: string }>;
-  };
-  episodes: Array<Record<string, unknown>>;
-  components: Array<Record<string, unknown>>;
-  placements: Array<Record<string, unknown>>;
-  routes: Array<Record<string, unknown>>;
-  treatment_families: Array<Record<string, unknown>>;
-  route_index: Array<Record<string, unknown>>;
-  history: Array<Record<string, unknown>>;
-  current_footprint: Array<Record<string, unknown>>;
-  sources: Array<Record<string, unknown>>;
-  summary: Record<string, unknown>;
-};
+export type { ResolvedTransitPublicPack } from "../consumer/public-contract.js";
 
 function jsonl(path: string): Array<Record<string, any>> {
   const text = readFileSync(path, "utf8").trim();
   return text ? text.split("\n").map((line) => JSON.parse(line) as Record<string, any>) : [];
+}
+function required<K, V>(map: ReadonlyMap<K, V>, key: K, path: string): V {
+  const value = map.get(key);
+  if (value === undefined) throw new Error(`${path}: missing exact public join`);
+  return value;
 }
 
 export function buildResolvedTransitPublicPack(
@@ -43,7 +37,14 @@ export function buildResolvedTransitPublicPack(
   const transitions = jsonl(join(operator, "placements", "transitions.jsonl"));
   const states = jsonl(join(operator, "lifecycle", "intervention_placement_state_as_of.jsonl"));
   const footprintOperator = jsonl(join(operator, "lifecycle", "current_intervention_footprint.jsonl"));
+  const lifecycleSummary = JSON.parse(readFileSync(join(operator, "lifecycle", "summary.json"), "utf8")) as Record<string, any>;
   const frontierSummary = JSON.parse(readFileSync(join(operator, "placements", "summary.json"), "utf8")) as Record<string, any>;
+  const displayManifest = JSON.parse(readFileSync(join(display, "manifest.json"), "utf8")) as Record<string, any>;
+  if (states.some((row) => row.as_of_date !== asOfDate) ||
+      footprintOperator.some((row) => row.as_of_date !== asOfDate) ||
+      lifecycleSummary.as_of_date !== asOfDate || displayManifest.as_of_date !== asOfDate) {
+    throw new Error(`requested public-pack as-of does not match frozen lifecycle/display state: ${asOfDate}`);
+  }
   const episodeDisplay = new Map(jsonl(join(display, "episodes.jsonl")).map((row) => [row.occurrence_id, row]));
   const routeDisplay = jsonl(join(display, "routes.jsonl"));
   const familyDisplay = jsonl(join(display, "treatment_families.jsonl"));
@@ -80,39 +81,59 @@ export function buildResolvedTransitPublicPack(
       display_name: presentation.display_name,
       aliases: presentation.aliases,
       onset: row.resolved_onset,
-      route_keys: [...new Set(apps.map((app) => routeKeys.get(app.route_record_id)))].filter(Boolean).sort(),
-      intervention_component_keys: apps.map((app) => componentKeys.get(app.application_id)).filter(Boolean).sort(),
-      treatment_family_keys: [...new Set(apps.map((app) => familyKeys.get(app.treatment_family)))].filter(Boolean).sort(),
-      source_refs: row.source_ids.map((id: string) => ({ source_key: sourceKeys.get(id) })).sort((a: any, b: any) => a.source_key.localeCompare(b.source_key)),
+      route_keys: [...new Set(apps.map((app) => required(routeKeys, app.route_record_id, `${app.application_id} route key`)))].sort(),
+      intervention_component_keys: apps.map((app) => required(componentKeys, app.application_id, `${app.application_id} component key`)).sort(),
+      treatment_family_keys: [...new Set(apps.map((app) => required(familyKeys, app.treatment_family, `${app.application_id} family key`)))].sort(),
+      source_refs: row.source_ids.map((id: string) => ({ source_key: required(sourceKeys, id, `${row.occurrence_id} source key`) })).sort((a: any, b: any) => a.source_key.localeCompare(b.source_key)),
       classification: "historical_episode",
     };
   }).sort((a, b) => a.intervention_id.localeCompare(b.intervention_id));
-  const componentSourceKeys = new Map(jsonl(join(display, "scopes.jsonl"))
+  const componentDisplay = new Map(jsonl(join(display, "scopes.jsonl"))
     .filter((row) => row.application_id)
-    .map((row) => [row.application_id, row.source_keys ?? []]));
-  const components = applications.map((row) => ({
-    schema_version: 1,
-    intervention_id: row.occurrence_id,
-    intervention_component_key: componentKeys.get(row.application_id),
-    route_key: routeKeys.get(row.route_record_id),
-    gtfs_route_id: row.gtfs_route_id,
-    treatment_family_key: familyKeys.get(row.treatment_family),
-    action: row.action,
-    extent: { kind: row.extent.kind, description: row.extent.description },
-    source_refs: (componentSourceKeys.get(row.application_id) ??
-      [...new Set(row.evidence_bindings.map((binding: any) => sourceKeys.get(binding.source_id)))].filter(Boolean))
-      .map((source_key: string) => ({ source_key })).sort((a: any, b: any) => a.source_key.localeCompare(b.source_key)),
-  })).sort((a, b) => `${a.intervention_id}|${a.intervention_component_key}`.localeCompare(`${b.intervention_id}|${b.intervention_component_key}`));
+    .map((row) => [row.application_id, row]));
+  const components = applications.map((row) => {
+    const presentation = required(componentDisplay, row.application_id, `${row.application_id} component display`);
+    const sourceKeyList = presentation.source_keys as string[];
+    if (!Array.isArray(sourceKeyList) || sourceKeyList.length === 0) throw new Error(`${row.application_id}: missing public sources`);
+    return {
+      schema_version: 1,
+      intervention_id: row.occurrence_id,
+      intervention_component_key: required(componentKeys, row.application_id, `${row.application_id} component key`),
+      route_key: required(routeKeys, row.route_record_id, `${row.application_id} route key`),
+      gtfs_route_id: row.gtfs_route_id,
+      treatment_family_key: required(familyKeys, row.treatment_family, `${row.application_id} family key`),
+      treatment_family_label: presentation.treatment_family_label,
+      applicability: row.applicability,
+      action: row.action,
+      action_label: presentation.action_label,
+      extent: presentation.extent,
+      details: presentation.treatment_display_name,
+      caveats: presentation.caveats,
+      source_refs: sourceKeyList.map((source_key: string) => ({ source_key })).sort((a, b) => a.source_key.localeCompare(b.source_key)),
+    };
+  }).sort((a, b) => `${a.intervention_id}|${a.intervention_component_key}`.localeCompare(`${b.intervention_id}|${b.intervention_component_key}`));
   const stateByPlacement = new Map(states.map((row) => [row.placement_id, row]));
-  const placements = placementsOperator.map((row) => ({
-    schema_version: 1,
-    placement_key: placementKeys.get(row.placement_id),
-    route_key: routeKeys.get(row.current_claim.route_record_id),
-    treatment_family_key: familyKeys.get(row.current_claim.treatment_family),
-    scope: { kind: row.current_claim.scope.kind },
-    state_as_of: stateByPlacement.get(row.placement_id)?.state ?? "unknown",
-    as_of_date: asOfDate,
-  }));
+  const foundingComponentByPlacement = new Map<string, string>();
+  for (const transition of transitions) {
+    const componentKey = required(componentKeys, transition.application_id, `${transition.transition_id} founding component key`);
+    for (const placementId of transition.result_placement_ids as string[]) {
+      if (foundingComponentByPlacement.has(placementId)) throw new Error(`${placementId}: duplicate founding transition result`);
+      foundingComponentByPlacement.set(placementId, componentKey);
+    }
+  }
+  const placements = placementsOperator.map((row) => {
+    const state = required(stateByPlacement, row.placement_id, `${row.placement_id} state`);
+    return {
+      schema_version: 1,
+      placement_key: required(placementKeys, row.placement_id, `${row.placement_id} public key`),
+      founding_intervention_component_key: foundingComponentByPlacement.get(row.placement_id) ?? null,
+      route_key: required(routeKeys, row.current_claim.route_record_id, `${row.placement_id} route key`),
+      treatment_family_key: required(familyKeys, row.current_claim.treatment_family, `${row.placement_id} family key`),
+      scope: { kind: row.current_claim.scope.kind },
+      state_as_of: state.state,
+      as_of_date: state.as_of_date,
+    };
+  });
   const routes = routeDisplay.map((row) => ({
     schema_version: 1,
     route_key: row.route_key,
@@ -156,20 +177,20 @@ export function buildResolvedTransitPublicPack(
     ...transitions.map((row) => ({
       schema_version: 1,
       history_kind: "placement_transition",
-      intervention_id: applications.find((app) => app.application_id === row.application_id)?.occurrence_id,
-      intervention_component_key: componentKeys.get(row.application_id),
+      intervention_id: required(new Map(applications.map((app) => [app.application_id, app.occurrence_id])), row.application_id, `${row.transition_id} application`),
+      intervention_component_key: required(componentKeys, row.application_id, `${row.transition_id} component key`),
       action: row.action,
-      target_placement_keys: row.target_placement_ids.map((id: string) => placementKeys.get(id)).filter(Boolean),
-      result_placement_keys: row.result_placement_ids.map((id: string) => placementKeys.get(id)).filter(Boolean),
+      target_placement_keys: row.target_placement_ids.map((id: string) => required(placementKeys, id, `${row.transition_id} target placement`)).sort(),
+      result_placement_keys: row.result_placement_ids.map((id: string) => required(placementKeys, id, `${row.transition_id} result placement`)).sort(),
     })),
   ];
   const currentFootprint = footprintOperator.map((row) => {
     if (row.state !== "confirmed_active") throw new Error("operator current footprint contains non-active row");
     return {
       schema_version: 1,
-      placement_key: placementKeys.get(row.placement_id),
-      route_key: routeKeys.get(row.route_record_id),
-      treatment_family_key: familyKeys.get(row.treatment_family),
+      placement_key: required(placementKeys, row.placement_id, `${row.placement_id} footprint placement key`),
+      route_key: required(routeKeys, row.route_record_id, `${row.placement_id} footprint route key`),
+      treatment_family_key: required(familyKeys, row.treatment_family, `${row.placement_id} footprint family key`),
       scope: { kind: row.scope.kind },
       state: "confirmed_active",
       as_of_date: row.as_of_date,
@@ -211,33 +232,18 @@ export function buildResolvedTransitPublicPack(
     schema_version: 1 as const,
     contract_id: PUBLIC_PACK_CONTRACT_ID,
     as_of_date: asOfDate,
-    resources: [
-      ["public_intervention_episodes.jsonl", "historical_episodes"],
-      ["public_intervention_components.jsonl", "exact_components"],
-      ["public_intervention_placements.jsonl", "stable_placements"],
-      ["public_routes.jsonl", "route_dictionary"],
-      ["public_treatment_families.jsonl", "treatment_dictionary"],
-      ["public_route_intervention_index.jsonl", "route_component_index"],
-      ["public_intervention_history.jsonl", "history"],
-      ["public_current_footprint.jsonl", "confirmed_current"],
-      ["public_network_summary.json", "completeness_summary"],
-      ["public_sources.jsonl", "source_dictionary"],
-    ].map(([name, role]) => ({ name: name!, role: role! })),
+    resources: PUBLIC_RESOURCE_ROLES.map(([name, role]) => ({ name, role })),
   };
   const result = {
     manifest, episodes, components, placements, routes,
     treatment_families: treatmentFamilies, route_index: routeIndex, history,
     current_footprint: currentFootprint, sources, summary,
   };
-  assertPublicSafe(result);
-  if (episodes.length !== episodesOperator.length ||
-      components.length !== applications.length ||
-      routeIndex.length !== components.length ||
-      placements.length !== placementsOperator.length ||
-      currentFootprint.length !== footprintOperator.length ||
-      new Set(routes.map((row) => row.route_key)).size !== routes.length ||
-      new Set(treatmentFamilies.map((row) => row.treatment_family_key)).size !== treatmentFamilies.length) {
-    throw new Error("public pack reconciliation is unbalanced");
+  if (episodes.length !== episodesOperator.length || components.length !== applications.length ||
+      placements.length !== placementsOperator.length || currentFootprint.length !== footprintOperator.length) {
+    throw new Error("public pack operator denominator mismatch");
   }
-  return result;
+  const decoded = parseResolvedTransitPublicPack(result);
+  validateTrackerConformance(decoded, root);
+  return decoded;
 }

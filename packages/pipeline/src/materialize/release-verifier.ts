@@ -1317,8 +1317,7 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
     if (adapter.episodes_by_route.length !== publicPack.routes.length) {
       throw new Error("manifest-v7 reference adapter route denominator mismatch");
     }
-    const manifestSummary = publicPack.manifest as unknown as Record<string, unknown>;
-    if (manifestSummary.as_of_date !== manifest.as_of_date) {
+    if (publicPack.manifest.as_of_date !== manifest.as_of_date) {
       throw new Error("manifest-v7 public pack as-of mismatch");
     }
     const required = [
@@ -1330,6 +1329,11 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
       "resolved-pack/operator/lifecycle/intervention_placement_state_as_of.jsonl",
       "resolved-pack/operator/lifecycle/current_intervention_footprint.jsonl",
       "resolved-pack/operator/public-display/public_keys.jsonl",
+      "resolved-pack/operator/tracker-conformance/tracker-baseline.jsonl",
+      "resolved-pack/operator/tracker-conformance/accepted-diff-ledger.jsonl",
+      "resolved-pack/operator/tracker-conformance/tracker-route-surface.jsonl",
+      "resolved-pack/operator/tracker-conformance/summary.json",
+      "resolved-pack/operator/tracker-conformance/accepted-ledger-receipt.json",
       "resolved-pack/public/public_intervention_episodes.jsonl",
       "resolved-pack/public/public_intervention_components.jsonl",
       "resolved-pack/public/public_network_summary.json",
